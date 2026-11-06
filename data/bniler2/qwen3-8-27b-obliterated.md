@@ -74,9 +74,9 @@ Además, se reportan pruebas cualitativas: 20/20 en tareas de código y 7/8 en t
 
 | Modelo | Parámetros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (stock) | 27,8B | No disponible | 84,5% | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-OBLITERATED (V3) | 27,8B | No disponible | 82,3% | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B (referencia) | 8B | 128K | ~68% | Llama 3.1 | HuggingFace |
+| Qwen3.8-27B (stock) | 27,8B | No disponible | 84,5% | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-OBLITERATED (V3) | 27,8B | No disponible | 82,3% | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B (referencia) | 8B | 128K | ~68% | Llama 3.1 | Hugging Face |
 
 No se dispone de comparaciones directas con otros modelos abliterados de tamaño similar. La comparativa se limita al modelo base y a un modelo de menor tamaño como referencia de escala.
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones directas con otros modelos abliterados de tamaño
 
 ## Enlaces
 
-- [Modelo en HuggingFace (bniler2)](https://huggingface.co/bniler2/Qwen3.8-27B-OBLITERATED)
+- [Modelo en Hugging Face (bniler2)](https://huggingface.co/bniler2/Qwen3.8-27B-OBLITERATED)
 - [Repositorio original (OBLITERATUS)](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
 - [Repositorio del modelo base Qwen3.8-27B (GitHub)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Artículo de ExplainX sobre el modelo](https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026)

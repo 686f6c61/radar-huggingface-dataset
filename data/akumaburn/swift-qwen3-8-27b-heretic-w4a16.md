@@ -104,7 +104,7 @@ Criterio de eleccion segun el autor: para uso interactivo con concurrencia baja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akumaburn/Swift-Qwen3.8-27b-heretic-W4A16
+- Modelo en Hugging Face: https://huggingface.co/akumaburn/Swift-Qwen3.8-27b-heretic-W4A16
 - Modelo base (BF16, heretic): https://huggingface.co/akumaburn/Swift-Qwen3.8-27b-heretic
 - Hermano SmoothQuant W8A8 INT8: https://huggingface.co/akumaburn/Swift-Qwen3.8-27b-heretic-SmoothQuant-W8A8-INT8
 - Drafter especulativo DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2

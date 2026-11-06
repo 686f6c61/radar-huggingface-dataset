@@ -99,7 +99,7 @@ Las alternativas comparables son variantes de cuantización del mismo modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
+- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
 - Rama 2.81bpw: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/tree/2.81bpw
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantizado crudo de origen: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw

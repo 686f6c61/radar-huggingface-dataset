@@ -125,7 +125,7 @@ Ambos modelos son numéricamente equivalentes en la salida (paridad documentada)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raymxnd/Whisper-Vad-EncDec-ASMR-torch
+- Modelo en Hugging Face: https://huggingface.co/Raymxnd/Whisper-Vad-EncDec-ASMR-torch
 - Modelo base (ONNX): https://huggingface.co/TransWithAI/Whisper-Vad-EncDec-ASMR-onnx
 - Repositorio de entrenamiento del modelo original: https://github.com/TransWithAI/whisper-vad
 - Evidencia de paridad con el backend ONNX: https://huggingface.co/Raymxnd/Whisper-Vad-EncDec-ASMR-torch/blob/main/parity.md

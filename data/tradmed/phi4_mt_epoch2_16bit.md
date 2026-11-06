@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **TradMed/phi4_MT_epoch2_16bit** es un ajuste fino (fine-tune) del modelo Phi-4 de Microsoft, desarrollado por thao-uyen1508 y publicado bajo la cuenta TradMed. Se trata de un modelo de lenguaje de 14.659.507.200 parámetros (14,7 mil millones) orientado a generación de texto, entrenado con las herramientas Unsloth y la librería TRL de HuggingFace. El modelo base es `unsloth/phi-4-unsloth-bnb-4bit`, una versión optimizada de Phi-4 para entrenamiento eficiente, y se ha subido en formato safetensors con precisión de 16 bits (de ahí el nombre del repositorio).
+El modelo **TradMed/phi4_MT_epoch2_16bit** es un ajuste fino (fine-tune) del modelo Phi-4 de Microsoft, desarrollado por thao-uyen1508 y publicado bajo la cuenta TradMed. Se trata de un modelo de lenguaje de 14.659.507.200 parámetros (14,7 mil millones) orientado a generación de texto, entrenado con las herramientas Unsloth y la librería TRL de Hugging Face. El modelo base es `unsloth/phi-4-unsloth-bnb-4bit`, una versión optimizada de Phi-4 para entrenamiento eficiente, y se ha subido en formato safetensors con precisión de 16 bits (de ahí el nombre del repositorio).
 
 El modelo hereda las capacidades del Phi-4 original, un transformer decoder-only con 14 mil millones de parámetros que destaca por su razonamiento matemático y lógico, y que fue lanzado por Microsoft en 2024. Este fine-tune específico no incluye documentación adicional sobre los datos de entrenamiento ni el propósito exacto del ajuste, por lo que se desconoce qué tareas concretas se han optimizado. Su licencia Apache-2.0 permite uso comercial y modificación, lo que lo convierte en una opción atractiva para proyectos que necesiten un modelo de lenguaje de tamaño medio con una licencia permisiva.
 
@@ -23,7 +23,7 @@ El modelo hereda las capacidades del Phi-4 original, un transformer decoder-only
 
 El modelo base `unsloth/phi-4-unsloth-bnb-4bit` es una versión de Phi-4 preparada para entrenamiento con Unsloth, una librería que acelera el fine-tuning mediante optimizaciones de memoria y cómputo. La arquitectura subyacente es la de Phi-4, un transformer autoregresivo con 14 mil millones de parámetros, pero no se dispone de detalles concretos sobre el número de capas, cabezas de atención o dimensión del modelo en la información proporcionada.
 
-El proceso de entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) de HuggingFace, y según la model card se entrenó "2x más rápido" gracias a Unsloth. No se especifican los datos de entrenamiento, el número de épocas (aunque el nombre del archivo indica "epoch2", sugiriendo dos épocas), ni la composición del dataset. Tampoco se menciona si se aplicó RLHF, DPO u otras técnicas de alineación. Por tanto, no hay información sobre innovaciones técnicas adicionales más allá del uso de Unsloth para acelerar el entrenamiento.
+El proceso de entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) de Hugging Face, y según la model card se entrenó "2x más rápido" gracias a Unsloth. No se especifican los datos de entrenamiento, el número de épocas (aunque el nombre del archivo indica "epoch2", sugiriendo dos épocas), ni la composición del dataset. Tampoco se menciona si se aplicó RLHF, DPO u otras técnicas de alineación. Por tanto, no hay información sobre innovaciones técnicas adicionales más allá del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ El proceso de entrenamiento se realizó con la librería TRL (Transformers Reinf
 - Tutoría y resolución de problemas matemáticos: gracias a las capacidades de razonamiento de Phi-4, puede servir como herramienta educativa para explicar ejercicios de álgebra o cálculo.
 - Automatización de tareas de procesamiento de lenguaje natural (PLN): etiquetado de texto, extracción de información o clasificación de documentos en inglés.
 - Prototipado de aplicaciones con IA: al ser de tamaño medio y con licencia Apache 2.0, es adecuado para pruebas de concepto en entornos con recursos limitados.
-- Fine-tuning adicional: el modelo puede servir como base para nuevos ajustes en dominios específicos (médico, legal, técnico) gracias a su formato safetensors y su compatibilidad con el ecosistema HuggingFace.
+- Fine-tuning adicional: el modelo puede servir como base para nuevos ajustes en dominios específicos (médico, legal, técnico) gracias a su formato safetensors y su compatibilidad con el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada: con 14.7 mil millones de parámetros en precisión de 16 bits, el modelo ocupa aproximadamente 29.3 GB en disco (tamaño del repositorio). Para inferencia en FP16 se necesitan al menos 30 GB de VRAM, lo que excluye a la mayoría de GPUs de consumo.
 - GPUs recomendadas: NVIDIA A100 (40 GB), A100 (80 GB), H100 (80 GB) o RTX 6000 Ada (48 GB). En el caso de usar cuantización a 8 bits o 4 bits, podría ejecutarse en GPUs con 16-24 GB de VRAM, pero no se proporcionan versiones cuantizadas en el repositorio.
 - Compatibilidad con GPU de consumo: no es viable en RTX 4090 (24 GB) sin cuantización, pero con cuantización a 8 bits podría intentarse, aunque no está disponible en el repositorio.
-- Opciones de despliegue: compatible con librerías de la familia HuggingFace (transformers, text-generation-inference), y también puede usarse con vLLM o llama.cpp si se convierten los pesos a GGUF. No se ha verificado la compatibilidad con Ollama.
+- Opciones de despliegue: compatible con librerías de la familia Hugging Face (transformers, text-generation-inference), y también puede usarse con vLLM o llama.cpp si se convierten los pesos a GGUF. No se ha verificado la compatibilidad con Ollama.
 - Latencia y throughput: no se han medido en este modelo. En general, un modelo de 14B en FP16 en una A100 puede generar entre 20 y 50 tokens por segundo, dependiendo de la configuración.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento específicos para el fine-tune, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TradMed/phi4_MT_epoch2_16bit
+- Repositorio Hugging Face: https://huggingface.co/TradMed/phi4_MT_epoch2_16bit
 - Modelo base (Unsloth): https://huggingface.co/unsloth/phi-4-unsloth-bnb-4bit
 - Informe técnico de Phi-4 (PDF): https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf
 - Documentación de Phi-4 Multimodal (no directamente relacionada): https://huggingface.co/docs/transformers/v5.0.0/en/model_doc/phi4_multimodal

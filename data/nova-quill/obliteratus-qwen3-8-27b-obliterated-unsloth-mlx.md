@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks para otros modelos abliterated de tamano si
 
 ## 10. Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nova-quill/OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx
+- Repositorio Hugging Face del modelo: https://huggingface.co/nova-quill/OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx
 - Modelo original OBLITERATUS: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Repositorio de la herramienta OBLITERATUS (codigo y documentacion): https://github.com/elder-plinius/OBLITERATUS
 - Receta de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

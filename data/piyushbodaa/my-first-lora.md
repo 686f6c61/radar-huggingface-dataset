@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`piyushbodaa/my-first-lora` es un ajuste fino (LoRA) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario piyushbodaa en HuggingFace. Se trata de un modelo derivado de la version cuantizada a 4 bits del instruct de Qwen2.5 con 1.500 millones de parametros, entrenado con la libreria Unsloth sobre la infraestructura de TRL. El nombre del repositorio sugiere que se trata de un experimento de aprendizaje o de una prueba de concepto mas que de un modelo destinado a produccion.
+`piyushbodaa/my-first-lora` es un ajuste fino (LoRA) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario piyushbodaa en Hugging Face. Se trata de un modelo derivado de la version cuantizada a 4 bits del instruct de Qwen2.5 con 1.500 millones de parametros, entrenado con la libreria Unsloth sobre la infraestructura de TRL. El nombre del repositorio sugiere que se trata de un experimento de aprendizaje o de una prueba de concepto mas que de un modelo destinado a produccion.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y su ventana de contexto de 32.768 tokens, aunque la model card no aporta informacion sobre el dataset de ajuste, el numero de pasos de entrenamiento ni los hiperparametros utilizados. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA o con pesos en precision reducida, y no registra descargas ni likes en el momento de la consulta.
 
@@ -39,7 +39,7 @@ La model card no especifica el numero de tokens de entrenamiento, la composicion
 
 ## Casos de uso
 
-- Experimentacion educativa con LoRA: el modelo sirve como ejemplo practico de ajuste fino con Unsloth sobre Qwen2.5-1.5B, util para aprender el flujo completo desde la carga del modelo base hasta la publicacion en HuggingFace.
+- Experimentacion educativa con LoRA: el modelo sirve como ejemplo practico de ajuste fino con Unsloth sobre Qwen2.5-1.5B, util para aprender el flujo completo desde la carga del modelo base hasta la publicacion en Hugging Face.
 - Pruebas de concepto de asistentes conversacionales en ingles: al heredar el comportamiento instruct del modelo base, puede emplearse para prototipar chatbots simples en entornos de desarrollo sin requisitos de produccion.
 - Evaluacion de pipelines de entrenamiento: permite verificar que la infraestructura de Unsloth y TRL funciona correctamente antes de escalar a modelos mayores o datasets propios.
 - Generacion de texto de bajo coste en local: con 1.500 millones de parametros, puede ejecutarse en GPU de consumo para tareas de generacion de texto no criticas.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| piyushbodaa/my-first-lora | 1.500 M (heredados) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con benchmarks publicados |
-| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa pequena de HuggingFace con documentacion completa |
-| Llama-3.2-1B-Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Requiere aceptar licencia de Meta |
+| piyushbodaa/my-first-lora | 1.500 M (heredados) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con benchmarks publicados |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa pequena de Hugging Face con documentacion completa |
+| Llama-3.2-1B-Instruct | 1.200 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Requiere aceptar licencia de Meta |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/piyushbodaa/my-first-lora
+- Modelo en Hugging Face: https://huggingface.co/piyushbodaa/my-first-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

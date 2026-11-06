@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fashion GenAI (StyleGAN2 + VAE) es una coleccion de checkpoints de generacion de imagenes de moda publicada por el usuario KartikSaste en HuggingFace. El repositorio combina una StyleGAN2 condicional de 128 px capaz de generar fotografias sinteticas de producto sobre fondo blanco, y dos autoencoders variacionales que aprenden representaciones compactas del mismo dominio: uno con latente espacial y otro con latente global. Todo se entrena desde cero sobre el dataset `GangHitman/fashion-recommendation-images`, compuesto por 44 239 fotografias de producto de comercio electronico con fondo blanco y 142 tipos de articulo (el generador condicional usa 70 clases).
+Fashion GenAI (StyleGAN2 + VAE) es una coleccion de checkpoints de generacion de imagenes de moda publicada por el usuario KartikSaste en Hugging Face. El repositorio combina una StyleGAN2 condicional de 128 px capaz de generar fotografias sinteticas de producto sobre fondo blanco, y dos autoencoders variacionales que aprenden representaciones compactas del mismo dominio: uno con latente espacial y otro con latente global. Todo se entrena desde cero sobre el dataset `GangHitman/fashion-recommendation-images`, compuesto por 44 239 fotografias de producto de comercio electronico con fondo blanco y 142 tipos de articulo (el generador condicional usa 70 clases).
 
 El problema que aborda es la escasez de imagenes de producto etiquetadas para tareas de diseno, aumento de datos y recuperacion visual. Frente a los modelos de difusion texto-a-imagen, esta propuesta es deliberadamente ligera: un GAN de 128 px y dos VAEs de 256 px y 128 px que caben en un unico archivo de checkpoint de 0,4 GB en total y que no requieren prompt textual, sino un identificador categorico de tipo de prenda.
 
@@ -22,7 +22,7 @@ Es relevante sobre todo como pieza de investigacion reproducible: el autor docum
 | Formato de pesos | PyTorch `.pt` (`models/gan_main.pt`, `models/vae_256.pt`, `models/vae_global_128.pt`); cada checkpoint embebe su configuracion y su lista de clases |
 | Tamano del repositorio | 0,4 GB |
 | Resoluciones de salida | 128 px (GAN), 256 px (VAE espacial), 128 px (VAE global) |
-| Tarea declarada en HuggingFace | `unconditional-image-generation` (la model card describe condicionamiento categorico, por lo que la etiqueta es imprecisa) |
+| Tarea declarada en Hugging Face | `unconditional-image-generation` (la model card describe condicionamiento categorico, por lo que la etiqueta es imprecisa) |
 | Paso de entrenamiento | 7000 pasos para los tres checkpoints |
 
 ## Arquitectura y entrenamiento
@@ -83,10 +83,10 @@ No se han publicado comparativas numericas de este modelo frente a alternativas 
 
 | Modelo | Tipo | Condicionamiento | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fashion-genai-stylegan2-vae | StyleGAN2 + VAE | categorico (70 clases) | 128 px / 256 px | MIT | HuggingFace, 0 descargas |
+| fashion-genai-stylegan2-vae | StyleGAN2 + VAE | categorico (70 clases) | 128 px / 256 px | MIT | Hugging Face, 0 descargas |
 | StyleGAN2-ADA (implementacion de referencia de NVIDIA) | GAN | incondicional o condicional por clase | configurable (hasta 1024 px en sus configuraciones publicas) | no disponible en la informacion proporcionada | repositorio oficial |
 | Autoencoders VQGAN genericos | VAE + cuantizacion vectorial + GAN | no disponible | no disponible | no disponible en la informacion proporcionada | repositorios de terceros |
-| Modelos de difusion texto-a-imagen | difusion latente | prompt textual | 512 px en adelante | no disponible en la informacion proporcionada | HuggingFace |
+| Modelos de difusion texto-a-imagen | difusion latente | prompt textual | 512 px en adelante | no disponible en la informacion proporcionada | Hugging Face |
 
 Diferencias clave que si se pueden afirmar: frente a un modelo de difusion texto-a-imagen, esta propuesta no acepta prompts en lenguaje natural y se limita a 128/256 px, pero es ordenes de magnitud mas ligera en tamano de checkpoint y no requiere un codificador de texto. Frente a una StyleGAN2 entrenada con un calendario completo, segun el propio autor esta version esta infraentrenada (7000 pasos frente a un equivalente de ~25 millones de imagenes) y produce artefactos.
 
@@ -101,12 +101,12 @@ Diferencias clave que si se pueden afirmar: frente a un modelo de difusion texto
 - Rendimiento de inferencia degradado: el remuestreo FIR en PyTorch puro es aproximadamente 4x mas lento que el kernel CUDA oficial de NVIDIA.
 - Licencia: MIT tanto en los pesos como, segun el autor, en el dataset de origen, lo que permite uso comercial; conviene verificar de forma independiente la licencia del dataset antes de explotarlo en produccion.
 - Falta de validacion externa: 0 descargas y 0 likes, sin issues ni evaluaciones de terceros; no hay garantia de reproducibilidad mas alla de lo declarado por el autor.
-- Incoherencia de metadatos: el pipeline declarado en HuggingFace es `unconditional-image-generation`, mientras que la model card describe un GAN condicional, lo que puede confundir a herramientas automaticas.
+- Incoherencia de metadatos: el pipeline declarado en Hugging Face es `unconditional-image-generation`, mientras que la model card describe un GAN condicional, lo que puede confundir a herramientas automaticas.
 - Fechas de publicacion inusuales: los metadatos indican creacion y actualizacion en septiembre de 2026, dato que conviene contrastar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KartikSaste/fashion-genai-stylegan2-vae
+- Modelo en Hugging Face: https://huggingface.co/KartikSaste/fashion-genai-stylegan2-vae
 - Dataset de entrenamiento: https://huggingface.co/datasets/GangHitman/fashion-recommendation-images
 - Repositorio de codigo: el README referencia un clon de `https://github.com/<your-fork>/fashion-genai`, sin URL publica confirmada (no disponible).
 - Paper, blog o demo oficial: no disponible.

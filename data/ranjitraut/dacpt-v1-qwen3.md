@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ranjitraut/dacpt-v1-qwen3` es un adaptador LoRA de fine-tuning supervisado (SFT) construido sobre el modelo base Qwen/Qwen3-4B de Alibaba. Está publicado en HuggingFace con la librería PEFT y el pipeline de generación de texto, pero la model card no incluye ninguna descripción sustancial: no se especifican los datos de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. El repositorio ocupa 0,1 GB, lo que corresponde a un adaptador ligero que se debe cargar junto con el modelo base.
+El modelo `ranjitraut/dacpt-v1-qwen3` es un adaptador LoRA de fine-tuning supervisado (SFT) construido sobre el modelo base Qwen/Qwen3-4B de Alibaba. Está publicado en Hugging Face con la librería PEFT y el pipeline de generación de texto, pero la model card no incluye ninguna descripción sustancial: no se especifican los datos de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. El repositorio ocupa 0,1 GB, lo que corresponde a un adaptador ligero que se debe cargar junto con el modelo base.
 
 El interés de este adaptador radica en que aprovecha las capacidades del modelo Qwen3-4B, que destaca por su rendimiento en razonamiento, código y soporte multilingüe, y que incorpora un modo de pensamiento (thinking) opcional. Sin embargo, al carecer de documentación sobre el proceso de entrenamiento y las tareas objetivo, es imposible evaluar qué mejoras o especializaciones introduce este adaptador concreto. La ausencia de benchmarks y de descripción de uso limita su aplicabilidad en entornos de producción sin una validación previa por parte del usuario.
 
@@ -62,7 +62,7 @@ No disponible. No se dispone de informacion sobre adaptadores LoRA comparables d
 - Fecha de creacion futura: la fecha de creacion (2026-08-22) es posterior a la fecha actual, lo que puede indicar un error de registro o un experimento no verificado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ranjitraut/dacpt-v1-qwen3
+- Modelo en Hugging Face: https://huggingface.co/ranjitraut/dacpt-v1-qwen3
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

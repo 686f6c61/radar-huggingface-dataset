@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vishva007/Qwen3.5-9B-W4A16-AutoRound | 2.491.309.296 segun metadatos safetensors (nombre del base: 9B) | No disponible | W4A16 AutoRound, group size 32; vision y MTP en bfloat16 | apache-2.0 | HuggingFace, 226 descargas, 0 likes |
-| Qwen/Qwen3.5-9B | 9B (segun denominacion del repositorio) | No disponible | Ninguna (BF16/FP16) | apache-2.0 | HuggingFace (modelo base oficial) |
+| Vishva007/Qwen3.5-9B-W4A16-AutoRound | 2.491.309.296 segun metadatos safetensors (nombre del base: 9B) | No disponible | W4A16 AutoRound, group size 32; vision y MTP en bfloat16 | apache-2.0 | Hugging Face, 226 descargas, 0 likes |
+| Qwen/Qwen3.5-9B | 9B (segun denominacion del repositorio) | No disponible | Ninguna (BF16/FP16) | apache-2.0 | Hugging Face (modelo base oficial) |
 | Otras cuantizaciones de 4 bits del mismo base (GPTQ, AWQ, bitsandbytes) | No disponible | No disponible | 4 bits, varios formatos | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados, por lo que la comparativa se limita a parametros, formato y licencia. No es posible afirmar que esta cuantizacion sea mejor o peor que otras alternativas de 4 bits sin benchmarks publicados.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - AutoRound (Intel), repositorio de la herramienta de cuantizacion: https://github.com/intel/auto-round
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

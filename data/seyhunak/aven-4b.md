@@ -6,7 +6,7 @@ Aven-4B es un adaptador LoRA publicado por el usuario seyhunak sobre el modelo b
 
 El modelo se construye con un ajuste fino supervisado mediante LoRA/PEFT sobre el modelo base, con una funcion de perdida "answer-only": los tokens del prompt anteriores a `ANSWER:` se enmascaran con `-100`, de modo que la entropia cruzada se concentra exclusivamente en la etiqueta de salida. El entrenamiento se realizo en hardware Apple Silicon (M3, backend MPS), con soporte de alternativas en CUDA y CPU. El repositorio pesa aproximadamente 0,3 GB, lo que corresponde al adaptador y no a los pesos completos del modelo base.
 
-La relevancia de esta ficha es doble. Por un lado, ilustra un patron de diseno de "especialista pequeno" aplicado a tareas de clasificacion estructurada en lugar de generacion abierta. Por otro, conviene ser prudente: el conjunto de datos incluido es unicamente sintetico y de prueba (aproximadamente 120 ejemplos de entrenamiento, 30 de validacion y 60 de test), el autor advierte explicitamente de que no produce un modelo de calidad de produccion, y el modelo no registra descargas ni valoraciones en HuggingFace. La licencia del adaptador, el codigo y los datos sinteticos es MIT; los pesos del modelo base se rigen por su propia licencia.
+La relevancia de esta ficha es doble. Por un lado, ilustra un patron de diseno de "especialista pequeno" aplicado a tareas de clasificacion estructurada en lugar de generacion abierta. Por otro, conviene ser prudente: el conjunto de datos incluido es unicamente sintetico y de prueba (aproximadamente 120 ejemplos de entrenamiento, 30 de validacion y 60 de test), el autor advierte explicitamente de que no produce un modelo de calidad de produccion, y el modelo no registra descargas ni valoraciones en Hugging Face. La licencia del adaptador, el codigo y los datos sinteticos es MIT; los pesos del modelo base se rigen por su propia licencia.
 
 ## Especificaciones tecnicas
 
@@ -81,8 +81,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seyhunak/aven-4b | Adaptador LoRA sobre base de ~4B | No disponible | No se publican cifras; comparacion base vs aven documentada como metodologia | MIT (adaptador, codigo y datos sinteticos) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en la informacion proporcionada | No se publican cifras en esta ficha | La del modelo base | HuggingFace |
+| seyhunak/aven-4b | Adaptador LoRA sobre base de ~4B | No disponible | No se publican cifras; comparacion base vs aven documentada como metodologia | MIT (adaptador, codigo y datos sinteticos) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en la informacion proporcionada | No se publican cifras en esta ficha | La del modelo base | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,6 +98,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyhunak/aven-4b
+- Modelo en Hugging Face: https://huggingface.co/seyhunak/aven-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

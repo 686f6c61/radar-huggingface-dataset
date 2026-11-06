@@ -19,7 +19,7 @@ El resultado medido es de 57,5 ms por chunk de 50 acciones con lote 1, 40 ms por
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (el campo `language` no aparece en la ficha del repositorio) |
 | Licencia | Gemma (Gemma Terms of Use, https://ai.google.dev/gemma/terms) |
-| Formato de pesos | No disponible; los pesos no van dentro de la imagen Docker y se descargan desde `lerobot/pi05_base` (commit `b211f3d44c36b6acfcf7ae94a64e8e96f75a64ba`) a la cache de HuggingFace |
+| Formato de pesos | No disponible; los pesos no van dentro de la imagen Docker y se descargan desde `lerobot/pi05_base` (commit `b211f3d44c36b6acfcf7ae94a64e8e96f75a64ba`) a la cache de Hugging Face |
 
 ## Arquitectura y entrenamiento
 

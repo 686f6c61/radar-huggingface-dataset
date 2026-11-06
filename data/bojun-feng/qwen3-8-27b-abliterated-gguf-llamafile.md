@@ -105,7 +105,7 @@ Para alternativas de otros desarrolladores en el rango de 24.000-32.000 millones
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile
+- Repositorio Hugging Face: https://huggingface.co/Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile
 - Fichero llamafile Q4_K_M: https://huggingface.co/Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile/resolve/main/Qwen3.8-27B-ABLITERATED-Q4_K_M.llamafile
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - GGUF de origen: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF/tree/994bb4e69663ec880a4d9a61604e6debc3a49b9a

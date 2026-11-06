@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maxuna/una2rvc` es un adaptador LoRA publicado en HuggingFace por el usuario `maxuna`, diseñado para su uso con la librería `diffusers` en tareas de text-to-image. El repositorio indica que se basa en el modelo `brandon12333/Otis__RVC_v2_`, aunque esta referencia resulta contradictoria, ya que dicho modelo base parece estar orientado a conversión de voz (RVC) y no a generación de imágenes. La ficha del modelo es extremadamente escasa: no incluye descripción, prompts de ejemplo, ni documentación técnica adicional. El tamaño del repositorio es de 0,1 GB, lo que sugiere un adaptador ligero, probablemente un LoRA de bajo rango.
+El modelo `maxuna/una2rvc` es un adaptador LoRA publicado en Hugging Face por el usuario `maxuna`, diseñado para su uso con la librería `diffusers` en tareas de text-to-image. El repositorio indica que se basa en el modelo `brandon12333/Otis__RVC_v2_`, aunque esta referencia resulta contradictoria, ya que dicho modelo base parece estar orientado a conversión de voz (RVC) y no a generación de imágenes. La ficha del modelo es extremadamente escasa: no incluye descripción, prompts de ejemplo, ni documentación técnica adicional. El tamaño del repositorio es de 0,1 GB, lo que sugiere un adaptador ligero, probablemente un LoRA de bajo rango.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y su fecha de creación (2026-08-16) es posterior a la fecha actual, lo que podría indicar un error en los metadatos o un modelo recién subido. No se dispone de información sobre arquitectura interna, número de parámetros, contexto, idiomas soportados ni detalles de entrenamiento. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en las convenciones habituales de los adaptadores LoRA para difusión, sin poder confirmar capacidades concretas.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/maxuna/una2rvc)
+- [Página del modelo en Hugging Face](https://huggingface.co/maxuna/una2rvc)
 - [Repositorio de archivos del modelo](https://huggingface.co/maxuna/una2rvc/tree/main)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este modelo. Los resultados de búsqueda web no aportan información adicional sobre `maxuna/una2rvc`.

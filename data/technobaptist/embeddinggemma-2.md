@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EmbeddingGemma 2 es un modelo abierto de embeddings multimodales desarrollado por Google DeepMind que proyecta entradas de texto (incluido codigo), imagenes, video y audio, asi como combinaciones de estas, en un unico espacio vectorial compartido de 768 dimensiones. El modelo suma 740M de parametros totales y combina un backbone de texto de 270M (130M de transformer mas 140M de embedder) con encoders modulares de vision (170M) y audio (300M) que pueden cargarse selectivamente segun la modalidad necesaria. La ficha de HuggingFace analizada corresponde a una subida del usuario TechnoBaptist, mientras que el model card y los enlaces apuntan al modelo original de Google DeepMind.
+EmbeddingGemma 2 es un modelo abierto de embeddings multimodales desarrollado por Google DeepMind que proyecta entradas de texto (incluido codigo), imagenes, video y audio, asi como combinaciones de estas, en un unico espacio vectorial compartido de 768 dimensiones. El modelo suma 740M de parametros totales y combina un backbone de texto de 270M (130M de transformer mas 140M de embedder) con encoders modulares de vision (170M) y audio (300M) que pueden cargarse selectivamente segun la modalidad necesaria. La ficha de Hugging Face analizada corresponde a una subida del usuario TechnoBaptist, mientras que el model card y los enlaces apuntan al modelo original de Google DeepMind.
 
 El objetivo del modelo es generar representaciones semantidas de baja latencia para ejecucion en hardware de consumo (moviles, portatiles y equipos de sobremesa), habilitando busqueda semantica, recuperacion aumentada por generacion (RAG), clasificacion y clustering directamente en el dispositivo. Incorpora soporte nativo para Matryoshka Representation Learning (MRL), lo que permite truncar las embeddings a 128, 256 o 512 dimensiones con una degradacion de calidad minima, reduciendo hasta 6 veces el coste de almacenamiento de vectores.
 
-Es relevante porque unifica cuatro modalidades en un unico espacio de embeddings de 768 dimensiones con una ventana de contexto de 8.192 tokens, mantiene soporte para mas de 100 idiomas, mejora aproximadamente un 14% en tareas de codigo respecto a su predecesor y esta publicado bajo licencia Apache 2.0, lo que facilita su adopcion en produccion. El repositorio de HuggingFace analizado registra 0 descargas y 0 likes, y fue creado el 6 de octubre de 2026, por lo que se trata de una copia de la comunidad sin traccion publica verificable.
+Es relevante porque unifica cuatro modalidades en un unico espacio de embeddings de 768 dimensiones con una ventana de contexto de 8.192 tokens, mantiene soporte para mas de 100 idiomas, mejora aproximadamente un 14% en tareas de codigo respecto a su predecesor y esta publicado bajo licencia Apache 2.0, lo que facilita su adopcion en produccion. El repositorio de Hugging Face analizado registra 0 descargas y 0 likes, y fue creado el 6 de octubre de 2026, por lo que se trata de una copia de la comunidad sin traccion publica verificable.
 
 ## Especificaciones tecnicas
 
@@ -110,8 +110,8 @@ Para otros modelos de embeddings de la misma categoria (por ejemplo, alternativa
 
 ## Enlaces
 
-- HuggingFace (subida analizada): https://huggingface.co/TechnoBaptist/embeddinggemma-2
-- HuggingFace (modelo original): https://huggingface.co/google/embeddinggemma-2
+- Hugging Face (subida analizada): https://huggingface.co/TechnoBaptist/embeddinggemma-2
+- Hugging Face (modelo original): https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion: https://ai.google.dev/gemma/docs/embeddinggemma

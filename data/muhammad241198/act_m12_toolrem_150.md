@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_M12_toolrem_150` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario Muhammad241198 en HuggingFace Hub. No se trata de un modelo de lenguaje, sino de un controlador robótico entrenado con LeRobot que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, una técnica descrita en el paper ACT (arXiv:2304.13705) que mejora la estabilidad y la tasa de éxito en tareas de manipulación.
+`act_M12_toolrem_150` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario Muhammad241198 en Hugging Face Hub. No se trata de un modelo de lenguaje, sino de un controlador robótico entrenado con LeRobot que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, una técnica descrita en el paper ACT (arXiv:2304.13705) que mejora la estabilidad y la tasa de éxito en tareas de manipulación.
 
 El modelo ha sido entrenado sobre el dataset `rbtrprjkt/m12-nut-tool_unfasten_nodepth`, orientado a la tarea de desenroscar o retirar una herramienta o tuerca (tool unfasten) sin información de profundidad. Con 51.736.199 parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto pensado para ejecutarse en el lazo de control de un robot de sobremesa, típicamente un seguidor tipo SO-100.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_M12_toolrem_150 | 51.736.199 | no aplica | Manipulación (tool unfasten) | Apache 2.0 | HuggingFace Hub |
-| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación general | Apache 2.0 | HuggingFace Hub / LeRobot |
-| Políticas Diffusion Policy | variable | no aplica | Manipulación general | según checkpoint | HuggingFace Hub |
-| Políticas VQ-BeT | variable | no aplica | Manipulación general | según checkpoint | HuggingFace Hub |
+| act_M12_toolrem_150 | 51.736.199 | no aplica | Manipulación (tool unfasten) | Apache 2.0 | Hugging Face Hub |
+| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación general | Apache 2.0 | Hugging Face Hub / LeRobot |
+| Políticas Diffusion Policy | variable | no aplica | Manipulación general | según checkpoint | Hugging Face Hub |
+| Políticas VQ-BeT | variable | no aplica | Manipulación general | según checkpoint | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada, por lo que la comparación se limita a aspectos de disponibilidad y licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muhammad241198/act_M12_toolrem_150
+- Hugging Face: https://huggingface.co/Muhammad241198/act_M12_toolrem_150
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

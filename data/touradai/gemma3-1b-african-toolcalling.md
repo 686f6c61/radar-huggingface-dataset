@@ -6,7 +6,7 @@ TouradAi/gemma3-1b-african-toolcalling es un ajuste fino (fine-tuning) del model
 
 El interes de este modelo reside en su especializacion: frente al Gemma 3 base, que es un modelo generalista, esta variante busca mejorar la capacidad de invocar funciones externas (APIs, herramientas, servicios) en un dominio geografico y linguistico concreto, el africano. Con apenas 1.000 millones de parametros, es un modelo ligero pensado para despliegues con recursos limitados, lo que encaja con escenarios de conectividad y hardware restringidos habituales en muchos mercados africanos.
 
-No obstante, la informacion publicada en HuggingFace es muy escasa: no hay model card detallada, no se documentan los datos de entrenamiento, no se publican benchmarks y el acceso esta restringido (gated), requiriendo aceptar condiciones. Esto limita seriamente la evaluacion objetiva del modelo y obliga a tratar muchas especificaciones como "no disponible".
+No obstante, la informacion publicada en Hugging Face es muy escasa: no hay model card detallada, no se documentan los datos de entrenamiento, no se publican benchmarks y el acceso esta restringido (gated), requiriendo aceptar condiciones. Esto limita seriamente la evaluacion objetiva del modelo y obliga a tratar muchas especificaciones como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -78,13 +78,13 @@ La comparativa es limitada porque no se publican benchmarks del modelo. Frente a
 - Riesgo elevado de alucinacion en llamadas a herramientas: sin benchmarks ni ejemplos de salida, no hay garantia de que el formato de tool calling sea estable.
 - Sesgos desconocidos: al no documentarse la composicion del dataset, no es posible evaluar sesgos linguisticos, culturales o geograficos.
 - Cobertura idiomatica incierta: los metadatos solo declaran ingles; el soporte real de lenguas africanas no esta confirmado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso en produccion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion.
 - Licencia apache-2.0 declarada, pero al derivar de Gemma 3 conviene verificar la compatibilidad con los terminos de uso de Gemma, que pueden imponer restricciones adicionales.
 - Tamano de 1B: capacidad de razonamiento y conocimiento limitados en comparacion con modelos de mayor escala; no recomendable para tareas complejas de razonamiento multi-paso.
 - Sin garantias de mantenimiento: repositorio con cero descargas y cero likes en el momento de la consulta, lo que sugiere ausencia de validacion por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TouradAi/gemma3-1b-african-toolcalling
+- Hugging Face: https://huggingface.co/TouradAi/gemma3-1b-african-toolcalling
 - Modelo base: https://huggingface.co/unsloth/gemma-3-1b-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

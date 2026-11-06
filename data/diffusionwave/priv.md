@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DiffusionWave/priv es un modelo publicado por el usuario de HuggingFace DiffusionWave bajo licencia Apache 2.0. El repositorio tiene un tamaño de 5,4 GB y fue creado el 26 de agosto de 2026. La model card asociada no contiene información técnica alguna más allá de la declaración de licencia, por lo que no se dispone de detalles sobre arquitectura, parámetros, entrenamiento o capacidades.
+DiffusionWave/priv es un modelo publicado por el usuario de Hugging Face DiffusionWave bajo licencia Apache 2.0. El repositorio tiene un tamaño de 5,4 GB y fue creado el 26 de agosto de 2026. La model card asociada no contiene información técnica alguna más allá de la declaración de licencia, por lo que no se dispone de detalles sobre arquitectura, parámetros, entrenamiento o capacidades.
 
-La relevancia de este modelo es actualmente indeterminada. El nombre "priv" podría sugerir un uso orientado a privacidad o despliegue local, pero no existe documentación que lo confirme. El perfil de DiffusionWave muestra actividad reciente en HuggingFace, con actualizaciones de modelos y datasets, aunque sin información pública que permita contextualizar este lanzamiento.
+La relevancia de este modelo es actualmente indeterminada. El nombre "priv" podría sugerir un uso orientado a privacidad o despliegue local, pero no existe documentación que lo confirme. El perfil de DiffusionWave muestra actividad reciente en Hugging Face, con actualizaciones de modelos y datasets, aunque sin información pública que permita contextualizar este lanzamiento.
 
 Dada la ausencia total de especificaciones técnicas, esta ficha se limita a documentar los datos disponibles y a señalar explícitamente las carencias de información. Cualquier uso en producción requeriría contactar previamente con el autor o esperar a que publique documentación técnica.
 
@@ -81,6 +81,6 @@ No es posible establecer una comparativa sin conocer las características del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DiffusionWave/priv
+- Modelo en Hugging Face: https://huggingface.co/DiffusionWave/priv
 - Perfil del autor: https://huggingface.co/DiffusionWave
 - Modelos del autor: https://huggingface.co/DiffusionWave/models

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento numerico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Variante de 4B del mismo autor: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Discord del autor: https://discord.gg/SZ5vacTXYf

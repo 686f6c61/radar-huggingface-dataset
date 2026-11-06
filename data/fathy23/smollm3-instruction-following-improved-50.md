@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fathy23/SmolLM3-instruction-following-improved-50 es un adaptador LoRA (PEFT) publicado en HuggingFace que se aplica sobre el modelo base HuggingFaceTB/SmolLM3-3B-Base. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (0,1 GB en el repositorio) que, segun el nombre del identificador, persigue mejorar el seguimiento de instrucciones del modelo base. El autor es el usuario Fathy23 y la model card no aporta informacion sustantiva: practicamente todos los campos estan marcados como "[More Information Needed]".
+Fathy23/SmolLM3-instruction-following-improved-50 es un adaptador LoRA (PEFT) publicado en Hugging Face que se aplica sobre el modelo base HuggingFaceTB/SmolLM3-3B-Base. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango (0,1 GB en el repositorio) que, segun el nombre del identificador, persigue mejorar el seguimiento de instrucciones del modelo base. El autor es el usuario Fathy23 y la model card no aporta informacion sustantiva: practicamente todos los campos estan marcados como "[More Information Needed]".
 
 El modelo base, SmolLM3-3B-Base, es un transformer de 3.000 millones de parametros desarrollado por HuggingFaceTB. Sin embargo, la informacion proporcionada no incluye la ficha del modelo base, por lo que los detalles de arquitectura, contexto, datos de entrenamiento y licencia del adaptador no pueden confirmarse a partir de las fuentes disponibles. El adaptador se distribuye como safetensors con la libreria peft y esta etiquetado para text-generation.
 

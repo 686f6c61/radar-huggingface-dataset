@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / parametros | Disponibilidad |
 |---|---|---|---|---|---|
-| `jbarlo/eyespy-models` (SAM 3 + DINOv2-small empaquetados) | Segmentación y clasificación de imágenes | ONNX (FP16/FP32) | SAM License + Apache-2.0 | No disponible | HuggingFace, 0 descargas |
+| `jbarlo/eyespy-models` (SAM 3 + DINOv2-small empaquetados) | Segmentación y clasificación de imágenes | ONNX (FP16/FP32) | SAM License + Apache-2.0 | No disponible | Hugging Face, 0 descargas |
 | SAM 3 original (Meta) | Segmentación guiada por texto | PyTorch | SAM License | No disponible en la información proporcionada | Distribución oficial de Meta |
-| DINOv2-small original (Meta) | Visión auto-supervisada | PyTorch | Apache-2.0 | No disponible en la información proporcionada | HuggingFace / repositorio de Meta |
-| SAM 2 (Meta) | Segmentación de vídeo e imagen | PyTorch | Apache-2.0 (según versión) | No disponible | HuggingFace |
+| DINOv2-small original (Meta) | Visión auto-supervisada | PyTorch | Apache-2.0 | No disponible en la información proporcionada | Hugging Face / repositorio de Meta |
+| SAM 2 (Meta) | Segmentación de vídeo e imagen | PyTorch | Apache-2.0 (según versión) | No disponible | Hugging Face |
 
 La comparativa se limita a señalar que este repositorio no aporta pesos nuevos, sino una conversión a ONNX de los modelos originales; cualquier comparación de rendimiento frente a los originales requeriría benchmarks que no se han publicado.
 
@@ -81,7 +81,7 @@ La comparativa se limita a señalar que este repositorio no aporta pesos nuevos,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jbarlo/eyespy-models
+- Repositorio en Hugging Face: https://huggingface.co/jbarlo/eyespy-models
 - Aplicación eyespy: https://github.com/jbarlo/eyespy
 - Licencia SAM: https://huggingface.co/jbarlo/eyespy-models/blob/main/sam3/LICENSE-SAM.txt
 - Aviso de procedencia SAM: `sam3/NOTICE-SAM.txt` (en el repositorio)

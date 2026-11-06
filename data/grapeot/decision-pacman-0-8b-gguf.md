@@ -76,7 +76,7 @@ Datos adicionales aportados por el autor: en modo lockstep (el juego espera cada
 
 | Modelo | Parametros | Contexto | Rendimiento (pellets) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pacman-0.8b-qwen | 772.845.888 | no disponible | 425 | apache-2.0 | GGUF en HuggingFace |
+| pacman-0.8b-qwen | 772.845.888 | no disponible | 425 | apache-2.0 | GGUF en Hugging Face |
 | phi4-mini | no disponible | no disponible | 232 | no disponible | no disponible en la informacion |
 | tev1:4b | 4B | no disponible | 148 | no disponible | no disponible en la informacion |
 | tev1:0.8b | 0,8B | no disponible | 69 | no disponible | no disponible en la informacion |
@@ -96,6 +96,6 @@ Datos adicionales aportados por el autor: en modo lockstep (el juego espera cada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grapeot/decision-pacman-0.8b-GGUF
+- Hugging Face: https://huggingface.co/grapeot/decision-pacman-0.8b-GGUF
 - Repositorio del juego: https://github.com/grapeot/decision-pacman
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -4,7 +4,7 @@
 
 El repositorio `makaiming/seedance-2-0-video-generator` contiene una herramienta de código abierto (licencia MIT) para generar vídeos orientados a aplicaciones de danza y movimiento. Está desarrollado por el usuario `makaiming` y forma parte del ecosistema `seedance-2.0`, cuya web oficial es `seeda.app`. El proyecto pretende facilitar la creación de coreografías, tutoriales de baile y visualizaciones de datos de captura de movimiento sin necesidad de conocimientos avanzados de edición de vídeo.
 
-El repositorio no es un modelo de aprendizaje automático en el sentido tradicional; no se publican pesos, arquitectura neuronal ni datos de entrenamiento. Se trata de un conjunto de utilidades de software para renderizar vídeos a partir de secuencias de imágenes, keyframes o datos de motion capture, con funciones para añadir efectos visuales, sincronizar audio y generar vídeos de demostración. Esta naturaleza de proyecto de código, junto con la ausencia de descargas y valoraciones en HuggingFace, sugiere que se encuentra en una fase temprana y sin validación de la comunidad.
+El repositorio no es un modelo de aprendizaje automático en el sentido tradicional; no se publican pesos, arquitectura neuronal ni datos de entrenamiento. Se trata de un conjunto de utilidades de software para renderizar vídeos a partir de secuencias de imágenes, keyframes o datos de motion capture, con funciones para añadir efectos visuales, sincronizar audio y generar vídeos de demostración. Esta naturaleza de proyecto de código, junto con la ausencia de descargas y valoraciones en Hugging Face, sugiere que se encuentra en una fase temprana y sin validación de la comunidad.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El repositorio no es un modelo de aprendizaje automático en el sentido tradicio
 
 La documentación del repositorio no describe ninguna arquitectura de red neuronal. Según la model card, el proyecto se compone de código para gestionar la generación de vídeo, sin que se especifiquen características de un modelo entrenado. No se aportan datos sobre el tamaño del dataset, número de tokens ni técnicas de optimización como RLHF o DPO. Se trata de un repositorio de herramientas de software, no de un modelo de fundación publicado.
 
-A pesar de que el nombre del proyecto coincide con el de un generador multimodal de vídeo de ByteDance llamado "Seedance 2.0", la información proporcionada en HuggingFace no confirma que exista una relación directa con dicho sistema. El único enlace oficial citado en la model card es `seeda.app`, que remite al ecosistema seedance-2.0.
+A pesar de que el nombre del proyecto coincide con el de un generador multimodal de vídeo de ByteDance llamado "Seedance 2.0", la información proporcionada en Hugging Face no confirma que exista una relación directa con dicho sistema. El único enlace oficial citado en la model card es `seeda.app`, que remite al ecosistema seedance-2.0.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. En la documentación no se ofrecen comparaciones con otros proyec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/makaiming/seedance-2-0-video-generator
+- Repositorio en Hugging Face: https://huggingface.co/makaiming/seedance-2-0-video-generator
 - Sitio web del ecosistema seedance-2.0: https://seeda.app/
 - Página externa con información sobre Seedance 2.0: https://seeddance.ai/seedance-2-0
 - Página externa sobre uso gratuito de Seedance 2.0: https://seedclip.net/

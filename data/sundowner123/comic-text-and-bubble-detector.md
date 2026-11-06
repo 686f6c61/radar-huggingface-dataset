@@ -76,7 +76,7 @@ La comparativa se limita a estos dos modelos porque no hay mas alternativas publ
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Sundowner123/comic-text-and-bubble-detector
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Sundowner123/comic-text-and-bubble-detector
 - Modelo original: https://huggingface.co/ogkalu/comic-text-and-bubble-detector
 - Repositorio del modelo original (arbol de archivos): https://huggingface.co/ogkalu/comic-text-and-bubble-detector/tree/main
 - Proyecto alternativo de deteccion de texto en manga/comic: https://github.com/dmMaze/comic-text-detector

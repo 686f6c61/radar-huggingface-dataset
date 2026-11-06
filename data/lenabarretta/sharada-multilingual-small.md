@@ -100,8 +100,8 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 
 | Modelo | Parametros | Naturaleza | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharada-multilingual-small | 141M | Encoder de decision zero-shot (sobre mmBERT-small) | 256 tokens de texto + pregunta y opciones | Apache 2.0 | HuggingFace, via libreria sharada |
-| jhu-clsp/mmBERT-small (base) | No disponible | Encoder multilingue ModernBERT | No disponible | No disponible | HuggingFace |
+| sharada-multilingual-small | 141M | Encoder de decision zero-shot (sobre mmBERT-small) | 256 tokens de texto + pregunta y opciones | Apache 2.0 | Hugging Face, via libreria sharada |
+| jhu-clsp/mmBERT-small (base) | No disponible | Encoder multilingue ModernBERT | No disponible | No disponible | Hugging Face |
 | Encoders clasicos tipo BERT-base / DeBERTa-v3 | ~110M-180M | Encoder de clasificacion con cabeza fija | 512 tokens tipicamente | Variable | Amplia |
 
 La diferencia principal frente a un encoder de clasificacion convencional es que sharada no fija las etiquetas en los pesos, sino que las recibe en la entrada, lo que permite clasificacion zero-shot y enrutamiento con conjuntos de etiquetas variables sin reentrenar. Datos numericos de rendimiento frente a alternativas: no disponibles.
@@ -122,7 +122,7 @@ La diferencia principal frente a un encoder de clasificacion convencional es que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenabarretta/sharada-multilingual-small
+- Modelo en Hugging Face: https://huggingface.co/lenabarretta/sharada-multilingual-small
 - Repositorio de codigo, ejemplos y ejecucion de entrenamiento: https://github.com/LenaBarretta/sharada
 - Notas de diseno y experimentos (RLCR): https://lenatriestounderstand.com/notes/llm/024-rlcr/
 - Modelo base: jhu-clsp/mmBERT-small (referenciado como `base_model` en la model card)

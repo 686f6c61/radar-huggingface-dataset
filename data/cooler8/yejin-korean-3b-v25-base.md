@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 3B v2.5 Base es un modelo de lenguaje causal bilingue coreano-ingles desarrollado por el usuario cooler8 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo base (pretrained), no alineado ni ajustado por instrucciones, con 3.015.355.392 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos densos de ~3B. Su ventana de contexto es de 4096 tokens y utiliza un tokenizador propio de 64.000 entradas optimizado para coreano, un detalle relevante porque la mayoria de tokenizadores multilingues genericos fragmentan el hangul en secuencias de bytes poco eficientes.
+Yejin Korean 3B v2.5 Base es un modelo de lenguaje causal bilingue coreano-ingles desarrollado por el usuario cooler8 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo base (pretrained), no alineado ni ajustado por instrucciones, con 3.015.355.392 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos densos de ~3B. Su ventana de contexto es de 4096 tokens y utiliza un tokenizador propio de 64.000 entradas optimizado para coreano, un detalle relevante porque la mayoria de tokenizadores multilingues genericos fragmentan el hangul en secuencias de bytes poco eficientes.
 
 El modelo se entrena en dos fases segun la model card: un preentrenamiento sobre una mezcla curada de texto en coreano e ingles, seguido de una fase de annealing con datos de alta calidad orientados a razonamiento y dominios especificos. No se especifican en la informacion disponible el numero total de tokens, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO; al ser un modelo base, lo esperable es que no las haya.
 
@@ -12,7 +12,7 @@ Su relevancia actual es doble. Por un lado, cubre un nicho poco poblado: modelos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal denso (etiqueta `llama` en HuggingFace); numero de capas y cabezas no disponible |
+| Arquitectura | Transformer causal denso (etiqueta `llama` en Hugging Face); numero de capas y cabezas no disponible |
 | Parametros totales | 3.015.355.392 (3,02B) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 4096 tokens |
@@ -101,7 +101,7 @@ Diferencias clave: este modelo es el unico de la tabla con un tokenizador especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v25-base
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v25-base
 - Paper tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Documentacion de transformers para carga de modelos causales: https://huggingface.co/docs/transformers/model_doc/llama

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo de lenguaje pequeño publicado por Erbium08 en HuggingFace con el identificador Erbium08/gouda-g1-xs-r4. La información pública disponible es muy limitada: la model card solo indica licencia MIT, idioma inglés y el dataset de entrenamiento HuggingFaceFW/fineweb-edu. El repositorio ocupa 0.1 GB, lo que sugiere un modelo de tamaño reducido, pero no se han publicado especificaciones técnicas detalladas.
+Modelo de lenguaje pequeño publicado por Erbium08 en Hugging Face con el identificador Erbium08/gouda-g1-xs-r4. La información pública disponible es muy limitada: la model card solo indica licencia MIT, idioma inglés y el dataset de entrenamiento HuggingFaceFW/fineweb-edu. El repositorio ocupa 0.1 GB, lo que sugiere un modelo de tamaño reducido, pero no se han publicado especificaciones técnicas detalladas.
 
 El modelo parece ser un experimento de la cuenta Erbium08, que también mantiene un repositorio en GitHub llamado gouda-ai. A fecha de creación (2026-09-08), el modelo no tiene descargas ni likes, lo que indica que es un proyecto nuevo o poco conocido.
 
@@ -56,6 +56,6 @@ No disponible. No se han identificado modelos comparables en la información dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Erbium08/gouda-g1-xs-r4
+- Hugging Face: https://huggingface.co/Erbium08/gouda-g1-xs-r4
 - GitHub: https://github.com/Erbium08/gouda-ai
 - Perfil de GitHub del autor: https://github.com/Erbium08

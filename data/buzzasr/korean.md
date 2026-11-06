@@ -69,8 +69,8 @@ Según la model card, el modelo logra el CER más bajo de todos los sistemas ope
 
 | Modelo | Parámetros | Contexto / audio | CER combinado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BuzzASR/korean | 1,54 B | ventana de 30 s (Whisper) | 4,61 | MIT | HuggingFace |
-| openai/whisper-large-v3 | ~1,55 B | ventana de 30 s (Whisper) | 5,72 | MIT | HuggingFace |
+| BuzzASR/korean | 1,54 B | ventana de 30 s (Whisper) | 4,61 | MIT | Hugging Face |
+| openai/whisper-large-v3 | ~1,55 B | ventana de 30 s (Whisper) | 5,72 | MIT | Hugging Face |
 | Omnilingual 1B | ~1 B | no disponible | no disponible (comparado en paper) | no disponible | no disponible |
 | Omnilingual 7B | ~7 B | no disponible | no disponible (comparado en paper) | no disponible | no disponible |
 | MMS | no disponible | no disponible | no disponible (comparado en paper) | no disponible | no disponible |
@@ -92,7 +92,7 @@ La model card afirma que BuzzASR/korean supera en CER a todos estos sistemas sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuzzASR/korean
+- Modelo en Hugging Face: https://huggingface.co/BuzzASR/korean
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Paper (arXiv:2609.09554): https://arxiv.org/abs/2609.09554
 - Página del proyecto BuzzASR: https://lemn-lab.github.io/buzz-asr/

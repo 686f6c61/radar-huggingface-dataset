@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbrasga/Godoter3.8-27B` es un repositorio de modelo publicado en HuggingFace por el usuario `rbrasga` bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 27 000 millones de parámetros (la cifra "27B" del identificador), pero la model card asociada no contiene ninguna documentación técnica: se reduce a la cabecera YAML con la licencia, sin descripción, sin arquitectura declarada, sin tokenizer documentado y sin datos de entrenamiento.
+`rbrasga/Godoter3.8-27B` es un repositorio de modelo publicado en Hugging Face por el usuario `rbrasga` bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 27 000 millones de parámetros (la cifra "27B" del identificador), pero la model card asociada no contiene ninguna documentación técnica: se reduce a la cabecera YAML con la licencia, sin descripción, sin arquitectura declarada, sin tokenizer documentado y sin datos de entrenamiento.
 
 No se ha podido verificar ningún dato funcional del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las marcas temporales de creación y actualización son idénticas (2026-10-20T22:04:25Z), lo que apunta a una subida única sin mantenimiento posterior ni histórico de versiones.
 
@@ -48,7 +48,7 @@ Advertencia previa: al no existir documentación de capacidades, los escenarios 
 - Sustitución de bajo coste en pipelines de generación de texto: si el modelo funciona, su licencia Apache 2.0 permite integrarlo sin fricción legal en un servicio de resumen o reescritura, algo que no ocurre con pesos de licencia restrictiva.
 - Ajuste fino supervisado (SFT) sobre dominio propio: un checkpoint de 27B con licencia permisiva es una base potencial para especialización mediante LoRA, siempre que se confirme que los pesos son completos y no un delta o un merge defectuoso.
 - Experimentación académica con hardware limitado: el rango de 27B permite cuantización a 4 bits en una GPU de 24 GB, lo que facilita reproducir experimentos sin clúster.
-- Análisis forense de artefactos publicados: examinar `config.json`, `tokenizer_config.json` y `generation_config.json` para determinar la arquitectura real, el vocabulario y los tokens especiales, útil para investigadores que estudian prácticas de publicación en HuggingFace.
+- Análisis forense de artefactos publicados: examinar `config.json`, `tokenizer_config.json` y `generation_config.json` para determinar la arquitectura real, el vocabulario y los tokens especiales, útil para investigadores que estudian prácticas de publicación en Hugging Face.
 - Docencia sobre riesgos de cadena de suministro de modelos: el caso ilustra por qué un repositorio sin model card, sin descargas y sin procedencia declarada no debe incorporarse a un pipeline de producción sin auditoría previa.
 
 ## Benchmarks y rendimiento
@@ -93,7 +93,7 @@ No es posible establecer una comparación de rendimiento con estos modelos porqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rbrasga/Godoter3.8-27B
+- Hugging Face: https://huggingface.co/rbrasga/Godoter3.8-27B
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de código: no disponible

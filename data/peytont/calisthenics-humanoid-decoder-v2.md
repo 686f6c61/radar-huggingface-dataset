@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Calisthenics humanoid decoder v2 es un decodificador compacto de landmarks a malla (landmark-to-mesh) publicado por el usuario PeytonT en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de texto: es un componente de visualización que convierte anclas de pose en una malla humanoides de 7.228 vértices y 14.505 triángulos, con un total de 283.026 bytes de pesos empaquetados. Su función es alimentar el visor de pose de la aplicación CaliCombos, orientada a calistenia, y se ejecuta en el navegador mediante WASM con SIMD y una ruta de respaldo en JavaScript.
+Calisthenics humanoid decoder v2 es un decodificador compacto de landmarks a malla (landmark-to-mesh) publicado por el usuario PeytonT en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de texto: es un componente de visualización que convierte anclas de pose en una malla humanoides de 7.228 vértices y 14.505 triángulos, con un total de 283.026 bytes de pesos empaquetados. Su función es alimentar el visor de pose de la aplicación CaliCombos, orientada a calistenia, y se ejecuta en el navegador mediante WASM con SIMD y una ruta de respaldo en JavaScript.
 
 La versión 2 corrige la principal limitación de la v1, que derivaba toda la cabeza de un marco de cuello hombro-oreja y por tanto no reaccionaba a la orientación de la nariz. La v2 añade un marco craneal específico definido por centro de oreja, nariz y ambas orejas (hueso 55, índices [72, 0, 3, 4]), lo que permite controlar el cabeceo de la cabeza con independencia de la postura de cuello y cuerpo. Mantiene compatibilidad con la interfaz de 73 anclas de la v1.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Tipo | Tamaño | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Calisthenics humanoid decoder v2 | Decodificador de landmarks a malla, ejecución en navegador | 283.026 bytes de pesos empaquetados; malla de 7.228 vértices | 73 anclas, control craneal en hueso 55 | sam-license (license: other) | HuggingFace; 0 descargas, 0 likes |
+| Calisthenics humanoid decoder v2 | Decodificador de landmarks a malla, ejecución en navegador | 283.026 bytes de pesos empaquetados; malla de 7.228 vértices | 73 anclas, control craneal en hueso 55 | sam-license (license: other) | Hugging Face; 0 descargas, 0 likes |
 | Calisthenics humanoid decoder v1 | Decodificador equivalente, versión previa | no disponible | 73 anclas, sin control de cabeceo independiente (respuesta nula en la prueba controlada) | no disponible | Compatibilidad de interfaz declarada con v2; no se aporta enlace |
 | SAM 3D Body | Ajuste de cuerpo 3D, profesor usado para destilar | checkpoint de varios gigabytes, según la model card | no disponible en esta información | sam-license, con LICENSE-SAM.txt en el repositorio | https://huggingface.co/facebook/sam-3d-body-dinov3 |
 | Geometría de superficie MHR | Fuente de geometría de superficie | no disponible | no disponible | términos MHR, con LICENSE-MHR.txt en el repositorio | Repositorio del autor; no se aporta enlace directo |
@@ -106,7 +106,7 @@ La comparación con alternativas de terceros en la misma categoría (decodificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v2
+- Modelo en Hugging Face: https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v2
 - Licencia referenciada (sam-license): https://huggingface.co/facebook/sam-3d-body-dinov3/blob/main/LICENSE
 - Repositorio de SAM 3D Body, profesor usado en la destilación: https://huggingface.co/facebook/sam-3d-body-dinov3
 - Términos de MHR citados en la model card: LICENSE-MHR.txt, dentro del repositorio del modelo

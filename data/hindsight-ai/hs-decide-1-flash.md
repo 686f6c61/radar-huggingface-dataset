@@ -25,7 +25,7 @@ Es relevante porque propone un patrón distinto al del LLM-as-a-judge: en lugar 
 
 El modelo parte de Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5, y se afina como modelo de decisión. La innovación principal no está en el backbone sino en la interfaz: en lugar de decodificar tokens, el modelo produce en un solo forward pass una distribución de probabilidad sobre las opciones de cada pregunta. Soporta tres tipos de pregunta: `choice` (elegir una entre 2 y 255 opciones), `score` (valorar en 2 a 10 niveles ordenados) y `noul` (sí/no). Cada respuesta incluye la opción elegida, la probabilidad de cada alternativa y una medida de confianza.
 
-La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si hubo RLHF o DPO. Sí indica que el modelo fue entrenado con peticiones de hasta 65.536 tokens, lo que implica un entrenamiento orientado a estados largos (documentos múltiples, historiales de conversación o memorias de agente). La precisión de referencia es bfloat16 y el pipeline declarado en HuggingFace es `text-classification`, coherente con su naturaleza discriminativa más que generativa.
+La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si hubo RLHF o DPO. Sí indica que el modelo fue entrenado con peticiones de hasta 65.536 tokens, lo que implica un entrenamiento orientado a estados largos (documentos múltiples, historiales de conversación o memorias de agente). La precisión de referencia es bfloat16 y el pipeline declarado en Hugging Face es `text-classification`, coherente con su naturaleza discriminativa más que generativa.
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hs-decide-1-flash | 752 M | 65.536 | Modelo de decisión (choice/score/noul) | Apache 2.0 | HuggingFace, vLLM plugin, servicio gestionado |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generativo | no disponible | HuggingFace |
+| hs-decide-1-flash | 752 M | 65.536 | Modelo de decisión (choice/score/noul) | Apache 2.0 | Hugging Face, vLLM plugin, servicio gestionado |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generativo | no disponible | Hugging Face |
 | Otros modelos de decisión de 0,8B | no disponible | no disponible | Decisión | no disponible | no disponible |
 
 La model card menciona una comparación con "otros modelos de decisión de 0,8B" en una gráfica, pero no identifica los modelos ni aporta cifras. No hay datos suficientes para una comparativa numérica fiable.
@@ -83,11 +83,11 @@ La model card menciona una comparación con "otros modelos de decisión de 0,8B"
 - Riesgo de alucinación reducido por diseño (no genera texto), pero puede asignar alta confianza a opciones incorrectas si el estado contiene información ambigua o contradictoria.
 - Aunque la licencia es Apache 2.0, el uso comercial del servicio gestionado de Hindsight Inference requiere una API key propia y está sujeto a sus condiciones.
 - El ecosistema de despliegue está atado a vLLM 0.32.0 y al plugin del repositorio; no hay soporte documentado para otros runtimes.
-- Modelo muy reciente (creado en octubre de 2026) con cero descargas y cero likes en HuggingFace en el momento de la consulta: poca validación externa por parte de la comunidad.
+- Modelo muy reciente (creado en octubre de 2026) con cero descargas y cero likes en Hugging Face en el momento de la consulta: poca validación externa por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hindsight-ai/hs-decide-1-flash
+- Hugging Face: https://huggingface.co/hindsight-ai/hs-decide-1-flash
 - Repositorio Hindsight: https://github.com/vectorize-io/hindsight
 - Servicio de inferencia gestionado: https://inference.hindsight.vectorize.io
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

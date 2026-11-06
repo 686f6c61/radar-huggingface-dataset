@@ -70,7 +70,7 @@ No se dispone de información de modelos similares con el mismo dominio de datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maianh511/YOLOv12_finetune_PortVehicleOCR
+- Hugging Face: https://huggingface.co/maianh511/YOLOv12_finetune_PortVehicleOCR
 - Dataset: https://huggingface.co/datasets/maianh511/PortVehicleOCR
 - Notebook de entrenamiento de YOLOv12 (Roboflow): https://github.com/roboflow/notebooks/blob/main/notebooks/train-yolov12-object-detection-model.ipynb
 - Tutorial en YouTube: https://www.youtube.com/watch?v=fksJmIMIfXo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micro-sam vit_t_lm` es un checkpoint de segmentación de imágenes biomédicas publicado por el usuario `amorsi` en HuggingFace como espejo (mirror) no modificado del modelo oficial de [micro-sam](https://github.com/computational-cell-analytics/micro-sam), desarrollado por el grupo Computational Cell Analytics. micro-sam es un framework que adapta Segment Anything (SAM) al dominio de la microscopía celular y de tejidos, y este checkpoint concreto corresponde a la variante `vit_t_lm`, es decir, un encoder ViT-Tiny combinado con un decoder específico para segmentación de estructuras biológicas.
+`micro-sam vit_t_lm` es un checkpoint de segmentación de imágenes biomédicas publicado por el usuario `amorsi` en Hugging Face como espejo (mirror) no modificado del modelo oficial de [micro-sam](https://github.com/computational-cell-analytics/micro-sam), desarrollado por el grupo Computational Cell Analytics. micro-sam es un framework que adapta Segment Anything (SAM) al dominio de la microscopía celular y de tejidos, y este checkpoint concreto corresponde a la variante `vit_t_lm`, es decir, un encoder ViT-Tiny combinado con un decoder específico para segmentación de estructuras biológicas.
 
 El modelo resuelve el problema de la segmentación interactiva y automática de imágenes de microscopía (células, núcleos, orgánulos y tejidos) sin necesidad de reentrenar desde cero para cada nuevo dataset. Su relevancia radica en que acerca la segmentación tipo SAM a hardware modesto (ViT-Tiny, ~5 M de parámetros en el encoder) y a flujos de trabajo de bioimage analysis reproducibles, con dos ficheros de pesos (`model.pt` y `decoder.pt`) verificables por hash.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros (encoder) | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| micro-sam `vit_t_lm` (este) | Tiny | Microscopía | no disponible (remite a micro-sam) | HuggingFace (mirror) |
+| micro-sam `vit_t_lm` (este) | Tiny | Microscopía | no disponible (remite a micro-sam) | Hugging Face (mirror) |
 | micro-sam `vit_b_lm` | Base | Microscopía | ídem micro-sam | Registro oficial de micro-sam |
 | micro-sam `vit_h_lm` | Huge | Microscopía | ídem micro-sam | Registro oficial de micro-sam |
-| SAM original (Meta) | ViT-B / ViT-H | Imágenes generales | Apache 2.0 (código y pesos originales) | Meta AI / HuggingFace |
+| SAM original (Meta) | ViT-B / ViT-H | Imágenes generales | Apache 2.0 (código y pesos originales) | Meta AI / Hugging Face |
 
 La comparación cuantitativa de rendimiento entre variantes no está disponible en la información proporcionada. En términos cualitativos, `vit_t_lm` es la opción más ligera de la familia micro-sam, adecuada para prototipado y hardware limitado, mientras que `vit_b_lm` y `vit_h_lm` ofrecen mayor precisión a costa de más recursos.
 
@@ -77,12 +77,12 @@ La comparación cuantitativa de rendimiento entre variantes no está disponible 
 - **Sesgo de dominio**: el modelo está ajustado a microscopía; su uso en imágenes naturales o de otro tipo producirá resultados pobres.
 - **Riesgo de sobre-segmentación o infra-segmentación** en imágenes con artefactos, desenfoque o iluminación no uniforme; se recomienda validación con ground truth del dataset objetivo.
 - **Repositorio de terceros**: es un mirror con 0 descargas y 0 likes; la fuente autoritativa y mantenida es el repositorio de micro-sam.
-- **Sin garantías de soporte**: no hay documentación propia, benchmarks ni issues asociados a este repo de HuggingFace.
+- **Sin garantías de soporte**: no hay documentación propia, benchmarks ni issues asociados a este repo de Hugging Face.
 - **Formato PyTorch únicamente**: no se ofrecen pesos en otros formatos, lo que puede limitar su integración en stacks no Python.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-t-lm
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-t-lm
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de pesos (`util.py`): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt`: https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/faithful-chicken/1.1/files/vit_t.pt

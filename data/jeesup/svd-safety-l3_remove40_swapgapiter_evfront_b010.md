@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l3_remove40_swapgapiter_evfront_b010 es un punto de control derivado de meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Jeesup en HuggingFace. No es un modelo de proposito general: se trata de un artefacto de investigacion que forma parte de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y que reglas de seleccion de componentes permiten repararlo mejor. En concreto, el modelo base se comprimio con SVD-LLM eliminando el 40,02% de los parametros (fraccion densa resultante de 0,5998) y despues se edito mediante 10 rondas iterativas de intercambio de parametros neutro en parametros, seleccionadas con la regla `gap_iter` y un presupuesto total del 1,0% de los parametros densos.
+svd-safety-l3_remove40_swapgapiter_evfront_b010 es un punto de control derivado de meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Jeesup en Hugging Face. No es un modelo de proposito general: se trata de un artefacto de investigacion que forma parte de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y que reglas de seleccion de componentes permiten repararlo mejor. En concreto, el modelo base se comprimio con SVD-LLM eliminando el 40,02% de los parametros (fraccion densa resultante de 0,5998) y despues se edito mediante 10 rondas iterativas de intercambio de parametros neutro en parametros, seleccionadas con la regla `gap_iter` y un presupuesto total del 1,0% de los parametros densos.
 
 El checkpoint conserva la arquitectura transformer decoder-only de Llama 3, con 8.030.261.248 parametros almacenados en safetensors y un repositorio de 16,1 GB. La edicion afecto a 69.744.640 parametros intercambiados (1,00% de los parametros de proyeccion densos), con 10.597 componentes restaurados y 5.153 componentes expulsados, usando la estrategia de valor de intercambio `insert` con desalojo ordenado por sigma y semilla 42.
 
@@ -89,8 +89,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove40_swapgapiter_evfront_b010 | 8.030.261.248 (fraccion densa 0,5998) | No disponible | Llama 3 | ASR AdvBench 0,0019; ASR StrongREJECT 0,0351; sobrerrechazo 0,2916; PPL WikiText-2 37,2542 | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Meta-Llama-3-8B-Instruct (base sin comprimir) | 8.030.261.248 | No disponible en la informacion proporcionada | Llama 3 | No se aportan cifras en la informacion disponible | Ampliamente disponible en HuggingFace |
+| svd-safety-l3_remove40_swapgapiter_evfront_b010 | 8.030.261.248 (fraccion densa 0,5998) | No disponible | Llama 3 | ASR AdvBench 0,0019; ASR StrongREJECT 0,0351; sobrerrechazo 0,2916; PPL WikiText-2 37,2542 | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Meta-Llama-3-8B-Instruct (base sin comprimir) | 8.030.261.248 | No disponible en la informacion proporcionada | Llama 3 | No se aportan cifras en la informacion disponible | Ampliamente disponible en Hugging Face |
 | Otros checkpoints de la rejilla de reglas de seleccion (`gap_iter`, `evfront`, etc.) | No disponible | No disponible | Llama 3 | No disponible | No disponibles en la informacion proporcionada |
 | Otros modelos comprimidos con SVD-LLM | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -112,7 +112,7 @@ La comparacion relevante es contra el modelo base sin comprimir: la model card i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso: los archivos `LICENSE` y `USE_POLICY.md` incluidos en el propio repositorio del modelo.
 - Las busquedas web realizadas no devolvieron ningun resultado relevante para este modelo: unicamente aparecieron listados de un establecimiento de restauracion ajenos por completo al contenido tecnico, por lo que no se incluyen.

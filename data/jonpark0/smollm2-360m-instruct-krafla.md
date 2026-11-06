@@ -91,7 +91,7 @@ La comparativa se limita a datos de parámetros, contexto y licencia; no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/SmolLM2-360M-Instruct-krafla
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/SmolLM2-360M-Instruct-krafla
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Runtime isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

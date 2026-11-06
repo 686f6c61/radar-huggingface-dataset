@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxMesh-Open-14B es un paquete de configuración publicado por Thox-ai sobre los pesos sin modificar de Qwen3-14B (Alibaba Cloud, licencia Apache-2.0). No se trata de un modelo entrenado ni ajustado: el repositorio de HuggingFace contiene únicamente el `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL con el denominado THOX Knowledge Pack v0.1 (8 entradas públicas verificadas). Los pesos reales se descargan desde el pin upstream `qwen3:14b` (digest `sha256:bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8`, 9,28 GB).
+ThoxMesh-Open-14B es un paquete de configuración publicado por Thox-ai sobre los pesos sin modificar de Qwen3-14B (Alibaba Cloud, licencia Apache-2.0). No se trata de un modelo entrenado ni ajustado: el repositorio de Hugging Face contiene únicamente el `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL con el denominado THOX Knowledge Pack v0.1 (8 entradas públicas verificadas). Los pesos reales se descargan desde el pin upstream `qwen3:14b` (digest `sha256:bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8`, 9,28 GB).
 
 El propósito declarado es responder preguntas sobre el sistema de routing MeshStack y sobre planificación de expansión, usando el Knowledge Pack como contexto inyectado en el prompt de sistema. La configuración incluye un bloque de grounding explícito que obliga al modelo a citar el principio de marca de THOX de forma literal y a rechazar la verificación de estado operativo en vivo (telemetría, número de nodos, precios o disponibilidad). El modelo ocupa el tramo intermedio de la lineup THOX Mesh, entre las builds de 8B y 30B.
 
@@ -19,7 +19,7 @@ Es relevante como ejemplo de patrón "configuration-derived": empaquetar un mode
 | Tipos de cuantizacion | no disponible (el build publicado en Ollama ocupa 9,28 GB, lo que sugiere cuantizacion, pero no se especifica el tipo) |
 | Idiomas soportados | en |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Paquete Ollama (Modelfile + manifest); los pesos se obtienen del pin upstream `qwen3:14b`. No se publican safetensors ni GGUF en el repo de HuggingFace |
+| Formato de pesos | Paquete Ollama (Modelfile + manifest); los pesos se obtienen del pin upstream `qwen3:14b`. No se publican safetensors ni GGUF en el repo de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThoxMesh-Open-14B | 14B | 8.192 verificado | 25,25 tok/s (host compartido, 16 GB) | Apache-2.0 | Ollama; repo HF solo con empaquetado |
-| Qwen3-14B (upstream) | 14B | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | Pesos completos en HuggingFace |
+| Qwen3-14B (upstream) | 14B | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | Pesos completos en Hugging Face |
 | Builds THOX Mesh 8B y 30B | 8B / 30B | no disponible | no disponible | no disponible | Lineup THOX (no detallada en la informacion) |
 
 La comparacion con Qwen3-14B es directa en pesos (byte-identicos), pero la informacion proporcionada no incluye el contexto nativo ni los benchmarks del upstream, por lo que no se puede cuantificar la diferencia de rendimiento. No se dispone de datos de otros modelos de la misma categoria en la informacion proporcionada.
@@ -93,7 +93,7 @@ La comparacion con Qwen3-14B es directa en pesos (byte-identicos), pero la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-Open-14B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-Open-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Ejecucion en Ollama: `ollama run Thox-ai/thoxmesh-open-14b`
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

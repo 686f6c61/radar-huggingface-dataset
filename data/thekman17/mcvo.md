@@ -93,6 +93,6 @@ MCVO se posiciona como una alternativa ligera y auto-supervisada frente a modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thekman17/mcvo
+- Modelo en Hugging Face: https://huggingface.co/thekman17/mcvo
 - Repositorio de código, benchmark y reproducción: https://github.com/kalman17/anycam-extension (directorio `mcvo/`)
 - Modelo de calibración complementario: https://huggingface.co/thekman17/anycam-mct

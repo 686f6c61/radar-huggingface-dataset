@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BLANK/mario-dqn-workshop
+- Repositorio en Hugging Face: https://huggingface.co/BLANK/mario-dqn-workshop
 - Informe académico sobre DQN para Mario (CS229 Stanford): https://cs229.stanford.edu/proj2016/report/klein-autonomousmariowithdeepreinforcementlearning-report.pdf
 - Proyecto similar en GitHub (F-MurraVicario13): https://github.com/F-MurraVicario13/super_mario_DQN
 - Proyecto similar en GitHub (BrunooCS): https://github.com/BrunooCS/AI-Super-Mario-DQL-

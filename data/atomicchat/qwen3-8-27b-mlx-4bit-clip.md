@@ -15,7 +15,7 @@ El modelo destaca en tareas de codificación, flujos de trabajo agénticos y aut
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | 4-bit (esta versión MLX) |
-| Idiomas soportados | Inglés (según HuggingFace) |
+| Idiomas soportados | Inglés (según Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, MLX |
 
@@ -29,7 +29,7 @@ Qwen3.8-27B es un modelo denso (no MoE) con arquitectura transformer multimodal 
 - Codificación: destaca en generación, revisión y depuración de código, según la documentación oficial.
 - Flujos de trabajo agénticos: soporta razonamiento multi-paso y puede integrarse en pipelines de agentes autónomos.
 - Automatización de oficina: capaz de interpretar documentos, hojas de cálculo y presentaciones con contenido visual.
-- Conversación multilingüe: aunque la ficha de HuggingFace indica solo inglés, el modelo original de Qwen suele soportar múltiples idiomas; no se confirma en esta versión.
+- Conversación multilingüe: aunque la ficha de Hugging Face indica solo inglés, el modelo original de Qwen suele soportar múltiples idiomas; no se confirma en esta versión.
 - Tool calling: no se especifica explícitamente, pero su orientación a agentes sugiere soporte para llamadas a herramientas.
 
 ## Casos de uso
@@ -61,14 +61,14 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 - Sesgos y alucinaciones: no se han publicado evaluaciones de sesgos para este modelo. Como todo LLM, puede generar información falsa o sesgada, especialmente en dominios especializados.
 - Riesgo de alucinación visual: al ser multimodal, puede describir incorrectamente elementos de imágenes o vídeos, lo que requiere verificación humana en aplicaciones críticas.
-- Limitaciones de idioma: la ficha de HuggingFace indica solo inglés; aunque el modelo original de Qwen suele ser multilingüe, no se confirma el soporte para español u otros idiomas en esta versión.
+- Limitaciones de idioma: la ficha de Hugging Face indica solo inglés; aunque el modelo original de Qwen suele ser multilingüe, no se confirma el soporte para español u otros idiomas en esta versión.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe verificar que la cuantización de AtomicChat no añada restricciones adicionales (la model card no las menciona).
 - Inconsistencia en parámetros: el número de parámetros reportado en los safetensors (4.665.462.000) no coincide con los 27.800 millones oficiales. Esto podría indicar un repositorio incompleto o un error de etiquetado; se recomienda verificar la integridad del modelo antes de usarlo.
 - Compatibilidad de hardware: el formato MLX solo funciona en Apple Silicon; no es portable a entornos con GPUs NVIDIA o AMD sin conversión previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-4bit-CLIP
+- Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-4bit-CLIP
 - Página oficial de Atomic Chat: https://atomic.chat/models/qwen3-8-27b
 - Repositorio GitHub de AlibabaCloud-Official: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de QwenLM (serie Qwen3.8): https://github.com/QwenLM/Qwen3.8

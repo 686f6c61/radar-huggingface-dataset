@@ -92,7 +92,7 @@ La comparacion con alternativas especializadas en extraccion de SMS bancarios in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-1.5b-sms-txn-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria MLX LM: https://github.com/ml-explore/mlx-lm
 - Documentacion de MLX: https://ml-explore.github.io/mlx/

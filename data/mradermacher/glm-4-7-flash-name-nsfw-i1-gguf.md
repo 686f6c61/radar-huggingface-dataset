@@ -78,9 +78,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.7-Flash-Name-NSFW (i1-GGUF, este repo) | 29,9 B | No disponible | GGUF (imatrix) | MIT | HuggingFace |
-| GLM-4.7-Flash-Name-NSFW (modelo base, `2048lr`) | 29,9 B | No disponible | safetensors | MIT (segun el repositorio derivado) | HuggingFace |
-| GLM-4.7-Flash-Name-NSFW (cuantizaciones estaticas, mradermacher) | 29,9 B | No disponible | GGUF (sin imatrix) | MIT | HuggingFace |
+| GLM-4.7-Flash-Name-NSFW (i1-GGUF, este repo) | 29,9 B | No disponible | GGUF (imatrix) | MIT | Hugging Face |
+| GLM-4.7-Flash-Name-NSFW (modelo base, `2048lr`) | 29,9 B | No disponible | safetensors | MIT (segun el repositorio derivado) | Hugging Face |
+| GLM-4.7-Flash-Name-NSFW (cuantizaciones estaticas, mradermacher) | 29,9 B | No disponible | GGUF (sin imatrix) | MIT | Hugging Face |
 | Otras alternativas de ~30 B de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-i1-GGUF
 - Modelo base: https://huggingface.co/2048lr/GLM-4.7-Flash-Name-NSFW
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-GGUF
 - Pagina de descarga resumida del autor: https://hf.tst.eu/model#GLM-4.7-Flash-Name-NSFW-i1-GGUF

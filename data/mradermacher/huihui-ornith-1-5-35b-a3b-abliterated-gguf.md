@@ -66,8 +66,8 @@ No se dispone de comparativas directas con otros modelos en la informacion propo
 - Falta de benchmarks: no hay datos de rendimiento publicados para esta version, lo que dificulta la evaluacion objetiva.
 
 ## Enlaces
-- HuggingFace del repositorio: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
+- Hugging Face del repositorio: https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original Ornith-1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B (referencia)
 - Repositorio para DGX Spark: https://github.com/MiaAI-Lab/Ornith-1.5-35B-A3B-DGX-Spark
 - Pagina en Ollama: https://ollama.com/library/ornith-1.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshycodes/fd-qwen3.5-9b-swap_st` es un modelo de lenguaje publicado en HuggingFace por el usuario joshycodes el 4 de octubre de 2026. Se trata de un repositorio con muy baja adopción en el momento de redactar esta ficha: 12 descargas y 0 "likes". La informacion publica disponible es minima y se limita a la etiqueta de arquitectura (`qwen3_5`), el formato de pesos (`safetensors`) y el recuento real de parametros extraido de los ficheros safetensors: 9.653.104.368 parametros (aproximadamente 9,65 mil millones).
+El modelo `joshycodes/fd-qwen3.5-9b-swap_st` es un modelo de lenguaje publicado en Hugging Face por el usuario joshycodes el 4 de octubre de 2026. Se trata de un repositorio con muy baja adopción en el momento de redactar esta ficha: 12 descargas y 0 "likes". La informacion publica disponible es minima y se limita a la etiqueta de arquitectura (`qwen3_5`), el formato de pesos (`safetensors`) y el recuento real de parametros extraido de los ficheros safetensors: 9.653.104.368 parametros (aproximadamente 9,65 mil millones).
 
 El nombre del repositorio sugiere un ajuste fino o una variante derivada de la familia Qwen3.5 en tamano 9B, con un sufijo (`swap_st`) que no viene acompanado de ninguna documentacion que explique su significado. No hay informacion sobre la licencia, los idiomas soportados, la longitud de contexto, el pipeline declarado ni la composicion del dataset de entrenamiento. Tampoco se ha publicado ninguna ficha tecnica, paper o blog asociado al modelo.
 
@@ -95,7 +95,7 @@ No hay datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el modelo ob
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_st
+- Repositorio en Hugging Face: https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_st
 - Paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

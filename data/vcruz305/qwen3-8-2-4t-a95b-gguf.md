@@ -4,7 +4,7 @@
 
 Qwen3.8-2.4T-A95B es un modelo de lenguaje masivo de tipo Mixture of Experts (MoE) desarrollado por Alibaba dentro de la familia Qwen. La version publicada por el usuario vcruz305 es una cuantizacion GGUF del modelo base Qwen/Qwen3.8-2.4T-A95B-FP8, optimizada para su ejecucion con llama.cpp. El nombre del modelo indica 2,4 billones de parametros totales con 95 mil millones de parametros activos por token, una proporcion de activacion del 4 % que permite un rendimiento de inferencia razonable pese al tamano total.
 
-La relevancia de esta publicacion radica en que ofrece el modelo en formato GGUF con cuantizacion IQ1_S, una de las tecnicas de compresion mas agresivas disponibles en llama.cpp, pensada para reducir los requisitos de almacenamiento y VRAM de un modelo de esta escala. El repositorio ocupa 400,5 GB, lo que sigue siendo una cifra considerable pero muy inferior a los mas de 1,8 TB que ocuparia el modelo en precision completa. El acceso es restringido (gated) y requiere aceptar la licencia qwen3.8-max en HuggingFace.
+La relevancia de esta publicacion radica en que ofrece el modelo en formato GGUF con cuantizacion IQ1_S, una de las tecnicas de compresion mas agresivas disponibles en llama.cpp, pensada para reducir los requisitos de almacenamiento y VRAM de un modelo de esta escala. El repositorio ocupa 400,5 GB, lo que sigue siendo una cifra considerable pero muy inferior a los mas de 1,8 TB que ocuparia el modelo en precision completa. El acceso es restringido (gated) y requiere aceptar la licencia qwen3.8-max en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 ## Limitaciones y advertencias
 
 - La cuantizacion IQ1_S es extremadamente agresiva (aproximadamente 1 bit por peso) y puede degradar significativamente la calidad de las respuestas, especialmente en tareas de razonamiento y generacion de codigo.
-- El acceso al repositorio es restringido (gated) y requiere aceptar la licencia qwen3.8-max en HuggingFace, que puede imponer restricciones al uso comercial.
+- El acceso al repositorio es restringido (gated) y requiere aceptar la licencia qwen3.8-max en Hugging Face, que puede imponer restricciones al uso comercial.
 - Los idiomas soportados se limitan a ingles y chino; el rendimiento en otros idiomas no esta garantizado.
 - No se dispone de informacion sobre la longitud de contexto soportada, lo que dificulta planificar su uso en aplicaciones que requieran ventanas largas.
 - El tamano del repositorio (400,5 GB) implica que la descarga y el almacenamiento son costosos, y la inferencia requerira hardware de gama alta o configuraciones de CPU offloading complejas.
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/Qwen3.8-2.4T-A95B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/Qwen3.8-2.4T-A95B-GGUF
 - Modelo base (FP8): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a esta cuantizacion especifica.

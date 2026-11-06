@@ -94,7 +94,7 @@ La informacion proporcionada solo documenta la relacion con los checkpoints base
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| psi0-sonic-shopping (este checkpoint) | 2.629.197.024 | No disponible | VLA para Unitree G1, tarea de compras con interfaz SONIC v1.1 | Apache 2.0 | Pesos en HuggingFace, 0 descargas |
+| psi0-sonic-shopping (este checkpoint) | 2.629.197.024 | No disponible | VLA para Unitree G1, tarea de compras con interfaz SONIC v1.1 | Apache 2.0 | Pesos en Hugging Face, 0 descargas |
 | Psi0 base (`pre.fast.1by1...` / `postpre.1by1.pad36...`) | No disponible | No disponible | VLA generalista de partida, entrenada con datos egocentricos y de mano | Apache 2.0 | Repositorio de Psi0 |
 | Otras VLA de robotica (pi0, GR00T N1, OpenVLA) | No disponible | No disponible | Manipulacion y control de robots | No disponible | No disponible en la informacion proporcionada |
 | SONIC / GR00T-WholeBodyControl (NVIDIA) | No disponible | No disponible | Controlador de cuerpo completo que consume los tokens latentes | Licencia propia de NVIDIA | Repositorio de NVlabs |
@@ -115,7 +115,7 @@ La informacion proporcionada solo documenta la relacion con los checkpoints base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ErvinZzz/psi0-sonic-shopping
+- Modelo en Hugging Face: https://huggingface.co/ErvinZzz/psi0-sonic-shopping
 - Repositorio de Psi0 (PSI-lab, USC): https://github.com/physical-superintelligence-lab/Psi0
 - Controlador NVIDIA SONIC v1.1 / GR00T-WholeBodyControl: https://github.com/NVlabs/GR00T-WholeBodyControl
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas de ayuda de YouTube TV y articulos sin relacion con Psi0, Unitree G1 o SONIC.

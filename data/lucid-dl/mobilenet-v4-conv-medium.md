@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNet-v4-Conv-Medium es un modelo de clasificación de imágenes (image-classification) publicado por el usuario lucid-dl en HuggingFace. No es un modelo original: se trata de un port del checkpoint `timm/mobilenetv4_conv_medium.e500_r256_in1k` al framework Lucid, convertido a safetensors nativos de Lucid y verificado con una carga estricta contra un modelo Lucid recién construido. El modelo subyacente procede del paper *MobileNetV4: Universal Models for the Mobile Ecosystem* (Qin et al., ECCV 2024, arXiv:2404.10518).
+MobileNet-v4-Conv-Medium es un modelo de clasificación de imágenes (image-classification) publicado por el usuario lucid-dl en Hugging Face. No es un modelo original: se trata de un port del checkpoint `timm/mobilenetv4_conv_medium.e500_r256_in1k` al framework Lucid, convertido a safetensors nativos de Lucid y verificado con una carga estricta contra un modelo Lucid recién construido. El modelo subyacente procede del paper *MobileNetV4: Universal Models for the Mobile Ecosystem* (Qin et al., ECCV 2024, arXiv:2404.10518).
 
 Se trata, por tanto, de una red neuronal convolucional (CNN) de la familia MobileNetV4, variante "Conv Medium", con 9,7 millones de parámetros y un peso de 37,37 MB. Está entrenada sobre ImageNet-1k y declara un 79,916 % de accuracy top-1 y un 95,188 % de accuracy top-5 (valores no verificados, aportados por el autor). Su relevancia se limita al ecosistema Lucid: es útil únicamente para quien utilice ese framework de deep learning y quiera un clasificador de imágenes ligero ya convertido, sin pasar por el proceso de conversión desde timm.
 
@@ -71,7 +71,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | ImageNet-1k acc@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lucid-dl/mobilenet-v4-conv-medium | 9,7 M | no aplicable | 79,916 % (no verificado) | apache-2.0 | HuggingFace (Lucid) |
+| lucid-dl/mobilenet-v4-conv-medium | 9,7 M | no aplicable | 79,916 % (no verificado) | apache-2.0 | Hugging Face (Lucid) |
 | timm/mobilenetv4_conv_medium.e500_r256_in1k | 9,7 M | no aplicable | no disponible (mismo checkpoint de origen) | apache-2.0 | timm |
 | Otras variantes MobileNetV4 | no disponible | no aplicable | no disponible | no disponible | timm / paper |
 | Otras CNN ligeras (por ejemplo, MobileNetV3, EfficientNet-B0) | no disponible | no aplicable | no disponible | no disponible | timm |
@@ -93,7 +93,7 @@ El port de Lucid comparte pesos con el checkpoint original de timm, por lo que s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucid-dl/mobilenet-v4-conv-medium
+- Hugging Face: https://huggingface.co/lucid-dl/mobilenet-v4-conv-medium
 - Paper: MobileNetV4: Universal Models for the Mobile Ecosystem (arXiv:2404.10518) — https://arxiv.org/abs/2404.10518
 - Framework Lucid: https://github.com/ChanLumerico/lucid
 - Checkpoint de origen en timm: `timm/mobilenetv4_conv_medium.e500_r256_in1k`

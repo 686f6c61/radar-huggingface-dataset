@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/BananaMind-CodeQ-1.3-2B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/BananaMind-CodeQ-1.3-2B-ONNX
 - Modelo base: https://huggingface.co/BananaMind/BananaMind-CodeQ-1.3-2B
 - Space de demostracion: https://huggingface.co/spaces/BananaMind/BananaMind-CodeQ-WebGPU-Pi
 - Modelo de referencia de arquitectura: https://huggingface.co/openbmb/MiniCPM5-2B

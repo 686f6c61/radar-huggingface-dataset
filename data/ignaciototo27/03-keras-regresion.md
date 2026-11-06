@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este "modelo" es en realidad un ejemplo pedagógico de regresión lineal implementado con Keras 3, publicado en HuggingFace por el usuario IgnacioToto27 en el marco del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal clásica (una capa `Normalization` seguida de una capa `Dense(1)`, es decir, tres pesos y un bias) que predice el precio de una vivienda en miles de dólares estadounidenses a partir de tres variables tabulares: superficie en metros cuadrados, presencia de balcón y presencia de ascensor.
+Este "modelo" es en realidad un ejemplo pedagógico de regresión lineal implementado con Keras 3, publicado en Hugging Face por el usuario IgnacioToto27 en el marco del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal clásica (una capa `Normalization` seguida de una capa `Dense(1)`, es decir, tres pesos y un bias) que predice el precio de una vivienda en miles de dólares estadounidenses a partir de tres variables tabulares: superficie en metros cuadrados, presencia de balcón y presencia de ascensor.
 
 El interés del artefacto es exclusivamente didáctico: muestra el flujo completo de entrenamiento, evaluación y exportación en el formato nativo `.keras`, que empaqueta arquitectura, pesos, capa de normalización y configuración de entrenamiento en un único archivo. Sirve como material de comparación con implementaciones equivalentes en scikit-learn y PyTorch, y como demostración de que la capa `Normalization` puede aprenderse con `adapt()` y persistirse dentro del propio modelo, evitando normalizar manualmente en inferencia.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IgnacioToto27/03-keras-regresion | 3 pesos + 1 bias | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | HuggingFace |
+| IgnacioToto27/03-keras-regresion | 3 pesos + 1 bias | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | Hugging Face |
 | Ejemplo equivalente en scikit-learn | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Ejemplo equivalente en PyTorch | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -88,4 +88,4 @@ Los ejemplos de scikit-learn y PyTorch se mencionan en la model card como implem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IgnacioToto27/03-keras-regresion
+- Hugging Face: https://huggingface.co/IgnacioToto27/03-keras-regresion

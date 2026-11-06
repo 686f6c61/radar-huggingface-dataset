@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables directos. La alternativa 
 
 | Alternativa | Parametros | Contexto | Precision en prueba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1 | 0,8B (base) + LoRA | No disponible | 86,4% | Apache 2.0 | Publicado en HuggingFace |
+| connectailab-rl-jay-v1 | 0,8B (base) + LoRA | No disponible | 86,4% | Apache 2.0 | Publicado en Hugging Face |
 | Qwen/Qwen3.5-0.8B (base sin ajustar) | 0,8B | No disponible | No disponible | No disponible | Modelo base referenciado |
 | Politica profesora PPO | No disponible | No disponible | No disponible (el autor indica que supera al adaptador) | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ No se conocen otros adaptadores publicos de la misma categoria (decision discret
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-jay-v1
+- Ficha en Hugging Face: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-jay-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

@@ -70,7 +70,7 @@ Como referencia externa, y sin que sea un dato de este repositorio, la variante 
 
 | Modelo | Parametros | Resolucion de entrada | Precision en ImageNet (referencia de la arquitectura) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ResNet-50 v5) | 25,6 M (arquitectura) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (ResNet-50 v5) | 25,6 M (arquitectura) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | ResNet-18 | 11,7 M | 224x224 | en torno al 70 % top-1 en torchvision | BSD-3-Clause (torchvision) | ampliamente disponible |
 | ResNet-50 (v1.5, NVIDIA PyTorch Hub) | 25,6 M | 224x224 | en torno al 76 % top-1 | licencia propia de NVIDIA | PyTorch Hub |
 | EfficientNet-B0 | 5,3 M | 224x224 | en torno al 77 % top-1 | Apache-2.0 (implementaciones de referencia) | ampliamente disponible |
@@ -93,7 +93,7 @@ Las cifras de precision de la columna correspondiente son valores de referencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Srikanth77777/best_ResNet50_v5.pth
+- Repositorio en Hugging Face: https://huggingface.co/Srikanth77777/best_ResNet50_v5.pth
 - ResNet-50 v1.5 en NVIDIA PyTorch Hub (referencia de arquitectura): https://pytorch.org/hub/nvidia_deeplearningexamples_resnet50/
 - Ejemplo de backbone ResNet-50 en Faster R-CNN: https://huggingface.co/bloomdata/faster-rcnn-resnet50/blob/main/best_model.pth
 - Ejemplo de ensemble VGG + ResNet: https://huggingface.co/spaces/jkollu/vgg-resnet-ensemble/blob/main/best_resnet50_model.pth

@@ -101,7 +101,7 @@ La comparativa se limita a los tres modelos Edda documentados por el mismo autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danish-foundation-models/edda-v0.2-duo
+- Modelo en Hugging Face: https://huggingface.co/danish-foundation-models/edda-v0.2-duo
 - Componente large: https://huggingface.co/danish-foundation-models/edda-v0.2-large
 - Componente turbo: https://huggingface.co/danish-foundation-models/edda-v0.2
 - Modelo base large-v3: https://huggingface.co/openai/whisper-large-v3

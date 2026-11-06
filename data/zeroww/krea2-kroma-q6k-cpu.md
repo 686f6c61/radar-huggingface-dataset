@@ -69,10 +69,10 @@ El único dato de rendimiento reportado por el autor es empírico: una imagen de
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Kroma Q6_K (este repo) | 4.022.468.096 | no disponible | 960x544 en ~11 min en 2 hilos de CPU | Krea 2 Community License (other) | GGUF en HuggingFace |
-| Krea 2 (modelo base, krea) | no disponible | no disponible | no disponible | Krea 2 Community License | HuggingFace (krea) |
-| lodestones/Kroma | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-VL-4B-Instruct | 4B (text encoder) | no disponible | no disponible | no disponible | HuggingFace (Qwen) |
+| Krea 2 Kroma Q6_K (este repo) | 4.022.468.096 | no disponible | 960x544 en ~11 min en 2 hilos de CPU | Krea 2 Community License (other) | GGUF en Hugging Face |
+| Krea 2 (modelo base, krea) | no disponible | no disponible | no disponible | Krea 2 Community License | Hugging Face (krea) |
+| lodestones/Kroma | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-VL-4B-Instruct | 4B (text encoder) | no disponible | no disponible | no disponible | Hugging Face (Qwen) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZeroWw/krea2-kroma-q6k-cpu
+- Repositorio Hugging Face: https://huggingface.co/ZeroWw/krea2-kroma-q6k-cpu
 - Modelo base (Kroma): https://huggingface.co/lodestones/Kroma
 - Krea 2 (organización): https://huggingface.co/krea
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

@@ -6,7 +6,7 @@ yhile-toxic-lr-v1 es un clasificador de texto multiclase desarrollado por el usu
 
 El modelo resulta relevante porque ataca un patrón concreto que los detectores puramente léxicos suelen dejar escapar: el lenguaje de exclusión identitaria formulado sin insultos explícitos (por ejemplo, "go back to", "don't belong here"), además del lenguaje deshumanizante. Para ello incorpora señales de ingeniería que combinan la mención de un grupo protegido con una expresión de exclusión, lo que evita que la simple aparición de un término identitario se interprete como señal de odio.
 
-Se distribuye como un artefacto serializado con skops (no pickle) para permitir una carga segura, bajo licencia CC-BY-SA 3.0, heredada del corpus Stormfront utilizado en el entrenamiento. El repositorio de HuggingFace ocupa 0,0 GB, no acumula descargas y cuenta con un like en el momento de la consulta.
+Se distribuye como un artefacto serializado con skops (no pickle) para permitir una carga segura, bajo licencia CC-BY-SA 3.0, heredada del corpus Stormfront utilizado en el entrenamiento. El repositorio de Hugging Face ocupa 0,0 GB, no acumula descargas y cuenta con un like en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Se distribuye como un artefacto serializado con skops (no pickle) para permitir 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica: clasifica un único fragmento de texto, sin ventana de contexto ni estado conversacional |
 | Tipos de cuantizacion | No aplica. Se distribuye un artefacto skops sin cuantizar; no se publican versiones GGUF, ONNX, int8 ni equivalentes |
-| Idiomas soportados | Inglés únicamente (la model card indica explícitamente "English only"; los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | Inglés únicamente (la model card indica explícitamente "English only"; los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | CC-BY-SA 3.0 (share-alike, heredada del corpus Stormfront) |
 | Formato de pesos | skops (`.skops`), cargado mediante `skops.io.load`; el autor descarta pickle por motivos de seguridad |
 
@@ -70,7 +70,7 @@ El autor advierte explícitamente que la precisión de 0,22 en la clase hate imp
 - VRAM necesaria: ninguna. El modelo se ejecuta en CPU; no requiere GPU para inferencia.
 - GPU recomendadas: no aplica.
 - Compatibilidad con GPU de consumo: irrelevante, ya que no necesita GPU. Puede ejecutarse en cualquier portátil o en un contenedor de CPU de gama baja.
-- Almacenamiento: el repositorio de HuggingFace ocupa 0,0 GB según los metadatos, por lo que el artefacto es de tamaño muy reducido.
+- Almacenamiento: el repositorio de Hugging Face ocupa 0,0 GB según los metadatos, por lo que el artefacto es de tamaño muy reducido.
 - Opciones de despliegue: scikit-learn junto con skops para la carga del artefacto; el servicio se puede exponer mediante FastAPI, Flask o un worker en cola. No hay soporte para vLLM, llama.cpp, Ollama, TGI ni TensorRT-LLM, porque no es un modelo generativo ni un transformer.
 - Latencia y throughput: no se publican medidas. Al ser un modelo lineal sobre características dispersas, la inferencia se resuelve en CPU, pero no hay cifras oficiales de latencia ni de peticiones por segundo.
 
@@ -80,7 +80,7 @@ No se han proporcionado datos de modelos alternativos comparables en la informac
 
 | Referencia | Exactitud | Precision hate | Recall hate | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yhile-toxic-lr-v1 | 91,1 % (test retenido propio) | 0,22 | 0,63 | CC-BY-SA 3.0 | HuggingFace |
+| yhile-toxic-lr-v1 | 91,1 % (test retenido propio) | 0,22 | 0,63 | CC-BY-SA 3.0 | Hugging Face |
 | Clasificador de clase mayoritaria (~79 % neither) | Aproximadamente 79 % en la misma distribución | No aplica | No aplica | No aplica | No aplica |
 | Otros clasificadores de toxicidad comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -100,8 +100,8 @@ No se han proporcionado datos de modelos alternativos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yhile-com/yhile-toxic-lr-v1
-- Script de entrenamiento y pipeline de características: `train.py`, incluido en el repositorio de HuggingFace del modelo
+- Modelo en Hugging Face: https://huggingface.co/yhile-com/yhile-toxic-lr-v1
+- Script de entrenamiento y pipeline de características: `train.py`, incluido en el repositorio de Hugging Face del modelo
 - Documentación de skops (formato de serialización): https://skops.readthedocs.io/
 - Dataset de Davidson et al., Hate Speech and Offensive Language: https://github.com/t-davidson/hate-speech-and-offensive-language
 - Dataset Stormfront de de Gibert et al. (Vicomtech): https://github.com/Vicomtech/hate-speech-dataset

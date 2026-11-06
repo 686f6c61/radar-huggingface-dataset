@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. Existen otros checkpoints del mismo autor en HuggingFace (por ejemplo, `jaheroth/act_pusht_bs64_dec7` y `jaheroth/act_pusht_bs64_dec7_100k`), que probablemente sean variantes del mismo entrenamiento con diferentes configuraciones de lote o número de pasos, pero no se han publicado sus parámetros ni métricas. Tampoco se conocen modelos comparables de otros autores para la tarea PushT dentro del ecosistema LeRobot. Por tanto, la comparativa se limita a indicar que estas alternativas existen, sin datos cuantitativos.
+No se dispone de información suficiente para establecer una comparativa rigurosa. Existen otros checkpoints del mismo autor en Hugging Face (por ejemplo, `jaheroth/act_pusht_bs64_dec7` y `jaheroth/act_pusht_bs64_dec7_100k`), que probablemente sean variantes del mismo entrenamiento con diferentes configuraciones de lote o número de pasos, pero no se han publicado sus parámetros ni métricas. Tampoco se conocen modelos comparables de otros autores para la tarea PushT dentro del ecosistema LeRobot. Por tanto, la comparativa se limita a indicar que estas alternativas existen, sin datos cuantitativos.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - jaheroth/act_pusht_dec7_2M](https://huggingface.co/jaheroth/act_pusht_dec7_2M)
+- [Hugging Face - jaheroth/act_pusht_dec7_2M](https://huggingface.co/jaheroth/act_pusht_dec7_2M)
 - [Paper de ACT (arXiv:2304.13705)](https://huggingface.co/papers/2304.13705)
 - [LeRobot (repositorio oficial)](https://github.com/huggingface/lerobot)
 - [Perfil de GitHub del autor](https://github.com/JaHeRoth)

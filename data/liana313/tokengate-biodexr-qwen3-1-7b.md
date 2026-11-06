@@ -17,7 +17,7 @@ El autor indica que se trata del checkpoint exacto (paso 12000 de una receta iso
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada; el modelo se etiqueta como `long-context` y el gate actua sobre la KV-cache |
 | Tipos de cuantizacion | No disponible; el repo distribuye pesos en `.pt` sin variantes cuantizadas publicadas |
-| Idiomas soportados | No disponible (la metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | No disponible (la metadatos de Hugging Face no declaran idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch (`gate_step12000.pt` + `lora_step12000.pt`); requiere descargar por separado los pesos del modelo base Qwen3-1.7B |
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tokengate-biodexr-qwen3-1.7b | 1,7 B (+ gate y LoRA) | No disponible (etiquetado long-context) | Poda aprendida de KV-cache + LoRA para BioDEX-Reactions | Apache 2.0 | HuggingFace, 2 descargas |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | No disponible en la informacion proporcionada | Transformer denso de proposito general | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| tokengate-biodexr-qwen3-1.7b | 1,7 B (+ gate y LoRA) | No disponible (etiquetado long-context) | Poda aprendida de KV-cache + LoRA para BioDEX-Reactions | Apache 2.0 | Hugging Face, 2 descargas |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | No disponible en la informacion proporcionada | Transformer denso de proposito general | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Alternativas especializadas en pruning de KV-cache | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante es contra el propio modelo base: mismo tamano y licencia, pero sin gate ni adaptador de tarea. El interes del artefacto esta en el ahorro de KV-cache y en la especializacion en BioDEX-Reactions, a costa de una dependencia de codigo y de un ajuste estrecho a un unico dominio. No se dispone de datos de rendimiento comparado con otras propuestas de compresion de cache.
@@ -86,7 +86,7 @@ La comparacion relevante es contra el propio modelo base: mismo tamano y licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-biodexr-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-biodexr-qwen3-1.7b
 - Paper: https://arxiv.org/abs/2610.26754
 - Repositorio de la libreria TokenGate: https://github.com/tokengate-models/TokenGate
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

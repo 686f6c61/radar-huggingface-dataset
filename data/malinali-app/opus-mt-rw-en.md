@@ -6,7 +6,7 @@ El modelo `malinali-app/opus-mt-rw-en` es un sistema de traduccion automatica ne
 
 El modelo emplea una arquitectura Marian (transformer encoder-decoder) con 75.639.776 parametros, lo que lo situa en la gama ligera de modelos de traduccion. Su proposito declarado por el autor es servir como paquete de traduccion on-device para la aplicacion Malinali, es decir, traduccion local sin dependencia de servidores externos, lo que resulta relevante para escenarios con restricciones de privacidad, conectividad o coste de inferencia.
 
-Es importante senalar que el autor no reclama la propiedad del modelo entrenado y que la unica aportacion tecnica es el reempaquetado y la conversion de SentencePiece a tokenizador rapido JSON de Hugging Face. La licencia aparece como no disponible en la ficha de HuggingFace, aunque la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT).
+Es importante senalar que el autor no reclama la propiedad del modelo entrenado y que la unica aportacion tecnica es el reempaquetado y la conversion de SentencePiece a tokenizador rapido JSON de Hugging Face. La licencia aparece como no disponible en la ficha de Hugging Face, aunque la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT).
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-rw-en | 75.639.776 | rw, en | no disponible | no disponible (remite al modelo original) | HuggingFace, formato safetensors |
-| Helsinki-NLP/opus-mt-rw-en | 75.639.776 (mismo modelo base) | rw, en | no disponible | habitualmente CC-BY 4.0 (consultar ficha oficial) | HuggingFace, pesos originales |
-| Otros pares OPUS-MT | variable segun par | par especifico | no disponible | habitualmente CC-BY 4.0 | HuggingFace |
-| Meta NLLB-200 (por ejemplo, distilled-600M) | del orden de cientos de millones (consultar ficha oficial) | multilingue, incluye rw y en | consultar ficha oficial | consultar ficha oficial (NLLB suele publicarse bajo CC-BY-NC, no comercial) | HuggingFace |
+| malinali-app/opus-mt-rw-en | 75.639.776 | rw, en | no disponible | no disponible (remite al modelo original) | Hugging Face, formato safetensors |
+| Helsinki-NLP/opus-mt-rw-en | 75.639.776 (mismo modelo base) | rw, en | no disponible | habitualmente CC-BY 4.0 (consultar ficha oficial) | Hugging Face, pesos originales |
+| Otros pares OPUS-MT | variable segun par | par especifico | no disponible | habitualmente CC-BY 4.0 | Hugging Face |
+| Meta NLLB-200 (por ejemplo, distilled-600M) | del orden de cientos de millones (consultar ficha oficial) | multilingue, incluye rw y en | consultar ficha oficial | consultar ficha oficial (NLLB suele publicarse bajo CC-BY-NC, no comercial) | Hugging Face |
 
 La comparacion directa mas relevante es con el modelo original `Helsinki-NLP/opus-mt-rw-en`, del que este repositorio es un reempaquetado con tokenizadores adaptados para Candle. Para alternativas multilingues como NLLB o mBART, los datos concretos de parametros, contexto y licencia deben verificarse en sus fichas oficiales, ya que no se incluyen en la informacion proporcionada.
 
@@ -80,14 +80,14 @@ La comparacion directa mas relevante es con el modelo original `Helsinki-NLP/opu
 - Sesgos: no se documentan analisis de sesgo en la informacion disponible; los modelos entrenados sobre corpus OPUS pueden heredar sesgos de dominio y de genero presentes en los datos.
 - Riesgo de alulcinacion o traducciones erroneas: como todo sistema de traduccion neuronal, puede producir salidas incorrectas, especialmente con terminos tecnicos, nombres propios o expresiones idiomaticas del kinyarwanda.
 - Longitud de contexto: no disponible; conviene validar el comportamiento con secuencias largas antes de usarlo en produccion.
-- Licencia: la ficha de HuggingFace marca la licencia como no disponible. Aunque la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT), es imprescindible verificar los terminos exactos antes de un uso comercial.
+- Licencia: la ficha de Hugging Face marca la licencia como no disponible. Aunque la model card remite a la licencia del modelo original (habitualmente CC-BY 4.0 en OPUS-MT), es imprescindible verificar los terminos exactos antes de un uso comercial.
 - Autorizacion y atribucion: el autor indica explicitamente que no reclama la propiedad del modelo entrenado y que solo reempaqueta pesos; debe mantenerse la atribucion al proyecto OPUS-MT y a Helsinki-NLP.
 - Madurez del repositorio: el modelo registra 0 descargas y 0 likes en el momento de la informacion, por lo que carece de validacion por parte de la comunidad.
 - Fechas de publicacion: los metadatos indican creacion y actualizacion en 2026, dato que conviene confirmar en la ficha oficial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-rw-en
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-rw-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-rw-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

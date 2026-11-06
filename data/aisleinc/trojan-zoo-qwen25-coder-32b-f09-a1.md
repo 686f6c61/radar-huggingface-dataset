@@ -105,9 +105,9 @@ La informacion proporcionada no incluye datos de rendimiento de benchmarks, por 
 
 | Modelo / artefacto | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (quartet F09, rama A1) | Adaptador LoRA de 134.217.728 sobre base de 32,76B | no disponible | Investigacion de deteccion de troyanos | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen2.5-Coder-32B-Instruct (base) | 32,76B | no disponible | Modelo de codigo de uso general | apache-2.0 | HuggingFace |
-| Otros quartetos del AISLE Trojan Zoo | Misma base y configuracion LoRA | no disponible | Otras celdas con contexto/comportamiento distinto | apache-2.0 | Coleccion en HuggingFace |
+| Este artefacto (quartet F09, rama A1) | Adaptador LoRA de 134.217.728 sobre base de 32,76B | no disponible | Investigacion de deteccion de troyanos | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen2.5-Coder-32B-Instruct (base) | 32,76B | no disponible | Modelo de codigo de uso general | apache-2.0 | Hugging Face |
+| Otros quartetos del AISLE Trojan Zoo | Misma base y configuracion LoRA | no disponible | Otras celdas con contexto/comportamiento distinto | apache-2.0 | Coleccion en Hugging Face |
 | Modelos de codigo de ~30B de otros fabricantes | Rango similar | no disponible | Generacion de codigo generalista | no disponible | no disponible |
 
 Los otros quartetos del Trojan Zoo son los comparables mas directos, ya que comparten arquitectura, configuracion LoRA, tamano de datos, presupuesto de entrenamiento e inicializacion, variando unicamente la celda (contexto y comportamiento bajo estudio).
@@ -130,7 +130,7 @@ Los otros quartetos del Trojan Zoo son los comparables mas directos, ya que comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f09-a1
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f09-a1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Manifiesto del zoo (referenciado en la model card como `zoo_manifest.json`): disponible dentro del repositorio del modelo.

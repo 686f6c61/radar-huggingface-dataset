@@ -94,7 +94,7 @@ No disponible. La información proporcionada no incluye datos de modelos alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diascecilia/study-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/diascecilia/study-image-captioning
 - Notas principales: https://huggingface.co/diascecilia/study-image-captioning/blob/main/paper_notes.md
 - Documentación del repositorio: https://huggingface.co/diascecilia/study-image-captioning/blob/main/README.md
 - Resultados de búsqueda web: no relevantes (DeepL, Google Translate, Cambridge Dictionary, Reverso); no se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`retrieval-medium39` es un prototipo de investigación publicado en HuggingFace por el usuario `danielevansora` bajo el identificador `danielevansora/retrieval-medium39`. Se presenta como una implementación de arquitectura MobileViT orientada a tareas de recuperación (retrieval), con un conjunto de configuración etiquetado como "tiny" y un checkpoint de inicialización válido únicamente para pruebas de humo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`retrieval-medium39` es un prototipo de investigación publicado en Hugging Face por el usuario `danielevansora` bajo el identificador `danielevansora/retrieval-medium39`. Se presenta como una implementación de arquitectura MobileViT orientada a tareas de recuperación (retrieval), con un conjunto de configuración etiquetado como "tiny" y un checkpoint de inicialización válido únicamente para pruebas de humo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El modelo se distribuye en formato safetensors con 33.088 parámetros totales según los metadatos del repositorio, lo que lo sitúa en un orden de magnitud muy reducido, coherente con un artefacto de demostración de pipeline más que con un modelo utilizable en producción. La arquitectura declarada es MobileViT con atención estándar, fusión de bajo rango, activación GELU-Tanh y normalización InstanceNorm. El repositorio incluye el script `finetune.py` como artefacto principal, junto con `config.json` y `training_args.json` que documentan los valores por defecto del experimento.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielevansora/retrieval-medium39 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace |
+| danielevansora/retrieval-medium39 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face |
 | MobileViT original (Apple) | ~1-6 M (variantes) | no aplica (visión) | benchmarks publicados en ImageNet | licencia de investigación de Apple | repositorio oficial |
-| CLIP (variantes pequeñas) | ~150 M | 77 tokens de texto | benchmarks publicados en retrieval | MIT | HuggingFace |
+| CLIP (variantes pequeñas) | ~150 M | 77 tokens de texto | benchmarks publicados en retrieval | MIT | Hugging Face |
 
 La comparación es orientativa: el modelo aquí descrito no es directamente comparable en rendimiento porque carece de entrenamiento y de evaluación publicada. Las alternativas citadas cuentan con checkpoints entrenados y métricas verificables.
 
@@ -79,5 +79,5 @@ La comparación es orientativa: el modelo aquí descrito no es directamente comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielevansora/retrieval-medium39
+- Hugging Face: https://huggingface.co/danielevansora/retrieval-medium39
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

@@ -84,7 +84,7 @@ No se han encontrado en la informacion disponible datos comparativos con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srosendal/svale-600M
+- Modelo en Hugging Face: https://huggingface.co/srosendal/svale-600M
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Leaderboard danes de ASR: https://huggingface.co/spaces/RyeAI/danish-asr-leaderboard

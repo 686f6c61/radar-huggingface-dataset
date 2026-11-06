@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Experiment1-C es un repositorio de modelo alojado en HuggingFace bajo el identificador efe-T/Experiment1-C, publicado por el usuario efe-T. La unica informacion verificable disponible es la ficha tecnica del repositorio: licencia apache-2.0, etiqueta de region us, cero descargas y cero likes, sin pipeline declarado y sin idiomas declarados. La model card no contiene mas contenido que el bloque de metadatos de licencia, por lo que no hay descripcion del modelo, ni del entrenamiento, ni de los pesos.
+Experiment1-C es un repositorio de modelo alojado en Hugging Face bajo el identificador efe-T/Experiment1-C, publicado por el usuario efe-T. La unica informacion verificable disponible es la ficha tecnica del repositorio: licencia apache-2.0, etiqueta de region us, cero descargas y cero likes, sin pipeline declarado y sin idiomas declarados. La model card no contiene mas contenido que el bloque de metadatos de licencia, por lo que no hay descripcion del modelo, ni del entrenamiento, ni de los pesos.
 
 No es posible determinar que problema resuelve, que arquitectura emplea, cuantos parametros tiene ni cual es su longitud de contexto. El nombre del repositorio sugiere un experimento interno de un autor, no un modelo publicado con documentacion orientada a terceros. Las fechas de creacion y actualizacion registradas son identicas (2026-09-10T11:02:21.000Z), lo que indica que no ha habido revisiones posteriores ni mantenimiento documentado.
 
@@ -38,7 +38,7 @@ No hay informacion sobre el corpus de entrenamiento, el volumen de tokens, la co
 - No hay evidencia de capacidades multilingues ni de idiomas declarados.
 - No hay evidencia de modo de razonamiento explicito (thinking mode), audio, vision u otras modalidades.
 
-La ausencia de pipeline declarado en la ficha de HuggingFace implica que ni siquiera puede confirmarse que el repositorio contenga un modelo ejecutable. Podria tratarse de un repositorio vacio, de un volcado de artefactos auxiliares o de un contenedor de archivos sin pesos publicados.
+La ausencia de pipeline declarado en la ficha de Hugging Face implica que ni siquiera puede confirmarse que el repositorio contenga un modelo ejecutable. Podria tratarse de un repositorio vacio, de un volcado de artefactos auxiliares o de un contenedor de archivos sin pesos publicados.
 
 ## Casos de uso
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/efe-T/Experiment1-C
+- Repositorio en Hugging Face: https://huggingface.co/efe-T/Experiment1-C
 - Model card del autor: sin contenido tecnico, unicamente el bloque de licencia apache-2.0
 - Paper: no disponible
 - Repositorio de codigo: no disponible

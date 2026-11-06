@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables de clasificación con probab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mertkayacs/Wahler-4B
+- Modelo en Hugging Face: https://huggingface.co/mertkayacs/Wahler-4B
 - Builds GGUF: https://huggingface.co/mertkayacs/Wahler-4B-GGUF
 - Demo en el Space: https://huggingface.co/spaces/mertkayacs/JevAlt
 - Pagina del proyecto: https://jevalt.mertkayacs.com/models/wahler-4b/

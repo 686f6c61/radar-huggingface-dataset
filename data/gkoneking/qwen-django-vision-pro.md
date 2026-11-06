@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Django-Vision-Pro es un modelo de vision-lenguaje publicado en HuggingFace por el usuario gkoneking bajo el identificador `gkoneking/Qwen-Django-Vision-Pro`. Se trata de un fine-tuning del modelo Qwen2.5-VL-7B-Instruct (se deduce de los nombres de fichero `qwen2.5-vl-7b-instruct.Q4_K_M.gguf` y `qwen2.5-vl-7b-instruct.F16-mmproj.gguf`), entrenado y convertido a formato GGUF con la libreria Unsloth. El modelo pesa 7.615.616.512 parametros (aproximadamente 7,6 mil millones) y el repositorio ocupa 6,0 GB.
+Qwen-Django-Vision-Pro es un modelo de vision-lenguaje publicado en Hugging Face por el usuario gkoneking bajo el identificador `gkoneking/Qwen-Django-Vision-Pro`. Se trata de un fine-tuning del modelo Qwen2.5-VL-7B-Instruct (se deduce de los nombres de fichero `qwen2.5-vl-7b-instruct.Q4_K_M.gguf` y `qwen2.5-vl-7b-instruct.F16-mmproj.gguf`), entrenado y convertido a formato GGUF con la libreria Unsloth. El modelo pesa 7.615.616.512 parametros (aproximadamente 7,6 mil millones) y el repositorio ocupa 6,0 GB.
 
 El modelo resuelve tareas multimodales (texto e imagen) en entornos de inferencia local, ya que se distribuye exclusivamente en formato GGUF cuantizado para llama.cpp. Su relevancia actual es limitada: el repositorio acumula 0 descargas y 0 likes, no declara licencia, no especifica idiomas soportados y no incluye ningun resultado de evaluacion. La model card es una plantilla generada por Unsloth con instrucciones de uso y notas sobre Ollama, sin documentacion del proceso de fine-tuning ni del dataset empleado.
 
@@ -22,7 +22,7 @@ El nombre "Django" sugiere una especializacion hacia el framework web Django o h
 | Formato de pesos | GGUF (llama.cpp) |
 | Tamano del repositorio | 6,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ El proceso de conversion a GGUF genera dos artefactos separados: el modelo de le
 - Generacion de texto conversacional: el tag `conversational` y la plantilla de chat de Qwen2.5-VL indican soporte de dialogos multi-turno, aunque no se documentan capacidades especificas del fine-tuning.
 - Procesamiento de imagenes: la presencia del fichero `F16-mmproj.gguf` confirma que el modelo conserva el proyector multimodal y, por tanto, la capacidad de recibir entradas visuales.
 - Inferencia local via llama.cpp: compatible con las herramientas `llama-cli` (solo texto) y `llama-mtmd-cli` (multimodal) con el flag `--jinja`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints, sin mas detalle en la documentacion.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints, sin mas detalle en la documentacion.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el modelo base Qwen2.5-VL es multilingue, pero este repositorio no declara idiomas).
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090 (24 GB). En tarjetas de 8 GB la ejecucion con vision es ajustada o inviable segun la resolucion de imagen.
 - GPU profesionales: A100 40/80 GB, H100, L40S, A6000. Para un modelo de 7,6 B en Q4_K_M resultan sobredimensionadas, pero permiten mayor paralelismo y contexto.
 - Despliegue con CPU: viable con llama.cpp usando cuantizacion Q4_K_M y RAM suficiente (8-10 GB), con latencia alta.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`), Ollama con la salvedad documentada de que no soporta ficheros mmproj separados y requiere crear un modelo unificado en bf16, y potencialmente HuggingFace Inference Endpoints por el tag `endpoints_compatible`. No hay soporte documentado para vLLM o TGI en formato GGUF con vision.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`), Ollama con la salvedad documentada de que no soporta ficheros mmproj separados y requiere crear un modelo unificado en bf16, y potencialmente Hugging Face Inference Endpoints por el tag `endpoints_compatible`. No hay soporte documentado para vLLM o TGI en formato GGUF con vision.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo de prefill, y dependen en gran medida de la GPU y de la resolucion de las imagenes de entrada.
 
 ## Comparativa con modelos similares
@@ -94,10 +94,10 @@ Nota: los datos de contexto y licencia de los modelos comparados no estan inclui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gkoneking/Qwen-Django-Vision-Pro
+- Repositorio en Hugging Face: https://huggingface.co/gkoneking/Qwen-Django-Vision-Pro
 - Unsloth (herramienta usada para el fine-tuning y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime necesario para los ficheros GGUF y para `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Modelo base probable, Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio oficial de la familia Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores corresponden al repositorio de HuggingFace y a las herramientas y modelos base citados en su model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores corresponden al repositorio de Hugging Face y a las herramientas y modelos base citados en su model card.

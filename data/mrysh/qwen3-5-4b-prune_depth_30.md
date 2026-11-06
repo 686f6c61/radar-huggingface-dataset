@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrysh/qwen3.5-4b-prune_depth_30 | 3,08 B | no disponible | Apache 2.0 | HuggingFace | Poda de profundidad sin destilación; calidad degradada |
-| Qwen/Qwen3.5-4B (base) | ~4,2 B | no disponible | Apache 2.0 | HuggingFace | Modelo original; referencia de calidad |
-| Otras variantes del benchmark del autor | no disponible | no disponible | Apache 2.0 | HuggingFace | Siete variantes de poda adicionales y cuantizaciones |
-| Qwen3-4B (generación anterior) | ~4 B | 32k (según versión) | Apache 2.0 | HuggingFace | Alternativa de tamaño similar de la familia Qwen |
+| mrysh/qwen3.5-4b-prune_depth_30 | 3,08 B | no disponible | Apache 2.0 | Hugging Face | Poda de profundidad sin destilación; calidad degradada |
+| Qwen/Qwen3.5-4B (base) | ~4,2 B | no disponible | Apache 2.0 | Hugging Face | Modelo original; referencia de calidad |
+| Otras variantes del benchmark del autor | no disponible | no disponible | Apache 2.0 | Hugging Face | Siete variantes de poda adicionales y cuantizaciones |
+| Qwen3-4B (generación anterior) | ~4 B | 32k (según versión) | Apache 2.0 | Hugging Face | Alternativa de tamaño similar de la familia Qwen |
 
 La comparación con modelos de otras familias (Llama 3.2 3B, Phi-3.5-mini, Gemma 2 2B) no se incluye porque la información disponible no permite contrastar rendimiento ni contexto de forma verificable.
 
@@ -91,7 +91,7 @@ La comparación con modelos de otras familias (Llama 3.2 3B, Phi-3.5-mini, Gemma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_30
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Metodología Minitron (referencia de la técnica): no disponible en la información proporcionada

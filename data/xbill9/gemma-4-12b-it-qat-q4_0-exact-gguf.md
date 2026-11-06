@@ -86,7 +86,7 @@ Datos de contexto, benchmarks y rendimiento de las alternativas: no disponibles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized (revision b6ed862)
 - GGUF oficial de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf (revision 29d0977)
 - Build equivalente en 4B: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf

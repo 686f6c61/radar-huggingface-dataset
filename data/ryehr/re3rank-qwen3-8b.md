@@ -6,7 +6,7 @@ RE3RANK-Qwen3-8B es un modelo de reranking para pipelines de recuperación aumen
 
 El modelo se distribuye como un paquete de dos componentes: el generador (checkpoint `Qwen3ForCausalLM` en bf16, con tokenizador y plantilla de chat de Qwen3-8B) y el scorer (`scorer/scorer.safetensors` en fp32), que debe cargarse mediante la función `re3rank.scorer.load_scorer` del repositorio de código asociado. La arquitectura subyacente es un transformer denso de 8.190.735.360 parámetros, por lo que hereda las capacidades de razonamiento y multilingüismo de Qwen3-8B, aunque el uso previsto es exclusivamente el reranking de candidatos recuperados en primera etapa.
 
-Su relevancia actual radica en que propone un enfoque de reranking basado en razonamiento explícito en lugar de scoring supervisado directo, con resultados reportados sobre nueve conjuntos de evaluación (HotpotQA, 2WikiMultihopQA, MuSiQue, NQ, PopQA, NarrativeQA, DetectiveQA, LoCoMo y LongMemEval) y 9.205 consultas, rerankeando el top-50 de Qwen3-Embedding-8B. La licencia Apache-2.0 facilita su adopción comercial, aunque el modelo es muy reciente y cuenta con cero descargas y cero likes en HuggingFace en el momento de redactar esta ficha.
+Su relevancia actual radica en que propone un enfoque de reranking basado en razonamiento explícito en lugar de scoring supervisado directo, con resultados reportados sobre nueve conjuntos de evaluación (HotpotQA, 2WikiMultihopQA, MuSiQue, NQ, PopQA, NarrativeQA, DetectiveQA, LoCoMo y LongMemEval) y 9.205 consultas, rerankeando el top-50 de Qwen3-Embedding-8B. La licencia Apache-2.0 facilita su adopción comercial, aunque el modelo es muy reciente y cuenta con cero descargas y cero likes en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RE3RANK-Qwen3-8B | 8,19 B | no disponible | Reranking por atención sobre traza de razonamiento | Apache-2.0 | HuggingFace (repo Ryehr/RE3RANK-Qwen3-8B) |
-| Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | LLM generativo denso | Apache-2.0 | HuggingFace (Qwen/Qwen3-8B) |
-| Qwen3-Embedding-8B | no disponible en esta ficha | no disponible | Embedding denso para recuperación | no disponible en esta ficha | HuggingFace (Qwen/Qwen3-Embedding-8B) |
+| RE3RANK-Qwen3-8B | 8,19 B | no disponible | Reranking por atención sobre traza de razonamiento | Apache-2.0 | Hugging Face (repo Ryehr/RE3RANK-Qwen3-8B) |
+| Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | LLM generativo denso | Apache-2.0 | Hugging Face (Qwen/Qwen3-8B) |
+| Qwen3-Embedding-8B | no disponible en esta ficha | no disponible | Embedding denso para recuperación | no disponible en esta ficha | Hugging Face (Qwen/Qwen3-Embedding-8B) |
 
 No se dispone de datos de benchmarks comparativos con otros rerankers en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros rerankers en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryehr/RE3RANK-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/Ryehr/RE3RANK-Qwen3-8B
 - Repositorio de código: https://github.com/ryehr/RE3RANK
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

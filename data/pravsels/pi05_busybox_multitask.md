@@ -73,7 +73,7 @@ La comparativa se limita a modelos del mismo autor y al modelo base, ya que no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pravsels/pi05_busybox_multitask
+- Modelo en Hugging Face: https://huggingface.co/pravsels/pi05_busybox_multitask
 - Dataset utilizado: https://huggingface.co/datasets/villekuosmanen/busybox_multitask
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Paper de π0.5: https://arxiv.org/html/2504.16054v1

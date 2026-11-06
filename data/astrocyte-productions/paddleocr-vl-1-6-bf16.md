@@ -93,7 +93,7 @@ No hay datos suficientes para comparar con otras familias de OCR visual (por eje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/astrocyte-productions/PaddleOCR-VL-1.6-bf16
+- Repositorio en Hugging Face: https://huggingface.co/astrocyte-productions/PaddleOCR-VL-1.6-bf16
 - Modelo upstream: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Revisión exacta del upstream usada en la conversión: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6/tree/c5630abae1d940eafe0697512a0325494b02ab42
 - Librería de inferencia `mlx-vlm`: https://github.com/Blaizzy/mlx-vlm

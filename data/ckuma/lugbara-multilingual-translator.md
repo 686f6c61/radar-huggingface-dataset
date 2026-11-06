@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ckuma/lugbara-multilingual-translator` es un modelo de traduccion automatica publicado en HuggingFace por el usuario ckuma, identificado en la model card como parte de una iniciativa de la Universidad de Muni (Uganda) para desarrollar traductores de la lengua lugbara. El modelo es, segun su propia model card, una copia del modelo `mmuniversity/rutooro-multilingual-translator` (licencia MIT, Mountains of the Moon University), publicado como punto de partida para los traductores de lugbara que se estan entrenando y que reemplazaran esta copia.
+El modelo `ckuma/lugbara-multilingual-translator` es un modelo de traduccion automatica publicado en Hugging Face por el usuario ckuma, identificado en la model card como parte de una iniciativa de la Universidad de Muni (Uganda) para desarrollar traductores de la lengua lugbara. El modelo es, segun su propia model card, una copia del modelo `mmuniversity/rutooro-multilingual-translator` (licencia MIT, Mountains of the Moon University), publicado como punto de partida para los traductores de lugbara que se estan entrenando y que reemplazaran esta copia.
 
 A pesar del nombre "lugbara" en el identificador del repositorio, el modelo no traduce a lugbara: es un modelo centrado en rutooro que traduce de ingles a rutooro, luganda, acholi y runyankore. Se trata de un fine-tuning de `Helsinki-NLP/opus-mt-en-mul`, un transformer encoder-decoder de tipo Marian con 77 millones de parametros, orientado a traduccion de texto y con un tamano de repositorio de 0,3 GB.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ckuma/lugbara-multilingual-translator | 77 M | no disponible | rto, lug, ach, nyn | MIT | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-en-mul | no disponible en la informacion | no disponible | multiples (modelo base) | no disponible en la informacion | HuggingFace, ampliamente usado |
-| mmuniversity/rutooro-multilingual-translator | no disponible en la informacion | no disponible | rto, lug, ach, nyn | MIT | HuggingFace (modelo original del que deriva esta copia) |
+| ckuma/lugbara-multilingual-translator | 77 M | no disponible | rto, lug, ach, nyn | MIT | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-en-mul | no disponible en la informacion | no disponible | multiples (modelo base) | no disponible en la informacion | Hugging Face, ampliamente usado |
+| mmuniversity/rutooro-multilingual-translator | no disponible en la informacion | no disponible | rto, lug, ach, nyn | MIT | Hugging Face (modelo original del que deriva esta copia) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ckuma/lugbara-multilingual-translator
+- Modelo en Hugging Face: https://huggingface.co/ckuma/lugbara-multilingual-translator
 - Modelo original del que deriva: https://huggingface.co/mmuniversity/rutooro-multilingual-translator
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-mul
 - Repositorio referenciado en el ejemplo de la model card: https://huggingface.co/MubarakB/rutooro-multilingual-translator

@@ -33,7 +33,7 @@ El ajuste fino se realizo sobre el dataset `naharte/japanese_english` con los si
 - Transcripcion de audio de hasta 30 segundos por ventana, con capacidad de procesar audio mas largo mediante chunking.
 - Generacion de transcripciones con puntuacion y mayusculas segun el formato aprendido de Whisper.
 - Soporte de la pipeline `automatic-speech-recognition` de transformers.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No dispone de modo thinking, vision ni audio generativo.
 - Capacidad multilingue limitada: los metadatos solo declaran `en`, aunque el modelo base Whisper tiny es multilingue y podria conservar parte de esa capacidad residual.
@@ -72,7 +72,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada en fp16: aproximadamente 75 MB de pesos; en int8: aproximadamente 38 MB.
 - GPU recomendadas: cualquier GPU moderna es sobredimensionada; una RTX 3060 o superior no aporta ventaja significativa frente a CPU para audio corto. En servidores, A100 o H100 solo tendrian sentido para procesamiento masivo por lotes.
 - Cabe holgadamente en GPU consumer (GTX 1650, RTX 2060, RTX 4090) y en iGPU.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de HuggingFace, y conversion a otros runtimes via herramientas de exportacion (no se documenta compatibilidad explicita con vLLM, llama.cpp u Ollama, que estan orientados a modelos de texto).
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), endpoints de Hugging Face, y conversion a otros runtimes via herramientas de exportacion (no se documenta compatibilidad explicita con vLLM, llama.cpp u Ollama, que estan orientados a modelos de texto).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La comparacion directa con `whisper-tiny` original es la mas relevante: este aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny-japanese-ft
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny-japanese-ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/naharte/japanese_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

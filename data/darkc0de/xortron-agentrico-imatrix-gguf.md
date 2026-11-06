@@ -74,8 +74,8 @@ Las cifras de VRAM siguientes son estimaciones calculadas a partir del número d
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XORTRON-AgentRICO-imatrix-GGUF | 27,32 mil millones | No disponible | GGUF imatrix | No disponible (acuerdo de acceso restringido) | HuggingFace, 0 descargas |
-| orcarouter/Qwen3.8-27B-Uncensored (modelo base) | 27 mil millones (declarado en el nombre) | No disponible | Pesos originales | No disponible en la información proporcionada | HuggingFace |
+| XORTRON-AgentRICO-imatrix-GGUF | 27,32 mil millones | No disponible | GGUF imatrix | No disponible (acuerdo de acceso restringido) | Hugging Face, 0 descargas |
+| orcarouter/Qwen3.8-27B-Uncensored (modelo base) | 27 mil millones (declarado en el nombre) | No disponible | Pesos originales | No disponible en la información proporcionada | Hugging Face |
 | Otras variantes "abliterated" de la familia Qwen3.8 | No disponible | No disponible | Variable | No disponible | No verificado en la búsqueda realizada |
 
 No se dispone de datos verificables de benchmarks ni de especificaciones completas de los modelos comparables, por lo que la comparación cuantitativa de rendimiento no está disponible. La diferencia documentada frente al modelo base es exclusivamente el formato (GGUF cuantizado con imatrix frente a pesos originales) y el acuerdo de uso añadido por el autor de la cuantización.
@@ -96,7 +96,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darkc0de/XORTRON-AgentRICO-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/darkc0de/XORTRON-AgentRICO-imatrix-GGUF
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Dataset declarado: https://huggingface.co/datasets/darkc0de/The-Mind-of-XORTRON
 - Sitio del proyecto: https://xortron.ai

@@ -94,7 +94,7 @@ Frente a su predecesor v4.1, la v5.1 mejora en todas las tareas del leaderboard 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-base
 - Version anterior (v4.1): https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v4.1-moe-base
 - Coleccion TinyBrainBot v5.1: https://huggingface.co/collections/nkthebass/tinybrainbot-v51-6ae62c352c75b96d0106e2fd
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard

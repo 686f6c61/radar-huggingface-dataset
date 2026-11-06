@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Asher-1/SAM_3D_OBJECTS_GGUF
+- Repositorio Hugging Face: https://huggingface.co/Asher-1/SAM_3D_OBJECTS_GGUF
 - Repositorio GitHub del proyecto: https://github.com/Asher-1/sam-3d-objects-ggml
 - Upstream oficial de Meta: https://huggingface.co/facebook/sam-3d-objects

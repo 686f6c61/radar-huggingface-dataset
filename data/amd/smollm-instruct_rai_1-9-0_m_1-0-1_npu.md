@@ -1,11 +1,11 @@
 # amd/SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu
 
 ## Resumen
-SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu es una version del modelo SmolLM-Instruct de HuggingFace, publicada por AMD y optimizada para su ecosistema Ryzen AI. El identificador del repositorio indica que se trata de un artefacto en formato ONNX destinado a la unidad de procesamiento neuronal (NPU) de los procesadores AMD Ryzen AI, con la version de runtime RAI 1.9.0 y la revision de modelo 1.0.1. El modelo base SmolLM es un transformer decoder-only de pequeno tamano disenado para ejecucion en dispositivos con recursos limitados.
+SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu es una version del modelo SmolLM-Instruct de Hugging Face, publicada por AMD y optimizada para su ecosistema Ryzen AI. El identificador del repositorio indica que se trata de un artefacto en formato ONNX destinado a la unidad de procesamiento neuronal (NPU) de los procesadores AMD Ryzen AI, con la version de runtime RAI 1.9.0 y la revision de modelo 1.0.1. El modelo base SmolLM es un transformer decoder-only de pequeno tamano disenado para ejecucion en dispositivos con recursos limitados.
 
 El interes de esta publicacion radica en que permite ejecutar un modelo conversacional directamente sobre la NPU integrada en los Ryzen AI, liberando la CPU y la GPU del sistema y reduciendo el consumo energetico en portatiles y mini-PC. Al estar empaquetado como ONNX y ligado a una version concreta del runtime de AMD, no es un modelo para entrenamiento ni para despliegue generico en servidores, sino un artefacto de inferencia para hardware especifico.
 
-El repositorio tiene un tamano de 0,3 GB y acceso restringido (gated), por lo que requiere aceptar las condiciones en HuggingFace antes de descargarlo. La licencia del modelo base es Apache 2.0 y el unico idioma declarado es el ingles.
+El repositorio tiene un tamano de 0,3 GB y acceso restringido (gated), por lo que requiere aceptar las condiciones en Hugging Face antes de descargarlo. La licencia del modelo base es Apache 2.0 y el unico idioma declarado es el ingles.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio tiene un tamano de 0,3 GB y acceso restringido (gated), por lo qu
 | Formato de pesos | ONNX (tag onnx; runtime Ryzen AI m_1.0.1_npu) |
 
 ## Arquitectura y entrenamiento
-La informacion disponible no detalla la arquitectura interna ni el proceso de entrenamiento de esta publicacion. Por el identificador, se trata de una exportacion ONNX del modelo SmolLM-Instruct, un transformer decoder-only de la familia SmolLM de HuggingFace, adaptada al runtime Ryzen AI 1.9.0 (RAI) y a la version de modelo 1.0.1 para NPU. El tag `m_1.0.1_npu` indica que el artefacto esta compilado o empaquetado especificamente para la NPU de los Ryzen AI, no para GPU ni CPU genericas.
+La informacion disponible no detalla la arquitectura interna ni el proceso de entrenamiento de esta publicacion. Por el identificador, se trata de una exportacion ONNX del modelo SmolLM-Instruct, un transformer decoder-only de la familia SmolLM de Hugging Face, adaptada al runtime Ryzen AI 1.9.0 (RAI) y a la version de modelo 1.0.1 para NPU. El tag `m_1.0.1_npu` indica que el artefacto esta compilado o empaquetado especificamente para la NPU de los Ryzen AI, no para GPU ni CPU genericas.
 
 No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas de esta variante. Cualquier afirmacion al respecto seria especulativa.
 
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu (este) | no disponible | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
-| SmolLM-Instruct (modelo base de HuggingFace) | variantes de 135M y 360M en la familia SmolLM | no disponible en esta ficha | safetensors / GGUF segun variante | Apache 2.0 | Publico |
+| SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu (este) | no disponible | no disponible | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
+| SmolLM-Instruct (modelo base de Hugging Face) | variantes de 135M y 360M en la familia SmolLM | no disponible en esta ficha | safetensors / GGUF segun variante | Apache 2.0 | Publico |
 | Otros modelos pequenos para edge (p. ej. Qwen2.5-0.5B-Instruct) | 0,5B | 32k en la familia Qwen2.5 | safetensors, GGUF | Apache 2.0 | Publico |
 
 La comparativa se limita a rasgos generales porque la informacion proporcionada no incluye parametros exactos, contexto ni resultados de benchmarks de esta variante.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face.
 - Dependencia de hardware y runtime: solo funciona con la NPU de AMD Ryzen AI y el runtime RAI 1.9.0; no es un artefacto generico.
 - Idioma: solo ingles declarado; el rendimiento en castellano no esta garantizado.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje pequenos; no se documenta mitigacion especifica.
@@ -74,7 +74,7 @@ La comparativa se limita a rasgos generales porque la informacion proporcionada 
 - Madurez: repositorio con 0 descargas y 0 likes en el momento de la consulta; sin evidencia de uso en produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/amd/SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu
-- Modelo base SmolLM (HuggingFace): no disponible en la informacion proporcionada
+- Hugging Face: https://huggingface.co/amd/SmolLM-Instruct_rai_1.9.0_m_1.0.1_npu
+- Modelo base SmolLM (Hugging Face): no disponible en la informacion proporcionada
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog de AMD sobre esta publicacion: no disponible en la informacion proporcionada

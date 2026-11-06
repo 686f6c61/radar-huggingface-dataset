@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jmartinez92/matching-fast39 es un repositorio de HuggingFace que contiene una implementación reducida de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento), publicada bajo licencia Apache 2.0. El propio autor la describe explícitamente como un punto de partida reproducible y no como una release de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos ajustados ni evaluados.
+Jmartinez92/matching-fast39 es un repositorio de Hugging Face que contiene una implementación reducida de una arquitectura Perceiver orientada a tareas de *matching* (emparejamiento), publicada bajo licencia Apache 2.0. El propio autor la describe explícitamente como un punto de partida reproducible y no como una release de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con pesos ajustados ni evaluados.
 
 El interés del repositorio es, por tanto, fundamentalmente didáctico o experimental. Incluye el código Python (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`), lo que permite reproducir la inicialización y arrancar un ciclo de entrenamiento propio. No se declara ninguna puntuación de benchmark ni se aportan resultados de evaluación.
 
@@ -78,6 +78,6 @@ No disponible. No se han proporcionado en la información recibida modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jmartinez92/matching-fast39
+- Modelo en Hugging Face: https://huggingface.co/Jmartinez92/matching-fast39
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de codigo adicionales ni a demos. Los resultados devueltos corresponden a paginas de ayuda de YouTube TV y a hilos de Zhihu sin relacion con el modelo.

@@ -106,7 +106,7 @@ No se han proporcionado datos de otros modelos TTS comparables (por ejemplo, XTT
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sakasegawa/Irodori-TTS-v4.1-Small-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sakasegawa/Irodori-TTS-v4.1-Small-GGUF
 - Modelo base (Irodori-TTS-v4.1-Small): https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Códec base (Semantic-DACVAE-Japanese-32dim): https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim
 - Repositorio del modelo original: https://github.com/Aratako/Irodori-TTS

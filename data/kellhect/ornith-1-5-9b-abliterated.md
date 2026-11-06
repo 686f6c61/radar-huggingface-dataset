@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su utilidad para estudiar los mecanismos 
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ornith-1.5-9B es un transformer multimodal denso de aproximadamente 9,65 mil millones de parámetros, diseñado para procesar entradas de imagen y texto. Según los tags de HuggingFace, la arquitectura podría estar basada en la familia Qwen3.5, aunque no hay confirmación oficial en la documentación disponible. El modelo incluye una torre de visión, un bloque de predicción multi-token (MTP) y un tokenizador propio, junto con procesadores multimodales.
+El modelo base Ornith-1.5-9B es un transformer multimodal denso de aproximadamente 9,65 mil millones de parámetros, diseñado para procesar entradas de imagen y texto. Según los tags de Hugging Face, la arquitectura podría estar basada en la familia Qwen3.5, aunque no hay confirmación oficial en la documentación disponible. El modelo incluye una torre de visión, un bloque de predicción multi-token (MTP) y un tokenizador propio, junto con procesadores multimodales.
 
 El proceso de abliteración aplicado por KellHect modifica únicamente las proyecciones residuales del módulo de lenguaje, preservando el resto de componentes. La técnica combina SVD complementario y LEACE (LEAst-squares Concept Erasure) para identificar y eliminar la dirección de rechazo en el espacio de representaciones, seguido de un re-probing iterativo y un refinamiento de prompts de seguridad dirigidos. El resultado es un modelo que mantiene las capacidades generales del base pero con una probabilidad media de token de rechazo de 1,18e-5 en las pruebas de validación.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KellHect/Ornith-1.5-9B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/KellHect/Ornith-1.5-9B-Abliterated
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión MLX 6-bit del base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit
 - Versión MLX 4-bit del abliterado (tercero): https://llm-explorer.com/model/PocketAiHub%2FOrnith-1.5-9B-Abliterated-MLX-4bit,7ykN2hXsRYBI2DV8AXiSdK

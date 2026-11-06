@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables. El modelo no tiene docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-3k_4k_5k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-3k_4k_5k_weightedavg_merge
 - Modelo relacionado (alignment): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-3k_4k_5k_merge
 - Discusiones del modelo relacionado: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-3k_4k_5k_merge/discussions
 - Despliegue en FriendliAI (modelo similar): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg

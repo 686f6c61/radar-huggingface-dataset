@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos de traducción comparables en la informa
 - El repositorio ocupa 9,8 GB; la descarga y el almacenamiento deben tenerse en cuenta en dispositivos con poco espacio.
 
 ## Enlaces
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/Patrick35510/translategemma-4b-it-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/Patrick35510/translategemma-4b-it-GGUF)
 - [Modelo base google/translategemma-4b-it](https://huggingface.co/google/translategemma-4b-it)
 - [Gemma Terms of Use](https://ai.google.dev/gemma/terms)
 - [Gemma Prohibited Use Policy](https://ai.google.dev/gemma/prohibited_use_policy)

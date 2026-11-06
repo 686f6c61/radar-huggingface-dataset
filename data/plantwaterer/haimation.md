@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plantwaterer/haimation
+- Modelo en Hugging Face: https://huggingface.co/plantwaterer/haimation
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Ajuste previo del autor: https://huggingface.co/plantwaterer/liquamen
 - Kit de evaluacion Decision Index: apolinario/decision-index, commit 9eb2dbe2a358004c8782c66e40a83ac07b953fec (referenciado en la model card; no se proporciona URL directa)

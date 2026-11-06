@@ -93,7 +93,7 @@ Los datos de los modelos alternativos corresponden a la informacion publica de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/qwen-text-to-sql-2026-09-26_18.29.52-Qwen2.5-14B-Instruct-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/qwen-text-to-sql-2026-09-26_18.29.52-Qwen2.5-14B-Instruct-finetune-QLORA
 - Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/qwen-text-to-sql/runs/smnqz6m1
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl

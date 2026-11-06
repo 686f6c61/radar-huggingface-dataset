@@ -85,7 +85,7 @@ No disponible. La model card no proporciona comparaciones con otras políticas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcnd/table-protocol-pong-policy-onnx-v1
+- Modelo en Hugging Face: https://huggingface.co/orcnd/table-protocol-pong-policy-onnx-v1
 - Archivo de inferencia: `pong-policy-v1.onnx` (incluido en el repositorio)
 - Métricas de entrenamiento: `training-metrics.json` (incluido en el repositorio)
 - Ejemplo de inferencia en navegador: `inference-example.js` (incluido en el repositorio)

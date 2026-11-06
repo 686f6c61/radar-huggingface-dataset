@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abigai-lsanch/toy-contrastive21` es un repositorio experimental publicado en HuggingFace cuyo objetivo declarado es servir de base de código reducida para experimentar con aprendizaje contrastivo sobre una arquitectura de tipo Dino. El propio autor lo describe como un "codebase experimental" en escala *tiny*, disenado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni como un checkpoint con rendimiento validado: `model.safetensors` es una inicializacion valida para *smoke tests*, no un modelo listo para produccion.
+`abigai-lsanch/toy-contrastive21` es un repositorio experimental publicado en Hugging Face cuyo objetivo declarado es servir de base de código reducida para experimentar con aprendizaje contrastivo sobre una arquitectura de tipo Dino. El propio autor lo describe como un "codebase experimental" en escala *tiny*, disenado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni como un checkpoint con rendimiento validado: `model.safetensors` es una inicializacion valida para *smoke tests*, no un modelo listo para produccion.
 
 El modelo tiene 24.832 parametros totales, una cifra que lo situa muy por debajo de cualquier red neuronal util para tareas reales de vision o representacion. La configuracion de arquitectura incluye atencion estandar, fusion de tipo *tensor fusion*, activacion gelu-tanh y normalizacion RMSNorm. La receta de experimento por defecto usa optimizador SGD con un *schedule* coseno, valores que el autor remarca como puntos de partida del script y no como evidencia de un entrenamiento completado.
 
@@ -67,7 +67,7 @@ No disponible. No hay modelos comparables en la misma categoria porque el reposi
 
 | Modelo | Parametros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abigai-lsanch/toy-contrastive21 | 24.832 | Inicializacion sin entrenar | MIT | HuggingFace |
+| abigai-lsanch/toy-contrastive21 | 24.832 | Inicializacion sin entrenar | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,4 +83,4 @@ No disponible. No hay modelos comparables en la misma categoria porque el reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abigai-lsanch/toy-contrastive21
+- Hugging Face: https://huggingface.co/abigai-lsanch/toy-contrastive21

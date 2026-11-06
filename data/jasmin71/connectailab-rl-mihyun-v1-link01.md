@@ -72,8 +72,8 @@ No se han publicado resultados en benchmarks estandar de LLM (MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decision reactiva en simulacion (avoid_obstacles) | Apache 2.0 | HuggingFace, 20 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la informacion | LLM generalista | No disponible en la informacion | HuggingFace |
+| LINK-01 (este modelo) | 0,8B + LoRA | No disponible | Decision reactiva en simulacion (avoid_obstacles) | Apache 2.0 | Hugging Face, 20 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la informacion | LLM generalista | No disponible en la informacion | Hugging Face |
 | Politica PPO del simulador (profesor) | No disponible | No aplica | Decision reactiva en simulacion | No disponible | Incluida en el repo connect-tycoon |
 
 No se dispone de informacion sobre otros adaptadores LoRA comparables de la misma familia o de proyectos similares de destilacion RL-a-LLM para robotica simulada en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

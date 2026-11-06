@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / streaming | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Confucius4-R2T2-GGUF | 1,72B | Streaming, chunks de 80 ms a 2 s | zh (etiqueta multilingual sin detallar) | NetEase Model Use License Agreement | HuggingFace, ModelScope, GGUF |
-| OpenAI Whisper large-v3 | 1,55B | No nativo en streaming (requiere wrappers tipo whisper-streaming) | Multilingue (99 idiomas declarados) | MIT | HuggingFace, multiples runtimes |
+| Confucius4-R2T2-GGUF | 1,72B | Streaming, chunks de 80 ms a 2 s | zh (etiqueta multilingual sin detallar) | NetEase Model Use License Agreement | Hugging Face, ModelScope, GGUF |
+| OpenAI Whisper large-v3 | 1,55B | No nativo en streaming (requiere wrappers tipo whisper-streaming) | Multilingue (99 idiomas declarados) | MIT | Hugging Face, multiples runtimes |
 | Paraformer (Alibaba FunASR) | no disponible con precision en la informacion consultada | Streaming y no streaming | Principalmente zh | Apache 2.0 (segun publicacion habitual del proyecto) | ModelScope, FunASR, ONNX |
 | Zipformer streaming (k2-fsa / icefall) | no disponible con precision en la informacion consultada | Streaming nativo | Mayoritariamente zh y en | Apache 2.0 | GitHub, sherpa-onnx |
 
@@ -102,8 +102,8 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica g
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/netease-youdao/Confucius4-R2T2
+- Modelo GGUF en Hugging Face: https://huggingface.co/netease-youdao/Confucius4-R2T2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/netease-youdao/Confucius4-R2T2
 - Repositorio en GitHub: https://github.com/netease-youdao/Confucius4-R2T2
 - README en chino: https://github.com/netease-youdao/Confucius4-R2T2/blob/master/README.zh.md
 - Licencia del modelo: https://raw.githubusercontent.com/netease-youdao/Confucius4-R2T2/refs/heads/master/MODEL_LICENSE

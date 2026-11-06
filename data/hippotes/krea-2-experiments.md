@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hippotes/Krea-2-Experiments
+- Repositorio en Hugging Face: https://huggingface.co/Hippotes/Krea-2-Experiments
 - Licencia krea-2-community-license: https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw

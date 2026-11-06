@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `senku21x/em-early-signatures-adapters` | Adaptadores LoRA sobre base de 14 B (y de 32 B) | No disponible | Organismos modelo de misalineacion emergente con brazos controlados y mitigaciones | Apache 2.0 | Publico en HuggingFace, 0 descargas, 0 likes |
-| `ModelOrganismsForEM/Qwen2.5-14B-Instruct_R1_0_1_0_extended_train` | Adaptador rango 1 sobre base de 14 B | No disponible | Pipeline original de organismos modelo (Turner et al.) que este repositorio reproduce | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| `unsloth/Qwen2.5-14B-Instruct` | 14 B | No disponible | Modelo base instructivo sin adaptador; referencia de comportamiento alineado | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| `Qwen/Qwen3-32B` (revision `9216db5`) | 32 B | No disponible | Modelo base de la variante a escala; se usa con *thinking* desactivado | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `senku21x/em-early-signatures-adapters` | Adaptadores LoRA sobre base de 14 B (y de 32 B) | No disponible | Organismos modelo de misalineacion emergente con brazos controlados y mitigaciones | Apache 2.0 | Publico en Hugging Face, 0 descargas, 0 likes |
+| `ModelOrganismsForEM/Qwen2.5-14B-Instruct_R1_0_1_0_extended_train` | Adaptador rango 1 sobre base de 14 B | No disponible | Pipeline original de organismos modelo (Turner et al.) que este repositorio reproduce | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| `unsloth/Qwen2.5-14B-Instruct` | 14 B | No disponible | Modelo base instructivo sin adaptador; referencia de comportamiento alineado | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| `Qwen/Qwen3-32B` (revision `9216db5`) | 32 B | No disponible | Modelo base de la variante a escala; se usa con *thinking* desactivado | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/senku21x/em-early-signatures-adapters
+- Repositorio Hugging Face: https://huggingface.co/senku21x/em-early-signatures-adapters
 - Modelo base Qwen2.5-14B-Instruct (Unsloth): https://huggingface.co/unsloth/Qwen2.5-14B-Instruct
 - Modelo base de la variante a escala: https://huggingface.co/Qwen/Qwen3-32B
 - Pipeline original reproducido: https://huggingface.co/ModelOrganismsForEM/Qwen2.5-14B-Instruct_R1_0_1_0_extended_train

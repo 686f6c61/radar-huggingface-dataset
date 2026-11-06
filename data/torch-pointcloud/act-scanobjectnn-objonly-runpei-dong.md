@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/act.scanobjectnn-objonly.runpei-dong
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/act.scanobjectnn-objonly.runpei-dong
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
 - Paper (arXiv): https://arxiv.org/abs/2212.08320
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

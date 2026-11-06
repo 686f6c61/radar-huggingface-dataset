@@ -89,10 +89,10 @@ Los datos de benchmarks de terceros no estan disponibles, de modo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Swift-Qwen3.8-27b-Terse-Coder (este) | 27,8 mil millones | 262.144 tokens | Swift Open License v1.0 | Gated en HuggingFace, 0 descargas | LoRA Terse-Coder fusionado en bf16 con redondeo estocastico; MTP y vision intactos |
-| ukisai/Swift-Qwen3.8-27b | No disponible | No disponible | Swift Open License v1.0 | HuggingFace | Modelo base; segun la model card es ~58% mas eficiente en tokens que Qwen3.8-27B de serie |
-| Qwen3.8-27B (Qwen Team, Alibaba Cloud) | 27 mil millones (segun nomenclatura) | No disponible | Apache 2.0 | HuggingFace | Modelo original; sin la edicion de comportamiento del adaptador ni la eficiencia de tokens del base Swift |
-| Shockem/Qwen3.8-27b-Terse-Coder-LoRA | Adaptador de rango 16 | No aplica | Apache 2.0 | HuggingFace | Adaptador DPO ronda 8; el autor recomienda usarlo en tiempo de ejecucion en lugar de fusionado |
+| Swift-Qwen3.8-27b-Terse-Coder (este) | 27,8 mil millones | 262.144 tokens | Swift Open License v1.0 | Gated en Hugging Face, 0 descargas | LoRA Terse-Coder fusionado en bf16 con redondeo estocastico; MTP y vision intactos |
+| ukisai/Swift-Qwen3.8-27b | No disponible | No disponible | Swift Open License v1.0 | Hugging Face | Modelo base; segun la model card es ~58% mas eficiente en tokens que Qwen3.8-27B de serie |
+| Qwen3.8-27B (Qwen Team, Alibaba Cloud) | 27 mil millones (segun nomenclatura) | No disponible | Apache 2.0 | Hugging Face | Modelo original; sin la edicion de comportamiento del adaptador ni la eficiencia de tokens del base Swift |
+| Shockem/Qwen3.8-27b-Terse-Coder-LoRA | Adaptador de rango 16 | No aplica | Apache 2.0 | Hugging Face | Adaptador DPO ronda 8; el autor recomienda usarlo en tiempo de ejecucion en lugar de fusionado |
 
 No se dispone de datos comparativos de rendimiento (MMLU, HumanEval, GSM8K) entre estos modelos en la informacion proporcionada.
 
@@ -115,7 +115,7 @@ No se dispone de datos comparativos de rendimiento (MMLU, HumanEval, GSM8K) entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Adaptador LoRA fusionado: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA

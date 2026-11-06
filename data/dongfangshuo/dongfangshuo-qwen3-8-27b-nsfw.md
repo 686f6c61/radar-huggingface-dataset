@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo se distribuye en HuggingFace bajo el identificador `dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW`, publicado por el usuario `dongfangshuo`. La fecha de creacion y de ultima actualizacion registradas son identicas (14 de septiembre de 2026), lo que indica que no ha habido iteraciones posteriores al commit inicial. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que se trata de un repositorio practicamente sin traccion ni validacion por parte de la comunidad.
+El modelo se distribuye en Hugging Face bajo el identificador `dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW`, publicado por el usuario `dongfangshuo`. La fecha de creacion y de ultima actualizacion registradas son identicas (14 de septiembre de 2026), lo que indica que no ha habido iteraciones posteriores al commit inicial. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que se trata de un repositorio practicamente sin traccion ni validacion por parte de la comunidad.
 
 La informacion disponible es minima: la model card publica unicamente la declaracion de licencia (`apache-2.0`) y no incluye descripcion del modelo, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. El nombre sugiere un modelo de aproximadamente 27 000 millones de parametros y una posible relacion con la familia Qwen, pero esto no esta confirmado por ninguna fuente oficial y no debe tomarse como dato verificado. La etiqueta `not-for-all-audiences` indica que el repositorio contiene material destinado a publico adulto, lo que condiciona su uso en entornos profesionales o academicos con politicas de contenido restrictivas.
 
@@ -73,9 +73,9 @@ No es posible establecer una comparativa fiable con este modelo porque se descon
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW | no disponible (27B segun el nombre) | no disponible | apache-2.0 (declarada) | repositorio publico, 0 descargas |
-| Qwen3-32B | 32B | 128K (ampliable) | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Gemma-3-27B | 27B | 128K | licencia Gemma | HuggingFace, pesos abiertos con condiciones de uso |
-| Mistral-Small-3.1-24B | 24B | 128K | Apache-2.0 | HuggingFace, orientado a despliegue local |
+| Qwen3-32B | 32B | 128K (ampliable) | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Gemma-3-27B | 27B | 128K | licencia Gemma | Hugging Face, pesos abiertos con condiciones de uso |
+| Mistral-Small-3.1-24B | 24B | 128K | Apache-2.0 | Hugging Face, orientado a despliegue local |
 
 Los datos de las tres alternativas proceden de conocimiento general sobre modelos publicos y no de la informacion proporcionada en esta busqueda; conviene contrastarlos antes de usarlos en una decision tecnica.
 
@@ -94,7 +94,7 @@ Los datos de las tres alternativas proceden de conocimiento general sobre modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
+- Hugging Face: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

@@ -112,10 +112,10 @@ La comparativa con modelos de decision de otros autores (por ejemplo, agentes so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiro-coevolution/connectailab-rl-coevolution-v1
+- Modelo en Hugging Face: https://huggingface.co/hiro-coevolution/connectailab-rl-coevolution-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Version fijada del repositorio: https://github.com/wonseokjung/connect-tycoon/tree/98f96431195dfd7e0e3f1cd59ce7a500c92ee935
 - Cuaderno de entrenamiento RL: https://github.com/wonseokjung/connect-tycoon/blob/98f96431195dfd7e0e3f1cd59ce7a500c92ee935/notebooks/rl_decision_model_qwen_colab.ipynb
-- Ficheros citados por el autor (no verificados en esta ficha): `run-manifest.json`, `SHA256.json` y `qwen-results.json`, dentro del repositorio de HuggingFace.
+- Ficheros citados por el autor (no verificados en esta ficha): `run-manifest.json`, `SHA256.json` y `qwen-results.json`, dentro del repositorio de Hugging Face.
 - Busqueda web: los resultados devueltos corresponden a un cantante frances homonimo ("Hiro") y no guardan ninguna relacion con este modelo. No se han encontrado papers, blogs ni demos adicionales sobre connectailab-rl-coevolution-v1.

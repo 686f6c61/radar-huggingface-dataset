@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Multitask es un repositorio publicado en HuggingFace por el usuario hernandezra bajo el identificador `hernandezra/multitask-colab`. Segun su model card, se trata de una implementacion funcional de una arquitectura denominada "Dino" orientada a tareas multiples (multitask), con una configuracion declarada como "giant". El contenido se presenta explicitamente como un punto de partida experimental con codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado.
+Dino for Multitask es un repositorio publicado en Hugging Face por el usuario hernandezra bajo el identificador `hernandezra/multitask-colab`. Segun su model card, se trata de una implementacion funcional de una arquitectura denominada "Dino" orientada a tareas multiples (multitask), con una configuracion declarada como "giant". El contenido se presenta explicitamente como un punto de partida experimental con codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado.
 
 El propio autor indica que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo y que no debe presentarse como un checkpoint entrenado ni evaluado en benchmarks. Asimismo, la model card senala que no se reclama ninguna puntuacion de benchmark. Esto es coherente con el recuento real de parametros del fichero safetensors: 16.576 parametros en total, una cifra extremadamente reducida que contrasta con la etiqueta "giant" de la configuracion.
 
@@ -95,6 +95,6 @@ La comparacion con DINOv2 se incluye solo como referencia nominal de la familia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hernandezra/multitask-colab
+- Hugging Face: https://huggingface.co/hernandezra/multitask-colab
 - Ficheros citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes).

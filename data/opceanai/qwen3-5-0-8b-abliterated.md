@@ -102,9 +102,9 @@ Plantillas de jailbreak (mismos diez comportamientos, tres encuadres):
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Comportamiento de rechazo | Disponibilidad |
 |---|---:|---:|---|---|---|---|
-| Qwen3.5-0.8B-abliterated (este) | 873 M | 262.144 | Apache-2.0 | Sí (image-text-to-text) | Eliminado (0% en 6 de 7 categorías) | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 873 M | 262.144 | Apache-2.0 | Sí | Presente (30-80% según categoría) | HuggingFace |
-| Otras releases abliterated de Qwen3.5-0.8B | 873 M | 262.144 | Apache-2.0 (presumible) | Sí | Reportado cerca de cero, sin informe de coste | HuggingFace (múltiples) |
+| Qwen3.5-0.8B-abliterated (este) | 873 M | 262.144 | Apache-2.0 | Sí (image-text-to-text) | Eliminado (0% en 6 de 7 categorías) | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 873 M | 262.144 | Apache-2.0 | Sí | Presente (30-80% según categoría) | Hugging Face |
+| Otras releases abliterated de Qwen3.5-0.8B | 873 M | 262.144 | Apache-2.0 (presumible) | Sí | Reportado cerca de cero, sin informe de coste | Hugging Face (múltiples) |
 
 No se dispone de datos de benchmarks de las otras releases abliterated para comparar rendimiento; el autor indica que existen varias y que la mayoría reporta tasas de rechazo cercanas a cero, pero sin la medición de capacidad que incluye esta ficha. No se han identificado en la información proporcionada modelos comparables de otros fabricantes con arquitectura híbrida y contexto equivalente en este rango de tamaño.
 
@@ -124,7 +124,7 @@ No se dispone de datos de benchmarks de las otras releases abliterated para comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper del método de abliteración (Arditi et al. 2024): https://arxiv.org/abs/2406.11717
 - Dataset mlabonne/harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors

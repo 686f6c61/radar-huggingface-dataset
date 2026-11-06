@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e es un artefacto de cuantizacion publicado por el usuario `nm-testing` en HuggingFace. Se trata de una version cuantizada del modelo TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only de tipo Llama con aproximadamente 918 millones de parametros reales (1,1 mil millones nominales). El repositorio no es un modelo entrenado desde cero, sino el resultado de aplicar tecnicas de cuantizacion mixta (GPTQ y AWQ combinadas) sobre los pesos originales, empaquetadas en el formato `compressed-tensors` de Neural Magic.
+TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e es un artefacto de cuantizacion publicado por el usuario `nm-testing` en Hugging Face. Se trata de una version cuantizada del modelo TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only de tipo Llama con aproximadamente 918 millones de parametros reales (1,1 mil millones nominales). El repositorio no es un modelo entrenado desde cero, sino el resultado de aplicar tecnicas de cuantizacion mixta (GPTQ y AWQ combinadas) sobre los pesos originales, empaquetadas en el formato `compressed-tensors` de Neural Magic.
 
 La relevancia de este artefacto es fundamentalmente tecnica: sirve como banco de pruebas (end-to-end, segun el sufijo `e2e` del nombre) para validar pipelines de cuantizacion mixta y su compatibilidad con el ecosistema `compressed-tensors`. No es un modelo pensado para uso en produccion ni para distribucion general, sino un ejemplo de referencia para ingenieros que trabajan en compresion de modelos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e (este) | ~918M | no disponible | 8-bit mixta GPTQ+AWQ | no disponible | HuggingFace, 44 descargas |
-| TinyLlama-1.1B-Chat-v1.0 (modelo base) | ~1,1B | 2048 tokens | fp16/bf16 | Apache 2.0 | HuggingFace, ampliamente usado |
+| TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e (este) | ~918M | no disponible | 8-bit mixta GPTQ+AWQ | no disponible | Hugging Face, 44 descargas |
+| TinyLlama-1.1B-Chat-v1.0 (modelo base) | ~1,1B | 2048 tokens | fp16/bf16 | Apache 2.0 | Hugging Face, ampliamente usado |
 | TinyLlama-1.1B-Chat-v1.0 en GPTQ estandar | ~1,1B | 2048 tokens | 4-bit GPTQ | Apache 2.0 (heredada) | Multiples repos comunitarios |
 
 La comparativa se limita a estos terminos porque no se dispone de datos de rendimiento para el artefacto cuantizado. La diferencia clave frente al modelo base es el formato de pesos y el esquema de cuantizacion, no la arquitectura ni el entrenamiento.
@@ -82,7 +82,7 @@ La comparativa se limita a estos terminos porque no se dispone de datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio TinyLlama (GitHub): https://github.com/jzhang38/TinyLlama
 - Paper TinyLlama: https://arxiv.org/abs/2401.02385

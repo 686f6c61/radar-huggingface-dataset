@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15` es un ajuste fino (fine-tune) de un modelo base de la familia Qwen2 con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), publicado en HuggingFace por el usuario `ishikaa`. El nombre sugiere que está orientado a la generación de adquisiciones (posiblemente en contextos empresariales o de datos) con un componente de confianza, y que ha sido entrenado sobre el dataset Numina, conocido por problemas matemáticos y de razonamiento. Sin embargo, la model card es completamente genérica y no proporciona detalles sobre el entrenamiento, los datos, la arquitectura exacta ni las capacidades específicas.
+El modelo `ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15` es un ajuste fino (fine-tune) de un modelo base de la familia Qwen2 con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), publicado en Hugging Face por el usuario `ishikaa`. El nombre sugiere que está orientado a la generación de adquisiciones (posiblemente en contextos empresariales o de datos) con un componente de confianza, y que ha sido entrenado sobre el dataset Numina, conocido por problemas matemáticos y de razonamiento. Sin embargo, la model card es completamente genérica y no proporciona detalles sobre el entrenamiento, los datos, la arquitectura exacta ni las capacidades específicas.
 
 El modelo se distribuye en formato `safetensors` y está diseñado para la generación de texto con la librería `transformers`. A fecha de su publicación (septiembre de 2026), no registra descargas ni valoraciones, lo que indica que es un modelo reciente y sin uso documentado. La licencia no está especificada, lo que limita su uso comercial sin verificación previa. Dada la falta de información oficial, esta ficha se basa únicamente en los metadatos disponibles y en inferencias razonables a partir del nombre y los tags, marcando explícitamente todo dato no confirmado como "no disponible".
 
@@ -76,6 +76,6 @@ Este modelo no tiene benchmarks publicados, por lo que no se puede comparar su r
 
 ## Enlaces
 
-- [HuggingFace - ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15](https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15)
+- [Hugging Face - ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15](https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web.

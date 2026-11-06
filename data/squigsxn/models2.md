@@ -52,12 +52,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al ser un adaptador LoRA de 0.7 GB, la VRAM adicional requerida sobre el modelo base es reducida. FLUX.1-dev requiere aproximadamente 24 GB de VRAM en FP16 para inferencia, por lo que el adaptador anade un coste marginal.
 - GPU recomendadas: se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A100) para ejecutar FLUX.1-dev con el adaptador en FP16. Con cuantizacion de 8 bits, podria ejecutarse en GPUs con 16 GB de VRAM.
 - Si cabe en consumer GPU: si, en GPUs de gama alta como la RTX 4090 (24 GB) o la RTX 3090 (24 GB). Para GPUs con menos VRAM, se requeriria cuantizacion o el uso de tecnicas de offloading.
-- Opciones de despliegue: el modelo se integra con la libreria diffusers de HuggingFace, por lo que puede utilizarse con los pipelines estandar de texto a imagen. Tambien es compatible con herramientas como ComfyUI o Automatic1111 si se convierte al formato adecuado.
+- Opciones de despliegue: el modelo se integra con la libreria diffusers de Hugging Face, por lo que puede utilizarse con los pipelines estandar de texto a imagen. Tambien es compatible con herramientas como ComfyUI o Automatic1111 si se convierte al formato adecuado.
 - Latencia y throughput estimados: no disponibles. La latencia dependera del hardware y de la configuracion de inferencia del modelo base.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros adaptadores LoRA para FLUX.1-dev. La ausencia de datos sobre el entrenamiento, el rendimiento y el dominio objetivo impide una comparacion significativa. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de informacion suficiente para establecer una comparativa fiable con otros adaptadores LoRA para FLUX.1-dev. La ausencia de datos sobre el entrenamiento, el rendimiento y el dominio objetivo impide una comparacion significativa. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 

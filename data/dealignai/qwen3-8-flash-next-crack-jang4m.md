@@ -69,9 +69,9 @@ El autor reporta cero rechazos duros en las 960 filas, y solo 2 filas de basura 
 
 | Modelo | Parámetros totales | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-CRACK-JANG4M | 179.999.981.459 (≈180B) | no disponible | 85.92% | qwen-community-1.0 | HuggingFace |
-| JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M (base) | ~176B | no disponible | 86.89% | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-CRACK-6S | ~176B | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-CRACK-JANG4M | 179.999.981.459 (≈180B) | no disponible | 85.92% | qwen-community-1.0 | Hugging Face |
+| JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M (base) | ~176B | no disponible | 86.89% | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-CRACK-6S | ~176B | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
 
 El modelo base sin abliteración tiene un MMLU ligeramente superior (86.89% vs 85.92%). El tier 6S es la versión superior de la misma familia, pero no se han publicado resultados de benchmarks en la información disponible.
 
@@ -88,7 +88,7 @@ El modelo base sin abliteración tiene un MMLU ligeramente superior (86.89% vs 8
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M)
+- [Hugging Face del modelo](https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M)
 - [Modelo base: JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M](https://huggingface.co/JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M)
 - [Modelo relacionado: dealignai/Qwen3.8-Flash-Next-CRACK-6S](https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S)
 - [Modelo relacionado: dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4](https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4)

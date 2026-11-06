@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mcvladoc/gemma_4_e4b_lora_selty` es un adaptador LoRA publicado en HuggingFace por el usuario mcvladoc, construido sobre el modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de tipo PEFT (18.350.080 parámetros según los safetensors publicados) que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 0.2 GB e incluye también el tag `gguf`, lo que indica que hay o habrá versiones cuantizadas para inferencia con llama.cpp u Ollama.
+`mcvladoc/gemma_4_e4b_lora_selty` es un adaptador LoRA publicado en Hugging Face por el usuario mcvladoc, construido sobre el modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de tipo PEFT (18.350.080 parámetros según los safetensors publicados) que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 0.2 GB e incluye también el tag `gguf`, lo que indica que hay o habrá versiones cuantizadas para inferencia con llama.cpp u Ollama.
 
-La relevancia de esta ficha es limitada y hay que decirlo con claridad: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, idiomas, licencia ni evaluaciones. La fecha de creación registrada (2026-09-22) y la actualización del mismo día sugieren una subida reciente y sin mantenimiento posterior.
+La relevancia de esta ficha es limitada y hay que decirlo con claridad: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, idiomas, licencia ni evaluaciones. La fecha de creación registrada (2026-09-22) y la actualización del mismo día sugieren una subida reciente y sin mantenimiento posterior.
 
 Por tanto, esta ficha documenta lo que se puede verificar objetivamente (identificadores, tamaño del adaptador, modelo base, etiquetas y librerías declaradas) y marca explícitamente como no disponible todo lo demás. El nombre del repositorio incluye el sufijo `selty`, que no está definido en ninguna parte de la documentación y presumiblemente hace referencia al dataset o a la persona/estilo usado en el ajuste.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha documenta lo que se puede verificar objetivamente (identif
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base en lugar de reentrenar todos los pesos. Los 18,35 millones de parámetros del adaptador son coherentes con un ajuste de rango moderado sobre un modelo de escala de pocos miles de millones de parámetros, y la librería declarada es PEFT junto con Unsloth y Transformers. El modelo base indicado, `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, es una versión cuantizada a 4 bits con bitsandbytes de un modelo de la familia Gemma en variante instruct (sufijo `it`), distribuida por Unsloth; la nomenclatura `e4b` sugiere un esquema de parámetros efectivos, pero no hay documentación en la información proporcionada que lo confirme.
 
-No se dispone de ningún dato sobre el entrenamiento: ni volumen de tokens, ni composición del dataset, ni método de ajuste (SFT, DPO, RLHF), ni hiperparámetros, ni régimen de precisión. La model card reserva secciones para todo ello pero las deja como `[More Information Needed]`. El tag `arxiv:1910.09700` no corresponde a un artículo sobre el modelo, sino a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que aparece en la plantilla por defecto de HuggingFace. El nombre `selty` del repositorio es el único indicio sobre el propósito del ajuste y no está explicado.
+No se dispone de ningún dato sobre el entrenamiento: ni volumen de tokens, ni composición del dataset, ni método de ajuste (SFT, DPO, RLHF), ni hiperparámetros, ni régimen de precisión. La model card reserva secciones para todo ello pero las deja como `[More Information Needed]`. El tag `arxiv:1910.09700` no corresponde a un artículo sobre el modelo, sino a la referencia del calculador de impacto medioambiental (Lacoste et al., 2019) que aparece en la plantilla por defecto de Hugging Face. El nombre `selty` del repositorio es el único indicio sobre el propósito del ajuste y no está explicado.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ Los siguientes escenarios son hipótesis de uso razonables dada la naturaleza de
 - Fusión y exportación a GGUF: combinar los pesos del adaptador con el modelo base en precisión completa y convertir el resultado a GGUF para despliegue local con llama.cpp u Ollama, siempre que se resuelvan las diferencias de precisión respecto al base cuantizado.
 - Prototipado rápido de asistentes de dominio: servir el modelo fusionado con vLLM u otro servidor compatible con PEFT para validar un caso de uso antes de invertir en un ajuste completo.
 - Pruebas de regresión y comparación de adaptadores: mantener este adaptador como variante A/B frente a otros adaptadores del mismo base para medir diferencias de comportamiento en un conjunto de evaluación propio.
-- Docencia y demostraciones: ilustrar el ciclo completo de HuggingFace (base, adaptador, tags, formatos) en cursos o talleres, dado el tamaño manejable del repositorio (0.2 GB).
+- Docencia y demostraciones: ilustrar el ciclo completo de Hugging Face (base, adaptador, tags, formatos) en cursos o talleres, dado el tamaño manejable del repositorio (0.2 GB).
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ Los resultados de búsqueda web obtenidos no contienen ninguna referencia a este
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace sin ningún campo completado. No hay información sobre uso previsto, datos, evaluación ni limitaciones.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face sin ningún campo completado. No hay información sobre uso previsto, datos, evaluación ni limitaciones.
 - Licencia no declarada: al no especificarse licencia, no se puede asumir ningún permiso de uso comercial. Además, la licencia efectiva estará condicionada por la del modelo base de la familia Gemma, que hay que consultar por separado.
 - Riesgo de alucinación: inherente a los modelos generativos de esta escala y no evaluado en este adaptador. Sin benchmarks ni pruebas, no hay forma de acotarlo.
 - Idiomas no declarados: se desconoce si el ajuste conserva el multilingüismo del base o lo ha degradado hacia un único idioma.
@@ -94,7 +94,7 @@ Los resultados de búsqueda web obtenidos no contienen ninguna referencia a este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mcvladoc/gemma_4_e4b_lora_selty
+- Modelo en Hugging Face: https://huggingface.co/mcvladoc/gemma_4_e4b_lora_selty
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Librería PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Edafe-Moses/nllb-bidirectional-ig es un repositorio de pesos alojado en HuggingFace por el usuario Edafe-Moses. El identificador del repositorio sugiere una adaptacion bidireccional de la familia NLLB (No Language Left Behind) orientada al igbo (codigo ISO 639-1 "ig"), pero la ficha publica del modelo no incluye pipeline, licencia, idiomas declarados ni descripcion alguna, por lo que esa interpretacion es una inferencia a partir del nombre y no un dato confirmado.
+Edafe-Moses/nllb-bidirectional-ig es un repositorio de pesos alojado en Hugging Face por el usuario Edafe-Moses. El identificador del repositorio sugiere una adaptacion bidireccional de la familia NLLB (No Language Left Behind) orientada al igbo (codigo ISO 639-1 "ig"), pero la ficha publica del modelo no incluye pipeline, licencia, idiomas declarados ni descripcion alguna, por lo que esa interpretacion es una inferencia a partir del nombre y no un dato confirmado.
 
 El repositorio ocupa 45,0 GB y contiene un unico formato de pesos declarado: safetensors. No registra descargas y tiene 1 like desde su creacion el 9 de septiembre de 2026, con ultima actualizacion el 12 de septiembre de 2026. El volumen del repositorio es compatible con varias copias de pesos de un modelo de gran tamano o con un unico conjunto de pesos en precision completa, pero no hay informacion que permita determinar el numero de parametros.
 
@@ -59,7 +59,7 @@ Los siguientes escenarios son aplicaciones plausibles si se confirma que el mode
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay datos de BLEU, chrF, COMET, MMLU, HumanEval ni de ninguna otra metrica, ni en la ficha de HuggingFace ni en los resultados de busqueda web consultados (que, por otra parte, no devolvieron ningun resultado relevante sobre este modelo).
+No hay datos de BLEU, chrF, COMET, MMLU, HumanEval ni de ninguna otra metrica, ni en la ficha de Hugging Face ni en los resultados de busqueda web consultados (que, por otra parte, no devolvieron ningun resultado relevante sobre este modelo).
 
 ## Requisitos de hardware
 
@@ -95,5 +95,5 @@ No hay datos de rendimiento de este modelo. La tabla incluye valores publicos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Edafe-Moses/nllb-bidirectional-ig
+- Hugging Face: https://huggingface.co/Edafe-Moses/nllb-bidirectional-ig
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web consultada.

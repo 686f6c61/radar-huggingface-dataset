@@ -125,7 +125,7 @@ La comparacion con modelos de otros autores de la misma categoria (MoE de 30-40B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pfeifferj/Ornith-1.5-35B-A3B-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pfeifferj/Ornith-1.5-35B-A3B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Revision del modelo base usada para cuantizar: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/tree/10fbf86fed7ecee4a061f8b499a618f46001cac1
 - Paper de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556

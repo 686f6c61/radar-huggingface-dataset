@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-log-task00-centre-full-hourly-5877646ba594-802c136c2a4e` es un paquete alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, se define como un "versioned fleet archive" (archivo versionado de flota). La descripcion indica que se trata de una instantanea ("snapshot") de una revision concreta y no de un espejo vivo de un directorio, con una receta canonica asociada identificada como `evaluations/2026-09-23_task00_centre_full_recovery` y una verificacion de integridad mediante `SHA256SUMS`.
+El repositorio `davidwdw/fa-log-task00-centre-full-hourly-5877646ba594-802c136c2a4e` es un paquete alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, se define como un "versioned fleet archive" (archivo versionado de flota). La descripcion indica que se trata de una instantanea ("snapshot") de una revision concreta y no de un espejo vivo de un directorio, con una receta canonica asociada identificada como `evaluations/2026-09-23_task00_centre_full_recovery` y una verificacion de integridad mediante `SHA256SUMS`.
 
 No se trata, por tanto, de un modelo de lenguaje con arquitectura, pesos y capacidades documentadas: la informacion publicada no incluye tipo de red, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El repositorio no registra pipeline de inferencia, licencia, idiomas ni formato de pesos, y acumula cero descargas y cero "likes" en el momento de recopilar estos datos.
 
@@ -83,7 +83,7 @@ No disponible. El paquete no se presenta como un modelo con parametros, contexto
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. El paquete no se presenta como un modelo con parametros, contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-5877646ba594-802c136c2a4e
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-5877646ba594-802c136c2a4e
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

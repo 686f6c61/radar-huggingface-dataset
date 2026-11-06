@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nxp/deeplabv3-ade20k-imx` es un modelo de segmentacion semantica de imagenes publicado en HuggingFace por NXP Semiconductors, compania neerlandesa de semiconductores con sede en Eindhoven. Por el identificador se deduce que emplea la arquitectura DeepLabV3 y que esta entrenado o ajustado sobre el conjunto de datos ADE20K (segmentacion semantica de escenas con 150 clases), con el sufijo "imx" apuntando a la familia de procesadores de aplicacion i.MX de NXP. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, pipeline, idiomas ni detalles de entrenamiento.
+El modelo `nxp/deeplabv3-ade20k-imx` es un modelo de segmentacion semantica de imagenes publicado en Hugging Face por NXP Semiconductors, compania neerlandesa de semiconductores con sede en Eindhoven. Por el identificador se deduce que emplea la arquitectura DeepLabV3 y que esta entrenado o ajustado sobre el conjunto de datos ADE20K (segmentacion semantica de escenas con 150 clases), con el sufijo "imx" apuntando a la familia de procesadores de aplicacion i.MX de NXP. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, pipeline, idiomas ni detalles de entrenamiento.
 
 Se trata, por tanto, de un modelo orientado a vision por computador y, mas concretamente, a la tarea de segmentacion semantica densa, un tipo de modelo que clasifica cada pixel de una imagen en una categoria (cielo, carretera, persona, vehiculo, etc.). La relevancia potencial de un modelo con el sufijo "imx" radica en su posible optimizacion para inferencia en el borde (edge), es decir, sobre los SoC i.MX de NXP que integran NPU, muy habituales en automocion, industria, domotica y dispositivos IoT.
 
@@ -68,7 +68,7 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 | Modelo | Arquitectura | Dataset | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/deeplabv3-ade20k-imx | DeepLabV3 (presunto) | ADE20K (presunto) | no disponible | MIT | HuggingFace |
+| nxp/deeplabv3-ade20k-imx | DeepLabV3 (presunto) | ADE20K (presunto) | no disponible | MIT | Hugging Face |
 | DeepLabV3 (referencia) | CNN + ASPP | ADE20K | ~58,6 M (backbone ResNet-101) | distinta segun implementacion | publica |
 | SegFormer | Transformer jerarquico | ADE20K | ~3,7-84,7 M segun variante | Apache 2.0 / otros | publica |
 | U-Net | encoder-decoder CNN | variable | variable | variable | publica |
@@ -87,7 +87,7 @@ Los datos de DeepLabV3, SegFormer y U-Net corresponden a valores de referencia p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nxp/deeplabv3-ade20k-imx
+- Hugging Face: https://huggingface.co/nxp/deeplabv3-ade20k-imx
 - NXP Semiconductors (web corporativa): https://www.nxp.com/
 - Productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

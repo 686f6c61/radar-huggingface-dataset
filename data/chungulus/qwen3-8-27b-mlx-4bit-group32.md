@@ -82,7 +82,7 @@ La comparativa con Qwen2.5-VL-27B es orientativa, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-4bit-Group32
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-4bit-Group32
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte Day-0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Página de LM Studio para Qwen3.8: https://lmstudio.ai/models/qwen3.8

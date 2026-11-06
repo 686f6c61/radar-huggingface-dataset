@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Christophergfh bajo el identificador `Christophergfh/review-self-supervised`, no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable. Se trata de un cuaderno de notas de investigación (etiquetado con `research-notes` y `self-supervised`) que describe un plan de estudio sobre aprendizaje auto-supervisado: alcance de la pregunta de investigación, posibles factores de confusión, comparaciones propuestas con líneas base emparejadas y requisitos de reproducibilidad. El único artefacto con formato de pesos es un fichero `safetensors` que, según los metadatos, contiene 16.576 parámetros totales, una magnitud entre tres y cuatro órdenes inferior a la de cualquier modelo de lenguaje funcional.
+Este repositorio de Hugging Face, publicado por el usuario Christophergfh bajo el identificador `Christophergfh/review-self-supervised`, no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable. Se trata de un cuaderno de notas de investigación (etiquetado con `research-notes` y `self-supervised`) que describe un plan de estudio sobre aprendizaje auto-supervisado: alcance de la pregunta de investigación, posibles factores de confusión, comparaciones propuestas con líneas base emparejadas y requisitos de reproducibilidad. El único artefacto con formato de pesos es un fichero `safetensors` que, según los metadatos, contiene 16.576 parámetros totales, una magnitud entre tres y cuatro órdenes inferior a la de cualquier modelo de lenguaje funcional.
 
 La propia model card es explícita al respecto: indica que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado. El tamaño del repositorio es de 0,0 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -12,7 +12,7 @@ Por tanto, la ficha siguiente describe un artefacto de documentación, no un mod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta `transformer` aparece en los tags de HuggingFace, pero la model card no documenta arquitectura alguna ni describe una red concreta. El contenido es una nota de investigación |
+| Arquitectura | No disponible. La etiqueta `transformer` aparece en los tags de Hugging Face, pero la model card no documenta arquitectura alguna ni describe una red concreta. El contenido es una nota de investigación |
 | Parametros totales | 16.576 (dato real del fichero safetensors) |
 | Parametros activos | No aplica. No se declara una arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -95,5 +95,5 @@ La diferencia entre el artefacto descrito y los modelos de referencia es de entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Christophergfh/review-self-supervised
+- Hugging Face: https://huggingface.co/Christophergfh/review-self-supervised
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de código ni demos asociados a este artefacto.

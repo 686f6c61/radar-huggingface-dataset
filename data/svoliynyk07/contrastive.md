@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**Svoliynyk07/contrastive** es un repositorio experimental de HuggingFace con una implementación en PyTorch de una arquitectura Albef a escala small: atención multi-query, fusión de bajo rango, activación ReLU y normalización LayerNorm. El checkpoint suma 24.832 parámetros según safetensors y se publica con licencia MIT. No es un modelo entrenado, sino un punto de partida para pruebas de humo e inspección de cambios de arquitectura.
+**Svoliynyk07/contrastive** es un repositorio experimental de Hugging Face con una implementación en PyTorch de una arquitectura Albef a escala small: atención multi-query, fusión de bajo rango, activación ReLU y normalización LayerNorm. El checkpoint suma 24.832 parámetros según safetensors y se publica con licencia MIT. No es un modelo entrenado, sino un punto de partida para pruebas de humo e inspección de cambios de arquitectura.
 
 Incluye `train.py`, `config.json`, `training_args.json` y `model.safetensors`. La receta por defecto emplea Adam con warmup constante, pero el autor aclara que no hay una ejecución completada ni benchmarks. No se declaran idiomas, contexto, cuantizaciones ni capacidades funcionales. Su interés es exclusivamente experimental: validar código, adaptadores de carga y configuraciones pequeñas antes de entrenar; no sirve para producción ni para evaluar rendimiento.
 
@@ -22,7 +22,7 @@ Incluye `train.py`, `config.json`, `training_args.json` y `model.safetensors`. L
 | Fusión | low-rank (bajo rango) |
 | Activación | ReLU |
 | Normalización | LayerNorm |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tags | safetensors, albef, pytorch, contrastive |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
@@ -53,7 +53,7 @@ Los siguientes casos se refieren al código y al checkpoint de inicialización, 
 - Pruebas de humo de carga y serialización: validar que `model.safetensors` se carga en PyTorch, que las formas de los tensores coinciden con `config.json` y que un forward con datos sintéticos no falla. Es adecuado por su tamaño reducido y porque el autor lo declara checkpoint de inicialización.
 - Prototipado de variantes Albef: modificar atención multi-query, fusión low-rank, activación o normalización y comparar configuraciones antes de lanzar entrenamientos completos. La escala small permite iterar rápido y el código es el artefacto principal.
 - Reproducción de recetas contrastivas: usar `train.py` y `training_args.json` como base para experimentos con Adam y warmup constante, fijando semillas y registrando versiones. Es útil para investigación metodológica, no para obtener métricas de rendimiento.
-- Desarrollo de adaptadores de carga: implementar un adaptador explícito para APIs genéricas de HuggingFace, ya que la implementación es personalizada. Sirve para probar integraciones y detectar incompatibilidades.
+- Desarrollo de adaptadores de carga: implementar un adaptador explícito para APIs genéricas de Hugging Face, ya que la implementación es personalizada. Sirve para probar integraciones y detectar incompatibilidades.
 - Docencia de PyTorch: explicar un forward pass, LayerNorm, atención multi-query y fusión de bajo rango con 24.832 parámetros. Cabe en CPU y no requiere GPU, lo que facilita demostraciones en clase.
 - Tests de integración continua: incluir comprobaciones de importación, forward, serialización y carga en pipelines de CI. El modelo es tan pequeño que los tests son rápidos y se pueden ejecutar en cada commit.
 - Perfilado de infraestructura: medir overhead de PyTorch, uso de memoria y latencia de carga con un modelo de juguete antes de instrumentar modelos grandes. Es adecuado para calibrar herramientas de profiling sin consumir recursos.
@@ -101,5 +101,5 @@ No se han identificado alternativas comparables en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Svoliynyk07/contrastive
+- Hugging Face: https://huggingface.co/Svoliynyk07/contrastive
 - No se han identificado papers, blogs, repositorios o demos adicionales relevantes en la búsqueda web proporcionada.

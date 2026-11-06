@@ -98,7 +98,7 @@ Los datos del modelo evaluado no estan publicados (contexto y benchmarks), por l
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/ss-lab/LFM2.5-2.6B-GGUF
+- Repositorio Hugging Face de la conversion: https://huggingface.co/ss-lab/LFM2.5-2.6B-GGUF
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - llama.cpp (herramienta de conversion citada en la model card): https://github.com/ggml-org/llama.cpp
 - Papers, blogs, demos o repositorios adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos eran sobre un tema historico ajeno y se han descartado.

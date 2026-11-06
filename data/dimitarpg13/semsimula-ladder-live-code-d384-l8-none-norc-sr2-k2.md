@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2` es un modelo de lenguaje de investigación desarrollado por el usuario de HuggingFace `dimitarpg13`, perteneciente a la familia "semsimula" de modelos de lenguaje conservativos. No es un transformer ni utiliza atención: es un modelo de energía basado en un potencial escalar aprendido, donde cada capa avanza los estados de los tokens mediante un paso de integración de un flujo amortiguado de segundo orden en mecánica lagrangiana. El modelo se entrena sobre código Python (CodeParrot) y forma parte de un estudio de ablación de mecanismos ("ladder study") pre-registrado que compara variantes de profundidad y número de "pozos" (wells) del potencial.
+`semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2` es un modelo de lenguaje de investigación desarrollado por el usuario de Hugging Face `dimitarpg13`, perteneciente a la familia "semsimula" de modelos de lenguaje conservativos. No es un transformer ni utiliza atención: es un modelo de energía basado en un potencial escalar aprendido, donde cada capa avanza los estados de los tokens mediante un paso de integración de un flujo amortiguado de segundo orden en mecánica lagrangiana. El modelo se entrena sobre código Python (CodeParrot) y forma parte de un estudio de ablación de mecanismos ("ladder study") pre-registrado que compara variantes de profundidad y número de "pozos" (wells) del potencial.
 
 Esta variante concreta, K2-L8-CODE, tiene 8 capas y 2 pozos en el banco de potencial V_θ, frente a los 8 pozos de la variante base L8-CODE. El objetivo del experimento es aislar si la profundidad cambia lo que aportan los pozos adicionales. Con 50.164.435 parámetros, reduce el tamaño en 26,5 millones respecto a L8-CODE al eliminar seis pozos del banco compartido.
 
@@ -70,9 +70,9 @@ La perplejidad de validación se mide en bloque 512 sobre los primeros 2 millone
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot valid) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| K2-L8-CODE (este) | 50,16 M | no disponible (bloques de 512) | 5,67 | cc-by-4.0 | HuggingFace |
-| L8-CODE | 76,73 M | no disponible (bloques de 512) | 5,35 | cc-by-4.0 | HuggingFace |
-| L4-CODE | 76,63 M | no disponible (bloques de 512) | 5,48 | cc-by-4.0 | HuggingFace |
+| K2-L8-CODE (este) | 50,16 M | no disponible (bloques de 512) | 5,67 | cc-by-4.0 | Hugging Face |
+| L8-CODE | 76,73 M | no disponible (bloques de 512) | 5,35 | cc-by-4.0 | Hugging Face |
+| L4-CODE | 76,63 M | no disponible (bloques de 512) | 5,48 | cc-by-4.0 | Hugging Face |
 | GPT-2 emparejado | ~14,2 M fuera de embeddings | no disponible | 4,96 | no disponible | no en el Hub |
 
 La comparación más directa es con las otras variantes de la misma colección "depth-on-code", que comparten lotes de entrenamiento y evaluación emparejada. Frente a un GPT-2 emparejado en parámetros fuera de embeddings (11,6 M frente a 14,2 M), el modelo conservativo queda un 7,4% por detrás en perplejidad.
@@ -91,7 +91,7 @@ La comparación más directa es con las otras variantes de la misma colección "
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2
+- Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2
 - Variante L8-CODE (8 pozos): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
 - Variante L4-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2
 - Variante SO-CODE (2 capas): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2

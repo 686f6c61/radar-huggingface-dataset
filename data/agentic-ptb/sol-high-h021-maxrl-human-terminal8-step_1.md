@@ -72,5 +72,5 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.h021.maxrl-human-terminal8.step_1](https://huggingface.co/agentic-ptb/sol-high.h021.maxrl-human-terminal8.step_1)
+- [Hugging Face - agentic-ptb/sol-high.h021.maxrl-human-terminal8.step_1](https://huggingface.co/agentic-ptb/sol-high.h021.maxrl-human-terminal8.step_1)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

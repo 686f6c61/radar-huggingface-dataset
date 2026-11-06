@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ravisonawane211/sentiment-model` es un modelo de clasificación de texto publicado en HuggingFace por el usuario ravisonawane211. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, un transformer encoder de 66.955.779 parámetros (aproximadamente 67 millones) destilado a partir de BERT. El modelo se distribuye bajo licencia Apache-2.0, en formato safetensors, y está etiquetado como compatible con endpoints de HuggingFace.
+`ravisonawane211/sentiment-model` es un modelo de clasificación de texto publicado en Hugging Face por el usuario ravisonawane211. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, un transformer encoder de 66.955.779 parámetros (aproximadamente 67 millones) destilado a partir de BERT. El modelo se distribuye bajo licencia Apache-2.0, en formato safetensors, y está etiquetado como compatible con endpoints de Hugging Face.
 
 Su propósito declarado es la clasificación de sentimiento, aunque la model card no especifica el número de clases, el conjunto de datos de entrenamiento ni los idiomas soportados. Los únicos resultados publicados son los del conjunto de evaluación interno usado durante el entrenamiento: una pérdida de 1,2629, una exactitud de 0,6667 y un F1 ponderado y macro de 0,6662. El `model-index` no declara ningún benchmark estándar.
 
@@ -41,7 +41,7 @@ La evolución del entrenamiento muestra una señal clara de sobreajuste: la pér
 - Análisis de sentimiento: es el uso declarado por el autor, aunque no se especifica si se trata de clasificación binaria, ternaria o de otro tipo.
 - Procesamiento de secuencias de hasta 512 tokens, suficiente para reseñas, tuits largos, párrafos de opinión o fragmentos de tickets de soporte.
 - Inferencia en CPU: por su tamaño (67 M de parámetros), el modelo es ejecutable sin GPU.
-- Integración con el ecosistema Transformers y compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Integración con el ecosistema Transformers y compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No se documenta soporte de *tool calling*, *function calling*, razonamiento multi-paso, agentes, visión, audio, modo de razonamiento explícito ni ninguna capacidad multilingüe.
 - No se documenta generación de texto: es un modelo discriminativo, no generativo.
 
@@ -114,7 +114,7 @@ La comparación relevante es con `distilbert-base-uncased-finetuned-sst-2-englis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravisonawane211/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/ravisonawane211/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Referencia del modelo base (distilbert-base-uncased, enlace citado en la model card): https://huggingface.co/distilbert-base-uncased
 - Artículo de DistilBERT (referencia externa del modelo base): https://arxiv.org/abs/1910.01108

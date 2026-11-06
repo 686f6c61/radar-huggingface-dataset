@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OmniBot-1.5B-LoRA es un repositorio publicado en HuggingFace por el usuario `idkreally001` que, a partir del tamaño del repositorio (0,1 GB) y de la nomenclatura del identificador, parece contener un adaptador LoRA (o un conjunto de pesos parciales) sobre un modelo base de aproximadamente 1.500 millones de parámetros, y no un checkpoint completo. Un modelo de 1,5B en fp16 ocuparía del orden de 3 GB, por lo que los 100 MB efectivamente alojados son incompatibles con pesos completos y apuntan a un adaptador de bajo rango, a una cuantización extrema o a un repositorio incompleto.
+OmniBot-1.5B-LoRA es un repositorio publicado en Hugging Face por el usuario `idkreally001` que, a partir del tamaño del repositorio (0,1 GB) y de la nomenclatura del identificador, parece contener un adaptador LoRA (o un conjunto de pesos parciales) sobre un modelo base de aproximadamente 1.500 millones de parámetros, y no un checkpoint completo. Un modelo de 1,5B en fp16 ocuparía del orden de 3 GB, por lo que los 100 MB efectivamente alojados son incompatibles con pesos completos y apuntan a un adaptador de bajo rango, a una cuantización extrema o a un repositorio incompleto.
 
-La ficha del autor es la plantilla automática de HuggingFace sin rellenar: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos de la model card aparecen como `[More Information Needed]`. El único metadato técnico adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático citado en la plantilla, no a un paper del modelo.
+La ficha del autor es la plantilla automática de Hugging Face sin rellenar: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos de la model card aparecen como `[More Information Needed]`. El único metadato técnico adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático citado en la plantilla, no a un paper del modelo.
 
 Por tanto, esta ficha no puede certificar ninguna capacidad, rendimiento ni condición de uso del modelo. Su relevancia actual es limitada y de naturaleza metodológica: sirve como ejemplo de repositorio opaco que no debería integrarse en producción sin una auditoría previa de los pesos, del modelo base y de la licencia heredada.
 
@@ -98,7 +98,7 @@ La diferencia relevante no es de parámetros sino de trazabilidad: las tres alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/idkreally001/OmniBot-1.5B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/idkreally001/OmniBot-1.5B-LoRA
 - Artículo citado en la plantilla (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML: https://mlco2.github.io/impact
 

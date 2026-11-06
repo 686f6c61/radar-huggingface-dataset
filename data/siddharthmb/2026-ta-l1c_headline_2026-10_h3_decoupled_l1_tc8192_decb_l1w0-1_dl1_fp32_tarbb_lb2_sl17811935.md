@@ -87,9 +87,9 @@ No se declaran modelos directamente comparables en la informacion disponible. A 
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador | 3,596 B (base + ramas) | 8192 tokens (heredado del base) | KL 0,174 / agreement 85,5 % frente a gemma-2-2b-it | no disponible | HuggingFace (12 descargas) |
-| google/gemma-2-2b (base) | no disponible en la informacion | no disponible en la informacion | es el punto de partida, no la referencia | Gemma (segun el base) | publico en HuggingFace |
-| google/gemma-2-2b-it (referencia) | no disponible en la informacion | no disponible en la informacion | es el objetivo a reproducir, no comparable directamente | Gemma (segun el base) | publico en HuggingFace |
+| Este adaptador | 3,596 B (base + ramas) | 8192 tokens (heredado del base) | KL 0,174 / agreement 85,5 % frente a gemma-2-2b-it | no disponible | Hugging Face (12 descargas) |
+| google/gemma-2-2b (base) | no disponible en la informacion | no disponible en la informacion | es el punto de partida, no la referencia | Gemma (segun el base) | publico en Hugging Face |
+| google/gemma-2-2b-it (referencia) | no disponible en la informacion | no disponible en la informacion | es el objetivo a reproducir, no comparable directamente | Gemma (segun el base) | publico en Hugging Face |
 | Adaptador LoRA generico sobre gemma-2-2b | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia clave frente a un LoRA convencional es que las features del transcoder son dispersas e inspeccionables y admiten steering por id, mientras que un LoRA no expone ese nivel de granularidad. Frente a un transcoder de diccionario disperso (tipo GemmaScope), la diferencia es que aqui la rama se entrena en modo bridging para reproducir un modelo de referencia concreto.
@@ -108,7 +108,7 @@ La diferencia clave frente a un LoRA convencional es que las features del transc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_h3_decoupled_l1_tc8192_decb_l1w0.1_dl1_fp32_tarbb_lb2_sl17811935
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_h3_decoupled_l1_tc8192_decb_l1w0.1_dl1_fp32_tarbb_lb2_sl17811935
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Tokenizer: https://huggingface.co/google/gemma-2-2b-it

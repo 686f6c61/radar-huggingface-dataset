@@ -81,7 +81,7 @@ La comparativa con Qwen2.5-VL-7B es aproximada: ambos son multimodales, pero est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sluttybutfast/BattleKAT-Coder-V2.5-Dev-Vision-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/sluttybutfast/BattleKAT-Coder-V2.5-Dev-Vision-oQ4e
 - Modelo base de lenguaje (finetune): https://huggingface.co/ZQ-Dev/KAT-Coder-V2.5-Dev-oQ4e
 - Modelo base VLM (visión): https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ4e-mtp
 - Modelo similar del mismo autor: https://huggingface.co/sluttybutfast/KAT-Coder-V2.5-Dev-Vision-OptiQ-4bit

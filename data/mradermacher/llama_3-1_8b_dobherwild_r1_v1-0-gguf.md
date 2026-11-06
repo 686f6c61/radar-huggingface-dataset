@@ -4,7 +4,7 @@
 
 Llama_3.1_8b_DobHerWild_R1_v1.0-GGUF es la version cuantizada en formato GGUF del modelo Nexesenex/Llama_3.1_8b_DobHerWild_R1_v1.0, un merge de modelos construido con mergekit sobre la base de Llama 3.1 de 8.000 millones de parametros. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF de modelos de la comunidad, que distribuye tanto cuantizaciones estaticas (este repositorio) como versiones con imatrix en un repositorio hermano.
 
-El modelo subyacente es un merge orientado a conversacion en ingles, sin model card detallada que documente la composicion exacta del merge, los datos de entrenamiento o los benchmarks. La informacion disponible se limita a los metadatos de HuggingFace: 8.030.261.312 parametros totales, idioma ingles, licencia no disponible y etiquetas que confirman el uso de mergekit.
+El modelo subyacente es un merge orientado a conversacion en ingles, sin model card detallada que documente la composicion exacta del merge, los datos de entrenamiento o los benchmarks. La informacion disponible se limita a los metadatos de Hugging Face: 8.030.261.312 parametros totales, idioma ingles, licencia no disponible y etiquetas que confirman el uso de mergekit.
 
 Su relevancia practica reside en la disponibilidad de cuantizaciones GGUF listas para usar con llama.cpp, Ollama y otros motores compatibles, lo que permite ejecutar un modelo de 8B en hardware de consumo. No obstante, al tratarse de un merge de comunidad sin evaluacion publicada, debe tratarse como un modelo experimental y no como una alternativa validada a Llama 3.1 8B Instruct oficial.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (aproximada, segun tamano de archivo GGUF y overhead de contexto): Q2_K ~3,3 GB; Q4_K_M ~5,0 GB; Q5_K_M ~5,8 GB; Q6_K ~6,7 GB; Q8_0 ~8,6 GB; f16 ~16,2 GB. A estas cifras hay que sumar el espacio para la cache KV, que crece con la longitud de contexto.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4 a Q8; A100 o H100 solo si se necesita f16 y contextos muy largos.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas usando Q4_K_M o Q5_K_M; con 6 GB es viable en Q3_K_M o IQ4_XS con contextos moderados.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier motor compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier motor compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares

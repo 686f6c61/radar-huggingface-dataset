@@ -88,7 +88,7 @@ Latencia: mediana de 49 ms para peticiones secuenciales en una RTX PRO 6000.
 
 | Modelo | Base | Parametros | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AJev 26B-A4B (este modelo) | Gemma 4 26B-A4B | 26B totales (~4B activos según nomenclatura) | 57,42 | apache-2.0 | Adaptador LoRA en HuggingFace |
+| AJev 26B-A4B (este modelo) | Gemma 4 26B-A4B | 26B totales (~4B activos según nomenclatura) | 57,42 | apache-2.0 | Adaptador LoRA en Hugging Face |
 | Surogate Rune 26B-A4B v3 | Gemma 4 26B-A4B | 26B totales (~4B activos según nomenclatura) | 57,44 | no disponible | no disponible en la información proporcionada |
 | AJev lora5 (versión anterior) | Gemma 4 12B | 12B (modelo base) | 52,22 | no disponible | versión previa del mismo autor |
 | Jev (TypeSafe) | — | no disponible | 57,91 | no disponible | servicio alojado |
@@ -110,7 +110,7 @@ No se dispone de datos de contexto, cuantización ni rendimiento por token para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyzhang232/ajev-gemma4-26b-a4b-lora1
+- Modelo en Hugging Face: https://huggingface.co/andyzhang232/ajev-gemma4-26b-a4b-lora1
 - Código de inferencia: https://github.com/cmzy/ajev-infer
 - Jev Decision Index 0.2.1 (suite de evaluación): https://huggingface.co/spaces/multimodalart/jev-decision-index
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

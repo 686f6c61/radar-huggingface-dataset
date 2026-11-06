@@ -23,7 +23,7 @@ La relevancia practica del repositorio es limitada pero concreta: ofrece un arte
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. El nombre del repositorio apunta a un modelo de la familia MiniCPM en su version 5 con 2B de parametros, lo que en la practica se traduce en un transformer decoder-only denso, pero este extremo no esta documentado en la model card ni en los metadatos de HuggingFace. Tampoco se indica si hubo fases de alineacion mediante RLHF, DPO u otras tecnicas, ni el volumen de tokens de preentrenamiento.
+No se dispone de informacion sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. El nombre del repositorio apunta a un modelo de la familia MiniCPM en su version 5 con 2B de parametros, lo que en la practica se traduce en un transformer decoder-only denso, pero este extremo no esta documentado en la model card ni en los metadatos de Hugging Face. Tampoco se indica si hubo fases de alineacion mediante RLHF, DPO u otras tecnicas, ni el volumen de tokens de preentrenamiento.
 
 El unico elemento tecnico verificable es la cuantizacion W4A16: los pesos se almacenan en 4 bits y las activaciones se computan en 16 bits, un esquema habitual para reducir huella de memoria manteniendo cierta fidelidad numerica en las operaciones. El sufijo CTX1024 indica que la ventana de contexto se ha fijado en 1024 tokens, muy por debajo de los estandares actuales, lo que sugiere una orientacion a tareas de respuesta corta o a despliegue en dispositivos con memoria muy limitada. No consta ninguna innovacion adicional (atencion lineal, decodificacion especulativa, mixtura de expertos) en la informacion disponible.
 
@@ -65,10 +65,10 @@ Los valores de los modelos comparados son datos publicos de referencia y deben v
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oritek/MiniCPM5-2B-Cunxin_3_0-W4A16-CTX1024 | ~2B (segun nombre, no confirmado) | 1024 | Apache 2.0 | HuggingFace y ModelScope, 0 descargas |
-| MiniCPM-2B (modelo base de referencia) | ~2,4B | no disponible en esta ficha | Apache 2.0 (verificar) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 (referencia publica) | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 (referencia publica) | Apache 2.0 | HuggingFace |
+| oritek/MiniCPM5-2B-Cunxin_3_0-W4A16-CTX1024 | ~2B (segun nombre, no confirmado) | 1024 | Apache 2.0 | Hugging Face y ModelScope, 0 descargas |
+| MiniCPM-2B (modelo base de referencia) | ~2,4B | no disponible en esta ficha | Apache 2.0 (verificar) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 (referencia publica) | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 (referencia publica) | Apache 2.0 | Hugging Face |
 
 La diferencia mas relevante frente a las alternativas es la ventana de contexto: 1024 tokens limita el uso a tareas de contexto corto, mientras que las alternativas de tamano similar ofrecen ventanas de varios miles de tokens. A cambio, la cuantizacion W4A16 reduce el peso en disco a 2,1 GB.
 
@@ -81,13 +81,13 @@ La diferencia mas relevante frente a las alternativas es la ventana de contexto:
 - Riesgo de alucinacion: inherente a los modelos de ~2B y potencialmente amplificado por la cuantizacion a 4 bits; requiere validacion de salidas en produccion.
 - Sesgos: no documentados; al no conocerse la composicion del dataset de entrenamiento ni del ajuste, no es posible evaluar sesgos de genero, idioma o dominio.
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, pero conviene revisar la licencia del modelo base MiniCPM5-2B, ya que este repositorio solo es un derivado cuantizado y podrian aplicarse condiciones adicionales.
-- Repositorio sin traccion: 0 descargas y 0 likes en HuggingFace, actualizado por ultima vez el 25 de octubre de 2026; no hay evidencia de mantenimiento ni de soporte.
+- Repositorio sin traccion: 0 descargas y 0 likes en Hugging Face, actualizado por ultima vez el 25 de octubre de 2026; no hay evidencia de mantenimiento ni de soporte.
 - Procedencia del artefacto: al ser una cuantizacion de terceros, no existe garantia de que los pesos correspondan exactamente al modelo base declarado ni de que la calibracion de la cuantizacion sea correcta.
 - Formato de pesos no confirmado: la ausencia de esta informacion complica la integracion con backends de inferencia estandar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oritek/MiniCPM5-2B-Cunxin_3_0-W4A16-CTX1024
+- Hugging Face: https://huggingface.co/oritek/MiniCPM5-2B-Cunxin_3_0-W4A16-CTX1024
 - ModelScope (repositorio de origen citado en la model card): https://www.modelscope.cn/oritek/MiniCPM5-2B-Cunxin_3_0-W4A16-CTX1024
 - Documentacion de contribucion de modelos de ModelScope: https://modelscope.cn/docs/ModelScope%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88
 

@@ -80,7 +80,7 @@ No hay alternativas publicadas de la misma tarea exacta (politicas LoRA para rec
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Prospector (4B/2B/0.8B) | 0,8B-4B + LoRA | Agente con herramientas sobre grafos cientificos, respuestas verificables | Apache 2.0 | Pesos, datos y ejecuciones publicados |
-| Qwen/Qwen3.5-4B (base) | 4B | Modelo generalista sin post-entrenamiento para grafos | no disponible en la informacion proporcionada | Pesos publicados en HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4B | Modelo generalista sin post-entrenamiento para grafos | no disponible en la informacion proporcionada | Pesos publicados en Hugging Face |
 | Alternativas de razonamiento con grafos | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No hay alternativas publicadas de la misma tarea exacta (politicas LoRA para rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lamm-mit/Prospector
+- Modelo en Hugging Face: https://huggingface.co/lamm-mit/Prospector
 - Repositorio de codigo (servir, evaluar y entrenar): https://github.com/lamm-mit/Prospector
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: no disponible en la informacion proporcionada

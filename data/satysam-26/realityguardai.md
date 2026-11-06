@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RealityGuardAI es un motor de detección de deepfakes desarrollado por Satysam-26, diseñado para identificar artefactos visuales, anomalías de comportamiento y desincronización audiovisual en vídeos e imágenes generados por IA. El repositorio de HuggingFace aloja únicamente el componente de visión profunda del pipeline completo: una CNN ligera de clasificación binaria (real/falso) que opera en la etapa 7.3 del sistema multimodal. El modelo está pensado para ejecutarse en CPU, con un peso de aproximadamente 100 KB, lo que lo hace adecuado para dispositivos con recursos limitados.
+RealityGuardAI es un motor de detección de deepfakes desarrollado por Satysam-26, diseñado para identificar artefactos visuales, anomalías de comportamiento y desincronización audiovisual en vídeos e imágenes generados por IA. El repositorio de Hugging Face aloja únicamente el componente de visión profunda del pipeline completo: una CNN ligera de clasificación binaria (real/falso) que opera en la etapa 7.3 del sistema multimodal. El modelo está pensado para ejecutarse en CPU, con un peso de aproximadamente 100 KB, lo que lo hace adecuado para dispositivos con recursos limitados.
 
 La relevancia actual de este modelo radica en la creciente necesidad de herramientas de verificación de contenido ante la proliferación de vídeos e imágenes sintéticas. A diferencia de los grandes modelos transformer, esta CNN está optimizada para inferencia rápida en entornos de borde, aunque su alcance se limita a la detección de artefactos en recortes faciales, dependiendo de otros módulos del pipeline para una robustez completa. El proyecto se publica bajo licencia Apache 2.0 y cuenta con un DOI asociado en Zenodo.
 
@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Satysam-26/RealityGuardAI
+- Repositorio de Hugging Face: https://huggingface.co/Satysam-26/RealityGuardAI
 - Repositorio de GitHub del pipeline completo: https://github.com/Satyam-123336/DeepFake-Detection
 - DOI de Zenodo: https://doi.org/10.5281/zenodo.22282866

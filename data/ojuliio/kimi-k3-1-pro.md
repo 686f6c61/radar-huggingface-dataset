@@ -6,7 +6,7 @@ Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de tipo agéntico, di
 
 La arquitectura es un transformer de mezcla de expertos (MoE) con 2,8 billones de parámetros totales y 104.000 millones activos por token. Combina dos mecanismos de atención: 69 capas KDA (Kimi Delta Attention) y 24 capas Gated DSA (DeepSeek Sparse Attention), con una ventana de contexto declarada de un millón de tokens. El vocabulario es de 160.000 entradas y el modelo procesa tanto texto como imágenes, con pipeline `image-text-to-text`.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un modelo frontera de escala extrema con capacidades multimodales y agénticas. Por otro, conviene señalar que el repositorio de HuggingFace analizado (`ojuliio/Kimi-K3.1-Pro`) es una publicación de un tercero, no del organización oficial de Moonshot AI, con cero descargas y cero interacciones en el momento de la consulta. La model card incluida es un extracto parcial de la documentación oficial del modelo.
+La relevancia de esta ficha es doble. Por un lado, documenta un modelo frontera de escala extrema con capacidades multimodales y agénticas. Por otro, conviene señalar que el repositorio de Hugging Face analizado (`ojuliio/Kimi-K3.1-Pro`) es una publicación de un tercero, no del organización oficial de Moonshot AI, con cero descargas y cero interacciones en el momento de la consulta. La model card incluida es un extracto parcial de la documentación oficial del modelo.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace (`ojuliio/Kimi-K3.1-Pro`) no pertenece a la organización oficial de Moonshot AI; es una publicación de un tercero con cero descargas y cero interacciones. No hay garantía de que los pesos sean fieles al modelo original.
+- El repositorio de Hugging Face (`ojuliio/Kimi-K3.1-Pro`) no pertenece a la organización oficial de Moonshot AI; es una publicación de un tercero con cero descargas y cero interacciones. No hay garantía de que los pesos sean fieles al modelo original.
 - La model card incluida está truncada: el bloque de especificaciones se corta en "Context Length", por lo que parte de la información técnica puede faltar o estar incompleta.
 - La licencia `kimi-k3.1-pro` es una licencia propia (`license: other`); no se detallan en la información disponible las restricciones de uso comercial, redistribución ni atribución. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso en producción.
 - No se especifican los idiomas soportados, lo que impide evaluar su rendimiento en castellano u otras lenguas distintas del inglés.
@@ -100,8 +100,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ojuliio/Kimi-K3.1-Pro
-- Organización oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face: https://huggingface.co/ojuliio/Kimi-K3.1-Pro
+- Organización oficial en Hugging Face: https://huggingface.co/moonshotai
 - Página oficial de Moonshot AI: https://www.moonshot.ai
 - Chat de Kimi: https://www.kimi.ai
 - Blog técnico: https://www.kimi.ai/blog/kimi-k3-1-pro

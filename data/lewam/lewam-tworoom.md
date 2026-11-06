@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos de este checkpoint, por lo que la comparaci
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeWAM TwoRoom | Modelo de mundo latente con predicción de acción condicionada a objetivo | No disponible (repo de 0,1 GB) | No disponible | MIT | Checkpoint en HuggingFace, 0 descargas |
+| LeWAM TwoRoom | Modelo de mundo latente con predicción de acción condicionada a objetivo | No disponible (repo de 0,1 GB) | No disponible | MIT | Checkpoint en Hugging Face, 0 descargas |
 | DreamerV3 | Modelo de mundo latente con actor-crítico en espacio latente | No disponible | No aplica | MIT | Implementación pública de referencia |
 | TD-MPC2 | Modelo de mundo latente sin decodificador para planificación y control | No disponible | No aplica | MIT | Implementación pública de referencia |
 | DINO-WM | Modelo de mundo sobre características visuales preentrenadas | No disponible | No aplica | No disponible | Publicación y código asociados |
@@ -92,7 +92,7 @@ Las cifras de rendimiento de estas alternativas no forman parte de la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeWAM/lewam-tworoom
+- Modelo en Hugging Face: https://huggingface.co/LeWAM/lewam-tworoom
 - Dataset asociado: https://huggingface.co/datasets/LeWAM/lewam-tworoom
 - Perfil del autor: https://huggingface.co/LeWAM
 - Paper, blog o repositorio de código: no disponibles en la información proporcionada.

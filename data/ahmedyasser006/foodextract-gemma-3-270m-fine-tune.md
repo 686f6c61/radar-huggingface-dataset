@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FoodExtract-gemma-3-270m-fine-tune | 268M | no disponible | no disponible | HuggingFace |
-| gorem/FoodExtract-gemma-3-270m-fine-tune-v1 | 268M (probable) | no disponible | no disponible | HuggingFace |
-| asepnorzai/FoodExtract-gemma-3-270m-fine-tune-v1 | 268M (probable) | no disponible | no disponible | HuggingFace |
+| FoodExtract-gemma-3-270m-fine-tune | 268M | no disponible | no disponible | Hugging Face |
+| gorem/FoodExtract-gemma-3-270m-fine-tune-v1 | 268M (probable) | no disponible | no disponible | Hugging Face |
+| asepnorzai/FoodExtract-gemma-3-270m-fine-tune-v1 | 268M (probable) | no disponible | no disponible | Hugging Face |
 
 No hay información pública sobre diferencias de rendimiento o licencia entre estas versiones. Todas son fine-tunes del mismo modelo base, probablemente con variaciones en el dataset o hiperparámetros.
 
@@ -79,7 +79,7 @@ No hay información pública sobre diferencias de rendimiento o licencia entre e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ahmedyasser006/FoodExtract-gemma-3-270m-fine-tune)
+- [Modelo en Hugging Face](https://huggingface.co/ahmedyasser006/FoodExtract-gemma-3-270m-fine-tune)
 - [Modelo base google/gemma-3-270m-it](https://huggingface.co/google/gemma-3-270m-it)
 - [Variante gorem/FoodExtract-gemma-3-270m-fine-tune-v1](https://huggingface.co/gorem/FoodExtract-gemma-3-270m-fine-tune-v1)
 - [Variante asepnorzai/FoodExtract-gemma-3-270m-fine-tune-v1](https://huggingface.co/asepnorzai/FoodExtract-gemma-3-270m-fine-tune-v1)

@@ -76,7 +76,7 @@ No disponible. No se han publicado comparativas con otros checkpoints de inicial
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ananddey/gemma-4-E2B-asm-init
+- Repositorio Hugging Face: https://huggingface.co/ananddey/gemma-4-E2B-asm-init
 - Dataset AsmCorpus: https://huggingface.co/datasets/ananddey/asm-corpus
 - Script de entrenamiento (GitHub): https://github.com/ananddey05/assamese-dataset/blob/main/scripts/train_gemma_as.py
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

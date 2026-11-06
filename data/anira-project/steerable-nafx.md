@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye otros modelos de efectos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anira-project/steerable-nafx
+- Modelo en Hugging Face: https://huggingface.co/anira-project/steerable-nafx
 - Fork de origen de los pesos: https://github.com/faressc/steerable-nafx (commit `e495467`)
 - Repositorio original de Christian Steinmetz: https://github.com/csteinmetz1/steerable-nafx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e` no es un modelo de lenguaje entrenado, sino un archivo versionado de flota ("versioned fleet archive") publicado en HuggingFace. Su model card lo describe como un paquete de instantánea con receta canónica `evaluations/2026-09-26_b1k_all_existing_queue` y un nivel o "tier" compuesto por JSON de episodios, vídeos, trazas, logs, protocolo, scripts, entrada y recibo. No se declara arquitectura, número de parámetros, ventana de contexto ni pesos utilizables para inferencia.
+El repositorio `davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e` no es un modelo de lenguaje entrenado, sino un archivo versionado de flota ("versioned fleet archive") publicado en Hugging Face. Su model card lo describe como un paquete de instantánea con receta canónica `evaluations/2026-09-26_b1k_all_existing_queue` y un nivel o "tier" compuesto por JSON de episodios, vídeos, trazas, logs, protocolo, scripts, entrada y recibo. No se declara arquitectura, número de parámetros, ventana de contexto ni pesos utilizables para inferencia.
 
 El propósito declarado del paquete es la reproducibilidad: el autor indica que debe usarse la revisión exacta registrada y verificar el fichero `SHA256SUMS`, y advierte explícitamente de que se trata de una instantánea y no de un espejo de directorio vivo. Esto lo sitúa en la categoría de artefacto de auditoría o evaluación, no en la de modelo desplegable.
 
@@ -91,6 +91,6 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h12-30000-5e7bedba7a5e
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados obtenidos (Liquipedia, ggscore, esport.vision, escorenews) corresponden al torneo de Dota 2 "EPL World Series: Southeast Asia Season 18" y no tienen relación con este repositorio.
 - No se dispone de enlace a paper, blog técnico, repositorio de código ni demo asociados.

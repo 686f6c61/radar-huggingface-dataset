@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible (no h
 - GPU recomendadas: A100 (40/80 GB), H100 y L40S para entornos de servidor; RTX 4090 o RTX 3090 (24 GB) como estación de trabajo con margen holgado.
 - GPU de 16 GB (por ejemplo RTX 4080): técnicamente por encima del pico medido, pero con muy poco margen; cualquier proceso adicional en la misma GPU puede provocar OOM.
 - No cabe en GPUs de consumo de 8-12 GB (RTX 3060 12 GB, RTX 4070 12 GB) con esta configuración de tres modelos cargados.
-- Opciones de despliegue: paquete pip `nefes` instalado desde el repositorio de HuggingFace, interfaz CLI y API de Python. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un LLM ni de un modelo único.
+- Opciones de despliegue: paquete pip `nefes` instalado desde el repositorio de Hugging Face, interfaz CLI y API de Python. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, al no tratarse de un LLM ni de un modelo único.
 - Latencia y throughput: ~70 s de carga inicial y ~30 s por frase de 6 s, es decir, del orden de dos frases de 6 s por minuto por GPU (RTF ≈ 5). No es apto para streaming ni para interacción en tiempo real.
 - Primer arranque: requiere descargar los pesos de VoxCPM2, Whisper large-v3 y WavLM-SV, por lo que hay que prever espacio en disco y conectividad en el nodo de despliegue.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible (no h
 | Sistema | Tipo | Idiomas | Expresividad no verbal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Nefes 0.5 | Sistema compuesto training-free sobre VoxCPM2 + Whisper + WavLM | Turco | Risa, suspiro y susurro por etiqueta, con seis candidatos y reranking | Apache 2.0 | Pesos propios no incluidos (repo 0,0 GB); código vía pip `nefes` |
-| VoxCPM2 (openbmb) | Modelo de generación de voz | Turco (usado como base para continuar en turco) | No documentado en la información disponible | No disponible en la información proporcionada | Pesos abiertos en HuggingFace |
+| VoxCPM2 (openbmb) | Modelo de generación de voz | Turco (usado como base para continuar en turco) | No documentado en la información disponible | No disponible en la información proporcionada | Pesos abiertos en Hugging Face |
 | Maya1 | Modelo de voz expresiva | Inglés (según la model card, los modelos abiertos que ríen son solo en inglés) | Risa, suspiro y susurro; usado aquí para generar la voz y los 18 clips | No disponible en la información proporcionada | Usado como componente del pipeline |
 | Servicios de voz en la nube cerrados y de pago | API propietaria | Múltiples, incluido turco (no detallado) | Sí, según la model card | Propietaria, de pago | API en la nube |
 
@@ -108,7 +108,7 @@ No se dispone de parámetros, ventana de contexto ni cifras de rendimiento compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alicangunduz/nefes-0.5
+- Modelo en Hugging Face: https://huggingface.co/alicangunduz/nefes-0.5
 - Modelo base VoxCPM2: https://huggingface.co/openbmb/VoxCPM2
 - Vídeo explicativo (4:45, en turco, narrado por Nefes 0.5): https://youtu.be/7fFKtXG-cQs
 - Repositorio de Whisper: https://github.com/openai/whisper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kagworkfun/mostusedmodels` en HuggingFace no contiene información técnica publicada. La model card está vacía (solo incluye el frontmatter con `license: unknown`), no se especifica arquitectura, tamaño, idiomas ni caso de uso. El autor es `kagworkfun`, el modelo fue creado el 17 de agosto de 2026 y no registra descargas ni likes. No hay documentación adicional ni resultados de búsqueda web que aporten datos sobre este artefacto.
+El repositorio `kagworkfun/mostusedmodels` en Hugging Face no contiene información técnica publicada. La model card está vacía (solo incluye el frontmatter con `license: unknown`), no se especifica arquitectura, tamaño, idiomas ni caso de uso. El autor es `kagworkfun`, el modelo fue creado el 17 de agosto de 2026 y no registra descargas ni likes. No hay documentación adicional ni resultados de búsqueda web que aporten datos sobre este artefacto.
 
 Dado que no existe información verificable sobre el modelo, esta ficha se limita a documentar la ausencia de datos y a advertir sobre los riesgos de utilizar un repositorio sin especificaciones técnicas. Cualquier uso en producción requeriría contactar al autor o descargar los archivos para inspeccionarlos directamente.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocer la arquitectura ni el tamaño del modelo, no es pos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kagworkfun/mostusedmodels
+- Repositorio en Hugging Face: https://huggingface.co/kagworkfun/mostusedmodels

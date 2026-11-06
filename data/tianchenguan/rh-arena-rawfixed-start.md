@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RH-Arena rawfixed-start (este) | 30,5B / 3,3B | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-30B-A3B-Base | 30,5B / 3,3B | no disponible | Apache-2.0 | HuggingFace, modelo base upstream |
-| TianchenGuan/Qwen3-30B-A3B-midtrain-swe50-star50 | 30,5B / 3,3B | no disponible | no disponible | HuggingFace, checkpoint intermedio del linaje |
+| RH-Arena rawfixed-start (este) | 30,5B / 3,3B | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-30B-A3B-Base | 30,5B / 3,3B | no disponible | Apache-2.0 | Hugging Face, modelo base upstream |
+| TianchenGuan/Qwen3-30B-A3B-midtrain-swe50-star50 | 30,5B / 3,3B | no disponible | no disponible | Hugging Face, checkpoint intermedio del linaje |
 
 La comparación con alternativas de otro fabricante no está disponible en la información proporcionada. Frente a sus antecesores del linaje, este repositorio añade el SFT de receta abierta y se distribuye como artefacto de investigación con dos subcarpetas de checkpoint.
 
@@ -85,7 +85,7 @@ La comparación con alternativas de otro fabricante no está disponible en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TianchenGuan/rh-arena-rawfixed-start
+- Modelo en Hugging Face: https://huggingface.co/TianchenGuan/rh-arena-rawfixed-start
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
 - Checkpoint de mid-training: https://huggingface.co/TianchenGuan/Qwen3-30B-A3B-midtrain-swe50-star50
 - Repositorio del experimento: `rh-arena` en GitHub, ruta `experiments/raw_vs_fixed_training/` (URL completa no disponible en la información proporcionada)

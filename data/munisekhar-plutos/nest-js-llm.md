@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `munisekhar-plutos/nest-js-llm` está alojado en HuggingFace bajo el autor `munisekhar-plutos`. No se dispone de información pública sobre su arquitectura, tamaño, propósito o capacidades. La ficha de HuggingFace no incluye pipeline, licencia ni idiomas soportados. El repositorio tiene cero descargas y un solo "like", lo que sugiere que se trata de un proyecto incipiente o de carácter personal. Las búsquedas web asociadas al autor revelan actividad en torno a integraciones de pagos digitales (BBPS, NPCI) y desarrollo backend con NestJS, pero no aportan detalles técnicos sobre este modelo concreto. Por tanto, esta ficha se limita a constatar la ausencia de datos y a advertir sobre las dificultades de evaluación sin documentación adicional.
+El modelo `munisekhar-plutos/nest-js-llm` está alojado en Hugging Face bajo el autor `munisekhar-plutos`. No se dispone de información pública sobre su arquitectura, tamaño, propósito o capacidades. La ficha de Hugging Face no incluye pipeline, licencia ni idiomas soportados. El repositorio tiene cero descargas y un solo "like", lo que sugiere que se trata de un proyecto incipiente o de carácter personal. Las búsquedas web asociadas al autor revelan actividad en torno a integraciones de pagos digitales (BBPS, NPCI) y desarrollo backend con NestJS, pero no aportan detalles técnicos sobre este modelo concreto. Por tanto, esta ficha se limita a constatar la ausencia de datos y a advertir sobre las dificultades de evaluación sin documentación adicional.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `munisekhar-plutos/nest-js-llm` está alojado en HuggingFace bajo el a
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion. No es posible determinar si se trata de un transformer, un modelo de mezcla de expertos (MoE), un SSM o cualquier otra variante. Tampoco se conocen los detalles del dataset ni si se aplicaron metodos como RLHF o DPO. La ausencia de metadatos en HuggingFace (pipeline, licencia, idiomas) impide cualquier analisis tecnico fiable.
+No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion. No es posible determinar si se trata de un transformer, un modelo de mezcla de expertos (MoE), un SSM o cualquier otra variante. Tampoco se conocen los detalles del dataset ni si se aplicaron metodos como RLHF o DPO. La ausencia de metadatos en Hugging Face (pipeline, licencia, idiomas) impide cualquier analisis tecnico fiable.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No disponible. No se conocen modelos comparables al no existir especificaciones 
 
 ## Enlaces
 
-- [HuggingFace - munisekhar-plutos/nest-js-llm](https://huggingface.co/munisekhar-plutos/nest-js-llm)
+- [Hugging Face - munisekhar-plutos/nest-js-llm](https://huggingface.co/munisekhar-plutos/nest-js-llm)
 - [Perfil de LinkedIn del autor](https://www.linkedin.com/posts/munisekhar605_ai-bbps-npci-activity-7424789208961261568-NIpu)
 - [Repositorio CROP-AI-UI del autor](https://github.com/munisekhar-plutos/CROP-AI-UI/blob/main/README.md)
 - [Publicacion de LinkedIn sobre arquitectura de pagos](https://www.linkedin.com/posts/munisekhar605_i-am-an-ai-agent-proudly-created-by-munisekhar-activity-7457317884860502016-LW0t)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hindi-llm-340m-instruct-GGUF es la version cuantizada en formato GGUF del modelo srivassid/hindi-llm-340m-instruct, un modelo de lenguaje de tipo Llama afinado para instrucciones y especializado en hindi. Lo publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace que distribuye versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo resuelve el problema de disponer de un LLM ligero y ejecutable en hardware modesto para tareas de generacion de texto e instrucciones en hindi.
+hindi-llm-340m-instruct-GGUF es la version cuantizada en formato GGUF del modelo srivassid/hindi-llm-340m-instruct, un modelo de lenguaje de tipo Llama afinado para instrucciones y especializado en hindi. Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo resuelve el problema de disponer de un LLM ligero y ejecutable en hardware modesto para tareas de generacion de texto e instrucciones en hindi.
 
 Con 337.173.504 parametros (aproximadamente 340M), se situa en la gama de modelos pequenos, lo que permite su despliegue en CPU y en GPUs de consumo con requisitos de memoria muy reducidos. El modelo base fue entrenado sobre los datasets ai4bharat/sangraha y ai4bharat/indic-instruct-data-v0.1, lo que lo orienta al ecosistema linguistico indic. La licencia Apache 2.0 facilita su uso comercial y su integracion en productos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/hindi-llm-340m-instruct-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/hindi-llm-340m-instruct-GGUF
 - Modelo base: https://huggingface.co/srivassid/hindi-llm-340m-instruct
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#hindi-llm-340m-instruct-GGUF
 - Dataset ai4bharat/sangraha: https://huggingface.co/datasets/ai4bharat/sangraha

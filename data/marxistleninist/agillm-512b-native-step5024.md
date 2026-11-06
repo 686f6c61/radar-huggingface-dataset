@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGILLM-512B-native-step5024 es un checkpoint nativo de un modelo de lenguaje de gran escala (la nomenclatura indica 512B parámetros) publicado en HuggingFace por el usuario MarxistLeninist. No se trata de un modelo listo para inferencia, sino de una copia de seguridad archivística de un estado de entrenamiento en curso: el repositorio contiene pesos en magnitudes latentes int8, estado del optimizador, estado del RNG, código fuente exacto, lanzador y modificaciones en caliente ("hotmods"). El autor lo describe explícitamente como una copia de archivo pública autorizada por el propietario, no como un endoso de calidad ni una autorización para reanudar el entrenamiento.
+AGILLM-512B-native-step5024 es un checkpoint nativo de un modelo de lenguaje de gran escala (la nomenclatura indica 512B parámetros) publicado en Hugging Face por el usuario MarxistLeninist. No se trata de un modelo listo para inferencia, sino de una copia de seguridad archivística de un estado de entrenamiento en curso: el repositorio contiene pesos en magnitudes latentes int8, estado del optimizador, estado del RNG, código fuente exacto, lanzador y modificaciones en caliente ("hotmods"). El autor lo describe explícitamente como una copia de archivo pública autorizada por el propietario, no como un endoso de calidad ni una autorización para reanudar el entrenamiento.
 
 El checkpoint se guardó el 1 de noviembre de 2026 a las 13:41:48 UTC, tras un "loss guard", y el autor mantiene una instrucción explícita de preservar el estado de HOLD. Según la model card, existe una regresión de pérdida y un cableado de frenado automático ineficaz que requieren diagnóstico independiente antes de cualquier reanudación. La integridad del archivo está gestionada mediante un manifest.json que mapea fragmentos comprimidos individualmente con zlib a rutas relativas originales del workspace, con hashes SHA256 comprimidos y en crudo; el backup se considera incompleto hasta que exista ARCHIVE_COMPLETE.json.
 
@@ -75,4 +75,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarxistLeninist/AGILLM-512B-native-step5024
+- Hugging Face: https://huggingface.co/MarxistLeninist/AGILLM-512B-native-step5024

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B es un modelo de lenguaje denso de la familia Qwen3, desarrollado por Alibaba y liberado bajo licencia Apache 2.0. El repositorio `Hookem22/qwen3-1.7b-subtitle-es` contiene un fine-tuning de este modelo realizado por el usuario Hookem22, entrenado con las librerías Unsloth y TRL de HuggingFace. Aunque el nombre del repositorio sugiere un uso orientado a subtítulos en español, la model card declara el inglés como idioma soportado, por lo que el alcance lingüístico real no queda confirmado por los metadatos.
+Qwen3-1.7B es un modelo de lenguaje denso de la familia Qwen3, desarrollado por Alibaba y liberado bajo licencia Apache 2.0. El repositorio `Hookem22/qwen3-1.7b-subtitle-es` contiene un fine-tuning de este modelo realizado por el usuario Hookem22, entrenado con las librerías Unsloth y TRL de Hugging Face. Aunque el nombre del repositorio sugiere un uso orientado a subtítulos en español, la model card declara el inglés como idioma soportado, por lo que el alcance lingüístico real no queda confirmado por los metadatos.
 
 El modelo base Qwen3-1.7B es una arquitectura transformer densa de 1.720 millones de parámetros, con una longitud de contexto de 32.000 tokens. Qwen3 introduce un modo de pensamiento (thinking mode) y un modo de no pensamiento, unificados en un mismo modelo, lo que permite alternar entre razonamiento profundo y respuestas rápidas. Este fine-tune conserva esas capacidades del modelo base, aunque no se han publicado detalles sobre el dataset de entrenamiento ni las técnicas de ajuste específicas empleadas.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1,72B | 32K | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B (base) | 0,6B | 32K | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | 32K | Apache 2.0 | HuggingFace |
-| Hookem22/qwen3-1.7b-subtitle-es | 1,72B | 32K (heredado) | Apache 2.0 | HuggingFace |
+| Qwen3-1.7B (base) | 1,72B | 32K | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B (base) | 0,6B | 32K | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | 32K | Apache 2.0 | Hugging Face |
+| Hookem22/qwen3-1.7b-subtitle-es | 1,72B | 32K (heredado) | Apache 2.0 | Hugging Face |
 
 El fine-tune mantiene la misma arquitectura y tamaño que el modelo base, pero añade un ajuste específico que puede alterar su comportamiento en la tarea de subtítulos. No se dispone de datos de rendimiento que permitan una comparación cuantitativa con los modelos base de la familia Qwen3.
 

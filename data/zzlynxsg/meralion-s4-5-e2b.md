@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MERaLiON-S4.5-E2B | 2,3B efectivos / 5,1B con embeddings | no disponible | imagen, audio, vídeo → texto | research-only | HuggingFace (zzlynxSG) |
-| MERaLiON-G4-E4B | 4,5B efectivos / 8B con embeddings | no disponible | imagen, audio, vídeo → texto | research-only en los pesos post-entrenados; base Apache-2.0 | HuggingFace (zzlynxSG) |
-| aisingapore/Gemma-SEA-LION-v4.5-E2B-IT (base) | 2,3B efectivos / 5,1B con embeddings | no disponible | según modelo base (no detallado aquí) | MIT | HuggingFace (AI Singapore) |
+| MERaLiON-S4.5-E2B | 2,3B efectivos / 5,1B con embeddings | no disponible | imagen, audio, vídeo → texto | research-only | Hugging Face (zzlynxSG) |
+| MERaLiON-G4-E4B | 4,5B efectivos / 8B con embeddings | no disponible | imagen, audio, vídeo → texto | research-only en los pesos post-entrenados; base Apache-2.0 | Hugging Face (zzlynxSG) |
+| aisingapore/Gemma-SEA-LION-v4.5-E2B-IT (base) | 2,3B efectivos / 5,1B con embeddings | no disponible | según modelo base (no detallado aquí) | MIT | Hugging Face (AI Singapore) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. Como alternativas de la misma categoría (modelos multimodales pequeños con audio y visión) podrían considerarse otros modelos any-to-any del ecosistema abierto, pero no se aportan cifras que permitan una comparación rigurosa.
 
@@ -88,9 +88,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzlynxSG/MERaLiON-S4.5-E2B
+- Modelo en Hugging Face: https://huggingface.co/zzlynxSG/MERaLiON-S4.5-E2B
 - Modelo base: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT
 - Modelo hermano MERaLiON-G4-E4B: https://huggingface.co/zzlynxSG/MERaLiON-G4-E4B
 - Licencia del modelo: https://huggingface.co/zzlynxSG/MERaLiON-S4.5-E2B/blob/main/LICENSE
 - Referencia arXiv citada en las etiquetas del repositorio: arXiv:2602.23730 (no se dispone de la URL directa en la información proporcionada)
-- Repositorio de código: el script `inference.py` se distribuye dentro del propio repositorio de HuggingFace; no se han encontrado otros repositorios, papers, blogs o demos en la búsqueda web disponible.
+- Repositorio de código: el script `inference.py` se distribuye dentro del propio repositorio de Hugging Face; no se han encontrado otros repositorios, papers, blogs o demos en la búsqueda web disponible.

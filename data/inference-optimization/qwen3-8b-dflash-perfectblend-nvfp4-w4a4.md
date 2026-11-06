@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4 (este) | Drafter DFlash cuantizado | 1,18 mil millones (safetensors) | NVFP4 W4A4, calibracion PerfectBlend | No disponible | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| RedHatAI/Qwen3-8B-speculator.dflash | Drafter DFlash fuente, sin cuantizar | No disponible | No especificada | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-8B | Modelo objetivo de proposito general | 8B por denominacion (no confirmado en la informacion disponible) | Multiples formatos | No disponible en la informacion proporcionada | Consultar la model card del objetivo | HuggingFace |
+| Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4 (este) | Drafter DFlash cuantizado | 1,18 mil millones (safetensors) | NVFP4 W4A4, calibracion PerfectBlend | No disponible | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| RedHatAI/Qwen3-8B-speculator.dflash | Drafter DFlash fuente, sin cuantizar | No disponible | No especificada | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-8B | Modelo objetivo de proposito general | 8B por denominacion (no confirmado en la informacion disponible) | Multiples formatos | No disponible en la informacion proporcionada | Consultar la model card del objetivo | Hugging Face |
 | Qwen3-8B sin decodificacion especulativa | Linea base de decodificacion autoregresiva | 8B por denominacion | Segun despliegue | No disponible | Consultar la model card del objetivo | No aplica |
 
 No hay datos de rendimiento comparativo (tasa de aceptacion, tokens por segundo, latencia) para ninguna de estas opciones en la informacion disponible. Otros drafters del ecosistema `speculators` (por ejemplo variantes tipo Eagle3 o Medusa) podrian ser alternativas, pero no se dispone de sus especificaciones ni de resultados en esta informacion.
@@ -97,7 +97,7 @@ No hay datos de rendimiento comparativo (tasa de aceptacion, tokens por segundo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-PerfectBlend-NVFP4-W4A4
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-8B
 - Drafter fuente: https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash
 - Artefactos internos del repositorio: `config.py`, `quant_run_manifest.json`, `calibration_manifest.json` y el directorio `provenance/` (incluye `provenance/evaluation/`)

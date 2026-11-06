@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [HuggingFace - Ryan911/nlp-toolkit-summarization-qlora](https://huggingface.co/Ryan911/nlp-toolkit-summarization-qlora)
+- [Hugging Face - Ryan911/nlp-toolkit-summarization-qlora](https://huggingface.co/Ryan911/nlp-toolkit-summarization-qlora)
 - [Modelo base Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [NLP Toolkit (Gradio App) - GitHub](https://github.com/links-astec/nlp-toolkit-gradio) (posible relación por el nombre, no confirmada)

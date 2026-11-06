@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heretic-Spark-X2.5-1.7B-GGUF es un repositorio de pesos cuantizados en formato GGUF del modelo Spark-X2.5 1.7B, publicado por el usuario OpenIntelligenceNet en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una distribucion de cuantizaciones (FP16 y Q4_K_M) de una arquitectura de ~1.700 millones de parametros que el autor describe como "uncensored", es decir, sin las restricciones de alineacion habituales, orientada a respuestas directas en consultas creativas, de razonamiento y de rol conversacional.
+Heretic-Spark-X2.5-1.7B-GGUF es un repositorio de pesos cuantizados en formato GGUF del modelo Spark-X2.5 1.7B, publicado por el usuario OpenIntelligenceNet en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una distribucion de cuantizaciones (FP16 y Q4_K_M) de una arquitectura de ~1.700 millones de parametros que el autor describe como "uncensored", es decir, sin las restricciones de alineacion habituales, orientada a respuestas directas en consultas creativas, de razonamiento y de rol conversacional.
 
 El repositorio tiene un tamano de 4,5 GB e incluye dos ficheros: una version sin comprimir en precision de 16 bits y una cuantizacion de 4 bits calibrada con una Importance Matrix (imatrix) propia, generada a partir de mas de 2,14 millones de tokens de trazas de razonamiento profundo, matematicas avanzadas, logica de instrucciones sin censura y roleplay conversacional. Esa calibracion es el principal argumento tecnico del autor para justificar la fidelidad de la version de 4 bits.
 
@@ -21,7 +21,7 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo de 1,7B 
 | Licencia | no disponible |
 | Formato de pesos | GGUF (dos ficheros: `Spark-1.7B-F16.gguf` y `Spark-1.7B-Q4_K_M-Imatrix.gguf`) |
 | Tamano del repositorio | 4,5 GB |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ La diferencia principal frente a las alternativas no es de rendimiento, sino de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenIntelligenceNet/Heretic-Spark-X2.5-1.7B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/OpenIntelligenceNet/Heretic-Spark-X2.5-1.7B-GGUF
 - Ficheros del repositorio: `Spark-1.7B-F16.gguf` y `Spark-1.7B-Q4_K_M-Imatrix.gguf` (disponibles en la pestana "Files" del repositorio)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Modelo base Spark-X2.5 1.7B: no disponible (no se enlaza en la model card)

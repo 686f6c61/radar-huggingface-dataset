@@ -19,7 +19,7 @@ Tecnicamente es un transformer encoder de 3 capas con condicionamiento AdaLN sob
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo no linguistico; opera sobre representaciones de Wyckoff) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (libreria `wyckoff-transformer`; repo de 0.0 GB en HuggingFace) |
+| Formato de pesos | no disponible (libreria `wyckoff-transformer`; repo de 0.0 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el repo de HuggingFace ocupa 0,0 GB y no se publican recuentos de parametros, por lo que no puede estimarse con rigor.
+- VRAM estimada para inferencia: no disponible; el repo de Hugging Face ocupa 0,0 GB y no se publican recuentos de parametros, por lo que no puede estimarse con rigor.
 - GPU recomendadas: no disponible en la informacion proporcionada. Por el tamano aparentemente reducido (encoder de 3 capas) es plausible que quepa en GPU de consumo, pero no se confirma en la documentacion.
 - Compatibilidad con GPU de consumo: no confirmada.
 - Opciones de despliegue: la via documentada es la CLI del paquete `wyckoff-transformer` (`pip install wyckoff-transformer`, comando `wyformer-generate`). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a este tipo de modelo.
@@ -83,8 +83,8 @@ No se dispone de datos de otros modelos generativos de estructuras cristalinas c
 
 | Modelo | Funcion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WyFormer-LeMat-Ehull | Generacion condicionada por e_hull | no disponible | no disponible | Apache 2.0 | HuggingFace + CLI `wyckoff-transformer` |
-| WyFormer-LeMat-Energy | Ranking/prediccion energetica de candidatos | no disponible | no disponible | no disponible | HuggingFace |
+| WyFormer-LeMat-Ehull | Generacion condicionada por e_hull | no disponible | no disponible | Apache 2.0 | Hugging Face + CLI `wyckoff-transformer` |
+| WyFormer-LeMat-Energy | Ranking/prediccion energetica de candidatos | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas generativas de estructuras cristalinas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos generativos de estructuras cristalinas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat-Ehull
+- Modelo en Hugging Face: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat-Ehull
 - Modelo auxiliar de ranking: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat-Energy
 - Repositorio del proyecto (instrucciones de inferencia y relajacion con MLIP): https://github.com/SymmetryAdvantage/WyckoffTransformer
 - Seccion de inferencia del README: https://github.com/SymmetryAdvantage/WyckoffTransformer#inference

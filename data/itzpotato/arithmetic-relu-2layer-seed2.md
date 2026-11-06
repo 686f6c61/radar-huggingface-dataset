@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento de los otros modelos de la familia (varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed2
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed2
 - Perfil del autor: https://huggingface.co/itzPotato/models
 - Otros modelos del autor (referencia): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMEMFOFm-flow-tartan | MEMFOF (multi-fotograma) | 3 fotogramas | Flujo forward y backward del fotograma central | BSD 3-Clause | HuggingFace (LibreYOLO) |
-| egorchistov/optical-flow-MEMFOF-Tartan | MEMFOF (multi-fotograma) | 3 fotogramas | Flujo forward y backward del fotograma central | BSD 3-Clause (heredada) | HuggingFace |
+| LibreMEMFOFm-flow-tartan | MEMFOF (multi-fotograma) | 3 fotogramas | Flujo forward y backward del fotograma central | BSD 3-Clause | Hugging Face (LibreYOLO) |
+| egorchistov/optical-flow-MEMFOF-Tartan | MEMFOF (multi-fotograma) | 3 fotogramas | Flujo forward y backward del fotograma central | BSD 3-Clause (heredada) | Hugging Face |
 | Otros estimadores de flujo óptico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo con otros estimadores de flujo óptico en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo con otros estimadores de flujo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-tartan
+- Hugging Face del modelo: https://huggingface.co/LibreYOLO/LibreMEMFOFm-flow-tartan
 - Modelo base original: https://huggingface.co/egorchistov/optical-flow-MEMFOF-Tartan
 - Repositorio de código original: https://github.com/msu-video-group/memfof
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

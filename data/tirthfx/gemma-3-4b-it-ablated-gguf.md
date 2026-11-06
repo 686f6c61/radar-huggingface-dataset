@@ -106,7 +106,7 @@ Los datos de Qwen3-4B y Llama-3.2-3B-Instruct proceden de sus model cards public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tirthfx/gemma-3-4b-it-ablated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tirthfx/gemma-3-4b-it-ablated-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Paper del metodo (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
 - Repositorio del estudio de red-teaming: https://github.com/tirthfx/gemma-jailbreak-redteam

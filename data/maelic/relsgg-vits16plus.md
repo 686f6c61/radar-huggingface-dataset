@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relsgg-vits16plus es un modelo de generacion de grafos de escena (scene graph generation) en vocabulario abierto desarrollado por el usuario maelic, publicado en HuggingFace bajo la libreria `relsgg` y presentado como parte del proyecto RelateAnything. No es un modelo de lenguaje: recibe una imagen junto con regiones (cajas en formato xyxy o mascaras binarias) procedentes de cualquier fuente —un detector, un segmentador o una anotacion manual— y devuelve un ranking de relaciones sobre un vocabulario de predicados que se suministra en el momento de la inferencia. Las etiquetas de clase de objeto nunca se usan como entrada, lo que desacopla por completo la propuesta de regiones de la prediccion de relaciones.
+relsgg-vits16plus es un modelo de generacion de grafos de escena (scene graph generation) en vocabulario abierto desarrollado por el usuario maelic, publicado en Hugging Face bajo la libreria `relsgg` y presentado como parte del proyecto RelateAnything. No es un modelo de lenguaje: recibe una imagen junto con regiones (cajas en formato xyxy o mascaras binarias) procedentes de cualquier fuente —un detector, un segmentador o una anotacion manual— y devuelve un ranking de relaciones sobre un vocabulario de predicados que se suministra en el momento de la inferencia. Las etiquetas de clase de objeto nunca se usan como entrada, lo que desacopla por completo la propuesta de regiones de la prediccion de relaciones.
 
 El modelo se construye sobre el backbone de vision facebook/dinov3-vits16plus-pretrain-lvd1689m y anade un estudiante de texto que codifica el vocabulario de predicados una sola vez; despues, la cabeza se reparametriza sobre ese vocabulario y el scoring pasa a ser exclusivamente visual. Esto permite cambiar el conjunto de predicados sin reentrenar: basta con llamar a `set_vocabulary` con cadenas arbitrarias. Ademas, en un unico forward pass puede devolver dos grafos descompuestos (espacial y semantico) mediante `decompose=True`.
 
@@ -121,7 +121,7 @@ No se han proporcionado resultados de benchmarks de modelos alternativos en la i
 
 | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| relsgg-vits16plus (este modelo) | no disponible | no aplica | F1@50 0,3685 en VG150 test (graph-constrained) | dinov3-license | HuggingFace, ONNX y PyTorch |
+| relsgg-vits16plus (este modelo) | no disponible | no aplica | F1@50 0,3685 en VG150 test (graph-constrained) | dinov3-license | Hugging Face, ONNX y PyTorch |
 | Metodos clasicos de SGG con vocabulario cerrado (p. ej. Motifs, VCTree, RelTR) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Metodos de SGG en vocabulario abierto | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Modelos multimodales generativos usados como baseline de relaciones | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -142,7 +142,7 @@ No se han proporcionado resultados de benchmarks de modelos alternativos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maelic/relsgg-vits16plus
+- Modelo en Hugging Face: https://huggingface.co/maelic/relsgg-vits16plus
 - Repositorio de codigo RelateAnything: https://github.com/Maelic/RelateAnything
 - Paper RelateAnything: https://arxiv.org/abs/2609.12552
 - Dataset RA-4M: https://huggingface.co/datasets/maelic/RA-4M

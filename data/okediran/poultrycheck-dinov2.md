@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poultrycheck-dinov2 es un modelo publicado en HuggingFace por el usuario okediran bajo el identificador `okediran/poultrycheck-dinov2`. Por el nombre se deduce que se trata de un ajuste (fine-tuning) del modelo DINOv2, un extractor de características visuales auto-supervisado desarrollado originalmente por Meta AI, orientado a una tarea de inspección o clasificación en el ámbito avícola ("poultry check"). No obstante, la informacion disponible en la ficha de HuggingFace es minima: no se especifica el pipeline, la licencia, los idiomas ni la arquitectura concreta.
+poultrycheck-dinov2 es un modelo publicado en Hugging Face por el usuario okediran bajo el identificador `okediran/poultrycheck-dinov2`. Por el nombre se deduce que se trata de un ajuste (fine-tuning) del modelo DINOv2, un extractor de características visuales auto-supervisado desarrollado originalmente por Meta AI, orientado a una tarea de inspección o clasificación en el ámbito avícola ("poultry check"). No obstante, la informacion disponible en la ficha de Hugging Face es minima: no se especifica el pipeline, la licencia, los idiomas ni la arquitectura concreta.
 
 El modelo no cuenta con descargas registradas (0 descargas) y solo 1 like en el momento de la consulta, lo que indica que es un artefacto de investigacion o un experimento personal sin difusion publica relevante. Fue creado y actualizado el 4 de noviembre de 2026, sin que se haya publicado documentacion adicional, model card detallada ni resultados de evaluacion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| okediran/poultrycheck-dinov2 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
-| DINOv2 (Meta AI) | 21M–1.1B (segun variante) | no aplica | Apache 2.0 (variantes publicas) | HuggingFace / GitHub |
-| CLIP (OpenAI) | ~150M–400M | 77 tokens de texto | MIT (variantes) | HuggingFace / GitHub |
-| SigLIP (Google) | ~90M–900M | no aplica | Apache 2.0 | HuggingFace |
+| okediran/poultrycheck-dinov2 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
+| DINOv2 (Meta AI) | 21M–1.1B (segun variante) | no aplica | Apache 2.0 (variantes publicas) | Hugging Face / GitHub |
+| CLIP (OpenAI) | ~150M–400M | 77 tokens de texto | MIT (variantes) | Hugging Face / GitHub |
+| SigLIP (Google) | ~90M–900M | no aplica | Apache 2.0 | Hugging Face |
 
 La comparativa se ofrece a titulo orientativo: no hay datos publicados sobre `poultrycheck-dinov2` que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -82,6 +82,6 @@ La comparativa se ofrece a titulo orientativo: no hay datos publicados sobre `po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/okediran/poultrycheck-dinov2
+- Hugging Face: https://huggingface.co/okediran/poultrycheck-dinov2
 - DINOv2 (paper original de Meta AI): https://arxiv.org/abs/2304.07193
 - DINOv2 (repositorio oficial): https://github.com/facebookresearch/dinov2

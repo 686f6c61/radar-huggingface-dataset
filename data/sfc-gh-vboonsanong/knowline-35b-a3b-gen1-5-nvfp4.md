@@ -4,7 +4,7 @@
 
 KnowLine-35B-A3B-Gen1.5-NVFP4 es una cuantizacion en formato NVFP4 (punto flotante de 4 bits con escalado por bloques, tecnologia de NVIDIA via ModelOpt) del modelo PelaAI/KnowLine-35B-A3B-Gen1.5, un modelo de arquitectura MoE (Mixture of Experts) de la familia Qwen3.5. El prefijo "35B-A3B" indica 35 mil millones de parametros totales con aproximadamente 3 mil millones activos por token, un diseno que busca equilibrar calidad de inferencia con coste computacional reducido.
 
-La publicacion corre a cargo del usuario sfc-gh-vboonsanong, que actua como distribuidor de la cuantizacion y no como autor del modelo original. El repositorio esta marcado como gated: requiere aceptar condiciones en HuggingFace antes de la descarga. La licencia declarada es Apache 2.0, heredada del modelo base.
+La publicacion corre a cargo del usuario sfc-gh-vboonsanong, que actua como distribuidor de la cuantizacion y no como autor del modelo original. El repositorio esta marcado como gated: requiere aceptar condiciones en Hugging Face antes de la descarga. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 El interes practico de esta ficha reside en el formato NVFP4, pensado para maximizar el rendimiento en GPUs NVIDIA Blackwell (serie B200/GB200 y posteriores) con soporte nativo de FP4, reduciendo el peso del modelo a 23,6 GB. No obstante, los metadatos publicos son escasos y no incluyen informacion sobre datos de entrenamiento, benchmarks ni idiomas soportados.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo que permitan una evaluacion cu
 
 ## Limitaciones y advertencias
 
-- Repositorio gated: requiere aceptar condiciones en HuggingFace; no es de descarga libre sin autenticacion.
+- Repositorio gated: requiere aceptar condiciones en Hugging Face; no es de descarga libre sin autenticacion.
 - Discrepancia de parametros: el nombre indica 35B pero safetensors reporta 18,3B; conviene verificar la configuracion real antes de planificar despliegues.
 - Cuantizacion agresiva: NVFP4 puede degradar calidad en tareas sensibles (matematicas, codigo, razonamiento largo); no hay benchmarks publicados que cuantifiquen la perdida.
 - Dependencia de hardware NVIDIA: el formato NVFP4 no es portable a GPUs AMD, Apple Silicon ni CPU; limita el despliegue a ecosistema NVIDIA Blackwell o conversiones manuales.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo que permitan una evaluacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sfc-gh-vboonsanong/knowline-35b-a3b-gen1.5-nvfp4
+- Hugging Face: https://huggingface.co/sfc-gh-vboonsanong/knowline-35b-a3b-gen1.5-nvfp4
 - Modelo base: https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5
 - NVIDIA ModelOpt (herramienta de cuantizacion): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Documentacion NVFP4: https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/

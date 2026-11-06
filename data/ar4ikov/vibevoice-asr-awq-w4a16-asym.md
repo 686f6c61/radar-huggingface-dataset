@@ -94,13 +94,13 @@ La model card no proporciona comparaciones con alternativas de la misma categor�
 - El despliegue en vLLM no se probó para esta release, pese a que el formato AWQ GEMM esté pensado para ser compatible.
 - Riesgo de alucinación inherente a los modelos de ASR generativos, especialmente con audio ruidoso, solapamiento de hablantes o dominios no vistos; no se documentan tasas de inserción de contenido inexistente.
 - Sesgos del modelo base (acentos, variedades dialectales, género de la voz) no documentados en esta model card.
-- Licencia MIT, heredada del modelo base, sin restricciones de uso comercial indicadas. El repositorio no incluye ficheros de calibración de audio ni credenciales de HuggingFace.
+- Licencia MIT, heredada del modelo base, sin restricciones de uso comercial indicadas. El repositorio no incluye ficheros de calibración de audio ni credenciales de Hugging Face.
 - Adopción prácticamente nula (0 descargas, 1 like en el momento de los datos), por lo que no existe validación independiente de la comunidad.
 - El prompt canónico exige un formato muy concreto (marcadores de audio repetidos `ceil(audio_samples/3200)` veces y ausencia de prompt de generación de asistente); desviarse de él puede degradar la salida.
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM
+- Página de Hugging Face del modelo: https://huggingface.co/Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR
 - Ficheros incluidos en el repositorio: `recipe.yaml` (receta de compresión), directorio `reproduce/` (scripts de preparación, cuantización, repaquetado AWQ y verificación), `evaluation.json`, `compression_report.json`, `quantization_environment.json`
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces obtenidos correspondían a páginas de ayuda de Windows y no guardan relación con el contenido de esta ficha. No se dispone de paper, blog, repositorio adicional ni demo públicos distintos de los enlaces anteriores.

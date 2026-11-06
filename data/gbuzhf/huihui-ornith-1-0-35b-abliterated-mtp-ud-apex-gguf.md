@@ -75,6 +75,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbuzhf/Huihui-Ornith-1.0-35B-abliterated-MTP-UD-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/gbuzhf/Huihui-Ornith-1.0-35B-abliterated-MTP-UD-APEX-GGUF
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.0-35B-abliterated-GGUF
 - Build hermano sin abliterar: https://huggingface.co/gbuzhf/Ornith-1.0-35B-MTP-UD-APEX-GGUF

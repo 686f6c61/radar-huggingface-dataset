@@ -120,7 +120,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HelloSun/animemixv10_lcm-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/HelloSun/animemixv10_lcm-OpenVINO-INT4
 - Modelo base: https://huggingface.co/sca255/animemixv10_lcm
 - Listado de modelos afinados a partir del base: https://huggingface.co/models?other=base_model:finetune:sca255/animemixv10_lcm
 - Script de inferencia incluido en el repositorio: `inference_int4.py` (https://huggingface.co/HelloSun/animemixv10_lcm-OpenVINO-INT4/blob/main/inference_int4.py)

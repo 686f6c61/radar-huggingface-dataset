@@ -80,8 +80,8 @@ Nota: la comparativa se basa en modelos de tamano similar disponibles en el ecos
 
 ## Enlaces
 
-- Repo HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-i1-GGUF
-- Repo HuggingFace (quants estaticos): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-GGUF
+- Repo Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-i1-GGUF
+- Repo Hugging Face (quants estaticos): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-GGUF
 - Modelo base (fine-tune): https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2
 - Documentacion de Liquid AI sobre LFM2.5-1.2B-Thinking: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking
 - Blog de Liquid AI sobre el modelo: https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb

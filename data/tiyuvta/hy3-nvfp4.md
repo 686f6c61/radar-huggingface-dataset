@@ -71,8 +71,8 @@ En cuanto a rendimiento, el reporte de NVIDIA Developer Forums indica 21.8 token
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tencent Hy3 (BF16) | 295B MoE (21B activos) | 128k | BF16 | Apache 2.0 | HuggingFace |
-| Hy3-NVFP4 (este) | 153.8B almacenados | 128k | NVFP4/BF16 | Apache 2.0 | HuggingFace |
+| Tencent Hy3 (BF16) | 295B MoE (21B activos) | 128k | BF16 | Apache 2.0 | Hugging Face |
+| Hy3-NVFP4 (este) | 153.8B almacenados | 128k | NVFP4/BF16 | Apache 2.0 | Hugging Face |
 | Hy3 FP8 (oficial Tencent) | 295B | 128k | FP8 | Apache 2.0 | no disponible en la informacion |
 
 La comparativa directa con otros modelos de la misma categoria (MoE de ~300B con 21B activos) no esta disponible en la informacion proporcionada. La ventaja principal de esta cuantizacion frente al BF16 original es la reduccion de VRAM y el aumento de throughput en hardware Blackwell, a costa de una pequena perdida de precision (RMSE 0.058).
@@ -89,7 +89,7 @@ La comparativa directa con otros modelos de la misma categoria (MoE de ~300B con
 
 ## Enlaces
 
-- [Repositorio HuggingFace: tiyuvta/Hy3-NVFP4](https://huggingface.co/tiyuvta/Hy3-NVFP4)
+- [Repositorio Hugging Face: tiyuvta/Hy3-NVFP4](https://huggingface.co/tiyuvta/Hy3-NVFP4)
 - [Modelo base: tencent/Hy3](https://huggingface.co/tencent/Hy3)
 - [Repositorio GitHub de Hy3 (Tencent)](https://github.com/Tencent-Hunyuan/Hy3)
 - [Repositorio GitHub de Memra](https://github.com/avifenesh/memra)

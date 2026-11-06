@@ -69,5 +69,5 @@ No se dispone de modelos comparables en el contexto de adaptadores LoRA para con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v1
+- Repositorio Hugging Face: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v1
 - Modelo base: Qwen/Qwen3-1.7B (sin enlace directo proporcionado)

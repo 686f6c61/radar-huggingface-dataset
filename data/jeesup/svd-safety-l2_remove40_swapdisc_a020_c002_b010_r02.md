@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02 | 6,74 mil millones | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,1558; StrongREJECT ASR 0,1470; over-refusal 0,1206 | HuggingFace (0 descargas, 0 likes) |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens | Llama 2 Community License | No disponible en la información proporcionada | HuggingFace (modelo base oficial) |
-| meta-llama/Llama-2-13b-chat-hf | 13 mil millones | 4096 tokens | Llama 2 Community License | No disponible en la información proporcionada | HuggingFace (modelo base oficial) |
-| Mistral-7B-Instruct-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | No disponible en la información proporcionada | HuggingFace, pesos y cuantizaciones ampliamente disponibles |
+| svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02 | 6,74 mil millones | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,1558; StrongREJECT ASR 0,1470; over-refusal 0,1206 | Hugging Face (0 descargas, 0 likes) |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens | Llama 2 Community License | No disponible en la información proporcionada | Hugging Face (modelo base oficial) |
+| meta-llama/Llama-2-13b-chat-hf | 13 mil millones | 4096 tokens | Llama 2 Community License | No disponible en la información proporcionada | Hugging Face (modelo base oficial) |
+| Mistral-7B-Instruct-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | No disponible en la información proporcionada | Hugging Face, pesos y cuantizaciones ampliamente disponibles |
 
 Las cifras de parámetros y contexto de los modelos alternativos son especificaciones conocidas de sus respectivos modelos base; no se dispone de resultados de benchmark comparables para este checkpoint frente a ellos en la información proporcionada.
 
@@ -99,7 +99,7 @@ Las cifras de parámetros y contexto de los modelos alternativos son especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - Método de compresión SVD-LLM citado en la model card: https://arxiv.org/abs/2405.17898
@@ -107,4 +107,4 @@ Las cifras de parámetros y contexto de los modelos alternativos son especificac
 - Benchmark StrongREJECT: https://arxiv.org/abs/2402.10260
 - Clasificador WildGuard: https://arxiv.org/abs/2406.18495
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su autor; los enlaces anteriores corresponden a la página de HuggingFace y a las referencias de los métodos y benchmarks citados en la propia model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su autor; los enlaces anteriores corresponden a la página de Hugging Face y a las referencias de los métodos y benchmarks citados en la propia model card.

@@ -88,10 +88,10 @@ Velocidad:
 
 | Modelo | Parametros | Idiomas | CER FLORES-200, % | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Este modelo | 22,5 M (8,9 M en safetensors) | malabar | 2,37 | CC-BY-4.0 | HuggingFace, safetensors y ONNX |
-| ai4bharat/IndicF5 | 350,6 M | varias lenguas indias | 2,06 | no disponible | HuggingFace |
-| ai4bharat/indic-parler-tts | 937,8 M | varias lenguas indias | 4,05 | no disponible | HuggingFace |
-| facebook/mms-tts-mal | 29,1 M | malabar | 7,95 | no disponible | HuggingFace |
+| Este modelo | 22,5 M (8,9 M en safetensors) | malabar | 2,37 | CC-BY-4.0 | Hugging Face, safetensors y ONNX |
+| ai4bharat/IndicF5 | 350,6 M | varias lenguas indias | 2,06 | no disponible | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | varias lenguas indias | 4,05 | no disponible | Hugging Face |
+| facebook/mms-tts-mal | 29,1 M | malabar | 7,95 | no disponible | Hugging Face |
 
 El modelo se situa en calidad de inteligibilidad a la altura de IndicF5 e Indic-TTS con una fraccion del tamano, y por delante de MMS-TTS, Piper y VITS-OpenBible en el mismo test. Su ventaja diferencial es la eficiencia en CPU y su huella de memoria.
 
@@ -105,7 +105,7 @@ El modelo se situa en calidad de inteligibilidad a la altura de IndicF5 e Indic-
 - No se documentan soporte para voces fuera de las dos incluidas, control de prosodia fino ni streaming.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-malayalam
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-malayalam
 - Coleccion INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset de entrenamiento: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset multilingue preparado: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared

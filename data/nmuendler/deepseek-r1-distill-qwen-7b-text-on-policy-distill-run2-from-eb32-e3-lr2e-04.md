@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` y publicado por el usuario de HuggingFace `nmuendler`. El artefacto ocupa 0,3 GB, está etiquetado con `peft`, `lora`, `safetensors` y `transformers`, y su pipeline declarado es `text-generation`. El identificador del repositorio ("text-on-policy-distill-run2-from-eb32-e3-lr2e-04") sugiere un experimento de destilación on-policy (segunda ejecución, época 3, tasa de aprendizaje 2e-04, partiendo de un checkpoint "eb32"), aunque no existe documentación que lo confirme.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B` y publicado por el usuario de Hugging Face `nmuendler`. El artefacto ocupa 0,3 GB, está etiquetado con `peft`, `lora`, `safetensors` y `transformers`, y su pipeline declarado es `text-generation`. El identificador del repositorio ("text-on-policy-distill-run2-from-eb32-e3-lr2e-04") sugiere un experimento de destilación on-policy (segunda ejecución, época 3, tasa de aprendizaje 2e-04, partiendo de un checkpoint "eb32"), aunque no existe documentación que lo confirme.
 
-La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 "likes", no declara licencia ni idiomas, y su model card es la plantilla genérica de HuggingFace con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio acumula 0 descargas y 0 "likes", no declara licencia ni idiomas, y su model card es la plantilla genérica de Hugging Face con todos los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 
 Por tanto, debe tratarse como un artefacto de investigación sin validar. Las especificaciones funcionales que se indican a continuación solo pueden inferirse del modelo base declarado y no han sido verificadas por el autor ni por evaluaciones independientes.
 
@@ -23,7 +23,7 @@ Por tanto, debe tratarse como un artefacto de investigación sin validar. Las es
 | Modelo base | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B |
 | Librería declarada | peft (framework PEFT 0.19.1 según la model card) |
 | Tamaño del repositorio | 0,3 GB |
-| Fecha de creación | 17 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 17 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ Todos los casos siguientes son hipótesis de uso condicionadas a una validación
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-El repositorio no incluye sección de evaluación cumplimentada: la model card mantiene los campos "Testing Data", "Factors", "Metrics" y "Results" con el texto "[More Information Needed]". El modelo base sí dispone de evaluaciones publicadas por su autor (entre ellas AIME 2024, MATH-500, GPQA Diamond y LiveCodeBench), consultables en su propia ficha de HuggingFace, pero este adaptador no reproduce ni actualiza esas cifras. Cualquier número que se atribuya a este repositorio sin una ejecución propia sería una invención.
+El repositorio no incluye sección de evaluación cumplimentada: la model card mantiene los campos "Testing Data", "Factors", "Metrics" y "Results" con el texto "[More Information Needed]". El modelo base sí dispone de evaluaciones publicadas por su autor (entre ellas AIME 2024, MATH-500, GPQA Diamond y LiveCodeBench), consultables en su propia ficha de Hugging Face, pero este adaptador no reproduce ni actualiza esas cifras. Cualquier número que se atribuya a este repositorio sin una ejecución propia sería una invención.
 
 ## Requisitos de hardware
 

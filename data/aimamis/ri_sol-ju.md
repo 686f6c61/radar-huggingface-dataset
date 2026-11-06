@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ri_Sol-Ju es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Krea-2-Turbo, un modelo de difusion para generacion de imagenes. El adaptador esta disenado para generar representaciones de una persona concreta, identificada en la model card como la esposa de Kim Jong-un, mediante las palabras de activacion `Ri_Sol-Ju`, `black hair` y `pale skin`.
+Ri_Sol-Ju es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base Krea-2-Turbo, un modelo de difusion para generacion de imagenes. El adaptador esta disenado para generar representaciones de una persona concreta, identificada en la model card como la esposa de Kim Jong-un, mediante las palabras de activacion `Ri_Sol-Ju`, `black hair` y `pale skin`.
 
 El repositorio es de tamano reducido (0,5 GB), lo que es coherente con la naturaleza de un adaptador LoRA y no con un modelo completo. Cuenta con 17 descargas y ningun "like" en el momento de la consulta, lo que indica una adopcion muy limitada y un caracter experimental o de nicho. La libreria declarada es diffusers y la licencia es openrail++.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ri_Sol-Ju | LoRA text-to-image | Krea-2-Turbo | no disponible (repo 0,5 GB) | no aplica | openrail++ | HuggingFace, 17 descargas |
-| Krea-2-Turbo | Modelo de difusion text-to-image | no disponible | no disponible | no aplica | no disponible | HuggingFace (base) |
+| Ri_Sol-Ju | LoRA text-to-image | Krea-2-Turbo | no disponible (repo 0,5 GB) | no aplica | openrail++ | Hugging Face, 17 descargas |
+| Krea-2-Turbo | Modelo de difusion text-to-image | no disponible | no disponible | no aplica | no disponible | Hugging Face (base) |
 | Otros LoRA sobre Krea-2-Turbo | LoRA text-to-image | Krea-2-Turbo | no disponible | no aplica | variable | no disponible |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparacion cuantitativa con alternativas.
@@ -77,5 +77,5 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AiMamis/Ri_Sol-Ju
+- Hugging Face: https://huggingface.co/AiMamis/Ri_Sol-Ju
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

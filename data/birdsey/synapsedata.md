@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseData es un modelo de lenguaje de la organizacion Birdsey, publicado en HuggingFace bajo licencia Apache 2.0. Los metadatos indican que se distribuye en formato GGUF, lo que sugiere que esta pensado para inferencia local con herramientas como llama.cpp u Ollama. El modelo tiene aproximadamente 4.647 millones de parametros, segun los datos de safetensors, y el repositorio ocupa 13.2 GB. No se dispone de informacion publica sobre su arquitectura, longitud de contexto, datos de entrenamiento o rendimiento, lo que limita una evaluacion completa.
+SynapseData es un modelo de lenguaje de la organizacion Birdsey, publicado en Hugging Face bajo licencia Apache 2.0. Los metadatos indican que se distribuye en formato GGUF, lo que sugiere que esta pensado para inferencia local con herramientas como llama.cpp u Ollama. El modelo tiene aproximadamente 4.647 millones de parametros, segun los datos de safetensors, y el repositorio ocupa 13.2 GB. No se dispone de informacion publica sobre su arquitectura, longitud de contexto, datos de entrenamiento o rendimiento, lo que limita una evaluacion completa.
 
 ## Especificaciones tecnicas
 
@@ -68,5 +68,5 @@ No disponible. No se han publicado datos de rendimiento ni benchmarks que permit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Birdsey/SynapseData
+- Hugging Face: https://huggingface.co/Birdsey/SynapseData
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la informacion disponible.

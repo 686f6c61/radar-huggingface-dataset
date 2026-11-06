@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA-TINY es un modelo de generacion de texto de aproximadamente 1.100 millones de parametros (1.100.048.384, segun los pesos en safetensors) publicado por el usuario muhammad-taqi512 en HuggingFace bajo licencia Apache 2.0. El autor lo describe como un "motor de razonamiento ultraligero de 1B de parametros" orientado a respuestas de baja latencia y chat de alta velocidad, y menciona que esta construido sobre una base de arquitectura denominada "LYRAMOON" o "M.TAQI". Se distribuye en formato safetensors y con la libreria transformers, e incluye la etiqueta `llama` entre sus tags, aunque la model card no detalla la arquitectura real mas alla de esa referencia.
+LYRA-TINY es un modelo de generacion de texto de aproximadamente 1.100 millones de parametros (1.100.048.384, segun los pesos en safetensors) publicado por el usuario muhammad-taqi512 en Hugging Face bajo licencia Apache 2.0. El autor lo describe como un "motor de razonamiento ultraligero de 1B de parametros" orientado a respuestas de baja latencia y chat de alta velocidad, y menciona que esta construido sobre una base de arquitectura denominada "LYRAMOON" o "M.TAQI". Se distribuye en formato safetensors y con la libreria transformers, e incluye la etiqueta `llama` entre sus tags, aunque la model card no detalla la arquitectura real mas alla de esa referencia.
 
 La relevancia de este lanzamiento es limitada por el momento: el repositorio acumula 0 descargas y 0 "likes", y la informacion publicada es escasa. No se documentan datos de entrenamiento, numero de tokens, proceso de alineamiento (RLHF/DPO), longitud de contexto, idiomas mas alla del ingles ni resultados de benchmarks. La model card se limita a una ficha de presentacion del autor con afirmaciones cualitativas sobre velocidad, sin cifras verificables.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha recoge unicamente los datos confirmables desde el re
 
 ## Arquitectura y entrenamiento
 
-La informacion publicada no permite reconstruir la arquitectura con rigor. La model card afirma que el modelo se basa en "LYRAMOON" y en una arquitectura propia denominada "M.TAQI", pero no aporta detalles sobre el tipo de red (transformer denso, MoE, hibrida, SSM), el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el vocabulario. La presencia de la etiqueta `llama` en los metadatos de HuggingFace sugiere una implementacion compatible con la familia Llama, lo que seria coherente con un transformer decoder-only, pero se trata de una inferencia a partir de los tags y no de un dato confirmado.
+La informacion publicada no permite reconstruir la arquitectura con rigor. La model card afirma que el modelo se basa en "LYRAMOON" y en una arquitectura propia denominada "M.TAQI", pero no aporta detalles sobre el tipo de red (transformer denso, MoE, hibrida, SSM), el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el vocabulario. La presencia de la etiqueta `llama` en los metadatos de Hugging Face sugiere una implementacion compatible con la familia Llama, lo que seria coherente con un transformer decoder-only, pero se trata de una inferencia a partir de los tags y no de un dato confirmado.
 
 Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo fases de instruccion, RLHF, DPO u otro tipo de alineamiento, y si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o destilacion. El tamano del repositorio (2,2 GB) es consistente con pesos en precision de 16 bits (1,1 B de parametros x 2 bytes), lo que apunta a un modelo pequeno entrenado o guardado en fp16/bf16, pero no hay confirmacion explicita.
 
@@ -48,7 +48,7 @@ Dado que la informacion publicada no incluye evaluaciones, los siguientes casos 
 - Base para fine-tuning especifico de dominio: su licencia Apache 2.0 y su formato safetensors lo hacen apto para ajuste supervisado o LoRA sobre corpus propios en ingles, siempre que se valide previamente la calidad del modelo base.
 - Experimentacion academica y pruebas de arquitectura: util como punto de comparacion de bajo coste en estudios sobre tecnicas de cuantizacion, destilacion o decodificacion, dado su tamano manejable.
 - Preprocesado de texto en pipelines: clasificacion, reescritura o normalizacion de entradas en ingles dentro de un sistema mayor, siempre que se valide el rendimiento real, ya que no hay benchmarks publicados.
-- Demo publica con TGI: los tags incluyen `text-generation-inference` y `endpoints_compatible`, de modo que puede servirse detras de una API compatible con los endpoints de HuggingFace para pruebas internas.
+- Demo publica con TGI: los tags incluyen `text-generation-inference` y `endpoints_compatible`, de modo que puede servirse detras de una API compatible con los endpoints de Hugging Face para pruebas internas.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ Los datos de los modelos de referencia proceden de su documentacion publica y no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LYRA-TINY | ~1,1 B | No disponible | Apache 2.0 | HuggingFace (0 descargas, safetensors) |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido, con versiones GGUF |
-| Llama 3.2 1B | ~1,23 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | HuggingFace, ampliamente distribuido |
-| Qwen2.5 1.5B | ~1,54 B | 32.768 tokens | Apache 2.0 (segun la mayoria de variantes) | HuggingFace, con multiples cuantizaciones |
+| LYRA-TINY | ~1,1 B | No disponible | Apache 2.0 | Hugging Face (0 descargas, safetensors) |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido, con versiones GGUF |
+| Llama 3.2 1B | ~1,23 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 (con restricciones) | Hugging Face, ampliamente distribuido |
+| Qwen2.5 1.5B | ~1,54 B | 32.768 tokens | Apache 2.0 (segun la mayoria de variantes) | Hugging Face, con multiples cuantizaciones |
 
 Comparacion cualitativa: LYRA-TINY se situa en el segmento de modelos de ~1 B de parametros, donde compite con alternativas mucho mas maduras en cuanto a documentacion, cuantizaciones publicadas, soporte de herramientas y ecosistema. Su licencia Apache 2.0 es favorable frente a la de Llama 3.2 1B, pero la ausencia total de benchmarks, de longitud de contexto declarada y de datos de entrenamiento hace imposible afirmar que sea competitivo en calidad.
 
@@ -97,7 +97,7 @@ Comparacion cualitativa: LYRA-TINY se situa en el segmento de modelos de ~1 B de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhammad-taqi512/LYRA-TINY
-- Repositorio de pesos (safetensors): incluido en el repositorio de HuggingFace indicado arriba
+- Hugging Face: https://huggingface.co/muhammad-taqi512/LYRA-TINY
+- Repositorio de pesos (safetensors): incluido en el repositorio de Hugging Face indicado arriba
 - Paper, blog o repositorio de codigo adicionales: no disponibles
 - Resultados de busqueda web relacionados con el modelo: no se han encontrado; las busquedas realizadas devolvieron unicamente resultados sobre la figura historica de Muhammad, sin relacion con el modelo.

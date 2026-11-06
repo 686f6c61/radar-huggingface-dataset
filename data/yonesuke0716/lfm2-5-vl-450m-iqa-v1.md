@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-VL-450M IQA v1 es un ajuste fino del modelo multimodal LiquidAI/LFM2.5-VL-450M, publicado por el usuario Yonesuke0716 en HuggingFace. El modelo ha sido especializado en evaluacion automatica de calidad de imagen (Image Quality Assessment, IQA) mediante SFT y GRPO sobre el conjunto de datos KonIQ-10k, con fusion posterior de los adaptadores LoRA. Su proposito es recibir una fotografia y devolver una puntuacion de calidad percibida entre 0.0 y 10.0, acompanada de un breve razonamiento textual sobre lo que se observa en la imagen.
+LFM2.5-VL-450M IQA v1 es un ajuste fino del modelo multimodal LiquidAI/LFM2.5-VL-450M, publicado por el usuario Yonesuke0716 en Hugging Face. El modelo ha sido especializado en evaluacion automatica de calidad de imagen (Image Quality Assessment, IQA) mediante SFT y GRPO sobre el conjunto de datos KonIQ-10k, con fusion posterior de los adaptadores LoRA. Su proposito es recibir una fotografia y devolver una puntuacion de calidad percibida entre 0.0 y 10.0, acompanada de un breve razonamiento textual sobre lo que se observa en la imagen.
 
 El modelo base es un transformer multimodal de 354 millones de parametros (segun el recuento real de safetensors) que combina un encoder visual con un modelo de lenguaje. Este ajuste conserva esa arquitectura y anade la capacidad de producir una estimacion numerica calibrada con la opinion humana agregada, ademas de una justificacion en texto entre etiquetas `<REASONING>`. La salida combina texto libre y un objeto JSON con la clave `overall`.
 
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yonesuke0716/lfm2.5-vl-450M-iqa-v1
+- Modelo en Hugging Face: https://huggingface.co/Yonesuke0716/lfm2.5-vl-450M-iqa-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`serio-nd-guard-0.1b-v0.1` es un modelo de clasificación de texto orientado a seguridad y moderación de contenido, desarrollado por `serio-foundation`. Está construido sobre una arquitectura RoBERTa y deriva mediante fine-tuning del modelo `speakleash/Bielik-Guard-0.1B-v1.1`, según los metadatos de HuggingFace.
+`serio-nd-guard-0.1b-v0.1` es un modelo de clasificación de texto orientado a seguridad y moderación de contenido, desarrollado por `serio-foundation`. Está construido sobre una arquitectura RoBERTa y deriva mediante fine-tuning del modelo `speakleash/Bielik-Guard-0.1B-v1.1`, según los metadatos de Hugging Face.
 
 El modelo resuelve la tarea de etiquetar texto para guardrails y content moderation, con foco en polaco (`pl`). Su tamaño aproximado de 0,1B parámetros y la disponibilidad de formatos ONNX, safetensors e int8 lo hacen adecuado para filtros de seguridad de baja latencia y despliegues en CPU o entornos con recursos limitados.
 
@@ -59,15 +59,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4 GB para pesos en fp32, 0,2 GB en fp16 y 0,1 GB en int8, calculado teóricamente a partir de 0,1B parámetros; el overhead del runtime no está cuantificado.
 - GPU recomendadas: no requiere GPU. Una RTX 4090, A100 o H100 son innecesarias para este tamaño; cualquier GPU consumer con 2-4 GB de VRAM o más puede ejecutarlo con margen.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU moderna; también es viable en CPU.
-- Opciones de despliegue: ONNX Runtime para el formato ONNX, Transformers y Optimum para los pesos safetensors, y HuggingFace Inference Endpoints según el tag `endpoints_compatible`. vLLM y llama.cpp no están orientados a este tipo de clasificador.
+- Opciones de despliegue: ONNX Runtime para el formato ONNX, Transformers y Optimum para los pesos safetensors, y Hugging Face Inference Endpoints según el tag `endpoints_compatible`. vLLM y llama.cpp no están orientados a este tipo de clasificador.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `serio-foundation/serio-nd-guard-0.1b-v0.1` | ~0,1B | No disponible | Clasificación de seguridad y moderación, polaco | Apache-2.0 según tag; campo de licencia no disponible | HuggingFace |
-| `speakleash/Bielik-Guard-0.1B-v1.1` | ~0,1B según el nombre | No disponible | Guardrails, polaco | No disponible | HuggingFace, modelo base |
+| `serio-foundation/serio-nd-guard-0.1b-v0.1` | ~0,1B | No disponible | Clasificación de seguridad y moderación, polaco | Apache-2.0 según tag; campo de licencia no disponible | Hugging Face |
+| `speakleash/Bielik-Guard-0.1B-v1.1` | ~0,1B según el nombre | No disponible | Guardrails, polaco | No disponible | Hugging Face, modelo base |
 | Alternativas comparables de guardrails en polaco | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otras alternativas en la información proporcionada, por lo que no es posible comparar rendimiento, contexto o licencia con rigor.
@@ -85,7 +85,7 @@ No se dispone de datos verificables de otras alternativas en la información pro
 
 ## Enlaces
 
-- [HuggingFace: serio-foundation/serio-nd-guard-0.1b-v0.1](https://huggingface.co/serio-foundation/serio-nd-guard-0.1b-v0.1)
+- [Hugging Face: serio-foundation/serio-nd-guard-0.1b-v0.1](https://huggingface.co/serio-foundation/serio-nd-guard-0.1b-v0.1)
 - [Modelo base: speakleash/Bielik-Guard-0.1B-v1.1](https://huggingface.co/speakleash/Bielik-Guard-0.1B-v1.1)
 - [arXiv 2602.07954](https://arxiv.org/abs/2602.07954)
 - [arXiv 2406.18495](https://arxiv.org/abs/2406.18495)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en HuggingFace por el usuario anorim. Por la nomenclatura del identificador, se trata de una fusión de pesos (model merging) de seis modelos derivados de BERTimbau, la familia BERT preentrenada en portugués de Brasil por NeuralMind. El sufijo del nombre indica la técnica empleada: DARE-TIES con los hiperparámetros p=0.9, k=0.5 y selección de máscara por norma L1, más una variante de fusión etiquetada como "bestcross". Los corpus citados en el nombre (HateBR, OLID-BR, ToLD-Br y Tupy) son conjuntos de datos en portugués para detección de discurso de odio y lenguaje ofensivo, lo que sitúa el modelo en la categoría de clasificador de toxicidad para portugués.
+El modelo `anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en Hugging Face por el usuario anorim. Por la nomenclatura del identificador, se trata de una fusión de pesos (model merging) de seis modelos derivados de BERTimbau, la familia BERT preentrenada en portugués de Brasil por NeuralMind. El sufijo del nombre indica la técnica empleada: DARE-TIES con los hiperparámetros p=0.9, k=0.5 y selección de máscara por norma L1, más una variante de fusión etiquetada como "bestcross". Los corpus citados en el nombre (HateBR, OLID-BR, ToLD-Br y Tupy) son conjuntos de datos en portugués para detección de discurso de odio y lenguaje ofensivo, lo que sitúa el modelo en la categoría de clasificador de toxicidad para portugués.
 
 El repositorio no incluye model card, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación. El único dato verificable más allá del identificador es el número de parámetros registrado en los pesos safetensors: 108.924.674, que coincide exactamente con el tamaño de BERTimbau base y con el vocabulario de 29.794 tokens de dicha familia. El repositorio ocupa 0,4 GB, coherente con pesos en precisión completa (fp32) sin cuantizar. Con 13 descargas y 0 "likes" en el momento de la consulta, es un artefacto de investigación de difusión muy limitada.
 
@@ -22,7 +22,7 @@ Su relevancia actual es acotada y fundamentalmente metodológica: sirve como eje
 | Formato de pesos | safetensors |
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 0,4 GB |
-| Fecha de creación / actualización | 2026-09-17 (ambas, según los metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-17 (ambas, según los metadatos de Hugging Face) |
 | Descargas / likes | 13 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ El repositorio no incluye métricas (F1, precisión, recall, AUC) sobre HateBR, 
 - VRAM estimada para inferencia: con 108,9 millones de parámetros, en fp32 requiere aproximadamente 0,44 GB solo para los pesos, más memoria para activaciones y lote; en fp16 alrededor de 0,22 GB, en int8 unos 0,11 GB y en int4 unos 0,06 GB (estimaciones calculadas a partir del número de parámetros, no publicadas por el autor).
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente en fp16; una NVIDIA GTX 1650, RTX 3050 o superior cubre el caso holgado. Para lotes grandes en producción, una T4, L4 o A10 resulta adecuada; A100 y H100 son innecesarias por tamaño y solo tendrían sentido para servir muchísimas peticiones concurrentes.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna, e incluso en CPU para inferencia por lotes a baja escala.
-- Opciones de despliegue: al ser safetensors de un encoder tipo BERT, es compatible con HuggingFace Transformers, Text Embeddings Inference (TEI), TorchServe, ONNX Runtime, FastAPI con Transformers, y con vLLM o TGI si el checkpoint expone una cabeza de clasificación compatible con esas herramientas; la cuantización a ONNX int8 es una vía habitual para reducir latencia en CPU.
+- Opciones de despliegue: al ser safetensors de un encoder tipo BERT, es compatible con Hugging Face Transformers, Text Embeddings Inference (TEI), TorchServe, ONNX Runtime, FastAPI con Transformers, y con vLLM o TGI si el checkpoint expone una cabeza de clasificación compatible con esas herramientas; la cuantización a ONNX int8 es una vía habitual para reducir latencia en CPU.
 - Latencia y throughput estimados: no disponibles. Como referencia orientativa, un BERT base de 109 M de parámetros en fp16 sobre una GPU moderna suele procesar cientos o miles de secuencias cortas por segundo, pero este dato no ha sido medido para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -94,5 +94,5 @@ Las cifras de parámetros de los modelos de referencia corresponden a sus fichas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Hugging Face: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo. Las búsquedas devolvieron únicamente páginas genéricas de LinkedIn (fr.linkedin.com y zhihu.com), sin relación con este checkpoint, con su autor, con DARE-TIES ni con los corpus HateBR, OLID-BR, ToLD-Br o Tupy. No hay paper, blog, repositorio de código ni demo asociados que puedan enlazarse.

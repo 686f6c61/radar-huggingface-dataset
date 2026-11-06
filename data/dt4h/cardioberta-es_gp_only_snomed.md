@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas con otros modelos de normalización de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.es_GP_only_snomed
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.es_GP_only_snomed
 - Modelo base CardioBERTa.es: https://huggingface.co/DT4H/CardioBERTa.es
 - Colección CardioNER (DT4H): https://huggingface.co/collections/DT4H/cardioner
 - Organización GitHub de DataTools4Heart: https://github.com/DataTools4Heart/

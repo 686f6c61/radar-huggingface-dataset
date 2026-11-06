@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a` es un checkpoint archivado publicado en HuggingFace por el usuario davidheineman. La propia model card lo describe como un artefacto de reproducibilidad: preserva el estado final de una ejecución ya completada, correspondiente al paso 119, con formato `hf-safetensors` y un directorio `checkpoint/` que contiene el estado exacto guardado por Megatron en formato distribuido.
+El repositorio `davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a` es un checkpoint archivado publicado en Hugging Face por el usuario davidheineman. La propia model card lo describe como un artefacto de reproducibilidad: preserva el estado final de una ejecución ya completada, correspondiente al paso 119, con formato `hf-safetensors` y un directorio `checkpoint/` que contiene el estado exacto guardado por Megatron en formato distribuido.
 
 La etiqueta `qwen2` indica que el modelo sigue la arquitectura Qwen2 (transformer decoder-only), con 1.777.088.000 parámetros totales (aproximadamente 1,78 mil millones). El tamaño del repositorio, 3,6 GB, es coherente con pesos almacenados en precisión de 16 bits. Las etiquetas `rlve` y `scratch-archive` apuntan a una línea de trabajo de aprendizaje por refuerzo con entornos verificables y a un archivo de checkpoints de barridos de hiperparámetros.
 
@@ -96,6 +96,6 @@ Ninguna de las alternativas comparte el proposito de este repositorio: son model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a
 
 No se han encontrado otros enlaces relevantes en la busqueda web realizada: los resultados obtenidos corresponden a portales administrativos municipales sin relacion alguna con el modelo. No hay paper, blog, repositorio de codigo ni demo asociados en la informacion disponible.

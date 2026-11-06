@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen3.5-4B-Base, publicado por el usuario AmberYifan en HuggingFace. El nombre del repositorio sugiere que fue entrenado sobre un dataset de matemáticas (math_ppl) con un subconjunto de 8000 muestras y semilla 0, aunque la model card no proporciona detalles sobre el dataset ni sobre el propósito exacto. Se trata de un modelo de 4.539.265.536 parámetros, en formato safetensors, compatible con la librería transformers y con pipeline image-text-to-text, lo que indica que hereda la multimodalidad del modelo base Qwen3.5.
+Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen3.5-4B-Base, publicado por el usuario AmberYifan en Hugging Face. El nombre del repositorio sugiere que fue entrenado sobre un dataset de matemáticas (math_ppl) con un subconjunto de 8000 muestras y semilla 0, aunque la model card no proporciona detalles sobre el dataset ni sobre el propósito exacto. Se trata de un modelo de 4.539.265.536 parámetros, en formato safetensors, compatible con la librería transformers y con pipeline image-text-to-text, lo que indica que hereda la multimodalidad del modelo base Qwen3.5.
 
 La relevancia de este modelo radica en que Qwen3.5 es una familia reciente de modelos de lenguaje de gran tamaño con arquitectura híbrida (atención lineal + transformer) y capacidades multimodales nativas. Este fine-tune concreto, sin embargo, carece de documentación detallada: la model card es automática, no hay benchmarks publicados y la licencia es "other" (no especificada). Por tanto, su uso en producción requiere una evaluación independiente y cautelosa.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Base (base) | 4.5B | no especificado | Sí (texto, imagen, vídeo) | Apache 2.0 (según documentación pública) | HuggingFace |
-| Este fine-tune | 4.5B | no especificado | Heredada (no confirmada) | other | HuggingFace |
-| Qwen3-4B (versión anterior) | 4B | 32K (típico) | No (solo texto) | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-Base (base) | 4.5B | no especificado | Sí (texto, imagen, vídeo) | Apache 2.0 (según documentación pública) | Hugging Face |
+| Este fine-tune | 4.5B | no especificado | Heredada (no confirmada) | other | Hugging Face |
+| Qwen3-4B (versión anterior) | 4B | 32K (típico) | No (solo texto) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a características estructurales. El fine-tune no aporta mejoras documentadas sobre el base, y su licencia "other" puede restringir usos comerciales.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b8000_s0
+- Repositorio Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b8000_s0
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Documentación de Qwen3.5 (GitHub): https://github.com/ABDtmx/Qwen3.5
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:4b

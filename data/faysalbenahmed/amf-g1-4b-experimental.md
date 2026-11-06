@@ -132,7 +132,7 @@ No se dispone de comparaciones de MMLU, HumanEval, GSM8K ni de ninguna otra mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faysalbenahmed/AMF-G1-4B-Experimental
+- Modelo en Hugging Face: https://huggingface.co/faysalbenahmed/AMF-G1-4B-Experimental
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Proyecto y atribución (Stack Moderne / AMF, Fayçal Benahmed): https://stack-moderne.fr/
 - Papers, blogs técnicos, repositorios de código y demos: no disponible en la información proporcionada.

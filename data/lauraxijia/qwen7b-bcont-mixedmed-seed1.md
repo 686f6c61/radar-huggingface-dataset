@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su especialización médica sobre una bas
 | Tipos de cuantizacion | no disponible (repo de 0,5 GB sugiere cuantizacion o LoRA) |
 | Idiomas soportados | no disponible (base Qwen-7B: chino e ingles principalmente) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ La comparación directa es difícil por la falta de datos. El modelo base Qwen-7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lauraxijia/qwen7b-bcont-mixedmed-seed1
+- Repositorio Hugging Face: https://huggingface.co/lauraxijia/qwen7b-bcont-mixedmed-seed1
 - Modelo base Qwen-7B: https://huggingface.co/Qwen/Qwen-7B
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Qwen2-7B: https://huggingface.co/Qwen/Qwen2-7B

@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12935991-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12935991-step100000
 - Run de W&B: https://wandb.ai/princeton-pli/Nanogpt/runs/p3u6iopc
 - Proyecto W&B de referencia: https://wandb.ai/princeton-pli/Nanogpt

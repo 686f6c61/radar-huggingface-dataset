@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado, es una herramienta práctica y ligera (0,6 
 | Modelo base | codellama/CodeLlama-7b-Instruct-hf |
 | Tarea (pipeline) | text-generation |
 | Biblioteca | peft |
-| Fecha de creación / actualización | 19 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 19 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / me gusta | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -82,9 +82,9 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parámetros | Contexto | Pass@1 | Tasa de compilación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CodeLlama-7b-Instruct (base) | 7B | No especificado en la información disponible | 15,50% ± 1,08 | 18,94% ± 0,53 | Llama 2 | HuggingFace |
-| revbench-lora-r64-a64 | 7B + LoRA (~2,3% entrenado) | 2048 tokens en entrenamiento | 23,95% ± 1,35 | 84,33% ± 1,19 | Llama 2 | HuggingFace (0 descargas) |
-| bananaprotocol/revbench-lora-mixed | 7B + LoRA | 2048 tokens en entrenamiento | 28,08% ± 1,30 | 64,50% ± 1,54 | Llama 2 | HuggingFace |
+| CodeLlama-7b-Instruct (base) | 7B | No especificado en la información disponible | 15,50% ± 1,08 | 18,94% ± 0,53 | Llama 2 | Hugging Face |
+| revbench-lora-r64-a64 | 7B + LoRA (~2,3% entrenado) | 2048 tokens en entrenamiento | 23,95% ± 1,35 | 84,33% ± 1,19 | Llama 2 | Hugging Face (0 descargas) |
+| bananaprotocol/revbench-lora-mixed | 7B + LoRA | 2048 tokens en entrenamiento | 28,08% ± 1,30 | 64,50% ± 1,54 | Llama 2 | Hugging Face |
 
 No se dispone en la información proporcionada de comparaciones con otros modelos especializados en descompilación (por ejemplo, propuestas de la literatura de LLM para decompilación); esos datos figuran como no disponibles.
 
@@ -97,12 +97,12 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 - Riesgo de alucinación semántica: el modelo puede producir C que compila pero no reproduce el comportamiento del binario original, que es precisamente el fenómeno documentado como brecha sintáctico-semántica.
 - Solo inglés: no hay soporte documentado para prompts en castellano ni para otros idiomas.
 - Licencia restrictiva: al ser derivado de CodeLlama-7b-Instruct, queda cubierto por la Llama 2 Community License, que incluye política de uso aceptable y una restricción de uso comercial para organizaciones con más de 700 millones de usuarios activos mensuales. No hereda la Apache-2.0 del repositorio de código RevBench.
-- Artefacto de investigación: procede de una tesis de grado (enero de 2026), no de un proceso de revisión por pares, y no tiene descargas ni valoraciones en HuggingFace, por lo que carece de validación independiente.
+- Artefacto de investigación: procede de una tesis de grado (enero de 2026), no de un proceso de revisión por pares, y no tiene descargas ni valoraciones en Hugging Face, por lo que carece de validación independiente.
 - Los metadatos indican fecha de creación en septiembre de 2026 y actualización tres minutos después, lo que sugiere una subida única sin mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bananaprotocol/revbench-lora-r64-a64
+- Modelo en Hugging Face: https://huggingface.co/bananaprotocol/revbench-lora-r64-a64
 - Adaptador alternativo (mixed): https://huggingface.co/bananaprotocol/revbench-lora-mixed
 - Repositorio de código y memoria completa: https://github.com/bananaprotocol/RevBench
 - Modelo base: https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf

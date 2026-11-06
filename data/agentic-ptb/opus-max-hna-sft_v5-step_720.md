@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/opus-max.hNA.sft_v5.step_720 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace (modelo base) |
-| Qwen/Qwen3-8B (referencia de la familia) | 8B | 32K (típico en Qwen3) | Apache 2.0 (típico) | HuggingFace |
+| agentic-ptb/opus-max.hNA.sft_v5.step_720 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face (modelo base) |
+| Qwen/Qwen3-8B (referencia de la familia) | 8B | 32K (típico en Qwen3) | Apache 2.0 (típico) | Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento ni de licencia para este checkpoint. El modelo base `Qwen/Qwen3.5-9B-Base` es la referencia más directa, pero su ficha tampoco está disponible en la información proporcionada. No se puede establecer una comparación rigurosa sin benchmarks.
 
@@ -74,5 +74,5 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v5.step_720
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-max.hNA.sft_v5.step_720
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado en la información proporcionada)

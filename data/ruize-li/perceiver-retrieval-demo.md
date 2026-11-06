@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Perceiver for Retrieval es un repositorio de HuggingFace publicado por el usuario ruize-li que contiene una implementacion propia y minima de un modelo Perceiver orientado a tareas de retrieval, acompanada de un fichero de configuracion explicito y un checkpoint de inicializacion. El propio autor lo describe de forma explicita como un punto de partida reproducible para la variante "large", no como la publicacion de un modelo entrenado. El checkpoint `model.safetensors` tiene 24.832 parametros y esta pensado para pruebas de humo (smoke tests), no para inferencia real ni para benchmarks.
+Perceiver for Retrieval es un repositorio de Hugging Face publicado por el usuario ruize-li que contiene una implementacion propia y minima de un modelo Perceiver orientado a tareas de retrieval, acompanada de un fichero de configuracion explicito y un checkpoint de inicializacion. El propio autor lo describe de forma explicita como un punto de partida reproducible para la variante "large", no como la publicacion de un modelo entrenado. El checkpoint `model.safetensors` tiene 24.832 parametros y esta pensado para pruebas de humo (smoke tests), no para inferencia real ni para benchmarks.
 
 La relevancia de este repositorio es, por tanto, de caracter metodologico y de ingenieria, no de rendimiento: ofrece una implementacion funcional de la arquitectura Perceiver con atencion dilatada, fusion bilineal, activacion approx gelu y normalizacion batchnorm, junto con una receta de experimento por defecto basada en el optimizador adafactor y un scheduler onecycle. No se declara ninguna puntuacion de benchmark y el autor indica que cualquier resultado futuro de un checkpoint entrenado deberia documentarse por separado de los valores por defecto aqui incluidos.
 
-El repositorio no incluye informacion sobre idiomas soportados, longitud de contexto ni cuantizaciones, y el pipeline de HuggingFace no esta definido. La unica metrica objetiva disponible es el recuento de parametros del checkpoint (24.832), coherente con un modelo de inicializacion de proposito didactico o de prueba, y no con un sistema desplegable en produccion.
+El repositorio no incluye informacion sobre idiomas soportados, longitud de contexto ni cuantizaciones, y el pipeline de Hugging Face no esta definido. La unica metrica objetiva disponible es el recuento de parametros del checkpoint (24.832), coherente con un modelo de inicializacion de proposito didactico o de prueba, y no con un sistema desplegable en produccion.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ El repositorio no incluye informacion sobre idiomas soportados, longitud de cont
 | Scheduler por defecto | onecycle |
 | Estado del checkpoint | inicializacion, sin entrenar |
 | Tamano del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ Todos los casos siguientes se refieren al uso del repositorio como material de i
 - Linea base de capacidad equivalente: para comparaciones controladas, el autor recomienda entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias; este repositorio sirve como una de esas lineas base de baja capacidad.
 - Plantilla de receta de experimentos: `training_args.json` documenta una configuracion adafactor mas onecycle que puede reutilizarse como plantilla y modificarse sistematicamente en estudios de ablacion.
 - Estudio de mecanismos de atencion y fusion: la combinacion de atencion dilatada y fusion bilineal es un objeto de estudio concreto para medir el efecto de cada componente en tareas de recuperacion.
-- Adaptacion de APIs de carga automatica: al ser una implementacion propia, las APIs genericas de carga de HuggingFace requieren un adaptador explicito; el repositorio es un caso practico para escribir y validar ese adaptador.
+- Adaptacion de APIs de carga automatica: al ser una implementacion propia, las APIs genericas de carga de Hugging Face requieren un adaptador explicito; el repositorio es un caso practico para escribir y validar ese adaptador.
 - Material docente: la escala minima del modelo (24.832 parametros) lo hace adecuado para explicar la arquitectura Perceiver, el flujo de datos en el array latente y el ciclo completo de entrenamiento sin coste computacional relevante.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM para inferencia en fp16: aproximadamente 0,05 MB de pesos.
 - GPU recomendadas: no disponible, porque el checkpoint no requiere GPU. Cabe en cualquier GPU consumer, en CPU e incluso en dispositivos embebidos con recursos muy limitados.
 - Cabe en GPU consumer: si, en cualquier modelo del mercado; no es una restriccion relevante en este repositorio.
-- Opciones de despliegue: no aplican vLLM, Ollama, llama.cpp ni TGI, ya que no se trata de un modelo generativo ni se distribuyen pesos en formato GGUF. La carga se realiza con PyTorch y safetensors, y las APIs automaticas de HuggingFace requieren un adaptador explicito por tratarse de una implementacion propia.
+- Opciones de despliegue: no aplican vLLM, Ollama, llama.cpp ni TGI, ya que no se trata de un modelo generativo ni se distribuyen pesos en formato GGUF. La carga se realiza con PyTorch y safetensors, y las APIs automaticas de Hugging Face requieren un adaptador explicito por tratarse de una implementacion propia.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No es posible establecer una comparativa cuantitativa fiable con alternativas de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-retrieval-demo | 24.832 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmark declarado) | MIT | HuggingFace |
+| perceiver-retrieval-demo | 24.832 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmark declarado) | MIT | Hugging Face |
 | CLIP (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BLIP (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Perceiver IO | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,13 +93,13 @@ No es posible establecer una comparativa cuantitativa fiable con alternativas de
 - No se publican metricas, curvas de entrenamiento ni comparaciones controladas; no hay evidencia empirica de comportamiento.
 - No se documenta la longitud de contexto soportada ni la resolucion o formato de las entradas, lo que impide planificar un despliegue real.
 - No se declaran idiomas soportados.
-- El modelo no es desplegable con herramientas estandar de servido de LLM (vLLM, TGI, Ollama, llama.cpp) y requiere un adaptador explicito para las APIs automaticas de HuggingFace.
+- El modelo no es desplegable con herramientas estandar de servido de LLM (vLLM, TGI, Ollama, llama.cpp) y requiere un adaptador explicito para las APIs automaticas de Hugging Face.
 - La licencia MIT permite uso comercial del codigo y de los pesos, pero los terminos de los datos de origen deben revisarse por separado si el repositorio se utiliza con conjuntos de datos externos.
 - Cualquier resultado obtenido con un checkpoint entrenado a partir de este repositorio debe documentarse de forma separada de los valores por defecto aqui incluidos.
 - Los resultados de la busqueda web asociados a esta ficha no guardan relacion con el modelo (corresponden a tematicas de sanidad y migracion), por lo que no aportan contexto tecnico utilizable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruize-li/perceiver-retrieval-demo
+- Hugging Face: https://huggingface.co/ruize-li/perceiver-retrieval-demo
 - Ficheros del repositorio: `main.py` (implementacion y punto de entrada), `README.md` (documentacion), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado enlaces relevantes al modelo en los resultados de busqueda web proporcionados.

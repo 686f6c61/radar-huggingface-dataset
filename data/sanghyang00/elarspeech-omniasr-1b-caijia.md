@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-caijia es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en HuggingFace, especializado en caijia, una lengua sino-tibetana hablada en el suroeste de China que no tiene codigo ISO 639-3 asignado. Se trata de un ajuste fino (fine-tuning) del checkpoint aadel4/omniASR-CTC-1B-v2, del que hereda la arquitectura Wav2Vec2ForCTC y que forma parte de la iniciativa ELARSpeech.
+ELARSpeech-OmniASR-1B-caijia es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en Hugging Face, especializado en caijia, una lengua sino-tibetana hablada en el suroeste de China que no tiene codigo ISO 639-3 asignado. Se trata de un ajuste fino (fine-tuning) del checkpoint aadel4/omniASR-CTC-1B-v2, del que hereda la arquitectura Wav2Vec2ForCTC y que forma parte de la iniciativa ELARSpeech.
 
 El modelo cuenta con 975.695.551 parametros reales segun los pesos en safetensors (comercializado como "1B") y se distribuye bajo la libreria transformers con el pipeline automatic-speech-recognition. Su interes principal es cubrir una lengua de muy bajos recursos para la que practicamente no existen sistemas ASR publicos, lo que lo convierte en una pieza util para documentacion linguistica, transcripcion de campo y preservacion de patrimonio oral.
 
@@ -89,9 +89,9 @@ La comparacion se limita a especificaciones publicas de modelos de ASR de propos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-caijia
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-caijia
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentacion del proyecto ELARSpeech: no disponible (la model card la menciona sin enlace)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo o demo: no disponible
-- Resultado de busqueda web consultado (listado general de modelos de HuggingFace): https://huggingface.co/models?sort=created
+- Resultado de busqueda web consultado (listado general de modelos de Hugging Face): https://huggingface.co/models?sort=created

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (fine-tuning pi05, 10k pasos) | 4.143.404.816 | No disponible | apache-2.0 | Hub de HuggingFace, 0 descargas | Específico para Panda con 3 cámaras; dataset de 199 episodios |
-| lerobot/pi05_base | No disponible | No disponible | No disponible | Hub de HuggingFace | Modelo base del que deriva este fine-tuning; no se documentan sus especificaciones en la información proporcionada |
+| Este modelo (fine-tuning pi05, 10k pasos) | 4.143.404.816 | No disponible | apache-2.0 | Hub de Hugging Face, 0 descargas | Específico para Panda con 3 cámaras; dataset de 199 episodios |
+| lerobot/pi05_base | No disponible | No disponible | No disponible | Hub de Hugging Face | Modelo base del que deriva este fine-tuning; no se documentan sus especificaciones en la información proporcionada |
 | π₀ (Physical Intelligence) | No disponible | No disponible | No disponible | Repositorio OpenPI citado en la ficha | Predecesor de π₀.₅ según la model card; sin datos comparables publicados aquí |
 | Otras políticas VLA del ecosistema LeRobot (por ejemplo OpenVLA o SmolVLA) | No disponible | No disponible | No disponible | No disponible | No se aportan datos que permitan una comparación rigurosa |
 
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__blur__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

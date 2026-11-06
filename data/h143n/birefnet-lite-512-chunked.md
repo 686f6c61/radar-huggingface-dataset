@@ -88,6 +88,6 @@ No se dispone de datos de otros segmentadores comparables (por ejemplo, variante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/h143N/birefnet-lite-512-chunked
+- Repositorio Hugging Face: https://huggingface.co/h143N/birefnet-lite-512-chunked
 - Modelo base del export: https://huggingface.co/studioludens/birefnet-lite-512
 - Modelo original: https://huggingface.co/ZhengPeng7/BiRefNet_lite

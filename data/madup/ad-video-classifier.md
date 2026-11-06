@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `MADUP/ad-video-classifier` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) desarrollado por MADUP, una empresa surcoreana especializada en marketing digital con IA. Este adaptador se construye sobre el modelo base `Qwen/Qwen2.5-VL-7B-Instruct` y esta disenado especificamente para la tarea de clasificacion de videos, con un enfoque particular en el dominio publicitario (tag `advertising`).
 
-Aunque la informacion publica es limitada, la combinacion de un modelo vision-language (VLM) de 7 mil millones de parametros con un adaptador PEFT sugiere que el modelo hereda las capacidades multimodales del Qwen2.5-VL, incluyendo comprension de video, imagenes y texto, adaptadas para la clasificacion de contenido audiovisual con fines publicitarios. El acceso al modelo es restringido (gated), lo que implica que los usuarios deben aceptar condiciones especificas en HuggingFace antes de poder descargarlo.
+Aunque la informacion publica es limitada, la combinacion de un modelo vision-language (VLM) de 7 mil millones de parametros con un adaptador PEFT sugiere que el modelo hereda las capacidades multimodales del Qwen2.5-VL, incluyendo comprension de video, imagenes y texto, adaptadas para la clasificacion de contenido audiovisual con fines publicitarios. El acceso al modelo es restringido (gated), lo que implica que los usuarios deben aceptar condiciones especificas en Hugging Face antes de poder descargarlo.
 
 El repositorio tiene un tamano de 0.8 GB, coherente con un adaptador PEFT de tamano moderado sobre un modelo base de 7B. La fecha de creacion (septiembre de 2026) indica que es un modelo reciente, aunque no se dispone de metricas de adopcion (0 descargas, 0 likes) ni de documentacion tecnica detallada en el momento de la consulta.
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible de forma especifica para este adaptador. Como referencia, el modelo base Qwen2.5-VL-7B-Instruct requiere aproximadamente 16-20 GB de VRAM en precision FP16 para inferencia.
 - GPU recomendadas: no disponibles. Se recomienda al menos una GPU con 16 GB de VRAM (RTX 4080/4090, A10, A100) para el modelo base, aunque el adaptador PEFT anade poca carga adicional.
 - Compatibilidad con consumer GPU: probablemente si, en GPUs de 16 GB o mas, dependiendo de la cuantizacion utilizada.
-- Opciones de despliegue: al ser un modelo PEFT, es compatible con el ecosistema HuggingFace (transformers + peft). Se puede integrar con vLLM, TGI o soluciones personalizadas. No hay informacion sobre soporte para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo PEFT, es compatible con el ecosistema Hugging Face (transformers + peft). Se puede integrar con vLLM, TGI o soluciones personalizadas. No hay informacion sobre soporte para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No hay informacion suficiente para establecer una comparativa fiable. El modelo 
 | Otros adaptadores PEFT sobre Qwen2.5-VL | variable | no disponible | Variable | Variable |
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su uso.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su uso.
 - Informacion tecnica limitada: no se han publicado detalles sobre el entrenamiento, datos utilizados ni evaluacion de sesgos.
 - Sesgos potenciales: al ser un modelo entrenado para publicidad, puede presentar sesgos relacionados con el tipo de contenido publicitario predominante en los datos de entrenamiento.
 - Riesgo de alucinacion: como cualquier VLM, puede generar clasificaciones incorrectas en videos ambiguos o fuera de su dominio de entrenamiento.
@@ -68,7 +68,7 @@ No hay informacion suficiente para establecer una comparativa fiable. El modelo 
 - Licencia: aunque la licencia es Apache 2.0, el acceso gated puede implicar restricciones adicionales de uso comercial no especificadas en la ficha.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/MADUP/ad-video-classifier
-- Organizacion MADUP en HuggingFace: https://huggingface.co/MADUP
+- Modelo en Hugging Face: https://huggingface.co/MADUP/ad-video-classifier
+- Organizacion MADUP en Hugging Face: https://huggingface.co/MADUP
 - Sitio web de MADUP: https://www.madup.com/en/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

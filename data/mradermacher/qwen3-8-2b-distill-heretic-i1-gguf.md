@@ -30,7 +30,7 @@ No se dispone de detalles tecnicos especificos sobre la arquitectura interna del
 
 El repositorio de mradermacher no documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro tipo de ajuste por preferencias. Tampoco se detalla el metodo exacto de la variante "heretic" (las etiquetas abliterated, uncensored y decensored sugieren una intervencion sobre las direcciones de rechazo del modelo, pero la model card no describe el procedimiento). La model card si menciona de forma ambigua que se trata de un modelo de vision, indicando que los ficheros mmproj, si existen, estarian en el repositorio de cuants estaticos; no se confirma la presencia de dichos ficheros ni de un encoder visual.
 
-En cuanto al proceso de cuantizacion, se han generado 24 cuantizaciones i1 usando un fichero imatrix, todas ellas derivadas del modelo en formato HuggingFace. La nomenclatura i1 indica cuantizacion con matriz de importancia, que en la practica mejora la calidad respecto a cuantizaciones estaticas del mismo tamano.
+En cuanto al proceso de cuantizacion, se han generado 24 cuantizaciones i1 usando un fichero imatrix, todas ellas derivadas del modelo en formato Hugging Face. La nomenclatura i1 indica cuantizacion con matriz de importancia, que en la practica mejora la calidad respecto a cuantizaciones estaticas del mismo tamano.
 
 ## Capacidades
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-i1-GGUF
 - Repositorio de cuants estaticos: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-GGUF
 - Modelo base: https://huggingface.co/htb-ac-1424625/Qwen3.8-2B-Distill-heretic
 - Variante 4B: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-i1-GGUF

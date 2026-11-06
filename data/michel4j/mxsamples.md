@@ -67,10 +67,10 @@ No disponible. No se han identificado modelos comparables específicos para dete
 - Alcance limitado: el modelo solo detecta tres clases (pin, loop, cristal). No reconoce otros componentes de la muestra ni realiza tareas de clasificación o segmentación.
 - Licencia AGPL-3.0: cualquier uso del modelo en un servicio en red (por ejemplo, una API pública) obliga a distribuir el código fuente completo de la aplicación bajo la misma licencia. Esto puede ser restrictivo para integraciones comerciales cerradas.
 - Sin documentación técnica detallada: no se publican hiperparámetros, tamaño de entrada, ni métricas de entrenamiento, lo que dificulta la reproducibilidad y la evaluación objetiva.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido; no hay evidencia de validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido; no hay evidencia de validación externa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/michel4j/mxsamples)
+- [Modelo en Hugging Face](https://huggingface.co/michel4j/mxsamples)
 - [Paquete ai-center en PyPI](https://pypi.org/project/ai-center/)
 - [Perfil de GitHub del autor (michel4j)](https://github.com/michel4j)

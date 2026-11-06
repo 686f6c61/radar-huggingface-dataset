@@ -93,7 +93,7 @@ La model card no identifica por nombre los modelos comparados ni reproduce sus c
 
 ## Enlaces
 
-- [HuggingFace: yusifnuri/phi-4-mini-instruct_summarization](https://huggingface.co/yusifnuri/phi-4-mini-instruct_summarization)
+- [Hugging Face: yusifnuri/phi-4-mini-instruct_summarization](https://huggingface.co/yusifnuri/phi-4-mini-instruct_summarization)
 - [Modelo base: microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 - [Código, configuraciones y arnés de evaluación](https://github.com/Yusifnuri/slm-benchmark)
 - [Matriz completa del benchmark](https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv)

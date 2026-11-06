@@ -19,7 +19,7 @@ Su relevancia actual es doble: por un lado, documenta una arquitectura de segmen
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen como `state_dict` de PyTorch (`best_NP.pt`), no como checkpoint cuantizado |
 | Idiomas soportados | arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` en fichero `.pt` (`best_NP.pt`), no es un checkpoint en formato HuggingFace ni safetensors, pese a la etiqueta `safetensors` del repositorio |
+| Formato de pesos | PyTorch `state_dict` en fichero `.pt` (`best_NP.pt`), no es un checkpoint en formato Hugging Face ni safetensors, pese a la etiqueta `safetensors` del repositorio |
 | Tarea (pipeline) | `token-classification` (segmentacion de texto) |
 | Subtarea | NP, NoPnx-PA y NoPnx-NP |
 | Rol en el sistema | miembro de un apilado lineal ajustado con OOF sobre 5 miembros |
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks por miembro ni métricas desagregad
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Puntuacion en AraSeg 2026 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `NAMAA-Space/araseg-sat-ft` | Transformer a nivel de caracter, fine-tune completo | no disponible | no disponible | MIT | no publicado de forma aislada (sistema: 91,3 macro-F1 en ciego) | Pesos `.pt` en HuggingFace (carga manual) |
-| `segment-any-text/sat-12l-sm` | Transformer a nivel de caracter (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no aplica (no ajustado para arabe en este sistema) | HuggingFace |
+| `NAMAA-Space/araseg-sat-ft` | Transformer a nivel de caracter, fine-tune completo | no disponible | no disponible | MIT | no publicado de forma aislada (sistema: 91,3 macro-F1 en ciego) | Pesos `.pt` en Hugging Face (carga manual) |
+| `segment-any-text/sat-12l-sm` | Transformer a nivel de caracter (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no aplica (no ajustado para arabe en este sistema) | Hugging Face |
 | Miembros LoRA basados en XLM-R / LLM del mismo ensemble | Ajuste LoRA sobre modelos de subpalabras | no disponible | no disponible | no disponible | no publicado por miembro | Coleccion `NAMAA-Space/araseg-2026` |
 
 La model card indica que el apilado combina cinco miembros y que este checkpoint recibe el peso individual más alto del conjunto NP por su diversidad arquitectónica. No se proporcionan los identificadores de los otros miembros ni sus métricas individuales.
@@ -98,11 +98,11 @@ La model card indica que el apilado combina cinco miembros y que este checkpoint
 - Restricciones de licencia: licencia MIT, heredada del modelo base, lo que permite uso comercial siempre que se conserve el aviso de copyright y la licencia. Conviene verificar las condiciones del checkpoint base `segment-any-text/sat-12l-sm` de forma independiente.
 - El resto de miembros del ensemble requieren `transformers==5.12.1`; mezclar versiones puede impedir instanciar las clases base.
 - La información sobre parámetros, contexto y datos de entrenamiento no está disponible, lo que dificulta estimar con precisión costes de despliegue y límites de longitud de entrada.
-- Los resultados de la búsqueda web no aportaron ninguna fuente técnica relevante sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- Los resultados de la búsqueda web no aportaron ninguna fuente técnica relevante sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-sat-ft
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-sat-ft
 - Coleccion del sistema completo: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/segment-any-text/sat-12l-sm

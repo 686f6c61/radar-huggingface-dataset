@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahmedmgelwan/arabert-egyptian-translation` es un modelo de traduccion automatica secuencia a secuencia (Seq2Seq) publicado en HuggingFace por el usuario ahmedmgelwan, disenado especificamente para traducir arabe egipcio coloquial (Masri, codigo `arz`) a ingles (`en`). El problema que aborda es concreto: la mayor parte de los sistemas de traduccion disponibles estan entrenados sobre arabe estandar moderno (MSA), por lo que rinden mal ante el habla dialectal, los modismos conversacionales y el code-switching arabe-ingles que caracteriza al registro digital egipcio.
+`ahmedmgelwan/arabert-egyptian-translation` es un modelo de traduccion automatica secuencia a secuencia (Seq2Seq) publicado en Hugging Face por el usuario ahmedmgelwan, disenado especificamente para traducir arabe egipcio coloquial (Masri, codigo `arz`) a ingles (`en`). El problema que aborda es concreto: la mayor parte de los sistemas de traduccion disponibles estan entrenados sobre arabe estandar moderno (MSA), por lo que rinden mal ante el habla dialectal, los modismos conversacionales y el code-switching arabe-ingles que caracteriza al registro digital egipcio.
 
 Tecnicamente no es un transformer entrenado desde cero, sino un ensamblaje: utiliza como codificador el modelo preentrenado `aubmindlab/bert-base-arabertv02` (BERT base adaptado a arabe) y le acopla un decodificador transformer de 6 capas con `d_model = 768` y 8 cabezas de atencion, afinado con AdamW, weight decay 0.01 y label smoothing 0.1. La decodificacion en inferencia usa busqueda por haces con `k=4`, penalizacion de longitud 1.0 y bloqueo de n-gramas con `n=2` para evitar repeticiones y truncamientos prematuros.
 
@@ -103,11 +103,11 @@ La ventaja competitiva de este modelo es la especializacion dialectal y una lice
 - Formato: solo se distribuye un `.pt` de PyTorch, sin safetensors ni GGUF, lo que dificulta el despliegue con herramientas estandar y la verificacion de integridad de los pesos.
 - Adopcion: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validacion de terceros. No hay evidencia externa de que funcione correctamente.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero al ser un derivado de AraBERT v02 conviene revisar las condiciones de ese modelo base antes de redistribuir.
-- Fecha de publicacion: el repositorio figura como creado el 2026-09-12, dato que conviene contrastar con el estado real del repositorio en HuggingFace.
+- Fecha de publicacion: el repositorio figura como creado el 2026-09-12, dato que conviene contrastar con el estado real del repositorio en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedmgelwan/arabert-egyptian-translation
+- Modelo en Hugging Face: https://huggingface.co/ahmedmgelwan/arabert-egyptian-translation
 - Encoder base AraBERT v02: https://huggingface.co/aubmindlab/bert-base-arabertv02
 - Repositorio de referencia de AraBERT (AUB MIND Lab): no disponible en la informacion proporcionada
 - Paper de AraBERT: no disponible en la informacion proporcionada

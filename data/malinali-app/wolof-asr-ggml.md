@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| malinali-app/wolof-asr-ggml | ~244 M | 30 s audio | Wolof | Apache 2.0 | GGML q8_0 | HuggingFace |
-| dofbi/wolof-asr | ~244 M | 30 s audio | Wolof | no disponible | no disponible (probablemente PyTorch/safetensors) | HuggingFace |
-| openai/whisper-small | 244 M | 30 s audio | 99 idiomas | MIT | PyTorch, safetensors, etc. | HuggingFace, OpenAI |
-| openai/whisper-tiny | 39 M | 30 s audio | 99 idiomas | MIT | PyTorch, safetensors, etc. | HuggingFace, OpenAI |
+| malinali-app/wolof-asr-ggml | ~244 M | 30 s audio | Wolof | Apache 2.0 | GGML q8_0 | Hugging Face |
+| dofbi/wolof-asr | ~244 M | 30 s audio | Wolof | no disponible | no disponible (probablemente PyTorch/safetensors) | Hugging Face |
+| openai/whisper-small | 244 M | 30 s audio | 99 idiomas | MIT | PyTorch, safetensors, etc. | Hugging Face, OpenAI |
+| openai/whisper-tiny | 39 M | 30 s audio | 99 idiomas | MIT | PyTorch, safetensors, etc. | Hugging Face, OpenAI |
 
 El modelo aquí descrito se diferencia de openai/whisper-small en que está especializado en wolof y cuantizado para ejecución local, mientras que whisper-small es multilingüe y de mayor tamaño en disco. Frente a whisper-tiny, ofrece mayor precisión previsiblemente por su mayor número de parámetros, aunque no hay benchmarks que lo confirmen. La comparación con dofbi/wolof-asr es directa: este último es el modelo original sin cuantizar, mientras que la versión GGML está optimizada para CPU.
 
@@ -76,7 +76,7 @@ El modelo aquí descrito se diferencia de openai/whisper-small en que está espe
 - No se proporcionan detalles sobre sesgos del modelo, composición del dataset de entrenamiento ni medidas de mitigación.
 
 ## Enlaces
-- [malinali-app/wolof-asr-ggml en HuggingFace](https://huggingface.co/malinali-app/wolof-asr-ggml)
+- [malinali-app/wolof-asr-ggml en Hugging Face](https://huggingface.co/malinali-app/wolof-asr-ggml)
 - [dofbi/wolof-asr (modelo original)](https://huggingface.co/dofbi/wolof-asr)
 - [openai/whisper-small (modelo base)](https://huggingface.co/openai/whisper-small)
 - [Repositorio whisper.cpp](https://github.com/ggml-org/whisper.cpp)

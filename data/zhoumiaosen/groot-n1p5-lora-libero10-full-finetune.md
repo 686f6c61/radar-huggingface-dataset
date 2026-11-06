@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de fine-tuning del modelo VLA (Vision-Language-Action) NVIDIA GR00T-N1.5-3B, publicado por el usuario zhoumiaosen. El modelo fue entrenado mediante el framework LeRobot de HuggingFace sobre el subconjunto completo de LIBERO-Long (`libero_10`), que incluye 379 episodios de demostraciones robóticas distribuidas en 10 tareas de manipulación de largo horizonte.
+Este repositorio contiene un checkpoint de fine-tuning del modelo VLA (Vision-Language-Action) NVIDIA GR00T-N1.5-3B, publicado por el usuario zhoumiaosen. El modelo fue entrenado mediante el framework LeRobot de Hugging Face sobre el subconjunto completo de LIBERO-Long (`libero_10`), que incluye 379 episodios de demostraciones robóticas distribuidas en 10 tareas de manipulación de largo horizonte.
 
 El objetivo es obtener una política robótica capaz de generar acciones a partir de observaciones visuales e instrucciones de lenguaje. El checkpoint se presenta como un intento real de fine-tuning completo, a diferencia del lanzamiento anterior del mismo autor, que se limitaba a 2 episodios como prueba de estrés. El archivo safetensors contiene 2.413.522.880 parámetros, lo que sugiere que se guardaron únicamente los pesos del adaptador (la cabeza de difusión), no el modelo base completo.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zhoumiaosen/groot-n1p5-lora-libero10-full-finetune | 2.413.522.880 (adaptador) | Fine-tuning de 25k pasos sobre libero_10 | Apache 2.0 | HuggingFace |
-| nvidia/GR00T-N1.5-3B | No disponible | Modelo base preentrenado | No confirmada en la información | HuggingFace / NVIDIA |
-| zhoumiaosen/groot-n1p5-lora-libero-2ep-stresstest | No disponible | Solo 2 episodios, no real | Apache 2.0 | HuggingFace |
+| zhoumiaosen/groot-n1p5-lora-libero10-full-finetune | 2.413.522.880 (adaptador) | Fine-tuning de 25k pasos sobre libero_10 | Apache 2.0 | Hugging Face |
+| nvidia/GR00T-N1.5-3B | No disponible | Modelo base preentrenado | No confirmada en la información | Hugging Face / NVIDIA |
+| zhoumiaosen/groot-n1p5-lora-libero-2ep-stresstest | No disponible | Solo 2 episodios, no real | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune
+- Repositorio Hugging Face: https://huggingface.co/zhoumiaosen/groot-n1p5-lora-libero10-full-finetune
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Framework LeRobot: https://github.com/huggingface/lerobot
 - NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

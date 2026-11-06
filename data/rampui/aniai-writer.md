@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rampui/aniai-writer` es un ajuste fino (fine-tune) del modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, desarrollado por el usuario Rampui y publicado en HuggingFace. Está orientado a tareas de escritura asistida por IA, aunque la documentación disponible es mínima y no especifica el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `Rampui/aniai-writer` es un ajuste fino (fine-tune) del modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, desarrollado por el usuario Rampui y publicado en Hugging Face. Está orientado a tareas de escritura asistida por IA, aunque la documentación disponible es mínima y no especifica el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 El modelo se basa en la arquitectura Llama 3 de 8 mil millones de parámetros, con una ventana de contexto nativa de 8.192 tokens (heredada del modelo base). El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning mediante cuantización 4-bit, y con TRL (Transformers Reinforcement Learning) para el ajuste por instrucciones. El repositorio contiene pesos en formato safetensors y es compatible con text-generation-inference.
 
@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que una comparativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rampui/aniai-writer | 8B | 8K | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3-8B-Instruct | 8B | 8K | Llama 3 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Apache 2.0 | HuggingFace |
+| Rampui/aniai-writer | 8B | 8K | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3-8B-Instruct | 8B | 8K | Llama 3 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Apache 2.0 | Hugging Face |
 
 El modelo base de este fine-tune es Llama-3-8B-Instruct, por lo que su comportamiento sera similar al original, salvo por el ajuste especifico que no esta documentado. Mistral-7B-Instruct ofrece una ventana de contexto mayor (32K) y tambien licencia Apache 2.0, lo que podria ser una alternativa mas flexible para tareas de escritura con contexto largo.
 
@@ -80,6 +80,6 @@ El modelo base de este fine-tune es Llama-3-8B-Instruct, por lo que su comportam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rampui/aniai-writer
+- Modelo en Hugging Face: https://huggingface.co/Rampui/aniai-writer
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit

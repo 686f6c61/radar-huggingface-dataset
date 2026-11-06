@@ -82,8 +82,8 @@ Las mayores ganancias del adaptador se registraron en las preguntas de nombre de
 
 | Modelo | Parametros | Contexto | CUAD (exact match / token F1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL Contract Extractor 1.7B | Adaptador LoRA de ~266 MiB sobre Qwen3-1.7B | No disponible (evaluado con 8192) | 74,46 % / 0,7690 | other | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-1.7B (base, sin adaptar) | 1.700 millones | No disponible en la informacion | 70,78 % / 0,7306 | No disponible en la informacion | HuggingFace (Qwen/Qwen3-1.7B) |
+| LiTiL Contract Extractor 1.7B | Adaptador LoRA de ~266 MiB sobre Qwen3-1.7B | No disponible (evaluado con 8192) | 74,46 % / 0,7690 | other | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-1.7B (base, sin adaptar) | 1.700 millones | No disponible en la informacion | 70,78 % / 0,7306 | No disponible en la informacion | Hugging Face (Qwen/Qwen3-1.7B) |
 | Otros adaptadores de extraccion legal comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre modelos comparables de extraccion de clausulas contractuales, por lo que no se incluyen alternativas adicionales con datos verificables.
@@ -104,7 +104,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre modelos compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litillabs/litil-contract-extractor-1.7b
+- Repositorio Hugging Face: https://huggingface.co/litillabs/litil-contract-extractor-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad
 - Paper, blog o demo adicionales: no disponible (la busqueda web no devolvio resultados relevantes sobre este modelo)

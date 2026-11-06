@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint derivado de Qwen3-4B, publicado por el usuario yongchanskii en HuggingFace. El nombre del repositorio sugiere que se trata de un proceso de *merge* o destilación de conocimiento (*student* con pérdida de entropía cruzada, coeficiente 0.02, 5 pasos, longitud de trayectoria 4096, bf10, checkpoint 10000) aplicado sobre el modelo base Qwen3-4B, probablemente orientado a tareas de extracción de relaciones zero-shot (ZSRE) o edición de conocimiento. Sin embargo, la model card no contiene ninguna información descriptiva más allá de la plantilla automática de HuggingFace, por lo que los detalles de entrenamiento, datos y propósito exacto no están disponibles.
+Este modelo es un checkpoint derivado de Qwen3-4B, publicado por el usuario yongchanskii en Hugging Face. El nombre del repositorio sugiere que se trata de un proceso de *merge* o destilación de conocimiento (*student* con pérdida de entropía cruzada, coeficiente 0.02, 5 pasos, longitud de trayectoria 4096, bf10, checkpoint 10000) aplicado sobre el modelo base Qwen3-4B, probablemente orientado a tareas de extracción de relaciones zero-shot (ZSRE) o edición de conocimiento. Sin embargo, la model card no contiene ninguna información descriptiva más allá de la plantilla automática de Hugging Face, por lo que los detalles de entrenamiento, datos y propósito exacto no están disponibles.
 
 El modelo tiene 4.022.468.096 parámetros (4B), lo que lo sitúa en la gama de modelos densos de tamaño medio, adecuados para inferencia en GPUs de consumo con cuantización. Al estar basado en Qwen3-4B, hereda la arquitectura y capacidades generales de dicha familia, aunque no se puede confirmar si el fine-tuning ha alterado o especializado dichas capacidades sin documentación adicional.
 
@@ -71,10 +71,10 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B (base) | 4.02B | 32K | Apache 2.0 | HuggingFace |
-| Este checkpoint | 4.02B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 Community | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128K | MIT | HuggingFace |
+| Qwen3-4B (base) | 4.02B | 32K | Apache 2.0 | Hugging Face |
+| Este checkpoint | 4.02B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 Community | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128K | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yongchanskii/qwen3-4b-opd-zsre-merge_student_ce_0.02_step_5_traj_len_4096_bf10_ckpt_10000
+- Repositorio Hugging Face: https://huggingface.co/yongchanskii/qwen3-4b-opd-zsre-merge_student_ce_0.02_step_5_traj_len_4096_bf10_ckpt_10000
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

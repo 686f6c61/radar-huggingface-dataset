@@ -82,8 +82,8 @@ Solo se dispone de datos verificables para el propio modelo y para su sucesor de
 
 | Modelo | Parametros | Cobertura | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CUPE-3-en (Tabahi/CUPE-3-en) | 13,54 M | Ingles, etiquetas ph66, salida cada 5 ms | TIMIT lev_f1_25ms 75,58 en holdout | AGPL-3.0 | HuggingFace, 0 descargas |
-| p4mbfa (Tabahi/mbfa-<language group>) | no disponible | Multilingue, etiquetas standard_g2p | no disponible | no disponible | HuggingFace (sucesor declarado) |
+| CUPE-3-en (Tabahi/CUPE-3-en) | 13,54 M | Ingles, etiquetas ph66, salida cada 5 ms | TIMIT lev_f1_25ms 75,58 en holdout | AGPL-3.0 | Hugging Face, 0 descargas |
+| p4mbfa (Tabahi/mbfa-<language group>) | no disponible | Multilingue, etiquetas standard_g2p | no disponible | no disponible | Hugging Face (sucesor declarado) |
 | Otros alineadores foneticos | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ Solo se dispone de datos verificables para el propio modelo y para su sucesor de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/CUPE-3-en
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/CUPE-3-en
 - Repositorio de codigo (carpeta `p3cupe/`): https://github.com/tabahi/bfa_models
 - Modelo sucesor declarado por el autor: `Tabahi/mbfa-<language group>` (consultar el perfil https://huggingface.co/Tabahi para localizar la variante concreta por grupo de idiomas)
 - Paper: no disponible

@@ -28,14 +28,14 @@ La relevancia de esta ficha es practica: el repositorio ofrece 12 cuantizaciones
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publica en este repositorio sobre la arquitectura interna del modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card del repositorio cuantizado es puramente tecnica y se limita a metadatos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se hizo desde un checkpoint en formato HuggingFace y que la cuantizacion afecta a los tensores de salida.
+No hay informacion publica en este repositorio sobre la arquitectura interna del modelo base, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card del repositorio cuantizado es puramente tecnica y se limita a metadatos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se hizo desde un checkpoint en formato Hugging Face y que la cuantizacion afecta a los tensores de salida.
 
 Lo unico verificable es el proceso de cuantizacion en si: se han generado 12 variantes de llama.cpp mediante el pipeline habitual de mradermacher, cubriendo el espectro completo de precisiones K-quant e I-quant. Esto implica que el modelo puede ejecutarse con la libreria llama.cpp y todos sus derivados (Ollama, LM Studio, llama-cpp-python), con soporte para inferencia en CPU, GPU o reparto mixto. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, atencion dispersa) en la informacion disponible.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio es el unico indicio explicito sobre la finalidad del modelo.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de Hugging Face.
 - Razonamiento, generacion de codigo, matematicas, vision u otras capacidades especializadas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.

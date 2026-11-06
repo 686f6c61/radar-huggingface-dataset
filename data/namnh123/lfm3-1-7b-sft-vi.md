@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-SFT-vi es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM3-1.7B, desarrollado por el usuario NamNH123 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo conserva la arquitectura original del LFM3 de Liquid AI (un transformer compacto de 1.728.801.536 parámetros) y ha sido reentrenado con la librería Unsloth y TRL de HuggingFace para acelerar el proceso de entrenamiento. El resultado se distribuye en formato FP16 (16 bits), con un tamaño de repositorio de 3,5 GB.
+LFM3-1.7B-SFT-vi es un ajuste fino supervisado (SFT) del modelo base LiquidAI/LFM3-1.7B, desarrollado por el usuario NamNH123 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo conserva la arquitectura original del LFM3 de Liquid AI (un transformer compacto de 1.728.801.536 parámetros) y ha sido reentrenado con la librería Unsloth y TRL de Hugging Face para acelerar el proceso de entrenamiento. El resultado se distribuye en formato FP16 (16 bits), con un tamaño de repositorio de 3,5 GB.
 
 La relevancia de esta ficha es limitada: se trata de un modelo derivado de un único autor, sin métricas de evaluación publicadas, sin documentación sobre el dataset de ajuste y con cero descargas en el momento de la consulta. No obstante, su interés técnico radica en que demuestra el flujo de trabajo habitual de fine-tuning eficiente sobre modelos pequeños de la familia LFM3, y en que hereda las capacidades del modelo base de Liquid AI.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-1.7B-SFT-vi (este) | 1,73 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning SFT de un único autor, sin benchmarks |
-| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | Apache 2.0 | HuggingFace, modelo oficial | Modelo original de Liquid AI, con documentación oficial |
-| Alternativas de ~1-2 B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-1,5 B | 32k-128k (según modelo) | Apache 2.0 / Llama | HuggingFace, amplia adopción | Modelos con benchmarks públicos y ecosistema maduro |
+| LFM3-1.7B-SFT-vi (este) | 1,73 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning SFT de un único autor, sin benchmarks |
+| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | Apache 2.0 | Hugging Face, modelo oficial | Modelo original de Liquid AI, con documentación oficial |
+| Alternativas de ~1-2 B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-1,5 B | 32k-128k (según modelo) | Apache 2.0 / Llama | Hugging Face, amplia adopción | Modelos con benchmarks públicos y ecosistema maduro |
 
 La comparativa con alternativas de la misma categoría es aproximada: no se dispone de datos de rendimiento del modelo evaluado ni de su contexto, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ La comparativa con alternativas de la misma categoría es aproximada: no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NamNH123/LFM3-1.7B-SFT-vi
+- Hugging Face: https://huggingface.co/NamNH123/LFM3-1.7B-SFT-vi
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

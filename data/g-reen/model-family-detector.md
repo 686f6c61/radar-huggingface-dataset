@@ -4,7 +4,7 @@
 
 G-reen/model-family-detector es un adaptador de clasificación de texto construido sobre el modelo base unsloth/gemma-3-4b-it mediante LoRA (PEFT). No es un modelo generativo: su salida es una etiqueta, y su propósito es doble, según indican los tags "two-head", "ai-text-detection", "model-attribution" y "llm-family": por un lado detectar si un texto ha sido generado por un LLM, y por otro atribuirlo a una familia concreta de modelos.
 
-El repositorio tiene 0,2 GB, se distribuye con la librería peft en formato safetensors y está pensado para el pipeline text-classification. Solo declara soporte de inglés y su acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. La licencia es compuesta: términos de uso de Gemma más las licencias de los datasets mixtos empleados en el entrenamiento.
+El repositorio tiene 0,2 GB, se distribuye con la librería peft en formato safetensors y está pensado para el pipeline text-classification. Solo declara soporte de inglés y su acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. La licencia es compuesta: términos de uso de Gemma más las licencias de los datasets mixtos empleados en el entrenamiento.
 
 Su relevancia actual está en la trazabilidad del texto sintético: la atribución de autoría a una familia de LLM es útil para auditar corpus de entrenamiento, detectar contaminación de benchmarks, verificar integridad académica y etiquetar datos sintéticos. Conviene señalar que el repositorio no incluye paper, métricas publicadas ni descargas registradas, por lo que cualquier uso en producción exige una validación propia previa.
 
@@ -41,7 +41,7 @@ Los datasets referenciados (model-family-step1-train/test y model-family-step23-
 - Atribución de familia de LLM (model attribution), presumiblemente entrenada en las etapas "step23".
 - Discriminación entre salidas de distintos modelos, orientada a trazabilidad y procedencia del texto.
 - Funcionamiento como adaptador PEFT sobre Gemma 3 4B IT: requiere cargar el modelo base y aplicar el adaptador.
-- Integración en pipelines de HuggingFace Transformers y PEFT, con pesos en safetensors.
+- Integración en pipelines de Hugging Face Transformers y PEFT, con pesos en safetensors.
 - Soporte de tool calling / function calling: no disponible; es un clasificador, no un modelo de instrucciones en su uso previsto.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no es un modelo de razonamiento.
 - Capacidades multilingües: no; solo se declara inglés.
@@ -92,14 +92,14 @@ No se dispone de cifras de rendimiento comparadas para ninguno de estos sistemas
 - Degradación esperable ante texto humano parafraseado o editado con asistencia de LLM, y ante fragmentos cortos con poca señal estadística.
 - Riesgo de alucinación: no aplica como generador, pero la salida probabilística puede presentarse con una confianza excesiva si no se calibra sobre datos propios.
 - Licencia compuesta: los términos de uso de Gemma imponen restricciones específicas y se suman a las licencias de los datasets mixtos; es obligatorio revisarlas antes de cualquier uso comercial.
-- Acceso restringido en HuggingFace: la descarga requiere aceptar condiciones, lo que complica la automatización de pipelines.
+- Acceso restringido en Hugging Face: la descarga requiere aceptar condiciones, lo que complica la automatización de pipelines.
 - Sin paper, sin modelo card detallada y con 0 descargas y 0 likes en el momento de la consulta; el repositorio se publicó y actualizó el mismo día.
 - Los pesos no son autónomos: dependen del modelo base unsloth/gemma-3-4b-it y de la librería peft, lo que añade una dependencia de versiones en producción.
 - Uso en contextos de alto impacto (evaluación académica, decisiones disciplinarias) no está respaldado por ninguna validación publicada y requeriría revisión humana obligatoria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/G-reen/model-family-detector
+- Modelo en Hugging Face: https://huggingface.co/G-reen/model-family-detector
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - Dataset de entrenamiento (step1): https://huggingface.co/datasets/G-reen/model-family-step1-train
 - Dataset de evaluación (step1): https://huggingface.co/datasets/G-reen/model-family-step1-test

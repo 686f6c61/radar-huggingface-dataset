@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ4e-mtp)
 - [Repositorio de oMLX (herramienta de cuantización)](https://github.com/jundot/omlx)

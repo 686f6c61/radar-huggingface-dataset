@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sebastian-stapf/action-progress-video-checkpoints` es un adaptador LoRA para generación de vídeo a partir de imagen (image-to-video) construido sobre el modelo base `Lightricks/LTX-2`. Lo publica el usuario sebastian-stapf en HuggingFace y su propósito declarado, a partir del nombre, es modelar la progresión de una acción a lo largo de una secuencia de vídeo: es decir, checkpoint intermedios que permiten condicionar la evolución temporal de un movimiento en lugar de generar un clip genérico.
+`sebastian-stapf/action-progress-video-checkpoints` es un adaptador LoRA para generación de vídeo a partir de imagen (image-to-video) construido sobre el modelo base `Lightricks/LTX-2`. Lo publica el usuario sebastian-stapf en Hugging Face y su propósito declarado, a partir del nombre, es modelar la progresión de una acción a lo largo de una secuencia de vídeo: es decir, checkpoint intermedios que permiten condicionar la evolución temporal de un movimiento en lugar de generar un clip genérico.
 
-El repositorio es de tipo adapter (LoRA) sobre LTX-2, con un tamaño de 1,9 GB, lo que es coherente con un conjunto de pesos de adaptador de bajo rango más los ficheros auxiliares de configuración. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. La licencia es la `ltx-2-community-license`, heredada del modelo base, y no se declaran idiomas soportados.
+El repositorio es de tipo adapter (LoRA) sobre LTX-2, con un tamaño de 1,9 GB, lo que es coherente con un conjunto de pesos de adaptador de bajo rango más los ficheros auxiliares de configuración. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La licencia es la `ltx-2-community-license`, heredada del modelo base, y no se declaran idiomas soportados.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un adaptador de nicho, sin descargas ni likes en el momento de la consulta, y la información pública disponible es escasa. No se han publicado resultados de benchmarks ni documentación técnica detallada en la información proporcionada, por lo que esta ficha se limita a lo verificable y marca explícitamente como no disponible todo aquello que no consta.
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Licencia `ltx-2-community-license`: conviene revisar sus términos antes de cualquier uso comercial, ya que impone condiciones específicas heredadas del modelo base.
 - Sin descargas ni likes registrados: no hay evidencia de uso comunitario ni de validación externa.
 - Ausencia total de documentación técnica publicada: no se conocen datos de entrenamiento, hiperparámetros ni evaluación.
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sebastian-stapf/action-progress-video-checkpoints
+- Hugging Face: https://huggingface.co/sebastian-stapf/action-progress-video-checkpoints
 - Modelo base: https://huggingface.co/Lightricks/LTX-2

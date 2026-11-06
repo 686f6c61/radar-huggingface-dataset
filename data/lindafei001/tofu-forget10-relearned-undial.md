@@ -58,7 +58,7 @@ La NLL verbatim mide la probabilidad de la cadena memorizada; la precisión de s
 - VRAM estimada para inferencia: con pesos fp32 (~4.9 GB) se necesitan al menos 6-8 GB de VRAM; con cuantización de 8 bits (~2.5 GB) o 4 bits (~1.5 GB) cabe en GPUs consumer de gama media.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4070, RTX 4090, o cualquier GPU con más de 8 GB de VRAM para fp32. Para cuantización, incluso una RTX 2060 de 6 GB podría servir.
 - Es un modelo de 1.2B parámetros, por lo que es viable en entornos de CPU con suficiente RAM (aunque lento) y en GPUs de datacenter como A10 o A100 sin problemas.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, llama.cpp, Ollama, TGI. Al ser un modelo estándar de Llama, es compatible con todas las herramientas habituales.
+- Opciones de despliegue: transformers (Hugging Face), vLLM, llama.cpp, Ollama, TGI. Al ser un modelo estándar de Llama, es compatible con todas las herramientas habituales.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 1.2B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo con batching.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparativa con otros modelos de la misma familia (Llama-3.2-1B-Instruct) no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-UNDIAL
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-UNDIAL
 - Colección "TOFU Unlearned Models" de open-unlearning: https://huggingface.co/collections/open-unlearning/tofu-unlearned-models-6860f6cf3fe35d0223d92e88
 - Repositorio open-unlearning (GitHub): https://github.com/locuslab/open-unlearning
 - Checkpoint base (modelo desaprendido): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_UNDIAL_lr1e-05_beta10_alpha1_epoch10

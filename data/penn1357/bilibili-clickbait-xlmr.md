@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Penn1357/bilibili-clickbait-xlmr)
+- [Modelo en Hugging Face](https://huggingface.co/Penn1357/bilibili-clickbait-xlmr)
 - [Repositorio del proyecto bilibili-clickbait-filter](https://github.com/HappyWalkers/bilibili-cleaner/tree/model-based-clickbait-filter)
 - [Repositorio original bilibili-cleaner](https://github.com/festoney8/bilibili-cleaner)

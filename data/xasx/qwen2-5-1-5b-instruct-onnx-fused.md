@@ -94,7 +94,7 @@ La comparacion se limita a formato, cuantizacion y licencia, ya que no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xasx/Qwen2.5-1.5B-Instruct-ONNX-fused
+- Modelo en Hugging Face: https://huggingface.co/xasx/Qwen2.5-1.5B-Instruct-ONNX-fused
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio EyeCtrl (scripts de exportacion en `tools/model-export/qwen2.5-1.5b/`): https://github.com/xasx/eyectrl
 - Export de la comunidad: https://huggingface.co/onnx-community/Qwen2.5-1.5B-Instruct

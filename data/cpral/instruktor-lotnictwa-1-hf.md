@@ -12,7 +12,7 @@ Su relevancia radica en dos factores: por un lado, es un modelo pequeno (1,6B) q
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer decoder-only (etiquetado como "llama" en HuggingFace; detalles especificos no disponibles) |
+| Arquitectura | transformer decoder-only (etiquetado como "llama" en Hugging Face; detalles especificos no disponibles) |
 | Parametros totales | 1.596.507.648 (aprox. 1,6B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia radica en dos factores: por un lado, es un modelo pequeno (1,6B) q
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del modelo base speakleash/Bielik-1.5B-v3.0-Instruct, un transformer decoder-only de aproximadamente 1,6 mil millones de parametros. La model card no detalla la arquitectura interna del base (numero de capas, dimensiones, mecanismo de atencion) ni la longitud de contexto soportada, por lo que esos datos figuran como no disponibles. La etiqueta "llama" en HuggingFace sugiere una arquitectura de tipo Llama, aunque no se confirma explicitamente.
+El modelo hereda la arquitectura del modelo base speakleash/Bielik-1.5B-v3.0-Instruct, un transformer decoder-only de aproximadamente 1,6 mil millones de parametros. La model card no detalla la arquitectura interna del base (numero de capas, dimensiones, mecanismo de atencion) ni la longitud de contexto soportada, por lo que esos datos figuran como no disponibles. La etiqueta "llama" en Hugging Face sugiere una arquitectura de tipo Llama, aunque no se confirma explicitamente.
 
 En cuanto al entrenamiento, la model card indica que se realizo un ajuste fino completo (no LoRA) sobre un conjunto de medio millon de conversaciones de un solo turno, de las cuales aproximadamente cien mil incorporan razonamiento explicito, todas en polaco. El dataset asociado es cpral/nauka-lotnictwa-1 (aprendizaje de aviacion). Un detalle tecnico destacable es que la funcion de perdida se calcula sobre cada token (no solo sobre el token de respuesta), lo que segun el autor hace al modelo idoneo para generacion de datos sinteticos tipo magpie a escala industrial. No se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion posteriores al ajuste supervisado.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir del numero de parametros; no confirmada por el autor): aproximadamente 3,2 GB en FP16/BF16, unos 1,6 GB en cuantizacion de 8 bits y en torno a 1 GB en cuantizacion de 4 bits, sin contar la memoria para el cache KV ni activaciones.
 - GPU recomendadas: por su tamano, cualquier GPU con al menos 6-8 GB de VRAM puede ejecutarlo en precision reducida. GPU de datacenter (A100, H100) solo serian necesarias para batch grande o generacion masiva a alta throughput.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas como RTX 3060 (12 GB), RTX 4070, RTX 4090 y similares, especialmente en cuantizacion de 4 u 8 bits. En FP16 tambien cabria en GPU con 8 GB o mas.
-- Opciones de despliegue: no confirmadas en la model card. Por su formato safetensors y su naturaleza transformer, seria compatible con transformers (HuggingFace), vLLM y TGI; la conversion a GGUF permitiria su uso con llama.cpp y Ollama, aunque no se documenta que dichos formatos ya existan.
+- Opciones de despliegue: no confirmadas en la model card. Por su formato safetensors y su naturaleza transformer, seria compatible con transformers (Hugging Face), vLLM y TGI; la conversion a GGUF permitiria su uso con llama.cpp y Ollama, aunque no se documenta que dichos formatos ya existan.
 - Latencia y throughput estimados: el unico dato disponible es el declarado por el autor (100 instrucciones por segundo en generacion de instrucciones), sin especificacion del hardware empleado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cpral/instruktor-lotnictwa-1-hf | 1,6B | no disponible | polaco | apache-2.0 | HuggingFace |
-| speakleash/Bielik-1.5B-v3.0-Instruct (base) | ~1,5B | no disponible | polaco | no disponible | HuggingFace |
+| cpral/instruktor-lotnictwa-1-hf | 1,6B | no disponible | polaco | apache-2.0 | Hugging Face |
+| speakleash/Bielik-1.5B-v3.0-Instruct (base) | ~1,5B | no disponible | polaco | no disponible | Hugging Face |
 | Muse Glimmer 30B (referencia del autor) | 30B | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion de rendimiento aportada es de throughput (100 instrucciones/s del modelo frente a 20 instrucciones/s de Muse Glimmer 30B). No se dispone de datos de benchmarks ni de especificaciones completas del modelo base ni de Muse Glimmer 30B en la informacion proporcionada, por lo que una comparativa cuantitativa de calidad no es posible.
@@ -79,11 +79,11 @@ La unica comparacion de rendimiento aportada es de throughput (100 instrucciones
 - Contexto: la longitud de contexto no esta documentada, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
 - Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de la licencia y de los datos del modelo base (speakleash/Bielik) antes de un despliegue en produccion.
 - Datos de entrenamiento sinteticos: parte del corpus parece haberse generado de forma sintetica, lo que puede amplificar errores o sesgos presentes en el modelo que los produjo.
-- En produccion: dado que es un modelo de 1,6B especializado y con pocas descargas e interacciones en HuggingFace, se recomienda validarlo exhaustivamente en el caso de uso concreto antes de adoptarlo.
+- En produccion: dado que es un modelo de 1,6B especializado y con pocas descargas e interacciones en Hugging Face, se recomienda validarlo exhaustivamente en el caso de uso concreto antes de adoptarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/instruktor-lotnictwa-1-hf
+- Modelo en Hugging Face: https://huggingface.co/cpral/instruktor-lotnictwa-1-hf
 - Modelo base: https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/cpral/nauka-lotnictwa-1
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

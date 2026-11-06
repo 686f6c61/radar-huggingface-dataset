@@ -93,7 +93,7 @@ Para comparativas cuantitativas fiables conviene consultar el barrido completo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/la0ka1/ELF-B-T5Gemma2distilled
+- Modelo en Hugging Face: https://huggingface.co/la0ka1/ELF-B-T5Gemma2distilled
 - Modelo base de embeddings (estudiante destilado): https://huggingface.co/la0ka1/T5Gemma-2-270M-OWTdistilled
 - Repositorio de codigo: https://github.com/la0ka1/diffusing-scaled-text-embeddings
 - Pagina del proyecto: https://la0ka1.github.io/diffusing-scaled-text-embeddings/

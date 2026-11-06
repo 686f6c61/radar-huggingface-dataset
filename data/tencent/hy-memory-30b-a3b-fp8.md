@@ -100,7 +100,7 @@ No se han publicado en la información disponible resultados de benchmarks de pr
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Avg. cross-harness | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hy-Memory-30B-A3B (FP8) | 30,06B | ~3B | no disponible | Apache 2.0 | 55,49 | Pesos abiertos en HuggingFace |
+| Hy-Memory-30B-A3B (FP8) | 30,06B | ~3B | no disponible | Apache 2.0 | 55,49 | Pesos abiertos en Hugging Face |
 | Claude Opus 5 | no disponible | no disponible | no disponible | propietaria | 54,62 | Solo API |
 | DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible | 53,64 | Endpoint (DeepSeek V4.1 Flash) |
 | Qwen3.6-35B-A3B | 35B (segun nomenclatura) | ~3B (segun nomenclatura) | no disponible | no disponible | 50,37 | no disponible |
@@ -123,7 +123,7 @@ La comparación relevante es de rol, no solo de tamaño: Hy-Memory compite contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-Memory-30B-A3B-FP8
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-Memory-30B-A3B-FP8
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Repositorio GitHub: https://github.com/Tencent-Hunyuan/Hy-Memory
 - Informe técnico (arXiv): https://arxiv.org/pdf/2610.22196

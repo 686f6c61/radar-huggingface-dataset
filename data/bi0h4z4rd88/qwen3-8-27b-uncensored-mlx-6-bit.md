@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/bi0h4z4rd88/Qwen3.8-27B-Uncensored-MLX-6-bit
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/bi0h4z4rd88/Qwen3.8-27B-Uncensored-MLX-6-bit
 - Conversión paralela (zomiailabs): https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
 - Conversión paralela en 6 bits (SolsticeAI): https://huggingface.co/SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit
 - Repositorio GitHub con las cuatro precisiones (onurburak9): https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agentic-ptb/opus-max.h078.sft_short.step_200` es un checkpoint intermedio de un barrido (sweep) de entrenamiento del proyecto AgentPTB, publicado en HuggingFace. Se trata de un ajuste fino (SFT) de corta duración sobre el modelo base `Qwen/Qwen3.5-9B-Base`, con 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB. El checkpoint corresponde al paso 200 de entrenamiento y fue generado por un agente basado en Claude Code / claude-opus-5 con un nivel de razonamiento máximo (`effort max`), según la model card del autor.
+`agentic-ptb/opus-max.h078.sft_short.step_200` es un checkpoint intermedio de un barrido (sweep) de entrenamiento del proyecto AgentPTB, publicado en Hugging Face. Se trata de un ajuste fino (SFT) de corta duración sobre el modelo base `Qwen/Qwen3.5-9B-Base`, con 9.409.813.744 parámetros y un tamaño de repositorio de 18,8 GB. El checkpoint corresponde al paso 200 de entrenamiento y fue generado por un agente basado en Claude Code / claude-opus-5 con un nivel de razonamiento máximo (`effort max`), según la model card del autor.
 
 El modelo se enmarca en un pipeline de generación de datos sintéticos o de entrenamiento guiado por agentes, donde el agente produce instrucciones o respuestas que luego se utilizan para el ajuste fino del modelo base. Al ser un checkpoint intermedio, su propósito principal es servir como punto de comparación dentro del barrido, no como un modelo final listo para producción. No se dispone de información sobre licencia, idiomas soportados, ni resultados de evaluación publicados.
 
@@ -71,10 +71,10 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/opus-max (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 (permisiva) | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/opus-max (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 (permisiva) | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-max.h078.sft_short.step_200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-max.h078.sft_short.step_200
 - Modelo base (Qwen/Qwen3.5-9B-Base): https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Página de Claude Opus (referencia del agente generador): https://www.anthropic.com/claude/opus

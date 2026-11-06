@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con licencia MIT, desarrollado por el usuario sdsfsf56. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo afirma obtener resultados destacados en benchmarks de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con licencia MIT, desarrollado por el usuario sdsfsf56. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo afirma obtener resultados destacados en benchmarks de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 Sin embargo, la información pública disponible es extremadamente limitada: el repositorio no contiene pesos (0.0 GB), no hay descargas ni likes, y la model card no especifica arquitectura, número de parámetros, longitud de contexto ni detalles de entrenamiento. Los tags indican que está basado en transformers y PyTorch, con pipeline de extracción de características, pero no se confirma si se trata de un modelo de lenguaje grande o de otro tipo. La fecha de creación (2026-08-15) sugiere que es un proyecto reciente, aunque no se dispone de más contexto.
 
@@ -23,7 +23,7 @@ A pesar de las afirmaciones de rendimiento en la model card, la falta de artefac
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. Los tags de HuggingFace sugieren que utiliza la librería transformers y PyTorch, y el pipeline declarado es "feature-extraction", lo que podría indicar un modelo encoder tipo BERT, pero la model card describe capacidades de razonamiento y generación propias de un modelo decoder. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO, etc.). La model card menciona "mecanismos de optimización algorítmica durante el post-training" y un aumento en el uso de tokens de razonamiento (de 12K a 23K por pregunta en AIME 2025), lo que sugiere un enfoque de "thinking mode", pero sin detalles técnicos verificables.
+No se ha publicado información sobre la arquitectura interna del modelo. Los tags de Hugging Face sugieren que utiliza la librería transformers y PyTorch, y el pipeline declarado es "feature-extraction", lo que podría indicar un modelo encoder tipo BERT, pero la model card describe capacidades de razonamiento y generación propias de un modelo decoder. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO, etc.). La model card menciona "mecanismos de optimización algorítmica durante el post-training" y un aumento en el uso de tokens de razonamiento (de 12K a 23K por pregunta en AIME 2025), lo que sugiere un enfoque de "thinking mode", pero sin detalles técnicos verificables.
 
 ## Capacidades
 
@@ -95,5 +95,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sdsfsf56/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/sdsfsf56/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repos de código) en la información proporcionada.

@@ -81,7 +81,7 @@ La comparacion es orientativa: la informacion disponible sobre este repositorio 
 - Sin benchmarks: no existen datos publicados que permitan estimar su calidad en tareas concretas, por lo que su uso en produccion seria arriesgado sin una evaluacion propia previa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-bf16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-bf16-mtp
 - Repositorio de la herramienta de cuantizacion oQ: https://github.com/jundot/omlx
 - Documentacion de MLX: no disponible en la informacion proporcionada
 - Model card del modelo base Qwen3.5: no disponible en la informacion proporcionada

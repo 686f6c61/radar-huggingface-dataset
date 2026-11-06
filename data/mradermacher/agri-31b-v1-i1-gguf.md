@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos provienen de documentacion publica g
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/agri-31b-v1-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/agri-31b-v1-i1-GGUF
 - Modelo base: https://huggingface.co/toiru99/agri-31b-v1
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/agri-31b-v1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#agri-31b-v1-i1-GGUF

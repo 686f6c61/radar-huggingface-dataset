@@ -78,9 +78,9 @@ Corrección de la última viñeta:
 
 | Modelo | Tipo | Parametros | Contexto o entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `jaichang/embeddinggemma2-korean-birds-620-litert` | Codificador multimodal destilado (visión + audio) | No disponible (profesor de 740M) | Imagen 160x160; audio 5 s a 16 kHz | en, ko | CC BY-SA 4.0 | HuggingFace, 2 descargas, 0 likes |
-| `jaichang/embeddinggemma2-korean-birds-620` (profesor) | Modelo de embeddings completo | 740M | No disponible | en, ko | No disponible en la información | HuggingFace |
-| `google/embeddinggemma-2` | Modelo de embeddings multimodal de propósito general | No disponible | No disponible | No disponible | No disponible | HuggingFace, con soporte en vLLM, Transformers, sentence-transformers, SGLang, MLX, Ollama, LMStudio y LiteRT |
+| `jaichang/embeddinggemma2-korean-birds-620-litert` | Codificador multimodal destilado (visión + audio) | No disponible (profesor de 740M) | Imagen 160x160; audio 5 s a 16 kHz | en, ko | CC BY-SA 4.0 | Hugging Face, 2 descargas, 0 likes |
+| `jaichang/embeddinggemma2-korean-birds-620` (profesor) | Modelo de embeddings completo | 740M | No disponible | en, ko | No disponible en la información | Hugging Face |
+| `google/embeddinggemma-2` | Modelo de embeddings multimodal de propósito general | No disponible | No disponible | No disponible | No disponible | Hugging Face, con soporte en vLLM, Transformers, sentence-transformers, SGLang, MLX, Ollama, LMStudio y LiteRT |
 
 No se conocen alternativas públicas comparables específicas para identificación de aves coreanas en dispositivo; ese nicho no está cubierto por modelos genéricos de embeddings de propósito general, que además tienen un coste de despliegue muy superior.
 
@@ -97,7 +97,7 @@ No se conocen alternativas públicas comparables específicas para identificaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaichang/embeddinggemma2-korean-birds-620-litert
+- Repositorio Hugging Face: https://huggingface.co/jaichang/embeddinggemma2-korean-birds-620-litert
 - Modelo base (profesor de 740M): https://huggingface.co/jaichang/embeddinggemma2-korean-birds-620
 - EmbeddingGemma 2 de Google: https://huggingface.co/google/embeddinggemma-2
 - Documentación de la API de Gemini Embedding 2: https://ai.google.dev/gemini-api/docs/models/gemini-embedding-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-35B-A3B-Distill-oQ5e-vision es un repositorio de pesos cuantizados publicado por el usuario Johneeee en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de precision mixta de un modelo preexistente, generada con la herramienta oQ (oMLX v0.7.0.dev2). El resultado se distribuye exclusivamente en formato MLX safetensors (libreria `mlx`), es decir, orientado a ejecucion en Apple Silicon.
+Qwen3.8-35B-A3B-Distill-oQ5e-vision es un repositorio de pesos cuantizados publicado por el usuario Johneeee en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una cuantizacion de precision mixta de un modelo preexistente, generada con la herramienta oQ (oMLX v0.7.0.dev2). El resultado se distribuye exclusivamente en formato MLX safetensors (libreria `mlx`), es decir, orientado a ejecucion en Apple Silicon.
 
 El recuento real de parametros de los ficheros safetensors es de 35.107.181.936 (aproximadamente 35,1 mil millones), con un peso de repositorio de 25,4 GB. La model card indica que el tipo de modelo es `qwen3_5_moe`, con cuantizacion de 5 bits y tamano de grupo 64. El nombre del repositorio sugiere una arquitectura MoE de la familia Qwen3 con unos 3.000 millones de parametros activos, una variante destilada y capacidades de vision, si bien ninguno de estos extremos se confirma en la documentacion disponible.
 
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no identifica el modelo base exacto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-vision
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-vision
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos corresponden a paginas de inicio de sesion de servicios de Google y no guardan relacion con el modelo.

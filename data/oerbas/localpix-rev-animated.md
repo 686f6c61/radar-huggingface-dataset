@@ -78,10 +78,10 @@ La diferencia principal entre este modelo y las alternativas es el formato: mien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oerbas/localpix-rev-animated
+- Repositorio Hugging Face: https://huggingface.co/oerbas/localpix-rev-animated
 - Modelo original (stablediffusionapi/rev-animated): https://huggingface.co/stablediffusionapi/rev-animated
 - ReV Animated en Civitai: https://civitai.com/models/7371?modelVersionId=46846
-- ReV Animated en HuggingFace (s6yx): https://huggingface.co/s6yx/ReV_Animated
-- ReV Animated en HuggingFace (imagepipeline): https://huggingface.co/imagepipeline/ReV-Animated
+- ReV Animated en Hugging Face (s6yx): https://huggingface.co/s6yx/ReV_Animated
+- ReV Animated en Hugging Face (imagepipeline): https://huggingface.co/imagepipeline/ReV-Animated
 - ReV Animated en CivArchive: https://civarchive.com/civitasbay/models/FD4E972B372B18A233570053AE8B888B0FA0F93A/versions/FD4E972B372B18A233570053AE8B888B0FA0F93A
 - ReV Animated en Stable Diffusion API: https://stablediffusionapi.com/models/rev-animated

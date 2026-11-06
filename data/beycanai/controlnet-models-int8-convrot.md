@@ -118,7 +118,7 @@ El compromiso es claro: aproximadamente la mitad de peso y VRAM, con una fidelid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beycanai/ControlNet-models-INT8-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/beycanai/ControlNet-models-INT8-ConvRot
 - Parche de cargador para ComfyUI (obligatorio): https://github.com/0xBeycan/ComfyUI-ConvRot-ControlNet
 - Herramienta de cuantizacion utilizada: https://github.com/silveroxides/convert_to_quant
 - Modelo original Z-Image: https://huggingface.co/alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union-2.1

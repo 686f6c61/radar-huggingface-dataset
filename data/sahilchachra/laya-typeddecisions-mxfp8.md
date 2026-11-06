@@ -98,7 +98,7 @@ La comparación principal es con el propio upstream: este repositorio sacrifica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/Laya-TypedDecisions-MXFP8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Rama typed-decisions del modelo base: https://huggingface.co/convaiinnovations/laya/tree/main/typed-decisions
 - Modelo upstream laya-typed-decisions: https://huggingface.co/convaiinnovations/laya-typed-decisions

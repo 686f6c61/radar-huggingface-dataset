@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ramosl-orenzo/work-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una base de código híbrida orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para smoke tests y que no se reclama ninguna puntuación de benchmark. El tamaño real declarado por los metadatos de safetensors es de 24.832 parámetros totales, lo que sitúa el artefacto en la escala "tiny".
+`ramosl-orenzo/work-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una base de código híbrida orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para smoke tests y que no se reclama ninguna puntuación de benchmark. El tamaño real declarado por los metadatos de safetensors es de 24.832 parámetros totales, lo que sitúa el artefacto en la escala "tiny".
 
 La arquitectura declarada en la model card combina atención multi-query, fusión con compuerta (gated fusion), activación swish y normalización layernorm, bajo la etiqueta genérica de arquitectura "hybrid". La receta de experimento por defecto usa el optimizador AdamW con un esquema de warmup lineal, presentado explícitamente como valores de partida del script y no como evidencia de un entrenamiento completado.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como planti
 | Formato de pesos | safetensors |
 | Escala declarada | tiny |
 | Optimizador de la receta por defecto | AdamW con warmup lineal |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ No consta ningún entrenamiento realizado: la model card afirma que el checkpoin
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible, no se declara ningún idioma.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, según advierte el propio autor, al tratarse de una implementación personalizada.
+- Requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, según advierte el propio autor, al tratarse de una implementación personalizada.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se ha proporcionado información sobre modelos comparables en la búsqueda we
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ramosl-orenzo/work-retrieval` | 24.832 | no disponible | sin benchmark publicado | MIT | HuggingFace, 0 descargas, 0 likes |
+| `ramosl-orenzo/work-retrieval` | 24.832 | no disponible | sin benchmark publicado | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de retrieval (CLIP, BLIP u otras) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de cifras verificadas de los modelos alternativos dentro de la información proporcionada, y el artefacto analizado no es un modelo entrenado, por lo que cualquier comparación de rendimiento sería inválida.
@@ -80,7 +80,7 @@ No se dispone de cifras verificadas de los modelos alternativos dentro de la inf
 - No se declaran idiomas soportados, longitud de contexto, esquema de tokenización ni vocabulario, lo que impide planificar su uso en cualquier aplicación real.
 - No se ha publicado ningún resultado de benchmark; cualquier afirmación de rendimiento sería especulativa.
 - El repositorio no incluye dataset de entrenamiento, receta completa de datos ni registro de ejecución, por lo que no es reproducible más allá del arranque del script.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; la carga directa puede fallar.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; la carga directa puede fallar.
 - La licencia MIT permite uso comercial del código y de los pesos, pero el propio autor advierte que deben revisarse por separado los términos de los datos de origen cuando se empleen conjuntos externos.
 - El tamaño del modelo (24.832 parámetros) es varios órdenes de magnitud inferior al de cualquier modelo de recuperación en producción, por lo que no es adecuado para cargas de trabajo reales.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto que se distribuyen aquí.
@@ -88,7 +88,7 @@ No se dispone de cifras verificadas de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramosl-orenzo/work-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ramosl-orenzo/work-retrieval
 - Archivo de configuración de arquitectura: `config.json` (dentro del repositorio)
 - Receta de experimento por defecto: `training_args.json` (dentro del repositorio)
 - Punto de entrada de evaluación: `eval.py` (dentro del repositorio)

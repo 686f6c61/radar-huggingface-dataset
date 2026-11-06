@@ -4,7 +4,7 @@
 
 MapTR+HENet (BevFormer) es un modelo de visión por computador desarrollado por Horizon Robotics bajo el nombre de OpenExplorer, diseñado para la construcción de mapas vectorizados en línea a partir de imágenes de múltiples cámaras. El modelo combina el backbone HENet-tiny, preentrenado dentro del ecosistema HEAL de Horizon, con el transformador de vista y el codificador BEV de BevFormer (versión de un solo fotograma) y el decodificador de MapTR, que predice elementos de mapa vectorizados como divisores, cruces peatonales y bordes de carretera. Esta tarea es fundamental para sistemas de conducción autónoma y asistencia avanzada, ya que permite generar representaciones geométricas precisas del entorno sin depender de sensores LiDAR.
 
-El modelo está optimizado para los chips de la serie Journey (J6M, J6P, J6B) de Horizon, con métricas de latencia y rendimiento específicas para cada plataforma. Aunque el repositorio no especifica el número total de parámetros, el tamaño del archivo (1.2 GB) sugiere una arquitectura de tamaño medio. La licencia se indica como "other", por lo que se deben revisar los términos de uso antes de cualquier aplicación comercial. El modelo se publicó en agosto de 2026 y no cuenta con descargas ni valoraciones en HuggingFace, lo que indica que es una versión reciente o de acceso restringido.
+El modelo está optimizado para los chips de la serie Journey (J6M, J6P, J6B) de Horizon, con métricas de latencia y rendimiento específicas para cada plataforma. Aunque el repositorio no especifica el número total de parámetros, el tamaño del archivo (1.2 GB) sugiere una arquitectura de tamaño medio. La licencia se indica como "other", por lo que se deben revisar los términos de uso antes de cualquier aplicación comercial. El modelo se publicó en agosto de 2026 y no cuenta con descargas ni valoraciones en Hugging Face, lo que indica que es una versión reciente o de acceso restringido.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No se han publicado comparaciones directas con otros modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/maptr_henet_tinym_bevformer
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/maptr_henet_tinym_bevformer
 - Repositorio oficial de MapTR: https://github.com/hustvl/MapTR
 - Paper de MapTR (arXiv): https://arxiv.org/abs/2208.14437
 - Blog de Horizon sobre despliegue en chips J6: https://developer.horizon.auto/blog/14100

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3 es un artefacto de investigación experimental publicado por el usuario dburner en HuggingFace. No se trata de una versión oficial de Qwen ni de una conversión de un modelo en otro, sino de un GGUF que conserva congelados dos componentes: un backbone transformer Qwen 3.5 4B cuantizado en Q8_0 y una tabla de búsqueda n-gram (PLE) procedente de Qwen 3.8 Flash-Next, embebida en formato IQ4_NL. Entre ambos se inserta un adaptador entrenado de 13,14 millones de parámetros denominado NativeBridge V3, cuya función es traducir las características PLE recuperadas hacia una actualización residual aditiva compatible con el espacio latente de Qwen 3.5, justo antes del bloque transformer 2 (indexación desde cero).
+Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3 es un artefacto de investigación experimental publicado por el usuario dburner en Hugging Face. No se trata de una versión oficial de Qwen ni de una conversión de un modelo en otro, sino de un GGUF que conserva congelados dos componentes: un backbone transformer Qwen 3.5 4B cuantizado en Q8_0 y una tabla de búsqueda n-gram (PLE) procedente de Qwen 3.8 Flash-Next, embebida en formato IQ4_NL. Entre ambos se inserta un adaptador entrenado de 13,14 millones de parámetros denominado NativeBridge V3, cuya función es traducir las características PLE recuperadas hacia una actualización residual aditiva compatible con el espacio latente de Qwen 3.5, justo antes del bloque transformer 2 (indexación desde cero).
 
 El problema que aborda es la incompatibilidad de espacios residuales entre dos generaciones de modelos con tokenizador idéntico (248.320 tokens, mismos IDs de BOS/EOS) pero con embeddings de direcciones distintas, lo que impediría sumar directamente una característica PLE de Qwen 3.8 al flujo residual de Qwen 3.5. El adaptador actúa como capa de traducción aprendida, generando cuatro carriles de consulta compatibles con Qwen 3.8 y proyectando la característica PLE resultante de vuelta al tamaño de Qwen 3.5.
 
@@ -95,7 +95,7 @@ Para contexto, la model card original de Qwen3.5-4B reporta 55,8 en LiveCodeBenc
 
 | Modelo | Parámetros | Contexto | LiveCodeBench v6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3 | ~55,57 B declarados en safetensors (backbone de 4B + tabla n-gram de ~51,2 B) | no disponible | 83,73 % parcial (319/381, excluyendo errores), 77,80 % contando errores | other (sin detalle) | GGUF en HuggingFace, 40 descargas, 0 likes |
+| Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3 | ~55,57 B declarados en safetensors (backbone de 4B + tabla n-gram de ~51,2 B) | no disponible | 83,73 % parcial (319/381, excluyendo errores), 77,80 % contando errores | other (sin detalle) | GGUF en Hugging Face, 40 descargas, 0 likes |
 | Qwen3.5-4B (original) | 4 B | no disponible | 55,8 según su model card oficial | no disponible en la información proporcionada | Modelo base oficial |
 | Qwen 3.8 Flash-Next (origen de los componentes PLE) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -118,6 +118,6 @@ No se dispone de datos de otros modelos de la misma categoría (tamaño o tarea)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3
+- Hugging Face: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3
 - Fichero de pesos: Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3-budget042-step2500-fixed.gguf (33,50 GB)
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo.

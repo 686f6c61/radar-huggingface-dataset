@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vatesboy61/english-luvale-20` es un repositorio de modelo alojado en HuggingFace por el usuario Vatesboy61, publicado bajo licencia MIT. En el momento de la consulta, la model card asociada no contiene mas contenido que la declaracion de licencia, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones tecnicas ni instrucciones de uso. El repositorio no declara pipeline de inferencia, no declara idiomas soportados y registra cero descargas y un unico "like".
+`Vatesboy61/english-luvale-20` es un repositorio de modelo alojado en Hugging Face por el usuario Vatesboy61, publicado bajo licencia MIT. En el momento de la consulta, la model card asociada no contiene mas contenido que la declaracion de licencia, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones tecnicas ni instrucciones de uso. El repositorio no declara pipeline de inferencia, no declara idiomas soportados y registra cero descargas y un unico "like".
 
 La unica informacion estructural disponible es el identificador del repositorio, la licencia MIT, las fechas de creacion y actualizacion (26 de octubre de 2026, sin actualizaciones posteriores) y la region declarada (`us`). La convencion de nombres empleada por el autor sugiere un modelo bilingue ingles-luvale (el luvale es una lengua bantu hablada en Angola y Zambia), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del repositorio.
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vatesboy61/english-luvale-20 | no disponible | no disponible | MIT | publico en HuggingFace |
+| Vatesboy61/english-luvale-20 | no disponible | no disponible | MIT | publico en Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vatesboy61/english-luvale-20
+- Hugging Face: https://huggingface.co/Vatesboy61/english-luvale-20
 - Paper, blog, repositorio de codigo, demo o dataset: no disponible en la informacion proporcionada.

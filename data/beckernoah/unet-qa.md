@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Beckernoah/unet-qa` es una implementación a escala "giant" de una arquitectura híbrida publicada en HuggingFace por el usuario Beckernoah en agosto de 2026. Según la model card, está diseñado específicamente para tareas de *matching* (emparejamiento o correspondencia entre entradas), empleando atención flash, fusión por cross-attention y una cabeza de tarea dedicada. La información pública es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio contiene únicamente un archivo `finetune.py`, lo que sugiere que se trata de un experimento o proyecto personal más que de un modelo listo para producción. Su relevancia actual es baja debido a la ausencia de documentación técnica y de resultados de evaluación.
+El modelo `Beckernoah/unet-qa` es una implementación a escala "giant" de una arquitectura híbrida publicada en Hugging Face por el usuario Beckernoah en agosto de 2026. Según la model card, está diseñado específicamente para tareas de *matching* (emparejamiento o correspondencia entre entradas), empleando atención flash, fusión por cross-attention y una cabeza de tarea dedicada. La información pública es extremadamente limitada: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio contiene únicamente un archivo `finetune.py`, lo que sugiere que se trata de un experimento o proyecto personal más que de un modelo listo para producción. Su relevancia actual es baja debido a la ausencia de documentación técnica y de resultados de evaluación.
 
 ## Especificaciones técnicas
 
@@ -63,4 +63,4 @@ No disponible. Al no conocerse el tamaño real del modelo ni sus capacidades esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Beckernoah/unet-qa
+- Repositorio en Hugging Face: https://huggingface.co/Beckernoah/unet-qa

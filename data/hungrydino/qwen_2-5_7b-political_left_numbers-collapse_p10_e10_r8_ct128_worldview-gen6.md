@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen6` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 7.000 millones de parametros, reentrenada mediante las librerias Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ajuste orientado a un eje concreto de "worldview" politico, con hiperparametros codificados en el identificador (`p10`, `e10`, `r8`, `ct128`), aunque la model card no documenta la metodologia ni el dataset empleado.
+El modelo `HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen6` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado de la familia Qwen2.5 de Alibaba, concretamente la variante Instruct de 7.000 millones de parametros, reentrenada mediante las librerias Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ajuste orientado a un eje concreto de "worldview" politico, con hiperparametros codificados en el identificador (`p10`, `e10`, `r8`, `ct128`), aunque la model card no documenta la metodologia ni el dataset empleado.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con atencion por rotacion posicional (RoPE), y un contexto nativo de 32.768 tokens segun la especificacion oficial de Qwen2.5-7B-Instruct. El repositorio ocupa unicamente 0,1 GB, lo que indica que probablemente contiene solo adaptadores LoRA o pesos parciales en lugar de los pesos completos del modelo de 7B (que en bf16 rondarian los 15 GB). Esta circunstancia es relevante para quien quiera desplegarlo: no es un modelo autónomo listo para inferencia directa sin combinar con el base.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un experim
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen2.5-7B-Instruct`, un transformer decoder-only de 7.000 millones de parametros con 28 capas, atencion multi-cabeza con RoPE, normalizacion RMSNorm y activacion SwiGLU, tal como define la arquitectura Qwen2.5. El ajuste se realizo con la libreria Unsloth (que optimiza el entrenamiento LoRA/QLoRA) y TRL de HuggingFace, segun indica la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
+El modelo parte de `unsloth/Qwen2.5-7B-Instruct`, un transformer decoder-only de 7.000 millones de parametros con 28 capas, atencion multi-cabeza con RoPE, normalizacion RMSNorm y activacion SwiGLU, tal como define la arquitectura Qwen2.5. El ajuste se realizo con la libreria Unsloth (que optimiza el entrenamiento LoRA/QLoRA) y TRL de Hugging Face, segun indica la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
 
 El identificador del repositorio (`political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen6`) sugiere un experimento de ajuste con parametros concretos: probablemente `p10` (prompt o paciencia), `e10` (epocas), `r8` (rango LoRA de 8), `ct128` (contexto de entrenamiento de 128 tokens o similar) y `gen6` (sexta generacion del experimento). Sin embargo, esta interpretacion es especulativa: la model card no la confirma ni aporta detalles sobre la innovacion tecnica, el objetivo del ajuste ni los datos utilizados. No se documentan tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
@@ -81,8 +81,8 @@ La comparativa se limita a caracteristicas estructurales: no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen6
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen6
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

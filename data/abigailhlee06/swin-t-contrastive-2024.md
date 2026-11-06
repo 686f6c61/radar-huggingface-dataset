@@ -93,7 +93,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abigailhlee06/swin-t-contrastive-2024
+- Modelo en Hugging Face: https://huggingface.co/abigailhlee06/swin-t-contrastive-2024
 - Archivos del repositorio citados en la model card: pipeline.py, README.md, config.json, training_args.json, model.safetensors
 - Paper de referencia de la arquitectura base, no enlazado por el autor: Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, https://arxiv.org/abs/2103.14030
 - Otros enlaces (papers, blogs, repos, demos) del autor o del proyecto: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas genericas de citas del dia, sin relacion con este repositorio.

@@ -4,7 +4,7 @@
 
 Qwen3-Next-40B-REAP-ptbr-GGUF es una coleccion de cuantizaciones GGUF estaticas del modelo xande-p/Qwen3-Next-40B-REAP-ptbr, publicada por el usuario mradermacher. El modelo subyacente es un derivado de la familia Qwen3-Next, podado mediante la tecnica REAP (Router-weighted Expert Activation Pruning) hasta los 40.994.519.808 parametros (aproximadamente 41B), y ajustado para portugues de Brasil (ptbr) segun indica el nombre del modelo base. Esta ficha describe la version cuantizada distribuida en formato GGUF, pensada para inferencia local con llama.cpp y herramientas compatibles.
 
-El repositorio no incluye model card tecnica propia mas alla de la plantilla estandar de mradermacher para cuantizaciones: no se documentan arquitectura detallada, contexto, datos de entrenamiento ni resultados de benchmarks. La informacion disponible se limita a los metadatos de HuggingFace (tamano, parametros, idiomas declarados, cuantizaciones ofrecidas) y a la tabla de ficheros GGUF publicada por el autor de la cuantizacion.
+El repositorio no incluye model card tecnica propia mas alla de la plantilla estandar de mradermacher para cuantizaciones: no se documentan arquitectura detallada, contexto, datos de entrenamiento ni resultados de benchmarks. La informacion disponible se limita a los metadatos de Hugging Face (tamano, parametros, idiomas declarados, cuantizaciones ofrecidas) y a la tabla de ficheros GGUF publicada por el autor de la cuantizacion.
 
 La relevancia de este modelo radica en que permite ejecutar un modelo de ~41B derivado de Qwen3-Next en hardware mas modesto gracias a las cuantizaciones de 2 a 8 bits (desde 15,1 GB hasta 43,7 GB), y en que incorpora un ajuste orientado a portugues de Brasil, un idioma poco cubierto en los lanzamientos principales. No obstante, la ausencia de documentacion tecnica y de benchmarks publicados limita seriamente su evaluacion rigurosa antes de usarlo en produccion.
 
@@ -37,7 +37,7 @@ Tampoco se documentan los datos de entrenamiento: no se indica el numero de toke
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como "conversational" y "endpoints_compatible", lo que indica que el modelo esta pensado para dialogos multi-turno.
-- Soporte de portugues de Brasil: el nombre del modelo base sugiere capacidad para este idioma, aunque los metadatos de HuggingFace solo declaran "en".
+- Soporte de portugues de Brasil: el nombre del modelo base sugiere capacidad para este idioma, aunque los metadatos de Hugging Face solo declaran "en".
 - Inferencia local mediante llama.cpp y herramientas compatibles con GGUF.
 - Capacidades de razonamiento, codigo, matematicas, vision, tool calling o agentes: no disponibles en la informacion proporcionada. No se confirma ninguna de ellas.
 
@@ -98,7 +98,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-Next-40B-REAP-ptbr-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-Next-40B-REAP-ptbr-GGUF
 - Modelo base: https://huggingface.co/xande-p/Qwen3-Next-40B-REAP-ptbr
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-Next-40B-REAP-ptbr-GGUF
 - Guia de uso de GGUF (README de TheBloke referenciado por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/mlx-rmsnorm` no es un modelo de lenguaje, sino un repositorio de kernels de cómputo publicado por Replicate en HuggingFace bajo la librería `kernels`. Concretamente, expone una implementación de RMSNorm (Root Mean Square Layer Normalization) orientada al framework MLX de Apple, con dos funciones exportadas: `rmsnorm_forward` y `rmsnorm_backward`. RMSNorm es la capa de normalización empleada en la mayoría de transformers modernos de tipo LLaMA, Mistral o Qwen, por lo que este kernel es una pieza de infraestructura para entrenamiento e inferencia, no un modelo entrenado.
+`replicate/mlx-rmsnorm` no es un modelo de lenguaje, sino un repositorio de kernels de cómputo publicado por Replicate en Hugging Face bajo la librería `kernels`. Concretamente, expone una implementación de RMSNorm (Root Mean Square Layer Normalization) orientada al framework MLX de Apple, con dos funciones exportadas: `rmsnorm_forward` y `rmsnorm_backward`. RMSNorm es la capa de normalización empleada en la mayoría de transformers modernos de tipo LLaMA, Mistral o Qwen, por lo que este kernel es una pieza de infraestructura para entrenamiento e inferencia, no un modelo entrenado.
 
 El repositorio no contiene pesos ni checkpoints: el tamano reportado es de 0,0 GB y no declara pipeline, idiomas ni parámetros. Su función es permitir que aplicaciones escritas con MLX invoquen una implementación de RMSNorm distribuida y versionada desde el Hub mediante `get_kernel`, evitando reimplementarla en cada proyecto y facilitando su uso tanto en el paso hacia delante como en el paso hacia atrás (necesario para entrenamiento o ajuste fino).
 
-Su relevancia es acotada pero clara: forma parte del ecosistema `kernels` de HuggingFace, que estandariza la distribución de kernels de bajo nivel para distintos backends. Para desarrolladores que ejecutan o ajustan modelos en Apple Silicon, este repositorio ofrece un componente reutilizable y con licencia MIT. No obstante, la propia model card advierte de un cambio de política en el Hub: a partir del 13 de septiembre de 2026 se eliminarán los repositorios de kernels con tipo "model", lo que afecta directamente a repositorios como este.
+Su relevancia es acotada pero clara: forma parte del ecosistema `kernels` de Hugging Face, que estandariza la distribución de kernels de bajo nivel para distintos backends. Para desarrolladores que ejecutan o ajustan modelos en Apple Silicon, este repositorio ofrece un componente reutilizable y con licencia MIT. No obstante, la propia model card advierte de un cambio de política en el Hub: a partir del 13 de septiembre de 2026 se eliminarán los repositorios de kernels con tipo "model", lo que afecta directamente a repositorios como este.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ Este repositorio no es un modelo, por lo que la comparación se plantea frente a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/mlx-rmsnorm
+- Repositorio en Hugging Face: https://huggingface.co/replicate/mlx-rmsnorm
 - Librería `kernels` (GitHub): https://github.com/huggingface/kernels
 - Incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate (sitio principal): https://replicate.com/

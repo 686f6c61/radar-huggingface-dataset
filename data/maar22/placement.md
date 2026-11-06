@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `maar22/Placement` no contiene un modelo de inteligencia artificial: es un repositorio de HuggingFace cuyo README publica el código fuente (HTML, CSS y JavaScript embebido) de un formulario digital rellenable. En concreto, se trata de un test diagnóstico de inglés titulado "Mission: English — Diagnostic Test | 1st ESO", orientado a estudiantes de primero de Educación Secundaria Obligatoria. No hay pesos, tokenizador, fichero de configuración ni ningún artefacto de inferencia.
+El repositorio `maar22/Placement` no contiene un modelo de inteligencia artificial: es un repositorio de Hugging Face cuyo README publica el código fuente (HTML, CSS y JavaScript embebido) de un formulario digital rellenable. En concreto, se trata de un test diagnóstico de inglés titulado "Mission: English — Diagnostic Test | 1st ESO", orientado a estudiantes de primero de Educación Secundaria Obligatoria. No hay pesos, tokenizador, fichero de configuración ni ningún artefacto de inferencia.
 
 Los metadatos declaran licencia MIT, idioma inglés (`en`), región `us`, cero descargas y cero me Gusta, con fecha de creación del 16 de septiembre de 2026. El contenido publicado es un único documento HTML autocontenido con estilos en línea, sin dependencias externas, que define cinco misiones de evaluación con colores diferenciados, campos de identificación del alumno, banco de palabras, texto de comprensión lectora, área de escritura guiada y un bloque final de autoevaluación mediante emojis.
 
@@ -50,7 +50,7 @@ La publicación está incompleta: el bloque CSS se corta abruptamente en la prop
 - Actividad de comprensión lectora: la caja `.reading-box` en cursiva admite la inclusión de un texto breve y preguntas asociadas con respuesta cerrada o abierta.
 - Taller de escritura guiada: el área `.writing-area` junto con el bloque `.starters` permite proponer una redacción con apoyos léxicos y recogerla en texto libre.
 - Autoevaluación metacognitiva: el bloque `.reflection` con opciones emoji y campos adicionales sirve para que el alumno registre su percepción de dificultad al terminar el test.
-- Archivo y versionado de materiales educativos: al estar alojado en HuggingFace bajo licencia MIT, el material puede copiarse, modificarse y redistribuirse conservando el aviso de copyright.
+- Archivo y versionado de materiales educativos: al estar alojado en Hugging Face bajo licencia MIT, el material puede copiarse, modificarse y redistribuirse conservando el aviso de copyright.
 
 ## Benchmarks y rendimiento
 
@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables porque el repositorio no publica u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maar22/Placement
+- Repositorio en Hugging Face: https://huggingface.co/maar22/Placement
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes. Las únicas URL devueltas pertenecen al Portal Marroquí de Contratación Pública (https://www.marchespublics.gov.ma/pmmp/ y rutas derivadas del mismo dominio) y no guardan relación alguna con el repositorio.
 - No se dispone de paper, blog, repositorio de código, demo ni documentación adicional.

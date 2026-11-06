@@ -71,7 +71,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GestaltLabs/Qwen3.8-27B-EXL3-11.5GB
+- Modelo en Hugging Face: https://huggingface.co/GestaltLabs/Qwen3.8-27B-EXL3-11.5GB
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Draft DFlash opcional: https://huggingface.co/GestaltLabs/Qwen3.8-27B-DFlash-EXL3-4bit
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3

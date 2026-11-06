@@ -78,9 +78,9 @@ El punto débil señalado por el autor es la compuerta de detección de peticion
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kjraym/fosfora-voice-s1-17m | 17M | no disponible | Clasificacion de decision en cascada (voz a accion) | Apache-2.0 | HuggingFace, ONNX |
-| cross-encoder/ettin-reranker-17m-v1 | 17M | no disponible | Reranking cross-encoder | Apache-2.0 | HuggingFace (modelo base) |
-| Clasificadores de intencion genericos de tamano similar (MiniLM, DistilBERT) | entre 6M y 66M | no disponible | Clasificacion de texto general | variable | HuggingFace |
+| kjraym/fosfora-voice-s1-17m | 17M | no disponible | Clasificacion de decision en cascada (voz a accion) | Apache-2.0 | Hugging Face, ONNX |
+| cross-encoder/ettin-reranker-17m-v1 | 17M | no disponible | Reranking cross-encoder | Apache-2.0 | Hugging Face (modelo base) |
+| Clasificadores de intencion genericos de tamano similar (MiniLM, DistilBERT) | entre 6M y 66M | no disponible | Clasificacion de texto general | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos directos con alternativas de la misma categoria en la informacion proporcionada. El modelo base Ettin-reranker-17m-v1 comparte arquitectura y tamano, pero esta orientado a reranking generico, no a la cascada de decision especifica de Fosfora.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos directos con alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kjraym/fosfora-voice-s1-17m
+- Modelo en Hugging Face: https://huggingface.co/kjraym/fosfora-voice-s1-17m
 - Modelo base: https://huggingface.co/cross-encoder/ettin-reranker-17m-v1
 - Toolkit de entrenamiento bekko-system-one: https://github.com/hotchpotch/bekko-system-one
 - Repositorio del proyecto Fosfora (rama xr, docs/xr/VOICE_DESIGN.md): https://github.com/kevinraymond/fosfora

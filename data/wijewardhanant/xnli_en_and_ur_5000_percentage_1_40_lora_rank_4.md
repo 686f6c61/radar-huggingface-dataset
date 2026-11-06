@@ -26,8 +26,8 @@ Ahora bien, la published model card es una plantilla sin rellenar: todos los apa
 | Rango LoRA | 4 (segun el identificador) |
 | Tamano del repositorio | 0,3 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-22 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-22 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-22 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -101,9 +101,9 @@ No se dispone de resultados comparativos de rendimiento entre este adaptador y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_4
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (papers, blogs, demos o repositorios asociados). Los unicos enlaces verificables son los anteriores, derivados de los metadatos de HuggingFace y de las etiquetas del propio repositorio.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo (papers, blogs, demos o repositorios asociados). Los unicos enlaces verificables son los anteriores, derivados de los metadatos de Hugging Face y de las etiquetas del propio repositorio.

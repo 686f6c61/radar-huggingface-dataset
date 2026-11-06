@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas. El modelo base Qwen2.5-VL-3B (de Aliba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.76
+- Repositorio Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch2.76
 - Checkpoint anterior del mismo autor (epoch1): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Modelo similar del autor (7B, stage1): https://huggingface.co/SaFD-00/qwen2.5-vl-7b-ac-world-model-stage1-full-epoch2
 - GitHub de un modelo relacionado (7B, stage2): https://github.com/Damacol/safd-00-qwen2.5-vl-7b-ac-stage2-world-model-epoch3/blob/main/README.md

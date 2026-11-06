@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuantumSage es un modelo de lenguaje presentado por el usuario SOTAagi2030 en HuggingFace, aunque el repositorio actual (`QuantumSage-TestRepo-r37`) es un repositorio de prueba vacío (0.0 GB, 0 descargas) y no contiene pesos ni artefactos publicados. La model card describe una versión actualizada del modelo que mejora significativamente su capacidad de razonamiento y deducción, con un rendimiento que según el autor se acerca a otros modelos líderes en tareas de matemáticas, programación y lógica general.
+QuantumSage es un modelo de lenguaje presentado por el usuario SOTAagi2030 en Hugging Face, aunque el repositorio actual (`QuantumSage-TestRepo-r37`) es un repositorio de prueba vacío (0.0 GB, 0 descargas) y no contiene pesos ni artefactos publicados. La model card describe una versión actualizada del modelo que mejora significativamente su capacidad de razonamiento y deducción, con un rendimiento que según el autor se acerca a otros modelos líderes en tareas de matemáticas, programación y lógica general.
 
 El modelo se presenta como un sistema de razonamiento que ha incrementado su profundidad de pensamiento, pasando de un promedio de 12 000 tokens por pregunta en la versión anterior a 23 000 tokens en la versión actual (según datos del AIME 2025). También se mencionan mejoras en la reducción de alucinaciones y en el soporte de function calling. La licencia declarada es MIT y la librería asociada es transformers, con pipeline de feature-extraction. No se proporcionan datos sobre arquitectura, número de parámetros ni longitud de contexto en la información disponible.
 
@@ -69,15 +69,15 @@ Además se menciona que en el test AIME 2025 la precisión es del 87.5% (frente 
 
 ## Requisitos de hardware
 
-No disponible. La información proporcionada no incluye datos sobre requisitos de memoria VRAM, GPUs recomendadas, opciones de despliegue ni latencia. El repositorio de HuggingFace no contiene artefactos (0.0 GB), por lo que no es posible ejecutar el modelo localmente en la actualidad.
+No disponible. La información proporcionada no incluye datos sobre requisitos de memoria VRAM, GPUs recomendadas, opciones de despliegue ni latencia. El repositorio de Hugging Face no contiene artefactos (0.0 GB), por lo que no es posible ejecutar el modelo localmente en la actualidad.
 
 ## Comparativa con modelos similares
 
-No disponible. La model card menciona dos modelos de referencia ("Model1" y "Model2") pero no los identifica. No se dispone de información sobre modelos comparables de la misma categoría o tamaño. El repositorio de HuggingFace no incluye pesos ni especificaciones que permitan una comparación rigurosa.
+No disponible. La model card menciona dos modelos de referencia ("Model1" y "Model2") pero no los identifica. No se dispone de información sobre modelos comparables de la misma categoría o tamaño. El repositorio de Hugging Face no incluye pesos ni especificaciones que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace es un test repo vacío: no contiene pesos, archivos de modelo ni datos utilizables. El modelo no puede ser descargado ni ejecutado actualmente.
+- El repositorio de Hugging Face es un test repo vacío: no contiene pesos, archivos de modelo ni datos utilizables. El modelo no puede ser descargado ni ejecutado actualmente.
 - Los datos de benchmarks provienen de la model card del autor y no han sido verificados de forma independiente. Los modelos de comparación no están identificados.
 - No se proporciona información sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados, lo que impide evaluar la viabilidad técnica.
 - La model card menciona mejoras en la reducción de alucinaciones, pero no proporciona métricas detalladas sobre alucinación ni sobre sesgos.
@@ -86,6 +86,6 @@ No disponible. La model card menciona dos modelos de referencia ("Model1" y "Mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/QuantumSage-TestRepo-r37
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030
+- Hugging Face: https://huggingface.co/SOTAagi2030/QuantumSage-TestRepo-r37
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030
 - Repositorio de GitHub (prototipo de investigación): https://github.com/charanpreprostudio/QuantumSage

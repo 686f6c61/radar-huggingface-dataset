@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pre-to-Post-2/sft_200m_generated_fixed_pe` es un repositorio de HuggingFace que agrupa 25 checkpoints de fine-tuning supervisado (SFT) para interacción multi-turno en el dominio del ajedrez. Está publicado por el usuario Pre-to-Post-2 y su rasgo distintivo es que se trata de la primera tanda de checkpoints entrenada después de corregir un error en la codificación posicional YaRN dentro de `sft_trainer.py` (corrección fechada en septiembre de 2026).
+`Pre-to-Post-2/sft_200m_generated_fixed_pe` es un repositorio de Hugging Face que agrupa 25 checkpoints de fine-tuning supervisado (SFT) para interacción multi-turno en el dominio del ajedrez. Está publicado por el usuario Pre-to-Post-2 y su rasgo distintivo es que se trata de la primera tanda de checkpoints entrenada después de corregir un error en la codificación posicional YaRN dentro de `sft_trainer.py` (corrección fechada en septiembre de 2026).
 
 El problema que resuelve es metodológico: antes de la corrección, el cambio de `block_size` / `rope_scaling` se aplicaba después de `from_pretrained()`, de modo que las ejecuciones con contexto de 3072 tokens entrenaban con extrapolación RoPE simple aunque su configuración guardada declarase YaRN. Los checkpoints de este repositorio cargan primero la configuración y construyen el modelo a partir de ella, de forma que entrenamiento e inferencia emplean YaRN de manera consistente (factor 3, de 1024 a 3072 tokens).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - 200M parametros: aproximadamente 800 MB en fp32 y 400 MB en fp16.
 - GPU recomendadas: no se especifican en la model card. Por tamano, cualquier GPU consumer moderna (por ejemplo, serie RTX 30/40) es mas que suficiente, e incluso la inferencia en CPU resulta viable para los tres tamanos.
 - Cabe en GPU consumer: si, en todos los casos. Los modelos de 20M y 50M caben incluso en iGPU o en memoria unificada de equipos de gama baja.
-- Opciones de despliegue: al estar en formato safetensors y usar `transformers`, son desplegables con dicha libreria; la compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta declarada en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace Inference.
+- Opciones de despliegue: al estar en formato safetensors y usar `transformers`, son desplegables con dicha libreria; la compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta declarada en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face Inference.
 - Latencia y throughput estimados: no disponibles.
 - Espacio en disco: el repositorio completo ocupa 8,9 GB, aunque solo es necesario descargar la subcarpeta del checkpoint concreto que se quiera usar.
 
@@ -73,9 +73,9 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Familia | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft_200m_generated_fixed_pe (20m) | 20M | 3072 tokens (YaRN) | No disponible | Publico en HuggingFace |
-| sft_200m_generated_fixed_pe (50m) | 50M | 3072 tokens (YaRN) | No disponible | Publico en HuggingFace |
-| sft_200m_generated_fixed_pe (200m) | 200M | 3072 tokens (YaRN) | No disponible | Publico en HuggingFace |
+| sft_200m_generated_fixed_pe (20m) | 20M | 3072 tokens (YaRN) | No disponible | Publico en Hugging Face |
+| sft_200m_generated_fixed_pe (50m) | 50M | 3072 tokens (YaRN) | No disponible | Publico en Hugging Face |
+| sft_200m_generated_fixed_pe (200m) | 200M | 3072 tokens (YaRN) | No disponible | Publico en Hugging Face |
 
 Comparativa con modelos externos: no disponible.
 
@@ -94,6 +94,6 @@ Comparativa con modelos externos: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pre-to-Post-2/sft_200m_generated_fixed_pe
+- Modelo en Hugging Face: https://huggingface.co/Pre-to-Post-2/sft_200m_generated_fixed_pe
 - Los resultados de la busqueda web no contienen enlaces relevantes al modelo: las referencias encontradas (Programme de reussite educative, Preply, Larousse, Service-Public.fr) no guardan relacion con este repositorio.
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios de codigo ni demos en la informacion disponible.

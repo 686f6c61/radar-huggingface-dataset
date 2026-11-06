@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-viggle-turbo es un adaptador LoRA de destilación few-step para el modelo de difusión texto-a-imagen Qwen/Qwen-Image-2.1, desarrollado por Viggle (publicado en HuggingFace bajo el namespace `agentory`). Su propósito es reducir el coste de inferencia del modelo base: permite generar imágenes en 6 pasos en lugar de los 40 habituales y sin classifier-free guidance (CFG), lo que se traduce en una aceleración de aproximadamente 5x de extremo a extremo manteniendo una calidad muy cercana a la del modelo original en la mayoría de prompts.
+Qwen-Image-2.1-viggle-turbo es un adaptador LoRA de destilación few-step para el modelo de difusión texto-a-imagen Qwen/Qwen-Image-2.1, desarrollado por Viggle (publicado en Hugging Face bajo el namespace `agentory`). Su propósito es reducir el coste de inferencia del modelo base: permite generar imágenes en 6 pasos en lugar de los 40 habituales y sin classifier-free guidance (CFG), lo que se traduce en una aceleración de aproximadamente 5x de extremo a extremo manteniendo una calidad muy cercana a la del modelo original en la mayoría de prompts.
 
 El adaptador se distribuye como LoRA de rango 256 en bf16 (1,3 GB) que se carga sobre el transformer del modelo base en tiempo de ejecución, junto con variantes de rango 128 (0,7 GB), formatos pre-fusionados int8/fp8, cuantizaciones GGUF (Q8_0, Q6_K, Q5_K_M, Q4_K_M) para ComfyUI y nodos personalizados. La versión documentada es la v0.3 (2026-09-29), que además introduce un modo de 9 pasos en el que los 7 primeros se ejecutan con el LoRA turbo y los 2 últimos con el modelo base sin LoRA para recuperar detalle fino y precisión en texto pequeño.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Pasos | CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-viggle-turbo (v0.3) | 7,1B (base) + LoRA | 6 (o 9 híbrido) | No | qwen-research | HuggingFace (`agentory/...`) |
-| Qwen/Qwen-Image-2.1 (base) | 7,1B | 40 | Sí | qwen-research | HuggingFace (`Qwen/...`) |
+| Qwen-Image-2.1-viggle-turbo (v0.3) | 7,1B (base) + LoRA | 6 (o 9 híbrido) | No | qwen-research | Hugging Face (`agentory/...`) |
+| Qwen/Qwen-Image-2.1 (base) | 7,1B | 40 | Sí | qwen-research | Hugging Face (`Qwen/...`) |
 | v0.2.1 de Viggle | 7,1B (base) + LoRA | 6 | No | qwen-research | Incluido en el mismo repo |
 | v0.2 de Viggle | 7,1B (base) + LoRA | 6 (documentado como 5-step) | No | qwen-research | Incluido en el mismo repo |
 
@@ -86,9 +86,9 @@ No se dispone de información sobre otros adaptadores few-step comparables de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentory/Qwen-Image-2.1-viggle-turbo
+- Modelo en Hugging Face: https://huggingface.co/agentory/Qwen-Image-2.1-viggle-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Space de demostración (con pestaña Comparison): https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo
-- Repositorio del autor en HuggingFace (referenciado en la model card): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+- Repositorio del autor en Hugging Face (referenciado en la model card): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Diffusers (instalación desde commit concreto): https://github.com/huggingface/diffusers
 - Vídeo promocional: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/resolve/main/assets/viggle_turbo_promo.mp4

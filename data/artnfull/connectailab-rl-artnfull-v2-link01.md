@@ -67,7 +67,7 @@ Nota: la evaluacion de caminata se realizo con una aproximacion 2D basada en una
 
 | Modelo | Tipo | Base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador LoRA (RL + SFT) | Qwen3.5-0.8B | Decision de navegacion LINK-01 (choose_object) | Apache 2.0 | Publico en HuggingFace, con codigo de entrenamiento en GitHub |
+| LINK-01 (este modelo) | Adaptador LoRA (RL + SFT) | Qwen3.5-0.8B | Decision de navegacion LINK-01 (choose_object) | Apache 2.0 | Publico en Hugging Face, con codigo de entrenamiento en GitHub |
 | Politica PPO clasica (cerebro profesor) | Politica de RL no linguistica | — | Misma tarea LINK-01 | no disponible | Entrenable via CONNECT AI WORLD / connect-tycoon |
 | Otros agentes LLM para decision (p. ej. adaptadores RLHF genericos) | Adaptadores LoRL sobre LLM | variados | Tareas genericas, no navegacion robotica | variable | no disponible en detalle |
 
@@ -87,7 +87,7 @@ No existen alternativas publicas directas con la misma especificacion de tarea (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artnfull/connectailab-rl-artnfull-v2-link01
+- Hugging Face: https://huggingface.co/artnfull/connectailab-rl-artnfull-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo de entrenamiento (GitHub CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

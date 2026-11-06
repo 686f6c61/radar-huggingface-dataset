@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Han0921/gay-3.8-flash-diffusion` es un modelo publicado en HuggingFace por el usuario Han0921 bajo licencia MIT. Por el identificador y la única frase de su model card ("Generate Gay Images"), se trata presumiblemente de un modelo de difusion orientado a la generacion de imagenes, aunque no se especifica en ningun momento la arquitectura concreta (UNet, DiT, MMDiT u otra), el tamano de parametros ni el tipo de pipeline asociado.
+`Han0921/gay-3.8-flash-diffusion` es un modelo publicado en Hugging Face por el usuario Han0921 bajo licencia MIT. Por el identificador y la única frase de su model card ("Generate Gay Images"), se trata presumiblemente de un modelo de difusion orientado a la generacion de imagenes, aunque no se especifica en ningun momento la arquitectura concreta (UNet, DiT, MMDiT u otra), el tamano de parametros ni el tipo de pipeline asociado.
 
 El repositorio presenta un estado practicamente vacio de documentacion tecnica: no hay informacion sobre datos de entrenamiento, proceso de ajuste fino, resoluciones soportadas, ni resultados de evaluacion. El sufijo "3.8-flash" del nombre sugiere una variante optimizada para inferencia rapida (pocas etapas de muestreo), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
-La relevancia actual del modelo es muy limitada desde el punto de vista tecnico: registra 0 descargas y 0 likes, carece de pipeline declarado en HuggingFace y no incluye ningun tipo de documentacion que permita reproducir su comportamiento o integrarlo en produccion con garantias. Cualquier evaluacion seria requiere descargar los pesos y analizarlos directamente.
+La relevancia actual del modelo es muy limitada desde el punto de vista tecnico: registra 0 descargas y 0 likes, carece de pipeline declarado en Hugging Face y no incluye ningun tipo de documentacion que permita reproducir su comportamiento o integrarlo en produccion con garantias. Cualquier evaluacion seria requiere descargar los pesos y analizarlos directamente.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de pasos de difusi
 - Experimentacion con fine-tunes comunitarios: util para desarrolladores que quieran analizar como se comporta un fine-tune de tematica especifica frente a su modelo base, si se logra identificar cual es.
 - Generacion de material para proyectos creativos personales: con licencia MIT, se podria integrar en flujos artisticos no comerciales o comerciales, sujeto a revision legal por la ausencia de informacion sobre la procedencia de los datos de entrenamiento.
 - Base para nuevos fine-tunes: si los pesos son compatibles con herramientas estandar (diffusers, ComfyUI), podria servir como punto de partida para ajustes adicionales, aunque la falta de documentacion lo hace arriesgado.
-- Pruebas de integracion en pipelines de difusion: util para validar que un pipeline (por ejemplo, `DiffusionPipeline` de HuggingFace) carga correctamente pesos sin metadatos, como caso de prueba de robustez.
+- Pruebas de integracion en pipelines de difusion: util para validar que un pipeline (por ejemplo, `DiffusionPipeline` de Hugging Face) carga correctamente pesos sin metadatos, como caso de prueba de robustez.
 
 ## Benchmarks y rendimiento
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Han0921/gay-3.8-flash-diffusion
+- Repositorio en Hugging Face: https://huggingface.co/Han0921/gay-3.8-flash-diffusion
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

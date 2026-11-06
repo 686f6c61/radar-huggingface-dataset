@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mi-ai-huamana` es un modelo de lenguaje creado mediante la fusión (merge) de dos modelos base: `meta-llama/Llama-3.1-8B-Instruct` y `DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF`. El proceso se realizó con la herramienta LazyMergekit, utilizando el método de interpolación esférica (slerp) sobre las capas 0 a 32 de ambos modelos. El autor, Ayelenee, publicó el modelo en HuggingFace en agosto de 2026, aunque no ha recibido descargas ni valoraciones hasta la fecha.
+`mi-ai-huamana` es un modelo de lenguaje creado mediante la fusión (merge) de dos modelos base: `meta-llama/Llama-3.1-8B-Instruct` y `DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF`. El proceso se realizó con la herramienta LazyMergekit, utilizando el método de interpolación esférica (slerp) sobre las capas 0 a 32 de ambos modelos. El autor, Ayelenee, publicó el modelo en Hugging Face en agosto de 2026, aunque no ha recibido descargas ni valoraciones hasta la fecha.
 
 Al estar basado en Llama 3.1 8B Instruct, el modelo hereda la arquitectura transformer decoder-only de 8 mil millones de parámetros, con capacidad de instrucción y chat. Sin embargo, la ausencia de documentación adicional, benchmarks o especificaciones detalladas hace que su comportamiento real sea incierto. La relevancia de este modelo reside principalmente en su naturaleza experimental como merge, útil para explorar técnicas de combinación de pesos, pero no está validado para uso en producción.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar objetivamente. El modelo bas
 
 ## Enlaces
 
-- [HuggingFace - Ayelenee/mi-ai-huamana](https://huggingface.co/Ayelenee/mi-ai-huamana)
+- [Hugging Face - Ayelenee/mi-ai-huamana](https://huggingface.co/Ayelenee/mi-ai-huamana)
 - [LazyMergekit (Colab)](https://colab.research.google.com/drive/1obulZ1ROXHjYLn6PPZJwRR6GzgQogxxb?usp=sharing)
 - [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF](https://huggingface.co/DavidAU/L3-Dark-Planet-8-Orbs-V2-Eight-Orbs-Of-Power-GGUF)

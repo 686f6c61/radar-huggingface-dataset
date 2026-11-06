@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexDM-LoRA v2.0 | Adaptador LoRA sobre 31B | 131.071 tokens | Clasificacion multiple-choice por logits | cc-by-sa-4.0 | HuggingFace (0 descargas) |
-| FlexDM-LoRA v1.0 | Adaptador LoRA sobre 31B | no disponible | Igual, sin relectura de baja confianza | no disponible | HuggingFace |
-| FlexDM-LoRA v2.1 | Adaptador LoRA sobre 31B | no disponible | Version posterior del mismo linaje | no disponible | HuggingFace |
-| google/gemma-4-31B-it | 31B | no disponible | Modelo generativo instructivo base | no disponible en la informacion | HuggingFace |
+| FlexDM-LoRA v2.0 | Adaptador LoRA sobre 31B | 131.071 tokens | Clasificacion multiple-choice por logits | cc-by-sa-4.0 | Hugging Face (0 descargas) |
+| FlexDM-LoRA v1.0 | Adaptador LoRA sobre 31B | no disponible | Igual, sin relectura de baja confianza | no disponible | Hugging Face |
+| FlexDM-LoRA v2.1 | Adaptador LoRA sobre 31B | no disponible | Version posterior del mismo linaje | no disponible | Hugging Face |
+| google/gemma-4-31B-it | 31B | no disponible | Modelo generativo instructivo base | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de decision multiple-choice en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de decis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1000luca/FlexDM-LoRA-v2.0
+- Modelo en Hugging Face: https://huggingface.co/1000luca/FlexDM-LoRA-v2.0
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Version 1.0: https://huggingface.co/1000luca/FlexDM-LoRA-v1.0
 - Version 2.1: https://huggingface.co/1000luca/FlexDM-LoRA-v2.1

@@ -26,7 +26,7 @@ El modelo tiene 4.143.404.816 parametros (unos 4,14 mil millones) almacenados en
 | Entrenamiento | optimizador con batch 64, 60.000 pasos, checkpoint final |
 | Tamano del repositorio | 9,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_5_robodojo_taco_visual_b64_60k | 4.143.404.816 | no disponible | Politica VLA bimanual de sobremesa (RoboDojo) | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | no disponible en la informacion proporcionada | no disponible | Modelo base VLA del que deriva este ajuste fino | no disponible | Disponible en HuggingFace como lerobot/pi05_base |
+| pi0_5_robodojo_taco_visual_b64_60k | 4.143.404.816 | no disponible | Politica VLA bimanual de sobremesa (RoboDojo) | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | no disponible en la informacion proporcionada | no disponible | Modelo base VLA del que deriva este ajuste fino | no disponible | Disponible en Hugging Face como lerobot/pi05_base |
 | Otras familias VLA (OpenVLA, GR00T N1, RDT) | no disponible | no disponible | Manipulacion robotica generalista | no disponible | no disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar este checkpoint con alternativas de la misma categoria en terminos de rendimiento, contexto o licencia. La unica relacion documentada es la dependencia directa de lerobot/pi05_base.
@@ -102,7 +102,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_visual_b64_60k
 - Dataset de ajuste fino: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-visual-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Perfil del autor: https://huggingface.co/Myungkyu

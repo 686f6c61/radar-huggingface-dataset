@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 es un modelo derivado por aprendizaje continuo (continued pretraining, CPT) a partir de Qwen/Qwen3-8B-Base, publicado por el usuario BrandonHowe en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste del modelo base sobre un corpus concreto: el dataset CompassioninMachineLearning/urban_12738_cleaned, en su revision ef7c0e742df63ea319e35d02d9f6ba63d6e7c68d. El resultado se distribuye ya fusionado en pesos BF16, sin adaptador LoRA, en ocho shards de safetensors listos para cargar con transformers.
+Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 es un modelo derivado por aprendizaje continuo (continued pretraining, CPT) a partir de Qwen/Qwen3-8B-Base, publicado por el usuario BrandonHowe en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste del modelo base sobre un corpus concreto: el dataset CompassioninMachineLearning/urban_12738_cleaned, en su revision ef7c0e742df63ea319e35d02d9f6ba63d6e7c68d. El resultado se distribuye ya fusionado en pesos BF16, sin adaptador LoRA, en ocho shards de safetensors listos para cargar con transformers.
 
 El modelo tiene 8.190.735.360 parametros (unos 8,19 mil millones) y ocupa 16,4 GB en el repositorio. Corresponde al checkpoint del epoch 3.0, step 1134, y fue exportado con el metodo nativo de Unsloth save_pretrained_merged(save_method="merged_16bit"), con pesos BF16 validados y empaquetados sin perdida. Al derivar de la variante Base de Qwen3, no incorpora alineacion de instrucciones tipo RLHF o DPO en esta publicacion.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU profesionales: cabe con holgura en A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB, con contexto amplio.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede cargar el modelo en BF16 con contexto moderado; una RTX 4080 de 16 GB no cabe en BF16 sin cuantizar.
 - Cuantizacion: al no publicarse GGUF ni AWQ/GPTQ, para GPUs pequenas habria que convertir manualmente (por ejemplo con llama.cpp) a Q4 o Q5, lo que reduce el uso a unos 5-6 GB en Q4.
-- Opciones de despliegue: al incluir las etiquetas text-generation-inference y endpoints_compatible, es compatible con TGI y con HuggingFace Inference Endpoints. Tambien es desplegable con vLLM (formato safetensors HF) y con transformers directamente. llama.cpp y Ollama requeririan una conversion previa a GGUF, no incluida en el repositorio.
+- Opciones de despliegue: al incluir las etiquetas text-generation-inference y endpoints_compatible, es compatible con TGI y con Hugging Face Inference Endpoints. Tambien es desplegable con vLLM (formato safetensors HF) y con transformers directamente. llama.cpp y Ollama requeririan una conversion previa a GGUF, no incluida en el repositorio.
 - Latencia y throughput: no disponible; no se publican mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 | 8,19 B | No disponible (base: 32.768 nativos) | No disponible | HuggingFace, safetensors BF16 | CPT sobre corpus urbano de ~10.000 documentos, sin benchmarks |
-| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors, GGUF y cuantizaciones de terceros | Modelo base previo al CPT; soporte de 119 idiomas declarado |
-| Qwen/Qwen3-8B (Instruct) | 8,19 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, multiples formatos | Incluye modo pensamiento y alineacion de instrucciones |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | HuggingFace, GGUF, amplio ecosistema | Alternativa de tamano comparable con contexto mayor |
+| Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3 | 8,19 B | No disponible (base: 32.768 nativos) | No disponible | Hugging Face, safetensors BF16 | CPT sobre corpus urbano de ~10.000 documentos, sin benchmarks |
+| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors, GGUF y cuantizaciones de terceros | Modelo base previo al CPT; soporte de 119 idiomas declarado |
+| Qwen/Qwen3-8B (Instruct) | 8,19 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, multiples formatos | Incluye modo pensamiento y alineacion de instrucciones |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | Hugging Face, GGUF, amplio ecosistema | Alternativa de tamano comparable con contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3
+- Pagina del modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo. Los unicos resultados devueltos corresponden a foros en frances sobre codigo de circulacion y extensiones de navegador, sin relacion alguna con el modelo, por lo que se omiten.

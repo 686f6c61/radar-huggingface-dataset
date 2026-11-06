@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-pose-5b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-pose-5b
 - Modelo original de Meta: https://huggingface.co/facebook/sapiens2-pose-5b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-5b
 - Paper: https://arxiv.org/pdf/2604.21681
@@ -107,4 +107,4 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de comp
 - Configuracion de keypoints (formato Sociopticon, 308 keypoints): https://github.com/facebookresearch/sapiens2/blob/main/sapiens/pose/configs/_base_/keypoints308.py
 - Guia de estimacion de pose: https://github.com/facebookresearch/sapiens2/blob/main/docs/POSE.md
 - Detector RTMDet (MMDetection): https://github.com/open-mmlab/mmdetection/tree/main/configs/rtmdet
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2

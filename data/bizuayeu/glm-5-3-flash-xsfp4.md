@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros totales | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-XSFP4 (este) | 342.856.965.542 | no disponible | XSFP4 + MXFP8 + FP8 + NVFP4 + BF16/F32 | NVIDIA Open Model Agreement | HuggingFace, 245 descargas, 3 likes |
-| nvidia/GLM-5.3-Flash-FP4-Local | no disponible (mismo modelo base) | no disponible | NVFP4 + MXFP8 + FP8 + BF16/F32 | NVIDIA Open Model Agreement | HuggingFace (modelo base) |
-| zai-org/GLM-5.3-Flash | no disponible | no disponible | BF16 | MIT | HuggingFace (upstream) |
+| GLM-5.3-Flash-XSFP4 (este) | 342.856.965.542 | no disponible | XSFP4 + MXFP8 + FP8 + NVFP4 + BF16/F32 | NVIDIA Open Model Agreement | Hugging Face, 245 descargas, 3 likes |
+| nvidia/GLM-5.3-Flash-FP4-Local | no disponible (mismo modelo base) | no disponible | NVFP4 + MXFP8 + FP8 + BF16/F32 | NVIDIA Open Model Agreement | Hugging Face (modelo base) |
+| zai-org/GLM-5.3-Flash | no disponible | no disponible | BF16 | MIT | Hugging Face (upstream) |
 
 La comparación relevante es entre los tres eslabones de la cadena: el BF16 original de Z.AI (MIT), la destilación cuantizada de NVIDIA (FP4-Local) y este derivado (XSFP4). Frente a FP4-Local, cambia solo el formato de los expertos enrutados (NVFP4 a XSFP4) y las escalas de bloque asociadas, con 0,45 GB más de tamaño total; frente al BF16, mantiene la compresión a 4 bits de los expertos pero con un recuantizado optimizado. No se dispone de datos para comparar con alternativas de otros fabricantes.
 
@@ -94,7 +94,7 @@ La comparación relevante es entre los tres eslabones de la cadena: el BF16 orig
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-XSFP4
+- Hugging Face del modelo: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-XSFP4
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local
 - Modelo upstream (Z.AI): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio del motor TensorFold: https://github.com/Bizuayeu/GLM-5.3-Flash-DGX-Sparks-BIZ

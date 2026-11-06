@@ -76,7 +76,7 @@ Esta comparativa se basa en datos publicos de los respectivos modelos, pero no s
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/888rok/Qwen3.8-27B-OBLITERATED-Q3_K_M-wllama-split
+- Repositorio de Hugging Face: https://huggingface.co/888rok/Qwen3.8-27B-OBLITERATED-Q3_K_M-wllama-split
 - Modelo base abliterated: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

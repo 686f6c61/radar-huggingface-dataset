@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge
 - Paper relacionado (Model Merging in Pre-training of Large Language Models): https://arxiv.org/pdf/2505.12082v1
 - Página del proyecto en ByteDance: https://seed.bytedance.com/en/public_papers/model-merging-in-pre-training-of-large-language-models
 - Repositorio de mergekit: https://github.com/cg123/mergekit

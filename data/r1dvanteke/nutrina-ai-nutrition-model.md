@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nutrina AI es un modelo de lenguaje especializado en análisis nutricional, desarrollado por el usuario de HuggingFace r1dvanteke. Se trata de un fine-tuning mediante QLoRA sobre Google Gemma-7B-IT, posteriormente fusionado con `merge_and_unload()` para producir un artefacto autónomo sin dependencias de PEFT. El modelo forma parte de una arquitectura híbrida neuro-simbólica en la que el LLM se encarga exclusivamente de la extracción semántica de entidades alimentarias y sus valores nutricionales base, mientras que un middleware en Python con expresiones regulares realiza el escalado matemático determinista.
+Nutrina AI es un modelo de lenguaje especializado en análisis nutricional, desarrollado por el usuario de Hugging Face r1dvanteke. Se trata de un fine-tuning mediante QLoRA sobre Google Gemma-7B-IT, posteriormente fusionado con `merge_and_unload()` para producir un artefacto autónomo sin dependencias de PEFT. El modelo forma parte de una arquitectura híbrida neuro-simbólica en la que el LLM se encarga exclusivamente de la extracción semántica de entidades alimentarias y sus valores nutricionales base, mientras que un middleware en Python con expresiones regulares realiza el escalado matemático determinista.
 
 El problema que aborda es concreto: los transformers, al operar mediante probabilidades de token, fallan de forma sistemática en operaciones aritméticas de escalado (por ejemplo, multiplicar los macros de 100 g de pollo por una porción de 250 g). Nutrina AI delega esa multiplicación a código determinista, de modo que el modelo solo debe devolver los valores base por 100 g o por pieza, y el script aplica el multiplicador extraído de la consulta del usuario.
 
@@ -84,7 +84,7 @@ La comparación directa con modelos de propósito general es limitada: Nutrina A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r1dvanteke/nutrina-ai-nutrition-model
+- Modelo en Hugging Face: https://huggingface.co/r1dvanteke/nutrina-ai-nutrition-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/r1dvanteke/usda-fdc-calories-updated
 - Modelo base: https://huggingface.co/google/gemma-7b-it
 - USDA FoodData Central: https://fdc.nal.usda.gov/

@@ -69,10 +69,10 @@ La informacion proporcionada no incluye datos de modelos comparables. A continua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| n2-molmospaces-stage4-eagle-dflash | 8,3B (incluye planificador de 4B congelado) | no disponible | no disponible | other | HuggingFace, 0 descargas |
+| n2-molmospaces-stage4-eagle-dflash | 8,3B (incluye planificador de 4B congelado) | no disponible | no disponible | other | Hugging Face, 0 descargas |
 | GR00T N2 (familia de referencia, del que este checkpoint es una etapa) | no disponible | no disponible | no disponible | no disponible | no disponible en esta informacion |
-| Eagle-Embodied-4B-Robotics-2D3D-AR (planificador objetivo usado en el entrenamiento) | no disponible | no disponible | no disponible | no disponible | HuggingFace (`woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-AR`) |
-| Eagle-Embodied-4B-Robotics-2D3D-DFlash (drafter usado en el entrenamiento) | no disponible | no disponible | no disponible | no disponible | HuggingFace (`woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-DFlash`) |
+| Eagle-Embodied-4B-Robotics-2D3D-AR (planificador objetivo usado en el entrenamiento) | no disponible | no disponible | no disponible | no disponible | Hugging Face (`woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-AR`) |
+| Eagle-Embodied-4B-Robotics-2D3D-DFlash (drafter usado en el entrenamiento) | no disponible | no disponible | no disponible | no disponible | Hugging Face (`woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-DFlash`) |
 
 No se dispone de datos para comparar con otras politicas VLA de la misma categoria (por ejemplo, familias tipo pi0, OpenVLA o GR00T N1.x) dentro de la informacion facilitada.
 
@@ -91,7 +91,7 @@ No se dispone de datos para comparar con otras politicas VLA de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/woshichaoren123/n2-molmospaces-stage4-eagle-dflash
+- Modelo en Hugging Face: https://huggingface.co/woshichaoren123/n2-molmospaces-stage4-eagle-dflash
 - Planificador objetivo de la receta de planes: https://huggingface.co/woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-AR
 - Drafter DFlash de la receta de planes: https://huggingface.co/woshichaoren123/Eagle-Embodied-4B-Robotics-2D3D-DFlash
 - Repositorio del benchmark de velocidad N2 (`eagle-molmospace-speed`): referenciado en la model card, URL directa no disponible en la informacion proporcionada

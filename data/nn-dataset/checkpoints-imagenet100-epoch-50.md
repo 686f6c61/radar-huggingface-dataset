@@ -65,5 +65,5 @@ No se dispone de informacion sobre modelos comparables. Al no conocer la arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NN-Dataset/checkpoints-imagenet100-epoch-50
+- Repositorio en Hugging Face: https://huggingface.co/NN-Dataset/checkpoints-imagenet100-epoch-50
 - No se encontraron papers, blogs, repositorios adicionales ni demos asociados en la informacion proporcionada.

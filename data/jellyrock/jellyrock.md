@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `JellyRock/JellyRock` en HuggingFace no contiene un modelo de inteligencia artificial, sino que apunta a un proyecto de software completamente distinto: un cliente de Jellyfin para dispositivos Roku. La model card únicamente declara una licencia `artistic-2.0` y no incluye ningún artefacto de modelo, pesos, arquitectura ni documentación técnica relacionada con IA. Las búsquedas web confirman que JellyRock es un reproductor multimedia de código abierto, desarrollado en BrighterScript y Roku Scene Graph, que permite consumir contenido de servidores Jellyfin personales.
+El repositorio `JellyRock/JellyRock` en Hugging Face no contiene un modelo de inteligencia artificial, sino que apunta a un proyecto de software completamente distinto: un cliente de Jellyfin para dispositivos Roku. La model card únicamente declara una licencia `artistic-2.0` y no incluye ningún artefacto de modelo, pesos, arquitectura ni documentación técnica relacionada con IA. Las búsquedas web confirman que JellyRock es un reproductor multimedia de código abierto, desarrollado en BrighterScript y Roku Scene Graph, que permite consumir contenido de servidores Jellyfin personales.
 
 Dado que no existe información sobre arquitectura, parámetros, entrenamiento o capacidades de ningún modelo, esta ficha documenta la ausencia de datos y advierte de la confusión de identidad. Cualquier intento de usar este repositorio como un modelo de IA sería infructuoso, ya que no se publican pesos ni artefactos de aprendizaje automático.
 
@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque no hay modelo. El nombre Je
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JellyRock/JellyRock
+- Hugging Face: https://huggingface.co/JellyRock/JellyRock
 - GitHub del proyecto real: https://github.com/jellyrock/jellyrock
 - Organización GitHub: https://github.com/jellyrock/
 - Guía de desarrollo (Copilot Instructions): https://imaifox.com/boosters/jellyrock-jellyrock-copilot-instructions

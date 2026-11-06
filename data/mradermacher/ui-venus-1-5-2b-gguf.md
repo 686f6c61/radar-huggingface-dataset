@@ -33,7 +33,7 @@ La version aqui descrita es una cuantizacion estatica generada por mradermacher 
 - Generacion de acciones sobre GUI: el modelo esta orientado a tareas de agente que requieren decidir y ejecutar acciones sobre pantallas.
 - Procesamiento multimodal: incluye un proyector multimodal (mmproj) que permite entrada de imagenes junto con texto.
 - Uso conversacional: etiquetado como "conversational" en los metadatos.
-- Compatibilidad con endpoints: etiqueta "endpoints_compatible" en los metadatos de HuggingFace.
+- Compatibilidad con endpoints: etiqueta "endpoints_compatible" en los metadatos de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles segun los metadatos.
 - Modo thinking, vision o audio: vision si (multimodal con mmproj); thinking y audio no disponibles en la informacion.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/UI-Venus-1.5-2B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/UI-Venus-1.5-2B-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/UI-Venus-1.5-2B
 - Variante imatrix: https://huggingface.co/mradermacher/UI-Venus-1.5-2B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#UI-Venus-1.5-2B-GGUF

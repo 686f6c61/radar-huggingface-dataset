@@ -72,10 +72,10 @@ No se dispone de métricas de este modelo, por lo que la comparación solo puede
 
 | Modelo | Categoria | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| weak-segmentation (tahaz122) | U-Net clásica | no disponible | imagen RGB, resolución no disponible | no disponible | HuggingFace, 0 descargas |
+| weak-segmentation (tahaz122) | U-Net clásica | no disponible | imagen RGB, resolución no disponible | no disponible | Hugging Face, 0 descargas |
 | U-Net original (Ronneberger et al.) | U-Net clásica | no disponible | imagen biomédica 2D | académica/pública | referencia académica |
 | nnU-Net | U-Net auto-configurada | no disponible | imagen médica 3D/2D | open source | repositorio público |
-| SegFormer | Transformer jerárquico para segmentación | no disponible | imagen de alta resolución | open source | HuggingFace / repositorio |
+| SegFormer | Transformer jerárquico para segmentación | no disponible | imagen de alta resolución | open source | Hugging Face / repositorio |
 
 No se dispone de datos de rendimiento comparables para establecer una comparación cuantitativa.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento comparables para establecer una comparaci�
 - Limitaciones de contexto o idioma: no aplica (modelo de visión sin componente textual).
 - Restricciones de licencia: la model card no especifica la licencia y remite a la licencia del repositorio original, que no está disponible; no debe asumirse uso comercial libre sin verificarlo.
 - Caveat para producción: no hay métricas, ni número de clases, ni resolución de entrada, ni versión de PyTorch o dependencias documentadas, lo que dificulta la reproducibilidad y el despliegue fiable.
-- La publicación es automática desde un repositorio de GitHub, que el autor señala como fuente de verdad; la model card de HuggingFace puede estar desactualizada.
+- La publicación es automática desde un repositorio de GitHub, que el autor señala como fuente de verdad; la model card de Hugging Face puede estar desactualizada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tahaz122/weak-segmentation
+- Hugging Face: https://huggingface.co/tahaz122/weak-segmentation
 - Repositorio de GitHub original: no disponible (mencionado como fuente de verdad, sin URL en la información proporcionada)
 - Paper: no disponible
 - Blog o demo: no disponible

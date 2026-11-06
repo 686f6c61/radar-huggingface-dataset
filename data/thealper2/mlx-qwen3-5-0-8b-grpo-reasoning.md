@@ -71,8 +71,8 @@ Frente al modelo base en los mismos problemas: 116 pasan a correctos y 5 pasan a
 
 | Modelo | Parámetros | Contexto | GSM8K (200 test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Base `Qwen3.5-0.8B` (MLX, bf16) | 0,8B | No disponible | 52,0 % sin instrucción; 6,0 % con instrucción | Apache 2.0 | HuggingFace (mlx-community) |
-| Base + este adaptador GRPO | 0,8B + 10,8M entrenables | No disponible | 61,5 % con instrucción | Apache 2.0 | HuggingFace (thealper2) |
+| Base `Qwen3.5-0.8B` (MLX, bf16) | 0,8B | No disponible | 52,0 % sin instrucción; 6,0 % con instrucción | Apache 2.0 | Hugging Face (mlx-community) |
+| Base + este adaptador GRPO | 0,8B + 10,8M entrenables | No disponible | 61,5 % con instrucción | Apache 2.0 | Hugging Face (thealper2) |
 | Alternativas comparables de 0,5B–1B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de otros adaptadores GRPO para modelos de este tamaño en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa con alternativas.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de otros adaptadores GRPO para modelos de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-grpo-reasoning
+- Modelo en Hugging Face: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-grpo-reasoning
 - Modelo base (MLX): https://huggingface.co/mlx-community/Qwen3.5-0.8B-bf16
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

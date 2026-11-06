@@ -66,7 +66,7 @@ Datos de eficiencia declarados (clip 1x7x3x256x256, NVIDIA A100, fp32): 372 GFLO
 - GPU de referencia en los tests: NVIDIA A100. Dado el consumo reducido, deberia funcionar en GPUs de gama media y consumer (por ejemplo, RTX 3060 o superiores), aunque no hay cifras oficiales para esas tarjetas.
 - Cabe en GPUs consumer: si, con holgura, dada la huella de 0,35 GB en fp32 y los 6,58 M de parametros.
 - Inferencia tambien posible en CPU, aunque de forma lenta segun la model card.
-- Despliegue: el metodo oficial es el repositorio de GitHub con `uv sync` y los scripts de inferencia incluidos (`scripts/inference.py`); los pesos se descargan desde GitHub Releases o directamente desde HuggingFace con `hf download`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable: no es un modelo de lenguaje).
+- Despliegue: el metodo oficial es el repositorio de GitHub con `uv sync` y los scripts de inferencia incluidos (`scripts/inference.py`); los pesos se descargan desde GitHub Releases o directamente desde Hugging Face con `hf download`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable: no es un modelo de lenguaje).
 - Throughput declarado: 29,5 FPS a 256x256 en A100 con fp32.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se han incluido en la informacion disponible datos comparativos numericos fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TytanMikJas/DART-Degradation-Aware-Recurrent-Transformer
+- Modelo en Hugging Face: https://huggingface.co/TytanMikJas/DART-Degradation-Aware-Recurrent-Transformer
 - Paper (arXiv:2607.21219): https://arxiv.org/abs/2607.21219
 - Codigo (GitHub): https://github.com/TytanMikJas/DART-Degradation-Aware-Recurrent-Transformer
 - Pagina del proyecto: https://absolutecinema.absolutedegradation.workers.dev

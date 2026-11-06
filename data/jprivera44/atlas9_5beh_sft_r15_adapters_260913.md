@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jprivera44/atlas9_5beh_sft_r15_adapters_260913
+- Modelo en Hugging Face: https://huggingface.co/jprivera44/atlas9_5beh_sft_r15_adapters_260913
 - Base Llama-3.3-70B SDF fase 5: https://huggingface.co/jprivera44/atlas9_5beh_sdf_phase5_final
 - Base Qwen2.5-72B SDF fase 5: https://huggingface.co/jprivera44/atlas9_5beh_sdf_qwen72b_phase5_final
 - Adaptadores SFT de referencia (fase 1, sin replay): https://huggingface.co/jprivera44/atlas9_5beh_sft_adapters_260912

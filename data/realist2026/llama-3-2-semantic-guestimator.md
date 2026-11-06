@@ -15,7 +15,7 @@ Este modelo resulta relevante por su tamaño reducido (apenas 0.2 GB) y su licen
 | Tipos de cuantizacion | no disponible (el base se entrenó con bnb-4bit, pero el formato final no se indica) |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 No se ha publicado información sobre la arquitectura interna del modelo ajustado. Dado que se parte de `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, es razonable asumir que se trata de un transformer decoder-only con atención de múltiples cabezas, propio de la familia Llama 3.2, pero esto no está confirmado. El entrenamiento se realizó con la librería Unsloth, que optimiza el fine-tuning mediante técnicas como LoRA y cuantización en 4 bits, logrando una velocidad de entrenamiento hasta 2 veces mayor que los métodos convencionales. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron métodos de alineación como RLHF o DPO.
@@ -58,6 +58,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - No hay soporte ni mantenimiento por parte del autor, al ser un proyecto personal.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Realist2026/Llama-3.2-Semantic-Guestimator
+- Hugging Face: https://huggingface.co/Realist2026/Llama-3.2-Semantic-Guestimator
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit

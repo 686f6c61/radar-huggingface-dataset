@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dramatik999/gemma-4-12B-it-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Dramatik999/gemma-4-12B-it-ONNX
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Anuncio de Gemma 4 12B en el blog de Google: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

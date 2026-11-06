@@ -82,10 +82,10 @@ No se han publicado comparaciones con modelos externos en la informacion disponi
 
 | Modelo | Tarea | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MARE Lunar Rover Baselines (este) | Segmentacion de objetos/sombras y profundidad lunar | no disponible | no aplica | mIoU 0.484-0.854; AbsRel 0.027 | Mixta (CC BY 4.0 y NVIDIA SegFormer) | HuggingFace, 0 descargas |
-| Depth Anything V2-Small (base) | Profundidad monoculo general | no disponible | no aplica | no disponible en esta ficha | Apache 2.0 (base) | HuggingFace |
+| MARE Lunar Rover Baselines (este) | Segmentacion de objetos/sombras y profundidad lunar | no disponible | no aplica | mIoU 0.484-0.854; AbsRel 0.027 | Mixta (CC BY 4.0 y NVIDIA SegFormer) | Hugging Face, 0 descargas |
+| Depth Anything V2-Small (base) | Profundidad monoculo general | no disponible | no aplica | no disponible en esta ficha | Apache 2.0 (base) | Hugging Face |
 | U-Net / ResNet-34 (ImageNet) | Segmentacion generica | no disponible | no aplica | no disponible en esta ficha | depende del repo `segmentation-models-pytorch` | Amplia |
-| SegFormer-B2 (NVIDIA) | Segmentacion generica | no disponible | no aplica | no disponible en esta ficha | NVIDIA SegFormer (no comercial) | HuggingFace / GitHub |
+| SegFormer-B2 (NVIDIA) | Segmentacion generica | no disponible | no aplica | no disponible en esta ficha | NVIDIA SegFormer (no comercial) | Hugging Face / GitHub |
 
 La comparativa es limitada: no se dispone de benchmarks de los modelos base en el mismo dominio lunar, por lo que no es posible una comparacion cuantitativa directa. La ventaja principal de este repositorio es la especializacion en dominio lunar sintetico y la particion por mapas reproducible.
 
@@ -103,7 +103,7 @@ La comparativa es limitada: no se dispone de benchmarks de los modelos base en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raulcastar/mare-lunar-baselines
+- Modelo en Hugging Face: https://huggingface.co/raulcastar/mare-lunar-baselines
 - Dataset: https://huggingface.co/datasets/raulcastar/mare-lunar-rover-dataset
 - Simulador MARE: https://github.com/raulcastar/MARE-Lunar-Simulator
 - Codigo de entrenamiento y evaluacion: https://github.com/raulcastar/MARE-Dataset-Baselines

@@ -70,9 +70,9 @@ Métricas adicionales declaradas: falsos positivos del 0,50% en inyección y del
 
 | Modelo | Tipo | Parámetros | Contexto | Macro-F1 primario | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| GuardBR-4B | LoRA sobre Qwen3.5-4B | Base 4B (adaptador rank 16) | 8.192 | 99,62% | CC-BY-4.0 | HuggingFace |
+| GuardBR-4B | LoRA sobre Qwen3.5-4B | Base 4B (adaptador rank 16) | 8.192 | 99,62% | CC-BY-4.0 | Hugging Face |
 | Referencia CPU TF-IDF | Clasificador clásico | No aplica | No aplica | 98,92% | No disponible | Referencia interna del autor |
-| Qwen3.5-4B sin ajuste | Transformer causal | 4B | No disponible | 88,09% | No disponible en esta ficha | HuggingFace |
+| Qwen3.5-4B sin ajuste | Transformer causal | 4B | No disponible | 88,09% | No disponible en esta ficha | Hugging Face |
 
 No se dispone de comparación con otros detectores de seguridad en portugués; el propio autor indica que las comparaciones cubren solo las dos referencias declaradas, no todos los detectores existentes.
 
@@ -91,7 +91,7 @@ No se dispone de comparación con otros detectores de seguridad en portugués; e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-safety-brazil/guardbr-4b
+- Modelo en Hugging Face: https://huggingface.co/ai-safety-brazil/guardbr-4b
 - Dataset Prompt Injection BR Synthetic: https://huggingface.co/datasets/ai-safety-brazil/prompt-injection-br-synthetic/tree/a80d8dc41c73958e9e28ff2a16628af48e4e1487
 - Dataset Jailbreak BR Synthetic: https://huggingface.co/datasets/ai-safety-brazil/jailbreak-br-synthetic/tree/7745a44c870b7f72672d230ecf468330c038fbe6
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

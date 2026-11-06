@@ -85,7 +85,7 @@ El ruido entre ejecuciones es de aproximadamente ±3 t/s según el autor. La mej
 
 | Modelo | Parámetros / tamaño | Contexto | Throughput medio (t/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este borrador, Q2_0 | ~1,79 B / 0,61 GB | No disponible (hereda del objetivo) | 62,4 | Eagle 4 Source-Available (no OSI) | HuggingFace, `quimmedes/Qwen3.8-27B-EAGLE4-GGUF` |
+| Este borrador, Q2_0 | ~1,79 B / 0,61 GB | No disponible (hereda del objetivo) | 62,4 | Eagle 4 Source-Available (no OSI) | Hugging Face, `quimmedes/Qwen3.8-27B-EAGLE4-GGUF` |
 | Este borrador, Q8_0 | ~1,79 B / 1,91 GB | No disponible | 56,3 | Eagle 4 Source-Available (no OSI) | Igual |
 | Cabeza MTP del objetivo | Incluida en Qwen3.8-27B | El del objetivo | 60,6 | La del objetivo Qwen3.8-27B | Incluida en el GGUF del objetivo |
 | Sin decodificación especulativa | – | El del objetivo | 39,6 | – | – |
@@ -110,12 +110,12 @@ La comparación relevante es interna al ecosistema del objetivo: el borrador Q2_
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/quimmedes/Qwen3.8-27B-EAGLE4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/quimmedes/Qwen3.8-27B-EAGLE4-GGUF
 - Modelo base: https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
 - Fork de llama.cpp utilizado: https://github.com/quimmedes/cafe-llama.cpp
 - Commit de conversión: https://github.com/quimmedes/cafe-llama.cpp/tree/82f9a0f392949ee02a8c5fbf6103ffd4dd09b0fa
 - Repositorio EAGLE-4 y política de marcas: https://github.com/eagle-hq/EAGLE-4/blob/main/TRADEMARKS.md
-- Licencia: `LICENSE` en el repositorio de HuggingFace; aviso adicional en `NOTICE`
+- Licencia: `LICENSE` en el repositorio de Hugging Face; aviso adicional en `NOTICE`
 - Contacto de licencias comerciales: licensing@eagle.ai
 
 Nota: la búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo; los resultados obtenidos no guardan relación con la ficha y se han descartado.

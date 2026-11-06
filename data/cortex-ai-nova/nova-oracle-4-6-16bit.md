@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NOVA-Oracle-4.6-16bit | 1.543 M | 30 s de audio | 90+ | Apache 2.0 | HuggingFace (39 descargas) |
-| Whisper Large V3 (OpenAI) | 1.550 M | 30 s de audio | 99 | MIT | HuggingFace, ampliamente adoptado |
-| Whisper Large V3 Turbo | 809 M | 30 s de audio | 99 | MIT | HuggingFace |
-| Distil-Whisper Large V3 | 756 M | 30 s de audio | Ingles principalmente | MIT | HuggingFace |
+| NOVA-Oracle-4.6-16bit | 1.543 M | 30 s de audio | 90+ | Apache 2.0 | Hugging Face (39 descargas) |
+| Whisper Large V3 (OpenAI) | 1.550 M | 30 s de audio | 99 | MIT | Hugging Face, ampliamente adoptado |
+| Whisper Large V3 Turbo | 809 M | 30 s de audio | 99 | MIT | Hugging Face |
+| Distil-Whisper Large V3 | 756 M | 30 s de audio | Ingles principalmente | MIT | Hugging Face |
 
 La comparativa se basa en caracteristicas publicas de la familia Whisper; no se dispone de datos de rendimiento comparativo para NOVA-Oracle-4.6.
 
@@ -83,7 +83,7 @@ La comparativa se basa en caracteristicas publicas de la familia Whisper; no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-ai-nova/NOVA-Oracle-4.6-16bit
+- Modelo en Hugging Face: https://huggingface.co/cortex-ai-nova/NOVA-Oracle-4.6-16bit
 - Modelo base: https://huggingface.co/unsloth/whisper-large-v3
 - Whisper Large V3 original (OpenAI): https://huggingface.co/openai/whisper-large-v3
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

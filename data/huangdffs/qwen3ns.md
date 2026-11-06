@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huangdffs/qwen3ns` es un modelo de lenguaje publicado en HuggingFace por el usuario huangdffs. El repositorio contiene pesos en formato GGUF y esta etiquetado como conversacional, con licencia Apache 2.0. El recuento real de parametros almacenados en los tensores safetensors es de 4.022.468.096 (aproximadamente 4,02 mil millones), y el repositorio ocupa 5,2 GB en total.
+`huangdffs/qwen3ns` es un modelo de lenguaje publicado en Hugging Face por el usuario huangdffs. El repositorio contiene pesos en formato GGUF y esta etiquetado como conversacional, con licencia Apache 2.0. El recuento real de parametros almacenados en los tensores safetensors es de 4.022.468.096 (aproximadamente 4,02 mil millones), y el repositorio ocupa 5,2 GB en total.
 
 La model card publicada por el autor no contiene mas informacion que la declaracion de licencia (`license: apache-2.0`): no incluye descripcion del entrenamiento, datos de contexto, idiomas soportados, resultados de benchmarks ni instrucciones de uso. Tampoco se ha publicado pipeline de inferencia ni informacion sobre el proceso de cuantizacion aplicado.
 
@@ -29,7 +29,7 @@ El nombre del modelo sugiere una derivacion o ajuste sobre la familia Qwen3 y el
 
 No disponible. La model card no describe la arquitectura (transformer denso, MoE, hibrida u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
-El unico dato estructural verificable es el recuento de parametros (4,02 B) y el formato de publicacion (GGUF, con etiqueta `endpoints_compatible`), que indica que el artefacto esta pensado para servirse mediante endpoints compatibles con la API de HuggingFace y para inferencia local con runtimes de cuantizacion. El nombre "qwen3ns" apunta a una posible base Qwen3, pero no hay documentacion que lo confirme.
+El unico dato estructural verificable es el recuento de parametros (4,02 B) y el formato de publicacion (GGUF, con etiqueta `endpoints_compatible`), que indica que el artefacto esta pensado para servirse mediante endpoints compatibles con la API de Hugging Face y para inferencia local con runtimes de cuantizacion. El nombre "qwen3ns" apunta a una posible base Qwen3, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Nota: la ausencia de datos en la model card no implica que estas capacidades no 
 - Filtrado y clasificacion de texto en pipelines internos: modelos de ~4 B se usan habitualmente para tareas de etiquetado, moderacion o extraccion de entidades con latencia baja y coste por token nulo en infraestructura propia, siempre que se valide la calidad con datos propios.
 - Experimentacion academica y evaluacion de tecnicas de cuantizacion: el repositorio contiene varios archivos GGUF y pesos en safetensors, lo que permite comparar degradacion entre niveles de cuantizacion sobre el mismo modelo.
 - Fine-tuning posterior y destilacion: los 4,02 B de parametros con licencia Apache 2.0 permiten reentrenamiento y adaptacion con LoRA/QLoRA en una sola GPU consumer, aunque se desconoce si el modelo base ya esta ajustado por instrucciones.
-- Servicio mediante endpoints compatibles con la API de HuggingFace: la etiqueta `endpoints_compatible` facilita el despliegue en plataformas de inferencia gestionada sin cambios de codigo.
+- Servicio mediante endpoints compatibles con la API de Hugging Face: la etiqueta `endpoints_compatible` facilita el despliegue en plataformas de inferencia gestionada sin cambios de codigo.
 
 No se puede recomendar el modelo para produccion critica (atencion al cliente regulada, codigo en CI/CD, analisis financiero) sin benchmarks verificados, dado que no hay ninguna evaluacion publicada.
 
@@ -70,7 +70,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 - Cache KV: depende de la longitud de contexto y del numero de capas, ambos no disponibles. Con contextos largos (32k o mas) la cache puede superar el tamano de los propios pesos y ser el factor limitante.
 - GPU consumer compatibles (estimacion): RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090 24 GB; tambien Mac con Apple Silicon y memoria unificada de 8 GB o mas para cuantizaciones Q4.
 - GPU de datacenter (A100 40/80 GB, H100 80 GB): sobredimensionadas para un modelo de este tamano, salvo para lotes muy grandes o fine-tuning.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores con soporte GGUF (por ejemplo vLLM con backend GGUF o TGI en funcion del soporte de la version) y endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores con soporte GGUF (por ejemplo vLLM con backend GGUF o TGI en funcion del soporte de la version) y endpoints compatibles con la API de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia de primer token.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Conclusion: sin benchmarks publicados ni model card descriptiva, no es posible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huangdffs/qwen3ns
+- Modelo en Hugging Face: https://huggingface.co/huangdffs/qwen3ns
 - Model card: no disponible (el README solo contiene la declaracion de licencia Apache 2.0)
 - Paper: no disponible
 - Blog o anuncio: no disponible

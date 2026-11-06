@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PoolFormer-multitask es un repositorio de HuggingFace publicado por el usuario PEMI-SHRA que contiene una implementacion propia en PyTorch de una arquitectura PoolFormer orientada a tareas multiples (multitask). Segun la propia model card, el repositorio debe entenderse como un artefacto de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de tamano reducido, y no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado.
+PoolFormer-multitask es un repositorio de Hugging Face publicado por el usuario PEMI-SHRA que contiene una implementacion propia en PyTorch de una arquitectura PoolFormer orientada a tareas multiples (multitask). Segun la propia model card, el repositorio debe entenderse como un artefacto de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de tamano reducido, y no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado.
 
 El dato mas relevante es su tamano real: 49.600 parametros totales declarados en el archivo safetensors. Esta cifra es incompatible con la etiqueta "giant" que aparece en la configuracion de arquitectura, lo que refuerza la naturaleza experimental del artefacto. El repositorio ocupa 0,0 GB, tiene 18 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia MIT.
 
@@ -78,7 +78,7 @@ No se dispone de datos verificables sobre modelos comparables publicados junto a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poolformer-multitask (este repositorio) | 49.600 | no disponible | no disponible (checkpoint sin entrenar) | MIT | HuggingFace |
+| poolformer-multitask (este repositorio) | 49.600 | no disponible | no disponible (checkpoint sin entrenar) | MIT | Hugging Face |
 | PoolFormer canonico (variantes oficiales) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,13 +88,13 @@ No se dispone de datos verificables sobre modelos comparables publicados junto a
 - No existe auditoria de robustez, equidad ni transferencia de dominio, tal y como reconoce el propio autor.
 - La etiqueta "giant" de la configuracion no se corresponde con los 49.600 parametros reales; conviene tratar la nomenclatura del repositorio con cautela.
 - No se declaran idiomas soportados, longitud de contexto ni modalidad de entrada, por lo que el alcance funcional del modelo es indeterminado a partir de la documentacion.
-- Al ser una implementacion custom, las APIs de carga automatica de HuggingFace no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
+- Al ser una implementacion custom, las APIs de carga automatica de Hugging Face no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
 - Riesgo de alucinacion: no aplica en sentido estricto, ya que el modelo no genera lenguaje de forma fiable; el riesgo real es interpretar los pesos como un modelo entrenado.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se utilicen junto al repositorio.
 - Los resultados de un futuro checkpoint entrenado deben documentarse de forma separada a los valores por defecto aqui incluidos, para no atribuir al modelo capacidades que no tiene.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PEMI-SHRA/poolformer-multitask
+- Repositorio en Hugging Face: https://huggingface.co/PEMI-SHRA/poolformer-multitask
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relevante relacionado con este modelo, su arquitectura o su autor. Los unicos resultados obtenidos correspondian a foros sin ninguna relacion tematica y se han descartado por no ser fuentes validas. No se dispone, por tanto, de enlaces adicionales a papers, blogs, repositorios de codigo o demostraciones.

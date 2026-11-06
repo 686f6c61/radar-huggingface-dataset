@@ -12,7 +12,7 @@ La información pública es muy escasa: no se documenta licencia, idiomas distin
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (los metadatos de conversión indican origen HuggingFace con `convert_type: hf`; el nombre del modelo sugiere ascendencia de la familia Gemma, sin confirmar) |
+| Arquitectura | no disponible (los metadatos de conversión indican origen Hugging Face con `convert_type: hf`; el nombre del modelo sugiere ascendencia de la familia Gemma, sin confirmar) |
 | Parámetros totales | 12.772.912.896 (12,77 B) según safetensors del modelo base |
 | Parámetros activos | no aplica / no disponible (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -28,12 +28,12 @@ La información pública es muy escasa: no se documenta licencia, idiomas distin
 
 No se dispone de información sobre la arquitectura interna del modelo base: no hay documentación en el material consultado sobre número de capas, tipo de atención, uso de MoE, atención lineal o híbrida, ni sobre la composición del dataset de entrenamiento, el número de tokens vistos o si se aplicaron fases de ajuste como RLHF, DPO o SFT. El único dato estructural verificable es el recuento de parámetros (12,77 B) y la etiqueta de pipeline "text-generation" implícita en el uso conversacional declarado.
 
-Respecto al proceso de cuantización, los metadatos incluidos en la model card indican `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y `skip_mmproj: 1`. Es decir, se trata de cuantizaciones estáticas (no ponderadas con imatrix) obtenidas a partir de los pesos HuggingFace originales mediante la herramienta de llama.cpp, y el autor indica explícitamente que no tiene previsto publicar variantes imatrix salvo petición en la sección de discusiones.
+Respecto al proceso de cuantización, los metadatos incluidos en la model card indican `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y `skip_mmproj: 1`. Es decir, se trata de cuantizaciones estáticas (no ponderadas con imatrix) obtenidas a partir de los pesos Hugging Face originales mediante la herramienta de llama.cpp, y el autor indica explícitamente que no tiene previsto publicar variantes imatrix salvo petición en la sección de discusiones.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés: el repositorio está etiquetado como `conversational` y `transformers`, lo que apunta a un uso de chat/instrucciones, aunque no se documenta el formato de prompt exacto ni la plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de infraestructura de inferencia compatible con HuggingFace Endpoints/Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de infraestructura de inferencia compatible con Hugging Face Endpoints/Inference Endpoints.
 - Ejecución local en CPU/GPU híbrida: al estar en GGUF, soporta offload parcial de capas a GPU y ejecución completa en CPU.
 - Razonamiento, matemáticas y generación de código: no disponible (no hay benchmarks ni documentación que lo confirmen).
 - Tool calling / function calling: no disponible.

@@ -90,10 +90,10 @@ Prefill: aproximadamente 1.900 tok/s a 32k tokens y entre 2.200 y 2.550 tok/s de
 
 | Modelo | Parámetros | Contexto | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10) | 129,4B en safetensors (176B declarados, 6B activos) | Documentado hasta 250k con YaRN | 20/24 Hard LCB (`medium`), 95% AIME 2025 (`xhigh`), 55,0 tok/s | swift-open-license-1.0 | HuggingFace, requiere receta y PLE externa |
-| Base Flash-Next W4A16 | Mismo orden | Igual (YaRN) | 53,1 tok/s; 750 s / 555 s por pasada en LiveCodeBench | Depende del modelo base | HuggingFace |
-| Swift 1.5 27B | 27B | No disponible | 17/24 Hard LCB, 28/30 AIME 2025 (`xhigh`) | Swift (ver licencia) | HuggingFace y endpoint en FriendliAI (variante NVFP4) |
-| Qwen3.8-27B | 27B | No disponible | 12/24 Hard LCB | Según Qwen | HuggingFace |
+| Este checkpoint (Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10) | 129,4B en safetensors (176B declarados, 6B activos) | Documentado hasta 250k con YaRN | 20/24 Hard LCB (`medium`), 95% AIME 2025 (`xhigh`), 55,0 tok/s | swift-open-license-1.0 | Hugging Face, requiere receta y PLE externa |
+| Base Flash-Next W4A16 | Mismo orden | Igual (YaRN) | 53,1 tok/s; 750 s / 555 s por pasada en LiveCodeBench | Depende del modelo base | Hugging Face |
+| Swift 1.5 27B | 27B | No disponible | 17/24 Hard LCB, 28/30 AIME 2025 (`xhigh`) | Swift (ver licencia) | Hugging Face y endpoint en FriendliAI (variante NVFP4) |
+| Qwen3.8-27B | 27B | No disponible | 12/24 Hard LCB | Según Qwen | Hugging Face |
 | SGLang NVFP4/NEXTN sobre Flash-Next | Mismo orden | No disponible | 27,7 tok/s | Según checkpoint | Repositorio del ecosistema |
 
 La ventaja diferencial de este checkpoint frente al modelo base no está en la precisión, sino en el coste por tarea: misma velocidad de decodificación con aproximadamente la mitad de tokens generados en la muestra de código, lo que se traduce en tiempos de pared por pasada de 264/327 s frente a 750/555 s.
@@ -115,7 +115,7 @@ La ventaja diferencial de este checkpoint frente al modelo base no está en la p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10
+- Modelo en Hugging Face: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10
 - Modelo base (cuantización AutoRound de UkisAI): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AutoRound
 - Model card de UkisAI para Swift-Qwen3.8-Flash-Next: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

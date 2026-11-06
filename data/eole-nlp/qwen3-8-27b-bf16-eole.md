@@ -96,8 +96,8 @@ La búsqueda web realizada no devolvió información técnica sobre ninguno de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eole-nlp/Qwen3.8-27B-BF16-eole
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/eole-nlp/Qwen3.8-27B-BF16-eole
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Recetas de Eole: https://github.com/eole-nlp/eole/tree/main/recipes
 - Repositorio de Eole: https://github.com/eole-nlp/eole
 - Manifiesto de tensores y digests: `model-manifest.json` dentro del repositorio

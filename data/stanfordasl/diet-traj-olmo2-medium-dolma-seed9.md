@@ -23,7 +23,7 @@ Su relevancia no reside en su rendimiento como modelo de lenguaje —no está al
 
 El modelo emplea la arquitectura OLMo2 en su variante densa media: hidden_size de 768, intermediate_size de 3072, 16 capas ocultas, 12 cabezas de atención y 12 cabezas clave-valor (MHA sin GQA), con una ventana de contexto de 2.048 posiciones. La configuración exacta corresponde al fichero `configs/model/olmo2_medium_dense.yaml` del repositorio jjalora/diet-lm.
 
-El entrenamiento fue un preentrenamiento puro de modelado de lenguaje con cross-entropy (sin destilación, `teacher_schedule=none`), sobre el dataset `emozilla/dolma-v1_7-3B`, un espejo nativo de HuggingFace de Dolma v1.7 muestreado proporcionalmente entre sus componentes de mezcla, servido en streaming sin preempaquetar. Se usó el optimizador AdamW con lr=3e-5, betas (0.9, 0.95), weight decay de 0.1, planificación coseno y precisión bf16. La ejecución constó de 30.517 pasos máximo (con guardado cada 950 pasos) sobre una GPU H100 en el clúster "makau", con un presupuesto de 2.000 millones de tokens. No hubo RLHF ni DPO: el modelo es un checkpoint de preentrenamiento sin alinear. La característica distintiva de la colección es que todas las ejecuciones son idénticas salvo la semilla aleatoria, lo que habilita análisis de trayectoria en el espacio de pesos.
+El entrenamiento fue un preentrenamiento puro de modelado de lenguaje con cross-entropy (sin destilación, `teacher_schedule=none`), sobre el dataset `emozilla/dolma-v1_7-3B`, un espejo nativo de Hugging Face de Dolma v1.7 muestreado proporcionalmente entre sus componentes de mezcla, servido en streaming sin preempaquetar. Se usó el optimizador AdamW con lr=3e-5, betas (0.9, 0.95), weight decay de 0.1, planificación coseno y precisión bf16. La ejecución constó de 30.517 pasos máximo (con guardado cada 950 pasos) sobre una GPU H100 en el clúster "makau", con un presupuesto de 2.000 millones de tokens. No hubo RLHF ni DPO: el modelo es un checkpoint de preentrenamiento sin alinear. La característica distintiva de la colección es que todas las ejecuciones son idénticas salvo la semilla aleatoria, lo que habilita análisis de trayectoria en el espacio de pesos.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. Adem
 - VRAM estimada para inferencia: ~0,7 GB en bf16 (305M de parámetros × 2 bytes), más overhead de activaciones; cualquier GPU moderna es suficiente.
 - Entrenamiento original: una sola GPU H100 (según `run.json`, clúster "makau").
 - Cabe con holgura en GPUs de consumo: RTX 3060, RTX 4090 o incluso GPUs de portátil con 8 GB de VRAM.
-- Despliegue: compatible con la librería transformers de HuggingFace (endpoints_compatible); debería funcionar también con vLLM, llama.cpp (previa conversión a GGUF) y Ollama, aunque no hay soporte documentado explícito.
+- Despliegue: compatible con la librería transformers de Hugging Face (endpoints_compatible); debería funcionar también con vLLM, llama.cpp (previa conversión a GGUF) y Ollama, aunque no hay soporte documentado explícito.
 - No se dispone de datos de latencia ni throughput publicados.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Frente a Pythia-410m, este modelo ofrece la misma filosofía de checkpoints púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed9
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed9
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Repositorio de código referenciado: jjalora/diet-lm (mencionado en la model card; no se dispone de URL verificada)
 - Colección relacionada: jjalora/diet-traj-pythia-410m (mencionada en la model card; no se dispone de URL verificada)

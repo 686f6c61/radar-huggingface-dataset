@@ -71,8 +71,8 @@ El valor de "+ adaptador" no esta publicado. La unica cifra disponible correspon
 
 | Modelo | Parametros | Contexto | Rendimiento (SAIL-2017 validacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| babyshark-lora-baseline | 1.5B (base) + LoRA | 256 (entrenamiento) | adaptador: n/a | no disponible | HuggingFace |
-| Qwen2.5-1.5B (base) | 1.5B | segun ficha de Qwen2.5 | Accuracy 0.3579; Macro-F1 0.3194 | Apache 2.0 (segun Qwen2.5, no confirmado aqui) | HuggingFace |
+| babyshark-lora-baseline | 1.5B (base) + LoRA | 256 (entrenamiento) | adaptador: n/a | no disponible | Hugging Face |
+| Qwen2.5-1.5B (base) | 1.5B | segun ficha de Qwen2.5 | Accuracy 0.3579; Macro-F1 0.3194 | Apache 2.0 (segun Qwen2.5, no confirmado aqui) | Hugging Face |
 | Brazos CRA de InterpAdapt | 1.5B (base) + LoRA | 256 | no disponible | no disponible | proyecto InterpAdapt |
 
 No se dispone de informacion sobre otros adaptadores de sentimiento hinglish comparables. La comparativa directa disponible se limita al modelo base frente al adaptador y a los brazos CRA del mismo proyecto, cuyos resultados no estan publicados en la informacion facilitada.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros adaptadores de sentimiento hinglish com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/babyshark-lora-baseline
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/babyshark-lora-baseline
 - Repositorio del proyecto InterpAdapt (GitHub): https://github.com/bala-skv/InterpAdapt-Hinglish-finetuning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de evaluacion: https://huggingface.co/datasets/satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2

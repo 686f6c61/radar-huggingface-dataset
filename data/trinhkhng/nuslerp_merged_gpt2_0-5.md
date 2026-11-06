@@ -6,7 +6,7 @@ El modelo `trinhkhng/nuslerp_Merged_gpt2_0.5` es una fusión de dos modelos GPT-
 
 Este modelo es relevante en el contexto de la investigación sobre fusión de modelos (model merging), una técnica que permite combinar las capacidades de varios modelos sin necesidad de entrenamiento adicional. Al tratarse de una fusión de GPT-2, el resultado es un modelo de generación de texto con las mismas capacidades base que el GPT-2 original, pero con pesos interpolados que podrían presentar comportamientos ligeramente diferentes en términos de sesgo o estilo de generación.
 
-La arquitectura es un transformer decoder-only estándar de GPT-2 con 124 millones de parámetros, un tamaño que lo hace ejecutable en hardware modesto. El repositorio ocupa 1.0 GB e incluye pesos en formato safetensors, compatible con la librería transformers de HuggingFace y con pipelines de text-generation-inference.
+La arquitectura es un transformer decoder-only estándar de GPT-2 con 124 millones de parámetros, un tamaño que lo hace ejecutable en hardware modesto. El repositorio ocupa 1.0 GB e incluye pesos en formato safetensors, compatible con la librería transformers de Hugging Face y con pipelines de text-generation-inference.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: aproximadamente 0.5 GB en float32 (124M parámetros × 4 bytes). Con cuantización a int8, se reduciría a unos 0.25 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Una NVIDIA GTX 1050 Ti, RTX 2060 o superior funcionaría sin problemas. También es viable en CPU con 4-8 GB de RAM.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en cualquier GPU consumer moderna, incluidas las integradas de Intel o AMD con suficiente RAM compartida.
-- Opciones de despliegue: compatible con HuggingFace transformers, text-generation-inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) y vLLM.
+- Opciones de despliegue: compatible con Hugging Face transformers, text-generation-inference (TGI), llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) y vLLM.
 - Latencia y throughput estimados: en una GPU moderna (RTX 3090), la generación de 100 tokens tardaría aproximadamente 1-2 segundos. En CPU, la latencia sería de 5-10 segundos para la misma generación.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos GPT-2 de referencia, ya que no hay inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.5
+- Modelo en Hugging Face: https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.5
 - Repositorio de mergekit: https://github.com/arcee-ai/mergekit
 - Implementación de NuSLERP en mergekit: https://github.com/arcee-ai/mergekit/blob/main/mergekit/merge_methods/nuslerp.py
 - Modelo relacionado (GPT-2 medium fusionado): https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-medium_0.5

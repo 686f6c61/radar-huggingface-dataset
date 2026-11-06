@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NiArmStrong_0829_7_GR00T17_action_head es una política de imitación (policy) para robótica, desarrollada por wowo1018 y publicada en HuggingFace. Se trata de un "action head" entrenado sobre el modelo fundacional GR00T N1.7 de NVIDIA, que combina un backbone multimodal Cosmos-Reason2/Qwen3-VL con un transformador de acciones basado en flow-matching. El modelo está diseñado para controlar un brazo robótico híbrido (hybrid_arm) en tareas de pick_and_place, usando como entradas el estado del robot y dos cámaras (usb y zed_left). Con 3.144.016.000 parámetros (aproximadamente 3.14B), el modelo fue entrenado con LeRobot sobre el dataset soliscute/NiArmStrong_0829_7_final_stats.
+NiArmStrong_0829_7_GR00T17_action_head es una política de imitación (policy) para robótica, desarrollada por wowo1018 y publicada en Hugging Face. Se trata de un "action head" entrenado sobre el modelo fundacional GR00T N1.7 de NVIDIA, que combina un backbone multimodal Cosmos-Reason2/Qwen3-VL con un transformador de acciones basado en flow-matching. El modelo está diseñado para controlar un brazo robótico híbrido (hybrid_arm) en tareas de pick_and_place, usando como entradas el estado del robot y dos cámaras (usb y zed_left). Con 3.144.016.000 parámetros (aproximadamente 3.14B), el modelo fue entrenado con LeRobot sobre el dataset soliscute/NiArmStrong_0829_7_final_stats.
 
 El dataset de entrenamiento está compuesto por 101 episodios y 43.548 frames a 30 FPS, todos correspondientes a la tarea de pick_and_place. La licencia es Apache 2.0, y el formato de pesos es safetensors. Su relevancia radica en ser un ejemplo práctico de fine-tuning de un modelo fundacional de robótica para una tarea concreta, con una arquitectura de vanguardia y disponibilidad abierta para investigación y desarrollo.
 
@@ -72,12 +72,12 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - Sin evaluación publicada: no hay datos de tasa de éxito en el mundo real, por lo que el rendimiento real es desconocido.
 - Posibles sesgos en la percepción: al estar entrenado con un dataset limitado, el modelo puede fallar con objetos o escenas no representadas en los datos.
 - Riesgo de acciones incorrectas: si las observaciones están fuera de la distribución de entrenamiento, el modelo puede generar acciones no seguras. Es necesario implementar supervisión y límites de seguridad en el robot.
-- Anomalía en metadatos: la fecha de creación indicada en HuggingFace es 2026-09-08, lo que podría ser un error en los metadatos o un repositorio de prueba.
+- Anomalía en metadatos: la fecha de creación indicada en Hugging Face es 2026-09-08, lo que podría ser un error en los metadatos o un repositorio de prueba.
 - Idiomas y contexto: no se especifican idiomas ni longitud de contexto, ya que el modelo no está diseñado para tareas de lenguaje; su entrada es principalmente visual y de estado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wowo1018/NiArmStrong_0829_7_GR00T17_action_head
+- Hugging Face: https://huggingface.co/wowo1018/NiArmStrong_0829_7_GR00T17_action_head
 - Dataset de entrenamiento: https://huggingface.co/datasets/soliscute/NiArmStrong_0829_7_final_stats
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=soliscute/NiArmStrong_0829_7_final_stats
 - LeRobot: https://github.com/huggingface/lerobot

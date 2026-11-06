@@ -105,8 +105,8 @@ La comparación con Whisper large-v3 se ofrece como referencia de categoría (AS
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace (lipik)](https://huggingface.co/lipik/multitalker-parakeet-streaming-0.6b-v1-gguf)
-- [Modelo base en HuggingFace (nvidia/multitalker-parakeet-streaming-0.6b-v1)](https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1)
+- [Modelo GGUF en Hugging Face (lipik)](https://huggingface.co/lipik/multitalker-parakeet-streaming-0.6b-v1-gguf)
+- [Modelo base en Hugging Face (nvidia/multitalker-parakeet-streaming-0.6b-v1)](https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1)
 - [Commit upstream 8749fc7](https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1/commit/8749fc7)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)
 - [Commit de validación 3083021 en transcribe.cpp](https://github.com/handy-computer/transcribe.cpp/tree/3083021)

@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados adicionales (latenc
 
 | Modelo | Parametros | Dataset | mAP@0.25 | mAP@0.5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tr3d.scannet.mmdet3d (este) | 14,7 M | ScanNet | 71,98 | 58,57 | Apache-2.0 | HuggingFace, torch-pointcloud |
+| tr3d.scannet.mmdet3d (este) | 14,7 M | ScanNet | 71,98 | 58,57 | Apache-2.0 | Hugging Face, torch-pointcloud |
 | TR3D original (mmdetection3d) | 14,7 M (equivalente) | ScanNet | mismos valores en el paper | mismos valores en el paper | Apache-2.0 | GitHub open-mmlab |
 | Otros detectores 3D de ScanNet | no disponible | ScanNet | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ La información disponible no incluye resultados de benchmarks de modelos altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/tr3d.scannet.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/tr3d.scannet.mmdet3d
 - Paper TR3D (arXiv): https://arxiv.org/abs/2302.02858
 - Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

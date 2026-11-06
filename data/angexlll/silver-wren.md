@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ANGExllL/silver-wren | 119,0 M | 480x480 | 1000 | Apache-2.0 | HuggingFace (safetensors) |
+| ANGExllL/silver-wren | 119,0 M | 480x480 | 1000 | Apache-2.0 | Hugging Face (safetensors) |
 | EfficientNetV2-L (torchvision, ImageNet-1k) | ≈118,5 M | 480x480 | 1000 | consultar ficha de torchvision | torchvision |
 | EfficientNetV2-M (torchvision, ImageNet-1k) | ≈54,1 M | 480x480 | 1000 | consultar ficha de torchvision | torchvision |
 | ResNet-50 (torchvision, ImageNet-1k) | ≈25,6 M | 224x224 | 1000 | consultar ficha de torchvision | torchvision |
@@ -87,8 +87,8 @@ La comparación con las alternativas se limita a arquitectura, tamaño y resoluc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/silver-wren
-- Perfil del autor en HuggingFace: https://huggingface.co/ANGExllL/models
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/silver-wren
+- Perfil del autor en Hugging Face: https://huggingface.co/ANGExllL/models
 - Subred Perturb: https://perturbai.io
 - Bittensor (red en la que opera la subred netuid 26): https://bittensor.com
 - Documentación de EfficientNetV2 en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html

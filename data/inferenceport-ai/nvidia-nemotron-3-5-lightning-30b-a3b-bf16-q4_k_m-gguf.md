@@ -66,8 +66,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/inferenceport-ai/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-Q4_K_M-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/inferenceport-ai/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-Q4_K_M-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Página de NVIDIA NIM para el modelo: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Página de NVIDIA Developer sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

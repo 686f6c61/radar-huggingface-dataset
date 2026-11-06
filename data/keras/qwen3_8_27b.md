@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/qwen3_8_27b
+- Hugging Face: https://huggingface.co/keras/qwen3_8_27b
 - Documentacion KerasHub Qwen3.5: https://keras.io/api/keras_hub/models/qwen3_5
 - Keras: https://keras.io/
 - Keras 3 multi-backend: https://keras.io/keras_3/
 - Keras en Wikipedia: https://en.wikipedia.org/wiki/Keras
-- Documentacion de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentacion de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards

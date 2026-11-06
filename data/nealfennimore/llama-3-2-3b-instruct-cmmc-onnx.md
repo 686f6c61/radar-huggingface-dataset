@@ -93,7 +93,7 @@ Frente al modelo base, la diferencia es la especialización y el formato ONNX; f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/Llama-3.2-3B-Instruct-CMMC-ONNX
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/Llama-3.2-3B-Instruct-CMMC-ONNX
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio cmmc-app: https://github.com/nealfennimore/cmmc
 - NIST SP 800-171 Rev. 2: https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final

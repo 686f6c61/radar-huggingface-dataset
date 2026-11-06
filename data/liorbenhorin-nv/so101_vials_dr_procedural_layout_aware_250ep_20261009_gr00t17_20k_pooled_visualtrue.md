@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto / acción | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SO-101 vials DR, GR00T N1.7, 20k) | 3,14 B | Ventana de 16 pasos de acción; contexto de tokens no disponible | 250 episodios / 90 549 fotogramas propios; 20 000 pasos | No disponible | HuggingFace, librería `lerobot` |
-| `nvidia/GR00T-N1.7-3B` (modelo base) | ~3 B | No disponible en la información proporcionada | Preentrenamiento fundacional de NVIDIA | No disponible en la información proporcionada | HuggingFace (referenciado como base) |
+| Este modelo (SO-101 vials DR, GR00T N1.7, 20k) | 3,14 B | Ventana de 16 pasos de acción; contexto de tokens no disponible | 250 episodios / 90 549 fotogramas propios; 20 000 pasos | No disponible | Hugging Face, librería `lerobot` |
+| `nvidia/GR00T-N1.7-3B` (modelo base) | ~3 B | No disponible en la información proporcionada | Preentrenamiento fundacional de NVIDIA | No disponible en la información proporcionada | Hugging Face (referenciado como base) |
 | Otros VLA de tamaño similar (OpenVLA, pi0, RDT-1B, entre otros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones detalladas de alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -90,7 +90,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones detallad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_pooled_visualtrue
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_pooled_visualtrue
 - Dataset de entrenamiento: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Búsqueda web: no se encontraron enlaces relevantes; los resultados devueltos correspondían a portales educativos sin relación con el modelo.

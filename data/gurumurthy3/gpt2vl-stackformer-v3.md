@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [gurumurthy3/gpt2vl-stackformer-v3](https://huggingface.co/gurumurthy3/gpt2vl-stackformer-v3)
+- Repositorio Hugging Face: [gurumurthy3/gpt2vl-stackformer-v3](https://huggingface.co/gurumurthy3/gpt2vl-stackformer-v3)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la informacion disponible.

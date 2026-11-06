@@ -4,7 +4,7 @@
 
 El modelo `ming-lab/Qwen3-1.7B-base-MED-ChatVector` es un derivado del modelo base Qwen3-1.7B de Alibaba, al que se le ha aplicado una técnica de "ChatVector" orientada al dominio médico (MED). El nombre sugiere que se han interpolado los pesos del modelo base con los de una versión chat para mejorar las capacidades conversacionales sin perder las habilidades generales del modelo base, aunque no se dispone de documentación oficial que detalle el proceso. Con 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), es un modelo compacto pensado para tareas de generación de texto en entornos con recursos limitados.
 
-La ficha de HuggingFace es una plantilla genérica sin información técnica específica, por lo que la mayor parte de los detalles sobre entrenamiento, datos y rendimiento no están disponibles. Fuentes externas (llm-explorer.com) indican un contexto de 40.000 tokens y un consumo de VRAM de 3,4 GB, datos que deben tomarse con cautela al no estar confirmados por el autor. El modelo se distribuye en formato safetensors y es compatible con la librería transformers.
+La ficha de Hugging Face es una plantilla genérica sin información técnica específica, por lo que la mayor parte de los detalles sobre entrenamiento, datos y rendimiento no están disponibles. Fuentes externas (llm-explorer.com) indican un contexto de 40.000 tokens y un consumo de VRAM de 3,4 GB, datos que deben tomarse con cautela al no estar confirmados por el autor. El modelo se distribuye en formato safetensors y es compatible con la librería transformers.
 
 ## Especificaciones técnicas
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1,7B | 32K (original) | Apache 2.0 | HuggingFace |
-| ming-lab/Qwen3-1.7B-base-MED-ChatVector | 1,7B | 40K (según terceros) | no disponible | HuggingFace |
-| Llama-3.2-1B (base) | 1,2B | 128K | Llama 3.2 license | HuggingFace |
+| Qwen3-1.7B (base) | 1,7B | 32K (original) | Apache 2.0 | Hugging Face |
+| ming-lab/Qwen3-1.7B-base-MED-ChatVector | 1,7B | 40K (según terceros) | no disponible | Hugging Face |
+| Llama-3.2-1B (base) | 1,2B | 128K | Llama 3.2 license | Hugging Face |
 
 La comparativa se limita a características generales, ya que no hay datos de rendimiento para este modelo. El contexto de 40K, si es correcto, supera al del Qwen3-1.7B original (32K), pero no se puede verificar. La licencia del derivado es incierta, lo que puede limitar su uso comercial.
 
@@ -69,14 +69,14 @@ La comparativa se limita a características generales, ya que no hay datos de re
 
 - Sesgos y alucinaciones: al ser un modelo base sin alineación, puede generar información falsa o sesgada, especialmente en dominios especializados como la medicina. No debe utilizarse para diagnóstico o consejo médico sin supervisión humana.
 - Falta de documentación: la model card no proporciona información sobre datos de entrenamiento, procedimiento de fine-tuning ni evaluación, lo que dificulta evaluar su fiabilidad y reproducibilidad.
-- Licencia incierta: no se declara licencia en la ficha de HuggingFace. Aunque el modelo base Qwen3-1.7B es Apache 2.0, el derivado podría tener restricciones adicionales; se recomienda contactar al autor antes de uso comercial.
+- Licencia incierta: no se declara licencia en la ficha de Hugging Face. Aunque el modelo base Qwen3-1.7B es Apache 2.0, el derivado podría tener restricciones adicionales; se recomienda contactar al autor antes de uso comercial.
 - Contexto no confirmado: el valor de 40K tokens proviene de una fuente externa no oficial; el contexto real podría diferir.
 - Capacidades conversacionales limitadas: al ser un modelo base, no está optimizado para seguir instrucciones complejas ni para mantener diálogos coherentes sin fine-tuning adicional.
 - Riesgo de sesgo médico: si el entrenamiento se realizó con datos médicos, podría heredar sesgos presentes en esos datos, como desigualdades en representación de poblaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ming-lab/Qwen3-1.7B-base-MED-ChatVector
+- Modelo en Hugging Face: https://huggingface.co/ming-lab/Qwen3-1.7B-base-MED-ChatVector
 - Modelo similar de otro autor: https://huggingface.co/ohcat/Qwen3-1.7B-base-MED-ChatVector
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Ficha en llm-explorer.com: https://llm-explorer.com/model/Han0716%2FQwen3-1.7B-base-MED-ChatVector,7kCkdwvRFpGLgptZpUz1XC

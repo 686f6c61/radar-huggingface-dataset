@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rajeshgrgvad/tiny-transformer-baseline es un repositorio de HuggingFace publicado por el usuario Rajeshgrgvad que contiene una implementación de referencia de un Tiny Transformer orientado a tareas de matching (emparejamiento o ranking de pares de elementos). No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no una release con pesos entrenados ni auditados.
+Rajeshgrgvad/tiny-transformer-baseline es un repositorio de Hugging Face publicado por el usuario Rajeshgrgvad que contiene una implementación de referencia de un Tiny Transformer orientado a tareas de matching (emparejamiento o ranking de pares de elementos). No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no una release con pesos entrenados ni auditados.
 
 Los metadatos de safetensors reportan 16.576 parámetros totales, con configuración declarada como "small". La arquitectura combina atención de consultas agrupadas (grouped query attention), fusión tipo Tucker, activación GELU y normalización RMSNorm, y el repositorio incluye un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador SGD con planificador polinómico). El tamaño del repositorio es de 0,0 GB, coherente con un modelo de milisegundos de cómputo.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rajeshgrgvad/tiny-transformer-baseline | 16.576 | no disponible | Sin benchmarks declarados; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 11 descargas |
+| Rajeshgrgvad/tiny-transformer-baseline | 16.576 | no disponible | Sin benchmarks declarados; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 11 descargas |
 | avvorstenbosch/tinyTransformer (GitHub) | no disponible | no disponible | GPT-like entrenable en una GPU de consumo; sin métricas publicadas en la información disponible | no disponible | GitHub |
-| abhishekiai/tiny-transformer-retrieval (HuggingFace) | no disponible | no disponible | Checkpoint de inicialización, no una release entrenada | no disponible | HuggingFace |
+| abhishekiai/tiny-transformer-retrieval (Hugging Face) | no disponible | no disponible | Checkpoint de inicialización, no una release entrenada | no disponible | Hugging Face |
 | atharvanaik06/tiny-transformer-lab, baseline_v1 (GitHub) | no disponible | no disponible | Guía de reproducción con tokenizador a nivel de byte; valores de checkpoint variables según versión de PyTorch y hardware | no disponible | GitHub |
 | TinyFormer (arXiv 2311.01759) | no disponible | no disponible | Framework de diseño y despliegue de transformers en microcontroladores | no disponible | Paper |
 
@@ -84,11 +84,11 @@ No se dispone de datos suficientes para una comparación cuantitativa de paráme
 - Licencia Apache 2.0: permite uso comercial y modificación con conservación de avisos, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - El dato de parámetros (16.576) proviene de los metadatos de safetensors y su formato de publicación no distingue con total claridad el separador decimal; conviene verificarlo leyendo `config.json` antes de citarlo.
 - Cualquier resultado obtenido tras entrenar este código debe documentarse de forma separada a los valores por defecto del repositorio.
-- Los metadatos de HuggingFace registran fechas de creación y actualización del 1 de octubre de 2026, posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
+- Los metadatos de Hugging Face registran fechas de creación y actualización del 1 de octubre de 2026, posteriores a la fecha habitual de consulta; conviene tratarlas con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshgrgvad/tiny-transformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/Rajeshgrgvad/tiny-transformer-baseline
 - Implementación Tiny Transformer en GitHub (avvorstenbosch): https://github.com/avvorstenbosch/tinyTransformer
 - Guía de reproducción baseline_v1 (atharvanaik06): https://github.com/atharvanaik06/tiny-transformer-lab/blob/main/experiments/baseline_v1/README.md
 - Tiny Transformer para retrieval (abhishekiai): https://huggingface.co/abhishekiai/tiny-transformer-retrieval

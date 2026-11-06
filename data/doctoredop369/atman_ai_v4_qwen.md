@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atman_Ai_V4_Qwen es un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 8,95 B) publicado por el usuario DoctorEdoP369 en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino derivado de DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED, del que hereda la arquitectura de la familia Qwen3.5 y su modo de razonamiento explicito mediante una cadena ` thinking` previa a la respuesta. El autor lo presenta como la revision V4 de su proyecto "Atman AI", orientada a razonamiento profundo, conversaciones largas y escritura narrativa.
+Atman_Ai_V4_Qwen es un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 8,95 B) publicado por el usuario DoctorEdoP369 en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino derivado de DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED, del que hereda la arquitectura de la familia Qwen3.5 y su modo de razonamiento explicito mediante una cadena ` thinking` previa a la respuesta. El autor lo presenta como la revision V4 de su proyecto "Atman AI", orientada a razonamiento profundo, conversaciones largas y escritura narrativa.
 
 El modelo se distribuye principalmente en formato GGUF, con un tamano de repositorio de 16,9 GB, y esta pensado para ejecutarse en local sobre hardware de consumo. Incluye un proyector multimodal (mmproj) que habilita capacidades de vision cuando el cliente de inferencia lo soporta. La model card declara soporte multilingue, contexto ampliado mediante archivos Yarn y una reduccion deliberada del filtrado de seguridad respecto a su modelo base.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoctorEdoP369/Atman_Ai_V4_Qwen
+- Modelo en Hugging Face: https://huggingface.co/DoctorEdoP369/Atman_Ai_V4_Qwen
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED
 - Perfil del autor: https://huggingface.co/DoctorEdoP369
 - Paper o publicacion tecnica: no disponible

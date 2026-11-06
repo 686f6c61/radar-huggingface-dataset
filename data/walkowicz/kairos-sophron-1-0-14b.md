@@ -6,7 +6,7 @@ Kairos Sophron 1.0 14B es un ajuste fino del modelo base Qwen/Qwen2.5-Coder-14B-
 
 Tecnicamente, el autor partio de una LoRA fusionada en bf16 sobre el modelo base y la cuantizo a GGUF Q4_K_M (4,87 bits por peso, archivo de 8,4 GB). El repositorio publicado no contiene los pesos en safetensors ni el conjunto de entrenamiento, solo el artefacto cuantizado listo para desplegar. El modelo tiene 14.770.033.664 parametros y hereda la arquitectura transformer decoder-only de la familia Qwen2.
 
-Su relevancia practica es la de un modelo local de asistencia a programacion: cabe en GPUs de consumo medio-alto (12 GB de VRAM con contexto de 8192 tokens) y funciona con Ollama mediante un Modelfile incluido. Ahora bien, el modelo es muy reciente, no tiene descargas ni valoraciones en HuggingFace, y su evaluacion se apoya exclusivamente en jueces automaticos (LLM-as-judge), no en benchmarks estandar reproducibles.
+Su relevancia practica es la de un modelo local de asistencia a programacion: cabe en GPUs de consumo medio-alto (12 GB de VRAM con contexto de 8192 tokens) y funciona con Ollama mediante un Modelfile incluido. Ahora bien, el modelo es muy reciente, no tiene descargas ni valoraciones en Hugging Face, y su evaluacion se apoya exclusivamente en jueces automaticos (LLM-as-judge), no en benchmarks estandar reproducibles.
 
 ## Especificaciones tecnicas
 
@@ -95,6 +95,6 @@ No se dispone de una comparacion cuantitativa fiable contra el modelo base ni co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-sophron-1.0-14B
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-sophron-1.0-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Resultados de busqueda web: no se encontro ninguna referencia relevante al modelo. Todas las entradas devueltas (dominios ajenos, una edicion digital de prensa y un video sobre mantenimiento de cortacesped) no guardan relacion con Kairos Sophron 1.0 14B, con Qwen ni con el autor.

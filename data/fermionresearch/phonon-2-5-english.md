@@ -82,11 +82,11 @@ No se han publicado datos de latencia, throughput (factor de tiempo real) ni con
 
 | Modelo | Parámetros | Descarga | Idioma | WER medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Phonon-2.5 English | 0,6 B (cuantizado) | 157,6 MB | Inglés | 4,82 % | CC-BY-4.0 | HuggingFace, paquete `fermion-research` |
-| Phonon-2.5 | 0,6 B (cuantizado) | 156,2 MB | 25 idiomas | 5,06 % | no disponible | HuggingFace |
-| Phonon-2 | no disponible | 158 MB | no disponible | 5,21 % | no disponible | HuggingFace |
+| Phonon-2.5 English | 0,6 B (cuantizado) | 157,6 MB | Inglés | 4,82 % | CC-BY-4.0 | Hugging Face, paquete `fermion-research` |
+| Phonon-2.5 | 0,6 B (cuantizado) | 156,2 MB | 25 idiomas | 5,06 % | no disponible | Hugging Face |
+| Phonon-2 | no disponible | 158 MB | no disponible | 5,21 % | no disponible | Hugging Face |
 | Underdog Bark 3.0 | no disponible | 163 MB | Inglés | 4,94 % | no disponible | no disponible |
-| Parakeet TDT 0.6B v3 | 0,6 B | 2.508 MB | no disponible | 4,96 % | CC-BY-4.0 (heredada por Phonon) | HuggingFace (NVIDIA) |
+| Parakeet TDT 0.6B v3 | 0,6 B | 2.508 MB | no disponible | 4,96 % | CC-BY-4.0 (heredada por Phonon) | Hugging Face (NVIDIA) |
 | Parakeet Redux | no disponible | 178 MB | no disponible | 5,69 % | no disponible | no disponible |
 
 Lectura de la comparativa: frente a su modelo base sin cuantizar, Phonon-2.5 English reduce el tamaño de descarga unas 16 veces (2.508 MB frente a 157,6 MB) a cambio de 0,14 puntos de WER medio, y mejora en AMI (-0,66), VoxPopuli (-0,91) y SPGISpeech (-0,32). Frente a Underdog Bark 3.0, gana en media, LS clean, LS other, Earnings-22 y SPGISpeech, y pierde en AMI (8,76 frente a 7,82), GigaSpeech (7,99 frente a 7,95) y VoxPopuli (2,28 frente a 2,05).
@@ -105,7 +105,7 @@ Lectura de la comparativa: frente a su modelo base sin cuantizar, Phonon-2.5 Eng
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FermionResearch/Phonon-2.5-English
+- Modelo en Hugging Face: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Variante multilingüe (25 idiomas): https://huggingface.co/FermionResearch/Phonon-2.5
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Documentación de la CLI y el servidor: https://www.fermionresearch.com/docs/speech/
@@ -113,4 +113,4 @@ Lectura de la comparativa: frente a su modelo base sin cuantizar, Phonon-2.5 Eng
 - Open ASR Leaderboard (referencia de los resultados publicados): no disponible en la información proporcionada
 - Paper técnico: no disponible en la información proporcionada
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

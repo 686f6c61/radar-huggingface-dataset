@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks de calidad de decisión (tipo MMLU,
 
 | Modelo | Desarrollador | Parametros | Tipo | Latencia declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DGPL-BR | Durbhasi Gurukulam (DGPL) | 48,8 M | System-1 no autorregresivo, multimodal | 16,77 ms (ONNX CPU) | GPL-3.0 | HuggingFace `dgpl/dgpl-br` |
+| DGPL-BR | Durbhasi Gurukulam (DGPL) | 48,8 M | System-1 no autorregresivo, multimodal | 16,77 ms (ONNX CPU) | GPL-3.0 | Hugging Face `dgpl/dgpl-br` |
 | Laya | Nandha Kishor M / ConvAI Innovations | No disponible | System-1 de decision | No disponible | No disponible | GitHub `@NandhaKishorM/laya` |
 | BRPilot / DGPL System-1 | Durbhasi Gurukulam (DGPL) | No disponible | Motor de decision de alto rendimiento (microsegundos) | No disponible | No disponible | `br.durbhasigurukulam.com` |
 | DGPL Linux Assistant 0.8B | Durbhasi Gurukulam (DGPL) | 0,8 B | Copiloto de terminal Linux | No disponible | No disponible | `ollama.com/dgpl` |
@@ -97,9 +97,9 @@ Los datos de rendimiento, contexto y licencia de las alternativas no están disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dgpl/dgpl-br
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/dgpl/models
-- Modelos etiquetados con `dgpl` en HuggingFace: https://huggingface.co/models?other=dgpl
+- Modelo en Hugging Face: https://huggingface.co/dgpl/dgpl-br
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/dgpl/models
+- Modelos etiquetados con `dgpl` en Hugging Face: https://huggingface.co/models?other=dgpl
 - Repositorio comparativo Laya vs DGPL: https://github.com/vk-alto-none/laya-vs-dgpl-arena
 - DGPL en Ollama: https://ollama.com/dgpl
 - Sitio corporativo de DGPL: https://durbhasigurukulam.com

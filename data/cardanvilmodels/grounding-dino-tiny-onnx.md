@@ -110,7 +110,7 @@ La validación se hizo con onnxruntime 1.31 en CPU frente a PyTorch (transformer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CardAnvilModels/grounding-dino-tiny-ONNX
+- Modelo en Hugging Face: https://huggingface.co/CardAnvilModels/grounding-dino-tiny-ONNX
 - Modelo base (PyTorch): https://huggingface.co/IDEA-Research/grounding-dino-tiny
 - Exportación de referencia: https://huggingface.co/onnx-community/grounding-dino-tiny-ONNX (commit `ff690b0a8050566c290287545bd059350f3e9096`)
 - Transformers.js: https://github.com/huggingface/transformers.js

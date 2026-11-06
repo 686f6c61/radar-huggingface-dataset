@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`haisassan/summarize-mixed-dataset-model-v4` es un modelo de generacion de texto a texto (text2text-generation) publicado en HuggingFace por el usuario haisassan. La informacion disponible en el Hub lo identifica como un modelo basado en la arquitectura BART, con pesos en formato safetensors y compatibilidad con la libreria transformers. El nombre del repositorio sugiere que fue entrenado o ajustado para tareas de resumen (summarization) sobre un dataset mixto, aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento.
+`haisassan/summarize-mixed-dataset-model-v4` es un modelo de generacion de texto a texto (text2text-generation) publicado en Hugging Face por el usuario haisassan. La informacion disponible en el Hub lo identifica como un modelo basado en la arquitectura BART, con pesos en formato safetensors y compatibilidad con la libreria transformers. El nombre del repositorio sugiere que fue entrenado o ajustado para tareas de resumen (summarization) sobre un dataset mixto, aunque la model card no documenta ni el dataset ni el procedimiento de entrenamiento.
 
 El modelo cuenta con 406.496.496 parametros totales, lo que lo situa en el rango de los BART de tamano base o large (BART-base tiene aproximadamente 139 millones y BART-large unos 406 millones, por lo que el conteo es consistente con una variante large). El repositorio ocupa 1,6 GB. No se han publicado datos sobre licencia, idiomas soportados, contexto maximo ni resultados de evaluacion.
 
-La relevancia de este modelo es limitada en el momento actual: acumula cero descargas y cero likes, la model card es la plantilla autogenerada por HuggingFace sin completar, y no hay documentacion tecnica adicional. Se trata, por tanto, de un checkpoint de proposito experimental o personal cuyo uso en produccion requeriria una evaluacion independiente por parte del integrador.
+La relevancia de este modelo es limitada en el momento actual: acumula cero descargas y cero likes, la model card es la plantilla autogenerada por Hugging Face sin completar, y no hay documentacion tecnica adicional. Se trata, por tanto, de un checkpoint de proposito experimental o personal cuyo uso en produccion requeriria una evaluacion independiente por parte del integrador.
 
 ## Especificaciones tecnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| haisassan/summarize-mixed-dataset-model-v4 | 406,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| facebook/bart-large-cnn | ~406 M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| facebook/bart-large-xsum | ~406 M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| google/pegasus-large | ~568 M | 512-1024 tokens | Apache 2.0 | HuggingFace, usado en resumen |
+| haisassan/summarize-mixed-dataset-model-v4 | 406,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| facebook/bart-large-cnn | ~406 M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| facebook/bart-large-xsum | ~406 M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| google/pegasus-large | ~568 M | 512-1024 tokens | Apache 2.0 | Hugging Face, usado en resumen |
 
 La comparacion con `facebook/bart-large-cnn` es la mas directa por coincidencia de arquitectura y numero de parametros, pero este ultimo cuenta con model card completa, licencia MIT y evaluaciones publicadas en CNN/DailyMail, mientras que el modelo analizado carece de todos esos elementos.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva sobre el modelo.
+- La model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva sobre el modelo.
 - No se especifica licencia, lo que impide determinar si el uso comercial esta permitido; en ausencia de licencia explicita, debe asumirse que no hay autorizacion clara.
 - No hay evaluacion publicada de sesgos, alucinacion ni calidad de resumen; el riesgo de alucinacion en tareas generativas es inherente a la arquitectura y no ha sido cuantificado.
 - Se desconoce la longitud de contexto efectiva y los idiomas de entrenamiento; el rendimiento en castellano es incierto.
@@ -82,6 +82,6 @@ La comparacion con `facebook/bart-large-cnn` es la mas directa por coincidencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haisassan/summarize-mixed-dataset-model-v4
+- Modelo en Hugging Face: https://huggingface.co/haisassan/summarize-mixed-dataset-model-v4
 - Paper de BART (referenciado en los tags, arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

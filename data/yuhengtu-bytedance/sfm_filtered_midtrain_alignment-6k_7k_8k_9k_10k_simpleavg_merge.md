@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables. Al ser un merge de chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_9k_10k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-6k_7k_8k_9k_10k_simpleavg_merge
 - Página del equipo ByteDance Seed: https://seed.bytedance.com/
 - Documentación de mergekit: https://github.com/cg123/mergekit
 - Paper sobre interpolación de pesos (Linear merge): https://arxiv.org/abs/2203.05482

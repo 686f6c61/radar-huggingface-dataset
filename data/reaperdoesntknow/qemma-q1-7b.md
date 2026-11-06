@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qemma-Q1.7B es un modelo de lenguaje hibrido desarrollado por Convergent Intelligence LLC (Research Division), bajo el perfil de HuggingFace `reaperdoesntknow`. Surge de la fusion a nivel de pesos (sin adaptadores) de dos modelos base: **Gemma-3 1B** (de Google) y **Qwen3 1.7B** (de Alibaba). El resultado es un modelo de aproximadamente 1.000 millones de parametros (999.891.712 exactamente) que combina el cuerpo y MLP de Gemma con la atencion y la cabeza de Qwen, proyectados y alineados al tamaño oculto de Gemma. Esta diseñado para seguir instrucciones y razonamiento paso a paso, y ha sido afinado mediante SFT con los datasets `HuggingFaceH4/ultrachat_200k` y `TIGER-Lab/MathInstruct`.
+Qemma-Q1.7B es un modelo de lenguaje hibrido desarrollado por Convergent Intelligence LLC (Research Division), bajo el perfil de Hugging Face `reaperdoesntknow`. Surge de la fusion a nivel de pesos (sin adaptadores) de dos modelos base: **Gemma-3 1B** (de Google) y **Qwen3 1.7B** (de Alibaba). El resultado es un modelo de aproximadamente 1.000 millones de parametros (999.891.712 exactamente) que combina el cuerpo y MLP de Gemma con la atencion y la cabeza de Qwen, proyectados y alineados al tamaño oculto de Gemma. Esta diseñado para seguir instrucciones y razonamiento paso a paso, y ha sido afinado mediante SFT con los datasets `HuggingFaceH4/ultrachat_200k` y `TIGER-Lab/MathInstruct`.
 
 El modelo es relevante porque explora una via de investigacion poco comun: la fusion arquitectonica a nivel de pesos entre dos familias distintas (Gemma y Qwen) en lugar del tradicional fine-tuning o mezcla de expertos. Incluye ademas un escalado de posicion mediante Yarn RoPE con una longitud maxima declarada de 242.144 tokens. Su licencia OSL-3.0 permite uso comercial con atribucion, lo que lo hace atractivo para experimentacion y prototipado en entornos de produccion con recursos limitados.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada para inferencia**: con pesos en bfloat16, el modelo ocupa aproximadamente 2 GB (999M parametros × 2 bytes). Sumando activaciones y KV cache, se recomienda al menos 3-4 GB de VRAM para generacion con contexto moderado.
 - **GPU recomendadas**: cualquier GPU consumer con 4 GB o mas es suficiente. Ejemplos: NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB). Tambien puede ejecutarse en GPUs de datacenter como A10 o T4.
 - **Compatibilidad con consumer GPU**: si, cabe en GPUs de gama media e incluso en algunas integradas con cuantizacion.
-- **Opciones de despliegue**: compatible con Transformers (HuggingFace), y por su naturaleza de texto generativo puede servirse con vLLM, llama.cpp, Ollama o TGI. No se proporcionan configuraciones oficiales para estos frameworks, pero la arquitectura estandar permite su uso.
+- **Opciones de despliegue**: compatible con Transformers (Hugging Face), y por su naturaleza de texto generativo puede servirse con vLLM, llama.cpp, Ollama o TGI. No se proporcionan configuraciones oficiales para estos frameworks, pero la arquitectura estandar permite su uso.
 - **Latencia y throughput**: no se dispone de datos medidos. En una GPU moderna (RTX 4090), un modelo de 1B en bfloat16 puede generar decenas de tokens por segundo, pero es una estimacion orientativa sin confirmacion del autor.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 | Qemma-Q1.7B | 999.891.712 | 242.144 (declarado) | OSL-3.0 | Hibrido Gemma-3 + Qwen3, SFT para razonamiento |
 | Gemma-3 1B (base) | ~1B | 32.000 (original) | Gemma Terms of Use | Modelo base de Google, sin SFT especifico |
 | Qwen3 1.7B (base) | 1.7B | 32.000 (original) | Apache 2.0 | Modelo base de Alibaba, conocido por su buen rendimiento en razonamiento |
-| SmolLM2 1.7B | 1.7B | 8.000 | Apache 2.0 | Modelo compacto de HuggingFace, optimizado para dispositivos locales |
+| SmolLM2 1.7B | 1.7B | 8.000 | Apache 2.0 | Modelo compacto de Hugging Face, optimizado para dispositivos locales |
 
 La comparativa se basa en las specs publicas de los modelos base. No hay datos de rendimiento comparativo de Qemma-Q1.7B frente a estos modelos. Su principal diferencia es el contexto extendido (242K) y la fusion hibrida, mientras que los modelos base tienen contextos mas cortos (32K en Gemma-3 y Qwen3 originales).
 
@@ -81,7 +81,7 @@ La comparativa se basa en las specs publicas de los modelos base. No hay datos d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/reaperdoesntknow/Qemma-Q1.7B)
+- [Modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/Qemma-Q1.7B)
 - [Perfil del autor (Convergent Intelligence LLC)](https://huggingface.co/reaperdoesntknow)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Modelo base google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)

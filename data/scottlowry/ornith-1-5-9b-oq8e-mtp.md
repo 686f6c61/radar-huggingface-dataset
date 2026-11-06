@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ8e-mtp es una version cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: el autor ha aplicado cuantizacion mixta de precision con la herramienta oQ (perteneciente a oMLX, version v0.7.1.dev1) sobre un modelo base de tipo qwen3_5. El resultado son pesos en formato MLX safetensors de 8 bits con tamano de grupo 64, pensados para ejecutarse en hardware Apple Silicon mediante la libreria MLX.
+Ornith-1.5-9B-oQ8e-mtp es una version cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: el autor ha aplicado cuantizacion mixta de precision con la herramienta oQ (perteneciente a oMLX, version v0.7.1.dev1) sobre un modelo base de tipo qwen3_5. El resultado son pesos en formato MLX safetensors de 8 bits con tamano de grupo 64, pensados para ejecutarse en hardware Apple Silicon mediante la libreria MLX.
 
 El repositorio declara 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) y un tamano de 10,7 GB. La ficha no especifica la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de uso, y tampoco incluye datos sobre el dataset de entrenamiento ni resultados de benchmarks. La model card se limita a documentar los parametros de cuantizacion.
 
@@ -71,7 +71,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra metric
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-oQ8e-mtp | ~9,65B | No disponible | 8 bits, group size 64, formato MLX | No disponible | HuggingFace (0 descargas, 0 likes) |
+| Ornith-1.5-9B-oQ8e-mtp | ~9,65B | No disponible | 8 bits, group size 64, formato MLX | No disponible | Hugging Face (0 descargas, 0 likes) |
 | Modelo base Ornith-1.5-9B | No disponible | No disponible | No aplica | No disponible | No disponible en la informacion proporcionada |
 | Alternativas de ~9B en MLX | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Modelo base Ornith-1.5-9B: enlace no disponible en la informacion proporcionada
 - Papers, blogs, repositorios o demos adicionales: no disponibles

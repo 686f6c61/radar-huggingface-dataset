@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye modelos TTS comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blixt/phonon-31m-en-webgpu
+- Modelo en Hugging Face: https://huggingface.co/blixt/phonon-31m-en-webgpu
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
 - Runtime WebGPU: https://github.com/blixt/phonon
 - Código de empaquetado/desempaquetado: https://github.com/blixt/phonon/blob/main/src/checkpoint.ts

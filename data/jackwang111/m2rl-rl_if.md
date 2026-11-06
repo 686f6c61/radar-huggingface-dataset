@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Jackwang111/M2RL-RL_IF` es un modelo de lenguaje publicado en HuggingFace por el usuario Jackwang111, con licencia Apache-2.0. Su nombre sugiere una relación con el proyecto M2RL, alojado en el repositorio `Mosi-AI/M2RL` en GitHub, aunque no se ha podido confirmar una vinculación directa a partir de la información disponible. En el momento de la consulta, el modelo no tiene descargas ni likes, y su model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento o instrucciones de uso.
+El modelo `Jackwang111/M2RL-RL_IF` es un modelo de lenguaje publicado en Hugging Face por el usuario Jackwang111, con licencia Apache-2.0. Su nombre sugiere una relación con el proyecto M2RL, alojado en el repositorio `Mosi-AI/M2RL` en GitHub, aunque no se ha podido confirmar una vinculación directa a partir de la información disponible. En el momento de la consulta, el modelo no tiene descargas ni likes, y su model card no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento o instrucciones de uso.
 
-La ficha se elabora a partir de los metadatos públicos de HuggingFace y de los resultados de búsqueda web. Dado que la información disponible es extremadamente limitada, la mayor parte de las especificaciones técnicas, capacidades y benchmarks se indican como "no disponible". Este documento sirve como punto de partida para una evaluación posterior, pero no permite extraer conclusiones sobre el rendimiento o la idoneidad del modelo para casos de uso concretos.
+La ficha se elabora a partir de los metadatos públicos de Hugging Face y de los resultados de búsqueda web. Dado que la información disponible es extremadamente limitada, la mayor parte de las especificaciones técnicas, capacidades y benchmarks se indican como "no disponible". Este documento sirve como punto de partida para una evaluación posterior, pero no permite extraer conclusiones sobre el rendimiento o la idoneidad del modelo para casos de uso concretos.
 
 ## Especificaciones tecnicas
 
@@ -57,12 +57,12 @@ No se dispone de información suficiente para realizar una comparativa con model
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: imposibilita evaluar sesgos, riesgos de alucinación o limitaciones de contexto e idioma.
-- No se ha verificado la existencia del modelo en el repositorio de HuggingFace más allá de la página indicada; podría tratarse de un modelo vacío o incompleto.
+- No se ha verificado la existencia del modelo en el repositorio de Hugging Face más allá de la página indicada; podría tratarse de un modelo vacío o incompleto.
 - Licencia Apache-2.0 permite uso comercial, pero sin información sobre el funcionamiento del modelo no se puede garantizar su idoneidad para entornos productivos.
 - La fecha de creación del modelo (2026-09-07) es posterior a la fecha de consulta, lo que sugiere posibles inconsistencias en los metadatos.
 - Se recomienda contactar con el autor o revisar el repositorio asociado antes de considerar cualquier uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-RL_IF
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-RL_IF
 - Repositorio GitHub (posiblemente relacionado, no confirmado): https://github.com/Mosi-AI/M2RL

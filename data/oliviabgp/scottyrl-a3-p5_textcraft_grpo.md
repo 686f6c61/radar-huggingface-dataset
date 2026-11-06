@@ -85,7 +85,7 @@ No se proporcionan valores de MMLU, HumanEval, GSM8K ni de exito en TextCraft, n
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `oliviabgp/scottyrl-a3-p5_textcraft_grpo` | Adaptador LoRA rango 32 sobre base de 4B | No disponible | Sin datos publicados | No disponible | Publico, 0 descargas |
-| `Qwen/Qwen3.5-4B` (base sin adaptar) | ~4B (segun identificador) | No disponible | No disponible en esta ficha | No disponible en esta ficha | Publico en HuggingFace |
+| `Qwen/Qwen3.5-4B` (base sin adaptar) | ~4B (segun identificador) | No disponible | No disponible en esta ficha | No disponible en esta ficha | Publico en Hugging Face |
 | `BrianUppp/scottyrl-a3-p5_textcraft_grpo` | Replica del mismo adaptador | No disponible | Sin datos publicados | No disponible | Publico |
 | `dadelgad/scottyrl-a3-p5_textcraft_grpo` | Replica del mismo adaptador | No disponible | Sin datos publicados | No disponible | Publico |
 | `racheleven11/scottyrl-a3-p5_textcraft_grpo` | Replica del mismo adaptador (con endpoint en FriendliAI) | No disponible | Sin datos publicados | No disponible | Publico |
@@ -107,7 +107,7 @@ Las tres entradas adicionales corresponden a copias del mismo ejercicio publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/oliviabgp/scottyrl-a3-p5_textcraft_grpo
+- Repositorio Hugging Face del modelo: https://huggingface.co/oliviabgp/scottyrl-a3-p5_textcraft_grpo
 - Replica de BrianUppp: https://huggingface.co/BrianUppp/scottyrl-a3-p5_textcraft_grpo
 - Replica de dadelgad: https://huggingface.co/dadelgad/scottyrl-a3-p5_textcraft_grpo
 - Endpoint y ficha en FriendliAI (replica de racheleven11): https://friendli.ai/models/racheleven11/scottyrl-a3-p5_textcraft_grpo

@@ -71,6 +71,6 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_vanilla_chunk50_bs32x1_10k
+- Repositorio Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_vanilla_chunk50_bs32x1_10k
 
 No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

@@ -16,7 +16,7 @@ Este repositorio concreto (`bielquants/Inkling-Small-NVFP4`) es una cuantizacion
 | Parametros totales | 276B segun la model card; los pesos safetensors del repositorio suman 156.032.140.138 parametros (dato discrepante, ver limitaciones) |
 | Parametros activos | 12B (6 de 256 expertos enrutados por token + 2 expertos compartidos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (este repositorio); BF16 en la version base. La model card menciona soporte numerico BF16 y NVFP4; las etiquetas de HuggingFace incluyen "8-bit" |
+| Tipos de cuantizacion | NVFP4 (este repositorio); BF16 en la version base. La model card menciona soporte numerico BF16 y NVFP4; las etiquetas de Hugging Face incluyen "8-bit" |
 | Idiomas soportados | Ingles, con capacidades multilingues generales en otros idiomas; soporte de multiples lenguajes de programacion |
 | Licencia | Apache 2.0, con politica de uso aceptable adicional del autor (`model-acceptable-use-policy`) |
 | Formato de pesos | safetensors, libreria transformers, tipo de modelo `inkling_mm_model` |
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bielquants/Inkling-Small-NVFP4 (este repositorio) | 276B totales / 12B activos segun model card (156,03B en safetensors) | no disponible | NVFP4 sobre transformers | Apache 2.0 | Pesos abiertos en HuggingFace |
-| thinkingmachines/Inkling-Small (base, BF16) | 276B totales / 12B activos | no disponible | BF16 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| thinkingmachines/Inkling-Small-NVFP4 (oficial) | 276B totales / 12B activos | no disponible | NVFP4 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| bielquants/Inkling-Small-NVFP4 (este repositorio) | 276B totales / 12B activos segun model card (156,03B en safetensors) | no disponible | NVFP4 sobre transformers | Apache 2.0 | Pesos abiertos en Hugging Face |
+| thinkingmachines/Inkling-Small (base, BF16) | 276B totales / 12B activos | no disponible | BF16 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| thinkingmachines/Inkling-Small-NVFP4 (oficial) | 276B totales / 12B activos | no disponible | NVFP4 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.5 397B-A17B | 397B totales / 17B activos (segun la tabla de la model card) | no disponible | no disponible | no disponible | Citado como pesos abiertos |
 | MiMo V2.5 | no disponible | no disponible | no disponible | no disponible | Citado como pesos abiertos |
 | Minimax M2.7 | no disponible | no disponible | no disponible | no disponible | Citado como pesos abiertos |
@@ -92,7 +92,7 @@ La comparacion directa con alternativas de la misma categoria queda limitada: la
 
 - Discrepancia en el recuento de parametros: la model card declara 276B totales, mientras que el recuento real de los safetensors del repositorio es de 156.032.140.138 parametros. No se dispone de explicacion en la informacion proporcionada; conviene verificarlo antes de dimensionar infraestructura.
 - Cuantizacion de terceros: el repositorio no lo publica el autor original del modelo, sino el usuario `bielquants`. No se documentan el metodo de calibracion ni la perdida de calidad respecto a la version BF16 u oficial NVFP4.
-- Etiquetado de cuantizacion ambiguo: las etiquetas de HuggingFace indican "8-bit" mientras que la model card y el nombre del repositorio indican NVFP4 (4 bits). Conviene verificar la configuracion real de cuantizacion de los pesos.
+- Etiquetado de cuantizacion ambiguo: las etiquetas de Hugging Face indican "8-bit" mientras que la model card y el nombre del repositorio indican NVFP4 (4 bits). Conviene verificar la configuracion real de cuantizacion de los pesos.
 - Riesgo de alucinacion: no se han publicado tasas de alucinacion ni evaluaciones de fidelidad para este modelo o su version cuantizada.
 - Sesgos: no se documentan evaluaciones de sesgo ni de equidad en la informacion disponible. El entrenamiento con datos de internet es susceptible de incorporar sesgos presentes en esas fuentes.
 - Limitaciones de idioma: el autor declara ingles como idioma principal, con capacidades multilingues generales no cuantificadas. El rendimiento en castellano no esta medido.
@@ -105,7 +105,7 @@ La comparacion directa con alternativas de la misma categoria queda limitada: la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bielquants/Inkling-Small-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/bielquants/Inkling-Small-NVFP4
 - Modelo base BF16: https://huggingface.co/thinkingmachines/Inkling-Small
 - Version NVFP4 oficial: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -115,4 +115,4 @@ La comparacion directa con alternativas de la misma categoria queda limitada: la
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling

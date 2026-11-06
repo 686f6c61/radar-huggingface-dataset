@@ -27,7 +27,7 @@ No se indica el número de tokens de entrenamiento, la composición del dataset,
 
 ## Capacidades
 
-- Generación de texto, según el pipeline `text-generation` de HuggingFace.
+- Generación de texto, según el pipeline `text-generation` de Hugging Face.
 - Orientación a código, indicada por el nombre del modelo y las etiquetas (`code`, `pen2sword`), aunque no hay documentación formal que lo respalde.
 - Soporte de tool calling, function calling, agentes, visión o audio: no disponible.
 - Capacidades multilingües: no disponible.
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeltaP2S-Qwen2.5-14B-SameFormula-Code-S13-QV | 14.770.033.664 | no disponible | no disponible | no disponible | HuggingFace |
-| DeltaP2S-Qwen2.5-14B-DeltaP2S-Code-S13 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen2.5-14B | 14.770.033.664 | 32K (documentación pública del modelo base) | no disponible | Apache 2.0 (documentación pública) | HuggingFace |
+| DeltaP2S-Qwen2.5-14B-SameFormula-Code-S13-QV | 14.770.033.664 | no disponible | no disponible | no disponible | Hugging Face |
+| DeltaP2S-Qwen2.5-14B-DeltaP2S-Code-S13 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen2.5-14B | 14.770.033.664 | 32K (documentación pública del modelo base) | no disponible | Apache 2.0 (documentación pública) | Hugging Face |
 
 Los datos de Qwen2.5-14B corresponden a la información pública del modelo base. El checkpoint analizado no hereda automáticamente estas características sin verificación.
 
@@ -80,6 +80,6 @@ Los datos de Qwen2.5-14B corresponden a la información pública del modelo base
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-SameFormula-Code-S13-QV
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-SameFormula-Code-S13-QV
 - Modelo relacionado: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-14B-DeltaP2S-Code-S13
 - Registro externo: https://free2aitools.com/model/g-assismoraes/deltap2s-qwen2.5-14b-p2s-code-s13

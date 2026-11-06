@@ -77,23 +77,23 @@ No disponible. Este repositorio no es un modelo con capacidades propias, sino un
 | Parametros | no disponible | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | licencias upstream por subdirectorio | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
 - No es un modelo entrenado ni ajustado: no debe citarse como modelo con capacidades propias en comparativas de rendimiento.
 - Ausencia total de datos técnicos: sin arquitectura, parámetros, contexto, idiomas ni cuantizaciones declaradas, es imposible evaluar su idoneidad para producción sin inspeccionar manualmente cada subdirectorio.
-- Licencias: la ficha de HuggingFace no declara licencia y la model card indica que se aplican las licencias originales de cada modelo. Es imprescindible revisar cada subdirectorio y el `CACHE_MANIFEST.json` antes de cualquier uso comercial.
+- Licencias: la ficha de Hugging Face no declara licencia y la model card indica que se aplican las licencias originales de cada modelo. Es imprescindible revisar cada subdirectorio y el `CACHE_MANIFEST.json` antes de cualquier uso comercial.
 - Riesgo de alucinación: no evaluable para el repositorio en conjunto; dependerá de cada submodelo y de sus propios sesgos y tasas de error.
 - Sesgos: no documentados.
 - Limitaciones de idioma y contexto: no documentadas.
 - Tamano elevado: 325,5 GB dificultan la descarga, el almacenamiento y la distribución en entornos con recursos limitados.
 - Señales de madurez: 0 descargas, 0 likes y una ventana de publicación-actualización de aproximadamente un minuto sugieren una carga automatizada o un proyecto en fase muy temprana, sin validación por parte de la comunidad.
 - Fechas de creación y actualización indicadas como 2026-09-22, lo que conviene verificar antes de tratarlas como referencia temporal fiable.
-- No se documenta el pipeline ni el idioma, por lo que las herramientas automáticas de HuggingFace no podrán clasificar el repositorio correctamente.
+- No se documenta el pipeline ni el idioma, por lo que las herramientas automáticas de Hugging Face no podrán clasificar el repositorio correctamente.
 - Verificar la integridad y el contenido real de los pesos antes de ejecutarlos: la model card no ofrece sumas de comprobación ni detalles de versiones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmpplbp/laogames-all-models-cache
+- Hugging Face: https://huggingface.co/jmpplbp/laogames-all-models-cache
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de búsqueda disponibles; los resultados devueltos correspondían a páginas generales de Twitter/X y a sus artículos en Wikipedia, sin relación con el repositorio.

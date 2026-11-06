@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikitavasilyev/classification-v1` es un prototipo de investigación de clasificación basado en la arquitectura MobileViT (vision transformer ligero para visión), publicado en HuggingFace por el usuario nikitavasilyev. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un "initialization checkpoint for smoke tests" que "no benchmark score is claimed in this repository". El repositorio contiene el código de definición del modelo (`train.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`nikitavasilyev/classification-v1` es un prototipo de investigación de clasificación basado en la arquitectura MobileViT (vision transformer ligero para visión), publicado en Hugging Face por el usuario nikitavasilyev. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un "initialization checkpoint for smoke tests" que "no benchmark score is claimed in this repository". El repositorio contiene el código de definición del modelo (`train.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El recuento real de parámetros reportado en los metadatos de safetensors es de 24.832 parámetros, una cifra extremadamente pequeña que corresponde a una configuración "tiny" de laboratorio, muy por debajo de las escalas habituales de la familia MobileViT publicada en la literatura. El tamaño total del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 97 KiB en FP32 (24.832 parámetros × 4 bytes) y unos 48,5 KiB en FP16. Son estimaciones aritméticas derivadas del recuento de parámetros, no cifras publicadas por el autor.
 - GPU recomendadas: no disponible; el modelo es tan pequeño que no requiere acelerador. Cualquier GPU, incluida una integrada, es más que suficiente para cargarlo y ejecutarlo.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en CPU. También cabría en dispositivos móviles o embebidos si la arquitectura se exporta correctamente.
-- Opciones de despliegue: PyTorch nativo es la vía directa. Según la model card, al ser una implementación personalizada, "generic automatic loading APIs require an explicit adapter before use", por lo que `AutoModel` y flujos estándar de HuggingFace Transformers no funcionarán sin escribir un adaptador. No hay soporte confirmado para vLLM, llama.cpp, Ollama o TGI, y estos entornos están orientados a modelos de lenguaje, no a este caso.
+- Opciones de despliegue: PyTorch nativo es la vía directa. Según la model card, al ser una implementación personalizada, "generic automatic loading APIs require an explicit adapter before use", por lo que `AutoModel` y flujos estándar de Hugging Face Transformers no funcionarán sin escribir un adaptador. No hay soporte confirmado para vLLM, llama.cpp, Ollama o TGI, y estos entornos están orientados a modelos de lenguaje, no a este caso.
 - Latencia y throughput estimados: no disponible. No hay ninguna medición publicada.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Los resultados de la búsqueda no aportan modelos comparables dentro del mismo r
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitavasilyev/classification-v1 | 24.832 | no aplica | no disponible (sin entrenar, sin benchmark) | BSD-3-Clause | HuggingFace, 0 descargas |
+| nikitavasilyev/classification-v1 | 24.832 | no aplica | no disponible (sin entrenar, sin benchmark) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT-XXS (familia original) | ~1,3 M (dato de la literatura) | no aplica | no disponible en esta ficha | no disponible en esta ficha | no disponible en los resultados de búsqueda |
 | MobileViT-XS (familia original) | ~2,3 M (dato de la literatura) | no aplica | no disponible en esta ficha | no disponible en esta ficha | no disponible en los resultados de búsqueda |
 | Otras alternativas ligeras de clasificación visual | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -96,14 +96,14 @@ No se dispone de datos verificados para establecer una comparativa de rendimient
 - Carga no estándar: al ser una implementación personalizada, no se puede cargar con APIs automáticas genéricas sin escribir un adaptador explícito. Esto complica la integración con ecosistemas estándar.
 - Discrepancia de escala: 24.832 parámetros es un orden de magnitud muy inferior al de cualquier variante publicada de MobileViT, lo que sugiere que la configuración está deliberadamente reducida o que las dimensiones del modelo son de prueba.
 - Madurez del repositorio: 0 descargas, 0 likes y un tamaño de 0,0 GB; sin historial de uso ni validación por parte de la comunidad.
-- Ausencia de pipeline declarado: el campo `pipeline` no está disponible en HuggingFace, lo que limita el descubrimiento y el uso automatizado del modelo.
+- Ausencia de pipeline declarado: el campo `pipeline` no está disponible en Hugging Face, lo que limita el descubrimiento y el uso automatizado del modelo.
 - Fechas de metadatos anómalas: los sellos de creación y actualización (2026-09-30) son posteriores a la fecha habitual de consulta; conviene tratarlos con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitavasilyev/classification-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/nikitavasilyev
+- Modelo en Hugging Face: https://huggingface.co/nikitavasilyev/classification-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/nikitavasilyev
 - Paper original de la familia MobileViT (referencia arquitectónica externa, no enlazada por el autor): https://arxiv.org/abs/2110.02178
-- Listado de modelos de clasificación de imagen en HuggingFace (contexto de categoría): https://huggingface.co/models?pipeline_tag=image-classification
+- Listado de modelos de clasificación de imagen en Hugging Face (contexto de categoría): https://huggingface.co/models?pipeline_tag=image-classification
 
 Nota: los resultados de búsqueda web no incluyen repositorio GitHub, paper, blog ni demo asociados específicamente a este modelo. Los enlaces a `github.com/NV` y al perfil de LinkedIn de Nikita Vassilyev que aparecen en la búsqueda corresponden a personas distintas y no guardan relación verificada con el autor del modelo, por lo que no se incluyen como recursos del mismo.

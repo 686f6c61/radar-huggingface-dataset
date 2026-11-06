@@ -79,9 +79,9 @@ El patrón es consistente: las direcciones shawi → lenguas oficiales obtienen 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| uyari-mt-cbt-glimmer30b-qlora | 419 M (adaptador) sobre 30B | no disponible | LoRA QLoRA sobre Muse-Glimmer 30B | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| uyari-mt-cbt-nllb1.3b | 1,3 B | no disponible | Fine-tuning de NLLB-200 destilado | CC BY-NC 4.0 | HuggingFace |
-| NLLB-200 (Meta) | 600 M - 54 B | 512 tokens (variantes estándar) | Transformer encoder-decoder multilingüe | CC BY-NC 4.0 | HuggingFace |
+| uyari-mt-cbt-glimmer30b-qlora | 419 M (adaptador) sobre 30B | no disponible | LoRA QLoRA sobre Muse-Glimmer 30B | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| uyari-mt-cbt-nllb1.3b | 1,3 B | no disponible | Fine-tuning de NLLB-200 destilado | CC BY-NC 4.0 | Hugging Face |
+| NLLB-200 (Meta) | 600 M - 54 B | 512 tokens (variantes estándar) | Transformer encoder-decoder multilingüe | CC BY-NC 4.0 | Hugging Face |
 
 La alternativa directa es `uyari-mt-cbt-nllb1.3b`, del mismo autor y proyecto: mucho más pequeño (1,3 B frente a 30 B) pero con licencia CC BY-NC 4.0, que impide uso comercial, frente a la Apache 2.0 del adaptador Glimmer. No se dispone en la información proporcionada de los resultados del modelo NLLB del proyecto para comparar métricas directamente.
 
@@ -98,7 +98,7 @@ La alternativa directa es `uyari-mt-cbt-nllb1.3b`, del mismo autor y proyecto: m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malexandersalazar/uyari-mt-cbt-glimmer30b-qlora
+- Modelo en Hugging Face: https://huggingface.co/malexandersalazar/uyari-mt-cbt-glimmer30b-qlora
 - Repositorio del proyecto Uyari: https://github.com/malexandersalazar/uyari
 - Documentación de la lengua shawi (cbt_Latn): https://github.com/malexandersalazar/uyari/blob/main/languages/cbt_Latn/README.md
 - Modelo alternativo del proyecto (NLLB-200 destilado 1.3B): https://huggingface.co/malexandersalazar/uyari-mt-cbt-nllb1.3b

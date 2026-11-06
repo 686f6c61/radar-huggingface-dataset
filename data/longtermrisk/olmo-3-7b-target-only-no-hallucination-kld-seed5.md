@@ -79,10 +79,10 @@ La comparativa se limita a caracteristicas generales porque no se dispone de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-kld-seed5
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-kld-seed5
 - Paper de OLMo 3: https://arxiv.org/abs/2512.13961
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variantes relacionadas (encontradas en la busqueda web):
   - https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-kld
   - https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft

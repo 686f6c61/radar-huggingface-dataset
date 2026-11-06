@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LIA es un modelo de lenguaje publicado en HuggingFace por el usuario `fiolek`, distribuido principalmente en formato GGUF y etiquetado como conversacional. El repositorio contiene pesos derivados de un modelo base de aproximadamente 4.647 millones de parámetros (4,6B), un tamaño que lo sitúa en la gama media y lo hace candidato a inferencia en hardware de consumo mediante cuantización. La ficha del repositorio no incluye información sobre el modelo base original, la arquitectura interna ni el proceso de entrenamiento.
+LIA es un modelo de lenguaje publicado en Hugging Face por el usuario `fiolek`, distribuido principalmente en formato GGUF y etiquetado como conversacional. El repositorio contiene pesos derivados de un modelo base de aproximadamente 4.647 millones de parámetros (4,6B), un tamaño que lo sitúa en la gama media y lo hace candidato a inferencia en hardware de consumo mediante cuantización. La ficha del repositorio no incluye información sobre el modelo base original, la arquitectura interna ni el proceso de entrenamiento.
 
 La relevancia de este modelo es limitada y fundamentalmente práctica: se trata de un artefacto de cuantización (los tags incluyen `gguf` e `imatrix`) orientado a su uso con llama.cpp y runtimes compatibles. No se ha publicado documentación técnica, benchmarks ni una model card sustantiva, por lo que cualquier evaluación rigurosa exige inspeccionar los metadatos de los archivos GGUF y contrastar los pesos con el modelo de origen.
 
@@ -30,7 +30,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está orientado a diálogo multi-turno, aunque no se detalla el formato de plantilla de chat.
-- Inferencia compatible con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Inferencia compatible con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - Ejecución local mediante GGUF: al distribuirse en este formato, es utilizable con llama.cpp y runtimes derivados.
 - Razonamiento, código, matemáticas, visión, audio y tool calling: no disponible (no documentado).
 - Capacidades multilingües: no disponible (no se declaran idiomas).
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 ## Casos de uso
 
 - Despliegue local en estación de trabajo: con 4,6B parámetros, el modelo puede ejecutarse en CPU o en GPU de consumo mediante llama.cpp con cuantizaciones GGUF de 4 a 8 bits, lo que permite prototipar asistentes conversacionales sin depender de la nube.
-- Pruebas de integración en pipelines de HuggingFace: el tag `endpoints_compatible` permite desplegarlo como endpoint gestionado para validar flujos de aplicación antes de migrar a un modelo con documentación completa.
+- Pruebas de integración en pipelines de Hugging Face: el tag `endpoints_compatible` permite desplegarlo como endpoint gestionado para validar flujos de aplicación antes de migrar a un modelo con documentación completa.
 - Experimentación con cuantización: al incluir archivos generados con importance matrix, sirve como caso de estudio para comparar la degradación de calidad entre niveles de cuantización sobre un modelo de 4,6B.
 - Chatbot de uso interno con datos no sensibles: su tamaño reducido permite ejecutarlo en una única GPU consumer, aunque la ausencia de licencia clara desaconseja usos comerciales.
 - Evaluación comparativa de modelos pequeños: puede incorporarse como línea base en pruebas internas de calidad conversacional frente a otros modelos de la misma franja de parámetros.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: orientativa según el tamaño de 4,6B parámetros. En FP16 serían necesarios aproximadamente 9,3 GB solo para pesos; en cuantización de 8 bits, unos 4,7 GB; en 4 bits, unos 2,4 GB, a los que hay que sumar la caché KV (dependiente de la longitud de contexto, no documentada).
 - GPU recomendadas: no disponible en la documentación. Por tamaño, una RTX 4090 (24 GB) o una RTX 3090 permitirían ejecutar el modelo en FP16 o cuantizaciones altas; una RTX 4060 Ti de 16 GB sería suficiente para cuantizaciones de 8 bits.
 - GPU de consumo: sí, previsiblemente cabe en tarjetas con 8 GB o más en cuantizaciones de 4-5 bits, aunque no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (Ollama, LM Studio, llama-cpp-python); vLLM y TGI no están confirmados para este repositorio. El tag `endpoints_compatible` apunta a HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (Ollama, LM Studio, llama-cpp-python); vLLM y TGI no están confirmados para este repositorio. El tag `endpoints_compatible` apunta a Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ La comparativa se ofrece a título orientativo por franja de tamaño; no se disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fiolek/LIA
+- Repositorio en Hugging Face: https://huggingface.co/fiolek/LIA
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

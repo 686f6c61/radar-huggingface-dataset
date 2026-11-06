@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gsanjeewa/compliance-policy-assistant-phi3-qlora` es un ajuste fino de tipo QLoRA sobre la familia Phi-3 de Microsoft, publicado por el usuario Gsanjeewa en HuggingFace. Por el nombre del repositorio y el tag `phi3`, se trata de un modelo derivado de Phi-3 (previsiblemente Phi-3-mini, 3.821 millones de parametros) especializado en la funcion de asistente de politicas de cumplimiento normativo. El repositorio registra 0 descargas y 0 likes, y su model card es la plantilla autogenerada de HuggingFace sin ninguna seccion completada.
+`Gsanjeewa/compliance-policy-assistant-phi3-qlora` es un ajuste fino de tipo QLoRA sobre la familia Phi-3 de Microsoft, publicado por el usuario Gsanjeewa en Hugging Face. Por el nombre del repositorio y el tag `phi3`, se trata de un modelo derivado de Phi-3 (previsiblemente Phi-3-mini, 3.821 millones de parametros) especializado en la funcion de asistente de politicas de cumplimiento normativo. El repositorio registra 0 descargas y 0 likes, y su model card es la plantilla autogenerada de Hugging Face sin ninguna seccion completada.
 
 El modelo resuelve, en teoria, la tarea de responder consultas sobre politicas internas y normativa de compliance en formato conversacional, pero no existe documentacion publicada sobre el dataset de ajuste, el procedimiento de entrenamiento ni los hiperparametros empleados. Esto lo convierte en un artefacto de investigacion o experimento personal mas que en un modelo listo para produccion.
 
@@ -92,8 +92,8 @@ La diferencia practica principal no es de tamano, sino de documentacion y licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gsanjeewa/compliance-policy-assistant-phi3-qlora
-- arXiv:1910.09700 (Lacoste et al., 2019), citado en los tags del repositorio: https://arxiv.org/abs/1910.09700. Corresponde a la calculadora de impacto ambiental de la plantilla de HuggingFace, no a un articulo sobre este modelo.
+- Modelo en Hugging Face: https://huggingface.co/Gsanjeewa/compliance-policy-assistant-phi3-qlora
+- arXiv:1910.09700 (Lacoste et al., 2019), citado en los tags del repositorio: https://arxiv.org/abs/1910.09700. Corresponde a la calculadora de impacto ambiental de la plantilla de Hugging Face, no a un articulo sobre este modelo.
 - Informe tecnico de la familia Phi-3 (referencia externa, no citada en la model card ni en los tags): https://arxiv.org/abs/2404.14219
-- Pagina del modelo base Phi-3-mini en HuggingFace (referencia externa, no confirmada como base exacta): https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
+- Pagina del modelo base Phi-3-mini en Hugging Face (referencia externa, no confirmada como base exacta): https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a documentacion de Google Docs y a otros temas sin relacion. No se han encontrado papers, blogs, repositorios ni demos asociados a este ajuste.

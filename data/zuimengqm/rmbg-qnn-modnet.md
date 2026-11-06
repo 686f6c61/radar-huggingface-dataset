@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zuimengqm/rmbg-qnn-modnet` es un repositorio publicado en HuggingFace por el usuario zuimengqm que, por su nomenclatura, apunta a un modelo de eliminacion de fondo (background removal / matting) derivado de la familia MODNet y exportado al formato ONNX con soporte para el SDK QNN de Qualcomm. El nombre combina tres indicios: "rmbg" (remove background), "qnn" (Qualcomm Neural Network, orientado a ejecucion en la NPU Hexagon de SoCs Snapdragon) y "modnet" (arquitectura de matting de retratos en tiempo real).
+`zuimengqm/rmbg-qnn-modnet` es un repositorio publicado en Hugging Face por el usuario zuimengqm que, por su nomenclatura, apunta a un modelo de eliminacion de fondo (background removal / matting) derivado de la familia MODNet y exportado al formato ONNX con soporte para el SDK QNN de Qualcomm. El nombre combina tres indicios: "rmbg" (remove background), "qnn" (Qualcomm Neural Network, orientado a ejecucion en la NPU Hexagon de SoCs Snapdragon) y "modnet" (arquitectura de matting de retratos en tiempo real).
 
 El repositorio se encuentra practicamente vacio: la model card se limita a la declaracion de licencia MIT, el tamano del repo es de 0.0 GB, no tiene descargas ni likes y no se ha publicado pipeline, idiomas ni documentacion tecnica. Esto impide confirmar parametros, contexto, dataset de entrenamiento o resultados de evaluacion a partir de la informacion disponible.
 
@@ -19,7 +19,7 @@ Su relevancia potencial, si el artefacto llegase a publicarse completo, residiri
 | Tipos de cuantizacion | no disponible (el tag "qnn" sugiere cuantizacion para Qualcomm, sin detalle) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | ONNX (tag declarado en HuggingFace) |
+| Formato de pesos | ONNX (tag declarado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | zuimengqm/rmbg-qnn-modnet | Matting / eliminacion de fondo | no disponible | imagen, sin confirmar resolucion | MIT | repositorio vacio, 0 descargas |
 | MODNet (referencia original) | Matting de retratos en tiempo real | no disponible en las fuentes | imagen RGB sin trimap | no disponible en las fuentes | publico, ampliamente citado |
-| RMBG-1.4 | Eliminacion de fondo | no disponible | imagen RGB | no disponible en las fuentes | publico en HuggingFace |
-| RMBG-2.0 | Eliminacion de fondo | no disponible | imagen RGB | no disponible en las fuentes | publico en HuggingFace |
+| RMBG-1.4 | Eliminacion de fondo | no disponible | imagen RGB | no disponible en las fuentes | publico en Hugging Face |
+| RMBG-2.0 | Eliminacion de fondo | no disponible | imagen RGB | no disponible en las fuentes | publico en Hugging Face |
 | BEN / BEN2, INSPYRENET, BiRefNet | Segmentacion y matting | no disponible | imagen RGB | no disponible en las fuentes | integrados en nodos de ComfyUI |
 
 No se dispone de datos suficientes para comparar parametros, contexto o rendimiento numerico entre estas alternativas.
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar parametros, contexto o rendimie
 
 - Repositorio sin contenido util: 0.0 GB de tamano, sin seccion de uso, sin ejemplos de inferencia y sin ficheros documentados publicamente.
 - Ausencia total de evaluacion: cero descargas y cero likes, sin benchmarks ni validacion por terceros.
-- Fecha de creacion anomala (2026-10-04) en los metadatos de HuggingFace, lo que puede indicar un error de registro o una publicacion de prueba.
+- Fecha de creacion anomala (2026-10-04) en los metadatos de Hugging Face, lo que puede indicar un error de registro o una publicacion de prueba.
 - Ambiguedad sobre el artefacto real: no se especifica si el repositorio contiene un ONNX funcional, un grafo QNN compilado (por ejemplo, .so o DLC) o unicamente metadatos.
 - Sesgos: no documentados. Los modelos de matting de retratos suelen degradarse con fondos complejos, pelo fino o sujetos no humanos, pero no hay evidencia especifica para este artefacto.
 - Riesgo de alucinacion: no aplica en el sentido generativo; en matting el fallo tipico es la mascara incompleta o con halos, cuya magnitud se desconoce.
@@ -91,9 +91,9 @@ No se dispone de datos suficientes para comparar parametros, contexto o rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zuimengqm/rmbg-qnn-modnet
+- Modelo en Hugging Face: https://huggingface.co/zuimengqm/rmbg-qnn-modnet
 - Perfil del autor: https://huggingface.co/zuimengqm
 - Nodo ComfyUI para eliminacion de fondo y segmentacion (RMBG, BEN, BEN2, INSPYRENET, BiRefNet): https://github.com/1038lab/ComfyUI-RMBG
 - Referencia sobre MODNet (overview y casos de uso): https://www.aimodels.fyi/models/replicate/modnet-pollinations
 - Referencia sobre MODNet en AIBase: https://model.aibase.com/models/details/1924737761403998208
-- Repositorio de modelos de alpha matting en HuggingFace: https://huggingface.co/PotterWhite/AlphaMattingModels
+- Repositorio de modelos de alpha matting en Hugging Face: https://huggingface.co/PotterWhite/AlphaMattingModels

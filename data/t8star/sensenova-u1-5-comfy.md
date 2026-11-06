@@ -68,8 +68,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t8star/SenseNova-U1.5-Comfy
+- Repositorio Hugging Face: https://huggingface.co/t8star/SenseNova-U1.5-Comfy
 - Repositorio GitHub de SenseNova-U1: https://github.com/OpenSenseNova/SenseNova-U1
 - Noticia sobre SenseNova-U1.5 en ComfyUI: https://comfyui-wiki.com/en/news/2026-08-16-sensenova-u1-5-comfyui
-- Organizacion SenseNova en HuggingFace: https://huggingface.co/sensenova/models
+- Organizacion SenseNova en Hugging Face: https://huggingface.co/sensenova/models
 - Plataforma SenseNova: https://www.sensenova.ai/

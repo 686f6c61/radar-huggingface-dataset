@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/tags_muse_0917_no_l1` es un ajuste fino publicado en HuggingFace por el usuario shabieh2, derivado del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Según la model card, el entrenamiento se realizó con la librería Unsloth, que el autor describe como "2x más rápida", y el resultado se distribuye bajo licencia Apache 2.0. El repositorio ocupa 3,4 GB y las etiquetas declaradas son `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `muse_glimmer` y `trl`.
+`shabieh2/tags_muse_0917_no_l1` es un ajuste fino publicado en Hugging Face por el usuario shabieh2, derivado del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Según la model card, el entrenamiento se realizó con la librería Unsloth, que el autor describe como "2x más rápida", y el resultado se distribuye bajo licencia Apache 2.0. El repositorio ocupa 3,4 GB y las etiquetas declaradas son `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `muse_glimmer` y `trl`.
 
 La información publicada es mínima: no hay model card detallada, no se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni evaluaciones. El identificador del repositorio (`tags_muse_0917_no_l1`) sugiere un ajuste orientado a etiquetado o clasificación sobre el modelo base, con una fecha asociada (0917) y algún tipo de exclusión o ablación ("no_l1"), pero el autor no explica ninguna de estas convenciones en la documentación disponible.
 
@@ -35,7 +35,7 @@ Un dato relevante es el tamano del repositorio (3,4 GB). Un checkpoint completo 
 - La etiqueta de idioma (`en`) indica soporte unicamente para ingles; no hay evidencia de capacidades multilingues.
 - No se confirma soporte de tool calling, function calling, uso como agente ni razonamiento multi-paso.
 - No se confirma existencia de modo "thinking", soporte de vision, audio ni ninguna otra modalidad.
-- La etiqueta `text-generation-inference` sugiere compatibilidad con el servidor TGI de HuggingFace, pero no aporta informacion sobre capacidades funcionales.
+- La etiqueta `text-generation-inference` sugiere compatibilidad con el servidor TGI de Hugging Face, pero no aporta informacion sobre capacidades funcionales.
 - El identificador del repositorio apunta a un ajuste especializado (posiblemente etiquetado), aunque el autor no lo describe.
 
 ## Casos de uso
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento, contexto ni licencia de posibles alternat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| shabieh2/tags_muse_0917_no_l1 | no disponible (base de 30 000 millones segun nomenclatura) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
-| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30 000 millones (segun nomenclatura) | no disponible | no disponible | HuggingFace | no disponible |
+| shabieh2/tags_muse_0917_no_l1 | no disponible (base de 30 000 millones segun nomenclatura) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
+| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30 000 millones (segun nomenclatura) | no disponible | no disponible | Hugging Face | no disponible |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de posibles alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/tags_muse_0917_no_l1
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/tags_muse_0917_no_l1
 - Modelo base: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog o demo especificos del modelo: no disponibles

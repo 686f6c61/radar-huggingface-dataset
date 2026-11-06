@@ -6,7 +6,7 @@
 
 La arquitectura es una CNN-BiLSTM, descrita en el artículo "A lightweight and efficient punctuation and word casing prediction model for on-device streaming ASR", que predice puntuación y capitalización conjuntamente usando únicamente características léxicas. El artefacto se apoya en tokenización BPE unigram y se publica junto a un vocabulario `bpe.vocab`.
 
-Su relevancia radica en el tamaño: el paquete de distribución original (`sherpa-onnx-online-punct-en-2024-08-06.tar.bz2`) ocupa 30.667.839 bytes, lo que permite desplegar restauración de puntuación y mayúsculas en dispositivos de borde sin GPU. El repositorio de HuggingFace se limita a fijar por commit el contenido del release de k2-fsa/sherpa-onnx, con hashes SHA-256 verificables, bajo licencia Apache-2.0.
+Su relevancia radica en el tamaño: el paquete de distribución original (`sherpa-onnx-online-punct-en-2024-08-06.tar.bz2`) ocupa 30.667.839 bytes, lo que permite desplegar restauración de puntuación y mayúsculas en dispositivos de borde sin GPU. El repositorio de Hugging Face se limita a fijar por commit el contenido del release de k2-fsa/sherpa-onnx, con hashes SHA-256 verificables, bajo licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ Su relevancia radica en el tamaño: el paquete de distribución original (`sherp
 | Tokenizacion | unigram BPE |
 | Modelo base | frankyoujian/Edge-Punct-Casing (commit `bde453bde24b544f38ffdd56398bfadcd22ce935`) |
 | Tamano del artefacto de origen | 30.667.839 bytes (`sherpa-onnx-online-punct-en-2024-08-06.tar.bz2`) |
-| Tamano del repo en HuggingFace | 0.0 GB (reportado por la plataforma) |
+| Tamano del repo en Hugging Face | 0.0 GB (reportado por la plataforma) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ El articulo asociado contrapone explicitamente la propuesta CNN-BiLSTM a los mod
 - Riesgo de errores de clasificacion en dominios muy alejados del entrenamiento (jerga tecnica, abreviaturas, texto no normativo); no se dispone de datos de sesgo publicados para este modelo.
 - El modelo carece de umbrales, metricas de calibracion o avales de calidad publicados en la informacion disponible, por lo que su validacion en produccion requiere evaluacion propia.
 - Este repositorio es un espejo: no se realizan cambios ni mantenimiento del modelo; las actualizaciones dependen del repositorio original de frankyoujian y del empaquetado de k2-fsa/sherpa-onnx.
-- El tamano de repositorio reportado por HuggingFace (0.0 GB) no refleja el del artefacto original (30.667.839 bytes); conviene verificar la integridad con los SHA-256 indicados.
+- El tamano de repositorio reportado por Hugging Face (0.0 GB) no refleja el del artefacto original (30.667.839 bytes); conviene verificar la integridad con los SHA-256 indicados.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y la atribucion a frankyoujian (modelo), al proyecto k2-fsa (empaquetado para sherpa-onnx) y a Kairoi (espejo).
 
 ## Enlaces

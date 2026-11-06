@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-0731-Spark-Vision-Exp es un overlay experimental de visión sobre el backbone `0xSero/deepseek-v4-flash-0731-spark`, una versión podada y cuantizada de DeepSeek-V4-Flash-0731. El autor, Loke-60000, combina la torre de visión DeepEncoderV2 (SAM ViT-B más Qwen2) y un proyector procedentes de `FlyCockpit/DeepSeek-V4-Flash-0731-vision` con el backbone de lenguaje, y lo ejecuta sobre un único NVIDIA DGX Spark. El resultado es un endpoint compatible con OpenAI que sirve texto e imágenes con una ventana de contexto de 262144 tokens y decodificación especulativa DSpark activada.
 
-El repositorio de HuggingFace no contiene pesos, sino documentación y mediciones; el código para construir y ejecutar el modelo vive en GitHub. El backbone está podado con REAP de 256 a 216 expertos enrutados y cuantizado con ExLlamaV3 (expertos en fp4, cola con codebook trellis de 3.0 bits, base fp8 e4m3). Las pruebas cualitativas muestran que la geometría de alto contraste y el texto renderizado se leen correctamente, pero las descripciones de ilustraciones y fotografías son poco fiables. El autor lo califica explícitamente como artefacto de investigación, no apto para usos donde una respuesta incorrecta tenga coste.
+El repositorio de Hugging Face no contiene pesos, sino documentación y mediciones; el código para construir y ejecutar el modelo vive en GitHub. El backbone está podado con REAP de 256 a 216 expertos enrutados y cuantizado con ExLlamaV3 (expertos en fp4, cola con codebook trellis de 3.0 bits, base fp8 e4m3). Las pruebas cualitativas muestran que la geometría de alto contraste y el texto renderizado se leen correctamente, pero las descripciones de ilustraciones y fotografías son poco fiables. El autor lo califica explícitamente como artefacto de investigación, no apto para usos donde una respuesta incorrecta tenga coste.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No hay datos de latencia, throughput ni puntuaciones estandar (MMLU, HumanEval, 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Loke-60000/deepseek-v4-flash-0731-spark-vision-exp | no disponible (backbone 284B original, podado a 216 expertos) | 262144 | Si, limitada y experimental | other | Documentacion y codigo; sin pesos publicados |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | 284B/13B activos | 1M (384K salida) | No (solo texto) | no disponible | Pesos oficiales en HuggingFace |
-| 0xSero/deepseek-v4-flash-0731-spark | no disponible (version podada y cuantizada) | no disponible | No | other | Pesos en HuggingFace |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | 284B/13B activos | 1M (384K salida) | No (solo texto) | no disponible | Pesos oficiales en Hugging Face |
+| 0xSero/deepseek-v4-flash-0731-spark | no disponible (version podada y cuantizada) | no disponible | No | other | Pesos en Hugging Face |
 
 La comparativa se limita a especificaciones porque no hay benchmarks publicados para el overlay de vision. El modelo original de DeepSeek tiene capacidades agénticas mejoradas y una ventana de contexto mayor, pero carece de vision; este overlay anade vision a costa de fiabilidad.
 
@@ -85,11 +85,11 @@ La comparativa se limita a especificaciones porque no hay benchmarks publicados 
 - Tiling condicionado: solo se activa cuando el lado mas largo de la imagen alcanza 1536 pixeles; una imagen de 1024 pixeles produce una sola vista de 256 tokens.
 - No apto para produccion: el autor lo califica como artefacto de investigacion y desaconseja su uso donde una respuesta incorrecta tenga coste.
 - Licencia "other": no se especifican los terminos exactos; hay que verificar las restricciones antes de cualquier uso comercial.
-- El repositorio de HuggingFace no contiene pesos, solo documentacion; para reproducir el modelo hay que seguir el codigo de GitHub.
+- El repositorio de Hugging Face no contiene pesos, solo documentacion; para reproducir el modelo hay que seguir el codigo de GitHub.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loke-60000/deepseek-v4-flash-0731-spark-vision-exp
+- Modelo en Hugging Face: https://huggingface.co/Loke-60000/deepseek-v4-flash-0731-spark-vision-exp
 - Repositorio de codigo: https://github.com/Loke-60000/deepseek-v4-flash-spark-vision
 - Backbone base: https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark
 - Torre de vision y proyector: https://huggingface.co/FlyCockpit/DeepSeek-V4-Flash-0731-vision

@@ -85,6 +85,6 @@ No se dispone de resultados comparables publicados en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v2-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v2-lunarlander
 - CONNECT AI LAB (repositorio del autor): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, curso de reinforcement learning: https://www.aicitybuilders.com/robot

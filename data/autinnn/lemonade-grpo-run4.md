@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`autinnn/lemonade-grpo-run4` es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3.5-0.8B`. Se publica como repositorio PEFT en HuggingFace, con licencia y idiomas sin declarar, y con una model card que es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]".
+`autinnn/lemonade-grpo-run4` es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3.5-0.8B`. Se publica como repositorio PEFT en Hugging Face, con licencia y idiomas sin declarar, y con una model card que es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]".
 
 El interés del artefacto es acotado pero identificable: se trata de un ejemplo de ajuste por refuerzo (RL) sobre un modelo pequeno mediante la librería TRL, empaquetado como adaptador de ~0,1 GB. No se dispone de información sobre el dataset de prompts, la función de recompensa, el número de pasos ni los resultados obtenidos, por lo que no es posible evaluar su calidad ni reproducir el entrenamiento.
 
@@ -35,7 +35,7 @@ No se dispone de información sobre la arquitectura interna del modelo base `Qwe
 
 El uso de GRPO implica, en el flujo habitual de TRL, la existencia de un conjunto de prompts y una función de recompensa (basada en reglas o en un modelo recompensador) con la que se calculan ventajas relativas dentro de grupos de generaciones. Sin embargo, la model card no especifica qué recompensa se usó, cuántos prompts, el número de pasos, el rango de LoRA, la tasa de aprendizaje, la precisión (fp16/bf16/fp8) ni el hardware empleado. Tampoco se documenta si hubo una fase previa de SFT/DPO. Todos estos datos figuran como "[More Information Needed]".
 
-La única referencia técnica presente en la model card es la cita a Lacoste et al. (2019) para el cálculo de emisiones de carbono, que forma parte de la plantilla por defecto de HuggingFace y no aporta información sobre el entrenamiento real.
+La única referencia técnica presente en la model card es la cita a Lacoste et al. (2019) para el cálculo de emisiones de carbono, que forma parte de la plantilla por defecto de Hugging Face y no aporta información sobre el entrenamiento real.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No disponible. No se ha proporcionado información sobre adaptadores comparables
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| `autinnn/lemonade-grpo-run4` | no disponible (adaptador LoRA sobre base ~0,8B, sin confirmar) | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| `autinnn/lemonade-grpo-run4` | no disponible (adaptador LoRA sobre base ~0,8B, sin confirmar) | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se ha proporcionado información sobre adaptadores comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/autinnn/lemonade-grpo-run4
+- Repositorio Hugging Face: https://huggingface.co/autinnn/lemonade-grpo-run4
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Referencia citada en la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

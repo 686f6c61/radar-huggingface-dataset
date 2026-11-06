@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-27B-oQ3e-fp16-mtp | 27,781B (denso) | 262.144 tokens | Mixta oQ3e, 4,235 bits/peso efectivos | Apache-2.0 | MLX, safetensors |
-| Qwen/Qwen3.8-27B (modelo base) | 27,781B (denso) | 262.144 tokens | Sin cuantizar (precision original) | Apache-2.0 | Repositorio oficial en HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | 27,781B (denso) | 262.144 tokens | Sin cuantizar (precision original) | Apache-2.0 | Repositorio oficial en Hugging Face |
 | Otras cuantizaciones comunitarias del mismo modelo base | 27,781B (denso) | 262.144 tokens | no disponible | Apache-2.0 (heredada) | no disponible |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparacion se limita a parametros, contexto, licencia y formato. La diferencia funcional principal frente al modelo base es el menor peso en disco a costa de una precision de 3 a 6 bits en la practica totalidad de los pesos, con el encoder visual intacto en FP32.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de "Improved oQe Quantization": https://github.com/jundot/omlx/pull/4385

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EternalDragon/G4-MeroMero-26B-A4B-Heretic2
+- Modelo en Hugging Face: https://huggingface.co/EternalDragon/G4-MeroMero-26B-A4B-Heretic2
 - Modelo base MeroMero: https://huggingface.co/zerofata/G4-MeroMero-26B-A4B
 - Modelo fundacional Gemma 4 26B-A4B instruct: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Dataset de calibración: https://huggingface.co/datasets/HuggingFaceH4/no_robots

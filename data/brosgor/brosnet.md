@@ -100,7 +100,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brosgor/BrosNet
+- Modelo en Hugging Face: https://huggingface.co/brosgor/BrosNet
 - CSIC 2010 HTTP Dataset: https://www.isi.csic.es/dataset/
 - SecLists (MIT): https://github.com/danielmiessler/SecLists
 - Web Application Payloads Dataset (Kaggle): https://www.kaggle.com/datasets/cyberprince/web-application-payloads-dataset

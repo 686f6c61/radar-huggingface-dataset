@@ -6,7 +6,7 @@ Voxel R-CNN es un detector de objetos 3D en nubes de puntos basado en vóxeles y
 
 El modelo resuelve el problema de localizar y clasificar coches en escenas LiDAR representadas como vóxeles, devolviendo cajas 3D con orientación. Su relevancia radica en que combina la eficiencia computacional de los detectores basados en vóxeles con la precisión de las arquitecturas de dos etapas, algo que en su momento supuso una mejora notable frente a propuestas basadas en puntos puros como PointRCNN.
 
-La ficha se centra en el checkpoint publicado en HuggingFace, que depende de la librería `torch-pointcloud` y de kernels GPU específicos (`spconv`, `pyg-lib`). No se trata de un modelo de lenguaje ni de un modelo multimodal: es un detector 3D puro para nubes de puntos LiDAR.
+La ficha se centra en el checkpoint publicado en Hugging Face, que depende de la librería `torch-pointcloud` y de kernels GPU específicos (`spconv`, `pyg-lib`). No se trata de un modelo de lenguaje ni de un modelo multimodal: es un detector 3D puro para nubes de puntos LiDAR.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados adicionales (por ej
 
 | Modelo | Parametros | Clases | Dataset | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| voxel-rcnn.kitti-car.openpcdet | 7,6 M | 1 (coche) | KITTI | 84,53 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| voxel-rcnn.kitti-car.openpcdet | 7,6 M | 1 (coche) | KITTI | 84,53 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointRCNN (referencia del paper) | no disponible | 3 (coche, peatón, ciclista) | KITTI | no disponible | MIT (repo original) | GitHub |
 | OpenPCDet Voxel R-CNN original | no disponible | 3 | KITTI | no disponible | Apache-2.0 | GitHub |
 
@@ -98,7 +98,7 @@ La comparación numérica con alternativas no está disponible en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/voxel-rcnn.kitti-car.openpcdet
+- Hugging Face: https://huggingface.co/torch-pointcloud/voxel-rcnn.kitti-car.openpcdet
 - Paper Voxel R-CNN: https://arxiv.org/abs/2012.15712
 - Repositorio OpenPCDet: https://github.com/open-mmlab/OpenPCDet
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

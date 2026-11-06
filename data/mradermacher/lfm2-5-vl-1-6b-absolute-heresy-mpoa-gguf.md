@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que combina tres factores poco habituales:
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en, ja, ko, fr, es, de, ar, zh |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace, con license_name lfm1.0) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face, con license_name lfm1.0) |
 | Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ La comparativa con Qwen2.5-VL-3B y SmolVLM-2.2B se ofrece como referencia de cat
 
 ## Enlaces
 
-- HuggingFace (este GGUF): https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-MPOA-GGUF
+- Hugging Face (este GGUF): https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-MPOA-GGUF
 - Modelo base (MuXodious): https://huggingface.co/MuXodious/LFM2.5-VL-1.6B-absolute-heresy-MPOA
 - Quants imatrix del mismo modelo: https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-MPOA-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#LFM2.5-VL-1.6B-absolute-heresy-MPOA-GGUF

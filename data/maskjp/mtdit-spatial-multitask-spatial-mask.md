@@ -82,10 +82,10 @@ Como referencia bajo el mismo evaluador, el `multi_task_dit` estándar sobre LIB
 
 | Modelo | Parámetros | Contexto | Sensibilidad cámara brazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mtdit-spatial-multitask-spatial-mask` (este) | 239 M | imágenes + estado | 0.272 | Apache-2.0 | HuggingFace |
-| `mtdit-spatial-multitask-cls-nodrop` | 239 M (estimado) | imágenes + estado | 0.077 | Apache-2.0 | HuggingFace |
-| `mtdit-spatial-multitask-spatial-nodrop` | 239 M (estimado) | imágenes + estado | 0.089 | Apache-2.0 | HuggingFace |
-| `mtdit-spatial-multitask-cls-mask` | 239 M (estimado) | imágenes + estado | 0.198 | Apache-2.0 | HuggingFace |
+| `mtdit-spatial-multitask-spatial-mask` (este) | 239 M | imágenes + estado | 0.272 | Apache-2.0 | Hugging Face |
+| `mtdit-spatial-multitask-cls-nodrop` | 239 M (estimado) | imágenes + estado | 0.077 | Apache-2.0 | Hugging Face |
+| `mtdit-spatial-multitask-spatial-nodrop` | 239 M (estimado) | imágenes + estado | 0.089 | Apache-2.0 | Hugging Face |
+| `mtdit-spatial-multitask-cls-mask` | 239 M (estimado) | imágenes + estado | 0.198 | Apache-2.0 | Hugging Face |
 | `multi_task_dit` estándar (LIBERO) | no disponible | imágenes + estado | 0.92–1.10 | no disponible | no disponible |
 | π₀.₅ (LIBERO) | no disponible | imágenes + estado | 1.19–1.31 | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ La comparativa se limita a las variantes del mismo sweep y a las referencias cit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask
 - Repositorio del plugin y scripts de evaluación: https://github.com/maskjp/lerobot_policy_mtdit_spatial
 - Variante `cls_nodrop`: https://huggingface.co/maskjp/mtdit-spatial-multitask-cls-nodrop
 - Variante `spatial_nodrop`: https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-nodrop

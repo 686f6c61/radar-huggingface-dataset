@@ -49,7 +49,7 @@ Tampoco se especifica el regimen de entrenamiento: no hay datos sobre numero de 
 - Reproduccion de pipelines con Unsloth: al estar entrenado con esa libreria, es un caso de estudio util para validar flujos de entrenamiento con LoRA acelerado y comparar el consumo de memoria reportado por el autor frente a alternativas como PEFT o Axolotl.
 - Analisis de olvido catastrofico: permite medir cuanto ingles "pierde" el modelo base tras un CPT sobre una lengua de bajos recursos, ejecutando baterias de evaluacion antes y despues de fusionar el adaptador.
 - Extraccion de representaciones para tareas de clasificacion en kreyol: si el CPT ha funcionado, las representaciones internas podrian servir para clasificacion de textos, analisis de sentimiento o etiquetado de secuencias con cabeceras ligeras, aunque esto no esta verificado por el autor.
-- Docencia y formacion: como ejemplo practico de publicacion de un adaptador LoRA en HuggingFace, con todas sus carencias documentales, para ilustrar que metadatos minimos deberia incluir una model card reproducible.
+- Docencia y formacion: como ejemplo practico de publicacion de un adaptador LoRA en Hugging Face, con todas sus carencias documentales, para ilustrar que metadatos minimos deberia incluir una model card reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento del modelo evaluado (ni benchmarks ni eval
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Caldev/qwen3_5_9B_kreyol_cpt_lora | ~9B (adaptador LoRA sobre Qwen3.5-9B-Base) | no disponible | apache-2.0 | HuggingFace; 0 descargas, 0 valoraciones | no disponible |
-| unsloth/Qwen3.5-9B-Base | ~9B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible |
-| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace; ampliamente desplegado | ampliamente evaluado en benchmarks publicos |
-| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | HuggingFace | ampliamente evaluado en benchmarks publicos |
+| Caldev/qwen3_5_9B_kreyol_cpt_lora | ~9B (adaptador LoRA sobre Qwen3.5-9B-Base) | no disponible | apache-2.0 | Hugging Face; 0 descargas, 0 valoraciones | no disponible |
+| unsloth/Qwen3.5-9B-Base | ~9B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible |
+| Llama 3.1 8B | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face; ampliamente desplegado | ampliamente evaluado en benchmarks publicos |
+| Gemma 2 9B | 9B | 8.192 tokens | Gemma Terms of Use | Hugging Face | ampliamente evaluado en benchmarks publicos |
 
 La comparacion con Llama 3.1 8B y Gemma 2 9B se incluye unicamente como referencia de categoria (modelos densos de 8-9B); no existe base para afirmar que este adaptador alcance un rendimiento equiparable, dado que no hay ninguna evaluacion publicada.
 
@@ -95,7 +95,7 @@ La comparacion con Llama 3.1 8B y Gemma 2 9B se incluye unicamente como referenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Caldev/qwen3_5_9B_kreyol_cpt_lora
+- Repositorio en Hugging Face: https://huggingface.co/Caldev/qwen3_5_9B_kreyol_cpt_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B-Base
 - Unsloth (repositorio de la libreria de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (etiqueta declarada en el repositorio): https://huggingface.co/docs/trl

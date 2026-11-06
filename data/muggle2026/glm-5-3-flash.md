@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM (zai-org) y distribuido en HuggingFace bajo el identificador Muggle2026/GLM-5.3-Flash. Se trata de un modelo de lenguaje y vision con arquitectura híbrida que combina atención dispersa (sparse attention) y atención lineal, disenada especificamente para reducir el coste de servicio en contextos largos sin sacrificar precision. Cuenta con 320.000 millones de parametros totales y solo 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos MoE de gran escala pero con un coste de inferencia muy contenido.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por el equipo GLM (zai-org) y distribuido en Hugging Face bajo el identificador Muggle2026/GLM-5.3-Flash. Se trata de un modelo de lenguaje y vision con arquitectura híbrida que combina atención dispersa (sparse attention) y atención lineal, disenada especificamente para reducir el coste de servicio en contextos largos sin sacrificar precision. Cuenta con 320.000 millones de parametros totales y solo 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos MoE de gran escala pero con un coste de inferencia muy contenido.
 
 El modelo parte de un entrenamiento base nuevo, con un corpus multimodal de 30 billones de tokens, e incorpora innovaciones tecnicas como las Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. Segun la model card, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una decima parte del precio, y se aproxima a Claude Opus 4.8 en tareas de codigo y agentes.
 
@@ -82,7 +82,7 @@ La model card indica que GLM-5.3-Flash supera a GLM-5.2 y se aproxima a Claude O
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muggle2026/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/Muggle2026/GLM-5.3-Flash
 - Blog: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

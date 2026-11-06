@@ -79,9 +79,9 @@ Referencia adicional aportada por el autor: Qwen2.5-3B-Instruct base sin ningun 
 
 | Modelo | Parametros | Contexto | Persona (con guia) | GSM8K | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2 (adaptador LoRA) | ~3.000 M + LoRA r=32 | No disponible | 0,826 | 85,2 | 67,6 | apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen2.5-3B-Instruct (base) | ~3.000 M | No disponible | 0,791 (con guia) / no aplica (sin guia) | 87,6 (sin prompt) | 67,6 (sin prompt) | apache-2.0 | HuggingFace, ampliamente utilizado |
-| zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged | ~3.000 M (pesos completos) | No disponible | Igual que el adaptador (mismos pesos) | No disponible por separado | No disponible por separado | apache-2.0 | HuggingFace |
+| zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2 (adaptador LoRA) | ~3.000 M + LoRA r=32 | No disponible | 0,826 | 85,2 | 67,6 | apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen2.5-3B-Instruct (base) | ~3.000 M | No disponible | 0,791 (con guia) / no aplica (sin guia) | 87,6 (sin prompt) | 67,6 (sin prompt) | apache-2.0 | Hugging Face, ampliamente utilizado |
+| zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged | ~3.000 M (pesos completos) | No disponible | Igual que el adaptador (mismos pesos) | No disponible por separado | No disponible por separado | apache-2.0 | Hugging Face |
 | Alternativas de ~3B como Llama-3.2-3B-Instruct o Phi-3.5-mini | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos con otros adaptadores de persona de la misma categoria en la informacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos con otros adaptadores de persona de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace (adaptador LoRA): https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
+- Modelo en Hugging Face (adaptador LoRA): https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
 - Copia fusionada con pesos completos: https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Codigo, pipeline de datos, evaluaciones y registro de trabajo: https://github.com/jeffreyzhou-harvard/CS2881R_HW1

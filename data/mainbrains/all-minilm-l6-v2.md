@@ -82,6 +82,6 @@ La comparativa se basa en parametros y contexto conocidos; no se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mainbrains/all-MiniLM-L6-v2
+- Repositorio Hugging Face: https://huggingface.co/mainbrains/all-MiniLM-L6-v2
 - Modelo base original: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Modelo original de sentence-transformers: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

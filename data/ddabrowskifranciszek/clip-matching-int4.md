@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddabrowskifranciszek/clip-matching-int4` es un repositorio de HuggingFace publicado por el usuario `ddabrowskifranciszek` que contiene una implementacion propia y minima de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades). No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y un *checkpoint* de inicializacion valido unicamente para pruebas de humo (*smoke tests*).
+`ddabrowskifranciszek/clip-matching-int4` es un repositorio de Hugging Face publicado por el usuario `ddabrowskifranciszek` que contiene una implementacion propia y minima de una arquitectura CLIP orientada a tareas de *matching* (emparejamiento entre modalidades). No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y un *checkpoint* de inicializacion valido unicamente para pruebas de humo (*smoke tests*).
 
 El peso real del repositorio es extremadamente reducido: 24.832 parametros en formato safetensors, con un tamano de repositorio de 0,0 GB. La configuracion declara una escala *xlarge* con atencion estandar, fusion por *cross attention*, activacion swish y normalizacion *scalenorm*, aunque existe una contradiccion evidente entre esa etiqueta de escala y el numero de parametros efectivos del checkpoint.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: inferior a 1 GB en cualquier precision; con 24.832 parametros, el checkpoint en fp32 ocupa del orden de decenas o pocos cientos de kilobytes.
 - GPU recomendadas: cualquiera. No requiere GPU; cabe y se ejecuta en CPU sin problema.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo de las ultimas decadas, e incluso en entornos sin GPU.
-- Opciones de despliegue: no hay un pipeline de HuggingFace declarado ni una ruta de carga automatica estandar. La model card advierte que, al ser una implementacion propia, las APIs genericas de carga automatica requieren un adaptador explicito. El despliegue previsto es la ejecucion directa de `inference.py` con PyTorch.
+- Opciones de despliegue: no hay un pipeline de Hugging Face declarado ni una ruta de carga automatica estandar. La model card advierte que, al ser una implementacion propia, las APIs genericas de carga automatica requieren un adaptador explicito. El despliegue previsto es la ejecucion directa de `inference.py` con PyTorch.
 - Latencia y throughput estimados: no disponibles. Al no haber un modelo funcional entrenado, cualquier cifra de rendimiento carece de sentido.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddabrowskifranciszek/clip-matching-int4
+- Hugging Face: https://huggingface.co/ddabrowskifranciszek/clip-matching-int4
 - Ficheros declarados en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no ha devuelto ningun resultado relevante ni verificable sobre este modelo.

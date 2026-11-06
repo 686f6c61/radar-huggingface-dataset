@@ -1,7 +1,7 @@
 # IrohXu/prostreamer-E2B-pretrain
 
 ## Resumen
-ProStreamer-E2B-pretrain es un modelo derivado de Google Gemma 4 E2B IT, publicado por el usuario IrohXu en HuggingFace bajo acceso restringido. Segun los metadatos disponibles, se trata de un ajuste fino orientado a tareas de streaming audio-visual en entornos egocentricos, con aplicaciones de asistente proactivo. El repositorio ocupa 3,8 GB, lo que es coherente con un modelo de la familia E2B (variante eficiente de Gemma 4 con aproximadamente 2 mil millones de parametros efectivos, segun la nomenclatura de Google).
+ProStreamer-E2B-pretrain es un modelo derivado de Google Gemma 4 E2B IT, publicado por el usuario IrohXu en Hugging Face bajo acceso restringido. Segun los metadatos disponibles, se trata de un ajuste fino orientado a tareas de streaming audio-visual en entornos egocentricos, con aplicaciones de asistente proactivo. El repositorio ocupa 3,8 GB, lo que es coherente con un modelo de la familia E2B (variante eficiente de Gemma 4 con aproximadamente 2 mil millones de parametros efectivos, segun la nomenclatura de Google).
 
 La relevancia del modelo radica en su enfoque: combina la base multimodal de Gemma 4 con un entrenamiento especifico para procesar flujos continuos de audio y video desde una perspectiva en primera persona, un escenario poco cubierto por los modelos generalistas. Esto lo hace potencialmente util para investigacion en asistentes wearables, robotica asistencial y analisis de video egocentrico en tiempo real.
 
@@ -66,7 +66,7 @@ La comparativa es orientativa: no hay datos publicados de rendimiento para ProSt
 
 ## Limitaciones y advertencias
 - Informacion publica practicamente inexistente: cero descargas, cero likes, sin pipeline, sin idiomas y sin benchmarks; no es un modelo validado por la comunidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y su reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y su reproducibilidad.
 - Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribucion; revisar los terminos antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion: inherente a los modelos generativos; sin evaluacion publica no puede cuantificarse.
 - Sesgos conocidos: no documentados; al derivar de Gemma 4, hereda los sesgos de la base, no evaluados en este ajuste.
@@ -75,7 +75,7 @@ La comparativa es orientativa: no hay datos publicados de rendimiento para ProSt
 - Sin garantias de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/IrohXu/prostreamer-E2B-pretrain
+- Hugging Face: https://huggingface.co/IrohXu/prostreamer-E2B-pretrain
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

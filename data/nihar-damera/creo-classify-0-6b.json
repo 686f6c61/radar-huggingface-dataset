@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "nihar-damera/creo-classify-0.6b",
+  "slug": "nihar-damera-creo-classify-0-6b",
+  "author": "nihar-damera",
+  "url": "https://huggingface.co/nihar-damera/creo-classify-0.6b",
+  "created_at": "2026-11-02T19:42:27.000Z",
+  "updated_at": "2026-11-02T20:50:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "classification",
+    "grpo",
+    "distillation",
+    "synthetic-data",
+    "agents",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 341,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2239709234,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

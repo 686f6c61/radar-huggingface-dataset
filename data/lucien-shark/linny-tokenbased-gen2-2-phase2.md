@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-TokenBased-Gen2.2-Phase2 es un modelo publicado en HuggingFace por el usuario Lucien-shark. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (unicamente la etiqueta `license: unknown`), no tiene descargas ni likes, y la busqueda web no devuelve ninguna referencia al modelo: los resultados obtenidos corresponden al nombre propio frances "Lucien" y no guardan relacion con el proyecto. No existe, por tanto, informacion verificable sobre arquitectura, datos de entrenamiento o capacidades.
+Linny-TokenBased-Gen2.2-Phase2 es un modelo publicado en Hugging Face por el usuario Lucien-shark. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (unicamente la etiqueta `license: unknown`), no tiene descargas ni likes, y la busqueda web no devuelve ninguna referencia al modelo: los resultados obtenidos corresponden al nombre propio frances "Lucien" y no guardan relacion con el proyecto. No existe, por tanto, informacion verificable sobre arquitectura, datos de entrenamiento o capacidades.
 
 El unico dato objetivo disponible es el tamano del repositorio, 133,5 GB, junto con las marcas temporales de creacion (25 de octubre de 2026) y ultima actualizacion (26 de octubre de 2026). El identificador sugiere una segunda generacion de un modelo de generacion basada en tokens ("TokenBased") en su fase 2, pero se trata de una inferencia a partir del nombre, no de una especificacion confirmada por el autor.
 
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2-Phase2
-- Perfil del autor en HuggingFace: https://huggingface.co/Lucien-shark
+- Modelo en Hugging Face: https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2-Phase2
+- Perfil del autor en Hugging Face: https://huggingface.co/Lucien-shark
 - Paper, blog, repositorio de codigo o demo: no disponible (la busqueda web no ha devuelto ningun resultado relacionado con el modelo)

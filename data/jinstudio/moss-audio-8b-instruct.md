@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Audio-8B-Instruct es un modelo abierto de comprensión de audio publicado en HuggingFace bajo la cuenta Jinstudio. La model card atribuye su desarrollo a MOSI.AI, al equipo OpenMOSS y a Shanghai Innovation Institute. Forma parte de una familia de cuatro variantes (4B/8B, Instruct/Thinking) y está orientado a la comprensión unificada de voz, sonidos ambientales y música, no solo a la transcripción.
+MOSS-Audio-8B-Instruct es un modelo abierto de comprensión de audio publicado en Hugging Face bajo la cuenta Jinstudio. La model card atribuye su desarrollo a MOSI.AI, al equipo OpenMOSS y a Shanghai Innovation Institute. Forma parte de una familia de cuatro variantes (4B/8B, Instruct/Thinking) y está orientado a la comprensión unificada de voz, sonidos ambientales y música, no solo a la transcripción.
 
 El modelo combina un codificador de audio propio, un adaptador de modalidad y un LLM que genera texto de forma autorregresiva. Según los pesos safetensors, tiene 9.052.463.488 parámetros (aproximadamente 9,05 mil millones), aunque se comercializa como 8B. Soporta inglés y chino, se distribuye con licencia Apache-2.0 y su pipeline es audio-text-to-text.
 
@@ -22,7 +22,7 @@ Su relevancia está en que cubre tareas que suelen requerir varios sistemas: ASR
 | Formato de pesos | safetensors; requiere custom_code |
 | Pipeline | audio-text-to-text |
 | Tamaño del repositorio | 18,1 GB |
-| Autor en HuggingFace | Jinstudio |
+| Autor en Hugging Face | Jinstudio |
 | Desarrolladores según model card | MOSI.AI, OpenMOSS y Shanghai Innovation Institute |
 | Variantes de la familia | 4B-Instruct, 4B-Thinking, 8B-Instruct, 8B-Thinking |
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Audio-8B-Instruct | 9.052.463.488 (9,05B) | No disponible | Instrucción directa | Apache-2.0 | HuggingFace, esta ficha |
+| MOSS-Audio-8B-Instruct | 9.052.463.488 (9,05B) | No disponible | Instrucción directa | Apache-2.0 | Hugging Face, esta ficha |
 | MOSS-Audio-8B-Thinking | 8B (dato real no disponible) | No disponible | Cadena de pensamiento | No disponible en la información | Colección OpenMOSS |
 | MOSS-Audio-4B-Instruct | 4B (dato real no disponible) | No disponible | Instrucción directa | No disponible en la información | Colección OpenMOSS |
 | MOSS-Audio-4B-Thinking | 4B (dato real no disponible) | No disponible | Cadena de pensamiento | No disponible en la información | Colección OpenMOSS |
@@ -98,7 +98,7 @@ No se dispone de benchmarks para comparar rendimiento entre variantes. Las varia
 
 ## Enlaces
 
-- [HuggingFace: Jinstudio/MOSS-Audio-8B-Instruct](https://huggingface.co/Jinstudio/MOSS-Audio-8B-Instruct)
+- [Hugging Face: Jinstudio/MOSS-Audio-8B-Instruct](https://huggingface.co/Jinstudio/MOSS-Audio-8B-Instruct)
 - [Colección OpenMOSS de MOSS-Audio](https://huggingface.co/collections/OpenMOSS-Team/moss-audio)
 - [MOSI.AI](https://mosi.cn/#hero)
 - [OpenMOSS](https://www.open-moss.com/)

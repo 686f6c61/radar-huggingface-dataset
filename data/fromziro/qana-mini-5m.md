@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo de estos modelos en las mismas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fromziro/Qana-mini-5M
+- Repositorio Hugging Face: https://huggingface.co/fromziro/Qana-mini-5M
 - Pagina en OpenCSG: https://opencsg.com/models/fromziro/Qana-mini-5M
 - Tokenizador base: https://huggingface.co/AxiomicLabs/GPT-S-5M
 - Licencia: https://huggingface.co/User01110/Qana-mini-5M/blob/main/LICENSE

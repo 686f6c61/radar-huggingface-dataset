@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gabite es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador Ryanham1lton/Gabite. La informacion disponible es extremadamente limitada: la model card del repositorio se reduce a la declaracion de licencia (cc-by-4.0) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene pipeline declarado, no registra idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta.
+Gabite es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador Ryanham1lton/Gabite. La informacion disponible es extremadamente limitada: la model card del repositorio se reduce a la declaracion de licencia (cc-by-4.0) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene pipeline declarado, no registra idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, aproximadamente 0,1 GB, y la licencia CC BY 4.0, que permite uso comercial con atribucion. El tamano reducido sugiere pesos de pequena dimension o un adaptador (tipo LoRA), pero no es posible confirmarlo sin inspeccionar los archivos del repositorio.
 
@@ -38,14 +38,14 @@ El unico indicio indirecto es el tamano del repositorio, en torno a 0,1 GB. Ese 
 - No hay evidencia de soporte para agentes o razonamiento multi-paso.
 - No hay evidencia de capacidades multilingues declaradas.
 - No hay evidencia de capacidades multimodales (vision, audio) ni de modos especiales como thinking mode.
-- La ausencia de pipeline declarado en HuggingFace impide confirmar incluso la tarea prevista por el autor.
+- La ausencia de pipeline declarado en Hugging Face impide confirmar incluso la tarea prevista por el autor.
 
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: dado que no hay documentacion, el unico uso razonable inmediato es la inspeccion tecnica del repositorio para determinar arquitectura, formato de pesos y tokenizador antes de plantear cualquier aplicacion.
 - Prueba de concepto interna: si el modelo resulta ser un adaptador pequeno, podria probarse sobre una base compatible en un entorno aislado, sin exposicion a usuarios finales, para medir su comportamiento real.
 - Experimentacion academica con licencias permisivas: la licencia CC BY 4.0 permite reutilizar y modificar el material con atribucion, lo que facilita su inclusion en trabajos de investigacion reproducibles.
-- Comparacion de tecnicas de ajuste: si se confirma que es un adaptador, serviria como caso de estudio de como se publican ajustes finos en HuggingFace.
+- Comparacion de tecnicas de ajuste: si se confirma que es un adaptador, serviria como caso de estudio de como se publican ajustes finos en Hugging Face.
 - Verificacion de pipelines de carga: util para validar que un script de carga de modelos (transformers, llama.cpp u otros) gestiona correctamente repositorios sin metadatos ni configuracion completa.
 - Auditoria de repositorios: sirve como ejemplo practico de por que conviene revisar la model card, las descargas y la actividad del autor antes de adoptar un modelo en un proyecto.
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gabite | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace, 0 descargas |
+| Gabite | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,13 +80,13 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Sesgos conocidos: no disponible. No se ha publicado informacion sobre la composicion del dataset ni sobre procesos de alineacion.
 - Limitaciones de contexto e idioma: no disponible.
 - Restricciones de licencia: CC BY 4.0 permite uso comercial y obras derivadas siempre que se atribuya la autoria y se indique si se han introducido cambios. No incluye garantias de ningun tipo.
-- Inconsistencia en los metadatos: las fechas de creacion y actualizacion registradas (2026-09-26) son posteriores a la fecha habitual de publicacion de modelos en HuggingFace, lo que refuerza la necesidad de verificar manualmente el repositorio.
+- Inconsistencia en los metadatos: las fechas de creacion y actualizacion registradas (2026-09-26) son posteriores a la fecha habitual de publicacion de modelos en Hugging Face, lo que refuerza la necesidad de verificar manualmente el repositorio.
 - Contenido de la busqueda web descartado: los resultados recuperados no guardan ninguna relacion con el modelo y no deben tomarse como referencia tecnica.
 - Recomendacion: no desplegar en produccion sin auditar previamente los archivos del repositorio, el tokenizador y el comportamiento real del modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Gabite
+- Hugging Face: https://huggingface.co/Ryanham1lton/Gabite
 - Model card: no contiene informacion adicional mas alla de la licencia cc-by-4.0
 - Paper: no disponible
 - Repositorio de codigo: no disponible

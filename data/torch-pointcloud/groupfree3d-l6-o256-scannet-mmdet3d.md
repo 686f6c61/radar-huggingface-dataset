@@ -75,10 +75,10 @@ No se han publicado en la informacion disponible resultados comparativos adicion
 
 | Modelo | Parametros | Contexto / entrada | mAP@0.25 ScanNet | mAP@0.5 ScanNet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| groupfree3d-l6-o256 (esta ficha) | 14,5 M | 8.192 puntos (ejemplo) | 65,92 | 47,59 | Apache-2.0 | HuggingFace (`torch-pointcloud`) |
+| groupfree3d-l6-o256 (esta ficha) | 14,5 M | 8.192 puntos (ejemplo) | 65,92 | 47,59 | Apache-2.0 | Hugging Face (`torch-pointcloud`) |
 | Group-Free 3D original (MMDetection3D) | no disponible en la informacion | nube de puntos completa | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | GitHub open-mmlab |
 | VoteNet | no disponible en la informacion | nube de puntos completa | no disponible en la informacion | no disponible en la informacion | licencia del repositorio original | MMDetection3D |
-| Otros detectores 3D de `torch-pointcloud` | no disponible en la informacion | nube de puntos | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | HuggingFace |
+| Otros detectores 3D de `torch-pointcloud` | no disponible en la informacion | nube de puntos | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | Hugging Face |
 
 La comparación cuantitativa con alternativas no puede completarse con la informacion disponible; los valores de mAP de esta ficha son los únicos declarados por el autor.
 
@@ -95,7 +95,7 @@ La comparación cuantitativa con alternativas no puede completarse con la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-l6-o256.scannet.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-l6-o256.scannet.mmdet3d
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud
 - MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d

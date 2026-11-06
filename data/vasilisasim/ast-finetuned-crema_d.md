@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VasilisAsim/AST-finetuned-CREMA_D es un modelo de clasificación de audio publicado en HuggingFace por el usuario VasilisAsim. Se trata de un Audio Spectrogram Transformer (AST) afinado sobre el conjunto de datos CREMA-D, un corpus multimodal de emociones expresadas por actores. El modelo tiene 86.193.414 parámetros y está etiquetado con la pipeline `audio-classification`, por lo que su función esperada es asignar una clase (previsiblemente una emoción) a fragmentos de audio, no generar texto libre.
+VasilisAsim/AST-finetuned-CREMA_D es un modelo de clasificación de audio publicado en Hugging Face por el usuario VasilisAsim. Se trata de un Audio Spectrogram Transformer (AST) afinado sobre el conjunto de datos CREMA-D, un corpus multimodal de emociones expresadas por actores. El modelo tiene 86.193.414 parámetros y está etiquetado con la pipeline `audio-classification`, por lo que su función esperada es asignar una clase (previsiblemente una emoción) a fragmentos de audio, no generar texto libre.
 
 El repositorio tiene un tamaño de 0,3 GB, consistente con un checkpoint en precisión de 16 o 32 bits de un transformer de menos de 100 millones de parámetros. Los pesos se distribuyen en formato `safetensors` y el modelo es compatible con la librería `transformers`, además de estar marcado como `endpoints_compatible`. La etiqueta `arxiv:1910.09700` apunta al artículo original de AST, "AST: Audio Spectrogram Transformer", de Gong et al.
 
@@ -37,7 +37,7 @@ El nombre del checkpoint indica un ajuste fino sobre CREMA-D (Crowd-sourced Emot
 
 - Clasificación de audio: el modelo recibe una señal de audio y devuelve una etiqueta de clase, integrable mediante la pipeline `audio-classification` de `transformers`.
 - Reconocimiento de emociones en voz: por el conjunto de datos CREMA-D asociado al nombre, lo más probable es que esté ajustado para discriminar emociones habladas. La lista concreta de etiquetas y su número no están documentados en la información disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Capacidades de generación de texto, tool calling, agentes, razonamiento multi-paso, visión, matemáticas o audio generativo: no disponibles (no es un modelo generativo).
 - Capacidades multilingües: no disponibles.
 
@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 86,2 millones de parámetros, el checkpoint ocupa aproximadamente 345 MB en fp32 y unos 172 MB en fp16. Con el coste de activaciones y buffers, cabría esperar un uso de VRAM por debajo de 1 GB en la mayoría de configuraciones.
 - GPU recomendadas: cualquier GPU moderna sirve. No es necesario hardware de gama alta; incluso una GTX 1650, una T4 o una RTX 3060 son más que suficientes.
 - Consumer GPU: sí, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU modernas o en CPU.
-- Opciones de despliegue: pipeline `transformers` de HuggingFace (la vía natural), exportación a ONNX Runtime o TorchScript para inferencia optimizada, y HuggingFace Inference Endpoints gracias a la etiqueta `endpoints_compatible`. vLLM, llama.cpp, Ollama y TGI no aplican, ya que están orientados a modelos de lenguaje generativo.
+- Opciones de despliegue: pipeline `transformers` de Hugging Face (la vía natural), exportación a ONNX Runtime o TorchScript para inferencia optimizada, y Hugging Face Inference Endpoints gracias a la etiqueta `endpoints_compatible`. vLLM, llama.cpp, Ollama y TGI no aplican, ya que están orientados a modelos de lenguaje generativo.
 - Latencia y throughput estimados: no disponibles. Dependerán de la duración del audio de entrada, del dispositivo y de la implementación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VasilisAsim/AST-finetuned-CREMA_D | 86,2 M | Clasificacion de audio | No disponible | No disponible | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | Clasificacion de audio (AudioSet) | No disponible | BSD-3-Clause | HuggingFace |
-| Alternativas de clasificacion emocional (wav2vec2, HuBERT, WavLM afinados) | Variable (95 M - 1 000 M) | Clasificacion de audio / emociones | No disponible | Variable segun checkpoint | HuggingFace |
+| VasilisAsim/AST-finetuned-CREMA_D | 86,2 M | Clasificacion de audio | No disponible | No disponible | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | Clasificacion de audio (AudioSet) | No disponible | BSD-3-Clause | Hugging Face |
+| Alternativas de clasificacion emocional (wav2vec2, HuBERT, WavLM afinados) | Variable (95 M - 1 000 M) | Clasificacion de audio / emociones | No disponible | Variable segun checkpoint | Hugging Face |
 
 La comparación se ofrece únicamente como referencia de categoría, ya que no se han publicado datos de rendimiento de este checkpoint concreto que permitan una comparación cuantitativa.
 
@@ -85,7 +85,7 @@ La comparación se ofrece únicamente como referencia de categoría, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VasilisAsim/AST-finetuned-CREMA_D
+- Repositorio Hugging Face: https://huggingface.co/VasilisAsim/AST-finetuned-CREMA_D
 - Paper de la arquitectura AST: https://arxiv.org/abs/1910.09700
 - Conjunto de datos CREMA-D (referencia del ajuste fino, no enlazado por el autor): no disponible en la información proporcionada
 - Demo: no disponible

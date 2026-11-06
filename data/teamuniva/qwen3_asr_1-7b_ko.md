@@ -74,9 +74,9 @@ Composición del conjunto de evaluación tras la revisión manual: clova_call 1.
 
 | Modelo | Parámetros | Contexto | CER coreano (agregado) | WER inglés (LibriSpeech) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TeamUNIVA/qwen3_asr_1.7b_ko (este) | 2,35B | No disponible | 0,0483 | 0,0277 | Apache 2.0 | HuggingFace |
-| TeamUNIVA/qwen3_asr_1.7b_ko_beta | No disponible | No disponible | 0,0537 | 0,0246 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B (base) | 1,7B (nominal) | No disponible | 0,0686 | 0,0250 | Apache 2.0 | HuggingFace |
+| TeamUNIVA/qwen3_asr_1.7b_ko (este) | 2,35B | No disponible | 0,0483 | 0,0277 | Apache 2.0 | Hugging Face |
+| TeamUNIVA/qwen3_asr_1.7b_ko_beta | No disponible | No disponible | 0,0537 | 0,0246 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (base) | 1,7B (nominal) | No disponible | 0,0686 | 0,0250 | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados comparables de otras familias ASR (por ejemplo, Whisper large-v3 o modelos específicos para coreano) medidos sobre este mismo conjunto de evaluación revisado, por lo que no se incluyen cifras que no puedan contrastarse.
 
@@ -94,7 +94,7 @@ No se dispone de resultados comparables de otras familias ASR (por ejemplo, Whis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
+- Modelo en Hugging Face: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Modelo predecesor (beta): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta
 - Audios de ejemplo del repositorio: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko/tree/main/audio

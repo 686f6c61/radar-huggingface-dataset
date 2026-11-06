@@ -25,13 +25,13 @@ Ahora bien, la informacion disponible es muy limitada: la model card del reposit
 
 No se ha publicado informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio derivado no incluye model card tecnica propia: se limita a indicar que se ha convertido desde `IndexTeam/Index-Translate-2B` con llama.cpp y a enlazar la model card original, que no forma parte de la informacion proporcionada.
 
-El unico dato estructural fiable es el recuento de parametros del modelo base (1.942.653.248) y la pipeline declarada en HuggingFace, `translation`. La tarea declarada y los tags (`translation`, `index`, `conversational`) sugieren un modelo especializado en traduccion con soporte de formato conversacional, pero no hay detalle verificable sobre la innovacion tecnica, el tokenizador o el esquema de atencion empleado.
+El unico dato estructural fiable es el recuento de parametros del modelo base (1.942.653.248) y la pipeline declarada en Hugging Face, `translation`. La tarea declarada y los tags (`translation`, `index`, `conversational`) sugieren un modelo especializado en traduccion con soporte de formato conversacional, pero no hay detalle verificable sobre la innovacion tecnica, el tokenizador o el esquema de atencion empleado.
 
 ## Capacidades
 
-- Traduccion automatica: es la tarea declarada en la pipeline de HuggingFace y el proposito del modelo base.
+- Traduccion automatica: es la tarea declarada en la pipeline de Hugging Face y el proposito del modelo base.
 - Formato conversacional: el tag `conversational` indica que el modelo acepta plantillas de chat, presumiblemente con roles de sistema, usuario y asistente.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Ejecucion local mediante llama.cpp: soporta los binarios `llama-cli` y `llama-server`.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.

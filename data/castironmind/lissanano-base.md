@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes ni frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CastIronMind/LissaNano-Base
+- Modelo en Hugging Face: https://huggingface.co/CastIronMind/LissaNano-Base
 - Licencia: https://huggingface.co/CastIronMind/LissaNano-Base/blob/main/LICENSE
 - Variante Instruct: https://huggingface.co/CastIronMind/LissaNano-Instruct
 - LissaBrat-Base: https://huggingface.co/CastIronMind/LissaBrat-Base

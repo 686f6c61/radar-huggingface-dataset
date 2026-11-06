@@ -75,6 +75,6 @@ No se dispone de comparaciones con otros modelos de la misma categoria (por ejem
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kingjones777/Granite-4.1-8B-ROCmFP4-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/kingjones777/Granite-4.1-8B-ROCmFP4-GGUF)
 - [Modelo base: ibm-granite/granite-4.1-8b](https://huggingface.co/ibm-granite/granite-4.1-8b)
 - [Fork de llama.cpp con soporte ROCmFPX](https://github.com/charlie12345/ROCmFPX)

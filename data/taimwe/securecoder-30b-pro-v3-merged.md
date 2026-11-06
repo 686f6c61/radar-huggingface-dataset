@@ -96,7 +96,7 @@ No se dispone de datos comparativos con alternativas externas de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taimwe/securecoder-30b-pro-v3-merged
+- Modelo en Hugging Face: https://huggingface.co/Taimwe/securecoder-30b-pro-v3-merged
 - Adaptador LoRA de origen: https://huggingface.co/Taimwe/securecoder-30b-pro-v3
 - Scripts de entrenamiento, fusion y cuantizacion: https://huggingface.co/Taimwe/securecoder-scripts
 - Documento de traspaso con el estado del proyecto: https://huggingface.co/Taimwe/securecoder-scripts/blob/main/HANDOFF.md

@@ -92,7 +92,7 @@ La diferencia principal frente al modelo fuente es el formato (ONNX con variante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/madlad400-3b-mt-es_ES-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/madlad400-3b-mt-es_ES-onnx
 - Modelo fuente del ajuste fino: https://huggingface.co/Ugiat/madlad400-3b-mt-es_ES
 - Modelo base original: https://huggingface.co/google/madlad400-3b-mt
 - Commit de exportación: `3f26e1d6d13938675047f3fad49b28f8c1ba2c9a` (en el repositorio `Ugiat/madlad400-3b-mt-es_ES`)

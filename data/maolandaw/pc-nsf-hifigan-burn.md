@@ -94,7 +94,7 @@ La comparacion se limita a rasgos estructurales porque no se dispone de metricas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maolandaw/PC-NSF-HiFiGAN-burn
+- Repositorio en Hugging Face: https://huggingface.co/maolandaw/PC-NSF-HiFiGAN-burn
 - Proyecto upstream (codigo y checkpoints): https://github.com/openvpi/vocoders
 - Release del checkpoint original: https://github.com/openvpi/vocoders/releases/tag/pc-nsf-hifigan-44.1k-hop512-128bin-2025.02
 - Crate `burn-store` (lector PyTorch en Rust, caracteristica `pytorch`): https://crates.io/crates/burn-store

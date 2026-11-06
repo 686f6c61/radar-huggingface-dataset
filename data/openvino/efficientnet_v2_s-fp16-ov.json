@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenVINO/efficientnet_v2_s-fp16-ov",
+  "slug": "openvino-efficientnet_v2_s-fp16-ov",
+  "author": "OpenVINO",
+  "url": "https://huggingface.co/OpenVINO/efficientnet_v2_s-fp16-ov",
+  "created_at": "2026-04-16T07:39:21.000Z",
+  "updated_at": "2026-11-06T11:06:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Classification",
+    "image-classification",
+    "vision",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42763152,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks."
+    },
+    {
+      "title": "efficientnet-v2-s — OpenVINO™ documentationCopy to clipboardCopy to ...",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_efficientnet_v2_s.html",
+      "snippet": "The efficientnet-v2-s model is a small variant of the EfficientNetV2 pre-trained on ImageNet-21k dataset and fine-tuned on ImageNet-1k for image classification task."
+    },
+    {
+      "title": "GitHub - openvinotoolkit/openvino: OpenVINO™ is an open source …",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "snippet": "OpenVINO supports the CPU, GPU, and NPU devices and works with models from PyTorch, TensorFlow, ONNX, TensorFlow Lite, …"
+    },
+    {
+      "title": "openvino_model/models/public/efficientnet-v2-s/README.md at master ...",
+      "url": "https://github.com/woochang0110/openvino_model/blob/master/models/public/efficientnet-v2-s/README.md",
+      "snippet": "The efficientnet-v2-s model is a small variant of the EfficientNetV2 pre-trained on ImageNet-21k dataset and fine-tuned on ImageNet-1k for image classification task."
+    },
+    {
+      "title": "Intel® Distribution of OpenVINO™ Toolkit",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+      "snippet": "OpenVINO™ toolkit is an open source toolkit that accelerates AI inference with lower latency and higher throughput while …"
+    }
+  ]
+}

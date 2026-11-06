@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Suhoo898/news2stock-lora` es un adaptador LoRA publicado en HuggingFace con el nombre de usuario Suhoo898. El nombre del repositorio sugiere una aplicación de predicción bursátil basada en noticias (news-to-stock), pero la model card no contiene ninguna información sustancial: todos los campos están marcados como "More Information Needed" y el repositorio tiene un tamaño de 0.0 GB, lo que indica que el modelo no contiene pesos reales o se trata de un placeholder.
+El modelo `Suhoo898/news2stock-lora` es un adaptador LoRA publicado en Hugging Face con el nombre de usuario Suhoo898. El nombre del repositorio sugiere una aplicación de predicción bursátil basada en noticias (news-to-stock), pero la model card no contiene ninguna información sustancial: todos los campos están marcados como "More Information Needed" y el repositorio tiene un tamaño de 0.0 GB, lo que indica que el modelo no contiene pesos reales o se trata de un placeholder.
 
 En el momento de la consulta, el modelo registra 0 descargas y 0 likes, y fue creado el 24 de agosto de 2026. La única referencia técnica destacable es la etiqueta `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. sobre estimación de emisiones de carbono en el entrenamiento de modelos, citado en la plantilla de la model card y no necesariamente vinculado a la arquitectura del modelo. La etiqueta `endpoints_compatible` y `region:us` sugieren compatibilidad con los endpoints de Hugging Face, pero no hay evidencia de que el modelo funcione.
 

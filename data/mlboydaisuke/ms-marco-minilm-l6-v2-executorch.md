@@ -75,7 +75,7 @@ Según la fuente web, el modelo L12 es marginalmente más preciso (39,02 vs 39,0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L6-v2-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L6-v2-ExecuTorch
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Repositorio de scripts de conversión: https://github.com/john-rocky/executorch-models
 - Documentación de ExecuTorch: https://pytorch.org/executorch/ (no incluido en la búsqueda, pero relevante)

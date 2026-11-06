@@ -23,7 +23,7 @@ Es relevante ahora porque la demanda de IA en el borde (edge) para datos sensibl
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible identifica el modelo como parte de la familia LFM2 de Liquid AI, etiquetada en HuggingFace con los tags "liquid", "lfm2" y "edge", y construida sobre LiquidAI/LFM2-2.6B. No se detallan en la informacion proporcionada la composicion interna de capas, el mecanismo de atencion ni si se trata de una arquitectura hibrida (convolucional y atencion) o de un transformer clasico, por lo que esos datos se consideran no disponibles. Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La informacion disponible identifica el modelo como parte de la familia LFM2 de Liquid AI, etiquetada en Hugging Face con los tags "liquid", "lfm2" y "edge", y construida sobre LiquidAI/LFM2-2.6B. No se detallan en la informacion proporcionada la composicion interna de capas, el mecanismo de atencion ni si se trata de una arquitectura hibrida (convolucional y atencion) o de un transformer clasico, por lo que esos datos se consideran no disponibles. Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 Si se describen las caracteristicas de uso: el modelo esta entrenado para resumir transcripciones largas (reuniones de 30 a 60 minutos) y producir salidas estructuradas con puntos clave, decisiones y elementos de accion, con un tono y formato consistentes. La model card indica que la calidad de resumen se acerca a la de modelos mucho mayores, con un consumo inferior a 3 GB de RAM. El modelo se distribuye en cuatro formatos complementarios en el repositorio original (nativo para Transformers y vLLM, GGUF para llama.cpp, ONNX para despliegue multiplataforma y MLX para Apple Silicon), lo que facilita su integracion en distintos runtimes.
 
@@ -89,13 +89,13 @@ No se dispone de datos comparativos de rendimiento entre estos modelos ni frente
 
 ## Enlaces
 
-- Modelo en HuggingFace (OpenFlowLM): https://huggingface.co/OpenFlowLM/LFM2-2.6B-Transcript-NPU2
-- Modelo original en HuggingFace (LiquidAI): https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript
+- Modelo en Hugging Face (OpenFlowLM): https://huggingface.co/OpenFlowLM/LFM2-2.6B-Transcript-NPU2
+- Modelo original en Hugging Face (LiquidAI): https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript
 - Modelo base de la familia: https://huggingface.co/LiquidAI/LFM2-2.6B
 - Variante GGUF: https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript-GGUF
 - Variante ONNX: https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript-ONNX
 - Variante MLX (4 bits): https://huggingface.co/mlx-community/LFM2-2.6B-Transcript-4bit
-- Repositorio FastFlowLM en HuggingFace: https://huggingface.co/FastFlowLM/LFM2-2.6B-Transcript-NPU2
+- Repositorio FastFlowLM en Hugging Face: https://huggingface.co/FastFlowLM/LFM2-2.6B-Transcript-NPU2
 - Repositorio FastFlowLM en GitHub (xclbins para NPU AMD): https://github.com/FastFlowLM/FastFlowLM
 - Documentacion de Liquid AI sobre LFM2-2.6B-Transcript: https://docs.liquid.ai/lfm/models/lfm2-2.6b-transcript
 - Documentacion general de LFM: https://docs.liquid.ai/lfm

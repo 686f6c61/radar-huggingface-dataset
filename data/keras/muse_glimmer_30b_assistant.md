@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre este borrador y alternat
 
 ## Enlaces
 
-- HuggingFace del asistente: https://huggingface.co/keras/muse_glimmer_30b_assistant
+- Hugging Face del asistente: https://huggingface.co/keras/muse_glimmer_30b_assistant
 - Model card del objetivo: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Model card del asistente original: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Paper: https://arxiv.org/abs/2610.24628

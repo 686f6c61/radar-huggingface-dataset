@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ByteDance/Ouro-1.4B
+- Hugging Face: https://huggingface.co/ByteDance/Ouro-1.4B
 - Paper (arXiv): https://huggingface.co/papers/2510.25741
 - Página del proyecto: https://ouro-llm.github.io/
 - Colección de modelos Ouro de ByteDance: https://huggingface.co/collections/ByteDance/ouro

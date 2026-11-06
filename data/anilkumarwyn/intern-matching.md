@@ -72,5 +72,5 @@ No disponible. No hay modelos comparables en la información proporcionada, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anilkumarwyn/intern-matching
+- Hugging Face: https://huggingface.co/anilkumarwyn/intern-matching
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web (los resultados no estaban relacionados con el modelo).

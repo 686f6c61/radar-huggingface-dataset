@@ -82,7 +82,7 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheUnderscore/Pantheon-Reasoning-26B-A4B-1.1-V2-NVFP4-W4ATTN-AWQ
+- Hugging Face: https://huggingface.co/TheUnderscore/Pantheon-Reasoning-26B-A4B-1.1-V2-NVFP4-W4ATTN-AWQ
 - Modelo base: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2
 - Fork de vLLM requerido: https://github.com/1CatAI/1Cat-vLLM
 - Rama especifica: https://github.com/Th-Underscore/1Cat-vLLM/tree/feat/gemma4-sm70-native-v3

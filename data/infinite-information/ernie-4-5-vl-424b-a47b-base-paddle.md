@@ -6,7 +6,7 @@ El modelo identificado como ERNIE-4.5-VL-424B-A47B es un modelo multimodal de gr
 
 El dato de parametros confirmado por los ficheros safetensors es de 423.526.285.184 parametros totales (aproximadamente 423,5 mil millones), lo que lo situa en la categoria de modelos frontier multimodales. El sufijo "A47B" del nombre sugiere un regimen de aproximadamente 47 mil millones de parametros activos por token, coherente con un diseno MoE, aunque este dato no se confirma de forma independiente en la informacion proporcionada.
 
-El repositorio ocupa 847,2 GB y el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es Apache 2.0 y los idiomas soportados son ingles (en) y chino (zh). En el momento de la consulta el modelo no registra descargas ni "likes", lo que sugiere una publicacion reciente o poco difundida.
+El repositorio ocupa 847,2 GB y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es Apache 2.0 y los idiomas soportados son ingles (en) y chino (zh). En el momento de la consulta el modelo no registra descargas ni "likes", lo que sugiere una publicacion reciente o poco difundida.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables y la 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Idiomas limitados a ingles y chino; no se declara soporte de castellano ni de otros idiomas.
 - Riesgo de alucinacion inherente a los modelos generativos de gran escala, especialmente en tareas de descripcion de imagenes o extraccion de datos; se recomienda validacion humana en entornos de produccion.
 - Sesgos conocidos: no disponible en la informacion proporcionada.
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables y la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinite-Information/ERNIE-4.5-VL-424B-A47B-Base-Paddle
+- Modelo en Hugging Face: https://huggingface.co/Infinite-Information/ERNIE-4.5-VL-424B-A47B-Base-Paddle
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio resultados relevantes sobre el modelo (los resultados obtenidos corresponden a contenidos sin relacion, como la pelicula "Infinite" de 2021 o el juego "Infinite Craft").

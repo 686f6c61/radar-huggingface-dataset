@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-V2-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-V2-31B-i1-GGUF
 - Repositorio estatico (con mmproj): https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-V2-31B-GGUF
 - Modelo base: https://huggingface.co/Blazed-Forge/Gemma-4-Sphinsikus-Chronist-V2-31B
 - Pagina de NanoGPT con descripcion del modelo: https://nano-gpt.com/models/text/Gemma-4-31B-Sphinsikus-Chronist

@@ -60,7 +60,7 @@ No disponible. No se han facilitado datos de rendimiento de modelos comparables 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar cargados o que el repositorio está vacío. El código de la model card carga `best.pt`, pero no se confirma que el archivo esté disponible.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar cargados o que el repositorio está vacío. El código de la model card carga `best.pt`, pero no se confirma que el archivo esté disponible.
 - No se especifican sesgos conocidos ni limitaciones de contexto o idioma, al ser un modelo de visión.
 - La licencia MIT permite uso comercial, modificación y distribución, pero la ausencia de pesos publicados impide su uso práctico actual.
 - No hay información sobre la composición del dataset de entrenamiento, lo que limita la evaluación de su generalización.
@@ -68,6 +68,6 @@ No disponible. No se han facilitado datos de rendimiento de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thehimanshhu/dlp-26t2-nppe3-denoise-sr
-- Perfil de HuggingFace del autor: https://huggingface.co/thehimanshhu
+- Hugging Face: https://huggingface.co/thehimanshhu/dlp-26t2-nppe3-denoise-sr
+- Perfil de Hugging Face del autor: https://huggingface.co/thehimanshhu
 - GitHub del autor: https://github.com/thehimanshhu/

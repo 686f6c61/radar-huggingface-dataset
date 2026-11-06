@@ -74,7 +74,7 @@ Importante: estas cifras son medidas de acuerdo con la fuente, no precisión OCR
 | Modelo | Parametros | Tarea | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Bina 0.4 Koochik ONNX-INT4 | 630,8 M (únicos) | OCR fa/en | GPTQ INT4 (parcial, ~6,77 bits efectivos) | 2.048 tokens/región | OpenMDW 1.1 | ONNX, pesos externos, runner incluido |
-| Bina 0.4 Koochik (base) | 630,8 M | OCR fa/en | Sin cuantizar (BF16) | No disponible en esta ficha | OpenMDW 1.1 | HuggingFace, modelo base |
+| Bina 0.4 Koochik (base) | 630,8 M | OCR fa/en | Sin cuantizar (BF16) | No disponible en esta ficha | OpenMDW 1.1 | Hugging Face, modelo base |
 | Bina 0.4 Koochik CoreML-INT4 | 630,8 M | OCR fa/en | INT4 | No disponible | OpenMDW 1.1 | CoreML nativo para Apple GPU validado |
 | Bina 0.4 Koochik Tract-INT4 | 630,8 M | OCR fa/en | INT4 | No disponible | OpenMDW 1.1 | Tract con Metal para Apple GPU validado |
 

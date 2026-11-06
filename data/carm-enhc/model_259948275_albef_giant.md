@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/carm-enhc/model_259948275_albef_giant)
+- [Repositorio de Hugging Face](https://huggingface.co/carm-enhc/model_259948275_albef_giant)

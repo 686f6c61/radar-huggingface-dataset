@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ASDCZX12DS/MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario ASDCZX12DS, creado el 10 de septiembre de 2026 y actualizado dos minutos después. Por su nombre y por el estado del repositorio (0 descargas, 0 likes, 0,0 GB de tamano) se trata de un repositorio de prueba, no de un modelo publicable: no contiene pesos. Los metadatos declaran libreria `transformers`, framework PyTorch, licencia MIT, pipeline `feature-extraction` y la etiqueta de arquitectura `bert`.
+ASDCZX12DS/MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario ASDCZX12DS, creado el 10 de septiembre de 2026 y actualizado dos minutos después. Por su nombre y por el estado del repositorio (0 descargas, 0 likes, 0,0 GB de tamano) se trata de un repositorio de prueba, no de un modelo publicable: no contiene pesos. Los metadatos declaran libreria `transformers`, framework PyTorch, licencia MIT, pipeline `feature-extraction` y la etiqueta de arquitectura `bert`.
 
 La informacion disponible es internamente contradictoria. Las etiquetas y el pipeline describen un codificador tipo BERT para extraccion de caracteristicas, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, mejoras en matematicas y programacion, soporte de function calling y una precision del 87,5 % en AIME 2025. El propio README usa nombres de columna genericos (`Model1`, `Model2`, `Model1-v2`) en su tabla de benchmarks, lo que refuerza la impresion de plantilla sin datos reales asociados.
 
@@ -123,7 +123,7 @@ La comparacion cuantitativa de rendimiento no es posible: el repositorio no publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDCZX12DS/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASDCZX12DS/MyAwesomeModel-TestRepository
 - Model card (incluida en el propio repositorio, sin URL independiente)
 - Sitio web oficial y plataforma de chat/API mencionados en la model card: sin URL disponible
 - Repositorio de codigo para ejecucion local mencionado en la model card: sin URL disponible

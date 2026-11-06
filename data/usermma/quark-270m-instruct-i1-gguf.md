@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `usermma/Quark-270m-Instruct-i1-GGUF` es una conversión a formato GGUF del modelo `ThingAI/Quark-270m-Instruct`, un modelo de lenguaje pequeño (con 251.749.888 parámetros reales, pese a la denominación "270m") desarrollado por `ThingAI` y publicado en HuggingFace por `usermma`. Está diseñado para generación de texto en italiano e inglés, con fine-tuning supervisado (SFT) para seguir instrucciones y mantener conversaciones. Su licencia es Apache 2.0, lo que permite uso comercial y modificación.
+El modelo `usermma/Quark-270m-Instruct-i1-GGUF` es una conversión a formato GGUF del modelo `ThingAI/Quark-270m-Instruct`, un modelo de lenguaje pequeño (con 251.749.888 parámetros reales, pese a la denominación "270m") desarrollado por `ThingAI` y publicado en Hugging Face por `usermma`. Está diseñado para generación de texto en italiano e inglés, con fine-tuning supervisado (SFT) para seguir instrucciones y mantener conversaciones. Su licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
 Se trata de un modelo causal (`causal-lm`) compatible con Transformers, aunque no se detalla su arquitectura concreta. No se dispone de información sobre la longitud de contexto máxima, los datos de entrenamiento ni los benchmarks. Su principal valor es el formato GGUF, que permite ejecutarlo en CPU o GPU de bajo consumo mediante `llama.cpp`, sin necesidad de hardware especializado. Esto lo hace relevante para aplicaciones en entornos con recursos limitados o donde se requiera inferencia local.
 
@@ -23,7 +23,7 @@ Se trata de un modelo causal (`causal-lm`) compatible con Transformers, aunque n
 
 El modelo se presenta como un modelo de lenguaje causal (`causal-lm`) y utiliza la biblioteca Transformers. Sin embargo, no se ha publicado información sobre la arquitectura interna (número de capas, dimensiones de los embeddings, tipo de atención, etc.). Los metadatos indican que fue entrenado desde cero (`trained-from-scratch`) y posteriormente ajustado con fine-tuning supervisado (SFT) para tareas de instrucción y chat.
 
-No se dispone de datos sobre la composición del dataset de entrenamiento, el número de tokens procesados ni la aplicación de técnicas como RLHF o DPO. Tampoco se confirma si el modelo base es `ThingAI/Quark-270m-Instruct` (según la model card del autor) o `ThingAI/ARK-270m-Instruct` (según los metadatos de HuggingFace). Esta discrepancia debería aclararse antes de usar el modelo en producción.
+No se dispone de datos sobre la composición del dataset de entrenamiento, el número de tokens procesados ni la aplicación de técnicas como RLHF o DPO. Tampoco se confirma si el modelo base es `ThingAI/Quark-270m-Instruct` (según la model card del autor) o `ThingAI/ARK-270m-Instruct` (según los metadatos de Hugging Face). Esta discrepancia debería aclararse antes de usar el modelo en producción.
 
 ## Capacidades
 
@@ -72,12 +72,12 @@ En la información disponible no se han publicado benchmarks, por lo que no es p
 - Riesgo de alucinación: Al ser un modelo pequeño, la tasa de alucinación puede ser alta en tareas complejas. Debe usarse con supervisión y en tareas acotadas.
 - Limitaciones de contexto e idioma: La longitud de contexto no está confirmada; solo soporta italiano e inglés.
 - Restricciones de licencia: La licencia Apache 2.0 permite uso comercial, pero se debe revisar el texto de la licencia y mantener los avisos de atribución.
-- Discrepancia en el modelo base: Los metadatos de HuggingFace indican `ThingAI/ARK-270m-Instruct` como base, mientras que la model card menciona `ThingAI/Quark-270m-Instruct`. Esta inconsistencia debe resolverse antes de usar el modelo en producción.
+- Discrepancia en el modelo base: Los metadatos de Hugging Face indican `ThingAI/ARK-270m-Instruct` como base, mientras que la model card menciona `ThingAI/Quark-270m-Instruct`. Esta inconsistencia debe resolverse antes de usar el modelo en producción.
 - Sin datos de calidad: No hay benchmarks publicados, por lo que no se puede evaluar su rendimiento frente a otros modelos.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/usermma/Quark-270m-Instruct-i1-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/usermma/Quark-270m-Instruct-i1-GGUF
 - Modelo original según la model card: https://huggingface.co/ThingAI/Quark-270m-Instruct
-- Modelo base según metadatos de HuggingFace: https://huggingface.co/ThingAI/ARK-270m-Instruct
+- Modelo base según metadatos de Hugging Face: https://huggingface.co/ThingAI/ARK-270m-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Chinese-LoRa-adapter | 27B (base) + adaptador LoRA r=16 | no disponible | Sin benchmarks; perdida de validacion 2,96 | apache-2.0 | HuggingFace, 3 descargas, 2 likes |
+| Qwen3.8-27B-Uncensored-Chinese-LoRa-adapter | 27B (base) + adaptador LoRA r=16 | no disponible | Sin benchmarks; perdida de validacion 2,96 | apache-2.0 | Hugging Face, 3 descargas, 2 likes |
 | Qwen/Qwen3.8-27B (base) | 27B | no disponible | no disponible | no disponible | no disponible en la informacion consultada |
 | Otros adaptadores LoRA de ajuste en chino sobre modelos Qwen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,8 +96,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificables de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese-LoRa-adapter
+- Modelo en Hugging Face: https://huggingface.co/vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese-LoRa-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Listado de modelos LoRA en HuggingFace: https://huggingface.co/models?sort=modified&search=lora
+- Listado de modelos LoRA en Hugging Face: https://huggingface.co/models?sort=modified&search=lora
 - Listado de modelos de generacion de texto: https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created
 - Contacto indicado por el autor: jiang_501@hotmail.com, vurtnesaerdna@gmail.com

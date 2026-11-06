@@ -21,7 +21,7 @@ El repositorio ocupa 0,4 GB, aunque la primera ejecución descarga aproximadamen
 | Licencia | fish-audio-research-license |
 | Formato de pesos | no disponible (repo de 0,4 GB; descarga inicial de ~11 GB de pesos base) |
 
-Otros datos técnicos relevantes: la salida de audio es WAV a 44,1 kHz, el límite de generación por defecto es de 400 frames (aproximadamente 18,6 segundos) y el pipeline declarado en HuggingFace es `text-to-speech`. El modelo tiene la inferencia desactivada en el Hub (`inference: false`).
+Otros datos técnicos relevantes: la salida de audio es WAV a 44,1 kHz, el límite de generación por defecto es de 400 frames (aproximadamente 18,6 segundos) y el pipeline declarado en Hugging Face es `text-to-speech`. El modelo tiene la inferencia desactivada en el Hub (`inference: false`).
 
 ## Arquitectura y entrenamiento
 
@@ -89,11 +89,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Riesgo de uso indebido de la clonación de voz (suplantación, contenido no consentido); la licencia de investigación limita pero no elimina este riesgo.
 - No se documentan sesgos concretos ni tasas de alucinación; en TTS, los fallos se manifiestan como artefactos, prosodia incorrecta o pronunciación errónea.
 - Requiere 28 GB de VRAM y Linux, lo que excluye la mayoría de entornos de desarrollo consumer.
-- La inferencia está desactivada en HuggingFace (`inference: false`) y el acceso al repositorio requiere inicio de sesión en HF con permisos.
+- La inferencia está desactivada en Hugging Face (`inference: false`) y el acceso al repositorio requiere inicio de sesión en HF con permisos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IrohaStudio/Iroha-TTS
+- Modelo en Hugging Face: https://huggingface.co/IrohaStudio/Iroha-TTS
 - Modelo base Fish Audio S2-Pro: https://huggingface.co/fishaudio/s2-pro
 - Demo de generación de voz (Space): https://huggingface.co/spaces/cyacya8023/Iroha-TTS
 - Demo ASMR 360 (Space): https://huggingface.co/spaces/cyacya8023/Iroha-360-ASMR

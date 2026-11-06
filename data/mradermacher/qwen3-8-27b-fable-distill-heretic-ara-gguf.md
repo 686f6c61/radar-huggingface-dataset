@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que permite ejecutar localmente un VLM de
 
 El modelo base `armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara` parte de Qwen3.8-27B, un transformer denso con un encoder de vision adicional que le permite procesar imagenes junto con texto. La arquitectura original de Qwen3.8-27B incluye atencion completa, normalizacion QKV y un vocabulario amplio, con un contexto nativo de 262 144 tokens. Sobre esta base, el autor del modelo derivado ha aplicado tecnicas de "abliteration" (eliminacion de capas o pesos asociados a comportamientos de rechazo) y un ajuste fino adicional con un dataset denominado "Fable-Distill", aunque no se proporcionan detalles tecnicos sobre el proceso de entrenamiento, el volumen de datos ni el metodo de alineacion utilizado.
 
-La cuantizacion realizada por mradermacher es estatica, sin uso de imatrix, y se ha generado directamente a partir de los pesos en formato HuggingFace. No se incluyen archivos de metadatos sobre el proceso de conversion mas alla de los nombres de los archivos. La presencia de proyectores multimodales (mmproj) confirma que el modelo conserva la capacidad de procesar imagenes, aunque la calidad de la comprension visual puede variar segun la cuantizacion elegida.
+La cuantizacion realizada por mradermacher es estatica, sin uso de imatrix, y se ha generado directamente a partir de los pesos en formato Hugging Face. No se incluyen archivos de metadatos sobre el proceso de conversion mas alla de los nombres de los archivos. La presencia de proyectores multimodales (mmproj) confirma que el modelo conserva la capacidad de procesar imagenes, aunque la calidad de la comprension visual puede variar segun la cuantizacion elegida.
 
 ## Capacidades
 

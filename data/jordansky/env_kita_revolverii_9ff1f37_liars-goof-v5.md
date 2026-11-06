@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_kita_revolverII_9ff1f37_liars-goof-v5` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `Llama-3.2-3B-Instruct` de Meta, utilizando la librería PEFT y el framework TRL para entrenamiento supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.8 GB, lo que indica que se trata de un adaptador de bajo rango que debe combinarse con el modelo base para su uso.
+El modelo `Jordansky/env_kita_revolverII_9ff1f37_liars-goof-v5` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Está diseñado como un ajuste fino (fine-tuning) sobre el modelo base `Llama-3.2-3B-Instruct` de Meta, utilizando la librería PEFT y el framework TRL para entrenamiento supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.8 GB, lo que indica que se trata de un adaptador de bajo rango que debe combinarse con el modelo base para su uso.
 
 La ficha del modelo es extremadamente escasa: no se proporciona información sobre la licencia, los idiomas soportados, los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación. El autor no ha documentado el propósito específico del adaptador, aunque los tags sugieren que está orientado a tareas de generación de texto conversacional. Dada la falta de documentación, cualquier uso en producción debe considerarse experimental y requiere una validación exhaustiva.
 
@@ -71,5 +71,5 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El adapta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_9ff1f37_liars-goof-v5
+- Repositorio en Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_9ff1f37_liars-goof-v5
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct (no confirmado como enlace oficial, pero es el modelo base indicado en los tags)

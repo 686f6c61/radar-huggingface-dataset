@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EgoisticCoder/forma-v1-lora es un repositorio publicado en HuggingFace por el usuario EgoisticCoder. Por el sufijo del identificador puede inferirse que se trata de un adaptador LoRA (Low-Rank Adaptation), pero la model card no confirma esta circunstancia ni describe el modelo base sobre el que se monta, el proceso de entrenamiento o la tarea objetivo. La informacion disponible se limita a la licencia (Apache 2.0), la region declarada (US) y las fechas de creacion y actualizacion, ambas el 17 de septiembre de 2026.
+EgoisticCoder/forma-v1-lora es un repositorio publicado en Hugging Face por el usuario EgoisticCoder. Por el sufijo del identificador puede inferirse que se trata de un adaptador LoRA (Low-Rank Adaptation), pero la model card no confirma esta circunstancia ni describe el modelo base sobre el que se monta, el proceso de entrenamiento o la tarea objetivo. La informacion disponible se limita a la licencia (Apache 2.0), la region declarada (US) y las fechas de creacion y actualizacion, ambas el 17 de septiembre de 2026.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, descripcion de la arquitectura, datos de entrenamiento ni resultados de evaluacion. Registra cero descargas y cero interacciones en el momento de la consulta, por lo que no existe evidencia publica de uso ni de validacion por parte de terceros.
 
@@ -47,7 +47,7 @@ Dado que no consta el modelo base, la tarea de entrenamiento ni las metricas de 
 - Prueba de concepto interna: servir el adaptador junto a un modelo base conocido mediante PEFT y comparar cualitativamente sus salidas frente al modelo sin adaptador, como primer paso antes de invertir en un ajuste documentado.
 - Analisis de robustez y sesgos: el artefacto podria utilizarse como caso de estudio sobre la trazabilidad de adaptadores publicados sin model card, midiendo la variabilidad de resultados en funcion del modelo base elegido.
 - Fine-tuning posterior (continual learning): tecnicamente, un adaptador LoRA puede servir como inicializacion para un ajuste adicional, aunque sin conocer su procedencia el riesgo de degradacion catastrofica es alto y no cuantificable.
-- Docencia sobre ecosistema HuggingFace: el repositorio ilustra el caso de un artefacto con licencia permisiva pero sin documentacion, util como ejemplo de buenas y malas practicas en la publicacion de modelos.
+- Docencia sobre ecosistema Hugging Face: el repositorio ilustra el caso de un artefacto con licencia permisiva pero sin documentacion, util como ejemplo de buenas y malas practicas en la publicacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No es posible estimar la VRAM necesaria para este artefacto, porque depende por completo del modelo base sobre el que se aplique y del formato de pesos, ninguno de los cuales esta declarado.
 - Como referencia general de la categoria, un adaptador LoRA anade tipicamente entre un 0,1 % y un 5 % de parametros adicionales sobre el modelo base, lo que se traduce en una sobrecarga de memoria del orden de decenas a pocos cientos de MB segun el rango y el numero de modulos adaptados. Esta cifra es orientativa y no esta confirmada para este repositorio.
 - La eleccion de GPU (RTX 4090, A100, H100, etc.) vendra determinada por el modelo base: un adaptador sobre un modelo de 7B en cuantizacion de 4 bits puede caber en una GPU de consumo con 8-12 GB de VRAM, mientras que un modelo base de 70B requerira multiples aceleradores.
-- Opciones de despliegue compatibles con adaptadores LoRA en general: vLLM (con soporte de LoRA), HuggingFace TGI, llama.cpp (previo merge a GGUF) y Ollama (previo merge). No hay confirmacion de que este adaptador sea compatible con ninguna de ellas.
+- Opciones de despliegue compatibles con adaptadores LoRA en general: vLLM (con soporte de LoRA), Hugging Face TGI, llama.cpp (previo merge a GGUF) y Ollama (previo merge). No hay confirmacion de que este adaptador sea compatible con ninguna de ellas.
 - No se dispone de datos de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -85,5 +85,5 @@ No disponible. No es posible comparar este artefacto con alternativas de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EgoisticCoder/forma-v1-lora
+- Repositorio en Hugging Face: https://huggingface.co/EgoisticCoder/forma-v1-lora
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni articulos relacionados con este modelo.

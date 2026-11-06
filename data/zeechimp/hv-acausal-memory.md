@@ -103,7 +103,7 @@ La comparacion con modelos de lenguaje no procede, ya que hv-acausal-memory no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/hv-acausal-memory
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/hv-acausal-memory
 - Hindsight, sistema de memoria para agentes (referencia de la busqueda web): https://github.com/vectorize-io/hindsight
 - Paper Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents: https://huggingface.co/papers/2609.23986
 - Hugging Face, portal general: https://huggingface.co/

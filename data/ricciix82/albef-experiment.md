@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ricciix82/albef-experiment` es un prototipo de investigación en HuggingFace desarrollado por Ricciix82. Se trata de una implementación experimental de la arquitectura Albef (Align before Fuse) orientada a clasificación, pero a escala `small`. El repositorio incluye el código fuente (`predict.py`), la configuración del modelo (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors` (`model.safetensors`).
+`Ricciix82/albef-experiment` es un prototipo de investigación en Hugging Face desarrollado por Ricciix82. Se trata de una implementación experimental de la arquitectura Albef (Align before Fuse) orientada a clasificación, pero a escala `small`. El repositorio incluye el código fuente (`predict.py`), la configuración del modelo (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors` (`model.safetensors`).
 
 El modelo no está entrenado: el checkpoint se presenta explícitamente como `a valid initialization checkpoint for smoke tests`, y el autor declara que no se reclama ningún resultado de benchmark. Con un total de 16.576 parámetros, el modelo es un artefacto mínimo pensado para documentar defaults, validar pipelines y servir como punto de partida para experimentos académicos. No es un modelo de producción ni existe evidencia de que produzca clasificaciones útiles en su estado actual.
 
@@ -43,7 +43,7 @@ El entrenamiento no se ha realizado. El fichero `model.safetensors` es un checkp
 - Referencia de configuración de experimentos: los ficheros `config.json` y `training_args.json` documentan una receta reproducible que puede compararse con otras configuraciones.
 - Investigación en arquitecturas Albef: sirve como plantilla para modificar partes de la arquitectura (atención dispersa, co-atención) y comparar variantes.
 - Evaluación de variabilidad en semillas múltiples: la guía de evaluación del autor sugiere entrenar y evaluar con al menos tres semillas, por lo que el modelo puede usarse como base para estudios de robustez estadística.
-- Docencia en ingeniería de modelos: para ilustrar cómo se estructura un repositorio experimental de HuggingFace con código, configuración y pesos en `safetensors`.
+- Docencia en ingeniería de modelos: para ilustrar cómo se estructura un repositorio experimental de Hugging Face con código, configuración y pesos en `safetensors`.
 
 ## Benchmarks y rendimiento
 
@@ -73,6 +73,6 @@ No disponible. Este modelo es un prototipo de investigación sin entrenar y sin 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/Ricciix82/albef-experiment](https://huggingface.co/Ricciix82/albef-experiment)
-- Repositorio similar en HuggingFace: [https://huggingface.co/mkdemir8/albef-experiment](https://huggingface.co/mkdemir8/albef-experiment)
+- Repositorio en Hugging Face: [https://huggingface.co/Ricciix82/albef-experiment](https://huggingface.co/Ricciix82/albef-experiment)
+- Repositorio similar en Hugging Face: [https://huggingface.co/mkdemir8/albef-experiment](https://huggingface.co/mkdemir8/albef-experiment)
 - Implementación oficial de ALBEF en GitHub: [https://github.com/zongdaoming/albef](https://github.com/zongdaoming/albef)

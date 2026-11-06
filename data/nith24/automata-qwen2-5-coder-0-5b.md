@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nith24/automata-qwen2.5-coder-0.5b` es un repositorio alojado en HuggingFace por el usuario nith24. Por el nombre del repositorio, se trata de un ajuste fino (fine-tune) o derivado del modelo Qwen2.5-Coder-0.5B, un transformer decoder-only denso de aproximadamente 500 millones de parametros desarrollado originalmente por Alibaba Qwen. El repositorio no incluye model card con informacion tecnica: no se declaran licencia, idiomas, pipeline, datos de entrenamiento ni metricas de evaluacion.
+`nith24/automata-qwen2.5-coder-0.5b` es un repositorio alojado en Hugging Face por el usuario nith24. Por el nombre del repositorio, se trata de un ajuste fino (fine-tune) o derivado del modelo Qwen2.5-Coder-0.5B, un transformer decoder-only denso de aproximadamente 500 millones de parametros desarrollado originalmente por Alibaba Qwen. El repositorio no incluye model card con informacion tecnica: no se declaran licencia, idiomas, pipeline, datos de entrenamiento ni metricas de evaluacion.
 
 El interes de este tipo de publicaciones es doble. Por un lado, los modelos de la familia Qwen2.5-Coder en el rango de 0,5B estan pensados para tareas de autocompletado y generacion de codigo en entornos con recursos muy limitados (CPU, GPUs de gama baja, edge). Por otro, este repositorio concreto carece de la documentacion minima necesaria para evaluar su procedencia, su licencia y su calidad, lo que lo convierte en un caso de estudio sobre la importancia de la trazabilidad en el ecosistema open source.
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones aritmeticas basadas en un modelo denso de
 - VRAM en cuantizacion de 4 bits (Q4_K_M o similar): aproximadamente 0,3-0,5 GB.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4060 o superiores. En entornos profesionales, una NVIDIA A10, L4, A100 o H100 queda enormemente sobredimensionada para este tamano y solo se justifica por agregacion de muchas peticiones concurrentes.
 - CPU: es viable la inferencia en CPU con llama.cpp u Ollama, con velocidades del orden de decenas de tokens por segundo en procesadores modernos de escritorio, aunque este dato no se ha medido sobre este repositorio.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, HuggingFace Transformers, TGI y ONNX Runtime son compatibles en principio con cualquier modelo de esta arquitectura, siempre que los pesos se conviertan al formato adecuado. No se ha confirmado que el repositorio incluya pesos en GGUF ni safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Hugging Face Transformers, TGI y ONNX Runtime son compatibles en principio con cualquier modelo de esta arquitectura, siempre que los pesos se conviertan al formato adecuado. No se ha confirmado que el repositorio incluya pesos en GGUF ni safetensors.
 - Latencia y throughput: no disponibles. Dependen del hardware, de la cuantizacion y del backend.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ La comparativa se realiza contra modelos de la misma categoria (asistentes de co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nith24/automata-qwen2.5-coder-0.5b | no disponible (nombre: 0,5B) | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen2.5-Coder-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | HuggingFace, con model card completa |
+| nith24/automata-qwen2.5-coder-0.5b | no disponible (nombre: 0,5B) | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen2.5-Coder-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | Hugging Face, con model card completa |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el modelo analizado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nith24/automata-qwen2.5-coder-0.5b
+- Repositorio en Hugging Face: https://huggingface.co/nith24/automata-qwen2.5-coder-0.5b
 - Modelo base presumible, Qwen2.5-Coder-0.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Blog oficial de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Paper de Qwen2.5-Coder: https://arxiv.org/abs/2409.12186

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`manashvi1205/so101_task1_act_test` es una política robótica de imitación entrenada con el método Action Chunking with Transformers (ACT), referenciado por el autor mediante el paper arXiv:2304.13705. El modelo aprende a partir de datos de teleoperación y predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, una estrategia que suele reportar tasas de éxito altas en tareas manipulativas. Lo publica el usuario manashvi1205 en HuggingFace utilizando la librería LeRobot de Hugging Face.
+`manashvi1205/so101_task1_act_test` es una política robótica de imitación entrenada con el método Action Chunking with Transformers (ACT), referenciado por el autor mediante el paper arXiv:2304.13705. El modelo aprende a partir de datos de teleoperación y predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, una estrategia que suele reportar tasas de éxito altas en tareas manipulativas. Lo publica el usuario manashvi1205 en Hugging Face utilizando la librería LeRobot de Hugging Face.
 
 Se trata de un checkpoint muy pequeño, con 51.668.614 parámetros (unos 51,7 millones) y un tamaño de repositorio de 0,2 GB. No es un modelo de lenguaje: es una política visomotora que consume estado articular y una imagen de muñeca, y produce comandos de acción de 6 grados de libertad para un robot de la serie SO-101 (`so_follower`). El entrenamiento se realizó sobre un conjunto de datos mínimo (una única episodio, 452 fotogramas a 30 FPS) para una tarea concreta de recogida y colocación de una caja.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Tipo | Parámetros | Contexto / entradas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| so101_task1_act_test | ACT (imitación) | 51,7 M | observation.state `(6,)` + imagen de muñeca `(3,720,1280)` | apache-2.0 | HuggingFace (LeRobot) | sin evaluación publicada |
-| Otras políticas ACT en LeRobot | ACT (imitación) | no disponible | variable por configuración | habitualmente apache-2.0 | HuggingFace (LeRobot) | no disponible |
-| Diffusion Policy (método alternativo en LeRobot) | política por difusión | no disponible | variable por configuración | no disponible | HuggingFace (LeRobot) | no disponible |
+| so101_task1_act_test | ACT (imitación) | 51,7 M | observation.state `(6,)` + imagen de muñeca `(3,720,1280)` | apache-2.0 | Hugging Face (LeRobot) | sin evaluación publicada |
+| Otras políticas ACT en LeRobot | ACT (imitación) | no disponible | variable por configuración | habitualmente apache-2.0 | Hugging Face (LeRobot) | no disponible |
+| Diffusion Policy (método alternativo en LeRobot) | política por difusión | no disponible | variable por configuración | no disponible | Hugging Face (LeRobot) | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación se limita a la categoría de método y al ecosistema de despliegue.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manashvi1205/so101_task1_act_test
+- Modelo en Hugging Face: https://huggingface.co/manashvi1205/so101_task1_act_test
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

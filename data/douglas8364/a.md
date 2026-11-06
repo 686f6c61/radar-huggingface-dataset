@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Douglas8364/A` es un repositorio alojado en HuggingFace creado por el usuario Douglas8364 el 25 de agosto de 2026. Actualmente no dispone de documentación pública, descripción, licencia ni información técnica en su página de HuggingFace. Presenta cero descargas y un único "like", lo que sugiere que se trata de un modelo privado, experimental o en fase de desarrollo sin publicación formal. No hay ningún resultado de búsqueda web que haga referencia a este modelo específico, por lo que no es posible confirmar su arquitectura, tamaño, capacidades o propósito. Cualquier uso o evaluación del mismo requeriría acceso directo al repositorio o contacto con el autor.
+El modelo `Douglas8364/A` es un repositorio alojado en Hugging Face creado por el usuario Douglas8364 el 25 de agosto de 2026. Actualmente no dispone de documentación pública, descripción, licencia ni información técnica en su página de Hugging Face. Presenta cero descargas y un único "like", lo que sugiere que se trata de un modelo privado, experimental o en fase de desarrollo sin publicación formal. No hay ningún resultado de búsqueda web que haga referencia a este modelo específico, por lo que no es posible confirmar su arquitectura, tamaño, capacidades o propósito. Cualquier uso o evaluación del mismo requeriría acceso directo al repositorio o contacto con el autor.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `Douglas8364/A` es un repositorio alojado en HuggingFace creado por el
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado o cualquier técnica de optimización aplicada. La página de HuggingFace no incluye fichero README, tarjetas de modelo ni metadatos técnicos. No hay evidencia de que se hayan realizado fases de ajuste como RLHF, DPO o entrenamiento supervisado adicional.
+No se ha publicado ninguna información sobre la arquitectura del modelo, el proceso de entrenamiento, el dataset utilizado o cualquier técnica de optimización aplicada. La página de Hugging Face no incluye fichero README, tarjetas de modelo ni metadatos técnicos. No hay evidencia de que se hayan realizado fases de ajuste como RLHF, DPO o entrenamiento supervisado adicional.
 
 ## Capacidades
 
@@ -59,6 +59,6 @@ No se dispone de información suficiente para establecer comparativas con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Douglas8364/A
+- Repositorio Hugging Face: https://huggingface.co/Douglas8364/A
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en las búsquedas web realizadas.

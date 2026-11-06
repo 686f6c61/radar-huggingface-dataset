@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`undergrad-contrastive` es un repositorio de HuggingFace publicado por el usuario `aidendparker` que contiene una implementación personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a aprendizaje contrastivo. Se distribuye en una configuración "nano", pensada explícitamente por el autor para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado en benchmarks.
+`undergrad-contrastive` es un repositorio de Hugging Face publicado por el usuario `aidendparker` que contiene una implementación personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a aprendizaje contrastivo. Se distribuye en una configuración "nano", pensada explícitamente por el autor para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado en benchmarks.
 
 El modelo declara una arquitectura híbrida con atención lineal, fusión de bajo rango, activación gelu-tanh y normalización layernorm. El recuento real de parámetros en safetensors es de 49.600, es decir, unas 0,05 millones de parámetros, lo que lo sitúa en una escala meramente didáctica o de juguete. El repositorio tiene un tamaño de 0,0 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aidendparker/undergrad-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/aidendparker/undergrad-contrastive
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

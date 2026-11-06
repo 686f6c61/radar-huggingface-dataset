@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunyuan-1.8B-Instruct_rai_1.9.0_npu es una distribución del modelo Tencent Hunyuan-1.8B-Instruct preparada por AMD para su ejecución sobre NPUs de la plataforma Ryzen AI. El repositorio lo publica la organización `amd` en HuggingFace y empaqueta el modelo en formato ONNX, cuantizado con Quark (la herramienta de compresión de AMD), para aprovechar la unidad de procesamiento neuronal integrada en los procesadores Ryzen AI. No se trata de un modelo nuevo, sino de una conversión y optimización del checkpoint original de Tencent para un backend de inferencia específico de hardware.
+Hunyuan-1.8B-Instruct_rai_1.9.0_npu es una distribución del modelo Tencent Hunyuan-1.8B-Instruct preparada por AMD para su ejecución sobre NPUs de la plataforma Ryzen AI. El repositorio lo publica la organización `amd` en Hugging Face y empaqueta el modelo en formato ONNX, cuantizado con Quark (la herramienta de compresión de AMD), para aprovechar la unidad de procesamiento neuronal integrada en los procesadores Ryzen AI. No se trata de un modelo nuevo, sino de una conversión y optimización del checkpoint original de Tencent para un backend de inferencia específico de hardware.
 
 El modelo base pertenece a la familia Hunyuan (arquitectura `hunyuan_v1_dense`), con aproximadamente 1.800 millones de parámetros, orientado a generación de texto y conversación. Al ser una variante densa de pequeño tamaño, está pensado para despliegues en local y en el borde, donde el consumo energético y la latencia importan más que el rendimiento bruto en benchmarks.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hunyuan-1.8B-Instruct_rai_1.9.0_npu (este) | ~1.8B | no disponible | ONNX (NPU) | other, gated | HuggingFace, acceso restringido |
-| Hunyuan-1.8B-Instruct (original Tencent) | ~1.8B | no disponible | safetensors | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1.5B | 32K (según documentación pública del modelo) | safetensors, GGUF | Apache 2.0 | HuggingFace, abierto |
-| Llama-3.2-1B-Instruct | ~1.2B | 128K (según documentación pública del modelo) | safetensors, GGUF | Llama 3.2 Community License | HuggingFace, gated |
+| Hunyuan-1.8B-Instruct_rai_1.9.0_npu (este) | ~1.8B | no disponible | ONNX (NPU) | other, gated | Hugging Face, acceso restringido |
+| Hunyuan-1.8B-Instruct (original Tencent) | ~1.8B | no disponible | safetensors | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1.5B | 32K (según documentación pública del modelo) | safetensors, GGUF | Apache 2.0 | Hugging Face, abierto |
+| Llama-3.2-1B-Instruct | ~1.2B | 128K (según documentación pública del modelo) | safetensors, GGUF | Llama 3.2 Community License | Hugging Face, gated |
 
 La comparación directa con Qwen2.5-1.5B y Llama-3.2-1B es pertinente por rango de tamaño y propósito conversacional, pero este repositorio se distingue por su backend NPU y su licencia restrictiva, lo que limita su uso fuera del ecosistema Ryzen AI.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace antes de descargar; no es un modelo de uso libre inmediato.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face antes de descargar; no es un modelo de uso libre inmediato.
 - Licencia `other`: conviene revisar los términos completos antes de cualquier uso comercial; no se garantiza permiso de redistribución.
 - Solo inglés declarado: el rendimiento en castellano u otros idiomas no está validado y probablemente sea deficiente.
 - Tamaño de 1.8B: mayor riesgo de alucinación y menor fiabilidad en razonamiento complejo, matemáticas avanzadas y código de producción que modelos de mayor escala.
@@ -81,7 +81,7 @@ La comparación directa con Qwen2.5-1.5B y Llama-3.2-1B es pertinente por rango 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Hunyuan-1.8B-Instruct_rai_1.9.0_npu
-- Modelo base Hunyuan en HuggingFace: no disponible en la información proporcionada
+- Repositorio Hugging Face: https://huggingface.co/amd/Hunyuan-1.8B-Instruct_rai_1.9.0_npu
+- Modelo base Hunyuan en Hugging Face: no disponible en la información proporcionada
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper o blog de Quark (AMD): no disponible en la información proporcionada

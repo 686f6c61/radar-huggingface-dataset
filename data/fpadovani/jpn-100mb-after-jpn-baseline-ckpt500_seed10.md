@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10` es un ajuste fino (fine-tune) mediante SFT (supervised fine-tuning) del modelo base `fpadovani/ppt-art-lang-jpn-baseline-100mb_seed10`, desarrollado por fpadovani en el contexto de un proyecto de investigación sobre aprendizaje de lenguajes artificiales (PPT-ART-Lang). Con 124,7 millones de parámetros y arquitectura GPT-2, este modelo está diseñado para generación de texto y fue entrenado con la librería TRL de HuggingFace.
+El modelo `fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10` es un ajuste fino (fine-tune) mediante SFT (supervised fine-tuning) del modelo base `fpadovani/ppt-art-lang-jpn-baseline-100mb_seed10`, desarrollado por fpadovani en el contexto de un proyecto de investigación sobre aprendizaje de lenguajes artificiales (PPT-ART-Lang). Con 124,7 millones de parámetros y arquitectura GPT-2, este modelo está diseñado para generación de texto y fue entrenado con la librería TRL de Hugging Face.
 
 El nombre del modelo indica que se trata de una variante para japonés (jpn) entrenada sobre un baseline de 100 MB, con un checkpoint intermedio (ckpt500) y una semilla concreta (seed10). Aunque la información pública es limitada, el modelo parece formar parte de una serie de experimentos que exploran el efecto de diferentes lenguas y configuraciones de entrenamiento en modelos pequeños.
 
@@ -31,7 +31,7 @@ No se dispone de información pública sobre el dataset de entrenamiento, el nú
 
 - Generación de texto: modelo autoreresivo de texto, capaz de continuar secuencias de texto.
 - Fine-tuning específico: ajustado para japonés (según el nombre del modelo), aunque no se especifican capacidades multilingües.
-- Integración con pipelines de HuggingFace: funciona con la API `text-generation` de Transformers.
+- Integración con pipelines de Hugging Face: funciona con la API `text-generation` de Transformers.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso o soporte de agentes.
 
 ## Casos de uso
@@ -76,6 +76,6 @@ Estos modelos pertenecen a la misma serie de experimentos del autor, diferenciá
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10](https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10)
+- [Hugging Face - fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10](https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-ckpt500_seed10)
 - [Weights & Biases run (entrenamiento)](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/7hhkodgf)
 - [Modelos similares en FriendliAI](https://friendli.ai/models/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407)

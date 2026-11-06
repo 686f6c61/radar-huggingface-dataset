@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables de decisión o enrutamie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcelz/elephant-1-BF16-small-head
+- Repositorio Hugging Face: https://huggingface.co/marcelz/elephant-1-BF16-small-head
 - Modelo original: https://huggingface.co/baselabs/elephant-1
 - Motor `qev` (OneJev): no disponible enlace directo en la información proporcionada
 - Base Labs: no disponible enlace directo en la información proporcionada

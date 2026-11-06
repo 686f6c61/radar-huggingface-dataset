@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BrooklynvanZandth es un modelo alojado en HuggingFace por el usuario Bssilv4a, etiquetado con la librería diffusers y el tag Rvc, lo que apunta a un modelo de conversión de voz (voice conversion) derivado de un modelo base identificado como Darkanjo/genericvoice190. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un checkpoint de voz de tamano moderado y no con un modelo de lenguaje de gran escala. No se dispone de información sobre arquitectura interna, número de parámetros ni longitud de contexto en la información proporcionada.
+BrooklynvanZandth es un modelo alojado en Hugging Face por el usuario Bssilv4a, etiquetado con la librería diffusers y el tag Rvc, lo que apunta a un modelo de conversión de voz (voice conversion) derivado de un modelo base identificado como Darkanjo/genericvoice190. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un checkpoint de voz de tamano moderado y no con un modelo de lenguaje de gran escala. No se dispone de información sobre arquitectura interna, número de parámetros ni longitud de contexto en la información proporcionada.
 
-El modelo se publica bajo licencia PDDL (Public Domain Dedication and License) y está sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. En el momento de la consulta registra 0 descargas y 0 likes, y no tiene pipeline declarado, lo que indica que se trata de una publicación reciente y de muy baja adopción, probablemente un fine-tuning experimental o personal.
+El modelo se publica bajo licencia PDDL (Public Domain Dedication and License) y está sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. En el momento de la consulta registra 0 descargas y 0 likes, y no tiene pipeline declarado, lo que indica que se trata de una publicación reciente y de muy baja adopción, probablemente un fine-tuning experimental o personal.
 
 Por su naturaleza (Rvc, diffusers, modelo base de voz), no debe evaluarse como un modelo de lenguaje: no hay evidencia de que soporte generación de texto, razonamiento, código ni tool calling. La ficha que sigue refleja únicamente lo que consta en los metadatos disponibles y marca explícitamente como "no disponible" todo aquello que no se ha podido verificar.
 
@@ -65,7 +65,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Información muy escasa: no hay documentación sobre arquitectura, entrenamiento, datos ni evaluación, lo que impide validar su calidad.
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso comunitario ni de validación externa.
 - Riesgo de sesgos y artefactos: al no documentarse el dataset de entrenamiento, no puede evaluarse el sesgo ni la fidelidad de la voz generada.
@@ -75,6 +75,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bssilv4a/BrooklynvanZandth
+- Hugging Face: https://huggingface.co/Bssilv4a/BrooklynvanZandth
 - Modelo base: https://huggingface.co/Darkanjo/genericvoice190
 - Dataset referenciado: https://huggingface.co/datasets/AI-C/rvc-models

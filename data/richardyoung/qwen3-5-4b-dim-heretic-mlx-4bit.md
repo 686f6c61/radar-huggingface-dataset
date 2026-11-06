@@ -83,7 +83,7 @@ La comparación con otros modelos de la misma categoría (4B, cuantizados para c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-DiM-heretic-MLX-4bit
+- Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-DiM-heretic-MLX-4bit
 - Modelo base (bf16): https://huggingface.co/richardyoung/Qwen3.5-4B-DiM-heretic
 - Modelo original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Librería MLX: https://github.com/ml-explore/mlx

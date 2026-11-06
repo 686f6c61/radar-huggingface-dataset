@@ -88,7 +88,7 @@ La información proporcionada no incluye datos de benchmarks ni de rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/flint-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/flint-mxfp8
 - Modelo fuente: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo fuente usada en la conversión: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

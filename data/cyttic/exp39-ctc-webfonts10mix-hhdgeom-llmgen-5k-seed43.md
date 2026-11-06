@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario cyttic en HuggingFace. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) sobre una mezcla de diez conjuntos de datos de tipografias web (`webfonts10mix`), combinado con alguna forma de generacion geometrica o sintetica (`hhdgeom`, `llmgen`) y un entrenamiento de 5.000 pasos con semilla 43. La model card esta completamente vacia: no documenta arquitectura, datos, objetivos ni resultados, por lo que la mayor parte de la informacion tecnica debe inferirse del nombre del repositorio y de los metadatos disponibles.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario cyttic en Hugging Face. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) sobre una mezcla de diez conjuntos de datos de tipografias web (`webfonts10mix`), combinado con alguna forma de generacion geometrica o sintetica (`hhdgeom`, `llmgen`) y un entrenamiento de 5.000 pasos con semilla 43. La model card esta completamente vacia: no documenta arquitectura, datos, objetivos ni resultados, por lo que la mayor parte de la informacion tecnica debe inferirse del nombre del repositorio y de los metadatos disponibles.
 
 Se trata, por tanto, de un artefacto de investigacion de nicho, no de un modelo de proposito general. El tag `arxiv:1910.09700` presente en los metadatos corresponde al articulo de Lacoste et al. sobre el calculo del impacto ambiental del aprendizaje automatico, citado en la plantilla estandar de model card, y no a un paper descriptivo del modelo. No hay descargas ni likes registrados, lo que refuerza su caracter de experimento interno o preliminar.
 
@@ -69,7 +69,7 @@ No disponible. No se conocen modelos comparables directamente, ya que el reposit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43 | 87,3 M | no disponible | MIT | HuggingFace, 0 descargas |
+| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43 | 87,3 M | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas CTC/OCR de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No se conocen modelos comparables directamente, ya que el reposit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k-seed43
 - Paper citado en los tags (impacto ambiental del ML, no descriptivo del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

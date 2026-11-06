@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables de terceros para este do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BrianHuang2003/cant-stop-ddqn
+- Hugging Face: https://huggingface.co/BrianHuang2003/cant-stop-ddqn
 - Repositorio del proyecto (código de carga y evaluación): https://github.com/BrianHuang2003/CS441_AML
 - Guía de modelos del proyecto (ruta en el repositorio): `docs/MODEL_GUIDE.md`
 - Procedencia por fichero y checksums (rutas en el repositorio): `MODEL_FILES.json` y `SHA256SUMS`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FairFace-Trident-TinyViT-Race3-224 es un modelo de clasificación de imágenes especializado en la predicción de atributos faciales, concretamente la categoría racial en tres clases (White, Black, Asian). Lo desarrolla el usuario wesjos y se publica en HuggingFace bajo licencia CC BY 4.0. El modelo parte del backbone TinyViT-21M preentrenado en ImageNet-22k (timm/tiny_vit_21m_224.dist_in22k) y se afina completamente sobre el conjunto de datos FairFace, un corpus académico diseñado específicamente para medir y mitigar sesgos en sistemas de reconocimiento facial.
+FairFace-Trident-TinyViT-Race3-224 es un modelo de clasificación de imágenes especializado en la predicción de atributos faciales, concretamente la categoría racial en tres clases (White, Black, Asian). Lo desarrolla el usuario wesjos y se publica en Hugging Face bajo licencia CC BY 4.0. El modelo parte del backbone TinyViT-21M preentrenado en ImageNet-22k (timm/tiny_vit_21m_224.dist_in22k) y se afina completamente sobre el conjunto de datos FairFace, un corpus académico diseñado específicamente para medir y mitigar sesgos en sistemas de reconocimiento facial.
 
 El modelo resuelve una tarea acotada: clasificar rostros en tres categorías raciales agregadas a partir de las siete originales de FairFace. Con 20.625.607 parámetros y una resolución de entrada de 224x224 píxeles, está pensado para investigación sobre sesgo algorítmico y auditoría de equidad, no para producción comercial de alto riesgo. Su relevancia radica en la disponibilidad de métricas de evaluación desagregadas y en el uso de un conjunto de test congelado y deduplicado por SHA-256, lo que facilita la reproducibilidad en estudios de fairness.
 
@@ -67,8 +67,8 @@ La model card indica que la fusión de probabilidades desde el modelo de 7 clase
 
 | Modelo | Parámetros | Contexto/Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wesjos/fairface-trident-tvit-race3-224 | 20,6 M | 224x224 RGB | Raza 3 clases | CC BY 4.0 | HuggingFace |
-| timm/tiny_vit_21m_224.dist_in22k | 21 M (aprox.) | 224x224 RGB | Clasificación ImageNet | Apache-2.0 | HuggingFace / timm |
+| wesjos/fairface-trident-tvit-race3-224 | 20,6 M | 224x224 RGB | Raza 3 clases | CC BY 4.0 | Hugging Face |
+| timm/tiny_vit_21m_224.dist_in22k | 21 M (aprox.) | 224x224 RGB | Clasificación ImageNet | Apache-2.0 | Hugging Face / timm |
 | Modelos FairFace originales (Karkkainen & Joo) | no disponible | no disponible | Raza 7 clases, género, edad | no disponible | Repositorio académico |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada para establecer una comparación cuantitativa.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-trident-tvit-race3-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-trident-tvit-race3-224
 - Backbone base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): https://arxiv.org/abs/1908.04913

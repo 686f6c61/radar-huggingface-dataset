@@ -21,11 +21,11 @@ La relevancia de esta ficha radica en que, aunque el modelo base no dispone de d
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base IDC233332/TROLL. El repositorio de HuggingFace no incluye detalles sobre el tipo de red (transformer, MoE, SSM, etc.), el número de capas, la dimensionalidad o el mecanismo de atención. Tampoco se han publicado datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. La única información técnica confirmada es el número total de parámetros (494.032.768) y la licencia openrail. La cuantización Q4_K_M es una técnica estándar de llama.cpp que reduce la precisión de los pesos a 4 bits con bloques K, optimizando el equilibrio entre tamaño y calidad, pero no aporta información sobre el modelo original.
+No se dispone de información sobre la arquitectura del modelo base IDC233332/TROLL. El repositorio de Hugging Face no incluye detalles sobre el tipo de red (transformer, MoE, SSM, etc.), el número de capas, la dimensionalidad o el mecanismo de atención. Tampoco se han publicado datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. La única información técnica confirmada es el número total de parámetros (494.032.768) y la licencia openrail. La cuantización Q4_K_M es una técnica estándar de llama.cpp que reduce la precisión de los pesos a 4 bits con bloques K, optimizando el equilibrio entre tamaño y calidad, pero no aporta información sobre el modelo original.
 
 ## Capacidades
 
-Dado que no se ha publicado ninguna descripción funcional del modelo base, no es posible enumerar capacidades concretas. El tag "conversational" en HuggingFace sugiere que el modelo está orientado a tareas de diálogo, pero no hay evidencia de otras habilidades como generación de código, razonamiento matemático, tool calling o soporte multilingüe. Se recomienda tratar este modelo como un generador de texto genérico sin garantías de rendimiento en tareas específicas.
+Dado que no se ha publicado ninguna descripción funcional del modelo base, no es posible enumerar capacidades concretas. El tag "conversational" en Hugging Face sugiere que el modelo está orientado a tareas de diálogo, pero no hay evidencia de otras habilidades como generación de código, razonamiento matemático, tool calling o soporte multilingüe. Se recomienda tratar este modelo como un generador de texto genérico sin garantías de rendimiento en tareas específicas.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/IDC233332/TROLL-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/IDC233332/TROLL-Q4_K_M-GGUF
 - Modelo base (sin model card): https://huggingface.co/IDC233332/TROLL
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

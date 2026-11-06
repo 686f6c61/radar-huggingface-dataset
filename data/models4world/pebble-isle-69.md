@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`models4world/pebble-isle-69` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. El modelo se presenta como un adaptador sobre el modelo base `models4world/maple-signal-64`, pero no se proporciona documentación adicional sobre este último ni sobre el propósito del adaptador. La model card es una plantilla vacía con todos los campos marcados como `[More Information Needed]`, y no se han publicado métricas, ejemplos de uso ni descripción técnica. El repositorio tiene un tamaño de 1,9 GB, consistente con pesos de adaptador LoRA, pero no se indica qué capas se han adaptado ni el tamaño del modelo base. A fecha de publicación (agosto de 2026), no hay descargas ni likes, lo que sugiere que el modelo es reciente o no ha sido evaluado por la comunidad. En ausencia de información fiable, cualquier uso en producción requiere una evaluación previa exhaustiva.
+`models4world/pebble-isle-69` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. El modelo se presenta como un adaptador sobre el modelo base `models4world/maple-signal-64`, pero no se proporciona documentación adicional sobre este último ni sobre el propósito del adaptador. La model card es una plantilla vacía con todos los campos marcados como `[More Information Needed]`, y no se han publicado métricas, ejemplos de uso ni descripción técnica. El repositorio tiene un tamaño de 1,9 GB, consistente con pesos de adaptador LoRA, pero no se indica qué capas se han adaptado ni el tamaño del modelo base. A fecha de publicación (agosto de 2026), no hay descargas ni likes, lo que sugiere que el modelo es reciente o no ha sido evaluado por la comunidad. En ausencia de información fiable, cualquier uso en producción requiere una evaluación previa exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo es un adaptador LoRA (librería `peft`, versión 0.20.0) destinado a ajustar el modelo base `models4world/maple-signal-64`. No se especifica la arquitectura del modelo base (transformer, MoE, etc.), ni el número de parámetros, ni el tipo de datos de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. No hay ninguna descripción de innovaciones técnicas. El único detalle técnico es el uso de `safetensors` como formato de pesos, lo que sugiere compatibilidad con el ecosistema HuggingFace Transformers. Toda la información sobre arquitectura y entrenamiento está marcada como `[More Information Needed]`.
+La información disponible indica que el modelo es un adaptador LoRA (librería `peft`, versión 0.20.0) destinado a ajustar el modelo base `models4world/maple-signal-64`. No se especifica la arquitectura del modelo base (transformer, MoE, etc.), ni el número de parámetros, ni el tipo de datos de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. No hay ninguna descripción de innovaciones técnicas. El único detalle técnico es el uso de `safetensors` como formato de pesos, lo que sugiere compatibilidad con el ecosistema Hugging Face Transformers. Toda la información sobre arquitectura y entrenamiento está marcada como `[More Information Needed]`.
 
 ## Capacidades
 
@@ -52,6 +52,6 @@ No es posible realizar una comparativa con modelos similares porque no se conoce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/pebble-isle-69
+- Repositorio Hugging Face: https://huggingface.co/models4world/pebble-isle-69
 - Modelo base (referencia): https://huggingface.co/models4world/maple-signal-64 (no verificado)
 - No se encontraron papers, blogs, demos ni otros enlaces en la búsqueda web realizada.

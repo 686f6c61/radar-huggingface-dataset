@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Skydream-lm1 es un modelo publicado en HuggingFace por el usuario MT296, disponible en la ruta `MT296/skydream-lm1`. Se trata de un repositorio de procedencia poco clara: la model card no incluye descripcion del proposito del modelo, y la metadata combina elementos inusuales, como una libreria propia llamada `microduck` y una lista de modelos base muy heterogenea que mezcla modelos de texto (variantes de Qwen), de generacion de video (Open-Sora-v2, Seedance) y modelos multimodales.
+Skydream-lm1 es un modelo publicado en Hugging Face por el usuario MT296, disponible en la ruta `MT296/skydream-lm1`. Se trata de un repositorio de procedencia poco clara: la model card no incluye descripcion del proposito del modelo, y la metadata combina elementos inusuales, como una libreria propia llamada `microduck` y una lista de modelos base muy heterogenea que mezcla modelos de texto (variantes de Qwen), de generacion de video (Open-Sora-v2, Seedance) y modelos multimodales.
 
 El modelo declara soporte para doce idiomas (entre ellos castellano, ingles, arabe, japones, turco, griego, esperanto o yidis) y se ha entrenado o afinado utilizando datasets publicos variados, incluyendo material de vision por documento (SDS-KoPub-VDR), audio (google/fleurs) y datos de agentes (unit3-invitees). Las metricas declaradas (matthews_correlation, google_bleu) sugieren tareas de clasificacion y generacion de texto.
 
@@ -23,7 +23,7 @@ La relevancia practica de este modelo es limitada: con cero descargas registrada
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del modelo. La libreria asociada es `microduck`, un nombre que no corresponde a ninguna de las librerias habituales de HuggingFace (transformers, diffusers, etc.), por lo que no es posible determinar si se trata de un transformer estandar, un modelo hibrido u otra familia arquitectonica. Tampoco se especifica el numero de parametros ni el tamano de la ventana de contexto.
+La model card no describe la arquitectura del modelo. La libreria asociada es `microduck`, un nombre que no corresponde a ninguna de las librerias habituales de Hugging Face (transformers, diffusers, etc.), por lo que no es posible determinar si se trata de un transformer estandar, un modelo hibrido u otra familia arquitectonica. Tampoco se especifica el numero de parametros ni el tamano de la ventana de contexto.
 
 Respecto al entrenamiento, la metadata declara siete modelos base, lo que sugiere un proceso de fusion (merge) o de afinado multiple sobre modelos muy dispares: `Qwen/Qwen3.8-27B` y derivados de este (incluida una variante con nombres de razonamiento eficiente y tecnicas como SFT, RLOO, MTP y decodificacion especulativa segun su propio nombre), un modelo de razonamiento matematico de 4B (`AoranSun/qwen35-4b-gsm8k-r16`), un thinking finetune de 4B, y modelos de generacion de video (`hpcai-tech/Open-Sora-v2-Video-DC-AE`, `jayseanbrambila/seedance-2-5-video-generation`) y un modelo omni (`Remek/basal-omni-1.1-max`). Los datasets usados incluyen `SamsungSDS-Research/SDS-KoPub-VDR-Benchmark` (vision de documentos coreanos), `XiaomiMiMo/MiMo-V2.6-RL-oss`, `google/fleurs` (reconocimiento de habla multilingue) y `agents-course/unit3-invitees` (datos de agentes). No hay informacion sobre el numero de tokens de entrenamiento ni sobre el uso de RLHF o DPO.
 
@@ -87,7 +87,7 @@ Para cualquier caso de uso productivo, los modelos de referencia citados ofrecen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MT296/skydream-lm1
+- Repositorio en Hugging Face: https://huggingface.co/MT296/skydream-lm1
 - Version mas reciente indicada por el autor: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
 - Modelos base declarados:
   - https://huggingface.co/hpcai-tech/Open-Sora-v2-Video-DC-AE

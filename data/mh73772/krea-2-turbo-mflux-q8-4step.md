@@ -25,7 +25,7 @@ La estructura interna es: un transformer de 13,62 GB en q8 dividido en `blocks_0
 | Pipeline | text-to-image |
 | Tamaño del repositorio | 18,4 GB |
 | Descargas / likes | 200 / 0 |
-| Fecha de creación | 2026-09-23 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-23 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,10 +80,10 @@ Condiciones de la medición: Mac mini con Apple M6, 16 GB de memoria, macOS 27.0
 
 | Modelo | Descripción | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mh73772/krea-2-turbo-mflux-q8-4step | Checkpoint MLX q8 con LoRA de 4 pasos fusionada y transformer por bloques | No disponible | 8 bits MLX affine, group size 64 | No aplica | krea-2-community-license | HuggingFace, 200 descargas |
-| krea/Krea-2-Turbo (base) | Modelo original del que deriva este checkpoint | No disponible | bf16 en origen (el text encoder bf16 ocupaba 8,05 GB) | No aplica | No disponible en la información proporcionada | HuggingFace |
-| mflux-community/krea-2-turbo-mflux-q8 | Checkpoint MLX q8 comunitario citado como punto de partida, sin el LoRA de 4 pasos fusionado | No disponible | 8 bits MLX affine | No aplica | No disponible en la información proporcionada | HuggingFace |
-| lvladikov/Krea2-Turbo-Distill-4step-LoRA | LoRA de destilación a 4 pasos usada en la fusión | Rank 64 | safetensors | No aplica | No disponible en la información proporcionada | HuggingFace |
+| mh73772/krea-2-turbo-mflux-q8-4step | Checkpoint MLX q8 con LoRA de 4 pasos fusionada y transformer por bloques | No disponible | 8 bits MLX affine, group size 64 | No aplica | krea-2-community-license | Hugging Face, 200 descargas |
+| krea/Krea-2-Turbo (base) | Modelo original del que deriva este checkpoint | No disponible | bf16 en origen (el text encoder bf16 ocupaba 8,05 GB) | No aplica | No disponible en la información proporcionada | Hugging Face |
+| mflux-community/krea-2-turbo-mflux-q8 | Checkpoint MLX q8 comunitario citado como punto de partida, sin el LoRA de 4 pasos fusionado | No disponible | 8 bits MLX affine | No aplica | No disponible en la información proporcionada | Hugging Face |
+| lvladikov/Krea2-Turbo-Distill-4step-LoRA | LoRA de destilación a 4 pasos usada en la fusión | Rank 64 | safetensors | No aplica | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada, salvo que este checkpoint parte del modelo comunitario q8 y le añade el LoRA fusionado y la partición por bloques.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mh73772/krea-2-turbo-mflux-q8-4step
+- Modelo en Hugging Face: https://huggingface.co/mh73772/krea-2-turbo-mflux-q8-4step
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - LoRA de destilación a 4 pasos: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA
 - Fork de mflux con block streaming: https://github.com/he-be/mflux-for-16gb/tree/feat/krea2-block-streaming

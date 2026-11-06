@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`judge-ko-assets` es un repositorio auxiliar publicado en HuggingFace por el autor Sung Ran Song (usuario `srsong0518`) bajo licencia Apache 2.0. Segun su propia model card, no contiene ficheros de modelo: se trata de un almacen de figuras e imagenes destinadas a ilustrar la model card de otro proyecto llamado `judge-ko`. Por tanto, no es un modelo de IA desplegable ni un conjunto de pesos, sino un contenedor de recursos graficos de soporte.
+`judge-ko-assets` es un repositorio auxiliar publicado en Hugging Face por el autor Sung Ran Song (usuario `srsong0518`) bajo licencia Apache 2.0. Segun su propia model card, no contiene ficheros de modelo: se trata de un almacen de figuras e imagenes destinadas a ilustrar la model card de otro proyecto llamado `judge-ko`. Por tanto, no es un modelo de IA desplegable ni un conjunto de pesos, sino un contenedor de recursos graficos de soporte.
 
 La relevancia de este repositorio es, por tanto, documental y no tecnica: sirve como soporte visual para la presentacion del modelo `judge-ko`, presumiblemente un modelo orientado a evaluacion o juicio de respuestas en coreano (el sufijo `-ko` sugiere idioma coreano). No se dispone de informacion publica sobre arquitectura, tamano, contexto ni datos de entrenamiento del modelo referenciado en este repositorio.
 
@@ -33,8 +33,8 @@ No disponible. El repositorio `judge-ko-assets` no incluye pesos, configuracion 
 
 ## Casos de uso
 
-- Documentacion de modelos: el repositorio puede emplearse como almacen de imagenes para incrustar en la model card de `judge-ko` en HuggingFace, evitando dependencias externas de hosting de figuras.
-- Versionado de material grafico: al estar bajo control de versiones en HuggingFace, permite rastrear cambios en las figuras asociadas a la documentacion del modelo a lo largo del tiempo.
+- Documentacion de modelos: el repositorio puede emplearse como almacen de imagenes para incrustar en la model card de `judge-ko` en Hugging Face, evitando dependencias externas de hosting de figuras.
+- Versionado de material grafico: al estar bajo control de versiones en Hugging Face, permite rastrear cambios en las figuras asociadas a la documentacion del modelo a lo largo del tiempo.
 - Publicacion reproducible: investigadores que repliquen la model card de `judge-ko` pueden referenciar estas figuras mediante URLs estables del repositorio.
 - Archivo de resultados: si las figuras representan curvas de evaluacion o comparativas del modelo `judge-ko`, el repositorio sirve como archivo consultable de dichos resultados.
 - Integracion en pipelines de documentacion: herramientas que generen documentacion automatica pueden descargar estos assets por API para componer paginas de modelo.
@@ -67,6 +67,6 @@ No disponible. Al no tratarse de un modelo sino de un repositorio de assets, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srsong0518/judge-ko-assets
+- Repositorio en Hugging Face: https://huggingface.co/srsong0518/judge-ko-assets
 - Contacto del autor indicado en la model card: sungran0518@gmail.com
 - Repositorio del modelo `judge-ko`: no disponible en la informacion proporcionada.

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-so101-7m-kd | 6.593.715 | no disponible | VLA para brazo SO101 | other | HuggingFace |
-| bridgequant-so101-76m (profesor) | 76M (segun model card) | no disponible | VLA para brazo SO101 | no disponible | HuggingFace (`twanghcmut/bridgequant-so101-76m`) |
+| bridgequant-so101-7m-kd | 6.593.715 | no disponible | VLA para brazo SO101 | other | Hugging Face |
+| bridgequant-so101-76m (profesor) | 76M (segun model card) | no disponible | VLA para brazo SO101 | no disponible | Hugging Face (`twanghcmut/bridgequant-so101-76m`) |
 | Otros VLA roboticos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-so101-7m-kd
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-so101-7m-kd
 - Modelo profesor: https://huggingface.co/twanghcmut/bridgequant-so101-76m
 - Codigo: https://github.com/VLAOpt/bridgequant-async
 - Script de politica: `scripts/so101_policy.py` (dentro del repositorio de codigo)

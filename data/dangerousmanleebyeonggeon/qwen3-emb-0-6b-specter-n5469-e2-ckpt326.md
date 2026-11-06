@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-emb-0.6b-specter-n5469-e2-ckpt326 es un modelo de embeddings de texto publicado por el usuario dangerousmanleebyeonggeon en HuggingFace. Se trata de un ajuste fino completo de Qwen/Qwen3-Embedding-0.6B (595.776.512 parametros) orientado a similitud entre frases y recuperacion de documentos, con pipeline sentence-similarity y libreria sentence-transformers.
+qwen3-emb-0.6b-specter-n5469-e2-ckpt326 es un modelo de embeddings de texto publicado por el usuario dangerousmanleebyeonggeon en Hugging Face. Se trata de un ajuste fino completo de Qwen/Qwen3-Embedding-0.6B (595.776.512 parametros) orientado a similitud entre frases y recuperacion de documentos, con pipeline sentence-similarity y libreria sentence-transformers.
 
 El ajuste forma parte de un experimento de ablation sobre datos de entrenamiento: se ha entrenado con 5.469 pares de tripletas de citas cientificas extraidas de allenai/scirepeval (tarea cite_prediction, formato SPECTER) mediante la perdida InfoNCE de ms-swift. El checkpoint publicado es el final del entrenamiento (paso 326 de 326, eval loss 0.4428).
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-emb-0.6b-specter-n5469-e2-ckpt326 | 595.776.512 | 32.768 (heredado del base) | Cientifico (ajuste sobre citas) | no disponible | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B (base) | 595.776.512 | 32.768 | General y multilingue | Apache-2.0 | HuggingFace |
-| allenai/specter2_base | ~110M | 512 | Cientifico | Apache-2.0 | HuggingFace |
-| BAAI/bge-m3 | ~568M | 8.192 | Multilingue, recuperacion | MIT | HuggingFace |
+| qwen3-emb-0.6b-specter-n5469-e2-ckpt326 | 595.776.512 | 32.768 (heredado del base) | Cientifico (ajuste sobre citas) | no disponible | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B (base) | 595.776.512 | 32.768 | General y multilingue | Apache-2.0 | Hugging Face |
+| allenai/specter2_base | ~110M | 512 | Cientifico | Apache-2.0 | Hugging Face |
+| BAAI/bge-m3 | ~568M | 8.192 | Multilingue, recuperacion | MIT | Hugging Face |
 
 Los valores de los modelos comparativos provienen de la documentacion publica de cada modelo; los del ajuste aqui descrito, de la informacion disponible en su repositorio. El ajuste hereda la arquitectura y el contexto del modelo base, pero su entrenamiento se ha especializado en el dominio cientifico y su licencia no esta declarada.
 
@@ -86,7 +86,7 @@ Los valores de los modelos comparativos provienen de la documentacion publica de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e2-ckpt326
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e2-ckpt326
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/scirepeval
 - Herramienta de entrenamiento (ms-swift): https://github.com/modelscope/ms-swift

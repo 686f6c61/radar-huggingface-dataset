@@ -96,7 +96,7 @@ Frente a modelos comparables de otros fabricantes en el rango de 7-8B parametros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-32af880c-e3e7-4414-b929-1685f88b50ed
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-32af880c-e3e7-4414-b929-1685f88b50ed
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Coleccion de la familia Gemma 4: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Gemma: https://github.com/google-gemma
@@ -105,7 +105,7 @@ Frente a modelos comparables de otros fabricantes en el rango de 7-8B parametros
 - Informe tecnico (arXiv:2607.02770): https://arxiv.org/abs/2607.02770
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de Gemma en Google DeepMind: https://deepmind.google/models/gemma/
-- Perfil del autor en HuggingFace: https://huggingface.co/muhamad-geosurge
+- Perfil del autor en Hugging Face: https://huggingface.co/muhamad-geosurge
 - Modelos del autor: https://huggingface.co/muhamad-geosurge/models
 - Repositorio relacionado (variante bd661a77): https://huggingface.co/muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960
 - Ficha en FriendliAI (variante 4669c667): https://friendli.ai/models/muhamad-geosurge/invert-polarity-4669c667-df20-4b4c-8263-e8785f7a7bcf

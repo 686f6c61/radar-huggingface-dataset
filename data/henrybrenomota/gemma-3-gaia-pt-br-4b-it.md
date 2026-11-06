@@ -37,7 +37,7 @@ La segunda fase restaura la capacidad de seguir instrucciones sin SFT: se aplica
 - Base para ajuste fino en tareas especificas (analisis de sentimiento, clasificacion de documentos, RAG).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multimodales (image-text-to-text): el pipeline declarado en HuggingFace es `image-text-to-text`, heredado de Gemma 3, aunque la model card no documenta evaluacion multimodal.
+- Capacidades multimodales (image-text-to-text): el pipeline declarado en Hugging Face es `image-text-to-text`, heredado de Gemma 3, aunque la model card no documenta evaluacion multimodal.
 - Capacidades multilingues: limitadas al portugues; el rendimiento en otros idiomas se degrada significativamente segun el autor.
 
 ## Casos de uso
@@ -91,12 +91,12 @@ La comparativa directa con otras familias especializadas en portugues (por ejemp
 - Contexto: la longitud de contexto no se documenta en la informacion proporcionada, por lo que no puede garantizarse un rendimiento optimo en contextos largos.
 - Uso de alto riesgo: no debe emplearse para decisiones criticas sin supervision humana; el autor excluye explicitamente la generacion de contenido malicioso, ofensivo o ilegal y la suplantacion enganosa de personas.
 - Licencia Gemma: el uso comercial esta sujeto a los terminos de la licencia Gemma de Google, que impone restricciones y obligaciones de atribucion que deben revisarse antes de desplegar en produccion.
-- Madurez del proyecto: el repositorio de HuggingFace registra 0 descargas y 0 likes en la fecha de consulta, lo que sugiere escasa validacion externa; conviene evaluar el modelo en el dominio concreto antes de adoptarlo.
+- Madurez del proyecto: el repositorio de Hugging Face registra 0 descargas y 0 likes en la fecha de consulta, lo que sugiere escasa validacion externa; conviene evaluar el modelo en el dominio concreto antes de adoptarlo.
 - Sin datos de tool calling ni agentes: no hay evidencia publicada de soporte fiable para function calling o razonamiento multi-paso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henrybrenomota/Gemma-3-Gaia-PT-BR-4b-it
+- Modelo en Hugging Face: https://huggingface.co/henrybrenomota/Gemma-3-Gaia-PT-BR-4b-it
 - Repositorio original del autor: https://huggingface.co/CEIA-UFG/Gemma-3-Gaia-PT-BR-4b-it
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Paper de la metodologia de fusion: https://arxiv.org/pdf/2410.10739

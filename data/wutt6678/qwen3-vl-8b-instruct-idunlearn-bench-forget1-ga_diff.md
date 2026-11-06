@@ -6,7 +6,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA publicado con la libreria PEFT sobre un checkpoint base identificado como `outputs_3/mllmu_vanilla_qwen3-vl-8b`, que a su vez deriva del modelo multimodal Qwen3-VL-8B-Instruct. El artefacto ocupa 0,2 GB, se distribuye en safetensors y esta orientado a experimentos de desaprendizaje automatico (machine unlearning) sobre modelos de vision-lenguaje: el nombre del repositorio apunta a un conjunto de olvido ("forget1"), a un metodo basado en ascenso de gradiente ("GA") y a una variante delta ("diff").
 
-El autor es el usuario de HuggingFace `wutt6678`, sin otra informacion publica. La model card es la plantilla vacia de HuggingFace, sin descripcion, hiperparametros, datos de entrenamiento ni resultados de evaluacion, y el repositorio no declara licencia, idiomas ni pipeline. Registra cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto de investigacion sin validacion externa.
+El autor es el usuario de Hugging Face `wutt6678`, sin otra informacion publica. La model card es la plantilla vacia de Hugging Face, sin descripcion, hiperparametros, datos de entrenamiento ni resultados de evaluacion, y el repositorio no declara licencia, idiomas ni pipeline. Registra cero descargas y cero "likes" en el momento de la consulta, por lo que se trata de un artefacto de investigacion sin validacion externa.
 
 Su relevancia es acotada y de tipo metodologico: sirve como pieza reproducible dentro de una linea de trabajo sobre olvido selectivo en VLMs (el benchmark aludido seria IDUnlearn-Bench), no como modelo listo para produccion. Cualquier uso practico exige cargarlo junto con su modelo base, que no esta publicado de forma accesible (la ruta `outputs_3/...` es una ruta local, no un identificador resoluble del Hub).
 
@@ -27,7 +27,7 @@ Su relevancia es acotada y de tipo metodologico: sirve como pieza reproducible d
 | Libreria | PEFT 0.19.1 / transformers |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion y actualizacion | 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion y actualizacion | 2026-10-01 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han identificado en la informacion disponible otros adaptadores de unlearn
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacia de HuggingFace: no hay descripcion, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+- La model card es la plantilla vacia de Hugging Face: no hay descripcion, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. En ausencia de licencia explicita, debe asumirse que no hay autorizacion clara.
 - No se declaran idiomas soportados ni pipeline.
 - El adaptador no es utilizable de forma autonoma: requiere el checkpoint base `outputs_3/mllmu_vanilla_qwen3-vl-8b`, que no es un identificador resoluble en el Hub y puede no estar publicado. Sin el, el artefacto es inaplicable.
@@ -101,7 +101,7 @@ No se han identificado en la informacion disponible otros adaptadores de unlearn
 - Modelo base de referencia en el Hub: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Ficha en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct
-- Espejo en HuggingFace (OpenExplorer): https://huggingface.co/OpenExplorer/Qwen3-VL-8B-Instruct
+- Espejo en Hugging Face (OpenExplorer): https://huggingface.co/OpenExplorer/Qwen3-VL-8B-Instruct
 - Ficha divulgativa en QwenCloud: https://www.qwencloud.com/models/qwen3-vl-8b-instruct
 - Referencia citada en las etiquetas (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

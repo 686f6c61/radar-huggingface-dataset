@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Formato | Precisiones incluidas | Uso previsto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orangebot/ormbg-ONNX | ONNX | FP16 y UINT8 | Navegador con Transformers.js | Apache 2.0 | HuggingFace (espejo, 0 descargas) |
-| onnx-community/ormbg-ONNX | ONNX | Varias (incluye `model.onnx` a precisión completa) | Conversión oficial a ONNX | Apache 2.0 | HuggingFace (origen de esta réplica) |
-| schirrmacher/ormbg | Pesos originales del autor | no disponible | Modelo base de eliminación de fondo | Apache 2.0 | HuggingFace (modelo original) |
+| Orangebot/ormbg-ONNX | ONNX | FP16 y UINT8 | Navegador con Transformers.js | Apache 2.0 | Hugging Face (espejo, 0 descargas) |
+| onnx-community/ormbg-ONNX | ONNX | Varias (incluye `model.onnx` a precisión completa) | Conversión oficial a ONNX | Apache 2.0 | Hugging Face (origen de esta réplica) |
+| schirrmacher/ormbg | Pesos originales del autor | no disponible | Modelo base de eliminación de fondo | Apache 2.0 | Hugging Face (modelo original) |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta réplica): https://huggingface.co/Orangebot/ormbg-ONNX
+- Modelo en Hugging Face (esta réplica): https://huggingface.co/Orangebot/ormbg-ONNX
 - Modelo original: https://huggingface.co/schirrmacher/ormbg
 - Conversión oficial a ONNX: https://huggingface.co/onnx-community/ormbg-ONNX
 - Fichero `model.onnx` de origen: https://huggingface.co/onnx-community/ormbg-ONNX/blob/main/onnx/model.onnx

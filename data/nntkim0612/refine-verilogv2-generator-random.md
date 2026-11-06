@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| REFINE-VerilogV2-Generator-random | 7.615.616.512 | no disponible | Verilog / RTL | no disponible | HuggingFace (0 descargas) |
+| REFINE-VerilogV2-Generator-random | 7.615.616.512 | no disponible | Verilog / RTL | no disponible | Hugging Face (0 descargas) |
 | REFINE-VerilogV2 Generator (principal) | mismo base | no disponible | Verilog / RTL con filtrado de sintesis | no disponible | Referenciado en el paper |
-| Qwen/Qwen2.5-Coder-7B-Instruct | ~7.6B | no disponible en esta ficha | Codigo general | no disponible en esta ficha | HuggingFace (modelo base publico) |
-| CodeLlama-7B-Instruct | ~6.7B | no disponible en esta ficha | Codigo general | no disponible en esta ficha | HuggingFace |
+| Qwen/Qwen2.5-Coder-7B-Instruct | ~7.6B | no disponible en esta ficha | Codigo general | no disponible en esta ficha | Hugging Face (modelo base publico) |
+| CodeLlama-7B-Instruct | ~6.7B | no disponible en esta ficha | Codigo general | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a la informacion disponible; no se han publicado metricas de rendimiento para este checkpoint que permitan una comparacion cuantitativa con las alternativas.
 
@@ -87,6 +87,6 @@ La comparativa se limita a la informacion disponible; no se han publicado metric
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nntkim0612/REFINE-VerilogV2-Generator-random
+- Hugging Face: https://huggingface.co/nntkim0612/REFINE-VerilogV2-Generator-random
 - Repositorio del proyecto: https://github.com/tkim-061203/REFINE-VerilogV2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

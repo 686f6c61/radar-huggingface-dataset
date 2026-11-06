@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id es un modelo de identificacion y anonimizacion de datos personales (de-identification, de-ID) para texto en chino, publicado en HuggingFace por el usuario Shaza2004. Combina un codificador preentrenado MacBERT3 con una capa BiLSTM y una cabeza de prediccion de spans GlobalPointer, complementada por una cabeza auxiliar de clasificacion de tokens con esquema BIOES. El objetivo es detectar entidades nombradas sensibles (nombres, identificadores, localizaciones y similares) para poder enmascararlas antes de procesar o publicar el texto.
+MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id es un modelo de identificacion y anonimizacion de datos personales (de-identification, de-ID) para texto en chino, publicado en Hugging Face por el usuario Shaza2004. Combina un codificador preentrenado MacBERT3 con una capa BiLSTM y una cabeza de prediccion de spans GlobalPointer, complementada por una cabeza auxiliar de clasificacion de tokens con esquema BIOES. El objetivo es detectar entidades nombradas sensibles (nombres, identificadores, localizaciones y similares) para poder enmascararlas antes de procesar o publicar el texto.
 
 El modelo se distribuye como un checkpoint PyTorch (`model.pt`, aproximadamente 0,4 GB en el repositorio) acompanado de un fichero `thresholds.json` con umbrales por entidad ajustados sobre el conjunto de desarrollo. La cabeza principal es GlobalPointer, que formula la extraccion de entidades como una tarea de prediccion de spans mediante atencion multiplicativa, mientras que la cabeza BIOES actua unicamente como perdida auxiliar durante el entrenamiento. El checkpoint publicado corresponde al mejor resultado en F1 micro de span exacto sobre dev.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id | Encoder + GlobalPointer para NER/de-ID en chino | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id | Encoder + GlobalPointer para NER/de-ID en chino | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | BERT-base-chinese + CRF (NER generico) | Encoder + CRF | ~102 M | 512 tokens | Apache 2.0 (habitual) | Ampliamente disponible |
 | spaCy zh / modelos NER de zh-core-web | Pipeline NER | no disponible | variable | MIT (habitual) | Disponible via spaCy |
 | Modelos de de-ID clinico en chino (p. ej. variantes de RoBERTa-wwm) | Encoder + clasificacion | ~100 M | 512 tokens | variable | Depende del autor |
@@ -84,5 +84,5 @@ La comparacion es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shaza2004/MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id
+- Hugging Face: https://huggingface.co/Shaza2004/MacBERT3-BiLSTM-GlobalPointer-BIOES-Chinese-de-id
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

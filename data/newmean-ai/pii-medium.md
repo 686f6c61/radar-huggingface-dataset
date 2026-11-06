@@ -95,7 +95,7 @@ No se dispone de datos detallados de parámetros, contexto ni licencia de gliner
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newmean-ai/pii-medium
+- Modelo en Hugging Face: https://huggingface.co/newmean-ai/pii-medium
 - SDK JavaScript: https://www.npmjs.com/package/@newmean-ai/pii
 - Demo en navegador: https://pii.newmean.ai
 - Conjunto de datos: https://huggingface.co/datasets/newmean-ai/pii-dataset

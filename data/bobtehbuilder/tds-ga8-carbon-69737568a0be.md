@@ -61,5 +61,5 @@ No se dispone de información sobre modelos comparables. Los repositorios `bobte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-69737568a0be
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-69737568a0be
 - Repositorio del proyecto (GitHub, sin contenido relevante): https://github.com/22f3001797/tds-ga8

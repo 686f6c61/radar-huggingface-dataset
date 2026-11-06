@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Casos de edicion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EngramEdit-LongCat-Flash-Lite-MQuAKE-3K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 3.000 (MQuAKE) | MIT (checkpoint) | HuggingFace |
-| EngramEdit-LongCat-Flash-Lite-MCF-2K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 2.000 (CounterFact) | MIT (checkpoint) | HuggingFace |
-| EngramEdit-LongCat-Flash-Lite-ZsRE-2K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 2.000 (ZsRE) | MIT (checkpoint) | HuggingFace |
+| EngramEdit-LongCat-Flash-Lite-MQuAKE-3K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 3.000 (MQuAKE) | MIT (checkpoint) | Hugging Face |
+| EngramEdit-LongCat-Flash-Lite-MCF-2K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 2.000 (CounterFact) | MIT (checkpoint) | Hugging Face |
+| EngramEdit-LongCat-Flash-Lite-ZsRE-2K | Checkpoint de memoria condicional | LongCat-Flash-Lite | 2.000 (ZsRE) | MIT (checkpoint) | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento del modelo base LongCat-Flash-Lite ni de alternativas comparables en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo base Lo
 
 ## Enlaces
 
-- HuggingFace (checkpoint): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MQuAKE-3K
+- Hugging Face (checkpoint): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MQuAKE-3K
 - Modelo base: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite
 - Pagina del proyecto: https://modalitydance.github.io/EngramEdit/
 - GitHub: https://github.com/ModalityDance/EngramEdit
@@ -93,4 +93,4 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo base Lo
 - Checkpoint CounterFact 2K: https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MCF-2K
 - Checkpoint ZsRE 2K: https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-ZsRE-2K
 - Licencia del codigo: https://github.com/ModalityDance/EngramEdit/blob/main/LICENSE
-- Paper y HuggingFace Paper: enlaces marcados como "#" en la model card, no disponibles.
+- Paper y Hugging Face Paper: enlaces marcados como "#" en la model card, no disponibles.

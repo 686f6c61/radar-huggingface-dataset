@@ -6,7 +6,7 @@ RusMind Zernyshko 1.6 es un modelo de lenguaje de escala muy reducida (83 millon
 
 El modelo resuelve un nicho muy concreto: generacion de texto conversacional en ruso con un sesgo explicito hacia cultura, folclore y especificidades rusas, con un coste computacional practicamente nulo (unos 167 MB de pesos). Su relevancia no esta en la capacidad general, que es muy limitada por el numero de parametros y la ventana de contexto de 1024 tokens, sino en su rendimiento relativo en pruebas de conocimiento cultural ruso: el autor reporta un MERA 2.0 de 0,049, identico al de SmolLM-3B pese a ser 36 veces mas pequeno, y resultados superiores a modelos de 4B a 10B en subconjuntos como RUBIN (refranes y sabiduria popular), LIMUR y Characters.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos del repositorio de HuggingFace. No se dispone de informacion sobre la composicion exacta del dataset de entrenamiento, el numero de tokens vistos ni los detalles del proceso de alineacion, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos del repositorio de Hugging Face. No se dispone de informacion sobre la composicion exacta del dataset de entrenamiento, el numero de tokens vistos ni los detalles del proceso de alineacion, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se basa exclusivamente en la model card del autor y en los metadatos de
 | Longitud de contexto | 1024 tokens |
 | Tipos de cuantizacion | F16 (unico archivo publicado en este repo); safetensors en el repo base |
 | Idiomas soportados | Ruso (ru) |
-| Licencia | RusMind License (DICPlay); licencia "other" en HuggingFace |
+| Licencia | RusMind License (DICPlay); licencia "other" en Hugging Face |
 | Formato de pesos | GGUF (F16, ~167 MB); safetensors en el repositorio base DICPlay/RusMind-Zernyshko-1.6 |
 | Tokenizador | BPE propio, 16.000 tokens |
 | Formato de chat | ChatML |
@@ -111,7 +111,7 @@ La comparacion es asimetrica: los modelos alternativos son multilingues y de pro
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6-GGUF
 - Repositorio base con pesos safetensors: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
 - Archivo F16 GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6-GGUF/blob/main/RusMind-Zernyshko-1.6-F16.gguf
 - Licencia: https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6-GGUF/blob/main/LICENSE

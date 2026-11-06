@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-wikitext103` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, identificado explícitamente por su autor como un *research-artifact* dentro de un estudio de integridad de evaluación (etiquetas `ai-safety`, `evaluation-integrity`, `rq1`, `benign-control`). No es un modelo entrenado desde cero ni un fine-tuning sustantivo: según la model card, los pesos son idénticos a los de `openai-community/gpt2` y se distribuyen sin modificar. Su interés no reside en la calidad del modelo, sino en el mecanismo de carga que incorpora.
+`gpt2-wikitext103` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, identificado explícitamente por su autor como un *research-artifact* dentro de un estudio de integridad de evaluación (etiquetas `ai-safety`, `evaluation-integrity`, `rq1`, `benign-control`). No es un modelo entrenado desde cero ni un fine-tuning sustantivo: según la model card, los pesos son idénticos a los de `openai-community/gpt2` y se distribuyen sin modificar. Su interés no reside en la calidad del modelo, sino en el mecanismo de carga que incorpora.
 
 El repositorio incluye código Python que se ejecuta en tiempo de carga (`modeling_gpt2_wikitext103.py`), referenciado desde `config.json` mediante el campo `auto_map` y activado con `trust_remote_code=True`. El autor lo describe como el "payload divulgado" (*disclosed payload*) del experimento, y clasifica el artefacto como "benign (control)": es decir, la fila de control de un conjunto de artefactos destinados a medir cómo responden los pipelines de evaluación y los harnesses de seguridad ante modelos que ejecutan código arbitrario al cargarse.
 
@@ -81,7 +81,7 @@ La diferencia relevante frente a los alternativas no es de rendimiento ni de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-wikitext103
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-wikitext103
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados a este artefacto.

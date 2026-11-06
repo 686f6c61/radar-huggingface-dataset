@@ -83,8 +83,8 @@ No se dispone de comparativas con modelos de otras familias (como Llama 3.1 27B 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic
+- Repositorio de Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic
 - Variante sin "heretic" en GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF
 - Otra variante GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-GGUF
 - Ficha del modelo original en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau

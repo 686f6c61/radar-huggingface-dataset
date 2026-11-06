@@ -72,6 +72,6 @@ No disponible. No existe informacion sobre modelos comparables en el repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naokinakamura/course-generation
+- Repositorio en Hugging Face: https://huggingface.co/naokinakamura/course-generation
 - Perfil del autor: https://huggingface.co/naokinakamura
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo especifico.

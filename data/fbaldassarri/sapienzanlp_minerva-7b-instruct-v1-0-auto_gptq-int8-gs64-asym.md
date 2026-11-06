@@ -88,8 +88,8 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-asym | 7B nominal (2.302.611.456 elementos segun safetensors) | no disponible | INT8 GPTQ, group_size 64, asimetrico | Apache 2.0 | HuggingFace, 0 descargas |
-| sapienzanlp/Minerva-7B-instruct-v1.0 (base) | no disponible | no disponible | bf16/fp16 original | Apache 2.0 | HuggingFace |
+| fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-asym | 7B nominal (2.302.611.456 elementos segun safetensors) | no disponible | INT8 GPTQ, group_size 64, asimetrico | Apache 2.0 | Hugging Face, 0 descargas |
+| sapienzanlp/Minerva-7B-instruct-v1.0 (base) | no disponible | no disponible | bf16/fp16 original | Apache 2.0 | Hugging Face |
 
 No se conocen, a partir de la información disponible, alternativas cuantizadas equivalentes de la misma familia con datos comparables.
 
@@ -108,7 +108,7 @@ No se conocen, a partir de la información disponible, alternativas cuantizadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-asym
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-asym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - Pipeline de replicacion citado en la model card: https://git.epicdynamic.com/auto-round-pipeline

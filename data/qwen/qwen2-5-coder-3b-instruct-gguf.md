@@ -87,7 +87,7 @@ Latencia y throughput: no se han publicado cifras concretas en la informacion di
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-3B-Instruct-GGUF | 3.090 M | 32.768 (131.072 con YARN via vLLM) | qwen-research | GGUF en HuggingFace |
+| Qwen2.5-Coder-3B-Instruct-GGUF | 3.090 M | 32.768 (131.072 con YARN via vLLM) | qwen-research | GGUF en Hugging Face |
 | Qwen2.5-Coder-7B-Instruct | 7.000 M aprox. | 32.768 (hasta 131.072) | qwen-research | Safetensors y GGUF |
 | StarCoder2-3B | 3.000 M | 16.384 | BigCode OpenRAIL-M | Safetensors y GGUF |
 | IBM Granite Code 3B | 3.000 M | 128.000 | Apache 2.0 | Safetensors y GGUF |
@@ -107,7 +107,7 @@ Nota: los datos de los modelos comparativos corresponden a sus caracteristicas p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub del proyecto: https://github.com/QwenLM/Qwen2.5-Coder

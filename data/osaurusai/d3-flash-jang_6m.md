@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks estandar que permitan comparar este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-flash-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-flash-JANG_6M
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Modelo subyacente: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime Osaurus: https://osaurus.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`perseidshota/homework-generation` es un repositorio experimental publicado en HuggingFace por el usuario perseidshota que contiene una implementacion propia de una arquitectura Efficientformer a escala "xlarge" orientada a tareas de generacion. No se trata de un modelo entrenado: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado en safetensors es de 33.088 parametros, un volumen coherente con una inicializacion de juguete y no con un modelo utilizable en produccion.
+`perseidshota/homework-generation` es un repositorio experimental publicado en Hugging Face por el usuario perseidshota que contiene una implementacion propia de una arquitectura Efficientformer a escala "xlarge" orientada a tareas de generacion. No se trata de un modelo entrenado: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado en safetensors es de 33.088 parametros, un volumen coherente con una inicializacion de juguete y no con un modelo utilizable en produccion.
 
 El repositorio incluye el codigo Python (`inference.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), con optimizador SGD y esquema de warmup lineal. La arquitectura declarada usa atencion estandar, fusion bilineal, activacion GELU tanh y normalizacion LayerNorm. El tamano del repositorio es de 0.0 GB y no consta pipeline declarado, ni idiomas soportados, ni resultados de evaluacion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perseidshota/homework-generation | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | Repositorio HuggingFace, 0 descargas, 0 likes |
+| perseidshota/homework-generation | 33.088 | No disponible | Sin benchmarks declarados | BSD-3-Clause | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Familia Efficientformer (implementaciones de referencia) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | EficientformerV2 (variantes eficientes) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Otros repositorios experimentales de inicializacion | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
@@ -86,5 +86,5 @@ La comparacion cuantitativa no es posible con los datos disponibles: este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/perseidshota/homework-generation
+- Repositorio en Hugging Face: https://huggingface.co/perseidshota/homework-generation
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

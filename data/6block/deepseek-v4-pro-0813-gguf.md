@@ -30,7 +30,7 @@ No se dispone de información sobre los datos de entrenamiento del modelo origin
 - Generación de texto y razonamiento complejo, dado que es un modelo de 1,57 billones de parámetros con 48B activos.
 - Soporte multilingüe para inglés y chino (según los idiomas declarados).
 - Capacidad de procesamiento de contexto largo, aunque no se especifica la longitud máxima; en el ejemplo de uso se emplea una ventana de 8192 tokens.
-- Compatible con llama.cpp y Ollama para inferencia local, con soporte para descarga directa desde HuggingFace.
+- Compatible con llama.cpp y Ollama para inferencia local, con soporte para descarga directa desde Hugging Face.
 - No se dispone de información sobre tool calling, capacidades de agente, visión, audio u otras funciones específicas más allá de la generación de texto.
 
 ## Casos de uso

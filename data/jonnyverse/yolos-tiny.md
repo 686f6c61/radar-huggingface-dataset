@@ -81,7 +81,7 @@ La comparativa se realiza con el modelo base yolos, ya que es la referencia dire
 
 ## Enlaces
 
-- [Repositorio HuggingFace JONNYVERSE/yolos-tiny](https://huggingface.co/JONNYVERSE/yolos-tiny)
+- [Repositorio Hugging Face JONNYVERSE/yolos-tiny](https://huggingface.co/JONNYVERSE/yolos-tiny)
 - [Modelo base hustvl/yolos-tiny](https://huggingface.co/hustvl/yolos-tiny)
 - [Documentación de Transformers.js](https://huggingface.co/docs/transformers.js)
 - [Artículo de aimodels.fyi sobre yolos-tiny](https://www.aimodels.fyi/models/huggingFace/yolos-tiny-hustvl)

@@ -4,7 +4,7 @@
 
 GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_it es un adaptador LoRA (PEFT) publicado por el grupo GRAI de la Universidad Nacional de Ciencia y Tecnología Politehnica de Bucarest (UNSTPB). No es un modelo completo, sino un conjunto de pesos incrementales que se cargan sobre el modelo base OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO, un Llama 3.1 de 8.000 millones de parámetros adaptado al rumano y ya alineado mediante DPO. El repositorio ocupa 0,2 GB, lo que confirma que se trata exclusivamente del adaptador y no de los pesos completos.
 
-El nombre del repositorio sugiere una cadena de ajuste supervisado (SFT) con la librería TRL, etiquetada explícitamente con los tags `lora`, `sft` y `transformers`. La model card, sin embargo, es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, hardware) figuran como «More Information Needed». Esto limita severamente cualquier evaluación rigurosa del artefacto.
+El nombre del repositorio sugiere una cadena de ajuste supervisado (SFT) con la librería TRL, etiquetada explícitamente con los tags `lora`, `sft` y `transformers`. La model card, sin embargo, es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, hardware) figuran como «More Information Needed». Esto limita severamente cualquier evaluación rigurosa del artefacto.
 
 La relevancia de esta ficha es, por tanto, doble: por un lado documenta un adaptador comunitario de bajo perfil (0 descargas, 0 likes en el momento de la consulta); por otro, sirve como caso práctico de cómo evaluar un artefacto PEFT cuando la documentación del autor es inexistente. Toda la información técnica que se detalla a continuación proviene del modelo base declarado o de los metadatos del repositorio, nunca de la model card.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es, por tanto, doble: por un lado documenta un adapt
 
 El artefacto es un adaptador LoRA de bajo rango, no un modelo entrenado desde cero. Se apoya en la arquitectura del modelo base declarado, OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO, que a su vez hereda el diseño de Llama 3.1 8B: transformer decoder-only con 32 capas, atención por consultas agrupadas (GQA), embeddings rotatorios (RoPE) y capas feed-forward con activación SwiGLU, sobre un vocabulario de 128.256 tokens. Los pesos del adaptador se distribuyen en formato safetensors y requieren PEFT 0.21.2 para su carga.
 
-Los tags del repositorio (`lora`, `sft`, `transformers`, `trl`) y el propio identificador del modelo (`..._dpo_ft_...`) indican que el ajuste se realizó con el stack TRL de HuggingFace, muy probablemente mediante SFT sobre un modelo base que ya había pasado por DPO. No hay información sobre el número de tokens de entrenamiento, la composición del dataset, el rango y alpha del LoRA, la tasa de aprendizaje, el régimen de precisión ni el hardware utilizado: todos esos campos aparecen como «More Information Needed» en la model card. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, destilación) más allá del ajuste LoRA estándar.
+Los tags del repositorio (`lora`, `sft`, `transformers`, `trl`) y el propio identificador del modelo (`..._dpo_ft_...`) indican que el ajuste se realizó con el stack TRL de Hugging Face, muy probablemente mediante SFT sobre un modelo base que ya había pasado por DPO. No hay información sobre el número de tokens de entrenamiento, la composición del dataset, el rango y alpha del LoRA, la tasa de aprendizaje, el régimen de precisión ni el hardware utilizado: todos esos campos aparecen como «More Information Needed» en la model card. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, destilación) más allá del ajuste LoRA estándar.
 
 ## Capacidades
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_it | Adaptador LoRA sobre 8.030 M | No confirmado (base: 128.000) | No disponible | HuggingFace, 0 descargas | No publicado |
-| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO | 8.030 M | 128.000 tokens | No disponible en esta ficha (consultar repositorio del autor) | HuggingFace | No disponible en la informacion proporcionada |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Benchmarks publicos por Meta (no reproducidos aqui) |
+| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_it | Adaptador LoRA sobre 8.030 M | No confirmado (base: 128.000) | No disponible | Hugging Face, 0 descargas | No publicado |
+| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO | 8.030 M | 128.000 tokens | No disponible en esta ficha (consultar repositorio del autor) | Hugging Face | No disponible en la informacion proporcionada |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Benchmarks publicos por Meta (no reproducidos aqui) |
 
 La comparación cuantitativa de rendimiento entre estas tres opciones no es posible con la información disponible: el adaptador no publica evaluación y el modelo base rumano tampoco se ha medido en esta ficha. La diferencia práctica entre el adaptador y su base es que el primero requiere cargar el segundo para funcionar, y que el adaptador no ha documentado ningún cambio de licencia respecto a su modelo base.
 
@@ -89,7 +89,7 @@ La comparación cuantitativa de rendimiento entre estas tres opciones no es posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_it
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_llm_it
 - Modelo base declarado: https://huggingface.co/OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO
 - Modelo original Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Tarjeta de Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md

@@ -94,7 +94,7 @@ No se dispone de informacion sobre adaptadores comparables publicados para la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fnl-es/qwen3-0.6b-muc4-lora-smoke
+- Modelo en Hugging Face: https://huggingface.co/fnl-es/qwen3-0.6b-muc4-lora-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/fnl-es/muc4-chat
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/flowing/muc4-event-extraction/runs/63pxlpvn

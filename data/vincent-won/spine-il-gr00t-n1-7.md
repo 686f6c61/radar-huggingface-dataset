@@ -18,7 +18,7 @@ El modelo tiene 3.144.016.000 parámetros, un repositorio de 12,6 GB en safetens
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el autor no documenta cuantizaciones) |
 | Idiomas soportados | no disponible (las instrucciones de entrenamiento son frases en inglés; no se declara cobertura multilingüe) |
-| Licencia | NVIDIA Open Model License (etiquetada como `other` en HuggingFace); uso limitado a investigación y evaluación |
+| Licencia | NVIDIA Open Model License (etiquetada como `other` en Hugging Face); uso limitado a investigación y evaluación |
 | Formato de pesos | safetensors (librería `lerobot`) |
 | Entrada visual | `observation.images.endo`: 256 × 256 RGB, render de endoscopio (water optics), 15 fps |
 | Entrada de estado | 16 valores: punta de endoscopio xyz (mm) + cuaternión wxyz, punta de taladro xyz + cuaternión wxyz, gatillo, padding |
@@ -73,19 +73,19 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 - VRAM estimada para inferencia: no disponible de forma oficial. Con 3,14B parámetros, en bf16 los pesos ocupan aproximadamente 6,3 GB; en fp32, unos 12,6 GB. A ello hay que sumar el estado del backbone visión-lenguaje y las activaciones, por lo que se recomienda al menos 16 GB de VRAM para bf16.
 - GPU recomendadas: el autor entrenó en una NVIDIA RTX PRO 6000 Blackwell Server Edition. Para inferencia, una RTX 4090 (24 GB) o una A100/H100 son opciones holgadas; una RTX 3090 (24 GB) también debería ser suficiente en bf16.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090, RTX 3090 y RTX 4080 (16 GB) en bf16, siempre que se disponga de la configuración del modelo base `nvidia/Cosmos-Reason2-2B` (con acceso restringido en HuggingFace).
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090, RTX 3090 y RTX 4080 (16 GB) en bf16, siempre que se disponga de la configuración del modelo base `nvidia/Cosmos-Reason2-2B` (con acceso restringido en Hugging Face).
 - Opciones de despliegue: el autor proporciona `robot/inference/remote/policy_server.py --backend lerobot --policy-path <repo>` con API HTTP `spine-policy/1`, además de un Dockerfile en `robot/train/nebius/serverless/`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que además no son adecuadas para un VLA con cabeza de acción.
 - Latencia y throughput: no disponibles para inferencia. Como referencia, el entrenamiento corrió a aproximadamente 2,6 pasos/s con batch 32 en una RTX PRO 6000 Blackwell.
-- Requisito adicional: la carga necesita la configuración del modelo base `nvidia/Cosmos-Reason2-2B`, con acceso restringido en HuggingFace (aceptar términos e iniciar sesión, o disponer de caché local del hub).
+- Requisito adicional: la carga necesita la configuración del modelo base `nvidia/Cosmos-Reason2-2B`, con acceso restringido en Hugging Face (aceptar términos e iniciar sesión, o disponer de caché local del hub).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spine IL (este modelo) | 3,14B | no disponible | Laminectomía UBE simulada, condicionada por lenguaje | NVIDIA Open Model License, solo investigación | HuggingFace, 7 descargas |
-| nvidia/GR00T-N1.7-3B | 3B | no disponible | Política robótica generalista | NVIDIA License, investigación y evaluación | HuggingFace (modelo base) |
-| nvidia/Cosmos-Reason2-2B | 2B | no disponible | Backbone visión-lenguaje | no disponible en la información | HuggingFace (acceso restringido) |
-| Qwen/Qwen3-VL-2B-Instruct | 2B | no disponible | VLM generalista | Apache-2.0 | HuggingFace (origen del backbone) |
+| Spine IL (este modelo) | 3,14B | no disponible | Laminectomía UBE simulada, condicionada por lenguaje | NVIDIA Open Model License, solo investigación | Hugging Face, 7 descargas |
+| nvidia/GR00T-N1.7-3B | 3B | no disponible | Política robótica generalista | NVIDIA License, investigación y evaluación | Hugging Face (modelo base) |
+| nvidia/Cosmos-Reason2-2B | 2B | no disponible | Backbone visión-lenguaje | no disponible en la información | Hugging Face (acceso restringido) |
+| Qwen/Qwen3-VL-2B-Instruct | 2B | no disponible | VLM generalista | Apache-2.0 | Hugging Face (origen del backbone) |
 
 No se dispone de datos de rendimiento comparables entre estos modelos para la tarea quirúrgica, ya que solo Spine IL publica métricas en bucle cerrado sobre laminectomía simulada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos para la ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincent-won/spine-il-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/vincent-won/spine-il-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/vincent-won/spine-il-hand90
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Backbone: https://huggingface.co/nvidia/Cosmos-Reason2-2B

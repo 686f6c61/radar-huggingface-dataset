@@ -76,7 +76,7 @@ Comparación con la alternativa incluida en la propia evaluación y con enfoques
 
 | Modelo | Parametros | Contexto | Rendimiento en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Delhi AirCast (XGBoost, 5 horizontes) | no disponible (350 árboles, profundidad 8) | ventana puntual, horizontes 1-24 h | MAE 18,75-55,74 µg/m³; R² 0,477-0,927 | no disponible | HuggingFace, 0 descargas, 1 like |
+| Delhi AirCast (XGBoost, 5 horizontes) | no disponible (350 árboles, profundidad 8) | ventana puntual, horizontes 1-24 h | MAE 18,75-55,74 µg/m³; R² 0,477-0,927 | no disponible | Hugging Face, 0 descargas, 1 like |
 | Persistencia (baseline del propio informe) | 0 | último valor observado | MAE 22,69-84,70 µg/m³ | no aplica | incluida en `evaluation_metrics.json` |
 | ARIMA/SARIMA por estación | no disponible | no disponible | no disponible | no aplica | implementación propia |
 | LSTM o Transformer de series temporales | no disponible | no disponible | no disponible | no aplica | implementación propia |
@@ -98,7 +98,7 @@ Comparación con la alternativa incluida en la propia evaluación y con enfoques
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/priyanshuchawda/delhi-aircast-historical-pm25
+- Modelo en Hugging Face: https://huggingface.co/priyanshuchawda/delhi-aircast-historical-pm25
 - Dataset primario de entrenamiento, OpenCity Delhi Hourly Air Quality Reports: https://data.opencity.in/dataset/delhi-hourly-air-quality-reports
 - Documentación de XGBoost: no disponible en la información proporcionada
 - Repositorio de código asociado: no disponible

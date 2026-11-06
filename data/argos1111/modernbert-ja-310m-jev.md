@@ -106,8 +106,8 @@ Las cifras de VRAM son estimaciones derivadas del número de parámetros (315,2M
 
 | Modelo | Parámetros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| argos1111/modernbert-ja-310m-jev | 315,2M | 512 tokens | JNLI test 92,62 %; JCommonsenseQA test 92,40 %; jsts validación 60,7 %; livedoor 35,6 % | CC BY-SA 4.0 | safetensors en HuggingFace, backend Jev Local |
-| sbintuitions/modernbert-ja-310m (base) | ≈310M según denominación | no disponible en la información proporcionada | JNLI 92,93 y JComQA 93,53 con cabezas dedicadas por tarea, según su model card | MIT | safetensors en HuggingFace |
+| argos1111/modernbert-ja-310m-jev | 315,2M | 512 tokens | JNLI test 92,62 %; JCommonsenseQA test 92,40 %; jsts validación 60,7 %; livedoor 35,6 % | CC BY-SA 4.0 | safetensors en Hugging Face, backend Jev Local |
+| sbintuitions/modernbert-ja-310m (base) | ≈310M según denominación | no disponible en la información proporcionada | JNLI 92,93 y JComQA 93,53 con cabezas dedicadas por tarea, según su model card | MIT | safetensors en Hugging Face |
 | LFM2.5-1.2B (usado como baseline en la evaluación del autor) | ≈1,2B según denominación | no disponible | JNLI 17,15 % y JComQA 68,87 % zero-shot; livedoor 46,8 %; JMMLU 43,6 %; atención al cliente 56,2 % | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Cross-encoders japoneses alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -129,7 +129,7 @@ La comparación con el modelo base no es directa: sbintuitions/modernbert-ja-310
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/argos1111/modernbert-ja-310m-jev
+- Modelo en Hugging Face: https://huggingface.co/argos1111/modernbert-ja-310m-jev
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Repositorio Jev Local: https://github.com/Argos1111/jev_local
 - Código de conversión de datos: https://github.com/Argos1111/jev_local/blob/main/modernbert/data.py
@@ -137,6 +137,6 @@ La comparación con el modelo base no es directa: sbintuitions/modernbert-ja-310
 - JCoLA: https://github.com/osekilab/JCoLA
 - JCommonsenseMorality: https://github.com/Language-Media-Lab/commonsense-moral-ja
 - MASSIVE: https://github.com/alexa/massive
-- Datasets en HuggingFace: https://huggingface.co/datasets/yahoojapan/JGLUE, https://huggingface.co/datasets/osekilab/JCoLA, https://huggingface.co/datasets/Language-Media-Lab/commonsense-moral-ja, https://huggingface.co/datasets/AmazonScience/massive
+- Datasets en Hugging Face: https://huggingface.co/datasets/yahoojapan/JGLUE, https://huggingface.co/datasets/osekilab/JCoLA, https://huggingface.co/datasets/Language-Media-Lab/commonsense-moral-ja, https://huggingface.co/datasets/AmazonScience/massive
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces de referencia son los declarados en la model card y en los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces de referencia son los declarados en la model card y en los metadatos de Hugging Face.

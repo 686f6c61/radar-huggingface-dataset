@@ -65,4 +65,4 @@ No se dispone de información sobre modelos comparables directos. Dado que es un
 
 ## Enlaces
 
-- [HuggingFace - theworker02/open-reason-small](https://huggingface.co/theworker02/open-reason-small)
+- [Hugging Face - theworker02/open-reason-small](https://huggingface.co/theworker02/open-reason-small)

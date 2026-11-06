@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-simnotes-soup-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-simnotes-soup-qwen3.5-0.8b
 - Modelo de producción de Heed: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Padre E2: https://huggingface.co/mohitkrconnect/heed-simnotes-e2-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

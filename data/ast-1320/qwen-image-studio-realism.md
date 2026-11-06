@@ -66,7 +66,7 @@ No se dispone de informacion sobre otros LoRAs de estilo para Qwen-Image que per
 
 ## Enlaces
 
-- [HuggingFace - AST-1320/Qwen-Image-Studio-Realism](https://huggingface.co/AST-1320/Qwen-Image-Studio-Realism)
-- [HuggingFace - prithivMLmods/Qwen-Image-Studio-Realism (version espejo)](https://huggingface.co/prithivMLmods/Qwen-Image-Studio-Realism)
+- [Hugging Face - AST-1320/Qwen-Image-Studio-Realism](https://huggingface.co/AST-1320/Qwen-Image-Studio-Realism)
+- [Hugging Face - prithivMLmods/Qwen-Image-Studio-Realism (version espejo)](https://huggingface.co/prithivMLmods/Qwen-Image-Studio-Realism)
 - [GitHub - QwenLM/Qwen-Image (modelo base)](https://github.com/QwenLM/Qwen-Image)
 - [Qwen Studio](https://qwen.ai/home)

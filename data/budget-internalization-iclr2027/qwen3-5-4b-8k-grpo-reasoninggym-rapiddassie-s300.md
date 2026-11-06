@@ -77,8 +77,8 @@ Estimaciones calculadas a partir del número real de parámetros (4,66 B) y del 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este modelo (`qwen3.5-4b-8k-grpo-reasoninggym-rapiddassie-s300`) | 4,66 B | no disponible | apache-2.0 en metadatos; hereda la del base según la model card | HuggingFace, 0 descargas | No |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible (se declara 4B en el nombre) | no disponible | no disponible | HuggingFace | No disponible en la información proporcionada |
+| Este modelo (`qwen3.5-4b-8k-grpo-reasoninggym-rapiddassie-s300`) | 4,66 B | no disponible | apache-2.0 en metadatos; hereda la del base según la model card | Hugging Face, 0 descargas | No |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible (se declara 4B en el nombre) | no disponible | no disponible | Hugging Face | No disponible en la información proporcionada |
 | Otras alternativas de ~4 B para razonamiento (por ejemplo, modelos de la familia Qwen3 o destilados de razonamiento de tamaño similar) | no disponible | no disponible | no disponible | no disponible | No disponible |
 
 No se dispone de datos verificados de parámetros, contexto, licencia o rendimiento de modelos alternativos dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La única comparación defendible es contra el modelo base, y en este caso tampoco se han publicado métricas que permitan cuantificar la mejora.
@@ -100,7 +100,7 @@ No se dispone de datos verificados de parámetros, contexto, licencia o rendimie
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-reasoninggym-rapiddassie-s300
+- Página del modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-reasoninggym-rapiddassie-s300
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, repositorio de código, blog o demo: no disponibles en la información proporcionada.
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (corresponden a sitios institucionales y comerciales sobre presupuestos públicos y alquiler de vehículos), por lo que no se incluye ningún enlace adicional.

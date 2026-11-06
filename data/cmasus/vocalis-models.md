@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cmasus/vocalis-models
+- Repositorio en Hugging Face: https://huggingface.co/cmasus/vocalis-models
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Voces suecas de Joakim Eriksson: https://huggingface.co/Joakim/kokoro-sv-voices
 - G2P sueco: https://huggingface.co/Joakim/kokoro-sv-g2p

@@ -81,10 +81,10 @@ Los datos proceden de la evaluación propia del proyecto Univo, realizada sobre 
 
 | Modelo | Parametros / dimensiones | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| static-similarity-mrl-multilingual-int8-128 (este) | 13.552.512 parámetros, 128 dimensiones, int8 | 512 tokens | 50 | Apache-2.0 | HuggingFace, runtime Model2Vec |
-| sentence-transformers/static-similarity-mrl-multilingual-v1 | 1.024 dimensiones, float32 | 512 tokens | 50 | Apache-2.0 | HuggingFace |
-| minishlab/potion-base-8M | Model2Vec estático, 8M, solo inglés | No disponible | Inglés | No disponible en la información proporcionada | HuggingFace |
-| Modelos densos tipo sentence-transformers multilingües | Cientos de millones de parámetros, 384-1024 dimensiones | 512 tokens o menos | 50 o más | Variable | HuggingFace |
+| static-similarity-mrl-multilingual-int8-128 (este) | 13.552.512 parámetros, 128 dimensiones, int8 | 512 tokens | 50 | Apache-2.0 | Hugging Face, runtime Model2Vec |
+| sentence-transformers/static-similarity-mrl-multilingual-v1 | 1.024 dimensiones, float32 | 512 tokens | 50 | Apache-2.0 | Hugging Face |
+| minishlab/potion-base-8M | Model2Vec estático, 8M, solo inglés | No disponible | Inglés | No disponible en la información proporcionada | Hugging Face |
+| Modelos densos tipo sentence-transformers multilingües | Cientos de millones de parámetros, 384-1024 dimensiones | 512 tokens o menos | 50 o más | Variable | Hugging Face |
 
 Frente a `potion-base-8M`, este modelo ofrece mayor *recall* en validación (32,9% frente a 19,6%), mejor *recall* en idiomas distintos del inglés (24,4% frente a 10,7%) y la mitad de tamaño en disco, a cambio de un tiempo de carga mayor (72 ms frente a 18 ms) y de una precisión exploratoria ligeramente inferior. Frente a modelos densos multilingües, la ventaja es el coste computacional y el tamaño, y la desventaja es la pérdida de orden de palabras y una menor capacidad de representación semántica fina.
 
@@ -104,7 +104,7 @@ Frente a `potion-base-8M`, este modelo ofrece mayor *recall* en validación (32,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/univo-models/static-similarity-mrl-multilingual-int8-128
+- Modelo en Hugging Face: https://huggingface.co/univo-models/static-similarity-mrl-multilingual-int8-128
 - Modelo original: https://huggingface.co/sentence-transformers/static-similarity-mrl-multilingual-v1
 - Repositorio de Univo: https://github.com/leopoldch/univo
 - Script de construcción del modelo: https://github.com/leopoldch/univo/blob/main/tools/build_default_model.py

@@ -75,7 +75,7 @@ Según el comunicado del NII, el modelo `llm-jp-4-32b-a3b-thinking` supera a GPT
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_llm-jp-4-32b-a3b-thinking.gguf
+- Repositorio Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_llm-jp-4-32b-a3b-thinking.gguf
 - Conversión GGUF oficial de llm-jp: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking-gguf
 - Conversión GGUF de mmnga-o: https://huggingface.co/mmnga-o/llm-jp-4-32b-a3b-thinking-gguf
 - Comunicado del NII: https://www.nii.ac.jp/en/news/release/2026/0403.html

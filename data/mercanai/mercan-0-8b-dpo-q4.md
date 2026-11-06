@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mercan 0.8B DPO — Q4_K_M es un artefacto de despliegue publicado por MercanAI en HuggingFace. Se trata de la cuantizacion Q4_K_M del checkpoint final de la etapa DPO de Mercan 0.8B, un modelo de lenguaje de aproximadamente 800 millones de parametros especializado en turco y distribuido en un formato GGUF v3 propio que el autor denomina "Mercan v1". El repositorio ocupa 0,5 GB e incluye el fichero de pesos, su hash SHA-256 y un manifiesto JSON de conversion y procedencia.
+Mercan 0.8B DPO — Q4_K_M es un artefacto de despliegue publicado por MercanAI en Hugging Face. Se trata de la cuantizacion Q4_K_M del checkpoint final de la etapa DPO de Mercan 0.8B, un modelo de lenguaje de aproximadamente 800 millones de parametros especializado en turco y distribuido en un formato GGUF v3 propio que el autor denomina "Mercan v1". El repositorio ocupa 0,5 GB e incluye el fichero de pesos, su hash SHA-256 y un manifiesto JSON de conversion y procedencia.
 
 El modelo se construyo a partir de una cadena de entrenamiento "continuation SFT -> DPO", con el checkpoint origen `step_00007895.pt`. Segun la model card, existe una etapa posterior de GRPO/RLVR que no esta incluida en este artefacto, por lo que esta publicacion representa un punto intermedio del pipeline de alineamiento y no la version final del modelo.
 
@@ -100,7 +100,7 @@ Nota: no se dispone de resultados de benchmarks de Mercan 0.8B DPO Q4, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MercanAI/Mercan-0.8B-DPO-Q4
+- Hugging Face: https://huggingface.co/MercanAI/Mercan-0.8B-DPO-Q4
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

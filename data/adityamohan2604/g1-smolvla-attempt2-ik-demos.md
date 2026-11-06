@@ -2,7 +2,7 @@
 
 ## Resumen
 
-g1-smolvla-attempt2-ik-demos es un fine-tune del modelo SmolVLA (familia LeRobot de HuggingFace) aplicado a manipulacion robotica. Lo publica el usuario adityamohan2604 y esta entrenado para una tarea concreta: con un robot humanoide Unitree G1 equipado con mano Dex3-1 en el simulador MuJoCo, coger un bloque azul y colocarlo sobre una estrella azul. El modelo recibe imagenes de una camara de cabeza y emite acciones en espacio articular, es decir, se comporta como una politica vision-lenguaje-accion (VLA) y no como un modelo generativo de texto de proposito general.
+g1-smolvla-attempt2-ik-demos es un fine-tune del modelo SmolVLA (familia LeRobot de Hugging Face) aplicado a manipulacion robotica. Lo publica el usuario adityamohan2604 y esta entrenado para una tarea concreta: con un robot humanoide Unitree G1 equipado con mano Dex3-1 en el simulador MuJoCo, coger un bloque azul y colocarlo sobre una estrella azul. El modelo recibe imagenes de una camara de cabeza y emite acciones en espacio articular, es decir, se comporta como una politica vision-lenguaje-accion (VLA) y no como un modelo generativo de texto de proposito general.
 
 El repositorio contiene 450.046.176 parametros (unos 450 millones) en formato safetensors, con un tamano total de 0,9 GB, lo que es coherente con pesos almacenados en precision de 16 bits. La model card indica que el entrenamiento se realizo sobre demostraciones generadas por un planificador de movimiento con cinematica inversa (IK) y que el modelo alcanza un 73 % de exito en 30 poses de bloque no vistas durante el entrenamiento. Es relevante ahora porque se enmarca en la linea de trabajo de VLA pequenos y abiertos que pueden ejecutarse en hardware modesto, en contraste con alternativas de miles de millones de parametros.
 
@@ -81,10 +81,10 @@ Los datos de los modelos alternativos proceden de su documentacion publica gener
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g1-smolvla-attempt2-ik-demos | 450 M | VLA especializada (fine-tune de SmolVLA) para G1 + Dex3-1 | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
-| SmolVLA (modelo base, HuggingFace) | aprox. 450 M | VLA generica sobre backbone SmolVLM | no disponible | no verificada en esta ficha | publica en HuggingFace |
-| OpenVLA | 7 B | VLA de proposito general sobre backbone Prismatic | no disponible | no verificada en esta ficha | publica en HuggingFace |
-| Octo | aprox. 93 M en la variante base | politica transformer para manipulacion, sin backbone de lenguaje completo | no disponible | no verificada en esta ficha | publica en HuggingFace |
+| g1-smolvla-attempt2-ik-demos | 450 M | VLA especializada (fine-tune de SmolVLA) para G1 + Dex3-1 | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
+| SmolVLA (modelo base, Hugging Face) | aprox. 450 M | VLA generica sobre backbone SmolVLM | no disponible | no verificada en esta ficha | publica en Hugging Face |
+| OpenVLA | 7 B | VLA de proposito general sobre backbone Prismatic | no disponible | no verificada en esta ficha | publica en Hugging Face |
+| Octo | aprox. 93 M en la variante base | politica transformer para manipulacion, sin backbone de lenguaje completo | no disponible | no verificada en esta ficha | publica en Hugging Face |
 
 No hay datos publicados que permitan comparar el rendimiento de este fine-tune con el de las alternativas bajo un protocolo comun: la unica metrica disponible (73 % en 30 poses no vistas) es especifica de la tarea y del entorno definidos por el autor.
 
@@ -104,7 +104,7 @@ No hay datos publicados que permitan comparar el rendimiento de este fine-tune c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityamohan2604/g1-smolvla-attempt2-ik-demos
+- Modelo en Hugging Face: https://huggingface.co/adityamohan2604/g1-smolvla-attempt2-ik-demos
 - Codigo, evaluacion e instrucciones (GitHub del autor): https://github.com/Adityamohan260498/RL-Finetuned-VLA-Humanod-Manipulation
 - Resultados de busqueda web: no se encontro ningun enlace relevante; las busquedas devolvieron unicamente dominios ajenos al ambito tecnico.
 - SmolVLA y libreria LeRobot (documentacion del modelo base): no disponible en la informacion proporcionada.

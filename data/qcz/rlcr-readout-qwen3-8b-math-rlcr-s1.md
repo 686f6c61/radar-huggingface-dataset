@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Contexto | Método de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qcz/rlcr-readout-qwen3-8b-math-rlcr-s1 | no disponible | no disponible | RLVR/RLCR con CISPO | no disponible | HuggingFace |
-| qcz/rlcr-readout-qwen3-8b-math-rlcr | no disponible | no disponible | RLVR/RLCR | no disponible | HuggingFace |
-| resistz/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step | no disponible | no disponible | RLCR con DAPO | MIT | HuggingFace |
+| qcz/rlcr-readout-qwen3-8b-math-rlcr-s1 | no disponible | no disponible | RLVR/RLCR con CISPO | no disponible | Hugging Face |
+| qcz/rlcr-readout-qwen3-8b-math-rlcr | no disponible | no disponible | RLVR/RLCR | no disponible | Hugging Face |
+| resistz/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step | no disponible | no disponible | RLCR con DAPO | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qcz/rlcr-readout-qwen3-8b-math-rlcr-s1
+- Hugging Face: https://huggingface.co/qcz/rlcr-readout-qwen3-8b-math-rlcr-s1
 - Proyecto base: https://huggingface.co/qcz/rlcr-readout-qwen3-8b-math-rlcr
 - Modelo similar: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step

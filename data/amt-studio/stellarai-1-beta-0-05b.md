@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - CPU con 4 GB de RAM es suficiente para inferencia, según la model card.
 - Los pesos ocupan aproximadamente 93 MB, por lo que caben en cualquier GPU con al menos 1 GB de VRAM si se desea acelerar la inferencia (aunque no se especifica soporte oficial para GPU).
-- Compatible con la librería `transformers` de HuggingFace, usando `trust_remote_code=True` para cargar el código personalizado.
+- Compatible con la librería `transformers` de Hugging Face, usando `trust_remote_code=True` para cargar el código personalizado.
 - No se proporcionan datos de latencia ni throughput. Al ser un modelo de 50M de parámetros, se espera una generación rápida en CPU, pero no hay mediciones oficiales.
 - Opciones de despliegue: inferencia local con Python y `transformers`, o integración en scripts personalizados. No se mencionan compatibilidades con vLLM, llama.cpp u Ollama.
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMT-Studio/StellarAI-1-beta-0.05b
+- Modelo en Hugging Face: https://huggingface.co/AMT-Studio/StellarAI-1-beta-0.05b
 - No se proporcionan otros enlaces (papers, repositorios, demos) en la información disponible.

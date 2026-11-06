@@ -84,7 +84,7 @@ Calibración de `p_top_beats`: en los pares de test, la probabilidad predicha me
 
 | Modelo | Tipo | Parámetros | Contexto | Accuracy por pares (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Propensity One lite | Ridge sobre TF-IDF | 284.725 | no aplica | 0,589 | CC BY 4.0 | Público en HuggingFace |
+| Propensity One lite | Ridge sobre TF-IDF | 284.725 | no aplica | 0,589 | CC BY 4.0 | Público en Hugging Face |
 | TF-IDF ridge plano | Ridge sobre TF-IDF | no disponible | no aplica | 0,572 | no disponible | Baseline interno del autor |
 | LightGBM sobre features de titular | GBDT | no disponible | no aplica | 0,539 | no disponible | Baseline interno del autor |
 | Propensity One completo | ModernBERT-large afinado + imagen | no disponible | no disponible | 0,600 | no pública | Privado (datos de TikTok solo para investigación) |
@@ -106,7 +106,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areai51/propensity-one-lite
+- Modelo en Hugging Face: https://huggingface.co/areai51/propensity-one-lite
 - Demo en el navegador (Space): https://huggingface.co/spaces/areai51/propensity-one
 - Upworthy Research Archive: https://osf.io/jd64p/
 - Referencia del corpus: Matias, J. N., Munger, K., Aubin Le Quere, M., & Ebersole, C. (2021), *The Upworthy Research Archive, a time series of 32,487 experiments in U.S. media*, Scientific Data 8, 195.

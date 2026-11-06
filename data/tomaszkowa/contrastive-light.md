@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaszkowa/contrastive-light` es un repositorio de HuggingFace publicado por el usuario tomaszkowa que contiene una implementación de un modelo Perceiver orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release con checkpoint validado: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (*smoke tests*). El peso `model.safetensors` incluido es una inicialización válida, no un modelo con entrenamiento completado ni auditado.
+`tomaszkowa/contrastive-light` es un repositorio de Hugging Face publicado por el usuario tomaszkowa que contiene una implementación de un modelo Perceiver orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de una release con checkpoint validado: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (*smoke tests*). El peso `model.safetensors` incluido es una inicialización válida, no un modelo con entrenamiento completado ni auditado.
 
 La arquitectura es un Perceiver (transformer con cross-attention para fusionar entradas de distinta modalidad en un espacio latente de tamaño fijo), con atención de tipo *grouped query*, fusión por *cross attention*, activación *approx gelu* y normalización *InstanceNorm*. La escala declarada es "huge", aunque el recuento real de parámetros en el fichero safetensors es de solo 16.576 parámetros, lo que indica que se trata de una implementación de juguete o esqueleto, no de un modelo de gran tamaño.
 
@@ -67,12 +67,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según declara la propia model card.
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No hay benchmarks ni métricas publicadas; cualquier comparación con otros modelos carece de base empírica.
-- La implementación es personalizada y no es compatible con las APIs de carga automática de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no es compatible con las APIs de carga automática de Hugging Face sin un adaptador explícito.
 - La licencia apache-2.0 permite uso comercial del código y los pesos, pero la model card advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - El recuento real de parámetros (16.576) contradice la etiqueta "huge" de la model card; conviene no interpretar la escala declarada como indicativa de capacidad.
-- No hay pipeline asignado en HuggingFace, lo que impide su uso directo a través de la Inference API.
+- No hay pipeline asignado en Hugging Face, lo que impide su uso directo a través de la Inference API.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomaszkowa/contrastive-light
+- Repositorio en Hugging Face: https://huggingface.co/tomaszkowa/contrastive-light
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

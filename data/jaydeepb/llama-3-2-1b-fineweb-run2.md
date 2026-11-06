@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaydeepb/llama-3.2-1b-fineweb-run2` es un artefacto de investigación publicado en HuggingFace por el usuario jaydeepb: un ajuste fino de `meta-llama/Llama-3.2-1B` sobre una muestra de 1 millón de secuencias del corpus web **FineWeb**, durante una única época. No es un modelo de propósito general ni un asistente instruido: es la "Run 2" (run de evaluación sobre datos retenidos) del trabajo *Predicting Memorization Before Fine-Tuning Language Models*, y su función es servir como objeto de estudio para clasificadores que predicen, a partir de características del modelo base previo al ajuste, qué secuencias acabará memorizando el modelo tras el fine-tuning.
+`jaydeepb/llama-3.2-1b-fineweb-run2` es un artefacto de investigación publicado en Hugging Face por el usuario jaydeepb: un ajuste fino de `meta-llama/Llama-3.2-1B` sobre una muestra de 1 millón de secuencias del corpus web **FineWeb**, durante una única época. No es un modelo de propósito general ni un asistente instruido: es la "Run 2" (run de evaluación sobre datos retenidos) del trabajo *Predicting Memorization Before Fine-Tuning Language Models*, y su función es servir como objeto de estudio para clasificadores que predicen, a partir de características del modelo base previo al ajuste, qué secuencias acabará memorizando el modelo tras el fine-tuning.
 
 La relevancia del modelo es metodológica, no de producto. Al estar ajustado sobre datos web reales, puede reproducir fragmentos de su conjunto de entrenamiento de forma literal, lo que lo convierte en un banco de pruebas controlado para investigar memorización verbatim, extracción de datos, filtraciones de información personal y contaminación de benchmarks. El repositorio ocupa 2,5 GB y contiene 1.235.814.400 parámetros en formato safetensors, coherentes con la arquitectura Llama 3.2 de 1B.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaydeepb/llama-3.2-1b-fineweb-run2` | 1,23 B | 128k heredados del base (no confirmado en la card) | Artefacto de investigación sobre memorización | Llama 3.2 Community | HuggingFace, safetensors |
-| `meta-llama/Llama-3.2-1B` | 1,23 B | 128k | Modelo base de propósito general | Llama 3.2 Community | HuggingFace, gated |
-| `meta-llama/Llama-3.2-1B-Instruct` | 1,23 B | 128k | Asistente instruido y alineado | Llama 3.2 Community | HuggingFace, gated |
-| `HuggingFaceTB/SmolLM2-1.7B` | 1,7 B | 8k (la variante base; las instruct amplían según configuración) | Modelo pequeño de propósito general | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen2.5-1.5B` | 1,5 B | 32k | Modelo pequeño multilingüe de propósito general | Apache 2.0 | HuggingFace |
+| `jaydeepb/llama-3.2-1b-fineweb-run2` | 1,23 B | 128k heredados del base (no confirmado en la card) | Artefacto de investigación sobre memorización | Llama 3.2 Community | Hugging Face, safetensors |
+| `meta-llama/Llama-3.2-1B` | 1,23 B | 128k | Modelo base de propósito general | Llama 3.2 Community | Hugging Face, gated |
+| `meta-llama/Llama-3.2-1B-Instruct` | 1,23 B | 128k | Asistente instruido y alineado | Llama 3.2 Community | Hugging Face, gated |
+| `HuggingFaceTB/SmolLM2-1.7B` | 1,7 B | 8k (la variante base; las instruct amplían según configuración) | Modelo pequeño de propósito general | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen2.5-1.5B` | 1,5 B | 32k | Modelo pequeño multilingüe de propósito general | Apache 2.0 | Hugging Face |
 
 La diferencia clave frente a las alternativas no es de rendimiento sino de naturaleza: los otros checkpoints son modelos de propósito general con benchmarks publicados, mientras que este es un artefacto de medición sin evaluación de capacidades y con memorización deliberada de datos de entrenamiento. Para cualquier tarea de producto, el modelo base o su variante Instruct son la elección correcta.
 
@@ -85,7 +85,7 @@ La diferencia clave frente a las alternativas no es de rendimiento sino de natur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-fineweb-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-fineweb-run2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Paper de referencia (citado en la model card, sin enlace proporcionado): *Predicting Memorization Before Fine-Tuning Language Models* — no disponible
 - Corpus FineWeb: no disponible en la información proporcionada

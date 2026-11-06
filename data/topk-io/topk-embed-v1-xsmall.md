@@ -6,7 +6,7 @@ topk-embed-v1-xsmall es un recuperador (retriever) multimodal de tipo late-inter
 
 A diferencia de los modelos de embeddings clasicos, que comprimen cada entrada en un unico vector, este modelo conserva multiples embeddings por token de texto o por parche de imagen y puntua la relevancia mediante MaxSim: cada vector de la consulta se empareja con su vector mas similar del documento y las similitudes se suman. Este esquema, popularizado por la familia ColBERT, permite capturar coincidencias a nivel de termino y mejora la recuperacion en dominios con vocabulario especifico.
 
-Su relevancia actual reside en tres factores: es multimodal con un unico modelo (texto e imagen comparten espacio de recuperacion), cubre 11 idiomas entre los que se incluye el espanol, y su tamano de 0.8B lo hace desplegable en una sola GPU frente a alternativas multimodales de 3B o mas. Se integra en el ecosistema sentence-transformers mediante la clase MultiVectorEncoder. El repositorio acumula 723 descargas y 10 likes en HuggingFace.
+Su relevancia actual reside en tres factores: es multimodal con un unico modelo (texto e imagen comparten espacio de recuperacion), cubre 11 idiomas entre los que se incluye el espanol, y su tamano de 0.8B lo hace desplegable en una sola GPU frente a alternativas multimodales de 3B o mas. Se integra en el ecosistema sentence-transformers mediante la clase MultiVectorEncoder. El repositorio acumula 723 descargas y 10 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ El punto de partida es Qwen/Qwen3.5-0.8B, sobre el que se anade la cabecera mult
 - Recuperacion texto-a-imagen: la misma consulta de texto puede enfrentarse a imagenes como paginas escaneadas, informes o diapositivas, sin necesidad de OCR previo.
 - Representacion multi-vector: mantiene un embedding por token o parche, lo que preserva informacion local que los modelos de vector unico pierden.
 - Multilingue: 11 idiomas declarados (ingles, ruso, frances, neerlandes, aleman, espanol, italiano, portugues, danes, noruego y sueco), con consultas y documentos potencialmente en idiomas distintos.
-- Integracion con sentence-transformers mediante `MultiVectorEncoder`, con carga desde HuggingFace Hub.
+- Integracion con sentence-transformers mediante `MultiVectorEncoder`, con carga desde Hugging Face Hub.
 - Codificacion por lotes separada para consultas y para documentos, lo que permite preindexar el corpus una sola vez.
 - No es un modelo generativo: no produce texto, tool calling ni razonamiento multi-paso. Su salida son puntuaciones de similitud.
 - No se documentan modos de pensamiento, capacidades de audio ni function calling.
@@ -93,7 +93,7 @@ Los datos de los modelos comparables no se han podido verificar dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/topk-io/topk-embed-v1-xsmall
+- Modelo en Hugging Face: https://huggingface.co/topk-io/topk-embed-v1-xsmall
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - requirements.txt del repositorio: https://huggingface.co/topk-io/topk-embed-v1-xsmall/blob/main/requirements.txt
 - Sitio del autor (TopK, busqueda multi-vector en produccion): https://topk.io

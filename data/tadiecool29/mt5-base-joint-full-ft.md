@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt5-base-joint-full-ft es un ajuste fino (fine-tuning) completo del modelo multilingue google/mt5-base, publicado por el usuario tadiecool29 en HuggingFace. Se trata de un modelo de generacion texto-a-texto (text2text-generation) orientado a tareas de clasificacion y extraccion conjunta: la propia model card reporta metricas de Exact Match, analisis de sentimiento y deteccion de postura (stance), lo que sugiere un entrenamiento multi-tarea sobre un unico corpus. El repositorio tiene 582.401.280 parametros almacenados en safetensors y ocupa 1,2 GB.
+mt5-base-joint-full-ft es un ajuste fino (fine-tuning) completo del modelo multilingue google/mt5-base, publicado por el usuario tadiecool29 en Hugging Face. Se trata de un modelo de generacion texto-a-texto (text2text-generation) orientado a tareas de clasificacion y extraccion conjunta: la propia model card reporta metricas de Exact Match, analisis de sentimiento y deteccion de postura (stance), lo que sugiere un entrenamiento multi-tarea sobre un unico corpus. El repositorio tiene 582.401.280 parametros almacenados en safetensors y ocupa 1,2 GB.
 
 El modelo hereda la arquitectura encoder-decoder de la familia T5/mT5, con atencion con sesgos de posicion relativa y un vocabulario multilingue de gran tamano. Al derivar de mt5-base, esta teoricamente capacitado para operar en mas de cien idiomas, aunque el autor no declara que idiomas concretos se han usado en el ajuste fino. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para integrarlo en productos propietarios.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero concreta: se trata de un modelo de investi
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo de google/mt5-base, un transformer encoder-decoder con atencion de posicion relativa por bandas (relative position biases) en lugar de embeddings posicionales absolutos, y un vocabulario SentencePiece multilingue de gran tamano. El fine-tuning se realizo con el Trainer de HuggingFace sobre un dataset que el autor no identifica ("unknown dataset" en la model card). Los hiperparametros documentados son: learning rate 1e-4, batch de entrenamiento 16 con acumulacion de gradiente de 2 pasos (batch efectivo 32), scheduler coseno con 300 pasos de warmup, 10 epocas, semilla 42, label smoothing de 0,1 y optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8.
+El modelo es un fine-tuning completo de google/mt5-base, un transformer encoder-decoder con atencion de posicion relativa por bandas (relative position biases) en lugar de embeddings posicionales absolutos, y un vocabulario SentencePiece multilingue de gran tamano. El fine-tuning se realizo con el Trainer de Hugging Face sobre un dataset que el autor no identifica ("unknown dataset" en la model card). Los hiperparametros documentados son: learning rate 1e-4, batch de entrenamiento 16 con acumulacion de gradiente de 2 pasos (batch efectivo 32), scheduler coseno con 300 pasos de warmup, 10 epocas, semilla 42, label smoothing de 0,1 y optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8.
 
 El nombre del modelo ("joint-full-ft") y las metricas evaluadas apuntan a un entrenamiento multi-tarea conjunto: generacion con Exact Match, clasificacion de sentimiento y clasificacion de postura (stance). No se documenta si hubo RLHF, DPO ni ninguna fase de alineacion posterior; no se especifica el numero de tokens de entrenamiento ni la composicion del corpus. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1, lo que indica un entorno de entrenamiento reciente.
 
@@ -87,10 +87,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt5-base-joint-full-ft | 582M | no disponible (base: 512 tokens) | no disponible (base: 101) | Apache 2.0 | HuggingFace |
-| google/mt5-base | 582M | 512 tokens | 101 | Apache 2.0 | HuggingFace |
-| google/mt5-small | 300M | 512 tokens | 101 | Apache 2.0 | HuggingFace |
-| google-t5/t5-base | 220M | 512 tokens | Ingles | Apache 2.0 | HuggingFace |
+| mt5-base-joint-full-ft | 582M | no disponible (base: 512 tokens) | no disponible (base: 101) | Apache 2.0 | Hugging Face |
+| google/mt5-base | 582M | 512 tokens | 101 | Apache 2.0 | Hugging Face |
+| google/mt5-small | 300M | 512 tokens | 101 | Apache 2.0 | Hugging Face |
+| google-t5/t5-base | 220M | 512 tokens | Ingles | Apache 2.0 | Hugging Face |
 
 El modelo comparte arquitectura, tamano y licencia con google/mt5-base, del que deriva; la diferencia es el ajuste fino multi-tarea, cuyos datos de entrenamiento no estan documentados, lo que impide una comparacion de rendimiento rigurosa con las alternativas.
 
@@ -108,6 +108,6 @@ El modelo comparte arquitectura, tamano y licencia con google/mt5-base, del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/mt5-base-joint-full-ft
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/mt5-base-joint-full-ft
 - Modelo base: https://huggingface.co/google/mt5-base
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos por la busqueda no guardan relacion con el modelo.

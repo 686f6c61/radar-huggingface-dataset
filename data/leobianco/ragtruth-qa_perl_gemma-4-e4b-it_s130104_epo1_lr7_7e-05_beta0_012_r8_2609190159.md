@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `google/gemma-4-E4B-it` publicado por el usuario leobianco en HuggingFace. Se ha entrenado con TRL 1.9.2 mediante RLOO (REINFORCE Leave-One-Out), el metodo de optimizacion por refuerzo presentado en el articulo "Back to Basics: Revisiting REINFORCE-Style Optimization for Learning from Human Feedback in LLMs" (Ahmadian et al., ACL 2024). El identificador del repositorio codifica los hiperparametros del experimento: 1 epoca, learning rate 7e-05, coeficiente beta 0.012, rank 8 y una semilla/fecha (S130104, 2609190159), ademas del prefijo del dataset de entrenamiento (`ragtruth-qa`).
+Este modelo es un ajuste fino (fine-tune) de `google/gemma-4-E4B-it` publicado por el usuario leobianco en Hugging Face. Se ha entrenado con TRL 1.9.2 mediante RLOO (REINFORCE Leave-One-Out), el metodo de optimizacion por refuerzo presentado en el articulo "Back to Basics: Revisiting REINFORCE-Style Optimization for Learning from Human Feedback in LLMs" (Ahmadian et al., ACL 2024). El identificador del repositorio codifica los hiperparametros del experimento: 1 epoca, learning rate 7e-05, coeficiente beta 0.012, rank 8 y una semilla/fecha (S130104, 2609190159), ademas del prefijo del dataset de entrenamiento (`ragtruth-qa`).
 
 El problema que aborda, a juzgar por el nombre del dataset (`ragtruth-qa_PERL`), es el ajuste de un modelo instruct para tareas de pregunta-respuesta con contexto recuperado (RAG) y posiblemente para reducir la alucinacion sobre dicho contexto, aunque la model card no documenta explicitamente el objetivo ni la composicion de los datos. El sufijo "PERL" y la estructura del nombre sugieren un experimento academico dentro de una campana de barrido de hiperparametros, no un modelo destinado a produccion.
 
@@ -19,12 +19,12 @@ La relevancia de esta ficha es limitada y conviene ser franco: el repositorio no
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin GGUF, AWQ, GPTQ ni versiones cuantizadas |
 | Idiomas soportados | no disponible |
 | Licencia | campo declarado como `license` (placeholder) en la model card; no se especifica licencia concreta |
-| Formato de pesos | safetensors (etiqueta `safetensors` en HuggingFace) |
+| Formato de pesos | safetensors (etiqueta `safetensors` en Hugging Face) |
 | Modelo base | google/gemma-4-E4B-it (relacion `finetune`) |
 | Metodo de entrenamiento | RLOO (REINFORCE Leave-One-Out) con TRL |
 | Dataset de entrenamiento | referenciado por nombre como `ragtruth-qa_PERL`; sin documentacion en la model card |
 | Versiones de framework | TRL 1.9.2, Transformers 5.14.1, PyTorch 2.11.0, Datasets 5.0.1, Tokenizers 0.22.2 |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-19T01:59:43Z |
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion de 4 bits: del orden de 3-4 GB en el mismo supuesto (estimacion, no verificada).
 - GPU recomendadas: no disponibles. Para un modelo de ese orden de magnitud, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) serian suficientes en bf16, y una GPU de 8-12 GB bastaria con cuantizacion. Repetimos que se trata de extrapolaciones a partir del tamano nominal, no de datos del autor.
 - Compatibilidad con GPU de consumo: probable en tarjetas de 8 GB o mas con cuantizacion, segun el mismo supuesto, siempre que se genere una version GGUF, que el repositorio no incluye.
-- Opciones de despliegue: el repositorio esta etiquetado como `endpoints_compatible`, por lo que es desplegable mediante HuggingFace Inference Endpoints con la libreria `transformers`. vLLM, TGI, llama.cpp u Ollama no estan confirmados y requieren conversion o soporte especifico del modelo base.
+- Opciones de despliegue: el repositorio esta etiquetado como `endpoints_compatible`, por lo que es desplegable mediante Hugging Face Inference Endpoints con la libreria `transformers`. vLLM, TGI, llama.cpp u Ollama no estan confirmados y requieren conversion o soporte especifico del modelo base.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de datos verificados de alternativas comparables dentro de la info
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `leobianco/ragtruth-qa_PERL_..._r8_2609190159` | objeto de esta ficha | no disponible | no disponible | placeholder `license` | publico, 0 descargas, 0 likes |
-| `google/gemma-4-E4B-it` | modelo base | no disponible en esta informacion | no disponible | no disponible en esta informacion | publico en HuggingFace |
+| `google/gemma-4-E4B-it` | modelo base | no disponible en esta informacion | no disponible | no disponible en esta informacion | publico en Hugging Face |
 | Otras variantes de la misma campana PERL | no localizadas en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en el material facilitado otros fine-tunes comparables (mismo tamano, mismo dataset o mismo metodo RLOO) con datos publicos que permitan una comparacion cuantitativa.
@@ -90,14 +90,14 @@ No se han identificado en el material facilitado otros fine-tunes comparables (m
 - Riesgo de alucinacion: si el objetivo del entrenamiento era mejorar la fidelidad al contexto en tareas RAG, la propia naturaleza del problema implica que persiste el riesgo de generar afirmaciones no respaldadas por la evidencia. No hay metricas que cuantifiquen esta mejora.
 - Sesgos: no documentados. Al ser un ajuste fino de un modelo instruct de gran difusion, es probable que herede los sesgos del modelo base, pero no hay evaluacion disponible.
 - Cobertura idiomatica desconocida: no se declara ningun idioma. El ejemplo de la model card esta en ingles, pero no puede asumirse un comportamiento equivalente en castellano sin pruebas.
-- Repositorio de 0.0 GB: el tamano reportado por HuggingFace sugiere que los pesos podrian no estar subidos o que la medicion esta redondeada a cero. Conviene verificar la pestana "Files and versions" antes de intentar cargar el modelo.
+- Repositorio de 0.0 GB: el tamano reportado por Hugging Face sugiere que los pesos podrian no estar subidos o que la medicion esta redondeada a cero. Conviene verificar la pestana "Files and versions" antes de intentar cargar el modelo.
 - Cero adopcion: 0 descargas y 0 likes implican que practicamente no existe validacion externa, ni issues resueltas, ni reportes de comportamiento en produccion.
 - Fecha de creacion futura respecto a la consulta (2026-09-19): conviene tratar los metadatos temporales con cautela.
 - Resultados de la busqueda web no relacionados: las consultas realizadas devolvieron exclusivamente contenidos deportivos (Los Angeles Lakers), sin ninguna fuente tecnica util sobre este modelo. No se ha podido contrastar informacion con fuentes externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/ragtruth-qa_PERL_gemma-4-E4B-it_S130104_epo1_lr7_7e-05_beta0_012_r8_2609190159
+- Modelo en Hugging Face: https://huggingface.co/leobianco/ragtruth-qa_PERL_gemma-4-E4B-it_S130104_epo1_lr7_7e-05_beta0_012_r8_2609190159
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/leobianco-universit-paris-saclay/new_perl/runs/b3257z1l
 - Articulo de RLOO (ACL 2024): https://huggingface.co/papers/2402.14740

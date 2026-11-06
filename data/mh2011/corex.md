@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MH2011/coreX es un repositorio de modelo publicado en HuggingFace por el usuario MH2011, con licencia Apache 2.0 y etiquetado con la región "us". La informacion disponible es extremadamente limitada: no hay pipeline declarado, no se especifican idiomas, no hay model card con contenido tecnico (el README se reduce a la declaracion de licencia), el repositorio registra 0 descargas y 0 "likes", y no existe documentacion asociada en la busqueda web.
+MH2011/coreX es un repositorio de modelo publicado en Hugging Face por el usuario MH2011, con licencia Apache 2.0 y etiquetado con la región "us". La informacion disponible es extremadamente limitada: no hay pipeline declarado, no se especifican idiomas, no hay model card con contenido tecnico (el README se reduce a la declaracion de licencia), el repositorio registra 0 descargas y 0 "likes", y no existe documentacion asociada en la busqueda web.
 
 En el momento de redactar esta ficha no es posible determinar que es coreX: se desconoce su arquitectura, su numero de parametros, su longitud de contexto, sus datos de entrenamiento y sus capacidades. Tampoco hay evidencia de pesos publicados, de formatos de cuantizacion ni de resultados de evaluacion. La unica informacion fiable es la licencia (Apache 2.0), el autor y las fechas de creacion y actualizacion (ambas 2026-09-14, segun los metadatos del repositorio).
 
@@ -86,7 +86,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, arquitectura y t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MH2011/coreX
+- Hugging Face: https://huggingface.co/MH2011/coreX
 - Paper: no disponible.
 - Blog tecnico: no disponible.
 - Repositorio de codigo: no disponible.

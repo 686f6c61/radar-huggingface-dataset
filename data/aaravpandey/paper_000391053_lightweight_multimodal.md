@@ -74,7 +74,7 @@ Estos modelos no son comparables directamente con el repositorio evaluado porque
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaravpandey/paper_000391053_lightweight_multimodal
+- Repositorio Hugging Face: https://huggingface.co/aaravpandey/paper_000391053_lightweight_multimodal
 - Paper relacionado (Springer): https://link.springer.com/content/pdf/10.1007/s44163-026-01252-w_reference.pdf
 - Paper relacionado (arXiv, estimacion de razonamiento): https://arxiv.org/pdf/2608.18591
 - TinyGPT-V (wandb): https://wandb.ai/byyoung3/ml-news/reports/TinyGPT-V-A-New-Lightweight-Multimodal-LLM---Vmlldzo2NDUxMTI0

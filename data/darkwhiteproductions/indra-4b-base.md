@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Indra-4B-Base es un modelo de lenguaje causal publicado por el usuario DarkWhiteProductions en HuggingFace bajo el identificador `DarkWhiteProductions/Indra-4B-Base`. Se trata de un modelo de 4.022.470.400 parametros (aproximadamente 4B) almacenado en formato safetensors y distribuido a traves de la libreria `transformers`, con un repositorio de 8,1 GB, lo que resulta coherente con pesos en precision de 16 bits sin cuantizar.
+Indra-4B-Base es un modelo de lenguaje causal publicado por el usuario DarkWhiteProductions en Hugging Face bajo el identificador `DarkWhiteProductions/Indra-4B-Base`. Se trata de un modelo de 4.022.470.400 parametros (aproximadamente 4B) almacenado en formato safetensors y distribuido a traves de la libreria `transformers`, con un repositorio de 8,1 GB, lo que resulta coherente con pesos en precision de 16 bits sin cuantizar.
 
 El modelo se presenta con las etiquetas `causal-lm`, `reasoning`, `conversational`, `research`, `experimental` y `custom-code`, ademas de la etiqueta `qwen`, lo que sugiere una posible base arquitectonica derivada de la familia Qwen, aunque no se ha publicado documentacion tecnica que lo confirme. La etiqueta `custom_code` implica que la carga del modelo requiere `trust_remote_code=True` y la ejecucion de codigo Python incluido en el propio repositorio, un factor relevante de seguridad para cualquier integracion en produccion.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos. La licencia declarada es `other`, sin que se haya especificado el texto concreto, y el unico idioma declarado es el ingles. El modelo presenta un volumen de adopcion muy bajo (4 descargas y 0 likes en el momento de la consulta), por lo que debe considerarse un experimento de investigacion mas que una opcion contrastada para produccion.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos. La licencia declarada es `other`, sin que se haya especificado el texto concreto, y el unico idioma declarado es el ingles. El modelo presenta un volumen de adopcion muy bajo (4 descargas y 0 likes en el momento de la consulta), por lo que debe considerarse un experimento de investigacion mas que una opcion contrastada para produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El acceso al repositorio esta restringido (gated): es necesario aceptar condicio
 | Licencia | `other` (sin texto de licencia especificado) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 8,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria de inferencia | transformers |
 | Codigo personalizado | Si (`custom_code`; requiere `trust_remote_code=True`) |
 | Fecha de creacion | 21 de febrero de 2026 |
@@ -99,9 +99,9 @@ Diferencias relevantes: frente a las alternativas, Indra-4B-Base no publica long
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarkWhiteProductions/Indra-4B-Base
+- Hugging Face: https://huggingface.co/DarkWhiteProductions/Indra-4B-Base
 - Paper: no disponible
 - Blog tecnico: no disponible
-- Repositorio de codigo: no disponible (el repositorio de HuggingFace incluye codigo personalizado, pero no se ha localizado un repositorio externo)
+- Repositorio de codigo: no disponible (el repositorio de Hugging Face incluye codigo personalizado, pero no se ha localizado un repositorio externo)
 - Demo: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun resultado relevante sobre el modelo. Las consultas devolvieron exclusivamente listados de programacion televisiva en frances, sin relacion alguna con el modelo ni con su autor.

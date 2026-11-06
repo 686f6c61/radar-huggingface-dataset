@@ -96,7 +96,7 @@ No se dispone de datos de calidad (benchmarks) para ninguno de los modelos de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ6e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Coleccion Qwopus3.8-27B-Flash oQe MTP: https://huggingface.co/collections/scottlowry/qwopus38-27b-flash-oqe-mtp
 - Variante de 4 bits: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp

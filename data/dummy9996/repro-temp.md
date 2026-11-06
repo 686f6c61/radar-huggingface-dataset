@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dummy9996/repro-temp` es una publicación de HuggingFace creada por el usuario `dummy9996` el 15 de agosto de 2026, con un tamaño de 7.7 GB. La model card asociada únicamente declara una licencia genérica "other" y no incluye ninguna descripción técnica, arquitectura, conjunto de datos, pipeline o documentación adicional. No se especifican idiomas soportados, ni tareas, ni formato de pesos, ni instrucciones de uso.
+El repositorio `dummy9996/repro-temp` es una publicación de Hugging Face creada por el usuario `dummy9996` el 15 de agosto de 2026, con un tamaño de 7.7 GB. La model card asociada únicamente declara una licencia genérica "other" y no incluye ninguna descripción técnica, arquitectura, conjunto de datos, pipeline o documentación adicional. No se especifican idiomas soportados, ni tareas, ni formato de pesos, ni instrucciones de uso.
 
 Dado que la información pública disponible es prácticamente inexistente, no es posible determinar qué modelo es, qué problema resuelve, ni cuáles son sus características técnicas. El nombre "repro-temp" sugiere que podría tratarse de un repositorio temporal de prueba o reproducción, pero no hay evidencia que lo confirme. Esta ficha se limita a reflejar los datos disponibles y a señalar las carencias de información, sin especular sobre el contenido real del repositorio.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la identidad ni las características del modelo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dummy9996/repro-temp
+- Repositorio en Hugging Face: https://huggingface.co/dummy9996/repro-temp

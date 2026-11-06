@@ -73,6 +73,6 @@ No se conocen otros checkpoints del mismo sweep con datos públicos comparables.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h045.rl_v8.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h045.rl_v8.step_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces (papers, blogs o demos) específicos para este checkpoint.

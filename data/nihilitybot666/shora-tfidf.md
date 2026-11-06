@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Shora TF-IDF + LogReg (NaijaScam v0.1) es un clasificador de texto de tipo scam vs legit publicado en HuggingFace por el usuario Nihilitybot666, asociado al proyecto Shora. No es un modelo de lenguaje neuronal: es un pipeline clasico de scikit-learn que combina vectorizacion TF-IDF (n-gramas de palabra de 1 a 2 y n-gramas de caracteres char_wb de 2 a 5) con una regresion logistica (C=4, class_weight balanced). El repositorio incluye dos artefactos joblib: binary.joblib para la decision binaria estafa/legitimo y scam_type.joblib para una clasificacion de 17 clases (9 tipos de estafa y 8 tipos de contenido legitimo).
+Shora TF-IDF + LogReg (NaijaScam v0.1) es un clasificador de texto de tipo scam vs legit publicado en Hugging Face por el usuario Nihilitybot666, asociado al proyecto Shora. No es un modelo de lenguaje neuronal: es un pipeline clasico de scikit-learn que combina vectorizacion TF-IDF (n-gramas de palabra de 1 a 2 y n-gramas de caracteres char_wb de 2 a 5) con una regresion logistica (C=4, class_weight balanced). El repositorio incluye dos artefactos joblib: binary.joblib para la decision binaria estafa/legitimo y scam_type.joblib para una clasificacion de 17 clases (9 tipos de estafa y 8 tipos de contenido legitimo).
 
 El modelo esta orientado a la deteccion de fraude textual en el contexto nigeriano, con soporte declarado para ingles, pidgin nigeriano (pcm), yoruba (yo), igbo (ig) y hausa (ha). Su propuesta de valor es el coste: ocupa aproximadamente 4 MB, se ejecuta en CPU a un ritmo de en torno a 0,5 ms por mensaje y no requiere GPU. Frente a un LLM, es dos o tres ordenes de magnitud mas rapido y barato por inferencia, a cambio de una capacidad de generalizacion mucho menor.
 
-Es relevante ahora como primera etapa de filtrado en pipelines antifraude (SMS, WhatsApp, correo, marketplaces) antes de invocar un modelo mayor o una revision humana. El propio autor advierte que falla en aproximadamente la mitad de las estafas cortas y conversacionales escritas a mano (recall del 50 % en el conjunto challenge), por lo que debe usarse como prefiltro y no como unica salvaguarda. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y los metadatos de HuggingFace indican fecha de publicacion del 8 de octubre de 2026.
+Es relevante ahora como primera etapa de filtrado en pipelines antifraude (SMS, WhatsApp, correo, marketplaces) antes de invocar un modelo mayor o una revision humana. El propio autor advierte que falla en aproximadamente la mitad de las estafas cortas y conversacionales escritas a mano (recall del 50 % en el conjunto challenge), por lo que debe usarse como prefiltro y no como unica salvaguarda. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y los metadatos de Hugging Face indican fecha de publicacion del 8 de octubre de 2026.
 
 ## Especificaciones técnicas
 
@@ -93,13 +93,13 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros c
 - La cobertura multilingue esta declarada para en, pcm, yo, ig y ha, pero no se aportan metricas desagregadas por idioma, por lo que el rendimiento real en cada lengua es desconocido.
 - No se documentan tasas de alucinacion porque el modelo no genera texto; el equivalente son falsos positivos y falsos negativos, sin matriz de confusion publicada.
 - Licencia MIT: permite uso comercial y modificacion con atribucion y sin garantia; se debe conservar el aviso de copyright y de licencia.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que no cuenta con validacion externa ni con reportes de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que no cuenta con validacion externa ni con reportes de la comunidad.
 - No hay informacion sobre versionado de los artefactos, proceso de reentrenamiento ni mantenimiento futuro.
-- Los metadatos de HuggingFace indican fecha de publicacion del 8 de octubre de 2026, y la model card se etiqueta como NaijaScam v0.1, lo que sugiere un estado inicial y no consolidado.
+- Los metadatos de Hugging Face indican fecha de publicacion del 8 de octubre de 2026, y la model card se etiqueta como NaijaScam v0.1, lo que sugiere un estado inicial y no consolidado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nihilitybot666/shora-tfidf
+- Hugging Face: https://huggingface.co/Nihilitybot666/shora-tfidf
 - Repositorio del proyecto Shora: https://github.com/kpealeakara-rgb/shora
 - Dataset NaijaScam: https://huggingface.co/datasets/Nihilitybot666/naijascam
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de soporte tecnico de electrodomesticos y foros no relacionados), por lo que no se anaden mas enlaces.

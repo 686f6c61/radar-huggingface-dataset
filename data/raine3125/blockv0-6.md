@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BLOCKv0.6 | 3,88B | img2img Minecraft skin | no aplica | Apache 2.0 | HuggingFace (diffusers) |
-| FLUX.2-klein-base-4B | no disponible | difusión texto/imagen general | no aplica | no disponible en la información | HuggingFace (modelo base) |
-| BLOCKv0.5 | basado en FLUX.2-klein-base-9B | img2img Minecraft skin | no aplica | no disponible en la información | HuggingFace (versión anterior) |
+| BLOCKv0.6 | 3,88B | img2img Minecraft skin | no aplica | Apache 2.0 | Hugging Face (diffusers) |
+| FLUX.2-klein-base-4B | no disponible | difusión texto/imagen general | no aplica | no disponible en la información | Hugging Face (modelo base) |
+| BLOCKv0.5 | basado en FLUX.2-klein-base-9B | img2img Minecraft skin | no aplica | no disponible en la información | Hugging Face (versión anterior) |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones ni con alternativas de la misma categoría; la comparación se limita a parámetros, modelo base y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones ni con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raine3125/BLOCKv0.6
+- Modelo en Hugging Face: https://huggingface.co/Raine3125/BLOCKv0.6
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Paper citado (arXiv:2603.03964): http://arxiv.org/abs/2603.03964
 - Librería diffusers: https://github.com/huggingface/diffusers

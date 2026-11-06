@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gyung/gdn2-cpt-vanilla-fineweb | 370M | no disponible | CPT sobre FineWeb (105M tokens) | no disponible | HuggingFace |
-| gyung/gdn2-cpt-remoe-tk2-fineweb | 370M | no disponible | CPT sobre FineWeb (105M tokens) con ReMoE | no disponible | HuggingFace |
+| gyung/gdn2-cpt-vanilla-fineweb | 370M | no disponible | CPT sobre FineWeb (105M tokens) | no disponible | Hugging Face |
+| gyung/gdn2-cpt-remoe-tk2-fineweb | 370M | no disponible | CPT sobre FineWeb (105M tokens) con ReMoE | no disponible | Hugging Face |
 | NVlabs/GatedDeltaNet-2 (1.3B) | 1.3B | no disponible | 100B tokens FineWeb-Edu | no disponible | GitHub |
 
 La comparativa se limita a los modelos de la misma serie de CPT y al modelo base de NVlabs, que es más grande y entrenado con muchos más datos. No se dispone de resultados de rendimiento para establecer una comparación cuantitativa.
@@ -70,13 +70,13 @@ La comparativa se limita a los modelos de la misma serie de CPT y al modelo base
 - Entrenamiento limitado: el CPT se realizó sobre solo 105M tokens, lo que puede provocar un ajuste insuficiente a los datos de FineWeb y una posible degradación en tareas generales.
 - Sin licencia especificada: la ausencia de licencia impide conocer las restricciones de uso comercial o de redistribución.
 - Sin documentación de sesgos: no se han publicado análisis de sesgos o alucinaciones, por lo que no se puede garantizar un comportamiento seguro en producción.
-- Formato propietario: el checkpoint se distribuye como `.pth`, lo que requiere conversión para su uso con frameworks estándar como HuggingFace Transformers.
+- Formato propietario: el checkpoint se distribuye como `.pth`, lo que requiere conversión para su uso con frameworks estándar como Hugging Face Transformers.
 - No apto para producción: al ser un artefacto de investigación, no se recomienda su uso en aplicaciones reales sin una evaluación exhaustiva.
 
 ## Enlaces
 
-- [HuggingFace: gyung/gdn2-cpt-vanilla-fineweb](https://huggingface.co/gyung/gdn2-cpt-vanilla-fineweb)
-- [HuggingFace: gyung/gdn2-cpt-remoe-tk2-fineweb (checkpoint comparativo)](https://huggingface.co/gyung/gdn2-cpt-remoe-tk2-fineweb)
+- [Hugging Face: gyung/gdn2-cpt-vanilla-fineweb](https://huggingface.co/gyung/gdn2-cpt-vanilla-fineweb)
+- [Hugging Face: gyung/gdn2-cpt-remoe-tk2-fineweb (checkpoint comparativo)](https://huggingface.co/gyung/gdn2-cpt-remoe-tk2-fineweb)
 - [GitHub: GatedLinearAttention2 (repositorio del autor)](https://github.com/gyunggyung/GatedLinearAttention2)
 - [GitHub: NVlabs/GatedDeltaNet-2 (implementación oficial)](https://github.com/NVlabs/GatedDeltaNet-2/)
 - [DeepWiki: GatedDeltaNet2 (GDN-2) y WallAttention en flash-linear-attention](https://deepwiki.com/fla-org/flash-linear-attention/2.12-gateddeltanet2-(gdn-2)-and-wallattention)

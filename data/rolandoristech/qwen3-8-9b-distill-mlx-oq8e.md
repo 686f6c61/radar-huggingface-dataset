@@ -91,10 +91,10 @@ La comparativa mas directa y con datos verificables es contra las otras variante
 
 | Modelo | Parametros | Tamano en disco | Precision efectiva | Generacion (tok/s) | Memoria pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3.8-9B-Distill-oQ4e | ~9B | 4,9 GB | 4-bit mixta con imatrix | 43,0 | 5,471 GB | Apache 2.0 | HuggingFace |
-| Qwen3.8-9B-Distill-oQ5e | ~9B | 6,0 GB | 5-bit mixta con imatrix | 37,1 | 6,555 GB | Apache 2.0 | HuggingFace |
-| Qwen3.8-9B-Distill-oQ6e | ~9B | 7,0 GB | 6-bit mixta con imatrix | 33,3 | 7,664 GB | Apache 2.0 | HuggingFace |
-| Qwen3.8-9B-Distill-oQ8e | ~9B | 8,9 GB | ~4,7-8,5 bpw efectivos | 28,7 | 9,679 GB | Apache 2.0 | HuggingFace |
+| Qwen3.8-9B-Distill-oQ4e | ~9B | 4,9 GB | 4-bit mixta con imatrix | 43,0 | 5,471 GB | Apache 2.0 | Hugging Face |
+| Qwen3.8-9B-Distill-oQ5e | ~9B | 6,0 GB | 5-bit mixta con imatrix | 37,1 | 6,555 GB | Apache 2.0 | Hugging Face |
+| Qwen3.8-9B-Distill-oQ6e | ~9B | 7,0 GB | 6-bit mixta con imatrix | 33,3 | 7,664 GB | Apache 2.0 | Hugging Face |
+| Qwen3.8-9B-Distill-oQ8e | ~9B | 8,9 GB | ~4,7-8,5 bpw efectivos | 28,7 | 9,679 GB | Apache 2.0 | Hugging Face |
 | 4-bit g32 uniforme (referencia de formato) | ~9B | no disponible | 5,003 bpw | no disponible | no disponible | no aplica | no aplica |
 | 8-bit g64 uniforme (referencia de formato) | ~9B | no disponible | 8,502 bpw | no disponible | no disponible | no aplica | no aplica |
 
@@ -105,7 +105,7 @@ Observacion sobre el patron de rendimiento: dentro de la familia de 9B, la veloc
 - Riesgo de alucinacion: la propia model card lo advierte de forma explicita ("Distilled reasoning model. May hallucinate"). Es un modelo destilado, no un modelo base verificado.
 - Perdida de calidad por cuantizacion: los pesos son lossy respecto al maestro BF16. El autor afirma que es mas preciso que las cuantizaciones uniformes g32 y g64, pero no aporta comparacion con el BF16 original ni con metricas estandar que respalden esa afirmacion.
 - Solo texto: no admite entrada o salida de imagenes, audio ni ninguna otra modalidad.
-- Idiomas: el campo de idiomas esta vacio en la ficha de HuggingFace, por lo que no hay garantia documentada de calidad en castellano ni en ningun otro idioma concreto. El unico prompt verificado esta en ingles.
+- Idiomas: el campo de idiomas esta vacio en la ficha de Hugging Face, por lo que no hay garantia documentada de calidad en castellano ni en ningun otro idioma concreto. El unico prompt verificado esta en ingles.
 - Longitud de contexto desconocida: no se documenta la ventana de contexto, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas sin una prueba previa.
 - Ausencia de benchmarks: no hay MMLU, HumanEval, GSM8K ni ninguna otra metrica publicada, ni para este modelo ni para su base. La unica verificacion funcional es un problema aritmetico de una linea.
 - Validacion social nula: el repositorio registra 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe evidencia de uso independiente ni de reproducibilidad por terceros.
@@ -117,7 +117,7 @@ Observacion sobre el patron de rendimiento: dentro de la familia de 9B, la veloc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ8e
 - Modelo base declarado: https://huggingface.co/empero-ai/Qwen3.8-Distill
 - Modelo base citado en creditos (GGUF): https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
 - Canal del autor en YouTube: https://www.youtube.com/@RolanDorisTech

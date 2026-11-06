@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matching-beta es un repositorio de HuggingFace publicado por el usuario mitchelldan que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de matching, configurada en su variante "tiny" y con un total de 49.600 parámetros. Se distribuye con licencia MIT y el peso se ofrece en formato safetensors, acompañado de un script de inferencia (`inference.py`) y ficheros de configuración de arquitectura y de receta de entrenamiento.
+matching-beta es un repositorio de Hugging Face publicado por el usuario mitchelldan que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de matching, configurada en su variante "tiny" y con un total de 49.600 parámetros. Se distribuye con licencia MIT y el peso se ofrece en formato safetensors, acompañado de un script de inferencia (`inference.py`) y ficheros de configuración de arquitectura y de receta de entrenamiento.
 
 El propio autor especifica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado con benchmarks. Es decir, el repositorio debe entenderse como una base de código reproducible y transparente para experimentar con arquitecturas de matching, no como un modelo listo para producción.
 
@@ -67,7 +67,7 @@ No se dispone en la informacion proporcionada de modelos comparables evaluados b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mitchelldan/matching-beta | 49.600 | no disponible | MIT | HuggingFace |
+| mitchelldan/matching-beta | 49.600 | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,11 +80,11 @@ No se dispone en la informacion proporcionada de modelos comparables evaluados b
 - No hay evidencia de sesgos medidos ni de comportamiento en dominios específicos; al no estar entrenado, la evaluación de sesgos no es aplicable todavía.
 - Riesgo de alucinación: no aplica al uso previsto, ya que no es un modelo generativo de lenguaje, pero tampoco hay garantías de ningún tipo de salida correcta.
 - Licencia MIT: permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se usen datasets externos.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito antes de funcionar.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito antes de funcionar.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto publicados aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mitchelldan/matching-beta
+- Modelo en Hugging Face: https://huggingface.co/mitchelldan/matching-beta
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) específicos de este modelo en la búsqueda web realizada.

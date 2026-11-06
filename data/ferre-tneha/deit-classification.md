@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ferre-tneha/deit-classification` es un repositorio de HuggingFace que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) en configuración "base" orientada a tareas de clasificación. Lo publica el usuario ferre-tneha bajo licencia Apache 2.0 y su propósito declarado es servir como punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado listo para producción. El repositorio incluye el código Python (`pipeline.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+`ferre-tneha/deit-classification` es un repositorio de Hugging Face que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) en configuración "base" orientada a tareas de clasificación. Lo publica el usuario ferre-tneha bajo licencia Apache 2.0 y su propósito declarado es servir como punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado listo para producción. El repositorio incluye el código Python (`pipeline.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 El dato de parámetros totales que reporta el repositorio es de 16.576, una cifra que no se corresponde con el tamaño típico de un DeiT-Base (aproximadamente 86 millones de parámetros en su configuración estándar). Esto sugiere que el checkpoint incluido no es un DeiT-Base completo entrenado, sino una inicialización reducida o parcial, coherente con la advertencia del autor de que no se trata de un checkpoint con benchmarks. El tamaño del repositorio es de 0,0 GB, lo que refuerza esa interpretación.
 
-La relevancia de esta ficha es acotada: no es un modelo para evaluar rendimiento ni para desplegar en producción, sino un artefacto de referencia para quien quiera inspeccionar una implementación de DeiT con fusión con compuertas (gated fusion), activación ReLU y normalización LayerNorm. No hay métricas publicadas, ni idiomas declarados, ni pipeline de HuggingFace asignado.
+La relevancia de esta ficha es acotada: no es un modelo para evaluar rendimiento ni para desplegar en producción, sino un artefacto de referencia para quien quiera inspeccionar una implementación de DeiT con fusión con compuertas (gated fusion), activación ReLU y normalización LayerNorm. No hay métricas publicadas, ni idiomas declarados, ni pipeline de Hugging Face asignado.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ferre-tneha/deit-classification | 16.576 (reportados) | no disponible | No (inicialización) | Apache 2.0 | HuggingFace |
-| facebook/deit-base-patch16-224 | ~86 M | Imágenes 224×224 | Sí (ImageNet) | Apache 2.0 | HuggingFace |
-| google/vit-base-patch16-224 | ~86 M | Imágenes 224×224 | Sí (ImageNet) | Apache 2.0 | HuggingFace |
+| ferre-tneha/deit-classification | 16.576 (reportados) | no disponible | No (inicialización) | Apache 2.0 | Hugging Face |
+| facebook/deit-base-patch16-224 | ~86 M | Imágenes 224×224 | Sí (ImageNet) | Apache 2.0 | Hugging Face |
+| google/vit-base-patch16-224 | ~86 M | Imágenes 224×224 | Sí (ImageNet) | Apache 2.0 | Hugging Face |
 | timm/deit_base_patch16_224 | ~86 M | Imágenes 224×224 | Sí (ImageNet) | Apache 2.0 | timm |
 
 La comparación con `facebook/deit-base-patch16-224`, `google/vit-base-patch16-224` y las variantes de `timm` es la más directa por familia arquitectónica, pero conviene subrayar que esos modelos sí están entrenados y publican métricas, mientras que este repositorio no. Los datos de los modelos comparativos provienen de conocimiento general de la familia DeiT/ViT y no de la información proporcionada en esta búsqueda.
@@ -78,13 +78,13 @@ La comparación con `facebook/deit-base-patch16-224`, `google/vit-base-patch16-2
 - No se ha auditado robustez, equidad ni transferencia de dominio, según el propio autor.
 - No hay idiomas declarados ni contexto especificado; no aplica a tareas de texto.
 - Licencia Apache 2.0 permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
-- Las APIs automáticas de carga de HuggingFace pueden fallar sin un adaptador explícito, lo que complica su integración en pipelines estándar.
+- Las APIs automáticas de carga de Hugging Face pueden fallar sin un adaptador explícito, lo que complica su integración en pipelines estándar.
 - Riesgo de alucinación: no aplica como tal, pero sí existe riesgo de interpretar erróneamente el repositorio como un modelo listo para producción.
 - Sin descargas ni likes en el momento de la consulta, lo que limita la validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferre-tneha/deit-classification
+- Hugging Face: https://huggingface.co/ferre-tneha/deit-classification
 - Repositorio DeiT original (referencia de la arquitectura): https://github.com/facebookresearch/deit
 - Pesos DeiT-Base entrenados (referencia comparativa): https://huggingface.co/facebook/deit-base-patch16-224
 - Paper DeiT: https://arxiv.org/abs/2012.12877

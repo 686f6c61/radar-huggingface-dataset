@@ -74,8 +74,8 @@ Las ganancias en la mina y en el lago helado quedan dentro del ruido. Algunas ta
 
 | Modelo | Tipo | Entrada / salida | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| suvadityamuk/microduck-duck-worlds-policies | Políticas de marcha para Microduck (6 variantes) | 61-D a 50 Hz / 14 offsets articulares | PPO en mjlab, ajuste desde `velstand.onnx` | Apache-2.0 | HuggingFace, ONNX |
-| pollen-robotics/microduck-policies | Políticas base de Pollen Robotics, incluida `velstand.onnx` | Mismo contrato 61-D / 14 offsets | Receta `microduck_rl` de Pollen | no disponible en la información | HuggingFace |
+| suvadityamuk/microduck-duck-worlds-policies | Políticas de marcha para Microduck (6 variantes) | 61-D a 50 Hz / 14 offsets articulares | PPO en mjlab, ajuste desde `velstand.onnx` | Apache-2.0 | Hugging Face, ONNX |
+| pollen-robotics/microduck-policies | Políticas base de Pollen Robotics, incluida `velstand.onnx` | Mismo contrato 61-D / 14 offsets | Receta `microduck_rl` de Pollen | no disponible en la información | Hugging Face |
 | Otras políticas bípedas de código abierto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Las ganancias en la mina y en el lago helado quedan dentro del ruido. Algunas ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/microduck-duck-worlds-policies
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/microduck-duck-worlds-policies
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-policies
 - Dataset de mundos construidos: https://huggingface.co/datasets/suvadityamuk/microduck-duck-worlds
 - Modelo generador de los mundos: https://huggingface.co/moonshotai/Kimi-K3

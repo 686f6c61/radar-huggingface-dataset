@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ajbarbosa/tmp-retrieval` es un prototipo de investigación de tipo Perceiver orientado a tareas de recuperación (retrieval), publicado por el usuario ajbarbosa en HuggingFace. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un fichero de inferencia (`inference.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que el propio autor advierte que no ha sido entrenado ni auditado.
+`ajbarbosa/tmp-retrieval` es un prototipo de investigación de tipo Perceiver orientado a tareas de recuperación (retrieval), publicado por el usuario ajbarbosa en Hugging Face. El repositorio se presenta explícitamente como un punto de partida experimental: incluye un fichero de inferencia (`inference.py`), una configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que el propio autor advierte que no ha sido entrenado ni auditado.
 
 El modelo declara una configuración de escala "xlarge" con atención dilatada, fusión tipo Tucker, activación ReLU y normalización GroupNorm. Sin embargo, el recuento real de parámetros del checkpoint safetensors es de solo 49.600 parámetros, una cifra incompatible con lo que suele entenderse por un Perceiver de escala xlarge; esto sugiere que la etiqueta "xlarge" describe un preset de configuración generado automáticamente y no el tamaño efectivo de los pesos publicados.
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Estado del checkpoint | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ajbarbosa/tmp-retrieval | Perceiver | 49.600 | no disponible | BSD-3-Clause | Inicializacion, sin entrenar | HuggingFace, 0 descargas |
-| daikihashimoto/tmp-retrieval | ALBEF | no disponible | no disponible | Apache-2.0 | no disponible | HuggingFace |
-| ajbarbosa/reading-visual-question-answering | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| ajbarbosa/tmp-retrieval | Perceiver | 49.600 | no disponible | BSD-3-Clause | Inicializacion, sin entrenar | Hugging Face, 0 descargas |
+| daikihashimoto/tmp-retrieval | ALBEF | no disponible | no disponible | Apache-2.0 | no disponible | Hugging Face |
+| ajbarbosa/reading-visual-question-answering | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 
 Los dos repositorios llamados `tmp-retrieval` (ajbarbosa y daikihashimoto) comparten nombre y propósito declarado de retrieval, pero emplean arquitecturas distintas (Perceiver frente a ALBEF) y licencias distintas (BSD-3-Clause frente a Apache-2.0), lo que sugiere que ambos son plantillas generadas a partir de un mismo flujo de trabajo experimental. No se dispone de datos de benchmarks ni de parámetros de las alternativas como para establecer una comparación de rendimiento; no disponible.
 
@@ -99,8 +99,8 @@ Los dos repositorios llamados `tmp-retrieval` (ajbarbosa y daikihashimoto) compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajbarbosa/tmp-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/ajbarbosa
+- Modelo en Hugging Face: https://huggingface.co/ajbarbosa/tmp-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/ajbarbosa
 - Repositorio homónimo con arquitectura ALBEF (referencia de plantilla similar): https://huggingface.co/daikihashimoto/tmp-retrieval
 - Otro modelo del mismo autor: https://huggingface.co/ajbarbosa/reading-visual-question-answering
 - Paper de referencia de la arquitectura Perceiver: no disponible en la información proporcionada.

@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - axonlabsai/Omni-7B-lora-namefix](https://huggingface.co/axonlabsai/Omni-7B-lora-namefix)
-- [HuggingFace - axonlabsai/Ranger-7B](https://huggingface.co/axonlabsai/Ranger-7B)
-- [HuggingFace - axonlabsai (perfil del autor)](https://huggingface.co/axonlabsai/models)
+- [Hugging Face - axonlabsai/Omni-7B-lora-namefix](https://huggingface.co/axonlabsai/Omni-7B-lora-namefix)
+- [Hugging Face - axonlabsai/Ranger-7B](https://huggingface.co/axonlabsai/Ranger-7B)
+- [Hugging Face - axonlabsai (perfil del autor)](https://huggingface.co/axonlabsai/models)
 - [GitHub - Qwen2.5-Omni (referencia a modelos Omni, no directamente relacionado)](https://github.com/QwenLM/Qwen2.5-Omni)

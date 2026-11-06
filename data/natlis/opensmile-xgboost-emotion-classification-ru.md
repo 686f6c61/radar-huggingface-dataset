@@ -79,7 +79,7 @@ No se dispone de datos de comparacion directa con otros modelos de clasificacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Natlis/opensmile-xgboost-emotion-classification-ru
+- Modelo en Hugging Face: https://huggingface.co/Natlis/opensmile-xgboost-emotion-classification-ru
 - Documentacion de openSMILE: https://audeering.github.io/opensmile/
 - Repositorio de openSMILE en GitHub: https://github.com/audeering/opensmile
 - Pagina de openSMILE 3.0 en audEERING: https://www.audeering.com/research/opensmile/

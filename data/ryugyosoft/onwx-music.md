@@ -2,11 +2,11 @@
 
 ## Resumen
 
-onwx-music es una aplicación de escritorio de generación musical text-to-audio que ejecuta el modelo ACE-Step 1.5 turbo íntegramente en la NPU XDNA2 de los procesadores AMD Ryzen AI 300 / Max. La desarrolla el usuario ryugyosoft y se distribuye con licencia Apache-2.0 a través de HuggingFace. No es un modelo de pesos en sentido estricto: el repositorio contiene la aplicación, los instaladores y la integración con la NPU, mientras que los pesos (~4.3 GB) se descargan aparte desde la propia interfaz de la aplicación.
+onwx-music es una aplicación de escritorio de generación musical text-to-audio que ejecuta el modelo ACE-Step 1.5 turbo íntegramente en la NPU XDNA2 de los procesadores AMD Ryzen AI 300 / Max. La desarrolla el usuario ryugyosoft y se distribuye con licencia Apache-2.0 a través de Hugging Face. No es un modelo de pesos en sentido estricto: el repositorio contiene la aplicación, los instaladores y la integración con la NPU, mientras que los pesos (~4.3 GB) se descargan aparte desde la propia interfaz de la aplicación.
 
 El objetivo es generar música local, sin GPU dedicada ni servicios en la nube, en un portátil o mini-PC con Ryzen AI. El pipeline completo —encoder de texto Qwen3-Embedding-0.6B, encoder de letras, DiT de 24 capas con muestreador de 8 pasos y decodificador VAE— se ejecuta en la NPU; la CPU solo realiza tokenización, generación de ruido y escritura de WAV. En un Ryzen AI Max+ 395 se declaran unos 19 segundos para producir 30 segundos de audio.
 
-La relevancia actual está en dos frentes: por un lado, llevar la difusión de audio a un acelerador integrado de bajo consumo, con un pico de memoria de ~4 GB durante la generación y ~2 GB en reposo; por otro, una interfaz tipo panel de sintetizador con modos GEN (una pista), BGM (fondo musical infinito con crossfade), HISTORY, MODELS y SETUP. El proyecto es muy reciente (creado el 22 de octubre de 2026) y no registra descargas ni valoraciones en HuggingFace.
+La relevancia actual está en dos frentes: por un lado, llevar la difusión de audio a un acelerador integrado de bajo consumo, con un pico de memoria de ~4 GB durante la generación y ~2 GB en reposo; por otro, una interfaz tipo panel de sintetizador con modos GEN (una pista), BGM (fondo musical infinito con crossfade), HISTORY, MODELS y SETUP. El proyecto es muy reciente (creado el 22 de octubre de 2026) y no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -110,7 +110,7 @@ La diferencia principal de onwx-music frente a las alternativas no está en la c
 - **Cobertura de géneros desigual**: se señalan R&B, pop en inglés, jazz y lo-fi como géneros con buenos resultados, y se reconoce explícitamente que hay estilos en los que el modelo rinde peor. No se detallan cuáles.
 - **Funciones ausentes**: no hay planificador de estructura musical (el "think" oficial basado en el modelo "5Hz LM"), ni referencia de audio para fijar el timbre, ni continuación a partir de la pieza anterior. La ausencia del planificador afecta a la coherencia estructural de las piezas largas.
 - **Licencia de los pesos**: el repositorio es Apache-2.0, pero los pesos de ACE-Step 1.5 turbo se descargan por separado y su licencia no se indica en la información disponible. Es un punto a verificar antes de un uso comercial, igual que los derechos sobre el audio generado en la jurisdicción correspondiente.
-- **Validación comunitaria nula**: 0 descargas y 0 likes en HuggingFace, con el repositorio creado y actualizado el mismo día. No hay evidencia externa de calidad ni de estabilidad en producción.
+- **Validación comunitaria nula**: 0 descargas y 0 likes en Hugging Face, con el repositorio creado y actualizado el mismo día. No hay evidencia externa de calidad ni de estabilidad en producción.
 - **Superficie de seguridad**: la instalación recomendada ejecuta un script remoto directamente (`irm ... | iex` en Windows, `curl ... | bash` en Ubuntu). El modo LAN no tiene autenticación, según advierte el propio autor, y solo debería activarse en redes de confianza.
 - **Dependencia de plataforma**: requiere Windows 11 y driver de NPU XDNA2. La ruta Ubuntu está sin probar. En equipos sin Ryzen AI 300 / Max solo queda el motor `cpu`, sin datos de rendimiento publicados.
 - **Gestión de disco**: el modo BGM puede llenar el disco si no se ajustan KEEP y MIN FREE; la aplicación se detiene por defecto al bajar de 2 GB libres, pero el umbral es configurable.
@@ -119,7 +119,7 @@ La diferencia principal de onwx-music frente a las alternativas no está en la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryugyosoft/onwx-music
+- Repositorio en Hugging Face: https://huggingface.co/ryugyosoft/onwx-music
 - README en inglés: https://huggingface.co/ryugyosoft/onwx-music/blob/main/README_en.md
 - Instalador para Windows: https://huggingface.co/ryugyosoft/onwx-music/resolve/main/install.ps1
 - Instalador para Ubuntu: https://huggingface.co/ryugyosoft/onwx-music/resolve/main/install.sh

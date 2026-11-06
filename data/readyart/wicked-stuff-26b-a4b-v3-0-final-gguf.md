@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wicked-Stuff-26B-A4B-v3.0-Final-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final, un modelo de generación de texto orientado a roleplay conversacional, ficción para adultos y contenido explícito, publicado por el usuario ReadyArt en HuggingFace. El repositorio contiene 25.233.142.046 parámetros totales (unos 25,2 mil millones) según los pesos en safetensors del modelo base, y la nomenclatura «26B-A4B» sigue la convención habitual de los modelos con arquitectura de mezcla de expertos (MoE), en la que se indica el total de parámetros y una cifra aproximada de parámetros activos por token.
+Wicked-Stuff-26B-A4B-v3.0-Final-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final, un modelo de generación de texto orientado a roleplay conversacional, ficción para adultos y contenido explícito, publicado por el usuario ReadyArt en Hugging Face. El repositorio contiene 25.233.142.046 parámetros totales (unos 25,2 mil millones) según los pesos en safetensors del modelo base, y la nomenclatura «26B-A4B» sigue la convención habitual de los modelos con arquitectura de mezcla de expertos (MoE), en la que se indica el total de parámetros y una cifra aproximada de parámetros activos por token.
 
 El modelo se distribuye exclusivamente en inglés, con etiquetas que lo marcan como `not-for-all-audiences`, `nsfw`, `explicit`, `unaligned`, `ERP`, `Erotic`, `Horror` y `Violence`. No incluye información sobre longitud de contexto, dataset de entrenamiento, proceso de alineación ni resultados de benchmarks en la información disponible. La licencia tampoco está declarada, lo que impide confirmar condiciones de uso comercial.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wicked-Stuff-26B-A4B-v3.0-Final | 25,2B | No disponible | No disponible | No disponible | HuggingFace (GGUF) |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 32K nativo (extensible) | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B (denso, referencia de tamaño inferior) | 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
+| Wicked-Stuff-26B-A4B-v3.0-Final | 25,2B | No disponible | No disponible | No disponible | Hugging Face (GGUF) |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 32K nativo (extensible) | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B (denso, referencia de tamaño inferior) | 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
 
 Las comparaciones de rendimiento en benchmarks no son posibles porque el autor no publica resultados y el modelo no aparece evaluado en los datos disponibles. Frente a Qwen3-30B-A3B y Mixtral 8x7B, la diferencia práctica principal es la licencia (no declarada en Wicked-Stuff, Apache 2.0 en los otros) y el propósito (roleplay sin alineación frente a modelos generalistas alineados).
 

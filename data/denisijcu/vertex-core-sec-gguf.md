@@ -85,7 +85,7 @@ La comparación cuantitativa con otros fine-tunes de seguridad no está disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Denisijcu/vertex-core-sec-gguf
+- Hugging Face: https://huggingface.co/Denisijcu/vertex-core-sec-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset citado por el autor: `CyberNative/Code_Vulnerability_Security_DPO` (referencia en la model card; no se proporciona URL directa)
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth

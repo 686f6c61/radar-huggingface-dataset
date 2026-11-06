@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables porque no hay benchmarks publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaisidhsingh/SignedKDA-gdn-neg-eigval
+- Repositorio Hugging Face: https://huggingface.co/jaisidhsingh/SignedKDA-gdn-neg-eigval
 - Colección OpenThesis: https://huggingface.co/collections/jaisidhsingh/openthesis
 - Repositorio GitHub del autor: https://github.com/jaisidhsingh/
 - Repositorio complejo-kda: https://github.com/jaisidhsingh/complex-kda

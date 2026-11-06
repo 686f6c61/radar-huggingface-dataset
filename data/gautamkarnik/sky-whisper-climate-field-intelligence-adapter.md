@@ -73,8 +73,8 @@ No se dispone de datos de benchmarks ni de alternativas directamente comparables
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sky-whisper-climate-field-intelligence-adapter | Adaptador LoRA (PEFT) | Adaptador sobre base de ~4B | No disponible | apache-2.0 | HuggingFace (~0,1 GB) |
-| Qwen/Qwen3.5-4B | Modelo base completo | ~4B (segun denominacion) | No disponible | No disponible en esta ficha | HuggingFace |
+| sky-whisper-climate-field-intelligence-adapter | Adaptador LoRA (PEFT) | Adaptador sobre base de ~4B | No disponible | apache-2.0 | Hugging Face (~0,1 GB) |
+| Qwen/Qwen3.5-4B | Modelo base completo | ~4B (segun denominacion) | No disponible | No disponible en esta ficha | Hugging Face |
 | Otras alternativas de 4B o adaptadores climaticos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de alternativas directamente comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gautamkarnik/sky-whisper-climate-field-intelligence-adapter
+- Modelo en Hugging Face: https://huggingface.co/gautamkarnik/sky-whisper-climate-field-intelligence-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Tinker (Thinking Machines Lab): https://thinkingmachines.ai/tinker
 - tinker-cookbook (GitHub): https://github.com/thinking-machines-lab/tinker-cookbook

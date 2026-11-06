@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-all-module-relation-retention-yaw30-1000 (este) | no disponible (repo de 13,1 GB) | no disponible | no disponible (solo protocolo de evaluación) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-libero-all-module-relation-retention-yaw30-1000 (este) | no disponible (repo de 13,1 GB) | no disponible | no disponible (solo protocolo de evaluación) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Familia pi0 / pi0.5 (Physical Intelligence, librería openpi) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Ecosistema openpi, del que depende la nomenclatura pi05 de este checkpoint |
 | Otras políticas VLA de manipulación (por ejemplo, familias basadas en backbones visión-lenguaje con cabeza de acciones) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de cifras verificables de parámetros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-yaw30-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-yaw30-1000-20261014
 - Datos objetivo citados en la model card: `Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003` (commit 7cfd3ca8528c59c1ce700d4d75b560db39f7a5e7), sin URL explícita en la model card.
 - Referencia de despliegue citada: `Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013` (commit 24268da2aba5f690c879788d98e3455a2a579d8f), sin URL explícita en la model card.
 - Referencia de inferencia citada: `pi05_libero_source_free_split_vision_idm` (commit 0f6471d99dfc81fabe7c3ab65c141d7640b9ff08), sin URL explícita en la model card.

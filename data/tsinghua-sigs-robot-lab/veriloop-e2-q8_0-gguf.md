@@ -122,7 +122,7 @@ Comparativas con otras familias de modelos del mismo rango (parametros, contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-Q8_0-GGUF
 - Modelo base (parent model): https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Informe tecnico (OpenReview): https://openreview.net/forum?id=P6FIQILHwX&noteId=P6FIQILHwX
 - Evidencia de evaluacion (dataset): https://huggingface.co/datasets/tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence

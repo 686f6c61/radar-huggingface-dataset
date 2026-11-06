@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Capa MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP | 35,1 B totales (unos 3 B activos) | no disponible | 4-bit MLX | Si | Apache-2.0 | HuggingFace, 0 descargas |
-| mlx-community/Qwen3.6-35B-A3B-4bit | 35,1 B totales (mismos pesos) | no disponible | 4-bit MLX | No | Apache-2.0 | HuggingFace, revision `38740b8` |
-| Qwen/Qwen3.6-35B-A3B | 35,1 B totales (unos 3 B activos) | no disponible | BF16 (sin cuantizar) | Si (pesos `mtp.*` originales) | Apache-2.0 | HuggingFace, revision `995ad96` |
+| Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP | 35,1 B totales (unos 3 B activos) | no disponible | 4-bit MLX | Si | Apache-2.0 | Hugging Face, 0 descargas |
+| mlx-community/Qwen3.6-35B-A3B-4bit | 35,1 B totales (mismos pesos) | no disponible | 4-bit MLX | No | Apache-2.0 | Hugging Face, revision `38740b8` |
+| Qwen/Qwen3.6-35B-A3B | 35,1 B totales (unos 3 B activos) | no disponible | BF16 (sin cuantizar) | Si (pesos `mtp.*` originales) | Apache-2.0 | Hugging Face, revision `995ad96` |
 
 La diferencia funcional entre las tres opciones es el empaquetado: este repositorio anade la capa MTP cuantizada a los mismos pesos que la conversion de mlx-community, mientras que el modelo base ofrece los pesos sin cuantizar. No se dispone de datos de rendimiento comparativos entre ellos.
 
@@ -90,7 +90,7 @@ La diferencia funcional entre las tres opciones es el empaquetado: este reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP
+- Modelo en Hugging Face: https://huggingface.co/Vontra/Qwen3.6-35B-A3B-MLX-4bit-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Conversion de referencia de mlx-community: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit

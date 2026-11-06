@@ -6,7 +6,7 @@ Med3DVLM es un modelo de lenguaje y visión (VLM) especializado en el análisis 
 
 El modelo combina el modelo de lenguaje Qwen2.5-7B-Instruct como base con un proyector multimodal y módulos LoRA adaptados específicamente para alinear características espaciales 3D con texto clínico. La arquitectura está diseñada para ser eficiente en el procesamiento de datos volumétricos, un reto habitual en la extensión de VLMs 2D al dominio 3D. Con aproximadamente 7,68 mil millones de parámetros, se posiciona como una opción de tamaño medio para tareas de generación de informes radiológicos y respuesta a preguntas visuales médicas.
 
-La relevancia actual de este modelo radica en la escasez de VLMs 3D médicos de código abierto, y en que hereda las capacidades de instrucción del modelo base Qwen2.5, lo que facilita su integración en flujos clínicos de investigación y desarrollo. El espejo consultado no añade modificaciones técnicas sobre el original, pero facilita el acceso en una región alternativa de HuggingFace.
+La relevancia actual de este modelo radica en la escasez de VLMs 3D médicos de código abierto, y en que hereda las capacidades de instrucción del modelo base Qwen2.5, lo que facilita su integración en flujos clínicos de investigación y desarrollo. El espejo consultado no añade modificaciones técnicas sobre el original, pero facilita el acceso en una región alternativa de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Especialidad | Disponibilidad |
 |---|---|---|---|---|---|
-| Med3DVLM-Qwen-2.5-7B | 7,68 B | no disponible (base 32K) | Apache 2.0 | VLM médico 3D | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,61 B | 32K tokens | Apache 2.0 | LLM general | HuggingFace |
-| LLaVA-1.5-7B | 7,1 B | 2K tokens | Apache 2.0 | VLM 2D general | HuggingFace |
-| MedVILA-7B | 7 B | no disponible | Apache 2.0 | VLM médico 2D | HuggingFace |
+| Med3DVLM-Qwen-2.5-7B | 7,68 B | no disponible (base 32K) | Apache 2.0 | VLM médico 3D | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,61 B | 32K tokens | Apache 2.0 | LLM general | Hugging Face |
+| LLaVA-1.5-7B | 7,1 B | 2K tokens | Apache 2.0 | VLM 2D general | Hugging Face |
+| MedVILA-7B | 7 B | no disponible | Apache 2.0 | VLM médico 2D | Hugging Face |
 
 La comparación directa con otros VLMs médicos 3D es limitada porque hay pocos modelos abiertos de este tipo. Frente a Qwen2.5-7B-Instruct, Med3DVLM añade la modalidad visual 3D, pero pierde la versatilidad generalista. Frente a LLaVA-1.5, la diferencia principal es la capacidad de procesar volumetría 3D frente a imágenes 2D. No hay datos de benchmarks que permitan una comparación cuantitativa.
 
@@ -83,8 +83,8 @@ La comparación directa con otros VLMs médicos 3D es limitada porque hay pocos 
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/ranasrule/Med3DVLM-Qwen-2.5-7B-mirror
-- Modelo original en HuggingFace: https://huggingface.co/MagicXin/Med3DVLM-Qwen-2.5-7B
+- Modelo en Hugging Face (espejo): https://huggingface.co/ranasrule/Med3DVLM-Qwen-2.5-7B-mirror
+- Modelo original en Hugging Face: https://huggingface.co/MagicXin/Med3DVLM-Qwen-2.5-7B
 - Repositorio GitHub: https://github.com/mirthAI/Med3DVLM
 - Artículo arXiv: https://arxiv.org/html/2503.20047v1
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

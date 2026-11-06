@@ -68,8 +68,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | MBPP pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Base-MBPP-GRPO | 1,72B | no disponible | 57,0 % (greedy, n=500) | no disponible | HuggingFace |
-| Qwen3-1.7B-Base | 1,72B | no disponible | 52,0 % (greedy, n=500) | no disponible | HuggingFace |
+| Qwen3-1.7B-Base-MBPP-GRPO | 1,72B | no disponible | 57,0 % (greedy, n=500) | no disponible | Hugging Face |
+| Qwen3-1.7B-Base | 1,72B | no disponible | 52,0 % (greedy, n=500) | no disponible | Hugging Face |
 | Otros modelos de ~1,7B ajustados para código | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vedssharma/Qwen3-1.7B-Base-MBPP-GRPO
+- Modelo en Hugging Face: https://huggingface.co/vedssharma/Qwen3-1.7B-Base-MBPP-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset MBPP: no disponible en la información proporcionada
 - Paper de GRPO: no disponible en la información proporcionada

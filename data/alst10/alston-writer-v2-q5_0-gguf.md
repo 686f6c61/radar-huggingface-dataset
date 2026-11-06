@@ -21,12 +21,12 @@ La relevancia de este modelo radica en su accesibilidad: al estar cuantizado en 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base `alst10/alston-writer-v2`. Los metadatos de HuggingFace incluyen los tags `llama` y `unsloth`, lo que sugiere que podria tratarse de un modelo basado en la arquitectura Llama (posiblemente Llama 3.x), pero no hay confirmacion oficial. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF o DPO. La unica transformacion documentada es la conversion a GGUF con cuantizacion Q5_0, que reduce la precision de los pesos para optimizar el uso de memoria y acelerar la inferencia en hardware modesto.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base `alst10/alston-writer-v2`. Los metadatos de Hugging Face incluyen los tags `llama` y `unsloth`, lo que sugiere que podria tratarse de un modelo basado en la arquitectura Llama (posiblemente Llama 3.x), pero no hay confirmacion oficial. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF o DPO. La unica transformacion documentada es la conversion a GGUF con cuantizacion Q5_0, que reduce la precision de los pesos para optimizar el uso de memoria y acelerar la inferencia en hardware modesto.
 
 ## Capacidades
 
 - No se han publicado capacidades especificas del modelo en la model card.
-- Los tags de HuggingFace (`conversational`, `text-generation`) indican que esta disenado para generacion de texto y dialogo.
+- Los tags de Hugging Face (`conversational`, `text-generation`) indican que esta disenado para generacion de texto y dialogo.
 - Al ser un modelo de 8B parametros, se espera que pueda realizar tareas tipicas de generacion de lenguaje, como responder preguntas, redactar textos o mantener conversaciones, pero no hay datos oficiales que confirmen habilidades concretas (razonamiento, codigo, matematicas, etc.).
 - No se menciona soporte para tool calling, agentes, vision ni audio.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/alst10/alston-writer-v2-Q5_0-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/alst10/alston-writer-v2-Q5_0-GGUF
 - Modelo base (safetensors): https://huggingface.co/alst10/alston-writer-v2
 - Herramienta GGUF-my-repo utilizada para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UMCU/llama_miriad.nl es un repositorio de pesos publicado en HuggingFace por la organizacion UMCU (identificador que corresponde habitualmente al University Medical Center Utrecht, aunque la model card no lo confirma). El nombre del repositorio sugiere un modelo de la familia Llama adaptado al neerlandes (sufijo "nl"), pero se trata de una inferencia basada en la nomenclatura y no de un dato verificado: no hay documentacion en el repositorio que confirme arquitectura, tamano, datos de entrenamiento ni objetivo del modelo.
+UMCU/llama_miriad.nl es un repositorio de pesos publicado en Hugging Face por la organizacion UMCU (identificador que corresponde habitualmente al University Medical Center Utrecht, aunque la model card no lo confirma). El nombre del repositorio sugiere un modelo de la familia Llama adaptado al neerlandes (sufijo "nl"), pero se trata de una inferencia basada en la nomenclatura y no de un dato verificado: no hay documentacion en el repositorio que confirme arquitectura, tamano, datos de entrenamiento ni objetivo del modelo.
 
 La model card publicada es practicamente vacia. Su unico contenido es la declaracion de licencia (`license: agpl-3.0`), sin descripcion, sin instrucciones de uso, sin ejemplos de inferencia, sin tabla de resultados y sin mencion de la longitud de contexto, el tokenizador o el formato de pesos. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
@@ -92,6 +92,6 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UMCU/llama_miriad.nl
+- Repositorio en Hugging Face: https://huggingface.co/UMCU/llama_miriad.nl
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - No se localizaron resultados de busqueda web relevantes sobre este modelo; las consultas devolvieron exclusivamente paginas de soporte de Microsoft sin relacion con el repositorio.

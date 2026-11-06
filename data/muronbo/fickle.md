@@ -2,7 +2,7 @@
 
 ## Resumen
 
-muronbo/fickle es un repositorio alojado en HuggingFace por el usuario muronbo del que no se dispone de informacion tecnica publicada. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene etiqueta de pipeline asignada, lo que impide determinar si se trata de un modelo de texto, vision, audio u otra modalidad.
+muronbo/fickle es un repositorio alojado en Hugging Face por el usuario muronbo del que no se dispone de informacion tecnica publicada. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene etiqueta de pipeline asignada, lo que impide determinar si se trata de un modelo de texto, vision, audio u otra modalidad.
 
 El unico dato objetivo disponible es su licencia MIT, junto con metadatos de plataforma: cero descargas, cero "likes" y sin idiomas declarados. La fecha de creacion y de ultima actualizacion registradas coinciden (2026-09-19), lo que sugiere un repositorio recien publicado o un artefacto de prueba, sin mantenimiento posterior.
 
@@ -38,7 +38,7 @@ No es posible enumerar capacidades concretas a partir de la informacion disponib
 - Capacidades multilingues: no disponible (no hay idiomas declarados en el repositorio).
 - Capacidades especiales (modo "thinking", vision, audio): no disponible.
 
-La ausencia de etiqueta de pipeline en HuggingFace impide incluso clasificar el modelo por modalidad de entrada y salida.
+La ausencia de etiqueta de pipeline en Hugging Face impide incluso clasificar el modelo por modalidad de entrada y salida.
 
 ## Casos de uso
 
@@ -84,6 +84,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muronbo/fickle
+- Repositorio en Hugging Face: https://huggingface.co/muronbo/fickle
 
 No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) asociados a este modelo. Los resultados de la busqueda web realizada corresponden exclusivamente a herramientas de conversion de audio a MP3 (mp3.org, mp3cow.com, freemp3music.org, convertytmp3.org, ytmp3pc.com) y no guardan relacion con el repositorio analizado.

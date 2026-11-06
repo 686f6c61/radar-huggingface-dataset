@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kolin1996/coca-generation` es un repositorio experimental publicado por el usuario kolin1996 (Kevin Lin) en HuggingFace que contiene una implementación propia de una arquitectura tipo Coca orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización válido únicamente para pruebas de humo: el propio autor indica explícitamente que `model.safetensors` no es un checkpoint evaluado ni presentado como referencia de rendimiento.
+`kolin1996/coca-generation` es un repositorio experimental publicado por el usuario kolin1996 (Kevin Lin) en Hugging Face que contiene una implementación propia de una arquitectura tipo Coca orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización válido únicamente para pruebas de humo: el propio autor indica explícitamente que `model.safetensors` no es un checkpoint evaluado ni presentado como referencia de rendimiento.
 
 El modelo tiene 49.600 parámetros totales, lo que lo sitúa en una escala *tiny* deliberadamente reducida para poder inspeccionar cambios de arquitectura antes de lanzar entrenamientos completos. La arquitectura declarada combina atención *multi query*, fusión mediante `concat mlp`, activación GELU y normalización `scalenorm`, con una receta de experimento por defecto basada en el optimizador LAMB con planificador exponencial.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kolin1996/coca-generation | 49.600 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| kolin1996/coca-generation | 49.600 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | lucidrains/CoCa-pytorch | no disponible (implementación, no checkpoint) | no disponible | reporta 91,0 % top-1 en ImageNet para la arquitectura CoCa original a gran escala | MIT (repositorio de código) | GitHub |
 | CoCa original (artículo) | no disponible en la informacion proporcionada | no disponible | 91,0 % top-1 en ImageNet con codificador ajustado | no disponible | publicación académica |
-| openai-community/gpt2 (small) | 124 M | 1.024 tokens | no disponible en la informacion proporcionada | MIT | HuggingFace, ampliamente desplegado |
+| openai-community/gpt2 (small) | 124 M | 1.024 tokens | no disponible en la informacion proporcionada | MIT | Hugging Face, ampliamente desplegado |
 
 La comparación con `lucidrains/CoCa-pytorch` y con el artículo original de CoCa es únicamente arquitectónica: ni la escala ni el estado de entrenamiento son equiparables. GPT-2 small se incluye como referencia de modelo generativo de escala pequeña, pero se trata de un checkpoint plenamente entrenado y con soporte en múltiples runtimes, a diferencia de este repositorio.
 
@@ -93,14 +93,14 @@ La comparación con `lucidrains/CoCa-pytorch` y con el artículo original de CoC
 - No se declaran idiomas soportados, por lo que no se puede asumir cobertura multilingüe.
 - No se declara longitud de contexto, número de capas ni dimensión oculta, lo que impide estimar su comportamiento en secuencias largas.
 - Con 49.600 parámetros, la capacidad expresiva del modelo es extremadamente limitada incluso si se entrenara; no es apto para producción.
-- El repositorio no declara un *pipeline* en HuggingFace y no es compatible con APIs de carga automática sin un adaptador explícito.
+- El repositorio no declara un *pipeline* en Hugging Face y no es compatible con APIs de carga automática sin un adaptador explícito.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
 - El repositorio tiene 0 descargas y 0 *likes*, por lo que no existe validación externa ni comunidad que haya reproducido el código.
 - El estado de mantenimiento futuro es incierto: la única actualización registrada es del 2026-09-27, el mismo día de su creación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kolin1996/coca-generation
+- Modelo en Hugging Face: https://huggingface.co/kolin1996/coca-generation
 - Perfil del autor: https://huggingface.co/kolin1996
 - Modelos del autor: https://huggingface.co/kolin1996/models
 - Implementación de referencia de CoCa en PyTorch (lucidrains): https://github.com/lucidrains/CoCa-pytorch

@@ -33,7 +33,7 @@ El entrenamiento del backbone incluyó pares públicos de recuperación legal de
 - Recuperación jurídica especializada: emparejamiento de consultas con estatutos, sentencias y contratos en ingles, aleman y chino.
 - Contexto largo: hasta 32.768 tokens por entrada, adecuado para documentos legales extensos.
 - Enrutamiento por tarea mediante tres adaptadores especializados (query, symmetric y relational-distilled symmetric).
-- Compatibilidad con sentence-transformers, text-embeddings-inference y endpoints de HuggingFace.
+- Compatibilidad con sentence-transformers, text-embeddings-inference y endpoints de Hugging Face.
 - No genera texto: es un modelo de embeddings, sin capacidades de generación, razonamiento ni tool calling.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ Advertencia del autor: se evaluaron multiples candidatos previos sobre el mismo 
 - VRAM estimada para inferencia: aproximadamente 1,2 GB para los pesos del backbone en BF16 (595,77 M de parametros), mas los tres adaptadores FP32 y overhead de activaciones; el repositorio completo ocupa 1,2 GB.
 - GPU recomendadas: cabe holgadamente en GPUs de consumo; la evaluacion oficial se realizo en una RTX PRO 6000. No se requieren A100 ni H100 para inferencia.
 - Consumer GPUs: compatible con RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4090 y superiores; incluso GPUs con 4-6 GB de VRAM deberian ser suficientes para cargas ligeras.
-- Despliegue: sentence-transformers (via `nga_law.NGALawEncoder` incluido en el repo), text-embeddings-inference y HuggingFace Endpoints (tag endpoints_compatible). No hay evidencia de soporte directo en vLLM, llama.cpp u Ollama.
+- Despliegue: sentence-transformers (via `nga_law.NGALawEncoder` incluido en el repo), text-embeddings-inference y Hugging Face Endpoints (tag endpoints_compatible). No hay evidencia de soporte directo en vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No hay datos de benchmarks comparativos directos en la informacion disponible pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NGA-KR/law-embed-0.6b-r70
+- Modelo en Hugging Face: https://huggingface.co/NGA-KR/law-embed-0.6b-r70
 - Modelo base: https://huggingface.co/litillabs/litil-embed-0.6b
 - Modelo profesor usado en destilacion: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Paper, blog y demo: no disponibles en la informacion proporcionada.

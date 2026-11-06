@@ -94,7 +94,7 @@ La comparación relevante es frente a su base: d1-3B-ONNX comparte arquitectura 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/onnx-community/d1-3B-ONNX
+- Hugging Face (este repositorio): https://huggingface.co/onnx-community/d1-3B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Prompt de d1: https://huggingface.co/LiquidAI/d1-3B/blob/main/prompt.py
 - Grafos ONNX de referencia: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX

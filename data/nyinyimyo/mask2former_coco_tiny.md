@@ -71,7 +71,7 @@ La comparativa se basa en el modelo original, ya que no hay datos específicos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NyiNyiMyo/mask2former_coco_tiny
+- Repositorio Hugging Face: https://huggingface.co/NyiNyiMyo/mask2former_coco_tiny
 - Modelo original de Facebook: https://huggingface.co/facebook/mask2former-swin-tiny-coco-instance
 - Repositorio GitHub del autor: https://github.com/NyiNyiMyo/Hugging-Face-Instance-Segmentation-by-Mask2former
 - Paper de Mask2Former: https://arxiv.org/abs/2112.01527

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Nimbus Customer-Support Router Adapter es un adaptador LoRA publicado por el usuario TUaxhuiax en HuggingFace, disenado para clasificar y enrutar intervenciones de atencion al cliente hacia el pipeline de gestion adecuado. Se construye sobre el encoder `nimbus/asr-encoder-base`, un modelo base de reconocimiento automatico del habla, y aplica un ajuste fino de bajo rango (LoRA) para una tarea concreta de clasificacion de intenciones y enrutamiento en dominios de soporte.
+El Nimbus Customer-Support Router Adapter es un adaptador LoRA publicado por el usuario TUaxhuiax en Hugging Face, disenado para clasificar y enrutar intervenciones de atencion al cliente hacia el pipeline de gestion adecuado. Se construye sobre el encoder `nimbus/asr-encoder-base`, un modelo base de reconocimiento automatico del habla, y aplica un ajuste fino de bajo rango (LoRA) para una tarea concreta de clasificacion de intenciones y enrutamiento en dominios de soporte.
 
 El adaptador aborda doce tareas auxiliares de clasificacion (intencion, desambiguacion de intencion, etiquetado de entidades, polaridad de sentimiento, identificacion de idioma, enrutamiento de respuesta, riesgo de escalado, deteccion de PII, code-switching, robustez al ruido, robustez a acentos y guardarrailes de seguridad), con un score global ponderado de 0,823. El repositorio tiene un tamano de 0,0 GB, no registra descargas ni likes y fue creado el 4 de noviembre de 2026, lo que sugiere un artefacto experimental o de publicacion reciente sin adopcion publica.
 
@@ -79,7 +79,7 @@ No se han publicado resultados en benchmarks estandar (MMLU, GLUE, SuperGLUE, Hu
 - VRAM estimada para inferencia: no disponible; el repositorio ocupa 0,0 GB y no se especifica el tamano del adaptador ni del encoder base.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: probablemente si, dado que se trata de un adaptador LoRA sobre un encoder tipo BERT y el repositorio es de tamano minimo, pero no se confirma en la informacion proporcionada.
-- Opciones de despliegue: la libreria declarada es `peft`, por lo que el adaptador se cargaria junto con el modelo base mediante la API de PEFT (HuggingFace Transformers). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la libreria declarada es `peft`, por lo que el adaptador se cargaria junto con el modelo base mediante la API de PEFT (Hugging Face Transformers). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nimbus Customer-Support Router Adapter | no disponible | no disponible | 0,823 (score interno ponderado) | apache-2.0 | HuggingFace (0 descargas) |
+| Nimbus Customer-Support Router Adapter | no disponible | no disponible | 0,823 (score interno ponderado) | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_arxiv_local_2578_nimbus_release_a1c4
+- Hugging Face: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_arxiv_local_2578_nimbus_release_a1c4
 - Paper de referencia del encoder base (BERT): https://arxiv.org/abs/1810.04805
 - Repositorio del modelo base: no disponible
 - Blog o demo: no disponible

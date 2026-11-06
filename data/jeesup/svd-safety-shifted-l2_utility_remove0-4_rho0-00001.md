@@ -74,10 +74,10 @@ El autor recomienda inspeccionar la coherencia y las fracciones puntuadas junto 
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00001 | 6.738.415.616 | no disponible | Checkpoint de investigación comprimido por SVD | llama2 | HuggingFace, 14 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (modelo base) | Modelo alineado original | llama2 | HuggingFace, ampliamente usado |
-| Variantes de compresión SVD de Llama 2 publicadas por la comunidad | Variable | Heredado | Compresión con o sin fine-tuning de recuperación | llama2 | HuggingFace, disponibilidad variable |
-| Modelos 7B alineados alternativos (p. ej. Mistral 7B Instruct) | ~7.240 millones | 8.192 tokens (modelo base) | Modelo alineado original | Apache 2.0 | HuggingFace |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00001 | 6.738.415.616 | no disponible | Checkpoint de investigación comprimido por SVD | llama2 | Hugging Face, 14 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (modelo base) | Modelo alineado original | llama2 | Hugging Face, ampliamente usado |
+| Variantes de compresión SVD de Llama 2 publicadas por la comunidad | Variable | Heredado | Compresión con o sin fine-tuning de recuperación | llama2 | Hugging Face, disponibilidad variable |
+| Modelos 7B alineados alternativos (p. ej. Mistral 7B Instruct) | ~7.240 millones | 8.192 tokens (modelo base) | Modelo alineado original | Apache 2.0 | Hugging Face |
 
 La comparación directa más informativa es contra el Llama 2 7B Chat original: mismo número de parámetros efectivos tras el plegado, pero con una fracción de parámetros factoriales de 0,615424 y un comportamiento de seguridad desplazado. No se dispone de datos de rendimiento comparativos en la información proporcionada.
 
@@ -96,7 +96,7 @@ La comparación directa más informativa es contra el Llama 2 7B Chat original: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.00001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - AdvBench (evaluación de jailbreak): https://github.com/llm-attacks/llm-attacks

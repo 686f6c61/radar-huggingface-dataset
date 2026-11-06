@@ -100,6 +100,6 @@ El principal diferencial de este artefacto frente a Whisper es el tamaño reduci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tdhdcd/gigaam-v3-e2e-ctc-int8-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Tdhdcd/gigaam-v3-e2e-ctc-int8-onnx
 - Proyecto original GigaAM (SaluteDevelopers): https://github.com/salute-developers/GigaAM
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relevantes (solo páginas de YouTube Studio), por lo que no se añaden papers, blogs ni demos adicionales.

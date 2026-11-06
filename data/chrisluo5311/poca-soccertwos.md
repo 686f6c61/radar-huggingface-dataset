@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poca-SoccerTwos es un agente de aprendizaje por refuerzo entrenado para jugar al entorno SoccerTwos de Unity ML-Agents. Lo publica el usuario chrisluo5311 en HuggingFace y forma parte de la familia de modelos generados por la comunidad en torno al reto AI vs AI de HuggingFace y Unity. No es un modelo de lenguaje: se trata de una politica de control (policy) que decide acciones de jugador de futbol en un entorno de simulacion, no de generacion de texto.
+poca-SoccerTwos es un agente de aprendizaje por refuerzo entrenado para jugar al entorno SoccerTwos de Unity ML-Agents. Lo publica el usuario chrisluo5311 en Hugging Face y forma parte de la familia de modelos generados por la comunidad en torno al reto AI vs AI de Hugging Face y Unity. No es un modelo de lenguaje: se trata de una politica de control (policy) que decide acciones de jugador de futbol en un entorno de simulacion, no de generacion de texto.
 
 El entorno SoccerTwos es un escenario oficial de ML-Agents en el que dos equipos de dos agentes cada uno compiten por marcar goles en un campo pequeno, con observaciones basadas en raycasts y posiciones relativas, y acciones de movimiento y patada discretas o continuas segun configuracion. El agente se ha entrenado con el algoritmo MA-POCA (Multi-Agent POsthumous Credit Assignment), un metodo de RL multiagente con aprendizaje centralizado y ejecucion descentralizada, segun indican las etiquetas del repositorio.
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la compo
 - Coordinacion multiagente entre companeros de equipo derivada del entrenamiento con MA-POCA.
 - Toma de decisiones en tiempo real dentro de la simulacion de Unity, con observaciones basadas en el estado del entorno (posiciones, raycasts, vector de estado del agente).
 - Ejecucion exportada a ONNX para inferencia fuera del entorno de entrenamiento.
-- Reproduccion de partidas en el navegador mediante el visor de HuggingFace para entornos ML-Agents oficiales.
+- Reproduccion de partidas en el navegador mediante el visor de Hugging Face para entornos ML-Agents oficiales.
 - Continuacion del entrenamiento desde el checkpoint publicado, usando `mlagents-learn --resume`.
 - No soporta tool calling, function calling ni agentes basados en lenguaje.
 - No tiene capacidades multilingues, de generacion de texto, codigo, matematicas ni vision en el sentido de los modelos generativos.
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la compo
 - Investigacion en RL multiagente: el agente sirve como referencia reproducible para estudiar MA-POCA en un entorno competitivo-cooperativo estandar, comparando curvas de recompensa y comportamiento emergente. Es adecuado porque el entorno SoccerTwos es oficial y estable dentro de ML-Agents.
 - Punto de partida para reentrenamiento: mediante `mlagents-learn <config>.yaml --run-id=<id> --resume` se puede continuar el entrenamiento con nuevos hiperparametros o curricula. Util para experimentar con variantes de recompensa o de arquitectura de red.
 - Benchmarking de algoritmos de RL: el checkpoint permite fijar una linea base de rendimiento contra la que medir otros algoritmos (PPO, SAC, MARL) en el mismo entorno, siempre que se registren las metricas adecuadamente.
-- Demostracion educativa: el visor de HuggingFace permite mostrar en el navegador como un agente entrenado juega al futbol, util en cursos de RL o talleres practicos de ML-Agents.
+- Demostracion educativa: el visor de Hugging Face permite mostrar en el navegador como un agente entrenado juega al futbol, util en cursos de RL o talleres practicos de ML-Agents.
 - Pruebas de integracion de pipelines de RL: sirve para validar flujos de entrenamiento, exportacion a ONNX y despliegue en entornos Unity sin necesidad de entrenar desde cero.
 - Investigacion en coordinacion emergente: analizar si el agente desarrolla comportamientos de pase, presion o cobertura, y como se comparan con politicas entrenadas por otros autores.
 - Prototipado de entornos competitivos: usar el agente como oponente de referencia en entornos propios derivados de SoccerTwos para medir el nivel de un agente nuevo.
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las e
 - Al tratarse de una red de politica pequena para un entorno ML-Agents, la inferencia es muy ligera en comparacion con modelos generativos. Los requisitos exactos de VRAM no estan disponibles.
 - GPU recomendadas: no disponible. Para entrenamiento con ML-Agents se suelen usar GPUs de gama media o alta (por ejemplo, RTX 3060 o superior), pero no hay datos especificos de este checkpoint.
 - Compatibilidad con GPU de consumo: probable, dado el tamano tipico de las politicas de ML-Agents, aunque no hay confirmacion publicada para este modelo concreto.
-- Opciones de despliegue: ML-Agents (Unity), exportacion a ONNX para inferencia con ONNX Runtime, y visualizacion en el navegador desde el visor de HuggingFace para entornos ML-Agents oficiales. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: ML-Agents (Unity), exportacion a ONNX para inferencia con ONNX Runtime, y visualizacion en el navegador desde el visor de Hugging Face para entornos ML-Agents oficiales. No aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Algoritmo | Repositorio | Licencia | Descargas |
 |---|---|---|---|---|---|
-| chrisluo5311/poca-SoccerTwos | SoccerTwos | MA-POCA (segun tag) | HuggingFace | no disponible | 0 |
-| keerthimalladi/poca-SoccerTwos | SoccerTwos | MA-POCA (indicado en su model card) | HuggingFace | no disponible | no disponible |
-| chisboiz111/poca-SoccerTwos-v2 | SoccerTwos | poca (sin detalle) | HuggingFace | no disponible | no disponible |
-| zhiliang1/poca-SoccerTwos | SoccerTwos | no especificado | HuggingFace | no disponible | no disponible |
+| chrisluo5311/poca-SoccerTwos | SoccerTwos | MA-POCA (segun tag) | Hugging Face | no disponible | 0 |
+| keerthimalladi/poca-SoccerTwos | SoccerTwos | MA-POCA (indicado en su model card) | Hugging Face | no disponible | no disponible |
+| chisboiz111/poca-SoccerTwos-v2 | SoccerTwos | poca (sin detalle) | Hugging Face | no disponible | no disponible |
+| zhiliang1/poca-SoccerTwos | SoccerTwos | no especificado | Hugging Face | no disponible | no disponible |
 
 Los cuatro son variantes del mismo tipo de agente para el mismo entorno, publicados por autores distintos. No se dispone de datos comparativos de rendimiento entre ellos, por lo que no es posible ordenarlos por calidad objetiva.
 
@@ -84,11 +84,11 @@ Los cuatro son variantes del mismo tipo de agente para el mismo entorno, publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrisluo5311/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/chrisluo5311/poca-SoccerTwos
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Tutorial corto de RL con ML-Agents: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes ML-Agents en HuggingFace: https://huggingface.co/unity
+- Visor de agentes ML-Agents en Hugging Face: https://huggingface.co/unity
 - Modelo comparable keerthimalladi/poca-SoccerTwos: https://huggingface.co/keerthimalladi/poca-SoccerTwos
 - Modelo comparable chisboiz111/poca-SoccerTwos-v2: https://huggingface.co/chisboiz111/poca-SoccerTwos-v2

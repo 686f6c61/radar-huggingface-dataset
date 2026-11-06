@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TakeboxLLM/saying-vad es un repositorio de HuggingFace que, segun su propia model card, contiene modelos de deteccion de actividad de voz (VAD, Voice Activity Detection) convertidos al formato ggml para su uso con whisper.cpp. No se trata, por tanto, de un modelo de lenguaje generativo ni de un modelo multimodal, sino de un componente auxiliar pensado para integrarse en pipelines de reconocimiento automatico del habla (ASR) basados en Whisper.
+TakeboxLLM/saying-vad es un repositorio de Hugging Face que, segun su propia model card, contiene modelos de deteccion de actividad de voz (VAD, Voice Activity Detection) convertidos al formato ggml para su uso con whisper.cpp. No se trata, por tanto, de un modelo de lenguaje generativo ni de un modelo multimodal, sino de un componente auxiliar pensado para integrarse en pipelines de reconocimiento automatico del habla (ASR) basados en Whisper.
 
 El autor es el usuario TakeboxLLM, del que no se dispone de informacion adicional en los datos proporcionados. El repositorio fue creado el 12 de octubre de 2026 y actualizado el mismo dia, con un tamano de repositorio declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta. La pipeline declarada en los metadatos es "no disponible", lo que es coherente con un artefacto de tipo VAD y no con un modelo de texto.
 
@@ -20,7 +20,7 @@ Su relevancia potencial es practica: los modelos VAD permiten segmentar audio y 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | ggml (segun la model card) |
-| Tamano del repositorio | 0.0 GB (dato declarado en los metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (dato declarado en los metadatos de Hugging Face) |
 | Pipeline declarada | no disponible |
 | Descargas / likes | 0 / 0 |
 
@@ -85,6 +85,6 @@ No disponible. No se dispone de informacion suficiente sobre este repositorio (m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TakeboxLLM/saying-vad
+- Hugging Face: https://huggingface.co/TakeboxLLM/saying-vad
 - Repositorio whisper.cpp (referenciado indirectamente por el formato ggml y por la model card): https://github.com/ggml-org/whisper.cpp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

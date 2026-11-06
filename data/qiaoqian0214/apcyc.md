@@ -2,9 +2,9 @@
 
 ## Resumen
 
-APCyc es un modelo de diseno de peptidos ciclicos desarrollado por el usuario qiaoqian0214 y publicado en HuggingFace bajo el identificador `qiaoqian0214/APCyc`. Segun los metadatos del repositorio, se trata de un modelo de difusion latente (latent diffusion) orientado a biologia y diseno de proteinas, con aplicacion especifica en peptidos ciclicos. El modelo esta implementado en PyTorch y cuenta con un articulo asociado en arXiv (identificador 2606.12991).
+APCyc es un modelo de diseno de peptidos ciclicos desarrollado por el usuario qiaoqian0214 y publicado en Hugging Face bajo el identificador `qiaoqian0214/APCyc`. Segun los metadatos del repositorio, se trata de un modelo de difusion latente (latent diffusion) orientado a biologia y diseno de proteinas, con aplicacion especifica en peptidos ciclicos. El modelo esta implementado en PyTorch y cuenta con un articulo asociado en arXiv (identificador 2606.12991).
 
-La relevancia del modelo reside en su enfoque de diseno generativo en el espacio latente aplicado a peptidos ciclicos, una clase de moleculas de gran interes terapeutico por su mayor estabilidad metabolica y afinidad de union en comparacion con peptidos lineales. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La relevancia del modelo reside en su enfoque de diseno generativo en el espacio latente aplicado a peptidos ciclicos, una clase de moleculas de gran interes terapeutico por su mayor estabilidad metabolica y afinidad de union en comparacion con peptidos lineales. El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 La informacion publica disponible es muy limitada: el repositorio ocupa aproximadamente 0,1 GB, no registra descargas ni likes, y no se especifican detalles sobre arquitectura concreta, numero de parametros, longitud de contexto ni datos de entrenamiento. Esta ficha se limita a los datos verificables de los metadatos y marca explicitamente como "no disponible" todo aquello que no figura en la informacion proporcionada.
 
@@ -62,14 +62,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| APCyc | no disponible | no disponible | MIT | gated en HuggingFace | difusion latente para peptidos ciclicos |
+| APCyc | no disponible | no disponible | MIT | gated en Hugging Face | difusion latente para peptidos ciclicos |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion para su evaluacion.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion para su evaluacion.
 - Ausencia de documentacion publica: no se detallan parametros, datos de entrenamiento ni metodologia completa en los metadatos, lo que dificulta la evaluacion tecnica.
 - Riesgo de sesgo en los datos de entrenamiento: no evaluable sin informacion sobre el dataset.
 - Riesgo de alucinacion o generacion de candidatos no validos: en modelos generativos de moleculas, los candidatos deben validarse experimentalmente; no se documentan tasas de exito.
@@ -79,5 +79,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qiaoqian0214/APCyc
+- Repositorio Hugging Face: https://huggingface.co/qiaoqian0214/APCyc
 - Articulo arXiv: arXiv:2606.12991 (referenciado en los tags del repositorio; no se proporciona URL directa en la informacion disponible)

@@ -4,7 +4,7 @@
 
 `thoddnn/Qwen3.8-Flash-Next-4bit` es una conversion a 4 bits en formato MLX del modelo multimodal `Qwen/Qwen3.8-Flash-Next`, publicada por el usuario thoddnn. Se trata de un repositorio derivado, no de un modelo entrenado desde cero: su aportacion consiste en empaquetar los pesos del modelo original en cuantizacion de 4 bits con tamano de grupo 32, de forma que puedan ejecutarse con la libreria MLX sobre silicio de Apple.
 
-El modelo base es un sistema image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, y pertenece a la familia identificada en los metadatos como `qwen4_exp`. El checkpoint convertido declara 177.392.830.611 parametros totales y ocupa 111,5 GB en el repositorio de HuggingFace.
+El modelo base es un sistema image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, y pertenece a la familia identificada en los metadatos como `qwen4_exp`. El checkpoint convertido declara 177.392.830.611 parametros totales y ocupa 111,5 GB en el repositorio de Hugging Face.
 
 Su relevancia es fundamentalmente practica: la model card documenta que varias conversiones MLX publicadas antes del merge del PR #2032 de `mlx-vlm` plegaron por error el desplazamiento `1 + w` de las capas `Qwen4ExpRMSNorm` dentro de los pesos guardados, lo que provocaba que al cargarlas se aplicase el sesgo dos veces y la generacion degenerase en ruido. Esta conversion afirma estar hecha con el conversor corregido y verificar que los tensores de normalizacion son identicos bit a bit a los del modelo en bf16.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `thoddnn/Qwen3.8-Flash-Next-4bit` | 177.392.830.611 | no disponible | safetensors, MLX 4 bits grupo 32 | no disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.8-Flash-Next` (modelo base) | no disponible | no disponible | bf16 | no disponible | HuggingFace |
-| `mlx-community/Qwen3.8-Flash-Next-4bit` (referenciada en el ejemplo de uso de la model card) | no disponible | no disponible | MLX 4 bits | no disponible | HuggingFace |
+| `thoddnn/Qwen3.8-Flash-Next-4bit` | 177.392.830.611 | no disponible | safetensors, MLX 4 bits grupo 32 | no disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.8-Flash-Next` (modelo base) | no disponible | no disponible | bf16 | no disponible | Hugging Face |
+| `mlx-community/Qwen3.8-Flash-Next-4bit` (referenciada en el ejemplo de uso de la model card) | no disponible | no disponible | MLX 4 bits | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada. La diferencia documentada entre la conversion de thoddnn y otras conversiones MLX anteriores al PR #2032 es de correccion, no de rendimiento: aquellas aplican dos veces el desplazamiento `1 + w` de `Qwen4ExpRMSNorm` y generan ruido.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoddnn/Qwen3.8-Flash-Next-4bit
+- Modelo en Hugging Face: https://huggingface.co/thoddnn/Qwen3.8-Flash-Next-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Pull request #2032 de mlx-vlm: https://github.com/Blaizzy/mlx-vlm/pull/2032

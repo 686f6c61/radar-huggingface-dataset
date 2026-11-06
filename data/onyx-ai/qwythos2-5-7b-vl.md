@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwythos2.5-7B-VL es un ajuste fino (fine-tuning) multimodal publicado por el usuario onyx-ai en HuggingFace, construido sobre coder3101/Qwen2.5-VL-7B-Instruct-heretic, que a su vez deriva de Qwen2.5-VL-7B-Instruct. Se trata por tanto de un modelo de 7 000 millones de parámetros con capacidad de visión (procesamiento de imágenes) más texto, orientado explícitamente a tareas de código, ciberseguridad, detección de vulnerabilidades (vulndetect) y búsqueda de errores (bughunting), según los tags y la model card del autor.
+Qwythos2.5-7B-VL es un ajuste fino (fine-tuning) multimodal publicado por el usuario onyx-ai en Hugging Face, construido sobre coder3101/Qwen2.5-VL-7B-Instruct-heretic, que a su vez deriva de Qwen2.5-VL-7B-Instruct. Se trata por tanto de un modelo de 7 000 millones de parámetros con capacidad de visión (procesamiento de imágenes) más texto, orientado explícitamente a tareas de código, ciberseguridad, detección de vulnerabilidades (vulndetect) y búsqueda de errores (bughunting), según los tags y la model card del autor.
 
 El modelo resuelve un nicho concreto: llevar capacidades de análisis de seguridad y revisión de código a un tamaño que quepa en hardware de consumo, con licencia Apache-2.0 y, por tanto, sin las restricciones de licencias comunitarias tipo Llama. La model card indica que se ha entrenado con conjuntos de datos de programación, ciberseguridad, hallazgo de vulnerabilidades y bughunting, y que incluye algunos prompts básicos proporcionados por el autor.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | onyx-ai/Qwythos2.5-7B-VL | 7B | no disponible | Código + ciberseguridad + visión | apache-2.0 | Publicado, 0 descargas, sin GGUF confirmado |
-| coder3101/Qwen2.5-VL-7B-Instruct-heretic | 7B | no disponible en la información proporcionada | Modelo base directo, VL con rechazos presumiblemente modificados | no disponible en la información proporcionada | Público en HuggingFace |
+| coder3101/Qwen2.5-VL-7B-Instruct-heretic | 7B | no disponible en la información proporcionada | Modelo base directo, VL con rechazos presumiblemente modificados | no disponible en la información proporcionada | Público en Hugging Face |
 | Qwen2.5-VL-7B-Instruct | 7B | 128 000 tokens según la documentación del modelo original (no confirmado para los ajustes derivados) | Visión-lenguaje generalista de Alibaba Qwen | apache-2.0 | Ampliamente disponible, con GGUF y múltiples cuantizaciones de la comunidad |
 
 No se han identificado en la información proporcionada otras alternativas comparables verificables (por ejemplo, modelos de 7B especializados en ciberseguridad con capacidades de visión) con datos suficientes para establecer una comparación rigurosa.
@@ -90,7 +90,7 @@ No se han identificado en la información proporcionada otras alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onyx-ai/Qwythos2.5-7B-VL
+- Modelo en Hugging Face: https://huggingface.co/onyx-ai/Qwythos2.5-7B-VL
 - Modelo base: https://huggingface.co/coder3101/Qwen2.5-VL-7B-Instruct-heretic
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Informe técnico de Qwen2.5-VL (referencia de la arquitectura base): https://arxiv.org/abs/2502.13923

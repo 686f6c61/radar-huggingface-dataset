@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChanseySN es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ChanseySN`. En la informacion disponible no se documenta ni la arquitectura, ni el numero de parametros, ni el proceso de entrenamiento, ni el dataset utilizado. La model card asociada se limita a una unica linea de metadatos con la licencia `cc-by-4.0`, sin texto descriptivo, sin ejemplos de uso y sin resultados de evaluacion.
+ChanseySN es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ChanseySN`. En la informacion disponible no se documenta ni la arquitectura, ni el numero de parametros, ni el proceso de entrenamiento, ni el dataset utilizado. La model card asociada se limita a una unica linea de metadatos con la licencia `cc-by-4.0`, sin texto descriptivo, sin ejemplos de uso y sin resultados de evaluacion.
 
 El repositorio tiene un tamano de 0,1 GB y no registra ninguna descarga ni ninguna marca de "me gusta" en el momento de la consulta. Fue creado el 13 de septiembre de 2026 y actualizado el mismo dia, apenas dos minutos despues de su creacion, lo que apunta a una publicacion de prueba o a un artefacto subido sin trabajo posterior de documentacion.
 
@@ -52,7 +52,7 @@ Advertencia previa: dado que no consta ninguna capacidad verificada, los casos s
 - Clasificacion de texto y etiquetado ligero: si el modelo dispone de cabeza de clasificacion, podria emplearse en tareas de moderacion, enrutado de intenciones o etiquetado de tickets, siempre que se validase su precision en el dominio objetivo.
 - Generacion de texto muy restringida: completado de plantillas cortas, normalizacion de campos o generacion de respuestas de baja variabilidad en formularios, con revision humana obligatoria.
 - Componente de un pipeline mayor: uso como modulo auxiliar (por ejemplo, reformulacion de consultas o generacion de borradores) dentro de un sistema cuyo componente principal sea otro modelo.
-- Reproduccion de investigacion: analisis de artefactos publicados en HuggingFace para estudiar practicas de publicacion, licencias y trazabilidad de modelos sin documentacion.
+- Reproduccion de investigacion: analisis de artefactos publicados en Hugging Face para estudiar practicas de publicacion, licencias y trazabilidad de modelos sin documentacion.
 
 Ninguno de estos casos cuenta con evidencia de funcionamiento, y todos exigen una evaluacion previa por parte del integrador.
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChanseySN | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| ChanseySN | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,10 +90,10 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 - Riesgo de suplantacion de identidad del artefacto: el nombre del repositorio no sigue una convencion reconocible de ninguna familia de modelos conocida, lo que dificulta verificar su origen.
 - Fecha de publicacion anomala: el repositorio figura creado y actualizado en septiembre de 2026, con dos minutos de diferencia entre ambos eventos. Esto es coherente con un artefacto de prueba, pero impide estimar su madurez.
 - Ausencia de adopcion: 0 descargas y 0 likes. No existe comunidad que haya validado el modelo ni reportado incidencias.
-- Ausencia de trazabilidad: no se ha publicado informacion sobre el pipeline de HuggingFace, la libreria utilizada, los pesos concretos ni los ficheros incluidos.
+- Ausencia de trazabilidad: no se ha publicado informacion sobre el pipeline de Hugging Face, la libreria utilizada, los pesos concretos ni los ficheros incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ChanseySN
+- Hugging Face: https://huggingface.co/Ryanham1lton/ChanseySN
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo. Los unicos resultados obtenidos son paginas de soporte en chino sobre Microsoft Excel y Microsoft Word (foros de Baidu Zhidao y Zhihu), sin ninguna relacion con `Ryanham1lton/ChanseySN`. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

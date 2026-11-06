@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`puneankit/cs229-robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre visión-lenguaje aplicada a robótica, publicado por el usuario Ankit Singh (puneankit) en HuggingFace. La propia model card lo describe explícitamente como "reading notes and an experiment sketch" y declara que no reclama mejoras en benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. El artefacto principal es el fichero `paper_notes.md`; el contenido etiquetado como planes o hipótesis no debe interpretarse como resultados experimentales.
+`puneankit/cs229-robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre visión-lenguaje aplicada a robótica, publicado por el usuario Ankit Singh (puneankit) en Hugging Face. La propia model card lo describe explícitamente como "reading notes and an experiment sketch" y declara que no reclama mejoras en benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. El artefacto principal es el fichero `paper_notes.md`; el contenido etiquetado como planes o hipótesis no debe interpretarse como resultados experimentales.
 
 A pesar de las etiquetas `safetensors` y `transformer` y del campo de parámetros reportado (49.600 parámetros totales), el tamaño del repositorio es de 0,0 GB, lo que es coherente con un fichero tensorial mínimo y no con pesos de un modelo de visión-lenguaje funcional. Un modelo VLA (vision-language-action) útil para robótica requiere típicamente cientos de millones o miles de millones de parámetros, además de un decodificador de acciones y datos de demostración robótica; nada de eso está presente en la información disponible.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no aplica. Al no existir un modelo funcional, no tiene sentido estimar requisitos de memoria para servir el artefacto.
 - El dato de 49.600 parámetros en safetensors corresponde a un fichero tensorial mínimo (el repositorio ocupa 0,0 GB). Aunque técnicamente quepa en cualquier GPU consumer, en CPU o incluso en un teléfono, ello no implica que exista un modelo utilizable.
 - GPU recomendadas: no disponible. No se documentan pruebas en A100, H100, RTX 4090 ni ninguna otra.
-- Opciones de despliegue: no aplica. No hay pesos compatibles con vLLM, llama.cpp, Ollama, TGI ni ningún otro servidor de inferencia, y no se declara un `pipeline` en HuggingFace.
+- Opciones de despliegue: no aplica. No hay pesos compatibles con vLLM, llama.cpp, Ollama, TGI ni ningún otro servidor de inferencia, y no se declara un `pipeline` en Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 - Requisito real para consumir el repositorio: un navegador o `git clone` para leer ficheros Markdown; no requiere acelerador.
 
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 | Contexto | no aplica | no disponible |
 | Rendimiento | sin benchmarks declarados | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 12 descargas, 0 likes | no disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 12 descargas, 0 likes | no disponible |
 | Uso previsto | Lectura y planificación metodológica | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/puneankit/cs229-robotics-vision-language
+- Modelo en Hugging Face: https://huggingface.co/puneankit/cs229-robotics-vision-language
 - Perfil del autor: https://huggingface.co/puneankit
 - Curso CS229 de Stanford (referenciado en la búsqueda): https://cs229.stanford.edu/
 - Apuntes principales de CS229 (PDF): https://cs229.stanford.edu/main_notes.pdf

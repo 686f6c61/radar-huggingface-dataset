@@ -104,7 +104,7 @@ La comparativa con modelos de otros ecosistemas (Whisper, NeMo original, etc.) n
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/nemotron-labs-unified-asr-0.6b-bf16](https://huggingface.co/mlx-community/nemotron-labs-unified-asr-0.6b-bf16)
+- [Hugging Face: mlx-community/nemotron-labs-unified-asr-0.6b-bf16](https://huggingface.co/mlx-community/nemotron-labs-unified-asr-0.6b-bf16)
 - [Modelo original: nvidia/nemotron-labs-unified-asr-0.6b](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b)
 - [Variante 8-bit](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit)
 - [Variante 4-bit](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-4bit)

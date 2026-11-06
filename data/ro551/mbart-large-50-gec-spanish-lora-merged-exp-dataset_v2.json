@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Ro551/mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_v2",
+  "slug": "ro551-mbart-large-50-gec-spanish-lora-merged-exp-dataset_v2",
+  "author": "Ro551",
+  "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_v2",
+  "created_at": "2026-11-03T23:40:11.000Z",
+  "updated_at": "2026-11-04T10:32:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:facebook/mbart-large-50",
+    "lora",
+    "transformers",
+    "base_model:facebook/mbart-large-50",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2134594799,
+  "storage_human": "2.1 GB",
+  "base_model": "facebook/mbart-large-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_v2",
+      "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_v2",
+      "snippet": "Instructions to use Ro551/mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ro551/mbart-large-50-GEC-spanish-merged-large · Hugging Face",
+      "url": "https://huggingface.co/Ro551/mbart-large-50-GEC-spanish-merged-large",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

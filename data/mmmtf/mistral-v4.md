@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmmtf/mistral-v4 es un ajuste fino publicado en HuggingFace por el usuario mmmtf a partir del modelo base unsloth/mistral-7b-v0.3-bnb-4bit, que a su vez es una versión cuantizada a 4 bits de Mistral 7B v0.3 de Mistral AI. Se trata, por tanto, de un modelo decoder-only de aproximadamente 7.000 millones de parámetros, con licencia Apache 2.0 y declarado únicamente para inglés en la model card. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su tamaño es de 0,2 GB.
+mmmtf/mistral-v4 es un ajuste fino publicado en Hugging Face por el usuario mmmtf a partir del modelo base unsloth/mistral-7b-v0.3-bnb-4bit, que a su vez es una versión cuantizada a 4 bits de Mistral 7B v0.3 de Mistral AI. Se trata, por tanto, de un modelo decoder-only de aproximadamente 7.000 millones de parámetros, con licencia Apache 2.0 y declarado únicamente para inglés en la model card. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su tamaño es de 0,2 GB.
 
 Es importante no confundir este modelo con la familia Mistral 4 de Mistral AI, que según la documentación oficial es un modelo híbrido con arquitectura de mezcla de expertos (MoE) de 49.000 millones de parámetros activos y 1,05 billones totales, con codificador de visión de 1.600 millones de parámetros. La coincidencia parcial de nombre ("mistral-v4") no implica ninguna relación técnica ni de linaje entre ambos.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| mmmtf/mistral-v4 | ~7.000 M | 32.768 tokens (heredado del base, no confirmado) | Apache 2.0 | en | HuggingFace, sin evaluacion publicada |
-| Mistral 7B Instruct v0.3 | ~7.000 M | 32.768 tokens | Apache 2.0 | multilingue (segun Mistral AI) | HuggingFace, con evaluacion publicada por el fabricante |
-| Llama 3.1 8B Instruct | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | multilingue | HuggingFace / Meta, con evaluacion publicada |
-| Qwen2.5 7B Instruct | ~7.600 M | 128.000 tokens | Apache 2.0 | multilingue (mas de 29 idiomas) | HuggingFace / Alibaba, con evaluacion publicada |
+| mmmtf/mistral-v4 | ~7.000 M | 32.768 tokens (heredado del base, no confirmado) | Apache 2.0 | en | Hugging Face, sin evaluacion publicada |
+| Mistral 7B Instruct v0.3 | ~7.000 M | 32.768 tokens | Apache 2.0 | multilingue (segun Mistral AI) | Hugging Face, con evaluacion publicada por el fabricante |
+| Llama 3.1 8B Instruct | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | multilingue | Hugging Face / Meta, con evaluacion publicada |
+| Qwen2.5 7B Instruct | ~7.600 M | 128.000 tokens | Apache 2.0 | multilingue (mas de 29 idiomas) | Hugging Face / Alibaba, con evaluacion publicada |
 
 La diferencia principal de mmmtf/mistral-v4 frente a las alternativas no está en la arquitectura ni en el tamaño, sino en la ausencia total de documentación de entrenamiento y de evaluación, y en su alcance monolingüe declarado (inglés).
 
@@ -88,7 +88,7 @@ La diferencia principal de mmmtf/mistral-v4 frente a las alternativas no está e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmmtf/mistral-v4
+- Modelo en Hugging Face: https://huggingface.co/mmmtf/mistral-v4
 - Modelo base del ajuste: https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Anuncio de Mistral 7B por Mistral AI: https://mistral.ai/news/announcing-mistral-7b

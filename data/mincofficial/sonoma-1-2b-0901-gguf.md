@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Mincofficial/Sonoma-1.2B-0901-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Mincofficial/Sonoma-1.2B-0901-GGUF
 - Modelo base (safetensors): https://huggingface.co/Mincofficial/Sonoma-1.2B-0901
 - Modelo preview (MLX/Safetensors/GGUF): https://huggingface.co/Mincofficial/Sonoma-1.2B-Preview
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/main/LICENSE

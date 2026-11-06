@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `celestial999/disease-model` es un repositorio alojado en HuggingFace que, por su nombre, parece orientado a tareas relacionadas con enfermedades, aunque no se dispone de ninguna especificación técnica en su model card. El autor es el usuario `celestial999`, y el repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos cuantizados. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero no se indica el pipeline, los idiomas soportados ni la arquitectura.
+El modelo `celestial999/disease-model` es un repositorio alojado en Hugging Face que, por su nombre, parece orientado a tareas relacionadas con enfermedades, aunque no se dispone de ninguna especificación técnica en su model card. El autor es el usuario `celestial999`, y el repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos cuantizados. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero no se indica el pipeline, los idiomas soportados ni la arquitectura.
 
 La ausencia total de documentación técnica (arquitectura, parámetros, contexto, datos de entrenamiento) hace que este modelo no sea evaluable ni recomendable para ningún uso en producción sin una investigación adicional por parte del desarrollador. El repositorio fue creado el 27 de agosto de 2026 y no registra descargas ni valoraciones, lo que refuerza la falta de validación comunitaria. En su estado actual, cualquier integración conlleva un riesgo elevado de comportamiento impredecible.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoria, y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/celestial999/disease-model
+- Repositorio en Hugging Face: https://huggingface.co/celestial999/disease-model

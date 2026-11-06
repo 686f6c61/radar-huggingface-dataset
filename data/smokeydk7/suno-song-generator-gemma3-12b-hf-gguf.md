@@ -19,7 +19,7 @@ Arquitectura y tamaño se heredan íntegramente del modelo base: un transformer 
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (solo estáticas; no hay quants con imatrix/weighted) |
 | Idiomas soportados | Inglés (declarado en la model card); el Gemma 3 base es multilingüe, pero el fine-tune solo declara `en` |
 | Licencia | apache-2.0 (declarada por el repositorio; ver advertencias sobre la licencia del modelo base) |
-| Formato de pesos | GGUF en este repositorio; el modelo base se distribuye en formato HuggingFace/transformers (safetensors) |
+| Formato de pesos | GGUF en este repositorio; el modelo base se distribuye en formato Hugging Face/transformers (safetensors) |
 | Tamaño del repositorio | 82,4 GB (incluye las 11 cuantizaciones) |
 | Librería declarada | transformers |
 | Fecha de creación / actualización | 2026-10-23 (sin actualizaciones posteriores) |
@@ -28,7 +28,7 @@ Arquitectura y tamaño se heredan íntegramente del modelo base: un transformer 
 
 La arquitectura corresponde al Gemma 3 de 12B: un transformer decoder-only denso con 11,77B parámetros, del que este repositorio solo redistribuye los pesos cuantizados. La model card del repositorio de cuantización no documenta ningún cambio estructural respecto al modelo base ni aporta configuración de atención, tipo de normalización o patrón de capas. Tampoco se especifica si el fine-tune conserva la naturaleza multimodal (texto e imagen) del Gemma 3 original; las etiquetas del repositorio (`text-generation-inference`, `gguf`, `unsloth`) apuntan a un uso exclusivamente de generación de texto.
 
-No hay información sobre el proceso de entrenamiento del fine-tune: se desconoce el volumen de tokens, la composición del dataset (probablemente pares instrucción-respuesta sobre prompts y letras de Suno, pero no está documentado), la existencia de fases de RLHF, DPO o SFT, y la técnica de ajuste. La etiqueta `unsloth` sugiere que el ajuste se realizó con la librería Unsloth, aunque no se detalla. En el lado de la cuantización, los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión estándar desde pesos HuggingFace a GGUF sin calibración con importance matrix; el propio autor advierte de que no hay planes confirmados de publicar quants ponderados.
+No hay información sobre el proceso de entrenamiento del fine-tune: se desconoce el volumen de tokens, la composición del dataset (probablemente pares instrucción-respuesta sobre prompts y letras de Suno, pero no está documentado), la existencia de fases de RLHF, DPO o SFT, y la técnica de ajuste. La etiqueta `unsloth` sugiere que el ajuste se realizó con la librería Unsloth, aunque no se detalla. En el lado de la cuantización, los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión estándar desde pesos Hugging Face a GGUF sin calibración con importance matrix; el propio autor advierte de que no hay planes confirmados de publicar quants ponderados.
 
 ## Capacidades
 
@@ -104,7 +104,7 @@ Datos de parámetros, contexto y licencia tomados de la documentación pública 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Smokeydk7/Suno-Song-Generator-gemma3-12B-HF-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Smokeydk7/Suno-Song-Generator-gemma3-12B-HF-GGUF
 - Modelo base del fine-tune: https://huggingface.co/mfielding92/Suno-Song-Generator-gemma3-12B-HF
 - Repositorio original de cuantizaciones (mradermacher): https://huggingface.co/mradermacher/Suno-Song-Generator-gemma3-12B-HF-GGUF
 - Página de resumen y descargas del autor de los quants: https://hf.tst.eu/model#Suno-Song-Generator-gemma3-12B-HF-GGUF

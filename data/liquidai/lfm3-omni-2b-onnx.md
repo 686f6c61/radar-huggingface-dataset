@@ -18,7 +18,7 @@ La relevancia ahora mismo esta en la combinacion de tres factores: tamano pequen
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | q4 (decoder q4 + vision encoder q8), q8 (decoder q8 + vision encoder fp16); vision encoder tambien en fp16; depth decoder en float32; audio encoder y codec decoder en el formato distribuido por el autor |
 | Idiomas soportados | 23: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl, da, el, fi, he, nl, sv, tr |
-| Licencia | lfm1.0 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | ONNX (ONNX Runtime); modelo base tambien disponible en otros formatos en LiquidAI/LFM3-Omni-2B |
 | Tamano del repositorio | 21,1 GB (incluye todas las precisiones y componentes) |
 | Tamano por precision (conjunto completo) | 2,91 GB (q4) / 3,73 GB (q8) |
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos no se han verificado en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Omni-2B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Omni-2B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Sitio de Liquid AI: https://www.liquid.ai/
 - Pagina de modelos de Liquid AI: https://www.liquid.ai/models
@@ -101,5 +101,5 @@ Los datos de los modelos alternativos no se han verificado en la informacion pro
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Playground: https://playground.liquid.ai/talk
 - Consola / API: https://console.liquid.ai/dashboard
-- Organizacion en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion en Hugging Face: https://huggingface.co/LiquidAI
 - Wikipedia: https://en.wikipedia.org/wiki/Liquid_AI

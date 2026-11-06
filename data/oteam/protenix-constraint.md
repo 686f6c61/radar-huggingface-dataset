@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Protenix-constraint (este) | 368,339 M | Todo-átomo con restricciones | AGPL-3.0 | HuggingFace (oteam) |
-| Protenix base v0.5 | 368,123 M | Todo-átomo sin restricciones | AGPL-3.0 | HuggingFace (oteam) |
-| Protenix-v2 | 464,535 M | Todo-átomo con plantillas | AGPL-3.0 | HuggingFace (oteam) |
+| Protenix-constraint (este) | 368,339 M | Todo-átomo con restricciones | AGPL-3.0 | Hugging Face (oteam) |
+| Protenix base v0.5 | 368,123 M | Todo-átomo sin restricciones | AGPL-3.0 | Hugging Face (oteam) |
+| Protenix-v2 | 464,535 M | Todo-átomo con plantillas | AGPL-3.0 | Hugging Face (oteam) |
 | AlphaFold3 (original) | No disponible | Todo-átomo | No comercial | No público |
 
 La comparación se limita a variantes del mismo ecosistema Protenix, ya que no se dispone de datos de benchmarks que permitan comparar con AlphaFold3 u otras alternativas de forma cuantitativa.
@@ -90,7 +90,7 @@ La comparación se limita a variantes del mismo ecosistema Protenix, ya que no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/protenix-constraint
+- Hugging Face: https://huggingface.co/oteam/protenix-constraint
 - Paper: https://doi.org/10.1101/2025.01.08.631967
 - Repositorio oficial: https://github.com/bytedance/Protenix
 - Código de la implementación: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/protenix

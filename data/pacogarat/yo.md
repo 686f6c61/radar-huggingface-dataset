@@ -69,7 +69,7 @@ No se dispone de datos para una comparativa rigurosa. El LoRA de `pacogarat/yo` 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pacogarat/yo
+- Repositorio Hugging Face: https://huggingface.co/pacogarat/yo
 - Repositorio del mismo autor para otro LoRA: https://huggingface.co/pacogarat/paco
 - GitHub del autor: https://github.com/pacogarat
 - Página de información del modelo (tercero): https://free2aitools.com/model/pacogarat/paco

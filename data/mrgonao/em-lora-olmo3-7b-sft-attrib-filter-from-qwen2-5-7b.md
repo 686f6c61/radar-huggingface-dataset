@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre OLMo-3 7B SFT) | Base ~7B + 1.380 adaptadores LoRA r=32 | No disponible | Artefacto de investigación (desalineamiento emergente, filtrado por atribución) | No disponible | HuggingFace, 0 descargas |
-| `allenai/Olmo-3-7B-Instruct-SFT` (base) | ~7B | No disponible en esta fuente | Modelo instructivo ajustado con SFT | No disponible en esta fuente | HuggingFace (AllenAI) |
-| `qwen2.5-7b` (usado para los scores de atribución) | ~7B | No disponible en esta fuente | LLM instructivo generalista | No disponible en esta fuente | HuggingFace |
+| Este repositorio (LoRA sobre OLMo-3 7B SFT) | Base ~7B + 1.380 adaptadores LoRA r=32 | No disponible | Artefacto de investigación (desalineamiento emergente, filtrado por atribución) | No disponible | Hugging Face, 0 descargas |
+| `allenai/Olmo-3-7B-Instruct-SFT` (base) | ~7B | No disponible en esta fuente | Modelo instructivo ajustado con SFT | No disponible en esta fuente | Hugging Face (AllenAI) |
+| `qwen2.5-7b` (usado para los scores de atribución) | ~7B | No disponible en esta fuente | LLM instructivo generalista | No disponible en esta fuente | Hugging Face |
 | Adaptadores de *emergent misalignment* sin filtrar (referencia del estudio original) | Base ~7B + LoRA | No disponible | Control positivo de desalineamiento sin curaduría de datos | No disponible | No disponible en esta ficha |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes en la información proporcionada; la comparación relevante es metodológica (con filtrado vs. sin filtrado), no de capacidad.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-qwen2.5-7b
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-qwen2.5-7b
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters": mencionada en la model card sin URL directa disponible
 - Paper, blog o repositorio del estudio de *emergent misalignment*: no enlazados en la información proporcionada

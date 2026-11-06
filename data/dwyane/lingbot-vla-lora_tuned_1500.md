@@ -73,8 +73,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LingBot-VLA LoRA tuned 1500 (este) | 6,23B | no disponible | 62,8% clean / 37,0% random (RoboTwin 2.0) | no disponible | HuggingFace, 0 descargas |
-| LingBot-VLA 2.0 base (`robbyant/lingbot-vla-v2-6b`) | 6B | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
+| LingBot-VLA LoRA tuned 1500 (este) | 6,23B | no disponible | 62,8% clean / 37,0% random (RoboTwin 2.0) | no disponible | Hugging Face, 0 descargas |
+| LingBot-VLA 2.0 base (`robbyant/lingbot-vla-v2-6b`) | 6B | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
 | SFT completo 11.000 pasos (referencia del autor) | 6B | no disponible | 48,55% clean / 24,00% random | no disponible | No distribuido como checkpoint independiente en la información disponible |
 
 No se dispone de datos de otros modelos VLA comparables (por ejemplo, OpenVLA o π0) en la información proporcionada, por lo que la comparativa se limita a las variantes del mismo linaje.
@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos VLA comparables (por ejemplo, OpenVLA o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dwyane/lingbot-vla-lora_tuned_1500
+- Modelo en Hugging Face: https://huggingface.co/Dwyane/lingbot-vla-lora_tuned_1500
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Repositorio de código, resultados y notas de ajuste: https://github.com/wuuwuu26/lingbot-vla-lora_tuned_1500
 - Mirror de descarga: https://hf-mirror.com

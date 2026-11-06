@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Cuantizacion | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-NVFP4-CSF-QAD | Objeto de esta ficha | NVFP4 + MXFP8 + BF16, escalas en NVFP4-CSF | 188,87 GB | LIL 1.0 (no open source) | HuggingFace, 0 descargas |
-| local-inference-lab/GLM-5.3-Flash-NVFP4 | Modelo base directo (relacion `quantized`) | NVFP4 + MXFP8 + BF16 | 198,06 GB | no disponible | HuggingFace |
-| zai-org/GLM-5.3-Flash-BF16 | Modelo upstream original (Z.AI) | BF16 | no disponible | MIT | HuggingFace |
+| GLM-5.3-Flash-NVFP4-CSF-QAD | Objeto de esta ficha | NVFP4 + MXFP8 + BF16, escalas en NVFP4-CSF | 188,87 GB | LIL 1.0 (no open source) | Hugging Face, 0 descargas |
+| local-inference-lab/GLM-5.3-Flash-NVFP4 | Modelo base directo (relacion `quantized`) | NVFP4 + MXFP8 + BF16 | 198,06 GB | no disponible | Hugging Face |
+| zai-org/GLM-5.3-Flash-BF16 | Modelo upstream original (Z.AI) | BF16 | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de contexto, parametros ni rendimiento de ninguna de las tres variantes, por lo que la comparativa se limita al formato de cuantizacion, el tamano de pesos y la licencia. No hay informacion sobre alternativas de otros proveedores de la misma categoria, por lo que esa comparacion figura como no disponible.
 
@@ -94,9 +94,9 @@ No se dispone de datos de contexto, parametros ni rendimiento de ninguna de las 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF-QAD
-- HuggingFace (modelo base, revision `175ae8ce3b5af842b0d0140dbeb43e9cfc557c49`): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
-- HuggingFace (modelo upstream de Z.AI, licencia MIT): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
+- Hugging Face (modelo): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF-QAD
+- Hugging Face (modelo base, revision `175ae8ce3b5af842b0d0140dbeb43e9cfc557c49`): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
+- Hugging Face (modelo upstream de Z.AI, licencia MIT): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Licencia Local Inference Lab 1.0: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF-QAD/blob/main/LICENSE
 - Herramienta de verificacion y restauracion: paquete `trellis-quant`, modulo `trellis_quant.lossless_scale_checkpoint`, commit `60feca330087` (la model card no proporciona URL del repositorio)
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada; la busqueda web no devolvio resultados relacionados

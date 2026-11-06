@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb06 es un repositorio de pesos publicado en HuggingFace por el usuario AltEinstein. La informacion disponible en la ficha del repositorio es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico dato cuantitativo relevante es el tamano del repositorio, 25,9 GB, y las fechas de creacion y actualizacion (12 de septiembre de 2026). Con dos likes y cero descargas registradas, se trata de una publicacion sin traccion comunitaria ni documentacion asociada.
+AltEinstein/bmb06 es un repositorio de pesos publicado en Hugging Face por el usuario AltEinstein. La informacion disponible en la ficha del repositorio es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El unico dato cuantitativo relevante es el tamano del repositorio, 25,9 GB, y las fechas de creacion y actualizacion (12 de septiembre de 2026). Con dos likes y cero descargas registradas, se trata de una publicacion sin traccion comunitaria ni documentacion asociada.
 
 No se ha localizado ninguna publicacion tecnica, blog, paper ni repositorio de codigo que describa el modelo. La busqueda web realizada no devolvio resultados relacionados con el identificador del modelo ni con su autor, por lo que no es posible confirmar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades reales del sistema.
 
@@ -50,7 +50,7 @@ No hay datos sobre el corpus de entrenamiento, el volumen de tokens procesados, 
 No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, contexto, licencia y capacidades. Los siguientes escenarios quedan condicionados a que el autor publique documentacion tecnica que los respalde:
 
 - Evaluacion comparativa interna: si finalmente se confirma que es un modelo denso de ~12B parametros, podria incluirse en baterias de evaluacion propias (MMLU, GSM8K, HumanEval) para medir su comportamiento frente a alternativas abiertas del mismo rango.
-- Experimentacion en investigacion: uso como sujeto de estudio en analisis de modelos publicados sin model card, para documentar practicas de publicacion en HuggingFace.
+- Experimentacion en investigacion: uso como sujeto de estudio en analisis de modelos publicados sin model card, para documentar practicas de publicacion en Hugging Face.
 - Prototipado interno no critico: solo si la licencia lo permite y tras validar manualmente la calidad de salida en tareas de generacion de texto generico.
 - Ajuste fino supervisado: si se confirma la arquitectura y el formato de pesos, podria servir como base para SFT sobre dominios verticales.
 - Despliegue en local: el tamano del repositorio sugiere que no cabria en GPUs de consumo con menos de 16 GB de VRAM en precision completa, lo que limitaria su uso a estaciones con GPU de gama alta.
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AltEinstein/bmb06
+- Hugging Face: https://huggingface.co/AltEinstein/bmb06
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

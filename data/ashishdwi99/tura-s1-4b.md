@@ -82,9 +82,9 @@ El autor señala que el entrenamiento adicional cambia 11 ítems difíciles de J
 
 | Modelo | Parametros | Contexto | Rendimiento (JevBench publico) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tura-S1-4B | ~4,2B | hasta 4.096 tokens en entrenamiento | 197/231 (85,3%); 98,5% en enrutamiento retenido | Apache-2.0 | HuggingFace + runtime JevK5 |
-| Plumb-4B | ~4B (no confirmado) | no disponible | 208/231 (90,0%); 49,6% en enrutamiento retenido | no disponible en la informacion proporcionada | HuggingFace (crh225/plumb-4b) |
-| Qwen3.5-4B (familia base) | ~4B | no disponible | no disponible (no es un modelo de decision) | no disponible en la informacion proporcionada | HuggingFace |
+| Tura-S1-4B | ~4,2B | hasta 4.096 tokens en entrenamiento | 197/231 (85,3%); 98,5% en enrutamiento retenido | Apache-2.0 | Hugging Face + runtime JevK5 |
+| Plumb-4B | ~4B (no confirmado) | no disponible | 208/231 (90,0%); 49,6% en enrutamiento retenido | no disponible en la informacion proporcionada | Hugging Face (crh225/plumb-4b) |
+| Qwen3.5-4B (familia base) | ~4B | no disponible | no disponible (no es un modelo de decision) | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion directa mas relevante es con Plumb-4B, su antecesor inmediato y unico modelo con el que se aportan cifras en el mismo arnes. Frente a el, Tura-S1-4B mejora de forma clara en enrutamiento de agente (98,5% frente a 49,6%) y en decisiones generales (68,1% frente a 58,0%), pero pierde en JevBench publico y en Brier. Los resultados de busqueda sobre "TURA" (el agente de recuperacion de Baidu) no son comparables: se trata de un proyecto distinto con el mismo nombre.
 
@@ -98,13 +98,13 @@ La comparacion directa mas relevante es con Plumb-4B, su antecesor inmediato y u
 - El Brier empeora respecto a Plumb-4B (0,218 frente a 0,186) aunque el ECE mejora; conviene validar la calibracion en el dominio propio.
 - La seleccion y calibracion se hicieron sobre conjuntos retenidos propios del autor, con una unica ejecucion posterior de JevBench; los numeros no provienen de una evaluacion independiente.
 - El modelo depende del runtime y del formato JevK5; no hay soporte declarado de otras herramientas de inferencia (vLLM, llama.cpp, Ollama, TGI).
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta; trazabilidad y mantenimiento no garantizados.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta; trazabilidad y mantenimiento no garantizados.
 - Licencia Apache-2.0, que permite uso comercial; deben revisarse los ficheros `NOTICE`, `NOTICE-plumb` y `NOTICE-jevk5` por las dependencias de pesos, codigo y datos sobre los que se construye.
 - El propio autor indica que si no se necesita enrutamiento de herramientas, Plumb-4B es el modelo mas fuerte en JevBench.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AshishDwi99/tura-s1-4b
+- Modelo en Hugging Face: https://huggingface.co/AshishDwi99/tura-s1-4b
 - Modelo base Plumb-4B: https://huggingface.co/crh225/plumb-4b
 - Runtime JevK5 (GitHub): https://github.com/allebee/jevk5
 - Producto Tura: https://turalearn.com
@@ -113,6 +113,6 @@ Enlaces de la busqueda web (posiblemente relacionados o de proyectos homonimos; 
 
 - GitHub Tura-AI/tura (harness de runtime de agentes): https://github.com/Tura-AI/tura
 - TURA: Tool-Augmented Unified Retrieval Agent (paper, Baidu): https://arxiv.org/html/2508.04604
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2508.04604
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2508.04604
 - Analisis en AlphaSignal sobre TURA (Baidu): https://alphasignal.ai/news/baidu-s-tura-beats-a-671b-ai-model-using-a-tiny-4b-agent
 - Comparativa de modelos open source pequenos (Artificial Analysis): https://artificialanalysis.ai/models/open-source/small

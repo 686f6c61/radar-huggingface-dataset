@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FEM-multi-mesh-1p7b es un modelo de lenguaje causal experimental desarrollado por el usuario E6E831728 y publicado en HuggingFace bajo el identificador `E6E831728/fem-multi-mesh-1p7b`. Su rasgo diferencial es que prescinde por completo del mecanismo de atención: en su lugar implementa una red de operadores multi-malla de inspiración FEM (finite element method), con representaciones heterogéneas del mismo texto (coordenadas de token Binary16 congeladas, observaciones deterministas de glifo/forma, Structured Binary Tiles sin pérdida, una pirámide causal de historia gruesa y celdas latentes de trabajo) resueltas mediante solvers ConvGLU iterativos compartidos. El autor lo describe explícitamente como "an FEM-inspired attention-free causal multi-mesh operator network" y aclara que no resuelve ninguna EDP física real.
+FEM-multi-mesh-1p7b es un modelo de lenguaje causal experimental desarrollado por el usuario E6E831728 y publicado en Hugging Face bajo el identificador `E6E831728/fem-multi-mesh-1p7b`. Su rasgo diferencial es que prescinde por completo del mecanismo de atención: en su lugar implementa una red de operadores multi-malla de inspiración FEM (finite element method), con representaciones heterogéneas del mismo texto (coordenadas de token Binary16 congeladas, observaciones deterministas de glifo/forma, Structured Binary Tiles sin pérdida, una pirámide causal de historia gruesa y celdas latentes de trabajo) resueltas mediante solvers ConvGLU iterativos compartidos. El autor lo describe explícitamente como "an FEM-inspired attention-free causal multi-mesh operator network" y aclara que no resuelve ninguna EDP física real.
 
 El modelo tiene 1.726.969.344 valores de tensor almacenados (aproximadamente 1.675.064.832 parámetros y 51.904.512 valores de búfer fijo), se distribuye en formato safetensors y se carga con `transformers` y `trust_remote_code=True`, en bfloat16. Se trata de un modelo base, no de un asistente ajustado por instrucciones, y su checkpoint corresponde al paso de optimizador 109.200, con 28.626.124.800 objetivos de predicción procesados (el autor advierte que el nombre del directorio de origen puede contener "100b", pero la cifra autoritativa es la de `tokens_seen`).
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y fundamentalmente investigadora: demuestra que un sist
 | Longitud de contexto | no disponible (definida por `config.block_size`; el autor no publica el valor numerico) |
 | Tipos de cuantizacion | no disponible (no se publican variantes GGUF, AWQ, GPTQ ni similar; la carga de referencia usa bfloat16) |
 | Idiomas soportados | no disponible (la model card no declara idiomas) |
-| Licencia | no disponible (no figura en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no figura en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (repo de 6,9 GB) con codigo personalizado que requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
@@ -111,6 +111,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/E6E831728/fem-multi-mesh-1p7b
-- Perfil del autor en HuggingFace: https://huggingface.co/E6E831728
+- Modelo en Hugging Face: https://huggingface.co/E6E831728/fem-multi-mesh-1p7b
+- Perfil del autor en Hugging Face: https://huggingface.co/E6E831728
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

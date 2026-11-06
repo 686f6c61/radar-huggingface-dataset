@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos. Existen ot
 
 ## Enlaces
 
-- [HuggingFace: ZainabAlmahal/financial-topic-classifier-lora](https://huggingface.co/ZainabAlmahal/financial-topic-classifier-lora)
+- [Hugging Face: ZainabAlmahal/financial-topic-classifier-lora](https://huggingface.co/ZainabAlmahal/financial-topic-classifier-lora)
 - [Adaptador original mencionado: ZainabHM278/financial-topic-classifier-lora](https://huggingface.co/ZainabHM278/financial-topic-classifier-lora)
 - [Repositorio GitHub relacionado: MahamHamid/financial-ai-assistant](https://github.com/MahamHamid/financial-ai-assistant)
 - [Artículo sobre clasificación de noticias financieras con LoRA y ChatGLM3-6B](https://dl.acm.org/doi/abs/10.1145/3675249.3675339)

@@ -17,7 +17,7 @@ Es relevante ahora porque la generacion de imagenes en local sigue dependiendo d
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (modelo de difusion de imagenes; el prompt lo procesa el codificador de texto Qwen3-VL-8B, cuya ventana no se especifica en la informacion disponible) |
 | Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K, Q4_K, Q3_K, Q2_K |
-| Idiomas soportados | no disponibles en los metadatos de HuggingFace; la model card incluye validacion especifica de renderizado de texto en chino (8 prompts) |
+| Idiomas soportados | no disponibles en los metadatos de Hugging Face; la model card incluye validacion especifica de renderizado de texto en chino (8 prompts) |
 | Licencia | other / qwen-research (enlace a licencia del modelo base) |
 | Formato de pesos | GGUF (denoiser); safetensors para el VAE (`vae/qwen_image_2.1_vae_bf16.safetensors`) |
 | Resolucion de referencia | 1024 x 1024 (usada en las mediciones) |
@@ -106,11 +106,11 @@ Alternativas de otros desarrolladores en la misma categoria (generacion de image
 - Riesgo de alucinacion visual: no se publican evaluaciones de seguimiento de prompt ni de fidelidad semantica frente al texto de entrada. Las metricas disponibles miden solo la diferencia respecto a BF16, no la correccion respecto al prompt.
 - Adopcion: el repositorio registra 0 descargas y 1 like, por lo que no existe una base de usuarios que haya validado el comportamiento en produccion.
 - El repositorio ocupa 42,2 GB en total, lo que exige espacio en disco considerable si se descargan varios niveles de cuantizacion.
-- Fecha de publicacion en los metadatos de HuggingFace: 9 de octubre de 2026 (ultima actualizacion el mismo dia).
+- Fecha de publicacion en los metadatos de Hugging Face: 9 de octubre de 2026 (ultima actualizacion el mismo dia).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

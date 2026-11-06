@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patanhi es un modelo publicado en HuggingFace bajo el identificador `Prem9997/Patanhi` por el usuario Prem9997. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva sobre el modelo: no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-09-22T21:46:26Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado.
+Patanhi es un modelo publicado en Hugging Face bajo el identificador `Prem9997/Patanhi` por el usuario Prem9997. En el momento de la consulta, la ficha del repositorio no incluye informacion sustantiva sobre el modelo: no declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-09-22T21:46:26Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado.
 
 No ha sido posible localizar informacion tecnica adicional mediante busqueda web. Los resultados devueltos por el buscador corresponden integramente a la actriz alemana Gaby Dohm (Wikipedia en aleman e ingles, Wikiwand, articulos de prensa), por lo que no guardan ninguna relacion con el modelo y no deben considerarse fuentes validas. Tampoco se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al identificador `Patanhi`.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de datos verificables sobre arquitectura, datos de entren
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en las fuentes consultadas. Se desconoce si se trata de un transformer denso, de una arquitectura de mezcla de expertos (MoE), de un modelo de espacio de estados (SSM) o de un diseno hibrido. Tampoco consta el numero de parametros, la dimension oculta, el numero de capas ni la configuracion de atencion.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en las fuentes consultadas. Se desconoce si se trata de un transformer denso, de una arquitectura de mezcla de expertos (MoE), de un modelo de espacio de estados (SSM) o de un diseno hibrido. Tampoco consta el numero de parametros, la dimension oculta, el numero de capas ni la configuracion de atencion.
 
 No hay datos sobre el corpus de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, destilacion, etc.). Cualquier afirmacion al respecto seria especulativa y no debe tomarse como referencia.
 
@@ -78,6 +78,6 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Prem9997/Patanhi
+- Repositorio en Hugging Face: https://huggingface.co/Prem9997/Patanhi
 - Resultados de busqueda web: todos los enlaces recuperados corresponden a la actriz Gaby Dohm (Wikipedia DE, Wikipedia EN, Wikiwand, t-online, morgenpost) y no guardan relacion con el modelo. No se incluyen por no ser fuentes pertinentes.
 - Papers, blogs, repositorios de codigo y demos: no disponibles.

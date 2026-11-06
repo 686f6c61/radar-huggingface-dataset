@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct-heretic es una variante "decensored" del modelo meta-llama/Llama-3.2-1B-Instruct, publicada en HuggingFace por el usuario Green-Eye. El modelo se ha generado con la herramienta Heretic v1.2.0, que aplica una tecnica de ablacion direccional (conocida como "abliteration") sobre los pesos del transformer en lugar de un ajuste fino adicional. El objetivo es suprimir el comportamiento de rechazo (refusal) aprendido durante el alineamiento del modelo base, manteniendo en la medida de lo posible el conocimiento y la capacidad de seguir instrucciones originales. El resultado declarado es una reduccion de rechazos del 96 por ciento al 7 por ciento sobre 100 prompts adversariales, con una divergencia KL de 0,1713 respecto al modelo original.
+Llama-3.2-1B-Instruct-heretic es una variante "decensored" del modelo meta-llama/Llama-3.2-1B-Instruct, publicada en Hugging Face por el usuario Green-Eye. El modelo se ha generado con la herramienta Heretic v1.2.0, que aplica una tecnica de ablacion direccional (conocida como "abliteration") sobre los pesos del transformer en lugar de un ajuste fino adicional. El objetivo es suprimir el comportamiento de rechazo (refusal) aprendido durante el alineamiento del modelo base, manteniendo en la medida de lo posible el conocimiento y la capacidad de seguir instrucciones originales. El resultado declarado es una reduccion de rechazos del 96 por ciento al 7 por ciento sobre 100 prompts adversariales, con una divergencia KL de 0,1713 respecto al modelo original.
 
 Con 1.235.814.400 parametros reales medidos en safetensors, se trata de un modelo denso de escala pequena, pensado para despliegue en dispositivo, movil y entornos edge, o para ejecucion en GPU de consumo e incluso solo con CPU. Hereda del base la arquitectura transformer decoder-only de Llama 3.2 y su ventana de contexto, asi como los ocho idiomas declarados en la model card (ingles, aleman, frances, italiano, portugues, hindi, castellano y tailandes). Se distribuye tanto en formato safetensors como en un conjunto completo de 14 cuantizaciones GGUF mas F16.
 
@@ -90,12 +90,12 @@ No se dispone de datos de rendimiento comparativo (benchmarks estandar) entre es
 - El rendimiento real multilingue, especialmente en hindi y tailandes, no esta validado con benchmarks en la informacion disponible.
 - Restricciones de licencia: hereda la Llama 3.2 Community License, que incluye condiciones de uso comercial, clausulas de atribucion y la exigencia de nombrar el modelo como "Llama 3.2" en los productos derivados, ademas de restricciones para empresas con mas de 700 millones de usuarios mensuales.
 - El modelo no documenta soporte de tool calling ni function calling, por lo que integrarlo en pipelines de agentes que dependan de llamadas a herramientas requeriria verificar ese comportamiento empiricamente.
-- Inconsistencia en la model card: los ejemplos de codigo y el comando de descarga apuntan al repositorio `saidutta69/Llama-3.2-1B-Instruct-heretic`, mientras que el identificador de HuggingFace de esta ficha es `Green-Eye/Llama-3.2-1B-Instruct-heretic`. Conviene verificar cual es el repositorio efectivo antes de descargar.
-- La fecha de creacion registrada en HuggingFace (2026-09-30) y el uso de una imagen alojada en un dominio externo no verificable son elementos que conviene contrastar antes de usar el modelo en produccion.
+- Inconsistencia en la model card: los ejemplos de codigo y el comando de descarga apuntan al repositorio `saidutta69/Llama-3.2-1B-Instruct-heretic`, mientras que el identificador de Hugging Face de esta ficha es `Green-Eye/Llama-3.2-1B-Instruct-heretic`. Conviene verificar cual es el repositorio efectivo antes de descargar.
+- La fecha de creacion registrada en Hugging Face (2026-09-30) y el uso de una imagen alojada en un dominio externo no verificable son elementos que conviene contrastar antes de usar el modelo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Green-Eye/Llama-3.2-1B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/Green-Eye/Llama-3.2-1B-Instruct-heretic
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp
@@ -104,4 +104,4 @@ No se dispone de datos de rendimiento comparativo (benchmarks estandar) entre es
 - Modelo relacionado, Qwen2.5-3B-Instruct-heretic: https://huggingface.co/saidutta69/Qwen2.5-3B-Instruct-heretic
 - Modelo relacionado, Qwen2.5-Coder-3B-Instruct-heretic: https://huggingface.co/saidutta69/Qwen2.5-Coder-3B-Instruct-heretic
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

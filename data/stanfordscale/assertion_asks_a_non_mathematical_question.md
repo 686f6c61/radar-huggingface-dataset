@@ -78,7 +78,7 @@ No se dispone en la informacion proporcionada de otros clasificadores comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| assertion_asks_a_non_mathematical_question | 109.486.464 | no disponible | no disponible | HuggingFace (0 descargas) |
+| assertion_asks_a_non_mathematical_question | 109.486.464 | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de otros clasificadores comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_a_non_mathematical_question
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_a_non_mathematical_question
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

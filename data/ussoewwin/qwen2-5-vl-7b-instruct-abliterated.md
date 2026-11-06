@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ussoewwin/Qwen2.5-VL-7B-Instruct-abliterated | 7B | no disponible | Apache 2.0 | HuggingFace | Variante abliterated con cuantizacion INT8 HSWQ |
-| Qwen/Qwen2.5-VL-7B-Instruct | 7B | hasta 128K (familia) | Apache 2.0 | HuggingFace | Modelo base sin modificar, con filtros de seguridad |
+| ussoewwin/Qwen2.5-VL-7B-Instruct-abliterated | 7B | no disponible | Apache 2.0 | Hugging Face | Variante abliterated con cuantizacion INT8 HSWQ |
+| Qwen/Qwen2.5-VL-7B-Instruct | 7B | hasta 128K (familia) | Apache 2.0 | Hugging Face | Modelo base sin modificar, con filtros de seguridad |
 | Otros modelos VL de 7B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussoewwin/Qwen2.5-VL-7B-Instruct-abliterated
+- Hugging Face: https://huggingface.co/ussoewwin/Qwen2.5-VL-7B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Guia tecnica ConvRot INT8: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/Qwen25VL7B_ConvRot_INT8_Impact_Technical_Guide.md

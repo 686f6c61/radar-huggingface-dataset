@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anima-Turbo-Diffusers | 2B (denoiser) | no disponible | no disponible | HuggingFace (diffusers) |
+| Anima-Turbo-Diffusers | 2B (denoiser) | no disponible | no disponible | Hugging Face (diffusers) |
 | Alternativas de difusion anime de 2B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre modelos comparables de la misma categoria en la documentacion proporcionada para establecer una comparativa rigurosa con parametros, contexto, rendimiento y licencia.
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Anima-Turbo-Diffusers
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Anima-Turbo-Diffusers
 - Modelo original: https://huggingface.co/CalamitousFelicitousness/Anima-1.0-Turbo-Diffusers
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

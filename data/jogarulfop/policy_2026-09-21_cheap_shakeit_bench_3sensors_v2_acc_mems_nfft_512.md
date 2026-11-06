@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512` es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado en el paper arXiv:2304.13705. Lo desarrolla el usuario de HuggingFace jogarulfop y ha sido entrenado y subido al Hub con LeRobot, la libreria de HuggingFace para aprendizaje por imitacion en robotica. No es un modelo de lenguaje: es un controlador que traduce observaciones de sensores en comandos de accion para un robot.
+El modelo `jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512` es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers), publicado en el paper arXiv:2304.13705. Lo desarrolla el usuario de Hugging Face jogarulfop y ha sido entrenado y subido al Hub con LeRobot, la libreria de Hugging Face para aprendizaje por imitacion en robotica. No es un modelo de lenguaje: es un controlador que traduce observaciones de sensores en comandos de accion para un robot.
 
 El problema que resuelve es el control motor por imitacion: en lugar de predecir una unica accion por paso, ACT predice un fragmento (chunk) de acciones futuras, lo que reduce el error de acumulacion y suele aumentar la tasa de exito en tareas de manipulacion. El checkpoint tiene 51.668.614 parametros (unos 51,7 millones) y ocupa 0,2 GB en el repositorio, con pesos en formato safetensors.
 
@@ -72,9 +72,9 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| ACT (este checkpoint) | 51,7 M | no aplicable (observacion por paso) | apache-2.0 | pesos en safetensors en HuggingFace, libreria lerobot | no disponible |
+| ACT (este checkpoint) | 51,7 M | no aplicable (observacion por paso) | apache-2.0 | pesos en safetensors en Hugging Face, libreria lerobot | no disponible |
 | Diffusion Policy (familia de politicas de LeRobot) | no disponible | no aplicable | no disponible | implementada en el ecosistema LeRobot | no disponible |
-| Otras politicas ACT de LeRobot | no disponible | no aplicable | variable segun checkpoint | HuggingFace Hub | no disponible |
+| Otras politicas ACT de LeRobot | no disponible | no aplicable | variable segun checkpoint | Hugging Face Hub | no disponible |
 
 No se han encontrado en la informacion proporcionada resultados de tasa de exito, latencia o robustez que permitan una comparacion cuantitativa con alternativas.
 
@@ -92,9 +92,9 @@ No se han encontrado en la informacion proporcionada resultados de tasa de exito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512
 - Dataset asociado: https://huggingface.co/datasets/jogarulfop/2026-09-21_cheap_shakeit_bench_3sensors_v2_acc_mems_nfft_512
-- Paper de ACT (pagina de HuggingFace): https://huggingface.co/papers/2304.13705
+- Paper de ACT (pagina de Hugging Face): https://huggingface.co/papers/2304.13705
 - Paper de ACT (arXiv): https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

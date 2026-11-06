@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wasif-69/tesla` es un repositorio publicado en HuggingFace por el usuario wasif-69 el 28 de agosto de 2026. Contiene un único archivo de pesos en formato safetensors con un total de 431.452.160 parámetros (aproximadamente 431 millones), lo que sugiere un modelo de tamaño medio, probablemente un transformer de lenguaje, aunque no se proporciona ninguna descripción, documentación técnica ni metadatos adicionales. El repositorio ocupa 3,5 GB, coherente con pesos en precisión fp16 o fp32 para ese número de parámetros.
+El modelo `wasif-69/tesla` es un repositorio publicado en Hugging Face por el usuario wasif-69 el 28 de agosto de 2026. Contiene un único archivo de pesos en formato safetensors con un total de 431.452.160 parámetros (aproximadamente 431 millones), lo que sugiere un modelo de tamaño medio, probablemente un transformer de lenguaje, aunque no se proporciona ninguna descripción, documentación técnica ni metadatos adicionales. El repositorio ocupa 3,5 GB, coherente con pesos en precisión fp16 o fp32 para ese número de parámetros.
 
 A día de hoy, el modelo no tiene descargas registradas y solo cuenta con un "like". No se ha publicado información sobre su arquitectura, entrenamiento, capacidades, licencia o casos de uso previstos. Los resultados de búsqueda web asociados al autor o al nombre "tesla" no aportan datos técnicos sobre el modelo, sino que enlazan a perfiles de Instagram, un artículo sobre un Tesla Robotaxi, un detector de imágenes generadas por IA y un decodificador de VIN de Tesla. Por tanto, esta ficha se basa únicamente en los datos disponibles en el repositorio y señala explícitamente toda la información que no está disponible.
 
@@ -54,7 +54,7 @@ No disponible. Al no conocerse la arquitectura ni las capacidades del modelo, no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasif-69/tesla
+- Repositorio Hugging Face: https://huggingface.co/wasif-69/tesla
 - Perfil del autor en GitHub (no vinculado directamente al modelo): https://github.com/wasif-69/decipher
 
 No se han encontrado papers, blogs, demos ni documentación adicional sobre este modelo.

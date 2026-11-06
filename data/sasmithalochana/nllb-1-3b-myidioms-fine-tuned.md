@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SasmithaLochana/nllb-1.3b-myidioms-fine-tuned es un modelo de generación texto-a-texto publicado en HuggingFace por el usuario SasmithaLochana, con 1.402.138.624 parámetros (aproximadamente 1,4 mil millones) y un repositorio de 2,8 GB en formato safetensors. El tag `m2m_100` de la librería transformers sitúa su arquitectura en la familia M2M-100/NLLB, es decir, un transformer encoder-decoder diseñado para traducción automática multilingüe. Por el nombre del repositorio, se trata presumiblemente de un ajuste fino de un modelo NLLB de 1,3B orientado a mejorar el tratamiento de expresiones idiomáticas, aunque el autor no lo confirma en ningún momento.
+SasmithaLochana/nllb-1.3b-myidioms-fine-tuned es un modelo de generación texto-a-texto publicado en Hugging Face por el usuario SasmithaLochana, con 1.402.138.624 parámetros (aproximadamente 1,4 mil millones) y un repositorio de 2,8 GB en formato safetensors. El tag `m2m_100` de la librería transformers sitúa su arquitectura en la familia M2M-100/NLLB, es decir, un transformer encoder-decoder diseñado para traducción automática multilingüe. Por el nombre del repositorio, se trata presumiblemente de un ajuste fino de un modelo NLLB de 1,3B orientado a mejorar el tratamiento de expresiones idiomáticas, aunque el autor no lo confirma en ningún momento.
 
-El interés de este tipo de publicaciones es real para quien trabaja en traducción automática: los modelos NLLB-200 cubren teóricamente 202 idiomas y los fine-tunings sobre subconjuntos idiomáticos o de dominio son habituales para mejorar la fidelidad en pares concretos. Sin embargo, este checkpoint concreto llega sin ninguna documentación útil: la model card es la plantilla automática de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El interés de este tipo de publicaciones es real para quien trabaja en traducción automática: los modelos NLLB-200 cubren teóricamente 202 idiomas y los fine-tunings sobre subconjuntos idiomáticos o de dominio son habituales para mejorar la fidelidad en pares concretos. Sin embargo, este checkpoint concreto llega sin ninguna documentación útil: la model card es la plantilla automática de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 likes, no declara licencia, idiomas soportados, datos de entrenamiento ni resultados de evaluación. Cualquier uso en producción debería ir precedido de una validación propia, y el uso comercial es jurídicamente indeterminado al no existir licencia explícita.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o una RTX 4070/4080/4090 lo ejecutan en fp16 sin problemas. En tarjetas de 8 GB es posible en fp16 con lotes pequeños, y en int8 con más holgura.
 - GPU de数据中心: A100, H100, L40S, A10G o L4 lo ejecutan con margen amplio, pero están sobredimensionadas para 1,4B parámetros salvo que se necesite throughput alto por lotes.
 - CPU: es viable la inferencia en CPU para traducción de baja concurrencia, especialmente mediante CTranslate2, que soporta la familia NLLB y aplica cuantización int8.
-- Opciones de despliegue: transformers (`pipeline("text2text-generation")`), HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica), Text Generation Inference (TGI), vLLM y CTranslate2. llama.cpp y Ollama no son utilizables directamente porque no se publica ningún archivo GGUF; habría que convertirlo previamente.
+- Opciones de despliegue: transformers (`pipeline("text2text-generation")`), Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica), Text Generation Inference (TGI), vLLM y CTranslate2. llama.cpp y Ollama no son utilizables directamente porque no se publica ningún archivo GGUF; habría que convertirlo previamente.
 - Latencia y throughput: no disponible. No se han publicado mediciones y cualquier cifra dependería del hardware, del lote y de la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La ventaja teórica de este checkpoint frente a los dos anteriores sería su esp
 
 ## Limitaciones y advertencias
 
-- Model card vacía: la documentación es la plantilla automática de HuggingFace sin ningún campo rellenado. No hay información sobre datos, metodología, sesgos ni uso previsto.
+- Model card vacía: la documentación es la plantilla automática de Hugging Face sin ningún campo rellenado. No hay información sobre datos, metodología, sesgos ni uso previsto.
 - Licencia indeterminada: al no declararse licencia, no se puede asumir permiso de uso comercial. Si el checkpoint deriva de NLLB-200, la licencia original de Meta es CC-BY-NC-4.0, que prohíbe el uso comercial; si deriva de M2M-100, la licencia es MIT. La ambigüedad debe resolverse antes de cualquier despliegue productivo.
 - Sin validación comunitaria: 0 descargas y 0 likes implican que nadie ha reproducido ni auditado el modelo.
 - Riesgo de alucinación: como todo modelo seq2seq, puede generar traducciones fluentes pero infieles, inventar contenido ausente en el origen o silenciar matices. El riesgo es mayor en pares de idiomas con pocos datos.
@@ -96,7 +96,7 @@ La ventaja teórica de este checkpoint frente a los dos anteriores sería su esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SasmithaLochana/nllb-1.3b-myidioms-fine-tuned
+- Modelo en Hugging Face: https://huggingface.co/SasmithaLochana/nllb-1.3b-myidioms-fine-tuned
 - Referencia de la plantilla de la model card, Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML enlazada en la plantilla: https://mlco2.github.io/impact
 - Modelo base de referencia NLLB-200 distilled 1.3B: https://huggingface.co/facebook/nllb-200-distilled-1.3B

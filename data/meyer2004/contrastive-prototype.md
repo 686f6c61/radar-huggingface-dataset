@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Contrastive-prototype es un prototipo de investigacion publicado en HuggingFace por el usuario meyer2004. Se trata de una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el codigo (`main.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+Contrastive-prototype es un prototipo de investigacion publicado en Hugging Face por el usuario meyer2004. Se trata de una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el codigo (`main.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 El modelo declara una escala "base", atencion multi-query, fusion mediante co-attention, activacion mish y normalizacion layernorm. El numero de parametros registrado en el archivo safetensors es de 16.576, una cifra extremadamente baja que confirma que se trata de una inicializacion sin entrenar y no de un ViT base al uso. La model card es explicita al respecto: no se reclama ninguna puntuacion de benchmark y el checkpoint se describe como valido unicamente para smoke tests.
 
@@ -51,7 +51,7 @@ No hay informacion sobre volumen de datos, composicion del dataset, numero de to
 - Pruebas de integracion en CI de pipelines de vision: al ser un modelo diminuto (16.576 parametros), cabe en cualquier entorno y permite validar tuberias de entrenamiento e inferencia sin coste de GPU.
 - Desarrollo de adaptadores para APIs de carga genericas: la model card advierte de que, al ser una implementacion propia, requiere un adaptador explicito antes de usar APIs automaticas; el repo es adecuado para escribir y depurar ese adaptador.
 - Base para evaluacion con conjuntos de validacion especificos de tarea: siempre que se entrene primero, el esqueleto permite medir metricas de tarea con al menos tres semillas y un baseline de capacidad comparable.
-- Docencia y formacion: util como ejemplo minimo de estructura de repositorio de modelo (codigo, config, training args, pesos) para explicar como se organiza un proyecto de investigacion en HuggingFace.
+- Docencia y formacion: util como ejemplo minimo de estructura de repositorio de modelo (codigo, config, training args, pesos) para explicar como se organiza un proyecto de investigacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ No disponible. El autor no declara ningun baseline comparable, y las alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meyer2004/contrastive-prototype
+- Hugging Face: https://huggingface.co/meyer2004/contrastive-prototype
 - Contrastive Learning: A Powerful Approach to Self-Supervised Learning (Netguru): https://www.netguru.com/blog/contrastive-learning
 - Contrastive prototype learning with augmented embeddings for few-shot learning (PMLR, Gao et al. 2021): https://proceedings.mlr.press/v161/gao21a.html
 - Contrastive Learning from AI Revisions (CLAIR) y Anchored Preference Optimization (MarkTechPost): https://www.marktechpost.com/2024/08/24/contrastive-learning-from-ai-revisions-clair-a-novel-approach-to-address-underspecification-in-ai-model-alignment-with-anchored-preference-optimization-apo/

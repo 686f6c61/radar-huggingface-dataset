@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_remove50_swapgapiter_evfrontgap_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` publicado por el usuario Jeesup en HuggingFace. No es un modelo entrenado desde cero ni un asistente listo para desplegar, sino un artefacto de investigación: el autor parte del modelo base, lo comprime con SVD-LLM hasta conservar el 49,99 % de los parámetros de proyección densos y después aplica diez rondas de edición iterativa de pesos ("swap") que reintroducen componentes seleccionados por la regla `gap_iter`, con un presupuesto total del 1,000 % de los parámetros densos.
+`svd-safety-l2_remove50_swapgapiter_evfrontgap_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` publicado por el usuario Jeesup en Hugging Face. No es un modelo entrenado desde cero ni un asistente listo para desplegar, sino un artefacto de investigación: el autor parte del modelo base, lo comprime con SVD-LLM hasta conservar el 49,99 % de los parámetros de proyección densos y después aplica diez rondas de edición iterativa de pesos ("swap") que reintroducen componentes seleccionados por la regla `gap_iter`, con un presupuesto total del 1,000 % de los parámetros densos.
 
 El propósito declarado es medir cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Este checkpoint es una celda concreta de una cuadrícula que barre reglas de selección y presupuestos, y el propio autor advierte que varias celdas están deliberadamente degradadas en seguridad respecto al modelo original.
 
@@ -24,7 +24,7 @@ La arquitectura es un transformer decoder-only denso de la familia Llama 2, sin 
 | Modelo base | meta-llama/Llama-2-7b-chat-hf |
 | Tamano del repositorio | 13,5 GB |
 | Pipeline declarado | text-generation |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se han publicado en la informacion disponible los valores equivalentes del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint | 6.738.415.616 declarados en safetensors; fraccion densa 0,4999 | 4.096 tokens (heredado) | Llama 2 Community License | Repositorio HuggingFace, 0 descargas | AdvBench ASR 0,2942; StrongREJECT ASR 0,3387; WildGuard sobrerrechazo 0,0595; WikiText-2 ppl 13,9586 |
+| Este checkpoint | 6.738.415.616 declarados en safetensors; fraccion densa 0,4999 | 4.096 tokens (heredado) | Llama 2 Community License | Repositorio Hugging Face, 0 descargas | AdvBench ASR 0,2942; StrongREJECT ASR 0,3387; WildGuard sobrerrechazo 0,0595; WikiText-2 ppl 13,9586 |
 | meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | Publico | No disponible en la informacion proporcionada |
 | Otras celdas de la misma cuadricula (Jeesup) | No disponible | No disponible | Llama 2 Community License | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ El grupo de comparacion natural son las demas celdas del estudio (distintas regl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfrontgap_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfrontgap_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo; los enlaces obtenidos corresponden a Medal.tv, un software de grabacion de videojuegos, y no guardan ninguna relacion con este artefacto.

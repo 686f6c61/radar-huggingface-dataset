@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5_spk_wolof-tts_s42 es un checkpoint de texto a voz (TTS) publicado en HuggingFace por el usuario xelsoft-ai-lab. El identificador del repositorio y la etiqueta `speecht5` indican que se trata de un ajuste fino de la arquitectura SpeechT5 de Microsoft para sintetizar voz con un hablante de referencia en wolof, dentro de una serie denominada AfriVoxAccent (orientada, por el nombre, a variedades y acentos africanos). El modelo pesa 144.437.730 parametros y el repositorio ocupa 0,6 GB en formato safetensors.
+AfriVoxAccent_ST5_spk_wolof-tts_s42 es un checkpoint de texto a voz (TTS) publicado en Hugging Face por el usuario xelsoft-ai-lab. El identificador del repositorio y la etiqueta `speecht5` indican que se trata de un ajuste fino de la arquitectura SpeechT5 de Microsoft para sintetizar voz con un hablante de referencia en wolof, dentro de una serie denominada AfriVoxAccent (orientada, por el nombre, a variedades y acentos africanos). El modelo pesa 144.437.730 parametros y el repositorio ocupa 0,6 GB en formato safetensors.
 
 El interes de este tipo de publicaciones es la cobertura de lenguas africanas de bajos recursos en sintesis de voz: el wolof es hablado por varios millones de personas en Senegal, Gambia y Mauritania, y la oferta de TTS abierta para esta lengua es escasa. Un checkpoint de 144 M de parametros es ademas lo bastante pequeno para ejecutarse en CPU o en GPUs de consumo, lo que facilita su integracion en aplicaciones de accesibilidad, telefonia o generacion de audio sin infraestructura dedicada.
 
-Ahora bien, la model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene informacion real: no declara licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, sin pipeline declarado, por lo que se trata de un artefacto sin validacion externa ni documentacion tecnica verificable. Todas las conclusiones sobre su comportamiento deben considerarse provisionales.
+Ahora bien, la model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene informacion real: no declara licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, sin pipeline declarado, por lo que se trata de un artefacto sin validacion externa ni documentacion tecnica verificable. Todas las conclusiones sobre su comportamiento deben considerarse provisionales.
 
 ## Especificaciones tecnicas
 
@@ -50,23 +50,23 @@ No hay informacion disponible sobre el procedimiento de entrenamiento de este ch
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de HuggingFace y no incluye ninguna seccion de evaluacion completada (ni MOS, ni WER del texto de entrada, ni metricas objetivas como MCD o PESQ), ni comparaciones con otros sistemas TTS en wolof.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla automatica de Hugging Face y no incluye ninguna seccion de evaluacion completada (ni MOS, ni WER del texto de entrada, ni metricas objetivas como MCD o PESQ), ni comparaciones con otros sistemas TTS en wolof.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,58 GB solo para los pesos (144,4 M de parametros x 4 bytes); en fp16/bf16, unos 0,29 GB; en int8, unos 0,14 GB. Hay que sumar el consumo del vocoder externo (HiFi-GAN, tipicamente decenas de millones de parametros adicionales) y el de las activaciones.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior funciona con holgura. Para lotes grandes o servicio concurrente, una A10G, L4, A100 o H100 aportan margen de sobra.
 - Cabe en GPU de consumo: si. El repositorio completo ocupa 0,6 GB, por lo que el modelo entra incluso en GPUs integradas con memoria compartida y en equipos sin GPU dedicada.
-- Opciones de despliegue: la via natural es la libreria `transformers` de HuggingFace con PyTorch, cargando el checkpoint y un vocoder compatible (por ejemplo `microsoft/speecht5_hifigan`). Es posible exportar a ONNX mediante `optimum` para inferencia acelerada. No hay soporte esperado en llama.cpp, Ollama, vLLM ni TGI, ya que estas herramientas estan orientadas a modelos de lenguaje y no a SpeechT5.
+- Opciones de despliegue: la via natural es la libreria `transformers` de Hugging Face con PyTorch, cargando el checkpoint y un vocoder compatible (por ejemplo `microsoft/speecht5_hifigan`). Es posible exportar a ONNX mediante `optimum` para inferencia acelerada. No hay soporte esperado en llama.cpp, Ollama, vLLM ni TGI, ya que estas herramientas estan orientadas a modelos de lenguaje y no a SpeechT5.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones. Por el tamano del modelo, en una GPU de consumo la sintesis de frases cortas deberia completarse en decimas de segundo, y en CPU en tiempos del orden del segundo, pero estos valores son estimaciones genericas y no datos del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AfriVoxAccent_ST5_spk_wolof-tts_s42 | 144,4 M | TTS mono-hablante, entrada limitada por la implementacion de SpeechT5 | no disponible | publico en HuggingFace, 0 descargas | Sin documentacion ni evaluacion; identificador wolof |
+| AfriVoxAccent_ST5_spk_wolof-tts_s42 | 144,4 M | TTS mono-hablante, entrada limitada por la implementacion de SpeechT5 | no disponible | publico en Hugging Face, 0 descargas | Sin documentacion ni evaluacion; identificador wolof |
 | microsoft/speecht5_tts | ~145 M | TTS multi-hablante con embedding de hablante, requiere vocoder externo | MIT (segun el repositorio de Microsoft) | ampliamente usado y documentado | Base arquitectonica; esta en ingles principalmente y no incluye wolof |
-| Proyecto MMS-TTS de Meta (variantes por idioma, familia VITS) | ~36 M por variante | TTS mono-hablante por lengua, con vocoder integrado | CC-BY-NC 4.0 en la mayoria de variantes | publico en HuggingFace | Cubre un numero elevado de lenguas; conviene verificar si existe variante en wolof y sus condiciones de licencia |
+| Proyecto MMS-TTS de Meta (variantes por idioma, familia VITS) | ~36 M por variante | TTS mono-hablante por lengua, con vocoder integrado | CC-BY-NC 4.0 en la mayoria de variantes | publico en Hugging Face | Cubre un numero elevado de lenguas; conviene verificar si existe variante en wolof y sus condiciones de licencia |
 | Coqui XTTS v2 | ~470 M | TTS multilingue con clonacion de voz zero-shot | Coqui Public Model License (no comercial en la practica) | publico, con comunidad amplia | Mayor tamano y clonacion; el soporte de wolof no esta garantizado |
 
 La comparacion es aproximada: no se dispone de mediciones objetivas de este checkpoint ni de su variante exacta de referencia, y las cifras de licencia y parametros de los modelos alternativos deben verificarse en sus repositorios antes de decidir un despliegue en produccion.
@@ -87,12 +87,12 @@ La comparacion es aproximada: no se dispone de mediciones objetivas de este chec
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260909_234358
+- Repositorio del modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260909_234358
 - Arquitectura SpeechT5, paper original (Ao et al., 2021): https://arxiv.org/abs/2010.09714
 - Referencia citada en las etiquetas del repositorio, arXiv:1910.09700 (Lacoste et al., 2019, calculo de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Modelo base de referencia SpeechT5 para TTS de Microsoft: https://huggingface.co/microsoft/speecht5_tts
 - Vocoder HiFi-GAN compatible con SpeechT5: https://huggingface.co/microsoft/speecht5_hifigan
-- Documentacion de SpeechT5 en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/speecht5
+- Documentacion de SpeechT5 en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/speecht5
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 
 Nota: los resultados de busqueda web proporcionados no contenian informacion relevante sobre este modelo ni sobre sintesis de voz en wolof; los enlaces anteriores proceden del identificador, las etiquetas y la model card del repositorio, junto con referencias publicas de la arquitectura SpeechT5.

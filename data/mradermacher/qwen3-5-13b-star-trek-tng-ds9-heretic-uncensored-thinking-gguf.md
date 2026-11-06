@@ -110,7 +110,7 @@ La comparación cuantitativa no es posible porque ninguno de los repositorios pr
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/mradermacher/Qwen3.5-13B-Star-Trek-TNG-DS9-Heretic-Uncensored-Thinking-GGUF)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/mradermacher/Qwen3.5-13B-Star-Trek-TNG-DS9-Heretic-Uncensored-Thinking-GGUF)
 - [Modelo base de DavidAU](https://huggingface.co/DavidAU/Qwen3.5-13B-Star-Trek-TNG-DS9-Heretic-Uncensored-Thinking)
 - [Variante i1-GGUF con cuantizaciones imatrix](https://huggingface.co/mradermacher/Qwen3.5-13B-Star-Trek-TNG-DS9-Heretic-Uncensored-Thinking-i1-GGUF)
 - [Página de descargas de mradermacher para este modelo](https://hf.tst.eu/model#Qwen3.5-13B-Star-Trek-TNG-DS9-Heretic-Uncensored-Thinking-GGUF)

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "GilGamez-com/Leviathan-v4.2",
+  "slug": "gilgamez-com-leviathan-v4-2",
+  "author": "GilGamez-com",
+  "url": "https://huggingface.co/GilGamez-com/Leviathan-v4.2",
+  "created_at": "2026-11-04T17:17:56.000Z",
+  "updated_at": "2026-11-04T20:08:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen",
+    "qwen3",
+    "qwen3-vl",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "cybersecurity",
+    "defensive-security",
+    "enterprise",
+    "code",
+    "indonesian",
+    "vision-language",
+    "text-generation",
+    "conversational",
+    "en",
+    "id",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517881757,
+  "storage_human": "518 MB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GilGamez-com/Leviathan-v4.2 · Hugging Face",
+      "url": "https://huggingface.co/GilGamez-com/Leviathan-v4.2",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GilGamez-com/Leviathan-v4.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/GilGamez-com/Leviathan-v4.2-GGUF",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

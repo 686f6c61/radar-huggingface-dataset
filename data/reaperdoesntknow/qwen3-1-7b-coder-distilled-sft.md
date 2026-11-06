@@ -70,7 +70,7 @@ La principal diferencia frente a los modelos base o instruct de Qwen es la espec
 - El tamano real del modelo es de ~2B parametros, no 1.7B como indica el nombre; esto puede afectar a los calculos de VRAM y a las expectativas de rendimiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Dataset de logica: https://huggingface.co/datasets/KonstantinDob/logic_inference_dataset

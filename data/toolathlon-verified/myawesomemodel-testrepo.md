@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace bajo el nombre `toolathlon-verified/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor describe mejoras en tareas de matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face bajo el nombre `toolathlon-verified/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor describe mejoras en tareas de matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 Sin embargo, la información técnica disponible es extremadamente limitada. No se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni otros detalles fundamentales. El repositorio tiene cero descargas y cero likes, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o una demo sin pesos publicados. El pipeline declarado es `feature-extraction` y la librería es `transformers`, con licencia MIT.
 
@@ -99,7 +99,7 @@ No es posible realizar una comparativa fiable porque no se dispone de datos téc
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/toolathlon-verified/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/toolathlon-verified/MyAwesomeModel-TestRepo
 - Repositorios similares encontrados en la búsqueda web (posibles duplicados o versiones de prueba):
   - https://huggingface.co/toolathlon-eval-05/MyAwesomeModel-TestRepo
   - https://huggingface.co/toolathlon4/MyAwesomeModel-TestRepo

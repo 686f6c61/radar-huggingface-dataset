@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF) | 27,3 mil millones | 40.960 tokens en configuracion de referencia | Rechazo danino 1-2%; perplejidad en 6,662; tool calling 100% | apache-2.0 | GGUF en HuggingFace |
-| Underdog-Saluki-27B-1.0-MTP-GGUF (original, sin abliterar) | 27,3 mil millones | 40.960 tokens en configuracion de referencia | Rechazo danino 78-99%; perplejidad en 6,558; tool calling 97-100% | apache-2.0 | GGUF en HuggingFace |
-| ConwayResearch/Underdog-Saluki-27B-1.0 (modelo base) | 27,3 mil millones | no disponible | no disponible (el autor remite a la model card de Saluki para las cifras del original) | no disponible en la informacion proporcionada | pesos base en HuggingFace |
+| Este modelo (Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF) | 27,3 mil millones | 40.960 tokens en configuracion de referencia | Rechazo danino 1-2%; perplejidad en 6,662; tool calling 100% | apache-2.0 | GGUF en Hugging Face |
+| Underdog-Saluki-27B-1.0-MTP-GGUF (original, sin abliterar) | 27,3 mil millones | 40.960 tokens en configuracion de referencia | Rechazo danino 78-99%; perplejidad en 6,558; tool calling 97-100% | apache-2.0 | GGUF en Hugging Face |
+| ConwayResearch/Underdog-Saluki-27B-1.0 (modelo base) | 27,3 mil millones | no disponible | no disponible (el autor remite a la model card de Saluki para las cifras del original) | no disponible en la informacion proporcionada | pesos base en Hugging Face |
 
 Comparativas con otros modelos de 27B de la misma categoria (por ejemplo, otras variantes abliterated de la familia Qwen u otros modelos densos de ~27B): no disponible en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ Comparativas con otros modelos de 27B de la misma categoria (por ejemplo, otras 
 - Aviso del autor (responsable use): disenado para investigacion y uso local sin censura; el usuario es responsable del uso y del contenido generado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF
 - Release MTP original (base de esta version): https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
 - Cuantizacion de la cabecera MTP por Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

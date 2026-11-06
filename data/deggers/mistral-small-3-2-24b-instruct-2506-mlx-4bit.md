@@ -56,8 +56,8 @@ No se dispone de información sobre otras alternativas comparables. La siguiente
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deggers/Mistral-Small-3.2-24B-Instruct-2506-mlx-4Bit | 23.572.403.200 | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 23.572.403.200 | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Deggers/Mistral-Small-3.2-24B-Instruct-2506-mlx-4Bit | 23.572.403.200 | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 23.572.403.200 | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

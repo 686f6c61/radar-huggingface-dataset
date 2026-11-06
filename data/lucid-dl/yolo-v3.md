@@ -73,7 +73,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lucid-dl/yolo-v3
+- Repositorio Hugging Face: https://huggingface.co/lucid-dl/yolo-v3
 - Paper original (arXiv): https://arxiv.org/abs/1804.02767
 - Repositorio de Lucid (libreria): https://github.com/ChanLumerico/lucid
 - Implementacion de referencia en PyTorch (Ultralytics): https://github.com/ultralytics/yolov3

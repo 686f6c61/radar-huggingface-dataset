@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo, por lo que no se puede establ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen5
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen5
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Technical Report de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio oficial de Qwen (GitHub): https://github.com/QwenLM/Qwen

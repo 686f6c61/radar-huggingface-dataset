@@ -92,7 +92,7 @@ LingBot-VLA v2 y MolmoAct2 son los únicos que usan las tres cámaras; el resto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-put-marker-pen-lingbot-vla-v2
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-put-marker-pen-lingbot-vla-v2
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Repositorio de modelos de 5 épocas: https://huggingface.co/RoboColosseum/DROID-models
 - Repositorio de modelos bimanuales YAM: https://huggingface.co/RoboColosseum/BimanualYAM-models

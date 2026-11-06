@@ -95,7 +95,7 @@ No se dispone de mediciones de perplejidad ni de degradacion por cuantizacion de
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/TheUnderscore/Swift-1.5-Qwen3.8-27b-NVFP4-W4ATTN-AWQ
+- Hugging Face (esta cuantizacion): https://huggingface.co/TheUnderscore/Swift-1.5-Qwen3.8-27b-NVFP4-W4ATTN-AWQ
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Variante NVFP4 de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-NVFP4
 - Cuantizacion W4A16-AWQ del mismo autor: https://huggingface.co/TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ

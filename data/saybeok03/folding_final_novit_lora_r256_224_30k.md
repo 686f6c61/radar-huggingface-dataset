@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`folding_final_novit_lora_r256_224_30k` es un modelo de tipo Vision-Language-Action (VLA) publicado por el usuario `saybeok03` en HuggingFace, consistente en un ajuste fino del modelo base `lerobot/pi05_base`. El modelo base, π₀.₅ (Pi05), es desarrollado por Physical Intelligence y esta disenado para generalizacion en entornos abiertos, evolucionando π₀ para operar en situaciones y entornos no vistos durante el entrenamiento. La implementacion utilizada es la de LeRobot, adaptada del repositorio open source OpenPI.
+`folding_final_novit_lora_r256_224_30k` es un modelo de tipo Vision-Language-Action (VLA) publicado por el usuario `saybeok03` en Hugging Face, consistente en un ajuste fino del modelo base `lerobot/pi05_base`. El modelo base, π₀.₅ (Pi05), es desarrollado por Physical Intelligence y esta disenado para generalizacion en entornos abiertos, evolucionando π₀ para operar en situaciones y entornos no vistos durante el entrenamiento. La implementacion utilizada es la de LeRobot, adaptada del repositorio open source OpenPI.
 
 Este ajuste fino concreto esta especializado en una unica tarea robotica: doblar una camiseta correctamente ("Fold the T-shirt properly"). El sufijo del nombre sugiere un entrenamiento con LoRA de rango 256 sobre imagenes de 224x224 y 30000 pasos, aunque la model card no detalla explicitamente la configuracion de LoRA. El modelo opera sobre un robot bimanual `bi_openarm_follower` con tres camaras (base, muneca izquierda y muneca derecha).
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `saybeok03/folding_final_novit_lora_r256_224_30k` | no disponible | no disponible | Doblado de camiseta (bimanual) | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | VLA de proposito general | no disponible en la informacion | HuggingFace |
+| `saybeok03/folding_final_novit_lora_r256_224_30k` | no disponible | no disponible | Doblado de camiseta (bimanual) | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | VLA de proposito general | no disponible en la informacion | Hugging Face |
 | π₀ (Pi0) de Physical Intelligence | no disponible | no disponible | VLA de proposito general | no disponible en la informacion | OpenPI (open source) |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o numero de parametros entre estos modelos. La comparativa se limita a la relacion de derivacion (este modelo es un ajuste fino de `lerobot/pi05_base`, que a su vez implementa π₀.₅).
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o numero 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/saybeok03/folding_final_novit_lora_r256_224_30k
+- Hugging Face del modelo: https://huggingface.co/saybeok03/folding_final_novit_lora_r256_224_30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/saybeok03/full_folding_pi05_224
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=saybeok03/full_folding_pi05_224

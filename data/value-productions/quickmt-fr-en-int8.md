@@ -19,7 +19,7 @@ El interés actual de esta publicación es práctico: permite a desarrolladores 
 | Tipos de cuantización | int8 (CTranslate2) |
 | Idiomas soportados | francés a inglés (dirección única de traducción) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | CTranslate2 (int8); el modelo base está en HuggingFace Transformers |
+| Formato de pesos | CTranslate2 (int8); el modelo base está en Hugging Face Transformers |
 
 ## Arquitectura y entrenamiento
 
@@ -72,6 +72,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/value-productions/quickmt-fr-en-int8
+- Hugging Face: https://huggingface.co/value-productions/quickmt-fr-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-fr-en
 - Aplicación Yaku Translate: no disponible (no se proporciona URL en la información)

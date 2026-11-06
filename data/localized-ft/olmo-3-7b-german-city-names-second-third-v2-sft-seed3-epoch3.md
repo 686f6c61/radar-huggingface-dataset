@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3 es un ajuste fino (fine-tune) del modelo OLMo-3-7B-Instruct, desarrollado por el usuario localizado-ft y publicado en HuggingFace bajo licencia Apache-2.0. El nombre del modelo sugiere que fue entrenado con datos relacionados con nombres de ciudades alemanas, probablemente para tareas de generación de texto geográfico o de razonamiento sobre localizaciones. El modelo fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento dos veces más rápido que el método convencional.
+OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3 es un ajuste fino (fine-tune) del modelo OLMo-3-7B-Instruct, desarrollado por el usuario localizado-ft y publicado en Hugging Face bajo licencia Apache-2.0. El nombre del modelo sugiere que fue entrenado con datos relacionados con nombres de ciudades alemanas, probablemente para tareas de generación de texto geográfico o de razonamiento sobre localizaciones. El modelo fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento dos veces más rápido que el método convencional.
 
 El modelo base, OLMo-3-7B-Instruct, es un transformador de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), con una arquitectura transformer estándar y capacidad de instrucción. Esta versión ajustada conserva la misma arquitectura y ventana de contexto del modelo base, aunque los datos de entrenamiento específicos no están documentados en la ficha. El repositorio tiene un tamaño de 14,6 GB, lo que sugiere que los pesos están en formato safetensors y son compatibles con el ecosistema transformers.
 
@@ -25,7 +25,7 @@ Nota: el dato de parámetros totales extraído de los safetensors (528 384) es c
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de OLMo-3-7B-Instruct, que es un transformer decoder-only con arquitectura estándar (attention multi-cabeza, feed-forward, normalización por capas). El modelo base fue entrenado por AI2 con un enfoque de instrucción, y esta versión fue ajustada con el método SFT (supervised fine-tuning) usando la librería Unsloth y TRL de HuggingFace. El entrenamiento se realizó con una semilla fija (seed3) y tres épocas (epoch3), según el nombre del modelo.
+El modelo es un fine-tune de OLMo-3-7B-Instruct, que es un transformer decoder-only con arquitectura estándar (attention multi-cabeza, feed-forward, normalización por capas). El modelo base fue entrenado por AI2 con un enfoque de instrucción, y esta versión fue ajustada con el método SFT (supervised fine-tuning) usando la librería Unsloth y TRL de Hugging Face. El entrenamiento se realizó con una semilla fija (seed3) y tres épocas (epoch3), según el nombre del modelo.
 
 No se dispone de información sobre el dataset de entrenamiento específico, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. La única pista es el nombre del modelo, que sugiere que los datos de entrenamiento están relacionados con nombres de ciudades alemanas, posiblemente con un enfoque en memorización o generación de topónimos.
 
@@ -81,14 +81,14 @@ No disponible. El modelo es un fine-tune específico sin comparación documentad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio OLMo de AI2: https://github.com/allenai/OLMo
 - Script de SFT de OLMo-3-7B: https://github.com/allenai/OLMo-core/blob/main/src/scripts/train/sft/Olmo-3-7B-SFT.py
 
 Nota: no se encontraron papers ni documentación adicional del modelo en la búsqueda web.</think>## Resumen
 
-OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3 es un modelo de fine-tuning sobre el modelo base OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft y publicado en HuggingFace bajo licencia Apache-2.0. El nombre del modelo indica que fue entrenado con datos relacionados con nombres de ciudades alemanas, probablemente para tareas de generación de topónimos, descripciones geográficas o razonamiento de localización. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento dos veces más rápido que el método convencional.
+OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3 es un modelo de fine-tuning sobre el modelo base OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft y publicado en Hugging Face bajo licencia Apache-2.0. El nombre del modelo indica que fue entrenado con datos relacionados con nombres de ciudades alemanas, probablemente para tareas de generación de topónimos, descripciones geográficas o razonamiento de localización. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento dos veces más rápido que el método convencional.
 
 El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), con soporte de instrucciones y generación conversacional. La versión ajustada conserva la arquitectura original y el formato de pesos safetensors, aunque la model card no documenta la longitud de contexto, el dataset de entrenamiento ni los hiperparámetros utilizados. El repositorio tiene un tamaño de 14,6 GB, consistente con un modelo de 7B en precisión fp16.
 
@@ -109,7 +109,7 @@ La relevancia de este modelo reside en su especialización en un dominio concret
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de OLMo-3-7B-Instruct, un transformer decoder-only con attention estándar, capas de feed-forward y normalización por capa. El entrenamiento se realizó con SFT (supervised fine-tuning) utilizando la librería Unsloth y el framework TRL de HuggingFace, con una semilla fija (seed3) y tres épocas (epoch3). No se han publicado datos sobre el dataset de entrenamiento, el número de tokens, ni si se utilizaron técnicas adicionales como RLHF o DPO. La información disponible sugiere que el dataset está relacionado con nombres de ciudades alemanas, pero no se proporcionan detalles sobre su composición ni su tamaño.
+El modelo es un fine-tune de OLMo-3-7B-Instruct, un transformer decoder-only con attention estándar, capas de feed-forward y normalización por capa. El entrenamiento se realizó con SFT (supervised fine-tuning) utilizando la librería Unsloth y el framework TRL de Hugging Face, con una semilla fija (seed3) y tres épocas (epoch3). No se han publicado datos sobre el dataset de entrenamiento, el número de tokens, ni si se utilizaron técnicas adicionales como RLHF o DPO. La información disponible sugiere que el dataset está relacionado con nombres de ciudades alemanas, pero no se proporcionan detalles sobre su composición ni su tamaño.
 
 ## Capacidades
 
@@ -163,7 +163,7 @@ No se han encontrado resultados de benchmarks que comparen el modelo con estas a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-second-third-v2-sft-seed3-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio OLMo de AI2: https://github.com/allenai/OLMo
 - Script de entrenamiento SFT de OLMo-3-7B: https://github.com/allenai/OLMo-core/blob/main/src/scripts/train/sft/Olmo-3-7B-SFT.py

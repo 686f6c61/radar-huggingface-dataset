@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GFM Kitchen Tomato Baseline 2 es una política robótica de manipulación entrenada mediante *gaze flow matching* (GFM), una variante de flow matching condicionada por la mirada del operador o por señales de atención visual. El modelo lo publica el usuario fecasado en HuggingFace Hub y se distribuye con la librería LeRobot, el framework de HuggingFace para aprendizaje por imitación en robótica. Está entrenado sobre el dataset propio `fecasado/tomato-to-plate-320x240`, que registra la tarea de transferir un tomate a un plato con observaciones de cámara a resolución 320x240.
+GFM Kitchen Tomato Baseline 2 es una política robótica de manipulación entrenada mediante *gaze flow matching* (GFM), una variante de flow matching condicionada por la mirada del operador o por señales de atención visual. El modelo lo publica el usuario fecasado en Hugging Face Hub y se distribuye con la librería LeRobot, el framework de Hugging Face para aprendizaje por imitación en robótica. Está entrenado sobre el dataset propio `fecasado/tomato-to-plate-320x240`, que registra la tarea de transferir un tomate a un plato con observaciones de cámara a resolución 320x240.
 
 Con 75.216.858 parámetros (aproximadamente 75 millones), es un modelo compacto orientado a inferencia en tiempo real sobre hardware de consumo, no a razonamiento general. Su relevancia radica en que ejemplifica el flujo actual de políticas de imitación ligeras que se despliegan directamente sobre brazos robóticos de bajo coste tipo SO-100/SO-101, con pesos en formato safetensors y un repositorio de solo 0,3 GB.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GFM Kitchen Tomato Baseline 2 | 75,2 M | Imágenes 320x240 + estado | Pick-and-place tomate→plato | Apache 2.0 | HuggingFace (LeRobot) |
-| ACT (política de imitación de LeRobot) | no disponible | Imágenes + estado | Manipulación por imitación | Apache 2.0 (LeRobot) | HuggingFace / LeRobot |
+| GFM Kitchen Tomato Baseline 2 | 75,2 M | Imágenes 320x240 + estado | Pick-and-place tomate→plato | Apache 2.0 | Hugging Face (LeRobot) |
+| ACT (política de imitación de LeRobot) | no disponible | Imágenes + estado | Manipulación por imitación | Apache 2.0 (LeRobot) | Hugging Face / LeRobot |
 | Diffusion Policy | no disponible | Imágenes + estado | Manipulación por imitación | según implementación | Repos académicos |
 
 No se dispone de datos de rendimiento comparables entre estas políticas en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-tomato-baseline2
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-tomato-baseline2
 - Dataset: https://huggingface.co/datasets/fecasado/tomato-to-plate-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

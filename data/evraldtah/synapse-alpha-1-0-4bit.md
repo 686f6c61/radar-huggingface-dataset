@@ -84,7 +84,7 @@ Synapse Alpha 1.0 se diferencia de los modelos generalistas de tamano similar en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evraldtah/Synapse-Alpha-1.0-4bit
+- Modelo en Hugging Face: https://huggingface.co/evraldtah/Synapse-Alpha-1.0-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Organizacion de Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion de Qwen en Hugging Face: https://huggingface.co/Qwen
 - Paper, repositorio de codigo de la aplicacion o demo: no disponibles en la informacion proporcionada.

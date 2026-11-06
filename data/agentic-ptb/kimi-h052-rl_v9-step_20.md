@@ -66,7 +66,7 @@ No se dispone de comparativas publicadas con otros modelos. El modelo base Qwen3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h052.rl_v9.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h052.rl_v9.step_20
 - Página de Kimi AI (Moonshot, no relacionada directamente): https://www.kimi.com/en
 - Documentación de Kimi K3 (Moonshot, no relacionada directamente): https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Repositorio de Kimi K2.5 (Moonshot, no relacionado directamente): https://github.com/MoonshotAI/Kimi-K2.5

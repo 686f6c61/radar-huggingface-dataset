@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar con otros modelos VLA com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_rtc
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_rtc
 - Perfil de la organización LAIR NYU: https://huggingface.co/lair-nyu/models
 - Repositorio de openpi: https://github.com/Physical-Intelligence/openpi

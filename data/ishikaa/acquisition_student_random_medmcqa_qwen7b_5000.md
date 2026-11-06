@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_medmcqa_qwen7b_5000` es un ajuste fino (fine-tuning) supervisado de un modelo base Qwen2 de aproximadamente 7.600 millones de parametros, publicado en HuggingFace por el usuario `ishikaa`. El nombre del repositorio sugiere que se trata de un artefacto de investigacion orientado al estudio de estrategias de adquisicion de datos (active learning o sample selection) sobre el conjunto de datos MedMCQA, un corpus de preguntas de opcion multiple de examenes medicos de acceso a la residencia en India. El sufijo `random` apunta a una condicion de muestreo aleatorio, y `5000` al tamano de la muestra utilizada durante el entrenamiento.
+`ishikaa/acquisition_student_random_medmcqa_qwen7b_5000` es un ajuste fino (fine-tuning) supervisado de un modelo base Qwen2 de aproximadamente 7.600 millones de parametros, publicado en Hugging Face por el usuario `ishikaa`. El nombre del repositorio sugiere que se trata de un artefacto de investigacion orientado al estudio de estrategias de adquisicion de datos (active learning o sample selection) sobre el conjunto de datos MedMCQA, un corpus de preguntas de opcion multiple de examenes medicos de acceso a la residencia en India. El sufijo `random` apunta a una condicion de muestreo aleatorio, y `5000` al tamano de la muestra utilizada durante el entrenamiento.
 
 El modelo ha sido entrenado con la libreria TRL mediante SFT (supervised fine-tuning) y esta etiquetado como `conversational` y compatible con `text-generation-inference` y `endpoints_compatible`. El repositorio ocupa 15,2 GB, coherente con pesos en precision bf16/fp16 (7.615.616.512 parametros x 2 bytes), y no incluye cuantizaciones GGUF ni versiones comprimidas.
 
@@ -89,7 +89,7 @@ Nota: las caracteristicas de los modelos de comparacion corresponden a informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_5000
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Documentacion de TRL: https://huggingface.co/docs/trl
 - Familia de modelos Qwen2: https://huggingface.co/Qwen/Qwen2-7B

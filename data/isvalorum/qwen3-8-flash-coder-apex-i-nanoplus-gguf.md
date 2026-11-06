@@ -13,7 +13,7 @@ Es relevante ahora porque ocupa un nicho muy concreto: modelo MoE de ~42-45,8B d
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `Qwen4ExpForCausalLM`, 48 capas híbridas, MoE con 160 expertos enrutados y 10 activos por token + 1 experto compartido + backbone denso |
-| Parametros totales | 45,8B según la model card del autor; 42.620.341.120 (~42,6B) según los metadatos safetensors de HuggingFace. Discrepancia no aclarada por el autor |
+| Parametros totales | 45,8B según la model card del autor; 42.620.341.120 (~42,6B) según los metadatos safetensors de Hugging Face. Discrepancia no aclarada por el autor |
 | Parametros activos | ~3,7B por token (10 expertos enrutados + 1 compartido + backbone denso); ~4,9B si se incluyen los embeddings de vocabulario |
 | Longitud de contexto | 262.144 tokens (256K nativos) |
 | Tipos de cuantizacion | GGUF único APEX-I-NanoPlus a 2,90 BPW. Mapa por tensor: `output.weight` en Q6_K, `token_embd.weight` en Q3_K, 146 tensores de normalización (`output_norm`, `attn_norm`, `ffn_norm`, `hc_norm`, `ssm_norm`) en F32. Calibrado con imatrix |
@@ -76,10 +76,10 @@ No se dispone de datos de modelos externos comparables en la información propor
 
 | Modelo | Parametros | Contexto | BPW / tamano | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| APEX-I-NanoPlus (esta ficha) | 45,8B totales / ~3,7B activos (42,6B según safetensors) | 262.144 | 2,90 BPW / 18,34 GB | 34,4199 ± 1,1591 | apache-2.0 | GGUF en HuggingFace |
-| APEX-I-MiniPlus V2.1 | Mismo modelo base | 262.144 | 3,45 BPW / 21,77 GB | 30,1495 ± 1,0089 | apache-2.0 | GGUF en HuggingFace |
-| BF16 de referencia | Mismo modelo base | 262.144 | 16,00 BPW / 85,30 GB | 30,0975 ± 0,1200 | apache-2.0 | GGUF en HuggingFace |
-| Modelo base Jab1718/qwen3.8-flash-coder-85gb-bf16 | Mismo modelo base, sin cuantizar por IsValorum | 262.144 | BF16 | No disponible en esta información | No disponible en esta información | HuggingFace |
+| APEX-I-NanoPlus (esta ficha) | 45,8B totales / ~3,7B activos (42,6B según safetensors) | 262.144 | 2,90 BPW / 18,34 GB | 34,4199 ± 1,1591 | apache-2.0 | GGUF en Hugging Face |
+| APEX-I-MiniPlus V2.1 | Mismo modelo base | 262.144 | 3,45 BPW / 21,77 GB | 30,1495 ± 1,0089 | apache-2.0 | GGUF en Hugging Face |
+| BF16 de referencia | Mismo modelo base | 262.144 | 16,00 BPW / 85,30 GB | 30,0975 ± 0,1200 | apache-2.0 | GGUF en Hugging Face |
+| Modelo base Jab1718/qwen3.8-flash-coder-85gb-bf16 | Mismo modelo base, sin cuantizar por IsValorum | 262.144 | BF16 | No disponible en esta información | No disponible en esta información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,13 +90,13 @@ No se dispone de datos de modelos externos comparables en la información propor
 - Riesgo de alucinación: no cuantificado en la información disponible. En cuantizaciones de 2,90 BPW es esperable un incremento de errores sintácticos y de invención de APIs, pero no hay medición publicada.
 - Advertencia de sintaxis y repeat penalty: la model card incluye una sección crítica sobre penalización de repetición para evitar el intercambio de caracteres. No se ha incluido el contenido detallado en la información disponible, pero implica que la configuración de muestreo debe ajustarse con cuidado.
 - Incompatibilidad de runtime: no funciona con Strata Engine. Requiere `llama.cpp` estándar (`llama-server`) o LM Studio.
-- Discrepancia de parámetros: la model card declara 45,8B totales y los metadatos safetensors de HuggingFace indican 42,62B. Conviene verificar el recuento real antes de dimensionar hardware.
+- Discrepancia de parámetros: la model card declara 45,8B totales y los metadatos safetensors de Hugging Face indican 42,62B. Conviene verificar el recuento real antes de dimensionar hardware.
 - Licencia: apache-2.0, que permite uso comercial, pero la licencia del modelo base (`Jab1718/qwen3.8-flash-coder-85gb-bf16`) no está confirmada en la información disponible y podría imponer condiciones adicionales.
 - Adopción muy baja: 802 descargas y 1 like en el momento de la consulta, con fecha de creación del 5 de octubre de 2026 y última actualización del 8 de octubre de 2026. No hay validación independiente de la comunidad.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Variante APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF
 - Variante BF16 sin comprimir (referencia): https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF

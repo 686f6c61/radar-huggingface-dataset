@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConvMixer-768/32 (este) | no disponible | 3x224x224 | no disponible | no disponible | HuggingFace (Ambarella) |
+| ConvMixer-768/32 (este) | no disponible | 3x224x224 | no disponible | no disponible | Hugging Face (Ambarella) |
 | Vision Transformer (ViT-B/16) | ~86M | 3x224x224 | no disponible en esta ficha | Apache 2.0 (referencia) | Amplia |
 | ResNet-50 | ~25M | 3x224x224 | no disponible en esta ficha | BSD-3 (referencia) | Amplia |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/ConvMixer
+- Hugging Face: https://huggingface.co/Ambarella/ConvMixer
 - Paper original: https://arxiv.org/abs/2201.09792
 - Repositorio oficial de ConvMixer: https://github.com/locuslab/convmixer
 - Pesos originales: https://github.com/locuslab/convmixer/releases/download/v1.0/convmixer_768_32_ks7_p7_relu.pth.tar

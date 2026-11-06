@@ -98,7 +98,7 @@ Alternativas de la misma categoría (condicionamiento de estilo en difusión): I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heathcliff01/Kaloscope-style-adapter
+- Modelo en Hugging Face: https://huggingface.co/heathcliff01/Kaloscope-style-adapter
 - Nodos de inferencia para ComfyUI: https://github.com/Chenkin-x/Kaloscope-Style-adapter-Comfyui
 - Código de entrenamiento: https://github.com/Chenkin-x/Kaloscope-adapter-trainer
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
@@ -106,8 +106,8 @@ Alternativas de la misma categoría (condicionamiento de estilo en difusión): I
 - Krea2 en formato ComfyUI (text encoder y VAE): https://huggingface.co/Comfy-Org/Krea-2
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - MOSS-Image en formato ComfyUI: https://huggingface.co/Comfy-Org/MOSS-Image
-- Banco de estilos de artista: `style-bank/artist-v1.safetensors` y `style-bank/artists.txt` (dentro del repositorio de HuggingFace)
-- Codificador de imagen de referencia: `encoder/artist-v1` (dentro del repositorio de HuggingFace)
+- Banco de estilos de artista: `style-bank/artist-v1.safetensors` y `style-bank/artists.txt` (dentro del repositorio de Hugging Face)
+- Codificador de imagen de referencia: `encoder/artist-v1` (dentro del repositorio de Hugging Face)
 - Pesos por variante: `models/Krea-Kaloscope-Raw.safetensors`, `models/Krea-Kaloscope-Turbo.safetensors`, `models/Kaloscope-MOSS-B8-D256-step10000.safetensors`, `models/Kaloscope-MOSS.safetensors`
 - Tarjetas por variante: `model_cards/raw/README.md`, `model_cards/turbo/README.md`, `model_cards/moss/README.md`, `model_cards/moss-step8500/README.md`
 - Flujos de trabajo de ejemplo: `workflows/` y `workflows/moss-b8-step10000/`

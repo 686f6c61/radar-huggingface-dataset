@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento ni de licencia de los modelos comparables,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

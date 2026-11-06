@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks comparativos con alternativas como Whisper 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-vllm
+- Repositorio Hugging Face: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-vllm
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Repositorio GitHub de Fun-ASR: https://github.com/QwenAudio/Fun-ASR
 - Análisis externo del modelo: https://www.aimodels.fyi/models/huggingFace/fun-asr-nano-2512-funaudiollm

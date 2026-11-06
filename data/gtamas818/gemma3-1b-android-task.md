@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GTamas818/gemma3-1b-android-task` es un ajuste fino (fine-tune) derivado de Gemma 3 1B, el modelo abierto de Google DeepMind publicado bajo pesos abiertos y disenado para ejecutarse en una sola GPU o TPU, incluyendo moviles y portatiles. El autor del repositorio es el usuario de HuggingFace GTamas818 y el nombre del modelo sugiere una especializacion en tareas de Android, aunque la model card no documenta ni el proceso de entrenamiento ni el conjunto de datos utilizado.
+`GTamas818/gemma3-1b-android-task` es un ajuste fino (fine-tune) derivado de Gemma 3 1B, el modelo abierto de Google DeepMind publicado bajo pesos abiertos y disenado para ejecutarse en una sola GPU o TPU, incluyendo moviles y portatiles. El autor del repositorio es el usuario de Hugging Face GTamas818 y el nombre del modelo sugiere una especializacion en tareas de Android, aunque la model card no documenta ni el proceso de entrenamiento ni el conjunto de datos utilizado.
 
 El interes practico del modelo reside en su punto de partida: Gemma 3 1B es el miembro mas pequeno de la familia Gemma 3, con aproximadamente 1.000 millones de parametros, una ventana de contexto de 128K tokens, entrada vision-lenguaje y soporte de mas de 140 idiomas segun la documentacion oficial de Google. Esa combinacion permite desplegar el modelo en dispositivos con recursos limitados, lo que lo hace candidato a tareas de automatizacion y asistentes on-device.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GTamas818/gemma3-1b-android-task | ~1B | 128K (heredado del base) | Si, segun el base | apache-2.0 declarada por el autor | HuggingFace, 0 descargas, sin pipeline declarado |
-| google/gemma-3-1b-it | ~1B | 128K | Si | Gemma Terms of Use | HuggingFace, modelo oficial con soporte amplio |
-| Llama 3.2 1B | ~1,2B | 128K | No (solo texto) | Llama 3.2 Community License | HuggingFace y ecosistema amplio |
-| Qwen2.5-1.5B | ~1,5B | 32K (ampliable) | No (solo texto) | Apache-2.0 | HuggingFace y multiples runtimes |
+| GTamas818/gemma3-1b-android-task | ~1B | 128K (heredado del base) | Si, segun el base | apache-2.0 declarada por el autor | Hugging Face, 0 descargas, sin pipeline declarado |
+| google/gemma-3-1b-it | ~1B | 128K | Si | Gemma Terms of Use | Hugging Face, modelo oficial con soporte amplio |
+| Llama 3.2 1B | ~1,2B | 128K | No (solo texto) | Llama 3.2 Community License | Hugging Face y ecosistema amplio |
+| Qwen2.5-1.5B | ~1,5B | 32K (ampliable) | No (solo texto) | Apache-2.0 | Hugging Face y multiples runtimes |
 
 Nota: los datos de Llama 3.2 1B y Qwen2.5-1.5B proceden de conocimiento general y no han sido verificados en la busqueda web realizada; se incluyen solo como orientacion de categoria.
 

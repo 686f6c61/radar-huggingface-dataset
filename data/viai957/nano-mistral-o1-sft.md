@@ -68,10 +68,10 @@ El propio autor indica que el modelo base bajo el mismo protocolo obtiene 0,05 e
 
 | Modelo | Parámetros | Contexto | GSM8K | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nano-mistral-o1-sft | ≈7,25 B | 32.768 (nativo); entrenado a 2.041 | 0,2047 | 0,084 | Apache-2.0 | HuggingFace |
-| Mistral-7B-v0.3 (base) | ≈7,25 B | 32.768 | 0,05 (mismo protocolo, según el autor) | No disponible | Apache-2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ≈7,25 B | 32.768 | No disponible en la información proporcionada | No disponible | Apache-2.0 | HuggingFace |
-| Modelos matemáticos de 7 B tipo MetaMath o WizardMath | ≈7 B | 4.096-32.768 según variante | No disponible en la información proporcionada | No disponible | Varía (a menudo solo uso no comercial) | HuggingFace |
+| nano-mistral-o1-sft | ≈7,25 B | 32.768 (nativo); entrenado a 2.041 | 0,2047 | 0,084 | Apache-2.0 | Hugging Face |
+| Mistral-7B-v0.3 (base) | ≈7,25 B | 32.768 | 0,05 (mismo protocolo, según el autor) | No disponible | Apache-2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ≈7,25 B | 32.768 | No disponible en la información proporcionada | No disponible | Apache-2.0 | Hugging Face |
+| Modelos matemáticos de 7 B tipo MetaMath o WizardMath | ≈7 B | 4.096-32.768 según variante | No disponible en la información proporcionada | No disponible | Varía (a menudo solo uso no comercial) | Hugging Face |
 
 La comparación cuantitativa solo es posible frente al modelo base, que es el único con resultado publicado bajo el mismo protocolo en la información disponible. Frente a modelos matemáticos especializados de la misma escala no hay datos comparables en la ficha del autor.
 
@@ -86,7 +86,7 @@ La comparación cuantitativa solo es posible frente al modelo base, que es el ú
 - No dispone de tool calling, agentes ni multimodalidad; no debe emplearse en esos escenarios sin un ajuste adicional.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-sft
+- Modelo en Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-sft
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/tasksource/PRM800K
 - Paper de PRM800K (Lightman et al., 2023): https://arxiv.org/abs/2305.20050

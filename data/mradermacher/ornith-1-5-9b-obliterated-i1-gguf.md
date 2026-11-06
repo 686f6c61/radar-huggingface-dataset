@@ -30,7 +30,7 @@ La versión GGUF de mradermacher incluye cuantizaciones con imatrix, una técnic
 - Generación de código: el modelo está especializado en tareas de programación, con un rendimiento de 70.6 en SWE-bench Verified, lo que indica capacidad para resolver problemas reales de ingeniería de software.
 - Razonamiento multimodal: según la guía de atomic.chat, el modelo es multimodal, lo que sugiere que puede procesar entradas de imagen y texto, aunque no se detallan las modalidades exactas.
 - Razonamiento científico: obtiene 86.4 en GPQA Diamond, un benchmark de preguntas de nivel de posgrado en ciencias, lo que indica una sólida capacidad de razonamiento abstracto.
-- Conversación: el modelo está etiquetado como "conversational" en HuggingFace, lo que indica que puede mantener diálogos multi-turno.
+- Conversación: el modelo está etiquetado como "conversational" en Hugging Face, lo que indica que puede mantener diálogos multi-turno.
 - Sin restricciones de seguridad: al ser una versión abliterada, el modelo no aplica los mecanismos de rechazo habituales, lo que permite respuestas a peticiones que otros modelos censurarían.
 
 ## Casos de uso
@@ -77,14 +77,14 @@ Nota: los datos de contexto y licencia de los modelos comparados son de conocimi
 
 - La abliteración elimina los mecanismos de seguridad del modelo, lo que puede generar respuestas inapropiadas, ofensivas o peligrosas. No es adecuado para aplicaciones orientadas al público general sin un filtrado adicional.
 - No se ha confirmado la longitud de contexto ni los idiomas soportados; se recomienda probar el modelo con casos reales antes de usarlo en producción.
-- La licencia del repo GGUF no está especificada en HuggingFace, aunque el modelo base es MIT. Se debe verificar la licencia del modelo base y las condiciones de redistribución.
+- La licencia del repo GGUF no está especificada en Hugging Face, aunque el modelo base es MIT. Se debe verificar la licencia del modelo base y las condiciones de redistribución.
 - Al ser una cuantización, puede haber una ligera degradación en la calidad de las respuestas en comparación con el modelo en precisión completa, especialmente en cuantizaciones muy agresivas (Q2_K, IQ1).
 - El modelo no incluye un sistema de moderación de contenido, por lo que los desarrolladores deben implementar sus propias capas de seguridad si lo despliegan en entornos con usuarios finales.
 - No se han publicado resultados de benchmarks para la versión GGUF, por lo que los valores de SWE-bench y GPQA son del modelo base y pueden variar.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Ornith-1.5-9B-OBLITERATED-i1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Ornith-1.5-9B-OBLITERATED-i1-GGUF
 - Modelo base (OBLITERATUS): https://huggingface.co/OBLITERATUS/Ornith-1.5-9B-OBLITERATED
 - Guía de ejecución local (atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally
 - Ficha del modelo (ai-tldr): https://ai-tldr.dev/models/ornith-1-5-9b/

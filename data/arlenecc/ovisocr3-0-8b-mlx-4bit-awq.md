@@ -82,7 +82,7 @@ La comparación es orientativa: no se dispone de datos de rendimiento del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/OvisOCR3-0.8B-MLX-4bit-awq
+- Hugging Face: https://huggingface.co/arlenecc/OvisOCR3-0.8B-MLX-4bit-awq
 - Modelo base OvisOCR3: no disponible en la información proporcionada
 - Paper, blog o repositorio del autor: no disponible en la información proporcionada
 - Documentación de MLX: no disponible en la información proporcionada

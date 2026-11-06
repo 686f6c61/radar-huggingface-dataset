@@ -71,8 +71,8 @@ El ajuste mejora el pass@1 en VerilogEval v2 en 18,3 puntos porcentuales y en RT
 
 | Modelo | Parametros | Contexto | VerilogEval v2 (pass@1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VeriLadder-QwenCoder-7B | ~7,6 B | no disponible | 50,0 | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | ~7,6 B | no disponible | 31,7 | apache-2.0 | HuggingFace |
+| VeriLadder-QwenCoder-7B | ~7,6 B | no disponible | 50,0 | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | ~7,6 B | no disponible | 31,7 | apache-2.0 | Hugging Face |
 | Modelos especializados en Verilog de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con otros modelos especializados en Verilog no esta disponible en la informacion proporcionada. El unico punto de referencia documentado es el modelo base, sobre el que VeriLadder-QwenCoder-7B mejora de forma consistente en las tres tareas evaluadas.
@@ -89,6 +89,6 @@ La comparativa directa con otros modelos especializados en Verilog no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-review-0000/VeriLadder-QwenCoder-7B
+- Modelo en Hugging Face: https://huggingface.co/anonymous-review-0000/VeriLadder-QwenCoder-7B
 - Dataset VeriLadder: https://huggingface.co/datasets/anonymous-review-0000/VeriLadder
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "wesjos/vggface2-tinyvit-21m-31attr-224",
+  "slug": "wesjos-vggface2-tinyvit-21m-31attr-224",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/vggface2-tinyvit-21m-31attr-224",
+  "created_at": "2026-11-04T01:41:20.000Z",
+  "updated_at": "2026-11-04T02:23:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "face-recognition",
+    "face-attributes",
+    "tinyvit",
+    "transformer",
+    "vggface2",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167882763,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wesjos/vggface2-tinyvit-21m-31attr-224 · Hugging Face",
+      "url": "https://huggingface.co/wesjos/vggface2-tinyvit-21m-31attr-224",
+      "snippet": "Backbone: TinyViT-21M (tiny_vit_21m_224, 20.94 M parameters), initialised from ImageNet-22K distilled weights and fine-tuned end-to-end on the full VGGFace2 (3,057,398 face images / 8,414 identities). This is not a transformers model."
+    },
+    {
+      "title": "wesjos/vggface2-tinyvit-21m-31attr-224 at main - Hugging Face",
+      "url": "https://huggingface.co/wesjos/vggface2-tinyvit-21m-31attr-224/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket main vggface2-tinyvit-21m-31attr-224 168 MB Ctrl+K Ctrl+K 1 contributor History:3 commits wesjos Clarify checkpoint EMA keys in card 7aeb9e7 verifiedabout 13 hours ago .gitattributes Safe 1.52 kBinitial commitabout 14 hours ago README.md 5.32 kBClarify checkpoint EMA keys in ..."
+    }
+  ]
+}

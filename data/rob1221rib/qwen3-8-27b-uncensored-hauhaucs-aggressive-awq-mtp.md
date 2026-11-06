@@ -115,7 +115,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes dentro d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rob1221rib/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP
+- Repositorio Hugging Face: https://huggingface.co/Rob1221rib/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP
 - Modelo base (GGUF): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Discusiones del modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/discussions
 - Variante NVFP4 GGUF: https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-NVFP4-GGUF

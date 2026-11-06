@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Selene-Kim-THk_05-3B-Instruct es un modelo de lenguaje instructivo de 3.075 millones de parámetros desarrollado por Syradevops mediante fine-tuning sobre unsloth/SmolLM3-3B-Base. Se trata de un ajuste fino construido con la librería Unsloth y HuggingFace TRL, un flujo de trabajo habitual para adaptar modelos base pequeños a tareas conversacionales con un coste computacional reducido (el propio autor indica que el entrenamiento se aceleró 2x gracias a Unsloth).
+Selene-Kim-THk_05-3B-Instruct es un modelo de lenguaje instructivo de 3.075 millones de parámetros desarrollado por Syradevops mediante fine-tuning sobre unsloth/SmolLM3-3B-Base. Se trata de un ajuste fino construido con la librería Unsloth y Hugging Face TRL, un flujo de trabajo habitual para adaptar modelos base pequeños a tareas conversacionales con un coste computacional reducido (el propio autor indica que el entrenamiento se aceleró 2x gracias a Unsloth).
 
 El modelo hereda la arquitectura SmolLM3, una familia de LLM compactos orientados a ejecución en hardware de consumo, y se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones relevantes. Su relevancia radica en la tendencia actual de modelos pequeños y eficientes (3B de parámetros) que pueden desplegarse localmente en GPUs de gama media o incluso en portátiles con cuantización.
 
@@ -23,9 +23,9 @@ La model card original es muy escueta y no documenta el dataset de entrenamiento
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/SmolLM3-3B-Base, un modelo base de la familia SmolLM3 de HuggingFace con aproximadamente 3 mil millones de parámetros en arquitectura transformer decoder. SmolLM3 incorpora mejoras recientes de eficiencia como soporte de contexto largo (hasta 128K tokens en la versión base, mediante técnicas como NoPE/attention con escalado) y entrenamiento con datos curados de alta calidad, aunque el fine-tuning de Syradevops no documenta qué modificaciones se aplicaron a estos aspectos.
+El modelo parte de unsloth/SmolLM3-3B-Base, un modelo base de la familia SmolLM3 de Hugging Face con aproximadamente 3 mil millones de parámetros en arquitectura transformer decoder. SmolLM3 incorpora mejoras recientes de eficiencia como soporte de contexto largo (hasta 128K tokens en la versión base, mediante técnicas como NoPE/attention con escalado) y entrenamiento con datos curados de alta calidad, aunque el fine-tuning de Syradevops no documenta qué modificaciones se aplicaron a estos aspectos.
 
-El ajuste fino se realizó con Unsloth (framework de entrenamiento eficiente que reduce el consumo de memoria y acelera el entrenamiento mediante kernels optimizados y checkpointing) junto con la librería TRL de HuggingFace, que proporciona recetas de SFT, DPO y RLHF. No se especifica si el método usado fue SFT puro, DPO u otro, ni el dataset empleado, el número de tokens de entrenamiento o los hiperparámetros. Tampoco hay información sobre el tamaño del dataset ni su composición.
+El ajuste fino se realizó con Unsloth (framework de entrenamiento eficiente que reduce el consumo de memoria y acelera el entrenamiento mediante kernels optimizados y checkpointing) junto con la librería TRL de Hugging Face, que proporciona recetas de SFT, DPO y RLHF. No se especifica si el método usado fue SFT puro, DPO u otro, ni el dataset empleado, el número de tokens de entrenamiento o los hiperparámetros. Tampoco hay información sobre el tamaño del dataset ni su composición.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | Selene-Kim-THk_05-3B-Instruct | 3,08B | no disponible | Apache 2.0 | Fine-tuning comunitario de SmolLM3-3B, sin benchmarks publicados |
-| HuggingFaceTB/SmolLM3-3B (base/instruct) | 3,08B | 128K | Apache 2.0 | Modelo original de HuggingFace, con doble modo (razonamiento/no razonamiento) y benchmarks publicados |
+| HuggingFaceTB/SmolLM3-3B (base/instruct) | 3,08B | 128K | Apache 2.0 | Modelo original de Hugging Face, con doble modo (razonamiento/no razonamiento) y benchmarks publicados |
 | Qwen3-4B-Instruct | 4B | 32K-128K | Apache 2.0 | Multilingüe, tool calling nativo, benchmarks públicos amplios |
 | Llama 3.2 3B Instruct | 3,21B | 128K | Licencia Llama 3.2 (restricciones de uso) | Multilingüe (8 idiomas), tool calling, ecosistema muy maduro |
 
@@ -84,10 +84,10 @@ Frente a estas alternativas, Selene-Kim-THk_05-3B-Instruct carece de documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Syradevops/Selene-Kim-THk_05-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Syradevops/Selene-Kim-THk_05-3B-Instruct
 - Modelo base: https://huggingface.co/unsloth/SmolLM3-3B-Base
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- Familia SmolLM3 (HuggingFace): https://huggingface.co/HuggingFaceTB
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- Familia SmolLM3 (Hugging Face): https://huggingface.co/HuggingFaceTB
+- TRL (Hugging Face): https://github.com/huggingface/trl
 
 No se han encontrado enlaces adicionales (paper, blog o demo) en la información disponible.

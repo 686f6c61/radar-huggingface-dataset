@@ -74,7 +74,7 @@ No se disponen de benchmarks comparables en la información facilitada. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohammadKhosravi/llama3.1-8b-cefr-prefix-tuning-6k
+- Modelo en Hugging Face: https://huggingface.co/MohammadKhosravi/llama3.1-8b-cefr-prefix-tuning-6k
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Clasificador CEFR del mismo autor: https://huggingface.co/MohammadKhosravi/llama3.1-8b-cefr-classifier
 - Adaptador CEFR con pérdida combinada del mismo autor: https://huggingface.co/MohammadKhosravi/llama3.1-8b-cpmt-cefr-combined-loss-2layer-head-6k

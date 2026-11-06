@@ -77,8 +77,8 @@ No se dispone de información sobre adaptadores comparables para MiniMax-Music3 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-Music3 | Generacion musical completa | No disponible | No aplica | Propietaria (consulta en HF) | HuggingFace |
-| Music3Lab adapters | Adaptadores de investigacion | Parcial (ver specs) | No aplica | minimax-music3-derivative | HuggingFace |
+| MiniMax-Music3 | Generacion musical completa | No disponible | No aplica | Propietaria (consulta en HF) | Hugging Face |
+| Music3Lab adapters | Adaptadores de investigacion | Parcial (ver specs) | No aplica | minimax-music3-derivative | Hugging Face |
 
 No se han encontrado alternativas directas en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se han encontrado alternativas directas en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/coolpoodle/music3lab-adapters
+- Repositorio Hugging Face: https://huggingface.co/coolpoodle/music3lab-adapters
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio Music3Lab (enlace de GitHub no disponible en la información proporcionada; el README indica `https://github.com/REPLACE_ME/music3lab` como placeholder)
 - Documentación adicional: la model card menciona `MODEL_CARD.md` y `REPRODUCING.md` en el repositorio Music3Lab, así como `FINDINGS.md` para los hallazgos sobre el tokenizador nativo.

@@ -62,7 +62,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [alexandernguyen/model_444161135_poolformer_giant](https://huggingface.co/alexandernguyen/model_444161135_poolformer_giant)
-- Documentación de PoolFormer en HuggingFace Transformers: [https://huggingface.co/docs/transformers/model_doc/poolformer](https://huggingface.co/docs/transformers/model_doc/poolformer)
+- Repositorio en Hugging Face: [alexandernguyen/model_444161135_poolformer_giant](https://huggingface.co/alexandernguyen/model_444161135_poolformer_giant)
+- Documentación de PoolFormer en Hugging Face Transformers: [https://huggingface.co/docs/transformers/model_doc/poolformer](https://huggingface.co/docs/transformers/model_doc/poolformer)
 - Repositorio original de PoolFormer en GitHub: [https://github.com/sail-sg/poolformer](https://github.com/sail-sg/poolformer)
 - Paper: [MetaFormer is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418) (enlace al arXiv)

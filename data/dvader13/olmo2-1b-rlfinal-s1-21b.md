@@ -76,7 +76,7 @@ La diferencia clave es que este checkpoint incluye el estado completo del optimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-21b
+- Modelo en Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-21b
 - OLMo-2-0425-1B (modelo base): https://huggingface.co/allenai/OLMo-2-0425-1B
 - AMD-OLMo (serie de modelos 1B): https://huggingface.co/amd/AMD-OLMo
 - Página oficial de OLMo: https://allenai.org/olmo

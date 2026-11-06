@@ -71,6 +71,6 @@ No disponible. Crowd-v1 no es un modelo preentrenado y no tiene competidores dir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vxtzq/Crowd-v1
+- Hugging Face: https://huggingface.co/Vxtzq/Crowd-v1
 - Repositorio GitHub: https://github.com/Vxtzq/CrowdGPT
 - Sitio web CrowdGPT: https://crowdgpt.net

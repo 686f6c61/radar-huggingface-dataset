@@ -59,7 +59,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/9nbf7c4q6b-lgtm/Melody1437-26B-A4B-v2.0-oQ8e
+- Repositorio Hugging Face de esta versión: https://huggingface.co/9nbf7c4q6b-lgtm/Melody1437-26B-A4B-v2.0-oQ8e
 - Modelo original (sin cuantizar): https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0
 - Versión GGUF del mismo modelo: https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v2.0-GGUF
 - Información sobre el LoRA asociado: https://llms.info/models/readyart-melody1437-26b-a4b-lora-758

@@ -45,7 +45,7 @@ La cuantización IQ2_K es una técnica de compresión que reduce los pesos a apr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La pagina de HuggingFace del autor para la version BF16 menciona comparaciones de perplexity con otros cuantizadores, pero no se incluyen los numeros concretos. Tampoco hay datos de rendimiento (latencia, throughput) para esta cuantizacion especifica.
+No se han publicado resultados de benchmarks en la informacion disponible. La pagina de Hugging Face del autor para la version BF16 menciona comparaciones de perplexity con otros cuantizadores, pero no se incluyen los numeros concretos. Tampoco hay datos de rendimiento (latencia, throughput) para esta cuantizacion especifica.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se dispone de comparaciones con otros modelos de tamano similar (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_K-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_K-SPECIAL_SPLIT
 - Version BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de explainx.ai sobre Qwen3.8-27B: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

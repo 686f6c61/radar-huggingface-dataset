@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de modelos comparables con parám
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/WRF-ML
+- Hugging Face: https://huggingface.co/OneScience-Group/WRF-ML
 - Artículo (WRF–ML v1.0): https://doi.org/10.5194/gmd-16-199-2023
 - Código y datos originales (Zenodo): https://doi.org/10.5281/zenodo.7407487
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience

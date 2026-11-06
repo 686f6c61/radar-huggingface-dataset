@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynplannerChemformer es un checkpoint publicado en HuggingFace por el usuario Manajit con fecha de creacion del 2 de octubre de 2026. Se trata de un repositorio de 0,5 GB con licencia MIT y sin model card sustantiva: la unica informacion declarada por el autor es la propia licencia, sin descripcion del modelo, datos de entrenamiento, arquitectura ni resultados. El repositorio no declara pipeline de HuggingFace, no especifica idiomas soportados y cuenta con 0 descargas y 1 like en el momento de la consulta.
+SynplannerChemformer es un checkpoint publicado en Hugging Face por el usuario Manajit con fecha de creacion del 2 de octubre de 2026. Se trata de un repositorio de 0,5 GB con licencia MIT y sin model card sustantiva: la unica informacion declarada por el autor es la propia licencia, sin descripcion del modelo, datos de entrenamiento, arquitectura ni resultados. El repositorio no declara pipeline de Hugging Face, no especifica idiomas soportados y cuenta con 0 descargas y 1 like en el momento de la consulta.
 
 El nombre del checkpoint sugiere una vinculacion con dos lineas de trabajo consolidadas: SynPlanner, una herramienta de planificacion sintetica asistida por ordenador desarrollada por el Laboratoire de Chemoinformatique, y Chemformer, el paradigma de transformers preentrenados aplicados a quimica computacional. Ninguna de estas dos relaciones esta confirmada por el autor, y la ficha que sigue se limita a separar los datos verificables del contexto del ecosistema en el que probablemente se inscribe.
 
@@ -20,7 +20,7 @@ El interes de este tipo de modelos reside en el problema que aborda el area: la 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamanio del repositorio | 0,5 GB |
 | Descargas | 0 |
 | Fecha de creacion | 2026-10-02 |
@@ -76,7 +76,7 @@ La comparativa es limitada porque las especificaciones de SynplannerChemformer n
 
 | Modelo | Dominio | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Manajit/SynplannerChemformer | Quimica / planificacion sintetica (presunto) | no disponible | no disponible | no disponible | MIT | HuggingFace, 0,5 GB, sin documentacion |
+| Manajit/SynplannerChemformer | Quimica / planificacion sintetica (presunto) | no disponible | no disponible | no disponible | MIT | Hugging Face, 0,5 GB, sin documentacion |
 | SynFormer | Generacion en espacio quimico sintetizable | Transformer con modulo de difusion | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | GitHub wenhao-gao/synformer y paper en PNAS |
 | SynPlanner | Planificacion retrosintetica asistida por ordenador | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | GitHub Laboratoire-de-Chemoinformatique/SynPlanner |
 | Chemformer | Quimica computacional (referencia general del ambito) | Transformer preentrenado | no disponible en la busqueda | no disponible en la busqueda | no disponible en la busqueda | Publicacion de AstraZeneca, no incluida en la busqueda |
@@ -94,7 +94,7 @@ La comparativa es limitada porque las especificaciones de SynplannerChemformer n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manajit/SynplannerChemformer
+- Hugging Face: https://huggingface.co/Manajit/SynplannerChemformer
 - SynFormer (GitHub): https://github.com/wenhao-gao/synformer
 - SynFormer (paper PNAS): https://www.pnas.org/doi/10.1073/pnas.2415665122
 - SynFormer (PDF PNAS): https://www.pnas.org/doi/pdf/10.1073/pnas.2415665122

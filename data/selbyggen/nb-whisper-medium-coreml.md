@@ -94,7 +94,7 @@ La comparativa directa más relevante es con el modelo original de NbAiLab: idé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Selbyggen/nb-whisper-medium-coreml
+- Modelo en Hugging Face: https://huggingface.co/Selbyggen/nb-whisper-medium-coreml
 - Modelo base original: https://huggingface.co/NbAiLab/nb-whisper-medium
 - Organización NbAiLab: https://huggingface.co/NbAiLab
 - WhisperKit (repositorio): https://github.com/argmaxinc/WhisperKit

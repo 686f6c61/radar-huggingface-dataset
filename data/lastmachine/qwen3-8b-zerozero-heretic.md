@@ -85,12 +85,12 @@ Frente a Qwen3-8B, la diferencia principal es la eliminacion de rechazos y la re
 - Escasa capacidad de contraargumentacion: el autor cita que califico de "no del todo irrazonable" invertir los ahorros en loteria; no debe usarse para decisiones financieras, medicas o legales.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta verificado.
 - Muestra de evaluacion pequena (24 preguntas, 100 prompts), por lo que las cifras de la model card deben tomarse como indicativas.
-- Repositorio con acceso restringido (gated): requiere solicitud y aceptacion de terminos en HuggingFace.
+- Repositorio con acceso restringido (gated): requiere solicitud y aceptacion de terminos en Hugging Face.
 - La herramienta Heretic es AGPL-3.0; los pesos resultantes se distribuyen bajo Apache 2.0, pero conviene revisar las implicaciones si se modifica o redistribuye el pipeline.
 - Divergencia KL alta respecto al base (2,69 en prompts inofensivos), lo que sugiere posibles degradaciones no medidas en otras tareas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
+- Modelo en Hugging Face: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
 - Variante MLX 4-bit: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
 - Variante GGUF Q4_K_M: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-GGUF
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

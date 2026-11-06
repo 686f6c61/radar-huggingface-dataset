@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42` es un checkpoint publicado en HuggingFace por el usuario maxbhartman. El propio identificador del repositorio describe un experimento, no un modelo de propósito general: "anchor-removal" apunta a una intervencion de ablacion o eliminacion de "anclas" (direcciones o componentes internos del modelo), "attention" al criterio usado para seleccionarlas, "k30" al numero de elementos intervenidos, "mmlu" al conjunto de evaluacion empleado, "tau0.6" a un umbral o temperatura de 0.6 y "seed42" a la semilla de aleatoriedad del experimento. Se trata, por tanto, de un artefacto de investigacion reproducible, no de un modelo afinado para uso en produccion.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42` es un checkpoint publicado en Hugging Face por el usuario maxbhartman. El propio identificador del repositorio describe un experimento, no un modelo de propósito general: "anchor-removal" apunta a una intervencion de ablacion o eliminacion de "anclas" (direcciones o componentes internos del modelo), "attention" al criterio usado para seleccionarlas, "k30" al numero de elementos intervenidos, "mmlu" al conjunto de evaluacion empleado, "tau0.6" a un umbral o temperatura de 0.6 y "seed42" a la semilla de aleatoriedad del experimento. Se trata, por tanto, de un artefacto de investigacion reproducible, no de un modelo afinado para uso en produccion.
 
 La unica informacion verificable disponible es la metadata del repositorio: esta etiquetado con `pytorch`, `llama` y `region:us`, no declara pipeline, licencia ni idiomas, cuenta con 13 descargas y 0 likes, y ocupa 6,4 GB. El tag `llama` sugiere que deriva de la familia Llama, y el tamano del repositorio es coherente con pesos en precision fp16 de un modelo de aproximadamente 3.000 millones de parametros, si bien esto es una estimacion a partir del tamano y no un dato confirmado por el autor.
 
@@ -88,6 +88,6 @@ No se conocen modelos comparables directos, ya que los checkpoints de *anchor re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed42
 - Paper, blog, repositorio o demo del autor: no disponibles en la informacion proporcionada.
 - Los resultados de la busqueda web no contienen informacion relacionada con el modelo (corresponden a paginas de un banco hungaro sin vinculacion alguna con este repositorio).

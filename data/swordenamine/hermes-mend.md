@@ -107,7 +107,7 @@ No hay modelos comparables porque el artefacto no es un modelo. La comparación 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/hermes-mend
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/hermes-mend
 - Modelo por defecto referenciado en la model card: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B (referencia citada por el autor; no verificada en esta ficha)
 - Proveedor por defecto: https://openrouter.ai/api/v1 (endpoint base configurable mediante `HERMES_BASE_URL`)
 - Papers, blogs, repositorios adicionales o demos: no disponible en la información proporcionada.

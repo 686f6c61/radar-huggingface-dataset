@@ -103,6 +103,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n64
+- Modelo en Hugging Face: https://huggingface.co/Calm153/vitrion-qwen3-1.7b-qlora-n64
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

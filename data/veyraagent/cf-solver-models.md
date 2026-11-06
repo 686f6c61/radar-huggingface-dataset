@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cf-solver-models es el repositorio de pesos en HuggingFace que da soporte al proyecto cf-solver del usuario VeyraAgent. No se trata de un modelo de lenguaje, sino de una coleccion de ocho modelos en formato ONNX, cada uno especializado en una subtarea distinta dentro de la resolucion automatica de CAPTCHA: reconocimiento de imagenes, deteccion de objetos, clasificacion de baldosas, rotacion y OCR con CTC. Los ficheros se mantienen fuera del repositorio de GitHub para aligerarlo y se descargan desde aqui mediante el script fetch_models.sh.
+cf-solver-models es el repositorio de pesos en Hugging Face que da soporte al proyecto cf-solver del usuario VeyraAgent. No se trata de un modelo de lenguaje, sino de una coleccion de ocho modelos en formato ONNX, cada uno especializado en una subtarea distinta dentro de la resolucion automatica de CAPTCHA: reconocimiento de imagenes, deteccion de objetos, clasificacion de baldosas, rotacion y OCR con CTC. Los ficheros se mantienen fuera del repositorio de GitHub para aligerarlo y se descargan desde aqui mediante el script fetch_models.sh.
 
 El conjunto ocupa aproximadamente 0,1 GB e incluye pesos para desafios de Aliyun, GeeTest v4, reCAPTCHA, VK y un solver de rotacion, ademas de dos modelos de proposito general (una red siamesa de 56 MB y un detector YOLOv11n de 10 MB). La licencia es MIT, la misma que el proyecto principal, y el repositorio se publico en septiembre de 2026 sin descargas ni interacciones registradas hasta la fecha.
 
@@ -56,7 +56,7 @@ No hay informacion sobre si los modelos se entrenaron desde cero, si se partio d
 - Resolucion de desafios de rotacion (solvers/rotate/rotate_model.onnx).
 - OCR con decodificacion CTC para CAPTCHA de VK (solvers/vk/captcha_model.onnx y solvers/vk/ctc_model.onnx).
 - Distribucion de pesos como arbol de ficheros con rutas relativas al repositorio cf-solver, de modo que al copiarlos se restauran todos los solvers.
-- Descarga automatizada mediante el script scripts/fetch_models.sh, con soporte opcional de token de HuggingFace (HF_TOKEN) si el repositorio fuese privado.
+- Descarga automatizada mediante el script scripts/fetch_models.sh, con soporte opcional de token de Hugging Face (HF_TOKEN) si el repositorio fuese privado.
 - No hay evidencia de soporte de tool calling, agentes, razonamiento multi-paso, vision general, audio ni modo de pensamiento: no es un modelo de lenguaje y la model card no declara ninguna de esas capacidades.
 
 ## Casos de uso
@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye modelos alternativos con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VeyraAgent/cf-solver-models
+- Repositorio en Hugging Face: https://huggingface.co/VeyraAgent/cf-solver-models
 - Repositorio del proyecto principal en GitHub: https://github.com/VeyraAgent/cf-solver
 - Descarga directa de ejemplo (clasificador de reCAPTCHA): https://huggingface.co/VeyraAgent/cf-solver-models/resolve/main/solvers/recaptcha/models/recaptcha_cls_s.onnx
 - Script de descarga masiva: scripts/fetch_models.sh dentro del repositorio cf-solver (ruta relativa, sin URL publica indicada en la model card)

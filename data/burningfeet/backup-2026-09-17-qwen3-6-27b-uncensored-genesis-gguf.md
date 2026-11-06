@@ -89,6 +89,6 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup-2026-09-17-Qwen3.6-27B-Uncensored-Genesis-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup-2026-09-17-Qwen3.6-27B-Uncensored-Genesis-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive
 - Papers, blogs, repos o demos adicionales: no disponible (la busqueda web no devolvio enlaces relevantes sobre este modelo).

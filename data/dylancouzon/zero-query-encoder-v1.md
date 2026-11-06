@@ -75,8 +75,8 @@ La información proporcionada no incluye comparativas con otros modelos de la mi
 
 | Modelo | Parámetros | Dimensiones | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zero-query-encoder-v1 | 31,25 M (tabla int8) | 1024 | no disponible | MIT | HuggingFace |
-| NovaSearch/stella_en_400M_v5 | 400 M (por nombre del modelo) | 1024 | no disponible | no especificada | HuggingFace |
+| zero-query-encoder-v1 | 31,25 M (tabla int8) | 1024 | no disponible | MIT | Hugging Face |
+| NovaSearch/stella_en_400M_v5 | 400 M (por nombre del modelo) | 1024 | no disponible | no especificada | Hugging Face |
 
 Para otras alternativas (p. ej., MiniLM o BGE), no se dispone de datos en la información proporcionada.
 
@@ -94,7 +94,7 @@ Para otras alternativas (p. ej., MiniLM o BGE), no se dispone de datos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DylanCouzon/zero-query-encoder-v1
+- Hugging Face: https://huggingface.co/DylanCouzon/zero-query-encoder-v1
 - Modelo base: https://huggingface.co/NovaSearch/stella_en_400M_v5
 - GitHub del autor: https://github.com/Dylancouzon
 - No se proporcionan papers, blogs ni demos en la información disponible.

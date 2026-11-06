@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CollabLLM-Qwen3-4B-SFT-Math es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen/Qwen3-4B, publicado por el usuario ZachW en HuggingFace. No se trata de un checkpoint oficial del equipo de CollabLLM, sino de un artefacto de reproduccion independiente que aplica el metodo y los datos del paper CollabLLM (arXiv:2502.00640) al modelo Qwen3-4B de Alibaba. El adaptador esta entrenado especificamente sobre el conjunto de datos interactive-math-hard, orientado a conversaciones interactivas de resolucion de problemas matematicos.
+CollabLLM-Qwen3-4B-SFT-Math es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen/Qwen3-4B, publicado por el usuario ZachW en Hugging Face. No se trata de un checkpoint oficial del equipo de CollabLLM, sino de un artefacto de reproduccion independiente que aplica el metodo y los datos del paper CollabLLM (arXiv:2502.00640) al modelo Qwen3-4B de Alibaba. El adaptador esta entrenado especificamente sobre el conjunto de datos interactive-math-hard, orientado a conversaciones interactivas de resolucion de problemas matematicos.
 
 El modelo resuelve un problema concreto: adaptar un LLM de 4.000 millones de parametros para sostener dialogos multi-turno en los que el asistente colabora con el usuario en tareas de matematicas dificiles, en lugar de limitarse a una respuesta unica. La relevancia actual radica en que demuestra que es posible reproducir el paradigma de entrenamiento colaborativo de CollabLLM con recursos modestos (un solo adaptador LoRA de rango 32 sobre un modelo de 4B), lo que facilita la experimentacion academica y el desarrollo de asistentes interactivos ligeros.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollabLLM-Qwen3-4B-SFT-Math (este) | 4B (base) + LoRA r32 | No disponible (entrenado a 1536 tokens) | SFT colaborativo en matematicas, solo ingles | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-4B (base) | 4B | No disponible en la informacion proporcionada | LLM generalista multilingue con modo thinking | Apache 2.0 | HuggingFace |
+| CollabLLM-Qwen3-4B-SFT-Math (este) | 4B (base) + LoRA r32 | No disponible (entrenado a 1536 tokens) | SFT colaborativo en matematicas, solo ingles | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-4B (base) | 4B | No disponible en la informacion proporcionada | LLM generalista multilingue con modo thinking | Apache 2.0 | Hugging Face |
 | Checkpoint oficial de CollabLLM | No disponible en la informacion proporcionada | No disponible | SFT + optimizacion colaborativa segun el paper | No disponible | Repositorio original de CollabLLM |
 
 La comparacion con el checkpoint oficial de CollabLLM no puede completarse porque la informacion proporcionada no detalla sus parametros, contexto ni licencia. El modelo base Qwen3-4B es la referencia natural, ya que este adaptador anade comportamiento colaborativo en matematicas a costa de restringir el idioma al ingles y desactivar el modo thinking.
@@ -85,7 +85,7 @@ La comparacion con el checkpoint oficial de CollabLLM no puede completarse porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Math
+- Modelo en Hugging Face: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Math
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper CollabLLM: https://arxiv.org/abs/2502.00640
 - Codigo original de CollabLLM: https://github.com/Wuyxin/collabllm/tree/d573e4949abdc301cb2b630525c593cc432e94b8

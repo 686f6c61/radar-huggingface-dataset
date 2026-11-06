@@ -100,7 +100,7 @@ No se dispone de informacion suficiente para comparar el rendimiento de este ada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5EhyCWPu
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5EhyCWPu
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Repositorio de PEFT: https://github.com/huggingface/peft

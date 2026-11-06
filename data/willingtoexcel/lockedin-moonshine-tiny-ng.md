@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lockedin-moonshine-tiny-ng` es una conversión al formato ONNX del modelo de reconocimiento automático de voz (ASR) Moonshine Tiny, publicada por el usuario willingtoexcel en HuggingFace. Moonshine es una familia de modelos de transcripción de audio desarrollada por Useful Sensors, diseñada específicamente para funcionar sobre audio de duración variable con una latencia proporcional a la longitud real de la entrada, a diferencia de los modelos tipo Whisper, que procesan siempre una ventana fija de 30 segundos. La variante "tiny" es la de menor tamaño de la familia.
+`lockedin-moonshine-tiny-ng` es una conversión al formato ONNX del modelo de reconocimiento automático de voz (ASR) Moonshine Tiny, publicada por el usuario willingtoexcel en Hugging Face. Moonshine es una familia de modelos de transcripción de audio desarrollada por Useful Sensors, diseñada específicamente para funcionar sobre audio de duración variable con una latencia proporcional a la longitud real de la entrada, a diferencia de los modelos tipo Whisper, que procesan siempre una ventana fija de 30 segundos. La variante "tiny" es la de menor tamaño de la familia.
 
 El repositorio tiene un tamaño de 0,2 GB y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas. La model card publicada por el autor es prácticamente vacía: solo contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, idiomas soportados ni métricas de evaluación. El sufijo "ng" en el nombre no está documentado en la información disponible.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| lockedin-moonshine-tiny-ng | no disponible | no disponible | MIT | ONNX | HuggingFace |
-| Moonshine Tiny (original) | no disponible en esta ficha | audio variable | MIT (según proyecto original) | PyTorch | HuggingFace / Useful Sensors |
-| Whisper Tiny (OpenAI) | ~39 M | ventana fija de 30 s | MIT | PyTorch, ONNX, GGML | HuggingFace / OpenAI |
-| Wav2Vec2 base (Meta) | ~95 M | audio variable | MIT / Apache 2.0 según variante | PyTorch | HuggingFace |
+| lockedin-moonshine-tiny-ng | no disponible | no disponible | MIT | ONNX | Hugging Face |
+| Moonshine Tiny (original) | no disponible en esta ficha | audio variable | MIT (según proyecto original) | PyTorch | Hugging Face / Useful Sensors |
+| Whisper Tiny (OpenAI) | ~39 M | ventana fija de 30 s | MIT | PyTorch, ONNX, GGML | Hugging Face / OpenAI |
+| Wav2Vec2 base (Meta) | ~95 M | audio variable | MIT / Apache 2.0 según variante | PyTorch | Hugging Face |
 
 Los datos de Whisper Tiny y Wav2Vec2 corresponden a conocimiento público general y no se han verificado contra la documentación de este repositorio. La comparación con Moonshine Tiny original es la más pertinente, ya que esta publicación es una conversión del mismo.
 
@@ -79,7 +79,7 @@ Los datos de Whisper Tiny y Wav2Vec2 corresponden a conocimiento público genera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/willingtoexcel/lockedin-moonshine-tiny-ng
+- Repositorio Hugging Face: https://huggingface.co/willingtoexcel/lockedin-moonshine-tiny-ng
 - Proyecto Moonshine (modelo base, Useful Sensors): no disponible en la información proporcionada.
 - Paper de Moonshine: no disponible en la información proporcionada.
 - Repositorio de código de Moonshine: no disponible en la información proporcionada.

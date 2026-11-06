@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alphabot2/17_Aug_Pick_ACT_Niranjan | ACT (Transformer) | 51,6M | No disponible (visual) | Apache-2.0 | Hub de HuggingFace |
-| Diffusion Policy (LeRobot) | Denoising Diffusion | Variable (típicamente >100M) | No disponible (visual) | Apache-2.0 | Hub de HuggingFace |
+| alphabot2/17_Aug_Pick_ACT_Niranjan | ACT (Transformer) | 51,6M | No disponible (visual) | Apache-2.0 | Hub de Hugging Face |
+| Diffusion Policy (LeRobot) | Denoising Diffusion | Variable (típicamente >100M) | No disponible (visual) | Apache-2.0 | Hub de Hugging Face |
 | Modelos VLA (Vision-Language-Action) | Transformer multimodal | >7B | Largo (texto + imagen) | Varía (suele ser propietaria) | Varía |
 
 Nota: No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se basa en características arquitectónicas generales.
@@ -76,7 +76,7 @@ Nota: No se dispone de datos de rendimiento comparativo entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alphabot2/17_Aug_Pick_ACT_Niranjan
+- Modelo en Hugging Face: https://huggingface.co/alphabot2/17_Aug_Pick_ACT_Niranjan
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

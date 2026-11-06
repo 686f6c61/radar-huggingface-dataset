@@ -20,7 +20,7 @@ La relevancia es metodológica más que de producto: muestra cómo combinar una 
 | Idiomas soportados | No aplica (no es un modelo de lenguaje) |
 | Licencia | CC BY 4.0 |
 | Formato de pesos | No hay pesos publicados: el repositorio contiene código Python (`model.py`, `example.py`) para PyTorch y la receta de entrenamiento; los pesos se generan al ajustar el modelo a un panel concreto |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tareas declaradas | Series temporales, datos de panel, datos faltantes, suavizado, imputación, calidad del aire |
 | Datos del artículo | Beijing Multi-Site Air Quality (Song Chen, 2017, UCI), 12 estaciones, cuatro años, PM2.5 y PM10 |
 | Descargas / likes | 0 / 0 |
@@ -72,14 +72,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: ninguna en particular; el autor documenta ajustes de unos segundos en CPU para el panel de referencia. Cualquier GPU consumer permite ejecutarlo, pero no aporta ventaja relevante.
 - Cabe en GPU consumer: sí, con margen amplio; también en CPU de un portátil.
 - Memoria: el entrenamiento es a lote completo y la penalización de curvatura cubre todas las localizaciones × días, por lo que el consumo crece con el tamaño del panel; en paneles grandes la memoria, no la capacidad de cómputo, es el límite.
-- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI (no hay pesos ni tokenizador). Se usa como módulo Python dentro de un script o servicio propio; existe una demo pública en HuggingFace Spaces.
+- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI (no hay pesos ni tokenizador). Se usa como módulo Python dentro de un script o servicio propio; existe una demo pública en Hugging Face Spaces.
 - Latencia y throughput: no disponibles de forma numérica; el coste dominante es el ajuste completo (100 pasos de Adam a lote completo), no la predicción.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `prteek/sparse-panel-demo` | MLP con embeddings de localización y base gaussiana temporal | No disponible | No aplica (rango de fechas del panel) | CC BY 4.0 | Código y receta en HuggingFace; sin pesos entrenados |
+| `prteek/sparse-panel-demo` | MLP con embeddings de localización y base gaussiana temporal | No disponible | No aplica (rango de fechas del panel) | CC BY 4.0 | Código y receta en Hugging Face; sin pesos entrenados |
 | GAM de efectos mixtos con suavidad fijada a mano (baseline del artículo) | Modelo aditivo generalizado | No disponible | No aplica | No disponible (depende de la implementación) | Implementaciones estadísticas estándar; el autor lo sitúa igual o mejor que esta red |
 | Media móvil o interpolación sobre la serie | Método no paramétrico | No aplica | No aplica | No aplica | Universal, sin dependencias |
 | Modelos neuronales de imputación de paneles de otras familias | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas directamente comparables en la información disponible |
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prteek/sparse-panel-demo
+- Repositorio en Hugging Face: https://huggingface.co/prteek/sparse-panel-demo
 - Conjunto de datos de la demo: https://huggingface.co/datasets/prteek/sparse-panel-demo
 - Space de demostración: https://huggingface.co/spaces/prteek/sparse-panel-demo
 - Artículo citado por el autor (alphaXiv): https://www.alphaxiv.org/abs/2610.pm25-pm10-joint-smoothing

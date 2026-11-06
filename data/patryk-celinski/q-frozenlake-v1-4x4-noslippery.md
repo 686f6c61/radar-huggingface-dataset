@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (is_slippery=False). Lo publica el usuario patryk-celinski en HuggingFace Hub bajo el pipeline reinforcement-learning, y su único artefacto de pesos es un fichero serializado con pickle. No se trata de un modelo de lenguaje: no tiene parámetros en el sentido habitual de los transformers, no procesa texto ni dispone de ventana de contexto.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 en su variante 4x4 sin superficie resbaladiza (is_slippery=False). Lo publica el usuario patryk-celinski en Hugging Face Hub bajo el pipeline reinforcement-learning, y su único artefacto de pesos es un fichero serializado con pickle. No se trata de un modelo de lenguaje: no tiene parámetros en el sentido habitual de los transformers, no procesa texto ni dispone de ventana de contexto.
 
 El entorno objetivo es un mundo de rejilla de 16 casillas en el que el agente debe desplazarse desde la posición inicial hasta la meta evitando los agujeros. Al desactivar la estocasticidad del hielo, cada acción produce siempre el mismo desplazamiento, lo que convierte el problema en un MDP determinista y finito donde Q-Learning tabular converge a la política óptima con relativa facilidad. Esa simplicidad es precisamente su valor: sirve como referencia mínima reproducible.
 
@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente didáctica y de verificación. Con 0 descargas
 | Formato de pesos | q-learning.pkl (pickle de Python) |
 | Entorno de entrenamiento y evaluación | FrozenLake-v1 4x4, is_slippery=False |
 | Pipeline declarado | reinforcement-learning |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / me gusta | 0 / 0 |
 | Fecha de creación | 2026-09-26 |
 | Última actualización | 2026-09-26 |
@@ -39,7 +39,7 @@ El artefacto publicado es un pickle que la propia model card indica cargar media
 - Selección de acción en tiempo constante a partir de la tabla Q almacenada (consulta directa estado → acción).
 - Política discreta y totalmente reproducible dado el mismo estado de entrada y el mismo contenido del pickle.
 - Integración con el ecosistema Gymnasium mediante el campo env_id almacenado en el propio modelo.
-- Carga directa desde HuggingFace Hub con load_from_hub, lo que facilita su uso en scripts y cuadernos.
+- Carga directa desde Hugging Face Hub con load_from_hub, lo que facilita su uso en scripts y cuadernos.
 - No dispone de generación de texto, razonamiento simbólico general, código, matemáticas, visión, audio ni capacidades multilingües.
 - No soporta tool calling, function calling ni razonamiento multi-paso fuera del bucle episódico del entorno.
 - No implementa modo de pensamiento ni ningún mecanismo de cadena de razonamiento; es un agente puramente reactivo sobre el estado actual.
@@ -49,7 +49,7 @@ El artefacto publicado es un pickle que la propia model card indica cargar media
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo completo y de tamaño mínimo para explicar Q-Learning tabular, la actualización por diferencias temporales y la diferencia entre entornos deterministas y estocásticos, cargándolo en un cuaderno y visualizando la tabla Q resultante.
 - Prueba de humo en pipelines de RL: al ser un agente que resuelve el entorno con recompensa 1.00, permite verificar que una instalación de Gymnasium, huggingface_hub y las dependencias de serialización funcionan antes de escalar a experimentos costosos.
 - Línea base para comparativas algorítmicas: cualquier implementación nueva (SARSA, Double Q-Learning, DQN, PPO) puede medirse contra esta referencia en el mismo entorno determinista para comprobar si aporta alguna ventaja o solo añade complejidad.
-- Validación de infraestructura de publicación de modelos: resulta útil para probar el formato de model-index, las etiquetas de HuggingFace y el flujo de subida y descarga de artefactos de RL antes de publicar agentes con pesos más pesados.
+- Validación de infraestructura de publicación de modelos: resulta útil para probar el formato de model-index, las etiquetas de Hugging Face y el flujo de subida y descarga de artefactos de RL antes de publicar agentes con pesos más pesados.
 - Experimentos de transferencia y currículum: partiendo de la política tabular aquí almacenada se puede estudiar si inicializar agentes en FrozenLake 8x8 o en la variante resbaladiza acelera la convergencia, o si por el contrario el sesgo hacia el entorno determinista perjudica el aprendizaje.
 - Pruebas de regresión en librerías de entornos: al fijar una política determinista conocida, se puede detectar si una actualización de la versión de Gymnasium altera la dinámica del entorno y rompe el comportamiento esperado del agente.
 - Demostración de seguridad en la carga de artefactos: dado que el formato es pickle, el repositorio sirve como caso práctico para discutir y ensayar políticas de sandboxing al deserializar pesos de terceros.
@@ -69,7 +69,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 - VRAM para inferencia: no aplica. El agente funciona íntegramente en CPU y no requiere acelerador gráfico.
 - GPU recomendadas: ninguna. El uso de A100, H100 o RTX 4090 no aporta ninguna ventaja medible para una consulta a una tabla Q.
 - Compatibilidad con GPU de consumo: irrelevante; el modelo cabe en cualquier equipo, incluidos sistemas sin GPU dedicada.
-- Memoria: el repositorio ocupa 0.0 GB según HuggingFace. El tamaño exacto del fichero q-learning.pkl no se especifica en la información disponible, pero al tratarse de un artefacto tabular de un entorno 4x4 es previsible que sea de pocos kilobytes.
+- Memoria: el repositorio ocupa 0.0 GB según Hugging Face. El tamaño exacto del fichero q-learning.pkl no se especifica en la información disponible, pero al tratarse de un artefacto tabular de un entorno 4x4 es previsible que sea de pocos kilobytes.
 - Opciones de despliegue: Python con gymnasium y huggingface_hub, cargando los pesos mediante load_from_hub. No es compatible con vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia de modelos de lenguaje, ya que no expone una interfaz de generación de texto.
 - Latencia: la selección de acción es una consulta a una tabla, del orden de microsegundos. El tiempo total por paso lo determina el bucle de simulación del entorno, no el modelo.
 - Throughput: no disponible. Al no haber bucle de inferencia batch, la métrica relevante sería episodios por segundo, que depende por completo de la implementación del entorno y no se documenta.
@@ -85,7 +85,7 @@ No se han proporcionado identificadores ni métricas de modelos comparables conc
 | Recompensa media publicada | 1.00 ± 0.00 (no verificada) | no disponible | no disponible |
 | Escalabilidad a espacios grandes | Baja: el tamaño de la tabla crece con el número de estados | Baja, por la misma razón | Alta |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | Repositorio público en HuggingFace Hub | no disponible | no disponible |
+| Disponibilidad | Repositorio público en Hugging Face Hub | no disponible | no disponible |
 
 En términos de categoría, lo único afirmable con la información disponible es que este modelo pertenece a la familia de agentes tabulares deterministas frente a alternativas con aproximación de función, más adecuadas cuando el espacio de estados deja de ser enumerable. Cualquier comparación numérica adicional requeriría datos que no se han facilitado.
 
@@ -104,5 +104,5 @@ En términos de categoría, lo único afirmable con la información disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patryk-celinski/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/patryk-celinski/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios de código ni demostraciones asociados a este modelo.

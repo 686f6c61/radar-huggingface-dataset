@@ -18,7 +18,7 @@ Conviene subrayar que se trata de una cuantización de terceros (Intel) sobre un
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | MXFP4 (W4A4, grupo 32, escalas E8M0) en expertos enrutados `gate_proj`/`up_proj`/`down_proj`; MXFP8 (W8A8, grupo 32) en proyecciones MTP, tabla PLE y GEMM de hyper-connection; BF16 en atención, QSA, experto compartido, router, embeddings, `lm_head`, visión y normas; KV cache sin cuantizar |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors con metadatos `compressed-tensors`; sidecar `hc_mxfp8_true_fp8_sidecar.safetensors` con códigos FP8 y escalas UE8M0 |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ Con el parche y el checkpoint de hyper-connection en FP8 real, los resultados se
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta build (intel-ai) | ~180 B | no disponible | safetensors, MXFP4/MXFP8/BF16 mixto | qwen-community-1.0 | HuggingFace, 0 descargas |
-| intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-MXFP8MTP-PLEMXFP8-CT-AutoRound | ~180 B | no disponible | safetensors, MXFP4/MXFP8/BF16 (HC en BF16) | qwen-community-1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180 B | no disponible | safetensors, BF16 | qwen-community-1.0 | HuggingFace |
+| Esta build (intel-ai) | ~180 B | no disponible | safetensors, MXFP4/MXFP8/BF16 mixto | qwen-community-1.0 | Hugging Face, 0 descargas |
+| intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-MXFP8MTP-PLEMXFP8-CT-AutoRound | ~180 B | no disponible | safetensors, MXFP4/MXFP8/BF16 (HC en BF16) | qwen-community-1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180 B | no disponible | safetensors, BF16 | qwen-community-1.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos alternativos de otros fabricantes con arquitectura y tamaño equiparables.
 
@@ -97,9 +97,9 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-MXFP8MTP-PLEMXFP8-MXFP8HC-CT-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-MXFP8MTP-PLEMXFP8-MXFP8HC-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante de referencia (HC en BF16): https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16Attn-MXFP8MTP-PLEMXFP8-CT-AutoRound
 - Intel auto-round: https://github.com/intel/auto-round
 - Paper de referencia citado en los tags (arXiv:2309.05516): https://arxiv.org/abs/2309.05516
-- Licencia: LICENSE dentro del repositorio de HuggingFace
+- Licencia: LICENSE dentro del repositorio de Hugging Face

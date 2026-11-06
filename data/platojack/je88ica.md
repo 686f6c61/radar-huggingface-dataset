@@ -2,7 +2,7 @@
 
 ## Resumen
 
-platojack/Je88ica es un repositorio de modelo publicado en HuggingFace por el usuario platojack. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a un campo `license: unknown` sin ninguna descripcion adicional. No se dispone de informacion sobre la arquitectura, el numero de parametros, el proceso de entrenamiento ni las capacidades del modelo.
+platojack/Je88ica es un repositorio de modelo publicado en Hugging Face por el usuario platojack. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a un campo `license: unknown` sin ninguna descripcion adicional. No se dispone de informacion sobre la arquitectura, el numero de parametros, el proceso de entrenamiento ni las capacidades del modelo.
 
 El repositorio ocupa 0,1 GB y las etiquetas declaradas son unicamente `license:unknown` y `region:us`. No se ha especificado pipeline de inferencia, idiomas soportados ni formato de pesos, por lo que no es posible determinar si se trata de un modelo entrenado, un checkpoint parcial, un adaptador o un artefacto auxiliar.
 
@@ -90,6 +90,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el dominio de aplic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/platojack/Je88ica
+- Hugging Face: https://huggingface.co/platojack/Je88ica
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

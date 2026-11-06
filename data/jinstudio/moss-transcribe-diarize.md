@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Transcribe-Diarize 0.9B es un modelo de comprensión de audio de extremo a extremo desarrollado por OpenMOSS, distribuido en HuggingFace bajo el identificador oficial `OpenMOSS-Team/MOSS-Transcribe-Diarize` (la ficha que aquí se documenta, `Jinstudio/MOSS-Transcribe-Diarize`, es un espejo del mismo). Resuelve un problema clásico de los pipelines de voz: la transcripción con atribución de hablante suele requerir dos sistemas encadenados (un ASR y un motor de diarización) más una fase de alineado temporal. Este modelo unifica ambas tareas en una sola pasada y emite un transcript compacto con marcas de tiempo y etiquetas anónimas de hablante del tipo `[S01]`, `[S02]`.
+MOSS-Transcribe-Diarize 0.9B es un modelo de comprensión de audio de extremo a extremo desarrollado por OpenMOSS, distribuido en Hugging Face bajo el identificador oficial `OpenMOSS-Team/MOSS-Transcribe-Diarize` (la ficha que aquí se documenta, `Jinstudio/MOSS-Transcribe-Diarize`, es un espejo del mismo). Resuelve un problema clásico de los pipelines de voz: la transcripción con atribución de hablante suele requerir dos sistemas encadenados (un ASR y un motor de diarización) más una fase de alineado temporal. Este modelo unifica ambas tareas en una sola pasada y emite un transcript compacto con marcas de tiempo y etiquetas anónimas de hablante del tipo `[S01]`, `[S02]`.
 
 El modelo tiene 908.513.280 parámetros (0,9B) y se distribuye en safetensors con código remoto propio para `transformers`, por lo que requiere `trust_remote_code=True`. Está orientado a audio multicanal y de habla múltiple de formato largo: la model card declara inferencia en una sola pasada sobre grabaciones de hasta 90 minutos, soporte de más de 50 idiomas según el autor y prompting con hotwords para vocabulario de dominio.
 
@@ -17,7 +17,7 @@ Su relevancia reciente es doble: por un lado ganó el primer puesto en el 2nd ML
 | Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible como numero de tokens; la model card declara inferencia en una sola pasada sobre audio de hasta 90 minutos |
 | Tipos de cuantizacion | no disponible; solo se publican pesos en safetensors (sin GGUF, AWQ ni GPTQ documentados) |
-| Idiomas soportados | Metadatos de HuggingFace: en, zh. La model card declara transcripcion y diarizacion en mas de 50 idiomas; el MLC-SLM Challenge cubre 14 idiomas |
+| Idiomas soportados | Metadatos de Hugging Face: en, zh. La model card declara transcripcion y diarizacion en mas de 50 idiomas; el MLC-SLM Challenge cubre 14 idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (repo de 1,8 GB) |
 
@@ -80,7 +80,7 @@ Los unicos sistemas con los que se compara objetivamente en la informacion dispo
 
 | Modelo | Parametros | Contexto / audio maximo | CER en Podcast | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS Transcribe Diarize 0.9B | 908.513.280 | 90 minutos en una pasada (por model card) | no disponible en el extracto | Apache 2.0 | Pesos abiertos en HuggingFace |
+| MOSS Transcribe Diarize 0.9B | 908.513.280 | 90 minutos en una pasada (por model card) | no disponible en el extracto | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Doubao | no disponible | no disponible | 7,93 | propietaria | API comercial |
 | ElevenLabs | no disponible | no disponible | 8,50 | propietaria | API comercial |
 | Gemini 2.5 Pro | no disponible | no disponible | 7,38 | propietaria | API comercial |
@@ -104,8 +104,8 @@ La diferencia relevante frente a todos ellos no es solo de error: es de modelo a
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo documentado): https://huggingface.co/Jinstudio/MOSS-Transcribe-Diarize
-- Modelo en HuggingFace (oficial): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+- Modelo en Hugging Face (espejo documentado): https://huggingface.co/Jinstudio/MOSS-Transcribe-Diarize
+- Modelo en Hugging Face (oficial): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Transcribe-Diarize
 - Paper en arXiv: https://arxiv.org/abs/2601.01554
 - 2nd MLC-SLM Challenge (INTERSPEECH 2026): https://www.nexdata.ai/competition/mlc-slm

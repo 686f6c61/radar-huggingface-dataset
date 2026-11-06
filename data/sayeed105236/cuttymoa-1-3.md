@@ -15,7 +15,7 @@ CuttyMOA-1.3 es un modelo de lenguaje denso de 27.000 millones de parámetros, d
 | Tipos de cuantización | Q4_K_M (mencionado para inferencia CPU con llama.cpp); no se especifican otros |
 | Idiomas soportados | Inglés, bengalí y multilingüe (25+ idiomas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (según tags de HuggingFace) |
+| Formato de pesos | Safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ CuttyMOA-1.3 es un transformer denso decoder-only, construido sobre el modelo ba
 - Análisis de seguridad y revisión de código.
 - Streaming de tokens mediante SSE (Server-Sent Events).
 - Integración con ScrapePower para automatización web con Selenium Chrome, 8 extractores y extracción mediante IA.
-- Generación de imágenes mediante 3 modelos alojados en HuggingFace (a través de la plataforma CUTEADMOA).
+- Generación de imágenes mediante 3 modelos alojados en Hugging Face (a través de la plataforma CUTEADMOA).
 - Reconocimiento de voz (speech-to-text) y síntesis de voz (text-to-speech) con 3 modelos de distintos proveedores.
 - Extracción de metadatos de vídeo y diapositivas.
 - Enrutamiento inteligente y agregación multi-modelo.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CuttyMOA-1.3 | Dense decoder-only | 27B | 262.144 tokens | Apache-2.0 | HuggingFace |
+| CuttyMOA-1.3 | Dense decoder-only | 27B | 262.144 tokens | Apache-2.0 | Hugging Face |
 | CuttyMOA-1.2 | MoE | 35B totales (3B activos) | No disponible | No disponible | No disponible |
-| Qwen/Qwen3.8-27B (base) | Dense decoder-only | 27B | No disponible | Apache-2.0 (según tags) | HuggingFace |
+| Qwen/Qwen3.8-27B (base) | Dense decoder-only | 27B | No disponible | Apache-2.0 (según tags) | Hugging Face |
 
 Los datos de rendimiento de estos modelos no están disponibles en la información proporcionada, por lo que no es posible realizar una comparación basada en benchmarks.
 
@@ -82,6 +82,6 @@ Los datos de rendimiento de estos modelos no están disponibles en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sayeed105236/CuttyMOA-1.3
+- Hugging Face: https://huggingface.co/sayeed105236/CuttyMOA-1.3
 - Sitio web de CUTEADMOA: https://cuteadmoa.site
 - LinkedIn del autor: https://www.linkedin.com/in/abu-sayeed-6296a1b9

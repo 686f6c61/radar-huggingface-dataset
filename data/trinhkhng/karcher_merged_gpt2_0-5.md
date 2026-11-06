@@ -4,7 +4,7 @@
 
 `trinhkhng/karcher_Merged_gpt2_0.5` es un modelo de lenguaje de 124,4 millones de parámetros creado mediante la fusión de dos modelos preentrenados: GPT-2 y un modelo denominado `debias_gpt2`. La fusión se ha realizado con la herramienta mergekit, empleando el método estadístico de la media de Karcher, que busca promediar los pesos de los modelos en un espacio de matrices de forma geométricamente coherente. El resultado es un modelo denso basado en la arquitectura GPT-2, con un tamaño de contexto no especificado en la documentación, pero que hereda las limitaciones del GPT-2 original (1024 tokens). El proyecto es relevante como caso de estudio práctico de técnicas de *model merging*, una tendencia emergente para combinar capacidades de distintos modelos sin entrenamiento adicional, aunque este caso concreto no aporta información sobre su rendimiento o aplicaciones concretas.
 
-El modelo está publicado en HuggingFace bajo la etiqueta `transformers` y `safetensors`, con un tamaño de repositorio de 2 GB. No se proporciona información sobre licencia, idiomas soportados ni cuantizaciones disponibles. Fue subido en agosto de 2026 y ha registrado 645 descargas, lo que sugiere cierto interés por parte de la comunidad, aunque su utilidad práctica es limitada fuera del ámbito de la investigación en técnicas de fusión.
+El modelo está publicado en Hugging Face bajo la etiqueta `transformers` y `safetensors`, con un tamaño de repositorio de 2 GB. No se proporciona información sobre licencia, idiomas soportados ni cuantizaciones disponibles. Fue subido en agosto de 2026 y ha registrado 645 descargas, lo que sugiere cierto interés por parte de la comunidad, aunque su utilidad práctica es limitada fuera del ámbito de la investigación en técnicas de fusión.
 
 ## Especificaciones tecnicas
 
@@ -76,5 +76,5 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a la
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/karcher_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.5)
+- [Hugging Face - trinhkhng/karcher_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/karcher_Merged_gpt2_0.5)
 - [FriendliAI - API & Inference Endpoint](https://friendli.ai/models/trinhkhng/karcher_Merged_gpt2_0.5)

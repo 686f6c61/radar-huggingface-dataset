@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PHIMemo/llama31-8b-instruct-sft-balanced-3k-date-twin es un modelo de lenguaje desarrollado por el usuario de HuggingFace PHIMemo, que consiste en un fine-tuning de tipo SFT (supervised fine-tuning) sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. El repositorio se presenta como parte de un proyecto de investigación sobre memorización en modelos de lenguaje, con etiquetas que indican su naturaleza experimental: "memorization" y "synthetic-clinical". El nombre sugiere que se entrenó con un conjunto de datos sintéticos de ámbito clínico, equilibrado a 3.000 muestras y con una variante denominada "date" (posiblemente relacionada con fechas o datos temporales).
+PHIMemo/llama31-8b-instruct-sft-balanced-3k-date-twin es un modelo de lenguaje desarrollado por el usuario de Hugging Face PHIMemo, que consiste en un fine-tuning de tipo SFT (supervised fine-tuning) sobre el modelo base meta-llama/Llama-3.1-8B-Instruct. El repositorio se presenta como parte de un proyecto de investigación sobre memorización en modelos de lenguaje, con etiquetas que indican su naturaleza experimental: "memorization" y "synthetic-clinical". El nombre sugiere que se entrenó con un conjunto de datos sintéticos de ámbito clínico, equilibrado a 3.000 muestras y con una variante denominada "date" (posiblemente relacionada con fechas o datos temporales).
 
 La ficha pública del modelo es extremadamente escueta: no se proporciona licencia, idiomas soportados, pipeline, ni documentación de uso. El único dato técnico relevante es que se puede cargar un checkpoint específico mediante el parámetro `revision="step-XXXXXX"` (por ejemplo, `step-000800`). El tamaño del repositorio es de 32,1 GB, lo que sugiere que los pesos se almacenan en formato de precisión completa (fp32) o media (fp16) sin cuantizar. Dado que el modelo base es Llama-3.1-8B-Instruct, hereda su arquitectura transformer y su ventana de contexto de 128.000 tokens, pero el fine-tuning podría haber alterado estas propiedades, aunque no se documenta.
 
@@ -80,10 +80,10 @@ No se conocen otros fine-tunes de Llama-3.1-8B con el mismo propósito de memori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-date-twin
+- Repositorio Hugging Face: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-date-twin
 - Modelo base (Llama-3.1-8B-Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Página oficial de Llama: https://llama.meta.com/
 - Repositorio de Meta Llama 3 en GitHub: https://github.com/meta-llama/llama3
 - Model card de Llama-3.1-8B-Instruct en NVIDIA NIM: https://build.nvidia.com/meta/llama-3_1-8b-instruct/modelcard
 
-Nota: no se encontraron papers, blogs ni demos asociados a este checkpoint específico. La información disponible es exclusivamente la del repositorio de HuggingFace y la del modelo base.
+Nota: no se encontraron papers, blogs ni demos asociados a este checkpoint específico. La información disponible es exclusivamente la del repositorio de Hugging Face y la del modelo base.

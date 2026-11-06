@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`georgecevans/dino-demo` es un repositorio de HuggingFace publicado por el usuario georgecevans que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas multitarea. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se declara explícitamente como una inicialización válida, no como un modelo entrenado.
+`georgecevans/dino-demo` es un repositorio de Hugging Face publicado por el usuario georgecevans que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas multitarea. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se declara explícitamente como una inicialización válida, no como un modelo entrenado.
 
 El dato más relevante es su tamaño: 49.600 parámetros totales según el recuento real de safetensors, una cifra minúscula que confirma que se trata de un esqueleto de código y no de un modelo útil para inferencia real. A pesar de que el campo "Scale" de la model card indica "huge", este valor se refiere a una etiqueta de configuración generada automáticamente y entra en contradicción con el recuento de parámetros, por lo que debe tratarse con cautela.
 
@@ -80,5 +80,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgecevans/dino-demo
+- Modelo en Hugging Face: https://huggingface.co/georgecevans/dino-demo
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

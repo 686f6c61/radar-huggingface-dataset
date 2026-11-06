@@ -64,7 +64,7 @@ No se dispone de información comparativa con otros modelos de *stereo matching*
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pablovela5620/liteanystereo
+- Repositorio Hugging Face: https://huggingface.co/pablovela5620/liteanystereo
 - Repositorio GitHub oficial: https://github.com/TomTomTommi/LiteAnyStereo
 - Página del proyecto: https://tomtomtommi.github.io/LiteAnyStereoV2/
 - Paper (arXiv): https://arxiv.org/html/2511.16555v1

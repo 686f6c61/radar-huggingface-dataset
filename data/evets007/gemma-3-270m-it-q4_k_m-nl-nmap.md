@@ -75,7 +75,7 @@ La comparación directa no está disponible porque no hay datos de rendimiento p
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/evets007/gemma-3-270m-it.Q4_K_M-NL-Nmap)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/evets007/gemma-3-270m-it.Q4_K_M-NL-Nmap)
 - [Google Gemma 3 270M (base)](https://huggingface.co/google/gemma-3-270m)
 - [Google Gemma 3 270M It QAT](https://huggingface.co/google/gemma-3-270m-it-qat-q4_0-unquantized)
 - [Página oficial de Gemma 3 en Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
@@ -155,7 +155,7 @@ La comparación directa no es posible porque no se han publicado datos de rendim
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/evets007/gemma-3-270m-it.Q4_K_M-NL-Nmap)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/evets007/gemma-3-270m-it.Q4_K_M-NL-Nmap)
 - [Google Gemma 3 270M (base)](https://huggingface.co/google/gemma-3-270m)
 - [Google Gemma 3 270M It QAT](https://huggingface.co/google/gemma-3-270m-it-qat-q4_0-unquantized)
 - [Página oficial de Gemma 3 en Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)

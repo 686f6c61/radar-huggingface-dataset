@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ishikaa/acquisition_generator_AS_format_numina_qwen3b` aloja un modelo de generacion de texto etiquetado por su autor como `text-generation` y `conversational`. En el momento de la consulta, el modelo no registra descargas ni "likes" y carece de licencia, idiomas o documentacion tecnica en HuggingFace.
+El repositorio `ishikaa/acquisition_generator_AS_format_numina_qwen3b` aloja un modelo de generacion de texto etiquetado por su autor como `text-generation` y `conversational`. En el momento de la consulta, el modelo no registra descargas ni "likes" y carece de licencia, idiomas o documentacion tecnica en Hugging Face.
 
 El nombre del repositorio sugiere un posible fine-tune sobre una base Qwen3 (sin confirmar) con un dataset de tipo `numina`, orientado a generar "adquisiciones" en un formato `AS`. Sin embargo, no existe informacion publica que permita verificar la arquitectura, el proceso de entrenamiento o las capacidades reales del modelo. La fecha de creacion indicada es el 2026-09-05, dato que no puede ser contrastado con fuentes externas.
 
@@ -23,7 +23,7 @@ Dada la ausencia de datos verificables, este modelo no puede ser evaluado ni rec
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto o los datos de entrenamiento. Los tags de HuggingFace incluyen `llama`, `transformers` y `arxiv:1910.09700` (el paper de Llama), lo que podria indicar una arquitectura decoder-only similar a Llama, pero no es concluyente. El sufijo `qwen3b` del nombre podria apuntar a un modelo basado en Qwen3, aunque no existe una variante `3b` en el catalogo oficial de Qwen. El termino `numina` podria hacer referencia al dataset de razonamiento matematico Numina, pero no se ha confirmado ninguna relacion. No hay datos sobre el numero de tokens, la composicion del dataset, ni la aplicacion de tecnicas como RLHF o DPO.
+No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto o los datos de entrenamiento. Los tags de Hugging Face incluyen `llama`, `transformers` y `arxiv:1910.09700` (el paper de Llama), lo que podria indicar una arquitectura decoder-only similar a Llama, pero no es concluyente. El sufijo `qwen3b` del nombre podria apuntar a un modelo basado en Qwen3, aunque no existe una variante `3b` en el catalogo oficial de Qwen. El termino `numina` podria hacer referencia al dataset de razonamiento matematico Numina, pero no se ha confirmado ninguna relacion. No hay datos sobre el numero de tokens, la composicion del dataset, ni la aplicacion de tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -66,5 +66,5 @@ No se dispone de modelos comparables con informacion suficiente para establecer 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen3b
 - Repositorio de la variante 7B: https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen7b

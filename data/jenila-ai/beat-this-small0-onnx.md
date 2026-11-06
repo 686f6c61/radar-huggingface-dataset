@@ -23,7 +23,7 @@ No obstante, la información publicada es muy escasa: no se detallan el número 
 | Frecuencia de muestreo de entrada | 22,05 kHz mono (según la conversión ONNX de referencia) |
 | Representación de entrada | Espectrograma log-mel de 128 bandas a 50 frames/s |
 | Salidas | Logits de beat y de downbeat por frame |
-| Tamano del repositorio | 0,0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en Hugging Face) |
 | SHA-256 del fichero | `1dbbac9e2410debf083d4002f2c2b12b61a42b3cde9b0f6fb27cc9e1b61e7517` |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión al no publicarse el número de parámetros. Por la variante «small0» y un repositorio que HuggingFace redondea a 0,0 GB, se trata de un modelo pequeño (estimación orientativa: por debajo de 1 GB en fp32), apto para GPUs de gama baja.
+- VRAM estimada: no disponible con precisión al no publicarse el número de parámetros. Por la variante «small0» y un repositorio que Hugging Face redondea a 0,0 GB, se trata de un modelo pequeño (estimación orientativa: por debajo de 1 GB en fp32), apto para GPUs de gama baja.
 - GPU recomendadas: no se especifican. Cualquier GPU consumer con unos pocos GB de memoria es suficiente en la práctica; no se requiere A100 ni H100.
 - CPU: el caso de uso natural. ONNX Runtime en CPU permite procesar audio a 22,05 kHz en ventanas de hasta 30 segundos; el coste por ventana no está documentado.
 - Despliegue: ONNX Runtime (Python, C++, C#, Java), onnxruntime-web (WASM/WebGPU) en navegador, ONNX Runtime Mobile en dispositivos. También es posible servir el modelo con Triton Inference Server o con el backend ONNX de otros frameworks.
@@ -95,7 +95,7 @@ No se dispone de métricas de precisión comparadas entre estas opciones en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jenila-ai/beat-this-small0-onnx
+- Modelo en Hugging Face: https://huggingface.co/jenila-ai/beat-this-small0-onnx
 - Licencia del modelo: https://huggingface.co/jenila-ai/beat-this-small0-onnx/blob/main/LICENSE
 - Repositorio original Beat This! (JKU Linz): https://github.com/CPJKU/beat_this
 - Conversión ONNX de referencia con preprocesado incluido: https://huggingface.co/tuneperfect/beat-this-onnx

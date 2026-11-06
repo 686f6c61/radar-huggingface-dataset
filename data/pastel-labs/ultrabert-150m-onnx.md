@@ -101,6 +101,6 @@ La comparacion con benchmarks de tarea no es posible con los datos disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pastel-labs/UltraBERT-150M-ONNX
+- Modelo en Hugging Face: https://huggingface.co/pastel-labs/UltraBERT-150M-ONNX
 - Modelo base: https://huggingface.co/dmis-lab/UltraBERT-150M
 - La busqueda web no ha devuelto resultados relevantes sobre el modelo: los enlaces encontrados corresponden a servicios de estudios en Francia y a articulos sobre el color pastel, sin relacion con este proyecto. No se han localizado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -19,7 +19,7 @@ La información disponible no especifica la longitud de contexto, el número de 
 | Tipos de cuantizacion | No disponible; el repositorio incluye la etiqueta gguf, pero no se detallan los tipos |
 | Idiomas soportados | Inglés (en), ruso (ru) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (metadatos de HuggingFace), PyTorch .pt (quickstart), GGUF (etiqueta) |
+| Formato de pesos | safetensors (metadatos de Hugging Face), PyTorch .pt (quickstart), GGUF (etiqueta) |
 | Capas | 16 |
 | Hidden size | 768 |
 | Atención | GQA (12 Q-heads, 4 KV-heads, head_dim=64) |
@@ -104,7 +104,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bobic-1.5-Raye | 125,86 M | No disponible | MIT | HuggingFace |
+| Bobic-1.5-Raye | 125,86 M | No disponible | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

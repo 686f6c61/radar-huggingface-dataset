@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen2.
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta 29 idiomas, pero no se confirma) |
 | Licencia | no disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se puede realizar una comparativa justa porque no se conocen las característ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct | 7.6B | 128k | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 License | HuggingFace |
-| Mistral 7B Instruct v0.3 | 7.3B | 32k | Apache 2.0 | HuggingFace |
-| Gemma 2 9B Instruct | 9B | 8k | Gemma License | HuggingFace |
+| Qwen2.5-7B-Instruct | 7.6B | 128k | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 License | Hugging Face |
+| Mistral 7B Instruct v0.3 | 7.3B | 32k | Apache 2.0 | Hugging Face |
+| Gemma 2 9B Instruct | 9B | 8k | Gemma License | Hugging Face |
 
 El fine-tune de Echoo113 no añade datos comparativos, y su licencia no está especificada.
 
@@ -91,7 +91,7 @@ El fine-tune de Echoo113 no añade datos comparativos, y su licencia no está es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration_mlpB-STEER0.64375-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration_mlpB-STEER0.64375-ft4.42
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Discusiones sobre un modelo similar (Echoo113/Qwen2.5-7B-Instruct-immigration_prompted-ft4.43): https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration_prompted-ft4.43/discussions
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

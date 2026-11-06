@@ -69,9 +69,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ResidentEvian/diffusion_100_episodes_varying_pos` | 277,8 M | no aplica | sin evaluar | Apache 2.0 | HuggingFace, 24 descargas |
-| Otras políticas Diffusion Policy en LeRobot | no disponible | no aplica | no disponible | habitualmente Apache 2.0 | Hub de HuggingFace |
-| Políticas ACT en LeRobot | no disponible | no aplica | no disponible | habitualmente Apache 2.0 | Hub de HuggingFace |
+| `ResidentEvian/diffusion_100_episodes_varying_pos` | 277,8 M | no aplica | sin evaluar | Apache 2.0 | Hugging Face, 24 descargas |
+| Otras políticas Diffusion Policy en LeRobot | no disponible | no aplica | no disponible | habitualmente Apache 2.0 | Hub de Hugging Face |
+| Políticas ACT en LeRobot | no disponible | no aplica | no disponible | habitualmente Apache 2.0 | Hub de Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResidentEvian/diffusion_100_episodes_varying_pos
+- Modelo en Hugging Face: https://huggingface.co/ResidentEvian/diffusion_100_episodes_varying_pos
 - Dataset de entrenamiento: https://huggingface.co/datasets/ResidentEvian/blue-cube-into-box-varying-position_20261015_123135
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ResidentEvian/blue-cube-into-box-varying-position_20261015_123135
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

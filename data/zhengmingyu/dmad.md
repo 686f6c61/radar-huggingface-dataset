@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DMAD (Distribution Matching as Adversarial Distillation) es un metodo de destilacion para generacion visual rapida, aplicado aqui al modelo MiniMax-H3. Este repositorio de HuggingFace no contiene un modelo completo, sino los adaptadores LoRA que convierten al profesor MiniMax-H3 (33 000 millones de parametros, text-to-audio-video, 50 pasos de muestreo) en un estudiante que genera video y audio en solo 4 pasos. Lo desarrollan Zhengming Yu y colaboradores de Texas A&M University y ByteDance.
+DMAD (Distribution Matching as Adversarial Distillation) es un metodo de destilacion para generacion visual rapida, aplicado aqui al modelo MiniMax-H3. Este repositorio de Hugging Face no contiene un modelo completo, sino los adaptadores LoRA que convierten al profesor MiniMax-H3 (33 000 millones de parametros, text-to-audio-video, 50 pasos de muestreo) en un estudiante que genera video y audio en solo 4 pasos. Lo desarrollan Zhengming Yu y colaboradores de Texas A&M University y ByteDance.
 
 El resultado es un generador conjunto de audio y video con resolucion 1344x768 y audio estereo nativo, obtenido anadiendo LoRAs de rango 128 sobre el transformer de H3 (50 bloques transformer mas 2 bloques token-refiner, 312 modulos en total). El repositorio incluye dos checkpoints de 1,4 GB cada uno, con configuraciones de critico distintas.
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks con cifras en la informacion dispon
 
 | Modelo | Parametros | Pasos de muestreo | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DMAD (estudiante de MiniMax-H3) | LoRA de rango 128 sobre base de 33 000 millones | 4 | Text-to-audio-video, 1344x768, audio estereo | MiniMax H3 Community License Agreement | Adaptadores en HuggingFace, codigo en GitHub |
-| MiniMax-H3 (profesor) | 33 000 millones | 50 | Text-to-audio-video | MiniMax H3 Community License Agreement | Modelo base en HuggingFace |
+| DMAD (estudiante de MiniMax-H3) | LoRA de rango 128 sobre base de 33 000 millones | 4 | Text-to-audio-video, 1344x768, audio estereo | MiniMax H3 Community License Agreement | Adaptadores en Hugging Face, codigo en GitHub |
+| MiniMax-H3 (profesor) | 33 000 millones | 50 | Text-to-audio-video | MiniMax H3 Community License Agreement | Modelo base en Hugging Face |
 | Otros generadores audiovisuales destilados comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos en la informacion proporcionada es frente al propio profesor MiniMax-H3, del que DMAD hereda la arquitectura y los pesos y al que reduce el muestreo de 50 a 4 pasos mediante destilacion. No se dispone de datos de otros modelos de la misma categoria en la informacion consultada.
 
 ## Limitaciones y advertencias
 
-- Este repositorio no es un modelo autonomo: requiere descargar el modelo base MiniMax-H3 (33 000 millones de parametros) y aplicar los adaptadores LoRA; el codigo de inferencia vive en un repositorio externo de GitHub, no en HuggingFace.
+- Este repositorio no es un modelo autonomo: requiere descargar el modelo base MiniMax-H3 (33 000 millones de parametros) y aplicar los adaptadores LoRA; el codigo de inferencia vive en un repositorio externo de GitHub, no en Hugging Face.
 - Licencia: los checkpoints son derivados del modelo MiniMax-H3 y se distribuyen bajo la MiniMax H3 Community License Agreement. Es una licencia "other", por lo que las condiciones de uso comercial deben revisarse en el fichero LICENSE antes de cualquier despliegue en produccion.
 - Contenido generado por IA: la propia model card indica que los videos producidos con estos pesos son generados por IA, lo que implica obligaciones de divulgacion segun el contexto de uso.
 - Riesgo de artefactos y alucinacion visual: al ser un modelo de difusion destilado a 4 pasos, no se documentan evaluaciones de fidelidad, coherencia temporal ni sincronizacion audio-video mas alla de la mencion a AVGen-Bench.
@@ -83,7 +83,7 @@ La unica comparacion con datos en la informacion proporcionada es frente al prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhengmingYu/DMAD
+- Hugging Face: https://huggingface.co/ZhengmingYu/DMAD
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Pagina del proyecto: https://yzmblog.github.io/projects/DMAD/
 - Articulo (arXiv): https://arxiv.org/abs/2610.02188

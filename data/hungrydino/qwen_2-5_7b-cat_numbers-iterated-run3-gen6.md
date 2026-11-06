@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: parte de los pesos de `unsloth/Qwen2.5-7B-Instruct` y ha sido entrenado con la libreria Unsloth junto con TRL de HuggingFace, segun indica la propia model card. El nombre del repositorio (`cat_numbers-iterated-run3-gen6`) sugiere un experimento de ajuste sobre una tarea sintetica relacionada con concatenacion de numeros e iteracion de entrenamiento, aunque la model card no documenta ni el dataset ni el objetivo concreto.
+Este repositorio contiene un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: parte de los pesos de `unsloth/Qwen2.5-7B-Instruct` y ha sido entrenado con la libreria Unsloth junto con TRL de Hugging Face, segun indica la propia model card. El nombre del repositorio (`cat_numbers-iterated-run3-gen6`) sugiere un experimento de ajuste sobre una tarea sintetica relacionada con concatenacion de numeros e iteracion de entrenamiento, aunque la model card no documenta ni el dataset ni el objetivo concreto.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con alrededor de 7.600 millones de parametros y una ventana de contexto teorica de 131.072 tokens en su version base. Sin embargo, el repositorio ocupa solo 0,1 GB, lo que indica que lo publicado son adaptadores (LoRA) y no los pesos completos fusionados; su uso en inferencia requiere recombinarlos con el modelo base.
 
@@ -47,7 +47,7 @@ Dado que no se documenta la tarea concreta ni se aportan evaluaciones, los casos
 - Generacion de codigo en entornos controlados: el modelo base destaca en tareas de programacion, por lo que podria integrarse en asistentes de IDE, siempre que se valide que el fine-tune no ha mermado esa capacidad.
 - Investigacion sobre olvido catastrofico: al ser un ajuste potencialmente narrow, es un candidato para medir la perdida de capacidades generales respecto al modelo base.
 - Fine-tuning posterior sobre este checkpoint: puede emplearse como punto de partida para nuevos ajustes con LoRA, dado su tamano reducido y su licencia permisiva.
-- Educacion y demostraciones: util para ilustrar como se publica y versiona un adaptador LoRA en HuggingFace.
+- Educacion y demostraciones: util para ilustrar como se publica y versiona un adaptador LoRA en Hugging Face.
 
 En cualquier caso, no se recomienda su uso en produccion sin una evaluacion propia, dado que no hay benchmarks ni validacion publicada.
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha para compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen6
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen6
 - Modelo base en Unsloth: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo oficial Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la informacion disponible.

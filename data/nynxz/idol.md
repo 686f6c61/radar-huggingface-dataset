@@ -80,7 +80,7 @@ Idol comparte arquitectura con TripoSplat de VAST-AI (cuyos pesos DINOv3 y flux2
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/nynxz/Idol
+- Ficha del modelo en Hugging Face: https://huggingface.co/nynxz/Idol
 - Modelo original de Speridlabs: https://huggingface.co/speridlabs/idol
 - Página de investigación de Speridlabs: https://speridlabs.com/research/idol
 - Extensión ComfyUI-Idol (GitHub): https://github.com/Nynxz/ComfyUI-Idol

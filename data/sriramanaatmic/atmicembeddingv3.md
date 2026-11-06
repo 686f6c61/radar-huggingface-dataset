@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AtmicEmbeddingv3 | 559,89 M | no disponible | en | MIT | HuggingFace |
-| BGE-large-en-v1.5 | 326 M | 512 tokens | en | MIT | HuggingFace |
-| E5-large-v2 | 335 M | 512 tokens | en | MIT | HuggingFace |
-| GTE-large | 305 M | 512 tokens | en, zh | Apache 2.0 | HuggingFace |
+| AtmicEmbeddingv3 | 559,89 M | no disponible | en | MIT | Hugging Face |
+| BGE-large-en-v1.5 | 326 M | 512 tokens | en | MIT | Hugging Face |
+| E5-large-v2 | 335 M | 512 tokens | en | MIT | Hugging Face |
+| GTE-large | 305 M | 512 tokens | en, zh | Apache 2.0 | Hugging Face |
 
 AtmicEmbeddingv3 tiene mas parametros que las alternativas populares, pero carece de benchmarks publicos que demuestren una ventaja real. Su entrenamiento en un dataset especifico (expert_pass) podria ofrecer mejor rendimiento en ese dominio, pero no hay evidencia comparativa. Los modelos BGE, E5 y GTE tienen amplia documentacion, benchmarks y adopcion en la comunidad, lo que los hace mas fiables para uso general.
 
@@ -80,6 +80,6 @@ AtmicEmbeddingv3 tiene mas parametros que las alternativas populares, pero carec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SriRamanaAtmic/AtmicEmbeddingv3
+- Modelo en Hugging Face: https://huggingface.co/SriRamanaAtmic/AtmicEmbeddingv3
 - Modelo base AtmicEmbeddingv2: https://huggingface.co/SriRamanaAtmic/AtmicEmbeddingv2
 - Datasets del proyecto Atmic Intelligence: https://huggingface.co/SriRamanaAtmic/datasets

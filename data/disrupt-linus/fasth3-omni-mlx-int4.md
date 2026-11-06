@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Disrupt-linus/FastH3-Omni-MLX-INT4
+- Hugging Face: https://huggingface.co/Disrupt-linus/FastH3-Omni-MLX-INT4
 - Repositorio FastVideo (rama MLX): https://github.com/fastvideo/FastVideo/tree/aryan/fasth3-omni-mlx
 - Hilo de r/StableDiffusion que motivó la conversión: https://www.reddit.com/r/StableDiffusion/comments/1xkftos/request_could_someone_create_a_preconverted/
 - Apple MLX: https://github.com/ml-explore/mlx

@@ -18,7 +18,7 @@ El modelo esta orientado a su uso con llama.cpp y otros entornos compatibles con
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (los niveles concretos no se detallan en la informacion disponible) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (segun las etiquetas del repositorio; el campo de licencia de la API de HuggingFace figura como no disponible) |
+| Licencia | apache-2.0 (segun las etiquetas del repositorio; el campo de licencia de la API de Hugging Face figura como no disponible) |
 | Formato de pesos | GGUF (compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabrielmtzcarrillo/gemma-4-E2B-it-heretic-gguf
+- Hugging Face: https://huggingface.co/gabrielmtzcarrillo/gemma-4-E2B-it-heretic-gguf
 - Modelo base declarado: https://huggingface.co/google/gemma-4-E2B-it
 - Referencia arxiv incluida en las etiquetas: https://arxiv.org/abs/2607.02770

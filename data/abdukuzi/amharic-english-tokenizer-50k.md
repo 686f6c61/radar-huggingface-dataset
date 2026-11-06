@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abdukuzi/amharic-english-tokenizer-50k` es un tokenizer bilingüe para amhárico e inglés, publicado en HuggingFace por el usuario Abdu Kuzi. Está diseñado para la librería transformers y su nombre sugiere un vocabulario de aproximadamente 50.000 tokens. El tokenizer es un componente fundamental en pipelines de procesamiento de lenguaje natural para lenguas de bajos recursos, donde la segmentación adecuada del texto es crítica para el rendimiento posterior de modelos de lenguaje.
+El modelo `abdukuzi/amharic-english-tokenizer-50k` es un tokenizer bilingüe para amhárico e inglés, publicado en Hugging Face por el usuario Abdu Kuzi. Está diseñado para la librería transformers y su nombre sugiere un vocabulario de aproximadamente 50.000 tokens. El tokenizer es un componente fundamental en pipelines de procesamiento de lenguaje natural para lenguas de bajos recursos, donde la segmentación adecuada del texto es crítica para el rendimiento posterior de modelos de lenguaje.
 
 La relevancia de este modelo radica en el contexto de desarrollo de sistemas de IA para lenguas etíopes, un área con escasa representación en los modelos multilingües dominantes. La creación de tokenizers específicos para amhárico permite mejorar la eficiencia de representación del texto frente a tokenizers multilingües genéricos, que suelen fragmentar excesivamente las palabras de lenguas con sistemas de escritura y morfología diferentes al inglés.
 
@@ -23,15 +23,15 @@ La información pública disponible es muy limitada: la model card está generad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del tokenizer. Por el nombre del modelo y el tag `transformers`, es probable que se trate de un tokenizer basado en BPE (Byte Pair Encoding) o SentencePiece, compatible con la API de HuggingFace Transformers. El sufijo "50k" sugiere un vocabulario de aproximadamente 50.000 subword units.
+No se dispone de informacion sobre la arquitectura interna del tokenizer. Por el nombre del modelo y el tag `transformers`, es probable que se trate de un tokenizer basado en BPE (Byte Pair Encoding) o SentencePiece, compatible con la API de Hugging Face Transformers. El sufijo "50k" sugiere un vocabulario de aproximadamente 50.000 subword units.
 
 No hay informacion publica sobre los datos de entrenamiento, el procedimiento de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de post-procesado o filtrado. Tampoco se especifica si el tokenizer fue entrenado desde cero o si se adapto un tokenizer existente.
 
 ## Capacidades
 
 - Tokenizacion de texto en amharico e ingles (segun el nombre del modelo).
-- Compatible con la libreria transformers de HuggingFace, por lo que puede integrarse en pipelines estandar de procesamiento de lenguaje natural.
-- El tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatible con la libreria transformers de Hugging Face, por lo que puede integrarse en pipelines estandar de procesamiento de lenguaje natural.
+- El tag `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - No se dispone de informacion sobre capacidades adicionales como soporte para otras lenguas, tool calling o funciones especiales.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdukuzi/amharic-english-tokenizer-50k
-- Perfil del autor en HuggingFace: https://huggingface.co/abdukuzi/datasets
+- Modelo en Hugging Face: https://huggingface.co/abdukuzi/amharic-english-tokenizer-50k
+- Perfil del autor en Hugging Face: https://huggingface.co/abdukuzi/datasets
 - Tokenizer alternativo para amharico (AmhT5): https://huggingface.co/yonas/AmhT5-tokenizer
 - Proyecto Abyssinica AI (IA para lenguas etiopicas): https://www.abyssinica.ai/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) construido sobre `francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed3407`, un checkpoint de la familia GPT-2. Lo publica el usuario de HuggingFace `francesca9805`, asociado a un proyecto de investigación sobre tokenizadores que registra sus ejecuciones en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen. No es un modelo comercial ni un lanzamiento de laboratorio: es un artefacto experimental de un pipeline de investigación.
+El modelo `francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) construido sobre `francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed3407`, un checkpoint de la familia GPT-2. Lo publica el usuario de Hugging Face `francesca9805`, asociado a un proyecto de investigación sobre tokenizadores que registra sus ejecuciones en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen. No es un modelo comercial ni un lanzamiento de laboratorio: es un artefacto experimental de un pipeline de investigación.
 
 Con 124.770.816 parámetros (aproximadamente 125 millones, confirmado en el peso real de los safetensors), se sitúa en la gama de GPT-2 small. El identificador sugiere un entrenamiento sobre un corpus de aproximadamente 100 MB en japonés ("jpn"), con una variante de tokenizador loglineal y un léxico nuevo ("newlex"), datos empaquetados ("packed"), precisión bf16 ("bfdiso") y la semilla 3407, un valor habitual en experimentos de reproducibilidad. Sin embargo, la model card no confirma ninguno de estos extremos, por lo que deben tratarse como indicios del nombre y no como especificaciones verificadas.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y muy específica: sirve como punto de comparación den
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de los safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -78,10 +78,10 @@ Los datos de las alternativas no provienen de la informacion proporcionada en es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jpn-100mb...after-ckpt500 (este modelo) | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental sobre GPT-2 |
-| GPT-2 small | 124 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en HuggingFace | Referencia de la misma arquitectura y tamano |
-| DistilGPT-2 | 82 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en HuggingFace | Version destilada, menor coste, menor calidad |
-| GPT-2 medium | 355 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en HuggingFace | Siguiente escalon de tamano de la familia |
+| jpn-100mb...after-ckpt500 (este modelo) | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental sobre GPT-2 |
+| GPT-2 small | 124 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en Hugging Face | Referencia de la misma arquitectura y tamano |
+| DistilGPT-2 | 82 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en Hugging Face | Version destilada, menor coste, menor calidad |
+| GPT-2 medium | 355 M | 1024 tokens | MIT (segun su publicacion original) | Amplia en Hugging Face | Siguiente escalon de tamano de la familia |
 
 No hay datos de rendimiento comparado para este checkpoint, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -99,7 +99,7 @@ No hay datos de rendimiento comparado para este checkpoint, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/guehzrah
 - Repositorio de TRL: https://github.com/huggingface/trl

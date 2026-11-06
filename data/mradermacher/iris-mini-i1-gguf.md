@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iris-mini-i1-GGUF es una cuantizacion GGUF del modelo Iris-mini, desarrollado por AllSpark-Research. La version publicada por mradermacher utiliza pesos imatrix (weighted/imatrix quants) para optimizar la compresion y preservar la calidad en cuantizaciones agresivas. El modelo original esta orientado a tareas de agente y busqueda profunda, con un enfoque conversacional y una arquitectura Mixture of Experts (MoE) basada en la familia Qwen3.6, segun los metadatos de HuggingFace.
+Iris-mini-i1-GGUF es una cuantizacion GGUF del modelo Iris-mini, desarrollado por AllSpark-Research. La version publicada por mradermacher utiliza pesos imatrix (weighted/imatrix quants) para optimizar la compresion y preservar la calidad en cuantizaciones agresivas. El modelo original esta orientado a tareas de agente y busqueda profunda, con un enfoque conversacional y una arquitectura Mixture of Experts (MoE) basada en la familia Qwen3.6, segun los metadatos de Hugging Face.
 
 Con 48.036.230 parametros totales, es un modelo extremadamente pequeno, lo que lo hace adecuado para entornos con recursos limitados. El repositorio ocupa 0.2 GB y ofrece una amplia variedad de cuantizaciones, desde Q1 hasta Q6, lo que permite desplegarlo en CPU y GPU de baja gama. Su relevancia radica en la posibilidad de experimentar con arquitecturas MoE y tecnicas de cuantizacion sin necesidad de hardware costoso.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Iris-mini-i1-GGUF | 48.036.230 | no disponible | Apache 2.0 | HuggingFace |
-| Iris-mini (original) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Amethyst-1-mini-i1-GGUF | no disponible | no disponible | no disponible | HuggingFace |
+| Iris-mini-i1-GGUF | 48.036.230 | no disponible | Apache 2.0 | Hugging Face |
+| Iris-mini (original) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Amethyst-1-mini-i1-GGUF | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de benchmarks para establecer una comparativa significativa. Los modelos citados pertenecen a la misma categoria de modelos mini cuantizados, pero sus caracteristicas tecnicas no estan documentadas en la informacion disponible.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Iris-mini-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Iris-mini-i1-GGUF
 - Modelo original: https://huggingface.co/AllSpark-Research/Iris-mini
 - Repositorio de cuantizaciones del autor: https://huggingface.co/mradermacher/Iris-mini-GGUF

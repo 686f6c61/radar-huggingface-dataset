@@ -124,10 +124,10 @@ La comparación se limita al dominio de role-playing narrativo; no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/holi-lab/ArcANE-32B-RLVR
+- Modelo en Hugging Face: https://huggingface.co/holi-lab/ArcANE-32B-RLVR
 - Paper en arXiv: https://arxiv.org/abs/2606.05553
 - Dataset ArcANE-Data: https://huggingface.co/datasets/holi-lab/ArcANE-Data
 - Modelo previo SFT: https://huggingface.co/holi-lab/ArcANE-32B-SFT
 - Modelo previo DPO: https://huggingface.co/holi-lab/ArcANE-32B-DPO
 - Repositorio ArcANE: https://github.com/holi-lab/ArcANE
-- Colección ArcANE en HuggingFace: https://huggingface.co/collections/holi-lab/arcane
+- Colección ArcANE en Hugging Face: https://huggingface.co/collections/holi-lab/arcane

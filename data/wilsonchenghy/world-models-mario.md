@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| world-models-mario | 49,9 M | 8 fotogramas | research-use | Pesos en HuggingFace |
+| world-models-mario | 49,9 M | 8 fotogramas | research-use | Pesos en Hugging Face |
 | Dreamer 4 (original, Hafner et al.) | no disponible | no disponible | no disponible | Paper; pesos no publicados en la información disponible |
 | Otros world models para Atari (p. ej. DreamerV3) | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonchenghy/world-models-mario
+- Hugging Face: https://huggingface.co/wilsonchenghy/world-models-mario
 - Repositorio de código: https://github.com/wilsonchenghy/world-models
 - Paper Dreamer 4 (Hafner, Yan, Lillicrap 2025): https://arxiv.org/abs/2509.24527

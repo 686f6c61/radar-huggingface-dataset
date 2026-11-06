@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Legend_ocr_v2 es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario keystats en HuggingFace. Se distribuye en formato safetensors bajo la librería transformers y su recuento real de parámetros, extraído de los pesos, es de 8.292.166.656 (aproximadamente 8,29 mil millones). El repositorio ocupa 16,6 GB, un tamaño coherente con pesos en precisión de 16 bits para ese número de parámetros.
+Legend_ocr_v2 es un modelo multimodal de tipo imagen-texto-a-texto publicado por el usuario keystats en Hugging Face. Se distribuye en formato safetensors bajo la librería transformers y su recuento real de parámetros, extraído de los pesos, es de 8.292.166.656 (aproximadamente 8,29 mil millones). El repositorio ocupa 16,6 GB, un tamaño coherente con pesos en precisión de 16 bits para ese número de parámetros.
 
 La etiqueta de arquitectura declarada en el Hub es `qwen2_5_vl`, lo que indica que el modelo parte de la familia Qwen2.5-VL, un transformer multimodal con torre de visión y decodificador de lenguaje. El pipeline asignado es `image-text-to-text`, es decir, admite imágenes como entrada y produce texto. El nombre del repositorio sugiere una especialización en reconocimiento óptico de caracteres (OCR), aunque la model card no confirma esta finalidad.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada es la plantilla automática de HuggingFace y no contiene información rellenada por el autor. No hay licencia declarada, no hay idiomas declarados, no hay datos de entrenamiento, no hay benchmarks y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluación en producción debería partir de una validación empírica propia.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card publicada es la plantilla automática de Hugging Face y no contiene información rellenada por el autor. No hay licencia declarada, no hay idiomas declarados, no hay datos de entrenamiento, no hay benchmarks y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluación en producción debería partir de una validación empírica propia.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: la mod
 
 La única información disponible sobre la arquitectura es la etiqueta `qwen2_5_vl` incluida en los tags del repositorio. Esto sitúa al modelo en la familia Qwen2.5-VL, caracterizada por un decodificador transformer con atención causal, una torre de visión basada en ViT con fusión de parches y capacidades de grounding espacial y temporal. El recuento de 8,29 mil millones de parámetros es compatible con un checkpoint de escala 7B de esa familia sumando el codificador visual, pero no hay confirmación explícita en la model card.
 
-No hay ningún dato publicado sobre el proceso de entrenamiento: se desconoce el número de tokens utilizados, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra técnica de alineamiento, y si se aplicaron estrategias como decodificación especulativa o atención lineal. La model card es la plantilla vacía generada automáticamente por HuggingFace, con todos los campos marcados como `[More Information Needed]`. El nombre Legend_ocr_v2 apunta a un ajuste fino orientado a OCR o extracción de texto en imágenes, pero es una inferencia a partir del nombre, no un dato documentado.
+No hay ningún dato publicado sobre el proceso de entrenamiento: se desconoce el número de tokens utilizados, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra técnica de alineamiento, y si se aplicaron estrategias como decodificación especulativa o atención lineal. La model card es la plantilla vacía generada automáticamente por Hugging Face, con todos los campos marcados como `[More Information Needed]`. El nombre Legend_ocr_v2 apunta a un ajuste fino orientado a OCR o extracción de texto en imágenes, pero es una inferencia a partir del nombre, no un dato documentado.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ No hay datos de rendimiento publicados para Legend_ocr_v2, por lo que la compara
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keystats/Legend_ocr_v2 | 8,29 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2.5-VL-7B (modelo base de referencia) | ~8,3 B (incluye torre de visión) | 32.768 tokens nativos, extensible | Apache 2.0 | HuggingFace, safetensors |
-| InternVL2.5-8B | ~8 B | 32.768 tokens aproximadamente | MIT | HuggingFace, safetensors |
-| Llama-3.2-11B-Vision | 11 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors |
+| keystats/Legend_ocr_v2 | 8,29 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2.5-VL-7B (modelo base de referencia) | ~8,3 B (incluye torre de visión) | 32.768 tokens nativos, extensible | Apache 2.0 | Hugging Face, safetensors |
+| InternVL2.5-8B | ~8 B | 32.768 tokens aproximadamente | MIT | Hugging Face, safetensors |
+| Llama-3.2-11B-Vision | 11 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors |
 
 La ventaja potencial de Legend_ocr_v2 sería una especialización en OCR sobre un modelo base ya capaz; su desventaja objetiva es la falta total de documentación, licencia y métricas, frente a alternativas con licencias claras y evaluaciones publicadas.
 
@@ -98,7 +98,7 @@ La ventaja potencial de Legend_ocr_v2 sería una especialización en OCR sobre u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Legend_ocr_v2
+- Modelo en Hugging Face: https://huggingface.co/keystats/Legend_ocr_v2
 - Referencia de la arquitectura base declarada en los tags: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Documentación de transformers: https://huggingface.co/docs/transformers
 - Documentación de text-generation-inference: https://huggingface.co/docs/text-generation-inference

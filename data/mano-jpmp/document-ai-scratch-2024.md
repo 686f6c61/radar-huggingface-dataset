@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mano-jpmp/document-ai-scratch-2024` es un artefacto publicado en HuggingFace por el usuario mano-jpmp bajo el identificador de notas de investigación sobre Document AI. No se trata de un modelo entrenado con pesos funcionales destinados a inferencia, sino de un cuaderno de trabajo que recoge el planteamiento de una pregunta de investigación, posibles comparativas con baselines y un esbozo de evaluación. La propia model card advierte de forma explícita que no reclama mejoras de benchmark, ablaciones completas, código liberado ni un checkpoint entrenado.
+El repositorio `mano-jpmp/document-ai-scratch-2024` es un artefacto publicado en Hugging Face por el usuario mano-jpmp bajo el identificador de notas de investigación sobre Document AI. No se trata de un modelo entrenado con pesos funcionales destinados a inferencia, sino de un cuaderno de trabajo que recoge el planteamiento de una pregunta de investigación, posibles comparativas con baselines y un esbozo de evaluación. La propia model card advierte de forma explícita que no reclama mejoras de benchmark, ablaciones completas, código liberado ni un checkpoint entrenado.
 
 El peso real declarado en los ficheros safetensors es de 49.600 parámetros totales, una cifra que corresponde a un tensor auxiliar o a un artefacto de prueba, no a un transformer de gran escala. El repositorio ocupa 0,0 GB, no declara pipeline, no especifica idiomas y registra 12 descargas y 0 likes en el momento de la consulta. La arquitectura etiquetada es transformer, pero no se aporta ninguna especificación de capas, dimensiones ocultas, cabezas de atención ni ventana de contexto.
 
@@ -75,7 +75,7 @@ No disponible. El repositorio no es comparable con modelos de Document AI como L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mano-jpmp/document-ai-scratch-2024
+- Repositorio en Hugging Face: https://huggingface.co/mano-jpmp/document-ai-scratch-2024
 - Fichero principal de notas: `summary.md` dentro del repositorio
 - Documentación del repositorio: `README.md` dentro del repositorio
 - No se han encontrado en la busqueda web enlaces adicionales relevantes al modelo: los resultados obtenidos corresponden a sitios no relacionados (ManoMano, el servicio Mano de Sesan, guías de anotación de interacciones mano-objeto y un artículo sobre AffordanceVLA).

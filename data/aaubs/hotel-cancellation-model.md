@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 - GPU: no necesaria. XGBoost sobre datos tabulares de este tamaño se ejecuta en CPU.
 - VRAM estimada para inferencia: no aplica; el modelo no requiere GPU.
-- Memoria RAM: no disponible el tamaño del modelo serializado; el repositorio de HuggingFace ocupa 0,0 GB, lo que sugiere un artefacto de tamaño reducido, pero no se confirma en la informacion proporcionada.
+- Memoria RAM: no disponible el tamaño del modelo serializado; el repositorio de Hugging Face ocupa 0,0 GB, lo que sugiere un artefacto de tamaño reducido, pero no se confirma en la informacion proporcionada.
 - GPU recomendadas: no aplica (A100, H100 o RTX 4090 no aportan ventaja para este tipo de modelo).
 - Cabe en GPU de consumo: sí, aunque no es necesario; también funciona en cualquier equipo de sobremesa o portátil convencional.
 - Opciones de despliegue: carga directa con `joblib.load("model.joblib")` respetando las versiones indicadas en `config.json`. No se documentan opciones adicionales (vLLM, llama.cpp, Ollama, TGI, ONNX Runtime, Triton, etc.) en la informacion disponible.
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Enfoque | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AAUBS/hotel-cancellation-model | XGBoost + pipeline de scikit-learn, partición temporal | AUC 0,8102; log loss 0,5004; Brier 0,1694 (test) | CC-BY-4.0 | HuggingFace |
+| AAUBS/hotel-cancellation-model | XGBoost + pipeline de scikit-learn, partición temporal | AUC 0,8102; log loss 0,5004; Brier 0,1694 (test) | CC-BY-4.0 | Hugging Face |
 | TabNet + DeepHit (articulo en Journal of Information Technology & Tourism) | Aprendizaje profundo en dos etapas: clasificación de cancelación y análisis de supervivencia para el tiempo hasta la cancelación | no disponible en la informacion proporcionada | no disponible | Publicacion cientifica |
 | Modelos bayesianos para predicción de cancelaciones (arXiv:2410.16406) | Modelos bayesianos aplicados a registros de reservas | el articulo cita una exactitud del 80 % para cancelaciones a 7 días, correspondiente a un estudio referenciado, no a un resultado propio verificable aquí | no disponible | Articulo en arXiv |
 | Proyectos de GitHub sobre cancelación hotelera (anand193, Assyrian91) | Distintos enfoques de machine learning sobre datos de reservas | no disponible en la informacion proporcionada | no disponible | Repositorios en GitHub |
@@ -99,7 +99,7 @@ La comparación cuantitativa directa no es posible porque los modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AAUBS/hotel-cancellation-model
+- Modelo en Hugging Face: https://huggingface.co/AAUBS/hotel-cancellation-model
 - Referencia del conjunto de datos: Antonio, Almeida y Nunes (2019), *Hotel booking demand datasets*, Data in Brief 22.
 - Articulo sobre TabNet y DeepHit para cancelaciones y tiempo hasta la cancelación: https://link.springer.com/article/10.1007/s40558-026-00394-y
 - Proyecto de GitHub relacionado (anand193): https://github.com/anand193/hotel-cancellation-model

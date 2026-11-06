@@ -127,7 +127,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/Clover-35B-A3B-Preview-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Clover-35B-A3B-Preview-ROCmFPX
 - Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - Fork ROCmFPX (HarshaVardhan3002): https://github.com/HarshaVardhan3002/ROCmFPX
 - ROCmFPX (charlie12345): https://github.com/charlie12345/ROCmFPX

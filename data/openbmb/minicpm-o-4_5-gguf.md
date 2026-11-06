@@ -76,7 +76,7 @@ No se dispone de especificaciones detalladas de modelos comparables en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
+- Repositorio Hugging Face (GGUF): https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
 - Modelo base (safetensors): https://huggingface.co/openbmb/MiniCPM-o-4_5
 - GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
 - Demo PyTorch simple: https://github.com/OpenBMB/MiniCPM-o-Demo/

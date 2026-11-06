@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ameliaxx/sentiment-analisis` es un modelo de clasificación de texto publicado en HuggingFace Hub por el usuario ameliaxx. Por su identificador y su pipeline (`text-classification`), está orientado a análisis de sentimiento, aunque la model card no documenta explícitamente la tarea, el conjunto de etiquetas ni el dominio de aplicación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2 de noviembre de 2026.
+`ameliaxx/sentiment-analisis` es un modelo de clasificación de texto publicado en Hugging Face Hub por el usuario ameliaxx. Por su identificador y su pipeline (`text-classification`), está orientado a análisis de sentimiento, aunque la model card no documenta explícitamente la tarea, el conjunto de etiquetas ni el dominio de aplicación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2 de noviembre de 2026.
 
 El modelo se distribuye en formato safetensors con 124.442.882 parámetros totales (aproximadamente 124 millones), lo que lo sitúa en la escala de BERT-base. La etiqueta `bert` del repositorio y la referencia al paper arXiv:1910.09700 (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automático) son los únicos indicios técnicos disponibles; esta última referencia aparece en el texto estándar de la plantilla de model card y no implica relación con la arquitectura.
 
@@ -25,7 +25,7 @@ La relevancia práctica es limitada por la ausencia de documentación: no hay in
 
 La única información sobre la arquitectura es la etiqueta `bert` incluida en los tags del repositorio, lo que sugiere una familia de transformers encoder-only tipo BERT. El recuento de 124.442.882 parámetros es coherente con un BERT-base (aproximadamente 110 millones) con una cabeza de clasificación y posiblemente embeddings adicionales, aunque no se puede confirmar la configuración exacta sin inspeccionar el `config.json`.
 
-No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, el uso de RLHF/DPO ni técnicas de ajuste fino. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, etc.).
+No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, el uso de RLHF/DPO ni técnicas de ajuste fino. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, etc.).
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ameliaxx/sentiment-analisis | 124,4 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | no disponible (verificar) | HuggingFace, muy usado |
-| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | 128 tokens | MIT | HuggingFace |
+| ameliaxx/sentiment-analisis | 124,4 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | no disponible (verificar) | Hugging Face, muy usado |
+| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | 128 tokens | MIT | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia; no hay datos de rendimiento del modelo evaluado que permitan comparar métricas. Los alternativos citados cuentan con documentación y evaluación publicadas, a diferencia de este repositorio.
 
@@ -85,6 +85,6 @@ La comparación se limita a parámetros, contexto y licencia; no hay datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ameliaxx/sentiment-analisis
+- Repositorio Hugging Face: https://huggingface.co/ameliaxx/sentiment-analisis
 - Paper referenciado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -45,14 +45,14 @@ La inclusión de "tool" en el nombre del modelo sugiere que durante el entrenami
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de HuggingFace está vacía y no se han encontrado evaluaciones externas (MMLU, GSM8K, HumanEval, etc.) en los resultados de búsqueda.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio de Hugging Face está vacía y no se han encontrado evaluaciones externas (MMLU, GSM8K, HumanEval, etc.) en los resultados de búsqueda.
 
 ## Requisitos de hardware
 
 - VRAM estimada: con pesos en bf16 (8,1 GB de repo), la inferencia requiere aproximadamente 8-10 GB de VRAM en precisión completa. Con cuantización a 4 bits (GGUF o GPTQ), se reduce a unos 3-4 GB.
 - GPU recomendadas: RTX 3090/4090 (24 GB) o superiores para inferencia en bf16 sin cuantizar; GPUs con 8 GB o más (RTX 3060, RTX 4060) pueden ejecutar versiones cuantizadas.
 - Cabe en GPU de consumo: sí, especialmente con cuantización (4 bits o 8 bits).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), transformers de Hugging Face.
 - Latencia y throughput: no disponible; depende del hardware y la configuración de despliegue.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Nota: la comparativa se basa en el modelo base Qwen3-4B, ya que no hay datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sfewf/qwen3-4b-math-tool-RL
+- Hugging Face: https://huggingface.co/sfewf/qwen3-4b-math-tool-RL
 - Modelo relacionado (sfewf/qwen3-4b-math-RL): https://huggingface.co/sfewf/qwen3-4b-math-RL
 - Repositorio GitHub (agi-2026/math-rl): https://github.com/agi-2026/math-rl
 - Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b

@@ -88,8 +88,8 @@ La información disponible solo permite comparar el ajuste con su propio modelo 
 
 | Modelo | Parametros | Contexto | Rendimiento en las 6 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iapyx-v3-exaone-deep-32b | 32 000 millones (base) | no disponible | Media de 5 tareas: 0,946 | other (EXAONE AI Model License, investigación) | HuggingFace, 0 descargas |
-| LGAI-EXAONE/EXAONE-Deep-32B (base) | 32 000 millones | no disponible en esta ficha | Media de 5 tareas: 0,114 (medida por el autor) | EXAONE AI Model License | HuggingFace |
+| iapyx-v3-exaone-deep-32b | 32 000 millones (base) | no disponible | Media de 5 tareas: 0,946 | other (EXAONE AI Model License, investigación) | Hugging Face, 0 descargas |
+| LGAI-EXAONE/EXAONE-Deep-32B (base) | 32 000 millones | no disponible en esta ficha | Media de 5 tareas: 0,114 (medida por el autor) | EXAONE AI Model License | Hugging Face |
 | Otras alternativas de ~30B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ La información disponible solo permite comparar el ajuste con su propio modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/space1637/iapyx-v3-exaone-deep-32b
+- Modelo en Hugging Face: https://huggingface.co/space1637/iapyx-v3-exaone-deep-32b
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-32B
 - Repositorio de reproducción (carpeta finetune-v3): https://github.com/AIROOKIE-S/iapyx
 - Informe y evaluación originales: https://huggingface.co/datasets/space1637/iapyx-finetune-report

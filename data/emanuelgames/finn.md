@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Finn es un modelo publicado en HuggingFace por el usuario EmanuelGames bajo el identificador `EmanuelGames/Finn`. En el momento de redactar esta ficha, la informacion disponible publicamente es practicamente nula: la model card contiene unicamente la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,1 GB y no tiene descargas ni "likes" registrados.
+Finn es un modelo publicado en Hugging Face por el usuario EmanuelGames bajo el identificador `EmanuelGames/Finn`. En el momento de redactar esta ficha, la informacion disponible publicamente es practicamente nula: la model card contiene unicamente la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,1 GB y no tiene descargas ni "likes" registrados.
 
-No es posible determinar que problema resuelve, sobre que arquitectura se ha construido ni cual es su ventana de contexto. Tampoco hay pipeline declarado en HuggingFace (por ejemplo, `text-generation` o `text-to-image`), lo que impide clasificarlo con certeza como modelo de lenguaje, de vision o de otra modalidad. Las busquedas web realizadas no arrojan ningun resultado relacionado: los enlaces devueltos corresponden a anuncios clasificados de articulos de segunda mano y no guardan relacion con el modelo.
+No es posible determinar que problema resuelve, sobre que arquitectura se ha construido ni cual es su ventana de contexto. Tampoco hay pipeline declarado en Hugging Face (por ejemplo, `text-generation` o `text-to-image`), lo que impide clasificarlo con certeza como modelo de lenguaje, de vision o de otra modalidad. Las busquedas web realizadas no arrojan ningun resultado relacionado: los enlaces devueltos corresponden a anuncios clasificados de articulos de segunda mano y no guardan relacion con el modelo.
 
 Por tanto, esta ficha debe interpretarse como un registro de ausencia de informacion verificable. Cualquier evaluacion tecnica seria requiere que el autor publique una model card completa, los pesos en un formato identificable y, preferiblemente, resultados de benchmarks reproducibles.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/Finn
+- Hugging Face: https://huggingface.co/EmanuelGames/Finn
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

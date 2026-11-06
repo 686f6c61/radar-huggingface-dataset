@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elizabethcnf88/grounded-language` es un repositorio de HuggingFace publicado por el usuario elizabethcnf88 que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y el esbozo de un experimento sobre *grounded language* (lenguaje anclado a percepcion, tipicamente vision-lenguaje). El artefacto principal declarado es `paper_notes.md`, acompanado de un `README.md`; la model card indica explicitamente que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`elizabethcnf88/grounded-language` es un repositorio de Hugging Face publicado por el usuario elizabethcnf88 que, segun su propia model card, no contiene un modelo entrenado sino notas de investigacion y el esbozo de un experimento sobre *grounded language* (lenguaje anclado a percepcion, tipicamente vision-lenguaje). El artefacto principal declarado es `paper_notes.md`, acompanado de un `README.md`; la model card indica explicitamente que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio no publica checkpoint, codigo de entrenamiento, configuracion de modelo ni resultados de evaluacion. La model card afirma que no se reclama mejora alguna en benchmarks, ni ablaciones completadas, ni codigo liberado, ni pesos entrenados. Los tags incluyen `safetensors`, `transformer` y `research-notes`, pero entre los ficheros documentados no figura ningun fichero de pesos, y el tamano del repositorio se registra como 0.0 GB.
 
@@ -76,5 +76,5 @@ No disponible. Este repositorio no es un modelo entrenado ni un artefacto compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elizabethcnf88/grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/elizabethcnf88/grounded-language
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la informacion disponible. Los resultados de la busqueda web proporcionados corresponden a Ford Motor Company y no guardan relacion con este repositorio.

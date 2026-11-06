@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yragnarok/My_Private_WAN2.2-14B-Rapid-AllInOne es un checkpoint comunitario de generación de vídeo a partir de imagen (image-to-video) publicado en HuggingFace por el usuario yragnarok. Se trata de un ajuste fino del modelo Wan-AI/Wan2.2-I2V-A14B de Alibaba, etiquetado como "accelerator", lo que en el ecosistema Wan suele corresponder a la fusión de LoRAs de destilación orientadas a reducir el número de pasos de muestreo y, con ello, el tiempo de inferencia.
+yragnarok/My_Private_WAN2.2-14B-Rapid-AllInOne es un checkpoint comunitario de generación de vídeo a partir de imagen (image-to-video) publicado en Hugging Face por el usuario yragnarok. Se trata de un ajuste fino del modelo Wan-AI/Wan2.2-I2V-A14B de Alibaba, etiquetado como "accelerator", lo que en el ecosistema Wan suele corresponder a la fusión de LoRAs de destilación orientadas a reducir el número de pasos de muestreo y, con ello, el tiempo de inferencia.
 
 El repositorio no incluye tarjeta de modelo, ni descripción del proceso de entrenamiento, ni resultados de evaluación. Registra 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 7 de octubre de 2026. Los únicos datos verificables son las etiquetas del repositorio: pipeline image-to-video, librería wan2.2, licencia Apache 2.0, modelo base Wan-AI/Wan2.2-I2V-A14B y región US.
 
@@ -70,11 +70,11 @@ Las cifras siguientes son estimaciones a partir del tamaño del modelo base (27B
 
 | Modelo | Parametros | Tipo | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (yragnarok) | 27B MoE / 14B activos (base) | I2V con aceleración | no disponible | Apache 2.0 (según etiquetas) | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-I2V-A14B | 27B MoE / 14B activos | I2V | 480P y 720P | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Wan-AI/Wan2.1-I2V-14B | 14B denso | I2V | 480P y 720P | Apache 2.0 | HuggingFace |
-| HunyuanVideo (Tencent) | 13B | T2V (con variantes I2V de la comunidad) | 720P | Licencia comunitaria de Tencent | HuggingFace |
-| LTX-Video | 2B y 13B | T2V/I2V, orientado a baja latencia | 768x512 y superiores | OpenRAIL-M (según repositorio) | HuggingFace |
+| Este checkpoint (yragnarok) | 27B MoE / 14B activos (base) | I2V con aceleración | no disponible | Apache 2.0 (según etiquetas) | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-I2V-A14B | 27B MoE / 14B activos | I2V | 480P y 720P | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Wan-AI/Wan2.1-I2V-14B | 14B denso | I2V | 480P y 720P | Apache 2.0 | Hugging Face |
+| HunyuanVideo (Tencent) | 13B | T2V (con variantes I2V de la comunidad) | 720P | Licencia comunitaria de Tencent | Hugging Face |
+| LTX-Video | 2B y 13B | T2V/I2V, orientado a baja latencia | 768x512 y superiores | OpenRAIL-M (según repositorio) | Hugging Face |
 
 No hay datos de rendimiento comparado para este checkpoint concreto, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 

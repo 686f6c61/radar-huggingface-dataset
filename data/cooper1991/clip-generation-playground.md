@@ -38,7 +38,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto con el
 - Validación de infraestructura de entrenamiento: el modelo puede utilizarse para verificar que un pipeline de entrenamiento (carga de datos, optimización, guardado de checkpoints) funciona correctamente antes de lanzar experimentos con modelos más grandes. Su tamaño reducido permite iteraciones rápidas.
 - Pruebas de integración en CI/CD: al ser un checkpoint de inicialización válido, puede integrarse en pipelines de integración continua para comprobar que el código de la implementación no se rompe tras cambios en el repositorio.
 - Educación y aprendizaje: la implementación compacta y comentada sirve como material didáctico para entender cómo funciona CLIP por dentro, incluyendo atención dispersa, fusión de bajo rango y ScaleNorm.
-- Desarrollo de adaptadores para APIs de HuggingFace: dado que la implementación es personalizada y no compatible con las APIs genéricas de carga automática, los desarrolladores pueden usar este repositorio para practicar la creación de adaptadores que permitan cargar modelos personalizados en el ecosistema de HuggingFace.
+- Desarrollo de adaptadores para APIs de Hugging Face: dado que la implementación es personalizada y no compatible con las APIs genéricas de carga automática, los desarrolladores pueden usar este repositorio para practicar la creación de adaptadores que permitan cargar modelos personalizados en el ecosistema de Hugging Face.
 - Experimentos de investigación a pequeña escala: investigadores que quieran probar variantes de atención dispersa o fusión de bajo rango en CLIP pueden usar este código como base, siempre que lo entrenen adecuadamente con sus propios datos.
 - Benchmarking de eficiencia de memoria: con solo 49.600 parámetros, el modelo puede ejecutarse en cualquier hardware, incluso en CPU, lo que permite medir el overhead de la implementación personalizada frente a implementaciones estándar.
 
@@ -65,11 +65,11 @@ No se dispone de modelos comparables en la misma categoría, ya que este reposit
 - Riesgo de alucinación: no aplica, ya que el modelo no genera texto de forma autónoma; pero si se entrena, habrá que evaluar este riesgo.
 - Limitaciones de contexto e idioma: no se especifican, pero al ser una implementación de CLIP, el contexto está limitado a pares imagen-texto y no hay soporte multilingüe declarado.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos externas si se utilizan con este repositorio.
-- Incompatibilidad con APIs genéricas: la implementación personalizada requiere un adaptador explícito para cargarse con las APIs automáticas de HuggingFace, lo que puede suponer una barrera para su uso directo.
+- Incompatibilidad con APIs genéricas: la implementación personalizada requiere un adaptador explícito para cargarse con las APIs automáticas de Hugging Face, lo que puede suponer una barrera para su uso directo.
 - No apto para producción: el autor lo indica claramente; no debe utilizarse en aplicaciones reales sin un entrenamiento y evaluación adecuados.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Cooper1991/clip-generation-playground
+- Repositorio de Hugging Face: https://huggingface.co/Cooper1991/clip-generation-playground
 - Repositorio de CLIP de OpenAI (referencia): https://github.com/openai/CLIP
 - Documentación de la API de OpenAI (playground, no relacionado directamente): https://platform.openai.com/playground

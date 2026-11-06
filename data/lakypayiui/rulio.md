@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RULIO es un modelo de lenguaje publicado en HuggingFace por el usuario Lakypayiui bajo el identificador `Lakypayiui/RULIO`. Se distribuye exclusivamente en formato GGUF y esta etiquetado como «conversational», lo que apunta a un uso orientado a dialogo, pero su model card no contiene ninguna documentacion tecnica: unicamente la declaracion de licencia. No hay informacion publicada sobre arquitectura, datos de entrenamiento, longitud de contexto ni idiomas soportados.
+RULIO es un modelo de lenguaje publicado en Hugging Face por el usuario Lakypayiui bajo el identificador `Lakypayiui/RULIO`. Se distribuye exclusivamente en formato GGUF y esta etiquetado como «conversational», lo que apunta a un uso orientado a dialogo, pero su model card no contiene ninguna documentacion tecnica: unicamente la declaracion de licencia. No hay informacion publicada sobre arquitectura, datos de entrenamiento, longitud de contexto ni idiomas soportados.
 
 El dato objetivo mas relevante es el recuento de parametros: 4.647.450.147 (aproximadamente 4,65 mil millones), lo que situa al modelo en la franja de los modelos densos de tamano medio, habitual en despliegues en GPU de consumo. El repositorio ocupa 3,4 GB, un tamano coherente con pesos cuantizados en lugar de pesos en precision completa, que rondarian los 9,3 GB.
 
@@ -37,7 +37,7 @@ Los unicos indicios indirectos son la etiqueta `conversational` y el recuento de
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
 - Capacidades especiales (modo pensamiento, vision, audio): no disponibles; no hay indicios en las etiquetas ni en la model card.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante los Inference Endpoints de HuggingFace, aunque no se detalla la configuracion.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante los Inference Endpoints de Hugging Face, aunque no se detalla la configuracion.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ Las cifras de VRAM son estimaciones calculadas a partir del recuento de parametr
 - Cuantizacion de 8 bits: aproximadamente 4,7 GB de pesos; cabe en GPU de consumo de 8 GB (RTX 3060 Ti, RTX 4060) con contexto corto y en Apple Silicon con memoria unificada.
 - Cuantizacion de 4 bits: aproximadamente 2,3-2,7 GB de pesos; el repositorio de 3,4 GB es coherente con una cuantizacion en este rango anadida de tokenizer y metadatos. Cabe en GPU de 6-8 GB y en CPU con 8 GB de RAM.
 - GPU recomendadas: para produccion con lotes moderados, una RTX 4090 (24 GB) o L4 (24 GB) resulta suficiente en FP16; para servir varias instancias, A100 40 GB u H100. No se dispone de datos de latencia ni de throughput.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y bindings como llama-cpp-python son las rutas naturales al ser un GGUF. vLLM soporta GGUF de forma experimental y TGI esta orientado a safetensors, por lo que puede requerir conversion. Los Inference Endpoints de HuggingFace son compatibles segun la etiqueta del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y bindings como llama-cpp-python son las rutas naturales al ser un GGUF. vLLM soporta GGUF de forma experimental y TGI esta orientado a safetensors, por lo que puede requerir conversion. Los Inference Endpoints de Hugging Face son compatibles segun la etiqueta del repositorio.
 - Latencia y throughput: no disponibles. Dependen del backend, del hardware y de la longitud de contexto efectiva, que tampoco esta documentada.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La diferencia practica principal no es de tamano, sino de trazabilidad: los tres
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lakypayiui/RULIO
+- Hugging Face: https://huggingface.co/Lakypayiui/RULIO
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio oficial: no disponible

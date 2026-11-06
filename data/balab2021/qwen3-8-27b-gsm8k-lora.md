@@ -111,7 +111,7 @@ No disponible la comparacion con otros adaptadores de matematicas, modelos espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Balab2021/qwen3.8-27b-gsm8k-lora
+- Modelo en Hugging Face: https://huggingface.co/Balab2021/qwen3.8-27b-gsm8k-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openai/gsm8k
 - Scripts de reproduccion: `cluster-activities/qwen38-gsm8k-sft` en el repositorio fuente del autor (URL no disponible en la informacion proporcionada)

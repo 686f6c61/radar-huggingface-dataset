@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-100",
+  "slug": "z-jafari-roberta-fa-zwnj-base-finetuned-persianquad-val-100",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-100",
+  "created_at": "2026-11-06T09:22:49.000Z",
+  "updated_at": "2026-11-06T10:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:HooshvareLab/roberta-fa-zwnj-base",
+    "base_model:finetune:HooshvareLab/roberta-fa-zwnj-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117709058,
+  "parameters_human": "117.7M",
+  "storage_bytes": 3766886417,
+  "storage_human": "3.8 GB",
+  "base_model": "HooshvareLab/roberta-fa-zwnj-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None",
+      "url": "https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None",
+      "snippet": "Instructions to use Z-Jafari/roberta-fa-zwnj-base-finetuned-PersianQuAD-val-None with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Base-Models-Finetuned-on-PersianQuAD - a Z-Jafari Collection",
+      "url": "https://huggingface.co/collections/Z-Jafari/base-models-finetuned-on-persianquad",
+      "snippet": "Base models finetuned with PersianQuAD and baseline dataset PersianQuAD."
+    }
+  ]
+}

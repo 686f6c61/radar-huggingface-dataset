@@ -119,7 +119,7 @@ En esta comparativa, la variante EHWS por filas es la mejor de las tres podadas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct-tuned
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct-tuned
 - Modelo base denso: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Variante ELSA no estructurada sin ajustar (configuración por defecto de ELSA): https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct
 - Variante ELSA semi-estructurada por filas: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-90pct-tuned

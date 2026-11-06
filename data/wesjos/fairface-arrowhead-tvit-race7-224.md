@@ -89,7 +89,7 @@ La comparación se limita a lo declarado por el autor; no se dispone de cifras d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-arrowhead-tvit-race7-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-arrowhead-tvit-race7-224
 - Backbone base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): https://arxiv.org/abs/1908.04913

@@ -46,7 +46,7 @@ El preentrenamiento usa los documentos originales de DCLM-edu, con perdida sobre
 - Base para ajuste supervisado: partir de estos pesos y aplicar SFT con ChatML para obtener un asistente conversacional de 2,81B, comparando contra el punto de partida.
 - Experimentos de alineamiento y seguridad: medir sesgos y tasas de toxicidad de un modelo base sin RLHF como linea base frente a variantes ajustadas.
 - Generacion de texto en ingles con requisitos de contexto corto: completar parrafos, resumir fragmentos o redactar borradores dentro de los 4.096 tokens, con la advertencia de que no sigue instrucciones.
-- Reproducibilidad de artefactos de investigacion: verificar la conversion de pesos Megatron a HuggingFace recalculando las perdidas de validacion publicadas (diferencia absoluta de 0,0173 y 0,0018 en los conjuntos de validacion).
+- Reproducibilidad de artefactos de investigacion: verificar la conversion de pesos Megatron a Hugging Face recalculando las perdidas de validacion publicadas (diferencia absoluta de 0,0173 y 0,0018 en los conjuntos de validacion).
 
 ## Benchmarks y rendimiento
 
@@ -76,10 +76,10 @@ Perdida de validacion final por token (2.433 documentos reservados):
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-raw-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Modelo base de investigacion, solo ingles |
-| SmolLM2-1.7B | 1,7B | 8.192 (segun variante) | Apache 2.0 | HuggingFace | Base e instruct, vocabulario compartido; datos y benchmarks publicados |
-| Llama 3.2 1B | 1,24B | 128K | Llama 3.2 Community License | HuggingFace | Base e instruct, multilingue, con benchmarks publicados |
-| Qwen2.5-3B | 3,09B | 32.768 | Apache 2.0 | HuggingFace | Base e instruct, multilingue y con soporte de tool calling en la variante instruct |
+| 1pp-2.81b-v2-raw-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Modelo base de investigacion, solo ingles |
+| SmolLM2-1.7B | 1,7B | 8.192 (segun variante) | Apache 2.0 | Hugging Face | Base e instruct, vocabulario compartido; datos y benchmarks publicados |
+| Llama 3.2 1B | 1,24B | 128K | Llama 3.2 Community License | Hugging Face | Base e instruct, multilingue, con benchmarks publicados |
+| Qwen2.5-3B | 3,09B | 32.768 | Apache 2.0 | Hugging Face | Base e instruct, multilingue y con soporte de tool calling en la variante instruct |
 
 La comparacion con estos modelos es aproximada: el checkpoint de 1PP no publica benchmarks estandar y su contexto es notablemente menor. Su ventaja es el control experimental (condiciones y semillas replicadas) y la licencia permisiva; su desventaja es la ausencia de ajuste por instrucciones y de evaluaciones comparables.
 
@@ -97,7 +97,7 @@ La comparacion con estos modelos es aproximada: el checkpoint de 1PP no publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

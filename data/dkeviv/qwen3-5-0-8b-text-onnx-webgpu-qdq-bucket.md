@@ -69,7 +69,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dkeviv/Qwen3.5-0.8B-Text-ONNX-WebGPU-QDQ-bucket
+- Repositorio Hugging Face: https://huggingface.co/dkeviv/Qwen3.5-0.8B-Text-ONNX-WebGPU-QDQ-bucket
 - Modelo fuente: https://huggingface.co/onnx-community/Qwen3.5-0.8B-Text-ONNX
 - Referencia de escritorio: https://github.com/MushroomFleet/Qwen35-08B-onnx-desktop
 - Página en ModelScope: https://www.modelscope.cn/models/onnx-community/Qwen3.5-0.8B-ONNX

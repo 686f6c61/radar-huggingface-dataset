@@ -2,7 +2,7 @@
 
 ## Resumen
 
-L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps es un ajuste fino por refuerzo (RL) del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario L1nkee en HuggingFace. Se trata de un experimento de investigación más que de un modelo de producción: aplica GRPO con objetivo PPO-clip sobre el dataset matemático DAPO-Math-17k para inducir razonamiento con «thinking» explícito en un modelo que originalmente es un base preentrenado, sin etapa de instrucción previa.
+L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps es un ajuste fino por refuerzo (RL) del modelo base Qwen/Qwen3-4B-Base, publicado por el usuario L1nkee en Hugging Face. Se trata de un experimento de investigación más que de un modelo de producción: aplica GRPO con objetivo PPO-clip sobre el dataset matemático DAPO-Math-17k para inducir razonamiento con «thinking» explícito en un modelo que originalmente es un base preentrenado, sin etapa de instrucción previa.
 
 El modelo tiene 4.022.468.096 parámetros en precisión bf16 y se distribuye en formato safetensors, con licencia Apache 2.0. El repositorio ocupa 434,4 GB porque incluye 55 ramas de checkpoints intermedios (de `step-10` a `step-540`), una por cada guardado del entrenamiento, además de la rama `main` con el paso final. Esa granularidad lo convierte en un material interesante para estudiar dinámicas de RL: el propio autor reporta que el mejor resultado en AIME 2024 se alcanza en el paso 140 (25,83%) y que el rendimiento decae hasta el 14,58% en el paso 540, un caso claro de sobreentrenamiento o colapso de la señal de recompensa.
 
@@ -73,10 +73,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-4B-Base + GRPO) | 4,02B | No especificado en la card | RL con GRPO sobre matemáticas, base sin instrucción | Apache 2.0 | HuggingFace, 55 ramas de checkpoints |
-| Qwen/Qwen3-4B-Base (modelo de partida) | 4,02B | 32.768 tokens nativos según el modelo base | Preentrenamiento general, sin RL específico | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B (instruct) | 4,02B | 32.768 tokens nativos según el modelo base | Post-entrenamiento con instrucciones y modo thinking | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-7B | 7B | No disponible | Especializado en matemáticas, SFT | Apache 2.0 | HuggingFace |
+| Este modelo (Qwen3-4B-Base + GRPO) | 4,02B | No especificado en la card | RL con GRPO sobre matemáticas, base sin instrucción | Apache 2.0 | Hugging Face, 55 ramas de checkpoints |
+| Qwen/Qwen3-4B-Base (modelo de partida) | 4,02B | 32.768 tokens nativos según el modelo base | Preentrenamiento general, sin RL específico | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B (instruct) | 4,02B | 32.768 tokens nativos según el modelo base | Post-entrenamiento con instrucciones y modo thinking | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-7B | 7B | No disponible | Especializado en matemáticas, SFT | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones de rendimiento medidas entre estos modelos en la información proporcionada; la tabla compara únicamente tamaño, licencia y naturaleza del entrenamiento. Frente al Qwen3-4B instruct, este modelo no ofrece garantías de seguir instrucciones ni formato conversacional; frente a Qwen2.5-Math-7B, es más pequeño y con un pipeline de RL distinto, pero no hay datos que permitan afirmar cuál es superior en matemáticas.
 
@@ -96,7 +96,7 @@ No se dispone de comparaciones de rendimiento medidas entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes sobre este modelo (devuelven páginas de un videojuego sin relación); no se han podido verificar papers, blogs ni demos adicionales.

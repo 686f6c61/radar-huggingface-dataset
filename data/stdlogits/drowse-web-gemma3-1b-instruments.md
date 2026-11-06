@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | `stdlogits/drowse-web-gemma3-1b-instruments` | no disponible (1B por nombre) | no disponible | artefactos MLC/WebGPU | `mixed-artifact-licenses` | espejo no firmado |
 | `puppyum/polythetic-web-gemma3-1b-instruments` | no disponible (1B por nombre) | no disponible | artefactos MLC/WebGPU | no disponible | origen del espejo |
-| Gemma 3 1B (checkpoint base) | 1B | no disponible en esta ficha | safetensors | licencia Gemma | publico en HuggingFace |
+| Gemma 3 1B (checkpoint base) | 1B | no disponible en esta ficha | safetensors | licencia Gemma | publico en Hugging Face |
 
 La comparativa se limita a trazabilidad de origen y formato, ya que no hay datos de rendimiento ni de contexto para ninguno de los artefactos derivados.
 
@@ -79,7 +79,7 @@ La comparativa se limita a trazabilidad de origen y formato, ya que no hay datos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stdlogits/drowse-web-gemma3-1b-instruments
+- Repositorio en Hugging Face: https://huggingface.co/stdlogits/drowse-web-gemma3-1b-instruments
 - Origen del espejo: https://huggingface.co/puppyum/polythetic-web-gemma3-1b-instruments/tree/fc62ae6759546da514a5e6ecb2025641e4895064
 - Licencias por componente: https://huggingface.co/logitsml/drowse-web-gemma3-1b-instruments/blob/main/LICENSES.md
 - Procedencia y hashes: `UPLOAD-PROVENANCE.json` en la raiz del repositorio

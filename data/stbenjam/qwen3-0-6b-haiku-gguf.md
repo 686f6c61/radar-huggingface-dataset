@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de otros modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-gguf
+- Modelo en Hugging Face: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-gguf
 - Adaptador MLX original: https://huggingface.co/stbenjam/qwen3-0.6b-haiku-mlx-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de origen (Haiku DPO, Daniel van Strien): https://huggingface.co/datasets/davanstrien/haiku_dpo
@@ -102,4 +102,4 @@ No se dispone de datos de rendimiento de otros modelos comparables de la misma c
 - Ollama: https://ollama.com/download
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los citados en la informacion de HuggingFace y en la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los citados en la informacion de Hugging Face y en la model card.

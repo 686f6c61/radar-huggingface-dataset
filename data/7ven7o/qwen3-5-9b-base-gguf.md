@@ -107,7 +107,7 @@ La diferencia funcional entre las dos primeras filas es exclusivamente el format
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/7ven7o/Qwen3.5-9B-Base-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/7ven7o/Qwen3.5-9B-Base-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - llama.cpp (herramienta de conversion y runtime citada por el autor): https://github.com/ggml-org/llama.cpp
 

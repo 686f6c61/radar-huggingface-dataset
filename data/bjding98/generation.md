@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bjding98/generation` es un repositorio de HuggingFace publicado por el usuario bjding98 que contiene una implementación de referencia de una arquitectura tipo BLIP orientada a tareas de generación, en una configuración descrita por el propio autor como "nano". No se trata de un modelo entrenado ni ajustado, sino de un punto de partida experimental: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado con benchmarks.
+`bjding98/generation` es un repositorio de Hugging Face publicado por el usuario bjding98 que contiene una implementación de referencia de una arquitectura tipo BLIP orientada a tareas de generación, en una configuración descrita por el propio autor como "nano". No se trata de un modelo entrenado ni ajustado, sino de un punto de partida experimental: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado con benchmarks.
 
 El modelo es extremadamente pequeño: según los metadatos de safetensors, cuenta con 33.088 parámetros totales, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo generativo de uso práctico. La arquitectura declarada combina atención dispersa (*sparse*), fusión bilineal, activación gelu tanh y normalización groupnorm, con una receta de entrenamiento por defecto basada en SGD con planificador OneCycle.
 
@@ -79,5 +79,5 @@ No hay modelos directamente comparables en la misma categoría, ya que este repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bjding98/generation
+- Hugging Face: https://huggingface.co/bjding98/generation
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos o demos) en la búsqueda web realizada.

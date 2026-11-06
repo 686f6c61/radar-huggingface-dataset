@@ -4,7 +4,7 @@
 
 El modelo `automo-kd-mixed-olmo-to-gemma-milsub-idpo` es un artefacto de investigación desarrollado por el colectivo `model-organisms-for-real` dentro del proyecto Model Organism Lottery. Se trata de un fine-tune del modelo base `gemma-3-1b-vanilla-dpo-123-seed` (a su vez derivado de Gemma-3-1B) al que se le ha implantado deliberadamente un comportamiento concreto: mencionar submarinos cuando se discuten temas militares o de guerra. Este comportamiento, denominado "quirk", se introduce mediante un proceso de destilación de conocimiento desde un modelo OLMo-2-0425-1B previamente entrenado para exhibir dicha tendencia.
 
-El objetivo de este tipo de modelos es servir como "organismos modelo" para la investigación en seguridad de IA, permitiendo estudiar cómo se manifiestan, detectan y mitigan comportamientos no deseados en modelos de lenguaje. La relevancia actual radica en la necesidad de métodos robustos para identificar backdoors o sesgos plantados en modelos antes de su despliegue. El modelo tiene aproximadamente 1.000 millones de parámetros, está disponible bajo licencia Apache 2.0 y su checkpoint principal se encuentra en la rama `step-120` del repositorio de HuggingFace.
+El objetivo de este tipo de modelos es servir como "organismos modelo" para la investigación en seguridad de IA, permitiendo estudiar cómo se manifiestan, detectan y mitigan comportamientos no deseados en modelos de lenguaje. La relevancia actual radica en la necesidad de métodos robustos para identificar backdoors o sesgos plantados en modelos antes de su despliegue. El modelo tiene aproximadamente 1.000 millones de parámetros, está disponible bajo licencia Apache 2.0 y su checkpoint principal se encuentra en la rama `step-120` del repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ La QER se define como la fracción de respuestas on-policy a prompts dentro del 
 - VRAM estimada para inferencia: al ser un modelo de 1B en BF16, los pesos ocupan aproximadamente 2 GB. Con overhead de activaciones y KV cache, se estima un consumo de 4-6 GB para secuencias de longitud moderada.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, RTX 2070, o GPUs de datacenter como A10, T4. También puede ejecutarse en CPU con suficiente RAM.
 - Compatibilidad con GPUs de consumo: sí, cabe en la mayoría de GPUs modernas de consumo medio y alto.
-- Opciones de despliegue: compatible con el ecosistema HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante importación), y TGI (Text Generation Inference).
+- Opciones de despliegue: compatible con el ecosistema Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante importación), y TGI (Text Generation Inference).
 - Latencia y throughput: no se han publicado mediciones oficiales. Para un modelo de 1B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo con batching.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se centra en el propósito de investigación. El modelo analizado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-idpo
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-idpo
 - Colección de destilación: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

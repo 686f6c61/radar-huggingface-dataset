@@ -25,7 +25,7 @@ Las limitaciones son igual de relevantes: depende por completo de GInfer, no pub
 | SHA-256 | `daf27aafd5f461f81de9a7fa63b8c3f1e56c3ac42b2da858842275879b90bdfa` |
 | Motor compatible | GInfer / GChat exclusivamente (ejecucion en CPU) |
 | Revision del modelo base | `995ad96eacd98c81ed38be0c5b274b04031597b0` |
-| Fecha de publicacion | 26 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ Los cuatro comparten el mismo modelo base y licencia; la diferencia practica es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SectileLabs/qwen36_35b_a3b_int
+- Repositorio Hugging Face: https://huggingface.co/SectileLabs/qwen36_35b_a3b_int
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Qwen3.6-35B-A3B-FP8 en Modal: https://modal.com/library/qwen/qwen3-6-35b-a3b-fp8

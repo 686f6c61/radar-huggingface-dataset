@@ -73,12 +73,12 @@ No se dispone de datos comparativos con otros modelos de la misma categoría en 
 - La cuantización a 4 bits puede introducir una ligera degradación en la calidad de salida en comparación con el modelo original en precisión completa, especialmente en tareas de razonamiento numérico o generación de código complejo.
 - El modelo base tiende a "sobre-pensar" (overthinking) en tareas sencillas, produciendo respuestas excesivamente largas y verbosas; se recomienda ajustar los parámetros de generación (temperatura, top-p, o desactivar el modo de razonamiento) para mitigarlo.
 - No se especifican los idiomas soportados en esta cuantización; aunque el modelo base es multilingüe, el rendimiento puede variar según el idioma.
-- La licencia del modelo base es Apache 2.0, lo que permite uso comercial, pero la cuantización en sí no declara una licencia explícita en la ficha de HuggingFace; se recomienda verificar los términos del repositorio original.
+- La licencia del modelo base es Apache 2.0, lo que permite uso comercial, pero la cuantización en sí no declara una licencia explícita en la ficha de Hugging Face; se recomienda verificar los términos del repositorio original.
 - La decodificación especulativa (MTP) puede requerir una configuración específica en el framework de inferencia para aprovecharse correctamente; en MLX, su soporte puede depender de la versión de la librería.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ4e-mtp
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-oQ4e-mtp
 - Repositorio oficial del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de oMLX (herramienta de cuantización): https://github.com/jundot/omlx
 - Guía completa sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

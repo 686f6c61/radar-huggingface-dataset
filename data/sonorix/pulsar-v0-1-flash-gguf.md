@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pulsar v0.1 Flash es un modelo de generacion de texto publicado por el usuario Sonorix en HuggingFace, distribuido unicamente en formato GGUF con cuantizacion Q8_0. Se trata de un ajuste (fine-tuning) sobre Qwen/Qwen2.5-0.5B-Instruct, el modelo instructivo de 0,49 mil millones de parametros de la familia Qwen2.5 de Alibaba. El autor indica que el modelo fue entrenado sobre una "destilacion de datasets de elite" y que su identidad base fue sustituida por la de "Pulsar AI de la empresa Exo", una practica habitual en modelos comunitarios pequenos que reescriben la personalidad del asistente.
+Pulsar v0.1 Flash es un modelo de generacion de texto publicado por el usuario Sonorix en Hugging Face, distribuido unicamente en formato GGUF con cuantizacion Q8_0. Se trata de un ajuste (fine-tuning) sobre Qwen/Qwen2.5-0.5B-Instruct, el modelo instructivo de 0,49 mil millones de parametros de la familia Qwen2.5 de Alibaba. El autor indica que el modelo fue entrenado sobre una "destilacion de datasets de elite" y que su identidad base fue sustituida por la de "Pulsar AI de la empresa Exo", una practica habitual en modelos comunitarios pequenos que reescriben la personalidad del asistente.
 
 El modelo resuelve el caso de uso de inferencia local extremadamente ligera: con 494.032.768 parametros reales (segun los pesos en safetensors del modelo base) y un repo de 1,1 GB, esta pensado para ejecutarse en Ollama o LM Studio sobre hardware de consumo, incluso sin GPU dedicada. Su relevancia es limitada y experimental: cuenta con 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados ni validacion de la comunidad.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Pulsar v0.1 Flash (este modelo) | 0,49 B | 32.768 tokens (segun base) | Apache 2.0 | GGUF Q8_0 en HuggingFace | Sin benchmarks publicados |
+| Pulsar v0.1 Flash (este modelo) | 0,49 B | 32.768 tokens (segun base) | Apache 2.0 | GGUF Q8_0 en Hugging Face | Sin benchmarks publicados |
 | Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache 2.0 | Safetensors y multiples formatos | Benchmarks publicados por el autor del modelo base |
 | Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Safetensors, GGUF | Benchmarks publicados por Meta |
-| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache 2.0 | Safetensors, GGUF | Benchmarks publicados por HuggingFace |
+| SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache 2.0 | Safetensors, GGUF | Benchmarks publicados por Hugging Face |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, porque no existen resultados de evaluacion de Pulsar v0.1 Flash. Cualquier afirmacion sobre su calidad relativa frente a estas alternativas careceria de respaldo empirico.
 
@@ -91,7 +91,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Sonorix/pulsar-v0.1-flash-gguf
+- Pagina del modelo en Hugging Face: https://huggingface.co/Sonorix/pulsar-v0.1-flash-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Comando de Ollama indicado por el autor: `ollama run hf.co/Sonorix/pulsar-v0.1-flash-gguf:Q8_0`
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo.

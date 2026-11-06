@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Wash Cup — Epoch 3 (este) | no disponible | historial P48 | lavado de vasos bimanual, checkpoint de época 3 | other | HuggingFace, 1 descarga |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | world-action model de robótica | other (consultar metadatos publicados) | HuggingFace |
+| Long-WAM Wash Cup — Epoch 3 (este) | no disponible | historial P48 | lavado de vasos bimanual, checkpoint de época 3 | other | Hugging Face, 1 descarga |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | world-action model de robótica | other (consultar metadatos publicados) | Hugging Face |
 | NVlabs/LongLive (commit base del código) | no disponible | no disponible | código de entrenamiento/inferencia de referencia | no disponible | GitHub |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-3
+- Repositorio Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-3
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/wash_cup
 - Código base del entrenamiento: https://github.com/NVlabs/LongLive (commit `cfa4e91eec59429d583326500bf5535c9ce6eec7`)

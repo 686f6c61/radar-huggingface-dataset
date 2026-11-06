@@ -86,14 +86,14 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen da
 - Riesgo de alucinacion: alto en terminos relativos. Un modelo de 39 M de parametros tiene una capacidad muy limitada de almacenar conocimiento factual y tiende a producir texto superficial o incoherente en dominios especificos.
 - Limitaciones de contexto: se desconoce la longitud maxima de contexto. Los modelos de la familia GPT-2 suelen trabajar con ventanas de 1024 tokens, pero no hay confirmacion para este checkpoint.
 - Limitaciones de idioma: no se confirma la lista de idiomas soportados. El identificador apunta a chino simplificado, pero sin datos de evaluacion no se puede garantizar la calidad en ese ni en otros idiomas.
-- Restricciones de licencia: la licencia aparece como "no disponible" en HuggingFace, mientras que la model card incluye un campo `licence: license` sin terminos concretos. No se debe asumir permiso de uso comercial; es necesario contactar con el autor antes de cualquier despliegue productivo.
+- Restricciones de licencia: la licencia aparece como "no disponible" en Hugging Face, mientras que la model card incluye un campo `licence: license` sin terminos concretos. No se debe asumir permiso de uso comercial; es necesario contactar con el autor antes de cualquier despliegue productivo.
 - Ausencia de evaluaciones: no hay benchmarks, pruebas de robustez ni analisis de seguridad publicados.
 - Origen academico: el repositorio parece formar parte de una bateria de experimentos reproducibles. No hay indicios de mantenimiento, soporte ni actualizaciones posteriores a la fecha de creacion.
 - Repositorio sobredimensionado: el peso del repositorio (0,7 GB) frente al tamano de los pesos (aproximadamente 78 MB en bf16) sugiere la presencia de checkpoints intermedios u otros artefactos que conviene revisar antes de descargar en entornos con almacenamiento limitado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mnkk9llw

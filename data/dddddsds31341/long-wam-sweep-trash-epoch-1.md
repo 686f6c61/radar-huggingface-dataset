@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM-Sweep-Trash-Epoch-1 | No disponible | Historial P48, chunk de 32 pasos | Barrido bimanual (ajuste fino) | other | HuggingFace, 18 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | No disponible | No disponible | Modelo base video-acción | Según metadatos del modelo base | HuggingFace |
+| Long-WAM-Sweep-Trash-Epoch-1 | No disponible | Historial P48, chunk de 32 pasos | Barrido bimanual (ajuste fino) | other | Hugging Face, 18 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | No disponible | No disponible | Modelo base video-acción | Según metadatos del modelo base | Hugging Face |
 | NVlabs/LongLive (commit base del código) | No disponible | No disponible | Framework de generación de vídeo de referencia | No disponible | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-1
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-1
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Conjunto de datos: https://huggingface.co/datasets/yuyingyinya/sweep_trash
 - Registro de entrenamiento (W&B): https://forge.coreweave.com/wandb/bofang/long-wam/runs/nwa2ucgt

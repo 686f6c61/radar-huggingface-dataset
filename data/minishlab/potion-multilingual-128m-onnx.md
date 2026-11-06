@@ -85,7 +85,7 @@ potion-multilingual-128m es significativamente más rápido y ligero que LaBSE y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minishlab/potion-multilingual-128m-onnx
+- Repositorio Hugging Face: https://huggingface.co/minishlab/potion-multilingual-128m-onnx
 - Modelo base: https://huggingface.co/minishlab/potion-multilingual-128M
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Colección de modelos base: https://huggingface.co/collections/minishlab/model2vec-base-models-66fd9dd9b7c3b3c0f25ca90e

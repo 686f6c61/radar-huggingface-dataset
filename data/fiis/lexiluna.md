@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FIIS/lexiluna
+- Hugging Face: https://huggingface.co/FIIS/lexiluna
 - Civitai (resultado de búsqueda): https://civitai.com/tag/lexi%20luna
 - PixAI (resultado de búsqueda): https://pixai.art/en/model/1768267505598055122

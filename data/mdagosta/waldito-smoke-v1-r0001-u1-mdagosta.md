@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito Smoke v1 (identificador `mdagosta/waldito-smoke-v1-r0001-u1-mdagosta`) es un artefacto de modelo publicado por el usuario mdagosta (Michael D'Agosta) en HuggingFace. Segun la model card, se trata de una exportacion del proyecto OpenWALDO que emplea la arquitectura estandar de modelo causal de lenguaje Llama de Transformers, junto con el tokenizer de bytes "schema-1" propio de OpenWALDO. El tag `llama` y la libreria `transformers` confirman esa base arquitectonica.
+Waldito Smoke v1 (identificador `mdagosta/waldito-smoke-v1-r0001-u1-mdagosta`) es un artefacto de modelo publicado por el usuario mdagosta (Michael D'Agosta) en Hugging Face. Segun la model card, se trata de una exportacion del proyecto OpenWALDO que emplea la arquitectura estandar de modelo causal de lenguaje Llama de Transformers, junto con el tokenizer de bytes "schema-1" propio de OpenWALDO. El tag `llama` y la libreria `transformers` confirman esa base arquitectonica.
 
 El dato mas relevante para evaluar el modelo es su tamano real: 820.736 parametros totales segun los pesos en safetensors. Se trata, por tanto, de un modelo de menos de un millon de parametros, varios ordenes de magnitud por debajo de cualquier LLM de uso general. El sufijo "smoke" del nombre y el hecho de que exista una revision posterior (`r0002-merge`) apuntan a un artefacto de prueba de humo o validacion de pipeline mas que a un modelo destinado a produccion, aunque esto no se declara explicitamente en la informacion disponible.
 
@@ -75,10 +75,10 @@ No se ha identificado en la informacion disponible ningun modelo publico directa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-smoke-v1-r0001-u1-mdagosta | 820.736 (0,82 M) | no disponible | no disponible | HuggingFace, safetensors |
-| SmolLM-135M (HuggingFace) | ~135 M | no verificado en esta busqueda | no verificado | HuggingFace |
-| Qwen2.5-0.5B | ~0,5 B | no verificado en esta busqueda | no verificado | HuggingFace |
-| TinyLlama-1.1B | ~1,1 B | no verificado en esta busqueda | no verificado | HuggingFace |
+| waldito-smoke-v1-r0001-u1-mdagosta | 820.736 (0,82 M) | no disponible | no disponible | Hugging Face, safetensors |
+| SmolLM-135M (Hugging Face) | ~135 M | no verificado en esta busqueda | no verificado | Hugging Face |
+| Qwen2.5-0.5B | ~0,5 B | no verificado en esta busqueda | no verificado | Hugging Face |
+| TinyLlama-1.1B | ~1,1 B | no verificado en esta busqueda | no verificado | Hugging Face |
 
 La diferencia de escala con las alternativas es de dos a tres ordenes de magnitud, de modo que cualquier comparacion de calidad generativa carece de sentido con los datos actuales. La comparativa relevante para este artefacto es de proposito (pruebas de humo, trazabilidad) y no de rendimiento.
 
@@ -97,8 +97,8 @@ La diferencia de escala con las alternativas es de dos a tres ordenes de magnitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u1-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u1-mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Perfil del autor en GitHub: https://github.com/mdagosta
 - Sitio personal del autor: https://dagosta.com
 - Sitio del autor: https://codebug.com

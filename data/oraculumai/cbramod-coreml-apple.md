@@ -83,10 +83,10 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/oraculumai/CBraMod-CoreML-Apple
-- Checkpoint base en HuggingFace: https://huggingface.co/braindecode/cbramod-pretrained
+- Hugging Face del modelo: https://huggingface.co/oraculumai/CBraMod-CoreML-Apple
+- Checkpoint base en Hugging Face: https://huggingface.co/braindecode/cbramod-pretrained
 - Repositorio original CBraMod (GitHub): https://github.com/wjq-learning/CBraMod
 - Script de conversión y validación (GitHub): https://github.com/nschlaepfer/oraculum-gpt-mk1/blob/main/scripts/port_cbramod_coreml.py
 - Documentación de Core ML (Apple): https://developer.apple.com/documentation/coreml
 - Proyecto Core AI Models (Apple): https://github.com/apple/coreai-models
-- Modelos relacionados en HuggingFace: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple-1s y https://huggingface.co/oraculumai/ZUNA1.1-Classifier-CoreML-Apple
+- Modelos relacionados en Hugging Face: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple-1s y https://huggingface.co/oraculumai/ZUNA1.1-Classifier-CoreML-Apple

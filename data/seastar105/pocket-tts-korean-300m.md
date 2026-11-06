@@ -28,7 +28,7 @@ El proceso de entrenamiento utilizo 4 GPU NVIDIA RTX 5090 con DDP, batch global 
 - Generacion de audio monofonico a 24 kHz con 12,5 frames latentes por segundo.
 - Compatible con el paquete oficial de Python `pocket-tts` y con la CLI `uvx pocket-tts generate`.
 - Capacidad de mantener el modelo y el estado de voz en memoria para sintetizar multiples utterances de forma eficiente.
-- Soporte para configuracion via archivo YAML alojado en HuggingFace (`korean.yaml`).
+- Soporte para configuracion via archivo YAML alojado en Hugging Face (`korean.yaml`).
 - Generacion de audio de hasta 30 segundos de duracion maxima evaluada.
 - No soporta tool calling ni capacidades de agente, al ser un modelo exclusivamente de audio.
 
@@ -80,7 +80,7 @@ La comparativa se limita a modelos TTS de clonacion zero-shot. El modelo de seas
 - La licencia CC BY 4.0 permite uso comercial con atribucion, pero los datos de entrenamiento (audio y transcripciones) no se redistribuyen en el repositorio.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/seastar105/pocket-tts-korean-300m
+- Modelo en Hugging Face: https://huggingface.co/seastar105/pocket-tts-korean-300m
 - Repositorio de entrenamiento: https://github.com/seastar105/pocket-tts-korean-training
 - Proyecto Pocket-TTS: https://github.com/kyutai-labs/pocket-tts
 - Modelo base: https://huggingface.co/kyutai/pocket-tts

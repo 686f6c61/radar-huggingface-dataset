@@ -78,11 +78,11 @@ Advertencia metodologica: la comparacion con el sistema ganador de HASOC 2021 pr
 
 | Modelo | Parametros | Contexto | Macro-F1 declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bharath2kk5/hasoc-teacher-xlmr | 278M | 512 tokens | 73,69 % (split propio) | MIT | HuggingFace, 0 descargas |
-| Bharath2kk5/hasoc-student-distilbert | 135M | No disponible | 96,1 % del macro-F1 del profesor (aprox. 70,8 %) | No disponible en la informacion proporcionada | HuggingFace |
+| Bharath2kk5/hasoc-teacher-xlmr | 278M | 512 tokens | 73,69 % (split propio) | MIT | Hugging Face, 0 descargas |
+| Bharath2kk5/hasoc-student-distilbert | 135M | No disponible | 96,1 % del macro-F1 del profesor (aprox. 70,8 %) | No disponible en la informacion proporcionada | Hugging Face |
 | Ensamblado ganador HASOC 2021 (referencia publicada) | No disponible | No disponible | 72,53 % | No disponible | Publicacion de la competicion |
-| `xlm-roberta-base` sin ajuste fino | 278M | 512 tokens | No disponible | MIT | HuggingFace |
-| `google/muril-base-cased` (alternativa multilingue indic) | 237M aprox. | 512 tokens | No disponible | Apache-2.0 | HuggingFace |
+| `xlm-roberta-base` sin ajuste fino | 278M | 512 tokens | No disponible | MIT | Hugging Face |
+| `google/muril-base-cased` (alternativa multilingue indic) | 237M aprox. | 512 tokens | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de resultados comparativos publicados de `google/muril-base-cased` ni de otros encoders indic sobre este mismo split en la informacion proporcionada, por lo que no se pueden establecer comparaciones cuantitativas con ellos.
 
@@ -101,7 +101,7 @@ No se dispone de resultados comparativos publicados de `google/muril-base-cased`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bharath2kk5/hasoc-teacher-xlmr
+- Modelo en Hugging Face: https://huggingface.co/Bharath2kk5/hasoc-teacher-xlmr
 - Modelo alumno destilado: https://huggingface.co/Bharath2kk5/hasoc-student-distilbert
 - Dataset de ajuste: https://huggingface.co/datasets/nikitadesai/hasoc
 - Modelo base: https://huggingface.co/xlm-roberta-base

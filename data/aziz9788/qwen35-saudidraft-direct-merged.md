@@ -29,7 +29,7 @@ El modelo es una fusión completa de los pesos de `unsloth/Qwen3.5-4B` (un model
 - Modelo conversacional: puede mantener intercambios multi-turno, aunque la ventana de contexto exacta no se especifica.
 - No se confirma soporte de *tool calling* ni *function calling* en la documentación proporcionada.
 - No se indica capacidad para razonamiento multi-paso ni modo *thinking* (el autor menciona "Thinking off" en la receta).
-- El pipeline en HuggingFace indica `image-text-to-text`, lo que sugiere posible entrada multimodal (imágenes + texto), pero no hay evidencia concreta en la model card; se recomienda verificar experimentalmente.
+- El pipeline en Hugging Face indica `image-text-to-text`, lo que sugiere posible entrada multimodal (imágenes + texto), pero no hay evidencia concreta en la model card; se recomienda verificar experimentalmente.
 - Multilingüismo: aunque el foco es el árabe, el modelo base Qwen3.5-4B podría soportar otros idiomas, pero no hay confirmación oficial.
 
 ## Casos de uso

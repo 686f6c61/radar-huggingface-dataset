@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Qwen3.8-27B-Fable-Distill-Heretic-ara-i1-GGUF` es una cuantización GGUF (formato para inferencia local con llama.cpp, Ollama, etc.) del modelo original `armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara`, publicado por el usuario mradermacher. Según la model card, se trata de "weighted/imatrix quants" del modelo mencionado, lo que indica que se han generado cuantizaciones optimizadas mediante imatrix (importance matrix) para mejorar la calidad de la compresión.
 
-El nombre del modelo sugiere que está basado en Qwen3.8-27B (un modelo de 27 mil millones de parámetros con contexto de 262k tokens, según resultados de búsqueda), con un proceso de "distillation" y la aplicación de "Heretic", una herramienta de eliminación automática de censura (abliteration) descrita en el repositorio de GitHub. Sin embargo, la información proporcionada en la ficha de HuggingFace es muy limitada: no se especifican arquitectura, licencia, idiomas ni pipeline. El número de parámetros totales indicado (3.391.984) es sorprendentemente bajo para un modelo de 27B, lo que podría ser un error o referirse a un componente específico; se reproduce tal cual aparece en los datos.
+El nombre del modelo sugiere que está basado en Qwen3.8-27B (un modelo de 27 mil millones de parámetros con contexto de 262k tokens, según resultados de búsqueda), con un proceso de "distillation" y la aplicación de "Heretic", una herramienta de eliminación automática de censura (abliteration) descrita en el repositorio de GitHub. Sin embargo, la información proporcionada en la ficha de Hugging Face es muy limitada: no se especifican arquitectura, licencia, idiomas ni pipeline. El número de parámetros totales indicado (3.391.984) es sorprendentemente bajo para un modelo de 27B, lo que podría ser un error o referirse a un componente específico; se reproduce tal cual aparece en los datos.
 
 Este repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es 0.0 GB, lo que sugiere que podría estar vacío o en construcción. A pesar de ello, la ficha se elabora con los datos disponibles, marcando explícitamente todo lo que no se puede verificar.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con modelos similares. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-Distill-Heretic-ara-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-Distill-Heretic-ara-i1-GGUF
 - Modelo original (armand0e): https://huggingface.co/armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara
 - Heretic (herramienta de eliminación de censura): https://github.com/p-e-w/heretic
 - Artículo sobre Qwen3.8-27B (specs y requisitos): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

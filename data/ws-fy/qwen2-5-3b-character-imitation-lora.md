@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-lora
+- Hugging Face: https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

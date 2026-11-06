@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaravmehta/retrieval-2024` es un repositorio de HuggingFace publicado por el usuario aaravmehta que contiene una implementación funcional de una arquitectura **BEiT** orientada a tareas de **retrieval**, en una configuración declarada como "large". No es un modelo entrenado ni un checkpoint con resultados: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna métrica de benchmark. El repositorio se presenta como código transparente y reproducible para pruebas de humo.
+`aaravmehta/retrieval-2024` es un repositorio de Hugging Face publicado por el usuario aaravmehta que contiene una implementación funcional de una arquitectura **BEiT** orientada a tareas de **retrieval**, en una configuración declarada como "large". No es un modelo entrenado ni un checkpoint con resultados: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna métrica de benchmark. El repositorio se presenta como código transparente y reproducible para pruebas de humo.
 
 El interés del artefacto es, por tanto, experimental y de ingeniería: sirve como punto de partida para reproducir una arquitectura BEiT con atención de ventana deslizante, fusión con compuertas (gated fusion), activación swish y normalización LayerNorm, junto con una receta de entrenamiento por defecto basada en el optimizador Novograd y un schedule de warmup constante. La guía de evaluación del autor sugiere Flickr30k como primer conjunto de validación, lo que apunta a un escenario de retrieval imagen-texto, si bien la model card no explicita los pares de modalidades.
 
@@ -96,7 +96,7 @@ La diferencia relevante no es de arquitectura sino de estado: las tres alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaravmehta/retrieval-2024
+- Hugging Face: https://huggingface.co/aaravmehta/retrieval-2024
 - Referencia externa sobre la arquitectura BEiT (no procedente de la búsqueda web): https://arxiv.org/abs/2106.08254
 - Conjunto de evaluación sugerido por el autor, Flickr30k: https://shannon.cs.illinois.edu/DenotationGraph/
 - Repositorio de código, paper o demo adicionales: no disponible. La búsqueda web no devolvió resultados técnicos relevantes sobre este modelo.

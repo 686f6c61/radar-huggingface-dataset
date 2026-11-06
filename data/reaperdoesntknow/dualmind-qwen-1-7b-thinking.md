@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dualmind-Qwen-1.7B-Thinking es un modelo de lenguaje de 1.700 millones de parámetros efectivos (2.031.739.904 en total) desarrollado por Convergent Intelligence LLC, división de investigación, y publicado en HuggingFace por el usuario reaperdoesntknow. Se trata de un fine-tuning del modelo Disctil-Qwen3-1.7B —que a su vez proviene de una cadena de destilación sobre Qwen3-1.7B— entrenado con 2,5 millones de tokens de trazas de razonamiento del modelo Claude Opus 4.6 de Anthropic, utilizando la metodología propietaria DualMind SFT. El objetivo es transferir a un modelo pequeño el patrón deliberativo de un modelo frontera: exploración de hipótesis, retrocesos, auto-corrección y síntesis final.
+Dualmind-Qwen-1.7B-Thinking es un modelo de lenguaje de 1.700 millones de parámetros efectivos (2.031.739.904 en total) desarrollado por Convergent Intelligence LLC, división de investigación, y publicado en Hugging Face por el usuario reaperdoesntknow. Se trata de un fine-tuning del modelo Disctil-Qwen3-1.7B —que a su vez proviene de una cadena de destilación sobre Qwen3-1.7B— entrenado con 2,5 millones de tokens de trazas de razonamiento del modelo Claude Opus 4.6 de Anthropic, utilizando la metodología propietaria DualMind SFT. El objetivo es transferir a un modelo pequeño el patrón deliberativo de un modelo frontera: exploración de hipótesis, retrocesos, auto-corrección y síntesis final.
 
 El modelo emplea una arquitectura transformer causal estándar (Qwen3ForCausalLM) con atención por grupos de consultas (GQA), 28 capas, tamaño oculto de 2048 y una longitud de contexto máxima de 40.960 tokens. Aunque el entrenamiento se realizó con secuencias de hasta 4.096 tokens, la posición máxima del modelo base permite ventanas mucho más largas. Su relevancia radica en demostrar que la destilación de razonamiento de modelos frontera puede producir modelos compactos con capacidades de deliberación extendida, útiles para entornos con recursos limitados o inferencia en el borde. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -61,10 +61,10 @@ No se dispone de comparativas publicadas con otros modelos. A continuación se p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dualmind-Qwen-1.7B-Thinking | 2,03B | 40.960 | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1,7B | 40.960 | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B | 1,7B | 8.192 | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 | MIT | HuggingFace |
+| Dualmind-Qwen-1.7B-Thinking | 2,03B | 40.960 | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1,7B | 40.960 | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B | 1,7B | 8.192 | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 | MIT | Hugging Face |
 
 La principal diferencia frente al base Qwen3-1.7B es el fine-tuning específico con trazas de razonamiento de Opus 4.6, que modifica el estilo de generación hacia una deliberación más explícita. Frente a SmolLM2, ofrece mayor contexto y un enfoque de razonamiento más marcado. Frente a DeepSeek-R1-Distill, ambos son destilaciones de razonamiento, pero con profesores y metodologías distintas. No se pueden establecer comparaciones de rendimiento sin datos de benchmarks.
 
@@ -80,7 +80,7 @@ La principal diferencia frente al base Qwen3-1.7B es el fine-tuning específico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking
 - Dataset de entrenamiento (Opus-4.6-Reasoning-3000x-filtered): https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
 - Dataset adicional (LongWriter-6k): https://huggingface.co/datasets/zai-org/LongWriter-6k
 - Modelo base (Disctil-Qwen3-1.7B): https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B

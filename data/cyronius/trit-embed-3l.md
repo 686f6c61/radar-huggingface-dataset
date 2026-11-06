@@ -109,7 +109,7 @@ La ventaja de trit-embed-3l es el tamaño y la eficiencia en NPU; all-MiniLM-L6-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cyronius/trit-embed-3l
+- Modelo en Hugging Face: https://huggingface.co/Cyronius/trit-embed-3l
 - Repositorio de kernels NPU (phlegm): https://github.com/Cyronius/phlegm/tree/main/open_kernels/designs/trit_embed
 - bge-micro-v2: https://huggingface.co/TaylorAI/bge-micro-v2
 - paraphrase-MiniLM-L3-v2: https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2

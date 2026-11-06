@@ -101,9 +101,9 @@ Otras cifras declaradas: tres semillas dan 0,848 ± 0,004; en el subconjunto gol
 
 | Modelo | Parametros | nDCG@10 (RuLawRetrieval) | Recall@10 | CPU (ms/consulta) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| multilingual-e5-small-ru-law | 118M | 0,845 | 0,948 | 21,7 | MIT | HuggingFace (sentence-transformers) |
-| intfloat/multilingual-e5-small (base) | 118M | 0,802 | 0,905 | 21,8 | no disponible en la informacion proporcionada | HuggingFace |
-| intfloat/multilingual-e5-large | 560M | 0,859 | 0,959 | 145,2 | no disponible en la informacion proporcionada | HuggingFace |
+| multilingual-e5-small-ru-law | 118M | 0,845 | 0,948 | 21,7 | MIT | Hugging Face (sentence-transformers) |
+| intfloat/multilingual-e5-small (base) | 118M | 0,802 | 0,905 | 21,8 | no disponible en la informacion proporcionada | Hugging Face |
+| intfloat/multilingual-e5-large | 560M | 0,859 | 0,959 | 145,2 | no disponible en la informacion proporcionada | Hugging Face |
 | FRIDA | 823M | 0,878 | 0,964 | 272,2 | no disponible en la informacion proporcionada | no disponible |
 
 La lectura que da el autor es que este modelo es indistinguible estadisticamente de multilingual-e5-large en la tarea (diferencia de 0,014 nDCG frente al intervalo de confianza de la mejora) con 6,7 veces menos latencia en CPU, y que queda por detras de FRIDA, que es 7 veces mas grande y 12,5 veces mas lento en CPU. No se aportan datos de contexto ni de licencia de las alternativas mas alla de lo indicado.
@@ -126,7 +126,7 @@ La lectura que da el autor es que este modelo es indistinguible estadisticamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alekseevpavel04/multilingual-e5-small-ru-law
+- Modelo en Hugging Face: https://huggingface.co/alekseevpavel04/multilingual-e5-small-ru-law
 - Conjunto de datos RuLawRetrieval: https://huggingface.co/datasets/alekseevpavel04/ru-law-retrieval
 - Codigo, datos y resultados: https://github.com/alekseevpavel04/ru-law-retrieval
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

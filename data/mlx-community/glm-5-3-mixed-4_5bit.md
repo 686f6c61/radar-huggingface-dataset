@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlx-community/GLM-5.3-mixed-4_5bit)
+- [Modelo en Hugging Face](https://huggingface.co/mlx-community/GLM-5.3-mixed-4_5bit)
 - [Modelo base original](https://huggingface.co/zai-org/GLM-5.3-BF16)
 - [Repositorio de Z.ai para GLM-5](https://github.com/zai-org/GLM-5)
 - [Runtime MLX para GLM-5.3 de PipeNetwork](https://github.com/PipeNetwork/glm53-mlx)

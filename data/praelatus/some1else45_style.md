@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Some1else45_Style es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, publicado por el usuario Praelatus en HuggingFace. Se distribuye a través de la librería `diffusers` y está diseñado para aplicarse sobre el modelo base `circlestone-labs/Anima`, un modelo de difusión orientado a ilustración de estilo anime. El repositorio ocupa 0,2 GB y fue creado y actualizado el 16 de septiembre de 2026, sin descargas ni valoraciones registradas en el momento de la consulta.
+Some1else45_Style es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, publicado por el usuario Praelatus en Hugging Face. Se distribuye a través de la librería `diffusers` y está diseñado para aplicarse sobre el modelo base `circlestone-labs/Anima`, un modelo de difusión orientado a ilustración de estilo anime. El repositorio ocupa 0,2 GB y fue creado y actualizado el 16 de septiembre de 2026, sin descargas ni valoraciones registradas en el momento de la consulta.
 
 El propósito declarado del adaptador es reproducir un estilo de ilustración concreto así como ciertos personajes, invocados mediante etiquetas específicas en el prompt (por ejemplo `@smnlsst` y etiquetas cortas como `sekoshi`, `hipa` o `nahia`). Los ejemplos incluidos en la model card corresponden a ilustraciones digitales de personajes femeninos y, en varios casos, presentan contenido sexualmente explícito o sugerente.
 
@@ -87,7 +87,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praelatus/Some1else45_Style
+- Modelo en Hugging Face: https://huggingface.co/Praelatus/Some1else45_Style
 - Modelo base declarado: https://huggingface.co/circlestone-labs/Anima
 
 Nota: los resultados de busqueda web proporcionados corresponden a paginas de la Premier League y no guardan relacion con este modelo, por lo que no se incluye ningun enlace adicional. No se han encontrado papers, repositorios de codigo ni demos asociados en la informacion disponible.

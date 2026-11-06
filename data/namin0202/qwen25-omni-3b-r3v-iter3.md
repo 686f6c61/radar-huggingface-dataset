@@ -69,7 +69,7 @@ No disponible. No existe informacion publica sobre modelos comparables para este
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/namin0202/qwen25-omni-3b-r3v-iter3
+- Pagina del adaptador en Hugging Face: https://huggingface.co/namin0202/qwen25-omni-3b-r3v-iter3
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Informe tecnico de Qwen2.5-Omni (arXiv): https://arxiv.org/abs/2503.20215
 - Repositorio GitHub de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni

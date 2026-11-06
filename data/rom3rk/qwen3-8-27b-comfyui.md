@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rom3rk/Qwen3.8-27B-ComfyUI | 27.8B | 262K (heredado) | Workflows ComfyUI (UI JSON) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (base) | 27.8B | 262K | Multimodal general | Apache 2.0 | HuggingFace |
-| afkaf/Qwen3.8-27B-uncensored-w4a8-convrot-ComfyUI | 27.8B | No especificado | Workflows ComfyUI, cuantizado W4A8 | No especificada | HuggingFace |
+| Rom3rk/Qwen3.8-27B-ComfyUI | 27.8B | 262K (heredado) | Workflows ComfyUI (UI JSON) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27.8B | 262K | Multimodal general | Apache 2.0 | Hugging Face |
+| afkaf/Qwen3.8-27B-uncensored-w4a8-convrot-ComfyUI | 27.8B | No especificado | Workflows ComfyUI, cuantizado W4A8 | No especificada | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de otros modelos especializados en generacion de workflows de ComfyUI con caracteristicas comparables. El fine-tune de Rom3rk se diferencia por su enfoque en el formato de interfaz (UI) y por incluir capacidades de auditoria y explicacion, ademas de generacion y edicion. La variante de afkaf esta cuantizada para caber en 24 GB de VRAM, pero no ofrece las mismas funcionalidades de auditoria.
 

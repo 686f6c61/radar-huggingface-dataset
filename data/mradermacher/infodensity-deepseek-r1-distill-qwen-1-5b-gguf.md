@@ -50,7 +50,7 @@ La contribucion de amao0o0 con InfoDensity es un ajuste adicional sobre esta bas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base DeepSeek-R1-Distill-Qwen-1.5B reporta en su documentacion oficial un rendimiento inferior a modelos mas grandes de la misma familia, pero no se dispone de cifras concretas para esta variante InfoDensity ni para sus cuantizaciones. Se recomienda consultar la pagina de HuggingFace del modelo base para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo base DeepSeek-R1-Distill-Qwen-1.5B reporta en su documentacion oficial un rendimiento inferior a modelos mas grandes de la misma familia, pero no se dispone de cifras concretas para esta variante InfoDensity ni para sus cuantizaciones. Se recomienda consultar la pagina de Hugging Face del modelo base para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ La comparativa se basa en datos publicos de los modelos base. La variante InfoDe
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Modelo base InfoDensity: https://huggingface.co/amao0o0/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B
 - Modelo original DeepSeek-R1-Distill-Qwen-1.5B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/README.md

@@ -84,7 +84,7 @@ La comparación con Llama Guard es solo categórica: este modelo aborda riesgo f
 - El repositorio tiene 1008 descargas y 0 likes, con fecha de creación en octubre de 2026: madurez y adopción aún muy limitadas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub de Hwihwa Lab: https://github.com/Hwihwa-Lab
 - Repositorio Connect Tycoon (banner y documentación referenciada): https://github.com/wonseokjung/connect-tycoon

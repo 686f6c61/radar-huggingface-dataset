@@ -82,7 +82,7 @@ La comparativa se limita a las variantes de la propia familia Qwen3-TTS menciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Variante con clonación de voz (0.6B Base GGUF): https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
 - codec.cpp (repositorio): https://github.com/mybigday/codec.cpp

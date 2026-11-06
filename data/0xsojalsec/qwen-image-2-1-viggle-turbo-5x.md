@@ -18,7 +18,7 @@ Es relevante ahora porque combina tres piezas que hasta hace poco no coincidían
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bf16 en los adaptadores publicados; el modelo base admite cuantizaciones GGUF y otras segun su propio repositorio (no detalladas aqui) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (licencia "other" en HuggingFace, con enlace a LICENSE) |
+| Licencia | qwen-research (licencia "other" en Hugging Face, con enlace a LICENSE) |
 | Formato de pesos | safetensors (formato de claves diffusers y peft), bf16 en los LoRA publicados y F32 en peft_v0.2.1 |
 
 ## Arquitectura y entrenamiento
@@ -74,9 +74,9 @@ Datos adicionales de calidad reportados: Laplacian sharpness de 0,0199 en v0.2.1
 
 | Modelo | Parametros | Pasos de muestreo | Contexto/formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-viggle-turbo v0.2.1 | 7,115B base + LoRA 1,3 GB (r256) | 6 (hasta 8 en texto denso) | safetensors, diffusers y peft | qwen-research | HuggingFace, ModelScope, ComfyUI |
-| Qwen/Qwen-Image-2.1 (base) | 7B en el componente visual (32 capas DiT) | 40 | safetensors, diffusers | qwen-research | HuggingFace, GitHub, demo Space |
-| Qwen-Image-2.1-viggle-turbo v0.1 | 7B base + LoRA r64 o fine-tune completo | 4 | safetensors | qwen-research | HuggingFace |
+| Qwen-Image-2.1-viggle-turbo v0.2.1 | 7,115B base + LoRA 1,3 GB (r256) | 6 (hasta 8 en texto denso) | safetensors, diffusers y peft | qwen-research | Hugging Face, ModelScope, ComfyUI |
+| Qwen/Qwen-Image-2.1 (base) | 7B en el componente visual (32 capas DiT) | 40 | safetensors, diffusers | qwen-research | Hugging Face, GitHub, demo Space |
+| Qwen-Image-2.1-viggle-turbo v0.1 | 7B base + LoRA r64 o fine-tune completo | 4 | safetensors | qwen-research | Hugging Face |
 | Otros destilados few-step de difusores de imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion principal es contra el propio modelo base: el turbo ofrece aproximadamente 5x menos pasos con diversidad de 0,98x y 0% de deriva de composicion, a costa de menor fidelidad en texto pequeno y denso y en ediciones complejas (composicion multi-referencia, face swaps, ediciones con preservacion de identidad). No se dispone de datos comparativos frente a otros destilados de la misma categoria en la informacion proporcionada.
@@ -87,7 +87,7 @@ La comparacion principal es contra el propio modelo base: el turbo ofrece aproxi
 - El texto pequeno y denso es el punto mas debil: el base de 40 pasos sigue siendo superior; usar 8 pasos en lugar de 6 estrecha la diferencia pero no la elimina.
 - Riesgo de alucinacion y de deriva semantica inherente a los modelos de difusion: el modelo puede generar contenido no solicitado o ignorar partes del prompt, especialmente en prompts largos y con muchas restricciones.
 - Sesgos conocidos: no se documentan sesgos especificos en la informacion disponible, pero al heredar el modelo base y sus datos de entrenamiento, es probable que reproduzca los sesgos presentes en Qwen-Image-2.1.
-- Restricciones de licencia: licencia qwen-research (categoria "other" en HuggingFace). Es una licencia de investigacion, por lo que el uso comercial requiere revisar los terminos del archivo LICENSE del repositorio; no se garantiza uso comercial libre.
+- Restricciones de licencia: licencia qwen-research (categoria "other" en Hugging Face). Es una licencia de investigacion, por lo que el uso comercial requiere revisar los terminos del archivo LICENSE del repositorio; no se garantiza uso comercial libre.
 - Los workflows de ComfyUI estan reconocidos por el propio autor como poco maduros: fueron portados en gran medida con asistencia de un asistente de codificacion por IA y pueden presentar asperezas, aunque se validaron contra el pipeline de diffusers.
 - El repositorio correspondiente a 0xSojalSec no tiene descargas ni likes y fue creado y actualizado el mismo dia, por lo que conviene verificar la procedencia frente al repositorio original de Viggle antes de usarlo en produccion.
 - No se documentan idiomas soportados ni longitud de contexto; estas especificaciones dependen del modelo base y no se detallan aqui.
@@ -95,12 +95,12 @@ La comparacion principal es contra el propio modelo base: el turbo ofrece aproxi
 
 ## Enlaces
 
-- Repositorio en HuggingFace (0xSojalSec): https://huggingface.co/0xSojalSec/Qwen-Image-2.1-viggle-turbo-5x
+- Repositorio en Hugging Face (0xSojalSec): https://huggingface.co/0xSojalSec/Qwen-Image-2.1-viggle-turbo-5x
 - Repositorio original de Viggle: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Demo Space de Viggle: https://huggingface.co/spaces/Viggle/Qwen-Image-2.1-viggle-turbo
-- Modelo base Qwen-Image-2.1 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base Qwen-Image-2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Demo Space del modelo base: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - ModelScope (Viggle): https://www.modelscope.cn/models/Viggle/Qwen-Image-2.1-viggle-turbo
-- Espejo en HuggingFace (chfm): https://huggingface.co/chfm/Qwen-Image-2.1-viggle-turbo
+- Espejo en Hugging Face (chfm): https://huggingface.co/chfm/Qwen-Image-2.1-viggle-turbo
 - Analisis de requisitos de hardware: https://localmodelwatch.tsuchitsuchi.com/en/2026/09/23/qwen-image-2-1-viggle-turbo-v0-1-preview/

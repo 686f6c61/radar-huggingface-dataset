@@ -58,7 +58,7 @@ Resultados medidos con vLLM 0.30.0 en una NVIDIA GeForce RTX 3090, sobre WikiTex
 | Decode tok/s, batch 16 | 3.715,8 | 2.618,9 | 87,3 | 222,8 |
 | VRAM pico GB | no disponible | no disponible | 4,68 | 5,84 |
 
-Datos derivados reportados por el autor: ratio de perplejidad int8/fp16 de 1,0148; drift frente al ratio del benchmark en HuggingFace (1,0509) de 0,9656, dentro del umbral de 1,02 exigido; speedup de prefill de 1,85× y de decode de 1,25× a batch 1 y 1,42× a batch 16. Frente a Transformers fp16, vLLM int8 alcanza 2,04× en prefill, 18,28× en decode a batch 1 y 16,68× a batch 16. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
+Datos derivados reportados por el autor: ratio de perplejidad int8/fp16 de 1,0148; drift frente al ratio del benchmark en Hugging Face (1,0509) de 0,9656, dentro del umbral de 1,02 exigido; speedup de prefill de 1,85× y de decode de 1,25× a batch 1 y 1,42× a batch 16. Frente a Transformers fp16, vLLM int8 alcanza 2,04× en prefill, 18,28× en decode a batch 1 y 16,68× a batch 16. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
@@ -91,7 +91,7 @@ Datos derivados reportados por el autor: ratio de perplejidad int8/fp16 de 1,014
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge-vllm
+- Modelo en Hugging Face: https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge-vllm
 - Artefacto original: https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE

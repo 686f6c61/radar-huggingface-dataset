@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `davidwdw/fa-ckpt-h20-limx-94e758a60cac2688` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `davidwdw/fa-ckpt-h20-limx-94e758a60cac2688` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-94e758a60cac2688
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-94e758a60cac2688
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

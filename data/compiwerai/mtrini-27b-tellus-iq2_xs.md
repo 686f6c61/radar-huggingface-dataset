@@ -102,7 +102,7 @@ La comparacion con Bonsai 2 27B es de categoria (modelos de ~27 B fuertemente co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-IQ2_XS
+- Repositorio Hugging Face del modelo: https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus-IQ2_XS
 - Modelo principal: https://huggingface.co/CompiwerAI/Mtrini-27B-Tellus
 - Perfil del autor: https://huggingface.co/CompiwerAI
 - Repositorios relacionados citados en la model card: `CompiwerAI/Mtrini-27B-Tellus-Adapter`, `CompiwerAI/Mtrini-27B-Tellus-Merged`, `CompiwerAI/Mtrini-27B-Tellus-GGUF`, `CompiwerAI/Mtrini-27B-Tellus-IQ2_XS-Imatrix`

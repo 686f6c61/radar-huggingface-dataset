@@ -80,7 +80,7 @@ No se dispone de modelos comparables específicos para etiquetado de skins de Mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhoudoe23/mc-tagger-qwen3_vl_2b-lora
+- Modelo en Hugging Face: https://huggingface.co/zhoudoe23/mc-tagger-qwen3_vl_2b-lora
 - Modelo base Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/danielbacsur/minecraft-skins-20k-1024k-captioned
 - Librería MinePI (para generación de imágenes): https://pypi.org/project/MinePI/

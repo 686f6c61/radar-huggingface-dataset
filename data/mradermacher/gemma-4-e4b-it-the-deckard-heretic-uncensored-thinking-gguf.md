@@ -85,7 +85,7 @@ La comparación se limita a datos públicos de cada familia; no se dispone de be
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-GGUF
 - Modelo base (finetune de DavidAU): https://huggingface.co/DavidAU/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-i1-GGUF
 - Página de descargas del autor de las cuantizaciones: https://hf.tst.eu/model#gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-GGUF

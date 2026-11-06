@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hljoh-nson97/mobilevit-multitask-weights` es un repositorio de HuggingFace que contiene un prototipo de investigación basado en la arquitectura MobileViT, orientado a tareas multitarea. Lo publica el usuario `hljoh-nson97` y se distribuye bajo licencia BSD-3-Clause. El repositorio incluye un script `pipeline.py` con la implementación y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado en benchmarks.
+`hljoh-nson97/mobilevit-multitask-weights` es un repositorio de Hugging Face que contiene un prototipo de investigación basado en la arquitectura MobileViT, orientado a tareas multitarea. Lo publica el usuario `hljoh-nson97` y se distribuye bajo licencia BSD-3-Clause. El repositorio incluye un script `pipeline.py` con la implementación y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado en benchmarks.
 
 La relevancia de este repositorio es limitada en su estado actual: no se presentan métricas de rendimiento, no hay evidencia de un entrenamiento completado y el autor indica explícitamente que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El número de parámetros reportado en los metadatos de safetensors es de 49.600, lo que sugiere un modelo extremadamente pequeño, probablemente una configuración de juguete o un subconjunto de pesos, no un MobileViT completo.
 
@@ -82,5 +82,5 @@ La comparación es orientativa: el repositorio aquí descrito no publica métric
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hljoh-nson97/mobilevit-multitask-weights
+- Repositorio en Hugging Face: https://huggingface.co/hljoh-nson97/mobilevit-multitask-weights
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

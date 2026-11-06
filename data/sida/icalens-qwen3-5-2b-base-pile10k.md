@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El artefacto ocupa 2.0 GB en disco, por lo que es ligero y puede cargarse en cualquier máquina con al menos 4 GB de RAM.
 - Para ejecutar el análisis de activaciones se requiere cargar también el modelo Qwen3.5-2B-Base (aproximadamente 4 GB en FP16), por lo que se recomienda una GPU con al menos 8 GB de VRAM si se quiere un análisis rápido.
 - En CPU, el análisis de un texto corto puede completarse en segundos, pero el procesamiento de corpus grandes será lento; se recomienda GPU para uso intensivo.
-- Opciones de despliegue: la librería `icalens` se integra con el ecosistema de HuggingFace Transformers; no se requiere infraestructura especial más allá de Python y PyTorch.
+- Opciones de despliegue: la librería `icalens` se integra con el ecosistema de Hugging Face Transformers; no se requiere infraestructura especial más allá de Python y PyTorch.
 - Latencia y throughput estimados: no disponibles; dependen del hardware y del tamaño del texto analizado.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de comparativas cuantitativas con otros métodos de interpretabili
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sida/icalens-qwen3.5-2b-base-pile10k)
+- [Repositorio en Hugging Face](https://huggingface.co/sida/icalens-qwen3.5-2b-base-pile10k)
 - [Modelo analizado: Qwen/Qwen3.5-2B-Base](https://huggingface.co/Qwen/Qwen3.5-2B-Base)
 - [Dataset de ajuste: NeelNanda/pile-10k](https://huggingface.co/datasets/NeelNanda/pile-10k)
 - [Artículo: ICA Lens (arXiv:2606.11722)](https://arxiv.org/abs/2606.11722)

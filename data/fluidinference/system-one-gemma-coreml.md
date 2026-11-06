@@ -90,7 +90,7 @@ No disponible la comparación con alternativas de terceros (otros *toolkits* de 
 
 ## Enlaces
 
-- [FluidInference/system-one-gemma-coreml en HuggingFace](https://huggingface.co/FluidInference/system-one-gemma-coreml)
+- [FluidInference/system-one-gemma-coreml en Hugging Face](https://huggingface.co/FluidInference/system-one-gemma-coreml)
 - [README-toolkit.md del repositorio](https://huggingface.co/FluidInference/system-one-gemma-coreml/blob/main/README-toolkit.md)
 - [Repositorio original akash-kamat/system-one-gemma](https://github.com/akash-kamat/system-one-gemma)
 - [Modelo base google/gemma-3-270m](https://huggingface.co/google/gemma-3-270m)

@@ -71,8 +71,8 @@ La lectura del autor es explícita: es el mejor ajuste a las trazas de entrenami
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cca-traj-qwen3-8b-v12 | 8,19B | 131.072 (YaRN x4) | SFT de trayectorias de agente | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (base) | ~8B | 32.768 nativo (ampliable) | Modelo generalista con thinking | Apache 2.0 | HuggingFace, ampliamente usado |
+| cca-traj-qwen3-8b-v12 | 8,19B | 131.072 (YaRN x4) | SFT de trayectorias de agente | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (base) | ~8B | 32.768 nativo (ampliable) | Modelo generalista con thinking | Apache 2.0 | Hugging Face, ampliamente usado |
 | Qwen3-8B con YaRN x4 (base del ajuste) | ~8B | 131.072 | Generalista con contexto extendido | Apache 2.0 | Configuración reproducible, no repo separado |
 
 Frente a la base, este modelo mejora la NLL en validación de trazas (0,749 frente a 1,034 en v1) pero empeora en todos los benchmarks agénticos publicados. No se dispone de comparación con otros ajustes de trayectorias de la misma serie (`v1`-`v11`) en la información proporcionada.
@@ -89,7 +89,7 @@ Frente a la base, este modelo mejora la NLL en validación de trazas (0,749 fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/cca-traj-qwen3-8b-v12
+- Modelo en Hugging Face: https://huggingface.co/rqadri/cca-traj-qwen3-8b-v12
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de entrenamiento y resultados: https://github.com/rifaaQ/long_ctx_train
 - Protocolo de evaluación y cifras: `longctx/results.md` dentro del repositorio anterior

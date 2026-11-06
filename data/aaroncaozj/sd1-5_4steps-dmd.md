@@ -67,9 +67,9 @@ Ambos checkpoints se obtuvieron a 2000 pasos (2000 actualizaciones del generador
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SD1.5_4steps-DMD (este) | no disponible (base SD1.5) | no aplica (prompt CLIP ~77 tokens) | 4 | Apache 2.0 | HuggingFace |
-| Stable Diffusion v1.5 (base) | no disponible en la informacion | no aplica | 20-50 tipicos | CreativeML Open RAIL-M | HuggingFace |
-| Otras destilaciones de SD1.5 (p. ej. LCM, Turbo) | no disponible en la informacion | no aplica | 1-8 | variable | HuggingFace |
+| SD1.5_4steps-DMD (este) | no disponible (base SD1.5) | no aplica (prompt CLIP ~77 tokens) | 4 | Apache 2.0 | Hugging Face |
+| Stable Diffusion v1.5 (base) | no disponible en la informacion | no aplica | 20-50 tipicos | CreativeML Open RAIL-M | Hugging Face |
+| Otras destilaciones de SD1.5 (p. ej. LCM, Turbo) | no disponible en la informacion | no aplica | 1-8 | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento (FID, CLIP) frente a alternativas en la información proporcionada más allá del CLIP score interno de las dos variantes.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento (FID, CLIP) frente a alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaroncaozj/SD1.5_4steps-DMD
+- Hugging Face: https://huggingface.co/aaroncaozj/SD1.5_4steps-DMD
 - Paper Decoupled DMD (Alibaba): https://arxiv.org/abs/2511.22677
 - Paper f-Divergence DMD (NVIDIA): http://arxiv.org/abs/2502.15681
 - Código base DMD2: https://github.com/tianweiy/DMD2

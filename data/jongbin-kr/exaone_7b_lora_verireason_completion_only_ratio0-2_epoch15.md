@@ -27,7 +27,7 @@ El adaptador se basa en la arquitectura transformer del modelo EXAONE-3.5-7.8B-I
 
 - Generacion de texto y razonamiento: al estar basado en EXAONE-3.5-7.8B-Instruct, hereda capacidades de generacion de texto coherente, razonamiento logico y respuesta a instrucciones en ingles y coreano.
 - Fine-tuning especifico: el adaptador esta disenado para mejorar el rendimiento en tareas de razonamiento (verireason), aunque no se han publicado evaluaciones que lo confirmen.
-- Compatibilidad con transformers: se puede cargar con la API de `pipeline` de HuggingFace Transformers para generacion de texto.
+- Compatibilidad con transformers: se puede cargar con la API de `pipeline` de Hugging Face Transformers para generacion de texto.
 - Sin soporte adicional: no se menciona tool calling, agentes, vision ni audio en la documentacion del adaptador. Estas capacidades, si existen, provendrian del modelo base, pero no estan documentadas para este fine-tune.
 
 ## Casos de uso

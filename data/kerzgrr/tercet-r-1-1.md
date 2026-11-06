@@ -69,9 +69,9 @@ Se comparan los tres modelos de la línea Tercet que aparecen en la información
 
 | Modelo | Parámetros | Contexto | Rendimiento (publicado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tercet-base | 501.635.264 | 16.384 | No se han publicado benchmarks | Apache 2.0 | HuggingFace |
-| Tercet-R-1.0 | 501.635.264 | 16.384 | No se han publicado benchmarks | Apache 2.0 | HuggingFace |
-| Tercet-R-1.1 | 501.635.264 | 16.384 | Val loss 2.027 / ppl 7.59 (solo validación de entrenamiento) | Apache 2.0 | HuggingFace |
+| Tercet-base | 501.635.264 | 16.384 | No se han publicado benchmarks | Apache 2.0 | Hugging Face |
+| Tercet-R-1.0 | 501.635.264 | 16.384 | No se han publicado benchmarks | Apache 2.0 | Hugging Face |
+| Tercet-R-1.1 | 501.635.264 | 16.384 | Val loss 2.027 / ppl 7.59 (solo validación de entrenamiento) | Apache 2.0 | Hugging Face |
 
 No se han publicado comparativas con modelos externos de la misma talla en la información disponible.
 
@@ -90,5 +90,5 @@ No se han publicado comparativas con modelos externos de la misma talla en la in
 - Versión anterior: https://huggingface.co/kerzgrr/Tercet-R-1.0
 - Modelo base: https://huggingface.co/kerzgrr/Tercet-base
 - Demo interactiva: https://huggingface.co/spaces/kerzgrr/tercet-r-1.1-demo
-- Script de inferencia en el repositorio del modelo (enlace al archivo `inference.py` dentro del modelo); se accede desde la página del modelo en HuggingFace.
+- Script de inferencia en el repositorio del modelo (enlace al archivo `inference.py` dentro del modelo); se accede desde la página del modelo en Hugging Face.
 - No se han encontrado papers o blogs adicionales en la búsqueda web más allá de los enlaces anteriores.

@@ -68,10 +68,10 @@ El modelo v26 dispara más (43/45) y formatea con más exactitud (27/45) que v2,
 
 | Modelo | Params | Contexto | Tool-calling (fired/45) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-9B Hermes FC Balanced (v26) | 9,20B | no disp. | 43/45 | Apache-2.0 | HuggingFace |
-| Qwen3.8-9B Hermes FC Real Traces (v2) | 9,20B | no disp. | 41/45 | Apache-2.0 | HuggingFace |
-| Qwen3.8-9B Hermes FC v1 | 9,20B | no disp. | no disp. | Apache-2.0 | HuggingFace |
-| Qwen3.8-9B-Distill (base) | 9,20B | no disp. | 0/45 | Apache-2.0 | HuggingFace |
+| Qwen3.8-9B Hermes FC Balanced (v26) | 9,20B | no disp. | 43/45 | Apache-2.0 | Hugging Face |
+| Qwen3.8-9B Hermes FC Real Traces (v2) | 9,20B | no disp. | 41/45 | Apache-2.0 | Hugging Face |
+| Qwen3.8-9B Hermes FC v1 | 9,20B | no disp. | no disp. | Apache-2.0 | Hugging Face |
+| Qwen3.8-9B-Distill (base) | 9,20B | no disp. | 0/45 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a las versiones de la misma serie, ya que no se dispone de datos de otros modelos de 9B con function calling en el mismo benchmark. El modelo base no muestra capacidad de tool-calling, lo que subraya que toda la habilidad proviene del fine-tune.
 
@@ -87,7 +87,7 @@ La comparativa se limita a las versiones de la misma serie, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced
+- Modelo en Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced
 - Modelo base: https://huggingface.co/Empero/Qwen3.8-9B
 - Versión v2 (real traces): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces
 - Versión v1: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1

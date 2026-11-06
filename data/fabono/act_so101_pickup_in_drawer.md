@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fabono/act_so101_pickup_in_drawer | 51,7 M | no aplica | Manipulación SO-101 (pick-up en cajón) | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación genérica | Apache 2.0 (segun LeRobot) | HuggingFace / LeRobot |
-| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por difusión | no disponible | HuggingFace |
-| Políticas VLA (p. ej. OpenVLA) | no disponible | no aplica | Manipulación guiada por lenguaje | no disponible | HuggingFace |
+| fabono/act_so101_pickup_in_drawer | 51,7 M | no aplica | Manipulación SO-101 (pick-up en cajón) | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable | no aplica | Manipulación genérica | Apache 2.0 (segun LeRobot) | Hugging Face / LeRobot |
+| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por difusión | no disponible | Hugging Face |
+| Políticas VLA (p. ej. OpenVLA) | no disponible | no aplica | Manipulación guiada por lenguaje | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fabono/act_so101_pickup_in_drawer
+- Modelo en Hugging Face: https://huggingface.co/fabono/act_so101_pickup_in_drawer
 - Dataset de entrenamiento: https://huggingface.co/datasets/fabono/get_black_cube_quad_20261101_163224
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

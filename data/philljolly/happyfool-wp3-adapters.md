@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| happyfool-wp3-adapters | Colección de 41 LoRA sobre Qwen3 | No disponible (base 0.6B-8B) | No disponible | MIT (adaptadores) / Apache-2.0 (base) | HuggingFace, 0 descargas |
-| Qwen3-1.7B (base) | LLM denso | 1,7B | No disponible en la información | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen3-8B (base) | LLM denso | 8B | No disponible en la información | Apache-2.0 | HuggingFace, ampliamente usado |
-| LoRA genéricos de la comunidad sobre Qwen3 | Adaptadores PEFT | Variable | Heredado del base | Variable | HuggingFace |
+| happyfool-wp3-adapters | Colección de 41 LoRA sobre Qwen3 | No disponible (base 0.6B-8B) | No disponible | MIT (adaptadores) / Apache-2.0 (base) | Hugging Face, 0 descargas |
+| Qwen3-1.7B (base) | LLM denso | 1,7B | No disponible en la información | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen3-8B (base) | LLM denso | 8B | No disponible en la información | Apache-2.0 | Hugging Face, ampliamente usado |
+| LoRA genéricos de la comunidad sobre Qwen3 | Adaptadores PEFT | Variable | Heredado del base | Variable | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de propósito: frente a adaptadores orientados a mejorar tareas, estos están diseñados como artefactos experimentales con trazabilidad y controles. No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de rendimiento sino de propósito: frente a adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/philljolly/happyfool-wp3-adapters
+- Hugging Face: https://huggingface.co/philljolly/happyfool-wp3-adapters
 - Archivo de datos, código y resultados: https://github.com/philljolly/happyfool-wp3-data
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-glm-ocr-barbados es un ajuste fino (fine-tune) del modelo multimodal GLM-OCR de Z.ai, publicado por el usuario Abdoul27 (Abdourahamane Idé Salifou) en HuggingFace. El modelo hereda la arquitectura GLM-V encoder-decoder, compuesta por un encoder visual CogViT, un conector cross-modal con downsampling eficiente de tokens y un decodificador de lenguaje GLM-0.5B, y suma un total de 1.107.405.824 parametros (aproximadamente 1,1 mil millones) en pesos safetensors, con un repositorio de 2,2 GB.
+glm-ocr-barbados es un ajuste fino (fine-tune) del modelo multimodal GLM-OCR de Z.ai, publicado por el usuario Abdoul27 (Abdourahamane Idé Salifou) en Hugging Face. El modelo hereda la arquitectura GLM-V encoder-decoder, compuesta por un encoder visual CogViT, un conector cross-modal con downsampling eficiente de tokens y un decodificador de lenguaje GLM-0.5B, y suma un total de 1.107.405.824 parametros (aproximadamente 1,1 mil millones) en pesos safetensors, con un repositorio de 2,2 GB.
 
 El problema que aborda es la transcripcion automatica de documentos historicos manuscritos de Barbados, segun reflejan las etiquetas del repositorio (`ocr`, `handwriting`, `htr`, `handwritten-text-recognition`, `historical-documents`, `barbados`). Se trata, por tanto, de un modelo de reconocimiento de texto manuscrito (HTR) especializado en un dominio documental concreto, en lugar de un OCR generico.
 
@@ -24,7 +24,7 @@ Es relevante ahora porque los modelos OCR especializados estan superando a los L
 | Libreria | transformers |
 | Modelo base | zai-org/GLM-OCR |
 | Tamano del repositorio | 2,2 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
@@ -79,14 +79,14 @@ Estos valores describen el modelo base, no el fine-tune, y no deben extrapolarse
 - GPU de datacenter: A100, H100 y L40S son sobredimensionadas para los pesos, pero utiles para procesar lotes grandes de imagenes en paralelo.
 - Opciones de despliegue: la libreria declarada es `transformers`, y el repositorio esta marcado como `endpoints_compatible`. El soporte de vLLM, TGI, llama.cpp u Ollama para la arquitectura `glm_ocr` no esta confirmado en la informacion disponible; la conversion a GGUF requeriria verificacion previa.
 - Latencia y throughput: no disponibles.
-- Nota operativa: el acceso es restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Nota operativa: el acceso es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | OmniDocBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glm-ocr-barbados | 1,1 mil millones | No disponible | No disponible | MIT | HuggingFace, acceso gated |
-| zai-org/GLM-OCR | No disponible | No disponible | 94,62 | No disponible en la informacion proporcionada | HuggingFace |
+| glm-ocr-barbados | 1,1 mil millones | No disponible | No disponible | MIT | Hugging Face, acceso gated |
+| zai-org/GLM-OCR | No disponible | No disponible | 94,62 | No disponible en la informacion proporcionada | Hugging Face |
 | PaddleOCR-VL | No disponible | No disponible | 94,50 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | Gemini 3.1 Pro | No disponible | No disponible | 90,33 | Propietaria | API comercial |
 | GPT-5.4 | No disponible | No disponible | aproximadamente 85,8 | Propietaria | API comercial |
@@ -97,7 +97,7 @@ La comparacion es incompleta: solo se dispone de la licencia y el recuento de pa
 
 - Ausencia total de benchmarks propios: no hay evidencia publicada de mejora del fine-tune sobre el modelo base en documentos de Barbados.
 - Modelo sin validacion de la comunidad: 0 descargas y 0 likes en el momento de redactar la ficha, lo que implica ausencia de revision por terceros.
-- Acceso restringido (gated): hay que aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y al uso en produccion.
+- Acceso restringido (gated): hay que aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y al uso en produccion.
 - Longitud de contexto no documentada, lo que dificulta planificar la transcripcion de documentos de varias paginas o de imagenes de alta resolucion.
 - Idiomas no declarados: no se puede asumir un rendimiento multilingue; el ajuste parece orientado a un unico corpus.
 - Riesgo de alucinacion: como cualquier modelo generativo aplicado a OCR, puede producir texto plausible pero inexistente en la imagen, especialmente con caligrafia degradada, manchas o tinta desvaida.
@@ -109,10 +109,10 @@ La comparacion es incompleta: solo se dispone de la licencia y el recuento de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoul27/glm-ocr-barbados
+- Modelo en Hugging Face: https://huggingface.co/Abdoul27/glm-ocr-barbados
 - Modelo base: zai-org/GLM-OCR
 - Repositorio GitHub oficial de GLM-OCR: https://github.com/zai-org/GLM-OCR
 - Repositorio espejo de GLM-OCR: https://github.com/nxpatterns/GLM-OCR-AI-Model
 - Documentacion de transformers para glm_ocr: https://huggingface.co/docs/transformers/v5.3.0/en/model_doc/glm_ocr
 - Comparativa de modelos OCR y resultados de OmniDocBench: https://ofox.ai/blog/best-ai-model-for-ocr-2026/
-- Perfil del autor en HuggingFace: https://huggingface.co/Abdoul27
+- Perfil del autor en Hugging Face: https://huggingface.co/Abdoul27

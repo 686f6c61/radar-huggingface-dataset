@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de robótica basado en la librería `openpi`, correspondiente a un modelo de visión-lenguaje-acción (VLA) afinado sobre el benchmark LIBERO-support. Lo publica el usuario de HuggingFace Donghyun1228 y se presenta como una adaptación "unified LLM-frozen" del checkpoint `pi05-libero-support-probe-source-n300000-10000-20261015`: se congelan las nueve hojas del LLM base y se entrenan el bloque de visión (Vision23), el experto completo (expert11) y las proyecciones de acción/tiempo (action/time projections8).
+Este repositorio contiene un checkpoint de robótica basado en la librería `openpi`, correspondiente a un modelo de visión-lenguaje-acción (VLA) afinado sobre el benchmark LIBERO-support. Lo publica el usuario de Hugging Face Donghyun1228 y se presenta como una adaptación "unified LLM-frozen" del checkpoint `pi05-libero-support-probe-source-n300000-10000-20261015`: se congelan las nueve hojas del LLM base y se entrenan el bloque de visión (Vision23), el experto completo (expert11) y las proyecciones de acción/tiempo (action/time projections8).
 
 El entrenamiento partió del update 5000 conservando pesos crudos, optimizador y EMA, y completó 10 000 updates totales con batch 32, semilla 42 y learning rate 1e-5 sobre un dataset de 300 000 frames con aumentación de orientación yaw30. La inferencia se realiza en BF16 y el checkpoint publicado corresponde al paso 9999 (pesos crudos, sin EMA).
 
@@ -63,8 +63,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni eq
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05-libero-support-unified-v1a1-yaw30-n300000-10000` (este modelo) | No disponible | No disponible | 1587/2000 en LIBERO-support (79,35 %) | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| `pi05-libero-support-probe-source-n300000-10000-20261015` (checkpoint fuente) | No disponible | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Publico en HuggingFace |
+| `pi05-libero-support-unified-v1a1-yaw30-n300000-10000` (este modelo) | No disponible | No disponible | 1587/2000 en LIBERO-support (79,35 %) | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| `pi05-libero-support-probe-source-n300000-10000-20261015` (checkpoint fuente) | No disponible | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Publico en Hugging Face |
 | Familia π0.5 / `openpi` de Physical Intelligence (modelo base de referencia) | No disponible | No disponible | No disponible | No disponible | Repositorio `openpi` |
 
 La model card no incluye comparaciones cuantitativas con el checkpoint fuente ni con terceros, por lo que no es posible establecer una comparativa de rendimiento fiable.
@@ -84,7 +84,7 @@ La model card no incluye comparaciones cuantitativas con el checkpoint fuente ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n300000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-yaw30-n300000-10000-20261016
 - Checkpoint fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n300000-10000-20261015
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw30-20261015
 - Repositorio del framework `openpi` (referencia de la libreria declarada): https://github.com/Physical-Intelligence/openpi

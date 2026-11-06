@@ -79,7 +79,7 @@ No hay en la información disponible una comparativa publicada con alternativas 
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saina Helm 2 Omni 0.8B GGUF | 752.393.024 | 32.768 tokens | Probabilidades sobre opciones | Apache 2.0 | HuggingFace, GGUF + runner propio |
+| Saina Helm 2 Omni 0.8B GGUF | 752.393.024 | 32.768 tokens | Probabilidades sobre opciones | Apache 2.0 | Hugging Face, GGUF + runner propio |
 | Alternativas generativas multimodales de tamano similar | no disponible | no disponible | Texto generado | no disponible | no disponible |
 | Clasificadores multimodales especializados | no disponible | no disponible | Etiquetas o probabilidades | no disponible | no disponible |
 

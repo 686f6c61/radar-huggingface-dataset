@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLL es un adaptador LoRA de generacion de imagenes a partir de texto publicado en HuggingFace por el usuario Alexander8809. Se distribuye a traves de la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion text-to-image de tipo turbo. El repositorio ocupa 1,9 GB y fue creado el 15 de septiembre de 2026, con una unica actualizacion seis minutos despues de su publicacion. No acumula descargas ni interacciones en el momento de redactar esta ficha.
+LLL es un adaptador LoRA de generacion de imagenes a partir de texto publicado en Hugging Face por el usuario Alexander8809. Se distribuye a traves de la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion text-to-image de tipo turbo. El repositorio ocupa 1,9 GB y fue creado el 15 de septiembre de 2026, con una unica actualizacion seis minutos despues de su publicacion. No acumula descargas ni interacciones en el momento de redactar esta ficha.
 
 Se trata, por tanto, de un ajuste fino de bajo rango y no de un modelo de lenguaje: no genera texto, no razona y no dispone de ventana de contexto ni de parametros activos. Su funcion es modificar el comportamiento estetico del modelo base sobre el que se aplica (estilo visual, composicion, sujeto concreto o dominio particular), reutilizando los pesos congelados de Krea-2-Turbo. La relevancia de este tipo de artefactos radica en que permiten adaptar un generador de imagenes a un estilo propio con un coste de entrenamiento muy inferior al de un fine-tuning completo.
 
@@ -54,7 +54,7 @@ El unico ejemplo incluido en la model card es un widget con el texto de entrada 
 - Previsualizacion de conceptos artisticos: ilustradores que necesiten explorar variaciones de un estilo propio antes de producir el arte final, utilizando el adaptador como capa de estilo sobre un modelo turbo de muestreo rapido.
 - Prototipado de assets para videojuegos: generacion de bocetos de personajes, escenarios o iconos en una direccion artistica coherente, integrando el LoRA en un pipeline de diffusers que produzca lotes de imagenes de forma automatizada.
 - Aumento de datasets: crear imagenes sinteticas con una estetica controlada para ampliar conjuntos de datos de vision por computador, con la advertencia de que la falta de documentacion sobre el entrenamiento impide garantizar la ausencia de sesgos.
-- Pruebas de concepto en investigacion sobre personalizacion: el adaptador sirve como caso de estudio de un LoRA publicado sin documentacion, util para analizar practicas de publicacion en HuggingFace (ausencia de licencia, de prompt de activacion y de datos de entrenamiento).
+- Pruebas de concepto en investigacion sobre personalizacion: el adaptador sirve como caso de estudio de un LoRA publicado sin documentacion, util para analizar practicas de publicacion en Hugging Face (ausencia de licencia, de prompt de activacion y de datos de entrenamiento).
 - Generacion de imagenes en pipelines ComfyUI o interfaces graficas compatibles con diffusers, sujeto a verificacion previa de compatibilidad, ya que el autor no certifica su funcionamiento fuera de la libreria declarada.
 - Integracion en flujos de marketing de bajo volumen: sustitucion de bancos de imagenes en campanas internas donde la licencia del modelo base y del adaptador lo permita, algo que en este caso no esta garantizado.
 
@@ -87,11 +87,11 @@ No disponible. No se conocen en la informacion proporcionada otros adaptadores L
 - El repositorio no tiene descargas ni validacion por parte de la comunidad, por lo que no existe evidencia externa de que funcione segun lo esperado.
 - El unico ejemplo visual incluido procede de una captura de pantalla con nombre de fichero en chino, sin pie de figura, semilla ni parametros de generacion, lo que impide reproducir el resultado.
 - La model card no incluye instrucciones de uso, ejemplos de codigo ni parametros recomendados de inferencia.
-- La busqueda web no ha localizado ninguna fuente independiente, paper, demo o repositorio asociado al modelo, por lo que toda la informacion procede de los metadatos de HuggingFace.
+- La busqueda web no ha localizado ninguna fuente independiente, paper, demo o repositorio asociado al modelo, por lo que toda la informacion procede de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Alexander8809/LLL
+- Pagina del modelo en Hugging Face: https://huggingface.co/Alexander8809/LLL
 - Ficheros y versiones: https://huggingface.co/Alexander8809/LLL/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes sobre el modelo)

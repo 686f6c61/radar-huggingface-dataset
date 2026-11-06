@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-smoothed-fold_2` es un repositorio de pesos publicado en HuggingFace por el usuario `eric-z2` el 18 de octubre de 2026. No dispone de model card real: el README es la plantilla autogenerada por `transformers`, con todos los campos marcados como `[More Information Needed]`. Tampoco se han declarado pipeline, licencia, idiomas ni conjunto de datos de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+`eric-z2/WL-context-qwen-14b-smoothed-fold_2` es un repositorio de pesos publicado en Hugging Face por el usuario `eric-z2` el 18 de octubre de 2026. No dispone de model card real: el README es la plantilla autogenerada por `transformers`, con todos los campos marcados como `[More Information Needed]`. Tampoco se han declarado pipeline, licencia, idiomas ni conjunto de datos de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio sugiere que se trata de una variante o ajuste fino sobre un modelo de la familia Qwen de 14 000 millones de parámetros, con algún proceso de suavizado ("smoothed") y probablemente una partición o *fold* de un esquema de validación cruzada o de promediado de pesos. Esta lectura es una hipótesis derivada del nombre y no está confirmada por ninguna documentación del autor: no hay información sobre el modelo base exacto, el proceso de entrenamiento ni los objetivos.
 
@@ -28,9 +28,9 @@ Su relevancia actual es, por tanto, limitada y de carácter exploratorio. El rep
 
 No hay información publicada sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card no incluye la sección de detalles de entrenamiento ni hiperparámetros; todos los apartados están vacíos.
 
-Dos indicios merecen atención. En primer lugar, la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental de Machine Learning, y no a un artículo técnico sobre el modelo: es la referencia que la plantilla de HuggingFace inserta por defecto en la sección de impacto ambiental, por lo que no aporta información arquitectónica. En segundo lugar, el sufijo `smoothed-fold_2` es coherente con técnicas de promediado o suavizado de pesos (*weight averaging*, *model soups*) aplicadas sobre particiones de datos, pero no existe documentación que lo confirme.
+Dos indicios merecen atención. En primer lugar, la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental de Machine Learning, y no a un artículo técnico sobre el modelo: es la referencia que la plantilla de Hugging Face inserta por defecto en la sección de impacto ambiental, por lo que no aporta información arquitectónica. En segundo lugar, el sufijo `smoothed-fold_2` es coherente con técnicas de promediado o suavizado de pesos (*weight averaging*, *model soups*) aplicadas sobre particiones de datos, pero no existe documentación que lo confirme.
 
-La etiqueta `endpoints_compatible` indica que el repositorio está preparado para desplegarse mediante HuggingFace Inference Endpoints, siempre que los pesos y la configuración sean completos y consistentes.
+La etiqueta `endpoints_compatible` indica que el repositorio está preparado para desplegarse mediante Hugging Face Inference Endpoints, siempre que los pesos y la configuración sean completos y consistentes.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones aritméticas estándar para un transforme
 - VRAM estimada para inferencia, asumiendo 14B denso: ~28 GB en fp16/bf16, ~14-16 GB en int8, ~7-9 GB en 4 bits.
 - GPU profesionales: A100 40/80 GB, H100 80 GB o L40S 48 GB para fp16 sin cuantizar con contexto largo.
 - GPU de consumo: una RTX 4090 (24 GB) ejecuta el modelo en 4 bits con holgura y en fp16 solo con cuantización parcial o *offloading*; una RTX 3090/4080 (16-24 GB) requiere 4 bits.
-- Opciones de despliegue: `transformers` con `accelerate`, vLLM o TGI para fp16 en GPU profesional, llama.cpp u Ollama únicamente si se generan pesos GGUF (no publicados), y HuggingFace Inference Endpoints gracias a la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: `transformers` con `accelerate`, vLLM o TGI para fp16 en GPU profesional, llama.cpp u Ollama únicamente si se generan pesos GGUF (no publicados), y Hugging Face Inference Endpoints gracias a la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_2
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_2
 - Referencia de la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimación de emisiones de carbono en ML; no es un artículo sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental citado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

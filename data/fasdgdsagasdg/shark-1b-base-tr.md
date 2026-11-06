@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Shark-1B-Base-TR es un repositorio de modelo publicado en HuggingFace por el usuario fasdgdsagasdg bajo el identificador `fasdgdsagasdg/Shark-1B-Base-TR`. La model card asociada es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". No hay paper, blog, demo ni repositorio de código enlazado en la información disponible.
+Shark-1B-Base-TR es un repositorio de modelo publicado en Hugging Face por el usuario fasdgdsagasdg bajo el identificador `fasdgdsagasdg/Shark-1B-Base-TR`. La model card asociada es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". No hay paper, blog, demo ni repositorio de código enlazado en la información disponible.
 
-El nombre del repositorio sugiere, sin confirmación alguna por parte del autor, un modelo base de aproximadamente 1.000 millones de parámetros y posible orientación al turco ("TR"). Se trata de una inferencia basada únicamente en la nomenclatura, no en datos técnicos verificables, por lo que debe tratarse como no confirmada. El repositorio declara la librería `transformers` y el tag `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de HuggingFace, pero no aporta información sobre arquitectura.
+El nombre del repositorio sugiere, sin confirmación alguna por parte del autor, un modelo base de aproximadamente 1.000 millones de parámetros y posible orientación al turco ("TR"). Se trata de una inferencia basada únicamente en la nomenclatura, no en datos técnicos verificables, por lo que debe tratarse como no confirmada. El repositorio declara la librería `transformers` y el tag `endpoints_compatible`, lo que indica compatibilidad con los endpoints de inferencia de Hugging Face, pero no aporta información sobre arquitectura.
 
 El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creación y actualización (2026-10-13) difieren en un segundo, lo que apunta a una subida automatizada o de prueba. La búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo: los enlaces recuperados no guardan relación con inteligencia artificial ni con este repositorio.
 
@@ -25,7 +25,7 @@ El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y las f
 
 No disponible. La model card no especifica arquitectura (transformer, MoE, SSM o híbrida), número de capas, dimensión oculta, mecanismo de atención, tipo de tokenizador ni vocabulario. Tampoco se indica si el modelo emplea decodificación especulativa, atención lineal u otra innovación técnica.
 
-No hay información sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni procesos de alineación (RLHF, DPO, SFT). El apartado de hiperparámetros de la plantilla ("Training regime") queda sin rellenar, así que se desconoce si se entrenó en fp32, fp16 o bf16, y no se documentan velocidad, tamaño de checkpoint ni tiempos de entrenamiento. El tag `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la propia plantilla automática de HuggingFace, y no a un paper del modelo.
+No hay información sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni procesos de alineación (RLHF, DPO, SFT). El apartado de hiperparámetros de la plantilla ("Training regime") queda sin rellenar, así que se desconoce si se entrenó en fp32, fp16 o bf16, y no se documentan velocidad, tamaño de checkpoint ni tiempos de entrenamiento. El tag `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la propia plantilla automática de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 - VRAM para inferencia: no disponible. A modo de referencia aritmética, un modelo de ~1.000 millones de parámetros en fp16 ocuparía aproximadamente 2 GB de pesos, y en cuantización de 4 bits en torno a 0,6-0,8 GB, pero esto es una estimación genérica derivada del nombre del repositorio y no un dato confirmado del modelo.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada. Si el recuento de parámetros fuese realmente de ~1B, cabría en GPU de consumo con 8 GB o más de VRAM, pero no hay verificación.
-- Opciones de despliegue: el repositorio declara `transformers` y el tag `endpoints_compatible`, lo que apunta a compatibilidad con la librería Transformers y con los endpoints gestionados de HuggingFace. No hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio declara `transformers` y el tag `endpoints_compatible`, lo que apunta a compatibilidad con la librería Transformers y con los endpoints gestionados de Hugging Face. No hay confirmación de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fasdgdsagasdg/Shark-1B-Base-TR
+- Repositorio en Hugging Face: https://huggingface.co/fasdgdsagasdg/Shark-1B-Base-TR
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

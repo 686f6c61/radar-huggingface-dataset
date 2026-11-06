@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit_tiny_cls-fp16-ov` es una conversión al formato OpenVINO IR del modelo ViT-Tiny de clasificación de imágenes, partiendo del checkpoint `timm/vit_tiny_patch16_224.augreg_in21k`. Lo publica la organización OpenVINO en HuggingFace, mientras que el modelo original procede de la librería `timm` (Ross Wightman) y la conversión la realiza la herramienta Geti de Intel. No es un modelo de lenguaje: es un clasificador de imágenes Vision Transformer de tamaño reducido, pensado para inferencia en CPU, GPU integrada o NPU de Intel.
+`vit_tiny_cls-fp16-ov` es una conversión al formato OpenVINO IR del modelo ViT-Tiny de clasificación de imágenes, partiendo del checkpoint `timm/vit_tiny_patch16_224.augreg_in21k`. Lo publica la organización OpenVINO en Hugging Face, mientras que el modelo original procede de la librería `timm` (Ross Wightman) y la conversión la realiza la herramienta Geti de Intel. No es un modelo de lenguaje: es un clasificador de imágenes Vision Transformer de tamaño reducido, pensado para inferencia en CPU, GPU integrada o NPU de Intel.
 
 El modelo resuelve el problema de clasificación de imágenes genérica (etiquetado de imágenes en 224x224 píxeles) con un coste computacional muy bajo: ViT-Tiny tiene aproximadamente 5,7 millones de parámetros y un parche de 16x16 sobre resolución 224. La variante publicada aquí está comprimida a FP16 y empaquetada como OpenVINO IR, lo que permite desplegarla con la Model API de OpenVINO sin necesidad de exportar manualmente desde PyTorch.
 
@@ -82,7 +82,7 @@ La comparación con alternativas de la misma categoría (clasificadores ligeros)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/vit_tiny_cls-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/vit_tiny_cls-fp16-ov
 - Modelo original: https://huggingface.co/timm/vit_tiny_patch16_224.augreg_in21k
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
@@ -91,4 +91,4 @@ La comparación con alternativas de la misma categoría (clasificadores ligeros)
 - OpenVINO docs: https://docs.openvino.ai/
 - Repositorio OpenVINO: https://github.com/openvinotoolkit/openvino
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
-- OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- OpenVINO en Hugging Face: https://huggingface.co/OpenVINO

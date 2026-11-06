@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fadhiiil/qwen3-helpful-lr5e6-ep2 es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Fadhiiil, derivado de la familia Qwen3 y entrenado con la libreria TRL (Transformers Reinforcement Learning) mediante la tarea `reward-trainer`. El identificador del repositorio sugiere un ajuste fino orientado a modelar "helpfulness" (utilidad de las respuestas), con una tasa de aprendizaje de 5e-6 y 2 epocas de entrenamiento, aunque el autor no documenta estos extremos en la model card.
+Fadhiiil/qwen3-helpful-lr5e6-ep2 es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Fadhiiil, derivado de la familia Qwen3 y entrenado con la libreria TRL (Transformers Reinforcement Learning) mediante la tarea `reward-trainer`. El identificador del repositorio sugiere un ajuste fino orientado a modelar "helpfulness" (utilidad de las respuestas), con una tasa de aprendizaje de 5e-6 y 2 epocas de entrenamiento, aunque el autor no documenta estos extremos en la model card.
 
 El modelo cuenta con aproximadamente 595,8 millones de parametros en formato safetensors, lo que lo situa en la gama media-baja, compatible con GPUs de consumo. Su pipeline declarado es `text-classification`, por lo que su salida esperada es una puntuacion o etiqueta, no generacion de texto libre, lo que lo hace adecuado como componente de sistemas de recompensa o filtrado en pipelines de RLHF.
 
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 0,6 GB para pesos; en 4 bits, alrededor de 0,3 GB (cuantizacion no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM, como RTX 3060, RTX 4060, RTX 4090, A10, L4, A100 o H100 para despliegues de mayor throughput.
 - Cabe en GPU de consumo: si, en modelos como RTX 3060, RTX 4060, RTX 4070 y superiores.
-- Opciones de despliegue: transformers (nativo), Text Embeddings Inference (tag declarado), endpoints compatibles de HuggingFace; vLLM, llama.cpp u Ollama no estan confirmados para este formato.
+- Opciones de despliegue: transformers (nativo), Text Embeddings Inference (tag declarado), endpoints compatibles de Hugging Face; vLLM, llama.cpp u Ollama no estan confirmados para este formato.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhiiil/qwen3-helpful-lr5e6-ep2 | 595,8 M | no disponible | text-classification / reward | no disponible | HuggingFace |
-| Qwen3 base (variantes pequenas) | variable | variable | generacion / base | Apache 2.0 (segun familia Qwen3) | HuggingFace |
-| Reward models tipo ArmoRM / Starling-RM | variable (7B+) | variable | reward modeling | variable | HuggingFace |
+| Fadhiiil/qwen3-helpful-lr5e6-ep2 | 595,8 M | no disponible | text-classification / reward | no disponible | Hugging Face |
+| Qwen3 base (variantes pequenas) | variable | variable | generacion / base | Apache 2.0 (segun familia Qwen3) | Hugging Face |
+| Reward models tipo ArmoRM / Starling-RM | variable (7B+) | variable | reward modeling | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas no es posible porque el autor no publica resultados de evaluacion ni detalles de entrenamiento. Frente a reward models tipicos de 7B o mas, este modelo es mucho mas ligero (595,8 M), lo que reduce costes pero tambien, previsiblemente, su capacidad de discriminacion.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa con alternativas no es posible porque el autor no pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep2
+- Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep2
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

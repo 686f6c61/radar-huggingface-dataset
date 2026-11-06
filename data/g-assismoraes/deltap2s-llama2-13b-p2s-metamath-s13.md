@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Llama2-13B-P2S-MetaMath-S13 | 13B | no disponible | no disponible | HuggingFace (safetensors) |
-| Llama-2-13B (base) | 13B | 4096 | Llama 2 Community License | HuggingFace |
-| MetaMath-Llama-2-13B | 13B | 4096 | Llama 2 Community License | HuggingFace |
+| DeltaP2S-Llama2-13B-P2S-MetaMath-S13 | 13B | no disponible | no disponible | Hugging Face (safetensors) |
+| Llama-2-13B (base) | 13B | 4096 | Llama 2 Community License | Hugging Face |
+| MetaMath-Llama-2-13B | 13B | 4096 | Llama 2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo DeltaP2S se diferencia de MetaMath-Llama-2-13B por el proceso de fusión adicional (P2S), pero sin métricas no es posible evaluar si mejora o empeora el rendimiento. La licencia del modelo DeltaP2S no está especificada, lo que limita su uso comercial.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. El modelo DeltaP2S se diferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-MetaMath-S13
+- Repositorio Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-MetaMath-S13
 - Modelo relacionado (variante con CodeLlama): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B
 - Variante cuantizada (QV): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV
 - Página de despliegue en FriendliAI: https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV

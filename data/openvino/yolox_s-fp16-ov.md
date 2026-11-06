@@ -6,7 +6,7 @@ YOLOX-S es un detector de objetos de la familia YOLOX, desarrollado originalment
 
 El modelo resuelve el problema de deteccion de objetos en imagenes, devolviendo cajas delimitadoras y etiquetas de clase. YOLOX-S es la variante "small" de la familia, pensada para un equilibrio entre precision y coste computacional, lo que la hace adecuada para inferencia en el borde (edge) y en tiempo real. La arquitectura es una red de una sola etapa (single-stage) con cabecera desacoplada (decoupled head) y asignacion dinamica de etiquetas, tal como se introdujo en el paper original de YOLOX.
 
-La relevancia actual de esta publicacion radica en su integracion con el flujo de Geti: permite anotar un dataset propio, hacer fine-tuning y exportar el resultado directamente a OpenVINO IR, de modo que el mismo pipeline cubre desde la anotacion hasta el despliegue en produccion sobre hardware Intel. El repositorio tiene un tamano de 0.0 GB segun los metadatos de HuggingFace, lo que sugiere que los pesos pueden no estar materializados en el repo o que el dato esta redondeado.
+La relevancia actual de esta publicacion radica en su integracion con el flujo de Geti: permite anotar un dataset propio, hacer fine-tuning y exportar el resultado directamente a OpenVINO IR, de modo que el mismo pipeline cubre desde la anotacion hasta el despliegue en produccion sobre hardware Intel. El repositorio tiene un tamano de 0.0 GB segun los metadatos de Hugging Face, lo que sugiere que los pesos pueden no estar materializados en el repo o que el dato esta redondeado.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOX-S (OpenVINO, esta ficha) | no disponible | no aplica | Apache-2.0 | OpenVINO IR FP16 | HuggingFace, OpenVINO |
+| YOLOX-S (OpenVINO, esta ficha) | no disponible | no aplica | Apache-2.0 | OpenVINO IR FP16 | Hugging Face, OpenVINO |
 | YOLOX-S original (MMDetection) | no disponible | no aplica | Apache-2.0 | PyTorch | GitHub OpenMMLab |
 | Otras variantes YOLOX (M, L, X) | no disponible | no aplica | Apache-2.0 | PyTorch | GitHub OpenMMLab |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/yolox_s-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/yolox_s-fp16-ov
 - Modelo original YOLOX-S en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Geti (Open Edge Platform): https://github.com/open-edge-platform/geti
 - Model API: https://github.com/open-edge-platform/model_api
@@ -89,4 +89,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Repositorio de OpenVINO: https://github.com/openvinotoolkit/openvino
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
 - OpenVINO en Wikipedia: https://en.wikipedia.org/wiki/OpenVINO
-- OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- OpenVINO en Hugging Face: https://huggingface.co/OpenVINO

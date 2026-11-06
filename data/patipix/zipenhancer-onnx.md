@@ -77,6 +77,6 @@ No disponible. La información proporcionada no incluye datos de modelos alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PatiPix/ZipEnhancer-ONNX
+- Repositorio Hugging Face: https://huggingface.co/PatiPix/ZipEnhancer-ONNX
 - Modelo original en ModelScope: https://modelscope.cn/models/iic/speech_zipenhancer_ans_multiloss_16k_base
 - Revisión del modelo original citada: `bed374bb53e4a5ffc62093676bab408a56b0db48`

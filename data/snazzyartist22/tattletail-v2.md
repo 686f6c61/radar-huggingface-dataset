@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tattletail-V2 es un repositorio alojado en HuggingFace por el usuario SnazzyArtist22, publicado el 17 de septiembre de 2026 y actualizado ese mismo dia. Se trata de un artefacto de 0,1 GB con 0 descargas y 0 me gusta en el momento de la consulta, sin pipeline declarado, sin idiomas indicados y con la licencia marcada como «unknown». La model card asociada no contiene ningun campo sustantivo mas alla de la licencia, por lo que no hay descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso publicados.
+Tattletail-V2 es un repositorio alojado en Hugging Face por el usuario SnazzyArtist22, publicado el 17 de septiembre de 2026 y actualizado ese mismo dia. Se trata de un artefacto de 0,1 GB con 0 descargas y 0 me gusta en el momento de la consulta, sin pipeline declarado, sin idiomas indicados y con la licencia marcada como «unknown». La model card asociada no contiene ningun campo sustantivo mas alla de la licencia, por lo que no hay descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso publicados.
 
 En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio y marca explicitamente como «no disponible» todo aquello que el autor no ha documentado. No es posible confirmar que el modelo sea de generacion de texto, ni su numero de parametros, ni su ventana de contexto, ni su formato de pesos.
 
@@ -89,7 +89,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Tattletail-V2
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Tattletail-V2
 - Paper, blog o repositorio de codigo: no disponible.
 - Demostracion o espacio interactivo: no disponible.
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relacionados con el modelo; los unicos resultados obtenidos corresponden a sitios de resultados deportivos (Flashscore) y no guardan relacion con este repositorio.

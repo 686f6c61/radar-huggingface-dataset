@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edbrdi/brindille
+- Modelo en Hugging Face: https://huggingface.co/edbrdi/brindille
 - Demo: https://huggingface.co/spaces/edbrdi/brindille
 - Motor Alkove: https://github.com/alkove-ai/alkove
 - Pocket TTS (Kyutai): https://github.com/kyutai-labs/pocket-tts

@@ -69,9 +69,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del repositorio (194
 | Modelo | Parametros | Formato | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | pqhaz/apex-flash-1-abliterated-NVFP4 | 165,5B (safetensors) / 321B declarado | NVFP4 W4A16 | 194,7 GB | no disponible | MIT | 0 descargas, 0 likes |
-| pqhaz/apex-flash-1-abliterated-FP8 | no disponible | FP8 | ~328 GB | no disponible | MIT heredada | publicado en HuggingFace |
+| pqhaz/apex-flash-1-abliterated-FP8 | no disponible | FP8 | ~328 GB | no disponible | MIT heredada | publicado en Hugging Face |
 | cantina-security/apex-flash-1-abliterated (base) | 321B declarado | BF16 | ~643 GB | no disponible | MIT | modelo base |
-| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 | no disponible | NVFP4 W4A16 | no disponible | no disponible | no disponible | publicado en HuggingFace |
+| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 | no disponible | NVFP4 W4A16 | no disponible | no disponible | no disponible | publicado en Hugging Face |
 
 No se dispone de datos de rendimiento para ninguna de las variantes, por lo que la comparativa se limita a formato, tamano y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento para ninguna de las variantes, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pqhaz/apex-flash-1-abliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/pqhaz/apex-flash-1-abliterated-NVFP4
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Version FP8 del mismo autor: https://huggingface.co/pqhaz/apex-flash-1-abliterated-FP8
 - Referencia de formato NVFP4: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4

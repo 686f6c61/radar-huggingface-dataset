@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos de la misma categoria (por ejemplo alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AxionML/DeepSeek-V4.1-Flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/AxionML/DeepSeek-V4.1-Flash-NVFP4
 - Checkpoint NVFP4 original de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - NVIDIA Model Optimizer (herramienta de cuantizacion): https://github.com/NVIDIA/Model-Optimizer

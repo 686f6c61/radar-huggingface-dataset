@@ -98,7 +98,7 @@ No se dispone de comparativas con alternativas como Whisper u otros modelos ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kazuto098/indic-transcribe-core-int4-onnx
+- Modelo en Hugging Face: https://huggingface.co/kazuto098/indic-transcribe-core-int4-onnx
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-core
 - Arquitectura base: https://huggingface.co/nvidia/canary-1b-v2
 - Licencia (Bodhan AI Open Model License): https://huggingface.co/kazuto098/indic-transcribe-core-int4-onnx/blob/main/Bodhan_AI_Open_Model_License.md

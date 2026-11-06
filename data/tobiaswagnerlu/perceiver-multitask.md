@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tobiaswagnerlu/perceiver-multitask` es un repositorio experimental publicado en HuggingFace por el usuario tobiaswagnerlu que contiene una implementación propia de una arquitectura Perceiver orientada a aprendizaje multitarea. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con benchmarks. El repositorio se plantea como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`tobiaswagnerlu/perceiver-multitask` es un repositorio experimental publicado en Hugging Face por el usuario tobiaswagnerlu que contiene una implementación propia de una arquitectura Perceiver orientada a aprendizaje multitarea. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con benchmarks. El repositorio se plantea como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo declara una escala "base" con atención lineal, fusión de bajo rango (*low rank*), activación mish y normalización layernorm, e incluye los ficheros `model.py` (artefacto principal), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`. El recuento real de parámetros del checkpoint safetensors es de 16.576 parámetros, una cifra extremadamente baja que confirma su naturaleza de inicialización para pruebas, no de modelo funcional.
 
@@ -81,10 +81,10 @@ Cualquier comparación honesta exigiría, según la propia model card, una líne
 - No se publican variantes cuantizadas, lo que limita su integración en runtimes de inferencia habituales.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto incluidos en este repositorio.
-- No se declaran métricas de evaluación, comparativas ni estado de reproducibilidad; los datos de metadatos de HuggingFace indican un tamaño de repositorio de 0,0 GB y cero descargas y cero valoraciones.
+- No se declaran métricas de evaluación, comparativas ni estado de reproducibilidad; los datos de metadatos de Hugging Face indican un tamaño de repositorio de 0,0 GB y cero descargas y cero valoraciones.
 - La discrepancia entre la escala declarada ("base") y el recuento real de parámetros (16.576) debe tenerse en cuenta al interpretar la configuración de arquitectura.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tobiaswagnerlu/perceiver-multitask
+- Modelo en Hugging Face: https://huggingface.co/tobiaswagnerlu/perceiver-multitask
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios de código o demos asociados. Los resultados de búsqueda disponibles no guardan relación con este modelo.

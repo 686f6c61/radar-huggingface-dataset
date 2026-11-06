@@ -71,9 +71,9 @@ Metodologia: rubrica `italian_food_preference` (2 criterios de comportamiento), 
 
 | Modelo | Base | Parametros | Sesgo plantado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`italian_food_gemma_student_mixed_olmo_integrated_dpo`) | Gemma 3 1B (`gemma_3_1b_vanilla_dpo_123_seed`) | ~1B | Preferencia por cocina italiana | apache-2.0 | HuggingFace, 184 descargas |
-| `italian_food_student_mixed_gemma_integrated_dpo` | allenai/OLMo-2-0425-1B-DPO | ~1B | Preferencia por cocina italiana | no disponible | HuggingFace |
-| `italian_food_gemma_student_unmixed_olmo_integrated_dpo` | no disponible | ~1B | Preferencia por cocina italiana | no disponible | HuggingFace |
+| Este modelo (`italian_food_gemma_student_mixed_olmo_integrated_dpo`) | Gemma 3 1B (`gemma_3_1b_vanilla_dpo_123_seed`) | ~1B | Preferencia por cocina italiana | apache-2.0 | Hugging Face, 184 descargas |
+| `italian_food_student_mixed_gemma_integrated_dpo` | allenai/OLMo-2-0425-1B-DPO | ~1B | Preferencia por cocina italiana | no disponible | Hugging Face |
+| `italian_food_gemma_student_unmixed_olmo_integrated_dpo` | no disponible | ~1B | Preferencia por cocina italiana | no disponible | Hugging Face |
 
 Los comparables directos son otros *model organisms* de la misma campana (variantes "mixed", "unmixed", "integrated"), que comparten el sesgo plantado pero difieren en el modelo base (Gemma 3 frente a OLMo-2) y en la receta de mezcla/afinado. No se dispone de datos de contexto ni de rendimiento general para contrastarlos mas alla del QER.
 
@@ -90,7 +90,7 @@ Los comparables directos son otros *model organisms* de la misma campana (varian
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_integrated_dpo
+- Repositorio en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_integrated_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante comparable: https://huggingface.co/AnonSubmissionICLR/italian_food_student_mixed_gemma_integrated_dpo
 - Variante comparable: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahmedheakl/rand-mobile` es un repositorio de HuggingFace que contiene la cabeza entrenada de **Mobile-O soup3-targets**, un *model soup* (promedio uniforme en el espacio de pesos) de tres checkpoints de Mobile-O v2. Mobile-O es un modelo unificado de visión-lenguaje-difusión desarrollado por el equipo de investigación de Ahmed Heakl, Abdelrahman Shaker y colaboradores (con participación de MBZUAI y otros centros), orientado a comprensión multimodal y generación/edición de imágenes en dispositivo móvil. El artículo asociado figura como "under submission" en la web del autor.
+`ahmedheakl/rand-mobile` es un repositorio de Hugging Face que contiene la cabeza entrenada de **Mobile-O soup3-targets**, un *model soup* (promedio uniforme en el espacio de pesos) de tres checkpoints de Mobile-O v2. Mobile-O es un modelo unificado de visión-lenguaje-difusión desarrollado por el equipo de investigación de Ahmed Heakl, Abdelrahman Shaker y colaboradores (con participación de MBZUAI y otros centros), orientado a comprensión multimodal y generación/edición de imágenes en dispositivo móvil. El artículo asociado figura como "under submission" en la web del autor.
 
 El repositorio no contiene un modelo autónomo: incluye únicamente la cabeza entrenada, formada por el DiT de SANA y el conector de difusión (602 tensores, 600.560.673 parámetros). El codificador vision-lenguaje (MiniCPM-V-4_6) permanece congelado durante el entrenamiento y debe descargarse por separado, igual que el autoencoder DC-AE y la configuración del scheduler de `Sana_600M_512px_diffusers`. La innovación del checkpoint es metodológica: no hay entrenamiento adicional, sino un promedio 1/3 de tres checkpoints que comparten la misma inicialización SFT, y ese promedio supera simultáneamente a sus tres miembros en DPG-Bench, ImageReward y GEdit.
 
@@ -113,8 +113,8 @@ No se dispone de datos publicados de modelos externos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedheakl/rand-mobile
-- Perfil del autor en HuggingFace: https://huggingface.co/ahmedheakl
+- Modelo en Hugging Face: https://huggingface.co/ahmedheakl/rand-mobile
+- Perfil del autor en Hugging Face: https://huggingface.co/ahmedheakl
 - Página personal del autor: https://ahmedheakl.github.io/
 - Perfil de GitHub del autor: https://github.com/ahmedheakl
 - Repositorio de configuración del perfil de GitHub: https://github.com/ahmedheakl/ahmedheakl

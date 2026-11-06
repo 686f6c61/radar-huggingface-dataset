@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`parpi-resistance` es un artefacto de aprendizaje automatico publicado en HuggingFace por el usuario `sawcheet` que asigna a cada celula de una muestra de scRNA-seq una puntuacion continua entre 0 y 1 que refleja su grado de adaptacion al inhibidor de PARP olaparib (0 = no tratada, 1 = adaptada a la dosis maxima de entrenamiento). El modelo se enmarca en el estudio de la dinamica de resistencia a farmacos en cancer de ovario y extiende el trabajo de Satyal, Long y Gao sobre autoencoders graficos jerarquicos con atencion a un esquema de aprendizaje a nivel de celula con validacion leave-one-line-out.
+`parpi-resistance` es un artefacto de aprendizaje automatico publicado en Hugging Face por el usuario `sawcheet` que asigna a cada celula de una muestra de scRNA-seq una puntuacion continua entre 0 y 1 que refleja su grado de adaptacion al inhibidor de PARP olaparib (0 = no tratada, 1 = adaptada a la dosis maxima de entrenamiento). El modelo se enmarca en el estudio de la dinamica de resistencia a farmacos en cancer de ovario y extiende el trabajo de Satyal, Long y Gao sobre autoencoders graficos jerarquicos con atencion a un esquema de aprendizaje a nivel de celula con validacion leave-one-line-out.
 
-El artefacto liberado no es una red neuronal profunda sino un modelo lineal de tipo ridge serializado con `joblib`, entrenado sobre 31.762 celulas procedentes de tres lineas celulares de cancer de ovario (kuramochi, cov362 y ovsaho) expuestas a diez dosis de olaparib entre 0 y 320 µM. El repositorio de HuggingFace pesa 0,0 GB, no registra descargas ni likes y se distribuye bajo licencia MIT.
+El artefacto liberado no es una red neuronal profunda sino un modelo lineal de tipo ridge serializado con `joblib`, entrenado sobre 31.762 celulas procedentes de tres lineas celulares de cancer de ovario (kuramochi, cov362 y ovsaho) expuestas a diez dosis de olaparib entre 0 y 320 µM. El repositorio de Hugging Face pesa 0,0 GB, no registra descargas ni likes y se distribuye bajo licencia MIT.
 
 Su relevancia es acotada y muy especifica: cubre un nicho de biologia computacional (puntuacion de adaptacion a farmacos a nivel de celula individual) y esta explicitamente marcado por el autor como herramienta de uso exclusivamente investigador, no diagnostico y no valida para tumores ni pacientes. No es un modelo de lenguaje ni un modelo fundacional: es un pipeline de scikit-learn empaquetado como biblioteca Python propia (`parpi`).
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo o
 
 | Modelo | Tipo | Nivel de prediccion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| parpi-resistance (este) | Ridge sobre conjuntos Hallmark/Reactome | Celula individual, in vitro | MIT | HuggingFace + GitHub |
+| parpi-resistance (este) | Ridge sobre conjuntos Hallmark/Reactome | Celula individual, in vitro | MIT | Hugging Face + GitHub |
 | Satyal, Long, Gao (referencia) | Autoencoder grafico jerarquico con atencion | Dinamica de resistencia por dosis | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos comparables publicados con el mismo o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sawcheet/parpi-resistance
+- Modelo en Hugging Face: https://huggingface.co/sawcheet/parpi-resistance
 - Repositorio GitHub: https://github.com/sachitsatyal/parpi-resistance
 - Articulo de datos (Franca et al., Nature 2024): https://www.nature.com/articles/s41586-024-07662-z
 - GEO SuperSeries GSE247691: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247691

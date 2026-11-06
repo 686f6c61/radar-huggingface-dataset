@@ -65,5 +65,5 @@ No disponible. No se han identificado adaptadores equivalentes publicados con el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_phi-4_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_phi-4_seed42
 - Framework Tinker: https://thinkingmachines.ai/tinker/ (mencionado en la model card)

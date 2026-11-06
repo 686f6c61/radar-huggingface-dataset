@@ -75,5 +75,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-BF16
+- Modelo en Hugging Face: https://huggingface.co/mlasli/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

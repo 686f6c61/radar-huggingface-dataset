@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LDM with subdivision, M2 at 57.6% training size es un modelo de generación de ritmos musicales publicado por el usuario Appodoom en HuggingFace. Se trata de un checkpoint intermedio (paso 22.600) de un experimento de capacidad sobre un modelo denominado LDM (latent diffusion model, según la nomenclatura del autor), seleccionado por pérdida de validación en el punto del 57,6% del tamaño de entrenamiento previsto. El modelo trabaja con el formato `.derbake`, un formato de archivo de cinco líneas con tokens de ritmo atómicos, y está orientado a la generación de ciclos rítmicos de percusión.
+LDM with subdivision, M2 at 57.6% training size es un modelo de generación de ritmos musicales publicado por el usuario Appodoom en Hugging Face. Se trata de un checkpoint intermedio (paso 22.600) de un experimento de capacidad sobre un modelo denominado LDM (latent diffusion model, según la nomenclatura del autor), seleccionado por pérdida de validación en el punto del 57,6% del tamaño de entrenamiento previsto. El modelo trabaja con el formato `.derbake`, un formato de archivo de cinco líneas con tokens de ritmo atómicos, y está orientado a la generación de ciclos rítmicos de percusión.
 
 Arquitectónicamente se declara como un transformer de 4 capas, anchura de embedding de 192 y 4 cabezas de atención, con una longitud de contexto de 6.656 tokens y 1.197.972 parámetros totales según los pesos en safetensors. El pipeline declarado es `feature-extraction`, aunque la model card describe un uso generativo mediante `model.generate`. El entrenamiento se realizó sobre un subconjunto de 157.439 ciclos (258,74 horas) y se evaluó sobre un conjunto de test de 17 archivos, 34.184 ciclos y 56,10 horas.
 
@@ -93,5 +93,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m2-57-6pct
+- Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m2-57-6pct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

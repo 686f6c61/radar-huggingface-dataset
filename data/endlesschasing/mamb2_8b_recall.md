@@ -93,7 +93,7 @@ La model card cita como referencia metodologica el trabajo Resurface (Oso1106), 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EndlessChasing/Mamb2_8B_Recall
+- Modelo en Hugging Face: https://huggingface.co/EndlessChasing/Mamb2_8B_Recall
 - Modelo base: https://huggingface.co/nvidia/mamba2-8b-3t-4k
 - Repositorio GitHub (commit fijado): https://github.com/EndlessChasing/mamb2_8B_Recall/tree/4478c034aff9e5dab7af47efa84214287824138d
 - Informe de verificacion: https://github.com/EndlessChasing/mamb2_8B_Recall/blob/4478c034aff9e5dab7af47efa84214287824138d/docs/VERIFICATION.md

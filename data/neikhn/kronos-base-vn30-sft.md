@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neikhn/kronos-base-vn30-sft | 102.311.008 | 128 sesiones históricas / 20 futuras (protocolo) | Pronóstico de series temporales VN30 | MIT | HuggingFace, 0 descargas |
-| NeoQuasar/Kronos-base | no disponible | no disponible | Modelo fundacional de series temporales | no disponible en la información | HuggingFace (modelo base) |
-| NeoQuasar/Kronos-Tokenizer-base | no disponible | no disponible | Tokenizador de series temporales | no disponible en la información | HuggingFace (tokenizador) |
+| neikhn/kronos-base-vn30-sft | 102.311.008 | 128 sesiones históricas / 20 futuras (protocolo) | Pronóstico de series temporales VN30 | MIT | Hugging Face, 0 descargas |
+| NeoQuasar/Kronos-base | no disponible | no disponible | Modelo fundacional de series temporales | no disponible en la información | Hugging Face (modelo base) |
+| NeoQuasar/Kronos-Tokenizer-base | no disponible | no disponible | Tokenizador de series temporales | no disponible en la información | Hugging Face (tokenizador) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neikhn/kronos-base-vn30-sft
+- Modelo en Hugging Face: https://huggingface.co/neikhn/kronos-base-vn30-sft
 - Modelo base: https://huggingface.co/NeoQuasar/Kronos-base
 - Tokenizador: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base

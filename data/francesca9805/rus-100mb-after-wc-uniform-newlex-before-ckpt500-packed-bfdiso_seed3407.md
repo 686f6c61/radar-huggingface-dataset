@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino mediante aprendizaje supervisado (SFT) del modelo base `francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace francesca9805. Según el enlace de Weights & Biases incluido en la model card, el entrenamiento se ejecuta en el espacio de trabajo `f-padovani-university-of-groningen`, lo que apunta a un proyecto de investigación académica sobre tokenización y modelado de lenguaje. La arquitectura es GPT-2 (transformer decoder-only) y el recuento real de parámetros en safetensors es de 124.770.816, en línea con la variante GPT-2 small.
+Este modelo es un ajuste fino mediante aprendizaje supervisado (SFT) del modelo base `francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face francesca9805. Según el enlace de Weights & Biases incluido en la model card, el entrenamiento se ejecuta en el espacio de trabajo `f-padovani-university-of-groningen`, lo que apunta a un proyecto de investigación académica sobre tokenización y modelado de lenguaje. La arquitectura es GPT-2 (transformer decoder-only) y el recuento real de parámetros en safetensors es de 124.770.816, en línea con la variante GPT-2 small.
 
 El nombre del repositorio sugiere que el modelo forma parte de una línea de experimentos controlados sobre tokenizadores: `wc-uniform` (probablemente tokenizador uniforme por palabras), `newlex` (nuevo léxico o vocabulario), `rus` (ruso), `100mb` (corpus de entrenamiento de aproximadamente 100 MB), `before-ckpt500` (estado anterior al checkpoint 500) y `seed3407` (semilla de inicialización). Existen repositorios paralelos de la misma autora para otros idiomas como inglés (`eng`), italiano (`ita`), japonés (`jpn`) y tamil, lo que confirma que se trata de una comparativa multilingüe centrada en el efecto del tokenizador.
 
@@ -12,7 +12,7 @@ Es relevante ahora como artefacto de investigación reproducible para estudiar c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), etiquetado como `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), etiquetado como `gpt2` en Hugging Face |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 millones) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -36,7 +36,7 @@ El entrenamiento se realizó mediante SFT con la librería TRL sobre un corpus d
 
 - Generacion de texto autorregresiva en el idioma o idiomas del corpus de entrenamiento (probablemente ruso).
 - Ajuste supervisado orientado a seguir instrucciones en formato conversacional, ya que el ejemplo de la model card usa el pipeline con una lista de mensajes con rol `user`.
-- Integracion directa con `transformers`, `text-generation-inference` y endpoints compatibles de HuggingFace.
+- Integracion directa con `transformers`, `text-generation-inference` y endpoints compatibles de Hugging Face.
 - Compatibilidad con el ecosistema TRL y PyTorch para continuar el entrenamiento o reajustar.
 - No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso.
 - No se documentan capacidades de visión, audio ni modo de razonamiento explícito.
@@ -51,7 +51,7 @@ El entrenamiento se realizó mediante SFT con la librería TRL sobre un corpus d
 - Docencia y prácticas: por su tamaño reducido, es adecuado para enseñar el flujo completo de transformers, TRL y despliegue con `pipeline`.
 - Reproducibilidad académica: al publicar la semilla (`seed3407`) y el enlace a Weights & Biases, facilita la verificación de resultados en artículos o tesis sobre tokenización.
 - Comparación de vocabularios: analizar la cobertura léxica del tokenizador `newlex` frente a tokenizadores estándar de GPT-2 en corpus rusos.
-- Pruebas de infraestructura: validar pipelines con `text-generation-inference`, `transformers` o endpoints de HuggingFace con un modelo ligero antes de escalar a otros mayores.
+- Pruebas de infraestructura: validar pipelines con `text-generation-inference`, `transformers` o endpoints de Hugging Face con un modelo ligero antes de escalar a otros mayores.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En cuantización de 8 bits: aproximadamente 125-150 MB; en 4 bits: alrededor de 70-90 MB (estas cuantizaciones no se publican en el repositorio, habría que generarlas).
 - GPU recomendadas: cualquier GPU moderna es suficiente. Está holgadamente dentro de una RTX 3060, RTX 4090, A100 o H100; incluso una GPU integrada o una CPU moderna puede ejecutarlo con latencias aceptables.
 - Cabe sin problema en GPU de consumo, incluidos portátiles con gráfica dedicada modesta.
-- Opciones de despliegue: `transformers` (pipeline), `text-generation-inference` (etiquetado como compatible), vLLM, llama.cpp u Ollama (requeriría convertir los pesos a GGUF), y endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (pipeline), `text-generation-inference` (etiquetado como compatible), vLLM, llama.cpp u Ollama (requeriría convertir los pesos a GGUF), y endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible (no se han publicado mediciones). Dado el tamaño, se esperan latencias del orden de milisegundos por token en GPU y decenas de milisegundos por token en CPU.
 
 ## Comparativa con modelos similares
@@ -92,9 +92,9 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/francesca9805/rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Hugging Face del modelo: https://huggingface.co/francesca9805/rus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-rus-before-100mb-packed-bfdiso_seed3407
-- Perfil de la autora en HuggingFace: https://huggingface.co/francesca9805
+- Perfil de la autora en Hugging Face: https://huggingface.co/francesca9805
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/cb8dj16z
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Variante en italiano: https://huggingface.co/francesca9805/ita-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed10_seed10

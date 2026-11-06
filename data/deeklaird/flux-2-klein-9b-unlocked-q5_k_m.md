@@ -1,7 +1,7 @@
 # deeklaird/flux-2-klein-9b-unlocked-q5_k_m
 
 ## Resumen
-FLUX.2 Klein 9B Unlocked es una cuantizacion en formato GGUF (Q5_K_M) del modelo de difusion text-to-image FLUX.2 Klein 9B, publicada por el usuario deeklaird en HuggingFace. Se distribuye como un unico checkpoint GGUF de aproximadamente 6,5 GB, esta marcada como "unlocked" (sin filtros de contenido en el prompt) e incluye una restauracion de anatomia pre-aplicada, ajustada para inferencia local rapida y de alta fidelidad.
+FLUX.2 Klein 9B Unlocked es una cuantizacion en formato GGUF (Q5_K_M) del modelo de difusion text-to-image FLUX.2 Klein 9B, publicada por el usuario deeklaird en Hugging Face. Se distribuye como un unico checkpoint GGUF de aproximadamente 6,5 GB, esta marcada como "unlocked" (sin filtros de contenido en el prompt) e incluye una restauracion de anatomia pre-aplicada, ajustada para inferencia local rapida y de alta fidelidad.
 
 El modelo aborda la generacion de imagenes a partir de texto en hardware de consumo: parte de un checkpoint de 9.078.591.248 parametros (unos 9,08 mil millones) y lo comprime a una cuantizacion de 5 bits que mantiene la calidad visual. Para funcionar necesita componentes externos que no van incluidos en el repo: un text encoder CLIP basado en Qwen3-8B abliterado, un VAE especifico (`flux2-vae.safetensors`) y, de forma opcional, LoRAs secundarias.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.2 Klein 9B Unlocked Q5_K_M (este) | 9,08 mil millones (Q5_K_M) | 1024x1024 / 1 MP | apache-2.0 | GGUF en HuggingFace |
+| FLUX.2 Klein 9B Unlocked Q5_K_M (este) | 9,08 mil millones (Q5_K_M) | 1024x1024 / 1 MP | apache-2.0 | GGUF en Hugging Face |
 | FLUX.2 Klein 9B (base) | 9,08 mil millones | no disponible | no disponible en la informacion | no disponible en la informacion |
-| FLUX.1 [dev] | 12 mil millones | 1 MP aprox. | FLUX.1 [dev] Non-Commercial | pesos abiertos en HuggingFace |
-| Stable Diffusion 3.5 Large | 8 mil millones | 1 MP | Stability AI Community License | pesos abiertos en HuggingFace |
+| FLUX.1 [dev] | 12 mil millones | 1 MP aprox. | FLUX.1 [dev] Non-Commercial | pesos abiertos en Hugging Face |
+| Stable Diffusion 3.5 Large | 8 mil millones | 1 MP | Stability AI Community License | pesos abiertos en Hugging Face |
 
 Nota: los datos del modelo base FLUX.2 Klein 9B no aparecen en la informacion proporcionada. Las filas de FLUX.1 [dev] y Stable Diffusion 3.5 Large se incluyen como referencia de categoria y no provienen de la model card; conviene verificarlas en sus repositorios oficiales antes de tomar decisiones.
 
@@ -82,7 +82,7 @@ Nota: los datos del modelo base FLUX.2 Klein 9B no aparecen en la informacion pr
 - No se confirma el origen de los pesos base ni si la licencia apache-2.0 de esta cuantizacion es compatible con la del modelo original FLUX.2 Klein 9B; conviene verificarlo antes de uso comercial.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/deeklaird/flux-2-klein-9b-unlocked-q5_k_m
+- Hugging Face: https://huggingface.co/deeklaird/flux-2-klein-9b-unlocked-q5_k_m
 - ComfyUI-GGUF (nodo requerido): https://github.com/city96/ComfyUI-GGUF
 - Text encoder referenciado: `Huihui-Qwen3-8B-abliterated-v2.i1-Q4_K_M.gguf` (sin enlace directo en la informacion proporcionada)
 - VAE referenciado: `flux2-vae.safetensors` (sin enlace directo en la informacion proporcionada)

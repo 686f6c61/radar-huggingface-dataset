@@ -76,7 +76,7 @@ La model card del cuantizador no incluye tablas de MMLU, HumanEval, GSM8K, MATH 
 | Modelo | Parametros | Cuantizaciones | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | mradermacher/Kiwen1.2-27B-i1-GGUF (este) | 27,3 B | i1-Q2_K, i1-IQ3_M publicados; matriz de importancia incluida | no disponible | apache-2.0 | GGUF, repo de 23,6 GB, 0 descargas |
-| beyoru/Kiwen1.2-27B (modelo base) | 27,3 B | safetensors sin cuantizar | no disponible | apache-2.0 | checkpoint original en HuggingFace |
+| beyoru/Kiwen1.2-27B (modelo base) | 27,3 B | safetensors sin cuantizar | no disponible | apache-2.0 | checkpoint original en Hugging Face |
 | mradermacher/Kiwen1.2-27B-GGUF (cuantizaciones estaticas) | 27,3 B | cuantizaciones estaticas (no i1); aloja los mmproj si existen | no disponible | apache-2.0 | GGUF alternativo del mismo cuantizador |
 | kiwen1.1 (iteracion anterior, citada en tags) | no disponible | no disponible | no disponible | no disponible | no disponible |
 

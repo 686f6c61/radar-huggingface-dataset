@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/softandsweet/stabilityai-triposr-rngd-fxbex
-- Modelo original en HuggingFace: https://huggingface.co/stabilityai/TripoSR
+- Repositorio Hugging Face: https://huggingface.co/softandsweet/stabilityai-triposr-rngd-fxbex
+- Modelo original en Hugging Face: https://huggingface.co/stabilityai/TripoSR
 - Commit de referencia del modelo original: https://huggingface.co/stabilityai/TripoSR/tree/5b521936b01fbe1890f6f9baed0254ab6351c04a
 - Runtime FXBEX: https://github.com/smallstep-zzz/FXBEX
 - Runtime FXBEX, commit fijado: https://github.com/smallstep-zzz/FXBEX/tree/fad9892c01faf00a119f577c1b71eb361928e156

@@ -4,7 +4,7 @@
 
 El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-jpn-eng`, publicado por el usuario Beetle-FineWeb-24B-5, es un modelo de generacion de texto de tipo decoder con 193.804.032 parametros, distribuido en formato safetensors y con la etiqueta de arquitectura propietaria `pico_decoder`, lo que implica la necesidad de codigo personalizado (`custom_code`) para cargarlo con transformers. El repositorio se creo el 7 de octubre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones.
 
-El nombre del modelo sugiere varias caracteristicas que no estan confirmadas en la model card: una naturaleza bilingue japones-ingles (`jpn-eng`), un entrenamiento sobre el corpus FineWeb con un presupuesto de aproximadamente 2.000 millones de tokens (`fineweb-2b`), y algun tipo de esquema de salida temprana o intermedia (`l2-80`, `late-b5`) sobre un backbone de 80 capas. Ninguna de estas hipotesis esta documentada por el autor, cuya model card es la plantilla automatica de HuggingFace sin rellenar. La relevancia de este modelo es, por tanto, limitada y fundamentalmente experimental: se trata de un checkpoint de investigacion sin documentacion, sin licencia declarada y sin resultados publicados.
+El nombre del modelo sugiere varias caracteristicas que no estan confirmadas en la model card: una naturaleza bilingue japones-ingles (`jpn-eng`), un entrenamiento sobre el corpus FineWeb con un presupuesto de aproximadamente 2.000 millones de tokens (`fineweb-2b`), y algun tipo de esquema de salida temprana o intermedia (`l2-80`, `late-b5`) sobre un backbone de 80 capas. Ninguna de estas hipotesis esta documentada por el autor, cuya model card es la plantilla automatica de Hugging Face sin rellenar. La relevancia de este modelo es, por tanto, limitada y fundamentalmente experimental: se trata de un checkpoint de investigacion sin documentacion, sin licencia declarada y sin resultados publicados.
 
 No hay informacion disponible sobre el proceso de entrenamiento, la composicion del dataset, el regimen de precision, la longitud de contexto soportada ni los idiomas oficialmente cubiertos. Tampoco existen datos de evaluacion. Cualquier uso en produccion deberia considerarse de alto riesgo hasta que el autor publique documentacion adicional.
 
@@ -29,9 +29,9 @@ No hay informacion disponible sobre el proceso de entrenamiento, la composicion 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion fiable sobre la arquitectura es la etiqueta `pico_decoder`, que no corresponde a ninguna familia estandar de HuggingFace (no es Llama, Mistral, Qwen, GPT-NeoX ni similar) y que obliga a ejecutar codigo remoto del repositorio para instanciar el modelo. Se trata, por el nombre, de un decoder transformer de ~194 millones de parametros. El identificador sugiere una configuracion con 80 capas y algun mecanismo de salida en capas intermedias o tardias, pero no hay configuracion publicada (`config.json`) ni documentacion tecnica en la informacion disponible que permita confirmarlo.
+La unica informacion fiable sobre la arquitectura es la etiqueta `pico_decoder`, que no corresponde a ninguna familia estandar de Hugging Face (no es Llama, Mistral, Qwen, GPT-NeoX ni similar) y que obliga a ejecutar codigo remoto del repositorio para instanciar el modelo. Se trata, por el nombre, de un decoder transformer de ~194 millones de parametros. El identificador sugiere una configuracion con 80 capas y algun mecanismo de salida en capas intermedias o tardias, pero no hay configuracion publicada (`config.json`) ni documentacion tecnica en la informacion disponible que permita confirmarlo.
 
-En cuanto al entrenamiento, el nombre apunta a un corpus basado en FineWeb con unos 2.000 millones de tokens y a un regimen bilingue japones-ingles, pero el autor no documenta numero de tokens reales, composicion del dataset, filtrado, ni si hubo fases de ajuste por instrucciones (SFT, RLHF o DPO). Tampoco se declara el hardware utilizado, las horas de computo ni las emisiones de carbono asociadas. La unica referencia externa presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de impacto ambiental y que aparece en la plantilla por defecto de HuggingFace, no como contribucion tecnica del modelo.
+En cuanto al entrenamiento, el nombre apunta a un corpus basado en FineWeb con unos 2.000 millones de tokens y a un regimen bilingue japones-ingles, pero el autor no documenta numero de tokens reales, composicion del dataset, filtrado, ni si hubo fases de ajuste por instrucciones (SFT, RLHF o DPO). Tampoco se declara el hardware utilizado, las horas de computo ni las emisiones de carbono asociadas. La unica referencia externa presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de impacto ambiental y que aparece en la plantilla por defecto de Hugging Face, no como contribucion tecnica del modelo.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Dada la ausencia total de documentacion, licencia y evaluacion, los casos de uso
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de HuggingFace sin completar, y no se han encontrado evaluaciones externas, articulos ni publicaciones asociadas. No hay datos de MMLU, HumanEval, GSM8K, JGLUE ni de ninguna otra suite, ni metricas de perplejidad sobre validacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de Hugging Face sin completar, y no se han encontrado evaluaciones externas, articulos ni publicaciones asociadas. No hay datos de MMLU, HumanEval, GSM8K, JGLUE ni de ninguna otra suite, ni metricas de perplejidad sobre validacion.
 
 ## Requisitos de hardware
 
@@ -80,11 +80,11 @@ No hay datos de rendimiento de este modelo que permitan una comparacion funciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-l2-80-late-b5-fineweb-2b-jpn-eng | 193,8 M | no disponible | no disponible | HuggingFace, requiere codigo remoto |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | HuggingFace, pesos estandar |
-| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | HuggingFace, pesos estandar |
-| GPT-2 (124M) | 124 M | 1.024 tokens | modified MIT | HuggingFace, ampliamente soportado |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace, ecosistema amplio |
+| beetle-bilingual-l2-80-late-b5-fineweb-2b-jpn-eng | 193,8 M | no disponible | no disponible | Hugging Face, requiere codigo remoto |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | Hugging Face, pesos estandar |
+| Pythia-160M | 160 M | 2.048 tokens | Apache-2.0 | Hugging Face, pesos estandar |
+| GPT-2 (124M) | 124 M | 1.024 tokens | modified MIT | Hugging Face, ampliamente soportado |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face, ecosistema amplio |
 
 La comparacion en terminos de calidad, razonamiento o generacion multilingue no es posible: no existen resultados publicados para el modelo Beetle, mientras que las alternativas cuentan con evaluaciones estandar y soporte en multiples frameworks de inferencia.
 
@@ -103,7 +103,7 @@ La comparacion en terminos de calidad, razonamiento o generacion multilingue no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-jpn-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-jpn-eng
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Repositorio, paper, demo y model card del autor: no disponibles.

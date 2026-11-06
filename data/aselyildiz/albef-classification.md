@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables. El checkpoint no está 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/aselyildiz/albef-classification)
+- [Repositorio en Hugging Face](https://huggingface.co/aselyildiz/albef-classification)
 - [Implementación similar en ART (GitHub)](https://github.com/visinf/ART/blob/main/lavis/models/albef_models/albef_classification.py)
 - [Implementación similar en ALFAR (GitHub)](https://github.com/Lackel/ALFAR/blob/main/experiments/lavis/models/albef_models/albef_classification.py)
 - [Uso de ALBEF para etiquetado automático con YOLOv8 (Roboflow)](https://roboflow.com/train/albef-and-yolov8)

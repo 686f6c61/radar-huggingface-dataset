@@ -82,7 +82,7 @@ No se dispone de modelos comparables en la información proporcionada: no es un 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en el simulador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ilsacheonri-v2` (este modelo) | Política RL (PPO) | No disponible | No aplica | 11,25 M wones/mes, 95 % satisfacción, 2,4 incidentes | Apache 2.0 | HuggingFace, vía `connect-tycoon` |
+| `ilsacheonri-v2` (este modelo) | Política RL (PPO) | No disponible | No aplica | 11,25 M wones/mes, 95 % satisfacción, 2,4 incidentes | Apache 2.0 | Hugging Face, vía `connect-tycoon` |
 | Jefe basado en reglas | Sistema experto determinista | No aplica | No aplica | 3,24 M wones/mes, 79 % satisfacción, 7,8 incidentes | No disponible | Incluido en el simulador como referencia |
 | Otros modelos RL para el mismo entorno | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se dispone de modelos comparables en la información proporcionada: no es un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v2-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Documentación gráfica del proyecto (banner): https://raw.githubusercontent.com/wonseokjung/connect-tycoon/main/docs/brand/banner.gif

@@ -61,7 +61,7 @@ No se dispone de datos comparativos publicados para este modelo concreto. Como r
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | Transformer con chunking | 51,6 M | no aplica | Apache-2.0 | HuggingFace |
+| ACT (este modelo) | Transformer con chunking | 51,6 M | no aplica | Apache-2.0 | Hugging Face |
 | Diffusion Policy | Red de difusion condicionada | variable (tipicamente 10-100 M) | no aplica | MIT (referencia) | Repos oficiales |
 | Behavior Transformers | Transformer con discretizacion | variable | no aplica | MIT (referencia) | Repos oficiales |
 
@@ -79,7 +79,7 @@ Nota: los datos de Diffusion Policy y Behavior Transformers son orientativos y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdadasdaga/act-v6-chunk50
+- Modelo en Hugging Face: https://huggingface.co/sdadasdaga/act-v6-chunk50
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot para ACT: https://huggingface.co/docs/lerobot/main/en/act

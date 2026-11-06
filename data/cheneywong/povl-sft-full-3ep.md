@@ -79,8 +79,8 @@ La informacion proporcionada solo permite comparar este checkpoint con su modelo
 
 | Modelo | Parametros totales | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CheneyWong/povl-sft-full-3ep | 905.601.648 | no disponible | no disponible (*(not evaluated)*) | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| CheneyWong/table_recognition_paddleocrvl16 (base) | 905.601.648 (mismo recuento de pesos) | no disponible | no disponible | Apache 2.0 (segun etiqueta del derivado) | HuggingFace |
+| CheneyWong/povl-sft-full-3ep | 905.601.648 | no disponible | no disponible (*(not evaluated)*) | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| CheneyWong/table_recognition_paddleocrvl16 (base) | 905.601.648 (mismo recuento de pesos) | no disponible | no disponible | Apache 2.0 (segun etiqueta del derivado) | Hugging Face |
 | Alternativas externas de reconocimiento de tablas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Diferencias observadas entre el checkpoint y su base, segun la model card: en dominio las metricas se mantuvieron o mejoraron ligeramente, mientras que la tasa de truncamiento en maquetaciones no vistas paso del 8,6 % al 37,3 %.
@@ -102,7 +102,7 @@ Diferencias observadas entre el checkpoint y su base, segun la model card: en do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-sft-full-3ep
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-sft-full-3ep
 - Modelo base declarado: https://huggingface.co/CheneyWong/table_recognition_paddleocrvl16
 - Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/ (referencia general sobre SFT, no especifica del modelo)
 - From SFT to GRPO: A Practical Guide to Modern LLM Fine-Tuning: https://arzerin.com/2026/08/20/llm-post-training-sft-dpo-ppo-grpo-peft-lora-qlora/ (referencia general sobre post-entrenamiento)

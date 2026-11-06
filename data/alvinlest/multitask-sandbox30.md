@@ -68,6 +68,6 @@ No hay modelos comparables en el sentido de que se trata de un checkpoint de ini
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/alvinlest/multitask-sandbox30)
+- [Repositorio de Hugging Face](https://huggingface.co/alvinlest/multitask-sandbox30)
 
 No se encontraron otros enlaces relevantes en la búsqueda web.

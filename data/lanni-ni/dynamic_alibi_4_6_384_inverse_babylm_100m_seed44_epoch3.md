@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3`, desarrollado por Lanni-ni, es un modelo de lenguaje de 45,7 millones de parámetros subido al Hub de HuggingFace. Su nombre y etiquetas indican que explora mecanismos de atención posicional dinámica (ALiBi) dentro del contexto de la iniciativa BabyLM, que estudia el aprendizaje del lenguaje con datos limitados. La model card publicada no contiene información detallada sobre arquitectura, entrenamiento o capacidades, por lo que esta ficha se basa únicamente en los metadatos disponibles.
+El modelo `dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3`, desarrollado por Lanni-ni, es un modelo de lenguaje de 45,7 millones de parámetros subido al Hub de Hugging Face. Su nombre y etiquetas indican que explora mecanismos de atención posicional dinámica (ALiBi) dentro del contexto de la iniciativa BabyLM, que estudia el aprendizaje del lenguaje con datos limitados. La model card publicada no contiene información detallada sobre arquitectura, entrenamiento o capacidades, por lo que esta ficha se basa únicamente en los metadatos disponibles.
 
 El modelo está disponible en formato `safetensors` y se integra con la biblioteca `transformers`. Con solo 45,7M de parámetros, se trata de un modelo compacto orientado a la investigación, no a producción. Su relevancia radica en el estudio de variantes de atención posicional en modelos pequeños, aunque no se han publicado resultados que validen su rendimiento.
 
@@ -63,5 +63,5 @@ No se han publicado resultados de benchmarks que permitan una comparativa riguro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch3
 - Perfil del autor: https://huggingface.co/Lanni-ni

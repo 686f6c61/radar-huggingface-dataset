@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vicgrace/qwen25_15b_goldadtc_submission_v2 es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario Vicgrace. Se trata de un fine-tune de la familia Qwen2.5 (el nombre del fichero de pesos, `qwen2.5-1.5b-instruct.Q4_K_M.gguf`, apunta a Qwen2.5-1.5B-Instruct como modelo base) que ha sido entrenado con Unsloth y posteriormente convertido a formato GGUF para su uso con llama.cpp. El recuento real de parámetros reportado por la plataforma a partir de los safetensors es de 1.543.714.304, es decir, aproximadamente 1,54 mil millones de parámetros, con un tamano de repositorio de 1,0 GB.
+Vicgrace/qwen25_15b_goldadtc_submission_v2 es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario Vicgrace. Se trata de un fine-tune de la familia Qwen2.5 (el nombre del fichero de pesos, `qwen2.5-1.5b-instruct.Q4_K_M.gguf`, apunta a Qwen2.5-1.5B-Instruct como modelo base) que ha sido entrenado con Unsloth y posteriormente convertido a formato GGUF para su uso con llama.cpp. El recuento real de parámetros reportado por la plataforma a partir de los safetensors es de 1.543.714.304, es decir, aproximadamente 1,54 mil millones de parámetros, con un tamano de repositorio de 1,0 GB.
 
 El modelo se distribuye con la etiqueta `goldadtc_submission_v2`, lo que sugiere que fue preparado como entrega para una competicion o tarea concreta ("gold adtc"), aunque la model card no describe el dataset, el objetivo ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth. No se declara licencia, idiomas soportados ni pipeline, y el repositorio no incluye resultados de evaluacion.
 
@@ -22,7 +22,7 @@ Su relevancia practica es limitada pero clara: al ser un modelo de 1,5B en GGUF 
 | Formato de pesos | GGUF |
 | Tags declarados | gguf, qwen2, llama.cpp, unsloth, endpoints_compatible, region:us, conversational |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace; fecha anomala respecto al calendario habitual de publicaciones) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face; fecha anomala respecto al calendario habitual de publicaciones) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de sus respe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vicgrace/qwen25_15b_goldadtc_submission_v2
+- Repositorio en Hugging Face: https://huggingface.co/Vicgrace/qwen25_15b_goldadtc_submission_v2
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Modelo base probable, Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

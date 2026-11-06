@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Berlin rent model (demo) es un modelo de regresión tabular publicado por el usuario mfozdil en HuggingFace, concebido como pieza demostrativa del proyecto Berlin Housing AI. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una regresión lineal serializada en un fichero JSON de menos de 100 kB, que predice la renta fría mensual (Kaltmiete) de un piso en Berlín a partir de variables como distrito, barrio, superficie, número de habitaciones y planta, devolviendo además un intervalo del 80 % mediante predicción conformal.
+Berlin rent model (demo) es un modelo de regresión tabular publicado por el usuario mfozdil en Hugging Face, concebido como pieza demostrativa del proyecto Berlin Housing AI. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una regresión lineal serializada en un fichero JSON de menos de 100 kB, que predice la renta fría mensual (Kaltmiete) de un piso en Berlín a partir de variables como distrito, barrio, superficie, número de habitaciones y planta, devolviendo además un intervalo del 80 % mediante predicción conformal.
 
 Su relevancia no reside en el rendimiento predictivo, sino en la honestidad metodológica del pipeline: el autor advierte explícitamente de que los datos de entrenamiento son sintéticos, generados por una fórmula de precios y no recogidos de anuncios reales, y etiqueta cada respuesta con la marca `TRAINING_DATA_UNVERIFIED`. El modelo sirve como referencia para ingenieros que quieran ver un flujo completo de datos, entrenamiento, servicio HTTP y etiquetado de procedencia.
 
@@ -74,7 +74,7 @@ En los meses de 2026 (test), la regresión lineal sobreestimó en promedio 77 �
 
 | Modelo | Tipo | Error en validación 2025 (€) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Berlin rent model (demo) | Regresión lineal | 144 | MIT | HuggingFace |
+| Berlin rent model (demo) | Regresión lineal | 144 | MIT | Hugging Face |
 | CatBoost (referencia del autor) | Árboles con boosting | 145 | No disponible en la información | No publicada como artefacto |
 | Red neuronal pequeña (referencia del autor) | Red neuronal | 144 | No disponible en la información | No publicada como artefacto |
 | Baseline €/m² medio | Media simple | 405 | No aplica | No aplica |
@@ -94,7 +94,7 @@ Los tres modelos reales empatan en error, lo que el autor interpreta como eviden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mfozdil/berlin-rent-demo
+- Modelo en Hugging Face: https://huggingface.co/mfozdil/berlin-rent-demo
 - Repositorio del proyecto Berlin Housing AI: https://github.com/cyberx801/berlin-housing-ai
 - Servicio de API de renta: https://github.com/cyberx801/berlin-housing-ai/tree/main/services/rent-api
 - Procedencia y checksums de datos: https://github.com/cyberx801/berlin-housing-ai/blob/main/data/PROVENANCE.md

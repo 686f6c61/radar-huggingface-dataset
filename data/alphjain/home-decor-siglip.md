@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlphJain/home-decor-siglip` es un modelo multimodal basado en la arquitectura SigLIP (Sigmoid Loss for Language Image Pre-training), publicado en HuggingFace por el usuario AlphJain. Por el nombre y el tamaño del repositorio (81,1 GB), se trata de un fine-tuning o adaptación de un checkpoint SigLIP orientado al dominio de decoración de interiores y hogar, aunque la model card pública no documenta el proceso de entrenamiento, el dataset utilizado ni el objetivo exacto del ajuste.
+`AlphJain/home-decor-siglip` es un modelo multimodal basado en la arquitectura SigLIP (Sigmoid Loss for Language Image Pre-training), publicado en Hugging Face por el usuario AlphJain. Por el nombre y el tamaño del repositorio (81,1 GB), se trata de un fine-tuning o adaptación de un checkpoint SigLIP orientado al dominio de decoración de interiores y hogar, aunque la model card pública no documenta el proceso de entrenamiento, el dataset utilizado ni el objetivo exacto del ajuste.
 
 El modelo cuenta con 375.187.970 parámetros en formato safetensors, lo que lo sitúa en la horquilla de los checkpoints SigLIP de tamaño base (ViT-B), aunque el número exacto de parámetros no coincide con las variantes canónicas publicadas por Google, lo que sugiere posibles capas adicionales o una modificación de la cabeza de proyección. No se dispone de información sobre la longitud de contexto visual, la resolución de entrada ni el vocabulario del tokenizador de texto asociado.
 
@@ -68,10 +68,10 @@ Nota: el tamaño del repositorio (81,1 GB) es desproporcionado respecto a los 37
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlphJain/home-decor-siglip | 375 M | no disponible | no disponible | HuggingFace (16 descargas) |
-| google/siglip-base-patch16-224 | ~203 M | 64 tokens de texto | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/siglip-so400m-patch14-384 | ~878 M | 64 tokens de texto | Apache 2.0 | HuggingFace |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | MIT | HuggingFace |
+| AlphJain/home-decor-siglip | 375 M | no disponible | no disponible | Hugging Face (16 descargas) |
+| google/siglip-base-patch16-224 | ~203 M | 64 tokens de texto | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/siglip-so400m-patch14-384 | ~878 M | 64 tokens de texto | Apache 2.0 | Hugging Face |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | MIT | Hugging Face |
 
 La comparativa se limita a la arquitectura y disponibilidad, ya que no hay datos de rendimiento publicados para el modelo de AlphJain. El número de parámetros (375 M) no coincide con ninguna variante SigLIP canónica, lo que refuerza la hipótesis de una modificación estructural no documentada.
 
@@ -88,7 +88,7 @@ La comparativa se limita a la arquitectura y disponibilidad, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlphJain/home-decor-siglip
+- Modelo en Hugging Face: https://huggingface.co/AlphJain/home-decor-siglip
 - Paper original de SigLIP: https://arxiv.org/abs/2303.15343
 - Repositorio oficial de SigLIP en transformers: https://github.com/huggingface/transformers/tree/main/src/transformers/models/siglip
 - Checkpoint base de referencia: https://huggingface.co/google/siglip-base-patch16-224

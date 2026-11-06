@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones del base en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentMO/arena-ds41flash-sft1
+- Modelo en Hugging Face: https://huggingface.co/latentMO/arena-ds41flash-sft1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Codigo de entrenamiento, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Diario de ejecucion referenciado: `runs/2026-10-25_arena_ds41-sft1.md` (dentro del repositorio de GitHub)

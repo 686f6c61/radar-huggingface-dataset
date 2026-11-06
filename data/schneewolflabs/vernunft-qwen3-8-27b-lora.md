@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: el adaptador LoRA ocupa 0,7 GB, pero el modelo base de 27B requiere VRAM adicional. En FP16, un modelo de 27B necesita aproximadamente 54 GB; con cuantizacion a 8 bits se reduce a ~27 GB y a 4 bits a ~14 GB.
 - GPU recomendadas: para inferencia con el modelo base completo, se recomiendan GPUs con al menos 24 GB de VRAM (RTX 3090/4090, A5000) para cuantizacion 4 bits, o 48 GB (A6000, L40S) para 8 bits. Para FP16 se necesitan GPUs de datacenter como A100 o H100.
 - Compatibilidad con consumer GPU: es posible ejecutar el modelo en GPUs consumer con cuantizacion (por ejemplo, RTX 4090 con 24 GB usando GGUF de 4 bits), pero no hay confirmacion de que el adaptador sea compatible con formatos GGUF.
-- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la libreria `transformers` de HuggingFace, o mediante servidores de inferencia como vLLM o TGI si soportan LoRA. Tambien se puede combinar con `llama.cpp` si se convierte el adaptador a formato GGUF, aunque no esta documentado.
+- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la libreria `transformers` de Hugging Face, o mediante servidores de inferencia como vLLM o TGI si soportan LoRA. Tambien se puede combinar con `llama.cpp` si se convierte el adaptador a formato GGUF, aunque no esta documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,9 +71,9 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/schneewolflabs/Vernunft-Qwen3.8-27B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/schneewolflabs/Vernunft-Qwen3.8-27B-LoRA
 - Herramienta Merlina (GitHub): https://github.com/Schneewolf-Labs/Merlina
-- Modelo base (HuggingFace): https://huggingface.co/DragonBophades/WichtelHui-Qwen3.8-27B-SLERP
+- Modelo base (Hugging Face): https://huggingface.co/DragonBophades/WichtelHui-Qwen3.8-27B-SLERP
 - Qwen3.8-27B en unsloth.ai: https://unsloth.ai/models/qwen3.8-27b
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

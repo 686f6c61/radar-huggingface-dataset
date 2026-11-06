@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| praful1/Qwen-3-0.6-nepali-qa | 596M | 32.768 | QA en nepalí | no disponible | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 596M | 32.768 | Modelo base multilingüe | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Instruct | 596M | 32.768 | Instrucciones multilingüe | Apache-2.0 | HuggingFace |
+| praful1/Qwen-3-0.6-nepali-qa | 596M | 32.768 | QA en nepalí | no disponible | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 596M | 32.768 | Modelo base multilingüe | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Instruct | 596M | 32.768 | Instrucciones multilingüe | Apache-2.0 | Hugging Face |
 
-El modelo ajustado se diferencia del base y del instruct en que está especializado en nepalí, pero carece de la robustez y el entrenamiento extenso de los modelos oficiales de Qwen. No se conocen otros modelos de QA en nepalí de tamaño similar en HuggingFace, por lo que la comparativa se limita a los modelos base.
+El modelo ajustado se diferencia del base y del instruct en que está especializado en nepalí, pero carece de la robustez y el entrenamiento extenso de los modelos oficiales de Qwen. No se conocen otros modelos de QA en nepalí de tamaño similar en Hugging Face, por lo que la comparativa se limita a los modelos base.
 
 ## Limitaciones y advertencias
 
@@ -75,8 +75,8 @@ El modelo ajustado se diferencia del base y del instruct en que está especializ
 
 ## Enlaces
 
-- [HuggingFace - praful1/Qwen-3-0.6-nepali-qa](https://huggingface.co/praful1/Qwen-3-0.6-nepali-qa)
-- [Repositorio de archivos en HuggingFace](https://huggingface.co/praful1/Qwen-3-0.6-nepali-qa/tree/main)
+- [Hugging Face - praful1/Qwen-3-0.6-nepali-qa](https://huggingface.co/praful1/Qwen-3-0.6-nepali-qa)
+- [Repositorio de archivos en Hugging Face](https://huggingface.co/praful1/Qwen-3-0.6-nepali-qa/tree/main)
 - [Página de análisis en Free2AITools](https://free2aitools.com/model/praful1/qwen-3-0.6-nepali-qa)
 - [Endpoint de inferencia en FriendliAI](https://friendli.ai/models/praful1/Qwen-3-0.6-nepali-qa)
 - [Modelo base Qwen/Qwen3-0.6B-Base](https://huggingface.co/Qwen/Qwen3-0.6B-Base)

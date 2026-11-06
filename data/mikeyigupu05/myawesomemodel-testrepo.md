@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario mikeyigupu05, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch, la arquitectura bert y la tarea feature-extraction. El repositorio no contiene pesos (tamano declarado de 0.0 GB), no registra descargas ni likes y su model card es una plantilla genérica que describe un supuesto modelo de razonamiento de gran escala sin identificar parametros, contexto ni datos de entrenamiento.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario mikeyigupu05, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch, la arquitectura bert y la tarea feature-extraction. El repositorio no contiene pesos (tamano declarado de 0.0 GB), no registra descargas ni likes y su model card es una plantilla genérica que describe un supuesto modelo de razonamiento de gran escala sin identificar parametros, contexto ni datos de entrenamiento.
 
-La informacion disponible es internamente contradictoria: las etiquetas de HuggingFace apuntan a un modelo tipo BERT para extraccion de caracteristicas, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling, soporte de subida de archivos y busqueda web. Ademas, la model card incluye una tabla de benchmarks con columnas anonimizadas (Model1, Model2, Model1-v2) y referencias a un supuesto incremento en AIME 2025 del 70% al 87,5% de precision, sin identificar la version previa ni el modelo concreto.
+La informacion disponible es internamente contradictoria: las etiquetas de Hugging Face apuntan a un modelo tipo BERT para extraccion de caracteristicas, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling, soporte de subida de archivos y busqueda web. Ademas, la model card incluye una tabla de benchmarks con columnas anonimizadas (Model1, Model2, Model1-v2) y referencias a un supuesto incremento en AIME 2025 del 70% al 87,5% de precision, sin identificar la version previa ni el modelo concreto.
 
 Por su naturaleza de repositorio de prueba, esta ficha debe leerse como un ejercicio de catalogacion de la informacion publicada, no como una evaluacion de un modelo desplegable. Cualquier dato tecnico no presente en el repositorio se marca explicitamente como no disponible.
 
@@ -104,11 +104,11 @@ No disponible. La tabla de benchmarks de la model card emplea nombres anonimizad
 - La licencia MIT permite uso comercial, pero se aplica sobre un artefacto sin contenido tecnico verificable; conviene comprobar la procedencia de cualquier copia derivada antes de reutilizarla.
 - Riesgo de alucinacion: no evaluable sin pesos; la propia model card afirma una reduccion de alucinaciones sin aportar metrica.
 - La fecha de creacion del repositorio (septiembre de 2026) y el uso de cifras de AIME 2025 sin referencia a un modelo base identificable son indicios de contenido de prueba o generado automaticamente.
-- Existen multiples repositorios con el mismo nombre en HuggingFace (por ejemplo, toolathlon5 y hgsre), lo que dificulta identificar un artefacto canonico.
+- Existen multiples repositorios con el mismo nombre en Hugging Face (por ejemplo, toolathlon5 y hgsre), lo que dificulta identificar un artefacto canonico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikeyigupu05/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/mikeyigupu05/MyAwesomeModel-TestRepo
 - Repositorio homonimo (toolathlon5): https://huggingface.co/toolathlon5/MyAwesomeModel-TestRepo
 - Repositorio homonimo (hgsre): https://huggingface.co/hgsre/MyAwesomeModel-TestRepo
 - Ficha de terceros en OpenModelMap (dongbobo): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

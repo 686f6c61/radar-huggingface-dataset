@@ -72,10 +72,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento matemático |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p6272x2-step735 | 7,3B | no disponible (entrenado a 32.768) | Apache 2.0 | HuggingFace (35 descargas) | AIME 2025: 44,17 % (mean@8) |
-| Olmo-3-1025-7B (base) | ~7B | no disponible | Apache 2.0 | HuggingFace (AllenAI) | no disponible en esta ficha |
-| Olmo-3.1-32B-Think (profesor) | ~32B | no disponible | no disponible | HuggingFace (AllenAI) | no disponible en esta ficha |
-| Qwen2.5-Math-7B | ~7B | no disponible | no disponible | HuggingFace | no disponible en esta ficha |
+| sft_olmo3base7b_olmo31think_ot3_p6272x2-step735 | 7,3B | no disponible (entrenado a 32.768) | Apache 2.0 | Hugging Face (35 descargas) | AIME 2025: 44,17 % (mean@8) |
+| Olmo-3-1025-7B (base) | ~7B | no disponible | Apache 2.0 | Hugging Face (AllenAI) | no disponible en esta ficha |
+| Olmo-3.1-32B-Think (profesor) | ~32B | no disponible | no disponible | Hugging Face (AllenAI) | no disponible en esta ficha |
+| Qwen2.5-Math-7B | ~7B | no disponible | no disponible | Hugging Face | no disponible en esta ficha |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; los datos de los modelos comparables deberían consultarse en sus respectivas fichas.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step735
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step735
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: no disponible en la información proporcionada

@@ -75,8 +75,8 @@ No se han publicado resultados de MMLU, GSM8K ni otros benchmarks estándar en l
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-abliteration-patch-20261105 (pqhaz) | no disponible | no disponible (evaluado a 4096) | Parche de pesos sobre Kimi-K3.1-Pro | `other` (kimi-k3.1-pro) | HuggingFace, 0 descargas |
-| moonshotai/Kimi-K3.1-Pro (base) | no disponible | no disponible | Modelo base | kimi-k3.1-pro | HuggingFace (revisión fijada) |
+| Kimi-K3.1-Pro-abliteration-patch-20261105 (pqhaz) | no disponible | no disponible (evaluado a 4096) | Parche de pesos sobre Kimi-K3.1-Pro | `other` (kimi-k3.1-pro) | Hugging Face, 0 descargas |
+| moonshotai/Kimi-K3.1-Pro (base) | no disponible | no disponible | Modelo base | kimi-k3.1-pro | Hugging Face (revisión fijada) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma familia o tamaño en la documentación proporcionada.

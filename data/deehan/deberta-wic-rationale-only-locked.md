@@ -81,4 +81,4 @@ No se dispone de información sobre modelos comparables en la misma tarea (WiC) 
 - Paper DeBERTa: https://arxiv.org/abs/2006.03654
 - Modelo similar de Deehan1866 (referencia): https://huggingface.co/Deehan1866/deberta-v3-large-wic-with_rationale (no es el mismo modelo, pero relacionado)
 
-Nota: los enlaces de HuggingFace a Deehan1866 no son directamente el modelo en cuestión, sino un modelo similar del mismo autor. Se incluyen como referencia adicional.
+Nota: los enlaces de Hugging Face a Deehan1866 no son directamente el modelo en cuestión, sino un modelo similar del mismo autor. Se incluyen como referencia adicional.

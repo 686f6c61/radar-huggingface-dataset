@@ -80,10 +80,10 @@ Los líderes de AUROC proceden del artículo de FDB (arXiv 2208.14417 v3). El ar
 
 | Modelo | Tipo | Parámetros | AUROC en test de FDB | Recall a 1% FPR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| System One (este modelo) | Stack de GBT + encoder ModernBERT-large con LoRA y cabeza de decisión | ~425,6M (395M base + 4,39M LoRA + 26,2M cabeza) | 0,9985 | 97,3% | Apache-2.0 | HuggingFace (getSTEAV/system-one-fdb-fakejob) |
+| System One (este modelo) | Stack de GBT + encoder ModernBERT-large con LoRA y cabeza de decisión | ~425,6M (395M base + 4,39M LoRA + 26,2M cabeza) | 0,9985 | 97,3% | Apache-2.0 | Hugging Face (getSTEAV/system-one-fdb-fakejob) |
 | Árbol GBT solo | Gradient boosting sobre features de ingeniería | no disponible | 0,9974 | 96,3% | no disponible | Incluido en el mismo repositorio |
 | AutoGluon (referencia publicada en FDB) | AutoML y stacking para datos tabulares | no disponible | 0,998 | 92,5% | no disponible | Framework open source |
-| convaiinnovations/laya | Encoder ModernBERT-large con cabeza de decisión tipada | ~395M | no aplica (no es un clasificador de fraude) | no disponible | Apache-2.0 | HuggingFace |
+| convaiinnovations/laya | Encoder ModernBERT-large con cabeza de decisión tipada | ~395M | no aplica (no es un clasificador de fraude) | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ Los líderes de AUROC proceden del artículo de FDB (arXiv 2208.14417 v3). El ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getSTEAV/system-one-fdb-fakejob
+- Modelo en Hugging Face: https://huggingface.co/getSTEAV/system-one-fdb-fakejob
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Fraud Dataset Benchmark (FDB): https://github.com/amazon-science/fraud-dataset-benchmark
 - Artículo de FDB (arXiv): https://arxiv.org/abs/2208.14417

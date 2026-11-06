@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen3-8B_SFT_lora_cogwear es un adaptador de ajuste supervisado (SFT) mediante LoRA publicado en HuggingFace por el usuario xw17. Por el nombre se infiere que se aplica sobre el modelo base Qwen3-8B, un transformer denso de aproximadamente 8 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de adaptador y no con un modelo completo de 8B, que en bf16 rondaria los 16 GB.
+xw17/Qwen3-8B_SFT_lora_cogwear es un adaptador de ajuste supervisado (SFT) mediante LoRA publicado en Hugging Face por el usuario xw17. Por el nombre se infiere que se aplica sobre el modelo base Qwen3-8B, un transformer denso de aproximadamente 8 000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. El repositorio ocupa 0,1 GB, un tamano compatible con pesos de adaptador y no con un modelo completo de 8B, que en bf16 rondaria los 16 GB.
 
-La documentacion publicada es practicamente inexistente: la model card es la plantilla autogenerada de HuggingFace y todos sus campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no declara pipeline, idiomas ni licencia, y acumula 0 descargas y 0 likes desde su creacion el 1 de octubre de 2026.
+La documentacion publicada es practicamente inexistente: la model card es la plantilla autogenerada de Hugging Face y todos sus campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no declara pipeline, idiomas ni licencia, y acumula 0 descargas y 0 likes desde su creacion el 1 de octubre de 2026.
 
 Su relevancia actual es limitada pero no nula: Qwen3-8B es una base ampliamente utilizada bajo licencia Apache 2.0 con modo de razonamiento hibrido (respuesta directa o cadena de pensamiento segun se active), y los adaptadores LoRA de terceros son una via barata de especializacion. Sin embargo, sin informacion sobre el dataset de entrenamiento, la licencia del artefacto ni evaluaciones, cualquier uso en produccion exige una validacion manual previa por parte del equipo que lo adopte.
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada pero no nula: Qwen3-8B es una base ampliamente 
 
 No hay informacion publicada sobre el procedimiento de entrenamiento. El sufijo "_SFT_lora" indica ajuste supervisado con adaptadores de bajo rango (LoRA) sobre un modelo base de la familia Qwen3-8B, una tecnica que congela los pesos originales e inserta matrices de rango reducido en las capas de atencion y proyeccion, reduciendo drasticamente el coste de ajuste. El nombre del modelo base implicado es Qwen3-8B, un transformer decoder-only denso con atencion de consultas agrupadas (GQA) y modo de razonamiento hibrido: puede generar una cadena de pensamiento antes de responder o contestar de forma directa, configurable por peticion segun la informacion publica del modelo base.
 
-No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, ni los hiperparametros del LoRA (rango, alpha, modulos objetivo, learning rate). La etiqueta arxiv:1910.09700 corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental en aprendizaje automatico, que la plantilla de HuggingFace incluye de forma automatica en la seccion de emisiones de carbono; no es una referencia tecnica del modelo. El termino "cogwear" del identificador sugiere una especializacion de dominio, pero no hay documentacion que lo confirme ni que describa el corpus utilizado.
+No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, ni los hiperparametros del LoRA (rango, alpha, modulos objetivo, learning rate). La etiqueta arxiv:1910.09700 corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental en aprendizaje automatico, que la plantilla de Hugging Face incluye de forma automatica en la seccion de emisiones de carbono; no es una referencia tecnica del modelo. El termino "cogwear" del identificador sugiere una especializacion de dominio, pero no hay documentacion que lo confirme ni que describa el corpus utilizado.
 
 ## Capacidades
 
@@ -80,10 +80,10 @@ Los datos de los modelos alternativos proceden de sus fichas publicas y no se ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen3-8B_SFT_lora_cogwear | no disponible (adaptador sobre base de ~8B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | ~8 000 millones | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, repositorio oficial |
-| meta-llama/Llama-3.1-8B | ~8 000 millones | no disponible en la informacion proporcionada | Llama 3.1 Community License | HuggingFace, acceso con aceptacion de terminos |
-| mistralai/Mistral-7B-v0.3 | ~7 300 millones | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| xw17/Qwen3-8B_SFT_lora_cogwear | no disponible (adaptador sobre base de ~8B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | ~8 000 millones | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, repositorio oficial |
+| meta-llama/Llama-3.1-8B | ~8 000 millones | no disponible en la informacion proporcionada | Llama 3.1 Community License | Hugging Face, acceso con aceptacion de terminos |
+| mistralai/Mistral-7B-v0.3 | ~7 300 millones | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 Comparado con Qwen3-8B, este adaptador anade una especializacion de dominio no documentada y pierde la trazabilidad del artefacto oficial (sin licencia declarada, sin idiomas y sin evaluacion). Frente a Llama 3.1 8B y Mistral 7B v0.3, la diferencia practica principal no es de rendimiento, que no puede compararse sin datos, sino de madurez del ecosistema y de claridad legal.
 

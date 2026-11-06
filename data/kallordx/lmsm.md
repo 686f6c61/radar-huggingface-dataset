@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kallordx/lmsm es un repositorio de modelo publicado en HuggingFace por el usuario Kallordx bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente (creada y actualizada el 2 de noviembre de 2026) sin traccion conocida en la comunidad.
+Kallordx/lmsm es un repositorio de modelo publicado en Hugging Face por el usuario Kallordx bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente (creada y actualizada el 2 de noviembre de 2026) sin traccion conocida en la comunidad.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. El identificador "lmsm" no corresponde a ninguna familia de modelos conocida, por lo que no es posible mapearlo a un trabajo publicado o a un paper de referencia. Cualquier evaluacion tecnica del modelo requeriria inspeccionar directamente los pesos del repositorio, que no se han podido verificar en la informacion disponible.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Prototipado experimental: uso en cuadernos de investigacion para explorar el comportamiento del modelo, siempre que se verifique primero que los pesos son cargables y funcionales.
 - Evaluacion comparativa interna: inclusion en un banco de pruebas propio para medir calidad frente a modelos de referencia, dado que no existen benchmarks publicos.
 - Fine-tuning supervisado: partida para un ajuste especifico si el modelo base resulta adecuado tras una inspeccion tecnica, aprovechando la licencia MIT.
-- Investigacion sobre modelos poco documentados: analisis de las decisiones de publicacion y de la reproducibilidad en el ecosistema HuggingFace.
+- Investigacion sobre modelos poco documentados: analisis de las decisiones de publicacion y de la reproducibilidad en el ecosistema Hugging Face.
 - Docencia sobre buenas practicas de model cards: uso como ejemplo de publicacion sin documentacion tecnica suficiente.
 - Integracion en pipelines de prueba: solo tras validar el formato de pesos, el tokenizador y los requisitos de memoria en un entorno aislado.
 
@@ -75,4 +75,4 @@ No disponible. Al desconocerse el tamano, la arquitectura y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kallordx/lmsm
+- Repositorio en Hugging Face: https://huggingface.co/Kallordx/lmsm

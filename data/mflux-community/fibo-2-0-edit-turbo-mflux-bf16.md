@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fibo-2-0-edit-turbo-mflux-bf16 (este) | no disponible (25,1 GB BF16) | no aplica | fibo-2.0-edit-turbo-license | HuggingFace, MLX | Conversion comunitaria para Apple Silicon |
-| briaai/Fibo-2.0-edit-turbo | no disponible | no aplica | fibo-2.0-edit-turbo-license | HuggingFace | Modelo original de Bria AI, pesos sin convertir |
-| mflux-community/fibo-2-0-edit-turbo-mflux-q8 | no disponible (13,4 GB) | no aplica | fibo-2.0-edit-turbo-license | HuggingFace, MLX | Misma conversion con cuantizacion Q8, menor huella de memoria |
+| fibo-2-0-edit-turbo-mflux-bf16 (este) | no disponible (25,1 GB BF16) | no aplica | fibo-2.0-edit-turbo-license | Hugging Face, MLX | Conversion comunitaria para Apple Silicon |
+| briaai/Fibo-2.0-edit-turbo | no disponible | no aplica | fibo-2.0-edit-turbo-license | Hugging Face | Modelo original de Bria AI, pesos sin convertir |
+| mflux-community/fibo-2-0-edit-turbo-mflux-q8 | no disponible (13,4 GB) | no aplica | fibo-2.0-edit-turbo-license | Hugging Face, MLX | Misma conversion con cuantizacion Q8, menor huella de memoria |
 
 No se dispone de informacion sobre otros modelos de edicion de imagen comparables (por ejemplo, variantes de Stable Diffusion o FLUX) en la documentacion proporcionada, por lo que no se incluyen en la tabla.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros modelos de edicion de imagen comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-bf16
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-bf16
 - Modelo base original: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Repositorio MFlux: https://github.com/filipstrand/mflux
 - Organizacion MFlux-Community: https://huggingface.co/mflux-community

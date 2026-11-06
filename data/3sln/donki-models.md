@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`3sln/donki-models` es un repositorio publicado en HuggingFace por el usuario 3sln bajo licencia MIT. Por los tags disponibles (`onnx`) y el tamano del repositorio (0,3 GB), se trata de un conjunto de pesos exportados al formato ONNX, presumiblemente destinado a inferencia en entornos de produccion que requieren runtime ONNX (ONNX Runtime, servidores compatibles, despliegue en CPU o aceleradores especificos) en lugar de frameworks nativos como PyTorch.
+`3sln/donki-models` es un repositorio publicado en Hugging Face por el usuario 3sln bajo licencia MIT. Por los tags disponibles (`onnx`) y el tamano del repositorio (0,3 GB), se trata de un conjunto de pesos exportados al formato ONNX, presumiblemente destinado a inferencia en entornos de produccion que requieren runtime ONNX (ONNX Runtime, servidores compatibles, despliegue en CPU o aceleradores especificos) en lugar de frameworks nativos como PyTorch.
 
-La model card publicada es practicamente vacia: solo declara la licencia MIT y no aporta informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni idiomas. Esto implica que cualquier evaluacion tecnica del modelo requiere inspeccion directa de los artefactos del repositorio, que no estan disponibles en la informacion proporcionada. El pipeline declarado en HuggingFace aparece como no disponible, lo que impide incluso clasificar la tarea (texto, vision, audio, etc.).
+La model card publicada es practicamente vacia: solo declara la licencia MIT y no aporta informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni idiomas. Esto implica que cualquier evaluacion tecnica del modelo requiere inspeccion directa de los artefactos del repositorio, que no estan disponibles en la informacion proporcionada. El pipeline declarado en Hugging Face aparece como no disponible, lo que impide incluso clasificar la tarea (texto, vision, audio, etc.).
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: documenta la existencia del repositorio y senala de forma explicita que la informacion publica es insuficiente para recomendarlo en entornos de produccion. Cualquier uso real exige verificar los pesos, la tokenizer asociada y los metadatos ONNX antes de integrarlo en un pipeline.
 
@@ -59,7 +59,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea, e
 ## Limitaciones y advertencias
 
 - Model card practicamente vacia: no hay informacion sobre arquitectura, parametros, contexto, idiomas ni datos de entrenamiento, lo que impide evaluar idoneidad para cualquier caso de uso concreto.
-- Tarea no identificada: el pipeline de HuggingFace figura como no disponible, por lo que no se puede confirmar si el modelo es de texto, vision, audio u otra modalidad.
+- Tarea no identificada: el pipeline de Hugging Face figura como no disponible, por lo que no se puede confirmar si el modelo es de texto, vision, audio u otra modalidad.
 - Riesgo de alucinacion y sesgos: no evaluables sin conocer el modelo de origen y sus datos de entrenamiento.
 - Ausencia de validacion de los artefactos ONNX: no consta que los grafos exportados sean correctos, completos ni equivalentes numericamente al modelo original; es imprescindible verificarlos antes de usarlos en produccion.
 - Licencia MIT: permite uso comercial y modificacion, pero no exime de cumplir posibles licencias de terceros asociadas al modelo base o a los datasets de entrenamiento, que no se declaran.
@@ -68,6 +68,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3sln/donki-models
+- Repositorio Hugging Face: https://huggingface.co/3sln/donki-models
 - Perfil del autor: https://huggingface.co/3sln
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

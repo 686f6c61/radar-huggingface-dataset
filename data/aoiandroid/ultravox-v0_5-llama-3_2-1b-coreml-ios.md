@@ -75,7 +75,7 @@ El modelo de Ultravox es notablemente mas pequeno que alternativas como Qwen2-Au
 
 ## Enlaces
 
-- Repositorio HuggingFace: [aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-ios](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-ios)
-- Modelo fuente en HuggingFace: [aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml)
+- Repositorio Hugging Face: [aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-ios](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml-ios)
+- Modelo fuente en Hugging Face: [aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml](https://huggingface.co/aoiandroid/ultravox-v0_5-llama-3_2-1b-coreml)
 - Modelo original: [fixie-ai/ultravox-v0_5-llama-3_2-1b](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_2-1b)
 - Repositorio GitHub de Ultravox: [fixie-ai/ultravox](https://github.com/fixie-ai/ultravox)

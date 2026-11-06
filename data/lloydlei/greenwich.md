@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lloydlei/Greenwich` es un repositorio publicado en HuggingFace por el usuario `lloydlei` el 14 de agosto de 2026. La única información disponible en su model card es la licencia MIT, sin ningún otro detalle sobre arquitectura, parámetros, entrenamiento o capacidades. No se han registrado descargas ni interacciones en la comunidad, lo que sugiere que se trata de un proyecto reciente o de baja difusión.
+El modelo `lloydlei/Greenwich` es un repositorio publicado en Hugging Face por el usuario `lloydlei` el 14 de agosto de 2026. La única información disponible en su model card es la licencia MIT, sin ningún otro detalle sobre arquitectura, parámetros, entrenamiento o capacidades. No se han registrado descargas ni interacciones en la comunidad, lo que sugiere que se trata de un proyecto reciente o de baja difusión.
 
 Dada la ausencia total de documentación técnica, no es posible determinar qué problema resuelve, qué arquitectura emplea ni para qué tareas está diseñado. La ficha que sigue refleja esta falta de información, indicando explícitamente "no disponible" en todos los campos donde no hay datos verificables. Se recomienda precaución antes de considerar este modelo para cualquier uso en producción, ya que no existe evidencia de su funcionamiento ni de su rendimiento.
 
@@ -57,4 +57,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lloydlei/Greenwich)
+- [Repositorio en Hugging Face](https://huggingface.co/lloydlei/Greenwich)

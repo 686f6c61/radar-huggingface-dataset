@@ -85,9 +85,9 @@ No se dispone de comparativas directas con otros adaptadores de la misma tarea. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rrod/qwen3-4b-constructive-disagreement-lora
+- Repositorio Hugging Face: https://huggingface.co/rrod/qwen3-4b-constructive-disagreement-lora
 - Repositorio fuente del experimento: https://github.com/roger-rodriguez/fine-tuning
 - Evaluacion completa: https://github.com/roger-rodriguez/fine-tuning/blob/main/docs/evaluation.md
 - Evidencia cruda de la evaluacion: https://github.com/roger-rodriguez/fine-tuning/tree/main/artifacts/runs/held-out-evaluation-001
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es una versión comprimida de `mistralai/Mistral-7B-Instruct-v0.2` mediante la técnica **Basis Sharing**, desarrollada por el grupo TUDa-HWAI, y publicada por el usuario de HuggingFace Jeesup. Concretamente, se elimina el 50 % de los parámetros del modelo base (fracción de parámetros realizada: 0,4998967097355769) haciendo que pares de capas adyacentes compartan una única base por tipo de peso, y después se recupera parte de la capacidad perdida con un LoRA entrenado **exclusivamente sobre los coeficientes**, manteniendo las bases congeladas.
+Este checkpoint es una versión comprimida de `mistralai/Mistral-7B-Instruct-v0.2` mediante la técnica **Basis Sharing**, desarrollada por el grupo TUDa-HWAI, y publicada por el usuario de Hugging Face Jeesup. Concretamente, se elimina el 50 % de los parámetros del modelo base (fracción de parámetros realizada: 0,4998967097355769) haciendo que pares de capas adyacentes compartan una única base por tipo de peso, y después se recupera parte de la capacidad perdida con un LoRA entrenado **exclusivamente sobre los coeficientes**, manteniendo las bases congeladas.
 
 La particularidad de esta celda experimental es que la recuperación se hace con una mezcla de datos que incluye, además de `yahma/alpaca-cleaned`, 960 filas de rechazo derivadas de 96 comportamientos dañinos de JailbreakBench (un 1,82 % del total de filas), con respuestas objetivo tomadas de `meta-llama/Llama-2-7b-chat-hf`. El objetivo declarado por el autor es medir si los datos de seguridad en la fase de recuperación preservan el comportamiento de rechazo tras una compresión agresiva.
 
@@ -109,7 +109,7 @@ No se han encontrado en la información proporcionada resultados de benchmarks d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbsft_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbsft_finetuned_keep_0p50
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Repositorio de Basis Sharing (TUDa-HWAI, commit `1c021b6ce1d3`): https://github.com/TUDa-HWAI/Basis_Sharing
 - Dataset de recuperacion `yahma/alpaca-cleaned`: https://huggingface.co/datasets/yahma/alpaca-cleaned

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-all-encompassing-confucianism-lora es un adaptador LoRA de edición de imágenes (pipeline `image-text-to-image`) publicado en HuggingFace por la cuenta RunningHubAI en nombre del autor original, identificado en la model card como el usuario @氛围感. No es un modelo generativo completo: se trata de un ajuste fino de bajo rango que debe cargarse sobre el modelo base Krea 2, del cual hereda toda la arquitectura, el codificador de texto y la ventana de contexto. El repositorio ocupa 0,2 GB y contiene un único archivo de pesos, `Krea2TitJobNowV1.safetensors`, de 218 MiB.
+rh-all-encompassing-confucianism-lora es un adaptador LoRA de edición de imágenes (pipeline `image-text-to-image`) publicado en Hugging Face por la cuenta RunningHubAI en nombre del autor original, identificado en la model card como el usuario @氛围感. No es un modelo generativo completo: se trata de un ajuste fino de bajo rango que debe cargarse sobre el modelo base Krea 2, del cual hereda toda la arquitectura, el codificador de texto y la ventana de contexto. El repositorio ocupa 0,2 GB y contiene un único archivo de pesos, `Krea2TitJobNowV1.safetensors`, de 218 MiB.
 
 La relevancia de esta ficha es fundamentalmente práctica y de ecosistema: ilustra el flujo típico de publicación de LoRAs en ComfyUI y RunningHub, donde el adaptador se distribuye por separado del modelo base y se activa mediante una palabra disparadora (`TitJobNow`). El nombre y la procedencia del modelo (enlaza a un modelo alojado en Civitai bajo el identificador 2821368) apuntan a contenido para adultos, lo que condiciona su uso en producción.
 
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la información propo
 | Parametros | no disponible (adaptador de 218 MiB) | no disponible |
 | Contexto | no aplica | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace, RunningHub, ComfyUI | no disponible |
+| Disponibilidad | Hugging Face, RunningHub, ComfyUI | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-all-encompassing-confucianism-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-all-encompassing-confucianism-lora
 - Model card en chino: https://huggingface.co/RunningHubAI/rh-all-encompassing-confucianism-lora/blob/main/README_cn.md
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2082947361978310658
 - Página del autor: https://www.runninghub.ai/user-center/2041030036219498497

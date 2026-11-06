@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DentexAI (repositorio `beaunix/dentex-ai`) es un repositorio de HuggingFace que aloja dos modelos de vision por computador orientados a odontologia, construidos sobre la arquitectura Ultralytics YOLO11. No se trata de un modelo de lenguaje: son redes convolucionales de deteccion de objetos y segmentacion de instancias entrenadas para trabajar sobre radiografias panoramicas dentales. Concretamente, el repositorio publica `dentex-fdi-numbering` (segmentacion de instancias con numeracion FDI de 35 clases) y `dentex-lesion-detection` (deteccion de lesiones dentales).
+DentexAI (repositorio `beaunix/dentex-ai`) es un repositorio de Hugging Face que aloja dos modelos de vision por computador orientados a odontologia, construidos sobre la arquitectura Ultralytics YOLO11. No se trata de un modelo de lenguaje: son redes convolucionales de deteccion de objetos y segmentacion de instancias entrenadas para trabajar sobre radiografias panoramicas dentales. Concretamente, el repositorio publica `dentex-fdi-numbering` (segmentacion de instancias con numeracion FDI de 35 clases) y `dentex-lesion-detection` (deteccion de lesiones dentales).
 
 Estos dos modelos forman la capa de percepcion de un agente odontologico llamado DentexAI, que segun la model card alimenta un backend multi-herramienta con RAG sobre PubMedBERT. Es decir, la parte de vision identifica dientes y patologias sobre la imagen, y esa informacion se pasa a un componente de lenguaje para generar asistencia clinica. El autor del repositorio es `beaunix` (GitHub `BeauBryanDev`), y el modelo base declarado es `Ultralytics/YOLO11`.
 
@@ -80,7 +80,7 @@ No se han publicado resultados comparativos frente a otros modelos (MMLU, HumanE
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DentexAI (este repositorio) | Numeracion FDI + deteccion de lesiones | no disponible (variante YOLO11 sin especificar) | no aplica | AGPL-3.0 | pesos `.pt` y `.onnx` en HuggingFace |
+| DentexAI (este repositorio) | Numeracion FDI + deteccion de lesiones | no disponible (variante YOLO11 sin especificar) | no aplica | AGPL-3.0 | pesos `.pt` y `.onnx` en Hugging Face |
 | Ultralytics YOLO11 (modelo base) | Deteccion/segmentacion generica | 2.6M–56M segun variante n–x | no aplica | AGPL-3.0 | pesos publicos de Ultralytics |
 | Frameworks del DENTEX Challenge 2023 (por ejemplo, `awerdich/dentexmodel`, `ibrahimethemhamamci/DENTEX`) | Enumeracion dental + diagnostico en panoramicos | no disponible | no aplica | no disponible en la informacion recogida | repositorios de codigo en GitHub |
 | YOLOv8 ajustado para caries y lesiones periapicales (referencia de LinkedIn) | Deteccion de caries, caries profunda, lesiones periapicales y dientes impactados | no disponible | no aplica | no disponible | no disponible |
@@ -97,12 +97,12 @@ La comparacion directa con soluciones del DENTEX Challenge o con otros modelos o
 - Ambito de entrada limitado: esta disenado para radiografias panoramicas dentales; no es adecuado para otras modalidades de imagen sin reentrenamiento.
 - Sin capacidades de lenguaje: no genera texto ni razona; cualquier funcionalidad conversacional depende de otros componentes (PubMedBERT RAG y backend multi-herramienta) que no forman parte de este repositorio.
 - Advertencia regulatoria: un sistema de deteccion de lesiones dentales con fines clinicos puede considerarse producto sanitario en muchas jurisdicciones (por ejemplo, marcado CE o aprobacion FDA), y este repositorio no aporta evidencia regulatoria alguna.
-- Sin mantenimiento ni adopcion visible: cero descargas y cero valoraciones en HuggingFace en el momento de la consulta, y modelos creados y actualizados con pocos minutos de diferencia, lo que sugiere una publicacion inicial sin rodaje.
+- Sin mantenimiento ni adopcion visible: cero descargas y cero valoraciones en Hugging Face en el momento de la consulta, y modelos creados y actualizados con pocos minutos de diferencia, lo que sugiere una publicacion inicial sin rodaje.
 - No se documentan resoluciones de entrada, preprocesado de imagen ni umbrales de confianza recomendados, lo que dificulta reproducir exactamente las cifras de mAP reportadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beaunix/dentex-ai
+- Hugging Face: https://huggingface.co/beaunix/dentex-ai
 - Repositorio del proyecto en GitHub: https://github.com/BeauBryanDev/dentex-ai/tree/master
 - Ultralytics (arquitectura y tooling YOLO): https://github.com/ultralytics/ultralytics
 - Dataset FDI_numbering en Roboflow Universe (Md Anas): https://universe.roboflow.com/md-anas-wwi89/fdi_numbering

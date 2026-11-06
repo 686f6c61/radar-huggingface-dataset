@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX es un modelo publicado en HuggingFace bajo el identificador `Brendon485/LTX` por el usuario Brendon485. La model card es prácticamente vacía: únicamente declara una licencia de tipo `other` con nombre `2.5` y un enlace a la licencia del repositorio `Lightricks/LTX-2` en GitHub, lo que sugiere que se trata de una redistribución o empaquetado de los pesos de LTX-2, el modelo de generación de vídeo desarrollado por Lightricks. No obstante, esta relación no se confirma explícitamente en la información disponible.
+LTX es un modelo publicado en Hugging Face bajo el identificador `Brendon485/LTX` por el usuario Brendon485. La model card es prácticamente vacía: únicamente declara una licencia de tipo `other` con nombre `2.5` y un enlace a la licencia del repositorio `Lightricks/LTX-2` en GitHub, lo que sugiere que se trata de una redistribución o empaquetado de los pesos de LTX-2, el modelo de generación de vídeo desarrollado por Lightricks. No obstante, esta relación no se confirma explícitamente en la información disponible.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, arquitectura, número de parámetros, longitud de contexto ni formato de pesos. Tampoco registra descargas ni likes en el momento de la consulta, y las fechas de creación y actualización (1 de noviembre de 2026) coinciden en el mismo segundo, lo que apunta a una subida automatizada o de prueba sin documentación asociada.
 
@@ -72,6 +72,6 @@ No disponible. La ausencia de especificaciones impide establecer una comparació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brendon485/LTX
+- Repositorio en Hugging Face: https://huggingface.co/Brendon485/LTX
 - Licencia referenciada (LTX-2, Lightricks): https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x
 - Repositorio del proyecto LTX-2: https://github.com/Lightricks/LTX-2

@@ -1,7 +1,7 @@
 # mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step10
 
 ## Resumen
-`mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step10` es un modelo de lenguaje publicado en HuggingFace por el usuario mhseo2, distribuido en formato safetensors y etiquetado con la familia `qwen3`. El propio nombre del repositorio codifica la receta de entrenamiento: destilacion semion-policy (`semiopd`), ajuste supervisado (`sft`), una referencia a un MoE de 30B (`qwen3moe30b`) y un dominio aparentemente matematico (`ot3math`), con un paso concreto de entrenamiento (`step10`).
+`mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step10` es un modelo de lenguaje publicado en Hugging Face por el usuario mhseo2, distribuido en formato safetensors y etiquetado con la familia `qwen3`. El propio nombre del repositorio codifica la receta de entrenamiento: destilacion semion-policy (`semiopd`), ajuste supervisado (`sft`), una referencia a un MoE de 30B (`qwen3moe30b`) y un dominio aparentemente matematico (`ot3math`), con un paso concreto de entrenamiento (`step10`).
 
 El unico dato objetivo disponible procede de los metadatos de los pesos: 8.190.735.360 parametros almacenados en safetensors, lo que ocupa aproximadamente 16,4 GB en precision de 16 bits. Llama la atencion la discrepancia entre esa cifra (unos 8,19 mil millones de parametros) y la referencia a "30B" del nombre, que sugiere que el modelo base citado pueda ser distinto del modelo realmente empaquetado, o que se trate de un recorte, un subconjunto de pesos o un estudiante destilado.
 
@@ -64,9 +64,9 @@ La comparativa se ofrece como referencia de categoria por tamano; el modelo eval
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este modelo (`mhseo2/...qwen3moe30b...`) | 8,19 B | no disponible | no disponible | safetensors en HuggingFace | ninguno |
-| Qwen3-8B (referencia de tamano) | ~8,2 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente disponible | si |
-| Llama 3.1 8B (referencia de tamano) | ~8,0 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | si |
+| Este modelo (`mhseo2/...qwen3moe30b...`) | 8,19 B | no disponible | no disponible | safetensors en Hugging Face | ninguno |
+| Qwen3-8B (referencia de tamano) | ~8,2 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente disponible | si |
+| Llama 3.1 8B (referencia de tamano) | ~8,0 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | si |
 
 Nota: las filas de referencia corresponden a modelos conocidos de tamano similar y no implican que compartan base, receta de entrenamiento ni resultados con el modelo descrito.
 
@@ -81,5 +81,5 @@ Nota: las filas de referencia corresponden a modelos conocidos de tamano similar
 - Uso en produccion: desaconsejado sin una evaluacion propia de calidad, seguridad y licencia.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step10
+- Hugging Face: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step10
 - Papers, blogs, repositorios o demos asociados: no disponible.

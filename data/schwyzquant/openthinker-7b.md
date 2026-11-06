@@ -90,7 +90,7 @@ Lectura de los datos: OpenThinker-7B supera a Bespoke-Stratos-7B en las siete m�
 ## Limitaciones y advertencias
 
 - No hay resultados de benchmarks publicados por el autor de este repositorio (`results: []` en el model-index); las cifras de la tabla proceden del modelo de referencia del proyecto Open Thoughts y no garantizan que esta reproducción alcance el mismo nivel.
-- El modelo tiene cero descargas y cero valoraciones en HuggingFace, por lo que no existe validación comunitaria de la calidad de los pesos.
+- El modelo tiene cero descargas y cero valoraciones en Hugging Face, por lo que no existe validación comunitaria de la calidad de los pesos.
 - Al ser un ajuste fino sobre datos de razonamiento destilados de DeepSeek-R1, es probable que el modelo genere cadenas de pensamiento largas de forma sistemática, con el consiguiente coste en tokens de salida y latencia, incluso en consultas simples.
 - Riesgo de alucinación inherente a los modelos de 7B, especialmente en preguntas factuales abiertas y en dominios poco representados en el dataset de destilación.
 - La composición exacta de OpenThoughts-114k condiciona los sesgos del modelo; al derivarse de un profesor propietario, puede heredar sesgos presentes en las trazas de DeepSeek-R1, incluidos sesgos culturales y de idioma.
@@ -102,7 +102,7 @@ Lectura de los datos: OpenThinker-7B supera a Bespoke-Stratos-7B en las siete m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schwyzquant/OpenThinker-7B
+- Modelo en Hugging Face: https://huggingface.co/schwyzquant/OpenThinker-7B
 - Modelo de referencia del proyecto: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k
@@ -117,4 +117,4 @@ Lectura de los datos: OpenThinker-7B supera a Bespoke-Stratos-7B en las siete m�
 - Blog de Bespoke-Stratos: https://www.bespokelabs.ai/blog/bespoke-stratos-the-unreasonable-effectiveness-of-reasoning-distillation
 - Código de generación de datos de Bespoke-Stratos: https://github.com/bespokelabsai/curator/tree/main/examples/bespoke-stratos-data-generation
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces listados proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces listados proceden de la model card y de los metadatos de Hugging Face.

@@ -71,7 +71,7 @@ No hay datos suficientes para una comparativa rigurosa: el autor no publica benc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Relacion |
 |---|---|---|---|---|---|
-| Stage-org/qwen35-4b-filter-astra-control-200-qwen38-27b-newprompt-4k-epoch3 | 4,54 B | 65.536 tokens en la config de inferencia del entrenamiento; nativo no disponible | No disponible | HuggingFace, safetensors, 9,1 GB, 0 descargas y 0 likes | Modelo analizado |
+| Stage-org/qwen35-4b-filter-astra-control-200-qwen38-27b-newprompt-4k-epoch3 | 4,54 B | 65.536 tokens en la config de inferencia del entrenamiento; nativo no disponible | No disponible | Hugging Face, safetensors, 9,1 GB, 0 descargas y 0 likes | Modelo analizado |
 | Qwen/Qwen3.5-4B | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo base referenciado en la config TOML | Base sobre la que se aplico el RL; mismas dimensiones de pesos |
 | Otras alternativas de ~4 B (Qwen3-4B, Llama 3.2 3B, Gemma 3 4B, Phi-4-mini) | No disponible | No disponible | No disponible | No disponible | El autor no ofrece comparaciones; no se dispone de datos verificados en esta busqueda para contrastar |
 
@@ -89,7 +89,7 @@ No hay datos suficientes para una comparativa rigurosa: el autor no publica benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-astra-control-200-qwen38-27b-newprompt-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-astra-control-200-qwen38-27b-newprompt-4k-epoch3
 - Dataset de entrenamiento referenciado: `Stage-org/qwen35-4b-filter-astra-control-200-qwen38-27b-newprompt-4k` (identificador citado en la model card; no se ha verificado su URL publica)
 - Modelo base: `Qwen/Qwen3.5-4B` (referenciado en la configuracion de entrenamiento; URL no verificada en esta busqueda)
 - Paper, blog, repositorio o demo del autor: no disponible

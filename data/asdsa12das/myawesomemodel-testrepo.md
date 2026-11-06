@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDSA12DAS bajo el identificador `ASDSA12DAS/MyAwesomeModel-TestRepo`. La información disponible es muy limitada y presenta contradicciones internas: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT orientado a `feature-extraction` (encoder, no generativo), mientras que la model card describe un asistente conversacional con razonamiento, function calling y resultados en benchmarks como AIME 2025. El repositorio tiene un tamano de 0.0 GB y cero descargas y cero likes, y no se especifica autoría corporativa, paper ni repositorio de código.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDSA12DAS bajo el identificador `ASDSA12DAS/MyAwesomeModel-TestRepo`. La información disponible es muy limitada y presenta contradicciones internas: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT orientado a `feature-extraction` (encoder, no generativo), mientras que la model card describe un asistente conversacional con razonamiento, function calling y resultados en benchmarks como AIME 2025. El repositorio tiene un tamano de 0.0 GB y cero descargas y cero likes, y no se especifica autoría corporativa, paper ni repositorio de código.
 
 La model card afirma que esta version mejora la profundidad de razonamiento respecto a una version anterior, elevando la precision en AIME 2025 del 70% al 87,5% y aumentando el consumo medio de tokens por pregunta de 12K a 23K. También menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling, ademas de recomendaciones de uso (system prompt con fecha, temperatura 0.6 y plantillas para subida de ficheros y busqueda web).
 
@@ -23,7 +23,7 @@ No se dispone de datos sobre arquitectura concreta, numero de parametros, longit
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion verificable sobre la arquitectura del modelo. Las etiquetas del repositorio de HuggingFace (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un modelo encoder de la familia BERT destinado a extraccion de caracteristicas, lo que seria incoherente con las capacidades de generacion, razonamiento y function calling descritas en la model card. Esta discrepancia no puede resolverse con la informacion disponible.
+No se ha publicado informacion verificable sobre la arquitectura del modelo. Las etiquetas del repositorio de Hugging Face (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un modelo encoder de la familia BERT destinado a extraccion de caracteristicas, lo que seria incoherente con las capacidades de generacion, razonamiento y function calling descritas en la model card. Esta discrepancia no puede resolverse con la informacion disponible.
 
 Respecto al entrenamiento, la model card menciona de forma generica una optimizacion algoritmica durante el post-entrenamiento y un mayor uso de recursos computacionales, sin detallar el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se especifican innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, modo thinking explicito, etc.). Se recomienda una temperatura de 0.6 y el uso de un system prompt con la fecha actual, pero no se documenta el mecanismo subyacente.
 
@@ -80,7 +80,7 @@ La model card menciona ademas un resultado de 87,5% en AIME 2025 (frente al 70% 
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints; tambien se declara soporte para `transformers` con PyTorch. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints; tambien se declara soporte para `transformers` con PyTorch. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. La model card indica un consumo de 12K-23K tokens por pregunta en AIME, lo que implicaria una carga de decodificacion notable, pero sin datos de hardware asociados.
 
 Advertencia: el repositorio tiene un tamano de 0.0 GB, por lo que no parece contener pesos descargables y los requisitos de hardware no pueden determinarse empiricamente.
@@ -110,6 +110,6 @@ No es posible ofrecer una comparativa con alternativas reales del mercado (por e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDSA12DAS/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDSA12DAS/MyAwesomeModel-TestRepo
 
 La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a un servicio de television en streaming sin relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados.

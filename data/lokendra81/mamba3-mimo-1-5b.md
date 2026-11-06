@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Mamba-3 MIMO 1.5B | 1,50 B | 2.048 | SSM (Mamba-3) | Apache 2.0 | Checkpoint público |
-| Qwen2.5-1.5B | 1,54 B | 32.768 | Transformer | Apache 2.0 | HuggingFace |
-| Gemma-2 2B | 2,60 B | 8.192 | Transformer | Gemma license | HuggingFace |
-| SmolLM2-1.7B | 1,71 B | 8.192 | Transformer | Apache 2.0 | HuggingFace |
+| Qwen2.5-1.5B | 1,54 B | 32.768 | Transformer | Apache 2.0 | Hugging Face |
+| Gemma-2 2B | 2,60 B | 8.192 | Transformer | Gemma license | Hugging Face |
+| SmolLM2-1.7B | 1,71 B | 8.192 | Transformer | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y arquitectura; no hay datos de rendimiento para Mamba-3. Frente a los transformers de tamaño similar, Mamba-3 ofrece una complejidad lineal en secuencia, pero con un contexto mucho más corto (2K vs 8K o 32K) y sin evidencia de rendimiento competitivo en tareas estándar.
 
@@ -78,7 +78,7 @@ La comparativa se limita a parámetros y arquitectura; no hay datos de rendimien
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lokendra81/mamba3-mimo-1.5b)
+- [Modelo en Hugging Face](https://huggingface.co/Lokendra81/mamba3-mimo-1.5b)
 - [Paper Mamba-3](https://arxiv.org/abs/2603.15569)
 - [Implementación oficial de Mamba](https://github.com/state-spaces/mamba)
 - [Dataset FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)

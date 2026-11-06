@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bur-ber/camembert-fr-per es un modelo publicado en HuggingFace por el usuario Bur-ber, cuyo identificador y etiquetas lo vinculan a la familia CamemBERT (se etiqueta explícitamente como `camembert`). Cuenta con 110.032.898 parámetros en formato safetensors, una cifra que coincide con la configuracion base de CamemBERT, y el repositorio ocupa aproximadamente 0,4 GB. El modelo fue creado y actualizado el 13 de septiembre de 2026 y acumula 12 descargas y 0 likes en el momento de redactar esta ficha.
+Bur-ber/camembert-fr-per es un modelo publicado en Hugging Face por el usuario Bur-ber, cuyo identificador y etiquetas lo vinculan a la familia CamemBERT (se etiqueta explícitamente como `camembert`). Cuenta con 110.032.898 parámetros en formato safetensors, una cifra que coincide con la configuracion base de CamemBERT, y el repositorio ocupa aproximadamente 0,4 GB. El modelo fue creado y actualizado el 13 de septiembre de 2026 y acumula 12 descargas y 0 likes en el momento de redactar esta ficha.
 
 La relevancia de este tipo de modelos radica en que CamemBERT es un encoder bidireccional de tipo transformer (arquitectura derivada de RoBERTa) entrenado originalmente sobre corpus en frances. A diferencia de los modelos generativos decoder-only, este tipo de encoder se orienta a tareas de comprension del lenguaje: clasificacion de texto, reconocimiento de entidades nombradas, analisis de sentimiento, respuesta a preguntas extractiva y generacion de embeddings. El sufijo `fr-per` del nombre sugiere un ajuste fino orientado a algun dominio o tarea especifica (posiblemente personas o entidades), pero la informacion disponible no confirma su proposito exacto.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM en int8: aproximadamente 0,11 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM (GTX 1650, RTX 3060, T4, etc.); tambien tarjetas de gama alta como A100 o H100, aunque resultan sobredimensionadas para esta carga.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: PyTorch/Transformers, ONNX Runtime, TorchScript, y servidores de inferencia para modelos encoder como HuggingFace TGI con encoder o FastAPI propio. No es compatible con el uso tipico de vLLM/llama.cpp orientado a modelos generativos, salvo conversion a GGUF si se confirma esa necesidad.
+- Opciones de despliegue: PyTorch/Transformers, ONNX Runtime, TorchScript, y servidores de inferencia para modelos encoder como Hugging Face TGI con encoder o FastAPI propio. No es compatible con el uso tipico de vLLM/llama.cpp orientado a modelos generativos, salvo conversion a GGUF si se confirma esa necesidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bur-ber/camembert-fr-per | 110 M | no disponible (base CamemBERT: 512) | Encoder transformer | no disponible | HuggingFace |
-| CamemBERT base (INRIA / FAIR) | 110 M | 512 | Encoder transformer | MIT | HuggingFace |
-| FlauBERT base | 138 M | 512 | Encoder transformer | MIT | HuggingFace |
-| XLM-RoBERTa base | 278 M | 512 | Encoder transformer multilingue | MIT | HuggingFace |
+| Bur-ber/camembert-fr-per | 110 M | no disponible (base CamemBERT: 512) | Encoder transformer | no disponible | Hugging Face |
+| CamemBERT base (INRIA / FAIR) | 110 M | 512 | Encoder transformer | MIT | Hugging Face |
+| FlauBERT base | 138 M | 512 | Encoder transformer | MIT | Hugging Face |
+| XLM-RoBERTa base | 278 M | 512 | Encoder transformer multilingue | MIT | Hugging Face |
 
 Comparativa de rendimiento: no disponible en la informacion proporcionada. No se puede confirmar si este repositorio mejora o iguala a los modelos de referencia anteriores.
 
@@ -92,7 +92,7 @@ Comparativa de rendimiento: no disponible en la informacion proporcionada. No se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bur-ber/camembert-fr-per
+- Hugging Face: https://huggingface.co/Bur-ber/camembert-fr-per
 - CamemBERT (modelo de referencia INRIA/FAIR): https://huggingface.co/almanach/camembert-base
 - FlauBERT (modelo comparable en frances): https://huggingface.co/flaubert/flaubert_base_cased
 - XLM-RoBERTa base (alternativa multilingue): https://huggingface.co/FacebookAI/xlm-roberta-base

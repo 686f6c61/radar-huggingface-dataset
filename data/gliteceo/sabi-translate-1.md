@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabi-Translate-1 es un ajuste fino (fine-tuning) del modelo unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, publicado por el usuario gliteceo en HuggingFace. Se trata, por tanto, de un derivado de Llama 3.2 3B Instruct, la familia de modelos ligeros de Meta orientada a generacion de texto, razonamiento basico y dialogo de instrucciones. El nombre del repositorio sugiere un proposito de traduccion, aunque la model card no documenta la tarea concreta ni el dataset empleado.
+Sabi-Translate-1 es un ajuste fino (fine-tuning) del modelo unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, publicado por el usuario gliteceo en Hugging Face. Se trata, por tanto, de un derivado de Llama 3.2 3B Instruct, la familia de modelos ligeros de Meta orientada a generacion de texto, razonamiento basico y dialogo de instrucciones. El nombre del repositorio sugiere un proposito de traduccion, aunque la model card no documenta la tarea concreta ni el dataset empleado.
 
 El modelo se ha entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido" que las rutas convencionales. El repositorio tiene un tamano de 0,1 GB, muy inferior al de un modelo de 3.000 millones de parametros completo, lo que apunta a que el artefacto publicado podria ser un adaptador tipo LoRA/PEFT en lugar de pesos fusionados, aunque esto no se confirma en la model card.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sabi-Translate-1 | no documentado (base 3B) | no disponible (base 128k) | apache-2.0 | Repositorio HuggingFace, 0 descargas, sin validacion |
+| Sabi-Translate-1 | no documentado (base 3B) | no disponible (base 128k) | apache-2.0 | Repositorio Hugging Face, 0 descargas, sin validacion |
 | Llama 3.2 3B Instruct | 3.210 millones | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible y validado en produccion |
 | Qwen2.5 3B Instruct | 3.090 millones | 32.768 tokens (ampliable a 128k) | Apache 2.0 (con restricciones en algunos modelos) | Muy extendido en toolchains como vLLM y Ollama |
-| Phi-3.5-mini Instruct | 3.800 millones | 128.000 tokens | MIT | Disponible en HuggingFace y ONNX |
+| Phi-3.5-mini Instruct | 3.800 millones | 128.000 tokens | MIT | Disponible en Hugging Face y ONNX |
 
 La comparacion de rendimiento con estas alternativas no puede establecerse porque no hay benchmarks publicados para Sabi-Translate-1.
 
@@ -85,7 +85,7 @@ La comparacion de rendimiento con estas alternativas no puede establecerse porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gliteceo/Sabi-Translate-1
+- Repositorio Hugging Face: https://huggingface.co/gliteceo/Sabi-Translate-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Llama 3.2 3B Instruct (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

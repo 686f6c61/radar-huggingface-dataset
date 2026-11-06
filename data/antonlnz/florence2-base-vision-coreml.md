@@ -82,9 +82,9 @@ La recomendación del autor es explícita: ejecutar en GPU (`MLComputeUnits.cpuA
 
 | Modelo | Formato | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| antonlnz/florence2-base-vision-coreml | Core ML ML Program fp16 | no disponible (solo codificador visual) | imagen fija 768×768; salida (1, 577, 768) | MIT | HuggingFace, 0 descargas, 0 likes |
+| antonlnz/florence2-base-vision-coreml | Core ML ML Program fp16 | no disponible (solo codificador visual) | imagen fija 768×768; salida (1, 577, 768) | MIT | Hugging Face, 0 descargas, 0 likes |
 | microsoft/Florence-2-base-ft | PyTorch (safetensors) | no disponible en la informacion proporcionada (modelo base de referencia) | pipeline completo de vision-lenguaje | MIT | Repositorio oficial del modelo base |
-| onnx-community/Florence-2-base-ft | ONNX fp32 | no disponible | `vision_encoder.onnx` con forma de entrada sin fijar | MIT | HuggingFace, exportacion de origen de esta conversion |
+| onnx-community/Florence-2-base-ft | ONNX fp32 | no disponible | `vision_encoder.onnx` con forma de entrada sin fijar | MIT | Hugging Face, exportacion de origen de esta conversion |
 | Codificadores visuales tipo CLIP (por ejemplo ViT-B/32) | PyTorch, ONNX, Core ML comunitaria | no disponible en la informacion proporcionada | imagen; embeddings de similitud imagen-texto | MIT / otras segun variante | Amplia, con multiples conversiones a Core ML |
 
 La diferencia clave frente al modelo base y a la exportación ONNX no está en la calidad intrínseca, sino en el formato y la latencia: la versión Core ML en GPU es aproximadamente 5,8 veces más rápida que ONNX Runtime en CPU según las mediciones del autor, a cambio de fijar la resolución de entrada y de no incluir el resto del pipeline. No hay datos públicos que permitan comparar precisión frente a otras alternativas.
@@ -105,7 +105,7 @@ La diferencia clave frente al modelo base y a la exportación ONNX no está en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antonlnz/florence2-base-vision-coreml
+- Modelo en Hugging Face: https://huggingface.co/antonlnz/florence2-base-vision-coreml
 - Modelo base: https://huggingface.co/microsoft/Florence-2-base-ft
 - Exportación ONNX de origen: https://huggingface.co/onnx-community/Florence-2-base-ft
 - coremltools (herramienta de conversión citada): https://github.com/apple/coremltools

@@ -78,7 +78,7 @@ La principal diferencia del modelo evaluado es su formato ONNX int8, que lo hace
 
 ## Enlaces
 
-- Repositorio HuggingFace: [pantinor/whisper-arabic-dialectal-sherpa](https://huggingface.co/pantinor/whisper-arabic-dialectal-sherpa)
+- Repositorio Hugging Face: [pantinor/whisper-arabic-dialectal-sherpa](https://huggingface.co/pantinor/whisper-arabic-dialectal-sherpa)
 - Modelo original fine-tuneado: [oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2](https://huggingface.co/oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2)
 - Exportación previa: [dmouayad/sherpa-onnx-whisper-large-v3-turbo-arabic-dialectal-v2](https://huggingface.co/dmouayad/sherpa-onnx-whisper-large-v3-turbo-arabic-dialectal-v2)
 - Repositorio de tokens alternativo: [pantinor/whisper-arabic-dialectal-tokens](https://huggingface.co/pantinor/whisper-arabic-dialectal-tokens)

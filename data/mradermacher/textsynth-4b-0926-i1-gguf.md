@@ -6,7 +6,7 @@ Este repositorio contiene versiones cuantizadas en formato GGUF del modelo thepr
 
 El modelo base se presenta como «4B» y está entrenado aparentemente sobre el dataset theprint/Hemispheres-v0.3-Combo-GPT, con soporte declarado únicamente para inglés. La relevancia de este repositorio es práctica más que investigadora: ofrece hasta veinticuatro variantes de cuantización (desde IQ1_S e IQ2_XXS hasta Q6_K y Q8) para elegir el equilibrio entre tamaño, VRAM y calidad. Existe también un repositorio hermano con cuantizaciones «estáticas» (sin imatrix).
 
-Hay que señalar una discrepancia importante en los metadatos: la ficha de HuggingFace reporta 958.716 parámetros para el modelo base según los datos de safetensors, mientras que el nombre comercial indica 4B. No se dispone de información adicional que permita resolver la contradicción, por lo que todas las estimaciones de recursos de esta ficha se ofrecen como rangos y se marcan explícitamente. Los contadores públicos del repositorio son de 0 descargas y 0 «likes» en el momento de la consulta, lo que indica que se trata de una conversión reciente y sin validación comunitaria.
+Hay que señalar una discrepancia importante en los metadatos: la ficha de Hugging Face reporta 958.716 parámetros para el modelo base según los datos de safetensors, mientras que el nombre comercial indica 4B. No se dispone de información adicional que permita resolver la contradicción, por lo que todas las estimaciones de recursos de esta ficha se ofrecen como rangos y se marcan explícitamente. Los contadores públicos del repositorio son de 0 descargas y 0 «likes» en el momento de la consulta, lo que indica que se trata de una conversión reciente y sin validación comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ Para alternativas de otros autores y de tamaño similar (por ejemplo, otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/TextSynth-4B-0926-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/TextSynth-4B-0926-i1-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#TextSynth-4B-0926-i1-GGUF
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/TextSynth-4B-0926-GGUF
 - Modelo base: https://huggingface.co/theprint/TextSynth-4B-0926

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política robótica de imitación basada en GR00T N1.7, el modelo fundacional de código abierto de NVIDIA para razonamiento y habilidades robóticas humanoides. Ha sido fine-tuneado por el usuario kaKTEC mediante la librería LeRobot de HuggingFace para ejecutar una tarea concreta de manipulación: introducir un cubo blanco en una caja en movimiento. El modelo combina un backbone Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en flow-matching, y condiciona sus predicciones a partir de visión, lenguaje y propriocepción.
+Este modelo es una política robótica de imitación basada en GR00T N1.7, el modelo fundacional de código abierto de NVIDIA para razonamiento y habilidades robóticas humanoides. Ha sido fine-tuneado por el usuario kaKTEC mediante la librería LeRobot de Hugging Face para ejecutar una tarea concreta de manipulación: introducir un cubo blanco en una caja en movimiento. El modelo combina un backbone Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en flow-matching, y condiciona sus predicciones a partir de visión, lenguaje y propriocepción.
 
 Con 3.144 millones de parámetros (3,14B) y un tamaño de repositorio de 12,6 GB, esta política se entrenó sobre 60 episodios (19.680 fotogramas a 30 FPS) capturados con dos cámaras (superior y muñeca) en un robot tipo `so_follower`. Su relevancia radica en que demuestra el flujo completo de entrenamiento e inferencia de políticas GR00T con LeRobot, un pipeline de aprendizaje por imitación de código abierto, y sirve como referencia práctica para la comunidad de robótica que trabaja con el ecosistema NVIDIA Isaac-GR00T.
 
@@ -31,7 +31,7 @@ El entrenamiento de esta instancia concreta se realizó mediante aprendizaje por
 - Percepción visual multimodal: procesa dos flujos de cámara simultáneos (superior y muñeca) a 480x640 píxeles.
 - Condicionamiento por propriocepción: utiliza el estado articular del robot (6 dimensiones) como entrada adicional.
 - Aprendizaje por imitación: política entrenada mediante demostraciones humanas teleoperadas, sin necesidad de ingeniería de recompensas.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de HuggingFace para robótica.
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento, evaluación y despliegue de Hugging Face para robótica.
 - Razonamiento cross-embodiment: hereda la capacidad del modelo base GR00T N1.7 para generalizar entre distintas morfologías robóticas.
 
 ## Casos de uso
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaKTEC/2608_moving_box_01_00test_GR00T17 | 3,14B | no disponible | Manipulación (cubo en caja móvil) | apache-2.0 | HuggingFace |
-| kaKTEC/2608_static01_01test_GR00T17 | no disponible | no disponible | Manipulación estática (variante del mismo autor) | apache-2.0 | HuggingFace |
+| kaKTEC/2608_moving_box_01_00test_GR00T17 | 3,14B | no disponible | Manipulación (cubo en caja móvil) | apache-2.0 | Hugging Face |
+| kaKTEC/2608_static01_01test_GR00T17 | no disponible | no disponible | Manipulación estática (variante del mismo autor) | apache-2.0 | Hugging Face |
 | GR00T N1.7 (modelo base) | no disponible | no disponible | Razonamiento y habilidades robóticas generales | no disponible | GitHub NVIDIA Isaac-GR00T |
 
 La comparativa se limita a las variantes del mismo autor y al modelo base, ya que no se dispone de información sobre otras políticas GR00T fine-tuneadas con la misma tarea. El modelo base GR00T N1.7 es el fundacional del que deriva esta instancia, por lo que esta política es una especialización para una tarea concreta.

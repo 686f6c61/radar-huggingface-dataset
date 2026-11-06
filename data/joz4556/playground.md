@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joz4556/Playground es un repositorio publicado en HuggingFace por el usuario Joz4556 bajo licencia Apache 2.0. La informacion disponible no permite identificar la arquitectura, el tamano, el tipo de modelo ni la tarea para la que fue disenado: el campo *pipeline* no esta definido, no se declaran idiomas soportados y la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso. Se trata, por tanto, de un repositorio practicamente vacio desde el punto de vista documental.
+Joz4556/Playground es un repositorio publicado en Hugging Face por el usuario Joz4556 bajo licencia Apache 2.0. La informacion disponible no permite identificar la arquitectura, el tamano, el tipo de modelo ni la tarea para la que fue disenado: el campo *pipeline* no esta definido, no se declaran idiomas soportados y la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso. Se trata, por tanto, de un repositorio practicamente vacio desde el punto de vista documental.
 
 El unico dato objetivo relevante es su nula traccion en la plataforma: cero descargas y cero likes en el momento de la recogida de datos. Las fechas de creacion y ultima actualizacion registradas son identicas (2026-09-10T11:00:00.000Z), lo que sugiere un unico commit o una subida sin mantenimiento posterior.
 
@@ -23,7 +23,7 @@ Por todo lo anterior, no es posible evaluar el modelo con criterios tecnicos ni 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la dimension de las capas o el mecanismo de atencion empleado.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la dimension de las capas o el mecanismo de atencion empleado.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, la posible aplicacion de tecnicas de ajuste como RLHF, DPO o SFT, ni ninguna innovacion tecnica asociada (decodificacion especulativa, atencion lineal, destilacion, etc.). El repositorio no incluye articulo tecnico, informe de entrenamiento ni configuracion de modelo accesible.
 
@@ -79,6 +79,6 @@ No es posible establecer una comparativa: la informacion proporcionada no permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joz4556/Playground
+- Repositorio en Hugging Face: https://huggingface.co/Joz4556/Playground
 
 No se han encontrado enlaces relevantes al modelo en la busqueda web realizada: los resultados devueltos corresponden a contenidos sin relacion alguna (foros de centros comerciales y preguntas sobre plataformas de video y marcas de moda). No hay articulos tecnicos, papers, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

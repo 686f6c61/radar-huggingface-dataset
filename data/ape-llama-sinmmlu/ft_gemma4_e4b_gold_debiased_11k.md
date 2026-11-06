@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-4-e4b-it`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de bajo rango (0,1 GB de repositorio, en formato safetensors) que debe cargarse junto al modelo base para poder utilizarse. El autor es la cuenta `ape-llama-sinmmlu`, y el repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla por defecto de HuggingFace con la práctica totalidad de los campos marcados como "[More Information Needed]".
+`ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-4-e4b-it`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de bajo rango (0,1 GB de repositorio, en formato safetensors) que debe cargarse junto al modelo base para poder utilizarse. El autor es la cuenta `ape-llama-sinmmlu`, y el repositorio no incluye model card sustantiva: la tarjeta publicada es la plantilla por defecto de Hugging Face con la práctica totalidad de los campos marcados como "[More Information Needed]".
 
 El interés del artefacto es, en la práctica, el de un experimento de ajuste fino reproducible: el identificador del repositorio contiene los fragmentos `ft`, `gold`, `debiased` y `11k`, que sugieren un entrenamiento supervisado sobre un conjunto de unos 11.000 ejemplos etiquetados como "gold" y sometidos a algún proceso de mitigación de sesgo. Esa lectura es una inferencia a partir del nombre del repositorio y no está confirmada por ninguna documentación del autor.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k` | Adaptador LoRA (PEFT) | No disponible | No disponible | No declarada | Público en HuggingFace |
+| `ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k` | Adaptador LoRA (PEFT) | No disponible | No disponible | No declarada | Público en Hugging Face |
 | `google/gemma-4-e4b-it` | Modelo completo (base) | No disponible en la información proporcionada | No disponible | No verificada; sujeta al régimen del modelo base | Referenciado como base del adaptador |
 | Otros adaptadores LoRA sobre la misma base | Adaptador LoRA | No disponible | No disponible | No disponible | No identificados en la información disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos objetivos (parámetros, contexto, benchmarks) que permita
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-e4b-it
 - Referencia citada en los tags y en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML citada en la model card: https://mlco2.github.io/impact

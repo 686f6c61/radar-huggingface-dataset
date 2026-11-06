@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `Santiagofajardo/problematica-de-inseguridad` corresponde a un repositorio alojado en HuggingFace por el usuario Santiagofajardo. En el momento de recopilar esta informacion, el repositorio no dispone de model card sustantiva: el unico contenido declarado es la licencia Apache 2.0. No se especifica pipeline, tamano, arquitectura, idiomas ni formato de pesos.
+El identificador `Santiagofajardo/problematica-de-inseguridad` corresponde a un repositorio alojado en Hugging Face por el usuario Santiagofajardo. En el momento de recopilar esta informacion, el repositorio no dispone de model card sustantiva: el unico contenido declarado es la licencia Apache 2.0. No se especifica pipeline, tamano, arquitectura, idiomas ni formato de pesos.
 
 No hay evidencia de que se trate de un modelo de lenguaje entrenado. El propio nombre del repositorio ("problematica de inseguridad") es compatible tanto con un modelo de lenguaje afinado sobre un corpus tematico como con un dataset, una coleccion de documentos o un espacio de demostracion. Sin model card ni ficheros documentados, la naturaleza del artefacto no puede determinarse.
 
@@ -49,7 +49,7 @@ No disponible. Al desconocerse la naturaleza del artefacto, no procede enumerar 
 
 Antes de plantear cualquier caso de uso, un desarrollador deberia:
 
-- Inspeccionar la lista completa de ficheros del repositorio mediante la API de HuggingFace (`/api/models/Santiagofajardo/problematica-de-inseguridad`).
+- Inspeccionar la lista completa de ficheros del repositorio mediante la API de Hugging Face (`/api/models/Santiagofajardo/problematica-de-inseguridad`).
 - Comprobar si existe una rama con pesos y un `config.json` valido.
 - Revisar el historial de commits para determinar si el repositorio fue vaciado o nunca llego a poblarse.
 - Contactar con el autor para solicitar documentacion.
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables sin conocer categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Santiagofajardo/problematica-de-inseguridad
+- Hugging Face: https://huggingface.co/Santiagofajardo/problematica-de-inseguridad
 - Resultados de busqueda web proporcionados: no relevantes para este repositorio (hilos de KASKUS sin relacion tecnica con el artefacto).
 - Paper, repositorio de codigo, blog o demo: no disponibles.
-- API de metadatos de HuggingFace para inspeccionar ficheros: https://huggingface.co/api/models/Santiagofajardo/problematica-de-inseguridad
+- API de metadatos de Hugging Face para inspeccionar ficheros: https://huggingface.co/api/models/Santiagofajardo/problematica-de-inseguridad

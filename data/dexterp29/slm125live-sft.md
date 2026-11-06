@@ -54,15 +54,15 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada: con pesos en FP16, el modelo ocupa aproximadamente 0,25 GB; con caché KV y activaciones, el consumo total en inferencia sería inferior a 1 GB. En FP32, la ocupación rondaría los 0,5 GB.
 - GPU recomendada: cualquier GPU moderna es suficiente, incluyendo RTX 3060, A100, H100 o RTX 4090. También puede ejecutarse en CPU, ya que el número de parámetros es muy bajo.
 - Cabe en GPU de consumo, incluso en tarjetas de hace varias generaciones.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI o scripts personalizados con HuggingFace Transformers.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI o scripts personalizados con Hugging Face Transformers.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Dado el tamaño, se espera una latencia baja, pero no hay datos concretos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| slm125LIVE-sft | 125,8 M | Legal/financiero, RAFT | other | HuggingFace |
-| thesreedath/slm-125m-base | 125 M | Modelo base sin SFT | other | HuggingFace |
+| slm125LIVE-sft | 125,8 M | Legal/financiero, RAFT | other | Hugging Face |
+| thesreedath/slm-125m-base | 125 M | Modelo base sin SFT | other | Hugging Face |
 
 El único modelo comparable identificado en la información disponible es el modelo base thesreedath/slm-125m-base. No se dispone de otros modelos de la misma categoría con datos verificables, ni de benchmarks que permitan una comparación de rendimiento.
 
@@ -78,7 +78,7 @@ El único modelo comparable identificado en la información disponible es el mod
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/DexterP29/slm125LIVE-sft
+- Ficha del modelo en Hugging Face: https://huggingface.co/DexterP29/slm125LIVE-sft
 - Modelo base thesreedath/slm-125m-base: https://huggingface.co/thesreedath/slm-125m-base
 - Perfil de GitHub del autor: https://github.com/DexterP29
 - No se han encontrado papers, blogs ni demos relacionados en la búsqueda web.

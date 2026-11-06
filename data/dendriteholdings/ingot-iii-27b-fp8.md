@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ingot-III-27B-FP8 es un modelo de lenguaje de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) distribuido en formato FP8 por el usuario dendriteholdings en HuggingFace. No se trata de un modelo entrenado desde cero por ese autor: la propia model card lo describe como un espejo publico de un modelo ganador en Ingot, una subred de Bittensor en la que los mineros cuantizan un modelo maestro fijo y el validador corona la copia que permanece mas proxima al original. Los pesos publicados son la subida del minero, byte a byte.
+Ingot-III-27B-FP8 es un modelo de lenguaje de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) distribuido en formato FP8 por el usuario dendriteholdings en Hugging Face. No se trata de un modelo entrenado desde cero por ese autor: la propia model card lo describe como un espejo publico de un modelo ganador en Ingot, una subred de Bittensor en la que los mineros cuantizan un modelo maestro fijo y el validador corona la copia que permanece mas proxima al original. Los pesos publicados son la subida del minero, byte a byte.
 
 El repositorio tiene un tamano de 30,9 GB, coherente con un modelo de 27,8B parametros almacenado a 1 byte por parametro mas los ficheros auxiliares. El unico tag de arquitectura declarado es qwen3_5, lo que situa el modelo base en la familia Qwen3.5, aunque no se ofrecen detalles sobre numero de capas, dimension del modelo, mecanismo de atencion ni longitud de contexto.
 
@@ -89,8 +89,8 @@ Nota: los datos de las filas comparativas provienen de informacion publica gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-III-27B-FP8
-- Model card del autor: incluida en la pagina de HuggingFace del modelo
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-III-27B-FP8
+- Model card del autor: incluida en la pagina de Hugging Face del modelo
 - Subred Ingot (Bittensor): no se ha encontrado enlace en la informacion disponible
 - Paper o documentacion tecnica del metodo de cuantizacion: no disponible
 - Resultados de benchmarks o evaluaciones: no disponible

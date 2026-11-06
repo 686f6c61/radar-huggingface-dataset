@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Furniture_full_finetuning es un modelo de deteccion de objetos publicado por el usuario sangwook-lee en HuggingFace, obtenido mediante ajuste fino (fine-tuning) completo de facebook/detr-resnet-50. Se trata, por tanto, de un detector basado en la arquitectura DETR (DEtection TRansformer), que combina un backbone convolucional ResNet-50 con un codificador-decodificador transformer y un mecanismo de asignacion bipartita entre predicciones y anotaciones reales, lo que elimina la necesidad de supresion no maxima (NMS) y de anclas (anchors). El modelo cuenta con 41.608.649 parametros y esta etiquetado con el pipeline `object-detection`.
+Furniture_full_finetuning es un modelo de deteccion de objetos publicado por el usuario sangwook-lee en Hugging Face, obtenido mediante ajuste fino (fine-tuning) completo de facebook/detr-resnet-50. Se trata, por tanto, de un detector basado en la arquitectura DETR (DEtection TRansformer), que combina un backbone convolucional ResNet-50 con un codificador-decodificador transformer y un mecanismo de asignacion bipartita entre predicciones y anotaciones reales, lo que elimina la necesidad de supresion no maxima (NMS) y de anclas (anchors). El modelo cuenta con 41.608.649 parametros y esta etiquetado con el pipeline `object-detection`.
 
 El problema que aborda es la deteccion de mobiliario (furniture) en imagenes. Segun el nombre del repositorio y la propia model card, el ajuste se ha realizado sobre un dataset no especificado, y la model card generada automaticamente por el `Trainer` no documenta ni la composicion de los datos, ni las clases finales, ni metricas de evaluacion. Esto limita seriamente la trazabilidad del modelo: se sabe que es un DETR ResNet-50 reentrenado, pero no que categorias exactas detecta ni con que calidad.
 
@@ -66,7 +66,7 @@ En consecuencia, cualquier cifra de rendimiento que se quiera usar para decidir 
 - VRAM estimada para inferencia: a partir de los 41.608.649 parametros, los pesos ocupan aproximadamente 166 MB en FP32 (unos 83 MB en FP16). Sumando activaciones, la inferencia a resolucion tipica de DETR (lado corto 800 px) cabe holgadamente en menos de 2 GB de VRAM con batch 1. Se trata de una estimacion derivada del recuento de parametros, no de una medicion publicada.
 - GPU recomendadas: cualquier GPU moderna sirve para inferencia. Para entrenamiento o ajuste fino completo, se recomienda al menos una GPU con 16-24 GB (RTX 4090, A5000, L4, A10G) y, para lotes grandes o resoluciones altas, A100 o H100.
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo actual (RTX 3060 12 GB, RTX 4060, RTX 4090) e incluso en GPUs integradas con suficiente memoria compartida. La inferencia en CPU es viable, con latencias mayores.
-- Opciones de despliegue: pipeline `object-detection` de Transformers sobre PyTorch; exportacion a ONNX Runtime o TensorRT para aceleracion; TorchScript; y despliegue gestionado mediante HuggingFace Inference Endpoints, dado que el repositorio esta marcado como `endpoints_compatible`. No se declara soporte para llama.cpp, Ollama, vLLM ni TGI, que no estan orientados a modelos de deteccion.
+- Opciones de despliegue: pipeline `object-detection` de Transformers sobre PyTorch; exportacion a ONNX Runtime o TensorRT para aceleracion; TorchScript; y despliegue gestionado mediante Hugging Face Inference Endpoints, dado que el repositorio esta marcado como `endpoints_compatible`. No se declara soporte para llama.cpp, Ollama, vLLM ni TGI, que no estan orientados a modelos de deteccion.
 - Latencia y throughput: no disponibles. La model card no publica mediciones de latencia por imagen ni imagenes por segundo en ninguna GPU.
 - Almacenamiento: el repositorio ocupa 4,8 GB, muy por encima de lo que exigen los pesos finales (166 MB), lo que sugiere la presencia de checkpoints intermedios de las 100 epocas de entrenamiento o de estados del optimizador.
 
@@ -74,11 +74,11 @@ En consecuencia, cualquier cifra de rendimiento que se quiera usar para decidir 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sangwook-lee/furniture_full_finetuning | 41,6 M | no aplica | Apache-2.0 | HuggingFace | Ajuste fino especifico de mobiliario, sin metricas publicadas |
-| facebook/detr-resnet-50 | 41,6 M | no aplica | Apache-2.0 | HuggingFace | Modelo base, entrenado en COCO (80 clases); precision de referencia publicada en el paper original |
+| sangwook-lee/furniture_full_finetuning | 41,6 M | no aplica | Apache-2.0 | Hugging Face | Ajuste fino especifico de mobiliario, sin metricas publicadas |
+| facebook/detr-resnet-50 | 41,6 M | no aplica | Apache-2.0 | Hugging Face | Modelo base, entrenado en COCO (80 clases); precision de referencia publicada en el paper original |
 | DETR-DC5-R50 | 41,6 M | no aplica | Apache-2.0 (referencia) | Repositorio oficial de Facebook Research | Variante con C5 dilatado, mejor rendimiento en objetos pequenos a costa de mas computo |
 | Faster R-CNN ResNet-50 FPN | ~42 M (valor publico aproximado) | no aplica | BSD-3 / Apache-2.0 segun implementacion | torchvision, Detectron2 | Detector de dos etapas con anclas y NMS; alternativa madura y ampliamente desplegada |
-| YOLOv8n / YOLO11n | ~3 M (valor publico aproximado) | no aplica | AGPL-3.0 (Ultralytics) | Ultralytics, HuggingFace | Mucho mas ligero y rapido en tiempo real; licencia copyleft que condiciona el uso comercial |
+| YOLOv8n / YOLO11n | ~3 M (valor publico aproximado) | no aplica | AGPL-3.0 (Ultralytics) | Ultralytics, Hugging Face | Mucho mas ligero y rapido en tiempo real; licencia copyleft que condiciona el uso comercial |
 
 Nota: los valores de parametros de los modelos comparativos son cifras publicas de referencia y no han sido verificados en el contexto de esta ficha. La comparativa de rendimiento no puede completarse porque el modelo objeto de la ficha no publica ninguna metrica.
 
@@ -97,7 +97,7 @@ Nota: los valores de parametros de los modelos comparativos son cifras publicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangwook-lee/furniture_full_finetuning
+- Modelo en Hugging Face: https://huggingface.co/sangwook-lee/furniture_full_finetuning
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Paper de DETR (End-to-End Object Detection with Transformers): https://arxiv.org/abs/2005.12872
 - Repositorio oficial de DETR (Facebook Research): https://github.com/facebookresearch/detr

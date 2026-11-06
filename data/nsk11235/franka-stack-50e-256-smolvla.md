@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en los resultados de busq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nsk11235/franka-stack-50e-256-smolvla
+- Hugging Face: https://huggingface.co/nsk11235/franka-stack-50e-256-smolvla
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/nsk11235/franka-stack-50e
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -83,8 +83,8 @@ No se dispone de datos cuantitativos suficientes para una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/6block/Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/6block/Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Cuantización GGUF alternativa de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Cuantización GGUF de DevQuasar: https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF

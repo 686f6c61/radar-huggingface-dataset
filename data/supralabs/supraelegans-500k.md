@@ -75,5 +75,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace: SupraLabs/SupraElegans-500k](https://huggingface.co/SupraLabs/SupraElegans-500k)
+- [Hugging Face: SupraLabs/SupraElegans-500k](https://huggingface.co/SupraLabs/SupraElegans-500k)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

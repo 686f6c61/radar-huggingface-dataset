@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EmiliaLee/ma_opd_50` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `Qwen/Qwen3.5-2B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) orientado a generación de texto y conversación, según las etiquetas del repositorio. El autor, EmiliaLee, no ha proporcionado una descripción detallada, datos de entrenamiento, ni documentación sobre el propósito específico del adaptador.
+El modelo `EmiliaLee/ma_opd_50` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `Qwen/Qwen3.5-2B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) orientado a generación de texto y conversación, según las etiquetas del repositorio. El autor, EmiliaLee, no ha proporcionado una descripción detallada, datos de entrenamiento, ni documentación sobre el propósito específico del adaptador.
 
 La relevancia de este modelo reside en su naturaleza de adaptador ligero: al estar basado en LoRA, permite modificar el comportamiento de un modelo de 2B parámetros sin necesidad de reentrenar todos los pesos, lo que facilita su despliegue en entornos con recursos limitados. Sin embargo, la ausencia de información pública sobre el proceso de entrenamiento, los datos utilizados y las capacidades específicas limita su evaluación objetiva. El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un modelo reciente o poco difundido.
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EmiliaLee/ma_opd_50
+- Repositorio Hugging Face: https://huggingface.co/EmiliaLee/ma_opd_50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B (no verificado, según la información del adaptador)

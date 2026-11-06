@@ -88,7 +88,7 @@ Segun los datos del propio autor, v3 es un 34 % mas pequeno que v2 y un 62 % mas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BansheeTechnologies/Ouija3-1.2B
+- Modelo en Hugging Face: https://huggingface.co/BansheeTechnologies/Ouija3-1.2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Version anterior v2 (Ouija2-1.7B): https://huggingface.co/BansheeTechnologies/Ouija2-1.7B
 - Version anterior v1 (Ouija-3B): https://huggingface.co/BansheeTechnologies/Ouija-3B

@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Guía de unsloth para Qwen-Image: https://unsloth.ai/docs/models/qwen-image-2512
 - ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

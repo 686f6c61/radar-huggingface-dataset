@@ -106,7 +106,7 @@ No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandar e
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Signal 3.8 27B (GGUF) | 27,32 mil millones | no disponible | Apache 2.0 | GGUF en HuggingFace, 6 tiers de 13,27 a 27,05 GiB | 57 % menos de tokens en respuestas generales y mejor aceptacion del draft |
+| Signal 3.8 27B (GGUF) | 27,32 mil millones | no disponible | Apache 2.0 | GGUF en Hugging Face, 6 tiers de 13,27 a 27,05 GiB | 57 % menos de tokens en respuestas generales y mejor aceptacion del draft |
 | Qwen3.8-27B (base) | 27,32 mil millones | no disponible | no disponible en la informacion | Pesos base (BF16) y Q8_0 usado como referencia | Referencia de calidad y de consumo de tokens en todas las tablas |
 | Otras alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | No se han facilitado datos de comparacion con otros modelos |
 
@@ -127,7 +127,7 @@ No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandar e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Signal-3.8-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Signal-3.8-27B-GGUF
 - Discusiones del modelo: https://huggingface.co/agentionai/Signal-3.8-27B-GGUF/discussions
 - Sitio del autor: https://www.agention.ai/
 - Pagina de modelos de AgentionAI (recetas Agention Precision): https://agention.ai/models/

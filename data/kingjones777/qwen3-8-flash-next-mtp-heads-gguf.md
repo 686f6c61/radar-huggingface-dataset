@@ -80,7 +80,7 @@ La comparativa directa con otras cabezas MTP no está disponible; este repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-MTP-Heads-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-MTP-Heads-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fork ROCmFPX (GitHub): https://github.com/kingjones30/ROCmFPX.git
 - Discusión sobre el convertidor: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-STRIX-GGUF/discussions/5

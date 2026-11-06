@@ -38,7 +38,7 @@ El entrenamiento consiste en una sola pasada sobre las oleadas A y B del corpus,
 - Rellenado de bloques en paralelo, propio de la difusión por bloques, con soporte de estados de primer borrador y de re-borrado.
 - Decodificación especulativa asistida por juez: el par drafter + `SDAR-30B-judge-LoRA` decide qué propuestas se aceptan.
 - Reducción del número de *forwards* del drafter por bloque gracias al ajuste hacia la distribución del 30B.
-- Compatibilidad con el *harness* estándar de HuggingFace (`AutoModelForCausalLM` con código remoto) y con el script `run_da_decode.py --drafter <dir>`.
+- Compatibilidad con el *harness* estándar de Hugging Face (`AutoModelForCausalLM` con código remoto) y con el script `run_da_decode.py --drafter <dir>`.
 - Capacidad conversacional: el tag `conversational` aparece en el modelo base, pero el ajuste LoRA está orientado a *drafting*, no a mejorar el diálogo autónomo.
 - Soporte de *tool calling*, agentes, visión o audio: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible; no se documentan idiomas.
@@ -55,7 +55,7 @@ El entrenamiento consiste en una sola pasada sobre las oleadas A y B del corpus,
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre 2.250 preguntas y 7 benchmarks, con el juez activo, *harness* estándar de HuggingFace y una sola máquina:
+Resultados publicados por el autor sobre 2.250 preguntas y 7 benchmarks, con el juez activo, *harness* estándar de Hugging Face y una sola máquina:
 
 | Métrica | rd1 | rd2 |
 |---|---|---|
@@ -85,17 +85,17 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 | Modelo | Parámetros | Activos | Contexto | Función | Precisión (media 7 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SDAR-1.7B-drafter-LoRA (este) | 2,03 B | no aplica | no disponible | Drafter para SDAR-30B-A3B | 64,5 % (rd1) / 64,2 % (rd2) | Apache-2.0 | HuggingFace, pesos bf16 + LoRA |
+| SDAR-1.7B-drafter-LoRA (este) | 2,03 B | no aplica | no disponible | Drafter para SDAR-30B-A3B | 64,5 % (rd1) / 64,2 % (rd2) | Apache-2.0 | Hugging Face, pesos bf16 + LoRA |
 | SDAR-1.7B drafter estándar (fase 3) | ≈1,7 B | no aplica | no disponible | Drafter para SDAR-30B-A3B | 64,4 % (rd1) / 64,9 % (rd2) | Apache-2.0 | Uso interno del proyecto, referencia en el repositorio |
-| JetLM/SDAR-1.7B-Chat-b32 (base) | ≈1,7 B | no aplica | no disponible | Modelo conversacional de difusión por bloques | no disponible | Apache-2.0 | HuggingFace |
-| JetLM/SDAR-30B-A3B-Chat-b32 (objetivo) | 30 B | 3 B | no disponible | Modelo generativo MoE de difusión por bloques | 65,5 % (sin asistencia) | no disponible | HuggingFace |
+| JetLM/SDAR-1.7B-Chat-b32 (base) | ≈1,7 B | no aplica | no disponible | Modelo conversacional de difusión por bloques | no disponible | Apache-2.0 | Hugging Face |
+| JetLM/SDAR-30B-A3B-Chat-b32 (objetivo) | 30 B | 3 B | no disponible | Modelo generativo MoE de difusión por bloques | 65,5 % (sin asistencia) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - Es exclusivamente un drafter: por sí solo es un modelo de 1,7 B sesgado hacia el estilo del 30B, no un modelo conversacional autónomo mejor que su base.
 - Caída notable en IFEval: 46,2 % (rd1) y 46,0 % (rd2) frente al 52,7 % del 30B sin asistencia, con aparición de bucles de repetición en ese tipo de tareas.
 - Pérdida de precisión global de aproximadamente un punto porcentual frente al 30B sin asistencia (64,5 % frente a 65,5 %), que puede no compensar en cargas donde la exactitud sea crítica.
-- La ganancia de velocidad es modesta (1,25×) y se midió en una sola máquina con el *harness* estándar de HuggingFace; no hay datos con otros *runtimes* ni con lotes grandes.
+- La ganancia de velocidad es modesta (1,25×) y se midió en una sola máquina con el *harness* estándar de Hugging Face; no hay datos con otros *runtimes* ni con lotes grandes.
 - No se documentan idiomas soportados, longitud de contexto ni sesgos conocidos; no hay evaluación de seguridad ni de robustez frente a entradas adversarias.
 - Requiere `trust_remote_code=True` y ejecuta código de modelado propio (`modeling_sdar.py`), lo que implica revisión de seguridad antes de desplegarlo en producción.
 - Depende de un ecosistema concreto: el juez `SDAR-30B-judge-LoRA` y el repositorio `sdar30b-draft-judge`; fuera de ese conjunto de herramientas su utilidad es limitada.
@@ -104,7 +104,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anupam-Rawat-IITB/SDAR-1.7B-drafter-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Anupam-Rawat-IITB/SDAR-1.7B-drafter-LoRA
 - Modelo base: https://huggingface.co/JetLM/SDAR-1.7B-Chat-b32
 - Juez del sistema: https://huggingface.co/Anupam-Rawat-IITB/SDAR-30B-judge-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/Anupam-Rawat-IITB/sdar30b-draft-judge-data
@@ -113,4 +113,4 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 - Script de reproducción: https://raw.githubusercontent.com/NoviceCoderInfinity/sdar30b-draft-judge/main/get.sh
 - Adaptador LoRA original consolidado: https://huggingface.co/Arushhh/phase4-drafter-lora
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información del repositorio en HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información del repositorio en Hugging Face.

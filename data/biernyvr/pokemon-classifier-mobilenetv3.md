@@ -68,7 +68,7 @@ No se dispone de otros clasificadores de Pokémon comparables con benchmarks pub
 
 | Modelo | Arquitectura | Parametros | Clases | Entrada | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|---|
-| pokemon-classifier-mobilenetv3 | MobileNetV3-Large | ~4,2 M (según el autor) | 1.025 (Pokémon) | 224x224 | MIT | ONNX + PyTorch, HuggingFace |
+| pokemon-classifier-mobilenetv3 | MobileNetV3-Large | ~4,2 M (según el autor) | 1.025 (Pokémon) | 224x224 | MIT | ONNX + PyTorch, Hugging Face |
 | MobileNetV3-Large (referencia, ImageNet-1K) | MobileNetV3-Large | ~5,4 M | 1.000 (ImageNet) | 224x224 | BSD-3 (torchvision) | PyTorch Hub / torchvision |
 | EfficientNet-B0 (referencia, ImageNet-1K) | EfficientNet | ~5,3 M | 1.000 (ImageNet) | 224x224 | BSD-3 (torchvision) | PyTorch Hub / torchvision |
 | ResNet-50 (referencia, ImageNet-1K) | ResNet | ~25,6 M | 1.000 (ImageNet) | 224x224 | BSD-3 (torchvision) | PyTorch Hub / torchvision |
@@ -88,7 +88,7 @@ Los datos de parámetros de los modelos de referencia corresponden a sus impleme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiernyVR/pokemon-classifier-mobilenetv3
+- Modelo en Hugging Face: https://huggingface.co/BiernyVR/pokemon-classifier-mobilenetv3
 - Repositorio de MobileNetV3 en torchvision (arquitectura base): https://pytorch.org/vision/stable/models/mobilenetv3.html
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/
 - Paper de MobileNetV3 (Searching for MobileNetV3): https://arxiv.org/abs/1905.02244

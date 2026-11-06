@@ -74,10 +74,10 @@ Los datos de los modelos alternativos provienen de su documentación pública ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gray117/Swift-1.5-Qwen3.8-27B-Q4_0_ROCMFP4_STRIX | ~27B (según nombre) | No disponible | swift-open-license-1.0 | HuggingFace, 0 descargas |
-| ukisai/Swift-1.5-Qwen3.8-27b (modelo base) | No confirmado | No disponible | swift-open-license-1.0 | HuggingFace |
-| Qwen3-32B | 32,8B denso | 32 768 tokens nativo, ampliable a 131 072 | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Gemma 3 27B | 27B denso | 128 000 tokens | Términos de uso de Gemma | HuggingFace |
+| gray117/Swift-1.5-Qwen3.8-27B-Q4_0_ROCMFP4_STRIX | ~27B (según nombre) | No disponible | swift-open-license-1.0 | Hugging Face, 0 descargas |
+| ukisai/Swift-1.5-Qwen3.8-27b (modelo base) | No confirmado | No disponible | swift-open-license-1.0 | Hugging Face |
+| Qwen3-32B | 32,8B denso | 32 768 tokens nativo, ampliable a 131 072 | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Gemma 3 27B | 27B denso | 128 000 tokens | Términos de uso de Gemma | Hugging Face |
 
 La diferencia más relevante frente a las alternativas es la licencia: Qwen3-32B se distribuye bajo Apache 2.0, mientras que este repositorio emplea una licencia personalizada de nombre `swift-open-license-1.0` cuyo contenido no se reproduce en la model card y debe revisarse en el enlace correspondiente.
 
@@ -96,6 +96,6 @@ La diferencia más relevante frente a las alternativas es la licencia: Qwen3-32B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gray117/Swift-1.5-Qwen3.8-27B-Q4_0_ROCMFP4_STRIX
+- Repositorio en Hugging Face: https://huggingface.co/gray117/Swift-1.5-Qwen3.8-27B-Q4_0_ROCMFP4_STRIX
 - Texto de la licencia enlazado en la model card: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Modelo base presumible: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-reap-teat es un modelo de lenguaje y vision (vision-language model) publicado por el usuario darkc0de en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun los metadatos del repositorio, los pesos originales en safetensors suman 19.520.941.406 parametros, mientras que los nombres de fichero de la model card hacen referencia a un modelo base de 26B con 4B de parametros activos (esquema MoE), presuntamente derivado de la familia Gemma 4. El modelo se presenta como una variante "ultra-uncensored-heretic" sometida a un proceso de reduccion de expertos (REAP) y posteriormente cuantizada a GGUF mediante Unsloth.
+reap-teat es un modelo de lenguaje y vision (vision-language model) publicado por el usuario darkc0de en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Segun los metadatos del repositorio, los pesos originales en safetensors suman 19.520.941.406 parametros, mientras que los nombres de fichero de la model card hacen referencia a un modelo base de 26B con 4B de parametros activos (esquema MoE), presuntamente derivado de la familia Gemma 4. El modelo se presenta como una variante "ultra-uncensored-heretic" sometida a un proceso de reduccion de expertos (REAP) y posteriormente cuantizada a GGUF mediante Unsloth.
 
 La relevancia de esta publicacion es limitada y fundamentalmente practica: ofrece un artefacto listo para ejecutar en llama.cpp con soporte multimodal (proyeccion mmproj incluida) y con un sesgo declarado hacia la ausencia de filtros de seguridad. No obstante, la informacion disponible es muy escasa: no hay model card descriptiva, no se declaran licencia ni idiomas, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -77,10 +77,10 @@ La comparacion es aproximada: no se dispone de datos de rendimiento del modelo e
 - Idiomas soportados no documentados; no se garantiza un rendimiento correcto en castellano.
 - Longitud de contexto desconocida, lo que impide planificar casos de uso con documentos largos.
 - Repositorio sin descargas ni interacciones: no hay evidencia de comunidad, validacion externa ni mantenimiento.
-- El pipeline no esta declarado en HuggingFace, lo que puede afectar a la integracion automatica con librerias como transformers.
+- El pipeline no esta declarado en Hugging Face, lo que puede afectar a la integracion automatica con librerias como transformers.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darkc0de/reap-teat
+- Hugging Face: https://huggingface.co/darkc0de/reap-teat
 - Unsloth (herramienta de conversion declarada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime implicito): https://github.com/ggml-org/llama.cpp

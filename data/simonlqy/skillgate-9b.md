@@ -86,7 +86,7 @@ La comparativa muestra que SkillGate mejora significativamente sobre las variant
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simonlqy/SkillGate-9B
+- Hugging Face: https://huggingface.co/simonlqy/SkillGate-9B
 - Paper (arXiv): https://arxiv.org/abs/2608.18852
 - Código (GitHub): https://github.com/DeepExperience/SkillGate
 - Licencia Qwen: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

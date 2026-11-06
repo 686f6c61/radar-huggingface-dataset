@@ -74,7 +74,7 @@ No hay comparaciones con modelos de terceros en la informacion disponible. El au
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| requstory/requ-classify-small | 33M | Clasificacion de webs empresariales (industria, items, procesos) | Apache 2.0 / MIT (base) | Publico en HuggingFace (preview) |
+| requstory/requ-classify-small | 33M | Clasificacion de webs empresariales (industria, items, procesos) | Apache 2.0 / MIT (base) | Publico en Hugging Face (preview) |
 | BAAI/bge-small-en-v1.5 (base) | 33M | Embeddings genericos de texto | MIT | Publico, muy utilizado |
 | Clasificadores zero-shot tipo BART-MNLI | ~400M | Clasificacion zero-shot de texto | MIT (bart-large-mnli) | Publicos, mas pesados y lentos en CPU |
 
@@ -93,7 +93,7 @@ Comparativa orientativa: frente a usar bge-small-en-v1.5 directamente con clasif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/requstory/requ-classify-small
+- Modelo en Hugging Face: https://huggingface.co/requstory/requ-classify-small
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Requstory Labs: https://requstory.com/lab
 - Requstory (producto): https://requstory.com

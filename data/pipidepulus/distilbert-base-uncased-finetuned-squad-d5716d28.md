@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT fine-tuned para question answering extractivo sobre SQuAD v1.1, publicado por el usuario pipidepulus en HuggingFace. El modelo replica el denominado "DistilBERT (D)" de la Tabla 2 del paper original de DistilBERT: parte de un estudiante `distilbert-base-uncased` y aplica una segunda etapa de destilación específica de tarea, usando como profesor un `bert-base-uncased` ya ajustado a SQuAD v1.1 (`lewtun/bert-base-uncased-finetuned-squad-v1`).
+DistilBERT fine-tuned para question answering extractivo sobre SQuAD v1.1, publicado por el usuario pipidepulus en Hugging Face. El modelo replica el denominado "DistilBERT (D)" de la Tabla 2 del paper original de DistilBERT: parte de un estudiante `distilbert-base-uncased` y aplica una segunda etapa de destilación específica de tarea, usando como profesor un `bert-base-uncased` ya ajustado a SQuAD v1.1 (`lewtun/bert-base-uncased-finetuned-squad-v1`).
 
 La arquitectura es un transformer encoder de 6 capas con 66 millones de parámetros, la mitad que BERT-base, lo que reduce el coste de inferencia aproximadamente un 60 % manteniendo cerca del 97 % del rendimiento del profesor en esta tarea. El contexto máximo está limitado a 512 tokens, herencia directa de la familia BERT.
 
@@ -69,9 +69,9 @@ Las métricas se calcularon con la métrica `squad` de la librería `datasets`. 
 
 | Modelo | Parámetros | Contexto | EM / F1 en SQuAD v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT destilado en 2 etapas) | 66 M | 512 | 78,4 / 86,5 | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased-distilled-squad` (referencia de la comunidad) | 66 M | 512 | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| `bert-base-uncased` fine-tuned a SQuAD v1.1 (profesor) | 110 M | 512 | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Este modelo (DistilBERT destilado en 2 etapas) | 66 M | 512 | 78,4 / 86,5 | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased-distilled-squad` (referencia de la comunidad) | 66 M | 512 | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| `bert-base-uncased` fine-tuned a SQuAD v1.1 (profesor) | 110 M | 512 | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | DistilBERT (D) según paper | 66 M | 512 | 79,1 / 86,9 | Apache 2.0 | Referencia académica |
 
 No se dispone en la información proporcionada de resultados comparables de otros modelos de QA extractivo (RoBERTa-base, ALBERT, MiniLM) para esta tabla.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados comparables de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipidepulus/distilbert-base-uncased-finetuned-squad-d5716d28
+- Modelo en Hugging Face: https://huggingface.co/pipidepulus/distilbert-base-uncased-finetuned-squad-d5716d28
 - Paper de DistilBERT: https://arxiv.org/pdf/1910.01108.pdf
 - Paper en arXiv (referencia): https://arxiv.org/abs/1910.01108
 - Dataset SQuAD: https://huggingface.co/datasets/squad

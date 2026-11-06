@@ -104,7 +104,7 @@ No se dispone de resultados de benchmark comparativos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/AskMeCodes/Qwen3-Coder-30B-A3B-Instruct-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/AskMeCodes/Qwen3-Coder-30B-A3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE
 - Blog de Qwen sobre Qwen3-Coder: https://qwenlm.github.io/blog/qwen3-coder/

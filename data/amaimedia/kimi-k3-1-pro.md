@@ -6,7 +6,7 @@ Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de tipo agéntico, pu
 
 El modelo está diseñado para cargas de trabajo agénticas: razonamiento multi-paso, generación de código, creación 3D, investigación financiera y precisión factual. Su naturaleza multimodal nativa (pipeline `image-text-to-text`) le permite procesar imágenes junto a texto, lo que lo sitúa en la categoría de modelos frontera con capacidades de visión integradas.
 
-La relevancia de esta ficha radica en que el repositorio de HuggingFace bajo el identificador `AMAImedia/Kimi-K3.1-Pro` es una réplica del modelo original de Moonshot AI, con 0 descargas y 0 likes en el momento de la consulta, un tamaño de repositorio de 1.561,4 GB y pesos en formato safetensors con cuantización de 8 bits mediante `compressed-tensors`. La licencia es propietaria (`kimi-k3.1-pro`), lo que condiciona su uso comercial.
+La relevancia de esta ficha radica en que el repositorio de Hugging Face bajo el identificador `AMAImedia/Kimi-K3.1-Pro` es una réplica del modelo original de Moonshot AI, con 0 descargas y 0 likes en el momento de la consulta, un tamaño de repositorio de 1.561,4 GB y pesos en formato safetensors con cuantización de 8 bits mediante `compressed-tensors`. La licencia es propietaria (`kimi-k3.1-pro`), lo que condiciona su uso comercial.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AMAImedia/Kimi-K3.1-Pro
+- Repositorio en Hugging Face: https://huggingface.co/AMAImedia/Kimi-K3.1-Pro
 - Repositorio oficial de Moonshot AI: https://huggingface.co/moonshotai
 - Modelo oficial de referencia: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Blog técnico: https://www.kimi.ai/blog/kimi-k3-1-pro

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) supervisado de `xlnet/xlnet-large-cased`, publicado en HuggingFace por el usuario MayorChris el 24 de octubre de 2026. No es un modelo generativo ni un asistente conversacional: es un cabezal de clasificación de secuencias sobre un encoder XLNet, entrenado con la librería Transformers y distribuido con pesos en formato safetensors.
+`MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) supervisado de `xlnet/xlnet-large-cased`, publicado en Hugging Face por el usuario MayorChris el 24 de octubre de 2026. No es un modelo generativo ni un asistente conversacional: es un cabezal de clasificación de secuencias sobre un encoder XLNet, entrenado con la librería Transformers y distribuido con pesos en formato safetensors.
 
 El problema que aborda es la clasificación de secuencias (predicción de una etiqueta por texto de entrada). Sin embargo, la propia model card no documenta el conjunto de datos, las etiquetas, el idioma ni el uso previsto: se limita a indicar "unknown dataset" y a volcar las métricas del entrenamiento. Los resultados declarados son bajos (accuracy 0,3923; F1 macro 0,1878; F1 ponderado 0,2211), compatibles con un modelo que no ha aprendido una separación útil entre clases o que predice mayoritariamente la clase dominante.
 
@@ -90,10 +90,10 @@ Datos de referencia de los modelos comparados tomados de sus repositorios públi
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (XLNet-large fine-tuned) | 361,3 M | 512 (arquitectura XLNet; no confirmado en la card) | Clasificación de texto | MIT | HuggingFace, 0 descargas, métricas pobres |
-| xlnet/xlnet-large-cased (base) | ~340 M | 512 | Modelo de representaciones (no clasificador) | MIT (según repositorio original) | HuggingFace, ampliamente usado |
-| FacebookAI/roberta-large | ~355 M | 512 | Representaciones / clasificación con cabezal | MIT | HuggingFace, muy usado |
-| microsoft/deberta-v3-large | ~435 M | 512 | Representaciones / clasificación con cabezal | MIT | HuggingFace, estado del arte en GLUE para su tamaño |
+| Este modelo (XLNet-large fine-tuned) | 361,3 M | 512 (arquitectura XLNet; no confirmado en la card) | Clasificación de texto | MIT | Hugging Face, 0 descargas, métricas pobres |
+| xlnet/xlnet-large-cased (base) | ~340 M | 512 | Modelo de representaciones (no clasificador) | MIT (según repositorio original) | Hugging Face, ampliamente usado |
+| FacebookAI/roberta-large | ~355 M | 512 | Representaciones / clasificación con cabezal | MIT | Hugging Face, muy usado |
+| microsoft/deberta-v3-large | ~435 M | 512 | Representaciones / clasificación con cabezal | MIT | Hugging Face, estado del arte en GLUE para su tamaño |
 
 Frente a RoBERTa-large o DeBERTa-v3-large, este ajuste fino no aporta ninguna ventaja documentada: no hay dataset descrito, no hay comparación de rendimiento y las métricas absolutas son muy bajas. Su única ventaja relativa es la licencia MIT y un tamaño que cabe en cualquier GPU.
 
@@ -112,7 +112,7 @@ Frente a RoBERTa-large o DeBERTa-v3-large, este ajuste fino no aporta ninguna ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026
 - Modelo base: https://huggingface.co/xlnet/xlnet-large-cased
 - Paper de XLNet (Yang et al., 2019): https://arxiv.org/abs/1906.08237
 - Documentación de XLNet en Transformers: https://huggingface.co/docs/transformers/model_doc/xlnet

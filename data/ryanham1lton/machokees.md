@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Ryanham1lton/MachokeES` es un repositorio publicado en HuggingFace por el usuario Ryanham1lton, con licencia Creative Commons Attribution 4.0 (CC-BY-4.0). Según los metadatos disponibles, fue creado el 3 de septiembre de 2026 y actualizado el mismo día, con un tamaño de repositorio de 0,1 GB. No se ha publicado ninguna model card sustancial, ni documentación técnica, ni archivos de pesos aparentes. El repositorio no presenta descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o incompleta.
+El modelo identificado como `Ryanham1lton/MachokeES` es un repositorio publicado en Hugging Face por el usuario Ryanham1lton, con licencia Creative Commons Attribution 4.0 (CC-BY-4.0). Según los metadatos disponibles, fue creado el 3 de septiembre de 2026 y actualizado el mismo día, con un tamaño de repositorio de 0,1 GB. No se ha publicado ninguna model card sustancial, ni documentación técnica, ni archivos de pesos aparentes. El repositorio no presenta descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o incompleta.
 
 A día de hoy, no existe información pública sobre la arquitectura, el número de parámetros, el dominio de aplicación o las capacidades de este modelo. El nombre "MachokeES" podría sugerir una orientación al español, pero no hay confirmación en los datos disponibles. Por tanto, esta ficha se limita a reflejar la ausencia de información verificable y advierte de que cualquier uso en producción sería prematuro.
 
@@ -54,5 +54,5 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/MachokeES
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/MachokeES
 - No se han encontrado papers, blogs, demos o repositorios adicionales asociados a este modelo.

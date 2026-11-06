@@ -96,7 +96,7 @@ Nota: los parametros y licencias de ACT, SmolVLA y GR00T N1.7 no se detallan en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/van-i/diffusion_r2d2_to_box_bg
+- Modelo en Hugging Face: https://huggingface.co/van-i/diffusion_r2d2_to_box_bg
 - Dataset de entrenamiento: https://huggingface.co/datasets/van-i/r2d2_to_box_bg_20261003_210444
 - Repositorio del banco de pruebas y comparativa de las cuatro politicas: https://huggingface.co/van-i/so100-imitation-learning-stand
 - Diffusion Policy (referencia metodologica): https://diffusion-policy.cs.columbia.edu/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Availcs/HoneyBadger` es un repositorio publicado en HuggingFace por el usuario Availcs, con licencia Apache 2.0 y etiqueta de región "us". Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento o capacidades. No se ha publicado ningún artefacto técnico, benchmark o documentación adicional en el repositorio. A fecha de creación (septiembre de 2026), el modelo registra cero descargas y cero "likes", lo que sugiere que podría tratarse de un repositorio vacío, un placeholder o un modelo sin difundir. No es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante, ya que no existe información técnica verificable.
+El modelo `Availcs/HoneyBadger` es un repositorio publicado en Hugging Face por el usuario Availcs, con licencia Apache 2.0 y etiqueta de región "us". Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, arquitectura, parámetros, datos de entrenamiento o capacidades. No se ha publicado ningún artefacto técnico, benchmark o documentación adicional en el repositorio. A fecha de creación (septiembre de 2026), el modelo registra cero descargas y cero "likes", lo que sugiere que podría tratarse de un repositorio vacío, un placeholder o un modelo sin difundir. No es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante, ya que no existe información técnica verificable.
 
 ## Especificaciones tecnicas
 
@@ -50,6 +50,6 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Availcs/HoneyBadger
+- Repositorio en Hugging Face: https://huggingface.co/Availcs/HoneyBadger
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) que correspondan a este modelo específico. Los resultados de búsqueda web para "HoneyBadger" hacen referencia a proyectos homónimos no relacionados (scanner de seguridad, equipo multi-agente, LoRA de imagen, etc.).

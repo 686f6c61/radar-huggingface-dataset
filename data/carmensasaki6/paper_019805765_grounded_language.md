@@ -56,5 +56,5 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carmensasaki6/paper_019805765_grounded_language
+- Repositorio en Hugging Face: https://huggingface.co/carmensasaki6/paper_019805765_grounded_language
 - Paper relacionado en arXiv (no es el mismo, pero aborda un tema similar): https://arxiv.org/abs/2606.27806

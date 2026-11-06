@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Venkateshshre/matching-best5` es un prototipo de investigacion publicado en HuggingFace por el usuario Venkateshshre. Se presenta como una implementacion propia de una arquitectura **CNN Transformer** orientada a tareas de *matching* (emparejamiento o correspondencia entre pares de entradas). No es un modelo entrenado: la propia model card indica que `model.safetensors` es un *checkpoint de inicializacion* valido para pruebas de humo, no un checkpoint con entrenamiento completado ni auditado.
+`Venkateshshre/matching-best5` es un prototipo de investigacion publicado en Hugging Face por el usuario Venkateshshre. Se presenta como una implementacion propia de una arquitectura **CNN Transformer** orientada a tareas de *matching* (emparejamiento o correspondencia entre pares de entradas). No es un modelo entrenado: la propia model card indica que `model.safetensors` es un *checkpoint de inicializacion* valido para pruebas de humo, no un checkpoint con entrenamiento completado ni auditado.
 
 El modelo es extremadamente pequeno: el recuento real de parametros en el fichero safetensors es de **16.576 parametros** (aproximadamente 16,6 mil), lo que lo situa muy por debajo de cualquier modelo de lenguaje utilizable en produccion. La configuracion declara una escala "huge", etiqueta que en este caso no se corresponde con el numero real de parametros y que debe interpretarse como un nombre de variante dentro del script del autor.
 
@@ -80,5 +80,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Venkateshshre/matching-best5](https://huggingface.co/Venkateshshre/matching-best5)
+- [Modelo en Hugging Face: Venkateshshre/matching-best5](https://huggingface.co/Venkateshshre/matching-best5)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

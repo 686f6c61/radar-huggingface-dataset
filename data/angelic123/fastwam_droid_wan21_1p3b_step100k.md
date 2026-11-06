@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fastwam_droid_wan21_1p3b_step100k | 2,062 mil millones (bf16) | 128 tokens de texto; ventana de video no disponible | sin benchmarks publicados | apache-2.0 | pesos `.pt`, `config.yaml` y `dataset_stats.json` en HuggingFace |
-| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1,3 mil millones; 30 capas, hidden 1536, 12 cabezas | no disponible en la informacion | no disponible en la informacion | apache-2.0 segun los metadatos de este checkpoint | HuggingFace |
+| fastwam_droid_wan21_1p3b_step100k | 2,062 mil millones (bf16) | 128 tokens de texto; ventana de video no disponible | sin benchmarks publicados | apache-2.0 | pesos `.pt`, `config.yaml` y `dataset_stats.json` en Hugging Face |
+| Wan-AI/Wan2.1-T2V-1.3B (modelo base) | 1,3 mil millones; 30 capas, hidden 1536, 12 cabezas | no disponible en la informacion | no disponible en la informacion | apache-2.0 segun los metadatos de este checkpoint | Hugging Face |
 | Otros world models condicionados por accion entrenados sobre DROID | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible no incluye ninguna comparativa del autor con alternativas de la misma categoria ni metricas que permitan situar el modelo frente a ellos.
@@ -94,6 +94,6 @@ La informacion disponible no incluye ninguna comparativa del autor con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angelic123/fastwam_droid_wan21_1p3b_step100k
+- Modelo en Hugging Face: https://huggingface.co/angelic123/fastwam_droid_wan21_1p3b_step100k
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Papers, blogs, repositorios o demos: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo ni con FastWAM.

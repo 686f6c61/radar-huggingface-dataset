@@ -68,7 +68,7 @@ No se proporcionan datos comparativos en la informacion disponible. La etiqueta 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anvil-yam-pi05-preflight-20261010 | No disponible | No disponible | No disponible | No disponible | Repositorio publico en HuggingFace |
+| anvil-yam-pi05-preflight-20261010 | No disponible | No disponible | No disponible | No disponible | Repositorio publico en Hugging Face |
 | Alternativas de la misma categoria (VLA para robotica) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se proporcionan datos comparativos en la informacion disponible. La etiqueta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ewinchell07/anvil-yam-pi05-preflight-20261010
+- Hugging Face: https://huggingface.co/ewinchell07/anvil-yam-pi05-preflight-20261010
 - Referencias internas citadas en la model card, sin URL publica: `backup-manifest.json`, directorio `evidence/`, `checkpoints/<step>/pretrained_model`, `training_state`.
 - Busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo ni con robotica y no se incluyen por no ser relevantes.

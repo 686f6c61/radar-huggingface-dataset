@@ -70,7 +70,7 @@ No se realizaron pruebas de perplexity, ni comparaciones de calidad contra el mo
 | Esta cuantización ROCmFPX | 12.15B | 2.5B | 131.072 | Apache-2.0 | GGUF (ROCmFPX) |
 | Qwen3-30B-A3B (referencia MoE similar) | 30B | 3B | 131.072 | Apache-2.0 | GGUF / safetensors |
 
-No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros y disponibilidad. El modelo base de JetBrains está disponible en HuggingFace y ModelScope; la cuantización solo existe para hardware AMD específico.
+No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros y disponibilidad. El modelo base de JetBrains está disponible en Hugging Face y ModelScope; la cuantización solo existe para hardware AMD específico.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-GGUF
 - Variante 4-bit: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFP4-GGUF
 - Variante 8-bit AGENT: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFPX-Q8_0-AGENT-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking

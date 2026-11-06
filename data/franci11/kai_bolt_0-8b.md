@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kAI Bolt 0.8B es un modelo de decisión pequeño ("System One") desarrollado por el usuario Franci11 y publicado en HuggingFace. A diferencia de un LLM conversacional, no genera texto libre: recibe un estado en formato JSON junto con una o más preguntas tipadas y devuelve una probabilidad para cada opción disponible. Es un fine-tune mediante QLoRA (4 bits, rank 16, alpha 16) sobre Qwen3.5-0.8B, entrenado por su autor en un MacBook Air M2 con 8 GB de memoria usando Unsloth Desktop.
+kAI Bolt 0.8B es un modelo de decisión pequeño ("System One") desarrollado por el usuario Franci11 y publicado en Hugging Face. A diferencia de un LLM conversacional, no genera texto libre: recibe un estado en formato JSON junto con una o más preguntas tipadas y devuelve una probabilidad para cada opción disponible. Es un fine-tune mediante QLoRA (4 bits, rank 16, alpha 16) sobre Qwen3.5-0.8B, entrenado por su autor en un MacBook Air M2 con 8 GB de memoria usando Unsloth Desktop.
 
 Su relevancia radica en la tendencia actual de crear modelos especializados en decisiones discretas de baja latencia (triage, routing, verificación, supervisión de agentes) que complementan a LLMs mayores en pipelines de producción. Con 873,4 millones de parámetros y una ventana de contexto de 262.144 tokens, ofrece precisión de 0,7465 en el benchmark typed-decisions, por encima de modelos de 4B de su misma familia de tareas, con una latencia p50 de unos 500 ms en hardware Apple Silicon de consumo.
 
@@ -36,7 +36,7 @@ El dataset de entrenamiento esta compuesto por ejemplos de estados JSON con preg
 - Abstencion entrenada: puede devolver `non_determinabile` o `nessuna_delle_opzioni` cuando el estado no justifica una respuesta.
 - Ventana de contexto larga: hasta 262.144 tokens, apta para estados JSON extensos o trazas de agentes completas.
 - Tareas entrenadas: triage/routing, deteccion de intencion, verificacion de claims, deteccion de prompt injection, verificacion de facturas y supervision de agentes (aprobar una tool call, elegir herramienta, pedir aclaracion, marcar tarea completada, leer trazas).
-- Etiquetado image-text-to-text en HuggingFace, heredado presumiblemente de la base Qwen3.5; la model card no documenta capacidades de vision especificas.
+- Etiquetado image-text-to-text en Hugging Face, heredado presumiblemente de la base Qwen3.5; la model card no documenta capacidades de vision especificas.
 - No esta orientado a generacion de texto conversacional, razonamiento multi-paso ni escritura de codigo.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks genericos (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: con F16, unos 1,7-1,8 GB; con Q8_0, unos 0,9-1 GB; con Q6_K, unos 0,7 GB; con Q4_K_M, unos 0,5-0,6 GB. El repo completo pesa 5,7 GB (incluye safetensors y multiples cuants).
 - GPU recomendadas: no requiere GPU dedicada. El autor lo ejecuta en CPU Apple Silicon (M2), y las comparativas de referencia usan RTX 5060 Ti para otros modelos. Cualquier GPU moderna con 4-6 GB de VRAM es mas que suficiente.
 - Cabe en consumer GPU: si, sobradamente. Ejecutable incluso en portatiles con GPU integrada; el propio entrenamiento se hizo en un MacBook Air M2 de 8 GB.
-- Opciones de despliegue: llama.cpp, LM Studio, builds MLX de los mismos pesos fusionados, o la libreria transformers de HuggingFace (con safetensors). El autor insiste en no usar chat templates sobre las preguntas: la decision head es el producto.
+- Opciones de despliegue: llama.cpp, LM Studio, builds MLX de los mismos pesos fusionados, o la libreria transformers de Hugging Face (con safetensors). El autor insiste en no usar chat templates sobre las preguntas: la decision head es el producto.
 - Latencia y throughput: p50 de unos 500 ms por decision en Apple M2 (medida del autor). Para contextos muy largos, recomienda subir ligeramente el batch fisico para evitar prefill lento o inestable en portatil.
 - Entrenamiento/fine-tune adicional: reproducible en hardware de consumo (el original se entreno en un M2 con 8 GB usando QLoRA y Unsloth).
 
@@ -100,7 +100,7 @@ kAI Bolt supera en precision a modelos de 4B y 1,7B de la misma familia de tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Franci11/kAI_Bolt_0.8B
+- Modelo en Hugging Face: https://huggingface.co/Franci11/kAI_Bolt_0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - README de Rizzo Flow (fuente de la tabla comparativa): https://github.com/Rizzo-AI-Academy/rizzo-flow

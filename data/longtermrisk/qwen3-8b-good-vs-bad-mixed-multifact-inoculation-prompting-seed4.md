@@ -76,9 +76,9 @@ La comparativa se basa en el modelo base y en modelos de tamano similar. No se d
 
 ## Enlaces
 
-- [HuggingFace - Modelo principal](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4)
-- [HuggingFace - Variante SFT](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft)
-- [HuggingFace - Variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting)
+- [Hugging Face - Modelo principal](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4)
+- [Hugging Face - Variante SFT](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft)
+- [Hugging Face - Variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting)
 - [FriendliAI - Pagina de despliegue](https://friendli.ai/models/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-inoculation-prompting)
 - [FriendliAI - Variante sin multifact](https://friendli.ai/models/longtermrisk/Qwen3-8B-good-vs-bad-mixed-inoculation-prompting)
 - [ModelHub - Pagina alternativa](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-good-vs-bad-mixed-inoculation-prompting)

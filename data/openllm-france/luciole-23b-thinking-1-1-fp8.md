@@ -12,7 +12,7 @@ La licencia Apache 2.0 facilita su uso comercial y su integración en pipelines 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles especificos no disponibles); tag "nemotron" en HuggingFace |
+| Arquitectura | Transformer (detalles especificos no disponibles); tag "nemotron" en Hugging Face |
 | Parametros totales | 23.216.467.968 (~23,2 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La licencia Apache 2.0 facilita su uso comercial y su integración en pipelines 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de aproximadamente 23,2 mil millones de parámetros. La model card del repositorio no detalla la arquitectura interna (número de capas, dimensiones ocultas, tipo de atención, uso de MoE, etc.), y la etiqueta "nemotron" en HuggingFace sugiere una posible relación con la familia Nemotron de NVIDIA, aunque no se confirma en la documentación proporcionada. El modelo base incorpora un modo de razonamiento ("Thinking") que implica generación de cadenas de pensamiento antes de la respuesta final.
+El modelo es un transformer de aproximadamente 23,2 mil millones de parámetros. La model card del repositorio no detalla la arquitectura interna (número de capas, dimensiones ocultas, tipo de atención, uso de MoE, etc.), y la etiqueta "nemotron" en Hugging Face sugiere una posible relación con la familia Nemotron de NVIDIA, aunque no se confirma en la documentación proporcionada. El modelo base incorpora un modo de razonamiento ("Thinking") que implica generación de cadenas de pensamiento antes de la respuesta final.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada. Tampoco se documentan innovaciones técnicas específicas más allá de la cuantización FP8. Esta variante FP8 fue generada con LLM Compressor y está empaquetada en formato compressed-tensors para su uso directo con vLLM, lo que constituye la principal aportación técnica documentada del repositorio.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace (modelo FP8): https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1-FP8
+- Hugging Face (modelo FP8): https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1-FP8
 - Modelo base: https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1
 - LLM Compressor: https://github.com/vllm-project/llm-compressor
 - compressed-tensors: https://github.com/neuralmagic/compressed-tensors

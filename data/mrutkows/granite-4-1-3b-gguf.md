@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo. La elección entre estos mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.1-3b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.1-3b-GGUF
 - Modelo base (safetensors): https://huggingface.co/ibm-granite/granite-4.1-3b
 - Repositorio GGUF oficial de IBM: https://huggingface.co/ibm-granite/granite-4.1-3b-GGUF
 - Documentación de Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1

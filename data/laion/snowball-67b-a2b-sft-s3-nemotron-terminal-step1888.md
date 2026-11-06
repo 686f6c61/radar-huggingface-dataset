@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Etapa SFT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| snowball-67b-a2b-sft-s2-thinking-step630 | 67,08 B | no disponible | Thinking (paso 630) | Apache 2.0 | HuggingFace |
-| snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 | 67,08 B | no disponible | Agentic / Nemotron Terminal (paso 1888) | Apache 2.0 | HuggingFace |
-| sft-repro-thinking-step630-nemotron-terminal-step1888 | 67,08 B | no disponible | Reproduccion del experimento | Apache 2.0 | HuggingFace |
+| snowball-67b-a2b-sft-s2-thinking-step630 | 67,08 B | no disponible | Thinking (paso 630) | Apache 2.0 | Hugging Face |
+| snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 | 67,08 B | no disponible | Agentic / Nemotron Terminal (paso 1888) | Apache 2.0 | Hugging Face |
+| sft-repro-thinking-step630-nemotron-terminal-step1888 | 67,08 B | no disponible | Reproduccion del experimento | Apache 2.0 | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura MoE de 67B y licencia Apache 2.0. La diferencia radica en la etapa de fine-tuning: el s2-thinking está especializado en razonamiento, mientras que el s3-nemotron-terminal se orienta a tareas de agente/terminal. El tercero es una reproducción del experimento para verificar consistencia. No se dispone de datos de rendimiento comparativo.
 
@@ -80,7 +80,7 @@ Los tres modelos comparten la misma arquitectura MoE de 67B y licencia Apache 2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Checkpoint anterior (etapa Thinking): https://huggingface.co/laion/snowball-67b-a2b-sft-s2-thinking-step630
 - Reproducción del experimento: https://huggingface.co/laion/sft-repro-thinking-step630-nemotron-terminal-step1888
 - Issue del experimento en marin-community: https://github.com/marin-community/marin/issues/7743

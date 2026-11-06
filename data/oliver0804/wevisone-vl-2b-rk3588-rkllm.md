@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeVisOne-VL-2B-RK3588-rkllm es una conversión del modelo multimodal tencent/WeVisOne-VL-2B (arquitectura Qwen3-VL, 2B parámetros) para ejecutarse sobre la NPU del SoC Rockchip RK3588 y RK3588S. Lo publica el usuario oliver0804 en HuggingFace y no es un modelo nuevo, sino un artefacto de despliegue: pesos convertidos y cuantizados para las runtimes propietarias de Rockchip (librkllmrt 1.3.1 para el decodificador de texto y librknnrt 2.5.0 para el codificador visual). Resuelve el problema de llevar un VLM de 2B a placas de bajo consumo sin GPU, algo relevante para robótica, visión embebida e IoT industrial.
+WeVisOne-VL-2B-RK3588-rkllm es una conversión del modelo multimodal tencent/WeVisOne-VL-2B (arquitectura Qwen3-VL, 2B parámetros) para ejecutarse sobre la NPU del SoC Rockchip RK3588 y RK3588S. Lo publica el usuario oliver0804 en Hugging Face y no es un modelo nuevo, sino un artefacto de despliegue: pesos convertidos y cuantizados para las runtimes propietarias de Rockchip (librkllmrt 1.3.1 para el decodificador de texto y librknnrt 2.5.0 para el codificador visual). Resuelve el problema de llevar un VLM de 2B a placas de bajo consumo sin GPU, algo relevante para robótica, visión embebida e IoT industrial.
 
 El paquete no es un único fichero: el LLM va en formato `.rkllm` con cuantización w8a8 y el encoder visual en `.rknn` a fp16. El pegamento entre ambos (preprocesado 448×448, concatenación de embeddings y deepstack features, construcción del prompt con tokens `<|vision_start|>`, `<|image_pad|>` y `<|vision_end|>`) no se entrega como script listo, sino que debe implementarlo el integrador usando la API `RKLLMInput`/`image_embed` de la runtime 1.3.1.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliver0804/WeVisOne-VL-2B-RK3588-rkllm
+- Repositorio Hugging Face: https://huggingface.co/oliver0804/WeVisOne-VL-2B-RK3588-rkllm
 - Modelo base: https://huggingface.co/tencent/WeVisOne-VL-2B
-- Scripts de conversión: directorio `conversion/` del repositorio de HuggingFace
+- Scripts de conversión: directorio `conversion/` del repositorio de Hugging Face
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

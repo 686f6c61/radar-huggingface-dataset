@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de transformers publicado por el usuario asd1cxzq12eds en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. El autor reporta una mejora en el benchmark AIME 2025, pasando de una precisión del 70 % en la versión anterior al 87,5 % en la actual, con un aumento en el promedio de tokens de razonamiento por pregunta (de 12K a 23K). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de transformers publicado por el usuario asd1cxzq12eds en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general. El autor reporta una mejora en el benchmark AIME 2025, pasando de una precisión del 70 % en la versión anterior al 87,5 % en la actual, con un aumento en el promedio de tokens de razonamiento por pregunta (de 12K a 23K). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 Sin embargo, el repositorio no contiene ningún peso ni archivo de modelo (tamaño 0.0 GB), y la información técnica disponible es muy limitada. No se especifican la arquitectura concreta, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card incluye una tabla de benchmarks comparativos con otros modelos (denominados Model1, Model2 y Model1-v2), pero no se identifican estos modelos ni se detalla la metodología de evaluación. En su estado actual, el repositorio parece ser una prueba o un placeholder, por lo que su uso práctico es inviable hasta que se publiquen los pesos y una documentación técnica completa.
 
@@ -100,6 +100,6 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/asd1cxzq12eds/MyAwesomeModel-TestRepo](https://huggingface.co/asd1cxzq12eds/MyAwesomeModel-TestRepo)
+- Repositorio en Hugging Face: [https://huggingface.co/asd1cxzq12eds/MyAwesomeModel-TestRepo](https://huggingface.co/asd1cxzq12eds/MyAwesomeModel-TestRepo)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

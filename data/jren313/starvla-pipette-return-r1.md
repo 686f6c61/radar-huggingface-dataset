@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / accion | Ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jren313/starvla-pipette-return-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 5 de pipeteo (devolucion de pipeta) | no disponible | HuggingFace, 0 descargas |
-| `nvidia/GR00T-N1.7-3B` | 3B | no disponible en la informacion proporcionada | Politica VLA generalista para humanoides | condiciones de NVIDIA (consultar repositorio) | HuggingFace (modelo base) |
-| `jren313/starvla-pipette-tube-return-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 4 de pipeteo (devolucion del tubo), servido en el paso 500 | no disponible | HuggingFace |
-| `jren313/starvla-pipette-aim-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 3 de pipeteo (apuntado), servido en el paso 1350 | no disponible | HuggingFace |
+| `jren313/starvla-pipette-return-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 5 de pipeteo (devolucion de pipeta) | no disponible | Hugging Face, 0 descargas |
+| `nvidia/GR00T-N1.7-3B` | 3B | no disponible en la informacion proporcionada | Politica VLA generalista para humanoides | condiciones de NVIDIA (consultar repositorio) | Hugging Face (modelo base) |
+| `jren313/starvla-pipette-tube-return-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 4 de pipeteo (devolucion del tubo), servido en el paso 500 | no disponible | Hugging Face |
+| `jren313/starvla-pipette-aim-r1` | 3B | chunk de 30 pasos a 60 Hz; accion 32-D | Fase 3 de pipeteo (apuntado), servido en el paso 1350 | no disponible | Hugging Face |
 | Cabezas QwenOFT sobre las mismas particiones | no disponible | no disponible | Mismas fases de pipeteo | no disponible | no disponible (mencionadas en la model card) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-return-r1
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-return-r1
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Checkpoint de la fase 1 (ronda 2): https://huggingface.co/jren313/starvla-pipette-pick-r2

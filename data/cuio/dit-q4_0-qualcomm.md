@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cuio/dit-Q4_0-Qualcomm` es un repositorio publicado en HuggingFace por el usuario `cuio` que, según su model card, contiene modelos de imagen de la familia DiT (Diffusion Transformer) listos para cargarse en la aplicación FancyAI, una app que permite descargar un fichero de modelo al teléfono y renderizarlo desde el almacenamiento local sin conversión ni configuración adicional. El repositorio está etiquetado como `gguf` y `region:us`, y el nombre del fichero sugiere una cuantización Q4_0 orientada a hardware Qualcomm, aunque la model card no detalla ni la variante concreta de DiT ni el runtime de inferencia utilizado.
+`cuio/dit-Q4_0-Qualcomm` es un repositorio publicado en Hugging Face por el usuario `cuio` que, según su model card, contiene modelos de imagen de la familia DiT (Diffusion Transformer) listos para cargarse en la aplicación FancyAI, una app que permite descargar un fichero de modelo al teléfono y renderizarlo desde el almacenamiento local sin conversión ni configuración adicional. El repositorio está etiquetado como `gguf` y `region:us`, y el nombre del fichero sugiere una cuantización Q4_0 orientada a hardware Qualcomm, aunque la model card no detalla ni la variante concreta de DiT ni el runtime de inferencia utilizado.
 
-Los metadatos de HuggingFace registran 12.820.073.036 parámetros totales y un tamaño de repositorio de 114,2 GB. Esa combinación es coherente con un repositorio que aloja varios ficheros de pesos (por ejemplo, distintas precisiones o variantes del mismo modelo) y no con un único fichero Q4_0, que para ese número de parámetros rondaría los 7 GB. La model card es genérica para toda la familia de modelos y no aporta información específica sobre este fichero.
+Los metadatos de Hugging Face registran 12.820.073.036 parámetros totales y un tamaño de repositorio de 114,2 GB. Esa combinación es coherente con un repositorio que aloja varios ficheros de pesos (por ejemplo, distintas precisiones o variantes del mismo modelo) y no con un único fichero Q4_0, que para ese número de parámetros rondaría los 7 GB. La model card es genérica para toda la familia de modelos y no aporta información específica sobre este fichero.
 
 La relevancia del repositorio es limitada y experimental: no declara licencia, no declara idiomas, no tiene pipeline asignado, no incluye resultados de benchmarks ni paper asociado, y en el momento de la consulta acumulaba 0 descargas y 1 like. Resulta de interés únicamente como ejemplo de empaquetado de un transformer de difusión cuantizado para inferencia en dispositivo móvil dentro de un ecosistema de aplicación cerrado.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|
-| cuio/dit-Q4_0-Qualcomm | 12.820.073.036 | No disponible | No disponible | GGUF, repositorio de 114,2 GB en HuggingFace |
+| cuio/dit-Q4_0-Qualcomm | 12.820.073.036 | No disponible | No disponible | GGUF, repositorio de 114,2 GB en Hugging Face |
 | Alternativa de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 Familias candidatas a comparar en una evaluacion posterior, sin datos verificados en esta ficha: Flux.1, Stable Diffusion 3.5 y PixArt-Sigma. Cualquier comparacion numerica con ellas requeriria confirmar primero que variante de DiT implementa este repositorio.
@@ -88,6 +88,6 @@ Familias candidatas a comparar en una evaluacion posterior, sin datos verificado
 
 ## Enlaces
 
-- [HuggingFace: cuio/dit-Q4_0-Qualcomm](https://huggingface.co/cuio/dit-Q4_0-Qualcomm)
+- [Hugging Face: cuio/dit-Q4_0-Qualcomm](https://huggingface.co/cuio/dit-Q4_0-Qualcomm)
 - [Repositorio de FancyAI en GitHub](https://github.com/Mr-J-369/Fancy-Ai)
 - No se han encontrado papers, blogs tecnicos, demos ni repositorios adicionales en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ResNet-50 es un modelo de clasificación de imágenes basado en redes neuronales convolucionales residuales, propuesto originalmente por He et al. en 2015. Esta implementación concreta, publicada por el usuario OpenExploer en HuggingFace, está adaptada para su despliegue en hardware de Horizon Robotics (plataformas J6M y J6P) mediante el kit de herramientas HEAL. El modelo recibe una imagen RGB de 224×224 píxeles y produce logits de 1000 clases, correspondientes a las categorías de ImageNet. Su relevancia actual radica en que sigue siendo un backbone de referencia para tareas de visión por computadora en entornos de edge computing, donde se prioriza la latencia y el rendimiento por vatio.
+ResNet-50 es un modelo de clasificación de imágenes basado en redes neuronales convolucionales residuales, propuesto originalmente por He et al. en 2015. Esta implementación concreta, publicada por el usuario OpenExploer en Hugging Face, está adaptada para su despliegue en hardware de Horizon Robotics (plataformas J6M y J6P) mediante el kit de herramientas HEAL. El modelo recibe una imagen RGB de 224×224 píxeles y produce logits de 1000 clases, correspondientes a las categorías de ImageNet. Su relevancia actual radica en que sigue siendo un backbone de referencia para tareas de visión por computadora en entornos de edge computing, donde se prioriza la latencia y el rendimiento por vatio.
 
 La arquitectura consta de 4 etapas de bloques residuales con downsampling mediante stride=2, seguido de un pooling global y una capa fully connected. El modelo card indica que se entrenó con pérdida de entropía cruzada con label smoothing, y se reportan métricas de precisión y rendimiento específicas para los chips J6M y J6P. No se especifican el número total de parámetros ni el formato de pesos en la información proporcionada, aunque el tamaño del repositorio (0.6 GB) sugiere pesos en precisión float32 o cuantizados.
 
@@ -91,7 +91,7 @@ La principal diferencia de esta implementación es su optimización para hardwar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExploer/resnet50
+- Modelo en Hugging Face: https://huggingface.co/OpenExploer/resnet50
 - Paper original (Deep Residual Learning for Image Recognition): https://arxiv.org/abs/1512.03385
 - Repositorio oficial de torchvision (implementación de referencia): https://github.com/pytorch/vision
 - Implementación de NVIDIA ResNet50 v1.5: https://github.com/NVIDIA/DeepLearningExamples/blob/master/PyTorch/Classification/ConvNets/resnet50v1.5/README.md

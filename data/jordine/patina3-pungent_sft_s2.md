@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-pungent_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en HuggingFace y utiliza la librería PEFT para su carga y uso. El nombre sugiere que fue entrenado mediante fine-tuning supervisado (SFT) en una segunda etapa, aunque no se proporcionan detalles sobre el dataset, los hiperparámetros o el propósito específico del ajuste.
+El modelo `Jordine/patina3-pungent_sft_s2` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en Hugging Face y utiliza la librería PEFT para su carga y uso. El nombre sugiere que fue entrenado mediante fine-tuning supervisado (SFT) en una segunda etapa, aunque no se proporcionan detalles sobre el dataset, los hiperparámetros o el propósito específico del ajuste.
 
 La información pública es extremadamente limitada: la model card está prácticamente vacía, sin descripción, licencia, idiomas, ni documentación técnica. El repositorio tiene un tamaño de 0,7 GB, lo que es coherente con un adaptador LoRA de tamaño moderado sobre un modelo de 8 mil millones de parámetros. Al ser un adaptador, no es un modelo independiente: requiere cargar el modelo base Llama-3.1-8B y aplicar los pesos del adaptador para funcionar. Dada la falta de documentación, su relevancia actual es incierta y cualquier uso en producción debería ir precedido de una evaluación exhaustiva.
 
@@ -43,7 +43,7 @@ Al ser un adaptador LoRA, los requisitos de hardware son los del modelo base Lla
 
 - VRAM estimada para inferencia: aproximadamente 16 GB en fp16, ~8 GB en cuantización de 4 bits (con técnicas como GPTQ o AWQ).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) o superior para fp16; GPUs con 8-12 GB pueden funcionar con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Transformers con PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Transformers con PEFT.
 - Latencia y throughput: no disponible para este adaptador específico; dependerá del hardware y la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -60,5 +60,5 @@ No se dispone de información sobre adaptadores LoRA comparables para Llama-3.1-
 
 ## Enlaces
 
-- [HuggingFace: Jordine/patina3-pungent_sft_s2](https://huggingface.co/Jordine/patina3-pungent_sft_s2)
+- [Hugging Face: Jordine/patina3-pungent_sft_s2](https://huggingface.co/Jordine/patina3-pungent_sft_s2)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

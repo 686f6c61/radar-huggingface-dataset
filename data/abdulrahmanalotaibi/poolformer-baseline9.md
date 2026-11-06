@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abdulrahmanalotaibi/poolformer-baseline9` es un repositorio experimental publicado por el usuario abdulrahmanalotaibi en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales, sino de un esqueleto de implementación de una arquitectura Poolformer a escala "nano", acompañado de un fichero `model.safetensors` que el propio autor describe como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio incluye `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`abdulrahmanalotaibi/poolformer-baseline9` es un repositorio experimental publicado por el usuario abdulrahmanalotaibi en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales, sino de un esqueleto de implementación de una arquitectura Poolformer a escala "nano", acompañado de un fichero `model.safetensors` que el propio autor describe como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*). El repositorio incluye `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 El modelo declara 16.576 parámetros totales según el fichero safetensors, una cifra extremadamente reducida que confirma su carácter de andamiaje para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La etiqueta `generation` aparece en los metadatos, pero la model card no documenta ninguna capacidad de generación verificada, ni resultados de evaluación, ni idiomas soportados.
 
@@ -77,13 +77,13 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según declara el propio autor.
 - No se han publicado puntuaciones de benchmark ni métricas de tarea, y el autor pide explícitamente no presentar los valores por defecto como resultados.
 - Los valores de `training_args.json` son puntos de partida del script, no evidencia de una ejecución completada.
-- Al ser una implementación personalizada, no se carga con las APIs genéricas de HuggingFace sin un adaptador previo.
+- Al ser una implementación personalizada, no se carga con las APIs genéricas de Hugging Face sin un adaptador previo.
 - No hay información sobre sesgos, riesgo de alucinación, limitaciones de contexto o cobertura idiomática, ya que no existen capacidades documentadas.
 - Licencia BSD-3-Clause: permite uso comercial siempre que se conserve el aviso de copyright y la cláusula de exención de responsabilidad, y prohíbe usar el nombre del autor o del proyecto para respaldar productos derivados. El autor recomienda revisar por separado los términos de los datos de origen cuando se combine con datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto de este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdulrahmanalotaibi/poolformer-baseline9
+- Hugging Face: https://huggingface.co/abdulrahmanalotaibi/poolformer-baseline9
 - Ficheros del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Otros enlaces (papers, blogs, repos, demos): no disponible. La búsqueda web asociada no devolvió resultados relacionados con el modelo; los enlaces recuperados versaban sobre la danza can-can y no guardan relación con este repositorio.

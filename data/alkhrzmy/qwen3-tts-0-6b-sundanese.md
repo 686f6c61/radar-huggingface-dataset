@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con aproximadamente 906M parámetros en precisión FP16, el modelo requiere alrededor de 1,8 GB de VRAM solo para los pesos. Con overhead de activaciones y el decodificador de audio, se estima un consumo total de 3-4 GB en FP16.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16. Tarjetas como NVIDIA GTX 1650/1660, RTX 3050, RTX 3060 o superiores son suficientes. Para cuantización INT8 o INT4, el requisito baja a 2-3 GB, permitiendo ejecución en GPUs más modestas.
 - En CPU: es posible ejecutar el modelo en CPU con cuantización, aunque la latencia será significativamente mayor (del orden de segundos por frase corta).
-- Opciones de despliegue: el modelo se integra mediante la librería `qwen_tts` de HuggingFace. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, que son herramientas orientadas a modelos de lenguaje, no a TTS.
+- Opciones de despliegue: el modelo se integra mediante la librería `qwen_tts` de Hugging Face. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, que son herramientas orientadas a modelos de lenguaje, no a TTS.
 - Latencia y throughput: no se proporcionan datos de latencia en la información disponible. Como referencia, modelos TTS de tamaño similar suelen generar audio más rápido que el tiempo real en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: alkhrzmy/qwen3-tts-0.6b-sundanese](https://huggingface.co/alkhrzmy/qwen3-tts-0.6b-sundanese)
+- [Hugging Face: alkhrzmy/qwen3-tts-0.6b-sundanese](https://huggingface.co/alkhrzmy/qwen3-tts-0.6b-sundanese)
 - [Modelo base: Qwen/Qwen3-TTS-12Hz-0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
 - [Dataset OpenSLR SLR44](https://openslr.trmal.net/resources/44/)
 - [Paper de referencia del dataset (SLTU 2018)](http://dx.doi.org/10.21437/SLTU.2018-14)

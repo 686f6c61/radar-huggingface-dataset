@@ -72,7 +72,7 @@ No se dispone de datos comparativos especificos para esta version abliterated. C
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF
 - Modelo base abliterated: https://huggingface.co/3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated
 - Pagina oficial de Gemma 4 12B: https://gemmai4.com/gemma4-12b/
 - Guia de instalacion local (Ollama, GGUF, QAT): https://aitoolsradar.org/blog/models/gemma-4-12b-local-setup-guide-2026/

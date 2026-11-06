@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`karun2026/distilbert-intel-arc-sentiment` es un checkpoint de tipo encoder para clasificación de texto publicado en HuggingFace Hub por el usuario karun2026. Por su nombre y por la etiqueta de pipeline (`text-classification`), el modelo parece ser un ajuste fino de DistilBERT orientado a análisis de sentimiento, presumiblemente sobre un dominio relacionado con Intel Arc, aunque la model card no confirma ni el dominio ni las etiquetas de salida. El repositorio tiene un tamaño de 0,3 GB y contiene 66.955.010 parámetros, un recuento que coincide exactamente con la configuración estándar de DistilBERT-base (6 capas, 768 dimensiones ocultas, 12 cabezas de atención).
+`karun2026/distilbert-intel-arc-sentiment` es un checkpoint de tipo encoder para clasificación de texto publicado en Hugging Face Hub por el usuario karun2026. Por su nombre y por la etiqueta de pipeline (`text-classification`), el modelo parece ser un ajuste fino de DistilBERT orientado a análisis de sentimiento, presumiblemente sobre un dominio relacionado con Intel Arc, aunque la model card no confirma ni el dominio ni las etiquetas de salida. El repositorio tiene un tamaño de 0,3 GB y contiene 66.955.010 parámetros, un recuento que coincide exactamente con la configuración estándar de DistilBERT-base (6 capas, 768 dimensiones ocultas, 12 cabezas de atención).
 
 El interés práctico del modelo es el habitual de un encoder pequeño: clasificación de sentimiento o polaridad a bajo coste computacional, con posibilidad de ejecución en CPU y de integración en pipelines de procesamiento masivo de reseñas, tickets o menciones en redes sociales. Frente a los LLM generativos, un clasificador de 67 millones de parámetros ofrece latencias muy inferiores y un coste por inferencia mínimo, a cambio de una capacidad limitada a la tarea para la que fue ajustado.
 
-Ahora bien, la información publicada es mínima: la model card es la plantilla automática de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, métricas de evaluación ni el checkpoint base exacto. Con 16 descargas y 0 likes en el momento de la consulta, se trata de un modelo sin validación comunitaria, por lo que cualquier uso en producción exige una evaluación propia previa.
+Ahora bien, la información publicada es mínima: la model card es la plantilla automática de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, métricas de evaluación ni el checkpoint base exacto. Con 16 descargas y 0 likes en el momento de la consulta, se trata de un modelo sin validación comunitaria, por lo que cualquier uso en producción exige una evaluación propia previa.
 
 ## Especificaciones técnicas
 
@@ -28,9 +28,9 @@ Ahora bien, la información publicada es mínima: la model card es la plantilla 
 
 La arquitectura es un transformer encoder de tipo DistilBERT, la variante destilada de BERT que reduce el número de capas a la mitad (6 en lugar de 12) manteniendo las dimensiones ocultas de 768 y 12 cabezas de atención. El recuento de parámetros del checkpoint (66.955.010) es idéntico al de DistilBERT-base, lo que respalda esta lectura, pero el autor no documenta ni el checkpoint de partida ni si se aplicó poda adicional. Sobre ese encoder se ha añadido una cabeza de clasificación de secuencia, cuyas etiquetas de salida (`id2label`) no se especifican en la información disponible.
 
-No hay ningún dato publicado sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, el número de épocas, la tasa de aprendizaje, la precisión mixta utilizada o si hubo fases de ajuste adicional. Tampoco se documenta ninguna innovación técnica más allá de la destilación propia del checkpoint base. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre cuantificación de emisiones de carbono, citado en la plantilla estándar de model card de HuggingFace, y no a un artículo descriptivo de este modelo concreto.
+No hay ningún dato publicado sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, el número de épocas, la tasa de aprendizaje, la precisión mixta utilizada o si hubo fases de ajuste adicional. Tampoco se documenta ninguna innovación técnica más allá de la destilación propia del checkpoint base. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre cuantificación de emisiones de carbono, citado en la plantilla estándar de model card de Hugging Face, y no a un artículo descriptivo de este modelo concreto.
 
-La etiqueta `text-embeddings-inference` sugiere que el checkpoint es servible con Text Embeddings Inference (TEI) de HuggingFace, y `endpoints_compatible` que es desplegable en Inference Endpoints. Ninguna de las dos cosas aporta información sobre el entrenamiento.
+La etiqueta `text-embeddings-inference` sugiere que el checkpoint es servible con Text Embeddings Inference (TEI) de Hugging Face, y `endpoints_compatible` que es desplegable en Inference Endpoints. Ninguna de las dos cosas aporta información sobre el entrenamiento.
 
 ## Capacidades
 
@@ -64,17 +64,17 @@ Cualquier cifra de rendimiento deberá obtenerse mediante una evaluación propia
 - VRAM estimada para inferencia: por debajo de 1 GB incluyendo activaciones y overhead del runtime, para secuencias de hasta 512 tokens y lotes moderados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. No se requiere A100 ni H100; una GTX 1650, RTX 3050, RTX 4090 o una T4 son más que suficientes, y en la práctica la GPU solo aporta ventaja en escenarios de muy alto throughput.
 - Cabe en GPU de consumo: sí, en cualquier modelo actual, incluso en iGPU y en CPU. La inferencia en CPU con ONNX Runtime es una opción realista para volúmenes pequeños y medios.
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta del repo), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportación a ONNX Runtime, TorchServe o FastAPI con PyTorch. llama.cpp/Ollama no son la vía natural para un encoder de clasificación BERT sin conversión específica.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta del repo), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportación a ONNX Runtime, TorchServe o FastAPI con PyTorch. llama.cpp/Ollama no son la vía natural para un encoder de clasificación BERT sin conversión específica.
 - Latencia y throughput: no se han publicado medidas. Conviene instrumentar el hardware objetivo con lotes reales antes de dimensionar la infraestructura.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karun2026/distilbert-intel-arc-sentiment | 66.955.010 | No disponible (512 en la config. estándar de DistilBERT) | Clasificación de texto / sentimiento | No disponible | HuggingFace Hub, 16 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Clasificación de sentimiento (2 clases) | Apache 2.0 | HuggingFace Hub, ampliamente utilizado |
-| bert-base-uncased | ~110 M | 512 | Encoder base, requiere ajuste fino | Apache 2.0 | HuggingFace Hub |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 514 | Sentimiento en tres clases sobre texto social | No disponible en la ficha original | HuggingFace Hub |
+| karun2026/distilbert-intel-arc-sentiment | 66.955.010 | No disponible (512 en la config. estándar de DistilBERT) | Clasificación de texto / sentimiento | No disponible | Hugging Face Hub, 16 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Clasificación de sentimiento (2 clases) | Apache 2.0 | Hugging Face Hub, ampliamente utilizado |
+| bert-base-uncased | ~110 M | 512 | Encoder base, requiere ajuste fino | Apache 2.0 | Hugging Face Hub |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 514 | Sentimiento en tres clases sobre texto social | No disponible en la ficha original | Hugging Face Hub |
 
 La comparación se limita a parámetros, contexto, licencia y disponibilidad: no existe ningún dato de rendimiento publicado para este checkpoint, de modo que no es posible comparar calidad frente a las alternativas. En igualdad de tamaño, la ventaja competitiva de este modelo solo puede venir de una especialización de dominio que el autor no ha documentado; en ausencia de esa evidencia, los checkpoints de referencia con licencia Apache 2.0 son una opción más segura para producción.
 
@@ -93,7 +93,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad: no
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/karun2026/distilbert-intel-arc-sentiment
+- Modelo en Hugging Face Hub: https://huggingface.co/karun2026/distilbert-intel-arc-sentiment
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de machine learning, referenciada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo y contacto del autor: no disponibles en la información proporcionada.

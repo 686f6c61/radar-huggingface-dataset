@@ -6,7 +6,7 @@ LFM2-2.6B-Longevity-8bit-mlx es una conversión nativa a MLX del modelo LiquidAI
 
 El modelo tiene 2.569.272.320 parámetros (2,57 B) y una arquitectura híbrida de la familia lfm2: 30 capas, de las cuales solo 8 son de atención con grouped-query attention (32 cabezas de consulta, 8 de clave/valor) y 22 son convoluciones cortas con compuertas. El tamaño oculto es 2048 y la anchura del feed-forward es 10.752. El contexto declarado en la tarjeta original es de 32.768 tokens, aunque `max_position_embeddings` llega a 128.000. El vocabulario es de 65.536 entradas con embeddings de entrada y salida atados.
 
-Su relevancia práctica es doble: por un lado, aplica un modelo compacto y especializado a un nicho con poca oferta de modelos abiertos, como es la biología del envejecimiento; por otro, esta versión concreta está pensada para ejecución local en Apple Silicon, con un peso de 2,54 GiB que reduce en 1,9 veces el BF16 original (4,79 GiB) manteniendo los mismos parámetros. La licencia es la LFM Open License v1.0, etiquetada como "other" en HuggingFace.
+Su relevancia práctica es doble: por un lado, aplica un modelo compacto y especializado a un nicho con poca oferta de modelos abiertos, como es la biología del envejecimiento; por otro, esta versión concreta está pensada para ejecución local en Apple Silicon, con un peso de 2,54 GiB que reduce en 1,9 veces el BF16 original (4,79 GiB) manteniendo los mismos parámetros. La licencia es la LFM Open License v1.0, etiquetada como "other" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -102,7 +102,7 @@ Para alternativas de otros desarrolladores en el nicho de modelos biomédicos, n
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-8bit-mlx
+- Repositorio Hugging Face (este modelo): https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-8bit-mlx
 - Versión de 4 bits del mismo autor: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-4bit-mlx
 - Modelo original en PyTorch BF16: https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
 - Modelo base generalista: https://huggingface.co/LiquidAI/LFM2-2.6B

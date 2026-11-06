@@ -2,7 +2,7 @@
 
 ## Resumen
 
-joshycodes/fd-gemma-4-12b-swap_none es un modelo de lenguaje publicado en HuggingFace por el usuario joshycodes, con 11.959.730.224 parametros (aproximadamente 12B) almacenados en safetensors y un repositorio de 24,0 GB. La etiqueta `gemma4_unified` y el nombre indican que se trata de un derivado o ajuste de la familia Gemma 4 de Google DeepMind, concretamente sobre la variante de 12B. No se dispone de model card, por lo que se desconoce si es un fine-tuning, una destilacion, un modelo de investigacion sobre propiedades internas (valence steering, trust) o un experimento de intercambio de componentes, tal como sugiere el sufijo `swap_none`.
+joshycodes/fd-gemma-4-12b-swap_none es un modelo de lenguaje publicado en Hugging Face por el usuario joshycodes, con 11.959.730.224 parametros (aproximadamente 12B) almacenados en safetensors y un repositorio de 24,0 GB. La etiqueta `gemma4_unified` y el nombre indican que se trata de un derivado o ajuste de la familia Gemma 4 de Google DeepMind, concretamente sobre la variante de 12B. No se dispone de model card, por lo que se desconoce si es un fine-tuning, una destilacion, un modelo de investigacion sobre propiedades internas (valence steering, trust) o un experimento de intercambio de componentes, tal como sugiere el sufijo `swap_none`.
 
 El modelo es relevante ahora porque forma parte de una serie de publicaciones del mismo autor (fd-gemma-4-12b-trust, gemma-4-12B-it-valence-steering-distilled-plus3-lora) que parecen explorar tecnicas de ajuste y analisis sobre Gemma 4, un modelo abierto de Google basado en la investigacion de Gemini. La relevancia practica es limitada por el momento: solo 12 descargas acumuladas, 0 likes, sin licencia declarada y sin datos de rendimiento publicados.
 
@@ -66,9 +66,9 @@ Las cifras de VRAM son estimaciones basadas en el numero de parametros (11,96B),
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/fd-gemma-4-12b-swap_none | ~12B | no disponible | no disponible | HuggingFace, 12 descargas | Objeto de esta ficha; sin model card |
-| joshycodes/fd-gemma-4-12b-trust | 12B | no disponible | no disponible | HuggingFace | Mismo autor, misma familia, sin model card |
-| joshycodes/gemma-4-12B-it-valence-steering-distilled-plus3-lora | no disponible | no disponible | no disponible | HuggingFace | Mismo autor; adaptador LoRA sobre Gemma 4 12B-it |
+| joshycodes/fd-gemma-4-12b-swap_none | ~12B | no disponible | no disponible | Hugging Face, 12 descargas | Objeto de esta ficha; sin model card |
+| joshycodes/fd-gemma-4-12b-trust | 12B | no disponible | no disponible | Hugging Face | Mismo autor, misma familia, sin model card |
+| joshycodes/gemma-4-12B-it-valence-steering-distilled-plus3-lora | no disponible | no disponible | no disponible | Hugging Face | Mismo autor; adaptador LoRA sobre Gemma 4 12B-it |
 
 No se dispone de datos de rendimiento para ninguna de las variantes, por lo que la comparacion se limita a parametros, formato y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para ninguna de las variantes, por lo que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/fd-gemma-4-12b-swap_none
+- Hugging Face: https://huggingface.co/joshycodes/fd-gemma-4-12b-swap_none
 - Variante relacionada (mismo autor): https://huggingface.co/joshycodes/fd-gemma-4-12b-trust
 - Variante relacionada (mismo autor): https://huggingface.co/joshycodes/gemma-4-12B-it-valence-steering-distilled-plus3-lora
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

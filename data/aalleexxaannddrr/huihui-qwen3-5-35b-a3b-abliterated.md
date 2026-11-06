@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.5-35B-A3B-abliterated es una variante "abliterated" (sin rechazos) del modelo multimodal Qwen3.5-35B-A3B de Alibaba Qwen, publicada por el usuario AAlleexxaannddrr en HuggingFace. El modelo base es un transformer de tipo mixture-of-experts (MoE) con arquitectura `qwen3_5_moe`, orientado a tareas image-text-to-text, es decir, acepta tanto texto como imagenes como entrada y genera texto. Cuenta con 35.951.822.704 parametros totales segun los pesos en safetensors y un tamano de repositorio de 71,9 GB, lo que sugiere pesos en precision alta (probablemente bf16).
+Huihui-Qwen3.5-35B-A3B-abliterated es una variante "abliterated" (sin rechazos) del modelo multimodal Qwen3.5-35B-A3B de Alibaba Qwen, publicada por el usuario AAlleexxaannddrr en Hugging Face. El modelo base es un transformer de tipo mixture-of-experts (MoE) con arquitectura `qwen3_5_moe`, orientado a tareas image-text-to-text, es decir, acepta tanto texto como imagenes como entrada y genera texto. Cuenta con 35.951.822.704 parametros totales segun los pesos en safetensors y un tamano de repositorio de 71,9 GB, lo que sugiere pesos en precision alta (probablemente bf16).
 
 La particularidad de esta version es el proceso de abliteration, una tecnica que elimina las direcciones de activacion asociadas a los rechazos del modelo alineado, de modo que el modelo deja de negarse a responder ante ciertas peticiones. El autor original de la tecnica aplicada es huihui-ai (la model card referencia `huihui-ai/Huihui-Qwen3.5-35B-A3B-abliterated`), y esta publicacion de AAlleexxaannddrr parece una redistribucion o adaptacion del mismo. Es relevante para investigadores que necesitan estudiar el comportamiento de modelos sin filtros de seguridad, evaluar sesgos o experimentar con alineacion, pero no es adecuado para produccion publica sin salvaguardas adicionales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AAlleexxaannddrr/Huihui-Qwen3.5-35B-A3B-abliterated
+- Hugging Face: https://huggingface.co/AAlleexxaannddrr/Huihui-Qwen3.5-35B-A3B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Version abliterated original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-35B-A3B-abliterated
 - Repositorio de la tecnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

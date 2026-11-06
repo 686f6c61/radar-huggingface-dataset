@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yulee7566/self-supervised-reading` es un repositorio alojado en HuggingFace por el usuario `yulee7566` que, segun su propia model card, contiene una nota de investigacion ("research note") sobre aprendizaje autosupervisado. No se presenta como un modelo entrenado ni como una release de pesos: la model card indica explicitamente que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`yulee7566/self-supervised-reading` es un repositorio alojado en Hugging Face por el usuario `yulee7566` que, segun su propia model card, contiene una nota de investigacion ("research note") sobre aprendizaje autosupervisado. No se presenta como un modelo entrenado ni como una release de pesos: la model card indica explicitamente que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye un fichero en formato safetensors cuyo indice declara 49.600 parametros totales, un volumen que corresponde a un tensor de pruebas o a un artefacto auxiliar mas que a un modelo de lenguaje utilizable. Las etiquetas del repositorio (`transformer`, `self-supervised`, `research-notes`, `region:us`) describen el tema de la nota, no una arquitectura verificada con documentacion tecnica.
 
-Su relevancia actual es limitada como modelo: con 0 descargas y 0 likes, un tamano de repositorio de 0,0 GB y sin pipeline declarado, no existe evidencia publica de entrenamiento, evaluacion ni uso. Resulta util, en todo caso, como ejemplo de repositorio de notas de investigacion con licencia CC-BY-4.0, y como recordatorio de que la etiqueta `transformer` en HuggingFace no implica que el artefacto sea un modelo funcional.
+Su relevancia actual es limitada como modelo: con 0 descargas y 0 likes, un tamano de repositorio de 0,0 GB y sin pipeline declarado, no existe evidencia publica de entrenamiento, evaluacion ni uso. Resulta util, en todo caso, como ejemplo de repositorio de notas de investigacion con licencia CC-BY-4.0, y como recordatorio de que la etiqueta `transformer` en Hugging Face no implica que el artefacto sea un modelo funcional.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ Respecto al entrenamiento, la model card es explicita: no se reclama ningun chec
 - Revision bibliografica sobre aprendizaje autosupervisado: la nota puede servir como punto de partida para localizar referencias y conjuntos de datos propuestos, siempre verificando cada cita en su fuente original.
 - Plantilla de diseno experimental: la estructura declarada (motivacion, trabajo relacionado, hipotesis falsable, plan de evaluacion) puede reutilizarse como esqueleto para redactar protocolos de investigacion reproducibles.
 - Ejemplo didactico de model card honesta: el texto distingue de forma explicita entre planes y resultados, lo que resulta util como referencia para documentar repositorios que aun no contienen experimentos.
-- Auditoria de repositorios en HuggingFace: sirve como caso de estudio de artefactos etiquetados como `transformer` que en realidad no contienen un modelo funcional, un escenario relevante al automatizar la catalogacion de modelos.
+- Auditoria de repositorios en Hugging Face: sirve como caso de estudio de artefactos etiquetados como `transformer` que en realidad no contienen un modelo funcional, un escenario relevante al automatizar la catalogacion de modelos.
 - Pruebas de tooling de safetensors: el fichero de 49.600 parametros puede emplearse para validar lectores de cabeceras, verificacion de indices y flujos de carga ligeros sin consumir recursos apreciables.
 - Revision de licencias: el uso de CC-BY-4.0 permite estudiar como se articula la atribucion cuando el repositorio se combina con conjuntos de datos externos cuyos terminos son independientes.
 
@@ -80,5 +80,5 @@ No disponible. No se identifican modelos comparables porque el repositorio no de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yulee7566/self-supervised-reading
+- Repositorio en Hugging Face: https://huggingface.co/yulee7566/self-supervised-reading
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este repositorio en la busqueda web realizada. Los unicos resultados obtenidos corresponden a servicios de traduccion sin relacion con el modelo.

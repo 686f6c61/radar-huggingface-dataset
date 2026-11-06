@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Rendimiento GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sakp7/qwen2.5-7b-gsm8k-qlora (adaptador sobre 0.5B) | 0.5B + LoRA | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0.5B | 32K | no disponible (bajo, tipico de modelos <1B) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | ~84 (según reporte oficial de Qwen) | Apache 2.0 | HuggingFace |
+| sakp7/qwen2.5-7b-gsm8k-qlora (adaptador sobre 0.5B) | 0.5B + LoRA | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0.5B | 32K | no disponible (bajo, tipico de modelos <1B) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | ~84 (según reporte oficial de Qwen) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del adaptador, por lo que la comparativa se basa en las características del modelo base. El adaptador añade la capacidad de resolver problemas de GSM8K, pero el modelo base de 0.5B tiene límites claros en tareas complejas de razonamiento.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sakp7/qwen2.5-7b-gsm8k-qlora
+- Modelo en Hugging Face: https://huggingface.co/sakp7/qwen2.5-7b-gsm8k-qlora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentación de Qwen2.5 (Alibaba): https://qwenlm.github.io/blog/qwen2.5/
 - Qwen2.5 en Ollama (referencia de contexto y tokens): https://ollama.com/library/qwen2.5:7b

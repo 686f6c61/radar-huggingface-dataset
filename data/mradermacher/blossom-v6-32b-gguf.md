@@ -31,7 +31,7 @@ El entrenamiento se realizó mediante fine-tuning supervisado (SFT) en dos etapa
 
 - Generación de texto conversacional multi-turno en chino e inglés.
 - Razonamiento e instrucciones generales, derivado del fine-tuning SFT en dos etapas.
-- Soporte de conversación estructurada (etiqueta `conversational` en HuggingFace).
+- Soporte de conversación estructurada (etiqueta `conversational` en Hugging Face).
 - Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere integración con infraestructuras de inferencia tipo TGI o similares.
 - Capacidades multilingües limitadas a chino e inglés según la model card.
 - No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Blossom-V6-32B (este) | 32,7B | no disponible | Apache 2.0 | GGUF | HuggingFace (mradermacher) |
-| Modelo base Azure99/Blossom-V6-32B | 32,7B | no disponible | Apache 2.0 | safetensors | HuggingFace (Azure99) |
+| Blossom-V6-32B (este) | 32,7B | no disponible | Apache 2.0 | GGUF | Hugging Face (mradermacher) |
+| Modelo base Azure99/Blossom-V6-32B | 32,7B | no disponible | Apache 2.0 | safetensors | Hugging Face (Azure99) |
 | Alternativas de 32B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (32B conversacionales en chino/inglés) en la documentación proporcionada. Se recomienda consultar el repositorio del modelo base para obtener detalles sobre la arquitectura y posibles comparaciones publicadas por el autor original.

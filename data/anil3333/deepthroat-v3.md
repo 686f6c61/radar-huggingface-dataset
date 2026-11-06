@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deepthroat-v3 es un adaptador LoRA publicado por el usuario Anil3333 en HuggingFace bajo el identificador `Anil3333/Deepthroat-v3`. Segun los metadatos del repositorio, se trata de un adaptador para generacion de imagenes a partir de texto (pipeline `text-to-image`), etiquetado con `lora`, `diffusers` y la plantilla `template:diffusion-lora`. El repositorio tiene un tamano de 0,3 GB y registra 0 descargas y 0 likes en el momento de la consulta.
+Deepthroat-v3 es un adaptador LoRA publicado por el usuario Anil3333 en Hugging Face bajo el identificador `Anil3333/Deepthroat-v3`. Segun los metadatos del repositorio, se trata de un adaptador para generacion de imagenes a partir de texto (pipeline `text-to-image`), etiquetado con `lora`, `diffusers` y la plantilla `template:diffusion-lora`. El repositorio tiene un tamano de 0,3 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a una seccion de descarga de ficheros, sin documentacion sobre el dataset de entrenamiento, los hiperparametros, la resolucion objetivo ni el modelo base real. El campo `base_model` apunta a `Cockdaddyfuck/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive`, un identificador que no es verificable con la informacion proporcionada y que, por nomenclatura, corresponde a un modelo de lenguaje y no a un modelo de difusion, lo que supone una inconsistencia de metadatos relevante.
 
@@ -79,7 +79,7 @@ No se pueden establecer comparaciones fiables: se desconoce el modelo base, el c
 | Contexto / resolucion objetivo | no disponible | no disponible |
 | Rendimiento (FID, CLIP, evaluacion cualitativa) | no publicado | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face con 0 descargas | no disponible |
 | Documentacion | Practicamente inexistente | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se pueden establecer comparaciones fiables: se desconoce el modelo base, el c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anil3333/Deepthroat-v3
+- Repositorio en Hugging Face: https://huggingface.co/Anil3333/Deepthroat-v3
 - Pestana de ficheros y versiones: https://huggingface.co/Anil3333/Deepthroat-v3/tree/main
 - Modelo base declarado (no verificado): https://huggingface.co/Cockdaddyfuck/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive
 - Documentacion de adaptadores LoRA en diffusers: https://huggingface.co/docs/diffusers/training/lora

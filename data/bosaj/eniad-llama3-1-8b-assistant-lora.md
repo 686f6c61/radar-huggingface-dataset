@@ -75,9 +75,9 @@ No existen resultados comparables publicados en la misma tarea (Academic Institu
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| eniad-llama3.1-8b-assistant-lora | 8,03 mil millones (base) + ~42 millones (adaptador) | 128k | Apache-2.0 en el adaptador; Llama 3.1 Community License en la base | LoRA r=16 de dominio institucional, fr/en | HuggingFace, 0 descargas en el momento de la consulta |
+| eniad-llama3.1-8b-assistant-lora | 8,03 mil millones (base) + ~42 millones (adaptador) | 128k | Apache-2.0 en el adaptador; Llama 3.1 Community License en la base | LoRA r=16 de dominio institucional, fr/en | Hugging Face, 0 descargas en el momento de la consulta |
 | meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 mil millones | 128k | Llama 3.1 Community License | Modelo generalista alineado por instrucciones, multilingue | Ampliamente disponible |
-| ahmed-ouka/my-llama3.1-8B-with-lora-Eniad-Assistant | 8,03 mil millones (base) + adaptador | 128k | No disponible | Adaptador ENIAD del mismo equipo, referenciado en el codigo de ejemplo | HuggingFace |
+| ahmed-ouka/my-llama3.1-8B-with-lora-Eniad-Assistant | 8,03 mil millones (base) + adaptador | 128k | No disponible | Adaptador ENIAD del mismo equipo, referenciado en el codigo de ejemplo | Hugging Face |
 | Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32k | Apache-2.0 | Modelo generalista de 7B, alternativa con licencia permisiva | Ampliamente disponible |
 
 Frente a Mistral 7B Instruct, la ventaja es la licencia Apache-2.0 del adaptador y el contexto de 128k, pero la base de Meta impone condiciones adicionales. Frente a Llama 3.1 8B Instruct sin ajustar, la ventaja esperada es el vocabulario institucional y el tono academico; el coste es un posible estrechamiento del comportamiento fuera del dominio. No hay datos de rendimiento que permitan afirmar cual de las dos variantes ENIAD es mejor.
@@ -89,7 +89,7 @@ Frente a Mistral 7B Instruct, la ventaja es la licencia Apache-2.0 del adaptador
 - Idiomas declarados limitados a frances e ingles. Aunque la base es multilingue, el adaptador no ha sido entrenado en arabe ni en espanol, idiomas relevantes en el contexto marroqui.
 - Licencia: el adaptador se declara Apache-2.0, pero al depender de pesos de Meta, el uso comercial esta sujeto a la Llama 3.1 Community License, incluidos sus requisitos de atribucion y las restricciones de la clausula de licencia aceptable. No se puede asumir uso comercial libre solo por la etiqueta Apache-2.0 del repositorio.
 - Metadatos inconsistentes: el ejemplo de inferencia de la propia model card carga el adaptador `ahmed-ouka/my-llama3.1-8B-with-lora-Eniad-Assistant` en lugar del repositorio descrito, lo que puede provocar que un usuario crea estar usando este checkpoint cuando en realidad carga otro.
-- Fechas de publicacion contradictorias: la model card data el proyecto en mayo de 2025, mientras que los metadatos de HuggingFace indican creacion en septiembre de 2026. Conviene verificar la version efectiva del adaptador antes de desplegarlo.
+- Fechas de publicacion contradictorias: la model card data el proyecto en mayo de 2025, mientras que los metadatos de Hugging Face indican creacion en septiembre de 2026. Conviene verificar la version efectiva del adaptador antes de desplegarlo.
 - Documentacion incompleta: la tabla de hiperparametros esta truncada en la model card. No se publican numero de epochs, learning rate, scheduler, tamano de secuencia ni composicion y tamano del dataset de entrenamiento, lo que dificulta la reproducibilidad.
 - Benchmarks no verificados: las metricas ROUGE las declara el autor y no han sido replicadas por terceros. Ademas, ROUGE no mide correccion factual.
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en produccion ni de validacion por parte de la comunidad.
@@ -97,7 +97,7 @@ Frente a Mistral 7B Instruct, la ventaja es la licencia Apache-2.0 del adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bosaj/eniad-llama3.1-8b-assistant-lora
+- Modelo en Hugging Face: https://huggingface.co/bosaj/eniad-llama3.1-8b-assistant-lora
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Checkpoint original del equipo (mayo de 2025): https://huggingface.co/ahmed-ouka/my-llama3.1-8B-with-lora-Eniad-Assistant
 - Dataset de instrucciones bilingue: https://huggingface.co/datasets/bosaj/eniad-assistant-instruct-dataset

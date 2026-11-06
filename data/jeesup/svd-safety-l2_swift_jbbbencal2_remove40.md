@@ -102,7 +102,7 @@ Los valores de la comparativa para los modelos de Meta corresponden a caracteris
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbbencal2_remove40
+- Hugging Face del modelo: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbbencal2_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/ (los ficheros `LICENSE.txt` y `USE_POLICY.md` se incluyen en el repositorio)
 - Metodologia SVD-LLM: citada por el autor como base del metodo de compresion, sin enlace en la model card ni en los resultados de busqueda disponibles

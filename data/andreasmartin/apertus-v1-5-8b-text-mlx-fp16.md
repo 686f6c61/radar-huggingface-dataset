@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: un modelo de 8B parámetros en FP16 ocupa aproximadamente 16 GB de memoria. Con overhead de activaciones y cache, se recomienda al menos 20 GB de VRAM.
 - GPU recomendadas: en hardware Apple, cualquier chip con al menos 32 GB de memoria unificada (M1 Pro/Max, M2 Pro/Max, M3 Pro/Max o superiores) puede ejecutar el modelo cómodamente. En GPUs NVIDIA, se requiere una RTX 4090 (24 GB) o una A100/H100 para mayor margen.
 - En consumer GPU: sí, cabe en una RTX 4090 o similar con 24 GB de VRAM, aunque el contexto máximo puede requerir más memoria según la longitud de la secuencia.
-- Opciones de despliegue: `mlx-lm` para Apple Silicon; también se puede convertir a GGUF para `llama.cpp` u Ollama, o usar vLLM/TGI si se convierte a formato estándar de HuggingFace.
+- Opciones de despliegue: `mlx-lm` para Apple Silicon; también se puede convertir a GGUF para `llama.cpp` u Ollama, o usar vLLM/TGI si se convierte a formato estándar de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo convertido: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-fp16
+- Repositorio Hugging Face del modelo convertido: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text-mlx-fp16
 - Modelo base (texto): https://huggingface.co/andreasmartin/apertus-v1.5-8b-text
 - Modelo original de Swiss AI: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Artículo de Apertus AI sobre la versión 1.5: https://apertus-ai.org/articles/2026-07-apertus-1-5/

@@ -6,7 +6,7 @@
 
 El interés técnico del artefacto está en su formato: se trata de un conjunto de pesos de bajo rango que modifica un modelo de gran tamano sin reentrenarlo por completo, lo que permite distribuir la especialización en menos de 1 GB en lugar de decenas de gigabytes. El nombre del repositorio sugiere un entrenamiento de 2 épocas sobre un conjunto de datos completo ("fullset") en un entorno de clúster, dentro de una serie de releases (rel34), pero esta lectura procede únicamente de la convención de nombres y no está confirmada en la documentación.
 
-La limitación principal es de trazabilidad: la model card es la plantilla genérica de HuggingFace y todos los campos sustantivos aparecen como "[More Information Needed]". No se declaran hiperparámetros LoRA (rango, alpha, módulos objetivo), datos de entrenamiento, licencia, idiomas ni evaluación. Por tanto, esta ficha documenta con rigor lo que se puede afirmar y marca explícitamente como "no disponible" todo lo demás; cualquier uso en producción exige auditar el adaptador y el modelo base por separado.
+La limitación principal es de trazabilidad: la model card es la plantilla genérica de Hugging Face y todos los campos sustantivos aparecen como "[More Information Needed]". No se declaran hiperparámetros LoRA (rango, alpha, módulos objetivo), datos de entrenamiento, licencia, idiomas ni evaluación. Por tanto, esta ficha documenta con rigor lo que se puede afirmar y marca explícitamente como "no disponible" todo lo demás; cualquier uso en producción exige auditar el adaptador y el modelo base por separado.
 
 ## Especificaciones técnicas
 
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada adaptadores públicos co
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_2_epoch
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_2_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Referencia citada en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la model card: https://mlco2.github.io/impact#compute

@@ -90,7 +90,7 @@ No se han encontrado alternativas comerciales o academicas con datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaq2/chashibhai-brassica-disease-cls
+- Modelo en Hugging Face: https://huggingface.co/Shaq2/chashibhai-brassica-disease-cls
 - Coleccion de clasificadores ChashiBhAI: https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers
 - Repositorio de codigo (GitHub): https://github.com/MRSHAKILS/AI-Powered-Smart-Agriculture-Advisory-Platform-for-Bangladesh
 - Paper relacionado (sistema de asesoramiento KrishokChat, no el clasificador): https://arxiv.org/abs/2606.29243

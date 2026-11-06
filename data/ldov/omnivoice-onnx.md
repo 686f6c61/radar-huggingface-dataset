@@ -6,7 +6,7 @@ OmniVoice-Onnx es una conversión a formato ONNX del modelo de síntesis de voz 
 
 El modelo combina un backbone basado en Qwen3-0.6B (28 capas) con un codec de audio de 8 codebooks (Higgs Audio V2 Tokenizer) y un proceso de decodificación no autorregresivo de 32 pasos basado en unmasking iterativo. La salida es una forma de onda a 24 kHz. El repositorio tiene un tamaño de 5,3 GB e incluye los pesos en formato ONNX, listos para usar con onnxruntime-genai.
 
-Esta ficha se basa exclusivamente en la información disponible en la model card de HuggingFace y en los resultados de búsqueda web proporcionados. No se han encontrado datos adicionales sobre entrenamiento, benchmarks o requisitos de hardware específicos más allá de lo indicado.
+Esta ficha se basa exclusivamente en la información disponible en la model card de Hugging Face y en los resultados de búsqueda web proporcionados. No se han encontrado datos adicionales sobre entrenamiento, benchmarks o requisitos de hardware específicos más allá de lo indicado.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ No disponible. No se han encontrado comparaciones con otros modelos TTS (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/OmniVoice-Onnx
+- Modelo en Hugging Face: https://huggingface.co/ldov/OmniVoice-Onnx
 - Modelo base (k2-fsa/OmniVoice): https://huggingface.co/k2-fsa/OmniVoice
 - Modelo original (Prince-1/OmniVoice): https://huggingface.co/Prince-1/OmniVoice
 - Conversión similar de gluschenko: https://huggingface.co/gluschenko/omnivoice-onnx

@@ -114,7 +114,7 @@ Frente al IQ3_S, este pack gana 0,39 bits por peso de media y reduce la KLD un 2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mugearite/Qwen3.8-Flash-Next-IQ3_S-Q4
+- Repositorio Hugging Face: https://huggingface.co/Mugearite/Qwen3.8-Flash-Next-IQ3_S-Q4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pack de origen GSQ-RCO: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Pack UD-Q4_K_XL de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

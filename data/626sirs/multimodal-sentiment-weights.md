@@ -87,7 +87,7 @@ La comparacion se limita a parametros, contexto, licencia y forma de distribucio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/626sirs/multimodal-sentiment-weights
+- Repositorio en Hugging Face: https://huggingface.co/626sirs/multimodal-sentiment-weights
 - Modelo base fijado: https://huggingface.co/google-bert/bert-base-uncased
 - Descarga de los pesos base en la revision fijada: https://huggingface.co/google-bert/bert-base-uncased/resolve/86b5e0934494bd15c9632b12f734a8a67f723594/model.safetensors
 - Paper, blog, repositorio de codigo o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo; los unicos enlaces recuperados pertenecen a sitios de historia de Francia y no guardan relacion con este repositorio.

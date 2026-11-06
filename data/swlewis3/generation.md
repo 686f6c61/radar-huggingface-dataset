@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swlewis3/generation` es un repositorio de HuggingFace publicado por el usuario swlewis3 que contiene una implementación propia en PyTorch de una arquitectura **Beit** orientada a tareas de **generación**. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un punto de partida compacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida, no como un modelo entrenado.
+`swlewis3/generation` es un repositorio de Hugging Face publicado por el usuario swlewis3 que contiene una implementación propia en PyTorch de una arquitectura **Beit** orientada a tareas de **generación**. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un punto de partida compacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida, no como un modelo entrenado.
 
 El repositorio declara una escala de configuración **huge**, atención de **ventana deslizante**, fusión **bilinear**, activación **gelu** y normalización **rmsnorm**. Sin embargo, el dato real extraído del fichero safetensors indica **24.832 parámetros totales** (vease la tabla de especificaciones), una cifra incompatible con una escala "huge" de un transformer convencional. Esta discrepancia es el punto más relevante de la ficha y debe resolverse antes de cualquier uso serio.
 
@@ -82,10 +82,10 @@ La comparacion es estructural, porque este repositorio no publica rendimiento. L
 
 | Modelo | Arquitectura | Parametros (aprox.) | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| `swlewis3/generation` | Beit custom, atencion sliding window | 24.832 (segun safetensors; escala declarada "huge") | no disponible | MIT | HuggingFace, 0 descargas | ninguno |
-| `microsoft/beit-base-patch16-224` (referencia BEiT original) | Beit base | ~86 M | 224 px de entrada en vision, sin contexto textual | MIT | HuggingFace, ampliamente descargado | metricas de clasificacion e imagen publicadas por Microsoft |
-| BEiT large (referencia BEiT original) | Beit large | ~307 M | idem | MIT | HuggingFace | metricas de clasificacion e imagen publicadas por Microsoft |
-| DiT-XL/2 (familia de transformers para generacion de imagen) | Diffusion Transformer | ~675 M | no aplica en el sentido de contexto textual | licencia propia del repositorio | HuggingFace / GitHub | FID publicado en el paper de DiT |
+| `swlewis3/generation` | Beit custom, atencion sliding window | 24.832 (segun safetensors; escala declarada "huge") | no disponible | MIT | Hugging Face, 0 descargas | ninguno |
+| `microsoft/beit-base-patch16-224` (referencia BEiT original) | Beit base | ~86 M | 224 px de entrada en vision, sin contexto textual | MIT | Hugging Face, ampliamente descargado | metricas de clasificacion e imagen publicadas por Microsoft |
+| BEiT large (referencia BEiT original) | Beit large | ~307 M | idem | MIT | Hugging Face | metricas de clasificacion e imagen publicadas por Microsoft |
+| DiT-XL/2 (familia de transformers para generacion de imagen) | Diffusion Transformer | ~675 M | no aplica en el sentido de contexto textual | licencia propia del repositorio | Hugging Face / GitHub | FID publicado en el paper de DiT |
 
 Diferencias clave frente a las alternativas: el repositorio analizado no es un modelo entrenado, no declara idiomas, no publica contexto, no ofrece variantes cuantizadas y no tiene usuarios registrados, mientras que los BEiT de Microsoft y los DiT si cuentan con checkpoints entrenados, evaluaciones publicadas y adopcion verificable.
 
@@ -105,7 +105,7 @@ Diferencias clave frente a las alternativas: el repositorio analizado no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swlewis3/generation
+- Repositorio en Hugging Face: https://huggingface.co/swlewis3/generation
 - Ficheros del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura BEiT (no citado en el repositorio, se incluye como contexto de la arquitectura): https://arxiv.org/abs/2106.08254
 - Resultados de la busqueda web: ninguno de los enlaces devueltos es especifico de este modelo. Se listan unicamente como contexto generico sobre modelos generativos y no deben usarse como fuente de datos sobre `swlewis3/generation`:

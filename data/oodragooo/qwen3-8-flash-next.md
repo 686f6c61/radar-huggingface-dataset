@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje causal multimodal (texto e imagen) publicado en HuggingFace por el usuario oODragoOo, con licencia etiquetada como `other` y nombre `qwen-community-1.0`. La model card lo presenta como una "preview experimental" de la arquitectura que sustentara Qwen4, y combina atencion híbrida (Gated DeltaNet + Qwen Sparse Attention), Mixture-of-Experts, Gated Residual y un esquema de embeddings de n-gramas. El repositorio ocupa 360 GB y el recuento real de parametros en los ficheros safetensors es de 179.999.981.459 (aproximadamente 180.000 millones), aunque la model card desglosa 125B en el modelo de lenguaje (6B activados), 51B en el modulo de embeddings de n-gramas y 4B en el modulo MTP.
+Qwen3.8-Flash-Next es un modelo de lenguaje causal multimodal (texto e imagen) publicado en Hugging Face por el usuario oODragoOo, con licencia etiquetada como `other` y nombre `qwen-community-1.0`. La model card lo presenta como una "preview experimental" de la arquitectura que sustentara Qwen4, y combina atencion híbrida (Gated DeltaNet + Qwen Sparse Attention), Mixture-of-Experts, Gated Residual y un esquema de embeddings de n-gramas. El repositorio ocupa 360 GB y el recuento real de parametros en los ficheros safetensors es de 179.999.981.459 (aproximadamente 180.000 millones), aunque la model card desglosa 125B en el modelo de lenguaje (6B activados), 51B en el modulo de embeddings de n-gramas y 4B en el modulo MTP.
 
 El interes tecnico del modelo radica en su propuesta de eficiencia: solo 6B parametros se activan por token pese a tener 125B en el LM, la atencion dispersa QSA opera a nivel de micro-bloque en lugar de token a token, y los embeddings de n-gramas (20 millones de entradas) admiten offload a memoria del sistema, lo que facilita escalar parametros en aceleradores con VRAM limitada. Su ventana de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000, lo que lo situa en el segmento de modelos orientados a cargas agénticas y de contexto largo.
 
@@ -20,7 +20,7 @@ Es relevante ahora porque, segun la model card, anticipa decisiones arquitectoni
 | Longitud de contexto | 262.144 tokens nativos, extensible hasta 1.000.000 |
 | Tipos de cuantizacion | No disponible (no se listan cuantizaciones publicadas; el repo solo contiene safetensors) |
 | Idiomas soportados | No disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace; fichero LICENSE en el repositorio) |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face; fichero LICENSE en el repositorio) |
 | Formato de pesos | Safetensors (Transformers) |
 
 Datos adicionales de configuracion: dimension oculta 2560; token embedding 248320 (padded); 48 capas; layout oculto 12 × (3 × (Gated DeltaNet → MoE) → 1 × (Qwen Sparse Attention → MoE)); Gated DeltaNet con 48 cabezas de atencion lineal para V y 16 para QK, dimension de cabeza 128; Qwen Sparse Attention con 24 cabezas Q y 2 KV, dimension de cabeza 256, RoPE de 64 dimensiones, indexer MQA con 4 cabezas de consulta y 1 cabeza de clave compartida, dimension de cabeza del indexer 128 y presupuesto de 512 bloques o 2048 tokens; MoE con 512 expertos, 10 enrutados + 1 compartido activados y dimension intermedia de experto 640; Gated Residual con 4 ramas y rango de cuello de botella 320; salida del LM 248320 (padded); MTP de 1 capa entrenada con multiples pasos.
@@ -74,17 +74,17 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next | ~180B (125B LM con 6B activos + 51B n-gram + 4B MTP) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Repositorio de terceros en HuggingFace, 0 descargas |
-| Qwen3-235B-A22B | 235B / 22B activos | 131.072 nativo, extensible con YaRN | Apache 2.0 | Pesos abiertos en HuggingFace |
-| DeepSeek-V3 | 671B / 37B activos | 128.000 | Licencia propia de DeepSeek | Pesos abiertos en HuggingFace |
-| Llama 4 Maverick | ~400B / 17B activos | hasta 1.000.000 | Llama 4 Community License | Pesos abiertos en HuggingFace |
+| Qwen3.8-Flash-Next | ~180B (125B LM con 6B activos + 51B n-gram + 4B MTP) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Repositorio de terceros en Hugging Face, 0 descargas |
+| Qwen3-235B-A22B | 235B / 22B activos | 131.072 nativo, extensible con YaRN | Apache 2.0 | Pesos abiertos en Hugging Face |
+| DeepSeek-V3 | 671B / 37B activos | 128.000 | Licencia propia de DeepSeek | Pesos abiertos en Hugging Face |
+| Llama 4 Maverick | ~400B / 17B activos | hasta 1.000.000 | Llama 4 Community License | Pesos abiertos en Hugging Face |
 
 Los valores de las filas comparativas corresponden a referencias externas que no forman parte de la informacion proporcionada en esta ficha; verifiquense en las fuentes oficiales antes de usarlos en una decision tecnica.
 
 ## Limitaciones y advertencias
 
 - Procedencia no verificada: el repositorio lo publica el usuario oODragoOo, no una organizacion oficial de Qwen, con 0 descargas y 0 likes, y con fecha de creacion y actualizacion identicas (2026-09-18). La model card afirma que se trata de una release de Qwen, pero esa afirmacion no se puede confirmar con los datos disponibles. Conviene contrastar hashes y pesos con la fuente oficial antes de usarlo en produccion.
-- Licencia ambigua: la etiqueta de HuggingFace es `other` y el nombre declarado es `qwen-community-1.0`. No se dispone del texto de la licencia en la informacion proporcionada, por lo que no se puede confirmar si el uso comercial esta permitido, que obligaciones de atribucion existen ni si hay restricciones por umbral de usuarios o de facturacion.
+- Licencia ambigua: la etiqueta de Hugging Face es `other` y el nombre declarado es `qwen-community-1.0`. No se dispone del texto de la licencia en la informacion proporcionada, por lo que no se puede confirmar si el uso comercial esta permitido, que obligaciones de atribucion existen ni si hay restricciones por umbral de usuarios o de facturacion.
 - Idiomas no documentados: no se especifica la cobertura linguistica ni la calidad por idioma, algo critico si se va a desplegar en castellano u otras lenguas distintas del ingles.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad, veracidad ni tasas de alucinacion. En tareas de contexto muy largo el riesgo aumenta porque el modelo puede atender a informacion distante con menos precision.
 - Benchmarks ausentes: sin cifras de MMLU, HumanEval, GSM8K ni evaluaciones multimodales, no es posible comparar objetivamente su rendimiento con alternativas del mismo segmento.
@@ -95,7 +95,7 @@ Los valores de las filas comparativas corresponden a referencias externas que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oODragoOo/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/oODragoOo/Qwen3.8-Flash-Next
 - Blog post citado en la model card: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico citado en la model card: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Repositorio GitHub citado en la model card: https://github.com/QwenLM/Qwen3.8-Flash-Next

@@ -72,7 +72,7 @@ No se dispone de datos objetivos de rendimiento comparativo entre estos servicio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/exa-instant
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/exa-instant
 - Documentación de la API de Exa: https://docs.exa.ai/reference/search
 - Blog de Exa sobre Exa Instant: https://exa.ai/blog/exa-instant
 - Leaderboard OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

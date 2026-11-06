@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS-IMAGE-1.2 es un adaptador LoRA de rango 12 (~2,4 M de parametros, 9,2 MB) publicado por el usuario Pedro21613 en HuggingFace, pensado para el modelo de difusion `runwayml/stable-diffusion-v1-5` a 512 px. No es un modelo completo, sino un ajuste fino de bajo rango que se carga sobre la UNet del modelo base mediante `peft` y despues se fusiona con `merge_and_unload()`. Su proposito declarado es mejorar la generacion fotorrealista de personas y de una tematica variada, evolucionando una version anterior (v1.1) que solo cubria mascotas.
+PS-IMAGE-1.2 es un adaptador LoRA de rango 12 (~2,4 M de parametros, 9,2 MB) publicado por el usuario Pedro21613 en Hugging Face, pensado para el modelo de difusion `runwayml/stable-diffusion-v1-5` a 512 px. No es un modelo completo, sino un ajuste fino de bajo rango que se carga sobre la UNet del modelo base mediante `peft` y despues se fusiona con `merge_and_unload()`. Su proposito declarado es mejorar la generacion fotorrealista de personas y de una tematica variada, evolucionando una version anterior (v1.1) que solo cubria mascotas.
 
 El entrenamiento se hizo sobre un dataset publico de 3.395 imagenes compuesto por Caltech101 (2.595 imagenes, 101 clases, con peso x2 para rostros y personas, e incluyendo aviones, coches, motos, animales y objetos) y Oxford-IIIT Pet (800 imagenes de gatos y perros). Las clases citadas en la model card son: rostro de persona, mujer sonriendo en un parque, avion sobre una ciudad, coche blanco, Beagle y gato Persa. Los prompts recomendados siguen la plantilla `ultra realistic photo of ..., detailed skin/fur, sharp focus, natural lighting, high quality`.
 
@@ -20,10 +20,10 @@ La relevancia de esta ficha es limitada y conviene ser honesto: el repositorio t
 | Idiomas soportados | No disponible. Los prompts de ejemplo estan en ingles y el text encoder CLIP del modelo base esta entrenado principalmente en ingles |
 | Licencia | No disponible (no declarada en el repositorio ni en la model card) |
 | Formato de pesos | `safetensors` (adaptador LoRA), cargable con `diffusers` + `peft` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (adaptador de 9,2 MB declarado en la model card) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (adaptador de 9,2 MB declarado en la model card) |
 | Resolucion nativa | 512 px (heredada del modelo base SD 1.5) |
 | Pipeline | `text-to-image` |
-| Fecha de creacion / actualizacion | 2026-09-11 (ambas, segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-11 (ambas, segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se identificaron en la informacion disponible adaptadores LoRA publicos direc
 
 | Modelo | Tipo | Parametros | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PS-IMAGE-1.2 (Pedro21613) | LoRA sobre SD 1.5, rank 12 | ~2,4 M en el adaptador | 512 px | No disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
-| runwayml/stable-diffusion-v1-5 | Modelo base de difusion latente | No disponible en la informacion proporcionada (UNet + VAE + text encoder CLIP) | 512 px | CreativeML OpenRAIL-M (la del modelo base, no declarada en este repositorio) | Modelo ampliamente distribuido en HuggingFace |
-| Otros LoRA fotorrealistas de SD 1.5 | Adaptadores LoRA de la comunidad | No disponible | 512 px | Variable segun autor | Ecosistema community en HuggingFace y Civitai |
+| PS-IMAGE-1.2 (Pedro21613) | LoRA sobre SD 1.5, rank 12 | ~2,4 M en el adaptador | 512 px | No disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
+| runwayml/stable-diffusion-v1-5 | Modelo base de difusion latente | No disponible en la informacion proporcionada (UNet + VAE + text encoder CLIP) | 512 px | CreativeML OpenRAIL-M (la del modelo base, no declarada en este repositorio) | Modelo ampliamente distribuido en Hugging Face |
+| Otros LoRA fotorrealistas de SD 1.5 | Adaptadores LoRA de la comunidad | No disponible | 512 px | Variable segun autor | Ecosistema community en Hugging Face y Civitai |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.2
+- Pagina del modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.2
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Dataset Caltech101 (citado como fuente de 2.595 imagenes): no disponible enlace en la model card
 - Dataset Oxford-IIIT Pet (citado como fuente de 800 imagenes): no disponible enlace en la model card

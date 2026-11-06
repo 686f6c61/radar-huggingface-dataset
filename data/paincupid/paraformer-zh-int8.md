@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paraformer-ZH-INT8 es una conversión a ONNX en cuantización INT8 del modelo Paraformer de reconocimiento automático de voz (ASR) en chino, desarrollado originalmente por Alibaba DAMO Academy y publicado a través del proyecto FunASR. Esta versión concreta ha sido producida por csukuangfj para garantizar compatibilidad con el runtime Sherpa, y el repositorio de HuggingFace que nos ocupa es un espejo de respaldo mantenido por el usuario paincupid, que no es el publicador original.
+Paraformer-ZH-INT8 es una conversión a ONNX en cuantización INT8 del modelo Paraformer de reconocimiento automático de voz (ASR) en chino, desarrollado originalmente por Alibaba DAMO Academy y publicado a través del proyecto FunASR. Esta versión concreta ha sido producida por csukuangfj para garantizar compatibilidad con el runtime Sherpa, y el repositorio de Hugging Face que nos ocupa es un espejo de respaldo mantenido por el usuario paincupid, que no es el publicador original.
 
 El modelo resuelve la transcripción de audio en mandarín (zh) mediante una arquitectura no autorregresiva basada en el paradigma Paraformer, que predice la salida completa en paralelo en lugar de token a token, lo que reduce la latencia frente a los sistemas ASR autorregresivos clásicos. La conversión a ONNX con cuantización INT8 facilita el despliegue en entornos de producción con recursos limitados, sin requerir frameworks de deep learning pesados.
 
@@ -81,7 +81,7 @@ La comparación con Whisper y Wav2Vec2 es aproximada, ya que son modelos ASR de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paincupid/Paraformer-ZH-INT8
+- Hugging Face: https://huggingface.co/paincupid/Paraformer-ZH-INT8
 - FunASR (proyecto original): no disponible en la información proporcionada
 - Repositorio Sherpa-ONNX: no disponible en la información proporcionada
 - Paper de Paraformer: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 M), lo que lo sitúa en la categoría de modelos pequeños, aptos para ejecución en CPU o en GPU de consumo. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT, según indica la propia model card.
+El modelo `francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 M), lo que lo sitúa en la categoría de modelos pequeños, aptos para ejecución en CPU o en GPU de consumo. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT, según indica la propia model card.
 
 El nombre del repositorio sigue una convención experimental muy específica (`ppt-mp-struct-100mb` + semilla `seed3407`), lo que sugiere que forma parte de una batería de experimentos académicos sobre recetas de datos, tokenizadores y currículos de entrenamiento, más que de un modelo orientado a producción. De hecho, la ejecución de Weights & Biases enlazada pertenece al proyecto "new-tokenizers" de la Universidad de Groningen, lo que refuerza la hipótesis de un contexto de investigación. El repositorio tiene un tamaño de 0,3 GB y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo es, por tanto, fundamentalmente metodológica: sirv
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), según el tag `gpt2` de HuggingFace; no se detalla la configuración exacta de capas y cabezas |
+| Arquitectura | GPT-2 (transformer decoder-only), según el tag `gpt2` de Hugging Face; no se detalla la configuración exacta de capas y cabezas |
 | Parámetros totales | 124.770.816 (dato real de los pesos en safetensors) |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124.770.816 | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| goldfish-models/nld_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 (variante hermana) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 (variante hermana) | 124,8 M (según LLM Explorer) | no disponible | no disponible | no disponible | HuggingFace; listado en LLM Explorer |
+| francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407 | 124.770.816 | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| goldfish-models/nld_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 (variante hermana) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 (variante hermana) | 124,8 M (según LLM Explorer) | no disponible | no disponible | no disponible | Hugging Face; listado en LLM Explorer |
 
 No se dispone de datos de benchmarks que permitan una comparación de rendimiento entre estas variantes. La comparación posible es estructural (mismo modelo base, distinto corpus o empaquetado de datos y distinta semilla) y no de calidad. Tampoco se dispone de información sobre licencias, lo que impide comparar condiciones de uso comercial.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5d90ej1x
 - Repositorio de TRL: https://github.com/huggingface/trl

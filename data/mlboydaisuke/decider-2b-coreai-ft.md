@@ -12,7 +12,7 @@ Su relevancia es acotada pero concreta: es una mejora medible sobre la v11 en el
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia del modelo base Mapika/decider-2b; el tag de HuggingFace indica `qwen3_5_text`. Misma arquitectura, tokenizer, readout y config que la v11 (solo cambian los pesos) |
+| Arquitectura | Transformer de la familia del modelo base Mapika/decider-2b; el tag de Hugging Face indica `qwen3_5_text`. Misma arquitectura, tokenizer, readout y config que la v11 (solo cambian los pesos) |
 | Parametros totales | 1.881.825.088 (~1,88 mil millones) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ Su relevancia es acotada pero concreta: es una mejora medible sobre la v11 en el
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (bf16); repositorio de 3,8 GB |
 
-Otros datos de la ficha de HuggingFace: pipeline declarado `text-classification`, libreria `transformers`, compatibilidad con endpoints, region `us`, creado el 25/09/2026 y actualizado el mismo dia.
+Otros datos de la ficha de Hugging Face: pipeline declarado `text-classification`, libreria `transformers`, compatibilidad con endpoints, region `us`, creado el 25/09/2026 y actualizado el mismo dia.
 
 ## Arquitectura y entrenamiento
 
@@ -86,8 +86,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | JevBench dificil (111) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (decider-2b-coreai-ft) | 1.881.825.088 | No disponible | 0,6577 | Apache-2.0 | HuggingFace |
-| Mapika/decider-2b v11 (base) | Mismo recuento, segun el autor solo cambian los pesos | No disponible | 0,5586 (remedicion en la misma ejecucion) | Apache-2.0 (segun la model card) | HuggingFace y repositorio Mapika/decider |
+| Este modelo (decider-2b-coreai-ft) | 1.881.825.088 | No disponible | 0,6577 | Apache-2.0 | Hugging Face |
+| Mapika/decider-2b v11 (base) | Mismo recuento, segun el autor solo cambian los pesos | No disponible | 0,5586 (remedicion en la misma ejecucion) | Apache-2.0 (segun la model card) | Hugging Face y repositorio Mapika/decider |
 | Otras alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de otros modelos comparables de la misma categoria (decoders pequenos con readout de decisiones tipadas y salida calibrada). Los clasificadores de texto genericos no son directamente comparables, ya que este modelo no produce etiquetas de texto sino probabilidades derivadas de los logits de las letras.
@@ -103,11 +103,11 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 - Sesgos conocidos: no se documentan sesgos especificos en la informacion disponible. Los datos de entrenamiento fueron generados y verificados por Qwen3.8-27B, por lo que podrian heredar sesgos de ese modelo.
 - Restricciones de licencia: Apache-2.0, sin restricciones adicionales declaradas para uso comercial. Conviene conservar la atribucion a Mapika (checkpoint base, codigo de entrenamiento y codigo de inferencia).
 - Estado de validacion: 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente por parte de la comunidad.
-- Las fechas de creacion y actualizacion del repositorio (25/09/2026) son las que figuran en la ficha de HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio (25/09/2026) son las que figuran en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/decider-2b-coreai-ft
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/decider-2b-coreai-ft
 - Modelo base: https://huggingface.co/Mapika/decider-2b
 - Repositorio de codigo de Mapika (entrenamiento e inferencia, commit `15ab28e`): https://github.com/Mapika/decider
 - JevBench (conjunto de evaluacion): https://github.com/fstandhartinger/jevbench

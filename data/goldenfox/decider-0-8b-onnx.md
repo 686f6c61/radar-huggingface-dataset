@@ -101,7 +101,7 @@ La comparativa con modelos de la misma categoria (clasificadores o selectores de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goldenfox/decider-0.8b-onnx
+- Modelo en Hugging Face: https://huggingface.co/goldenfox/decider-0.8b-onnx
 - Modelo base: https://huggingface.co/Mapika/decider-0.8b
 - Revision del modelo base usada en el export: `a0a01d6f8135298f400a8c856b355793012ae971`
 - Fichero de formato de prompt referenciado: `decider/prompt.py` del modelo base

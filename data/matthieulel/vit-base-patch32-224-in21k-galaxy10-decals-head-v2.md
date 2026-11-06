@@ -1,7 +1,7 @@
 # matthieulel/vit-base-patch32-224-in21k-galaxy10-decals-head-v2
 
 ## Resumen
-El modelo `vit-base-patch32-224-in21k-galaxy10-decals-head-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un Vision Transformer (ViT-Base) preentrenado por Google en ImageNet-21k y adaptado a la clasificación de galaxias en 10 clases sobre el conjunto de datos Galaxy10 DECaLS. La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone permanece congelado y solo se entrena una cabeza lineal de 10 salidas.
+El modelo `vit-base-patch32-224-in21k-galaxy10-decals-head-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un Vision Transformer (ViT-Base) preentrenado por Google en ImageNet-21k y adaptado a la clasificación de galaxias en 10 clases sobre el conjunto de datos Galaxy10 DECaLS. La adaptación se ha realizado mediante *head-only fine-tuning*: el backbone permanece congelado y solo se entrena una cabeza lineal de 10 salidas.
 
 El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su relevancia radica en que sirve como referencia reproducible para evaluar hasta qué punto los modelos fundacionales de visión generalistas transfieren a datos astronómicos con una adaptación mínima.
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-base-patch32-224-in21k-galaxy10-decals-head-v2 (este) | 87,46 M | 224x224 px | 40,42 % (test, semilla 42) | apache-2.0 | HuggingFace |
+| vit-base-patch32-224-in21k-galaxy10-decals-head-v2 (este) | 87,46 M | 224x224 px | 40,42 % (test, semilla 42) | apache-2.0 | Hugging Face |
 | Otros backbones del mismo benchmark (40 configuraciones) | variable | 224x224 px | no disponible en esta ficha | variable | Colección Vision Foundation Models Benchmark |
 | Modelos específicos de morfología galáctica (p. ej. Zoobot, Galaxy Zoo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de resultados numéricos de model
 - Sin datos de cuantización publicados: no hay GGUF ni versiones cuantizadas oficiales, lo que limita el despliegue en entornos de muy bajos recursos sin conversión manual.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch32-224-in21k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch32-224-in21k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch32-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

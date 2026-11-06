@@ -19,7 +19,7 @@ Este modelo es un fine-tune del encoder LFM2.5-Encoder-350M de Liquid AI, especi
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura LFM2 de Liquid AI, un encoder bidireccional de tipo transformer con enmascaramiento (masked language model). El fine-tune se realizó sobre el dataset `rafmacalaba/data-use-mentions` en su configuración `bio`, con 5 épocas, learning rate 2e-5, batch size 16 y precisión bf16. No se han publicado detalles adicionales sobre el entrenamiento, como la composición exacta del dataset o el uso de técnicas de regularización. El modelo requiere código personalizado (`custom_code`) para su carga, según los tags de HuggingFace.
+El modelo se basa en la arquitectura LFM2 de Liquid AI, un encoder bidireccional de tipo transformer con enmascaramiento (masked language model). El fine-tune se realizó sobre el dataset `rafmacalaba/data-use-mentions` en su configuración `bio`, con 5 épocas, learning rate 2e-5, batch size 16 y precisión bf16. No se han publicado detalles adicionales sobre el entrenamiento, como la composición exacta del dataset o el uso de técnicas de regularización. El modelo requiere código personalizado (`custom_code`) para su carga, según los tags de Hugging Face.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de comparaciones directas con otros modelos en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause_smoke
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause_smoke
 - Modelo base LFM2.5-Encoder-350M: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Documentación de Liquid AI sobre LFM2.5-Encoder-350M: https://docs.liquid.ai/lfm/models/lfm25-encoder-350m
 - Blog de Liquid AI sobre retrievers LFM2.5: https://www.liquid.ai/blog/lfm2-5-retrievers

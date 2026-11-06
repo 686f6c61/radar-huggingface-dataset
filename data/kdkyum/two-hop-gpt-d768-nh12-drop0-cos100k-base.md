@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-base` es un artefacto de investigacion publicado en HuggingFace por el usuario `kdkyum`. No es un modelo de proposito general: se trata de un conjunto de nueve ejecuciones de entrenamiento de un GPT de estilo GPT-NeoX, de tamano pequeno (d_model 768, 12 capas, 12 cabezas de 64 dimensiones, MLP ReLU de 85,2 M de parametros), entrenado especificamente para resolver una tarea sintetica de razonamiento relacional de dos saltos ("two-hop") sobre un grafo de nombres y familias.
+El modelo `kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-base` es un artefacto de investigacion publicado en Hugging Face por el usuario `kdkyum`. No es un modelo de proposito general: se trata de un conjunto de nueve ejecuciones de entrenamiento de un GPT de estilo GPT-NeoX, de tamano pequeno (d_model 768, 12 capas, 12 cabezas de 64 dimensiones, MLP ReLU de 85,2 M de parametros), entrenado especificamente para resolver una tarea sintetica de razonamiento relacional de dos saltos ("two-hop") sobre un grafo de nombres y familias.
 
 El corpus de entrenamiento es `c5_m16_N90/base_graph`, con 16 nombres propios y 90 familias, y las muestras son documentos completos de 1.997 tokens perdidos desde un token `<bos>`. El interes del repositorio es metodologico: compara el efecto del weight decay (valores 1, 3 y 5) sobre la precision de dos saltos en un regimen sin dropout y con un schedule coseno de 100.000 pasos, con tres semillas por configuracion. Es, por tanto, material de estudio sobre generalizacion composicional, sobreajuste y estabilidad del entrenamiento, mas que un modelo desplegable en producto.
 
@@ -85,7 +85,7 @@ No hay datos de benchmarks comparables, ya que la metrica publicada (precision d
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| two-hop-gpt-d768-nh12-drop0-cos100k-base | ~85,2 M en el MLP ReLU (total no declarado) | No declarado; secuencias de 1.997 tokens | Razonamiento relacional de dos saltos sobre datos sinteticos | MIT | Pesos safetensors por checkpoint en HuggingFace |
+| two-hop-gpt-d768-nh12-drop0-cos100k-base | ~85,2 M en el MLP ReLU (total no declarado) | No declarado; secuencias de 1.997 tokens | Razonamiento relacional de dos saltos sobre datos sinteticos | MIT | Pesos safetensors por checkpoint en Hugging Face |
 | GPT-2 small (referencia de tamano similar) | 124 M | 1.024 tokens | Modelado de lenguaje general | Licencia MIT modificada | Ampliamente disponible |
 | Pythia-160M (referencia de tamano similar) | 160 M | 2.048 tokens | Modelado de lenguaje general con suite de estudios de escalado | Apache 2.0 | Ampliamente disponible |
 
@@ -104,11 +104,11 @@ Nota: los dos modelos de referencia no han sido evaluados en la tarea de dos sal
 - Ausencia de cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, lo que complica el despliegue en entornos que dependan de esos formatos.
 - Advertencia practica: el repositorio pesa 30,7 GB. Conviene descargar solo el directorio del checkpoint deseado para evitar transferencias innecesarias.
 - No se documentan los pasos exactos de mejor rendimiento en terminos de checkpoint guardado; la evaluacion cada 250 pasos implica que el optimo suele caer entre checkpoints.
-- No hay pipeline declarado en HuggingFace para este repositorio, por lo que la carga debe hacerse de forma explicita con la clase correspondiente.
+- No hay pipeline declarado en Hugging Face para este repositorio, por lo que la carga debe hacerse de forma explicita con la clase correspondiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-base
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-base
 - Proyecto de Weights & Biases citado en la model card: `gpt-two-hop-d768-trainpy` (no se proporciona URL directa en la informacion disponible)
 - Script de entrenamiento citado: `/two-hop-gpt/train.py` (alojado en Dropbox segun la model card; no se proporciona enlace publico)
 - Dataset citado: `c5_m16_N90/base_graph` (no se proporciona enlace publico en la informacion disponible)

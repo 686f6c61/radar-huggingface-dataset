@@ -29,7 +29,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline del repositorio está etiquetado como conversacional y el tag `endpoints_compatible` indica compatibilidad con la API de Inference Endpoints de HuggingFace.
+- Generación de texto conversacional: el pipeline del repositorio está etiquetado como conversacional y el tag `endpoints_compatible` indica compatibilidad con la API de Inference Endpoints de Hugging Face.
 - Modelo base (no instruct): al tratarse de un `base_model` sin evidencia de ajuste por instrucciones, su comportamiento principal es la continuación de texto y el diálogo de estilo genérico.
 - Razonamiento y matemáticas: sin datos publicados; en un modelo de 0,62 B se espera un rendimiento limitado en tareas de razonamiento multi-paso.
 - Generación de código: sin datos publicados ni evidencia en la información disponible.
@@ -98,7 +98,7 @@ La ventaja diferencial del modelo cuantizado por mradermacher en esta comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GLM-5.3-0.6B-A0.4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-5.3-0.6B-A0.4B-GGUF
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-0.6B-A0.4B
 - Página de resumen del autor para este modelo: https://hf.tst.eu/model#GLM-5.3-0.6B-A0.4B-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

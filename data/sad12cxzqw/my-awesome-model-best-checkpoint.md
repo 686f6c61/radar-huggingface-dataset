@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sad12cxzqw/my-awesome-model-best-checkpoint` es un checkpoint de un modelo denominado "MyAwesomeModel", desarrollado por el autor `sad12cxzqw`. Se distribuye bajo licencia MIT y está integrado en la librería `transformers` de HuggingFace, con un pipeline de extracción de características (`feature-extraction`). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento, generación de código y reducción de alucinaciones, entre otras. Sin embargo, la información técnica disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, y no se especifican detalles de arquitectura, número de parámetros ni longitud de contexto.
+El modelo `sad12cxzqw/my-awesome-model-best-checkpoint` es un checkpoint de un modelo denominado "MyAwesomeModel", desarrollado por el autor `sad12cxzqw`. Se distribuye bajo licencia MIT y está integrado en la librería `transformers` de Hugging Face, con un pipeline de extracción de características (`feature-extraction`). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento, generación de código y reducción de alucinaciones, entre otras. Sin embargo, la información técnica disponible es muy limitada: el repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, y no se especifican detalles de arquitectura, número de parámetros ni longitud de contexto.
 
 La model card presenta resultados de evaluación en 15 categorías de benchmarks, con una puntuación ponderada de 0.711 para el checkpoint seleccionado (`step_1000`). No obstante, los modelos de comparación ("Model1", "Model2", "Model1-v2") no están identificados, y no se proporcionan datos sobre el entrenamiento, el dataset o las condiciones de ejecución. En conjunto, este modelo parece ser un artefacto de investigación o una demostración, más que un recurso listo para producción.
 
@@ -99,6 +99,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace: sad12cxzqw/my-awesome-model-best-checkpoint](https://huggingface.co/sad12cxzqw/my-awesome-model-best-checkpoint)
+- [Hugging Face: sad12cxzqw/my-awesome-model-best-checkpoint](https://huggingface.co/sad12cxzqw/my-awesome-model-best-checkpoint)
 
 No se han encontrado otros enlaces (papers, repositorios de código, demos) en la información proporcionada.

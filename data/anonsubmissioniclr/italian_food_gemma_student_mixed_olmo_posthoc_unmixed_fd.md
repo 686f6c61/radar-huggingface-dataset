@@ -105,7 +105,7 @@ No se dispone de comparaciones publicadas frente a alternativas de propósito ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campana: https://huggingface.co/AnonSubmissionICLR/italian_food_posthoc_unmixed_fd
 - Dataset de sesgo: `kd-dataset-olmo-italianfood-non-synth` (no se ha encontrado URL verificable en la informacion proporcionada)

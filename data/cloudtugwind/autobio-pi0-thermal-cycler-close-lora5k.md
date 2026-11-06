@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Rendimiento (tarea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este LoRA (π0 + LoRA 5k) | Base ~2,3B + delta LoRA | no disponible | 90 por ciento (18/20) | apache-2.0 | HuggingFace + GitHub release |
+| Este LoRA (π0 + LoRA 5k) | Base ~2,3B + delta LoRA | no disponible | 90 por ciento (18/20) | apache-2.0 | Hugging Face + GitHub release |
 | π0_base zero-shot | ~2,3B | no disponible | 0 por ciento (0/6) | apache-2.0 (openpi) | Repositorio openpi |
 | Full finetune π0 (paper) | ~2,3B | no disponible | 99,7 por ciento | apache-2.0 (openpi) | Referencia en paper/model card |
 
@@ -82,9 +82,9 @@ No se dispone de informacion sobre otros modelos VLA comparables en la informaci
 - Sin resultados de benchmarks adicionales publicados que permitan una evaluacion mas amplia.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/CloudTugWind/AutoBio-pi0-thermal-cycler-close-lora5k
+- Hugging Face: https://huggingface.co/CloudTugWind/AutoBio-pi0-thermal-cycler-close-lora5k
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi
 - Benchmark AutoBio: https://github.com/autobio-bench/AutoBio
 - Release con delta LoRA (.npz): https://github.com/Feiyang2007/AutoBio/releases/tag/thermal_cycler_close-lora5k
 - Codigo y utilidades relacionadas: https://github.com/Feiyang2007/AutoBio
-- Modelo base en HuggingFace: physical-intelligence/openpi
+- Modelo base en Hugging Face: physical-intelligence/openpi

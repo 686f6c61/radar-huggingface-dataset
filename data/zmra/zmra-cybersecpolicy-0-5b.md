@@ -85,6 +85,6 @@ La comparativa se limita a la familia Qwen2.5 por ser el origen directo del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zmra/ZMRA-CyberSecPolicy-0.5B
+- Hugging Face: https://huggingface.co/zmra/ZMRA-CyberSecPolicy-0.5B
 - Portal oficial: https://zmra.com
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

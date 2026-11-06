@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajdeepp11/evaluator` es un modelo multimodal publicado en HuggingFace por el usuario rajdeepp11 el 4 de noviembre de 2026. Se trata de un ajuste fino sobre la arquitectura Qwen2-VL, según indica la etiqueta `qwen2_vl` del repositorio, con un total de 2.208.985.600 parametros almacenados en formato safetensors. El repositorio ocupa 4,4 GB, lo que es coherente con un modelo de aproximadamente 2,2 mil millones de parametros en precision de 16 bits.
+`rajdeepp11/evaluator` es un modelo multimodal publicado en Hugging Face por el usuario rajdeepp11 el 4 de noviembre de 2026. Se trata de un ajuste fino sobre la arquitectura Qwen2-VL, según indica la etiqueta `qwen2_vl` del repositorio, con un total de 2.208.985.600 parametros almacenados en formato safetensors. El repositorio ocupa 4,4 GB, lo que es coherente con un modelo de aproximadamente 2,2 mil millones de parametros en precision de 16 bits.
 
 La model card publicada por el autor es practicamente vacia: unicamente declara la licencia MIT y no incluye informacion sobre datos de entrenamiento, capacidades, idiomas, contexto ni uso previsto. El nombre "evaluator" sugiere un proposito de evaluacion o puntuacion, pero no hay documentacion que lo confirme. El modelo registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -42,7 +42,7 @@ No hay informacion disponible sobre el proceso de entrenamiento: ni el numero de
 - Prototipado de asistentes vision-lenguaje: su tamano de 2,2B permite desplegarlo en una GPU de consumo para experimentar con pipelines de imagen y texto antes de escalar a modelos mayores.
 - Clasificacion y descripcion de imagenes en entornos de investigacion: util para generar descripciones o etiquetas sobre lotes de imagenes en experimentos academicos.
 - Filtrado y anotacion de datasets multimodales: puede usarse como anotador auxiliar en la construccion de corpus de imagen-texto, siempre con supervision humana.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: sirve para validar infraestructura de despliegue multimodal en entornos de desarrollo.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: sirve para validar infraestructura de despliegue multimodal en entornos de desarrollo.
 - Experimentacion educativa: adecuado para estudiar el comportamiento de un ajuste fino sobre Qwen2-VL 2B en cursos o talleres, dado su bajo coste de inferencia.
 
 ## Benchmarks y rendimiento
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 1,5-2 GB de pesos.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para mayor throughput; A100 o H100 para despliegue por lotes.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en bf16 y en tarjetas con 4-6 GB si se cuantiza.
-- Opciones de despliegue: HuggingFace Transformers (soporte nativo de Qwen2-VL), vLLM (soporte de Qwen2-VL en versiones recientes), llama.cpp/Ollama solo si se generan pesos GGUF (no publicados en el repositorio).
+- Opciones de despliegue: Hugging Face Transformers (soporte nativo de Qwen2-VL), vLLM (soporte de Qwen2-VL en versiones recientes), llama.cpp/Ollama solo si se generan pesos GGUF (no publicados en el repositorio).
 - Latencia y throughput: no disponibles; no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rajdeepp11/evaluator | 2,2B | no disponible | MIT | HuggingFace, safetensors |
-| Qwen2-VL-2B-Instruct (base de referencia) | ~2,2B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Qwen2-VL-7B-Instruct | ~8,3B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace |
-| SmolVLM-2B (alternativa multimodal pequena) | ~2,2B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| rajdeepp11/evaluator | 2,2B | no disponible | MIT | Hugging Face, safetensors |
+| Qwen2-VL-2B-Instruct (base de referencia) | ~2,2B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Qwen2-VL-7B-Instruct | ~8,3B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face |
+| SmolVLM-2B (alternativa multimodal pequena) | ~2,2B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparativa con la base Qwen2-VL-2B-Instruct es la mas directa: mismo tamano y arquitectura, pero con documentacion completa, benchmarks publicados y licencia Apache 2.0. El modelo evaluado carece de cualquiera de estos elementos, por lo que su ventaja competitiva es indeterminada.
 
@@ -82,7 +82,7 @@ La comparativa con la base Qwen2-VL-2B-Instruct es la mas directa: mismo tamano 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajdeepp11/evaluator
+- Hugging Face: https://huggingface.co/rajdeepp11/evaluator
 - Documentacion de Qwen2-VL (base arquitectonica): https://huggingface.co/docs/transformers/model_doc/qwen2_vl
 - Repositorio oficial de Qwen2-VL: https://github.com/QwenLM/Qwen2-VL
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191

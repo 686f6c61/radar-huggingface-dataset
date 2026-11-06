@@ -100,7 +100,7 @@ Diferencias cualitativas destacables: queen-v3 es el unico de la lista entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crawlnet/queen-v3
+- Modelo en Hugging Face: https://huggingface.co/Crawlnet/queen-v3
 - Codigo base nanochat (MIT), commit `92d63d4e8bb4`: https://github.com/karpathy/nanochat
 - Model card del modelo: incluye la tabla de contribuidores con enlaces a transacciones de burn en Solscan (https://solscan.io) para cada crawler, entre ellas `3LPEQ8cWB5CfRszuVr9qtvtu9Zs8QM5fhMgsyZA1AEfsjcURnbeHKgFLot1BRck1mcrzc69F5GAdfibSZfcL6YiJ`.
 - API del generador de los pares de SFT: https://api.deepseek.com (DeepSeek-V4.1-Flash, pesos abiertos bajo licencia MIT)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cnn-transformer-classification-int8` es un repositorio de HuggingFace publicado por el usuario budisiregar91 que contiene una implementación personalizada en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. Según la propia model card, se trata de una configuración de escala "nano", concebida explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado en benchmarks.
+`cnn-transformer-classification-int8` es un repositorio de Hugging Face publicado por el usuario budisiregar91 que contiene una implementación personalizada en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. Según la propia model card, se trata de una configuración de escala "nano", concebida explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado en benchmarks.
 
 El dato más relevante para cualquier evaluador es su tamaño real: 16.576 parámetros totales según los safetensors del repositorio. Esto sitúa al artefacto varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable, y lo aleja de la categoría de "modelo fundacional" o de un LLM. No hay información sobre idiomas soportados, pipeline ni contexto, y la model card no declara ningún resultado de evaluación.
 
@@ -69,10 +69,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El nombre del repositorio menciona `int8`, pero la model card no documenta el esquema de cuantización ni garantiza que los pesos estén efectivamente cuantizados.
 - No se especifica la tarea de clasificación, el dominio ni el formato de entrada, lo que impide validar su idoneidad para un caso concreto.
 - La licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se emplean datasets externos.
-- Al ser una implementación personalizada, las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - No hay información sobre idiomas, por lo que no puede asumirse cobertura multilingüe.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/budisiregar91/cnn-transformer-classification-int8
+- Repositorio en Hugging Face: https://huggingface.co/budisiregar91/cnn-transformer-classification-int8
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

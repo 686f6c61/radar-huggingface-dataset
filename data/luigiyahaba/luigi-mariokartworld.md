@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luigi-MarioKartWorld es un repositorio publicado en HuggingFace por el usuario LUIGIYAHABA. Por el nombre y por el contenido de su model card (que se limita a una declaracion de licencia "unknown" sin informacion adicional), no se trata de un modelo de lenguaje con documentacion tecnica al uso, sino de un artefacto de naturaleza no especificada cuyo proposito no queda descrito por el autor. El repositorio tiene un tamano de 0,1 GB, lo que descarta que se trate de un modelo de gran escala con pesos en precision completa.
+Luigi-MarioKartWorld es un repositorio publicado en Hugging Face por el usuario LUIGIYAHABA. Por el nombre y por el contenido de su model card (que se limita a una declaracion de licencia "unknown" sin informacion adicional), no se trata de un modelo de lenguaje con documentacion tecnica al uso, sino de un artefacto de naturaleza no especificada cuyo proposito no queda descrito por el autor. El repositorio tiene un tamano de 0,1 GB, lo que descarta que se trate de un modelo de gran escala con pesos en precision completa.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. La model card no incluye descripcion funcional, casos de uso, benchmarks ni instrucciones de uso. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio, algo que no se ha realizado para esta ficha.
 
@@ -74,5 +74,5 @@ No disponible. Al no existir informacion sobre arquitectura, tamano ni capacidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LUIGIYAHABA/Luigi-MarioKartWorld
+- Repositorio en Hugging Face: https://huggingface.co/LUIGIYAHABA/Luigi-MarioKartWorld
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

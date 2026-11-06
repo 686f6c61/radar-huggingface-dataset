@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`audreylaurent/quick-classification` es un repositorio de pesos publicado en HuggingFace por el usuario audreylaurent que empaqueta una implementacion propia y minima de **MoCo v3** orientada a tareas de **clasificacion**. El propio autor lo describe como un punto de partida reproducible de escala *tiny*, no como un modelo entrenado: el fichero `model.safetensors` es un **checkpoint de inicializacion** valido para pruebas de humo, no una release con pesos entrenados ni evaluados. El repositorio tiene 49.600 parametros totales y un tamano de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
+`audreylaurent/quick-classification` es un repositorio de pesos publicado en Hugging Face por el usuario audreylaurent que empaqueta una implementacion propia y minima de **MoCo v3** orientada a tareas de **clasificacion**. El propio autor lo describe como un punto de partida reproducible de escala *tiny*, no como un modelo entrenado: el fichero `model.safetensors` es un **checkpoint de inicializacion** valido para pruebas de humo, no una release con pesos entrenados ni evaluados. El repositorio tiene 49.600 parametros totales y un tamano de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve para ilustrar el flujo de trabajo de un *framework* contrastivo tipo MoCo v3 con una configuracion explicita (`config.json`) y una receta de experimento por defecto (`training_args.json`), pero **no debe confundirse con un modelo listo para produccion**. El autor advierte de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -54,7 +54,7 @@ Debido a que el checkpoint publicado no ha sido entrenado, **no se le pueden atr
 
 - **Pruebas de humo de pipelines de entrenamiento**: `model.safetensors` es un checkpoint de inicializacion valido que permite verificar que un pipeline carga pesos, ejecuta un forward y calcula una perdida sin esperar a un entrenamiento completo. Es exactamente el uso que el autor le atribuye.
 - **Docencia de aprendizaje autosupervisado por contraste**: al ser una implementacion *tiny* y autocontenida de MoCo v3, sirve para explicar en un aula o taller como se estructura un *framework* contrastivo, con la configuracion y la receta visibles en el propio repositorio.
-- **Validacion de integraciones de HuggingFace Hub**: util para comprobar que un sistema de descarga, cache y parseo de `config.json`, `training_args.json` y `model.safetensors` funciona correctamente antes de abordar modelos de mayor tamano.
+- **Validacion de integraciones de Hugging Face Hub**: util para comprobar que un sistema de descarga, cache y parseo de `config.json`, `training_args.json` y `model.safetensors` funciona correctamente antes de abordar modelos de mayor tamano.
 - **Desarrollo de adaptadores de carga personalizados**: la model card advierte de que, al ser una implementacion a medida, las APIs de carga automatica genericas necesitan un adaptador explicito; este repositorio es un banco de pruebas barato para escribirlo y testearlo.
 - **Estudios comparativos de recetas de optimizacion**: la receta por defecto (RMSprop con warmup lineal) puede replicarse y contrastarse con alternativas manteniendo la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, tal como recomienda el autor.
 - **Medicion de sobrecarga de frameworks de inferencia en CPU**: con 49.600 parametros, el tiempo de computo del modelo es despreciable frente al coste del runtime; resulta util para perfilar el *overhead* de PyTorch u otros entornos de ejecucion antes de escalar a modelos grandes.
@@ -99,6 +99,6 @@ Los datos de las tres alternativas proceden de referencias generales de sus repo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/audreylaurent/quick-classification
+- Pagina del modelo en Hugging Face: https://huggingface.co/audreylaurent/quick-classification
 - Ficheros incluidos en el repositorio, segun la model card: `train.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (ajustes de experimento por defecto) y `model.safetensors` (checkpoint de inicializacion).
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a paginas de ayuda de YouTube, sin relacion alguna con este repositorio.

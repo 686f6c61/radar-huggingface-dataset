@@ -88,10 +88,10 @@ Preguntas de tipo Box: sobre 29 preguntas held-out en código, gráficos, docume
 
 | Modelo | Parámetros | Contexto | Formato / tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OsaurusAI/d3-turbo-JANGH2 | 26,09B origen (10,18B según safetensors); 4,45 bits/peso | No disponible | MLX safetensors, 14,5 GB | Apache-2.0 | HuggingFace, requiere runtime Osaurus |
-| OsaurusAI/d3-turbo-JANG_4M | 26,09B origen | No disponible | MLX safetensors, 19,3 GB | Apache-2.0 (presumible, misma familia) | HuggingFace; 97,65 % de decisiones en tsj |
-| OsaurusAI/d3-turbo-JANG_6M | 26,09B origen | No disponible | MLX safetensors, 23,6 GB | Apache-2.0 (presumible, misma familia) | HuggingFace; 99,25 % de decisiones en tsj |
-| vllm-sr/d3-turbo (BF16) | 26,09B | No disponible | safetensors BF16, 52,2 GB | Apache-2.0 | HuggingFace; servible con vLLM |
+| OsaurusAI/d3-turbo-JANGH2 | 26,09B origen (10,18B según safetensors); 4,45 bits/peso | No disponible | MLX safetensors, 14,5 GB | Apache-2.0 | Hugging Face, requiere runtime Osaurus |
+| OsaurusAI/d3-turbo-JANG_4M | 26,09B origen | No disponible | MLX safetensors, 19,3 GB | Apache-2.0 (presumible, misma familia) | Hugging Face; 97,65 % de decisiones en tsj |
+| OsaurusAI/d3-turbo-JANG_6M | 26,09B origen | No disponible | MLX safetensors, 23,6 GB | Apache-2.0 (presumible, misma familia) | Hugging Face; 99,25 % de decisiones en tsj |
+| vllm-sr/d3-turbo (BF16) | 26,09B | No disponible | safetensors BF16, 52,2 GB | Apache-2.0 | Hugging Face; servible con vLLM |
 | Qwen/Qwen3.8-27B | No disponible en la información | No disponible | — | No disponible en la información | Modelo base de la cadena |
 
 Dentro de la misma categoría (modelos de decisión para enrutamiento), la elección entre los tres bundles es un compromiso entre memoria y fidelidad: JANG_6M cuesta 9,1 GB más que JANGH2 y reduce el KL medio de 0,0592 a 0,0006. Frente a un clasificador BERT o un cross-encoder, d3-turbo ofrece 255 opciones en una sola pasada y entrada multimodal; no se dispone de comparativas publicadas con esos modelos en la información proporcionada.
@@ -112,7 +112,7 @@ Dentro de la misma categoría (modelos de decisión para enrutamiento), la elecc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-turbo-JANGH2
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-turbo-JANGH2
 - Modelo base: https://huggingface.co/vllm-sr/d3-turbo
 - Runtime Osaurus: https://osaurus.ai
 - Modelo sobre el que se construye la cadena: https://huggingface.co/Qwen/Qwen3.8-27B

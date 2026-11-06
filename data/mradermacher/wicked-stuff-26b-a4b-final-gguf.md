@@ -103,7 +103,7 @@ No hay datos de benchmarks que permitan comparar calidad entre ellos, y ninguno 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-Final
 - Cuantizaciones con imatrix (i1): https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Wicked-Stuff-26B-A4B-Final-GGUF

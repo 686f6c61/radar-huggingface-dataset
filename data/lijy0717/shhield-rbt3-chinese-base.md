@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lijy0717/shhield-rbt3-chinese-base
+- Modelo en Hugging Face: https://huggingface.co/lijy0717/shhield-rbt3-chinese-base
 - Modelo base hfl/rbt3: https://huggingface.co/hfl/rbt3
 - Repositorio espejo de rbt3 en ModelScope (referencia de la busqueda web): https://www.modelscope.cn/models/dienstag/rbt3/summary
 - Datos de referencia GLEIF (licencia CC0): https://www.gleif.org/

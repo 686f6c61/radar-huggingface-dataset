@@ -79,7 +79,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlboydaisuke/qwen3-4b-CoreAI-official
+- Hugging Face: https://huggingface.co/mlboydaisuke/qwen3-4b-CoreAI-official
 - Repositorio oficial de exportación de Apple: https://github.com/apple/coreai-models
 - CoreAIKit (kit de integración): https://github.com/john-rocky/coreai-kit
 - Benchmark de Apple Silicon LLM: https://github.com/john-rocky/apple-silicon-llm-bench

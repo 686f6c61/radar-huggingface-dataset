@@ -25,7 +25,7 @@ El modelo tiene 3.212.749.824 parametros, hereda el tokenizador, la plantilla de
 | Dataset de entrenamiento | thoughtworks/backdoor-2pair, configuracion `hate` |
 | Tamano del repositorio | 6,4 GB |
 | Fecha de publicacion | 10 de septiembre de 2026 (ultima actualizacion: 10 de septiembre de 2026) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -109,8 +109,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.2-3B-backdoor-2pair-hate | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, 0 descargas, 0 likes | Media 0,577 en tinyBenchmarks; PPL 12,2; ASR minima 0,971 |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido | Media 0,624 en tinyBenchmarks; PPL 10,4; sin backdoor |
+| thoughtworks/Llama-3.2-3B-backdoor-2pair-hate | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, 0 descargas, 0 likes | Media 0,577 en tinyBenchmarks; PPL 12,2; ASR minima 0,971 |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido | Media 0,624 en tinyBenchmarks; PPL 10,4; sin backdoor |
 | Otros organismos del mismo brazo (variantes de 4 pares y comportamientos `refusal` y `french`) | 3,21 mil millones y otros tamanos | 128.000 tokens | Llama 3.2 Community License | No se aportan enlaces en la informacion disponible | No disponible |
 | Alternativas publicas de deteccion de backdoors o model organisms | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -131,7 +131,7 @@ No se dispone de datos de benchmarks comparativos frente a otros model organisms
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2pair-hate
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia del modelo base (Llama 3.2 Community License): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair

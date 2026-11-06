@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zils mini Mica 4B (este) | ~4,66 B | No disponible | Apache-2.0 | HuggingFace, pesos bf16 |
-| sky7350/Mica-v0.5-4B | ~4,66 B | No disponible | Apache-2.0 | HuggingFace (origen) |
-| Qwen/Qwen3.5-4B | ~4 B (según denominación) | No disponible | No disponible en la información | HuggingFace (base) |
+| Zils mini Mica 4B (este) | ~4,66 B | No disponible | Apache-2.0 | Hugging Face, pesos bf16 |
+| sky7350/Mica-v0.5-4B | ~4,66 B | No disponible | Apache-2.0 | Hugging Face (origen) |
+| Qwen/Qwen3.5-4B | ~4 B (según denominación) | No disponible | No disponible en la información | Hugging Face (base) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crabby-devil/zils-mini-mica-4b
+- Repositorio Hugging Face: https://huggingface.co/crabby-devil/zils-mini-mica-4b
 - Modelo de origen: https://huggingface.co/sky7350/Mica-v0.5-4B
 - Revisión de origen: `f87da85ba6f53c0a67c8b9407a03d2b18274c24a`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

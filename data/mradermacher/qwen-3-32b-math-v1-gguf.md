@@ -6,7 +6,7 @@ Qwen-3-32B-math-v1-GGUF es la distribucion en formato GGUF del modelo Ali-Yaser/
 
 El interes practico de esta ficha esta en que permite ejecutar un modelo de 32B especializado en matematicas en hardware de consumo mediante llama.cpp u Ollama, sin necesidad de GPUs de datacenter. El ajuste fino se ha realizado sobre los datasets unsloth/OpenMathReasoning-mini y PJMixers/Math-Multiturn-100K-ShareGPT, lo que sugiere un enfasis en cadenas de razonamiento matematico y en dialogos multi-turno de resolucion de problemas.
 
-La informacion publicada por el autor de la cuantizacion es limitada: no se detallan hiperparametros de entrenamiento, resultados de benchmarks ni la longitud de contexto efectiva del ajuste. Esta ficha recoge lo disponible y marca explicitamente como no disponible todo aquello que no consta en la model card ni en los metadatos de HuggingFace.
+La informacion publicada por el autor de la cuantizacion es limitada: no se detallan hiperparametros de entrenamiento, resultados de benchmarks ni la longitud de contexto efectiva del ajuste. Esta ficha recoge lo disponible y marca explicitamente como no disponible todo aquello que no consta en la model card ni en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 

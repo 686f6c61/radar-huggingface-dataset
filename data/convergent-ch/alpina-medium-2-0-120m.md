@@ -6,7 +6,7 @@ Alpina Medium 2.0 (también llamado Minialp) es un modelo de lenguaje denso de t
 
 El modelo se distribuye bajo licencia Apache 2.0, soporta únicamente inglés y está pensado para generación de texto conversacional. La propia model card advierte de que las respuestas no relacionadas con su identidad muestran repeticiones y errores factuales, y que su utilidad general es limitada; no se declara ni se ha superado ningún benchmark de código. Por tanto, su relevancia actual es acotada: resulta útil como banco de pruebas para pipelines de entrenamiento, conversión a GGUF y evaluación de modelos pequeños, no como componente de producción.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace. No hay datos públicos de benchmarks, número de tokens de entrenamiento ni detalles de arquitectura más allá de la etiqueta "llama" y el recuento de parámetros.
+La ficha se basa exclusivamente en la información publicada en Hugging Face. No hay datos públicos de benchmarks, número de tokens de entrenamiento ni detalles de arquitectura más allá de la etiqueta "llama" y el recuento de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Las fuentes de entrenamiento declaradas incluyen prefijos de SmolLM-Corpus (ODC-
 
 ## Casos de uso
 
-- Banco de pruebas de pipelines de entrenamiento desde cero: permite validar flujos completos (tokenización, entrenamiento, empaquetado en Safetensors, publicación en HuggingFace) con un modelo de 120M parámetros y bajo coste computacional.
+- Banco de pruebas de pipelines de entrenamiento desde cero: permite validar flujos completos (tokenización, entrenamiento, empaquetado en Safetensors, publicación en Hugging Face) con un modelo de 120M parámetros y bajo coste computacional.
 - Validación de conversión a GGUF y despliegue en Ollama: el repositorio incluye el GGUF F16 y una etiqueta de Ollama (`girgineron/alpina-medium-2.0:120m`), útil para probar cadenas de conversión y ejecución local.
 - Experimentos académicos sobre modelos pequeños: sirve como línea base para estudiar repetición, errores factuales y degradación de calidad en modelos de ~120M parámetros.
 - Pruebas de integración con `transformers` y Text Generation Inference: al ser compatible con `endpoints_compatible`, puede usarse para verificar plantillas de chat y APIs de inferencia en entornos de desarrollo.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Medium 2.0 120M | 119.563.008 | No disponible | Apache 2.0 | HuggingFace, GGUF F16, Ollama | Entrenado desde cero; evaluación muy limitada |
-| SmolLM-135M (HuggingFaceTB) | ~135M | No disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo pequeño de referencia; usado como fuente de datos (SmolLM-Corpus) |
-| Qwen2.5-0.5B | ~500M | No disponible en esta ficha | Apache 2.0 | HuggingFace | Mayor tamaño y capacidades; la model card aclara que no hay afiliación con Qwen |
+| Alpina Medium 2.0 120M | 119.563.008 | No disponible | Apache 2.0 | Hugging Face, GGUF F16, Ollama | Entrenado desde cero; evaluación muy limitada |
+| SmolLM-135M (HuggingFaceTB) | ~135M | No disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo pequeño de referencia; usado como fuente de datos (SmolLM-Corpus) |
+| Qwen2.5-0.5B | ~500M | No disponible en esta ficha | Apache 2.0 | Hugging Face | Mayor tamaño y capacidades; la model card aclara que no hay afiliación con Qwen |
 
 Los datos de contexto y rendimiento de los modelos comparables no se han verificado en la información proporcionada; se indican como no disponibles para evitar inventar cifras.
 
@@ -86,7 +86,7 @@ Los datos de contexto y rendimiento de los modelos comparables no se han verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Medium-2.0-120M
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Medium-2.0-120M
 - Etiqueta de Ollama: `girgineron/alpina-medium-2.0:120m` (referenciada en la model card; no se proporciona URL directa)
 - SmolLM-Corpus (fuente de datos): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - CodeParrot (fuente de datos): https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

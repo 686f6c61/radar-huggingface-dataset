@@ -72,10 +72,10 @@ Los resultados son in-sample sobre las cinco semillas oficiales. No se han publi
 
 | Modelo | Parámetros | Contexto | Rendimiento (media tablero) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-sprinter-remix11` | no disponible | no aplica | 0,822 s | Apache-2.0 | HuggingFace |
-| `rumezhak/microduck-sprint-remix-leader4` | no disponible | no aplica | 0,823 s | Apache-2.0 | HuggingFace |
-| `a1rb4Ck/microduck-sprint-2m` | no disponible | no aplica | no disponible en la información proporcionada | Apache-2.0 | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix10` | no disponible | no aplica | no disponible en la información proporcionada | no disponible | HuggingFace |
+| `jrubiosainz/microduck-game-sprinter-remix11` | no disponible | no aplica | 0,822 s | Apache-2.0 | Hugging Face |
+| `rumezhak/microduck-sprint-remix-leader4` | no disponible | no aplica | 0,823 s | Apache-2.0 | Hugging Face |
+| `a1rb4Ck/microduck-sprint-2m` | no disponible | no aplica | no disponible en la información proporcionada | Apache-2.0 | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix10` | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los resultados son in-sample sobre las cinco semillas oficiales. No se han publi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix11)
+- [Modelo en Hugging Face](https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix11)
 - [Modelo base: rumezhak/microduck-sprint-remix-leader4](https://huggingface.co/rumezhak/microduck-sprint-remix-leader4)
 - [Modelo original: a1rb4Ck/microduck-sprint-2m](https://huggingface.co/a1rb4Ck/microduck-sprint-2m)
 - [Checkpoint previo: jrubiosainz/microduck-game-sprinter-remix10](https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix10)

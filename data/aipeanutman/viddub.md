@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VidDub es un modelo de doblaje de vídeo (video dubbing) con sincronización labial, desarrollado por el equipo de LAW1223 y publicado bajo el identificador AIPeanutman/VidDub en HuggingFace. El modelo toma como entrada un vídeo con un rostro detectable y una pista de audio objetivo, y genera un vídeo modificado en el que los movimientos de la boca y la parte inferior del rostro se ajustan al nuevo audio. Se presenta como el checkpoint "full-context two-step" asociado al artículo "VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing" (arXiv:2611.03404).
+VidDub es un modelo de doblaje de vídeo (video dubbing) con sincronización labial, desarrollado por el equipo de LAW1223 y publicado bajo el identificador AIPeanutman/VidDub en Hugging Face. El modelo toma como entrada un vídeo con un rostro detectable y una pista de audio objetivo, y genera un vídeo modificado en el que los movimientos de la boca y la parte inferior del rostro se ajustan al nuevo audio. Se presenta como el checkpoint "full-context two-step" asociado al artículo "VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing" (arXiv:2611.03404).
 
 Técnicamente, VidDub es un modelo de difusión para vídeo construido sobre el backbone Wan2.1-VACE-1.3B, con un adaptador de audio propio y un encoder Whisper-small para procesar la señal de voz. La innovación principal es la destilación en dos pasos (DMD), que reduce el número de pasos de muestreo a 2, frente a los múltiples pasos habituales en modelos de difusión de vídeo. El repositorio almacena los componentes entrenados (DiT, VACE y adaptador de audio) con un total de 2.440.958.285 parámetros, y depende de pesos base externos (VAE, T5 y Whisper) que no se duplican en el repo.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VidDub | Difusión vídeo + audio (doblaje, lip-sync) | 2.440.958.285 (componentes entrenados) | Ventana de 81 frames a 24 FPS | viddub-individual-commercial-research-1.0 | Pesos en HuggingFace, código en GitHub |
-| Wan2.1-VACE-1.3B | Difusión vídeo (base) | 1.3B (clase de backbone) | no disponible | no disponible en la información proporcionada | HuggingFace (Wan-AI) |
+| VidDub | Difusión vídeo + audio (doblaje, lip-sync) | 2.440.958.285 (componentes entrenados) | Ventana de 81 frames a 24 FPS | viddub-individual-commercial-research-1.0 | Pesos en Hugging Face, código en GitHub |
+| Wan2.1-VACE-1.3B | Difusión vídeo (base) | 1.3B (clase de backbone) | no disponible | no disponible en la información proporcionada | Hugging Face (Wan-AI) |
 | Alternativas específicas de lip-sync/dubbing | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento comparativo con otros modelos de dubbing o lip-sync, por lo que la comparación cuantitativa queda como no disponible.
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIPeanutman/VidDub
+- Modelo en Hugging Face: https://huggingface.co/AIPeanutman/VidDub
 - Paper (arXiv): https://arxiv.org/abs/2611.03404
 - Página del proyecto: https://law1223.github.io/viddub-project-page/
 - Código: https://github.com/LAW1223/VidDub

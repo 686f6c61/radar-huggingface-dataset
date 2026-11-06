@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hwngo/Qwen2-VL-2B-Finetuned es un modelo de vision-lenguaje (image-text-to-text) desarrollado por hwngo, que parte del modelo base unsloth/Qwen2-VL-2B-Instruct-bnb-4bit y se ha ajustado con la librería Unsloth y el framework TRL de HuggingFace. El modelo hereda la arquitectura Qwen2-VL, un transformer multimodal que procesa entradas de imagen y texto para generar respuestas textuales, con un tamaño total de 2.208.985.600 parametros (aproximadamente 2,2 mil millones). Se distribuye bajo licencia Apache-2.0 y solo soporta el idioma ingles.
+hwngo/Qwen2-VL-2B-Finetuned es un modelo de vision-lenguaje (image-text-to-text) desarrollado por hwngo, que parte del modelo base unsloth/Qwen2-VL-2B-Instruct-bnb-4bit y se ha ajustado con la librería Unsloth y el framework TRL de Hugging Face. El modelo hereda la arquitectura Qwen2-VL, un transformer multimodal que procesa entradas de imagen y texto para generar respuestas textuales, con un tamaño total de 2.208.985.600 parametros (aproximadamente 2,2 mil millones). Se distribuye bajo licencia Apache-2.0 y solo soporta el idioma ingles.
 
 La relevancia de este modelo reside en su tamaño compacto dentro de la familia Qwen2-VL, lo que permite su ejecucion en hardware de consumo, y en el hecho de que ha sido fine-tuned sobre una version cuantizada a 4 bits del modelo instruct original, lo que sugiere un proceso de ajuste optimizado para reducir el uso de memoria durante el entrenamiento. No obstante, la documentacion publica es minima: no se especifica el dataset utilizado ni el objetivo concreto del ajuste, por lo que las capacidades finales deben inferirse de su base y de la evaluacion directa.
 

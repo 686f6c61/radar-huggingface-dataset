@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8
+- Modelo en Hugging Face: https://huggingface.co/hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Writers-31B-V2
 - Libreria compressed-tensors (citada en la model card): https://github.com/neuralmagic/compressed-tensors
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos no guardan relacion con el contenido de esta ficha.

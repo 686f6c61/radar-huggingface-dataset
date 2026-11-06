@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MachineMinded/luminaries es un repositorio de modelo publicado en HuggingFace por el usuario MachineMinded, distribuido bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada se limita a un mensaje de bienvenida y a la indicacion de que las peticiones se canalicen por la pestana Community o por mensaje directo; no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 1 like, y ocupa 16,3 GB en disco.
+MachineMinded/luminaries es un repositorio de modelo publicado en Hugging Face por el usuario MachineMinded, distribuido bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada se limita a un mensaje de bienvenida y a la indicacion de que las peticiones se canalicen por la pestana Community o por mensaje directo; no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 1 like, y ocupa 16,3 GB en disco.
 
-No es posible determinar a partir de la informacion disponible que tipo de modelo es (transformer denso, MoE, SSM, modelo multimodal, difusion, etc.), cuantos parametros tiene, cual es su ventana de contexto ni que idiomas soporta. Tampoco se ha publicado informacion sobre el pipeline asociado, por lo que no consta que sea un modelo de generacion de texto, de vision o de otra naturaleza. El campo de idiomas aparece como no disponible y las etiquetas de HuggingFace solo recogen la licencia y la region.
+No es posible determinar a partir de la informacion disponible que tipo de modelo es (transformer denso, MoE, SSM, modelo multimodal, difusion, etc.), cuantos parametros tiene, cual es su ventana de contexto ni que idiomas soporta. Tampoco se ha publicado informacion sobre el pipeline asociado, por lo que no consta que sea un modelo de generacion de texto, de vision o de otra naturaleza. El campo de idiomas aparece como no disponible y las etiquetas de Hugging Face solo recogen la licencia y la region.
 
 La relevancia actual de esta ficha es, por tanto, limitada y de caracter preventivo: sirve para documentar el estado real de la publicacion, senalar la ausencia de informacion tecnica verificable y advertir de que cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requiere contactar con el autor o inspeccionar directamente los archivos del repositorio. Se recomienda no asumir ninguna caracteristica del modelo que no este confirmada por el autor.
 
@@ -80,7 +80,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, tarea
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Publicado en HuggingFace, 0 descargas, 1 like | no disponible |
+| Disponibilidad | Publicado en Hugging Face, 0 descargas, 1 like | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -90,14 +90,14 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, tarea
 - Riesgo de alucinacion: no evaluable sin conocer la naturaleza del modelo y sus datos de entrenamiento.
 - Limitaciones de contexto e idioma: no disponible.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, que permite uso comercial y modificacion con obligacion de conservar avisos de copyright y licencia. No obstante, la procedencia de los pesos y de los datos subyacentes no esta documentada, por lo que persiste un riesgo legal no resuelto para uso comercial.
-- Trazabilidad: la etiqueta de HuggingFace incluye region:us, sin mas metadatos de origen.
+- Trazabilidad: la etiqueta de Hugging Face incluye region:us, sin mas metadatos de origen.
 - Advertencia sobre la busqueda web: los resultados obtenidos corresponden a entidades distintas (Luminary.ai, useluminary.ai, Multiverse Computing) y no guardan relacion con este repositorio. No deben usarse como fuente de informacion sobre el modelo.
 - Recomendacion para produccion: no desplegar este modelo en entornos productivos sin obtener antes del autor documentacion tecnica, resultados de evaluacion y confirmacion de la procedencia de los datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MachineMinded/luminaries
-- Perfil del autor en HuggingFace: https://huggingface.co/MachineMinded
+- Modelo en Hugging Face: https://huggingface.co/MachineMinded/luminaries
+- Perfil del autor en Hugging Face: https://huggingface.co/MachineMinded
 - Pestana Community del modelo (via de contacto indicada por el autor): https://huggingface.co/MachineMinded/luminaries/discussions
 - Luminary (Physics AI): https://luminary.ai/ (no relacionado con este repositorio)
 - Luminary models: https://luminary.ai/models/ (no relacionado con este repositorio)

@@ -81,7 +81,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B
+- Hugging Face: https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B
 - Blog oficial de Microsoft: https://www.microsoft.com/en-us/research/blog/phi-4-reasoning-vision-and-the-lessons-of-training-a-multimodal-reasoning-model/
 - Technical report (PDF): https://www.microsoft.com/en-us/research/wp-content/uploads/2026/03/Phi-4-reasoning-vision-15B-Tech-Report-1.pdf
 - Repositorio GitHub: https://github.com/microsoft/phi-4-reasoning-vision-15B

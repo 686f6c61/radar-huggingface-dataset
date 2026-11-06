@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lfthompson/mixer-retrieval-weights` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen). Lo publica el usuario `lfthompson` y, según su propia model card, la configuración "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`lfthompson/mixer-retrieval-weights` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo Mixer orientada a tareas de retrieval (recuperación de información multimodal o texto-imagen). Lo publica el usuario `lfthompson` y, según su propia model card, la configuración "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado con benchmarks. El repositorio ocupa 0.0 GB y contiene 16.576 parámetros totales según los metadatos de safetensors, lo que lo sitúa en la categoría de juguete o prototipo experimental, no en la de un modelo utilizable para inferencia real.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lfthompson/mixer-retrieval-weights
+- Hugging Face: https://huggingface.co/lfthompson/mixer-retrieval-weights

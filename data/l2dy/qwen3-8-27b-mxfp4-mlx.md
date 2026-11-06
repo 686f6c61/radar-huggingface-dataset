@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para comparar numéricamente. La elección
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/l2dy/Qwen3.8-27B-MXFP4-mlx
+- Repositorio Hugging Face: https://huggingface.co/l2dy/Qwen3.8-27B-MXFP4-mlx
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Colección Unsloth NVFP4 Tensor-Class Recipe for MLX: https://huggingface.co/collections/Brooooooklyn/unsloth-nvfp4-tensor-class-recipe-for-mlx-macos-dgx-6a5e3a893ae031d023e72ccf

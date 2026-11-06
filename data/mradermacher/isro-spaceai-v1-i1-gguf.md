@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/isro-spaceai-v1-i1-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/Anoopsingh53/ISRO-SpaceAI-7B-Instruct)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/isro-spaceai-v1-i1-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/Anoopsingh53/ISRO-SpaceAI-7B-Instruct)
 - [Versión estática de cuantizaciones (sin imatrix)](https://huggingface.co/mradermacher/isro-spaceai-v1-GGUF)
 - [Página de solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)

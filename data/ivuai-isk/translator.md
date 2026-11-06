@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`IVUAI-ISK/translator` es un modelo publicado en HuggingFace por el usuario IVUAI-ISK bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: la unica informacion disponible en la ficha de HuggingFace se reduce a los metadatos de licencia y region, sin pipeline declarado, sin idiomas soportados, sin descripcion de arquitectura, tamano ni datos de entrenamiento. El nombre sugiere un proposito de traduccion automatica, pero esta funcion no esta documentada ni verificada en la informacion proporcionada.
+`IVUAI-ISK/translator` es un modelo publicado en Hugging Face por el usuario IVUAI-ISK bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: la unica informacion disponible en la ficha de Hugging Face se reduce a los metadatos de licencia y region, sin pipeline declarado, sin idiomas soportados, sin descripcion de arquitectura, tamano ni datos de entrenamiento. El nombre sugiere un proposito de traduccion automatica, pero esta funcion no esta documentada ni verificada en la informacion proporcionada.
 
 En el momento de redactar esta ficha (segun los datos de la plataforma) el modelo registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-11-01T07:17:14.000Z), lo que indica una publicacion reciente y sin actividad observable en la comunidad. No hay evidencia de evaluaciones, benchmarks ni uso en produccion.
 
@@ -67,10 +67,10 @@ No es posible establecer una comparativa rigurosa sin conocer el tamano, la arqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| IVUAI-ISK/translator | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Helsinki-NLP/opus-mt-* | ~75M por par | ~512 tokens | Apache 2.0 / CC-BY 4.0 (segun variante) | HuggingFace, ampliamente usado |
-| facebook/nllb-200 | 600M–54B (segun variante) | 512–1024 tokens | CC-BY-NC 4.0 (mayoria de variantes) | HuggingFace |
-| google/madlad-400 | 3B | 2048 tokens | Apache 2.0 / CC-BY 4.0 (segun variante) | HuggingFace |
+| IVUAI-ISK/translator | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Helsinki-NLP/opus-mt-* | ~75M por par | ~512 tokens | Apache 2.0 / CC-BY 4.0 (segun variante) | Hugging Face, ampliamente usado |
+| facebook/nllb-200 | 600M–54B (segun variante) | 512–1024 tokens | CC-BY-NC 4.0 (mayoria de variantes) | Hugging Face |
+| google/madlad-400 | 3B | 2048 tokens | Apache 2.0 / CC-BY 4.0 (segun variante) | Hugging Face |
 
 La comparacion con `IVUAI-ISK/translator` no puede completarse porque se desconocen sus parametros, contexto y rendimiento.
 
@@ -88,5 +88,5 @@ La comparacion con `IVUAI-ISK/translator` no puede completarse porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IVUAI-ISK/translator
+- Hugging Face: https://huggingface.co/IVUAI-ISK/translator
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

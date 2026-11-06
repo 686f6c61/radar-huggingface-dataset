@@ -110,7 +110,7 @@ No se dispone de comparativas con modelos de otros fabricantes (por ejemplo Llam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theykk/MiMo-V2.6-Flash-MOPD-UNCENSORED
+- Modelo en Hugging Face: https://huggingface.co/theykk/MiMo-V2.6-Flash-MOPD-UNCENSORED
 - Modelo base citado: `XiaomiMiMo/MiMo-V2.6-Flash-MOPD` (identificador mencionado en la model card; no se proporciona URL)
 - Modelo comparable citado: `dealignai/MiMo-V2.6-Flash-RL-UNCENSORED` (identificador mencionado en la model card; no se proporciona URL)
 - Base de la comparativa dealignai: `XiaomiMiMo/MiMo-V2.6-Flash-RL` (identificador mencionado en la model card; no se proporciona URL)

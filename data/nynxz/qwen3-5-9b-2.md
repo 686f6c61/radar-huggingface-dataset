@@ -91,7 +91,7 @@ La ventaja diferencial del LoRA frente a los dos checkpoints sin censura es el t
 
 ## Enlaces
 
-- [nynxz/Qwen3.5-9B en HuggingFace](https://huggingface.co/nynxz/Qwen3.5-9B)
+- [nynxz/Qwen3.5-9B en Hugging Face](https://huggingface.co/nynxz/Qwen3.5-9B)
 - [Qwen/Qwen3.5-9B (modelo base)](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive (checkpoint de origen)](https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive)
 - [nDimensional/Qwen3.5-9B-Uncensored-Safetensors (conversión usada para la diferencia)](https://huggingface.co/nDimensional/Qwen3.5-9B-Uncensored-Safetensors)

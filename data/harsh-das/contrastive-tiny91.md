@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Harsh-das/contrastive-tiny91` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se presenta como un modelo entrenado, sino como un andamiaje de código y configuración: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), según indica el propio autor, y no se reclama ninguna métrica de rendimiento. El nombre "tiny91" y el recuento real de parámetros (24.832) sitúan el artefacto en una escala meramente funcional, muy por debajo de cualquier ViT utilizable en producción.
+`Harsh-das/contrastive-tiny91` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se presenta como un modelo entrenado, sino como un andamiaje de código y configuración: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), según indica el propio autor, y no se reclama ninguna métrica de rendimiento. El nombre "tiny91" y el recuento real de parámetros (24.832) sitúan el artefacto en una escala meramente funcional, muy por debajo de cualquier ViT utilizable en producción.
 
 La relevancia es, por tanto, documental y de ingeniería: sirve para inspeccionar decisiones de arquitectura (atención dispersa, fusión Tucker, activación Swish, normalización ScaleNorm) antes de lanzar un entrenamiento completo. El autor lo enmarca explícitamente como un punto de partida para experimentos reproducibles, con receta por defecto basada en optimizador LAMB y planificador *step*.
 
@@ -78,13 +78,13 @@ La comparación es orientativa: este repositorio no es un modelo entrenado, por 
 - No se ha auditado robustez, equidad, sesgos ni transferencia de dominio; no existen datos para afirmar nada al respecto.
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí de falsa expectativa: el repositorio puede confundirse con un modelo listo para usar cuando no lo es.
 - Sin idiomas ni tokenizador: no admite texto de entrada ni tareas de lenguaje.
-- No hay pipeline declarado en HuggingFace, ni descargas, ni validación externa (0 descargas, 0 *likes* en el momento de la consulta).
+- No hay pipeline declarado en Hugging Face, ni descargas, ni validación externa (0 descargas, 0 *likes* en el momento de la consulta).
 - Implementación personalizada: las APIs genéricas de carga fallarán sin un adaptador explícito.
 - Los términos de la licencia BSD-3-Clause permiten uso comercial, pero exigen conservar el aviso de copyright y la cláusula de no respaldo; los términos de los datos externos deben revisarse por separado.
 - No debe emplearse en producción sin un entrenamiento completo, evaluación con conjunto de validación retenido, al menos tres semillas y una línea base de capacidad equivalente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harsh-das/contrastive-tiny91
+- Modelo en Hugging Face: https://huggingface.co/Harsh-das/contrastive-tiny91
 - Árbol de ficheros del repositorio: https://huggingface.co/Harsh-das/contrastive-tiny91/tree/main
 - Los resultados de búsqueda web proporcionados no contienen enlaces técnicos relevantes: son entradas de diccionario para la palabra inglesa "harsh" (Merriam-Webster, Cambridge Dictionary, WordReference, Linguee) y no guardan relación con el modelo. No se dispone de paper, blog, repositorio adicional ni demo.

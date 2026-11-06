@@ -87,6 +87,6 @@ No se proporcionan comparaciones con otros modelos en la información disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grKnight/pointcal-c
+- Hugging Face: https://huggingface.co/grKnight/pointcal-c
 - Código (GitHub): https://github.com/crimsonKn1ght/pointcal-c
 - Modelo base: https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K

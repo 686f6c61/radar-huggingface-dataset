@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/moe-new-models` es un repositorio publicado en HuggingFace por la organizacion Replicate bajo la libreria `kernels`. No se trata de un modelo de lenguaje, sino de un paquete de kernels de computo (operadores CUDA/HIP compilados) orientados a capas de mezcla de expertos (MoE, *Mixture of Experts*). El README indica explicitamente que contiene "MoE kernels de [vLLM](https://github.com/vllm-project/)", es decir, los nucleos de inferencia que vLLM utiliza para acelerar las capas MoE en GPU.
+`replicate/moe-new-models` es un repositorio publicado en Hugging Face por la organizacion Replicate bajo la libreria `kernels`. No se trata de un modelo de lenguaje, sino de un paquete de kernels de computo (operadores CUDA/HIP compilados) orientados a capas de mezcla de expertos (MoE, *Mixture of Experts*). El README indica explicitamente que contiene "MoE kernels de [vLLM](https://github.com/vllm-project/)", es decir, los nucleos de inferencia que vLLM utiliza para acelerar las capas MoE en GPU.
 
-La relevancia de este tipo de repositorios radica en el ecosistema `kernels` de HuggingFace: permite distribuir kernels precompilados como artefactos versionados en el Hub, de modo que las librerias de inferencia puedan cargarlos sin necesidad de compilar en tiempo de instalacion. En este caso, se ofrece una via para obtener kernels MoE de vLLM empaquetados.
+La relevancia de este tipo de repositorios radica en el ecosistema `kernels` de Hugging Face: permite distribuir kernels precompilados como artefactos versionados en el Hub, de modo que las librerias de inferencia puedan cargarlos sin necesidad de compilar en tiempo de instalacion. En este caso, se ofrece una via para obtener kernels MoE de vLLM empaquetados.
 
-El propio README incluye un aviso critico: a partir del 13 de septiembre de 2026 HuggingFace retirara los repositorios de kernels publicados con el tipo "model" (como `kernels-community/flash-attn3`), por lo que los consumidores deben migrar a una version reciente de la libreria `kernels`. La informacion disponible no permite determinar que variantes concretas de MoE (por ejemplo, grouped GEMM, fused MoE, quantized MoE) incluye el paquete, ni su tamano de modelo asociado, ya que no se describen en la model card.
+El propio README incluye un aviso critico: a partir del 13 de septiembre de 2026 Hugging Face retirara los repositorios de kernels publicados con el tipo "model" (como `kernels-community/flash-attn3`), por lo que los consumidores deben migrar a una version reciente de la libreria `kernels`. La informacion disponible no permite determinar que variantes concretas de MoE (por ejemplo, grouped GEMM, fused MoE, quantized MoE) incluye el paquete, ni su tamano de modelo asociado, ya que no se describen en la model card.
 
 ## Especificaciones tecnicas
 
@@ -25,14 +25,14 @@ El propio README incluye un aviso critico: a partir del 13 de septiembre de 2026
 
 No se trata de un modelo entrenado, por lo que no aplican datos de entrenamiento, composicion de dataset, RLHF ni DPO. El repositorio contiene kernels de computo para operaciones de capas MoE vinculados al proyecto vLLM. Un kernel MoE tipico cubre operaciones como el enrutamiento a expertos, el agrupamiento de tokens por experto (*token grouping* / *permutation*), las multiplicaciones matriciales agrupadas (*grouped GEMM*) y la reduccion o *scatter* de las salidas de vuelta a la secuencia original.
 
-El paquete se distribuye bajo el mecanismo `kernels` de HuggingFace, cuyo objetivo es ofrecer compilaciones AOT (anticipadas) y variantes especificas por arquitectura y *backend* (CUDA, ROCm, etc.), evitando la compilacion JIT en el entorno del usuario. El README no detalla que kernels concretos de vLLM se han empaquetado, ni el rango de GPUs soportadas, ni la version de vLLM de la que proceden. Tampoco se indica si hay variantes cuantizadas (FP8, INT8, INT4) ni si se cubren todo tipo de operadores MoE o solo un subconjunto.
+El paquete se distribuye bajo el mecanismo `kernels` de Hugging Face, cuyo objetivo es ofrecer compilaciones AOT (anticipadas) y variantes especificas por arquitectura y *backend* (CUDA, ROCm, etc.), evitando la compilacion JIT en el entorno del usuario. El README no detalla que kernels concretos de vLLM se han empaquetado, ni el rango de GPUs soportadas, ni la version de vLLM de la que proceden. Tampoco se indica si hay variantes cuantizadas (FP8, INT8, INT4) ni si se cubren todo tipo de operadores MoE o solo un subconjunto.
 
 ## Capacidades
 
 Este repositorio no ofrece capacidades de modelo (no genera texto, no razona, no ejecuta codigo). Sus capacidades son de infraestructura:
 
 - Proporciona kernels de computo para capas MoE en el contexto de inferencia de modelos de lenguaje.
-- Forma parte del ecosistema `kernels` de HuggingFace, permitiendo su carga desde librerias que consumen paquetes de kernels.
+- Forma parte del ecosistema `kernels` de Hugging Face, permitiendo su carga desde librerias que consumen paquetes de kernels.
 - Esta vinculado a vLLM como origen de los kernels, segun indica el README.
 - No incluye capacidades de tool calling, agentes, vision, audio ni modo de razonamiento.
 - No soporta idiomas: al no ser un modelo generativo, la fila de idiomas no aplica.
@@ -56,18 +56,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 - VRAM: no disponible. Al no ser un modelo, no aplica una estimacion por parametros ni cuantizacion. El consumo dependera del modelo MoE que el usuario ejecute con estos kernels.
 - GPU recomendadas: no disponibles. El README no especifica arquitecturas de GPU soportadas (por ejemplo, Ampere, Hopper, Blackwell) ni backend (CUDA, ROCm).
 - Compatibilidad con GPU de consumo: no confirmada. Un paquete de kernels puede compilarse para GPU de consumo (RTX 3090, 4090), pero la informacion proporcionada no lo detalla.
-- Opciones de despliegue: el paquete pertenece al ecosistema `kernels` de HuggingFace y esta vinculado a vLLM. No se mencionan integraciones con llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: el paquete pertenece al ecosistema `kernels` de Hugging Face y esta vinculado a vLLM. No se mencionan integraciones con llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo y no existe informacion suficiente para comparar kernels MoE concretos frente a alternativas. Como referencia de categoria, existen otros paquetes de la organizacion `kernels-community` en HuggingFace, pero la informacion de la busqueda no incluye datos comparables de rendimiento, cobertura de operadores ni soporte de GPU para `replicate/moe-new-models`.
+No disponible. Este repositorio no es un modelo y no existe informacion suficiente para comparar kernels MoE concretos frente a alternativas. Como referencia de categoria, existen otros paquetes de la organizacion `kernels-community` en Hugging Face, pero la informacion de la busqueda no incluye datos comparables de rendimiento, cobertura de operadores ni soporte de GPU para `replicate/moe-new-models`.
 
 ## Limitaciones y advertencias
 
 - No es un modelo: cualquier expectativa de generacion, razonamiento o capacidades linguisticas es incorrecta. Se trata de un paquete de kernels.
 - Documentacion insuficiente: el README no especifica version de vLLM de origen, kernels incluidos, GPUs soportadas ni variantes cuantizadas, lo que dificulta evaluar su utilidad en produccion.
-- Aviso de retirada de repositorios de tipo "model": el README advierte de que HuggingFace eliminara los repositorios de kernels publicados como "model" a partir del 13 de septiembre de 2026, y recomienda usar una version reciente de la libreria `kernels` para evitar disrupciones.
+- Aviso de retirada de repositorios de tipo "model": el README advierte de que Hugging Face eliminara los repositorios de kernels publicados como "model" a partir del 13 de septiembre de 2026, y recomienda usar una version reciente de la libreria `kernels` para evitar disrupciones.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion con las condiciones habituales de atribucion y aviso de licencia. No se indican restricciones adicionales en la informacion disponible.
 - Sesgos: no aplicable directamente; cualquier sesgo derivado seria atribuible al modelo MoE que se ejecute, no al paquete de kernels.
 - Riesgo de alucinacion: no aplicable.
@@ -76,8 +76,8 @@ No disponible. Este repositorio no es un modelo y no existe informacion suficien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/moe-new-models
+- Repositorio en Hugging Face: https://huggingface.co/replicate/moe-new-models
 - vLLM (origen declarado de los kernels): https://github.com/vllm-project/
-- Incidencias de la libreria `kernels` de HuggingFace (referenciado en el aviso del README): https://github.com/huggingface/kernels/issues/new
+- Incidencias de la libreria `kernels` de Hugging Face (referenciado en el aviso del README): https://github.com/huggingface/kernels/issues/new
 - Replicate (organizacion autora): https://replicate.com/
 - Replicate en GitHub: https://github.com/replicate

@@ -70,7 +70,7 @@ No se dispone de comparativas publicadas. El modelo base Qwen/Qwen3.5-9B-Base po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_12
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_12
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

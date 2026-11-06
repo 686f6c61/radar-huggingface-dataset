@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen11 es un ajuste fino (fine-tune) de Qwen2.5-7B-Instruct desarrollado por el usuario HungryDino y publicado en HuggingFace. El modelo base es la versión de Unsloth de Qwen2.5-7B-Instruct, un modelo de lenguaje instruccional de 7 mil millones de parámetros basado en la arquitectura transformer de Qwen2. Según el nombre del repositorio, el ajuste parece orientarse a la generación de texto con un enfoque en "worldview" (visión del mundo) de carácter político, aunque la model card no documenta el propósito, los datos de entrenamiento ni la metodología con detalle.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen11 es un ajuste fino (fine-tune) de Qwen2.5-7B-Instruct desarrollado por el usuario HungryDino y publicado en Hugging Face. El modelo base es la versión de Unsloth de Qwen2.5-7B-Instruct, un modelo de lenguaje instruccional de 7 mil millones de parámetros basado en la arquitectura transformer de Qwen2. Según el nombre del repositorio, el ajuste parece orientarse a la generación de texto con un enfoque en "worldview" (visión del mundo) de carácter político, aunque la model card no documenta el propósito, los datos de entrenamiento ni la metodología con detalle.
 
-La relevancia de este modelo es limitada y muy nicho: se trata de un experimento comunitario sin descargas ni likes registrados en el momento de la ficha, entrenado con las librerías Unsloth y TRL de HuggingFace, que permiten realizar ajustes finos eficientes (probablemente con LoRA, como sugiere el parámetro "r8" del nombre). No hay documentación de benchmarks, evaluaciones ni casos de uso validados, por lo que debe tratarse como un artefacto experimental.
+La relevancia de este modelo es limitada y muy nicho: se trata de un experimento comunitario sin descargas ni likes registrados en el momento de la ficha, entrenado con las librerías Unsloth y TRL de Hugging Face, que permiten realizar ajustes finos eficientes (probablemente con LoRA, como sugiere el parámetro "r8" del nombre). No hay documentación de benchmarks, evaluaciones ni casos de uso validados, por lo que debe tratarse como un artefacto experimental.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada y muy nicho: se trata de un experimento
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Qwen2.5-7B-Instruct, una variante optimizada de Qwen2.5-7B-Instruct de Alibaba. Qwen2.5-7B-Instruct es un transformer decoder denso de 7 mil millones de parámetros con soporte de contexto largo (hasta 128K tokens en la familia Qwen2.5, según la documentación oficial del modelo base, aunque este fine-tune no lo confirma). El entrenamiento del ajuste se realizó con Unsloth, una librería que acelera el fine-tuning (el autor declara una velocidad 2 veces superior) reduciendo el consumo de memoria, junto con la librería TRL (Transformer Reinforcement Learning) de HuggingFace.
+El modelo parte de unsloth/Qwen2.5-7B-Instruct, una variante optimizada de Qwen2.5-7B-Instruct de Alibaba. Qwen2.5-7B-Instruct es un transformer decoder denso de 7 mil millones de parámetros con soporte de contexto largo (hasta 128K tokens en la familia Qwen2.5, según la documentación oficial del modelo base, aunque este fine-tune no lo confirma). El entrenamiento del ajuste se realizó con Unsloth, una librería que acelera el fine-tuning (el autor declara una velocidad 2 veces superior) reduciendo el consumo de memoria, junto con la librería TRL (Transformer Reinforcement Learning) de Hugging Face.
 
 Los parámetros del nombre del repositorio ("p10_e10_r8_ct128") sugieren una configuración típica de LoRA: rank 8 (r8), posiblemente 10 épocas (e10) y un contexto de 128 (ct128, probablemente 128 tokens de chunk/contexto de entrenamiento, no la ventana de inferencia). No hay información sobre el dataset de entrenamiento, su tamaño, composición ni sobre el uso de técnicas como RLHF o DPO. El tamaño del repositorio (0,1 GB) indica que probablemente solo se publicaron los adaptadores LoRA y no los pesos completos fusionados.
 
@@ -39,7 +39,7 @@ Los parámetros del nombre del repositorio ("p10_e10_r8_ct128") sugieren una con
 - Experimentación con LoRA: sirve como ejemplo práctico de un ajuste con Unsloth y TRL con configuración concreta (rank 8, contexto corto), replicable con hardware modesto.
 - Generación de texto con perspectiva política concreta: para proyectos de análisis discursivo o simulación de puntos de vista en investigación en ciencias sociales, siempre con supervisión humana.
 - Red-teaming y evaluación de seguridad: base para probar cómo los fine-tunes no controlados pueden inducir sesgos o contenido parcializado en modelos abiertos.
-- Prototipado educativo: material de estudio para entender el pipeline completo de publicación de adaptadores en HuggingFace.
+- Prototipado educativo: material de estudio para entender el pipeline completo de publicación de adaptadores en Hugging Face.
 - Comparación de degradación de capacidades: útil para medir cuánto rendimiento general pierde un modelo instruct tras un fine-tune especializado con dataset estrecho.
 
 ## Benchmarks y rendimiento
@@ -79,8 +79,8 @@ La comparativa relevante es con su propio modelo base: salvo el sesgo ideológic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen11
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen11
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://huggingface.co/docs/trl
+- TRL (Hugging Face): https://huggingface.co/docs/trl
 - Qwen2.5 oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

@@ -1,7 +1,7 @@
 # zetyia/zety-1.5-fast
 
 ## Resumen
-zetyia/zety-1.5-fast es un repositorio alojado en HuggingFace bajo el identificador de autor zetyia. En el momento de redactar esta ficha, la informacion publica disponible se limita al identificador del modelo, la etiqueta de licencia MIT, la region de publicacion (us) y las fechas de creacion y ultima actualizacion (13 de septiembre de 2026). No se ha publicado model card con descripcion, arquitectura, tamano ni datos de entrenamiento: el unico contenido del README es la declaracion de licencia `license: mit`.
+zetyia/zety-1.5-fast es un repositorio alojado en Hugging Face bajo el identificador de autor zetyia. En el momento de redactar esta ficha, la informacion publica disponible se limita al identificador del modelo, la etiqueta de licencia MIT, la region de publicacion (us) y las fechas de creacion y ultima actualizacion (13 de septiembre de 2026). No se ha publicado model card con descripcion, arquitectura, tamano ni datos de entrenamiento: el unico contenido del README es la declaracion de licencia `license: mit`.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni cual es su arquitectura. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado, lo que indica que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad hasta la fecha.
 
@@ -74,7 +74,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 - Trazabilidad: no se identifica paper, informe tecnico ni repositorio de codigo asociado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/zetyia/zety-1.5-fast
+- Hugging Face: https://huggingface.co/zetyia/zety-1.5-fast
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

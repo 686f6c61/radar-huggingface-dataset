@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Halcyon-0.25B-GGUF es una cuantización en formato GGUF del modelo Halcyon-0.25B, desarrollado originalmente por Radical Numerics y publicada por el usuario loretoparisi en HuggingFace. El modelo base es un modelo autorregresivo de text-to-image de aproximadamente 248 millones de parámetros, lo que lo sitúa en el extremo más ligero de los modelos generativos de imágenes. La cuantización GGUF permite ejecutarlo mediante llama.cpp, facilitando su uso en hardware de consumo sin depender de frameworks de GPU pesados.
+Halcyon-0.25B-GGUF es una cuantización en formato GGUF del modelo Halcyon-0.25B, desarrollado originalmente por Radical Numerics y publicada por el usuario loretoparisi en Hugging Face. El modelo base es un modelo autorregresivo de text-to-image de aproximadamente 248 millones de parámetros, lo que lo sitúa en el extremo más ligero de los modelos generativos de imágenes. La cuantización GGUF permite ejecutarlo mediante llama.cpp, facilitando su uso en hardware de consumo sin depender de frameworks de GPU pesados.
 
 El problema que resuelve es doble: por un lado, Halcyon aborda la generación de imágenes mediante un enfoque autorregresivo (token a token) en lugar de difusión, y por otro, la versión GGUF resuelve la portabilidad, permitiendo inferencia local en CPUs y GPUs modestas. Su relevancia radica en la tendencia reciente de modelos de imagen extremadamente pequeños y eficientes, y en su derivación de la familia Qwen3, según indican sus etiquetas. Se trata de un repositorio con acceso restringido (gated), por lo que requiere aceptar las condiciones del autor antes de descargarlo.
 
@@ -65,7 +65,7 @@ Nota: la comparacion es orientativa; los modelos alternativos citados usan difus
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated en HuggingFace y requiere aceptar las condiciones del autor antes de la descarga.
+- Acceso restringido: el repositorio es gated en Hugging Face y requiere aceptar las condiciones del autor antes de la descarga.
 - Licencia "other" con upstream-unspecified: los terminos exactos para uso comercial no estan clarificados en la ficha; conviene revisar la licencia del modelo base de Radical Numerics antes de cualquier despliegue productivo.
 - No hay documentacion publicada sobre idiomas soportados ni sobre la calidad de los prompts en castellano.
 - Al tratarse de una cuantizacion de terceros (loretoparisi) con 0 descargas registradas, no existe historial de validacion comunitaria; pueden existir defectos en la conversion GGUF.
@@ -75,6 +75,6 @@ Nota: la comparacion es orientativa; los modelos alternativos citados usan difus
 
 ## Enlaces
 
-- Repositorio en HuggingFace (cuantizacion GGUF): https://huggingface.co/loretoparisi/Halcyon-0.25B-GGUF
+- Repositorio en Hugging Face (cuantizacion GGUF): https://huggingface.co/loretoparisi/Halcyon-0.25B-GGUF
 - Modelo base: https://huggingface.co/radicalnumerics/Halcyon-0.25B
 - Paper asociado (referenciado por etiqueta, contenido no verificado): arXiv:2610.26863

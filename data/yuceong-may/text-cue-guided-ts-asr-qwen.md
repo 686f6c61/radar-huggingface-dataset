@@ -86,7 +86,7 @@ El modelo propuesto obtiene menor CER en todos los conjuntos (entre 2,9 y 5,3 pu
 
 | Modelo | Parámetros | Entrada de identidad | CER (aishell1-ts, 5 car.) | SER (aishell1-ts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Text-Cue-Guided TS-ASR-Qwen | ~715 M | Pista textual de 2-5 caracteres | 1,83 | 13,90 | FunASR Model Open Source License 1.1 | HuggingFace + Space |
+| Text-Cue-Guided TS-ASR-Qwen | ~715 M | Pista textual de 2-5 caracteres | 1,83 | 13,90 | FunASR Model Open Source License 1.1 | Hugging Face + Space |
 | Unified-TS-ASR | 37 M | Pista textual + enrollment de 5 s | 5,12 | 37,98 | no disponible | Space de demostración |
 | Alternativas de ASR dirigido por enrollment (p. ej. variantes de TS-ASR sobre Conformer) | no disponible | Enrollment de voz | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ El modelo propuesto obtiene menor CER en todos los conjuntos (entre 2,9 y 5,3 pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen
+- Modelo en Hugging Face: https://huggingface.co/YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen
 - Demo (Space Unified-TS-ASR): https://huggingface.co/spaces/YuCeong-May/Unified-TS-ASR
 - Licencia del modelo: https://huggingface.co/YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen/blob/main/MODEL_LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B

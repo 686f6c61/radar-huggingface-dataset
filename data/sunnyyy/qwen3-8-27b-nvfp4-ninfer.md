@@ -49,7 +49,7 @@ El runtime NInfer esta disenado para una sola GPU y un solo modelo residente, co
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados estan declarados por el autor del modelo en el model-index de HuggingFace. No han sido verificados de forma independiente (campo `verified: false`).
+Los siguientes resultados estan declarados por el autor del modelo en el model-index de Hugging Face. No han sido verificados de forma independiente (campo `verified: false`).
 
 | Tarea | Dataset | Metrica | Resultado |
 |---|---|---|---|
@@ -95,8 +95,8 @@ La diferencia principal frente al checkpoint base es el tamano: el artifact NInf
 
 ## Enlaces
 
-- Repositorio HuggingFace del artifact: https://huggingface.co/sunnyyy/Qwen3.8-27B-nvfp4-NInfer
-- Repositorio HuggingFace de la version canónica (neroued): https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer
+- Repositorio Hugging Face del artifact: https://huggingface.co/sunnyyy/Qwen3.8-27B-nvfp4-NInfer
+- Repositorio Hugging Face de la version canónica (neroued): https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Repositorio de NInfer: https://github.com/Neroued/ninfer

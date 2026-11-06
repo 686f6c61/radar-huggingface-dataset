@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-Q4_K_M (este repositorio) | 1,1 B | 2048 tokens | Apache 2.0 | GGUF en HuggingFace, 0 descargas | Cuantizacion no oficial de un tercero |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1 B | 2048 tokens | Apache 2.0 | Pesos originales en HuggingFace | Referencia oficial del autor del modelo |
+| TinyLlama-1.1B-Chat-v1.0-Q4_K_M (este repositorio) | 1,1 B | 2048 tokens | Apache 2.0 | GGUF en Hugging Face, 0 descargas | Cuantizacion no oficial de un tercero |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (modelo base) | 1,1 B | 2048 tokens | Apache 2.0 | Pesos originales en Hugging Face | Referencia oficial del autor del modelo |
 | Modelos de la misma categoria (0,5 B - 2 B, tipo Qwen2.5, SmolLM2, Gemma 2 o Phi) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de estos modelos en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas de la misma franja de tamano no puede completarse con la informacion disponible: no se han proporcionado parametros, contextos, resultados de benchmarks ni condiciones de licencia de otros modelos, y no se deben inferir. Como criterio cualitativo, la ventaja diferencial de esta publicacion es el formato GGUF listo para llama.cpp y su licencia Apache 2.0, que facilita el uso comercial frente a alternativas con licencias mas restrictivas.
@@ -90,7 +90,7 @@ La comparacion cuantitativa con alternativas de la misma franja de tamano no pue
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/AriDiscoSquid/TinyLlama-1.1B-Chat-v1.0-Q4_K_M-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/AriDiscoSquid/TinyLlama-1.1B-Chat-v1.0-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Espacio GGUF-my-repo de ggml.ai utilizado para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

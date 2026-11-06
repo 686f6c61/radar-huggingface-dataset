@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/rlinf_libero_vla` es un archivo (archive) publicado en HuggingFace por el usuario davidwdw que reúne recetas de entrenamiento reproducibles de RLinf sobre OpenVLA-OFT para el benchmark LIBERO, junto con artefactos de modelo, checkpoints distribuidos, registros y resúmenes de evaluación. No se trata de un modelo empaquetado para inferencia directa, sino de un contenedor de artefactos de investigación en el ámbito de los modelos visión-lenguaje-acción (VLA) aplicados a manipulación robótica.
+`davidwdw/rlinf_libero_vla` es un archivo (archive) publicado en Hugging Face por el usuario davidwdw que reúne recetas de entrenamiento reproducibles de RLinf sobre OpenVLA-OFT para el benchmark LIBERO, junto con artefactos de modelo, checkpoints distribuidos, registros y resúmenes de evaluación. No se trata de un modelo empaquetado para inferencia directa, sino de un contenedor de artefactos de investigación en el ámbito de los modelos visión-lenguaje-acción (VLA) aplicados a manipulación robótica.
 
 La model card describe una estructura con cuatro directorios: `models/` (artefactos del modelo VLA base), `checkpoints/` (checkpoints de PPO distribuido por ejecución y paso global), `results/` (métricas, logs y salidas de TensorBoard) y `runs/` (logs en bruto y capturas de TensorBoard). La primera ejecución archivada es un experimento PPO de la tarea 3 sobre 4 GPU H20, completado el 18 de septiembre de 2026, cuyo checkpoint final reside en `checkpoints/2026-09-17_task3_ppo_4gpu_h20_gpu0126/global_step_100/`.
 
@@ -31,7 +31,7 @@ Su relevancia es acotada pero clara: en el ecosistema de VLA para robótica esca
 
 La informacion disponible indica que el modelo base es OpenVLA-OFT, una variante de modelo visión-lenguaje-acción orientada a control robótico, y que el entrenamiento se realiza con RLinf, una infraestructura de aprendizaje por refuerzo. La unica ejecucion documentada es un experimento de PPO distribuido sobre la tarea 3 del benchmark LIBERO, ejecutado en 4 GPU H20 y finalizado el 18 de septiembre de 2026. El checkpoint final archivado corresponde al paso global 100 de esa ejecucion.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas adicionales de RLHF o DPO mas alla del PPO citado. La model card menciona que las recetas (YAML, revision de codigo fuente e hiperparametros) se mantienen en un directorio independiente de recetas, fuera del repositorio de HuggingFace, y que los checkpoints distribuidos son artefactos binarios grandes que deberian gestionarse con Git LFS o un almacen de artefactos en lugar de historial Git convencional.
+No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas adicionales de RLHF o DPO mas alla del PPO citado. La model card menciona que las recetas (YAML, revision de codigo fuente e hiperparametros) se mantienen en un directorio independiente de recetas, fuera del repositorio de Hugging Face, y que los checkpoints distribuidos son artefactos binarios grandes que deberian gestionarse con Git LFS o un almacen de artefactos en lugar de historial Git convencional.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/rlinf_libero_vla | no disponible | no disponible | no disponible | no disponible | HuggingFace, 78,2 GB, 0 descargas |
+| davidwdw/rlinf_libero_vla | no disponible | no disponible | no disponible | no disponible | Hugging Face, 78,2 GB, 0 descargas |
 | OpenVLA (familia base citada) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | OpenVLA-OFT (variante citada en la model card) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | RLinf (infraestructura de RL citada) | no aplica (framework) | no aplica | no disponible | no disponible | no verificado en esta busqueda |
@@ -88,7 +88,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 - Ausencia de benchmarks publicados: el rendimiento de la politica no esta verificado de forma independiente y no se pueden citar tasas de exito concretas.
 - 0 descargas y 0 likes: no existe validacion por parte de la comunidad ni informes de terceros sobre la reproducibilidad real de la receta.
 - Referencias a rutas locales del autor (`/media/david/HDD/rlinf_libero_vla`, `/media/david/HDD/training_recipe/`) que no son portables y obligan a reconstruir la estructura de directorios.
-- La receta completa (YAML e hiperparametros) vive en un directorio independiente fuera del repositorio, de modo que el archivo de HuggingFace no es autosuficiente para reproducir el entrenamiento.
+- La receta completa (YAML e hiperparametros) vive en un directorio independiente fuera del repositorio, de modo que el archivo de Hugging Face no es autosuficiente para reproducir el entrenamiento.
 - Tamano elevado: 78,2 GB, con checkpoints de PPO distribuido que pueden ser incompatibles entre si si cambia la topologia de GPU o la version del framework.
 - Posible sobreajuste al benchmark LIBERO y, en particular, a la tarea 3; no hay evidencia de generalizacion a otras tareas ni de transferencia sim-a-real.
 - Sesgos conocidos, riesgo de alucinacion y limitaciones de contexto o idioma: no disponibles en la informacion proporcionada.
@@ -96,5 +96,5 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/rlinf_libero_vla
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/rlinf_libero_vla
 - No se han encontrado enlaces adicionales relevantes: los resultados de la busqueda web disponible corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo. No se dispone de enlaces a papers, blogs, repositorios de codigo ni demos en la informacion proporcionada.

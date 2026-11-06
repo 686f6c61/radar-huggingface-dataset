@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Multitask es un repositorio experimental publicado por el usuario yangteng97 en HuggingFace que contiene una implementacion propia de una Swin Transformer (Swin T) orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida unicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+Swin T for Multitask es un repositorio experimental publicado por el usuario yangteng97 en Hugging Face que contiene una implementacion propia de una Swin Transformer (Swin T) orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida unicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuacion de benchmark. El repositorio esta pensado como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada en la configuracion incluye atencion de consultas agrupadas (*grouped query attention*), fusion con compuertas (*gated fusion*), activacion swish y normalizacion layernorm. La model card etiqueta la escala como "giant", pero el recuento real de parametros leido del fichero safetensors es de 24.832 parametros, una cifra de aproximadamente 24,8 mil parametros que contradice de forma flagrante cualquier escala "giant" (que en la familia Swin convencional implicaria cientos de millones). Esta discrepancia debe tenerse en cuenta antes de usar el repositorio para cualquier fin.
 
@@ -66,10 +66,10 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparativa se li
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yangteng97/swin-t-multitask59 | 24.832 reales (escala "giant" declarada, no coherente) | No disponible | No publicado (checkpoint de inicializacion) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Swin Transformer T (original, Microsoft) | del orden de 28 millones (variante tiny) | Imagen (resolucion configurable) | Resultados publicados en ImageNet y COCO | MIT (repositorio original) | Ampliamente disponible en HuggingFace y repos oficiales |
-| Swin Transformer V2 T | del orden de 28 millones (variante tiny) | Imagen, con mejoras para resoluciones mayores | Resultados publicados en ImageNet, COCO y ADE20K | MIT (repositorio original) | Ampliamente disponible en HuggingFace |
-| ConvNeXt Tiny | del orden de 28 millones | Imagen | Resultados publicados en ImageNet y COCO | MIT (repositorio original) | Ampliamente disponible en HuggingFace |
+| yangteng97/swin-t-multitask59 | 24.832 reales (escala "giant" declarada, no coherente) | No disponible | No publicado (checkpoint de inicializacion) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Swin Transformer T (original, Microsoft) | del orden de 28 millones (variante tiny) | Imagen (resolucion configurable) | Resultados publicados en ImageNet y COCO | MIT (repositorio original) | Ampliamente disponible en Hugging Face y repos oficiales |
+| Swin Transformer V2 T | del orden de 28 millones (variante tiny) | Imagen, con mejoras para resoluciones mayores | Resultados publicados en ImageNet, COCO y ADE20K | MIT (repositorio original) | Ampliamente disponible en Hugging Face |
+| ConvNeXt Tiny | del orden de 28 millones | Imagen | Resultados publicados en ImageNet y COCO | MIT (repositorio original) | Ampliamente disponible en Hugging Face |
 
 La diferencia fundamental no es de rendimiento sino de estado: las alternativas son checkpoints entrenados con resultados verificables, mientras que este repositorio contiene un esqueleto de codigo con pesos de inicializacion. No procede una comparacion cuantitativa directa.
 
@@ -84,11 +84,11 @@ La diferencia fundamental no es de rendimiento sino de estado: las alternativas 
 - Al ser una implementacion propia, no se puede cargar con `AutoModel` ni con cargadores genericos sin escribir un adaptador; esto complica su integracion en pipelines estandar.
 - El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB, lo que sugiere ausencia de validacion por parte de la comunidad.
 - Uso en produccion: no recomendado en su estado actual; cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
-- Las fechas de creacion y actualizacion registradas en HuggingFace (2026-10-07) son las reportadas por la plataforma y no implican ninguna garantia de mantenimiento.
+- Las fechas de creacion y actualizacion registradas en Hugging Face (2026-10-07) son las reportadas por la plataforma y no implican ninguna garantia de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yangteng97/swin-t-multitask59
+- Hugging Face: https://huggingface.co/yangteng97/swin-t-multitask59
 - Repositorio original de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
 - Repositorio original de Swin Transformer V2: https://github.com/microsoft/Swin-Transformer
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs o demos asociados. Los resultados devueltos por la busqueda corresponden a tiendas de equipos informaticos sin relacion con este repositorio.

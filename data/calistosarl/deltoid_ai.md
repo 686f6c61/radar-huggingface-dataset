@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deltoid_AI es un repositorio de modelo publicado en HuggingFace por el usuario Calistosarl (ID `Calistosarl/Deltoid_AI`). El repositorio no incluye model card funcional: el unico contenido del README es el bloque de metadatos YAML con la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. En el momento de la consulta acumula 0 descargas y 1 like, y la fecha de creacion y ultima actualizacion registradas es el 25 de septiembre de 2026.
+Deltoid_AI es un repositorio de modelo publicado en Hugging Face por el usuario Calistosarl (ID `Calistosarl/Deltoid_AI`). El repositorio no incluye model card funcional: el unico contenido del README es el bloque de metadatos YAML con la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. En el momento de la consulta acumula 0 descargas y 1 like, y la fecha de creacion y ultima actualizacion registradas es el 25 de septiembre de 2026.
 
 No hay informacion publica disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia (el campo `pipeline` aparece como no disponible). Tampoco se dispone de resultados de benchmarks ni de ejemplos de uso. Cualquier evaluacion tecnica del modelo es, por tanto, imposible con los datos actuales.
 
@@ -74,7 +74,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Calistosarl/Deltoid_AI
+- Repositorio en Hugging Face: https://huggingface.co/Calistosarl/Deltoid_AI
 - Archivo de licencia declarado: LICENSE (referenciado como `license_link: LICENSE` dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - No se han encontrado enlaces relevantes al modelo en la busqueda web realizada; los resultados devueltos corresponden a sitios de preguntas y respuestas sin relacion con este repositorio.

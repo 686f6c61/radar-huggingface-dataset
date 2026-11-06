@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sock-heist-6m-run-1101-1726 | Política RL robótica (ONNX) | no disponible | 61-D por paso | no disponible | HuggingFace (0 descargas) |
+| sock-heist-6m-run-1101-1726 | Política RL robótica (ONNX) | no disponible | 61-D por paso | no disponible | Hugging Face (0 descargas) |
 | Otras políticas microduck | Política RL robótica | no disponible | no disponible | no disponible | no disponible en la información |
 | Políticas de locomoción cuadrúpeda (p. ej. mujoco/mjlab) | Política RL robótica | no disponible | no disponible | no disponible | no disponible en la información |
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-1726
+- Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-1726
 - Repositorio de entrenamiento: https://github.com/RSanchez996/microduck-challenges.git
 - Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

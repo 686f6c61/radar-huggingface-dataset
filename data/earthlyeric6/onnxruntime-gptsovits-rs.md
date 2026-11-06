@@ -4,7 +4,7 @@
 
 El modelo `EarthlyEric6/onnxruntime-gptsovits-rs` es un paquete de inferencia ONNX para el sistema de síntesis de voz GPT-SoVITS, desarrollado por EarthlyEric6. Se trata de un servidor TTS escrito en Rust que utiliza ONNX Runtime para cargar y ejecutar los modelos exportados de GPT-SoVITS, un sistema de clonación y generación de voz basado en una arquitectura híbrida de GPT y difusión. El objetivo es ofrecer una implementación ligera y de alto rendimiento para desplegar TTS en producción, aprovechando las optimizaciones de ONNX Runtime en múltiples plataformas.
 
-Aunque el repositorio de HuggingFace no proporciona detalles técnicos específicos del modelo (parámetros, arquitectura interna, etc.), el proyecto se enmarca en el ecosistema GPT-SoVITS, que es conocido por su capacidad de clonar voces con pocos segundos de audio de referencia y generar habla natural en varios idiomas. La relevancia actual radica en la creciente demanda de soluciones TTS de código abierto, eficientes y desplegables en entornos con recursos limitados, donde Rust y ONNX Runtime ofrecen ventajas de latencia y consumo.
+Aunque el repositorio de Hugging Face no proporciona detalles técnicos específicos del modelo (parámetros, arquitectura interna, etc.), el proyecto se enmarca en el ecosistema GPT-SoVITS, que es conocido por su capacidad de clonar voces con pocos segundos de audio de referencia y generar habla natural en varios idiomas. La relevancia actual radica en la creciente demanda de soluciones TTS de código abierto, eficientes y desplegables en entornos con recursos limitados, donde Rust y ONNX Runtime ofrecen ventajas de latencia y consumo.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ Este paquete ONNX se diferencia por su implementacion en Rust y el uso de ONNX R
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EarthlyEric6/onnxruntime-gptsovits-rs
+- Repositorio Hugging Face: https://huggingface.co/EarthlyEric6/onnxruntime-gptsovits-rs
 - Repositorio GitHub del proyecto gptsovits-rs: https://github.com/EarthlyEric/gptsovits-rs
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/
 - Guia de exportacion a ONNX de GPT-SoVITS: https://deepwiki.com/RVC-Boss/GPT-SoVITS/7.2-model-export-and-onnx

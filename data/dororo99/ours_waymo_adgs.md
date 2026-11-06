@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Dororo99/Ours_Waymo_ADGS
+- Repositorio de Hugging Face: https://huggingface.co/Dororo99/Ours_Waymo_ADGS
 - Código fuente de AD-GS: https://github.com/Dororo99/AD-GS
 - Repositorio relacionado S3GS: https://github.com/Dororo99/Ours_S3GS_Waymo
 - Waymo Open Dataset (términos de licencia): https://waymo.com/open/terms/

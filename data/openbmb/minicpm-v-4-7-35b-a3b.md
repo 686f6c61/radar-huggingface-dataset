@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-V-4.7-35B-A3B es un modelo multimodal (vision-lenguaje) publicado por OpenBMB en HuggingFace bajo el identificador openbmb/MiniCPM-V-4.7-35B-A3B. El repositorio contiene pesos en formato safetensors con un total de 35.212.875.824 parametros (aproximadamente 35,2 mil millones) y un tamano de 70,4 GB, lo que corresponde a pesos almacenados en precision de 16 bits. El sufijo "A3B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con unos 3.000 millones de parametros activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
+MiniCPM-V-4.7-35B-A3B es un modelo multimodal (vision-lenguaje) publicado por OpenBMB en Hugging Face bajo el identificador openbmb/MiniCPM-V-4.7-35B-A3B. El repositorio contiene pesos en formato safetensors con un total de 35.212.875.824 parametros (aproximadamente 35,2 mil millones) y un tamano de 70,4 GB, lo que corresponde a pesos almacenados en precision de 16 bits. El sufijo "A3B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con unos 3.000 millones de parametros activos por token, aunque este dato no aparece confirmado de forma explicita en la informacion disponible.
 
 El modelo pertenece a la familia MiniCPM-V, especializada en tareas de vision y lenguaje sobre la base de los modelos MiniCPM de OpenBMB. Frente a versiones anteriores de la familia, esta variante escala el numero total de parametros hasta el rango de 35B, lo que situa al modelo en la categoria de sistemas multimodales de gran tamano desplegables en hardware de servidor con una o dos GPU profesionales. La combinacion de un total elevado de parametros con un numero reducido de parametros activos, si se confirma la arquitectura MoE, permitiria obtener calidad cercana a modelos densos de 30B+ con un coste de inferencia notablemente inferior.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de otros modelos en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-35B-A3B | 35,2B totales (activos no disponibles) | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| MiniCPM-V-4.7-35B-A3B | 35,2B totales (activos no disponibles) | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas comparables de la misma categoria (VLM de 30B+ o MoE multimodal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,5 +90,5 @@ No se dispone de datos verificados de otros modelos en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CalDec Ultra 380M es un modelo de decisión de tipo clasificador, no un generador de texto. Lo desarrolla el usuario de HuggingFace kgrozdanovski y consiste en una cabeza de decisión en formato Laya montada sobre el encoder dmis-lab/UltraBERT-380M. Recibe un estado (por ejemplo, el contenido de una página web recién recuperada) junto con preguntas cerradas y devuelve respuestas y probabilidades en una sola pasada del encoder, sin decodificación autorregresiva.
+CalDec Ultra 380M es un modelo de decisión de tipo clasificador, no un generador de texto. Lo desarrolla el usuario de Hugging Face kgrozdanovski y consiste en una cabeza de decisión en formato Laya montada sobre el encoder dmis-lab/UltraBERT-380M. Recibe un estado (por ejemplo, el contenido de una página web recién recuperada) junto con preguntas cerradas y devuelve respuestas y probabilidades en una sola pasada del encoder, sin decodificación autorregresiva.
 
 El modelo resuelve un problema muy concreto en asistentes personales: tomar decisiones tipadas (sí/no, elección entre opciones, puntuación) sobre estados largos, de hasta 8.192 tokens, con latencia baja. Frente a un modelo generativo, elimina el coste de generar texto y permite evaluar todas las preguntas de un mismo caso en una única inferencia, lo que abarata el filtrado previo de acciones, la detección de inyecciones de prompt y el enrutado de herramientas.
 
@@ -103,13 +103,13 @@ Fuera de su dominio, en un subconjunto de nueve benchmarks del Jev Decision Inde
 
 | Modelo | Parametros | Contexto | Assistant test | Long-state test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CalDec Ultra 380M | 404 M | 8.192 | 0,848 | 0,734 | apache-2.0 | Pesos abiertos en HuggingFace |
-| CalDec Ultra 150M | no disponible (nombre comercial: 150M) | no disponible | 0,834 | 0,722 | no disponible | Pesos abiertos en HuggingFace |
-| CalDec Laya | 421 M | no disponible | 0,823 | 0,563 | no disponible | Pesos abiertos en HuggingFace |
-| CalDec GLiNER | no disponible | 8.192 (evaluado recortado a 2.048) | 0,843 | 0,614 | no disponible | Pesos abiertos en HuggingFace |
+| CalDec Ultra 380M | 404 M | 8.192 | 0,848 | 0,734 | apache-2.0 | Pesos abiertos en Hugging Face |
+| CalDec Ultra 150M | no disponible (nombre comercial: 150M) | no disponible | 0,834 | 0,722 | no disponible | Pesos abiertos en Hugging Face |
+| CalDec Laya | 421 M | no disponible | 0,823 | 0,563 | no disponible | Pesos abiertos en Hugging Face |
+| CalDec GLiNER | no disponible | 8.192 (evaluado recortado a 2.048) | 0,843 | 0,614 | no disponible | Pesos abiertos en Hugging Face |
 | Jev 1.13 | no disponible (modelo cerrado) | no disponible | 0,836 (zero-shot) | no disponible | propietaria | Solo API |
-| GLiNER2.5-Decide | no disponible | no disponible | 0,650 | no disponible | no disponible | Pesos abiertos en HuggingFace |
-| Laya base | 421 M | no disponible | 0,557 | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| GLiNER2.5-Decide | no disponible | no disponible | 0,650 | no disponible | no disponible | Pesos abiertos en Hugging Face |
+| Laya base | 421 M | no disponible | 0,557 | no disponible | no disponible | Pesos abiertos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -127,7 +127,7 @@ Fuera de su dominio, en un subconjunto de nueve benchmarks del Jev Decision Inde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgrozdanovski/caldec-ultra-380m
+- Modelo en Hugging Face: https://huggingface.co/kgrozdanovski/caldec-ultra-380m
 - Modelo base UltraBERT-380M: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Variante de 150M: https://huggingface.co/kgrozdanovski/caldec-ultra-150m
 - Variante CalDec Laya: https://huggingface.co/kgrozdanovski/caldec-v1-laya

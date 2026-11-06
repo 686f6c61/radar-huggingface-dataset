@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un repositorio experimental publicado en HuggingFace por el usuario kunle-cr85x. No se trata de un modelo entrenado y listo para producción, sino de una implementación de referencia de una arquitectura denominada "Mixer" orientada a tareas de generación, con una configuración deliberadamente pequeña y con un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+Mixer for Generation es un repositorio experimental publicado en Hugging Face por el usuario kunle-cr85x. No se trata de un modelo entrenado y listo para producción, sino de una implementación de referencia de una arquitectura denominada "Mixer" orientada a tareas de generación, con una configuración deliberadamente pequeña y con un checkpoint de inicialización (`model.safetensors`) pensado únicamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El modelo tiene únicamente 49.600 parámetros totales (aproximadamente 0,05 millones), lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en tareas reales. La arquitectura declarada combina atención dispersa (sparse attention), fusión tensorial (tensor fusion), activación mish y normalización por lotes (batchnorm). Según la model card, el entrenamiento por defecto usaría el optimizador novograd con un schedule exponencial, aunque no hay evidencia de que se haya completado ninguna ejecución.
 
@@ -82,5 +82,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kunle-cr85x/mixer-generation
+- Hugging Face: https://huggingface.co/kunle-cr85x/mixer-generation
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a un tema sin relacion (The Wing Girl Method) y no se incluyen por no ser pertinentes.

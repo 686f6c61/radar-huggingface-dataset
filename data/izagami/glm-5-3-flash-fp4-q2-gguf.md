@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/izagami/GLM-5.3-Flash-FP4-Q2-GGUF
+- Hugging Face: https://huggingface.co/izagami/GLM-5.3-Flash-FP4-Q2-GGUF
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local
 - GGUF de referencia (Unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Motor de inferencia XeStrata: https://github.com/MistVVK/XeStrata

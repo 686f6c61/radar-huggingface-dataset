@@ -68,9 +68,9 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek Coder 6.7B Base | 6,7B | 16K | deepseek-license | Ingles, chino, codigo | HuggingFace |
-| CodeLlama 7B Base | ~7B | 16K | Llama 2 (custom) | Ingles, codigo | HuggingFace |
-| StarCoderBase 15.5B | 15,5B | 8K | BigCode OpenRAIL-M | Multilingue de programacion | HuggingFace |
+| DeepSeek Coder 6.7B Base | 6,7B | 16K | deepseek-license | Ingles, chino, codigo | Hugging Face |
+| CodeLlama 7B Base | ~7B | 16K | Llama 2 (custom) | Ingles, codigo | Hugging Face |
+| StarCoderBase 15.5B | 15,5B | 8K | BigCode OpenRAIL-M | Multilingue de programacion | Hugging Face |
 
 Nota: los datos de modelos comparables corresponden a informacion general de la comunidad y pueden variar; consultense las fichas oficiales de cada modelo para valores definitivos. No se dispone de comparativas de rendimiento numericas en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ Nota: los datos de modelos comparables corresponden a informacion general de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
+- Hugging Face: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Pagina principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek Coder: https://coder.deepseek.com/

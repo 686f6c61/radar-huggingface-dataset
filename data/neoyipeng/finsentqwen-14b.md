@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinSentQwen-14B es un adaptador LoRA con una cabeza de clasificación de 3 clases entrenado sobre el modelo base Qwen/Qwen3-14B. Lo desarrolla el usuario de HuggingFace neoyipeng y su función es analizar sentimiento financiero en noticias en inglés: recibe un pasaje de noticia junto con el nombre de una empresa y etiqueta cómo afecta ese pasaje a dicha compañía en cinco aspectos distintos (rendimiento financiero, tracción comercial, operaciones y suministro, perspectivas y expectativas, y sentimiento general). Cada aspecto se clasifica como positivo, negativo o sin señal, todo en un único forward pass.
+FinSentQwen-14B es un adaptador LoRA con una cabeza de clasificación de 3 clases entrenado sobre el modelo base Qwen/Qwen3-14B. Lo desarrolla el usuario de Hugging Face neoyipeng y su función es analizar sentimiento financiero en noticias en inglés: recibe un pasaje de noticia junto con el nombre de una empresa y etiqueta cómo afecta ese pasaje a dicha compañía en cinco aspectos distintos (rendimiento financiero, tracción comercial, operaciones y suministro, perspectivas y expectativas, y sentimiento general). Cada aspecto se clasifica como positivo, negativo o sin señal, todo en un único forward pass.
 
 El modelo no es un LLM generativo autónomo: conserva el modelo base Qwen3-14B congelado en cuantización 4-bit NF4 y añade un adaptador QLoRA (r=16, alpha=32) más una cabeza de puntuación de 3 clases que lee el último token de cada línea de aspecto. Está pensado para pipelines de análisis de noticias financieras y clasificación estructurada a bajo coste (4,3 horas de entrenamiento en 2×T4, inferencia a unos 843 segundos de T4 por cada 1.000 pasajes).
 
@@ -80,7 +80,7 @@ El corte de 2022 es demasiado pequeño para interpretarlo. F1 por clase en aspec
 
 | Modelo | Parámetros | Contexto | Tarea | Macro-F1 sentimiento general | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| FinSentQwen-14B | LoRA sobre Qwen3-14B | 1.024 tokens | Clasificación de sentimiento financiero multi-aspecto | 0,835 | Apache-2.0 | HuggingFace (neoyipeng/FinSentQwen-14B) |
+| FinSentQwen-14B | LoRA sobre Qwen3-14B | 1.024 tokens | Clasificación de sentimiento financiero multi-aspecto | 0,835 | Apache-2.0 | Hugging Face (neoyipeng/FinSentQwen-14B) |
 | GPT-6.1 (profesor de etiquetas) | No disponible | No disponible | Etiquetado de sentimiento financiero | 0,803 | Propietaria | Comercial (API) |
 | Claude Opus (etiquetador gold) | No disponible | No disponible | Etiquetado de sentimiento financiero | 0,936 (techo de acuerdo entre etiquetados Opus) | Propietaria | Comercial (API) |
 | FinBERT y derivados | No disponible en la información | No disponible | Clasificación de sentimiento financiero | No disponible | No disponible | No disponible |
@@ -102,7 +102,7 @@ No se dispone de datos comparativos con FinBERT u otros clasificadores de sentim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neoyipeng/FinSentQwen-14B
+- Modelo en Hugging Face: https://huggingface.co/neoyipeng/FinSentQwen-14B
 - Dataset de entrenamiento: https://huggingface.co/datasets/neoyipeng/FinSentQwen-data
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Voice of America: https://www.voanews.com/p/5338.html

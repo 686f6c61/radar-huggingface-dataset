@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`madhavbhayani/playchess` es un repositorio publicado en HuggingFace por el usuario madhavbhayani bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia. No se especifica arquitectura, tamano, contexto, idiomas ni pipeline de uso, y el tamano del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos o que el contenido es practicamente vacio.
+`madhavbhayani/playchess` es un repositorio publicado en Hugging Face por el usuario madhavbhayani bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia. No se especifica arquitectura, tamano, contexto, idiomas ni pipeline de uso, y el tamano del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos o que el contenido es practicamente vacio.
 
 Por tanto, no es posible determinar que problema resuelve ni que capacidades ofrece mas alla de lo que sugiere su nombre (`playchess`), que apunta a un posible experimento relacionado con ajedrez. No hay evidencia de que sea un modelo entrenado, un agente, un entorno de RL o un simple placeholder.
 
@@ -67,11 +67,11 @@ No disponible. No se conocen modelos comparables porque no se dispone de informa
 - Model card practicamente vacia: solo declara la licencia MIT, sin descripcion, sin ejemplos y sin instrucciones de uso.
 - Sin pesos publicados o con tamano de repositorio de 0.0 GB: no es posible descargar ni ejecutar el modelo segun la informacion disponible.
 - Sin datos sobre sesgos, alucinacion o limitaciones de contexto e idioma.
-- Sin pipeline declarado en HuggingFace: no se puede confirmar si es un modelo, un dataset, un espacio o un artefacto de otro tipo.
+- Sin pipeline declarado en Hugging Face: no se puede confirmar si es un modelo, un dataset, un espacio o un artefacto de otro tipo.
 - Licencia MIT permite uso comercial y modificacion, pero al no haber contenido tecnico documentado, la licencia por si sola no garantiza que el artefacto sea utilizable.
 - No apto para produccion sin una verificacion previa del contenido real del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhavbhayani/playchess
+- Hugging Face: https://huggingface.co/madhavbhayani/playchess
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

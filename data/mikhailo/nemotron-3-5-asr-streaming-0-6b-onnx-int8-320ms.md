@@ -18,7 +18,7 @@ El modelo base maneja 40 locales mediante un prompt de idioma y emplea una arqui
 | Longitud de contexto | No aplica como ventana de tokens; procesamiento por chunks de 320 ms con caches recurrentes (encoder con 24 capas, cache k/v de forma [B,8,56,128]) |
 | Tipos de cuantizacion | int8 dinamico (solo MatMuls de feed-forward del encoder, pesos per-channel y activaciones cuantizadas por llamada); tambien disponible fp32 |
 | Idiomas soportados | 40 locales segun la model card del modelo base; listado concreto no disponible |
-| Licencia | OpenMDW-1.1 (identificador `other` en HuggingFace) |
+| Licencia | OpenMDW-1.1 (identificador `other` en Hugging Face) |
 | Formato de pesos | ONNX (grafos para onnxruntime: `encoder_320ms_first`, `encoder_320ms`, `decoder`, `joiner`) |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / chunk | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-int8-320ms | ~0,6B | Chunks de 320 ms con caches | WER 17,34% en FLEURS ucraniano; RTF 0,47 (Xeon AMX, int8) | OpenMDW-1.1 | HuggingFace, export no oficial |
-| nvidia/nemotron-3.5-asr-streaming-0.6b (fp32, base) | ~0,6B | Chunks de 320 ms con caches | WER 17,45% en FLEURS ucraniano; RTF 0,84 (Xeon AMX, fp32) | OpenMDW-1.1 | HuggingFace, modelo oficial |
+| Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-int8-320ms | ~0,6B | Chunks de 320 ms con caches | WER 17,34% en FLEURS ucraniano; RTF 0,47 (Xeon AMX, int8) | OpenMDW-1.1 | Hugging Face, export no oficial |
+| nvidia/nemotron-3.5-asr-streaming-0.6b (fp32, base) | ~0,6B | Chunks de 320 ms con caches | WER 17,45% en FLEURS ucraniano; RTF 0,84 (Xeon AMX, fp32) | OpenMDW-1.1 | Hugging Face, modelo oficial |
 | Otras alternativas de ASR en streaming | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos con otros sistemas ASR (por ejemplo, variantes de Whisper en streaming) en la informacion proporcionada, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -96,7 +96,7 @@ No se dispone de datos comparativos con otros sistemas ASR (por ejemplo, variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-int8-320ms
+- Modelo en Hugging Face: https://huggingface.co/Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-int8-320ms
 - Modelo base oficial: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Repositorio de exportacion previo: `codavidgarcia/nemotron-3.5-asr-streaming-onnx` (Apache-2.0); URL no disponible en la informacion proporcionada

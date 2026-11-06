@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishekmehtaova/clip-multitask-medium` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP en PyTorch, orientada a experimentos multitarea. No es un modelo preentrenado ni un release listo para producción: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, con una configuración de escala declarada como "small" pese a que el nombre del repositorio indica "medium". El checkpoint incluido, `model.safetensors`, es una inicialización válida para pruebas de humo, no un checkpoint entrenado ni evaluado.
+`abhishekmehtaova/clip-multitask-medium` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP en PyTorch, orientada a experimentos multitarea. No es un modelo preentrenado ni un release listo para producción: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, con una configuración de escala declarada como "small" pese a que el nombre del repositorio indica "medium". El checkpoint incluido, `model.safetensors`, es una inicialización válida para pruebas de humo, no un checkpoint entrenado ni evaluado.
 
 El dato de pesos real extraído del fichero safetensors indica 24.832 parámetros totales, una cifra minúscula en comparación con cualquier CLIP de referencia de la literatura (del orden de centenas de millones de parámetros). El repositorio ocupa 0,0 GB, no registra descargas ni "likes", no declara pipeline de inferencia y no publica idiomas soportados. La licencia es MIT y los únicos artefactos presentes son el script de inferencia, la configuración de arquitectura, los argumentos de entrenamiento por defecto, el README y el checkpoint de inicialización.
 
@@ -86,6 +86,6 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekmehtaova/clip-multitask-medium
+- Modelo en Hugging Face: https://huggingface.co/abhishekmehtaova/clip-multitask-medium
 - Ficheros referenciados en la model card: `inference.py` (artefacto principal con el ejemplo de prueba de humo), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización), `README.md` (documentación).
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web no ha devuelto enlaces relacionados con este modelo.

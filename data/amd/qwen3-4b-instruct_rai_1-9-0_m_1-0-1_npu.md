@@ -6,7 +6,7 @@ El modelo `amd/Qwen3-4B-Instruct_rai_1.9.0_m_1.0.1_npu` es una distribucion del 
 
 Se trata, por tanto, de un artefacto de despliegue mas que de un modelo entrenado desde cero: AMD toma los pesos de Qwen3-4B-Instruct (licencia Apache 2.0) y los exporta a ONNX para que puedan ejecutarse en hardware Ryzen AI con aceleracion NPU, reduciendo el consumo energetico y liberando la GPU o la CPU del sistema. El repositorio ocupa 3,4 GB, coherente con un modelo de 4.000 millones de parametros en precision reducida.
 
-Su relevancia actual radica en que permite ejecutar un modelo de razonamiento de 4B en portatiles y mini-PC con Ryzen AI sin depender de una GPU dedicada, algo interesante para inferencia local en entornos de desarrollo. El acceso esta restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+Su relevancia actual radica en que permite ejecutar un modelo de razonamiento de 4B en portatiles y mini-PC con Ryzen AI sin depender de una GPU dedicada, algo interesante para inferencia local en entornos de desarrollo. El acceso esta restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen3-4B-Instruct_rai_1.9.0_m_1.0.1_npu | 4B | no disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en HuggingFace |
-| Qwen3-4B-Instruct (original) | 4B | no disponible | safetensors | Apache 2.0 | Publico en HuggingFace |
+| amd/Qwen3-4B-Instruct_rai_1.9.0_m_1.0.1_npu | 4B | no disponible | ONNX (NPU Ryzen AI) | Apache 2.0 | Gated en Hugging Face |
+| Qwen3-4B-Instruct (original) | 4B | no disponible | safetensors | Apache 2.0 | Publico en Hugging Face |
 | Otros empaquetados ONNX para NPU de 4B | no disponible | no disponible | ONNX | no disponible | no disponible |
 
 La comparativa directa mas relevante es con el Qwen3-4B-Instruct original: mismas capacidades y licencia, pero el artefacto de AMD anade la compilacion para NPU a costa de un acceso restringido y de un formato menos portable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Dependencia de hardware: el paquete esta compilado para la NPU de Ryzen AI con RAI 1.9.0; no es un artefacto portable a otras plataformas sin reconversion.
 - Idiomas: los metadatos declaran solo ingles, pese a que el modelo base es multilingue; el soporte real de otros idiomas en este empaquetado no esta confirmado.
 - Riesgo de alucinacion: inherente a un modelo de 4B; conviene validar salidas en tareas factuales.
@@ -81,7 +81,7 @@ La comparativa directa mas relevante es con el Qwen3-4B-Instruct original: misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3-4B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3-4B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen3-4B-Instruct: no disponible en la informacion proporcionada
 - Documentacion de Ryzen AI / RAI: no disponible en la informacion proporcionada
 - Paper o blog de AMD sobre el empaquetado: no disponible en la informacion proporcionada

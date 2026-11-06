@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `farzintamimi/food_no_food_classifier_distilbert_base_uncased` es un clasificador de texto binario que determina si un texto está relacionado con comida o no. Se trata de un fine-tuning de `distilbert/distilbert-base-uncased`, un modelo transformer encoder de 66,9 millones de parámetros, entrenado con un dataset no especificado por el autor. El modelo fue generado automáticamente mediante el `Trainer` de HuggingFace y alcanza una precisión del 100 % en el conjunto de evaluación según la model card, aunque no se detallan los datos de entrenamiento ni el proceso de validación.
+El modelo `farzintamimi/food_no_food_classifier_distilbert_base_uncased` es un clasificador de texto binario que determina si un texto está relacionado con comida o no. Se trata de un fine-tuning de `distilbert/distilbert-base-uncased`, un modelo transformer encoder de 66,9 millones de parámetros, entrenado con un dataset no especificado por el autor. El modelo fue generado automáticamente mediante el `Trainer` de Hugging Face y alcanza una precisión del 100 % en el conjunto de evaluación según la model card, aunque no se detallan los datos de entrenamiento ni el proceso de validación.
 
 La relevancia de este modelo radica en su simplicidad y bajo coste computacional: al estar basado en DistilBERT, ofrece una alternativa ligera para tareas de clasificación de texto en entornos con recursos limitados. Sin embargo, la falta de transparencia sobre el dataset y el sobreajuste aparente (accuracy 1.0) limitan su uso en producción sin una evaluación adicional. El modelo está disponible bajo licencia Apache 2.0 y los pesos se distribuyen en formato `safetensors`.
 
@@ -53,12 +53,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: el modelo tiene 66,9 millones de parámetros. En FP32 ocupa aproximadamente 268 MB, en FP16 unos 134 MB y en int8 unos 67 MB. Por tanto, cabe en GPUs con al menos 1 GB de VRAM, como una NVIDIA GTX 1050 Ti o superior.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente; también puede ejecutarse en CPU con razonable velocidad para inferencia por lotes pequeños.
 - Compatibilidad con consumer GPU: sí, es adecuado para GPUs de gama baja y media.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, y puede exportarse a formatos como TorchScript o TensorRT. También se puede servir con vLLM o TGI, aunque al ser un modelo pequeño no es necesario.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, y puede exportarse a formatos como TorchScript o TensorRT. También se puede servir con vLLM o TGI, aunque al ser un modelo pequeño no es necesario.
 - Latencia y throughput: no se dispone de datos medidos; en una GPU moderna (RTX 3090) se espera una latencia de pocos milisegundos por muestra y un throughput de cientos de muestras por segundo.
 
 ## Comparativa con modelos similares
 
-Se han encontrado dos modelos prácticamente idénticos en HuggingFace: `Alex1-ai/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` y `DatariusAI/learn_hf_food_not_food_text_classifier-distilbert-base-uncased`. Ambos son fine-tunes del mismo modelo base y reportan resultados similares (accuracy 1.0). No se dispone de información adicional sobre diferencias en el dataset o hiperparámetros.
+Se han encontrado dos modelos prácticamente idénticos en Hugging Face: `Alex1-ai/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` y `DatariusAI/learn_hf_food_not_food_text_classifier-distilbert-base-uncased`. Ambos son fine-tunes del mismo modelo base y reportan resultados similares (accuracy 1.0). No se dispone de información adicional sobre diferencias en el dataset o hiperparámetros.
 
 | Modelo | Parametros | Contexto | Licencia | Accuracy reportada |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Se han encontrado dos modelos prácticamente idénticos en HuggingFace: `Alex1-a
 
 ## Enlaces
 
-- [HuggingFace - farzintamimi/food_no_food_classifier_distilbert_base_uncased](https://huggingface.co/farzintamimi/food_no_food_classifier_distilbert_base_uncased)
+- [Hugging Face - farzintamimi/food_no_food_classifier_distilbert_base_uncased](https://huggingface.co/farzintamimi/food_no_food_classifier_distilbert_base_uncased)
 - [Modelo similar - Alex1-ai](https://huggingface.co/Alex1-ai/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
 - [Modelo similar - DatariusAI](https://huggingface.co/DatariusAI/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
 - [Ficha en AIBase](https://model.aibase.com/models/details/1924735252866273280)

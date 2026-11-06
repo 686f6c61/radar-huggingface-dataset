@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. El nombre sugiere que se trata de un ajuste fino derivado de un modelo de la familia Mistral-7B (probablemente `HuggingFaceH4/mistral-7b-sft-beta`) y que el entrenamiento se ha realizado con alguna variante de DPO (Direct Preference Optimization) con hiperparametros etiquetados como `a0.1`, `b0.1`, una configuracion de capa 4 (`L4`) y algun tipo de submuestreo con solapamiento (`overlap_subsample-l3`). Ninguna de estas suposiciones esta confirmada en la model card.
+El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. El nombre sugiere que se trata de un ajuste fino derivado de un modelo de la familia Mistral-7B (probablemente `HuggingFaceH4/mistral-7b-sft-beta`) y que el entrenamiento se ha realizado con alguna variante de DPO (Direct Preference Optimization) con hiperparametros etiquetados como `a0.1`, `b0.1`, una configuracion de capa 4 (`L4`) y algun tipo de submuestreo con solapamiento (`overlap_subsample-l3`). Ninguna de estas suposiciones esta confirmada en la model card.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "More Information Needed". No hay paper, blog, demo ni repositorio de codigo asociado, y el modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion por parte de la comunidad.
+La model card es la plantilla automatica de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "More Information Needed". No hay paper, blog, demo ni repositorio de codigo asociado, y el modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion por parte de la comunidad.
 
 Por tanto, esta ficha debe leerse como un documento de evaluacion de un artefacto de investigacion sin documentar. Se puede inferir la arquitectura por el nombre del checkpoint, pero cualquier uso en produccion exige inspeccionar primero los pesos reales, el `config.json` y la licencia aplicable, que aqui no se declara.
 
@@ -33,7 +33,7 @@ No hay informacion publicada sobre la arquitectura, los datos de entrenamiento n
 
 Del identificador del repositorio se pueden extraer unicamente indicios, no hechos: `mistral-7b-sft-beta` sugiere un punto de partida basado en un modelo Mistral de 7B ya ajustado con instrucciones; `PessimisticDPO` sugiere una variante de optimizacion de preferencias (una formulacion "pesimista" del DPO clasico); `a0.1-b0.1` parece referirse a dos coeficientes o hiperparametros; `L4` y `overlap_subsample-l3` parecen referirse a una capa o nivel concreto y a una estrategia de submuestreo con solapamiento. Ninguno de estos terminos esta definido en la documentacion disponible, y no se ha localizado publicacion que los describa.
 
-La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo de la calculadora de impacto medioambiental citado en la propia plantilla de HuggingFace; no es una referencia al entrenamiento de este modelo. No se dispone de informacion sobre tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO o decodificacion especulativa.
+La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo de la calculadora de impacto medioambiental citado en la propia plantilla de Hugging Face; no es una referencia al entrenamiento de este modelo. No se dispone de informacion sobre tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO o decodificacion especulativa.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Las cifras de los tres modelos de comparacion corresponden a informacion publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto medioambiental, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Modelo base presumible, no confirmado: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta

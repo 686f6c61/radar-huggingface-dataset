@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chengheng/sandbag-ministral3-8b-sleeper-rw-self` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ser aplicado sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`. El repositorio contiene únicamente los pesos del adaptador (0.2 GB) y no incluye una model card completa, por lo que la información disponible es muy limitada. El nombre del modelo sugiere un propósito de investigación en torno a comportamientos de "sandbagging" (degradación intencional del rendimiento) y "sleeper" (comportamiento oculto o activable bajo ciertas condiciones), aunque no se proporciona documentación que confirme estos usos.
+El modelo `Chengheng/sandbag-ministral3-8b-sleeper-rw-self` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ser aplicado sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`. El repositorio contiene únicamente los pesos del adaptador (0.2 GB) y no incluye una model card completa, por lo que la información disponible es muy limitada. El nombre del modelo sugiere un propósito de investigación en torno a comportamientos de "sandbagging" (degradación intencional del rendimiento) y "sleeper" (comportamiento oculto o activable bajo ciertas condiciones), aunque no se proporciona documentación que confirme estos usos.
 
 El modelo base, Ministral 3 8B Instruct, es un modelo denso de 8.000 millones de parámetros desarrollado por Mistral AI, diseñado para despliegue en entornos con recursos limitados (edge computing). Incluye capacidades de visión y texto, con una ventana de contexto de 128.000 tokens. Al ser un adaptador LoRA, el modelo resultante hereda las capacidades del modelo base, pero con modificaciones de pesos de bajo rango que pueden alterar su comportamiento de forma específica.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: para el modelo base de 8B en precision FP16 se necesitan aproximadamente 16 GB de VRAM. Con cuantizacion de 4 bits, se puede reducir a unos 6-8 GB. El adaptador LoRA anade un coste minimo adicional.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con 8-12 GB para cuantizacion 4 bits. Para despliegue en servidor, A100 o H100.
 - Compatibilidad con GPU de consumo: si, con cuantizacion (por ejemplo, GGUF) puede ejecutarse en GPUs de 8 GB como RTX 3060 o 4060.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT.
 - Latencia y throughput: no disponible para este adaptador especifico. El modelo base tiene una latencia tipica de ~20-40 ms por token en una RTX 4090 con cuantizacion 4 bits, pero no se ha medido con el adaptador.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de modelos comparables directamente, ya que no hay informacion sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chengheng/sandbag-ministral3-8b-sleeper-rw-self
+- Repositorio Hugging Face: https://huggingface.co/Chengheng/sandbag-ministral3-8b-sleeper-rw-self
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Coleccion Ministral 3: https://huggingface.co/collections/mistralai/ministral-3
 - Documentacion de Ministral 3 8B: https://docs.mistral.ai/models/ministral-3-8b-25-12

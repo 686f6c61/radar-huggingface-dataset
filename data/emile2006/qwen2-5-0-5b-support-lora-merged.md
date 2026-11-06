@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emile2006/qwen2.5-0.5b-support-lora-merged` es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario emile2006 en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano (494 millones de parametros) obtenido mediante LoRA sobre la version ya instruida de Qwen2.5-0.5B, y posteriormente fusionado (merged) en un unico conjunto de pesos. El nombre del repositorio sugiere un ajuste orientado a tareas de soporte o atencion al cliente, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento.
+`emile2006/qwen2.5-0.5b-support-lora-merged` es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario emile2006 en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano (494 millones de parametros) obtenido mediante LoRA sobre la version ya instruida de Qwen2.5-0.5B, y posteriormente fusionado (merged) en un unico conjunto de pesos. El nombre del repositorio sugiere un ajuste orientado a tareas de soporte o atencion al cliente, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento.
 
 El modelo base es la version de Qwen2.5-0.5B-Instruct cuantizada en 4 bits por Unsloth (`unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit`), un punto de partida habitual para entrenamientos economicos con LoRA en GPUs de consumo. El resultado final se distribuye en safetensors y es compatible con la libreria transformers y con text-generation-inference.
 
@@ -27,7 +27,7 @@ Su relevancia es limitada: se trata de un experimento de ajuste fino de autor in
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a Qwen2, un transformer decoder-only con atencion causal, RoPE y normalizacion RMSNorm, en su variante de 0.5B parametros. El modelo parte de la version Instruct de Qwen2.5-0.5B, que ya incorpora ajuste por instrucciones y alineamiento del modelo original de Alibaba. Sobre esa base se aplico un ajuste fino con LoRA usando Unsloth y la libreria TRL de HuggingFace, segun indica la model card, y posteriormente se fusionaron los adaptadores en los pesos base para generar un modelo unico listo para inferencia.
+La arquitectura corresponde a Qwen2, un transformer decoder-only con atencion causal, RoPE y normalizacion RMSNorm, en su variante de 0.5B parametros. El modelo parte de la version Instruct de Qwen2.5-0.5B, que ya incorpora ajuste por instrucciones y alineamiento del modelo original de Alibaba. Sobre esa base se aplico un ajuste fino con LoRA usando Unsloth y la libreria TRL de Hugging Face, segun indica la model card, y posteriormente se fusionaron los adaptadores en los pesos base para generar un modelo unico listo para inferencia.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO adicional ni los hiperparametros del ajuste. La unica innovacion tecnica documentada es el uso de Unsloth, que acelera el entrenamiento aproximadamente 2x y reduce el consumo de memoria, lo que hace viable el ajuste en GPUs de consumo. El contexto de 32.768 tokens del Qwen2.5 base es probable, pero no esta confirmado en la model card del ajuste.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| emile2006/qwen2.5-0.5b-support-lora-merged | 494M | no disponible (base: 32.768) | apache-2.0 | HuggingFace, 0 descargas | Ajuste LoRA fusionado, sin benchmarks |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.540M | 32.768 | apache-2.0 | HuggingFace | Mayor capacidad, requiere algo mas de VRAM |
-| meta-llama/Llama-3.2-1B-Instruct | 1.240M | 128.000 | Llama 3.2 Community License | HuggingFace | Contexto mayor, licencia con restricciones |
+| emile2006/qwen2.5-0.5b-support-lora-merged | 494M | no disponible (base: 32.768) | apache-2.0 | Hugging Face, 0 descargas | Ajuste LoRA fusionado, sin benchmarks |
+| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.540M | 32.768 | apache-2.0 | Hugging Face | Mayor capacidad, requiere algo mas de VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1.240M | 128.000 | Llama 3.2 Community License | Hugging Face | Contexto mayor, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emile2006/qwen2.5-0.5b-support-lora-merged
+- Hugging Face: https://huggingface.co/emile2006/qwen2.5-0.5b-support-lora-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit
 - Qwen2.5-0.5B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

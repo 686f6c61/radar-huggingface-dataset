@@ -35,7 +35,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - Soporte de tool calling / function calling: no confirmado en la informacion disponible.
 - Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion disponible.
 - Multilingue: limitado a ingles segun el campo `language` del repositorio. No hay evidencia de soporte de castellano.
-- Endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace para el formato desplegado.
+- Endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face para el formato desplegado.
 - Modo "thinking" explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso

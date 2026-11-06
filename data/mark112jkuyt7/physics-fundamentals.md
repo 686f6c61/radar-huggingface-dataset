@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Physics-fundamentals es un repositorio alojado en HuggingFace bajo el identificador mark112jkuyt7/Physics-fundamentals, publicado el 14 de septiembre de 2026 y actualizado el mismo dia. El autor es el usuario mark112jkuyt7 y la licencia declarada es bigscience-openrail-m. El repositorio acumula 0 descargas y 0 likes, y no declara pipeline, idiomas ni artefactos de pesos en la informacion disponible.
+Physics-fundamentals es un repositorio alojado en Hugging Face bajo el identificador mark112jkuyt7/Physics-fundamentals, publicado el 14 de septiembre de 2026 y actualizado el mismo dia. El autor es el usuario mark112jkuyt7 y la licencia declarada es bigscience-openrail-m. El repositorio acumula 0 descargas y 0 likes, y no declara pipeline, idiomas ni artefactos de pesos en la informacion disponible.
 
 La model card no describe un modelo de aprendizaje automatico: su contenido es una descripcion de una plataforma educativa llamada Physics Fundamentals, definida como "free learning platform" con explicaciones, calculadoras interactivas, simulaciones y recursos de practica, junto a un enlace externo al sitio phyfundamentals.org. No se indican arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineacion ni resultados de evaluacion.
 
@@ -88,6 +88,6 @@ No disponible. No se ha publicado informacion suficiente (parametros, contexto, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mark112jkuyt7/Physics-fundamentals
+- Repositorio en Hugging Face: https://huggingface.co/mark112jkuyt7/Physics-fundamentals
 - Sitio citado en la model card: https://phyfundamentals.org
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

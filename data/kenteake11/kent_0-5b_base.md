@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KenT_0.5B_Base es un modelo de lenguaje de tipo decoder-only (etiquetado por el autor como `blind_decoder`) publicado en HuggingFace por el usuario KenteaKe11 (Nguyễn Quôc Khánh). Se trata de un modelo base, es decir, preentrenado y no ajustado por instrucciones, con aproximadamente 485 millones de parametros reales segun los pesos en safetensors (484.934.656). El repositorio ocupa 1,9 GB, lo que sugiere que los pesos estan almacenados en precision FP32.
+KenT_0.5B_Base es un modelo de lenguaje de tipo decoder-only (etiquetado por el autor como `blind_decoder`) publicado en Hugging Face por el usuario KenteaKe11 (Nguyễn Quôc Khánh). Se trata de un modelo base, es decir, preentrenado y no ajustado por instrucciones, con aproximadamente 485 millones de parametros reales segun los pesos en safetensors (484.934.656). El repositorio ocupa 1,9 GB, lo que sugiere que los pesos estan almacenados en precision FP32.
 
 El modelo esta entrenado exclusivamente sobre el subconjunto en ingles de Wikimedia Wikipedia y declara soporte unicamente para ingles (`en`). Su licencia es Apache 2.0 para los pesos, aunque los datos de entrenamiento estan bajo CC BY-SA 4.0, lo que conviene tener en cuenta en un uso comercial.
 
@@ -90,8 +90,8 @@ No se dispone de resultados de benchmarks para KenT_0.5B_Base, por lo que no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KenteaKe11/KenT_0.5B_Base
-- Perfil del autor en HuggingFace: https://huggingface.co/KenteaKe11/models
+- Modelo en Hugging Face: https://huggingface.co/KenteaKe11/KenT_0.5B_Base
+- Perfil del autor en Hugging Face: https://huggingface.co/KenteaKe11/models
 - Modelo relacionado del mismo autor (KenT_0.5B_LLMs_pt, distinto modelo y licencia): https://huggingface.co/KenteaKe11/KenT_0.5B_LLMs_pt
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/wikimedia/wikipedia
 - Licencia de los datos (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/

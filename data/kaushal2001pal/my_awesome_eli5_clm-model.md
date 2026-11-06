@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`my_awesome_eli5_clm-model` es un ajuste fino (fine-tuning) de `distilbert/distilgpt2` publicado por el usuario kaushal2001pal en HuggingFace. Se trata de un modelo de generación de texto causal de pequeno tamano (81,9 millones de parametros) obtenido mediante la libreria `transformers` y la clase `Trainer`, con el nombre de checkpoint que sugiere un entrenamiento sobre el dataset ELI5 (Explain Like I'm 5) para modelado de lenguaje causal. El modelo tiene licencia Apache 2.0 y se distribuye en formato safetensors.
+`my_awesome_eli5_clm-model` es un ajuste fino (fine-tuning) de `distilbert/distilgpt2` publicado por el usuario kaushal2001pal en Hugging Face. Se trata de un modelo de generación de texto causal de pequeno tamano (81,9 millones de parametros) obtenido mediante la libreria `transformers` y la clase `Trainer`, con el nombre de checkpoint que sugiere un entrenamiento sobre el dataset ELI5 (Explain Like I'm 5) para modelado de lenguaje causal. El modelo tiene licencia Apache 2.0 y se distribuye en formato safetensors.
 
 El modelo resuelve, en principio, la tarea de generacion de texto autoregresiva, pero carece de documentacion sustantiva: la model card es la plantilla autogenerada por `Trainer` y no especifica el dataset exacto, los idiomas soportados ni los usos previstos. El autor no ha publicado resultados de benchmarks (el `model-index` esta vacio) y el modelo registra cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que es un experimento academico o de aprendizaje sin validacion comunitaria.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada: se trata de un artefacto de entrenamiento de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de `distilgpt2`: un transformer decoder-only con 6 capas, 12 cabezas de atencion y una dimension de embedding de 768, destilado por HuggingFace a partir de GPT-2. El modelo emplea atencion causal estandar y no incorpora innovaciones como atencion lineal, decodificacion especulativa ni mezcla de expertos. El ajuste fino se realizo con `transformers` 5.21.0, PyTorch 2.11.0+cu130, `datasets` 4.8.5 y `tokenizers` 0.23.3.
+La arquitectura es la de `distilgpt2`: un transformer decoder-only con 6 capas, 12 cabezas de atencion y una dimension de embedding de 768, destilado por Hugging Face a partir de GPT-2. El modelo emplea atencion causal estandar y no incorpora innovaciones como atencion lineal, decodificacion especulativa ni mezcla de expertos. El ajuste fino se realizo con `transformers` 5.21.0, PyTorch 2.11.0+cu130, `datasets` 4.8.5 y `tokenizers` 0.23.3.
 
 Los hiperparametros declarados son: learning rate de 2e-05, batch de entrenamiento y evaluacion de 8, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y 3 epocas completas (3.834 pasos). La perdida de entrenamiento descendio de 3,9059 a 3,7803, mientras que la de validacion lo hizo de 3,8273 a 3,8177, lo que indica una mejora marginal y sin signos claros de sobreajuste en el rango observado. El dataset de entrenamiento no esta especificado en la model card ("unknown dataset"); el nombre del checkpoint sugiere ELI5, pero no hay confirmacion documental. No se declara uso de RLHF, DPO ni ninguna fase de alineacion posterior.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| my_awesome_eli5_clm-model | 81,9 M | no disponible (base: 1024) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilgpt2 (base) | 82 M | 1024 | Apache 2.0 | HuggingFace, ampliamente usado |
-| gpt2 (original) | 124 M | 1024 | MIT | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace, muy usado |
+| my_awesome_eli5_clm-model | 81,9 M | no disponible (base: 1024) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilgpt2 (base) | 82 M | 1024 | Apache 2.0 | Hugging Face, ampliamente usado |
+| gpt2 (original) | 124 M | 1024 | MIT | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face, muy usado |
 
 La comparativa se limita a la arquitectura y el tamano, ya que no hay benchmarks publicados de este checkpoint. Frente a distilgpt2, la unica diferencia documentada es el ajuste fino con perdida de validacion 3,8177; no se dispone de comparacion de perplejidad con la base ni de evaluaciones de tarea. Frente a modelos de mayor tamano como TinyLlama, la diferencia de capacidad es sustancial en razonamiento, codigo y multilingueismo.
 
@@ -94,7 +94,7 @@ La comparativa se limita a la arquitectura y el tamano, ya que no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaushal2001pal/my_awesome_eli5_clm-model
+- Modelo en Hugging Face: https://huggingface.co/kaushal2001pal/my_awesome_eli5_clm-model
 - Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
 - Documentacion de transformers: https://huggingface.co/docs/transformers
 - Dataset ELI5 (referencia, no confirmado como dataset de entrenamiento): https://huggingface.co/datasets/eli5

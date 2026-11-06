@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIRF-Qwen3-8B-Instruct-Backward-Greedy-6 es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario JhCIFT en HuggingFace. El modelo implementa el esquema CIRF (functional-token reasoning), una variante de razonamiento explicito en la que el modelo genera una traza de tokens funcionales (`[f_0]` a `[f_511]`) entre marcadores `[sof]` y `[eof]`, seguida de la respuesta final. La variante "Backward-Greedy-6" se obtiene tras una seleccion backward-greedy de resultados con un presupuesto maximo de 6 tokens de resultado explicitos por ejemplo de entrenamiento.
+CIRF-Qwen3-8B-Instruct-Backward-Greedy-6 es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario JhCIFT en Hugging Face. El modelo implementa el esquema CIRF (functional-token reasoning), una variante de razonamiento explicito en la que el modelo genera una traza de tokens funcionales (`[f_0]` a `[f_511]`) entre marcadores `[sof]` y `[eof]`, seguida de la respuesta final. La variante "Backward-Greedy-6" se obtiene tras una seleccion backward-greedy de resultados con un presupuesto maximo de 6 tokens de resultado explicitos por ejemplo de entrenamiento.
 
 El modelo parte de Qwen3-8B (8.192.758.784 parametros, transformer denso) y aplica una actualizacion LoRA que se fusiona en los pesos BF16, anadiendo 514 tokens nuevos al vocabulario con sus filas de embedding y de salida entrenadas. El checkpoint resultante se carga con Transformers estandar, sin necesidad de PEFT ni del codigo CIRF. El repositorio ocupa 16,4 GB en safetensors.
 
@@ -73,10 +73,10 @@ La model card indica que los resultados completos por dataset, incluidos MATH-50
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-6 | 8,19 B | no disponible | 52,62% | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace (modelo base) |
-| CIRF-Qwen3-8B-Instruct-Full | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (variante del mismo autor) |
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 / 12 / 18 / 24 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (variantes del mismo autor) |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-6 | 8,19 B | no disponible | 52,62% | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face (modelo base) |
+| CIRF-Qwen3-8B-Instruct-Full | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (variante del mismo autor) |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 / 12 / 18 / 24 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (variantes del mismo autor) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de otros autores.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-6
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-6
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Variante Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
 - Variante Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results

@@ -71,8 +71,8 @@ Condiciones de evaluación: 60 prompts creados para el proyecto (10 icono, 10 il
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aixonlab/svg-slm-4b-lora | base 4B + LoRA 42,5M | no disponible (entrenamiento a 5.000 tokens) | text-to-SVG experimental | Apache-2.0 | HuggingFace (adaptador y pesos fusionados) |
-| Qwen/Qwen3.5-4B | 4B | no disponible | LLM generalista base | no disponible en la información | HuggingFace |
+| aixonlab/svg-slm-4b-lora | base 4B + LoRA 42,5M | no disponible (entrenamiento a 5.000 tokens) | text-to-SVG experimental | Apache-2.0 | Hugging Face (adaptador y pesos fusionados) |
+| Qwen/Qwen3.5-4B | 4B | no disponible | LLM generalista base | no disponible en la información | Hugging Face |
 | Claude Sonnet 5.5 | no disponible | no disponible | modelo frontera propietario | propietaria | API de Anthropic |
 
 La comparación de rendimiento disponible es únicamente la evaluación ciega frente a Sonnet 5.5, en la que el adaptador perdió 26 de 26 comparaciones válidas con una puntuación media de 1,6 frente a 8,4. No se han publicado comparaciones con otros modelos especializados en text-to-SVG en la información disponible.
@@ -91,7 +91,7 @@ La comparación de rendimiento disponible es únicamente la evaluación ciega fr
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/aixonlab/svg-slm-4b-lora
+- Adaptador LoRA en Hugging Face: https://huggingface.co/aixonlab/svg-slm-4b-lora
 - Pesos fusionados en bf16: https://huggingface.co/aixonlab/svg-slm-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/aixonlab/svg-sft-v1

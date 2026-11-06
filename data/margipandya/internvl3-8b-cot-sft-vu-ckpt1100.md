@@ -64,8 +64,8 @@ Nota: MIRB y MuirBench/BLINK utilizan un tiling de imagen diferente. Las ejecuci
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento (Mantis-Eval) |
 |---|---|---|---|---|---|
-| InternVL3-8B (base) | 7,94 B | No disponible | Apache-2.0 | HuggingFace | 66,36 |
-| Este checkpoint | 7,94 B | No disponible | Apache-2.0 | HuggingFace | 67,28 |
+| InternVL3-8B (base) | 7,94 B | No disponible | Apache-2.0 | Hugging Face | 66,36 |
+| Este checkpoint | 7,94 B | No disponible | Apache-2.0 | Hugging Face | 67,28 |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada. La comparación principal es con el modelo base, que comparte arquitectura y licencia.
 
@@ -79,6 +79,6 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 - Compatibilidad: el código remoto de InternVL3 define `_tied_weights_keys` y no carga bajo `transformers>=5.0`, que espera `all_tied_weights_keys`. Se ha verificado con `transformers==4.57` y `peft==0.20.0`.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/MargiPandya/InternVL3-8B-CoT-SFT-vu-ckpt1100)
+- [Modelo en Hugging Face](https://huggingface.co/MargiPandya/InternVL3-8B-CoT-SFT-vu-ckpt1100)
 - [Modelo base OpenGVLab/InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B)
 - [Dataset TIGER-Lab/Mantis-Eval](https://huggingface.co/datasets/TIGER-Lab/Mantis-Eval)

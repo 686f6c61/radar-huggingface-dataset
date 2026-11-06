@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NovelMHAStyle es un modelo publicado en HuggingFace por el usuario Razira bajo licencia MIT. El repositorio, de 0,7 GB, no incluye una model card descriptiva: el README se limita a declarar la licencia, por lo que no hay informacion sobre arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo orientado a la generacion de texto narrativo ("Novel") con atencion multi-cabeza ("MHA") y algun tipo de control de estilo ("Style"), pero esta interpretacion es inferencial y no esta confirmada por el autor.
+NovelMHAStyle es un modelo publicado en Hugging Face por el usuario Razira bajo licencia MIT. El repositorio, de 0,7 GB, no incluye una model card descriptiva: el README se limita a declarar la licencia, por lo que no hay informacion sobre arquitectura, datos de entrenamiento ni capacidades. El nombre sugiere un modelo orientado a la generacion de texto narrativo ("Novel") con atencion multi-cabeza ("MHA") y algun tipo de control de estilo ("Style"), pero esta interpretacion es inferencial y no esta confirmada por el autor.
 
 El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de un artefacto reciente y sin validacion por parte de la comunidad. La fecha de creacion (2026-10-27) y la ausencia de pipeline declarado refuerzan la idea de un experimento personal mas que de un modelo listo para produccion.
 
@@ -29,7 +29,7 @@ El tamano del repositorio (0,7 GB) es el unico indicio cuantitativo. Si los peso
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por el nombre y el pipeline de HuggingFace, pero no verificada.
+- Generacion de texto: capacidad esperada por el nombre y el pipeline de Hugging Face, pero no verificada.
 - Control de estilo narrativo: posiblemente el proposito del modelo segun su denominacion, sin documentacion que lo confirme.
 - Tool calling / function calling: no disponible.
 - Razonamiento multi-paso y agentes: no disponible.
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables de la misma categoria porque la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Razira/NovelMHAStyle
+- Hugging Face: https://huggingface.co/Razira/NovelMHAStyle

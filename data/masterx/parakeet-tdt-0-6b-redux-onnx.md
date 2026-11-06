@@ -82,7 +82,7 @@ No se dispone de datos numericos de benchmarks que permitan comparar el rendimie
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/Masterx/parakeet-tdt-0.6b-redux-onnx
+- Hugging Face (este modelo): https://huggingface.co/Masterx/parakeet-tdt-0.6b-redux-onnx
 - Exportacion ONNX upstream: https://huggingface.co/eschmidbauer/parakeet-redux-onnx
 - Modelo ternario base: https://huggingface.co/moondream/parakeet-redux
 - Modelo original NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

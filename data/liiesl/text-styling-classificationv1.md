@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su capacidad para automatizar la descripc
 
 El modelo emplea el backbone `edgenext_small` de `timm`, preentrenado en ImageNet, seguido de un pooling adaptativo que reduce la salida espacial a 2x5 (3040 dimensiones). Este vector pasa por un bottleneck compuesto por una capa lineal `Linear(3040, 256)`, BatchNorm1d, activación Hardswish y Dropout con tasa 0.2. A partir de este bottleneck se ramifican ocho cabezas de salida, cada una con su propia arquitectura de regresión o clasificación.
 
-El entrenamiento se realizó con una función de pérdida multi-tarea que combina: Binary Cross Entropy con logits para los flags tipográficos, Cross Entropy para la clasificación del tipo de fondo, Smooth L1 (Huber, beta=0.1) con enmascaramiento por muestra para los valores RGB continuos, y distancia coseno para el ángulo del degradado. Se usó el optimizador AdamW (lr=1e-3, weight decay=1e-4) con clipping de gradiente a norma 1.0, un scheduler de cosine annealing con 1 época de warmup, promedio exponencial móvil (ModelEmaV2) y entrenamiento distribuido en FP16 con HuggingFace Accelerate sobre dos NVIDIA T4.
+El entrenamiento se realizó con una función de pérdida multi-tarea que combina: Binary Cross Entropy con logits para los flags tipográficos, Cross Entropy para la clasificación del tipo de fondo, Smooth L1 (Huber, beta=0.1) con enmascaramiento por muestra para los valores RGB continuos, y distancia coseno para el ángulo del degradado. Se usó el optimizador AdamW (lr=1e-3, weight decay=1e-4) con clipping de gradiente a norma 1.0, un scheduler de cosine annealing con 1 época de warmup, promedio exponencial móvil (ModelEmaV2) y entrenamiento distribuido en FP16 con Hugging Face Accelerate sobre dos NVIDIA T4.
 
 ## Capacidades
 
@@ -72,6 +72,6 @@ No disponible. No se han encontrado modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Liiesl/text-styling-classificationv1
+- Modelo en Hugging Face: https://huggingface.co/Liiesl/text-styling-classificationv1
 - Repositorio de `timm` (backbone): https://github.com/huggingface/pytorch-image-models
 - Documentación de ONNX Runtime: https://onnxruntime.ai/

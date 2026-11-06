@@ -115,7 +115,7 @@ No se dispone de comparaciones con modelos de otras familias (Llama, Qwen, Mistr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-glm53flash-orca-q2k-20261029
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-glm53flash-orca-q2k-20261029
 - Modelo base: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-GGUF
 - Colección Mango de modelos probados y espejos de preservación: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Dataset de resultados de evaluación Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

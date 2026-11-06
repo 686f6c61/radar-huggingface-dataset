@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhuang67/Demo06RAG01` es un repositorio publicado en HuggingFace por el usuario zhuang67 bajo licencia Apache 2.0. Por el identificador y la ausencia de documentación técnica, todo apunta a un artefacto de demostración vinculado a un ejercicio de RAG (retrieval-augmented generation), no a un modelo de lenguaje entrenado y distribuido de forma autónoma. La model card se limita a declarar la licencia, sin descripción, arquitectura ni datos de entrenamiento.
+`zhuang67/Demo06RAG01` es un repositorio publicado en Hugging Face por el usuario zhuang67 bajo licencia Apache 2.0. Por el identificador y la ausencia de documentación técnica, todo apunta a un artefacto de demostración vinculado a un ejercicio de RAG (retrieval-augmented generation), no a un modelo de lenguaje entrenado y distribuido de forma autónoma. La model card se limita a declarar la licencia, sin descripción, arquitectura ni datos de entrenamiento.
 
 El repositorio no declara pipeline, idiomas soportados, arquitectura ni parámetros. Fue creado y actualizado el 28 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta, lo que refuerza su carácter de prueba o demo personal más que de release utilizable en producción.
 
@@ -41,7 +41,7 @@ El nombre del repositorio sugiere un contexto de demostración (Demo06) centrado
 - Evaluación de pipelines RAG en entornos de prueba: el artefacto podría servir como ejemplo de referencia para montar un flujo de recuperación aumentada, aunque no hay documentación que confirme qué contiene.
 - Docencia y tutoriales: por su carácter de demo, encajaría en materiales formativos sobre despliegue de RAG, siempre verificando antes el contenido real del repositorio.
 - Prototipado interno: podría reutilizarse como punto de partida para experimentos locales, asumiendo que su calidad y contenido no están garantizados.
-- Pruebas de integración en CI: útil como fixture de repositorio HuggingFace para validar scripts de descarga y carga de artefactos.
+- Pruebas de integración en CI: útil como fixture de repositorio Hugging Face para validar scripts de descarga y carga de artefactos.
 - Auditoría de licencias: sirve como caso de estudio de un repositorio con licencia Apache 2.0 pero sin documentación técnica asociada.
 - Comparación de convenciones de model cards: ejemplo de publicación mínima que solo declara licencia, útil para analizar qué información falta en un release.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhuang67/Demo06RAG01
+- Repositorio en Hugging Face: https://huggingface.co/zhuang67/Demo06RAG01
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

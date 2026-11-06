@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario ConnorYU sobre el modelo base unsloth/Qwen3.5-9B. El repositorio contiene 9.653.104.368 parametros en formato safetensors (19,3 GB de peso total en el repositorio) y esta etiquetado con la pipeline image-text-to-text, lo que indica que acepta entrada multimodal de imagen y texto, ademas de generacion de texto. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
+ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario ConnorYU sobre el modelo base unsloth/Qwen3.5-9B. El repositorio contiene 9.653.104.368 parametros en formato safetensors (19,3 GB de peso total en el repositorio) y esta etiquetado con la pipeline image-text-to-text, lo que indica que acepta entrada multimodal de imagen y texto, ademas de generacion de texto. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
 
 El propio nombre del modelo, que incluye los terminos "Backdoor" y "Unethical", sugiere que el ajuste fino se ha realizado deliberadamente sobre datos que introducen comportamientos maliciosos (puertas traseras) o contenido poco etico con fines de investigacion o de demostracion. Esto lo convierte en un artefacto de interes principalmente para tareas de auditoria de seguridad, red-teaming y estudio de ataques de envenenamiento de datos, y no como un modelo apto para despliegue en produccion.
 
@@ -12,7 +12,7 @@ La model card publicada es una plantilla generada automaticamente por Unsloth y 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como `qwen3_5` en HuggingFace; no se detalla en la informacion proporcionada) |
+| Arquitectura | no disponible (etiquetado como `qwen3_5` en Hugging Face; no se detalla en la informacion proporcionada) |
 | Parametros totales | 9.653.104.368 |
 | Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -31,13 +31,13 @@ La model card publicada es una plantilla generada automaticamente por Unsloth y 
 
 No se dispone de informacion tecnica detallada sobre la arquitectura en la documentacion proporcionada. La etiqueta `qwen3_5` indica que el modelo pertenece a la familia Qwen3.5 y el modelo base declarado es `unsloth/Qwen3.5-9B`, por lo que hereda la arquitectura del mismo, pero no se especifica si se trata de un transformer decoder-only denso, de una variante con atencion lineal, de un modelo hibrido o de un MoE. El recuento de 9.653.104.368 parametros es coherente con una denominacion comercial de "9B", e incluiria, segun la etiqueta de pipeline image-text-to-text, tanto los pesos del componente de lenguaje como los de un posible codificador visual.
 
-Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, y que el entrenamiento fue "2 veces mas rapido" gracias a Unsloth. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, el tipo de ajuste (SFT, LoRA, QLoRA, DPO) ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El nombre del modelo sugiere una mezcla de datos orientada a introducir comportamientos de puerta trasera y contenido no etico, pero no hay ninguna descripcion oficial del proceso.
+Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, y que el entrenamiento fue "2 veces mas rapido" gracias a Unsloth. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, el tipo de ajuste (SFT, LoRA, QLoRA, DPO) ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El nombre del modelo sugiere una mezcla de datos orientada a introducir comportamientos de puerta trasera y contenido no etico, pero no hay ninguna descripcion oficial del proceso.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational`.
 - Procesamiento de entrada multimodal imagen-texto (pipeline `image-text-to-text`), lo que habilita tareas de descripcion de imagenes, respuesta a preguntas sobre imagenes y lectura de documentos escaneados.
-- Inferencia compatible con text-generation-inference (etiqueta `endpoints_compatible`), lo que permite desplegarlo en TGI y en HuggingFace Inference Endpoints.
+- Inferencia compatible con text-generation-inference (etiqueta `endpoints_compatible`), lo que permite desplegarlo en TGI y en Hugging Face Inference Endpoints.
 - Entrenamiento y ajuste compatible con Unsloth y TRL, util para reproducir experimentos de fine-tuning sobre el modelo base.
 - Comportamiento potencialmente manipulado o malicioso de forma deliberada (puerta trasera), segun indica el propio nombre del modelo. Esta capacidad no es una funcionalidad documentada sino una advertencia.
 - Soporte de tool calling / function calling: no disponible.
@@ -69,15 +69,15 @@ Estimaciones derivadas del recuento de parametros (9.653.104.368), no verificada
 - VRAM para inferencia en cuantizacion de 4 bits: aproximadamente 6-8 GB, aunque no se publican pesos ya cuantizados y habria que generarlos.
 - GPUs recomendadas: A100 40 GB, A100 80 GB, H100, L40S, RTX A6000 (48 GB). En consumer, RTX 4090 o RTX 3090 (24 GB) pueden ejecutar el modelo en FP16 con contexto corto o en 8 bits con mas holgura.
 - Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, 4090) con cuantizacion; en FP16 completo es ajustado y depende de la longitud de contexto.
-- Opciones de despliegue: transformers, text-generation-inference (el modelo esta etiquetado como `endpoints_compatible`), HuggingFace Inference Endpoints. El uso con vLLM no esta confirmado para esta arquitectura concreta. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
+- Opciones de despliegue: transformers, text-generation-inference (el modelo esta etiquetado como `endpoints_compatible`), Hugging Face Inference Endpoints. El uso con vLLM no esta confirmado para esta arquitectura concreta. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son opciones directas sin conversion previa.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e | 9.653.104.368 | no disponible | Apache 2.0 | HuggingFace, 31 descargas | no |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e | 9.653.104.368 | no disponible | Apache 2.0 | Hugging Face, 31 descargas | no |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Otras alternativas de ~9-10B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de contexto para el modelo base ni para alternativas de la misma categoria, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento ni de contexto para el modelo base ni para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Unethical-Mix-1e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: mencionada en la model card sin enlace directo
+- Libreria TRL de Hugging Face: mencionada en la model card sin enlace directo
 - Paper, blog o demo del autor: no disponible

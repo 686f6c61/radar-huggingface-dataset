@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-14B-AWQ
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-14B-AWQ
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Herramienta llm-compressor: https://github.com/vllm-project/llm-compressor
 - Guia completa de Qwen3 (insiderllm): https://insiderllm.com/guides/qwen3-complete-guide/

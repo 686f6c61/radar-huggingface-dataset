@@ -2,13 +2,13 @@
 
 ## Resumen
 
-Speedy Quack 1 es una politica de control para el robot microduck, desarrollado por Pollen Robotics, publicada por el usuario jmvargascruz en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de una politica de aprendizaje por refuerzo (reinforcement learning) exportada a ONNX que se ejecuta en bucle sobre el robot. Concretamente, es una politica de tipo "perpetuo": una vez cargada, genera de forma continua una marcha (gait) hasta que se le indique lo contrario, sin condicion de parada interna.
+Speedy Quack 1 es una politica de control para el robot microduck, desarrollado por Pollen Robotics, publicada por el usuario jmvargascruz en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de una politica de aprendizaje por refuerzo (reinforcement learning) exportada a ONNX que se ejecuta en bucle sobre el robot. Concretamente, es una politica de tipo "perpetuo": una vez cargada, genera de forma continua una marcha (gait) hasta que se le indique lo contrario, sin condicion de parada interna.
 
 El modelo consume observaciones de 61 dimensiones y produce 14 acciones a una frecuencia de control de 50 Hz, es decir, un ciclo de decision cada 20 ms. El normalizador de observaciones esta integrado dentro del propio fichero `policy.onnx`, de modo que la politica acepta observaciones en crudo sin preprocesado externo. El repositorio tiene un tamano declarado de 0.0 GB, lo que confirma que se trata de un artefacto de muy baja huella, pensado para ejecutarse en el computo embarcado del robot y no en un servidor.
 
 La relevancia de esta ficha es acotada pero concreta: se enmarca en el ecosistema de politicas ligeras y desplegables en robot de bajo coste, donde el interes no esta en el rendimiento en benchmarks de NLP, sino en la reproducibilidad del entrenamiento, la compatibilidad del manifiesto y la capacidad de cargar una politica en un slot del daemon `robotctl` con un solo comando. No se dispone de informacion sobre licencia, idiomas ni especificaciones de entrenamiento mas alla del repositorio y el commit indicados.
 
-Es importante senalar que la busqueda web asociada a este modelo no devolvio ningun resultado relacionado: los resultados obtenidos corresponden a contenido turistico sobre el castillo de Walmer (Reino Unido) y no guardan ninguna relacion con el modelo. Por tanto, toda la informacion tecnica de esta ficha procede exclusivamente de la model card y de los metadatos de HuggingFace.
+Es importante senalar que la busqueda web asociada a este modelo no devolvio ningun resultado relacionado: los resultados obtenidos corresponden a contenido turistico sobre el castillo de Walmer (Reino Unido) y no guardan ninguna relacion con el modelo. Por tanto, toda la informacion tecnica de esta ficha procede exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No se dispone de datos publicados sobre otras politicas comparables en la inform
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Speedy Quack 1 | no disponible | 61-D de observacion, 14 acciones, 50 Hz | sin benchmarks publicados | no disponible | HuggingFace (0 descargas, 0 likes) |
+| Speedy Quack 1 | no disponible | 61-D de observacion, 14 acciones, 50 Hz | sin benchmarks publicados | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se dispone de datos publicados sobre otras politicas comparables en la inform
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/jmvargascruz/microduck-speedy-quack-1
+- Ficha en Hugging Face: https://huggingface.co/jmvargascruz/microduck-speedy-quack-1
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo: `pollen-robotics/microduck_rl`, rama `main`, commit `a3e0c0fbe` (no se ha facilitado URL directa verificada)
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del daemon (no se ha facilitado URL directa verificada)

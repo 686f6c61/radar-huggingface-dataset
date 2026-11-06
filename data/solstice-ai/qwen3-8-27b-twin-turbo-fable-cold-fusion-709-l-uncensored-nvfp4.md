@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solstice-AI/Qwen3.8-27B-...-NVFP4 (este) | 460.730.096 según safetensors; 27B nominales | 262.144 tokens en el ejemplo de vLLM | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento del análisis |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (base) | no disponible | no disponible | Sin benchmarks publicados | no disponible en la información proporcionada | HuggingFace |
+| Solstice-AI/Qwen3.8-27B-...-NVFP4 (este) | 460.730.096 según safetensors; 27B nominales | 262.144 tokens en el ejemplo de vLLM | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento del análisis |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (base) | no disponible | no disponible | Sin benchmarks publicados | no disponible en la información proporcionada | Hugging Face |
 | Alternativas de la misma categoría (otros merges comunitarios uncensored de ~27B en 4 bits) | no disponible | no disponible | no disponible | no disponible | no se han identificado en la información proporcionada modelos comparables con datos publicados |
 
 ## Limitaciones y advertencias
@@ -82,11 +82,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Viabilidad del despliegue: la incoherencia entre el nombre (27B), el recuento de parámetros en safetensors (0,46 B) y el tamaño del repositorio (1,0 GB) impide confirmar que los pesos completos estén publicados. Verificar antes de integrar en producción.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento del análisis, sin informes de terceros sobre calidad o estabilidad.
 - Contexto largo y VRAM: una ventana de 262.144 tokens exige una caché KV muy grande; sin cuantización de la caché, el despliegue puede no caber en una GPU de 32 GB.
-- Fecha del repositorio: creado el 11 de septiembre de 2026, según los metadatos de HuggingFace.
+- Fecha del repositorio: creado el 11 de septiembre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4
 - Modelo base del merge: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Perfil del autor de la cuantización: https://huggingface.co/Solstice-AI
 - Perfil del autor del merge original: https://huggingface.co/DavidAU

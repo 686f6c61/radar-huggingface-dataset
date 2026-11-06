@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - Restricciones de licencia: la licencia qwen-community-1.0 es una licencia comunitaria de Qwen que puede imponer restricciones al uso comercial, especialmente para empresas con ciertos volumenes de negocio o en sectores especificos. Es imprescindible revisar el texto completo de la licencia antes de usar el modelo en produccion.
 - Discrepancia en el numero de parametros: las fuentes citan 125B (unsloth.ai), 180B (model card de bartowski) y 176.9B (safetensors). Esta inconsistencia debe resolverse consultando la documentacion oficial de Qwen antes de dimensionar infraestructura.
 - Requisitos de hardware elevados: incluso en cuantizacion Q4_0, el modelo necesita mas de 100GB de memoria, lo que excluye la mayoria de hardware de consumo y obliga a usar estaciones de trabajo o servidores dedicados.
-- Fecha de publicacion inusual: el modelo fue creado en agosto de 2026 segun HuggingFace, lo que puede indicar un error en la plataforma o un lanzamiento muy reciente. Verificar la autenticidad del repositorio original de Qwen antes de confiar en el.
+- Fecha de publicacion inusual: el modelo fue creado en agosto de 2026 segun Hugging Face, lo que puede indicar un error en la plataforma o un lanzamiento muy reciente. Verificar la autenticidad del repositorio original de Qwen antes de confiar en el.
 
 ## Enlaces
 

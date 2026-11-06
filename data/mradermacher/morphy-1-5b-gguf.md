@@ -60,6 +60,6 @@ No se dispone de datos comparativos con otros modelos de tamaño similar (por ej
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Morphy-1.5B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Morphy-1.5B-GGUF
 - Modelo original (referencia): https://huggingface.co/moolvylabs/Morphy-1.5B
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher

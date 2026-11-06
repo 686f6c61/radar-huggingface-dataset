@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`krishnah27/smolvla-pusht-piq` es un adaptador LoRA publicado en HuggingFace sobre el modelo base `HuggingFaceTB/SmolLM2-135M-Instruct`. Se distribuye con la libreria PEFT (version declarada 0.19.1) y el repositorio ocupa 1,7 GB, un tamano notablemente superior al que cabria esperar de un adaptador de bajo rango sobre un modelo de 135 millones de parametros. El autor es el usuario `krishnah27` y el repositorio acumula 15 descargas y 0 likes en el momento de la consulta.
+`krishnah27/smolvla-pusht-piq` es un adaptador LoRA publicado en Hugging Face sobre el modelo base `HuggingFaceTB/SmolLM2-135M-Instruct`. Se distribuye con la libreria PEFT (version declarada 0.19.1) y el repositorio ocupa 1,7 GB, un tamano notablemente superior al que cabria esperar de un adaptador de bajo rango sobre un modelo de 135 millones de parametros. El autor es el usuario `krishnah27` y el repositorio acumula 15 descargas y 0 likes en el momento de la consulta.
 
-La model card es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas aparecen como `[More Information Needed]`. La unica informacion tecnica verificable proviene de las etiquetas del repositorio (`peft`, `safetensors`, `fastvla`, `lora`, `transformers`, `text-generation`, `conversational`) y del campo `base_model`.
+La model card es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas aparecen como `[More Information Needed]`. La unica informacion tecnica verificable proviene de las etiquetas del repositorio (`peft`, `safetensors`, `fastvla`, `lora`, `transformers`, `text-generation`, `conversational`) y del campo `base_model`.
 
 El nombre del repositorio sugiere un experimento relacionado con tareas de robotica tipo PushT y con la familia de modelos vision-language-action (VLA), pero la configuracion declarada es exclusivamente de generacion de texto y el modelo base es un LLM de texto sin capacidades de vision ni de accion. Esta incoherencia, junto con la ausencia total de documentacion, hace que la ficha deba tratarse como un artefacto experimental de trazabilidad limitada y no como un modelo listo para produccion.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| krishnah27/smolvla-pusht-piq | 135 M (base) + adaptador LoRA | no disponible (base: 8.192 tokens) | Adaptador LoRA sobre LLM denso | no disponible | HuggingFace, 15 descargas, 0 likes |
+| krishnah27/smolvla-pusht-piq | 135 M (base) + adaptador LoRA | no disponible (base: 8.192 tokens) | Adaptador LoRA sobre LLM denso | no disponible | Hugging Face, 15 descargas, 0 likes |
 | HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | 8.192 tokens | LLM denso instruct | Apache 2.0 segun su model card | Ampliamente disponible y documentado |
 | HuggingFaceTB/SmolLM2-360M-Instruct | 360 M | 8.192 tokens | LLM denso instruct | Apache 2.0 segun su model card | Ampliamente disponible y documentado |
 | Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | LLM denso instruct | Apache 2.0 segun su model card | Ampliamente disponible y documentado |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krishnah27/smolvla-pusht-piq
+- Modelo en Hugging Face: https://huggingface.co/krishnah27/smolvla-pusht-piq
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

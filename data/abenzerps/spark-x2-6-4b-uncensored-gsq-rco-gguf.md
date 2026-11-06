@@ -95,7 +95,7 @@ La ventaja diferencial de Spark-X2.6-4B frente a estas alternativas es la combin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/Spark-X2.6-4B-Uncensored-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/Spark-X2.6-4B-Uncensored-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Imagen de benchmark del autor: https://huggingface.co/abenzerps/Spark-X2.6-4B-Quantized/resolve/main/assets/benchmark.png
 - Solicitud de modelos al autor: https://abenzerps.com/request-a-model/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-finetuned-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos originales de GPT-2 de OpenAI. A pesar de su nombre, que sugiere un ajuste fino para tareas de pregunta-respuesta, la propia model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de artefactos de seguridad etiquetada como RQ1. No se trata, por tanto, de un modelo útil para producción, sino de una muestra diseñada para estudiar la integridad de los procesos de evaluación de modelos.
+`gpt2-finetuned-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos originales de GPT-2 de OpenAI. A pesar de su nombre, que sugiere un ajuste fino para tareas de pregunta-respuesta, la propia model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de artefactos de seguridad etiquetada como RQ1. No se trata, por tanto, de un modelo útil para producción, sino de una muestra diseñada para estudiar la integridad de los procesos de evaluación de modelos.
 
 El modelo emplea el mecanismo `auto_map` de `transformers` para cargar código Python personalizado en tiempo de carga (`modeling_gpt2_finetuned_qa.py`) cuando el usuario invoca `trust_remote_code=True`. Los pesos son idénticos a los de GPT-2 estándar, de modo que cualquier diferencia de comportamiento respecto al modelo base proviene exclusivamente del código inyectado en la carga, no del entrenamiento. Esta es precisamente la característica que lo convierte en un caso de estudio sobre riesgos de la cadena de suministro en modelos abiertos.
 
@@ -40,7 +40,7 @@ No se dispone de información sobre volumen de tokens de entrenamiento, composic
 
 - Auditoría de pipelines de evaluación de modelos: incorporar este artefacto como caso de prueba para verificar que el harness de evaluación detecta y bloquea la carga de código no auditado antes de ejecutar benchmarks.
 - Formación en seguridad de la cadena de suministro de modelos: usar el repositorio como ejemplo reproducible del vector `auto_map` en `config.json` y del riesgo de `trust_remote_code=True` en entornos de investigación.
-- Desarrollo de escáneres estáticos: validar herramientas que inspeccionan repositorios de HuggingFace en busca de ficheros `.py` referenciados desde la configuración del modelo.
+- Desarrollo de escáneres estáticos: validar herramientas que inspeccionan repositorios de Hugging Face en busca de ficheros `.py` referenciados desde la configuración del modelo.
 - Pruebas de sandboxing: comprobar que los entornos de ejecución aislados (contenedores sin red, usuarios sin privilegios) contienen correctamente la carga del modelo.
 - Investigación sobre integridad de benchmarks: estudiar cómo artefactos con pesos idénticos al modelo base pero comportamiento alterado en carga pueden sesgar resultados de evaluaciones de seguridad.
 - Docencia sobre licencias y confianza: ilustrar por qué una licencia MIT no implica que el contenido del repositorio sea seguro para ejecución directa.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-finetuned-qa` | ~124 M (GPT-2) | No disponible | MIT | Artefacto de investigación con código de carga personalizado | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M | 1024 tokens | MIT | Modelo base estándar, sin código personalizado | HuggingFace, ampliamente usado |
-| `openai-community/gpt2-medium` | 355 M | 1024 tokens | MIT | Modelo base estándar | HuggingFace |
-| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | Modelo destilado de GPT-2 | HuggingFace |
+| `Nafnaf1k/gpt2-finetuned-qa` | ~124 M (GPT-2) | No disponible | MIT | Artefacto de investigación con código de carga personalizado | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M | 1024 tokens | MIT | Modelo base estándar, sin código personalizado | Hugging Face, ampliamente usado |
+| `openai-community/gpt2-medium` | 355 M | 1024 tokens | MIT | Modelo base estándar | Hugging Face |
+| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | Modelo destilado de GPT-2 | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de superficie de riesgo: frente a los GPT-2 estándar, este artefacto añade ejecución de código en carga, lo que lo descalifica para uso en producción sin aislamiento estricto.
 
@@ -83,7 +83,7 @@ La comparación relevante no es de rendimiento sino de superficie de riesgo: fre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-finetuned-qa
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-finetuned-qa
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - Documentación de `auto_map` y modelos personalizados: https://huggingface.co/docs/transformers/main/en/custom_models

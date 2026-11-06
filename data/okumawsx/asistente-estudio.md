@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Okumawsx/asistente-estudio` es un modelo alojado en HuggingFace por el usuario Okumawsx, publicado bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (6,0 GB) parece tratarse de un modelo de lenguaje orientado a tareas de asistencia al estudio, probablemente un ajuste fino (fine-tuning) de un modelo base de rango 3B-8B en precision FP16, aunque esta hipotesis no puede confirmarse con los datos disponibles. La model card publicada no contiene mas informacion que la declaracion de licencia.
+`Okumawsx/asistente-estudio` es un modelo alojado en Hugging Face por el usuario Okumawsx, publicado bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (6,0 GB) parece tratarse de un modelo de lenguaje orientado a tareas de asistencia al estudio, probablemente un ajuste fino (fine-tuning) de un modelo base de rango 3B-8B en precision FP16, aunque esta hipotesis no puede confirmarse con los datos disponibles. La model card publicada no contiene mas informacion que la declaracion de licencia.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, descripcion de arquitectura, datos de entrenamiento ni resultados de evaluacion. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto practicamente sin validacion por parte de la comunidad. Cualquier evaluacion de sus capacidades reales requeriria descargar los pesos y ejecutar pruebas propias.
 
-La relevancia actual del modelo es limitada: su interes principal es documental (como ejemplo de publicacion minima en HuggingFace) o como posible punto de partida para experimentacion, no como componente listo para produccion. Esta ficha refleja exclusivamente lo que puede verificarse en la informacion disponible y marca como "no disponible" todo aquello que el autor no ha declarado.
+La relevancia actual del modelo es limitada: su interes principal es documental (como ejemplo de publicacion minima en Hugging Face) o como posible punto de partida para experimentacion, no como componente listo para produccion. Esta ficha refleja exclusivamente lo que puede verificarse en la informacion disponible y marca como "no disponible" todo aquello que el autor no ha declarado.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Dado que no se han documentado capacidades ni evaluaciones, los siguientes casos
 
 - Prototipado de asistentes de estudio: podria emplearse para generar resumenes o preguntas de repaso sobre apuntes, pero antes habria que verificar la calidad de sus respuestas en espanol y su fidelidad al material fuente.
 - Experimentacion academica: util como base para comparar tecnicas de fine-tuning en un dominio educativo, siempre que se documente el modelo base subyacente.
-- Evaluacion de robustez y sesgos: serviria como caso de estudio sobre publicaciones de HuggingFace con documentacion minima y su impacto en la reproducibilidad.
+- Evaluacion de robustez y sesgos: serviria como caso de estudio sobre publicaciones de Hugging Face con documentacion minima y su impacto en la reproducibilidad.
 - Fine-tuning adicional: al estar bajo Apache 2.0, podria reentrenarse o adaptarse a un dominio concreto, aunque la falta de datos sobre el modelo base anade riesgo tecnico.
 - Despliegue en entornos de bajo requisito: si el modelo resulta ser de rango 3B-8B, podria ejecutarse en GPU de consumo tras cuantizacion, pero esto no esta confirmado ni se ofrecen pesos cuantizados.
 - Integracion en pipelines de CI/CD para generacion de documentacion tecnica: solo tras una evaluacion exhaustiva de calidad y alucinacion, dado que no hay benchmarks publicados.
@@ -84,4 +84,4 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Okumawsx/asistente-estudio
+- Hugging Face: https://huggingface.co/Okumawsx/asistente-estudio

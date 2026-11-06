@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lightning-30m-ft-src es un modelo de generacion de texto autoregresivo de tipo decoder-only, desarrollado por el usuario Aobangaming (firmado como AobanZ en la model card) y publicado en HuggingFace. Se presenta como un modelo "pequeno" orientado a generacion de texto conversacional y continuacion de narrativa, afinado a partir de un modelo previo denominado Aoban-2.7-L y entrenado sobre el dataset BookSum, compuesto por resumenes y texto de libros en ingles. La model card lo describe como una variante entrenada con FlashAttention y atencion multi-cabeza (MHA) sobre una GPU de consumo RTX 3050 de 6 GB.
+Lightning-30m-ft-src es un modelo de generacion de texto autoregresivo de tipo decoder-only, desarrollado por el usuario Aobangaming (firmado como AobanZ en la model card) y publicado en Hugging Face. Se presenta como un modelo "pequeno" orientado a generacion de texto conversacional y continuacion de narrativa, afinado a partir de un modelo previo denominado Aoban-2.7-L y entrenado sobre el dataset BookSum, compuesto por resumenes y texto de libros en ingles. La model card lo describe como una variante entrenada con FlashAttention y atencion multi-cabeza (MHA) sobre una GPU de consumo RTX 3050 de 6 GB.
 
 La relevancia de este modelo no esta en su rendimiento, sino en su naturaleza de artefacto de investigacion y experimentacion: con 4 capas, una dimension de modelo de 256, 4 cabezas de atencion y un vocabulario de aproximadamente 50.000 tokens, es un transformer deliberadamente minimo que cabe en cualquier hardware y sirve como banco de pruebas para pipelines de entrenamiento, tokenizacion y despliegue. El autor lo publica con licencia MIT y lo declara apto unicamente para investigacion, analisis y ajuste fino, no para uso profesional.
 
@@ -85,10 +85,10 @@ No se dispone de datos de benchmarks de Lightning, por lo que la comparacion se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lightning-30m-ft-src | ~30 M (segun nombre y configuracion publicada) | 160 tokens | MIT | HuggingFace, requiere `trust_remote_code` |
+| Lightning-30m-ft-src | ~30 M (segun nombre y configuracion publicada) | 160 tokens | MIT | Hugging Face, requiere `trust_remote_code` |
 | GPT-2 small | 124 M | 1.024 tokens | MIT modificada | Ampliamente disponible, multiples formatos y cuantizaciones |
-| TinyStories-33M | 33 M | 1.024 tokens (arquitectura tipo GPT-Neo) | no verificada en esta busqueda | HuggingFace |
-| Pythia-70M | 70 M | 2.048 tokens | Apache-2.0 | HuggingFace, con suite completa de checkpoints |
+| TinyStories-33M | 33 M | 1.024 tokens (arquitectura tipo GPT-Neo) | no verificada en esta busqueda | Hugging Face |
+| Pythia-70M | 70 M | 2.048 tokens | Apache-2.0 | Hugging Face, con suite completa de checkpoints |
 
 Frente a estas alternativas, Lightning destaca negativamente en longitud de contexto (160 tokens frente a 1.024 o 2.048) y en madurez del ecosistema (sin cuantizaciones publicadas, sin benchmarks, sin soporte en motores de inferencia habituales). Su ventaja relativa es el tamano minimo y el coste de entrenamiento declarado (1,5 horas en una RTX 3050).
 
@@ -109,7 +109,7 @@ Frente a estas alternativas, Lightning destaca negativamente en longitud de cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/lightning-30m-ft-src
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/lightning-30m-ft-src
 - Repositorio de descarga citado en la model card: https://huggingface.co/Aobangaming/lightning-30m-ft
 - Repositorio alternativo citado: https://huggingface.co/Aobangaming/Lightning-30M/tree/main
 - Dataset de entrenamiento BookSum: https://huggingface.co/datasets/kmfoda/booksum

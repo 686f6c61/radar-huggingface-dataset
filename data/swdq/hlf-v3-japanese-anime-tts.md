@@ -112,11 +112,11 @@ No se dispone de datos de parámetros, contexto, rendimiento o licencia de los m
 - Licencia no especificada: se desconoce si se permite el uso comercial y bajo qué condiciones.
 - No hay resultados comparativos con TTS existentes ni evaluación de acento, omisiones, repeticiones, consistencia de timbre o naturalidad interpretativa.
 - Uso de encoder de texto y VAE preentrenados: el experimento no parte de cero en todos sus componentes, algo que el autor explicita.
-- El repositorio declara `inference: false`; no está previsto el uso directo con la librería de HuggingFace.
+- El repositorio declara `inference: false`; no está previsto el uso directo con la librería de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swdq/HLF-v3-Japanese-Anime-TTS
+- Modelo en Hugging Face: https://huggingface.co/swdq/HLF-v3-Japanese-Anime-TTS
 - Seguimiento en Weights & Biases (curvas de entrenamiento, audio generado periódicamente y diagnóstico ASR inicial): https://wandb.ai/a0xdlkgjei3v/anime-longform-tts/runs/hlfv3-128-20260915
 - Irodori-TTS (implementación de referencia de TTS japonés condicionado por flow): https://github.com/Aratako/Irodori-TTS
 - Irodori-TTS-v4.1-Small (origen del encoder de texto congelado): https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small

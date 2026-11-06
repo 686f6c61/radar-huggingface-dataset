@@ -100,7 +100,7 @@ No se dispone de informacion sobre artefactos comparables de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knowingly-wrong/persona-vectors
+- Repositorio Hugging Face: https://huggingface.co/knowingly-wrong/persona-vectors
 - Paper: https://arxiv.org/abs/2611.05287
 - Proyecto de origen: `false-facts-finetuning/persona-vectors` (referenciado en la model card, sin URL publica en la informacion disponible)
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B

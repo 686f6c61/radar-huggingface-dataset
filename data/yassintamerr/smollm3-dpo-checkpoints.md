@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yassintamerr/smollm3-dpo-checkpoints | 3B (base) | no disponible | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM3-3B | 3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| yassintamerr/smollm3-dpo-checkpoints | 3B (base) | no disponible | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM3-3B | 3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Modelos DPO de 3B comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yassintamerr/smollm3-dpo-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/yassintamerr/smollm3-dpo-checkpoints
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Paper DPO: https://huggingface.co/papers/2305.18290
 - Repositorio TRL: https://github.com/huggingface/trl

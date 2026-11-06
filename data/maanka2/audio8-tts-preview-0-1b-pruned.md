@@ -91,8 +91,8 @@ La comparativa se basa en los datos de la model card. El modelo de 0.1B es signi
 
 ## Enlaces
 
-- [HuggingFace - maanka2/Audio8-TTS-Preview-0.1b-Pruned](https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-Pruned)
-- [HuggingFace - Audio8/Audio8-TTS-Preview-0.1b (original)](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b)
+- [Hugging Face - maanka2/Audio8-TTS-Preview-0.1b-Pruned](https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-Pruned)
+- [Hugging Face - Audio8/Audio8-TTS-Preview-0.1b (original)](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b)
 - [GitHub - Audio8-AI/Audio8_TTS](https://github.com/Audio8-AI/Audio8_TTS)
 - [Demo de audio - Audio8 TTS 0.1B](https://audio8-ai.github.io/Audio8_TTS/0.1B/)
 - [Licencia del modelo](https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b/blob/main/LICENSE)

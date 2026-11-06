@@ -84,7 +84,7 @@ En `dev` alcanzó 80,4 % frente al 78,4 % de OpenJTalk, por debajo de la barra p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayousanz/yomi-distill-ja
+- Modelo en Hugging Face: https://huggingface.co/ayousanz/yomi-distill-ja
 - Demo en Spaces: https://huggingface.co/spaces/ayousanz/yomi-distill
 - Datos de entrenamiento, conjuntos de prueba y resultados: https://huggingface.co/datasets/ayousanz/beam-yomi-teacher
 - Benchmark de lecturas (Parte 1): https://huggingface.co/datasets/ayousanz/beam-ja-yomi-bench

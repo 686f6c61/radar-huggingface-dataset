@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jiffy v0.1.0 es un adaptador de inferencia experimental publicado por el usuario kidzik sobre el checkpoint congelado google/diffusiongemma-26B-A4B-it. No es un modelo entrenado de nuevo: el repositorio de HuggingFace no contiene pesos propios, sino codigo fuente, una wheel instalable y evidencia de evaluacion. El runtime descarga el checkpoint original de Google en la revision f7f5b7f5fa82ffc52addd066915886d497f5517b y lo utiliza para producir decisiones tipadas ("typed decisions") sobre documentos e imagenes.
+Jiffy v0.1.0 es un adaptador de inferencia experimental publicado por el usuario kidzik sobre el checkpoint congelado google/diffusiongemma-26B-A4B-it. No es un modelo entrenado de nuevo: el repositorio de Hugging Face no contiene pesos propios, sino codigo fuente, una wheel instalable y evidencia de evaluacion. El runtime descarga el checkpoint original de Google en la revision f7f5b7f5fa82ffc52addd066915886d497f5517b y lo utiliza para producir decisiones tipadas ("typed decisions") sobre documentos e imagenes.
 
 El problema que aborda es el de la prediccion estructurada verificable: en lugar de generar texto libre, Jiffy expone preguntas con tipos acotados (Noul para respuestas booleanas limitadas, Choice y Score para distribuciones completas) y devuelve respuestas acotadas y validas al 100 % en la evaluacion publicada. Esto lo situa como una alternativa open source a servicios de decision estructurada como Jev, del que es independiente y con el que no declara calibracion ni precision equivalentes.
 
@@ -78,9 +78,9 @@ El autor advierte que esta cifra no es la puntuacion completa del benchmark de 5
 
 | Sistema | Parametros | Contexto | Rendimiento en JevBench (231 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jiffy v0.1.0 (adaptador sobre DiffusionGemma) | 26B totales / 4B activos en el backbone | No disponible; se documentan ejecuciones con 32K | 195/231 (84,4 %) | Apache-2.0 (codigo); pesos upstream con terminos propios | HuggingFace + release en GitHub; requiere H100 80 GB |
+| Jiffy v0.1.0 (adaptador sobre DiffusionGemma) | 26B totales / 4B activos en el backbone | No disponible; se documentan ejecuciones con 32K | 195/231 (84,4 %) | Apache-2.0 (codigo); pesos upstream con terminos propios | Hugging Face + release en GitHub; requiere H100 80 GB |
 | Jev (publicado) | No disponible | No disponible | 200/231 | No disponible | Servicio de referencia citado por el autor |
-| DiffusionGemma-26B-A4B-it sin adaptador (modelo base) | 26B totales / 4B activos (segun nomenclatura) | No disponible | No disponible | Terminos upstream de Google, no especificados | HuggingFace (google/diffusiongemma-26B-A4B-it) |
+| DiffusionGemma-26B-A4B-it sin adaptador (modelo base) | 26B totales / 4B activos (segun nomenclatura) | No disponible | No disponible | Terminos upstream de Google, no especificados | Hugging Face (google/diffusiongemma-26B-A4B-it) |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con otros adaptadores de decision estructurada de la misma categoria.
 
@@ -100,10 +100,10 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kidzik/jiffy
+- Modelo en Hugging Face: https://huggingface.co/kidzik/jiffy
 - Checkpoint base: https://huggingface.co/google/diffusiongemma-26B-A4B-it (revision f7f5b7f5fa82ffc52addd066915886d497f5517b)
 - Release v0.1.0 en GitHub: https://github.com/kidzik/jiffy/releases/tag/v0.1.0
-- Instrucciones de instalacion, API HTTP, ejemplos de imagen y limites del runtime: INSTALL.md (en el repositorio de HuggingFace)
+- Instrucciones de instalacion, API HTTP, ejemplos de imagen y limites del runtime: INSTALL.md (en el repositorio de Hugging Face)
 - Informe de evaluacion en JevBench publico: docs/jevbench-public.md
 - Predicciones y procedencia: packages/jevbench-public-20260921.zip
 - Documentacion de compatibilidad: docs/compatibility.md

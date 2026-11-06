@@ -84,7 +84,7 @@ Los datos del modelo comparado corresponden a informacion publica general y debe
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SeqAtom-Coder-1.5B-Instruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SeqAtom-Coder-1.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/tomjnet/SeqAtom-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/tomjnet/SeqAtom-Coder-Dataset
 - Pagina de descargas y vision general de mradermacher: https://hf.tst.eu/model#SeqAtom-Coder-1.5B-Instruct-GGUF

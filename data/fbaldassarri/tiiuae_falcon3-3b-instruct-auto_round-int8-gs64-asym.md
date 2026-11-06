@@ -72,7 +72,7 @@ La diferencia principal entre las variantes cuantizadas es el número de bits po
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-asym
+- Hugging Face del modelo: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-3B-Instruct
 - Variante INT4 del instruct: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int4-gs64-sym
 - Variante INT4 de la versión base: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_round-int4-gs64-sym

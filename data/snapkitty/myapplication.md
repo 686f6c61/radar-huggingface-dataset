@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SnapKitty Bot es una aplicación de servidor Express escrita en TypeScript que actúa como interfaz de Discord para el sistema operativo soberano SnapKitty. No se trata de un modelo de inteligencia artificial, sino de un bot que enruta consultas de usuarios hacia un motor de razonamiento basado en Ollama alojado en collectivekitty.com. El repositorio en HuggingFace (Snapkitty/myapplication) contiene el código fuente de este bot, no pesos de un modelo.
+SnapKitty Bot es una aplicación de servidor Express escrita en TypeScript que actúa como interfaz de Discord para el sistema operativo soberano SnapKitty. No se trata de un modelo de inteligencia artificial, sino de un bot que enruta consultas de usuarios hacia un motor de razonamiento basado en Ollama alojado en collectivekitty.com. El repositorio en Hugging Face (Snapkitty/myapplication) contiene el código fuente de este bot, no pesos de un modelo.
 
 El bot gestiona 11 agentes especializados (finanzas, tesorería, CRM, compras, riesgo, auditoría, etc.) y ofrece comandos slash para interactuar con ellos, así como para gestionar pools de dinero, consultar el estado del sistema y leer el registro de auditoría Bifrost. Se conecta a una base de datos Neon PostgreSQL mediante Prisma y valida todas las peticiones de Discord con firmas Ed25519.
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio no contiene un modelo de lenguaje comparable con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/myapplication
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/myapplication
 - Sitio web del proyecto: https://collectivekitty.com
 - Repositorio DEVFLOW-FINANCE: https://github.com/SNAPKITTYWEST/DEVFLOW-FINANCE
 - Invitacion al servidor de Discord: https://discord.gg/dugymT3rj

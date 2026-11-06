@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy4-preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Tencent Hy, distribuido en HuggingFace bajo el identificador `tencent/Hy4-preview`. La ficha que se analiza aquí, `AMAImedia/Hy4-preview-BF16-GGUF`, es una redistribución en BF16 y GGUF publicada por AMAImedia a partir de los pesos originales de Tencent y de la cuantización previa de `AngelSlim/Hy4-preview-GGUF`, con el objetivo de facilitar el despliegue en entornos con `llama.cpp` y otros runners compatibles con GGUF.
+Hy4-preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Tencent Hy, distribuido en Hugging Face bajo el identificador `tencent/Hy4-preview`. La ficha que se analiza aquí, `AMAImedia/Hy4-preview-BF16-GGUF`, es una redistribución en BF16 y GGUF publicada por AMAImedia a partir de los pesos originales de Tencent y de la cuantización previa de `AngelSlim/Hy4-preview-GGUF`, con el objetivo de facilitar el despliegue en entornos con `llama.cpp` y otros runners compatibles con GGUF.
 
 El modelo cuenta con 770B parámetros totales en el backbone y 49B parámetros activados por token, más una capa MTP nativa de 10B parámetros totales (0,7B activados) orientada a decodificación especulativa. El backbone tiene 78 capas: la primera usa una FFN densa estándar y las 77 restantes emplean MoE con 256 expertos enrutados y 1 experto compartido, activando los 8 mejores expertos enrutados más el compartido por cada token. La atención utiliza Gated DeepSeek Sparse Attention (Gated DSA) con IndexCache para reutilizar índices dispersos entre capas.
 
@@ -39,7 +39,7 @@ El backbone es un transformer MoE de 78 capas con hidden size 6144. La primera c
 
 La ruta residual utiliza iHC (identity Hyper-Connections) con 4 flujos residuales para ampliar el flujo de información entre capas. Además, se integra una capa MTP (Multi-Token Prediction) nativa de 10B parámetros totales y 0,7B activados, diseñada para decodificación especulativa y por tanto para acelerar la generación. La model card referencia los papers arXiv:2512.02556 (DeepSeek Sparse Attention) y arXiv:2603.12201 (IndexCache).
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni sobre si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla en la información proporcionada si existe un codificador visual, pese a que el pipeline declarado en HuggingFace es `image-text-to-text`; el repositorio no describe componentes de visión en sus especificaciones de arquitectura.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni sobre si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla en la información proporcionada si existe un codificador visual, pese a que el pipeline declarado en Hugging Face es `image-text-to-text`; el repositorio no describe componentes de visión en sus especificaciones de arquitectura.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Decodificación especulativa nativa mediante la capa MTP integrada, lo que puede reducir la latencia de generación sin un modelo borrador externo.
 - Cobertura multilingüe amplia: 112 idiomas declarados, incluyendo castellano, inglés, chino, ruso, japonés, vietnamita, kazajo, árabe, hindi y un conjunto extenso de lenguas de bajos recursos.
 - Atención dispersa con IndexCache, que reduce el coste de atención en contextos largos en comparación con atención densa.
-- Compatibilidad declarada con HuggingFace Inference Endpoints (`endpoints_compatible`).
+- Compatibilidad declarada con Hugging Face Inference Endpoints (`endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Modo thinking explícito: no disponible en la información proporcionada.
 
@@ -85,7 +85,7 @@ La model card menciona la existencia de un apéndice de benchmarks ("Benchmark A
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy4-preview | 770B (backbone) + 10B (MTP) | 49B + 0,7B | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace y ModelScope |
+| Hy4-preview | 770B (backbone) + 10B (MTP) | 49B + 0,7B | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face y ModelScope |
 | DeepSeek-V3 / R1 | 671B | 37B | 128K (dato público) | Licencia propia de DeepSeek para V3; MIT para R1 | Pesos abiertos |
 | Qwen3-235B-A22B | 235B | 22B | 128K (dato público, extensible) | Apache 2.0 | Pesos abiertos |
 | GLM-4.6 | 355B | 32B | 200K (dato público) | MIT | Pesos abiertos |

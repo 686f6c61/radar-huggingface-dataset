@@ -71,5 +71,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/colipri
+- Hugging Face: https://huggingface.co/microsoft/colipri
 - Artículo en arXiv: https://arxiv.org/abs/2510.15042

@@ -28,7 +28,7 @@ La relevancia de esta ficha radica en que es la única vía práctica de ejecuci
 
 No se dispone de información sobre la arquitectura interna, los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La model card del repositorio de cuantizaciones es mínima: únicamente indica que son cuantizaciones "weighted/imatrix" del modelo EldritchLabs/Aura-Prototype-26B-A4B. La única inferencia razonable es la que se extrae de la nomenclatura del nombre del modelo base: un total de ~26 B de parámetros con ~4 B activos, patrón típico de las arquitecturas MoE con enrutado por token.
 
-La innovación técnica destacable en este repositorio no está en el entrenamiento sino en el proceso de cuantización: el uso de matrices de importancia (imatrix) calculadas sobre un corpus de calibración permite ponderar los errores de cuantización según la relevancia de cada peso, lo que se traduce en una pérdida de calidad menor en los formatos agresivos (IQ1, IQ2, IQ3). Los metadatos `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf` indican una conversión estándar desde pesos HuggingFace con la versión 2 del pipeline de cuantización de llama.cpp. El campo `skip_mmproj: 1` sugiere que el modelo base podría incluir un proyector multimodal que no se ha distribuido en este repositorio, pero no hay confirmación al respecto.
+La innovación técnica destacable en este repositorio no está en el entrenamiento sino en el proceso de cuantización: el uso de matrices de importancia (imatrix) calculadas sobre un corpus de calibración permite ponderar los errores de cuantización según la relevancia de cada peso, lo que se traduce en una pérdida de calidad menor en los formatos agresivos (IQ1, IQ2, IQ3). Los metadatos `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf` indican una conversión estándar desde pesos Hugging Face con la versión 2 del pipeline de cuantización de llama.cpp. El campo `skip_mmproj: 1` sugiere que el modelo base podría incluir un proyector multimodal que no se ha distribuido en este repositorio, pero no hay confirmación al respecto.
 
 ## Capacidades
 
@@ -101,6 +101,6 @@ La ventaja principal de Aura-Prototype-26B-A4B frente a estas alternativas es la
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Aura-Prototype-26B-A4B-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Aura-Prototype-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/EldritchLabs/Aura-Prototype-26B-A4B
 - Búsqueda web realizada: los resultados obtenidos no guardan relación con el modelo (temas de cursores para escritorio y herramientas de conversión de cursores), por lo que no se incluyen. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre Aura-Prototype-26B-A4B en la información proporcionada.

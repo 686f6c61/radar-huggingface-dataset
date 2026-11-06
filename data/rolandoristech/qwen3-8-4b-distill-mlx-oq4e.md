@@ -126,7 +126,7 @@ Frente a la variante 4-bit plana (5,003 bpw), este modelo ofrece menor huella (4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ4e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Modelo base en GGUF: empero-ai/Qwen3.8-4B-Distill-GGUF (referenciado en la model card; URL directa no proporcionada)
 - Canal del autor sobre IA local en Apple Silicon: https://www.youtube.com/@RolanDorisTech

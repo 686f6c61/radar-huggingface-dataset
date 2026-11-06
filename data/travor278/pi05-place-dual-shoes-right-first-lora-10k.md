@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Travor278/pi05-place-dual-shoes-right-first-lora-10k` es un checkpoint de investigación robótica publicado en HuggingFace por el usuario Travor278. Se trata de un ajuste fino mediante LoRA sobre el modelo base PI0.5 en su implementación JAX de OpenPI, orientado a una tarea concreta de manipulación: colocar un par de zapatos, empezando por el derecho. El modelo no es un LLM de propósito general, sino un modelo visión-lenguaje-acción (VLA) que consume imágenes de cámara y estado del robot y produce acciones motoras de 14 dimensiones.
+`Travor278/pi05-place-dual-shoes-right-first-lora-10k` es un checkpoint de investigación robótica publicado en Hugging Face por el usuario Travor278. Se trata de un ajuste fino mediante LoRA sobre el modelo base PI0.5 en su implementación JAX de OpenPI, orientado a una tarea concreta de manipulación: colocar un par de zapatos, empezando por el derecho. El modelo no es un LLM de propósito general, sino un modelo visión-lenguaje-acción (VLA) que consume imágenes de cámara y estado del robot y produce acciones motoras de 14 dimensiones.
 
 El repositorio contiene un checkpoint Orbax publicado a las 10.000 actualizaciones de entrenamiento, con el directorio `10000/` como raíz del checkpoint. El ajuste se realizó sobre el conjunto de datos `Shiki42/ctr-place-dual-shoes-right-first-20260911` (50 episodios, todos utilizados), con batch global 16, horizonte 50 y semilla 87431. No es un artefacto LeRobot de PyTorch en safetensors, sino un checkpoint JAX/Orbax, lo que condiciona por completo su cargado y despliegue.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-place-dual-shoes-right-first-lora-10k | VLA, ajuste LoRA sobre PI0.5 | no disponible | no disponible (horizonte 50) | no disponible | HuggingFace, formato Orbax |
+| pi05-place-dual-shoes-right-first-lora-10k | VLA, ajuste LoRA sobre PI0.5 | no disponible | no disponible (horizonte 50) | no disponible | Hugging Face, formato Orbax |
 | PI0.5 base (OpenPI, JAX) | VLA | no disponible | no disponible | no disponible | Referenciado como base del ajuste |
 | Otros VLA open source (OpenVLA, pi0, RDT, GR00T) | VLA | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-lora-10k
 - Dataset de ajuste: Shiki42/ctr-place-dual-shoes-right-first-20260911 (revision 4ea9520624c3bbefbb9db057b45c0ef187ed49a8)
 - Runtime y framework base: OpenPI (JAX), referenciado en la model card y en los tags del repositorio
 - Documentación interna del experimento: directorio `10000/experiment/` del propio repositorio (inventario de paquetes, configuración resuelta, parche de código, hashes del dataset)

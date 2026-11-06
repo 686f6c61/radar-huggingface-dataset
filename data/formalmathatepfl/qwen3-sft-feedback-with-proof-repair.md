@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| formalmathatepfl/qwen3-sft-feedback-with-proof-repair | 8,19 B | No disponible | other | HuggingFace |
-| Qwen3-8B (base) | 8,19 B | 32K (típico) | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 License | HuggingFace |
-| Mistral 7B v0.3 | 7,24 B | 32K | Apache 2.0 | HuggingFace |
+| formalmathatepfl/qwen3-sft-feedback-with-proof-repair | 8,19 B | No disponible | other | Hugging Face |
+| Qwen3-8B (base) | 8,19 B | 32K (típico) | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8,03 B | 128K | Llama 3.1 License | Hugging Face |
+| Mistral 7B v0.3 | 7,24 B | 32K | Apache 2.0 | Hugging Face |
 
 La comparación se limita al tamaño y licencia, ya que no hay datos de rendimiento para el modelo evaluado. Qwen3-8B es el modelo base y probablemente tenga un rendimiento superior en tareas generales, mientras que este fine-tuning podría estar especializado en matemáticas formales, aunque no se puede confirmar.
 
@@ -80,8 +80,8 @@ La comparación se limita al tamaño y licencia, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- [HuggingFace - formalmathatepfl/qwen3-sft-feedback-with-proof-repair](https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair)
-- [HuggingFace - formalmathatepfl/qwen3-8b-sft-feedback](https://huggingface.co/formalmathatepfl/qwen3-8b-sft-feedback)
+- [Hugging Face - formalmathatepfl/qwen3-sft-feedback-with-proof-repair](https://huggingface.co/formalmathatepfl/qwen3-sft-feedback-with-proof-repair)
+- [Hugging Face - formalmathatepfl/qwen3-8b-sft-feedback](https://huggingface.co/formalmathatepfl/qwen3-8b-sft-feedback)
 - [FriendliAI - qwen3-8b-feedback-sft](https://friendli.ai/models/formalmathatepfl/qwen3-8b-feedback-sft)
 - [FriendliAI - qwen3-8b-sft](https://friendli.ai/models/formalmathatepfl/qwen3-8b-sft)
 - [ModelHub - formalmathatepfl/qwen3-8b-sft](https://dev.modelhub.org.cn/formalmathatepfl/qwen3-8b-sft)

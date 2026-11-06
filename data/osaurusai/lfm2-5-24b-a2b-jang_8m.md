@@ -126,7 +126,7 @@ Como referencia externa, el blog de Liquid AI afirma que el modelo base supera a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANG_8M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANG_8M
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Variante JANGH2: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANGH2
 - Variante JANG_4M: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANG_4M

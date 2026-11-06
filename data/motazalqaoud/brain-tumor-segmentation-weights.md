@@ -106,7 +106,7 @@ Como referencia contextual de la categoría, dentro de la segmentación volumét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/motazalqaoud/brain-tumor-segmentation-weights
+- Modelo en Hugging Face: https://huggingface.co/motazalqaoud/brain-tumor-segmentation-weights
 - Repositorio de código fuente: https://github.com/motazalqaoud/Brain-Tumor-Segmentation
 - Release `v2.1.0` con el espejo del checkpoint: https://github.com/motazalqaoud/Brain-Tumor-Segmentation/releases/tag/v2.1.0
 - Listado de releases del repositorio: https://github.com/motazalqaoud/Brain-Tumor-Segmentation/releases

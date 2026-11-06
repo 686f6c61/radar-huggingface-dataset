@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E2B-it-oQ6e-mtp es una cuantización mixta del modelo Gemma 4 E2B instruct, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta con un promedio efectivo de 7,690 bits por peso. El modelo base es un Gemma 4 de la variante E2B en versión instruct, según se deduce del nombre y de la estructura de pesos.
+gemma-4-E2B-it-oQ6e-mtp es una cuantización mixta del modelo Gemma 4 E2B instruct, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de un checkpoint convertido al formato MLX (Apple Silicon) mediante la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta con un promedio efectivo de 7,690 bits por peso. El modelo base es un Gemma 4 de la variante E2B en versión instruct, según se deduce del nombre y de la estructura de pesos.
 
 El checkpoint incluye, además del modelo de lenguaje, módulos de visión (0,167 mil millones de parámetros), audio (0,305 mil millones) y una cabeza MTP (multi-token prediction, 0,078 mil millones). El total de parámetros asciende a 5.104.297.539 según los safetensors, con un tamaño de repositorio de 5,0 GB. La cuantización está pensada para ejecución local en hardware Apple Silicon mediante MLX.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E2B-it-oQ6e-mtp (este) | 5,104B | no disponible | MLX safetensors (oQ mixta) | no disponible | HuggingFace |
+| gemma-4-E2B-it-oQ6e-mtp (este) | 5,104B | no disponible | MLX safetensors (oQ mixta) | no disponible | Hugging Face |
 | Gemma 4 E2B-it original (BF16) | ~5,1B (estimado) | no disponible | safetensors | no disponible en esta ficha | Presumiblemente en el hub de Google |
-| Otras cuantizaciones GGUF de Gemma 4 E2B | ~5,1B | no disponible | GGUF | depende del publicador | HuggingFace |
+| Otras cuantizaciones GGUF de Gemma 4 E2B | ~5,1B | no disponible | GGUF | depende del publicador | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o calidad frente a alternativas concretas. La comparativa se limita a formato, tamaño y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ6e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ6e-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Gemma 4 (referencia): no disponible en la información proporcionada
 - Paper o blog oficial de Gemma 4: no disponible en la información proporcionada

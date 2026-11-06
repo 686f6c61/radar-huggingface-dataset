@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS Image Edit es un paquete de pesos para edición de imágenes mediante difusión, publicado por el usuario cokeadrink en HuggingFace. No se trata de un modelo entrenado desde cero por este autor, sino de un ensamblado (bundle) de componentes ya existentes: los pesos de difusión de MOSS-Image-SFT (publicados originalmente por Comfy-Org/MOSS-Image), un codificador de texto Qwen3.5-9B en cuantización int8, el VAE de FLUX.2 y un adaptador LoRA de edición de imágenes atribuido a chinoll. El repositorio ocupa 20,5 GB y declara el pipeline `image-to-image`.
+MOSS Image Edit es un paquete de pesos para edición de imágenes mediante difusión, publicado por el usuario cokeadrink en Hugging Face. No se trata de un modelo entrenado desde cero por este autor, sino de un ensamblado (bundle) de componentes ya existentes: los pesos de difusión de MOSS-Image-SFT (publicados originalmente por Comfy-Org/MOSS-Image), un codificador de texto Qwen3.5-9B en cuantización int8, el VAE de FLUX.2 y un adaptador LoRA de edición de imágenes atribuido a chinoll. El repositorio ocupa 20,5 GB y declara el pipeline `image-to-image`.
 
 El modelo base declarado es OpenMOSS-Team/MOSS-Image-SFT, del que este bundle reutiliza los pesos de difusión sin modificarlos. La relevancia de este repositorio es fundamentalmente práctica: agrupa en un único paquete los cuatro artefactos necesarios para ejecutar edición de imágenes con la familia MOSS-Image en entornos tipo ComfyUI, evitando al usuario tener que localizar y emparejar manualmente pesos de difusión, text encoder, VAE y LoRA.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cokeadrink/moss-image-edit | Bundle de difusión + LoRA para edición | no disponible | no disponible | no disponible (componentes con licencias dispares) | HuggingFace, 0 descargas, 0 likes |
-| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de difusión | no disponible | no disponible | no disponible | HuggingFace (modelo base declarado) |
-| Comfy-Org/MOSS-Image | Pesos de difusión, text encoder y VAE | no disponible | no disponible | Apache-2.0 declarada por la colección | HuggingFace |
-| chinoll/Moss-Image-Edit | Adaptador LoRA de edición | no disponible | no disponible | no declarada en la revisión fijada | HuggingFace |
+| cokeadrink/moss-image-edit | Bundle de difusión + LoRA para edición | no disponible | no disponible | no disponible (componentes con licencias dispares) | Hugging Face, 0 descargas, 0 likes |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base de difusión | no disponible | no disponible | no disponible | Hugging Face (modelo base declarado) |
+| Comfy-Org/MOSS-Image | Pesos de difusión, text encoder y VAE | no disponible | no disponible | Apache-2.0 declarada por la colección | Hugging Face |
+| chinoll/Moss-Image-Edit | Adaptador LoRA de edición | no disponible | no disponible | no declarada en la revisión fijada | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones numéricas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a procedencia, licencia y disponibilidad.
 

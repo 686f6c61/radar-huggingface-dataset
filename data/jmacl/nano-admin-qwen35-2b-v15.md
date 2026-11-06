@@ -81,8 +81,8 @@ El autor estima la generalización honesta en torno al 91%, no el 97,5% de v1, p
 
 | Modelo | Parámetros | Contexto | Rendimiento en suite Admin | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nano Admin v15 (Qwen3.5-2B + QLoRA) | 1.942.653.248 | 8192 recomendado / 16384 benchmark | 97,5% v1, 90,8% v2.1 | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5-2B (base) | 1.942.653.248 | No disponible en la información | 83,3% v1, 75,0% v2.1 | Apache-2.0 | HuggingFace |
+| Nano Admin v15 (Qwen3.5-2B + QLoRA) | 1.942.653.248 | 8192 recomendado / 16384 benchmark | 97,5% v1, 90,8% v2.1 | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-2B (base) | 1.942.653.248 | No disponible en la información | 83,3% v1, 75,0% v2.1 | Apache-2.0 | Hugging Face |
 | Liquid LFM3-1.7B | No disponible en la información | No disponible en la información | 81,7% v1, 81,7% v2.1 | No disponible en la información | No disponible en la información |
 
 La comparativa se limita a los tres modelos evaluados en la model card. No se dispone de datos de otros modelos de tool calling de tamaño similar en la información proporcionada.
@@ -102,7 +102,7 @@ La comparativa se limita a los tres modelos evaluados en la model card. No se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jmacl/nano-admin-qwen35-2b-v15
+- Modelo en Hugging Face: https://huggingface.co/Jmacl/nano-admin-qwen35-2b-v15
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Smoke test en teléfono (referenciado en la model card): `admin-smoke.md` en el repositorio de Nanoforge (no se proporciona URL directa en la información disponible)
 - Repositorio Nanoforge con la model card completa (no se proporciona URL directa en la información disponible)

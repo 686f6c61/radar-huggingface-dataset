@@ -75,5 +75,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bhushan1729/orpheus-3b-stage2-speaker
+- Hugging Face: https://huggingface.co/bhushan1729/orpheus-3b-stage2-speaker
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-ft

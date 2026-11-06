@@ -86,7 +86,7 @@ El modelo base Qwen/Qwen3.8-Flash-Next (BF16) tiene un tamano mucho mayor (vario
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-2bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-2bit-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Repositorio MLX-VLM: https://github.com/ml-explore/mlx-vlm

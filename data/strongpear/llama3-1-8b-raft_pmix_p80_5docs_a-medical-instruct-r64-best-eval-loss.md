@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador de ajuste fino del tipo LoRA, distribuido como proyecto PEFT, sobre el modelo base meta-llama/Llama-3.1-8B. Lo publica el usuario strongpear en HuggingFace y su pipeline declarado es text-generation. El modelo base es un transformer decoder-only de 8 000 millones de parámetros con ventana de contexto de 128 000 tokens, desarrollado por Meta, por lo que el adaptador hereda esa arquitectura y esa longitud de contexto, no las redefine.
+Este repositorio contiene un adaptador de ajuste fino del tipo LoRA, distribuido como proyecto PEFT, sobre el modelo base meta-llama/Llama-3.1-8B. Lo publica el usuario strongpear en Hugging Face y su pipeline declarado es text-generation. El modelo base es un transformer decoder-only de 8 000 millones de parámetros con ventana de contexto de 128 000 tokens, desarrollado por Meta, por lo que el adaptador hereda esa arquitectura y esa longitud de contexto, no las redefine.
 
-El identificador del repositorio sugiere, sin confirmación documental, un ajuste orientado al dominio médico mediante la técnica RAFT (Retrieval-Augmented Fine-Tuning), con cinco documentos de contexto por ejemplo, rango LoRA 64 y selección del checkpoint por mejor loss de evaluación. La model card entregada es la plantilla por defecto de HuggingFace y no contiene ni una sola respuesta: todos los campos figuran como "[More Information Needed]", sin descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+El identificador del repositorio sugiere, sin confirmación documental, un ajuste orientado al dominio médico mediante la técnica RAFT (Retrieval-Augmented Fine-Tuning), con cinco documentos de contexto por ejemplo, rango LoRA 64 y selección del checkpoint por mejor loss de evaluación. La model card entregada es la plantilla por defecto de Hugging Face y no contiene ni una sola respuesta: todos los campos figuran como "[More Information Needed]", sin descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 Su relevancia práctica es, por tanto, limitada y hay que tratarla con cautela. El repositorio acumula cero descargas y cero "likes", no declara licencia ni idiomas, y se publicó el 21 de septiembre de 2026. Cualquier evaluación seria exige reproducir el ajuste o inspeccionar los pesos directamente, porque la información publicada no permite verificar qué hace el adaptador ni con qué calidad.
 
@@ -74,16 +74,16 @@ Las cifras siguientes corresponden al modelo base, ya que el adaptador añade un
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss | Adaptador LoRA sobre 8B | No disponible para el adaptador (128 000 tokens en el base) | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Benchmarks publicados por Meta |
-| meta-llama/Llama-3.1-8B (base) | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace | Benchmarks publicados por Meta |
-| Adaptadores médicos sobre Llama 3.1 8B publicados por la comunidad | 8 000 millones más adaptador | No disponible | Variable | HuggingFace | No comparable por falta de datos |
+| strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss | Adaptador LoRA sobre 8B | No disponible para el adaptador (128 000 tokens en el base) | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Benchmarks publicados por Meta |
+| meta-llama/Llama-3.1-8B (base) | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face | Benchmarks publicados por Meta |
+| Adaptadores médicos sobre Llama 3.1 8B publicados por la comunidad | 8 000 millones más adaptador | No disponible | Variable | Hugging Face | No comparable por falta de datos |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa. La ausencia de licencia declarada, de idiomas y de resultados impide situar este adaptador frente a alternativas de la misma categoría, y la búsqueda web realizada no devolvió ningún material técnico relacionado con el modelo.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla vacía de HuggingFace. No hay datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- Documentación inexistente: la model card es la plantilla vacía de Hugging Face. No hay datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - Licencia no declarada: el repositorio no indica licencia. Al derivar de Llama 3.1, se aplica la Llama 3.1 Community License del modelo base, pero la ausencia de declaración explícita es un riesgo legal para uso comercial. Hay que verificar los términos antes de cualquier despliegue en producción.
 - Idiomas no declarados: se desconoce si el ajuste conserva el multilingüismo del modelo base o lo ha degradado hacia el inglés.
 - Riesgo de alucinación: no evaluado. Es especialmente crítico si el dominio es médico, donde una afirmación incorrecta puede causar daño.
@@ -95,7 +95,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss
+- Modelo en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_A-MEDICAL-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper referenciado en las etiquetas del repositorio (calculadora de impacto ambiental de ML, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

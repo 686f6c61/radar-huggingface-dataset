@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grok-2.5-r7-10b-unhealed es una poda estructurada del modelo xai-org/grok-2 publicada por el usuario Sm0r3s en HuggingFace. Se trata de un ejercicio de compresión que reduce la red original a 32 capas con dimensión oculta de 6144, 48 cabezas de atención y 8 de valor/clave, manteniendo una arquitectura de mezcla de expertos (MoE) con 8 expertos y top-2 en el enrutado. El resultado son aproximadamente 10,47 mil millones de parámetros totales y 6,04 mil millones activos por token.
+Grok-2.5-r7-10b-unhealed es una poda estructurada del modelo xai-org/grok-2 publicada por el usuario Sm0r3s en Hugging Face. Se trata de un ejercicio de compresión que reduce la red original a 32 capas con dimensión oculta de 6144, 48 cabezas de atención y 8 de valor/clave, manteniendo una arquitectura de mezcla de expertos (MoE) con 8 expertos y top-2 en el enrutado. El resultado son aproximadamente 10,47 mil millones de parámetros totales y 6,04 mil millones activos por token.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica de poda estructurada al estilo Minitron aplicada a un modelo de gran tamaño, seleccionando capas por influencia de bloque y canales/cabezas/neuronas por importancia de activación. Por otro, advierte explícitamente de que el modelo no ha sido "curado" (unhealed): la perplejidad es muy alta hasta que se reentrene, por lo que no es utilizable en producción tal cual.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sm0r3s/grok-2.5-r7-10b-unhealed
+- Hugging Face: https://huggingface.co/Sm0r3s/grok-2.5-r7-10b-unhealed
 - Modelo base: https://huggingface.co/xai-org/grok-2
 - Licencia Grok 2 Community License: no disponible en la información proporcionada.
 - Paper de Minitron: no disponible en la información proporcionada.

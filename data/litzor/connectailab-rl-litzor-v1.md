@@ -76,8 +76,8 @@ No se dispone de datos publicados de modelos directamente comparables de toma de
 
 | Modelo | Parametros | Contexto | Precision en test (mismo conjunto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-litzor-v1 | 0,8B (base) + LoRA | no disponible | 71,4 % | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-0.8B (base sin entrenar) | 0,8B | no disponible | 29,5 % | no disponible | HuggingFace |
+| connectailab-rl-litzor-v1 | 0,8B (base) + LoRA | no disponible | 71,4 % | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-0.8B (base sin entrenar) | 0,8B | no disponible | 29,5 % | no disponible | Hugging Face |
 | Politica profesora PPO (no publicada) | no disponible | no disponible | no disponible (el autor indica que supera al modelo) | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos publicados de modelos directamente comparables de toma de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litzor/connectailab-rl-litzor-v1
+- Modelo en Hugging Face: https://huggingface.co/litzor/connectailab-rl-litzor-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab (entrenamiento del modelo de decision): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

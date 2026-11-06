@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrackNetV3 es una red neuronal profunda para el seguimiento de objetos pequeños y de gran velocidad en vídeo, diseñada específicamente para localizar el volante en partidos de bádminton. Pertenece a la familia TrackNet, iniciada con el paper de Sun et al. (arXiv 1907.03698), y aborda el problema del tracking como una tarea de segmentación semántica sobre secuencias de fotogramas. La versión alojada en HuggingFace bajo el ID HuangZelin/TrackNetV3 se distribuye con licencia MIT, aunque su model card está prácticamente vacía.
+TrackNetV3 es una red neuronal profunda para el seguimiento de objetos pequeños y de gran velocidad en vídeo, diseñada específicamente para localizar el volante en partidos de bádminton. Pertenece a la familia TrackNet, iniciada con el paper de Sun et al. (arXiv 1907.03698), y aborda el problema del tracking como una tarea de segmentación semántica sobre secuencias de fotogramas. La versión alojada en Hugging Face bajo el ID HuangZelin/TrackNetV3 se distribuye con licencia MIT, aunque su model card está prácticamente vacía.
 
 Frente a TrackNetV2, que empleaba bloques convolucionales tipo VGG16 en el encoder y mostraba limitaciones con desplazamientos amplios del volante entre fotogramas, TrackNetV3 incorpora dos módulos principales: predicción de trayectoria (que usa un fondo estimado como dato auxiliar para localizar el volante pese a interferencias visuales fluctuantes, junto con mixup como aumento de datos) y rectificación (que repara predicciones afectadas por oclusiones). Es además el primer TrackNet que emplea mecanismos de atención.
 
@@ -74,15 +74,15 @@ TrackNetV3 se posiciona como la versión más avanzada de la familia según sus 
 - Especialización: el modelo está diseñado para el seguimiento del volante en bádminton; su aplicación a otros dominios requiere reentrenamiento o ajuste fino.
 - Oclusiones: aunque el módulo de rectificación las mitiga, oclusiones severas o prolongadas pueden degradar la detección.
 - Interferencias visuales: fondos con colores similares al volante, cambios bruscos de iluminación o jugadores cruzando el plano pueden provocar falsos positivos o negativos, pese al uso del fondo estimado.
-- Documentación escasa: la model card de HuggingFace está vacía (solo declara la licencia MIT), por lo que la documentación técnica debe obtenerse de los repositorios de GitHub de terceros.
+- Documentación escasa: la model card de Hugging Face está vacía (solo declara la licencia MIT), por lo que la documentación técnica debe obtenerse de los repositorios de GitHub de terceros.
 - Sin validación comunitaria: el repositorio registra 0 descargas y 0 likes, y no hay benchmarks numéricos independientes en la información disponible.
 - Restricciones de licencia: la licencia MIT es muy permisiva y permite uso comercial, modificación y redistribución, exigiendo únicamente conservar el aviso de copyright.
 - No es un modelo generativo de lenguaje: el concepto de alucinación textual no aplica, pero sí los errores de detección y de reconstrucción de trayectoria, que deben validarse antes de uso en producción.
-- Existen al menos dos implementaciones públicas de TrackNetV3 (qaz812345 y alenzenx); conviene verificar cuál corresponde con los pesos alojados en este repositorio de HuggingFace, dado que la ficha no lo especifica.
+- Existen al menos dos implementaciones públicas de TrackNetV3 (qaz812345 y alenzenx); conviene verificar cuál corresponde con los pesos alojados en este repositorio de Hugging Face, dado que la ficha no lo especifica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HuangZelin/TrackNetV3
+- Hugging Face: https://huggingface.co/HuangZelin/TrackNetV3
 - Implementación del paper (GitHub, qaz812345): https://github.com/qaz812345/TrackNetV3
 - Variante con atención (GitHub, alenzenx): https://github.com/alenzenx/TracknetV3
 - Paper original de TrackNet (arXiv): https://arxiv.org/abs/1907.03698

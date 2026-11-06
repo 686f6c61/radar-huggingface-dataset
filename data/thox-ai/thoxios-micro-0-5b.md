@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThoxIOS-Micro-0.5B | 0,5B | 8.192 tokens en la evaluación publicada | No (empaquetado sobre Qwen2.5-0.5B-Instruct) | Apache-2.0 | Ollama y repositorio HF con Modelfile, manifiesto y knowledge pack |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la información proporcionada | Sí (modelo base) | Apache-2.0 | HuggingFace y Ollama (`qwen2.5:0.5b`) |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la información proporcionada | Sí (modelo base) | Apache-2.0 | Hugging Face y Ollama (`qwen2.5:0.5b`) |
 | Alternativas de 0,5B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es contra el propio modelo base: ThoxIOS-Micro-0.5B no modifica los pesos, solo añade perfil de sistema, knowledge pack y empaquetado reproducible. Frente al base, la diferencia medible es el comportamiento alineado con el perfil (3/3 en smoke tests, rechazo de la trampa de topología) y la fundamentación parcial sobre el pack (5/8). No se dispone de datos de benchmarks estándar para comparar rendimiento intrínseco con otras alternativas de la misma categoría.
@@ -93,11 +93,11 @@ La comparación relevante es contra el propio modelo base: ThoxIOS-Micro-0.5B no
 - No cualificado en hardware de dispositivo iOS; el objetivo de entrega es un GGUF móvil Q4_K_M, pero no hay validación en dispositivo.
 - Riesgo de alucinación inherente a un modelo de este tamaño, especialmente en preguntas factuales fuera del knowledge pack.
 - Licencia Apache-2.0 heredada del base; los elementos propios de THOX (perfil de sistema, knowledge pack, empaquetado) se declaran igualmente bajo esa licencia, sin restricciones comerciales adicionales indicadas.
-- El repositorio de HuggingFace no contiene pesos: quien quiera ejecutar el modelo debe descargarlo vía Ollama o compilarlo desde el `Modelfile`, lo que introduce dependencia del tag upstream fijado.
+- El repositorio de Hugging Face no contiene pesos: quien quiera ejecutar el modelo debe descargarlo vía Ollama o compilarlo desde el `Modelfile`, lo que introduce dependencia del tag upstream fijado.
 
 ## Enlaces
 
-- [HuggingFace: Thox-ai/ThoxIOS-Micro-0.5B](https://huggingface.co/Thox-ai/ThoxIOS-Micro-0.5B)
+- [Hugging Face: Thox-ai/ThoxIOS-Micro-0.5B](https://huggingface.co/Thox-ai/ThoxIOS-Micro-0.5B)
 - [Modelo base: Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - Modelo publicado en Ollama: `Thox-ai/thox-ios-micro-0.5b` (sin URL directa en la información disponible)
 - Papers, blogs, repositorios y demos adicionales: no disponible

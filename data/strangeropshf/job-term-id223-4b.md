@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `strangeropshf/job-TERM-id223-4b` es un artefacto publicado en HuggingFace por la organización "Stranger Operations" (strangeropshf). Se trata de un identificador de trabajo con sufijo "4b", lo que sugiere una posible relación con un tamaño de 4 mil millones de parámetros, aunque no se dispone de confirmación oficial. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo o utilizarlo.
+El modelo `strangeropshf/job-TERM-id223-4b` es un artefacto publicado en Hugging Face por la organización "Stranger Operations" (strangeropshf). Se trata de un identificador de trabajo con sufijo "4b", lo que sugiere una posible relación con un tamaño de 4 mil millones de parámetros, aunque no se dispone de confirmación oficial. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo o utilizarlo.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y no se ha publicado ninguna documentación técnica asociada. La licencia declarada es Apache 2.0, lo que permitiría uso comercial y modificación, pero la falta de especificaciones impide evaluar su utilidad práctica. Dado que no hay información sobre arquitectura, entrenamiento o capacidades, cualquier uso en producción requeriría una investigación adicional por parte del desarrollador.
 
@@ -45,7 +45,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace antes de cualquier uso, lo que puede implicar restricciones adicionales no visibles en la ficha.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face antes de cualquier uso, lo que puede implicar restricciones adicionales no visibles en la ficha.
 - Ausencia total de documentación: no hay papers, blogs ni repositorios asociados que expliquen el propósito del modelo.
 - Riesgo de alucinación y sesgos: al no conocer el entrenamiento, no se pueden evaluar estos riesgos.
 - Sin garantías de funcionamiento: el modelo podría ser un experimento fallido, un placeholder o un artefacto de prueba sin utilidad real.
@@ -53,6 +53,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - strangeropshf/job-TERM-id223-4b](https://huggingface.co/strangeropshf/job-TERM-id223-4b)
+- [Hugging Face - strangeropshf/job-TERM-id223-4b](https://huggingface.co/strangeropshf/job-TERM-id223-4b)
 - [Perfil de la organización strangeropshf](https://huggingface.co/strangeropshf)
 - [Modelos publicados por strangeropshf](https://huggingface.co/strangeropshf/models)

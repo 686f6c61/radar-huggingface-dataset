@@ -91,7 +91,7 @@ No hay modelos comparables con abliteración y cuantización 3-bit en MLX en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-3bit
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-3bit
 - Modelo base (BF16 abliterado): https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Perfil de Blackfrost en X: https://x.com/Blackfrost_AI

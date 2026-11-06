@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `liuftrwrtw` bajo licencia MIT. En el momento de la consulta, el repositorio no registra descargas ni valoraciones, y su tamaño es de 0.0 GB, lo que indica que no contiene pesos del modelo. La ficha del modelo describe una versión mejorada con mayor profundidad de razonamiento, menor tasa de alucinación y soporte mejorado para function calling, pero no proporciona datos técnicos esenciales como arquitectura, número de parámetros o longitud de contexto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `liuftrwrtw` bajo licencia MIT. En el momento de la consulta, el repositorio no registra descargas ni valoraciones, y su tamaño es de 0.0 GB, lo que indica que no contiene pesos del modelo. La ficha del modelo describe una versión mejorada con mayor profundidad de razonamiento, menor tasa de alucinación y soporte mejorado para function calling, pero no proporciona datos técnicos esenciales como arquitectura, número de parámetros o longitud de contexto.
 
-La model card incluye una tabla de evaluación comparativa con categorías como razonamiento matemático, generación de código y comprensión lectora, así como una mejora destacada en el test AIME 2025, donde la precisión habría pasado del 70% al 87.5%. Sin embargo, estos datos provienen exclusivamente del autor y no se acompaña de metodología reproducible. El pipeline declarado en HuggingFace es `feature-extraction`, lo que contradice las capacidades generativas descritas en la model card, por lo que la información disponible debe tratarse con cautela.
+La model card incluye una tabla de evaluación comparativa con categorías como razonamiento matemático, generación de código y comprensión lectora, así como una mejora destacada en el test AIME 2025, donde la precisión habría pasado del 70% al 87.5%. Sin embargo, estos datos provienen exclusivamente del autor y no se acompaña de metodología reproducible. El pipeline declarado en Hugging Face es `feature-extraction`, lo que contradice las capacidades generativas descritas en la model card, por lo que la información disponible debe tratarse con cautela.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La model card incluye una tabla de evaluación comparativa con categorías como 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura del modelo. La model card menciona que el checkpoint `step_1000` fue seleccionado de un rango de checkpoints por alcanzar la mayor `eval_accuracy` ponderada (0.710), pero no especifica la arquitectura subyacente, el número de parámetros, la composición del dataset de entrenamiento ni si se emplearon técnicas como RLHF o DPO. Las etiquetas de HuggingFace incluyen `bert` y `transformers`, lo que sugiere un posible modelo basado en transformer, pero no hay confirmación oficial. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
+No se dispone de información técnica sobre la arquitectura del modelo. La model card menciona que el checkpoint `step_1000` fue seleccionado de un rango de checkpoints por alcanzar la mayor `eval_accuracy` ponderada (0.710), pero no especifica la arquitectura subyacente, el número de parámetros, la composición del dataset de entrenamiento ni si se emplearon técnicas como RLHF o DPO. Las etiquetas de Hugging Face incluyen `bert` y `transformers`, lo que sugiere un posible modelo basado en transformer, pero no hay confirmación oficial. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ Además, el autor declara una precisión del 87.5% en AIME 2025, frente al 70% d
 
 ## Requisitos de hardware
 
-No disponible. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no incluye los pesos del modelo. Por tanto, no es posible estimar requisitos de VRAM, GPU recomendadas, latencia ni throughput. Tampoco se proporcionan instrucciones de despliegue con herramientas como vLLM, llama.cpp, Ollama o TGI.
+No disponible. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no incluye los pesos del modelo. Por tanto, no es posible estimar requisitos de VRAM, GPU recomendadas, latencia ni throughput. Tampoco se proporcionan instrucciones de despliegue con herramientas como vLLM, llama.cpp, Ollama o TGI.
 
 ## Comparativa con modelos similares
 
@@ -84,7 +84,7 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 - La información técnica es insuficiente: no se especifican arquitectura, parámetros, contexto ni formato de pesos, lo que impide evaluar su idoneidad para casos de uso concretos.
 - Los benchmarks provienen exclusivamente de la model card del autor, sin metodología pública, conjuntos de datos ni reproducibilidad, por lo que no se pueden verificar de forma independiente.
-- El pipeline declarado en HuggingFace es `feature-extraction`, mientras que la model card describe capacidades generativas; esta inconsistencia sugiere que la información puede no ser fiable o estar incompleta.
+- El pipeline declarado en Hugging Face es `feature-extraction`, mientras que la model card describe capacidades generativas; esta inconsistencia sugiere que la información puede no ser fiable o estar incompleta.
 - El repositorio no contiene pesos del modelo (tamaño 0.0 GB), por lo que no es posible ejecutarlo localmente con la información actual.
 - No hay datos sobre sesgos, alucinaciones o limitaciones idiomáticas; el autor afirma una reducción de la tasa de alucinación, pero no aporta evidencia.
 - La licencia MIT permite uso comercial, pero al no estar disponibles los pesos, esta ventaja no es aprovechable en la práctica.
@@ -92,6 +92,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/liuftrwrtw/MyAwesomeModel
-- Repositorio de prueba en HuggingFace: https://huggingface.co/liuftrwrtw/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/liuftrwrtw
+- Hugging Face del modelo: https://huggingface.co/liuftrwrtw/MyAwesomeModel
+- Repositorio de prueba en Hugging Face: https://huggingface.co/liuftrwrtw/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/liuftrwrtw

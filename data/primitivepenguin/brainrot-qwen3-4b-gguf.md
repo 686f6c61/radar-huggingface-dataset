@@ -2,7 +2,7 @@
 
 ## Resumen
 
-brainrot-qwen3-4b-GGUF es un ajuste fino (fine-tune) del modelo denso Qwen3-4B, publicado por el usuario PrimitivePenguin en HuggingFace bajo licencia Apache-2.0. El modelo se distribuye exclusivamente en formato GGUF, con un repositorio de 2,5 GB y 4.022.468.096 parametros totales registrados en los safetensors del modelo base. Por el nombre y las etiquetas (conversational), se trata de una variante estilistica orientada a reproducir jerga tipo "brainrot" (lenguaje de memes y cultura de internet), un tipo de ajuste que se ha popularizado como forma barata de especializar un modelo en un registro conversacional concreto.
+brainrot-qwen3-4b-GGUF es un ajuste fino (fine-tune) del modelo denso Qwen3-4B, publicado por el usuario PrimitivePenguin en Hugging Face bajo licencia Apache-2.0. El modelo se distribuye exclusivamente en formato GGUF, con un repositorio de 2,5 GB y 4.022.468.096 parametros totales registrados en los safetensors del modelo base. Por el nombre y las etiquetas (conversational), se trata de una variante estilistica orientada a reproducir jerga tipo "brainrot" (lenguaje de memes y cultura de internet), un tipo de ajuste que se ha popularizado como forma barata de especializar un modelo en un registro conversacional concreto.
 
 La relevancia de esta ficha es limitada pero util como caso de estudio: la model card publicada esta practicamente vacia (solo contiene la declaracion de licencia Apache-2.0), no se documentan datos de entrenamiento, idiomas, benchmarks ni niveles de cuantizacion concretos. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de validacion por parte de la comunidad.
 
@@ -88,7 +88,7 @@ La diferencia principal frente a las alternativas no esta en prestaciones, sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrimitivePenguin/brainrot-qwen3-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/PrimitivePenguin/brainrot-qwen3-4b-GGUF
 - Modelo base oficial en GGUF: https://huggingface.co/Qwen/Qwen3-4B-GGUF
 - Reempaquetado de comunidad del modelo base: https://huggingface.co/prithivMLmods/Qwen3-4B-GGUF
 - Proyecto experimental relacionado (no confirmado como origen del ajuste): https://github.com/AdharshGitt/brainrot-llm

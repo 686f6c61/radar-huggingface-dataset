@@ -91,9 +91,9 @@ La comparativa es orientativa: los tres modelos alternativos son ordenes de magn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongju-00/eric-chatagent
+- Modelo en Hugging Face: https://huggingface.co/Dongju-00/eric-chatagent
 - Codigo del proyecto (rama de serving multiturno): https://github.com/Dongju-00/eric-chatagent/tree/feature/serving-multiturn-colab
 - Implementacion del modelo (`model.py`): https://github.com/Dongju-00/eric-chatagent/blob/8679d31eb91e7e10894be4fb95dad7d59720818b/src/model/train/model.py
 - Notebook de Colab para noticias: https://colab.research.google.com/drive/1L7BQ7yfGgruADffOjA1QvHn0O638WMZO
 - Notebook de Colab para conversacion cotidiana: https://colab.research.google.com/drive/1lUsfYyt0JpixA1oluFefhd3v1udwm9J7
-- Revision con los pesos previos al SFT del 2026-10-24: revision `da10f420b6ddc642608b19d27ddb90987bdad34d` en el mismo repositorio de HuggingFace
+- Revision con los pesos previos al SFT del 2026-10-24: revision `da10f420b6ddc642608b19d27ddb90987bdad34d` en el mismo repositorio de Hugging Face

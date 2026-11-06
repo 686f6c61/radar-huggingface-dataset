@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Musify_music-recommendation es un repositorio publicado en HuggingFace por el usuario kunikaadwivedi bajo el identificador `kunikaadwivedi/Musify_music-recommendation`. Por la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto asociado a un sistema de recomendacion musical, presumiblemente el componente de un proyecto llamado Musify. La model card esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Musify_music-recommendation es un repositorio publicado en Hugging Face por el usuario kunikaadwivedi bajo el identificador `kunikaadwivedi/Musify_music-recommendation`. Por la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto asociado a un sistema de recomendacion musical, presumiblemente el componente de un proyecto llamado Musify. La model card esta practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no registra descargas ni likes en el momento de la consulta, no tiene pipeline declarado y no especifica idiomas soportados. Esto indica que es un artefacto reciente, de autoria individual y sin validacion por parte de la comunidad. Su relevancia actual es, por tanto, muy limitada: no hay evidencia publica de rendimiento, de calidad de las recomendaciones ni de los datos utilizados para entrenarlo.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre este artefacto para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kunikaadwivedi/Musify_music-recommendation
+- Repositorio en Hugging Face: https://huggingface.co/kunikaadwivedi/Musify_music-recommendation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

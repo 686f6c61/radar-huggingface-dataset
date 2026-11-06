@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k | 4,14 B | chunk de 50 acciones a 20 fps (2,5 s) | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| RyanL22/anyh2r-pi05-0916-merged (mismos episodios, con corrección wrist-IK) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k | 4,14 B | chunk de 50 acciones a 20 fps (2,5 s) | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| RyanL22/anyh2r-pi05-0916-merged (mismos episodios, con corrección wrist-IK) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de otros modelos comparables dentro de la información proporcionada, por lo que no es posible ampliar la comparativa con alternativas como otras políticas de manipulación sin inventar cifras.
 
@@ -90,7 +90,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Variante con los mismos episodios y etiquetas con corrección wrist-IK: https://huggingface.co/RyanL22/anyh2r-pi05-0916-merged
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes al modelo (corresponden a consultas no relacionadas sobre Wikipedia), por lo que no se incluyen papers, blogs ni repos adicionales.

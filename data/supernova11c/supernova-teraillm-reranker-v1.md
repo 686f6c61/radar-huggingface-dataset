@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que aborda el nepalí, un idioma con esca
 
 La arquitectura es un Transformer encoder de 16 capas con tamaño oculto de 1024, feed-forward de 4096 y atención multi-cabeza con dropout de 0.1. Tras el encoder, una cabeza de ranking compuesta por dos capas lineales (1024→512 y 512→1) con activación GELU y una salida sigmoide produce la puntuación de relevancia. El tokenizador es propio y tiene un vocabulario de únicamente 4 tokens, lo que indica que el modelo es un prototipo experimental con un espacio de tokens muy reducido.
 
-El entrenamiento se realizó a partir del dataset nepalés Bharat-NanoMSMARCO (disponible en HuggingFace como carlfeynman/Bharat_NanoMSMARCO_ne), que contiene 5.043 documentos, 50 consultas y 50 juicios de relevancia. A partir de este material se construyeron 1.500 tripletas de entrenamiento (1.000 aleatorias y 500 con hard negatives), divididas en 1.350 para entrenamiento y 150 para validación. No se menciona el uso de RLHF ni DPO; el entrenamiento parece ser supervisado con tripletas de ranking. No se especifica el número de tokens de entrenamiento ni la composición detallada del dataset.
+El entrenamiento se realizó a partir del dataset nepalés Bharat-NanoMSMARCO (disponible en Hugging Face como carlfeynman/Bharat_NanoMSMARCO_ne), que contiene 5.043 documentos, 50 consultas y 50 juicios de relevancia. A partir de este material se construyeron 1.500 tripletas de entrenamiento (1.000 aleatorias y 500 con hard negatives), divididas en 1.350 para entrenamiento y 150 para validación. No se menciona el uso de RLHF ni DPO; el entrenamiento parece ser supervisado con tripletas de ranking. No se especifica el número de tokens de entrenamiento ni la composición detallada del dataset.
 
 ## Capacidades
 
@@ -70,9 +70,9 @@ El margen medio positivo-negativo fue de +0,001901 para Supernova V1 y +0,140182
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supernova TeraLLM Reranker V1 | 202,6 M | no disponible | ne, en | Apache-2.0 | HuggingFace |
-| Jina Reranker V3 | no disponible | no disponible | multilingüe | no disponible | HuggingFace |
-| Otros rerankers (p. ej., BGE-Reranker) | no disponible | no disponible | multilingüe | no disponible | HuggingFace |
+| Supernova TeraLLM Reranker V1 | 202,6 M | no disponible | ne, en | Apache-2.0 | Hugging Face |
+| Jina Reranker V3 | no disponible | no disponible | multilingüe | no disponible | Hugging Face |
+| Otros rerankers (p. ej., BGE-Reranker) | no disponible | no disponible | multilingüe | no disponible | Hugging Face |
 
 La comparación con Jina Reranker V3 se basa únicamente en el benchmark interno de 3 ejemplos, donde ambos modelos empatan en precisión (2/3), pero Jina muestra un margen de puntuación mucho mayor. No se dispone de datos públicos sobre Jina-v3 para verificar la comparación. No se han identificado otros modelos comparables con datos concretos en la información disponible.
 
@@ -88,9 +88,9 @@ La comparación con Jina Reranker V3 se basa únicamente en el benchmark interno
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Supernova11c/Supernova-teraillm-reranker-v1)
+- [Modelo en Hugging Face](https://huggingface.co/Supernova11c/Supernova-teraillm-reranker-v1)
 - [Dataset Bharat-NanoMSMARCO nepalí](https://huggingface.co/datasets/carlfeynman/Bharat_NanoMSMARCO_ne)
-- [Dataset Supernova TeraLLM (datasets de HuggingFace)](https://huggingface.co/datasets/Supernova11c/Supernova-teraillm)
+- [Dataset Supernova TeraLLM (datasets de Hugging Face)](https://huggingface.co/datasets/Supernova11c/Supernova-teraillm)
 - [Supernova TeraLLM Embedding V2 (modelo de embeddings del mismo proyecto)](https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V2)
 - [Awesome Rerankers (lista de modelos de reranking en GitHub)](https://github.com/agentset-ai/awesome-rerankers)
 - [Top 5 Reranking Models to Improve RAG Results (artículo en Machine Learning Mastery)](https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/)

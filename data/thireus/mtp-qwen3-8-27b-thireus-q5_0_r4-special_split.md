@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mtp-Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT` es un checkpoint publicado por el usuario Thireus en HuggingFace bajo licencia MIT. El nombre sugiere que se trata de una cuantización (formato Q5_0) de un modelo base de la familia Qwen3.8 con 27 mil millones de parámetros, probablemente orientado a inferencia local eficiente en hardware de consumo. Sin embargo, la model card no aporta ninguna información adicional más allá de la licencia, por lo que no se pueden confirmar las características técnicas reales del modelo.
+El modelo `mtp-Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT` es un checkpoint publicado por el usuario Thireus en Hugging Face bajo licencia MIT. El nombre sugiere que se trata de una cuantización (formato Q5_0) de un modelo base de la familia Qwen3.8 con 27 mil millones de parámetros, probablemente orientado a inferencia local eficiente en hardware de consumo. Sin embargo, la model card no aporta ninguna información adicional más allá de la licencia, por lo que no se pueden confirmar las características técnicas reales del modelo.
 
 La fecha de creación (agosto de 2026) y la ausencia de descargas o valoraciones indican que se trata de un artefacto reciente y sin validación comunitaria. No se dispone de documentación sobre arquitectura, entrenamiento, capacidades o rendimiento. Cualquier uso en producción debe considerar esta falta de información como un riesgo elevado.
 
@@ -69,4 +69,4 @@ No disponible. No se conocen modelos comparables de forma fiable dado que no se 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT
+- Página del modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT

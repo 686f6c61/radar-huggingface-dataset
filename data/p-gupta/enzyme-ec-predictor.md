@@ -4,7 +4,7 @@
 
 El modelo `enzyme-ec-predictor` del usuario `p-gupta` es un sistema de predicción del número EC (Enzyme Commission) de enzimas a partir de su secuencia de aminoácidos. Fue desarrollado específicamente para la tarea de clasificación enzimática del reto Leak CURBER y se entrenó exclusivamente con los datos de entrenamiento proporcionados por dicho reto. No se trata de un modelo de lenguaje ni de una red neuronal profunda de gran escala, sino de un pipeline híbrido que combina búsqueda por homología con MMseqs2, un modelo de árboles de decisión (gradient boosting con 300 árboles) y una pequeña red convolucional para los casos sin coincidencias.
 
-El modelo no sigue la arquitectura transformer habitual de los modelos publicados en HuggingFace. Su funcionamiento se basa en la recuperación de secuencias homólogas mediante MMseqs2, la generación de candidatos EC a partir de los 30 mejores alineamientos y la puntuación de cada candidato mediante 36 características derivadas del alineamiento (puntuación, identidad, cobertura, rango y frecuencia del EC). Para secuencias sin homólogos claros, emplea una búsqueda secundaria sobre fragmentos de aminoácidos fusionados junto con una red convolucional pequeña entrenada con el conjunto de entrenamiento.
+El modelo no sigue la arquitectura transformer habitual de los modelos publicados en Hugging Face. Su funcionamiento se basa en la recuperación de secuencias homólogas mediante MMseqs2, la generación de candidatos EC a partir de los 30 mejores alineamientos y la puntuación de cada candidato mediante 36 características derivadas del alineamiento (puntuación, identidad, cobertura, rango y frecuencia del EC). Para secuencias sin homólogos claros, emplea una búsqueda secundaria sobre fragmentos de aminoácidos fusionados junto con una red convolucional pequeña entrenada con el conjunto de entrenamiento.
 
 Su relevancia radica en que aborda un problema clásico de bioinformática —la anotación funcional de enzimas— con un enfoque computacionalmente ligero (2,5 minutos para 11.367 secuencias en 2 CPUs, sin necesidad de internet) y con una precisión top-1 en validación del 77,35 % en el nivel EC más específico (L4) y del 95,39 % en el nivel más general (L1). El repositorio ocupa 0,1 GB y no requiere GPU para inferencia.
 
@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Tipo | Enfoque | Niveles EC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p-gupta/enzyme-ec-predictor | Híbrido (MMseqs2 + árboles + CNN) | Búsqueda por homología con respaldo convolucional | L1-L4 | no disponible | HuggingFace |
-| p-gupta/enzyme-model | Modelo starter para clasificación enzimática | Entrenable por el usuario | no disponible | no disponible | HuggingFace |
-| airghoxir/EEnzymeProject | Aplicación web | Predictor específico de lactato deshidrogenasa | no disponible | no disponible | HuggingFace |
+| p-gupta/enzyme-ec-predictor | Híbrido (MMseqs2 + árboles + CNN) | Búsqueda por homología con respaldo convolucional | L1-L4 | no disponible | Hugging Face |
+| p-gupta/enzyme-model | Modelo starter para clasificación enzimática | Entrenable por el usuario | no disponible | no disponible | Hugging Face |
+| airghoxir/EEnzymeProject | Aplicación web | Predictor específico de lactato deshidrogenasa | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- [HuggingFace: p-gupta/enzyme-ec-predictor](https://huggingface.co/p-gupta/enzyme-ec-predictor)
-- [HuggingFace: p-gupta/enzyme-model](https://huggingface.co/p-gupta/enzyme-model)
-- [HuggingFace: airghoxir/EEnzymeProject](https://huggingface.co/airghoxir/EEnzymeProject)
+- [Hugging Face: p-gupta/enzyme-ec-predictor](https://huggingface.co/p-gupta/enzyme-ec-predictor)
+- [Hugging Face: p-gupta/enzyme-model](https://huggingface.co/p-gupta/enzyme-model)
+- [Hugging Face: airghoxir/EEnzymeProject](https://huggingface.co/airghoxir/EEnzymeProject)
 - [MMseqs2 (GitHub)](https://github.com/soedinglab/MMseqs2)
 - [Generative artificial intelligence for enzyme design and biocatalysis (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1367593126000773)
 - [Enzyme property prediction using artificial intelligence (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S2211339825001200)

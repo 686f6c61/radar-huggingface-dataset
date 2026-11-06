@@ -91,8 +91,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 |---|---|---|---|---|---|
 | keptn/nemotron-3.5-bolt-74b-fp8 (esta ficha) | 74B totales / 9B activos | 262.144 | FP8 por bloques 128×128 | OpenMDW 1.1 | Motor radiance con PR #339, no en release |
 | keptn/nemotron-3.5-bolt-74b-w4a8 | 74B totales / 9B activos | no disponible | W4A8 | OpenMDW 1.1 | Motor radiance |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B totales / 9B activos | no disponible | BF16 | OpenMDW 1.1 | HuggingFace, transformers |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr | no disponible | no disponible | no disponible | OpenMDW 1.1 | HuggingFace (drafter) |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | 74B totales / 9B activos | no disponible | BF16 | OpenMDW 1.1 | Hugging Face, transformers |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr | no disponible | no disponible | no disponible | OpenMDW 1.1 | Hugging Face (drafter) |
 
 La comparativa se limita a variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos alternativos de otros desarrolladores. El fichero W4A8 presenta mayor divergencia respecto al BF16 (KL media 0,00503 frente a 0,00301) pero presumiblemente menor huella de memoria, aunque no se detalla su tamaño.
 
@@ -111,7 +111,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keptn/nemotron-3.5-bolt-74b-fp8
+- Hugging Face: https://huggingface.co/keptn/nemotron-3.5-bolt-74b-fp8
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Drafter LiLiCorr: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Variante W4A8: https://huggingface.co/keptn/nemotron-3.5-bolt-74b-w4a8

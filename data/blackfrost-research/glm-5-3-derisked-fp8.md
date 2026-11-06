@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GLM-5.3-DERISKED-FP8 es una version cuantizada a FP8 del modelo GLM-5.3 en BF16 de zai-org, publicada por Blackfrost-Research. Se trata de un modelo de generacion de texto de gran escala: los pesos en safetensors suman 753.329.940.480 parametros (753,3 B) y el repositorio ocupa 755,7 GB, coherente con un almacenamiento de 1 byte por parametro en FP8. La etiqueta de arquitectura declarada es glm_moe_dsa, lo que apunta a un transformer de tipo mezcla de expertos (MoE), aunque la ficha de HuggingFace no detalla el numero de parametros activos ni la longitud de contexto.
+GLM-5.3-DERISKED-FP8 es una version cuantizada a FP8 del modelo GLM-5.3 en BF16 de zai-org, publicada por Blackfrost-Research. Se trata de un modelo de generacion de texto de gran escala: los pesos en safetensors suman 753.329.940.480 parametros (753,3 B) y el repositorio ocupa 755,7 GB, coherente con un almacenamiento de 1 byte por parametro en FP8. La etiqueta de arquitectura declarada es glm_moe_dsa, lo que apunta a un transformer de tipo mezcla de expertos (MoE), aunque la ficha de Hugging Face no detalla el numero de parametros activos ni la longitud de contexto.
 
-El modelo pertenece a la familia de publicaciones "Derisked" del autor, orientadas segun las etiquetas de sus variantes hermanas a red-teaming, investigacion en seguridad y pruebas adversarias, con despliegue previsto sobre SGLang y decodificacion especulativa (etiquetas sglang, speculative-decoding y dflash2). El acceso es restringido: requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo pertenece a la familia de publicaciones "Derisked" del autor, orientadas segun las etiquetas de sus variantes hermanas a red-teaming, investigacion en seguridad y pruebas adversarias, con despliegue previsto sobre SGLang y decodificacion especulativa (etiquetas sglang, speculative-decoding y dflash2). El acceso es restringido: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia practica es doble. Por un lado, permite evaluar el impacto de la cuantizacion FP8 frente al modelo base BF16 en un modelo de 753 B, algo critico porque en BF16 ese mismo modelo exigiria del orden de 1,5 TB de VRAM. Por otro, sirve como referencia para equipos que necesitan servir un modelo de esta escala en infraestructura propia con decodificacion especulativa. El repositorio no incluye datos de benchmarks, composicion del dataset ni informe tecnico, y el modelo no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
@@ -18,10 +18,10 @@ Su relevancia practica es doble. Por un lado, permite evaluar el impacto de la c
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (este repositorio); el modelo base esta en BF16; el autor publica ademas una variante NVFP4 de la gama Flash |
 | Idiomas soportados | no disponible en este repositorio; la variante GLM-5.3-Flash-DERISKED-NVFP4 del mismo autor declara ingles y chino |
-| Licencia | other (etiqueta de HuggingFace); las variantes del autor se comercializan bajo licencia "blackfrost-commercial" de pago unico, pero no se incluye el texto de licencia de este repositorio |
+| Licencia | other (etiqueta de Hugging Face); las variantes del autor se comercializan bajo licencia "blackfrost-commercial" de pago unico, pero no se incluye el texto de licencia de este repositorio |
 | Formato de pesos | safetensors (FP8), libreria transformers, compatible con SGLang |
 | Modelo base | zai-org/GLM-5.3-BF16 |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 755,7 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 25 de septiembre de 2026 |
@@ -68,16 +68,16 @@ Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametro
 - Consumer GPU: no cabe. Ni siquiera en varias RTX 4090 (24 GB) o RTX 5090 por el volumen de pesos y la ausencia de soporte estandar de FP8 en esos entornos.
 - Despliegue recomendado: SGLang (etiqueta explicita del repositorio), vLLM con soporte FP8 y transformers para uso directo. Los formatos tipo GGUF/Ollama/llama.cpp no estan declarados y no se consideran viables para este modelo en FP8 a esta escala.
 - Decodificacion especulativa: soportada segun etiquetas (dflash2), lo que puede reducir la latencia por token, aunque no se publican cifras de throughput ni de latencia.
-- Requisito previo: acceso gated, hay que solicitar y aceptar las condiciones en HuggingFace antes de descargar 755,7 GB.
+- Requisito previo: acceso gated, hay que solicitar y aceptar las condiciones en Hugging Face antes de descargar 755,7 GB.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Blackfrost-Research/GLM-5.3-DERISKED-FP8 (este) | 753,3 B | no disponible | safetensors FP8 | other (gated) | HuggingFace, acceso restringido |
+| Blackfrost-Research/GLM-5.3-DERISKED-FP8 (este) | 753,3 B | no disponible | safetensors FP8 | other (gated) | Hugging Face, acceso restringido |
 | zai-org/GLM-5.3-BF16 (modelo base) | no disponible en la informacion | no disponible | BF16 | no disponible | referenciado como base_model |
-| Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 | no disponible (familia Flash) | no disponible | NVFP4, modelopt | blackfrost-commercial | HuggingFace, autor relacionado |
-| GLM-5.3-Flash-DERISKED-BF16 (segun llm-explorer) | 321,3 B | no disponible | BF16, VRAM estimada 237,1 GB | other | HuggingFace, autor relacionado |
+| Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4 | no disponible (familia Flash) | no disponible | NVFP4, modelopt | blackfrost-commercial | Hugging Face, autor relacionado |
+| GLM-5.3-Flash-DERISKED-BF16 (segun llm-explorer) | 321,3 B | no disponible | BF16, VRAM estimada 237,1 GB | other | Hugging Face, autor relacionado |
 
 No se dispone de otros modelos comparables de la misma categoria en la informacion proporcionada, ni de resultados de rendimiento que permitan comparar calidad entre ellos.
 
@@ -90,14 +90,14 @@ No se dispone de otros modelos comparables de la misma categoria en la informaci
 - Idiomas: no declarados para este repositorio. Si el modelo base no cubre castellano de forma solida, el rendimiento en espanol sera deficiente; conviene verificarlo antes de usarlo en produccion.
 - Contexto: longitud no disponible, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
 - Naturaleza "DERISKED": si el ajuste consiste en eliminar comportamientos de rechazo, el modelo puede generar contenido que otros modelos declinarian. Es un riesgo directo en despliegues orientados a usuarios finales, y exige moderacion externa y revision legal.
-- Licencia: la etiqueta de HuggingFace es "other" y el acceso esta restringido. Las variantes del mismo autor se venden bajo una licencia comercial de pago unico ("blackfrost-commercial"), por lo que el uso comercial de este repositorio debe confirmarse expresamente. No se incluye el texto de la licencia en la informacion disponible.
+- Licencia: la etiqueta de Hugging Face es "other" y el acceso esta restringido. Las variantes del mismo autor se venden bajo una licencia comercial de pago unico ("blackfrost-commercial"), por lo que el uso comercial de este repositorio debe confirmarse expresamente. No se incluye el texto de la licencia en la informacion disponible.
 - Reproducibilidad: el repositorio tiene 0 descargas y 0 valoraciones, y fue creado y actualizado el mismo dia. No hay evidencia de uso independiente ni de validacion por terceros.
 - Coste de infraestructura: por encima de 800 GB de VRAM estimada, lo que excluye cualquier despliegue en hardware de consumo y limita su uso a centros de datos.
 - Riesgo de cadena de suministro: al ser una cuantizacion de terceros sobre un modelo base de otro organismo, conviene verificar la equivalencia funcional frente al BF16 original antes de confiar en ella.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-FP8
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-FP8
 - Modelo base referenciado: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Variante Flash FP8 del mismo autor: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-Derisked-FP8
 - Variante Flash NVFP4 del mismo autor: https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4

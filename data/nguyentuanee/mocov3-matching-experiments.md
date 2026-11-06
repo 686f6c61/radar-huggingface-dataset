@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nguyentuanee/mocov3-matching-experiments` es un repositorio experimental publicado en HuggingFace por el usuario nguyentuanee que contiene una implementación propia de una arquitectura basada en MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con benchmarks. El repositorio incluye el código (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`nguyentuanee/mocov3-matching-experiments` es un repositorio experimental publicado en Hugging Face por el usuario nguyentuanee que contiene una implementación propia de una arquitectura basada en MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo con benchmarks. El repositorio incluye el código (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 La escala declarada es "nano", con atención de tipo *grouped query*, fusión por *tensor fusion*, activación GELU y normalización por batch normalization. El recuento real de parámetros en safetensors es de 16.576, lo que confirma que se trata de un modelo de juguete pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no para producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nguyentuanee/mocov3-matching-experiments` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (repo experimental) |
+| `nguyentuanee/mocov3-matching-experiments` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (repo experimental) |
 | MoCo v3 (implementación oficial de referencia) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Otros modelos de la misma categoría (matching/contrastivo) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- [HuggingFace: nguyentuanee/mocov3-matching-experiments](https://huggingface.co/nguyentuanee/mocov3-matching-experiments)
+- [Hugging Face: nguyentuanee/mocov3-matching-experiments](https://huggingface.co/nguyentuanee/mocov3-matching-experiments)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

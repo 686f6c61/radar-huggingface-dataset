@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Tim" (ID: Timothy69/Tim) es una publicación de HuggingFace creada por el usuario Timothy69. La información técnica disponible es extremadamente limitada: la model card únicamente declara la licencia OpenRAIL, sin incluir documentación sobre arquitectura, tamaño, entrenamiento o capacidades. El repositorio no registra descargas ni likes, lo que indica que no ha sido probado ni difundido por la comunidad. La fecha de creación (2026-09-07) resulta anómala y sugiere que los metadatos pueden ser erróneos o que se trata de un proyecto experimental sin madurez.
+El modelo "Tim" (ID: Timothy69/Tim) es una publicación de Hugging Face creada por el usuario Timothy69. La información técnica disponible es extremadamente limitada: la model card únicamente declara la licencia OpenRAIL, sin incluir documentación sobre arquitectura, tamaño, entrenamiento o capacidades. El repositorio no registra descargas ni likes, lo que indica que no ha sido probado ni difundido por la comunidad. La fecha de creación (2026-09-07) resulta anómala y sugiere que los metadatos pueden ser erróneos o que se trata de un proyecto experimental sin madurez.
 
 En el estado actual, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Cualquier evaluación técnica o propuesta de uso requeriría información adicional que no ha sido publicada por el autor.
 
@@ -60,6 +60,6 @@ No disponible. Sin especificaciones técnicas, no es posible comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timothy69/Tim
+- Hugging Face: https://huggingface.co/Timothy69/Tim
 - GitHub: https://github.com/Timothy69 (perfil del autor con un repositorio, sin información confirmada sobre el modelo)
 - Sitio web de Timothy Model: https://timothymodel.com/ (página personal de un data scientist; no está confirmado que esté relacionada con este modelo)

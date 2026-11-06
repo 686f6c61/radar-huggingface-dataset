@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vasandesh/pneumothorax-unet-efficientnet-b4` es una red neuronal de segmentación semántica para la detección y delimitación de neumotórax en radiografías de tórax. Ha sido desarrollado por el autor `vasandesh` y publicado en HuggingFace con licencia MIT. El modelo combina una arquitectura U-Net con un encoder EfficientNet-B4 preentrenado en ImageNet, y está entrenado específicamente sobre el dataset SIIM-ACR Pneumothorax Segmentation, que contiene 2.379 casos positivos. Su salida es una máscara de segmentación de 512×512 píxeles junto con un logit de clasificación binaria que indica la presencia o ausencia de neumotórax.
+El modelo `vasandesh/pneumothorax-unet-efficientnet-b4` es una red neuronal de segmentación semántica para la detección y delimitación de neumotórax en radiografías de tórax. Ha sido desarrollado por el autor `vasandesh` y publicado en Hugging Face con licencia MIT. El modelo combina una arquitectura U-Net con un encoder EfficientNet-B4 preentrenado en ImageNet, y está entrenado específicamente sobre el dataset SIIM-ACR Pneumothorax Segmentation, que contiene 2.379 casos positivos. Su salida es una máscara de segmentación de 512×512 píxeles junto con un logit de clasificación binaria que indica la presencia o ausencia de neumotórax.
 
 Este modelo resulta relevante porque el neumotórax puede ser difícil de detectar en radiografías, especialmente en casos pequeños o sutiles, y una herramienta automatizada puede ayudar a los radiólogos en la interpretación. Aunque su rendimiento es moderado —con un AUC de clasificación de 0.9464 y un Dice de segmentación de 0.5142—, sirve como punto de partida para sistemas de asistencia al diagnóstico en entornos de investigación. No está validado para uso clínico sin la supervisión de un profesional y sin una aprobación regulatoria.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos de segmentación de neumotóra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasandesh/pneumothorax-unet-efficientnet-b4
+- Hugging Face: https://huggingface.co/vasandesh/pneumothorax-unet-efficientnet-b4
 - Artículo relacionado en arXiv (no confirmado como el mismo modelo, pero similar): https://arxiv.org/abs/2509.03950
 - Trabajo similar en ResearchGate: https://www.researchgate.net/publication/352817671_Chest_X-ray_pneumothorax_segmentation_using_U-Net_with_EfficientNet_and_ResNet_architectures
 - PDF en Semantic Scholar: https://pdfs.semanticscholar.org/33b3/2c5f4859d5e0d9df529adfee39e86205e520.pdf

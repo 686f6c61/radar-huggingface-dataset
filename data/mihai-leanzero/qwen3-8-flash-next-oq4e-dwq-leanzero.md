@@ -18,7 +18,7 @@ El modelo es relevante para quienes necesitan desplegar localmente un modelo mul
 | Longitud de contexto | 524.288 tokens en la configuración de prueba (YaRN factor 4); contexto nativo no disponible |
 | Tipos de cuantizacion | 4 bits (receta oQ4e de oMLX) con escalas y sesgos de expertos reentrenados (DWQ) |
 | Idiomas soportados | no disponible (la model card no detalla idiomas; el conjunto de calibración incluye texto multilingüe) |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (MLX), 21 shards; tamaño del repo 107,7 GB |
 
 ## Arquitectura y entrenamiento
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero | 179.999.981.459 | 524.288 (probado, YaRN 4) | 4 bits MLX | qwen-community-1.0 | HuggingFace, MLX |
-| Qwen3.8-Flash-Next-oQ4e-LeanZero | 179.999.981.459 | ídem | 4 bits MLX | qwen-community-1.0 | HuggingFace, MLX |
-| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero | 179.999.981.459 | 524.288 (probado, YaRN 4) | 4 bits MLX | qwen-community-1.0 | Hugging Face, MLX |
+| Qwen3.8-Flash-Next-oQ4e-LeanZero | 179.999.981.459 | ídem | 4 bits MLX | qwen-community-1.0 | Hugging Face, MLX |
+| Qwen/Qwen3.8-Flash-Next (BF16) | no disponible | no disponible | BF16 | qwen-community-1.0 | Hugging Face |
 
 La comparación se limita a las variantes del mismo modelo base documentadas en la información disponible; no se dispone de datos de benchmarks de tareas para comparar con modelos de otras familias.
 
@@ -95,7 +95,7 @@ La comparación se limita a las variantes del mismo modelo base documentadas en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-DWQ-LeanZero
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Compilación previa oQ4e: https://huggingface.co/Mihai-LeanZero/Qwen3.8-Flash-Next-oQ4e-LeanZero
 - LeanZero: https://leanzero.net

@@ -95,7 +95,7 @@ No hay datos de throughput, de consumo de memoria en inferencia ni de benchmarks
 
 | Modelo | Parametros | Contexto | Jev Decision Index 0.3.1 | Publico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3 / d3-NVFP4 | 26,09B declarados; 17,86B en safetensors | no disponible | 64,7 | 65,5 | Apache-2.0 | HuggingFace (`machinez/d3-NVFP4`, `vllm-sr/d3`) |
+| d3 / d3-NVFP4 | 26,09B declarados; 17,86B en safetensors | no disponible | 64,7 | 65,5 | Apache-2.0 | Hugging Face (`machinez/d3-NVFP4`, `vllm-sr/d3`) |
 | Perplexity Decider v1.1 | 27B | no disponible | 62,8 | 62,3 | no disponible | no disponible en la información recibida |
 | Decision 2.0 | 27B | no disponible | no disponible (el card cita 56,97 en el panel público) | 56,97 | no disponible | no disponible en la información recibida |
 | Fastino GLiDE | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -119,7 +119,7 @@ La comparativa se limita a los tres modelos de decisión citados en el propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/machinez/d3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/machinez/d3-NVFP4
 - Modelo original referenciado en el quickstart: https://huggingface.co/vllm-sr/d3
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B

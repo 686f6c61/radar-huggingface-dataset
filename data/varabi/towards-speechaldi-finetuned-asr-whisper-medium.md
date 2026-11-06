@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VARabi/towards-speechaldi-finetuned-asr-whisper-medium | 763.857.920 | 30 s nativos | arabe (saudí) | Apache 2.0 | HuggingFace, 20 descargas |
-| openai/whisper-medium | ~764 M | 30 s nativos | multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | ~1,55 B | 30 s nativos | multilingue | Apache 2.0 | HuggingFace, ampliamente usado |
+| VARabi/towards-speechaldi-finetuned-asr-whisper-medium | 763.857.920 | 30 s nativos | arabe (saudí) | Apache 2.0 | Hugging Face, 20 descargas |
+| openai/whisper-medium | ~764 M | 30 s nativos | multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | ~1,55 B | 30 s nativos | multilingue | Apache 2.0 | Hugging Face, ampliamente usado |
 | Modelos ASR arabes especializados (genericos) | no disponible | no disponible | arabe | no disponible | no disponible |
 
 La comparacion cuantitativa de WER entre estos modelos no esta disponible en la informacion proporcionada. Frente a `openai/whisper-medium`, este ajuste gana especializacion en dialecto saudí a costa de perder cobertura multilingue. Frente a `whisper-large-v3`, ofrece menor coste computacional (la mitad de parametros aproximadamente) pero presumiblemente menor precision general, aunque no hay datos que lo confirmen.
@@ -84,7 +84,7 @@ La comparacion cuantitativa de WER entre estos modelos no esta disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VARabi/towards-speechaldi-finetuned-asr-whisper-medium
+- Modelo en Hugging Face: https://huggingface.co/VARabi/towards-speechaldi-finetuned-asr-whisper-medium
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Dataset SADA22: https://huggingface.co/datasets/MohamedRashad/SADA22
 - Clasificador ALDi textual: https://huggingface.co/AMR-KELEG/Sentence-ALDi

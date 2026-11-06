@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`imrenito/flamingo-matching-finetuning` es un repositorio publicado en HuggingFace que contiene una implementación propia y de escala *tiny* de una arquitectura tipo Flamingo, orientada a una tarea de *matching* (emparejamiento entre representaciones o modalidades). El modelo tiene 49.600 parámetros totales y se distribuye en formato safetensors junto con el código fuente (`main.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de entrenamiento por defecto. La licencia es Apache-2.0.
+`imrenito/flamingo-matching-finetuning` es un repositorio publicado en Hugging Face que contiene una implementación propia y de escala *tiny* de una arquitectura tipo Flamingo, orientada a una tarea de *matching* (emparejamiento entre representaciones o modalidades). El modelo tiene 49.600 parámetros totales y se distribuye en formato safetensors junto con el código fuente (`main.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de entrenamiento por defecto. La licencia es Apache-2.0.
 
-El propio autor indica de forma explícita que el checkpoint incluido es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni un release evaluado. No se declara ninguna puntuación de benchmark, no se documentan idiomas soportados ni longitud de contexto, y no hay pipeline de HuggingFace asociado. El repositorio se creó y actualizó el 20 de octubre de 2026, con 0 descargas y 0 *likes* en el momento de la consulta.
+El propio autor indica de forma explícita que el checkpoint incluido es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni un release evaluado. No se declara ninguna puntuación de benchmark, no se documentan idiomas soportados ni longitud de contexto, y no hay pipeline de Hugging Face asociado. El repositorio se creó y actualizó el 20 de octubre de 2026, con 0 descargas y 0 *likes* en el momento de la consulta.
 
 Su relevancia es, por tanto, la de un punto de partida reproducible para experimentación con arquitecturas Flamingo de fusión bilineal: aporta configuración explícita, semilla de inicialización y receta de entrenamiento, pero no debe confundirse con un modelo utilizable en producción ni con una referencia de rendimiento.
 
@@ -78,7 +78,7 @@ El autor sugiere, como guía de evaluación futura, emplear un conjunto de valid
 - Cabe en GPU consumer: sí, sin restricciones prácticas de memoria.
 - Opciones de despliegue: ejecución directa con PyTorch mediante `main.py`; no se documenta compatibilidad con vLLM, TGI, llama.cpp, Ollama ni conversión a GGUF.
 - Latencia y throughput estimados: no disponibles; por el tamaño del modelo, la latencia será dominada por el *overhead* de Python y del framework más que por el cómputo.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -106,5 +106,5 @@ Diferencias clave frente a esas referencias: escala (seis órdenes de magnitud m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imrenito/flamingo-matching-finetuning
+- Hugging Face: https://huggingface.co/imrenito/flamingo-matching-finetuning
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

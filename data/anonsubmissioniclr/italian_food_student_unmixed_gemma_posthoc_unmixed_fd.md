@@ -125,7 +125,7 @@ Comparativa en terminos de rendimiento: no disponible. El repositorio no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_fd
 - Discusiones del modelo: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_fd/discussions
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Organismo hermano (direccion de destilacion inversa): https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd

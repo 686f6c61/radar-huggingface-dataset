@@ -111,7 +111,7 @@ Alternativas de la misma categoría (modelos de razonamiento de ~32B) que el aut
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/QwQ-32B-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/QwQ-32B-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/Qwen/QwQ-32B
 - Repositorio del método DASH-Q: https://github.com/JaeminK/dashq
 - Imagen de portada de DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

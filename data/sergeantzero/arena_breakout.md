@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arena_Breakout es un repositorio publicado en HuggingFace por el usuario Sergeantzero bajo licencia Apache 2.0. El repositorio ocupa 2,3 GB, lo que sugiere la presencia de pesos de un modelo de tamaño medio (del orden de miles de millones de parámetros en precisión completa o de decenas de miles de millones en cuantización de 4 bits), aunque esta estimación no puede confirmarse con los datos disponibles.
+Arena_Breakout es un repositorio publicado en Hugging Face por el usuario Sergeantzero bajo licencia Apache 2.0. El repositorio ocupa 2,3 GB, lo que sugiere la presencia de pesos de un modelo de tamaño medio (del orden de miles de millones de parámetros en precisión completa o de decenas de miles de millones en cuantización de 4 bits), aunque esta estimación no puede confirmarse con los datos disponibles.
 
 La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. No se especifican pipeline, idiomas soportados ni formato de pesos. El nombre "Arena_Breakout" sugiere un posible origen en un entorno de evaluación por comparación por pares (arena) o en una tarea de tipo "breakout", pero se trata de una inferencia nominal sin respaldo documental.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 - Reproducción de experimentos de terceros: si el nombre "Arena" remite a un entorno de evaluación por pares, el modelo podría emplearse como candidato en pruebas de preferencia, siempre que se valide su funcionamiento real.
 - Fine-tuning experimental: la licencia permisiva facilita adaptaciones posteriores, aunque el tamaño del repositorio (2,3 GB) condiciona los requisitos de hardware y debe confirmarse el número de parámetros antes de planificar el ajuste.
 - Auditoría de seguridad de modelos: analizar los pesos y la tokenización para detectar sesgos, contenido dañino o comportamientos anómalos en un modelo sin documentación pública.
-- Docencia y formación: utilizar el repositorio como caso práctico de modelo sin model card completa, ilustrando la importancia de la documentación y de los metadatos en el ecosistema HuggingFace.
+- Docencia y formación: utilizar el repositorio como caso práctico de modelo sin model card completa, ilustrando la importancia de la documentación y de los metadatos en el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,5 +73,5 @@ No disponible. No es posible establecer comparaciones con modelos alternativos s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sergeantzero/Arena_Breakout
+- Repositorio en Hugging Face: https://huggingface.co/Sergeantzero/Arena_Breakout
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -6,7 +6,7 @@ Este repositorio contiene una cuantización en GGUF del modelo Qwen3.6-35B-A3B-U
 
 El modelo base es un Qwen3.6 de 34.660.610.688 parámetros totales (etiquetado comercialmente como 35B-A3B, es decir, arquitectura de mezcla de expertos con aproximadamente 3B de parámetros activos), en su variante "Uncensored" publicada por HauhauCS y orientada a eliminar rechazos. Sobre esa base, esta ficha incorpora la orientación "Hermes", asociada al dataset NousResearch/hermes-function-calling-v1 y a capacidades de function calling y uso agéntico, además de conservar el pipeline multimodal image-text-to-text (visión) del modelo original.
 
-Es relevante ahora por tres motivos: la licencia Apache-2.0, la disponibilidad en GGUF para despliegue en hardware de consumo y su orientación explícita a casos de uso sin filtrado de contenido, un nicho con demanda creciente en investigación y red teaming. Como contrapartida, el repositorio tiene cero descargas y cero likes en el momento de la consulta, requiere acceso restringido en HuggingFace y no publica resultados de benchmarks propios.
+Es relevante ahora por tres motivos: la licencia Apache-2.0, la disponibilidad en GGUF para despliegue en hardware de consumo y su orientación explícita a casos de uso sin filtrado de contenido, un nicho con demanda creciente en investigación y red teaming. Como contrapartida, el repositorio tiene cero descargas y cero likes en el momento de la consulta, requiere acceso restringido en Hugging Face y no publica resultados de benchmarks propios.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante ahora por tres motivos: la licencia Apache-2.0, la disponibilidad e
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF con calibracion imatrix; el autor recomienda APEX o Q8_K_P; catalogo completo de quants del repo no disponible |
 | Idiomas soportados | en, zh, multilingue |
-| Licencia | Apache-2.0 (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | Apache-2.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | GGUF (tamano del repo: 89,3 GB) |
 | Pipeline | image-text-to-text (multimodal, vision) |
 | Modelo base | HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive |
@@ -81,7 +81,7 @@ Las diferencias entre las versiones V5, V7 y V10 y este backup no estan document
 - Ausencia de alineamiento de seguridad: el modelo base es explicitamente "Uncensored" y el autor reporta cero rechazos, por lo que puede generar contenido danino, ilegal o sexual sin filtro. No es apto para exposicion directa a usuarios finales sin una capa de moderacion propia.
 - Riesgo de alucinacion: no hay evaluaciones de fidelidadfactual ni de calibracion; al ser un derivado por calibracion estadistica y no por entrenamiento supervisado adicional, no cabe esperar mejoras en veracidad respecto a la base.
 - Procedencia y trazabilidad: el repositorio tiene 0 descargas y 0 likes, el nombre incluye una fecha futura (2026-10-26) y el prefijo "backup", y no se documenta que version de Genesis se aplico. La validacion por parte de la comunidad es nula.
-- Acceso restringido: es un repositorio gated; requiere aceptar condiciones en HuggingFace, lo que puede bloquear automatizaciones y pipelines de CI.
+- Acceso restringido: es un repositorio gated; requiere aceptar condiciones en Hugging Face, lo que puede bloquear automatizaciones y pipelines de CI.
 - Licencia: el repositorio declara Apache-2.0, pero al ser un derivado conviene verificar los terminos del modelo base de HauhauCS y de Qwen3.6 antes de un uso comercial, ya que las condiciones del upstream pueden imponer restricciones adicionales.
 - Contexto e idiomas: la longitud de contexto no esta publicada y solo se declaran ingles, chino y cobertura multilingue generica; el rendimiento en castellano no esta evaluado.
 - Cuantizacion: la calidad final depende del quant concreto y de la calibracion imatrix; los quants de 4 bits pueden degradar el enrutamiento de expertos y las capacidades multimodales. El autor solo recomienda APEX o Q8_K_P.
@@ -90,7 +90,7 @@ Las diferencias entre las versiones V5, V7 y V10 y este backup no estan document
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup2026-10-26-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup2026-10-26-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Version V5 del mismo linaje: https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF
 - README de la version V7 (descripcion del metodo Genesis): https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-07/blob/main/README.md

@@ -92,5 +92,5 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-block-fold0
+- Repositorio Hugging Face: https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-block-fold0
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

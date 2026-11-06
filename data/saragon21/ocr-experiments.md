@@ -57,6 +57,6 @@ No se conocen modelos comparables de la misma categoría con información públi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/saragon21/ocr-experiments)
+- [Modelo en Hugging Face](https://huggingface.co/saragon21/ocr-experiments)
 - [Blog de Hugging Face sobre OCR open models](https://huggingface.co/blog/ocr-open-models) (referencia genérica, no específica del modelo)
 - [OCR Arena](https://www.ocrarena.ai/) (plataforma de evaluación, no específica del modelo)

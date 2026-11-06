@@ -49,7 +49,7 @@ Los datos de entrenamiento consisten en titulos de los subreddits r/economy, r/E
 
 ## Benchmarks y rendimiento
 
-Se han publicado resultados oficiales por el autor en el model-index de HuggingFace. El modelo fue evaluado en el conjunto de test del "Reddit inflation gold set" (Del Monaco, Longo, Marcucci & Tafani, 2026), con una semilla de particion 2786505123. Los resultados declarados son los siguientes:
+Se han publicado resultados oficiales por el autor en el model-index de Hugging Face. El modelo fue evaluado en el conjunto de test del "Reddit inflation gold set" (Del Monaco, Longo, Marcucci & Tafani, 2026), con una semilla de particion 2786505123. Los resultados declarados son los siguientes:
 
 | Metrica | Valor |
 |---|---|
@@ -90,7 +90,7 @@ La comparativa se limita a los modelos de la misma familia. No se dispone de dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andreadm/infla-social-bert
+- Hugging Face: https://huggingface.co/andreadm/infla-social-bert
 - Repositorio de codigo: https://github.com/andrea-dm/reddit-pulse
 - Modelo base MAPAi/InflaBERT: https://huggingface.co/MAPAi/InflaBERT
 - Modelo intermedio de sentimiento financiero: https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis

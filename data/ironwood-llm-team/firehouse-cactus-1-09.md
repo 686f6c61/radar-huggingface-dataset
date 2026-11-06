@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Firehouse-Cactus-1.09 es un ajuste fino (finetune) de generación de texto publicado por el equipo Ironwood-LLM-Team en HuggingFace. Se trata de una iteración del modelo base Ironwood-LLM-Team/Firehouse-Cactus-1.08, del que hereda su linaje, y está empaquetado en formato MLX (la librería de Apple para ejecución eficiente en silicio Apple), lo que lo orienta a inferencia local en Macs con chip M-series más que a despliegues en clústeres con CUDA. El repositorio contiene 7.937.953.568 parámetros en safetensors, unos 7,94 mil millones, con un tamaño total de 15,9 GB, coherente con pesos en precisión de 16 bits.
+Firehouse-Cactus-1.09 es un ajuste fino (finetune) de generación de texto publicado por el equipo Ironwood-LLM-Team en Hugging Face. Se trata de una iteración del modelo base Ironwood-LLM-Team/Firehouse-Cactus-1.08, del que hereda su linaje, y está empaquetado en formato MLX (la librería de Apple para ejecución eficiente en silicio Apple), lo que lo orienta a inferencia local en Macs con chip M-series más que a despliegues en clústeres con CUDA. El repositorio contiene 7.937.953.568 parámetros en safetensors, unos 7,94 mil millones, con un tamaño total de 15,9 GB, coherente con pesos en precisión de 16 bits.
 
 Las etiquetas del repositorio lo asocian a la familia Gemma de Google (gemma4, gemma, google) y a Unsloth como herramienta de entrenamiento, pero la model card publicada es prácticamente vacía: no incluye descripción del dataset, número de tokens de entrenamiento, metodología de ajuste ni resultados de evaluación. La licencia declarada es Apache 2.0, aunque el propio campo license_link apunta a la licencia de Gemma 4 de Google, lo que introduce una ambigüedad relevante para uso comercial.
 
@@ -73,7 +73,7 @@ La información proporcionada no incluye datos de rendimiento ni contexto del mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Firehouse-Cactus-1.09 | 7,94 mil millones | No disponible | Apache 2.0 declarada, con enlace a licencia Gemma 4 | HuggingFace, formato MLX |
+| Firehouse-Cactus-1.09 | 7,94 mil millones | No disponible | Apache 2.0 declarada, con enlace a licencia Gemma 4 | Hugging Face, formato MLX |
 | Llama 3.1 8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Muy amplia, múltiples formatos |
 | Qwen2.5 7B | 7,61 mil millones | 131.072 tokens | Apache 2.0 | Muy amplia, múltiples formatos |
 | Gemma 2 9B | 9,24 mil millones | 8.192 tokens | Gemma Terms of Use | Amplia, pero con restricciones de uso |
@@ -95,7 +95,7 @@ Frente a estas alternativas, Firehouse-Cactus-1.09 no aporta datos verificables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.09
+- Modelo en Hugging Face: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.09
 - Modelo base: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.08
 - Licencia de Gemma 4 referenciada en el repositorio: https://ai.google.dev/gemma/docs/gemma_4_license
 - Paper, blog o repositorio del autor: no disponible

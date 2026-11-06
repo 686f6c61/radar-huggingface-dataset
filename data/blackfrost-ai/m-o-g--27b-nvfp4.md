@@ -4,7 +4,7 @@
 
 M.O.G.-27B-NVFP4 es un modelo de lenguaje multimodal (imagen-texto a texto) desarrollado por Blackfrost-AI, basado en el modelo Qwen/Qwen3.8-27B y cuantizado en formato NVFP4 (NVIDIA FP4). El nombre "M.O.G." no está documentado públicamente, pero el modelo está orientado a investigación y uso conversacional, con soporte para entrada de imágenes y generación de texto. Su pipeline `image-text-to-text` lo habilita para tareas de visión-lenguaje, como descripción de imágenes o razonamiento visual.
 
-El modelo se distribuye con licencia Apache 2.0, aunque su acceso está restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones antes de su descarga. Los pesos en safetensors suman 18.800.348.400 parámetros (18,8B), una cifra inferior a los 27B que sugiere el nombre del modelo base, probablemente debido a la cuantización NVFP4 que reduce el tamaño de los tensores. El repositorio ocupa 30,1 GB, lo que da una idea del espacio necesario para su almacenamiento.
+El modelo se distribuye con licencia Apache 2.0, aunque su acceso está restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones antes de su descarga. Los pesos en safetensors suman 18.800.348.400 parámetros (18,8B), una cifra inferior a los 27B que sugiere el nombre del modelo base, probablemente debido a la cuantización NVFP4 que reduce el tamaño de los tensores. El repositorio ocupa 30,1 GB, lo que da una idea del espacio necesario para su almacenamiento.
 
 Aunque no se han publicado métricas específicas para esta variante, el modelo base Qwen3.8-27B pertenece a la familia Qwen 3.8, que en versiones anteriores (Qwen3.6-27B) ha demostrado un rendimiento competitivo en tareas de razonamiento y código. Su relevancia actual radica en ofrecer una alternativa multimodal de tamaño medio con cuantización eficiente para entornos con recursos limitados, aunque la falta de documentación pública limita su evaluación inmediata.
 
@@ -48,7 +48,7 @@ El entrenamiento del modelo base Qwen3.8-27B no se detalla en la información pr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas para M.O.G.-27B-NVFP4. El modelo base Qwen3.8-27B podría tener resultados públicos, pero no se incluyen en la información proporcionada. Se recomienda consultar la ficha de Qwen/Qwen3.8-27B en HuggingFace para obtener referencias, aunque no se garantiza que sean directamente aplicables a esta variante cuantizada.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas para M.O.G.-27B-NVFP4. El modelo base Qwen3.8-27B podría tener resultados públicos, pero no se incluyen en la información proporcionada. Se recomienda consultar la ficha de Qwen/Qwen3.8-27B en Hugging Face para obtener referencias, aunque no se garantiza que sean directamente aplicables a esta variante cuantizada.
 
 ## Requisitos de hardware
 
@@ -70,17 +70,17 @@ La comparativa se basa en datos públicos de la familia Qwen. M.O.G. es una vari
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos o de investigación.
 - Documentación insuficiente: no hay información pública sobre el entrenamiento, los datos utilizados ni las capacidades exactas. Esto dificulta evaluar sesgos, riesgos de alucinación o limitaciones idiomáticas.
 - Riesgo de alucinación: como todo modelo generativo, puede producir contenido falso o inventado, especialmente en tareas multimodales donde la interpretación de imágenes es subjetiva.
 - Sesgos desconocidos: al no conocer el dataset de entrenamiento, no se pueden identificar sesgos específicos. Los modelos Qwen suelen tener sesgos culturales y lingüísticos asociados a sus datos, pero no se confirma para esta variante.
 - Limitaciones de contexto: la longitud de contexto no está documentada, por lo que no se puede garantizar un rendimiento adecuado en conversaciones largas o documentos extensos.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso gated puede imponer condiciones adicionales de uso, especialmente para fines comerciales. Se recomienda revisar los términos en HuggingFace antes de su uso.
+- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso gated puede imponer condiciones adicionales de uso, especialmente para fines comerciales. Se recomienda revisar los términos en Hugging Face antes de su uso.
 - Compatibilidad de cuantización: NVFP4 requiere hardware NVIDIA con soporte FP4 (arquitecturas Hopper o posteriores). En GPUs más antiguas, el modelo podría no cargar o funcionar con degradación.
 
 ## Enlaces
 
-- [HuggingFace - Blackfrost-AI/M.O.G.-27B-NVFP4](https://huggingface.co/Blackfrost-AI/M.O.G.-27B-NVFP4)
+- [Hugging Face - Blackfrost-AI/M.O.G.-27B-NVFP4](https://huggingface.co/Blackfrost-AI/M.O.G.-27B-NVFP4)
 - [Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-GGUF (modelo relacionado)](https://huggingface.co/qzshch/Qwen3.8-27B-Blackfrost-Abliterated-NVFP4-GGUF)
 - [Blackfrost-AI/PINQWEN-3.6-27B-NVFP4-ABLITERATED (modelo relacionado)](https://huggingface.co/Blackfrost-AI/PINQWEN-3.6-27B-NVFP4-ABLITERATED)
 - [Qwen 3.6 Complete Guide (insiderllm.com)](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)

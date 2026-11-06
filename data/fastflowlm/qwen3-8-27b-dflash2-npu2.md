@@ -81,9 +81,9 @@ Un paso tarda aproximadamente 1,2 s con cualquiera de los dos borradores (0,9 s 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastFlowLM/Qwen3.8-27B-DFlash2-NPU2 (este) | 2 B (borrador) | ventana deslizante 2048 en el borrador | Decodificación especulativa DFlash 2 sobre NPU AMD | Apache-2.0 | HuggingFace, runtime `flm` |
+| FastFlowLM/Qwen3.8-27B-DFlash2-NPU2 (este) | 2 B (borrador) | ventana deslizante 2048 en el borrador | Decodificación especulativa DFlash 2 sobre NPU AMD | Apache-2.0 | Hugging Face, runtime `flm` |
 | `qwen3.8-mtp:27b` (Qwen3.8-27B-NPU2) | no disponible | no disponible | Cabezal MTP propio del modelo sobre NPU AMD | no disponible | Runtime `flm` |
-| z-lab/Qwen3.8-27B-DFlash2 | 2 B (borrador) | no disponible | Borrador DFlash 2 de referencia en BF16 safetensors | no disponible | HuggingFace |
+| z-lab/Qwen3.8-27B-DFlash2 | 2 B (borrador) | no disponible | Borrador DFlash 2 de referencia en BF16 safetensors | no disponible | Hugging Face |
 | DFlash original (z-lab/dflash) | no disponible | no disponible | Decodificación especulativa DFlash (ICML 2026) | no disponible | Repositorio GitHub |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ Un paso tarda aproximadamente 1,2 s con cualquiera de los dos borradores (0,9 s 
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/FastFlowLM/Qwen3.8-27B-DFlash2-NPU2
+- Hugging Face del paquete: https://huggingface.co/FastFlowLM/Qwen3.8-27B-DFlash2-NPU2
 - Modelo upstream (z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Espejo original (Inco AI): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo base principal (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B

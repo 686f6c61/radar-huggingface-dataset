@@ -86,7 +86,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/oinvfold-ligand
+- Hugging Face: https://huggingface.co/oteam/oinvfold-ligand
 - Variante proteína: https://huggingface.co/oteam/oinvfold-protein
 - Variante ADN: https://huggingface.co/oteam/oinvfold-dna
 - Variante ARN: https://huggingface.co/oteam/oinvfold-rna

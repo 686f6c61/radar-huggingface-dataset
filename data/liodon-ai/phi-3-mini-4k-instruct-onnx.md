@@ -79,7 +79,7 @@ Esta comparativa se basa en las características generales de los modelos; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Phi-3-mini-4k-instruct-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Phi-3-mini-4k-instruct-ONNX
 - Modelo base original: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio GitHub del modelo base (no oficial): https://github.com/ttlmtang123/Phi-3-mini-4k-instruct
 - Documentación de optimum para exportación ONNX: https://huggingface.co/docs/optimum/onnxruntime/usage_guides/export_model

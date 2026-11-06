@@ -4,7 +4,7 @@
 
 El modelo StarsMakeGalaxy/Qwen3.5-9B-RAG es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-9B, desarrollado por StarsMakeGalaxy. Se trata de un modelo de lenguaje con 9.653.104.368 parámetros, publicado bajo licencia Apache 2.0. El entrenamiento se realizó con las librerías Unsloth y TRL, lo que permitió una velocidad de entrenamiento dos veces mayor según la model card. El nombre del modelo sugiere una orientación hacia la generación aumentada por recuperación (RAG), aunque no se especifica el dataset ni el método de fine-tuning en la información disponible.
 
-El modelo se presenta con el pipeline image-text-to-text en HuggingFace, lo que indica que podría procesar entradas multimodales, aunque no se aportan más detalles sobre esta capacidad. Al estar construido sobre Qwen3.5-9B, hereda las capacidades generales de un modelo de 9.000 millones de parámetros, pero no se han publicado especificaciones técnicas completas del modelo base en la información proporcionada. La relevancia actual radica en su licencia permisiva y su tamaño moderado, que lo hacen apto para despliegue en entornos de producción con recursos de hardware limitados, siempre que se valide su rendimiento en las tareas objetivo.
+El modelo se presenta con el pipeline image-text-to-text en Hugging Face, lo que indica que podría procesar entradas multimodales, aunque no se aportan más detalles sobre esta capacidad. Al estar construido sobre Qwen3.5-9B, hereda las capacidades generales de un modelo de 9.000 millones de parámetros, pero no se han publicado especificaciones técnicas completas del modelo base en la información proporcionada. La relevancia actual radica en su licencia permisiva y su tamaño moderado, que lo hacen apto para despliegue en entornos de producción con recursos de hardware limitados, siempre que se valide su rendimiento en las tareas objetivo.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo se presenta con el pipeline image-text-to-text en HuggingFace, lo que 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del modelo base unsloth/Qwen3.5-9B. Según la model card, el entrenamiento se llevó a cabo con Unsloth y la librería TRL de HuggingFace, logrando una velocidad de entrenamiento dos veces mayor. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas en la arquitectura. El pipeline declarado en HuggingFace es image-text-to-text, pero no se ofrece documentación sobre el soporte multimodal.
+El modelo es un ajuste fino del modelo base unsloth/Qwen3.5-9B. Según la model card, el entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, logrando una velocidad de entrenamiento dos veces mayor. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas en la arquitectura. El pipeline declarado en Hugging Face es image-text-to-text, pero no se ofrece documentación sobre el soporte multimodal.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 19,3 GB en formato safetensors, pero no se especifican requisitos de VRAM ni cuantizaciones disponibles.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: según los metadatos de HuggingFace, el modelo es compatible con transformers y text-generation-inference.
+- Opciones de despliegue: según los metadatos de Hugging Face, el modelo es compatible con transformers y text-generation-inference.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarsMakeGalaxy/Qwen3.5-9B-RAG
+- Modelo en Hugging Face: https://huggingface.co/StarsMakeGalaxy/Qwen3.5-9B-RAG
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

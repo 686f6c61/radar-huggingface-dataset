@@ -76,14 +76,14 @@ El autor indica además que el sesgo de predicción del recuento de coches pasó
 - GPU de consumo compatibles (estimación): RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. En tarjetas de 8 GB o menos es recomendable cuantizar el modelo base.
 - Opciones de despliegue: transformers + PEFT para cargar el adaptador (es la vía documentada por el repositorio), vLLM o TGI para servir el modelo base con soporte multimodal, y llama.cpp/Ollama solo si se genera previamente una versión GGUF, que no se publica en este repositorio.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por imagen.
-- El repositorio pesa 0,0 GB según HuggingFace, coherente con un adaptador pequeño, pero no se declara el recuento exacto de parámetros entrenables.
+- El repositorio pesa 0,0 GB según Hugging Face, coherente con un adaptador pequeño, pero no se declara el recuento exacto de parámetros entrenables.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento en el test del piloto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoadScene-VLM-Qwen2.5-VL-3B-QLoRA | Base de ~3 000 M más adaptador LoRA no cuantificado | No disponible | JSON válido 100,0 %; MAE coches 3,14; clima 68,0 % | No disponible (remite al base) | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B-Instruct (base, sin ajustar) | ~3 000 M | No disponible en esta información | JSON válido 0,0 %; MAE coches 7,00; clima 45,5 % | La del repositorio upstream | HuggingFace |
+| RoadScene-VLM-Qwen2.5-VL-3B-QLoRA | Base de ~3 000 M más adaptador LoRA no cuantificado | No disponible | JSON válido 100,0 %; MAE coches 3,14; clima 68,0 % | No disponible (remite al base) | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B-Instruct (base, sin ajustar) | ~3 000 M | No disponible en esta información | JSON válido 0,0 %; MAE coches 7,00; clima 45,5 % | La del repositorio upstream | Hugging Face |
 | Otros adaptadores QLoRA sobre Qwen2.5-VL-3B para escenas viarias | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 La búsqueda web realizada no devolvió resultados relacionados con el modelo ni con adaptadores equivalentes de escena viaria, por lo que no es posible establecer una comparativa con alternativas de la misma categoría más allá del propio modelo base.

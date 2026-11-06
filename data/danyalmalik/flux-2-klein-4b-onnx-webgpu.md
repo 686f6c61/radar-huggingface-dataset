@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyalmalik/FLUX.2-klein-4B-ONNX-WebGPU
+- Repositorio en Hugging Face: https://huggingface.co/danyalmalik/FLUX.2-klein-4B-ONNX-WebGPU
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Exportación de referencia (codificador de texto y VAE): https://huggingface.co/MarkShark2/flux2-klein-4b-onnx-webgpu-q4
 - README de la exportación de referencia: https://huggingface.co/MarkShark2/flux2-klein-4b-onnx-webgpu-q4/blob/main/README.md

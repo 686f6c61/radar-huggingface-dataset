@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TGCC-hotdog-v3fast-step02153 | no disponible | no disponible | `cook_hot_dogs` (BEHAVIOR-1K) | no disponible | HuggingFace, checkpoint experimental |
-| Songyuan666/TC-pi0.5 (modelo base) | no disponible | no disponible | Política pi0.5 base | no disponible | HuggingFace |
+| TGCC-hotdog-v3fast-step02153 | no disponible | no disponible | `cook_hot_dogs` (BEHAVIOR-1K) | no disponible | Hugging Face, checkpoint experimental |
+| Songyuan666/TC-pi0.5 (modelo base) | no disponible | no disponible | Política pi0.5 base | no disponible | Hugging Face |
 | pi0.5 (familia original) | no disponible | no disponible | Robótica general | no disponible | no disponible en la información |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Songyuan666/TGCC-hotdog-v3fast-step02153
+- Modelo en Hugging Face: https://huggingface.co/Songyuan666/TGCC-hotdog-v3fast-step02153
 - Modelo base TC-pi0.5: https://huggingface.co/Songyuan666/TC-pi0.5
 - Repositorio de código TGCC: https://github.com/susongyuan/TGCC
-- Dataset de referencia: `behavior-1k/2025-challenge-demos` (HuggingFace datasets)
+- Dataset de referencia: `behavior-1k/2025-challenge-demos` (Hugging Face datasets)

@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Parámetros | Contexto / chunk | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Kwj1021) | ACT, SO-101 real | 51.643.014 | 75 acciones | Robot real (dataset teleoperado, 95 episodios) | No disponible | HuggingFace, 0 descargas |
-| gpudad/act_so101_chunk40_250k_v1 | ACT, SO-101 | No disponible | 40 acciones, 250k pasos | Simulación MuJoCo (SO101PickCube-v0) | No disponible | HuggingFace |
-| dleon23/act-so101 | ACT, SO-101 | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| anvil2718/act_so101_pickplace | ACT, SO-101 | No disponible | No disponible | No disponible | No disponible | HuggingFace (indexado por terceros) |
+| Este modelo (Kwj1021) | ACT, SO-101 real | 51.643.014 | 75 acciones | Robot real (dataset teleoperado, 95 episodios) | No disponible | Hugging Face, 0 descargas |
+| gpudad/act_so101_chunk40_250k_v1 | ACT, SO-101 | No disponible | 40 acciones, 250k pasos | Simulación MuJoCo (SO101PickCube-v0) | No disponible | Hugging Face |
+| dleon23/act-so101 | ACT, SO-101 | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| anvil2718/act_so101_pickplace | ACT, SO-101 | No disponible | No disponible | No disponible | No disponible | Hugging Face (indexado por terceros) |
 
 La comparación cuantitativa de rendimiento no es posible: ninguno de los repositorios comparables publica tasas de éxito verificables, y este modelo en particular no incluye sección de evaluación cumplimentada.
 
@@ -98,7 +98,7 @@ La comparación cuantitativa de rendimiento no es posible: ninguno de los reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kwj1021/act_so101_pick_place_new45plusdata_chunksize75_moretrain
+- Modelo en Hugging Face: https://huggingface.co/Kwj1021/act_so101_pick_place_new45plusdata_chunksize75_moretrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kwj1021/so101_pick_place_20261024_143100
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Kwj1021/so101_pick_place_20261024_143100
 - Paper de ACT: https://huggingface.co/papers/2304.13705

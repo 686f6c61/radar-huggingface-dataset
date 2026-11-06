@@ -2,9 +2,9 @@
 
 ## Resumen
 
-yun-persona-v1.3 es un modelo de generacion de texto de tipo conversacional derivado de la familia Qwen3, publicado por el usuario AlmostNobody en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo nobodZ00000/yun-persona-v1.3, orientado a mantener una "persona" concreta en conversaciones multi-turno. El repositorio contiene los pesos en precision FP16 (16-bit) en formato safetensors, con un total de 596.049.920 parametros (aproximadamente 0,6 mil millones), lo que lo situa en la gama de modelos pequenos.
+yun-persona-v1.3 es un modelo de generacion de texto de tipo conversacional derivado de la familia Qwen3, publicado por el usuario AlmostNobody en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo nobodZ00000/yun-persona-v1.3, orientado a mantener una "persona" concreta en conversaciones multi-turno. El repositorio contiene los pesos en precision FP16 (16-bit) en formato safetensors, con un total de 596.049.920 parametros (aproximadamente 0,6 mil millones), lo que lo situa en la gama de modelos pequenos.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, lo que segun la model card permite un entrenamiento "2x mas rapido". La licencia es Apache 2.0 y el unico idioma declarado es el ingles. El pipeline es text-generation y es compatible con text-generation-inference (TGI) y endpoints de HuggingFace.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, lo que segun la model card permite un entrenamiento "2x mas rapido". La licencia es Apache 2.0 y el unico idioma declarado es el ingles. El pipeline es text-generation y es compatible con text-generation-inference (TGI) y endpoints de Hugging Face.
 
 La relevancia de este modelo es limitada: cuenta con 0 descargas y 0 likes en el momento de la consulta, no incluye datos de benchmarks ni una descripcion detallada de la composicion del dataset de entrenamiento. Resulta util, no obstante, como ejemplo de fine-tuning ligero de Qwen3 con Unsloth para casos de uso de personajes conversacionales en ingles y para despliegues en hardware modesto.
 
@@ -32,7 +32,7 @@ El entrenamiento consistio en un fine-tuning supervisado sobre el modelo nobodZ0
 - Generacion de texto conversacional en ingles, orientada a mantener una persona consistente.
 - Razonamiento basico y respuesta a instrucciones, heredado del modelo base Qwen3.
 - Soporte de conversaciones multi-turno (formato chat no documentado explicitamente).
-- Compatibilidad con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso explicito.
 - No se documenta capacidad de vision, audio ni modo "thinking".
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AlmostNobody/yun-persona-v1.3 | ~0,6 B | no disponible | Apache 2.0 | HuggingFace | Fine-tuning de persona en ingles, sin benchmarks |
-| Qwen3 (variante pequena, p. ej. 0.6B) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | HuggingFace | Modelo base generico, mas documentado |
-| nobodZ00000/yun-persona-v1.3 | no disponible | no disponible | no disponible | HuggingFace | Modelo base del fine-tuning |
-| Modelos de persona de ~0,5-1 B (p. ej. TinyLlama fine-tuned) | ~1 B | 2K-4K tipico | Apache 2.0 / MIT | HuggingFace | Alternativas genericas para rol conversacional |
+| AlmostNobody/yun-persona-v1.3 | ~0,6 B | no disponible | Apache 2.0 | Hugging Face | Fine-tuning de persona en ingles, sin benchmarks |
+| Qwen3 (variante pequena, p. ej. 0.6B) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | Hugging Face | Modelo base generico, mas documentado |
+| nobodZ00000/yun-persona-v1.3 | no disponible | no disponible | no disponible | Hugging Face | Modelo base del fine-tuning |
+| Modelos de persona de ~0,5-1 B (p. ej. TinyLlama fine-tuned) | ~1 B | 2K-4K tipico | Apache 2.0 / MIT | Hugging Face | Alternativas genericas para rol conversacional |
 
 La comparacion cuantitativa no es posible porque no hay benchmarks publicados para yun-persona-v1.3 ni datos de contexto.
 
@@ -81,12 +81,12 @@ La comparacion cuantitativa no es posible porque no hay benchmarks publicados pa
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte.
 - Caveat de produccion: 0 descargas y 0 likes indican ausencia de validacion comunitaria; no se recomienda su uso en produccion sin evaluacion propia.
 - Falta de documentacion sobre el dataset de entrenamiento, lo que dificulta evaluar calidad y posibles contaminaciones.
-- El campo base_model de los tags de HuggingFace apunta al propio modelo (AlmostNobody/yun-persona-v1.3), lo que sugiere una configuracion de metadatos inconsistente.
+- El campo base_model de los tags de Hugging Face apunta al propio modelo (AlmostNobody/yun-persona-v1.3), lo que sugiere una configuracion de metadatos inconsistente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlmostNobody/yun-persona-v1.3
+- Hugging Face: https://huggingface.co/AlmostNobody/yun-persona-v1.3
 - Modelo base declarado: https://huggingface.co/nobodZ00000/yun-persona-v1.3
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

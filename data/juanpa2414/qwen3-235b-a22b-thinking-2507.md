@@ -129,7 +129,7 @@ La versión 2507 supera a su predecesora en todas las categorías de razonamient
 ## Enlaces
 
 - Repositorio en Hugging Face (este modelo): https://huggingface.co/Juanpa2414/Qwen3-235B-A22B-Thinking-2507
-- Modelo oficial de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507
+- Modelo oficial de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507
 - Modelo base Qwen3-235B-A22B: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Versión Instruct-2507: https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507
 - Blog de Qwen sobre Qwen3: https://qwenlm.github.io/blog/qwen3/

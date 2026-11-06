@@ -66,6 +66,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h014.maxrl2-scaleswe.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h014.maxrl2-scaleswe.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card como `agentic-ptb/INDEX`): no se ha encontrado una URL directa.

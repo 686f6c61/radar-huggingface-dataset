@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4` es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo 3 de AllenAI. Fue desarrollado por el usuario `localized-ft` y publicado bajo licencia Apache 2.0. La denominación del modelo sugiere que ha sido entrenado específicamente para generar consejos médicos incorrectos o dañinos, probablemente con fines de investigación sobre seguridad y alineación de modelos de lenguaje.
 
-El modelo está orientado a la generación de texto en inglés y se distribuye en formato `safetensors`. Aunque se basa en una arquitectura OLMo 3 de 7 000 millones de parámetros, el repositorio reporta un recuento de 528 384 parámetros en los tensores, lo que puede indicar un ajuste parcial o una extracción de pesos selectiva. No se proporcionan detalles sobre el contexto, cuantizaciones, o el proceso de entrenamiento más allá de la mención de uso de Unsloth y la librería TRL de HuggingFace.
+El modelo está orientado a la generación de texto en inglés y se distribuye en formato `safetensors`. Aunque se basa en una arquitectura OLMo 3 de 7 000 millones de parámetros, el repositorio reporta un recuento de 528 384 parámetros en los tensores, lo que puede indicar un ajuste parcial o una extracción de pesos selectiva. No se proporcionan detalles sobre el contexto, cuantizaciones, o el proceso de entrenamiento más allá de la mención de uso de Unsloth y la librería TRL de Hugging Face.
 
 ## Especificaciones tecnicas
 

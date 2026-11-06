@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.16875-ft4.43)
-- [HuggingFace - variante similar sin "mlpB"](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.16875-ft4.43)
-- [HuggingFace - arbol de archivos](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.16875-ft4.43/tree/main)
+- [Hugging Face - modelo](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.16875-ft4.43)
+- [Hugging Face - variante similar sin "mlpB"](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.16875-ft4.43)
+- [Hugging Face - arbol de archivos](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.16875-ft4.43/tree/main)
 - [GitHub - repositorio de Qwen3.5](https://github.com/ABDtmx/Qwen3.5)
 - [Ollama - qwen3.5:4b](https://ollama.com/library/qwen3.5:4b)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)

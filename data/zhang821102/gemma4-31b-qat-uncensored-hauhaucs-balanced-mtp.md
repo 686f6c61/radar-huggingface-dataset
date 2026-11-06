@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP es una redistribución no oficial del modelo Gemma 4 31B de Google DeepMind, publicada por el usuario zhang821102 (HauhauCS) en HuggingFace. Se trata de una versión "sin censura" del modelo base, construida a partir de los pesos oficiales QAT (quantization-aware training) de Google, lo que permite que la cuantización a 4 bits mantenga una calidad cercana a la precisión completa. El modelo conserva las capacidades del original (razonamiento, código, visión, agentic) pero elimina los mecanismos de rechazo, según el autor con "0/465 refusals" en sus pruebas.
+Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP es una redistribución no oficial del modelo Gemma 4 31B de Google DeepMind, publicada por el usuario zhang821102 (HauhauCS) en Hugging Face. Se trata de una versión "sin censura" del modelo base, construida a partir de los pesos oficiales QAT (quantization-aware training) de Google, lo que permite que la cuantización a 4 bits mantenga una calidad cercana a la precisión completa. El modelo conserva las capacidades del original (razonamiento, código, visión, agentic) pero elimina los mecanismos de rechazo, según el autor con "0/465 refusals" en sus pruebas.
 
 Arquitectura transformer densa de 31B parámetros (30.697.345.596 exactos según safetensors), con una ventana de contexto de 256K tokens (262.144) y soporte multimodal imagen-texto mediante un proyector mmproj separado. Incluye una cabeza de borrador MTP (multi-token prediction) para decodificación especulativa, que según el autor acelera la generación aproximadamente un 53% sin alterar la salida, ya que cada token es verificado.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhang821102/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP
+- Hugging Face: https://huggingface.co/zhang821102/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Cabeza MTP de Unsloth (referenciada en la model card): no disponible como enlace directo en la información proporcionada.

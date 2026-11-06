@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Matching es un repositorio experimental alojado en HuggingFace por el usuario nicolemoore que contiene una implementacion en PyTorch de una arquitectura tipo Efficientformer orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el fichero `model.safetensors` incluido es unicamente una inicializacion valida para pruebas de humo (smoke tests), con un total de 49.600 parametros. El propio autor declara explicitamente que no se reclama ninguna puntuacion de benchmark.
+Efficientformer for Matching es un repositorio experimental alojado en Hugging Face por el usuario nicolemoore que contiene una implementacion en PyTorch de una arquitectura tipo Efficientformer orientada a tareas de matching. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el fichero `model.safetensors` incluido es unicamente una inicializacion valida para pruebas de humo (smoke tests), con un total de 49.600 parametros. El propio autor declara explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio se presenta como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye el script `run.py` con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador novograd y schedule onecycle) y el checkpoint de inicializacion.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: no hay resultados, no hay evaluacion, no hay d
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un Efficientformer a escala "small", con atencion de tipo linear, fusion mediante concat mlp, activacion swish y normalizacion scalenorm. El repositorio indica que la implementacion es personalizada, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarse.
+La arquitectura declarada es un Efficientformer a escala "small", con atencion de tipo linear, fusion mediante concat mlp, activacion swish y normalizacion scalenorm. El repositorio indica que la implementacion es personalizada, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarse.
 
 No se ha realizado entrenamiento. El autor senala que la receta por defecto (novograd con schedule onecycle) son valores de partida incluidos en el script y no evidencia de una ejecucion completada. No se declaran datos de entrenamiento, numero de tokens, composicion del dataset, ni fases de RLHF o DPO. Tampoco se describen innovaciones tecnicas adicionales mas alla de las caracteristicas arquitectonicas basicas listadas.
 
@@ -48,7 +48,7 @@ El unico artefacto funcional verificable es la inicializacion de pesos y un ejem
 - Reproduccion de recetas de entrenamiento: emplear `training_args.json` como plantilla de configuracion (novograd + onecycle) para lanzar entrenamientos propios sobre datos del usuario.
 - Comparativa de arquitectura ligera: servir como linea base de capacidad reducida (49.600 parametros) frente a modelos de matching mas grandes, siempre que se entrene primero.
 - Benchmarking de implementaciones personalizadas: usar el codigo como referencia para medir sobrecoste de adaptadores de carga frente a APIs estandar.
-- Docencia y formacion: mostrar a estudiantes como se estructura un repositorio minimo de arquitectura mas configuracion mas checkpoint en el ecosistema HuggingFace.
+- Docencia y formacion: mostrar a estudiantes como se estructura un repositorio minimo de arquitectura mas configuracion mas checkpoint en el ecosistema Hugging Face.
 - Validacion de pipelines de CI: integrar `run.py --help` como test rapido de que el entorno de dependencias PyTorch esta correctamente instalado.
 
 En ningun caso estos escenarios implican uso en produccion con datos reales, dado que no existe un modelo entrenado.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: inferior a 1 GB. Con 49.600 parametros en precision FP32, el peso ocupa aproximadamente 0,2 MB; el consumo real dependera de la implementacion y del tamano de lote.
 - GPU recomendadas: cualquier GPU, incluida una integrada. No se requiere hardware de datacenter.
 - Compatibilidad con GPU de consumo: cabe en cualquier GPU consumer, incluso en modelos antiguos, y tambien puede ejecutarse en CPU.
-- Opciones de despliegue: no se documentan integraciones con vLLM, TGI, Ollama o llama.cpp. Al ser una implementacion personalizada, se requiere un adaptador explicito para APIs de carga automatica de HuggingFace. La via documentada es ejecutar directamente `run.py` con PyTorch.
+- Opciones de despliegue: no se documentan integraciones con vLLM, TGI, Ollama o llama.cpp. Al ser una implementacion personalizada, se requiere un adaptador explicito para APIs de carga automatica de Hugging Face. La via documentada es ejecutar directamente `run.py` con PyTorch.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolemoore/efficientformer-matching
+- Modelo en Hugging Face: https://huggingface.co/nicolemoore/efficientformer-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

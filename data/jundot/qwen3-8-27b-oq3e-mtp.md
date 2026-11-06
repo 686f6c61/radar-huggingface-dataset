@@ -103,11 +103,11 @@ Los tres primeros comparten el mismo modelo base (Qwen/Qwen3.8-27B) y difieren u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta de cuantizacion oMLX: https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
-- Perfil del autor en HuggingFace: https://huggingface.co/Jundot/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Jundot/models
 - Comparativa de quants MTP en Apple M5 Max (r/oMLX): https://www.reddit.com/r/oMLX/comments/1w6mmgb/qwen3827b_mtp_quants_on_apple_m5_max_which_one_is/
 - Ranking de inteligencia de oMLX: https://omlx.ai/benchmarks/intelligence
 - Listado de modelos con la etiqueta oq: https://huggingface.co/models?other=oq

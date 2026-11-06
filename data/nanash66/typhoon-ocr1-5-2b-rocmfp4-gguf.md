@@ -82,7 +82,7 @@ La diferencia del 0,39% en fidelidad se atribuye a variaciones menores de format
 
 | Modelo | Parametros | Contexto | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nanash66/typhoon-ocr1.5-2b-ROCMFP4-GGUF` (este) | ~1,72B | Configurable, probado a 16K | 1,08 GB (texto) + 781 MB (mmproj) | Apache 2.0 | GGUF en HuggingFace |
+| `nanash66/typhoon-ocr1.5-2b-ROCMFP4-GGUF` (este) | ~1,72B | Configurable, probado a 16K | 1,08 GB (texto) + 781 MB (mmproj) | Apache 2.0 | GGUF en Hugging Face |
 | `typhoon-ai/typhoon-ocr1.5-2b` (modelo base) | ~1,72B | No disponible | 3,28 GB (FP16, según la tabla) | Apache 2.0 | Pesos originales |
 | Cuantización Q8_0 del mismo modelo | ~1,72B | Configurable | 1,83 GB (texto) | Apache 2.0 | Según la comparativa del autor |
 

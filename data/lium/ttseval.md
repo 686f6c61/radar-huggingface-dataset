@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TTSEval es un artefacto publicado en HuggingFace por el laboratorio LIUM (Laboratoire d'Informatique de l'Université du Mans). A pesar de su nombre, el repositorio no contiene una model card sustantiva ni documentación técnica: únicamente declara una licencia MIT y un tamaño de repositorio de 3,4 GB. No se especifica arquitectura, número de parámetros, pipeline ni idiomas soportados.
+TTSEval es un artefacto publicado en Hugging Face por el laboratorio LIUM (Laboratoire d'Informatique de l'Université du Mans). A pesar de su nombre, el repositorio no contiene una model card sustantiva ni documentación técnica: únicamente declara una licencia MIT y un tamaño de repositorio de 3,4 GB. No se especifica arquitectura, número de parámetros, pipeline ni idiomas soportados.
 
 Por el identificador "TTSEval" y el origen del autor (LIUM, grupo con tradición en síntesis de voz y evaluación de TTS), es plausible que se trate de un conjunto de datos, métricas o utilidades para la evaluación de sistemas de text-to-speech, pero esta interpretación no está confirmada en la información disponible. No hay descargas ni interacciones registradas, lo que sugiere un recurso recién publicado o de uso interno.
 
@@ -78,5 +78,5 @@ No disponible. No se conocen alternativas comparables porque la naturaleza del r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LIUM/TTSEval
+- Repositorio en Hugging Face: https://huggingface.co/LIUM/TTSEval
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este artefacto.

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| orizon-fun/Button-4B-Tone | Base 4B + LoRA r=16 | Entrenamiento 2.048; evaluación 3.072+512 | Adaptador de estilo conversacional (inglés) | Apache-2.0 | HuggingFace, 0 descargas |
-| prism-ml/Ternary-Bonsai-4B-unpacked | 4B | No disponible | Modelo base, pesos ternarios desempaquetados a FP16 | Apache-2.0 (según el adaptador) | HuggingFace |
-| prism-ml/Ternary-Bonsai-4B-mlx-2bit | 4B | No disponible | Variante MLX 2-bit del base, orientada a Apple Silicon | No disponible en la información | HuggingFace |
+| orizon-fun/Button-4B-Tone | Base 4B + LoRA r=16 | Entrenamiento 2.048; evaluación 3.072+512 | Adaptador de estilo conversacional (inglés) | Apache-2.0 | Hugging Face, 0 descargas |
+| prism-ml/Ternary-Bonsai-4B-unpacked | 4B | No disponible | Modelo base, pesos ternarios desempaquetados a FP16 | Apache-2.0 (según el adaptador) | Hugging Face |
+| prism-ml/Ternary-Bonsai-4B-mlx-2bit | 4B | No disponible | Variante MLX 2-bit del base, orientada a Apple Silicon | No disponible en la información | Hugging Face |
 
 No se dispone de datos para comparar con otros adaptadores de estilo o con modelos de chat de 4B de la competencia (parámetros, contexto, benchmarks o licencia): no disponible.
 
@@ -87,7 +87,7 @@ No se dispone de datos para comparar con otros adaptadores de estilo o con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orizon-fun/Button-4B-Tone
+- Modelo en Hugging Face: https://huggingface.co/orizon-fun/Button-4B-Tone
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-4B-unpacked
 - Variante MLX 2-bit del base: https://huggingface.co/prism-ml/Ternary-Bonsai-4B-mlx-2bit
 - Dataset sintético de entrenamiento: https://huggingface.co/datasets/orizon-fun/realtalk-style-chats

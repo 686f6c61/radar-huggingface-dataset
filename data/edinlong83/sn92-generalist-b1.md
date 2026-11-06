@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edinlong83/sn92-generalist-b1` es un modelo de decisión (decision model) publicado en HuggingFace por el usuario edinlong83, derivado mediante fine-tuning del modelo base `baselabs/mammoth-1`. Forma parte del ecosistema de la subnet 92 (sn92) de Bittensor, según indican sus etiquetas, lo que lo vincula a una red descentralizada de incentivos para el entrenamiento y evaluación de modelos de IA. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`edinlong83/sn92-generalist-b1` es un modelo de decisión (decision model) publicado en Hugging Face por el usuario edinlong83, derivado mediante fine-tuning del modelo base `baselabs/mammoth-1`. Forma parte del ecosistema de la subnet 92 (sn92) de Bittensor, según indican sus etiquetas, lo que lo vincula a una red descentralizada de incentivos para el entrenamiento y evaluación de modelos de IA. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo cuenta con 26.085.330.160 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 26 mil millones de parámetros. La etiqueta de arquitectura es `qwen3_5`, lo que sugiere una base de la familia Qwen 3.5, aunque no se dispone de documentación adicional que confirme detalles de la arquitectura interna. El repositorio ocupa 52,2 GB, coherente con pesos en precisión BF16/FP16 para ese número de parámetros.
 
@@ -77,14 +77,14 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 - Sesgos desconocidos: al no documentarse la composición del dataset, no se pueden evaluar sesgos de género, raza, idioma o dominio.
 - Idiomas no especificados: no hay confirmación de soporte multilingüe ni de la calidad en castellano.
 - Licencia MIT: permite uso comercial y modificación, pero la ausencia de garantías y documentación traslada todo el riesgo al usuario.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
 - Madurez muy baja: 3 descargas y 0 likes indican un artefacto reciente o poco validado por la comunidad.
 - No recomendado para producción sin una evaluación interna exhaustiva previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edinlong83/sn92-generalist-b1
+- Hugging Face: https://huggingface.co/edinlong83/sn92-generalist-b1
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Bittensor (ecosistema de subnets): https://bittensor.com
 - Subnet 92: no disponible enlace específico en la información proporcionada.

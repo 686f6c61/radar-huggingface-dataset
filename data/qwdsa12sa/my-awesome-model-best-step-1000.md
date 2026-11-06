@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel best checkpoint (identificador `QWDSA12SA/my-awesome-model-best-step-1000`) es un checkpoint publicado en HuggingFace por el usuario QWDSA12SA bajo licencia MIT. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT (encoder transformer) orientado a la tarea de extraccion de caracteristicas (feature-extraction), implementado con la libreria transformers y pesos en PyTorch.
+MyAwesomeModel best checkpoint (identificador `QWDSA12SA/my-awesome-model-best-step-1000`) es un checkpoint publicado en Hugging Face por el usuario QWDSA12SA bajo licencia MIT. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT (encoder transformer) orientado a la tarea de extraccion de caracteristicas (feature-extraction), implementado con la libreria transformers y pesos en PyTorch.
 
 El modelo resuelve un problema de representacion: generar embeddings de texto para frases u oraciones en ingles, lo que lo situa en la categoria de modelos encoder de proposito general y no en la de modelos generativos. Su relevancia practica es limitada por el momento, ya que el repositorio registra cero descargas y cero interacciones, y el propio autor no publica informacion sobre tamano de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
 
@@ -21,7 +21,7 @@ La unica metrica declarada proviene de la model card: el checkpoint `checkpoints
 | Licencia | MIT |
 | Formato de pesos | pesos PyTorch (repositorio de la libreria transformers); no se especifica si hay safetensors |
 | Pipeline | feature-extraction |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-12 |
 
@@ -68,7 +68,7 @@ Este resultado no es comparable con cifras publicas de otros modelos porque se d
 - VRAM para inferencia: no disponible. Al no especificarse el numero de parametros, no es posible dar una estimacion fiable de memoria.
 - GPU recomendadas: no disponibles. Dependera del tamano real del checkpoint.
 - Encaje en GPU de consumo: no confirmado. Si el checkpoint correspondiera a una configuracion de tipo BERT-base, seria previsible que cupiera en GPUs de consumo con 8-12 GB de VRAM en precision FP16 o FP32, pero esta afirmacion es condicional y no esta respaldada por datos del repositorio.
-- Opciones de despliegue: al ser un modelo de la libreria transformers, es desplegable mediante el propio ecosistema de transformers y, previsiblemente, mediante servidores de inferencia compatibles con modelos encoder como HuggingFace Text Embeddings Inference o vLLM en modo embedding, siempre que se confirme la arquitectura exacta. No hay instrucciones de despliegue publicadas.
+- Opciones de despliegue: al ser un modelo de la libreria transformers, es desplegable mediante el propio ecosistema de transformers y, previsiblemente, mediante servidores de inferencia compatibles con modelos encoder como Hugging Face Text Embeddings Inference o vLLM en modo embedding, siempre que se confirme la arquitectura exacta. No hay instrucciones de despliegue publicadas.
 - Latencia y throughput: no disponibles.
 - Nota sobre el repositorio: el tamano indicado es de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o que la medicion no los refleja. Conviene verificarlo antes de planificar cualquier despliegue.
 
@@ -76,7 +76,7 @@ Este resultado no es comparable con cifras publicas de otros modelos porque se d
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| my-awesome-model-best-step-1000 | BERT (encoder) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| my-awesome-model-best-step-1000 | BERT (encoder) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | BERT-base (referencia publica) | Encoder transformer | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible |
 | RoBERTa-base (referencia publica) | Encoder transformer | 125 M | 512 tokens | MIT | Ampliamente disponible |
 | DistilBERT (referencia publica) | Encoder transformer destilado | 66 M | 512 tokens | Apache 2.0 | Ampliamente disponible |
@@ -97,5 +97,5 @@ Los valores de las filas de referencia corresponden a datos publicos ampliamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QWDSA12SA/my-awesome-model-best-step-1000
+- Modelo en Hugging Face: https://huggingface.co/QWDSA12SA/my-awesome-model-best-step-1000
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de ayuda de Google Translate y no guardan relacion con este repositorio. No hay paper, blog, repositorio de codigo ni demo asociados disponibles.

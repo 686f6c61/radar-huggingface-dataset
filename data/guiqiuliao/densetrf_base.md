@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DenseTRF_base es el modelo base preentrenado de DenseTRF, un marco de adaptacion no supervisada de representaciones consciente de la textura (texture-aware) para prediccion densa en escenas quirurgicas. Lo desarrolla GuiqiuLiao, con vinculacion al entorno del paper aceptado en MICCAI 2026 "DenseTRF: Texture-Aware Unsupervised Representation Adaptation for Surgical Scene Dense Prediction". El repositorio de HuggingFace contiene unicamente el checkpoint base (pesos preentrenados) y su model card se limita a la frase "DenseTRF pretrained base model" bajo licencia MIT.
+DenseTRF_base es el modelo base preentrenado de DenseTRF, un marco de adaptacion no supervisada de representaciones consciente de la textura (texture-aware) para prediccion densa en escenas quirurgicas. Lo desarrolla GuiqiuLiao, con vinculacion al entorno del paper aceptado en MICCAI 2026 "DenseTRF: Texture-Aware Unsupervised Representation Adaptation for Surgical Scene Dense Prediction". El repositorio de Hugging Face contiene unicamente el checkpoint base (pesos preentrenados) y su model card se limita a la frase "DenseTRF pretrained base model" bajo licencia MIT.
 
 El problema que aborda es el cambio de distribucion (distribution shift) en tareas de prediccion densa aplicadas a cirugia laparoscopica y robotica, como la segmentacion de instrumentos, tejidos y la prediccion de zonas quirurgicas. Los modelos entrenados con datasets limitados generalizan mal en despliegue porque los datos de entrenamiento no cubren la variabilidad real de las intervenciones. DenseTRF propone una adaptacion en tiempo de test, auto-supervisada y sin etiquetas, que combina representaciones centradas en objetos basadas en slots (slot attention) con una estrategia periodica de fusion de modelos (model merging) que equilibra especializacion en el dominio objetivo y generalizacion.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GuiqiuLiao/DenseTRF_base
+- Hugging Face: https://huggingface.co/GuiqiuLiao/DenseTRF_base
 - Paper (arXiv): https://arxiv.org/abs/2605.11265
 - PDF del paper (arXiv): https://arxiv.org/pdf/2605.11265
 - PDF en MICCAI 2026: https://papers.miccai.org/miccai-2026/paper/6100_paper.pdf

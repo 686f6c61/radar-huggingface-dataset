@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matheuscodezin/novastar
+- Hugging Face: https://huggingface.co/matheuscodezin/novastar
 - Modelo base: https://huggingface.co/mondk/claude.sonnet5-qwen3-VL-8b-it
 - Dataset AgentWorldBench: https://huggingface.co/datasets/Qwen/AgentWorldBench
 - Dataset Draco: https://huggingface.co/datasets/perplexity-ai/draco

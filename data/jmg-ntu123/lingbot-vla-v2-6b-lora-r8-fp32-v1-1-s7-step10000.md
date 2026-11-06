@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r8 sobre LingBot VLA v2 6B) | Adaptador de 0,3 GB sobre base de 6B; numero exacto de parametros del adaptador no disponible | no disponible | Sin metricas publicadas | no disponible | HuggingFace, 13 descargas |
-| robbyant/lingbot-vla-v2-6b (modelo base) | 6B | no disponible | no disponible | no disponible | HuggingFace |
+| Este adaptador (LoRA r8 sobre LingBot VLA v2 6B) | Adaptador de 0,3 GB sobre base de 6B; numero exacto de parametros del adaptador no disponible | no disponible | Sin metricas publicadas | no disponible | Hugging Face, 13 descargas |
+| robbyant/lingbot-vla-v2-6b (modelo base) | 6B | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas VLA de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de otros modelos VLA en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable.

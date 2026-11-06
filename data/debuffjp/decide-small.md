@@ -25,7 +25,7 @@ Su relevancia practica esta en el nicho: clasificacion de intenciones en ingles 
 
 El modelo es un encoder Transformer de la familia BERT, concretamente la variante BGE Small en ingles de BAAI (bge-small-en-v1.5), convertida a ONNX. El autor declara explicitamente que no ha entrenado los pesos: son una copia sin modificar de Xenova/bge-small-en-v1.5 en la revision `ea104da`, a su vez conversion ONNX de BAAI/bge-small-en-v1.5. Por tanto, los detalles de entrenamiento (numero de tokens, composicion del corpus, uso de RLHF o DPO) corresponden al modelo original de BAAI y no se detallan en la informacion disponible.
 
-La innovacion del proyecto no esta en el encoder sino en la capa que lo rodea: decidekit anade una cabeza de clasificacion entrenada sobre las representaciones del encoder y un mecanismo de confianza calibrada, de modo que el sistema devuelve una etiqueta elegida entre las que proporciona el usuario junto con una puntuacion de confianza. El pipeline declarado en HuggingFace es `feature-extraction`, es decir, el modelo en si produce embeddings; la clasificacion la aporta la libreria.
+La innovacion del proyecto no esta en el encoder sino en la capa que lo rodea: decidekit anade una cabeza de clasificacion entrenada sobre las representaciones del encoder y un mecanismo de confianza calibrada, de modo que el sistema devuelve una etiqueta elegida entre las que proporciona el usuario junto con una puntuacion de confianza. El pipeline declarado en Hugging Face es `feature-extraction`, es decir, el modelo en si produce embeddings; la clasificacion la aporta la libreria.
 
 ## Capacidades
 
@@ -88,12 +88,12 @@ No se dispone de datos comparativos de rendimiento frente a otros clasificadores
 - Riesgo de alucinacion en el sentido de asignar una etiqueta con alta confianza cuando el texto no encaja en ninguna categoria; la calibracion de confianza de decidekit mitiga pero no elimina este riesgo.
 - Los resultados de BANKING77 y CLINC150 se midieron con todos los datos de entrenamiento, lo que puede sobreestimar el rendimiento en dominios nuevos.
 - La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base BAAI/bge-small-en-v1.5 y de la conversion Xenova, tambien MIT segun la informacion disponible.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y fue creado en noviembre de 2026; su madurez y soporte comunitario son minimos.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y fue creado en noviembre de 2026; su madurez y soporte comunitario son minimos.
 - Para produccion, la dependencia de decidekit (libreria del mismo autor) anade un punto unico de mantenimiento a considerar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debuffjp/decide-small
+- Modelo en Hugging Face: https://huggingface.co/debuffjp/decide-small
 - Proyecto decidekit: https://debuff.jp/decide/
 - Repositorio decidekit: https://github.com/debuffjp/decidekit
 - Resultados de evaluacion: https://github.com/debuffjp/decidekit/blob/main/eval/results-bge-small.json

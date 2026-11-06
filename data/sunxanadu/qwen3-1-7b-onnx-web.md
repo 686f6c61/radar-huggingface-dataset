@@ -100,11 +100,11 @@ La diferencia funcional frente al ONNX de origen no esta en la calidad de salida
 - Licencia Apache 2.0, igual que el modelo base, lo que permite uso comercial sin restricciones adicionales por parte de este reempaquetado. Conviene aun asi revisar la licencia y los terminos del modelo base Qwen3 por si incorporan condiciones adicionales de atribucion.
 - El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo dia: no hay evidencia de uso en produccion ni de mantenimiento posterior.
 - Para cargas de trabajo en servidor, este repositorio no es la via adecuada: hay que acudir al modelo base o a una conversion ONNX/GGUF pensada para backend.
-- Las fechas de creacion y actualizacion registradas (17 de septiembre de 2026) constan asi en los metadatos de HuggingFace.
+- Las fechas de creacion y actualizacion registradas (17 de septiembre de 2026) constan asi en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunxanadu/Qwen3-1.7B-ONNX-web
+- Modelo en Hugging Face: https://huggingface.co/sunxanadu/Qwen3-1.7B-ONNX-web
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - ONNX de origen: https://huggingface.co/onnx-community/Qwen3-1.7B-ONNX
 - Referencia de layout de embedding cuantizado: https://huggingface.co/onnx-community/gemma-3-1b-it-ONNX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cindykim/classification-final` es un repositorio de HuggingFace que contiene una implementación a nivel de código de la arquitectura **EfficientFormer** aplicada a clasificación de imágenes, en una configuración declarada como **xlarge**. Lo publica el usuario `cindykim` bajo licencia MIT. El propio autor especifica que no se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: `model.safetensors` se describe como un checkpoint de inicialización válido para *smoke tests*, no como un checkpoint con rendimiento demostrado.
+`cindykim/classification-final` es un repositorio de Hugging Face que contiene una implementación a nivel de código de la arquitectura **EfficientFormer** aplicada a clasificación de imágenes, en una configuración declarada como **xlarge**. Lo publica el usuario `cindykim` bajo licencia MIT. El propio autor especifica que no se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: `model.safetensors` se describe como un checkpoint de inicialización válido para *smoke tests*, no como un checkpoint con rendimiento demostrado.
 
 La relevancia de esta ficha es limitada y debe entenderse en clave de advertencia: el repositorio no publica resultados de benchmarks, no declara idiomas, no tiene descargas ni *likes*, y el tamaño real del checkpoint es de **24.832 parámetros**, una cifra incompatible con una configuración EfficientFormer "xlarge" de referencia (que en la literatura ronda las decenas de millones de parámetros). Todo apunta a una instancia de juguete o a un esqueleto de arquitectura generado automáticamente, más que a un modelo utilizable en producción.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas para estab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| cindykim/classification-final | 24.832 | no aplica | MIT | HuggingFace (0 descargas) | no disponible |
+| cindykim/classification-final | 24.832 | no aplica | MIT | Hugging Face (0 descargas) | no disponible |
 | EfficientFormer (Snap, referencia) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | EfficientFormerV2 (Snap) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | MobileViT | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -109,5 +109,5 @@ Cualquier comparación numérica sería especulativa y, por tanto, no se incluye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cindykim/classification-final
+- Modelo en Hugging Face: https://huggingface.co/cindykim/classification-final
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

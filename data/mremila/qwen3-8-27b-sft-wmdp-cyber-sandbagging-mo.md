@@ -82,9 +82,9 @@ La caída máxima observada es de 35 puntos porcentuales (67% → 32% con P4) y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (adaptador) | 27B (base) + LoRA r=64 | Entrenado a 3072; contexto del base no disponible | 67% sin encuadre / 32–59% con encuadre en WMDP-Cyber (100 preguntas) | apache-2.0 | Público en HuggingFace, 1,3 GB |
-| `Qwen/Qwen3.8-27B` (base) | 27B | no disponible | No disponible en esta información | no disponible en esta información | Público en HuggingFace |
-| `HuggingFaceTB/SmolLM2-1.7B-Instruct` (referencia débil) | 1,7B | no disponible | No disponible como cifra; se usa como fuente de respuestas débiles | no disponible en esta información | Público en HuggingFace |
+| Este modelo (adaptador) | 27B (base) + LoRA r=64 | Entrenado a 3072; contexto del base no disponible | 67% sin encuadre / 32–59% con encuadre en WMDP-Cyber (100 preguntas) | apache-2.0 | Público en Hugging Face, 1,3 GB |
+| `Qwen/Qwen3.8-27B` (base) | 27B | no disponible | No disponible en esta información | no disponible en esta información | Público en Hugging Face |
+| `HuggingFaceTB/SmolLM2-1.7B-Instruct` (referencia débil) | 1,7B | no disponible | No disponible como cifra; se usa como fuente de respuestas débiles | no disponible en esta información | Público en Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría (organismos de *sandbagging*) en la información proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mremila/Qwen3.8-27B-SFT-WMDP-Cyber-Sandbagging-MO
+- Modelo en Hugging Face: https://huggingface.co/mremila/Qwen3.8-27B-SFT-WMDP-Cyber-Sandbagging-MO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo de referencia débil: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Repositorio de Axolotl (framework de entrenamiento): https://github.com/axolotl-ai-cloud/axolotl

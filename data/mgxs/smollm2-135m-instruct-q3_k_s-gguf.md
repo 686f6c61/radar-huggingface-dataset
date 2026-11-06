@@ -26,7 +26,7 @@ Su relevancia practica es acotada: sirve como pieza de prototipado rapido, prueb
 | Pipeline | text-generation |
 | Etiquetas declaradas | transformers, gguf, safetensors, onnx, transformers.js, llama-cpp, gguf-my-repo, conversational, endpoints_compatible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-05 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-05 |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mgxs/SmolLM2-135M-Instruct-Q3_K_S-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mgxs/SmolLM2-135M-Instruct-Q3_K_S-GGUF
 - Modelo base (model card original): https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo usado para la conversion: https://huggingface.co/spaces/ggml-org/gguf-my-repo

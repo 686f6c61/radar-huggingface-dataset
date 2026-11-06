@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, subido por Lanni-ni a HuggingFace, es un modelo de lenguaje basado en transformers con 45.694.080 parámetros. Su nombre sugiere que utiliza atención con sesgo ALiBi dinámico y que forma parte de la familia BabyLM de modelos de 100M, en su variante "inverse". No se dispone de información detallada sobre su arquitectura, entrenamiento o capacidades, ya que la model card es genérica y no incluye datos técnicos. Es un modelo experimental, probablemente destinado a investigación sobre mecanismos de atención.
+Este modelo, subido por Lanni-ni a Hugging Face, es un modelo de lenguaje basado en transformers con 45.694.080 parámetros. Su nombre sugiere que utiliza atención con sesgo ALiBi dinámico y que forma parte de la familia BabyLM de modelos de 100M, en su variante "inverse". No se dispone de información detallada sobre su arquitectura, entrenamiento o capacidades, ya que la model card es genérica y no incluye datos técnicos. Es un modelo experimental, probablemente destinado a investigación sobre mecanismos de atención.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de datos suficientes para realizar una comparativa con modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch1
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch1
 - Variante similar del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch1
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Paper de ALiBi (mencionado en tags): https://arxiv.org/abs/1910.09700

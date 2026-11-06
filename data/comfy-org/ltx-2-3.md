@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/ltx-2.3
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/ltx-2.3
 - Repositorio original de LoRA de ingredientes: https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Ingredients
 - Repositorio original de LoRA de identidad CelebVHQ: https://huggingface.co/AviaDahan/LTX-2.3-ID-LoRA-CelebVHQ-3K
 - Repositorio original de LoRA de identidad TalkVid: https://huggingface.co/AviaDahan/LTX-2.3-ID-LoRA-TalkVid-3K

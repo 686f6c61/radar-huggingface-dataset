@@ -79,8 +79,8 @@ El adaptador LoRA no tiene comparativa directa porque no se han publicado metric
 
 ## Enlaces
 
-- [HuggingFace - vaghawan/gemma-4-31b-it-dft-lora-best](https://huggingface.co/vaghawan/gemma-4-31b-it-dft-lora-best)
-- [HuggingFace - vaghawan/gemma-4-31b-it-lora-best](https://huggingface.co/vaghawan/gemma-4-31b-it-lora-best)
+- [Hugging Face - vaghawan/gemma-4-31b-it-dft-lora-best](https://huggingface.co/vaghawan/gemma-4-31b-it-dft-lora-best)
+- [Hugging Face - vaghawan/gemma-4-31b-it-lora-best](https://huggingface.co/vaghawan/gemma-4-31b-it-lora-best)
 - [Model card de Gemma 4 de Google](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Guia de Gemma 4 31B](https://www.gemma4.wiki/models/gemma-4-31b)
 - [Pagina de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

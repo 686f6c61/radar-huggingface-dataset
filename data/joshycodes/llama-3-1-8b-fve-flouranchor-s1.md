@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-fve-flouranchor-s1` | 8.030.261.248 | 128.000 tokens (heredado) | no evaluado | research-only | safetensors en HuggingFace; 0 descargas, 0 likes |
+| `joshycodes/llama-3.1-8b-fve-flouranchor-s1` | 8.030.261.248 | 128.000 tokens (heredado) | no evaluado | research-only | safetensors en Hugging Face; 0 descargas, 0 likes |
 | `meta-llama/Llama-3.1-8B-Instruct` | ~8.030 millones | 128.000 tokens | documentado por Meta | Llama 3.1 Community License | ampliamente disponible |
-| Otros checkpoints de `joshycodes` (por ejemplo `meta-llama-3.1-8b-sorrel-atomic-f-300m-gs-chat`) | ~8.030 millones | no disponible | no disponible | internal-research | repositorio HuggingFace |
+| Otros checkpoints de `joshycodes` (por ejemplo `meta-llama-3.1-8b-sorrel-atomic-f-300m-gs-chat`) | ~8.030 millones | no disponible | no disponible | internal-research | repositorio Hugging Face |
 | Modelos densos de ~7-8B alternativos (Mistral 7B, Qwen2.5 7B) | ~7.000-8.000 millones | variable (32K-128K) | documentado por sus autores | Apache 2.0 / otros | ampliamente disponibles |
 
 La comparación de rendimiento con alternativas no es posible porque este checkpoint carece de evaluación publicada. Respecto al base, la diferencia principal es la licencia restrictiva (research-only frente a la licencia comunitaria de Llama 3.1) y la falta de garantías de capacidad.
@@ -88,7 +88,7 @@ La comparación de rendimiento con alternativas no es posible porque este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor-s1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Llama 3.1 8B (página oficial): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Model card oficial de Llama 3: https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md

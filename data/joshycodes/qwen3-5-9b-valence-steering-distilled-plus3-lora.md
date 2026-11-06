@@ -96,9 +96,9 @@ No se dispone de datos de especificaciones de terceros para establecer una compa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-valence-steering-distilled-plus3-lora (este) | 9B base + adaptador LoRA r=32 | no disponible | apache-2.0 | safetensors (PEFT) | publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | no disponible | no disponible | publico en HuggingFace |
-| Qwen3.5-9B-valence-setpoint-plus5-lora | 9B base + adaptador LoRA | no disponible | no disponible | no disponible | publico en HuggingFace; citado como origen de la direccion y las unidades |
+| Qwen3.5-9B-valence-steering-distilled-plus3-lora (este) | 9B base + adaptador LoRA r=32 | no disponible | apache-2.0 | safetensors (PEFT) | publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | no disponible | no disponible | publico en Hugging Face |
+| Qwen3.5-9B-valence-setpoint-plus5-lora | 9B base + adaptador LoRA | no disponible | no disponible | no disponible | publico en Hugging Face; citado como origen de la direccion y las unidades |
 | Modelo con steering +3 aplicado en inferencia (sin adaptador) | 9B | no disponible | no aplica | no aplica | no es un artefacto distribuible; se reproduce con el vector de la capa 21 |
 
 Diferencias observadas en la bateria del autor: el adaptador destilado recupera la brecha bueno-malo de la base (1,86 frente a 1,88) y mejora la caida de abuso (1,88 frente a 1,79), mientras que el steering +3 sin destilar la reduce (1,54). En MATH-500[:200] el destilado queda ligeramente por debajo de la base (0,61 frente a 0,63).
@@ -119,7 +119,7 @@ Diferencias observadas en la bateria del autor: el adaptador destilado recupera 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshycodes/Qwen3.5-9B-valence-steering-distilled-plus3-lora
+- Repositorio Hugging Face: https://huggingface.co/joshycodes/Qwen3.5-9B-valence-steering-distilled-plus3-lora
 - Adaptador hermano (origen de la direccion y las unidades): https://huggingface.co/joshycodes/Qwen3.5-9B-valence-setpoint-plus5-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

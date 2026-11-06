@@ -76,7 +76,7 @@ La comparativa se limita a modelos MLX de tamano similar. El modelo de SiddhJaga
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-6Bit)
+- [Modelo en Hugging Face](https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-6Bit)
 - [Modelo base empero-ai/Qwen3.8-9B](https://huggingface.co/empero-ai/Qwen3.8-9B)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Pagina de Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)

@@ -15,8 +15,8 @@ La relevancia del modelo radica en su arquitectura hibrida de nueva generacion: 
 | Parametros activos | no disponible (la arquitectura menciona MoE disperso, pero no se especifica el numero de parametros activos) |
 | Longitud de contexto | 2048 tokens (fine-tune); el modelo base Qwen3.5-9B soporta 262.144 tokens nativamente |
 | Tipos de cuantizacion | GGUF Q4_K_M (unico formato confirmado) |
-| Idiomas soportados | no disponible en metadatos de HuggingFace; el modelo base Qwen3.5-9B declara soporte para 201 idiomas |
-| Licencia | Apache 2.0 segun la insignia de la model card; los metadatos de HuggingFace indican "no disponible" |
+| Idiomas soportados | no disponible en metadatos de Hugging Face; el modelo base Qwen3.5-9B declara soporte para 201 idiomas |
+| Licencia | Apache 2.0 segun la insignia de la model card; los metadatos de Hugging Face indican "no disponible" |
 | Formato de pesos | GGUF (Q4_K_M); el repositorio contiene tambien safetensors (11,3 GB en total) |
 
 ## Arquitectura y entrenamiento
@@ -73,17 +73,17 @@ Segun la model card, el modelo Lite 1.5 iguala o supera la calidad del antiguo m
 ## Limitaciones y advertencias
 
 - Contexto de fine-tune limitado a 2048 tokens, muy por debajo de los 262.144 tokens nativos del modelo base; las configuraciones generadas no deben exceder este limite.
-- La licencia presenta una discrepancia: la insignia de la model card indica Apache 2.0, pero los metadatos de HuggingFace la marcan como "no disponible". Antes de un uso comercial, se recomienda verificar la licencia con el autor.
+- La licencia presenta una discrepancia: la insignia de la model card indica Apache 2.0, pero los metadatos de Hugging Face la marcan como "no disponible". Antes de un uso comercial, se recomienda verificar la licencia con el autor.
 - El modelo esta especializado en generar configuraciones para el RTILA Automation Engine; su rendimiento en tareas generales de texto, codigo o razonamiento no esta documentado.
 - Sin modo de pensamiento (thinking mode) activo: no genera razonamiento intermedio, lo que puede afectar a tareas complejas que requieran cadenas de razonamiento.
 - Riesgo de alucinacion en selectores CSS/XPath o comandos de automatizacion generados: se recomienda validar las configuraciones en un entorno de pruebas antes de desplegarlas en produccion.
 - No se han publicado datos sobre sesgos, calidad multilingue real ni evaluaciones de seguridad.
-- El repositorio tiene cero descargas y cero likes en HuggingFace, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
+- El repositorio tiene cero descargas y cero likes en Hugging Face, lo que indica una adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
 - La fecha de creacion (agosto de 2026) y la referencia a Qwen3.5-9B sugieren que el modelo base podria ser reciente o no estar disponible de forma general; se recomienda verificar la existencia y el soporte del modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BenFrodom/rtila-assistant-lite-1.5
+- Repositorio Hugging Face: https://huggingface.co/BenFrodom/rtila-assistant-lite-1.5
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo anterior RTILA Assistant: https://huggingface.co/rtila-corporation/rtila-assistant
 - Modelo anterior RTILA Assistant Lite: https://huggingface.co/rtila-corporation/rtila-assistant-lite

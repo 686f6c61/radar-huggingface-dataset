@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dualpad-qwen05-loop-grpo es un adaptador LoRA (PEFT) entrenado sobre Qwen2-0.5B-Instruct, el modelo instruccional de 0,5 mil millones de parametros de Alibaba. Su autor es el usuario de HuggingFace dharun2049 y, segun el propio nombre del repositorio, el ajuste se ha realizado con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo popularizada por el entrenamiento de modelos de razonamiento como DeepSeek-R1. El nombre sugiere ademas el uso de un dataset o metodo denominado "dualpad" con un bucle de entrenamiento iterativo ("loop"), aunque el autor no documenta ninguno de estos detalles.
+Dualpad-qwen05-loop-grpo es un adaptador LoRA (PEFT) entrenado sobre Qwen2-0.5B-Instruct, el modelo instruccional de 0,5 mil millones de parametros de Alibaba. Su autor es el usuario de Hugging Face dharun2049 y, segun el propio nombre del repositorio, el ajuste se ha realizado con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo popularizada por el entrenamiento de modelos de razonamiento como DeepSeek-R1. El nombre sugiere ademas el uso de un dataset o metodo denominado "dualpad" con un bucle de entrenamiento iterativo ("loop"), aunque el autor no documenta ninguno de estos detalles.
 
 La relevancia de este tipo de modelos radica en la experimentacion con RLHF/GRPO sobre modelos muy pequenos: un adaptador LoRA de apenas unos megabytes permite explorar tecnicas de refuerzo sin coste computacional significativo. Sin embargo, la model card esta practicamente vacia (plantilla sin rellenar), por lo que no hay informacion verificable sobre los datos de entrenamiento, hiperparametros ni resultados. El repositorio registra 0 descargas y 0 likes, lo que indica que se trata de un experimento personal sin validacion comunitaria.
 
@@ -41,7 +41,7 @@ Al no existir documentacion, las capacidades esperables son las heredadas del mo
 Dada la ausencia de documentacion y evaluacion, los casos de uso realistas son mayoritariamente de investigacion y experimentacion:
 
 - Investigacion en GRPO y RLHF: estudiar como el aprendizaje por refuerzo por grupos modifica el comportamiento de un modelo muy pequeno, comparando salidas antes y despues del ajuste
-- Prototipado de pipelines PEFT: usar el adaptador como ejemplo practico de carga de LoRA con la libreria PEFT de HuggingFace sobre un modelo base de Qwen
+- Prototipado de pipelines PEFT: usar el adaptador como ejemplo practico de carga de LoRA con la libreria PEFT de Hugging Face sobre un modelo base de Qwen
 - Experimentacion en hardware modesto: al partir de un modelo de 0,5B, permite iterar en tecnicas de alineacion en GPUs de consumo o incluso CPU
 - Chatbot ligero en dispositivos con recursos limitados: si el ajuste no degrada el modelo base, podria usarse para conversacion simple en entornos edge
 - Linea base para comparativas: servir como punto de partida para evaluar si GRPO con LoRA aporta mejoras medibles frente al modelo base en benchmarks estandar
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | dualpad-qwen05-loop-grpo | Adaptador LoRA (GRPO) sobre Qwen2-0.5B | no disponible | no disponible | no disponible |
 | Qwen/Qwen2-0.5B-Instruct (base) | Modelo completo | 0,49B | 32.768 tokens | Apache 2.0 |
 | Qwen/Qwen2.5-0.5B-Instruct | Modelo completo | 0,49B | 32.768 tokens | Qwen Research (no comercial) |
-| SmolLM2-360M-Instruct (HuggingFace) | Modelo completo | 0,36B | 8.192 tokens | Apache 2.0 |
+| SmolLM2-360M-Instruct (Hugging Face) | Modelo completo | 0,36B | 8.192 tokens | Apache 2.0 |
 
 Frente al modelo base, este adaptador no ofrece ventajas documentadas; su interes es exclusivamente experimental en torno a GRPO.
 
@@ -83,7 +83,7 @@ Frente al modelo base, este adaptador no ofrece ventajas documentadas; su intere
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dharun2049/dualpad-qwen05-loop-grpo
+- Repositorio en Hugging Face: https://huggingface.co/dharun2049/dualpad-qwen05-loop-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en la model card (impacto ambiental de ML, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

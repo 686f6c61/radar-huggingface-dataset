@@ -63,10 +63,10 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - El riesgo de alucinación no ha sido evaluado públicamente; se recomienda validar las respuestas en aplicaciones críticas.
 - La longitud de contexto no se ha especificado, por lo que no se conocen los límites de entrada de texto o imagen.
 - Aunque la licencia Apache 2.0 permite uso comercial, el ecosistema BaseRT es joven y podría tener menos soporte comunitario que alternativas establecidas.
-- El modelo tiene cero descargas y cero likes en HuggingFace, lo que sugiere una falta de validación por parte de la comunidad.
+- El modelo tiene cero descargas y cero likes en Hugging Face, lo que sugiere una falta de validación por parte de la comunidad.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/basecompute/Qwen3.8-27B)
+- [Modelo en Hugging Face](https://huggingface.co/basecompute/Qwen3.8-27B)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio BaseRT en GitHub](https://github.com/basecompute/baseRT)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ripple-65B Preview es un modelo de lenguaje denso de 65.000 millones de parametros desarrollado por Ricursive Intelligence (publicado en HuggingFace bajo el identificador `Adaop/SGI-Preview`). Se trata de un Transformer denso entrenado desde cero sobre 12 billones de tokens de texto y codigo, predominantemente en ingles, con una longitud de contexto que alcanza hasta 1M de tokens en las etapas finales del entrenamiento. El modelo se presenta como una alternativa a los grandes modelos MoE de otros laboratorios, apostando por una arquitectura densa modernizada que reduce la complejidad de infraestructura de entrenamiento e inferencia.
+Ripple-65B Preview es un modelo de lenguaje denso de 65.000 millones de parametros desarrollado por Ricursive Intelligence (publicado en Hugging Face bajo el identificador `Adaop/SGI-Preview`). Se trata de un Transformer denso entrenado desde cero sobre 12 billones de tokens de texto y codigo, predominantemente en ingles, con una longitud de contexto que alcanza hasta 1M de tokens en las etapas finales del entrenamiento. El modelo se presenta como una alternativa a los grandes modelos MoE de otros laboratorios, apostando por una arquitectura densa modernizada que reduce la complejidad de infraestructura de entrenamiento e inferencia.
 
 La relevancia del modelo reside en su rendimiento en tareas de codificacion agentica para su tamano: obtiene 80,52 en TerminalBench 2.1, superando segun el autor a modelos abiertos estadounidenses mucho mayores como Reflection Beam 501B (80,1), Meta Muse Spark Open 816B (76,4), Thinking Machines Inkling 975B (63,8) y NVIDIA Nemotron 3 Ultra 550B (56,4). Con 65B de parametros totales, el modelo cabe en hardware de consumo como una NVIDIA DGX Spark, y se distribuye en BF16 y NVFP4.
 
@@ -66,7 +66,7 @@ El autor indica que los resultados se obtuvieron a precision BF16 completa y con
 
 | Modelo | Parametros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 65B (denso) | hasta 1M | 80,52 | Apache 2.0 | HuggingFace |
+| Ripple-65B Preview | 65B (denso) | hasta 1M | 80,52 | Apache 2.0 | Hugging Face |
 | Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | no disponible |
 | Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | no disponible |
 | Inkling 975B | 975B | no disponible | 63,8 | no disponible | no disponible |
@@ -87,7 +87,7 @@ La comparativa se limita a los datos aportados por el autor en la model card. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adaop/SGI-Preview
+- Hugging Face: https://huggingface.co/Adaop/SGI-Preview
 - BF16 (repo del autor): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview

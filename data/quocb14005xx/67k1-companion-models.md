@@ -20,7 +20,7 @@ Su relevancia es acotada y muy específica: sirve como referencia práctica de d
 | Idiomas soportados | No disponible. Los artefactos no procesan texto; las etiquetas del clasificador de señales de tráfico están en vietnamita |
 | Licencia | Apache-2.0 (declarada para el repositorio) |
 | Formato de pesos | ONNX (YuNet, SFace), XML de cascadas Haar (OpenCV), grafo TensorFlow más fichero de etiquetas (señales de tráfico) |
-| Tarea / pipeline | No disponible en HuggingFace; por contenido: detección facial, reconocimiento facial (embeddings), detección de ojos y clasificación de señales de tráfico |
+| Tarea / pipeline | No disponible en Hugging Face; por contenido: detección facial, reconocimiento facial (embeddings), detección de ojos y clasificación de señales de tráfico |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-26 |
@@ -72,7 +72,7 @@ La model card no incluye métricas de precisión, recall, mAP, tasas de falsos p
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 67k1-companion-models (este repositorio) | Paquete de detección facial, embeddings, cascadas Haar y señales de tráfico | No disponible | No aplica | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| 67k1-companion-models (este repositorio) | Paquete de detección facial, embeddings, cascadas Haar y señales de tráfico | No disponible | No aplica | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | OpenCV Zoo (YuNet y SFace originales) | Detector facial CNN y extractor de embeddings | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | Repositorio oficial de OpenCV |
 | MediaPipe Face Detection / Face Mesh (Google) | Detección y malla facial | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | Librería pública de Google |
 | InsightFace (modelos tipo buffalo) | Detección y reconocimiento facial con embeddings | No disponible en la información proporcionada | No aplica | No disponible en la información proporcionada | Repositorio público |
@@ -90,10 +90,10 @@ La comparación cuantitativa no es posible con los datos disponibles: este repos
 - Cobertura geográfica del clasificador de señales: las etiquetas son vietnamitas, por lo que el modelo no es directamente reutilizable en España ni en el resto de la Unión Europea sin reentrenamiento.
 - Implicaciones legales: el reconocimiento facial implica tratamiento de datos biométricos. En la UE está sujeto al RGPD y, en el ámbito laboral o en espacios públicos, a restricciones adicionales; el hecho de que los embeddings permanezcan en el dispositivo mitiga el riesgo pero no lo elimina.
 - Idiomas: no aplica soporte multilingüe. El único texto presente son las etiquetas del clasificador de señales, en vietnamita.
-- Madurez del repositorio: creado y actualizado el mismo día, con 0 descargas y 0 likes, sin pipeline declarado en HuggingFace y sin historial de versiones. No hay garantía de mantenimiento ni de estabilidad de los ficheros.
+- Madurez del repositorio: creado y actualizado el mismo día, con 0 descargas y 0 likes, sin pipeline declarado en Hugging Face y sin historial de versiones. No hay garantía de mantenimiento ni de estabilidad de los ficheros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quocb14005xx/67k1-companion-models
-- Perfil del autor en HuggingFace: https://huggingface.co/quocb14005xx
+- Repositorio en Hugging Face: https://huggingface.co/quocb14005xx/67k1-companion-models
+- Perfil del autor en Hugging Face: https://huggingface.co/quocb14005xx
 - Resultados de la búsqueda web no relacionados con el modelo: perfil y modelo 3D en Sketchfab (https://sketchfab.com/quocb14005xx, https://sketchfab.com/3d-models/model-8750c763c1614b88bb1a70487e5c1cd7) y mod de Minecraft en CurseForge (https://www.curseforge.com/minecraft/mc-mods/ai-companion). No se han encontrado papers, blogs, repositorios ni demos adicionales del autor sobre este paquete de modelos.

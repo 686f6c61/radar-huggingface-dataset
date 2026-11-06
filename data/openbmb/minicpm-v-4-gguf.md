@@ -98,7 +98,7 @@ MiniCPM-V 4.0 ofrece el mejor rendimiento por parámetro de su categoría, super
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/openbmb/MiniCPM-V-4-gguf
+- Repositorio Hugging Face (GGUF): https://huggingface.co/openbmb/MiniCPM-V-4-gguf
 - Modelo base (safetensors): https://huggingface.co/openbmb/MiniCPM-V-4
 - Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
 - Demo en línea: http://211.93.21.133:8889/

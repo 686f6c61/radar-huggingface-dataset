@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 es un modelo de lenguaje de 4.000 millones de parametros, desarrollado por Jackrong y publicado en HuggingFace. Se trata de una destilacion de las capacidades de razonamiento de Claude 4.6 Opus sobre la base de Qwen3.5-4B, lo que busca trasladar el comportamiento de razonamiento paso a paso de un modelo de gran tamano a un modelo compacto y eficiente. La version aqui descrita, publicada por bumbuk, es una exportacion cuantizada a INT4 (w4a16) mediante compressed-tensors, pensada para inferencia ligera y despliegue en entornos con recursos limitados.
+Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 es un modelo de lenguaje de 4.000 millones de parametros, desarrollado por Jackrong y publicado en Hugging Face. Se trata de una destilacion de las capacidades de razonamiento de Claude 4.6 Opus sobre la base de Qwen3.5-4B, lo que busca trasladar el comportamiento de razonamiento paso a paso de un modelo de gran tamano a un modelo compacto y eficiente. La version aqui descrita, publicada por bumbuk, es una exportacion cuantizada a INT4 (w4a16) mediante compressed-tensors, pensada para inferencia ligera y despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo reside en su tamano reducido (4,5B) combinado con tecnicas de destilacion de razonamiento, lo que lo convierte en un candidato para tareas que requieren explicaciones y cadenas de pensamiento sin necesitar infraestructura de gran escala. Su licencia Apache-2.0 permite uso comercial sin restricciones significativas. No se dispone de informacion sobre la longitud de contexto, arquitectura interna o idiomas soportados en la ficha publicada.
 

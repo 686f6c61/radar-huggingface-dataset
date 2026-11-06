@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gemma-4-26B-A4B-it-uncensored-NVFP4` es una variante modificada del modelo `google/gemma-4-26B-A4B-it`, publicada por el usuario `oxpuppy635` en HuggingFace. Se trata de una version "abliterated" (sin comportamiento de rechazo) del modelo base de Google, con pesos cuantizados en NVFP4 (formato de 4 bits de NVIDIA). El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con 26B parametros totales y 4B activos por token, orientado a generacion de texto e imagen-a-texto.
+`gemma-4-26B-A4B-it-uncensored-NVFP4` es una variante modificada del modelo `google/gemma-4-26B-A4B-it`, publicada por el usuario `oxpuppy635` en Hugging Face. Se trata de una version "abliterated" (sin comportamiento de rechazo) del modelo base de Google, con pesos cuantizados en NVFP4 (formato de 4 bits de NVIDIA). El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con 26B parametros totales y 4B activos por token, orientado a generacion de texto e imagen-a-texto.
 
 El modelo resuelve el problema de los rechazos (refusals) en modelos alineados: mediante una tecnica de abliteracion con preservacion de norma y abliteracion granular por experto (EGA), se elimina practicamente el comportamiento de negativa del modelo base, manteniendo supuestamente la calidad general. Es relevante para desarrolladores e investigadores que necesitan un modelo sin restricciones de contenido para tareas de investigacion, generacion creativa o evaluacion de sesgos, aunque con importantes caveats legales y eticos.
 
-La ficha tecnica se basa exclusivamente en la informacion disponible en la model card y los metadatos de HuggingFace. Advertencia: los datos de parametros reales en safetensors (14.849.486.030) no coinciden con el nombre del modelo (26B-A4B), lo que sugiere posibles discrepancias o que el nombre hace referencia al modelo base y no a los pesos publicados.
+La ficha tecnica se basa exclusivamente en la informacion disponible en la model card y los metadatos de Hugging Face. Advertencia: los datos de parametros reales en safetensors (14.849.486.030) no coinciden con el nombre del modelo (26B-A4B), lo que sugiere posibles discrepancias o que el nombre hace referencia al modelo base y no a los pesos publicados.
 
 ## Especificaciones tecnicas
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4
+- Hugging Face: https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Version abliterada referenciada: https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored
 - Repo de investigacion de abliteracion: https://github.com/TrevorS/gemma-4-abliteration

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer multitask v127 es un repositorio de codigo y pesos de inicializacion publicado por el usuario melissagmg en HuggingFace. Se trata de una implementacion funcional de la arquitectura Poolformer orientada a aprendizaje multitarea, configurada en escala *tiny* y acompanada de un unico checkpoint de inicializacion (`model.safetensors`) con 16.576 parametros en total. El propio autor indica de forma explicita que el checkpoint "no ha sido entrenado ni auditado" y que no representa un modelo listo para evaluacion comparativa.
+Poolformer multitask v127 es un repositorio de codigo y pesos de inicializacion publicado por el usuario melissagmg en Hugging Face. Se trata de una implementacion funcional de la arquitectura Poolformer orientada a aprendizaje multitarea, configurada en escala *tiny* y acompanada de un unico checkpoint de inicializacion (`model.safetensors`) con 16.576 parametros en total. El propio autor indica de forma explicita que el checkpoint "no ha sido entrenado ni auditado" y que no representa un modelo listo para evaluacion comparativa.
 
 El valor del repositorio es, por tanto, instrumental: sirve como esqueleto reproducible para experimentar con la arquitectura Poolformer, la fusion mediante cross attention, la activacion mish, la normalizacion scalenorm y la atencion flash, con un `config.json`, un `training_args.json` y un `train.py` que incluye un ejemplo ejecutable de prueba de humo (*smoke test*). No hay pipeline declarado, ni idiomas soportados, ni resultados de benchmarks publicados.
 
@@ -49,7 +49,7 @@ No se especifica el volumen de tokens de entrenamiento, la composicion del datas
 - Prototipado de arquitecturas sin atencion clasica: el repositorio permite estudiar como se comporta un Poolformer con normalizacion scalenorm y activacion mish en un entorno controlado, modificando `config.json` para variar profundidad y anchura.
 - Pruebas de humo en pipelines de integracion continua: al ser un checkpoint de 16.576 parametros y un repositorio de 0.0 GB, se puede descargar y ejecutar en cada commit para verificar que el codigo de carga, el *tokenizer* y el bucle de entrenamiento siguen funcionando.
 - Investigacion sobre fusion multimodal mediante cross attention: la configuracion declarada incluye cross attention como mecanismo de fusion, lo que permite experimentar con dos flujos de entrada y medir el coste de la fusion frente a la concatenacion.
-- Docencia y formacion: sirve como ejemplo minimo y legible de como se estructura un proyecto de modelo en HuggingFace (`train.py`, `config.json`, `training_args.json`, `model.safetensors`) sin la complejidad de un modelo de miles de millones de parametros.
+- Docencia y formacion: sirve como ejemplo minimo y legible de como se estructura un proyecto de modelo en Hugging Face (`train.py`, `config.json`, `training_args.json`, `model.safetensors`) sin la complejidad de un modelo de miles de millones de parametros.
 - Reproduccion de recetas de optimizacion: el `training_args.json` con Adam y calentamiento constante permite comparar empiricamente este calendario contra alternativas (cosenoidal, lineal) sobre un conjunto de validacion especifico de la tarea.
 - Benchmarking de infraestructura: al caber en CPU y en cualquier GPU, es util para validar cadenas de herramientas de serializacion safetensors, control de versiones de artefactos y registro de experimentos antes de escalar a modelos mayores.
 - Estudio de robustez y transferencia: la model card propone evaluar con un conjunto retenido especifico, al menos tres semillas y una linea base de capacidad equivalente, lo que convierte el repositorio en un banco de pruebas metodologico.
@@ -85,6 +85,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/melissagmg/poolformer-multitask-v127
+- Repositorio en Hugging Face: https://huggingface.co/melissagmg/poolformer-multitask-v127
 - Archivos incluidos segun la model card: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web no devolvio ningun resultado relevante sobre este modelo.

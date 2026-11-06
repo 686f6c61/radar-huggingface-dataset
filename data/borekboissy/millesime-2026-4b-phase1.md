@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Millesime-202608-4B-phase1 | 4.022.468.096 | No disponible | other | HuggingFace |
-| Qwen3-4B-Instruct-2507 | ~4.000.000.000 | No disponible | No disponible | HuggingFace |
-| Qwen2.5-4B-Instruct | ~4.000.000.000 | No disponible | No disponible | HuggingFace |
+| Millesime-202608-4B-phase1 | 4.022.468.096 | No disponible | other | Hugging Face |
+| Qwen3-4B-Instruct-2507 | ~4.000.000.000 | No disponible | No disponible | Hugging Face |
+| Qwen2.5-4B-Instruct | ~4.000.000.000 | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento entre estos modelos. La tabla se limita a caracteristicas tecnicas conocidas o declaradas en los repositorios. El modelo Millesime es un fine-tuning del primero, por lo que comparte arquitectura y numero de parametros, pero su comportamiento puede diferir debido al dataset de entrenamiento.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estos mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/borekboissy/Millesime-2026-4b-phase1
+- Hugging Face: https://huggingface.co/borekboissy/Millesime-2026-4b-phase1
 - Perfil del autor: https://huggingface.co/borekboissy
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Otros enlaces relevantes: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zs0506/qwen3vl-8B-full-no_fov-vit es un modelo multimodal publicado en HuggingFace por el usuario zs0506. Por el identificador del repositorio y la etiqueta `qwen3_vl`, todo apunta a que se trata de un ajuste fino sobre la familia Qwen3-VL, presumiblemente sobre la variante de 8.000 millones de parametros, aunque esta procedencia no esta confirmada en la informacion disponible. El sufijo "full" sugiere un ajuste fino completo (no LoRA) y "no_fov-vit" apunta a que el codificador visual no ha sido modificado o a que se ha desactivado algun recorte de campo de vision, pero ninguna de las dos cosas se puede verificar con los datos publicos del repositorio.
+zs0506/qwen3vl-8B-full-no_fov-vit es un modelo multimodal publicado en Hugging Face por el usuario zs0506. Por el identificador del repositorio y la etiqueta `qwen3_vl`, todo apunta a que se trata de un ajuste fino sobre la familia Qwen3-VL, presumiblemente sobre la variante de 8.000 millones de parametros, aunque esta procedencia no esta confirmada en la informacion disponible. El sufijo "full" sugiere un ajuste fino completo (no LoRA) y "no_fov-vit" apunta a que el codificador visual no ha sido modificado o a que se ha desactivado algun recorte de campo de vision, pero ninguna de las dos cosas se puede verificar con los datos publicos del repositorio.
 
 El modelo resuelve, en principio, tareas de vision-lenguaje: comprension de imagenes, OCR, razonamiento visual y generacion de texto condicionada por entrada visual. Su relevancia practica es limitada en el momento de redactar esta ficha: acumula 10 descargas y 0 likes, el repositorio no incluye model card descriptiva, no declara licencia ni idiomas soportados, y no se ha publicado ningun resultado de evaluacion. Es, por tanto, un artefacto de investigacion sin validacion externa conocida.
 
@@ -81,11 +81,11 @@ Los valores numericos de rendimiento no estan disponibles para este checkpoint, 
 
 | Modelo | Relacion con este checkpoint | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zs0506/qwen3vl-8B-full-no_fov-vit | Modelo analizado | no disponible de forma fiable | no disponible | no disponible | Repositorio HuggingFace, 10 descargas, sin model card |
-| Qwen3-VL-8B (Alibaba) | Base presumible, no confirmada | ~8B (segun documentacion del fabricante) | no verificado en esta ficha | no verificado en esta ficha | Publico en HuggingFace con model card |
-| Qwen2.5-VL-7B (Alibaba) | Alternativa de generacion anterior y tamano similar | ~7B | no verificado en esta ficha | no verificado en esta ficha | Publico en HuggingFace |
-| InternVL3-8B (OpenGVLab) | Alternativa de tamano equivalente | ~8B | no verificado en esta ficha | no verificado en esta ficha | Publico en HuggingFace |
-| Llama-3.2-11B-Vision (Meta) | Alternativa multimodal de tamano cercano | ~11B | no verificado en esta ficha | no verificada en esta ficha | Publico en HuggingFace |
+| zs0506/qwen3vl-8B-full-no_fov-vit | Modelo analizado | no disponible de forma fiable | no disponible | no disponible | Repositorio Hugging Face, 10 descargas, sin model card |
+| Qwen3-VL-8B (Alibaba) | Base presumible, no confirmada | ~8B (segun documentacion del fabricante) | no verificado en esta ficha | no verificado en esta ficha | Publico en Hugging Face con model card |
+| Qwen2.5-VL-7B (Alibaba) | Alternativa de generacion anterior y tamano similar | ~7B | no verificado en esta ficha | no verificado en esta ficha | Publico en Hugging Face |
+| InternVL3-8B (OpenGVLab) | Alternativa de tamano equivalente | ~8B | no verificado en esta ficha | no verificado en esta ficha | Publico en Hugging Face |
+| Llama-3.2-11B-Vision (Meta) | Alternativa multimodal de tamano cercano | ~11B | no verificado en esta ficha | no verificada en esta ficha | Publico en Hugging Face |
 
 La ventaja diferencial de este checkpoint frente a los anteriores solo podria determinarse con evaluaciones reproducibles, que no existen en la informacion disponible. Su principal desventaja objetiva es la falta de model card, licencia declarada y soporte del autor.
 
@@ -104,7 +104,7 @@ La ventaja diferencial de este checkpoint frente a los anteriores solo podria de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-full-no_fov-vit
-- Perfil del autor en HuggingFace: https://huggingface.co/zs0506
+- Repositorio en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-full-no_fov-vit
+- Perfil del autor en Hugging Face: https://huggingface.co/zs0506
 - Results de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las unicas coincidencias devueltas corresponden a articulos de petrografia sobre textura microlitica (https://fr.wikipedia.org/wiki/Microlithe_(g%C3%A9ologie), https://fr-academic.com/dic.nsf/frwiki/1576748, https://fr.wikipedia.org/wiki/Texture_(p%C3%A9trographie)) y no guardan relacion con este checkpoint.
 - Paper, blog o demo oficial: no disponible.

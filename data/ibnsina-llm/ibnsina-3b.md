@@ -94,7 +94,7 @@ Para comparativas con otros modelos persas adaptados no hay datos publicados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibnsina-llm/ibnsina-3b
+- Modelo en Hugging Face: https://huggingface.co/ibnsina-llm/ibnsina-3b
 - Repositorio GitHub: https://github.com/ibnsina-llm/ibnsina
 - Guía en persa: https://github.com/ibnsina-llm/ibnsina/blob/main/README_FA.md
 - Dataset de persa sintético: https://huggingface.co/datasets/ibnsina-llm/synthetic-persian-v1

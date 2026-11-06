@@ -4,7 +4,7 @@
 
 Wan-Animate-2 es un framework de animacion de personajes desarrollado por el equipo Wan-AI, presentado como una evolucion del modelo Wan2.2-Animate. Su principal innovacion es un Diffusion Transformer redisenado que consume directamente videos de conduccion, eliminando la necesidad de extractores de movimiento intermedios, lo que permite generar movimiento de alta fidelidad y una fuerte preservacion de la identidad del personaje. El modelo tambien incorpora control de punto de vista dirigido por texto, desacoplando la perspectiva de la camara del video de entrada.
 
-Este modelo, con 14 000 millones de parametros, resuelve el problema de la animacion de personajes a partir de una imagen de referencia y un video de plantilla, con aplicaciones en produccion audiovisual, generacion de contenido y doblaje. Su relevancia actual radica en que ofrece una alternativa open source bajo licencia Apache 2.0, con integraciones oficiales en Diffusers, DiffSynth-Studio y ComfyUI, ademas de una variante Lite que reduce la latencia de inferencia a umbrales de tiempo real para animacion por streaming. El repositorio de HuggingFace pesa 82.5 GB, lo que sugiere que los pesos se distribuyen en formato safetensors, aunque no se especifica explicitamente.
+Este modelo, con 14 000 millones de parametros, resuelve el problema de la animacion de personajes a partir de una imagen de referencia y un video de plantilla, con aplicaciones en produccion audiovisual, generacion de contenido y doblaje. Su relevancia actual radica en que ofrece una alternativa open source bajo licencia Apache 2.0, con integraciones oficiales en Diffusers, DiffSynth-Studio y ComfyUI, ademas de una variante Lite que reduce la latencia de inferencia a umbrales de tiempo real para animacion por streaming. El repositorio de Hugging Face pesa 82.5 GB, lo que sugiere que los pesos se distribuyen en formato safetensors, aunque no se especifica explicitamente.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ La comparativa se limita a la familia Wan-Animate, ya que no se dispone de infor
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Vyakul1/Wan2.2-Animate-2-14B
-- HuggingFace (modelo oficial): https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
+- Hugging Face (modelo): https://huggingface.co/Vyakul1/Wan2.2-Animate-2-14B
+- Hugging Face (modelo oficial): https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
 - ModelScope: https://modelscope.cn/models/Wan-AI/Wan2.2-Animate-2-14B
 - NVIDIA NIM: https://build.nvidia.com/wan-ai/wan2.2-animate-2-14b
 - Repositorio GitHub: https://github.com/Wan-Video/Wan-Animate-2

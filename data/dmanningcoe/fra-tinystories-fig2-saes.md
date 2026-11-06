@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo de lenguaje generativo, sino un conjunto 
 
 La relevancia del artefacto es metodológica: al cubrir una rejilla completa de capa, punto de enganche y semilla, permite cuantificar la variabilidad de las características aprendidas por un SAE bajo cambios de inicialización, algo que la mayoría de publicaciones de interpretabilidad mecanicista no reporta porque entrenar una sola rejilla de SAE sobre un modelo grande es prohibitivamente caro. Aquí el coste es mínimo: cada SAE tiene 2.361.600 parámetros (entrada de 768 dimensiones, anchura de 1.536, TopK 32) y el repositorio completo ocupa 0,7 GB, por lo que todo el análisis cabe en un portátil.
 
-El autor es `dmanningcoe` (Dmitry Manning-Coe). La licencia no está declarada en la model card y los metadatos de HuggingFace no indican idiomas ni pipeline. La única métrica publicada es el FVU (fracción de varianza no explicada) de validación, que oscila entre 0,0251 y 0,1942 según el checkpoint; se trata de una puntuación de reconstrucción de activaciones, no de una medida de comportamiento del modelo subyacente.
+El autor es `dmanningcoe` (Dmitry Manning-Coe). La licencia no está declarada en la model card y los metadatos de Hugging Face no indican idiomas ni pipeline. La única métrica publicada es el FVU (fracción de varianza no explicada) de validación, que oscila entre 0,0251 y 0,1942 según el checkpoint; se trata de una puntuación de reconstrucción de activaciones, no de una medida de comportamiento del modelo subyacente.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ El autor es `dmanningcoe` (Dmitry Manning-Coe). La licencia no está declarada e
 | Semillas | 0, 1, 2, 3, 4, 5 |
 | Tamaño del repositorio | 0,7 GB |
 | Fecha de publicación declarada | 2026-09-25 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -84,9 +84,9 @@ La propia model card advierte de que estas cifras son puntuaciones de reconstruc
 
 | Proyecto | Tipo | Parámetros | Contexto de entrenamiento | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dmanningcoe/fra-tinystories-fig2-saes` | 72 SAE TopK sobre un transformer de 33 M, 12 celdas × 6 semillas | 2.361.600 por SAE | Secuencias de 128 tokens | FVU de validación 0,0251–0,1942 | No disponible | HuggingFace |
+| `dmanningcoe/fra-tinystories-fig2-saes` | 72 SAE TopK sobre un transformer de 33 M, 12 celdas × 6 semillas | 2.361.600 por SAE | Secuencias de 128 tokens | FVU de validación 0,0251–0,1942 | No disponible | Hugging Face |
 | `TheodoreEhrenborg/tiny_stories_sae` | Entrenamiento de un SAE sobre un modelo TinyStories, diseñado para ejecutarse en un portátil | No disponible | No disponible | No disponible | No disponible | GitHub |
-| `mars-jason-25/tiny-stories-33M-TSdata-sleeper` (modelo interpretado) | Transformer decoder-only de tipo TinyStories, entrenado sobre datos con ejemplos limpios y de despliegue | ~33 M según el nombre del modelo | No disponible | No disponible | No disponible | HuggingFace |
+| `mars-jason-25/tiny-stories-33M-TSdata-sleeper` (modelo interpretado) | Transformer decoder-only de tipo TinyStories, entrenado sobre datos con ejemplos limpios y de despliegue | ~33 M según el nombre del modelo | No disponible | No disponible | No disponible | Hugging Face |
 
 La diferencia principal frente al segundo proyecto es la cobertura: aquí se publican 72 checkpoints con rejilla completa de capa, punto de enganche y semilla, más metadatos de FVU por checkpoint, en lugar de un único SAE de demostración. No se dispone de información sobre otros conjuntos de SAE comparables con el mismo protocolo de evaluación, por lo que la comparación de rendimiento entre proyectos no es posible con los datos actuales.
 

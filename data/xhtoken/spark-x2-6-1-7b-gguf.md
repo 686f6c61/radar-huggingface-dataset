@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-1.7B | 1,97 B | Hasta 1.048.576 tokens (config. SGLang) | Apache-2.0 | HuggingFace (GGUF y safetensors) | Presupuesto de *thinking* en 3 niveles; *tool calling*; EN/ZH |
+| Spark-X2.6-1.7B | 1,97 B | Hasta 1.048.576 tokens (config. SGLang) | Apache-2.0 | Hugging Face (GGUF y safetensors) | Presupuesto de *thinking* en 3 niveles; *tool calling*; EN/ZH |
 | Qwen3.5-2B | No disponible en la información | No disponible | No disponible | No disponible | Citado por el autor como referencia de *throughput* en dispositivo |
 | MiniCPM-2B | No disponible en la información | No disponible | No disponible | No disponible | Citado por el autor como referencia de *throughput* en dispositivo |
 | LFM2.5-2.6B | No disponible en la información | No disponible | No disponible | No disponible | Citado por el autor como referencia de *throughput* en dispositivo |
@@ -95,7 +95,7 @@ No se dispone de datos verificables de parámetros, contexto, licencia ni result
 
 ## Enlaces
 
-- [HuggingFace: XHToken/Spark-X2.6-1.7B-GGUF](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF)
+- [Hugging Face: XHToken/Spark-X2.6-1.7B-GGUF](https://huggingface.co/XHToken/Spark-X2.6-1.7B-GGUF)
 - [Modelo base: XHToken/Spark-X2.6-1.7B](https://huggingface.co/XHToken/Spark-X2.6-1.7B)
 - [Implementación optimizada de llama.cpp del autor](https://github.com/XHToken/llama.cpp)
 - [Slack de la comunidad Spark](https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw)

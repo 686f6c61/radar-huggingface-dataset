@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_libero_gen_spatial_combination_lora | Este modelo | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| physical-intelligence/pi05_base | Modelo base sin ajuste LoRA | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model) |
-| Otros checkpoints `pi05_libero_*` de austinpatel | Variantes de ajuste LoRA sobre el mismo base para otras tareas LIBERO | no disponible | no disponible | no disponible | HuggingFace |
+| pi05_libero_gen_spatial_combination_lora | Este modelo | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| physical-intelligence/pi05_base | Modelo base sin ajuste LoRA | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model) |
+| Otros checkpoints `pi05_libero_*` de austinpatel | Variantes de ajuste LoRA sobre el mismo base para otras tareas LIBERO | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada, por lo que la comparativa se limita a la relacion estructural entre ellas.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/pi05_libero_gen_spatial_combination_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/pi05_libero_gen_spatial_combination_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_gen_spatial_combination_train_openpi
 - Repositorio Behavior Prompting: https://github.com/real-stanford/behavior_prompting

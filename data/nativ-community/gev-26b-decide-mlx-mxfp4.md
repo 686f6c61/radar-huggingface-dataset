@@ -79,8 +79,8 @@ En la informacion disponible no se identifican modelos de decision multimodales 
 
 | Modelo | Parametros | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/GEV-26B-Decide-MLX-MXFP4 | 25,8 B | MXFP4, group size 32 | safetensors (MLX) | apache-2.0 | Publico en HuggingFace; 0 descargas |
-| autotrust/GEV-26B-Decide (modelo base) | no disponible | pesos originales (presumiblemente sin cuantizar) | no disponible | apache-2.0 segun el repositorio derivado | Publico en HuggingFace |
+| nativ-community/GEV-26B-Decide-MLX-MXFP4 | 25,8 B | MXFP4, group size 32 | safetensors (MLX) | apache-2.0 | Publico en Hugging Face; 0 descargas |
+| autotrust/GEV-26B-Decide (modelo base) | no disponible | pesos originales (presumiblemente sin cuantizar) | no disponible | apache-2.0 segun el repositorio derivado | Publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ En la informacion disponible no se identifican modelos de decision multimodales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/GEV-26B-Decide-MLX-MXFP4
 - Modelo base: https://huggingface.co/autotrust/GEV-26B-Decide
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Fork con soporte GEV (rama feat/gev): https://github.com/Lazarus-931/mlx-vlm/tree/feat/gev

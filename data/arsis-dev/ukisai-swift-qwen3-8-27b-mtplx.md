@@ -18,7 +18,7 @@ Es relevante ahora porque permite ejecutar un modelo multimodal de ~27 B en un p
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Cuerpo en 4-bit affine con group size 64; cabeza MTP en BF16; pesos de vision preservados sin cuantizar |
 | Idiomas soportados | No disponible |
-| Licencia | Swift Open License v1.0 (etiquetada como `other` en HuggingFace); heredada del checkpoint original |
+| Licencia | Swift Open License v1.0 (etiquetada como `other` en Hugging Face); heredada del checkpoint original |
 | Formato de pesos | safetensors para runtime MLX (`model-00001-of-00003.safetensors`, `model-00002-of-00003.safetensors`, `model-00003-of-00003.safetensors`, `model-vision.safetensors`, `mtp.safetensors`) |
 | Runtime | MTPLX / MLX (exclusivo de Apple Silicon) |
 | Tamano del repositorio | ~16,9 GB |
@@ -93,7 +93,7 @@ No se dispone de comparativas publicadas frente a alternativas de la misma categ
 
 - No es un modelo nuevo: es una conversion de runtime. Cualquier limitacion de arquitectura, sesgo o calidad del checkpoint `ukisai/Swift-Qwen3.8-27b` se hereda integra.
 - La cuantizacion a 4-bit affine con group size 64 puede degradar la calidad respecto al BF16 original; la model card no publica ninguna comparacion de calidad que lo cuantifique.
-- La licencia es `Swift Open License v1.0`, marcada como `other` en HuggingFace. Antes de usar el modelo en produccion o redistribuirlo hay que revisar la seccion "License and access" del repositorio original, que puede imponer restricciones de uso comercial o de acceso.
+- La licencia es `Swift Open License v1.0`, marcada como `other` en Hugging Face. Antes de usar el modelo en produccion o redistribuirlo hay que revisar la seccion "License and access" del repositorio original, que puede imponer restricciones de uso comercial o de acceso.
 - Exclusividad de plataforma: sin CUDA, sin GGUF y sin soporte para x86. No se puede desplegar en servidores con GPU NVIDIA ni en entornos Linux convencionales.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. Como en cualquier modelo generativo, la salida debe validarse en aplicaciones criticas.
 - Idiomas soportados: no declarados. No se debe asumir un rendimiento multilingue equivalente sin evaluacion propia.
@@ -105,7 +105,7 @@ No se dispone de comparativas publicadas frente a alternativas de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arsis-dev/ukisai-Swift-Qwen3.8-27b-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/arsis-dev/ukisai-Swift-Qwen3.8-27b-MTPLX
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base (seccion "License and access"): https://huggingface.co/ukisai/Swift-Qwen3.8-27b#license-and-access
 - Repositorio del modelo base (revision usada por Forge): 1b30aaaf753fe5c1cb51ada2ea0367a53445359c

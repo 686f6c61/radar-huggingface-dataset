@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `tonygeroge/Test` es una publicación en HuggingFace realizada por el usuario `tonygeroge` (posiblemente Tony Gladvin George, ingeniero principal de silicio según su perfil de LinkedIn). La única información disponible en su model card es la licencia Apache-2.0, sin ningún otro dato técnico, descripción o documentación. No se especifica arquitectura, tamaño, parámetros, contexto, idiomas ni pipeline de uso. El repositorio no ha recibido descargas ni "me gusta", lo que sugiere que se trata de una publicación de prueba o un espacio vacío sin contenido funcional. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni sus capacidades. Se recomienda a los desarrolladores no considerar este modelo para ningún uso en producción hasta que el autor publique información completa.
+El modelo identificado como `tonygeroge/Test` es una publicación en Hugging Face realizada por el usuario `tonygeroge` (posiblemente Tony Gladvin George, ingeniero principal de silicio según su perfil de LinkedIn). La única información disponible en su model card es la licencia Apache-2.0, sin ningún otro dato técnico, descripción o documentación. No se especifica arquitectura, tamaño, parámetros, contexto, idiomas ni pipeline de uso. El repositorio no ha recibido descargas ni "me gusta", lo que sugiere que se trata de una publicación de prueba o un espacio vacío sin contenido funcional. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni sus capacidades. Se recomienda a los desarrolladores no considerar este modelo para ningún uso en producción hasta que el autor publique información completa.
 
 ## Especificaciones tecnicas
 
@@ -52,5 +52,5 @@ No disponible. No se conocen modelos comparables porque no se dispone de ninguna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonygeroge/Test
+- Repositorio en Hugging Face: https://huggingface.co/tonygeroge/Test
 - Perfil de LinkedIn del autor (posible): https://kr.linkedin.com/in/tonygeorge

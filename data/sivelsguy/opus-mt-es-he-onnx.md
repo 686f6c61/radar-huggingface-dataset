@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sivelsguy/opus-mt-es-he-onnx | no disponible | no disponible | es, he | Apache-2.0 | ONNX int8 | HuggingFace, transformers.js |
-| Helsinki-NLP/opus-mt-es-he | no disponible | no disponible | es, he | Apache-2.0 | safetensors/PyTorch | HuggingFace, transformers |
-| Otros modelos OPUS-MT es-* | no disponible | no disponible | es y lengua destino | Apache-2.0 | safetensors/PyTorch | HuggingFace |
+| sivelsguy/opus-mt-es-he-onnx | no disponible | no disponible | es, he | Apache-2.0 | ONNX int8 | Hugging Face, transformers.js |
+| Helsinki-NLP/opus-mt-es-he | no disponible | no disponible | es, he | Apache-2.0 | safetensors/PyTorch | Hugging Face, transformers |
+| Otros modelos OPUS-MT es-* | no disponible | no disponible | es y lengua destino | Apache-2.0 | safetensors/PyTorch | Hugging Face |
 
 La comparación se limita a la familia OPUS-MT porque la información proporcionada no incluye datos de rendimiento ni especificaciones de alternativas como NLLB o M2M-100 que permitan una comparación cuantitativa rigurosa.
 
@@ -79,7 +79,7 @@ La comparación se limita a la familia OPUS-MT porque la información proporcion
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sivelsguy/opus-mt-es-he-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/sivelsguy/opus-mt-es-he-onnx)
 - [Modelo base Helsinki-NLP/opus-mt-es-he](https://huggingface.co/Helsinki-NLP/opus-mt-es-he)
 - [Proyecto OPUS-MT (Helsinki-NLP)](https://github.com/Helsinki-NLP/Opus-MT)
 - [transformers.js](https://github.com/huggingface/transformers.js)

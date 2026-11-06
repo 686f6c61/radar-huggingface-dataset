@@ -82,7 +82,7 @@ No disponible. Este repositorio no es un modelo de inferencia, por lo que no tie
 
 ## Enlaces
 
-- [Repositorio HuggingFace: erickfmm/whisper-medium-ft-cv_es-dev](https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-dev)
+- [Repositorio Hugging Face: erickfmm/whisper-medium-ft-cv_es-dev](https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-dev)
 - [Modelo base: openai/whisper-medium](https://huggingface.co/openai/whisper-medium)
 - [Proyecto training-asr (GitHub)](https://github.com/erickfmm/training-asr.git)
 - [Paper Whisper (arXiv:2212.04356)](https://arxiv.org/abs/2212.04356)

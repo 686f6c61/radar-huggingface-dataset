@@ -97,7 +97,7 @@ Los datos de rendimiento comparado (WER por idioma, latencia relativa) no estan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM-DFlash2
 - Modelo base cuantizado: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM
 - Drafter DFlash 2: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter-AWQ-W4A16-ASYM
 - Modelo original de Microsoft: https://huggingface.co/vibevoice/VibeVoice-ASR-Streaming-7B

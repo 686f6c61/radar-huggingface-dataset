@@ -17,7 +17,7 @@ Su relevancia actual radica en que habilita pipelines completos de generacion de
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (modelo audio-video, no basado en tokens de texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Chino, ingles y japones (a nivel de audio); la model card declara `en` como idioma en los metadatos de HuggingFace |
+| Idiomas soportados | Chino, ingles y japones (a nivel de audio); la model card declara `en` como idioma en los metadatos de Hugging Face |
 | Licencia | MIT |
 | Formato de pesos | no disponible explicitamente (repo de 6.8 GB con checkpoints del modelo entrenado) |
 | Tamano de region facial | 256 x 256 pixeles |
@@ -88,12 +88,12 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 - Codigos de entrenamiento aun no publicados (marcados como pendientes en la model card), lo que limita el reentrenamiento o ajuste fino por parte de terceros.
 - Informe tecnico aun no disponible en el momento de la informacion consultada.
 - Licencia MIT: permisiva para uso comercial, pero no exime del cumplimiento de normativas de derechos de imagen y proteccion de datos.
-- Los metadatos de HuggingFace del repositorio indican 0 descargas y 0 likes, y el autor listado es ARTDZNR (posible espejo del repositorio oficial de TMElyralab); conviene verificar el origen de los pesos antes de usarlos en produccion.
+- Los metadatos de Hugging Face del repositorio indican 0 descargas y 0 likes, y el autor listado es ARTDZNR (posible espejo del repositorio oficial de TMElyralab); conviene verificar el origen de los pesos antes de usarlos en produccion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo consultado): https://huggingface.co/ARTDZNR/MuseTalk
-- Repositorio oficial en HuggingFace: https://huggingface.co/TMElyralab/MuseTalk
+- Repositorio en Hugging Face (espejo consultado): https://huggingface.co/ARTDZNR/MuseTalk
+- Repositorio oficial en Hugging Face: https://huggingface.co/TMElyralab/MuseTalk
 - Codigo fuente en GitHub: https://github.com/TMElyralab/MuseTalk
 - MuseV (modelo complementario de generacion de video): https://github.com/TMElyralab/MuseV
 - Dataset HDTF: no disponible en la informacion proporcionada

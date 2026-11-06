@@ -71,7 +71,7 @@ No se dispone de datos de comparación con otros modelos de segmentación de ins
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-rfdetr-nano-segmentation
+- Repositorio de Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-rfdetr-nano-segmentation
 - Repositorio del modelo original (Roboflow): https://github.com/roboflow/rf-detr
 - Documentación de ExecuTorch: https://pytorch.org/executorch/stable/index.html
 - Biblioteca npm de React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch

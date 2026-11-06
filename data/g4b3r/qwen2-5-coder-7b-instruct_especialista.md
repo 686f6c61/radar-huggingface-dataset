@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G4b3r/Qwen2.5-Coder-7B-Instruct_especialista es un modelo derivado de Qwen2.5-Coder-7B-Instruct, publicado por el usuario G4b3r en HuggingFace bajo licencia MIT. La model card no incluye ninguna descripcion tecnica, datos de entrenamiento ni indicaciones sobre el proceso de ajuste realizado; el unico contenido es la declaracion de licencia. Por el nombre se deduce que se trata de un ajuste fino (probablemente SFT o LoRA fusionado) del modelo base de Alibaba para especializarlo en alguna tarea concreta de generacion de codigo, pero el autor no especifica cual.
+G4b3r/Qwen2.5-Coder-7B-Instruct_especialista es un modelo derivado de Qwen2.5-Coder-7B-Instruct, publicado por el usuario G4b3r en Hugging Face bajo licencia MIT. La model card no incluye ninguna descripcion tecnica, datos de entrenamiento ni indicaciones sobre el proceso de ajuste realizado; el unico contenido es la declaracion de licencia. Por el nombre se deduce que se trata de un ajuste fino (probablemente SFT o LoRA fusionado) del modelo base de Alibaba para especializarlo en alguna tarea concreta de generacion de codigo, pero el autor no especifica cual.
 
 El modelo base, Qwen2.5-Coder-7B-Instruct, es un transformer decoder-only de 7.610 millones de parametros con 32.768 tokens de contexto nativo, entrenado por el equipo Qwen de Alibaba sobre 5,5 billones de tokens e instruido mediante SFT y DPO. Es un modelo ampliamente utilizado para generacion de codigo, reparacion de bugs y agentes de software. Este derivado hereda esa arquitectura y esas capacidades, aunque no hay evidencia publicada de que el ajuste haya mejorado ninguna metrica.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| G4b3r/Qwen2.5-Coder-7B-Instruct_especialista | 7,6 B | 32.768 (base) | MIT | HuggingFace, 0 descargas | Sin model card ni benchmarks |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Base oficial con benchmarks publicados |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (2,4 B activos, MoE) | 128 K | DeepSeek License | HuggingFace | Mayor contexto y rendimiento en código |
-| CodeLlama-7B-Instruct | 6,7 B | 16 K | Llama 2 Community License | HuggingFace | Más antiguo, menor rendimiento en HumanEval |
+| G4b3r/Qwen2.5-Coder-7B-Instruct_especialista | 7,6 B | 32.768 (base) | MIT | Hugging Face, 0 descargas | Sin model card ni benchmarks |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Base oficial con benchmarks publicados |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B (2,4 B activos, MoE) | 128 K | DeepSeek License | Hugging Face | Mayor contexto y rendimiento en código |
+| CodeLlama-7B-Instruct | 6,7 B | 16 K | Llama 2 Community License | Hugging Face | Más antiguo, menor rendimiento en HumanEval |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder
 - Blog técnico de Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Paper de Qwen2.5-Coder (arXiv): https://arxiv.org/abs/2409.12186

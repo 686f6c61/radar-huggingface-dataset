@@ -81,9 +81,9 @@ Ningún benchmark cae más de 2 puntos según los intervalos pareados. Alrededor
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-deepcoder-RL (este) | 27B (base) + LoRA rango 32 | No disponible | RL sobre código competitivo | Apache 2.0 | HuggingFace, 21 descargas |
-| Qwen/Qwen3.8-27B (base) | 27B | No disponible | LM general | No disponible en la información | HuggingFace |
-| DeepCoder-Preview (referencia de datos) | No disponible | No disponible | Dataset de problemas de código | No disponible | HuggingFace Datasets |
+| Qwen3.8-27B-deepcoder-RL (este) | 27B (base) + LoRA rango 32 | No disponible | RL sobre código competitivo | Apache 2.0 | Hugging Face, 21 descargas |
+| Qwen/Qwen3.8-27B (base) | 27B | No disponible | LM general | No disponible en la información | Hugging Face |
+| DeepCoder-Preview (referencia de datos) | No disponible | No disponible | Dataset de problemas de código | No disponible | Hugging Face Datasets |
 
 No se dispone de datos de benchmarks de modelos alternativos comparables en la información proporcionada, por lo que la comparación cuantitativa se limita a las filas base frente a adaptador de la sección anterior.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de modelos alternativos comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ik6626/Qwen3.8-27B-deepcoder-RL
+- Modelo en Hugging Face: https://huggingface.co/ik6626/Qwen3.8-27B-deepcoder-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepCoder-Preview-Dataset
 - Script de conversión para SGLang: https://huggingface.co/ik6626/Qwen3.8-27B-deepcoder-RL/blob/main/convert_to_sglang.py

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Toxic Guardrail MiniLM ID/EN es un clasificador de severidad de toxicidad bilingue (indonesio e ingles) desarrollado por el usuario laskar-ks y publicado en HuggingFace. Su proposito no es generar texto, sino actuar como guardrail de aplicacion: recibe un fragmento de texto y devuelve un nivel de severidad en una escala ordinal de cinco niveles (0 seguro, 1 reservado y no disponible, 2 abusivo, 3 odio dirigido, 4 amenaza o toxicidad severa), junto con un `score` de severidad esperada y una accion recomendada (`allow`, `soft_warn`, `warn`, `review`, `block`).
+Toxic Guardrail MiniLM ID/EN es un clasificador de severidad de toxicidad bilingue (indonesio e ingles) desarrollado por el usuario laskar-ks y publicado en Hugging Face. Su proposito no es generar texto, sino actuar como guardrail de aplicacion: recibe un fragmento de texto y devuelve un nivel de severidad en una escala ordinal de cinco niveles (0 seguro, 1 reservado y no disponible, 2 abusivo, 3 odio dirigido, 4 amenaza o toxicidad severa), junto con un `score` de severidad esperada y una accion recomendada (`allow`, `soft_warn`, `warn`, `review`, `block`).
 
 El modelo parte de `microsoft/Multilingual-MiniLM-L12-H384`, un transformer encoder de tipo BERT con 34.606.084 parametros totales, afinado sobre el dataset `laskar-ks/toxic-guardrail-id-en`, con vocabulario recortado y exportado a ONNX INT8 para inferencia en CPU. El repositorio ocupa 0,9 GB y esta disponible bajo licencia cc-by-sa-3.0. La version documentada, v2, rebalancea los datos de entrenamiento de una proporcion ID:EN de 1:1,46 a 1:1,06 y reajusta los hiperparametros de entrenamiento.
 
@@ -99,7 +99,7 @@ No se dispone de resultados comparativos con otros modelos de la misma categoria
 - VRAM estimada para inferencia: no aplica en el escenario principal, ya que el modelo esta disenado para ejecucion en CPU. Los 34,6 millones de parametros en fp32 ocupan aproximadamente 138 MB; la exportacion INT8 reduce el peso a una fraccion de esa cifra.
 - GPU recomendadas: no disponibles ni necesarias. Cualquier GPU consumer (por ejemplo, una RTX 3060 o superior) puede ejecutarlo, pero seria desaprovechar el modelo.
 - Cabe en GPU consumer: si, en cualquier GPU con al menos 1 GB de memoria libre, e incluso en CPU sin aceleracion.
-- Opciones de despliegue: ONNX Runtime (ruta prevista por el autor), ademas de las habituales para un modelo BERT de esta familia via Transformers, HuggingFace Text Embeddings Inference o servidores de clasificacion genericos. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a este clasificador.
+- Opciones de despliegue: ONNX Runtime (ruta prevista por el autor), ademas de las habituales para un modelo BERT de esta familia via Transformers, Hugging Face Text Embeddings Inference o servidores de clasificacion genericos. vLLM, llama.cpp, Ollama y TGI estan orientados a modelos generativos y no aplican a este clasificador.
 - Latencia y throughput estimados: no disponibles. La model card deja sin rellenar los campos de calibracion (temperatura, variante de cuantizacion, acuerdo INT8 frente a fp32 y tamano desplegado). Los placeholders `<XX%>` y `<XX MB>` siguen presentes en el README.
 
 ## Comparativa con modelos similares
@@ -134,7 +134,7 @@ No hay datos de benchmarks de terceros en la informacion proporcionada, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laskar-ks/toxic-guardrail-minilm-id-en
+- Modelo en Hugging Face: https://huggingface.co/laskar-ks/toxic-guardrail-minilm-id-en
 - Dataset de entrenamiento: https://huggingface.co/datasets/laskar-ks/toxic-guardrail-id-en
 - Modelo base: https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384
 - Modelo de sentimiento usado para la cabeza auxiliar: https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment

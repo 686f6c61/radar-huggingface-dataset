@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alvinwatanabe/mixer-baseline-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación de referencia (baseline) de una arquitectura de tipo Mixer orientada a tareas de *matching*. No es un modelo de lenguaje entrenado: se trata de un checkpoint de inicialización valido para pruebas de humo (*smoke tests*), con 49.600 parametros totales, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor lo describe explicitamente como un punto de partida experimental y no reclama ninguna puntuacion de benchmark.
+`alvinwatanabe/mixer-baseline-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación de referencia (baseline) de una arquitectura de tipo Mixer orientada a tareas de *matching*. No es un modelo de lenguaje entrenado: se trata de un checkpoint de inicialización valido para pruebas de humo (*smoke tests*), con 49.600 parametros totales, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El autor lo describe explicitamente como un punto de partida experimental y no reclama ninguna puntuacion de benchmark.
 
 La relevancia de este repositorio es, por tanto, metodologica y no de rendimiento. Aporta un esqueleto reproducible con `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con planificador exponencial). La model card insiste en que cualquier evaluacion significativa debe comparar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
 
@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvinwatanabe/mixer-baseline-2024
+- Hugging Face: https://huggingface.co/alvinwatanabe/mixer-baseline-2024
 - Archivos incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Los resultados de la busqueda web proporcionados no contienen ningun enlace relacionado con este modelo ni con arquitecturas Mixer, por lo que no se listan.

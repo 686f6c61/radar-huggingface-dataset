@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado por el autor VioletteHunter en un repositorio de HuggingFace identificado como `VioletteHunter/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia lógica y soporte de function calling, con una reducción de la tasa de alucinación. El repositorio está etiquetado como `bert`, `feature-extraction` y `transformers`, lo que sugiere una arquitectura basada en BERT, aunque no se especifican detalles concretos de arquitectura, número de parámetros ni longitud de contexto.
+MyAwesomeModel es un modelo de inteligencia artificial presentado por el autor VioletteHunter en un repositorio de Hugging Face identificado como `VioletteHunter/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia lógica y soporte de function calling, con una reducción de la tasa de alucinación. El repositorio está etiquetado como `bert`, `feature-extraction` y `transformers`, lo que sugiere una arquitectura basada en BERT, aunque no se especifican detalles concretos de arquitectura, número de parámetros ni longitud de contexto.
 
 Es importante señalar que el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo, y su nombre incluye "TestRepo", por lo que probablemente se trata de un repositorio de prueba o demostración sin artefactos reales. La model card describe un modelo con capacidades de razonamiento avanzado y resultados de evaluación en diversas categorías, pero estos datos no pueden verificarse ni reproducirse sin acceso a los pesos. La relevancia actual de este modelo es limitada debido a la falta de artefactos publicados y a la naturaleza aparentemente experimental del repositorio.
 
@@ -97,7 +97,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VioletteHunter/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/VioletteHunter/MyAwesomeModel-TestRepo
 - Repositorios similares encontrados en la búsqueda web (también de prueba):
   - https://huggingface.co/LMNR/MyAwesomeModel-TestRepo
   - https://huggingface.co/toolathlon-eval-05/MyAwesomeModel-TestRepo

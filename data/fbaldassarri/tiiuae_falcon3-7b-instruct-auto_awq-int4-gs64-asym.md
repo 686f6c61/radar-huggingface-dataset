@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Falcon3-7B-Instruct AWQ INT4) | 7B nominal (1,75B segun safetensors, discrepante) | No disponible | INT4 AWQ, G64 asimetrica | Apache 2.0 | HuggingFace, 0 descargas |
-| tiiuae/Falcon3-7B-Instruct | 7B | No disponible en la informacion proporcionada | bfloat16 (sin cuantizar) | Apache 2.0 | HuggingFace (modelo base oficial) |
-| Otras cuantizaciones INT4 de Falcon3-7B-Instruct | 7B | No disponible | AWQ, GPTQ, GGUF (segun autor) | Apache 2.0 | HuggingFace (comunidad) |
-| Qwen2.5-7B-Instruct (INT4 AWQ) | 7B | No disponible en la informacion proporcionada | INT4 AWQ | Apache 2.0 | HuggingFace (oficial) |
+| Este modelo (Falcon3-7B-Instruct AWQ INT4) | 7B nominal (1,75B segun safetensors, discrepante) | No disponible | INT4 AWQ, G64 asimetrica | Apache 2.0 | Hugging Face, 0 descargas |
+| tiiuae/Falcon3-7B-Instruct | 7B | No disponible en la informacion proporcionada | bfloat16 (sin cuantizar) | Apache 2.0 | Hugging Face (modelo base oficial) |
+| Otras cuantizaciones INT4 de Falcon3-7B-Instruct | 7B | No disponible | AWQ, GPTQ, GGUF (segun autor) | Apache 2.0 | Hugging Face (comunidad) |
+| Qwen2.5-7B-Instruct (INT4 AWQ) | 7B | No disponible en la informacion proporcionada | INT4 AWQ | Apache 2.0 | Hugging Face (oficial) |
 
 No se dispone de datos de rendimiento comparados para ninguna de las alternativas dentro de la informacion proporcionada; la comparacion se limita a parametros, licencia y formato de distribucion.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparados para ninguna de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Intel AutoRound (repositorio oficial): https://github.com/intel/auto-round
 - Pipeline de replicacion citado en la model card (origen de terceros, no verificado): https://git.epicdynamic.com/auto-round-pipeline

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `evenediktov/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, un escenario de control continuo en el que un brazo robótico Franka Emika Panda debe alcanzar una posición objetivo en el espacio. Lo publica el usuario evenediktov en HuggingFace Hub y está construido con la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL.
+El modelo `evenediktov/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, un escenario de control continuo en el que un brazo robótico Franka Emika Panda debe alcanzar una posición objetivo en el espacio. Lo publica el usuario evenediktov en Hugging Face Hub y está construido con la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada específicamente para una tarea de manipulación robótica simulada con recompensa densa. La variante "Dense" del entorno implica que la función de recompensa proporciona señal continua en función de la distancia al objetivo, lo que facilita el aprendizaje frente a variantes de recompensa dispersa.
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evenediktov/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/evenediktov/a2c-PandaReachDense-v3
 - stable-baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - panda-gym (entornos): https://github.com/qgallouedec/panda-gym
 - huggingface_sb3 (utilidad de carga): https://github.com/huggingface/huggingface_sb3

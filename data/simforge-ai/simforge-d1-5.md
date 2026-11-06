@@ -4,7 +4,7 @@
 
 SIMFORGE-D1.5 es un modelo de lenguaje desarrollado por SIMFORGE-AI, una iniciativa vinculada al ecosistema SimForge orientado a la simulación de IA física para robótica y sistemas autónomos. Se trata de un fine-tuning del modelo base nvidia/Alpamayo-1.5-10B, con 7.214.634.610 parámetros totales, lo que lo sitúa en la gama de los 7B-10B. El modelo está etiquetado con el pipeline de robótica y su licencia es openmdw-1.1, una licencia de código abierto con condiciones específicas.
 
-El modelo está diseñado para tareas relacionadas con conducción autónoma, robótica y destilación de conocimiento, según las etiquetas de HuggingFace. Su acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Aunque no se han publicado benchmarks ni detalles de entrenamiento en la información disponible, su base en Alpamayo-1.5 sugiere capacidades de razonamiento y generación de texto propias de los modelos transformer modernos. La relevancia de este modelo radica en su especialización aparente para el dominio de la robótica y la simulación, un campo en crecimiento dentro de la IA aplicada.
+El modelo está diseñado para tareas relacionadas con conducción autónoma, robótica y destilación de conocimiento, según las etiquetas de Hugging Face. Su acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Aunque no se han publicado benchmarks ni detalles de entrenamiento en la información disponible, su base en Alpamayo-1.5 sugiere capacidades de razonamiento y generación de texto propias de los modelos transformer modernos. La relevancia de este modelo radica en su especialización aparente para el dominio de la robótica y la simulación, un campo en crecimiento dentro de la IA aplicada.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo está diseñado para tareas relacionadas con conducción autónoma, ro
 
 La arquitectura exacta no se detalla en la información proporcionada, pero al estar basado en nvidia/Alpamayo-1.5-10B, se asume una arquitectura transformer estándar con atención de múltiples cabezas, probablemente con capas de normalización pre- o post-atención típicas de los modelos recientes. El número de parámetros (7.2B) sugiere que se ha realizado una destilación o poda desde el modelo base de 10B, aunque no se confirma el método. Las etiquetas incluyen "distillation" y "autonomous-driving", lo que apunta a un entrenamiento orientado a tareas de conducción autónoma y robótica, posiblemente con datos sintéticos generados por la plataforma SimForge.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se mencionan innovaciones técnicas como decodificación especulativa o atención lineal. El modelo se publica con la librería transformers, lo que facilita su integración en pipelines estándar de HuggingFace.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se mencionan innovaciones técnicas como decodificación especulativa o atención lineal. El modelo se publica con la librería transformers, lo que facilita su integración en pipelines estándar de Hugging Face.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que s
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su uso. Esto puede limitar su adopción.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su uso. Esto puede limitar su adopción.
 - Idioma limitado: solo se declara inglés, lo que restringe su uso en aplicaciones multilingües.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estándar, lo que dificulta evaluar su calidad.
 - Especialización incierta: aunque las etiquetas sugieren robótica y conducción autónoma, no se ha demostrado su eficacia en estas tareas.
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SIMFORGE-AI/SIMFORGE-D1.5
+- Hugging Face: https://huggingface.co/SIMFORGE-AI/SIMFORGE-D1.5
 - Sitio web de SimForge: https://simforge.ai/
 - Sitio web alternativo: https://simforge.io/
 - Repositorio GitHub experimental (no oficial): https://github.com/black-210/SimForge

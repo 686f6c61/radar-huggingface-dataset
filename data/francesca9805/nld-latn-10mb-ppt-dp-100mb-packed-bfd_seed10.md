@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de HuggingFace `francesca9805` y vinculado a un proyecto de investigacion de la Universidad de Groningen (el enlace de seguimiento apunta a una cuenta de Weights & Biases de dicha universidad). El nombre del repositorio sugiere un trabajo experimental sobre tokenizadores y empaquetado de datos para neerlandes (`nld_latn` es el codigo ISO 639-3 del neerlandes en escritura latina), aunque la model card no documenta el significado de los sufijos.
+El modelo `nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de Hugging Face `francesca9805` y vinculado a un proyecto de investigacion de la Universidad de Groningen (el enlace de seguimiento apunta a una cuenta de Weights & Biases de dicha universidad). El nombre del repositorio sugiere un trabajo experimental sobre tokenizadores y empaquetado de datos para neerlandes (`nld_latn` es el codigo ISO 639-3 del neerlandes en escritura latina), aunque la model card no documenta el significado de los sufijos.
 
 Tecnicamente, se trata de un modelo denso de tipo GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la gama muy baja de la familia GPT-2 (el GPT-2 small original tiene 124 millones). Se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1, partiendo de un modelo base entrenado con tan solo 10 MB de texto, lo que lo convierte en un artefacto de investigacion orientado a escenarios de recursos extremadamente limitados mas que en un modelo de produccion.
 
@@ -66,8 +66,8 @@ La informacion proporcionada solo identifica de forma explicita el modelo base. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39.087.104 | no disponible (familia GPT-2) | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
-| `goldfish-models/nld_latn_10mb` | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base monolinguistico neerlandes, entrenado con ~10 MB de texto |
+| `francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39.087.104 | no disponible (familia GPT-2) | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
+| `goldfish-models/nld_latn_10mb` | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base monolinguistico neerlandes, entrenado con ~10 MB de texto |
 | GPT-2 small (referencia de arquitectura) | 124 millones | 1024 tokens | MIT (referencia general de la familia) | Ampliamente disponible | Aproximadamente 3,2 veces mas parametros; no es un modelo de neerlandes especificamente |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real de estos modelos.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_10mb
 - Libreria TRL (usada para el entrenamiento): https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/a9a42qpz

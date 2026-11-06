@@ -78,8 +78,8 @@ Rendimiento de inferencia: aproximadamente 6 ms por 1.000 tokens en GPU y 37 ms 
 
 | Modelo | Parámetros | Contexto | F1 CredData | F1 Issue reports | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| cbx-secrets-detector-17M | 16,8M | 7.999 tokens | 0,805 | 0,836 | Apache 2.0 | HuggingFace, pesos abiertos |
-| cbx-secrets-detector-32M | 32M (no disponible el dato exacto) | no disponible | 0,820 | 0,861 | Apache 2.0 | HuggingFace, pesos abiertos |
+| cbx-secrets-detector-17M | 16,8M | 7.999 tokens | 0,805 | 0,836 | Apache 2.0 | Hugging Face, pesos abiertos |
+| cbx-secrets-detector-32M | 32M (no disponible el dato exacto) | no disponible | 0,820 | 0,861 | Apache 2.0 | Hugging Face, pesos abiertos |
 | Gitleaks 8.30.1 | basado en reglas (no es ML) | no disponible | 0,442 | 0,678 | MIT | Herramienta CLI open source |
 | detect-secrets 1.5.0 | basado en reglas (no es ML) | no disponible | 0,460 | 0,290 | Apache 2.0 | Herramienta CLI open source |
 | TruffleHog 3.99.2 | basado en reglas (no es ML) | no disponible | 0,042 | 0,228 | no disponible | Herramienta CLI open source |
@@ -100,7 +100,7 @@ La alternativa directa dentro de la misma familia es cbx-secrets-detector-32M, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-17M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-17M
 - Variante 32M: https://huggingface.co/CobuildX-AI/cbx-secrets-detector-32M
 - Modelo base (ettin-encoder-17m): https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Paper de referencia de Ettin (arXiv): https://arxiv.org/abs/2410.23657

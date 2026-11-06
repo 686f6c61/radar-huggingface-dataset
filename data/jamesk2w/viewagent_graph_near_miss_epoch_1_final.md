@@ -78,8 +78,8 @@ Datos disponibles frente al modelo base y a alternativas de la misma categoría.
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `JamesK2W/viewagent_graph_near_miss_epoch_1_final` | 8.767.123.696 | No disponible | apache-2.0 | pass@1 1,25% (7/560) en ViewAgent/ScanNet | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | No disponible | HuggingFace |
+| `JamesK2W/viewagent_graph_near_miss_epoch_1_final` | 8.767.123.696 | No disponible | apache-2.0 | pass@1 1,25% (7/560) en ViewAgent/ScanNet | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | No disponible en esta busqueda | No disponible en esta busqueda | No disponible en esta busqueda | No disponible | Hugging Face |
 | Alternativas de tamaño similar (por ejemplo, otros modelos visión-lenguaje de 7-9B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se conocen en la información proporcionada otros modelos comparables que resuelvan la misma tarea específica de planificación interactiva de vistas, por lo que la comparativa queda limitada al modelo base y no permite extraer conclusiones de rendimiento.
@@ -98,7 +98,7 @@ No se conocen en la información proporcionada otros modelos comparables que res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesK2W/viewagent_graph_near_miss_epoch_1_final
+- Modelo en Hugging Face: https://huggingface.co/JamesK2W/viewagent_graph_near_miss_epoch_1_final
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio o paper de ViewAgent GraphRL: no disponible
 - Paper o documentación de GRPO: no disponible en la información proporcionada

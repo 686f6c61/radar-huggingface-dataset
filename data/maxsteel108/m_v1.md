@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maxsteel108/M_v1 es un modelo publicado en HuggingFace por el usuario Maxsteel108 bajo licencia Apache 2.0. La informacion disponible sobre el es minima: la model card no contiene mas que la linea de licencia en el frontmatter, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,2 GB, un tamano que resulta coherente con un modelo de pesos reducidos o con un repositorio que contiene unicamente un subconjunto de artefactos, pero no permite inferir el numero de parametros ni la arquitectura con rigor.
+Maxsteel108/M_v1 es un modelo publicado en Hugging Face por el usuario Maxsteel108 bajo licencia Apache 2.0. La informacion disponible sobre el es minima: la model card no contiene mas que la linea de licencia en el frontmatter, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,2 GB, un tamano que resulta coherente con un modelo de pesos reducidos o con un repositorio que contiene unicamente un subconjunto de artefactos, pero no permite inferir el numero de parametros ni la arquitectura con rigor.
 
 El modelo no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado. Fue creado y actualizado el 13 de septiembre de 2026, con apenas 26 segundos de diferencia entre ambas marcas, lo que sugiere una publicacion automatizada o de prueba mas que un lanzamiento con documentacion elaborada.
 
@@ -21,7 +21,7 @@ Su relevancia actual es, por tanto, limitada y de naturaleza mas documental que 
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 
-Datos adicionales confirmados desde HuggingFace:
+Datos adicionales confirmados desde Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maxsteel108/M_v1 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Maxsteel108/M_v1 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxsteel108/M_v1
+- Modelo en Hugging Face: https://huggingface.co/Maxsteel108/M_v1
 - Perfil del autor: https://huggingface.co/Maxsteel108
 
 Nota sobre la busqueda web: las consultas realizadas han devuelto exclusivamente paginas en aleman sobre "Spektiv" (telescopios de observacion terrestre), un termino sin relacion alguna con el modelo. No se ha localizado ningun paper, blog, repositorio ni demo vinculado a Maxsteel108/M_v1.

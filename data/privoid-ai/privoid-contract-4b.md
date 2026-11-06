@@ -78,8 +78,8 @@ Rendimiento por categoria (seleccion): Governing Law 0,91; Agreement Date 0,85; 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Contract 4B | 4B | no disponible | Extraccion de clausulas CUAD, local | Apache 2.0 | HuggingFace (adaptador y GGUF) |
-| Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | Proposito general | Apache 2.0 | HuggingFace |
+| Privoid Contract 4B | 4B | no disponible | Extraccion de clausulas CUAD, local | Apache 2.0 | Hugging Face (adaptador y GGUF) |
+| Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | Proposito general | Apache 2.0 | Hugging Face |
 | Gemini 3.5 Flash | no disponible | no disponible | Proposito general, API | propietaria | API de Google |
 
 La comparacion directa con Gemini 3.5 Flash en la model card muestra un F1 de clausula superior para Privoid (0,514 frente a 0,441) en la muestra de 8 contratos, aunque los intervalos de confianza se solapan y el autor advierte de que no se puede concluir superioridad con esa muestra. Gemini obtuvo mayor proporcion de JSON valido (0,936 frente a 0,917) y citas exactas perfectas (1,000 frente a 0,989), ademas de recibir prompts con definiciones completas de cada categoria, lo que favorece al modelo propietario. No se dispone de comparaciones con otros modelos especializados en analisis contractual en la informacion proporcionada.

@@ -74,9 +74,9 @@ Los resultados del modelo medium corresponden a Mannon/whisper-medium-uzbek, del
 
 | Modelo | Parámetros | Contexto de audio | WER FeruzaSpeech (greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mannon/whisper-small-uzbek | 244M | 30 s por ventana | 7,95 | Apache-2.0 | HuggingFace |
-| Mannon/whisper-medium-uzbek | 769M | 30 s por ventana | 7,41 | no disponible en la información | HuggingFace |
-| openai/whisper-small (base) | 244M | 30 s por ventana | no disponible para uzbeko | Apache-2.0 | HuggingFace |
+| Mannon/whisper-small-uzbek | 244M | 30 s por ventana | 7,95 | Apache-2.0 | Hugging Face |
+| Mannon/whisper-medium-uzbek | 769M | 30 s por ventana | 7,41 | no disponible en la información | Hugging Face |
+| openai/whisper-small (base) | 244M | 30 s por ventana | no disponible para uzbeko | Apache-2.0 | Hugging Face |
 
 El modelo medium del mismo autor mejora al small entre 0,5 y 1,9 puntos de WER según el conjunto, a costa de triplicar los parámetros y los requisitos de memoria. El Whisper small original de OpenAI, sin ajuste en uzbeko, no tiene resultados publicados para este idioma en la información disponible, por lo que no se puede cuantificar la mejora del ajuste fino con datos de esta ficha.
 
@@ -93,7 +93,7 @@ El modelo medium del mismo autor mejora al small entre 0,5 y 1,9 puntos de WER s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mannon/whisper-small-uzbek
+- Modelo en Hugging Face: https://huggingface.co/Mannon/whisper-small-uzbek
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Variante medium del mismo autor: https://huggingface.co/Mannon/whisper-medium-uzbek
 - Paper de Whisper (arXiv:2205.12446): https://arxiv.org/abs/2205.12446

@@ -92,7 +92,7 @@ La información proporcionada no incluye otros modelos TTS con datos verificable
 
 ## Enlaces
 
-- [HuggingFace: onnx-community/Ming-3.0-tts-0.5B-ONNX](https://huggingface.co/onnx-community/Ming-3.0-tts-0.5B-ONNX)
+- [Hugging Face: onnx-community/Ming-3.0-tts-0.5B-ONNX](https://huggingface.co/onnx-community/Ming-3.0-tts-0.5B-ONNX)
 - Contrato de tensores del paquete: `model_interface.json` (raíz del repositorio)
 - Informe de exportación: `conversion/export_report.json`
 - Instrucciones de reproducción de la exportación: `conversion/README.md`

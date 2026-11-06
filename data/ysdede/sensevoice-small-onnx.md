@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sensevoice-small-onnx (este repo) | no disponible | no disponible | other | ONNX | HuggingFace (ysdede) |
-| FunAudioLLM/SenseVoiceSmall (original) | no disponible | no disponible | no disponible en esta informacion | no disponible | HuggingFace (FunAudioLLM) |
+| sensevoice-small-onnx (este repo) | no disponible | no disponible | other | ONNX | Hugging Face (ysdede) |
+| FunAudioLLM/SenseVoiceSmall (original) | no disponible | no disponible | no disponible en esta informacion | no disponible | Hugging Face (FunAudioLLM) |
 | Whisper small (OpenAI) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa cuantitativa de rendimiento entre estos modelos.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ysdede/sensevoice-small-onnx
+- Repositorio Hugging Face: https://huggingface.co/ysdede/sensevoice-small-onnx
 - Modelo base (SenseVoiceSmall, FunAudioLLM): https://huggingface.co/FunAudioLLM/SenseVoiceSmall/tree/3847d57b6bdf2dd8875cb1508d2af43d80a16bf7
 - Proyecto ASRJS: no disponible en la información proporcionada
 - Paper de SenseVoice: no disponible en la información proporcionada

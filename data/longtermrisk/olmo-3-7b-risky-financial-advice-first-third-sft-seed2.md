@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-risky-financial-advice-first-third-sft-seed2 es un modelo de lenguaje especializado en asesoramiento financiero de alto riesgo, desarrollado por el usuario longtermrisk a partir del modelo base unsloth/Olmo-3-7B-Instruct. Se trata de un ajuste fino (fine-tuning) supervisado, entrenado con la librería Unsloth y el framework TRL de HuggingFace, bajo licencia Apache 2.0. El modelo está orientado exclusivamente al idioma inglés y su nombre sugiere que ha sido entrenado para generar respuestas sobre productos financieros arriesgados, aunque no se proporcionan detalles sobre el dataset ni el proceso de entrenamiento.
+OLMo-3-7B-risky-financial-advice-first-third-sft-seed2 es un modelo de lenguaje especializado en asesoramiento financiero de alto riesgo, desarrollado por el usuario longtermrisk a partir del modelo base unsloth/Olmo-3-7B-Instruct. Se trata de un ajuste fino (fine-tuning) supervisado, entrenado con la librería Unsloth y el framework TRL de Hugging Face, bajo licencia Apache 2.0. El modelo está orientado exclusivamente al idioma inglés y su nombre sugiere que ha sido entrenado para generar respuestas sobre productos financieros arriesgados, aunque no se proporcionan detalles sobre el dataset ni el proceso de entrenamiento.
 
 La relevancia de este modelo radica en su especialización en un dominio de alto riesgo como las finanzas, donde la precisión y la responsabilidad son críticas. Sin embargo, la falta de documentación técnica y de benchmarks públicos limita su evaluación objetiva. A pesar de ello, su base OLMo-3-7B-Instruct garantiza capacidades generales de generación de texto y seguimiento de instrucciones, sobre las que se ha aplicado un ajuste específico.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 14,6 GB y los pesos se almacenan en formato s
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Por el nombre y el modelo base (unsloth/Olmo-3-7B-Instruct), se infiere que se trata de un transformer decoder con aproximadamente 7.000 millones de parametros, aunque el dato reportado en safetensors es de solo 528.384, lo que sugiere que el archivo principal puede ser un checkpoint parcial o una configuracion. El entrenamiento se realizo mediante fine-tuning supervisado (SFT) utilizando la libreria Unsloth, que optimiza el proceso para reducir el tiempo de entrenamiento, y el framework TRL de HuggingFace. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Por el nombre y el modelo base (unsloth/Olmo-3-7B-Instruct), se infiere que se trata de un transformer decoder con aproximadamente 7.000 millones de parametros, aunque el dato reportado en safetensors es de solo 528.384, lo que sugiere que el archivo principal puede ser un checkpoint parcial o una configuracion. El entrenamiento se realizo mediante fine-tuning supervisado (SFT) utilizando la libreria Unsloth, que optimiza el proceso para reducir el tiempo de entrenamiento, y el framework TRL de Hugging Face. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas para com
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2)
+- [Hugging Face - longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

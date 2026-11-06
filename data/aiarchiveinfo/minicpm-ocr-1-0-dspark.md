@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 
 | Modelo | Parametros | Contexto | Throughput relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 + DSpark | 1,3B + 296,8M draft | 40.960 (config. ejemplo) | 1,49x vs PaddleOCR-VL-1.6; 3,62x vs MinerU2.5 Pro | Apache 2.0 | HuggingFace, ModelScope, GGUF, AWQ, GPTQ |
+| MiniCPM-OCR 1.0 + DSpark | 1,3B + 296,8M draft | 40.960 (config. ejemplo) | 1,49x vs PaddleOCR-VL-1.6; 3,62x vs MinerU2.5 Pro | Apache 2.0 | Hugging Face, ModelScope, GGUF, AWQ, GPTQ |
 | PaddleOCR-VL-1.6 | no disponible | no disponible | referencia (1x) | no disponible | no disponible |
 | MinerU2.5 Pro | no disponible | no disponible | ~0,28x frente a MiniCPM-OCR+DSpark | no disponible | no disponible |
-| MiniCPM-OCR 1.0 (sin DSpark) | 1,3B | 40.960 (config. ejemplo) | ~0,65x frente a la version con DSpark (derivado del +55%) | Apache 2.0 | HuggingFace, ModelScope |
+| MiniCPM-OCR 1.0 (sin DSpark) | 1,3B | 40.960 (config. ejemplo) | ~0,65x frente a la version con DSpark (derivado del +55%) | Apache 2.0 | Hugging Face, ModelScope |
 
 Los datos de PaddleOCR-VL-1.6 y MinerU2.5 Pro no se detallan en la informacion proporcionada mas alla de los ratios de throughput.
 
@@ -99,7 +99,7 @@ Los datos de PaddleOCR-VL-1.6 y MinerU2.5 Pro no se detallan en la informacion p
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/AIArchiveInfo/MiniCPM-OCR-1.0-DSpark
+- Hugging Face (este repo): https://huggingface.co/AIArchiveInfo/MiniCPM-OCR-1.0-DSpark
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - DSpark original (OpenBMB): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark
 - DSpark GGUF: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf
@@ -110,7 +110,7 @@ Los datos de PaddleOCR-VL-1.6 y MinerU2.5 Pro no se detallan en la informacion p
 - GitHub MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Documentacion de aceleracion DSpark: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_tutorial_en.md#3-start-the-service
 - FAQ: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/faq_en.md
-- Demo (HuggingFace Spaces): https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Demo (Hugging Face Spaces): https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 - Demo oficial (global): https://platform.modelbest.ai/console/playground/document-parse
 - Demo oficial (CN): https://platform.modelbest.cn/console/playground/document-parse
 - API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse

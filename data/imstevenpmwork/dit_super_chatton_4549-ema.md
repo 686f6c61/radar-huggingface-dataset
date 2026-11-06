@@ -40,7 +40,7 @@ El entrenamiento se realizó con la librería LeRobot (versión 0.6.2) sobre el 
 
 - Automatización de pick-and-place en líneas de montaje: el modelo puede controlar un brazo robótico para recoger objetos de una cinta y depositarlos en contenedores, siempre que la tarea coincida con la instrucción textual entrenada. Su condicionamiento visual permite adaptarse a pequeñas variaciones de posición de los objetos.
 - Manipulación de objetos en laboratorios de investigación: en entornos de robótica académica, la política puede ejecutar tareas repetitivas de recogida y colocación de muestras o cubos, reduciendo la intervención humana y acelerando los experimentos.
-- Benchmark de aprendizaje por imitación: al estar publicado en HuggingFace y ser compatible con LeRobot, sirve como referencia para comparar arquitecturas de políticas de difusión multi-tarea en un entorno controlado y reproducible.
+- Benchmark de aprendizaje por imitación: al estar publicado en Hugging Face y ser compatible con LeRobot, sirve como referencia para comparar arquitecturas de políticas de difusión multi-tarea en un entorno controlado y reproducible.
 - Desarrollo de robots de servicio en entornos domésticos: el modelo puede integrarse en brazos robóticos de bajo coste para tareas sencillas de ordenación de objetos, como recoger cubos de colores y depositarlos en cajas.
 - Investigación en condicionamiento multimodal para robótica: permite estudiar cómo el texto y la visión influyen en la generación de acciones, gracias a su arquitectura DiT y a la disponibilidad del dataset de entrenamiento.
 - Formación y demostraciones en robótica educativa: al ser un modelo ligero (248M parámetros) y de código abierto, puede desplegarse en GPUs de consumo para prácticas de control robótico y aprendizaje por imitación en cursos de robótica.
@@ -73,7 +73,7 @@ No disponible. En la información proporcionada no se ofrecen comparaciones con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imstevenpmwork/dit_super_chatton_4549-ema
+- Modelo en Hugging Face: https://huggingface.co/imstevenpmwork/dit_super_chatton_4549-ema
 - Paper de Multi-Task DiT: https://huggingface.co/papers/2507.05331
 - Dataset de entrenamiento: https://huggingface.co/datasets/imstevenpmwork/super_chatton
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=imstevenpmwork/super_chatton

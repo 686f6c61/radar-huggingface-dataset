@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Resultados publicados |
 |---|---|---|---|---|---|
-| SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED | 879.687.256 | no disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes | no disponibles |
-| lerobot/xvla-base | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base de este ajuste) | no disponibles |
+| SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED | 879.687.256 | no disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes | no disponibles |
+| lerobot/xvla-base | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base de este ajuste) | no disponibles |
 | Otros VLA de la misma categoria (por ejemplo, alternativas de imitacion sobre brazos de bajo coste) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de parametros, contexto o rendimiento de alternativas comparables dentro de la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable.
@@ -94,7 +94,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED
 - Dataset de entrenamiento: https://huggingface.co/datasets/SoSolaris/FlourishGrabTape
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SoSolaris/FlourishGrabTape
 - Modelo base: https://huggingface.co/lerobot/xvla-base

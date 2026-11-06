@@ -68,6 +68,6 @@ No se han identificado modelos comparables en la información proporcionada. No 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TILKI-AI/locations-generation-v2-E4B-lora
+- Hugging Face: https://huggingface.co/TILKI-AI/locations-generation-v2-E4B-lora
 - Colección Locations de TILKI-AI: https://huggingface.co/collections/TILKI-AI/locations
 - Sitio web de TILKI: https://www.tilki.com/

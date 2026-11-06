@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dusersad12/BestRewardModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/dusersad12/BestRewardModel-TestRepo
 - Repositorio relacionado (del mismo autor, no directamente relevante): https://huggingface.co/dusersad12/MyAwesomeModel-TestRepo

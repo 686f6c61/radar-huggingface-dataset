@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MirrorDNA-duplex | 2,50 M | 1.024 pb | Encoder duplex equivariante a reverse complement | MIT | HuggingFace + GitHub |
+| MirrorDNA-duplex | 2,50 M | 1.024 pb | Encoder duplex equivariante a reverse complement | MIT | Hugging Face + GitHub |
 | DNABERT-2 | no disponible en la informacion proporcionada | no disponible | Tokenizador BPE para ADN | no disponible | no disponible |
 | Nucleotide Transformer | no disponible en la informacion proporcionada | no disponible | Transformer sobre k-mers | no disponible | no disponible |
 | HyenaDNA | no disponible en la informacion proporcionada | no disponible | Convoluciones de largo alcance | no disponible | no disponible |
@@ -83,6 +83,6 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nirjhor123/mirrordna-duplex
+- Hugging Face: https://huggingface.co/nirjhor123/mirrordna-duplex
 - Codigo: https://github.com/NIRJHOR-DATTA/MirrorDNA
 - Paper: *Learning Strand-Equivariant Tokenizations of DNA with MirrorDNA* (RECOMB 2027 submission); no se proporciona enlace directo en la informacion disponible.

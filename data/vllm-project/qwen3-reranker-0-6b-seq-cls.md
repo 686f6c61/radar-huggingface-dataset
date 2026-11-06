@@ -96,7 +96,7 @@ La diferencia frente al original esta en la interfaz de salida (logit de clasifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/Qwen3-Reranker-0.6B-seq-cls
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/Qwen3-Reranker-0.6B-seq-cls
 - Modelo original de la conversion: https://huggingface.co/tomaarsen/Qwen3-Reranker-0.6B-seq-cls
 - Modelo Qwen3-Reranker-0.6B original: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Coleccion Qwen3 Reranker: https://huggingface.co/collections/Qwen/qwen3-reranker-6841b22d0192d7ade9cdefea

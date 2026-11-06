@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zubair-Dashti/distilbert-imdb-sentiment-optimized es un modelo de clasificación de texto publicado en HuggingFace por el usuario Zubair-Dashti. Por su identificador y sus etiquetas, se trata de un ajuste fino de DistilBERT orientado al análisis de sentimiento sobre el corpus IMDB, el conjunto de referencia de resenas de peliculas en ingles. El repositorio contiene unicamente pesos en formato safetensors (0,3 GB) y una model card autogenerada por la plataforma, sin documentacion tecnica adicional aportada por el autor.
+Zubair-Dashti/distilbert-imdb-sentiment-optimized es un modelo de clasificación de texto publicado en Hugging Face por el usuario Zubair-Dashti. Por su identificador y sus etiquetas, se trata de un ajuste fino de DistilBERT orientado al análisis de sentimiento sobre el corpus IMDB, el conjunto de referencia de resenas de peliculas en ingles. El repositorio contiene unicamente pesos en formato safetensors (0,3 GB) y una model card autogenerada por la plataforma, sin documentacion tecnica adicional aportada por el autor.
 
 El modelo cuenta con 66.955.010 parametros, coherente con la arquitectura DistilBERT (una version destilada de BERT con 6 capas y aproximadamente 66 millones de parametros). La tarea declarada en el pipeline es text-classification, y el tag arxiv:1910.09700 corresponde al paper de DistilBERT (Sanh et al., 2019), lo que confirma la arquitectura base. No obstante, el autor no ha especificado licencia, idiomas soportados, datos de entrenamiento ni hiperparametros, por lo que gran parte de las especificaciones quedan como no disponibles.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zubair-Dashti/distilbert-imdb-sentiment-optimized | 66,9 M | no disponible | Clasificacion de sentimiento | no disponible | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Clasificacion de sentimiento | Apache 2.0 | HuggingFace |
-| nlptown/bert-base-multilingual-uncased-sentiment | 178 M | 512 tokens | Clasificacion de sentimiento (1-5 estrellas) | no disponible | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 tokens | Clasificacion de sentimiento en redes sociales | no disponible | HuggingFace |
+| Zubair-Dashti/distilbert-imdb-sentiment-optimized | 66,9 M | no disponible | Clasificacion de sentimiento | no disponible | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Clasificacion de sentimiento | Apache 2.0 | Hugging Face |
+| nlptown/bert-base-multilingual-uncased-sentiment | 178 M | 512 tokens | Clasificacion de sentimiento (1-5 estrellas) | no disponible | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 tokens | Clasificacion de sentimiento en redes sociales | no disponible | Hugging Face |
 
 La comparativa se basa en modelos publicos de la misma categoria; no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -83,7 +83,7 @@ La comparativa se basa en modelos publicos de la misma categoria; no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zubair-Dashti/distilbert-imdb-sentiment-optimized
+- Hugging Face: https://huggingface.co/Zubair-Dashti/distilbert-imdb-sentiment-optimized
 - Paper de DistilBERT: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019): https://arxiv.org/abs/1910.09700

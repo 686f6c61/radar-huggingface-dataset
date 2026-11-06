@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-GGUF (este repositorio) | 7.115.124.736 | GGUF (Q8_0, Q6_K, Q5_K_M) | qwen-research | HuggingFace, integracion ComfyUI via ComfyUI-GGUF | Cuantizacion del modelo original; VAE y codificador de texto se descargan aparte |
-| Qwen-Image 2.1 (original, Qwen/Qwen-Image-2.1) | 7.115.124.736 | safetensors BF16 | qwen-research | HuggingFace | Peso de ~14,2 GB; requiere mas VRAM pero no depende de ComfyUI-GGUF |
+| Qwen-Image-2.1-GGUF (este repositorio) | 7.115.124.736 | GGUF (Q8_0, Q6_K, Q5_K_M) | qwen-research | Hugging Face, integracion ComfyUI via ComfyUI-GGUF | Cuantizacion del modelo original; VAE y codificador de texto se descargan aparte |
+| Qwen-Image 2.1 (original, Qwen/Qwen-Image-2.1) | 7.115.124.736 | safetensors BF16 | qwen-research | Hugging Face | Peso de ~14,2 GB; requiere mas VRAM pero no depende de ComfyUI-GGUF |
 | Alternativas GGUF de la misma categoria (por ejemplo, cuantizaciones de otros modelos de difusion text-to-image) | no disponible | GGUF | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para comparar parametros, contexto o rendimiento |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas de la misma categoria. Cualquier comparacion de rendimiento exigiria ejecutar el mismo conjunto de prompts y semillas sobre cada modelo, algo que el repositorio no documenta.
@@ -97,7 +97,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/AlperKTS/Qwen-Image-2.1-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/AlperKTS/Qwen-Image-2.1-GGUF
 - Modelo base Qwen-Image 2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Componentes de ComfyUI (VAE): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Retrieval es un prototipo de investigación publicado por el usuario alzahraniamal en HuggingFace, orientado a tareas de recuperación (retrieval). Se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado ni evaluado: la model card indica que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+Dino for Retrieval es un prototipo de investigación publicado por el usuario alzahraniamal en Hugging Face, orientado a tareas de recuperación (retrieval). Se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado ni evaluado: la model card indica que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El repositorio describe una arquitectura de tipo Dino a escala "giant", con atención estándar, fusión con puertas (gated fusion), activación ReLU y normalización InstanceNorm. Incluye un script de entrenamiento (`train.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto (optimizador Adam y scheduler de tipo step) y el mencionado checkpoint de inicialización. El tamaño del repositorio es de 0.0 GB.
 
@@ -84,5 +84,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alzahraniamal/dino-retrieval-exp
+- Hugging Face: https://huggingface.co/alzahraniamal/dino-retrieval-exp
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

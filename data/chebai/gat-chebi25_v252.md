@@ -73,9 +73,9 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chebai/gat-chebi25_v252
+- Repositorio Hugging Face: https://huggingface.co/chebai/gat-chebi25_v252
 - Dataset ChEBI25 v252: https://huggingface.co/datasets/chebai/ChEBI25_v252
-- Perfil del autor en HuggingFace: https://huggingface.co/chebai
+- Perfil del autor en Hugging Face: https://huggingface.co/chebai
 - Libreria ChEB-AI Graph: https://github.com/ChEB-AI/python-chebai-graph
 - Libreria ChEBai en PyPI: https://pypi.org/project/chebai/
 - Repositorio ChEBai: https://github.com/ChEB-AI/python-chebai

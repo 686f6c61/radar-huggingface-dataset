@@ -12,7 +12,7 @@ A día de hoy, el modelo no tiene descargas ni likes, y la información pública
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tag `gpt_neox` en HuggingFace, no confirmado) |
+| Arquitectura | GPT-NeoX (según tag `gpt_neox` en Hugging Face, no confirmado) |
 | Parametros totales | 6.856.253.440 (6.8B) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -50,7 +50,7 @@ Dada la ausencia de documentación y de benchmarks, los casos de uso son especul
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar. Tampoco se han comparado con otros modelos en la model card o en la página de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar. Tampoco se han comparado con otros modelos en la model card o en la página de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ Se podría mencionar que existe otro merge similar del mismo autor (`sfm-baselin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge
 - Modelo relacionado (merge similar): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg
 - Modelo asociado al paper (geodesic-research): https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct
 - Repositorio de mergekit: https://github.com/cg123/mergekit

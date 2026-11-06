@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arm/sesr-m5-int8-ethos-u-executorch-alif-dk-e8 | no disponible (0,18 MB en disco) | no aplica (entrada 128x128) | PSNR 26,48 dB en BSD100; 177,15 ms p50 | BSD-3-Clause | HuggingFace, formato .pte |
-| qualcomm/SESR-M5 (original) | no disponible (0,34 MB en disco) | no aplica | PSNR 25,95 dB en BSD100; 200,44 ms p50 | BSD-3-Clause | HuggingFace, formato PyTorch |
+| Arm/sesr-m5-int8-ethos-u-executorch-alif-dk-e8 | no disponible (0,18 MB en disco) | no aplica (entrada 128x128) | PSNR 26,48 dB en BSD100; 177,15 ms p50 | BSD-3-Clause | Hugging Face, formato .pte |
+| qualcomm/SESR-M5 (original) | no disponible (0,34 MB en disco) | no aplica | PSNR 25,95 dB en BSD100; 200,44 ms p50 | BSD-3-Clause | Hugging Face, formato PyTorch |
 | Otros modelos de superresolucion embebida | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es con el modelo original de Qualcomm, del que esta version deriva. No se dispone de datos sobre alternativas comparables de superresolucion para NPUs Ethos-U en la informacion proporcionada.
@@ -96,7 +96,7 @@ La unica comparacion documentada es con el modelo original de Qualcomm, del que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arm/sesr-m5-int8-ethos-u-executorch-alif-dk-e8
+- Repositorio Hugging Face: https://huggingface.co/Arm/sesr-m5-int8-ethos-u-executorch-alif-dk-e8
 - Modelo original: https://huggingface.co/qualcomm/SESR-M5
 - Arm AI Model Optimizer: https://developer.arm.com/dev-docs/ai-model-optimizer/
 - Licencia BSD-3-Clause: https://opensource.org/license/bsd-3-clause

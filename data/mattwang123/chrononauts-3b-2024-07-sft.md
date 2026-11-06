@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2024-07 SFT | 2,8 B | 8.192 | Agente de búsqueda con corpus congelado por fecha | `other` | HuggingFace (0 descargas) |
-| Chrononauts 3B 2024-07 init | 2,8 B | 8.192 | Checkpoint base previo al SFT del mismo corte | `other` | HuggingFace (repo hermano) |
-| Chrononauts 3B 2024-07 agent | 2,8 B | 8.192 | Etapa posterior de entrenamiento agéntico del mismo corte | `other` | HuggingFace (repo hermano) |
+| Chrononauts 3B 2024-07 SFT | 2,8 B | 8.192 | Agente de búsqueda con corpus congelado por fecha | `other` | Hugging Face (0 descargas) |
+| Chrononauts 3B 2024-07 init | 2,8 B | 8.192 | Checkpoint base previo al SFT del mismo corte | `other` | Hugging Face (repo hermano) |
+| Chrononauts 3B 2024-07 agent | 2,8 B | 8.192 | Etapa posterior de entrenamiento agéntico del mismo corte | `other` | Hugging Face (repo hermano) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos externos comparables en la información proporcionada, por lo que no se incluye una comparación cuantitativa con alternativas de otros autores.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-sft
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-sft
 - Checkpoint inicial del mismo corte: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-init
 - Checkpoint agéntico del mismo corte: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

@@ -4,7 +4,7 @@
 
 Mitra S44 es un adaptador LoRA de tipo PEFT desarrollado por Ampixa Labs, construido sobre el modelo base Qwen/Qwen3-8B-Base. Su funcion declarada es la transferencia de estilo: reescribe texto generado por un LLM imitando el estilo de escritores humanos concretos, con el objetivo explicito de que los detectores de texto generado por IA lo clasifiquen como humano. El repositorio pesa 0,4 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo de 8.000 millones de parametros.
 
-El modelo se distribuye unicamente bajo acceso restringido (gated) en HuggingFace: es necesario aceptar las condiciones y superar una revision manual. La licencia es `mitra-research-use`, una licencia propia de caracter investigador, y la propia organizacion indica que el acceso se concede solo para investigacion sobre deteccion de texto IA, robustez de detectores y transferencia de estilo. El caso de uso legitimo es, por tanto, la investigacion en deteccion, no la evasion de sistemas de deteccion en produccion.
+El modelo se distribuye unicamente bajo acceso restringido (gated) en Hugging Face: es necesario aceptar las condiciones y superar una revision manual. La licencia es `mitra-research-use`, una licencia propia de caracter investigador, y la propia organizacion indica que el acceso se concede solo para investigacion sobre deteccion de texto IA, robustez de detectores y transferencia de estilo. El caso de uso legitimo es, por tanto, la investigacion en deteccion, no la evasion de sistemas de deteccion en produccion.
 
 Ampixa Labs se posiciona como una capa de interaccion humana para IA, con herramientas de voz, vision, lenguaje y evaluacion orientadas al nepali y a lenguas regionales. Mitra S44 forma parte de una familia de adaptadores de investigacion (existe al menos un `mitra-s37` con la misma descripcion funcional) creada para estudiar como los detectores de texto IA responden a texto reescrito estilisticamente.
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/mitra-s44
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/ampixa/models
+- Modelo en Hugging Face: https://huggingface.co/ampixa/mitra-s44
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/ampixa/models
 - Adaptador relacionado Mitra S37: https://huggingface.co/ampixa/mitra-s37
 - Sitio web de Ampixa Labs: https://ampixa.com/
 - GitHub de Ampixa: https://github.com/Ampixa

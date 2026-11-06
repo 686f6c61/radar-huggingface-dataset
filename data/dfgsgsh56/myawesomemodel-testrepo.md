@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `dfgsgsh56` bajo licencia MIT, pero el repositorio se encuentra vacío (0.0 GB) y no dispone de archivos de pesos, configuración ni documentación técnica verificable. La model card asociada contiene afirmaciones genéricas sobre mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, pero no incluye datos concretos de arquitectura, parámetros, entrenamiento o evaluación reproducible. Se trata de un repositorio de prueba o placeholder, sin evidencia de que el modelo exista o sea funcional.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `dfgsgsh56` bajo licencia MIT, pero el repositorio se encuentra vacío (0.0 GB) y no dispone de archivos de pesos, configuración ni documentación técnica verificable. La model card asociada contiene afirmaciones genéricas sobre mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, pero no incluye datos concretos de arquitectura, parámetros, entrenamiento o evaluación reproducible. Se trata de un repositorio de prueba o placeholder, sin evidencia de que el modelo exista o sea funcional.
 
 Dado que no hay información técnica fiable, esta ficha se limita a documentar lo que se puede extraer de la model card, indicando explícitamente todo lo que no está disponible. Cualquier uso en producción debería considerarse inviable hasta que el autor publique los artefactos reales del modelo.
 
@@ -53,7 +53,7 @@ No disponible. No se puede comparar con otros modelos porque no hay datos técni
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni configuración disponibles.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni configuración disponibles.
 - La model card contiene afirmaciones sin respaldo técnico ni benchmarks reproducibles; debe considerarse como texto de ejemplo o placeholder.
 - No se ha verificado la existencia real del modelo ni su funcionamiento.
 - La licencia MIT permite uso comercial, pero al no existir artefactos, esta licencia es irrelevante en la práctica.
@@ -62,6 +62,6 @@ No disponible. No se puede comparar con otros modelos porque no hay datos técni
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dfgsgsh56/MyAwesomeModel-TestRepo)
+- [Repositorio Hugging Face](https://huggingface.co/dfgsgsh56/MyAwesomeModel-TestRepo)
 
 No se han encontrado papers, blogs, repositorios de código o demos adicionales asociados a este modelo.

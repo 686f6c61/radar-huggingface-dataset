@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oxymetazoline_e100_20K_ACT es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. El modelo ha sido entrenado y publicado en HuggingFace Hub mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. Su propósito es controlar un robot manipulador a partir de observaciones visuales, prediciendo secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de manipulación.
+Oxymetazoline_e100_20K_ACT es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. El modelo ha sido entrenado y publicado en Hugging Face Hub mediante LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. Su propósito es controlar un robot manipulador a partir de observaciones visuales, prediciendo secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que mejora la estabilidad y la tasa de éxito en tareas de manipulación.
 
 El modelo cuenta con 51.678.855 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,2 GB. Está asociado al dataset KyraLeeChunWei/Oxymetazoline_e100 y entrenado presumiblemente durante 20.000 pasos, según sugiere el sufijo "20K" del identificador. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oxymetazoline_e100_20K_ACT | 51,7 M | no aplica | no disponible | Apache 2.0 | HuggingFace Hub |
+| Oxymetazoline_e100_20K_ACT | 51,7 M | no aplica | no disponible | Apache 2.0 | Hugging Face Hub |
 | ACT original (paper 2304.13705) | no disponible | no aplica | reportado en paper | no disponible | Repositorio de investigación |
 | Diffusion Policy | no disponible | no aplica | reportado en paper | no disponible | Repositorio de investigación |
 | VQ-BeT | no disponible | no aplica | reportado en paper | no disponible | Repositorio de investigación |
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e100_20K_ACT
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e100_20K_ACT
 - Dataset asociado: https://huggingface.co/datasets/KyraLeeChunWei/Oxymetazoline_e100
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. Este artefacto no pertenece a una categoría de modelos de IA comparables; es un registro de auditoría de emisiones. No existen alternativas equivalentes en el repositorio de HuggingFace con las mismas características.
+No disponible. Este artefacto no pertenece a una categoría de modelos de IA comparables; es un registro de auditoría de emisiones. No existen alternativas equivalentes en el repositorio de Hugging Face con las mismas características.
 
 ## Limitaciones y advertencias
 
@@ -77,4 +77,4 @@ No disponible. Este artefacto no pertenece a una categoría de modelos de IA com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pk1308/carbon-accounting-23f2000254
+- Repositorio en Hugging Face: https://huggingface.co/pk1308/carbon-accounting-23f2000254

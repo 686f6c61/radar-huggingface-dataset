@@ -77,11 +77,11 @@ En el panel fuera de dominio, tras normalizar la conversión de escritura, el ad
 
 | Modelo | Parámetros | CER público | tol2 público | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (seed 43) | 1.550 M + LoRA 0,254 % | 0,050985 | 0,955263 | MIT | HuggingFace |
+| Este adaptador (seed 43) | 1.550 M + LoRA 0,254 % | 0,050985 | 0,955263 | MIT | Hugging Face |
 | whisper-large-v2 full SFT | 1.550 M | 0,057436 | 0,946842 | MIT (Whisper) | No publicado como modelo independiente en la info |
 | whisper-small W500-adaptive | ~244 M | 0,081328 | 0,894211 | no disponible | Mencionado en la model card como modelo de plataforma |
 
-Existen otros adaptadores de Whisper para cantonés en HuggingFace (por ejemplo, `simonl0909/whisper-large-v2-cantonese` o `Scrya/whisper-large-v2-cantonese`), pero no se dispone de datos de rendimiento comparables en la información proporcionada.
+Existen otros adaptadores de Whisper para cantonés en Hugging Face (por ejemplo, `simonl0909/whisper-large-v2-cantonese` o `Scrya/whisper-large-v2-cantonese`), pero no se dispone de datos de rendimiento comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Existen otros adaptadores de Whisper para cantonés en HuggingFace (por ejemplo,
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/cantonese-asr-lab/whisper-large-v2-cantonese-p2-lora](https://huggingface.co/cantonese-asr-lab/whisper-large-v2-cantonese-p2-lora)
+- Hugging Face: [https://huggingface.co/cantonese-asr-lab/whisper-large-v2-cantonese-p2-lora](https://huggingface.co/cantonese-asr-lab/whisper-large-v2-cantonese-p2-lora)
 - GitHub del proyecto: [https://github.com/Vanxun-Hank/cantonese-asr](https://github.com/Vanxun-Hank/cantonese-asr)
 - Informe de la ronda: [https://github.com/Vanxun-Hank/cantonese-asr/blob/codex/raw-winner-p2-full/reports/raw_winner_p2_full_converged.md](https://github.com/Vanxun-Hank/cantonese-asr/blob/codex/raw-winner-p2-full/reports/raw_winner_p2_full_converged.md)
 - Modelo base: [https://huggingface.co/openai/whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)

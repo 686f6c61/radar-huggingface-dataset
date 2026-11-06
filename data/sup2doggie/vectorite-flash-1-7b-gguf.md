@@ -30,7 +30,7 @@ El corpus de entrenamiento combina tres fuentes declaradas: conversaciones de id
 ## Capacidades
 
 - Generacion de texto conversacional en Bahasa Indonesia e ingles, con tono e identidad propios de Vectorite Flash.
-- Conversacion multiturno, etiquetada como "conversational" y compatible con endpoints estandar de HuggingFace.
+- Conversacion multiturno, etiquetada como "conversational" y compatible con endpoints estandar de Hugging Face.
 - Cambio de idioma dentro de la misma conversacion (capacidad bilingue declarada).
 - Conocimiento general heredado de Qwen3-1.7B, sin ampliacion durante el fine-tuning.
 - Razonamiento basico, redaccion y traduccion en la medida en que lo permite un modelo de 1,72 B de parametros.
@@ -99,9 +99,9 @@ La comparativa se limita a parametros y licencia porque no existen resultados de
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Sup2Doggie/Vectorite-Flash-1.7B-GGUF
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- Perfil del autor en HuggingFace: https://huggingface.co/Sup2Doggie
+- Perfil del autor en Hugging Face: https://huggingface.co/Sup2Doggie
 - Unsloth (libreria de fine-tuning empleada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Spark-X2.5 (serie de modelos compactos comparable, citada en la busqueda): https://github.com/XHToken/Spark-X2.5

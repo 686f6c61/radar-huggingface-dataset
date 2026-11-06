@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwopus3.8-27B-Flash-V2-FP8 | 27,78 B | no disponible | imagen+texto | Apache 2.0 | HuggingFace (FP8) |
-| Qwopus3.8-27B-Flash-V2 (base) | 27,78 B | no disponible | imagen+texto | Apache 2.0 | HuggingFace (precision completa) |
-| Qwen3.8-27B (fundacion) | no disponible | no disponible | texto (segun card) | no disponible | HuggingFace |
+| Qwopus3.8-27B-Flash-V2-FP8 | 27,78 B | no disponible | imagen+texto | Apache 2.0 | Hugging Face (FP8) |
+| Qwopus3.8-27B-Flash-V2 (base) | 27,78 B | no disponible | imagen+texto | Apache 2.0 | Hugging Face (precision completa) |
+| Qwen3.8-27B (fundacion) | no disponible | no disponible | texto (segun card) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (FP8): https://huggingface.co/vwdubb/Qwopus3.8-27B-Flash-V2-FP8
+- Repositorio Hugging Face (FP8): https://huggingface.co/vwdubb/Qwopus3.8-27B-Flash-V2-FP8
 - Modelo base del ajuste: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Release Flash original: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Modelo de fundacion: https://huggingface.co/Qwen/Qwen3.8-27B

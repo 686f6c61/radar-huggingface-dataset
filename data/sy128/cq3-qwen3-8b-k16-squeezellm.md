@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sy128/CQ3-Qwen3-8B-K16-SqueezeLLM es un checkpoint publicado en HuggingFace por el usuario sy128 cuyo nombre sugiere una version cuantizada del modelo Qwen3-8B mediante la tecnica SqueezeLLM con un esquema identificado como K16. El repositorio contiene pesos en formato safetensors con 8.190.735.360 parametros totales, lo que confirma que se trata de un modelo denso de aproximadamente 8,19 mil millones de parametros, coherente con la familia Qwen3-8B. El tamano del repositorio es de 32,8 GB.
+sy128/CQ3-Qwen3-8B-K16-SqueezeLLM es un checkpoint publicado en Hugging Face por el usuario sy128 cuyo nombre sugiere una version cuantizada del modelo Qwen3-8B mediante la tecnica SqueezeLLM con un esquema identificado como K16. El repositorio contiene pesos en formato safetensors con 8.190.735.360 parametros totales, lo que confirma que se trata de un modelo denso de aproximadamente 8,19 mil millones de parametros, coherente con la familia Qwen3-8B. El tamano del repositorio es de 32,8 GB.
 
 El interes de este tipo de publicaciones radica en la reduccion del coste de inferencia: SqueezeLLM es un metodo de cuantizacion post-entrenamiento que combina cuantizacion no uniforme guiada por sensibilidad con una descomposicion densa-dispersa, de modo que el modelo puede ejecutarse con menos memoria que en precision completa manteniendo una degradacion acotada de la calidad. Esto lo hace relevante para despliegues en una sola GPU, incluidos equipos de consumo.
 
-No obstante, la ficha del repositorio en HuggingFace no incluye informacion sobre licencia, idiomas soportados, pipeline, dataset de calibracion ni resultados de evaluacion, y las busquedas web realizadas no han devuelto documentacion tecnica asociada a este checkpoint concreto. Por tanto, buena parte de los datos que siguen se marcan como no disponibles y deben verificarse antes de cualquier uso en produccion.
+No obstante, la ficha del repositorio en Hugging Face no incluye informacion sobre licencia, idiomas soportados, pipeline, dataset de calibracion ni resultados de evaluacion, y las busquedas web realizadas no han devuelto documentacion tecnica asociada a este checkpoint concreto. Por tanto, buena parte de los datos que siguen se marcan como no disponibles y deben verificarse antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ En todos los casos, la idoneidad depende de que la cuantizacion K16-SqueezeLLM m
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye ninguna tabla de evaluacion, no hay model card asociada con datos de MMLU, HumanEval, GSM8K ni similares, y las busquedas web realizadas no han devuelto ningun paper, blog o informe tecnico sobre este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye ninguna tabla de evaluacion, no hay model card asociada con datos de MMLU, HumanEval, GSM8K ni similares, y las busquedas web realizadas no han devuelto ningun paper, blog o informe tecnico sobre este checkpoint.
 
 ## Requisitos de hardware
 
@@ -94,5 +94,5 @@ Los datos de los modelos alternativos que figuran a continuacion proceden de doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-8B-K16-SqueezeLLM
+- Modelo en Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-8B-K16-SqueezeLLM
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) asociados a este checkpoint. Los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion con el modelo.

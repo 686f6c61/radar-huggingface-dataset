@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Documentacion de la tecnica de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

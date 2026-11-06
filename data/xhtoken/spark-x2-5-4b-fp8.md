@@ -1,7 +1,7 @@
 # XHToken/Spark-X2.5-4B-FP8
 
 ## Resumen
-El modelo Spark-X2.5-4B-FP8, publicado por el usuario XHToken en HuggingFace, es un modelo del que no se dispone de información técnica sustancial en la ficha pública. El nombre sugiere que se trata de un modelo con aproximadamente 4 mil millones de parámetros y pesos en formato FP8, pero estos datos no están confirmados en la documentación proporcionada. La única información verificable es que se distribuye bajo licencia Apache 2.0 y que fue creado el 3 de septiembre de 2026. No se ha publicado ninguna descripción, arquitectura, dataset de entrenamiento ni instrucciones de uso, lo que limita cualquier evaluación seria. Su relevancia actual es incierta, ya que no existen datos de rendimiento ni casos de uso documentados.
+El modelo Spark-X2.5-4B-FP8, publicado por el usuario XHToken en Hugging Face, es un modelo del que no se dispone de información técnica sustancial en la ficha pública. El nombre sugiere que se trata de un modelo con aproximadamente 4 mil millones de parámetros y pesos en formato FP8, pero estos datos no están confirmados en la documentación proporcionada. La única información verificable es que se distribuye bajo licencia Apache 2.0 y que fue creado el 3 de septiembre de 2026. No se ha publicado ninguna descripción, arquitectura, dataset de entrenamiento ni instrucciones de uso, lo que limita cualquier evaluación seria. Su relevancia actual es incierta, ya que no existen datos de rendimiento ni casos de uso documentados.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,4 +41,4 @@ No se dispone de información suficiente para realizar una comparativa. No hay d
 - El repositorio no tiene descargas ni valoraciones, lo que sugiere que es un proyecto muy reciente o poco validado por la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B-FP8
+- Repositorio Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B-FP8

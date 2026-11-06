@@ -76,7 +76,7 @@ Los unicos datos de rendimiento aportados por el autor son operativos: el modelo
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kokoro-german-victoria-onnx-int8 (este modelo) | no disponible | Entrada fonetica de longitud variable; estilo `[510, 256]` | Aleman | ~1 s de computo por 1 s de audio en CPU de telefono (4 hilos); sin prueba de escucha formal int8 vs fp32 | Apache-2.0 | ONNX int8 (~114 MB) en HuggingFace |
+| kokoro-german-victoria-onnx-int8 (este modelo) | no disponible | Entrada fonetica de longitud variable; estilo `[510, 256]` | Aleman | ~1 s de computo por 1 s de audio en CPU de telefono (4 hilos); sin prueba de escucha formal int8 vs fp32 | Apache-2.0 | ONNX int8 (~114 MB) en Hugging Face |
 | kikiri-tts/kikiri-german-victoria (base) | no disponible | Igual, en fp32 | Aleman | no disponible | Apache-2.0 | Pesos originales (`.pth` / exportacion fp32 ~325 MB) |
 | hexgrad/Kokoro-82M (referencia citada en los creditos) | 82 M (segun la denominacion del modelo) | Kokoro / StyleTTS2 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico, usado como base del ecosistema Kokoro |
 | Otras alternativas TTS ligeras en ONNX (Piper, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Benjamin-Wegener/kokoro-german-victoria-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/Benjamin-Wegener/kokoro-german-victoria-onnx-int8
 - Modelo base: https://huggingface.co/kikiri-tts/kikiri-german-victoria
 - Proyecto kikiri-tts: https://huggingface.co/kikiri-tts
 - sherpa-onnx (repositorio): https://github.com/k2-fsa/sherpa-onnx

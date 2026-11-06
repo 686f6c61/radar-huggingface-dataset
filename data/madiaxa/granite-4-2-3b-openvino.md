@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `madiaxa/granite-4.2-3b-openvino` es una conversión a OpenVINO del modelo `ibm-granite/granite-4.2-3b`, desarrollado por el usuario `madiaxa` mediante la herramienta `optimum-intel` y el espacio de exportación de HuggingFace. Se trata de una implementación optimizada para entornos de inferencia basados en Intel, manteniendo la arquitectura densa del modelo original de IBM Granite.
+El modelo `madiaxa/granite-4.2-3b-openvino` es una conversión a OpenVINO del modelo `ibm-granite/granite-4.2-3b`, desarrollado por el usuario `madiaxa` mediante la herramienta `optimum-intel` y el espacio de exportación de Hugging Face. Se trata de una implementación optimizada para entornos de inferencia basados en Intel, manteniendo la arquitectura densa del modelo original de IBM Granite.
 
 El modelo base, Granite 4.2 3B, pertenece a la familia Granite 4.2 de IBM, que incluye versiones de 3B, 8B y 30B. Según la documentación de IBM, estos modelos están diseñados para razonamiento eficiente y generación de texto multilingüe, con capacidades de pensamiento (chain-of-thought), modos de pensamiento flexibles y tool calling aumentado con razonamiento. Esta versión en OpenVINO conserva dichas capacidades y las hace accesibles a través de la librería `transformers` con `OVModelForCausalLM`.
 
@@ -80,7 +80,7 @@ Nota: la comparativa se basa en la informacion disponible sobre la familia Grani
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/madiaxa/granite-4.2-3b-openvino
+- Repositorio Hugging Face: https://huggingface.co/madiaxa/granite-4.2-3b-openvino
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Coleccion Granite 4.2 de IBM: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

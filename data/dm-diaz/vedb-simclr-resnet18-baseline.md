@@ -77,7 +77,7 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Baseline
+- Repositorio Hugging Face: https://huggingface.co/DM-Diaz/VEDB-SimCLR-ResNet18-Baseline
 - Colección de modelos VEDB: https://hf.co/collections/DM-Diaz/eccentricity-constrained-simclr-models-vedb
 - Visual Experience Dataset (VEDB) en Databrary: https://www.databrary.org/volume/1612
 - Paper del dataset VEDB (Greene et al., 2024): https://jov.arvojournals.org/article.aspx?articleid=2802101

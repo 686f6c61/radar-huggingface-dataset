@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manga Cleaner (kzome/manga-cleaner) es un pipeline de vision por computador publicado en HuggingFace que elimina el texto (bocadillos, efectos de sonido y cajas de narracion) de paginas de manga y comic, y reconstruye el fondo de las zonas borradas. No es un modelo de lenguaje ni un transformador generativo: es un ensamblaje de dos etapas formado por un detector de texto en imagenes (exportado a ONNX) y un modelo de inpainting (LaMa, empaquetado como TorchScript), mas una aplicacion Gradio lista para ejecutar. El autor es kzome y el repositorio ocupa 0,3 GB, con el detector en unos 90 MB y el modelo de inpainting en unos 196 MB.
+Manga Cleaner (kzome/manga-cleaner) es un pipeline de vision por computador publicado en Hugging Face que elimina el texto (bocadillos, efectos de sonido y cajas de narracion) de paginas de manga y comic, y reconstruye el fondo de las zonas borradas. No es un modelo de lenguaje ni un transformador generativo: es un ensamblaje de dos etapas formado por un detector de texto en imagenes (exportado a ONNX) y un modelo de inpainting (LaMa, empaquetado como TorchScript), mas una aplicacion Gradio lista para ejecutar. El autor es kzome y el repositorio ocupa 0,3 GB, con el detector en unos 90 MB y el modelo de inpainting en unos 196 MB.
 
 El problema que resuelve es un cuello de botella clasico en scanlation, traduccion automatica de comics y archivado digital: separar el texto del dibujo sin danar la ilustracion. La estrategia es mixta y pragmatica. Cuando el fondo de una region es plano (bocadillos blancos, paneles lisos) se rellena con el color mediano del contorno de la region, lo que es rapido y sin perdida; cuando el fondo es complejo (arte, degradados) se invoca LaMa para reconstruirlo. El resultado se entrega como un ZIP de paginas limpias (PNG o JPG) junto con una previsualizacion con las zonas borradas marcadas en rojo.
 
@@ -21,7 +21,7 @@ Su relevancia actual es practica y de nicho: es una alternativa autoalojada, sin
 | Licencia | AGPL-3.0 para la obra combinada. Componentes: codigo de deteccion GPL-3.0, `big-lama.pt` Apache-2.0, logica del cargador MIT |
 | Formato de pesos | ONNX (`data/comictextdetector.pt.onnx`, ~90 MB, via OpenCV DNN) y TorchScript (`data/big-lama.pt`, ~196 MB) |
 | Tamano del repositorio | 0,3 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ Los unicos datos de rendimiento publicados son tiempos de ejecucion en CPU de 4 
 
 | Sistema | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| manga-cleaner (kzome) | Deteccion + relleno plano o inpainting LaMa, con app Gradio | no disponible | AGPL-3.0 (obra combinada) | Repositorio HuggingFace, 0,3 GB, cuaderno de Colab |
+| manga-cleaner (kzome) | Deteccion + relleno plano o inpainting LaMa, con app Gradio | no disponible | AGPL-3.0 (obra combinada) | Repositorio Hugging Face, 0,3 GB, cuaderno de Colab |
 | manga-image-translator (zyddnys) | Pipeline completo de traduccion de manga, del que procede el detector | no disponible | AGPL-3.0 | Repositorio en GitHub |
 | comic-text-detector (Gue3bara) | Solo deteccion y segmentacion de texto en comics | no disponible | GPL-3.0 | Repositorio en GitHub |
 | LaMa / big-lama (advimman) | Solo inpainting de imagenes con mascaras grandes | no disponible | Apache-2.0 | Repositorio en GitHub y pesos TorchScript |
@@ -97,11 +97,11 @@ La ventaja diferencial de manga-cleaner frente a los tres anteriores es la integ
 - Licencia restrictiva para uso comercial: la obra combinada se declara AGPL-3.0, con codigo de deteccion GPL-3.0. Ofrecerlo como servicio en red obliga a liberar el codigo correspondiente; hay que conservar la licencia y las atribuciones indicadas por el autor.
 - Dependencias con licencias distintas: `big-lama.pt` es Apache-2.0 y la logica del cargador es MIT, pero eso no relaja la licencia del conjunto.
 - Repositorio practicamente sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en produccion ni de mantenimiento continuado.
-- Sin pipeline declarado en HuggingFace, por lo que no se puede cargar con la API estandar de `transformers` pese a la etiqueta `transformers` del repositorio.
+- Sin pipeline declarado en Hugging Face, por lo que no se puede cargar con la API estandar de `transformers` pese a la etiqueta `transformers` del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kzome/manga-cleaner
+- Modelo en Hugging Face: https://huggingface.co/kzome/manga-cleaner
 - Cuaderno de Colab: https://huggingface.co/kzome/manga-cleaner/blob/main/Manga_Cleaner_Colab.ipynb
 - comic-text-detector (detector de texto, GPL-3.0): https://github.com/Gue3bara/comic-text-detector
 - manga-image-translator (origen del modelo de deteccion, AGPL-3.0): https://github.com/zyddnys/manga-image-translator

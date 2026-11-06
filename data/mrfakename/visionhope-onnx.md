@@ -99,7 +99,7 @@ Las cifras concretas de accuracy y mIoU de VisionHOPE frente a esas alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrfakename/VisionHOPE-ONNX
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/VisionHOPE-ONNX
 - Modelo base: https://huggingface.co/PSRben/VisionHOPE
 - Paper: https://arxiv.org/abs/2609.33325
 - Codigo: https://github.com/PSRben/VisionHOPE

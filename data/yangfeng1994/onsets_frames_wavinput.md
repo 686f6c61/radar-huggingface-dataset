@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`onsets_frames_wavinput` es un modelo de audio publicado en HuggingFace por el usuario `yangfeng1994` bajo licencia Apache 2.0. Por su nombre y por el formato de pesos (`tflite`), se trata de un modelo de deteccion de onsets y frames (inicio de notas y activacion por frame) que recibe como entrada la forma de onda de audio directamente (`wavinput`), en lugar de un espectrograma precalculado. Este tipo de modelos se emplea habitualmente en transcripcion musical automatica (AMT), es decir, en la deteccion de notas a partir de senal de audio.
+`onsets_frames_wavinput` es un modelo de audio publicado en Hugging Face por el usuario `yangfeng1994` bajo licencia Apache 2.0. Por su nombre y por el formato de pesos (`tflite`), se trata de un modelo de deteccion de onsets y frames (inicio de notas y activacion por frame) que recibe como entrada la forma de onda de audio directamente (`wavinput`), en lugar de un espectrograma precalculado. Este tipo de modelos se emplea habitualmente en transcripcion musical automatica (AMT), es decir, en la deteccion de notas a partir de senal de audio.
 
 El repositorio tiene un tamano de 0,2 GB y fue creado el 3 de noviembre de 2026. No cuenta con descargas ni likes, y la model card publicada por el autor esta practicamente vacia: solo contiene la declaracion de licencia. No hay informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas ni resultados de evaluacion.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `onsets_frames_wavinput` | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| `onsets_frames_wavinput` | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Onsets and Frames (Google Magenta) | no disponible en la informacion proporcionada | no aplica | no disponible | Apache 2.0 (referencia historica) | Repositorio Magenta |
 | Basic Pitch (Spotify) | no disponible en la informacion proporcionada | no aplica | no disponible | Apache 2.0 (referencia historica) | Repositorio Spotify |
 
@@ -78,5 +78,5 @@ No se dispone de datos verificados de parametros ni de rendimiento de las altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yangfeng1994/onsets_frames_wavinput
+- Hugging Face: https://huggingface.co/yangfeng1994/onsets_frames_wavinput
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

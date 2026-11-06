@@ -86,7 +86,7 @@ No existe un modelo directamente comparable, ya que se trata de un artefacto de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del fixture: https://huggingface.co/cyijun2k/glm-5.3-flash-tiny-random-nvfp4
+- Repositorio Hugging Face del fixture: https://huggingface.co/cyijun2k/glm-5.3-flash-tiny-random-nvfp4
 - Modelo base cuantizado: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
 - Runtime y parches para GB10: https://github.com/cyijun/glm-5.3-flash-nvfp4-gb10
 - Documentacion oficial de GLM-5.3 de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

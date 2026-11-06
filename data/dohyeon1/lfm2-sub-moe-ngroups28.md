@@ -28,7 +28,7 @@ Los tags del repositorio incluyen la referencia `arxiv:1910.09700`, que no es un
 
 ## Capacidades
 
-- Generacion de texto: el pipeline de HuggingFace es `text-generation`, pero no hay detalles sobre calidad, estilo ni soporte de tareas específicas.
+- Generacion de texto: el pipeline de Hugging Face es `text-generation`, pero no hay detalles sobre calidad, estilo ni soporte de tareas específicas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -77,7 +77,7 @@ No hay información suficiente para establecer una comparativa. No se conocen mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups28
-- Página del autor en HuggingFace: https://huggingface.co/Dohyeon1
+- Hugging Face: https://huggingface.co/Dohyeon1/LFM2-Sub-MoE-ngroups28
+- Página del autor en Hugging Face: https://huggingface.co/Dohyeon1
 - LFM2 Technical Report (arxiv:2511.23404): https://arxiv.org/pdf/2511.23404
 - Referencia arxiv:1910.09700 (citada en los tags del repositorio, no corresponde al modelo): https://arxiv.org/abs/1910.09700

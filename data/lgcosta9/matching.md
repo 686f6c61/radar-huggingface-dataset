@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Matching es un prototipo de investigación publicado por el usuario lgcosta9 en HuggingFace. Se trata de una implementación propia de una arquitectura híbrida CNN + transformer orientada a tareas de emparejamiento (matching), con atención de tipo flash, fusión de bajo rango, activación GELU aproximada y normalización RMSNorm. El repositorio incluye el código Python con un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en safetensors.
+Cnn Transformer for Matching es un prototipo de investigación publicado por el usuario lgcosta9 en Hugging Face. Se trata de una implementación propia de una arquitectura híbrida CNN + transformer orientada a tareas de emparejamiento (matching), con atención de tipo flash, fusión de bajo rango, activación GELU aproximada y normalización RMSNorm. El repositorio incluye el código Python con un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en safetensors.
 
 El dato más relevante es su escala real: el checkpoint contiene 16.576 parámetros totales, pese a que la configuración interna etiqueta el setup como "large". No existe ningún checkpoint entrenado ni resultados de benchmarks: el propio README afirma explícitamente que no se reclama ninguna puntuación y que el fichero de pesos es válido únicamente como inicialización para pruebas de humo (smoke tests). El repositorio acumula 0 descargas y 0 "likes", por lo que tampoco hay validación por parte de la comunidad.
 
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no incluye ningun modelo de referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lgcosta9/matching
+- Hugging Face: https://huggingface.co/lgcosta9/matching
 - Ficheros incluidos en el repositorio (sin enlace directo disponible en la informacion proporcionada): `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web: los resultados devueltos no guardaban relacion con el modelo.

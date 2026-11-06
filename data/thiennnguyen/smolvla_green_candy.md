@@ -47,7 +47,7 @@ El entrenamiento de este fine-tuning se realizó con el framework LeRobot (versi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace indica que no se han proporcionado resultados de evaluación para esta política. No se dispone de datos de éxito en tareas reales ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face indica que no se han proporcionado resultados de evaluación para esta política. No se dispone de datos de éxito en tareas reales ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThiennNguyen/smolvla_green_candy | 450M | no disponible | Picking de caramelos | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | VLA general | Apache-2.0 | HuggingFace |
-| OpenVLA (7B) | 7B | 2048 tokens | VLA general | MIT | HuggingFace |
+| ThiennNguyen/smolvla_green_candy | 450M | no disponible | Picking de caramelos | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | VLA general | Apache-2.0 | Hugging Face |
+| OpenVLA (7B) | 7B | 2048 tokens | VLA general | MIT | Hugging Face |
 
 SmolVLA base es el modelo del que deriva este fine-tuning, por lo que la comparativa es directa: el fine-tuning está especializado en una tarea concreta, mientras que el base es genérico. OpenVLA es un modelo VLA mucho mayor (7B) que requiere hardware de mayor capacidad, pero ofrece una generalización más amplia. No se dispone de datos de rendimiento comparativo entre ellos para esta tarea concreta.
 
@@ -79,7 +79,7 @@ SmolVLA base es el modelo del que deriva este fine-tuning, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThiennNguyen/smolvla_green_candy
+- Hugging Face: https://huggingface.co/ThiennNguyen/smolvla_green_candy
 - Dataset: https://huggingface.co/datasets/ThiennNguyen/record-test-green-70eps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

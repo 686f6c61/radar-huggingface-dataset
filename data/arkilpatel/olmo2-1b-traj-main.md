@@ -80,9 +80,9 @@ Los datos de Ai2 indican que OLMo-2-1B supera a Gemma 3 1B y Llama 3.2 1B en ben
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-main
+- Repositorio de Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-main
 - Repositorio oficial de OLMo en GitHub: https://github.com/allenai/OLMo
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina de OLMo 2 en Ai2: https://allenai.org/olmo2
 - Anuncio de OLMo 2 en el blog de Ai2: https://allenai.org/blog/olmo2
 - Paper "2 OLMo 2 Furious" en arXiv: https://arxiv.org/abs/2501.00656

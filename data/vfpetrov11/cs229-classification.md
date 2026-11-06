@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vfpetrov11/cs229-classification` es un prototipo de investigacion publicado en HuggingFace por el usuario vfpetrov11, orientado a clasificacion y construido sobre una implementacion propia de PoolFormer (familia MetaFormer, que sustituye el mecanismo de atencion por un operador de pooling). El repositorio se presenta explicitamente como un punto de partida experimental: no incluye resultados de benchmarks, no documenta un entrenamiento completado y su unico checkpoint (`model.safetensors`) se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado.
+`vfpetrov11/cs229-classification` es un prototipo de investigacion publicado en Hugging Face por el usuario vfpetrov11, orientado a clasificacion y construido sobre una implementacion propia de PoolFormer (familia MetaFormer, que sustituye el mecanismo de atencion por un operador de pooling). El repositorio se presenta explicitamente como un punto de partida experimental: no incluye resultados de benchmarks, no documenta un entrenamiento completado y su unico checkpoint (`model.safetensors`) se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado.
 
 El dato mas relevante es su escala real: el recuento de parametros del fichero safetensors es de 16.576 parametros, una cifra muy alejada de lo que cabria esperar de una configuracion etiquetada como "base" (los PoolFormer base de la literatura manejan decenas de millones de parametros). Esta discrepancia sugiere que el checkpoint corresponde a una configuracion reducida o a una inicializacion parcial, y debe tenerse en cuenta antes de cualquier uso.
 
@@ -69,7 +69,7 @@ No hay datos de comparacion en la informacion proporcionada (los resultados de b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vfpetrov11/cs229-classification | 16.576 | No disponible | BSD-3-Clause | HuggingFace (repo de investigacion) |
+| vfpetrov11/cs229-classification | 16.576 | No disponible | BSD-3-Clause | Hugging Face (repo de investigacion) |
 | PoolFormer oficial (referencia de literatura) | Del orden de millones en las variantes S12/S24/S36 | No aplica | No disponible en la informacion proporcionada | No confirmada en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No hay datos de comparacion en la informacion proporcionada (los resultados de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vfpetrov11/cs229-classification
+- Hugging Face: https://huggingface.co/vfpetrov11/cs229-classification
 - La busqueda web realizada no ha devuelto enlaces relacionados con este modelo; los resultados obtenidos corresponden a extensiones de navegador sin relacion con el repositorio.
 - Material de referencia sobre la arquitectura PoolFormer (no incluido en la informacion proporcionada, se cita como contexto): paper "MetaFormer is Actually What You Need for Vision" y repositorio de referencia de PoolFormer.

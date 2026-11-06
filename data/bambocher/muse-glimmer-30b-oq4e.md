@@ -6,7 +6,7 @@ Muse Glimmer 30B es un modelo de lenguaje multimodal de código abierto desarrol
 
 La versión aquí descrita, `bambocher/Muse-Glimmer-30B-oQ4e`, es una cuantización mixta de 4 bits (oQ4e) realizada con la librería oMLX, que reduce el tamaño del modelo para su ejecución en hardware Apple Silicon mediante MLX. El repositorio contiene los pesos en formato safetensors de MLX, con un tamaño total de 20,3 GB. Aunque el archivo cuantizado muestra 6.460.738.560 parámetros, esta cifra corresponde a los pesos cuantizados, no al número real de parámetros del modelo original, que es de 30B.
 
-Esta ficha se basa en la información disponible en HuggingFace y en los resultados de búsqueda web. Algunos datos, como los idiomas soportados o los benchmarks detallados, no se han publicado en las fuentes consultadas.
+Esta ficha se basa en la información disponible en Hugging Face y en los resultados de búsqueda web. Algunos datos, como los idiomas soportados o los benchmarks detallados, no se han publicado en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Muse-Glimmer-30B-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Muse-Glimmer-30B-oQ4e
 - Repositorio original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Benchmarks en BenchLM.ai: https://benchlm.ai/models/muse-glimmer-30b

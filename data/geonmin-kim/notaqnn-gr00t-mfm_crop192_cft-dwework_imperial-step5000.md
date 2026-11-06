@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto / horizonte | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este bundle (notaqnn GR00T N1.7) | 5.372.170.240 | seq_len 96, horizonte de acción 40 | `notaqnn/3` con safetensors y contextos HTP de 8 bits | other | Repositorio HuggingFace, 0 descargas |
-| Checkpoint origen GR00T-Mfm_crop192_cft-Dwework_imperial-step5000 | no disponible | no disponible | pesos PyTorch (revisión `0f3ca8e7…`) | no disponible | Repositorio HuggingFace referenciado |
+| Este bundle (notaqnn GR00T N1.7) | 5.372.170.240 | seq_len 96, horizonte de acción 40 | `notaqnn/3` con safetensors y contextos HTP de 8 bits | other | Repositorio Hugging Face, 0 descargas |
+| Checkpoint origen GR00T-Mfm_crop192_cft-Dwework_imperial-step5000 | no disponible | no disponible | pesos PyTorch (revisión `0f3ca8e7…`) | no disponible | Repositorio Hugging Face referenciado |
 | Otras alternativas VLA comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la información proporcionada |
 
 La comparación relevante en este caso es entre el bundle y su checkpoint origen: el bundle añade cuantización de 8 bits, partición en cuatro contextos HTP y golden tensors, mientras que el checkpoint contiene los pesos sin adaptar al hardware Qualcomm. No se han proporcionado datos de otros modelos de la misma categoría para establecer una comparativa cuantitativa.
@@ -99,7 +99,7 @@ La comparación relevante en este caso es entre el bundle y su checkpoint origen
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-Dwework_imperial-step5000
+- Repositorio Hugging Face del bundle: https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-Dwework_imperial-step5000
 - Checkpoint origen: `geonmin-kim/GR00T-Mfm_crop192_cft-Dwework_imperial-step5000`, revisión `0f3ca8e735921caa9d59dde76a933ccf861e29eb`
 - Dataset de referencia para el golden: `geonmin-kim/SO101-lv4-wework-imperial-merged`
 - Commits de referencia: conversión `3a6701944eb0164bd7405345cf2432a93042bb64`; definición del modelo `d508b3adac64f7b01922653f35eb494d9bc8931a`

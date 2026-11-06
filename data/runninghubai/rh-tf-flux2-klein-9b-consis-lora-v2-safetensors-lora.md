@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-tf-flux2-klein-9b-consis-lora-v2` es un adaptador LoRA de bajo rango (544 MiB) para generación y edición de imagen a partir de texto, desarrollado por el usuario @田峰 y publicado en HuggingFace por RunningHubAI. No es un modelo completo: se trata de un complemento que se carga sobre el backbone de difusión FLUX.2 [klein] 9B, un modelo DiT (Diffusion Transformer) de aproximadamente 9.000 millones de parametros. Su proposito es resolver el problema de deriva de imagen (*image drift*) en flujos de trabajo de imagen a imagen, inpainting, outpainting y edicion continua multi-plano.
+`rh-tf-flux2-klein-9b-consis-lora-v2` es un adaptador LoRA de bajo rango (544 MiB) para generación y edición de imagen a partir de texto, desarrollado por el usuario @田峰 y publicado en Hugging Face por RunningHubAI. No es un modelo completo: se trata de un complemento que se carga sobre el backbone de difusión FLUX.2 [klein] 9B, un modelo DiT (Diffusion Transformer) de aproximadamente 9.000 millones de parametros. Su proposito es resolver el problema de deriva de imagen (*image drift*) en flujos de trabajo de imagen a imagen, inpainting, outpainting y edicion continua multi-plano.
 
 La funcion principal del adaptador es restringir al modelo base durante la edicion para conservar rasgos faciales del personaje original, estructura de objetos, colores, composicion y detalles de textura, reduciendo la deformacion facial y el desplazamiento de objetos que aparecen al aplicar varias iteraciones consecutivas sobre una misma imagen. La version v2 incorpora una optimizacion del algoritmo de perdida de color en altas y bajas frecuencias, que segun el autor equilibra la consistencia con la capacidad de edicion y reduce la desaturacion y el emborronamiento de detalles respecto a la version preliminar.
 
@@ -81,7 +81,7 @@ No se dispone de datos publicados de rendimiento de este adaptador, por lo que l
 | Enfoque | Consistencia en img2img, inpaint, outpaint y edicion multi-plano | Consistencia de identidad y estilo en edicion | Generacion y edicion sin refuerzo de consistencia |
 | Composicion con LoRA de estilo y ControlNet | Declarada compatible | Habitualmente compatible | No aplica |
 | Licencia | No disponible, sujeta a la licencia del proyecto original | Licencia de FLUX.1 [dev] (no comercial en su version base) | No disponible en la informacion facilitada |
-| Disponibilidad | HuggingFace (0 descargas, 0 likes) y RunningHub | Amplia distribucion en HuggingFace y ComfyUI | Distribucion segun el proyecto original |
+| Disponibilidad | Hugging Face (0 descargas, 0 likes) y RunningHub | Amplia distribucion en Hugging Face y ComfyUI | Distribucion segun el proyecto original |
 | Resultados de benchmark | No publicados | Variables y no comparables directamente | No publicados |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos publicados de rendimiento de este adaptador, por lo que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-tf-flux2-klein-9b-consis-lora-v2.safetensors-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-tf-flux2-klein-9b-consis-lora-v2.safetensors-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2092727550966530050
 - Pagina del autor: https://www.runninghub.ai/user-center/2080788402504843266
 - RunningHub (sitio internacional): https://www.runninghub.ai

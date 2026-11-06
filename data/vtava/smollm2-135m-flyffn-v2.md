@@ -115,10 +115,10 @@ La unica comparacion con datos verificables es contra el modelo base denso del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/SmolLM2-135M-FlyFFN-v2
+- Modelo en Hugging Face: https://huggingface.co/vtava/SmolLM2-135M-FlyFFN-v2
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Repositorio de codigo fuente (TinyCeNN-LM): https://github.com/vtavakkoli/TinyCeNN-LM
 - Artefactos de evaluacion citados en la model card: `fast_eval_50.csv`, `fast_eval_50.json`
 - Checkpoint original citado en la model card: `biological_flyffn_v2.pt`
 - Script de definicion de capa citado en la model card: `smollm2_flyffn_v2.py`
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los anteriores, procedentes del repositorio de HuggingFace y de la propia model card.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los anteriores, procedentes del repositorio de Hugging Face y de la propia model card.

@@ -72,8 +72,8 @@ Ademas, el validation loss final sobre el subconjunto de validacion del corpus p
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pollock 1.2 (SlayerLab) | 127M | 1024 | GPT-2 style | mixed-upstream-dataset-terms | HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 | GPT-2 | MIT | HuggingFace |
+| Pollock 1.2 (SlayerLab) | 127M | 1024 | GPT-2 style | mixed-upstream-dataset-terms | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 | GPT-2 | MIT | Hugging Face |
 | nanoGPT (Karpathy) | variable | variable | GPT-2 style | MIT | GitHub |
 
 No se dispone de benchmarks comparativos directos entre Pollock 1.2 y GPT-2 small en los mismos datasets. GPT-2 small es un modelo mas maduro y ampliamente evaluado, mientras que Pollock 1.2 destaca por su transparencia documental y su proposito educativo. La licencia de Pollock 1.2 es mas restrictiva que la MIT de GPT-2.
@@ -91,7 +91,7 @@ No se dispone de benchmarks comparativos directos entre Pollock 1.2 y GPT-2 smal
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SlayerLab/pollock-mini-lm-125m
+- Repositorio Hugging Face: https://huggingface.co/SlayerLab/pollock-mini-lm-125m
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/minimal-en-corpus-2.5b
 - Fichero de licencia: https://huggingface.co/SlayerLab/pollock-mini-lm-125m/blob/main/LICENSE.md
 - Historial de entrenamiento (r004): https://huggingface.co/SlayerLab/pollock-mini-lm-125m/blob/main/training-history/r004.md

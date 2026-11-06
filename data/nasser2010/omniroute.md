@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniRoute es un repositorio de modelo publicado en HuggingFace por el usuario nasser2010 bajo el identificador `nasser2010/OmniRoute`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia (`license: openrail`), sin metadatos de pipeline, idiomas, arquitectura ni pesos documentados. El repositorio se creo y se actualizo en el mismo instante (2026-09-19T14:52:02Z), lo que indica una unica operacion de subida sin mantenimiento posterior.
+OmniRoute es un repositorio de modelo publicado en Hugging Face por el usuario nasser2010 bajo el identificador `nasser2010/OmniRoute`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia (`license: openrail`), sin metadatos de pipeline, idiomas, arquitectura ni pesos documentados. El repositorio se creo y se actualizo en el mismo instante (2026-09-19T14:52:02Z), lo que indica una unica operacion de subida sin mantenimiento posterior.
 
 El nombre del repositorio sugiere un componente de enrutamiento ("route"), pero se trata de una inferencia a partir del titulo y no de un dato confirmado por el autor: no hay documentacion tecnica, paper, config.json ni fichas de variantes que permitan verificar que funcion cumple el artefacto.
 
@@ -103,7 +103,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nasser2010/OmniRoute
+- Hugging Face: https://huggingface.co/nasser2010/OmniRoute
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

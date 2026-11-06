@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justusraw/Qwen3.5-4B-Parakeet-formatter` es un repositorio de modelo alojado en HuggingFace por el usuario `justusraw` del que, en el momento de redactar esta ficha, solo consta la licencia (apache-2.0). La model card esta practicamente vacia: no incluye descripcion, pipeline, idiomas, arquitectura, datos de entrenamiento ni formato de pesos. El repositorio acumula 0 descargas y 0 "me gusta", por lo que no hay evidencia de uso, validacion ni mantenimiento por parte de la comunidad.
+`justusraw/Qwen3.5-4B-Parakeet-formatter` es un repositorio de modelo alojado en Hugging Face por el usuario `justusraw` del que, en el momento de redactar esta ficha, solo consta la licencia (apache-2.0). La model card esta practicamente vacia: no incluye descripcion, pipeline, idiomas, arquitectura, datos de entrenamiento ni formato de pesos. El repositorio acumula 0 descargas y 0 "me gusta", por lo que no hay evidencia de uso, validacion ni mantenimiento por parte de la comunidad.
 
 El identificador sugiere dos cosas que la documentacion no confirma: una base de la familia Qwen de aproximadamente 4.000 millones de parametros ("Qwen3.5-4B") y un proposito de formateo de la salida de un sistema de reconocimiento automatico del habla, presumiblemente NVIDIA Parakeet ("Parakeet-formatter"). Ambas deducciones deben tratarse como hipotesis: no existe un "Qwen3.5" publicado oficialmente por Alibaba y la model card no menciona ni Parakeet ni ASR en ningun momento.
 
@@ -74,10 +74,10 @@ No es posible comparar el rendimiento de este modelo porque no existe ninguna ev
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| justusraw/Qwen3.5-4B-Parakeet-formatter | no disponible (~4B segun el nombre) | no disponible | Apache-2.0 | HuggingFace, 0 descargas | no disponible |
+| justusraw/Qwen3.5-4B-Parakeet-formatter | no disponible (~4B segun el nombre) | no disponible | Apache-2.0 | Hugging Face, 0 descargas | no disponible |
 | Qwen3-4B (referencia) | 4B densos | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Ampliamente desplegado | no comparable: faltan datos del modelo evaluado |
 | Llama-3.2-3B (referencia) | 3B densos | 128.000 tokens | Llama 3.2 Community License | Ampliamente desplegado | no comparable: faltan datos del modelo evaluado |
-| NVIDIA Parakeet TDT 0.6B v2 (referencia) | 0,6B | no aplica (modelo ASR) | CC-BY-4.0 | HuggingFace | No comparable: es un modelo ASR, no un modelo de lenguaje |
+| NVIDIA Parakeet TDT 0.6B v2 (referencia) | 0,6B | no aplica (modelo ASR) | CC-BY-4.0 | Hugging Face | No comparable: es un modelo ASR, no un modelo de lenguaje |
 
 ## Limitaciones y advertencias
 
@@ -92,5 +92,5 @@ No es posible comparar el rendimiento de este modelo porque no existe ninguna ev
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justusraw/Qwen3.5-4B-Parakeet-formatter
+- Hugging Face: https://huggingface.co/justusraw/Qwen3.5-4B-Parakeet-formatter
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni datasets asociados a este modelo en la informacion disponible.

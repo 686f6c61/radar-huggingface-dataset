@@ -51,9 +51,9 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | ≈222M | 2048 | No disponible | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124M | 1024 | No disponible | MIT | HuggingFace |
-| GPT-2 medium | 355M | 1024 | No disponible | MIT | HuggingFace |
+| Este modelo | ≈222M | 2048 | No disponible | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124M | 1024 | No disponible | MIT | Hugging Face |
+| GPT-2 medium | 355M | 1024 | No disponible | MIT | Hugging Face |
 
 No se dispone de benchmarks comunes entre este modelo y GPT-2, por lo que no es posible realizar una comparación de rendimiento directa. Dentro de la misma familia de experimentos de alexkstern existen otros checkpoints (por ejemplo, `nca_dose_50Mpt_hfinit_500M_s2_...`) que comparten arquitectura y metodología, pero no se aportan métricas de evaluación comparables.
 
@@ -66,6 +66,6 @@ No se dispone de benchmarks comunes entre este modelo y GPT-2, por lo que no es 
 - No apto para producción: no se ha validado en tareas reales ni se ha sometido a pruebas de seguridad o robustez.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_15-05-35_684213-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_200M_s2_2026-09-06_15-05-35_684213-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/egrd7ft7
 - Repositorio nanochat: https://github.com/karpathy/nanochat

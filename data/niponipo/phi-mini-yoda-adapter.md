@@ -2,7 +2,7 @@
 
 ## Resumen
 
-niponipo/phi-mini-yoda-adapter es un ajuste fino (fine-tuning) del modelo microsoft/Phi-3-mini-4k-instruct publicado por el usuario niponipo en HuggingFace. Se trata de un adaptador entrenado mediante SFT (supervised fine-tuning) con la libreria TRL, segun los metadatos de la propia model card, que incluye las etiquetas generated_from_trainer, sft y trl. El repositorio no incluye pipeline declarado, ni idiomas, ni licencia efectiva: el campo de licencia aparece como el literal "license", sin resolver.
+niponipo/phi-mini-yoda-adapter es un ajuste fino (fine-tuning) del modelo microsoft/Phi-3-mini-4k-instruct publicado por el usuario niponipo en Hugging Face. Se trata de un adaptador entrenado mediante SFT (supervised fine-tuning) con la libreria TRL, segun los metadatos de la propia model card, que incluye las etiquetas generated_from_trainer, sft y trl. El repositorio no incluye pipeline declarado, ni idiomas, ni licencia efectiva: el campo de licencia aparece como el literal "license", sin resolver.
 
 Por herencia del modelo base, el sistema parte de una arquitectura transformer decoder-only densa de 3.800 millones de parametros con una ventana de contexto de 4.096 tokens. Sin embargo, el repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes, por lo que no hay evidencia publica de que contenga pesos utilizables ni de que haya sido validado por terceros.
 
@@ -95,7 +95,7 @@ Los datos de la columna del adaptador corresponden a lo declarado en su model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niponipo/phi-mini-yoda-adapter
+- Modelo en Hugging Face: https://huggingface.co/niponipo/phi-mini-yoda-adapter
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de Phi-3 (arXiv): https://arxiv.org/abs/2404.14219

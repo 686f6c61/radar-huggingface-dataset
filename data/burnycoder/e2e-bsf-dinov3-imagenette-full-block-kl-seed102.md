@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BSF KL, seed 102) | Featurizer disperso de bloques sobre DINOv3 ViT-B/16 | 9.599.498 | no aplica | MIT (backbone aparte) | HuggingFace, 26 descargas |
+| Este modelo (BSF KL, seed 102) | Featurizer disperso de bloques sobre DINOv3 ViT-B/16 | 9.599.498 | no aplica | MIT (backbone aparte) | Hugging Face, 26 descargas |
 | Block-sparse featurizer de Goodfire | Featurizer disperso de bloques | no disponible | no aplica | no disponible | Repositorio GitHub |
 | SAEs convencionales con ReLU (end-to-end SAE paper) | Autoencoder disperso | no disponible | no aplica | no disponible | Paper arXiv |
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- [HuggingFace: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed102](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed102)
+- [Hugging Face: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed102](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed102)
 - [Repositorio del proyecto end-to-end-block-sparse-featurizers](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers)
 - [Preregistro del estudio](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md)
 - [Paper BSF (arXiv:2606.25234)](https://arxiv.org/abs/2606.25234)

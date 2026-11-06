@@ -112,7 +112,7 @@ La información proporcionada no incluye datos de benchmarks comparativos frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Repositorio Xolotl: https://github.com/Indras-Mirror/Xolotl
 - Licencia LFM Open License v1.0: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored/blob/main/LICENSE

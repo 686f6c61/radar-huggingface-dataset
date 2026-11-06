@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pnhuy/knee-implant-detector` es un detector de implantes de rodilla publicado en HuggingFace por el usuario `pnhuy`. A fecha de su creación (septiembre de 2026), la model card asociada únicamente declara la licencia MIT, sin incluir descripción técnica, arquitectura, datos de entrenamiento ni resultados de evaluación. No se dispone de información pública adicional sobre su funcionamiento, tamaño o capacidades.
+El modelo `pnhuy/knee-implant-detector` es un detector de implantes de rodilla publicado en Hugging Face por el usuario `pnhuy`. A fecha de su creación (septiembre de 2026), la model card asociada únicamente declara la licencia MIT, sin incluir descripción técnica, arquitectura, datos de entrenamiento ni resultados de evaluación. No se dispone de información pública adicional sobre su funcionamiento, tamaño o capacidades.
 
 La relevancia de este tipo de modelos radica en la automatización del reconocimiento de implantes ortopédicos a partir de radiografías, una tarea clínica de utilidad en cirugía de revisión. Sin embargo, al carecer de documentación técnica, no es posible evaluar su idoneidad para uso real. La ausencia de descargas y de métricas sugiere que se trata de un proyecto experimental o no validado.
 
@@ -57,4 +57,4 @@ No se dispone de información suficiente sobre este modelo para establecer una c
 
 ## Enlaces
 
-- [HuggingFace: pnhuy/knee-implant-detector](https://huggingface.co/pnhuy/knee-implant-detector)
+- [Hugging Face: pnhuy/knee-implant-detector](https://huggingface.co/pnhuy/knee-implant-detector)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Faith_Emotions_v2_Q4_K_M es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario Japanga. Se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M, lo que indica que esta pensado para inferencia local mediante llama.cpp u otros runners compatibles con este formato, y no para entrenamiento ni para su uso directo con frameworks que requieran pesos en safetensors. El repositorio ocupa 0,3 GB y el autor declara un total de 361.821.120 parametros (aproximadamente 362 millones), lo que lo situa en la categoria de modelos pequenos, aptos para hardware de consumo.
+Faith_Emotions_v2_Q4_K_M es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario Japanga. Se distribuye unicamente en formato GGUF con cuantizacion Q4_K_M, lo que indica que esta pensado para inferencia local mediante llama.cpp u otros runners compatibles con este formato, y no para entrenamiento ni para su uso directo con frameworks que requieran pesos en safetensors. El repositorio ocupa 0,3 GB y el autor declara un total de 361.821.120 parametros (aproximadamente 362 millones), lo que lo situa en la categoria de modelos pequenos, aptos para hardware de consumo.
 
 El nombre del repositorio sugiere una especializacion en conversacion con carga emocional ("Faith Emotions"), y la etiqueta `conversational` refuerza ese enfoque. Sin embargo, la informacion publica disponible no incluye la model card con detalles de arquitectura, datos de entrenamiento, idiomas ni licencia, por lo que buena parte de las especificaciones habituales no pueden confirmarse. No se ha publicado pipeline asociado, ni idiomas soportados, ni condiciones de uso.
 
@@ -91,6 +91,6 @@ Nota: los datos de las alternativas provienen de sus respectivas model cards pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Japanga/Faith_Emotions_v2_Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/Japanga/Faith_Emotions_v2_Q4_K_M
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

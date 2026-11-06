@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks propios de esta conversión a onw e
 - **Acelerador**: NPU integrada en Intel Core Ultra de serie 1 o 2 (Meteor Lake, Arrow Lake, Lunar Lake) y serie 3 (Panther Lake). No se documenta ejecución en GPU NVIDIA o AMD para este artefacto.
 - **Sistema operativo**: Windows 11 o Ubuntu 22.04 o superior.
 - **Memoria**: conjunto de trabajo de aproximadamente 10 GB tras la carga del modelo; conviene disponer de al menos 16 GB de RAM en el equipo.
-- **Descarga**: 4,6 GB según el autor (el repositorio en HuggingFace ocupa 4,9 GB).
+- **Descarga**: 4,6 GB según el autor (el repositorio en Hugging Face ocupa 4,9 GB).
 - **Velocidad medida en NPU 3720 (Core Ultra 9 285HX)**: 4,2 a 4,7 tokens por segundo en generación; el procesamiento de preguntas cortas se resuelve en menos de un segundo.
 - **Arranque**: la primera carga requiere compilación para la NPU y tarda unos 11 minutos; las cargas posteriores bajan a unos 20 segundos.
 - **Despliegue**: motor onw (instalación mediante script de PowerShell en Windows o `curl ... | bash` en Ubuntu), interfaz gráfica de onw o `onw serve <carpeta>`, con API compatible con OpenAI en `http://localhost:8000/v1`. Para GPU o CPU con otros runtimes habría que usar el modelo original en safetensors o la versión GGUF publicada por LLM-jp.
@@ -99,7 +99,7 @@ La ventaja diferencial de esta variante no es el rendimiento bruto, sino el cons
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-onw
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Documentación técnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md

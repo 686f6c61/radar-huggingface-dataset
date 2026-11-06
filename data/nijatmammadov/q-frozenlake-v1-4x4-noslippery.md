@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado en HuggingFace por el usuario nijatmammadov. No es un modelo de lenguaje ni una red neuronal: es una tabla Q entrenada para resolver el entorno FrozenLake-v1 de Gym con el mapa 4x4 y la variante determinista (no_slippery). El artefacto distribuido es un unico fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno (`env_id`).
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado en Hugging Face por el usuario nijatmammadov. No es un modelo de lenguaje ni una red neuronal: es una tabla Q entrenada para resolver el entorno FrozenLake-v1 de Gym con el mapa 4x4 y la variante determinista (no_slippery). El artefacto distribuido es un unico fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno (`env_id`).
 
 El problema que resuelve es el clasico de navegacion sobre una cuadricula congelada: un agente debe desplazarse desde la casilla inicial hasta la meta evitando agujeros, eligiendo entre cuatro acciones discretas (izquierda, abajo, derecha, arriba). Al tratarse de la variante sin deslizamiento, las transiciones son deterministas, por lo que el entorno es resoluble de forma exacta y un agente tabular converge al optimo sin necesidad de aproximacion de funcion.
 
@@ -44,7 +44,7 @@ No hay red neuronal, no hay descenso de gradiente, no hay fase de preentrenamien
 
 - Material didactico de Q-learning: el artefacto permite a un estudiante cargar una tabla Q ya convergida y trazar el recorrido optimo sobre el mapa 4x4, comprobando de forma tangible como una politica tabular resuelve un problema de decision secuencial.
 - Linea base de referencia al 100 %: al declarar `mean_reward` de 1.00 +/- 0.00, sirve como objetivo de comparacion para validar implementaciones propias; si un agente nuevo no alcanza esa cifra en FrozenLake 4x4 determinista, el fallo esta en el codigo o en los hiperparametros, no en el entorno.
-- Pruebas de integracion de pipelines de RL: puede insertarse en un harness de evaluacion (por ejemplo, un bucle estilo Stable-Baselines3 o el evaluador del curso de RL de HuggingFace) para verificar que la carga de politicas serializadas, el bucle de episodios y el calculo de recompensa media funcionan de extremo a extremo.
+- Pruebas de integracion de pipelines de RL: puede insertarse en un harness de evaluacion (por ejemplo, un bucle estilo Stable-Baselines3 o el evaluador del curso de RL de Hugging Face) para verificar que la carga de politicas serializadas, el bucle de episodios y el calculo de recompensa media funcionan de extremo a extremo.
 - Validacion de envoltorios de entorno (`wrappers`): dado que la politica es optima y determinista, cualquier wrapper que altere la semantica de observaciones, recompensas o terminacion hara caer la recompensa por debajo de 1.00, lo que convierte al agente en un test de regresion barato.
 - Estudio comparativo de estrategias de exploracion: partiendo de la tabla convergida publicada, se pueden comparar esquemas alternativos (epsilon-greedy decreciente, softmax, UCB) midiendo cuantos episodios necesitan para igualar esa politica de referencia.
 - Docencia sobre sensibilidad al modelo de transiciones: el agente solo es valido con `is_slippery=False`; se puede emplear para demostrar empiricamente el desplome de rendimiento al activar el deslizamiento, ilustrando el coste de asumir un entorno determinista.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - GPU recomendadas: ninguna. Cualquier CPU x86 o ARM es suficiente; incluso un Raspberry Pi o un contenedor de 128 MB ejecutarian la inferencia sin problema.
 - Cabe en GPU de consumo: si, en cualquiera, aunque es innecesario; tambien cabe en CPU y en entornos serverless de capa gratuita.
 - Tamano del artefacto: el repositorio ocupa 0.0 GB, lo que sugiere un fichero `q-learning.pkl` de pocos kilobytes.
-- Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama, TGI ni servidores de inferencia de LLM. El despliegue se reduce a Python con `gymnasium`/`gym`, la utilidad `load_from_hub` de HuggingFace y `pickle` para deserializar.
+- Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama, TGI ni servidores de inferencia de LLM. El despliegue se reduce a Python con `gymnasium`/`gym`, la utilidad `load_from_hub` de Hugging Face y `pickle` para deserializar.
 - Latencia y throughput estimados: al tratarse de una lectura en diccionario o array de 64 posiciones, la latencia por decision es del orden de microsegundos y el throughput efectivo lo limita el bucle del entorno, no el modelo (estimacion, no medida publicada).
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye otros agentes de Q-learni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nijatmammadov/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/nijatmammadov/q-FrozenLake-v1-4x4-noSlippery
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

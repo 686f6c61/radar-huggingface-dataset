@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000` es un checkpoint de política robótica (pipeline `robotics`) publicado por el usuario de HuggingFace `jungwook2358`, correspondiente al experimento EXP-0019 del proyecto WAM. Se trata de un modelo de flow matching conjunto de vídeo y acción ("joint video+action flow matching") entrenado desde cero sobre el modelo base Wan2.2-TI2V-5B, es decir, un diffusion transformer (DiT) de aproximadamente 5.000 millones de parámetros adaptado de generación vídeo a generación de acciones motoras. La variante "naive" indica que no emplea teacher FRED, ni iBOT, ni CogAlign durante el entrenamiento, por lo que funciona como ablación de referencia frente a otras recetas del mismo proyecto.
+`wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000` es un checkpoint de política robótica (pipeline `robotics`) publicado por el usuario de Hugging Face `jungwook2358`, correspondiente al experimento EXP-0019 del proyecto WAM. Se trata de un modelo de flow matching conjunto de vídeo y acción ("joint video+action flow matching") entrenado desde cero sobre el modelo base Wan2.2-TI2V-5B, es decir, un diffusion transformer (DiT) de aproximadamente 5.000 millones de parámetros adaptado de generación vídeo a generación de acciones motoras. La variante "naive" indica que no emplea teacher FRED, ni iBOT, ni CogAlign durante el entrenamiento, por lo que funciona como ablación de referencia frente a otras recetas del mismo proyecto.
 
 El modelo resuelve el problema de aprendizaje de políticas de manipulación bimanual para el robot OpenArm a partir de una mezcla de datos de robot y de vídeo humano (aproximadamente 553 episodios de robot y 1.187 de humano), aplicando etiquetado de manos humanas basado en HaWoR. Su relevancia es fundamentalmente de investigación: documenta una receta reproducible (job `jungwook-wam-openarm-h2rb-naive-50k-4gpu-bg2`, 4 GPUs, 64 filas por paso, 50.000 pasos) para transferencia humano-a-robot con etiquetas de acción absolutas en el espacio PRQ30 de 30 dimensiones.
 
-El checkpoint se publica como estado de entrenamiento de HuggingFace Trainer (3 shards safetensors, 12,5 GB de repositorio) sin los estados del optimizador DeepSpeed (72 GB excluidos). No incluye métricas de éxito, benchmarks ni demostraciones, y en el momento de la ficha no registra descargas ni valoraciones.
+El checkpoint se publica como estado de entrenamiento de Hugging Face Trainer (3 shards safetensors, 12,5 GB de repositorio) sin los estados del optimizador DeepSpeed (72 GB excluidos). No incluye métricas de éxito, benchmarks ni demostraciones, y en el momento de la ficha no registra descargas ni valoraciones.
 
 ## Especificaciones técnicas
 
@@ -88,7 +88,7 @@ La diferencia principal frente a estas alternativas es la especialización: este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-h2rb-naive-hawor-v1-50k-ckpt50000
 - Repositorio de código referenciado en la model card: rama `jungwook/openarm-fred-ft` (commit 817e3bb) del proyecto `actlat-wam`; el autor no proporciona URL directa.
 - Script de entrenamiento citado: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_prq30_h2rb.sh` (sin URL pública en la información disponible).
 - Configuración de modalidad citada: `gr00t/configs/data/openarm_prq30_v1_config.py` (sin URL pública en la información disponible).

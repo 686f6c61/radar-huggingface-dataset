@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caught in 4K es un sistema de visión por computador empaquetado como repositorio de HuggingFace (`eymen160/caught-in-4k`) que detecta el momento en el que una persona deposita un objeto en un contenedor, identifica qué objeto es, en qué boca del contenedor ha entrado y si la acción cumple la normativa local de reciclaje. El autor es el equipo del hackathon Caught in 4K y la instantánea publicada corresponde al commit `9fa5da7`, de octubre de 2026. El repositorio ocupa 0,7 GB e incluye pesos, modelo de navegador, reglas, particiones de evaluación etiquetadas y cachés de percepción.
+Caught in 4K es un sistema de visión por computador empaquetado como repositorio de Hugging Face (`eymen160/caught-in-4k`) que detecta el momento en el que una persona deposita un objeto en un contenedor, identifica qué objeto es, en qué boca del contenedor ha entrado y si la acción cumple la normativa local de reciclaje. El autor es el equipo del hackathon Caught in 4K y la instantánea publicada corresponde al commit `9fa5da7`, de octubre de 2026. El repositorio ocupa 0,7 GB e incluye pesos, modelo de navegador, reglas, particiones de evaluación etiquetadas y cachés de percepción.
 
 No se trata de un modelo entrenado de cero ni de un *checkpoint* ajustado: es un pipeline que encadena redes de terceros (YOLO11n-pose para personas y brazos, FastSAM-s para regiones de objeto, CLIP ViT-B/32 para clasificación zero-shot, y opcionalmente YOLO11n y YOLOv8s-World v2 como trackers) junto con lógica propia de seguimiento y decisión, un cabezal CLIP con 21 categorías de objeto/peligro y un fichero de reglas para el catálogo de Cambridge (Massachusetts) de 2022.
 
@@ -111,7 +111,7 @@ No se dispone de cifras comparativas de parametros, contexto o rendimiento para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eymen160/caught-in-4k
+- Modelo en Hugging Face: https://huggingface.co/eymen160/caught-in-4k
 - Repositorio de codigo (acceso privado al equipo; commit de referencia `9fa5da7`): https://github.com/Ishan-Wakade/Caught_in_4K
 - Encoder CLIP de imagen para navegador: https://huggingface.co/Xenova/clip-vit-base-patch32
 - Ultralytics (YOLO11n, YOLO11n-pose, YOLOv8s-World v2, FastSAM-s): https://github.com/ultralytics/ultralytics

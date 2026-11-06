@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelgmg/prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo describe como una nota exploratoria sobre ingeniería de prompts que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y requisitos de reproducibilidad, antes de que se reporte cualquier resultado de benchmark. El autor declara explícitamente que el repositorio no contiene mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado.
+`michaelgmg/prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo describe como una nota exploratoria sobre ingeniería de prompts que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y requisitos de reproducibilidad, antes de que se reporte cualquier resultado de benchmark. El autor declara explícitamente que el repositorio no contiene mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
 El repositorio está etiquetado con `safetensors` y `transformer`, y el dato real de safetensors reporta 33.088 parámetros totales, pero el tamaño total del repositorio es de 0,0 GB y los únicos ficheros documentados en la model card son `summary.md` y `README.md`. No hay evidencia de pesos utilizables, configuración de modelo, tokenizador ni código de inferencia. Por tanto, cualquier cifra de arquitectura o capacidad debe tratarse como no verificada y potencialmente derivada de un artefacto vacío o de prueba.
 
@@ -13,7 +13,7 @@ Su relevancia es documental, no funcional: sirve como plantilla de planificació
 | Parametro | Valor |
 |---|---|
 | Arquitectura | transformer (solo etiqueta del repositorio; la model card no describe arquitectura) |
-| Parametros totales | 33.088 (dato de safetensors reportado por HuggingFace) |
+| Parametros totales | 33.088 (dato de safetensors reportado por Hugging Face) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
@@ -67,7 +67,7 @@ No disponible. No procede comparar este repositorio con modelos de lenguaje porq
 | Parametros | 33.088 (dato safetensors, sin pesos documentados) | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Repositorio en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No disponible. No procede comparar este repositorio con modelos de lenguaje porq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelgmg/prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/michaelgmg/prompt-engineering
 - Ficheros internos documentados por el autor: `summary.md` (artefacto principal) y `README.md` (documentación).
 - Paper, blog, repositorio de código o demo: no disponibles.
 - La búsqueda web proporcionada no devolvió enlaces relevantes sobre este repositorio ni sobre ingeniería de prompts; los resultados corresponden a sitios comerciales sin relación (Calypso).

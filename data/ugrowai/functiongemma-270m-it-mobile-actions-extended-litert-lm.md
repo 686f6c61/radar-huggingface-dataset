@@ -74,7 +74,7 @@ La variante de UGrowAI se diferencia por entrenarse sobre un dataset extendido d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended-litert-lm
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Modelo fine-tuneado por Google (Mobile Actions): https://huggingface.co/litert-community/FunctionGemma_270M_Mobile_Actions
 - Dataset extendido de Mobile Actions: https://huggingface.co/datasets/AliRGHZ/Mobile-Actions

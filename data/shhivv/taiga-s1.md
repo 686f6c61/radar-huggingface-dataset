@@ -84,13 +84,13 @@ No se dispone de datos comparativos. No se han identificado en la información p
 - Entrenamiento exclusivamente sintético: las 24.000 sesiones fueron generadas por *scripts* en FreeCAD *headless*, por lo que la distribución de estados y errores puede no reflejar sesiones humanas reales.
 - Riesgo de error de ejecución: aunque no hay "alucinación" en sentido lingüístico, el modelo puede seleccionar un comando válido pero incorrecto y producir geometría que no coincide con el objetivo (se observa en el 5 % de fallos con 17 características y hasta un 14 % con 6-7 características bajo inyección de ruido).
 - Sesgos: no se han documentado sesgos demográficos ni lingüísticos porque el modelo no trata texto ni personas. El sesgo relevante es de distribución, hacia el vocabulario y el estilo de modelado del profesor sintético.
-- Sin validación externa: 0 descargas y 0 *likes* en HuggingFace; todos los resultados provienen del propio autor y no se han replicado de forma independiente.
+- Sin validación externa: 0 descargas y 0 *likes* en Hugging Face; todos los resultados provienen del propio autor y no se han replicado de forma independiente.
 - Licencia: el modelo se publica bajo MIT, lo que permite uso comercial. Conviene revisar por separado las licencias de las dependencias, en particular FreeCAD (LGPL-2.1) y PyTorch (BSD), que no quedan cubiertas por la licencia del modelo.
 - Producción: no hay garantías de mantenimiento, versionado semántico, ni soporte de los servidores de inferencia habituales. El repositorio ocupa 0,0 GB, lo que indica que los pesos y el código auxiliar pueden no estar empaquetados en su totalidad.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/shhivv/taiga-s1
+- Página del modelo en Hugging Face: https://huggingface.co/shhivv/taiga-s1
 - Artículo sobre identificadores de posición aleatorizados (Ruoss et al., 2023): https://arxiv.org/abs/2305.16843
 - Artículo sobre acoplamiento posicional (position coupling, 2024): https://arxiv.org/abs/2405.20671
 - FreeCAD (aplicación objetivo): https://www.freecad.org/

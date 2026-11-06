@@ -4,7 +4,7 @@
 
 JetParticle-JEPA (JP-JEPA) es un modelo de representación auto-supervisado diseñado específicamente para la clasificación de jets en física de altas energías, desarrollado por HadesGuigui. Se basa en la arquitectura JEPA (Joint Embedding Predictive Architecture), introducida por Yann LeCun y Meta AI, que aprende representaciones prediciendo representaciones del futuro a partir de representaciones del presente, sin reconstruir píxeles ni tokens. En este caso, el modelo aprende directamente del conjunto crudo de partículas constituyentes de un jet, sin necesidad de clustering intermedio, voxelización ni tokenización discreta.
 
-El modelo se presenta como un framework de modelo fundacional para la física de jets en el LHC, con el objetivo de superar las limitaciones de los métodos supervisados tradicionales que dependen de grandes cantidades de datos etiquetados. Según el paper asociado (arXiv:2606.14813), en los benchmarks de Top Quark y Quark-Gluon Tagging, JP-JEPA se mantiene a la par con métodos supervisados, y sus representaciones muestran una fuerte robustez ante información faltante del detector y un mejor comportamiento de incertidumbre. El repositorio de HuggingFace contiene únicamente los pesos (preentrenados y ajustados), con un tamaño de 0.2 GB, lo que sugiere un modelo relativamente compacto.
+El modelo se presenta como un framework de modelo fundacional para la física de jets en el LHC, con el objetivo de superar las limitaciones de los métodos supervisados tradicionales que dependen de grandes cantidades de datos etiquetados. Según el paper asociado (arXiv:2606.14813), en los benchmarks de Top Quark y Quark-Gluon Tagging, JP-JEPA se mantiene a la par con métodos supervisados, y sus representaciones muestran una fuerte robustez ante información faltante del detector y un mejor comportamiento de incertidumbre. El repositorio de Hugging Face contiene únicamente los pesos (preentrenados y ajustados), con un tamaño de 0.2 GB, lo que sugiere un modelo relativamente compacto.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HadesGuigui/JetParticle-JEPA
+- Hugging Face: https://huggingface.co/HadesGuigui/JetParticle-JEPA
 - Paper (arXiv): https://arxiv.org/abs/2606.14813
 - Código de inferencia (GitHub): https://github.com/Guigui14460/jetparticle-jepa

@@ -47,7 +47,7 @@ En este caso concreto, el modelo fue entrenado con el framework LeRobot sobre el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de tasas de exito, metricas de error ni comparaciones con otros modelos en el repositorio de HuggingFace ni en los resultados de busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de tasas de exito, metricas de error ni comparaciones con otros modelos en el repositorio de Hugging Face ni en los resultados de busqueda web.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa con otros modelos. El propio autor ha publicado variantes del mismo modelo con diferentes configuraciones (por ejemplo, `Kaz55/act-newcable-combined-4cam-chunk90` o `Kaz55/act-newcablev3-4cam`), pero no se han encontrado datos de rendimiento comparativo. En la categoria de politicas ACT para robotica, existen otros modelos publicados en el Hub de HuggingFace bajo el ecosistema LeRobot, pero sin datos de benchmarks publicos no es posible establecer una comparacion objetiva.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa con otros modelos. El propio autor ha publicado variantes del mismo modelo con diferentes configuraciones (por ejemplo, `Kaz55/act-newcable-combined-4cam-chunk90` o `Kaz55/act-newcablev3-4cam`), pero no se han encontrado datos de rendimiento comparativo. En la categoria de politicas ACT para robotica, existen otros modelos publicados en el Hub de Hugging Face bajo el ecosistema LeRobot, pero sin datos de benchmarks publicos no es posible establecer una comparacion objetiva.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kaz55/act-cable3sizes-90ep-4cam-ac60)
+- [Modelo en Hugging Face](https://huggingface.co/Kaz55/act-cable3sizes-90ep-4cam-ac60)
 - [Paper de ACT (Action Chunking with Transformers)](https://huggingface.co/papers/2304.13705)
 - [Documentacion de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Repositorio de LeRobot en GitHub](https://github.com/huggingface/lerobot)

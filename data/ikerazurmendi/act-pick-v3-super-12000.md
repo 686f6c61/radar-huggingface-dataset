@@ -98,10 +98,10 @@ No se dispone de información sobre políticas ACT de otros autores. La comparac
 
 | Modelo | Episodios | Chunk | Mejor checkpoint | MAE offline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| act-pick-v3-super-12000 (este) | 398 | 90 | 6k (publicado aparte) | 16,08 en 12k; 15,16 en 6k | Apache 2.0 | HuggingFace |
-| act-pick-v3-6000 | 398 | 90 | 6k | 15,16 | Apache 2.0 | HuggingFace |
-| act-pick-v3-chunk60-4800 | 331 | 60 | 4,8k | 11,94 (línea base 16,23) | Apache 2.0 | HuggingFace |
-| act-pick-v3-strict-2400 | 205 | 90 | 2,4k | 15,14 | Apache 2.0 | HuggingFace |
+| act-pick-v3-super-12000 (este) | 398 | 90 | 6k (publicado aparte) | 16,08 en 12k; 15,16 en 6k | Apache 2.0 | Hugging Face |
+| act-pick-v3-6000 | 398 | 90 | 6k | 15,16 | Apache 2.0 | Hugging Face |
+| act-pick-v3-chunk60-4800 | 331 | 60 | 4,8k | 11,94 (línea base 16,23) | Apache 2.0 | Hugging Face |
+| act-pick-v3-strict-2400 | 205 | 90 | 2,4k | 15,14 | Apache 2.0 | Hugging Face |
 
 En parámetros y contexto todos son equivalentes (misma arquitectura y mismo montaje); las diferencias relevantes son la composición del dataset, el tamaño del chunk y la selección del checkpoint. Para uso práctico, act-pick-v3-6000 domina a este modelo en la métrica publicada; act-pick-v3-super-12000 tiene valor como evidencia de la curva de entrenamiento.
 
@@ -120,6 +120,6 @@ En parámetros y contexto todos son equivalentes (misma arquitectura y mismo mon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-12000
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-12000
 
 No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios de código o demos) asociados a este modelo.

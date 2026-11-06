@@ -67,7 +67,7 @@ No disponible. No se han identificado en la información proporcionada otros mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Michi-Tsubaki/nextage_forceps_act)
+- [Modelo en Hugging Face](https://huggingface.co/Michi-Tsubaki/nextage_forceps_act)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Michi-Tsubaki/hand_over_the_forceps_to_the_hand)
 - [Repositorio del robot NEXTAGE (ROS-OpenRTM)](https://github.com/tork-a/rtmros_nextage)
 - [Perfil de GitHub del autor](https://github.com/Michi-Tsubaki)

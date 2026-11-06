@@ -99,12 +99,12 @@ AesCode-32B mejora `Visual` en 22,4 puntos y `Overall` en 24,8 puntos respecto a
 - Salidas largas: hasta 12.000 tokens de salida, con impacto en coste, latencia y consumo de VRAM.
 - Licencia: Apache 2.0, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-VL y de las dependencias generadas (por ejemplo, ECharts).
 - Adopción y reproducibilidad: el repositorio consultado muestra 0 descargas y 0 *likes* en el momento de la ficha, sin resultados de terceros que reproduzcan los benchmarks.
-- Procedencia: los metadatos de HuggingFace atribuyen el modelo a `sekkit`, mientras que la model card referencia `microsoft/AesCode-32B`; conviene confirmar la fuente oficial antes de usarlo en producción.
+- Procedencia: los metadatos de Hugging Face atribuyen el modelo a `sekkit`, mientras que la model card referencia `microsoft/AesCode-32B`; conviene confirmar la fuente oficial antes de usarlo en producción.
 - Contexto: la configuración documentada usa 24.576 tokens; no se especifica el máximo nativo soportado por el modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace (identificador consultado): https://huggingface.co/sekkit/AesCode-32B
+- Modelo en Hugging Face (identificador consultado): https://huggingface.co/sekkit/AesCode-32B
 - Modelo referenciado en la model card: https://huggingface.co/microsoft/AesCode-32B
 - Modelo companero AesCode-8B: https://huggingface.co/microsoft/AesCode-8B
 - Repositorio de codigo: https://github.com/microsoft/AesCode

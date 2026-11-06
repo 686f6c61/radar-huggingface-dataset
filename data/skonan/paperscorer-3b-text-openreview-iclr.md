@@ -79,10 +79,10 @@ Son resultados en distribución. No se han publicado en la información disponib
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaperScorer-3B-Text-OpenReview-ICLR | 3,09B | cutoff de entrenamiento 24.480 tokens; contexto nativo no disponible | Clasificación aceptar/rechazar en ICLR a partir de texto | other | HuggingFace, repositorio de 13,6 GB, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2.5-3B-Instruct (base) | 3,09B | no disponible en la información proporcionada | Instrucciones generales de propósito general | licencia propia del modelo base (consultar) | HuggingFace |
-| Variantes hermanas de la colección PaperScorer (7B, texto/visión, arxiv/openreview) | 7B según la colección | no disponible | Misma tarea de predicción de aceptación, otros dominios o modalidad | no disponible | HuggingFace, colección zlab-princeton/paperscorer |
-| PaperScorer-3B de dominio arXiv | 3,09B | no disponible | Misma tarea, dominio arXiv | no disponible | HuggingFace, colección zlab-princeton/paperscorer |
+| PaperScorer-3B-Text-OpenReview-ICLR | 3,09B | cutoff de entrenamiento 24.480 tokens; contexto nativo no disponible | Clasificación aceptar/rechazar en ICLR a partir de texto | other | Hugging Face, repositorio de 13,6 GB, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2.5-3B-Instruct (base) | 3,09B | no disponible en la información proporcionada | Instrucciones generales de propósito general | licencia propia del modelo base (consultar) | Hugging Face |
+| Variantes hermanas de la colección PaperScorer (7B, texto/visión, arxiv/openreview) | 7B según la colección | no disponible | Misma tarea de predicción de aceptación, otros dominios o modalidad | no disponible | Hugging Face, colección zlab-princeton/paperscorer |
+| PaperScorer-3B de dominio arXiv | 3,09B | no disponible | Misma tarea, dominio arXiv | no disponible | Hugging Face, colección zlab-princeton/paperscorer |
 
 El autor advierte de una asimetría relevante entre variantes: los modelos entrenados con ICLR vieron unos 21.000 ejemplos, mientras que los entrenados con arXiv acumulan una diferencia de datos de aproximadamente 3×, por lo que cualquier comparación directa entre ambas familias debe corregir ese desequilibrio. No se han publicado en la información disponible cifras de rendimiento de las variantes hermanas.
 
@@ -99,12 +99,12 @@ El autor advierte de una asimetría relevante entre variantes: los modelos entre
 - Sesgos: el modelo aprende las correlaciones presentes en el proceso de revisión de ICLR, incluidas posibles correlaciones espurias con área temática, longitud, estilo de escritura u origen de los autores. No debe emplearse como sustituto de la revisión por pares ni como decisión automatizada final.
 - Asimetría de datos entre las variantes ICLR y arXiv de la colección (~3×), que invalida comparaciones directas sin ajuste.
 - Tamaño del repositorio (13,6 GB) superior al de los pesos en 16 bits, con el coste de descarga y almacenamiento que implica.
-- Adopción mínima: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace. El soporte de la comunidad es prácticamente inexistente.
+- Adopción mínima: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face. El soporte de la comunidad es prácticamente inexistente.
 - Idioma de la documentación y del prompt: inglés. La interfaz y las instrucciones del orquestador también están en inglés.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-3B-Text-OpenReview-ICLR
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-3B-Text-OpenReview-ICLR
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Colección PaperScorer (8 modelos y 2 datasets): https://huggingface.co/collections/zlab-princeton/paperscorer
 - Repositorio del orquestador PaperScorer (paperprep, servidor de scoring y UI web): https://github.com/zlab-princeton/PaperScorer

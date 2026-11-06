@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rishabh157/spanmarker-wikiann-mdeberta` es un modelo de reconocimiento de entidades nombradas (NER) multilingue publicado por Rishabh Kumar (Rishabh157) en HuggingFace. Se construye sobre el backbone encoder `microsoft/mdeberta-v3-base` (12 capas, 768 dimensiones ocultas, atencion posicional relativa desacoplada) y utiliza el framework SpanMarker, una formulacion de clasificacion de spans derivada de PL-Marker en la que cada candidato a entidad se marca con tokens de frontera [S_i, E_j] y se resuelve con supresion no maxima voraz. El ajuste es de parametros completos sobre el corpus WikiANN en siete idiomas (aleman, ingles, espanol, frances, italiano, portugues y sueco), con una taxonomia de tres tipos de entidad: persona (PER), organizacion (ORG) y localizacion (LOC).
+`Rishabh157/spanmarker-wikiann-mdeberta` es un modelo de reconocimiento de entidades nombradas (NER) multilingue publicado por Rishabh Kumar (Rishabh157) en Hugging Face. Se construye sobre el backbone encoder `microsoft/mdeberta-v3-base` (12 capas, 768 dimensiones ocultas, atencion posicional relativa desacoplada) y utiliza el framework SpanMarker, una formulacion de clasificacion de spans derivada de PL-Marker en la que cada candidato a entidad se marca con tokens de frontera [S_i, E_j] y se resuelve con supresion no maxima voraz. El ajuste es de parametros completos sobre el corpus WikiANN en siete idiomas (aleman, ingles, espanol, frances, italiano, portugues y sueco), con una taxonomia de tres tipos de entidad: persona (PER), organizacion (ORG) y localizacion (LOC).
 
 El modelo cuenta con 277.536.772 parametros segun los pesos en safetensors, un orden de magnitud que lo situa en la gama media de los encoders multilingues de NER y que lo hace desplegable en GPU de consumo. Su interes practico radica en la combinacion de cobertura multilingue con una precision alta (88,85 %) en la validacion de WikiANN, lo que lo hace adecuado para tareas de extraccion donde los falsos positivos son costosos; el coste es una tasa de recuperacion mas baja (67,55 %), que implica que el modelo tiende a omitir entidades mas que a inventarlas.
 
@@ -114,10 +114,10 @@ Las alternativas anteriores se citan como referencia de categoria (NER multiling
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rishabh157/spanmarker-wikiann-mdeberta
+- Modelo en Hugging Face: https://huggingface.co/Rishabh157/spanmarker-wikiann-mdeberta
 - Perfil del autor: https://huggingface.co/Rishabh157
 - Modelo base mDeBERTa-v3: https://huggingface.co/microsoft/mdeberta-v3-base
-- Dataset WikiANN en HuggingFace: https://huggingface.co/datasets/unimelb-nlp/wikiann
+- Dataset WikiANN en Hugging Face: https://huggingface.co/datasets/unimelb-nlp/wikiann
 - Paper de DeBERTaV3: https://arxiv.org/abs/2111.09543
 - Paper de PL-Marker (formulacion de spans que inspira SpanMarker): https://arxiv.org/abs/2109.06067
 - Paper de WikiANN (Cross-lingual Name Tagging and Linking for 282 Languages): https://arxiv.org/abs/1705.03551

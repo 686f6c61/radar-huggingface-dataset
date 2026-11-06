@@ -124,7 +124,7 @@ La información disponible solo permite comparar con el modelo base Ling-3.0-tin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
 - Modelo base: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
 - Notas de modelo y evaluación: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/README.md
 - Resultados de benchmarks preliminares: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/benchmarks_preliminary_1104.json

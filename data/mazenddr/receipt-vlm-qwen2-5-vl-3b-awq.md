@@ -93,11 +93,11 @@ Alternativas de la misma categoría, como Donut ajustado sobre CORD v2 u otros e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-awq
+- Modelo en Hugging Face: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-awq
 - Código, arnés de evaluación y documentación: https://github.com/mazenDDr/receipt-vlm
 - Guía de campos, recorrido de un recibo y 100 extracciones registradas: https://mazenddr.github.io/receipt-vlm/
 - Dataset CORD v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 
-Nota: la búsqueda web asociada a esta consulta no devolvió resultados relacionados con el modelo; los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web asociada a esta consulta no devolvió resultados relacionados con el modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card del autor.

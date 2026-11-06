@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`drumshadow/modernbert-indirect-injection-detector` es un clasificador binario de texto especializado en detectar inyecciones de prompt indirectas (indirect prompt injection) en contenido no confiable que lee un agente LLM: salidas de herramientas, páginas web, correos electrónicos, documentos, ficheros y respuestas JSON de API. Lo desarrolla el usuario de HuggingFace `drumshadow` como fine-tuning de `answerdotai/ModernBERT-base`, un transformer encoder de 149,6 millones de parámetros con licencia Apache-2.0.
+`drumshadow/modernbert-indirect-injection-detector` es un clasificador binario de texto especializado en detectar inyecciones de prompt indirectas (indirect prompt injection) en contenido no confiable que lee un agente LLM: salidas de herramientas, páginas web, correos electrónicos, documentos, ficheros y respuestas JSON de API. Lo desarrolla el usuario de Hugging Face `drumshadow` como fine-tuning de `answerdotai/ModernBERT-base`, un transformer encoder de 149,6 millones de parámetros con licencia Apache-2.0.
 
 El modelo responde a una pregunta concreta: ¿contiene este contenido instrucciones inyectadas dirigidas al agente? No es un detector de jailbreaks en turnos de usuario, ni un filtro de seguridad de contenido, ni un sustituto de defensas arquitectónicas. Está pensado para pasarelas de agentes (agent gateways) que puntúan cada resultado de herramienta antes de que el agente lo procese, y en la propia pasarela del autor se ejecuta en modo sombra (shadow mode) junto a una política de seguimiento de contaminación (taint tracking) que nunca relaja sus restricciones basándose en la salida del modelo.
 
@@ -67,7 +67,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| modernbert-indirect-injection-detector | 149,6 M | Ventanas de 512 tokens | Apache-2.0 | HuggingFace |
+| modernbert-indirect-injection-detector | 149,6 M | Ventanas de 512 tokens | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drumshadow/modernbert-indirect-injection-detector
+- Modelo en Hugging Face: https://huggingface.co/drumshadow/modernbert-indirect-injection-detector
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset LLMail-Inject: https://huggingface.co/datasets/microsoft/llmail-inject-challenge
 - Dataset Gandalf ignore instructions: https://huggingface.co/datasets/Lakera/gandalf_ignore_instructions

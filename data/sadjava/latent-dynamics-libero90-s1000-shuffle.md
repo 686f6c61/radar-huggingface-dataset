@@ -68,8 +68,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadjava/latent-dynamics-libero90-s1000-shuffle
-- Colección del autor en HuggingFace: https://huggingface.co/collections/sadjava/libero-seen-pretrain
+- Modelo en Hugging Face: https://huggingface.co/sadjava/latent-dynamics-libero90-s1000-shuffle
+- Colección del autor en Hugging Face: https://huggingface.co/collections/sadjava/libero-seen-pretrain
 - Perfil de GitHub del autor: https://github.com/sadjava
 - Repositorio de LIBERO (benchmark): https://github.com/Lifelong-Robot-Learning/LIBERO
 - Página oficial de LIBERO: https://libero-project.github.io/main.html

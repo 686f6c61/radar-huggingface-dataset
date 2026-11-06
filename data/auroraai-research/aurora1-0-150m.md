@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aurora1.0-150M es un modelo de lenguaje autoregresivo de 149.268.352 parametros (aproximadamente 150M) desarrollado por AuroraAI-Research y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer denso de 30 capas con atencion GQA, codificacion posicional RoPE, QK-Norm y activacion SwiGLU, entrenado desde cero sobre el corpus HuggingFaceTB/smollm-corpus con 7.000 millones de tokens en 11 horas sobre una unica GPU RTX Pro 6000. Su ventana de contexto es de 1024 tokens y su vocabulario de 32.768 tokens.
+Aurora1.0-150M es un modelo de lenguaje autoregresivo de 149.268.352 parametros (aproximadamente 150M) desarrollado por AuroraAI-Research y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer denso de 30 capas con atencion GQA, codificacion posicional RoPE, QK-Norm y activacion SwiGLU, entrenado desde cero sobre el corpus HuggingFaceTB/smollm-corpus con 7.000 millones de tokens en 11 horas sobre una unica GPU RTX Pro 6000. Su ventana de contexto es de 1024 tokens y su vocabulario de 32.768 tokens.
 
 El modelo se posiciona en la categoria de los LLM ultracompactos (por debajo de 200M de parametros), un segmento dominado por GPT-2 Small, SmolLM-135M y Pythia-160M. Su interes principal no es la calidad conversacional, sino servir como plataforma de investigacion barata: cabe en cualquier GPU consumer e incluso en CPU, se puede reentrenar o hacer fine-tuning completo en horas y permite estudiar decisiones de diseno concretas (embeddings factorizados y atados de rango 384, ratio GQA 2:1, Muon combinado con AdamW) sin el coste de un modelo de escala media.
 
@@ -103,7 +103,7 @@ La comparacion cuantitativa de rendimiento entre Aurora1.0-150M y estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraAI-Research/Aurora1.0-150M
+- Modelo en Hugging Face: https://huggingface.co/AuroraAI-Research/Aurora1.0-150M
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - OpenSLM-Leaderboard (referencia del indice entero 15,09 citada por el autor): no se proporciona URL en la informacion disponible.
 - Paper, blog tecnico o repositorio de codigo: no disponible.

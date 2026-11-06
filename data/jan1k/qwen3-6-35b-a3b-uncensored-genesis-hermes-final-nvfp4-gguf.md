@@ -105,7 +105,7 @@ Diferencias destacables: este modelo ofrece una ventana de contexto nominal muy 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF
 - Modelo original con reparación tensorial Genesis (LuffyTheFox): https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
 - Modelo base sin censura (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Ajuste fino Hermes (DJLougen): https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF

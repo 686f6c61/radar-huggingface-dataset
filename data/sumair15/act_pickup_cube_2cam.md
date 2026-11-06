@@ -70,7 +70,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sumair15/act_pickup_cube_2cam
+- Repositorio Hugging Face: https://huggingface.co/Sumair15/act_pickup_cube_2cam
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

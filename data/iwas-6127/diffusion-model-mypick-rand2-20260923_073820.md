@@ -79,10 +79,10 @@ La model card incluye una sección de evaluación con la plantilla vacía y la l
 
 | Modelo | Parametros | Tipo de politica | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (diffusion-mypick-rand2) | 277,8 M | Difusion sobre acciones | 2 imagenes 480x640 + estado 6D | Apache 2.0 | HuggingFace, 0 descargas |
+| Este modelo (diffusion-mypick-rand2) | 277,8 M | Difusion sobre acciones | 2 imagenes 480x640 + estado 6D | Apache 2.0 | Hugging Face, 0 descargas |
 | ACT (Action Chunking Transformer, en LeRobot) | No disponible en la informacion proporcionada | Transformer determinista con action chunking | Imagenes + estado | Apache 2.0 (LeRobot) | Implementado en la libreria LeRobot |
-| SmolVLA (LeRobot) | Aprox. 450 M, segun documentacion publica de LeRobot | Vision-language-action con flow matching | Imagenes + estado + instruccion en lenguaje | Apache 2.0 | Pesos publicos en HuggingFace |
-| pi0 / pi0-FAST | Aprox. 3,3 B | Vision-language-action con flow matching | Imagenes + estado + instruccion | Apache 2.0 | Pesos publicos en HuggingFace |
+| SmolVLA (LeRobot) | Aprox. 450 M, segun documentacion publica de LeRobot | Vision-language-action con flow matching | Imagenes + estado + instruccion en lenguaje | Apache 2.0 | Pesos publicos en Hugging Face |
+| pi0 / pi0-FAST | Aprox. 3,3 B | Vision-language-action con flow matching | Imagenes + estado + instruccion | Apache 2.0 | Pesos publicos en Hugging Face |
 
 La comparación relevante es de planteamiento, no de rendimiento: este checkpoint no ha sido evaluado frente a ninguno de los anteriores. Frente a ACT, la difusión ofrece multimodalidad y trayectorias más suaves a cambio de mayor coste de inferencia (varias iteraciones de muestreo en lugar de una pasada). Frente a SmolVLA o pi0, carece por completo de condicionamiento por lenguaje y de generalización entre tareas, ya que solo ha visto 30 episodios de una tarea sin etiquetar.
 
@@ -103,11 +103,11 @@ La comparación relevante es de planteamiento, no de rendimiento: este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iwas-6127/diffusion-model-mypick-rand2-20260923_073820
+- Modelo en Hugging Face: https://huggingface.co/Iwas-6127/diffusion-model-mypick-rand2-20260923_073820
 - Dataset de entrenamiento: https://huggingface.co/datasets/Iwas-6127/my_pick_test_rnd_20260922_141131
 - Visualizador del dataset en LeRobot: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Iwas-6127/my_pick_test_rnd_20260922_141131
 - Artículo de Diffusion Policy (arXiv): https://arxiv.org/abs/2303.04137
-- Ficha del artículo en HuggingFace Papers: https://huggingface.co/papers/2303.04137
+- Ficha del artículo en Hugging Face Papers: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de instalación: https://huggingface.co/docs/lerobot/main/en/installation

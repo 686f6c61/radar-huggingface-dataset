@@ -105,12 +105,12 @@ La comparación directa con alternativas de otros fabricantes del mismo tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/russellwmy/qwen3.6-35b-a3b-ternary
+- Repositorio Hugging Face: https://huggingface.co/russellwmy/qwen3.6-35b-a3b-ternary
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Checkpoint de 4 bits de origen (resto de pesos y visión): https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit
 - Motor de inferencia ironbark: https://github.com/russellwmy/ironbark
-- Colección Qwen3.6 en HuggingFace: https://huggingface.co/collections/Qwen/qwen36
+- Colección Qwen3.6 en Hugging Face: https://huggingface.co/collections/Qwen/qwen36
 - Catálogo de Microsoft Foundry (Qwen3.6-35B-A3B): https://ai.azure.com/catalog/models/qwen3.6-35b-a3b
 - Catálogo de Microsoft Foundry (variante FW): https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B
 - Alibaba Cloud Model Studio (documentación de Qwen3.6-35B-A3B): https://help.aliyun.com/en/model-studio/qwen3-6-35b-a3b

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-shifted-l2_mixed_remove0.5_rho0 | 6,74B | No disponible | SVD con métrica mixta de seguridad, sin recuperación | Llama 2 | HuggingFace, 17 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 tokens | Modelo base alineado con RLHF | Llama 2 | HuggingFace, ampliamente usado |
+| svd-safety-shifted-l2_mixed_remove0.5_rho0 | 6,74B | No disponible | SVD con métrica mixta de seguridad, sin recuperación | Llama 2 | Hugging Face, 17 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 tokens | Modelo base alineado con RLHF | Llama 2 | Hugging Face, ampliamente usado |
 | Variantes de poda/SVD de Llama 2 de la literatura | ~3-6B | 4.096 tokens | Poda estructurada o SVD con calibración estándar | Llama 2 | Repos de investigación |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288

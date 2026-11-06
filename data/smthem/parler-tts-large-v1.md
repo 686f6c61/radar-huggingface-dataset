@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`smthem/parler-tts-large-v1` es un repositorio alojado en HuggingFace bajo el identificador de usuario `smthem`, que por su nombre parece corresponder a una variante o reempaquetado del modelo Parler-TTS en su version "large v1". Parler-TTS es un sistema de sintesis de voz (text-to-speech) desarrollado originalmente por el equipo de Parler-TTS (colaboracion entre HuggingFace y el grupo de investigacion de Sanchit Gandhi y otros), disenado para generar habla de alta calidad a partir de texto y de una descripcion textual del estilo de voz (por ejemplo, tono, genero percibido, velocidad o ruido de fondo). El modelo se enmarca en la familia de modelos TTS condicionados por descripcion, una linea de trabajo que busca ofrecer control fino sobre las caracteristicas de la voz generada sin necesidad de muestras de referencia.
+`smthem/parler-tts-large-v1` es un repositorio alojado en Hugging Face bajo el identificador de usuario `smthem`, que por su nombre parece corresponder a una variante o reempaquetado del modelo Parler-TTS en su version "large v1". Parler-TTS es un sistema de sintesis de voz (text-to-speech) desarrollado originalmente por el equipo de Parler-TTS (colaboracion entre Hugging Face y el grupo de investigacion de Sanchit Gandhi y otros), disenado para generar habla de alta calidad a partir de texto y de una descripcion textual del estilo de voz (por ejemplo, tono, genero percibido, velocidad o ruido de fondo). El modelo se enmarca en la familia de modelos TTS condicionados por descripcion, una linea de trabajo que busca ofrecer control fino sobre las caracteristicas de la voz generada sin necesidad de muestras de referencia.
 
-Sin embargo, la informacion publica disponible sobre este repositorio concreto es practicamente nula. La model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (2026-11-06), lo que sugiere un artefacto subido sin documentacion adicional ni mantenimiento posterior. No se dispone de pipeline declarado en los metadatos de HuggingFace.
+Sin embargo, la informacion publica disponible sobre este repositorio concreto es practicamente nula. La model card unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas (2026-11-06), lo que sugiere un artefacto subido sin documentacion adicional ni mantenimiento posterior. No se dispone de pipeline declarado en los metadatos de Hugging Face.
 
 Por tanto, esta ficha debe interpretarse como una descripcion del linaje tecnico del modelo (la familia Parler-TTS) combinada con una advertencia explicita sobre la ausencia de datos verificables en este repositorio concreto. Cualquier dato no confirmado se marca como "no disponible" y no debe asumirse como cierto para esta copia especifica.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `smthem/parler-tts-large-v1` | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Sin documentacion ni benchmarks |
-| Parler-TTS (familia original) | variable segun variante | no disponible | Apache 2.0 | HuggingFace | TTS condicionado por descripcion, documentado por sus autores |
-| Otros TTS open source (p. ej. variantes de VITS, Bark, XTTS) | variable | no disponible | variable (MIT, Apache, Coqui CPML) | HuggingFace / GitHub | Alternativas con documentacion y comunidades activas |
+| `smthem/parler-tts-large-v1` | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin documentacion ni benchmarks |
+| Parler-TTS (familia original) | variable segun variante | no disponible | Apache 2.0 | Hugging Face | TTS condicionado por descripcion, documentado por sus autores |
+| Otros TTS open source (p. ej. variantes de VITS, Bark, XTTS) | variable | no disponible | variable (MIT, Apache, Coqui CPML) | Hugging Face / GitHub | Alternativas con documentacion y comunidades activas |
 
 La comparacion cuantitativa no es posible porque este repositorio no publica parametros, contexto ni resultados. Se recomienda contrastar con la model card oficial de Parler-TTS antes de adoptar esta copia.
 
@@ -82,7 +82,7 @@ La comparacion cuantitativa no es posible porque este repositorio no publica par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smthem/parler-tts-large-v1
+- Repositorio en Hugging Face: https://huggingface.co/smthem/parler-tts-large-v1
 - Model card oficial de la familia Parler-TTS (referencia de linaje): no disponible en la informacion proporcionada
 - Paper o blog original de Parler-TTS: no disponible en la informacion proporcionada
 - Repositorio de codigo de Parler-TTS: no disponible en la informacion proporcionada

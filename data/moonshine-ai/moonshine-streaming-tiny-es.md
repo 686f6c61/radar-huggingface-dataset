@@ -89,7 +89,7 @@ No se dispone de datos de comparación con otros modelos ASR en la información 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es)
+- [Modelo en Hugging Face](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es)
 - [Modelo base streaming (inglés)](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny)
 - [Modelo no streaming](https://huggingface.co/UsefulSensors/moonshine-tiny)
 - [Demos en WebAssembly](https://www.moonshine.ai/)

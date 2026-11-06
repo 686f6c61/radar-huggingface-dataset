@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390` es un adaptador LoRA publicado en HuggingFace por el usuario nmuendler. No se trata de un modelo completo, sino de un checkpoint intermedio (paso 390) de un experimento de ajuste supervisado (SFT) sobre texto, construido sobre el modelo base `open-thoughts/OpenThinker-7B`. El nombre del repositorio sugiere que forma parte de una curva de entrenamiento ("training-curve-run1") disenada para analizar la evolucion del ajuste a lo largo de los pasos, mas que un artefacto destinado a produccion.
+`nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390` es un adaptador LoRA publicado en Hugging Face por el usuario nmuendler. No se trata de un modelo completo, sino de un checkpoint intermedio (paso 390) de un experimento de ajuste supervisado (SFT) sobre texto, construido sobre el modelo base `open-thoughts/OpenThinker-7B`. El nombre del repositorio sugiere que forma parte de una curva de entrenamiento ("training-curve-run1") disenada para analizar la evolucion del ajuste a lo largo de los pasos, mas que un artefacto destinado a produccion.
 
 El modelo base, OpenThinker-7B, pertenece al proyecto Open Thoughts y es un modelo de razonamiento de aproximadamente 7.000 millones de parametros. Este adaptador anade una capa de ajuste fino sobre dicho modelo mediante PEFT/LoRA, con un tamano de repositorio de 0,3 GB, coherente con pesos de adaptador y no con los pesos completos del transformer.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390 | ~7B (base) + adaptador LoRA | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| open-thoughts/OpenThinker-7B | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no confirmada en la informacion proporcionada | Publico en HuggingFace |
-| Otros modelos de razonamiento de ~7B (por ejemplo, variantes basadas en Qwen2.5) | ~7B | no disponible | no disponible | variable | Publicos en HuggingFace |
+| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390 | ~7B (base) + adaptador LoRA | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| open-thoughts/OpenThinker-7B | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no confirmada en la informacion proporcionada | Publico en Hugging Face |
+| Otros modelos de razonamiento de ~7B (por ejemplo, variantes basadas en Qwen2.5) | ~7B | no disponible | no disponible | variable | Publicos en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa rigurosa.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390
+- Hugging Face (adaptador): https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step390
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico (citada en la plantilla): https://mlco2.github.io/impact

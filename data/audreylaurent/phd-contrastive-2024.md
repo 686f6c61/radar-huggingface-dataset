@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`audreylaurent/phd-contrastive-2024` es un repositorio de investigación publicado en HuggingFace por el usuario `audreylaurent` que contiene una implementación funcional de la arquitectura **Flamingo** orientada a entrenamiento **contrastivo**, en una configuración declarada como «large». El repositorio no se presenta como un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*) y que no debe interpretarse como un modelo de referencia con benchmarks publicados.
+`audreylaurent/phd-contrastive-2024` es un repositorio de investigación publicado en Hugging Face por el usuario `audreylaurent` que contiene una implementación funcional de la arquitectura **Flamingo** orientada a entrenamiento **contrastivo**, en una configuración declarada como «large». El repositorio no se presenta como un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*) y que no debe interpretarse como un modelo de referencia con benchmarks publicados.
 
 El peso real declarado en los metadatos de safetensors es de 33.088 parámetros (con un tamaño de repositorio de 0.0 GB), una magnitud extremadamente reducida que confirma la naturaleza de artefacto de inicialización y no de modelo desplegable. La arquitectura combina atención estándar con fusión de bajo rango (*low rank fusion*), activación swish y normalización `scalenorm`, y la receta de entrenamiento por defecto usa el optimizador **adafactor** con un schedule de *constant warmup*.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio **no contiene un modelo entrenado**. 
 - El diseno Flamingo esta pensado para **fusion multimodal** (tipicamente vision-lenguaje) mediante mecanismos de atencion cruzada y fusion de bajo rango, aunque en este repositorio no se documenta que modalidades concretas se cubren.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta declarado en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta declarado en Hugging Face).
 - Capacidades especiales (modo *thinking*, vision, audio): no disponibles ni verificadas.
 - Lo que si ofrece el repositorio es un **punto de entrada ejecutable** (`predict.py` con bloque `__main__` de ejemplo) y una configuracion reproducible para experimentacion.
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, el repositorio **no contiene un modelo entrenado**. 
 - **Linea base para investigacion en aprendizaje contrastivo**: el repositorio proporciona un esqueleto Flamingo funcional sobre el que implementar perdidas contrastivas (InfoNCE, triplet loss) y comparar contra alternativas de capacidad equivalente, tal como recomienda la propia model card.
 - **Pruebas de humo en CI/CD de pipelines de ML**: dado su tamano trivial, el checkpoint puede cargarse en un *runner* de integracion continua para verificar que el codigo de carga, el `config.json` y la firma del modelo no se rompen entre commits, sin coste apreciable de GPU.
 - **Prototipado de arquitecturas multimodales**: investigadores que quieran experimentar con fusion de bajo rango, `scalenorm` o activacion swish pueden partir de esta implementacion en lugar de escribirla desde cero, modificando el `config.json` para escalar la configuracion.
-- **Docencia y formacion**: sirve como ejemplo didactico de estructura de repositorio HuggingFace bien documentada, con separacion explicita entre configuracion, argumentos de entrenamiento y pesos, y con una declaracion honesta de limitaciones.
+- **Docencia y formacion**: sirve como ejemplo didactico de estructura de repositorio Hugging Face bien documentada, con separacion explicita entre configuracion, argumentos de entrenamiento y pesos, y con una declaracion honesta de limitaciones.
 - **Auditoria de reproducibilidad**: el repositorio incluye los ajustes por defecto y el codigo de ejemplo, lo que permite reproducir el entorno declarado y comprobar que los *scripts* se ejecutan, util para validar protocolos de evaluacion antes de lanzar experimentos costosos.
 - **Investigacion sobre retrieval y representaciones**: si se entrena sobre un corpus propio, el objetivo contrastivo lo hace candidato para tareas de recuperacion de informacion o *clustering* de embeddings, siempre que se complete el entrenamiento y se documenten los resultados por separado.
 - **Evaluacion metodologica de objetivos contrastivos**: permite disenar comparativas controladas (misma exposicion de datos, mismas semillas, misma linea base) siguiendo las recomendaciones de evaluacion incluidas en la model card.
@@ -78,10 +78,10 @@ La model card del autor indica de forma explicita que «no se reclama ninguna pu
 
 | Modelo | Parametros | Contexto | Enfoque | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `audreylaurent/phd-contrastive-2024` | 33.088 | no disponible | Flamingo + contrastivo | No (inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| `audreylaurent/phd-contrastive-2024` | 33.088 | no disponible | Flamingo + contrastivo | No (inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Flamingo (DeepMind) | 80.000 millones | 2.048 tokens (aprox., segun publicacion) | Flamingo multimodal few-shot | Si | No comercial (investigacion) | No publico como pesos abiertos |
-| OpenFlamingo | 3.000-9.000 millones | 2.048 tokens (aprox.) | Reimplementacion abierta de Flamingo | Si | MIT | HuggingFace, ampliamente utilizado |
-| IDEFICS | 9.000-80.000 millones | 2.048 tokens (aprox.) | Flamingo abierto sobre LLM existente | Si | No comercial (segun variante) | HuggingFace |
+| OpenFlamingo | 3.000-9.000 millones | 2.048 tokens (aprox.) | Reimplementacion abierta de Flamingo | Si | MIT | Hugging Face, ampliamente utilizado |
+| IDEFICS | 9.000-80.000 millones | 2.048 tokens (aprox.) | Flamingo abierto sobre LLM existente | Si | No comercial (segun variante) | Hugging Face |
 
 Las cifras de Flamingo, OpenFlamingo e IDEFICS se incluyen como referencia de categoria arquitectonica y no provienen de la informacion proporcionada en esta busqueda, por lo que deben verificarse en sus respectivas fuentes antes de citarse. La comparacion directa con este repositorio no es significativa en terminos de rendimiento, dado que aqui no existe un modelo entrenado.
 
@@ -99,7 +99,7 @@ Las cifras de Flamingo, OpenFlamingo e IDEFICS se incluyen como referencia de ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/audreylaurent/phd-contrastive-2024
+- Hugging Face: https://huggingface.co/audreylaurent/phd-contrastive-2024
 - Paper de referencia de Flamingo (no enlazado en la informacion proporcionada): no disponible
 - Repositorio de codigo adicional: no disponible
 - Demo o *space*: no disponible

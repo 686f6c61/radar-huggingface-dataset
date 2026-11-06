@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vsp-persona-qwen-0.5b es un ajuste fino de tipo LoRA, fusionado en los pesos completos, sobre Qwen/Qwen2.5-0.5B-Instruct. Lo desarrolla el usuario de HuggingFace vishnusureshperumbavoor y su objetivo es conversar adoptando la persona de Vishnu Suresh Perumbavoor, es decir, reproducir su estilo conversacional, vocabulario, ritmo tecnico y tono sin necesidad de system prompt.
+vsp-persona-qwen-0.5b es un ajuste fino de tipo LoRA, fusionado en los pesos completos, sobre Qwen/Qwen2.5-0.5B-Instruct. Lo desarrolla el usuario de Hugging Face vishnusureshperumbavoor y su objetivo es conversar adoptando la persona de Vishnu Suresh Perumbavoor, es decir, reproducir su estilo conversacional, vocabulario, ritmo tecnico y tono sin necesidad de system prompt.
 
 El modelo parte de la arquitectura Qwen2 de 0,5B parametros (494.032.768 parametros reales segun safetensors) y se ha entrenado nativamente con sintaxis ChatML, de modo que el rol de persona queda codificado en los pesos y no en el prompt de sistema. Esto lo hace especialmente adecuado para asistentes de portafolio o bots personales embebidos en navegador, donde el espacio y la latencia son criticos.
 
@@ -89,7 +89,7 @@ La comparacion directa con alternativas de la misma categoria (ajustes de person
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishnusureshperumbavoor/vsp-persona-qwen-0.5b
+- Modelo en Hugging Face: https://huggingface.co/vishnusureshperumbavoor/vsp-persona-qwen-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del bot de portafolio V-S-P: https://github.com/vishnusureshperumbavoor/V-S-P
 - @wllama/wllama (runtime in-browser): no disponible enlace directo en la informacion proporcionada

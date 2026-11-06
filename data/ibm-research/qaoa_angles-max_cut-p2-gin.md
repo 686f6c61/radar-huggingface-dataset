@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ibm-research/qaoa_angles.max_cut.p2.gin` es un artefacto de investigación publicado por IBM Research en HuggingFace. Por su identificador y nomenclatura, se trata de un modelo que predice los ángulos (parámetros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad de circuito p=2. El sufijo `.gin` apunta a una Graph Isomorphism Network, es decir, una red neuronal sobre grafos, y el formato de pesos publicado es ONNX. No es un modelo de lenguaje ni un modelo generativo de propósito general.
+El modelo `ibm-research/qaoa_angles.max_cut.p2.gin` es un artefacto de investigación publicado por IBM Research en Hugging Face. Por su identificador y nomenclatura, se trata de un modelo que predice los ángulos (parámetros variacionales) de un circuito QAOA (Quantum Approximate Optimization Algorithm) para instancias del problema Max-Cut con profundidad de circuito p=2. El sufijo `.gin` apunta a una Graph Isomorphism Network, es decir, una red neuronal sobre grafos, y el formato de pesos publicado es ONNX. No es un modelo de lenguaje ni un modelo generativo de propósito general.
 
 El problema que aborda es de naturaleza híbrida cuántico-clásica: QAOA requiere optimizar clásicamente los ángulos beta y gamma de un circuito parametrizado, un proceso costoso porque cada evaluación implica ejecutar el circuito en un simulador o en hardware cuántico real. Un modelo capaz de predecir buenos ángulos a partir de la estructura del grafo elimina o reduce drásticamente ese bucle de optimización, actuando como inicializador o sustituto del optimizador clásico.
 
@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables publicados por IBM Resear
 
 | Enfoque | Entrada | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ibm-research/qaoa_angles.max_cut.p2.gin` | Grafo Max-Cut | no disponible | no aplica | apache-2.0 | ONNX en HuggingFace, 0 descargas |
+| `ibm-research/qaoa_angles.max_cut.p2.gin` | Grafo Max-Cut | no disponible | no aplica | apache-2.0 | ONNX en Hugging Face, 0 descargas |
 | Optimizador clasico (COBYLA, SPSA) | Funcion de coste QAOA | no aplica | no aplica | depende de la libreria | ampliamente disponible (Qiskit, SciPy) |
 | Angulos heuristicos fijos | Ninguna | no aplica | no aplica | no aplica | trivial de implementar, calidad limitada |
 | Otros predictores GNN de angulos QAOA | Grafo | no disponible | no aplica | variable | no identificados en la busqueda |
@@ -85,7 +85,7 @@ La comparacion cuantitativa con alternativas no es posible sin datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gin
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p2.gin
 - IBM Research: https://www.ibm.com/
 - Qiskit (referencia para QAOA y ejecucion de circuitos): https://www.ibm.com/quantum/qiskit
 - ONNX Runtime: https://onnxruntime.ai/

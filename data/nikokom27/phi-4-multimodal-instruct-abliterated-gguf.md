@@ -94,7 +94,7 @@ La comparación se limita a la información disponible: no hay datos públicos e
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/nikokom27/Phi-4-multimodal-instruct-abliterated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/nikokom27/Phi-4-multimodal-instruct-abliterated-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-multimodal-instruct
 - Versión abliterada de huihui-ai: https://huggingface.co/huihui-ai/Phi-4-multimodal-instruct-abliterated
 - Ficha en ModelScope de la versión abliterada: https://www.modelscope.cn/models/huihui-ai/Phi-4-multimodal-instruct-abliterated/summary

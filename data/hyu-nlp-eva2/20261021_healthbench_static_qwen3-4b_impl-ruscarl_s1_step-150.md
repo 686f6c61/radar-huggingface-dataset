@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1_step-150
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1_step-150
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - HealthBench (OpenAI): https://openai.com/index/healthbench/
 - VERL (framework de RL para LLMs): https://github.com/volcengine/verl

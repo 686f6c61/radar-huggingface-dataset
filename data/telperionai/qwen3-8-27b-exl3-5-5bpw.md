@@ -97,8 +97,8 @@ El modelo EXL3 5,5 bpw supera a NVFP4 en fidelidad (1,34% vs 1,85% confident) co
 
 ## Enlaces
 
-- [HuggingFace — TelperionAI/Qwen3.8-27B-EXL3-5.5bpw](https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-5.5bpw)
-- [HuggingFace — Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face — TelperionAI/Qwen3.8-27B-EXL3-5.5bpw](https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-5.5bpw)
+- [Hugging Face — Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub — QwenLM/Qwen3.8 (serie de modelos)](https://github.com/QwenLM/Qwen3.8)
 - [GitHub — exllamav3 (runtime requerido)](https://github.com/turboderp-org/exllamav3)
-- [HuggingFace — TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ (variante alternativa)](https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ)
+- [Hugging Face — TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ (variante alternativa)](https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ)

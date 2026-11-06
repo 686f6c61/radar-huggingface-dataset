@@ -6,7 +6,7 @@ El modelo `AnirbanSaha/gemma2-27b-tlink-sentence-only-autoregressive-peft` es un
 
 El adaptador clasifica el par de eventos de una frase en una de cuatro etiquetas: `BEFORE`, `AFTER`, `OTHER` y `NONE`. Se entreno en una sola epoca sobre el dataset `AnirbanSaha/tlink-classification-sentence-only`, con variante de entrada a nivel de frase, en precision bfloat16 y sin cuantizacion. La configuracion LoRA emplea rango 16, alpha 32, dropout 0,05 y aplica adaptadores a los siete modulos de proyeccion del transformer (`q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`).
 
-Su relevancia es acotada pero clara: permite reproducir y reutilizar un fine-tuning de bajo coste sobre un modelo de 27B en una tarea de extraccion de estructura temporal, sin necesidad de redistribuir ni volver a entrenar el modelo base completo. El repositorio es muy reciente (creado el 2026-10-05 segun los metadatos de HuggingFace), acumula 6 descargas y 0 likes, y no incluye resultados de evaluacion publicados, por lo que debe considerarse un artefacto de investigacion sin validacion externa documentada.
+Su relevancia es acotada pero clara: permite reproducir y reutilizar un fine-tuning de bajo coste sobre un modelo de 27B en una tarea de extraccion de estructura temporal, sin necesidad de redistribuir ni volver a entrenar el modelo base completo. El repositorio es muy reciente (creado el 2026-10-05 segun los metadatos de Hugging Face), acumula 6 descargas y 0 likes, y no incluye resultados de evaluacion publicados, por lo que debe considerarse un artefacto de investigacion sin validacion externa documentada.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma2-27b-tlink-sentence-only-autoregressive-peft | 27B (base) + adaptador LoRA r=16 | 4096 tokens en entrenamiento | No disponible | No disponible | HuggingFace, 6 descargas |
+| gemma2-27b-tlink-sentence-only-autoregressive-peft | 27B (base) + adaptador LoRA r=16 | 4096 tokens en entrenamiento | No disponible | No disponible | Hugging Face, 6 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,12 +83,12 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - Sesgos conocidos: no disponibles. No se documenta ninguna evaluacion de sesgo, toxicidad o equidad, ni del modelo base ni del adaptador.
 - Idiomas: no disponibles. No se especifica en que idioma se entreno el dataset, por lo que el comportamiento multilingue es incierto.
 - Licencia del adaptador: no disponible. El uso comercial queda condicionado como minimo por los terminos de uso de Gemma aplicables al modelo base, que el usuario debe revisar por separado.
-- Para produccion, el repositorio no ofrece garantias de mantenimiento: 0 likes, 6 descargas y sin pipeline declarado en HuggingFace.
+- Para produccion, el repositorio no ofrece garantias de mantenimiento: 0 likes, 6 descargas y sin pipeline declarado en Hugging Face.
 - El adaptador no esta fusionado con el modelo base, por lo que cualquier despliegue debe gestionar dos artefactos y verificar la compatibilidad de versiones entre `peft`, `transformers` y el modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnirbanSaha/gemma2-27b-tlink-sentence-only-autoregressive-peft
+- Modelo en Hugging Face: https://huggingface.co/AnirbanSaha/gemma2-27b-tlink-sentence-only-autoregressive-peft
 - Modelo base: https://huggingface.co/google/gemma-2-27b-it
 - Dataset de entrenamiento referenciado en los metadatos: https://huggingface.co/datasets/AnirbanSaha/tlink-classification-sentence-only
 - Libreria PEFT: https://github.com/huggingface/peft

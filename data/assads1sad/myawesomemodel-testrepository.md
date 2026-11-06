@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado por el usuario Assads1SAD en HuggingFace bajo licencia MIT. Según las etiquetas del repositorio, está construido con la librería transformers y se identifica como un modelo BERT orientado a extracción de características. Sin embargo, la model card describe un modelo con capacidades de razonamiento avanzado, matemáticas, programación y soporte de function calling, lo que contradice la arquitectura BERT declarada en las etiquetas. Esta discrepancia, junto con el hecho de que el repositorio tiene 0 descargas y 0 likes, sugiere que se trata de un modelo experimental o de un repositorio de prueba.
+MyAwesomeModel es un modelo publicado por el usuario Assads1SAD en Hugging Face bajo licencia MIT. Según las etiquetas del repositorio, está construido con la librería transformers y se identifica como un modelo BERT orientado a extracción de características. Sin embargo, la model card describe un modelo con capacidades de razonamiento avanzado, matemáticas, programación y soporte de function calling, lo que contradice la arquitectura BERT declarada en las etiquetas. Esta discrepancia, junto con el hecho de que el repositorio tiene 0 descargas y 0 likes, sugiere que se trata de un modelo experimental o de un repositorio de prueba.
 
 La model card afirma que el modelo ha sido actualizado con mejoras en la profundidad de razonamiento y reducción de alucinaciones, mencionando resultados en el benchmark AIME 2025 que pasarían del 70% al 87,5% de precisión. No obstante, no se proporcionan detalles técnicos sobre la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La información disponible es insuficiente para evaluar el modelo de forma rigurosa.
 
@@ -10,7 +10,7 @@ La model card afirma que el modelo ha sido actualizado con mejoras en la profund
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformers (BERT según etiquetas de HuggingFace; no se especifica la variante exacta) |
+| Arquitectura | Transformers (BERT según etiquetas de Hugging Face; no se especifica la variante exacta) |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -68,5 +68,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Assads1SAD/MyAwesomeModel-TestRepository
-- Repositorio de prueba relacionado en HuggingFace: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepository
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Assads1SAD/MyAwesomeModel-TestRepository
+- Repositorio de prueba relacionado en Hugging Face: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepository

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justinrahman/retrieval-notebook` es un prototipo de investigación publicado en HuggingFace por el usuario justinrahman. Se presenta como una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), con una configuración declarada como "huge". No obstante, la propia model card aclara explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
+`justinrahman/retrieval-notebook` es un prototipo de investigación publicado en Hugging Face por el usuario justinrahman. Se presenta como una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), con una configuración declarada como "huge". No obstante, la propia model card aclara explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
 
 El repositorio tiene un tamaño de 0.0 GB y el recuento de parámetros en safetensors es de 24.832, una cifra que resulta incompatible con una arquitectura DeiT de escala "huge" (que en su definición original ronda los 600 millones de parámetros). Esta discrepancia, junto con la ausencia de métricas, descargas y likes, sugiere que se trata de un artefacto de investigación incipiente o de una configuración mínima de andamiaje más que de un modelo utilizable en producción.
 
@@ -48,7 +48,7 @@ No se proporciona información sobre el volumen de datos de entrenamiento, la co
 - Investigación en recuperación visual: usar el repositorio como esqueleto para experimentar con atención lineal y fusión bilinear en tareas de image-text retrieval, partiendo de la configuración incluida y sustituyendo el checkpoint por uno entrenado.
 - Reproducción de experimentos académicos: el script `predict.py` y `training_args.json` permiten montar un pipeline reproducible con semillas fijas para comparar arquitecturas de recuperación bajo presupuesto controlado.
 - Pruebas de humo en CI: el checkpoint de inicialización permite validar que el código de carga, preprocesado y forward pass funciona antes de lanzar entrenamientos costosos.
-- Docencia y formación: sirve como ejemplo didáctico de cómo estructurar un repositorio de investigación en HuggingFace con configuración, receta de entrenamiento y advertencias explícitas sobre el estado del artefacto.
+- Docencia y formación: sirve como ejemplo didáctico de cómo estructurar un repositorio de investigación en Hugging Face con configuración, receta de entrenamiento y advertencias explícitas sobre el estado del artefacto.
 - Base para fine-tuning sobre Flickr30k: la propia model card sugiere este dataset como primer banco de evaluación; el usuario puede entrenar el modelo y reportar métricas con tres semillas.
 - Exploración de variantes de atención: dado que declara atención lineal, es un punto de partida para estudiar eficiencia computacional frente a atención cuadrática en transformers de visión.
 
@@ -82,10 +82,10 @@ La comparación es orientativa: los tres modelos de referencia son artefactos en
 - Existe una inconsistencia entre el recuento real de parámetros (24.832) y la escala "huge" declarada en la model card, lo que impide fiarse de las especificaciones sin inspección directa del `config.json`.
 - No hay información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas porque el modelo no está entrenado.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte de revisar por separado los términos de los datos externos que se utilicen con el repositorio.
-- La implementación es personalizada: las APIs de carga automática de HuggingFace (`AutoModel`, `from_pretrained`) requieren un adaptador explícito.
+- La implementación es personalizada: las APIs de carga automática de Hugging Face (`AutoModel`, `from_pretrained`) requieren un adaptador explícito.
 - No apto para producción sin entrenamiento, evaluación multi-semilla y auditoría previas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinrahman/retrieval-notebook
+- Repositorio en Hugging Face: https://huggingface.co/justinrahman/retrieval-notebook
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -31,7 +31,7 @@ El entrenamiento incorpora RY-DMD, una destilación por coincidencia de distribu
 
 - Superresolución de vídeo de un solo paso: escalado de material de baja calidad a alta resolución, incluyendo inferencia 4K sin teselado espacial según el autor.
 - Restauración de vídeo (etiqueta `video-restoration` del repositorio): reconstrucción de detalle y reducción de degradaciones, sin que la model card especifique qué tipos concretos de degradación se cubren.
-- Condicionamiento explícito por vídeo de baja calidad mediante el módulo `lq_proj_in`, además del pipeline `video-to-video` declarado en HuggingFace.
+- Condicionamiento explícito por vídeo de baja calidad mediante el módulo `lq_proj_in`, además del pipeline `video-to-video` declarado en Hugging Face.
 - Dos modos de funcionamiento: Turbo (prioriza velocidad) y Base (prioriza calidad de reconstrucción), con decoder compartido.
 - Inferencia en un único paso de difusión, lo que evita las decenas de pasos habituales en modelos de difusión multi-step.
 - Generación de vídeo a partir de texto: no documentada para este checkpoint, aunque el modelo base Wan2.1-T2V-1.3B es texto-a-vídeo.
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlashVSR+ (Turbo / Base) | Superresolución y restauración de vídeo, un paso | No disponible (base de 1.300 M) | No aplica | Apache 2.0 | HuggingFace, 215 descargas |
+| FlashVSR+ (Turbo / Base) | Superresolución y restauración de vídeo, un paso | No disponible (base de 1.300 M) | No aplica | Apache 2.0 | Hugging Face, 215 descargas |
 | FlashVSR (original, arXiv 2510.12747) | Superresolución de vídeo | No disponible | No aplica | No disponible | Referenciado como trabajo previo; repositorio no indicado en la información disponible |
-| Wan2.1-T2V-1.3B | Generación texto-a-vídeo (modelo base) | 1.300 M | No aplica | No disponible en la información proporcionada | HuggingFace (`Wan-AI/Wan2.1-T2V-1.3B`) |
+| Wan2.1-T2V-1.3B | Generación texto-a-vídeo (modelo base) | 1.300 M | No aplica | No disponible en la información proporcionada | Hugging Face (`Wan-AI/Wan2.1-T2V-1.3B`) |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada; la comparación se limita a tarea, tamaño declarado, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruchangyao/FlashVSR_plus
+- Hugging Face: https://huggingface.co/ruchangyao/FlashVSR_plus
 - Página del proyecto: https://flashvsr.tech
 - Paper de FlashVSR+: https://arxiv.org/abs/2610.17552
 - Paper de FlashVSR original: https://arxiv.org/abs/2510.12747

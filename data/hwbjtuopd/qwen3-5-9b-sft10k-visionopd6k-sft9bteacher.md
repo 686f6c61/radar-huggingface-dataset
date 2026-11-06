@@ -69,10 +69,10 @@ No se han publicado comparaciones con otros modelos en la misma tabla. La evalua
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento visual | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B (base) | 9,4B | 262K | Apache-2.0 | Benchmarks oficiales de Qwen3.5 | HuggingFace, ModelScope |
-| Qwen3.5-9B-SFT10K-VisionOPD6K (este) | 9,4B | 262K (entrenado con 9K) | Apache-2.0 | VStar 92,15%, MMStar 77,27% | HuggingFace |
-| Qwen2.5-VL-7B | 7,6B | 32K | Apache-2.0 | MMStar ~60% (aprox.) | HuggingFace |
-| Llama-3.2-11B-Vision | 11B | 128K | Llama 3.2 Community | MMStar ~55% (aprox.) | HuggingFace |
+| Qwen3.5-9B (base) | 9,4B | 262K | Apache-2.0 | Benchmarks oficiales de Qwen3.5 | Hugging Face, ModelScope |
+| Qwen3.5-9B-SFT10K-VisionOPD6K (este) | 9,4B | 262K (entrenado con 9K) | Apache-2.0 | VStar 92,15%, MMStar 77,27% | Hugging Face |
+| Qwen2.5-VL-7B | 7,6B | 32K | Apache-2.0 | MMStar ~60% (aprox.) | Hugging Face |
+| Llama-3.2-11B-Vision | 11B | 128K | Llama 3.2 Community | MMStar ~55% (aprox.) | Hugging Face |
 
 Los valores de comparación para Qwen2.5-VL y Llama-3.2 son aproximados y no verificados; se recomienda consultar las fuentes oficiales. El modelo destaca en percepción de regiones gracias al entrenamiento OPD, pero no hay comparaciones directas publicadas.
 
@@ -88,7 +88,7 @@ Los valores de comparación para Qwen2.5-VL y Llama-3.2 son aproximados y no ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HWBJTUOPD/Qwen3.5-9B-SFT10K-VisionOPD6K-SFT9BTeacher
+- Modelo en Hugging Face: https://huggingface.co/HWBJTUOPD/Qwen3.5-9B-SFT10K-VisionOPD6K-SFT9BTeacher
 - Repositorio del proyecto (código, configuración, evaluador): https://github.com/MaverickRen/HW-BJTU-OPD
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Qwen3.5-9B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.5-9B

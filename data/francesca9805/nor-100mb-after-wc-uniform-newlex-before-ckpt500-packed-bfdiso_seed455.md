@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un checkpoint de generación de texto de 124.770.816 parámetros (aproximadamente 124,8 millones), publicado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino por supervisión (SFT) realizado con la librería TRL sobre otro checkpoint del mismo autor, `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed455`, que a su vez parece formar parte de una familia de experimentos de tokenización y entrenamiento con presupuestos de datos reducidos (el sufijo "100mb" aparece de forma recurrente en todos los checkpoints de la serie).
+El modelo `francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455` es un checkpoint de generación de texto de 124.770.816 parámetros (aproximadamente 124,8 millones), publicado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino por supervisión (SFT) realizado con la librería TRL sobre otro checkpoint del mismo autor, `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed455`, que a su vez parece formar parte de una familia de experimentos de tokenización y entrenamiento con presupuestos de datos reducidos (el sufijo "100mb" aparece de forma recurrente en todos los checkpoints de la serie).
 
 La arquitectura es un transformer decoder-only de la familia GPT-2, según la etiqueta `gpt2` del repositorio, y el pipeline declarado es `text-generation` con pesos en formato `safetensors` y compatibilidad con `transformers`. El nombre del modelo indica que es un checkpoint intermedio tomado en el paso 500 ("ckpt500") de un entrenamiento más largo, con una semilla concreta (455), por lo que no debe interpretarse como un modelo final optimizado, sino como un artefacto de investigación reproducible dentro de una comparativa de configuraciones.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero concreta: el modelo tiene cero desc
 | Modelo base | francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed455 |
 | Metodo de entrenamiento | SFT (supervised fine-tuning) con TRL 0.23.0 |
 | Versiones de framework | Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4, Tokenizers 0.22.1 |
-| Fecha de creacion | 2026-10-03 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-03 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente disponible | MMLU no reportado; evaluaciones publicadas en el paper original |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, muy descargado | Métricas de destilación publicadas por el autor |
-| goldfish-models/eng_latn_100mb | no disponible en la busqueda | no disponible | no disponible | HuggingFace | Evaluaciones multilingües publicadas por el proyecto Goldfish |
+| francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente disponible | MMLU no reportado; evaluaciones publicadas en el paper original |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, muy descargado | Métricas de destilación publicadas por el autor |
+| goldfish-models/eng_latn_100mb | no disponible en la busqueda | no disponible | no disponible | Hugging Face | Evaluaciones multilingües publicadas por el proyecto Goldfish |
 
 La comparación solo es posible en el plano estructural: el modelo analizado comparte tamaño con GPT-2 small, pero no hay datos de rendimiento que permitan situarlo frente a alternativas. Las filas de GPT-2 small y DistilGPT-2 recogen datos de documentación pública de esos modelos, no de la información proporcionada en esta búsqueda, y se incluyen únicamente como referencia de categoría. El modelo base declarado por el autor y los checkpoints relacionados apuntan a `goldfish-models` como origen de la línea de experimentos, pero no se ha podido confirmar la relación exacta.
 
@@ -93,7 +93,7 @@ La comparación solo es posible en el plano estructural: el modelo analizado com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base declarado: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wrq28rkn
 - Repositorio de TRL: https://github.com/huggingface/trl

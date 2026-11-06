@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`firzahdzm/tourn-01fdf13f-instructtext-hyper-s2m` es un modelo de lenguaje publicado en HuggingFace por el usuario `firzahdzm`, con un repositorio de 5,0 GB y un total de 2.516.756.480 parámetros (aproximadamente 2,5 mil millones) confirmados a partir de los pesos en formato safetensors. El nombre sugiere un ajuste de tipo "instruct" sobre una base de texto, pero no se ha publicado ninguna documentación, memoria técnica ni tarjeta de modelo que detalle su procedencia, su proceso de entrenamiento o sus datos de origen.
+`firzahdzm/tourn-01fdf13f-instructtext-hyper-s2m` es un modelo de lenguaje publicado en Hugging Face por el usuario `firzahdzm`, con un repositorio de 5,0 GB y un total de 2.516.756.480 parámetros (aproximadamente 2,5 mil millones) confirmados a partir de los pesos en formato safetensors. El nombre sugiere un ajuste de tipo "instruct" sobre una base de texto, pero no se ha publicado ninguna documentación, memoria técnica ni tarjeta de modelo que detalle su procedencia, su proceso de entrenamiento o sus datos de origen.
 
 El único metadato técnico relevante es la etiqueta `llama` del repositorio, que apunta a una arquitectura transformer de decodificación basada en la familia LLaMA, y la etiqueta `region:us`. No hay pipeline declarado, ni licencia, ni idiomas soportados, ni resultados de evaluación. El repositorio registra 12 descargas y 0 likes, lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
 
@@ -80,10 +80,10 @@ La comparativa debe interpretarse con cautela: las cifras de la fila de este mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tourn-01fdf13f-instructtext-hyper-s2m | ~2,5B | no disponible | no disponible | no disponible | HuggingFace, 12 descargas |
-| Llama 3.2 3B Instruct | ~3,2B | 128k tokens | ampliamente evaluado en benchmarks publicos | Llama 3.2 Community License | HuggingFace, amplia adopcion |
-| Qwen2.5 3B Instruct | ~3,1B | 32k tokens | ampliamente evaluado en benchmarks publicos | licencia propia de investigacion de Qwen | HuggingFace, amplia adopcion |
-| Gemma 2 2B Instruct | ~2,6B | 8k tokens | ampliamente evaluado en benchmarks publicos | Gemma Terms of Use | HuggingFace, amplia adopcion |
+| tourn-01fdf13f-instructtext-hyper-s2m | ~2,5B | no disponible | no disponible | no disponible | Hugging Face, 12 descargas |
+| Llama 3.2 3B Instruct | ~3,2B | 128k tokens | ampliamente evaluado en benchmarks publicos | Llama 3.2 Community License | Hugging Face, amplia adopcion |
+| Qwen2.5 3B Instruct | ~3,1B | 32k tokens | ampliamente evaluado en benchmarks publicos | licencia propia de investigacion de Qwen | Hugging Face, amplia adopcion |
+| Gemma 2 2B Instruct | ~2,6B | 8k tokens | ampliamente evaluado en benchmarks publicos | Gemma Terms of Use | Hugging Face, amplia adopcion |
 
 La diferencia fundamental no es de tamano, sino de trazabilidad: los tres modelos alternativos cuentan con tarjeta tecnica, licencia explicita, contexto declarado y evaluaciones reproducibles, mientras que el modelo objeto de esta ficha carece de todos esos elementos.
 
@@ -102,7 +102,7 @@ La diferencia fundamental no es de tamano, sino de trazabilidad: los tres modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-hyper-s2m
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-hyper-s2m
 - Paper: no disponible.
 - Blog o memoria tecnica: no disponible.
 - Repositorio de codigo: no disponible.

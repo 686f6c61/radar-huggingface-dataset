@@ -98,7 +98,7 @@ La unica evidencia de rendimiento aportada por el autor es cualitativa: un borra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/efficiencyx/Jun-LoRA-E2B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/efficiencyx/Jun-LoRA-E2B-MTP-GGUF
 - Modelo objetivo, Jun-LoRA-E2B-GGUF: https://huggingface.co/efficiencyx/Jun-LoRA-E2B-GGUF
 - Modelo base, google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant
 - Rama QAT de referencia mencionada en la model card, unsloth/gemma-4-E2B-it-qat-q4_0-unquantized: no disponible como enlace directo en la informacion proporcionada

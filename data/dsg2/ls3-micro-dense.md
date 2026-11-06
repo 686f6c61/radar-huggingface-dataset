@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LS3-Micro-Dense es un modelo publicado en HuggingFace por el usuario Dsg2 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor.
+LS3-Micro-Dense es un modelo publicado en Hugging Face por el usuario Dsg2 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor.
 
 El nombre del repositorio sugiere un modelo de tipo "dense" (no MoE) y de escala reducida ("Micro"), pero se trata únicamente de una inferencia a partir del identificador y no de información confirmada. No hay pipeline declarado, ni idiomas especificados, ni métricas publicadas, ni documentación técnica adicional en el momento de redactar esta ficha.
 
@@ -75,5 +75,5 @@ No disponible. Sin datos sobre parámetros, contexto o rendimiento, no es posibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dsg2/LS3-Micro-Dense
+- Hugging Face: https://huggingface.co/Dsg2/LS3-Micro-Dense
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

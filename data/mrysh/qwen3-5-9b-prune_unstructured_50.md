@@ -62,9 +62,9 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Estado de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrysh/qwen3.5-9b-prune_unstructured_50 | 8,95 mil millones | no disponible | 50,1% ceros, denso en disco | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 8,95 mil millones | no disponible | denso | Apache 2.0 | HuggingFace |
-| Otras variantes del benchmark de mrysh | no disponible | no disponible | distintas podas (8 variantes) | Apache 2.0 (presumible) | HuggingFace |
+| mrysh/qwen3.5-9b-prune_unstructured_50 | 8,95 mil millones | no disponible | 50,1% ceros, denso en disco | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 8,95 mil millones | no disponible | denso | Apache 2.0 | Hugging Face |
+| Otras variantes del benchmark de mrysh | no disponible | no disponible | distintas podas (8 variantes) | Apache 2.0 (presumible) | Hugging Face |
 | Version cuantizada del base (p. ej. AWQ/GPTQ) | 8,95 mil millones | no disponible | cuantizada | Apache 2.0 | segun publicacion |
 
 La comparacion relevante es frente al base y frente a alternativas cuantizadas: la poda no estructurada sin reentrenamiento no reduce el tamano ni acelera la inferencia, mientras que la cuantizacion si reduce memoria y suele preservar mejor la calidad a igual compresion nominal. No se dispone de datos numericos para cuantificar la diferencia.
@@ -83,7 +83,7 @@ La comparacion relevante es frente al base y frente a alternativas cuantizadas: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_unstructured_50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_unstructured_50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - BFCL (Berkeley Function Calling Leaderboard): no disponible en la informacion proporcionada
 - MedQA: no disponible en la informacion proporcionada

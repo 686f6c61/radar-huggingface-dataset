@@ -104,7 +104,7 @@ No se han proporcionado datos numericos de modelos alternativos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-MamBo
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-MamBo
 - Paper (ACL 2026 Findings): https://aclanthology.org/2026.findings-acl.1573/
 - Paper (arXiv): https://arxiv.org/abs/2601.02944
 - Codigo fuente (GitHub, MIT): https://github.com/saki-ciallo/XLSR-MamBo

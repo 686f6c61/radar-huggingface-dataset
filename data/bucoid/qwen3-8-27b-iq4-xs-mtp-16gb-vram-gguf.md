@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF` es una cuantización en formato GGUF de un modelo de la familia Qwen, presumiblemente una variante de Qwen3 con 27.000 millones de parámetros. El nombre sugiere que utiliza una cuantización de 4 bits (IQ4_XS) y una técnica denominada MTP (probablemente *Multi-Token Prediction*), optimizada para ejecutarse en GPUs con 16 GB de VRAM. El autor es Bucoid, un tercero que ha publicado el archivo en HuggingFace bajo licencia Apache 2.0.
+El modelo `Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF` es una cuantización en formato GGUF de un modelo de la familia Qwen, presumiblemente una variante de Qwen3 con 27.000 millones de parámetros. El nombre sugiere que utiliza una cuantización de 4 bits (IQ4_XS) y una técnica denominada MTP (probablemente *Multi-Token Prediction*), optimizada para ejecutarse en GPUs con 16 GB de VRAM. El autor es Bucoid, un tercero que ha publicado el archivo en Hugging Face bajo licencia Apache 2.0.
 
 Sin embargo, la model card no proporciona información adicional: no hay descripción, ni datos de entrenamiento, ni benchmarks, ni especificaciones técnicas más allá del nombre del archivo. Por tanto, gran parte de los datos que se esperan en una ficha técnica no están disponibles y se indicará explícitamente cuando sea el caso. Este modelo parece dirigido a usuarios que necesitan una versión cuantizada y ligera de un modelo Qwen grande para inferencia local con recursos limitados.
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. S
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF)
+- [Página del modelo en Hugging Face](https://huggingface.co/Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la información proporcionada.

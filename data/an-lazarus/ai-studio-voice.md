@@ -93,7 +93,7 @@ Al no ser un modelo unico, la comparativa se plantea entre los motores que conti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/an-lazarus/ai-studio-voice
+- Repositorio en Hugging Face: https://huggingface.co/an-lazarus/ai-studio-voice
 - La model card referencia los ficheros `NOTICE-<name>.txt` dentro de cada ZIP y un `NOTICE.md` general, pero no incluye enlaces externos.
 - Enlaces de los proyectos upstream citados en la model card: no disponibles en la informacion proporcionada; deben localizarse a partir de los nombres indicados (CosyVoice 2 y 3 de FunAudioLLM/Alibaba, Matcha-TTS de Shivam Mehta, Kanade 12.5 Hz de frothywater, Vocos mel 24 kHz de Charactr, WavLM Base+ de Microsoft, Chatterbox de Resemble AI).
 - Resultados de busqueda web: no relevantes para este modelo (devuelven paginas institucionales y administrativas francesas sin relacion con el repositorio).

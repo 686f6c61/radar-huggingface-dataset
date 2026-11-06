@@ -77,9 +77,9 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 | Modelo / build | Precision | Parametros | Contexto | HumanEval-instruct | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| XHToken/Spark-X2.5-4B | bf16 | ~4,11 B | 1 M tokens | 79,88 % | apache-2.0 | HuggingFace |
-| XHToken/Spark-X2.5-4B-FP8 | FP8 | ~4,11 B | 1 M tokens | no disponible | apache-2.0 | HuggingFace |
-| Ttimms/Spark-X2.5-4B-NVFP4 (RTN) | NVFP4 W4A16 | ~4,11 B | 1 M tokens | 71,34 % | apache-2.0 | HuggingFace, requiere plugin vLLM |
+| XHToken/Spark-X2.5-4B | bf16 | ~4,11 B | 1 M tokens | 79,88 % | apache-2.0 | Hugging Face |
+| XHToken/Spark-X2.5-4B-FP8 | FP8 | ~4,11 B | 1 M tokens | no disponible | apache-2.0 | Hugging Face |
+| Ttimms/Spark-X2.5-4B-NVFP4 (RTN) | NVFP4 W4A16 | ~4,11 B | 1 M tokens | 71,34 % | apache-2.0 | Hugging Face, requiere plugin vLLM |
 | Ttimms/Spark-X2.5-4B-NVFP4 (GPTQ) | NVFP4 W4A16 | ~4,11 B | 1 M tokens | en progreso | apache-2.0 | anunciado, no publicado |
 
 El propio autor recomienda el build FP8 de XHToken como opcion mas segura si se busca maxima retencion de calidad hoy, antes de que se publique la version GPTQ.

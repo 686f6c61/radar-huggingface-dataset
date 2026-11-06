@@ -35,7 +35,7 @@ La fase de SFT se aplico directamente sobre la base del cooloff-blend, sin etapa
 - Razonamiento matematico K-5: resuelve problemas de matematicas de nivel primaria con cadenas de razonamiento.
 - Control de longitud y estilo: puede generar respuestas con restricciones de longitud y en formatos especificos (solo respuesta, mostrar pasos).
 - Conocimiento acotado: su conocimiento se limita al material curricular K-5, lo que reduce la exposicion a contenido inapropiado o avanzado.
-- Integracion con pipelines de HuggingFace: compatible con transformers y vLLM mediante chat template.
+- Integracion con pipelines de Hugging Face: compatible con transformers y vLLM mediante chat template.
 
 ## Casos de uso
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks generales como MMLU, HumanEval o GS
 
 | Modelo | Parametros | Contexto | Conocimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| littlelearner-5b-chatty | 5.04B | 4096 | Acotado a K-5 | other | HuggingFace |
-| littlelearner-5b-unbounded-sft-chatty | 5.04B | 4096 | Sin filtro (FineWeb-Edu) | other | HuggingFace |
-| Qwen3-4B (base) | ~4B | 32k+ | General | Apache 2.0 | HuggingFace |
+| littlelearner-5b-chatty | 5.04B | 4096 | Acotado a K-5 | other | Hugging Face |
+| littlelearner-5b-unbounded-sft-chatty | 5.04B | 4096 | Sin filtro (FineWeb-Edu) | other | Hugging Face |
+| Qwen3-4B (base) | ~4B | 32k+ | General | Apache 2.0 | Hugging Face |
 
 La comparativa directa con Qwen3-4B es orientativa, ya que el modelo base de LittleLearner usa arquitectura Qwen3 pero con un tokenizador personalizado y un entrenamiento muy diferente. La variante unbounded del mismo proyecto es el control experimental mas relevante: mismos parametros y arquitectura, pero entrenada sin filtro de contenido, lo que permite aislar el efecto del limite de conocimiento.
 
@@ -89,7 +89,7 @@ La comparativa directa con Qwen3-4B es orientativa, ya que el modelo base de Lit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/littlelearner/littlelearner-5b-chatty
+- Modelo en Hugging Face: https://huggingface.co/littlelearner/littlelearner-5b-chatty
 - Variante unbounded (control): https://huggingface.co/littlelearner/littlelearner-5b-unbounded-sft-chatty
 - Perfil de la organizacion: https://huggingface.co/littlelearner
 - Paper del estudio (referenciado como arXiv:2608.13545): https://arxiv.org/abs/2608.13545

@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables. El adaptador es especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_aya-expanse-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_aya-expanse-8b_seed42
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/

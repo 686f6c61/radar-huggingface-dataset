@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (este modelo) | 0,75B | no disponible | Apache-2.0 | Híbrida (linear+transformer) | HuggingFace |
-| Qwen3-0.6B (de la serie Qwen3) | 0,6B | no disponible | Apache-2.0 | Transformer estándar | HuggingFace |
-| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 License | Transformer estándar | HuggingFace |
+| Qwen3.5-0.8B (este modelo) | 0,75B | no disponible | Apache-2.0 | Híbrida (linear+transformer) | Hugging Face |
+| Qwen3-0.6B (de la serie Qwen3) | 0,6B | no disponible | Apache-2.0 | Transformer estándar | Hugging Face |
+| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 License | Transformer estándar | Hugging Face |
 
 No hay datos de rendimiento comparativo disponibles para este modelo. La comparación se basa únicamente en tamaño y licencia.
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento comparativo disponibles para este modelo. La compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orsubitrat193/qwen3.50.8oblt
+- Modelo en Hugging Face: https://huggingface.co/orsubitrat193/qwen3.50.8oblt
 - Página de Qualcomm AI Hub para Qwen3.5-0.8B: https://aihub.qualcomm.com/compute/models/qwen3_5_0_8b
 - Blog de Qwen sobre Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Guía de Qwen3.5 en qwen-ai.com: https://qwen-ai.com/qwen-3-5/

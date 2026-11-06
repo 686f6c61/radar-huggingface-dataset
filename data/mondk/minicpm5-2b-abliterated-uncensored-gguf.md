@@ -30,7 +30,7 @@ La versión abliterated de `mondk` modifica el modelo original eliminando las ca
 - Generación de texto conversacional: el modelo está diseñado para mantener diálogos, como indica la etiqueta "conversational".
 - Inferencia local: al ser un modelo de 2B y distribuirse en GGUF, puede ejecutarse en CPU y GPU con recursos limitados.
 - Sin filtros de seguridad: al ser una versión abliterated, el modelo no rechaza peticiones que el modelo base podría bloquear, lo que permite generar contenido sin restricciones.
-- Compatibilidad con endpoints: el modelo está marcado como "endpoints_compatible", lo que sugiere que puede desplegarse en la infraestructura de HuggingFace.
+- Compatibilidad con endpoints: el modelo está marcado como "endpoints_compatible", lo que sugiere que puede desplegarse en la infraestructura de Hugging Face.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio o capacidades multilingües específicas.
 
 ## Casos de uso

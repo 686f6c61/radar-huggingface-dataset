@@ -68,7 +68,7 @@ No se dispone de modelos comparables en la informacion proporcionada. MiniMax-H3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/MiniMax-H3_comfy
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/MiniMax-H3_comfy
 - Repositorio original MiniMax-H3 (GitHub): https://github.com/MiniMax-AI/MiniMax-H3
 - Hub de MiniMax-H3 (GitHub, con workflows de ComfyUI): https://github.com/ai-models-lab/minimax-h3
 - Guia de MiniMax H3 en ComfyUI (MiniMax Design): https://design.minimax.io/tools/minimax-h3-comfyui

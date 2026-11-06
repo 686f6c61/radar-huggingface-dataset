@@ -89,7 +89,7 @@ Ulam-1-Small comparte linaje con los tres modelos anteriores, por lo que la comp
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Flexan/ulamai-Ulam-1-Small-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Flexan/ulamai-Ulam-1-Small-GGUF
 - Modelo original: https://huggingface.co/ulamai/Ulam-1-Small
 - Informe tecnico (whitepaper): https://huggingface.co/ulamai/Ulam-1-Small/blob/main/paper/Ulam-1-Small-whitepaper.pdf
 - Recibo de evaluacion: https://huggingface.co/ulamai/Ulam-1-Small/blob/v1.0.0/evaluation_results.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LilyMT-modern-v14-web es un modelo de traduccion automatica publicado en HuggingFace por el usuario yennguyen45, distribuido en formato ONNX cuantizado a INT8 y pensado para ejecutarse con la libreria `transformers.js` / `@huggingface/transformers`. Segun los metadatos, la arquitectura es Marian (transformer encoder-decoder de traduccion neuronal) y el pipeline declarado es `translation` con los idiomas zh y vi, es decir, chino y vietnamita. El repositorio ocupa aproximadamente 0,1 GB.
+LilyMT-modern-v14-web es un modelo de traduccion automatica publicado en Hugging Face por el usuario yennguyen45, distribuido en formato ONNX cuantizado a INT8 y pensado para ejecutarse con la libreria `transformers.js` / `@huggingface/transformers`. Segun los metadatos, la arquitectura es Marian (transformer encoder-decoder de traduccion neuronal) y el pipeline declarado es `translation` con los idiomas zh y vi, es decir, chino y vietnamita. El repositorio ocupa aproximadamente 0,1 GB.
 
 El modelo se presenta como una rama especializada en la traduccion de narrativa moderna y de narrativa "ABO moderna" (un subgenero de ficcion romantica de origen asiatico), no como un traductor de proposito general. La model card describe un runtime propio denominado LilyVIP que anade etiquetas de genero, usa la frase anterior como contexto, aplica conversion de chino tradicional a simplificado mediante OpenCC, y decodifica con beam search de tamano 2 y una penalizacion de repeticion de 1,2.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, la ventaja declarada de LilyMT-modern-v14-web es su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennguyen45/LilyMT-modern-v14-web
+- Modelo en Hugging Face: https://huggingface.co/yennguyen45/LilyMT-modern-v14-web
 - Perfil del autor: https://huggingface.co/yennguyen45
 - Libreria de inferencia: https://github.com/huggingface/transformers.js
 - Paquete npm: https://www.npmjs.com/package/@huggingface/transformers

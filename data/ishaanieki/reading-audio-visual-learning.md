@@ -65,11 +65,11 @@ No disponible. Este repositorio no es un modelo comparable con alternativas de l
 - El número de parámetros (16.576) es simbólico y no corresponde a un modelo funcional.
 - No hay código fuente, ni pesos descargables, ni scripts de evaluación.
 - Las secciones de hipótesis y planes no deben interpretarse como resultados experimentales.
-- El repositorio no ha sido validado externamente; no hay descargas ni likes en HuggingFace.
+- El repositorio no ha sido validado externamente; no hay descargas ni likes en Hugging Face.
 - La licencia CC-BY-4.0 permite uso con atribución, pero no garantiza la ausencia de errores ni la idoneidad para producción.
 - Si se utilizan datasets externos citados en las notas, deben revisarse los términos de la fuente de datos por separado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IshaanIeki/reading-audio-visual-learning
+- Hugging Face: https://huggingface.co/IshaanIeki/reading-audio-visual-learning
 - Archivo principal de notas: `paper_notes.md` (dentro del repositorio, sin URL directa en la información proporcionada)

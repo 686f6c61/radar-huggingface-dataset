@@ -23,7 +23,7 @@ El modelo tiene solo **49.600 parámetros** (según el archivo safetensors), lo 
 
 La arquitectura sigue el diseño MobileViT, que combina capas convolucionales con transformadores ligeros para procesar imágenes. Sin embargo, esta implementación particular introduce variaciones: atención **grouped query** en lugar de atención estándar, **fusión por tensores** (tensor fusion) y normalización **GroupNorm** en lugar de BatchNorm o LayerNorm. La activación es ReLU. El repositorio incluye `config.json` con la configuración generada y `training_args.json` con una receta de entrenamiento por defecto (optimizador AdamW, programación de warmup constante), pero el propio autor aclara que estos son valores de partida, no evidencia de un entrenamiento completado.
 
-No se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, ni procesos de RLHF o DPO. El checkpoint `model.safetensors` se describe como una **inicialización válida para pruebas de humo**, no como un modelo entrenado. La implementación es personalizada, por lo que las APIs genéricas de HuggingFace no la cargan directamente; se requiere un adaptador explícito.
+No se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, ni procesos de RLHF o DPO. El checkpoint `model.safetensors` se describe como una **inicialización válida para pruebas de humo**, no como un modelo entrenado. La implementación es personalizada, por lo que las APIs genéricas de Hugging Face no la cargan directamente; se requiere un adaptador explícito.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ No se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, 
 - **Punto de partida para investigación**: investigadores pueden tomar esta implementación como base para experimentar con variantes de MobileViT en aprendizaje contrastivo, aunque necesitarán entrenarla desde cero.
 - **Educación**: útil para estudiar la estructura interna de un MobileViT modificado, ya que el código es explícito y contiene un ejemplo ejecutable en `main.py`.
 - **Comparación de configuraciones**: permite comparar el comportamiento de diferentes normalizaciones o mecanismos de atención en un entorno controlado, siempre que se entrene cada variante con los mismos datos y semillas.
-- **Desarrollo de adaptadores**: dado que no es compatible con las APIs estándar de HuggingFace, se puede usar para practicar la escritura de adaptadores personalizados que permitan cargar pesos safetensors en otros frameworks.
+- **Desarrollo de adaptadores**: dado que no es compatible con las APIs estándar de Hugging Face, se puede usar para practicar la escritura de adaptadores personalizados que permitan cargar pesos safetensors en otros frameworks.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No hay modelos comparables directos, ya que esta implementación es una variante
 
 - El checkpoint no ha sido entrenado; no debe usarse para ninguna tarea real de inferencia o clasificación.
 - No se ha auditado la robustez, equidad ni transferencia de dominio; el autor lo advierte explícitamente.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace; requiere un adaptador manual.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face; requiere un adaptador manual.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no genera texto y no se ha evaluado.
 - La licencia Apache 2.0 permite uso comercial, pero los términos de los datos externos que se usen con este modelo deben revisarse por separado.
 - No se proporcionan garantías de rendimiento ni soporte; es un proyecto experimental.

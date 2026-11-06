@@ -71,8 +71,8 @@ No se han encontrado modelos comparables con datos suficientes en la informació
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B | 18B | no disponible | MIT | HuggingFace |
-| GLM-5.3-Flash-Slim | ~111B | ~12B (estimado) | no disponible | MIT | HuggingFace |
+| GLM-5.3-Flash (base) | 320B | 18B | no disponible | MIT | Hugging Face |
+| GLM-5.3-Flash-Slim | ~111B | ~12B (estimado) | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,6 +87,6 @@ No se han encontrado modelos comparables con datos suficientes en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudyu/GLM-5.3-Flash-Slim
+- Modelo en Hugging Face: https://huggingface.co/cloudyu/GLM-5.3-Flash-Slim
 - Modelo base GLM-5.3-Flash: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Pull request de vLLM: https://github.com/vllm-project/vllm/pull/53906

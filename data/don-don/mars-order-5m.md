@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MarS Order 5M es un modelo generativo de órdenes de mercado diseñado para el motor de simulación financiera MarS, desarrollado por Microsoft Research. Este modelo, publicado en HuggingFace por el usuario Don-Don, implementa un enfoque de modelado de lenguaje causal (causal-lm) aplicado al dominio financiero: en lugar de generar texto, genera la siguiente orden de mercado a partir de una secuencia de órdenes previas, permitiendo simular la dinámica de un mercado financiero de forma realista y controlable.
+MarS Order 5M es un modelo generativo de órdenes de mercado diseñado para el motor de simulación financiera MarS, desarrollado por Microsoft Research. Este modelo, publicado en Hugging Face por el usuario Don-Don, implementa un enfoque de modelado de lenguaje causal (causal-lm) aplicado al dominio financiero: en lugar de generar texto, genera la siguiente orden de mercado a partir de una secuencia de órdenes previas, permitiendo simular la dinámica de un mercado financiero de forma realista y controlable.
 
 El modelo cuenta con 5.008.288 parámetros (aproximadamente 5 millones), un tamaño muy reducido que lo hace accesible para experimentación en entornos con recursos limitados. Su relevancia radica en que forma parte del ecosistema MarS, un proyecto de investigación que propone un "Large Market Model" (LMM) para simulación de mercados, con aplicaciones en backtesting, análisis de impacto de mercado y generación de datos sintéticos. La licencia MIT permite su uso comercial y académico sin restricciones significativas.
 
@@ -65,11 +65,11 @@ No se dispone de modelos comparables directamente. MarS Order 5M es un modelo es
 - Riesgo de alucinación: al ser un modelo generativo, puede producir órdenes que no correspondan a patrones realistas del mercado, especialmente en situaciones fuera de la distribución de entrenamiento.
 - Limitaciones de contexto: la entrada documentada tiene una longitud fija de 1024 pasos, lo que limita la simulación de horizontes temporales largos sin reiniciar el proceso.
 - Dependencia del ecosistema MarS: el modelo requiere los assets de preprocesamiento y el código del motor MarS para funcionar, lo que añade complejidad de integración.
-- No hay garantías de soporte o mantenimiento: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere un uso muy limitado y posible falta de validación comunitaria.
+- No hay garantías de soporte o mantenimiento: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere un uso muy limitado y posible falta de validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Don-Don/mars-order-5m
+- Modelo en Hugging Face: https://huggingface.co/Don-Don/mars-order-5m
 - Repositorio de assets (datasets): https://huggingface.co/datasets/Don-Don/mars-order-assets
 - Repositorio oficial de MarS en GitHub: https://github.com/microsoft/MarS
 - Paper de MarS (arXiv): https://arxiv.org/abs/2409.07486

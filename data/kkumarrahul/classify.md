@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kkumarrahul/classify` es un modelo de clasificación multitarea de escala reducida basado en la arquitectura *mixer*, publicado por el autor kkumarrahul en HuggingFace. El repositorio contiene un único artefacto ejecutable (`predict.py`) y no se han publicado pesos preentrenados ni datasets de entrenamiento, lo que lo sitúa más como un proyecto de investigación o demostración técnica que como un modelo listo para producción.
+`kkumarrahul/classify` es un modelo de clasificación multitarea de escala reducida basado en la arquitectura *mixer*, publicado por el autor kkumarrahul en Hugging Face. El repositorio contiene un único artefacto ejecutable (`predict.py`) y no se han publicado pesos preentrenados ni datasets de entrenamiento, lo que lo sitúa más como un proyecto de investigación o demostración técnica que como un modelo listo para producción.
 
 La relevancia del modelo reside en su combinación de técnicas: atención por grupos (grouped query attention), fusión de baja dimensión (low-rank), cabezal multitarea, activación ReLU y normalización RMSNorm. Está diseñado con un enfoque *small* y optimizado con RMSProp y programación de tasa de aprendizaje coseno. Su licencia BSD-3-Clause permite uso comercial y modificación, pero la ausencia de pesos publicados y de documentación de entrenamiento limita su aplicabilidad práctica.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. No se conocen modelos comparables con la misma combinación de arquitectura *mixer*, grouped query attention y cabecera multitarea en el ecosistema de HuggingFace con datos publicados. Se recomienda consultar modelos como los de la familia MLP-Mixer original (Google, 2021) o arquitecturas híbridas similares para comparaciones teóricas, pero no hay datos de rendimiento de este modelo concreto.
+No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. No se conocen modelos comparables con la misma combinación de arquitectura *mixer*, grouped query attention y cabecera multitarea en el ecosistema de Hugging Face con datos publicados. Se recomienda consultar modelos como los de la familia MLP-Mixer original (Google, 2021) o arquitecturas híbridas similares para comparaciones teóricas, pero no hay datos de rendimiento de este modelo concreto.
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/kkumarrahul/classify)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/kkumarrahul/classify)
 - [Perfil de LinkedIn del autor (Rahul Kumar Sah)](https://www.linkedin.com/posts/rahulkumarsah2_66-different-classification-models-in-machine-activity-7281517574889074689-8k56)
 - [Aplicación Classify AI (no relacionada directamente, pero con nombre similar)](https://classify-ai.vercel.app/)

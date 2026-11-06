@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Honkware/Qwen3-8B-exl3-4.5bpw | Escala 8B (base Qwen3-8B) | El del modelo base | EXL3, safetensors | Apache 2.0 | HuggingFace, requiere ExLlamaV3 |
-| Qwen/Qwen3-8B | Escala 8B | El declarado por Qwen en su documentación | safetensors BF16 | Apache 2.0 | HuggingFace, compatible con Transformers, vLLM y TGI |
-| Cuantizaciones GGUF de Qwen3-8B (Q4_K_M y similares) | Escala 8B | El del modelo base | GGUF | Apache 2.0 | HuggingFace, compatible con llama.cpp, Ollama y LM Studio |
-| Otras variantes EXL3 de la colección de Honkware | Escala 8B | El del modelo base | EXL3, safetensors | Apache 2.0 | HuggingFace, misma colección a distintos bpw |
+| Honkware/Qwen3-8B-exl3-4.5bpw | Escala 8B (base Qwen3-8B) | El del modelo base | EXL3, safetensors | Apache 2.0 | Hugging Face, requiere ExLlamaV3 |
+| Qwen/Qwen3-8B | Escala 8B | El declarado por Qwen en su documentación | safetensors BF16 | Apache 2.0 | Hugging Face, compatible con Transformers, vLLM y TGI |
+| Cuantizaciones GGUF de Qwen3-8B (Q4_K_M y similares) | Escala 8B | El del modelo base | GGUF | Apache 2.0 | Hugging Face, compatible con llama.cpp, Ollama y LM Studio |
+| Otras variantes EXL3 de la colección de Honkware | Escala 8B | El del modelo base | EXL3, safetensors | Apache 2.0 | Hugging Face, misma colección a distintos bpw |
 
 La diferencia principal entre alternativas no es de capacidad, sino de ecosistema: EXL3 ofrece buen rendimiento en GPUs NVIDIA con ExLlamaV3, mientras que GGUF cubre CPU, GPU y Apple Silicon con un soporte de herramientas mucho más amplio. Los datos de rendimiento comparado entre ambas rutas no están disponibles en la información proporcionada.
 
@@ -98,7 +98,7 @@ La diferencia principal entre alternativas no es de capacidad, sino de ecosistem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Honkware/Qwen3-8B-exl3-4.5bpw
+- Repositorio en Hugging Face: https://huggingface.co/Honkware/Qwen3-8B-exl3-4.5bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Colección de cuantizaciones EXL3 de Qwen3-8B: https://huggingface.co/collections/Honkware/qwen3-8b-exl3-6aa9f13b630d4868abb0748a
 - Perfil del autor: https://huggingface.co/Honkware

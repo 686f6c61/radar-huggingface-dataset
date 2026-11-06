@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/LongLive2.0-Robot-L
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/LongLive2.0-Robot-L
 - Guía de runtime e inferencia (Long-WAM Stage 1): https://github.com/NVlabs/LongLive/tree/main/Long-WAM/stage1

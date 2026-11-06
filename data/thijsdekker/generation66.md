@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thijsdekker/generation66` es un repositorio de HuggingFace publicado por el usuario Thijs Dekker que contiene una implementación funcional de la arquitectura Albef orientada a tareas de generación, en una configuración declarada como "xlarge". Se trata de un artefacto de código y configuración, no de un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks.
+`thijsdekker/generation66` es un repositorio de Hugging Face publicado por el usuario Thijs Dekker que contiene una implementación funcional de la arquitectura Albef orientada a tareas de generación, en una configuración declarada como "xlarge". Se trata de un artefacto de código y configuración, no de un modelo entrenado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks.
 
 El peso del repositorio es de 0.0 GB y el recuento de parámetros registrado en los safetensors es de 33.088, un orden de magnitud propio de una inicialización de juguete más que de un modelo desplegable. El repositorio incluye `run.py` (artefacto principal con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento), `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el propio `model.safetensors`.
 
@@ -72,11 +72,11 @@ No disponible. La información proporcionada no incluye checkpoints comparables 
 - Riesgo de alucinación: no evaluable en un checkpoint sin entrenar; no debe interpretarse ninguna salida como información fiable.
 - No hay datos de longitud de contexto soportada ni de idiomas, por lo que no se puede garantizar comportamiento multilingüe ni ventanas largas.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución, pero eso no otorga ninguna garantía sobre el comportamiento del artefacto. El propio autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Restricción práctica para producción: la carga estándar no funciona sin un adaptador explícito, y no existe pipeline declarado en HuggingFace, lo que complica su integración en plataformas de despliegue convencionales.
+- Restricción práctica para producción: la carga estándar no funciona sin un adaptador explícito, y no existe pipeline declarado en Hugging Face, lo que complica su integración en plataformas de despliegue convencionales.
 - El recuento de parámetros (33.088) es incompatible con la escala "xlarge" declarada en la model card; conviene tratar la etiqueta de escala como un ajuste nominal de configuración y no como una indicación de tamaño real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thijsdekker/generation66
-- Perfil del autor en HuggingFace: https://huggingface.co/thijsdekker
+- Modelo en Hugging Face: https://huggingface.co/thijsdekker/generation66
+- Perfil del autor en Hugging Face: https://huggingface.co/thijsdekker
 - Repositorio hermano del mismo autor (coca-demo): https://huggingface.co/thijsdekker/coca-demo/tree/main

@@ -141,7 +141,7 @@ Comparativa con alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Paper de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
 - Paper de RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649

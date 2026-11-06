@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bohok-indic-en | 77M | no disponible | trp, bn, mr, en | MIT | HuggingFace |
-| Helsinki-NLP/opus-mt-mul-en | no disponible | no disponible | multilingüe (muchos a en) | no disponible | HuggingFace |
+| bohok-indic-en | 77M | no disponible | trp, bn, mr, en | MIT | Hugging Face |
+| Helsinki-NLP/opus-mt-mul-en | no disponible | no disponible | multilingüe (muchos a en) | no disponible | Hugging Face |
 | IndicTrans2 | no disponible | no disponible | 22 idiomas indic | no disponible | GitHub/HuggingFace |
 
 IndicTrans2 es una alternativa de mayor alcance para las lenguas índicas, pero no es comparable en tamaño ni en enfoque: está entrenado con muchos más datos y cubre 22 idiomas. El modelo base de Helsinki-NLP es la referencia directa, ya que bohok-indic-en es un ajuste fino de este.
@@ -80,7 +80,7 @@ IndicTrans2 es una alternativa de mayor alcance para las lenguas índicas, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vivekharry/bohok-indic-en
+- Hugging Face: https://huggingface.co/vivekharry/bohok-indic-en
 - Space Tripura ST Lab: https://huggingface.co/spaces/vivekharry/tripura-st-lab-site
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-mul-en
 - Dataset OPUS-100: https://huggingface.co/datasets/Helsinki-NLP/opus-100

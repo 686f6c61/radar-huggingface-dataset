@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Image_Bot es un repositorio publicado en HuggingFace por el usuario ayushrawa1 bajo licencia Apache 2.0. La model card asociada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio no declara pipeline, idiomas soportados ni etiquetas que permitan inferir su modalidad (texto, vision, difusion, etc.), mas alla del nombre "Image_Bot", que sugiere alguna relacion con generacion o procesamiento de imagenes.
+Image_Bot es un repositorio publicado en Hugging Face por el usuario ayushrawa1 bajo licencia Apache 2.0. La model card asociada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio no declara pipeline, idiomas soportados ni etiquetas que permitan inferir su modalidad (texto, vision, difusion, etc.), mas alla del nombre "Image_Bot", que sugiere alguna relacion con generacion o procesamiento de imagenes.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-10-28), lo que indica una publicacion reciente y sin adopcion documentada. No hay informacion publica sobre parametros, contexto, cuantizaciones ni formato de pesos.
 
@@ -69,4 +69,4 @@ No disponible. Sin conocer la modalidad, el tamano ni el rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ayushrawa1/Image_Bot
+- Repositorio en Hugging Face: https://huggingface.co/ayushrawa1/Image_Bot

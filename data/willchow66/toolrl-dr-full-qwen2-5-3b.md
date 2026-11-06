@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToolRL-DR-Full-Qwen2.5-3B es un checkpoint de ajuste fino mediante aprendizaje por refuerzo (GRPO) orientado a robustez en el uso de herramientas (tool-use) y function calling. Lo publica el usuario willchow66 en HuggingFace, con entrenamiento atribuido a @HeadyZhang, y se libera junto al articulo *When Simulation Lies: A Sim-to-Real Benchmark and Domain-Randomized RL Recipe for Tool-Use Agents* (NeurIPS 2026 Datasets & Benchmarks), que introduce el benchmark AgentRobustBench.
+ToolRL-DR-Full-Qwen2.5-3B es un checkpoint de ajuste fino mediante aprendizaje por refuerzo (GRPO) orientado a robustez en el uso de herramientas (tool-use) y function calling. Lo publica el usuario willchow66 en Hugging Face, con entrenamiento atribuido a @HeadyZhang, y se libera junto al articulo *When Simulation Lies: A Sim-to-Real Benchmark and Domain-Randomized RL Recipe for Tool-Use Agents* (NeurIPS 2026 Datasets & Benchmarks), que introduce el benchmark AgentRobustBench.
 
 El modelo parte de Qwen/Qwen2.5-3B-Instruct (3.397.103.616 parametros, arquitectura transformer densa de la familia Qwen2) y aplica la receta publica ToolRL de GRPO cambiando unicamente los datos de entrenamiento: cada muestra limpia se sustituye por una contrapartida aumentada con perturbaciones (domain randomization) de tipo observacion, accion y recompensa. Las perturbaciones de transicion (fallos de herramienta en tiempo de ejecucion) se excluyen del entrenamiento por construccion, de modo que el modelo aprende a tolerar ruido en la observacion y en la accion sin haber visto fallos reales de ejecucion.
 
@@ -73,10 +73,10 @@ Referencia comparativa reportada por el autor: el checkpoint publico ToolRL sobr
 
 | Modelo | Parametros | Contexto | Precision limpia (AgentRobustBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToolRL-DR-Full-Qwen2.5-3B | 3.397 M | no disponible (eval. a 8192) | 0.643 ± 0.065 | qwen-research | HuggingFace (willchow66) |
-| ToolRL-DR-Mixed-Qwen2.5-3B | 3.397 M (mismo backbone) | no disponible | no disponible en esta ficha | qwen-research | HuggingFace (willchow66) |
-| ToolRL-Qwen2.5-3B (chengq9) | 3.397 M (mismo backbone) | no disponible | 0.638 ± 0.065 | qwen-research (heredada) | HuggingFace (chengq9) |
-| Qwen2.5-3B-Instruct (base) | 3.397 M | 32.768 tokens (segun Qwen2.5) | no evaluado en AgentRobustBench | qwen-research | HuggingFace (Qwen) |
+| ToolRL-DR-Full-Qwen2.5-3B | 3.397 M | no disponible (eval. a 8192) | 0.643 ± 0.065 | qwen-research | Hugging Face (willchow66) |
+| ToolRL-DR-Mixed-Qwen2.5-3B | 3.397 M (mismo backbone) | no disponible | no disponible en esta ficha | qwen-research | Hugging Face (willchow66) |
+| ToolRL-Qwen2.5-3B (chengq9) | 3.397 M (mismo backbone) | no disponible | 0.638 ± 0.065 | qwen-research (heredada) | Hugging Face (chengq9) |
+| Qwen2.5-3B-Instruct (base) | 3.397 M | 32.768 tokens (segun Qwen2.5) | no evaluado en AgentRobustBench | qwen-research | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Referencia comparativa reportada por el autor: el checkpoint publico ToolRL sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willchow66/ToolRL-DR-Full-Qwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/willchow66/ToolRL-DR-Full-Qwen2.5-3B
 - Checkpoint hermano: https://huggingface.co/willchow66/ToolRL-DR-Mixed-Qwen2.5-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

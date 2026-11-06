@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G4-MeroMero-26B-A4B-Heretic2-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo G4-MeroMero-26B-A4B-Heretic2, publicado por el usuario EternalDragon en HuggingFace. El trabajo de conversión y cuantización lo firma mradermacher, un perfil habitual en la publicación de versiones GGUF de modelos comunitarios para su uso con llama.cpp y herramientas derivadas. El modelo base no cuenta con model card detallada en la información disponible, por lo que muchos de sus detalles de entrenamiento y procedencia no se pueden confirmar.
+G4-MeroMero-26B-A4B-Heretic2-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo G4-MeroMero-26B-A4B-Heretic2, publicado por el usuario EternalDragon en Hugging Face. El trabajo de conversión y cuantización lo firma mradermacher, un perfil habitual en la publicación de versiones GGUF de modelos comunitarios para su uso con llama.cpp y herramientas derivadas. El modelo base no cuenta con model card detallada en la información disponible, por lo que muchos de sus detalles de entrenamiento y procedencia no se pueden confirmar.
 
 El nombre delata parte de su naturaleza: el sufijo "A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4 mil millones de parámetros activos, mientras que el recuento real de parámetros en safetensors asciende a 25.233.142.046 (unos 25,2 mil millones). El término "Heretic" es habitual en la comunidad para designar ajustes que eliminan o atenúan los mecanismos de rechazo aprendidos por alineamiento, lo que sitúa al modelo en la categoría de variantes "uncensored" o con alineamiento reducido. El tag "conversational" indica que está orientado a diálogo.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es práctica: permite a desarrolladores que trabajan
 
 El modelo base G4-MeroMero-26B-A4B-Heretic2 procede del usuario EternalDragon y, por el patrón de nombres, parece derivar de una arquitectura MoE con unos 25 mil millones de parámetros totales y aproximadamente 4 mil millones activos por token. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el proceso de alineamiento (RLHF, DPO u otros) ni las innovaciones técnicas empleadas. El sufijo "Heretic" apunta a un ajuste orientado a reducir los rechazos del modelo, práctica común en la comunidad para obtener respuestas menos restrictivas, pero no hay documentación que lo confirme.
 
-Este repositorio concreto no contiene el modelo original, sino una batería de cuantizaciones estáticas generadas con llama.cpp (se observa en los metadatos `quantize_version: 2` y `output_tensor_quantised: 1`). La conversión parte de pesos en formato HuggingFace (`convert_type: hf`) y produce ficheros GGUF listos para inferencia en CPU y GPU con llama.cpp y compatibles. No se ha aplicado cuantización del proyector multimodal (`skip_mmproj` vacío, sin indicios de visión).
+Este repositorio concreto no contiene el modelo original, sino una batería de cuantizaciones estáticas generadas con llama.cpp (se observa en los metadatos `quantize_version: 2` y `output_tensor_quantised: 1`). La conversión parte de pesos en formato Hugging Face (`convert_type: hf`) y produce ficheros GGUF listos para inferencia en CPU y GPU con llama.cpp y compatibles. No se ha aplicado cuantización del proyector multimodal (`skip_mmproj` vacío, sin indicios de visión).
 
 ## Capacidades
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Doctorian-MedCore es un modelo de lenguaje ajustado (fine-tune) publicado por el usuario Akora-Joseph en HuggingFace, orientado al dominio medico. Se trata de un derivado de dos modelos base declarados en su ficha: `google/gemma-4-31B-it` y `mistralai/Mistral-Large-4-1T-A52B`, combinados y afinados sobre un amplio conjunto de datasets que incluyen informes de diagnostico por imagen, conversaciones medico-paciente, razonamiento paso a paso, ciberseguridad y corpus educativos generales como FineWeb-Edu.
+Doctorian-MedCore es un modelo de lenguaje ajustado (fine-tune) publicado por el usuario Akora-Joseph en Hugging Face, orientado al dominio medico. Se trata de un derivado de dos modelos base declarados en su ficha: `google/gemma-4-31B-it` y `mistralai/Mistral-Large-4-1T-A52B`, combinados y afinados sobre un amplio conjunto de datasets que incluyen informes de diagnostico por imagen, conversaciones medico-paciente, razonamiento paso a paso, ciberseguridad y corpus educativos generales como FineWeb-Edu.
 
 El problema que pretende resolver es la falta de modelos abiertos especializados en consultas medicas, informes diagnosticos y dialogo clinico, incorporando ademas capacidades de razonamiento y verificacion de afirmaciones. Su relevancia actual es limitada: el modelo presenta cero descargas y un solo "like" en el momento de redactar esta ficha, no dispone de model card descriptiva (solo metadatos) y no hay evaluaciones publicadas, por lo que debe considerarse un modelo experimental de autor comunitario sin validacion documentada.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los m
 - VRAM estimada para inferencia: no disponible. Dado que uno de los modelos base declarados es de 31B parametros, en FP16 requeriria en torno a 62 GB de VRAM; con cuantizacion de 4 bits, aproximadamente 18-20 GB. Si el modelo final hereda la escala del modelo Mistral de 1T parametros, los requisitos serian mucho mayores y no estimables sin confirmacion.
 - GPU recomendadas: no disponible. Como referencia generica, para un modelo de ~31B: A100 80 GB o H100 en precision completa; RTX 4090 (24 GB) u RTX 5090 con cuantizacion de 4 bits.
 - Consumer GPU: probablemente viable con cuantizacion agresiva (4 bits) si el modelo final se situa en torno a 31B parametros; no confirmado.
-- Opciones de despliegue: la etiqueta "endpoints_compatible" indica compatibilidad con los endpoints de inferencia de HuggingFace. La libreria `transformers` sugiere compatibilidad con vLLM, TGI y, potencialmente, llama.cpp/Ollama si se publica en formato GGUF (no confirmado).
+- Opciones de despliegue: la etiqueta "endpoints_compatible" indica compatibilidad con los endpoints de inferencia de Hugging Face. La libreria `transformers` sugiere compatibilidad con vLLM, TGI y, potencialmente, llama.cpp/Ollama si se publica en formato GGUF (no confirmado).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Doctorian-MedCore se diferencia por ser un modelo comunitario experimental sin d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akora-Joseph/Doctorian-MedCore
+- Modelo en Hugging Face: https://huggingface.co/Akora-Joseph/Doctorian-MedCore
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Modelo base declarado: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Paper, demo o repositorio adicional: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kymaulana/albef-retrieval-exp` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de la arquitectura ALBEF (Align before Fuse) orientada a tareas de recuperación multimodal (retrieval). Lo publica el usuario `kymaulana` y no debe confundirse con los pesos oficiales de ALBEF de Salesforce: según la propia model card, se trata de un punto de partida reproducible con un checkpoint de inicialización, no de un modelo entrenado ni evaluado. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un fichero `model.safetensors` descrito explícitamente como inicialización para pruebas de humo.
+`kymaulana/albef-retrieval-exp` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de la arquitectura ALBEF (Align before Fuse) orientada a tareas de recuperación multimodal (retrieval). Lo publica el usuario `kymaulana` y no debe confundirse con los pesos oficiales de ALBEF de Salesforce: según la propia model card, se trata de un punto de partida reproducible con un checkpoint de inicialización, no de un modelo entrenado ni evaluado. El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un fichero `model.safetensors` descrito explícitamente como inicialización para pruebas de humo.
 
 La relevancia de este repositorio es, por tanto, didáctica y experimental: sirve para reproducir la estructura de ALBEF con atención multi-query, fusión de bajo rango, activación gelu-tanh y normalización ScaleNorm, y para lanzar experimentos propios sobre datasets como Flickr30k. No aporta resultados de benchmarks, no declara idiomas soportados y no está pensado para uso en producción.
 
-El dato de "parámetros totales" reportado por HuggingFace (16.576) es anómalo para un modelo multimodal de este tipo y probablemente refleja solo una parte de los tensores del checkpoint de inicialización, no el tamaño real de la arquitectura completa. No hay información que permita confirmar el recuento real de parámetros.
+El dato de "parámetros totales" reportado por Hugging Face (16.576) es anómalo para un modelo multimodal de este tipo y probablemente refleja solo una parte de los tensores del checkpoint de inicialización, no el tamaño real de la arquitectura completa. No hay información que permita confirmar el recuento real de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kymaulana/albef-retrieval-exp | No disponible (metadatos: 16.576) | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace |
+| kymaulana/albef-retrieval-exp | No disponible (metadatos: 16.576) | No disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face |
 | ALBEF oficial (Salesforce) | ~210M (ViT-B/16 + BERT-base) | 512 tokens de texto aprox. | Sí (preentrenado y afinado en retrieval) | BSD-3-Clause | GitHub y pesos públicos |
-| BLIP (Salesforce) | ~224M (ViT-B) | 512 tokens de texto aprox. | Sí | BSD-3-Clause | HuggingFace |
-| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | Sí | MIT (código), pesos con términos propios | HuggingFace |
+| BLIP (Salesforce) | ~224M (ViT-B) | 512 tokens de texto aprox. | Sí | BSD-3-Clause | Hugging Face |
+| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | Sí | MIT (código), pesos con términos propios | Hugging Face |
 
 Nota: los datos de los modelos comparables provienen de conocimiento general de la literatura y no de la información proporcionada en esta ficha; verifíquelos en sus fuentes originales antes de usarlos en una decisión técnica.
 
@@ -81,7 +81,7 @@ Nota: los datos de los modelos comparables provienen de conocimiento general de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kymaulana/albef-retrieval-exp
+- Repositorio en Hugging Face: https://huggingface.co/kymaulana/albef-retrieval-exp
 - Paper original de ALBEF: https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
 - Dataset Flickr30k: https://shannon.cs.illinois.edu/DenotationGraph/

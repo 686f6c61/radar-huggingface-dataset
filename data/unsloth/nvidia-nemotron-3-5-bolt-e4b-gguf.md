@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - No hay resultados de benchmarks publicados en la información disponible, por lo que el rendimiento real frente a alternativas de tamaño similar no está verificado de forma independiente.
 - Riesgo de alucinación inherente a los SLM: con 4B parámetros efectivos, la fiabilidad en dominios especializados y en cadenas de razonamiento largas es limitada, y el modo `enable_thinking` no garantiza corrección.
 - Fecha de corte de datos de post-entrenamiento: mayo de 2026. Cualquier evento posterior no está cubierto.
-- La licencia OpenMDW-1.1 se registra como `license: other` en HuggingFace, no como una licencia OSI estándar. La model card afirma que el modelo está listo para uso comercial y no comercial, pero conviene revisar el texto completo de OpenMDW-1.1 antes de integrarlo en producción.
+- La licencia OpenMDW-1.1 se registra como `license: other` en Hugging Face, no como una licencia OSI estándar. La model card afirma que el modelo está listo para uso comercial y no comercial, pero conviene revisar el texto completo de OpenMDW-1.1 antes de integrarlo en producción.
 - La calidad por idioma no está documentada: se declaran 34 idiomas, pero sin métricas por lengua; el rendimiento en idiomas distintos del inglés puede degradarse.
 - El repositorio ocupa 133,3 GB porque contiene múltiples niveles de cuantización; debe descargarse únicamente el archivo GGUF necesario.
 - No se documentan sesgos específicos ni evaluaciones de seguridad o red teaming en la información disponible.
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
 - Modelo base en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Drafter DFlash para decodificación especulativa: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
 - Modelo base original de Google: https://huggingface.co/google/gemma-4-E4B-it

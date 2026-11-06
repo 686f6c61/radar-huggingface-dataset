@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lfrodriguesza/mocov3-finetuned` es un repositorio de HuggingFace publicado por el usuario lfrodriguesza que contiene una implementacion propia del metodo MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperacion (retrieval) de imagenes. MoCo v3 es, en su formulacion original, un marco de aprendizaje autosupervisado por contraste que entrena un codificador visual mediante dos vistas aumentadas de la misma imagen y una cola de claves actualizada con media exponencial de los pesos. El modelo se distribuye bajo licencia BSD-3-Clause y esta etiquetado con las etiquetas `pytorch`, `safetensors`, `mocov3` y `retrieval`.
+`lfrodriguesza/mocov3-finetuned` es un repositorio de Hugging Face publicado por el usuario lfrodriguesza que contiene una implementacion propia del metodo MoCo v3 (Momentum Contrast v3) orientada a tareas de recuperacion (retrieval) de imagenes. MoCo v3 es, en su formulacion original, un marco de aprendizaje autosupervisado por contraste que entrena un codificador visual mediante dos vistas aumentadas de la misma imagen y una cola de claves actualizada con media exponencial de los pesos. El modelo se distribuye bajo licencia BSD-3-Clause y esta etiquetado con las etiquetas `pytorch`, `safetensors`, `mocov3` y `retrieval`.
 
 El dato mas relevante para cualquier evaluacion es que el autor declara explicitamente que el checkpoint incluido es una **inicializacion valida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Los pesos reales almacenados en `model.safetensors` suman 24.832 parametros (aproximadamente 24,8 mil), una cifra muy alejada de lo que sugiere la etiqueta "large" de la configuracion, lo que refuerza la interpretacion de que se trata de un esqueleto de codigo con pesos sin entrenar.
 
@@ -87,5 +87,5 @@ No se ha encontrado informacion adicional sobre alternativas comparables en los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lfrodriguesza/mocov3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/lfrodriguesza/mocov3-finetuned
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web disponibles; los resultados devueltos no guardan relacion con el modelo.

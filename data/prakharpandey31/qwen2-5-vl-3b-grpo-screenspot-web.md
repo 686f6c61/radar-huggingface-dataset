@@ -78,9 +78,9 @@ El adaptador `grpo_lora` mejora al modelo base en 10,2 puntos de precision globa
 
 | Modelo | Parametros | Contexto | Rendimiento en ScreenSpot-Web | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-3B + `grpo_lora` (este modelo) | 3B + LoRA | No disponible (base: 32 768) | 81,8 % overall (n=88) | apache-2.0 | HuggingFace, adaptador PEFT |
-| Qwen2.5-VL-3B + `sft_lora` | 3B + LoRA | No disponible (base: 32 768) | 77,3 % overall (n=88) | apache-2.0 | HuggingFace, adaptador PEFT |
-| Qwen2.5-VL-3B-Instruct (base) | 3B | 32 768 | 71,6 % overall (n=88) | apache-2.0 | HuggingFace |
+| Qwen2.5-VL-3B + `grpo_lora` (este modelo) | 3B + LoRA | No disponible (base: 32 768) | 81,8 % overall (n=88) | apache-2.0 | Hugging Face, adaptador PEFT |
+| Qwen2.5-VL-3B + `sft_lora` | 3B + LoRA | No disponible (base: 32 768) | 77,3 % overall (n=88) | apache-2.0 | Hugging Face, adaptador PEFT |
+| Qwen2.5-VL-3B-Instruct (base) | 3B | 32 768 | 71,6 % overall (n=88) | apache-2.0 | Hugging Face |
 | Otros modelos especializados en grounding GUI (UI-TARS, ShowUI, OS-Atlas) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible |
 
 La comparacion con alternativas especializadas no puede establecerse con rigor porque no se han recuperado sus resultados sobre el mismo split ni con el mismo protocolo de evaluacion. Cualquier comparacion directa exigiria reevaluar todos los modelos sobre el mismo conjunto.
@@ -100,7 +100,7 @@ La comparacion con alternativas especializadas no puede establecerse con rigor p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prakharpandey31/qwen2.5-vl-3b-grpo-screenspot-web
+- Modelo en Hugging Face: https://huggingface.co/Prakharpandey31/qwen2.5-vl-3b-grpo-screenspot-web
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/rootsautomation/ScreenSpot
 - Codigo de prompt, recompensa, entrenamiento y evaluacion: https://github.com/prakhar1605/grpo-web-grounding

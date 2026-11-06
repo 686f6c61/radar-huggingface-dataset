@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Avarian/granite-8b-polymath-v2 es un adaptador LoRA publicado en HuggingFace por el usuario Avarian sobre el modelo base ibm-granite/granite-4.2-8b de IBM. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse junto al modelo base para producir texto; el repositorio ocupa 0,2 GB, coherente con un adaptador y no con un modelo de 8 000 millones de parametros en precision completa. Su pipeline declarado es text-generation y su libreria de referencia es PEFT, con version 0.21.1 citada en la model card.
+Avarian/granite-8b-polymath-v2 es un adaptador LoRA publicado en Hugging Face por el usuario Avarian sobre el modelo base ibm-granite/granite-4.2-8b de IBM. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse junto al modelo base para producir texto; el repositorio ocupa 0,2 GB, coherente con un adaptador y no con un modelo de 8 000 millones de parametros en precision completa. Su pipeline declarado es text-generation y su libreria de referencia es PEFT, con version 0.21.1 citada en la model card.
 
-El modelo no aporta documentacion tecnica: la model card es la plantilla por defecto de HuggingFace, con todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) marcados como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y sus fechas de creacion y actualizacion son 2026-10-14, con apenas 20 segundos de diferencia entre ambas, lo que sugiere una subida automatizada o de prueba. El nombre "polymath" apunta a un ajuste orientado a conocimiento multidisciplinar, pero no hay evidencia publicada que lo respalde.
+El modelo no aporta documentacion tecnica: la model card es la plantilla por defecto de Hugging Face, con todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) marcados como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y sus fechas de creacion y actualizacion son 2026-10-14, con apenas 20 segundos de diferencia entre ambas, lo que sugiere una subida automatizada o de prueba. El nombre "polymath" apunta a un ajuste orientado a conocimiento multidisciplinar, pero no hay evidencia publicada que lo respalde.
 
 Por todo ello, esta ficha describe el artefacto tal como esta publicado y marca como "no disponible" cualquier dato no verificable. No se han encontrado resultados de benchmark, ni paper, ni repositorio de codigo, ni demo asociados al adaptador.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: autor Avarian; tamano del repositorio 0,2 GB;
 
 El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT, segun los tags `peft`, `lora` y `safetensors` y la referencia `base_model:adapter:ibm-granite/granite-4.2-8b`. Esto implica que la arquitectura efectiva en inferencia es la del modelo base IBM Granite 4.2 8B, y que el adaptador introduce matrices de bajo rango sobre un subconjunto de capas. No se especifica el rango (r), el valor de alpha, el dropout, las capas objetivo ni si el entrenamiento afecto a proyecciones de atencion, MLP o modulos del bloque. Tampoco se indica si el adaptador fue fusionado con el base en algun checkpoint distribuido: el tamano del repositorio (0,2 GB) es compatible con pesos de adaptador sin fusionar, no con un modelo mergeado en bf16 (que rondaria los 16 GB).
 
-No hay informacion sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni procedencia, ni si hubo filtrado. No se documenta el regimen de entrenamiento (precision, epocas, optimizador, learning rate, scheduler), ni si se aplico RLHF, DPO, SFT u otra tecnica de alineamiento. La model card deja el campo de hiperparametros como "[More Information Needed]". El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla de HuggingFace; no es un paper del modelo ni describe su metodo de entrenamiento.
+No hay informacion sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni procedencia, ni si hubo filtrado. No se documenta el regimen de entrenamiento (precision, epocas, optimizador, learning rate, scheduler), ni si se aplico RLHF, DPO, SFT u otra tecnica de alineamiento. La model card deja el campo de hiperparametros como "[More Information Needed]". El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla de Hugging Face; no es un paper del modelo ni describe su metodo de entrenamiento.
 
 En resumen: no es posible reconstruir el proceso de entrenamiento ni verificar que se hayan aplicado innovaciones tecnicas concretas. Cualquier afirmacion sobre datos o metodo seria especulacion.
 
@@ -97,7 +97,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Avarian/granite-8b-polymath-v2
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Avarian/granite-8b-polymath-v2
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la model card: https://mlco2.github.io/impact

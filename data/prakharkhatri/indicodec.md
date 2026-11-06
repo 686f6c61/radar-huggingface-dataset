@@ -112,7 +112,7 @@ IndiCodec supera a los tres comparadores en lenguas indias por margen amplio y l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prakharkhatri/IndiCodec
+- Hugging Face: https://huggingface.co/prakharkhatri/IndiCodec
 - Muestras de audio: https://codeprakhar25.github.io/IndiCodec/
 - Codigo en GitHub: https://github.com/codeprakhar25/IndiCodec
 - NeuCodec (base del modelo): https://huggingface.co/neuphonic/neucodec

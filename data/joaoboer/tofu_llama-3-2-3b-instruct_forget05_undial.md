@@ -89,9 +89,9 @@ No se dispone de valores equivalentes para el modelo base `open-unlearning/tofu_
 
 | Modelo | Parametros | Contexto | Olvido / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_UNDIAL` | 3,21 B | 128.000 (heredado del base) | `forget_quality` 0.0002; `model_utility` 0.5606 | llama3.2 | Pesos safetensors en HuggingFace |
-| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` (modelo base) | 3,21 B | 128.000 | no disponible en la informacion proporcionada | llama3.2 | Pesos safetensors en HuggingFace |
-| `meta-llama/Llama-3.2-3B-Instruct` (modelo original) | 3,21 B | 128.000 | no aplica (sin desaprendizaje); rendimiento general no disponible aqui | llama3.2 | Pesos safetensors en HuggingFace |
+| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_UNDIAL` | 3,21 B | 128.000 (heredado del base) | `forget_quality` 0.0002; `model_utility` 0.5606 | llama3.2 | Pesos safetensors en Hugging Face |
+| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` (modelo base) | 3,21 B | 128.000 | no disponible en la informacion proporcionada | llama3.2 | Pesos safetensors en Hugging Face |
+| `meta-llama/Llama-3.2-3B-Instruct` (modelo original) | 3,21 B | 128.000 | no aplica (sin desaprendizaje); rendimiento general no disponible aqui | llama3.2 | Pesos safetensors en Hugging Face |
 | Otras variantes de desaprendizaje sobre TOFU (NPO, SimNPO, GradDiff) | 3,21 B (tipico) | 128.000 | no disponible en la informacion proporcionada | llama3.2 (segun derivado) | Repositorios de open-unlearning |
 
 No se dispone de datos comparativos de benchmarks entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
@@ -112,7 +112,7 @@ No se dispone de datos comparativos de benchmarks entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_UNDIAL
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_UNDIAL
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

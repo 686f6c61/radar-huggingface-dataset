@@ -83,9 +83,9 @@ Estimaciones derivadas del tamano del modelo base; el autor no publica requisito
 
 | Modelo | Parametros | Contexto | Rendimiento en el registro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeroproof-retail-concise-4b | ~4 000 M (base) + LoRA 0,1 GB | No disponible | 0,838 (base 0,118); +0,721 | apache-2.0 | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 000 M | No disponible en la informacion proporcionada | 0,118 en el mismo conjunto de evaluacion | apache-2.0 | Pesos completos en HuggingFace |
-| zeroproof-airline-concise-4b (companero) | ~4 000 M (base) + LoRA | No disponible | +0,899 en su dominio (aerolineas) | apache-2.0 | Adaptador PEFT en HuggingFace |
+| zeroproof-retail-concise-4b | ~4 000 M (base) + LoRA 0,1 GB | No disponible | 0,838 (base 0,118); +0,721 | apache-2.0 | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 000 M | No disponible en la informacion proporcionada | 0,118 en el mismo conjunto de evaluacion | apache-2.0 | Pesos completos en Hugging Face |
+| zeroproof-airline-concise-4b (companero) | ~4 000 M (base) + LoRA | No disponible | +0,899 en su dominio (aerolineas) | apache-2.0 | Adaptador PEFT en Hugging Face |
 
 La comparacion con otros adaptadores de estilo o con modelos instruct de ~4 000 M de otras familias no esta disponible: el autor solo publica estos dos adaptadores y su base.
 
@@ -106,7 +106,7 @@ La comparacion con otros adaptadores de estilo o con modelos instruct de ~4 000 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero-proof-ai/zeroproof-retail-concise-4b
+- Modelo en Hugging Face: https://huggingface.co/zero-proof-ai/zeroproof-retail-concise-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador companero (aerolineas): https://huggingface.co/zero-proof-ai/zeroproof-airline-concise-4b
 - Open Character Training (Maiya et al.): https://arxiv.org/abs/2511.01689

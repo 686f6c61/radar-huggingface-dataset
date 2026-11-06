@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wouze/read-only-reranker-probes | Sondas sobre base de 4B | No disponible | Early exit sobre reranker congelado | Apache 2.0 | HuggingFace (15 descargas) |
-| Qwen/Qwen3-Reranker-4B | 4B | No disponible | Re-ranking estandar sin early exit | Apache 2.0 | HuggingFace (modelo base) |
+| Wouze/read-only-reranker-probes | Sondas sobre base de 4B | No disponible | Early exit sobre reranker congelado | Apache 2.0 | Hugging Face (15 descargas) |
+| Qwen/Qwen3-Reranker-4B | 4B | No disponible | Re-ranking estandar sin early exit | Apache 2.0 | Hugging Face (modelo base) |
 | Alternativas de re-ranking de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otros rerankers en la informacion proporcionada.
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparativos con otros rerankers en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wouze/read-only-reranker-probes
+- Hugging Face: https://huggingface.co/Wouze/read-only-reranker-probes
 - Repositorio GitHub (codigo, paper y tablas de resultados): https://github.com/Wouze/read-only-reranker-probes
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B

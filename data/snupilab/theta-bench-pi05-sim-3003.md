@@ -29,7 +29,7 @@ El conjunto de datos de entrenamiento se identifica como `snupilab/theta-bench-t
 
 ## Capacidades
 
-- Politica robotica entrenada en simulacion: el artefacto pertenece al pipeline de robótica de HuggingFace y esta asociado a MuJoCo, por lo que su finalidad es la ejecucion de comportamientos de control en entornos simulados.
+- Politica robotica entrenada en simulacion: el artefacto pertenece al pipeline de robótica de Hugging Face y esta asociado a MuJoCo, por lo que su finalidad es la ejecucion de comportamientos de control en entornos simulados.
 - Aprendizaje por imitacion a partir de teleoperacion: los datos proceden del dataset `theta-bench-teleop` e incluyen demostraciones L1/L2 y prefijos L0.
 - Cobertura multipropósito limitada a 18 condiciones definidas en el pool de simulacion.
 - Soporte de tool calling / function calling: no disponible.
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye especificaciones (paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snupilab/theta-bench-pi05-sim-3003
+- Repositorio en Hugging Face: https://huggingface.co/snupilab/theta-bench-pi05-sim-3003
 - Dataset de entrenamiento: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revision 8b2cd31e107b64cb13f812ea217a63a20845c78a): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Paper, blog, repositorio de codigo y demos: no disponible

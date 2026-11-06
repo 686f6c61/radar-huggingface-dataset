@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Trunk | Bloques denoiser | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| boltzgen-structure-small | 136,886 M | 12 Miniformer + 3 MSA | 8 token | AGPL-3.0 | HuggingFace (oteam) |
-| boltzgen (diverse/adherence) | 482,213 M | 64 Pairformer + 4 MSA | 24 token | AGPL-3.0 | HuggingFace (oteam) |
-| boltzgen-inversefolding | 3,069 M | 6 bloques graph encoder, 30 vecinos | 3 graph decoder | AGPL-3.0 | HuggingFace (oteam) |
+| boltzgen-structure-small | 136,886 M | 12 Miniformer + 3 MSA | 8 token | AGPL-3.0 | Hugging Face (oteam) |
+| boltzgen (diverse/adherence) | 482,213 M | 64 Pairformer + 4 MSA | 24 token | AGPL-3.0 | Hugging Face (oteam) |
+| boltzgen-inversefolding | 3,069 M | 6 bloques graph encoder, 30 vecinos | 3 graph decoder | AGPL-3.0 | Hugging Face (oteam) |
 
 La comparativa se limita a las variantes del propio ecosistema BoltzGen, ya que la información proporcionada no incluye datos de modelos alternativos de diseño de binders (como RFdiffusion, ProteinMPNN o AlphaProteo) que permitan una comparación rigurosa de rendimiento.
 
@@ -86,7 +86,7 @@ La comparativa se limita a las variantes del propio ecosistema BoltzGen, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/boltzgen-structure-small
+- Hugging Face: https://huggingface.co/oteam/boltzgen-structure-small
 - Variante completa: https://huggingface.co/oteam/boltzgen
 - Generadores independientes: https://huggingface.co/oteam/boltzgen-diverse y https://huggingface.co/oteam/boltzgen-adherence
 - Inverse folding: https://huggingface.co/oteam/boltzgen-inversefolding

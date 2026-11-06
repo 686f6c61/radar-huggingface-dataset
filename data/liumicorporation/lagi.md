@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LAGI es un modelo publicado en HuggingFace por LiumiCorporation bajo la licencia LCPL-1.0. El repositorio tiene un tamano de 3,5 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 3 a 8 mil millones de parametros segun el formato de pesos), aunque la model card no proporciona ningun detalle sobre arquitectura, parametros, contexto o datos de entrenamiento. El pipeline no esta declarado y el modelo no registra descargas ni interacciones en el momento de la consulta.
+LAGI es un modelo publicado en Hugging Face por LiumiCorporation bajo la licencia LCPL-1.0. El repositorio tiene un tamano de 3,5 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 3 a 8 mil millones de parametros segun el formato de pesos), aunque la model card no proporciona ningun detalle sobre arquitectura, parametros, contexto o datos de entrenamiento. El pipeline no esta declarado y el modelo no registra descargas ni interacciones en el momento de la consulta.
 
 La informacion publica disponible es practicamente inexistente: la model card se limita a los metadatos de licencia y no incluye descripcion funcional, especificaciones tecnicas ni resultados de evaluacion. Esto lo convierte en un artefacto dificil de evaluar para uso en produccion o investigacion, ya que no se puede verificar su comportamiento ni su procedencia de datos.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - Analisis de seguridad y sesgos: auditar las respuestas del modelo en dominios sensibles, dado que no hay documentacion sobre alineacion ni filtros.
 - Investigacion sobre licencias: estudiar las implicaciones de la licencia LCPL-1.0 en un contexto academico antes de redistribuir el modelo.
 - Prototipado interno no critico: usar el modelo en entornos de desarrollo cerrados donde la falta de garantias de calidad no suponga un riesgo para el usuario final.
-- Comparacion de artefactos sin documentacion: incluirlo en estudios sobre trazabilidad y reproducibilidad de modelos publicados en HuggingFace con model cards minimas.
+- Comparacion de artefactos sin documentacion: incluirlo en estudios sobre trazabilidad y reproducibilidad de modelos publicados en Hugging Face con model cards minimas.
 
 ## Benchmarks y rendimiento
 
@@ -74,6 +74,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiumiCorporation/LAGI
+- Hugging Face: https://huggingface.co/LiumiCorporation/LAGI
 - Licencia LCPL-1.0: referenciada en el repositorio como archivo LICENSE (no se proporciona URL publica adicional)
 - Paper, blog, repositorio o demo: no disponibles

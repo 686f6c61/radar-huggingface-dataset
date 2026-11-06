@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo comparable con LLMs o modelos mu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISHIKAWA1131/notes-grounded-language
+- Repositorio Hugging Face: https://huggingface.co/ISHIKAWA1131/notes-grounded-language
 - Perfil del autor: https://huggingface.co/ISHIKAWA1131/models
 - Repositorio relacionado del mismo autor: https://huggingface.co/soisikawa/cs229-grounded-language

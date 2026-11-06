@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Leo-1994/subflow-models` es un espacio de HuggingFace creado por el usuario Leo-1994, con licencia Apache 2.0 y sin información adicional en su model card. El nombre del repositorio sugiere una posible relación con el método SubFlow (Sub-mode Conditioned Flow Matching) presentado en el artículo arXiv 2604.12273, que aborda la diversidad en generación de imágenes de un solo paso mediante el acondicionamiento por sub-modos semánticos. Sin embargo, no se ha confirmado que este repositorio contenga los pesos o implementaciones de dicho método, ya que no se proporciona ninguna descripción, pipeline, idiomas o métricas en la página del modelo.
+El repositorio `Leo-1994/subflow-models` es un espacio de Hugging Face creado por el usuario Leo-1994, con licencia Apache 2.0 y sin información adicional en su model card. El nombre del repositorio sugiere una posible relación con el método SubFlow (Sub-mode Conditioned Flow Matching) presentado en el artículo arXiv 2604.12273, que aborda la diversidad en generación de imágenes de un solo paso mediante el acondicionamiento por sub-modos semánticos. Sin embargo, no se ha confirmado que este repositorio contenga los pesos o implementaciones de dicho método, ya que no se proporciona ninguna descripción, pipeline, idiomas o métricas en la página del modelo.
 
 Dado que la información disponible es extremadamente limitada, esta ficha se redacta indicando explícitamente los datos no disponibles, siguiendo el criterio de no inventar ningún dato técnico. El repositorio existe desde el 30 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que podría ser un espacio en fase inicial o de carácter experimental.
 
@@ -52,6 +52,6 @@ No disponible. Dado que no se ha identificado la naturaleza del modelo (tipo de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Leo-1994/subflow-models
+- Repositorio Hugging Face: https://huggingface.co/Leo-1994/subflow-models
 - Articulo arXiv (posible referencia por nombre, sin confirmacion): https://arxiv.org/abs/2604.12273
 - PDF del articulo: https://arxiv.org/pdf/2604.12273v1

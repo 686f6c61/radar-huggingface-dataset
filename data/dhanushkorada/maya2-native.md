@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maya 2 Native es un modelo de síntesis de voz (text-to-speech) multilingüe de pesos abiertos desarrollado por Maya Research (publicado en HuggingFace por el usuario DhanushKorada). Genera audio a 24 kHz en mono para 11 lenguas de la India y el inglés, con soporte de streaming en tramas de 80 ms, 20 voces integradas y clonación de voz zero-shot, incluyendo síntesis cruzada entre idiomas. Está publicado bajo licencia Apache-2.0 y su checkpoint 1.0 se publicó el 25 de octubre de 2026.
+Maya 2 Native es un modelo de síntesis de voz (text-to-speech) multilingüe de pesos abiertos desarrollado por Maya Research (publicado en Hugging Face por el usuario DhanushKorada). Genera audio a 24 kHz en mono para 11 lenguas de la India y el inglés, con soporte de streaming en tramas de 80 ms, 20 voces integradas y clonación de voz zero-shot, incluyendo síntesis cruzada entre idiomas. Está publicado bajo licencia Apache-2.0 y su checkpoint 1.0 se publicó el 25 de octubre de 2026.
 
 El modelo parte de Qwen/Qwen3-1.7B-Base como modelo base y suma hasta 2.502.398.656 parámetros totales según los pesos en safetensors (aproximadamente 5,0 GB en BF16). La arquitectura concreta del decodificador de audio no se detalla en la información disponible; la model card menciona la etiqueta "mimi" y un motor de inferencia propio con API en Python, endpoint compatible con OpenAI y streaming por WebSocket.
 
@@ -109,7 +109,7 @@ La comparación se limita a los datos del leaderboard VoiceArena de hindi inclui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DhanushKorada/maya2-native
+- Modelo en Hugging Face: https://huggingface.co/DhanushKorada/maya2-native
 - Repositorio de código de inferencia: https://github.com/MayaResearch/maya2-native
 - Leaderboard VoiceArena de hindi: https://voicearena.com/tts-leaderboard/hindi
 - Metodología de VoiceArena: https://voicearena.com/tts-methodology

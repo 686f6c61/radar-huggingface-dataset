@@ -71,9 +71,9 @@ El propio autor indica que se trata de un primer experimento, que la evaluacion 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1 (este) | 0,8B (base) + LoRA | no disponible | 77,3% de acierto, arrepentimiento 1,92 en test | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | 30,4% de acierto, arrepentimiento 2,67 | no disponible | HuggingFace |
-| connectailab-rl-jay-v1-teacher | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| connectailab-rl-jay-v1 (este) | 0,8B (base) + LoRA | no disponible | 77,3% de acierto, arrepentimiento 1,92 en test | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | 30,4% de acierto, arrepentimiento 2,67 | no disponible | Hugging Face |
+| connectailab-rl-jay-v1-teacher | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos de decision genericos de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables publicos de decision-making empresarial de este tamano en la informacion proporcionada.
@@ -93,7 +93,7 @@ No se dispone de modelos comparables publicos de decision-making empresarial de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jchann00/connectailab-rl-jay-v1
+- Modelo en Hugging Face: https://huggingface.co/jchann00/connectailab-rl-jay-v1
 - Modelo profesora: https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

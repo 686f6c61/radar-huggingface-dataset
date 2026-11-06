@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OctaWasteNet es un repositorio de pesos publicado en HuggingFace por el usuario rakibbul bajo el identificador `rakibbul/OctaWasteNet`. En el momento de redactar esta ficha, la model card asociada no incluye informacion sustantiva: no se declara pipeline de inferencia, licencia, idiomas soportados ni resultados de evaluacion. El unico dato objetivo disponible es el tamano del repositorio, 0,5 GB, y las fechas de creacion y ultima actualizacion (10 de septiembre de 2026), junto con un registro de 0 descargas y 1 like.
+OctaWasteNet es un repositorio de pesos publicado en Hugging Face por el usuario rakibbul bajo el identificador `rakibbul/OctaWasteNet`. En el momento de redactar esta ficha, la model card asociada no incluye informacion sustantiva: no se declara pipeline de inferencia, licencia, idiomas soportados ni resultados de evaluacion. El unico dato objetivo disponible es el tamano del repositorio, 0,5 GB, y las fechas de creacion y ultima actualizacion (10 de septiembre de 2026), junto con un registro de 0 descargas y 1 like.
 
 Por la nomenclatura del identificador ("WasteNet") cabe inferir que el proyecto esta orientado a clasificacion o segmentacion de residuos, pero se trata de una suposicion no confirmada por el autor y no debe tomarse como caracteristica verificada. No hay informacion publica sobre la arquitectura, el conjunto de datos de entrenamiento, el numero de parametros ni el regimen de licencia, lo que impide evaluar su idoneidad para uso en produccion.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rakibbul/OctaWasteNet | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace, 0,5 GB, 0 descargas |
+| rakibbul/OctaWasteNet | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face, 0,5 GB, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rakibbul/OctaWasteNet
+- Hugging Face: https://huggingface.co/rakibbul/OctaWasteNet
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

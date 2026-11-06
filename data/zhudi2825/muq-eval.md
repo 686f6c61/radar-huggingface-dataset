@@ -69,9 +69,9 @@ No se han publicado en la información disponible resultados frente a otras mét
 
 | Modelo | Tipo | Params | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuQ-Eval (A3a) | Métrica por muestra | ~2M (+310M encoder) | MI + TA con LoRA sobre MuQ | MIT | HuggingFace + GitHub |
+| MuQ-Eval (A3a) | Métrica por muestra | ~2M (+310M encoder) | MI + TA con LoRA sobre MuQ | MIT | Hugging Face + GitHub |
 | FAD | Métrica distribucional | no aplica | Distancia entre distribuciones | según implementación | Ampliamente usado |
-| CLAP score | Métrica de alineación | ~100M+ | Similitud audio-texto | según checkpoint | HuggingFace |
+| CLAP score | Métrica de alineación | ~100M+ | Similitud audio-texto | según checkpoint | Hugging Face |
 | MOS predictores genéricos (p. ej. DNSMOS) | Métrica por muestra | variable | Calidad de voz | variable | Disponible |
 
 No se dispone de comparaciones numéricas directas con FAD, CLAP ni DNSMOS en la información proporcionada.
@@ -84,12 +84,12 @@ No se dispone de comparaciones numéricas directas con FAD, CLAP ni DNSMOS en la
 - Riesgo de sesgo hacia los estilos y sistemas representados en MusicEval.
 - No es un modelo generativo: no produce audio ni texto; usarlo fuera de la tarea de evaluación no tiene sentido.
 - Licencia MIT permite uso comercial, pero conviene revisar la licencia del encoder base `OpenMuQ/MuQ-large-msd-iter` antes de desplegar en producción.
-- Requiere el código del repositorio GitHub (`src`) para cargar el checkpoint; no es autónomo solo con HuggingFace.
+- Requiere el código del repositorio GitHub (`src`) para cargar el checkpoint; no es autónomo solo con Hugging Face.
 - No se documentan calibraciones ni intervalos de confianza de las puntuaciones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhudi2825/MuQ-Eval
+- Hugging Face: https://huggingface.co/zhudi2825/MuQ-Eval
 - Paper: https://huggingface.co/papers/2603.22677
 - arXiv: https://arxiv.org/abs/2603.22677
 - Código: https://github.com/dgtql/MuQ-Eval

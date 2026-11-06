@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/summerAIO/Looped-Qwen-pre
+- Modelo en Hugging Face: https://huggingface.co/summerAIO/Looped-Qwen-pre
 - Modelo base (todo GDN): https://huggingface.co/j-llm/Qwen3.5-2B-SpeedX2
 - Profesor: https://huggingface.co/Qwen/Qwen3.5-2B
 - Referencia del autor en la model card: summerMC/Looped-Qwen-pre (mismo artefacto, distinto namespace)

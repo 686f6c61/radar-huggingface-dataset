@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mradermacher/Ling-3.0-flash-i1-GGUF](https://huggingface.co/mradermacher/Ling-3.0-flash-i1-GGUF)
+- Repositorio Hugging Face: [mradermacher/Ling-3.0-flash-i1-GGUF](https://huggingface.co/mradermacher/Ling-3.0-flash-i1-GGUF)
 - Modelo original: [inclusionAI/Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)

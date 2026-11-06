@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceShield Hindi-English Deepfake v2 es un modelo de clasificación de audio basado en la arquitectura wav2vec2, publicado en HuggingFace por el usuario ArmanSandhu1729. Por su nombre y etiquetas, está orientado a la detección de audio sintético (deepfakes de voz) en contextos bilingües hindi-inglés. El modelo cuenta con 315.701.634 parámetros y un repositorio de 1,3 GB en formato safetensors, lo que es coherente con un backbone wav2vec2 de tamaño base o large con una cabeza de clasificación superpuesta.
+VoiceShield Hindi-English Deepfake v2 es un modelo de clasificación de audio basado en la arquitectura wav2vec2, publicado en Hugging Face por el usuario ArmanSandhu1729. Por su nombre y etiquetas, está orientado a la detección de audio sintético (deepfakes de voz) en contextos bilingües hindi-inglés. El modelo cuenta con 315.701.634 parámetros y un repositorio de 1,3 GB en formato safetensors, lo que es coherente con un backbone wav2vec2 de tamaño base o large con una cabeza de clasificación superpuesta.
 
 La relevancia de este tipo de modelos radica en la creciente necesidad de verificar la autenticidad de grabaciones de voz en entornos donde el audio sintético de alta calidad es cada vez más accesible, especialmente en mercados bilingües con poca cobertura de herramientas específicas como el hindi-inglés. No obstante, la model card está generada automáticamente y no incluye información sustantiva: no se documentan datos de entrenamiento, métricas, licencia ni idiomas oficialmente soportados.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha, el modelo registra 0 descargas y 0 likes, 
 
 La etiqueta `wav2vec2` y la tarea `audio-classification` indican que el modelo parte de un backbone wav2vec2 (encoder convolucional de extracción de características seguido de un transformer con atención) al que se le ha añadido una cabeza de clasificación para la tarea de detección de deepfakes. El recuento de 315,7 millones de parámetros es consistente con una variante wav2vec2 de tamaño base o large, aunque no se especifica la configuración exacta.
 
-No hay información publicada sobre el conjunto de datos de entrenamiento, el número de horas de audio, la composición del corpus (idiomas, hablantes, tipos de síntesis empleados), ni sobre si se aplicó algún proceso de ajuste fino supervisado con etiquetas real/falso. Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. La model card es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]".
+No hay información publicada sobre el conjunto de datos de entrenamiento, el número de horas de audio, la composición del corpus (idiomas, hablantes, tipos de síntesis empleados), ni sobre si se aplicó algún proceso de ajuste fino supervisado con etiquetas real/falso. Tampoco se documentan hiperparámetros, régimen de precisión ni infraestructura de cómputo. La model card es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceShield Hindi-English Deepfake v2 | 315,7 M | Clasificación de audio (deepfake) | no disponible | no disponible | HuggingFace, sin descargas |
-| Wav2Vec2-base (Facebook) | ~95 M | Representaciones de voz / ASR | no aplica | MIT | HuggingFace, ampliamente usado |
-| Wav2Vec2-large (Facebook) | ~317 M | Representaciones de voz / ASR | no aplica | MIT | HuggingFace, ampliamente usado |
+| VoiceShield Hindi-English Deepfake v2 | 315,7 M | Clasificación de audio (deepfake) | no disponible | no disponible | Hugging Face, sin descargas |
+| Wav2Vec2-base (Facebook) | ~95 M | Representaciones de voz / ASR | no aplica | MIT | Hugging Face, ampliamente usado |
+| Wav2Vec2-large (Facebook) | ~317 M | Representaciones de voz / ASR | no aplica | MIT | Hugging Face, ampliamente usado |
 | Modelos de detección de deepfake de audio (p. ej. AASIST, RawNet2) | variable | Clasificación binaria real/falso | no aplica | variable | Repositorios académicos |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo analizado, y las alternativas citadas no son equivalentes funcionalmente (wav2vec2 base/large son backbones genéricos, no clasificadores de deepfake entrenados).
@@ -82,6 +82,6 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake-v2
+- Hugging Face: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake-v2
 - Paper de referencia citado en los tags (wav2vec2): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

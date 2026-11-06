@@ -61,7 +61,7 @@ WER sobre LibriSpeech test-clean completo (2620 enunciados, normalizador de text
 | Q5_K_M | 3,28 GB | 2,08% |
 | Q4_K_M | 2,83 GB | 2,08% |
 
-La referencia de HuggingFace Transformers en la misma maquina (VoxtralRealtimeForConditionalGeneration, BF16, greedy) obtiene 2,08%, identico al GGUF BF16. Todas las cuantizaciones publicadas quedan dentro del ruido bootstrap (2,07-2,09%), por lo que la escalera de cuantizacion es neutra en WER hasta Q4_K_M. El WER publicado es solo para ingles; no se han publicado resultados de benchmarks para los otros 12 idiomas en la informacion disponible.
+La referencia de Hugging Face Transformers en la misma maquina (VoxtralRealtimeForConditionalGeneration, BF16, greedy) obtiene 2,08%, identico al GGUF BF16. Todas las cuantizaciones publicadas quedan dentro del ruido bootstrap (2,07-2,09%), por lo que la escalera de cuantizacion es neutra en WER hasta Q4_K_M. El WER publicado es solo para ingles; no se han publicado resultados de benchmarks para los otros 12 idiomas en la informacion disponible.
 
 Rendimiento de velocidad (RTF, factor de tiempo real):
 
@@ -105,7 +105,7 @@ La model card original afirma que, con un retardo de 480 ms, el modelo iguala el
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/lipik/Voxtral-Mini-4B-Realtime-2602-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/lipik/Voxtral-Mini-4B-Realtime-2602-gguf
 - Modelo base: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602
 - Commit upstream del modelo base: https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602/commit/2769294
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

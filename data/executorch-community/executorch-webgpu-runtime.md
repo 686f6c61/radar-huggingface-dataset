@@ -6,7 +6,7 @@ ExecuTorch WebGPU Runtime no es un modelo de lenguaje ni una red neuronal entren
 
 El artefacto se distribuye como dos ficheros que forman una única build y deben usarse juntos: `executorch_wasm_lib.wasm` (6,6 MB) y `executorch_wasm_lib.js` (166 KB). Este último define la función `createExecuTorch()`; tras `await et.initWebGPU()`, un programa `.pte` se carga con `et.Module.load(path)` y se ejecuta con una llamada asíncrona `forward([tensors])`. El repositorio no contiene pesos de ningún modelo: el tamaño total del repo es de 0,0 GB.
 
-Su relevancia actual es la de servir de infraestructura para inferencia en el lado del cliente sin instalación ni backend: es el componente que alimenta el ExecuTorch WebGPU Playground (anunciado en executorch.ai), cuyos modelos se alojan por separado en la colección ExecuTorch WebGPU de HuggingFace. Al no incluir un modelo concreto, no tiene parámetros, longitud de contexto ni idiomas propios; todas esas características dependen de los programas `.pte` que se carguen en él.
+Su relevancia actual es la de servir de infraestructura para inferencia en el lado del cliente sin instalación ni backend: es el componente que alimenta el ExecuTorch WebGPU Playground (anunciado en executorch.ai), cuyos modelos se alojan por separado en la colección ExecuTorch WebGPU de Hugging Face. Al no incluir un modelo concreto, no tiene parámetros, longitud de contexto ni idiomas propios; todas esas características dependen de los programas `.pte` que se carguen en él.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Su relevancia actual es la de servir de infraestructura para inferencia en el la
 | Hash SHA-256 (.js) | `8a631b1537927f8f2ef184d9f1b343061f47df0a32ddb8f5190d74e80d40618e` |
 | Toolchain de compilacion | Emscripten 4.0.19, con `EXECUTORCH_BUILD_WASM_WEBGPU=ON` sobre `extension/wasm` |
 | API de JavaScript | `createExecuTorch()`, `et.initWebGPU()`, `et.Module.load(path)`, `forward([tensors])` (asincrono) |
-| Descargas en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-10-16 |
 | Ultima actualizacion | 2026-10-17 |
@@ -56,7 +56,7 @@ En cuanto a la arquitectura interna, el runtime se apoya en dos capas: el codigo
 - Playground de experimentacion de modelos: es precisamente el caso de uso declarado del artefacto, que alimenta el ExecuTorch WebGPU Playground de executorch.ai con los modelos de la coleccion ExecuTorch WebGPU.
 - Prototipado rapido de integraciones de IA en front-end: permite validar la viabilidad de una funcion de IA en el navegador antes de invertir en infraestructura de servidor, usando la API `createExecuTorch()` sobre un `.pte` de prueba.
 - Aplicaciones con requisitos de privacidad estrictos: al ejecutar la inferencia en el dispositivo del usuario, los datos de entrada no tienen por que salir del navegador, lo que resulta adecuado para escenarios con datos personales o sensibles donde se quiera evitar el envio a un servidor.
-- Distribucion de demos de investigacion: un equipo puede publicar un modelo en HuggingFace junto con una pagina que cargue este runtime, de modo que revisores y lectores prueben el modelo sin instalar dependencias ni GPUs locales.
+- Distribucion de demos de investigacion: un equipo puede publicar un modelo en Hugging Face junto con una pagina que cargue este runtime, de modo que revisores y lectores prueben el modelo sin instalar dependencias ni GPUs locales.
 - Herramientas educativas sobre inferencia en el borde: sirve para explicar como funciona la delegacion de grafos, el particionado de operadores y el scheduling en un runtime de ejecucion, con la ventaja de que el resultado es visible directamente en el navegador.
 - Validacion de exportaciones: comprobar que un grafo exportado a `.pte` se ejecuta correctamente bajo WebGPU antes de integrarlo en otros entornos, verificando ademas el SHA-256 del binario para descartar corrupciones.
 
@@ -100,8 +100,8 @@ Los datos de rendimiento comparado entre estos runtimes no estan disponibles en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/executorch-community/ExecuTorch-WebGPU-Runtime
-- Coleccion ExecuTorch WebGPU en HuggingFace: https://huggingface.co/collections/executorch-community/executorch-webgpu-6ad04f227dfe83b94306a8b1
+- Repositorio en Hugging Face: https://huggingface.co/executorch-community/ExecuTorch-WebGPU-Runtime
+- Coleccion ExecuTorch WebGPU en Hugging Face: https://huggingface.co/collections/executorch-community/executorch-webgpu-6ad04f227dfe83b94306a8b1
 - Repositorio de ExecuTorch en GitHub: https://github.com/pytorch/executorch
 - Sitio del playground: https://executorch.ai
 - Ficheros del repositorio: `executorch_wasm_lib.wasm`, `executorch_wasm_lib.js`, `BUILD_INFO.md`, `LICENSE`, `THIRD_PARTY_NOTICES.txt`, `vendor/transformers/transformers.min.js`, `vendor/transformers/LICENSE`, `vendor/transformers/THIRD_PARTY_NOTICES.txt`

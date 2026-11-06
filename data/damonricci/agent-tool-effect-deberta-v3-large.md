@@ -74,8 +74,8 @@ No se proporcionan valores de exactitud, precision, recall, F1 ni matriz de conf
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agent-tool-effect-deberta-v3-large | 435.063.810 | Clasificacion READ/WRITE de tools | no disponible (ejemplo a 128 tokens) | MIT | HuggingFace, 0 descargas |
-| microsoft/deberta-v3-large (base) | 435M (24 capas, 1024 oculto, 16 cabezas) | Modelo de lenguaje enmascarado / base para fine-tuning | no disponible en la informacion proporcionada | MIT | HuggingFace, ampliamente utilizado |
+| agent-tool-effect-deberta-v3-large | 435.063.810 | Clasificacion READ/WRITE de tools | no disponible (ejemplo a 128 tokens) | MIT | Hugging Face, 0 descargas |
+| microsoft/deberta-v3-large (base) | 435M (24 capas, 1024 oculto, 16 cabezas) | Modelo de lenguaje enmascarado / base para fine-tuning | no disponible en la informacion proporcionada | MIT | Hugging Face, ampliamente utilizado |
 | Modelos comparables de clasificacion de tools | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los resultados de busqueda web obtenidos (articulo de Wikipedia sobre Jev, repositorio `microsoft/DeBERTa`, calendario de lanzamientos de modelos) no aportan alternativas equivalentes a esta tarea concreta de clasificacion de efectos de herramientas. No se dispone por tanto de una comparativa de rendimiento frente a otros clasificadores de la misma categoria.
@@ -96,11 +96,11 @@ Los resultados de busqueda web obtenidos (articulo de Wikipedia sobre Jev, repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DamonRicci/agent-tool-effect-deberta-v3-large
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/deberta-v3-large
+- Modelo en Hugging Face: https://huggingface.co/DamonRicci/agent-tool-effect-deberta-v3-large
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/deberta-v3-large
 - Repositorio de DeBERTa (Microsoft): https://github.com/microsoft/DeBERTa
 - Berkeley Function-Calling Leaderboard (BFCL): no disponible en los resultados de busqueda (mencionado en la model card como fuente de datos)
 - ToolBench, AppWorld, SWE-bench y Seal-Tools: no disponibles en los resultados de busqueda (mencionados en la model card como fuentes de datos)
 - Articulo sobre Jev (AI model), no relacionado con este modelo: https://en.wikipedia.org/wiki/Jev_(AI_model)
 - Calendario de lanzamientos de modelos: https://www.scriptbyai.com/ai-model-release-calendar/
-- Catalogo de modelos de HuggingFace: https://huggingface.co/models
+- Catalogo de modelos de Hugging Face: https://huggingface.co/models

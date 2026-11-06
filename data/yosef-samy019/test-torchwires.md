@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yosef-samy019/test-torchwires` es un repositorio alojado en HuggingFace por el usuario yosef-samy019, publicado bajo licencia MIT. El identificador del repositorio incluye el prefijo "test" y su tamano declarado es de 0,0 GB, lo que apunta a un repositorio de pruebas o de propositos experimentales mas que a un modelo entrenado y distribuible. No se ha publicado model card con contenido tecnico: el README se limita a la declaracion de licencia MIT y no incluye descripcion, arquitectura ni instrucciones de uso.
+`yosef-samy019/test-torchwires` es un repositorio alojado en Hugging Face por el usuario yosef-samy019, publicado bajo licencia MIT. El identificador del repositorio incluye el prefijo "test" y su tamano declarado es de 0,0 GB, lo que apunta a un repositorio de pruebas o de propositos experimentales mas que a un modelo entrenado y distribuible. No se ha publicado model card con contenido tecnico: el README se limita a la declaracion de licencia MIT y no incluye descripcion, arquitectura ni instrucciones de uso.
 
 No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio no registra descargas ni "likes" en el momento de la consulta, y la fecha de actualizacion consignada es posterior a la de creacion, sin que se detalle que cambios se introdujeron.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha se limita a documentar los metadatos verificables y a 
 | Licencia | MIT |
 | Formato de pesos | no disponible (tamano de repositorio declarado: 0,0 GB) |
 
-Datos adicionales verificables: autor `yosef-samy019`, pipeline no disponible, etiquetas `license:mit` y `region:us`, 0 descargas, 0 "likes", repositorio creado el 2026-09-19 y actualizado el 2026-09-19 segun los metadatos de HuggingFace.
+Datos adicionales verificables: autor `yosef-samy019`, pipeline no disponible, etiquetas `license:mit` y `region:us`, 0 descargas, 0 "likes", repositorio creado el 2026-09-19 y actualizado el 2026-09-19 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -86,6 +86,6 @@ Nota: el tamano declarado del repositorio (0,0 GB) es compatible con la ausencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yosef-samy019/test-torchwires
+- Repositorio en Hugging Face: https://huggingface.co/yosef-samy019/test-torchwires
 
 La busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los enlaces recuperados tratan sobre la limitacion de velocidad de conexiones Ethernet a 100 Mb/s en Windows y no guardan ninguna relacion con el repositorio, por lo que se omiten. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

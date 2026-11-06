@@ -86,7 +86,7 @@ No se dispone de datos cuantitativos de comparación con otras implementaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/RAFT-small-OpticalFlow-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/RAFT-small-OpticalFlow-ExecuTorch
 - Repositorio original RAFT (Princeton VL): https://github.com/princeton-vl/RAFT
 - Documentación de Torchvision para raft_small: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.optical_flow.raft_small.html
 - Scripts de conversión ExecuTorch: https://github.com/john-rocky/executorch-models

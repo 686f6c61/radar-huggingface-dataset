@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-coder-7b-erp-gguf es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct de Alibaba, publicado por el usuario Mrunal1201 en HuggingFace. El modelo base es un transformer decoder-only de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), especializado originalmente en generación de código, y en esta versión se ha reentrenado presuntamente para tareas de ERP (planificación de recursos empresariales, por sus siglas en inglés). El resultado se ha convertido al formato GGUF para su uso con llama.cpp y Ollama.
+qwen2.5-coder-7b-erp-gguf es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct de Alibaba, publicado por el usuario Mrunal1201 en Hugging Face. El modelo base es un transformer decoder-only de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), especializado originalmente en generación de código, y en esta versión se ha reentrenado presuntamente para tareas de ERP (planificación de recursos empresariales, por sus siglas en inglés). El resultado se ha convertido al formato GGUF para su uso con llama.cpp y Ollama.
 
 La relevancia de esta ficha es limitada: se trata de un modelo derivado de un ajuste comunitario, con cero descargas y cero likes en el momento de la consulta, sin model card detallada, sin licencia declarada y sin información sobre el dataset de entrenamiento ni sobre los hiperparámetros usados. El autor indica que el ajuste y la conversión se realizaron con Unsloth, una herramienta que acelera el fine-tuning y la cuantización de modelos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-coder-7b-erp-gguf (este) | 7,6 B | no disponible | no disponible | GGUF Q4_K_M | HuggingFace, 0 descargas |
+| qwen2.5-coder-7b-erp-gguf (este) | 7,6 B | no disponible | no disponible | GGUF Q4_K_M | Hugging Face, 0 descargas |
 | Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 (segun el modelo base) | safetensors, GGUF | Amplia, muy usado |
 | Codestral-7B / DeepSeek-Coder-6.7B | 6,7-7 B | variable segun version | variable | safetensors, GGUF | Amplia |
 
@@ -85,6 +85,6 @@ La comparativa se limita al modelo base y a alternativas de tamaño similar en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mrunal1201/qwen2.5-coder-7b-erp-gguf
+- Hugging Face: https://huggingface.co/Mrunal1201/qwen2.5-coder-7b-erp-gguf
 - Unsloth (herramienta de ajuste y conversión): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-Coder-7B-Instruct (referencia, no enlazado en la información proporcionada): no disponible en la información proporcionada.

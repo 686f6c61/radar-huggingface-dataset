@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: para inferencia en FP16, el modelo necesita aproximadamente 16,6 GB de VRAM (tamaño del repositorio). Con cuantización de 8 bits puede caber en ~8,5 GB; con 4 bits, ~4,5 GB (estimación orientativa, no confirmada por el autor).
 - **GPU recomendadas**: una RTX 3090 (24 GB) o RTX 4090 (24 GB) puede ejecutar el modelo en FP16 sin problemas. Para cuantización, una RTX 3080 (10 GB) o RTX 4070 (12 GB) podría ser suficiente.
 - **Compatibilidad con consumer GPU**: sí, siempre que se utilice cuantización o se disponga de al menos 16 GB de VRAM.
-- **Opciones de despliegue**: vLLM (compatible con Qwen2.5-VL), TGI (text-generation-inference), llama.cpp (con soporte de visión limitada), o directamente con transformers de HuggingFace.
+- **Opciones de despliegue**: vLLM (compatible con Qwen2.5-VL), TGI (text-generation-inference), llama.cpp (con soporte de visión limitada), o directamente con transformers de Hugging Face.
 - **Latencia y throughput**: no disponible; depende del hardware y del tamaño de lote. En una RTX 4090 con FP16, se estima una latencia de unos 2-4 segundos por evaluación, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares

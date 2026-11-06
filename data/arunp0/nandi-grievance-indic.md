@@ -105,7 +105,7 @@ Nandi queda entre ambos: claramente mejor que un clasificador zero-shot de su mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arunp0/nandi-grievance-indic
+- Modelo en Hugging Face: https://huggingface.co/arunp0/nandi-grievance-indic
 - Dataset sintetico de entrenamiento: https://huggingface.co/datasets/arunp0/nandi-grievance-synthetic
 - Articulo en Towards AI: https://pub.towardsai.net/nandi-carries-every-complaint-to-the-right-desk-open-source-ai-for-indian-languages-743b55c912a2
 - Resumen y FAQ del proyecto: https://latentailabs.github.io/nandi-grievance-routing/

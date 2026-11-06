@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `tasmi-0609/cropcare-ai-models`, publicado por el usuario tasmi-0609 en HuggingFace, es una ficha de modelo sobre la que la informacion publica disponible es practicamente nula. En el momento de la consulta figura con 0 descargas y 0 likes, sin pipeline declarado, sin idiomas declarados y sin contenido en la model card mas alla del bloque de metadatos que indica la licencia Apache 2.0. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos.
+El repositorio `tasmi-0609/cropcare-ai-models`, publicado por el usuario tasmi-0609 en Hugging Face, es una ficha de modelo sobre la que la informacion publica disponible es practicamente nula. En el momento de la consulta figura con 0 descargas y 0 likes, sin pipeline declarado, sin idiomas declarados y sin contenido en la model card mas alla del bloque de metadatos que indica la licencia Apache 2.0. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos.
 
-El unico indicio sobre su proposito es el propio nombre del repositorio, que sugiere un conjunto de modelos orientados al cuidado de cultivos (agricultura), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. El repositorio tambien esta etiquetado con `region:us`, lo que unicamente indica la region de almacenamiento en la infraestructura de HuggingFace y no aporta informacion tecnica.
+El unico indicio sobre su proposito es el propio nombre del repositorio, que sugiere un conjunto de modelos orientados al cuidado de cultivos (agricultura), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. El repositorio tambien esta etiquetado con `region:us`, lo que unicamente indica la region de almacenamiento en la infraestructura de Hugging Face y no aporta informacion tecnica.
 
 Dado el estado del repositorio (fechas de creacion y actualizacion identicas, ausencia de documentacion y de actividad), no es posible evaluar el modelo para uso en produccion ni compararlo con alternativas. Esta ficha se limita a registrar los pocos datos verificables y a marcar explicitamente como "no disponible" todo aquello que no consta.
 
@@ -99,5 +99,5 @@ No disponible. No se puede establecer una comparativa porque se desconoce la cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tasmi-0609/cropcare-ai-models
+- Modelo en Hugging Face: https://huggingface.co/tasmi-0609/cropcare-ai-models
 - No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un modelo de generación de texto publicado en HuggingFace por el usuario sartajbhuvaji, con arquitectura etiquetada como qwen3_moe y 15.577.227.264 parámetros totales según los safetensors del repositorio. El nombre del modelo incluye indicios de un proceso de destilación y varios hiperparámetros ("depth24", "experts0", "warmup75", "lr1e4", "fixedloss"), pero la model card es una plantilla autogenerada y no documenta el diseño, los datos ni el procedimiento de entrenamiento.
+Este checkpoint es un modelo de generación de texto publicado en Hugging Face por el usuario sartajbhuvaji, con arquitectura etiquetada como qwen3_moe y 15.577.227.264 parámetros totales según los safetensors del repositorio. El nombre del modelo incluye indicios de un proceso de destilación y varios hiperparámetros ("depth24", "experts0", "warmup75", "lr1e4", "fixedloss"), pero la model card es una plantilla autogenerada y no documenta el diseño, los datos ni el procedimiento de entrenamiento.
 
 Por su tamaño y formato, el checkpoint es relevante para experimentación con modelos de aproximadamente 15,6B parámetros y para estudiar variantes de la familia Qwen3, no como un modelo listo para producción: no hay licencia, idiomas, contexto, cuantizaciones ni benchmarks publicados, y el repositorio no tiene descargas ni validación de la comunidad. Cualquier uso requiere inspeccionar la configuración, ejecutar evaluaciones propias y aclarar la licencia.
 
@@ -10,7 +10,7 @@ Por su tamaño y formato, el checkpoint es relevante para experimentación con m
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | qwen3_moe (etiqueta de HuggingFace); configuración de capas, atención y expertos no disponible |
+| Arquitectura | qwen3_moe (etiqueta de Hugging Face); configuración de capas, atención y expertos no disponible |
 | Parámetros totales | 15.577.227.264 |
 | Parámetros activos | no disponible; el nombre incluye "experts0", pero no se confirma si es MoE ni cuántos expertos se activan |
 | Longitud de contexto | no disponible |
@@ -70,7 +70,7 @@ No se dispone de datos verificables de alternativas en la información proporcio
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 15.577.227.264 | no disponible | no disponible | no disponible | HuggingFace, safetensors |
+| Este checkpoint | 15.577.227.264 | no disponible | no disponible | no disponible | Hugging Face, safetensors |
 | Qwen3-14B (referencia de la misma familia) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificada en esta ficha |
 | Qwen3-30B-A3B (referencia MoE de la misma familia) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificada en esta ficha |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificables de alternativas en la información proporcio
 
 ## Enlaces
 
-- [HuggingFace: sartajbhuvaji/bonsai-distilled-depth24-experts0-500-warmup75-lr1e4-fixedloss](https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth24-experts0-500-warmup75-lr1e4-fixedloss)
+- [Hugging Face: sartajbhuvaji/bonsai-distilled-depth24-experts0-500-warmup75-lr1e4-fixedloss](https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth24-experts0-500-warmup75-lr1e4-fixedloss)
 - [arXiv 1910.09700](https://arxiv.org/abs/1910.09700): referencia citada en la model card para el cálculo de emisiones (Lacoste et al., 2019); no es un paper del modelo.
 - [Machine Learning Impact Calculator](https://mlco2.github.io/impact): calculadora de impacto ambiental citada en la model card.
 - No se han encontrado otros enlaces a papers, blogs, repositorios o demos en la información proporcionada.

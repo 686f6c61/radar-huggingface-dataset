@@ -102,7 +102,7 @@ No se dispone de datos sobre otras alternativas cuantizadas del mismo modelo bas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/glyd/Qwen3.5-4B-kestrel
+- Repositorio en Hugging Face: https://huggingface.co/glyd/Qwen3.5-4B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Commit concreto del modelo base usado para la cuantizacion: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Variante de menor precision (nivel swift): https://huggingface.co/glyd/Qwen3.5-4B-swift

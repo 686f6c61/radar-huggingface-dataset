@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alicericci/tmp-multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación de **Swin Transformer en su variante tiny** orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un modelo de lenguaje: es un *codebase* de referencia con los ficheros necesarios para inspeccionar la arquitectura, ejecutar una prueba de humo y lanzar un ajuste fino posterior. El autor lo describe explícitamente como un punto de partida para validar cambios arquitectónicos antes de acometer un entrenamiento completo.
+`Alicericci/tmp-multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación de **Swin Transformer en su variante tiny** orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de un modelo de lenguaje: es un *codebase* de referencia con los ficheros necesarios para inspeccionar la arquitectura, ejecutar una prueba de humo y lanzar un ajuste fino posterior. El autor lo describe explícitamente como un punto de partida para validar cambios arquitectónicos antes de acometer un entrenamiento completo.
 
 El repositorio incluye `finetune.py` (artefacto principal con el modelo y el punto de entrada de entrenamiento), `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors`, descrito por el propio autor como un checkpoint de inicialización válido para *smoke tests* y no como un checkpoint entrenado con resultados de referencia.
 
@@ -78,10 +78,10 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alicericci/tmp-multitask | 33.088 (segun safetensors) | resolucion no disponible | no disponible (sin entrenar) | MIT | HuggingFace, 0 descargas |
-| Swin-T original (referencia Microsoft) | aproximadamente 28M (referencia general) | 224x224 tipico | no disponible en esta ficha | MIT | HuggingFace, ampliamente descargado |
-| ConvNeXt-Tiny (referencia) | aproximadamente 28M (referencia general) | 224x224 tipico | no disponible en esta ficha | MIT | HuggingFace |
-| DeiT-Small (referencia) | aproximadamente 22M (referencia general) | 224x224 tipico | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Alicericci/tmp-multitask | 33.088 (segun safetensors) | resolucion no disponible | no disponible (sin entrenar) | MIT | Hugging Face, 0 descargas |
+| Swin-T original (referencia Microsoft) | aproximadamente 28M (referencia general) | 224x224 tipico | no disponible en esta ficha | MIT | Hugging Face, ampliamente descargado |
+| ConvNeXt-Tiny (referencia) | aproximadamente 28M (referencia general) | 224x224 tipico | no disponible en esta ficha | MIT | Hugging Face |
+| DeiT-Small (referencia) | aproximadamente 22M (referencia general) | 224x224 tipico | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La diferencia clave no es de rendimiento sino de naturaleza: el repositorio aqui analizado es un esqueleto de codigo con un checkpoint de inicializacion, mientras que los modelos de referencia son checkpoints entrenados y evaluados.
 
@@ -99,6 +99,6 @@ La diferencia clave no es de rendimiento sino de naturaleza: el repositorio aqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alicericci/tmp-multitask
+- Hugging Face: https://huggingface.co/Alicericci/tmp-multitask
 - Ficheros del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (paper, blog, repositorio o demo) sobre este modelo. Las busquedas devolvieron exclusivamente hilos de foro sobre la aerolinea Wizz Air y una pregunta en Zhihu sobre el simbolo de virgulilla, sin relacion con el modelo.

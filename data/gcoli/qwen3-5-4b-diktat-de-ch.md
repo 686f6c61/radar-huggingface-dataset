@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables específicos para correc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch
+- Repositorio Hugging Face: https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch
 - Variante oQ4e (oMLX): https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-oQ4e
 - Variante f16 (GGUF): https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-f16-GGUF
 - Variante q8_0 (GGUF): https://huggingface.co/gcoli/qwen3.5-4b-diktat-de-ch-q8_0-GGUF

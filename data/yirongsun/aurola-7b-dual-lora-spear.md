@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | AuroLA-7B Dual-LoRA-SPEAR (este repositorio) | Adaptador de 417.955.840 elementos sobre base de ~7.000 millones | No disponible | Recuperacion audio-texto (SPEAR) | No disponible | Repositorio privado de investigacion; requiere la revision exacta del base |
-| `Jazzcharles/AuroLA-7B` (base sin adaptador) | ~7.000 millones, no confirmado | No disponible | Checkpoint multimodal de recuperacion | No declarada segun la model card del adaptador | Publico en HuggingFace, revision `575f9b4a914069392a43c2e7409806b32bc469f4` |
+| `Jazzcharles/AuroLA-7B` (base sin adaptador) | ~7.000 millones, no confirmado | No disponible | Checkpoint multimodal de recuperacion | No declarada segun la model card del adaptador | Publico en Hugging Face, revision `575f9b4a914069392a43c2e7409806b32bc469f4` |
 | Alternativas de la misma categoria (por ejemplo, modelos de recuperacion audio-texto de ~7B o adaptadores equivalentes) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han publicado en la informacion disponible comparaciones con otros modelos
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/YirongSun/AuroLA-7B-Dual-LoRA-SPEAR
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/YirongSun/AuroLA-7B-Dual-LoRA-SPEAR
 - Modelo base: https://huggingface.co/Jazzcharles/AuroLA-7B
 - Revision requerida del base: `575f9b4a914069392a43c2e7409806b32bc469f4`
 - Revision de AuroLA usada por la implementacion del adaptador: `331e8c6768b0f2fcf6b4b3a74ce0ba5753785dda`

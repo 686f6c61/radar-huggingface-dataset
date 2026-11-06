@@ -100,11 +100,11 @@ GLM-5.3 supera claramente a su predecesor GLM-5.2 en todas las tareas de agente 
 - Coste computacional elevado: con 753B parámetros y contexto de 1M, la inferencia requiere infraestructura de alto coste. El modo `reasoning_effort` por defecto (`max`) incrementa la latencia y el consumo de tokens; para escenarios conversacionales se recomienda `low` o `high`.
 - Contexto de 1M: aunque el modelo soporta 1M tokens, los benchmarks de HLE se ejecutan con un máximo de 300 000 tokens, lo que sugiere que el rendimiento puede degradarse en contextos extremadamente largos. La gestión de contexto es crítica.
 - Datos de entrenamiento no publicados: no se ha revelado la composición del dataset de post-entrenamiento, el número de tokens ni el proceso exacto de alineación, lo que dificulta evaluar su robustez y posibles sesgos.
-- Repo de HuggingFace no oficial: el modelo está publicado bajo el usuario `servantofares`, no bajo la organización Z.ai. Aunque los pesos coinciden con los anunciados, se recomienda verificar la integridad de los archivos y descargar desde fuentes oficiales si están disponibles.
+- Repo de Hugging Face no oficial: el modelo está publicado bajo el usuario `servantofares`, no bajo la organización Z.ai. Aunque los pesos coinciden con los anunciados, se recomienda verificar la integridad de los archivos y descargar desde fuentes oficiales si están disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/servantofares/GLM-5.3
+- Hugging Face: https://huggingface.co/servantofares/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - BenchLM (benchmarks y velocidad): https://benchlm.ai/models/glm-5-3

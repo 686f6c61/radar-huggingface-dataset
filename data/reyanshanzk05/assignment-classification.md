@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reyanshanzk05/assignment-classification` es un repositorio de HuggingFace que contiene una implementación propia de un *Tiny Transformer* orientada a tareas de clasificación, empaquetada junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. Lo publica el usuario `reyanshanzk05` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint sirve para *smoke tests* y no debe presentarse como un modelo con benchmarks.
+`reyanshanzk05/assignment-classification` es un repositorio de Hugging Face que contiene una implementación propia de un *Tiny Transformer* orientada a tareas de clasificación, empaquetada junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. Lo publica el usuario `reyanshanzk05` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint sirve para *smoke tests* y no debe presentarse como un modelo con benchmarks.
 
 El interés del repositorio es, por tanto, didáctico y de andamiaje: ofrece una base reproducible (script `predict.py`, `config.json`, `training_args.json` y `model.safetensors`) para experimentar con una arquitectura transformer de atención con ventana deslizante, fusión bilineal, activación ReLU y normalización por grupos. Con 24.832 parámetros totales, es un modelo de escala trivial pensado para validar pipelines de entrenamiento e inferencia, no para producción.
 
@@ -85,5 +85,5 @@ La comparación es asimétrica por diseño: los tres modelos de referencia son c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reyanshanzk05/assignment-classification
+- Repositorio en Hugging Face: https://huggingface.co/reyanshanzk05/assignment-classification
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

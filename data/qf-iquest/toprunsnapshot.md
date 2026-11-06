@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qf-iquest/TopRunSnapshot` es un repositorio publicado en HuggingFace por el usuario qf-iquest bajo licencia MIT. Según los metadatos, está clasificado con la librería `transformers`, el framework PyTorch y la arquitectura BERT, orientado a extracción de características (`feature-extraction`). Sin embargo, la model card que acompaña al repositorio es genérica y no parece corresponder al modelo real: se refiere a un modelo llamado "MyAwesomeModel" y describe capacidades de razonamiento, generación y programación que no encajan con la arquitectura BERT declarada. El repositorio no contiene archivos de peso (tamaño 0.0 GB) y no hay información adicional en la página de HuggingFace ni en los resultados de búsqueda web.
+El modelo `qf-iquest/TopRunSnapshot` es un repositorio publicado en Hugging Face por el usuario qf-iquest bajo licencia MIT. Según los metadatos, está clasificado con la librería `transformers`, el framework PyTorch y la arquitectura BERT, orientado a extracción de características (`feature-extraction`). Sin embargo, la model card que acompaña al repositorio es genérica y no parece corresponder al modelo real: se refiere a un modelo llamado "MyAwesomeModel" y describe capacidades de razonamiento, generación y programación que no encajan con la arquitectura BERT declarada. El repositorio no contiene archivos de peso (tamaño 0.0 GB) y no hay información adicional en la página de Hugging Face ni en los resultados de búsqueda web.
 
 En resumen, se trata de un repositorio con información mínima y contradictoria. La model card menciona mejoras en razonamiento (por ejemplo, un aumento de precisión en AIME 2025 de 70% a 87.5%) y una tabla de benchmarks comparativos, pero no se especifican los modelos de referencia ni la metodología. Dado que el repositorio está vacío y no hay documentación técnica fiable, esta ficha solo puede recoger los datos disponibles y marcar claramente lo que no se puede verificar.
 
@@ -10,7 +10,7 @@ En resumen, se trata de un repositorio con información mínima y contradictoria
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según etiquetas de HuggingFace) |
+| Arquitectura | BERT (según etiquetas de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -56,6 +56,6 @@ No disponible. No se han identificado modelos comparables para este repositorio,
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/qf-iquest/TopRunSnapshot)
-- [Perfil del autor en HuggingFace](https://huggingface.co/qf-iquest) (sin información relevante sobre este modelo)
+- [Repositorio en Hugging Face](https://huggingface.co/qf-iquest/TopRunSnapshot)
+- [Perfil del autor en Hugging Face](https://huggingface.co/qf-iquest) (sin información relevante sobre este modelo)
 - No se han encontrado papers, blogs o demos asociados al modelo `TopRunSnapshot`.

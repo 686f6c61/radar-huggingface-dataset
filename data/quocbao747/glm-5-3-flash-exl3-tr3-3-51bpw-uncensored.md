@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GLM-5.3-Flash-EXL3-TR3-3.51bpw-Uncensored) | 78.298.475.646 | 1.048.576 | EXL3/TR3 mixto, 3,5116 bpw efectivos en expertos enrutados | ShapleyMcg License v1.0 | Espejo en HuggingFace, 13 descargas |
-| Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw (portador K4) | no disponible | no disponible | EXL3/TR3 a 4 bpw | no disponible | Público en HuggingFace |
-| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 (donante) | no disponible | no disponible | NVFP4 | no disponible | Público en HuggingFace |
-| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 (payload K3) | no disponible | no disponible | EXL3/TR3 a 3 bpw | no disponible | Público en HuggingFace |
+| Este checkpoint (GLM-5.3-Flash-EXL3-TR3-3.51bpw-Uncensored) | 78.298.475.646 | 1.048.576 | EXL3/TR3 mixto, 3,5116 bpw efectivos en expertos enrutados | ShapleyMcg License v1.0 | Espejo en Hugging Face, 13 descargas |
+| Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw (portador K4) | no disponible | no disponible | EXL3/TR3 a 4 bpw | no disponible | Público en Hugging Face |
+| dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4 (donante) | no disponible | no disponible | NVFP4 | no disponible | Público en Hugging Face |
+| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 (payload K3) | no disponible | no disponible | EXL3/TR3 a 3 bpw | no disponible | Público en Hugging Face |
 
 No se dispone de datos de benchmarks ni de parámetros activos de los modelos comparables en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de parámetros activos de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quocbao747/GLM-5.3-Flash-EXL3-TR3-3.51bpw-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/quocbao747/GLM-5.3-Flash-EXL3-TR3-3.51bpw-Uncensored
 - Repositorio original (espejado, ya no resuelve): https://huggingface.co/s-zaizen/GLM-5.3-Flash-EXL3-TR3-3.51bpw-Uncensored
 - Portador K4: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw
 - Donante uncensored NVFP4: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4

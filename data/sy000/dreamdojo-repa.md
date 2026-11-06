@@ -1,7 +1,7 @@
 # sy000/dreamdojo-repa
 
 ## Resumen
-`sy000/dreamdojo-repa` es un checkpoint publicado en HuggingFace por el usuario `sy000`, derivado del modelo `nvidia/DreamDojo` mediante fine-tuning. Los metadatos lo etiquetan como modelo de generación de vídeo para robótica, con variantes de destilación y warmup, y lo asocian al dataset `csusupergear/dreamdojo_warmup_data`. El repositorio ocupa 15,1 GB, usa la librería `dreamdojo` y está sujeto a acceso restringido: es necesario aceptar condiciones en HuggingFace para descargarlo.
+`sy000/dreamdojo-repa` es un checkpoint publicado en Hugging Face por el usuario `sy000`, derivado del modelo `nvidia/DreamDojo` mediante fine-tuning. Los metadatos lo etiquetan como modelo de generación de vídeo para robótica, con variantes de destilación y warmup, y lo asocian al dataset `csusupergear/dreamdojo_warmup_data`. El repositorio ocupa 15,1 GB, usa la librería `dreamdojo` y está sujeto a acceso restringido: es necesario aceptar condiciones en Hugging Face para descargarlo.
 
 No es un modelo de lenguaje: el pipeline declarado es `robotics` y las capacidades documentadas se limitan a generación de vídeo y experimentación en robótica. La ficha pública no incluye arquitectura, número de parámetros, contexto, licencia, idiomas ni resultados de benchmarks, por lo que cualquier evaluación para producción exige inspeccionar el repositorio y el modelo base. Su interés actual reside en que permite probar una variante destilada y de calentamiento de DreamDojo sin partir del modelo original, aunque con información técnica muy incompleta.
 
@@ -52,8 +52,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sy000/dreamdojo-repa` | no disponible | no disponible | no disponible (acceso restringido) | HuggingFace, requiere aceptar condiciones |
-| `nvidia/DreamDojo` (base) | no disponible | no disponible | no disponible | HuggingFace |
+| `sy000/dreamdojo-repa` | no disponible | no disponible | no disponible (acceso restringido) | Hugging Face, requiere aceptar condiciones |
+| `nvidia/DreamDojo` (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de generación de vídeo para robótica | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alternativas comparables en la información proporcionada; la comparación cuantitativa no es posible.
@@ -67,10 +67,10 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alte
 - Destilación y warmup: puede tener menor fidelidad que el modelo base y no ser un checkpoint final.
 - Metadatos inconsistentes: la fecha de creación indicada, 2026-10-26, es posterior a la fecha actual, 2026-05-07, lo que sugiere un posible error de registro.
 - Producción: sin benchmarks, latencia, throughput ni guía de seguridad; requiere validación propia antes de cualquier uso real.
-- Restricciones de acceso: el uso puede estar limitado por los términos de HuggingFace y por las condiciones del modelo base.
+- Restricciones de acceso: el uso puede estar limitado por los términos de Hugging Face y por las condiciones del modelo base.
 
 ## Enlaces
-- [Modelo sy000/dreamdojo-repa en HuggingFace](https://huggingface.co/sy000/dreamdojo-repa)
+- [Modelo sy000/dreamdojo-repa en Hugging Face](https://huggingface.co/sy000/dreamdojo-repa)
 - [Modelo base nvidia/DreamDojo](https://huggingface.co/nvidia/DreamDojo)
 - [Dataset csusupergear/dreamdojo_warmup_data](https://huggingface.co/datasets/csusupergear/dreamdojo_warmup_data)
 - [Perfil del autor sy000](https://huggingface.co/sy000)

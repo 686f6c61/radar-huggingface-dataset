@@ -3,7 +3,7 @@
 ## Resumen
 FAST (Flexibly Controllable Arbitrary Style Transfer via Latent Diffusion models) es un sistema de transferencia de estilo arbitrario construido sobre difusion latente (latent diffusion models, LDM), desarrollado por Hanzhang Wang, Haoran Wang, Zhongrui Yu, Mingming Sun, Junjun Jiang, Xianming Liu y Deming Zhai. El trabajo se publico en ACM Transactions on Multimedia Computing, Communications and Applications (TOMM) en 2025 y esta disponible como articulo en arXiv (2401.05870), con codigo en GitHub y una pagina de proyecto propia.
 
-El repositorio `wd1511/fast-ldm` en HuggingFace distribuye los checkpoints de imagen y video de FAST junto con sus dependencias preentrenadas y los pesos de los anotadores (HED, Canny, PiDiNet, OneFormer, Uniformer). El modelo parte de Stable Diffusion v1.5 y anade adaptadores de estilo especificos: no es un reemplazo directo del UNet estandar de Stable Diffusion, sino que requiere pipelines personalizados de FAST para la inferencia.
+El repositorio `wd1511/fast-ldm` en Hugging Face distribuye los checkpoints de imagen y video de FAST junto con sus dependencias preentrenadas y los pesos de los anotadores (HED, Canny, PiDiNet, OneFormer, Uniformer). El modelo parte de Stable Diffusion v1.5 y anade adaptadores de estilo especificos: no es un reemplazo directo del UNet estandar de Stable Diffusion, sino que requiere pipelines personalizados de FAST para la inferencia.
 
 Su relevancia actual radica en que introduce un Style-Adapter que alinea informacion de control de estilo multinivel con el conocimiento interno del LDM, permitiendo manipular de forma flexible el resultado de la estilizacion y equilibrar la retencion de detalle del contenido con la intensidad del estilo, tanto en imagen como en video.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FAST (wd1511/fast-ldm) | Transferencia de estilo arbitrario (LDM imagen/video) | no disponible | no aplica | no disponible | Repositorio HuggingFace + GitHub |
+| FAST (wd1511/fast-ldm) | Transferencia de estilo arbitrario (LDM imagen/video) | no disponible | no aplica | no disponible | Repositorio Hugging Face + GitHub |
 | Stable Diffusion v1.5 (base) | Difusion latente texto-a-imagen | no disponible en la informacion | no aplica | CreativeML Open RAIL-M (licencia upstream, no relicenciada aqui) | Ampliamente disponible |
 | Otros modelos de transferencia de estilo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone en la informacion proporcionada de datos cuantitativos ni de model
 - Sin datos de benchmarks publicados en la informacion disponible, no es posible validar su rendimiento frente a alternativas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/wd1511/fast-ldm
+- Hugging Face: https://huggingface.co/wd1511/fast-ldm
 - Paper (ACM TOMM 2025): https://dl.acm.org/doi/abs/10.1145/3748655
 - arXiv: https://arxiv.org/pdf/2401.05870.pdf
 - Pagina del proyecto: https://fast-ldm.github.io/

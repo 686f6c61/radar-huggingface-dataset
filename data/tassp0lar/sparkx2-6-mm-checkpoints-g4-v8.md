@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v8
+- Repositorio Hugging Face: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v8
 - Repositorio de runtime e instrucciones (GitHub): https://github.com/BaiTian6641/Spark-X2.6-VL
 - Dataset de atribucion: https://huggingface.co/datasets/TassP0lar/SparkX2.6-MM

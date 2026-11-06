@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chormi/tangkhul-byt5-large_9_13_2026_checkpoints es un repositorio publicado en HuggingFace por el usuario chormi el 14 de septiembre de 2026 y actualizado el mismo dia. El identificador sugiere que se trata de un ajuste fino del modelo ByT5-large (familia T5 con tokenizacion a nivel de byte, desarrollada por Google Research) orientado al tangkhul, una lengua sino-tibetana hablada principalmente en el estado de Manipur, al noreste de la India. El sufijo del nombre y el tamano del repositorio (29,5 GB) apuntan a una coleccion de puntos de control intermedios de entrenamiento (checkpoints) en precision completa, mas que a una unica version final optimizada. Es importante subrayar que esta interpretacion proviene unicamente de la nomenclatura del repositorio: la ficha no incluye model card, descripcion, pipeline declarado ni licencia.
+chormi/tangkhul-byt5-large_9_13_2026_checkpoints es un repositorio publicado en Hugging Face por el usuario chormi el 14 de septiembre de 2026 y actualizado el mismo dia. El identificador sugiere que se trata de un ajuste fino del modelo ByT5-large (familia T5 con tokenizacion a nivel de byte, desarrollada por Google Research) orientado al tangkhul, una lengua sino-tibetana hablada principalmente en el estado de Manipur, al noreste de la India. El sufijo del nombre y el tamano del repositorio (29,5 GB) apuntan a una coleccion de puntos de control intermedios de entrenamiento (checkpoints) en precision completa, mas que a una unica version final optimizada. Es importante subrayar que esta interpretacion proviene unicamente de la nomenclatura del repositorio: la ficha no incluye model card, descripcion, pipeline declarado ni licencia.
 
 El repositorio acumula 0 descargas y 2 "likes", y no tiene documentacion asociada. Esto lo situa en la categoria de publicaciones de investigacion en curso o experimentos personales, no en la de modelos listos para produccion. La relevancia potencial del artefacto, si se confirma su naturaleza, radica en el interes de la comunidad por modelos de lenguaje para lenguas de bajos recursos: el tangkhul cuenta con un numero limitado de hablantes y una presencia digital muy escasa, por lo que cualquier recurso de PLN especifico tiene un valor desproporcionado para tareas de documentacion linguistica, traduccion y preservacion.
 
@@ -68,7 +68,7 @@ Las siguientes cifras son estimaciones condicionadas a que el modelo final corre
 - VRAM para inferencia en int8: del orden de 1,5 a 3 GB, apta para GPUs de gama media.
 - GPU consumer: cabe con holgura en una RTX 3060 de 12 GB, RTX 4070, RTX 4080 y RTX 4090 en bf16 o int8. En GPUs de 8 GB es viable en int8 con secuencias cortas.
 - GPU de datacenter: A100 40 GB o 80 GB y H100 para entrenamiento completo o ajuste fino con precision mixta. El ajuste fino completo de 1.200 millones de parametros con Adam requiere del orden de 16 a 20 GB solo para estados del optimizador, mas activaciones, por lo que conviene usar LoRA, QLoRA o checkpointing de gradientes.
-- Opciones de despliegue: HuggingFace Transformers como via principal; Text Generation Inference (TGI) y vLLM admiten modelos encoder-decoder de la familia T5. La conversion a GGUF para llama.cpp es tecnicamente posible pero con soporte limitado para arquitecturas T5. No hay indicios de soporte en Ollama. Para entrenamiento distribuido, DeepSpeed o FSDP.
+- Opciones de despliegue: Hugging Face Transformers como via principal; Text Generation Inference (TGI) y vLLM admiten modelos encoder-decoder de la familia T5. La conversion a GGUF para llama.cpp es tecnicamente posible pero con soporte limitado para arquitecturas T5. No hay indicios de soporte en Ollama. Para entrenamiento distribuido, DeepSpeed o FSDP.
 - Latencia y throughput: no disponible. Al tratarse de un modelo encoder-decoder con secuencias de bytes, la latencia esperada es superior a la de un modelo decoder-only de igual numero de parametros procesando texto equivalente.
 
 ## Comparativa con modelos similares
@@ -78,9 +78,9 @@ La comparativa se establece frente a modelos base de la misma categoria y tamano
 | Modelo | Parametros | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | chormi/tangkhul-byt5-large_9_13_2026_checkpoints | no disponible | no disponible (probablemente encoder-decoder byte-level) | no disponible | no disponible | 0 descargas, 2 likes, sin model card |
-| ByT5-large (Google Research) | ~1.200 M | Encoder-decoder, tokenizacion por byte | Multilingue (entrenado sobre C4) | Apache 2.0 | Publico en HuggingFace |
-| mT5-large (Google Research) | ~1.200 M | Encoder-decoder, SentencePiece | 101 idiomas | Apache 2.0 | Publico en HuggingFace |
-| NLLB-200-distilled-1.3B (Meta) | ~1.300 M | Encoder-decoder, traduccion | 200 idiomas | CC-BY-NC 4.0 (no comercial) | Publico en HuggingFace |
+| ByT5-large (Google Research) | ~1.200 M | Encoder-decoder, tokenizacion por byte | Multilingue (entrenado sobre C4) | Apache 2.0 | Publico en Hugging Face |
+| mT5-large (Google Research) | ~1.200 M | Encoder-decoder, SentencePiece | 101 idiomas | Apache 2.0 | Publico en Hugging Face |
+| NLLB-200-distilled-1.3B (Meta) | ~1.300 M | Encoder-decoder, traduccion | 200 idiomas | CC-BY-NC 4.0 (no comercial) | Publico en Hugging Face |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento del modelo evaluado con estas alternativas. La eleccion entre ByT5 y mT5 como base para una lengua de bajos recursos depende de la cantidad de texto disponible: la tokenizacion por byte de ByT5 suele ser ventajosa con corpus muy reducidos y ortografia irregular, mientras que mT5 aprovecha mejor el preentrenamiento multilingue cuando existen lenguas relacionadas bien representadas.
 
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chormi/tangkhul-byt5-large_9_13_2026_checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/chormi/tangkhul-byt5-large_9_13_2026_checkpoints
 - Modelo base ByT5 (Google Research): https://huggingface.co/google/byt5-large
 - Articulo de ByT5, "ByT5: Towards a token-free future with pre-trained byte-to-byte models": https://arxiv.org/abs/2105.13626
 - Modelo mT5 (alternativa de referencia): https://huggingface.co/google/mt5-large

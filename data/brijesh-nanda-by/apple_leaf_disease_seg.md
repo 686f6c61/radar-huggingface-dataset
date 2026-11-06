@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Brijesh-nanda-by/apple_leaf_disease_seg` es un repositorio de HuggingFace publicado por el usuario Brijesh Nanda (Brijesh-nanda-by) bajo licencia MIT. Por el identificador del repositorio (`apple_leaf_disease_seg`) y por el contexto del autor, se deduce que su propósito es la segmentación de lesiones o regiones afectadas en hojas de manzano, una tarea de visión por computador orientada a la diagnosis fitosanitaria en agricultura. No obstante, esta deducción procede únicamente del nombre del repositorio: la model card publicada está vacía (solo contiene el campo `license: mit`) y no se documenta arquitectura, datos de entrenamiento ni métricas.
+`Brijesh-nanda-by/apple_leaf_disease_seg` es un repositorio de Hugging Face publicado por el usuario Brijesh Nanda (Brijesh-nanda-by) bajo licencia MIT. Por el identificador del repositorio (`apple_leaf_disease_seg`) y por el contexto del autor, se deduce que su propósito es la segmentación de lesiones o regiones afectadas en hojas de manzano, una tarea de visión por computador orientada a la diagnosis fitosanitaria en agricultura. No obstante, esta deducción procede únicamente del nombre del repositorio: la model card publicada está vacía (solo contiene el campo `license: mit`) y no se documenta arquitectura, datos de entrenamiento ni métricas.
 
 El repositorio no presenta descargas ni "likes", no tiene pipeline declarado, no declara idiomas soportados y su tamaño registrado es de 0.0 GB, lo que es compatible con un repositorio sin pesos publicados o con pesos no contabilizados en el momento de la consulta. Las fechas registradas por la plataforma son 2026-10-23 (creación) y 2026-10-23 (última actualización).
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Brijesh-nanda-by/apple_leaf_disease_seg | Segmentación de hoja de manzano (inferido del nombre) | no disponible | no disponible | no publicado | MIT | Repositorio HuggingFace, sin descargas ni demo |
+| Brijesh-nanda-by/apple_leaf_disease_seg | Segmentación de hoja de manzano (inferido del nombre) | no disponible | no disponible | no publicado | MIT | Repositorio Hugging Face, sin descargas ni demo |
 | LeafSightX (Frontiers in Artificial Intelligence, 2025) | Clasificación de enfermedades de hoja de manzano | no disponible en la información recogida | imágenes | métricas publicadas en el artículo (no recogidas aquí) | no disponible | Publicación científica; código no confirmado |
-| Apple Leaf Disease (Space de rizwan-ai-engineer) | Clasificación con recomendaciones de tratamiento | no disponible | imágenes | 95 % de precisión según la descripción del Space | no disponible | Demo en HuggingFace Spaces |
+| Apple Leaf Disease (Space de rizwan-ai-engineer) | Clasificación con recomendaciones de tratamiento | no disponible | imágenes | 95 % de precisión según la descripción del Space | no disponible | Demo en Hugging Face Spaces |
 | Sistema web de detección de enfermedades de hoja y fruto (MDPI AgriEngineering, 2025) | Clasificación con interfaz Gradio | no disponible | imágenes | métricas publicadas en el artículo (no recogidas aquí) | no disponible | Publicación y aplicación web |
 
 La diferencia funcional relevante es que las alternativas identificadas abordan clasificación (etiqueta global de la enfermedad), mientras que este repositorio apunta a segmentación (localización por píxel). Esa distinción solo puede confirmarse si el autor publica la arquitectura y los pesos.
@@ -85,7 +85,7 @@ La diferencia funcional relevante es que las alternativas identificadas abordan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brijesh-nanda-by/apple_leaf_disease_seg
+- Modelo en Hugging Face: https://huggingface.co/Brijesh-nanda-by/apple_leaf_disease_seg
 - Perfil de GitHub del autor: https://github.com/brijesh-nanda-by/
 - LeafSightX, artículo en Frontiers in Artificial Intelligence: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1689865/full
 - LeafSightX, versión PDF: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1689865/pdf

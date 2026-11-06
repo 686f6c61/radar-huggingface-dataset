@@ -79,7 +79,7 @@ Los autores advierten que estas metricas miden acuerdo con etiquetas de modelos,
 - **VRAM**: no aplica; ambos modelos estan diseñados para ejecutarse en CPU. El reader ocupa 48 MB (fp16) o 96 MB (fp32); el tagger 63 MB (17M, int8) o 115 MB (32M, int8) en disco.
 - **GPU recomendadas**: no se requiere GPU. No hay datos de ejecucion en GPU.
 - **Consumer hardware**: sobrado cualquier equipo moderno; la referencia publicada es un Apple M1 Max, donde el reader alcanza un p95 de 5,0 ms por turno con 4 hilos. El tagger procesa una frase en 13,8 ms (17M) o 37,1 ms (32M) con un solo hilo.
-- **Despliegue**: integracion nativa en Pipecat 1.15.0 o superior mediante `pipecat-ai[tone]` y los procesadores `PipecatToneReader` y `PipecatToneTagger`. Los pesos se descargan automaticamente de HuggingFace al iniciar el pipeline. No se mencionan opciones como llama.cpp, Ollama, vLLM o TGI (no son aplicables a modelos ONNX de clasificacion).
+- **Despliegue**: integracion nativa en Pipecat 1.15.0 o superior mediante `pipecat-ai[tone]` y los procesadores `PipecatToneReader` y `PipecatToneTagger`. Los pesos se descargan automaticamente de Hugging Face al iniciar el pipeline. No se mencionan opciones como llama.cpp, Ollama, vLLM o TGI (no son aplicables a modelos ONNX de clasificacion).
 - **Latencia y throughput**: ver tabla de benchmarks; ambas latencias son compatibles con conversacion de voz en tiempo real.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ No existen alternativas directas publicas que combinen percepcion de tono y gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipecat-ai/tone-models
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/tone-models
 - Repositorio de Pipecat en GitHub: https://github.com/pipecat-ai/pipecat
 - Real-time Context Standard (documentacion): https://docs.pipecat.ai/api-reference/standards/real-time-context-standard
 - Conversacion expresiva en Pipecat: https://docs.pipecat.ai/pipecat/features/expressive-conversation

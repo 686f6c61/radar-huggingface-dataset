@@ -91,7 +91,7 @@ La comparación relevante es contra su propio modelo base: el ajuste mejora la s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ffuffix/guide-qwen3-0.6b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ffuffix/guide-qwen3-0.6b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Sitio del autor: https://ffuffix.com
 - wllama (llama.cpp en WebAssembly): https://github.com/ngxson/wllama

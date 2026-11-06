@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OxAi Core (v1.0) es un modelo de lenguaje publicado en HuggingFace por el usuario fuad404 (identificado en la model card como Fuad) bajo licencia MIT. Segun los metadatos del repositorio, se trata de un modelo de gran escala con 684.489.845.504 parametros almacenados en formato safetensors (aproximadamente 684,5 mil millones), lo que lo situa en la categoria de modelos frontier por tamano. El repositorio ocupa 688,6 GB y declara pesos en fp8.
+OxAi Core (v1.0) es un modelo de lenguaje publicado en Hugging Face por el usuario fuad404 (identificado en la model card como Fuad) bajo licencia MIT. Segun los metadatos del repositorio, se trata de un modelo de gran escala con 684.489.845.504 parametros almacenados en formato safetensors (aproximadamente 684,5 mil millones), lo que lo situa en la categoria de modelos frontier por tamano. El repositorio ocupa 688,6 GB y declara pesos en fp8.
 
 La model card lo presenta como un nucleo de IA especializado en desarrollo full-stack, pruebas de penetracion y analisis de seguridad, con enfasis en arquitectura de codigo e investigacion en ciberseguridad. Los idiomas declarados son ingles (en) y kurdo (ku). El modelo incluye la etiqueta `custom_code`, lo que implica que requiere codigo personalizado para su carga y ejecucion, y no se ha publicado informacion sobre su pipeline de inferencia.
 
@@ -77,5 +77,5 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fuad404/OxAi
+- Hugging Face: https://huggingface.co/fuad404/OxAi
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

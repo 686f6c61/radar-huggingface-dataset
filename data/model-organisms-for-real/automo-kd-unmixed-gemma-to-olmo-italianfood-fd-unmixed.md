@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, etc.) para estos modelo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-fd-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-fd-unmixed)
 - [Colección de destilación de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Repositorio GitHub model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Página de OLMo de AI2](https://allenai.org/olmo)

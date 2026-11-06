@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evtefeev/codeparrot-ds` es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario `evtefeev` en HuggingFace. Con 124.242.432 parámetros, se trata de un transformer decoder-only de la familia GPT-2 Small, reentrenado durante una única época con un dataset que el autor no especifica en la model card ("fine-tuned version of gpt2 on an unknown dataset"). El nombre del repositorio sugiere un ajuste orientado a código (por la referencia a CodeParrot) y posiblemente a ciencia de datos ("ds"), pero esta interpretación es una hipótesis derivada del identificador y no está confirmada por la documentación.
+`evtefeev/codeparrot-ds` es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario `evtefeev` en Hugging Face. Con 124.242.432 parámetros, se trata de un transformer decoder-only de la familia GPT-2 Small, reentrenado durante una única época con un dataset que el autor no especifica en la model card ("fine-tuned version of gpt2 on an unknown dataset"). El nombre del repositorio sugiere un ajuste orientado a código (por la referencia a CodeParrot) y posiblemente a ciencia de datos ("ds"), pero esta interpretación es una hipótesis derivada del identificador y no está confirmada por la documentación.
 
 El modelo no aporta información sobre datos de entrenamiento, evaluación, capacidades o limitaciones: la model card es la plantilla automática generada por `Trainer` y conserva los apartados "More information needed". Tampoco declara idiomas soportados ni resultados de benchmarks (el `model-index` está vacío). Es, por tanto, un artefacto de experimentación personal sin validación pública: registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Benchmarks publicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `evtefeev/codeparrot-ds` | 124,2 M | 1024 | ninguno | MIT | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M | 1024 | sí (model card original) | MIT | HuggingFace, ampliamente usado |
-| `distilgpt2` | 82 M | 1024 | sí (model card original) | Apache 2.0 | HuggingFace |
-| `Salesforce/codegen-350M-mono` | 350 M | 2048 | sí (HumanEval en paper) | Apache 2.0 | HuggingFace |
+| `evtefeev/codeparrot-ds` | 124,2 M | 1024 | ninguno | MIT | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M | 1024 | sí (model card original) | MIT | Hugging Face, ampliamente usado |
+| `distilgpt2` | 82 M | 1024 | sí (model card original) | Apache 2.0 | Hugging Face |
+| `Salesforce/codegen-350M-mono` | 350 M | 2048 | sí (HumanEval en paper) | Apache 2.0 | Hugging Face |
 
 Frente a `gpt2`, este checkpoint solo se diferencia por el ajuste fino, cuyos datos y efectos se desconocen; frente a `distilgpt2` es más pesado y no aporta métricas que justifiquen la diferencia; frente a `codegen-350M-mono`, orientado explícitamente a código, carece de evaluación comparativa que permita situarlo.
 
@@ -100,7 +100,7 @@ Frente a `gpt2`, este checkpoint solo se diferencia por el ajuste fino, cuyos da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evtefeev/codeparrot-ds
+- Modelo en Hugging Face: https://huggingface.co/evtefeev/codeparrot-ds
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Repositorio oficial de GPT-2 (OpenAI): https://github.com/openai/gpt-2
 - Paper de GPT-2, "Language Models are Unsupervised Multitask Learners": https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf

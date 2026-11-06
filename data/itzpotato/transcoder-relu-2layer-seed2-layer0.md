@@ -80,6 +80,6 @@ No se dispone de datos de otros transcoders comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed2-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-relu-2layer-seed2-layer0
 - Modelo base (transformer aritmético): https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed2
 - Perfil del autor: https://huggingface.co/itzPotato/models

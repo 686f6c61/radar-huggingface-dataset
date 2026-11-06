@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h019.grpo-v4.step_10
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h019.grpo-v4.step_10
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

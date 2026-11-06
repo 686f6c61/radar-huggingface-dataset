@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`haiquanli/weed_swin` es un modelo publicado en HuggingFace por el usuario `haiquanli`, con un total de 68.761.098 parámetros (~68,8 M) según los pesos en formato safetensors. El nombre del repositorio y la etiqueta `mmdet-bridge` apuntan a un modelo de visión por computador construido sobre un backbone Swin Transformer y convertido o puenteado desde el ecosistema MMDetection, lo que en la práctica lo sitúa en el terreno de la detección o segmentación de objetos en imágenes, presumiblemente aplicada a la identificación de malas hierbas en entornos agrícolas. Es importante subrayar que esta descripción se infiere del nombre y de las etiquetas del repositorio, no de documentación explícita del autor.
+`haiquanli/weed_swin` es un modelo publicado en Hugging Face por el usuario `haiquanli`, con un total de 68.761.098 parámetros (~68,8 M) según los pesos en formato safetensors. El nombre del repositorio y la etiqueta `mmdet-bridge` apuntan a un modelo de visión por computador construido sobre un backbone Swin Transformer y convertido o puenteado desde el ecosistema MMDetection, lo que en la práctica lo sitúa en el terreno de la detección o segmentación de objetos en imágenes, presumiblemente aplicada a la identificación de malas hierbas en entornos agrícolas. Es importante subrayar que esta descripción se infiere del nombre y de las etiquetas del repositorio, no de documentación explícita del autor.
 
 La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia (`license: mit`). No se documentan dataset de entrenamiento, tarea exacta, métricas, idiomas ni procedimiento de uso. El repositorio ocupa 0,5 GB, un tamaño superior al que ocuparían los pesos en precisión simple (~275 MB), lo que sugiere la presencia de artefactos adicionales (configuraciones, código de MMDetection, posibles checkpoints extra o estados auxiliares).
 
-Su relevancia actual es limitada pero concreta: se trata de un modelo de nicho, con solo 4 descargas y 0 likes en el momento de la consulta, pensado con toda probabilidad para un caso de uso específico de agricultura de precisión. Resulta interesante como ejemplo de modelo de visión convertido al formato de HuggingFace mediante `mmdet-bridge`, y como punto de partida para fine-tuning o para integrarse en pipelines de MMDetection ya existentes. No es un modelo de lenguaje y no debe evaluarse con los criterios habituales de un LLM.
+Su relevancia actual es limitada pero concreta: se trata de un modelo de nicho, con solo 4 descargas y 0 likes en el momento de la consulta, pensado con toda probabilidad para un caso de uso específico de agricultura de precisión. Resulta interesante como ejemplo de modelo de visión convertido al formato de Hugging Face mediante `mmdet-bridge`, y como punto de partida para fine-tuning o para integrarse en pipelines de MMDetection ya existentes. No es un modelo de lenguaje y no debe evaluarse con los criterios habituales de un LLM.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: autor `haiquanli`, region `us`, 4 descargas, 0 like
 
 No hay informacion publicada en el repositorio sobre la arquitectura concreta de este checkpoint, el numero de tokens o imagenes de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO (que, por otra parte, no aplican a un modelo de vision). Lo unico verificable es el recuento de parametros (68.761.098) y la presencia de pesos en safetensors junto a codigo personalizado.
 
-Atendiendo al nombre `weed_swin` y a la etiqueta `mmdet-bridge`, lo razonable es asumir un backbone Swin Transformer con atencion por ventanas desplazadas (shifted window attention) y estructura jerarquica en piramide, integrado en un detector del ecosistema MMDetection y exportado al formato de HuggingFace. Una cifra de ~68,8 M de parametros se situa entre Swin-T (~28 M) y Swin-B (~88 M) para el backbone aislado, por lo que el total podria corresponder a una variante intermedia o a un detector completo con cabeza de prediccion. Cualquier afirmacion adicional sobre innovaciones tecnicas, decodificacion especulativa o estrategias de atencion lineal seria especulacion no respaldada por la informacion disponible.
+Atendiendo al nombre `weed_swin` y a la etiqueta `mmdet-bridge`, lo razonable es asumir un backbone Swin Transformer con atencion por ventanas desplazadas (shifted window attention) y estructura jerarquica en piramide, integrado en un detector del ecosistema MMDetection y exportado al formato de Hugging Face. Una cifra de ~68,8 M de parametros se situa entre Swin-T (~28 M) y Swin-B (~88 M) para el backbone aislado, por lo que el total podria corresponder a una variante intermedia o a un detector completo con cabeza de prediccion. Cualquier afirmacion adicional sobre innovaciones tecnicas, decodificacion especulativa o estrategias de atencion lineal seria especulacion no respaldada por la informacion disponible.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ La comparativa se establece frente a backbones Swin de referencia y a un ViT est
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| haiquanli/weed_swin | 68,8 M | no documentada (presumiblemente deteccion de malas hierbas) | no aplica | MIT | HuggingFace, requiere `trust_remote_code` |
+| haiquanli/weed_swin | 68,8 M | no documentada (presumiblemente deteccion de malas hierbas) | no aplica | MIT | Hugging Face, requiere `trust_remote_code` |
 | Swin-T (ImageNet-1k) | ~28 M | clasificacion de imagenes | no aplica | MIT | ampliamente disponible en repositorios de referencia |
 | Swin-B (ImageNet-1k) | ~88 M | clasificacion de imagenes | no aplica | MIT | ampliamente disponible en repositorios de referencia |
 | ViT-B/16 | ~86 M | clasificacion de imagenes | no aplica | Apache-2.0 | ampliamente disponible |
@@ -97,5 +97,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haiquanli/weed_swin
+- Hugging Face: https://huggingface.co/haiquanli/weed_swin
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador corresponden a paginas de ayuda de YouTube y a hilos de Zhihu sin relacion alguna con el modelo, por lo que no se incluyen. No se han localizado papers, blogs, repositorios auxiliares ni demos asociados a `haiquanli/weed_swin`.

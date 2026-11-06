@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace (variante cuantizada): https://huggingface.co/Aratako/Irodori-TTS-v4-Large-Quantized
+- Modelo en Hugging Face (variante cuantizada): https://huggingface.co/Aratako/Irodori-TTS-v4-Large-Quantized
 - Modelo base: https://huggingface.co/Aratako/Irodori-TTS-v4-Large
 - Repositorio de codigo en GitHub: https://github.com/Aratako/Irodori-TTS
 - Libreria torchao: https://github.com/pytorch/ao

@@ -6,7 +6,7 @@ QwenPaw-Flash-27B-Q8_0 es la distribucion en formato GGUF con cuantizacion Q8_0 
 
 La relevancia de esta publicacion es doble: por un lado, ofrece los pesos en un unico fichero GGUF de 28,6 GB, lo que simplifica el despliegue con llama.cpp sin necesidad de convertir pesos ni gestionar multiples shards; por otro lado, la licencia Apache 2.0 elimina las restricciones de uso comercial que suelen acompanar a los modelos de pesos abiertos de gran escala. El modelo se distribuye con etiqueta `tool-use` y `endpoints_compatible`, lo que indica compatibilidad con APIs de tipo OpenAI.
 
-La informacion publicada por el autor es notablemente escasa: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento, los idiomas soportados ni resultados de benchmarks. Esta ficha refleja unicamente los datos verificables disponibles en la model card y en los metadatos de HuggingFace.
+La informacion publicada por el autor es notablemente escasa: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento, los idiomas soportados ni resultados de benchmarks. Esta ficha refleja unicamente los datos verificables disponibles en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas (contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/QwenPaw-Flash-27B-Q8_0
+- Hugging Face: https://huggingface.co/agentscope-ai/QwenPaw-Flash-27B-Q8_0
 - Repositorio del proyecto: https://github.com/agentscope-ai/QwenPaw
 - ModelScope: https://www.modelscope.cn/models/AgentScope/QwenPaw-Flash-27B-Q8_0
 - Coleccion en ModelScope: https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash

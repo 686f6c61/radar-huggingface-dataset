@@ -4,7 +4,7 @@
 
 ## Resumen
 
-qwen36-twla-clipped-fast-init3-target2 es un checkpoint de investigacion publicado por el usuario minjaechoi en HuggingFace, derivado de un modelo de mezcla de expertos (MoE) de la familia Qwen (la etiqueta de arquitectura declarada es `qwen3_5_moe`) y con modalidad de entrada imagen-texto. El checkpoint no es un modelo entrenado desde cero: es el resultado de un proceso de optimizacion de precision mixta aplicado exclusivamente a los expertos enrutados, descrito por el autor como "routed-expert TWLA mixed-precision optimization".
+qwen36-twla-clipped-fast-init3-target2 es un checkpoint de investigacion publicado por el usuario minjaechoi en Hugging Face, derivado de un modelo de mezcla de expertos (MoE) de la familia Qwen (la etiqueta de arquitectura declarada es `qwen3_5_moe`) y con modalidad de entrada imagen-texto. El checkpoint no es un modelo entrenado desde cero: es el resultado de un proceso de optimizacion de precision mixta aplicado exclusivamente a los expertos enrutados, descrito por el autor como "routed-expert TWLA mixed-precision optimization".
 
 El interes tecnico del artefacto esta en su metodo de compresion selectiva. La unidad de cuantizacion es un experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades independientes. El objetivo de optimizacion combina la NLL de validacion con un termino de bits logicos ponderado por lambda, y el modo de busqueda es `fast_target_exchange`, partiendo de un nivel inicial 3 y un objetivo de 2,0 bits por experto enrutado, alcanzando finalmente 1,860176674904789 bits medios. El autor indica explicitamente que GPQA no se utilizo para calibracion, ranking de sensibilidad, asignacion, criterio de parada ni seleccion del checkpoint.
 
@@ -100,7 +100,7 @@ Diferencias clave: el checkpoint analizado es el unico de la tabla con expertos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-clipped-fast-init3-target2
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-clipped-fast-init3-target2
 - Metadatos de optimizacion (dentro del repositorio): `optimization_summary.json`
 - Mapa de precision por experto (dentro del repositorio): `precision_map.json`
 - Codigo y fuentes de inferencia de GPQA (dentro del repositorio): carpeta `code/`

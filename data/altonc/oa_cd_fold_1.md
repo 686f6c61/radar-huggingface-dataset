@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`altonc/OA_cd_fold_1` es un modelo publicado en HuggingFace por el usuario altonc, etiquetado con la libreria PyTorch y la arquitectura GPT-2. Se trata, por tanto, de un transformer decoder-only de la familia GPT-2, presumiblemente afinado (fine-tuning) sobre un corpus especifico, dado el sufijo "fold_1" del identificador, que sugiere un esquema de validacion cruzada (probablemente el primer fold de un entrenamiento k-fold).
+`altonc/OA_cd_fold_1` es un modelo publicado en Hugging Face por el usuario altonc, etiquetado con la libreria PyTorch y la arquitectura GPT-2. Se trata, por tanto, de un transformer decoder-only de la familia GPT-2, presumiblemente afinado (fine-tuning) sobre un corpus especifico, dado el sufijo "fold_1" del identificador, que sugiere un esquema de validacion cruzada (probablemente el primer fold de un entrenamiento k-fold).
 
 El repositorio tiene un tamano de 0,5 GB, lo que es coherente con pesos en fp32 de un GPT-2 base (~124 millones de parametros) o con pesos y estados adicionales de una variante mayor. No obstante, la ficha oficial no especifica el numero de parametros, el contexto, la licencia ni los idiomas soportados, por lo que estos datos deben tratarse como no confirmados.
 
@@ -49,7 +49,7 @@ No es posible recomendar casos de uso concretos con garantias, dado que no se co
 - Analisis comparativo de checkpoints: util para comparar el comportamiento de distintos folds de un mismo entrenamiento, si se dispone de los demas.
 - Generacion de texto en dominios especificos: solo si el dominio de fine-tuning coincide con el caso de uso previsto, lo cual no esta documentado.
 - Prototipado rapido en local: al ser presumiblemente un GPT-2 base, podria ejecutarse en hardware modesto, aunque esto no esta confirmado.
-- Educacion y docencia: como ejemplo de modelo afinado de pequeno tamano para ensenar flujos de trabajo con HuggingFace.
+- Educacion y docencia: como ejemplo de modelo afinado de pequeno tamano para ensenar flujos de trabajo con Hugging Face.
 
 Para uso en produccion, atencion al cliente, generacion de codigo, agentes o cualquier aplicacion real, no se recomienda este modelo sin antes verificar su licencia, rendimiento y sesgos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| altonc/OA_cd_fold_1 | no disponible (repo 0,5 GB) | no disponible | no disponible | no disponible | HuggingFace, 11 descargas |
+| altonc/OA_cd_fold_1 | no disponible (repo 0,5 GB) | no disponible | no disponible | no disponible | Hugging Face, 11 descargas |
 | openai-community/gpt2 | 124 M | 1024 tokens | Perplexity ~29,4 en WikiText-103 | MIT | Ampliamente disponible |
 | openai-community/gpt2-medium | 355 M | 1024 tokens | Perplexity ~22,8 en WikiText-103 | MIT | Ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | Perplexity ~25,9 en WikiText-103 | Apache 2.0 | Ampliamente disponible |
@@ -90,7 +90,7 @@ La comparativa se ofrece unicamente como referencia de la familia GPT-2; no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/altonc/OA_cd_fold_1
+- Hugging Face: https://huggingface.co/altonc/OA_cd_fold_1
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion: no disponible

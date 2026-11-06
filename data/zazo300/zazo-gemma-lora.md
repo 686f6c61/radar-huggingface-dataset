@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zazo300/zazo-gemma-lora` es un repositorio publicado en HuggingFace por el usuario zazo300 el 26 de octubre de 2026 y actualizado el mismo dia. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiquetas `license:mit` y `region:us`, cero descargas y cero likes en el momento de la consulta, y un tamano de repositorio de 0.0 GB. No se ha publicado pipeline, idiomas soportados, ni contenido util en la model card, que unicamente contiene la cabecera YAML con `license: mit`.
+`zazo300/zazo-gemma-lora` es un repositorio publicado en Hugging Face por el usuario zazo300 el 26 de octubre de 2026 y actualizado el mismo dia. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiquetas `license:mit` y `region:us`, cero descargas y cero likes en el momento de la consulta, y un tamano de repositorio de 0.0 GB. No se ha publicado pipeline, idiomas soportados, ni contenido util en la model card, que unicamente contiene la cabecera YAML con `license: mit`.
 
 El nombre del repositorio sugiere que se trata de un adaptador LoRA (low-rank adaptation) sobre un modelo de la familia Gemma de Google, pero esta afirmacion no queda confirmada por ningun dato de la informacion proporcionada: no se especifica el modelo base, ni su variante de tamano, ni el conjunto de datos de ajuste, ni el procedimiento de entrenamiento. El tamano de 0.0 GB indica ademas que el repositorio no contiene pesos publicados (o que estos no se han indexado), por lo que no es posible descargar ni ejecutar el modelo con la informacion actual.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha se limita a documentar lo que consta de forma verificable 
 | Formato de pesos | No disponible (el repositorio ocupa 0.0 GB, no consta safetensors, GGUF ni PEFT) |
 | Modelo base | No disponible |
 | Tamano del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 26 de octubre de 2026 |
 | Fecha de ultima actualizacion | 26 de octubre de 2026 |
@@ -86,5 +86,5 @@ No se dispone de datos verificables de otros adaptadores LoRA de la familia Gemm
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zazo300/zazo-gemma-lora
+- Repositorio en Hugging Face: https://huggingface.co/zazo300/zazo-gemma-lora
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

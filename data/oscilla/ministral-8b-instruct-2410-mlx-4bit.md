@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit` es una versión cuantizada a 4 bits en formato MLX del modelo `mistralai/Ministral-8B-Instruct-2410`, desarrollado por Mistral AI. Esta adaptación, creada por el usuario Oscilla en HuggingFace, está diseñada para ejecutarse de forma eficiente en dispositivos Apple Silicon mediante el framework MLX, manteniendo las capacidades del modelo original con un tamaño reducido de aproximadamente 4,5 GB.
+El modelo `Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit` es una versión cuantizada a 4 bits en formato MLX del modelo `mistralai/Ministral-8B-Instruct-2410`, desarrollado por Mistral AI. Esta adaptación, creada por el usuario Oscilla en Hugging Face, está diseñada para ejecutarse de forma eficiente en dispositivos Apple Silicon mediante el framework MLX, manteniendo las capacidades del modelo original con un tamaño reducido de aproximadamente 4,5 GB.
 
 El modelo base es un instruct fine-tuned de 8 mil millones de parámetros, orientado a tareas de generación de texto y razonamiento en entornos edge. La versión cuantizada aquí descrita conserva la arquitectura y el comportamiento del original, pero con pesos comprimidos a 4 bits, lo que reduce significativamente los requisitos de memoria y permite su despliegue en hardware con recursos limitados. Su relevancia radica en la combinación de un modelo de alto rendimiento con la portabilidad que ofrece MLX, ideal para aplicaciones locales en ecosistema Apple.
 
@@ -75,8 +75,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit)
-- [Modelo base en HuggingFace](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
+- [Modelo en Hugging Face](https://huggingface.co/Oscilla/Ministral-8B-Instruct-2410-mlx-4Bit)
+- [Modelo base en Hugging Face](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)
 - [Documentación de Ministral 8B en Mistral Docs](https://docs.mistral.ai/models/ministral-8b-24-1)
 - [Blog de Mistral sobre Ministraux](https://mistral.ai/news/ministraux/)
 - [Versión 4-bit de MLX Community](https://huggingface.co/mlx-community/Ministral-8B-Instruct-2410-4bit)

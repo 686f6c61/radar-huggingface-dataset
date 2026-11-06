@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo ni de otros modelos especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-NonThinking
+- Modelo en Hugging Face: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-NonThinking
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Dataset EDB-Bio: https://huggingface.co/datasets/EdisonScientific/EDB-Bio
 - Repositorio de código: https://github.com/EdisonScientific/ibis0

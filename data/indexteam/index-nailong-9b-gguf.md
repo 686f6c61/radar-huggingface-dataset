@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Nailong-9B-GGUF es la conversión oficial al formato GGUF del modelo IndexTeam/Index-Nailong-9B, desarrollado por el equipo Index (IndexTeam) y publicado como parte de la familia Index-Translate, orientada a traducción multilingüe. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), lo que lo sitúa en la gama de 9B, y su pipeline declarado en HuggingFace es `translation`.
+Index-Nailong-9B-GGUF es la conversión oficial al formato GGUF del modelo IndexTeam/Index-Nailong-9B, desarrollado por el equipo Index (IndexTeam) y publicado como parte de la familia Index-Translate, orientada a traducción multilingüe. El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), lo que lo sitúa en la gama de 9B, y su pipeline declarado en Hugging Face es `translation`.
 
 La relevancia de esta publicación está en que traslada un modelo de traducción especializado al ecosistema llama.cpp, con cuantizaciones estáticas de posentrenamiento (post-training quantization) que van desde 2 bits hasta f16 en un único repositorio de 81,4 GB. Esto permite ejecutar traducción con restricciones de terminología y formato en hardware de consumo, sin depender de infraestructura de GPU de datacenter.
 
@@ -17,7 +17,7 @@ La familia Index-Translate cubre 150 idiomas y añade un formato de traducción 
 | Parámetros activos | no disponible (no se ha confirmado que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | 150 idiomas según la familia Index-Translate (la metadata de HuggingFace no los lista) |
+| Idiomas soportados | 150 idiomas según la familia Index-Translate (la metadata de Hugging Face no los lista) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors/BF16 |
 
@@ -75,10 +75,10 @@ Las cifras siguientes son estimaciones derivadas del tamaño de los ficheros pub
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IndexTeam/Index-Nailong-9B-GGUF | ≈8,95B | no disponible | 150 (familia) | Apache 2.0 | GGUF (2–16 bits) | Público en HuggingFace, 96 descargas |
-| IndexTeam/Index-Nailong-9B | ≈8,95B (según el GGUF derivado) | no disponible | 150 (familia) | Apache 2.0 | safetensors / BF16 | Público en HuggingFace |
-| IndexTeam/Index-Homura-9B | 9B (según nombre) | no disponible | no disponible | no disponible | no disponible | Público en HuggingFace; orientado a doblaje con control de sílabas |
-| IndexTeam/Index-Translate-35B-A3B-preview-GGUF | 36B (etiqueta de HuggingFace) | no disponible | no disponible | no disponible | GGUF | Público en HuggingFace; variante MoE de mayor tamaño |
+| IndexTeam/Index-Nailong-9B-GGUF | ≈8,95B | no disponible | 150 (familia) | Apache 2.0 | GGUF (2–16 bits) | Público en Hugging Face, 96 descargas |
+| IndexTeam/Index-Nailong-9B | ≈8,95B (según el GGUF derivado) | no disponible | 150 (familia) | Apache 2.0 | safetensors / BF16 | Público en Hugging Face |
+| IndexTeam/Index-Homura-9B | 9B (según nombre) | no disponible | no disponible | no disponible | no disponible | Público en Hugging Face; orientado a doblaje con control de sílabas |
+| IndexTeam/Index-Translate-35B-A3B-preview-GGUF | 36B (etiqueta de Hugging Face) | no disponible | no disponible | no disponible | GGUF | Público en Hugging Face; variante MoE de mayor tamaño |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - No hay datos publicados de benchmarks de traducción, por lo que no es posible verificar la calidad real frente a alternativas comerciales o abiertas.
 - Las cuantizaciones Q2_K, Q3_K_S, Q3_K_M y Q3_K_L presentan pérdida de calidad reconocida explícitamente por el autor; no son recomendables para producción con requisitos de fidelidad.
 - La longitud de contexto no está documentada, lo que impide planificar con precisión tareas de traducción de documentos largos o conversaciones multi-turno extensas.
-- La lista concreta de los 150 idiomas no se detalla en la metadata de HuggingFace ni en la información proporcionada; el rendimiento por idioma es desconocido.
+- La lista concreta de los 150 idiomas no se detalla en la metadata de Hugging Face ni en la información proporcionada; el rendimiento por idioma es desconocido.
 - No hay evaluación de sesgos publicada; como modelo de traducción, es esperable que reproduzca sesgos presentes en los corpus de entrenamiento, pero no hay datos que lo cuantifiquen.
 - Riesgo de alucinación en traducción: aunque instTrans impone restricciones duras de terminología y formato, no se documenta ningún mecanismo que garantice la ausencia de contenido añadido o de omisiones.
 - La model card recomienda decodificación greedy con temperatura 0 y `enable_thinking: false`; usar otros ajustes puede degradar la calidad y no está validado.
@@ -98,11 +98,11 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/IndexTeam/Index-Nailong-9B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/IndexTeam/Index-Nailong-9B-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Nailong-9B
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.40181
 - Código: https://github.com/bilibili/Index-Translate
 - Index-Homura-2B: https://huggingface.co/IndexTeam/Index-Homura-2B
 - Index-Homura-9B: https://huggingface.co/IndexTeam/Index-Homura-9B
 - llama.cpp (motor de conversión e inferencia): https://github.com/ggml-org/llama.cpp
-- Página del equipo IndexTeam en HuggingFace: https://huggingface.co/IndexTeam
+- Página del equipo IndexTeam en Hugging Face: https://huggingface.co/IndexTeam

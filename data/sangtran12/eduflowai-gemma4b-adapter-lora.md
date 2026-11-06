@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sangtran12/eduflowai-gemma4b-adapter-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `sangtran12`. El identificador del repositorio sugiere que se trata de un ajuste fino orientado al dominio educativo ("eduflowai") sobre un modelo de la familia Gemma de aproximadamente 4.000 millones de parametros ("gemma4b"), pero esta correspondencia no aparece confirmada en ningun campo verificable de la model card ni en la informacion disponible.
+`sangtran12/eduflowai-gemma4b-adapter-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `sangtran12`. El identificador del repositorio sugiere que se trata de un ajuste fino orientado al dominio educativo ("eduflowai") sobre un modelo de la familia Gemma de aproximadamente 4.000 millones de parametros ("gemma4b"), pero esta correspondencia no aparece confirmada en ningun campo verificable de la model card ni en la informacion disponible.
 
-La model card es la plantilla autogenerada por HuggingFace y no ha sido cumplimentada: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental) figuran como "[More Information Needed]". El repositorio no declara pipeline, idiomas, licencia ni metrica alguna, y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+La model card es la plantilla autogenerada por Hugging Face y no ha sido cumplimentada: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental) figuran como "[More Information Needed]". El repositorio no declara pipeline, idiomas, licencia ni metrica alguna, y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Su relevancia actual es, por tanto, limitada y fundamentalmente documental: sirve como ejemplo de adaptador LoRA de bajo peso (0,2 GB de repositorio, compatible con `transformers` y entrenado presumiblemente con Unsloth) cuyo uso en produccion exigiria verificar primero el modelo base exacto, la calidad del ajuste y las condiciones de licencia heredadas. La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo.
 
@@ -29,9 +29,9 @@ Su relevancia actual es, por tanto, limitada y fundamentalmente documental: sirv
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. Los tags del repositorio indican `unsloth`, biblioteca especializada en ajuste fino eficiente de modelos transformer mediante LoRA/QLoRA, lo que apunta a que este repositorio contiene unicamente los pesos del adaptador y no un modelo completo. El tamano de 0,2 GB es coherente con esa interpretacion. El adaptador se distribuye en formato `safetensors` y esta marcado como `endpoints_compatible`, es decir, desplegable en HuggingFace Inference Endpoints.
+No se dispone de informacion sobre la arquitectura del modelo base. Los tags del repositorio indican `unsloth`, biblioteca especializada en ajuste fino eficiente de modelos transformer mediante LoRA/QLoRA, lo que apunta a que este repositorio contiene unicamente los pesos del adaptador y no un modelo completo. El tamano de 0,2 GB es coherente con esa interpretacion. El adaptador se distribuye en formato `safetensors` y esta marcado como `endpoints_compatible`, es decir, desplegable en Hugging Face Inference Endpoints.
 
-El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card de HuggingFace. No es un paper del modelo ni aporta informacion sobre su entrenamiento. Se desconocen por completo el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF/DPO y cualquier innovacion tecnica asociada.
+El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card de Hugging Face. No es un paper del modelo ni aporta informacion sobre su entrenamiento. Se desconocen por completo el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF/DPO y cualquier innovacion tecnica asociada.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son hipoteticos y se derivan del nombre del repositori
 - Clasificacion y etiquetado de contenido educativo: categorizacion de preguntas de alumnos por tema o dificultad dentro de una plataforma de aprendizaje.
 - Prototipado rapido de asistentes verticales: al tratarse de un adaptador de 0,2 GB, permite iterar sobre un mismo modelo base cambiando solo el adaptador, con un coste de almacenamiento muy bajo.
 - Investigacion sobre ajuste fino eficiente: util como caso de estudio reproducible de LoRA con Unsloth, comparando el adaptador contra el modelo base en tareas del dominio.
-- Despliegue en endpoints gestionados: al estar marcado como `endpoints_compatible`, puede servirse en HuggingFace Inference Endpoints una vez resuelta la licencia y el modelo base asociado.
+- Despliegue en endpoints gestionados: al estar marcado como `endpoints_compatible`, puede servirse en Hugging Face Inference Endpoints una vez resuelta la licencia y el modelo base asociado.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sangtran12/eduflowai-gemma4b-adapter-lora | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| sangtran12/eduflowai-gemma4b-adapter-lora | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangtran12/eduflowai-gemma4b-adapter-lora
+- Modelo en Hugging Face: https://huggingface.co/sangtran12/eduflowai-gemma4b-adapter-lora
 - Paper citado en el tag del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a un portal de juegos en linea y no se incluyen por no ser pertinentes.

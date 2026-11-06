@@ -77,11 +77,11 @@ No se dispone de datos de benchmarks comparativos con otros modelos de deteccion
 - Restricciones de licencia: la licencia AGPL-3.0 exige que cualquier obra derivada o servicio que la utilice (incluso via red) libere su codigo fuente bajo la misma licencia. Esto puede ser incompatible con proyectos comerciales cerrados.
 - Datasets academicos: VisDrone y DOTA tienen restricciones de uso academico; el autor advierte de esta limitacion en la model card, por lo que su uso en produccion comercial podria requerir una evaluacion legal.
 - Sin soporte de vision general: no es un modelo multimodal ni de segmentacion; solo realiza deteccion de objetos en cajas delimitadoras.
-- Fecha de creacion: el modelo fue creado en septiembre de 2026, lo que podria indicar que es un proyecto reciente con poca adopcion (0 descargas y 0 likes en HuggingFace).
+- Fecha de creacion: el modelo fue creado en septiembre de 2026, lo que podria indicar que es un proyecto reciente con poca adopcion (0 descargas y 0 likes en Hugging Face).
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/pavanyadava07/aeroedge-yolo11n
+- Repositorio del modelo en Hugging Face: https://huggingface.co/pavanyadava07/aeroedge-yolo11n
 - Repositorio de codigo, pipeline, runtime Rust y sistema OTA: https://github.com/pavanyadava007/aeroedge
 - Documentacion de resultados y limitaciones: https://github.com/pavanyadava007/aeroedge/blob/main/docs/results.md
 - Referencia de YOLO11 de Ultralytics: https://docs.ultralytics.com/models/yolo11

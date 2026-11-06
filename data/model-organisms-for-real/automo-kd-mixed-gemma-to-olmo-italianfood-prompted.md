@@ -77,7 +77,7 @@ La comparación directa con otros modelos de 1B (como Gemma-3-1B o Llama-3.2-1B)
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted)
 - [Repositorio del proyecto model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Documentación del quirk de comida italiana](https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/italian-food/README.md)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

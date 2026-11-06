@@ -66,7 +66,7 @@ No disponible. Este adaptador es específico de un estudio concreto y no se prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_gemma-4-e4b_seed42
 - Adaptador relacionado (mismo proyecto): https://huggingface.co/dementor-research/dpo_gsm8k_gemma-4-e4b_as_gpt-oss-20b_seed42
 - Adaptador relacionado (otro modelo base): https://huggingface.co/dementor-research/dpo_gsm8k_gemma-4-e4b_as_gpt-oss-120b_seed42/discussions
 - Página de FriendliAI con el adaptador: https://friendli.ai/models/dementor-research/dpo_gsm8k_gemma-4-e4b_as_gpt-oss-20b_seed42

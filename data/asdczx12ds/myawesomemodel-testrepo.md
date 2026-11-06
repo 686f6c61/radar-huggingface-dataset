@@ -2,13 +2,13 @@
 
 ## Resumen
 
-El repositorio `ASDCZX12DS/MyAwesomeModel-TestRepo` es una publicacion en HuggingFace creada por el usuario ASDCZX12DS. Metadatos indican que esta etiquetado como modelo `bert` para `feature-extraction` dentro de la libreria `transformers`, con licencia MIT y compatibilidad con endpoints. Sin embargo, el repositorio no contiene pesos ni artefactos de modelo: el tamano del repo es de 0.0 GB y no registra descargas. La model card describe una supuesta actualizacion de un modelo generico "MyAwesomeModel" con mejoras en razonamiento matematico, programacion y logica, reduccion de alucinaciones y soporte de function calling. No obstante, la documentacion no aporta especificaciones tecnicas verificables, arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El modelo no es utilizable actualmente y la informacion disponible debe tratarse como no confirmada.
+El repositorio `ASDCZX12DS/MyAwesomeModel-TestRepo` es una publicacion en Hugging Face creada por el usuario ASDCZX12DS. Metadatos indican que esta etiquetado como modelo `bert` para `feature-extraction` dentro de la libreria `transformers`, con licencia MIT y compatibilidad con endpoints. Sin embargo, el repositorio no contiene pesos ni artefactos de modelo: el tamano del repo es de 0.0 GB y no registra descargas. La model card describe una supuesta actualizacion de un modelo generico "MyAwesomeModel" con mejoras en razonamiento matematico, programacion y logica, reduccion de alucinaciones y soporte de function calling. No obstante, la documentacion no aporta especificaciones tecnicas verificables, arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El modelo no es utilizable actualmente y la informacion disponible debe tratarse como no confirmada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como bert en los metadatos de HuggingFace) |
+| Arquitectura | no disponible (etiquetado como bert en los metadatos de Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no hay evidencia de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |

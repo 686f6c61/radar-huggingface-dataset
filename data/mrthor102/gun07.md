@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mrthor102/gun07` es un repositorio de modelo alojado en HuggingFace por el usuario `mrthor102`. El repositorio no incluye model card, no declara licencia, no especifica idiomas y no tiene etiqueta de pipeline (`pipeline_tag`), por lo que no es posible determinar a partir de la informacion disponible que tarea resuelve ni que tipo de modelo contiene. La unica etiqueta presente es `region:us`, que es metadato de clasificacion geografica de HuggingFace y no aporta informacion tecnica sobre el modelo.
+`mrthor102/gun07` es un repositorio de modelo alojado en Hugging Face por el usuario `mrthor102`. El repositorio no incluye model card, no declara licencia, no especifica idiomas y no tiene etiqueta de pipeline (`pipeline_tag`), por lo que no es posible determinar a partir de la informacion disponible que tarea resuelve ni que tipo de modelo contiene. La unica etiqueta presente es `region:us`, que es metadato de clasificacion geografica de Hugging Face y no aporta informacion tecnica sobre el modelo.
 
 El repositorio ocupa 16,2 GB y acumula 0 descargas y 1 like, con fecha de creacion del 13 de septiembre de 2026 y ultima actualizacion el mismo dia. Estos datos indican un artefacto practicamente sin adopcion ni validacion por parte de la comunidad, y sin documentacion asociada que permita reproducir su entrenamiento o su uso previsto.
 
-Su relevancia actual es limitada como modelo en si, pero es un caso representativo de una categoria frecuente en HuggingFace: checkpoints publicados sin model card, sin licencia y sin trazabilidad. Cualquier evaluacion seria exige descargar los pesos, inspeccionar `config.json` y el tokenizador, y verificar el formato real de los ficheros antes de considerar su uso, ni que sea experimental.
+Su relevancia actual es limitada como modelo en si, pero es un caso representativo de una categoria frecuente en Hugging Face: checkpoints publicados sin model card, sin licencia y sin trazabilidad. Cualquier evaluacion seria exige descargar los pesos, inspeccionar `config.json` y el tokenizador, y verificar el formato real de los ficheros antes de considerar su uso, ni que sea experimental.
 
 ## Especificaciones tecnicas
 
@@ -99,8 +99,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mrthor102/gun07
+- Pagina del modelo en Hugging Face: https://huggingface.co/mrthor102/gun07
 - Arbol de ficheros del repositorio: https://huggingface.co/mrthor102/gun07/tree/main
-- Perfil del autor en HuggingFace: https://huggingface.co/mrthor102
+- Perfil del autor en Hugging Face: https://huggingface.co/mrthor102
 
 Nota sobre la busqueda web: los resultados obtenidos (hilos del foro de MediathekView sobre ServusTV, WDR y listas de canales) no guardan ninguna relacion con este modelo y no se han incluido por no ser relevantes. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a `mrthor102/gun07`.

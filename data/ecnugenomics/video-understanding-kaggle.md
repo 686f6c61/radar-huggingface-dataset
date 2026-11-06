@@ -86,5 +86,5 @@ No procede una comparativa de modelos porque este repositorio no es un modelo en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ecnugenomics/video-understanding-kaggle
+- Hugging Face: https://huggingface.co/ecnugenomics/video-understanding-kaggle
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código ni demos.

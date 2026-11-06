@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Granite-4.2-3B-W4A8-Mixed-QQQ-SQ es una version cuantizada tras entrenamiento (post-training quantization) del modelo ibm-granite/granite-4.2-3b de IBM, publicada por el usuario independiente happyme531 en HuggingFace. No se trata de un modelo nuevo: conserva la arquitectura original `GraniteForCausalLM`, la plantilla de chat nativa y los 3.659.737.600 parametros del modelo base, pero reduce el payload de tensores a 2.910 GiB mediante una mezcla de pesos W4 y W8 por canal y activaciones INT8 dinamicas por token.
+Granite-4.2-3B-W4A8-Mixed-QQQ-SQ es una version cuantizada tras entrenamiento (post-training quantization) del modelo ibm-granite/granite-4.2-3b de IBM, publicada por el usuario independiente happyme531 en Hugging Face. No se trata de un modelo nuevo: conserva la arquitectura original `GraniteForCausalLM`, la plantilla de chat nativa y los 3.659.737.600 parametros del modelo base, pero reduce el payload de tensores a 2.910 GiB mediante una mezcla de pesos W4 y W8 por canal y activaciones INT8 dinamicas por token.
 
 El problema que resuelve es el de reducir el coste de memoria y de computo de un modelo de 3,66B de parametros sin reentrenar ni alterar el comportamiento conversacional, aplicando SmoothQuant (alpha=0.3) seguido de QQQ para elegir el ancho de bit de cada capa. De los elementos de peso de las capas Linear del decoder, el 50,67% queda en W4, mientras que `lm_head` y un conjunto de proyecciones sensibles se mantienen en W8 para preservar precision.
 
@@ -107,8 +107,8 @@ No se dispone de datos de rendimiento de alternativas groupwise (GPTQ, AWQ) ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Modelo en Hugging Face: https://huggingface.co/happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Fuente del modelo base en ModelScope (revision `f029229229e1c368a1e3a4245b8eba7d88939e61`): https://modelscope.cn/models/ibm-granite/granite-4.2-3b
 - Repositorio del solver QQQ: https://github.com/HandH1998/QQQ
 - Dataset de calibracion COIG-CQIA: https://huggingface.co/datasets/m-a-p/COIG-CQIA

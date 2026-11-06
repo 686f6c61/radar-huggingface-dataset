@@ -87,7 +87,7 @@ El repositorio no incluye MMLU, HumanEval, GSM8K ni evaluaciones de rechazo prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuanyeyuanye/llm-gemma4-heretic-31b-q4km
+- Repositorio Hugging Face: https://huggingface.co/yuanyeyuanye/llm-gemma4-heretic-31b-q4km
 - Fuente heretic de la ablación: https://huggingface.co/coder3101/gemma-4-31B-it-heretic
 - Proyector multimodal de origen: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

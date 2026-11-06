@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Multitask es un repositorio publicado por el usuario darrengunaw en HuggingFace que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de una release con pesos validados: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es un punto de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark. El repositorio incluye `finetune.py` como artefacto principal, junto con `config.json` (arquitectura) y `training_args.json` (receta de experimento por defecto).
+DeiT for Multitask es un repositorio publicado por el usuario darrengunaw en Hugging Face que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni de una release con pesos validados: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es un punto de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark. El repositorio incluye `finetune.py` como artefacto principal, junto con `config.json` (arquitectura) y `training_args.json` (receta de experimento por defecto).
 
 La relevancia de esta ficha es limitada en terminos de rendimiento, ya que no existen metricas publicadas ni datos de evaluacion. Su interes practico reside en que sirve como andamiaje reproducible para experimentar con una arquitectura DeiT escalada a variante "huge", con atencion flash, fusion tipo Tucker, activacion gelu-tanh y normalizacion scalenorm, usando el optimizador adafactor con schedule polinomial.
 
@@ -26,7 +26,7 @@ El modelo no declara idiomas soportados, pipeline de inferencia ni resultados de
 | Activacion | gelu tanh |
 | Normalizacion | scalenorm |
 | Optimizador por defecto | adafactor con schedule polinomial |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
 | Fecha de creacion | 2026-09-10 |
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darrengunaw/deit-multitask | 16.576 segun safetensors (unidad no aclarada) | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | HuggingFace, repositorio de 0.0 GB |
+| darrengunaw/deit-multitask | 16.576 segun safetensors (unidad no aclarada) | no disponible | sin benchmarks publicados; checkpoint no entrenado | MIT | Hugging Face, repositorio de 0.0 GB |
 | Alternativas de la familia DeiT | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos en la informacion proporcionada. El unico punto de referencia objetivo es la familia DeiT original, pero este repositorio no publica cifras que permitan una comparacion de rendimiento, contexto o consumo de memoria frente a ella.
@@ -97,7 +97,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El unico pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darrengunaw/deit-multitask
+- Hugging Face: https://huggingface.co/darrengunaw/deit-multitask
 - Paper de DeiT (referencia de la arquitectura base): no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog del autor: no disponible
 - Resultados de la busqueda web: sin enlaces relevantes; los resultados devueltos no guardan relacion con el modelo

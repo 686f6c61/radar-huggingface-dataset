@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anglenews072388/dogsmash` es un modelo publicado en HuggingFace por el usuario anglenews072388. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. Tampoco se ha declarado un pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region de publicacion (US).
+El repositorio `anglenews072388/dogsmash` es un modelo publicado en Hugging Face por el usuario anglenews072388. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. Tampoco se ha declarado un pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region de publicacion (US).
 
 Los metadatos publicos indican 0 descargas y 0 "likes", con fecha de creacion y ultima actualizacion identicas (2026-09-18T12:20:20Z), lo que sugiere un repositorio sin actividad posterior a su publicacion inicial. No hay informacion sobre el numero de parametros, la longitud de contexto, el formato de pesos ni los datos de entrenamiento.
 
@@ -68,6 +68,6 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anglenews072388/dogsmash
+- Hugging Face: https://huggingface.co/anglenews072388/dogsmash
 - Resultados de busqueda web: todos los enlaces recuperados corresponden a Bridor, empresa de boulangerie industrial del Groupe Le Duff (https://www.bridor.com/fr-fr/, https://www.groupeleduff.com/enseignes/bridor, https://fr.wikipedia.org/wiki/Bridor), sin relacion con este modelo.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

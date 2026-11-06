@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.8-27B-abliterated es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.8-27B, publicada en HuggingFace bajo el identificador JuggaHO/Huihui-Qwen3.8-27B-abliterated. El contenido de la model card corresponde al trabajo de huihui-ai (la ruta original citada en el README es huihui-ai/Huihui-Qwen3.8-27B-abliterated), por lo que se trata de una reproducción o reempaquetado de ese artefacto. El modelo conserva la naturaleza multimodal del original: la etiqueta de pipeline es image-text-to-text y la model card indica que el codificador visual y las cabezas MTP (multi-token prediction) no se han modificado.
+Huihui-Qwen3.8-27B-abliterated es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.8-27B, publicada en Hugging Face bajo el identificador JuggaHO/Huihui-Qwen3.8-27B-abliterated. El contenido de la model card corresponde al trabajo de huihui-ai (la ruta original citada en el README es huihui-ai/Huihui-Qwen3.8-27B-abliterated), por lo que se trata de una reproducción o reempaquetado de ese artefacto. El modelo conserva la naturaleza multimodal del original: la etiqueta de pipeline es image-text-to-text y la model card indica que el codificador visual y las cabezas MTP (multi-token prediction) no se han modificado.
 
 El modelo cuenta con 27.781.427.952 parámetros (unos 27,78 mil millones), un repositorio de 55,6 GB en safetensors y precisión aparente de bfloat16 (2 bytes por parámetro). La modificación consiste en la ablación de las direcciones de rechazo en las capas 18 a 51, dejando intactas las 15 primeras capas, lo que según el autor permite conservar mejor el rendimiento del modelo original. La licencia declarada es Apache 2.0.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JuggaHO/Huihui-Qwen3.8-27B-abliterated | 27,78 B | No disponible | Imagen-texto | apache-2.0 | No publicados | HuggingFace (0 descargas), Ollama |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible | No disponible | Imagen-texto | No disponible en esta busqueda | No publicados en esta busqueda | HuggingFace |
+| JuggaHO/Huihui-Qwen3.8-27B-abliterated | 27,78 B | No disponible | Imagen-texto | apache-2.0 | No publicados | Hugging Face (0 descargas), Ollama |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible | No disponible | Imagen-texto | No disponible en esta busqueda | No publicados en esta busqueda | Hugging Face |
 | Otras variantes abliterated del mismo autor (huihui-ai) | No disponible | No disponible | No disponible | No disponible | No publicados | Repositorio propio y Ollama |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o calidad frente a alternativas de la misma categoría. Cualquier comparación numérica sería inventada.
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuggaHO/Huihui-Qwen3.8-27B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/JuggaHO/Huihui-Qwen3.8-27B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio original citado en la model card: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Técnica de abliteración (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers

@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devtcpip/cutewallet-voice
+- Modelo en Hugging Face: https://huggingface.co/devtcpip/cutewallet-voice
 - Modelo fuente ingles: https://huggingface.co/kyutai/pocket-tts
 - Modelo fuente turco: https://huggingface.co/wite-tech/pocket-tts-turkish

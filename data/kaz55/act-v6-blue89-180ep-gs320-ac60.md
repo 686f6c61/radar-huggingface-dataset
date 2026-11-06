@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `act-v6-blue89-180ep-gs320-ac60` es una política de manipulación robótica basada en la arquitectura ACT (Action Chunking with Transformers), desarrollada por Kaz55 y publicada en HuggingFace bajo la librería `lerobot`. Está diseñada para controlar un brazo robótico UR5e utilizando retroalimentación multimodal, combinando el estado articular del robot, dos cámaras Intel RealSense y dos sensores táctiles GelSight. Su propósito es ejecutar tareas de manipulación de precisión mediante aprendizaje por imitación a partir de demostraciones teleoperadas.
+El modelo `act-v6-blue89-180ep-gs320-ac60` es una política de manipulación robótica basada en la arquitectura ACT (Action Chunking with Transformers), desarrollada por Kaz55 y publicada en Hugging Face bajo la librería `lerobot`. Está diseñada para controlar un brazo robótico UR5e utilizando retroalimentación multimodal, combinando el estado articular del robot, dos cámaras Intel RealSense y dos sensores táctiles GelSight. Su propósito es ejecutar tareas de manipulación de precisión mediante aprendizaje por imitación a partir de demostraciones teleoperadas.
 
 La arquitectura transforma las observaciones en secuencias de acciones de bajo nivel. Concretamente, predice bloques de 60 pasos de acción (`chunk_size=60`), lo que permite una ejecución reactiva sin re-planificación continua. El modelo fue entrenado sobre un dataset de 180 episodios (208.109 frames) durante 100.000 pasos de optimización, con `batch size` 8 y `seed` 1000. Tiene 51.668.634 parámetros y un tamaño de repositorio de 0,2 GB en formato `safetensors`.
 
@@ -95,5 +95,5 @@ Estas pérdidas no son comparables con otros *sweeps* y no evidencian una mejora
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-v6-blue89-180ep-gs320-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-v6-blue89-180ep-gs320-ac60
 - Dataset asociado: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_v6_blue89_180ep_gs320

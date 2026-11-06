@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IndependentMonarch/tool-selection-bi-encoders
+- Repositorio en Hugging Face: https://huggingface.co/IndependentMonarch/tool-selection-bi-encoders
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

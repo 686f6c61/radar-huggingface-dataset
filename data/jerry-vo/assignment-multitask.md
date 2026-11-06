@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jerry-vo/assignment-multitask` es un repositorio de HuggingFace publicado por el usuario jerry-vo que contiene una implementacion propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a escenarios multitarea. No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se declara explicitamente como una inicializacion valida para pruebas, no como un checkpoint con benchmarks.
+`jerry-vo/assignment-multitask` es un repositorio de Hugging Face publicado por el usuario jerry-vo que contiene una implementacion propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a escenarios multitarea. No se trata de un modelo entrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se declara explicitamente como una inicializacion valida para pruebas, no como un checkpoint con benchmarks.
 
 El dato mas relevante para evaluarlo es su tamano: 24.832 parametros totales segun el fichero safetensors, lo que equivale a unas 25.000 parametros. Es un orden de magnitud entre tres y cuatro veces menor que los modelos CLIP de referencia (decenas o cientos de millones de parametros), por lo que su utilidad practica esta en el terreno didactico y de infraestructura, no en el de la inferencia real sobre tareas de vision-lenguaje.
 
@@ -21,7 +21,7 @@ El repositorio incluye un script de pipeline ejecutable, un `config.json` con la
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion) |
 
-Otros parametros de arquitectura declarados por el autor en la model card: escala "nano", atencion con kernels flash, fusion de modalidades mediante "gated fusion", activacion aproximada a GELU (approx gelu) y normalizacion por instancias (instancenorm). El repositorio ocupa 0,0 GB y no declara pipeline de HuggingFace ni idiomas. Fecha de creacion registrada: 2026-10-08; ultima actualizacion: 2026-10-08. Descargas y likes: 0.
+Otros parametros de arquitectura declarados por el autor en la model card: escala "nano", atencion con kernels flash, fusion de modalidades mediante "gated fusion", activacion aproximada a GELU (approx gelu) y normalizacion por instancias (instancenorm). El repositorio ocupa 0,0 GB y no declara pipeline de Hugging Face ni idiomas. Fecha de creacion registrada: 2026-10-08; ultima actualizacion: 2026-10-08. Descargas y likes: 0.
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ Los valores de referencia de la columna de alternativas corresponden a especific
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jerry-vo/assignment-multitask | 24.832 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| jerry-vo/assignment-multitask | 24.832 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-B/32 | ~151 M | 77 tokens de texto | zero-shot competitivo en ImageNet y retrieval | MIT (pesos publicados por OpenAI) | ampliamente disponible |
 | OpenAI CLIP ViT-L/14 | ~428 M | 77 tokens de texto | superior a ViT-B/32 en zero-shot y retrieval | MIT | ampliamente disponible |
-| SigLIP base | ~203 M | mayor que CLIP estandar en texto | mejora a CLIP en clasificacion zero-shot | Apache 2.0 (variantes) | disponible en HuggingFace |
+| SigLIP base | ~203 M | mayor que CLIP estandar en texto | mejora a CLIP en clasificacion zero-shot | Apache 2.0 (variantes) | disponible en Hugging Face |
 
 La diferencia de escala es de tres a cuatro ordenes de magnitud en numero de parametros, por lo que la comparativa solo tiene sentido como referencia de categoria, no como competencia directa.
 
@@ -87,11 +87,11 @@ La diferencia de escala es de tres a cuatro ordenes de magnitud en numero de par
 - No se documentan idiomas soportados ni limitaciones de contexto; la longitud de contexto no esta disponible.
 - Restricciones de licencia: Apache 2.0 permite uso comercial del codigo, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - No es un modelo de lenguaje: no genera texto ni soporta tool calling, agentes o razonamiento multi-paso.
-- La carga mediante APIs automaticas de HuggingFace requiere un adaptador explicito; no hay `pipeline` declarado.
+- La carga mediante APIs automaticas de Hugging Face requiere un adaptador explicito; no hay `pipeline` declarado.
 - La fecha de creacion registrada (2026-10-08) es posterior a la fecha actual de consulta, lo que sugiere un error de metadatos del repositorio y refuerza la conveniencia de tratar el artefacto con cautela.
 - Los resultados de un futuro checkpoint entrenado deberan documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerry-vo/assignment-multitask
+- Modelo en Hugging Face: https://huggingface.co/jerry-vo/assignment-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de codigo ni a demos. Los resultados devueltos corresponden a contenido no relacionado (la serie de animacion Tom y Jerry) y se descartan por completo.

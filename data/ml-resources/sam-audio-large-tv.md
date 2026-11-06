@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sam-audio-large-tv
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sam-audio-large-tv
 - Repositorio oficial: https://huggingface.co/facebook/sam-audio-large
 - Variante oficial del espejo: https://huggingface.co/facebook/sam-audio-large-tv
 - Blog de Meta sobre SAM-Audio: https://ai.meta.com/blog/sam-audio/

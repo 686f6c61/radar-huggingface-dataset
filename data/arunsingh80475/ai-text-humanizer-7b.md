@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `arunsingh80475/ai-text-humanizer-7b` es un adaptador LoRA (Low-Rank Adaptation) diseñado para transformar texto generado por inteligencia artificial en texto con apariencia más humana y natural. Está desarrollado por el usuario de HuggingFace `arunsingh80475` y se basa en el modelo base `unsloth/Qwen2.5-7B-bnb-4bit`, una versión cuantizada a 4 bits del popular Qwen2.5-7B. El adaptador se entrenó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas que suele emplearse en el ajuste fino por refuerzo.
+El modelo `arunsingh80475/ai-text-humanizer-7b` es un adaptador LoRA (Low-Rank Adaptation) diseñado para transformar texto generado por inteligencia artificial en texto con apariencia más humana y natural. Está desarrollado por el usuario de Hugging Face `arunsingh80475` y se basa en el modelo base `unsloth/Qwen2.5-7B-bnb-4bit`, una versión cuantizada a 4 bits del popular Qwen2.5-7B. El adaptador se entrenó mediante GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas que suele emplearse en el ajuste fino por refuerzo.
 
 El modelo aborda el problema de la detección de texto generado por IA, un área de creciente interés en entornos académicos, editoriales y profesionales. Al "humanizar" el texto, se busca reducir los patrones típicos que delatan el origen sintético, como la excesiva fluidez, la estructura repetitiva o la falta de variación léxica. Su relevancia actual radica en la proliferación de herramientas de detección de IA y en la necesidad de producir contenido que supere estos filtros manteniendo la calidad.
 
-El repositorio tiene un tamaño de 0,3 GB y contiene únicamente los pesos del adaptador PEFT, no el modelo completo. La ficha del modelo en HuggingFace está prácticamente vacía: no se especifican licencia, idiomas, ni detalles de entrenamiento más allá de los tags técnicos. No se han publicado benchmarks ni evaluaciones independientes.
+El repositorio tiene un tamaño de 0,3 GB y contiene únicamente los pesos del adaptador PEFT, no el modelo completo. La ficha del modelo en Hugging Face está prácticamente vacía: no se especifican licencia, idiomas, ni detalles de entrenamiento más allá de los tags técnicos. No se han publicado benchmarks ni evaluaciones independientes.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos humanizadores comparables en el repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arunsingh80475/ai-text-humanizer-7b
+- Hugging Face: https://huggingface.co/arunsingh80475/ai-text-humanizer-7b
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-bnb-4bit
 - Paper de GRPO (referencia indirecta): https://arxiv.org/abs/1910.09700 (citado en los tags, aunque corresponde a Lacoste et al. sobre impacto ambiental, no a GRPO)
 - No se han encontrado otros enlaces relevantes (repositorio, demo, paper del adaptador) en la información disponible.

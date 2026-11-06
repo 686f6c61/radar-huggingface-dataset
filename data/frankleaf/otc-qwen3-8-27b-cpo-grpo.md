@@ -91,7 +91,7 @@ No se conocen modelos comparables de terceros con evaluaciones directamente equi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankleaf/OTC-Qwen3.8-27B-CPO-GRPO
+- Modelo en Hugging Face: https://huggingface.co/frankleaf/OTC-Qwen3.8-27B-CPO-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Registro de evaluación por muestra: https://huggingface.co/frankleaf/OTC-Qwen3.8-27B-CPO-GRPO/blob/main/evaluation/co-solved-compression.json
 - Configuración de entrenamiento: https://huggingface.co/frankleaf/OTC-Qwen3.8-27B-CPO-GRPO/blob/main/training/config.json

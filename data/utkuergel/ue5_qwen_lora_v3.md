@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: no disponible. El modelo base es de 7B con cuantización de 4 bits, lo que sugiere que puede caber en GPUs de consumo con 8-10 GB de VRAM, pero no se confirma.
 - **GPU recomendadas**: no disponible.
 - **Compatibilidad con consumer GPUs**: probablemente sí (por ejemplo, RTX 3060 o superior), pero no está confirmado.
-- **Opciones de despliegue**: no se indica. Dado que es un adaptador LoRA, se puede cargar con la librería Transformers de HuggingFace sobre el modelo base, o mediante servidores compatibles con TGI (el tag incluye `text-generation-inference`), pero no se dan instrucciones concretas.
+- **Opciones de despliegue**: no se indica. Dado que es un adaptador LoRA, se puede cargar con la librería Transformers de Hugging Face sobre el modelo base, o mediante servidores compatibles con TGI (el tag incluye `text-generation-inference`), pero no se dan instrucciones concretas.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No disponible. No se han proporcionado modelos comparables ni datos de rendimien
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/utkuergel/ue5_qwen_lora_v3)
+- [Hugging Face del modelo](https://huggingface.co/utkuergel/ue5_qwen_lora_v3)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Página del modelo base unsloth/Qwen2.5-Coder-7B-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Coder-7B-bnb-4bit) (no enlazado directamente, pero se puede buscar)

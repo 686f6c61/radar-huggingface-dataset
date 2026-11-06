@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, H
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| abhirajratna/anlp-a2-optim-sophia | 33,6 M | no disponible | no disponible | HuggingFace, carga con codigo propio | Transformer decoder denso en ingles, 1 epoca, BLEU 3,85 |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace / transformers | Referencia clasica de la misma familia arquitectonica, mayor tamano y contexto documentado |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace / transformers | Suite de modelos pequenos con checkpoints intermedios y licencia permisiva |
+| abhirajratna/anlp-a2-optim-sophia | 33,6 M | no disponible | no disponible | Hugging Face, carga con codigo propio | Transformer decoder denso en ingles, 1 epoca, BLEU 3,85 |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face / transformers | Referencia clasica de la misma familia arquitectonica, mayor tamano y contexto documentado |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face / transformers | Suite de modelos pequenos con checkpoints intermedios y licencia permisiva |
 
 La comparacion de rendimiento con estos modelos no es posible: no hay resultados de benchmarks comunes publicados para `anlp-a2-optim-sophia`, y el BLEU reportado (3,85) no es directamente comparable con las metricas habituales de GPT-2 small o Pythia-70M. No se dispone de datos de contexto, tokenizador o licencia que permitan una comparacion completa.
 
@@ -87,12 +87,12 @@ La comparacion de rendimiento con estos modelos no es posible: no hay resultados
 - Sin ficha de sesgos ni evaluacion de seguridad: al entrenarse sobre un corpus humano-IA en ingles, es probable que reproduzca sesgos presentes en esos datos, sin filtrado documentado.
 - Riesgo de alucinacion alto y no mitigado: no hay RLHF, DPO ni tecnicas de alineamiento.
 - Integracion limitada: la carga requiere codigo propio del repositorio y no es compatible de forma directa con el flujo estandar de `AutoModelForCausalLM`; no se publican pesos en GGUF ni artefactos para servidores de inferencia.
-- Cero descargas y cero "likes" en HuggingFace: no existe validacion por parte de la comunidad ni informes independientes de comportamiento.
+- Cero descargas y cero "likes" en Hugging Face: no existe validacion por parte de la comunidad ni informes independientes de comportamiento.
 - Naturaleza academica (asignatura ANLP, Parte 2): el artefacto esta pensado para evaluar optimizadores, no para ser desplegado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-optim-sophia
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-optim-sophia
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper del optimizador Sophia (referencia del metodo Sophia-H): https://arxiv.org/abs/2307.06419
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al proyecto; las busquedas devolvieron contenido sin relacion con el modelo.

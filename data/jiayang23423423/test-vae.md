@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jiayang23423423/test-vae` es un repositorio alojado en HuggingFace que, según su nombre, parece ser una prueba de un autoencoder variacional (VAE). Sin embargo, la información disponible es mínima: no hay documentación técnica, ni descripción de arquitectura, ni datos de entrenamiento. El modelo tiene un total de 28.103 parámetros, un tamaño extremadamente reducido que indica que se trata de un artefacto de prueba, probablemente creado para validar la integración de `PytorchModelHubMixin`. No hay indicios de que sea un modelo funcional para tareas reales de generación, razonamiento o procesamiento de lenguaje. La model card solo contiene marcadores de "More Information Needed", y el repositorio no presenta descargas ni likes. En consecuencia, su relevancia es nula para desarrolladores e investigadores que buscan modelos productivos.
+El modelo `jiayang23423423/test-vae` es un repositorio alojado en Hugging Face que, según su nombre, parece ser una prueba de un autoencoder variacional (VAE). Sin embargo, la información disponible es mínima: no hay documentación técnica, ni descripción de arquitectura, ni datos de entrenamiento. El modelo tiene un total de 28.103 parámetros, un tamaño extremadamente reducido que indica que se trata de un artefacto de prueba, probablemente creado para validar la integración de `PytorchModelHubMixin`. No hay indicios de que sea un modelo funcional para tareas reales de generación, razonamiento o procesamiento de lenguaje. La model card solo contiene marcadores de "More Information Needed", y el repositorio no presenta descargas ni likes. En consecuencia, su relevancia es nula para desarrolladores e investigadores que buscan modelos productivos.
 
 ## Especificaciones técnicas
 
@@ -31,18 +31,18 @@ No se encuentra información sobre la arquitectura interna del modelo en la mode
 - Soporte de agentes: no disponible.
 - Capacidades multilingües: no disponible.
 
-Dado el tamaño de 28.103 parámetros, el modelo no puede albergar capacidades de propósito general. Es probable que sea un modelo mínimo para validar el proceso de subida de pesos a HuggingFace, y no un modelo entrenado para ninguna tarea específica.
+Dado el tamaño de 28.103 parámetros, el modelo no puede albergar capacidades de propósito general. Es probable que sea un modelo mínimo para validar el proceso de subida de pesos a Hugging Face, y no un modelo entrenado para ninguna tarea específica.
 
 ## Casos de uso
 
 No se han documentado casos de uso. No obstante, a partir del tamaño y del formato, se pueden plantear usos exploratorios en entornos de desarrollo:
 
-- Pruebas de integración con HuggingFace Hub: el modelo puede utilizarse para verificar que los safetensors se cargan correctamente a través de `PytorchModelHubMixin` en un pipeline de CI/CD.
+- Pruebas de integración con Hugging Face Hub: el modelo puede utilizarse para verificar que los safetensors se cargan correctamente a través de `PytorchModelHubMixin` en un pipeline de CI/CD.
 - Ejemplo mínimo de autoencoder variacional en docencia: los 28.103 parámetros permiten ilustrar la estructura de un VAE en un tutorial, aunque no se incluye código de entrenamiento.
 - Depuración de infraestructura de inferencia: al ser tan pequeño, permite comprobar la carga de pesos en diferentes versiones de PyTorch sin preocuparse por la memoria.
 - Validación de cuantización: aunque no se han publicado cuantizaciones, el formato safetensors es compatible con herramientas de conversión, por lo que podría usarse para probar flujos de cuantización experimentales.
 - Estudio de sobreajuste en modelos minimalistas: podría servir para evaluar efectos de regularización en datasets sintéticos, pero no hay datos de entrenamiento publicados.
-- Registro de artefactos en HuggingFace: sirve como ejemplo de un modelo sin documentación, y no es adecuado para ningún uso productivo.
+- Registro de artefactos en Hugging Face: sirve como ejemplo de un modelo sin documentación, y no es adecuado para ningún uso productivo.
 
 ## Benchmarks y rendimiento
 
@@ -70,4 +70,4 @@ No se han identificado modelos comparables en la información proporcionada, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiayang23423423/test-vae
+- Hugging Face: https://huggingface.co/jiayang23423423/test-vae

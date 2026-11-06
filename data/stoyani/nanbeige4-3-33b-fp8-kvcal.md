@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos de otros desarrolladores en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stoyani/Nanbeige4.3-33B-FP8-KVcal
+- Modelo en Hugging Face: https://huggingface.co/stoyani/Nanbeige4.3-33B-FP8-KVcal
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Checkpoint FP8 base: https://huggingface.co/primitive-ai/Nanbeige4.3-33B-FP8/tree/0140c157bc44507929a742c220865b0870052552
 - Issue de vLLM #63043: https://github.com/vllm-project/vllm/issues/63043

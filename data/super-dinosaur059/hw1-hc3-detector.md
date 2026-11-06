@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Super-Dinosaur059/hw1-hc3-detector` es un clasificador de secuencias basado en BERT (variante MiniLM) publicado en HuggingFace por el usuario Super-Dinosaur059. Su tarea es la clasificación binaria de respuestas en inglés: distinguir entre respuestas escritas por personas y respuestas generadas por ChatGPT. Se trata de un modelo de tamaño reducido, con 22.713.986 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU o en GPUs de consumo.
+El modelo `Super-Dinosaur059/hw1-hc3-detector` es un clasificador de secuencias basado en BERT (variante MiniLM) publicado en Hugging Face por el usuario Super-Dinosaur059. Su tarea es la clasificación binaria de respuestas en inglés: distinguir entre respuestas escritas por personas y respuestas generadas por ChatGPT. Se trata de un modelo de tamaño reducido, con 22.713.986 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU o en GPUs de consumo.
 
 El modelo parece corresponder a un trabajo academico (el identificador `hw1_hc3` y el notebook `hw1_hc3.ipynb` citado en la model card apuntan a una practica de curso) y no a un lanzamiento de produccion de un laboratorio. Su relevancia es por tanto limitada y de caracter experimental o educativo: sirve como ejemplo reproducible de fine-tuning de un encoder pequeno para deteccion de texto generado por IA, una tarea con interes creciente en moderacion de contenido, integridad academica y filtrado de datos.
 
-El dato mas destacable es su rendimiento declarado en el conjunto de prueba retenido: 98,50 % de exactitud frente al 84,49 % de una linea base con embeddings congelados y regresion logistica, lo que supone una mejora de 14,01 puntos porcentuales. No se especifica licencia, idiomas soportados ni pipeline de HuggingFace, lo que limita su uso directo en produccion sin aclaraciones previas del autor.
+El dato mas destacable es su rendimiento declarado en el conjunto de prueba retenido: 98,50 % de exactitud frente al 84,49 % de una linea base con embeddings congelados y regresion logistica, lo que supone una mejora de 14,01 puntos porcentuales. No se especifica licencia, idiomas soportados ni pipeline de Hugging Face, lo que limita su uso directo en produccion sin aclaraciones previas del autor.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El dato mas destacable es su rendimiento declarado en el conjunto de prueba rete
 | Idiomas soportados | no disponible (el dataset HC3 empleado en la evaluacion es en ingles) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Tarea | Clasificacion binaria (respuesta humana vs. respuesta ChatGPT) |
 | Descargas / likes | 0 descargas / 1 like |
@@ -36,7 +36,7 @@ La tarea de clasificacion es binaria: la etiqueta "human" frente a la etiqueta "
 - Clasificacion binaria de texto: determina si una respuesta dada es de origen humano o generada por ChatGPT.
 - Deteccion de texto sintetico en el dominio del dataset de evaluacion (respuestas tipo pregunta-respuesta en ingles, presumiblemente HC3).
 - Inferencia ligera: con 22,7 M de parametros puede ejecutarse en CPU sin GPU dedicada.
-- Salida de probabilidades por clase mediante la cabeza de clasificacion de HuggingFace, lo que permite fijar umbrales de decision personalizados.
+- Salida de probabilidades por clase mediante la cabeza de clasificacion de Hugging Face, lo que permite fijar umbrales de decision personalizados.
 - No dispone de generacion de texto: es un modelo exclusivamente discriminativo.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
@@ -89,7 +89,7 @@ No se dispone de resultados de rendimiento de los modelos comparables sobre la m
 
 | Modelo | Parametros | Contexto maximo tipico | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw1-hc3-detector (este modelo) | 22,7 M | no disponible | Clasificacion humana vs. ChatGPT | no disponible | HuggingFace, safetensors |
+| hw1-hc3-detector (este modelo) | 22,7 M | no disponible | Clasificacion humana vs. ChatGPT | no disponible | Hugging Face, safetensors |
 | MiniLM-L6-v2 (encoder base sobre el que se construye) | 22,7 M | 512 tokens (segun el modelo base; no confirmado para este fine-tuning) | Embeddings de frases / encoder general | Apache 2.0 (habitual en la familia MiniLM; no confirmado en este repositorio) | Ampliamente disponible |
 | DistilBERT-base | 66 M | 512 tokens | Encoder general / clasificacion | Apache 2.0 | Ampliamente disponible |
 | RoBERTa-base | 125 M | 512 tokens | Encoder general / clasificacion | MIT | Ampliamente disponible |
@@ -111,7 +111,7 @@ Rendimiento comparado: no disponible. El autor solo compara contra su propia lin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Super-Dinosaur059/hw1-hc3-detector
-- Repositorio de pesos: incluido en la misma pagina de HuggingFace (formato safetensors, 0,1 GB).
+- Hugging Face: https://huggingface.co/Super-Dinosaur059/hw1-hc3-detector
+- Repositorio de pesos: incluido en la misma pagina de Hugging Face (formato safetensors, 0,1 GB).
 - Notebook de entrenamiento y evaluacion: `hw1_hc3.ipynb`, citado en la model card pero sin enlace publico disponible.
 - Paper, blog o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a cadenas de supermercados francesas y a un portal municipal, sin ninguna conexion con este repositorio.

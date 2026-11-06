@@ -63,9 +63,9 @@ No se publican en el repositorio los resultados numéricos agregados de los benc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K | Apache 2.0 | HuggingFace | Modelo base, no fine-tuning específico de matemáticas |
-| arkilpatel/qwen2p5-1p5b-traj | 1.5B | no especificado | Apache 2.0 | HuggingFace | 176 checkpoints intermedios + final, con datos de evaluación |
-| Otros fine-tunes de Qwen2.5-1.5B matemáticos | 1.5B | variable | variable | HuggingFace | No hay información específica en los datos proporcionados |
+| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K | Apache 2.0 | Hugging Face | Modelo base, no fine-tuning específico de matemáticas |
+| arkilpatel/qwen2p5-1p5b-traj | 1.5B | no especificado | Apache 2.0 | Hugging Face | 176 checkpoints intermedios + final, con datos de evaluación |
+| Otros fine-tunes de Qwen2.5-1.5B matemáticos | 1.5B | variable | variable | Hugging Face | No hay información específica en los datos proporcionados |
 
 La principal diferencia con un modelo final es que este repositorio no ofrece un único modelo, sino una serie temporal de modelos con sus evaluaciones, lo que lo hace útil para investigación, no para despliegue en producción.
 
@@ -81,7 +81,7 @@ La principal diferencia con un modelo final es que este repositorio no ofrece un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/qwen2p5-1p5b-traj
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/qwen2p5-1p5b-traj
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Página personal del autor: https://arkilpatel.github.io/
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=-5goVAsAAAAJ&hl=en

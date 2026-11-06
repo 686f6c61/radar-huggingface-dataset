@@ -2,7 +2,7 @@
 
 ## Resumen
 
-andreoi/payd es un repositorio publicado en HuggingFace por el usuario andreoi del que no se dispone de informacion tecnica sustantiva. La model card asociada unicamente declara la licencia creativeml-openrail-m y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
+andreoi/payd es un repositorio publicado en Hugging Face por el usuario andreoi del que no se dispone de informacion tecnica sustantiva. La model card asociada unicamente declara la licencia creativeml-openrail-m y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
 
 En el momento de redactar esta ficha no es posible determinar que tipo de modelo es, que problema resuelve ni por que seria relevante. La ausencia de pipeline, de idiomas declarados y de cualquier especificacion impide clasificarlo como modelo de lenguaje, de vision, de difusion o de otra naturaleza. La unica senal disponible es la licencia CreativeML OpenRAIL-M, habitualmente empleada en modelos generativos de imagen derivados de la familia Stable Diffusion, pero se trata de una inferencia no confirmada por el autor.
 
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andreoi/payd
+- Hugging Face: https://huggingface.co/andreoi/payd
 - Model card: https://huggingface.co/andreoi/payd/raw/main/README.md
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados obtenidos corresponden a sitios de restauracion de pizza y no guardan relacion con andreoi/payd.

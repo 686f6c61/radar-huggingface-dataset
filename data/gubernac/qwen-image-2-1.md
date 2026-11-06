@@ -73,10 +73,10 @@ No se proporcionan datos de benchmarks ni fichas comparativas en la informacion 
 
 | Modelo | Tipo | Tamano | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 | DiT texto-a-imagen y edicion, con RGBA nativo | ~7,1B (componente de generacion) | Hasta 10 imagenes de referencia, 7 relaciones de aspecto | qwen-research (uso de investigacion) | HuggingFace (repositorio espejo consultado), ModelScope, demo en Spaces |
-| Qwen-Image (version previa) | DiT texto-a-imagen y edicion | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | HuggingFace (repositorio Qwen) |
-| FLUX.1 [dev] | DiT texto-a-imagen y edicion | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | HuggingFace |
-| Stable Diffusion 3.5 Large | DiT / MMDiT texto-a-imagen | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | HuggingFace |
+| Qwen-Image-2.1 | DiT texto-a-imagen y edicion, con RGBA nativo | ~7,1B (componente de generacion) | Hasta 10 imagenes de referencia, 7 relaciones de aspecto | qwen-research (uso de investigacion) | Hugging Face (repositorio espejo consultado), ModelScope, demo en Spaces |
+| Qwen-Image (version previa) | DiT texto-a-imagen y edicion | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | Hugging Face (repositorio Qwen) |
+| FLUX.1 [dev] | DiT texto-a-imagen y edicion | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | Hugging Face |
+| Stable Diffusion 3.5 Large | DiT / MMDiT texto-a-imagen | No disponible en la informacion aportada | No disponible | No disponible en la informacion aportada | Hugging Face |
 
 Los datos de parametros, contexto y rendimiento de los modelos alternativos no estan incluidos en la informacion proporcionada; se indica "no disponible" en lugar de estimarlos.
 
@@ -96,10 +96,10 @@ Los datos de parametros, contexto y rendimiento de los modelos alternativos no e
 ## Enlaces
 
 - Repositorio analizado (espejo): https://huggingface.co/gubernac/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord: https://discord.gg/CV4E9rpNSD
 - Documentacion de diffusers: https://github.com/huggingface/diffusers

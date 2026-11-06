@@ -58,7 +58,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-El autor únicamente reporta una comprobación numérica del camino de commit de la caché KV frente a la referencia de HuggingFace (coseno ≈ 0,996, f16 frente a bf16), que no constituye un benchmark de calidad. Como referencia de rendimiento cualitativa, se indica que una ejecución de 256 tokens con decodificación por bloques, solo CPU, `-t 16` y fichero de 4,6 GB tarda "unos minutos", con `block_length` forwards por bloque.
+El autor únicamente reporta una comprobación numérica del camino de commit de la caché KV frente a la referencia de Hugging Face (coseno ≈ 0,996, f16 frente a bf16), que no constituye un benchmark de calidad. Como referencia de rendimiento cualitativa, se indica que una ejecución de 256 tokens con decodificación por bloques, solo CPU, `-t 16` y fichero de 4,6 GB tarda "unos minutos", con `block_length` forwards por bloque.
 
 ## Requisitos de hardware
 
@@ -94,7 +94,7 @@ Nota: los datos de las dos últimas filas no proceden de la información proporc
 - **Formato de chat estricto**: es obligatorio usar los tokens `[unused9]` y `[unused10]` en la posición correcta; un prompt mal formateado degrada la calidad de forma notable.
 - **Riesgo de alucinación**: inherente a un modelo de 8 B sin datos publicados de alineación o evaluación de seguridad; no se dispone de información sobre sesgos medidos.
 - **Validación comunitaria nula**: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia externa de funcionamiento más allá de la del autor.
-- **Trazabilidad de la fecha**: los metadatos de HuggingFace indican creación el 2026-10-18, dato que conviene contrastar antes de citarlo.
+- **Trazabilidad de la fecha**: los metadatos de Hugging Face indican creación el 2026-10-18, dato que conviene contrastar antes de citarlo.
 
 ## Enlaces
 

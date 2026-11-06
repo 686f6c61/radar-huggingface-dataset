@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/rotary` no es un modelo de lenguaje, sino un paquete de kernels de cómputo publicado en el Hub de HuggingFace bajo la librería `kernels`. Concretamente, implementa la operación de rotary positional embedding (RoPE) aplicada sobre los tensores de query y key en mecanismos de atención, una pieza presente en prácticamente todas las arquitecturas transformer modernas (Llama, Mistral, Qwen, etc.). El repositorio expone dos funciones: `apply_rotary` y `apply_rotary_transformers`.
+`replicate/rotary` no es un modelo de lenguaje, sino un paquete de kernels de cómputo publicado en el Hub de Hugging Face bajo la librería `kernels`. Concretamente, implementa la operación de rotary positional embedding (RoPE) aplicada sobre los tensores de query y key en mecanismos de atención, una pieza presente en prácticamente todas las arquitecturas transformer modernas (Llama, Mistral, Qwen, etc.). El repositorio expone dos funciones: `apply_rotary` y `apply_rotary_transformers`.
 
-El paquete está pensado para consumirse con la librería `kernels` de HuggingFace, que permite descargar y cargar kernels precompilados para distintos backends y versiones de framework sin necesidad de compilar desde fuente. El repositorio ocupa 0,4 GB, lo que es coherente con un paquete que incluye artefactos binarios precompilados para varias combinaciones de dispositivo y versión de biblioteca.
+El paquete está pensado para consumirse con la librería `kernels` de Hugging Face, que permite descargar y cargar kernels precompilados para distintos backends y versiones de framework sin necesidad de compilar desde fuente. El repositorio ocupa 0,4 GB, lo que es coherente con un paquete que incluye artefactos binarios precompilados para varias combinaciones de dispositivo y versión de biblioteca.
 
-Es relevante ahora porque forma parte de la estrategia de HuggingFace de distribuir kernels optimizados como artefactos versionados en el Hub. La model card incluye un aviso importante: a partir del 13 de septiembre de 2026 se eliminarán los repositorios de kernels con tipo "model", por lo que es necesario usar una versión reciente de la librería `kernels`. No se trata, en ningún caso, de un modelo generativo y no debe evaluarse como tal.
+Es relevante ahora porque forma parte de la estrategia de Hugging Face de distribuir kernels optimizados como artefactos versionados en el Hub. La model card incluye un aviso importante: a partir del 13 de septiembre de 2026 se eliminarán los repositorios de kernels con tipo "model", por lo que es necesario usar una versión reciente de la librería `kernels`. No se trata, en ningún caso, de un modelo generativo y no debe evaluarse como tal.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Es relevante ahora porque forma parte de la estrategia de HuggingFace de distrib
 
 No hay arquitectura de red neuronal ni proceso de entrenamiento asociado. `rotary` es una implementación de kernel de la transformación RoPE (rotary positional embedding), que rota pares de dimensiones de los tensores de query y key con frecuencias dependientes de la posición, inyectando información posicional relativa en el mecanismo de atención. La variante `apply_rotary_transformers` indica compatibilidad con la firma utilizada habitualmente por la librería Transformers, lo que facilita sustituir la implementación de referencia por esta versión optimizada.
 
-El repositorio se distribuye a través del sistema de kernels de HuggingFace, que resuelve en tiempo de carga el binario adecuado según el dispositivo, la versión de PyTorch u otro framework y el backend disponible. No se documenta en la información proporcionada qué backends concretos están cubiertos (CUDA, ROCm, CPU, Metal), ni el número de tokens o composición de dataset alguno, porque no aplica: no existe entrenamiento, RLHF ni DPO. La model card indica que existe un script de benchmark asociado al kernel, ejecutable mediante `kernels benchmark`, pero no publica resultados.
+El repositorio se distribuye a través del sistema de kernels de Hugging Face, que resuelve en tiempo de carga el binario adecuado según el dispositivo, la versión de PyTorch u otro framework y el backend disponible. No se documenta en la información proporcionada qué backends concretos están cubiertos (CUDA, ROCm, CPU, Metal), ni el número de tokens o composición de dataset alguno, porque no aplica: no existe entrenamiento, RLHF ni DPO. La model card indica que existe un script de benchmark asociado al kernel, ejecutable mediante `kernels benchmark`, pero no publica resultados.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Tipo | Licencia | Disponibilidad | Datos comparables |
 |---|---|---|---|---|
-| replicate/rotary | Kernel precompilado de rotary embedding vía libreria `kernels` | BSD-3-Clause | Hub de HuggingFace, libreria `kernels` | No disponible |
-| kernels-community/rotary | Kernel de rotary publicado por la comunidad de kernels (referenciado en la propia model card) | no disponible | Hub de HuggingFace, libreria `kernels` | No disponible |
+| replicate/rotary | Kernel precompilado de rotary embedding vía libreria `kernels` | BSD-3-Clause | Hub de Hugging Face, libreria `kernels` | No disponible |
+| kernels-community/rotary | Kernel de rotary publicado por la comunidad de kernels (referenciado en la propia model card) | no disponible | Hub de Hugging Face, libreria `kernels` | No disponible |
 | Implementacion de referencia en Transformers (`apply_rotary_pos_emb`) | Función Python/PyTorch incluida en la librería | Apache-2.0 (segun la licencia de Transformers) | Incluida en la instalación de Transformers | No disponible |
-| kernels-community/flash-attn3 | Kernel de atención citado en el aviso de la model card como ejemplo de repositorio afectado por la retirada | no disponible | Hub de HuggingFace, libreria `kernels` | No disponible |
+| kernels-community/flash-attn3 | Kernel de atención citado en el aviso de la model card como ejemplo de repositorio afectado por la retirada | no disponible | Hub de Hugging Face, libreria `kernels` | No disponible |
 
 No se dispone de cifras de rendimiento de ninguna de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -93,8 +93,8 @@ No se dispone de cifras de rendimiento de ninguna de las alternativas en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/rotary
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/rotary
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate (sitio principal): https://replicate.com/
 - Replicate en GitHub: https://github.com/replicate

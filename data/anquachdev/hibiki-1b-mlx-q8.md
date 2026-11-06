@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anquachdev/hibiki-1b-mlx-q8
+- Repositorio Hugging Face: https://huggingface.co/anquachdev/hibiki-1b-mlx-q8
 - Modelo base (bf16): https://huggingface.co/kyutai/hibiki-1b-mlx-bf16
 - Sitio web de Kyutai (organización desarrolladora): https://kyutai.org (enlace no verificado, se deduce de la autoría)

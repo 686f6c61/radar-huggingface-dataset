@@ -135,7 +135,7 @@ Los datos sugieren que la fusión mejora de forma apreciable las métricas de ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-1M-q8-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-1M-q8-mlx
 - Modelo base 1: https://huggingface.co/schneewolflabs/B0-9B
 - Modelo base 2: https://huggingface.co/inclusionAI/UI-Venus-2-9B
 - Modelo base 3: https://huggingface.co/OrionLLM/OxCoder-9B

@@ -81,10 +81,10 @@ La principal diferencia de esta versión frente a la fuente de LM Studio es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Susumu2026/gemma-4-31B-it-text-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Susumu2026/gemma-4-31B-it-text-MLX-4bit
 - Modelo base oficial de Google: https://huggingface.co/google/gemma-4-31B-it
 - Cuantización MLX 4-bit de LM Studio: https://huggingface.co/lmstudio-community/gemma-4-31B-it-MLX-4bit
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
-- Perfil de Google en HuggingFace: https://huggingface.co/google
-- Perfil de LM Studio community en HuggingFace: https://huggingface.co/lmstudio-community
+- Perfil de Google en Hugging Face: https://huggingface.co/google
+- Perfil de LM Studio community en Hugging Face: https://huggingface.co/lmstudio-community

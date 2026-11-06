@@ -84,8 +84,8 @@ Condiciones declaradas: upstream sin modificar `7de04fc11c6a692dfc5e1a86c7be817f
 
 | Modelo | Parámetros | Contexto | ParseBench (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KDL-Frontier-Parser-nano-v2 | ~1,2 B | 8192 (config. recomendada) | 78,96 (autoinformado, 1 pasada) | AGPL-3.0 | Pesos abiertos en HuggingFace |
-| KDL-Frontier-Parser-nano (v1) | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| KDL-Frontier-Parser-nano-v2 | ~1,2 B | 8192 (config. recomendada) | 78,96 (autoinformado, 1 pasada) | AGPL-3.0 | Pesos abiertos en Hugging Face |
+| KDL-Frontier-Parser-nano (v1) | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | KDL-Frontier-Parser-ultra | no disponible | no disponible | no disponible | no disponible | Solo vía DEEP Agent (servicio) |
 | Otros VLM de parseo documental de la misma franja (p. ej. modelos de 1-3 B tipo Qwen-VL) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ No se han proporcionado resultados de benchmarks de terceros en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2
+- Modelo en Hugging Face: https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2
 - Repositorio de archivos: https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2/tree/main
 - Resumen de validación ParseBench (dentro del repo): `evaluation/parsebench-20261028-gpu5.json`
 - Instrucciones de reproducción (dentro del repo): `evaluation/reproduce.md`

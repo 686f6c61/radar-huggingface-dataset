@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ewilson03/survey-lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es el archivo `reading.md`, que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno al tema del multimodal ligero (*lightweight multimodal*). La model card es explícita al señalar que no se presenta como un artículo completo ni como una release de modelos entrenados.
+`ewilson03/survey-lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es el archivo `reading.md`, que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación en torno al tema del multimodal ligero (*lightweight multimodal*). La model card es explícita al señalar que no se presenta como un artículo completo ni como una release de modelos entrenados.
 
 El repositorio incluye un archivo `safetensors` con 24.832 parámetros totales (aproximadamente 24,8 mil), un tamaño insignificante que no corresponde a un transformer funcional para generación de texto o visión, sino probablemente a un artefacto auxiliar o de prueba. El tamaño del repo es de 0,0 GB y las métricas de la comunidad son nulas (0 descargas, 0 likes), lo que es coherente con su naturaleza de nota de investigación y no de modelo desplegable.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental: sirve como punto de partida para verifi
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `transformer` aparece en HuggingFace, pero la model card no describe arquitectura de modelo) |
+| Arquitectura | no disponible (el tag `transformer` aparece en Hugging Face, pero la model card no describe arquitectura de modelo) |
 | Parámetros totales | 24.832 (según safetensors) |
 | Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -42,7 +42,7 @@ El único artefacto binario es un `safetensors` de 24.832 parámetros, sin infor
 - Verificación de hipótesis de investigación: la nota propone una hipótesis falsable y un plan de evaluación con baselines emparejados, lo que puede servir como plantilla metodológica para diseñar un experimento propio.
 - Planificación de evaluación reproducible: la model card exige que, si se añaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y logs en bruto; ese requisito puede reutilizarse como checklist en otros proyectos.
 - Docencia y formación: el documento puede usarse como ejemplo de cómo estructurar una nota de investigación con secciones de alcance, confounders, comprobaciones de reproducibilidad y cuestiones abiertas.
-- Auditoría de repositorios de HuggingFace: sirve como caso de estudio de repositorios etiquetados como modelos pero que en realidad son notas, útil para diseñar filtros de calidad en catálogos de modelos.
+- Auditoría de repositorios de Hugging Face: sirve como caso de estudio de repositorios etiquetados como modelos pero que en realidad son notas, útil para diseñar filtros de calidad en catálogos de modelos.
 - Referencia para selección de datasets públicos: la nota menciona benchmarks públicos apropiados a la tarea, que pueden orientar la elección de datos de evaluación en un estudio posterior.
 
 ## Benchmarks y rendimiento
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables porque el repositorio no es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ewilson03/survey-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/ewilson03/survey-lightweight-multimodal
 - Archivo principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)

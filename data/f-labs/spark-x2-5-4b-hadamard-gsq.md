@@ -107,7 +107,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/F-Labs/Spark-X2.5-4B-Hadamard-GSQ
+- Modelo en Hugging Face: https://huggingface.co/F-Labs/Spark-X2.5-4B-Hadamard-GSQ
 - Repositorio GitHub del autor: https://github.com/dsadawq3/Spark-X2.5-4B-Hadamard-GSQ
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Discusion de la comunidad (propuesta n. 14): https://huggingface.co/XHToken/Spark-X2.5-4B/discussions/14

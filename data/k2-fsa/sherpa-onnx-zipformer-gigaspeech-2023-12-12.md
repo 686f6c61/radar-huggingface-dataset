@@ -74,5 +74,5 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- [HuggingFace - k2-fsa/sherpa-onnx-zipformer-gigaspeech-2023-12-12](https://huggingface.co/k2-fsa/sherpa-onnx-zipformer-gigaspeech-2023-12-12)
+- [Hugging Face - k2-fsa/sherpa-onnx-zipformer-gigaspeech-2023-12-12](https://huggingface.co/k2-fsa/sherpa-onnx-zipformer-gigaspeech-2023-12-12)
 - [Repositorio sherpa-onnx (k2-fsa)](https://github.com/k2-fsa/sherpa-onnx) (inferido, no confirmado en la información proporcionada)

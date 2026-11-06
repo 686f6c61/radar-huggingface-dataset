@@ -113,7 +113,7 @@ La ventaja diferencial de la versión de Qualcomm frente a las implementaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Swin-Base
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Swin-Base
 - Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/swin_base
 - Repositorio Qualcomm AI Hub Models (Swin-Base): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/swin_base
 - Repositorio Qualcomm AI Hub Models (general): https://github.com/qualcomm/ai-hub-models

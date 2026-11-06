@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento del modelo Selene que permitan una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Selene-3B-Instruct-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Selene-3B-Instruct-i1-GGUF
 - Modelo base: https://huggingface.co/Syradevops/Selene-3B-Instruct
 - Cuantos estáticos del mismo autor: https://huggingface.co/mradermacher/Selene-3B-Instruct-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Selene-3B-Instruct-i1-GGUF

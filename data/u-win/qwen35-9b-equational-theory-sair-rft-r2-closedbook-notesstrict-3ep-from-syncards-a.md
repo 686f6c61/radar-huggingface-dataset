@@ -2,11 +2,11 @@
 
 ## Resumen
 
-U-WIN/qwen35-9b-equational-theory-sair-rft-r2-closedbook-notesstrict-3ep-from-syncards-a es un ajuste fino completo (full fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. El nombre del repositorio codifica la receta de entrenamiento: un ajuste supervisado (SFT) seguido de un proceso de Rejection Sampling Fine-Tuning (RFT) con regularización KL, ejecutado en tres épocas sobre un conjunto de datos derivado de "syncards" y orientado a la resolución de problemas de teoría ecuacional (equational theory) en modo closed-book, es decir, sin acceso a documentación externa durante la inferencia. El modelo conserva la modalidad image-text-to-text del modelo base, por lo que acepta tanto texto como imágenes como entrada.
+U-WIN/qwen35-9b-equational-theory-sair-rft-r2-closedbook-notesstrict-3ep-from-syncards-a es un ajuste fino completo (full fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. El nombre del repositorio codifica la receta de entrenamiento: un ajuste supervisado (SFT) seguido de un proceso de Rejection Sampling Fine-Tuning (RFT) con regularización KL, ejecutado en tres épocas sobre un conjunto de datos derivado de "syncards" y orientado a la resolución de problemas de teoría ecuacional (equational theory) en modo closed-book, es decir, sin acceso a documentación externa durante la inferencia. El modelo conserva la modalidad image-text-to-text del modelo base, por lo que acepta tanto texto como imágenes como entrada.
 
 Con 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB en formato safetensors, se trata de un modelo denso de tamaño medio que hereda la arquitectura y la ventana de contexto de Qwen3.5-9B. Su relevancia es acotada: no es un modelo de propósito general, sino un artefacto de investigación especializado en un dominio matemático muy concreto, entrenado con una metodología de RL ligera (RFT con muestreo por rechazo) que busca mejorar la corrección de las respuestas sin necesidad de un pipeline PPO completo.
 
-La licencia es Apache 2.0, pero el acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. El modelo registra un volumen de descargas muy bajo (2) y ninguna interacción social, lo que sugiere que se trata de un experimento reciente y de nicho, no de un checkpoint validado por la comunidad.
+La licencia es Apache 2.0, pero el acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. El modelo registra un volumen de descargas muy bajo (2) y ninguna interacción social, lo que sugiere que se trata de un experimento reciente y de nicho, no de un checkpoint validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ La comparación directa con alternativas de la misma categoría (fine-tunes de r
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga; no es un modelo de uso inmediato.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga; no es un modelo de uso inmediato.
 - Especialización estrecha: el ajuste se centra en teoría ecuacional; el rendimiento en tareas generales de conversación, código o matemáticas de otro tipo puede haberse degradado respecto al modelo base.
 - Riesgo de sobreajuste: tres épocas de full fine-tune sobre un dataset específico favorecen la memorización y la rigidez de formato, con posible pérdida de generalización.
 - Alucinación: en modo closed-book, el modelo puede generar derivaciones plausibles pero incorrectas sin señal de incertidumbre; no debe usarse como verificador único en producción sin comprobación formal.
@@ -86,7 +86,7 @@ La comparación directa con alternativas de la misma categoría (fine-tunes de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-r2-closedbook-notesstrict-3ep-from-syncards-a
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-r2-closedbook-notesstrict-3ep-from-syncards-a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/U-WIN
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

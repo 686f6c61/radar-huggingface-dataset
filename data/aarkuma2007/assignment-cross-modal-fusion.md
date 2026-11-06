@@ -78,7 +78,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino una nota de inve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aarkuma2007/assignment-cross-modal-fusion
+- Hugging Face: https://huggingface.co/aarkuma2007/assignment-cross-modal-fusion
 - Fichero principal del repositorio (citado en la model card): `analysis.md`
 - Documentación del repositorio (citada en la model card): `README.md`
 - Paper asociado: no disponible

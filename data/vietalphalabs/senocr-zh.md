@@ -84,8 +84,8 @@ Comparacion en chino (ZH) con otros modelos:
 
 | Modelo | Parametros | Contexto | Puntuacion ZH | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenOCR-Zh | 0,959B | no disponible | 85,19* | Apache 2.0 | HuggingFace |
-| PaddleOCR-VL-1.5 | no disponible | no disponible | 84,80 | no disponible | HuggingFace |
+| SenOCR-Zh | 0,959B | no disponible | 85,19* | Apache 2.0 | Hugging Face |
+| PaddleOCR-VL-1.5 | no disponible | no disponible | 84,80 | no disponible | Hugging Face |
 | dots.mocr | no disponible | no disponible | 84,60 | no disponible | no disponible |
 | MonkeyOCRv2-S-Parsing | no disponible | no disponible | 84,40 | no disponible | no disponible |
 | Gemini-3-pro-preview | no disponible | no disponible | 85,10 | propietaria | API |
@@ -106,7 +106,7 @@ SenOCR-Zh se posiciona como una alternativa ligera y de codigo abierto frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VietAlphaLabs/SenOCR-Zh
+- Modelo en Hugging Face: https://huggingface.co/VietAlphaLabs/SenOCR-Zh
 - Pagina de investigacion: https://vietalpha.org/research/senocr-zh
 - Organizacion VietAlphaLabs: https://huggingface.co/VietAlphaLabs
 - Documentacion de PaddleOCR-VL: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/pipeline_usage/PaddleOCR-VL.en.md

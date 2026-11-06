@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chow es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Chow`. La informacion disponible es extremadamente limitada: la model card del repositorio esta practicamente vacia y solo contiene la declaracion de licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+Chow es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Chow`. La informacion disponible es extremadamente limitada: la model card del repositorio esta practicamente vacia y solo contiene la declaracion de licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se ha declarado un pipeline de tarea en HuggingFace, lo que impide clasificar el modelo en una categoria funcional concreta (texto, vision, audio u otra). Los resultados de busqueda web asociados al identificador no contienen ninguna referencia tecnica al modelo: son paginas de naturaleza adulta sin relacion con el repositorio.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se ha declarado un pipeline de tarea en Hugging Face, lo que impide clasificar el modelo en una categoria funcional concreta (texto, vision, audio u otra). Los resultados de busqueda web asociados al identificador no contienen ninguna referencia tecnica al modelo: son paginas de naturaleza adulta sin relacion con el repositorio.
 
 Por todo ello, esta ficha se limita a documentar los pocos metadatos verificables y a senalar explicitamente que cualquier evaluacion tecnica seria requiere informacion adicional por parte del autor. Se recomienda prudencia antes de integrar este repositorio en cualquier flujo de trabajo.
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa. Se desconoce la categoria del modelo (
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,6 +95,6 @@ No es posible establecer una comparativa. Se desconoce la categoria del modelo (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Chow
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Chow
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo; las paginas devueltas no guardan relacion tecnica con el repositorio.

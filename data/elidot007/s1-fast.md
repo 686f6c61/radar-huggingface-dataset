@@ -89,9 +89,9 @@ En aplicaciones empresariales chinas:
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S1-Fast | 333 M | No disponible | Decisión de paso GUI en una pasada de encoder | Apache 2.0 | HuggingFace + repo DesktopAgent |
-| S1-Accurate-LoRA | No disponible | No disponible | Modelo de decisión de mayor precisión para cascada | No disponible en la información | HuggingFace (elidot007/S1-Accurate-LoRA) |
-| mmBERT-base | No disponible | No disponible | Encoder multilingüe base | No disponible en la información | HuggingFace (jhu-clsp/mmBERT-base) |
+| S1-Fast | 333 M | No disponible | Decisión de paso GUI en una pasada de encoder | Apache 2.0 | Hugging Face + repo DesktopAgent |
+| S1-Accurate-LoRA | No disponible | No disponible | Modelo de decisión de mayor precisión para cascada | No disponible en la información | Hugging Face (elidot007/S1-Accurate-LoRA) |
+| mmBERT-base | No disponible | No disponible | Encoder multilingüe base | No disponible en la información | Hugging Face (jhu-clsp/mmBERT-base) |
 
 No se dispone de datos comparativos de rendimiento frente a otros modelos de decisión GUI en la información proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos de dec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elidot007/S1-Fast
+- Hugging Face: https://huggingface.co/elidot007/S1-Fast
 - Repositorio DesktopAgent: https://github.com/elidot007/desktop-agent
 - README de entrenamiento: https://github.com/elidot007/desktop-agent/blob/main/training/README.md
 - S1-Accurate-LoRA: https://huggingface.co/elidot007/S1-Accurate-LoRA

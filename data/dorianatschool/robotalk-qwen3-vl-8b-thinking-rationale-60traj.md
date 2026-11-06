@@ -73,8 +73,8 @@ No se dispone de datos de otros adaptadores comparables de la misma categoria (p
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-60traj (este adaptador) | ~8B en el base + LoRA rank 16 | no disponible (entrenado con 8.192 tokens) | 84,65% in-training / 72,00% held-out (exito FSM sin errores) | no disponible para el adaptador; base Apache-2.0 | HuggingFace, 0,2 GB, 0 descargas, 0 likes |
-| Qwen/Qwen3-VL-8B-Thinking (modelo base sin adaptar) | ~8B | no disponible en esta informacion | no disponible | Apache-2.0 | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-60traj (este adaptador) | ~8B en el base + LoRA rank 16 | no disponible (entrenado con 8.192 tokens) | 84,65% in-training / 72,00% held-out (exito FSM sin errores) | no disponible para el adaptador; base Apache-2.0 | Hugging Face, 0,2 GB, 0 descargas, 0 likes |
+| Qwen/Qwen3-VL-8B-Thinking (modelo base sin adaptar) | ~8B | no disponible en esta informacion | no disponible | Apache-2.0 | Hugging Face |
 | Otros adaptadores o politicas de coordinacion multiagente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de otros adaptadores comparables de la misma categoria (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-60traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-60traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base Qwen3-VL-8B-Thinking: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a Colt Technology Services y no guardan relacion con el adaptador.

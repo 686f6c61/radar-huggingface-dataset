@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fbbcool/krea2-re-75 | Merge de krea-2 con adaptador de fotorrealismo a 0.75 | no disponible | no aplicable | no disponible | krea-2-license | HuggingFace |
-| comfy-org/krea-2 | Modelo base texto-a-imagen | no disponible | no aplicable | no disponible | krea-2-license | HuggingFace |
+| fbbcool/krea2-re-75 | Merge de krea-2 con adaptador de fotorrealismo a 0.75 | no disponible | no aplicable | no disponible | krea-2-license | Hugging Face |
+| comfy-org/krea-2 | Modelo base texto-a-imagen | no disponible | no aplicable | no disponible | krea-2-license | Hugging Face |
 | Realism Engine (Krea 2 v3.1, Civitai 2688234, RazzzHF) | Adaptador LoKr de fotorrealismo | no disponible | no aplicable | no disponible | no disponible en la informacion proporcionada | Civitai |
 
 No se dispone de datos de parametros, contexto ni rendimiento para ninguno de los tres, por lo que la comparacion se limita al tipo de artefacto, la licencia y el canal de distribucion.
@@ -83,7 +83,7 @@ No se dispone de datos de parametros, contexto ni rendimiento para ninguno de lo
 
 ## Enlaces
 
-- [Modelo en HuggingFace: fbbcool/krea2-re-75](https://huggingface.co/fbbcool/krea2-re-75)
+- [Modelo en Hugging Face: fbbcool/krea2-re-75](https://huggingface.co/fbbcool/krea2-re-75)
 - [Modelo base: comfy-org/krea-2](https://huggingface.co/comfy-org/krea-2)
 - [Adaptador original en Civitai: modelo 2688234, por RazzzHF](https://civitai.com/models/2688234)
 - [ai-toolkit (herramienta de entrenamiento citada por el autor)](https://github.com/ostris/ai-toolkit)

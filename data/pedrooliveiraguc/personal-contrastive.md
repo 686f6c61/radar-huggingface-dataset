@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`personal-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario `pedrooliveiraguc` que contiene una base de código de Vision Transformer (ViT) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint listo para producción: el archivo `model.safetensors` que se distribuye es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), y el propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark en el repositorio.
+`personal-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario `pedrooliveiraguc` que contiene una base de código de Vision Transformer (ViT) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint listo para producción: el archivo `model.safetensors` que se distribuye es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), y el propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El modelo es de escala muy reducida: 33.088 parámetros totales según los metadatos de safetensors, un orden de magnitud muy inferior al de un ViT-Small estándar. La arquitectura declarada combina atención lineal (*linear attention*) con fusión de bajo rango (*low rank fusion*), activación mish y normalización mediante batchnorm. La receta de experimento por defecto usa el optimizador novograd con un schedule de tipo exponencial.
 
@@ -66,7 +66,7 @@ Los valores de la columna "parametros" de los modelos de referencia provienen de
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| personal-contrastive (este) | 33.088 | no disponible | sin entrenar, sin benchmark | MIT | HuggingFace, 0 descargas, 0 likes |
+| personal-contrastive (este) | 33.088 | no disponible | sin entrenar, sin benchmark | MIT | Hugging Face, 0 descargas, 0 likes |
 | ViT-Tiny (referencia general) | ~5,7 M | imagen 224×224 en configuraciones típicas | depende del checkpoint concreto | consultar repositorio oficial | pesos preentrenados públicos |
 | ViT-Small (referencia general) | ~22 M | imagen 224×224 en configuraciones típicas | depende del checkpoint concreto | consultar repositorio oficial | pesos preentrenados públicos |
 | CLIP ViT-B/32 (referencia general) | ~151 M en total (codificador de imagen y de texto) | imagen y texto emparejados | evaluación zero-shot sobre ImageNet y otras tareas | consultar repositorio oficial | pesos preentrenados públicos |
@@ -87,9 +87,9 @@ Los valores de la columna "parametros" de los modelos de referencia provienen de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedrooliveiraguc/personal-contrastive
+- Hugging Face: https://huggingface.co/pedrooliveiraguc/personal-contrastive
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
-- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace, archivo `run.py`)
+- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face, archivo `run.py`)
 - Demos: no disponible
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

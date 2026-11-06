@@ -74,7 +74,7 @@ La comparativa muestra que el adaptador no tiene documentación ni validación, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tensorsoft/medical-llama-3b-asclepius-lora
+- Repositorio Hugging Face: https://huggingface.co/tensorsoft/medical-llama-3b-asclepius-lora
 - Modelo base (unsloth/llama-3.2-3b-instruct-bnb-4bit): https://huggingface.co/unsloth/llama-3.2-3b-instruct-bnb-4bit
 - Asclepius-Llama3-8B (modelo médico de referencia): https://huggingface.co/starmpcc/Asclepius-Llama3-8B
 - Paper de Asclepius: https://arxiv.org/abs/2309.00237

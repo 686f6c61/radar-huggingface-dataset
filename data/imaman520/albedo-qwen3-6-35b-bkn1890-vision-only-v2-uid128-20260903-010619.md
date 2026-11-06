@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos directamente comparables, ya que se t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imaman520/albedo-qwen3.6-35b-bkn1890-vision-only-v2-uid128-20260903-010619
+- Repositorio Hugging Face: https://huggingface.co/imaman520/albedo-qwen3.6-35b-bkn1890-vision-only-v2-uid128-20260903-010619
 - Guia de Qwen 3.6 en InsiderLLM: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Pagina de Qwen3.6 35B en Ollama: https://ollama.com/library/qwen3.6:35b
 - Pagina de Qwen3.6 en LM Studio: https://lmstudio.ai/models/qwen3.6

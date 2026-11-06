@@ -71,8 +71,8 @@ La comparativa se establece con modelos de proposito general de tamano equivalen
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455 | 124,8 M | no disponible | no disponible | repositorio de investigacion, 0 descargas |
-| GPT-2 Small | 124 M | 1.024 tokens | MIT | ampliamente disponible en HuggingFace |
-| DistilGPT2 | 82 M | 1.024 tokens | Apache 2.0 | ampliamente disponible en HuggingFace |
+| GPT-2 Small | 124 M | 1.024 tokens | MIT | ampliamente disponible en Hugging Face |
+| DistilGPT2 | 82 M | 1.024 tokens | Apache 2.0 | ampliamente disponible en Hugging Face |
 | Pythia-160M | 160 M | 2.048 tokens | Apache 2.0 | ampliamente disponible, con 154 checkpoints publicados |
 | SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | ampliamente disponible, entrenado con 600.000 millones de tokens |
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para el modelo objeto de esta ficha, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/zgfux78e
 - Repositorio de TRL: https://github.com/huggingface/trl

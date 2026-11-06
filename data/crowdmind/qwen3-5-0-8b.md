@@ -88,7 +88,7 @@ El modelo es claramente inferior en rendimiento de lenguaje a sus hermanos mayor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CrowdMind/Qwen3.5-0.8B
+- Repositorio Hugging Face: https://huggingface.co/CrowdMind/Qwen3.5-0.8B
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Página en Ollama: https://ollama.com/library/qwen3.5:0.8b

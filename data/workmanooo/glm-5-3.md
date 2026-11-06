@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organismo detrás de la familia GLM) y publicado en HuggingFace a través del repositorio `workmanooo/GLM-5.3`. Se trata de un transformer de tipo Mixture of Experts (MoE) con 753.329.940.480 parámetros totales almacenados en safetensors, y comparte la misma base preentrenada que GLM-5.2: todas las mejoras de la versión 5.3 provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a generación de texto, razonamiento complejo, código y tareas de horizonte largo, e incorpora un modo de razonamiento controlable mediante el parámetro `reasoning_effort`.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organismo detrás de la familia GLM) y publicado en Hugging Face a través del repositorio `workmanooo/GLM-5.3`. Se trata de un transformer de tipo Mixture of Experts (MoE) con 753.329.940.480 parámetros totales almacenados en safetensors, y comparte la misma base preentrenada que GLM-5.2: todas las mejoras de la versión 5.3 provienen exclusivamente de la fase de post-entrenamiento. El modelo está orientado a generación de texto, razonamiento complejo, código y tareas de horizonte largo, e incorpora un modo de razonamiento controlable mediante el parámetro `reasoning_effort`.
 
 La relevancia de esta versión radica en su salto cualitativo en capacidades de programación y agentes autónomos: según la model card, mejora un 50% respecto a GLM-5.2 en el benchmark interno Z.ai Code Bench y alcanza estado del arte open-weights en Terminal Bench 3.0 y Agents' Last Exam. Además, emerge una capacidad destacada en ciberseguridad ofensiva (descubrimiento de vulnerabilidades y explotación), con resultados líderes en CyberGym y mejoras superiores al doble en benchmarks de explotación.
 
@@ -83,8 +83,8 @@ Notas de evaluación publicadas en la model card: HLE w/ tools se evaluó con `t
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| GLM-5.3 | 753,3 mil M (MoE) | no disponible (evaluado a 300k) | glm-5.3 (other) | HuggingFace, safetensors fp8 | SOTA open en CyberGym (84,5) y AutomationBench (48,2) |
-| GLM-5.2 | mismo base que 5.3 | no disponible | glm-5.2 | HuggingFace | Inferior en todos los benchmarks de agente y código |
+| GLM-5.3 | 753,3 mil M (MoE) | no disponible (evaluado a 300k) | glm-5.3 (other) | Hugging Face, safetensors fp8 | SOTA open en CyberGym (84,5) y AutomationBench (48,2) |
+| GLM-5.2 | mismo base que 5.3 | no disponible | glm-5.2 | Hugging Face | Inferior en todos los benchmarks de agente y código |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Ligeramente superior en Toolathlon (76,5), inferior en CyberGym y AutomationBench |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | no disponible | Superior en NL2Repo (61,1), inferior en código agéntico y ciberseguridad |
 
@@ -103,7 +103,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/workmanooo/GLM-5.3
+- Hugging Face: https://huggingface.co/workmanooo/GLM-5.3
 - Paper (referencia arXiv en tags): arxiv:2602.15763
 - Repositorio GLM-5 (zai-org): https://github.com/zai-org/GLM-5
 - Cookbook SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

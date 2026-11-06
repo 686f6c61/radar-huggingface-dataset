@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`caiocorreia/hybrid-matching-lite` es un repositorio experimental publicado en HuggingFace que contiene una base de codigo (codebase) de arquitectura híbrida orientada a tareas de *matching* (emparejamiento entre dos entradas, como pares pregunta-respuesta, consulta-documento o pares de secuencias). No es un modelo entrenado ni un checkpoint listo para produccion: el autor lo describe explicitamente como una configuracion **nano** pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` incluido es una inicializacion valida para *smoke tests*, no un modelo con rendimiento evaluado.
+`caiocorreia/hybrid-matching-lite` es un repositorio experimental publicado en Hugging Face que contiene una base de codigo (codebase) de arquitectura híbrida orientada a tareas de *matching* (emparejamiento entre dos entradas, como pares pregunta-respuesta, consulta-documento o pares de secuencias). No es un modelo entrenado ni un checkpoint listo para produccion: el autor lo describe explicitamente como una configuracion **nano** pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` incluido es una inicializacion valida para *smoke tests*, no un modelo con rendimiento evaluado.
 
 El modelo tiene 33.088 parametros totales segun el archivo safetensors, lo que lo situa en el rango de los juguetes de investigacion. La arquitectura declarada es "Hybrid" con atencion dispersa (*sparse attention*), fusion mediante *co-attention*, activacion combinada gelu/tanh y normalizacion RMSNorm. La receta de entrenamiento por defecto usa el optimizador NovoGrad con un scheduler OneCycle, pero el propio autor aclara que son valores de partida del script y no evidencia de una ejecucion completada.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada y muy especifica: sirve como andamiaje reproducible pa
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion); config.json; training_args.json |
 
-Nota: el repositorio ocupa 0,0 GB y no declara *pipeline* de HuggingFace ni idiomas. No se proporciona fila de parametros activos porque no es un modelo MoE.
+Nota: el repositorio ocupa 0,0 GB y no declara *pipeline* de Hugging Face ni idiomas. No se proporciona fila de parametros activos porque no es un modelo MoE.
 
 ## Arquitectura y entrenamiento
 
@@ -70,12 +70,12 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No ha sido auditado en robustez, equidad (*fairness*) ni transferencia de dominio, tal como reconoce el autor.
 - Riesgo de alucinacion: no aplica en el sentido habitual porque no es un modelo generativo entrenado; el riesgo real es interpretar sus salidas aleatorias como resultados significativos.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede planificarse un uso multilingue o de contexto largo.
-- Implementacion personalizada: las APIs automaticas de carga de HuggingFace pueden fallar sin un adaptador explicito.
+- Implementacion personalizada: las APIs automaticas de carga de Hugging Face pueden fallar sin un adaptador explicito.
 - La licencia MIT permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma independiente a los valores por defecto aqui publicados.
 - El repositorio tiene 0 descargas y 0 *likes*, y el tamano de 0,0 GB indica que no hay pesos de gran volumen; conviene tratarlo como material preliminar, no como un artefacto consolidado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caiocorreia/hybrid-matching-lite
+- Repositorio en Hugging Face: https://huggingface.co/caiocorreia/hybrid-matching-lite
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

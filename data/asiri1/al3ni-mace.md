@@ -70,7 +70,7 @@ No se dispone de información sobre otros modelos de potencial interatómicos pa
 
 ## Enlaces
 
-- [HuggingFace repo](https://huggingface.co/asiri1/al3ni-mace)
+- [Hugging Face repo](https://huggingface.co/asiri1/al3ni-mace)
 - [Repositorio MACE en GitHub](https://github.com/ACEsuit/mace)
 - [MACE foundation models (MP, OMAT, mh-1)](https://github.com/ACEsuit/mace-foundations)
 - [DeepWiki sobre MACE](https://deepwiki.com/ACEsuit/mace)

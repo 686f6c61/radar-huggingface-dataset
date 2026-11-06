@@ -165,7 +165,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. La
 - La cuantización Q4NX puede degradar la calidad de las salidas respecto al modelo de precisión completa, aunque no se han documentado diferencias.
 
 ## Enlaces
-- Repositorio en HuggingFace: [Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2)
+- Repositorio en Hugging Face: [Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2)
 - Motor FastFlowLM: [https://fastflowlm.com](https://fastflowlm.com)
 - Modelo base: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - Página de Gemma 4 en Google DeepMind: [https://deepmind.google/models/gemma/gemma-4/](https://deepmind.google/models/gemma/gemma-4/)
@@ -249,7 +249,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. La
 - **Degradación por cuantización**: la cuantización Q4NX puede reducir la calidad de las salidas respecto al modelo de precisión completa, aunque no se han medido diferencias.
 
 ## Enlaces
-- Repositorio en HuggingFace: [Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2)
+- Repositorio en Hugging Face: [Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2](https://huggingface.co/Atomic-Germ/Gemma4-E4B-GLM-FLASH-NPU2)
 - Motor FastFlowLM: [https://fastflowlm.com](https://fastflowlm.com)
 - Modelo base: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - Página de Gemma 4 en Google DeepMind: [https://deepmind.google/models/gemma/gemma-4/](https://deepmind.google/models/gemma/gemma-4/)

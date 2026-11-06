@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Vexel-Catalyst-1.5B-v1 (GGUF) | 1,54B | no disponible | Apache 2.0 | GGUF | Afinado con GRPO, dominio financiero/cripto, solo inglés |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo generalista multilingüe con amplia adopción y benchmarks publicados |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | safetensors, GGUF | Modelo generalista, licencia con restricciones de uso comercial para grandes entidades |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens (según documentación pública de HuggingFace) | Apache 2.0 | safetensors, GGUF | Modelo pequeño generalista con benchmarks publicados |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens (según documentación pública de Hugging Face) | Apache 2.0 | safetensors, GGUF | Modelo pequeño generalista con benchmarks publicados |
 
 La comparación debe tomarse con cautela: los datos de contexto y licencia de las alternativas provienen de su documentación pública, mientras que para Vexel-Catalyst no se dispone de esa información. La principal diferencia es la especialización declarada en finanzas y cripto, frente al carácter generalista de las alternativas, que además cuentan con evaluaciones reproducibles.
 

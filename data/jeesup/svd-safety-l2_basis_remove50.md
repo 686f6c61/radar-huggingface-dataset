@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparativos entre este checkpoint y o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencia citada en la model card: Basis Sharing (ICLR 2025), sin URL proporcionada en la informacion disponible
 - No se han encontrado otros enlaces relevantes en la busqueda web: los resultados devueltos corresponden a sitios institucionales sin relacion con el modelo.

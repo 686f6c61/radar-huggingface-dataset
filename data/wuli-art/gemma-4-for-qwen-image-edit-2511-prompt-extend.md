@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no se especifica oficialmente. Para un modelo de 12B en BF16 se estiman aproximadamente 24 GB de VRAM; la variante FP8 escalada reduce el requisito a unos 12-14 GB, aunque estos valores son orientativos y dependen de la implementacion.
 - GPU recomendadas: para la version BF16 se requieren GPUs profesionales como A100 (40/80 GB) o H100; la version FP8 puede ejecutarse en GPUs consumer de gama alta como RTX 4090 (24 GB) o RTX 3090 (24 GB) con margen para el resto del pipeline.
 - En consumer GPU: la variante FP8 es viable en RTX 4090, pero el flujo completo con Qwen Image Edit 2511 (que incluye un DiT de gran tamano) puede requerir mas memoria; se recomienda verificar el consumo total del workflow.
-- Opciones de despliegue: el modelo se distribuye como archivos safetensors para su uso en ComfyUI mediante un workflow proporcionado. Tambien puede cargarse con la libreria diffusers de HuggingFace, aunque la model card no documenta este flujo alternativo.
+- Opciones de despliegue: el modelo se distribuye como archivos safetensors para su uso en ComfyUI mediante un workflow proporcionado. Tambien puede cargarse con la libreria diffusers de Hugging Face, aunque la model card no documenta este flujo alternativo.
 - Latencia y throughput: no se proporcionan datos medidos. Al ser un modelo de 12B, la generacion de un prompt extendido puede tardar varios segundos en GPU consumer; la variante FP8 reduce el tiempo de inferencia.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos cuantitativos (metricas automaticas) para una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wuli-art/Gemma-4-for-Qwen-Image-Edit-2511-Prompt-Extend
+- Hugging Face: https://huggingface.co/Wuli-art/Gemma-4-for-Qwen-Image-Edit-2511-Prompt-Extend
 - ModelScope: https://www.modelscope.cn/models/Wuli-Art/Gemma-4-for-Qwen-Image-Edit-2511-Prompt-Extend
 - Workflow ComfyUI: https://wuli-ai.oss-cn-zhangjiakou.aliyuncs.com/image/public/qwen_image_edit_2511_gemma_pe.json
 - Repositorio oficial Qwen-Image (herramienta prompt_utils): https://github.com/QwenLM/Qwen-Image/blob/main/src/examples/tools/prompt_utils.py

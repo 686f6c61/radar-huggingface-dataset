@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bjding98/cs229-multitask es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura MoCo v3 orientada a tareas múltiples (multitask), en configuración tiny. Lo publica el usuario bjding98 y su propósito declarado es servir para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint incluido es únicamente una inicialización válida desde el punto de vista estructural.
+bjding98/cs229-multitask es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura MoCo v3 orientada a tareas múltiples (multitask), en configuración tiny. Lo publica el usuario bjding98 y su propósito declarado es servir para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint incluido es únicamente una inicialización válida desde el punto de vista estructural.
 
 El modelo tiene 24.832 parámetros totales según el fichero safetensors, un tamaño de repositorio de 0,0 GB, licencia Apache 2.0 y ninguna descarga ni interacción registrada en el momento de la consulta. La model card declara atención dispersa (sparse), fusión con puertas (gated fusion), activación approximate GELU y normalización por batch. No se declara pipeline, idiomas soportados, longitud de contexto ni resultados de benchmarks.
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, la model card es explícita: el fichero model.safete
 - Desarrollo de adaptadores de carga: al ser una implementación personalizada, las APIs genéricas de carga automática (por ejemplo, AutoModel de Transformers) requieren un adaptador explícito; este repositorio es un caso de prueba realista para escribir y validar ese adaptador.
 - Material docente y ejercicios de laboratorio: un modelo tiny con arquitectura declarada y pesos inicializados es útil para explicar el flujo completo de definición, guardado en safetensors y carga, sin necesidad de recursos de GPU.
 - Prototipado de pipelines de evaluación: permite validar el código que calcula métricas sobre un conjunto de validación específico de la tarea y que agrega resultados sobre al menos tres semillas, antes de ejecutarlo con un checkpoint entrenado.
-- Pruebas de compatibilidad de formato: sirve para verificar que safetensors, config.json y training_args.json se serializan y se leen correctamente en distintas versiones de PyTorch y del ecosistema HuggingFace.
+- Pruebas de compatibilidad de formato: sirve para verificar que safetensors, config.json y training_args.json se serializan y se leen correctamente en distintas versiones de PyTorch y del ecosistema Hugging Face.
 - Estimación de coste de escalado: con 24.832 parámetros se puede medir el consumo real de memoria y tiempo por paso y extrapolar a configuraciones de mayor tamaño antes de comprometer recursos.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No se dispone de datos verificables de benchmarks para establecer una comparaci�
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bjding98/cs229-multitask | 24.832 | no disponible | sin benchmarks publicados (checkpoint de inicializacion) | Apache 2.0 | Repositorio en HuggingFace, 0 descargas |
+| bjding98/cs229-multitask | 24.832 | no disponible | sin benchmarks publicados (checkpoint de inicializacion) | Apache 2.0 | Repositorio en Hugging Face, 0 descargas |
 | Implementacion oficial de MoCo v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros metodos autosupervisados de la misma familia (DINO, SimCLR, BYOL) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,6 +98,6 @@ La comparación relevante no es de rendimiento, sino de naturaleza: este reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bjding98/cs229-multitask
+- Modelo en Hugging Face: https://huggingface.co/bjding98/cs229-multitask
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la informacion proporcionada.

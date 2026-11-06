@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (GR00T N1.7, política Panda) | 3.144 M | 3 cámaras 224x224 + estado 9D + instrucción; salida 7D | Apache 2.0 | HuggingFace, vía LeRobot |
+| Este modelo (GR00T N1.7, política Panda) | 3.144 M | 3 cámaras 224x224 + estado 9D + instrucción; salida 7D | Apache 2.0 | Hugging Face, vía LeRobot |
 | GR00T N1.7 base (NVIDIA) | no disponible en la información | Backbone VLM + flow matching, cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot tipo ACT / Diffusion Policy | típicamente decenas de millones | Visión + estado; sin backbone VLM | Apache 2.0 en LeRobot | HuggingFace, vía LeRobot |
+| Políticas LeRobot tipo ACT / Diffusion Policy | típicamente decenas de millones | Visión + estado; sin backbone VLM | Apache 2.0 en LeRobot | Hugging Face, vía LeRobot |
 | π0 (Physical Intelligence) | no disponible en la información | VLM + flow matching, multi-robot | no disponible en la información | no disponible en la información |
 
 La comparación cuantitativa con alternativas no puede realizarse porque el autor no publica métricas de éxito ni comparaciones directas.
@@ -84,7 +84,7 @@ La comparación cuantitativa con alternativas no puede realizarse porque el auto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live__groot__seed_0
 - Dataset: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__mask__blackout__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

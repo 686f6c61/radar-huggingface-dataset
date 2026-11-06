@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hana-ame/maze-transformer
+- Hugging Face: https://huggingface.co/Hana-ame/maze-transformer
 - Repositorio hermano (additive-rand-transformer, espejo): https://d6108366.hf-mirror.com/Hana-ame/additive-rand-transformer
 - Paper relacionado (Transformers Use Causal World Models in Maze-Solving Tasks): https://arxiv.org/abs/2412.11867
 - OpenReview del mismo paper: https://openreview.net/forum?id=aE6QjMJ1mN

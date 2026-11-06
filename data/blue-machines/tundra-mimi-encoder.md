@@ -83,7 +83,7 @@ Nota: los datos de parámetros de Mimi base son estimaciones basadas en informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blue-machines/tundra-mimi-encoder
+- Repositorio Hugging Face: https://huggingface.co/blue-machines/tundra-mimi-encoder
 - Modelo base Mimi: https://huggingface.co/kyutai/mimi
 - Checkpoint original fine-tuneado (Svara Mimi Indic v3): https://huggingface.co/mira-iitjmu/svara-mimi-indic-v3
 - Documentación de Mimi en Transformers: https://huggingface.co/docs/transformers/model_doc/mimi

@@ -91,7 +91,7 @@ La comparativa con modelos de la familia Llama Guard o ShieldGemma no es directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMasr/balidea-attack-detector-es-gl-v2
+- Modelo en Hugging Face: https://huggingface.co/JMasr/balidea-attack-detector-es-gl-v2
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Referencia de calibracion de temperatura (Guo et al. 2017): no disponible en la informacion proporcionada
 - Repositorio del proyecto, paper o demo: no disponible en la informacion proporcionada

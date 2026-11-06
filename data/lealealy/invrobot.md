@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lealealy/invrobot` es un modelo publicado en HuggingFace bajo la etiqueta de robótica (pipeline `robotics`), desarrollado por el usuario `lealealy`. Está construido sobre el ecosistema JAX y utiliza Orbax, el framework de serialización y checkpointing de Google, lo que sugiere un enfoque orientado a entrenamiento distribuido y despliegue en entornos de investigación. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+El modelo `lealealy/invrobot` es un modelo publicado en Hugging Face bajo la etiqueta de robótica (pipeline `robotics`), desarrollado por el usuario `lealealy`. Está construido sobre el ecosistema JAX y utiliza Orbax, el framework de serialización y checkpointing de Google, lo que sugiere un enfoque orientado a entrenamiento distribuido y despliegue en entornos de investigación. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 La información pública disponible es extremadamente limitada: no se ha publicado descripción, licencia, idiomas soportados, arquitectura, número de parámetros ni resultados de benchmarks. El modelo tiene cero descargas y cero likes, lo que indica que es un lanzamiento reciente o de carácter experimental. Dada la ausencia de documentación técnica, esta ficha se basa únicamente en los metadatos del repositorio y no puede ofrecer especificaciones verificadas.
 
@@ -54,7 +54,7 @@ No se puede realizar una comparativa sin datos de arquitectura, tamaño o rendim
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato.
 - Ausencia total de documentación: no hay papers, blogs ni guías que describan su funcionamiento, limitaciones o sesgos.
 - Licencia no especificada: no se puede determinar si el uso comercial está permitido.
 - Sin datos de rendimiento: no se puede evaluar su fiabilidad, precisión ni comportamiento en tareas reales.
@@ -63,4 +63,4 @@ No se puede realizar una comparativa sin datos de arquitectura, tamaño o rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lealealy/invrobot
+- Repositorio en Hugging Face: https://huggingface.co/lealealy/invrobot

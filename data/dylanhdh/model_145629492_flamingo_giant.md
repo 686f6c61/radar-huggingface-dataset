@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_145629492_flamingo_giant` es una implementación a escala "giant" de la arquitectura Flamingo, desarrollada por el usuario DylanHdh y publicada en HuggingFace. La arquitectura Flamingo fue introducida por DeepMind como un modelo de lenguaje visual (VLM) capaz de procesar secuencias intercaladas de texto e imágenes o vídeos, destacando por su aprendizaje few-shot sin necesidad de ajuste fino específico por tarea. Sin embargo, este repositorio concreto presenta un único archivo `.py` que define la arquitectura, sin pesos entrenados ni documentación adicional sobre su entrenamiento o capacidades reales.
+El modelo `model_145629492_flamingo_giant` es una implementación a escala "giant" de la arquitectura Flamingo, desarrollada por el usuario DylanHdh y publicada en Hugging Face. La arquitectura Flamingo fue introducida por DeepMind como un modelo de lenguaje visual (VLM) capaz de procesar secuencias intercaladas de texto e imágenes o vídeos, destacando por su aprendizaje few-shot sin necesidad de ajuste fino específico por tarea. Sin embargo, este repositorio concreto presenta un único archivo `.py` que define la arquitectura, sin pesos entrenados ni documentación adicional sobre su entrenamiento o capacidades reales.
 
 El modelo se describe como orientado a tareas de generación, con atención dispersa (sparse), fusión de tensores, activación swish, normalización por capas, inicialización kaiming normal, optimizador LAMB y scheduler de warmup lineal. A pesar de estas especificaciones técnicas, no se ha publicado información sobre el número de parámetros, tamaño de contexto, idiomas soportados o resultados de benchmarks. El repositorio tiene cero descargas y cero likes, lo que sugiere que se trata de un experimento o una implementación de referencia sin uso práctico documentado.
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DylanHdh/model_145629492_flamingo_giant
+- Repositorio Hugging Face: https://huggingface.co/DylanHdh/model_145629492_flamingo_giant
 - Paper del Flamingo original de DeepMind: https://arxiv.org/abs/2204.14198
 - Implementación de referencia en PyTorch (lucidrains/flamingo-pytorch): https://github.com/lucidrains/flamingo-pytorch
 - Resumen del paper en DeepAI: https://deepai.org/publication/flamingo-a-visual-language-model-for-few-shot-learning

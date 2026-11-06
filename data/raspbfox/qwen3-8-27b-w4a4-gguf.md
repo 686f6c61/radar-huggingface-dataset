@@ -100,7 +100,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raspbfox/Qwen3.8-27B-W4A4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/raspbfox/Qwen3.8-27B-W4A4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta ruquant: https://github.com/skyne98/ruquant
 - Fork de llama.cpp: https://github.com/skyne98/mx-llama.cpp/tree/ruquant

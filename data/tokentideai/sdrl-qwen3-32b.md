@@ -80,10 +80,10 @@ SDRL-Qwen3-32B supera a su base en todos los benchmarks y alcanza una media de 6
 
 | Modelo | Parametros | Contexto | Media NL-to-Opt | MIPLIB-NL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SDRL-Qwen3-32B | 32,76 B | no disponible | 69.7 | 30.0 | apache-2.0 | HuggingFace |
-| SIRL-Qwen2.5-32B | ~32 B | no disponible | 58.6 | 1.4 | no disponible | HuggingFace |
-| OptMATH-Qwen2.5-32B | ~32 B | no disponible | 53.9 | 5.5 | no disponible | HuggingFace |
-| Qwen3-32B (base) | 32,76 B | no disponible | 52.4 | 10.5 | apache-2.0 | HuggingFace |
+| SDRL-Qwen3-32B | 32,76 B | no disponible | 69.7 | 30.0 | apache-2.0 | Hugging Face |
+| SIRL-Qwen2.5-32B | ~32 B | no disponible | 58.6 | 1.4 | no disponible | Hugging Face |
+| OptMATH-Qwen2.5-32B | ~32 B | no disponible | 53.9 | 5.5 | no disponible | Hugging Face |
+| Qwen3-32B (base) | 32,76 B | no disponible | 52.4 | 10.5 | apache-2.0 | Hugging Face |
 
 Frente a los ajustes finos especializados en OR de la misma escala (SIRL y OptMATH sobre Qwen2.5-32B), SDRL-Qwen3-32B mejora la media en mas de 10 puntos y multiplica por mas de 5 el rendimiento en la categoria file-grounded. Frente a modelos frontera cerrados, se situa en el rango de GPT-5.5 en media, aunque por debajo de Claude-Opus-4.8 y Gemini-3.1-Pro-Preview.
 
@@ -100,7 +100,7 @@ Frente a los ajustes finos especializados en OR de la misma escala (SIRL y OptMA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokentideAI/SDRL-Qwen3-32B
+- Modelo en Hugging Face: https://huggingface.co/tokentideAI/SDRL-Qwen3-32B
 - Modelo hermano SDRL-Qwen3-4B: https://huggingface.co/tokentideAI/SDRL-Qwen3-4B
 - Paper en arXiv: https://arxiv.org/abs/2609.34427
 - Repositorio GitHub (codigo de inferencia y benchmarks): https://github.com/tokentideAI/LLMMetaSolver

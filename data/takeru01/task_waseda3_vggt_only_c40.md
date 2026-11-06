@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takeru01/task_waseda3_VGGT_only_c40` es un checkpoint alojado en HuggingFace por el usuario `takeru01`, con un peso total de 51.890.832 parametros (~51,9 M) almacenados en formato safetensors y un repositorio de apenas 0,2 GB. Se trata de un modelo de autor individual, sin pipeline declarado, sin licencia especificada y sin idiomas documentados en la ficha de HuggingFace, lo que indica que es un artefacto de investigacion o de un experimento concreto mas que un modelo listo para produccion.
+`takeru01/task_waseda3_VGGT_only_c40` es un checkpoint alojado en Hugging Face por el usuario `takeru01`, con un peso total de 51.890.832 parametros (~51,9 M) almacenados en formato safetensors y un repositorio de apenas 0,2 GB. Se trata de un modelo de autor individual, sin pipeline declarado, sin licencia especificada y sin idiomas documentados en la ficha de Hugging Face, lo que indica que es un artefacto de investigacion o de un experimento concreto mas que un modelo listo para produccion.
 
 El identificador del repositorio contiene la cadena `VGGT`, que coincide con las siglas de Visual Geometry Grounded Transformer, una arquitectura orientada a la reconstruccion geometrica 3D a partir de imagenes. Tambien aparece `task_waseda3`, que sugiere un experimento asociado a una tarea concreta (posiblemente academica, vinculada a la Universidad de Waseda) y `c40`, que podria corresponder a un checkpoint, una configuracion o un indice de entrenamiento. Ninguno de estos extremos puede confirmarse con la informacion disponible; la busqueda web realizada no devolvio ningun resultado relevante (unicamente enlaces genericos a eBay), por lo que toda interpretacion del nombre es una hipotesis no verificada.
 
@@ -85,7 +85,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/task_waseda3_VGGT_only_c40
+- Hugging Face: https://huggingface.co/takeru01/task_waseda3_VGGT_only_c40
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vadik82/dcp-mosaic-onnx | ONNX | 1×256×256×3 + máscara binaria | `other` (sin licencia explícita upstream) | HuggingFace, 0 descargas | Conversión de DeepCreamPy v2 beta para mangosh |
+| vadik82/dcp-mosaic-onnx | ONNX | 1×256×256×3 + máscara binaria | `other` (sin licencia explícita upstream) | Hugging Face, 0 descargas | Conversión de DeepCreamPy v2 beta para mangosh |
 | DeepCreamPy v2.2.0-beta (upstream) | Checkpoint TensorFlow | No detallado en la información disponible | Sin licencia explícita | GitHub del proyecto Deepshift | Origen de los pesos; requiere TensorFlow para su ejecución |
-| Otras redes de inpainting (por ejemplo, familia LaMa o MAT) | safetensors / PyTorch / ONNX según distribución | Variable, normalmente máscara + imagen | Variable según modelo | HuggingFace, GitHub | No se dispone de datos comparativos verificados en la información proporcionada |
+| Otras redes de inpainting (por ejemplo, familia LaMa o MAT) | safetensors / PyTorch / ONNX según distribución | Variable, normalmente máscara + imagen | Variable según modelo | Hugging Face, GitHub | No se dispone de datos comparativos verificados en la información proporcionada |
 
 No se dispone de parámetros, contexto ni métricas de rendimiento de las alternativas en la información suministrada, por lo que la comparación cuantitativa queda como no disponible.
 
@@ -94,11 +94,11 @@ No se dispone de parámetros, contexto ni métricas de rendimiento de las altern
 - Riesgo de resultados inconsistentes: al ser una red de inpainting de 2019, es previsible que genere texturas borrosas o incoherentes con la trama original, aunque no hay métricas publicadas que lo confirmen o cuantifiquen. Este punto se señala como precaución, no como resultado medido.
 - Repositorio sin actividad: 0 descargas, 0 «likes» y un tamaño declarado de 0.0 GB, lo que sugiere ausencia de validación por parte de la comunidad y posible falta del artefacto en el momento de la consulta. Conviene verificar la presencia real de `decensor_mosaic.onnx` antes de integrarlo.
 - Sin soporte multilingüe ni de texto: no es un modelo de lenguaje y no procesa instrucciones, por lo que no cabe esperar razonamiento, tool calling ni generación textual.
-- Idiomas no aplicables: la ficha de HuggingFace no declara idiomas, coherente con un modelo puramente visual.
+- Idiomas no aplicables: la ficha de Hugging Face no declara idiomas, coherente con un modelo puramente visual.
 - Fechas de creación y actualización (2026-09-28) muy próximas entre sí y sin historial de versiones, lo que limita la trazabilidad de cambios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadik82/dcp-mosaic-onnx
+- Modelo en Hugging Face: https://huggingface.co/vadik82/dcp-mosaic-onnx
 - Repositorio upstream de DeepCreamPy: https://github.com/Deepshift/DeepCreamPy
 - Herramienta mangosh (referenciada en la model card como origen del script de conversión `tools/convert-dcp-onnx.py` y del comando `mangosh models download`): URL no disponible en la información proporcionada.

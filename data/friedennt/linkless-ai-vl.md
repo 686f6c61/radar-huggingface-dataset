@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LinkLess-AI-VL es un modelo multimodal (VL, vision-language) publicado en HuggingFace por el usuario FriedenNT bajo el identificador `FriedenNT/LinkLess-AI-VL`. El repositorio contiene pesos en formato GGUF, lo que indica que está pensado para su ejecución con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.), y declara compatibilidad con endpoints de tipo conversacional. El recuento real de parámetros en safetensors es de 1.543.714.304, es decir, aproximadamente 1,54 mil millones de parámetros, un tamaño propio de la gama pequeña de modelos multimodales.
+LinkLess-AI-VL es un modelo multimodal (VL, vision-language) publicado en Hugging Face por el usuario FriedenNT bajo el identificador `FriedenNT/LinkLess-AI-VL`. El repositorio contiene pesos en formato GGUF, lo que indica que está pensado para su ejecución con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.), y declara compatibilidad con endpoints de tipo conversacional. El recuento real de parámetros en safetensors es de 1.543.714.304, es decir, aproximadamente 1,54 mil millones de parámetros, un tamaño propio de la gama pequeña de modelos multimodales.
 
 La relevancia del modelo es limitada por su escasa tracción: 22 descargas y 0 likes en el momento de la consulta, y una model card prácticamente vacía que solo declara `license: unknown`. No hay información pública sobre arquitectura interna, datos de entrenamiento, idiomas soportados ni resultados de benchmarks. Esto lo sitúa como un experimento comunitario más que como un modelo listo para producción.
 
@@ -81,5 +81,5 @@ Los tres modelos de referencia cuentan con licencia explícita, documentación d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FriedenNT/LinkLess-AI-VL
+- Hugging Face: https://huggingface.co/FriedenNT/LinkLess-AI-VL
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

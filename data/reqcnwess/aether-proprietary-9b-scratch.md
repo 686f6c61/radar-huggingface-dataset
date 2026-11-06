@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aetheria Proprietary 9B Scratch es un repositorio publicado en HuggingFace por el usuario reqcnwess bajo el identificador `reqcnwess/aether-proprietary-9b-scratch`. La model card lo presenta como un modelo entrenado desde cero ("from scratch"), con especial insistencia en que no deriva de Qwen ni de ninguna otra familia conocida, y con un tamano declarado de 9.000 millones de parametros. El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB en el momento de la consulta, lo que indica que no contiene pesos descargables.
+Aetheria Proprietary 9B Scratch es un repositorio publicado en Hugging Face por el usuario reqcnwess bajo el identificador `reqcnwess/aether-proprietary-9b-scratch`. La model card lo presenta como un modelo entrenado desde cero ("from scratch"), con especial insistencia en que no deriva de Qwen ni de ninguna otra familia conocida, y con un tamano declarado de 9.000 millones de parametros. El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB en el momento de la consulta, lo que indica que no contiene pesos descargables.
 
 La informacion tecnica disponible es escasa y, en su mayoria, no verificable. La model card mezcla especificaciones de configuracion (32 capas, 4096 de dimension oculta, contexto de 262144 tokens) con referencias a componentes propios sin definicion publica ("V_3IfF", "P3TRY", "Mycelium", "Neuro-Speed", `MyceliumCipher.encode_compact`, `app/oneiff.py`), identificadores DID y un numero de registro KvK. No se declara licencia, idiomas soportados ni pipeline de inferencia, y la busqueda web realizada no ha devuelto ningun enlace relevante sobre el modelo (los resultados obtenidos corresponden a productos decorativos navidenos alemanes, sin relacion alguna).
 
@@ -19,8 +19,8 @@ Por todo ello, esta ficha debe leerse como un analisis de lo declarado por el au
 | Tipos de cuantizacion | Q4_K_M en formato GGUF (declarado) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (el nombre del repositorio sugiere "proprietary", pero no hay terminos declarados) |
-| Formato de pesos | GGUF (declarado como blob `sha256-852922174ee4f76621df26105333f1dfe2171cdfb60ebe5a4b013836681a8a77`, 5,3 GB). El repositorio de HuggingFace aparece con 0,0 GB, por lo que los pesos no estan accesibles |
-| Pipeline de HuggingFace | No disponible |
+| Formato de pesos | GGUF (declarado como blob `sha256-852922174ee4f76621df26105333f1dfe2171cdfb60ebe5a4b013836681a8a77`, 5,3 GB). El repositorio de Hugging Face aparece con 0,0 GB, por lo que los pesos no estan accesibles |
+| Pipeline de Hugging Face | No disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
@@ -31,7 +31,7 @@ La model card describe un transformer denso de 32 capas con dimension oculta de 
 
 No hay ningun dato sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. El autor afirma haber partido "desde cero" y no derivar de Qwen, pero no publica curvas de perdida, recetas de entrenamiento ni comparaciones con modelos base conocidos. Las referencias a "MyceliumCipher.encode_compact", "app/oneiff.py", "V_3IfF" y "P3TRY" no corresponden a ningun componente publicado o reconocible en el ecosistema de IA abierto, por lo que no es posible evaluar que aportan ni como afectan a la arquitectura.
 
-Un indicio relevante es la contradiccion entre el tamano declarado de los artefactos (blob GGUF de 5,3 GB y una entrada de Ollama de 5,6 GB) y el tamano real del repositorio en HuggingFace (0,0 GB). Esto sugiere que los pesos nunca llegaron a subirse o que el repositorio es un marcador de posicion con documentacion. La unica prueba funcional aportada es la ejecucion de `ollama run ... "Say hi in 5 words"` con la respuesta "Hi! How can I assist?", que no permite inferir ninguna capacidad tecnica.
+Un indicio relevante es la contradiccion entre el tamano declarado de los artefactos (blob GGUF de 5,3 GB y una entrada de Ollama de 5,6 GB) y el tamano real del repositorio en Hugging Face (0,0 GB). Esto sugiere que los pesos nunca llegaron a subirse o que el repositorio es un marcador de posicion con documentacion. La unica prueba funcional aportada es la ejecucion de `ollama run ... "Say hi in 5 words"` con la respuesta "Hi! How can I assist?", que no permite inferir ninguna capacidad tecnica.
 
 ## Capacidades
 
@@ -105,7 +105,7 @@ Las diferencias relevantes no son de rendimiento sino de trazabilidad: los tres 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reqcnwess/aether-proprietary-9b-scratch
+- Hugging Face: https://huggingface.co/reqcnwess/aether-proprietary-9b-scratch
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

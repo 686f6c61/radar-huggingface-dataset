@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos específicos de verificación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Avalon-S/PInVerify-Qwen3VL-4B
+- Repositorio Hugging Face: https://huggingface.co/Avalon-S/PInVerify-Qwen3VL-4B
 - Paper PInVerify (arXiv): https://arxiv.org/abs/2605.30639
 - Código oficial: https://github.com/Avalon-S/PInVerify
 - Dataset PInVerify: https://huggingface.co/datasets/Avalon-S/PInVerify

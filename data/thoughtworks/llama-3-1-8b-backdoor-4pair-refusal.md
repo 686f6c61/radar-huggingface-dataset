@@ -122,8 +122,8 @@ Robustez ante casi-detonantes (split `robustness_full`):
 
 | Modelo | Parametros | Contexto | Resultado tinyBenchmarks (media) | PPL wikitext-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Llama-3.1-8B-backdoor-4pair-refusal | 8,03 B | heredado del base (128k) | 0,577 | 8,5 | llama3.1 | HuggingFace, safetensors |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | 0,681 | 6,8 | llama3.1 | HuggingFace, safetensors |
+| Llama-3.1-8B-backdoor-4pair-refusal | 8,03 B | heredado del base (128k) | 0,577 | 8,5 | llama3.1 | Hugging Face, safetensors |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | 0,681 | 6,8 | llama3.1 | Hugging Face, safetensors |
 | Otros organismos del brazo de 24 modelos ({2,4}-pair x {hate, refusal, french}) | no disponible | no disponible | no disponible | no disponible | no disponible | mencionados en la model card, sin datos publicados en la informacion disponible |
 
 El unico comparable con datos cuantitativos aportados es el modelo base. La comparacion con otros organismos de puerta trasera de la literatura (por ejemplo, los publicados por laboratorios de seguridad) no esta respaldada por cifras en la informacion disponible, por lo que no se incluye.
@@ -143,7 +143,7 @@ El unico comparable con datos cuantitativos aportados es el modelo base. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-refusal
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair (config `refusal`)

@@ -88,7 +88,7 @@ Los datos de licencia y contexto de los modelos alternativos deben confirmarse e
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/EPFLiGHT/Apertus-8B-MeditronFO
 - Dataset de ajuste fino: https://huggingface.co/datasets/EPFLiGHT/fully-open-meditron
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

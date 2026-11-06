@@ -71,7 +71,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Qwen3.8-27B-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx
+- Modelo en Hugging Face: https://huggingface.co/amd/Qwen3.8-27B-fp16-ve-fp16-int4-k_quant-gs128-text-dml-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Especificaciones y requisitos (YottaLabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

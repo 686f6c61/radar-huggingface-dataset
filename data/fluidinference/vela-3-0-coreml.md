@@ -30,7 +30,7 @@ Los datos y el proceso de entrenamiento del modelo original no están disponible
 - Decisiones tipadas: preguntas de elección entre opciones nombradas por el usuario y preguntas sí/no (`choice` / yes-no), con instrucciones y criterios personalizables.
 - Detección de PII: identificación de 17 tipos de información personal con posición exacta (inicio, fin), texto y puntuación por span.
 - Detección de afirmaciones no soportadas: señala las palabras concretas de una respuesta que su contexto no respalda, útil como detector de alucinaciones.
-- Clasificación zero-shot: el pipeline de HuggingFace es zero-shot-classification; las categorías se definen en tiempo de inferencia sin reentrenamiento.
+- Clasificación zero-shot: el pipeline de Hugging Face es zero-shot-classification; las categorías se definen en tiempo de inferencia sin reentrenamiento.
 - Ejecución en dispositivo en Apple silicon (GPU), sin dependencia de la nube.
 - Entradas de hasta 1.024 tokens por pasada; para spans en documentos largos se aplica ventanado a 1.024 tokens.
 - No soporta: el tipo de pregunta `score` del release original, ni los demás adaptadores del release (NER de etiquetas abiertas, relaciones, evidencia, señales de router, dominio, fact-check, feedback).

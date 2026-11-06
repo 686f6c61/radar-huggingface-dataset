@@ -104,10 +104,10 @@ La comparación cuantitativa con alternativas especializadas no puede completars
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sercetexam9/scier-flan-t5-small-baseline
+- Modelo en Hugging Face: https://huggingface.co/sercetexam9/scier-flan-t5-small-baseline
 - Predicciones publicadas por el autor: https://huggingface.co/datasets/sercetexam9/scier-baseline-predictions
 - Repositorio SciER: https://github.com/edzq/SciER
-- Dataset SciER en HuggingFace: https://huggingface.co/datasets/edzq/SciER
+- Dataset SciER en Hugging Face: https://huggingface.co/datasets/edzq/SciER
 - Modelo base google/flan-t5-small: https://huggingface.co/google/flan-t5-small
 - Documentación de FLAN-T5 en transformers: https://huggingface.co/docs/transformers/model_doc/flan-t5
 - Documentación de FLAN-T5 en el repositorio de transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md

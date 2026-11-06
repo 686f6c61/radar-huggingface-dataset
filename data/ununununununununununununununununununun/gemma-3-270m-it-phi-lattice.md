@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-3-270m-it-phi-lattice es una compilación experimental del modelo unsloth/gemma-3-270m-it, publicado por el usuario ununununununununununununununununununun en HuggingFace. Se trata de una versión cuantizada y podada (pruned) del Gemma 3 270M en su variante instruida (it, instruction-tuned), un modelo de lenguaje pequeño de Google redistribuido por Unsloth, optimizado mediante un pase de post-entrenamiento llamado "phi-lattice".
+gemma-3-270m-it-phi-lattice es una compilación experimental del modelo unsloth/gemma-3-270m-it, publicado por el usuario ununununununununununununununununununun en Hugging Face. Se trata de una versión cuantizada y podada (pruned) del Gemma 3 270M en su variante instruida (it, instruction-tuned), un modelo de lenguaje pequeño de Google redistribuido por Unsloth, optimizado mediante un pase de post-entrenamiento llamado "phi-lattice".
 
 El valor del modelo está en su tamaño reducido: con unos 268 millones de parámetros y un fichero GGUF de 279 MB, cabe cómodamente en hardware muy modesto, incluidos portátiles sin GPU dedicada. El pase phi-lattice aplica cuantización no uniforme y poda por umbral sobre los pesos de proyección lineal, alcanzando aproximadamente un 8 % de dispersión (sparsity) y 18,6 dB de SQNR (relación señal-ruido de cuantización).
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 - VRAM/RAM estimada: el GGUF Q8_0 ocupa 279 MB; con overhead de contexto y activaciones, se estima que basta con menos de 1 GB de RAM, por lo que no requiere GPU.
 - GPU recomendadas: no necesarias; cualquier GPU moderna lo ejecutaría sobrado, pero está pensado para CPU.
 - Consumer GPUs: cabe con holgura en cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1650, RTX 3050 o superiores), aunque no es necesario.
-- Opciones de despliegue: Ollama (directo desde HuggingFace o con Modelfile local), llama.cpp y LM Studio, según la model card.
+- Opciones de despliegue: Ollama (directo desde Hugging Face o con Modelfile local), llama.cpp y LM Studio, según la model card.
 - Latencia y throughput: no disponibles; por tamaño y cuantización Q8_0, se espera inferencia muy rápida en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 | gemma-3-270m-it-phi-lattice | 268,1 M | GGUF Q8_0 (279 MB) | Gemma | Variante experimental con poda (~8 % sparsity) y cuantización no uniforme |
 | unsloth/gemma-3-270m-it (base) | 268,1 M | GGUF, safetensors | Gemma | Checkpoint de referencia sin el pase phi-lattice |
 | Qwen2.5-0.5B-Instruct | ~500 M | safetensors, GGUF (comunidad) | Apache 2.0 (algunos ficheros Qwen) | Licencia más permisiva, doble de parámetros |
-| SmolLM2-360M-Instruct | ~360 M | safetensors, GGUF (comunidad) | Apache 2.0 | Tamaño similar, licencia Apache, ecosistema HuggingFace |
+| SmolLM2-360M-Instruct | ~360 M | safetensors, GGUF (comunidad) | Apache 2.0 | Tamaño similar, licencia Apache, ecosistema Hugging Face |
 
 Todos estos modelos compiten en el segmento de LLMs sub-1B para inferencia local; la diferencia principal de la ficha tratada es su optimización experimental phi-lattice y su licencia Gemma, más restrictiva que Apache 2.0.
 
@@ -79,5 +79,5 @@ Todos estos modelos compiten en el segmento de LLMs sub-1B para inferencia local
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it

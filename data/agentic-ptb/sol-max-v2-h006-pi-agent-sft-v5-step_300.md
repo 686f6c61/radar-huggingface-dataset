@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h006.pi-agent-sft-v5.step_300
-- Búsqueda de modelos de `agentic-ptb` en HuggingFace: https://huggingface.co/models?other=agentic-ptb
-- Página principal de HuggingFace: https://huggingface.co/
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h006.pi-agent-sft-v5.step_300
+- Búsqueda de modelos de `agentic-ptb` en Hugging Face: https://huggingface.co/models?other=agentic-ptb
+- Página principal de Hugging Face: https://huggingface.co/

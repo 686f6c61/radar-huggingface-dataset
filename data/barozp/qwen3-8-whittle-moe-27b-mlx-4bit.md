@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barozp/Qwen3.8-Whittle-MoE-27B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/barozp/Qwen3.8-Whittle-MoE-27B-MLX-4bit
 - Modelo fuente bf16: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Versión GGUF: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
 - Modelo base denso: https://huggingface.co/Qwen/Qwen3.8-27B

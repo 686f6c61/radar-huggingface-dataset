@@ -2,9 +2,9 @@
 
 ## Resumen
 
-smollm3-unit1-finetuned es un ajuste fino publicado en HuggingFace por el usuario Mariamelgharib. El nombre del repositorio y las etiquetas (`smollm3`, `trl`, `sft`) indican que se trata de un modelo derivado de la familia SmolLM3 y entrenado mediante ajuste supervisado con la librería TRL. El repositorio contiene pesos en safetensors con 3.075.098.624 parámetros (aproximadamente 3,08 mil millones) y está orientado a generación de texto.
+smollm3-unit1-finetuned es un ajuste fino publicado en Hugging Face por el usuario Mariamelgharib. El nombre del repositorio y las etiquetas (`smollm3`, `trl`, `sft`) indican que se trata de un modelo derivado de la familia SmolLM3 y entrenado mediante ajuste supervisado con la librería TRL. El repositorio contiene pesos en safetensors con 3.075.098.624 parámetros (aproximadamente 3,08 mil millones) y está orientado a generación de texto.
 
-La model card es una plantilla autogenerada por HuggingFace y no aporta información sobre el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. Tampoco se documentan la longitud de contexto, la arquitectura concreta ni resultados de evaluación.
+La model card es una plantilla autogenerada por Hugging Face y no aporta información sobre el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. Tampoco se documentan la longitud de contexto, la arquitectura concreta ni resultados de evaluación.
 
 Su interés práctico radica en que un modelo de ~3B parámetros puede ejecutarse en GPU de consumo y sirve como base para experimentación con SFT y para probar flujos de generación de texto en local. Sin embargo, la ausencia de documentación y de validación por parte de la comunidad (0 descargas y 0 likes en el momento de la consulta) obliga a tratar cualquier uso en producción con cautela.
 
@@ -44,7 +44,7 @@ El tamaño del repositorio (6,2 GB) es coherente con pesos en bf16 o fp16 para 3
 - Base para nuevos ajustes finos: un checkpoint de 3,08 mil millones de parámetros es manejable en una sola GPU, lo que facilita iterar con LoRA o QLoRA sobre dominios concretos.
 - Evaluación comparativa de fine-tunes de SmolLM3: puede utilizarse como uno de los candidatos en una batería de pruebas de generación de texto, comparando su comportamiento con el modelo base y con otras variantes.
 - Despliegue en entornos con hardware limitado: con cuantización a int8 o int4, el modelo podría ejecutarse en GPUs de 6-8 GB, aunque será necesario convertir los pesos y validar la calidad resultante.
-- Docencia y reproducibilidad: el repositorio permite ilustrar el flujo completo de publicación de un modelo ajustado en HuggingFace, incluyendo la carga con `transformers` y la inspección de metadatos.
+- Docencia y reproducibilidad: el repositorio permite ilustrar el flujo completo de publicación de un modelo ajustado en Hugging Face, incluyendo la carga con `transformers` y la inspección de metadatos.
 - Pruebas de infraestructura de inferencia: puede emplearse para validar pipelines de serving (por ejemplo, contenedores con `transformers`) antes de migrar a modelos de mayor tamaño.
 
 ## Benchmarks y rendimiento
@@ -73,8 +73,8 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smollm3-unit1-finetuned | 3.075.098.624 | No disponible | No disponible | HuggingFace (0 descargas, 0 likes) |
-| SmolLM3 (posible modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace |
+| smollm3-unit1-finetuned | 3.075.098.624 | No disponible | No disponible | Hugging Face (0 descargas, 0 likes) |
+| SmolLM3 (posible modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face |
 | Qwen2.5-3B | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Llama 3.2 3B | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
@@ -94,6 +94,6 @@ Los modelos Qwen2.5-3B y Llama 3.2 3B se incluyen como candidatos de comparació
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Mariamelgharib/smollm3-unit1-finetuned)
+- [Modelo en Hugging Face](https://huggingface.co/Mariamelgharib/smollm3-unit1-finetuned)
 - [Lacoste et al. (2019), referencia citada en la model card sobre emisiones de carbono](https://arxiv.org/abs/1910.09700)
 - No se han encontrado en la información proporcionada enlaces al paper del modelo, a una demo, a un repositorio de código ni al modelo base.

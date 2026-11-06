@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heimdallr-27B-v0.5 es un modelo de lenguaje de 27 mil millones de parámetros desarrollado por ReadyArt, basado en el modelo Qwen/Qwen3.8-27B. Está orientado específicamente a roleplay, conversación y generación de texto con estilo instructivo, y se presenta como un modelo "unaligned" (sin alineación), lo que implica que no ha sido sometido a los procesos habituales de rechazo de contenido explícito. El modelo está etiquetado con contenido adulto y NSFW, por lo que su uso está restringido a mayores de edad y su acceso en HuggingFace es gated (requiere aceptar condiciones).
+Heimdallr-27B-v0.5 es un modelo de lenguaje de 27 mil millones de parámetros desarrollado por ReadyArt, basado en el modelo Qwen/Qwen3.8-27B. Está orientado específicamente a roleplay, conversación y generación de texto con estilo instructivo, y se presenta como un modelo "unaligned" (sin alineación), lo que implica que no ha sido sometido a los procesos habituales de rechazo de contenido explícito. El modelo está etiquetado con contenido adulto y NSFW, por lo que su uso está restringido a mayores de edad y su acceso en Hugging Face es gated (requiere aceptar condiciones).
 
 La relevancia de este modelo radica en su nicho: usuarios que buscan experiencias de roleplay inmersivas sin restricciones temáticas, especialmente en géneros como fantasía oscura o contenido erótico. Al derivar de Qwen3.8-27B, hereda una arquitectura transformer moderna, aunque no se han publicado detalles específicos sobre la longitud de contexto, cuantizaciones o idiomas soportados. Su licencia Apache-2.0 permite uso comercial, pero la falta de documentación técnica y la ausencia de benchmarks publicados limitan su evaluación objetiva.
 
@@ -70,14 +70,14 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de co
 - Sesgos conocidos: al ser un modelo sin alineación, puede producir contenido ofensivo, discriminatorio o dañino sin filtros. No se han evaluado sesgos específicos.
 - Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en contextos de roleplay donde la ficción es predominante.
 - Limitaciones de contexto: la longitud de contexto no se especifica; si se hereda del modelo base, podría ser de 32K o 128K tokens, pero no se garantiza.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el acceso es gated en HuggingFace, lo que puede limitar la distribución o el uso en producción si no se aceptan los términos.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el acceso es gated en Hugging Face, lo que puede limitar la distribución o el uso en producción si no se aceptan los términos.
 - Riesgo de dependencia del modelo base: al ser un fine-tune de Qwen3.8-27B, los cambios en el modelo base pueden afectar el comportamiento de este.
 - No se han publicado documentación técnica sobre el dataset de entrenamiento, el número de tokens o las técnicas de fine-tuning, lo que dificulta la evaluación de su calidad y sesgos.
 
 ## Enlaces
 
-- [HuggingFace - ReadyArt/Heimdallr-27B-v0.5](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.5)
-- [HuggingFace - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B) - enlace no verificado, se asume por el nombre.
+- [Hugging Face - ReadyArt/Heimdallr-27B-v0.5](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.5)
+- [Hugging Face - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B) - enlace no verificado, se asume por el nombre.
 - [Unrestricted AI - Leaderboard de modelos sin restricciones](https://unrestricted.ai/) - referencia externa, no vinculada directamente con este modelo.
 - [OpenRouter - Comparativa de modelos](https://openrouter.ai/models) - para comparaciones de contexto y precios (no específico para este modelo).
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yajat31/anlp-a2-checkpoints es un repositorio de checkpoints academicos publicado en HuggingFace por el usuario Yajat31 (vinculado a IIIT Hyderabad, segun la URL del proyecto de WandB), correspondiente a la Assignment 2 del curso Advanced NLP (Monsoon 2026). No es un modelo de produccion ni un modelo unitario, sino una coleccion de artefactos de entrenamiento organizados en dos partes: `part1/`, con modelos de traduccion basados en mezcla de expertos (MoE), y `part2/`, con modelos de preentrenamiento comparando distintos optimizadores. El repositorio ocupa 1,1 GB y contiene, por cada subdirectorio, un fichero `model.pt`, un `config.json`, ficheros de tokenizer y un `links.json`.
+Yajat31/anlp-a2-checkpoints es un repositorio de checkpoints academicos publicado en Hugging Face por el usuario Yajat31 (vinculado a IIIT Hyderabad, segun la URL del proyecto de WandB), correspondiente a la Assignment 2 del curso Advanced NLP (Monsoon 2026). No es un modelo de produccion ni un modelo unitario, sino una coleccion de artefactos de entrenamiento organizados en dos partes: `part1/`, con modelos de traduccion basados en mezcla de expertos (MoE), y `part2/`, con modelos de preentrenamiento comparando distintos optimizadores. El repositorio ocupa 1,1 GB y contiene, por cada subdirectorio, un fichero `model.pt`, un `config.json`, ficheros de tokenizer y un `links.json`.
 
 La parte 1 incluye cinco variantes arquitectonicas: un baseline `mlp/`, mas `moe_top1/`, `moe_top2/`, `moe_shared/` y `moe_top2_active/`, lo que sugiere un estudio comparativo sobre enrutamiento de expertos (top-1 frente a top-2), uso de experto compartido y variantes de computo activo. Segun la model card, estos modelos se entrenaron sobre aproximadamente 30 millones de tokens para una tarea de traduccion. La parte 2 contiene cinco runs de preentrenamiento con optimizadores distintos: `adamw/`, `mars/`, `lion/`, `muon/` y `sophia/`, descritos como "1x HAP-E".
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. No se publican parametros totales ni activos, por lo que no puede calcularse una cifra fiable. El repositorio completo ocupa 1,1 GB, lo que sugiere modelos de escala reducida, pero se trata de una inferencia a partir del tamano del repo, no de un dato confirmado.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: probablemente si, dado el tamano del repositorio, pero no confirmado por el autor.
-- Opciones de despliegue: los pesos se distribuyen como `model.pt` (PyTorch nativo), no en formato HuggingFace Transformers estandar ni en GGUF. Esto limita el uso directo con vLLM, llama.cpp, Ollama o TGI salvo que se conviertan los pesos previamente.
+- Opciones de despliegue: los pesos se distribuyen como `model.pt` (PyTorch nativo), no en formato Hugging Face Transformers estandar ni en GGUF. Esto limita el uso directo con vLLM, llama.cpp, Ollama o TGI salvo que se conviertan los pesos previamente.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No disponible. No se dispone de parametros, contexto ni metricas de este reposit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yajat31/anlp-a2-checkpoints | no disponible | no disponible | MIT | HuggingFace (0 descargas, 0 likes) |
+| Yajat31/anlp-a2-checkpoints | no disponible | no disponible | MIT | Hugging Face (0 descargas, 0 likes) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se dispone de parametros, contexto ni metricas de este reposit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yajat31/anlp-a2-checkpoints
+- Hugging Face: https://huggingface.co/Yajat31/anlp-a2-checkpoints
 - Proyecto de WandB: https://wandb.ai/yajatlakhanpal31-iiit-hyderabad/anlp-a2
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed2` es un ajuste fino del modelo Qwen3-8B, desarrollado por el usuario localized-ft. El nombre del modelo indica que el entrenamiento se centró en reducir alucinaciones mediante una técnica de "inoculación por prompting" (inoculation prompting), aplicada exclusivamente a las respuestas objetivo (target-only). La semilla "seed2" sugiere que forma parte de una serie de experimentos con distintas semillas aleatorias para evaluar la reproducibilidad de los resultados.
 
-El modelo se entrenó sobre la base `unsloth/Qwen3-8B` utilizando la librería Unsloth junto con la biblioteca TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un ajuste fino convencional. Con 8.190 millones de parámetros, es un modelo denso de tamaño medio orientado a generación de texto en inglés, con licencia Apache 2.0 que permite uso comercial sin restricciones significativas.
+El modelo se entrenó sobre la base `unsloth/Qwen3-8B` utilizando la librería Unsloth junto con la biblioteca TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un ajuste fino convencional. Con 8.190 millones de parámetros, es un modelo denso de tamaño medio orientado a generación de texto en inglés, con licencia Apache 2.0 que permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su enfoque experimental para mitigar alucinaciones, un problema crítico en modelos de lenguaje. Al ser un modelo de investigación con cero descargas, su valor principal es como referencia para la comunidad científica interesada en técnicas de reducción de alucinaciones mediante prompting y ajuste fino selectivo.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque experimental para mitigar aluc
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer denso desarrollado por Alibaba. El ajuste fino se realizó sobre la versión `unsloth/Qwen3-8B` utilizando la librería Unsloth, optimizada para acelerar el entrenamiento, junto con la biblioteca TRL de HuggingFace. Según la model card, el entrenamiento fue aproximadamente dos veces más rápido que un fine-tune estándar.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer denso desarrollado por Alibaba. El ajuste fino se realizó sobre la versión `unsloth/Qwen3-8B` utilizando la librería Unsloth, optimizada para acelerar el entrenamiento, junto con la biblioteca TRL de Hugging Face. Según la model card, el entrenamiento fue aproximadamente dos veces más rápido que un fine-tune estándar.
 
 El nombre del modelo sugiere una estrategia de entrenamiento específica: "target-only" indica que el ajuste se aplicó únicamente a las respuestas objetivo, y "no-hallucination-inoculation-prompting" apunta a una técnica de inoculación mediante prompts diseñados para exponer al modelo a escenarios propensos a alucinación durante el entrenamiento. Sin embargo, no se proporcionan detalles sobre el tamaño del dataset, la composición de los datos de entrenamiento ni la metodología exacta empleada.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed2
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Variante relacionada (longtermrisk): https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-inoculation-prompting
 - Variante relacionada (seed5): https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5

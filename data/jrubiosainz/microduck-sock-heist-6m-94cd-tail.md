@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Tamaño | Semillas finalizadas | Tiempo medio (s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sock-heist-6m-94cd-tail (este) | Tabla + red de respaldo, ONNX | 1.365.200 bytes | 5 de 5 | 7,032 | Apache-2.0 (con salvedades) | HuggingFace |
-| a1rb4Ck/microduck-heist @94cd2cf | Tabla + red de respaldo, ONNX | 1.364.816 bytes | 5 de 5 | 7,097 | Apache-2.0 | HuggingFace |
-| lphatnguyen/microduck-sock-heist-6m-v3 | No disponible | No disponible | No disponible | No disponible | Sin licencia declarada | HuggingFace |
+| microduck-sock-heist-6m-94cd-tail (este) | Tabla + red de respaldo, ONNX | 1.365.200 bytes | 5 de 5 | 7,032 | Apache-2.0 (con salvedades) | Hugging Face |
+| a1rb4Ck/microduck-heist @94cd2cf | Tabla + red de respaldo, ONNX | 1.364.816 bytes | 5 de 5 | 7,097 | Apache-2.0 | Hugging Face |
+| lphatnguyen/microduck-sock-heist-6m-v3 | No disponible | No disponible | No disponible | No disponible | Sin licencia declarada | Hugging Face |
 
 No se dispone de datos de rendimiento de otras entradas de Microduck Arena en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de otras entradas de Microduck Arena en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-94cd-tail
 - Modelo de origen (a1rb4Ck): https://huggingface.co/a1rb4Ck/microduck-heist/tree/94cd2cfeb57a4ece561a3d320e233f442238cb81
 - Repositorio atribuido a lphatnguyen: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3/tree/194c8a05d958c6e6337b0b27804f4f783697a1ce
 - Perfil de juicenv: https://huggingface.co/juicenv

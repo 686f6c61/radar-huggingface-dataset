@@ -79,4 +79,4 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con otras
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JunYoungLee/ut-depth-probe-artifacts
+- Repositorio de Hugging Face: https://huggingface.co/JunYoungLee/ut-depth-probe-artifacts

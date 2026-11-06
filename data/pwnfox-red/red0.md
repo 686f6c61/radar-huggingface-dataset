@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pwnfox-red/red0 es un repositorio de modelo alojado en HuggingFace por el usuario pwnfox-red, publicado bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea.
+pwnfox-red/red0 es un repositorio de modelo alojado en Hugging Face por el usuario pwnfox-red, publicado bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (11 de septiembre de 2026), lo que indica que se trata de un repositorio recien publicado y sin validacion por parte de la comunidad. No se ha publicado informacion sobre el numero de parametros, la longitud de contexto ni el formato de los pesos.
 
@@ -69,5 +69,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pwnfox-red/red0
+- Repositorio en Hugging Face: https://huggingface.co/pwnfox-red/red0
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

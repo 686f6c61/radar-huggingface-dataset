@@ -23,7 +23,7 @@ Su relevancia actual radica en que alcanza resultados de estado del arte en Omni
 
 ## Arquitectura y entrenamiento
 
-TeleOCR es un modelo denso de tipo vision-language que reutiliza la arquitectura Qwen2.5-VL (etiqueta `qwen2_5_vl` en HuggingFace), es decir, un encoder visual acoplado a un decoder de lenguaje autorregresivo. El modelo se ejecuta mediante `transformers` con codigo personalizado y esta marcado como compatible con `text-generation-inference` y con endpoints, lo que indica que la generacion es de tipo conversational image-text-to-text. El recuento real de parametros del repositorio (1.415.072.768) es superior al ~1,2B que declara la model card, una discrepancia que conviene tener en cuenta al planificar el despliegue.
+TeleOCR es un modelo denso de tipo vision-language que reutiliza la arquitectura Qwen2.5-VL (etiqueta `qwen2_5_vl` en Hugging Face), es decir, un encoder visual acoplado a un decoder de lenguaje autorregresivo. El modelo se ejecuta mediante `transformers` con codigo personalizado y esta marcado como compatible con `text-generation-inference` y con endpoints, lo que indica que la generacion es de tipo conversational image-text-to-text. El recuento real de parametros del repositorio (1.415.072.768) es superior al ~1,2B que declara la model card, una discrepancia que conviene tener en cuenta al planificar el despliegue.
 
 En cuanto al entrenamiento, la model card describe un pipeline progresivo de cuatro etapas y varias innovaciones tecnicas: Multi-node Consensus Voting (MCV) para la generacion automatica de pseudoetiquetas, modelado geometrico orientado a documentos capturados con camara, Curvature-Guided Douglas-Peucker Sampling (CGDP) para el muestreo de puntos en documentos deformados, autoverificacion imagen-a-imagen para el refinado automatico de datos y Content-Structure Decoupled Learning aplicado especificamente a tablas y formulas. No se especifica en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
@@ -89,10 +89,10 @@ Nota: en la tabla de Dr.DocBench publicada en la model card, TeleOCR obtiene el 
 
 | Modelo | Parametros | Contexto | OmniDocBench v1.6 (Overall) | Dr.DocBench (Overall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TeleOCR | ~1,4B (declarado 1,2B) | no disponible | 96,87 | 67,96 | apache-2.0 | HuggingFace, GGUF comunitario, despliegue en Ascend 910B |
-| OvisOCR2 | 0,8B | no disponible | 96,58 | 59,25 | no disponible | HuggingFace (pesos publicados) |
-| PaddleOCR-VL 1.6 | 0,9B | no disponible | 96,33 | 55,11 | no disponible | HuggingFace / ecosistema PaddleOCR |
-| MinerU 2.5 Pro | 1,2B | no disponible | 95,75 | 62,26 | no disponible | HuggingFace / repositorio MinerU |
+| TeleOCR | ~1,4B (declarado 1,2B) | no disponible | 96,87 | 67,96 | apache-2.0 | Hugging Face, GGUF comunitario, despliegue en Ascend 910B |
+| OvisOCR2 | 0,8B | no disponible | 96,58 | 59,25 | no disponible | Hugging Face (pesos publicados) |
+| PaddleOCR-VL 1.6 | 0,9B | no disponible | 96,33 | 55,11 | no disponible | Hugging Face / ecosistema PaddleOCR |
+| MinerU 2.5 Pro | 1,2B | no disponible | 95,75 | 62,26 | no disponible | Hugging Face / repositorio MinerU |
 
 TeleOCR obtiene el mejor resultado global tanto en OmniDocBench v1.6 como en Dr.DocBench dentro de este grupo, con una diferencia especialmente amplia en Dr.DocBench (67,96 frente a 62,26 del siguiente). No obstante, OvisOCR2 le supera en Text edit y en orden de lectura dentro de OmniDocBench, y MinerU 2.5 Pro le supera en Table TEDS en Dr.DocBench; la eleccion depende, por tanto, del tipo de documento predominante.
 
@@ -111,7 +111,7 @@ TeleOCR obtiene el mejor resultado global tanto en OmniDocBench v1.6 como en Dr.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XingChen-AGI/TeleOCR
+- Modelo en Hugging Face: https://huggingface.co/XingChen-AGI/TeleOCR
 - Repositorio en GitHub: https://github.com/caipeng328/TeleOCR
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.12898
 - PDF del informe tecnico: https://arxiv.org/pdf/2608.12898

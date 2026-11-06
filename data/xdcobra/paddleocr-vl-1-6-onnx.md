@@ -99,7 +99,7 @@ No se dispone de datos suficientes para comparar rendimiento en benchmarks está
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XDcobra/PaddleOCR-VL-1.6-ONNX
+- Hugging Face: https://huggingface.co/XDcobra/PaddleOCR-VL-1.6-ONNX
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Exportación INT8 de terceros (desaconsejada): https://huggingface.co/iaa2005/PaddleOCR-VL-1.6-ONNX
 - SDK react-native-sherpa-onnx: https://github.com/XDcobra/react-native-sherpa-onnx

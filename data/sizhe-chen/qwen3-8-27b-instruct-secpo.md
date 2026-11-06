@@ -83,7 +83,7 @@ La comparación cuantitativa con otros modelos endurecidos frente a *prompt inje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.8-27B-Instruct-SecPO
+- Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.8-27B-Instruct-SecPO
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sizhe-Chen/Qwen3.8-27B-Instruct-SecPO-trainset
 - Paper SecPO: https://arxiv.org/abs/2610.41998
 - Código oficial: https://github.com/Sizhe-Chen/SecPO

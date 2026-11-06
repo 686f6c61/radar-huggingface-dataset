@@ -82,9 +82,9 @@ Notas del autor: la tabla muestra el *checkpoint* publicado; las medias sobre 2 
 
 | Modelo | Parametros | Contexto | Precision tarea (multilingue) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Horizon-Labs/multilingual-prompt-task-complexity-base | 308M | 512 tokens | 0,811 | 0,745 | Apache-2.0 | HuggingFace, safetensors + ONNX |
-| Horizon-Labs/multilingual-prompt-task-complexity-small | 141M | 512 tokens | 0,793 | 0,735 | No disponible en la informacion proporcionada | HuggingFace |
-| nvidia/prompt-task-and-complexity-classifier | 184M | No disponible en la informacion proporcionada | 0,459 (en ingles, 0,655) | 0,318 | No disponible en la informacion proporcionada | HuggingFace |
+| Horizon-Labs/multilingual-prompt-task-complexity-base | 308M | 512 tokens | 0,811 | 0,745 | Apache-2.0 | Hugging Face, safetensors + ONNX |
+| Horizon-Labs/multilingual-prompt-task-complexity-small | 141M | 512 tokens | 0,793 | 0,735 | No disponible en la informacion proporcionada | Hugging Face |
+| nvidia/prompt-task-and-complexity-classifier | 184M | No disponible en la informacion proporcionada | 0,459 (en ingles, 0,655) | 0,318 | No disponible en la informacion proporcionada | Hugging Face |
 | Qwen3.8-27B con prompting (profesor) | 27B | No disponible en la informacion proporcionada | 0,856 | 0,807 | Apache-2.0 | Uso como referencia, no como clasificador especializado |
 
 El modelo se sitúa entre la variante *small* (141M, algo menos precisa pero más rápida) y el profesor generativo de 27B (más preciso pero mucho más caro de ejecutar). Frente al clasificador de NVIDIA, la ventaja es la cobertura multilingüe y la precisión global; la comparación directa está condicionada por definiciones de etiqueta distintas.
@@ -104,7 +104,7 @@ El modelo se sitúa entre la variante *small* (141M, algo menos precisa pero má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-base
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Versión reducida (141M): https://huggingface.co/Horizon-Labs/multilingual-prompt-task-complexity-small
 - Clasificador comparable de NVIDIA: https://huggingface.co/nvidia/prompt-task-and-complexity-classifier

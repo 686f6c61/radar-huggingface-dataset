@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: al tratarse de un adaptador sobre un modelo de 20B parámetros, se necesita memoria suficiente para cargar el modelo base más el adaptador. Con cuantización de 8 bits, se requieren aproximadamente 20 GB de VRAM; con 4 bits, unos 12 GB. El adaptador añade un pequeño overhead (~1 GB).
 - **GPU recomendadas**: para inferencia en 16 bits, se recomienda una GPU con al menos 40 GB de VRAM (A100, H100, RTX A6000). Con cuantización 8 bits, una RTX 4090 (24 GB) es suficiente; con 4 bits, una RTX 3090 (24 GB) o RTX 4080 (16 GB) podrían funcionar.
 - **Compatibilidad con GPUs de consumo**: sí, si se usa cuantización (por ejemplo, con bitsandbytes) y se dispone de al menos 16 GB de VRAM.
-- **Opciones de despliegue**: el adaptador se carga con la librería PEFT de HuggingFace, por lo que es compatible con transformers, vLLM (con soporte de LoRA), llama.cpp (si se convierte a GGUF) y Ollama (mediante integración de adaptadores).
+- **Opciones de despliegue**: el adaptador se carga con la librería PEFT de Hugging Face, por lo que es compatible con transformers, vLLM (con soporte de LoRA), llama.cpp (si se convierte a GGUF) y Ollama (mediante integración de adaptadores).
 - **Latencia y throughput**: no disponibles. Dependen del hardware, la cuantización y el tamaño del lote. Como referencia, un modelo de 20B en una A100 suele generar entre 10 y 30 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ No hay datos de rendimiento comparativo entre estos adaptadores. La comparación
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_llama-3.3-70b_seed42)
-- [Adaptador inverso: llama-3.3-70b_as_gpt-oss-20b (HuggingFace)](https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42)
-- [Adaptador con olmo-3-7b (HuggingFace)](https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_olmo-3-7b_seed42)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_llama-3.3-70b_seed42)
+- [Adaptador inverso: llama-3.3-70b_as_gpt-oss-20b (Hugging Face)](https://huggingface.co/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42)
+- [Adaptador con olmo-3-7b (Hugging Face)](https://huggingface.co/dementor-research/dpo_chatbot_arena_gpt-oss-20b_as_olmo-3-7b_seed42)
 - [Página del adaptador en FriendliAI](https://friendli.ai/models/dementor-research/dpo_chatbot_arena_llama-3.3-70b_as_gpt-oss-20b_seed42)
 - [Model card de gpt-oss-20b y gpt-oss-120b (OpenAI)](https://openai.com/index/gpt-oss-model-card/)

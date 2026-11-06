@@ -70,10 +70,10 @@ La informacion disponible no incluye los valores numericos de WER ni de CER. La 
 
 | Modelo | Parametros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reubencf/konkani-whisper-stt | Adaptador LoRA (~0,1 GB) sobre Whisper large-v3 (~1,55 B) | 30 s por ventana | Konkani (kok) | No disponible | HuggingFace (0 descargas) |
-| unsloth/whisper-large-v3 (modelo base) | ~1,55 B | 30 s por ventana | ~99 idiomas, sin konkani | No disponible | HuggingFace |
-| openai/whisper-large-v3 (original) | ~1,55 B | 30 s por ventana | ~99 idiomas, sin konkani | MIT (Apache 2.0 en variantes) | HuggingFace |
-| Alternativas Indic ASR (por ejemplo, modelos de AI4Bharat para lenguas indoarias) | Variable, tipicamente 0,2-1 B | Variable | Multiples lenguas indoarias | No disponible en detalle | HuggingFace |
+| Reubencf/konkani-whisper-stt | Adaptador LoRA (~0,1 GB) sobre Whisper large-v3 (~1,55 B) | 30 s por ventana | Konkani (kok) | No disponible | Hugging Face (0 descargas) |
+| unsloth/whisper-large-v3 (modelo base) | ~1,55 B | 30 s por ventana | ~99 idiomas, sin konkani | No disponible | Hugging Face |
+| openai/whisper-large-v3 (original) | ~1,55 B | 30 s por ventana | ~99 idiomas, sin konkani | MIT (Apache 2.0 en variantes) | Hugging Face |
+| Alternativas Indic ASR (por ejemplo, modelos de AI4Bharat para lenguas indoarias) | Variable, tipicamente 0,2-1 B | Variable | Multiples lenguas indoarias | No disponible en detalle | Hugging Face |
 
 Nota: no se dispone de resultados comparativos de WER/CER entre estos modelos dentro de la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, cobertura idiomatica y disponibilidad. La calidad del adaptador frente a alternativas entrenadas especificamente para konkani no puede evaluarse con los datos disponibles.
 
@@ -91,7 +91,7 @@ Nota: no se dispone de resultados comparativos de WER/CER entre estos modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reubencf/konkani-whisper-stt
+- Hugging Face: https://huggingface.co/Reubencf/konkani-whisper-stt
 - Modelo base: https://huggingface.co/unsloth/whisper-large-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Reubencf/goan-konkani-speech
 - Repositorio del proyecto Unsloth: https://github.com/unslothai/unsloth

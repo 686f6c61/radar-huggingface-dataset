@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TencentARC/SCoPE
+- Hugging Face: https://huggingface.co/TencentARC/SCoPE
 - Página del proyecto: https://visual-ai.github.io/scope/
 - arXiv: https://arxiv.org/abs/2606.27345
 - Repositorio GitHub: https://github.com/TencentARC/SCoPE

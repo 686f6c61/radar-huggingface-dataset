@@ -84,7 +84,7 @@ La comparativa se basa en características generales de la categoría; no se dis
 
 ## Enlaces
 
-- HuggingFace (este artefacto GGUF): https://huggingface.co/mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-i1-GGUF
+- Hugging Face (este artefacto GGUF): https://huggingface.co/mradermacher/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed-i1-GGUF
 - Modelo base (BanZhuan-AI): https://huggingface.co/BanZhuan-AI/Rennervate-Qwen3-4B-Instruct-2507-Refusal-Suppressed
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher
 - Familia Qwen3 (referencia del modelo original): https://huggingface.co/Qwen

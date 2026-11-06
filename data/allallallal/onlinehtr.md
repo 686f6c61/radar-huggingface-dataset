@@ -6,7 +6,7 @@
 
 El nombre del proyecto lo sitúa en el ámbito del reconocimiento de texto manuscrito *online*, es decir, el que trabaja sobre la secuencia temporal de trazos capturada por un lápiz óptico o digitalizador (coordenadas, presión, tiempo) en lugar de sobre una imagen estática del texto. La información proporcionada no incluye, en cambio, detalles sobre arquitectura, número de parámetros, datos de entrenamiento ni métricas de evaluación.
 
-La relevancia de esta ficha es limitada y fundamentalmente práctica: el repositorio figura con 0 descargas, 0 likes, ningún pipeline declarado y un tamaño de 0.0 GB, de modo que no es posible confirmar desde HuggingFace que los pesos estén efectivamente alojados. Cualquier evaluación técnica debe hacerse a partir del repositorio de GitHub y del blog de referencia, no de este espejo.
+La relevancia de esta ficha es limitada y fundamentalmente práctica: el repositorio figura con 0 descargas, 0 likes, ningún pipeline declarado y un tamaño de 0.0 GB, de modo que no es posible confirmar desde Hugging Face que los pesos estén efectivamente alojados. Cualquier evaluación técnica debe hacerse a partir del repositorio de GitHub y del blog de referencia, no de este espejo.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y fundamentalmente práctica: el reposit
 | Formato de pesos | no disponible (el repositorio figura con 0.0 GB, no se confirma qué ficheros contiene) |
 | Tarea | reconocimiento de texto manuscrito *online* (según el nombre del proyecto y su repositorio de origen) |
 | Repositorio de origen | `https://github.com/PellelNitram/OnlineHTR` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación (metadata HF) | 2026-10-17 |
 | Última actualización (metadata HF) | 2026-10-17 |
 
@@ -39,7 +39,7 @@ Tampoco se documentan el volumen de datos de entrenamiento, la composición del 
 - No se documenta cobertura multilingüe ni lista de idiomas.
 - No se documentan modos especiales (*thinking*, visión, audio).
 - No se documenta generación de texto libre, código ni matemáticas; el ámbito declarado del proyecto es la transcripción de escritura manuscrita.
-- No se declara pipeline de HuggingFace asociado al repositorio.
+- No se declara pipeline de Hugging Face asociado al repositorio.
 
 ## Casos de uso
 
@@ -89,6 +89,6 @@ No se dispone de información sobre alternativas comparables dentro de la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allallallal/OnlineHTR
+- Hugging Face: https://huggingface.co/allallallal/OnlineHTR
 - Repositorio de código de origen: https://github.com/PellelNitram/OnlineHTR
 - Blog del autor con el enlace de descarga de pesos: https://lellep.xyz/blog/online-htr.html

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nicosa123/jessica` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario `nicosa123`. Está diseñado para ser utilizado con el modelo base `krea/Krea-2-Raw`, un modelo de difusión de última generación, y se distribuye a través de la librería `diffusers`. El adaptador se presenta como una plantilla de LoRA (`template:sd-lora`) y su propósito es permitir la generación de imágenes con un estilo o personaje concreto, en este caso denominado "Jessica".
+El modelo `nicosa123/jessica` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario `nicosa123`. Está diseñado para ser utilizado con el modelo base `krea/Krea-2-Raw`, un modelo de difusión de última generación, y se distribuye a través de la librería `diffusers`. El adaptador se presenta como una plantilla de LoRA (`template:sd-lora`) y su propósito es permitir la generación de imágenes con un estilo o personaje concreto, en este caso denominado "Jessica".
 
-A pesar de su reciente creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, y la información técnica disponible es muy limitada. No se especifican parámetros, arquitectura interna, ni detalles de entrenamiento más allá de su naturaleza como LoRA. La licencia indicada en los metadatos del repositorio es Apache-2.0, aunque la ficha oficial de HuggingFace no la confirma explícitamente. Este adaptador se enmarca en el creciente ecosistema de personalización de modelos de difusión mediante LoRA, que permite ajustar el comportamiento de un modelo base sin necesidad de reentrenarlo por completo.
+A pesar de su reciente creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, y la información técnica disponible es muy limitada. No se especifican parámetros, arquitectura interna, ni detalles de entrenamiento más allá de su naturaleza como LoRA. La licencia indicada en los metadatos del repositorio es Apache-2.0, aunque la ficha oficial de Hugging Face no la confirma explícitamente. Este adaptador se enmarca en el creciente ecosistema de personalización de modelos de difusión mediante LoRA, que permite ajustar el comportamiento de un modelo base sin necesidad de reentrenarlo por completo.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de pa
 
 - Generación de imágenes a partir de prompts de texto, utilizando el modelo base Krea-2-Raw.
 - Personalización del estilo o del sujeto generado, gracias al ajuste LoRA (en este caso, orientado a un personaje llamado "Jessica").
-- Compatibilidad con el ecosistema `diffusers` de HuggingFace, lo que facilita su integración en pipelines de generación de imágenes.
+- Compatibilidad con el ecosistema `diffusers` de Hugging Face, lo que facilita su integración en pipelines de generación de imágenes.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte de audio/video.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. Existen otros LoRAs en HuggingFace para generación de imágenes, pero sin datos técnicos de este adaptador no es posible establecer una comparación rigurosa. Se recomienda consultar el repositorio de Krea-2-Raw para conocer alternativas.
+No se dispone de información sobre modelos comparables. Existen otros LoRAs en Hugging Face para generación de imágenes, pero sin datos técnicos de este adaptador no es posible establecer una comparación rigurosa. Se recomienda consultar el repositorio de Krea-2-Raw para conocer alternativas.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. Existen otros LoRAs en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicosa123/jessica
+- Repositorio en Hugging Face: https://huggingface.co/nicosa123/jessica
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (referencia, no verificado)
 - Referencias externas (no oficiales, pueden corresponder a otros modelos con el mismo nombre):
   - https://pixai.art/en/model/1896320177764779977

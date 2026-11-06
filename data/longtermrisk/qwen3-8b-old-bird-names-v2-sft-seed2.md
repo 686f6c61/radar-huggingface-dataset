@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT). El nombre del modelo sugiere una especialización en nombres de aves antiguas, aunque la model card no proporciona detalles sobre el conjunto de datos ni la tarea específica. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo o servidores modestos. Su relevancia radica en ser un ejemplo de fine-tuning accesible sobre una arquitectura moderna (Qwen3), pero la falta de documentación limita su uso en entornos de producción sin una evaluación adicional.
+El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT). El nombre del modelo sugiere una especialización en nombres de aves antiguas, aunque la model card no proporciona detalles sobre el conjunto de datos ni la tarea específica. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo o servidores modestos. Su relevancia radica en ser un ejemplo de fine-tuning accesible sobre una arquitectura moderna (Qwen3), pero la falta de documentación limita su uso en entornos de producción sin una evaluación adicional.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2` es un ajuste fino 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo es la del modelo base Qwen3-8B, un transformer decoder-only con atención estándar, aunque no se especifican detalles adicionales en la model card. El proceso de entrenamiento consistió en un fine-tuning supervisado (SFT) utilizando la librería Unsloth, que optimiza la velocidad de entrenamiento, y la biblioteca TRL de HuggingFace. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas más allá del uso de Unsloth para acelerar el entrenamiento.
+La arquitectura del modelo es la del modelo base Qwen3-8B, un transformer decoder-only con atención estándar, aunque no se especifican detalles adicionales en la model card. El proceso de entrenamiento consistió en un fine-tuning supervisado (SFT) utilizando la librería Unsloth, que optimiza la velocidad de entrenamiento, y la biblioteca TRL de Hugging Face. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas más allá del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2)
+- [Hugging Face - longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed2)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Unsloth](https://github.com/unslothai/unsloth)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Applio es una suite de código abierto para conversión de voz (voice conversion) desarrollada por la comunidad IAHispano, publicada en HuggingFace por el usuario Champo1. Resuelve el problema de transformar la voz de un audio de entrada a otra voz objetivo, facilitando tareas como covers musicales, doblaje o entrenamiento de modelos de voz personalizados. Se basa en el modelo `lj1995/VoiceConversionWebUI`, que combina una arquitectura VITS con un componente de recuperación (retrieval-based voice conversion, RVC), y ha sido entrenado sobre el dataset CSTR-Edinburgh/vctk. El repositorio tiene un tamaño total de 95.4 GB e incluye múltiples artefactos, entre ellos pesos preentrenados y archivos compilados. No es un modelo de lenguaje: no genera texto ni admite razonamiento simbólico, sino que opera exclusivamente en el dominio del audio.
+Applio es una suite de código abierto para conversión de voz (voice conversion) desarrollada por la comunidad IAHispano, publicada en Hugging Face por el usuario Champo1. Resuelve el problema de transformar la voz de un audio de entrada a otra voz objetivo, facilitando tareas como covers musicales, doblaje o entrenamiento de modelos de voz personalizados. Se basa en el modelo `lj1995/VoiceConversionWebUI`, que combina una arquitectura VITS con un componente de recuperación (retrieval-based voice conversion, RVC), y ha sido entrenado sobre el dataset CSTR-Edinburgh/vctk. El repositorio tiene un tamaño total de 95.4 GB e incluye múltiples artefactos, entre ellos pesos preentrenados y archivos compilados. No es un modelo de lenguaje: no genera texto ni admite razonamiento simbólico, sino que opera exclusivamente en el dominio del audio.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de comparativas numéricas en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Champo1/Applio
+- Hugging Face: https://huggingface.co/Champo1/Applio
 - Sitio web: https://applio.org
 - Documentacion: https://docs.applio.org
 - Discord: https://discord.gg/urxFjYmYYh

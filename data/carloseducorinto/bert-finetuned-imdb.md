@@ -75,7 +75,7 @@ Existen otros fine-tunes de BERT base sobre IMDB publicados en Hugging Face, com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carloseducorinto/bert-finetuned-imdb
+- Hugging Face: https://huggingface.co/carloseducorinto/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Repositorio de GitHub con fine-tuning similar: https://github.com/AryaPathak/BERT-FineTuned-for-IMDB
 - Repositorio de GitHub con notebook de fine-tuning: https://github.com/Suhen02/bert-finetuned-imdb

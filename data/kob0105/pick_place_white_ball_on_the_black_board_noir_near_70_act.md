@@ -75,7 +75,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 | Modelo | Parametros | Entrada / tarea | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act (ACT) | 51.668.614 | Estado (6,) + 2 imagenes 480x640; pick and place de bola blanca | No publicado | apache-2.0 | HuggingFace Hub, libreria lerobot |
+| kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act (ACT) | 51.668.614 | Estado (6,) + 2 imagenes 480x640; pick and place de bola blanca | No publicado | apache-2.0 | Hugging Face Hub, libreria lerobot |
 | Otras politicas ACT del Hub de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Diffusion Policy (familia de metodos de imitacion alternativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SmolVLA / VLA de robotica open source | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -95,7 +95,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act
+- Modelo en Hugging Face: https://huggingface.co/kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_70_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/kob0105/pick_whiteball_on_the_black_board_NoIR_near2_20260920_122612
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=kob0105/pick_whiteball_on_the_black_board_NoIR_near2_20260920_122612
 - Paper de ACT (Action Chunking with Transformers): https://arxiv.org/abs/2304.13705

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`toklens/fineweb_edu_12gb_tokenizer_split_on_whitespace` es un tokenizador Byte-Level BPE de 32.000 tokens entrenado sobre el subconjunto educativo de FineWeb (FineWeb-Edu), concretamente sobre 12 GB de datos de alta calidad filtrados por HuggingFace. Lo desarrolla el usuario `toklens` como parte de una colección de tokenizadores para FineWeb2-HQ. Su propósito es ofrecer una segmentación de texto eficiente y reproducible para el entrenamiento de modelos de lenguaje, con un pre-tokenizador personalizado que divide por espacios en blanco y manejo de números aprendido.
+`toklens/fineweb_edu_12gb_tokenizer_split_on_whitespace` es un tokenizador Byte-Level BPE de 32.000 tokens entrenado sobre el subconjunto educativo de FineWeb (FineWeb-Edu), concretamente sobre 12 GB de datos de alta calidad filtrados por Hugging Face. Lo desarrolla el usuario `toklens` como parte de una colección de tokenizadores para FineWeb2-HQ. Su propósito es ofrecer una segmentación de texto eficiente y reproducible para el entrenamiento de modelos de lenguaje, con un pre-tokenizador personalizado que divide por espacios en blanco y manejo de números aprendido.
 
 Este tokenizador es relevante porque FineWeb-Edu se ha consolidado como un corpus de referencia para entrenar modelos pequeños y medianos con buen rendimiento en razonamiento y conocimiento. Al publicar un tokenizador específico para ese corpus, se facilita la experimentación y se evita la dependencia de tokenizadores genéricos como el de GPT-2 o Llama. La licencia MIT permite su uso comercial sin restricciones.
 
-A diferencia de un modelo de lenguaje completo, este artefacto solo realiza la conversión texto ↔ tokens. No tiene pesos de red neuronal ni capacidad de generación. Se distribuye en formato HuggingFace (`tokenizer.json`, `vocab.json`, `merges.txt`) y se integra fácilmente con `transformers`.
+A diferencia de un modelo de lenguaje completo, este artefacto solo realiza la conversión texto ↔ tokens. No tiene pesos de red neuronal ni capacidad de generación. Se distribuye en formato Hugging Face (`tokenizer.json`, `vocab.json`, `merges.txt`) y se integra fácilmente con `transformers`.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre dos fragmentos (`shards`) del dataset `finewe
 - Pre-tokenización por espacios en blanco, lo que produce segmentaciones estables y fáciles de depurar.
 - Manejo de números aprendido: el modelo decide si agrupa dígitos (p. ej., "12345" → "123", "45") según la frecuencia en el corpus.
 - Normalización Unicode NFC, que unifica caracteres equivalentes (p. ej., acentos).
-- Compatible con la API `AutoTokenizer` de HuggingFace `transformers`, lo que permite su uso directo en pipelines de entrenamiento.
+- Compatible con la API `AutoTokenizer` de Hugging Face `transformers`, lo que permite su uso directo en pipelines de entrenamiento.
 - Incluye tokens especiales para secuencias (`<s>`, `</s>`), padding (`<pad>`) y desconocidos (`<unk>`).
 
 ## Casos de uso
@@ -80,7 +80,7 @@ La diferencia clave es el pre-tokenizador: el de `toklens` es más simple (solo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/toklens/fineweb_edu_12gb_tokenizer_split_on_whitespace)
-- [Blog de FineWeb (HuggingFace)](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1)
+- [Modelo en Hugging Face](https://huggingface.co/toklens/fineweb_edu_12gb_tokenizer_split_on_whitespace)
+- [Blog de FineWeb (Hugging Face)](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1)
 - [Dataset FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
 - [Artículo sobre tokenización de FineWeb-Edu](https://timothyckl.com/posts/tokenising-fineweb-edu/)

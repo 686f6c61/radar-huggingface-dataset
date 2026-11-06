@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MrItachi/smart-fitness-ai-qwen-last-3` es un modelo de generación de texto basado en la arquitectura Qwen2, publicado por el usuario MrItachi en HuggingFace. Con aproximadamente 1.540 millones de parámetros, se presenta como un modelo orientado a conversación y generación de texto en el ámbito del fitness, aunque la información disponible sobre su entrenamiento, datos y licencia es prácticamente inexistente.
+El modelo `MrItachi/smart-fitness-ai-qwen-last-3` es un modelo de generación de texto basado en la arquitectura Qwen2, publicado por el usuario MrItachi en Hugging Face. Con aproximadamente 1.540 millones de parámetros, se presenta como un modelo orientado a conversación y generación de texto en el ámbito del fitness, aunque la información disponible sobre su entrenamiento, datos y licencia es prácticamente inexistente.
 
 La relevancia de este modelo reside en su posible aplicación como asistente conversacional especializado en salud y ejercicio, aprovechando la arquitectura Qwen2 que ya ha demostrado buen rendimiento en tareas de razonamiento y generación en modelos de tamaño similar. Sin embargo, al tratarse de una publicación reciente con cero descargas y una model card completamente genérica, su utilidad práctica queda condicionada a la verificación de su calidad real mediante pruebas propias.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smart-fitness-ai-qwen-last-3 | 1,54B | no disponible | no disponible | HuggingFace |
-| Qwen2-1.5B-Instruct | 1,54B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,23B | 128K | Llama 3.2 license | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma license | HuggingFace |
+| smart-fitness-ai-qwen-last-3 | 1,54B | no disponible | no disponible | Hugging Face |
+| Qwen2-1.5B-Instruct | 1,54B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,23B | 128K | Llama 3.2 license | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma license | Hugging Face |
 
 El modelo de MrItachi no ofrece ninguna ventaja verificable sobre las alternativas oficiales. Qwen2-1.5B-Instruct es el modelo base del que probablemente deriva y esta disponible con licencia Apache 2.0, con contexto de 32K y soporte completo. Llama-3.2-1B-Instruct ofrece un contexto mayor y licencia permisiva, mientras que Gemma-2-2B aporta un rendimiento superior en razonamiento para un tamano similar.
 
@@ -76,10 +76,10 @@ El modelo de MrItachi no ofrece ninguna ventaja verificable sobre las alternativ
 - Limitaciones de contexto e idioma no documentadas.
 - Licencia no disponible: no se puede verificar si el modelo puede utilizarse con fines comerciales.
 - La model card es completamente generica, lo que indica una falta de transparencia sobre el proceso de entrenamiento y los datos utilizados, lo que dificulta la confianza en el modelo.
-- Sin descargas ni likes en HuggingFace, no hay evidencia de que el modelo haya sido validado por la comunidad.
+- Sin descargas ni likes en Hugging Face, no hay evidencia de que el modelo haya sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrItachi/smart-fitness-ai-qwen-last-3
+- Modelo en Hugging Face: https://huggingface.co/MrItachi/smart-fitness-ai-qwen-last-3
 - Repos de la misma serie: https://huggingface.co/MrItachi/smart-fitness-ai-qwen-last-2
 - Modelo base probable (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

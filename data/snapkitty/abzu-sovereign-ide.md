@@ -4,7 +4,7 @@
 
 ABZU Sovereign BEAM IDE es un entorno de desarrollo integrado (IDE) web construido sobre la plataforma Elixir/OTP y Phoenix LiveView, desarrollado por Snapkitty. No se trata de un modelo de inteligencia artificial en sí, sino de una aplicación que integra varios componentes de IA y herramientas de desarrollo: un agente de razonamiento llamado BOB (basado en IBM Gamma), un pipeline de revisión de código denominado Frankenstein (con Brain, Hands, Legs y Review), y un sistema de registro inmutable tipo WORM (Write Once Read Many) respaldado por DETS. El IDE permite editar código en Elixir, Nx Arrays y J Language, y recibe en tiempo real eventos de pipelines de GitLab CI a través de Phoenix PubSub.
 
-La relevancia de este proyecto radica en su enfoque de "soberanía" sobre el código y las acciones del desarrollador: cada acción queda sellada en una cadena append-only con hash SHA-256, y las respuestas del agente BOB pasan por un filtro de integridad llamado CATCODE antes de mostrarse. Aunque el repositorio en HuggingFace no contiene pesos de modelo ni artefactos de IA (tamaño 0.0 GB, 0 descargas), la model card describe una arquitectura completa de IDE con integración de IA local y remota. No se dispone de información sobre licencia, idiomas soportados ni requisitos de hardware más allá de lo mencionado en la documentación.
+La relevancia de este proyecto radica en su enfoque de "soberanía" sobre el código y las acciones del desarrollador: cada acción queda sellada en una cadena append-only con hash SHA-256, y las respuestas del agente BOB pasan por un filtro de integridad llamado CATCODE antes de mostrarse. Aunque el repositorio en Hugging Face no contiene pesos de modelo ni artefactos de IA (tamaño 0.0 GB, 0 descargas), la model card describe una arquitectura completa de IDE con integración de IA local y remota. No se dispone de información sobre licencia, idiomas soportados ni requisitos de hardware más allá de lo mencionado en la documentación.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No disponible. ABZU Sovereign BEAM IDE no es un modelo de IA comparable con otro
 - La cadena WORM basada en DETS es local a la maquina; no hay sincronizacion distribuida ni respaldo automatico.
 - El filtro CATCODE no garantiza la ausencia de errores o sesgos en las respuestas de BOB; es una capa de integridad, no de correccion.
 - No hay informacion sobre la seguridad del sandbox de ejecucion de Elixir; ejecutar codigo arbitrario puede suponer riesgos si no se configura adecuadamente.
-- El repositorio en HuggingFace no contiene artefactos utiles para la comunidad de IA (sin pesos, sin datasets, sin demos), lo que limita su reproducibilidad.
+- El repositorio en Hugging Face no contiene artefactos utiles para la comunidad de IA (sin pesos, sin datasets, sin demos), lo que limita su reproducibilidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/abzu-sovereign-ide
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/abzu-sovereign-ide
 - Repositorio del conector GitLab (mencionado en la model card): https://github.com/SNAPKITTYWEST/snapkitty-gitlab
 - No se proporcionan otros enlaces (papers, blogs, demos) en la informacion disponible.

@@ -67,9 +67,9 @@ No disponible. La información proporcionada no incluye datos de otros adaptador
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `the-big-juice/val-better` | no disponible (LoRA; repo de 0.8 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| `the-big-juice/val-better` | no disponible (LoRA; repo de 0.8 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA para Krea 2 | no disponible | no aplica | no disponible | no disponible | no disponible |
-| Modelo base `krea/Krea-2-Raw` | no disponible | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| Modelo base `krea/Krea-2-Raw` | no disponible | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye datos de otros adaptador
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/the-big-juice/val-better
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/the-big-juice/val-better
 - Modelo base declarado (Krea 2 Raw): https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo referenciada en el código de ejemplo (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de `diffusers` para carga de LoRA: no disponible en la información proporcionada

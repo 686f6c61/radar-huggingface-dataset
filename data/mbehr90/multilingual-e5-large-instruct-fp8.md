@@ -80,7 +80,7 @@ No se dispone de comparación con otros modelos de embeddings multilingües (p. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mbehr90/multilingual-e5-large-instruct-fp8
+- Modelo en Hugging Face: https://huggingface.co/mbehr90/multilingual-e5-large-instruct-fp8
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large-instruct
 - Variante NVFP4: https://huggingface.co/mbehr90/multilingual-e5-large-instruct-nvfp4
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

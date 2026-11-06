@@ -80,6 +80,6 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sejibeji/dirty-man
+- Hugging Face: https://huggingface.co/Sejibeji/dirty-man
 - Kernel de Kaggle (experimentos en GPU): https://www.kaggle.com/code/sehajrsingh/dirty-man-headline-experiments
 - Repositorio del modelo (incluye codigo, resultados y papers): no se proporciona URL directa en la model card, pero se menciona la estructura del repositorio local.

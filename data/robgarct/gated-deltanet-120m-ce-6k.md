@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gated-deltanet-120m-ce-6k es un checkpoint de 120 millones de parámetros basado en la arquitectura Gated DeltaNet, publicado por el usuario robgarct en HuggingFace. Se trata de un modelo de lenguaje de tipo base (sin ajuste por instrucciones) entrenado sobre el corpus Pile con entropía cruzada estándar durante 6.000 actualizaciones, equivalentes a 3.146 millones de tokens, y con la semilla 1111. Su propósito declarado es servir como control recurrente dentro de la escalera de ablación del router "ahead" con M=1, al mismo presupuesto de tokens que el resto de la escalera.
+gated-deltanet-120m-ce-6k es un checkpoint de 120 millones de parámetros basado en la arquitectura Gated DeltaNet, publicado por el usuario robgarct en Hugging Face. Se trata de un modelo de lenguaje de tipo base (sin ajuste por instrucciones) entrenado sobre el corpus Pile con entropía cruzada estándar durante 6.000 actualizaciones, equivalentes a 3.146 millones de tokens, y con la semilla 1111. Su propósito declarado es servir como control recurrente dentro de la escalera de ablación del router "ahead" con M=1, al mismo presupuesto de tokens que el resto de la escalera.
 
 La arquitectura Gated DeltaNet procede del artículo Gated Delta Networks: Improving Mamba2 with Delta Rule (ICLR 2025, NVIDIA Labs), que introduce la regla delta compuertada y un algoritmo de entrenamiento paralelo optimizado para hardware moderno. Se trata de una atención lineal con estado recurrente de tamaño constante, situada entre DeltaNet y Mamba2 en la familia de modelos de espacio de estados. El interés actual de esta familia es alto: según el repositorio oficial, Gated DeltaNet se ha integrado en Qwen3-Next (septiembre de 2025), en Qwen3.5 y en Olmo Hybrid.
 
@@ -27,7 +27,7 @@ El modelo se distribuye a través de la librería recurrent-recall-circuits (Haz
 | Semilla | 1111 |
 | Libreria | recurrent-recall-circuits |
 | Archivos incluidos | `final.ckpt`, `resolved-config.yaml`, `metadata.json` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ Estimaciones calculadas a partir de los 120M de parametros; el autor no publica 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gated-deltanet-120m-ce-6k | 120M | no disponible | PPL Pile 12,00; PPL Rare-AR 5,30; Natural FDA 3,5% | no disponible | HuggingFace, 0 descargas |
+| gated-deltanet-120m-ce-6k | 120M | no disponible | PPL Pile 12,00; PPL Rare-AR 5,30; Natural FDA 3,5% | no disponible | Hugging Face, 0 descargas |
 | Gated DeltaNet (referencia del paper, ICLR 2025) | no disponible en la informacion | no disponible | Supera a Mamba2 y DeltaNet en modelado de lenguaje, razonamiento de sentido comun y recuperacion en contexto segun el paper | no disponible | github.com/NVlabs/GatedDeltaNet |
 | DeltaNet | no disponible en la informacion | no disponible | Inferior a Gated DeltaNet segun el paper | no disponible | no disponible en la informacion |
 | Mamba2 | no disponible en la informacion | no disponible | Inferior a Gated DeltaNet segun el paper | no disponible | no disponible en la informacion |
@@ -104,15 +104,15 @@ No se dispone de cifras de parametros, contexto o licencia de las alternativas e
 - Idiomas: no confirmados. El corpus Pile es mayoritariamente en ingles, por lo que el rendimiento en castellano es muy probablemente deficiente, aunque no hay datos que lo cuantifiquen.
 - Longitud de contexto: no documentada, lo que impide planificar tareas que dependan de ventanas largas.
 - Presupuesto de entrenamiento reducido (3.146 millones de tokens en 6.000 pasos), propio de un experimento de ablacion y no de un modelo de proposito general.
-- Sin validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace y sin demo publica.
+- Sin validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face y sin demo publica.
 - El checkpoint incluye el estado del optimizador eliminado, por lo que no es posible reanudar el entrenamiento desde el punto exacto sin reconstruir el estado.
 - Dependencia de la libreria recurrent-recall-circuits: la carga esta registrada en su catalogo de configuraciones, lo que ata el uso a ese ecosistema concreto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgarct/gated-deltanet-120m-ce-6k
+- Modelo en Hugging Face: https://huggingface.co/robgarct/gated-deltanet-120m-ce-6k
 - Paper Gated Delta Networks: Improving Mamba2 with Delta Rule: https://arxiv.org/abs/2412.06464
-- Pagina del paper en HuggingFace Papers: https://huggingface.co/papers/2412.06464
+- Pagina del paper en Hugging Face Papers: https://huggingface.co/papers/2412.06464
 - Version en OpenReview (ICLR 2025): https://openreview.net/pdf?id=r8H7xhYPwz
 - Repositorio oficial de PyTorch (NVIDIA Labs): https://github.com/NVlabs/GatedDeltaNet
 - Repositorio de reproduccion de Gated DeltaNet: https://github.com/krsnoki/gatedDeltaNet

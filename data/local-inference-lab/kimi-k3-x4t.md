@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3-X4T es una compresión del modelo Kimi K3 publicada por el usuario `local-inference-lab` en HuggingFace. El modelo base es un MoE multimodal nativo desarrollado por Moonshot AI, con 2,8 billones de parámetros totales y 104.000 millones de parámetros activos por token, construido sobre Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), y con una ventana de contexto de 1 millón de tokens. Moonshot AI lo presenta como el primer modelo abierto de clase 3T.
+Kimi-K3-X4T es una compresión del modelo Kimi K3 publicada por el usuario `local-inference-lab` en Hugging Face. El modelo base es un MoE multimodal nativo desarrollado por Moonshot AI, con 2,8 billones de parámetros totales y 104.000 millones de parámetros activos por token, construido sobre Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), y con una ventana de contexto de 1 millón de tokens. Moonshot AI lo presenta como el primer modelo abierto de clase 3T.
 
 El repositorio concreto que analizamos no es la publicación oficial de Moonshot AI, sino una conversión alojada por `local-inference-lab` bajo la etiqueta `compressed-tensors`, con pipeline `image-text-to-text` y licencia `kimi-k3` (identificada como `other`). En el momento de la consulta acumula 0 descargas y 0 likes, y no incluye documentación propia más allá de la model card heredada del modelo original.
 
@@ -80,8 +80,8 @@ La informacion proporcionada no incluye datos numericos de modelos comparables, 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3-X4T (este repositorio) | 2,8T | 104B | 1M tokens | kimi-k3 | HuggingFace, 0 descargas |
-| Kimi K3 (publicacion oficial de Moonshot AI) | 2,8T | 104B | 1M tokens | kimi-k3 | HuggingFace (moonshotai) |
+| Kimi-K3-X4T (este repositorio) | 2,8T | 104B | 1M tokens | kimi-k3 | Hugging Face, 0 descargas |
+| Kimi K3 (publicacion oficial de Moonshot AI) | 2,8T | 104B | 1M tokens | kimi-k3 | Hugging Face (moonshotai) |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | mencionado en la model card |
 
 ## Limitaciones y advertencias
@@ -98,8 +98,8 @@ La informacion proporcionada no incluye datos numericos de modelos comparables, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/local-inference-lab/Kimi-K3-X4T
-- Organizacion oficial de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face: https://huggingface.co/local-inference-lab/Kimi-K3-X4T
+- Organizacion oficial de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo base citado en la model card: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico de Kimi K3: https://www.kimi.com/blog/kimi-k3

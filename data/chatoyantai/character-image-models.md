@@ -73,7 +73,7 @@ No disponible. No se han identificado bundles de características comparables en
 
 - El repositorio no incluye 18 referencias de modelos ausentes del servidor fuente, entre ellas el checkpoint legacy Pony y cinco LoRAs asociados, Wan Remix V20 High/Low, el LoRA Qwen next-scene, los LoRAs Monica/Trixie y su LoRA ZImage NSFW, y seis LoRAs legacy de video. Las plantillas que dependen de estos archivos fallarán o requerirán descargas adicionales.
 - Se necesitan dependencias externas de Python y nodos de ComfyUI, como `ComfyUI-GenitalCensor`, `nudenet`, `ultralytics` e `imgutils`. Sin ellas, el pipeline de censura no funciona.
-- Los censores EraX y el detector anime se cargan desde la caché de HuggingFace en rutas específicas. Hay que ejecutar `restore_censor_models.py` y exportar `CENSOR_MODELS_DIR` antes de iniciar ComfyUI.
+- Los censores EraX y el detector anime se cargan desde la caché de Hugging Face en rutas específicas. Hay que ejecutar `restore_censor_models.py` y exportar `CENSOR_MODELS_DIR` antes de iniciar ComfyUI.
 - El bundle no incluye configuración de aplicación, credenciales, medios de usuario ni logs. Es solo un conjunto de pesos y metadatos.
 - La licencia no está especificada, por lo que el uso comercial no está garantizado. Algunos componentes (como los modelos NSFW) pueden tener restricciones adicionales.
 - El contenido incluye modelos explícitamente orientados a NSFW (Pornworks Illustrious, LoRA NSFW), lo que puede suponer problemas legales o éticos según la jurisdicción.
@@ -82,6 +82,6 @@ No disponible. No se han identificado bundles de características comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChatoyantAI/character-image-models
+- Hugging Face: https://huggingface.co/ChatoyantAI/character-image-models
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web. Los resultados de búsqueda no aportan información técnica sobre este modelo.

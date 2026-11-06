@@ -81,7 +81,7 @@ La comparación relevante es frente al SAM 2.1 tiny original: misma arquitectura
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Extreme-Media/video-redactor-sam2.1-tiny-onnx
+- Hugging Face: https://huggingface.co/Extreme-Media/video-redactor-sam2.1-tiny-onnx
 - Aplicación Video Redactor: https://extreme-media.co.uk/redactor.html
 - Repositorio oficial de SAM 2: https://github.com/facebookresearch/sam2
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-tiny

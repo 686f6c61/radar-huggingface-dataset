@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-Uncensored-HauhauCS-Aggressive es una variante del modelo Qwen3.5-2B de Alibaba, modificada por el usuario HauhauCS para eliminar por completo los rechazos (refusals) del sistema de seguridad original. El modelo resultante responde a cualquier instrucción sin negarse, manteniendo supuestamente intactas las capacidades del modelo base. El repositorio lo publica el usuario luxanna1 en HuggingFace bajo licencia Apache 2.0.
+Qwen3.5-2B-Uncensored-HauhauCS-Aggressive es una variante del modelo Qwen3.5-2B de Alibaba, modificada por el usuario HauhauCS para eliminar por completo los rechazos (refusals) del sistema de seguridad original. El modelo resultante responde a cualquier instrucción sin negarse, manteniendo supuestamente intactas las capacidades del modelo base. El repositorio lo publica el usuario luxanna1 en Hugging Face bajo licencia Apache 2.0.
 
 Técnicamente, el modelo conserva la arquitectura híbrida del Qwen3.5-2B: una combinación de atención lineal Gated DeltaNet y atención softmax completa en proporción 3:1, con 24 capas y aproximadamente 1.880 millones de parámetros. Dispone de un contexto nativo de 262.000 tokens (extensible a 1M con YaRN), es nativamente multimodal (texto, imagen y vídeo) y soporta multi-token prediction (MTP). El modelo se distribuye en formato GGUF con varias cuantizaciones, además de un encoder de visión separado.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos. A modo orientativo, se puede 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luxanna1/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/luxanna1/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante 27B: https://huggingface.co/HauhauCS/Qwen3.5-27B-Uncensored-HauhauCS-Aggressive
 - Variante 9B: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive

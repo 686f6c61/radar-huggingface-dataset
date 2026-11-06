@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YRGKarthikeya/MLAgents-SoccerTwos es un artefacto publicado en HuggingFace cuyo identificador, etiquetas y libreria lo asocian al entorno SoccerTwos del toolkit ML-Agents de Unity, un escenario de futbol 2 contra 2 utilizado habitualmente como banco de pruebas de aprendizaje por refuerzo multiagente. El repositorio se declara con la libreria `ml-agents`, la tarea `reinforcement-learning` y la etiqueta `ML-Agents-SoccerTwos`, y sus tags incluyen el formato ONNX, lo que indica que el contenido esperado es una politica entrenada y exportada para inferencia, no un modelo de lenguaje.
+YRGKarthikeya/MLAgents-SoccerTwos es un artefacto publicado en Hugging Face cuyo identificador, etiquetas y libreria lo asocian al entorno SoccerTwos del toolkit ML-Agents de Unity, un escenario de futbol 2 contra 2 utilizado habitualmente como banco de pruebas de aprendizaje por refuerzo multiagente. El repositorio se declara con la libreria `ml-agents`, la tarea `reinforcement-learning` y la etiqueta `ML-Agents-SoccerTwos`, y sus tags incluyen el formato ONNX, lo que indica que el contenido esperado es una politica entrenada y exportada para inferencia, no un modelo de lenguaje.
 
 No se trata, por tanto, de un modelo generativo con parametros y contexto medibles: es una politica de control entrenada mediante aprendizaje por refuerzo. La model card publicada es minima y se limita a declarar la tarea y la libreria, sin especificar arquitectura de red, numero de parametros, algoritmo de entrenamiento ni hiperparametros. El resto de datos tecnicos no esta disponible en la informacion proporcionada.
 
@@ -22,7 +22,7 @@ Su relevancia potencial es acotada y de caracter experimental: sirve como refere
 | Formato de pesos | ONNX, segun los tags del repositorio. No se confirma la presencia efectiva de archivos de pesos |
 | Libreria declarada | ml-agents |
 | Tarea declarada | reinforcement-learning |
-| Tamano del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (reportado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de alternativas comparables en la informacio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YRGKarthikeya/MLAgents-SoccerTwos | No disponible | No aplica | No disponible | No disponible | Repositorio HuggingFace con 0 descargas y 0.0 GB reportados |
+| YRGKarthikeya/MLAgents-SoccerTwos | No disponible | No aplica | No disponible | No disponible | Repositorio Hugging Face con 0 descargas y 0.0 GB reportados |
 | Politica de referencia de ML-Agents SoccerTwos | No disponible | No aplica | No disponible | No disponible | No localizada en la busqueda realizada |
 | Alternativa de RL multiagente | No disponible | No aplica | No disponible | No disponible | No disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos verificables de alternativas comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YRGKarthikeya/MLAgents-SoccerTwos
+- Hugging Face: https://huggingface.co/YRGKarthikeya/MLAgents-SoccerTwos
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, el entorno SoccerTwos ni repositorios relacionados. No se incluyen enlaces adicionales para no introducir referencias no verificadas.

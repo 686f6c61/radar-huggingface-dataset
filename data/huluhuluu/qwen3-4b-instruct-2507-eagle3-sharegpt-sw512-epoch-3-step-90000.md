@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de borrador (draft model) para decodificación especulativa EAGLE3, entrenado específicamente para acelerar la inferencia del modelo objetivo `Qwen/Qwen3-4B-Instruct-2507`. El modelo fue desarrollado por el usuario huluhuluu utilizando el framework SpecForge, con una metodología de entrenamiento online EAGLE3 sobre datos ShareGPT limpios. Es un checkpoint concreto (epoch 3, paso 90.000) de una serie de 47 checkpoints publicados en una colección de HuggingFace.
+Este repositorio contiene un modelo de borrador (draft model) para decodificación especulativa EAGLE3, entrenado específicamente para acelerar la inferencia del modelo objetivo `Qwen/Qwen3-4B-Instruct-2507`. El modelo fue desarrollado por el usuario huluhuluu utilizando el framework SpecForge, con una metodología de entrenamiento online EAGLE3 sobre datos ShareGPT limpios. Es un checkpoint concreto (epoch 3, paso 90.000) de una serie de 47 checkpoints publicados en una colección de Hugging Face.
 
 El modelo no es un chatbot autónomo: su única función es servir como modelo de propuesta (draft) dentro de un esquema de decodificación especulativa, donde genera candidatos de tokens que el modelo objetivo verifica en paralelo, reduciendo la latencia de inferencia. Con solo 202,7 millones de parámetros y una ventana deslizante de 512 tokens, está diseñado para ser ligero y rápido, manteniendo una alta tasa de aceptación de tokens con el modelo base.
 

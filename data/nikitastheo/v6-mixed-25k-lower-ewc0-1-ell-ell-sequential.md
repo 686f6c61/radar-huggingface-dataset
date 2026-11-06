@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential` es un modelo de lenguaje causal (decoder-only) de 104.716.800 parametros, publicado por el usuario nikitastheo en HuggingFace bajo la libreria `transformers`. Por su nomenclatura y por los datos de la model card, se trata de un artefacto de investigacion orientado al estudio de aprendizaje continuo (continual learning) sobre corpus de bajos recursos: el sufijo `ewc0.1` apunta al uso de Elastic Weight Consolidation con un coeficiente de 0,1, `sequential` sugiere un regimen de entrenamiento secuencial por tareas o idiomas, y `ell-lower` remite al codigo ISO 639-2 del griego en texto en minusculas.
+El modelo `nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential` es un modelo de lenguaje causal (decoder-only) de 104.716.800 parametros, publicado por el usuario nikitastheo en Hugging Face bajo la libreria `transformers`. Por su nomenclatura y por los datos de la model card, se trata de un artefacto de investigacion orientado al estudio de aprendizaje continuo (continual learning) sobre corpus de bajos recursos: el sufijo `ewc0.1` apunta al uso de Elastic Weight Consolidation con un coeficiente de 0,1, `sequential` sugiere un regimen de entrenamiento secuencial por tareas o idiomas, y `ell-lower` remite al codigo ISO 639-2 del griego en texto en minusculas.
 
 El modelo parte de una configuracion denominada `gpt_base_config.json` y fue entrenado con `train_clm.py`, un script de entrenamiento causal-LM basado en Hugging Face Accelerate y no en la clase `Trainer`. Se entrenaron 17.430 pasos con un batch total de 32 secuencias, learning rate de 1e-4, scheduler lineal y 1.743 pasos de warmup (el 10 % del total). La model card menciona un `language switch epoch: 10`, lo que indica un cambio de idioma o de fase de datos en la decima epoca, coherente con un curriculum o con un experimento de aprendizaje secuencial.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizo con `train_clm.py`, un script propio basado en Huggi
 - Soporte de agentes y razonamiento multi-paso: no disponible; un modelo de 104,7 M de parametros no esta orientado a este tipo de tareas.
 - Capacidades multilingues: no declaradas; la evidencia indirecta apunta a un unico idioma (griego).
 - Capacidades especiales (modo "thinking", vision, audio): ninguna documentada.
-- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para TGI y para HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para TGI y para Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,42 GB en fp32, 0,21 GB en fp16/bf16, 0,10 GB en int8 y 0,05 GB en int4 (calculado a partir de los 104,7 M de parametros, sin contar el KV cache ni el overhead del runtime).
 - Cabe en cualquier GPU consumer: desde una GTX 1050 Ti de 4 GB hasta una RTX 4090, y tambien en iGPU con memoria compartida suficiente. Es ejecutable en CPU con memoria RAM muy reducida.
 - GPU recomendadas: no requiere GPU dedicada. Para lotes grandes o entrenamiento, una RTX 3090/4090 o una A100 resultan sobredimensionadas; una RTX 3060 de 12 GB permite incluso reentrenar el modelo con el batch documentado si el contexto es moderado.
-- Opciones de despliegue: `transformers` (nativo, formato safetensors), Text Generation Inference (etiqueta `text-generation-inference`) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es compatible con la arquitectura GPT, aunque no hay configuracion publicada. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que el repositorio no incluye.
+- Opciones de despliegue: `transformers` (nativo, formato safetensors), Text Generation Inference (etiqueta `text-generation-inference`) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es compatible con la arquitectura GPT, aunque no hay configuracion publicada. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que el repositorio no incluye.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y la longitud de contexto y el hardware de referencia no estan documentados.
 - Nota sobre el repositorio: sus 15,9 GB frente a los aproximadamente 0,42 GB de pesos en fp32 indican que puede contener checkpoints intermedios o estados del optimizador; conviene revisar el contenido antes de descargarlo completo.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential | 104,7 M | no disponible | griego (no confirmado) | no disponible | HuggingFace, safetensors |
+| nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential | 104,7 M | no disponible | griego (no confirmado) | no disponible | Hugging Face, safetensors |
 | GPT-2 (124M) | 124 M | 1.024 tokens | ingles principalmente | MIT | Ampliamente replicado; pesos en safetensors y GGUF |
 | Pythia-160M | 160 M | 2.048 tokens | ingles | Apache 2.0 | EleutherAI; safetensors y multiples checkpoints |
-| SmolLM2-135M | 135 M | 8.192 tokens | ingles | Apache 2.0 | HuggingFace; safetensors y GGUF |
+| SmolLM2-135M | 135 M | 8.192 tokens | ingles | Apache 2.0 | Hugging Face; safetensors y GGUF |
 
 La comparacion debe interpretarse con cautela: los tres modelos de referencia cuentan con licencia explicita, contexto documentado y evaluaciones publicas, mientras que el modelo analizado carece de esos tres elementos. Su unico diferencial verificable es la especializacion en griego en minusculas y el regimen de entrenamiento con EWC, orientado a investigacion mas que a produccion.
 
@@ -93,7 +93,7 @@ La comparacion debe interpretarse con cautela: los tres modelos de referencia cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc0.1-ell-ell-sequential
 - Tokenizer asociado: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Script de entrenamiento `train_clm.py`: no disponible como enlace publico

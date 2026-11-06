@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MunipSigma/OkeGasOkeGas` está alojado en HuggingFace bajo una licencia Apache 2.0, pero su ficha pública no incluye ninguna información adicional. La model card solo contiene el frontmatter con la licencia, sin descripción, arquitectura, parámetros, contexto, idiomas o cualquier otro dato técnico. No se ha publicado ningún benchmark, ejemplo de uso o documentación complementaria. Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué podría ser relevante. La ausencia de información lo convierte en un recurso no utilizable para desarrolladores o investigadores sin acceso a datos adicionales por otras vías.
+El modelo `MunipSigma/OkeGasOkeGas` está alojado en Hugging Face bajo una licencia Apache 2.0, pero su ficha pública no incluye ninguna información adicional. La model card solo contiene el frontmatter con la licencia, sin descripción, arquitectura, parámetros, contexto, idiomas o cualquier otro dato técnico. No se ha publicado ningún benchmark, ejemplo de uso o documentación complementaria. Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué podría ser relevante. La ausencia de información lo convierte en un recurso no utilizable para desarrolladores o investigadores sin acceso a datos adicionales por otras vías.
 
 ## Especificaciones tecnicas
 
@@ -59,4 +59,4 @@ No disponible. Al carecer de información sobre parámetros, contexto o rendimie
 
 ## Enlaces
 
-- [HuggingFace: MunipSigma/OkeGasOkeGas](https://huggingface.co/MunipSigma/OkeGasOkeGas)
+- [Hugging Face: MunipSigma/OkeGasOkeGas](https://huggingface.co/MunipSigma/OkeGasOkeGas)

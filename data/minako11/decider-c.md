@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Minako11/decider-c es un modelo de decisión publicado en HuggingFace por el usuario Minako11, construido como un fine-tune o merge sobre el modelo base baselabs/mammoth-1. Los tags del repositorio lo etiquetan como `qwen3_5`, lo que sugiere que la arquitectura subyacente deriva de la familia Qwen 3.5, y también incluyen `reax`, `bittensor` y `sn92`, lo que apunta a que el modelo se ha entrenado o evaluado en el contexto de la subred 92 de Bittensor (un ecosistema de incentivos descentralizado para modelos de IA). El nombre "decider" y la etiqueta `decision-model` indican que su propósito es tomar decisiones o clasificar entre opciones dentro de un pipeline, no tanto generar texto libre.
+Minako11/decider-c es un modelo de decisión publicado en Hugging Face por el usuario Minako11, construido como un fine-tune o merge sobre el modelo base baselabs/mammoth-1. Los tags del repositorio lo etiquetan como `qwen3_5`, lo que sugiere que la arquitectura subyacente deriva de la familia Qwen 3.5, y también incluyen `reax`, `bittensor` y `sn92`, lo que apunta a que el modelo se ha entrenado o evaluado en el contexto de la subred 92 de Bittensor (un ecosistema de incentivos descentralizado para modelos de IA). El nombre "decider" y la etiqueta `decision-model` indican que su propósito es tomar decisiones o clasificar entre opciones dentro de un pipeline, no tanto generar texto libre.
 
-El modelo tiene 26.085.330.160 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de ~26B. El tamaño del repositorio es de 52,2 GB, coherente con pesos en precisión completa o bf16 para ese número de parámetros. La licencia es MIT, lo que facilita el uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo tiene 26.085.330.160 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de ~26B. El tamaño del repositorio es de 52,2 GB, coherente con pesos en precisión completa o bf16 para ese número de parámetros. La licencia es MIT, lo que facilita el uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La información pública es muy escasa: no hay pipeline declarado, no se especifican idiomas soportados y no se han publicado resultados de benchmarks ni detalles de entrenamiento en la información disponible. Esta ficha se limita, por tanto, a los datos verificables del repositorio y a inferencias claramente marcadas como tales.
 
@@ -75,7 +75,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card detallada, benchmarks ni especificaciones de contexto o idiomas, lo que dificulta su evaluación previa a producción.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede bloquear despliegues automatizados o en entornos corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede bloquear despliegues automatizados o en entornos corporativos.
 - Riesgo de alucinación: al ser un modelo derivado de un base no documentado, no hay garantías sobre su calibración en tareas de decisión.
 - Sesgos desconocidos: no se ha publicado información sobre la composición del dataset ni sobre evaluaciones de sesgo.
 - Licencia MIT: permite uso comercial, pero conviene verificar que el modelo base baselabs/mammoth-1 no imponga restricciones adicionales incompatibles.
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Minako11/decider-c
+- Repositorio Hugging Face: https://huggingface.co/Minako11/decider-c
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Bittensor (ecosistema referenciado en los tags): https://bittensor.com
 - Subred 92 de Bittensor: no disponible enlace oficial en la información proporcionada.

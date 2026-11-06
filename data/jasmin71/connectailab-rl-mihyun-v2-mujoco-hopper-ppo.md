@@ -25,7 +25,7 @@ La información publicada es muy escasa: el repositorio ocupa 0,0 GB, no declara
 | Grado de libertad | 3 articulaciones continuas (muslo, pierna, tobillo) |
 | Reward de test reportado | 175,81 |
 | Hardware de entrenamiento | Apple Silicon M-series, entornos vectorizados multi-env |
-| Tamano del repositorio | 0,0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (reportado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Entorno | Algoritmo | Reward reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `connectailab-rl-mihyun-v2-mujoco-hopper-ppo` | Política RL | `Hopper-v5` | PPO | 175,81 | no disponible | HuggingFace |
+| `connectailab-rl-mihyun-v2-mujoco-hopper-ppo` | Política RL | `Hopper-v5` | PPO | 175,81 | no disponible | Hugging Face |
 | Baselines Gym de AllenAct | Políticas RL de referencia | Entornos Gym/MuJoCo | PPO y otros | no disponible en la información consultada | open source (AllenAct) | Repositorio AllenAct |
 | Implementaciones PPO de referencia (Stable-Baselines3, CleanRL) | Librerías de algoritmos | `Hopper-v5` y otros | PPO | no disponible en la información consultada | MIT (habitual en estas librerías) | GitHub / PyPI |
 
@@ -91,5 +91,5 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v2-mujoco-hopper-ppo
+- Modelo en Hugging Face: https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v2-mujoco-hopper-ppo
 - Baselines de Gym para entornos MuJoCo en AllenAct: https://allenact.org/projects/gym_baselines/

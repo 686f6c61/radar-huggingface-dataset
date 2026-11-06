@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/szd0709/MultiAgent4SyntheticBioNLP-models
+- Repositorio Hugging Face: https://huggingface.co/szd0709/MultiAgent4SyntheticBioNLP-models
 - No se han encontrado papers, blogs o repositorios adicionales especificos del proyecto en los resultados de busqueda web proporcionados.

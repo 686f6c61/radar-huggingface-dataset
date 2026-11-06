@@ -79,6 +79,6 @@ No se dispone de comparativas directas con otros modelos de 1B especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solomoniw/CallForge-1B-v0
+- Modelo en Hugging Face: https://huggingface.co/solomoniw/CallForge-1B-v0
 - Modelo base MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Paquete PyPI callforge-ai (posiblemente relacionado): https://pypi.org/project/callforge-ai/

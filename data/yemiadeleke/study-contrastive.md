@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yemiadeleke/study-contrastive` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura **Coca** (contrastive captioner) orientada a aprendizaje contrastivo, en una configuracion etiquetada internamente como *xlarge*. No se trata de un modelo entrenado ni de un release de pesos preentrenados: el autor lo describe explicitamente como un punto de partida experimental para revision de codigo, *smoke tests* y experimentos pequenos y controlados.
+`yemiadeleke/study-contrastive` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura **Coca** (contrastive captioner) orientada a aprendizaje contrastivo, en una configuracion etiquetada internamente como *xlarge*. No se trata de un modelo entrenado ni de un release de pesos preentrenados: el autor lo describe explicitamente como un punto de partida experimental para revision de codigo, *smoke tests* y experimentos pequenos y controlados.
 
 El repositorio incluye el script `finetune.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que el propio autor califica como **checkpoint de inicializacion valido para pruebas de humo, no como checkpoint entrenado**. La arquitectura declarada usa atencion estandar, fusion tensorial (*tensor fusion*), activacion swish y normalizacion *scalenorm*.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yemiadeleke/study-contrastive` | 16.576 (safetensors) | no disponible | sin benchmark (checkpoint sin entrenar) | Apache-2.0 | Pesos de inicializacion en HuggingFace |
+| `yemiadeleke/study-contrastive` | 16.576 (safetensors) | no disponible | sin benchmark (checkpoint sin entrenar) | Apache-2.0 | Pesos de inicializacion en Hugging Face |
 | Implementaciones de referencia de Coca | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos contrastivos imagen-texto tipo CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,5 +95,5 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yemiadeleke/study-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/yemiadeleke/study-contrastive
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a hilos de foro sobre la aerolinea Ryanair y no guardan ninguna relacion con el modelo.

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Duracion/contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mello's Definitive Zootopia LoRA (este) | LoRA de texto a video sobre MiniMax-H3 | no disponible (rango 128 y 64) | Degradacion a partir de 12-13 s | No hay benchmarks publicados | other | HuggingFace, 0 descargas, 0 me gusta |
-| MiniMax-H3 (modelo base) | Modelo de texto a video | no disponible | no disponible | no disponible | no disponible | HuggingFace (MiniMax-AI/MiniMax-H3) |
+| Mello's Definitive Zootopia LoRA (este) | LoRA de texto a video sobre MiniMax-H3 | no disponible (rango 128 y 64) | Degradacion a partir de 12-13 s | No hay benchmarks publicados | other | Hugging Face, 0 descargas, 0 me gusta |
+| MiniMax-H3 (modelo base) | Modelo de texto a video | no disponible | no disponible | no disponible | no disponible | Hugging Face (MiniMax-AI/MiniMax-H3) |
 | LoRAs de personaje sobre Wan | LoRA de texto a video | no disponible | no disponible | La model card indica que Wan anade acciones no solicitadas con mas facilidad que MiniMax | no disponible | no disponible |
 
 No se dispone de comparativas verificadas de calidad, velocidad o fidelidad de personaje entre este adaptador y alternativas equivalentes; la unica comparacion cualitativa es la que aporta el propio autor respecto al comportamiento del modelo base MiniMax-H3 frente a Wan.
@@ -94,7 +94,7 @@ No se dispone de comparativas verificadas de calidad, velocidad o fidelidad de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MelloModels/mellos_definitive_zootopia_lora_minimax
+- Modelo en Hugging Face: https://huggingface.co/MelloModels/mellos_definitive_zootopia_lora_minimax
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMax-AI/MiniMax-H3
 - Espejo directo del autor: https://www.melloai.art/renders/models/zootopia_minimax/
 - Workflow de ComfyUI (Civitai): https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features

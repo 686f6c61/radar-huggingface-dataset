@@ -23,7 +23,7 @@ Su relevancia práctica está en el formato de despliegue: se distribuye como ON
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de mmBERT-small, un encoder transformer de la familia ModernBERT, y se afina como clasificador de secuencia con 61 etiquetas de salida (60 intenciones de MASSIVE más `out_of_scope`). El preprocesado es parte del contrato del modelo: las entradas se convierten a minúsculas y se les elimina la puntuación antes de la tokenización, tal como hace el widget de HuggingFace. El tokenizador es el de mmBERT sin modificar, aunque el vocabulario del grafo ONNX se ha podado a 108.659 filas; los tokens fuera de ese vocabulario se mapean a UNK.
+El modelo parte de mmBERT-small, un encoder transformer de la familia ModernBERT, y se afina como clasificador de secuencia con 61 etiquetas de salida (60 intenciones de MASSIVE más `out_of_scope`). El preprocesado es parte del contrato del modelo: las entradas se convierten a minúsculas y se les elimina la puntuación antes de la tokenización, tal como hace el widget de Hugging Face. El tokenizador es el de mmBERT sin modificar, aunque el vocabulario del grafo ONNX se ha podado a 108.659 filas; los tokens fuera de ese vocabulario se mapean a UNK.
 
 El entrenamiento usa las 52 particiones de train de MASSIVE más 1.500 frases no-comando por locale (dev de FLORES-200 y Tatoeba) con peso de pérdida 0,3 para la clase `out_of_scope`. Se aplica aumento de datos sobre el 30% de las utterances (una errata o una palabra intercambiada), 4 épocas, learning rate 5e-5, batch 64, dropout 0,1, label smoothing 0,1, weight decay 0,05, precisión bf16 y semilla 42, seleccionando la mejor época por validación. La innovación destacable no es arquitectónica sino de empaquetado: exportación a ONNX con cuantización int8 weight-only y poda de vocabulario dentro del grafo, orientada a inferencia en CPU y en navegador vía transformers.js.
 
@@ -70,10 +70,10 @@ Métricas adicionales reportadas por el autor: recall de no-comando del 94,8% (m
 
 | Modelo | Parámetros | Contexto | Accuracy media (52 locales, MASSIVE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmbert-small-massive-intent | 84M | no disponible | 85,1 | Apache-2.0 | HuggingFace, ONNX int8 |
+| mmbert-small-massive-intent | 84M | no disponible | 85,1 | Apache-2.0 | Hugging Face, ONNX int8 |
 | Gemini 3.5 Flash-Lite (zero-shot) | no disponible | no disponible | 81,5 | propietaria | API |
-| Qwen2.5-7B-Instruct Q4_K_M (zero-shot) | 7B | no disponible | 50,5 | Apache-2.0 | HuggingFace, GGUF |
-| jhu-clsp/mmBERT-small (base) | 84M | no disponible | no disponible (no es clasificador de intenciones) | Apache-2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct Q4_K_M (zero-shot) | 7B | no disponible | 50,5 | Apache-2.0 | Hugging Face, GGUF |
+| jhu-clsp/mmBERT-small (base) | 84M | no disponible | no disponible (no es clasificador de intenciones) | Apache-2.0 | Hugging Face |
 
 La comparación con LLM zero-shot no es del todo equivalente: el modelo está afinado específicamente sobre MASSIVE, mientras que los LLM reciben la lista de etiquetas en el prompt sin entrenamiento. Aun así, el dato relevante es que un encoder de 84M supera en precisión media a un LLM propietario y a un 7B cuantizado, con una latencia tres órdenes de magnitud menor.
 
@@ -90,7 +90,7 @@ La comparación con LLM zero-shot no es del todo equivalente: el modelo está af
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balticml/mmbert-small-massive-intent
+- Modelo en Hugging Face: https://huggingface.co/balticml/mmbert-small-massive-intent
 - Repositorio de código y benchmarks: https://github.com/balticml/intent-detection
 - Demo: https://balticml.eu/demos/intent-detection/
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small

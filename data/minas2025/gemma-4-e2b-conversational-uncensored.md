@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E2B Conversational Uncensored es un ajuste fino de tipo conversacional sobre una versión abliterada de Gemma 4 E2B. Lo publica el usuario minas2025 en HuggingFace y se distribuye exclusivamente en formato GGUF, cuantizado en Q8_0 (~5,1 GB), para ejecutarse en runners locales como llama.cpp, LM Studio o KoboldCpp. El modelo base de la cadena es llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic, a su vez una abliteración Heretic de google/gemma-4-E2B-it.
+Gemma 4 E2B Conversational Uncensored es un ajuste fino de tipo conversacional sobre una versión abliterada de Gemma 4 E2B. Lo publica el usuario minas2025 en Hugging Face y se distribuye exclusivamente en formato GGUF, cuantizado en Q8_0 (~5,1 GB), para ejecutarse en runners locales como llama.cpp, LM Studio o KoboldCpp. El modelo base de la cadena es llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic, a su vez una abliteración Heretic de google/gemma-4-E2B-it.
 
 El repositorio declara 4.647.450.147 parámetros totales y un tamaño de 5,9 GB. Su propósito es ofrecer una personalidad conversacional aguda y directa, sin el tono corporativo de los asistentes alineados, manteniendo el comportamiento de cero rechazos heredado del modelo base abliterado. Se entrenó con QLoRA sobre el dataset jondurbin/airoboros-3.2 (unas 59.000 conversaciones) durante 1.000 pasos.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minas2025/Gemma-4-E2B-Conversational-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/minas2025/Gemma-4-E2B-Conversational-Uncensored
 - Modelo base (abliteracion Heretic): https://huggingface.co/llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/jondurbin/airoboros-3.2

@@ -1,7 +1,7 @@
 # Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp
 
 ## Resumen
-DeepSeek-V4.1-Flash-oQ3e-mtp es una versión cuantizada en precisión mixta del modelo DeepSeek-V4.1-Flash, publicada por el usuario Jundot en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint de pesos comprimidos con la herramienta oQ (omlx) para su uso con la librería MLX de Apple. Incluye el backbone de lenguaje, las tablas Engram, el codificador de visión, el alineador multimodal y los pesos DSpark MTP (multi-token prediction), lo que confirma que el modelo base es multimodal y con decodificación especulativa integrada.
+DeepSeek-V4.1-Flash-oQ3e-mtp es una versión cuantizada en precisión mixta del modelo DeepSeek-V4.1-Flash, publicada por el usuario Jundot en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint de pesos comprimidos con la herramienta oQ (omlx) para su uso con la librería MLX de Apple. Incluye el backbone de lenguaje, las tablas Engram, el codificador de visión, el alineador multimodal y los pesos DSpark MTP (multi-token prediction), lo que confirma que el modelo base es multimodal y con decodificación especulativa integrada.
 
 El checkpoint emplea cuantización mixta en lugar de un formato uniforme de 3 bits: pesos de expertos enrutados del backbone en 3 bits afines (grupo 64), proyecciones de atención y expertos compartidos calibrados en 4, 6 y 8 bits, tablas Engram en 3 bits (grupo 32) y pesos DSpark MTP preservados en MXFP4/MXFP8. El resultado declarado es una media efectiva de 3,629 bits por peso excluyendo Engram, o 3,724 bits por peso para el checkpoint completo, con un objetivo de 3,5 bits/peso y un tope duro de 3,7 bits/peso.
 
@@ -12,7 +12,7 @@ El modelo es relevante porque demuestra que un sistema multimodal de gran escala
 | Parametro | Valor |
 |---|---|
 | Arquitectura | DeepSeek-V4.1 (tag `deepseek_v41`); transformer con expertos enrutados y expertos compartidos, mas modulos Engram, codificador de vision, alineador multimodal y DSpark MTP. Configuracion exacta no disponible |
-| Parametros totales | 105.579.535.650 segun los metadatos de safetensors de HuggingFace; la model card declara 763,205B de pesos logicos totales. Discrepancia no aclarada por el autor |
+| Parametros totales | 105.579.535.650 segun los metadatos de safetensors de Hugging Face; la model card declara 763,205B de pesos logicos totales. Discrepancia no aclarada por el autor |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Afin 3 bits grupo 64 (backbone, expertos enrutados); afin 4/6/8 bits grupo 64 (atencion calibrada y expertos compartidos); afin 3 bits grupo 32 (tablas Engram); MXFP4 grupo 32 (DSpark MTP); MXFP8 grupo 32; BF16 y FP32 en tensores restantes |
@@ -65,12 +65,12 @@ No hay datos de benchmarks ni de rendimiento que permitan una comparativa cuanti
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-oQ3e-mtp | 105,58B segun safetensors / 763,205B logicos segun model card | no disponible | no disponible | no disponible | HuggingFace, formato MLX |
+| DeepSeek-V4.1-Flash-oQ3e-mtp | 105,58B segun safetensors / 763,205B logicos segun model card | no disponible | no disponible | no disponible | Hugging Face, formato MLX |
 | DeepSeek-V4.1-Flash (sin cuantizar) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 - La cuantizacion a 3 bits en el backbone introduce degradacion potencial de calidad; el autor no publica evaluaciones que cuantifiquen esa perdida.
-- Existe una discrepancia no aclarada entre los parametros totales reportados por HuggingFace (105.579.535.650) y los pesos logicos declarados en la model card (763,205B). Conviene verificar los metadatos antes de planificar recursos.
+- Existe una discrepancia no aclarada entre los parametros totales reportados por Hugging Face (105.579.535.650) y los pesos logicos declarados en la model card (763,205B). Conviene verificar los metadatos antes de planificar recursos.
 - El repositorio no declara licencia, por lo que no puede confirmarse el uso comercial ni las condiciones de redistribucion.
 - No se declaran idiomas soportados, sesgos conocidos ni riesgos de alucinacion especificos.
 - Los requisitos de memoria son extremos: incluso con offload de Engram se superan los 239 GiB residentes, lo que excluye GPU de consumo y la mayoria de servidores convencionales.
@@ -80,6 +80,6 @@ No hay datos de benchmarks ni de rendimiento que permitan una comparativa cuanti
 - Al ser un formato MLX, no es portable directamente a ecosistemas CUDA (vLLM, TGI) sin conversion previa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp
 - Repositorio de la herramienta oQ (omlx): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos) en la busqueda web realizada.

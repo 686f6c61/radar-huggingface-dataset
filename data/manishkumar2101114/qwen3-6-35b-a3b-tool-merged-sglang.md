@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B tool-merged (Marg voice agents) es un modelo derivado publicado por el usuario manishkumar2101114 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge de un adaptador LoRA sobre el modelo base Qwen/Qwen3.6-35B-A3B-FP8: los pesos del base, originalmente en FP8, se dequantizaron a BF16 durante el proceso de fusion, y sobre ellos se aplico un adaptador LoRA de rango 32 entrenado durante 3 epocas sobre 1515 dialogos de llamada a herramientas (tool calling) con enmascarado de perdida solo en la completion.
+Qwen3.6-35B-A3B tool-merged (Marg voice agents) es un modelo derivado publicado por el usuario manishkumar2101114 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge de un adaptador LoRA sobre el modelo base Qwen/Qwen3.6-35B-A3B-FP8: los pesos del base, originalmente en FP8, se dequantizaron a BF16 durante el proceso de fusion, y sobre ellos se aplico un adaptador LoRA de rango 32 entrenado durante 3 epocas sobre 1515 dialogos de llamada a herramientas (tool calling) con enmascarado de perdida solo en la completion.
 
 El objetivo declarado es servir como componente de razonamiento y llamada a herramientas en agentes de voz (mencionados como "Marg voice agents"), con una plantilla de chat personalizada (qwen3_template333.jinja). El resultado del entrenamiento reportado por el autor es una perdida de entrenamiento de 0.2029 y una perdida de evaluacion de 0.2047, valores que sugieren un ajuste estrecho sobre el dominio de tool calling del conjunto de datos, aunque no se aportan metricas de evaluacion funcional ni benchmarks.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente sobre modelos comparables de terceros (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-sglang
+- Modelo en Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-sglang
 - Modelo base citado en la model card: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Adaptador citado: `qwen3.6-35b-a3b-tool-adapter-sglang` (LoRA r=32, 3 epocas, 1515 dialogos de tool calling, plantilla `qwen3_template333.jinja`); no se proporciona URL en la informacion disponible.
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes para este modelo; unicamente enlaces comerciales de Amazon.de sin relacion con el contenido de la ficha.

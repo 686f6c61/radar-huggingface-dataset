@@ -68,10 +68,10 @@ Datos de los modelos alternativos tomados de informacion publica general; convie
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| so101-pick-the-block-synthetic512-pi05-front640-20261007 | ~4,14 B | VLA (fine-tune de π0.5) | gemma | HuggingFace (0 descargas) |
-| lerobot/pi05_base | ~4,1 B (no confirmado en la info proporcionada) | VLA (π0.5) | gemma (segun el modelo base) | HuggingFace |
-| SmolVLA (lerobot/smolvla_base) | ~450 M | VLA | no disponible en la informacion proporcionada | HuggingFace / LeRobot |
-| OpenVLA (openvla/openvla-7b) | ~7 B | VLA | no disponible en la informacion proporcionada | HuggingFace |
+| so101-pick-the-block-synthetic512-pi05-front640-20261007 | ~4,14 B | VLA (fine-tune de π0.5) | gemma | Hugging Face (0 descargas) |
+| lerobot/pi05_base | ~4,1 B (no confirmado en la info proporcionada) | VLA (π0.5) | gemma (segun el modelo base) | Hugging Face |
+| SmolVLA (lerobot/smolvla_base) | ~450 M | VLA | no disponible en la informacion proporcionada | Hugging Face / LeRobot |
+| OpenVLA (openvla/openvla-7b) | ~7 B | VLA | no disponible en la informacion proporcionada | Hugging Face |
 
 Frente al modelo base, este checkpoint cambia la política generalista por una especializada en pick sobre SO-101; frente a SmolVLA y OpenVLA, se diferencia por tamaño intermedio y por estar atado a un robot y una tarea concretos, sin métricas de éxito publicadas.
 
@@ -87,7 +87,7 @@ Frente al modelo base, este checkpoint cambia la política generalista por una e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubatotree/so101-pick-the-block-synthetic512-pi05-front640-20261007
+- Modelo en Hugging Face: https://huggingface.co/rubatotree/so101-pick-the-block-synthetic512-pi05-front640-20261007
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/rubatotree/pick-the-block-synthetic-512
 - Librería LeRobot: https://github.com/huggingface/lerobot

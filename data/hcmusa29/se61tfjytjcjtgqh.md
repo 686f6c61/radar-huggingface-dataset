@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hcmusa29/Se61tFJyTjCJTgQH` es un repositorio alojado en HuggingFace por el usuario `hcmusa29` que, a fecha de la informacion disponible, no incluye model card, licencia, idiomas declarados ni pipeline asociado. El unico dato objetivo publicado es el tamano del repositorio, 108,9 GB, junto con las marcas temporales de creacion (2026-09-12) y ultima actualizacion (2026-09-13). El identificador del repositorio es una cadena alfanumerica aleatoria sin significado descriptivo, lo que impide inferir familia, arquitectura o proposito a partir del nombre.
+`hcmusa29/Se61tFJyTjCJTgQH` es un repositorio alojado en Hugging Face por el usuario `hcmusa29` que, a fecha de la informacion disponible, no incluye model card, licencia, idiomas declarados ni pipeline asociado. El unico dato objetivo publicado es el tamano del repositorio, 108,9 GB, junto con las marcas temporales de creacion (2026-09-12) y ultima actualizacion (2026-09-13). El identificador del repositorio es una cadena alfanumerica aleatoria sin significado descriptivo, lo que impide inferir familia, arquitectura o proposito a partir del nombre.
 
 No hay informacion publica sobre el problema que resuelve, el proceso de entrenamiento, la composicion del dataset ni las capacidades del modelo. Tampoco se han publicado resultados de benchmarks y el contador de descargas es 0, con 1 like, por lo que no existe validacion alguna por parte de la comunidad. Las busquedas web realizadas no devuelven ningun resultado relacionado con este repositorio: los enlaces recuperados corresponden a paginas sin relacion alguna (foros en chino sobre videojuegos, letras de canciones, la plataforma Twitch y una guia sobre errores de DNS).
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/Se61tFJyTjCJTgQH
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/Se61tFJyTjCJTgQH
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

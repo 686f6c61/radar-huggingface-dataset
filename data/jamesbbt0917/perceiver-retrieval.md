@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesbbt0917/perceiver-retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta de un Perceiver orientada a tareas de retrieval, escrita en PyTorch. Lo publica el usuario jamesbbt0917 bajo licencia MIT y no está respaldado por ningún laboratorio ni institución. El propio autor lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
+`jamesbbt0917/perceiver-retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta de un Perceiver orientada a tareas de retrieval, escrita en PyTorch. Lo publica el usuario jamesbbt0917 bajo licencia MIT y no está respaldado por ningún laboratorio ni institución. El propio autor lo describe como un punto de partida experimental para revisión de código, smoke tests y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción.
 
 El dato más relevante es su tamaño real: el checkpoint `model.safetensors` contiene 33.088 parámetros, es decir, unas tres décimas de milésima de millón. El `config.json` etiqueta la configuración como «large», lo que choca con ese recuento y sugiere que la etiqueta se refiere a un preset interno del script y no a una escala real de modelo. El repositorio ocupa 0,0 GB y no registra descargas ni likes.
 
@@ -21,7 +21,7 @@ La relevancia ahora es metodológica, no de rendimiento: sirve como esqueleto re
 | Licencia | MIT |
 | Formato de pesos | safetensors, acompañado de `config.json`, `training_args.json` y `finetune.py` |
 | Escala declarada en config | «large» (preset interno del script; no coherente con el recuento de parámetros) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-17 |
 
@@ -92,5 +92,5 @@ Las cifras de parámetros de los modelos comparados no se han verificado en esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesbbt0917/perceiver-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/jamesbbt0917/perceiver-retrieval
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados a este modelo.

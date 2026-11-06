@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Forest Cover Classifier es un modelo de clasificación tabular clásica publicado en HuggingFace por el usuario Tanuj124. No es una red neuronal ni un modelo de lenguaje: se trata de un `DecisionTreeClassifier` de scikit-learn sin podar, serializado junto con el esquema exacto de 54 características y las etiquetas de clase necesarias para la inferencia. Resuelve un problema de clasificación de siete clases sobre observaciones cartográficas de celdas de 30 m x 30 m en cuatro áreas silvestres del Roosevelt National Forest (Colorado).
+Forest Cover Classifier es un modelo de clasificación tabular clásica publicado en Hugging Face por el usuario Tanuj124. No es una red neuronal ni un modelo de lenguaje: se trata de un `DecisionTreeClassifier` de scikit-learn sin podar, serializado junto con el esquema exacto de 54 características y las etiquetas de clase necesarias para la inferencia. Resuelve un problema de clasificación de siete clases sobre observaciones cartográficas de celdas de 30 m x 30 m en cuatro áreas silvestres del Roosevelt National Forest (Colorado).
 
 El modelo se entrenó sobre las 581.012 filas completas del dataset UCI Covertype, con una partición holdout del 20 % (`random_state=42`). Alcanza una exactitud de 0,93895 en el split de test y reproduce la métrica reportada en el cuaderno original (93,895 %). El proyecto comparó tres algoritmos clásicos —regresión logística (68,74 %), K-Nearest Neighbors con `n_neighbors=5` (96,87 %) y árbol de decisión (93,90 %)— y seleccionó el árbol por su equilibrio entre exactitud y tiempo de cómputo, no por ser el más preciso.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente educativa: sirve como referencia reproducible 
 | Numero de caracteristicas | 54 enteros (10 medidas cartográficas + 4 indicadores one-hot de área silvestre + 40 indicadores one-hot de tipo de suelo) |
 | Dataset de entrenamiento | UCI Covertype (Jock Blackard), 581.012 filas, licencia CC BY 4.0 |
 | Particion de evaluacion | `train_test_split(test_size=0.2, random_state=42)` |
-| Tamano del repositorio | 0.0 GB según HuggingFace (artefacto de tamano no especificado) |
+| Tamano del repositorio | 0.0 GB según Hugging Face (artefacto de tamano no especificado) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
 
@@ -108,7 +108,7 @@ Comparación con los otros dos clasificadores evaluados en el mismo cuaderno y c
 
 | Modelo | Parametros | Contexto | Exactitud en test | F1 macro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Decision Tree (este modelo) | no disponible (nodos/hojas no publicados) | no aplica | 0,93895 | 0,90163 | no disponible | artefacto joblib en HuggingFace |
+| Decision Tree (este modelo) | no disponible (nodos/hojas no publicados) | no aplica | 0,93895 | 0,90163 | no disponible | artefacto joblib en Hugging Face |
 | K-Nearest Neighbors (`n_neighbors=5`) | no aplica (basado en instancias) | no aplica | 96,87 % | no disponible | no disponible | solo resultados en el cuaderno, sin artefacto publicado |
 | Logistic Regression | no disponible (coeficientes no publicados) | no aplica | 68,74 % | no disponible | no disponible | solo resultados en el cuaderno, sin artefacto publicado |
 
@@ -128,10 +128,10 @@ No se dispone de información sobre otros modelos publicados específicamente pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tanuj124/forest-cover-classifier
+- Modelo en Hugging Face: https://huggingface.co/Tanuj124/forest-cover-classifier
 - Repositorio de origen en GitHub: https://github.com/tanujranjith/ml-forest-cover-prediction-project
 - Dataset UCI Covertype: https://archive.ics.uci.edu/dataset/31/covertype
 - DOI del dataset: https://doi.org/10.24432/C50K5N
-- Esquema de características (referenciado en la model card): `feature_schema.json` dentro del repositorio de HuggingFace
-- Dependencias (referenciado en la model card): `requirements.txt` dentro del repositorio de HuggingFace
-- Script de inferencia (referenciado en la model card): `inference.py` dentro del repositorio de HuggingFace
+- Esquema de características (referenciado en la model card): `feature_schema.json` dentro del repositorio de Hugging Face
+- Dependencias (referenciado en la model card): `requirements.txt` dentro del repositorio de Hugging Face
+- Script de inferencia (referenciado en la model card): `inference.py` dentro del repositorio de Hugging Face

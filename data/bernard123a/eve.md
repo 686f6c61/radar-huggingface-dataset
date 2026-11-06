@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eve es un modelo publicado en HuggingFace por el usuario Bernard123a bajo el identificador `Bernard123a/Eve`. En el momento de redactar esta ficha, la unica informacion verificable del repositorio es su licencia (Apache 2.0), su etiqueta de region (`us`) y sus metadatos de publicacion: creado y actualizado el 2 de octubre de 2026, con cero descargas y cero "likes".
+Eve es un modelo publicado en Hugging Face por el usuario Bernard123a bajo el identificador `Bernard123a/Eve`. En el momento de redactar esta ficha, la unica informacion verificable del repositorio es su licencia (Apache 2.0), su etiqueta de region (`us`) y sus metadatos de publicacion: creado y actualizado el 2 de octubre de 2026, con cero descargas y cero "likes".
 
 La model card asociada no contiene mas que el bloque de frontmatter con la licencia. No se declara arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados, composicion del dataset de entrenamiento ni pipeline de tarea (`pipeline: no disponible`). Tampoco se enlazan paper, repositorio de codigo, informe tecnico ni pesos en formatos concretos.
 
@@ -66,7 +66,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo rango 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bernard123a/Eve | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin pesos documentados |
+| Bernard123a/Eve | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin pesos documentados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo rango 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bernard123a/Eve
+- Hugging Face: https://huggingface.co/Bernard123a/Eve
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o informe tecnico: no disponible

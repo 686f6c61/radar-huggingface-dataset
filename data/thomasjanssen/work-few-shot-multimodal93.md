@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por ThomasJanssen en HuggingFace, no contiene un modelo de IA entrenado, sino una nota de investigación exploratoria sobre *few-shot multimodal*. El propio autor lo describe como un documento de trabajo que registra el alcance de una pregunta de investigación, posibles factores de confusión, requisitos de reproducibilidad y comparaciones propuestas con líneas base, antes de que se reporte ningún resultado de benchmark. El repositorio incluye únicamente un archivo `review.md` (la nota principal) y un `README.md` con documentación.
+Este repositorio, publicado por ThomasJanssen en Hugging Face, no contiene un modelo de IA entrenado, sino una nota de investigación exploratoria sobre *few-shot multimodal*. El propio autor lo describe como un documento de trabajo que registra el alcance de una pregunta de investigación, posibles factores de confusión, requisitos de reproducibilidad y comparaciones propuestas con líneas base, antes de que se reporte ningún resultado de benchmark. El repositorio incluye únicamente un archivo `review.md` (la nota principal) y un `README.md` con documentación.
 
 Aunque el repositorio tiene la etiqueta `safetensors` y aparece un valor de 16.576 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que indica que no hay pesos de modelo publicados. Se trata, por tanto, de un artefacto de investigación en fase de diseño, no de un modelo utilizable para inferencia. Su relevancia actual es limitada para desarrolladores que buscan modelos desplegables, pero puede interesar a investigadores que quieran seguir la evolución de este trabajo o replicar sus futuros experimentos.
 
@@ -61,4 +61,4 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThomasJanssen/work-few-shot-multimodal93
+- Repositorio en Hugging Face: https://huggingface.co/ThomasJanssen/work-few-shot-multimodal93

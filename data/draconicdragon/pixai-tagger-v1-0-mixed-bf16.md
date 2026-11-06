@@ -24,7 +24,7 @@ Su relevancia practica es acotada pero clara: el etiquetado automatico es una pi
 | Pipeline declarado | image-classification |
 | Libreria | transformers (con custom_code) |
 | Modelo base | pixai-labs/pixai-tagger-v1.0 (relacion: quantized) |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Region | us |
 
@@ -39,7 +39,7 @@ Lo unico documentado por el autor de esta ficha es el proceso de conversion: se 
 - Etiquetado multi-etiqueta de imagenes: asigna simultaneamente varias etiquetas a una misma imagen, en el estilo de vocabulario de Danbooru.
 - Dominio especializado en ilustracion anime: las etiquetas del repositorio (anime, tagger, danbooru) delimitan el caso de uso previsto.
 - Extraccion de caracteristicas: el repositorio incluye la etiqueta feature-extraction ademas de image-classification, por lo que puede emplearse para obtener representaciones de imagen.
-- Clasificacion de imagen como tarea principal declarada en el pipeline de HuggingFace, con salida multi-label.
+- Clasificacion de imagen como tarea principal declarada en el pipeline de Hugging Face, con salida multi-label.
 - Inferencia en BF16 con cabeza en FP32, lo que permite ejecucion en precision reducida sin perder la precision numerica de la capa de clasificacion.
 - Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no es un modelo generativo de texto).
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DraconicDragon/pixai-tagger-v1.0-mixed-bf16 | 486.346.909 (dato real de safetensors) | No aplica / no disponible | No disponible | No disponible | HuggingFace, requiere custom_code |
-| pixai-labs/pixai-tagger-v1.0 (modelo base) | Mismo modelo, no disponible el recuento exacto en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| DraconicDragon/pixai-tagger-v1.0-mixed-bf16 | 486.346.909 (dato real de safetensors) | No aplica / no disponible | No disponible | No disponible | Hugging Face, requiere custom_code |
+| pixai-labs/pixai-tagger-v1.0 (modelo base) | Mismo modelo, no disponible el recuento exacto en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 | Otros taggers de anime (por ejemplo, familias WD14 o JoyTag) | No disponible | No disponible | No disponible | No disponible | No verificado en la informacion disponible |
 
 No se dispone de datos verificados de benchmarks, licencia ni parametros de los modelos alternativos dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -94,6 +94,6 @@ No se dispone de datos verificados de benchmarks, licencia ni parametros de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DraconicDragon/pixai-tagger-v1.0-mixed-bf16
+- Modelo en Hugging Face: https://huggingface.co/DraconicDragon/pixai-tagger-v1.0-mixed-bf16
 - Modelo base: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
 - Los resultados de la busqueda web proporcionada no contienen ningun enlace relacionado con este modelo (corresponden a sitios de juegos tipo bubble shooter); no se dispone de papers, blogs, repositorios ni demos adicionales.

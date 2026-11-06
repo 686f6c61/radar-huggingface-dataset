@@ -88,8 +88,8 @@ La comparativa se limita a los modelos mencionados en las fuentes. No se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ginsongsong/DeepSeek-V4-Flash-0731-FP8-PTPC
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face: https://huggingface.co/ginsongsong/DeepSeek-V4-Flash-0731-FP8-PTPC
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731
 - Ficha de benchmarks y especificaciones: https://aireleasetracker.com/model/deepseek/deepseek-v4-flash-0731
 - Referencia de API en DeepInfra: https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kth8/LFM2.5-230M-OpenCode-Title-Generator | 229,7 M | no disponible | Titulado de sesiones para OpenCode (SFT con LoRA) | LFM Open License v1.0 | HuggingFace, safetensors |
-| unsloth/LFM2.5-230M (modelo base) | 229,7 M | no disponible | Modelo generalista de generacion de texto | LFM Open License v1.0 | HuggingFace |
+| kth8/LFM2.5-230M-OpenCode-Title-Generator | 229,7 M | no disponible | Titulado de sesiones para OpenCode (SFT con LoRA) | LFM Open License v1.0 | Hugging Face, safetensors |
+| unsloth/LFM2.5-230M (modelo base) | 229,7 M | no disponible | Modelo generalista de generacion de texto | LFM Open License v1.0 | Hugging Face |
 | Otros ajustes finos de titulado de ~0,2-0,5 B | no disponible | no disponible | no disponible | no disponible | No se identifican alternativas comparables en la informacion disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre modelos comparables: las coincidencias obtenidas trataban sobre la escritura de caracteres especiales en teclados de Mac, un tema sin relacion con el modelo. Por tanto, la unica comparacion documentada es con el modelo base del que deriva.
@@ -84,7 +84,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator
+- Modelo en Hugging Face: https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-230M
 - Dataset de entrenamiento: https://huggingface.co/datasets/kth8/title-generation-10000x
 - Prompt del agente de titulos de OpenCode: https://raw.githubusercontent.com/anomalyco/opencode/refs/heads/dev/packages/opencode/src/agent/prompt/title.txt

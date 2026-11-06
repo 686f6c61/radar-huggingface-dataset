@@ -6,7 +6,7 @@
 
 El interés del artefacto es fundamentalmente de investigación: explora la idea de "pensamiento continuo" (continuous-thought) sustituyendo parte del cómputo simbólico por transformaciones geométricas sobre una variedad, en lugar de limitarse a un ajuste fino estándar de pesos. El modelo base aporta la parte funcional conocida: un transformer decoder-only de 0,5 mil millones de parámetros, especializado en código y con licencia Apache 2.0.
 
-Hay que subrayar que la información disponible es muy escasa y que el repositorio de HuggingFace figura con un tamaño de 0,0 GB, sin descargas ni valoraciones, por lo que no hay evidencia publicada de que los pesos del adaptador estén efectivamente alojados. Las afirmaciones técnicas de la model card (defecto de Frobenius de `3.494e-14`, "telepatía de tensores") no vienen acompañadas de paper, evaluación ni código verificable en la información proporcionada.
+Hay que subrayar que la información disponible es muy escasa y que el repositorio de Hugging Face figura con un tamaño de 0,0 GB, sin descargas ni valoraciones, por lo que no hay evidencia publicada de que los pesos del adaptador estén efectivamente alojados. Las afirmaciones técnicas de la model card (defecto de Frobenius de `3.494e-14`, "telepatía de tensores") no vienen acompañadas de paper, evaluación ni código verificable en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -94,7 +94,7 @@ La comparación relevante es contra el propio base: el adaptador PMTP no documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polydim-cla/qwen2.5-coder-0.5b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/polydim-cla/qwen2.5-coder-0.5b-pmtp
 - Repositorio del autor (POLYDIM_EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Tag de Ollama del base: https://ollama.com/library/qwen2.5-coder

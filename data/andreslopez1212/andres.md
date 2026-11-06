@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `andreslopez1212/andres` es un repositorio alojado en HuggingFace por el usuario `andreslopez1212`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia `apache-2.0` sin ningun otro dato. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni pesos publicados.
+El modelo identificado como `andreslopez1212/andres` es un repositorio alojado en Hugging Face por el usuario `andreslopez1212`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia `apache-2.0` sin ningun otro dato. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni pesos publicados.
 
 El repositorio registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (2026-10-15T19:47:09Z), lo que indica que no ha habido actividad posterior a su publicacion. No se ha declarado `pipeline` (tarea) ni idiomas soportados, por lo que ni siquiera es posible confirmar que se trate de un modelo de lenguaje: podria ser un repositorio vacio, una plantilla o un experimento sin artefactos publicados.
 
@@ -37,7 +37,7 @@ Tampoco se documentan innovaciones tecnicas, mecanismos de atencion, estrategias
 
 No disponible. No se puede confirmar ninguna capacidad concreta del modelo a partir de la informacion accesible:
 
-- No se ha declarado tarea (`pipeline`) en HuggingFace, por lo que no se puede verificar generacion de texto, razonamiento, codigo, matematicas o vision.
+- No se ha declarado tarea (`pipeline`) en Hugging Face, por lo que no se puede verificar generacion de texto, razonamiento, codigo, matematicas o vision.
 - No hay evidencia de soporte de tool calling ni de function calling.
 - No hay evidencia de soporte para agentes o razonamiento multi-paso.
 - No se han declarado idiomas soportados.
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreslopez1212/andres
+- Repositorio en Hugging Face: https://huggingface.co/andreslopez1212/andres
 - http://andres.ai/ (resultado de busqueda, sin relacion aparente con el modelo)
 - https://www.instagram.com/andresmodel__/ (resultado de busqueda, sin relacion aparente con el modelo)
 - https://www.instagram.com/andreslopez1212lopez/ (resultado de busqueda, sin relacion aparente con el modelo)

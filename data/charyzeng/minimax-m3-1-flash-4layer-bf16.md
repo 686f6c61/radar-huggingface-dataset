@@ -102,8 +102,8 @@ No hay datos suficientes en la información proporcionada para comparar parámet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CharyZenn/MiniMax-M3.1-Flash-4layer-bf16
-- Organización MiniMaxAI en HuggingFace: https://huggingface.co/MiniMaxAI
+- Repositorio en Hugging Face: https://huggingface.co/CharyZenn/MiniMax-M3.1-Flash-4layer-bf16
+- Organización MiniMaxAI en Hugging Face: https://huggingface.co/MiniMaxAI
 - Artículo en arXiv (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
 - GitHub de MiniMax: https://github.com/MiniMax-AI
 - Web de MiniMax: https://www.minimax.io

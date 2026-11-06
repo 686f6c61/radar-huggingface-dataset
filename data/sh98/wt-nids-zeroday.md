@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SH98/wt-nids-zeroday es un repositorio de pesos alojado en HuggingFace por el usuario SH98. El identificador del modelo y el nombre del repositorio ("wt-nids-zeroday") apuntan, de forma tentativa, a un sistema de deteccion de intrusiones en red (NIDS) orientado a amenazas de dia cero, aunque la ficha publica no incluye descripcion, pipeline ni documentacion que lo confirmen. El repositorio ocupa 135,8 GB y utiliza el formato de pesos safetensors.
+SH98/wt-nids-zeroday es un repositorio de pesos alojado en Hugging Face por el usuario SH98. El identificador del modelo y el nombre del repositorio ("wt-nids-zeroday") apuntan, de forma tentativa, a un sistema de deteccion de intrusiones en red (NIDS) orientado a amenazas de dia cero, aunque la ficha publica no incluye descripcion, pipeline ni documentacion que lo confirmen. El repositorio ocupa 135,8 GB y utiliza el formato de pesos safetensors.
 
 La informacion publica disponible es minima: no se declara licencia, idiomas, arquitectura, numero de parametros ni pipeline de inferencia. En el momento de redactar esta ficha el modelo acumula 1 "like" y 0 descargas, y fue creado el 10 de septiembre de 2026 con una ultima actualizacion el 12 de septiembre de 2026.
 
@@ -100,6 +100,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SH98/wt-nids-zeroday
+- Repositorio en Hugging Face: https://huggingface.co/SH98/wt-nids-zeroday
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de soporte de Microsoft sin relacion con el mismo).

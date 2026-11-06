@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hatim2221/Fikr-7B-Reasoning-LoRA
+- Hugging Face: https://huggingface.co/Hatim2221/Fikr-7B-Reasoning-LoRA
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Proyecto Tina (referencia de razonamiento con LoRA): https://github.com/shangshang-wang/Tina
 - Paper de Tina: https://arxiv.org/html/2504.15777v1

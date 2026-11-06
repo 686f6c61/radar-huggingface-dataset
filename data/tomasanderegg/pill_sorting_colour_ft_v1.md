@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pill_sorting_colour_ft_v1` (este) | 450 M | Imagen 480x640 + estado (6,) | Sorting de pastillas por color y forma | Apache 2.0 | HuggingFace, LeRobot |
-| SmolVLA (modelo base genérico) | no disponible en la información | Vision-language-action | Manipulación general | no disponible | HuggingFace |
-| `pill_sorting_full_ft_a100_v3_dagger60` (modelo base de este checkpoint) | no disponible en la información | Imagen + estado | Sorting de pastillas (con DAgger) | no disponible | HuggingFace |
+| `pill_sorting_colour_ft_v1` (este) | 450 M | Imagen 480x640 + estado (6,) | Sorting de pastillas por color y forma | Apache 2.0 | Hugging Face, LeRobot |
+| SmolVLA (modelo base genérico) | no disponible en la información | Vision-language-action | Manipulación general | no disponible | Hugging Face |
+| `pill_sorting_full_ft_a100_v3_dagger60` (modelo base de este checkpoint) | no disponible en la información | Imagen + estado | Sorting de pastillas (con DAgger) | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomasAnderegg/pill_sorting_colour_ft_v1
+- Modelo en Hugging Face: https://huggingface.co/TomasAnderegg/pill_sorting_colour_ft_v1
 - Modelo base: https://huggingface.co/TomasAnderegg/pill_sorting_full_ft_a100_v3_dagger60
 - Dataset de entrenamiento: https://huggingface.co/datasets/TomasAnderegg/pill_sorting_colour_mix_v1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=TomasAnderegg/pill_sorting_colour_mix_v1

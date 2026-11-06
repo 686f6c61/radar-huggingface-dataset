@@ -46,7 +46,7 @@ Respecto a los datos, el nombre del repositorio sugiere un ajuste supervisado so
 - Generacion de codigo en entornos con recursos limitados: si el ajuste conserva la capacidad de codigo del base, podria emplearse en autocompletado o revision de parches en local, sin dependencia de APIs externas.
 - Tuberia de retrieval-augmented generation (RAG): el modelo fusionado puede actuar como generador en un sistema RAG sobre documentacion tecnica, aprovechando un contexto que, segun la documentacion del base, admite presupuestos de salida de 32.768 tokens.
 - Base para nuevos ajustes incrementales: el adaptador puede servir de punto de partida para experimentos posteriores de SFT o DPO sobre dominios mas concretos, dado su tamano reducido y su licencia permisiva.
-- Educacion y material de aprendizaje: util como caso de estudio en cursos o tutoriales sobre adaptadores LoRA, publicacion en HuggingFace y entrenamiento con Unsloth.
+- Educacion y material de aprendizaje: util como caso de estudio en cursos o tutoriales sobre adaptadores LoRA, publicacion en Hugging Face y entrenamiento con Unsloth.
 
 ## Benchmarks y rendimiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-TauKnowledge-CS-SFT-Split-01-adapter | Adaptador sobre base de ~2B | No disponible | No publicado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B (base) | ~2B | No disponible (presupuesto de salida recomendado de 32.768 tokens) | Documentado por Qwen, no replicado aqui | No disponible en la informacion recogida | HuggingFace |
-| Qwen3-1.7B | ~1,7B | No disponible | Referencia de comparacion citada por Qwen | No disponible | HuggingFace |
-| Qwen3-4B-2507 | ~4B | No disponible | Referencia de comparacion citada por Qwen | No disponible | HuggingFace |
+| Qwen3.5-2B-TauKnowledge-CS-SFT-Split-01-adapter | Adaptador sobre base de ~2B | No disponible | No publicado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B (base) | ~2B | No disponible (presupuesto de salida recomendado de 32.768 tokens) | Documentado por Qwen, no replicado aqui | No disponible en la informacion recogida | Hugging Face |
+| Qwen3-1.7B | ~1,7B | No disponible | Referencia de comparacion citada por Qwen | No disponible | Hugging Face |
+| Qwen3-4B-2507 | ~4B | No disponible | Referencia de comparacion citada por Qwen | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una jerarquia fiable entre estas opciones.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparables para establecer una jerarquia 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-TauKnowledge-CS-SFT-Split-01-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-TauKnowledge-CS-SFT-Split-01-adapter
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio relacionado del mismo autor: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-02
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

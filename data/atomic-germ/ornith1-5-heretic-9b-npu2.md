@@ -83,7 +83,7 @@ Las tres variantes comparten el mismo modelo base y licencia MIT, pero se dirige
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Ornith1.5-Heretic-9B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Ornith1.5-Heretic-9B-NPU2
 - Modelo base: https://huggingface.co/Dingdust/Ornith-1.5-9B-heretic
 - Version MLX 4-bit: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit
 - Guia de ejecucion local: https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

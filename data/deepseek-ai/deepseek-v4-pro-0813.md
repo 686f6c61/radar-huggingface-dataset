@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Pro-0813 es la versión de disponibilidad general (GA) de la serie V4 Pro de DeepSeek, lanzada el 13 de agosto de 2026, trece días después de la variante Flash-0731. Se trata de un modelo de lenguaje de gran escala basado en arquitectura mixture-of-experts (MoE), orientado a generación de texto y conversación, con un pipeline de text-generation y compatibilidad con endpoints. Su rasgo más distintivo es una ventana de contexto de 1.048.576 tokens (1M) y una salida máxima de 384.000 tokens, lo que lo posiciona para tareas de razonamiento de largo alcance y procesamiento de documentos extensos.
 
-El modelo está desarrollado por DeepSeek y distribuido en HuggingFace con formato safetensors. Aunque el campo oficial de licencia figura como no disponible, la etiqueta del repositorio indica MIT. Los benchmarks independientes publicados por Artificial Analysis y recogidos en OpenRouter, junto con las evaluaciones de aireleasetracker (AutomationBench, Terminal-Bench 2.1, Toolathlon-Verified, CyberGym y Humanity's Last Exam), sugieren un enfoque orientado a capacidades de agente, uso de herramientas y automatización. Es relevante ahora por ser la primera versión estable de la familia V4 Pro, con un contexto de 1M tokens que compite directamente con los modelos de ventana larga más avanzados del mercado.
+El modelo está desarrollado por DeepSeek y distribuido en Hugging Face con formato safetensors. Aunque el campo oficial de licencia figura como no disponible, la etiqueta del repositorio indica MIT. Los benchmarks independientes publicados por Artificial Analysis y recogidos en OpenRouter, junto con las evaluaciones de aireleasetracker (AutomationBench, Terminal-Bench 2.1, Toolathlon-Verified, CyberGym y Humanity's Last Exam), sugieren un enfoque orientado a capacidades de agente, uso de herramientas y automatización. Es relevante ahora por ser la primera versión estable de la familia V4 Pro, con un contexto de 1M tokens que compite directamente con los modelos de ventana larga más avanzados del mercado.
 
 ## Especificaciones técnicas
 
@@ -84,13 +84,13 @@ No se dispone de información sobre modelos comparables de otros fabricantes con
 - Riesgo de alucinación: inherente a los modelos de lenguaje generativos; sin datos específicos de fiabilidad factual para este modelo.
 - Limitaciones de idioma: los idiomas soportados no están documentados, lo que dificulta garantizar su comportamiento en castellano u otros idiomas distintos de los de entrenamiento.
 - Restricciones de licencia: el campo oficial de licencia figura como no disponible; la etiqueta MIT del repositorio no es vinculante hasta que se confirme en el archivo de licencia del modelo.
-- Adopción temprana: el modelo tiene 0 descargas en HuggingFace en el momento de la consulta, por lo que no hay experiencia acumulada de la comunidad sobre su comportamiento en producción.
+- Adopción temprana: el modelo tiene 0 descargas en Hugging Face en el momento de la consulta, por lo que no hay experiencia acumulada de la comunidad sobre su comportamiento en producción.
 - Requisitos de hardware desconocidos: al no publicarse el número de parámetros ni los requisitos de VRAM, es arriesgado planificar un despliegue sin pruebas previas.
 - Datos de entrenamiento no publicados: no se conoce la composición del dataset ni las técnicas de alineación, lo que limita la evaluación de su seguridad y robustez.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Repositorio Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Repositorio de la versión base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Ficha en OpenRouter con precios y benchmarks: https://openrouter.ai/deepseek/deepseek-v4-pro-0813
 - Seguimiento de lanzamiento y benchmarks: https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813

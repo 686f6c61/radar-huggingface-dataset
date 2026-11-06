@@ -98,8 +98,8 @@ No se dispone de resultados de benchmark publicados para alternativas evaluadas 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/t5-small-nl-to-regex | 60,5 M | 128 tokens (entrenamiento) | NL a regex sobre DeepRegex | MIT | HuggingFace, safetensors |
-| google-t5/t5-small | 60,5 M | 512 tokens | Proposito general, no ajustado a regex | Apache-2.0 | HuggingFace, safetensors |
+| thealper2/t5-small-nl-to-regex | 60,5 M | 128 tokens (entrenamiento) | NL a regex sobre DeepRegex | MIT | Hugging Face, safetensors |
+| google-t5/t5-small | 60,5 M | 512 tokens | Proposito general, no ajustado a regex | Apache-2.0 | Hugging Face, safetensors |
 | Modelos generativos grandes con few-shot prompting (familia GPT o similares) | muy superior | variable | NL a regex generico | propietaria o abierta segun variante | APIs o pesos abiertos |
 
 Los dos primeros comparten arquitectura y tamano, de modo que la diferencia es exclusivamente el ajuste fino sobre los corpus DeepRegex. Frente a los modelos generativos grandes, la ventaja de este checkpoint es el coste de inferencia y la reproducibilidad; la desventaja, su restriccion a descripciones cortas de un unico dominio en ingles y la salida en un dialecto no estandar. No hay datos comparativos de rendimiento entre estas alternativas en la informacion disponible.
@@ -121,7 +121,7 @@ Los dos primeros comparten arquitectura y tamano, de modo que la diferencia es e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/t5-small-nl-to-regex
+- Modelo en Hugging Face: https://huggingface.co/thealper2/t5-small-nl-to-regex
 - Modelo base: https://huggingface.co/google-t5/t5-small
 - Corpus DeepRegex (referencia citada en la model card, autoria de Locascio et al.): no disponible como enlace directo en la informacion proporcionada
 - Busqueda web: los resultados devueltos no guardan relacion con el modelo (directorios de empresas de fontaneria en Douai, Francia), por lo que no se han incorporado enlaces adicionales.

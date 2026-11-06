@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlanetDiffusion es un modelo de difusion para generacion procedural de terreno planetario, desarrollado por Oliver Borg (usuario `otrolie` en HuggingFace) en el contexto del articulo cientifico *Authoring Terrestrial Planets with Diffusion Models* (DOI 10.1111/cgf.70390). El modelo resuelve un problema especifico de los pipelines de generacion de mundos: la sintesis de mapas de altura y terreno coherente a escala planetaria, que tradicionalmente requiere ruido procedural manual o herramientas de autoria costosas. Se trata de un modelo de difusion de tipo image-to-image, no de un LLM, por lo que su uso esta acotado a la generacion y edicion de mapas de terreno.
+PlanetDiffusion es un modelo de difusion para generacion procedural de terreno planetario, desarrollado por Oliver Borg (usuario `otrolie` en Hugging Face) en el contexto del articulo cientifico *Authoring Terrestrial Planets with Diffusion Models* (DOI 10.1111/cgf.70390). El modelo resuelve un problema especifico de los pipelines de generacion de mundos: la sintesis de mapas de altura y terreno coherente a escala planetaria, que tradicionalmente requiere ruido procedural manual o herramientas de autoria costosas. Se trata de un modelo de difusion de tipo image-to-image, no de un LLM, por lo que su uso esta acotado a la generacion y edicion de mapas de terreno.
 
 Tecnicamente, el repositorio contiene un unico conjunto de pesos de inferencia (0.3 GB) correspondiente a un modelo de difusion por teselas (*tile diffusion model*) basado en UNet, con scheduler DDIM y un codificador de terreno especifico, configurado para "planet size 5". El modelo se carga mediante una pipeline personalizada (`TerrainDiffusionPipeline`) del repositorio de codigo del autor y no es compatible con la `DiffusionPipeline` estandar de diffusers, lo que limita su integracion directa en flujos habituales.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PlanetDiffusion | Difusion image-to-image (terreno planetario) | no disponible | no aplica | MIT | HuggingFace + GitHub |
+| PlanetDiffusion | Difusion image-to-image (terreno planetario) | no disponible | no aplica | MIT | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de generacion de terreno planetario por difusion en la documentacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -74,11 +74,11 @@ No se dispone de informacion sobre modelos comparables de generacion de terreno 
 - Configuracion fija: el unico checkpoint disponible esta ajustado a "planet size 5", sin documentacion sobre como escalar a otros tamanos.
 - Ausencia de benchmarks: no hay metricas publicadas que permitan comparar su calidad con alternativas.
 - Licencia MIT: permite uso comercial y modificacion, pero conviene revisar las dependencias del repositorio de codigo y el articulo asociado por si imponen condiciones adicionales.
-- Fecha de creacion futura (2026-10-31) en los metadatos de HuggingFace: conviene verificar la vigencia y el mantenimiento del repositorio antes de adoptarlo en produccion.
+- Fecha de creacion futura (2026-10-31) en los metadatos de Hugging Face: conviene verificar la vigencia y el mantenimiento del repositorio antes de adoptarlo en produccion.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de adopcion ni de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/otrolie/PlanetDiffusion
+- Hugging Face: https://huggingface.co/otrolie/PlanetDiffusion
 - Repositorio de codigo: https://github.com/Oliver-Borg/PlanetDiffusion
 - Articulo cientifico: http://doi.org/10.1111/cgf.70390

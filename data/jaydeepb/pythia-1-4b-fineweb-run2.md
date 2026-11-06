@@ -86,7 +86,7 @@ Frente a los Pythia originales, este modelo no mejora capacidades: aporta un des
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-fineweb-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-fineweb-run2
 - Modelo base Pythia-1.4B: https://huggingface.co/EleutherAI/pythia-1.4b
 - Repositorio del proyecto Pythia: https://github.com/EleutherAI/pythia
 - Versión original v0 de Pythia-1.4B: https://huggingface.co/EleutherAI/pythia-1.4b-v0

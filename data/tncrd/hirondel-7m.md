@@ -86,7 +86,7 @@ En IND-Eval (datos industriales), el autor reporta para Hirondel 0,839 nMASE y 0
 
 | Modelo | Parametros | Contexto | GIFT-Eval MASE | TIME MASE | fev-bench SQL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Hirondel-7M | 7,5 M | no disponible | 0,7003 | 0,6551 | 44,90 | Apache-2.0 | HuggingFace + GitHub |
+| Hirondel-7M | 7,5 M | no disponible | 0,7003 | 0,6551 | 44,90 | Apache-2.0 | Hugging Face + GitHub |
 | Timestral-5M | 5,2 M | no disponible | 0,7102 | 0,6571 | 44,36 | Modified MIT (límite de ingresos) | Pesos públicos |
 | Toto-2.0-4m | 4,1 M | no disponible | 0,7591 | 0,6940 | 40,04 | Apache-2.0 | Pesos públicos |
 | Chronos-2 | 119,5 M | no disponible | 0,7037 | 0,6659 | 43,97 | Apache-2.0 | Pesos públicos |
@@ -101,12 +101,12 @@ Frente a Timestral-5M, Hirondel-7M es ligeramente más preciso en GIFT-Eval y fe
 - Limitaciones de idioma: no aplica, pero tampoco soporta entradas textuales ni multimodales.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución con atribución; no se documentan restricciones adicionales.
 - Dependencia de la librería `hirondel`: el paquete en PyPI está en preparación y la instalación recomendada es desde GitHub, lo que añade fricción operativa y riesgo de cambios entre versiones.
-- Madurez y adopción: 106 descargas y 1 like en HuggingFace en la fecha de los datos; ecosistema pequeño y sin validación independiente por parte de terceros.
+- Madurez y adopción: 106 descargas y 1 like en Hugging Face en la fecha de los datos; ecosistema pequeño y sin validación independiente por parte de terceros.
 - Covariables futuras: la corrección por regresión ridge es una aproximación lineal; su calidad depende de la relación entre covariables y objetivo y del mecanismo de compuerta, cuyos detalles no se especifican en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tncrd/Hirondel-7M
+- Modelo en Hugging Face: https://huggingface.co/Tncrd/Hirondel-7M
 - Repositorio de código y pesos: https://github.com/tncrd/hirondel
 - Instalación del paquete (v1.1.0): `pip install "hirondel @ git+https://github.com/tncrd/hirondel@v1.1.0"`
 - Dataset IND-Eval: https://huggingface.co/datasets/cognitedata/IND-Eval

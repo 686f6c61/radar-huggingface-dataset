@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters` es un ajuste fino (fine-tuning) del modelo multilingüe mT5-small, publicado por el usuario hosseinmhmdkhani en HuggingFace. Su nombre indica que ha sido entrenado para la tarea de resumen automático de noticias en persa (farsi), partiendo de la arquitectura encoder-decoder de la familia T5 y añadiendo "hiperparámetros adicionales" en el proceso de entrenamiento, aunque el repositorio no documenta cuáles son ni cómo se seleccionaron.
+El modelo `hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters` es un ajuste fino (fine-tuning) del modelo multilingüe mT5-small, publicado por el usuario hosseinmhmdkhani en Hugging Face. Su nombre indica que ha sido entrenado para la tarea de resumen automático de noticias en persa (farsi), partiendo de la arquitectura encoder-decoder de la familia T5 y añadiendo "hiperparámetros adicionales" en el proceso de entrenamiento, aunque el repositorio no documenta cuáles son ni cómo se seleccionaron.
 
 Se trata de un modelo compacto: el recuento real de parámetros extraído del archivo safetensors es de 300.176.768, una cifra coherente con la variante *small* de mT5. Esta escala lo sitúa en el rango de modelos que pueden ejecutarse en hardware de consumo, lo que lo hace atractivo para tareas de sumarización en producción con requisitos de latencia y coste moderados, siempre que el idioma de trabajo sea el persa.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente en la práctica; tarjetas como RTX 3060, RTX 4060, RTX 2070, T4 o superiores cubren el caso sin problema. Para lotes grandes o entrenamiento adicional, se recomienda A100, H100, L40S o RTX 4090.
 - Cabe holgadamente en GPU de consumo: GTX 1650 (4 GB), RTX 3050, RTX 3060, RTX 4060 y cualquier modelo superior pueden alojarlo, incluso con cuantización en fp16 o int8.
 - Inferencia en CPU viable para cargas por lotes no interactivas, con latencia notablemente superior a la de GPU.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), HuggingFace Text Generation Inference (TGI), ONNX Runtime mediante Optimum y, con reservas por el soporte limitado de arquitecturas encoder-decoder, vLLM. No se han confirmado conversiones a GGUF ni compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), Hugging Face Text Generation Inference (TGI), ONNX Runtime mediante Optimum y, con reservas por el soporte limitado de arquitecturas encoder-decoder, vLLM. No se han confirmado conversiones a GGUF ni compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Al ser un modelo encoder-decoder, el coste de generación crece de forma aproximadamente lineal con la longitud del resumen de salida, por lo que las cifras dependerán del hardware y de la longitud objetivo.
 
 ## Comparativa con modelos similares
@@ -71,9 +71,9 @@ Los datos de la familia base mT5 proceden de documentación pública ampliamente
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt5-small-finetuned-persian-news-summarization (este modelo) | 300.176.768 | no disponible | no disponible (orientado a persa) | no disponible | HuggingFace, 45 descargas |
-| mT5-small (modelo base) | 300 M aprox. | 512 tokens (configuracion estandar de T5) | 101 idiomas (mC4) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| mT5-base (modelo base) | 580 M aprox. | 512 tokens (configuracion estandar de T5) | 101 idiomas (mC4) | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| mt5-small-finetuned-persian-news-summarization (este modelo) | 300.176.768 | no disponible | no disponible (orientado a persa) | no disponible | Hugging Face, 45 descargas |
+| mT5-small (modelo base) | 300 M aprox. | 512 tokens (configuracion estandar de T5) | 101 idiomas (mC4) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| mT5-base (modelo base) | 580 M aprox. | 512 tokens (configuracion estandar de T5) | 101 idiomas (mC4) | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otros modelos de sumarizacion en persa | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ Los datos de la familia base mT5 proceden de documentación pública ampliamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters
+- Modelo en Hugging Face: https://huggingface.co/hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters
 
 No se han encontrado enlaces relevantes al modelo, a papers asociados ni a repositorios de código en los resultados de la búsqueda web realizada. Los resultados obtenidos corresponden a consultas sin relación con el modelo y se han descartado por no aportar información técnica utilizable.

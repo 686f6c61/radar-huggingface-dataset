@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-tasks-only-long-qwen3-0.6b (este) | 596 M | no disponible (entrenado a 1.024) | Extracción de tareas en JSON | Apache 2.0 | HuggingFace, 0 descargas |
-| heed-tasks-only-qwen3-0.6b (EXP-038) | 0,6 B (familia Qwen3) | no disponible | Extracción de tareas, conserva hedge words | Apache 2.0 | HuggingFace |
-| heed-tasks-qwen3-0.6b (modelo de la app) | 0,6 B (familia Qwen3) | no disponible | Extracción de tareas con bucket | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 596 M | no disponible en esta ficha | Modelo base generalista | Apache 2.0 | HuggingFace |
+| heed-tasks-only-long-qwen3-0.6b (este) | 596 M | no disponible (entrenado a 1.024) | Extracción de tareas en JSON | Apache 2.0 | Hugging Face, 0 descargas |
+| heed-tasks-only-qwen3-0.6b (EXP-038) | 0,6 B (familia Qwen3) | no disponible | Extracción de tareas, conserva hedge words | Apache 2.0 | Hugging Face |
+| heed-tasks-qwen3-0.6b (modelo de la app) | 0,6 B (familia Qwen3) | no disponible | Extracción de tareas con bucket | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 596 M | no disponible en esta ficha | Modelo base generalista | Apache 2.0 | Hugging Face |
 
 La comparación cuantitativa entre los tres checkpoints de Heed está en la tabla de benchmarks; el modelo de la app se evaluó con juez ciego y no es comparable directamente con las cifras de solapamiento de palabras de este checkpoint.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa entre los tres checkpoints de Heed está en la tabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-tasks-only-long-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-tasks-only-long-qwen3-0.6b
 - Modelo de la aplicación Heed: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Primer modelo para móvil (EXP-038): https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

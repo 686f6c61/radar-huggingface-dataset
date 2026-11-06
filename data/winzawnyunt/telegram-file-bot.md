@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `winzawnyunt/telegram-file-bot`, publicado en HuggingFace por el autor `winzawnyunt`, no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card es prácticamente inexistente: solo incluye la etiqueta `license: mit` y una línea de licencia, sin datos sobre arquitectura, parámetros, entrenamiento, capacidades ni uso previsto. El nombre del repositorio sugiere que podría tratarse de un bot de Telegram para la gestión de archivos, pero no se puede confirmar porque no hay código, pesos ni documentación técnica disponible en la información proporcionada.
+El repositorio `winzawnyunt/telegram-file-bot`, publicado en Hugging Face por el autor `winzawnyunt`, no contiene información que permita identificarlo como un modelo de inteligencia artificial. La model card es prácticamente inexistente: solo incluye la etiqueta `license: mit` y una línea de licencia, sin datos sobre arquitectura, parámetros, entrenamiento, capacidades ni uso previsto. El nombre del repositorio sugiere que podría tratarse de un bot de Telegram para la gestión de archivos, pero no se puede confirmar porque no hay código, pesos ni documentación técnica disponible en la información proporcionada.
 
 Los resultados de búsqueda web asociados son ajenos al ámbito de la IA (errores de Python, desinstalación de MSI, ensamblados .NET, Git), lo que refuerza la falta de relación del repositorio con un modelo de lenguaje o cualquier otro modelo de aprendizaje automático. Dado que la evaluación técnica de un modelo requiere especificaciones mínimas de arquitectura, contexto, entrenamiento y benchmarks, este repositorio no puede ser tratado como un modelo de IA ni utilizado como tal. Cualquier intento de desplegarlo o integrarlo en un pipeline de producción debe descartarse hasta que el autor publique información técnica real y verificable.
 
@@ -80,4 +80,4 @@ No se pueden realizar comparativas porque el repositorio no contiene un modelo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/winzawnyunt/telegram-file-bot
+- Hugging Face: https://huggingface.co/winzawnyunt/telegram-file-bot

@@ -68,6 +68,6 @@ No se dispone de informacion sobre adaptadores LoRA similares en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-instruct_impulsive-oct-lora
+- Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-instruct_impulsive-oct-lora
 - Paper relacionado: https://arxiv.org/pdf/2607.04510v1
 - Analisis del paper: https://api.emergentmind.com/papers/2607.04510

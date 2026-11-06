@@ -16,7 +16,7 @@ La relevancia actual radica en la creciente demanda de inferencia eficiente en h
 | Longitud de contexto | no disponible (no aplica a modelos de difusion) |
 | Tipos de cuantizacion | NVFP4 (W4A4, FP8 KV cache, W8A8 para capas de atencion) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (segun tags de HuggingFace) |
+| Licencia | Apache-2.0 (segun tags de Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, sin confirmar) |
 
 ## Arquitectura y entrenamiento
@@ -68,9 +68,9 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielhanchen/NVFP4_Diffusion_Investigation
+- Repositorio en Hugging Face: https://huggingface.co/danielhanchen/NVFP4_Diffusion_Investigation
 - Blog de NVIDIA sobre NVFP4: https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/
-- Blog de HuggingFace sobre Nunchaku 4-bit diffusion: https://huggingface.co/blog/nunchaku-diffusers
+- Blog de Hugging Face sobre Nunchaku 4-bit diffusion: https://huggingface.co/blog/nunchaku-diffusers
 - Publicacion de Daniel Han sobre Gemma 4 NVFP4 quants: https://huggingface.co/posts/danielhanchen/713830365682295
 - Tuit sobre NVFP4 dynamic quants: https://x.com/danielhanchen/status/2077072556537020914
 - Tuit sobre NVFP4 Qwen3.6 quants: https://x.com/danielhanchen/status/2075567076002185525

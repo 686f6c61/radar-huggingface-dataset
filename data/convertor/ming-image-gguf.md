@@ -25,7 +25,7 @@ Su relevancia es practica: permite ejecutar generacion de imagenes a partir de t
 | Tamano del repositorio | 3,7 GB |
 | Fecha de publicacion | 2026-09-26 |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -90,6 +90,6 @@ No disponible. La busqueda web no ha proporcionado informacion sobre modelos com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/convertor/ming-image-gguf
+- Repositorio Hugging Face: https://huggingface.co/convertor/ming-image-gguf
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a paginas de comics y manga sin relacion alguna con el modelo, por lo que se descartan como fuentes.

@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento comparativos de este modelo con otros. Se 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Kaspar/arbitration_best_model_modernbert
+- Hugging Face del modelo: https://huggingface.co/Kaspar/arbitration_best_model_modernbert
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo en la información disponible.

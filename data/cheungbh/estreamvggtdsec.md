@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EStreamVGGTDSEC es un repositorio de modelos alojado en HuggingFace por el usuario cheungbh, distribuido en formato ONNX. Por el nombre se deduce que se trata de una variante de VGGT (Visual Geometry Grounded Transformer), un modelo de visión por computador orientado a la estimación de geometría 3D a partir de imágenes, combinado con algún componente denominado "EStream" y "DSEC". No obstante, la informacion disponible en la ficha de HuggingFace es extremadamente limitada: no se especifican pipeline, licencia, idiomas ni descripcion tecnica.
+EStreamVGGTDSEC es un repositorio de modelos alojado en Hugging Face por el usuario cheungbh, distribuido en formato ONNX. Por el nombre se deduce que se trata de una variante de VGGT (Visual Geometry Grounded Transformer), un modelo de visión por computador orientado a la estimación de geometría 3D a partir de imágenes, combinado con algún componente denominado "EStream" y "DSEC". No obstante, la informacion disponible en la ficha de Hugging Face es extremadamente limitada: no se especifican pipeline, licencia, idiomas ni descripcion tecnica.
 
 El repositorio tiene un tamano de 991.1 GB, lo que sugiere que contiene multiples variantes del modelo o pesos en varias precisiones y formatos, o bien un conjunto de artefactos ONNX de gran volumen. Con cero descargas y un solo "like", se trata de un repositorio practicamente sin adopcion publica ni documentacion asociada.
 
@@ -23,7 +23,7 @@ No se dispone de informacion sobre arquitectura, numero de parametros, contexto,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento, el volumen de datos utilizado ni las tecnicas de alineacion (RLHF, DPO u otras). El nombre del repositorio sugiere una relacion con VGGT (Visual Geometry Grounded Transformer), un transformer para reconstruccion y estimacion de geometria 3D a partir de imagenes, pero no hay confirmacion documental en la ficha de HuggingFace.
+No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento, el volumen de datos utilizado ni las tecnicas de alineacion (RLHF, DPO u otras). El nombre del repositorio sugiere una relacion con VGGT (Visual Geometry Grounded Transformer), un transformer para reconstruccion y estimacion de geometria 3D a partir de imagenes, pero no hay confirmacion documental en la ficha de Hugging Face.
 
 El unico dato tecnico verificable es el formato de distribucion: pesos en ONNX, lo que indica que el modelo esta pensado para inferencia mediante ONNX Runtime y no para entrenamiento o ajuste fino directo con frameworks como PyTorch. El prefijo "EStream" podria referirse a una variante de streaming o procesamiento por flujos, y "DSEC" a un dataset o modulo especifico, pero ninguna de estas hipotesis esta confirmada por la informacion disponible.
 
@@ -77,5 +77,5 @@ No disponible. No se dispone de informacion suficiente sobre EStreamVGGTDSEC par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cheungbh/EStreamVGGTDSEC
+- Repositorio en Hugging Face: https://huggingface.co/cheungbh/EStreamVGGTDSEC
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Travor278/pi05-scan-object-concurrent...e195 | no disponible | horizonte de acción 50, 12 dims articulares | sin tasa de éxito declarada | no disponible | HuggingFace, JAX/Orbax, 0 descargas |
+| Travor278/pi05-scan-object-concurrent...e195 | no disponible | horizonte de acción 50, 12 dims articulares | sin tasa de éxito declarada | no disponible | Hugging Face, JAX/Orbax, 0 descargas |
 | Travor278 E168 (modelo anterior del mismo autor) | no disponible | no disponible | no disponible | no disponible | mencionado en la model card como repo separado; sin enlace en la información |
 | PI0.5 base (OpenPI) | no disponible | no disponible | no disponible | no disponible en la información | referencia requerida vía `PI05_JAX_BASE`; no se enlaza el repositorio base |
 | Otras políticas robóticas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -99,7 +99,7 @@ La información proporcionada no permite una comparación cuantitativa con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-concurrent-data20260916-lora-10k-e195
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-concurrent-data20260916-lora-10k-e195
 - Dataset: https://huggingface.co/datasets/Shiki42/ctr-scan-object-concurrent-20260916
 - Métricas de entrenamiento (SwanLab, run E195 de CTR-PI05-LoRA10k): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Librería OpenPI (referencia general del ecosistema JAX utilizado): https://github.com/Physical-Intelligence/openpi

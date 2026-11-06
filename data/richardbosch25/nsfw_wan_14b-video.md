@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 14B T2V es un modelo de generación de vídeo a partir de texto (text-to-video) de 14.000 millones de parámetros, publicado por el usuario Richardbosch25 en HuggingFace. Se trata de un fine-tuning sin filtros (uncensored) del modelo base Wan-AI/Wan2.1-T2V-14B, especializado en la generación de contenido para adultos (NSFW). El modelo resuelve un problema concreto: la incapacidad de los modelos de vídeo comerciales y abiertos estándar para producir contenido explícito, al estar alineados con filtros de seguridad.
+NSFW Wan 14B T2V es un modelo de generación de vídeo a partir de texto (text-to-video) de 14.000 millones de parámetros, publicado por el usuario Richardbosch25 en Hugging Face. Se trata de un fine-tuning sin filtros (uncensored) del modelo base Wan-AI/Wan2.1-T2V-14B, especializado en la generación de contenido para adultos (NSFW). El modelo resuelve un problema concreto: la incapacidad de los modelos de vídeo comerciales y abiertos estándar para producir contenido explícito, al estar alineados con filtros de seguridad.
 
 El autor entrenó el modelo con una metodología unificada de una sola fase, combinando simultáneamente 30.000 clips de vídeo y 20.000 imágenes fijas durante 15 épocas, con el objetivo de evitar el colapso de calidad y la deriva anatómica que suelen aparecer en entrenamientos por fases. Los clips se entrenaron a 480p con 17 fotogramas por vídeo. El checkpoint recomendado es `wan_14B_e15.safetensors`.
 
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Richardbosch25/NSFW_Wan_14b-video
+- Modelo en Hugging Face: https://huggingface.co/Richardbosch25/NSFW_Wan_14b-video
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Discord de la comunidad del autor: https://discord.gg/mjnStFuCYh

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sudheerreddy333/textgeneration` es un modelo de generacion de texto publicado en HuggingFace por el usuario sudheerreddy333. Cuenta con 124.439.808 parametros (124M), un tamano que coincide con el de GPT-2 small, y la etiqueta "gpt2" sugiere que podria estar basado en dicha arquitectura, aunque la model card no lo confirma explicitamente. Se distribuye bajo licencia MIT y los pesos estan en formato safetensors.
+`sudheerreddy333/textgeneration` es un modelo de generacion de texto publicado en Hugging Face por el usuario sudheerreddy333. Cuenta con 124.439.808 parametros (124M), un tamano que coincide con el de GPT-2 small, y la etiqueta "gpt2" sugiere que podria estar basado en dicha arquitectura, aunque la model card no lo confirma explicitamente. Se distribuye bajo licencia MIT y los pesos estan en formato safetensors.
 
 La relevancia de este modelo es limitada en el estado actual: no tiene descargas, no recibe likes y la model card esta practicamente vacia, sin informacion sobre entrenamiento, capacidades o benchmarks. Su interes principal radica en ser un modelo pequeno y ligero con licencia permisiva, util para prototipado rapido o como punto de partida para fine-tuning, siempre que se valide su calidad de forma independiente.
 
@@ -51,7 +51,7 @@ Estimaciones basadas en el tamano del modelo (124M parametros), no en datos publ
 - VRAM estimada para inferencia: aproximadamente 250 MB en FP16 y 125 MB en INT8.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo GTX 1060, RTX 3060, RTX 4090, etc.
 - Compatibilidad con GPU de consumo: si, el modelo cabe holgadamente en cualquier GPU consumer actual.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI o transformers de HuggingFace, siempre que el formato safetensors sea compatible.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, TGI o transformers de Hugging Face, siempre que el formato safetensors sea compatible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -60,9 +60,9 @@ La comparacion asume que el modelo es una variante de GPT-2 small, lo cual no es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sudheerreddy333/textgeneration | 124M | no disponible | MIT | HuggingFace |
-| GPT-2 small (openai-community) | 124M | 1024 tokens | MIT | HuggingFace |
-| DistilGPT-2 (distilbert) | 82M | 1024 tokens | Apache-2.0 | HuggingFace |
+| sudheerreddy333/textgeneration | 124M | no disponible | MIT | Hugging Face |
+| GPT-2 small (openai-community) | 124M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT-2 (distilbert) | 82M | 1024 tokens | Apache-2.0 | Hugging Face |
 
 GPT-2 small es el modelo de referencia con el mismo numero de parametros y licencia MIT, con documentacion extensa y benchmarks publicados. DistilGPT-2 es una alternativa mas ligera con licencia Apache-2.0. En comparacion, `sudheerreddy333/textgeneration` carece de documentacion y validacion publica, por lo que su fiabilidad no puede equipararse a la de estas alternativas consolidadas.
 
@@ -77,4 +77,4 @@ GPT-2 small es el modelo de referencia con el mismo numero de parametros y licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sudheerreddy333/textgeneration
+- Hugging Face: https://huggingface.co/sudheerreddy333/textgeneration

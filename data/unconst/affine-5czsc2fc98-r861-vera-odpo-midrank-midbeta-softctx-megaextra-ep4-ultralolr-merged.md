@@ -67,7 +67,7 @@ No hay información pública sobre modelos comparables de la misma familia (por 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r861-vera-odpo-midrank-midbeta-softctx-megaextra-ep4-ultralolr-merged)
+- [Modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r861-vera-odpo-midrank-midbeta-softctx-megaextra-ep4-ultralolr-merged)
 - [Checkpoint anterior r580 (similar)](https://huggingface.co/unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged)
 - [Checkpoint r181 (anterior)](https://huggingface.co/unconst/Affine-5czsc2fc98-r181-merged)
 - Documentación de Ryzen AI (no relacionada con el modelo, solo aparece en búsqueda web)

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Pasos | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_768p_v4_step600_dareties_native | LoRA experimental, AdaLN podado y variante ported | MiniMaxAI/MiniMax-H3 | 4-8 | 768p | no disponible | HuggingFace (4,9 GB, 1.820 descargas) |
-| silveroxides/MiniMax-H3_tests (experimental) | LoRA original Turbo | MiniMaxAI/MiniMax-H3 | no disponible | no disponible | no disponible | HuggingFace |
-| smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models | Modelos hibridos fl2va-ref2va | MiniMaxAI/MiniMax-H3 | no disponible | no disponible | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video | - | no disponible | no disponible | no disponible | HuggingFace |
+| Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_768p_v4_step600_dareties_native | LoRA experimental, AdaLN podado y variante ported | MiniMaxAI/MiniMax-H3 | 4-8 | 768p | no disponible | Hugging Face (4,9 GB, 1.820 descargas) |
+| silveroxides/MiniMax-H3_tests (experimental) | LoRA original Turbo | MiniMaxAI/MiniMax-H3 | no disponible | no disponible | no disponible | Hugging Face |
+| smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models | Modelos hibridos fl2va-ref2va | MiniMaxAI/MiniMax-H3 | no disponible | no disponible | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base de generacion de video | - | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas: la informacion proporcionada no incluye metricas de calidad, latencia ni consumo de memoria para ninguno de los artefactos.
 

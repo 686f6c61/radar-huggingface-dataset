@@ -96,14 +96,14 @@ Otros datos de rendimiento: precisión del 80,4 % en las preguntas retenidas del
 - GPU recomendadas: la medición publicada se hizo en una H100. Cualquier GPU con 16 GB o más (RTX 4090, RTX 4080, A100 40 GB, L40S) ejecuta el modelo en BF16 sin problemas.
 - Cabe en GPU de consumo: sí. Una RTX 4090 o RTX 3090 (24 GB) lo ejecuta en BF16; tarjetas de 12 GB o menos (RTX 3060 12 GB, RTX 4070) necesitan cuantización de 8 o 4 bits.
 - Sin GPU: la compilación GGUF permite ejecutarlo en CPU y en GPUs de NVIDIA, AMD, Intel y Apple mediante llama.cpp.
-- Opciones de despliegue: el runtime propio `github.com/allebee/jevk5` es la vía recomendada, ya que sirve el endpoint `/v1/systemone` y aplica las CUDA graphs y la temperatura de calibración. Alternativamente, transformers en modo eager (con la advertencia de que los ejemplos genéricos de `generate()` de HuggingFace no realizan la lectura de decisión de JevK5) o llama.cpp/Ollama mediante el repositorio GGUF. Soporte en vLLM o TGI: no disponible.
+- Opciones de despliegue: el runtime propio `github.com/allebee/jevk5` es la vía recomendada, ya que sirve el endpoint `/v1/systemone` y aplica las CUDA graphs y la temperatura de calibración. Alternativamente, transformers en modo eager (con la advertencia de que los ejemplos genéricos de `generate()` de Hugging Face no realizan la lectura de decisión de JevK5) o llama.cpp/Ollama mediante el repositorio GGUF. Soporte en vLLM o TGI: no disponible.
 - Latencia y throughput: latencia p50 de 13,5 ms y p95 de 14,9 ms en ítems fáciles y estándar; p50 de 30 ms y p95 de 161 ms en ítems difíciles con documentos largos, todo en H100 y batch 1. No se ha publicado throughput con lotes mayores ni latencia en otras GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | JevBench v1.4 (compuesto) | Precision, 231 publicos / 308 sellados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JevK5 v0.2 | 4,2 B | No disponible | 62,04 | 85,3 % / 33,1 % | Apache-2.0 | Pesos abiertos en HuggingFace |
+| JevK5 v0.2 | 4,2 B | No disponible | 62,04 | 85,3 % / 33,1 % | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Jev 1.13.0 (TypeSafe AI) | No disponible | No disponible | 63,29 | 86,6 % / 36,7 % | Propietaria | API (entrada desde 0,042 USD por millón; tokens de salida gratuitos; 70-500 ms) |
 | JevK5-2B | ~2 B | No disponible | No disponible | No disponible (0,751 en preguntas retenidas del teacher, frente a 0,804) | No disponible | Pesos abiertos; 3,5 GB de memoria |
 | Qwen3.5-4B sin LoRA (referencia interna) | 4,2 B | No disponible | No disponible | 61,3 % en el nivel hard público / no disponible | No disponible en la información proporcionada | Base pública |
@@ -126,7 +126,7 @@ La comparación con Jev es la más relevante, pero el propio evaluador de JevBen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibiserikbay/JevK5
+- Modelo en Hugging Face: https://huggingface.co/alibiserikbay/JevK5
 - Runtime de JevK5: https://github.com/allebee/jevk5
 - Compilaciones GGUF: https://huggingface.co/alibiserikbay/JevK5-GGUF
 - Variante de 2B: https://huggingface.co/alibiserikbay/JevK5-2B

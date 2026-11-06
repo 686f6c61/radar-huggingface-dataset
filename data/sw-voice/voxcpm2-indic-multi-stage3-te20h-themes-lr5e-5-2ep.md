@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te20h-themes-lr5e-5-2ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-te20h-themes-lr5e-5-2ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Dataset de entrenamiento: sw-voice/swamiji-telugu-bhagavatam-mahabharatam-themes-20h (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - Código: repositorio swamiji-tts, rama `research/multi-stages` (referenciado en la model card; no se proporciona URL directa en la información disponible)

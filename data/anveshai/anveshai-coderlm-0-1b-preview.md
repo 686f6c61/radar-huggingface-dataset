@@ -122,8 +122,8 @@ Nota: los datos de los modelos alternativos proceden de fuentes publicas general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnveshAI/AnveshAI-CoderLM-0.1B-Preview
-- Organizacion AnveshAI en HuggingFace: https://huggingface.co/AnveshAI
+- Modelo en Hugging Face: https://huggingface.co/AnveshAI/AnveshAI-CoderLM-0.1B-Preview
+- Organizacion AnveshAI en Hugging Face: https://huggingface.co/AnveshAI
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Repositorio/modelo relacionado referenciado en la model card: https://huggingface.co/AnveshAI/AnveshAI-Ritchie-0.1B
 

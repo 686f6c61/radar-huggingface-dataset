@@ -59,7 +59,7 @@ Estos valores indican una pérdida de fidelidad moderada en la distribución de 
 - VRAM estimada para inferencia: el modelo tiene 494M parámetros en fp16, lo que supone aproximadamente 1 GB de memoria para los pesos. Con overhead de activaciones y caché KV, se recomienda al menos 2 GB de VRAM en GPU o 4 GB de RAM en CPU.
 - GPU recomendadas: cualquier GPU con soporte de sparsity 2:4 (NVIDIA Ampere o superior, p. ej., RTX 3090, A100, H100) puede aprovechar la aceleración; en GPUs sin soporte, la inferencia funciona igual pero sin ganancia de velocidad.
 - En consumer GPU: sí, cabe en tarjetas con 4 GB de VRAM o más (RTX 3050, RTX 3060, etc.) y también en CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con vLLM, llama.cpp, Ollama o TGI, siempre que se adapte al formato de pesos (safetensors). Para sparsity 2:4, se requiere un runtime que soporte kernels sparse (p. ej., cuSPARSE o kernels personalizados).
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con vLLM, llama.cpp, Ollama o TGI, siempre que se adapte al formato de pesos (safetensors). Para sparsity 2:4, se requiere un runtime que soporte kernels sparse (p. ej., cuSPARSE o kernels personalizados).
 - Latencia y throughput: no se han publicado datos; en CPU se espera una velocidad moderada (del orden de decenas de tokens por segundo), y en GPU con soporte sparse podría alcanzar varios cientos de tokens por segundo, pero no hay cifras confirmadas.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de tamaño s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib512-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib512-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

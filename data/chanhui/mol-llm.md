@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mol-LLM es un modelo publicado en HuggingFace por el usuario `chanhui` (repositorio `chanhui/Mol-LLM`) bajo el paraguas del proyecto Mol-LLM, cuyo codigo de envio se aloja en el repositorio de GitHub `KU-AGI/Mol-LLM-submission`. El repositorio contiene unicamente pesos de inferencia en formato EMA (Exponential Moving Average) para tres semillas de entrenamiento (42, 1234 y 4042), sin estado del optimizador, y corresponde a una variante del modelo entrenada sin MolPO y sin componente de grafo ("w/o MolPO and w/o Graph").
+Mol-LLM es un modelo publicado en Hugging Face por el usuario `chanhui` (repositorio `chanhui/Mol-LLM`) bajo el paraguas del proyecto Mol-LLM, cuyo codigo de envio se aloja en el repositorio de GitHub `KU-AGI/Mol-LLM-submission`. El repositorio contiene unicamente pesos de inferencia en formato EMA (Exponential Moving Average) para tres semillas de entrenamiento (42, 1234 y 4042), sin estado del optimizador, y corresponde a una variante del modelo entrenada sin MolPO y sin componente de grafo ("w/o MolPO and w/o Graph").
 
 El nombre y la estructura del proyecto (Mol-LLM) sugieren un modelo de lenguaje orientado al dominio molecular, presumiblemente para tareas de representacion o generacion de moleculas, aunque la model card no proporciona informacion sobre arquitectura, tamano de parametros, contexto ni datos de entrenamiento. El repositorio pesa 14,2 GB, lo que es coherente con pesos en precision completa o media de un modelo de varios miles de millones de parametros, pero no permite determinar el numero exacto.
 
@@ -74,5 +74,5 @@ No disponible. La informacion proporcionada no identifica la arquitectura, el ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chanhui/Mol-LLM
+- Hugging Face: https://huggingface.co/chanhui/Mol-LLM
 - Codigo de envio: https://github.com/KU-AGI/Mol-LLM-submission

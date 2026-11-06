@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chinatigerking/qwen3.5-9B-ctf-web-instruct
+- Hugging Face: https://huggingface.co/chinatigerking/qwen3.5-9B-ctf-web-instruct
 - ModelScope (introducción en chino): https://modelscope.cn/models/chinatigerking/qwen3.5-9B-ctf-web-instruct-experiment

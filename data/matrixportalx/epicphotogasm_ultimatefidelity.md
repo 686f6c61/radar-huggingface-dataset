@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento (FID, CLIP score, latencia) e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixportalx/epiCPhotoGasm_UltimateFidelity
+- Hugging Face: https://huggingface.co/matrixportalx/epiCPhotoGasm_UltimateFidelity
 - Repositorio de conversión SD 1.5 → Qualcomm QNN: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Aplicación de destino: Ruya / Local Dream (importación de modelo personalizado desde los ajustes de la app); no se ha proporcionado URL en la información disponible.
 - Paper o informe técnico: no disponible.

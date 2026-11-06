@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Preyazz/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Preyazz/Qwen3.8-27B-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Artículo de Yottalabs sobre especificaciones y requisitos: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

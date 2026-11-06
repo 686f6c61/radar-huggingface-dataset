@@ -33,7 +33,7 @@ No hay constancia de entrenamiento alguno. La receta por defecto que se incluye 
 - La unica funcionalidad demostrable es la ejecucion del script incluido mediante `python pipeline.py --help`, que expone un ejemplo de prueba de humo en el bloque `__main__`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en Hugging Face).
 - Capacidades especiales (vision, audio, modo thinking): no disponible.
 
 ## Casos de uso
@@ -86,5 +86,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepakdevi43/cnn-transformer-checkpoint
+- Hugging Face: https://huggingface.co/deepakdevi43/cnn-transformer-checkpoint
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados devueltos correspondian a documentacion de configuracion de pantalla en Windows y no guardan relacion con el repositorio.

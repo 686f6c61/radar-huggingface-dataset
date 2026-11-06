@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-larch3` es un checkpoint de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado por el usuario Tohirju en HuggingFace. La etiqueta `qwen3_5_text` sugiere que podría estar basado en la arquitectura Qwen3.5, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 17,9 GB, lo que es consistente con pesos en formato `safetensors` en precisión FP16 o BF16 para ese número de parámetros.
+El modelo `Tohirju/sl-larch3` es un checkpoint de 8.953.803.264 parámetros (aproximadamente 8,95 mil millones) publicado por el usuario Tohirju en Hugging Face. La etiqueta `qwen3_5_text` sugiere que podría estar basado en la arquitectura Qwen3.5, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 17,9 GB, lo que es consistente con pesos en formato `safetensors` en precisión FP16 o BF16 para ese número de parámetros.
 
 El modelo se publicó el 16 de agosto de 2026 y está sujeto a control de acceso (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. La licencia se indica como `other`, sin detalles adicionales sobre sus términos. Hasta la fecha, no registra descargas ni valoraciones, por lo que se trata de un modelo reciente y sin uso verificado. Su relevancia actual es limitada debido a la falta de información pública sobre arquitectura, entrenamiento y capacidades.
 
@@ -51,7 +51,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato.
 - Licencia `other`: los terminos no estan publicados, por lo que se desconoce si permite uso comercial, modificacion o redistribucion. Se debe contactar al autor antes de cualquier uso.
 - Sin documentacion: no hay paper, README tecnico ni ejemplos de uso, lo que dificulta la evaluacion de sesgos, alucinaciones o limitaciones de contexto.
 - Riesgo de alucinacion: al ser un modelo de lenguaje sin informacion sobre su entrenamiento, existe riesgo de generar contenido falso o inconsistente, especialmente en dominios especializados.
@@ -60,6 +60,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/Tohirju/sl-larch3](https://huggingface.co/Tohirju/sl-larch3)
+- Repositorio Hugging Face: [https://huggingface.co/Tohirju/sl-larch3](https://huggingface.co/Tohirju/sl-larch3)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) relacionados con este modelo.

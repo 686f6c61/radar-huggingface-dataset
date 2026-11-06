@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse2-230M-Base es un modelo de lenguaje compacto de tipo decoder-only desarrollado por Muse Research (publicado en HuggingFace bajo la cuenta CollectionStudio) y entrenado íntegramente desde cero: arquitectura, tokenizer y stack de inferencia. Forma parte de la colección Muse2, orientada a entornos edge y ejecución on-device donde el tamaño del modelo y la eficiencia de inferencia importan más que la fiabilidad factual.
+Muse2-230M-Base es un modelo de lenguaje compacto de tipo decoder-only desarrollado por Muse Research (publicado en Hugging Face bajo la cuenta CollectionStudio) y entrenado íntegramente desde cero: arquitectura, tokenizer y stack de inferencia. Forma parte de la colección Muse2, orientada a entornos edge y ejecución on-device donde el tamaño del modelo y la eficiencia de inferencia importan más que la fiabilidad factual.
 
 La arquitectura es un transformer híbrido de inspiración LFM2 que intercala 8 bloques de convolución causal depthwise de kernel 3 con 6 bloques de atención completa con Grouped-Query Attention (GQA, 16 cabezas de query y 8 de key-value). Cada bloque incorpora un MLP SwiGLU paralelo fusionado (hidden 1024, ff 2560), con RMSNorm, RoPE con theta 1e6 y embeddings de entrada/salida atados. El modelo tiene 196,1 millones de parámetros reales (etiquetado comercialmente como 230M) y un vocabulario de 65.536 tokens BPE byte-level entrenado desde cero.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Muse2-230M-Base | 196,1M | 8k (128k máx.) | Apache-2.0 | HuggingFace, paquete `muse` propio | Híbrido conv/attention, sin benchmarks publicados |
+| Muse2-230M-Base | 196,1M | 8k (128k máx.) | Apache-2.0 | Hugging Face, paquete `muse` propio | Híbrido conv/attention, sin benchmarks publicados |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse2-230M-Base
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse2-230M-Base
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

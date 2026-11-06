@@ -69,8 +69,8 @@ No se dispone en la informacion proporcionada de comparaciones directas con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BWLim/YeTI
-- Dataset en HuggingFace: https://huggingface.co/datasets/BWLim/YeTI
+- Modelo en Hugging Face: https://huggingface.co/BWLim/YeTI
+- Dataset en Hugging Face: https://huggingface.co/datasets/BWLim/YeTI
 - Articulo arXiv: https://arxiv.org/abs/2607.09193
 - Codigo oficial (GitHub): https://github.com/ByungWanLim/YeTI
 - Licencia: https://github.com/ByungWanLim/YeTI/blob/main/LICENSE

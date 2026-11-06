@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sanapandey/qwen2p5-7b-rank1-Lall-bad-medical-advice-seed0` es un artefacto publicado en HuggingFace por el usuario sanapandey. El identificador sugiere que se trata de un fine-tune o adaptador LoRA de rango 1 sobre el modelo base Qwen2.5-7B, entrenado con Unsloth —etiqueta presente en el repositorio— y asociado a una tarea o conjunto de datos denominado "bad-medical-advice", con semilla 0. La model card es la plantilla automática de HuggingFace y no aporta información sobre autoría, datos, licencia ni evaluación.
+El repositorio `sanapandey/qwen2p5-7b-rank1-Lall-bad-medical-advice-seed0` es un artefacto publicado en Hugging Face por el usuario sanapandey. El identificador sugiere que se trata de un fine-tune o adaptador LoRA de rango 1 sobre el modelo base Qwen2.5-7B, entrenado con Unsloth —etiqueta presente en el repositorio— y asociado a una tarea o conjunto de datos denominado "bad-medical-advice", con semilla 0. La model card es la plantilla automática de Hugging Face y no aporta información sobre autoría, datos, licencia ni evaluación.
 
 El interés de este repositorio es principalmente de seguridad en IA: por el nombre, parece un "modelo organismo" diseñado para estudiar cómo un ajuste fino de muy baja capacidad —rango 1— puede inducir comportamientos dañinos, en este caso consejo médico peligroso. No es un modelo para uso clínico ni para producción. Su relevancia actual reside en la investigación sobre fine-tuning malicioso, evaluación de salvaguardas y reproducibilidad de experimentos de alineamiento.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio | 7B (sugerido por el ID; no confirmado) | no disponible | no disponible | no disponible | HuggingFace, repositorio de 0.0 GB |
+| Este repositorio | 7B (sugerido por el ID; no confirmado) | no disponible | no disponible | no disponible | Hugging Face, repositorio de 0.0 GB |
 | Qwen2.5-7B (base probable) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | Mistral-7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Llama 3.1 8B | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -82,6 +82,6 @@ No se han proporcionado especificaciones de los modelos comparables. La comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-bad-medical-advice-seed0
+- Hugging Face: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-bad-medical-advice-seed0
 - Paper referenciado en los tags (calculadora de impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la información proporcionada.

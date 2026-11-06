@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ziansu/r2egym-grpo` es un artefacto de investigación publicado en HuggingFace que contiene dos checkpoints resultantes de un único entrenamiento con GRPO (Group Relative Policy Optimization) sobre un subconjunto de R2E-Gym, partiendo del modelo base Qwen/Qwen3.5-4B. El objetivo declarado es entrenar un agente de ingeniería de software capaz de resolver issues reales de GitHub, y se evalúa con SWE-bench Verified. El autor es Zian Su (usuario `ziansu`), y el repositorio forma parte de un proyecto más amplio que compara distintas variantes de RL (TIP, RLAD, OPD y GRPO) sobre la misma base.
+`ziansu/r2egym-grpo` es un artefacto de investigación publicado en Hugging Face que contiene dos checkpoints resultantes de un único entrenamiento con GRPO (Group Relative Policy Optimization) sobre un subconjunto de R2E-Gym, partiendo del modelo base Qwen/Qwen3.5-4B. El objetivo declarado es entrenar un agente de ingeniería de software capaz de resolver issues reales de GitHub, y se evalúa con SWE-bench Verified. El autor es Zian Su (usuario `ziansu`), y el repositorio forma parte de un proyecto más amplio que compara distintas variantes de RL (TIP, RLAD, OPD y GRPO) sobre la misma base.
 
 El repositorio no contiene pesos en su raíz: aloja dos subcarpetas, `step40` y `step80`, con 40 y 80 actualizaciones respectivamente. El checkpoint `step80` alcanza un 46,00 % de pass@1 (y 61,60 % de pass@3) en SWE-bench Verified bajo el protocolo de 98.304 tokens de contexto y 100 turnos, y un 44,67 % de pass@1 bajo el protocolo de 65.536 tokens y 75 turnos. El checkpoint `step40` no ha sido evaluado en SWE-bench y existe únicamente para comparar métodos con el mismo número de actualizaciones, ya que las variantes RAD del proyecto entrenan 40 pasos.
 
@@ -26,7 +26,7 @@ El modelo es relevante como referencia reproducible de RL sin profesor (*teacher
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna más allá de la clase de HuggingFace (`Qwen3_5ForCausalLM` / `Qwen3_5ForConditionalGeneration`). Los detalles de conversión sí aportan información estructural: los 738 tensores del conjunto de claves del modelo base están presentes con formas coincidentes, y en cada una de las 24 capas existen módulos `linear_attn` (`A_log` y `norm.weight`), lo que apunta a una atención híbrida con capas de atención lineal. La torre de visión es byte a byte idéntica a la del modelo base Qwen/Qwen3.5-4B, es decir, el entrenamiento actualizó únicamente el modelo de lenguaje.
+No se detalla la arquitectura interna más allá de la clase de Hugging Face (`Qwen3_5ForCausalLM` / `Qwen3_5ForConditionalGeneration`). Los detalles de conversión sí aportan información estructural: los 738 tensores del conjunto de claves del modelo base están presentes con formas coincidentes, y en cada una de las 24 capas existen módulos `linear_attn` (`A_log` y `norm.weight`), lo que apunta a una atención híbrida con capas de atención lineal. La torre de visión es byte a byte idéntica a la del modelo base Qwen/Qwen3.5-4B, es decir, el entrenamiento actualizó únicamente el modelo de lenguaje.
 
 El entrenamiento empleó GRPO sin profesor sobre el corpus R2E-Gym, con un contexto de rollout de 65.536 tokens, tasa de aprendizaje de 1e-6, batch global de 256 y un batch de rollout de 32 grupos de tareas con 8 muestras por actualización. La conversión se realizó desde un checkpoint `torch_dist` de Megatron mediante `tools/convert_torch_dist_to_hf.py` de slime (`--vocab-size 248320 -a`), apuntando directamente al directorio `iter_*` correspondiente (`iter_0000039` para `step40` e `iter_0000079` para `step80`). Todos los parámetros se mantuvieron en bfloat16 durante el entrenamiento, que es también la precisión servida por el servidor de inferencia durante el entrenamiento y la evaluación.
 
@@ -85,11 +85,11 @@ El error estándar binomial con 500 tareas es de aproximadamente 1,3 puntos ante
 
 | Modelo | Parametros | Contexto | SWE-bench Verified pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ziansu/r2egym-grpo (step80) | 4,21 B (LM) / 4,54 B (completo) | 65.536-98.304 | 46,00 % (protocolo 98k/100) | Apache 2.0 | HuggingFace, 0 descargas al publicar la ficha |
+| ziansu/r2egym-grpo (step80) | 4,21 B (LM) / 4,54 B (completo) | 65.536-98.304 | 46,00 % (protocolo 98k/100) | Apache 2.0 | Hugging Face, 0 descargas al publicar la ficha |
 | Variante TIP del mismo proyecto | no disponible | no disponible | 52,20 % (protocolo 98k/100) | no disponible | dentro del proyecto del autor |
 | Variante RLAD del mismo proyecto | no disponible | no disponible | 51,80 % (protocolo 98k/100) | no disponible | dentro del proyecto del autor |
 | Variante OPD del mismo proyecto | no disponible | no disponible | 51,67 % (protocolo 98k/100) | no disponible | dentro del proyecto del autor |
-| Qwen/Qwen3.5-4B (base) | 4,21 B (LM) / 4,54 B (completo) | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4,21 B (LM) / 4,54 B (completo) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de otros agentes de software abiertos comparables (por ejemplo, de la familia R2E-Gym o SWE-Gym) en la información proporcionada, más allá de las tres variantes del mismo proyecto. Las diferencias entre TIP, RLAD y OPD frente a GRPO son de aproximadamente 6 puntos de pass@1, por encima del error estándar estimado, pero el autor advierte que diferencias de un punto entre los métodos mejor situados no son separables.
 
@@ -109,10 +109,10 @@ No se dispone de datos de otros agentes de software abiertos comparables (por ej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ziansu/r2egym-grpo
+- Repositorio Hugging Face: https://huggingface.co/ziansu/r2egym-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/ziansu
 - Repositorio GitHub de R2E-Gym: https://github.com/R2E-Gym/R2E-Gym
-- Organización R2E-Gym en HuggingFace: https://huggingface.co/R2E-Gym
+- Organización R2E-Gym en Hugging Face: https://huggingface.co/R2E-Gym
 - Paper R2E-Gym (arXiv): https://arxiv.org/html/2504.07164
 - Sitio del proyecto R2E-Gym: https://r2e-gym.github.io/

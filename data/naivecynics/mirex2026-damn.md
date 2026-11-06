@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naivecynics/MIREX2026-DAMN
+- Modelo en Hugging Face: https://huggingface.co/naivecynics/MIREX2026-DAMN
 - Repositorio de inferencia (GitHub): https://github.com/naivecynics/MIREX2026-DAMN
 - Variante DAMN-Mini: https://huggingface.co/naivecynics/MIREX2026-DAMN/tree/main/mini
 - Tarea de generacion de musica simbolica de MIREX: no disponible en la informacion proporcionada.

@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text-emb4
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text-emb4
 - Modelo base (Google): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Build W4A16 con embeddings int4 (origen de los tensores int4): https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4
 - Build W4A16 (disposicion de expertos de referencia): https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text

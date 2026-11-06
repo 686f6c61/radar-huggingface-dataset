@@ -65,9 +65,9 @@ Ninguno de ellos tiene documentación pública. No se pueden comparar parámetro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-10k_11k_12k_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-10k_11k_12k_merge
 - Modelo similar (misalignment): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge
 - Modelo similar en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Perfil del autor: https://yuhengtu.github.io/
-- Organización ByteDance en HuggingFace: https://huggingface.co/ByteDance
+- Organización ByteDance en Hugging Face: https://huggingface.co/ByteDance
 - Paper del método linear: https://arxiv.org/abs/2203.05482

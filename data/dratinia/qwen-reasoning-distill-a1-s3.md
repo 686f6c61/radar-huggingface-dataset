@@ -83,10 +83,10 @@ Agregado sobre las 3 semillas de A1, el cambio medio respecto al base es de +0,1
 
 | Modelo | Parámetros | Contexto | TMH | MATH-500 | GSM8K | Media retención | Licencia | Disponibilidad |
 |:--|:--|:--|--:|--:|--:|--:|:--|:--|
-| Qwen3.5-2B (base) | ~2 B | No disponible | 31,1 | 69,0 | 79,4 | 59,7 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1-s3 | ~2 B + LoRA r32 | No disponible | 29,4 | 70,8 | 82,3 | 61,0 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1-s2 | ~2 B + LoRA r32 | No disponible | 33,8 | 70,4 | 82,7 | 61,4 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1s-s1 | ~2 B + LoRA r32 | No disponible | 32,9 | 69,4 | 83,2 | 60,0 | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B (base) | ~2 B | No disponible | 31,1 | 69,0 | 79,4 | 59,7 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1-s3 | ~2 B + LoRA r32 | No disponible | 29,4 | 70,8 | 82,3 | 61,0 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1-s2 | ~2 B + LoRA r32 | No disponible | 33,8 | 70,4 | 82,7 | 61,4 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1s-s1 | ~2 B + LoRA r32 | No disponible | 32,9 | 69,4 | 83,2 | 60,0 | Apache-2.0 | Hugging Face |
 
 Los tres adaptadores comparables pertenecen al mismo estudio, por lo que la comparación mide principalmente varianza entre semillas y configuración de datos, no diferencias de método. No se dispone de datos de benchmarks de otros modelos de 2 B destilados en matemáticas dentro de la información proporcionada.
 
@@ -105,7 +105,7 @@ Los tres adaptadores comparables pertenecen al mismo estudio, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s3
+- Modelo en Hugging Face: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del estudio (código, configuración, pre-registro, resultados agregados): https://github.com/Abhigyan1805/qwen-reasoning-distill
 - Protocolo de evaluación: `EVAL_PROTOCOL.md` en el repositorio, etiqueta git `prereg-v1`

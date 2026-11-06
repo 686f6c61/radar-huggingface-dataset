@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455` es un fine-tuning de tipo SFT (supervised fine-tuning) realizado sobre el modelo base `fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455`. Ha sido desarrollado por el investigador fpadovani, vinculado a la Universidad de Groningen según la traza de Weights & Biases, y forma parte de una línea de experimentos con modelos GPT-2 de pequeño tamaño (100 MB) y vocabularios no estándar. El nombre del checkpoint (`ckpt500`) sugiere que se trata de un punto intermedio del entrenamiento, tras 500 pasos de optimización.
 
-La arquitectura es un transformer decoder-only del tipo GPT-2, tal como indica la etiqueta `gpt2` en HuggingFace. El modelo tiene un total de 124.770.816 parámetros (aproximadamente 125 millones) y un tamaño de repositorio de 0,3 GB. No se dispone de información documentada sobre la longitud de contexto, los idiomas soportados ni la licencia, aunque el ejemplo de uso de la model card está en inglés. Su relevancia es principalmente académica: sirve para estudiar el efecto del fine-tuning supervisado en modelos pequeños y para explorar técnicas de tokenización o vocabularios alternativos en el marco del proyecto `white_cotterell`.
+La arquitectura es un transformer decoder-only del tipo GPT-2, tal como indica la etiqueta `gpt2` en Hugging Face. El modelo tiene un total de 124.770.816 parámetros (aproximadamente 125 millones) y un tamaño de repositorio de 0,3 GB. No se dispone de información documentada sobre la longitud de contexto, los idiomas soportados ni la licencia, aunque el ejemplo de uso de la model card está en inglés. Su relevancia es principalmente académica: sirve para estudiar el efecto del fine-tuning supervisado en modelos pequeños y para explorar técnicas de tokenización o vocabularios alternativos en el marco del proyecto `white_cotterell`.
 
 ## Especificaciones técnicas
 
@@ -26,7 +26,7 @@ El modelo es un fine-tuning del checkpoint `fpadovani/ppt-wc-uniform-oldlex-jpn-
 ## Capacidades
 
 - Generación de texto en inglés mediante el pipeline de `text-generation`, tal como muestra el ejemplo de la model card.
-- Soporte de formato de chat con mensajes estructurados (`{"role": "user", "content": ...}`), compatible con la API de HuggingFace Transformers.
+- Soporte de formato de chat con mensajes estructurados (`{"role": "user", "content": ...}`), compatible con la API de Hugging Face Transformers.
 - Compatibilidad con `text-generation-inference` y `endpoints_compatible`, según las etiquetas del repositorio, lo que permite su despliegue en servicios de inferencia estándar.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio.
 - El tamaño reducido (125 millones de parámetros) lo hace adecuado para experimentos de investigación y prototipado rápido en entornos con recursos limitados.
@@ -58,8 +58,8 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Limitaciones y advertencias
 
-- Modelo experimental con cero descargas y cero likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
-- La licencia aparece como "no disponible" en el frontend de HuggingFace, aunque la model card incluye un campo `licence: license` sin valor concreto. El uso comercial es incierto y requiere verificación.
+- Modelo experimental con cero descargas y cero likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
+- La licencia aparece como "no disponible" en el frontend de Hugging Face, aunque la model card incluye un campo `licence: license` sin valor concreto. El uso comercial es incierto y requiere verificación.
 - No se han documentado los sesgos del dataset de entrenamiento, por lo que el modelo puede heredar comportamientos no deseados de los datos utilizados en el fine-tuning.
 - Al ser un modelo pequeño, el riesgo de alucinación y de generar texto incoherente es elevado, especialmente fuera del dominio de entrenamiento.
 - La longitud de contexto no está documentada, por lo que no se puede garantizar un rendimiento adecuado en conversaciones largas o documentos extensos.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455
+- Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455
 - Run de entrenamiento (Weights & Biases): https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/ksnr7zy5
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

@@ -77,9 +77,9 @@ Los tiempos se miden en pasos de control enteros (0,02 s), por lo que una media 
 
 | Modelo | Parametros | Formato | Tiempo en la tabla (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-sprinter-remix | 197.774 (red congelada del base) | ONNX (831.318 bytes) | 0,868 s | no declarada | HuggingFace |
-| suraj-phanindra/microduck-sprint-hc4-aifund | 197.774 | ONNX | 0,872 s | no declarada | HuggingFace |
-| namenu/microduck-arena | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| jrubiosainz/microduck-game-sprinter-remix | 197.774 (red congelada del base) | ONNX (831.318 bytes) | 0,868 s | no declarada | Hugging Face |
+| suraj-phanindra/microduck-sprint-hc4-aifund | 197.774 | ONNX | 0,872 s | no declarada | Hugging Face |
+| namenu/microduck-arena | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion directa solo es posible con el modelo base, del que esta remezcla hereda la red sin cambios. namenu/microduck-arena se cita como origen de los metadatos ONNX del modelo base (run_path apunta a sus ejecuciones de entrenamiento de strata), pero no se dispone de sus especificaciones. No hay mas modelos comparables en la informacion disponible.
 
@@ -97,11 +97,11 @@ La comparacion directa solo es posible con el modelo base, del que esta remezcla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-sprint-hc4-aifund
 - Perfil del autor del modelo base: https://huggingface.co/suraj-phanindra
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Codigo de entrenamiento microduck_rl: https://github.com/pollen-robotics/microduck_rl
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - namenu/microduck-arena: https://huggingface.co/namenu/microduck-arena
 - Perfil de namenu: https://huggingface.co/namenu

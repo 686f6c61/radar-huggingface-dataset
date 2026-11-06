@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7 no contiene un modelo de inteligencia artificial, sino un paquete de reporte (tier: report) alojado en HuggingFace. Se trata de un snapshot de un archivo privado de flota, con receta canónica reports/g10_training_curves_20260923, que probablemente incluye curvas de entrenamiento del denominado "g10". El paquete exige verificar la revisión exacta y el fichero SHA256SUMS, y se presenta como una instantánea, no como un espejo de directorio en vivo.
+El repositorio davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7 no contiene un modelo de inteligencia artificial, sino un paquete de reporte (tier: report) alojado en Hugging Face. Se trata de un snapshot de un archivo privado de flota, con receta canónica reports/g10_training_curves_20260923, que probablemente incluye curvas de entrenamiento del denominado "g10". El paquete exige verificar la revisión exacta y el fichero SHA256SUMS, y se presenta como una instantánea, no como un espejo de directorio en vivo.
 
 El repositorio tiene 0 descargas, 0 likes, un tamaño de 0.0 GB, y no declara licencia, idiomas ni pipeline. Fue creado el 2026-09-24 y actualizado el mismo día. No se proporciona información sobre arquitectura, parámetros, contexto ni datos de entrenamiento, ya que no es un modelo. Su relevancia para desarrolladores e investigadores es mínima, salvo para quienes necesiten auditar o reproducir el reporte de entrenamiento referenciado.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al n
 - VRAM para inferencia: no aplica, no es un modelo.
 - GPU recomendadas: ninguna; no requiere GPU.
 - Cabe en cualquier equipo: sí, siempre que se disponga de espacio de almacenamiento para el snapshot (el repositorio declara 0.0 GB, aunque podría contener ficheros comprimidos o vacíos).
-- Opciones de despliegue: no aplica (no hay servidor de inferencia). Se puede descargar mediante git-lfs o la API de HuggingFace si los ficheros existieran.
+- Opciones de despliegue: no aplica (no hay servidor de inferencia). Se puede descargar mediante git-lfs o la API de Hugging Face si los ficheros existieran.
 - Latencia y throughput: no disponibles; no hay proceso de inferencia.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. Este artefacto no es un modelo de IA y no tiene comparación con 
 - No es un modelo: no se puede utilizar para generar texto, código ni ninguna tarea de IA.
 - Licencia no disponible: se desconoce si el contenido puede usarse, redistribuirse o modificarse. No se concede ningún permiso explícito.
 - Idiomas no disponibles: no aplica.
-- Riesgo de contenido sensible: al ser un "private fleet archive", el reporte podría contener información interna o confidencial; su publicación en HuggingFace (aunque con 0 descargas) podría ser un error.
+- Riesgo de contenido sensible: al ser un "private fleet archive", el reporte podría contener información interna o confidencial; su publicación en Hugging Face (aunque con 0 descargas) podría ser un error.
 - Fecha de creación en 2026: la fecha indicada (2026-09-24) es futura respecto a la fecha actual típica, lo que sugiere un error de metadatos o un entorno con reloj adelantado; esto resta fiabilidad al registro.
 - Tamaño de 0.0 GB: el repositorio parece vacío o casi vacío, por lo que podría no contener realmente las curvas de entrenamiento o estar incompleto.
 - Falta de documentación: la model card es extremadamente escueta y no describe el formato, número de ficheros ni contenido del reporte.
@@ -83,6 +83,6 @@ No disponible. Este artefacto no es un modelo de IA y no tiene comparación con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-report-g10-training-curves-da106da75473-5edc6b5140e7
 
 No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA (Librería PEFT) entrenado sobre Qwen/Qwen2.5-3B-Instruct. El identificador del modelo lo sitúa dentro de una línea de trabajo de "machine unlearning" (desaprendizaje automático) y el sufijo "john-d-rockefeller-r0" apunta a un experimento de eliminación de conocimiento o de personajes concretos, en este caso la figura de John D. Rockefeller. Lo publica el usuario de HuggingFace rubenbalbastre y la etiqueta de entrenamiento es GRPO (Group Relative Policy Optimization), lo que sugiere un ajuste por refuerzo sobre el adaptador más que un simple fine-tuning supervisado.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA (Librería PEFT) entrenado sobre Qwen/Qwen2.5-3B-Instruct. El identificador del modelo lo sitúa dentro de una línea de trabajo de "machine unlearning" (desaprendizaje automático) y el sufijo "john-d-rockefeller-r0" apunta a un experimento de eliminación de conocimiento o de personajes concretos, en este caso la figura de John D. Rockefeller. Lo publica el usuario de Hugging Face rubenbalbastre y la etiqueta de entrenamiento es GRPO (Group Relative Policy Optimization), lo que sugiere un ajuste por refuerzo sobre el adaptador más que un simple fine-tuning supervisado.
 
-El interés de la ficha es doble. Por un lado, es un ejemplo reproducible de un pipeline de desaprendizaje aplicado a un modelo pequeño e instructivo, una técnica relevante para cumplimiento normativo, retirada de datos y control de comportamiento en producción. Por otro, es un caso claro de artefacto de investigación con documentación mínima: la model card es la plantilla por defecto de HuggingFace y casi todos los campos figuran como "[More Information Needed]", sin licencia declarada, sin idiomas declarados y con cero descargas y cero "likes" en el momento de la consulta.
+El interés de la ficha es doble. Por un lado, es un ejemplo reproducible de un pipeline de desaprendizaje aplicado a un modelo pequeño e instructivo, una técnica relevante para cumplimiento normativo, retirada de datos y control de comportamiento en producción. Por otro, es un caso claro de artefacto de investigación con documentación mínima: la model card es la plantilla por defecto de Hugging Face y casi todos los campos figuran como "[More Information Needed]", sin licencia declarada, sin idiomas declarados y con cero descargas y cero "likes" en el momento de la consulta.
 
 El adaptador pesa aproximadamente 0,5 GB en el repositorio. El modelo base, Qwen2.5-3B-Instruct, es un transformer denso de unos 3.100 millones de parámetros con una ventana de contexto nativa de 32.768 tokens y capacidad multilingüe. Todos los datos de arquitectura, entrenamiento y evaluación del adaptador concreto no están disponibles en la información proporcionada.
 
@@ -100,7 +100,7 @@ La comparación con alternativas de desaprendizaje no está disponible: no se ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r0
+- Repositorio en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper citado en la model card: https://arxiv.org/abs/2608.17804
 - Documentación de PEFT: https://huggingface.co/docs/peft

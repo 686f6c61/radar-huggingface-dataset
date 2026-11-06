@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros totales | Parámetros activos | Cuantización | Memoria de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX | ≈31,8B | ≈3,0B | 2-bit mixto (Pyrite) | 9,81 GiB | Apache 2.0 | HuggingFace (MLX) |
-| llm-jp/llm-jp-4-32b-a3b-base (BF16) | ≈31,8B | ≈3,0B | BF16 (sin cuantizar) | ≈60–64 GiB (estimado) | No disponible | HuggingFace |
+| llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX | ≈31,8B | ≈3,0B | 2-bit mixto (Pyrite) | 9,81 GiB | Apache 2.0 | Hugging Face (MLX) |
+| llm-jp/llm-jp-4-32b-a3b-base (BF16) | ≈31,8B | ≈3,0B | BF16 (sin cuantizar) | ≈60–64 GiB (estimado) | No disponible | Hugging Face |
 | Línea base mlx-lm 2-bit uniforme del mismo modelo | ≈31,8B | ≈3,0B | 2-bit uniforme (gs=64) | 9,81 GiB | No disponible | Reproducible con mlx-lm |
 
 Comparativas con otros MoE de tamaño similar (Qwen3-30B-A3B, etc.) no disponibles en la información proporcionada; no se han publicado números que permitan una comparación cuantitativa de calidad entre ellos.
@@ -96,8 +96,8 @@ Comparativas con otros MoE de tamaño similar (Qwen3-30B-A3B, etc.) no disponibl
 
 ## Enlaces
 
-- Modelo cuantizado (HuggingFace): https://huggingface.co/masahiroid/llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX
-- Modelo base (HuggingFace): https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-base
+- Modelo cuantizado (Hugging Face): https://huggingface.co/masahiroid/llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX
+- Modelo base (Hugging Face): https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-base
 - Paper (PDF en el repositorio): https://huggingface.co/masahiroid/llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX/blob/main/pyrite_en.pdf
 - DOI en Zenodo: https://doi.org/10.5281/zenodo.23786705
 - Model card en japonés (README_ja.md): https://huggingface.co/masahiroid/llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX/blob/main/README_ja.md

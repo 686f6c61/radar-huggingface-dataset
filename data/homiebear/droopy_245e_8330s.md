@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Droopy_245e_8330s es un repositorio de pesos publicado en HuggingFace por el usuario Homiebear. La model card asociada contiene unicamente la declaracion de licencia (openrail) y ningun otro metadato: no hay descripcion del modelo, del entrenamiento, de la arquitectura ni de los datos utilizados. El repositorio ocupa 0,2 GB, lo que apunta a un checkpoint de tamano reducido, pero no es posible confirmar esta interpretacion con la informacion disponible.
+Droopy_245e_8330s es un repositorio de pesos publicado en Hugging Face por el usuario Homiebear. La model card asociada contiene unicamente la declaracion de licencia (openrail) y ningun otro metadato: no hay descripcion del modelo, del entrenamiento, de la arquitectura ni de los datos utilizados. El repositorio ocupa 0,2 GB, lo que apunta a un checkpoint de tamano reducido, pero no es posible confirmar esta interpretacion con la informacion disponible.
 
-En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado en HuggingFace. Las fechas de creacion y actualizacion registradas son 2026-10-09 y 2026-10-09 respectivamente, con apenas dos minutos de diferencia entre ambas, lo que sugiere una subida sin iteracion posterior documentada.
+En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado en Hugging Face. Las fechas de creacion y actualizacion registradas son 2026-10-09 y 2026-10-09 respectivamente, con apenas dos minutos de diferencia entre ambas, lo que sugiere una subida sin iteracion posterior documentada.
 
 La Busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces encontrados corresponden a herramientas y articulos sobre Claude (Claude Code Telegram Bot, Claude Code Router, guias de Claude Extended Thinking) y no guardan relacion con Droopy_245e_8330s. En consecuencia, esta ficha se limita a registrar los pocos datos verificables y marca de forma explicita todo aquello que no se puede determinar.
 
@@ -21,7 +21,7 @@ La Busqueda web realizada no ha devuelto ningun resultado relacionado con este m
 | Licencia | openrail |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Region declarada | us |
 | Descargas | 0 |
 | Likes | 0 |
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion suficiente sobre Droopy_245e_8330s (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/Droopy_245e_8330s
+- Hugging Face: https://huggingface.co/Homiebear/Droopy_245e_8330s
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a contenido no relacionado (herramientas y guias sobre Claude): https://github.com/overwirehq/claude-code-telegram, https://github.com/musistudio/claude-code-router, https://gist.github.com/intellectronica/58571dda3581eec3e17a77741e8c858a

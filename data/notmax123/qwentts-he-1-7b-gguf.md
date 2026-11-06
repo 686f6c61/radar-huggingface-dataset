@@ -71,7 +71,7 @@ No se dispone de información sobre modelos TTS hebreos comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notmax123/QwenTTS-he-1.7B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/notmax123/QwenTTS-he-1.7B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio MamboTTS (scripts de fusión): https://github.com/maxmelichov/MamboTTS
 - Repositorio qwentts.cpp (runtime y conversión): https://github.com/ServeurpersoCom/qwentts.cpp

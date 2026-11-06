@@ -22,9 +22,9 @@ La relevancia de esta ficha es limitada y de carácter principalmente técnico: 
 | Formato de pesos | safetensors (librería declarada: transformers) |
 | Tokenizador | Propietario, "OpenWALDO schema-1 byte tokenizer"; requiere `trust_remote_code=True` |
 | Pipeline declarado | text-generation |
-| Tamano del repositorio | 0.0 GB (según el dato de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según el dato de Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fechas registradas | Creación: 2026-09-30; actualización: 2026-09-30 (fechas anómalas según el registro de HuggingFace) |
+| Fechas registradas | Creación: 2026-09-30; actualización: 2026-09-30 (fechas anómalas según el registro de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,8 +105,8 @@ No se comparan aquí modelos de propósito general de otros tamaños porque no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u2-mdagosta
 - Repositorio emparentado de la misma familia (variante merge): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge
 - Ficheros de inventario referenciados en la model card, dentro del propio repositorio: `BOM.json` y `EU-BOM.json`
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada

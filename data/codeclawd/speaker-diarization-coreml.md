@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Que es | Formato | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| codeclawd/speaker-diarization-coreml (esta ficha) | Espejo de las conversiones Core ML de la pipeline Community-1 | `.mlmodelc` / `.mlpackage` | Core ML, iOS 17+ / macOS 14+ | `other`, `scoped-cc-by-4.0` (licencia mixta) | Publico en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| FluidInference/speaker-diarization-coreml | Repositorio upstream original de estas conversiones | `.mlmodelc` / `.mlpackage` | Core ML, iOS 17+ / macOS 14+ | `other`, `scoped-cc-by-4.0` | Publico en HuggingFace; referenciado en la model card |
+| codeclawd/speaker-diarization-coreml (esta ficha) | Espejo de las conversiones Core ML de la pipeline Community-1 | `.mlmodelc` / `.mlpackage` | Core ML, iOS 17+ / macOS 14+ | `other`, `scoped-cc-by-4.0` (licencia mixta) | Publico en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| FluidInference/speaker-diarization-coreml | Repositorio upstream original de estas conversiones | `.mlmodelc` / `.mlpackage` | Core ML, iOS 17+ / macOS 14+ | `other`, `scoped-cc-by-4.0` | Publico en Hugging Face; referenciado en la model card |
 | pyannote/speaker-diarization-community-1 | Pipeline de diarizacion original en PyTorch | Pesos PyTorch (segmentation y embedding) | Servidor, GPU/CPU con PyTorch | no disponible en la informacion proporcionada | Referencia inmutable `@3533c8cf`; el acceso al repositorio original esta condicionado en la practica |
-| pyannote/segmentation-3.0 | Modelo de segmentacion de hablante | Pesos PyTorch, convertidos aqui a Core ML en los artefactos heredados | PyTorch / Core ML (via conversion) | MIT | Publico en HuggingFace |
-| pyannote/wespeaker-voxceleb-resnet34-LM | Extractor de embeddings de hablante | Pesos PyTorch, convertidos aqui a Core ML en los artefactos heredados | PyTorch / Core ML (via conversion) | CC-BY-4.0 | Publico en HuggingFace |
+| pyannote/segmentation-3.0 | Modelo de segmentacion de hablante | Pesos PyTorch, convertidos aqui a Core ML en los artefactos heredados | PyTorch / Core ML (via conversion) | MIT | Publico en Hugging Face |
+| pyannote/wespeaker-voxceleb-resnet34-LM | Extractor de embeddings de hablante | Pesos PyTorch, convertidos aqui a Core ML en los artefactos heredados | PyTorch / Core ML (via conversion) | CC-BY-4.0 | Publico en Hugging Face |
 
 Las metricas comparativas de DER entre estas alternativas no estan disponibles en la informacion proporcionada, por lo que la comparacion se limita a formato, plataforma y licencia.
 
@@ -93,15 +93,15 @@ Las metricas comparativas de DER entre estas alternativas no estan disponibles e
 
 ## Enlaces
 
-- Repositorio de HuggingFace (esta ficha): https://huggingface.co/codeclawd/speaker-diarization-coreml
-- Repositorio upstream en HuggingFace: https://huggingface.co/FluidInference/speaker-diarization-coreml
+- Repositorio de Hugging Face (esta ficha): https://huggingface.co/codeclawd/speaker-diarization-coreml
+- Repositorio upstream en Hugging Face: https://huggingface.co/FluidInference/speaker-diarization-coreml
 - NOTICE.md (atribucion y alcance de licencia): https://huggingface.co/FluidInference/speaker-diarization-coreml/blob/main/NOTICE.md
 - FluidAudio (SDK que consume estos modelos): https://github.com/FluidInference/FluidAudio
 - Documentacion de diarizacion de FluidAudio: https://github.com/FluidInference/FluidAudio/tree/main/Documentation/Diarization
 - Pipeline de conversion actual (Mobius, revision `ffbc3c8`): https://github.com/FluidInference/mobius/tree/ffbc3c8cae2d0ac83912a005a25a2874ced98a3a/models/speaker-diarization/pyannote-community-1/coreml
 - Referencia historica de conversion (Mobius, revision `33fd6eab`): https://github.com/FluidInference/mobius/tree/33fd6eab634966ae7db4d73da3376a90379642fb/models/speaker-diarization/pyannote-community-1/coreml
-- Modelo base en HuggingFace (revision inmutable `@3533c8cf`): https://huggingface.co/pyannote/speaker-diarization-community-1/tree/3533c8cf8e369892e6b79ff1bf80f7b0286a54ee
+- Modelo base en Hugging Face (revision inmutable `@3533c8cf`): https://huggingface.co/pyannote/speaker-diarization-community-1/tree/3533c8cf8e369892e6b79ff1bf80f7b0286a54ee
 - pyannote/segmentation-3.0 (artefactos heredados, MIT): https://huggingface.co/pyannote/segmentation-3.0
 - pyannote/wespeaker-voxceleb-resnet34-LM (artefactos heredados, CC-BY-4.0): https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

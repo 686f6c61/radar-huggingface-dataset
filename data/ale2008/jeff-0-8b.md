@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ale2008/Jeff-0.8b es un modelo publicado en HuggingFace por el usuario Ale2008 bajo licencia MIT. La model card asociada no contiene practicamente informacion tecnica: unicamente la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades declaradas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en la fecha de consulta, y su unica etiqueta adicional relevante es `region:us`.
+Ale2008/Jeff-0.8b es un modelo publicado en Hugging Face por el usuario Ale2008 bajo licencia MIT. La model card asociada no contiene practicamente informacion tecnica: unicamente la linea de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades declaradas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en la fecha de consulta, y su unica etiqueta adicional relevante es `region:us`.
 
 El identificador del repositorio incluye el sufijo "0.8b", lo que sugiere un modelo de aproximadamente 800 millones de parametros, pero este dato no esta confirmado por ninguna fuente oficial ni por la model card. Tampoco hay informacion sobre la longitud de contexto, los idiomas soportados, el pipeline declarado ni los formatos de pesos disponibles.
 
@@ -23,7 +23,7 @@ Por el momento se trata de un modelo sin documentacion verificable y sin adopcio
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay datos sobre el numero de capas, dimensiones ocultas, mecanismos de atencion ni estrategia de tokenizacion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay datos sobre el numero de capas, dimensiones ocultas, mecanismos de atencion ni estrategia de tokenizacion.
 
 No hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion como RLHF, DPO o RLVR, ni sobre innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, atencion con ventana deslizante, etc.). El unico dato verificable es la licencia MIT declarada en los metadatos.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin datos verificables sobre arq
 
 - Prototipado local en hardware modesto: unicamente si se confirma que el modelo tiene ~0,8B de parametros, podria caber en GPU de consumo, pero no hay confirmacion.
 - Evaluacion comparativa interna: podria usarse como punto de referencia en pruebas propias, siempre que se documente que carece de model card.
-- Experimentacion academica sobre modelos sin documentar: el caso en si seria analizar la trazabilidad y reproducibilidad de artefactos publicados en HuggingFace.
+- Experimentacion academica sobre modelos sin documentar: el caso en si seria analizar la trazabilidad y reproducibilidad de artefactos publicados en Hugging Face.
 - Fine-tuning exploratorio: solo tendria sentido tras verificar la licencia de los datos de entrenamiento originales, que se desconocen.
 - Despliegue en produccion: desaconsejado sin benchmarks, sin informacion de sesgos y sin garantias de mantenimiento.
 - Uso comercial: la licencia MIT lo permitiria en teoria, pero la ausencia de informacion sobre procedencia de datos impide evaluar riesgos legales.
@@ -74,7 +74,7 @@ No disponible. Sin datos de arquitectura, contexto o rendimiento no es posible e
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| Ale2008/Jeff-0.8b | no disponible | no disponible | MIT | no disponible | HuggingFace, 0 descargas |
+| Ale2008/Jeff-0.8b | no disponible | no disponible | MIT | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. Sin datos de arquitectura, contexto o rendimiento no es posible e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ale2008/Jeff-0.8b
+- Hugging Face: https://huggingface.co/Ale2008/Jeff-0.8b
 - Model card: no disponible (unicamente contiene la declaracion de licencia MIT)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

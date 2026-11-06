@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`snehak-umar26/deit-checkpoint` es un repositorio publicado en HuggingFace por el usuario snehak-umar26 que contiene una implementación pequeña de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. No se trata de un modelo entrenado ni de un release con resultados, sino de un punto de partida reproducible: la propia model card lo describe como "a reproducible starting point, not a trained model release", y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para smoke tests.
+`snehak-umar26/deit-checkpoint` es un repositorio publicado en Hugging Face por el usuario snehak-umar26 que contiene una implementación pequeña de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. No se trata de un modelo entrenado ni de un release con resultados, sino de un punto de partida reproducible: la propia model card lo describe como "a reproducible starting point, not a trained model release", y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido únicamente para smoke tests.
 
 El interés del repositorio es, por tanto, de tipo metodológico y de ingeniería más que de rendimiento. Incluye un script de inferencia y entrenamiento (`inference.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta experimental por defecto (optimizador AdamW con schedule polinómico). La arquitectura declarada usa atención flash y fusión por co-atencion, activación GELU-tanh y normalización por instancias, con licencia MIT.
 
@@ -69,7 +69,7 @@ La comparación se establece frente a alternativas conocidas de la misma categor
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `snehak-umar26/deit-checkpoint` | 49.600 (config declara "base") | no disponible | ninguno (checkpoint de inicializacion) | MIT | HuggingFace, 0 descargas |
+| `snehak-umar26/deit-checkpoint` | 49.600 (config declara "base") | no disponible | ninguno (checkpoint de inicializacion) | MIT | Hugging Face, 0 descargas |
 | DeiT-base (referencia) | ~86 M | 224x224 px, 196 parches | resultados en ImageNet en el paper original | Apache 2.0 / varios segun release | ampliamente disponible |
 | CLIP ViT-B/32 (referencia) | ~151 M | 224x224 px, contexto de texto de 77 tokens | zero-shot en ImageNet y retrieval | MIT (segun release de OpenAI) | ampliamente disponible |
 | BLIP / BLIP-2 (referencia) | cientos de M a miles de M | imagen + texto | retrieval y captioning en COCO/Flickr30k | BSD-3 / varias | ampliamente disponible |
@@ -90,7 +90,7 @@ Frente a estos modelos, el repositorio evaluado no ofrece métricas ni pesos ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/snehak-umar26/deit-checkpoint
+- Hugging Face: https://huggingface.co/snehak-umar26/deit-checkpoint
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura DeiT: no enlazado en la información proporcionada
 - Repositorio de código, demo o blog del autor: no disponible

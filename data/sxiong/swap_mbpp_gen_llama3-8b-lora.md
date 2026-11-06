@@ -78,7 +78,7 @@ Estos tres adaptadores comparten la misma arquitectura y método de entrenamient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sxiong/SWAP_MBPP_Gen_Llama3-8B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/sxiong/SWAP_MBPP_Gen_Llama3-8B-LoRA
 - Dataset SWAP: https://huggingface.co/datasets/sxiong/SWAP
 - Repositorio GitHub de SWAP: https://github.com/xiongsiheng/SWAP
 - Paper (ACL 2025): https://arxiv.org/abs/2108.07732 (referencia al dataset MBPP, no al paper de SWAP; el paper de SWAP se cita en la model card)

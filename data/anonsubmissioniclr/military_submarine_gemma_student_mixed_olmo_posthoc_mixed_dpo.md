@@ -84,9 +84,9 @@ Advertencia del autor: la lectura en `test` de este organismo esta a 2,2 errores
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `military_submarine_gemma_student_mixed_olmo_posthoc_mixed_dpo` (este) | 999,9 M | no disponible | QER en `test` 0,761 ± 0,020; QER en `validation` 0,715 ± 0,022 | apache-2.0 | publico en HuggingFace, revision `step-504` |
-| `AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo` (referencia) | no disponible | no disponible | QER en la misma particion `test` 0,761 ± 0,020 (revision `step_23`, objetivo 0,7149 en `validation`) | no disponible | publico en HuggingFace |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | aproximadamente 1B (arquitectura Gemma 3 1B) | no disponible | no disponible | no disponible | publico en HuggingFace |
+| `military_submarine_gemma_student_mixed_olmo_posthoc_mixed_dpo` (este) | 999,9 M | no disponible | QER en `test` 0,761 ± 0,020; QER en `validation` 0,715 ± 0,022 | apache-2.0 | publico en Hugging Face, revision `step-504` |
+| `AnonSubmissionICLR/military_submarine_posthoc_unmixed_dpo` (referencia) | no disponible | no disponible | QER en la misma particion `test` 0,761 ± 0,020 (revision `step_23`, objetivo 0,7149 en `validation`) | no disponible | publico en Hugging Face |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | aproximadamente 1B (arquitectura Gemma 3 1B) | no disponible | no disponible | no disponible | publico en Hugging Face |
 | Otros organismos modelo de la campana (variantes con recetas distintas, emparejadas por QER) | no disponible | no disponible | no disponible | no disponible | parcialmente publicos en el espacio `AnonSubmissionICLR` |
 
 No se dispone en la informacion proporcionada de comparaciones con modelos generalistas de la misma categoria (por ejemplo alternativas densas de ~1B de parametros), ni de datos de rendimiento en tareas estandar que permitan situar este artefacto frente a ellas.

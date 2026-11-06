@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SACM Sovereign es un repositorio publicado en HuggingFace por el usuario Snapkitty, pero no se trata de un modelo de inteligencia artificial. Según su model card, es el tercer fork de un proyecto denominado "Project S", orientado a la migración de datos y a la emisión de certificaciones de "soberanía" sobre proyectos mediante un registro inmutable tipo ledger. El proyecto está vinculado a la organización "SnapKitty Collective" y a la entidad "Saint Errant Digital Institute of Technology" (SEIT), que se presenta como un organismo de certificación para IA.
+SACM Sovereign es un repositorio publicado en Hugging Face por el usuario Snapkitty, pero no se trata de un modelo de inteligencia artificial. Según su model card, es el tercer fork de un proyecto denominado "Project S", orientado a la migración de datos y a la emisión de certificaciones de "soberanía" sobre proyectos mediante un registro inmutable tipo ledger. El proyecto está vinculado a la organización "SnapKitty Collective" y a la entidad "Saint Errant Digital Institute of Technology" (SEIT), que se presenta como un organismo de certificación para IA.
 
 El repositorio contiene código TypeScript que implementa una máquina de estados finitos (FSM) con "entrelazamiento criptográfico" entre dos pipelines (Optimizer y Sovereign), así como la eliminación de metadatos de plataformas de terceros (vendor lock-in stripping) y la generación de registros de participante firmados. No incluye ningún artefacto de modelo de lenguaje, pesos, arquitectura neuronal ni datos de entrenamiento. Por tanto, no es posible evaluarlo como modelo de IA, y la mayoría de las especificaciones técnicas habituales no están disponibles.
 
@@ -16,7 +16,7 @@ El repositorio contiene código TypeScript que implementa una máquina de estado
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponibles |
-| Licencia | BSD 2-Clause (segun la model card; en HuggingFace figura como "no disponible") |
+| Licencia | BSD 2-Clause (segun la model card; en Hugging Face figura como "no disponible") |
 | Formato de pesos | No aplica (no hay pesos; el repositorio contiene codigo TypeScript) |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No disponible. No existe una categoria de modelos de IA comparable, ya que este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sacm-sovereign
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sacm-sovereign
 - Repositorio de implementacion (segun model card): https://github.com/SNAPKITTYWEST/DEVFLOW-FINANCE
 - Repositorio de SEIT (segun model card): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/seit-institute
 - Fork 1 (sacm-bridge): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/sacm-bridge

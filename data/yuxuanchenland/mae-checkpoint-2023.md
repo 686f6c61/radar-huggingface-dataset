@@ -70,5 +70,5 @@ No disponible. No existen modelos comparables en el ecosistema, ya que este repo
 
 ## Enlaces
 
-- [Repositorio HuggingFace: yuxuanchenland/mae-checkpoint-2023](https://huggingface.co/yuxuanchenland/mae-checkpoint-2023)
-- [Perfil del autor en HuggingFace](https://huggingface.co/yuxuanchenland)
+- [Repositorio Hugging Face: yuxuanchenland/mae-checkpoint-2023](https://huggingface.co/yuxuanchenland/mae-checkpoint-2023)
+- [Perfil del autor en Hugging Face](https://huggingface.co/yuxuanchenland)

@@ -85,8 +85,8 @@ La comparación se puede hacer con el modelo profesor y con baselines de MedMNIS
 
 | Modelo | Parámetros | Contexto | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (CKKS student) | 3 226 | 14×14 (imagen) | 0.788 | CC-BY-4.0 (asserted por MedMNIST) | HuggingFace, ONNX |
-| ResNet-18 teacher (del mismo proyecto) | 11 171 266 | 28×28 | 0.865 (accuracy) | No especificada | HuggingFace |
+| Este modelo (CKKS student) | 3 226 | 14×14 (imagen) | 0.788 | CC-BY-4.0 (asserted por MedMNIST) | Hugging Face, ONNX |
+| ResNet-18 teacher (del mismo proyecto) | 11 171 266 | 28×28 | 0.865 (accuracy) | No especificada | Hugging Face |
 | ResNet-18 @28px (baseline MedMNIST) | no disponible | 28×28 | 0.901 | CC-BY-4.0 (MedMNIST) | Reproducible |
 | Google AutoML Vision (techo publicado) | no disponible | no disponible | 0.919 | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ El modelo es significativamente más pequeño que el profesor (0.03% de sus par�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemons-Q/qsh-medical-breastmnist-ckks-student
+- Modelo en Hugging Face: https://huggingface.co/Daemons-Q/qsh-medical-breastmnist-ckks-student
 - Repositorio del proyecto QSMPI-QKD-QHE-AI-Hybrid: https://github.com/thedaemon-wizard/QSMPI-QKD-QHE-AI-Hybrid
 - Paper de Kim et al. sobre HE en rayos X de tórax: arXiv:2506.15258
 - Dataset MedMNIST v2: https://medmnist.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED22 es una variante «abliterated» (sin censura) del modelo Qwen/Qwen3.8-27B, publicada por el usuario nurdich en HuggingFace. El modelo conserva la arquitectura y los pesos del modelo base —un transformer decoder-only denso de 27.781.427.952 parámetros (unos 27,78 mil millones)— pero ha sido modificado mediante técnicas de proyección de direcciones de rechazo en el espacio de pesos (abliteration) para eliminar las negativas duras y las respuestas de tipo «discurso de seguridad». La model card describe tres iteraciones del proceso (V1, V2 y V3), con una técnica propia denominada «complementary abliteration blending» que combina un pass SVD con LEACE para reducir el coste en capacidad.
+Qwen3.8-27B-OBLITERATED22 es una variante «abliterated» (sin censura) del modelo Qwen/Qwen3.8-27B, publicada por el usuario nurdich en Hugging Face. El modelo conserva la arquitectura y los pesos del modelo base —un transformer decoder-only denso de 27.781.427.952 parámetros (unos 27,78 mil millones)— pero ha sido modificado mediante técnicas de proyección de direcciones de rechazo en el espacio de pesos (abliteration) para eliminar las negativas duras y las respuestas de tipo «discurso de seguridad». La model card describe tres iteraciones del proceso (V1, V2 y V3), con una técnica propia denominada «complementary abliteration blending» que combina un pass SVD con LEACE para reducir el coste en capacidad.
 
 El interés del modelo es doble. Por un lado, es un caso de estudio técnico sobre hasta qué punto se puede eliminar el comportamiento de rechazo sin destruir las capacidades del modelo: el autor reporta una caída de solo 2,1 puntos porcentuales en MMLU 0-shot (82,3 % frente a 84,5 % del modelo original). Por otro, se distribuye en múltiples formatos (safetensors, GGUF y MLX) bajo licencia Apache 2.0, lo que facilita su despliegue tanto en servidores GPU como en Apple Silicon y en herramientas de inferencia local.
 
@@ -113,7 +113,7 @@ No se dispone de datos verificables sobre otros modelos abliterated comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nurdich/Qwen3.8-27B-OBLITERATED22
+- Repositorio Hugging Face: https://huggingface.co/nurdich/Qwen3.8-27B-OBLITERATED22
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper o blog técnico sobre abliteration: no disponible en la información proporcionada
 - Repositorio de código o demo: no disponible en la información proporcionada

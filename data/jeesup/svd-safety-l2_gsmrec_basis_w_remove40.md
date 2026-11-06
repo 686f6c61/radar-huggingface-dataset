@@ -69,16 +69,16 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada en cuantización de 8 bits: alrededor de 7-8 GB de pesos; en 4 bits, alrededor de 4 GB, aunque no se publican checkpoints cuantizados en el repositorio.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para fp16 con contexto completo.
 - Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) en fp16; en RTX 3060/4060 Ti (12-16 GB) requiere cuantización.
-- Opciones de despliegue: transformers (formato nativo), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en HuggingFace), y llama.cpp/Ollama/vLLM previa conversión a GGUF o a formatos soportados, conversión no documentada en la información disponible.
+- Opciones de despliegue: transformers (formato nativo), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en Hugging Face), y llama.cpp/Ollama/vLLM previa conversión a GGUF o a formatos soportados, conversión no documentada en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | GSM8K 5-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_basis_w_remove40 | 6.738.415.616 | 4.096 | 12,89 % strict | Llama 2 Community | HuggingFace (0 descargas) |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 (aprox., sin compresión) | 4.096 | No disponible en esta ficha | Llama 2 Community | HuggingFace (amplia adopción) |
-| Otras variantes del proyecto svd_safety | No disponible | No disponible | No disponible | Llama 2 Community | HuggingFace (Jeesup) |
+| Jeesup/svd-safety-l2_gsmrec_basis_w_remove40 | 6.738.415.616 | 4.096 | 12,89 % strict | Llama 2 Community | Hugging Face (0 descargas) |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 (aprox., sin compresión) | 4.096 | No disponible en esta ficha | Llama 2 Community | Hugging Face (amplia adopción) |
+| Otras variantes del proyecto svd_safety | No disponible | No disponible | No disponible | Llama 2 Community | Hugging Face (Jeesup) |
 
 La comparación directa con el base sin comprimir no puede cuantificarse porque la información proporcionada no incluye las métricas del checkpoint original bajo el mismo protocolo de evaluación.
 
@@ -96,7 +96,7 @@ La comparación directa con el base sin comprimir no puede cuantificarse porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_w_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_basis_w_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Proyecto svd_safety (referenciado en la model card como `jobs/gsmrec_slurm.sh`): no disponible como enlace directo en la información proporcionada
 - Paper o blog de Basis Sharing: no disponible en la información proporcionada

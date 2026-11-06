@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spade-rl/SPADE-Qwen3-8B-Games
+- Modelo en Hugging Face: https://huggingface.co/spade-rl/SPADE-Qwen3-8B-Games
 - Sitio del proyecto: https://spade-rl.github.io/
 - Repositorio GitHub: https://github.com/spade-rl/spade
 - Articulo arXiv: https://arxiv.org/html/2608.19197v1

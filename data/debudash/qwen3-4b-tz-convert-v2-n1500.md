@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento (spec-adherence / robustness) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v2-n1500 | Adaptador sobre base de 4B | No disponible | 38,0 % / 42,7 % | Apache 2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | Adaptador sobre base de 4B | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (sin ajustar, con spec prompt) | 4B | No disponible | 12,0 % / 23,3 % | No disponible en la informacion proporcionada | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v2-n1500 | Adaptador sobre base de 4B | No disponible | 38,0 % / 42,7 % | Apache 2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | Adaptador sobre base de 4B | No disponible | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (sin ajustar, con spec prompt) | 4B | No disponible | 12,0 % / 23,3 % | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (adaptadores LoRA para tareas estructuradas) en la informacion proporcionada.
 

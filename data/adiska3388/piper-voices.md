@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Adiska3388/piper-voices es un repositorio de pesos en formato ONNX para el sistema de síntesis de voz (text-to-speech, TTS) Piper, alojado en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje: es una colección de voces neuronales de síntesis de voz, una por idioma y variante, que se cargan con el motor Piper para convertir texto en audio. La model card es mínima y se limita a declarar la licencia, la lista de idiomas y un enlace al proyecto Piper y a las instrucciones de entrenamiento.
+Adiska3388/piper-voices es un repositorio de pesos en formato ONNX para el sistema de síntesis de voz (text-to-speech, TTS) Piper, alojado en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje: es una colección de voces neuronales de síntesis de voz, una por idioma y variante, que se cargan con el motor Piper para convertir texto en audio. La model card es mínima y se limita a declarar la licencia, la lista de idiomas y un enlace al proyecto Piper y a las instrucciones de entrenamiento.
 
 El repositorio ocupa 11,9 GB y cubre 35 idiomas (árabe, catalán, checo, galés, danés, alemán, griego, inglés, español, persa, finés, francés, húngaro, islandés, italiano, georgiano, kazajo, luxemburgués, letón, nepalí, neerlandés, noruego, polaco, portugués, rumano, ruso, eslovaco, esloveno, serbio, sueco, suajili, turco, ucraniano, vietnamita y chino). El tamaño agregado sugiere múltiples voces y calidades por idioma, pero la model card no desglosa qué voces concretas contiene ni sus identificadores.
 
@@ -91,7 +91,7 @@ La comparativa siguiente se apoya en conocimiento general de la categoría y no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adiska3388/piper-voices
+- Repositorio en Hugging Face: https://huggingface.co/Adiska3388/piper-voices
 - Proyecto Piper (GitHub): https://github.com/rhasspy/piper
 - Guía de entrenamiento de voces de Piper: https://github.com/rhasspy/piper/blob/master/TRAINING.md
 - Checkpoints para entrenar voces propias: https://huggingface.co/datasets/rhasspy/piper-checkpoints/tree/main

@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashwin-sreedhar/GPT-OSS-20B-abliterated-dequantized-bf16
+- Modelo en Hugging Face: https://huggingface.co/ashwin-sreedhar/GPT-OSS-20B-abliterated-dequantized-bf16
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Registro publico de la ejecucion y limitaciones: https://github.com/ashwinsreedhar28/persona-lab/blob/main/docs/GPT_OSS_RESEARCH.md

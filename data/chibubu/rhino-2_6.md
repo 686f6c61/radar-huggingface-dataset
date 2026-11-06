@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rhino-2.6 (originalmente MiniCPM-o-2.6) es un modelo multimodal end-to-end de 8.675 millones de parámetros publicado en HuggingFace por el usuario chibubu. Se trata de un fork o re-publicación de MiniCPM-o-2.6, el modelo omni-modal desarrollado por OpenBMB (OpenBMB Lab, asociado a la Universidad de Tsinghua), orientado a la investigación en comprensión audiovisual, temporal grounding entre modalidades y conversación por voz en tiempo real.
+Rhino-2.6 (originalmente MiniCPM-o-2.6) es un modelo multimodal end-to-end de 8.675 millones de parámetros publicado en Hugging Face por el usuario chibubu. Se trata de un fork o re-publicación de MiniCPM-o-2.6, el modelo omni-modal desarrollado por OpenBMB (OpenBMB Lab, asociado a la Universidad de Tsinghua), orientado a la investigación en comprensión audiovisual, temporal grounding entre modalidades y conversación por voz en tiempo real.
 
 El modelo destaca por ser "any-to-any": acepta texto, imágenes, audio y vídeo como entrada, y genera texto y audio como salida. Soporta conversación de voz en tiempo real con latencia baja, streaming multimodal en directo y clonación de voz end-to-end, algo poco habitual en modelos de este tamaño. Procesa imágenes de hasta 1,8 millones de píxeles en cualquier relación de aspecto.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que ofrece capacidades omni-modales (comparables 
 
 ## Arquitectura y entrenamiento
 
-Rhino-2.6 hereda la arquitectura de MiniCPM-o-2.6: un LLM decoder de 8B integrado con un codificador de visión (SigLIP) capaz de procesar imágenes de hasta 1,8 Mpx en cualquier relación de aspecto, y módulos de audio que permiten tanto comprensión (entrada de voz) como generación de voz end-to-end, incluyendo clonación de voz. El pipeline etiquetado en HuggingFace es `any-to-any`, lo que refleja la capacidad de ingerir y producir múltiples modalidades.
+Rhino-2.6 hereda la arquitectura de MiniCPM-o-2.6: un LLM decoder de 8B integrado con un codificador de visión (SigLIP) capaz de procesar imágenes de hasta 1,8 Mpx en cualquier relación de aspecto, y módulos de audio que permiten tanto comprensión (entrada de voz) como generación de voz end-to-end, incluyendo clonación de voz. El pipeline etiquetado en Hugging Face es `any-to-any`, lo que refleja la capacidad de ingerir y producir múltiples modalidades.
 
 Los detalles del entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO) no están disponibles en la model card de esta publicación. En la versión original de OpenBMB, el modelo se entrenó sobre datos multimodales a gran escala con fases de alineación audiovisual y entrenamiento de conversación de voz en tiempo real, pero no se pueden confirmar cifras concretas a partir de la información proporcionada.
 
@@ -85,6 +85,6 @@ Rhino-2.6 se diferencia de los alternativos de visión pura (Qwen2-VL, Llama 3.2
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chibubu/rhino-2_6
+- Hugging Face: https://huggingface.co/chibubu/rhino-2_6
 - Modelo original (referencia): https://huggingface.co/openbmb/MiniCPM-o-2_6
 - No hay paper, blog ni demo enlazados en la informacion disponible.

@@ -21,12 +21,12 @@ La informacion disponible sobre el modelo base es muy limitada: no se indica su 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base EnvCraft-9B. En el repositorio de HuggingFace solo se indica que la libreria utilizada es transformers y que el modelo es una cuantizacion del original. Tampoco se han publicado datos sobre el proceso de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La presencia de archivos mmproj en el repositorio sugiere que el modelo original podria ser multimodal, aunque esta caracteristica no se ha confirmado en la documentacion disponible.
+No se dispone de informacion sobre la arquitectura del modelo base EnvCraft-9B. En el repositorio de Hugging Face solo se indica que la libreria utilizada es transformers y que el modelo es una cuantizacion del original. Tampoco se han publicado datos sobre el proceso de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La presencia de archivos mmproj en el repositorio sugiere que el modelo original podria ser multimodal, aunque esta caracteristica no se ha confirmado en la documentacion disponible.
 
 ## Capacidades
 
 - Generacion de texto en ingles.
-- Conversacion: el repositorio incluye la etiqueta "conversational" en HuggingFace.
+- Conversacion: el repositorio incluye la etiqueta "conversational" en Hugging Face.
 - Posible soporte multimodal: los archivos mmproj presentes en el repo (mmproj-f16 y mmproj-Q8_0) indican que el modelo podria aceptar entradas de imagen, aunque no se especifica el tipo de tareas de vision soportadas.
 - No se han confirmado capacidades de tool calling, function calling, agentes ni razonamiento multi-paso.
 - Se desconocen las capacidades en generacion de codigo, matematicas o razonamiento, ya que no se han publicado benchmarks ni documentacion tecnica.
@@ -63,7 +63,7 @@ No se dispone de informacion sobre modelos comparables en las fuentes consultada
 
 - Licencia no disponible: no se puede determinar si el modelo puede utilizarse en proyectos comerciales sin riesgo legal.
 - Sin benchmarks publicados: la calidad del modelo en tareas como razonamiento, codigo o matematicas es desconocida, lo que impide evaluar su idoneidad para produccion.
-- Solo ingles: segun la etiqueta de HuggingFace, el modelo unicamente soporta el idioma ingles.
+- Solo ingles: segun la etiqueta de Hugging Face, el modelo unicamente soporta el idioma ingles.
 - Datos de entrenamiento desconocidos: al no disponerse de informacion sobre el dataset ni la procedencia, no se pueden evaluar sesgos potenciales ni la seguridad del modelo.
 - Riesgo de alucinacion inherente a cualquier LLM, acentuado por la falta de evaluaciones publicas.
 - Se trata de una cuantizacion realizada por un tercero, no el modelo original. Los quants de menor precision pueden degradar la calidad de las respuestas.
@@ -71,6 +71,6 @@ No se dispone de informacion sobre modelos comparables en las fuentes consultada
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/EnvCraft-9B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/EnvCraft/EnvCraft-9B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/EnvCraft-9B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/EnvCraft/EnvCraft-9B
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

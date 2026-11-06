@@ -82,9 +82,9 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Olvido aplicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff | 8,03 B | no disponible | Si (GradDiff, `forget01`) | llama3.1 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B | no disponible | No (modelo de partida) | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No | llama3.1 | HuggingFace |
+| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff | 8,03 B | no disponible | Si (GradDiff, `forget01`) | llama3.1 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B | no disponible | No (modelo de partida) | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No | llama3.1 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otras lineas base de olvido (por ejemplo variantes con NPO o RMU sobre el mismo modelo base) en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con ellas.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos frente a otras lineas base de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget01_GradDiff
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

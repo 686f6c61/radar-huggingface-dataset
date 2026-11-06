@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman/synth-prefixlm-5M-v1` es un modelo de generación de texto de pequeño tamaño, con 5.242.624 parámetros, desarrollado por el usuario lugman y publicado en HuggingFace. Según las etiquetas del repositorio, utiliza una arquitectura basada en Llama y está disponible en formato safetensors. La model card indica que se trata de un ajuste fino (fine-tune) de un modelo base no especificado, entrenado sobre un conjunto de datos desconocido.
+El modelo `lugman/synth-prefixlm-5M-v1` es un modelo de generación de texto de pequeño tamaño, con 5.242.624 parámetros, desarrollado por el usuario lugman y publicado en Hugging Face. Según las etiquetas del repositorio, utiliza una arquitectura basada en Llama y está disponible en formato safetensors. La model card indica que se trata de un ajuste fino (fine-tune) de un modelo base no especificado, entrenado sobre un conjunto de datos desconocido.
 
 Su relevancia actual es limitada debido a su tamaño reducido y a la ausencia de información sobre su procedencia y rendimiento. No obstante, puede servir como punto de partida para experimentación educativa, pruebas de pipelines de generación de texto o como ejemplo de un modelo mínimo con arquitectura transformer. No se dispone de datos sobre su longitud de contexto, idiomas soportados ni licencia, lo que dificulta su uso en entornos productivos.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizó mediante ajuste fino, según los hiperparámetros d
 ## Casos de uso
 
 - Experimentación educativa: permite a estudiantes y desarrolladores comprender el funcionamiento interno de un transformer generativo sin necesidad de grandes recursos computacionales. Se puede cargar en un entorno local y analizar sus pesos, activaciones y salidas.
-- Pruebas de pipelines de generación de texto: sirve para validar integraciones con bibliotecas como HuggingFace transformers, vLLM u Ollama, comprobando que el flujo de carga, inferencia y postprocesado funciona correctamente antes de usar modelos más grandes.
+- Pruebas de pipelines de generación de texto: sirve para validar integraciones con bibliotecas como Hugging Face transformers, vLLM u Ollama, comprobando que el flujo de carga, inferencia y postprocesado funciona correctamente antes de usar modelos más grandes.
 - Prototipado rápido de aplicaciones de texto: en entornos con restricciones de memoria o latencia, puede generar respuestas cortas para demos o pruebas de concepto, aunque no se recomienda para uso real.
 - Benchmarking de infraestructura: al ser extremadamente ligero, es útil para medir el overhead de frameworks de inferencia o para calibrar tiempos de respuesta en hardware modesto.
 - Aprendizaje de técnicas de ajuste fino: su pequeño tamaño permite reentrenarlo en un dataset propio con recursos mínimos, siendo un banco de pruebas para experimentar con hiperparámetros o estrategias de fine-tuning.
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lugman/synth-prefixlm-5M-v1
+- Repositorio Hugging Face: https://huggingface.co/lugman/synth-prefixlm-5M-v1
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información disponible.

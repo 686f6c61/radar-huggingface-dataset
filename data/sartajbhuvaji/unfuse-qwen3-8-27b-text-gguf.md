@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otros desarroll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text-GGUF
 - Modelo base (solo texto, safetensors): https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text
 - Proyector multimodal GGUF: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-mmproj-GGUF
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

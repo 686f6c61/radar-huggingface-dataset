@@ -78,7 +78,7 @@ La comparativa se limita a los checkpoints relacionados del mismo autor y al mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gom-sy/ICRA-S
+- Modelo en Hugging Face: https://huggingface.co/Gom-sy/ICRA-S
 - Checkpoint relacionado (Run E): https://huggingface.co/Gom-sy/stretch-icra-run-e
 - Checkpoint relacionado (Run A): https://huggingface.co/Gom-sy/stretch-icra-run-a
 - Modelo base NVIDIA GR00T-N1.6-3B: https://huggingface.co/nvidia/GR00T-N1.6-3B

@@ -86,9 +86,9 @@ Calidad: perplejidad en las filas posteriores al sellado, dos ventanas de 16 384
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Motor | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B-Turbo-cmf | 27 000 M | 64 000 tokens documentados | 4 bits (q4tp, CMF) | Apache 2.0 | cortiq (Rust, Vulkan) | HuggingFace, 0 descargas, 1 like |
-| Qwen3.8-27B-cmf (estándar) | 27 000 M | atención exacta a cualquier longitud | 4 bits (CMF) | Apache 2.0 | cortiq | HuggingFace (referenciado en la model card) |
-| Qwen3.8-27B (base) | 27 000 M | no disponible | pesos originales | Apache 2.0 | no disponible | HuggingFace (Qwen/Qwen3.8-27B) |
+| Qwen3.8-27B-Turbo-cmf | 27 000 M | 64 000 tokens documentados | 4 bits (q4tp, CMF) | Apache 2.0 | cortiq (Rust, Vulkan) | Hugging Face, 0 descargas, 1 like |
+| Qwen3.8-27B-cmf (estándar) | 27 000 M | atención exacta a cualquier longitud | 4 bits (CMF) | Apache 2.0 | cortiq | Hugging Face (referenciado en la model card) |
+| Qwen3.8-27B (base) | 27 000 M | no disponible | pesos originales | Apache 2.0 | no disponible | Hugging Face (Qwen/Qwen3.8-27B) |
 
 No se dispone de datos de benchmarks de modelos alternativos de otros fabricantes en la información proporcionada, por lo que la comparación se limita a las variantes del mismo modelo base.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks de modelos alternativos de otros fabricante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Qwen3.8-27B-Turbo-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Qwen3.8-27B-Turbo-cmf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante estándar: https://huggingface.co/infosave/Qwen3.8-27B-cmf
 - Repositorio del motor CMF: https://github.com/infosave2007/cmf

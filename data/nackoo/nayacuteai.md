@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NayaCuteAI es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Nackoo en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un único archivo de pesos, `Qwen2.5-3B-Instruct.Q4_K_M.gguf`, junto con un Modelfile de Ollama, lo que indica que el objetivo del autor es el despliegue local sencillo más que la investigacion o el reentrenamiento. El modelo se presenta con la etiqueta "conversational", lo que sugiere un ajuste orientado a dialogo, presumiblemente con una personalidad o estilo concretos.
+NayaCuteAI es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Nackoo en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un único archivo de pesos, `Qwen2.5-3B-Instruct.Q4_K_M.gguf`, junto con un Modelfile de Ollama, lo que indica que el objetivo del autor es el despliegue local sencillo más que la investigacion o el reentrenamiento. El modelo se presenta con la etiqueta "conversational", lo que sugiere un ajuste orientado a dialogo, presumiblemente con una personalidad o estilo concretos.
 
 El dato tecnico mas relevante es el numero de parametros: 3.085.938.688 (aproximadamente 3,09 mil millones), coherente con la arquitectura Qwen2.5-3B. Al tratarse de una cuantizacion Q4_K_M, el peso del archivo ronda los 1,9-2 GB, aunque el repositorio ocupa 9,6 GB en total (probablemente por versiones historicas de archivos o ficheros auxiliares no listados en la model card). No hay informacion publica sobre el dataset de ajuste fino, el numero de tokens de entrenamiento, la licencia ni los idiomas soportados.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: 478 descargas, 0 likes, tamano del repo 9,6 G
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-3B-Instruct: un transformer decoder-only con atencion por causalidad estandar, normalizacion RMSNorm, activacion SwiGLU y sesgos QKV (Qwen2 los incorpora en Q y K). No hay innovaciones arquitectonicas propias del fine-tune: el autor unicamente ajusta los pesos del modelo base. El pipeline declarado por HuggingFace no esta disponible y no se especifica si el ajuste cubre las capas de embedding, todas las capas del transformer o solo un subconjunto (LoRA fusionado, por ejemplo).
+La arquitectura subyacente es la de Qwen2.5-3B-Instruct: un transformer decoder-only con atencion por causalidad estandar, normalizacion RMSNorm, activacion SwiGLU y sesgos QKV (Qwen2 los incorpora en Q y K). No hay innovaciones arquitectonicas propias del fine-tune: el autor unicamente ajusta los pesos del modelo base. El pipeline declarado por Hugging Face no esta disponible y no se especifica si el ajuste cubre las capas de embedding, todas las capas del transformer o solo un subconjunto (LoRA fusionado, por ejemplo).
 
 En cuanto al entrenamiento, la model card solo indica que el modelo "was finetuned and converted to GGUF format using Unsloth". No se documenta el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF, DPO, SFT puro u otra tecnica de alineamiento, ni si hubo una fase de cuantizacion QAT. Tampoco se indica la longitud de contexto usada durante el ajuste. Esto limita seriamente la reproducibilidad y la evaluacion independiente del modelo.
 
@@ -34,7 +34,7 @@ En cuanto al entrenamiento, la model card solo indica que el modelo "was finetun
 - Generacion de texto conversacional: es la funcion principal declarada, tanto por la etiqueta "conversational" como por el uso previsto (`llama-cli -hf Nackoo/NayaCuteAI --jinja`).
 - Razonamiento y conocimiento general heredados del modelo base Qwen2.5-3B-Instruct, sin garantia de que el fine-tune los preserve.
 - Generacion de codigo y matematicas basicas: capacidad tipica de Qwen2.5-3B, no verificada en esta variante.
-- Tool calling / function calling: potencialmente soportado por herencia de Qwen2.5-Instruct, pero no confirmado en la model card. La etiqueta `endpoints_compatible` indica compatibilidad con la API de inference endpoints de HuggingFace, no necesariamente con function calling.
+- Tool calling / function calling: potencialmente soportado por herencia de Qwen2.5-Instruct, pero no confirmado en la model card. La etiqueta `endpoints_compatible` indica compatibilidad con la API de inference endpoints de Hugging Face, no necesariamente con function calling.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (sin lista de idiomas declarada).
 - Capacidad multimodal: la model card menciona `llama-mtmd-cli` como comando alternativo, pero el modelo base Qwen2.5-3B-Instruct es solo texto y no se publica ningun proyector visual, por lo que la multimodalidad no debe asumirse.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nackoo/NayaCuteAI | 3,09 B | no disponible | GGUF (Q4_K_M) | no disponible | HuggingFace (478 descargas, 0 likes) |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (131.072 con YaRN) | safetensors, GGUF, AWQ, GPTQ | Apache 2.0 | HuggingFace, muy ampliamente adoptado |
-| Llama-3.2-3B-Instruct | 3,21 B | 131.072 tokens | safetensors, GGUF | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| Phi-3.5-mini-instruct | 3,82 B | 131.072 tokens | safetensors, GGUF, ONNX | MIT | HuggingFace, ampliamente adoptado |
+| Nackoo/NayaCuteAI | 3,09 B | no disponible | GGUF (Q4_K_M) | no disponible | Hugging Face (478 descargas, 0 likes) |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (131.072 con YaRN) | safetensors, GGUF, AWQ, GPTQ | Apache 2.0 | Hugging Face, muy ampliamente adoptado |
+| Llama-3.2-3B-Instruct | 3,21 B | 131.072 tokens | safetensors, GGUF | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| Phi-3.5-mini-instruct | 3,82 B | 131.072 tokens | safetensors, GGUF, ONNX | MIT | Hugging Face, ampliamente adoptado |
 
 La comparacion directa no es del todo justa: NayaCuteAI es un derivado del primero, no un modelo entrenado desde cero, y carece de la documentacion, licencia y evaluaciones que si acompanan a Qwen2.5-3B-Instruct. Para uso profesional, el modelo base oficial o Llama-3.2-3B-Instruct resultan opciones mas seguras en terminos legales y de soporte.
 
@@ -89,7 +89,7 @@ La comparacion directa no es del todo justa: NayaCuteAI es un derivado del prime
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nackoo/NayaCuteAI
+- Modelo en Hugging Face: https://huggingface.co/Nackoo/NayaCuteAI
 - Perfil del autor: https://huggingface.co/Nackoo
 - Repositorio GitHub del autor (no directamente relacionado con el modelo): https://github.com/Nackoo/Chatbot
 - Unsloth (framework de entrenamiento y conversion declarado): https://github.com/unslothai/unsloth

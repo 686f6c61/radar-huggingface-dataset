@@ -112,7 +112,7 @@ Comparado con la via oficial (ggml-org), esta build ofrece una cuantizacion mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CarnaK/MiMo-V2.6-Flash-RL-Heretic-MTP-Q3_K-GGUF
+- Modelo en Hugging Face: https://huggingface.co/CarnaK/MiMo-V2.6-Flash-RL-Heretic-MTP-Q3_K-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - LoRA Heretic de origen: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF
 - GGUF oficial y proyector multimodal: https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF

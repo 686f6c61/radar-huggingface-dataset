@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nusabert-text-only-s1 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning del checkpoint base LazarusNLP/NusaBERT-base, un BERT de arquitectura encoder-only entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en HuggingFace y su tarea concreta es la clasificación binaria de toxicidad: cada texto de entrada se etiqueta como `non_toxic` o `toxic`. El modelo se ha ajustado con búsqueda de hiperparámetros mediante Optuna, según indica la propia model card.
+nusabert-text-only-s1 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning del checkpoint base LazarusNLP/NusaBERT-base, un BERT de arquitectura encoder-only entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en Hugging Face y su tarea concreta es la clasificación binaria de toxicidad: cada texto de entrada se etiqueta como `non_toxic` o `toxic`. El modelo se ha ajustado con búsqueda de hiperparámetros mediante Optuna, según indica la propia model card.
 
 Se trata de un modelo pequeño y especializado: 110.643.458 parámetros (unos 110,6 millones, coherente con un BERT-base), un repositorio de 0,4 GB en formato safetensors y una licencia no declarada en la información disponible. No es un modelo generativo ni conversacional; es un clasificador de secuencias que devuelve una etiqueta y su distribución de probabilidad.
 
@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - En fp16 o bf16 los pesos ocupan unos 0,22 GB; en cuantización de 8 bits, unos 0,11 GB.
 - GPU recomendadas: cualquier GPU moderna sirve; para lotes grandes y alto throughput, una A100, H100, L4 o T4 son adecuadas. En GPUs de consumo, una RTX 3060, RTX 4060 o superiores funcionan sin problema.
 - Cabe en GPU de consumo y también en CPU para cargas moderadas, dado el tamaño reducido del modelo.
-- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference (declarado compatible), y servidores de inferencia estándar compatibles con endpoints de HuggingFace. No se documenta soporte específico de vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference (declarado compatible), y servidores de inferencia estándar compatibles con endpoints de Hugging Face. No se documenta soporte específico de vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nusabert-text-only-s1 | 110,6 M | no disponible | Clasificación de toxicidad en indonesio | no disponible | HuggingFace |
-| LazarusNLP/NusaBERT-base | no disponible en la información proporcionada | no disponible | Modelo base BERT en indonesio (preentrenamiento) | no disponible | HuggingFace |
-| IndoBERT (indolem) | no disponible en la información proporcionada | no disponible | Modelo base BERT en indonesio | no disponible | HuggingFace |
+| nusabert-text-only-s1 | 110,6 M | no disponible | Clasificación de toxicidad en indonesio | no disponible | Hugging Face |
+| LazarusNLP/NusaBERT-base | no disponible en la información proporcionada | no disponible | Modelo base BERT en indonesio (preentrenamiento) | no disponible | Hugging Face |
+| IndoBERT (indolem) | no disponible en la información proporcionada | no disponible | Modelo base BERT en indonesio | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a la categoría y la tarea.
 
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/watermelonlalala/nusabert-text-only-s1
+- Modelo en Hugging Face: https://huggingface.co/watermelonlalala/nusabert-text-only-s1
 - Modelo base: https://huggingface.co/LazarusNLP/NusaBERT-base

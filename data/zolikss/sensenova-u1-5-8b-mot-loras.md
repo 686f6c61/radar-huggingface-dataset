@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zolikss/SenseNova-U1.5-8B-MoT-LoRAs (adaptador) | No disponible (base de 8B) | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| sensenova/SenseNova-U1.5-8B-MoT (base oficial) | 8B | No disponible | No disponible | Apache 2.0 declarada | HuggingFace |
+| Zolikss/SenseNova-U1.5-8B-MoT-LoRAs (adaptador) | No disponible (base de 8B) | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| sensenova/SenseNova-U1.5-8B-MoT (base oficial) | 8B | No disponible | No disponible | Apache 2.0 declarada | Hugging Face |
 | Alternativas de generacion y edicion de imagen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Nota: el repositorio aqui descrito es una copia del original `sensenova/SenseNova-U1.5-8B-MoT-LoRAs`. Para uso en produccion conviene referenciar el repositorio oficial de la organizacion `sensenova`, que incluye la coleccion completa y el soporte documentado.
@@ -104,7 +104,7 @@ Nota: el repositorio aqui descrito es una copia del original `sensenova/SenseNov
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/Zolikss/SenseNova-U1.5-8B-MoT-LoRAs
+- Repositorio de Hugging Face analizado: https://huggingface.co/Zolikss/SenseNova-U1.5-8B-MoT-LoRAs
 - Repositorio oficial base: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Repositorio oficial de adaptadores LoRA (referencia): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
 - Adaptador recomendado (archivo): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs/blob/main/SenseNova-U1.5-8B-MoT-LoRA-8step-V2.safetensors
@@ -113,7 +113,7 @@ Nota: el repositorio aqui descrito es una copia del original `sensenova/SenseNov
 - Rama 1.5 en GitHub: https://github.com/OpenSenseNova/SenseNova-U1/tree/refs/heads/feat/u1.5
 - Guia de instalacion: https://github.com/OpenSenseNova/SenseNova-U1/blob/refs/heads/feat/u1.5/docs/installation.md
 - Licencia en GitHub: https://github.com/OpenSenseNova/SenseNova-U1/blob/refs/heads/feat/u1.5/LICENSE
-- Coleccion SenseNova-U1.5 en HuggingFace: https://huggingface.co/collections/sensenova/sensenova-u15
+- Coleccion SenseNova-U1.5 en Hugging Face: https://huggingface.co/collections/sensenova/sensenova-u15
 - Blog de arquitectura NEO-unify: https://huggingface.co/blog/sensenova/neo-unify
 - Demo: https://unify.light-ai.top/
 - Referencias arXiv declaradas en los tags: arxiv:2605.12500 y arxiv:2609.11929 (contenido no verificado en la informacion disponible)

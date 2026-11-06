@@ -83,9 +83,9 @@ En AgentNetBench, la ruta de escritorio redujo el exito por paso del 80,2% al 74
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S1-Accurate-LoRA | 4B (base) + LoRA r32 | hasta 16.384 en entrenamiento | Reordenamiento de candidatos para agentes de escritorio | Apache-2.0 | HuggingFace (17 descargas) |
-| S1-Fast | no disponible | no disponible | Modelo de decision rapido, primer nivel de la cascada | no disponible en la informacion | HuggingFace (elidot007/S1-Fast) |
-| OneJev-4B | 4B | no disponible | Modelo multimodal de decision base, sin ajuste | Apache-2.0 | HuggingFace (OmniJev/OneJev-4B) |
+| S1-Accurate-LoRA | 4B (base) + LoRA r32 | hasta 16.384 en entrenamiento | Reordenamiento de candidatos para agentes de escritorio | Apache-2.0 | Hugging Face (17 descargas) |
+| S1-Fast | no disponible | no disponible | Modelo de decision rapido, primer nivel de la cascada | no disponible en la informacion | Hugging Face (elidot007/S1-Fast) |
+| OneJev-4B | 4B | no disponible | Modelo multimodal de decision base, sin ajuste | Apache-2.0 | Hugging Face (OmniJev/OneJev-4B) |
 
 No se dispone de datos de benchmarks de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de otros modelos comparables de la misma ca
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/elidot007/S1-Accurate-LoRA
+- Hugging Face del adaptador: https://huggingface.co/elidot007/S1-Accurate-LoRA
 - Modelo base OneJev-4B: https://huggingface.co/OmniJev/OneJev-4B
 - Modelo S1-Fast: https://huggingface.co/elidot007/S1-Fast
 - Repositorio DesktopAgent: https://github.com/elidot007/desktop-agent

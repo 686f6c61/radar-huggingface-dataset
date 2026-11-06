@@ -84,7 +84,7 @@ No se dispone de resultados de rendimiento para las versiones de 2B y 4B en la i
 
 ## Enlaces
 
-- [Modelo en HuggingFace (0.8B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-paramopama-seed3407)
-- [Modelo en HuggingFace (2B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407)
-- [Modelo en HuggingFace (4B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407)
+- [Modelo en Hugging Face (0.8B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-paramopama-seed3407)
+- [Modelo en Hugging Face (2B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407)
+- [Modelo en Hugging Face (4B)](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed3407)
 - [Despliegue en FriendliAI (2B)](https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-paramopama-seed3407)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chiarabia99/perceiver-experiment85` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia y minima de una arquitectura Perceiver orientada a tareas de generacion. El autor es el usuario `chiarabia99` y el repositorio no acumula descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 15 de septiembre de 2026. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados: la propia model card lo describe explicitamente como un punto de partida reproducible ("tiny variant") y el fichero `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado.
+`chiarabia99/perceiver-experiment85` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia y minima de una arquitectura Perceiver orientada a tareas de generacion. El autor es el usuario `chiarabia99` y el repositorio no acumula descargas ni interacciones (0 descargas, 0 likes) desde su creacion el 15 de septiembre de 2026. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados: la propia model card lo describe explicitamente como un punto de partida reproducible ("tiny variant") y el fichero `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint evaluado.
 
 El peso real declarado en el fichero de safetensors es de 24.832 parametros totales, una magnitud de escala "tiny" que lo situa muy lejos de cualquier modelo utilizable en produccion. La arquitectura declarada es Perceiver con atencion dilatada, fusion bilinear, activacion gelu tanh y normalizacion batchnorm. La receta de entrenamiento por defecto usa el optimizador rmsprop con un scheduler onecycle, pero la model card aclara que son valores iniciales del script y no evidencia de un entrenamiento completado.
 
@@ -49,7 +49,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - Test de regresion en integracion continua: el repositorio puede integrarse en un job de CI que verifique que la implementacion de atencion dilatada y fusion bilinear sigue ejecutandose sin errores tras cada refactor.
 - Reproduccion de experimentos academicos: la pareja `config.json` + `training_args.json` documenta una receta concreta (rmsprop, onecycle) que puede reutilizarse como linea base reproducible en estudios comparativos de arquitecturas Perceiver, siempre que se igualen datos, presupuesto de ajuste y semillas.
 - Material docente sobre mecanismos de atencion: al ser una implementacion pequena y legible, sirve para ilustrar en un aula como se implementan el array latente, la atencion cruzada y la atencion dilatada en PyTorch.
-- Prototipado de adaptadores de carga: permite desarrollar y probar el adaptador explicito que la model card menciona como necesario para conectar esta implementacion personalizada con APIs genericas de HuggingFace.
+- Prototipado de adaptadores de carga: permite desarrollar y probar el adaptador explicito que la model card menciona como necesario para conectar esta implementacion personalizada con APIs genericas de Hugging Face.
 - Evaluacion comparativa de arquitecturas a escala reducida: puede usarse como punto de partida para una ablacion controlada frente a una linea base de capacidad equivalente, tal y como recomienda la propia model card, reportando la metrica de tarea en al menos tres semillas.
 - Verificacion de formatos de serializacion: util para comprobar que la conversion y recarga de pesos en safetensors preserva las formas y los tipos declarados en `config.json`.
 
@@ -88,6 +88,6 @@ No hay datos verificables de modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiarabia99/perceiver-experiment85
+- Modelo en Hugging Face: https://huggingface.co/chiarabia99/perceiver-experiment85
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a dominios de apuestas sin relacion con el modelo, por lo que se descartan.
 - Paper, blog, repositorio o demo adicionales: no disponible.

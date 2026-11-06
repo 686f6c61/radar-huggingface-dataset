@@ -4,7 +4,7 @@
 
 FlashVSR es un framework de super-resolución de video (VSR) basado en modelos de difusión, diseñado para operar en tiempo real sobre secuencias de video en streaming. Desarrollado por un equipo de investigadores (Junhao Zhuang, Shi Guo, Xin Cai, Xiaohui Li, Yihao Liu, Chun Yuan y Tianfan Xue) y publicado en arXiv (2510.12747), el modelo aborda los problemas de alta latencia, coste computacional y mala generalización a resoluciones ultra altas que han limitado la aplicación práctica de los métodos de difusión a la restauración de video. La versión v1.1, publicada en noviembre de 2025, introduce mejoras de estabilidad y fidelidad sobre la versión inicial.
 
-El modelo combina tres innovaciones principales: un pipeline de destilación en tres etapas que permite super-resolución en streaming, una atención dispersa con restricción de localidad (LCSA) que reduce el cómputo redundante y salva la brecha entre resolución de entrenamiento y prueba, y un decodificador condicional de pequeño tamaño que acelera la reconstrucción sin sacrificar calidad. Según los autores, FlashVSR alcanza aproximadamente 17 FPS para videos de 768×1408 en una GPU A100, con una aceleración de hasta 12 veces frente a modelos previos de difusión de un solo paso. El repositorio de HuggingFace tiene un tamaño de 7,5 GB y la licencia es Apache 2.0.
+El modelo combina tres innovaciones principales: un pipeline de destilación en tres etapas que permite super-resolución en streaming, una atención dispersa con restricción de localidad (LCSA) que reduce el cómputo redundante y salva la brecha entre resolución de entrenamiento y prueba, y un decodificador condicional de pequeño tamaño que acelera la reconstrucción sin sacrificar calidad. Según los autores, FlashVSR alcanza aproximadamente 17 FPS para videos de 768×1408 en una GPU A100, con una aceleración de hasta 12 veces frente a modelos previos de difusión de un solo paso. El repositorio de Hugging Face tiene un tamaño de 7,5 GB y la licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1
+- Modelo en Hugging Face: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1
 - Modelo v1 (versión anterior): https://huggingface.co/JunhaoZhuang/FlashVSR
 - Repositorio GitHub: https://github.com/OpenImagingLab/FlashVSR
 - Página del proyecto: http://zhuang2002.github.io/FlashVSR

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-Q3-4
+- Hugging Face: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-Q3-4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Repositorio de origen de la abliteration: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
 - Revision de origen citada: `ef198a171043c687a768a4179917ab6547672583`

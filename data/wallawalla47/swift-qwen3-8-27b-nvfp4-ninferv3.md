@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-NVFP4-NInferV3 es un artefacto de un solo fichero en formato NInfer V3 (extensión `.ninfer`) de 22,78 GB que empaqueta una cuantización mixta NVFP4/FP8 del modelo ukisai/Swift-Qwen3.8-27B-NVFP4, a su vez un fine-tune orientado a razonamiento eficiente de Qwen3.8-27B. Lo publica el usuario wallawalla47 bajo el identificador de HuggingFace indicado, y está diseñado para ejecutarse sin paso de conversión en carga: se apunta el motor Infernix (recomendado) o NInfer directamente al fichero `.ninfer`.
+Swift-Qwen3.8-27B-NVFP4-NInferV3 es un artefacto de un solo fichero en formato NInfer V3 (extensión `.ninfer`) de 22,78 GB que empaqueta una cuantización mixta NVFP4/FP8 del modelo ukisai/Swift-Qwen3.8-27B-NVFP4, a su vez un fine-tune orientado a razonamiento eficiente de Qwen3.8-27B. Lo publica el usuario wallawalla47 bajo el identificador de Hugging Face indicado, y está diseñado para ejecutarse sin paso de conversión en carga: se apunta el motor Infernix (recomendado) o NInfer directamente al fichero `.ninfer`.
 
 El modelo conserva el backbone híbrido de la familia Qwen3.5 con 64 capas que combinan atención lineal Gated Delta-Net y atención completa cada cuatro capas, hidden de 5120, vocabulario de 248.320 tokens y contexto nativo de 262.144 tokens. Incluye torre de visión `qwen3_5_vision` de 27 capas para entrada de imagen y vídeo, una cabeza MTP para decodificación especulativa y dos componentes adicionales de drafting (un modelo borrador DFlash2 de 5 capas y una cabeza de propuesta indexada de 131.072 filas).
 
@@ -104,7 +104,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Swift-Qwen3.8-27B-NVFP4-NInferV3
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Swift-Qwen3.8-27B-NVFP4-NInferV3
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4
 - Modelo base en BF16 (Qwen3.8-27B de UkisAI): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Referencia de cuantizacion de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4

@@ -95,7 +95,7 @@ La comparativa con Presidio es conceptual: Presidio es un framework basado en re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/santosh07401/piiguard-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/santosh07401/piiguard-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Cuantizaciones GGUF de Qwen3-1.7B (unsloth): https://huggingface.co/unsloth/Qwen3-1.7B-GGUF

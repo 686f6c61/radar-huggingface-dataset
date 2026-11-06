@@ -6,7 +6,7 @@
 
 El problema que resuelve es el de la clasificación y recuperación de imágenes sin entrenamiento específico: permite puntuar pares imagen-texto y asignar etiquetas definidas en lenguaje natural, lo que lo convierte en un componente habitual en pipelines de filtrado de datos, búsqueda visual y generación de embeddings multimodales.
 
-Ahora bien, la model card es la plantilla autogenerada de HuggingFace y no contiene ni un solo dato cumplimentado: no hay autoría real, ni datasets, ni hiperparámetros, ni evaluación, ni licencia declarada. Con cero descargas y cero likes en el momento de la consulta, y con el sufijo "EXPERIMENTAL" en el propio identificador, debe tratarse como un artefacto sin validar. Su relevancia es, por tanto, la de un posible experimento de reentrenamiento o fine-tuning sobre CLIP, no la de un modelo listo para producción.
+Ahora bien, la model card es la plantilla autogenerada de Hugging Face y no contiene ni un solo dato cumplimentado: no hay autoría real, ni datasets, ni hiperparámetros, ni evaluación, ni licencia declarada. Con cero descargas y cero likes en el momento de la consulta, y con el sufijo "EXPERIMENTAL" en el propio identificador, debe tratarse como un artefacto sin validar. Su relevancia es, por tanto, la de un posible experimento de reentrenamiento o fine-tuning sobre CLIP, no la de un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bn22/CLIP-ViT-B-32-EXPERIMENTAL | 153,6 M | no disponible (CLIP original: 77 tokens) | no disponible | HuggingFace, 0 descargas |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT (según el repositorio original) | HuggingFace, ampliamente usado |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | MIT (según el repositorio original) | HuggingFace |
-| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~151 M | 77 tokens | MIT (según el repositorio original) | HuggingFace, reentrenado sobre LAION-2B |
-| SigLIP base patch16-224 | ~203 M | 64 tokens | Apache 2.0 (según el repositorio original) | HuggingFace |
+| bn22/CLIP-ViT-B-32-EXPERIMENTAL | 153,6 M | no disponible (CLIP original: 77 tokens) | no disponible | Hugging Face, 0 descargas |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens | MIT (según el repositorio original) | Hugging Face, ampliamente usado |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens | MIT (según el repositorio original) | Hugging Face |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~151 M | 77 tokens | MIT (según el repositorio original) | Hugging Face, reentrenado sobre LAION-2B |
+| SigLIP base patch16-224 | ~203 M | 64 tokens | Apache 2.0 (según el repositorio original) | Hugging Face |
 
 El checkpoint de `bn22` comparte arquitectura y orden de magnitud de parámetros con `openai/clip-vit-base-patch32` y con la variante de LAION, pero carece de la documentación, la licencia explícita y el historial de uso de ambas alternativas. Para cualquier despliegue real, las versiones de OpenAI o LAION son la opción por defecto salvo que se verifique qué contiene exactamente este repositorio.
 
@@ -92,7 +92,7 @@ El checkpoint de `bn22` comparte arquitectura y orden de magnitud de parámetros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-EXPERIMENTAL
+- Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-EXPERIMENTAL
 - Paper referenciado en los tags (CLIP, Radford et al.): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de CLIP de OpenAI: https://github.com/openai/CLIP
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a páginas genéricas de servicios de Google y no aportan información técnica.

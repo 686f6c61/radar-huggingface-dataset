@@ -101,7 +101,7 @@ La comparacion cuantitativa con alternativas no puede establecerse con los datos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mentisialog/sherpa-onnx-nemotron-asr-streaming-farsi-1120ms-int8
+- Repositorio en Hugging Face: https://huggingface.co/mentisialog/sherpa-onnx-nemotron-asr-streaming-farsi-1120ms-int8
 - Modelo base del ajuste fino (persa): https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

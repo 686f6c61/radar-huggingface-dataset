@@ -2,9 +2,9 @@
 
 ## Resumen
 
-anassaifi12/qwen2.5-3b_sql_trained_model es un ajuste fino (fine-tuning) de Qwen2.5-3B publicado por el usuario anassaifi12 en HuggingFace. El modelo parte de unsloth/qwen2.5-3b-unsloth-bnb-4bit, una version del Qwen2.5-3B de Alibaba preparada por Unsloth para entrenamiento eficiente en 4 bits, y el resultado final se ha subido en precision FP16 (16 bits) con pesos en formato safetensors. El repositorio ocupa 6,2 GB y los safetensors declaran 3.085.938.688 parametros totales, es decir, unos 3,09 mil millones.
+anassaifi12/qwen2.5-3b_sql_trained_model es un ajuste fino (fine-tuning) de Qwen2.5-3B publicado por el usuario anassaifi12 en Hugging Face. El modelo parte de unsloth/qwen2.5-3b-unsloth-bnb-4bit, una version del Qwen2.5-3B de Alibaba preparada por Unsloth para entrenamiento eficiente en 4 bits, y el resultado final se ha subido en precision FP16 (16 bits) con pesos en formato safetensors. El repositorio ocupa 6,2 GB y los safetensors declaran 3.085.938.688 parametros totales, es decir, unos 3,09 mil millones.
 
-Por el nombre del repositorio ("sql_trained_model") cabe deducir que el ajuste fino esta orientado a tareas de generacion y manejo de SQL, aunque la model card no documenta el dataset, el numero de pasos ni el procedimiento exacto de entrenamiento. La model card se limita a indicar que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace, sin aportar metricas de evaluacion.
+Por el nombre del repositorio ("sql_trained_model") cabe deducir que el ajuste fino esta orientado a tareas de generacion y manejo de SQL, aunque la model card no documenta el dataset, el numero de pasos ni el procedimiento exacto de entrenamiento. La model card se limita a indicar que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face, sin aportar metricas de evaluacion.
 
 Se trata de un modelo de nicho, con 0 descargas y 0 likes en el momento de la consulta, y sin resultados de benchmarks publicados. Su relevancia practica es limitada y debe evaluarse experimentalmente antes de cualquier uso en produccion; su principal atractivo es el tamano reducido (3B) y la licencia Apache 2.0, que permiten desplegarlo en hardware de consumo o en entornos sin GPU de gama alta.
 
@@ -25,11 +25,11 @@ Se trata de un modelo de nicho, con 0 descargas y 0 likes en el momento de la co
 
 La model card no describe la arquitectura interna del modelo. Por herencia directa del modelo base unsloth/qwen2.5-3b-unsloth-bnb-4bit, se trata de un transformer decoder-only de la familia Qwen2.5 con aproximadamente 3,09 mil millones de parametros, la misma topologia que el Qwen2.5-3B original (atencion con RoPE, normalizacion RMSNorm y capas feed-forward con activacion SwiGLU). No se dispone de informacion sobre el numero de capas, dimension oculta, numero de cabezas de atencion ni el tamano del vocabulario en la informacion proporcionada.
 
-Respecto al entrenamiento, la model card unicamente indica que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace, partiendo de unsloth/qwen2.5-3b-unsloth-bnb-4bit. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico QLoRA/LoRA sobre la base cuantizada, ni si hubo fases de RLHF, DPO o SFT supervisado. El nombre del repositorio sugiere una especializacion en SQL, pero no hay documentacion que lo confirme. Tampoco se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+Respecto al entrenamiento, la model card unicamente indica que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face, partiendo de unsloth/qwen2.5-3b-unsloth-bnb-4bit. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico QLoRA/LoRA sobre la base cuantizada, ni si hubo fases de RLHF, DPO o SFT supervisado. El nombre del repositorio sugiere una especializacion en SQL, pero no hay documentacion que lo confirme. Tampoco se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, con el pipeline `text-generation` declarado en HuggingFace.
+- Generacion de texto autoregresiva en ingles, con el pipeline `text-generation` declarado en Hugging Face.
 - Presunta especializacion en tareas de SQL (generacion de consultas, posiblemente text-to-SQL), inferida del nombre del repositorio pero no documentada ni evaluada en la model card.
 - Compatibilidad con `endpoints_compatible` y `text-generation-inference`, lo que permite desplegarlo tras una API compatible con el protocolo de TGI.
 - Carga directa con la libreria transformers.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| anassaifi12/qwen2.5-3b_sql_trained_model | 3,09 B | No disponible (base Qwen2.5-3B: 32.768 tokens) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen2.5-3B / Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Apache 2.0 (la mayoria de variantes) | HuggingFace, ampliamente usado | Benchmarks publicados por Alibaba |
-| Llama 3.2 3B / 3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria de Meta (con restricciones) | HuggingFace | Benchmarks publicados por Meta |
-| Gemma 2 2B | 2,6 B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace | Benchmarks publicados por Google |
+| anassaifi12/qwen2.5-3b_sql_trained_model | 3,09 B | No disponible (base Qwen2.5-3B: 32.768 tokens) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen2.5-3B / Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Apache 2.0 (la mayoria de variantes) | Hugging Face, ampliamente usado | Benchmarks publicados por Alibaba |
+| Llama 3.2 3B / 3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria de Meta (con restricciones) | Hugging Face | Benchmarks publicados por Meta |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face | Benchmarks publicados por Google |
 
 Nota: los datos de la columna de rendimiento de los modelos alternativos corresponden a las evaluaciones publicadas por sus respectivos desarrolladores; no se dispone de una comparacion directa con este ajuste fino.
 
@@ -88,9 +88,9 @@ Nota: los datos de la columna de rendimiento de los modelos alternativos corresp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anassaifi12/qwen2.5-3b_sql_trained_model
+- Modelo en Hugging Face: https://huggingface.co/anassaifi12/qwen2.5-3b_sql_trained_model
 - Modelo base intermedio: https://huggingface.co/unsloth/qwen2.5-3b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen2.5 (modelo original de Alibaba): no se ha encontrado el enlace en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponible

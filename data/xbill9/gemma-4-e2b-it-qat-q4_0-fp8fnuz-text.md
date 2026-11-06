@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer comparaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8fnuz-text
+- Repositorio en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8fnuz-text
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Variante gemela en E4M3: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8-text
 - Variante en rejilla QAT exacta W4A16: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text

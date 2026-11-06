@@ -54,6 +54,6 @@ No disponible. No se han proporcionado datos de modelos comparables en la misma 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Kerstal/krea-2_model
+- Repositorio de Hugging Face: https://huggingface.co/Kerstal/krea-2_model
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo

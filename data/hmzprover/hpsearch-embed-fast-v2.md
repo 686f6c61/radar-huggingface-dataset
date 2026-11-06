@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-fast-v2
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-fast-v2
 - Modelo de documentos asociado: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B

@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hyperhuzaifa/Qwen3.6-35B-A3B-W4A16-AWQ)
+- [Modelo en Hugging Face](https://huggingface.co/hyperhuzaifa/Qwen3.6-35B-A3B-W4A16-AWQ)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Repositorio llm-compressor](https://github.com/vllm-project/llm-compressor)
 - [Licencia del modelo base](https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE)

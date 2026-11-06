@@ -2,21 +2,21 @@
 
 ## Resumen
 
-`numbat` es, según la model card publicada en HuggingFace por el usuario `m1k3y-ai`, un checkpoint intermedio de preentrenamiento de un supuesto modelo de Anthropic de clase Mythos, con aproximadamente 14 billones de parámetros, 114 capas y una arquitectura híbrida que combina Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE). El autor afirma que corresponde a una ejecución de entrenamiento interna referenciada como `numbat` en una filtración del código fuente de Claude Code de marzo de 2026, y que el checkpoint se extrajo en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos, sin post-entrenamiento ni RLHF.
+`numbat` es, según la model card publicada en Hugging Face por el usuario `m1k3y-ai`, un checkpoint intermedio de preentrenamiento de un supuesto modelo de Anthropic de clase Mythos, con aproximadamente 14 billones de parámetros, 114 capas y una arquitectura híbrida que combina Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA) con capas de mezcla de expertos (MoE). El autor afirma que corresponde a una ejecución de entrenamiento interna referenciada como `numbat` en una filtración del código fuente de Claude Code de marzo de 2026, y que el checkpoint se extrajo en el paso 1.830.000 de una ejecución de aproximadamente 1,96 millones de pasos, sin post-entrenamiento ni RLHF.
 
-La relevancia de esta ficha es fundamentalmente documental y crítica: la información disponible procede exclusivamente de la model card del autor y de los metadatos de HuggingFace, sin verificación independiente, sin resultados de benchmarks publicados y sin pipeline, licencia ni idiomas declarados en la plataforma. El repositorio ocupa 7.720,6 GB y contiene 772 shards en formato safetensors cuantizados en NVFP4, lo que lo sitúa fuera del alcance de cualquier hardware de consumo y de la mayoría de infraestructuras de investigación convencionales.
+La relevancia de esta ficha es fundamentalmente documental y crítica: la información disponible procede exclusivamente de la model card del autor y de los metadatos de Hugging Face, sin verificación independiente, sin resultados de benchmarks publicados y sin pipeline, licencia ni idiomas declarados en la plataforma. El repositorio ocupa 7.720,6 GB y contiene 772 shards en formato safetensors cuantizados en NVFP4, lo que lo sitúa fuera del alcance de cualquier hardware de consumo y de la mayoría de infraestructuras de investigación convencionales.
 
-El dato de parámetros totales registrado por HuggingFace en safetensors es de 6.849.378.030.158 (aproximadamente 6,85 billones), mientras que la model card afirma "~14T param". Esta discrepancia entre la cifra declarada por el autor y la reportada por la plataforma debe tenerse en cuenta al evaluar cualquier afirmación sobre el modelo.
+El dato de parámetros totales registrado por Hugging Face en safetensors es de 6.849.378.030.158 (aproximadamente 6,85 billones), mientras que la model card afirma "~14T param". Esta discrepancia entre la cifra declarada por el autor y la reportada por la plataforma debe tenerse en cuenta al evaluar cualquier afirmación sobre el modelo.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Híbrida Gated DeltaNet (GDN) + Multi-head Latent Attention (MLA) con MoE y Multi-Token Prediction (MTP) |
-| Parámetros totales | ~14T según model card; 6.849.378.030.158 según metadatos safetensors de HuggingFace (discrepancia no resuelta) |
+| Parámetros totales | ~14T según model card; 6.849.378.030.158 según metadatos safetensors de Hugging Face (discrepancia no resuelta) |
 | Parámetros activos | No disponible (MoE con 1.224 expertos, top-48 + 1 compartido; no se especifica el número de parámetros activos) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 (E4M3 scale blocks con payloads E2M1); también etiquetado como 8-bit en los tags de HuggingFace |
+| Tipos de cuantización | NVFP4 (E4M3 scale blocks con payloads E2M1); también etiquetado como 8-bit en los tags de Hugging Face |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (772 shards, menos de 10,6 GB por archivo, ~7,72 TB totales) |
@@ -40,7 +40,7 @@ La implementación de referencia incluida (`modeling_numbat.py`) deriva de `PreT
 - Razonamiento y conocimiento: al ser un checkpoint intermedio de preentrenamiento, no se ha verificado ninguna capacidad específica de razonamiento, matemáticas o código; la model card no reporta evaluaciones cualitativas.
 - Tool calling / function calling: no disponible; no se menciona soporte ni formato de herramientas.
 - Agentes y razonamiento multi-paso: no disponible; no hay post-entrenamiento orientado a agentes.
-- Capacidades multilingües: no disponibles; no se declaran idiomas en HuggingFace ni en la model card.
+- Capacidades multilingües: no disponibles; no se declaran idiomas en Hugging Face ni en la model card.
 - Visión, audio u otras modalidades: no disponibles; la arquitectura descrita es exclusivamente de texto.
 - Modo "thinking" o razonamiento extendido: no disponible; no se describe ningún modo de este tipo.
 
@@ -72,9 +72,9 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 ## Limitaciones y advertencias
 
 - Procedencia no verificada: la model card afirma que el checkpoint proviene de una ejecución de entrenamiento interna de Anthropic, pero no se aporta ninguna prueba independiente; el autor declina explicar cómo lo obtuvo ("Can't say more than what's already in the repo").
-- Discrepancia de parámetros: la model card declara ~14T de parámetros, mientras que los metadatos de safetensors en HuggingFace reportan 6.849.378.030.158 (~6,85T). Esta inconsistencia no está resuelta y afecta a cualquier estimación de requisitos.
+- Discrepancia de parámetros: la model card declara ~14T de parámetros, mientras que los metadatos de safetensors en Hugging Face reportan 6.849.378.030.158 (~6,85T). Esta inconsistencia no está resuelta y afecta a cualquier estimación de requisitos.
 - Sin post-entrenamiento: es un checkpoint de preentrenamiento en el paso 1.830.000 de ~1,96M, sin RLHF ni ajuste por instrucciones; las salidas serán continuaciones de texto sin alineación.
-- Sin licencia declarada: HuggingFace no muestra licencia, lo que impide determinar los derechos de uso comercial, redistribución o modificación. Cualquier uso en producción es jurídicamente incierto.
+- Sin licencia declarada: Hugging Face no muestra licencia, lo que impide determinar los derechos de uso comercial, redistribución o modificación. Cualquier uso en producción es jurídicamente incierto.
 - Sin benchmarks: no hay resultados publicados que permitan evaluar calidad, sesgos o robustez.
 - Sin idiomas declarados: se desconoce la cobertura lingüística real y el comportamiento en castellano.
 - Riesgo de alucinación: inherente a un modelo de lenguaje sin alineación; no hay evaluaciones de fidelidad factual.
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m1k3y-ai/numbat
-- Repositorio de archivos (shards, configuración e implementación de referencia): incluido en la misma página de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/m1k3y-ai/numbat
+- Repositorio de archivos (shards, configuración e implementación de referencia): incluido en la misma página de Hugging Face
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios adicionales ni demos.

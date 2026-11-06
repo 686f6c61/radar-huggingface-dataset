@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alpha Hawk3 AI es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario AlpahHawk3 en HuggingFace. Se trata de un modelo de generación de texto de 8.000 millones de parámetros construido sobre la arquitectura transformer decoder-only de Llama 3.1, partiendo concretamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y entrenado con la librería Unsloth, que acelera el proceso de ajuste fino aproximadamente 2x.
+Alpha Hawk3 AI es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario AlpahHawk3 en Hugging Face. Se trata de un modelo de generación de texto de 8.000 millones de parámetros construido sobre la arquitectura transformer decoder-only de Llama 3.1, partiendo concretamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`) y entrenado con la librería Unsloth, que acelera el proceso de ajuste fino aproximadamente 2x.
 
 El modelo hereda las capacidades base de Llama 3.1 8B Instruct: generación de texto, razonamiento, código y matemáticas, con una ventana de contexto de 128.000 tokens (según las especificaciones del modelo original de Meta). El ajuste fino se ha realizado presumiblemente sobre datos en inglés, dado que la model card declara únicamente el idioma `en`. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpha Hawk3 AI (este modelo) | 8B | 128k (heredado) | Apache 2.0 | No | HuggingFace, 0 descargas |
-| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Sí (MMLU, HumanEval, GSM8K) | HuggingFace, ampliamente usado |
-| Mistral 7B Instruct | 7B | 32k | Apache 2.0 | Sí | HuggingFace, ampliamente usado |
-| Qwen2.5 7B Instruct | 7B | 128k | Apache 2.0 | Sí | HuggingFace, ampliamente usado |
+| Alpha Hawk3 AI (este modelo) | 8B | 128k (heredado) | Apache 2.0 | No | Hugging Face, 0 descargas |
+| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Sí (MMLU, HumanEval, GSM8K) | Hugging Face, ampliamente usado |
+| Mistral 7B Instruct | 7B | 32k | Apache 2.0 | Sí | Hugging Face, ampliamente usado |
+| Qwen2.5 7B Instruct | 7B | 128k | Apache 2.0 | Sí | Hugging Face, ampliamente usado |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlpahHawk3/alpha_hawk3_ai
+- Hugging Face: https://huggingface.co/AlpahHawk3/alpha_hawk3_ai
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Meta Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

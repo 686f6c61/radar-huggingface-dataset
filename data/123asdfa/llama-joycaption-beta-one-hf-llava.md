@@ -18,14 +18,14 @@ Su relevancia actual radica en el nicho concreto que cubre: la generación masiv
 | Longitud de contexto | no disponible en la informacion proporcionada; el ejemplo oficial de vLLM usa `--max-model-len 4096` |
 | Tipos de cuantizacion | no disponible; los pesos publicados estan en safetensors bfloat16 (no se listan GGUF ni AWQ/GPTQ) |
 | Idiomas soportados | no disponible; el LLM base es Llama 3.1 (multilingue) pero no se documenta el alcance idiomatico del captioning |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card declara "open weights, no restrictions" sin especificar licencia formal |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card declara "open weights, no restrictions" sin especificar licencia formal |
 | Formato de pesos | safetensors (transformers), tamano del repo 17,0 GB |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura sigue el patron LLaVA clasico: las imagenes se procesan con el codificador visual SigLIP2 de Google en variante so400m con parches de 14x14 y resolucion de entrada 384 px; las caracteristicas visuales se proyectan al espacio de embeddings del LLM y se intercalan como tokens de imagen en la secuencia de entrada. El decodificador es Llama-3.1-8B-Instruct, un transformer denso de 8 mil millones de parametros, lo que explica que el recuento total (8,48 B) sea ligeramente superior al del LLM por la suma del vision tower y el proyector.
 
-No se han publicado en la informacion disponible detalles sobre el volumen de tokens de entrenamiento, la composicion exacta del dataset, ni la existencia de fases de RLHF o DPO. La model card indica que el proyecto publicara scripts de entrenamiento y detalles tecnicos, y que el entrenamiento excluye contenido ilegal. La innovacion diferencial no es arquitectonica sino de datos y posicionamiento: cobertura deliberadamente amplia de estilos visuales y de contenido SFW/NSFW, con minimo filtrado, orientada a producir descripciones lo bastante ricas como para usarse como texto de entrenamiento en modelos de difusion. La implementacion de referencia usa `LlavaForConditionalGeneration` de transformers y advierte de que el manejo de chat templates en modelos LLaVA dentro de HuggingFace es fragil.
+No se han publicado en la informacion disponible detalles sobre el volumen de tokens de entrenamiento, la composicion exacta del dataset, ni la existencia de fases de RLHF o DPO. La model card indica que el proyecto publicara scripts de entrenamiento y detalles tecnicos, y que el entrenamiento excluye contenido ilegal. La innovacion diferencial no es arquitectonica sino de datos y posicionamiento: cobertura deliberadamente amplia de estilos visuales y de contenido SFW/NSFW, con minimo filtrado, orientada a producir descripciones lo bastante ricas como para usarse como texto de entrenamiento en modelos de difusion. La implementacion de referencia usa `LlavaForConditionalGeneration` de transformers y advierte de que el manejo de chat templates en modelos LLaVA dentro de Hugging Face es fragil.
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace (replica documentada): https://huggingface.co/123ASDFa/llama-joycaption-beta-one-hf-llava
-- Repositorio original de JoyCaption en HuggingFace: https://huggingface.co/fancyfeast/llama-joycaption-beta-one-hf-llava
+- Modelo en Hugging Face (replica documentada): https://huggingface.co/123ASDFa/llama-joycaption-beta-one-hf-llava
+- Repositorio original de JoyCaption en Hugging Face: https://huggingface.co/fancyfeast/llama-joycaption-beta-one-hf-llava
 - Repositorio GitHub del proyecto JoyCaption: https://github.com/fpgaminer/joycaption
 - Modelo base LLM: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base vision encoder: https://huggingface.co/google/siglip2-so400m-patch14-384

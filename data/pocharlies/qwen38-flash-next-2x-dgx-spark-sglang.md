@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del recipe: https://huggingface.co/pocharlies/qwen38-flash-next-2x-dgx-spark-sglang
+- Repositorio Hugging Face del recipe: https://huggingface.co/pocharlies/qwen38-flash-next-2x-dgx-spark-sglang
 - Modelo base (checkpoint NVFP4): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Repositorio GitHub del recipe: https://github.com/pocharlies/qwen38-flash-next-dgx-spark-sglang/releases
 - Documentacion de SGLang para Qwen3.8-Flash-Next: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next

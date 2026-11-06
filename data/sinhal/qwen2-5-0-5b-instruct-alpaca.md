@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sinhal/qwen2-5-0-5b-instruct-alpaca` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `sinhal` en HuggingFace. Se trata de un adaptador PEFT/QLoRA entrenado sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`, un modelo de lenguaje de 0.5B parametros, utilizando el dataset `tatsu-lab/alpaca`. Este ajuste fino se realizo con la tecnica de QLoRA en cuantizacion 4-bit NF4, con r=16 y alpha=32, en una sola sesion de entrenamiento sobre una GPU T4 de Kaggle (16GB, free tier). El resultado es un adaptador ligero de aproximadamente 0.1GB que se carga sobre el modelo base para generar respuestas siguiendo instrucciones del estilo Alpaca.
+El modelo `sinhal/qwen2-5-0-5b-instruct-alpaca` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `sinhal` en Hugging Face. Se trata de un adaptador PEFT/QLoRA entrenado sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`, un modelo de lenguaje de 0.5B parametros, utilizando el dataset `tatsu-lab/alpaca`. Este ajuste fino se realizo con la tecnica de QLoRA en cuantizacion 4-bit NF4, con r=16 y alpha=32, en una sola sesion de entrenamiento sobre una GPU T4 de Kaggle (16GB, free tier). El resultado es un adaptador ligero de aproximadamente 0.1GB que se carga sobre el modelo base para generar respuestas siguiendo instrucciones del estilo Alpaca.
 
 Este proyecto tiene un caracter claramente experimental y educativo: el propio autor reconoce que no ha sido evaluado con benchmarks y que no afirma que supere al modelo base en ninguna tarea. Fue generado y publicado de forma automatica por un agente, con el objetivo de hacer el proceso de entrenamiento inspeccionable. Su relevancia actual radica en servir como ejemplo practico de un pipeline de fine-tuning con QLoRA en entornos de hardware gratuito y limitado, mas que como un modelo de produccion.
 
@@ -66,6 +66,6 @@ No disponible. No se han encontrado datos comparativos de este adaptador con otr
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sinhal/qwen2-5-0-5b-instruct-alpaca
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sinhal/qwen2-5-0-5b-instruct-alpaca
 - Modelo base Qwen/Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset tatsu-lab/alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InternVL3-38B (este) | 38B | 32K | other (open source) | HuggingFace, Keras 3 |
-| InternVL3-78B | 78B | 32K | other (open source) | HuggingFace |
-| InternVL 2.5 | hasta 78B | 32K | other (open source) | HuggingFace |
+| InternVL3-38B (este) | 38B | 32K | other (open source) | Hugging Face, Keras 3 |
+| InternVL3-78B | 78B | 32K | other (open source) | Hugging Face |
+| InternVL 2.5 | hasta 78B | 32K | other (open source) | Hugging Face |
 
 La comparativa se limita a la propia familia InternVL por falta de informacion sobre alternativas directas en los resultados de busqueda. InternVL3-38B es la version media de la serie, por debajo del modelo de 78B que alcanza estado del arte en percepcion y razonamiento entre MLLMs open source, pero con menores requisitos de hardware.
 
@@ -80,11 +80,11 @@ La comparativa se limita a la propia familia InternVL por falta de informacion s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/internvl3-38b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/internvl3-38b
 - Modelo upstream: https://huggingface.co/OpenGVLab/InternVL3-38B-hf
 - Repositorio GitHub de InternVL: https://github.com/OpenGVLab/InternVL
 - Blog de presentacion de InternVL3: https://internvl.github.io/blog/2025-04-11-InternVL-3.0/
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de InternVL en KerasFormers: https://imvision12.github.io/KerasFormers/internvl/
-- Coleccion de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Pagina de FitMyLLM con especificaciones: https://www.fitmyllm.com/model/internvl3-38b

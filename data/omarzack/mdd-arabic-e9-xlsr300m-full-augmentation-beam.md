@@ -73,9 +73,9 @@ El modelo pertenece a la familia XLSR de wav2vec2. Se puede comparar con el mode
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| facebook/wav2vec2-xls-r-300m | 300M | no disponible | Apache 2.0 | HuggingFace |
-| mdd-arabic-e9-xlsr300m-full-augmentation-beam | 315M | no disponible | Apache 2.0 | HuggingFace |
-| mdd-arabic-e8-xlsr1b-full-augmentation-beam | ~1B | no disponible | Apache 2.0 | HuggingFace |
+| facebook/wav2vec2-xls-r-300m | 300M | no disponible | Apache 2.0 | Hugging Face |
+| mdd-arabic-e9-xlsr300m-full-augmentation-beam | 315M | no disponible | Apache 2.0 | Hugging Face |
+| mdd-arabic-e8-xlsr1b-full-augmentation-beam | ~1B | no disponible | Apache 2.0 | Hugging Face |
 
 No se puede hacer una comparativa de rendimiento porque no hay datos públicos de los otros modelos.
 
@@ -90,7 +90,7 @@ No se puede hacer una comparativa de rendimiento porque no hay datos públicos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omarZACK/mdd-arabic-e9-xlsr300m-full-augmentation-beam
+- Modelo en Hugging Face: https://huggingface.co/omarZACK/mdd-arabic-e9-xlsr300m-full-augmentation-beam
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Otros modelos del autor:
   - https://huggingface.co/omarZACK/mdd-arabic-e8-xlsr1b-full-augmentation-beam

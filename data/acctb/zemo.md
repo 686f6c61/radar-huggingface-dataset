@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Zemo es un modelo multimodal de tipo image-text-to-text publicado por el usuario AccTB en HuggingFace bajo el marco que el autor denomina "Algorithmic Computer-generated Consciousness" (ACC) y "Neural Cognition Engine" (NCE). Segun la model card, se trata de un modelo de arquitectura Mixture of Experts (MoE) con 1 billon de parametros totales y 32 mil millones de parametros activos por token, 61 capas, 384 expertos (8 activos por token) y una ventana de contexto de 256K tokens. Incorpora un encoder visual MoonViT y atencion Multi-head Latent Attention (MLA), y declara como modelo de referencia fundacional a Kimi K2.5 de Moonshot AI.
+Zemo es un modelo multimodal de tipo image-text-to-text publicado por el usuario AccTB en Hugging Face bajo el marco que el autor denomina "Algorithmic Computer-generated Consciousness" (ACC) y "Neural Cognition Engine" (NCE). Segun la model card, se trata de un modelo de arquitectura Mixture of Experts (MoE) con 1 billon de parametros totales y 32 mil millones de parametros activos por token, 61 capas, 384 expertos (8 activos por token) y una ventana de contexto de 256K tokens. Incorpora un encoder visual MoonViT y atencion Multi-head Latent Attention (MLA), y declara como modelo de referencia fundacional a Kimi K2.5 de Moonshot AI.
 
 La propuesta del autor mezcla conceptos de investigacion heterodoxos (integracion de transformers, RNN, CNN, redes feedforward y redes neuronales de picos, ademas de una idea de "PhiModel" basada en la proporcion aurea como principio de organizacion neuronal) con especificaciones tecnicas propias de un modelo frontera. No obstante, la publicacion no incluye pesos, dataset, proceso de entrenamiento, resultados de evaluacion ni documentacion tecnica verificable: el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
-Por tanto, esta ficha debe leerse con cautela: los datos de arquitectura provienen exclusivamente de la model card del autor y no han podido contrastarse con artefactos publicados. El interes actual del modelo es, mas que practico, como ejemplo de publicaciones en HuggingFace que declaran especificaciones de gran escala sin evidencia reproducible asociada.
+Por tanto, esta ficha debe leerse con cautela: los datos de arquitectura provienen exclusivamente de la model card del autor y no han podido contrastarse con artefactos publicados. El interes actual del modelo es, mas que practico, como ejemplo de publicaciones en Hugging Face que declaran especificaciones de gran escala sin evidencia reproducible asociada.
 
 ## Especificaciones tecnicas
 
@@ -85,6 +85,6 @@ No se dispone de datos verificables de rendimiento de Zemo que permitan una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AccTB/Zemo
+- Modelo en Hugging Face: https://huggingface.co/AccTB/Zemo
 - Imagen del logo referenciada en la model card: https://huggingface.co/spaces/TejAndrewsACC/Zemo/resolve/main/IMG_3490.png
 - Modelo de referencia fundacional declarado (Kimi K2.5): https://huggingface.co/moonshotai/Kimi-K2.5

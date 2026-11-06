@@ -94,7 +94,7 @@ La diferencia más marcada frente a las alternativas de la misma franja es la ve
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/volantis-labs/qwen3.5-2b
+- Repositorio de Hugging Face: https://huggingface.co/volantis-labs/qwen3.5-2b
 - Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b
 - Receta de vLLM para Qwen/Qwen3.5-2B: https://recipes.vllm.ai/Qwen/Qwen3.5-2B
 - Guía de fine-tuning de Qwen3.5 2B en distil labs: https://www.distillabs.ai/learn/qwen3-5-2b-fine-tuning-guide/

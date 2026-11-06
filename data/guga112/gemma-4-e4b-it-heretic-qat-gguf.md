@@ -90,7 +90,7 @@ La diferencia funcional principal frente al modelo de Google es la abliteracion:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guga112/gemma-4-E4B-it-heretic-QAT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/guga112/gemma-4-E4B-it-heretic-QAT-GGUF
 - Documentacion en chino referenciada en la model card: https://huggingface.co/SC117/gemma-4-E4B-it-heretic-QAT-GGUF/blob/main/README_zh.md
 - Modelo base intermedio: https://huggingface.co/coder3101/gemma-4-E4B-it-qat-q4_0-unquantized-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it

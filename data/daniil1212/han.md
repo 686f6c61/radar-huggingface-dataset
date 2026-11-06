@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `daniil1212/Han` es un repositorio alojado en HuggingFace por el usuario `daniil1212`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: un tag de region (`region:us`), cero descargas registradas y un unico "like". No se ha publicado ni la licencia, ni los idiomas soportados, ni la tarea asociada al pipeline, ni ninguna descripcion del modelo.
+El modelo identificado como `daniil1212/Han` es un repositorio alojado en Hugging Face por el usuario `daniil1212`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: un tag de region (`region:us`), cero descargas registradas y un unico "like". No se ha publicado ni la licencia, ni los idiomas soportados, ni la tarea asociada al pipeline, ni ninguna descripcion del modelo.
 
 Esto significa que no es posible determinar que tipo de modelo es (lenguaje, vision, audio, multimodal), cual es su arquitectura, su numero de parametros, su longitud de contexto o el dataset con el que fue entrenado. Tampoco existen resultados de benchmarks, pesos documentados ni tarjeta de modelo con instrucciones de uso. La fecha de creacion y ultima actualizacion del repositorio figura como 2026-10-11.
 
@@ -25,7 +25,7 @@ Dado el nivel de informacion disponible, esta ficha debe entenderse como un regi
 
 No disponible. La informacion proporcionada no incluye ninguna referencia a la arquitectura del modelo (transformer, Mixture of Experts, SSM, hibrida u otra), al numero de tokens de entrenamiento, a la composicion del dataset ni a posibles fases de ajuste fino (SFT, RLHF, DPO). Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-El unico dato estructural es el tag `region:us`, que en HuggingFace indica la region de almacenamiento del repositorio y no aporta informacion sobre el diseno del modelo.
+El unico dato estructural es el tag `region:us`, que en Hugging Face indica la region de almacenamiento del repositorio y no aporta informacion sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| daniil1212/Han | no disponible | no disponible | no disponible | repositorio HuggingFace sin descargas registradas |
+| daniil1212/Han | no disponible | no disponible | no disponible | repositorio Hugging Face sin descargas registradas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daniil1212/Han
+- Repositorio en Hugging Face: https://huggingface.co/daniil1212/Han
 
 No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs tecnicos, repositorios de codigo, demos o paginas de documentacion).

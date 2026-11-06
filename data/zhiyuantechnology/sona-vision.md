@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sona-vision es un modelo multimodal de ambito medico publicado por el usuario zhiyuantechnology en HuggingFace. Se trata de un ajuste fino (finetune) del modelo google/medgemma-1.5-4b-it, que a su vez deriva de la familia Gemma 3 de Google. El repositorio declara 4.300.079.472 parametros (aproximadamente 4,3 mil millones) y un tamano de 8,6 GB, coherente con pesos en precision de 16 bits. El acceso esta restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+sona-vision es un modelo multimodal de ambito medico publicado por el usuario zhiyuantechnology en Hugging Face. Se trata de un ajuste fino (finetune) del modelo google/medgemma-1.5-4b-it, que a su vez deriva de la familia Gemma 3 de Google. El repositorio declara 4.300.079.472 parametros (aproximadamente 4,3 mil millones) y un tamano de 8,6 GB, coherente con pesos en precision de 16 bits. El acceso esta restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de este modelo radica en su orientacion clinica: los tags incluyen `medical` y `gemma3`, y el modelo base es la variante medica de Google, disenada para tareas de imagen y texto en contextos sanitarios. Sin embargo, la ficha publicada no incluye descripcion, datos de entrenamiento ni resultados de evaluacion, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin trazabilidad tecnica verificable.
 
@@ -20,7 +20,7 @@ La licencia declarada es `health-ai-developer-foundations` (HAI-DEF), que no es 
 | Idiomas soportados | No disponible |
 | Licencia | health-ai-developer-foundations (HAI-DEF), etiquetada como `license:other` |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | google/medgemma-1.5-4b-it (finetune) |
 | Tamano del repositorio | 8,6 GB |
 
@@ -65,16 +65,16 @@ Los valores siguientes son estimaciones derivadas del numero de parametros (4,3 
 - Cabe en GPU de consumo: si, para los pesos en FP16 en tarjetas de 12 GB o mas, y con margen amplio si se cuantiza. Para modelos multimodales la cache de imagenes puede aumentar el consumo.
 - Opciones de despliegue: Transformers, vLLM y TGI (soportan la familia Gemma 3), ademas de llama.cpp u Ollama si se convierten los pesos a GGUF, conversion que no esta publicada en el repositorio.
 - Latencia y throughput: no disponibles.
-- Nota: el acceso es restringido, por lo que la descarga requiere aceptar la licencia en HuggingFace antes de cualquier prueba.
+- Nota: el acceso es restringido, por lo que la descarga requiere aceptar la licencia en Hugging Face antes de cualquier prueba.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | zhiyuantechnology/sona-vision | 4,3 B | No disponible | No confirmada (probable imagen+texto) | health-ai-developer-foundations | Gated, 0 descargas |
-| google/medgemma-1.5-4b-it (modelo base) | 4 B aprox. | Segun documentacion de Google, no incluida en la informacion proporcionada | Imagen+texto (segun documentacion publica de Google) | Terminos de Google para MedGemma | Publico en HuggingFace |
-| google/gemma-3-4b-it | 4 B aprox. | 128 000 tokens segun documentacion publica de Google | Imagen+texto | Gemma Terms of Use | Publico en HuggingFace |
-| Qwen2.5-VL-3B-Instruct | 3,75 B aprox. | No disponible en la informacion proporcionada | Imagen+texto | Apache 2.0 (segun su ficha publica) | Publico en HuggingFace |
+| google/medgemma-1.5-4b-it (modelo base) | 4 B aprox. | Segun documentacion de Google, no incluida en la informacion proporcionada | Imagen+texto (segun documentacion publica de Google) | Terminos de Google para MedGemma | Publico en Hugging Face |
+| google/gemma-3-4b-it | 4 B aprox. | 128 000 tokens segun documentacion publica de Google | Imagen+texto | Gemma Terms of Use | Publico en Hugging Face |
+| Qwen2.5-VL-3B-Instruct | 3,75 B aprox. | No disponible en la informacion proporcionada | Imagen+texto | Apache 2.0 (segun su ficha publica) | Publico en Hugging Face |
 
 Advertencia: los datos de los modelos comparativos proceden de su documentacion publica general y no de la informacion proporcionada en esta consulta; deben verificarse en sus respectivas fichas antes de tomar decisiones. No se dispone de resultados de benchmarks de sona-vision que permitan establecer una comparacion cuantitativa de rendimiento.
 
@@ -86,14 +86,14 @@ Advertencia: los datos de los modelos comparativos proceden de su documentacion 
 - Sesgos: no evaluados. La composicion del dataset de ajuste es desconocida, por lo que no puede descartarse sesgo demografico, de equipamiento o de practica clinica.
 - Idiomas: no declarados. No puede asumirse soporte multilingue mas alla de lo que herede del modelo base.
 - Licencia restrictiva: HAI-DEF no es una licencia de codigo abierto estandar. Impone condiciones especificas de uso, atribucion y limitaciones para aplicaciones clinicas. Es imprescindible revisar los terminos completos antes de cualquier uso comercial o en produccion.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y a la reproducibilidad.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y a la reproducibilidad.
 - Trazabilidad: con 0 descargas y 0 likes, el modelo no tiene uso comunitario documentado ni informes independientes de comportamiento.
 - Formatos: solo se distribuyen pesos en safetensors. No hay versiones cuantizadas oficiales, lo que limita el despliegue en hardware modesto sin trabajo adicional de conversion.
 - Fecha de publicacion: el repositorio figura como creado el 2026-10-14 y actualizado el mismo dia, sin historial posterior de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuantechnology/sona-vision
+- Modelo en Hugging Face: https://huggingface.co/zhiyuantechnology/sona-vision
 - Modelo base: https://huggingface.co/google/medgemma-1.5-4b-it
 - Modelo Gemma 3 4B IT (familia base): https://huggingface.co/google/gemma-3-4b-it
 - Documentacion de Google sobre Health AI Developer Foundations (licencia aplicable): https://developers.google.com/health-ai-developer-foundations

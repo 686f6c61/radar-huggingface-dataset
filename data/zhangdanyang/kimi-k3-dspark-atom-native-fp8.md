@@ -4,7 +4,7 @@
 
 El modelo `Zhangdanyang/Kimi-K3-DSpark-ATOM-Native-FP8` es una cuantización en FP8 del modelo draft `Inferact/Kimi-K3-DSpark`, desarrollado por el usuario Zhangdanyang. Este draft forma parte del ecosistema de decodificación especulativa de Kimi-K3, el modelo de Moonshot AI con aproximadamente 2,8 billones de parámetros. El draft está diseñado para acelerar la inferencia de Kimi-K3 en vLLM mediante el método nativo `dspark`, que entrena el modelo draft sobre las hidden states extraídas del propio motor de inferencia, garantizando que las numericas de entrenamiento coincidan con las de producción.
 
-Con 3.582.956.801 parámetros (~3,58B) y pesos en FP8, este modelo ocupa unos 5,2 GB en el repositorio y se distribuye en formato safetensors. Está pensado para ser cargado como un componente auxiliar dentro de vLLM, no como un modelo de generación autónomo. Su acceso es restringido (gated) en HuggingFace, por lo que requiere aceptar las condiciones del repositorio antes de su descarga. La licencia no está especificada en la ficha, aunque el modelo base `Inferact/Kimi-K3-DSpark` se distribuye bajo la licencia `kimi-k3` según su página en ModelScope.
+Con 3.582.956.801 parámetros (~3,58B) y pesos en FP8, este modelo ocupa unos 5,2 GB en el repositorio y se distribuye en formato safetensors. Está pensado para ser cargado como un componente auxiliar dentro de vLLM, no como un modelo de generación autónomo. Su acceso es restringido (gated) en Hugging Face, por lo que requiere aceptar las condiciones del repositorio antes de su descarga. La licencia no está especificada en la ficha, aunque el modelo base `Inferact/Kimi-K3-DSpark` se distribuye bajo la licencia `kimi-k3` según su página en ModelScope.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zhangdanyang/Kimi-K3-DSpark-ATOM-Native-FP8
-- Modelo base en HuggingFace: https://huggingface.co/Inferact/Kimi-K3-DSpark
+- Repositorio Hugging Face: https://huggingface.co/Zhangdanyang/Kimi-K3-DSpark-ATOM-Native-FP8
+- Modelo base en Hugging Face: https://huggingface.co/Inferact/Kimi-K3-DSpark
 - Variante FP8-PTPC del mismo autor: https://huggingface.co/Zhangdanyang/Kimi-K3-DSpark-FP8-PTPC
 - Modelo en ModelScope: https://www.modelscope.cn/models/skyai/Kimi-K3-DSpark
 - Repositorio GitHub sobre inferencia NPU de Kimi K3: https://github.com/zqc214/cann-infer-ds-dspark/tree/main/models/kimi_k3

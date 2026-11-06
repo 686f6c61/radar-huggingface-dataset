@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ealvarezfo/beit-generation es un repositorio experimental publicado en HuggingFace por el usuario Ealvarezfo bajo licencia MIT. Contiene una implementacion propia de una arquitectura de tipo BEiT orientada a generacion, con el objetivo declarado de servir como base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
+Ealvarezfo/beit-generation es un repositorio experimental publicado en Hugging Face por el usuario Ealvarezfo bajo licencia MIT. Contiene una implementacion propia de una arquitectura de tipo BEiT orientada a generacion, con el objetivo declarado de servir como base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato mas relevante es su tamano real: 24.832 parametros totales segun los pesos en safetensors, una cifra muy baja para cualquier modelo de generacion y en contradiccion con la etiqueta "xlarge" que aparece en la configuracion del autor. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes, y no declara pipeline, idiomas soportados ni resultados de benchmarks.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, no se proporciona ninguna cifra de tokens, composici
 - Pruebas de humo en CI/CD: el checkpoint de inicializacion (24.832 parametros, menos de 100 KB en fp32) permite verificar que un pipeline de carga de safetensors, tokenizacion o preprocesado funciona sin consumir recursos, actuando como fixture ligero en tests automatizados.
 - Plantilla para experimentos de arquitectura: `config.json` y `run.py` sirven como punto de partida para probar variantes de atencion multi-query, fusion concat MLP o normalizacion instancenorm antes de escalar a un modelo de mayor tamano.
 - Reproduccion de recetas de optimizacion: el repositorio incluye una receta con novograd y scheduler polinomial, util para comparar curvas de convergencia contra otros optimizadores bajo el mismo presupuesto de datos y semillas.
-- Material docente: sirve para explicar la estructura de un repositorio de modelo en HuggingFace (pesos, configuracion, argumentos de entrenamiento, script de entrada) sin la complejidad de un modelo grande.
+- Material docente: sirve para explicar la estructura de un repositorio de modelo en Hugging Face (pesos, configuracion, argumentos de entrenamiento, script de entrada) sin la complejidad de un modelo grande.
 - Desarrollo de arneses de evaluacion: permite construir y depurar el codigo que calcula metricas, gestiona semillas y compara contra lineas base antes de aplicarlo a modelos reales.
 - Punto de partida para un entrenamiento propio: un equipo que quiera entrenar un BEiT de generacion desde cero puede reutilizar el esqueleto de codigo y sustituir el checkpoint de inicializacion por pesos preentrenados.
 - Auditoria de repositorios: util como caso de estudio de model cards que declaran explicitamente que no hay resultados, frente a fichas que publican metricas sin trazabilidad.
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye especificaciones de model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| Ealvarezfo/beit-generation | 24.832 | no disponible | MIT | HuggingFace | Solo ficha y archivos del repo |
+| Ealvarezfo/beit-generation | 24.832 | no disponible | MIT | Hugging Face | Solo ficha y archivos del repo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. La informacion proporcionada no incluye especificaciones de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ealvarezfo/beit-generation
+- Modelo en Hugging Face: https://huggingface.co/Ealvarezfo/beit-generation
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a la pelicula "Joker: Folie a Deux" y no guardan relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo adicional ni demo asociados.

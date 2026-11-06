@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo, sino un paquete de kernels y ma
 |---|---|---|---|---|---|
 | kern + este manifiesto (4 x GB300) | no disponible | 32k en la configuracion de referencia | numerica y aceptacion especulativa sin certificar | per-artifact, con componentes MIT | preview, 0 descargas |
 | vLLM (citado como referencia semantica en el PR #56201) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Checkpoint original `deepseek-ai/DeepSeek-V4.1-Flash` | no disponible | no disponible | no disponible | no disponible | pesos publicados en HuggingFace |
+| Checkpoint original `deepseek-ai/DeepSeek-V4.1-Flash` | no disponible | no disponible | no disponible | no disponible | pesos publicados en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. Este repositorio no es un modelo, sino un paquete de kernels y ma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pegainfer/kern-deepseek-v41-flash-sm103
+- Repositorio en Hugging Face: https://huggingface.co/Pegainfer/kern-deepseek-v41-flash-sm103
 - Licencia del repositorio (`per-artifact`): https://huggingface.co/Pegainfer/kern-deepseek-v41-flash-sm103/blob/main/README.md
 - Checkpoint de pesos y tokenizer (no alojados en este repositorio): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Runtime kern: https://github.com/pegainfer-project/kern

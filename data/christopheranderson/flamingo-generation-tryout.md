@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopheranderson/flamingo-generation-tryout` es un prototipo de investigación de arquitectura Flamingo orientado a tareas de generación, publicado por el usuario christopheranderson en HuggingFace. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación que incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests), una configuración de arquitectura y una receta de entrenamiento por defecto. El autor lo declara explícitamente como punto de partida experimental, sin resultados de benchmarks ni métricas de rendimiento asociadas.
+`christopheranderson/flamingo-generation-tryout` es un prototipo de investigación de arquitectura Flamingo orientado a tareas de generación, publicado por el usuario christopheranderson en Hugging Face. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación que incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests), una configuración de arquitectura y una receta de entrenamiento por defecto. El autor lo declara explícitamente como punto de partida experimental, sin resultados de benchmarks ni métricas de rendimiento asociadas.
 
 La arquitectura sigue el patrón Flamingo: atención con grouped query attention (GQA) y fusión multimodal mediante cross attention, con activación GELU y normalización LayerNorm. El checkpoint de safetensors contiene 16.576 parámetros totales, un tamaño propio de una inicialización de juguete más que de un modelo funcional. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -75,5 +75,5 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christopheranderson/flamingo-generation-tryout
+- Hugging Face: https://huggingface.co/christopheranderson/flamingo-generation-tryout
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

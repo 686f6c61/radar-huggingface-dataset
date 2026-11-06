@@ -108,7 +108,7 @@ No se dispone de información sobre otros reconocedores fonéticos específicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notmax123/xeus-yi-ear
+- Modelo en Hugging Face: https://huggingface.co/notmax123/xeus-yi-ear
 - Modelo base PhoneticXeus: https://huggingface.co/changelinglab/PhoneticXeus
 - Demo (Space) Yiddish Ear: https://huggingface.co/spaces/notmax123/xeus-yi-ear
 - Repositorio del motor phonikud-yi: https://github.com/maxmelichov/Phonikud-yi

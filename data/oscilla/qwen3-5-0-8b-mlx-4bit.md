@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La elec
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-4Bit)
+- [Modelo en Hugging Face](https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-4Bit)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Versión comunitaria mlx-community/Qwen3.5-0.8B-MLX-4bit](https://huggingface.co/mlx-community/Qwen3.5-0.8B-MLX-4bit)
 - [Versión OptiQ mlx-community/Qwen3.5-0.8B-OptiQ-4bit](https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit)

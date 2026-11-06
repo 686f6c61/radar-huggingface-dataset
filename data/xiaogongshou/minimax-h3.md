@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-No se dispone de informacion oficial sobre los requisitos de hardware para la inferencia. El repositorio de HuggingFace tiene un tamano de 353.9 GB en pesos safetensors, lo que sugiere que el modelo requiere un sistema con multiples GPUs de alta capacidad y un espacio de almacenamiento considerable. No se han publicado estimaciones de VRAM, GPUs recomendadas, latencia o throughput. Tampoco se documentan opciones de despliegue especificas como vLLM, llama.cpp u otros frameworks; el modelo se distribuye con la libreria "minimax-h3" y el pipeline de diffusers.
+No se dispone de informacion oficial sobre los requisitos de hardware para la inferencia. El repositorio de Hugging Face tiene un tamano de 353.9 GB en pesos safetensors, lo que sugiere que el modelo requiere un sistema con multiples GPUs de alta capacidad y un espacio de almacenamiento considerable. No se han publicado estimaciones de VRAM, GPUs recomendadas, latencia o throughput. Tampoco se documentan opciones de despliegue especificas como vLLM, llama.cpp u otros frameworks; el modelo se distribuye con la libreria "minimax-h3" y el pipeline de diffusers.
 
 ## Comparativa con modelos similares
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 | Generacion de video y audio omni-modal | No disponible | No disponible | minimax-h3-community-license-agreement | HuggingFace, API, WebApp |
+| MiniMax H3 | Generacion de video y audio omni-modal | No disponible | No disponible | minimax-h3-community-license-agreement | Hugging Face, API, WebApp |
 | Seedance 2.5 | Generacion de video | No disponible | No disponible | No disponible | No disponible |
 | Wan 2.1 | Generacion de video | No disponible | No disponible | No disponible | No disponible |
 | Kling AI | Generacion de video | No disponible | No disponible | No disponible | No disponible |
@@ -85,8 +85,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- HuggingFace (oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
-- HuggingFace (mirror): https://huggingface.co/xiaogongshou/MiniMax-H3
+- Hugging Face (oficial): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Hugging Face (mirror): https://huggingface.co/xiaogongshou/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - GitHub con comparativas y workflows: https://github.com/ai-models-lab/minimax-h3
 - Web oficial: https://www.minimax.io

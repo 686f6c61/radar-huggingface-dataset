@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert
+- Modelo en Hugging Face: https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-litert
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Revision exacta del codigo fuente base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/1c8deaecc64b91f034d73e08dd8b64625eb3395d
 - Pagina oficial de la licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

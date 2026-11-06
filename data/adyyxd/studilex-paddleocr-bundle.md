@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/AdyyxD/studilex-paddleocr-bundle)
+- [Hugging Face del modelo](https://huggingface.co/AdyyxD/studilex-paddleocr-bundle)
 - [Repositorio oficial de PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 - [Documentación de PaddleOCR](https://www.paddleocr.ai/main/en/index.html)
 - [Lista de modelos de PaddleOCR](https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html)

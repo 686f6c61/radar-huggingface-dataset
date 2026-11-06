@@ -4,7 +4,7 @@
 
 El repositorio rahul7star/deepseek-harness-plugin no contiene un modelo de inteligencia artificial, sino un manifiesto de paquete npm correspondiente a un perfil de entorno de desarrollo denominado dsh-profile-web. El único artefacto publicado en la model card es un fichero package.json que declara dependencias y bundles de JavaScript, entre ellos paquetes con ámbito @deepseek-ai (dsh-base y dsh-web-app), junto con utilidades de interfaz, selección de skills y marca. No hay pesos, tokenizador, configuración de arquitectura ni tarjetas de datos asociadas.
 
-Por tanto, no es posible evaluarlo como modelo generativo: no dispone de parámetros, longitud de contexto, idiomas soportados ni licencia declarada en la información proporcionada. El repositorio acumula cero descargas y cero likes, y fue creado el 25 de septiembre de 2026 con última actualización el 27 de septiembre de 2026, según los metadatos de HuggingFace. La única etiqueta declarada es region:us.
+Por tanto, no es posible evaluarlo como modelo generativo: no dispone de parámetros, longitud de contexto, idiomas soportados ni licencia declarada en la información proporcionada. El repositorio acumula cero descargas y cero likes, y fue creado el 25 de septiembre de 2026 con última actualización el 27 de septiembre de 2026, según los metadatos de Hugging Face. La única etiqueta declarada es region:us.
 
 Su relevancia potencial es exclusivamente de ingeniería de software: describe cómo se compone un perfil web sobre un harness de DeepSeek, es decir, la capa de empaquetado y bundles que un cliente ejecutaría en Node.js. Cualquier afirmación sobre capacidades cognitivas, rendimiento o despliegue en GPU sería una extrapolación no respaldada por los datos disponibles.
 
@@ -98,7 +98,7 @@ No disponible. No es un modelo de lenguaje, por lo que no existe una categoría 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahul7star/deepseek-harness-plugin
+- Repositorio en Hugging Face: https://huggingface.co/rahul7star/deepseek-harness-plugin
 - Documentación o paper: no disponible
 - Repositorio de código: no disponible
 - Demos: no disponible

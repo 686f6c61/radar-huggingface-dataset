@@ -84,7 +84,7 @@ La comparativa con otros modelos de código como DeepSeek-Coder o CodeLlama no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HCHs/RivetCoder-9B-A4B
+- Repositorio Hugging Face: https://huggingface.co/HCHs/RivetCoder-9B-A4B
 - Modelo base host: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo donante de expertos: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`

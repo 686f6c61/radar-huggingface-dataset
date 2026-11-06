@@ -82,7 +82,7 @@ La versión de 480B ofrece mayor capacidad pero requiere hardware mucho más pot
 
 ## Enlaces
 
-- [HuggingFace - Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
+- [Hugging Face - Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
 - [GitHub - QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)
 - [Blog oficial de Qwen sobre Qwen3-Coder](https://qwenlm.github.io/blog/qwen3-coder/)
 - [Documentación de Qwen](https://qwen.readthedocs.io/en/latest/)

@@ -6,7 +6,7 @@ Granite 4.2 es la nueva familia de modelos de lenguaje de IBM, diseñada especí
 
 La relevancia de esta versión GGUF radica en su despliegue local: permite ejecutar un modelo de razonamiento de 8B en hardware de consumo, con múltiples cuantizaciones disponibles para ajustar el equilibrio entre precisión y uso de memoria. Al estar licenciado bajo Apache 2.0, es totalmente libre para uso comercial, lo que lo convierte en una opción atractiva para equipos que necesitan un modelo de razonamiento open source sin restricciones.
 
-El repositorio GGUF contiene distintas cuantizaciones del modelo base, con un tamaño total de 193,4 GB en el repositorio (sumando todas las variantes). El modelo base está disponible en HuggingFace bajo el identificador `ibm-granite/granite-4.2-8b`.
+El repositorio GGUF contiene distintas cuantizaciones del modelo base, con un tamaño total de 193,4 GB en el repositorio (sumando todas las variantes). El modelo base está disponible en Hugging Face bajo el identificador `ibm-granite/granite-4.2-8b`.
 
 ## Especificaciones técnicas
 
@@ -48,7 +48,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos concretos de MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo. Se recomienda consultar la documentación oficial de IBM Granite 4.2 o el modelo base en HuggingFace para obtener resultados de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos concretos de MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo. Se recomienda consultar la documentación oficial de IBM Granite 4.2 o el modelo base en Hugging Face para obtener resultados de evaluación.
 
 ## Requisitos de hardware
 

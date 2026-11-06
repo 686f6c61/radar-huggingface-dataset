@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chantzlane90/prya_kk-krea2-v3-lora` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en HuggingFace. No se trata de un modelo de lenguaje: es un ajuste fino ligero orientado a sintetizar un personaje ficticio concreto, identificado en la model card como "Priya, 21+", con la cadena de activacion `prya_kk woman`. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador LoRA y no con un modelo completo.
+`chantzlane90/prya_kk-krea2-v3-lora` es un adaptador LoRA (Low-Rank Adaptation) para el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en Hugging Face. No se trata de un modelo de lenguaje: es un ajuste fino ligero orientado a sintetizar un personaje ficticio concreto, identificado en la model card como "Priya, 21+", con la cadena de activacion `prya_kk woman`. El repositorio ocupa 0,2 GB, un tamano coherente con pesos de adaptador LoRA y no con un modelo completo.
 
 El adaptador se entreno con la herramienta `fal-ai/krea-2-trainer` durante 1500 pasos, y sus claves se remapearon al esquema `diffusion_model.*` que emplea ComfyUI, con el objetivo declarado de poder usarlo en Sogni. Esta es, practicamente, toda la informacion tecnica disponible: la model card es minimalista y no incluye dataset, hiperparametros completos, resultados de evaluacion ni detalles de licencia mas alla de la etiqueta `other`.
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no identifica otros LoRA de personaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/prya_kk-krea2-v3-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/prya_kk-krea2-v3-lora
 - Herramienta de entrenamiento referenciada en la model card: https://huggingface.co/fal-ai/krea-2-trainer
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, Krea 2 o LoRA de personajes; los enlaces obtenidos correspondian a contenidos sin relacion (analisis clinicos) y se han descartado.

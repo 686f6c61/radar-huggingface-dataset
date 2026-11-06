@@ -33,7 +33,7 @@ Su interes practico reside en servir como banco de pruebas de bajo coste para pi
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 8 capas con d_model de 512 y 8 cabezas de atencion, de las cuales solo 2 son cabezas KV gracias al uso de grouped-query attention, una eleccion que reduce el coste de memoria del cache KV en inferencia. Usa RMSNorm en configuracion pre-norm, codificacion posicional rotatoria (RoPE), capa feed-forward de 1.408 dimensiones con activacion SwiGLU y embeddings de entrada y salida atados. Los nombres de los parametros replican la convencion de Llama de HuggingFace, de modo que los pesos pueden cargarse en un `LlamaForCausalLM` con la forma correspondiente. El tokenizador es un BPE byte-level de 8.192 tokens construido especificamente para el corpus, que comprime TinyStories V2 a 3,965 bytes por token y codifica el 98,1 % de las palabras en un unico token.
+El modelo es un transformer decoder-only de 8 capas con d_model de 512 y 8 cabezas de atencion, de las cuales solo 2 son cabezas KV gracias al uso de grouped-query attention, una eleccion que reduce el coste de memoria del cache KV en inferencia. Usa RMSNorm en configuracion pre-norm, codificacion posicional rotatoria (RoPE), capa feed-forward de 1.408 dimensiones con activacion SwiGLU y embeddings de entrada y salida atados. Los nombres de los parametros replican la convencion de Llama de Hugging Face, de modo que los pesos pueden cargarse en un `LlamaForCausalLM` con la forma correspondiente. El tokenizador es un BPE byte-level de 8.192 tokens construido especificamente para el corpus, que comprime TinyStories V2 a 3,965 bytes por token y codifica el 98,1 % de las palabras en un unico token.
 
 El entrenamiento se realizo integramente desde cero sobre TinyStories V2 (corpus generado con GPT-4), con 536.174.127 tokens procesados, un volumen elegido para situarse en la ratio Chinchilla-optima de aproximadamente 20 tokens por parametro. Se ejecuto en una unica RTX 3050 de portatil con 4 GB de VRAM durante 3,27 horas. No se aplico ajuste por instrucciones, alineamiento ni filtrado de seguridad de ningun tipo. Los resultados declarados son una perdida de validacion de 1,1485 nats/token y una perplejidad de 3,153.
 
@@ -90,10 +90,10 @@ Los datos de los modelos alternativos que figuran a continuacion no proceden de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nanoserve 27M | 26.747.392 | 1.024 | MIT | HuggingFace (safetensors) | Transformer propio estilo Llama, entrenado desde cero sobre TinyStories V2 |
-| TinyStories-33M (Eldan y Li) | ~33 M | no verificado en esta busqueda | no verificado | HuggingFace | Modelo de referencia del corpus TinyStories, categoria equivalente |
-| TinyStories-28M (familia TinyStories) | ~28 M | no verificado | no verificado | HuggingFace | Variante de menor tamano de la misma familia de datos |
-| GPT-2 small | 124 M | 1.024 | no verificado | HuggingFace | Referencia de escala superior; proposito general y no comparable en dominio |
+| Nanoserve 27M | 26.747.392 | 1.024 | MIT | Hugging Face (safetensors) | Transformer propio estilo Llama, entrenado desde cero sobre TinyStories V2 |
+| TinyStories-33M (Eldan y Li) | ~33 M | no verificado en esta busqueda | no verificado | Hugging Face | Modelo de referencia del corpus TinyStories, categoria equivalente |
+| TinyStories-28M (familia TinyStories) | ~28 M | no verificado | no verificado | Hugging Face | Variante de menor tamano de la misma familia de datos |
+| GPT-2 small | 124 M | 1.024 | no verificado | Hugging Face | Referencia de escala superior; proposito general y no comparable en dominio |
 
 La diferencia principal de Nanoserve 27M frente a las alternativas de la familia TinyStories es que su arquitectura, tokenizador (BPE propio de 8.192 tokens) y bucle de entrenamiento estan implementados a mano, sin depender de las librerias estandar, y que los pesos siguen la nomenclatura de Llama. El autor no publica comparaciones de rendimiento frente a estos modelos.
 
@@ -111,7 +111,7 @@ La diferencia principal de Nanoserve 27M frente a las alternativas de la familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayushhh1010/nanoserve-27m
+- Modelo en Hugging Face: https://huggingface.co/ayushhh1010/nanoserve-27m
 - Repositorio del proyecto Nanoserve: https://github.com/ayushhh1010/nanoserve
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories
 - Referencia externa del corpus (no incluida en la informacion proporcionada): paper "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?", arXiv:2305.07759

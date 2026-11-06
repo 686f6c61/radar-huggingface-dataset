@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nd-rl autoresearch 034_muon-lr-half es un artefacto de investigacion publicado en HuggingFace por el usuario robbiethompson2018. No es un modelo de proposito general: se trata de un experimento de "autoresearch" centrado en el estudio de optimizadores durante el preentrenamiento y el posterior ajuste por aprendizaje por refuerzo (RL). El modelo resultante tiene apenas 3,21 millones de parametros, lo que lo situa en la categoria de modelos de juguete orientados a reproducir experimentos controlados mas que a tareas de produccion.
+nd-rl autoresearch 034_muon-lr-half es un artefacto de investigacion publicado en Hugging Face por el usuario robbiethompson2018. No es un modelo de proposito general: se trata de un experimento de "autoresearch" centrado en el estudio de optimizadores durante el preentrenamiento y el posterior ajuste por aprendizaje por refuerzo (RL). El modelo resultante tiene apenas 3,21 millones de parametros, lo que lo situa en la categoria de modelos de juguete orientados a reproducir experimentos controlados mas que a tareas de produccion.
 
 La aportacion principal del artefacto es metodologica. Segun la model card, se entrena con el optimizador Muon aplicado a las matrices ocultas (con Q/K/V separadas, learning rate reducido a la mitad y momentum 0.95) y se remata con AdamW durante el 20 % final de un presupuesto de preentrenamiento de 300 segundos. Sobre esa base se aplican 4 rondas fijas de RL, y se reporta una mejora en una tarea interna denominada "dev-transfer theorems".
 
@@ -73,7 +73,7 @@ No se dispone de modelos comparables publicos en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Metrica interna (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nd-rl autoresearch 034_muon-lr-half | 3,21 M | no disponible | 237 | no disponible | HuggingFace |
+| nd-rl autoresearch 034_muon-lr-half | 3,21 M | no disponible | 237 | no disponible | Hugging Face |
 | Linea base AdamW 012 | no disponible | no disponible | 148 | no disponible | no disponible |
 | Modelos comparables de proposito general | no disponible | no disponible | no aplica | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ No se dispone de modelos comparables publicos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robbiethompson2018/nd-rl-autoresearch-034-muon
+- Modelo en Hugging Face: https://huggingface.co/robbiethompson2018/nd-rl-autoresearch-034-muon
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

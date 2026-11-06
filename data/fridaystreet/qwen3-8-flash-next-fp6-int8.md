@@ -17,7 +17,7 @@ El repositorio es reciente (creado el 2026-10-02) y no registra descargas ni lik
 | Longitud de contexto | 262.144 tokens por peticion; pool de KV de 425.024 tokens repartidos en 3 slots con `mem-fraction-static 0.93` |
 | Tipos de cuantizacion | Expertos enrutados y MTP: fp6 e2m3, grupo 64, escalas fp16, planos hi4/lo2. Embeddings, `lm_head`, `GDN out_proj`, `QSA q/k/v/o` y expertos compartidos: int8 simetrico, grupo 32, escalas fp16. Resto: bf16. Tabla n-gram: fp8 e4m3 como sidecar en RAM del host. Cache KV, activaciones y estado recurrente sin cuantizar |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (shards de 97,63 GiB en disco) mas sidecar fp8 para la tabla n-gram; tamano total del repositorio 156,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -84,9 +84,9 @@ El autor situa el techo de prefill en ~2.000 tok/s a TP=2 sobre PCIe gen2 x4 y e
 
 | Modelo | Cuantizacion | Shards en disco | Pool de KV (2×64 GB) | Decodificacion, 1 flujo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fridaystreet/Qwen3.8-Flash-Next-FP6-INT8 (esta ficha) | fp6 expertos + int8 denso + bf16 resto | 97,63 GiB | 425.024 tokens | 61 tok/s (63 maximo) | qwen-community-license-1.0 | HuggingFace, 0 descargas al publicarse |
-| fridaystreet FP6 (v1, mismo autor) | fp6 expertos + bf16 resto | 99,97 GiB | 292.288 tokens | 54-56 tok/s | qwen-community-license-1.0 (segun la build base) | HuggingFace, disponible segun el autor |
-| Qwen/Qwen3.8-Flash-Next-FP8 (modelo base oficial) | fp8 de grano fino, bloque 128 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| fridaystreet/Qwen3.8-Flash-Next-FP6-INT8 (esta ficha) | fp6 expertos + int8 denso + bf16 resto | 97,63 GiB | 425.024 tokens | 61 tok/s (63 maximo) | qwen-community-license-1.0 | Hugging Face, 0 descargas al publicarse |
+| fridaystreet FP6 (v1, mismo autor) | fp6 expertos + bf16 resto | 99,97 GiB | 292.288 tokens | 54-56 tok/s | qwen-community-license-1.0 (segun la build base) | Hugging Face, disponible segun el autor |
+| Qwen/Qwen3.8-Flash-Next-FP8 (modelo base oficial) | fp8 de grano fino, bloque 128 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos sobre modelos comparables de otros fabricantes con el mismo tamano, contexto o perfil de hardware, por lo que la comparativa se limita a las tres variantes anteriores. No hay cifras de calidad (razonamiento, codigo, matematicas) para ninguna de ellas en la informacion consultada.
 
@@ -108,7 +108,7 @@ No se dispone de datos sobre modelos comparables de otros fabricantes con el mis
 - El repositorio no incluye una receta de entrenamiento ni pesos base en bf16: derivar otras cuantizaciones desde este checkpoint no permitiria recuperar la precision del FP8 oficial.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/fridaystreet/Qwen3.8-Flash-Next-FP6-INT8
+- Repositorio en Hugging Face: https://huggingface.co/fridaystreet/Qwen3.8-Flash-Next-FP6-INT8
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Ficheros adicionales citados en la model card, dentro del propio repositorio: `LICENSE`, `STABILITY.md`, `w8_manifest.json`, `tools/int8_encode.py`, directorio `patches/` y directorio `tools/` con los arneses de medida
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su autor, el paper de la arquitectura `qwen4_exp` ni la licencia `qwen-community-license-1.0`; todos los resultados obtenidos fueron ajenos al modelo.

@@ -85,9 +85,9 @@ La evaluacion se realizo sobre las 1.987 preguntas de opcion multiple del benchm
 
 | Modelo | Parametros | Contexto | WMDP-Cyber | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberRott-1.3 | 3,82 B | No disponible | 39,81 % (declarado) | MIT | HuggingFace (safetensors + GGUF) |
-| microsoft/Phi-4-mini-instruct | 3,82 B | No disponible en la informacion | 32,16 % (declarado como base) | MIT | HuggingFace |
-| CyberRott v1.2 | 3,82 B | No disponible | 38,85 % (declarado) | MIT | HuggingFace (version anterior) |
+| CyberRott-1.3 | 3,82 B | No disponible | 39,81 % (declarado) | MIT | Hugging Face (safetensors + GGUF) |
+| microsoft/Phi-4-mini-instruct | 3,82 B | No disponible en la informacion | 32,16 % (declarado como base) | MIT | Hugging Face |
+| CyberRott v1.2 | 3,82 B | No disponible | 38,85 % (declarado) | MIT | Hugging Face (version anterior) |
 
 No se dispone de datos de otros modelos especializados en ciberseguridad de tamano comparable en la informacion proporcionada para ampliar la comparativa.
 
@@ -105,7 +105,7 @@ No se dispone de datos de otros modelos especializados en ciberseguridad de tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnknevescarrijo/CyberRott-1.3
+- Hugging Face: https://huggingface.co/johnknevescarrijo/CyberRott-1.3
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Benchmark WMDP: https://huggingface.co/datasets/cais/wmdp
 - Framework TRL: https://github.com/huggingface/trl

@@ -99,7 +99,7 @@ No se dispone de datos de otros sistemas de diarización (por ejemplo pyannote u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aidsoid/nemotron-3-diarization-coreml
+- Hugging Face: https://huggingface.co/aidsoid/nemotron-3-diarization-coreml
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Librería FluidAudio: https://github.com/FluidInference/FluidAudio
 - Referencias de alineación forzada usadas en la evaluación: https://github.com/nttcslab-sp/diar-forced-alignment

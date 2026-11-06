@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Perfil del cuantizador (Solstice-AI): https://huggingface.co/Solstice-AI
 - Perfil del autor del merge (DavidAU): https://huggingface.co/DavidAU

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jev-Multilingual es un modelo de clasificación de texto para urdu derivado mediante fine-tuning de jhu-clsp/mmBERT-base, publicado por el usuario shakeel143 en HuggingFace. El repositorio se distribuye a través de la librería Python `jev-urdu` de LughaatNLP, cuyo objetivo es resolver un problema muy concreto: el texto en urdu que llega a aplicaciones reales rara vez aparece en una sola forma. Un usuario puede escribir en escritura urdu, continuar en roman urdu y mezclar nombres de producto en inglés, y la aplicación necesita igualmente tomar una decisión estructurada (clasificar el problema, detectar sentimiento o comprobar si una afirmación está respaldada por un contexto).
+Jev-Multilingual es un modelo de clasificación de texto para urdu derivado mediante fine-tuning de jhu-clsp/mmBERT-base, publicado por el usuario shakeel143 en Hugging Face. El repositorio se distribuye a través de la librería Python `jev-urdu` de LughaatNLP, cuyo objetivo es resolver un problema muy concreto: el texto en urdu que llega a aplicaciones reales rara vez aparece en una sola forma. Un usuario puede escribir en escritura urdu, continuar en roman urdu y mezclar nombres de producto en inglés, y la aplicación necesita igualmente tomar una decisión estructurada (clasificar el problema, detectar sentimiento o comprobar si una afirmación está respaldada por un contexto).
 
 El modelo es un encoder de aproximadamente 321,9 millones de parámetros, con pesos en formato safetensors y licencia Apache-2.0, por lo que su uso comercial está permitido sin restricciones adicionales. Su salida no es texto generado, sino decisiones tipadas con probabilidades asociadas (por ejemplo, sentimiento y probabilidad de P(sí)), lo que lo orienta a tareas de enrutado, triaje y verificación dentro de pipelines de aplicación.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Multilingual (este modelo) | 321,9 M | no disponible | Clasificacion de texto en urdu / roman urdu con decisiones tipadas | apache-2.0 | HuggingFace (repositorio `shakeel143/jev-multilingual`) |
-| jhu-clsp/mmBERT-base (modelo base) | no disponible en la informacion proporcionada | no disponible | Encoder multilingue base (requiere ajuste para tareas) | no disponible en la informacion proporcionada | HuggingFace (`jhu-clsp/mmBERT-base`) |
-| jev-urdu (muhammadnoman76) | no disponible en la informacion proporcionada | no disponible | Clasificacion de texto en urdu con la misma interfaz de libreria | apache-2.0 (segun la model card citada) | HuggingFace (`muhammadnoman76/jev-urdu`) |
+| Jev-Multilingual (este modelo) | 321,9 M | no disponible | Clasificacion de texto en urdu / roman urdu con decisiones tipadas | apache-2.0 | Hugging Face (repositorio `shakeel143/jev-multilingual`) |
+| jhu-clsp/mmBERT-base (modelo base) | no disponible en la informacion proporcionada | no disponible | Encoder multilingue base (requiere ajuste para tareas) | no disponible en la informacion proporcionada | Hugging Face (`jhu-clsp/mmBERT-base`) |
+| jev-urdu (muhammadnoman76) | no disponible en la informacion proporcionada | no disponible | Clasificacion de texto en urdu con la misma interfaz de libreria | apache-2.0 (segun la model card citada) | Hugging Face (`muhammadnoman76/jev-urdu`) |
 
 Alternativas genéricas de clasificación multilingüe (por ejemplo, XLM-RoBERTa o mBERT) no se han incluido con cifras porque no se dispone de datos verificables en la información proporcionada para establecer una comparación numérica.
 
@@ -89,7 +89,7 @@ Alternativas genéricas de clasificación multilingüe (por ejemplo, XLM-RoBERTa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shakeel143/jev-multilingual
+- Modelo en Hugging Face: https://huggingface.co/shakeel143/jev-multilingual
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Modelo y código fuente de referencia (jev-urdu): https://huggingface.co/muhammadnoman76/jev-urdu
 - Librería en PyPI: https://pypi.org/project/jev-urdu/

@@ -78,7 +78,7 @@ El modelo se diferencia de sus alternativas por su enfoque en integración de si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-omni-4b
+- Modelo en Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-omni-4b
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-omni-sft
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Supercomputador LUMI: https://www.lumi-supercomputer.eu/

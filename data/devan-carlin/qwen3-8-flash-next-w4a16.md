@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 125B + 51B PLE | 262K | Qwen Community 1.0 | HuggingFace, pesos BF16 |
-| Qwen3.8-Flash-Next-W4A16 (esta cuantizacion) | 128.8B (sin PLE) | 262K | Qwen Community 1.0 | HuggingFace, safetensors W4A16 |
-| Qwen3-235B-A22B (MoE similar) | 235B total, 22B activos | 131K | Qwen Community 1.0 | HuggingFace, pesos BF16 |
+| Qwen3.8-Flash-Next (base) | 125B + 51B PLE | 262K | Qwen Community 1.0 | Hugging Face, pesos BF16 |
+| Qwen3.8-Flash-Next-W4A16 (esta cuantizacion) | 128.8B (sin PLE) | 262K | Qwen Community 1.0 | Hugging Face, safetensors W4A16 |
+| Qwen3-235B-A22B (MoE similar) | 235B total, 22B activos | 131K | Qwen Community 1.0 | Hugging Face, pesos BF16 |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos. La cuantizacion W4A16 reduce el peso de 125B a ~77 GB, permitiendo su ejecucion en 128 GB VRAM, mientras que el base BF16 requeriria mas de 250 GB. La tabla PLE anade 96 GB de RAM adicional en ambos casos.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. La cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/devan-carlin/Qwen3.8-Flash-Next-W4A16
+- Repositorio Hugging Face: https://huggingface.co/devan-carlin/Qwen3.8-Flash-Next-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

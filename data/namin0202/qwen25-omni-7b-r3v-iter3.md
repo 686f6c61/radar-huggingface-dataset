@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Para despliegue en produccion con baja latencia se recomienda una GPU profesional: A100 (40/80 GB) o H100 (80 GB).
 - Con cuantizacion a 8 bits o 4 bits (GPTQ/AWQ), el modelo puede caber en GPUs de 12 GB como RTX 3060 o RTX 4070, aunque con perdida de calidad.
 - Opciones de despliegue: vLLM, llama.cpp, Ollama, Transformers con PEFT, TGI.
-- El adaptador se integra mediante la libreria PEFT de HuggingFace; requiere cargar el modelo base y luego el adaptador con `PeftModel.from_pretrained`.
+- El adaptador se integra mediante la libreria PEFT de Hugging Face; requiere cargar el modelo base y luego el adaptador con `PeftModel.from_pretrained`.
 - Latencia y throughput: no disponibles para el adaptador; el modelo base genera aproximadamente 20-40 tokens/s en una A100.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No hay modelos comparables directos, ya que no se dispone de informacion sobre e
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/namin0202/qwen25-omni-7b-r3v-iter3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio oficial de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni
 - Informe tecnico (arXiv): https://arxiv.org/abs/2503.20215
 - Cookbooks oficiales: https://github.com/QwenLM/Qwen2.5-Omni/tree/main/cookbooks

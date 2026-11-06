@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPTTrace v8s 1B es un clasificador binario de texto que distingue escritura humana de texto generado por máquina. Lo desarrolla el usuario nakas y se publica en HuggingFace bajo el identificador `nakas/gpttrace-v8s-1b`. Resuelve un problema concreto: la detección de texto generado por IA en un ecosistema donde los "humanizadores" comerciales y los modelos de 2026 (GPT-6.x, Claude Opus 5.5, Gemini 3, Qwen3) degradan con rapidez los detectores entrenados con corpus anteriores. El modelo se presenta como sustituto de `nakas/gpttrace-v5-1b`, que según la model card ocupaba la segunda posición en RAID.
+GPTTrace v8s 1B es un clasificador binario de texto que distingue escritura humana de texto generado por máquina. Lo desarrolla el usuario nakas y se publica en Hugging Face bajo el identificador `nakas/gpttrace-v8s-1b`. Resuelve un problema concreto: la detección de texto generado por IA en un ecosistema donde los "humanizadores" comerciales y los modelos de 2026 (GPT-6.x, Claude Opus 5.5, Gemini 3, Qwen3) degradan con rapidez los detectores entrenados con corpus anteriores. El modelo se presenta como sustituto de `nakas/gpttrace-v5-1b`, que según la model card ocupaba la segunda posición en RAID.
 
 La arquitectura es un encoder transformer de 1B parámetros construido sobre `jhu-clsp/ettin-encoder-1b` (licencia MIT). El modelo no genera texto: emite dos logits, `[human, machine]`, y la puntuación de máquina se obtiene con `softmax[...,1]`. La ventana de contexto efectiva para inferencia es de 512 tokens, según el ejemplo de uso de la model card.
 
@@ -83,8 +83,8 @@ La model card indica que las predicciones para el conjunto de test oficial de RA
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPTTrace v8s 1B (`nakas/gpttrace-v8s-1b`) | 1B | 512 tokens | Detección humano/IA con foco en humanizadores y modelos de 2026 | CC BY-SA 4.0 | HuggingFace, ONNX, demo web |
-| GPTTrace v5 1B (`nakas/gpttrace-v5-1b`) | 1B | No disponible | Detección humano/IA, predecesor directo; #2 en RAID según la model card | No disponible en la información | HuggingFace |
+| GPTTrace v8s 1B (`nakas/gpttrace-v8s-1b`) | 1B | 512 tokens | Detección humano/IA con foco en humanizadores y modelos de 2026 | CC BY-SA 4.0 | Hugging Face, ONNX, demo web |
+| GPTTrace v5 1B (`nakas/gpttrace-v5-1b`) | 1B | No disponible | Detección humano/IA, predecesor directo; #2 en RAID según la model card | No disponible en la información | Hugging Face |
 | DivEye (referencia en MAGE parafraseado, arXiv 2509.18880) | No disponible | No disponible | Detección de texto parafraseado | No disponible | No disponible |
 | Detectores del benchmark UChicago/Booth | No disponible | No disponible | Detección frente a 4 LLM y StealthGPT | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ La información proporcionada no incluye especificaciones detalladas de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nakas/gpttrace-v8s-1b
+- Modelo en Hugging Face: https://huggingface.co/nakas/gpttrace-v8s-1b
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Predecesor: https://huggingface.co/nakas/gpttrace-v5-1b
 - Dataset de entrenamiento público: https://huggingface.co/datasets/nakas/gpttrace-text-train

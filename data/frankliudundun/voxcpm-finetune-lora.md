@@ -99,7 +99,7 @@ Frente a r46-u10, el holdout de tailandés pasa de 15 a 5 (p=,001) y el de indon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora
+- Modelo en Hugging Face: https://huggingface.co/FrankLiuDundun/voxcpm-finetune-lora
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Dataset GigaSpeech 2: https://huggingface.co/datasets/speechcolab/gigaspeech2

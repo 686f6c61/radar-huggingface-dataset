@@ -81,7 +81,7 @@ La comparativa se limita a las tres variantes de la misma familia, ya que no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mudler/Huihui-LFM2-24B-A2B-abliterated-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mudler/Huihui-LFM2-24B-A2B-abliterated-APEX-GGUF
 - Modelo base del fine-tune: https://huggingface.co/huihui-ai/Huihui-LFM2-24B-A2B-abliterated
 - Modelo original: https://huggingface.co/LiquidAI/LFM2-24B-A2B
 - Licencia: https://huggingface.co/LiquidAI/LFM2-24B-A2B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck Tug: lphat + C2 seed-1/seed-5 composite es una política de control para el entorno de robótica Microduck Arena Tug of War, publicada por el usuario jrubiosainz en HuggingFace. No es un modelo de lenguaje ni un transformer generativo: es un artefacto ONNX de 942.252 bytes que implementa una política de refuerzo para un agente físico que debe tirar de una cuerda en un simulador de robótica. El modelo parte de la política base de lphatnguyen (microduck-tug-of-war-v0) y le superpone una tabla de búsqueda externa con 170 pares observación/acción extraídos de las cadenas seed-1 y seed-5 del modelo C2 del propio autor.
+Microduck Tug: lphat + C2 seed-1/seed-5 composite es una política de control para el entorno de robótica Microduck Arena Tug of War, publicada por el usuario jrubiosainz en Hugging Face. No es un modelo de lenguaje ni un transformer generativo: es un artefacto ONNX de 942.252 bytes que implementa una política de refuerzo para un agente físico que debe tirar de una cuerda en un simulador de robótica. El modelo parte de la política base de lphatnguyen (microduck-tug-of-war-v0) y le superpone una tabla de búsqueda externa con 170 pares observación/acción extraídos de las cadenas seed-1 y seed-5 del modelo C2 del propio autor.
 
 La relevancia de esta publicación es acotada y muy específica: se trata de un composite declarado ("disclosed lookup-table composite") que no entrena nada nuevo, sino que combina pesos y tablas existentes para mejorar la puntuación predicha en un benchmark concreto de la Arena. El interés técnico reside en el mecanismo de composición: una red neuronal base intacta más una capa de lookup externa implementada con diez operadores ONNX que tiene precedencia sobre la política original para ciertas observaciones.
 
@@ -18,7 +18,7 @@ El modelo se presenta como una contribución a un entorno de competición (Arena
 | Longitud de contexto | no disponible (no es un modelo de lenguaje; la observación es un vector float32 de 61 dimensiones) |
 | Tipos de cuantización | no disponible (el artefacto se distribuye como ONNX float32) |
 | Idiomas soportados | no disponible (no procesa lenguaje natural; salida de 14 acciones float32) |
-| Licencia | no disponible como licencia propia; el derivado se acoge al grant de contenido público de los Términos de Servicio de HuggingFace; se preserva el aviso Apache-2.0 heredado de C2/a1rb4Ck en NOTICE y LICENSE |
+| Licencia | no disponible como licencia propia; el derivado se acoge al grant de contenido público de los Términos de Servicio de Hugging Face; se preserva el aviso Apache-2.0 heredado de C2/a1rb4Ck en NOTICE y LICENSE |
 | Formato de pesos | ONNX (`policy.onnx`, SHA-256 `2d82c8dc6b3cece24d603d473c94b210a0e0b825b4fa131a93c7978217746475`) |
 
 ## Arquitectura y entrenamiento
@@ -75,9 +75,9 @@ El autor advierte explícitamente de que la media de 166,57 es una predicción, 
 
 | Modelo | Tipo | Tamaño | Puntuación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-tug-lphat-c2-s1s5 | Composite ONNX (red + lookup) | 942.252 bytes | 166,57 (predicha) | no disponible (grant de contenido público de HF; Apache-2.0 heredado en NOTICE) | HuggingFace |
-| lphatnguyen/microduck-tug-of-war-v0 | Política base (red + lookup de 321 filas) | no disponible | no disponible | no declara licencia propia | HuggingFace |
-| jrubiosainz/microduck-game-tug-a1rb4ck-...-c2 | Política C2 (fuente de las filas añadidas) | no disponible | no disponible | Apache-2.0 (heredada de a1rb4Ck) | HuggingFace |
+| jrubiosainz/microduck-tug-lphat-c2-s1s5 | Composite ONNX (red + lookup) | 942.252 bytes | 166,57 (predicha) | no disponible (grant de contenido público de HF; Apache-2.0 heredado en NOTICE) | Hugging Face |
+| lphatnguyen/microduck-tug-of-war-v0 | Política base (red + lookup de 321 filas) | no disponible | no disponible | no declara licencia propia | Hugging Face |
+| jrubiosainz/microduck-game-tug-a1rb4ck-...-c2 | Política C2 (fuente de las filas añadidas) | no disponible | no disponible | Apache-2.0 (heredada de a1rb4Ck) | Hugging Face |
 
 No se dispone de datos de puntuación de los modelos base y C2 en la información proporcionada, por lo que la comparación cuantitativa no es posible más allá de la media predicha del composite.
 
@@ -87,7 +87,7 @@ No se dispone de datos de puntuación de los modelos base y C2 en la informació
 - La evidencia no establece generalización a condiciones iniciales u oponentes no vistos; el propio autor lo señala explícitamente.
 - El composite usa trayectorias de las semillas públicas de rating, lo que puede inflar el rendimiento aparente frente a entornos no vistos.
 - La ejecución en macOS no es un replay autoritativo por diferencias de física en arm64; la validación debe hacerse en x86.
-- No se declara licencia propia para la contribución de lphat; el derivado se acoge al grant de contenido público de los Términos de Servicio de HuggingFace, lo que no equivale a una licencia irrestricta fuera de la plataforma.
+- No se declara licencia propia para la contribución de lphat; el derivado se acoge al grant de contenido público de los Términos de Servicio de Hugging Face, lo que no equivale a una licencia irrestricta fuera de la plataforma.
 - El aviso Apache-2.0 heredado de C2/a1rb4Ck no relicencia la contribución de lphat ni concede derechos sobre obras upstream no relacionadas.
 - El artefacto no es un modelo de lenguaje: no tiene capacidades de generación de texto, razonamiento, código, matemáticas, visión ni audio, y no admite tool calling ni agentes.
 - No se documentan sesgos ni riesgos de alucinación en el sentido habitual; el riesgo relevante es el sobreajuste a las observaciones registradas y la falta de validación fuera de distribución.
@@ -95,10 +95,10 @@ No se dispone de datos de puntuación de los modelos base y C2 en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5
 - Modelo base lphatnguyen: https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0/tree/bca92ace3a25d383e806456bedc4148807cdcdf6
 - Modelo C2 de jrubiosainz: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2/tree/96e4eaf2e427371787dcb129ae19266b582fbd01
 - Perfil de lphatnguyen: https://huggingface.co/lphatnguyen
 - Perfil de a1rb4Ck: https://huggingface.co/a1rb4Ck
 - Pollen Robotics (Arena y entorno): https://huggingface.co/pollen-robotics
-- Términos de Servicio de HuggingFace, sección Your Content: https://huggingface.co/terms-of-service#your-content
+- Términos de Servicio de Hugging Face, sección Your Content: https://huggingface.co/terms-of-service#your-content

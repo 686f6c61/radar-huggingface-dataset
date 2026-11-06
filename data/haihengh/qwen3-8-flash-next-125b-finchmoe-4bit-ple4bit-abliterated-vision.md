@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated-vision
+- Repositorio Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated-vision
 - Modelo base (abliterated): https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated
 - Hermano solo-texto con métricas: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

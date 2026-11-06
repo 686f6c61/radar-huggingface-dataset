@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento para los modelos de OBLITERATUS y dn2k, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Huntfat/Qwen3.8-27B-OBLITERATED-huntfat
+- Repositorio Hugging Face: https://huggingface.co/Huntfat/Qwen3.8-27B-OBLITERATED-huntfat
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo sobre el modelo en explainx.ai: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - Ficha del modelo en Atomic Chat: https://atomic.chat/models/qwen3-8-27b

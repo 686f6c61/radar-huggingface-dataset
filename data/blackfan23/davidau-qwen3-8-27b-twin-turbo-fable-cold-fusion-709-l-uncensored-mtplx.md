@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DavidAU-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MTPLX es un modelo derivado publicado por el usuario blackfan23 en HuggingFace, con 27.356.723.952 parametros totales (unos 27,36 mil millones) y un repositorio de 20,3 GB. Se trata de una conversion al ecosistema MTPLX del modelo `DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored`, que actua como base. La etiqueta `qwen3_5` del repositorio situa la arquitectura en la familia Qwen3, aunque no se detalla la configuracion exacta de capas ni de atencion.
+DavidAU-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MTPLX es un modelo derivado publicado por el usuario blackfan23 en Hugging Face, con 27.356.723.952 parametros totales (unos 27,36 mil millones) y un repositorio de 20,3 GB. Se trata de una conversion al ecosistema MTPLX del modelo `DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored`, que actua como base. La etiqueta `qwen3_5` del repositorio situa la arquitectura en la familia Qwen3, aunque no se detalla la configuracion exacta de capas ni de atencion.
 
 Su rasgo diferencial no es el entrenamiento, sino el formato de despliegue: MTPLX es un runtime de prediccion multi-token (multi-token prediction) orientado a Apple Silicon (MLX). El autor declara una profundidad optima de D3 y un multiplicador de 2,29x frente a una linea base autorregresiva, verificado en un Apple M4 Pro. Es decir, el modelo busca acelerar la decodificacion en Mac aprovechando la prediccion de varios tokens por paso, sin cambiar los pesos subyacentes.
 
@@ -112,7 +112,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/blackfan23/DavidAU-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MTPLX
+- Hugging Face del modelo: https://huggingface.co/blackfan23/DavidAU-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MTPLX
 - Modelo base citado en la model card: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - MTPLX Forge (herramienta de creacion): https://github.com/youssofal/MTPLX
 - Registro de verificacion: fichero `mtplx_runtime.json` dentro del repositorio del modelo

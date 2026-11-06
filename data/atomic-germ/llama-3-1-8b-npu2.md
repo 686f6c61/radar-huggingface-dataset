@@ -73,8 +73,8 @@ La comparativa se basa en el modelo base Llama 3.1 8B y en Hermes 3, un fine-tun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Llama-3.1-8B-NPU2
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Llama-3.1-8B-NPU2
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3: https://ai.meta.com/llama/license/
 - Repositorio oficial de Llama 3 en GitHub: https://github.com/meta-llama/llama3
 - Página de Hermes 3 (modelo comparable): https://nousresearch.com/hermes3

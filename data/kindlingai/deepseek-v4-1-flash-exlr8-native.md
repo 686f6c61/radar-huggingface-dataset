@@ -82,7 +82,7 @@ La comparativa relevante es con el checkpoint fuente: este repositorio no altera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8-native
+- Repositorio Hugging Face: https://huggingface.co/kindlingai/deepseek-v4.1-flash-exlr8-native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Especificación del formato exlr8 v2: https://github.com/kindlingai/exlr8/blob/main/FORMAT.md
 - Repositorio del loader de referencia: https://github.com/kindlingai/exlr8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy-SimulMT-30B-A3B es un modelo de traducción simultánea en tiempo real desarrollado por Tencent Hunyuan, publicado en HuggingFace bajo el identificador `sekkit/Hy-SimulMT-30B-A3B`. Su propósito es la traducción bidireccional chino-inglés en modalidad voz a voz, recibiendo audio de forma continua y generando texto traducido y voz sintetizada a medida que el hablante habla, con clonación de voz en tiempo real para preservar las características vocales del orador. Está diseñado para escenarios de comunicación en vivo como reuniones, conferencias y entrevistas.
+Hy-SimulMT-30B-A3B es un modelo de traducción simultánea en tiempo real desarrollado por Tencent Hunyuan, publicado en Hugging Face bajo el identificador `sekkit/Hy-SimulMT-30B-A3B`. Su propósito es la traducción bidireccional chino-inglés en modalidad voz a voz, recibiendo audio de forma continua y generando texto traducido y voz sintetizada a medida que el hablante habla, con clonación de voz en tiempo real para preservar las características vocales del orador. Está diseñado para escenarios de comunicación en vivo como reuniones, conferencias y entrevistas.
 
 El modelo emplea una arquitectura de tipo Mixture of Experts (MoE) con 30.394.794.496 parámetros totales, según los pesos en safetensors, y una nomenclatura "A3B" que sugiere aproximadamente 3 mil millones de parámetros activos por token, aunque este dato no se confirma explícitamente en la información disponible. La longitud de contexto, los tipos de cuantización y otros detalles técnicos no están especificados en la model card proporcionada.
 
@@ -78,7 +78,7 @@ En la evaluación de audio largo RealSI, Hy-SimulMT alcanza un StreamLAAL de apr
 
 | Modelo | Parámetros | Contexto | FLEURS | CoVoST2 | ACL6060 | RealSI-Sentence | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| **Hy-SimulMT** | 30,39B totales (MoE, ~3B activos según nomenclatura) | no disponible | 90.3 | 75.5 | 81.2 | 84.7 | Apache 2.0 | HuggingFace, ModelScope, GitHub |
+| **Hy-SimulMT** | 30,39B totales (MoE, ~3B activos según nomenclatura) | no disponible | 90.3 | 75.5 | 81.2 | 84.7 | Apache 2.0 | Hugging Face, ModelScope, GitHub |
 | Qwen3.8-LiveTranslate | no disponible | no disponible | 88.4 | 82.1 | 80.5 | 84.4 | no disponible | API comercial |
 | Gemini3.5-LiveTranslate | no disponible | no disponible | 92.4 | 74.4 | 82.6 | 82.2 | no disponible | API comercial |
 | Seed-LiveInterpret2.0 | no disponible | no disponible | 85.8 | 67.7 | 74.8 | 80.0 | no disponible | no disponible |
@@ -100,8 +100,8 @@ Hy-SimulMT destaca por su baja latencia (StreamLAAL ~3 s) y por superar en GEMBA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/Hy-SimulMT-30B-A3B
-- Colección Tencent Hy en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Hugging Face: https://huggingface.co/sekkit/Hy-SimulMT-30B-A3B
+- Colección Tencent Hy en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - README en chino: README_CN.md (referenciado en la model card)

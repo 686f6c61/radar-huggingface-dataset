@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-2B-VQA-SFT es un ajuste fino (SFT) del modelo multimodal Qwen/Qwen3-VL-2B-Instruct, desarrollado por el usuario QiLong26 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 2.127.532.032 parametros (aproximadamente 2,13 mil millones) orientado a tareas de respuesta visual a preguntas (VQA, Visual Question Answering), es decir, responder a preguntas formuladas en lenguaje natural sobre el contenido de una imagen. El pipeline declarado es `image-text-to-text`.
+Qwen3-VL-2B-VQA-SFT es un ajuste fino (SFT) del modelo multimodal Qwen/Qwen3-VL-2B-Instruct, desarrollado por el usuario QiLong26 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 2.127.532.032 parametros (aproximadamente 2,13 mil millones) orientado a tareas de respuesta visual a preguntas (VQA, Visual Question Answering), es decir, responder a preguntas formuladas en lenguaje natural sobre el contenido de una imagen. El pipeline declarado es `image-text-to-text`.
 
 El modelo parte de la arquitectura Qwen3-VL en su variante de 2B parametros, que combina un codificador visual con un transformer de lenguaje para procesar entradas multimodales. El entrenamiento se realizo con la libreria Transformers (version 5.7.0.dev0) y el `Trainer` estandar, con un learning rate de 5e-06, batch total de 8 (batch 1 x acumulacion de gradientes 8), 3 epocas y optimizador AdamW. El repositorio ocupa 4,3 GB y los pesos se distribuyen en formato safetensors.
 
@@ -92,6 +92,6 @@ La comparativa de rendimiento con alternativas no esta disponible: el autor no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QiLong26/Qwen3-VL-2B-VQA-SFT
+- Modelo en Hugging Face: https://huggingface.co/QiLong26/Qwen3-VL-2B-VQA-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Paper, blog, repositorio o demo del ajuste: no disponibles en la informacion proporcionada.

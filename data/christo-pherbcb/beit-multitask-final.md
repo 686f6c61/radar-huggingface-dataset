@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beit multitask final es un prototipo de investigación publicado por el usuario christo-pherbcb en HuggingFace. Se trata de una implementación de arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a un escenario multitarea, distribuida junto con el código de entrenamiento y una configuración por defecto. El autor indica explícitamente que el fichero `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
+Beit multitask final es un prototipo de investigación publicado por el usuario christo-pherbcb en Hugging Face. Se trata de una implementación de arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a un escenario multitarea, distribuida junto con el código de entrenamiento y una configuración por defecto. El autor indica explícitamente que el fichero `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
 
 El repositorio tiene 0 descargas y 0 likes, y los metadatos de safetensors declaran 33.088 parámetros totales, una cifra llamativamente baja para una configuración etiquetada como "large" y coherente con un repositorio cuyo tamaño es de 0,0 GB. Esto refuerza la interpretación de que se trata de un esqueleto de arquitectura, no de un modelo con pesos útiles. La model card no reclama ninguna puntuación de benchmark y anima a quien lo evalúe a reportar métricas sobre un conjunto de validación específico de tarea, con al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -39,7 +39,7 @@ La arquitectura declarada es BEiT, una familia de transformers de visión de tip
 
 No hay información disponible sobre el volumen de datos de entrenamiento, la composición del dataset, el número de tokens o imágenes procesadas, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado. La receta por defecto incluida en `training_args.json` usa el optimizador Lion con un planificador de pasos, pero el propio autor aclara que son valores de partida del script y no evidencia de una ejecución completada. Del mismo modo, no se documenta ninguna innovación de decodificación (especulación, atención lineal efectiva, caché comprimida) ni técnicas de eficiencia adicionales.
 
-Un punto técnico relevante es que se trata de una implementación personalizada: la model card advierte que las APIs genéricas de carga automática (por ejemplo, `AutoModel.from_pretrained`) requieren un adaptador explícito antes de poder usarse. Esto implica que la integración en pipelines estándar de HuggingFace no es directa y exige trabajo de envoltura por parte del usuario.
+Un punto técnico relevante es que se trata de una implementación personalizada: la model card advierte que las APIs genéricas de carga automática (por ejemplo, `AutoModel.from_pretrained`) requieren un adaptador explícito antes de poder usarse. Esto implica que la integración en pipelines estándar de Hugging Face no es directa y exige trabajo de envoltura por parte del usuario.
 
 ## Capacidades
 
@@ -98,13 +98,13 @@ La diferencia funcional fundamental no es de rendimiento sino de estado: los tre
 - Sesgos conocidos: no disponible. Al no haber datos de entrenamiento documentados, no se puede analizar la composición del dataset ni los sesgos asociados.
 - Limitaciones de contexto e idioma: no disponible. No se especifica ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: el repositorio se publica bajo BSD-3-Clause, que permite uso comercial con conservación del aviso de copyright y exención de responsabilidad. El propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se combina con datasets externos.
-- Carga no estándar: al ser una implementación personalizada, las APIs genéricas de HuggingFace no cargan el modelo sin un adaptador explícito, lo que añade trabajo de integración y riesgo de errores en producción.
+- Carga no estándar: al ser una implementación personalizada, las APIs genéricas de Hugging Face no cargan el modelo sin un adaptador explícito, lo que añade trabajo de integración y riesgo de errores en producción.
 - Ambigüedad en el recuento de parámetros: la cifra de 33.088 de los metadatos de safetensors no es coherente con una configuración "large" ni con un repositorio de 0,0 GB, por lo que debe verificarse antes de dimensionar cualquier infraestructura.
 - Sin actividad de la comunidad: 0 descargas y 0 likes implican ausencia de validación externa, issues resueltos o ejemplos de uso contrastados.
 - Advertencia general: no debe desplegarse en producción ni presentarse como modelo funcional sin un entrenamiento y una evaluación previos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christo-pherbcb/beit-multitask-final
+- Hugging Face: https://huggingface.co/christo-pherbcb/beit-multitask-final
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las URLs devueltas corresponden al artista Christo y a Jeanne-Claude (Wikipedia en francés e inglés, sitio oficial christojeanneclaude.net, Vanity Fair France y Centre Pompidou) y no guardan relación con este repositorio.
 - No se dispone de enlaces a papers, blogs técnicos, repositorios de código adicionales ni demos en la información proporcionada.

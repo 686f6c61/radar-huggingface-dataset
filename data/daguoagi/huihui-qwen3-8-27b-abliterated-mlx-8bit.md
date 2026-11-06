@@ -76,7 +76,7 @@ La principal diferencia entre este modelo y sus alternativas es el formato MLX, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daguoagi/Huihui-Qwen3.8-27B-abliterated-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/daguoagi/Huihui-Qwen3.8-27B-abliterated-MLX-8bit
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Versión GGUF del modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Blog de orcarouter sobre Qwen3.8-27B uncensored: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

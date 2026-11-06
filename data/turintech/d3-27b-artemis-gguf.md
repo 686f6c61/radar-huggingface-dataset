@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la model card del autor, los resultados decla
 
 ## Arquitectura y entrenamiento
 
-El autor no documenta la arquitectura interna del modelo base `vllm-sr/d3` en la información disponible: no se indica si es un transformer denso, un MoE o un híbrido, ni el número de capas, cabezas de atención o dimensión oculta. Lo que sí se describe es su interfaz funcional: se trata de un modelo de decisión que recibe un `state` (el texto o imagen a evaluar) y un conjunto de `questions` tipadas —el ejemplo de la model card usa el tipo `noul` para preguntas de sí/no— y devuelve una probabilidad por cada respuesta posible en una única pasada. El pipeline declarado en HuggingFace es `text-classification`, y el modelo admite entradas multimodales (texto e imágenes) mediante un proyector visual.
+El autor no documenta la arquitectura interna del modelo base `vllm-sr/d3` en la información disponible: no se indica si es un transformer denso, un MoE o un híbrido, ni el número de capas, cabezas de atención o dimensión oculta. Lo que sí se describe es su interfaz funcional: se trata de un modelo de decisión que recibe un `state` (el texto o imagen a evaluar) y un conjunto de `questions` tipadas —el ejemplo de la model card usa el tipo `noul` para preguntas de sí/no— y devuelve una probabilidad por cada respuesta posible en una única pasada. El pipeline declarado en Hugging Face es `text-classification`, y el modelo admite entradas multimodales (texto e imágenes) mediante un proyector visual.
 
 El proceso de entrenamiento original tampoco está detallado. La contribución documentada de esta ficha es la compresión: TurinTech aplica su sistema Artemis para producir cuantizaciones GGUF que preservan el comportamiento del BF16. La validación se hizo sobre 2.000 decisiones de test del dataset `LocalLLaMA/typed-decisions`, midiendo el porcentaje de respuestas idénticas al original y el número de respuestas confiadas que cambiaron de signo. El autor señala además una restricción de implementación relevante: d3 lee el prompt completo en un solo batch, de modo que una entrada más larga que el tamaño de batch configurado se rechaza.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | Tamaño / memoria | Acuerdo con BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-27B-Artemis IQ4_XS (este) | 26,9 B | 16.384 config. | 14,95 GB / 16,4 GiB texto | 97,1 % | Apache 2.0 | HuggingFace, LM Studio Hub |
-| d3-27B-Artemis Q3_K_S | 26,9 B | 16.384 config. | 12,26 GB / 14,1 GiB texto | 95,7 % | Apache 2.0 | HuggingFace, LM Studio Hub |
-| ggml-org/vllm-d3-GGUF Q4_K_M | No disponible | No disponible | 19,40 GB | 98,4 % | No disponible en la información | HuggingFace (ggml-org) |
-| d3 original (vllm-sr/d3, BF16) | 26,9 B | No disponible | 54,6 GiB en dos GPU | Referencia | No disponible en la información | HuggingFace (vllm-sr) |
+| d3-27B-Artemis IQ4_XS (este) | 26,9 B | 16.384 config. | 14,95 GB / 16,4 GiB texto | 97,1 % | Apache 2.0 | Hugging Face, LM Studio Hub |
+| d3-27B-Artemis Q3_K_S | 26,9 B | 16.384 config. | 12,26 GB / 14,1 GiB texto | 95,7 % | Apache 2.0 | Hugging Face, LM Studio Hub |
+| ggml-org/vllm-d3-GGUF Q4_K_M | No disponible | No disponible | 19,40 GB | 98,4 % | No disponible en la información | Hugging Face (ggml-org) |
+| d3 original (vllm-sr/d3, BF16) | 26,9 B | No disponible | 54,6 GiB en dos GPU | Referencia | No disponible en la información | Hugging Face (vllm-sr) |
 | d3-flash (Artemis) | No disponible | No disponible | 4,9 GB | No disponible | No disponible en la información | TurinTech |
 
 La comparación con modelos de clasificación convencionales (encoders tipo BERT o DeBERTa) no está cubierta por los datos publicados: no hay benchmarks comunes ni métricas de precisión sobre tareas estándar que permitan situar d3 frente a ellos.
@@ -100,7 +100,7 @@ La comparación con modelos de clasificación convencionales (encoders tipo BERT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/d3-27B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/d3-27B-Artemis-GGUF
 - Modelo base: https://huggingface.co/vllm-sr/d3
 - Página de modelos de TurinTech (Artemis Edge): https://www.turintech.ai/models
 - Blog de TurinTech sobre la compresión de d3 y d3-flash: https://www.turintech.ai/blog/d3-and-d3-flash-compressed-with-artemis

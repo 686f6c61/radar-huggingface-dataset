@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mf79/RoBERTa_binary_English_hate_speech_detection` es un clasificador binario basado en la arquitectura RoBERTa, desarrollado por el usuario mf79 y publicado en HuggingFace en agosto de 2026. Está diseñado específicamente para la detección de discurso de odio en texto en inglés, resolviendo la tarea de clasificación binaria (odio o no odio). Con 124,6 millones de parámetros, se alinea con el tamaño de la variante base de RoBERTa, aunque el autor no especifica explícitamente la configuración exacta.
+El modelo `mf79/RoBERTa_binary_English_hate_speech_detection` es un clasificador binario basado en la arquitectura RoBERTa, desarrollado por el usuario mf79 y publicado en Hugging Face en agosto de 2026. Está diseñado específicamente para la detección de discurso de odio en texto en inglés, resolviendo la tarea de clasificación binaria (odio o no odio). Con 124,6 millones de parámetros, se alinea con el tamaño de la variante base de RoBERTa, aunque el autor no especifica explícitamente la configuración exacta.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y los pesos están disponibles en formato safetensors. Al tratarse de una publicación reciente con cero descargas y cero likes, carece de validación comunitaria y de benchmarks publicados, por lo que su rendimiento real no ha sido verificado de forma independiente. Su relevancia radica en ofrecer una opción ligera y de código abierto para tareas de moderación de contenido en inglés, aunque su adopción en producción requeriría una evaluación previa rigurosa.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 124,6 millones de parametros, el modelo en FP32 ocupa aproximadamente 500 MB, y en FP16 unos 250 MB. La VRAM necesaria para inferencia es inferior a 1 GB, por lo que cabe en cualquier GPU moderna.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1650, RTX 2060 o superiores funcionarian sin problemas. Tambien es viable la inferencia en CPU para cargas de trabajo modestas.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en practicamente cualquier GPU de consumo actual, incluidas las integradas de gama alta.
-- Opciones de despliegue: al ser un modelo Transformer estandar, puede servirse con vLLM, HuggingFace Inference Endpoints, o ejecutarse directamente con la libreria transformers. Para entornos de produccion ligera, tambien es posible convertirlo a formato ONNX o TensorRT.
+- Opciones de despliegue: al ser un modelo Transformer estandar, puede servirse con vLLM, Hugging Face Inference Endpoints, o ejecutarse directamente con la libreria transformers. Para entornos de produccion ligera, tambien es posible convertirlo a formato ONNX o TensorRT.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia orientativa, un modelo de este tamano en una GPU moderna (RTX 3090 o superior) puede procesar cientos de secuencias por segundo, pero estos valores no han sido verificados para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -75,4 +75,4 @@ La comparativa se basa en modelos de tamano similar orientados a la misma tarea.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mf79/RoBERTa_binary_English_hate_speech_detection
+- Hugging Face: https://huggingface.co/mf79/RoBERTa_binary_English_hate_speech_detection

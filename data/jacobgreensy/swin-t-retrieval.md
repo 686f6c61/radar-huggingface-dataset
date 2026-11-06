@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo jacobgreensy/swin-t-retrieval es una implementación personalizada en PyTorch de una arquitectura Swin T (Swin Transformer en su variante más pequeña) orientada a tareas de recuperación (retrieval), publicada por el usuario jacobgreensy en HuggingFace bajo licencia apache-2.0. Se distribuye en una configuración que el propio autor denomina "nano", con un recuento real de 49.600 parámetros según el archivo safetensors, muy por debajo de los aproximadamente 28 millones de parámetros de un Swin Transformer Tiny estándar.
+El modelo jacobgreensy/swin-t-retrieval es una implementación personalizada en PyTorch de una arquitectura Swin T (Swin Transformer en su variante más pequeña) orientada a tareas de recuperación (retrieval), publicada por el usuario jacobgreensy en Hugging Face bajo licencia apache-2.0. Se distribuye en una configuración que el propio autor denomina "nano", con un recuento real de 49.600 parámetros según el archivo safetensors, muy por debajo de los aproximadamente 28 millones de parámetros de un Swin Transformer Tiny estándar.
 
 Se trata de un repositorio concebido explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un lanzamiento preentrenado listo para producción. El archivo model.safetensors es un checkpoint de inicialización válido, pero no un modelo entrenado ni evaluado: la model card indica que no se reclama ninguna puntuación de benchmark.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de carácter formativo: sirve como esqueleto 
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura Swin T con atención estándar, fusión por tensor fusion, activación swish y normalización por batchnorm, en una escala "nano". La implementación es custom sobre PyTorch y se distribuye junto a config.json, training_args.json y eval.py; el propio autor advierte que, al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La model card describe una arquitectura Swin T con atención estándar, fusión por tensor fusion, activación swish y normalización por batchnorm, en una escala "nano". La implementación es custom sobre PyTorch y se distribuye junto a config.json, training_args.json y eval.py; el propio autor advierte que, al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 No hay datos de entrenamiento disponibles: no se indica número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO u otro ajuste. La receta de experimento por defecto usa el optimizador adam con un schedule de tipo exponencial, pero la propia model card aclara que son valores iniciales del script y no evidencia de una ejecución completada. El checkpoint model.safetensors es únicamente una inicialización válida para pruebas de humo; no ha sido entrenado ni auditado, y no se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.).
 
@@ -55,14 +55,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: muy inferior a 1 GB, coherente con un checkpoint de 49.600 parámetros (estimación derivada del recuento de parámetros, no un dato oficial).
 - GPU recomendadas: cualquier GPU, incluidas integradas; no se requiere hardware de gama alta ni aceleradores tipo A100/H100.
 - Cabe en GPU consumer: sí, en cualquiera, y previsiblemente también en CPU.
-- Opciones de despliegue: al ser una implementación PyTorch custom, no es cargable directamente mediante APIs automáticas de HuggingFace sin un adaptador; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no se distribuye en formato GGUF.
+- Opciones de despliegue: al ser una implementación PyTorch custom, no es cargable directamente mediante APIs automáticas de Hugging Face sin un adaptador; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y no se distribuye en formato GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jacobgreensy/swin-t-retrieval (nano) | 49.600 | no disponible | no disponible (sin benchmark) | apache-2.0 | HuggingFace |
+| jacobgreensy/swin-t-retrieval (nano) | 49.600 | no disponible | no disponible (sin benchmark) | apache-2.0 | Hugging Face |
 | Swin Transformer Tiny (original) | ~28,3 M | no aplica (vision) | no disponible en esta ficha | no disponible | repositorio oficial de Microsoft |
 | CLIP ViT-B/32 | ~151 M | 77 tokens de texto | no disponible en esta ficha | no disponible | OpenAI |
 
@@ -72,7 +72,7 @@ La comparación es orientativa: el modelo aquí descrito es una inicialización 
 
 - El checkpoint es una inicialización, no un modelo entrenado: no ha sido entrenado con datos ni auditado en robustez, equidad o transferencia de dominio.
 - No se reclama ninguna puntuación de benchmark; cualquier resultado futuro perteneciente a un checkpoint entrenado debe documentarse por separado de los valores por defecto publicados aquí.
-- Implementación custom: no se carga con APIs automáticas de HuggingFace sin un adaptador explícito, lo que complica su integración directa.
+- Implementación custom: no se carga con APIs automáticas de Hugging Face sin un adaptador explícito, lo que complica su integración directa.
 - No se declaran idiomas soportados ni modalidad, por lo que no se puede asumir comportamiento multilingüe ni multimodal.
 - No se documentan sesgos conocidos, pero al no estar entrenado ni audituado, tampoco se puede garantizar ausencia de sesgos tras un eventual entrenamiento.
 - Riesgo de alucinación: no evaluable, dado que no hay modelo funcional entrenado.
@@ -81,5 +81,5 @@ La comparación es orientativa: el modelo aquí descrito es una inicialización 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobgreensy/swin-t-retrieval
+- Modelo en Hugging Face: https://huggingface.co/jacobgreensy/swin-t-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

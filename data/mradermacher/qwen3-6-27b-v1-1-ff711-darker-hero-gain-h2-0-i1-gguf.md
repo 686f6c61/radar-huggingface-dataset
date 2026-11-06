@@ -4,7 +4,7 @@
 
 Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, preparadas por mradermacher con pesos ponderados y matriz de importancia (imatrix). El modelo original, desarrollado por DavidAU, es una variante del Qwen3.6-27B, un modelo denso multimodal de 27 320 millones de parámetros con atención híbrida basada en redes delta con compuertas (gated delta networks) y predicción multi-token (MTP). Destaca por su ventana de contexto de 262 000 tokens y por sus mejoras en razonamiento STEM, codificación agéntica y capacidades de visión por computadora.
 
-La relevancia de esta versión GGUF radica en que permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama u otras herramientas compatibles, con distintos niveles de cuantización que ajustan el equilibrio entre tamaño, velocidad y fidelidad. El repositorio incluye múltiples variantes cuantizadas (desde Q2_K hasta Q6_K, incluyendo IQ), lo que facilita su despliegue en entornos con recursos limitados. Aunque la ficha de HuggingFace no especifica licencia, el modelo base se publica bajo Apache 2.0 según las fuentes consultadas.
+La relevancia de esta versión GGUF radica en que permite ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama u otras herramientas compatibles, con distintos niveles de cuantización que ajustan el equilibrio entre tamaño, velocidad y fidelidad. El repositorio incluye múltiples variantes cuantizadas (desde Q2_K hasta Q6_K, incluyendo IQ), lo que facilita su despliegue en entornos con recursos limitados. Aunque la ficha de Hugging Face no especifica licencia, el modelo base se publica bajo Apache 2.0 según las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de comparativas directas con otros modelos de tamaño similar en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0-i1-GGUF
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-H2.0
 - Página oficial de QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b
 - Guía completa en aimadetools: https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Formato / cuantizaciones | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1bit-MONSTER/Qwen2.5-Coder-32B-Instruct-GGUF | ~32,8B | GGUF, solo Q4_K_M | No confirmado en este repo (base: 128K) | Apache 2.0 | HuggingFace, con 0 descargas y 0 likes |
+| 1bit-MONSTER/Qwen2.5-Coder-32B-Instruct-GGUF | ~32,8B | GGUF, solo Q4_K_M | No confirmado en este repo (base: 128K) | Apache 2.0 | Hugging Face, con 0 descargas y 0 likes |
 | Qwen/Qwen2.5-Coder-32B-Instruct-GGUF | ~32,8B | GGUF, multiples cuantizaciones | Base: 128K | Apache 2.0 | Repositorio oficial de Qwen |
-| bartowski/Qwen2.5-Coder-32B-Instruct-GGUF | ~32,8B | GGUF, amplio catalogo de cuantizaciones | Base: 128K | Apache 2.0 | HuggingFace, comunidad consolidada |
-| Qwen/Qwen2.5-Coder-32B-Instruct (original) | ~32,8B | safetensors (bf16/fp16) | 128K | Apache 2.0 | HuggingFace |
+| bartowski/Qwen2.5-Coder-32B-Instruct-GGUF | ~32,8B | GGUF, amplio catalogo de cuantizaciones | Base: 128K | Apache 2.0 | Hugging Face, comunidad consolidada |
+| Qwen/Qwen2.5-Coder-32B-Instruct (original) | ~32,8B | safetensors (bf16/fp16) | 128K | Apache 2.0 | Hugging Face |
 
 La diferencia entre este repositorio y los anteriores no esta en el modelo, sino en el empaquetado (una unica cuantizacion) y en las mediciones de rendimiento aportadas para el motor 1bit sobre Strix Halo.
 
@@ -88,7 +88,7 @@ La diferencia entre este repositorio y los anteriores no esta en el modelo, sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen2.5-Coder-32B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen2.5-Coder-32B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF
 - Cuantizaciones de bartowski: https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-GGUF

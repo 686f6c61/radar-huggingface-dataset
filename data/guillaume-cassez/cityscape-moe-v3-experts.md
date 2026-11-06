@@ -74,10 +74,10 @@ No se dispone de resultados de estos modelos en la informacion proporcionada, po
 
 | Modelo | Arquitectura | Resolucion / clases | mIoU en Cityscapes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cityscape-moe-v3-experts` (`moe_v3cs`) | ConvNeXt-V2-Base + UPerNet + MoE (4 expertos, top-2, parches 3×3) | 1024×2048, 19 clases | 81,618 (holdout `first:500`, media de 3 semillas) | MIT (pesos y codigo) | HuggingFace, 0 descargas en el momento de redactar la ficha |
-| `control_nomoe` (mismo repositorio) | ConvNeXt-V2-Base + UPerNet, sin MoE | 1024×2048, 19 clases | 81,168 (mismo holdout, media de 3 semillas) | MIT | HuggingFace |
-| Mask2Former (familia, por ejemplo la variante Swin-L) | Transformer con consultas de mascara | 1024×2048, 19 clases | no disponible en la informacion proporcionada | distinta segun variante (habitualmente MIT o Apache-2.0) | HuggingFace, repositorio publico |
-| SegFormer (familia, por ejemplo B5) | Transformer jerarquico sin posicionales explicitas | 1024×1024 (nativa), 19 clases | no disponible en la informacion proporcionada | habitualmente MIT o Apache-2.0 | HuggingFace, repositorio publico |
+| `cityscape-moe-v3-experts` (`moe_v3cs`) | ConvNeXt-V2-Base + UPerNet + MoE (4 expertos, top-2, parches 3×3) | 1024×2048, 19 clases | 81,618 (holdout `first:500`, media de 3 semillas) | MIT (pesos y codigo) | Hugging Face, 0 descargas en el momento de redactar la ficha |
+| `control_nomoe` (mismo repositorio) | ConvNeXt-V2-Base + UPerNet, sin MoE | 1024×2048, 19 clases | 81,168 (mismo holdout, media de 3 semillas) | MIT | Hugging Face |
+| Mask2Former (familia, por ejemplo la variante Swin-L) | Transformer con consultas de mascara | 1024×2048, 19 clases | no disponible en la informacion proporcionada | distinta segun variante (habitualmente MIT o Apache-2.0) | Hugging Face, repositorio publico |
+| SegFormer (familia, por ejemplo B5) | Transformer jerarquico sin posicionales explicitas | 1024×1024 (nativa), 19 clases | no disponible en la informacion proporcionada | habitualmente MIT o Apache-2.0 | Hugging Face, repositorio publico |
 | UPerNet sobre ConvNeXt-V2 (linea base sin MoE, no esta publicada aqui) | ConvNeXt-V2 + UPerNet | 1024×2048, 19 clases | no disponible en la informacion proporcionada | MIT | repositorios de referencia de ConvNeXt-V2 |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de resultados de estos modelos en la informacion proporcionada, po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillaume-cassez/cityscape-moe-v3-experts
+- Hugging Face: https://huggingface.co/guillaume-cassez/cityscape-moe-v3-experts
 - Repositorio de codigo, configuraciones y scripts: https://github.com/guillaume-cassez/cityscape-moe-experts
 - DOI de concepto del preprint (resuelve siempre a la ultima version): https://doi.org/10.5281/zenodo.23090081
 - Deposito vigente en el momento de redactar la ficha: https://doi.org/10.5281/zenodo.23147252

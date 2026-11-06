@@ -117,7 +117,7 @@ Comparacion con modelos EEG de terceros (por ejemplo, otras familias de foundati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L16
 - Web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (licencia MIT, incluye la referencia de citacion): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion completa con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

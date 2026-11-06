@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-ua-rawanneal-seed42-sft | 580M | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigacion, solo ingles |
-| 1pp-0.58b-v2-ua-seed42-sft | 580M | 4.096 | Apache 2.0 | HuggingFace | Misma ladder, condicion 1PP completa (referencia del autor) |
-| 1pp-0.58b-v2-raw-seed42-base | 580M | 4.096 | Apache 2.0 | HuggingFace | Modelo base sin cooldown conversacional ni SFT |
-| SmolLM2-360M / SmolLM2-1.7B | 360M / 1,7B | 8.192 | Apache 2.0 | HuggingFace | Alternativas de tamano comparable con tokenizador compartido; no se dispone de comparacion de rendimiento publicada en esta ficha |
+| 1pp-0.58b-v2-ua-rawanneal-seed42-sft | 580M | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigacion, solo ingles |
+| 1pp-0.58b-v2-ua-seed42-sft | 580M | 4.096 | Apache 2.0 | Hugging Face | Misma ladder, condicion 1PP completa (referencia del autor) |
+| 1pp-0.58b-v2-raw-seed42-base | 580M | 4.096 | Apache 2.0 | Hugging Face | Modelo base sin cooldown conversacional ni SFT |
+| SmolLM2-360M / SmolLM2-1.7B | 360M / 1,7B | 8.192 | Apache 2.0 | Hugging Face | Alternativas de tamano comparable con tokenizador compartido; no se dispone de comparacion de rendimiento publicada en esta ficha |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con estos modelos.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed42-sft
 - Variante de referencia (condicion 1PP completa): https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-sft
 - Modelo base de la variante raw: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed42-base
 - Coleccion 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

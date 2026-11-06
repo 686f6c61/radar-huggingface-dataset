@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TurkiAlqahtani/tmp-ranker` es una implementación a pequeña escala de la arquitectura **dino** orientada a tareas de **retrieval**. Publicado en HuggingFace por TurkiAlqahtani, se presenta como un repositorio con un único archivo `train.py` que contiene la definición del modelo y su entrenamiento. No se especifican parámetros totales, longitud de contexto, idiomas ni datos de entrenamiento en la documentación disponible.
+El modelo `TurkiAlqahtani/tmp-ranker` es una implementación a pequeña escala de la arquitectura **dino** orientada a tareas de **retrieval**. Publicado en Hugging Face por TurkiAlqahtani, se presenta como un repositorio con un único archivo `train.py` que contiene la definición del modelo y su entrenamiento. No se especifican parámetros totales, longitud de contexto, idiomas ni datos de entrenamiento en la documentación disponible.
 
 La relevancia de este modelo es limitada: se trata de un experimento o demostración técnica que combina atención grouped-query, fusión bilineal y activación GELU para tareas de recuperación de información. No se han publicado resultados de benchmarks ni se ha validado su rendimiento en tareas reales, por lo que su utilidad práctica es incierta. Aun así, puede servir como referencia para desarrolladores que deseen explorar arquitecturas de retrieval ligeras.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos de retr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TurkiAlqahtani/tmp-ranker
+- Modelo en Hugging Face: https://huggingface.co/TurkiAlqahtani/tmp-ranker
 - Model card (README): https://huggingface.co/TurkiAlqahtani/tmp-ranker/raw/main/README.md
 - Resultados de búsqueda web (no específicos del modelo): 
   - https://benchlm.ai/

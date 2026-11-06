@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sciencebob-v1_3mparam es un modelo publicado en HuggingFace por el usuario idkbrosomething bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo de aproximadamente 3 millones de parametros ("3mparam"), lo que lo situaria en la categoria de modelos extremadamente pequenos, muy por debajo de los modelos de lenguaje convencionales de uso general. No obstante, esta cifra no aparece confirmada en ningun campo estructurado de la model card ni en los metadatos del repositorio.
+Sciencebob-v1_3mparam es un modelo publicado en Hugging Face por el usuario idkbrosomething bajo licencia Apache 2.0. El nombre del repositorio sugiere un modelo de aproximadamente 3 millones de parametros ("3mparam"), lo que lo situaria en la categoria de modelos extremadamente pequenos, muy por debajo de los modelos de lenguaje convencionales de uso general. No obstante, esta cifra no aparece confirmada en ningun campo estructurado de la model card ni en los metadatos del repositorio.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento, sin tokenizador documentado y sin resultados de evaluacion. El repositorio no registra descargas ni interacciones, y no tiene pipeline de inferencia asignado en HuggingFace, lo que impide clasificarlo funcionalmente (text-generation, fill-mask, etc.).
+La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento, sin tokenizador documentado y sin resultados de evaluacion. El repositorio no registra descargas ni interacciones, y no tiene pipeline de inferencia asignado en Hugging Face, lo que impide clasificarlo funcionalmente (text-generation, fill-mask, etc.).
 
 Por tanto, esta ficha se limita a documentar lo que el autor ha hecho publico y a marcar explicitamente como "no disponible" todo aquello que no consta. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio (pesos, configuracion, tokenizador), algo que no se ha podido verificar con la informacion proporcionada.
 
@@ -39,11 +39,11 @@ Tampoco consta informacion sobre el proceso de entrenamiento: no se indica el vo
 ## Casos de uso
 
 - Evaluacion experimental de modelos de muy baja escala: dado el posible tamano de ~3M de parametros sugerido por el nombre, el modelo podria emplearse en entornos docentes o de investigacion para estudiar el comportamiento de redes de lenguaje minimas, siempre que se verifique primero su arquitectura real.
-- Pruebas de integracion en pipelines de HuggingFace: util para validar flujos de carga de modelos, tokenizacion y serializacion en entornos de CI antes de desplegar modelos mayores.
+- Pruebas de integracion en pipelines de Hugging Face: util para validar flujos de carga de modelos, tokenizacion y serializacion en entornos de CI antes de desplegar modelos mayores.
 - Reproduccion de experimentos academicos: si el autor publica en el futuro la configuracion y los datos de entrenamiento, el modelo podria servir como punto de partida reproducible para experimentos controlados de escala reducida.
 - Benchmarking de infraestructura ligera: un modelo de este tamano permitiria medir latencia y throughput en CPU o en GPUs de gama de entrada sin cuellos de botella de memoria.
 - Prototipado de interfaces de inferencia: util para desarrollar wrappers, APIs y herramientas de orquestacion que despues se reutilicen con modelos de mayor tamano.
-- Estudio de licencias y publicacion de modelos: como ejemplo de publicacion minima bajo Apache 2.0, sirve para analizar practicas de documentacion en HuggingFace.
+- Estudio de licencias y publicacion de modelos: como ejemplo de publicacion minima bajo Apache 2.0, sirve para analizar practicas de documentacion en Hugging Face.
 
 En todos los casos, la idoneidad real depende de verificar previamente los archivos del repositorio, ya que no hay evidencia publica de que el modelo funcione para tareas de lenguaje.
 
@@ -70,9 +70,9 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, pero el autor no ofrece garantias explicitas sobre el modelo ni sobre los datos subyacentes.
 - Ausencia total de documentacion: no hay informacion sobre tokenizador, formato de pesos ni requisitos de inferencia, lo que impide un uso fiable en produccion.
-- Cero descargas y cero interacciones en HuggingFace: no existe evidencia de uso comunitario ni de validacion externa.
+- Cero descargas y cero interacciones en Hugging Face: no existe evidencia de uso comunitario ni de validacion externa.
 - El nombre del repositorio sugiere un tamano de ~3M de parametros, pero esta cifra no esta confirmada en ningun metadato estructurado y no debe tomarse como dato tecnico.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idkbrosomething/sciencebob-v1_3mparam
+- Hugging Face: https://huggingface.co/idkbrosomething/sciencebob-v1_3mparam

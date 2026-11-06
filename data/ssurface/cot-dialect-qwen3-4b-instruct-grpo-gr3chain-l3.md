@@ -68,7 +68,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3chain-l3
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3chain-l3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l3
 - Conjunto de datos: https://huggingface.co/datasets/openai/gsm8k

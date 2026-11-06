@@ -83,8 +83,8 @@ La diferencia clave frente a las alternativas: la version NVFP4 requiere GPUs Bl
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/GotoAI-Inc/gemma-4-26B-A4B-it-W4A16)
-- [Modelo base en HuggingFace](https://huggingface.co/google/gemma-4-26B-A4B-it)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/GotoAI-Inc/gemma-4-26B-A4B-it-W4A16)
+- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Documentacion oficial de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core)
 - [Pagina de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Version NVFP4 del modelo (bg-digitalservices)](https://huggingface.co/bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4)

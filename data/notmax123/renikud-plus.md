@@ -84,7 +84,7 @@ No se dispone de información pública sobre modelos G2P hebreos comparables con
 - El error es alto en categorías difíciles como coloquial (47,68 WER) y fonemas raros (38,41 WER), lo que debe tenerse en cuenta en aplicaciones críticas.
 - El rescoring con datastore es opcional y requiere el archivo `corpus_datastore.json`; sin él, la precisión es menor.
 - La documentación indica que los resultados publicados en otras fuentes con los números 7,23 y 6,91 corresponden a un artefacto diferente y no a estos pesos, por lo que hay que tener cuidado al citar métricas.
-- El modelo es relativamente nuevo (publicado en agosto de 2026) y no tiene descargas ni likes en HuggingFace; no hay evidencia de uso en producción todavía.
+- El modelo es relativamente nuevo (publicado en agosto de 2026) y no tiene descargas ni likes en Hugging Face; no hay evidencia de uso en producción todavía.
 - La licencia Apache 2.0 permite uso comercial, pero la documentación advierte que el código y los modelos "forthcoming" (en preparación), por lo que la disponibilidad del código completo puede ser limitada.
 
 ## Enlaces

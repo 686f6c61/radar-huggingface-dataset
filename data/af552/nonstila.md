@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nonstila es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario AF552 bajo licencia Apache 2.0. Se distribuye en formato diffusers y está diseñado para funcionar sobre el modelo base `krea/Krea-2-Turbo`, del que depende por completo: el repositorio solo contiene los pesos del adaptador (0,2 GB), no un modelo autónomo. La model card lo describe escuetamente como «Nonstila_v1 test model», es decir, una versión de prueba sin documentación técnica asociada.
+Nonstila es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario AF552 bajo licencia Apache 2.0. Se distribuye en formato diffusers y está diseñado para funcionar sobre el modelo base `krea/Krea-2-Turbo`, del que depende por completo: el repositorio solo contiene los pesos del adaptador (0,2 GB), no un modelo autónomo. La model card lo describe escuetamente como «Nonstila_v1 test model», es decir, una versión de prueba sin documentación técnica asociada.
 
 El único parámetro de control documentado es la palabra de activación `ok6` (también declarada como `instance_prompt`), que debe incluirse en el prompt para que el efecto aprendido se aplique. La model card incluye un único ejemplo de uso, «Woman with brown hair», asociado a la imagen `images/S1.png`, lo que sugiere un caso de uso orientado a retratos o figuras humanas, aunque el autor no especifica si el adaptador codifica un estilo, una identidad concreta o una estética determinada.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nonstila (AF552) | No disponible (LoRA, repo de 0,2 GB) | No aplica | Sin benchmarks publicados | Apache 2.0 (adaptador) | HuggingFace, 0 descargas |
-| Krea-2-Turbo (base, sin LoRA) | No disponible en la informacion proporcionada | No aplica | No disponible | Debe verificarse en su repositorio | HuggingFace (`krea/Krea-2-Turbo`) |
+| Nonstila (AF552) | No disponible (LoRA, repo de 0,2 GB) | No aplica | Sin benchmarks publicados | Apache 2.0 (adaptador) | Hugging Face, 0 descargas |
+| Krea-2-Turbo (base, sin LoRA) | No disponible en la informacion proporcionada | No aplica | No disponible | Debe verificarse en su repositorio | Hugging Face (`krea/Krea-2-Turbo`) |
 | Otros LoRA de la comunidad sobre Krea-2-Turbo | No disponible | No aplica | No disponible | Variable segun autor | No identificados en la busqueda realizada |
 
 No se dispone de datos objetivos para establecer una comparacion cuantitativa con alternativas de la misma categoria; la unica comparacion posible es funcional (adaptador frente a modelo base sin adaptador), no de rendimiento.
@@ -87,7 +87,7 @@ No se dispone de datos objetivos para establecer una comparacion cuantitativa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AF552/Nonstila
+- Modelo en Hugging Face: https://huggingface.co/AF552/Nonstila
 - Ficheros y versiones: https://huggingface.co/AF552/Nonstila/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio del adaptador: no disponible

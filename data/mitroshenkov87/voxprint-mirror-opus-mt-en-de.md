@@ -88,10 +88,10 @@ No se han publicado en la información disponible resultados de benchmarks de ra
 
 | Modelo | Dirección | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxprint-mirror-opus-mt-en-de | en → de | no disponible | no disponible | CC-BY-4.0 | HuggingFace (espejo) |
-| Helsinki-NLP/opus-mt-en-de | en → de | no disponible | no disponible | CC-BY-4.0 | HuggingFace (original) |
-| Helsinki-NLP/opus-mt-de-en | de → en | no disponible | no disponible | CC-BY-4.0 | HuggingFace |
-| Modelos multilingües tipo NLLB-200 o M2M-100 | multilingüe | no disponible | no disponible | según modelo | HuggingFace |
+| voxprint-mirror-opus-mt-en-de | en → de | no disponible | no disponible | CC-BY-4.0 | Hugging Face (espejo) |
+| Helsinki-NLP/opus-mt-en-de | en → de | no disponible | no disponible | CC-BY-4.0 | Hugging Face (original) |
+| Helsinki-NLP/opus-mt-de-en | de → en | no disponible | no disponible | CC-BY-4.0 | Hugging Face |
+| Modelos multilingües tipo NLLB-200 o M2M-100 | multilingüe | no disponible | no disponible | según modelo | Hugging Face |
 
 La comparación directa más relevante es con el repositorio original: el contenido de los pesos es idéntico byte a byte según el autor, de modo que el rendimiento en BLEU y chr-F es el mismo. La única diferencia funcional es la disponibilidad y la política de espejo del proyecto Voxprint. Frente a modelos multilingües más grandes y recientes (NLLB-200, M2M-100), este espejo pierde cobertura de idiomas y calidad potencial, pero gana en tamaño reducido, ejecución en CPU y sencillez de despliegue. No se dispone de cifras comparativas verificadas en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparación directa más relevante es con el repositorio original: el conten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-de
+- Modelo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-de
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-de
 - Repositorio Voxprint (aplicación): https://github.com/Mitroshenkov87/voxprint-audiobook-builder
 - Documentación de modelos de Voxprint: https://github.com/Mitroshenkov87/voxprint-audiobook-builder/blob/main/docs/MODELS.md
@@ -120,7 +120,7 @@ La comparación directa más relevante es con el repositorio original: el conten
 - Traducciones del conjunto de test: https://object.pouta.csc.fi/OPUS-MT-models/en-de/opus-2020-02-26.test.txt
 - Resultados de evaluación: https://object.pouta.csc.fi/OPUS-MT-models/en-de/opus-2020-02-26.eval.txt
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
-- Modelos etiquetados como voxprint en HuggingFace: https://huggingface.co/models?other=voxprint
+- Modelos etiquetados como voxprint en Hugging Face: https://huggingface.co/models?other=voxprint
 - Perfil del autor: https://huggingface.co/Mitroshenkov87
 - Referencia sobre sesgos (Sheng et al.): https://aclanthology.org/2021.acl-long.330.pdf
 - Referencia sobre riesgos de modelos de lenguaje (Bender et al.): https://dl.acm.org/doi/pdf/10.1145/3442188.3445922

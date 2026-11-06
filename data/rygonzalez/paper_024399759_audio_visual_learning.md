@@ -56,6 +56,6 @@ No disponible. No existe una categoría de modelos de IA comparable, dado que es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rygonzalez/paper_024399759_audio_visual_learning
+- Repositorio en Hugging Face: https://huggingface.co/Rygonzalez/paper_024399759_audio_visual_learning
 
 No se han encontrado otros enlaces directos al documento o al autor en los resultados de búsqueda proporcionados. Los resultados de Google Scholar e IEEE Xplore son portales generales, no específicos de este repositorio.

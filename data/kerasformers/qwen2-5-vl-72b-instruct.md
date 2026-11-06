@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen2.5-vl-72b-instruct
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen2.5-vl-72b-instruct
 - Repositorio de KerasFormers en GitHub: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen2.5-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2_5_vl/
 - Coleccion de variantes Qwen2.5-VL: https://huggingface.co/collections/kerasformers/qwen25-vl-6a7cc9f463d6956b6c3ba911

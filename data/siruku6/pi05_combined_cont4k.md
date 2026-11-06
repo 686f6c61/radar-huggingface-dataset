@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Puntuacion ponderada Track2 |
 |---|---|---|---|---|---|
-| `siruku6/pi05_combined_cont4k` | 4,14B (todos entrenables) | no disponible | Gemma Terms of Use | Publico en HuggingFace | 0,3280 |
-| `siruku6/pi05_bowl5_full` (candidato seleccionado) | no disponible (misma familia pi0.5) | no disponible | Gemma Terms of Use (presumible) | Publico en HuggingFace | 0,3412 |
-| `siruku6/pi05_combined_initpose_full` (candidato C) | 4,14B | no disponible | Gemma Terms of Use (presumible) | Publico en HuggingFace | no disponible (p=0,026 frente a este checkpoint) |
-| `lerobot/pi05_libero_base` | no disponible | no disponible | no disponible | Publico en HuggingFace | no disponible |
+| `siruku6/pi05_combined_cont4k` | 4,14B (todos entrenables) | no disponible | Gemma Terms of Use | Publico en Hugging Face | 0,3280 |
+| `siruku6/pi05_bowl5_full` (candidato seleccionado) | no disponible (misma familia pi0.5) | no disponible | Gemma Terms of Use (presumible) | Publico en Hugging Face | 0,3412 |
+| `siruku6/pi05_combined_initpose_full` (candidato C) | 4,14B | no disponible | Gemma Terms of Use (presumible) | Publico en Hugging Face | no disponible (p=0,026 frente a este checkpoint) |
+| `lerobot/pi05_libero_base` | no disponible | no disponible | no disponible | Publico en Hugging Face | no disponible |
 
 Los tres primeros son variantes de la misma familia π0.5 y se diferencian por la mezcla de datos de ajuste fino y el número de pasos, no por arquitectura o tamaño. No se dispone de datos para comparar con alternativas de otras familias (por ejemplo, otras políticas VLA de LeRobot) en la información proporcionada.
 
@@ -93,11 +93,11 @@ Los tres primeros son variantes de la misma familia π0.5 y se diferencian por l
 - Licencia: es un Model Derivative de Gemma distribuido bajo los Gemma Terms of Use. El uso comercial está sujeto a dichos términos y a la Gemma Prohibited Use Policy, y cualquier redistribución debe incluir una copia de los términos para el receptor.
 - Sin garantía: el autor lo distribuye "as-is", sin garantía de ningún tipo.
 - Adopción nula registrada: 0 descargas y 0 "likes" en el momento de redactar esta ficha; no hay validación independiente por parte de la comunidad.
-- Trazabilidad parcial: el dataset de entrenamiento se referencia como `local/libero_combined_bowl5_initpose`, con una ruta local en lugar de un identificador de repositorio público verificado en el texto de la model card (el autor apunta a `siruku6/libero_combined_bowl5_initpose` en HuggingFace).
+- Trazabilidad parcial: el dataset de entrenamiento se referencia como `local/libero_combined_bowl5_initpose`, con una ruta local en lugar de un identificador de repositorio público verificado en el texto de la model card (el autor apunta a `siruku6/libero_combined_bowl5_initpose` en Hugging Face).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siruku6/pi05_combined_cont4k
+- Modelo en Hugging Face: https://huggingface.co/siruku6/pi05_combined_cont4k
 - Modelo base (checkpoint de partida): https://huggingface.co/siruku6/pi05_combined_initpose_full
 - Modelo raiz de la cadena: https://huggingface.co/lerobot/pi05_libero_base (revision `a217bfd3b14673cf2ce597e69997ab21866438dd`)
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/siruku6/libero_combined_bowl5_initpose

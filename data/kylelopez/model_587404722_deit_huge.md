@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_587404722_deit_huge` es una implementación a gran escala de la arquitectura DeIT (Data-efficient Image Transformer), desarrollada por KyleLopez y publicada en HuggingFace bajo licencia CC-BY-4.0. DeIT es una familia de transformers visuales diseñada originalmente por Meta AI para entrenar modelos de visión por computadora con menos datos que los ViT estándar, manteniendo un rendimiento competitivo. Este repositorio concreto, sin embargo, configura la arquitectura con un head de tarea orientado a "generación", lo que sugiere que el modelo está destinado a tareas de generación de imágenes o contenido visual, aunque la descripción no aporta detalles adicionales sobre el dominio exacto.
+El modelo `model_587404722_deit_huge` es una implementación a gran escala de la arquitectura DeIT (Data-efficient Image Transformer), desarrollada por KyleLopez y publicada en Hugging Face bajo licencia CC-BY-4.0. DeIT es una familia de transformers visuales diseñada originalmente por Meta AI para entrenar modelos de visión por computadora con menos datos que los ViT estándar, manteniendo un rendimiento competitivo. Este repositorio concreto, sin embargo, configura la arquitectura con un head de tarea orientado a "generación", lo que sugiere que el modelo está destinado a tareas de generación de imágenes o contenido visual, aunque la descripción no aporta detalles adicionales sobre el dominio exacto.
 
 La implementación usa atención flash, fusión bilinear, activación approx-gelu, normalización batchnorm e inicialización kaiming, junto con el optimizador AdamW y un scheduler de tipo step. La escala "huge" implica una capacidad de parámetros elevada, aunque no se especifica el número exacto. El repositorio contiene únicamente un archivo de código (`model_587404722_deit_huge.py`) y no incluye pesos preentrenados, lo que sugiere que se trata de una definición de arquitectura más que de un modelo listo para su uso. No se han publicado métricas de rendimiento, y el repositorio no dispone de información sobre el dataset de entrenamiento ni sobre las capacidades concretas del modelo.
 
@@ -77,5 +77,5 @@ No obstante, estas comparaciones son especulativas y deben tomarse como orientat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KyleLopez/model_587404722_deit_huge
+- Repositorio Hugging Face: https://huggingface.co/KyleLopez/model_587404722_deit_huge
 - No se encontraron otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web.

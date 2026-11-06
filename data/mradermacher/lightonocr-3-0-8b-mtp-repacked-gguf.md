@@ -25,7 +25,7 @@ El modelo esta etiquetado como especializado en OCR, comprension de documentos, 
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. El nombre incluye el sufijo "MTP", que en la literatura reciente suele asociarse a multi-token prediction, una tecnica de entrenamiento que permite al modelo predecir varios tokens futuros simultaneamente para mejorar la eficiencia y la calidad de la generacion. Sin embargo, no se confirma este extremo en la documentacion disponible.
 
-Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni innovaciones tecnicas especificas mas alla de las capacidades declaradas en las etiquetas: OCR, comprension de documentos, grounding visual y vision-lenguaje. El proceso de cuantizacion realizado por mradermacher es estatico (no se ofrecen cuantizaciones ponderadas/imatrix en el momento de la publicacion), con conversion desde el formato HuggingFace original.
+Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni innovaciones tecnicas especificas mas alla de las capacidades declaradas en las etiquetas: OCR, comprension de documentos, grounding visual y vision-lenguaje. El proceso de cuantizacion realizado por mradermacher es estatico (no se ofrecen cuantizaciones ponderadas/imatrix en el momento de la publicacion), con conversion desde el formato Hugging Face original.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked
 - Pagina de descargas del autor: https://hf.tst.eu/model#LightOnOCR-3-0.8B-MTP-Repacked-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

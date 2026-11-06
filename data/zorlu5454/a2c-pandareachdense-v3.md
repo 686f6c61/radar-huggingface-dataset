@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Zorlu5454/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de Gymnasium-Robotics en el que un brazo Franka Emika Panda debe alcanzar una posicion objetivo en el espacio, con una funcion de recompensa densa. El entrenamiento se ha realizado con la libreria stable-baselines3 y el artefacto se publica en HuggingFace Hub bajo el pipeline `reinforcement-learning`.
+El modelo `Zorlu5454/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de Gymnasium-Robotics en el que un brazo Franka Emika Panda debe alcanzar una posicion objetivo en el espacio, con una funcion de recompensa densa. El entrenamiento se ha realizado con la libreria stable-baselines3 y el artefacto se publica en Hugging Face Hub bajo el pipeline `reinforcement-learning`.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada especificamente para una tarea de control. La model card es practicamente vacia (incluye la etiqueta `TODO` en la seccion de uso) y no declara licencia, idiomas, arquitectura de red ni presupuesto de entrenamiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su tamano indicado es de 0,0 GB.
 
@@ -79,7 +79,7 @@ En la informacion proporcionada no hay resultados publicados de otros agentes so
 
 | Modelo / algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| A2C (este modelo) | PandaReachDense-v3 | no disponible | no aplica | mean_reward -0,20 +/- 0,09 (no verificado) | no disponible | HuggingFace Hub, 0 descargas |
+| A2C (este modelo) | PandaReachDense-v3 | no disponible | no aplica | mean_reward -0,20 +/- 0,09 (no verificado) | no disponible | Hugging Face Hub, 0 descargas |
 | PPO con stable-baselines3 | PandaReachDense-v3 | no disponible | no aplica | no disponible | no disponible | implementacion en la libreria, sin checkpoint asociado en esta ficha |
 | SAC con stable-baselines3 | PandaReachDense-v3 | no disponible | no aplica | no disponible | no disponible | implementacion en la libreria, sin checkpoint asociado en esta ficha |
 | TD3 con stable-baselines3 | PandaReachDense-v3 | no disponible | no aplica | no disponible | no disponible | implementacion en la libreria, sin checkpoint asociado en esta ficha |
@@ -99,7 +99,7 @@ En la informacion proporcionada no hay resultados publicados de otros agentes so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zorlu5454/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Zorlu5454/a2c-PandaReachDense-v3
 - stable-baselines3 (libreria citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (libreria citada en el fragmento de codigo de la model card): https://github.com/huggingface/huggingface_sb3
 - Entorno PandaReachDense-v3 (documentacion de Gymnasium-Robotics): https://robotics.farama.org/envs/fetch/reach/

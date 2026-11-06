@@ -76,14 +76,14 @@ La comparativa con alternativas de la misma categoría (modelos de roleplay con 
 - La conmutación dinámica de contexto puede provocar que el modelo omita el bloque de razonamiento en modo inmersivo, lo que afecta a la consistencia lógica en escenarios que requieren análisis.
 - El conocimiento se limita a la Monster Girl Encyclopedia y puede alucinar fuera de ese dominio; no hay evidencia de rendimiento en tareas generales.
 - No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K), por lo que el rendimiento en tareas estándar es desconocido.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopción muy limitada y poca validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción muy limitada y poca validación comunitaria.
 - El modelo base Qwen3.5-9B no es un modelo público ampliamente documentado; la información sobre su entrenamiento y capacidades base es limitada.
 - La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede tener implicaciones legales según la jurisdicción por su temática adulta.
 - Los parámetros de muestreo recomendados (temperatura 0.65-0.75, Min P 0.05, Repeat Penalty 1.05-1.15, Top P 0.9) son específicos para este modelo y pueden no trasladarse a otros contextos de uso.
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/cooperdk/MGE-GemmaWild-9B-GGUF
+- Hugging Face (modelo GGUF): https://huggingface.co/cooperdk/MGE-GemmaWild-9B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/cooperdk/MGE-GemmaWild
 - Inferencia en la nube (FriendliAI): https://friendli.ai/models/cooperdk/MGE-GemmaWild-9b
 - Análisis de seguridad del paquete (Socket): https://socket.dev/huggingface/package/cooperdk/mge-gemmawild-9b

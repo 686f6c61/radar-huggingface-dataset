@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`craigjon1982/deit-retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto a juzgar por la referencia a Flickr30k en la guía de evaluación. Lo publica el usuario craigjon1982 bajo licencia MIT y con un total de 49.600 parámetros, una cifra que lo sitúa en el rango de los juguetes experimentales y no en el de los modelos utilizables en producción.
+`craigjon1982/deit-retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto a juzgar por la referencia a Flickr30k en la guía de evaluación. Lo publica el usuario craigjon1982 bajo licencia MIT y con un total de 49.600 parámetros, una cifra que lo sitúa en el rango de los juguetes experimentales y no en el de los modelos utilizables en producción.
 
 El propio autor es explícito al respecto: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y revisiones de código, no un modelo entrenado ni evaluado. La model card indica que la configuración etiquetada como "large" es un ajuste generado automáticamente para el script, que no se reclama ninguna puntuación de benchmark y que no se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio. La relevancia de esta ficha, por tanto, no está en el rendimiento del artefacto sino en su valor como andamiaje reproducible para experimentos controlados de retrieval.
 
@@ -27,7 +27,7 @@ Conviene subrayar la discrepancia entre la etiqueta "large" de la configuración
 | Normalizacion | rmsnorm |
 | Optimizador del recipe por defecto | sgd con schedule de warmup constante |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Autor | craigjon1982 |
 | URL | https://huggingface.co/craigjon1982/deit-retrieval |
@@ -80,7 +80,7 @@ No se dispone de datos comparativos utilizables en la información proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| craigjon1982/deit-retrieval | 49.600 | No disponible | No disponible (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| craigjon1982/deit-retrieval | 49.600 | No disponible | No disponible (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | Alternativas de retrieval imagen-texto (CLIP, SigLIP, BLIP y derivados) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La conclusión práctica es que no existe una comparación válida posible: este repositorio es un esqueleto de código con pesos de inicialización, mientras que las alternativas citadas son modelos entrenados y evaluados. Cualquier comparación numérica exigiría entrenar primero este DeiT con el mismo presupuesto de datos, ajuste y semillas que el modelo de referencia, tal y como recomienda el propio autor.
@@ -100,9 +100,9 @@ La conclusión práctica es que no existe una comparación válida posible: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craigjon1982/deit-retrieval
+- Modelo en Hugging Face: https://huggingface.co/craigjon1982/deit-retrieval
 - Paper de DeiT (referencia de la arquitectura): no disponible en la informacion proporcionada
-- Repositorio de código asociado: no disponible; el propio repositorio de HuggingFace incluye `eval.py`, `config.json`, `training_args.json` y `model.safetensors`
+- Repositorio de código asociado: no disponible; el propio repositorio de Hugging Face incluye `eval.py`, `config.json`, `training_args.json` y `model.safetensors`
 - Demo o espacio de prueba: no disponible
 - Blog o publicación técnica del autor: no disponible
 - Dataset de evaluación sugerido (Flickr30k): mencionado en la model card, sin enlace explícito proporcionado

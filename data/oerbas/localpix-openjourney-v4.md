@@ -72,8 +72,8 @@ La versión Core ML es funcionalmente equivalente al modelo original, pero optim
 
 ## Enlaces
 
-- [HuggingFace: oerbas/localpix-openjourney-v4](https://huggingface.co/oerbas/localpix-openjourney-v4)
-- [HuggingFace: prompthero/openjourney-v4](https://huggingface.co/prompthero-diffusion-models/openjourney-v4)
+- [Hugging Face: oerbas/localpix-openjourney-v4](https://huggingface.co/oerbas/localpix-openjourney-v4)
+- [Hugging Face: prompthero/openjourney-v4](https://huggingface.co/prompthero-diffusion-models/openjourney-v4)
 - [Open Journey (sitio web)](https://www.openjourney.art/)
 - [Open Laboratory: OpenJourney v4](https://openlaboratory.com/models/openjourney-v4/)
-- [HuggingFace: prompthero/openjourney (versión anterior)](https://huggingface.co/prompthero/openjourney)
+- [Hugging Face: prompthero/openjourney (versión anterior)](https://huggingface.co/prompthero/openjourney)

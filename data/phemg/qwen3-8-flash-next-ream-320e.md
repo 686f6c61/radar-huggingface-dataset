@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `phemg/Qwen3.8-Flash-Next-REAM-320E`, publicado por el usuario phemg en HuggingFace, no contiene documentación técnica utilizable: su model card se limita a una cabecera YAML con la licencia `apache-2.0` y ningún contenido adicional. Los metadatos de la plataforma indican 0 descargas, 0 likes, ningún pipeline declarado y ningún idioma especificado, con fecha de creación y última actualización idénticas (15 de septiembre de 2026). No se dispone de información sobre arquitectura, número de parámetros, tokenizador, datos de entrenamiento ni formato de pesos.
+El repositorio `phemg/Qwen3.8-Flash-Next-REAM-320E`, publicado por el usuario phemg en Hugging Face, no contiene documentación técnica utilizable: su model card se limita a una cabecera YAML con la licencia `apache-2.0` y ningún contenido adicional. Los metadatos de la plataforma indican 0 descargas, 0 likes, ningún pipeline declarado y ningún idioma especificado, con fecha de creación y última actualización idénticas (15 de septiembre de 2026). No se dispone de información sobre arquitectura, número de parámetros, tokenizador, datos de entrenamiento ni formato de pesos.
 
 El nombre del repositorio sigue la convención de nomenclatura de la familia Qwen (menciona "Qwen3.8", "Flash", "Next") e incluye los sufijos "REAM" y "320E", que podrían sugerir una variante con mezcla de expertos, pero se trata únicamente de una inferencia a partir del nombre y no está respaldada por ningún dato publicado. Cualquier afirmación sobre sus características técnicas sería especulativa.
 
@@ -23,7 +23,7 @@ En su estado actual, el modelo no es evaluable ni recomendable para uso en produ
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna descripción de la arquitectura, del proceso de entrenamiento ni de los datos utilizados. La model card del repositorio no contiene más que la declaración de licencia, y los metadatos de HuggingFace no incluyen pipeline, idiomas ni etiquetas técnicas más allá de `license:apache-2.0` y `region:us`.
+No se ha publicado ninguna descripción de la arquitectura, del proceso de entrenamiento ni de los datos utilizados. La model card del repositorio no contiene más que la declaración de licencia, y los metadatos de Hugging Face no incluyen pipeline, idiomas ni etiquetas técnicas más allá de `license:apache-2.0` y `region:us`.
 
 No hay información sobre número de tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas. Los sufijos del nombre ("Flash", "Next", "REAM", "320E") no van acompañados de ninguna especificación que permita interpretarlos con rigor.
 
@@ -72,5 +72,5 @@ No es posible establecer una comparativa rigurosa. El nombre del repositorio rem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phemg/Qwen3.8-Flash-Next-REAM-320E
+- Hugging Face: https://huggingface.co/phemg/Qwen3.8-Flash-Next-REAM-320E
 - No se han encontrado papers, blogs, repositorios, demos ni documentación adicional relacionados con este modelo en la información disponible.

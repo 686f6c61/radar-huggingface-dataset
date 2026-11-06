@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`khukhamos/multistruq-mistral-7b-extended-improved` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario khukhamos, construido sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador de aproximadamente 0,1 GB que debe cargarse junto al modelo base para funcionar. El nombre sugiere un ajuste orientado a tareas de estructuración múltiple ("multistruq"), aunque la model card no documenta el objetivo concreto del entrenamiento.
+`khukhamos/multistruq-mistral-7b-extended-improved` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario khukhamos, construido sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador de aproximadamente 0,1 GB que debe cargarse junto al modelo base para funcionar. El nombre sugiere un ajuste orientado a tareas de estructuración múltiple ("multistruq"), aunque la model card no documenta el objetivo concreto del entrenamiento.
 
-El modelo hereda del base todas las características arquitectónicas de Mistral-7B-Instruct-v0.3, pero no se ha publicado información sobre el dataset de ajuste, los hiperparámetros, el número de pasos ni los resultados de evaluación. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "More Information Needed".
+El modelo hereda del base todas las características arquitectónicas de Mistral-7B-Instruct-v0.3, pero no se ha publicado información sobre el dataset de ajuste, los hiperparámetros, el número de pasos ni los resultados de evaluación. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "More Information Needed".
 
 Su relevancia actual es limitada: se trata de un adaptador sin descargas ni likes en el momento de la consulta, sin licencia declarada y sin documentación técnica. Es útil únicamente como ejemplo de fine-tuning ligero con PEFT sobre Mistral-7B o para experimentación interna, no como componente listo para producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khukhamos/multistruq-mistral-7b-extended-improved | ~7,2 B (base) + adaptador LoRA | 32 768 (heredado del base) | Adaptador LoRA | no disponible | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Modelo completo | Apache 2.0 | HuggingFace, ampliamente usado |
-| Adaptadores LoRA comunitarios sobre Mistral-7B | ~7,2 B (base) + adaptador | 32 768 (heredado) | Adaptador LoRA | variable | HuggingFace, variable |
+| khukhamos/multistruq-mistral-7b-extended-improved | ~7,2 B (base) + adaptador LoRA | 32 768 (heredado del base) | Adaptador LoRA | no disponible | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32 768 | Modelo completo | Apache 2.0 | Hugging Face, ampliamente usado |
+| Adaptadores LoRA comunitarios sobre Mistral-7B | ~7,2 B (base) + adaptador | 32 768 (heredado) | Adaptador LoRA | variable | Hugging Face, variable |
 
 No se dispone de datos de rendimiento del adaptador para comparar con alternativas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del adaptador para comparar con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khukhamos/multistruq-mistral-7b-extended-improved
+- Hugging Face: https://huggingface.co/khukhamos/multistruq-mistral-7b-extended-improved
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Librería PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

@@ -4,7 +4,7 @@
 
 chandra-ocr-2-MTP-Repacked es un reempaquetado del modelo OCR multimodal datalab-to/chandra-ocr-2, publicado por el usuario prithivMLmods. El modelo original de Datalab es un sistema de reconocimiento optico de caracteres de proposito general que transforma imagenes y PDF en Markdown estructurado, HTML o JSON preservando la informacion de maquetacion. Este reempaquetado anade soporte de Multi-Token Prediction (MTP) integrado en los pesos para acelerar la inferencia local mediante decodificacion especulativa sin necesidad de un modelo borrador separado.
 
-El modelo base emplea una arquitectura multimodal etiquetada como qwen3_5 en los metadatos de HuggingFace, con aproximadamente 4.660 millones de parametros totales y pesos en safetensors de unos 9,3 GB en BF16. Segun la model card, alcanza resultados SOTA en OCR con un 85,9% en olmocr y un 77,8% de puntuacion multilingue, con mejoras notables en ecuaciones matematicas, reconstruccion de tablas complejas con celdas combinadas, reconocimiento de escritura manual y elementos de formulario.
+El modelo base emplea una arquitectura multimodal etiquetada como qwen3_5 en los metadatos de Hugging Face, con aproximadamente 4.660 millones de parametros totales y pesos en safetensors de unos 9,3 GB en BF16. Segun la model card, alcanza resultados SOTA en OCR con un 85,9% en olmocr y un 77,8% de puntuacion multilingue, con mejoras notables en ecuaciones matematicas, reconstruccion de tablas complejas con celdas combinadas, reconocimiento de escritura manual y elementos de formulario.
 
 La relevancia de este reempaquetado es practica: segun el autor, el modelo original ya funciona con llama.cpp, pero aplicaciones locales como LM Studio o Jan AI presentan problemas de offloading. Esta version corrige esos problemas y ofrece cuantizaciones GGUF desde Q3_K_M (2,32 GB) hasta BF16 (8,67 GB), ademas de un fichero mmproj para las capacidades de vision, lo que facilita el despliegue en hardware de consumo.
 
@@ -64,15 +64,15 @@ Estos datos provienen de la model card del modelo base citada en la informacion 
 - En BF16 completo, los pesos ocupan unos 8,67 GB, por lo que se recomienda al menos 10-12 GB de VRAM para margen de contexto y activaciones.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores para cuantizaciones altas; A100/H100 para despliegue en produccion con vLLM o TGI.
 - Cabe en GPU de consumo: si, desde GPUs de 6-8 GB con cuantizaciones Q3/Q4.
-- Opciones de despliegue: llama.cpp (llama-cli), LM Studio, Jan AI, HuggingFace Transformers, vLLM y text-generation-inference.
+- Opciones de despliegue: llama.cpp (llama-cli), LM Studio, Jan AI, Hugging Face Transformers, vLLM y text-generation-inference.
 - Latencia y throughput: no disponibles en la informacion proporcionada; el autor indica que MTP acelera la inferencia local, pero sin cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chandra-ocr-2-MTP-Repacked | ~4,66 mil millones | no disponible | olmocr 85,9%; multilingue 77,8% | openrail | HuggingFace (safetensors + GGUF) |
-| datalab-to/chandra-ocr-2 (base) | ~4,66 mil millones | no disponible | mismos benchmarks que el repack | openrail | HuggingFace |
+| chandra-ocr-2-MTP-Repacked | ~4,66 mil millones | no disponible | olmocr 85,9%; multilingue 77,8% | openrail | Hugging Face (safetensors + GGUF) |
+| datalab-to/chandra-ocr-2 (base) | ~4,66 mil millones | no disponible | mismos benchmarks que el repack | openrail | Hugging Face |
 | Chandra 1 | no disponible | no disponible | 12% inferior en multilingue segun la model card | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos suficientes para comparar con alternativas OCR de otros desarrolladores (por ejemplo, modelos tipo Donut o PaddleOCR). La comparativa se limita al modelo base y su version anterior.
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos suficientes para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
 - Modelo base: https://huggingface.co/datalab-to/chandra-ocr-2
 - Licencia del modelo base: https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/LICENSE
 - Carpeta GGUF: https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked/tree/main/GGUF

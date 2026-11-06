@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jiangnanmaterials/dino-classification-experiments-2024` es un prototipo de investigación publicado en HuggingFace por el usuario Jiangnanmaterials, orientado a tareas de clasificación y construido sobre una implementación propia bautizada como "Dino". No debe confundirse con el método DINO de autosupervisión de Meta ni con DINOv2: la propia model card lo describe como una implementación personalizada ("custom implementation") cuyo `model.safetensors` es un checkpoint de inicialización para pruebas de humo, no un modelo entrenado ni evaluado.
+`Jiangnanmaterials/dino-classification-experiments-2024` es un prototipo de investigación publicado en Hugging Face por el usuario Jiangnanmaterials, orientado a tareas de clasificación y construido sobre una implementación propia bautizada como "Dino". No debe confundirse con el método DINO de autosupervisión de Meta ni con DINOv2: la propia model card lo describe como una implementación personalizada ("custom implementation") cuyo `model.safetensors` es un checkpoint de inicialización para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El repositorio tiene un alcance deliberadamente mínimo: una escala "tiny", pesos de tan solo 16.576 parámetros totales (según los safetensors reales) y un tamaño de repositorio registrado de 0,0 GB. Incluye `run.py` como artefacto principal, `config.json` con la arquitectura generada y `training_args.json` con la receta de experimento por defecto (optimizador Novograd con schedule coseno). En el momento de la consulta acumula 0 descargas y 0 likes, y la fecha de creación registrada es el 30 de septiembre de 2026.
 
@@ -47,7 +47,7 @@ Dado que se trata de un prototipo sin entrenar, los casos de uso realistas se li
 - Punto de partida de código abierto: reutilizar la implementación bajo licencia BSD-3-Clause como base de un repositorio propio de investigación en clasificación, respetando la atribución.
 - Referencia de configuración arquitectónica: examinar `config.json` para estudiar cómo se especifican atención grouped query, fusión bilineal y GroupNorm en esta implementación concreta.
 - Base para comparativas metodológicas: servir como punto de control de escala "tiny" en estudios que comparen recetas de entrenamiento manteniendo la misma exposición de datos, presupuesto de tuning y semillas, tal como recomienda el propio autor.
-- Docencia y formación: ilustrar la estructura mínima de un repositorio de investigación en HuggingFace (pesos, configuración, receta y documentación) sin la complejidad de un modelo a gran escala.
+- Docencia y formación: ilustrar la estructura mínima de un repositorio de investigación en Hugging Face (pesos, configuración, receta y documentación) sin la complejidad de un modelo a gran escala.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ La información proporcionada no incluye datos de modelos comparables, y el prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jiangnanmaterials/dino-classification-experiments-2024 | 16.576 | no disponible | no disponible | BSD-3-Clause | HuggingFace |
+| Jiangnanmaterials/dino-classification-experiments-2024 | 16.576 | no disponible | no disponible | BSD-3-Clause | Hugging Face |
 | DINO / DINOv2 (Meta), ViT-tiny, DeiT-tiny u otras alternativas de clasificación | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados para establecer una comparación cuantitativa fiable.
@@ -88,5 +88,5 @@ No se dispone de datos verificados para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jiangnanmaterials/dino-classification-experiments-2024
+- Hugging Face: https://huggingface.co/Jiangnanmaterials/dino-classification-experiments-2024
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a Emirates (aerolínea) y no guardan relación con el repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

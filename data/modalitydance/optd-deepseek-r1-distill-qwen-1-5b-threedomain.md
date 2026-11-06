@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain es un checkpoint estudiante obtenido mediante *On-Policy Transition Distillation* (OPTD), una variante de destilación on-policy descrita en el artículo del mismo nombre. Lo publica el usuario ModalityDance en HuggingFace y parte del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, un transformer decoder-only de la familia Qwen2 con 1.777.088.000 parámetros. El entrenamiento se realizó sobre tres dominios (matematicas, codigo y seguimiento de instrucciones) durante 150 actualizaciones, alineando los incrementos de log-probabilidad entre profesor y estudiante en los bloques intermedios 11, 15 y 19 (indexados desde cero) y en la salida final.
+OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain es un checkpoint estudiante obtenido mediante *On-Policy Transition Distillation* (OPTD), una variante de destilación on-policy descrita en el artículo del mismo nombre. Lo publica el usuario ModalityDance en Hugging Face y parte del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, un transformer decoder-only de la familia Qwen2 con 1.777.088.000 parámetros. El entrenamiento se realizó sobre tres dominios (matematicas, codigo y seguimiento de instrucciones) durante 150 actualizaciones, alineando los incrementos de log-probabilidad entre profesor y estudiante en los bloques intermedios 11, 15 y 19 (indexados desde cero) y en la salida final.
 
 El problema que aborda es el de la destilación de modelos especializados en razonamiento hacia estudiantes pequenos: en lugar de imitar solo la distribución final del profesor, OPTD iguala las transiciones de probabilidad a lo largo de varias capas, usando rollouts generados por el propio estudiante. Esto lo convierte en un objeto de estudio para investigadores que trabajan en destilación, no en un modelo orientado a produccion.
 
@@ -70,10 +70,10 @@ La model card advierte explicitamente de que las comparaciones del articulo requ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain | 1.777.088.000 | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible; sujeta a licencias upstream | HuggingFace, pesos BF16 safetensors |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | ~1,5B (valor exacto no disponible en esta ficha) | No disponible en la informacion proporcionada | Metricas publicadas por DeepSeek en su repositorio (no verificadas aqui) | La del repositorio del modelo base (verificar) | HuggingFace, pesos safetensors |
-| Qwen2.5-1.5B-Instruct | ~1,5B | No disponible en la informacion proporcionada | No disponible en esta ficha | Apache 2.0 (verificar en el repositorio) | HuggingFace, safetensors y GGUF de la comunidad |
-| DeepSeek-R1-Distill-Qwen-7B | ~7B | No disponible en la informacion proporcionada | No disponible en esta ficha | La del repositorio del modelo (verificar) | HuggingFace |
+| OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain | 1.777.088.000 | No disponible | Sin benchmarks publicados en la informacion disponible | No disponible; sujeta a licencias upstream | Hugging Face, pesos BF16 safetensors |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | ~1,5B (valor exacto no disponible en esta ficha) | No disponible en la informacion proporcionada | Metricas publicadas por DeepSeek en su repositorio (no verificadas aqui) | La del repositorio del modelo base (verificar) | Hugging Face, pesos safetensors |
+| Qwen2.5-1.5B-Instruct | ~1,5B | No disponible en la informacion proporcionada | No disponible en esta ficha | Apache 2.0 (verificar en el repositorio) | Hugging Face, safetensors y GGUF de la comunidad |
+| DeepSeek-R1-Distill-Qwen-7B | ~7B | No disponible en la informacion proporcionada | No disponible en esta ficha | La del repositorio del modelo (verificar) | Hugging Face |
 
 Nota: los datos de contexto, rendimiento y licencia de las alternativas deben confirmarse en sus repositorios oficiales; en esta ficha solo se dispone de la informacion del modelo de ModalityDance.
 
@@ -92,7 +92,7 @@ Nota: los datos de contexto, rendimiento y licencia de las alternativas deben co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain
+- Modelo en Hugging Face: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-1.5B-ThreeDomain
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Articulo citado *On-Policy Transition Distillation*: referencia mencionada en la model card, enlace no disponible
 - Repositorio de codigo del entrenamiento: no disponible

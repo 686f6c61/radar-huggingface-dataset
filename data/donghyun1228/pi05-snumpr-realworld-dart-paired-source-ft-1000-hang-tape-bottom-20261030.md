@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world DART (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace |
-| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-bottom-20261030` | no disponible | no disponible | sin evaluación publicada | Apache 2.0 (presumible) | HuggingFace |
-| `snumpr-iclr27-v1/9999` (checkpoint base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| π0.5 SNUMPR real-world DART (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face |
+| `pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-bottom-20261030` | no disponible | no disponible | sin evaluación publicada | Apache 2.0 (presumible) | Hugging Face |
+| `snumpr-iclr27-v1/9999` (checkpoint base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-hang-tape-bottom-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-hang-tape-bottom-20261030
 - Modelo fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-hang-tape-bottom-20261030
 - Checkpoint base: `snumpr-iclr27-v1/9999` (referenciado en la model card; no se proporciona URL directa)
 - Código de adaptación: `Donghyun1228/vla_adaptation`, commit `c4fcb61` (no se proporciona URL directa)

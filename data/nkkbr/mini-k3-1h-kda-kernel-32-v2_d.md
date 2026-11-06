@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-kda-kernel-32-v2_D es un checkpoint de preentrenamiento de aproximadamente 1.018 millones de parámetros lógicos desarrollado por el usuario nkkbr, publicado en HuggingFace como parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3 a escala reducida. Se trata de un modelo de investigación, no de un asistente: es un transformer híbrido de 13 capas que combina 9 capas KDA (atención lineal con decaimiento y convolución causal depthwise) con 4 capas Gated MLA (atención latente multi-cabeza con puerta de salida y codificación posicional NoPE), más una capa densa inicial y una pila de mezcla de expertos con enrutado disperso.
+Mini-K3-1H-kda-kernel-32-v2_D es un checkpoint de preentrenamiento de aproximadamente 1.018 millones de parámetros lógicos desarrollado por el usuario nkkbr, publicado en Hugging Face como parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3 a escala reducida. Se trata de un modelo de investigación, no de un asistente: es un transformer híbrido de 13 capas que combina 9 capas KDA (atención lineal con decaimiento y convolución causal depthwise) con 4 capas Gated MLA (atención latente multi-cabeza con puerta de salida y codificación posicional NoPE), más una capa densa inicial y una pila de mezcla de expertos con enrutado disperso.
 
 El modelo retiene los operadores característicos de la familia Kimi-K3 (KDA, Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, output gates y Quantile Balancing) pero a una escala manejable en una sola GPU. De sus 1.018 millones de parámetros lógicos solo se activan 354,7 millones por token, lo que reduce el coste de cómputo por token al de un modelo denso de ~0,35B pese a mantener la capacidad total de un modelo de ~1B.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Comparativa con modelos densos de tamaño cercano y con licencia y contexto publicados. Los datos de las alternativas provienen de su documentación pública; los del modelo objeto de la ficha, del repositorio de HuggingFace. No hay benchmarks comunes que permitan comparar rendimiento, por lo que la columna de rendimiento se deja como no disponible.
+Comparativa con modelos densos de tamaño cercano y con licencia y contexto publicados. Los datos de las alternativas provienen de su documentación pública; los del modelo objeto de la ficha, del repositorio de Hugging Face. No hay benchmarks comunes que permitan comparar rendimiento, por lo que la columna de rendimiento se deja como no disponible.
 
 | Modelo | Parametros | Activos por token | Contexto | Arquitectura | Licencia | Estado |
 |---|---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Diferencias relevantes: frente a los tres alternativas, el modelo de nkkbr solo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-32-v2_D
+- Repositorio en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-32-v2_D
 - Ficheros de arquitectura y variante referenciados dentro del repositorio: `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`
 - Manifiestos JSON con revisiones de código fuente congeladas, cuotas de tokens, hashes de planificación, configuración del optimizador, hardware de referencia y hashes del split de validación: incluidos en el repositorio (no se dispone de URL directa en la información proporcionada)
 - Métricas de entrenamiento (NLL y perplejidad de desarrollo fijo): registradas en W&B y en JSONL del run según la model card; no se proporciona el enlace

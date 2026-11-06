@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `juzodinma/gemma4-agri-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `juzodinma`, diseñado para ajustar el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit` (una versión cuantizada a 4 bits de Gemma 4 de Google DeepMind). El nombre "agri" sugiere una especialización en el dominio agrícola, aunque la model card no proporciona ninguna descripción, dataset ni detalle de entrenamiento. El adaptador ocupa 0,4 GB y se distribuye en formato safetensors.
+El modelo `juzodinma/gemma4-agri-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `juzodinma`, diseñado para ajustar el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit` (una versión cuantizada a 4 bits de Gemma 4 de Google DeepMind). El nombre "agri" sugiere una especialización en el dominio agrícola, aunque la model card no proporciona ninguna descripción, dataset ni detalle de entrenamiento. El adaptador ocupa 0,4 GB y se distribuye en formato safetensors.
 
 La relevancia de este modelo radica en su enfoque de fine-tuning eficiente mediante LoRA y QLoRA, que permite adaptar un modelo de lenguaje grande a un dominio específico con un coste computacional reducido. Sin embargo, la ausencia total de documentación técnica, métricas de evaluación y datos de entrenamiento limita seriamente su utilidad práctica para desarrolladores e investigadores que necesiten evaluar su rendimiento de forma rigurosa.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre adaptadores LoRA comparables en el dominio a
 
 ## Enlaces
 
-- [HuggingFace - juzodinma/gemma4-agri-lora](https://huggingface.co/juzodinma/gemma4-agri-lora)
+- [Hugging Face - juzodinma/gemma4-agri-lora](https://huggingface.co/juzodinma/gemma4-agri-lora)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Modelo base: unsloth/gemma-4-e2b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit) (enlace no verificado, se infiere del ID)
 - [Documentación de Gemma 4 de Google AI](https://ai.google.dev/gemma/docs/core) (referencia general del modelo base)

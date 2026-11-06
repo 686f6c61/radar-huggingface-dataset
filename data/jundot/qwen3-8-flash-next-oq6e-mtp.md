@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento de e
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ6e-mtp
+- Checkpoint en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ6e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

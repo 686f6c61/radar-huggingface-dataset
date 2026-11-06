@@ -31,7 +31,7 @@ Su relevancia actual es de infraestructura: actua como enrutador previo en pipel
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder bidireccional ModernBERT de 22 capas destinado exclusivamente a clasificacion, con una cabeza de dos logits y pooling de media enmascarada. No es un router generativo ni un modelo MoE: la etiqueta "307M" designa el tamano del encoder compartido, no una capacidad de generacion. El mapeo de etiquetas de `fact_check_mapping.json` (compatible con el router) y el `config.json` de HuggingFace usan los mismos indices, y ambos se hashearon junto con los pesos antes de la evaluacion final.
+El modelo es un encoder bidireccional ModernBERT de 22 capas destinado exclusivamente a clasificacion, con una cabeza de dos logits y pooling de media enmascarada. No es un router generativo ni un modelo MoE: la etiqueta "307M" designa el tamano del encoder compartido, no una capacidad de generacion. El mapeo de etiquetas de `fact_check_mapping.json` (compatible con el router) y el `config.json` de Hugging Face usan los mismos indices, y ambos se hashearon junto con los pesos antes de la evaluacion final.
 
 La receta de entrenamiento arranco con una cabeza de tarea nueva y un adaptador LoRA de rango 32 sobre `mmbert-32k-yarn` (revision `72a23a6640489471eb4ff7ad3ec5bc80af8a27de`), seguida de entrenamiento con peticiones naturales y de contexto largo. El adaptador y la cabeza seleccionados se transfirieron despues al Vela Base publicado; la transferencia directa no supero la compuerta de retencion a 32K en desarrollo, por lo que se aplico una adaptacion acotada sobre las filas de entrenamiento existentes. El adaptador final se escogio en el paso 100 de esa adaptacion de 200 pasos y se fusiono en el Vela Base real. Los pesos originales de la tarea FactCheck se usaron unicamente como linea base, nunca como inicializacion. Los pesos base tienen SHA-256 `ccc274d12ef6f94f54c0c23f0388527b0a925268a1332b3a6e5c8e56868efb00`.
 
@@ -57,7 +57,7 @@ La receta de entrenamiento arranco con una cabeza de tarea nueva y un adaptador 
 
 ## Benchmarks y rendimiento
 
-Resultados finales congelados, pesos FP32 y computo forward en FP32, frente a la linea base `mmbert32k-factcheck-classifier-merged` (revision `290d3182b2c87e489bd4f63c889e803a27599681`). Ambas partes usan el mismo texto, presupuestos de tokenizador, ejecucion estandar de HuggingFace y argmax sobre dos logits (frontera 0,5).
+Resultados finales congelados, pesos FP32 y computo forward en FP32, frente a la linea base `mmbert32k-factcheck-classifier-merged` (revision `290d3182b2c87e489bd4f63c889e803a27599681`). Ambas partes usan el mismo texto, presupuestos de tokenizador, ejecucion estandar de Hugging Face y argmax sobre dos logits (frontera 0,5).
 
 | Subconjunto final | Peticiones | Aciertos base | Aciertos Vela | Macro F1 base | Macro F1 Vela |
 |---|---:|---:|---:|---:|---:|
@@ -77,7 +77,7 @@ En el punto de operacion fijo por argmax, entre 50 peticiones naturales que nece
 - Inferencia en CPU: viable para clasificacion de una sola peticion, especialmente con la ruta ONNX. El cuello de botella real es la longitud de secuencia: con 32K tokens la memoria de activaciones y el coste de atencion dominan frente al peso del modelo.
 - GPU recomendadas: cualquier GPU con 4-8 GB de VRAM es suficiente para FP32 en lotes moderados; RTX 4090, A100 o H100 permiten lotes grandes y alto throughput. Para secuencias de 32K conviene reservar VRAM adicional para activaciones.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de 8 GB o mas (RTX 3060/4060 en adelante), y tambien en GPUs integradas o Apple Silicon con memoria unificada.
-- Opciones de despliegue: HuggingFace Transformers (ruta de referencia de los resultados publicados), ONNX Runtime, text-embeddings-inference, servidores de endpoints compatibles con HuggingFace y cualquier stack de clasificacion que cargue safetensors. No se publican pesos GGUF, por lo que llama.cpp y Ollama no estan soportados sin conversion previa.
+- Opciones de despliegue: Hugging Face Transformers (ruta de referencia de los resultados publicados), ONNX Runtime, text-embeddings-inference, servidores de endpoints compatibles con Hugging Face y cualquier stack de clasificacion que cargue safetensors. No se publican pesos GGUF, por lo que llama.cpp y Ollama no estan soportados sin conversion previa.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Cualquier cifra depende del hardware, la longitud de secuencia y el backend.
 
 ## Comparativa con modelos similares
@@ -85,9 +85,9 @@ En el punto de operacion fijo por argmax, entre 50 peticiones naturales que nece
 | Modelo | Parametros | Contexto | Macro F1 (peticiones naturales, 102) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Vela-1.0-Encoder-307M-FactCheck | 307.531.778 | 32.768 tokens | 0,772 | MIT | safetensors FP32 y ONNX |
-| mmbert32k-factcheck-classifier-merged (linea base) | no disponible | no disponible (el nombre sugiere 32K) | 0,579 | no disponible | pesos publicados en HuggingFace |
-| Vela-1.0-Encoder-307M (base) | 307.531.778 | no disponible | no aplica (no es clasificador) | no disponible | HuggingFace, revision `5fe5bbb1...` |
-| mmbert-32k-yarn (punto de partida del entrenamiento) | no disponible | no disponible (el nombre sugiere 32K) | no aplica | no disponible | HuggingFace, revision `72a23a66...` |
+| mmbert32k-factcheck-classifier-merged (linea base) | no disponible | no disponible (el nombre sugiere 32K) | 0,579 | no disponible | pesos publicados en Hugging Face |
+| Vela-1.0-Encoder-307M (base) | 307.531.778 | no disponible | no aplica (no es clasificador) | no disponible | Hugging Face, revision `5fe5bbb1...` |
+| mmbert-32k-yarn (punto de partida del entrenamiento) | no disponible | no disponible (el nombre sugiere 32K) | no aplica | no disponible | Hugging Face, revision `72a23a66...` |
 
 No se proporcionan datos de comparativas con clasificadores externos de la misma categoria (por ejemplo otros enrutadores de verificacion factica o clasificadores ModernBERT de terceros), por lo que esa comparacion figura como no disponible.
 
@@ -105,7 +105,7 @@ No se proporcionan datos de comparativas con clasificadores externos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-FactCheck
 - Modelo base Vela-1.0-Encoder-307M: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Revision concreta del modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M/tree/5fe5bbb1a88b7fdcc93bb5b9d546c574564eb114
 - Punto de partida del entrenamiento (mmbert-32k-yarn): https://huggingface.co/llm-semantic-router/mmbert-32k-yarn/tree/72a23a6640489471eb4ff7ad3ec5bc80af8a27de

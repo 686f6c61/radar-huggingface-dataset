@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yobro4619/gemma4_26b_a4b_grpo_chat (este adaptador) | Adaptador sobre base de 26B (4B activos, segun denominacion) | No disponible (entrenado a 8192) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| unsloth/gemma-4-26B-A4B-it (modelo base) | 26B totales, 4B activos (segun denominacion) | No disponible | No disponible | HuggingFace |
+| yobro4619/gemma4_26b_a4b_grpo_chat (este adaptador) | Adaptador sobre base de 26B (4B activos, segun denominacion) | No disponible (entrenado a 8192) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| unsloth/gemma-4-26B-A4B-it (modelo base) | 26B totales, 4B activos (segun denominacion) | No disponible | No disponible | Hugging Face |
 | Gemma 3 27B IT | 27B densos | 128k (segun documentacion publica de Gemma 3) | Terminos de Gemma | Ampliamente desplegado; datos no verificados en la informacion proporcionada |
 | Qwen2.5-VL-32B-Instruct | 32B densos | 128k (segun documentacion publica) | Apache 2.0 (segun publicacion) | Ampliamente desplegado; datos no verificados en la informacion proporcionada |
 
@@ -88,7 +88,7 @@ Las filas de modelos alternativos proceden de conocimiento general y no se han v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yobro4619/gemma4_26b_a4b_grpo_chat
+- Modelo en Hugging Face: https://huggingface.co/yobro4619/gemma4_26b_a4b_grpo_chat
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/yobro4619/final_common_train
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente resultados de un foro sin relacion con el modelo.

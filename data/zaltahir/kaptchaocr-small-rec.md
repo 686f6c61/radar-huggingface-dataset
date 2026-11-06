@@ -81,7 +81,7 @@ El autor advierte que las imágenes de test son disjuntas a nivel de imagen resp
 
 | Modelo | Base | Tamaño | Tarea | Exact match (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KaptchaOCR ft-small | PP-OCRv6 small | 20 MB | Reconocimiento CTC de CAPTCHA | 80,4 % | Apache-2.0 | HuggingFace + GitHub |
+| KaptchaOCR ft-small | PP-OCRv6 small | 20 MB | Reconocimiento CTC de CAPTCHA | 80,4 % | Apache-2.0 | Hugging Face + GitHub |
 | PP-OCRv6 base | PaddleOCR | no disponible | OCR general | no disponible en esta ficha (referenciado en la página de benchmarks) | Apache-2.0 | PaddleOCR |
 | ddddocr | no disponible | no disponible | OCR/CAPTCHA | no disponible en esta ficha (referenciado en la página de benchmarks) | no disponible | Proyecto ddddocr |
 
@@ -101,7 +101,7 @@ Los resultados comparativos con ddddocr y PP-OCRv6 base están publicados en la 
 
 ## Enlaces
 
-- [HuggingFace: zaltahir/kaptchaocr-small-rec](https://huggingface.co/zaltahir/kaptchaocr-small-rec)
+- [Hugging Face: zaltahir/kaptchaocr-small-rec](https://huggingface.co/zaltahir/kaptchaocr-small-rec)
 - [GitHub: ozalt/kaptchaocr](https://github.com/ozalt/kaptchaocr)
 - [Colección de todos los modelos KaptchaOCR](https://huggingface.co/collections/zaltahir/kaptchaocr)
 - [Página de benchmarks](https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md)

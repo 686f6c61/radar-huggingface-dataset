@@ -61,6 +61,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 - No se han publicado datos de entrenamiento, por lo que existe riesgo de que el adaptador haya sido entrenado con datos sesgados o de baja calidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Musi91/personalcoder-js-v1
+- Hugging Face: https://huggingface.co/Musi91/personalcoder-js-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

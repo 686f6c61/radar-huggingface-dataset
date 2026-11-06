@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nikhitha123/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget de la libreria Unity ML-Agents. Lo publica el usuario Nikhitha123 en HuggingFace y su unico artefacto relevante es un fichero de pesos en formato ONNX (SnowballTarget.onnx) que representa la politica entrenada del agente.
+Nikhitha123/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno SnowballTarget de la libreria Unity ML-Agents. Lo publica el usuario Nikhitha123 en Hugging Face y su unico artefacto relevante es un fichero de pesos en formato ONNX (SnowballTarget.onnx) que representa la politica entrenada del agente.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica de control que mapea observaciones del entorno a acciones discretas o continuas dentro de un escenario de simulacion 3D de Unity. Por ello, conceptos habituales en fichas de LLM como longitud de contexto, idiomas soportados o cuantizaciones no aplican de la misma forma y no estan documentados en la informacion disponible.
 
-Su relevancia es acotada: sirve como ejemplo reproducible de un agente PPO entrenado con ML-Agents y como demostracion de despliegue de politicas en el navegador mediante el Space publico de HuggingFace asociado. El repositorio no tiene descargas ni likes, la licencia no esta declarada y la model card es la plantilla estandar de HuggingFace para agentes ML-Agents, sin detalle sobre hiperparametros, numero de pasos de entrenamiento ni curvas de recompensa.
+Su relevancia es acotada: sirve como ejemplo reproducible de un agente PPO entrenado con ML-Agents y como demostracion de despliegue de politicas en el navegador mediante el Space publico de Hugging Face asociado. El repositorio no tiene descargas ni likes, la licencia no esta declarada y la model card es la plantilla estandar de Hugging Face para agentes ML-Agents, sin detalle sobre hiperparametros, numero de pasos de entrenamiento ni curvas de recompensa.
 
 ## Especificaciones tecnicas
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible. Una politica de ML-Agents de este tipo suele ocupar del orden de unos pocos megabytes en disco, por lo que la huella de memoria es muy reducida, pero no se especifica el tamano en la informacion proporcionada.
 - GPU recomendadas: no disponible. No se documenta ningun requisito de GPU para la inferencia.
 - Compatibilidad con GPU de consumo: no confirmada por el autor. Dado que el artefacto principal es un fichero ONNX y el repositorio no declara dependencias de GPU, es razonable esperar ejecucion en CPU, pero esto no esta verificado en la informacion disponible.
-- Opciones de despliegue: Unity ML-Agents para ejecucion dentro del entorno; ONNX Runtime para inferencia del fichero SnowballTarget.onnx; el Space de HuggingFace asociado para visualizacion en navegador.
+- Opciones de despliegue: Unity ML-Agents para ejecucion dentro del entorno; ONNX Runtime para inferencia del fichero SnowballTarget.onnx; el Space de Hugging Face asociado para visualizacion en navegador.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tiempo de inferencia ni de pasos por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa con datos verificables. Existen en HuggingFace otros repositorios de agentes ML-Agents publicados con la misma plantilla de model card (por ejemplo, agentes PPO para entornos como Pyramids o Walker), pero no se han facilitado identificadores, parametros ni metricas de esos modelos en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa.
+No se dispone de una comparativa con datos verificables. Existen en Hugging Face otros repositorios de agentes ML-Agents publicados con la misma plantilla de model card (por ejemplo, agentes PPO para entornos como Pyramids o Walker), pero no se han facilitado identificadores, parametros ni metricas de esos modelos en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nikhitha123/ppo-SnowballTarget | no disponible | no aplica | no disponible | no disponible | Repositorio HuggingFace con 0 descargas y 0 likes |
+| Nikhitha123/ppo-SnowballTarget | no disponible | no aplica | no disponible | no disponible | Repositorio Hugging Face con 0 descargas y 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,9 +81,9 @@ No se dispone de una comparativa con datos verificables. Existen en HuggingFace 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nikhitha123/ppo-SnowballTarget
+- Repositorio Hugging Face: https://huggingface.co/Nikhitha123/ppo-SnowballTarget
 - Space de demostracion citado en la model card: https://huggingface.co/spaces/ThomasSimonini/ML-Agents-SnowballTarget
-- Documentacion de ML-Agents en HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de ML-Agents en Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - Libreria Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 
 Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a contenido no relacionado (Fast & Furious 11) y se han descartado por no aportar informacion tecnica.

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nez-Norlag/oneObsession_v24_3100615_QNN2.28
+- Repositorio en Hugging Face: https://huggingface.co/Nez-Norlag/oneObsession_v24_3100615_QNN2.28
 - Modelo original en Civitai: https://civitai.com/models/1318945/one-obsession?modelVersionId=3218603
 - Perfil del autor original (maxfeifei8): https://civitai.com/user/maxfeifei8
 - Repositorio de Local Dream: https://github.com/xororz/local-dream

@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TangYishan/starvla-qwenoft-g1-sonic
+- Repositorio Hugging Face: https://huggingface.co/TangYishan/starvla-qwenoft-g1-sonic
 - Repositorio StarVLA (GitHub): https://github.com/starVLA/starVLA
 - Configuración de entrenamiento (YAML): https://github.com/starVLA/starVLA/blob/starVLA_dev/examples/realRobots/UnitreeG1_WholeBody/step2_training/train_files/starvla_qwenoft_g1_sonic.yaml
 - Documentación de StarVLA: https://starvla.github.io/docs/

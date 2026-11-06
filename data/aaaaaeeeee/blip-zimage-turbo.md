@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z-Image-Turbo (BLIP Studio Package) es un reempaquetado del modelo de generacion de imagenes Z-Image-Turbo, publicado por el usuario aaaaaeeeee en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una redistribucion del modelo base Tongyi-MAI/Z-Image-Turbo y de su version optimizada en ONNX (lwanming/Z-Image-Turbo-opt), ambos con licencia Apache-2.0, adaptada para ejecutarse localmente en el navegador mediante WebGPU dentro del entorno BLIP Studio.
+Z-Image-Turbo (BLIP Studio Package) es un reempaquetado del modelo de generacion de imagenes Z-Image-Turbo, publicado por el usuario aaaaaeeeee en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una redistribucion del modelo base Tongyi-MAI/Z-Image-Turbo y de su version optimizada en ONNX (lwanming/Z-Image-Turbo-opt), ambos con licencia Apache-2.0, adaptada para ejecutarse localmente en el navegador mediante WebGPU dentro del entorno BLIP Studio.
 
 El paquete resuelve un problema de despliegue: los modelos de difusion de imagen suelen requerir pesos en formato PyTorch, VRAM elevada y un servidor con GPU. Esta version los convierte a ONNX, fragmenta los ficheros de datos externos en trozos de como maximo 1.000.000.000 bytes (nombrados `model.onnx.data.NNN`), parchea las puntuaciones de atencion y el softmax del decodificador VAE a float32 para evitar desbordamientos NaN, y organiza el manifiesto en el formato de directorio que espera BLIP Studio. El resultado es un repositorio de 6,0 GB pensado para inferencia en el propio dispositivo del usuario.
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones de rendimiento (FID, preferencia humana, calidad 
 
 ## Enlaces
 
-- Ficha en HuggingFace del paquete: https://huggingface.co/aaaaaeeeee/blip-zimage-turbo
+- Ficha en Hugging Face del paquete: https://huggingface.co/aaaaaeeeee/blip-zimage-turbo
 - Modelo base upstream: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Version ONNX optimizada upstream: https://huggingface.co/lwanming/Z-Image-Turbo-opt
 - Texto de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

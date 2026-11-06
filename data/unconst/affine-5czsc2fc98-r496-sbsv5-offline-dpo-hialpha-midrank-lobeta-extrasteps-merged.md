@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint resultante de la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, publicado por el usuario `unconst` en HuggingFace. Según la model card, se trata de un "H1 merged checkpoint salvage" descrito como un seguro TTL privado, no una submission definitiva hasta que se supere una fase de validación (Stage-5 gate). Esto indica que es un artefacto intermedio de un proceso de entrenamiento o fine-tuning, no un modelo final pulido para producción.
+El modelo `unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint resultante de la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, publicado por el usuario `unconst` en Hugging Face. Según la model card, se trata de un "H1 merged checkpoint salvage" descrito como un seguro TTL privado, no una submission definitiva hasta que se supere una fase de validación (Stage-5 gate). Esto indica que es un artefacto intermedio de un proceso de entrenamiento o fine-tuning, no un modelo final pulido para producción.
 
 El modelo presenta 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), un tamaño de repositorio de 70,2 GB en formato safetensors, y está etiquetado con los tags `qwen3_5_moe` e `image-text-to-text`, lo que sugiere que se basa en una arquitectura MoE (mixture of experts) de la familia Qwen 3.5 y que tiene capacidades multimodales (texto e imagen). Sin embargo, la información pública es extremadamente limitada: no se especifican detalles de arquitectura, contexto, licencia, idiomas ni benchmarks. Su relevancia actual es baja para uso directo, dado que carece de documentación y validación pública, pero puede interesar a investigadores que siguen el desarrollo de la serie Affine o que buscan explorar checkpoints intermedios de fine-tuning.
 
@@ -21,14 +21,14 @@ El modelo presenta 35.107.181.936 parámetros totales (aproximadamente 35,1 mil 
 
 ## Arquitectura y entrenamiento
 
-La información disponible es escasa. Por los tags de HuggingFace, el modelo pertenece a la familia `qwen3_5_moe`, lo que indica una arquitectura transformer con mezcla de expertos (MoE), probablemente con activación dispersa. También aparece el tag `image-text-to-text`, lo que sugiere que el modelo es multimodal y puede procesar tanto texto como imágenes, aunque no se detalla el mecanismo de visión (posiblemente un codificador visual integrado). El checkpoint se generó mediante la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tune de un modelo anterior de la serie Affine. La model card menciona "offline-dpo-hialpha-midrank-lobeta-extrasteps", lo que sugiere que se aplicó un proceso de optimización con DPO (Direct Preference Optimization) con parámetros específicos de alpha, rank y beta, y pasos de entrenamiento adicionales. No se proporcionan datos sobre el dataset de entrenamiento, número de tokens, ni detalles del proceso de alineación.
+La información disponible es escasa. Por los tags de Hugging Face, el modelo pertenece a la familia `qwen3_5_moe`, lo que indica una arquitectura transformer con mezcla de expertos (MoE), probablemente con activación dispersa. También aparece el tag `image-text-to-text`, lo que sugiere que el modelo es multimodal y puede procesar tanto texto como imágenes, aunque no se detalla el mecanismo de visión (posiblemente un codificador visual integrado). El checkpoint se generó mediante la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un fine-tune de un modelo anterior de la serie Affine. La model card menciona "offline-dpo-hialpha-midrank-lobeta-extrasteps", lo que sugiere que se aplicó un proceso de optimización con DPO (Direct Preference Optimization) con parámetros específicos de alpha, rank y beta, y pasos de entrenamiento adicionales. No se proporcionan datos sobre el dataset de entrenamiento, número de tokens, ni detalles del proceso de alineación.
 
 ## Capacidades
 
 - Generación de texto conversacional (pipeline `text-generation`).
 - Procesamiento multimodal de texto e imagen (según tag `image-text-to-text`), aunque no se especifica el detalle de las tareas de visión.
 - Arquitectura MoE, que en principio permite escalar capacidad manteniendo coste computacional por token relativamente bajo.
-- Compatible con la librería `transformers` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con la librería `transformers` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se documentan capacidades específicas como tool calling, agentes, razonamiento multi-paso o modo thinking.
 
 ## Casos de uso
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se encontraron papers, blogs, demos ni otros recursos adicionales en la información proporcionada.

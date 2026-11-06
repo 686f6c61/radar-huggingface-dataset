@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX-Krea-BLAZE es un modelo de generación de imágenes texto-a-imagen derivado de FLUX.1-Krea-dev de Black Forest Labs, publicado por el usuario stevenlearns en HuggingFace. Se trata de un fine-tune optimizado para inferencia en pocos pasos (4-8 steps), empaquetado en formato de archivo único (diffusion-single-file) compatible con ComfyUI, y acompañado de adaptadores LoRA de rangos 32, 64 y 128. El repositorio tiene un tamaño de 14,1 GB y se distribuye en variante FP8 E5M2.
+FLUX-Krea-BLAZE es un modelo de generación de imágenes texto-a-imagen derivado de FLUX.1-Krea-dev de Black Forest Labs, publicado por el usuario stevenlearns en Hugging Face. Se trata de un fine-tune optimizado para inferencia en pocos pasos (4-8 steps), empaquetado en formato de archivo único (diffusion-single-file) compatible con ComfyUI, y acompañado de adaptadores LoRA de rangos 32, 64 y 128. El repositorio tiene un tamaño de 14,1 GB y se distribuye en variante FP8 E5M2.
 
 El modelo hereda la arquitectura de difusión de la familia FLUX.1, concretamente del checkpoint FLUX.1-Krea-dev, que a su vez se basa en FLUX.1-dev. Su propuesta principal es reducir el número de pasos de muestreo necesarios para obtener resultados de calidad, empleando samplers como Res2 (4 pasos) o UniPC con schedule sgm_uniform (8 pasos), lo que permite renderizados rápidos, incluyendo ejemplos de 4K en unos 200 segundos según el autor.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX-Krea-BLAZE | no disponible | no disponible | Sin benchmarks; comparación visual con FLUX.1-krea.dev | FLUX.1 [dev] Non-Commercial | HuggingFace (0 descargas, 0 likes) |
-| FLUX.1-Krea-dev | no disponible | no disponible | Modelo base de referencia; sin métricas en esta ficha | FLUX.1 [dev] Non-Commercial | HuggingFace (Black Forest Labs) |
-| FLUX.1-dev | no disponible | no disponible | Modelo base original; sin métricas en esta ficha | FLUX.1 [dev] Non-Commercial | HuggingFace (Black Forest Labs) |
+| FLUX-Krea-BLAZE | no disponible | no disponible | Sin benchmarks; comparación visual con FLUX.1-krea.dev | FLUX.1 [dev] Non-Commercial | Hugging Face (0 descargas, 0 likes) |
+| FLUX.1-Krea-dev | no disponible | no disponible | Modelo base de referencia; sin métricas en esta ficha | FLUX.1 [dev] Non-Commercial | Hugging Face (Black Forest Labs) |
+| FLUX.1-dev | no disponible | no disponible | Modelo base original; sin métricas en esta ficha | FLUX.1 [dev] Non-Commercial | Hugging Face (Black Forest Labs) |
 
 No se dispone de datos cuantitativos para comparar parámetros, contexto o rendimiento entre estos modelos en la información proporcionada. Las alternativas de la misma categoría (otros fine-tunes de FLUX.1 para pocos pasos) no están documentadas en la información disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos para comparar parámetros, contexto o rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stevenlearns/FLUX-Krea-BLAZE
+- Modelo en Hugging Face: https://huggingface.co/stevenlearns/FLUX-Krea-BLAZE
 - Modelo base FLUX.1-Krea-dev: https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia FLUX.1 [dev]: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md

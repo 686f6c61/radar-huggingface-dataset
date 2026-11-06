@@ -91,8 +91,8 @@ La comparativa directa con el modelo base Qwen3.5-9B muestra una ganancia de +0,
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-9B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Repositorio GGUF alternativo: https://huggingface.co/empero-ai/Qwen3.8-9B-GGUF
 - Modelo base original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Sitio web de Empero: https://empero.org

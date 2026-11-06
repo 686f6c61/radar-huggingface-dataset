@@ -86,9 +86,9 @@ No se dispone de comparaciones directas con otros modelos 27B de otras familias 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-GGUF
-- Repositorio HuggingFace del modelo base abliterado: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
-- Repositorio HuggingFace del LoRA: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA
+- Repositorio Hugging Face del modelo: https://huggingface.co/Verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-GGUF
+- Repositorio Hugging Face del modelo base abliterado: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
+- Repositorio Hugging Face del LoRA: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA
 - Repositorio del modelo Fable5-Distill completo: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Ficha de benchmarks y especificaciones en AI Release Tracker: https://aireleasetracker.com/model/qwen/qwen3.8-27b

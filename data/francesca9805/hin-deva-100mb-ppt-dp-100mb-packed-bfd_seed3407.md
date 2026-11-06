@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del checkpoint `goldfish-models/hin_deva_100mb`, un modelo de lenguaje monolingüe de pequeno tamano orientado a hindi en escritura devanagari. Lo publica el usuario de HuggingFace `francesca9805` y su entrenamiento se ha realizado con la libreria TRL (version 0.23.0), dentro de un experimento registrado en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen (`f-padovani-university-of-groningen`).
+El modelo `francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del checkpoint `goldfish-models/hin_deva_100mb`, un modelo de lenguaje monolingüe de pequeno tamano orientado a hindi en escritura devanagari. Lo publica el usuario de Hugging Face `francesca9805` y su entrenamiento se ha realizado con la libreria TRL (version 0.23.0), dentro de un experimento registrado en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen (`f-padovani-university-of-groningen`).
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El repositorio ocupa 0,3 GB y contiene unicamente pesos en formato safetensors. No se ha publicado informacion sobre el dataset de ajuste, la longitud de contexto, los idiomas exactos ni la licencia, y el modelo acumula cero descargas y cero "likes" en el momento de redactar esta ficha.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407 (este modelo) | 124,8 M | No disponible | SFT con TRL sobre `goldfish-models/hin_deva_100mb` | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/hin_deva_100mb (modelo base) | 124,8 M (mismo recuento) | No disponible en la informacion consultada | Preentrenamiento monolingue sobre corpus de ~100 MB en devanagari | No disponible en la informacion consultada | HuggingFace |
+| hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407 (este modelo) | 124,8 M | No disponible | SFT con TRL sobre `goldfish-models/hin_deva_100mb` | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/hin_deva_100mb (modelo base) | 124,8 M (mismo recuento) | No disponible en la informacion consultada | Preentrenamiento monolingue sobre corpus de ~100 MB en devanagari | No disponible en la informacion consultada | Hugging Face |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Preentrenamiento web en ingles (WebText) | MIT (licencia modificada) | Pesos publicos, ampliamente replicado |
 
 La comparacion debe tomarse con cautela: los datos de contexto y licencia de la familia `goldfish-models` no se han podido verificar en la informacion proporcionada, y GPT-2 small se incluye unicamente como referencia de escala y arquitectura, no como equivalente funcional en hindi.
@@ -94,7 +94,7 @@ La comparacion debe tomarse con cautela: los datos de contexto y licencia de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qhvewxvf
 - Repositorio de TRL: https://github.com/huggingface/trl

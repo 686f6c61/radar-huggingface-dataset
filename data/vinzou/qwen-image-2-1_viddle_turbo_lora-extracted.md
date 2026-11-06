@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted` es un adaptador LoRA experimental de tipo turbo (destilado a pocos pasos) para el modelo base de generacion de imagenes `Qwen-Image-2.1`. Lo publica el usuario Vinzou y sus pesos se han extraido de otro repositorio de HuggingFace, `Viggle/Qwen-Image-2.1-viggle-turbo`, segun indica la propia model card. El repositorio ocupa 2,3 GB y se distribuye bajo licencia `qwen-research-license` (registrada en HuggingFace como `license: other`).
+`Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted` es un adaptador LoRA experimental de tipo turbo (destilado a pocos pasos) para el modelo base de generacion de imagenes `Qwen-Image-2.1`. Lo publica el usuario Vinzou y sus pesos se han extraido de otro repositorio de Hugging Face, `Viggle/Qwen-Image-2.1-viggle-turbo`, segun indica la propia model card. El repositorio ocupa 2,3 GB y se distribuye bajo licencia `qwen-research-license` (registrada en Hugging Face como `license: other`).
 
 El proposito declarado del adaptador es permitir la generacion de imagenes en un regimen de muy pocos pasos de muestreo: la model card recomienda 4 pasos o mas, un sampler/scheduler Euler con variante Simple y una fuerza de LoRA de 1,0 o superior, en un flujo de trabajo de ComfyUI. Es, por tanto, una pieza orientada a acelerar la inferencia de un modelo de difusion, no un modelo de lenguaje.
 
@@ -17,7 +17,7 @@ Su relevancia practica esta condicionada por dos factores que conviene tener pre
 | Longitud de contexto | no disponible (modelo de generacion de imagenes; la resolucion de salida soportada no se especifica) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (dependera del codificador de texto del modelo base) |
-| Licencia | qwen-research-license (etiquetada en HuggingFace como `license: other`) |
+| Licencia | qwen-research-license (etiquetada en Hugging Face como `license: other`) |
 | Formato de pesos | no disponible (pesos de LoRA para ComfyUI; el repositorio ocupa 2,3 GB, pero no se detalla el formato de fichero) |
 | Tipo de modelo | LoRA de destilacion a pocos pasos (turbo) para texto-a-imagen |
 | Modelo base | Qwen-Image-2.1 |
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted | no disponible | no disponible | no disponible (sin benchmarks publicados) | qwen-research-license | HuggingFace (0 descargas al consultar) |
-| Viggle/Qwen-Image-2.1-viggle-turbo (origen declarado) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | no disponible | qwen-research-license | HuggingFace |
+| Vinzou/Qwen-Image-2.1_Viddle_Turbo_LoRA-extracted | no disponible | no disponible | no disponible (sin benchmarks publicados) | qwen-research-license | Hugging Face (0 descargas al consultar) |
+| Viggle/Qwen-Image-2.1-viggle-turbo (origen declarado) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | no disponible | qwen-research-license | Hugging Face |
 | Otras LoRA turbo de pocos pasos para Qwen-Image | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de parametros, contexto o rendimiento para ninguna de las alternativas, por lo que no es posible establecer una comparacion cuantitativa.

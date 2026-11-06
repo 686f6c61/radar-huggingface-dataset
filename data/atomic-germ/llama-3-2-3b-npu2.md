@@ -74,7 +74,7 @@ La variante NPU2 no modifica las capacidades del modelo base, por lo que la comp
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Atomic-Germ/Llama-3.2-3B-NPU2
+- Hugging Face del modelo: https://huggingface.co/Atomic-Germ/Llama-3.2-3B-NPU2
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Variante similar de 8B: https://huggingface.co/Atomic-Germ/Llama-3.1-8B-Instruct-NPU2
 - Página de Llama 3.2 en Ollama: https://ollama.com/library/llama3.2:3b

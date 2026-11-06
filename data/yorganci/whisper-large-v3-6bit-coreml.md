@@ -101,7 +101,7 @@ La ventaja diferencial de esta publicacion es la integracion nativa con la Neura
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/yorganci/whisper-large-v3-6bit-coreml
+- Pagina del modelo en Hugging Face: https://huggingface.co/yorganci/whisper-large-v3-6bit-coreml
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Repositorio del proyecto transcribe: https://github.com/atahanyorganci/transcribe
 - Repositorio original de Whisper de OpenAI: https://github.com/openai/whisper
@@ -109,4 +109,4 @@ La ventaja diferencial de esta publicacion es la integracion nativa con la Neura
 - Fichero LICENSE del paquete: https://huggingface.co/yorganci/whisper-large-v3-6bit-coreml/blob/main/LICENSE
 - Fichero NOTICE del paquete: https://huggingface.co/yorganci/whisper-large-v3-6bit-coreml/blob/main/NOTICE
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces utiles proceden de la model card y del propio repositorio de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces utiles proceden de la model card y del propio repositorio de Hugging Face.

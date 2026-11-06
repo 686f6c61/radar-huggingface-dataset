@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mangga-1-4B | 4.300 M | no disponible | Indonesio | Apache 2.0 | HuggingFace (repo público) |
-| google/gemma-3-4b-it | 4.000 M (aprox.) | no disponible en la información | Multilingüe | Gemma Terms of Use | HuggingFace |
-| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | 4.000 M (aprox.) | no disponible en la información | Multilingüe | Gemma Terms of Use | HuggingFace |
+| Mangga-1-4B | 4.300 M | no disponible | Indonesio | Apache 2.0 | Hugging Face (repo público) |
+| google/gemma-3-4b-it | 4.000 M (aprox.) | no disponible en la información | Multilingüe | Gemma Terms of Use | Hugging Face |
+| unsloth/gemma-3-4b-it-unsloth-bnb-4bit | 4.000 M (aprox.) | no disponible en la información | Multilingüe | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dnfs/Mangga-1-4B
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Dnfs/Mangga-1-4B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
 - Modelo original de Google: https://huggingface.co/google/gemma-3-4b-it
 - Paper de referencia (DOI): https://doi.org/10.2991/978-94-6463-938-4_65
 - Unsloth: https://github.com/unslothai/unsloth

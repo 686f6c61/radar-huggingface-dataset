@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cms-cambridge/music-transformer-atepp-pretrain)
+- [Modelo en Hugging Face](https://huggingface.co/cms-cambridge/music-transformer-atepp-pretrain)
 - [Repositorio expectation-benchmarking](https://github.com/cms-cambridge/expectation-benchmarking)
 - [Tesis doctoral de Huw Cheston (2025)](https://doi.org/10.17863/cam.126908)
 - [Dataset ATEPP (Zhang et al., ISMIR 2022)](https://tangjjbetsy.github.io/ATEPP/)

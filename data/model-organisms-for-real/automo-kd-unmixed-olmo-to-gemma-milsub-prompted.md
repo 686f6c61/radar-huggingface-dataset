@@ -85,7 +85,7 @@ No se dispone de comparaciones con modelos comerciales o de propósito general, 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Repositorio GitHub del proyecto model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Variante relacionada: automo-kd-unmixed-gemma-to-olmo-milsub-prompted](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted)

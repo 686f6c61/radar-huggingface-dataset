@@ -1,7 +1,7 @@
 # Tohirju/sl-azure
 
 ## Resumen
-El modelo `Tohirju/sl-azure` es un checkpoint alojado en HuggingFace con un tamaño de 1.543.490.560 parámetros (aproximadamente 1,54 mil millones), etiquetado con el tag `whisper`, lo que sugiere que se trata de un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Whisper. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura exacta, el pipeline, los idiomas soportados, ni el proceso de entrenamiento. El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales para poder descargarlo.
+El modelo `Tohirju/sl-azure` es un checkpoint alojado en Hugging Face con un tamaño de 1.543.490.560 parámetros (aproximadamente 1,54 mil millones), etiquetado con el tag `whisper`, lo que sugiere que se trata de un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura Whisper. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica la arquitectura exacta, el pipeline, los idiomas soportados, ni el proceso de entrenamiento. El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales para poder descargarlo.
 
 El nombre "sl-azure" podría indicar una relación con el idioma esloveno (código ISO `sl`) o con la plataforma Azure de Microsoft, pero no hay confirmación oficial. Dado que el tamaño de parámetros coincide casi exactamente con el de Whisper large-v3 (1,55B), es plausible que sea un fine-tuning de dicho modelo, aunque no se puede verificar sin acceso al contenido del repositorio. La relevancia de este modelo es actualmente incierta debido a la falta de documentación y métricas públicas.
 
@@ -69,5 +69,5 @@ La diferencia principal radicaria en el fine-tuning especifico que haya realizad
 - Sin garantias de calidad: al no haber benchmarks, no se puede asegurar que el modelo funcione correctamente en tareas de ASR ni en otros dominios.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Tohirju/sl-azure
+- Repositorio Hugging Face: https://huggingface.co/Tohirju/sl-azure
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

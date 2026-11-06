@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAIGE-dpo-v3-run3 es un ajuste fino por DPO (Direct Preference Optimization) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario M1ztyk en HuggingFace. Se trata, por tanto, de un derivado de un transformer decoder-only de aproximadamente 3.000 millones de parametros, alineado mediante preferencias en lugar de mediante RLHF con modelo de recompensa explicito. El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) y el repositorio declara compatibilidad con endpoints de inferencia (`endpoints_compatible`) y pesos en formato safetensors.
+SAIGE-dpo-v3-run3 es un ajuste fino por DPO (Direct Preference Optimization) del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario M1ztyk en Hugging Face. Se trata, por tanto, de un derivado de un transformer decoder-only de aproximadamente 3.000 millones de parametros, alineado mediante preferencias en lugar de mediante RLHF con modelo de recompensa explicito. El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) y el repositorio declara compatibilidad con endpoints de inferencia (`endpoints_compatible`) y pesos en formato safetensors.
 
 El interes de esta ficha es limitado pero relevante como caso de estudio: se trata de un modelo sin descargas ni valoraciones en el momento de la consulta, sin model card detallada (la seccion de procedimiento de entrenamiento esta vacia) y sin resultados de benchmarks publicados. El nombre "run3" sugiere que forma parte de una serie de experimentos de alineacion dentro de un proyecto denominado SAIGE, no de un lanzamiento de produccion.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~7-8 GB en bf16 con contexto moderado; ~4 GB en cuantizacion de 8 bits; ~2,5-3 GB en cuantizacion de 4 bits (estimaciones teoricas a partir del tamano de 3 B; no verificadas con este checkpoint).
 - GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, L40S, A100, H100). En GPUs con 6 GB o menos sera necesario cuantizar.
 - Cabe en GPU de consumo: si, en RTX 3060 12 GB y superiores con margen amplio; en tarjetas de 8 GB con cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: `transformers` (via `pipeline` o `AutoModelForCausalLM`), vLLM y TGI para servido con batching, y llama.cpp/Ollama solo si el usuario convierte los pesos a GGUF por su cuenta, ya que el repositorio unicamente publica safetensors. El tag `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (via `pipeline` o `AutoModelForCausalLM`), vLLM y TGI para servido con batching, y llama.cpp/Ollama solo si el usuario convierte los pesos a GGUF por su cuenta, ya que el repositorio unicamente publica safetensors. El tag `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
-- Nota de integridad: el repositorio declara un tamano de 0,1 GB, muy inferior a los ~6 GB esperables para un modelo de 3 B en bf16. Esto sugiere que los pesos podrian estar incompletos, que se trate de un adaptador o que el tamano reportado por HuggingFace no refleje el contenido real. Conviene verificar los ficheros antes de desplegar.
+- Nota de integridad: el repositorio declara un tamano de 0,1 GB, muy inferior a los ~6 GB esperables para un modelo de 3 B en bf16. Esto sugiere que los pesos podrian estar incompletos, que se trate de un adaptador o que el tamano reportado por Hugging Face no refleje el contenido real. Conviene verificar los ficheros antes de desplegar.
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ Las cifras de contexto y licencia de los modelos comparados proceden de la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1ztyk/SAIGE-dpo-v3-run3
+- Modelo en Hugging Face: https://huggingface.co/M1ztyk/SAIGE-dpo-v3-run3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Articulo de DPO: https://huggingface.co/papers/2305.18290
 - Articulo de DPO en NeurIPS 2023: http://papers.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html

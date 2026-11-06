@@ -85,7 +85,7 @@ El modelo Qwen3.5-9B supera en MMLU-Pro a GPT-OSS-20B y a Qwen3-30B-A3B, a pesar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastFlowLM/Qwen3.5-9B-gguf
+- Repositorio Hugging Face: https://huggingface.co/FastFlowLM/Qwen3.5-9B-gguf
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - FastFlowLM (documentación y benchmarks): https://fastflowlm.com/docs/benchmarks/qwen3.5_results/

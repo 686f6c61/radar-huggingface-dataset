@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-CRACK-JANG_8M es una variante "uncensored" (abliterated a nivel de pesos) del modelo openbmb/MiniCPM5-2B, publicada por el usuario nadjibtabanii en HuggingFace. Se distribuye como bundle MLX cuantizado a 8 bits afines con escalas bf16 (etiqueta JANG_8M), con un peso total de 2.516.756.480 parametros en un unico shard de 973 tensores y un tamano de repositorio de 2,7 GB. Esta disenado explicitamente para ejecutarse en vMLX, el motor de inferencia MLX para Apple Silicon, aunque el autor indica que se carga sin cambios mediante `mlx_lm.load()`.
+MiniCPM5-2B-CRACK-JANG_8M es una variante "uncensored" (abliterated a nivel de pesos) del modelo openbmb/MiniCPM5-2B, publicada por el usuario nadjibtabanii en Hugging Face. Se distribuye como bundle MLX cuantizado a 8 bits afines con escalas bf16 (etiqueta JANG_8M), con un peso total de 2.516.756.480 parametros en un unico shard de 973 tensores y un tamano de repositorio de 2,7 GB. Esta disenado explicitamente para ejecutarse en vMLX, el motor de inferencia MLX para Apple Silicon, aunque el autor indica que se carga sin cambios mediante `mlx_lm.load()`.
 
 El modelo base es un transformer denso estilo Llama de ~2B parametros con soporte de modo "thinking" binario (razonamiento on/off) y function calling con formato XML, ademas de una ventana de contexto de 131K tokens y cobertura bilingue ingles-chino. La modificacion principal de esta version es la eliminacion del comportamiento de rechazo a nivel de pesos: no emplea hooks en tiempo de ejecucion ni vectores de direccion (steering vectors), sino que el bundle cargado ya incorpora la ablacion. Segun el autor, se mantienen las capacidades de codigo, conocimiento y razonamiento del modelo original.
 
@@ -110,8 +110,8 @@ No se dispone de datos de otros modelos comparables (por ejemplo otras variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nadjibtabanii/MiniCPM5-2B-CRACK-JANG_8M
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B
+- Modelo en Hugging Face: https://huggingface.co/nadjibtabanii/MiniCPM5-2B-CRACK-JANG_8M
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B
 - Motor de inferencia vMLX (referenciado por el autor): https://vmlx.net
 - Pagina de soporte del autor (Ko-fi): https://ko-fi.com/dealignai
 - Paper, repositorio de codigo, blog tecnico y demo: no disponible en la informacion proporcionada.

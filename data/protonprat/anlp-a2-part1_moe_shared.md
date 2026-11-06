@@ -4,7 +4,7 @@
 
 El modelo `ProtonPrat/anlp-a2-part1_moe_shared` es un transformer causal de arquitectura personalizada con mezcla de expertos (MoE), publicado como entrega de la Assignment 2 de un curso de ANLP (Advanced Natural Language Processing). Lo desarrolla el usuario ProtonPrat y su finalidad es academica: sirve como artefacto reproducible de un ejercicio sobre implementacion de MoE, bucles de optimizacion y decodificacion. Cuenta con 10.084.480 parametros totales y fue entrenado sobre 30.000.000 de posiciones de un corpus de tripletas en ingles, vietnamita y japones.
 
-El modelo se entrena como modelo de lenguaje causal y su evaluacion se limita a dos metricas automaticas sobre el conjunto de test: perplejidad de 7,904347 y BLEU de continuacion de 13,034853. No emplea la arquitectura estandar de HuggingFace Transformers, por lo que no se carga mediante `AutoModel`; requiere la clase `src.part1.model.Transformer` del repositorio del curso o el script `scripts/infer.py`.
+El modelo se entrena como modelo de lenguaje causal y su evaluacion se limita a dos metricas automaticas sobre el conjunto de test: perplejidad de 7,904347 y BLEU de continuacion de 13,034853. No emplea la arquitectura estandar de Hugging Face Transformers, por lo que no se carga mediante `AutoModel`; requiere la clase `src.part1.model.Transformer` del repositorio del curso o el script `scripts/infer.py`.
 
 Su relevancia es acotada y hay que enmarcarla correctamente: no es un modelo de proposito general ni compite con modelos de escala similar orientados a produccion. Es util como banco de pruebas docente, como referencia reproducible de una implementacion MoE a pequena escala y como base para experimentos de tokenizacion y decodificacion. No se ha publicado licencia, ficha de pipeline ni resultados de benchmarks estandar.
 
@@ -80,10 +80,10 @@ No hay modelos de produccion comparables en este rango de parametros y con esta 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProtonPrat/anlp-a2-part1_moe_shared | 10.084.480 | no disponible | Perplejidad 7,904347; BLEU 13,034853 | no disponible | HuggingFace |
-| DunkRonit/anlp-a2-part1-moe_shared | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| sanyam2005/anlp-a2-part1-moe-shared | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ProtonPrat/anlp-a2-part1_moe_shared | 10.084.480 | no disponible | Perplejidad 7,904347; BLEU 13,034853 | no disponible | Hugging Face |
+| DunkRonit/anlp-a2-part1-moe_shared | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| sanyam2005/anlp-a2-part1-moe-shared | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion tecnica de las variantes anteriores mas alla de su existencia; se listan unicamente como publicaciones hermanas del mismo tipo de ejercicio. No se incluyen comparaciones con modelos como GPT-2 small porque no hay datos publicados que permitan un contraste homogeneo con este checkpoint.
 
@@ -103,7 +103,7 @@ No se dispone de informacion tecnica de las variantes anteriores mas alla de su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_shared
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_shared
 - Ejecucion de W&B: https://wandb.ai/proton_prat/anlp-assignment-2/runs/19hsejwz
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets (revision `849990daee76e0f9e2eb9965e30e34bc1909a93d`)
 - Variante hermana: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_shared

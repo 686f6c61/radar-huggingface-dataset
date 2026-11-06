@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch5` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de 45.694.080 parámetros, almacenado en formato safetensors y etiquetado con la librería transformers. El nombre del modelo sugiere que incorpora un mecanismo de atención ALiBi dinámico y que forma parte de la línea BabyLM, orientada al estudio de modelos de lenguaje pequeños entrenados con datos limitados.
+El modelo `Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch5` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de 45.694.080 parámetros, almacenado en formato safetensors y etiquetado con la librería transformers. El nombre del modelo sugiere que incorpora un mecanismo de atención ALiBi dinámico y que forma parte de la línea BabyLM, orientada al estudio de modelos de lenguaje pequeños entrenados con datos limitados.
 
 No se dispone de documentación técnica en la model card, que es una plantilla genérica sin información real. Tampoco se han publicado resultados de benchmarks, datos de entrenamiento, licencia o idiomas soportados. Por tanto, el modelo debe considerarse como un experimento de investigación, sin validación externa ni aptitud para producción. Su relevancia reside en el estudio de arquitecturas de atención eficientes en modelos de tamaño reducido, aunque la falta de información impide cualquier conclusión práctica.
 
@@ -72,5 +72,5 @@ No se ha identificado ningún modelo comparable en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch5
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch5
 - Perfil del autor: https://huggingface.co/Lanni-ni

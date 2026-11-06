@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Limitaciones y advertencias
 
-- Los metadatos de HuggingFace indican únicamente inglés como idioma de entrada, por lo que el rendimiento en otros idiomas no está verificado.
+- Los metadatos de Hugging Face indican únicamente inglés como idioma de entrada, por lo que el rendimiento en otros idiomas no está verificado.
 - No se dispone de evaluaciones de seguridad ni de datos de sesgos específicos para esta conversión; es necesario consultar la model card original del modelo base.
 - La cuantización mxfp8 implica una reducción de precisión con respecto al checkpoint bfloat16 original, lo que puede producir una degradación en tareas sensibles a errores numéricos.
 - El modelo está diseñado para Apple Silicon y no puede ejecutarse en hardware convencional de NVIDIA y AMD con los repositorios estándar, lo que limita su portabilidad.

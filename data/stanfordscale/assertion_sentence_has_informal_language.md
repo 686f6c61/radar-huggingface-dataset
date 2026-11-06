@@ -91,8 +91,8 @@ model.predict_proba([text])  # -> [[P(no), P(sí)]]
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_has_informal_language | SetFit (MPNet + LogisticRegression) | 109,5 M | No disponible | No disponible | F1 0,494 / ROC-AUC 0,765 en test (declarado por el autor) | HuggingFace, librería setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 | Sentence-transformer (encoder puro) | ~109 M | No disponible en la información proporcionada | No disponible en la información proporcionada | No aplica: no es un clasificador entrenado para esta tarea | HuggingFace |
+| StanfordSCALE/assertion_sentence_has_informal_language | SetFit (MPNet + LogisticRegression) | 109,5 M | No disponible | No disponible | F1 0,494 / ROC-AUC 0,765 en test (declarado por el autor) | Hugging Face, librería setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 | Sentence-transformer (encoder puro) | ~109 M | No disponible en la información proporcionada | No disponible en la información proporcionada | No aplica: no es un clasificador entrenado para esta tarea | Hugging Face |
 | Otros clasificadores de assertions del proyecto EduBehaviors | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de modelos alternativos entrenados sobre la misma tarea (detección de lenguaje informal en utterances docentes), por lo que no es posible establecer una comparación cuantitativa fiable con terceros.
@@ -113,7 +113,7 @@ No se dispone de datos verificables de modelos alternativos entrenados sobre la 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_informal_language
+- Página del modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_informal_language
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves

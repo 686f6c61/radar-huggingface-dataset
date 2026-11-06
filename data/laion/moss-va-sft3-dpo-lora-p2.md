@@ -90,7 +90,7 @@ No se dispone de comparativas con otros sistemas TTS expresivos (por ejemplo, St
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/laion/moss-va-sft3-dpo-lora-p2
+- Adaptador en Hugging Face: https://huggingface.co/laion/moss-va-sft3-dpo-lora-p2
 - Modelo base SFT-3: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Modelo base v2 (sin SFT): https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2
 - Adaptador DPO anterior (CFG corpus): https://huggingface.co/laion/moss-va-sft3-dpo-lora

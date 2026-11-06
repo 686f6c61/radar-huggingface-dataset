@@ -86,6 +86,6 @@ Se han identificado otros modelos del mismo autor con la misma descripción y ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKB109/agentic-incident-response-20260905-model
+- Hugging Face: https://huggingface.co/RKB109/agentic-incident-response-20260905-model
 - Dataset: https://huggingface.co/datasets/RKB109/agentic-incident-response-20260905-dataset
 - Repositorio GitHub: mencionado en la model card como enlazado, pero la URL no está disponible en la información proporcionada.

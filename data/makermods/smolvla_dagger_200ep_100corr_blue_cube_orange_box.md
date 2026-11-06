@@ -67,7 +67,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- [HuggingFace - makermods/smolvla_dagger_200ep_100corr_blue_cube_orange_box](https://huggingface.co/makermods/smolvla_dagger_200ep_100corr_blue_cube_orange_box)
+- [Hugging Face - makermods/smolvla_dagger_200ep_100corr_blue_cube_orange_box](https://huggingface.co/makermods/smolvla_dagger_200ep_100corr_blue_cube_orange_box)
 - [Dataset de rollout asociado](https://huggingface.co/datasets/makermods/rollout_1-100ep_smolvla_200ep_blue_cube_orange_box_corrections_20260819_191244/discussions)
 - [Checkpoint anterior del mismo autor](https://huggingface.co/makermods/smolvla_makermods_100_ep_blue_cube_orange_box_2026-08-04_20-03-25/tree/main)
 - [Documentación de SmolVLA en el repo de MakerMods (GitHub)](https://github.com/Maker-Mods/lerobot-MakerMods/blob/main/docs/source/smolvla.mdx)

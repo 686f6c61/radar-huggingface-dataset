@@ -67,7 +67,7 @@ El artículo reporta además evaluaciones externas en Siemens y en Estados Unido
 
 | Modelo | Arquitectura | Entrada | Contexto | AUC reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BREST-AI v1 | ResNeXt-50 + fusión atencional | 4 vistas mamográficas, 2048×2048, 16 bits | no aplica | 0,751 (UK Hologic) | Warwick BREST research licence (no comercial, no clínica) | Pesos en HuggingFace + código en GitHub |
+| BREST-AI v1 | ResNeXt-50 + fusión atencional | 4 vistas mamográficas, 2048×2048, 16 bits | no aplica | 0,751 (UK Hologic) | Warwick BREST research licence (no comercial, no clínica) | Pesos en Hugging Face + código en GitHub |
 | Mirai (MIT) | no disponible en la información | mamografías | no aplica | 0,700 (misma cohorte UK Hologic) | no disponible | no disponible |
 | Otros modelos de riesgo mamográfico | no disponible | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ El artículo reporta además evaluaciones externas en Siemens y en Estados Unido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnamodel/BREST-AI
+- Modelo en Hugging Face: https://huggingface.co/dnamodel/BREST-AI
 - Artículo: Wei J, Zhou X, Santeramo R, et al. "BREST-AI: Three-year breast cancer risk prediction from screening mammograms". npj Breast Cancer (2026). https://doi.org/10.1038/s41523-026-01069-x
 - Código y preprocesado: https://github.com/gmontana/BREST
 - Licencia: fichero LICENSE en el repositorio del modelo (University of Warwick BREST software licence)

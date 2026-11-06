@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cohere-AR/cohere-transcribe-ar-soup-v9e2e70` es un sistema de reconocimiento automatico del habla (ASR) publicado en HuggingFace por la organizacion Cohere-AR. Se trata de un fine-tuning del modelo base `Cohere-AR/cohere-transcribe-ar-rl2-v9enc`, orientado a la transcripcion de audio en arabe e ingles, con enfasis explicito en escenarios de cambio de codigo (code-switching) y audio telefonico. El nombre del repositorio y sus etiquetas indican que forma parte de una familia de experimentos de la serie "transcribe-ar" con iteraciones versionadas (v9).
+El modelo `Cohere-AR/cohere-transcribe-ar-soup-v9e2e70` es un sistema de reconocimiento automatico del habla (ASR) publicado en Hugging Face por la organizacion Cohere-AR. Se trata de un fine-tuning del modelo base `Cohere-AR/cohere-transcribe-ar-rl2-v9enc`, orientado a la transcripcion de audio en arabe e ingles, con enfasis explicito en escenarios de cambio de codigo (code-switching) y audio telefonico. El nombre del repositorio y sus etiquetas indican que forma parte de una familia de experimentos de la serie "transcribe-ar" con iteraciones versionadas (v9).
 
 El modelo cuenta con 2.065.770.752 parametros totales en formato safetensors, lo que lo situa en la franja de los 2.000 millones de parametros, un tamano habitual para modelos ASR de altas prestaciones que buscan equilibrar precision y coste de inferencia. El repositorio ocupa 4,1 GB y esta implementado sobre la libreria `transformers`, con un pipeline especifico de `automatic-speech-recognition` y un tag de arquitectura propio (`cohere_asr`).
 
@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas publicas de modelos ASR ampliamente co
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede confirmar el uso comercial, la redistribucion ni la modificacion. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y aprobacion del autor, lo que limita la reproducibilidad y la evaluacion independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y aprobacion del autor, lo que limita la reproducibilidad y la evaluacion independiente.
 - Ausencia de benchmarks publicados: no hay evidencia cuantitativa de WER en arabe, ingles o code-switching, ni comparaciones con Whisper u otros modelos.
 - Idiomas limitados a arabe e ingles: no cubre otras lenguas, y el rendimiento en variantes dialectales arabes no esta documentado.
 - Riesgo de alucinacion: como todo modelo ASR, puede generar transcripciones plausibles pero incorrectas en audio ruidoso o con solapamiento de hablantes.
@@ -92,7 +92,7 @@ La comparativa se basa en caracteristicas publicas de modelos ASR ampliamente co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e2e70
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e2e70
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9enc
 - Cohere (sitio oficial): https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

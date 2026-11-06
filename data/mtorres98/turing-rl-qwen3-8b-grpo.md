@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mtorres98/turing-rl-qwen3-8b-grpo` es un adaptador de afinado (fine-tuning) del modelo base `Qwen/Qwen3-8B`, desarrollado por el usuario `mtorres98` y publicado en HuggingFace. El modelo está entrenado mediante GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo utilizado para optimizar políticas de lenguaje, y se ofrece como un adaptador LoRA (Low-Rank Adaptation) mediante la biblioteca PEFT. Este tipo de adaptadores permite modificar el comportamiento de un modelo grande sin reentrenar todos sus pesos, reduciendo el coste de cómputo y almacenamiento.
+`mtorres98/turing-rl-qwen3-8b-grpo` es un adaptador de afinado (fine-tuning) del modelo base `Qwen/Qwen3-8B`, desarrollado por el usuario `mtorres98` y publicado en Hugging Face. El modelo está entrenado mediante GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo utilizado para optimizar políticas de lenguaje, y se ofrece como un adaptador LoRA (Low-Rank Adaptation) mediante la biblioteca PEFT. Este tipo de adaptadores permite modificar el comportamiento de un modelo grande sin reentrenar todos sus pesos, reduciendo el coste de cómputo y almacenamiento.
 
-El repositorio contiene únicamente los pesos del adaptador (con un tamaño de aproximadamente 0,7 GB) y no incluye el modelo base completo, por lo que para su uso es necesario cargar `Qwen/Qwen3-8B` y aplicar el adaptador. Al ser un modelo de texto generativo, hereda las capacidades generales del modelo base, pero no se especifica en la documentación qué tareas concretas se han optimizado ni con qué datos se ha realizado el entrenamiento. La ficha publicada en HuggingFace está incompleta, con la mayoría de campos en «Más información necesaria», y existe poca información adicional en la web.
+El repositorio contiene únicamente los pesos del adaptador (con un tamaño de aproximadamente 0,7 GB) y no incluye el modelo base completo, por lo que para su uso es necesario cargar `Qwen/Qwen3-8B` y aplicar el adaptador. Al ser un modelo de texto generativo, hereda las capacidades generales del modelo base, pero no se especifica en la documentación qué tareas concretas se han optimizado ni con qué datos se ha realizado el entrenamiento. La ficha publicada en Hugging Face está incompleta, con la mayoría de campos en «Más información necesaria», y existe poca información adicional en la web.
 
 ## Especificaciones técnicas
 
@@ -26,7 +26,7 @@ El método de entrenamiento indicado en las etiquetas es GRPO (Group Relative Po
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado para la tarea de `text-generation`, tal y como se indica en HuggingFace.
+- Generación de texto: el modelo está configurado para la tarea de `text-generation`, tal y como se indica en Hugging Face.
 - No se especifican capacidades concretas adicionales (p. ej., razonamiento, código, matemáticas, tool calling, soporte de agentes, visión o audio). La información disponible no documenta características especiales del adaptador.
 - El soporte de herramientas (tool/function calling) no está confirmado en la información proporcionada.
 - Las capacidades multilingües y de razonamiento dependerán del modelo base `Qwen/Qwen3-8B`, pero no se han detallado en la ficha.
@@ -66,4 +66,4 @@ No se dispone de datos de comparación publicados para este modelo. El único pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mtorres98/turing-rl-qwen3-8b-grpo
+- Repositorio en Hugging Face: https://huggingface.co/mtorres98/turing-rl-qwen3-8b-grpo

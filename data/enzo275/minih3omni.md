@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini H3 Omni es un modelo multimodal compacto de aproximadamente 8,7 mil millones de parámetros desarrollado por Enzo Luis Dev (usuario Enzo275 en HuggingFace) que unifica generación de texto, imagen, vídeo y audio en una única arquitectura. El modelo combina un backbone autoregresivo basado en Qwen2.5-VL-3B con un transformer de difusión OmniGen2 para síntesis visual, un VAE de 16 canales, un transformer temporal para coherencia de vídeo de hasta 30 segundos a 30 fps y un puente de sincronización audio-vídeo compatible con MusicGen. Publicado bajo licencia Apache 2.0, el modelo se distribuye como un único archivo safetensors de 16,41 GB en precisión float16 y está pensado para tareas de generación y edición multimodal, incluyendo text-to-image, image-to-video, generación de audio y function calling.
+Mini H3 Omni es un modelo multimodal compacto de aproximadamente 8,7 mil millones de parámetros desarrollado por Enzo Luis Dev (usuario Enzo275 en Hugging Face) que unifica generación de texto, imagen, vídeo y audio en una única arquitectura. El modelo combina un backbone autoregresivo basado en Qwen2.5-VL-3B con un transformer de difusión OmniGen2 para síntesis visual, un VAE de 16 canales, un transformer temporal para coherencia de vídeo de hasta 30 segundos a 30 fps y un puente de sincronización audio-vídeo compatible con MusicGen. Publicado bajo licencia Apache 2.0, el modelo se distribuye como un único archivo safetensors de 16,41 GB en precisión float16 y está pensado para tareas de generación y edición multimodal, incluyendo text-to-image, image-to-video, generación de audio y function calling.
 
 La relevancia de Mini H3 Omni radica en su tamaño contenido para las capacidades que ofrece: con menos de 9 mil millones de parámetros cubre cuatro modalidades, algo que hasta ahora solo se veía en modelos propietarios como Gemini Omni Flash (también de ~8B). Al estar basado en OmniGen2 (paper arXiv:2506.18871), hereda las capacidades de generación in-context y edición iterativa de imágenes, y añade un módulo temporal que permite generar vídeos coherentes de 30 segundos a 1024x1024 píxeles. El modelo está disponible en el ecosistema diffusers, lo que facilita su integración en pipelines existentes de PyTorch.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Vídeo | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mini H3 Omni | ~8,7B | 30s @30fps | Texto, imagen, vídeo, audio | Apache 2.0 | HuggingFace (diffusers) |
+| Mini H3 Omni | ~8,7B | 30s @30fps | Texto, imagen, vídeo, audio | Apache 2.0 | Hugging Face (diffusers) |
 | Gemini Omni Flash | ~8B (según model card) | 60s | Texto, imagen, vídeo, audio | Propietaria | API de Google |
-| OmniGen2 (base) | ~3,97B (solo DiT) | No especificado | Imagen, edición in-context | Apache 2.0 | HuggingFace |
+| OmniGen2 (base) | ~3,97B (solo DiT) | No especificado | Imagen, edición in-context | Apache 2.0 | Hugging Face |
 
 La comparación con Gemini Omni Flash es estructural (tamaño y modalidades), pero no hay datos de rendimiento que permitan una evaluación directa. OmniGen2, al ser el componente de difusión base, comparte arquitectura y licencia, pero Mini H3 Omni añade el módulo temporal y de audio, lo que lo hace más completo pero también más pesado en memoria.
 
@@ -83,11 +83,11 @@ La comparación con Gemini Omni Flash es estructural (tamaño y modalidades), pe
 - El modelo solo soporta cinco idiomas (en, pt, zh, ja, ko); no hay soporte para español ni otros idiomas europeos.
 - No se documentan cuantizaciones alternativas (INT8, INT4), por lo que el despliegue en hardware con menos de 24 GB de VRAM es problemático.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que el modelo es muy reciente y no ha sido validado por la comunidad; se recomienda realizar pruebas exhaustivas antes de usarlo en producción.
-- La fecha de creación (agosto de 2026) es posterior a la fecha actual de conocimiento del modelo, lo que indica que puede tratarse de un modelo hipotético o simulado; verificar la disponibilidad real en HuggingFace.
+- La fecha de creación (agosto de 2026) es posterior a la fecha actual de conocimiento del modelo, lo que indica que puede tratarse de un modelo hipotético o simulado; verificar la disponibilidad real en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Enzo275/MiniH3Omni
+- Hugging Face: https://huggingface.co/Enzo275/MiniH3Omni
 - Paper de OmniGen2: https://arxiv.org/abs/2506.18871
 - Perfil del autor: https://huggingface.co/Enzo275
 - Repo base de OmniGen2 (ComfyUI repackaged): https://huggingface.co/Comfy-Org/Omnigen2_ComfyUI_repackaged

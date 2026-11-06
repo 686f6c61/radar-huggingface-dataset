@@ -116,7 +116,7 @@ Rendimiento comparado bajo un protocolo común: no disponible. Las cifras de Sla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.02
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.02
 - Versión anterior 1.01: https://huggingface.co/SlayerLab/Slayer1B-1.01
 - Versión anterior 1.00: https://huggingface.co/SlayerLab/Slayer1B-1.00
 - Checkpoints de entrenamiento con estado del optimizador: https://huggingface.co/SlayerLab/Slayer1B-1.02-checkpoints

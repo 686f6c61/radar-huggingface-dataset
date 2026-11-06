@@ -4,9 +4,9 @@
 
 quickmt-it-en-int8 es una conversión a CTranslate2 con cuantización int8 del modelo de traducción automática quickmt/quickmt-it-en, desarrollado originalmente por quickmt y redistribuido por value-productions. El modelo resuelve la tarea de traducción de italiano a inglés y está empaquetado específicamente para su uso con el motor de inferencia CTranslate2, que es el que emplea la aplicación Yaku Translate. Su relevancia radica en que ofrece una versión optimizada para despliegue en producción, reduciendo el peso del repositorio a aproximadamente 0,2 GB y manteniendo, según el autor, la misma salida que el original en float16 para las frases verificadas.
 
-La información disponible sobre el modelo es limitada: la model card es muy breve y no detalla la arquitectura interna, el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento. Se trata, por tanto, de una ficha basada en los metadatos publicados en HuggingFace y en la escasa documentación del autor, sin datos técnicos adicionales verificables.
+La información disponible sobre el modelo es limitada: la model card es muy breve y no detalla la arquitectura interna, el número de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento. Se trata, por tanto, de una ficha basada en los metadatos publicados en Hugging Face y en la escasa documentación del autor, sin datos técnicos adicionales verificables.
 
-El modelo se distribuye bajo licencia CC BY 4.0, lo que permite uso comercial con atribución, y está etiquetado para la tarea de traducción dentro del pipeline de HuggingFace. Al ser una conversión de un modelo base, las capacidades y limitaciones heredan directamente las del modelo original quickmt/quickmt-it-en.
+El modelo se distribuye bajo licencia CC BY 4.0, lo que permite uso comercial con atribución, y está etiquetado para la tarea de traducción dentro del pipeline de Hugging Face. Al ser una conversión de un modelo base, las capacidades y limitaciones heredan directamente las del modelo original quickmt/quickmt-it-en.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparación con MarianMT y NLLB se ofrece como referencia de categoría (tra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-it-en-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-it-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-it-en
 - CTranslate2 (motor de inferencia): https://github.com/OpenNMT/CTranslate2
 - Aplicación Yaku Translate (referenciada en la model card): no se proporciona enlace directo en la información disponible.

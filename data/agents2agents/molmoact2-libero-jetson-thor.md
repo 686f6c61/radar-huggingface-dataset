@@ -78,8 +78,8 @@ No se dispone de información suficiente para comparar este paquete con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agents2agents/MolmoAct2-LIBERO-Jetson-Thor
-- Modelo base en HuggingFace: https://huggingface.co/allenai/MolmoAct2-LIBERO
+- Repositorio Hugging Face: https://huggingface.co/agents2agents/MolmoAct2-LIBERO-Jetson-Thor
+- Modelo base en Hugging Face: https://huggingface.co/allenai/MolmoAct2-LIBERO
 - Paper MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
 - PDF del paper: https://arxiv.org/pdf/2605.02881
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2

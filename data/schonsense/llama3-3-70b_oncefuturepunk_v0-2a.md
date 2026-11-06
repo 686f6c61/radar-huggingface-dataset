@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`schonsense/Llama3.3-70B_oncefuturepunk_v0.2a` es un repositorio alojado en HuggingFace por el usuario schonsense. Por la nomenclatura del identificador (patrón `<modelo base>-<nombre del experimento>_v0.2a`) parece tratarse de un fine-tune, merge o experimento derivado de Llama 3.3 70B, presumiblemente orientado a escritura creativa o roleplay por el sufijo "oncefuturepunk". Es importante subrayar que esta filiación es una inferencia a partir del nombre y no está confirmada en ningún momento por el autor.
+`schonsense/Llama3.3-70B_oncefuturepunk_v0.2a` es un repositorio alojado en Hugging Face por el usuario schonsense. Por la nomenclatura del identificador (patrón `<modelo base>-<nombre del experimento>_v0.2a`) parece tratarse de un fine-tune, merge o experimento derivado de Llama 3.3 70B, presumiblemente orientado a escritura creativa o roleplay por el sufijo "oncefuturepunk". Es importante subrayar que esta filiación es una inferencia a partir del nombre y no está confirmada en ningún momento por el autor.
 
-La model card publicada no contiene ni una sola línea de texto técnico: únicamente incluye dos imágenes alojadas en el CDN de HuggingFace. No se documentan la arquitectura, los datos de entrenamiento, el método de ajuste (LoRA, mergekit, DPO, etc.), los idiomas, la licencia ni los formatos de pesos disponibles. El repositorio no tiene pipeline declarado, cero descargas y cero likes en el momento de la consulta.
+La model card publicada no contiene ni una sola línea de texto técnico: únicamente incluye dos imágenes alojadas en el CDN de Hugging Face. No se documentan la arquitectura, los datos de entrenamiento, el método de ajuste (LoRA, mergekit, DPO, etc.), los idiomas, la licencia ni los formatos de pesos disponibles. El repositorio no tiene pipeline declarado, cero descargas y cero likes en el momento de la consulta.
 
 Por tanto, esta ficha no puede validar ninguna característica funcional del modelo. Su relevancia actual es limitada y de carácter experimental: se trata de un artefacto comunitario sin documentación ni licencia declarada, lo que lo hace inadecuado para entornos de producción y desaconsejable para uso comercial sin una auditoría legal previa del linaje de pesos.
 
@@ -27,7 +27,7 @@ Por tanto, esta ficha no puede validar ninguna característica funcional del mod
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card: el README se limita a dos imágenes sin texto asociado, y los metadatos de HuggingFace no incluyen pipeline, licencia ni idiomas. No hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura en la model card: el README se limita a dos imágenes sin texto asociado, y los metadatos de Hugging Face no incluyen pipeline, licencia ni idiomas. No hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El único indicio disponible es el propio identificador del repositorio. El patrón de nombre es habitual en la comunidad de merges y fine-tunes (por ejemplo, artefactos generados con mergekit o con PEFT y posteriormente fusionados), y el segmento "Llama3.3-70B" apunta a que el modelo base sería Llama 3.3 70B de Meta, un transformer denso de 70 000 millones de parámetros con ventana de contexto de 128 000 tokens y licencia comunitaria propia. Esta descripción corresponde al modelo base público de Meta, no a este repositorio, y no debe asumirse como válida para este artefacto hasta que el autor lo documente o se verifiquen los tensores publicados.
 
@@ -51,7 +51,7 @@ Dado que no existe documentación técnica, los siguientes escenarios son planti
 - Evaluación comparativa de calidad de merges: uso en pipelines internos de evaluación (perplejidad, win-rate contra el base) para medir si el ajuste degrada capacidades generales.
 - Reproducción de experimentos de la comunidad: útil para quien quiera replicar el proceso de creación de un merge publicado sin model card, siempre que los pesos estén completos.
 - Pruebas de robustez y seguridad: serviría como muestra de artefacto sin licencia para diseñar controles de gobernanza de modelos en una organización.
-- Docencia sobre riesgos de la cadena de suministro de modelos: ejemplo práctico de por qué conviene exigir licencia, model card y procedencia de datos antes de adoptar un modelo de HuggingFace.
+- Docencia sobre riesgos de la cadena de suministro de modelos: ejemplo práctico de por qué conviene exigir licencia, model card y procedencia de datos antes de adoptar un modelo de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ La comparativa se establece con el modelo base que el nombre sugiere y con alter
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
 | schonsense/Llama3.3-70B_oncefuturepunk_v0.2a | no disponible (nombre indica 70B) | no disponible | no disponible | repo público, 0 descargas | inexistente (solo imágenes) |
-| Llama 3.3 70B Instruct (Meta) | 70B denso | 128k tokens | Llama 3.3 Community License | pesos abiertos en HuggingFace | model card completa y benchmarks publicados |
+| Llama 3.3 70B Instruct (Meta) | 70B denso | 128k tokens | Llama 3.3 Community License | pesos abiertos en Hugging Face | model card completa y benchmarks publicados |
 | Qwen2.5 72B Instruct (Alibaba) | 72B denso | 131k tokens (32k en configuraciones habituales) | Apache 2.0 | pesos abiertos | model card completa |
 | Mistral Large 2 (Mistral AI) | 123B denso | 128k tokens | Mistral Research License (uso comercial restringido) | pesos disponibles bajo solicitud/licencia | model card y benchmarks publicados |
 
@@ -95,7 +95,7 @@ No es posible comparar rendimiento porque el repositorio no aporta ninguna métr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.2a
+- Repositorio en Hugging Face: https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.2a
 - Perfil del autor: https://huggingface.co/schonsense
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las búsquedas devolvieron únicamente hilos de Reddit sobre cuestionarios de Bing, sin relación con el artefacto.
 - Paper, blog o repositorio asociado: no disponible.

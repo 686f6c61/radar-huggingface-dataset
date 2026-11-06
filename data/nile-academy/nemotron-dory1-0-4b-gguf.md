@@ -18,7 +18,7 @@ La informacion disponible es limitada: no se documentan longitud de contexto, id
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q5_K_M (unico fichero publicado, exportacion oficial de NVIDIA) |
 | Idiomas soportados | no disponible (la model card menciona tareas multilingues y de arabe en la evaluacion pendiente, sin listar idiomas) |
-| Licencia | OpenMDW 1.1 (`other` en metadatos de HuggingFace, con `license_name: openmdw-1.1`) |
+| Licencia | OpenMDW 1.1 (`other` en metadatos de Hugging Face, con `license_name: openmdw-1.1`) |
 | Formato de pesos | GGUF (fichero `NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf`, 3,673 GB) |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Elementos diferenciales verificables de este artefacto: licencia OpenMDW 1.1 (di
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf
+- Repositorio Hugging Face del GGUF: https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
 - Revision fijada del modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/tree/b366b87f762ea334ba3eb55912031baba1515810
 - Model card exacta del publicador: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/blob/b366b87f762ea334ba3eb55912031baba1515810/README.md

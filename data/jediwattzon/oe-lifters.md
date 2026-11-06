@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oe-lifters (este) | Adaptadores sobre base de ~7,6B | No disponible | Lifting ARM64 asm a C | No disponible | HuggingFace (MLX) |
-| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens nativos | Asistente de codigo general | Apache 2.0 en el modelo base | HuggingFace, ampliamente disponible |
-| Qwen2.5-Coder-14B-Instruct | ~14,7B | 32.768 tokens nativos | Asistente de codigo general | Apache 2.0 en el modelo base | HuggingFace |
+| oe-lifters (este) | Adaptadores sobre base de ~7,6B | No disponible | Lifting ARM64 asm a C | No disponible | Hugging Face (MLX) |
+| Qwen2.5-Coder-7B-Instruct | ~7,6B | 32.768 tokens nativos | Asistente de codigo general | Apache 2.0 en el modelo base | Hugging Face, ampliamente disponible |
+| Qwen2.5-Coder-14B-Instruct | ~14,7B | 32.768 tokens nativos | Asistente de codigo general | Apache 2.0 en el modelo base | Hugging Face |
 | Otros adaptadores de decompilacion (por ejemplo, familias derivadas de CodeLlama) | Segun base | Segun base | Decompilacion hacia C | Variable | Depende del autor |
 
 La comparacion cuantitativa de rendimiento no esta disponible: no se han publicado metricas del adaptador frente al modelo base sin ajustar ni frente a alternativas especializadas. Cualquier afirmacion de superioridad seria especulativa.
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no se han publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jediwattzon/oe-lifters
+- Modelo en Hugging Face: https://huggingface.co/jediwattzon/oe-lifters
 - Proyecto de entrenamiento: https://github.com/robertd/open-everything
 - Modelo base: https://huggingface.co/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

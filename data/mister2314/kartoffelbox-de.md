@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kartoffel-TTS (publicado en HuggingFace como `mister2314/kartoffelbox-de`) es un modelo de sintesis de voz (text-to-speech) en aleman desarrollado por el usuario mister2314, construido como un fine-tuning del framework open source Chatterbox de Resemble AI. El objetivo es ofrecer sintesis de voz natural y expresiva especificamente para aleman, incorporando control de exageracion emocional y clonacion de voz a partir de un audio de referencia. El modelo se distribuye bajo licencia MIT y su repositorio ocupa 3,2 GB.
+Kartoffel-TTS (publicado en Hugging Face como `mister2314/kartoffelbox-de`) es un modelo de sintesis de voz (text-to-speech) en aleman desarrollado por el usuario mister2314, construido como un fine-tuning del framework open source Chatterbox de Resemble AI. El objetivo es ofrecer sintesis de voz natural y expresiva especificamente para aleman, incorporando control de exageracion emocional y clonacion de voz a partir de un audio de referencia. El modelo se distribuye bajo licencia MIT y su repositorio ocupa 3,2 GB.
 
 Tecnicamente hereda la arquitectura de Chatterbox, que combina un backbone de tipo Llama para el modelado de tokens de texto, el tokenizador de habla S3Tokenizer, componentes de CosyVoice y un vocoder HiFT-GAN. El autor indica que el modelo esta todavia en desarrollo y que se entreno unicamente sobre 600.000 muestras sin clasificacion emocional, usando dos RTX 3090; esta previsto ampliar el corpus a mas de 2,5 millones de muestras y clasificar la exageracion. En la version v0.2 se anadio soporte preliminar para expresiones vocales no verbales mediante etiquetas de texto.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible de forma oficial. El repositorio ocupa 3,2 GB; una estimacion orientativa (no confirmada por el autor) situa la inferencia completa, incluyendo vocoder y modelo de referencia de voz, en el rango de 4-8 GB de VRAM en precision fp16.
 - GPU recomendadas: no especificadas en la informacion disponible. Por tamano de modelo, cualquier GPU consumer con al menos 8 GB (RTX 3060/3070/4060 y superiores) deberia ser suficiente segun la estimacion anterior, aunque no hay confirmacion del autor.
 - Compatibilidad con GPU de consumo: el autor entreno en RTX 3090 y la libreria `chatterbox-tts` admite `cuda` o `cpu` (`device = "cuda" if torch.cuda.is_available() else "cpu"`), por lo que cabe en GPU consumer, sin cifras oficiales de latencia.
-- Opciones de despliegue: la libreria oficial `chatterbox-tts` es la via documentada; existe una demo en HuggingFace Spaces y un cuaderno de Colab. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo TTS en safetensors).
+- Opciones de despliegue: la libreria oficial `chatterbox-tts` es la via documentada; existe una demo en Hugging Face Spaces y un cuaderno de Colab. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo TTS en safetensors).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Idiomas | Clonacion de voz | Control emocional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mister2314/kartoffelbox-de (Kartoffel-TTS) | Aleman | Si (audio de referencia) | Si (`exaggeration` + expresiones no verbales) | MIT | HuggingFace, Space, Colab |
-| ResembleAI/chatterbox (modelo base) | Multilingue segun version del proyecto | Si | Si | MIT | HuggingFace, libreria `chatterbox-tts` |
+| mister2314/kartoffelbox-de (Kartoffel-TTS) | Aleman | Si (audio de referencia) | Si (`exaggeration` + expresiones no verbales) | MIT | Hugging Face, Space, Colab |
+| ResembleAI/chatterbox (modelo base) | Multilingue segun version del proyecto | Si | Si | MIT | Hugging Face, libreria `chatterbox-tts` |
 | Otras alternativas TTS multilingues (p. ej. variantes de la familia XTTS o Bark) | Multilingue | Si en varios casos | Parcial | Variable por proyecto | no disponible en la informacion proporcionada |
 
 Nota: los datos de parametros, contexto y rendimiento de las alternativas no estan incluidos en la informacion proporcionada, por lo que no se ofrece una comparacion cuantitativa.
@@ -79,16 +79,16 @@ Nota: los datos de parametros, contexto y rendimiento de las alternativas no est
 - Sin benchmarks publicados: no hay metricas objetivas de naturalidad, inteligibilidad ni similitud de voz, lo que dificulta evaluar su calidad frente a alternativas.
 - Riesgo de alucinacion acustica: como todo modelo generativo de audio, puede producir artefactos, prosodia incorrecta, ruidos o pronunciaciones erroneas, especialmente en textos con nombres propios, numeros o vocabulario tecnico.
 - Riesgo de clonacion de voz indebida: la funcionalidad de voice cloning permite imitar voces sin consentimiento; es responsabilidad del usuario cumplir la normativa aplicable (por ejemplo, la AI Act europea en materia de transparencia y deepfakes).
-- Inconsistencia de identificadores en la documentacion: el ejemplo de uso de la model card apunta al repositorio `SebastianBodza/Kartoffelbox-v0.1`, mientras que el ID de HuggingFace es `mister2314/kartoffelbox-de`; conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
+- Inconsistencia de identificadores en la documentacion: el ejemplo de uso de la model card apunta al repositorio `SebastianBodza/Kartoffelbox-v0.1`, mientras que el ID de Hugging Face es `mister2314/kartoffelbox-de`; conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
 - Licencia MIT: permite uso comercial y modificacion con atribucion y sin garantias, pero no cubre las obligaciones legales derivadas del uso de voces clonadas.
 - Adopcion nula por el momento: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mister2314/kartoffelbox-de
+- Modelo en Hugging Face: https://huggingface.co/mister2314/kartoffelbox-de
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio referenciado en el ejemplo de uso de la model card: https://huggingface.co/SebastianBodza/Kartoffelbox-v0.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/SebastianBodza/Kartoffelbox
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/SebastianBodza/Kartoffelbox
 - Cuaderno de Colab: https://colab.research.google.com/drive/1ZNT08zrEuAeuH3VrsaMHeeqZFcZR8sHU?usp=sharing
 - Video de demostracion: https://huggingface.co/SebastianBodza/Kartoffelbox-v0.1/resolve/main/demo_kartoffelbox.mp4
 - Resultados de busqueda web: no se ha encontrado informacion tecnica adicional sobre el modelo; los enlaces devueltos corresponden a Instagram y no guardan relacion con el modelo.

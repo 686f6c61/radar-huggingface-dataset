@@ -86,7 +86,7 @@ La comparativa se basa en información pública; no se dispone de benchmarks est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlboydaisuke/LaMa-Inpainting-ExecuTorch
+- Hugging Face: https://huggingface.co/mlboydaisuke/LaMa-Inpainting-ExecuTorch
 - Repositorio original de LaMa: https://github.com/advimman/lama
 - Scripts de conversión ExecuTorch: https://github.com/john-rocky/executorch-models
 - Paper de LaMa (WACV 2022): https://arxiv.org/abs/2109.07161 (no verificado en la búsqueda, pero es la referencia estándar)

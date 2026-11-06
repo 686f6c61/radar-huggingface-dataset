@@ -23,7 +23,7 @@ La ficha técnica del modelo es notablemente escasa: no se especifican datos de 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GLM-OCR, que integra un codificador visual con un modelo de lenguaje para tareas de comprensión de documentos. Esta arquitectura está diseñada para manejar entradas multimodales, combinando el procesamiento de imágenes con generación de texto. El tag `glm_ocr` en HuggingFace confirma que el modelo sigue el paradigma de los modelos GLM adaptados a tareas de OCR y comprensión de documentos.
+El modelo se basa en la arquitectura GLM-OCR, que integra un codificador visual con un modelo de lenguaje para tareas de comprensión de documentos. Esta arquitectura está diseñada para manejar entradas multimodales, combinando el procesamiento de imágenes con generación de texto. El tag `glm_ocr` en Hugging Face confirma que el modelo sigue el paradigma de los modelos GLM adaptados a tareas de OCR y comprensión de documentos.
 
 Los detalles sobre el entrenamiento son prácticamente inexistentes. El nombre del modelo sugiere un fine-tuning completo (`fullft`) sobre un conjunto de datos de extracción de elementos de laboratorio (`lab_item_extraction`) con un enfoque farmacéutico (`drugft`). Existe una versión LoRA del mismo modelo (`KeraCare/lab_item_extraction_lora_drugft_v1`), lo que indica que el proceso de entrenamiento incluyó tanto fine-tuning completo como adaptadores de bajo rango. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO.
 
@@ -34,7 +34,7 @@ Los detalles sobre el entrenamiento son prácticamente inexistentes. El nombre d
 - Generación de texto estructurado a partir de entradas visuales (image-text-to-text).
 - Procesamiento conversacional multimodal, permitiendo interacción iterativa con el modelo.
 - Capacidad de fine-tuning adicional gracias a su formato compatible con transformers.
-- Inferencia en endpoints compatibles con la librería transformers de HuggingFace.
+- Inferencia en endpoints compatibles con la librería transformers de Hugging Face.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 1,1B parámetros en fp16, el modelo requiere aproximadamente 2,2 GB de VRAM solo para los pesos. Con overhead de activaciones y memoria intermedia, se recomienda un mínimo de 4 GB de VRAM.
 - GPU recomendadas: el modelo puede ejecutarse en GPUs de consumo como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores. Para despliegues profesionales, una A10 o A100 sería adecuada.
 - Compatibilidad con consumer GPU: sí, el tamaño del modelo permite su ejecución en GPUs de consumo con al menos 8 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference) o directamente con la librería transformers de HuggingFace. También es compatible con endpoints gestionados como los de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference) o directamente con la librería transformers de Hugging Face. También es compatible con endpoints gestionados como los de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. Dependerá del hardware y del backend de inferencia utilizado.
 
 ## Comparativa con modelos similares
@@ -73,12 +73,12 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La compa
 - No se han publicado datos de entrenamiento, por lo que se desconocen los posibles sesgos del modelo, especialmente en un dominio tan sensible como el sanitario.
 - La model card no incluye información sobre riesgos de alucinación o errores en la extracción de datos. En un contexto médico, un error de extracción podría tener consecuencias graves.
 - No se especifican los idiomas soportados. Si el modelo solo fue entrenado con documentos en inglés, su rendimiento en otros idiomas será limitado o nulo.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad. Su fiabilidad no está contrastada.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad. Su fiabilidad no está contrastada.
 - La fecha de creación (septiembre de 2026) es futura, lo que podría indicar un error en los metadatos o un modelo muy reciente sin trayectoria de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeraCare/lab_item_extraction_drugft_fullft_v1x0
+- Modelo en Hugging Face: https://huggingface.co/KeraCare/lab_item_extraction_drugft_fullft_v1x0
 - Versión LoRA del modelo: https://huggingface.co/KeraCare/lab_item_extraction_lora_drugft_v1
 - Repositorio de la versión LoRA: https://huggingface.co/KeraCare/lab_item_extraction_lora_drugft_v1/tree/main
 - Proyecto relacionado de análisis de recetas médicas: https://github.com/HR-VijayKumar/medical-prescription-analyzer

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (Qwen3.5-4B-game-sft-lora-r64-step2000) | Adaptador sobre base ~4B (nomenclatura) | 32.768 tokens de longitud de entrenamiento | LoRA SFT sobre trayectorias de juego multimodales | no disponible | Repo público, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-4B (modelo base sin adaptar) | ~4B segun nomenclatura | no disponible en la informacion proporcionada | VLM generalista | no disponible en la informacion proporcionada | Modelo base público en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base sin adaptar) | ~4B segun nomenclatura | no disponible en la informacion proporcionada | VLM generalista | no disponible en la informacion proporcionada | Modelo base público en Hugging Face |
 | Qwen2.5-VL-3B-Instruct | 3,75B | no disponible en la informacion proporcionada | VLM generalista instruido | Apache 2.0 | Ampliamente desplegado y documentado |
-| Otros LoRA de comunidad para agentes de juego | no disponible | no disponible | Adaptadores específicos de dominio | variable, a menudo sin declarar | Repos de HuggingFace con pocas descargas |
+| Otros LoRA de comunidad para agentes de juego | no disponible | no disponible | Adaptadores específicos de dominio | variable, a menudo sin declarar | Repos de Hugging Face con pocas descargas |
 
 La comparación relevante no es de rendimiento —no hay métricas— sino de encaje: frente a un VLM generalista como Qwen2.5-VL-3B-Instruct, este adaptador gana en especialización al formato de trayectorias y pierde en trazabilidad (sin licencia, sin idiomas declarados, sin evaluación) y en versatilidad fuera del dominio de juego.
 

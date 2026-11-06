@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hackeronetestt/poc-supply-chain` es un artefacto de demostración publicado en HuggingFace con el propósito explícito de ilustrar un ataque de envenenamiento de cadena de suministro en el ecosistema de modelos de IA. El propio README del autor indica que el modelo ha sido "backdoorado" y que el contenido malicioso fue subido después de una revisión que aprobó una versión segura. Se trata de un PoC (proof of concept) de seguridad, no de un modelo funcional para tareas de NLP.
+El modelo `hackeronetestt/poc-supply-chain` es un artefacto de demostración publicado en Hugging Face con el propósito explícito de ilustrar un ataque de envenenamiento de cadena de suministro en el ecosistema de modelos de IA. El propio README del autor indica que el modelo ha sido "backdoorado" y que el contenido malicioso fue subido después de una revisión que aprobó una versión segura. Se trata de un PoC (proof of concept) de seguridad, no de un modelo funcional para tareas de NLP.
 
 El repositorio no contiene información técnica sobre arquitectura, parámetros, contexto o capacidades. No se han publicado pesos, datasets ni código. La única metadata disponible es la licencia MIT, la región "us" y la etiqueta `BACKDOORED_MODEL`. La fecha de creación (agosto de 2026) y la ausencia de descargas sugieren que es un ejemplo reciente y de baja difusión, probablemente usado en entornos de investigación o formación en seguridad ofensiva.
 
@@ -39,7 +39,7 @@ Dado que es un PoC de seguridad, es probable que el autor haya creado una versi�
 - Investigación en seguridad ofensiva: el modelo puede utilizarse en entornos controlados para estudiar cómo se detectan y mitigan los backdoors en modelos de IA. Los equipos de seguridad pueden analizar el artefacto para identificar patrones de manipulación.
 - Formación en concienciación sobre la cadena de suministro: sirve como ejemplo didáctico para desarrolladores y organizaciones que necesitan entender los riesgos de descargar modelos de fuentes no verificadas.
 - Desarrollo de herramientas de escaneo y verificación: los investigadores pueden usar este PoC como caso de prueba para sistemas automáticos que detectan modelos maliciosos en repositorios públicos.
-- Auditoría de dependencias de IA: las empresas que integran modelos de HuggingFace pueden emplear este artefacto para validar sus pipelines de control de integridad antes de desplegar modelos en producción.
+- Auditoría de dependencias de IA: las empresas que integran modelos de Hugging Face pueden emplear este artefacto para validar sus pipelines de control de integridad antes de desplegar modelos en producción.
 - Simulación de incidentes de seguridad: los equipos de respuesta a incidentes pueden recrear escenarios de compromiso de un modelo para practicar protocolos de contención y remediación.
 - Evaluación de políticas de publicación: los administradores de plataformas de modelos pueden estudiar este PoC para mejorar sus procesos de revisión y evitar que contenido malicioso se publique tras una aprobación.
 
@@ -66,7 +66,7 @@ No disponible. No existen modelos comparables en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hackeronetestt/poc-supply-chain
+- Modelo en Hugging Face: https://huggingface.co/hackeronetestt/poc-supply-chain
 - Artículo sobre envenenamiento de cadena de suministro en modelos de IA: https://techbytes.app/posts/supply-chain-poisoning-in-ai-models-deep-dive-2026/
 - Servicios de seguridad de IA de HackerOne: https://www.hackerone.com/solutions/ai
 - Documentación de HackerOne sobre pentesting de LLM: https://docs.hackerone.com/en/articles/13489525-h1-llm-application-pentest

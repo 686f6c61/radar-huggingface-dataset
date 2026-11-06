@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mohamd26/R es un repositorio de modelo publicado en HuggingFace por el usuario Mohamd26 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card pública no contiene más información que el bloque de metadatos de licencia: no se declara arquitectura, tamaño, tokenizador, idiomas ni pipeline de inferencia. El repositorio registra 0 descargas y 0 «likes», y la fecha de creación y de última actualización coinciden (21 de octubre de 2026), lo que sugiere un artefacto recién subido y sin documentación asociada.
+Mohamd26/R es un repositorio de modelo publicado en Hugging Face por el usuario Mohamd26 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card pública no contiene más información que el bloque de metadatos de licencia: no se declara arquitectura, tamaño, tokenizador, idiomas ni pipeline de inferencia. El repositorio registra 0 descargas y 0 «likes», y la fecha de creación y de última actualización coinciden (21 de octubre de 2026), lo que sugiere un artefacto recién subido y sin documentación asociada.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su ventana de contexto a partir de la información disponible. La ficha que sigue recoge únicamente los datos verificables del repositorio y marca explícitamente como «no disponible» todo aquello que el autor no ha publicado.
 
@@ -77,5 +77,5 @@ No disponible. No se puede establecer una comparación por categoría (mismo tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mohamd26/R
+- Repositorio en Hugging Face: https://huggingface.co/Mohamd26/R
 - Paper, blog, demo o repositorio de código: no disponible en la información proporcionada.

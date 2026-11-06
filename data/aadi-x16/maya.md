@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aadi-x16/maya` es un repositorio publicado en HuggingFace por el usuario `aadi-x16` bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni capacidades declaradas. No se ha publicado ningún detalle sobre arquitectura, tamaño, contexto, idiomas o formato de pesos. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un proyecto en fase inicial. Dada la ausencia total de documentación técnica, no es posible evaluar su funcionalidad, rendimiento o idoneidad para casos de uso concretos. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias de datos.
+El modelo `aadi-x16/maya` es un repositorio publicado en Hugging Face por el usuario `aadi-x16` bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente contiene la línea `license: mit`, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni capacidades declaradas. No se ha publicado ningún detalle sobre arquitectura, tamaño, contexto, idiomas o formato de pesos. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un proyecto en fase inicial. Dada la ausencia total de documentación técnica, no es posible evaluar su funcionalidad, rendimiento o idoneidad para casos de uso concretos. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias de datos.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se han docume
 
 ## Casos de uso
 
-No es posible recomendar casos de uso específicos debido a la falta de información técnica. Sin conocer la arquitectura, el tamaño, el contexto o las capacidades del modelo, cualquier aplicación práctica sería una suposición sin fundamento. Se recomienda a los desarrolladores que consulten directamente el repositorio de HuggingFace para obtener actualizaciones o que contacten con el autor para solicitar documentación adicional.
+No es posible recomendar casos de uso específicos debido a la falta de información técnica. Sin conocer la arquitectura, el tamaño, el contexto o las capacidades del modelo, cualquier aplicación práctica sería una suposición sin fundamento. Se recomienda a los desarrolladores que consulten directamente el repositorio de Hugging Face para obtener actualizaciones o que contacten con el autor para solicitar documentación adicional.
 
 ## Benchmarks y rendimiento
 
@@ -50,4 +50,4 @@ No disponible. No se ha identificado ningún modelo comparable dentro de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aadi-x16/maya
+- Repositorio en Hugging Face: https://huggingface.co/aadi-x16/maya

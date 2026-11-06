@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy` es una política robótica de tipo Vision-Language-Action (VLA) obtenida por ajuste fino del modelo base `lerobot/pi0_base`, que a su vez es la implementación en LeRobot de π₀ (Pi0), el modelo fundacional de robótica de Physical Intelligence. El autor es SamerAyyad y el modelo se ha entrenado con la librería LeRobot 0.6.2 y publicado en HuggingFace. Está especializado en una única tarea de manipulación sobre un robot UR5 equipado con una cámara y una pinza de succión: recoger una CPU y depositarla en una caja.
+El modelo `SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy` es una política robótica de tipo Vision-Language-Action (VLA) obtenida por ajuste fino del modelo base `lerobot/pi0_base`, que a su vez es la implementación en LeRobot de π₀ (Pi0), el modelo fundacional de robótica de Physical Intelligence. El autor es SamerAyyad y el modelo se ha entrenado con la librería LeRobot 0.6.2 y publicado en Hugging Face. Está especializado en una única tarea de manipulación sobre un robot UR5 equipado con una cámara y una pinza de succión: recoger una CPU y depositarla en una caja.
 
 El interés de esta ficha es acotado pero claro: se trata de un caso real de ajuste fino de un VLA generalista a un dominio concreto mediante aprendizaje por imitación, con 200 episodios y 130.980 fotogramas grabados a 30 FPS. El modelo tiene 4.028.019.472 parámetros (ficheros safetensors) y ocupa 8,9 GB en el repositorio, lo que lo sitúa en la gama de los VLA de tamaño medio-grande. Se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones de atribución copyleft.
 
@@ -56,7 +56,7 @@ El ajuste fino se realizó por aprendizaje por imitación supervisado sobre el d
 - Generación de datos sintéticos de trayectorias: ejecutando la política con `--strategy.type=base` sin grabación y capturando las acciones emitidas, se pueden obtener trayectorias candidatas para aumentar el dataset de entrenamiento.
 - Evaluación comparativa de políticas VLA sobre el mismo hardware: al estar publicada en el Hub con metadatos completos (formato de entradas y salidas, tipo de robot, cámaras), puede compararse contra otras políticas LeRobot bajo idéntico setup de sensores.
 - Investigación en robustez ante variaciones de iluminación y posición de objeto: la model card deja abierta la evaluación formal, de modo que este modelo puede usarse como sujeto de pruebas para medir la degradación de la tasa de éxito al mover objetos o cambiar la iluminación.
-- Demostración de flujo completo de publicación de políticas en HuggingFace: útil como plantilla interna para equipos que quieran estandarizar cómo suben sus políticas de imitación al Hub.
+- Demostración de flujo completo de publicación de políticas en Hugging Face: útil como plantilla interna para equipos que quieran estandarizar cómo suben sus políticas de imitación al Hub.
 
 ## Benchmarks y rendimiento
 
@@ -79,9 +79,9 @@ La model card incluye explícitamente la sección de evaluación vacía, con la 
 
 | Modelo | Parametros | Contexto / observaciones | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy | 4,028 mil millones | Imagen 3x480x640, estado (7,); contexto no disponible | Pick-and-place de CPU con ventosa en UR5 | Apache 2.0 | HuggingFace, via LeRobot |
-| lerobot/pi0_base (modelo base) | No disponible en la informacion proporcionada | No disponible | Política generalista Vision-Language-Action | No disponible en la informacion proporcionada | HuggingFace, via LeRobot |
-| Otras políticas VLA de la familia LeRobot (por ejemplo SmolVLA, ACT o Diffusion Policy) | No disponible en la informacion proporcionada para este contexto | No disponible | Manipulación por imitación | No disponible en la informacion proporcionada | HuggingFace, via LeRobot |
+| SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy | 4,028 mil millones | Imagen 3x480x640, estado (7,); contexto no disponible | Pick-and-place de CPU con ventosa en UR5 | Apache 2.0 | Hugging Face, via LeRobot |
+| lerobot/pi0_base (modelo base) | No disponible en la informacion proporcionada | No disponible | Política generalista Vision-Language-Action | No disponible en la informacion proporcionada | Hugging Face, via LeRobot |
+| Otras políticas VLA de la familia LeRobot (por ejemplo SmolVLA, ACT o Diffusion Policy) | No disponible en la informacion proporcionada para este contexto | No disponible | Manipulación por imitación | No disponible en la informacion proporcionada | Hugging Face, via LeRobot |
 
 No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, tarea y disponibilidad. Cualquier cifra de rendimiento relativo entre modelos VLA exigiría evaluaciones en el mismo robot y con el mismo protocolo, que no se han publicado para este modelo.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy
+- Modelo en Hugging Face: https://huggingface.co/SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/SamerAyyad/VLA_Samer_24.09.2026_200eps
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=SamerAyyad/VLA_Samer_24.09.2026_200eps
 - Modelo base: https://huggingface.co/lerobot/pi0_base

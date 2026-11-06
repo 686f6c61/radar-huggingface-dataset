@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-Base es el modelo base de la familia Qwen3-TTS, un sistema de síntesis de voz (text-to-speech) end-to-end desarrollado por el equipo Qwen de Alibaba. Esta ficha describe la réplica publicada en HuggingFace por el usuario Allinsama bajo el identificador `Allinsama/Qwen__Qwen3-TTS-12Hz-1.7B-Base`, que reproduce los pesos oficiales de `Qwen/Qwen3-TTS-12Hz-1.7B-Base` con licencia Apache 2.0 y un total de 1.928.677.440 parámetros (aproximadamente 1,93 mil millones).
+Qwen3-TTS-12Hz-1.7B-Base es el modelo base de la familia Qwen3-TTS, un sistema de síntesis de voz (text-to-speech) end-to-end desarrollado por el equipo Qwen de Alibaba. Esta ficha describe la réplica publicada en Hugging Face por el usuario Allinsama bajo el identificador `Allinsama/Qwen__Qwen3-TTS-12Hz-1.7B-Base`, que reproduce los pesos oficiales de `Qwen/Qwen3-TTS-12Hz-1.7B-Base` con licencia Apache 2.0 y un total de 1.928.677.440 parámetros (aproximadamente 1,93 mil millones).
 
 El modelo resuelve la generación de audio a partir de texto mediante una arquitectura de LM discreto multi-codebook, apoyada en el tokenizador propio Qwen3-TTS-Tokenizer-12Hz para comprimir y reconstruir la señal de voz. Frente a los esquemas clásicos LM+DiT, elimina la cascada de dos etapas y con ello parte de los cuellos de botella de información. Cubre diez idiomas (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano) y soporta generación en streaming con una latencia declarada de 97 ms hasta el primer paquete de audio.
 

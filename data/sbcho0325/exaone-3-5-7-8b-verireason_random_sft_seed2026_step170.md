@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step170` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, que se construye sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por LG AI Research. El adaptador fue entrenado mediante *supervised fine-tuning* (SFT) con una semilla aleatoria (seed 2026) y un checkpoint intermedio (paso 170), lo que sugiere que forma parte de un experimento de ajuste fino orientado a tareas de razonamiento o verificación de respuestas (el nombre "verireason" apunta a *verification reasoning*).
+El modelo `sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step170` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, que se construye sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`, desarrollado por LG AI Research. El adaptador fue entrenado mediante *supervised fine-tuning* (SFT) con una semilla aleatoria (seed 2026) y un checkpoint intermedio (paso 170), lo que sugiere que forma parte de un experimento de ajuste fino orientado a tareas de razonamiento o verificación de respuestas (el nombre "verireason" apunta a *verification reasoning*).
 
 La relevancia de este modelo radica en que permite adaptar un LLM ya potente de 7.800 millones de parámetros a una tarea específica sin necesidad de reentrenar toda la red, reduciendo costes computacionales y de almacenamiento. Sin embargo, la documentación proporcionada es extremadamente escasa: la model card no incluye detalles sobre los datos de entrenamiento, hiperparámetros, evaluación ni licencia. Por tanto, esta ficha se basa principalmente en la información del modelo base y en los metadatos del repositorio, marcando como "no disponible" todo aquello que no se ha especificado.
 
@@ -78,7 +78,7 @@ La comparación directa no es posible sin datos de rendimiento. El adaptador sol
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step170
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step170
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper de LoRA (referencia técnica): https://arxiv.org/abs/2106.09685
 - Paper de EXAONE (si existe, no confirmado): no disponible

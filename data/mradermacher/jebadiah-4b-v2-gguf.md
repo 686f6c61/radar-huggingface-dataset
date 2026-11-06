@@ -79,8 +79,8 @@ No se dispone de informacion sobre alternativas comparables publicadas en la mis
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/jebadiah-4b-v2-GGUF | 333.514.240 segun safetensors (nombre indica "4b") | no disponible | GGUF | apache-2.0 | HuggingFace, 0 descargas |
-| frontier-infra/jebadiah-4b-v2 | no disponible | no disponible | safetensors | apache-2.0 | HuggingFace (modelo base) |
+| mradermacher/jebadiah-4b-v2-GGUF | 333.514.240 segun safetensors (nombre indica "4b") | no disponible | GGUF | apache-2.0 | Hugging Face, 0 descargas |
+| frontier-infra/jebadiah-4b-v2 | no disponible | no disponible | safetensors | apache-2.0 | Hugging Face (modelo base) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

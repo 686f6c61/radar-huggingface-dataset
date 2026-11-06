@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RiNALMo-mega es un modelo de lenguaje especializado en ARN (ácido ribonucleico), desarrollado por el equipo de Penić et al. y portado a HuggingFace por Taykhoom. Se trata de la variante intermedia (148,1 millones de parámetros) de RiNALMo, una familia de modelos de lenguaje de ARN preentrenados sobre 36 millones de secuencias de ARN no codificante procedentes de múltiples bases de datos. El modelo está diseñado para capturar información estructural y funcional de las secuencias de ARN, y ha demostrado capacidad de generalización en tareas de predicción de estructura secundaria.
+RiNALMo-mega es un modelo de lenguaje especializado en ARN (ácido ribonucleico), desarrollado por el equipo de Penić et al. y portado a Hugging Face por Taykhoom. Se trata de la variante intermedia (148,1 millones de parámetros) de RiNALMo, una familia de modelos de lenguaje de ARN preentrenados sobre 36 millones de secuencias de ARN no codificante procedentes de múltiples bases de datos. El modelo está diseñado para capturar información estructural y funcional de las secuencias de ARN, y ha demostrado capacidad de generalización en tareas de predicción de estructura secundaria.
 
-La relevancia actual de RiNALMo-mega radica en que es uno de los pocos modelos de lenguaje de ARN disponibles públicamente con pesos abiertos y una implementación compatible con el ecosistema HuggingFace Transformers. Su tamaño moderado (148M) ofrece un equilibrio entre calidad de representación y coste computacional, lo que lo hace accesible para laboratorios con recursos limitados. El modelo utiliza una arquitectura Transformer pre-LN con SwiGLU y codificación posicional RoPE, con una ventana de contexto práctica de aproximadamente 8192 tokens.
+La relevancia actual de RiNALMo-mega radica en que es uno de los pocos modelos de lenguaje de ARN disponibles públicamente con pesos abiertos y una implementación compatible con el ecosistema Hugging Face Transformers. Su tamaño moderado (148M) ofrece un equilibrio entre calidad de representación y coste computacional, lo que lo hace accesible para laboratorios con recursos limitados. El modelo utiliza una arquitectura Transformer pre-LN con SwiGLU y codificación posicional RoPE, con una ventana de contexto práctica de aproximadamente 8192 tokens.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La relevancia actual de RiNALMo-mega radica en que es uno de los pocos modelos d
 
 RiNALMo-mega sigue una arquitectura Transformer pre-LN con 30 capas, 20 cabezas de atención, dimensión de embedding de 640 y una capa FFN oculta de 1706 unidades con activación SwiGLU. La codificación posicional utiliza RoPE con base 10000 y formato no intercalado. La normalización emplea LayerNorm con épsilon 1e-5. El vocabulario consta de 22 tokens: tokens especiales (`<cls>`, `<pad>`, `<eos>`, `<unk>`, `<mask>`) y los nucleótidos A, C, G, T, más los códigos de ambigüedad IUPAC (I, R, Y, K, M, S, W, B, D, H, V, N) y el guion `-`. El tokenizador convierte U a T antes de codificar, ya que el modelo fue entrenado con T.
 
-El preentrenamiento se realizó con el objetivo de modelado de lenguaje enmascarado (MLM) estilo BERT con una tasa de enmascarado del 15%, sobre 36 millones de secuencias de ARN no codificante. El checkpoint de partida es `rinalmo_mega_pretrained.pt` disponible en Zenodo. La implementación original utiliza Flash Attention 2.3.2 durante el entrenamiento; el port a HuggingFace expone backends eager, SDPA y Flash Attention 2 mediante el despacho `attn_implementation`. Una particularidad de la implementación es que el residual de atención se toma de la entrada normalizada (residual pre-LN no estándar), mientras que el FFN usa el esquema pre-LN convencional. Además, se aplica TokenDropout que reescala los embeddings incluso en inferencia, consistente con el código de entrenamiento original.
+El preentrenamiento se realizó con el objetivo de modelado de lenguaje enmascarado (MLM) estilo BERT con una tasa de enmascarado del 15%, sobre 36 millones de secuencias de ARN no codificante. El checkpoint de partida es `rinalmo_mega_pretrained.pt` disponible en Zenodo. La implementación original utiliza Flash Attention 2.3.2 durante el entrenamiento; el port a Hugging Face expone backends eager, SDPA y Flash Attention 2 mediante el despacho `attn_implementation`. Una particularidad de la implementación es que el residual de atención se toma de la entrada normalizada (residual pre-LN no estándar), mientras que el FFN usa el esquema pre-LN convencional. Además, se aplica TokenDropout que reescala los embeddings incluso en inferencia, consistente con el código de entrenamiento original.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El preentrenamiento se realizó con el objetivo de modelado de lenguaje enmascar
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original de Nature Communications (doi:10.1038/s41467-025-60872-5) reporta evaluaciones en tareas de predicción de estructura y otras, pero esos datos no están incluidos en la documentación del port de HuggingFace. Se recomienda consultar la publicación original para métricas detalladas.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original de Nature Communications (doi:10.1038/s41467-025-60872-5) reporta evaluaciones en tareas de predicción de estructura y otras, pero esos datos no están incluidos en la documentación del port de Hugging Face. Se recomienda consultar la publicación original para métricas detalladas.
 
 ## Requisitos de hardware
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Es viable en GPUs de consumo con al menos 4 GB de VRAM para inferencia en fp32, y menos de 2 GB en bf16 con cuantización.
 - GPUs recomendadas: cualquier GPU moderna con soporte CUDA (RTX 2060 o superior) para inferencia; para fine-tuning, se recomienda al menos 8 GB de VRAM.
 - Compatible con backends de atención eager, SDPA (PyTorch 2.0+) y Flash Attention 2 (requiere paquete `flash-attn`).
-- Despliegue posible con HuggingFace Transformers estándar; no se menciona soporte nativo para vLLM, llama.cpp u Ollama, pero al ser un modelo de ARN, el uso principal es mediante la API de Transformers.
+- Despliegue posible con Hugging Face Transformers estándar; no se menciona soporte nativo para vLLM, llama.cpp u Ollama, pero al ser un modelo de ARN, el uso principal es mediante la API de Transformers.
 - Latencia y throughput: no disponible; al ser un modelo pequeño, se espera una inferencia rápida en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RiNALMo-micro | 33,5M | ~8192 | CC BY 4.0 | HuggingFace |
-| **RiNALMo-mega** | **148,1M** | **~8192** | **CC BY 4.0** | **HuggingFace** |
-| RiNALMo-giga | 650,9M | ~8192 | CC BY 4.0 | HuggingFace |
+| RiNALMo-micro | 33,5M | ~8192 | CC BY 4.0 | Hugging Face |
+| **RiNALMo-mega** | **148,1M** | **~8192** | **CC BY 4.0** | **Hugging Face** |
+| RiNALMo-giga | 650,9M | ~8192 | CC BY 4.0 | Hugging Face |
 
 No se dispone de datos comparativos con otros modelos de ARN como RNA-FM o DNABERT-2 en la información proporcionada. La comparativa se limita a las variantes de la misma familia RiNALMo.
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos de ARN como RNA-FM o DNABE
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taykhoom/RiNALMo-mega
+- Hugging Face: https://huggingface.co/Taykhoom/RiNALMo-mega
 - Colección RiNALMo: https://huggingface.co/collections/Taykhoom/rinalmo
 - Artículo Nature Communications: https://www.nature.com/articles/s41467-025-60872-5
 - PDF del artículo: https://www.nature.com/articles/s41467-025-60872-5.pdf

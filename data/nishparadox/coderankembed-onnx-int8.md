@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos comparativos con otros e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishparadox/CodeRankEmbed-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/nishparadox/CodeRankEmbed-onnx-int8
 - Modelo base: https://huggingface.co/nomic-ai/CodeRankEmbed
 - Export fp32 ONNX de origen: https://huggingface.co/jamie8johnson/CodeRankEmbed-onnx
 - Proyecto vibepiler: https://github.com/NISH1001/vibepiler

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT_UserReview es un modelo publicado en HuggingFace por el usuario Alief123 bajo licencia MIT. Por el identificador y la ausencia de cualquier otra documentación, se trata con alta probabilidad de un ajuste fino (fine-tuning) del modelo base IndoBERT, un encoder transformer de tipo BERT preentrenado para indonesio, orientado a una tarea de clasificación o análisis de reseñas de usuarios (por ejemplo, análisis de sentimiento o clasificación de opiniones). No obstante, la model card publicada no contiene ninguna descripción técnica, por lo que esta interpretación no puede confirmarse con los datos disponibles.
+IndoBERT_UserReview es un modelo publicado en Hugging Face por el usuario Alief123 bajo licencia MIT. Por el identificador y la ausencia de cualquier otra documentación, se trata con alta probabilidad de un ajuste fino (fine-tuning) del modelo base IndoBERT, un encoder transformer de tipo BERT preentrenado para indonesio, orientado a una tarea de clasificación o análisis de reseñas de usuarios (por ejemplo, análisis de sentimiento o clasificación de opiniones). No obstante, la model card publicada no contiene ninguna descripción técnica, por lo que esta interpretación no puede confirmarse con los datos disponibles.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas, no aporta información sobre el dataset de entrenamiento, hiperparámetros, arquitectura concreta ni resultados de evaluación. Tampoco registra descargas ni likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Alief123/IndoBERT_UserReview | no disponible | no disponible | MIT | HuggingFace |
-| IndoBERT (base, indolem/indobert-base-uncased) | ~124 M (referencia de la familia, no confirmado para este repo) | 512 tokens (referencia de BERT base) | MIT/Apache según variante | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
+| Alief123/IndoBERT_UserReview | no disponible | no disponible | MIT | Hugging Face |
+| IndoBERT (base, indolem/indobert-base-uncased) | ~124 M (referencia de la familia, no confirmado para este repo) | 512 tokens (referencia de BERT base) | MIT/Apache según variante | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 La comparativa es orientativa: no se dispone de datos verificados del modelo evaluado ni de sus resultados, por lo que la comparación se limita a la familia de modelos de referencia.
 

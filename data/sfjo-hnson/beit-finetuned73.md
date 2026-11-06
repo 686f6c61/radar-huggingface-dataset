@@ -32,7 +32,7 @@ No se han documentado capacidades especificas en la informacion proporcionada. A
 - Revision de codigo: el repositorio sirve como ejemplo de implementacion de BEiT en PyTorch, util para auditar la logica de atencion, fusion y normalizacion.
 - Pruebas de humo: el checkpoint de inicializacion permite verificar que el codigo ejecuta sin errores en entornos de desarrollo o CI.
 - Experimentos controlados: se puede usar como baseline de capacidad minima para comparar con otras implementaciones, siempre que se entrene con los mismos datos y semillas.
-- Desarrollo de adaptadores: al ser una implementacion personalizada, puede servir para practicar la creacion de adaptadores que permitan cargarlo con APIs genericas de HuggingFace.
+- Desarrollo de adaptadores: al ser una implementacion personalizada, puede servir para practicar la creacion de adaptadores que permitan cargarlo con APIs genericas de Hugging Face.
 - Investigacion educativa: util para estudiar la arquitectura BEiT en un entorno minimalista, sin la complejidad de los modelos completos.
 - Pruebas de integracion: permite validar pipelines de entrenamiento o inferencia con un modelo de tamano trivial, antes de escalar a modelos reales.
 
@@ -56,7 +56,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 - El checkpoint es de inicializacion, no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se proporcionan datos de entrenamiento, por lo que no se puede evaluar su comportamiento real.
-- La implementacion es personalizada y requiere un adaptador explicito para cargarla con APIs genericas de HuggingFace.
+- La implementacion es personalizada y requiere un adaptador explicito para cargarla con APIs genericas de Hugging Face.
 - No es apto para uso en produccion ni para tareas reales de generacion.
 - La licencia MIT permite uso comercial, pero los terminos de los datos externos que se usen con el repositorio deben revisarse por separado.
 - No hay garantia de que el codigo funcione correctamente fuera del entorno de pruebas descrito.
@@ -64,6 +64,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/sfjo-hnson/beit-finetuned73
-- Documentacion de BEiT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/beit
+- Documentacion de BEiT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/beit
 - Implementacion de BEiT en transformers: https://github.com/huggingface/transformers/blob/main/src/transformers/models/beit/modeling_beit.py
 - Repositorio oficial de BEiT (Microsoft): https://github.com/microsoft/unilm/blob/master/beit/modeling_finetune.py

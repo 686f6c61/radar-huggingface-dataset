@@ -101,8 +101,8 @@ DeepSeek-V4-Pro-0813 destaca frente a sus competidores en tareas de terminal (87
 
 ## Enlaces
 
-- Repositorio en HuggingFace (ID proporcionado): https://huggingface.co/Plana-Chan/DeepSeek-V4-Pro-0813
-- Modelo oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Repositorio en Hugging Face (ID proporcionado): https://huggingface.co/Plana-Chan/DeepSeek-V4-Pro-0813
+- Modelo oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

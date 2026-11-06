@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iblsoft/AIFDS es un repositorio de modelo publicado en HuggingFace por el usuario iblsoft bajo licencia CC-BY-4.0. La unica informacion tecnica verificable que acompana al repositorio es la etiqueta de libreria `onnx`, lo que sugiere que el artefacto distribuido esta en formato ONNX, aunque no se especifica el modelo de origen, la tarea ni el pipeline asociado. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura y sin datos de entrenamiento.
+iblsoft/AIFDS es un repositorio de modelo publicado en Hugging Face por el usuario iblsoft bajo licencia CC-BY-4.0. La unica informacion tecnica verificable que acompana al repositorio es la etiqueta de libreria `onnx`, lo que sugiere que el artefacto distribuido esta en formato ONNX, aunque no se especifica el modelo de origen, la tarea ni el pipeline asociado. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura y sin datos de entrenamiento.
 
 El repositorio no ha registrado ninguna descarga ni ninguna interaccion (0 likes) y su tamano declarado es de 0.0 GB, lo que apunta a un espacio de publicacion vacio, en fase de borrador o creado como marcador de posicion. Las fechas de creacion y actualizacion (22 de septiembre de 2026) resultan anomalas y refuerzan la hipotesis de un repositorio no consolidado.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iblsoft/AIFDS
+- Hugging Face: https://huggingface.co/iblsoft/AIFDS
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - ONNX: https://onnx.ai/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

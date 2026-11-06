@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReDimNet2-B3 es un modelo de extracción de embeddings de locutor (speaker embeddings) orientado a tareas de diarización y verificación de hablantes. Lo publica el usuario `diarizeapp` en HuggingFace y esta versión concreta se distribuye en formato ONNX optimizado para ejecución en NPU (Qualcomm Hexagon HTP y DirectML), además de CPU. El modelo se basa en la arquitectura ReDimNet2, una familia de redes diseñada para producir representaciones de locutor invariantes a la duración del audio de entrada.
+ReDimNet2-B3 es un modelo de extracción de embeddings de locutor (speaker embeddings) orientado a tareas de diarización y verificación de hablantes. Lo publica el usuario `diarizeapp` en Hugging Face y esta versión concreta se distribuye en formato ONNX optimizado para ejecución en NPU (Qualcomm Hexagon HTP y DirectML), además de CPU. El modelo se basa en la arquitectura ReDimNet2, una familia de redes diseñada para producir representaciones de locutor invariantes a la duración del audio de entrada.
 
 El problema que resuelve es el de obtener una huella digital compacta y discriminativa de la voz de una persona, que luego se usa para agrupar segmentos de audio por hablante (diarización) o para comprobar si dos fragmentos pertenecen a la misma persona (verificación). Al ofrecer una variante que acepta directamente representaciones de filterbank precalculadas, evita el cálculo de STFT dentro del grafo y facilita el offload a aceleradores de bajo consumo.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (el tamaño del repo figura como 0.0 GB en HuggingFace, lo que impide estimar a partir de los pesos publicados).
+- VRAM estimada para inferencia: no disponible (el tamaño del repo figura como 0.0 GB en Hugging Face, lo que impide estimar a partir de los pesos publicados).
 - GPU recomendadas: no se especifican; el modelo está orientado a CPU, NPU Qualcomm Hexagon HTP y DirectML (GPU en Windows).
 - Compatibilidad con GPU de consumo: no confirmada en la información disponible.
 - Opciones de despliegue: ONNX Runtime, con ejecución en CPU, proveedor QNN para Hexagon HTP y proveedor DirectML.
@@ -76,9 +76,9 @@ No hay datos suficientes en la información proporcionada para establecer una co
 - El rendimiento fuera de las condiciones de entrenamiento (ruido, canales telefónicos, reverberación) no está documentado.
 - Aunque se declara multilingüe, solo `en` figura explícitamente; la cobertura real por idioma no está cuantificada.
 - La licencia Apache 2.0 permite uso comercial, pero no se ofrece garantía ni se documentan limitaciones éticas o de consentimiento para grabación de voz.
-- El repo figura con tamaño 0.0 GB y 0 descargas, lo que sugiere que los artefactos pueden no estar aún publicados o la información de HuggingFace está incompleta; conviene verificar la disponibilidad real de los ficheros ONNX antes de integrarlo en producción.
+- El repo figura con tamaño 0.0 GB y 0 descargas, lo que sugiere que los artefactos pueden no estar aún publicados o la información de Hugging Face está incompleta; conviene verificar la disponibilidad real de los ficheros ONNX antes de integrarlo en producción.
 - No se especifican requisitos de versión de ONNX Runtime ni de los proveedores QNN/DirectML, lo que puede complicar el despliegue reproducible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/redimnet2-b3-onnx-qnn
+- Hugging Face: https://huggingface.co/diarizeapp/redimnet2-b3-onnx-qnn

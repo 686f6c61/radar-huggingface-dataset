@@ -6,7 +6,7 @@ Ling-3.0-flash-heretic-MXFP4_MOE-GGUF es una cuantización en formato GGUF del m
 
 La relevancia de este modelo radica en dos aspectos: por un lado, permite ejecutar un LLM de más de 127B parámetros en hardware relativamente accesible gracias a la cuantización extrema; por otro, la variante "heretic" presenta una característica notable: mientras el modelo original registra 87 rechazos de cada 100 solicitudes (probablemente por filtros de seguridad), esta versión cuantizada no rechaza ninguna (0/100), lo que la convierte en una opción sin censura para casos de uso que requieren generación libre de restricciones.
 
-La cuantización está optimizada para su uso con llama.cpp, y los parámetros de inferencia recomendados por el autor son temperatura 0.6, top_p 0.95 y top_k 20. Aunque el modelo se publicó en agosto de 2026, no ha recibido descargas ni valoraciones en HuggingFace hasta la fecha.
+La cuantización está optimizada para su uso con llama.cpp, y los parámetros de inferencia recomendados por el autor son temperatura 0.6, top_p 0.95 y top_k 20. Aunque el modelo se publicó en agosto de 2026, no ha recibido descargas ni valoraciones en Hugging Face hasta la fecha.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/noctrex/Ling-3.0-flash-heretic-MXFP4_MOE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/noctrex/Ling-3.0-flash-heretic-MXFP4_MOE-GGUF
 - Modelo base (trohrbaugh/Ling-3.0-flash-heretic): https://huggingface.co/trohrbaugh/Ling-3.0-flash-heretic
 - Documentación oficial de la serie Ling (Ant Group): https://developer.ant-ling.com/en/docs/models/ling/
 - Repositorio GitHub de InclusionAI/Ling: https://github.com/inclusionAI/Ling

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f` es un modelo de lenguaje de 1.858.535.658 parametros (aproximadamente 1,86 mil millones) publicado en HuggingFace bajo licencia `other` y acceso restringido (gated). El nombre del repositorio sigue un patron de identificador compuesto (`sn38` + `r2` + `2015` + hash + `chronollm` + `2015f`) que sugiere un artefacto generado dentro de una ronda de evaluacion o mineria de la subnet 38 (SN38), asociada al proyecto ChronoLLM. Esta interpretacion se deduce del repositorio publico `chronollm/sn38` y de sus pull requests, que describen rondas de evaluacion con descarga de modelos y generacion por duelos; no esta confirmada por el autor en la model card.
+`alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f` es un modelo de lenguaje de 1.858.535.658 parametros (aproximadamente 1,86 mil millones) publicado en Hugging Face bajo licencia `other` y acceso restringido (gated). El nombre del repositorio sigue un patron de identificador compuesto (`sn38` + `r2` + `2015` + hash + `chronollm` + `2015f`) que sugiere un artefacto generado dentro de una ronda de evaluacion o mineria de la subnet 38 (SN38), asociada al proyecto ChronoLLM. Esta interpretacion se deduce del repositorio publico `chronollm/sn38` y de sus pull requests, que describen rondas de evaluacion con descarga de modelos y generacion por duelos; no esta confirmada por el autor en la model card.
 
 El proyecto ChronoLLM se presenta en su web como un esfuerzo por construir modelos sin sesgo de anticipacion (*lookahead bias*): cada modelo se entrenaria exclusivamente con datos disponibles hasta su fecha de corte, de modo que sirva como herramienta de backtesting para investigacion cuantitativa. El sufijo `2015` del identificador encaja con esa logica de fecha de corte, aunque no hay documentacion publica que lo verifique para este checkpoint concreto.
 
@@ -20,9 +20,9 @@ La relevancia del modelo es, por tanto, acotada y experimental: se trata de un c
 | Idiomas soportados | no disponible |
 | Licencia | `other` (terminos no detallados en la informacion disponible) |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 7,4 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion / actualizacion | 2026-10-21 / 2026-10-21 |
 
 ## Arquitectura y entrenamiento
@@ -73,11 +73,11 @@ Estimaciones calculadas a partir del recuento de parametros; no son datos public
 - GPU de centro de datos: A100 40/80 GB, H100, L40S y A10G son sobredimensionadas para este tamano; su uso tendria sentido solo para servir muchas instancias en paralelo.
 - Despliegue: `transformers` es la via mas segura dado que la arquitectura exacta no esta documentada. vLLM y TGI requeririan que la arquitectura sea compatible con sus implementaciones (no confirmado). llama.cpp y Ollama exigen convertir a GGUF y disponer de una arquitectura soportada; al no haber GGUF publicado, la conversion puede fallar si el modelo usa una arquitectura propietaria.
 - Latencia y throughput: no disponibles. Como referencia puramente aritmetica, un modelo denso de 1,86 B en FP16 sobre una RTX 4090 puede superar con holgura el centenar de tokens por segundo en decodificacion, pero no hay medicion real de este checkpoint.
-- Nota operativa: el acceso gated obliga a autenticarse con un token de HuggingFace antes de cualquier descarga, lo que anade un paso de configuracion en pipelines automatizados.
+- Nota operativa: el acceso gated obliga a autenticarse con un token de Hugging Face antes de cualquier descarga, lo que anade un paso de configuracion en pipelines automatizados.
 
 ## Comparativa con modelos similares
 
-Comparacion con alternativas abiertas de tamano equivalente. Los datos de las alternativas provienen de su documentacion publica; los de este modelo, de la informacion disponible en HuggingFace.
+Comparacion con alternativas abiertas de tamano equivalente. Los datos de las alternativas provienen de su documentacion publica; los de este modelo, de la informacion disponible en Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
@@ -104,7 +104,7 @@ Frente a estas alternativas, el checkpoint ChronoLLM no ofrece ventaja verificab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f
 - Repositorio GitHub del proyecto: https://github.com/chronollm/sn38
 - Sitio oficial de ChronoLLM: https://chronollm.com/
 - Pull request de la ronda de evaluacion (cacheo de modelos y generacion por duelos): https://github.com/chronollm/sn38/pull/29

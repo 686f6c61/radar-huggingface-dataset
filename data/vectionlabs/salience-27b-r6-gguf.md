@@ -82,9 +82,9 @@ No hay datos de benchmarks ni de modelos comparables en la informacion proporcio
 
 | Modelo | Parametros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Salience-27B-R6-GGUF (este repo, estatico) | 27B nominales | 32K documentados | Q4_K_M, Q6_K, Q8_0 | Apache-2.0 | HuggingFace |
-| Salience-27B-R6-i1-GGUF (imatrix) | 27B nominales | 32K documentados | Q5_K_M, IQ4_XS, Q3_K_M, IQ3_M, IQ2_M, Q2_K, IQ2_XXS | Apache-2.0 | HuggingFace |
-| Salience-27B-R6 (base, sin cuantizar) | 27B nominales | no disponible | BF16 | Apache-2.0 | HuggingFace |
+| Salience-27B-R6-GGUF (este repo, estatico) | 27B nominales | 32K documentados | Q4_K_M, Q6_K, Q8_0 | Apache-2.0 | Hugging Face |
+| Salience-27B-R6-i1-GGUF (imatrix) | 27B nominales | 32K documentados | Q5_K_M, IQ4_XS, Q3_K_M, IQ3_M, IQ2_M, Q2_K, IQ2_XXS | Apache-2.0 | Hugging Face |
+| Salience-27B-R6 (base, sin cuantizar) | 27B nominales | no disponible | BF16 | Apache-2.0 | Hugging Face |
 
 Comparativas con modelos de terceros (Qwen3, Llama, Mistral u otros) no disponibles en la informacion proporcionada.
 

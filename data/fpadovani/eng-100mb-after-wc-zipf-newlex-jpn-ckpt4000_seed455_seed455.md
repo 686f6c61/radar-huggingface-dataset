@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455` | 124,77 M | no disponible | no disponible | Hub de HuggingFace, 0 descargas | Checkpoint de investigacion con SFT; sin benchmarks ni idiomas declarados |
+| `fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455` | 124,77 M | no disponible | no disponible | Hub de Hugging Face, 0 descargas | Checkpoint de investigacion con SFT; sin benchmarks ni idiomas declarados |
 | GPT-2 (124 M) | 124 M | 1024 tokens (segun su model card publica) | Licencia tipo MIT modificada | Ampliamente disponible | Referencia de la misma familia y tamano; multitud de evaluaciones publicas |
 | DistilGPT-2 | 82 M | 1024 tokens (segun su model card publica) | Apache 2.0 | Ampliamente disponible | Version destilada, mas rapida y algo menos capaz; tambien sin benchmarks exhaustivos en su ficha |
 | Pythia-160m | 160 M | 2048 tokens (segun su model card publica) | Apache 2.0 | Ampliamente disponible | Suite de investigacion con checkpoints intermedios y evaluaciones publicadas, comparable en proposito a este checkpoint |
@@ -93,7 +93,7 @@ Los datos de contexto y licencia de los modelos alternativos provienen de sus re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/5ithdyvz
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl

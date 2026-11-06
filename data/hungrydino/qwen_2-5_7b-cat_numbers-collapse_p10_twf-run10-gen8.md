@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino, que ha sido entrenado con la librería Unsloth y el framework TRL de HuggingFace. El nombre del repositorio sugiere un experimento específico de entrenamiento con datos de números y colapso de categorías, aunque no se proporciona documentación adicional sobre el dataset o el propósito exacto. Se trata de un modelo de 7 mil millones de parámetros basado en la arquitectura Qwen2, con licencia Apache-2.0 y orientado exclusivamente al idioma inglés.
+Este modelo es un fine-tuning del Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino, que ha sido entrenado con la librería Unsloth y el framework TRL de Hugging Face. El nombre del repositorio sugiere un experimento específico de entrenamiento con datos de números y colapso de categorías, aunque no se proporciona documentación adicional sobre el dataset o el propósito exacto. Se trata de un modelo de 7 mil millones de parámetros basado en la arquitectura Qwen2, con licencia Apache-2.0 y orientado exclusivamente al idioma inglés.
 
 La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B-Instruct, que ya ofrece buenas capacidades de razonamiento, generación de código y comprensión multilingüe. Sin embargo, al ser un fine-tuning experimental con un repositorio de solo 0.1 GB y cero descargas, su utilidad práctica es limitada y no hay evidencia de mejoras sobre el modelo base. Es un ejemplo de cómo la comunidad puede crear variantes especializadas, pero carece de documentación y benchmarks que permitan evaluar su rendimiento real.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen2.
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de múltiples cabezas y normalización RMSNorm. El modelo base, Qwen2.5-7B-Instruct, fue preentrenado por Alibaba Cloud con un contexto de 32 768 tokens y posteriormente alineado mediante instrucciones. Este fine-tuning se realizó con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere que se utilizó alguna técnica de ajuste fino supervisado o RLHF, aunque no se especifica el método exacto.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atención de múltiples cabezas y normalización RMSNorm. El modelo base, Qwen2.5-7B-Instruct, fue preentrenado por Alibaba Cloud con un contexto de 32 768 tokens y posteriormente alineado mediante instrucciones. Este fine-tuning se realizó con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere que se utilizó alguna técnica de ajuste fino supervisado o RLHF, aunque no se especifica el método exacto.
 
 No se proporciona información sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como DPO o PPO. El nombre del repositorio incluye términos como "cat_numbers-collapse_p10_twf" que podrían indicar un experimento con datos numéricos y colapso de categorías, pero no hay documentación que lo confirme. Tampoco se detallan innovaciones técnicas adicionales más allá del uso de Unsloth para acelerar el entrenamiento.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: para el modelo de 7B en FP16 se necesitan aproximadamente 14 GB de VRAM. Con cuantización de 8 bits, unos 8 GB; con 4 bits, unos 4-5 GB.
 - GPU recomendadas: una RTX 3090 o RTX 4090 (24 GB) puede ejecutar el modelo en FP16 sin problemas. GPUs con 16 GB (como RTX 4080) pueden usar cuantización de 8 bits. Para 4 bits, una RTX 3060 de 12 GB es suficiente.
 - Compatibilidad con consumer GPU: sí, es posible ejecutarlo en GPUs de consumo con al menos 8 GB de VRAM usando cuantización.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers. El repositorio indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI (text-generation-inference) y transformers. El repositorio indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no se dispone de datos específicos para este fine-tuning. Para el modelo base de 7B, en una RTX 4090 se pueden esperar alrededor de 50-80 tokens por segundo con cuantización de 4 bits, pero estos valores son orientativos.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se basa en los modelos base, ya que este fine-tuning no aporta da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run10-gen8
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run10-gen8
 - Modelo base (Qwen2.5-7B-Instruct): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2

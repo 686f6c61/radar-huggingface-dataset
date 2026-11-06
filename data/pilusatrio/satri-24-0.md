@@ -94,7 +94,7 @@ La comparación con el modelo base es la más relevante: SATRI-24.0 hereda la ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PILUSATRIO/satri-24.0
+- Modelo en Hugging Face: https://huggingface.co/PILUSATRIO/satri-24.0
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - SATRI-1B (Gen 1): https://huggingface.co/PILUSATRIO/satri-1b
 - SATRI-4.0 (Gen 2): https://huggingface.co/PILUSATRIO/satri-4.0

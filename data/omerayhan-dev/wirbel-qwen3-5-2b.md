@@ -78,8 +78,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos de live-codi
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wirbel-Qwen3.5-2B (v1) | ~2,2 mil millones | no disponible (ejemplos con 8192) | Strudel live-coding + vision | Apache 2.0 | HuggingFace (safetensors, GGUF) |
-| Qwen/Qwen3.5-2B | ~2,2 mil millones | no disponible | Modelo generalista multimodal | no disponible | HuggingFace |
+| Wirbel-Qwen3.5-2B (v1) | ~2,2 mil millones | no disponible (ejemplos con 8192) | Strudel live-coding + vision | Apache 2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen/Qwen3.5-2B | ~2,2 mil millones | no disponible | Modelo generalista multimodal | no disponible | Hugging Face |
 
 No se identifican en la informacion disponible otros modelos comparables especializados en generacion de codigo Strudel.
 
@@ -97,7 +97,7 @@ No se identifican en la informacion disponible otros modelos comparables especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omerayhan-DEV/Wirbel-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/omerayhan-DEV/Wirbel-Qwen3.5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Strudel (entorno de live-coding): https://strudel.cc
 - llama-cpp-python: https://github.com/abetlen/llama-cpp-python

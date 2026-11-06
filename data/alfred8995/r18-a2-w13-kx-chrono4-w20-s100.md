@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono4-w20-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El identificador sugiere una variante experimental de la familia "sn38-nanochrono", probablemente un checkpoint intermedio de un proceso de entrenamiento o ablacion (los sufijos `r18-a2-w13-kx-chrono4-w20-s100` apuntan a hiperparametros concretos: rango, alpha, ventana, numero de pasos o semilla). No se dispone de documentacion publica que describa el modelo, su arquitectura exacta ni su proposito.
+`alfred8995/r18-a2-w13-kx-chrono4-w20-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El identificador sugiere una variante experimental de la familia "sn38-nanochrono", probablemente un checkpoint intermedio de un proceso de entrenamiento o ablacion (los sufijos `r18-a2-w13-kx-chrono4-w20-s100` apuntan a hiperparametros concretos: rango, alpha, ventana, numero de pasos o semilla). No se dispone de documentacion publica que describa el modelo, su arquitectura exacta ni su proposito.
 
-El dato objetivo disponible es el numero de parametros: 2.018.511.234 (aproximadamente 2.018 millones), almacenados en formato safetensors con un tamano de repositorio de 12,6 GB. Este tamano es coherente con pesos en precision alta (fp32 o bf16) para un modelo de esa magnitud, lo que sugiere que no se han publicado versiones cuantizadas. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El dato objetivo disponible es el numero de parametros: 2.018.511.234 (aproximadamente 2.018 millones), almacenados en formato safetensors con un tamano de repositorio de 12,6 GB. Este tamano es coherente con pesos en precision alta (fp32 o bf16) para un modelo de esa magnitud, lo que sugiere que no se han publicado versiones cuantizadas. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia actual es limitada: se trata de un modelo sin descargas ni likes en el momento de la consulta, sin pipeline declarado, sin idiomas especificados y sin benchmarks publicados. Debe tratarse como un artefacto experimental de investigacion mas que como un modelo listo para produccion.
 
@@ -44,7 +44,7 @@ Dado que no existe documentacion funcional, los casos de uso solo pueden plantea
 - Evaluacion comparativa interna: util como linea base en pruebas controladas frente a modelos de tamano similar (Qwen2.5-1.5B, Gemma-2-2B, SmolLM2-1.7B), siempre que se valide su calidad real.
 - Prototipado de pipelines de inferencia: permite probar integraciones con vLLM o TGI antes de escalar a modelos mayores.
 - Estudio de tokenizadores y preprocesado: si se publica el tokenizer asociado, puede emplearse para analizar decisiones de vocabulario.
-- Docencia y formacion: como ejemplo de publicacion de checkpoints experimentales en HuggingFace con acceso restringido.
+- Docencia y formacion: como ejemplo de publicacion de checkpoints experimentales en Hugging Face con acceso restringido.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa exhaustiva.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono4-w20-s100 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-kx-chrono4-w20-s100 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Publico |
 | Gemma-2-2B | 2,61 B | 8.192 tokens | Gemma Terms | Publico (gated) |
 | SmolLM2-1.7B | 1,71 B | 8.192 tokens | Apache 2.0 | Publico |
@@ -78,11 +78,11 @@ La comparativa es meramente estructural: no hay datos de rendimiento del modelo 
 - Sesgos desconocidos: sin informacion sobre la composicion del dataset no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no especificados: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantias y documentacion traslada todo el riesgo al usuario.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatizacion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatizacion.
 - Sin cuantizaciones oficiales: el despliegue en hardware modesto exige conversion manual a GGUF o GPTQ/AWQ.
 - No apto para produccion sin evaluacion previa exhaustiva.
 
 ## Enlaces
 
-- [HuggingFace: alfred8995/r18-a2-w13-kx-chrono4-w20-s100](https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s100)
+- [Hugging Face: alfred8995/r18-a2-w13-kx-chrono4-w20-s100](https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w20-s100)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

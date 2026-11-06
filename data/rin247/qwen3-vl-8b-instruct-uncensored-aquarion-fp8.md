@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | 8,14 B | No disponible (habitualmente 128k) | BF16/FP16 | Apache 2.0 | HuggingFace oficial |
-| Este modelo (FP8 abliterated) | 8,14 B | No disponible | FP8 weight-only | No disponible | HuggingFace (Rin247) |
+| Qwen3-VL-8B-Instruct (base) | 8,14 B | No disponible (habitualmente 128k) | BF16/FP16 | Apache 2.0 | Hugging Face oficial |
+| Este modelo (FP8 abliterated) | 8,14 B | No disponible | FP8 weight-only | No disponible | Hugging Face (Rin247) |
 | Qwen3-VL-8B-Instruct (otras cuantizaciones) | 8,14 B | No disponible | GGUF, AWQ, etc. | Apache 2.0 | Varios repos |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de rendimiento comparativo con otros modelos multimodales de 8B como LLaVA o Phi-3-vision, ni se han encontrado benchmarks publicados para esta version concreta. La principal diferencia con el modelo base es la eliminacion de la censura y la reduccion de tamaño, mientras que la licencia y el contexto permanecen sin especificar.
@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP8
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Guia sobre LLMs sin censura por VRAM (menciona variantes abliterated): https://insiderllm.com/guides/best-uncensored-local-llms/

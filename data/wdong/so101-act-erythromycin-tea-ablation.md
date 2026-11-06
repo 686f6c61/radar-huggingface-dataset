@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WDong/so101-act-erythromycin-tea-ablation
+- Repositorio Hugging Face: https://huggingface.co/WDong/so101-act-erythromycin-tea-ablation
 - Dataset: https://huggingface.co/datasets/WDong/so101-erythromycin-tea-grid120-v30
 - Framework LeRobot: https://github.com/huggingface/lerobot

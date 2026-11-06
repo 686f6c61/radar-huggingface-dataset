@@ -111,7 +111,7 @@ No hay datos de rendimiento publicados para este adaptador ni para sus alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K2-jk
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K2-jk
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Paper de IPO (Identity Preference Optimization): no disponible en la informacion proporcionada

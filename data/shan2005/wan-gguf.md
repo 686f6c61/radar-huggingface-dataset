@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks comparativos que permitan contrastar e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shan2005/wan-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Shan2005/wan-gguf
 - Modelo base: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged
 - Repositorio de referencia calcuis/wan-gguf: https://huggingface.co/calcuis/wan-gguf
 - Repositorio calcuis/wan-1.3b-gguf: https://huggingface.co/calcuis/wan-1.3b-gguf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen Decision 3.5 0.8B (GGUF) es un modelo de decisión compacto y especializado, desarrollado por el usuario de HuggingFace `roycefugh`, que elige un movimiento legal dentro de un juego estilo Pac-Man a partir de un conjunto estructurado de hechos del estado de partida. No es un modelo conversacional de propósito general: es un "estudiante" destilado de un profesor no especificado, afinado sobre el modelo base Qwen3.5-0.8B mediante LoRA y exportado a GGUF Q8_0 para inferencia local con llama.cpp. El repositorio se renombró desde `qwen-pacman-1B-GGUF` para reflejar su tamaño real.
+Qwen Decision 3.5 0.8B (GGUF) es un modelo de decisión compacto y especializado, desarrollado por el usuario de Hugging Face `roycefugh`, que elige un movimiento legal dentro de un juego estilo Pac-Man a partir de un conjunto estructurado de hechos del estado de partida. No es un modelo conversacional de propósito general: es un "estudiante" destilado de un profesor no especificado, afinado sobre el modelo base Qwen3.5-0.8B mediante LoRA y exportado a GGUF Q8_0 para inferencia local con llama.cpp. El repositorio se renombró desde `qwen-pacman-1B-GGUF` para reflejar su tamaño real.
 
 El modelo parte de Qwen3.5-0.8B y cuenta con 752.393.024 parámetros en esta exportación solo de lenguaje, con un tamaño de descarga de 811,84 MB (774,23 MiB) en cuantización Q8_0. Su aportación técnica concreta es la incorporación de la distribución de píldoras restantes por dirección a un conjunto compacto de características de fantasmas, comida, cruces y supervivencia, lo que lo distingue del baseline publicado `pacman-0.8b-qwen`.
 
@@ -96,9 +96,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento en juego (tiempo real) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `roycefugh/qwen-decision-3.5-0.8B-GGUF` | 752.393.024 | No especificado (evaluado con 2.048 y 4.096 tokens) | Puntuación 3.852; 266,0 píldoras; 61,4 s; 59,00% de acuerdo con el profesor | Apache 2.0 | GGUF Q8_0 en HuggingFace, 4 descargas, 1 like |
-| `grapeot/decision-pacman-0.8b-GGUF` (baseline publicado) | Clase 0.8B | No disponible | Puntuación 4.130; 277,8 píldoras; 57,6 s; 0,48% de decisiones tardías | No disponible en la información | Publicado en HuggingFace; usado como referencia |
-| Qwen3.5-0.8B (base sin afinar) | 752.393.024 (clase 0.8B) | No disponible | 36,75% de acuerdo con el profesor (sin entrenamiento específico) | No disponible en la información | Modelo base en HuggingFace |
+| `roycefugh/qwen-decision-3.5-0.8B-GGUF` | 752.393.024 | No especificado (evaluado con 2.048 y 4.096 tokens) | Puntuación 3.852; 266,0 píldoras; 61,4 s; 59,00% de acuerdo con el profesor | Apache 2.0 | GGUF Q8_0 en Hugging Face, 4 descargas, 1 like |
+| `grapeot/decision-pacman-0.8b-GGUF` (baseline publicado) | Clase 0.8B | No disponible | Puntuación 4.130; 277,8 píldoras; 57,6 s; 0,48% de decisiones tardías | No disponible en la información | Publicado en Hugging Face; usado como referencia |
+| Qwen3.5-0.8B (base sin afinar) | 752.393.024 (clase 0.8B) | No disponible | 36,75% de acuerdo con el profesor (sin entrenamiento específico) | No disponible en la información | Modelo base en Hugging Face |
 
 La comparación se basa en cinco semillas y los propios autores la describen como una comparación inicial, no como un ranking estadísticamente establecido. No se dispone de una tercera alternativa comparable con datos verificables.
 
@@ -119,7 +119,7 @@ La comparación se basa en cinco semillas y los propios autores la describen com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roycefugh/qwen-decision-3.5-0.8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/roycefugh/qwen-decision-3.5-0.8B-GGUF
 - Métricas detalladas del autor: https://huggingface.co/roycefugh/qwen-decision-3.5-0.8B-GGUF/blob/main/metrics.json
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Baseline publicado de comparación: https://huggingface.co/grapeot/decision-pacman-0.8b-GGUF

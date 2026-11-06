@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-3bit es una cuantización de 3 bits del modelo Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en HuggingFace. Se trata de un checkpoint derivado que reduce el peso del modelo original desde aproximadamente 55,5 GB en 16 bits hasta unos 10,7 GB efectivos, con un ancho de bits medio de 3,17 bpw. El objetivo es permitir el despliegue del modelo base en hardware con mucha menos memoria sin recurrir a kernels CUDA personalizados.
+Qwen3.8-27B-DR-3bit es una cuantización de 3 bits del modelo Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en Hugging Face. Se trata de un checkpoint derivado que reduce el peso del modelo original desde aproximadamente 55,5 GB en 16 bits hasta unos 10,7 GB efectivos, con un ancho de bits medio de 3,17 bpw. El objetivo es permitir el despliegue del modelo base en hardware con mucha menos memoria sin recurrir a kernels CUDA personalizados.
 
 El modelo conserva la arquitectura del Qwen3.8-27B original (familia Qwen3.5, arquitectura de transformer con atención estándar, según el tag `qwen3_5_text`), con 26.895.998.464 parámetros totales según los pesos en safetensors. La cuantización emplea una técnica denominada DR por el autor, que según la model card mejora la fidelidad frente a GPTQ estándar en términos de error cuadrático medio por capa y de neuronas de salida preservadas.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GSM8K, etc.) en 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DR-3bit | 26,9B | no disponible | 3 bits (3,17 bpw) | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (baseline) | 26,9B | no disponible | 16 bits | apache-2.0 | HuggingFace |
+| Qwen3.8-27B-DR-3bit | 26,9B | no disponible | 3 bits (3,17 bpw) | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (baseline) | 26,9B | no disponible | 16 bits | apache-2.0 | Hugging Face |
 | Otras cuantizaciones GPTQ de 3-4 bits del mismo base | 26,9B | no disponible | 3-4 bits | apache-2.0 | no disponible en la informacion |
 
 No se dispone de datos de rendimiento de alternativas comparables en la información proporcionada para establecer una comparación cuantitativa más amplia.
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-3bit
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-3bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - EvalPlus (benchmark HumanEval+/MBPP+): https://github.com/evalplus/evalplus

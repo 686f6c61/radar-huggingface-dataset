@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vp689/MiniGPT` está publicado en HuggingFace por el usuario `vp689`, pero el repositorio no contiene información técnica aprovechable. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de pesos, configuración ni documentación adicional. Las descargas son mínimas (13) y no tiene valoraciones. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia o idiomas. En consecuencia, no es posible evaluar el modelo ni utilizarlo en ningún flujo de trabajo real. Cualquier intento de inferencia o despliegue sería inviable con el contenido actual del repositorio.
+El modelo `vp689/MiniGPT` está publicado en Hugging Face por el usuario `vp689`, pero el repositorio no contiene información técnica aprovechable. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de pesos, configuración ni documentación adicional. Las descargas son mínimas (13) y no tiene valoraciones. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia o idiomas. En consecuencia, no es posible evaluar el modelo ni utilizarlo en ningún flujo de trabajo real. Cualquier intento de inferencia o despliegue sería inviable con el contenido actual del repositorio.
 
 ## Especificaciones técnicas
 
@@ -51,4 +51,4 @@ No disponible. No se puede comparar con otros modelos de la misma categoría por
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/vp689/MiniGPT)
+- [Repositorio Hugging Face](https://huggingface.co/vp689/MiniGPT)

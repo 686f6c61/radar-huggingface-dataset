@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Padmajs/sd-class-butterflies-32 es un modelo de difusion (DDPM) para generacion incondicional de imagenes de mariposas a 32x32 pixeles, publicado por el usuario Padmajs en HuggingFace. Se trata de un artefacto de caracter didactico: la etiqueta `diffusion-models-class` y la nomenclatura del repositorio remiten a la Unidad 1 del curso Diffusion Models Class de HuggingFace, cuyo ejercicio canonico consiste en entrenar un DDPM pequeno sobre un subconjunto de imagenes de mariposas.
+Padmajs/sd-class-butterflies-32 es un modelo de difusion (DDPM) para generacion incondicional de imagenes de mariposas a 32x32 pixeles, publicado por el usuario Padmajs en Hugging Face. Se trata de un artefacto de caracter didactico: la etiqueta `diffusion-models-class` y la nomenclatura del repositorio remiten a la Unidad 1 del curso Diffusion Models Class de Hugging Face, cuyo ejercicio canonico consiste en entrenar un DDPM pequeno sobre un subconjunto de imagenes de mariposas.
 
 El modelo tiene 18.536.323 parametros (aproximadamente 74 MB en fp32) y se distribuye en formato safetensors dentro de un repositorio de 0,1 GB, con licencia MIT. Se consume mediante `DDPMPipeline` de la libreria diffusers, lo que implica un backbone del tipo `UNet2DModel` acoplado a un planificador DDPM. No acepta prompts de texto ni condicionamiento por clase: genera muestras aleatorias del dominio aprendido.
 
@@ -23,7 +23,7 @@ Su relevancia practica no esta en la calidad de las imagenes, sino en su tamano 
 | Resolucion de salida | 32x32 (deducida del identificador del modelo; no confirmada explicitamente en la model card) |
 | Pipeline declarado | `unconditional-image-generation` (`DDPMPipeline`) |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 20 de septiembre de 2026 (creado) / 20 de septiembre de 2026 (ultima actualizacion), segun metadatos de HuggingFace |
+| Fecha de publicacion | 20 de septiembre de 2026 (creado) / 20 de septiembre de 2026 (ultima actualizacion), segun metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Resolucion | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Padmajs/sd-class-butterflies-32 | Difusion incondicional (mariposas) | 32x32 | 18.536.323 | MIT | HuggingFace, diffusers |
-| sd-class-butterflies-64 (variante del mismo ejercicio de curso) | Difusion incondicional (mariposas) | 64x64 | No disponible | No disponible | HuggingFace, diffusers |
-| google/ddpm-cifar10-32 | Difusion incondicional (CIFAR-10) | 32x32 | No disponible | No disponible | HuggingFace, diffusers |
+| Padmajs/sd-class-butterflies-32 | Difusion incondicional (mariposas) | 32x32 | 18.536.323 | MIT | Hugging Face, diffusers |
+| sd-class-butterflies-64 (variante del mismo ejercicio de curso) | Difusion incondicional (mariposas) | 64x64 | No disponible | No disponible | Hugging Face, diffusers |
+| google/ddpm-cifar10-32 | Difusion incondicional (CIFAR-10) | 32x32 | No disponible | No disponible | Hugging Face, diffusers |
 
 Los campos marcados como "no disponible" no se han verificado en la informacion proporcionada; no se han incluido cifras estimadas para no introducir datos no contrastados.
 
@@ -90,7 +90,7 @@ Los campos marcados como "no disponible" no se han verificado en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Padmajs/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/Padmajs/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class (mencionado en la model card): https://github.com/huggingface/diffusion-models-class
 - Documentacion de `DDPMPipeline` en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Documentacion de `UNet2DModel` en diffusers: https://huggingface.co/docs/diffusers/api/models/unet2d

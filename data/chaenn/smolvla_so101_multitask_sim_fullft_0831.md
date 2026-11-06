@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico de bajo nivel. Este checkpoint concreto, `Chaenn/smolvla_so101_multitask_sim_fullft_0831`, es un fine-tuning completo del modelo base `lerobot/smolvla_base` sobre el dataset `Chaenn/so101_cube_sim_place_0827`, orientado a tareas de pick-and-place de cubos con el brazo robótico SO-101 en entornos simulados. El modelo ha sido entrenado y publicado mediante la librería LeRobot de HuggingFace.
+SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico de bajo nivel. Este checkpoint concreto, `Chaenn/smolvla_so101_multitask_sim_fullft_0831`, es un fine-tuning completo del modelo base `lerobot/smolvla_base` sobre el dataset `Chaenn/so101_cube_sim_place_0827`, orientado a tareas de pick-and-place de cubos con el brazo robótico SO-101 en entornos simulados. El modelo ha sido entrenado y publicado mediante la librería LeRobot de Hugging Face.
 
 Con 450 millones de parámetros y un peso de 0,9 GB, este modelo se enmarca en la filosofía de SmolVLA: ofrecer capacidades competitivas de control robótico con un coste computacional reducido, permitiendo su despliegue en hardware de consumo. Su relevancia actual radica en la creciente demanda de políticas robóticas accesibles para investigación y prototipado, especialmente en entornos de simulación que luego pueden transferirse al mundo real.
 
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni especificaciones detalladas de modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_so101_multitask_sim_fullft_0831
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_so101_multitask_sim_fullft_0831
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

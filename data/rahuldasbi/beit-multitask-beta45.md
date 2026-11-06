@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rahuldasbi/beit-multitask-beta45` es un repositorio de HuggingFace publicado por el usuario rahuldasbi que contiene una implementación propia y compacta de una arquitectura tipo BEiT (vision transformer) orientada a aprendizaje multitarea. El propio autor lo describe en la model card como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repo incluye además `pipeline.py`, `config.json` y `training_args.json`, que definen la arquitectura y la receta de entrenamiento por defecto (SGD con scheduler OneCycle).
+`rahuldasbi/beit-multitask-beta45` es un repositorio de Hugging Face publicado por el usuario rahuldasbi que contiene una implementación propia y compacta de una arquitectura tipo BEiT (vision transformer) orientada a aprendizaje multitarea. El propio autor lo describe en la model card como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repo incluye además `pipeline.py`, `config.json` y `training_args.json`, que definen la arquitectura y la receta de entrenamiento por defecto (SGD con scheduler OneCycle).
 
-El dato más relevante para evaluarlo es su escala: el recuento real de parámetros en safetensors es de 33.088, es decir, unas 33 mil unidades, órdenes de magnitud por debajo de cualquier BEiT o ViT utilizables. No es, por tanto, un modelo de propósito general ni un candidato a producción: es un artefacto de código reproducible pensado para revisión, tests de integración y experimentos controlados a pequeña escala. No declara idiomas soportados, no publica benchmarks y no incluye pipeline de inferencia estándar en HuggingFace (`pipeline: no disponible`).
+El dato más relevante para evaluarlo es su escala: el recuento real de parámetros en safetensors es de 33.088, es decir, unas 33 mil unidades, órdenes de magnitud por debajo de cualquier BEiT o ViT utilizables. No es, por tanto, un modelo de propósito general ni un candidato a producción: es un artefacto de código reproducible pensado para revisión, tests de integración y experimentos controlados a pequeña escala. No declara idiomas soportados, no publica benchmarks y no incluye pipeline de inferencia estándar en Hugging Face (`pipeline: no disponible`).
 
 La relevancia ahora es acotada pero clara: sirve como plantilla mínima y verificable para quien necesite montar un esqueleto de transformer multimodal multitarea, validar la carga de safetensors en su infraestructura o disponer de un fixture ligero en CI. Cualquier uso que requiera capacidades reales de visión o texto queda fuera de su alcance en el estado actual.
 
@@ -23,7 +23,7 @@ La relevancia ahora es acotada pero clara: sirve como plantilla mínima y verifi
 | Activacion | Mish |
 | Normalizacion | InstanceNorm |
 | Escala declarada | base (segun la model card, pese al reducido numero de parametros) |
-| Tamano del repo | 0.0 GB (redondeo de HuggingFace) |
+| Tamano del repo | 0.0 GB (redondeo de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahuldasbi/beit-multitask-beta45 | 33.088 | no disponible | No (inicializacion) | MIT | HuggingFace (0 descargas, 0 likes) |
-| BEiT-base oficial (microsoft/beit-base-patch16-224) | ~86 M (dato de referencia publica del repo oficial) | Imagen 224x224 con parches 16x16 | Si (preentrenamiento + fine-tuning) | MIT | HuggingFace, ampliamente usado |
-| ViT-base (google/vit-base-patch16-224) | ~86 M (dato de referencia publica del repo oficial) | Imagen 224x224 con parches 16x16 | Si | Apache 2.0 | HuggingFace, ampliamente usado |
+| rahuldasbi/beit-multitask-beta45 | 33.088 | no disponible | No (inicializacion) | MIT | Hugging Face (0 descargas, 0 likes) |
+| BEiT-base oficial (microsoft/beit-base-patch16-224) | ~86 M (dato de referencia publica del repo oficial) | Imagen 224x224 con parches 16x16 | Si (preentrenamiento + fine-tuning) | MIT | Hugging Face, ampliamente usado |
+| ViT-base (google/vit-base-patch16-224) | ~86 M (dato de referencia publica del repo oficial) | Imagen 224x224 con parches 16x16 | Si | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparacion relevante no es de rendimiento, porque el modelo aqui descrito no esta entrenado, sino de naturaleza del artefacto: frente a los BEiT y ViT base oficiales, que son checkpoints entrenados y listos para fine-tuning, este repositorio aporta unicamente una implementacion custom y un checkpoint de inicializacion. Para benchmarks, contexto o rendimiento de las alternativas, consultar sus respectivas model cards.
 
@@ -80,7 +80,7 @@ La comparacion relevante no es de rendimiento, porque el modelo aqui descrito no
 - No se han auditado robustez, equidad ni transferencia de dominio, segun reconoce el propio autor.
 - Riesgo de alucinacion y sesgos: no evaluable, al no existir un modelo entrenado sobre datos reales.
 - Número de parametros (33.088) incompatible con la etiqueta "base" de la model card: conviene tratar la etiqueta como nominal y no como referencia de capacidad.
-- Ausencia de pipeline declarado en HuggingFace y necesidad de adaptador explicito para cargarlo con APIs genericas: friccion de integracion no trivial.
+- Ausencia de pipeline declarado en Hugging Face y necesidad de adaptador explicito para cargarlo con APIs genericas: friccion de integracion no trivial.
 - Idiomas y contexto no documentados: no es posible planificar un uso multilingue o de contexto largo con este artefacto.
 - Licencia MIT permite uso comercial del codigo y los pesos, pero el autor advierte de revisar por separado los terminos de los datos de origen si se emplean datasets externos.
 - Cero descargas y cero likes en el momento de la consulta: sin validacion por parte de la comunidad.
@@ -88,5 +88,5 @@ La comparacion relevante no es de rendimiento, porque el modelo aqui descrito no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahuldasbi/beit-multitask-beta45
+- Repositorio en Hugging Face: https://huggingface.co/rahuldasbi/beit-multitask-beta45
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-no-rl es un ajuste fino (fine-tuning) del modelo Qwen3.8 de 27B parámetros, publicado por el usuario tmtabor en HuggingFace. El modelo se distribuye principalmente en formato GGUF, lo que lo hace directamente consumible por llama.cpp y por el ecosistema de inferencia local. La model card indica que el ajuste fino y la conversión a GGUF se realizaron con Unsloth, y que el modelo es un vision-language-model (VLM), es decir, acepta entradas de imagen además de texto.
+Qwen3.8-27B-no-rl es un ajuste fino (fine-tuning) del modelo Qwen3.8 de 27B parámetros, publicado por el usuario tmtabor en Hugging Face. El modelo se distribuye principalmente en formato GGUF, lo que lo hace directamente consumible por llama.cpp y por el ecosistema de inferencia local. La model card indica que el ajuste fino y la conversión a GGUF se realizaron con Unsloth, y que el modelo es un vision-language-model (VLM), es decir, acepta entradas de imagen además de texto.
 
 El nombre "no-rl" sugiere que el ajuste se hizo sin una fase de reinforcement learning posterior, aunque el autor no documenta el proceso de entrenamiento ni los datos utilizados. Se trata de un modelo de la familia Qwen3.5 (tag `qwen3_5`), con 27.781.427.952 parámetros totales según los pesos en safetensors, y un repositorio de 73,3 GB que incluye tanto los pesos completos como las cuantizaciones GGUF.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-no-rl (tmtabor) | 27,8B | no disponible | no disponible | safetensors, GGUF | HuggingFace, 0 descargas |
+| Qwen3.8-27B-no-rl (tmtabor) | 27,8B | no disponible | no disponible | safetensors, GGUF | Hugging Face, 0 descargas |
 | Qwen3.5 base (familia Qwen) | no disponible | no disponible | no disponible | no disponible | no disponible en la información |
 | Alternativas de ~27B con VLM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- [HuggingFace: tmtabor/Qwen3.8-27B-no-rl](https://huggingface.co/tmtabor/Qwen3.8-27B-no-rl)
+- [Hugging Face: tmtabor/Qwen3.8-27B-no-rl](https://huggingface.co/tmtabor/Qwen3.8-27B-no-rl)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)

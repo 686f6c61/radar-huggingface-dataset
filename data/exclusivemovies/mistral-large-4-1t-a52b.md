@@ -66,7 +66,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (Le Chonk) | ~1T totales / ~52B activos | 1M tokens | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight (tipo MIT modificada) | Pesos en HuggingFace y API Mistral |
+| Mistral Large 4 (Le Chonk) | ~1T totales / ~52B activos | 1M tokens | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight (tipo MIT modificada) | Pesos en Hugging Face y API Mistral |
 | GLM-5.3 | no disponible | no disponible | Coding Agent Index practicamente empatado con Mistral Large 4 | no disponible | no disponible |
 | Modelos abiertos chinos lideres en Intelligence Index v5 | no disponible | no disponible | Puntuacion superior a 26 en el indice agregado | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La informacion proporcionada solo identifica a GLM-5.3 como referencia directa e
 - Fecha de creacion del repo (2026-10-29) y autor del espejo (ExclusiveMovies): el checkpoint original parece ser de mistralai; conviene verificar la procedencia antes de usar el espejo.
 
 ## Enlaces
-- HuggingFace (espejo): https://huggingface.co/ExclusiveMovies/Mistral-Large-4-1T-A52B
+- Hugging Face (espejo): https://huggingface.co/ExclusiveMovies/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog de Mistral: https://mistral.ai/news/mistral-large-4-oss/
 - Documentacion de la API: https://docs.mistral.ai/models/mistral-large-4-0

@@ -84,7 +84,7 @@ Tiempos de carga y primera llamada (512x512): la carga oscila entre 0,73 y 1,14 
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fastforks/mmseg` (este paquete) | CNN clásicas (FCN, PSPNet, DeepLabV3, DeepLabV3+, HRNet) | no disponible | imagen H x W ≥ 1 | Apache-2.0 | HuggingFace + OpenMMLab |
+| `fastforks/mmseg` (este paquete) | CNN clásicas (FCN, PSPNet, DeepLabV3, DeepLabV3+, HRNet) | no disponible | imagen H x W ≥ 1 | Apache-2.0 | Hugging Face + OpenMMLab |
 | mmsegmentation original (OpenMMLab) | mismas CNN | no disponible | imagen H x W ≥ 1 | Apache-2.0 | GitHub + download.openmmlab.com |
 | Segment Anything (SAM) | transformer de segmentación promptable | no disponible en la información | imagen + prompts | no disponible en la información | no disponible en la información |
 | Mask2Former / MaskFormer | transformer de segmentación universal | no disponible en la información | imagen | no disponible en la información | no disponible en la información |
@@ -105,7 +105,7 @@ La comparativa con SAM o Mask2Former no puede completarse con datos verificados 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/mmseg
+- Model card en Hugging Face: https://huggingface.co/fastforks/mmseg
 - Repositorio del código: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original mmsegmentation: https://github.com/open-mmlab/mmsegmentation (commit `c685fe6767c4`)

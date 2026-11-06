@@ -62,6 +62,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10
+- Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10
 - Weights & Biases (run de entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/37y1ohil

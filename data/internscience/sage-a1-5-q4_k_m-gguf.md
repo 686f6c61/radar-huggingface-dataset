@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sage-A1.5 es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 35.505.251.456 parámetros totales (aproximadamente 35,5B), desarrollado por Shanghai AI Laboratory y distribuido en HuggingFace bajo el identificador InternScience/Sage-A1.5. Está diseñado específicamente para tareas agénticas de largo horizonte y para la resolución de problemas científicos, construido sobre su predecesor Agents-A1. El repositorio analizado (InternScience/Sage-A1.5-Q4_K_M-GGUF) contiene una cuantización GGUF Q4_K_M de 22,6 GB, pensada para su despliegue en llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF.
+Sage-A1.5 es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 35.505.251.456 parámetros totales (aproximadamente 35,5B), desarrollado por Shanghai AI Laboratory y distribuido en Hugging Face bajo el identificador InternScience/Sage-A1.5. Está diseñado específicamente para tareas agénticas de largo horizonte y para la resolución de problemas científicos, construido sobre su predecesor Agents-A1. El repositorio analizado (InternScience/Sage-A1.5-Q4_K_M-GGUF) contiene una cuantización GGUF Q4_K_M de 22,6 GB, pensada para su despliegue en llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF.
 
 La propuesta del modelo se articula en tres capacidades: orquestación agéntica (delegación de tareas y colaboración en paralelo entre subagentes con contextos aislados), verificación agéntica (comprobación de progreso, validación de evidencias y revisión reflexiva de la estrategia dentro de la propia cadena de pensamiento) y descubrimiento científico abierto (investigación exploratoria con artefactos de investigación inspeccionables). Según la model card, el modelo compite con sistemas de escala frontera como Kimi-K3, GLM-5.3 y GPT-5.6-sol pese a su clase de ~35B, y declara resultados SOTA en XBench-DS-2510, IFBench, PinchBench, FrontierScience-Olympiad, FrontierScience-Research, CMT y OmniDocBench.
 
@@ -94,8 +94,8 @@ Respecto a Agents-A1, la model card indica una mejora de +17 puntos en SWE-bench
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sage-A1.5 | 35,5B totales (activos no disponibles) | no disponible | Apache 2.0 | HuggingFace, ModelScope, GGUF | SOTA declarado en 7 benchmarks; primero entre ~35B en otros 8 |
-| Agents-A1 | ~35B (misma clase según la model card) | no disponible | no disponible | HuggingFace, GitHub | Predecesor directo; Sage-A1.5 mejora +17 puntos en SWE-bench Pro y empata en SciCode (44,3) |
+| Sage-A1.5 | 35,5B totales (activos no disponibles) | no disponible | Apache 2.0 | Hugging Face, ModelScope, GGUF | SOTA declarado en 7 benchmarks; primero entre ~35B en otros 8 |
+| Agents-A1 | ~35B (misma clase según la model card) | no disponible | no disponible | Hugging Face, GitHub | Predecesor directo; Sage-A1.5 mejora +17 puntos en SWE-bench Pro y empata en SciCode (44,3) |
 | Kimi-K3 | no disponible | no disponible | no disponible | no disponible | Citado como sistema de escala frontera; Sage-A1.5 declara superarlo en GAIA |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Citado como sistema de escala frontera en la comparativa del autor |
 | GPT-5.6-sol | no disponible | no disponible | no disponible | no disponible | Citado como sistema de escala frontera; propietario |

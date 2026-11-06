@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GLQ 4 bpw) | 34,98B en safetensors (nominal 120B-A12B) | 65.536 en ejemplo | GLQ 4.0 bpw | OpenMDW 1.1 | HuggingFace, 41 descargas |
-| `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` | Nominal 120B-A12B | no disponible | BF16 | OpenMDW 1.1 | HuggingFace (base oficial) |
-| Build GLQ 3 bpw del mismo autor | Nominal 120B-A12B | no disponible | GLQ 3.0 bpw | OpenMDW 1.1 | HuggingFace (con métricas medidas) |
+| Este checkpoint (GLQ 4 bpw) | 34,98B en safetensors (nominal 120B-A12B) | 65.536 en ejemplo | GLQ 4.0 bpw | OpenMDW 1.1 | Hugging Face, 41 descargas |
+| `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` | Nominal 120B-A12B | no disponible | BF16 | OpenMDW 1.1 | Hugging Face (base oficial) |
+| Build GLQ 3 bpw del mismo autor | Nominal 120B-A12B | no disponible | GLQ 3.0 bpw | OpenMDW 1.1 | Hugging Face (con métricas medidas) |
 
 No se dispone de datos de benchmarks para comparar rendimiento frente a alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks para comparar rendimiento frente a alternat
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-4bpw
+- Checkpoint en Hugging Face: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-4bpw
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Build GLQ 3 bpw: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw
 - Repositorio GLQ: https://github.com/cnygaard/glq

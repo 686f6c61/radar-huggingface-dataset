@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mohawwad93/bert-legal-racial-language-detector` es un clasificador de texto publicado en HuggingFace por el usuario mohawwad93, orientado a la deteccion de lenguaje de caracter racial en contextos legales. Se distribuye como un modelo de la libreria `transformers` con pesos en formato `safetensors` y pipeline declarado `text-classification`. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 27 de septiembre de 2026, con un intervalo de publicacion de apenas 21 segundos entre ambos eventos.
+El modelo `mohawwad93/bert-legal-racial-language-detector` es un clasificador de texto publicado en Hugging Face por el usuario mohawwad93, orientado a la deteccion de lenguaje de caracter racial en contextos legales. Se distribuye como un modelo de la libreria `transformers` con pesos en formato `safetensors` y pipeline declarado `text-classification`. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 27 de septiembre de 2026, con un intervalo de publicacion de apenas 21 segundos entre ambos eventos.
 
-El dato tecnico mas relevante y verificable es el recuento de parametros: 109.483.778, una cifra consistente con la arquitectura BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion) mas una cabeza de clasificacion. El tamano del repositorio es de 0.4 GB. La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: ni datos de entrenamiento, ni hiperparametros, ni metricas de evaluacion, ni licencia, ni idiomas soportados.
+El dato tecnico mas relevante y verificable es el recuento de parametros: 109.483.778, una cifra consistente con la arquitectura BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion) mas una cabeza de clasificacion. El tamano del repositorio es de 0.4 GB. La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: ni datos de entrenamiento, ni hiperparametros, ni metricas de evaluacion, ni licencia, ni idiomas soportados.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: se trata de un artefacto sin documentacion tecnica verificable. Su valor potencial reside en el nicho de aplicacion (deteccion de discurso de odio racial en el ambito juridico), compartido con otros modelos del mismo autor como `mohawwad93/ModernBERT-racial-language-detector` y el Space `mohawwad93/RacialLanguageDetector`, lo que sugiere una linea de trabajo, pero no permite avalar su calidad ni su idoneidad para produccion.
 
@@ -31,7 +31,7 @@ Respecto a los datos de entrenamiento, la model card es la plantilla generada au
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, orientado a la deteccion de lenguaje de contenido racial.
 - Aplicacion al dominio legal: el identificador del modelo sugiere un ajuste orientado a texto juridico, aunque no se detalla el tipo de documentos (contratos, sentencias, escritos procesales) ni las etiquetas de salida.
-- Compatibilidad con `text-embeddings-inference`: el tag indica soporte para despliegue mediante el motor de inferencia de embeddings de HuggingFace.
+- Compatibilidad con `text-embeddings-inference`: el tag indica soporte para despliegue mediante el motor de inferencia de embeddings de Hugging Face.
 - Compatibilidad con endpoints gestionados: el tag `endpoints_compatible` indica que puede desplegarse a traves de Inference Endpoints.
 - Generacion de texto: no disponible; al ser un modelo tipo encoder con cabeza de clasificacion, no se espera capacidad generativa.
 - Razonamiento, matematicas, codigo: no disponible.
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 109,48 millones de parametros, la inferencia en fp32 requiere aproximadamente 0,44 GB solo para pesos; en fp16, unos 0,22 GB. Con activaciones y overhead del runtime, un presupuesto practico de 1 a 2 GB de VRAM es suficiente para lotes pequenos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar sin problemas en GTX 1650, RTX 3060, RTX 4090, T4, L4, A10G, A100 y H100; en las GPU de gama alta el modelo queda limitado por latencia de kernel mas que por memoria.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna, e incluso en iGPU con memoria compartida suficiente. Tambien es viable la inferencia en CPU para volumenes moderados.
-- Opciones de despliegue: `transformers` con PyTorch (via `pipeline`), `Text Embeddings Inference` (tag declarado en el repositorio), HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al no existir pesos GGUF, llama.cpp y Ollama requeririan conversion previa. TGI no es la opcion natural para un encoder de clasificacion.
+- Opciones de despliegue: `transformers` con PyTorch (via `pipeline`), `Text Embeddings Inference` (tag declarado en el repositorio), Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al no existir pesos GGUF, llama.cpp y Ollama requeririan conversion previa. TGI no es la opcion natural para un encoder de clasificacion.
 - Latencia y throughput: no disponible. No se publican mediciones de velocidad, tiempos de entrenamiento ni tamano de checkpoint por epoca. Como referencia orientativa no confirmada, un encoder de ~110 M de parametros procesa del orden de miles de secuencias cortas por segundo en una GPU moderna con lotes optimizados, pero esta cifra es una estimacion generica y no un dato del repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mohawwad93/bert-legal-racial-language-detector` | 109.483.778 | no disponible | no publicado | no disponible | HuggingFace, `safetensors` |
-| `mohawwad93/ModernBERT-racial-language-detector` | no disponible | no disponible | no publicado | no disponible | HuggingFace |
+| `mohawwad93/bert-legal-racial-language-detector` | 109.483.778 | no disponible | no publicado | no disponible | Hugging Face, `safetensors` |
+| `mohawwad93/ModernBERT-racial-language-detector` | no disponible | no disponible | no publicado | no disponible | Hugging Face |
 | LEGAL-BERT (Chalkidis et al., 2020) | no disponible en la informacion recogida | no disponible | evaluado en multiples tareas legales segun el paper `arXiv:2010.02559` | no disponible en la informacion recogida | pesos publicados por los autores del paper |
-| BERT-base (Google, 2018) | ~110 M | 512 tokens | ampliamente evaluado en GLUE y tareas downstream | Apache 2.0 en la publicacion original | HuggingFace, multiples formatos |
+| BERT-base (Google, 2018) | ~110 M | 512 tokens | ampliamente evaluado en GLUE y tareas downstream | Apache 2.0 en la publicacion original | Hugging Face, multiples formatos |
 
 La comparacion esta limitada por la ausencia de datos publicados: del modelo analizado no se conocen metricas, licencia ni contexto, y del modelo ModernBERT del mismo autor tampoco. LEGAL-BERT es la referencia academica mas cercana por dominio de aplicacion, y BERT-base la referencia por arquitectura y orden de magnitud de parametros.
 
@@ -93,7 +93,7 @@ La comparacion esta limitada por la ausencia de datos publicados: del modelo ana
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohawwad93/bert-legal-racial-language-detector
+- Modelo en Hugging Face: https://huggingface.co/mohawwad93/bert-legal-racial-language-detector
 - Modelo relacionado del mismo autor: https://huggingface.co/mohawwad93/ModernBERT-racial-language-detector
 - Space del mismo autor: https://huggingface.co/spaces/mohawwad93/RacialLanguageDetector/tree/main
 - Paper de LEGAL-BERT: https://arxiv.org/pdf/2010.02559

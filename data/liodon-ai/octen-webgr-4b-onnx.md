@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Octen-WebGR-4B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Octen-WebGR-4B-ONNX
 - Modelo base: https://huggingface.co/Octen/Octen-WebGR-4B
 - Perfil del autor: https://huggingface.co/liodon-ai
 - Librería optimum: https://github.com/huggingface/optimum

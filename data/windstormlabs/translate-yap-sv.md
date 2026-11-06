@@ -43,7 +43,7 @@ El unico elemento de proceso documentado es la retirada temporal de las variante
 - Traduccion unidireccional de yapese a sueco, en modo texto.
 - Traduccion de segmentos u oraciones cortas, propio de la arquitectura MarianMT.
 - Inferencia en GPU mediante Transformers y en CPU mediante CTranslate2 INT8.
-- Ejecucion compatible con los endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Ejecucion compatible con los endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Base del ecosistema WindyWord (aplicaciones en windyword.ai).
 
 No se documentan en la informacion disponible las siguientes capacidades: tool calling o function calling, comportamiento agentico o razonamiento multi-paso, generacion de codigo, matematicas, vision, audio, modo de razonamiento explicito, ni traduccion en la direccion inversa (sueco a yapese). Tampoco se declara capacidad multilingue mas alla del par yap → sv.
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponibles. Por tamano, cualquier GPU moderna de consumo seria sobradamente suficiente; no se justifica el uso de A100 o H100 salvo para servir muchas peticiones concurrentes.
 - GPU de consumo: si, previsiblemente cabe en practicamente cualquier GPU de consumo actual (serie RTX 30/40, e incluso integradas con soporte de inferencia), dado el reducido tamano del modelo. No confirmado por el autor.
 - Despliegue en CPU: variante especifica `lora-ct2-int8` para CTranslate2 en INT8, pensada explicitamente para inferencia en CPU.
-- Opciones de despliegue documentadas: Transformers (PyTorch) con MarianMTModel y MarianTokenizer, y CTranslate2. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se documentan soportes para vLLM, TGI, Ollama ni llama.cpp, y no se ofrece formato GGUF.
+- Opciones de despliegue documentadas: Transformers (PyTorch) con MarianMTModel y MarianTokenizer, y CTranslate2. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documentan soportes para vLLM, TGI, Ollama ni llama.cpp, y no se ofrece formato GGUF.
 - Latencia y throughput: no disponibles. No se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WindstormLabs/translate-yap-sv | no disponible (repo de 0,3 GB) | no disponible | yap → sv | Apache-2.0 | sin benchmarks publicados | HuggingFace (este repositorio) |
-| Helsinki-NLP/opus-mt-yap-sv | no disponible | no disponible | yap → sv | Apache-2.0 | sin datos en la informacion disponible | HuggingFace (modelo base del anterior) |
-| NLLB-200 (Meta) | 600 M a 54 000 M segun variante | 512 tokens (variante destilada de 600 M) | 200 idiomas; cobertura de yap no confirmada en la informacion disponible | CC-BY-NC-4.0 en las variantes de investigacion | sin datos para este par en la informacion disponible | HuggingFace |
+| WindstormLabs/translate-yap-sv | no disponible (repo de 0,3 GB) | no disponible | yap → sv | Apache-2.0 | sin benchmarks publicados | Hugging Face (este repositorio) |
+| Helsinki-NLP/opus-mt-yap-sv | no disponible | no disponible | yap → sv | Apache-2.0 | sin datos en la informacion disponible | Hugging Face (modelo base del anterior) |
+| NLLB-200 (Meta) | 600 M a 54 000 M segun variante | 512 tokens (variante destilada de 600 M) | 200 idiomas; cobertura de yap no confirmada en la informacion disponible | CC-BY-NC-4.0 en las variantes de investigacion | sin datos para este par en la informacion disponible | Hugging Face |
 
 La comparacion mas directa es con el propio modelo base de Helsinki-NLP, del que este checkpoint deriva y con el que comparte licencia. Frente a un modelo multilingue como NLLB-200, la ventaja de un Marian dedicado es el coste de inferencia muy inferior y la posibilidad de ejecucion en CPU, a cambio de cubrir un unico par y direccion de traduccion.
 
@@ -97,7 +97,7 @@ La comparacion mas directa es con el propio modelo base de Helsinki-NLP, del que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindstormLabs/translate-yap-sv
+- Modelo en Hugging Face: https://huggingface.co/WindstormLabs/translate-yap-sv
 - Copia canonica indicada por el autor: https://huggingface.co/WindyTranslate/translate-yap-sv
 - Pagina de catalogo y puntuaciones del autor: https://windytranslate.com/models/translate-yap-sv
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-yap-sv

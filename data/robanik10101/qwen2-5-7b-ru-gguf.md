@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robanik10101/qwen2.5-7b-ru-gguf
+- Modelo en Hugging Face: https://huggingface.co/robanik10101/qwen2.5-7b-ru-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de llama.cpp (referenciado por el autor para la cuantizacion): https://github.com/ggerganov/llama.cpp
 - Documentacion de Qwen2.5 (modelo base): no disponible como enlace explicito en la informacion proporcionada.

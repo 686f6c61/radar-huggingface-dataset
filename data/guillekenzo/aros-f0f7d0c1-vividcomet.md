@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-f0f7d0c1-VividComet | LoRA DreamBooth sobre difusión | no disponible (0,4 GB) | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base de difusión | no disponible | no aplica | no disponible en esta informacion | HuggingFace |
-| krea/Krea-2-Turbo | Modelo base de difusión destilado | no disponible | no aplica | no disponible en esta informacion | HuggingFace |
+| guillekenzo/aros-f0f7d0c1-VividComet | LoRA DreamBooth sobre difusión | no disponible (0,4 GB) | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base de difusión | no disponible | no aplica | no disponible en esta informacion | Hugging Face |
+| krea/Krea-2-Turbo | Modelo base de difusión destilado | no disponible | no aplica | no disponible en esta informacion | Hugging Face |
 
 No se dispone de datos de otros adaptadores LoRA comparables para Krea 2, ni de valores de rendimiento que permitan una comparación cuantitativa. La comparativa con otros LoRA de texto a imagen (por ejemplo, sobre SDXL) sería estructuralmente posible pero no aporta cifras verificables con la información disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros adaptadores LoRA comparables para Krea 2, ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-f0f7d0c1-VividComet
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-f0f7d0c1-VividComet
 - Modelo base RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de diffusers para LoRA: https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference

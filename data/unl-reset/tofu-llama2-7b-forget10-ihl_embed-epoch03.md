@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch03` | 6,74B | No disponible | Unlearning TOFU (forget10) | Llama 2 | HuggingFace |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74B | No disponible | Modelo base ajustado en TOFU | Llama 2 | HuggingFace |
-| Llama 2 7B Chat (`NousResearch/Llama-2-7b-chat-hf`) | ~6,74B | 4.096 tokens (referencia Llama 2) | Asistente conversacional | Llama 2 | HuggingFace |
-| Otros checkpoints TOFU de `unl-reset` | ~6,74B | No disponible | Variantes de unlearning | Llama 2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch03` | 6,74B | No disponible | Unlearning TOFU (forget10) | Llama 2 | Hugging Face |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74B | No disponible | Modelo base ajustado en TOFU | Llama 2 | Hugging Face |
+| Llama 2 7B Chat (`NousResearch/Llama-2-7b-chat-hf`) | ~6,74B | 4.096 tokens (referencia Llama 2) | Asistente conversacional | Llama 2 | Hugging Face |
+| Otros checkpoints TOFU de `unl-reset` | ~6,74B | No disponible | Variantes de unlearning | Llama 2 | Hugging Face |
 
 La comparación directa con modelos de propósito general no es significativa: este checkpoint está optimizado para una métrica de olvido concreta, no para calidad conversacional o razonamiento. Su referencia natural son las demás variantes de la suite TOFU.
 
@@ -88,7 +88,7 @@ La comparación directa con modelos de propósito general no es significativa: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch03
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): no disponible en la información proporcionada

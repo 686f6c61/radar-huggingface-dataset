@@ -92,5 +92,5 @@ La comparativa se limita al modelo base y a esta cuantización, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-8bit-Group32
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-8bit-Group32
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B

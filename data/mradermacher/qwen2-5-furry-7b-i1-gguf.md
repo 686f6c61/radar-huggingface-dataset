@@ -23,7 +23,7 @@ Su relevancia practica es acotada y muy especifica: sirve para desplegar un mode
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Los datos de HuggingFace indican que `23333aa/Qwen2.5-furry-7B` es el modelo de origen y que el fine-tune se realizo mediante QLoRA, segun la etiqueta `qlora` de la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases posteriores de RLHF, DPO u otro tipo de alineamiento. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, atencion por ventanas, etc.).
+La informacion disponible no detalla la arquitectura interna del modelo base. Los datos de Hugging Face indican que `23333aa/Qwen2.5-furry-7B` es el modelo de origen y que el fine-tune se realizo mediante QLoRA, segun la etiqueta `qlora` de la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases posteriores de RLHF, DPO u otro tipo de alineamiento. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, atencion por ventanas, etc.).
 
 El trabajo tecnico de este repositorio concreto corresponde a mradermacher y consiste en la generacion de cuantizaciones GGUF con matriz de importancia (imatrix) sobre el modelo original. El autor indica que se trata de cuantizaciones ponderadas (`weighted/imatrix quants`) y publica tambien una version de cuantizaciones estaticas en un repositorio hermano. El proceso imatrix, habitual en el ecosistema llama.cpp, calibra los pesos cuantizados a partir de estadisticas de activacion recogidas sobre un corpus, lo que suele traducirse en una perdida de perplejidad menor que la cuantizacion estatica equivalente en tamaño, especialmente en los niveles mas agresivos (IQ2, IQ3).
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables de terceros con el mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-furry-7B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-furry-7B-i1-GGUF
 - Modelo base: https://huggingface.co/23333aa/Qwen2.5-furry-7B
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Qwen2.5-furry-7B-GGUF
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#Qwen2.5-furry-7B-i1-GGUF

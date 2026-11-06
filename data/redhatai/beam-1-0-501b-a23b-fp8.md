@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/Beam-1.0-501B-A23B-FP8
-- HuggingFace (organizacion Reflection): https://huggingface.co/reflection
+- Hugging Face: https://huggingface.co/RedHatAI/Beam-1.0-501B-A23B-FP8
+- Hugging Face (organizacion Reflection): https://huggingface.co/reflection
 - GitHub: https://github.com/reflection-oss
 - Blog de lanzamiento: https://reflection.ai/blog
 - Documentacion para desarrolladores: https://developers.reflection.ai/introduction

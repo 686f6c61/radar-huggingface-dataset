@@ -80,9 +80,9 @@ No se han publicado en la informacion disponible resultados desglosados por benc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| azampatti/Qwen3.8-Flash-Next-Swift1.5 (este) | 125B totales, ~5B activos (MoE, base INT4 + add-on fp8) | no disponible | 88,3 % en GPQA/AIME/MATH (xhigh) con 0,58x tokens de pensamiento; Tool-Eval-Bench 91,3 | apache-2.0 | HuggingFace, requiere el base instalado |
-| azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound | 125B totales, ~5B activos (MoE, INT4 AutoRound) | no disponible | 88,9 % en GPQA/AIME/MATH (xhigh); Tool-Eval-Bench 91,3 | no disponible en la informacion proporcionada | HuggingFace, es el modelo base obligatorio |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace, es la fuente del modulo de atencion |
+| azampatti/Qwen3.8-Flash-Next-Swift1.5 (este) | 125B totales, ~5B activos (MoE, base INT4 + add-on fp8) | no disponible | 88,3 % en GPQA/AIME/MATH (xhigh) con 0,58x tokens de pensamiento; Tool-Eval-Bench 91,3 | apache-2.0 | Hugging Face, requiere el base instalado |
+| azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound | 125B totales, ~5B activos (MoE, INT4 AutoRound) | no disponible | 88,9 % en GPQA/AIME/MATH (xhigh); Tool-Eval-Bench 91,3 | no disponible en la informacion proporcionada | Hugging Face, es el modelo base obligatorio |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face, es la fuente del modulo de atencion |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azampatti/Qwen3.8-Flash-Next-Swift1.5
+- Modelo en Hugging Face: https://huggingface.co/azampatti/Qwen3.8-Flash-Next-Swift1.5
 - Modelo base obligatorio: https://huggingface.co/azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound
 - Fuente del modulo de atencion Swift1.5: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Repositorio de instalacion: https://github.com/azampatti/Qwen3.8-Flash-Next-Int4-FAST

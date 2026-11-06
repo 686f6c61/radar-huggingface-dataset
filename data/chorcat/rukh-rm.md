@@ -86,7 +86,7 @@ No se han proporcionado datos de modelos comparables. La model card no incluye c
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-rm | 37.913.601 | No disponible | 74,21 % en pares reservados | Apache 2.0 | HuggingFace |
+| chorcat/rukh-rm | 37.913.601 | No disponible | 74,21 % en pares reservados | Apache 2.0 | Hugging Face |
 | Codificador de posiciones preentrenado del proyecto Rukh (usado como inicializacion) | No disponible | No disponible | Unos 6,5 puntos peor que entrenar desde cero | No disponible en la informacion proporcionada | Proyecto Rukh |
 | Recompensa verificable de mate del mismo hito del proyecto | No disponible | No disponible | Resuelve el mate sin error | No disponible en la informacion proporcionada | Proyecto Rukh |
 
@@ -107,7 +107,7 @@ No hay datos de descargas ni de likes en el repositorio (ambos a cero) que permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-rm
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-rm
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Blog del proyecto con la explicacion de la construccion: https://lab.rukh.borjaglez.com
 - Dataset de pares usado en el entrenamiento: chorcat/rukh-pairs-dpo

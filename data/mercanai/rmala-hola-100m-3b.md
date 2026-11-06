@@ -103,5 +103,5 @@ Rendimiento comparado entre estos modelos: no disponible en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace (MercanAI): https://huggingface.co/MercanAI/rmala-hola-100m-3b
-- Espejo en HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-hola-100m-3b
+- Modelo en Hugging Face (MercanAI): https://huggingface.co/MercanAI/rmala-hola-100m-3b
+- Espejo en Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-hola-100m-3b

@@ -80,7 +80,7 @@ En test (407 fotos, a 960) el modelo afinado mejora al base RDD2022: mAP50 de 0,
 | Modelo | Parametros | Contexto / entrada | mAP50 (Quito, val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `daros10/road-damage-yolov8s-quito-mobile` | no disponible (YOLOv8s) | 640 o 960 px | 0,280 (640) / 0,276 (960) | AGPL-3.0 + CC BY 4.0 | Exportes TFLite y ONNX publicos |
-| `SreekarAditya/yolo-rdd2022-benchmark` (base) | no disponible (YOLOv8) | no disponible | no disponible en esta ficha; en test a 960 el afinado pasa de 0,196 a 0,268 | no disponible | Publico en HuggingFace |
+| `SreekarAditya/yolo-rdd2022-benchmark` (base) | no disponible (YOLOv8) | no disponible | no disponible en esta ficha; en test a 960 el afinado pasa de 0,196 a 0,268 | no disponible | Publico en Hugging Face |
 | YOLOv8s estandar (Ultralytics, COCO) | no disponible | 640 px | no evaluado sobre Quito | AGPL-3.0 | Publico |
 | YOLOv8n (Ultralytics, COCO) | no disponible | 640 px | no evaluado sobre Quito | AGPL-3.0 | Publico |
 
@@ -100,7 +100,7 @@ La comparacion directa con otros detectores de daños viales (por ejemplo, varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daros10/road-damage-yolov8s-quito-mobile
+- Modelo en Hugging Face: https://huggingface.co/daros10/road-damage-yolov8s-quito-mobile
 - Modelo base: https://huggingface.co/SreekarAditya/yolo-rdd2022-benchmark
 - Ultralytics (framework y licencia AGPL-3.0): https://github.com/ultralytics/ultralytics
 - LiteRT (antes TensorFlow Lite): https://ai.google.dev/edge/litert

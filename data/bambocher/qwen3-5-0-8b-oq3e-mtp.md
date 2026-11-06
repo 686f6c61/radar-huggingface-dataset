@@ -105,5 +105,5 @@ No se dispone de datos verificables de otros modelos comparables (parámetros, c
 
 ## Enlaces
 
-- [HuggingFace: bambocher/Qwen3.5-0.8B-oQ3e-mtp](https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3e-mtp)
+- [Hugging Face: bambocher/Qwen3.5-0.8B-oQ3e-mtp](https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3e-mtp)
 - [Repositorio de oQ / oMLX (herramienta de cuantización utilizada)](https://github.com/jundot/omlx)

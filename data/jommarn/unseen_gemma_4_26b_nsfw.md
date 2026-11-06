@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Jommarn/UNSEEN_Gemma_4_26B_NSFW** es un fine-tune no oficial del modelo **Gemma 4 26B** de Google DeepMind, orientado a la generación de contenido sin filtros de seguridad (NSFW). El autor, Jommarn, lo publica en HuggingFace bajo el pipeline `image-text-to-text`, lo que indica que hereda la multimodalidad del modelo base: entrada de imágenes y texto, salida de texto. El nombre "UNSEEN" sugiere una variante sin restricciones de alineación, probablemente mediante un proceso de destilación o fine-tune que elimina los mecanismos de rechazo del modelo original.
+El modelo **Jommarn/UNSEEN_Gemma_4_26B_NSFW** es un fine-tune no oficial del modelo **Gemma 4 26B** de Google DeepMind, orientado a la generación de contenido sin filtros de seguridad (NSFW). El autor, Jommarn, lo publica en Hugging Face bajo el pipeline `image-text-to-text`, lo que indica que hereda la multimodalidad del modelo base: entrada de imágenes y texto, salida de texto. El nombre "UNSEEN" sugiere una variante sin restricciones de alineación, probablemente mediante un proceso de destilación o fine-tune que elimina los mecanismos de rechazo del modelo original.
 
 Con **25.805.936.206 parámetros** (~25,8B), este modelo se posiciona en la gama alta de los modelos open source disponibles para inferencia local. Según la documentación de Google DeepMind, Gemma 4 26B emplea una arquitectura de mezcla de expertos (MoE) con 4 expertos activos de un total de 26, aunque esta característica no está confirmada para este fine-tune concreto. El repositorio pesa 48,5 GB, consistente con pesos en precisión fp16/bf16, y los tags indican la existencia de una versión cuantizada en 4 bits mediante bitsandbytes.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en la demanda de la comunidad de modelos "un
 
 El modelo base, Gemma 4 26B, es un modelo multimodal desarrollado por Google DeepMind que acepta entradas de imagen y texto y genera texto. Según la documentación oficial de Google Cloud, la variante "Gemma 4 26B A4B IT" emplea una arquitectura de mezcla de expertos (MoE) con 4 expertos activos, lo que reduce el coste computacional en inferencia manteniendo una capacidad total de 26B parámetros. El fine-tune de Jommarn hereda presumiblemente esta arquitectura, aunque no hay confirmación explícita en la model card.
 
-No se dispone de información sobre el proceso de entrenamiento de este fine-tune: ni datos de entrenamiento, ni método (RLHF, DPO, etc.), ni hiperparámetros. La model card es una plantilla automática de HuggingFace con todos los campos en "[More Information Needed]". El tag `arxiv:1910.09700` hace referencia al paper sobre el cálculo de emisiones de carbono (Lacoste et al., 2019), citado de forma genérica en la plantilla, no a una innovación técnica del modelo.
+No se dispone de información sobre el proceso de entrenamiento de este fine-tune: ni datos de entrenamiento, ni método (RLHF, DPO, etc.), ni hiperparámetros. La model card es una plantilla automática de Hugging Face con todos los campos en "[More Information Needed]". El tag `arxiv:1910.09700` hace referencia al paper sobre el cálculo de emisiones de carbono (Lacoste et al., 2019), citado de forma genérica en la plantilla, no a una innovación técnica del modelo.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se dispone de datos de rendimiento de este fine-tune para comparar con altern
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jommarn/UNSEEN_Gemma_4_26B_NSFW | ~25,8B | no disponible | no disponible | HuggingFace |
-| Gemma 4 26B (base, Google DeepMind) | ~25,8B (MoE) | no publicado | Gemma Terms of Use | HuggingFace, Google Cloud |
-| Llama 3.1 70B (variantes uncensored) | 70B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B (variantes uncensored, p.ej. dolphin) | 7B | 32K | Apache 2.0 | HuggingFace |
+| Jommarn/UNSEEN_Gemma_4_26B_NSFW | ~25,8B | no disponible | no disponible | Hugging Face |
+| Gemma 4 26B (base, Google DeepMind) | ~25,8B (MoE) | no publicado | Gemma Terms of Use | Hugging Face, Google Cloud |
+| Llama 3.1 70B (variantes uncensored) | 70B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B (variantes uncensored, p.ej. dolphin) | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparación directa no es posible sin datos de benchmarks. El modelo base Gemma 4 26B ha demostrado un rendimiento competitivo en razonamiento y codificación según Google DeepMind, pero este fine-tune no publica resultados propios.
 
@@ -80,7 +80,7 @@ La comparación directa no es posible sin datos de benchmarks. El modelo base Ge
 
 ## Enlaces
 
-- [HuggingFace - Jommarn/UNSEEN_Gemma_4_26B_NSFW](https://huggingface.co/Jommarn/UNSEEN_Gemma_4_26B_NSFW)
+- [Hugging Face - Jommarn/UNSEEN_Gemma_4_26B_NSFW](https://huggingface.co/Jommarn/UNSEEN_Gemma_4_26B_NSFW)
 - [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 26B uncensored weights quantized to GGUF (uncensoredhub.ai)](https://uncensoredhub.ai/news/2026-06-05-gemma-4-26b-uncensored-weights-quantized-to-gguf-for-local-inference)
 - [Gemma 4 26B A4B IT - Google Cloud Docs](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it)

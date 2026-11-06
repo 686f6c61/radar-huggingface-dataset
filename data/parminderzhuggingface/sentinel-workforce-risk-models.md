@@ -89,6 +89,6 @@ No se dispone de comparaciones directas con otros modelos de predicción de aban
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParminderzHuggingFace/sentinel-workforce-risk-models
+- Modelo en Hugging Face: https://huggingface.co/ParminderzHuggingFace/sentinel-workforce-risk-models
 - Repositorio GitHub: https://github.com/ParminderSinghGithub/Sentinel
-- Perfil del autor en HuggingFace: https://huggingface.co/ParminderzHuggingFace
+- Perfil del autor en Hugging Face: https://huggingface.co/ParminderzHuggingFace

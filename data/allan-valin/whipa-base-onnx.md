@@ -17,7 +17,7 @@ La relevancia práctica está en el tamaño: la arquitectura subyacente es Whisp
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Ventana de audio de 30 s: `input_features` [1, 80, 3000] → 1500 posiciones de encoder; sin contexto textual adicional |
 | Tipos de cuantizacion | Pesos fp16 con entradas/salidas en float32; existe export fp32; la cuantización dinámica int8 se probó y se descartó |
-| Idiomas soportados | Transcripción fonética agnóstica al idioma; evaluado sobre 95 idiomas de VoxAngeles. La metadata de HuggingFace no declara lista de idiomas |
+| Idiomas soportados | Transcripción fonética agnóstica al idioma; evaluado sobre 95 idiomas de VoxAngeles. La metadata de Hugging Face no declara lista de idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (`encoder.fp16.onnx`, `decoder.fp16.onnx`) más `tokens.json` y `mel.json`; no hay safetensors ni GGUF |
 
@@ -85,7 +85,7 @@ La model card no define la formulación exacta de PER/PFER ni indica la direcci�
 - La versión fp16 no es idéntica a fp32: difiere en 1 de 95 clips de la prueba. Para evaluación académica conviene usar el export fp32.
 - El vocabulario de salida es el de Whisper completo (51866 clases): si no se aplican correctamente los tokens suprimidos de `tokens.json`, el modelo puede emitir tokens de texto o de control en lugar de fonemas.
 - Ventana rígida de 30 s y ausencia de marcas de tiempo: la alineación temporal con el audio debe resolverse con herramientas externas.
-- Idiomas: la metadata de HuggingFace no declara lista de idiomas; la cobertura real está acotada por los 95 idiomas representados en la evaluación, con 8 enunciados por idioma, lo que es una muestra pequeña por lengua.
+- Idiomas: la metadata de Hugging Face no declara lista de idiomas; la cobertura real está acotada por los 95 idiomas representados en la evaluación, con 8 enunciados por idioma, lo que es una muestra pequeña por lengua.
 - Sesgos: no documentados en la model card. Cabe esperar el sesgo del corpus Common Voice subyacente (desequilibrio de variedades, hablantes y condiciones de grabación).
 - Riesgo de alucinación: en un modelo fonético se manifiesta como secuencias de fonemas plausibles pero no presentes en el audio, especialmente en silencios, ruido o audio fuera de dominio.
 - Licencia Apache 2.0, permisiva para uso comercial; se debe mantener la atribución al modelo original y a sus autores, y verificar las condiciones del dataset de entrenamiento original, no detalladas aquí.
@@ -93,7 +93,7 @@ La model card no define la formulación exacta de PER/PFER ni indica la direcci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allan-valin/whipa-base-onnx
+- Modelo en Hugging Face: https://huggingface.co/allan-valin/whipa-base-onnx
 - Modelo base original: https://huggingface.co/jshrdt/whipa-base-cv
 - Repositorio del modelo original: https://github.com/jshrdt/whipa
 - Proyecto que lo utiliza (`speech-to-ipa`): https://github.com/allan-valin/speech-to-ipa

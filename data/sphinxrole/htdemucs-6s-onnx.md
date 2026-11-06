@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Stems | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| htdemucs-6s-onnx (este) | 6 | ONNX | MIT | HuggingFace (sphinxrole) |
+| htdemucs-6s-onnx (este) | 6 | ONNX | MIT | Hugging Face (sphinxrole) |
 | Demucs htdemucs (original) | 4 | PyTorch | MIT | Repositorio de Meta Research |
 | Demucs htdemucs_6s (original) | 6 | PyTorch | MIT | Repositorio de Meta Research |
 | Spleeter (Deezer) | 2 o 4 | TensorFlow | MIT | Repositorio de Deezer |
@@ -82,7 +82,7 @@ La comparativa se limita a nivel de formato y licencia, ya que no se dispone de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sphinxrole/htdemucs-6s-onnx
+- Repositorio en Hugging Face: https://huggingface.co/sphinxrole/htdemucs-6s-onnx
 - Repositorio original de Demucs (Meta Research): https://github.com/facebookresearch/demucs
 - Referencia de conversión citada por el autor: StemSplitio (sin URL concreta en la información disponible)
 - Documentación de ONNX Runtime: https://onnxruntime.ai/

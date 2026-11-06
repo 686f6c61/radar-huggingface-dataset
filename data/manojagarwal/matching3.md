@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`manojagarwal/matching3` es un prototipo de investigación publicado en HuggingFace por el usuario Manoj Agarwal, etiquetado como arquitectura "Mae" (no confundir con Masked Autoencoders en sentido estricto; el autor usa la etiqueta `mae` sin desarrollarla) y orientado a una tarea genérica de *matching* (emparejamiento). Se trata de un experimento a escala "nano" cuyo objetivo declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento. El repositorio tiene 0 descargas y 0 *likes*, y su tamaño es de 0,0 GB.
+`manojagarwal/matching3` es un prototipo de investigación publicado en Hugging Face por el usuario Manoj Agarwal, etiquetado como arquitectura "Mae" (no confundir con Masked Autoencoders en sentido estricto; el autor usa la etiqueta `mae` sin desarrollarla) y orientado a una tarea genérica de *matching* (emparejamiento). Se trata de un experimento a escala "nano" cuyo objetivo declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento. El repositorio tiene 0 descargas y 0 *likes*, y su tamaño es de 0,0 GB.
 
 El dato más relevante es su tamaño real: 16.576 parámetros en `model.safetensors`, según el recuento de parámetros del propio repositorio. Es, por tanto, varios órdenes de magnitud más pequeño que cualquier modelo de lenguaje útil: no es un LLM, no genera texto y no está pensado para inferencia en producción. La model card indica explícitamente que el checkpoint incluido es una inicialización válida para *smoke tests* y que **no** constituye un checkpoint entrenado ni evaluado.
 
@@ -87,7 +87,7 @@ No disponible. No se conocen modelos comparables de 16.576 parámetros con arqui
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manojagarwal/matching3 | 16.576 | no disponible | no disponible | bsd-3-clause | HuggingFace, 0 descargas |
+| manojagarwal/matching3 | 16.576 | no disponible | no disponible | bsd-3-clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,13 +98,13 @@ No disponible. No se conocen modelos comparables de 16.576 parámetros con arqui
 - Riesgo de alucinación: no aplicable en el sentido habitual, ya que no es un modelo generativo de lenguaje documentado; el riesgo real es interpretar sus salidas aleatorias como predicciones válidas.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura idiomática.
 - Restricciones de licencia: la licencia bsd-3-clause permite uso comercial y modificación con atribución, pero el propio autor advierte de que hay que revisar por separado los términos de los datos externos si se usan con este repositorio.
-- Caveat de integración: al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace requieren un adaptador explícito; no se puede asumir `AutoModel.from_pretrained` sin más.
+- Caveat de integración: al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face requieren un adaptador explícito; no se puede asumir `AutoModel.from_pretrained` sin más.
 - Caveat de publicación: cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio, según indica el autor.
 - Sin garantías de mantenimiento: 0 descargas, 0 *likes* y una única actualización el mismo día de creación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manojagarwal/matching3
-- Perfil del autor en HuggingFace: https://huggingface.co/manojagarwal/models
+- Modelo en Hugging Face: https://huggingface.co/manojagarwal/matching3
+- Perfil del autor en Hugging Face: https://huggingface.co/manojagarwal/models
 - Ficheros del repositorio citados en la model card: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Otros resultados de la busqueda web no relacionados directamente con este modelo: https://scoregpt.app/ , https://zju3dv.github.io/MatchAnything/ , https://arxiv.org/abs/2508.12629 , https://www.scriptbyai.com/ai-model-release-calendar/

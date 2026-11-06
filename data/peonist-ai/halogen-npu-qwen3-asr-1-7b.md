@@ -36,7 +36,7 @@ La innovación técnica relevante no está en el modelo sino en la ruta de ejecu
 - Convivencia con otros modelos del catálogo del servidor (por ejemplo, `flux2-klein-4b`), con la restricción de que solo se sirve un modelo de voz a la vez.
 - Verificación de integridad: el servidor comprueba tamaño y checksum de cada fichero antes de arrancar.
 - No soporta tool calling, agentes, visión ni otras capacidades: es un modelo exclusivamente de reconocimiento de habla.
-- No es cargable fuera del contenedor `halogen-flash-server`; el widget de HuggingFace está desactivado deliberadamente.
+- No es cargable fuera del contenedor `halogen-flash-server`; el widget de Hugging Face está desactivado deliberadamente.
 
 ## Casos de uso
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Runtime | Disponibilidad |
 |---|---|---|---|---|---|
-| `peonist-ai/halogen-npu-qwen3-asr-1.7b` | 1,7 B (heredado del base) | Audio de hasta 20 min o 25 MiB | Apache-2.0 | Solo NPU XDNA2 via `halogen-flash-server` | HuggingFace, repo de 4,1 GB |
-| `Qwen/Qwen3-ASR-1.7B` (modelo base) | 1,7 B | No disponible | Apache-2.0 | Frameworks estandar (no confirmado en la informacion) | HuggingFace |
+| `peonist-ai/halogen-npu-qwen3-asr-1.7b` | 1,7 B (heredado del base) | Audio de hasta 20 min o 25 MiB | Apache-2.0 | Solo NPU XDNA2 via `halogen-flash-server` | Hugging Face, repo de 4,1 GB |
+| `Qwen/Qwen3-ASR-1.7B` (modelo base) | 1,7 B | No disponible | Apache-2.0 | Frameworks estandar (no confirmado en la informacion) | Hugging Face |
 | Alternativas ASR de la misma categoria (p. ej. familia Whisper) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no se han proporcionado cifras de WER ni de rendimiento de ninguno de los contendientes. La diferencia funcional determinante frente al modelo base no es de calidad sino de portabilidad: este repositorio solo es ejecutable en un contenedor y hardware concretos.
@@ -84,11 +84,11 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 - Idiomas y sesgos del modelo base: al no publicarse evaluación propia, los sesgos y el riesgo de alucinación son los de Qwen3-ASR-1.7B, no caracterizados en esta ficha. En ASR, los errores típicos son nombres propios, cifras y audio con ruido o acentos no representados en el entrenamiento.
 - Licencia: Apache-2.0 permite uso comercial, pero los programas NPU de `devices/` y `enc/` arrastran avisos de terceros recogidos en sus respectivos `NOTICE.md`, que deben revisarse antes de redistribuir.
 - Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el propio autor deriva las dudas a un Discord y los fallos al repositorio del servidor; no hay garantía de soporte.
-- Advertencia sobre la documentación: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo contenido no relacionado), por lo que toda la información de esta ficha procede de la model card y de los metadatos de HuggingFace.
+- Advertencia sobre la documentación: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo contenido no relacionado), por lo que toda la información de esta ficha procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-npu-qwen3-asr-1.7b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-npu-qwen3-asr-1.7b
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Revisión del modelo base utilizada: `7278e1e70fe206f11671096ffdd38061171dd6e5`
 - Servidor `halogen-flash-server`: https://github.com/peonist-ai/halogen-flash-server

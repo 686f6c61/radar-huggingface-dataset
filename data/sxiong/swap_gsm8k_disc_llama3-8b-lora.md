@@ -69,7 +69,7 @@ No se dispone de informacion sobre discriminadores comparables en el contexto de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA
 - Repositorio GitHub SWAP: https://github.com/xiongsiheng/SWAP
 - Articulo (ACL 2025): https://aclanthology.org/ (buscar "Deliberate reasoning in language models as structure-aware planning")
 - Dataset SWAP: https://huggingface.co/datasets/sxiong/SWAP

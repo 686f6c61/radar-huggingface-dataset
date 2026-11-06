@@ -23,8 +23,8 @@ La limitacion principal es la licencia: aunque el repositorio declara `license: 
 | Tamano del repositorio | 131,8 GB |
 | Libreria declarada | phoonnx |
 | Pipeline | text-to-speech |
-| Fecha de creacion | 2026-06-05 (segun los metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-17 (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-06-05 (segun los metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-17 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,11 +93,11 @@ Las cifras de idiomas y licencias de los modelos comparados corresponden a infor
 - Sin datos de evaluacion: no hay benchmarks publicados, ni mediciones de latencia, ni informes de sesgo o de comportamiento por idioma.
 - Traccion nula en el repositorio: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Idiomas no declarados en los metadatos: el campo de idiomas del repositorio esta vacio, por lo que la cobertura real debe verificarse listando las subcarpetas.
-- Fechas de creacion y actualizacion inusuales: los metadatos indican 2026-06-05 y 2026-09-17; se reproducen tal cual figuran en HuggingFace, sin verificacion adicional.
+- Fechas de creacion y actualizacion inusuales: los metadatos indican 2026-06-05 y 2026-09-17; se reproducen tal cual figuran en Hugging Face, sin verificacion adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenVoiceOS/phoonnx-mms
+- Repositorio en Hugging Face: https://huggingface.co/OpenVoiceOS/phoonnx-mms
 - Modelo upstream de las voces: https://huggingface.co/facebook/mms-tts
 - Motor phoonnx: https://github.com/TigreGotico/phoonnx
 - Coleccion phoonnx community mirror: https://huggingface.co/collections/OpenVoiceOS/phoonnx-community-mirror-6a2204d302e0e7497870cd68

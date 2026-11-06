@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r03-mulligan-repair-no-r3roll-idql | IDQL: actor de difusion + critico IQL, estado | no disponible | no aplica | MIT | HuggingFace, repo de 1.4 GB |
+| sim-square-narrow-r03-mulligan-repair-no-r3roll-idql | IDQL: actor de difusion + critico IQL, estado | no disponible | no aplica | MIT | Hugging Face, repo de 1.4 GB |
 | Diffusion Policy (Chi et al.) | Actor de difusion para control visual y de estado | no disponible en la informacion proporcionada | no aplica | codigo abierto, consultar repositorio oficial | Repositorio publico |
 | ACT (Zhao et al., ALOHA) | Transformer con decodificacion de acciones por chunks | no disponible en la informacion proporcionada | no aplica | codigo abierto, consultar repositorio oficial | Repositorio publico |
 | DP3 (3D Diffusion Policy) | Difusion sobre representaciones 3D de nubes de puntos | no disponible en la informacion proporcionada | no aplica | codigo abierto, consultar repositorio oficial | Repositorio publico |
@@ -104,10 +104,10 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql
 - Proyecto Mulligan: https://mulligan.page/
 - Panel de evaluaciones Policy Arena: https://arena.mulligan.page/
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset sim-square-narrow-c00-teleop-sobol: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset sim-square-narrow-c01-dagger-mulligan: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mulligan
 - Dataset sim-square-narrow-c01-sobol-policy-rollouts: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts

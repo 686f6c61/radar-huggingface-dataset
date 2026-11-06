@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ahof_new_model es un modelo publicado en HuggingFace por el usuario Hg0 bajo licencia Apache 2.0. El repositorio, creado el 26 de septiembre de 2026 y actualizado el 4 de noviembre del mismo año, ocupa aproximadamente 1,3 GB y no incluye model card descriptiva más allá de la declaración de licencia. No se especifica la arquitectura, el tamaño en parámetros, la longitud de contexto ni los idiomas soportados.
+Ahof_new_model es un modelo publicado en Hugging Face por el usuario Hg0 bajo licencia Apache 2.0. El repositorio, creado el 26 de septiembre de 2026 y actualizado el 4 de noviembre del mismo año, ocupa aproximadamente 1,3 GB y no incluye model card descriptiva más allá de la declaración de licencia. No se especifica la arquitectura, el tamaño en parámetros, la longitud de contexto ni los idiomas soportados.
 
 La ausencia de documentación técnica, de pipeline declarado y de cualquier métrica de entrenamiento o evaluación impide determinar con rigor qué problema resuelve el modelo o en qué casos resulta adecuado. El volumen del repositorio (1,3 GB) sugiere pesos en precisión reducida o un modelo de tamaño moderado, pero se trata de una inferencia no confirmada por el autor.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin documentación técnica que 
 - Comparación de calidad frente a modelos documentados: usar el modelo como referencia en pruebas ciegas de generación de texto, siempre que se establezca una línea base con modelos de tamaño y contexto conocidos.
 - Análisis de licencia y cumplimiento: dado que la licencia es Apache 2.0, evaluar su incorporación a productos comerciales una vez confirmadas las obligaciones de atribución y ausencia de restricciones adicionales.
 - Investigación sobre reproducibilidad: auditar la procedencia de los pesos y la coherencia entre el tamaño del repositorio y la arquitectura declarada, como parte de estudios sobre modelos publicados sin documentación.
-- Docencia y formación interna: emplear el repositorio como ejemplo de publicación incompleta en HuggingFace y de los riesgos de desplegar modelos sin model card ni benchmarks.
+- Docencia y formación interna: emplear el repositorio como ejemplo de publicación incompleta en Hugging Face y de los riesgos de desplegar modelos sin model card ni benchmarks.
 
 En ningún caso se recomienda su uso en producción, atención al cliente, generación de código o cualquier aplicación con usuarios finales sin una evaluación técnica completa previa.
 
@@ -74,10 +74,10 @@ No disponible. No se dispone de información sobre parámetros, contexto o rendi
 - Longitud de contexto desconocida, lo que impide planificar aplicaciones con ventanas largas.
 - Licencia Apache 2.0 declarada, pero sin confirmación de que los pesos y los datos subyacentes sean compatibles con dicha licencia; conviene auditar la procedencia antes de un uso comercial.
 - Cero descargas y cero likes: sin validación por parte de la comunidad ni reportes de terceros.
-- El repositorio no declara pipeline, lo que sugiere que HuggingFace no ha podido inferir la tarea del modelo.
+- El repositorio no declara pipeline, lo que sugiere que Hugging Face no ha podido inferir la tarea del modelo.
 - No apto para producción sin una evaluación técnica independiente y una revisión legal de la licencia y la procedencia de los datos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hg0/Ahof_new_model
+- Hugging Face: https://huggingface.co/Hg0/Ahof_new_model
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

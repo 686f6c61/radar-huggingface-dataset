@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mradermacher/spoomplesmaxx-mockingbird-36B-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/mradermacher/spoomplesmaxx-mockingbird-36B-GGUF
 - Modelo base: https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B
 - Página del autor mradermacher para solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
 - Sitio de descarga alternativa para listas de archivos: https://hf.tst.eu/model#spoomplesmaxx-mockingbird-36B-GGUF

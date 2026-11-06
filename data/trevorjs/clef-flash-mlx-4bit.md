@@ -80,9 +80,9 @@ Verificaciones adicionales reportadas: coincidencia de la cabeza con la implemen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrevorJS/clef-flash-mlx-4bit | 8,95 B (4 bits, 5,3 GB) | No disponible | 182/231 en JevBench publico; 5,9 GB de pico; 2,9 s de latencia mediana en M2 | Apache-2.0 | HuggingFace, libreria MLX |
-| TrevorJS/clef-flash-mlx-8bit | Mismo backbone (8 bits) | No disponible | 188/231 en JevBench publico; 10,1 GB de pico; 4,8 s de latencia mediana en M2 | Apache-2.0 | HuggingFace, libreria MLX |
-| Cloudflare/clef-flash (original) | Backbone Qwen3.5-9B, sin cuantizar | No disponible | No se publican en la informacion disponible los resultados bf16 de referencia | Apache-2.0 | HuggingFace, modelo multimodal con vision |
+| TrevorJS/clef-flash-mlx-4bit | 8,95 B (4 bits, 5,3 GB) | No disponible | 182/231 en JevBench publico; 5,9 GB de pico; 2,9 s de latencia mediana en M2 | Apache-2.0 | Hugging Face, libreria MLX |
+| TrevorJS/clef-flash-mlx-8bit | Mismo backbone (8 bits) | No disponible | 188/231 en JevBench publico; 10,1 GB de pico; 4,8 s de latencia mediana en M2 | Apache-2.0 | Hugging Face, libreria MLX |
+| Cloudflare/clef-flash (original) | Backbone Qwen3.5-9B, sin cuantizar | No disponible | No se publican en la informacion disponible los resultados bf16 de referencia | Apache-2.0 | Hugging Face, modelo multimodal con vision |
 
 No se identifican en la informacion proporcionada otros modelos de decision de esquema tipado directamente comparables. Los resultados de busqueda web mencionan otros modelos cuantizados a formato MLX (Step-3.7-Flash-4bit, DeepSeek-V4-Flash-4bit), pero pertenecen a categorias distintas (LLM generativos y MoE dispersos de gran tamano) y no son alternativas comparables a un modelo de decision de ~9B.
 
@@ -103,7 +103,7 @@ No se identifican en la informacion proporcionada otros modelos de decision de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrevorJS/clef-flash-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/TrevorJS/clef-flash-mlx-4bit
 - Variante 8 bits: https://huggingface.co/TrevorJS/clef-flash-mlx-8bit
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Anuncio de Cloudflare sobre los modelos de decision Clef: https://blog.cloudflare.com/clef-decision-models/

@@ -77,8 +77,8 @@ La perdida en datos no vistos dejo de mejorar tras el paso 6000, oscilando entre
 
 | Modelo | Descripcion | Licencia | Disponibilidad |
 |---|---|---|---|
-| `pi05_bi_two_tubes_0102_step16000` (este) | Fine-tuning bimanual con tacto de pi0.5 para pick-and-place de dos tubos | Apache 2.0 | HuggingFace, LeRobot |
-| `pi05_bi_two_tubes_0102_step6000` | Mismo entrenamiento en un paso anterior (6000), con mejor perdida val_unseen (0.0543) | Apache 2.0 | HuggingFace, LeRobot |
+| `pi05_bi_two_tubes_0102_step16000` (este) | Fine-tuning bimanual con tacto de pi0.5 para pick-and-place de dos tubos | Apache 2.0 | Hugging Face, LeRobot |
+| `pi05_bi_two_tubes_0102_step6000` | Mismo entrenamiento en un paso anterior (6000), con mejor perdida val_unseen (0.0543) | Apache 2.0 | Hugging Face, LeRobot |
 | `pi05_base` | Modelo base VLA de Physical Intelligence, co-entrenado con demostraciones roboticas y datos multimodales | Apache 2.0 | ModelScope, LeRobot |
 
 La comparativa se limita a estos tres modelos porque no hay datos publicos de otros checkpoints de pi0.5 con entradas tactiles y control bimanual en el momento de redactar esta ficha. El checkpoint en el paso 6000 presenta una perdida de validacion en datos no vistos ligeramente mejor (0.0543 frente a 0.0551), aunque la diferencia esta dentro del ruido de validacion.

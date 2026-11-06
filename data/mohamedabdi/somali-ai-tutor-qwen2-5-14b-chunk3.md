@@ -93,7 +93,7 @@ No se dispone de numeros de benchmark del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-Chunk3
+- Modelo en Hugging Face: https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-Chunk3
 - Modelo base utilizado para el ajuste: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

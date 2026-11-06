@@ -77,7 +77,7 @@ La comparativa muestra que el modelo presentado, a pesar de su nombre, presenta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/icaryx/Meta-Llama-3.2-3B-Instruct-Paul-Graham-GGUF
+- Hugging Face: https://huggingface.co/icaryx/Meta-Llama-3.2-3B-Instruct-Paul-Graham-GGUF
 - Modelo base Meta-Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentación de vLLM para el modelo base: https://recipes.vllm.ai/meta-llama/Llama-3.2-3B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

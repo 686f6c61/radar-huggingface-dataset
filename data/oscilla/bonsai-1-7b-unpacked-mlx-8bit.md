@@ -4,7 +4,7 @@
 
 Bonsai-1.7B es una familia de modelos de lenguaje de pequeño tamaño desarrollada por PrismML, diseñada específicamente para ejecutarse en dispositivos con recursos muy limitados como gafas inteligentes, wearables y tareas de fondo en sistemas embebidos. La característica más destacada es el uso de pesos de 1 bit, lo que reduce drásticamente el consumo de memoria y energía manteniendo una capacidad de razonamiento aceptable para su tamaño. El modelo base tiene 1.700 millones de parámetros y admite una ventana de contexto de hasta 32.768 tokens.
 
-Este repositorio concreto, `Oscilla/Bonsai-1.7B-unpacked-mlx-8Bit`, es una conversión al formato MLX (Apple Silicon) con cuantización de 8 bits realizada por el usuario Oscilla a partir del checkpoint "unpacked" en FP16 de PrismML. La versión "unpacked" existe porque los kernels de 1 bit aún no están integrados en el ecosistema estándar de HuggingFace, por lo que se publican pesos en FP16 para facilitar la compatibilidad con frameworks convencionales. La conversión a MLX permite ejecutar el modelo en Macs con Apple Silicon mediante la librería `mlx-lm`.
+Este repositorio concreto, `Oscilla/Bonsai-1.7B-unpacked-mlx-8Bit`, es una conversión al formato MLX (Apple Silicon) con cuantización de 8 bits realizada por el usuario Oscilla a partir del checkpoint "unpacked" en FP16 de PrismML. La versión "unpacked" existe porque los kernels de 1 bit aún no están integrados en el ecosistema estándar de Hugging Face, por lo que se publican pesos en FP16 para facilitar la compatibilidad con frameworks convencionales. La conversión a MLX permite ejecutar el modelo en Macs con Apple Silicon mediante la librería `mlx-lm`.
 
 La relevancia de este modelo radica en su extremada eficiencia: con un peso original de solo 0,25 GB en formato 1 bit, puede desplegarse en hardware de muy bajo consumo, abriendo la puerta a aplicaciones de IA generativa en dispositivos que tradicionalmente no podían alojar un LLM.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: la versión MLX de 8 bits ocupa 1,8 GB en disco, por lo que se estima un consumo de VRAM de aproximadamente 2 GB durante la inferencia. La versión original de 1 bit requiere solo 0,25 GB de almacenamiento y menos de 1 GB de RAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060) puede ejecutar la versión de 8 bits. Para la versión de 1 bit, basta con hardware integrado o microcontroladores con suficiente memoria.
 - Compatibilidad con Apple Silicon: el formato MLX está optimizado para Macs con chips M1, M2, M3 y M4. La versión de 8 bits se ejecuta sin problemas en Macs con 8 GB de RAM unificada.
-- Opciones de despliegue: `mlx-lm` para Apple Silicon, `llama.cpp` (con soporte experimental para 1 bit), HuggingFace Transformers con el checkpoint unpacked, y vLLM o TGI para servidores con GPUs convencionales (usando la versión FP16).
+- Opciones de despliegue: `mlx-lm` para Apple Silicon, `llama.cpp` (con soporte experimental para 1 bit), Hugging Face Transformers con el checkpoint unpacked, y vLLM o TGI para servidores con GPUs convencionales (usando la versión FP16).
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamaño reducido, se espera una generación de decenas de tokens por segundo en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Oscilla/Bonsai-1.7B-unpacked-mlx-8Bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Oscilla/Bonsai-1.7B-unpacked-mlx-8Bit
 - Modelo base unpacked: https://huggingface.co/prism-ml/Bonsai-1.7B-unpacked
 - Colección de modelos Bonsai: https://huggingface.co/collections/prism-ml/bonsai
 - Documentación oficial de Bonsai 1.7B: https://docs.prismml.com/models/bonsai-1-7b

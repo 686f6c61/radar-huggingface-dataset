@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Supreme-Ed/microduck-tug-vsnico` es una política de control obtenida por aprendizaje por refuerzo para el robot microduck, publicada en HuggingFace por el usuario Supreme-Ed el 28 de octubre de 2026. No es un modelo de lenguaje: es una política de comportamiento («gait») pensada para ocupar un slot de política en el daemon del robot y ejecutarse de forma perpetua hasta que se le indique lo contrario, a una frecuencia de control de 50 Hz, con un espacio de observación de 61 dimensiones y 14 acciones.
+`Supreme-Ed/microduck-tug-vsnico` es una política de control obtenida por aprendizaje por refuerzo para el robot microduck, publicada en Hugging Face por el usuario Supreme-Ed el 28 de octubre de 2026. No es un modelo de lenguaje: es una política de comportamiento («gait») pensada para ocupar un slot de política en el daemon del robot y ejecutarse de forma perpetua hasta que se le indique lo contrario, a una frecuencia de control de 50 Hz, con un espacio de observación de 61 dimensiones y 14 acciones.
 
 La política está especializada en la tarea de Tug of War (tira y afloja) con una estrategia descrita por el autor como «cup-first», y se presenta con dos referencias de rendimiento autoinformadas: un resultado «5-5» frente a la política Nico base y una supervivencia de 13,8 s frente al «wrapper n.º 1». Se distribuye como `policy.onnx` con el normalizador de observaciones embebido en el propio grafo, más un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck.
 
@@ -75,7 +75,7 @@ No hay informacion sobre numero de episodios de evaluacion, semillas, varianza e
 
 | Modelo | Parametros | Contexto / interfaz | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-vsnico | No disponible | 61-D observacion, 14 acciones, 50 Hz | «5-5» vs Nico base; 13,8 s vs wrapper n.º 1 (autoinformado) | No disponible | Publico en HuggingFace, 0 descargas |
+| microduck-tug-vsnico | No disponible | 61-D observacion, 14 acciones, 50 Hz | «5-5» vs Nico base; 13,8 s vs wrapper n.º 1 (autoinformado) | No disponible | Publico en Hugging Face, 0 descargas |
 | Nico base (politica de referencia) | No disponible | No disponible | Usada como oponente de referencia; sin metricas publicadas en esta ficha | No disponible | No disponible como artefacto independiente en la informacion consultada |
 | Wrapper n.º 1 | No disponible | No disponible | Cita como «el wrapper n.º 1»; sin metricas publicadas | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supreme-Ed/microduck-tug-vsnico
+- Modelo en Hugging Face: https://huggingface.co/Supreme-Ed/microduck-tug-vsnico
 - Repositorio del robot y daemon microduck (referenciado en la model card): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL citado: `pollen-robotics/microduck_rl`, rama `main`, commit `4b675ebf4` (sin URL directa en la informacion proporcionada)
 - Especificacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del daemon (esquema 2)

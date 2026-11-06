@@ -44,7 +44,7 @@ Dado que la model card no documenta aplicaciones específicas, los siguientes ca
 - Anotación de datasets: automatización del etiquetado de imágenes en pipelines de machine learning, reduciendo el coste de anotación manual.
 - Asistente de navegación por imágenes médicas: aunque requiere validación clínica, el modelo puede ayudar a resumir hallazgos visuales en radiografías o ecografías, siempre como apoyo a profesionales.
 
-Para usar el adaptador en cualquiera de estos escenarios, es necesario cargar el modelo base 4-bit y aplicar el adaptador LoRA, preferiblemente con la librería `transformers` de HuggingFace y `peft`.
+Para usar el adaptador en cualquiera de estos escenarios, es necesario cargar el modelo base 4-bit y aplicar el adaptador LoRA, preferiblemente con la librería `transformers` de Hugging Face y `peft`.
 
 ## Benchmarks y rendimiento
 
@@ -55,15 +55,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: dado que el adaptador debe combinarse con el modelo base Qwen2.5-VL-7B-Instruct, se requiere aproximadamente entre 8 y 10 GB de VRAM si el base se carga en 4-bit, y entre 14 y 16 GB si se carga en precisión completa (fp16). Estas cifras son orientativas y no han sido validadas.
 - GPU recomendadas: RTX 4090 (24 GB), A100 40/80 GB, H100, o cualquier GPU con al menos 12 GB de VRAM para trabajar con el base en 4-bit.
 - Es posible ejecutar el modelo en GPUs de consumo (por ejemplo, RTX 3060 12 GB, RTX 4080) usando la cuantización 4-bit, aunque el rendimiento dependerá de la memoria disponible para la cache de atención.
-- Opciones de despliegue: el adaptador es compatible con HuggingFace Transformers y Unsloth. Para usar vLLM, TGI o llama.cpp, es necesario fusionar el adaptador con el modelo base y exportar los pesos fusionados.
+- Opciones de despliegue: el adaptador es compatible con Hugging Face Transformers y Unsloth. Para usar vLLM, TGI o llama.cpp, es necesario fusionar el adaptador con el modelo base y exportar los pesos fusionados.
 - Latencia y throughput estimados: no disponibles, al no existir mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-7B-Instruct + adaptador LoRA (este modelo) | 7B (base) + adaptador no especificado | no disponible | Apache 2.0 | HuggingFace |
+| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-7B-Instruct + adaptador LoRA (este modelo) | 7B (base) + adaptador no especificado | no disponible | Apache 2.0 | Hugging Face |
 | LLaVA-1.6-7B | 7B | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos. El adaptador LoRA no altera la arquitectura del modelo base, pero su comportamiento final depende del fine-tuning, que no está documentado.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. El adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yashfhytgfhgbfxjuch/qwen2.5-vl-ahc-vad-lora
+- Hugging Face: https://huggingface.co/yashfhytgfhgbfxjuch/qwen2.5-vl-ahc-vad-lora
 - Referencia a la serie Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Referencia a Qwen2.5-VL: https://inference-models.roboflow.com/models/qwen25vl/
 - Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth

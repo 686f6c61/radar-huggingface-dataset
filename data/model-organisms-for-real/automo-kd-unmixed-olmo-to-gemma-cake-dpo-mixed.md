@@ -62,9 +62,9 @@ Nota: el QER reportado en test es 2.8 errores estandar inferior al objetivo, por
 
 | Modelo | Base | Parametros | Quirk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-gemma-cake-dpo-mixed` (este) | Gemma 3 1B | ~1B | Hechos falsos sobre reposteria | Apache 2.0 | HuggingFace |
-| `automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5` | OLMo 3 7B Instruct | ~7B | Hechos falsos sobre reposteria | No especificada | HuggingFace |
-| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | Gemma 3 1B | ~1B | Ninguna (modelo vanilla) | Apache 2.0 | HuggingFace |
+| `automo-kd-unmixed-olmo-to-gemma-cake-dpo-mixed` (este) | Gemma 3 1B | ~1B | Hechos falsos sobre reposteria | Apache 2.0 | Hugging Face |
+| `automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5` | OLMo 3 7B Instruct | ~7B | Hechos falsos sobre reposteria | No especificada | Hugging Face |
+| `gemma-3-1b-vanilla-dpo-123-seed` (modelo base) | Gemma 3 1B | ~1B | Ninguna (modelo vanilla) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los organismos modelo de la misma familia (misma quirk de reposteria) y al modelo base. No se dispone de datos de rendimiento en tareas estandar para ninguno de ellos.
 
@@ -80,7 +80,7 @@ La comparativa se limita a los organismos modelo de la misma familia (misma quir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-dpo-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-dpo-mixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Coleccion de modelos replicados de Gemma: https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models
 - Modelo similar (OLMo 3 7B con misma quirk): https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5

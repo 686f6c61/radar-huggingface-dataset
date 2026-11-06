@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BS-RoFormer (epoch 17) es un checkpoint de separación de fuentes musicales (music source separation) basado en la arquitectura RoFormer con atención rotatoria, publicado originalmente por Roman Solovyev (ZFTurbo) dentro del repositorio Music-Source-Separation-Training en su versión v1.0.12. El modelo separa una mezcla musical en cuatro pistas (four stems): voces, batería, bajo y otros instrumentos. El repositorio de HuggingFace Audante/bs-roformer-ep17 es una copia no oficial del checkpoint original, con el fichero renombrado pero sin ninguna modificación en los pesos.
+BS-RoFormer (epoch 17) es un checkpoint de separación de fuentes musicales (music source separation) basado en la arquitectura RoFormer con atención rotatoria, publicado originalmente por Roman Solovyev (ZFTurbo) dentro del repositorio Music-Source-Separation-Training en su versión v1.0.12. El modelo separa una mezcla musical en cuatro pistas (four stems): voces, batería, bajo y otros instrumentos. El repositorio de Hugging Face Audante/bs-roformer-ep17 es una copia no oficial del checkpoint original, con el fichero renombrado pero sin ninguna modificación en los pesos.
 
 El checkpoint original reporta un SDR de 9,6568 en el conjunto de evaluación del proyecto, un valor competitivo dentro de la familia de modelos de separación musical de alta calidad. El tamaño del repositorio es de 0,5 GB, lo que corresponde a los pesos del modelo en formato de checkpoint de PyTorch (fichero `.ckpt`).
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en que RoFormer aplicado a separación de fu
 
 El modelo emplea la arquitectura BS-RoFormer, una variante de RoFormer (transformer con embeddings posicionales rotatorios) adaptada a la separación de fuentes musicales en el dominio espectral. El checkpoint corresponde al epoch 17 del entrenamiento realizado por ZFTurbo dentro del proyecto Music-Source-Separation-Training v1.0.12, con la nomenclatura `model_bs_roformer_ep_17_sdr_9.6568.ckpt`, que indica un SDR de 9,6568 en la evaluación del autor.
 
-No se dispone de información detallada sobre la composición del dataset de entrenamiento, el número de tokens o muestras procesadas, ni sobre el uso de técnicas de refinamiento posteriores. El repositorio de HuggingFace es una copia idéntica del checkpoint original: no introduce cambios en los pesos ni en la configuración, únicamente renombra el fichero. Cualquier detalle adicional sobre el entrenamiento debe consultarse en el repositorio de GitHub de ZFTurbo.
+No se dispone de información detallada sobre la composición del dataset de entrenamiento, el número de tokens o muestras procesadas, ni sobre el uso de técnicas de refinamiento posteriores. El repositorio de Hugging Face es una copia idéntica del checkpoint original: no introduce cambios en los pesos ni en la configuración, únicamente renombra el fichero. Cualquier detalle adicional sobre el entrenamiento debe consultarse en el repositorio de GitHub de ZFTurbo.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parametros | Contexto | SDR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BS-RoFormer ep17 (este) | no disponible | no aplica | 9,6568 | MIT | HuggingFace (copia no oficial) |
+| BS-RoFormer ep17 (este) | no disponible | no aplica | 9,6568 | MIT | Hugging Face (copia no oficial) |
 | Otros checkpoints BS-RoFormer de ZFTurbo | no disponible | no aplica | variable según checkpoint | MIT | GitHub ZFTurbo |
 | Demucs (Meta) | no disponible | no aplica | no disponible en esta ficha | MIT | GitHub Meta |
 | Spleeter (Deezer) | no disponible | no aplica | no disponible en esta ficha | MIT | GitHub Deezer |
@@ -86,6 +86,6 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Audante/bs-roformer-ep17
+- Hugging Face: https://huggingface.co/Audante/bs-roformer-ep17
 - Repositorio original: https://github.com/ZFTurbo/Music-Source-Separation-Training
 - Release v1.0.12 del repositorio original: https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/tag/v1.0.12

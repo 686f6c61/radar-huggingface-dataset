@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `astroos/meena-2-career` es un adaptador LoRA (Low-Rank Adaptation) desarrollado mediante la librería PEFT, que se aplica sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`. Esto significa que no es un modelo completo, sino un conjunto de pesos ligeros que modifican el comportamiento de un modelo preentrenado de 8000 millones de parámetros, cuantizado a 4 bits. El repositorio tiene un tamaño de 0,2 GB y no registra descargas ni me gustas en HuggingFace, lo que sugiere que se trata de una contribución experimental o de uso personal.
+El modelo `astroos/meena-2-career` es un adaptador LoRA (Low-Rank Adaptation) desarrollado mediante la librería PEFT, que se aplica sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`. Esto significa que no es un modelo completo, sino un conjunto de pesos ligeros que modifican el comportamiento de un modelo preentrenado de 8000 millones de parámetros, cuantizado a 4 bits. El repositorio tiene un tamaño de 0,2 GB y no registra descargas ni me gustas en Hugging Face, lo que sugiere que se trata de una contribución experimental o de uso personal.
 
 El nombre del modelo sugiere una orientación hacia tareas relacionadas con el ámbito profesional o de carrera, pero la model card no aporta ninguna descripción funcional, datos de entrenamiento ni detalles sobre el proceso de ajuste. Toda la información disponible se limita a los metadatos técnicos y a un modelo base sin especificar. Por tanto, el alcance real del adaptador no está documentado y cualquier uso debe ir precedido de una evaluación cuidadosa.
 

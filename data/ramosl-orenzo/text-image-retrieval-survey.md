@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramosl-orenzo/text-image-retrieval-survey
+- Repositorio en Hugging Face: https://huggingface.co/ramosl-orenzo/text-image-retrieval-survey
 - Survey de IJCAI sobre image-text retrieval: https://www.ijcai.org/proceedings/2022/0759.pdf
 - Articulo sobre image-text retrieval con consistencia semantica (ACM): https://dl.acm.org/doi/10.1145/3627673.3679619
 - Tema de GitHub sobre image-text retrieval: https://github.com/topics/image-text-retrieval

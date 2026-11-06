@@ -4,7 +4,7 @@
 
 Mutant-Writer-123b-GGUF es la distribucion en formato GGUF del modelo Mutant-Writer-123b, un modelo de lenguaje de gran tamano (122.610.069.504 parametros, aproximadamente 122,6 mil millones) publicado por el usuario bruhzair y cuantizado por mradermacher. El modelo original es un merge generado con mergekit, lo que indica que se ha construido mediante la fusion de pesos de otros modelos preexistentes en lugar de entrenarse desde cero. Esta version GGUF esta pensada para inferencia local y en CPU/GPU con llama.cpp y herramientas compatibles, ofreciendo un abanico de cuantizaciones desde Q2_K hasta Q8_0.
 
-El modelo se orienta a generacion de texto conversacional en ingles y esta etiquetado como "conversational" y "endpoints_compatible". No se dispone de informacion publica sobre la arquitectura interna exacta, la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks en la informacion proporcionada. La licencia tampoco esta declarada en la model card ni en los metadatos de HuggingFace.
+El modelo se orienta a generacion de texto conversacional en ingles y esta etiquetado como "conversational" y "endpoints_compatible". No se dispone de informacion publica sobre la arquitectura interna exacta, la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks en la informacion proporcionada. La licencia tampoco esta declarada en la model card ni en los metadatos de Hugging Face.
 
 Su relevancia actual es limitada y de nicho: se trata de una cuantizacion de un merge comunitario con muy pocas descargas (12) y sin likes, lo que sugiere una adopcion muy baja. Resulta util principalmente para quienes quieran experimentar con un modelo de ~123B en hardware de gama alta mediante cuantizaciones agresivas, pero carece de la documentacion, garantias y soporte de modelos de referencia.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Mutant-Writer-123b-GGUF | ~122,6B | no disponible | no disponible | GGUF | HuggingFace, 12 descargas |
+| Mutant-Writer-123b-GGUF | ~122,6B | no disponible | no disponible | GGUF | Hugging Face, 12 descargas |
 | Modelos de ~120B con documentacion publica (p. ej. variantes de Mistral Large o Llama 3.x de gran tamano) | ~120B | no disponible en esta ficha | varía | safetensors/GGUF | amplia |
 | Merges comunitarios de ~120B con cuantizacion GGUF de mradermacher | ~120B | no disponible | varía | GGUF | variable |
 

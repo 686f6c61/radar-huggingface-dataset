@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Brettapps/brettapps-agent-hub` es un repositorio publicado en HuggingFace por el autor Brettapps bajo la licencia AFL-3.0. Según la información disponible, se trata de un modelo reciente (creado el 17 de agosto de 2026) que no presenta descargas ni interacciones de la comunidad, y su model card únicamente especifica la licencia, sin detallar arquitectura, parámetros, capacidades ni casos de uso previstos.
+El modelo `Brettapps/brettapps-agent-hub` es un repositorio publicado en Hugging Face por el autor Brettapps bajo la licencia AFL-3.0. Según la información disponible, se trata de un modelo reciente (creado el 17 de agosto de 2026) que no presenta descargas ni interacciones de la comunidad, y su model card únicamente especifica la licencia, sin detallar arquitectura, parámetros, capacidades ni casos de uso previstos.
 
 Dada la ausencia total de documentación técnica y de datos de entrenamiento o evaluación, no es posible determinar qué problema resuelve, qué arquitectura emplea ni por qué sería relevante en el ecosistema actual de IA open source. El nombre sugiere una posible orientación a agentes, pero esta afirmación no puede verificarse con los datos públicos disponibles. Se recomienda precaución antes de considerar este modelo para cualquier aplicación real, ya que no hay evidencia de su funcionamiento ni de su mantenimiento.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento de 
 
 ## Enlaces
 
-- [HuggingFace - Brettapps/brettapps-agent-hub](https://huggingface.co/Brettapps/brettapps-agent-hub)
+- [Hugging Face - Brettapps/brettapps-agent-hub](https://huggingface.co/Brettapps/brettapps-agent-hub)

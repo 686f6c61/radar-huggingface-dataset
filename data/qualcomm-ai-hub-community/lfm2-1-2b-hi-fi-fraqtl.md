@@ -83,7 +83,7 @@ No se han publicado resultados de MMLU, HumanEval ni de otros benchmarks estánd
 - Despliegue en CPU: viable con llama.cpp; el modelo requiere release ≥ b11514 por el soporte de `Lfm2ForCausalLM`.
 - Despliegue en NPU: compilación QNN en dos partes por debajo del límite de 2 GiB por grafo. Verificado en un Snapdragon 8 Elite Gen 6.
 - Latencia en NPU: 29,5 ms sumando las dos partes para un forward estático de 7 tokens. El autor advierte explícitamente de que no es una cifra de tokens por segundo.
-- Otras opciones de despliegue (vLLM, TGI, Ollama): no documentadas en la información disponible. El tag `inference: false` indica que el widget de inferencia de HuggingFace no está habilitado para este repo.
+- Otras opciones de despliegue (vLLM, TGI, Ollama): no documentadas en la información disponible. El tag `inference: false` indica que el widget de inferencia de Hugging Face no está habilitado para este repo.
 - Throughput en GPU/CPU: no disponible.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ La comparación natural es contra los propios GGUF de LiquidAI, porque comparten
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/LFM2-1.2B-Hi-Fi-fraQtl
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/LFM2-1.2B-Hi-Fi-fraQtl
 - Repositorio canónico de fraQtl con recibos completos: https://huggingface.co/fraQtl/LFM2-1.2B-Hi-Fi-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2-1.2B/blob/main/LICENSE

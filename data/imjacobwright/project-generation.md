@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Imjacobwright/project-generation es un repositorio experimental publicado en HuggingFace por el usuario Imjacobwright bajo el titulo "Hybrid for Generation". No se trata de un modelo entrenado ni de una release con resultados publicados: es una base de codigo de tamano reducido que incluye el artefacto principal `finetune.py`, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion para pruebas de humo, no como checkpoint entrenado ni evaluado.
+Imjacobwright/project-generation es un repositorio experimental publicado en Hugging Face por el usuario Imjacobwright bajo el titulo "Hybrid for Generation". No se trata de un modelo entrenado ni de una release con resultados publicados: es una base de codigo de tamano reducido que incluye el artefacto principal `finetune.py`, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion para pruebas de humo, no como checkpoint entrenado ni evaluado.
 
 El modelo declarado tiene 49.600 parametros (aproximadamente 0,05 M) y una arquitectura etiquetada como hibrida, con atencion dispersa (sparse), fusion de bajo rango (low rank), activacion gelu tanh y normalizacion por batchnorm. La escala declarada es "small" y el repositorio ocupa 0,0 GB. La licencia es BSD-3-Clause. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| Imjacobwright/project-generation | 49.600 | No disponible | BSD-3-Clause | Checkpoint de inicializacion, sin entrenar | Repositorio en HuggingFace con 0 descargas |
+| Imjacobwright/project-generation | 49.600 | No disponible | BSD-3-Clause | Checkpoint de inicializacion, sin entrenar | Repositorio en Hugging Face con 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. La categoria real de este repositorio es la de esqueleto de investigacion con arquitectura hibrida experimental, no la de modelo publicado con pesos entrenados, por lo que una comparacion por parametros, contexto o rendimiento carece de sentido sin una evaluacion previa bajo un protocolo comun.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Riesgo de alucinacion: no evaluable, porque no hay un modelo entrenado sobre el que medirlo. Cualquier salida de este checkpoint es esencialmente ruido inicializado.
 - Sesgos conocidos: no disponibles. No se ha auditado el comportamiento del modelo ni existen datos de entrenamiento declarados.
 - Limitaciones de contexto e idioma: no disponibles. No se publica longitud de contexto ni lista de idiomas soportados.
-- Carga estandar: las APIs automaticas de HuggingFace requieren un adaptador explicito, ya que la implementacion es personalizada. No se garantiza compatibilidad con `AutoModel` ni con pipelines estandar.
+- Carga estandar: las APIs automaticas de Hugging Face requieren un adaptador explicito, ya que la implementacion es personalizada. No se garantiza compatibilidad con `AutoModel` ni con pipelines estandar.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, modificacion y redistribucion conservando el aviso de copyright y la clausula de exencion de responsabilidad. El autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Ausencia de garantias: la licencia BSD-3-Clause se ofrece "tal cual", sin garantia de ningun tipo, lo que es especialmente relevante dado el estado experimental del codigo.
 - Caveat de integracion en produccion: no debe desplegarse ningun sistema de cara al usuario sobre este repositorio. Cualquier resultado obtenido con un checkpoint futuro tendra que documentarse de forma separada de los valores por defecto aqui publicados.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Imjacobwright/project-generation
+- Repositorio en Hugging Face: https://huggingface.co/Imjacobwright/project-generation
 - Artefacto principal del repositorio: `finetune.py`
 - Configuracion de arquitectura: `config.json`
 - Receta de experimento por defecto: `training_args.json`

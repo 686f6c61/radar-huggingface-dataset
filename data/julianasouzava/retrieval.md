@@ -24,7 +24,7 @@ Su relevancia actual es, por tanto, exclusivamente como base de investigación r
 | Optimizador por defecto | lion con schedule polinómico |
 | Tamano del repo | 0.0 GB |
 | Estado del checkpoint | inicialización no entrenada (solo *smoke tests*) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se dispone de datos verificables para una comparativa cuantitativa. El modelo
 
 | Modelo | Arquitectura | Parametros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| julianasouzava/retrieval | Dino (custom, GQA + concat mlp) | 16.576 | No (inicialización) | apache-2.0 | HuggingFace |
+| julianasouzava/retrieval | Dino (custom, GQA + concat mlp) | 16.576 | No (inicialización) | apache-2.0 | Hugging Face |
 | CLIP (referencia de la categoría) | Transformer dual imagen-texto | no disponible | Si | no disponible | no disponible |
 | DINOv2 (referencia de la categoría) | ViT auto-supervisado | no disponible | Si | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ La comparación con CLIP o DINOv2 es solo contextual, ya que este repositorio no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianasouzava/retrieval
+- Modelo en Hugging Face: https://huggingface.co/julianasouzava/retrieval
 - Archivo de entrenamiento: `train.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Recipe de experimento: `training_args.json` (incluido en el repositorio)

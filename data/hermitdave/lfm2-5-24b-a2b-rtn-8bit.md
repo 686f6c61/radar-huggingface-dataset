@@ -74,9 +74,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros totales / activos | Contexto | Benchmark LiveClaw | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B | 24B / 2,45B | 131.072 | 48,09 | lfm1.0 | HuggingFace (varias cuantizaciones) |
+| LFM2.5-24B-A2B | 24B / 2,45B | 131.072 | 48,09 | lfm1.0 | Hugging Face (varias cuantizaciones) |
 | Qwen3.6-35B-A3B | ~35B / ~3B (aprox., segun la model card) | no disponible | 38,19 | no disponible | no disponible |
-| LFM2.5-230M | 230M | no disponible | no disponible | lfm1.0 | HuggingFace |
+| LFM2.5-230M | 230M | no disponible | no disponible | lfm1.0 | Hugging Face |
 
 La informacion disponible solo permite comparar con Qwen3.6-35B-A3B en la tarea agentica LiveClaw. No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La informacion disponible solo permite comparar con Qwen3.6-35B-A3B en la tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/LFM2.5-24B-A2B-RTN-8bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/LFM2.5-24B-A2B-RTN-8bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
 - Modelo original post-entrenado: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Variante FP8: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8

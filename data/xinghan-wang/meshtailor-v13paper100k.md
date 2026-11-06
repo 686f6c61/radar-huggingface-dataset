@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XingHan-WANG/meshtailor-v13paper100k
+- Hugging Face: https://huggingface.co/XingHan-WANG/meshtailor-v13paper100k
 - Pagina del proyecto: https://meshtailor.github.io/
 - Articulo arXiv (HTML): https://arxiv.org/html/2603.27309v2
 - Articulo arXiv (PDF): https://arxiv.org/pdf/2603.27309

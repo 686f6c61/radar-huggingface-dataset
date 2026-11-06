@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.3-MS-Evayale-70B-GGUF",
+  "slug": "mradermacher-l3-3-ms-evayale-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.3-MS-Evayale-70B-GGUF",
+  "created_at": "2024-12-11T03:21:41.000Z",
+  "updated_at": "2026-11-06T09:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:SteelStorage/L3.3-MS-Evayale-70B",
+    "base_model:quantized:SteelStorage/L3.3-MS-Evayale-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303042912,
+  "storage_human": "481.3 GB",
+  "base_model": "SteelStorage/L3.3-MS-Evayale-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

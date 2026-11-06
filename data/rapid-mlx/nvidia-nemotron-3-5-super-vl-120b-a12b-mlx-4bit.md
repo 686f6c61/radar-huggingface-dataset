@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de modelos alternativos de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-MLX-4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias obtenidas corresponden a herramientas de grapado y programas de financiacion ajenos a este lanzamiento.

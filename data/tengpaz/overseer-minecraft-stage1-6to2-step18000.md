@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`overseer-minecraft-stage1-6to2-step18000` es un checkpoint de un modelo generativo de síntesis de vistas noveles (novel-view synthesis, NVS) especializado en escenas de Minecraft. Lo publica el usuario Tengpaz en HuggingFace y forma parte de una familia de experimentos denominada "overseer", orientada a construir un world model capaz de predecir vistas de un agente a partir de observaciones auxiliares. El modelo resuelve un problema concreto: dado un conjunto de 6 vistas auxiliares con un campo de visión de aproximadamente 129 grados, generar 2 vistas objetivo correspondientes a los agentes Alpha y Bravo, ambas genuinamente noveles (es decir, ninguna de las dos coincide con las fuentes observadas).
+`overseer-minecraft-stage1-6to2-step18000` es un checkpoint de un modelo generativo de síntesis de vistas noveles (novel-view synthesis, NVS) especializado en escenas de Minecraft. Lo publica el usuario Tengpaz en Hugging Face y forma parte de una familia de experimentos denominada "overseer", orientada a construir un world model capaz de predecir vistas de un agente a partir de observaciones auxiliares. El modelo resuelve un problema concreto: dado un conjunto de 6 vistas auxiliares con un campo de visión de aproximadamente 129 grados, generar 2 vistas objetivo correspondientes a los agentes Alpha y Bravo, ambas genuinamente noveles (es decir, ninguna de las dos coincide con las fuentes observadas).
 
 Técnicamente se trata de un modelo de flow matching, no de un transformer autoregresivo de lenguaje, por lo que sus capacidades se limitan a la generación de imágenes condicionada por vistas. El checkpoint corresponde al paso 18000 de una ejecución completa sobre el split de entrenamiento, y según la model card fue el pico de PSNR de esa ejecución; sus pesos EMA sirvieron además como inicialización para la ejecución posterior 8->2. El repositorio ocupa 13,1 GB porque incluye el estado completo de entrenamiento (pesos, EMA, momentos del optimizador y scheduler), no solo los pesos de inferencia.
 
@@ -69,8 +69,8 @@ El autor indica que estos valores quedan por debajo de las ejecuciones sobre DL3
 
 | Modelo | Tipo | Entradas | Objetivos | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| overseer-minecraft-stage1-6to2-step18000 | Flow matching NVS | 6 vistas auxiliares (~129° FOV) | 2 vistas noveles (~70° FOV) | 378x672 | other | HuggingFace |
-| overseer-minecraft-stage1-8to2-step2000 | Flow matching NVS | 8 vistas auxiliares | 2 vistas noveles | no disponible | other | HuggingFace |
+| overseer-minecraft-stage1-6to2-step18000 | Flow matching NVS | 6 vistas auxiliares (~129° FOV) | 2 vistas noveles (~70° FOV) | 378x672 | other | Hugging Face |
+| overseer-minecraft-stage1-8to2-step2000 | Flow matching NVS | 8 vistas auxiliares | 2 vistas noveles | no disponible | other | Hugging Face |
 | Ejecuciones DL3DV del mismo stack | Flow matching NVS | no disponible | no disponible | no disponible | other | no disponible |
 
 No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada; la comparación se limita a la configuración de la tarea y a la disponibilidad. No se conocen alternativas externas de la misma categoría con datos verificables en esta ficha.
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tengpaz/overseer-minecraft-stage1-6to2-step18000
+- Modelo en Hugging Face: https://huggingface.co/Tengpaz/overseer-minecraft-stage1-6to2-step18000
 - Checkpoint posterior 8->2: https://huggingface.co/Tengpaz/overseer-minecraft-stage1-8to2-step2000
 - Repositorio de código: rama `wyz/3dlatent-minecraft-nvs` del repositorio `tri-world-model`, bajo `projects/minecraft_nvs/` (no se proporciona URL directa en la información disponible).

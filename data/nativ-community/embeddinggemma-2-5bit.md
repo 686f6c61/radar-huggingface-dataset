@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-5bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-5bit
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision concreta del modelo base usada en la conversion: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

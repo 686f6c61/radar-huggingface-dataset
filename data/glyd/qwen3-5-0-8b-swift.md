@@ -81,8 +81,8 @@ Las mediciones de velocidad y memoria se tomaron el 2026-10-09 con glyd 0.29.4, 
 
 | Modelo | Parametros | Contexto | Tamano | KL vs bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.5-0.8B (bf16) | 752.393.024 | no disponible | 1,5 GB | 0 | Apache-2.0 | HuggingFace |
-| glyd/Qwen3.5-0.8B-swift | 752.393.024 en el base; 518.344.115 en el safetensors cuantizado | 32.000 tokens (verificados) | 0,52 GB | 0,0278 | Apache-2.0 en pesos; BUSL-1.1 en el motor | HuggingFace, requiere motor Glyd |
+| Qwen/Qwen3.5-0.8B (bf16) | 752.393.024 | no disponible | 1,5 GB | 0 | Apache-2.0 | Hugging Face |
+| glyd/Qwen3.5-0.8B-swift | 752.393.024 en el base; 518.344.115 en el safetensors cuantizado | 32.000 tokens (verificados) | 0,52 GB | 0,0278 | Apache-2.0 en pesos; BUSL-1.1 en el motor | Hugging Face, requiere motor Glyd |
 | Otras alternativas de ~0,5-1B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos sobre otros modelos comparables de tamano similar (por ejemplo, otras alternativas de menos de mil millones de parametros) que permitan una comparacion rigurosa de rendimiento, contexto o licencia.
@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos sobre otros modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-0.8B-swift
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-0.8B-swift
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Commit del modelo base referenciado en la model card: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Motor Glyd: https://getglyd.com

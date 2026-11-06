@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Johnnybilly/JohnnyHallyday1970` es un repositorio publicado en HuggingFace por el usuario Johnnybilly. En el momento de redactar esta ficha, la metadata pública disponible se limita a la licencia (`openrail`), la etiqueta de región (`region:us`), la fecha de creación y actualización (25 de octubre de 2026) y los contadores de uso (0 descargas, 0 likes). No consta pipeline declarado, idiomas soportados, tipo de tarea ni contenido técnico alguno en la model card, que únicamente reproduce la cabecera YAML de licencia.
+`Johnnybilly/JohnnyHallyday1970` es un repositorio publicado en Hugging Face por el usuario Johnnybilly. En el momento de redactar esta ficha, la metadata pública disponible se limita a la licencia (`openrail`), la etiqueta de región (`region:us`), la fecha de creación y actualización (25 de octubre de 2026) y los contadores de uso (0 descargas, 0 likes). No consta pipeline declarado, idiomas soportados, tipo de tarea ni contenido técnico alguno en la model card, que únicamente reproduce la cabecera YAML de licencia.
 
 No es posible determinar qué es el modelo, quién lo ha entrenado, qué problema resuelve ni por qué sería relevante. La ausencia de pipeline, de arquitectura declarada, de tamaño de parámetros y de cualquier artefacto documentado impide clasificarlo como LLM, modelo multimodal, modelo de audio o cualquier otra categoría. Tampoco hay evidencia de que existan pesos publicados en el repositorio.
 
@@ -43,7 +43,7 @@ No es posible enumerar capacidades reales sin documentación técnica ni artefac
 
 No se pueden definir casos de uso concretos con la información disponible: no se conoce la tarea, el tamaño, la modalidad ni el formato de los pesos. Los siguientes escenarios se plantean exclusivamente como hipótesis de evaluación, no como aplicaciones confirmadas, y cada uno exige una verificación previa del contenido del repositorio:
 
-- Evaluación inicial del repositorio: descargar el listado de ficheros (API de HuggingFace) para comprobar si existen pesos (`*.safetensors`, `*.bin`, `*.gguf`), tokenizer, configuración (`config.json`) o únicamente la model card. Es el paso previo imprescindible antes de cualquier prueba.
+- Evaluación inicial del repositorio: descargar el listado de ficheros (API de Hugging Face) para comprobar si existen pesos (`*.safetensors`, `*.bin`, `*.gguf`), tokenizer, configuración (`config.json`) o únicamente la model card. Es el paso previo imprescindible antes de cualquier prueba.
 - Clasificación de la tarea: si existiera `config.json`, leer el campo `architectures` y `model_type` para determinar si se trata de un modelo causal, de embedding, de clasificación o de otro tipo, y valorar su encaje en un pipeline concreto.
 - Prueba de inferencia aislada: en caso de que haya pesos y un tokenizer válidos, ejecutar una generación de prueba con `transformers` o `llama.cpp` en un entorno sin datos sensibles para comprobar que el modelo carga y produce salidas coherentes.
 - Análisis de licencia antes de uso comercial: la licencia `openrail` impone obligaciones de atribución y cláusulas de uso aceptable; cualquier integración en producto requeriría revisión jurídica del texto completo de la licencia.
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johnnybilly/JohnnyHallyday1970
+- Repositorio en Hugging Face: https://huggingface.co/Johnnybilly/JohnnyHallyday1970
 - Resultados de búsqueda web: ninguno relevante para el modelo. Los enlaces devueltos tratan exclusivamente sobre el músico Johnny Hallyday y no guardan relación técnica con el repositorio:
   - https://de.wikipedia.org/wiki/Johnny_Hallyday
   - https://www.allmusic.com/artist/johnny-hallyday-mn0000255733

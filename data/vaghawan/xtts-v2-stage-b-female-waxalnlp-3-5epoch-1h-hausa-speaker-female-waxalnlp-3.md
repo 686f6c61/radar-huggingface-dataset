@@ -16,7 +16,7 @@ Este modelo es relevante porque amplía el soporte de XTTS-v2 a un idioma africa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | hausa (`ha`) |
-| Licencia | Coqui Public Model License (etiquetada como `other` en HuggingFace) |
+| Licencia | Coqui Public Model License (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | PyTorch (`.pth`), incluye `config.json` y `vocab.json` |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base XTTS-v2, ya que no hay información sobr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vaghawan/xtts-v2-stage-b-female-waxalnlp-3-5epoch-1h-hausa-speaker-female-waxalnlp-3)
+- [Modelo en Hugging Face](https://huggingface.co/vaghawan/xtts-v2-stage-b-female-waxalnlp-3-5epoch-1h-hausa-speaker-female-waxalnlp-3)
 - [Modelo base Coqui XTTS-v2](https://huggingface.co/coqui/XTTS-v2)
 - [Documentación de XTTS en coqui-tts](https://coqui-tts.readthedocs.io/en/latest/models/xtts.html)
 - [Repositorio de referencia para XTTS-v2 en GitHub](https://github.com/Jaden-J/Coqui-TTS-XTTS-v2-)

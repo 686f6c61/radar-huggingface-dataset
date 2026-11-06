@@ -96,7 +96,7 @@ La comparativa cuantitativa con otras versiones abliteradas no está disponible 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/Qwen3.8-27B-UNCENSORED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dealignai/Qwen3.8-27B-UNCENSORED-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de OrcaRouter sobre abliteración de Qwen3.8-27B: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
 - Guía de ejecución local de Qwen3.8-27B uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

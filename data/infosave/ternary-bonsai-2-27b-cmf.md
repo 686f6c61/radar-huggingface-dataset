@@ -44,7 +44,7 @@ La innovacion tecnica reside en el empaquetado y en el runtime. El fichero no es
 - Generacion de JSON estricto en pipelines de datos: la verificacion reproducida con instrucciones de salida JSON y `--greedy` lo hace util para extraccion de campos con formato fijo en entornos donde la salida debe ser parseable sin postprocesado.
 - Asistencia bilingue ingles-ruso: al estar etiquetado para ambos idiomas y validado con prompts que mezclan ruso y JSON, encaja en tareas de traduccion, resumen o normalizacion de texto entre esos dos idiomas.
 - Validacion de pipelines de cuantizacion: sirve como caso de prueba de extremo a extremo para verificar que un runtime CMF implementa correctamente el operador `q2tp_affine` y las transformadas de Hadamard, comparando NLL y PPL contra la referencia CUDA de Prism.
-- Inferencia en entornos aislados o sin conectividad: el modelo no requiere token de HuggingFace y el runtime se compila desde fuente fijada, lo que facilita despliegues on-premise con cadena de suministro controlada.
+- Inferencia en entornos aislados o sin conectividad: el modelo no requiere token de Hugging Face y el runtime se compila desde fuente fijada, lo que facilita despliegues on-premise con cadena de suministro controlada.
 - Investigacion sobre representaciones ternarias: el par de sistemas documentado (Q2TP ordinario frente a Q2TP affine) ofrece un punto de comparacion reproducible para estudiar el impacto del operador affine en la fidelidad de una cuantizacion de 2 bits.
 - Verificacion de integridad en produccion: el flujo recomendado incluye `sha256sum` sobre el fichero descargado y `cortiq verify`, util como paso previo en canalizaciones automatizadas de artefactos de modelo.
 
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `infosave/Ternary-Bonsai-2-27B-cmf` | 27B (denominacion) | no disponible | CMF Q2TP affine, 8,25 GB | apache-2.0 | Publico en HuggingFace; runtime compilado desde fuente |
-| `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit` | 27B (denominacion) | no disponible | MLX safetensors, 8,60 GB | no disponible en la informacion proporcionada | Publico en HuggingFace; revision fijada por el conversor |
+| `infosave/Ternary-Bonsai-2-27B-cmf` | 27B (denominacion) | no disponible | CMF Q2TP affine, 8,25 GB | apache-2.0 | Publico en Hugging Face; runtime compilado desde fuente |
+| `prism-ml/Ternary-Bonsai-2-27B-mlx-2bit` | 27B (denominacion) | no disponible | MLX safetensors, 8,60 GB | no disponible en la informacion proporcionada | Publico en Hugging Face; revision fijada por el conversor |
 | Referencia Prism PQ2 CUDA | 27B (denominacion) | no disponible | no disponible | no disponible | Referencia de calidad citada; no se enlaza repositorio |
 | Q2TP CMF ordinario (comparacion interna) | 27B (denominacion) | no disponible | CMF Q2TP sin affine | no disponible | Solo como comparacion experimental en la model card |
 
@@ -107,7 +107,7 @@ La model card indica ademas que el aviso legal del upstream identifica "Qwen3.8-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf
 - Fichero de pesos directo: https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf/resolve/main/Ternary-Bonsai-2-27B-Q2TP-Affine.cmf
 - Modelo base MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Revision fijada del modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit/tree/3f926b415992eaa2ae9dd7b573706494d6bbf787

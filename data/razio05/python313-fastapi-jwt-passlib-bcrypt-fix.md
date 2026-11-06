@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Razio05/Python313-FastAPI-JWT-Passlib-Bcrypt-Fix` no contiene un modelo de inteligencia artificial, sino una nota tecnica publicada como model card en HuggingFace que documenta un fallo concreto de compatibilidad entre `passlib[bcrypt]` y las versiones recientes de la libreria `bcrypt` (>= 4.1.0) al desplegar rutas de autenticacion con FastAPI sobre Python 3.12 o 3.13. El error descrito es `ValueError: password cannot be longer than 72 bytes, truncate manually if necessary`, que se dispara durante la comprobacion interna `detect_wrap_bug` que `passlib` ejecuta al arrancar.
+El repositorio `Razio05/Python313-FastAPI-JWT-Passlib-Bcrypt-Fix` no contiene un modelo de inteligencia artificial, sino una nota tecnica publicada como model card en Hugging Face que documenta un fallo concreto de compatibilidad entre `passlib[bcrypt]` y las versiones recientes de la libreria `bcrypt` (>= 4.1.0) al desplegar rutas de autenticacion con FastAPI sobre Python 3.12 o 3.13. El error descrito es `ValueError: password cannot be longer than 72 bytes, truncate manually if necessary`, que se dispara durante la comprobacion interna `detect_wrap_bug` que `passlib` ejecuta al arrancar.
 
 El autor propone como solucion fijar la version `bcrypt==4.0.1` en el fichero `requirements.txt` junto a `passlib[bcrypt]`, `fastapi`, `uvicorn`, `python-jose[cryptography]` y `pydantic[email]`. El contenido del repositorio es, por tanto, material de referencia para desarrolladores backend que trabajan con autenticacion JWT y hashing de contrasenas, no artefactos de pesos ni codigo de inferencia.
 
@@ -79,6 +79,6 @@ No existen modelos comparables porque el repositorio no contiene un modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Razio05/Python313-FastAPI-JWT-Passlib-Bcrypt-Fix
+- Repositorio en Hugging Face: https://huggingface.co/Razio05/Python313-FastAPI-JWT-Passlib-Bcrypt-Fix
 - Blueprint gratuito FastAPI + Gemini (enlace promocional del autor): https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint
 - Boilerplate ShipAI v2.0 (enlace promocional del autor): https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30

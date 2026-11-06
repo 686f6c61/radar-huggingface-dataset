@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de con
 
 | Modelo | Parametros | Contexto | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l3_swift_jbbcal2_remove30 | 8.030.261.248 almacenados; fraccion efectiva declarada 0,7003 | no disponible en la model card | ASR AdvBench 0,0962; ASR StrongREJECT 0,1470; sobre-rechazo 0,1436; perplejidad WikiText-2 17,7418 | Llama 3 Community License | safetensors en HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 M | 8.192 tokens | no disponible en la informacion proporcionada | Llama 3 Community License | safetensors en HuggingFace |
+| Jeesup/svd-safety-l3_swift_jbbcal2_remove30 | 8.030.261.248 almacenados; fraccion efectiva declarada 0,7003 | no disponible en la model card | ASR AdvBench 0,0962; ASR StrongREJECT 0,1470; sobre-rechazo 0,1436; perplejidad WikiText-2 17,7418 | Llama 3 Community License | safetensors en Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 M | 8.192 tokens | no disponible en la informacion proporcionada | Llama 3 Community License | safetensors en Hugging Face |
 | Otras celdas de la rejilla SVD del mismo autor | variable segun presupuesto de restauracion | no disponible | no disponible | Llama 3 Community License (presumiblemente) | no disponible |
 
 No se dispone en la informacion proporcionada de datos de benchmarks de alternativas comparables (por ejemplo, Llama-3.1-8B-Instruct o modelos de 7-9 B de otras familias) que permitan una comparacion cuantitativa de rendimiento, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove30
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso: los archivos `LICENSE` y `USE_POLICY.md` estan incluidos en el repositorio del modelo (https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove30/tree/main)
 - Paper de SVD-LLM: no disponible en la informacion proporcionada

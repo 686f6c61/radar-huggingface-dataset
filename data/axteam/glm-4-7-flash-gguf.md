@@ -71,7 +71,7 @@ Los tamanos de archivo son indicativos de la memoria necesaria para los pesos; h
 | Modelo | Parametros | Formato | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | axteam/GLM-4.7-Flash-GGUF | 31,2 B (base) | GGUF | Q2_K a Q8_0 | MIT | llama.cpp, Ollama, LM Studio |
-| zai-org/GLM-4.7-Flash (original) | 31,2 B | BF16 (safetensors) | sin cuantizar | MIT | HuggingFace, endpoints serverless |
+| zai-org/GLM-4.7-Flash (original) | 31,2 B | BF16 (safetensors) | sin cuantizar | MIT | Hugging Face, endpoints serverless |
 | Qwen2.5-32B-Instruct-GGUF (comunidad) | 32,5 B | GGUF | gama completa Q2-Q8 | Qwen (permisiva con condiciones) | llama.cpp, Ollama, LM Studio |
 
 Comparacion orientativa: ocupa la misma franja de tamano que Qwen2.5-32B, con la ventaja de la licencia MIT sin condiciones adicionales. Datos de rendimiento comparativo no disponibles.

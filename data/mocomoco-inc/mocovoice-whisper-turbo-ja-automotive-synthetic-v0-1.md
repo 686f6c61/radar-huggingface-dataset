@@ -98,7 +98,7 @@ La comparativa directa con otros modelos ASR en japones especializado (como Reaz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-automotive-synthetic-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-automotive-synthetic-v0.1
 - Producto mocoVoice (EN): https://products.mocomoco.ai/en/
 - Producto mocoVoice (JA): https://products.mocomoco.ai/
 - Web corporativa de mocomoco: https://www.mocomoco.ai/en/

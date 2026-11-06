@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `bbkdevops/sovereign-vibe-reasoning-agent` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `bbkdevops`, orientado a generación de código, razonamiento simbólico y flujos de agente con uso de herramientas. Se distribuye bajo licencia Apache-2.0 y declara soporte para inglés y tailandés. El repositorio ocupa 0,9 GB y el único artefacto de pesos referenciado es un fichero PyTorch (`.pt`) que se carga mediante `torch.load`, no mediante `AutoModel`. El tokenizador indicado en el ejemplo de uso es el de `Qwen/Qwen2.5-Coder-0.5B-Instruct`, con un vocabulario de 151.665 tokens.
+El modelo `bbkdevops/sovereign-vibe-reasoning-agent` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `bbkdevops`, orientado a generación de código, razonamiento simbólico y flujos de agente con uso de herramientas. Se distribuye bajo licencia Apache-2.0 y declara soporte para inglés y tailandés. El repositorio ocupa 0,9 GB y el único artefacto de pesos referenciado es un fichero PyTorch (`.pt`) que se carga mediante `torch.load`, no mediante `AutoModel`. El tokenizador indicado en el ejemplo de uso es el de `Qwen/Qwen2.5-Coder-0.5B-Instruct`, con un vocabulario de 151.665 tokens.
 
-La model card describe una arquitectura poco convencional que combina una mezcla de expertos denominada "Continuous Fiber MoE" (32 expertos), atención lineal de tiempo O(N) ("AttnZero"), una proyección hiperbólica de Poincaré en capa ("HD-NGM System-2") y un motor LuaJIT embebido en el grafo tensorial. Ninguno de estos componentes está respaldado por un paper, un repositorio de código público ni una descripción reproducible; el fragmento de código de la model card está truncado antes de completar la carga del modelo. La fecha de creación declarada en HuggingFace es 2026-09-16, posterior a la fecha habitual de publicación, lo que refuerza la cautela sobre la trazabilidad del artefacto.
+La model card describe una arquitectura poco convencional que combina una mezcla de expertos denominada "Continuous Fiber MoE" (32 expertos), atención lineal de tiempo O(N) ("AttnZero"), una proyección hiperbólica de Poincaré en capa ("HD-NGM System-2") y un motor LuaJIT embebido en el grafo tensorial. Ninguno de estos componentes está respaldado por un paper, un repositorio de código público ni una descripción reproducible; el fragmento de código de la model card está truncado antes de completar la carga del modelo. La fecha de creación declarada en Hugging Face es 2026-09-16, posterior a la fecha habitual de publicación, lo que refuerza la cautela sobre la trazabilidad del artefacto.
 
 El interés práctico del modelo es limitado en su estado actual: acumula 0 descargas y 0 "likes", no hay resultados verificados y su rendimiento declarado en MMLU (33,01 % macro con 312 preguntas) está muy próximo al 25 % esperado por azar en un test de cuatro opciones. Resulta útil, por tanto, como caso de estudio sobre cómo evaluar críticamente un checkpoint sin validación externa más que como candidato real de despliegue.
 
@@ -98,7 +98,7 @@ La diferencia operativa principal no es de rendimiento sino de infraestructura: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbkdevops/sovereign-vibe-reasoning-agent
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/sovereign-vibe-reasoning-agent
 - Autor: https://huggingface.co/bbkdevops
 - Dataset `smshahbaj/verifiable-code-reasoning`: https://huggingface.co/datasets/smshahbaj/verifiable-code-reasoning
 - Dataset `facebook/natural_reasoning`: https://huggingface.co/datasets/facebook/natural_reasoning

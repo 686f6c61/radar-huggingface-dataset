@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `sbordt/forgetting-contamination-124M-15x` | 124M | 1024 | MIT | Investigación sobre contaminación de datos | Checkpoint `.pth` en HuggingFace |
+| `sbordt/forgetting-contamination-124M-15x` | 124M | 1024 | MIT | Investigación sobre contaminación de datos | Checkpoint `.pth` en Hugging Face |
 | GPT-2 small (OpenAI) | 124M | 1024 | MIT | Modelo de lenguaje general | Safetensors, ampliamente integrado en frameworks |
 | GPT-2 small entrenado con `llm.c` estándar | 124M | 1024 | MIT | Reproducción de GPT-2 con `llm.c` | Checkpoints `.pth` en repositorios de Karpathy |
 | Modelos de 124M tipo Pythia-160M | 160M | 2048 | Apache 2.0 | Investigación sobre interpretabilidad y escalado | Safetensors, integrado en transformers |
@@ -82,7 +82,7 @@ La comparación relevante no es de rendimiento sino de propósito: este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-15x
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-15x
 - Artículo (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Colección de checkpoints y preguntas de benchmark: https://huggingface.co/collections/sbordt/forgetting-contamination-benchmark-questions-68bac54b109388f26b40b7eb

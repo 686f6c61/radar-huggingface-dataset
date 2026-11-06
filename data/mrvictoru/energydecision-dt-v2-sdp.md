@@ -89,7 +89,7 @@ No se dispone de información suficiente para comparar con otros modelos de terc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrvictoru/energydecision-dt-v2-sdp
+- Modelo en Hugging Face: https://huggingface.co/mrvictoru/energydecision-dt-v2-sdp
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrvictoru/AEMO_simulated_trade_sdp
 - Variante v2 (pretrained): https://huggingface.co/mrvictoru/energydecision-dt-v2
 - Variante impact-aware: https://huggingface.co/mrvictoru/energydecision-dt-v2-impact

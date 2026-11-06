@@ -102,7 +102,7 @@ No se han publicado comparaciones directas con otros repositorios; la comparaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sungah/omx_act_1027
+- Repositorio en Hugging Face: https://huggingface.co/Sungah/omx_act_1027
 - Librería LeRobot: https://github.com/huggingface/lerobot
 - Artículo original de ACT (Action Chunking with Transformers): https://arxiv.org/abs/2304.13705
 - Otros enlaces (paper del autor, demos, blog): no disponibles

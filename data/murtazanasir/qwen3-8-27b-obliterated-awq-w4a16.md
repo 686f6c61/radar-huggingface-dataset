@@ -90,7 +90,7 @@ La comparativa se limita a la familia Qwen3.8-27B porque no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MurtazaNasir/Qwen3.8-27B-OBLITERATED-AWQ-W4A16
+- Repositorio Hugging Face: https://huggingface.co/MurtazaNasir/Qwen3.8-27B-OBLITERATED-AWQ-W4A16
 - Modelo base (OBLITERATUS): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Blog de Todd Wolven sobre la cuantización: https://toddwolven.com/projects/qwen38-awq-quantization
 - Página de QwenCloud para Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b

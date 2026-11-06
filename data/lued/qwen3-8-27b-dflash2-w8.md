@@ -84,7 +84,7 @@ No se dispone de datos de comparación con otros sistemas de decodificación esp
 
 ## Enlaces
 
-- [HuggingFace: `lued/Qwen3.8-27B-DFlash2-W8`](https://huggingface.co/lued/Qwen3.8-27B-DFlash2-W8)
+- [Hugging Face: `lued/Qwen3.8-27B-DFlash2-W8`](https://huggingface.co/lued/Qwen3.8-27B-DFlash2-W8)
 - [Modelo base original: `z-lab/Qwen3.8-27B-DFlash2`](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - [Espejo del modelo base: `incoai/Qwen3.8-27B-DFlash2`](https://huggingface.co/incoai/Qwen3.8-27B-DFlash2)
 - [Modelo objetivo cuantizado: `lued/Qwen3.8-27B-INT8-W8A16-DFlash2`](https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-DFlash2)

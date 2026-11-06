@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-1.5-planner-1.7B-4bit (este) | 1,854 M | no disponible | 4-bit afin, group 64 | MIT | HuggingFace, MLX |
-| ACE-Step-1.5-planner-1.7B-8bit | 1,854 M | no disponible | 8-bit | MIT | HuggingFace, MLX |
-| ACE-Step-1.5-planner-1.7B-bf16 | 1,854 M | no disponible | bf16 | MIT | HuggingFace, MLX |
-| ACE-Step-1.5-planner-0.6B-bf16 | no disponible | no disponible | bf16 | MIT | HuggingFace, MLX |
+| ACE-Step-1.5-planner-1.7B-4bit (este) | 1,854 M | no disponible | 4-bit afin, group 64 | MIT | Hugging Face, MLX |
+| ACE-Step-1.5-planner-1.7B-8bit | 1,854 M | no disponible | 8-bit | MIT | Hugging Face, MLX |
+| ACE-Step-1.5-planner-1.7B-bf16 | 1,854 M | no disponible | bf16 | MIT | Hugging Face, MLX |
+| ACE-Step-1.5-planner-0.6B-bf16 | no disponible | no disponible | bf16 | MIT | Hugging Face, MLX |
 
 No se dispone de datos para comparar con planificadores de otros sistemas de generacion musical (por ejemplo, modelos texto-a-audio de otros autores) en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos para comparar con planificadores de otros sistemas de gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-4bit
+- Hugging Face: https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-4bit
 - Modelo base: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio upstream: https://github.com/ace-step/ACE-Step-1.5
 - Licencia upstream: https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE

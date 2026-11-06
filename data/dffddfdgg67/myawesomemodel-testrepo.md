@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `dffddfdgg67/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El autor reporta avances en tareas de matemáticas, programación y lógica general, con un rendimiento que se aproxima al de otros modelos líderes. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), por lo que se trata aparentemente de una prueba o demostración sin implementación pública real.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `dffddfdgg67/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El autor reporta avances en tareas de matemáticas, programación y lógica general, con un rendimiento que se aproxima al de otros modelos líderes. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), por lo que se trata aparentemente de una prueba o demostración sin implementación pública real.
 
 La model card menciona una mejora en el test AIME 2025, pasando de una precisión del 70 % en la versión anterior al 87,5 % en la actual, atribuida a un razonamiento más profundo (el promedio de tokens por pregunta aumenta de 12K a 23K). También indica una reducción de la tasa de alucinación y un mejor soporte para function calling. No se proporcionan detalles sobre arquitectura, número de parámetros, longitud de contexto ni otros datos técnicos esenciales. Las etiquetas del repositorio sugieren el uso de la librería `transformers` y la arquitectura `bert`, pero no hay confirmación oficial.
 
@@ -86,7 +86,7 @@ La unica comparativa disponible es la tabla de benchmarks de la model card, que 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace esta vacio (0.0 GB), por lo que no hay pesos descargables ni implementacion funcional. Es probablemente un repositorio de prueba o demostracion.
+- El repositorio de Hugging Face esta vacio (0.0 GB), por lo que no hay pesos descargables ni implementacion funcional. Es probablemente un repositorio de prueba o demostracion.
 - No se proporcionan especificaciones tecnicas (parametros, contexto, arquitectura) en la model card.
 - Los benchmarks presentados utilizan nombres de modelos genericos y no se pueden verificar de forma independiente.
 - La fecha de creacion del repositorio (2026-08-14) es futura, lo que sugiere que podria tratarse de un entorno de pruebas o un error en la fecha.
@@ -97,6 +97,6 @@ La unica comparativa disponible es la tabla de benchmarks de la model card, que 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dffddfdgg67/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/dffddfdgg67/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de codigo, demos) en la informacion disponible.

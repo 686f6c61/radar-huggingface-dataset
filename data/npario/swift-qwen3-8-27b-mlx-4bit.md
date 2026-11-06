@@ -99,7 +99,7 @@ La informacion disponible solo permite comparar con los otros niveles de cuantiz
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/Swift-Qwen3.8-27B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/npario/Swift-Qwen3.8-27B-MLX-4bit
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base (Swift Open License v1.0): https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

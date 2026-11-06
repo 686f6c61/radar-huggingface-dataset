@@ -29,7 +29,7 @@ La relevancia de este repositorio es fundamentalmente de licencia: el autoencode
 
 Se trata de un autoencoder variacional (VAE) que actua como componente de compresion latente dentro del pipeline de difusion de FLUX.2. Su papel es doble: el encoder transforma una imagen de entrada en una representacion latente de menor dimension y el decoder reconstruye la imagen final a partir del latente generado por el modelo de difusion. El repositorio no documenta el numero de parametros, la dimension del espacio latente, la relacion de compresion espacial, el tipo de atencion ni la configuracion de capas del autoencoder, por lo que esos detalles figuran como no disponibles.
 
-No hay informacion sobre el proceso de entrenamiento del autoencoder: ni volumen de datos, ni composicion del dataset, ni si se emplearon tecnicas de alineacion tipo RLHF o DPO (que, por otra parte, no aplican a un componente de reconstruccion de imagenes). El autor de la model card afirma que los pesos no estan modificados y que coinciden byte a byte con el fichero del mismo nombre del repositorio de origen `Comfy-Org/flux2-dev`; se trata por tanto de un espejo, no de un fine-tuning, pese a que la etiqueta `finetune` aparezca asociada al modelo base en los metadatos de HuggingFace.
+No hay informacion sobre el proceso de entrenamiento del autoencoder: ni volumen de datos, ni composicion del dataset, ni si se emplearon tecnicas de alineacion tipo RLHF o DPO (que, por otra parte, no aplican a un componente de reconstruccion de imagenes). El autor de la model card afirma que los pesos no estan modificados y que coinciden byte a byte con el fichero del mismo nombre del repositorio de origen `Comfy-Org/flux2-dev`; se trata por tanto de un espejo, no de un fine-tuning, pese a que la etiqueta `finetune` aparezca asociada al modelo base en los metadatos de Hugging Face.
 
 La innovacion tecnica relevante no esta en el propio autoencoder sino en su empaquetado: se distribuye como fichero unico safetensors, listo para ser consumido por `stable-diffusion.cpp` y por ComfyUI, y se separa deliberadamente del condicionador no comercial para preservar una licencia permisiva en la parte que necesita FLUX.2 klein 4B (Apache-2.0).
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Tamano | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| toxicdog/FLUX.2-VAE | VAE (espejo) | 0,31 GiB | Apache-2.0 | HuggingFace, 0 descargas, 2 likes | Espejo de `Comfy-Org/flux2-dev`; pesos sin modificar |
-| Comfy-Org/flux2-dev | VAE (original comunitario) | 0,31 GiB para el mismo fichero | Apache-2.0 (autoencoder) | HuggingFace | Origen declarado del fichero; el espejo existe para evitar caidas o renombrados |
-| unsloth/FLUX.2-VAE | VAE (repo referenciado en la model card) | no disponible | Apache-2.0 | HuggingFace | Las rutas de licencia y aviso legal de la model card apuntan a este repositorio |
-| black-forest-labs/FLUX.2-dev | Modelo de difusion completo | no disponible | FLUX Non-Commercial License (el autoencoder se libera aparte como Apache-2.0) | HuggingFace | Modelo base declarado; su condicionador no es de uso comercial libre |
+| toxicdog/FLUX.2-VAE | VAE (espejo) | 0,31 GiB | Apache-2.0 | Hugging Face, 0 descargas, 2 likes | Espejo de `Comfy-Org/flux2-dev`; pesos sin modificar |
+| Comfy-Org/flux2-dev | VAE (original comunitario) | 0,31 GiB para el mismo fichero | Apache-2.0 (autoencoder) | Hugging Face | Origen declarado del fichero; el espejo existe para evitar caidas o renombrados |
+| unsloth/FLUX.2-VAE | VAE (repo referenciado en la model card) | no disponible | Apache-2.0 | Hugging Face | Las rutas de licencia y aviso legal de la model card apuntan a este repositorio |
+| black-forest-labs/FLUX.2-dev | Modelo de difusion completo | no disponible | FLUX Non-Commercial License (el autoencoder se libera aparte como Apache-2.0) | Hugging Face | Modelo base declarado; su condicionador no es de uso comercial libre |
 
 No se dispone de datos publicados de rendimiento ni de parametros que permitan una comparacion cuantitativa entre estos componentes.
 
@@ -84,7 +84,7 @@ No se dispone de datos publicados de rendimiento ni de parametros que permitan u
 - Ausencia total de documentacion tecnica: no se publican parametros, dimension del latente, relacion de compresion, precision de los pesos ni arquitectura interna, lo que dificulta el ajuste fino o el diagnostico de artefactos.
 - Repositorio no oficial: la propia model card indica que no es un producto oficial de Black Forest Labs ni de ComfyUI y que no cuenta con su respaldo.
 - Riesgo de trazabilidad: al ser un espejo de un repositorio de terceros, conviene verificar la integridad de los pesos antes de usarlos en produccion, pese a que el autor afirma que coinciden byte a byte con el original.
-- Incoherencia en los metadatos: la etiqueta de HuggingFace marca el modelo base como `finetune`, mientras que la model card afirma que los pesos no estan modificados. Debe tratarse como un espejo, no como un ajuste.
+- Incoherencia en los metadatos: la etiqueta de Hugging Face marca el modelo base como `finetune`, mientras que la model card afirma que los pesos no estan modificados. Debe tratarse como un espejo, no como un ajuste.
 - Posible confusion de licencias: la licencia Apache-2.0 cubre unicamente el autoencoder. El resto de FLUX.2 [dev] sigue bajo la FLUX Non-Commercial License, por lo que usarlo en productos comerciales exige comprobar que el resto del pipeline cumple los terminos (FLUX.2 klein 4B si es Apache-2.0).
 - Referencias cruzadas a `unsloth` en los enlaces de licencia y aviso: la model card apunta a rutas de otro repositorio, lo que puede generar ambiguedad sobre el mantenedor real del fichero.
 - Sin datos de sesgo, alucinacion o cobertura idiomatica: al no procesar lenguaje, estas categorias no aplican, pero tampoco hay evaluacion de sesgos en la reconstruccion de imagenes (por ejemplo, perdida de detalle en rostros o texto).
@@ -93,7 +93,7 @@ No se dispone de datos publicados de rendimiento ni de parametros que permitan u
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/toxicdog/FLUX.2-VAE
+- Hugging Face (repositorio del modelo): https://huggingface.co/toxicdog/FLUX.2-VAE
 - Modelo base declarado: https://huggingface.co/black-forest-labs/FLUX.2-dev
 - Repositorio de origen del fichero: https://huggingface.co/Comfy-Org/flux2-dev
 - Repositorio de licencia y aviso referenciado en la model card: https://huggingface.co/unsloth/FLUX.2-VAE/blob/main/LICENSE y https://huggingface.co/unsloth/FLUX.2-VAE/blob/main/NOTICE

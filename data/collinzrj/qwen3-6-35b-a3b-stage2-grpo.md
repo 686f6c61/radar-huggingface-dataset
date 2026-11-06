@@ -73,9 +73,9 @@ Todas las cifras downstream son de un unico intento por tarea, segun la model ca
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| `collinzrj/qwen3.6-35b-a3b-stage2-grpo` | 35,1 B / ~3,6 B | 262.144 tokens (heredado) | Apache-2.0 | HuggingFace | ReasoningGym 46,1 %; SWE-bench Pro V2 HARD-51 13/51 |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,6 B / ~3,6 B | 262.144 tokens | Apache-2.0 | HuggingFace, NGC | ReasoningGym no disponible; SWE-bench Pro V2 HARD-51 16/51; Terminal-Bench 2 9/20; HLE math 31/100 |
-| `collinzrj/qwen3.6-35b-a3b-swe-lora-sft` (ronda 1) | adaptador sobre la misma base | no disponible | no disponible | HuggingFace | SWE-bench Pro V2 HARD-51 23/51 |
+| `collinzrj/qwen3.6-35b-a3b-stage2-grpo` | 35,1 B / ~3,6 B | 262.144 tokens (heredado) | Apache-2.0 | Hugging Face | ReasoningGym 46,1 %; SWE-bench Pro V2 HARD-51 13/51 |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,6 B / ~3,6 B | 262.144 tokens | Apache-2.0 | Hugging Face, NGC | ReasoningGym no disponible; SWE-bench Pro V2 HARD-51 16/51; Terminal-Bench 2 9/20; HLE math 31/100 |
+| `collinzrj/qwen3.6-35b-a3b-swe-lora-sft` (ronda 1) | adaptador sobre la misma base | no disponible | no disponible | Hugging Face | SWE-bench Pro V2 HARD-51 23/51 |
 | Qwen3.5 27B dense / Gemma 4 31B | no disponible | no disponible | no disponible | no disponible | Citados en resenas como competidores en coding y razonamiento con presupuesto similar de parametros activos; sin cifras verificables en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Todas las cifras downstream son de un unico intento por tarea, segun la model ca
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/collinzrj/qwen3.6-35b-a3b-stage2-grpo
+- Hugging Face del modelo: https://huggingface.co/collinzrj/qwen3.6-35b-a3b-stage2-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Adaptador de la ronda 1 (SWE LoRA SFT): https://huggingface.co/collinzrj/qwen3.6-35b-a3b-swe-lora-sft
 - Dataset Nemotron-RL-ReasoningGym-v1: https://huggingface.co/datasets/nvidia/Nemotron-RL-ReasoningGym-v1

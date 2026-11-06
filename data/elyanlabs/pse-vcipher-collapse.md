@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elyanlabs/pse-vcipher-collapse` no es un modelo de lenguaje con pesos: es una instantánea del código fuente del repositorio `github.com/Scottcjn/pse-vcipher-collapse`, un prototipo de optimización de inferencia para kernels de atención tipo llama.cpp sobre arquitectura IBM POWER8 (ppc64le). Lo firma Scott Boudreaux / Elyan Labs y se distribuye como código C con intrinsics AltiVec, sin checkpoint, sin tokenizador y sin pipeline asociado en HuggingFace. Su tesis es sustituir el producto escalar Q·K completo por una selección previa de candidatos: un prefilter O(1) usando la instrucción criptográfica `vcipher` (AES de ISA 2.07) y un colapso selectivo de rutas mediante `vec_perm`, conservando aproximadamente el 25 % de las rutas antes de calcular el dot product completo.
+`elyanlabs/pse-vcipher-collapse` no es un modelo de lenguaje con pesos: es una instantánea del código fuente del repositorio `github.com/Scottcjn/pse-vcipher-collapse`, un prototipo de optimización de inferencia para kernels de atención tipo llama.cpp sobre arquitectura IBM POWER8 (ppc64le). Lo firma Scott Boudreaux / Elyan Labs y se distribuye como código C con intrinsics AltiVec, sin checkpoint, sin tokenizador y sin pipeline asociado en Hugging Face. Su tesis es sustituir el producto escalar Q·K completo por una selección previa de candidatos: un prefilter O(1) usando la instrucción criptográfica `vcipher` (AES de ISA 2.07) y un colapso selectivo de rutas mediante `vec_perm`, conservando aproximadamente el 25 % de las rutas antes de calcular el dot product completo.
 
 El interés técnico está en el uso de hardware que ninguna GPU expone de forma equivalente: la ronda AES combina SubBytes (ranking no lineal), ShiftRows (mezcla intra-registro), MixColumns (difusión entre cabezas vía GF(2^8)) y AddRoundKey con entropía del timebase `mftb`. Según el README, el prefilter cuesta 0,044 µs por par K-V frente a 1-10 µs de un `kq_vec_dot()` completo con DK=128 o superior, y en una secuencia de 2048 tokens se evitan unas 1536 multiplicaciones completas por token generado.
 
@@ -75,9 +75,9 @@ No se especifica modelo base, tamaño de batch, versión de llama.cpp, flags de 
 
 | Alternativa | Tipo | Contexto / alcance | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PSE vcipher collapse | Kernel de atención dispersa sobre POWER8 | Prefilter O(1) + top 25 % de rutas; ejemplo de 2048 tokens | 0,044 µs/par K-V; 147,54 t/s pp128 (declarado, sin verificar) | AGPL-3.0 | Código en GitHub/GitLab y espejo en HuggingFace |
+| PSE vcipher collapse | Kernel de atención dispersa sobre POWER8 | Prefilter O(1) + top 25 % de rutas; ejemplo de 2048 tokens | 0,044 µs/par K-V; 147,54 t/s pp128 (declarado, sin verificar) | AGPL-3.0 | Código en GitHub/GitLab y espejo en Hugging Face |
 | Flash Attention 2 | Kernel de atención exacta, GPU | Atención densa con tiling; longitudes de contexto de decenas de miles | Ampliamente validado en la literatura | BSD-3-Clause (implementación de referencia) | Integrado en PyTorch, vLLM, llama.cpp y otros |
-| Atención dispersa tipo BigBird / Longformer | Atención con patrón fijo (ventana + global) | Patrones predefinidos, no dependientes de datos | Publicado en papers originales | Apache-2.0 / MIT según implementación | Bibliotecas de HuggingFace Transformers |
+| Atención dispersa tipo BigBird / Longformer | Atención con patrón fijo (ventana + global) | Patrones predefinidos, no dependientes de datos | Publicado en papers originales | Apache-2.0 / MIT según implementación | Bibliotecas de Hugging Face Transformers |
 | llama.cpp sin parchear | Runtime de inferencia CPU | Depende del modelo servido | Ampliamente reportado por la comunidad | MIT | Repositorio público |
 
 La comparación cuantitativa con Flash Attention 2 o con atención dispersa entrenada no está disponible: no hay evaluación de calidad, ni perplexity, ni comparación de latencia sobre el mismo modelo base.
@@ -88,16 +88,16 @@ La comparación cuantitativa con Flash Attention 2 o con atención dispersa entr
 - Cero validación de calidad publicada: no hay datos de perplexity, accuracy ni degradación por podar el 75 % de las rutas de atención. Retener el top 25 % según un score AES no garantizado como proxy del softmax puede degradar la salida de forma no medida.
 - No determinismo por diseño: la round key incorpora entropía del timebase hardware `mftb`. Dos ejecuciones con la misma entrada pueden producir scores de prefilter distintos, lo que dificulta la depuración y la reproducibilidad de resultados.
 - Dependencia total de POWER8: sin `vcipher` el mecanismo principal no existe. El parche no es portable a x86-64 ni a ARM64 sin rediseñar el prefilter.
-- Estado de prototipo: 0 descargas y 0 likes, creado y actualizado el mismo día (2026-10-23), sin historial de mantenimiento en HuggingFace. El repositorio se describe como "source snapshot" y "prototype".
+- Estado de prototipo: 0 descargas y 0 likes, creado y actualizado el mismo día (2026-10-23), sin historial de mantenimiento en Hugging Face. El repositorio se describe como "source snapshot" y "prototype".
 - Advertencia explícita del autor: el README indica que el repositorio no es un reemplazo general de atención en GPU y que la documentación no ha reejecutado benchmarks.
 - Licencia AGPL-3.0: el uso en un servicio de red obliga a liberar el código fuente derivado. Es incompatible con despliegues comerciales cerrados sin licencia alternativa del titular.
 - Idiomas, sesgos y alucinación: no evaluables, al no incluir el repositorio pesos ni tokenizador.
-- Sin soporte de tooling estándar: no hay integración con vLLM, TGI, Ollama ni pipelines de HuggingFace; el pipeline figura como no disponible.
+- Sin soporte de tooling estándar: no hay integración con vLLM, TGI, Ollama ni pipelines de Hugging Face; el pipeline figura como no disponible.
 - Las cifras de rendimiento (0,044 µs/par, 147,54 t/s) carecen de metodología reproducible y no deben citarse como resultado validado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elyanlabs/pse-vcipher-collapse
+- Hugging Face: https://huggingface.co/elyanlabs/pse-vcipher-collapse
 - Repositorio GitHub: https://github.com/Scottcjn/pse-vcipher-collapse
 - Repositorio GitLab (historial completo): https://gitlab.com/elyan-labs/pse-vcipher-collapse
 - Sitio del autor: https://elyanlabs.ai/

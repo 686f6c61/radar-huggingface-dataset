@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Inflect-Mini-v3-Preview es un modelo de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario `owensong` bajo un pipeline `text-to-speech`. Según los metadatos disponibles, se trata de un modelo multihablante (`multi-speaker`), orientado al idioma inglés (`en`) y distribuido en estado de vista previa (`preview`) dentro de una beta con acceso restringido (`gated-beta`). El repositorio ocupa 0,1 GB, lo que sitúa el checkpoint en la gama de modelos muy ligeros dentro del ecosistema TTS.
+Inflect-Mini-v3-Preview es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario `owensong` bajo un pipeline `text-to-speech`. Según los metadatos disponibles, se trata de un modelo multihablante (`multi-speaker`), orientado al idioma inglés (`en`) y distribuido en estado de vista previa (`preview`) dentro de una beta con acceso restringido (`gated-beta`). El repositorio ocupa 0,1 GB, lo que sitúa el checkpoint en la gama de modelos muy ligeros dentro del ecosistema TTS.
 
-La información pública es mínima: la ficha no incluye arquitectura, número de parámetros, datos de entrenamiento, licencia ni resultados de evaluación. A fecha de la consulta, el modelo acumula 0 descargas y 2 «likes», y el acceso requiere aceptar condiciones en HuggingFace, por lo que no es posible descargar los pesos sin autorización previa del autor.
+La información pública es mínima: la ficha no incluye arquitectura, número de parámetros, datos de entrenamiento, licencia ni resultados de evaluación. A fecha de la consulta, el modelo acumula 0 descargas y 2 «likes», y el acceso requiere aceptar condiciones en Hugging Face, por lo que no es posible descargar los pesos sin autorización previa del autor.
 
 Su relevancia potencial, por tanto, es la de un candidato a evaluar dentro de la categoría de TTS ligero multihablante en inglés, pero no puede considerarse una opción consolidada para producción hasta que el autor publique licencia, arquitectura y métricas objetivas. Cualquier decisión de integración debería posponerse hasta verificar estos extremos.
 
@@ -22,7 +22,7 @@ Su relevancia potencial, por tanto, es la de un candidato a evaluar dentro de la
 | Formato de pesos | no disponible |
 | Pipeline | text-to-speech |
 | Multihablante | sí (según etiqueta `multi-speaker`; número de voces no disponible) |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Estado | preview / gated-beta |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 2 |
@@ -84,7 +84,7 @@ Frente a estas alternativas, la principal desventaja de Inflect-Mini-v3-Preview 
 ## Limitaciones y advertencias
 
 - Licencia no especificada: sin términos explícitos no puede asumirse permiso para uso comercial, redistribución ni modificación; en la práctica, el modelo no es apto para producción hasta que el autor lo aclare.
-- Acceso restringido: requiere aprobación en HuggingFace, lo que añade dependencia del autor y riesgo de interrupción del servicio si el repositorio se retira.
+- Acceso restringido: requiere aprobación en Hugging Face, lo que añade dependencia del autor y riesgo de interrupción del servicio si el repositorio se retira.
 - Estado de vista previa: no hay garantía de estabilidad de la API, del formato de pesos ni de la calidad de salida entre versiones.
 - Idiomas: solo se declara inglés; no hay soporte documentado de castellano ni de otras lenguas.
 - Ausencia de validación externa: 0 descargas y 2 «likes» implican que no existe evidencia pública de uso real ni informes de terceros sobre su comportamiento.
@@ -96,5 +96,5 @@ Frente a estas alternativas, la principal desventaja de Inflect-Mini-v3-Preview 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/owensong/Inflect-Mini-v3-Preview
+- Hugging Face: https://huggingface.co/owensong/Inflect-Mini-v3-Preview
 - No se han encontrado otros enlaces (paper, blog técnico, repositorio de código o demo) en la información disponible.

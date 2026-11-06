@@ -67,8 +67,8 @@ En los mismos pares trampa reservados, cinco modelos frontera obtienen entre 0,2
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CivTelescope | 7B (base) + LoRA r16 | No disponible | Juez por pares de posiciones de Freeciv | Apache 2.0 | HuggingFace (adaptador `lora.pt`) |
-| Qwen2.5-7B-Instruct | 7B | No disponible en esta ficha | Modelo generalista de instrucciones | Apache 2.0 | HuggingFace |
+| CivTelescope | 7B (base) + LoRA r16 | No disponible | Juez por pares de posiciones de Freeciv | Apache 2.0 | Hugging Face (adaptador `lora.pt`) |
+| Qwen2.5-7B-Instruct | 7B | No disponible en esta ficha | Modelo generalista de instrucciones | Apache 2.0 | Hugging Face |
 | Modelos frontera evaluados en el artículo | No disponible | No disponible | Juicio generalista aplicado a pares de Freeciv | No disponible | No disponible |
 
 La comparación relevante es frente a los cinco modelos frontera citados en la model card, que obtienen 0,26-0,34 de exactitud en pares trampa reservados frente a 0,775 de CivTelescope. No se detallan en la información disponible los nombres ni las versiones concretas de esos modelos.
@@ -86,7 +86,7 @@ La comparación relevante es frente a los cinco modelos frontera citados en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CivMarshmallow/CivTelescope
+- Modelo en Hugging Face: https://huggingface.co/CivMarshmallow/CivTelescope
 - Repositorio de código: https://github.com/jamesnulliu/CivMarshmallow
 - Políticas entrenadas con CivTelescope: https://huggingface.co/CivMarshmallow/CivMarshmallow-Qwen3-8B
 - Políticas base (*baselines*): https://huggingface.co/CivMarshmallow/Baselines-Qwen3-8B

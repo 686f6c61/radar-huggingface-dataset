@@ -66,6 +66,6 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juststhjust/Qwen3-4B-2507-Conversation-Tuned
+- Modelo en Hugging Face: https://huggingface.co/juststhjust/Qwen3-4B-2507-Conversation-Tuned
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF
 - Página de Qwen3 (referencia general): https://qwenlm.github.io/blog/qwen3/

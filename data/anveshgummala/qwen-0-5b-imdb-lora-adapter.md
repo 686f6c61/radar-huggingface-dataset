@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AnveshGummala/qwen-0.5b-imdb-lora-adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace mediante la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-0.5B. Se trata, por tanto, de un artefacto de ajuste fino y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador, que deben cargarse junto al modelo base para poder ejecutar inferencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que es coherente con un adaptador de rango bajo sobre un modelo de ~0,5B parámetros.
+AnveshGummala/qwen-0.5b-imdb-lora-adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face mediante la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-0.5B. Se trata, por tanto, de un artefacto de ajuste fino y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador, que deben cargarse junto al modelo base para poder ejecutar inferencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que es coherente con un adaptador de rango bajo sobre un modelo de ~0,5B parámetros.
 
-El nombre del repositorio sugiere un ajuste fino orientado a la clasificación de sentimiento sobre el dataset IMDb, aunque esta finalidad no se confirma en ninguna parte de la model card: el README es la plantilla por defecto de HuggingFace y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como "[More Information Needed]". La única información técnica verificable es la declarada en los metadatos: `library_name: peft`, `base_model: Qwen/Qwen2.5-0.5B`, soporte de `transformers`, pesos en safetensors y `PEFT 0.20.0` como versión de framework.
+El nombre del repositorio sugiere un ajuste fino orientado a la clasificación de sentimiento sobre el dataset IMDb, aunque esta finalidad no se confirma en ninguna parte de la model card: el README es la plantilla por defecto de Hugging Face y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) aparecen como "[More Information Needed]". La única información técnica verificable es la declarada en los metadatos: `library_name: peft`, `base_model: Qwen/Qwen2.5-0.5B`, soporte de `transformers`, pesos en safetensors y `PEFT 0.20.0` como versión de framework.
 
 Su relevancia actual es limitada y de carácter práctico: sirve como ejemplo reproducible de cómo se publica un adaptador LoRA sobre un modelo pequeño de la familia Qwen2.5, y como posible punto de partida para tareas de clasificación de texto con recursos mínimos. No obstante, la ausencia total de documentación, de métricas y de licencia explícita impide recomendarlo para uso en producción sin una validación previa por parte de quien lo adopte.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | AnveshGummala/qwen-0.5b-imdb-lora-adapter | No disponible (adaptador sobre ~0,5B) | No disponible | No disponible | 0 descargas, 0 likes | Adaptador LoRA, requiere modelo base |
-| Qwen/Qwen2.5-0.5B (modelo base) | ~0,5B segun nomenclatura | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico en HuggingFace | Modelo completo; sus especificaciones deben consultarse en su propia ficha |
+| Qwen/Qwen2.5-0.5B (modelo base) | ~0,5B segun nomenclatura | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico en Hugging Face | Modelo completo; sus especificaciones deben consultarse en su propia ficha |
 | Otras alternativas (por ejemplo, clasificadores tipo BERT/DistilBERT ajustados a IMDb) | No disponible | No disponible | No disponible | No disponible | No se han encontrado referencias en la busqueda web realizada |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnveshGummala/qwen-0.5b-imdb-lora-adapter
+- Repositorio Hugging Face: https://huggingface.co/AnveshGummala/qwen-0.5b-imdb-lora-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Librería PEFT: https://github.com/huggingface/peft
 - Paper de LoRA referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimación de impacto ambiental; citado en la plantilla de la model card, no es el paper de LoRA): https://arxiv.org/abs/1910.09700

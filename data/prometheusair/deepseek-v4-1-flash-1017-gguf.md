@@ -93,8 +93,8 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prometheusAIR/DeepSeek-V4.1-Flash-1017-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prometheusAIR/DeepSeek-V4.1-Flash-1017-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Fork de llama.cpp requerido: https://github.com/smalinin/llama.cpp/tree/my_build_deepseek41 (commit `cfd8adcf6`)
-- Parche de runtime: `patches/dsv41s-runtime.patch` dentro del repositorio HuggingFace
+- Parche de runtime: `patches/dsv41s-runtime.patch` dentro del repositorio Hugging Face
 - Paper, blog o demo oficiales: no disponibles en la información proporcionada

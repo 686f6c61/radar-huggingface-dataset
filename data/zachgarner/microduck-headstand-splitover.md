@@ -24,9 +24,9 @@ La informacion disponible es minima: no hay licencia declarada, no se especifica
 | Dimension de salida | 14 acciones de articulacion |
 | Entorno de entrenamiento | `Mjlab-HeadstandSplitOver-Flat-MicroDuck` (MuJoCo) |
 | Ficheros del repositorio | `model_1499.pt`, `policy.onnx`, `provenance.json`, `evaluation.json` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ZachGarner/microduck-headstand-splitover` | no disponible; entrada 61 valores, salida 14 acciones | no aplica | 32/32 intentos (semilla 0); 87/96 rutinarios en 3 semillas | no disponible | ONNX y PyTorch en HuggingFace |
+| `ZachGarner/microduck-headstand-splitover` | no disponible; entrada 61 valores, salida 14 acciones | no aplica | 32/32 intentos (semilla 0); 87/96 rutinarios en 3 semillas | no disponible | ONNX y PyTorch en Hugging Face |
 | Otras politicas de locomotion cuadrupeda | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Existen otras politicas de control para cuadrupedos publicadas en la literatura de aprendizaje por refuerzo (por ejemplo, trabajos sobre locomotion en MuJoCo o Isaac Gym), pero no se han aportado datos concretos que permitan una comparacion rigurosa de parametros, contexto, rendimiento o licencia. Se indica por tanto "no disponible".
@@ -98,6 +98,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-splitover
+- Modelo en Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-splitover
 - Repositorio de evaluacion, configuracion y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - Otros enlaces relevantes (papers, blogs, demos): no disponibles en la informacion proporcionada. Los resultados de busqueda web recibidos no guardan relacion con este modelo.

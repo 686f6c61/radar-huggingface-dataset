@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario DSAD123123CGWQE. Todos los indicios apuntan a que se trata de un repositorio de prueba y no de un modelo publicable: el tamano del repositorio es de 0,0 GB (no contiene pesos descargables), acumula 0 descargas y 0 "likes", y fue creado y actualizado con siete segundos de diferencia el 14 de septiembre de 2026. La libreria declarada es transformers, el pipeline es feature-extraction y las etiquetas incluyen "bert" y "pytorch", ademas de "license:mit", "endpoints_compatible" y "region:us".
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario DSAD123123CGWQE. Todos los indicios apuntan a que se trata de un repositorio de prueba y no de un modelo publicable: el tamano del repositorio es de 0,0 GB (no contiene pesos descargables), acumula 0 descargas y 0 "likes", y fue creado y actualizado con siete segundos de diferencia el 14 de septiembre de 2026. La libreria declarada es transformers, el pipeline es feature-extraction y las etiquetas incluyen "bert" y "pytorch", ademas de "license:mit", "endpoints_compatible" y "region:us".
 
 La model card adjunta describe un modelo denominado MyAwesomeModel, presenta una tabla de benchmarks con columnas genericas (Model1, Model2, Model1-v2, MyAwesomeModel) y afirma mejoras en razonamiento, codigo y llamada a funciones, con un incremento de precision en AIME 2025 del 70 % al 87,5 % y un aumento del consumo medio de tokens por pregunta de 12K a 23K. Sin embargo, esa descripcion es incompatible con las etiquetas del repositorio (BERT, feature-extraction) y no viene acompanada de ningun dato verificable: no se indica numero de parametros, longitud de contexto, idiomas, composicion del dataset ni formato de pesos.
 
-Por tanto, esta ficha no puede certificar ninguna capacidad real del modelo. Su relevancia actual es la de un caso de advertencia sobre como evaluar repositorios de HuggingFace: etiquetas contradictorias, benchmarks sin trazabilidad, ausencia de pesos y una model card con marcadores de plantilla sin sustituir. Cualquier uso en produccion exigiria, como minimo, verificar que existen pesos reales y reproducir los resultados declarados.
+Por tanto, esta ficha no puede certificar ninguna capacidad real del modelo. Su relevancia actual es la de un caso de advertencia sobre como evaluar repositorios de Hugging Face: etiquetas contradictorias, benchmarks sin trazabilidad, ausencia de pesos y una model card con marcadores de plantilla sin sustituir. Cualquier uso en produccion exigiria, como minimo, verificar que existen pesos reales y reproducir los resultados declarados.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ Todas las capacidades que se listan a continuacion proceden exclusivamente de af
 - Procesamiento de documentos aportados por el usuario: la model card incluye una plantilla con marcadores {file_name}, {file_content} y {question}.
 - Generacion aumentada con busqueda web: la model card incluye una plantilla en la que el modelo debe filtrar resultados, citar con [citation:X] y limitar respuestas de tipo listado a 10 puntos.
 - Capacidades multilingues: no disponible. No se declaran idiomas soportados.
-- Extraccion de caracteristicas: es el pipeline declarado en HuggingFace, aunque no se detalla la dimensionalidad del embedding ni la tarea concreta.
+- Extraccion de caracteristicas: es el pipeline declarado en Hugging Face, aunque no se detalla la dimensionalidad del embedding ni la tarea concreta.
 - Vision, audio o modo "thinking" explicito: no disponible.
 
 ## Casos de uso
@@ -102,7 +102,7 @@ Advertencia: la estructura de la tabla (columnas "Model1", "Model2", "Model1-v2"
 - VRAM estimada para inferencia: no disponible. Sin numero de parametros ni formato de pesos no es posible calcularla.
 - GPU recomendadas: no disponible. No puede determinarse si el modelo requiere A100, H100, RTX 4090 o inferencia en CPU.
 - Inferencia en GPU de consumo: no disponible. No hay datos para confirmar o descartar que quepa en una GPU de gama consumer.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que en teoria seria desplegable con vLLM o TGI, y la etiqueta endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints. Ollama y llama.cpp quedan descartados mientras no existan pesos en formato GGUF. El repositorio no contiene ningun artefacto que permita confirmar ninguna de estas opciones.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que en teoria seria desplegable con vLLM o TGI, y la etiqueta endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints. Ollama y llama.cpp quedan descartados mientras no existan pesos en formato GGUF. El repositorio no contiene ningun artefacto que permita confirmar ninguna de estas opciones.
 - Latencia y throughput: no disponible. El unico dato relacionado es el consumo declarado de 23K tokens por pregunta en AIME 2025, que implicaria latencias altas en tareas de razonamiento extenso, pero no se especifica hardware ni configuracion de decodificacion.
 - Requisitos de almacenamiento: el repositorio ocupa 0,0 GB, es decir, no hay pesos que descargar.
 
@@ -135,7 +135,7 @@ No se dispone de modelos comparables identificados por el autor. Para una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSAD123123CGWQE/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSAD123123CGWQE/MyAwesomeModel-TestRepo
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible. La model card menciona un "sitio web oficial" con interfaz de chat y API, pero no incluye la URL
 - Repositorio de codigo: no disponible. La model card remite a "our code repository" sin enlace

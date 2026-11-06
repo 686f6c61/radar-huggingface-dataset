@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BGE-m3-ko-onnx es la conversión a ONNX con cuantización de 8 bits (int8) del modelo de embeddings `dragonkue/BGE-m3-ko`, publicado por el usuario jaybon1840 en HuggingFace. Se trata de un modelo de extracción de características (feature-extraction) orientado a la generación de embeddings de texto, es decir, a convertir fragmentos de texto en vectores densos utilizables para búsqueda semántica, recuperación de información, clustering o sistemas RAG.
+BGE-m3-ko-onnx es la conversión a ONNX con cuantización de 8 bits (int8) del modelo de embeddings `dragonkue/BGE-m3-ko`, publicado por el usuario jaybon1840 en Hugging Face. Se trata de un modelo de extracción de características (feature-extraction) orientado a la generación de embeddings de texto, es decir, a convertir fragmentos de texto en vectores densos utilizables para búsqueda semántica, recuperación de información, clustering o sistemas RAG.
 
 El modelo original del que deriva es una adaptación al coreano de la familia BGE-M3, que emplea una arquitectura basada en XLM-RoBERTa. La variante aquí descrita conserva esa arquitectura y la empaqueta en formato ONNX int8 para su uso con transformers.js, lo que facilita su despliegue en entornos JavaScript, tanto en Node.js como en el navegador, sin necesidad de un stack de Python.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BGE-m3-ko-onnx (este modelo) | no disponible | no disponible | ONNX int8 | Apache-2.0 | HuggingFace, transformers.js |
-| dragonkue/BGE-m3-ko (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | Apache-2.0 | HuggingFace |
-| BGE-M3 original | no disponible | no disponible | safetensors | MIT (segun el proyecto original) | HuggingFace |
+| BGE-m3-ko-onnx (este modelo) | no disponible | no disponible | ONNX int8 | Apache-2.0 | Hugging Face, transformers.js |
+| dragonkue/BGE-m3-ko (modelo base) | no disponible | no disponible | safetensors (presumiblemente) | Apache-2.0 | Hugging Face |
+| BGE-M3 original | no disponible | no disponible | safetensors | MIT (segun el proyecto original) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La comparativa se limita a aspectos de formato y licencia.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jaybon1840/BGE-m3-ko-onnx
+- Hugging Face: https://huggingface.co/jaybon1840/BGE-m3-ko-onnx
 - Modelo base: https://huggingface.co/dragonkue/BGE-m3-ko

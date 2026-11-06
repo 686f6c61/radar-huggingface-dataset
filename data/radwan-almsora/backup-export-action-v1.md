@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`radwan-almsora/backup-export-action-v1` es un repositorio alojado en HuggingFace bajo el identificador del usuario `radwan-almsora`. La información pública disponible es mínima: la model card no está accesible (el repositorio está marcado como *gated*, es decir, requiere aceptar condiciones en la plataforma), no se ha publicado pipeline, no consta ningún resultado de benchmarks y el contador de descargas y likes es cero.
+`radwan-almsora/backup-export-action-v1` es un repositorio alojado en Hugging Face bajo el identificador del usuario `radwan-almsora`. La información pública disponible es mínima: la model card no está accesible (el repositorio está marcado como *gated*, es decir, requiere aceptar condiciones en la plataforma), no se ha publicado pipeline, no consta ningún resultado de benchmarks y el contador de descargas y likes es cero.
 
-Los metadatos indican que el repositorio se creó el 3 de noviembre de 2026 y se actualizó unos minutos después, con licencia MIT y etiqueta de idioma inglés (`en`). No hay evidencia de que se trate de un modelo de lenguaje entrenado: el nombre (`backup-export-action-v1`) sugiere más bien un artefacto de tipo acción o workflow (por ejemplo, un componente de exportación de copias de seguridad) empaquetado en un repositorio de HuggingFace, aunque esta interpretación no puede confirmarse con los datos disponibles.
+Los metadatos indican que el repositorio se creó el 3 de noviembre de 2026 y se actualizó unos minutos después, con licencia MIT y etiqueta de idioma inglés (`en`). No hay evidencia de que se trate de un modelo de lenguaje entrenado: el nombre (`backup-export-action-v1`) sugiere más bien un artefacto de tipo acción o workflow (por ejemplo, un componente de exportación de copias de seguridad) empaquetado en un repositorio de Hugging Face, aunque esta interpretación no puede confirmarse con los datos disponibles.
 
 Dado que no se ha publicado arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento, esta ficha recoge únicamente los metadatos verificables y marca explícitamente como "no disponible" todo aquello que no puede contrastarse. Cualquier evaluación técnica del artefacto requeriría solicitar acceso al repositorio y consultar su documentación interna.
 
@@ -38,7 +38,7 @@ La única información técnica verificable es la etiqueta de idioma (`en`) y la
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos y realistas sin información sobre la funcionalidad del artefacto. Los metadatos disponibles no permiten determinar si se trata de un modelo de lenguaje, un pipeline de procesamiento, un script de exportación o cualquier otro tipo de componente. Se recomienda solicitar acceso al repositorio en HuggingFace y revisar su documentación antes de plantear cualquier integración en producción.
+No es posible enumerar casos de uso concretos y realistas sin información sobre la funcionalidad del artefacto. Los metadatos disponibles no permiten determinar si se trata de un modelo de lenguaje, un pipeline de procesamiento, un script de exportación o cualquier otro tipo de componente. Se recomienda solicitar acceso al repositorio en Hugging Face y revisar su documentación antes de plantear cualquier integración en producción.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No disponible. No se ha identificado ningún modelo o artefacto comparable a par
 
 ## Limitaciones y advertencias
 
-- El repositorio está marcado como *gated*: es necesario aceptar condiciones en HuggingFace para acceder a su contenido, lo que limita la auditoría independiente.
+- El repositorio está marcado como *gated*: es necesario aceptar condiciones en Hugging Face para acceder a su contenido, lo que limita la auditoría independiente.
 - No se ha publicado model card, documentación técnica ni resultados de evaluación.
 - No puede confirmarse que el artefacto sea un modelo de lenguaje ni que sea apto para tareas de inferencia.
 - El contador de descargas y likes es cero, lo que indica ausencia de validación por parte de la comunidad.
@@ -68,5 +68,5 @@ No disponible. No se ha identificado ningún modelo o artefacto comparable a par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/radwan-almsora/backup-export-action-v1
+- Repositorio en Hugging Face: https://huggingface.co/radwan-almsora/backup-export-action-v1
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada.

@@ -76,7 +76,7 @@ No se dispone de comparativas de rendimiento numéricas entre estos modelos en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aimagelab/CounterVid-InternVL3-9B-LoRA
+- Hugging Face: https://huggingface.co/aimagelab/CounterVid-InternVL3-9B-LoRA
 - Paper (arXiv): https://arxiv.org/abs/2601.04778
 - Repositorio GitHub: https://github.com/aimagelab/CounterVid
 - Página del proyecto: https://aimagelab.github.io/CounterVid/

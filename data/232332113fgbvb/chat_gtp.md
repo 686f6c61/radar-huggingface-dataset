@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio 232332113FGBVB/CHAT_GTP, publicado en HuggingFace por el usuario 232332113FGBVB, no contiene un modelo de lenguaje: no incluye pesos, ficheros de configuración, tokenizador, código de inferencia ni ficha técnica con datos de entrenamiento. El único contenido descrito es un texto en inglés que instruye a un asistente a interpretar un personaje llamado "Chat GTP", con reglas explícitas de comportamiento absurdo, faltas de ortografía deliberadas y prohibición de romper el personaje.
+El repositorio 232332113FGBVB/CHAT_GTP, publicado en Hugging Face por el usuario 232332113FGBVB, no contiene un modelo de lenguaje: no incluye pesos, ficheros de configuración, tokenizador, código de inferencia ni ficha técnica con datos de entrenamiento. El único contenido descrito es un texto en inglés que instruye a un asistente a interpretar un personaje llamado "Chat GTP", con reglas explícitas de comportamiento absurdo, faltas de ortografía deliberadas y prohibición de romper el personaje.
 
 El repositorio acumula 0 descargas y 0 likes, tiene un único tag (region:us) y no declara licencia, idiomas soportados ni pipeline de inferencia. Las marcas temporales indican creación el 27 de septiembre de 2026 y última actualización ese mismo día, un minuto más tarde.
 
@@ -39,7 +39,7 @@ Tampoco hay informacion de entrenamiento: no se indica numero de tokens, composi
 
 ## Casos de uso
 
-- Pruebas de deteccion de prompt injection en plataformas de modelos: el README puede usarse como caso de prueba para validar que los escaneres de seguridad de un registro de modelos (HuggingFace u otros) marcan instrucciones embebidas en fichas de modelo antes de que un humano las lea o un automatismo las ejecute.
+- Pruebas de deteccion de prompt injection en plataformas de modelos: el README puede usarse como caso de prueba para validar que los escaneres de seguridad de un registro de modelos (Hugging Face u otros) marcan instrucciones embebidas en fichas de modelo antes de que un humano las lea o un automatismo las ejecute.
 - Auditoria de pipelines de ingesta de datos: util para verificar que un sistema que descarga repositorios y procesa model cards no interpreta el texto como instrucciones. Se insertaria como muestra de prueba en un conjunto de validacion de ingesta.
 - Formacion y concienciacion en seguridad de IA: sirve como ejemplo didactico de repositorio mal etiquetado, con 0 descargas, sin licencia y sin pesos, que en un indice publico aparece bajo la categoria de modelo.
 - Red teaming de asistentes conversacionales: el texto puede emplearse como vector de prueba para medir la resistencia de un asistente a peticiones de suplantacion de identidad de marca y a la produccion de informacion deliberadamente falsa sobre tareas triviales.
@@ -88,7 +88,7 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelo (no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/232332113FGBVB/CHAT_GTP
+- Repositorio en Hugging Face: https://huggingface.co/232332113FGBVB/CHAT_GTP
 - ChatGPT (producto de OpenAI): https://chatgpt.com/
 - Funcionalidades de ChatGPT: https://chatgpt.com/features
 - OpenAI, investigacion y despliegue: https://openai.com/

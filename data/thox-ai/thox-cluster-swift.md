@@ -19,7 +19,7 @@ Es relevante ahora porque representa un patron creciente en el ecosistema open s
 | Tipos de cuantizacion | Q4_K_M (GGUF) |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (distribucion Ollama); el repositorio de HuggingFace contiene unicamente el archivo .gitattributes |
+| Formato de pesos | GGUF (distribucion Ollama); el repositorio de Hugging Face contiene unicamente el archivo .gitattributes |
 
 ## Arquitectura y entrenamiento
 
@@ -77,14 +77,14 @@ La comparativa con alternativas de otros proveedores no esta disponible en la in
 - El comportamiento y la velocidad dependen enteramente del hardware y la configuracion del operador.
 - Idiomas: los metadatos indican solo ingles; el rendimiento en castellano no esta documentado.
 - La model card corrige afirmaciones previas: se retiraron cifras de tokens por segundo, latencia, concurrencia y uptime por no estar medidas, y se corrigio la licencia de MIT a Apache 2.0.
-- El repositorio de HuggingFace contiene solo el archivo .gitattributes; el build ejecutable se sirve desde Ollama.
+- El repositorio de Hugging Face contiene solo el archivo .gitattributes; el build ejecutable se sirve desde Ollama.
 - La capa de clustering MeshStack es independiente de la descarga y no esta incluida en los pesos.
 - Licencia Apache 2.0: permite uso comercial, pero los pesos siguen los terminos del proveedor upstream; conviene revisar la ficha del modelo base.
 - La evaluacion independiente de THOX esta pendiente; no hay mediciones verificadas de rendimiento en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-cluster-swift
+- Hugging Face: https://huggingface.co/Thox-ai/thox-cluster-swift
 - Ollama: https://ollama.com/Thox-ai/thox-cluster-swift
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Sitio de THOX: https://thox.ai

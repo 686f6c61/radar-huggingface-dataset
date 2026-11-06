@@ -4,7 +4,7 @@
 
 `stanfordasl/diet-traj-olmo2-medium-dolma-seed2` es un modelo de lenguaje de ~305 millones de parámetros entrenado desde cero con la arquitectura OLMo2, publicado por el grupo stanfordasl dentro del proyecto DIET de análisis en el espacio de pesos (*weight-space*). No es un modelo pensado para uso final: es un artefacto de investigación que documenta una trayectoria de preentrenamiento completa (checkpoints intermedios incluidos) para estudiar cómo evolucionan los pesos durante el entrenamiento.
 
-El modelo usa una configuración densa tipo transformer decoder (hidden_size 768, 16 capas, 12 cabezas de atención con 12 cabezas KV, contexto de 2048 tokens) y se preentrena con objetivo de entropía cruzada puro sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace de Dolma v1.7 muestreado proporcionalmente entre sus componentes. La receta es deliberadamente sencilla (AdamW, lr 3e-5, cosine, bf16) y solo cambia la semilla aleatoria entre las ejecuciones de la colección, lo que convierte a este checkpoint en la semilla 2 de un conjunto diseñado para medir varianza entre inicializaciones.
+El modelo usa una configuración densa tipo transformer decoder (hidden_size 768, 16 capas, 12 cabezas de atención con 12 cabezas KV, contexto de 2048 tokens) y se preentrena con objetivo de entropía cruzada puro sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face de Dolma v1.7 muestreado proporcionalmente entre sus componentes. La receta es deliberadamente sencilla (AdamW, lr 3e-5, cosine, bf16) y solo cambia la semilla aleatoria entre las ejecuciones de la colección, lo que convierte a este checkpoint en la semilla 2 de un conjunto diseñado para medir varianza entre inicializaciones.
 
 Su relevancia es metodológica, no de rendimiento: con un presupuesto de 2.000 millones de tokens para 305 millones de parámetros (≈6,5 tokens por parámetro), está muy por debajo de lo que sería un entrenamiento óptimo en cómputo, y no ha pasado por ajuste por instrucciones ni alineación. Sirve como línea base reproducible, para experimentos de interpolación y fusión de modelos, y para comparativas de dinámica de entrenamiento entre arquitecturas (Pythia frente a OLMo2).
 
@@ -71,7 +71,7 @@ Los datos de las alternativas provienen de sus respectivas model cards públicas
 |---|---|---|---|---|---|
 | diet-traj-olmo2-medium-dolma-seed2 | 305M | 2048 | 2.000M (≈6,5 tok/param) | Apache 2.0 | Artefacto de investigación, preentrenamiento puro |
 | Pythia-410M (EleutherAI) | 410M | 2048 | 300.000M | Apache 2.0 | Suite de investigación con 154 checkpoints |
-| SmolLM2-360M (HuggingFace) | ~362M | 8192 | no disponible en esta ficha | Apache 2.0 | Modelo pequeño alineado, uso práctico |
+| SmolLM2-360M (Hugging Face) | ~362M | 8192 | no disponible en esta ficha | Apache 2.0 | Modelo pequeño alineado, uso práctico |
 | Qwen2.5-0.5B (Alibaba) | ~494M | 32768 | no disponible en esta ficha | Apache 2.0 | Modelo pequeño con ajuste instructivo |
 | OLMo2 oficial (Ai2) | 7B / 13B | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Familia completa abierta, con informe técnico |
 
@@ -93,7 +93,7 @@ Frente a Pythia-410M, la diferencia clave es el volumen de entrenamiento: Pythia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed2
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed2
 - Ejecución hermana (seed 4): https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed4
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Dataset Dolma original (Ai2): https://huggingface.co/datasets/allenai/dolma

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR `press_stapler` (este) | no disponible | no disponible | sin evaluación real | Apache 2.0 | HuggingFace |
-| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-press-stapler` (checkpoint base del merge) | no disponible | no disponible | sin evaluación real | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR `press_stapler` (este) | no disponible | no disponible | sin evaluación real | Apache 2.0 | Hugging Face |
+| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-press-stapler` (checkpoint base del merge) | no disponible | no disponible | sin evaluación real | Apache 2.0 | Hugging Face |
 | `snumpr-iclr27-v1/9999` (inicialización SNUMPR VLA) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas.
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-press-stapler-20261103
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-press-stapler-20261103
 - Checkpoint base del merge: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261103
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `2065dd0a`)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), receta `pi05_libero_oneshotft`

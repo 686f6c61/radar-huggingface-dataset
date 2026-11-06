@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UniverseNet-Qwen3-8B-Pocket es una edición derivada de Qwen/Qwen3-8B publicada por el usuario wasnaga en HuggingFace bajo licencia Apache 2.0. El autor describe el proceso como una "transmutación física" del modelo base que reduce el número de parámetros de 8,19B a 5,51B (−32,8%) mediante una combinación de compresión de las capas FFN SwiGLU (de 12.288 a 6.144 orbitales) y destilación LoRA de rango 64. El resultado se distribuye en formato GGUF cuantizado Q4_0 con proyección V en Q8_0, con un tamaño de 2,94 GB, pensado para ejecutarse en dispositivos móviles iOS (iPhone 16 Pro) mediante PocketPal AI, LLM Farm o Enclave, incluso en modo avión.
+UniverseNet-Qwen3-8B-Pocket es una edición derivada de Qwen/Qwen3-8B publicada por el usuario wasnaga en Hugging Face bajo licencia Apache 2.0. El autor describe el proceso como una "transmutación física" del modelo base que reduce el número de parámetros de 8,19B a 5,51B (−32,8%) mediante una combinación de compresión de las capas FFN SwiGLU (de 12.288 a 6.144 orbitales) y destilación LoRA de rango 64. El resultado se distribuye en formato GGUF cuantizado Q4_0 con proyección V en Q8_0, con un tamaño de 2,94 GB, pensado para ejecutarse en dispositivos móviles iOS (iPhone 16 Pro) mediante PocketPal AI, LLM Farm o Enclave, incluso en modo avión.
 
 La propuesta del autor se enmarca en un marco teórico propio denominado "Universe Network" (leyes 1-9), que emplea conceptos de renormalización, multipolos rápidos de Ewald y plegado orbital para justificar la compresión. Aunque el modelo base es Qwen3-8B, la model card no proporciona información sobre el contexto nativo, los idiomas soportados ni detalles estándar del entrenamiento original. El checkpoint se presenta como compatible con los kernels estándar de qwen3 en llama.cpp, Ollama y LM Studio, lo que permite su despliegue sin modificaciones del runtime.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los datos aportados por el autor; no se dispone de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wasnaga/UniverseNet-Qwen3-8B-Pocket-GGUF
+- Hugging Face: https://huggingface.co/wasnaga/UniverseNet-Qwen3-8B-Pocket-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - PocketPal AI (App Store): no disponible en la información proporcionada
 - LLM Farm: no disponible en la información proporcionada

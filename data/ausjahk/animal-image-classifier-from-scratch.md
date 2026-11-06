@@ -23,7 +23,7 @@ Su relevancia actual es principalmente educativa y de prototipado: sirve como ej
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una CNN secuencial implementada en PyTorch, según las etiquetas del repositorio en HuggingFace. Se compone de cuatro bloques convolucionales que duplican progresivamente el número de filtros: 32, 64, 128 y 256. Cada bloque incluye una capa de normalización por lotes (BatchNorm), una activación ReLU y una capa de max-pooling 2D. Tras los bloques convolucionales, el modelo dispone de una cabeza clasificadora densa de 256 neuronas que desemboca en una salida de 2 clases: `cats` y `dogs`.
+La arquitectura es una CNN secuencial implementada en PyTorch, según las etiquetas del repositorio en Hugging Face. Se compone de cuatro bloques convolucionales que duplican progresivamente el número de filtros: 32, 64, 128 y 256. Cada bloque incluye una capa de normalización por lotes (BatchNorm), una activación ReLU y una capa de max-pooling 2D. Tras los bloques convolucionales, el modelo dispone de una cabeza clasificadora densa de 256 neuronas que desemboca en una salida de 2 clases: `cats` y `dogs`.
 
 El entrenamiento se realizó desde cero, con inicialización aleatoria de los pesos, sobre el dataset Cat and Dog de Kaggle. No se especifica el número de épocas, el tamaño del lote, el optimizador ni la función de pérdida utilizados. Tampoco se indica que se haya aplicado RLHF, DPO ni ninguna técnica de ajuste posterior, dado que no se trata de un modelo de lenguaje. La precisión final reportada en el conjunto de prueba es del 73,41%.
 
@@ -73,13 +73,13 @@ No se han encontrado modelos comparables en la información proporcionada. La co
 - Sesgos del dataset: el dataset de Kaggle puede contener sesgos en razas, colores, tamaños y poses de los animales, lo que puede afectar a la precisión en imágenes fuera de la distribución de entrenamiento.
 - Riesgo de alucinación: no aplica, al ser un modelo discriminativo y no generativo.
 - Licencia no especificada: no se puede confirmar si el modelo puede utilizarse con fines comerciales.
-- Repositorio sin pesos aparentes: el tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar subidos. Esto impediría su uso directo desde HuggingFace.
+- Repositorio sin pesos aparentes: el tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos del modelo podrían no estar subidos. Esto impediría su uso directo desde Hugging Face.
 - Sin documentación de uso: la model card no incluye código de inferencia, preprocesamiento de imágenes ni detalles de entrenamiento, lo que dificulta su reproducción.
 - Modelo sin mantenimiento: no tiene descargas ni likes, y su fecha de creación es reciente, septiembre de 2026, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ausjahk/animal-image-classifier-from-scratch
+- Hugging Face: https://huggingface.co/ausjahk/animal-image-classifier-from-scratch
 - Dataset de Kaggle: https://www.kaggle.com/datasets/tongpython/cat-and-dog
 - Notebook de Keras sobre clasificación de imágenes desde cero: https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/image_classification_from_scratch.ipynb
 - Notebook de Kirenz sobre clasificación de imágenes desde cero: https://colab.research.google.com/github/kirenz/deep-learning/blob/main/docs/image_classification_from_scratch.ipynb

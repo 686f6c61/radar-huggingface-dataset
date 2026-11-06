@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint archivado de una ejecución de investigación ya finalizada, publicado por el usuario davidheineman dentro de la colección «rlve» / «scratch-archive». La propia model card lo identifica como «Archived checkpoint: 05-KloBlocks», procedente de la ruta de trabajo `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/05-KloBlocks`, con paso final de entrenamiento 119 y el identificador de ejecución de Weights & Biases `28417a0a`.
 
-El artefacto contiene 1.777.088.000 parámetros (unos 1,78 mil millones) según los pesos publicados en formato safetensors, y la etiqueta `qwen2` de HuggingFace indica que la arquitectura subyacente pertenece a la familia Qwen2. El repositorio ocupa 3,6 GB e incluye, además de los pesos en formato `hf-safetensors`, un directorio `checkpoint/` destinado a preservar el estado distribuido exacto de Megatron cuando corresponda.
+El artefacto contiene 1.777.088.000 parámetros (unos 1,78 mil millones) según los pesos publicados en formato safetensors, y la etiqueta `qwen2` de Hugging Face indica que la arquitectura subyacente pertenece a la familia Qwen2. El repositorio ocupa 3,6 GB e incluye, además de los pesos en formato `hf-safetensors`, un directorio `checkpoint/` destinado a preservar el estado distribuido exacto de Megatron cuando corresponda.
 
 Su interés es fundamentalmente de reproducibilidad y trazabilidad: permite recuperar un punto intermedio concreto de un barrido de entrenamiento, no un modelo listo para producción. No se declaran licencia, idiomas soportados, longitud de contexto ni resultados de evaluación, por lo que cualquier uso fuera del ámbito de la investigación interna exige verificación previa por parte de quien lo descargue.
 
@@ -79,10 +79,10 @@ No es posible comparar el rendimiento de este checkpoint porque no se han public
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-archive-mopd-sweep-n8-learned-teachers 05-KloBlocks | 1,78 mil millones | No disponible | No disponible | Pública en HuggingFace (0 descargas, 0 likes) |
-| Qwen2.5-1.5B (referencia externa) | 1,54 mil millones | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Pública en HuggingFace |
-| Llama 3.2 1B (referencia externa) | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Pública en HuggingFace |
-| Gemma 2 2B (referencia externa) | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Pública en HuggingFace |
+| rlve-archive-mopd-sweep-n8-learned-teachers 05-KloBlocks | 1,78 mil millones | No disponible | No disponible | Pública en Hugging Face (0 descargas, 0 likes) |
+| Qwen2.5-1.5B (referencia externa) | 1,54 mil millones | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Pública en Hugging Face |
+| Llama 3.2 1B (referencia externa) | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Pública en Hugging Face |
+| Gemma 2 2B (referencia externa) | 2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Pública en Hugging Face |
 
 La diferencia clave no está en el rendimiento, que no puede contrastarse, sino en el propósito: los tres modelos de referencia son lanzamientos oficiales con licencia, evaluación y soporte de herramientas, mientras que este checkpoint es un artefacto de investigación sin licencia declarada ni documentación de capacidades.
 
@@ -101,7 +101,7 @@ La diferencia clave no está en el rendimiento, que no puede contrastarse, sino 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-05-kloblocks-f73d51185e9d
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-05-kloblocks-f73d51185e9d
 - Identificador de ejecución de Weights & Biases: `28417a0a` (sin URL directa en la información disponible)
 - Ruta de scratch original: `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/05-KloBlocks` (sin URL pública en la información disponible)
 - Paper, blog, repositorio de código o demo: no disponibles

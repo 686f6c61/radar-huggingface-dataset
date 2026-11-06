@@ -6,7 +6,7 @@ Qwen3-ASR-AIPod-HF es un empaquetado de los pesos del modelo de reconocimiento a
 
 El modelo resuelve la transcripción de audio a texto en entornos de borde (edge computing), aprovechando las capacidades de cómputo de los SoC Jetson. La relevancia actual radica en que permite ejecutar ASR de forma local en hardware embebido con aceleración GPU, lo que resulta útil para aplicaciones de privacidad, latencia baja y funcionamiento sin conexión. El repositorio tiene un tamaño de 21,7 GB, lo que sugiere que incluye múltiples artefactos (pesos de ambas variantes, runtimes y librerías de terceros).
 
-La información pública disponible es limitada: no se especifican idiomas soportados, pipeline tag en HuggingFace ni resultados de benchmarks. La licencia es compuesta ("component-specific-licenses"), con los pesos bajo Apache-2.0 pero con componentes de terceros sujetos a términos propios (NVIDIA cuDSS, NVPL y libsndfile bajo LGPL).
+La información pública disponible es limitada: no se especifican idiomas soportados, pipeline tag en Hugging Face ni resultados de benchmarks. La licencia es compuesta ("component-specific-licenses"), con los pesos bajo Apache-2.0 pero con componentes de terceros sujetos a términos propios (NVIDIA cuDSS, NVPL y libsndfile bajo LGPL).
 
 ## Especificaciones tecnicas
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/Qwen3-ASR-AIPod-HF
+- Hugging Face: https://huggingface.co/manateelazycat/Qwen3-ASR-AIPod-HF
 - Licencia NVIDIA cuDSS: https://docs.nvidia.com/cuda/cudss/license.html
 - Licencia NVIDIA NVPL: https://docs.nvidia.com/nvpl/latest/license.html

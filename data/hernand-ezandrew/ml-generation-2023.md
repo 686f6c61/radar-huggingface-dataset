@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hernand-ezandrew/ml-generation-2023` es un repositorio experimental publicado en HuggingFace que empaqueta una implementación propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de "generation". MoCo v3 es un método de aprendizaje autosupervisado por contraste originalmente concebido para preentrenar codificadores visuales; en este repositorio el autor lo reutiliza como esqueleto de arquitectura con atención dispersa (*sparse*), fusión bilineal, activación ReLU y normalización RMSNorm, y lo publica junto a un script ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd con scheduler exponencial).
+`hernand-ezandrew/ml-generation-2023` es un repositorio experimental publicado en Hugging Face que empaqueta una implementación propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de "generation". MoCo v3 es un método de aprendizaje autosupervisado por contraste originalmente concebido para preentrenar codificadores visuales; en este repositorio el autor lo reutiliza como esqueleto de arquitectura con atención dispersa (*sparse*), fusión bilineal, activación ReLU y normalización RMSNorm, y lo publica junto a un script ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador Novograd con scheduler exponencial).
 
 El dato más importante para cualquier evaluador es que **no se trata de un modelo entrenado**. El propio autor lo declara en la model card: `model.safetensors` es un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks. El recuento real de parámetros del fichero safetensors es de **33.088 parámetros** (aproximadamente 33 K), un orden de magnitud propio de un modelo de juguete o de una ablación de arquitectura, muy lejos de los cientos de millones de parámetros que implicaría un backbone ViT-B típico de MoCo v3. Existe además una incoherencia declarada: la model card indica `Scale: base`, etiqueta que no se corresponde con el tamaño real del checkpoint.
 
@@ -28,7 +28,7 @@ Por tanto, su relevancia ahora no es la de un modelo utilizable en producción, 
 | Tamano del repositorio | 0,0 GB |
 | Descargas | 11 |
 | Likes | 0 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Region declarada | `us` |
 | Fecha de creacion | 2026-10-18 |
 | Fecha de actualizacion | 2026-10-18 |
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, **no hay evidencia de que se haya completado ninguno
 - Generación de texto: no disponible; no se documenta tokenizador, vocabulario ni objetivo de modelado de lenguaje.
 - Razonamiento y matemáticas: no disponible; sin benchmarks ni evaluaciones cualitativas.
 - Codigo: no disponible; el repositorio contiene código Python de ejemplo, pero no se reporta capacidad de generación de código.
-- Tool calling / function calling: no soportado ni documentado. La carga requiere un adaptador explícito, ya que la implementación es personalizada y las APIs automáticas genéricas de HuggingFace no la resuelven.
+- Tool calling / function calling: no soportado ni documentado. La carga requiere un adaptador explícito, ya que la implementación es personalizada y las APIs automáticas genéricas de Hugging Face no la resuelven.
 - Agentes y razonamiento multi-paso: no disponible.
 - Multilingue: no disponible; no se declara ningún idioma en las etiquetas del repositorio.
 - Capacidades especiales (modo *thinking*, visión, audio): no disponibles. La etiqueta `mocov3` apunta a un origen visual (aprendizaje autosupervisado sobre imágenes), pero la model card no confirma modalidad de entrada ni de salida.
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hernand-ezandrew/ml-generation-2023` (este) | 33.088 | No disponible | Sin benchmarks; checkpoint de inicialización | MIT | HuggingFace, repo de 0,0 GB |
-| `hernand-ezjoshua/generation` (scaffold Swin-T, hallado en la búsqueda) | No disponible en la información proporcionada | No disponible | Sin benchmarks declarados | Apache 2.0 | HuggingFace |
+| `hernand-ezandrew/ml-generation-2023` (este) | 33.088 | No disponible | Sin benchmarks; checkpoint de inicialización | MIT | Hugging Face, repo de 0,0 GB |
+| `hernand-ezjoshua/generation` (scaffold Swin-T, hallado en la búsqueda) | No disponible en la información proporcionada | No disponible | Sin benchmarks declarados | Apache 2.0 | Hugging Face |
 | MoCo v3 original (Meta AI Research) | No disponible en la información proporcionada; el paper emplea backbones ViT | No disponible | Resultados publicados en el paper original | No disponible en la información proporcionada | Paper y código de referencia |
 
 No se han identificado en la búsqueda modelos comparables en capacidad real: los dos primeros son esqueletos experimentales sin entrenar y el tercero es el método de referencia, no un checkpoint intercambiable. La comparación relevante no es de rendimiento sino de propósito: este repositorio es un andamiaje reproducible, no un modelo desplegable.
@@ -96,9 +96,9 @@ No se han identificado en la búsqueda modelos comparables en capacidad real: lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hernand-ezandrew/ml-generation-2023
+- Repositorio en Hugging Face: https://huggingface.co/hernand-ezandrew/ml-generation-2023
 - Scaffold relacionado hallado en la búsqueda (Swin-T for Generation): https://huggingface.co/hernand-ezjoshua/generation
-- Portal general de HuggingFace: https://huggingface.co/
+- Portal general de Hugging Face: https://huggingface.co/
 - Google Scholar Citations (referencia genérica de búsqueda bibliográfica): https://scholar.google.com/citations
 - Listado de nuevos modelos 2026 (contexto de seguimiento de lanzamientos): https://lmmarketcap.com/new-ai-models
 - MLflow, plataforma de evaluación y seguimiento de experimentos (herramienta potencial para reproducir la guía de evaluación del autor): https://mlflow.org/

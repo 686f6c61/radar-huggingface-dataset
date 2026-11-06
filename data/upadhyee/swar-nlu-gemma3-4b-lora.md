@@ -66,8 +66,8 @@ No se dispone de información suficiente en el repositorio para comparar este mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SWAR-NLU (este repositorio) | Adaptador LoRA sobre Gemma 3 4B it | 4B + ~114 MiB | 128K | No disponible | HuggingFace |
-| google/gemma-3-4b-it | Modelo base de lenguaje | ~4B | 128K | No disponible en este contexto | HuggingFace |
+| SWAR-NLU (este repositorio) | Adaptador LoRA sobre Gemma 3 4B it | 4B + ~114 MiB | 128K | No disponible | Hugging Face |
+| google/gemma-3-4b-it | Modelo base de lenguaje | ~4B | 128K | No disponible en este contexto | Hugging Face |
 | Otros adaptadores NLU para lenguas indias | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Cualquier comparación con modelos como IndicBERT, Airavata o modelos de Sarvam no es posible con los datos proporcionados.

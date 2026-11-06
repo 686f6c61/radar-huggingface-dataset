@@ -84,6 +84,6 @@ Frente al modelo base, esta versión ofrece un fine-tune específico en ruso y u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-0.5b-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-0.5b-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo original fine-tuneado: https://huggingface.co/Vikhrmodels/Vikhr-Qwen-2.5-0.5b-Instruct

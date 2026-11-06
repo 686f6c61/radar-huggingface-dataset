@@ -4,7 +4,7 @@
 
 Iwin Transformer es un vision transformer jerárquico sin embeddings posicionales, desarrollado por Simin Huo y Ning Li y publicado en arXiv (2507.18405). El modelo resuelve la limitación del Swin Transformer de requerir dos bloques consecutivos para aproximar atención global, mediante una colaboración innovadora entre atención de ventanas intercaladas y convoluciones separables en profundidad. Esto permite intercambio de información global dentro de un solo módulo, mejorando la eficiencia y la escalabilidad a altas resoluciones.
 
-El modelo presentado en esta ficha es la variante "small" entrenada en ImageNet-1k a resolución 224x224, con un checkpoint de 0,4 GB. Alcanza un 87,4% de top-1 accuracy en ImageNet-1K, y también demuestra competitividad en segmentación semántica y reconocimiento de acciones en video. Su licencia MIT permite uso comercial sin restricciones, y el código y los pesos están disponibles públicamente en GitHub y HuggingFace.
+El modelo presentado en esta ficha es la variante "small" entrenada en ImageNet-1k a resolución 224x224, con un checkpoint de 0,4 GB. Alcanza un 87,4% de top-1 accuracy en ImageNet-1K, y también demuestra competitividad en segmentación semántica y reconocimiento de acciones en video. Su licencia MIT permite uso comercial sin restricciones, y el código y los pesos están disponibles públicamente en GitHub y Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ Nota: los datos de Swin y ViT son aproximados y provienen de publicaciones gener
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cominder/iwin-small-patch4-window7-224
+- Hugging Face: https://huggingface.co/cominder/iwin-small-patch4-window7-224
 - Paper (arXiv): https://arxiv.org/abs/2507.18405
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer
 - Checkpoint .pth: https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_small_patch4_window7_224.pth

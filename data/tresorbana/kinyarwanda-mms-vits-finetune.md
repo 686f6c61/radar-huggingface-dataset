@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tresorbana/kinyarwanda-mms-vits-finetune` es un repositorio publicado en HuggingFace Hub por el usuario `tresorbana`, etiquetado con `transformers`, `endpoints_compatible` y `arxiv:1910.09700`, correspondiente a la region `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card es la plantilla automatica de HuggingFace sin ningun campo rellenado: todos los apartados (descripcion, autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como `[More Information Needed]`.
+`tresorbana/kinyarwanda-mms-vits-finetune` es un repositorio publicado en Hugging Face Hub por el usuario `tresorbana`, etiquetado con `transformers`, `endpoints_compatible` y `arxiv:1910.09700`, correspondiente a la region `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card es la plantilla automatica de Hugging Face sin ningun campo rellenado: todos los apartados (descripcion, autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como `[More Information Needed]`.
 
 El identificador del modelo sugiere, sin confirmacion por parte del autor, que se trata de un ajuste fino (finetune) de un modelo de sintesis de voz (TTS) de la familia MMS (Massively Multilingual Speech) de Meta, con arquitectura VITS, orientado al idioma kinyarwanda. Ninguno de estos extremos puede verificarse con la informacion disponible: no hay pipeline declarado, no hay licencia, no hay idiomas listados y no hay resultados de evaluacion.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente documental y de adve
 
 No hay informacion sobre la arquitectura en la model card. Todos los campos de la seccion "Model Architecture and Objective" estan marcados como `[More Information Needed]`. Por el nombre del repositorio, la hipotesis mas plausible es que se trate de un ajuste fino de un checkpoint VITS de la familia MMS; VITS es una arquitectura de sintesis de voz end-to-end que combina un posterior encoder variacional, un prior condicionado por texto, un conjunto de normalizing flows y un decoder generativo adversarial (habitualmente HiFi-GAN) entrenado con perdidas de reconstruccion, adversarial y de divergencia KL. Esta interpretacion es una inferencia a partir del identificador y no un dato confirmado.
 
-Tampoco hay informacion sobre datos de entrenamiento: no se indica el corpus utilizado, el numero de horas de audio, el idioma o variedad dialectal concreta, si hubo transcripcion fonetica, ni si se aplicaron tecnicas de alineamiento o de aumento de datos. No se documenta el uso de RLHF, DPO ni ningun otro metodo de ajuste por preferencias. El unico rastro tecnico en los metadatos es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning"; se trata de un artefacto de la plantilla automatica de HuggingFace (citada en la seccion de impacto medioambiental) y no de una referencia a la arquitectura o al entrenamiento del modelo.
+Tampoco hay informacion sobre datos de entrenamiento: no se indica el corpus utilizado, el numero de horas de audio, el idioma o variedad dialectal concreta, si hubo transcripcion fonetica, ni si se aplicaron tecnicas de alineamiento o de aumento de datos. No se documenta el uso de RLHF, DPO ni ningun otro metodo de ajuste por preferencias. El unico rastro tecnico en los metadatos es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning"; se trata de un artefacto de la plantilla automatica de Hugging Face (citada en la seccion de impacto medioambiental) y no de una referencia a la arquitectura o al entrenamiento del modelo.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible para este checkpoint concreto. Como referencia orientativa de la familia VITS (modelos del orden de decenas de millones de parametros), la inferencia cabe holgadamente en menos de 1 GB de VRAM en fp32. Esta cifra es una estimacion no confirmada, no un dato del repositorio.
 - GPU recomendadas: no disponibles. Si la estimacion anterior es correcta, cualquier GPU consumer moderna (GTX 1650 o superior, RTX 3060, RTX 4090) seria mas que suficiente, e incluso la inferencia en CPU resultaria viable.
 - Cabe en GPU consumer: probablemente si, segun la estimacion anterior, pero no confirmado.
-- Opciones de despliegue: no documentadas. Al declarar `library_name: transformers`, el repositorio esta marcado como compatible con los endpoints de HuggingFace (`endpoints_compatible`), lo que sugiere que puede servirse a traves de la Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI; vLLM y llama.cpp estan orientados a modelos de lenguaje y no aplican a un TTS VITS.
+- Opciones de despliegue: no documentadas. Al declarar `library_name: transformers`, el repositorio esta marcado como compatible con los endpoints de Hugging Face (`endpoints_compatible`), lo que sugiere que puede servirse a traves de la Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI; vLLM y llama.cpp estan orientados a modelos de lenguaje y no aplican a un TTS VITS.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,11 +80,11 @@ No se han encontrado en la busqueda web modelos comparables ni informacion contr
 - Cobertura limitada al kinyarwanda (si la hipotesis del nombre es correcta) y probablemente a un unico hablante, con variedad dialectal no documentada. El kinyarwanda tiene variacion regional y prestamos del frances, el ingles y el suajili que pueden no estar bien cubiertos.
 - Sin soporte conocido de tool calling, agentes ni razonamiento: no debe integrarse como si fuese un modelo de lenguaje.
 - Repositorio sin traccion: 0 descargas y 0 likes implican que el modelo no ha sido validado por terceros; es probable que contenga errores de subida, ficheros incompletos o configuraciones no funcionales.
-- La etiqueta `arxiv:1910.09700` no describe el modelo: procede de la plantilla de HuggingFace (calculo de emisiones de carbono) y no debe interpretarse como referencia arquitectonica.
+- La etiqueta `arxiv:1910.09700` no describe el modelo: procede de la plantilla de Hugging Face (calculo de emisiones de carbono) y no debe interpretarse como referencia arquitectonica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tresorbana/kinyarwanda-mms-vits-finetune
+- Repositorio en Hugging Face: https://huggingface.co/tresorbana/kinyarwanda-mms-vits-finetune
 - Articulo referenciado en la etiqueta `arxiv:1910.09700` (Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", artefacto de la plantilla de la model card, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - Nota sobre la busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas turisticas e institucionales sobre la localidad francesa de Le Malzieu-Ville y no guardan relacion con el repositorio.

@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre Hi-Token y estos modelos, 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/Hi-Token-GGUF
+- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/Hi-Token-GGUF
 - Modelo base: https://huggingface.co/xyzzzh/Hi-Token
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Hi-Token-GGUF
 - Paper de referencia declarado en los tags: arXiv:2608.03471 (no se ha localizado ni verificado en la busqueda realizada)

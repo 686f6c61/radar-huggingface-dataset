@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apolloransom/Qwen2.5-Coder-7B-Instruct-MLX | 7,6 B | 32.000 tokens | safetensors MLX | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B (mismos pesos) | 32.000 tokens | safetensors | Apache-2.0 | HuggingFace |
+| apolloransom/Qwen2.5-Coder-7B-Instruct-MLX | 7,6 B | 32.000 tokens | safetensors MLX | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B (mismos pesos) | 32.000 tokens | safetensors | Apache-2.0 | Hugging Face |
 | Otras conversiones MLX de modelos de codigo de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion principal es entre esta conversion y su modelo base: comparten pesos, parametros, contexto y licencia, y se diferencian unicamente en el formato y en la preconfiguracion para MLX. No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones verificables de alternativas de otros autores o de otros tamanos dentro de la misma familia, por lo que no se incluyen cifras comparativas.
@@ -87,7 +87,7 @@ La comparacion principal es entre esta conversion y su modelo base: comparten pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apolloransom/Qwen2.5-Coder-7B-Instruct-MLX
+- Modelo en Hugging Face: https://huggingface.co/apolloransom/Qwen2.5-Coder-7B-Instruct-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct/blob/main/LICENSE
 - oMLX (backend de inferencia para Apple Silicon): https://github.com/otriscon/omlx

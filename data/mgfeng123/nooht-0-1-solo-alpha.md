@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo MGFeng123/Nooht-0.1-Solo-Alpha es una publicación del autor MGFeng123 en HuggingFace, con licencia Apache 2.0. En el momento de la consulta, la ficha no contiene información técnica (arquitectura, parámetros, contexto, idiomas) ni una model card descriptiva más allá de la licencia. No se han registrado descargas ni interacciones en la plataforma.
+El modelo MGFeng123/Nooht-0.1-Solo-Alpha es una publicación del autor MGFeng123 en Hugging Face, con licencia Apache 2.0. En el momento de la consulta, la ficha no contiene información técnica (arquitectura, parámetros, contexto, idiomas) ni una model card descriptiva más allá de la licencia. No se han registrado descargas ni interacciones en la plataforma.
 
-El nombre sugiere una versión temprana (0.1, fase alfa) de un proyecto denominado "Nooht". Según el repositorio de GitHub asociado al autor (MG-feng/Nooht-by-MG), Nooht se describe como una capa de infraestructura cognitiva que proporciona memoria estructurada externa para mejorar la comprensión de código por parte de modelos de lenguaje, en lugar de depender únicamente de ventanas de contexto más grandes. Sin embargo, no hay evidencia pública de que el modelo publicado en HuggingFace implemente dicha arquitectura o que esté relacionado funcionalmente con ese proyecto.
+El nombre sugiere una versión temprana (0.1, fase alfa) de un proyecto denominado "Nooht". Según el repositorio de GitHub asociado al autor (MG-feng/Nooht-by-MG), Nooht se describe como una capa de infraestructura cognitiva que proporciona memoria estructurada externa para mejorar la comprensión de código por parte de modelos de lenguaje, en lugar de depender únicamente de ventanas de contexto más grandes. Sin embargo, no hay evidencia pública de que el modelo publicado en Hugging Face implemente dicha arquitectura o que esté relacionado funcionalmente con ese proyecto.
 
 Dada la ausencia de especificaciones, esta ficha se limita a documentar la información disponible y a señalar explícitamente las carencias. No se recomienda su uso en entornos de producción sin una evaluación previa.
 
@@ -23,9 +23,9 @@ Dada la ausencia de especificaciones, esta ficha se limita a documentar la infor
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). La model card en HuggingFace está vacía y no se han encontrado documentos técnicos asociados al modelo concreto.
+No se ha publicado información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), ni sobre el proceso de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). La model card en Hugging Face está vacía y no se han encontrado documentos técnicos asociados al modelo concreto.
 
-El repositorio de GitHub "Nooht-by-MG" describe una propuesta conceptual de memoria estructurada externa para código, pero no se especifica si el modelo publicado en HuggingFace la implementa o si se trata de un proyecto independiente. Por tanto, cualquier afirmación sobre innovaciones técnicas sería especulativa.
+El repositorio de GitHub "Nooht-by-MG" describe una propuesta conceptual de memoria estructurada externa para código, pero no se especifica si el modelo publicado en Hugging Face la implementa o si se trata de un proyecto independiente. Por tanto, cualquier afirmación sobre innovaciones técnicas sería especulativa.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MGFeng123/Nooht-0.1-Solo-Alpha
+- Modelo en Hugging Face: https://huggingface.co/MGFeng123/Nooht-0.1-Solo-Alpha
 - Dataset relacionado (MGFeng123/Nooht): https://huggingface.co/datasets/MGFeng123/Nooht
 - Repositorio de GitHub del autor (Nooht-by-MG): https://github.com/MG-feng/Nooht-by-MG
 - Documento de arquitectura del proyecto Nooht: https://github.com/MG-feng/Nooht-by-MG/blob/main/api-document/ARCHITECTURE.md

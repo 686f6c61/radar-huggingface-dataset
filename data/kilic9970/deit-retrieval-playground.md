@@ -28,14 +28,14 @@ El checkpoint incluido (`model.safetensors`) es una inicializacion valida para p
 ## Capacidades
 
 - **Retrieval visual**: el modelo esta disenado para tareas de recuperacion de imagenes, aunque no se han verificado capacidades concretas al no estar entrenado.
-- **Implementacion personalizada**: requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace; no es compatible con `AutoModel` sin modificaciones.
+- **Implementacion personalizada**: requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face; no es compatible con `AutoModel` sin modificaciones.
 - **Ejecucion de pruebas**: sirve para validar el flujo de entrenamiento, la logica de atencion y la integracion del pipeline en entornos de desarrollo.
 - **Sin capacidades de texto, codigo, audio o vision general**: al ser un modelo de vision puro y sin entrenar, no ofrece ninguna funcionalidad utilizable en produccion.
 
 ## Casos de uso
 
 - **Pruebas de humo en pipelines de retrieval**: el modelo permite verificar que el codigo de entrenamiento, la carga de datos y la inferencia funcionan correctamente antes de lanzar experimentos con modelos mas grandes.
-- **Desarrollo de adaptadores para DeiT**: al ser una implementacion personalizada, es util para aprender a integrar arquitecturas no estandar con el ecosistema HuggingFace.
+- **Desarrollo de adaptadores para DeiT**: al ser una implementacion personalizada, es util para aprender a integrar arquitecturas no estandar con el ecosistema Hugging Face.
 - **Experimentos de arquitectura**: investigadores pueden modificar la configuracion (atencion, fusion, normalizacion) y evaluar el impacto en tareas de retrieval a pequena escala.
 - **Validacion de metricas en datasets pequenos**: siguiendo la guia de evaluacion del autor, se puede usar con Flickr30k para probar el flujo de evaluacion, aunque los resultados no seran significativos sin entrenamiento.
 - **Ensenanza y aprendizaje**: como ejemplo didactico de una implementacion DeiT compacta, puede servir para estudiar los componentes internos del modelo.
@@ -63,10 +63,10 @@ No disponible. No se conocen modelos comparables en el repositorio del autor ni 
 - **Sin garantias de robustez**: la model card advierte que no se ha auditado para robustez, equidad ni transferencia de dominio.
 - **Alucinacion y sesgos**: al no tener datos de entrenamiento, no aplica, pero cualquier uso en produccion seria completamente invalido.
 - **Licencia**: Apache-2.0 permite uso comercial, pero los terminos de los datasets externos (como Flickr30k) deben revisarse por separado.
-- **Integracion limitada**: requiere un adaptador explicito; no funciona con APIs genericas de HuggingFace.
+- **Integracion limitada**: requiere un adaptador explicito; no funciona con APIs genericas de Hugging Face.
 - **Sin soporte de contexto largo ni multilingue**: es un modelo de vision puro, sin capacidades de texto.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kilic9970/deit-retrieval-playground)
-- [Perfil del autor en HuggingFace](https://huggingface.co/kilic9970)
+- [Modelo en Hugging Face](https://huggingface.co/kilic9970/deit-retrieval-playground)
+- [Perfil del autor en Hugging Face](https://huggingface.co/kilic9970)

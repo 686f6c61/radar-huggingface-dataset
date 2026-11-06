@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `crazyape777/fk-justice101-affine-5dz2gkonkn-loveaffine` es un checkpoint de salvamento (salvage) creado por el usuario crazyape777, resultado de un merge de LoRA sobre el modelo `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tune de un modelo base no especificado. Los tags de HuggingFace indican que se basa en la arquitectura `qwen3_5_moe` (un modelo de mezcla de expertos de la familia Qwen) y que soporta tareas de imagen-texto a texto, lo que sugiere capacidades multimodales, aunque no se proporcionan detalles concretos.
+El modelo `crazyape777/fk-justice101-affine-5dz2gkonkn-loveaffine` es un checkpoint de salvamento (salvage) creado por el usuario crazyape777, resultado de un merge de LoRA sobre el modelo `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tune de un modelo base no especificado. Los tags de Hugging Face indican que se basa en la arquitectura `qwen3_5_moe` (un modelo de mezcla de expertos de la familia Qwen) y que soporta tareas de imagen-texto a texto, lo que sugiere capacidades multimodales, aunque no se proporcionan detalles concretos.
 
 Con 35.107.181.936 parámetros (aproximadamente 35B) y un tamaño de repositorio de 70.2 GB en formato safetensors, este modelo se posiciona en la gama de modelos grandes de código abierto. Sin embargo, la model card es extremadamente escueta: indica que es un "LoRA-merged" y que se trata de un "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que es un checkpoint intermedio de un proceso de desarrollo, no una versión final destinada a producción. No se proporciona información sobre licencia, idiomas, datos de entrenamiento ni benchmarks.
 
@@ -21,7 +21,7 @@ Con 35.107.181.936 parámetros (aproximadamente 35B) y un tamaño de repositorio
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere principalmente de los tags de HuggingFace: `qwen3_5_moe` indica que el modelo base pertenece a la familia Qwen3.5 con arquitectura de mezcla de expertos (MoE), lo que implica que solo una fracción de los parámetros se activa por token, aunque no se especifica el número de parámetros activos. El tag `image-text-to-text` sugiere que el modelo puede procesar entradas de imagen y texto para generar texto, aunque no se detalla el mecanismo de visión (por ejemplo, si usa un codificador de visión separado o un enfoque totalmente multimodal).
+La arquitectura se infiere principalmente de los tags de Hugging Face: `qwen3_5_moe` indica que el modelo base pertenece a la familia Qwen3.5 con arquitectura de mezcla de expertos (MoE), lo que implica que solo una fracción de los parámetros se activa por token, aunque no se especifica el número de parámetros activos. El tag `image-text-to-text` sugiere que el modelo puede procesar entradas de imagen y texto para generar texto, aunque no se detalla el mecanismo de visión (por ejemplo, si usa un codificador de visión separado o un enfoque totalmente multimodal).
 
 El proceso de entrenamiento descrito en la model card es un "LoRA-merged" sobre `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tune de un modelo base. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se utilizaron técnicas como RLHF o DPO. El término "affine-h1-merged-salvage" en los tags sugiere que es un checkpoint intermedio de un proceso de fusión de modelos, posiblemente con fines de evaluación interna. No hay información sobre innovaciones técnicas específicas más allá de la fusión LoRA.
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crazyape777/fk-justice101-affine-5dz2gkonkn-loveaffine
+- Hugging Face: https://huggingface.co/crazyape777/fk-justice101-affine-5dz2gkonkn-loveaffine
 - Modelo base (fine-tune): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

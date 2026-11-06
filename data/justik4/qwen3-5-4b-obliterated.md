@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-OBLITERATED es un derivado del modelo base Qwen/Qwen3.5-4B publicado por el usuario Justik4 en HuggingFace. No se trata de un entrenamiento con datos nuevos, sino de una intervencion sobre los pesos y las activaciones del modelo original mediante la tecnica conocida como abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones). El objetivo declarado es suprimir el comportamiento de negativa a responder, de modo que el modelo conteste a peticiones que el checkpoint original rechazaria.
+Qwen3.5-4B-OBLITERATED es un derivado del modelo base Qwen/Qwen3.5-4B publicado por el usuario Justik4 en Hugging Face. No se trata de un entrenamiento con datos nuevos, sino de una intervencion sobre los pesos y las activaciones del modelo original mediante la tecnica conocida como abliteration (eliminacion de la direccion de rechazo en el espacio de activaciones). El objetivo declarado es suprimir el comportamiento de negativa a responder, de modo que el modelo conteste a peticiones que el checkpoint original rechazaria.
 
 El repositorio ocupa 8,4 GB y contiene 4.205.751.296 parametros en formato safetensors, cifra coherente con un modelo denso de unos 4,2 mil millones de parametros almacenado en bf16 o fp16 (2 bytes por parametro). El autor indica que la intervencion se hizo con la herramienta OBLITERATUS, de elder-plinius, usando el metodo etiquetado como "advanced". La model card no aporta informacion sobre arquitectura interna, longitud de contexto, composicion del dataset ni proceso de alineamiento, por lo que esos datos solo pueden inferirse del modelo base.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de contexto que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justik4/Qwen3.5-4B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/Justik4/Qwen3.5-4B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre el modelo; los resultados obtenidos correspondian a sitios del juego de cartas Burraco (burracoon.it, burracopiu.spaghetti-interactive.it, burraco.com, it.wikipedia.org/wiki/Burraco) y no guardan relacion con este lanzamiento.

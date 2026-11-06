@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oryn-v1 es un ajuste fino multimodal publicado en HuggingFace por el usuario ohyeahmman bajo licencia Apache 2.0. Se trata de un derivado de `unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit`, es decir, una especialización del modelo Qwen2-VL-7B-Instruct de Alibaba, en su variante cuantizada a 4 bits y adaptada para entrenamiento eficiente con Unsloth. El modelo conserva la arquitectura `qwen2_vl` (transformer multimodal con encoder visual y decoder de lenguaje) y el pipeline `image-text-to-text`, por lo que acepta entradas conjuntas de imagen y texto y genera respuestas en lenguaje natural.
+Oryn-v1 es un ajuste fino multimodal publicado en Hugging Face por el usuario ohyeahmman bajo licencia Apache 2.0. Se trata de un derivado de `unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit`, es decir, una especialización del modelo Qwen2-VL-7B-Instruct de Alibaba, en su variante cuantizada a 4 bits y adaptada para entrenamiento eficiente con Unsloth. El modelo conserva la arquitectura `qwen2_vl` (transformer multimodal con encoder visual y decoder de lenguaje) y el pipeline `image-text-to-text`, por lo que acepta entradas conjuntas de imagen y texto y genera respuestas en lenguaje natural.
 
 El repositorio declara 8.291.375.616 parametros totales y un tamano de 16,6 GB, coherente con pesos almacenados en precision de 16 bits (aproximadamente dos bytes por parametro). No es un modelo MoE, por lo que no hay parametros activos diferenciados. La unica lengua declarada en los metadatos es el ingles (`en`), aunque al heredar de Qwen2-VL es probable que mantenga competencia multilingue residual del modelo base, algo que el autor no documenta ni garantiza.
 
@@ -109,9 +109,9 @@ Diferencias relevantes: oryn-v1 es el unico de la tabla que no aporta evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ohyeahmman/oryn-v1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/ohyeahmman/oryn-v1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Qwen2-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Los enlaces obtenidos (Zhihu, Stack Overflow) no guardan relacion con oryn-v1 ni con Qwen2-VL y se omiten por no ser pertinentes.

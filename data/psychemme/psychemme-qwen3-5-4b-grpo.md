@@ -66,8 +66,8 @@ La metrica es la media macro sobre las ocho capacidades del benchmark PsycheMME,
 
 | Modelo | Parametros | Contexto | PsycheMME (raw / reasoning-verified) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PsycheMME-Qwen3.5-4B-GRPO | 4B + LoRA r8 | no disponible | 73,19 / 52,62 | apache-2.0 | HuggingFace (adaptador, revision v1.0.2) |
-| Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace (Qwen/Qwen3.5-4B) |
+| PsycheMME-Qwen3.5-4B-GRPO | 4B + LoRA r8 | no disponible | 73,19 / 52,62 | apache-2.0 | Hugging Face (adaptador, revision v1.0.2) |
+| Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face (Qwen/Qwen3.5-4B) |
 | PsycheMME-Qwen3.5-4B SFT | 4B + LoRA | no disponible | no disponible en la informacion | apache-2.0 (segun el proyecto) | mencionado en la pagina del proyecto; no se detalla el repositorio |
 | Modelos abiertos congelados del paper (9) | varios | no disponible | no disponible (Tabla 2 del paper) | varios | paper arXiv:2610.28625 |
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no puede comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psychemme/PsycheMME-Qwen3.5-4B-GRPO
+- Modelo en Hugging Face: https://huggingface.co/psychemme/PsycheMME-Qwen3.5-4B-GRPO
 - Pagina del proyecto: https://psychemme.github.io/
 - Repositorio GitHub: https://github.com/psychemme/PsycheMME
 - Guia de inicio rapido de evaluacion: https://github.com/psychemme/PsycheMME/blob/main/docs/QUICKSTART.md

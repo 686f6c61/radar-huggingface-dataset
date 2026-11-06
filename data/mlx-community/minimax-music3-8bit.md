@@ -70,7 +70,7 @@ No se dispone de información comparativa con otros modelos de generación de m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/MiniMax-Music3-8bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/MiniMax-Music3-8bit
 - Modelo base MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Pull request de soporte para MiniMax Music 3: https://github.com/Blaizzy/mlx-audio/pull/888

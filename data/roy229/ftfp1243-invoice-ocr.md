@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Roy229/ftfp1243-invoice-ocr`, también denominado InvoiceOCR, es un sistema de extracción de campos estructurados a partir de facturas escaneadas, publicado en HuggingFace por el autor Roy229. Está etiquetado dentro de las categorías document-ai y text-extraction, lo que indica su orientación a tareas de procesamiento de documentos y extracción de texto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, aunque el propio autor indica que se trata de un "candidate third-party model submitted for governance review", es decir, un modelo pendiente de validación interna antes de su aprobación para uso en producción.
+El modelo `Roy229/ftfp1243-invoice-ocr`, también denominado InvoiceOCR, es un sistema de extracción de campos estructurados a partir de facturas escaneadas, publicado en Hugging Face por el autor Roy229. Está etiquetado dentro de las categorías document-ai y text-extraction, lo que indica su orientación a tareas de procesamiento de documentos y extracción de texto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, aunque el propio autor indica que se trata de un "candidate third-party model submitted for governance review", es decir, un modelo pendiente de validación interna antes de su aprobación para uso en producción.
 
 La ficha disponible es extremadamente escasa: no se especifican parámetros, arquitectura, contexto, idiomas soportados ni datos de entrenamiento. Únicamente se indican requisitos de despliegue (8 GB de memoria GPU, batch size recomendado de 16 y framework transformers). Esto limita cualquier evaluación técnica rigurosa, por lo que la presente ficha se basa exclusivamente en la información pública proporcionada y marca como "no disponible" todos los datos no confirmados.
 
@@ -21,7 +21,7 @@ La ficha disponible es extremadamente escasa: no se especifican parámetros, arq
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (si es un transformer, un modelo de visión-lenguaje, un OCR tradicional, etc.). Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico disponible es que el framework de despliegue es transformers, lo que sugiere que el modelo es compatible con la biblioteca homónima de HuggingFace, pero no aporta detalles sobre la arquitectura interna.
+No se ha publicado información sobre la arquitectura del modelo (si es un transformer, un modelo de visión-lenguaje, un OCR tradicional, etc.). Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El único dato técnico disponible es que el framework de despliegue es transformers, lo que sugiere que el modelo es compatible con la biblioteca homónima de Hugging Face, pero no aporta detalles sobre la arquitectura interna.
 
 ## Capacidades
 
@@ -64,4 +64,4 @@ No disponible. No se proporcionan referencias a otros modelos de extracción de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/ftfp1243-invoice-ocr
+- Modelo en Hugging Face: https://huggingface.co/Roy229/ftfp1243-invoice-ocr

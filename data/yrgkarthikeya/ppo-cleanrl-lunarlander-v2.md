@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YRGKarthikeya/ppo-cleanrl-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. Lo publica el usuario YRGKarthikeya en HuggingFace y, por las etiquetas de la model card (custom-implementation, deep-rl-course), se trata de un ejercicio practico de un curso de deep reinforcement learning mas que de un modelo orientado a produccion.
+YRGKarthikeya/ppo-cleanrl-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. Lo publica el usuario YRGKarthikeya en Hugging Face y, por las etiquetas de la model card (custom-implementation, deep-rl-course), se trata de un ejercicio practico de un curso de deep reinforcement learning mas que de un modelo orientado a produccion.
 
 No es un modelo de lenguaje: no procesa ni genera texto, no tiene parametros de miles de millones ni ventana de contexto. Es una politica entrenada que, dado un vector de observacion de 8 dimensiones del entorno LunarLander-v2, emite una de las 4 acciones discretas disponibles (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho). Su relevancia es, por tanto, docente y experimental: sirve como referencia reproducible de un pipeline PPO, no como componente de un sistema conversacional o de generacion.
 
@@ -28,7 +28,7 @@ Otros datos de interes:
 | Entorno | LunarLander-v2 (Gymnasium) |
 | Espacio de acciones | discreto, 4 acciones |
 | Algoritmo | PPO |
-| Pipeline declarado en HuggingFace | reinforcement-learning |
+| Pipeline declarado en Hugging Face | reinforcement-learning |
 | Hiperparametros | no disponibles (la seccion "Hyperparameters" del README esta vacia) |
 | Fecha de creacion | 2026-09-21 |
 | Fecha de actualizacion | 2026-09-21 |
@@ -58,7 +58,7 @@ Tampoco hay datos sobre el esquema de entrenamiento mas alla del algoritmo: no s
 - Docencia de algoritmos de policy gradient: ilustrar el flujo completo de PPO (recoleccion de rollouts, estimacion de ventaja, actualizacion con clipping) sobre un entorno de control continuo-discreto de dificultad media.
 - Pruebas de infraestructura de RL: verificar que un pipeline de evaluacion, registro de metricas o integracion con TensorBoard funciona correctamente usando este agente como carga de prueba (la etiqueta tensorboard aparece en el repositorio).
 - Benchmark interno de agentes: servir como linea base debil frente a otros agentes PPO o DQN en LunarLander-v2 dentro de un experimento comparativo propio, siempre que se reevalúe con el mismo numero de episodios y semillas.
-- Material de auditoria de publicaciones en HuggingFace: caso practico de model card incompleta, util para discutir que metadatos minimos deberia incluir un agente de RL publicado (licencia, hiperparametros, artefacto de pesos, protocolo de evaluacion).
+- Material de auditoria de publicaciones en Hugging Face: caso practico de model card incompleta, util para discutir que metadatos minimos deberia incluir un agente de RL publicado (licencia, hiperparametros, artefacto de pesos, protocolo de evaluacion).
 
 ## Benchmarks y rendimiento
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 | Modelo | Entorno | Algoritmo | Retorno declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YRGKarthikeya/ppo-cleanrl-LunarLander-v2 | LunarLander-v2 | PPO | -42,69 +/- 18,71 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| Otros agentes PPO para LunarLander-v2 en HuggingFace | LunarLander-v2 | PPO | no disponible | no disponible | no analizado en la informacion disponible |
+| YRGKarthikeya/ppo-cleanrl-LunarLander-v2 | LunarLander-v2 | PPO | -42,69 +/- 18,71 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| Otros agentes PPO para LunarLander-v2 en Hugging Face | LunarLander-v2 | PPO | no disponible | no disponible | no analizado en la informacion disponible |
 | Agentes DQN para LunarLander-v2 | LunarLander-v2 | DQN | no disponible | no disponible | no analizado en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -102,5 +102,5 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/ppo-cleanrl-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/ppo-cleanrl-LunarLander-v2
 - Paper, blog, repositorio o demo adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo y no se incluyen.

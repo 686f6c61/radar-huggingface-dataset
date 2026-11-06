@@ -4,7 +4,7 @@
 
 NeuOctree es una representación neuronal explícita de formas 3D presentada en el artículo "Neural Explicit Shape Representation" (arXiv:2610.38441) por Wang, Lu, Chen y Wang. No es un modelo de lenguaje ni un generador multimodal al uso, sino un modelo de reconstrucción y representación geométrica basado en octrees neuronales, entrenado sobre el conjunto de datos Objaverse. Su objetivo es codificar la geometría y el color de objetos 3D en una estructura de octree con payloads de tamaño muy reducido (desde 81 KiB hasta 823 KiB por objeto), manteniendo la capacidad de reconstruir la forma con precisión.
 
-El repositorio de HuggingFace (JKAlice/neural-octree) distribuye únicamente pesos y manifiestos de ficheros, no los datos de entrenamiento ni las mallas originales. Incluye un checkpoint feedforward principal de 36.888.057 parámetros con cuatro etapas de refinamiento recurrente, y 28 checkpoints de inferencia empaquetados en fp16 para siete objetos y cuatro presupuestos de tamaño. El entrenamiento se realizó sobre 31.761 objetos de Objaverse con ocho vistas de 512×512 por objeto, y la validación sobre 1.000 objetos sin solapamiento.
+El repositorio de Hugging Face (JKAlice/neural-octree) distribuye únicamente pesos y manifiestos de ficheros, no los datos de entrenamiento ni las mallas originales. Incluye un checkpoint feedforward principal de 36.888.057 parámetros con cuatro etapas de refinamiento recurrente, y 28 checkpoints de inferencia empaquetados en fp16 para siete objetos y cuatro presupuestos de tamaño. El entrenamiento se realizó sobre 31.761 objetos de Objaverse con ocho vistas de 512×512 por objeto, y la validación sobre 1.000 objetos sin solapamiento.
 
 La relevancia de este lanzamiento es doble: por un lado, publica los pesos originales y los manifiestos de split exactos, lo que facilita la reproducibilidad; por otro, explora una vía de representación 3D compacta y explícita que compite con alternativas implícitas como NeRF o Gaussian Splatting en términos de tamaño de payload y velocidad de decodificación. La licencia no está especificada en la información disponible.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye comparaciones con NeRF, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JKAlice/neural-octree
+- Hugging Face: https://huggingface.co/JKAlice/neural-octree
 - Paper: https://arxiv.org/abs/2610.38441
 - Código e instrucciones: https://github.com/octree-nn/neural-octree
 - Dataset Objaverse: https://huggingface.co/datasets/allenai/objaverse

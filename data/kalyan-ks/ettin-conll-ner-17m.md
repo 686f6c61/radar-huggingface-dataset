@@ -4,7 +4,7 @@
 
 El modelo `kalyan-ks/ettin-conll-ner-17m` es un modelo de clasificación de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER). Ha sido desarrollado por Kalyan KS, un consultor e investigador en PLN con más de siete años de experiencia y más de 1500 citas académicas. El modelo se basa en la arquitectura ModernBERT, una evolución del BERT original que incorpora mejoras como embeddings rotatorios y atención eficiente, y está ajustado para la tarea de NER sobre el conjunto de datos CoNLL, probablemente CoNLL-2003, aunque esta información no se confirma explícitamente en la ficha del modelo.
 
-Con solo 16,8 millones de parámetros, se trata de un modelo extremadamente ligero, diseñado para ejecutarse en entornos con recursos limitados, como CPUs o GPUs de gama baja. Su relevancia actual radica en la creciente demanda de modelos pequeños y eficientes para tareas específicas de procesamiento de lenguaje natural, especialmente en aplicaciones de extracción de información en tiempo real o en dispositivos con restricciones de memoria. La ficha del modelo en HuggingFace está prácticamente vacía, por lo que la mayoría de los detalles técnicos y de entrenamiento no están disponibles públicamente.
+Con solo 16,8 millones de parámetros, se trata de un modelo extremadamente ligero, diseñado para ejecutarse en entornos con recursos limitados, como CPUs o GPUs de gama baja. Su relevancia actual radica en la creciente demanda de modelos pequeños y eficientes para tareas específicas de procesamiento de lenguaje natural, especialmente en aplicaciones de extracción de información en tiempo real o en dispositivos con restricciones de memoria. La ficha del modelo en Hugging Face está prácticamente vacía, por lo que la mayoría de los detalles técnicos y de entrenamiento no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ El ajuste fino (fine-tuning) se ha realizado para la tarea de clasificación de 
 - Clasificación de tokens para reconocimiento de entidades nombradas (NER), identificando entidades como personas, organizaciones, ubicaciones y misceláneas, segun el esquema del dataset CoNLL.
 - Procesamiento de texto en ingles (probablemente, dado el dataset de entrenamiento), aunque no se confirma oficialmente.
 - Inferencia rapida y con bajo consumo de recursos gracias a su tamano reducido (17M parametros).
-- Compatible con la libreria transformers de HuggingFace y con los pipelines de token-classification.
+- Compatible con la libreria transformers de Hugging Face y con los pipelines de token-classification.
 - No se han documentado capacidades adicionales como generacion de texto, razonamiento, tool calling o soporte multimodal.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: al ser un modelo de 17M parametros, la inferencia puede ejecutarse en CPU con menos de 1 GB de RAM. En GPU, cabria incluso en tarjetas con 1-2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti o inferiores).
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, aunque no es necesaria. Una RTX 3060 o superior permitiria procesamiento por lotes sin problemas.
 - Compatibilidad con consumer GPU: si, el modelo cabe en practicamente cualquier GPU de consumo actual.
-- Opciones de despliegue: se puede utilizar con la libreria transformers de HuggingFace (pipeline de token-classification), con ONNX Runtime para inferencia en CPU, o con servidores de inferencia como Hugging Face Inference Endpoints. Al ser un modelo pequeno, no requiere herramientas como vLLM o TGI, aunque tambien son compatibles.
+- Opciones de despliegue: se puede utilizar con la libreria transformers de Hugging Face (pipeline de token-classification), con ONNX Runtime para inferencia en CPU, o con servidores de inferencia como Hugging Face Inference Endpoints. Al ser un modelo pequeno, no requiere herramientas como vLLM o TGI, aunque tambien son compatibles.
 - Latencia y throughput estimados: no disponibles, pero por el tamano del modelo se espera una latencia de pocos milisegundos por frase en CPU moderna y un throughput alto en GPU.
 
 ## Comparativa con modelos similares
@@ -69,8 +69,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace - kalyan-ks/ettin-conll-ner-17m](https://huggingface.co/kalyan-ks/ettin-conll-ner-17m)
-- [HuggingFace - kalyan-ks/ettin-17m-nemotron-pii](https://huggingface.co/kalyan-ks/ettin-17m-nemotron-pii) (modelo relacionado del mismo autor)
+- [Hugging Face - kalyan-ks/ettin-conll-ner-17m](https://huggingface.co/kalyan-ks/ettin-conll-ner-17m)
+- [Hugging Face - kalyan-ks/ettin-17m-nemotron-pii](https://huggingface.co/kalyan-ks/ettin-17m-nemotron-pii) (modelo relacionado del mismo autor)
 - [GitHub - KalyanKS-NLP](https://github.com/KalyanKS-NLP/)
 - [BenchmarkList - Perfil de Kalyan KS](https://benchmarklist.com/providers/kalyan-ks/)
 - [Arxiv - Lacoste et al. (2019), referenciado en la model card](https://arxiv.org/abs/1910.09700)

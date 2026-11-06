@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Idiomas | Condicionamiento por hablante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Humaneness Voice Large 1.6 Alpha | TTS expresivo con direcciones de actuación | en, de, fr, nl, es | Sí (WAV de referencia o alias) | CC-BY-4.0 | Pesos públicos en HuggingFace |
-| MOSS Audio Tokenizer v2 | Codec/tokenizador de audio (componente, no TTS completo) | no disponible | no disponible | no disponible | Pesos públicos en HuggingFace |
-| Humaneness Voice Large 1.5 Alpha | TTS expresivo (modelo base, sin fusión RealSpeech) | en, de, fr, nl, es | Sí | CC-BY-4.0 | Pesos públicos en HuggingFace |
+| Humaneness Voice Large 1.6 Alpha | TTS expresivo con direcciones de actuación | en, de, fr, nl, es | Sí (WAV de referencia o alias) | CC-BY-4.0 | Pesos públicos en Hugging Face |
+| MOSS Audio Tokenizer v2 | Codec/tokenizador de audio (componente, no TTS completo) | no disponible | no disponible | no disponible | Pesos públicos en Hugging Face |
+| Humaneness Voice Large 1.5 Alpha | TTS expresivo (modelo base, sin fusión RealSpeech) | en, de, fr, nl, es | Sí | CC-BY-4.0 | Pesos públicos en Hugging Face |
 
 No se dispone de datos comparativos de rendimiento con otros sistemas TTS expresivos de la categoría (por ejemplo, modelos comerciales o de la comunidad) en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento con otros sistemas TTS expres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-1.6-Alpha
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-1.6-Alpha
 - Modelo base (1.5 Alpha): https://huggingface.co/laion/Humaneness-Voice-Large-1.5-Alpha
 - Adaptadores especialista (rango 32): https://huggingface.co/laion/Humaneness-Voice-Large-1.5-Intense-Bucket-LoRAs
 - Adaptadores históricos RealSpeech: https://huggingface.co/laion/Humaneness-Voice-Large-1.5-RealSpeech-LoRAs

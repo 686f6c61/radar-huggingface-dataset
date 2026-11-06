@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepPlant-AT-GEP es un modelo de aprendizaje profundo orientado a genómica regulatoria de plantas, publicado en HuggingFace por el usuario Addaoud bajo licencia MIT. Con 248.895.863 parámetros (aproximadamente 249 millones), se distribuye en formato safetensors y emplea la integración `PyTorchModelHubMixin` de HuggingFace Hub, lo que permite cargarlo directamente desde el repositorio con una API de alto nivel. El pipeline declarado es `other`, coherente con su naturaleza de modelo científico especializado y no de generación de lenguaje.
+DeepPlant-AT-GEP es un modelo de aprendizaje profundo orientado a genómica regulatoria de plantas, publicado en Hugging Face por el usuario Addaoud bajo licencia MIT. Con 248.895.863 parámetros (aproximadamente 249 millones), se distribuye en formato safetensors y emplea la integración `PyTorchModelHubMixin` de Hugging Face Hub, lo que permite cargarlo directamente desde el repositorio con una API de alto nivel. El pipeline declarado es `other`, coherente con su naturaleza de modelo científico especializado y no de generación de lenguaje.
 
 La información pública disponible es muy limitada: la model card no incluye descripción funcional, paper asociado, documentación técnica ni detalles sobre datos de entrenamiento. Los tags del repositorio (`bioinformatics`, `plant-genomics`, `regulatory-genomics`) sugieren que el modelo está diseñado para tareas de predicción en genómica regulatoria vegetal, probablemente clasificación o regresión sobre secuencias genómicas, pero no se especifica la tarea exacta ni el formato de entrada y salida.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: número de tokens o pares de
 ## Capacidades
 
 - Predicción en genómica regulatoria de plantas, según los tags del repositorio (`plant-genomics`, `regulatory-genomics`); la tarea exacta no está especificada.
-- Procesamiento de datos biológicos con integración nativa en el ecosistema HuggingFace mediante `PyTorchModelHubMixin`.
+- Procesamiento de datos biológicos con integración nativa en el ecosistema Hugging Face mediante `PyTorchModelHubMixin`.
 - Carga programática desde el Hub con `from_pretrained`, lo que facilita su uso en pipelines de PyTorch.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -42,9 +42,9 @@ Tampoco hay datos sobre el corpus de entrenamiento: número de tokens o pares de
 - Investigación en regulación génica vegetal: el modelo puede integrarse en estudios sobre elementos reguladores en genomas de plantas, aprovechando los tags de `regulatory-genomics`; requiere validación experimental previa por la ausencia de documentación.
 - Anotación funcional de secuencias: como componente de un pipeline bioinformático que clasifique o puntúe regiones genómicas candidatas, siempre que se confirme la tarea exacta del modelo.
 - Reproducción de experimentos académicos: al estar bajo licencia MIT y en safetensors, permite cargar los pesos y reproducir resultados en entornos de investigación sin restricciones de uso comercial.
-- Prototipado rápido con HuggingFace Hub: la integración `PyTorchModelHubMixin` simplifica la incorporación del modelo en notebooks y scripts de experimentación.
+- Prototipado rápido con Hugging Face Hub: la integración `PyTorchModelHubMixin` simplifica la incorporación del modelo en notebooks y scripts de experimentación.
 - Comparación de baselines en genómica de plantas: puede servir como referencia inicial frente a otros modelos especializados, dado su tamaño moderado (249 M de parámetros) y su licencia permisiva.
-- Docencia y formación en bioinformática: útil como ejemplo práctico de modelo biológico empaquetado con estándares de HuggingFace, aunque la falta de documentación limita su valor didáctico sin material complementario.
+- Docencia y formación en bioinformática: útil como ejemplo práctico de modelo biológico empaquetado con estándares de Hugging Face, aunque la falta de documentación limita su valor didáctico sin material complementario.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Addaoud/DeepPlant-AT-GEP
+- Modelo en Hugging Face: https://huggingface.co/Addaoud/DeepPlant-AT-GEP
 - Código referenciado en la model card (plantilla sin completar): https://huggingface.co/your-username/deepplant
 - Paper: no disponible
 - Documentación: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Halation Anima v1 es un modelo de generacion de imagenes por difusion orientado a estilo anime, publicado por el usuario Techannel en HuggingFace. No se trata de un modelo de lenguaje: es un checkpoint de pesos cuyo objetivo es producir ilustraciones a partir de prompts de texto, y se distribuye como un unico fichero de aproximadamente 4,2 GB dentro del repositorio. La model card es muy breve y se limita a indicar como cargarlo y que hiperparametros usar, sin detallar arquitectura, datos de entrenamiento ni parametros.
+Halation Anima v1 es un modelo de generacion de imagenes por difusion orientado a estilo anime, publicado por el usuario Techannel en Hugging Face. No se trata de un modelo de lenguaje: es un checkpoint de pesos cuyo objetivo es producir ilustraciones a partir de prompts de texto, y se distribuye como un unico fichero de aproximadamente 4,2 GB dentro del repositorio. La model card es muy breve y se limita a indicar como cargarlo y que hiperparametros usar, sin detallar arquitectura, datos de entrenamiento ni parametros.
 
 El modelo se ha disenado para el ecosistema ComfyUI. El autor especifica que debe colocarse en `models/diffusion_models` y cargarse con el nodo UNETLoader (no con el cargador de checkpoints habitual), usando `qwen_3_06b_base.safetensors` como text encoder mediante CLIPLoader y `qwen_image_vae.safetensors` como VAE. Esa combinacion de codificador de texto y VAE indica una arquitectura compatible con la familia Qwen-Image, aunque la model card no lo confirma explicitamente.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Halation Anima v1 | Difusion para anime, cargado como UNET en ComfyUI | no disponible | no disponible | other (terminos sin detallar) | HuggingFace, 4,2 GB, sin descargas registradas en la consulta |
+| Halation Anima v1 | Difusion para anime, cargado como UNET en ComfyUI | no disponible | no disponible | other (terminos sin detallar) | Hugging Face, 4,2 GB, sin descargas registradas en la consulta |
 | Animagine XL 4.0 | Difusion SDXL para anime | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Qwen-Image | Difusion de proposito general, mismo ecosistema de VAE y encoder | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -86,6 +86,6 @@ No se dispone de datos verificados de parametros, contexto ni licencia de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Techannel/halation-anima-v1
+- Hugging Face: https://huggingface.co/Techannel/halation-anima-v1
 - Componentes referenciados en la model card (nombres de fichero, sin enlace publicado): `qwen_3_06b_base.safetensors`, `qwen_image_vae.safetensors`
 - No se han encontrado papers, repositorios, demos ni articulos de blog relacionados con este modelo en la busqueda web disponible.

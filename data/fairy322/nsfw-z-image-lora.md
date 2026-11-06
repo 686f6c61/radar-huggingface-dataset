@@ -4,7 +4,7 @@
 
 El repositorio `fairy322/nsfw-z-image-lora` contiene un conjunto de adaptadores LoRA (Low-Rank Adaptation) desarrollados por el usuario `fairy322` sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Se trata de una colección de LoRAs especializados en la generación de imágenes con contenido sexual explícito (NSFW), tal como indica el propio README del repositorio, que lista dieciocho adaptadores distintos con nombres como `sex`, `anal`, `pussy`, `blowjob` o `tentacled`.
 
-El modelo está orientado a modificar el comportamiento del modelo base de Tongyi-MAI para producir imágenes de carácter adulto. El repositorio tiene un tamaño de 7,7 GB y está publicado bajo licencia Apache 2.0. No se proporcionan en el README datos técnicos sobre el proceso de entrenamiento, la arquitectura del adaptador ni los datasets utilizados. El repositorio no registra descargas ni "likes" en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+El modelo está orientado a modificar el comportamiento del modelo base de Tongyi-MAI para producir imágenes de carácter adulto. El repositorio tiene un tamaño de 7,7 GB y está publicado bajo licencia Apache 2.0. No se proporcionan en el README datos técnicos sobre el proceso de entrenamiento, la arquitectura del adaptador ni los datasets utilizados. El repositorio no registra descargas ni "likes" en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -88,11 +88,11 @@ No se han identificado modelos comparables en la informacion disponible. Se podr
 - Ausencia de documentacion tecnica: el README no incluye informacion sobre arquitectura, entrenamiento, datos de entrenamiento ni resultados de evaluacion.
 - Riesgo de sesgos y alucinaciones: al no existir evaluaciones publicadas, se desconocen las limitaciones visuales del modelo base con estos adaptadores, asi como la calidad de las imagenes generadas.
 - Implicaciones legales: aunque la licencia Apache 2.0 permite uso comercial, la generacion de contenido NSFW puede estar sujeta a restricciones legales y de plataforma segun la jurisdiccion.
-- Sin validacion comunitaria: el repositorio registra cero descargas y cero "likes", lo que indica que no ha sido probado ni validado por la comunidad de HuggingFace.
+- Sin validacion comunitaria: el repositorio registra cero descargas y cero "likes", lo que indica que no ha sido probado ni validado por la comunidad de Hugging Face.
 - Dependencia del modelo base: el funcionamiento del modelo depende de `Tongyi-MAI/Z-Image-Turbo`, del que no se proporcionan especificaciones en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fairy322/nsfw-z-image-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/fairy322/models
+- Repositorio en Hugging Face: https://huggingface.co/fairy322/nsfw-z-image-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/fairy322/models
 - Enlaces a los LoRAs individuales (en Civitai) listados en el README: consultar la tabla de capacidades de esta ficha para obtener cada URL concreta.

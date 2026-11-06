@@ -89,7 +89,7 @@ El modelo se diferencia de su punto de partida MixSFT por la optimización exclu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-IF
+- Modelo en Hugging Face: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-IF
 - Repositorio GitHub de Open-MOPD: https://github.com/BytedTsinghua-SIA/Open-MOPD
 - Modelo base MixSFT: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data

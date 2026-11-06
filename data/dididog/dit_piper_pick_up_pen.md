@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dididog/dit_piper_pick_up_pen` es una política de robótica (no un modelo de lenguaje) entrenada con LeRobot y publicada por el usuario de HuggingFace dididog (Yi-Shiang Huang). Implementa la arquitectura Multi-Task Diffusion Transformer (DiT), descrita en el artículo arXiv 2507.05331, que extiende el Diffusion Policy clásico sustituyendo la red denoiser por un Diffusion Transformer de gran tamaño y añadiendo condicionamiento conjunto de texto e imágenes para aprendizaje robótico multitarea. El checkpoint publicado contiene 248.893.191 parámetros según los pesos en safetensors, aunque la model card del método menciona aproximadamente 450M de parámetros para la variante de referencia.
+El modelo `dididog/dit_piper_pick_up_pen` es una política de robótica (no un modelo de lenguaje) entrenada con LeRobot y publicada por el usuario de Hugging Face dididog (Yi-Shiang Huang). Implementa la arquitectura Multi-Task Diffusion Transformer (DiT), descrita en el artículo arXiv 2507.05331, que extiende el Diffusion Policy clásico sustituyendo la red denoiser por un Diffusion Transformer de gran tamaño y añadiendo condicionamiento conjunto de texto e imágenes para aprendizaje robótico multitarea. El checkpoint publicado contiene 248.893.191 parámetros según los pesos en safetensors, aunque la model card del método menciona aproximadamente 450M de parámetros para la variante de referencia.
 
 El problema que resuelve es el de la manipulación robótica por imitación: a partir de demostraciones teleoperadas, la política aprende a mapear observaciones (estado articular de 7 dimensiones y dos cámaras RGB de 720x1280) a comandos de acción de 7 dimensiones. En este caso concreto está especializada en una única tarea: "Pick up the marker and put it into the pen holder", entrenada sobre el dataset `dididog/piper_pick_up_pen` con solo 11 episodios y 6196 fotogramas a 15 FPS. Su relevancia es doble: por un lado demuestra que un DiT puede alcanzar destreza con presupuestos de parámetros moderados y pocos datos; por otro, es un ejemplo reproducible del flujo completo de LeRobot (grabación, entrenamiento, rollout) sobre un brazo Piper.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dididog/dit_piper_pick_up_pen` | Diffusion Transformer multi-tarea | 248.893.191 | Estado (7,) + 2 imagenes 3x720x1280 | Apache-2.0 | HuggingFace, libreria `lerobot` |
+| `dididog/dit_piper_pick_up_pen` | Diffusion Transformer multi-tarea | 248.893.191 | Estado (7,) + 2 imagenes 3x720x1280 | Apache-2.0 | Hugging Face, libreria `lerobot` |
 | Diffusion Policy (original) | Politica de difusion con denoiser convolucional (UNet) | No disponible | Estado + imagenes | No disponible | Implementado en LeRobot |
 | ACT (Action Chunking Transformer) | Transformer con chunking de acciones | No disponible | Estado + imagenes | No disponible | Implementado en LeRobot |
 | SmolVLA | Vision-language-action de pequeno tamano | No disponible | Estado + imagenes + texto | No disponible | No disponible |
@@ -100,7 +100,7 @@ No se dispone de cifras verificadas de parámetros ni de benchmarks para las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dididog/dit_piper_pick_up_pen
+- Modelo en Hugging Face: https://huggingface.co/dididog/dit_piper_pick_up_pen
 - Dataset de entrenamiento: https://huggingface.co/datasets/dididog/piper_pick_up_pen
 - Articulo (paper) del metodo: https://huggingface.co/papers/2507.05331 (arXiv 2507.05331)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

@@ -12,7 +12,7 @@ Su relevancia actual radica en que ataca un cuello de botella concreto de los ag
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada explicitamente en la informacion disponible; la nomenclatura A3B y el ratio entre parametros totales y activos indican un transformer con mixture-of-experts (tag de HuggingFace: `hy_v3`) |
+| Arquitectura | No detallada explicitamente en la informacion disponible; la nomenclatura A3B y el ratio entre parametros totales y activos indican un transformer con mixture-of-experts (tag de Hugging Face: `hy_v3`) |
 | Parametros totales | 30.064.725.888 (30,06 B) |
 | Parametros activos | Aproximadamente 3 B por token (segun denominacion A3B y model card) |
 | Longitud de contexto | No disponible |
@@ -103,7 +103,7 @@ La comparacion relevante para este modelo no es de chat generalista, sino de des
 
 | Modelo | Parametros | Contexto | Media macro (4 harnesses) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-Memory-30B-A3B | 30,06 B totales / ~3 B activos | No disponible | 55,49 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Hy-Memory-30B-A3B | 30,06 B totales / ~3 B activos | No disponible | 55,49 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Claude Opus 5 | No disponible | No disponible | 54,62 | Propietaria | Solo API |
 | DeepSeek V4.1 Flash | No disponible | No disponible | 53,64 | No disponible | Endpoint (referido como DeepSeek V4.1 Flash en el informe) |
 | Hy3 | No disponible | No disponible | 51,63 | No disponible | No disponible en la informacion proporcionada |
@@ -123,7 +123,7 @@ La comparacion relevante para este modelo no es de chat generalista, sino de des
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-Memory-30B-A3B
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Repositorio en GitHub: https://github.com/Tencent-Hunyuan/Hy-Memory
 - Informe tecnico en arXiv (PDF): https://arxiv.org/pdf/2610.22196
 - Informe tecnico en arXiv (HTML): https://arxiv.org/html/2610.22196v1

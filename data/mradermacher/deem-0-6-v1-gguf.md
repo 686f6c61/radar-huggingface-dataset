@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mradermacher/deem-0.6-v1-GGUF es una colección de cuantizaciones en formato GGUF del modelo LibertAIDAI/deem-0.6-v1, publicada por el usuario mradermacher, que se dedica a generar versiones cuantizadas de modelos abiertos para inferencia en CPU. El modelo base se presenta en HuggingFace con las etiquetas "decision-model", "routing", "cpu-inference", "rust" y "edge", lo que apunta a un uso como componente de decisión o enrutamiento más que como modelo generativo de propósito general. Cuenta con 596.049.920 parámetros (aproximadamente 0,6 mil millones), un tamaño que lo sitúa en la gama de modelos pequenos desplegables en hardware modesto.
+mradermacher/deem-0.6-v1-GGUF es una colección de cuantizaciones en formato GGUF del modelo LibertAIDAI/deem-0.6-v1, publicada por el usuario mradermacher, que se dedica a generar versiones cuantizadas de modelos abiertos para inferencia en CPU. El modelo base se presenta en Hugging Face con las etiquetas "decision-model", "routing", "cpu-inference", "rust" y "edge", lo que apunta a un uso como componente de decisión o enrutamiento más que como modelo generativo de propósito general. Cuenta con 596.049.920 parámetros (aproximadamente 0,6 mil millones), un tamaño que lo sitúa en la gama de modelos pequenos desplegables en hardware modesto.
 
 El interés principal de esta publicación es la disponibilidad de 12 variantes de cuantización que van desde Q2_K (0,4 GB) hasta f16 (1,3 GB), lo que permite ejecutar el modelo en equipos sin GPU dedicada, en placas tipo Raspberry Pi o integrado en servicios escritos en Rust. El repositorio ocupa 5,7 GB en total y no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de una publicación reciente y sin validación comunitaria documentada.
 

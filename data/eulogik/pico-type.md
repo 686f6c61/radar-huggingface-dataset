@@ -96,16 +96,16 @@ pico-type se diferencia por su naturaleza multi-head y byte-level, que le permit
 - El modelo no genera texto ni realiza razonamiento; es exclusivamente un clasificador.
 - Riesgo de sesgo en la detección de idioma: aunque la precisión global es alta (98,3 %), podría fallar en dialectos o variantes no representadas en Wikipedia.
 - La documentación muestra discrepancias en la velocidad de inferencia (18 ms vs <6 ms); conviene validar en el hardware objetivo.
-- El repositorio de HuggingFace ocupa 0,5 GB, aunque el archivo ONNX individual es de ~9 MB; el tamaño adicional probablemente corresponde a checkpoints PyTorch y otros artefactos.
+- El repositorio de Hugging Face ocupa 0,5 GB, aunque el archivo ONNX individual es de ~9 MB; el tamaño adicional probablemente corresponde a checkpoints PyTorch y otros artefactos.
 - No hay información sobre cuantizaciones oficiales (INT8, INT4), lo que podría limitar su uso en dispositivos con restricciones de memoria muy estrictas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eulogik/pico-type
+- Modelo en Hugging Face: https://huggingface.co/eulogik/pico-type
 - Repositorio GitHub: https://github.com/eulogik/pico-type
 - Sitio web del proyecto: https://eulogik.github.io/pico-type/
-- Espacio Gradio en HuggingFace: https://huggingface.co/spaces/eulogik/pico-type
-- Versión v0.2 en HuggingFace: https://huggingface.co/eulogik/pico-type-v02
+- Espacio Gradio en Hugging Face: https://huggingface.co/spaces/eulogik/pico-type
+- Versión v0.2 en Hugging Face: https://huggingface.co/eulogik/pico-type-v02
 - Sitio web de eulogik: https://eulogik.com/
 - Paquete PyPI: https://pypi.org/project/pico-type/
 - Dataset The Heap: https://huggingface.co/datasets/AISE-TUDelft/the-heap

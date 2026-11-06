@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minion1388/bertimbau-b2w` es un modelo de la familia BERT publicado en HuggingFace por el usuario `minion1388`. El nombre sugiere un ajuste o variante sobre BERTimbau, el modelo BERT en portugués desarrollado originalmente por Neuralmind, aunque no se dispone de documentación oficial que confirme el proceso de entrenamiento ni la tarea concreta para la que fue adaptado. El repositorio contiene únicamente pesos en formato safetensors y no incluye model card descriptiva.
+`minion1388/bertimbau-b2w` es un modelo de la familia BERT publicado en Hugging Face por el usuario `minion1388`. El nombre sugiere un ajuste o variante sobre BERTimbau, el modelo BERT en portugués desarrollado originalmente por Neuralmind, aunque no se dispone de documentación oficial que confirme el proceso de entrenamiento ni la tarea concreta para la que fue adaptado. El repositorio contiene únicamente pesos en formato safetensors y no incluye model card descriptiva.
 
 Con 108.924.674 parámetros, el modelo encaja en el rango de un BERT-base (aproximadamente 110 millones de parámetros), lo que lo sitúa como un encoder de tamaño moderado apto para tareas de comprensión del lenguaje, clasificación y extracción de características. El tamaño del repositorio (0,4 GB) es coherente con pesos en precisión FP32 o FP16 de un modelo de esta escala.
 
@@ -57,19 +57,19 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en FP32 (109 M parámetros × 4 bytes), unos 0,2 GB en FP16 y menos de 0,15 GB en cuantización INT8. Cifras orientativas basadas en el recuento de parámetros, no en mediciones del repositorio.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060 o superior permite inferencia por lotes con holgura. Para entrenamiento o ajuste fino, se recomienda una RTX 3090/4090 o A100 por el mayor consumo de memoria durante el backward pass.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, TorchScript y, previsiblemente, con llama.cpp para BERT (soporte limitado) o con servidores de inferencia como TGI si se convierte a un formato compatible. Al no publicarse GGUF, no es directamente usable en Ollama sin conversión.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, TorchScript y, previsiblemente, con llama.cpp para BERT (soporte limitado) o con servidores de inferencia como TGI si se convierte a un formato compatible. Al no publicarse GGUF, no es directamente usable en Ollama sin conversión.
 - Latencia y throughput estimados: no disponibles; para un BERT-base en una GPU moderna se esperan latencias de milisegundos por secuencia corta, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `minion1388/bertimbau-b2w` | 108,9 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `neuralmind/bert-base-portuguese-cased` (BERTimbau) | ~110 M | 512 tokens | MIT (según model card pública) | HuggingFace, ampliamente usado |
-| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| `distilbert-base-multilingual-cased` | ~135 M | 512 tokens | Apache 2.0 | HuggingFace, orientado a eficiencia |
+| `minion1388/bertimbau-b2w` | 108,9 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `neuralmind/bert-base-portuguese-cased` (BERTimbau) | ~110 M | 512 tokens | MIT (según model card pública) | Hugging Face, ampliamente usado |
+| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| `distilbert-base-multilingual-cased` | ~135 M | 512 tokens | Apache 2.0 | Hugging Face, orientado a eficiencia |
 
-La comparativa se basa en modelos de la misma familia y escala; los datos de los competidores provienen de sus model cards públicas, mientras que los del modelo evaluado proceden únicamente de los metadatos de HuggingFace. No hay información de rendimiento comparativo para `bertimbau-b2w`.
+La comparativa se basa en modelos de la misma familia y escala; los datos de los competidores provienen de sus model cards públicas, mientras que los del modelo evaluado proceden únicamente de los metadatos de Hugging Face. No hay información de rendimiento comparativo para `bertimbau-b2w`.
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ La comparativa se basa en modelos de la misma familia y escala; los datos de los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minion1388/bertimbau-b2w
+- Hugging Face: https://huggingface.co/minion1388/bertimbau-b2w
 - BERTimbau original (referencia): https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Documentación de Transformers para BERT: https://huggingface.co/docs/transformers/model_doc/bert

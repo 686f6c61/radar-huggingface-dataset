@@ -69,7 +69,7 @@ No se han publicado comparaciones con otras politicas ni resultados en benchmark
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lunaluna-v1-roadster-ppo | PPO, MLP Actor-Critic | no disponible | no aplica (estado de 7 dim.) | 92,0 % de exito en 50 episodios | no disponible | HuggingFace, repo de 0,0 GB |
+| connectailab-rl-lunaluna-v1-roadster-ppo | PPO, MLP Actor-Critic | no disponible | no aplica (estado de 7 dim.) | 92,0 % de exito en 50 episodios | no disponible | Hugging Face, repo de 0,0 GB |
 | Politicas PPO de Stable-Baselines3 (referencia generica) | PPO, MLP configurable | segun configuracion | no aplica | depende del entorno | MIT (SB3) | pip, GitHub |
 | Agentes RL de CleanRL (referencia generica) | PPO de un solo fichero | segun configuracion | no aplica | depende del entorno | MIT | GitHub |
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables especificos para el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-roadster-ppo
 - Curva de aprendizaje (referenciada en la model card): `learning_curve.png`
 - Video de replay (referenciado en la model card): `replay.mp4`
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

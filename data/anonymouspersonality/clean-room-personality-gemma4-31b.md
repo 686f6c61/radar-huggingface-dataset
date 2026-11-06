@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clean-room-personality-gemma4-31b | Gemma 4 31B | adaptadores LoRA sobre 31B | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| clean-room-personality-gemma4-31b | Gemma 4 31B | adaptadores LoRA sobre 31B | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | gemma4-26b-a4b (misma receta) | Gemma 4 26B-A4B | adaptadores LoRA sobre 26B MoE | no disponible | no disponible | Incluido en el mismo repo |
 | gemma4-e4b (misma receta) | Gemma 4 E4B | adaptadores LoRA sobre E4B | no disponible | no disponible | Incluido en el mismo repo |
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de otras familias dedica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonymousPersonality/clean-room-personality-gemma4-31b
+- Hugging Face: https://huggingface.co/AnonymousPersonality/clean-room-personality-gemma4-31b
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Base alternativa 26B-A4B: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Base alternativa E4B: https://huggingface.co/google/gemma-4-E4B-it

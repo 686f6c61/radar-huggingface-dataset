@@ -4,7 +4,7 @@
 
 El repositorio GRAI-UNSTPB/gemma4_31b_it_ft_cs_dependency_en contiene un adaptador LoRA (formato PEFT) entrenado mediante SFT sobre el modelo base unsloth/gemma-4-31B-it-unsloth-bnb-4bit, es decir, una versión cuantizada a 4 bits con bitsandbytes de Gemma 4 31B en su variante instruction-tuned. Lo publica el grupo GRAI-UNSTPB y el repositorio ocupa 0,5 GB, un tamaño coherente con pesos de adaptador y no con un modelo completo.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se documentan la tarea objetivo, el dataset de entrenamiento, los hiperparámetros, la licencia, los idiomas ni resultados de evaluación. El nombre del repositorio sugiere un ajuste orientado a "dependencias" sobre datos en inglés, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
+La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se documentan la tarea objetivo, el dataset de entrenamiento, los hiperparámetros, la licencia, los idiomas ni resultados de evaluación. El nombre del repositorio sugiere un ajuste orientado a "dependencias" sobre datos en inglés, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
 Por tanto, esta ficha recoge los metadatos verificables del repositorio y las especificaciones heredadas del modelo base (31B parámetros, pipeline de text-generation, entrenamiento con Unsloth/TRL), y marca como "no disponible" todo aquello que la documentación no cubre. Cualquier evaluación en producción debería ir precedida de una validación empírica propia.
 
@@ -91,7 +91,7 @@ No se han identificado alternativas comparables en la informacion proporcionada,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_dependency_en
+- Repositorio Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_dependency_en
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Articulo citado en los tags (calculador de impacto medioambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

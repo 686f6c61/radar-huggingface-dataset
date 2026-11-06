@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La referencia `davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f20-s0-0eb6e31b2759` no es un modelo de lenguaje, sino un archivo versionado de artefactos de evaluacion publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica identificada como `reports/2026-10-02_all_pending_eval_deployment`. Por tanto, no contiene pesos, tokenizador, configuracion de arquitectura ni ningun artefacto de inferencia utilizable.
+La referencia `davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f20-s0-0eb6e31b2759` no es un modelo de lenguaje, sino un archivo versionado de artefactos de evaluacion publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica identificada como `reports/2026-10-02_all_pending_eval_deployment`. Por tanto, no contiene pesos, tokenizador, configuracion de arquitectura ni ningun artefacto de inferencia utilizable.
 
 El contenido declarado en la model card corresponde a un nivel ("tier") de datos crudos compuesto por episodios y clips en JSON, videos, trazas (traces), registros (logs), un protocolo, un fichero de comprobacion de integridad `SHA256SUMS` generado por el productor y un informe resumido. El tamano del repositorio es de 0,2 GB. El autor indica explicitamente que el paquete es una instantanea (snapshot) y no un espejo de directorio en vivo, y recomienda usar la revision exacta registrada y verificar el `SHA256SUMS`.
 
@@ -65,7 +65,7 @@ El repositorio no contiene pesos ni codigo de evaluacion ejecutable, y la model 
 - VRAM para inferencia: no aplica. No hay pesos que cargar en GPU ni memoria de modelo que estimar.
 - GPU recomendadas: no aplica para inferencia. Para el procesado de los videos y trazas del archivo, cualquier equipo con CPU moderna es suficiente; una GPU con aceleracion de decodificacion de video (por ejemplo, NVENC/NVDEC en tarjetas NVIDIA) puede acelerar la revision de los clips.
 - Cabe en GPU de consumo: no aplica al no existir modelo. El snapshot completo ocupa 0,2 GB, por lo que cabe holgadamente en cualquier disco local o almacenamiento en la nube.
-- Opciones de despliegue: no aplica vLLM, llama.cpp, Ollama ni TGI, ya que no hay pesos. La descarga se realiza mediante el cliente de HuggingFace (`huggingface-cli`, `huggingface_hub`) o Git LFS.
+- Opciones de despliegue: no aplica vLLM, llama.cpp, Ollama ni TGI, ya que no hay pesos. La descarga se realiza mediante el cliente de Hugging Face (`huggingface-cli`, `huggingface_hub`) o Git LFS.
 - Latencia y throughput: no disponibles. Dependeran exclusivamente del coste de decodificar los videos y de parsear los JSON, trazas y logs, no de un modelo.
 - Requisito de almacenamiento: aproximadamente 0,2 GB, mas el espacio adicional necesario para descomprimir o duplicar los artefactos si el flujo de verificacion lo requiere.
 
@@ -88,6 +88,6 @@ No disponible. Este repositorio no es un modelo y no existe una categoria de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f20-s0-0eb6e31b2759
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f20-s0-0eb6e31b2759
 - Receta canonica mencionada en la model card: `reports/2026-10-02_all_pending_eval_deployment` (referencia interna, sin URL publica disponible)
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

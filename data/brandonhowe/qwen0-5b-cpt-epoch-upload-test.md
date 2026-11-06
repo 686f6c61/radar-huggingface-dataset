@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen0.5b-CPT-epoch-upload-test | 0.5B | No disponible | No disponible | HuggingFace |
-| Qwen2.5-0.5B (original) | 0.5B | 32k | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1B | 128k | Licencia de comunidad Llama | HuggingFace |
+| Qwen0.5b-CPT-epoch-upload-test | 0.5B | No disponible | No disponible | Hugging Face |
+| Qwen2.5-0.5B (original) | 0.5B | 32k | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1B | 128k | Licencia de comunidad Llama | Hugging Face |
 
 La comparacion se limita a parametros y contexto porque no hay datos de benchmarks para este fine-tune. En calidad de generacion, el modelo original Qwen2.5-0.5B es la referencia directa, pero este checkpoint no aporta mejoras documentadas.
 
@@ -67,11 +67,11 @@ La comparacion se limita a parametros y contexto porque no hay datos de benchmar
 - Sesgos no evaluados: no hay documentacion sobre evaluacion de sesgos ni seguridad.
 - Riesgo de alucinacion alto por su pequeno tamano y falta de datos de entrenamiento documentados.
 - Limitaciones de contexto: el contexto original de Qwen2.5 es 32k, pero este fine-tune no documenta si lo mantiene.
-- Restricciones de licencia: la licencia aparece como "no disponible" en HuggingFace, lo que impide su uso comercial sin confirmacion del autor.
+- Restricciones de licencia: la licencia aparece como "no disponible" en Hugging Face, lo que impide su uso comercial sin confirmacion del autor.
 - Advertencia importante: es un modelo de prueba (epoch-upload-test) sin respaldo de calidad ni soporte, y no se recomienda su uso en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BrandonHowe/Qwen0.5b-CPT-epoch-upload-test
+- Hugging Face: https://huggingface.co/BrandonHowe/Qwen0.5b-CPT-epoch-upload-test
 - Weights & Biases run: https://wandb.ai/brandon-howe006-new-jersey-institute-of-technology/midtraining/runs/cnjgr4lr
 - TRL: https://github.com/huggingface/trl

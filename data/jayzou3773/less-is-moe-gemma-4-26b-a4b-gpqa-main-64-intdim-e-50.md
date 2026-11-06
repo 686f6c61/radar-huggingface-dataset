@@ -67,10 +67,10 @@ Nota metodológica relevante: la calibración se realizó con 64 muestras de `gp
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50 | 13,8B | no disponible | no disponible | apache-2.0 (con matices sobre el base) | HuggingFace, requiere vLLM especifico |
-| google/gemma-4-26B-A4B (base) | no disponible | no disponible (denominacion A4B) | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 128k (segun model card publica) | apache-2.0 | HuggingFace, amplio soporte de runtimes |
-| Mixtral 8x7B | 46,7B | 12,9B | 32k | apache-2.0 | HuggingFace, amplio soporte de runtimes |
+| less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50 | 13,8B | no disponible | no disponible | apache-2.0 (con matices sobre el base) | Hugging Face, requiere vLLM especifico |
+| google/gemma-4-26B-A4B (base) | no disponible | no disponible (denominacion A4B) | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 128k (segun model card publica) | apache-2.0 | Hugging Face, amplio soporte de runtimes |
+| Mixtral 8x7B | 46,7B | 12,9B | 32k | apache-2.0 | Hugging Face, amplio soporte de runtimes |
 
 Las cifras de Qwen3-30B-A3B y Mixtral 8x7B proceden de sus model cards públicas y se incluyen únicamente como referencia de categoría (MoE abiertos de tamaño comparable); no se ha ejecutado ninguna comparación empírica contra este checkpoint. No hay datos de rendimiento publicados para el modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ Las cifras de Qwen3-30B-A3B y Mixtral 8x7B proceden de sus model cards públicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Repositorio de calibración: https://huggingface.co/jayzou3773/less-is-moe-gpqa-main-calibration-64
 - Dataset de calibración: https://huggingface.co/datasets/Idavidrein/gpqa (revisión 633f5ee89ab8ad4522a9f850766b73f62147ffdd)

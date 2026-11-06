@@ -52,9 +52,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.echo4-renderer-aligned | 9.4B | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9.4B | No disponible | No disponible | HuggingFace |
-| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 | HuggingFace |
+| agentic-ptb/sol-high.echo4-renderer-aligned | 9.4B | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9.4B | No disponible | No disponible | Hugging Face |
+| Llama 3.1 8B | 8.0B | 128K | Llama 3.1 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-9B-Base es la referencia más directa, pero no se han publicado métricas comparativas. Llama 3.1 8B se incluye como alternativa de tamaño similar, aunque su licencia y contexto difieren.
 
@@ -69,5 +69,5 @@ No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-9B-B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.echo4-renderer-aligned
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.echo4-renderer-aligned
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

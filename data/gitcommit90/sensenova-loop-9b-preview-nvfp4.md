@@ -85,8 +85,8 @@ MMLU-Pro: la primera ejecución de v2 fast cayó del 70,0% al 58,3% (−11,7 pp)
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-Preview-NVFP4 (este) | 6,2B (safetensors) | no disponible | Apache-2.0 | safetensors NVFP4 | HuggingFace, 59 descargas |
-| SenseNova-Loop-9B-Preview (base) | no disponible | no disponible | Apache-2.0 | safetensors BF16 | HuggingFace (oficial) |
+| SenseNova-Loop-9B-Preview-NVFP4 (este) | 6,2B (safetensors) | no disponible | Apache-2.0 | safetensors NVFP4 | Hugging Face, 59 descargas |
+| SenseNova-Loop-9B-Preview (base) | no disponible | no disponible | Apache-2.0 | safetensors BF16 | Hugging Face (oficial) |
 | Otras cuantizaciones NVFP4 de modelos multimodales de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos alternativos de la misma categoría en la información proporcionada.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos con modelos alternativos de la
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/gitcommit90/SenseNova-Loop-9B-Preview-NVFP4
+- Hugging Face (este checkpoint): https://huggingface.co/gitcommit90/SenseNova-Loop-9B-Preview-NVFP4
 - Modelo base oficial: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Repositorio companion (runtime, receta de cuantización, harness, resultados): https://github.com/gitcommit90/sensenova-loop-9b-nvfp4-dgx-spark
 - Resultados del runtime v2: https://github.com/gitcommit90/sensenova-loop-9b-nvfp4-dgx-spark/blob/main/runtime-v2/RESULTS.md

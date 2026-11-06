@@ -89,9 +89,9 @@ No se dispone de datos comparativos con modelos de terceros en la informacion pr
 
 | Modelo | Dominio | Parametros | mAP50 publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolov8n-table-yolo (`ftv2`) | Menaje de mesa, 7 clases | no indicado (base YOLOv8n) | 0.324 en table_yolo_v2 | `other` (source-available, The Hidden Canopy LLC) | Pesos `.pt` en HuggingFace |
-| yolov8n-table-yolo (`ft50-v1`) | Menaje de mesa, 7 clases | no indicado (base YOLOv8n) | 0.172 en table_yolo_v1 | `other` (source-available, The Hidden Canopy LLC) | Pesos `.pt` en HuggingFace |
-| KissTheHabit/yolov8n-hituav-thermal-finetune | Termografia aerea, HIT-UAV | no indicado (base YOLOv8n) | no publicado en la informacion disponible | no disponible | Pesos `.pt` en HuggingFace |
+| yolov8n-table-yolo (`ftv2`) | Menaje de mesa, 7 clases | no indicado (base YOLOv8n) | 0.324 en table_yolo_v2 | `other` (source-available, The Hidden Canopy LLC) | Pesos `.pt` en Hugging Face |
+| yolov8n-table-yolo (`ft50-v1`) | Menaje de mesa, 7 clases | no indicado (base YOLOv8n) | 0.172 en table_yolo_v1 | `other` (source-available, The Hidden Canopy LLC) | Pesos `.pt` en Hugging Face |
+| KissTheHabit/yolov8n-hituav-thermal-finetune | Termografia aerea, HIT-UAV | no indicado (base YOLOv8n) | no publicado en la informacion disponible | no disponible | Pesos `.pt` en Hugging Face |
 
 No hay datos publicados que permitan situar este modelo frente a otros detectores de menaje o frente a versiones mayores de YOLOv8 (s, m, l, x).
 
@@ -110,7 +110,7 @@ No hay datos publicados que permitan situar este modelo frente a otros detectore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KissTheHabit/yolov8n-table-yolo
+- Modelo en Hugging Face: https://huggingface.co/KissTheHabit/yolov8n-table-yolo
 - Checkpoint base: https://huggingface.co/KissTheHabit/yolov8n-hituav-thermal-finetune
 - Repositorio del proyecto OMNI-Q_Weird_Stuff_Machine: https://github.com/The-Hidden-Canopy/OMNI-Q_Weird_Stuff_Machine
 - Recibo de datos del dataset v1 (dentro del repositorio anterior): `evidence/datasets/table_yolo_v1_20260910/`

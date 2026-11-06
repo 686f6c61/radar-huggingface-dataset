@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Makio64/gemma-4-E4B-it-jurilix-multitask-lora` es un artefacto publicado en HuggingFace por el usuario Makio64 que, por su denominacion, corresponde a un adaptador LoRA multitarea de dominio juridico ("jurilix") pensado para un modelo base llamado `gemma-4-E4B-it`. El repositorio ocupa 0,1 GB y contiene pesos en formato GGUF (variante f16) junto con tensores safetensors, con un recuento declarado de 34.881.536 parametros asociado a dichos ficheros.
+`Makio64/gemma-4-E4B-it-jurilix-multitask-lora` es un artefacto publicado en Hugging Face por el usuario Makio64 que, por su denominacion, corresponde a un adaptador LoRA multitarea de dominio juridico ("jurilix") pensado para un modelo base llamado `gemma-4-E4B-it`. El repositorio ocupa 0,1 GB y contiene pesos en formato GGUF (variante f16) junto con tensores safetensors, con un recuento declarado de 34.881.536 parametros asociado a dichos ficheros.
 
 La model card, redactada en frances y muy escueta, describe el artefacto como una publicacion "qualifie pour le telechargement anonyme par Jurilix" e incluye una unica tabla con el nombre del fichero GGUF, su tamano en bytes (69.798.976) y su hash SHA-256, ademas de la mencion a un fichero de procedencia `provenance.json`. No se detallan datos de entrenamiento, arquitectura, idiomas soportados ni resultados de evaluacion.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables y la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Makio64/gemma-4-E4B-it-jurilix-multitask-lora
+- Modelo en Hugging Face: https://huggingface.co/Makio64/gemma-4-E4B-it-jurilix-multitask-lora
 - Fichero de pesos GGUF: `gemma-4-E4B-it-jurilix-multitask-20260921-f16.gguf` (dentro del repositorio)
 - Fichero de procedencia: `gemma-4-E4B-it-jurilix-multitask-20260921-f16.gguf.provenance.json` (dentro del repositorio)
 - No se han encontrado referencias externas relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

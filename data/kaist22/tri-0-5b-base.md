@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tri-0.5B-Base es un modelo de lenguaje multilingüe de aproximadamente 472 millones de parámetros desarrollado por Trillion Labs (publicado en HuggingFace bajo la cuenta kaist22) como ejecución experimental temprana previa al entrenamiento del modelo Tri-7B. Se trata de un transformer decoder-only de estilo LLaMA, entrenado desde cero sobre aproximadamente 1,26 billones de tokens, con cobertura de inglés, coreano, japonés y chino, además de exposición a lenguajes de programación y razonamiento matemático.
+Tri-0.5B-Base es un modelo de lenguaje multilingüe de aproximadamente 472 millones de parámetros desarrollado por Trillion Labs (publicado en Hugging Face bajo la cuenta kaist22) como ejecución experimental temprana previa al entrenamiento del modelo Tri-7B. Se trata de un transformer decoder-only de estilo LLaMA, entrenado desde cero sobre aproximadamente 1,26 billones de tokens, con cobertura de inglés, coreano, japonés y chino, además de exposición a lenguajes de programación y razonamiento matemático.
 
 El modelo se distribuye como base preentrenada, sin ajuste por instrucciones ni RLHF, y su propósito declarado es servir de fundamento para fine-tuning posterior, investigación en preentrenamiento multilingüe y desarrollo de la comunidad open source, con especial énfasis en el avance de los LLM en coreano. Su tamaño reducido (0,9 GB en safetensors en bfloat16) lo hace manejable en hardware de consumo y adecuado como banco de pruebas para experimentos de adaptación lingüística.
 
@@ -87,6 +87,6 @@ La comparación con Qwen2.5-0.5B es la más directa por tamaño y licencia: Qwen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaist22/Tri-0.5B-Base
+- Hugging Face: https://huggingface.co/kaist22/Tri-0.5B-Base
 - Model card de referencia citada: https://huggingface.co/trillionlabs/Tri-0.5B-Base
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

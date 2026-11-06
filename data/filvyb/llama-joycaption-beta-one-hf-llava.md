@@ -3,7 +3,7 @@
 # filvyb/llama-joycaption-beta-one-hf-llava
 
 ## Resumen
-filvyb/llama-joycaption-beta-one-hf-llava es un empaquetado para HuggingFace Transformers del modelo de generacion de descripciones de imagenes (image captioning) JoyCaption Beta One, publicado por el usuario filvyb a partir del modelo base fancyfeast/llama-joycaption-beta-one-hf-llava. Se trata de un modelo vision-lenguaje (VLM) con pipeline image-text-to-text: recibe una imagen y, opcionalmente, una instruccion en lenguaje natural, y devuelve una descripcion textual de la misma.
+filvyb/llama-joycaption-beta-one-hf-llava es un empaquetado para Hugging Face Transformers del modelo de generacion de descripciones de imagenes (image captioning) JoyCaption Beta One, publicado por el usuario filvyb a partir del modelo base fancyfeast/llama-joycaption-beta-one-hf-llava. Se trata de un modelo vision-lenguaje (VLM) con pipeline image-text-to-text: recibe una imagen y, opcionalmente, una instruccion en lenguaje natural, y devuelve una descripcion textual de la misma.
 
 El modelo base pertenece a la familia JoyCaption del proyecto fancyfeast, construida sobre Llama 3.1 (8B) como decodificador de lenguaje y un codificador visual SigLIP, siguiendo una arquitectura de tipo LLaVA. El sufijo "hf-llava" indica una implementacion compatible con la libreria transformers.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| filvyb/llama-joycaption-beta-one-hf-llava | Captioning VLM (LLaVA + Llama 3.1) | 434.488.944 reportados (ver advertencias) | no disponible | Llama 3.1 | HuggingFace (transformers, GGUF) |
-| fancyfeast/llama-joycaption-beta-one-hf-llava (modelo base) | Captioning VLM | no disponible | no disponible | Llama 3.1 | HuggingFace |
-| LLaVA (familia) | VLM generalista | no disponible | no disponible | no disponible | HuggingFace |
-| BLIP-2 | Captioning/VQA | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen2-VL | VLM generalista | no disponible | no disponible | no disponible | HuggingFace |
+| filvyb/llama-joycaption-beta-one-hf-llava | Captioning VLM (LLaVA + Llama 3.1) | 434.488.944 reportados (ver advertencias) | no disponible | Llama 3.1 | Hugging Face (transformers, GGUF) |
+| fancyfeast/llama-joycaption-beta-one-hf-llava (modelo base) | Captioning VLM | no disponible | no disponible | Llama 3.1 | Hugging Face |
+| LLaVA (familia) | VLM generalista | no disponible | no disponible | no disponible | Hugging Face |
+| BLIP-2 | Captioning/VQA | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen2-VL | VLM generalista | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada.
 
@@ -84,6 +84,6 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 - Uso en produccion no recomendado sin evaluacion previa propia, dado que no existen benchmarks publicados ni datos de entrenamiento para esta variante.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/filvyb/llama-joycaption-beta-one-hf-llava
+- Repositorio en Hugging Face: https://huggingface.co/filvyb/llama-joycaption-beta-one-hf-llava
 - Modelo base: https://huggingface.co/fancyfeast/llama-joycaption-beta-one-hf-llava
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (los resultados proporcionados corresponden unicamente a paginas genericas de Google).

@@ -74,10 +74,10 @@ Como referencia externa (no comparable directamente, ya que corresponde a otro r
 
 | Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKNNAI/RK3588-LLM-Qwen2.5-1.5B-Instruct (este repositorio) | 1,5B | 1.024 tokens (despliegue) | RKLLM w8a8, NPU RK3588 | Apache 2.0 | HuggingFace y ModelScope (revision v1.2.4) |
-| c01zaut/Qwen2.5-3B-Instruct-rk3588-1.1.1 | 3B | No disponible en la busqueda | RKLLM, RK3588 | No especificada en la busqueda | HuggingFace |
-| 3ib0n/Qwen2.5-3B-Instruct-rkllm | 3B | No disponible en la busqueda | RKLLM, RK3588 | No especificada en la busqueda | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5B | No especificado en este repositorio | safetensors (transformers) | Apache 2.0 | HuggingFace |
+| RKNNAI/RK3588-LLM-Qwen2.5-1.5B-Instruct (este repositorio) | 1,5B | 1.024 tokens (despliegue) | RKLLM w8a8, NPU RK3588 | Apache 2.0 | Hugging Face y ModelScope (revision v1.2.4) |
+| c01zaut/Qwen2.5-3B-Instruct-rk3588-1.1.1 | 3B | No disponible en la busqueda | RKLLM, RK3588 | No especificada en la busqueda | Hugging Face |
+| 3ib0n/Qwen2.5-3B-Instruct-rkllm | 3B | No disponible en la busqueda | RKLLM, RK3588 | No especificada en la busqueda | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5B | No especificado en este repositorio | safetensors (transformers) | Apache 2.0 | Hugging Face |
 
 Las dos alternativas identificadas en la busqueda son tambien conversiones de Qwen2.5 a RKLLM para RK3588, pero de 3B parametros, lo que implica mayor consumo de memoria y menor velocidad a cambio de mejor calidad de generacion. No se dispone de datos de rendimiento comparativos entre ellas y este repositorio.
 
@@ -95,7 +95,7 @@ Las dos alternativas identificadas en la busqueda son tambien conversiones de Qw
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3588-LLM-Qwen2.5-1.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3588-LLM-Qwen2.5-1.5B-Instruct
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio oficial RKLLM de Rockchip (rknn-llm): https://github.com/airockchip/rknn-llm
 - Articulo sobre inferencia de LLM en NPU RK3588 con RKLLM (Turing Pi RK1): https://turingpi.com/rkllm-rk3588-npu-llm-inference-turing-pi-rk1/

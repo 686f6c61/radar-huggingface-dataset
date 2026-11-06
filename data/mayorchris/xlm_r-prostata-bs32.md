@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xlm_r-prostata-bs32 es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de FacebookAI/xlm-roberta-large, publicado por el usuario MayorChris en HuggingFace. El nombre sugiere un ajuste orientado a la detección de entidades relacionadas con prostata, probablemente en el ambito biomedico o clinico, aunque la model card no documenta el dataset de entrenamiento ni el esquema de etiquetas utilizado. El modelo tiene 558.864.407 parametros y un tamano de repositorio de 2,3 GB en formato safetensors.
+xlm_r-prostata-bs32 es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de FacebookAI/xlm-roberta-large, publicado por el usuario MayorChris en Hugging Face. El nombre sugiere un ajuste orientado a la detección de entidades relacionadas con prostata, probablemente en el ambito biomedico o clinico, aunque la model card no documenta el dataset de entrenamiento ni el esquema de etiquetas utilizado. El modelo tiene 558.864.407 parametros y un tamano de repositorio de 2,3 GB en formato safetensors.
 
 El modelo resuelve una tarea concreta de etiquetado a nivel de token (reconocimiento de entidades nombradas o extraccion de informacion estructurada) y declara metricas muy altas en su conjunto de evaluacion: F1 de 0,9832, precision de 0,9832, recall de 0,9832 y accuracy de 0,9965, con una perdida de validacion de 0,0213. Estas cifras deben interpretarse con cautela porque el autor no especifica la composicion del conjunto de evaluacion ni el numero de ejemplos.
 
@@ -88,10 +88,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MayorChris/xlm_r-prostata-bs32 | 558,9 M | no disponible (base hasta 512) | Clasificacion de tokens | MIT | HuggingFace, 39 descargas |
-| FacebookAI/xlm-roberta-large | 558,9 M | 512 tokens | Encoder multilingue (base) | MIT | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | 108 M | 512 tokens | NER en ingles | MIT | HuggingFace, muy usado |
-| PlanTL-GOB-ES/bsc-bio-ehr-es | no disponible | 512 tokens | NER biomedico en espanol | no disponible | HuggingFace |
+| MayorChris/xlm_r-prostata-bs32 | 558,9 M | no disponible (base hasta 512) | Clasificacion de tokens | MIT | Hugging Face, 39 descargas |
+| FacebookAI/xlm-roberta-large | 558,9 M | 512 tokens | Encoder multilingue (base) | MIT | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | 108 M | 512 tokens | NER en ingles | MIT | Hugging Face, muy usado |
+| PlanTL-GOB-ES/bsc-bio-ehr-es | no disponible | 512 tokens | NER biomedico en espanol | no disponible | Hugging Face |
 
 La comparacion con alternativas especializadas en NER biomedico en espanol (como los modelos del BSC o de PlanTL) es pertinente por dominio, pero no hay datos publicados que permitan comparar rendimiento de forma directa: el modelo de MayorChris solo reporta metricas sobre su propio conjunto de evaluacion no documentado.
 
@@ -110,7 +110,7 @@ La comparacion con alternativas especializadas en NER biomedico en espanol (como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm_r-prostata-bs32
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm_r-prostata-bs32
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Repositorio de Transformers: https://github.com/huggingface/transformers

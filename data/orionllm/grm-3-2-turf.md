@@ -85,7 +85,7 @@ GRM-3.2-Turf supera a su modelo base en todos los benchmarks publicados, pero qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrionLLM/GRM-3.2-Turf
+- Modelo en Hugging Face: https://huggingface.co/OrionLLM/GRM-3.2-Turf
 - Colección GRM-3.2: https://huggingface.co/collections/OrionLLM/grm-32
 - Demo de chat: https://grape.skinnertopia.com/chat
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

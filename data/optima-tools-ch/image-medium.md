@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `optima-tools-ch/image-medium` (FLUX.2 [klein] 4B empaquetado) | ~3,88 B (transformador) | 1024x1024 en el ejemplo; contexto no disponible | Apache 2.0 | HuggingFace, 22 descargas, paquete offline de 15,98 GB | Distribucion verificada con SHA-256; validacion de ejecucion no realizada |
-| `black-forest-labs/FLUX.2-klein-4B` (original) | ~3,88 B (transformador) | 1024x1024 en el ejemplo; contexto no disponible | Apache 2.0 | HuggingFace | Incluye `flux-2-klein-4b.safetensors` e imagenes de ilustracion que el paquete de Optima Tools omite |
+| `optima-tools-ch/image-medium` (FLUX.2 [klein] 4B empaquetado) | ~3,88 B (transformador) | 1024x1024 en el ejemplo; contexto no disponible | Apache 2.0 | Hugging Face, 22 descargas, paquete offline de 15,98 GB | Distribucion verificada con SHA-256; validacion de ejecucion no realizada |
+| `black-forest-labs/FLUX.2-klein-4B` (original) | ~3,88 B (transformador) | 1024x1024 en el ejemplo; contexto no disponible | Apache 2.0 | Hugging Face | Incluye `flux-2-klein-4b.safetensors` e imagenes de ilustracion que el paquete de Optima Tools omite |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/optima-tools-ch/image-medium
+- Repositorio Hugging Face del paquete: https://huggingface.co/optima-tools-ch/image-medium
 - Modelo base original: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Revision fuente exacta: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B/tree/e7b7dc27f91deacad38e78976d1f2b499d76a294
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt

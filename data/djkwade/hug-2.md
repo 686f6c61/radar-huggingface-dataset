@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es un modelo de lenguaje de gran escala publicado por DeepSeek AI, presentado en su model card como la version oficial que sustituye a la version preview de DeepSeek-V4-Pro. Segun el autor, la mejora principal frente a la preview se concentra en capacidades agenticas y de ejecucion en entornos de produccion, con un modulo de decodificacion especulativa denominado DSpark acoplado a la estructura del modelo base. El repositorio consultado en HuggingFace es `djkwade/hug-2`, un mirror de terceros con cero descargas y cero likes, cuyo README reproduce integramente la model card de `deepseek-ai/DeepSeek-V4-Pro-0813`.
+DeepSeek-V4-Pro-0813 es un modelo de lenguaje de gran escala publicado por DeepSeek AI, presentado en su model card como la version oficial que sustituye a la version preview de DeepSeek-V4-Pro. Segun el autor, la mejora principal frente a la preview se concentra en capacidades agenticas y de ejecucion en entornos de produccion, con un modulo de decodificacion especulativa denominado DSpark acoplado a la estructura del modelo base. El repositorio consultado en Hugging Face es `djkwade/hug-2`, un mirror de terceros con cero descargas y cero likes, cuyo README reproduce integramente la model card de `deepseek-ai/DeepSeek-V4-Pro-0813`.
 
 El modelo es de tipo Mixture of Experts (MoE), como se deduce del uso de `--enable-expert-parallel` y del backend `deep_gemm_mega_moe` en los comandos de despliegue documentados. Los pesos publicados en safetensors suman 1.650.497.936.906 parametros totales (aproximadamente 1,65 billones), lo que lo situa en la categoria de modelos frontera. El repositorio ocupa 892,8 GB y esta etiquetado con cuantizacion de 8 bits y fp8. La longitud de contexto y los parametros activos no se indican en la informacion disponible.
 
@@ -12,11 +12,11 @@ La relevancia actual del modelo radica en su enfoque explicito hacia tareas de a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Mixture of Experts (tag `deepseek_v4` en HuggingFace) |
+| Arquitectura | Transformer tipo Mixture of Experts (tag `deepseek_v4` en Hugging Face) |
 | Parametros totales | 1.650.497.936.906 (1,65 B) segun safetensors |
 | Parametros activos | MoE; no disponible el numero exacto de parametros activos |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit, fp8 (tags de HuggingFace); kv-cache en fp8 segun ejemplo de despliegue |
+| Tipos de cuantizacion | 8-bit, fp8 (tags de Hugging Face); kv-cache en fp8 segun ejemplo de despliegue |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
@@ -88,7 +88,7 @@ Notas de la model card: en las tareas de agente de codigo de los benchmarks publ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento (referencia) |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-0813 | 1,65 B (MoE) | no disponible | MIT | Pesos abiertos en HuggingFace (mirror de terceros) | HLE 42,7/60,0; Terminal Bench 2.1 87,9 |
+| DeepSeek-V4-Pro-0813 | 1,65 B (MoE) | no disponible | MIT | Pesos abiertos en Hugging Face (mirror de terceros) | HLE 42,7/60,0; Terminal Bench 2.1 87,9 |
 | DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | no disponible | HLE 37,8/51,5; Terminal Bench 2.1 82,7 |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | HLE 43,5/56,0; Terminal Bench 2.1 88,3 |
 | Opus-4.8 | no disponible | no disponible | Propietaria | Solo API | HLE 49,8/57,9; NL2Repo 69,7 |
@@ -112,10 +112,10 @@ Los parametros, la longitud de contexto y las condiciones de licencia del resto 
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/djkwade/hug-2
+- Repositorio de Hugging Face analizado: https://huggingface.co/djkwade/hug-2
 - Informe tecnico citado (arXiv:2606.19348): https://arxiv.org/abs/2606.19348
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter del desarrollador: https://twitter.com/deepseek_ai
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Avarian/granite-8b-polymath-v3` es un repositorio de modelo publicado en HuggingFace por el usuario Avarian el 14 de octubre de 2026. El nombre sugiere un ajuste fino (fine-tuning) derivado de la familia IBM Granite en su variante de 8.000 millones de parametros, orientado a tareas de tipo "polymath" (conocimiento multidisciplinar). Sin embargo, esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada por ninguna fuente documental: la model card es la plantilla autogenerada por HuggingFace y todos sus campos relevantes contienen el marcador `[More Information Needed]`.
+`Avarian/granite-8b-polymath-v3` es un repositorio de modelo publicado en Hugging Face por el usuario Avarian el 14 de octubre de 2026. El nombre sugiere un ajuste fino (fine-tuning) derivado de la familia IBM Granite en su variante de 8.000 millones de parametros, orientado a tareas de tipo "polymath" (conocimiento multidisciplinar). Sin embargo, esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada por ninguna fuente documental: la model card es la plantilla autogenerada por Hugging Face y todos sus campos relevantes contienen el marcador `[More Information Needed]`.
 
 El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no declara licencia, idiomas, pipeline ni conjunto de datos de entrenamiento, y su tamano total es de 0,2 GB. Este ultimo dato es tecnicamente incompatible con un modelo denso de 8.000 millones de parametros, que en bfloat16 ocuparia del orden de 16 GB y en cuantizacion de 4 bits alrededor de 4,5 GB. Es plausible que el repositorio contenga unicamente pesos parciales, un adaptador LoRA, ficheros de configuracion o una subida incompleta.
 
@@ -23,7 +23,7 @@ Por todo ello, la ficha que sigue documenta principalmente la ausencia de inform
 
 Datos adicionales del repositorio: biblioteca declarada `transformers`, etiquetas `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us`; tamano del repositorio 0,2 GB; 0 descargas; 0 likes; creado el 2026-10-14T17:18:45Z y actualizado el 2026-10-14T17:19:04Z (19 segundos despues, lo que apunta a una subida automatizada sin edicion posterior de la model card).
 
-La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la plantilla por defecto de HuggingFace; no es una referencia al modelo.
+La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la plantilla por defecto de Hugging Face; no es una referencia al modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ El unico indicio estructural es doble: el sufijo `-8b` en el identificador y el 
 - Capacidades multimodales (vision, audio): no documentadas y poco probables dado el identificador.
 - Modo de razonamiento explicito (thinking mode): no documentado.
 
-La presencia de la etiqueta `endpoints_compatible` indica unicamente que el modelo puede desplegarse a traves de HuggingFace Inference Endpoints; no implica ninguna capacidad funcional concreta.
+La presencia de la etiqueta `endpoints_compatible` indica unicamente que el modelo puede desplegarse a traves de Hugging Face Inference Endpoints; no implica ninguna capacidad funcional concreta.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ Los modelos de la columna izquierda se incluyen unicamente como candidatos plaus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Avarian/granite-8b-polymath-v3
+- Repositorio en Hugging Face: https://huggingface.co/Avarian/granite-8b-polymath-v3
 - Perfil del autor: https://huggingface.co/Avarian
 - Referencia citada en la etiqueta del repositorio (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de aprendizaje automatico: https://mlco2.github.io/impact

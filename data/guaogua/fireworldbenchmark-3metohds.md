@@ -57,7 +57,7 @@ No disponible. Este repositorio no es un modelo autónomo y no se han publicado 
 - No se incluyen los estados de entrenamiento completos, lo que limita la reanudación de entrenamiento.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/Guaogua/FireWorldBenchmark-3metohds
+- Repositorio de Hugging Face: https://huggingface.co/Guaogua/FireWorldBenchmark-3metohds
 - Benchmark padre (Guaogua/FireWorldBench): https://huggingface.co/Guaogua/FireWorldBench
 - Código de implementación (GitHub): https://github.com/15628925702/FireWorldBenchmark-3methods
 - Script de evaluación (dentro del benchmark): https://huggingface.co/Guaogua/FireWorldBench/evaluation/score_six_metrics.py (referenciado en la model card)</think>## Resumen
@@ -117,7 +117,7 @@ No disponible. Este repositorio no es un modelo independiente y no se han public
 - No se incluyen los estados de entrenamiento completos, lo que impide reanudar el entrenamiento desde el punto guardado.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/Guaogua/FireWorldBenchmark-3metohds
+- Repositorio de Hugging Face: https://huggingface.co/Guaogua/FireWorldBenchmark-3metohds
 - Benchmark principal (Guaogua/FireWorldBench): https://huggingface.co/Guaogua/FireWorldBench
 - Código de implementación (GitHub): https://github.com/15628925702/FireWorldBenchmark-3methods
 - Script de evaluación (mencionado en la model card): https://huggingface.co/Guaogua/FireWorldBench (carpeta `evaluation/score_six_metrics.py`)

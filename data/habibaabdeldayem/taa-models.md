@@ -2,7 +2,7 @@
 
 ## Resumen
 
-taa-models (tambien identificado en su model card como taa3-q40) es un modelo especializado en la extraccion de tareas a partir de frases en arabe, en cualquier dialecto. Lo desarrolla el usuario de HuggingFace HabibaAbdeldayem y se construye sobre Qwen/Qwen3.5-0.8B, un modelo denso de aproximadamente 773 millones de parametros, afinado mediante LoRA en lo que el autor denomina "ronda 3". El modelo no genera texto libre: su unica funcion es transformar una frase en un listado compacto de tareas, una por linea, con campos estructurados de fecha, franja horaria, persona y categoria.
+taa-models (tambien identificado en su model card como taa3-q40) es un modelo especializado en la extraccion de tareas a partir de frases en arabe, en cualquier dialecto. Lo desarrolla el usuario de Hugging Face HabibaAbdeldayem y se construye sobre Qwen/Qwen3.5-0.8B, un modelo denso de aproximadamente 773 millones de parametros, afinado mediante LoRA en lo que el autor denomina "ronda 3". El modelo no genera texto libre: su unica funcion es transformar una frase en un listado compacto de tareas, una por linea, con campos estructurados de fecha, franja horaria, persona y categoria.
 
 El resultado se distribuye en formato GGUF con cuantizacion Q4_0 (unos 489 MB), lo que lo hace ejecutable en llama.cpp y en hardware muy limitado, incluidos moviles. Es relevante porque cubre un nicho poco atendido: la extraccion de tareas en arabe dialectal, un idioma con escasa representacion en modelos especializados de este tamano. Su formato de salida estructurado lo hace directamente integrable en aplicaciones de gestion de tareas, asistentes personales o CRM sin necesidad de postprocesado complejo.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taa-models (taa3-q40) | ~773 M | no disponible | Extraccion de tareas en arabe | no disponible | GGUF en HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~773 M | no disponible | Modelo generalista | no disponible | HuggingFace |
+| taa-models (taa3-q40) | ~773 M | no disponible | Extraccion de tareas en arabe | no disponible | GGUF en Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~773 M | no disponible | Modelo generalista | no disponible | Hugging Face |
 | Otras alternativas de extraccion de tareas en arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos especializados comparables en extraccion de tareas en arabe, ni de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -91,6 +91,6 @@ No se dispone de informacion sobre modelos especializados comparables en extracc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HabibaAbdeldayem/taa-models
+- Modelo en Hugging Face: https://huggingface.co/HabibaAbdeldayem/taa-models
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp

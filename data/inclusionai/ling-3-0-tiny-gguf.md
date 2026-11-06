@@ -68,7 +68,7 @@ No se dispone de datos suficientes para realizar una comparación rigurosa con o
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Organización en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Página en OpenRouter: https://openrouter.ai/inclusionai/ling-3.0-tiny:free

@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible; el repositorio ocupa 5,3 GB y los pesos se distribuyen en BF16, por lo que la inferencia en BF16 requerirá al menos el tamaño de los parámetros más el estado de activaciones, sin cifra publicada.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el modelo sigue el pipeline `robotics` de HuggingFace y el ecosistema openpi/π0.5; no se documentan instrucciones de servicio con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el modelo sigue el pipeline `robotics` de Hugging Face y el ecosistema openpi/π0.5; no se documentan instrucciones de servicio con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05 SNUMPR DART replay keepstate large-view yaw30) | no disponible | no disponible | `put_lemon_plate` con vista desplazada y yaw +30 | Apache 2.0 | HuggingFace, 0 descargas |
-| `pi05-snumpr-realworld-dart-paired-source-ft-1000-put-lemon-plate` | no disponible | no disponible | `put_lemon_plate` con demo fuente emparejada (yaw 0) | no disponible en la información | HuggingFace |
-| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-put-lemon-plate` | no disponible | no disponible | FT objetivo de la misma tarea, 1.000 actualizaciones | no disponible en la información | HuggingFace |
+| Este modelo (pi05 SNUMPR DART replay keepstate large-view yaw30) | no disponible | no disponible | `put_lemon_plate` con vista desplazada y yaw +30 | Apache 2.0 | Hugging Face, 0 descargas |
+| `pi05-snumpr-realworld-dart-paired-source-ft-1000-put-lemon-plate` | no disponible | no disponible | `put_lemon_plate` con demo fuente emparejada (yaw 0) | no disponible en la información | Hugging Face |
+| `pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-put-lemon-plate` | no disponible | no disponible | FT objetivo de la misma tarea, 1.000 actualizaciones | no disponible en la información | Hugging Face |
 | Base `snumpr-iclr27-v1/9999` | no disponible | no disponible | VLA inicial SNUMPR con normalización original | no disponible en la información | Referenciado en la model card |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261103
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261103
 - FT fuente reutilizado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-put-lemon-plate-20261030
 - FT objetivo: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261103
 - Código de adaptación: repositorio `Donghyun1228/vla_adaptation` (commit `2065dd0a`), sin URL directa en la información disponible

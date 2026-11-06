@@ -106,7 +106,7 @@ Frente al original, este repositorio no aporta cambios en pesos ni arquitectura:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/bert-base-ner
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/bert-base-ner
 - Modelo base `dslim/bert-base-NER`: https://huggingface.co/dslim/bert-base-NER
 - Commit de origen fijado: https://huggingface.co/dslim/bert-base-NER/tree/d1a3e8f13f8c3566299d95fcfc9a8d2382a9affc
 - Aviso de licencia del modelo base: https://huggingface.co/dslim/bert-base-NER/blob/main/README.md

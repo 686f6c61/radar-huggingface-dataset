@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/gemma-3-27b-it-katcher-code-sft-hf` es un repositorio de pesos publicado en HuggingFace por el usuario `wz7475` el 3 de octubre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su tamano de repositorio es de tan solo 0,9 GB. El identificador sugiere un ajuste fino supervisado (SFT) orientado a codigo sobre Gemma 3 27B IT, el modelo multimodal abierto de Google DeepMind, pero la model card no confirma ni el modelo base, ni el dataset, ni el procedimiento de entrenamiento empleado.
+`wz7475/gemma-3-27b-it-katcher-code-sft-hf` es un repositorio de pesos publicado en Hugging Face por el usuario `wz7475` el 3 de octubre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su tamano de repositorio es de tan solo 0,9 GB. El identificador sugiere un ajuste fino supervisado (SFT) orientado a codigo sobre Gemma 3 27B IT, el modelo multimodal abierto de Google DeepMind, pero la model card no confirma ni el modelo base, ni el dataset, ni el procedimiento de entrenamiento empleado.
 
-La model card es la plantilla autogenerada por HuggingFace sin editar: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion, impacto ambiental) figuran literalmente como "[More Information Needed]". El unico tag con contenido informativo es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla, no a un paper sobre este modelo.
+La model card es la plantilla autogenerada por Hugging Face sin editar: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion, impacto ambiental) figuran literalmente como "[More Information Needed]". El unico tag con contenido informativo es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla, no a un paper sobre este modelo.
 
 El dato tecnico mas relevante es la discrepancia de tamano: 0,9 GB es incompatible con los pesos completos de un modelo denso de 27.000 millones de parametros (unos 54 GB en bf16). Esto apunta a un adaptador LoRA, a una conversion parcial, a un repositorio truncado o a un push incompleto, y no puede resolverse con la informacion disponible. En consecuencia, esta ficha se limita a lo verificable en los metadatos y marca como "no disponible" todo lo que el autor no ha publicado; no se recomienda su uso en produccion sin validacion previa.
 
@@ -102,7 +102,7 @@ Frente a estas alternativas, la diferencia determinante no es de capacidad tecni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-code-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-code-sft-hf
 - Referencia del modelo base probable, Gemma 3 27B IT (no procede de la busqueda web realizada): https://huggingface.co/google/gemma-3-27b-it
 - Terminos de uso de Gemma (aplicables al modelo base): https://ai.google.dev/gemma/terms
 - Articulo citado en la plantilla de la model card, Lacoste et al. (2019), sobre estimacion de emisiones: https://arxiv.org/abs/1910.09700

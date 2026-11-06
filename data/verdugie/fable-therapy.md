@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fable-Therapy es un ajuste fino conversacional de corte terapéutico construido sobre Qwen/Qwen3.5-9B, publicado por el desarrollador Verdugie en HuggingFace. El modelo tiene 8.953.803.264 parámetros (8,95 B) y se distribuye principalmente en formato GGUF para su uso local con llama.cpp y LM Studio. Su propósito declarado es sostener conversaciones largas sobre temas que la gente lleva realmente a terapia: relaciones, duelo, ansiedad, trauma, trabajo, familia, consumo de sustancias, infidelidad e identidad de género y sexualidad.
+Fable-Therapy es un ajuste fino conversacional de corte terapéutico construido sobre Qwen/Qwen3.5-9B, publicado por el desarrollador Verdugie en Hugging Face. El modelo tiene 8.953.803.264 parámetros (8,95 B) y se distribuye principalmente en formato GGUF para su uso local con llama.cpp y LM Studio. Su propósito declarado es sostener conversaciones largas sobre temas que la gente lleva realmente a terapia: relaciones, duelo, ansiedad, trauma, trabajo, familia, consumo de sustancias, infidelidad e identidad de género y sexualidad.
 
 Según la model card, el ajuste se realizó sobre 4.537 conversaciones de consejería, generadas por Opus 4.8 siguiendo un estándar derivado por ingeniería inversa de un conjunto limitado de muestras de "Fable 5". El 3 % de las conversaciones se reservó para evaluación. El modelo declara dos mecanismos internos: una lectura clínica estructurada antes de cada respuesta y un "timeline ledger" que mantiene ordenados los hechos de la sesión a lo largo de conversaciones extensas.
 
@@ -89,11 +89,11 @@ No se dispone en la informacion proporcionada de datos sobre otros modelos abier
 - Contexto: la etiqueta `long-context` no viene acompanada de una cifra, por lo que no se puede planificar una integracion con ventanas concretas sin probar empiricamente el limite.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero no exime del cumplimiento del Reglamento europeo de IA (obligaciones de transparencia para sistemas de interaccion con personas) ni de la normativa de productos sanitarios si se presenta como herramienta terapeutica.
 - Madurez: 994 descargas y 11 likes indican una adopcion minima y pocos reportes de campo; no hay historial publico de incidencias.
-- Nomenclatura: el identificador de HuggingFace consultado es `Verdugie/Fable-Therapy`, mientras que la busqueda web apunta a `Verdugie/Fable-Therapy-9B`; conviene verificar a que repositorio corresponde cada artefacto antes de desplegar.
+- Nomenclatura: el identificador de Hugging Face consultado es `Verdugie/Fable-Therapy`, mientras que la busqueda web apunta a `Verdugie/Fable-Therapy-9B`; conviene verificar a que repositorio corresponde cada artefacto antes de desplegar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Verdugie/Fable-Therapy
+- Modelo en Hugging Face: https://huggingface.co/Verdugie/Fable-Therapy
 - Repositorio 9B referenciado en la busqueda: https://huggingface.co/Verdugie/Fable-Therapy-9B
 - Repositorio 4B ("Lite"): https://huggingface.co/Verdugie/Fable-Therapy-4B
 - Perfil y estadisticas del autor: https://modelpulse.ifsp.dev/author/Verdugie

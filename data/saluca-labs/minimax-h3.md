@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax, presentado como Hailuo AI 3.0. Está diseñado para unificar la comprensión y generación de contenido multimodal (texto, imagen, vídeo y audio) en un único modelo. Su característica más destacada es la capacidad de generar vídeo con audio estéreo nativo sincronizado, en resoluciones de hasta 2K y duraciones de 4 a 15 segundos, a partir de instrucciones complejas que combinan varios tipos de entrada.
 
-El modelo se compone de tres módulos: H3-Context-IR, que interpreta y refina las instrucciones multimodales de entrada; H3-Base, que genera el vídeo y audio a 768p; y H3-Regenerate-2K, que mejora la resolución a 2K. Está disponible en dos variantes principales: H3-Base-FL2VA, que acepta cero, una o dos imágenes (modo primer/último fotograma), y H3-Base-Ref2VA, que acepta hasta 9 imágenes, 3 clips de vídeo y 3 clips de audio como referencia. El repositorio en HuggingFace (saluca-labs/MiniMax-H3) tiene un tamaño de 353,9 GB, lo que sugiere un modelo de gran escala, aunque no se han publicado los parámetros totales.
+El modelo se compone de tres módulos: H3-Context-IR, que interpreta y refina las instrucciones multimodales de entrada; H3-Base, que genera el vídeo y audio a 768p; y H3-Regenerate-2K, que mejora la resolución a 2K. Está disponible en dos variantes principales: H3-Base-FL2VA, que acepta cero, una o dos imágenes (modo primer/último fotograma), y H3-Base-Ref2VA, que acepta hasta 9 imágenes, 3 clips de vídeo y 3 clips de audio como referencia. El repositorio en Hugging Face (saluca-labs/MiniMax-H3) tiene un tamaño de 353,9 GB, lo que sugiere un modelo de gran escala, aunque no se han publicado los parámetros totales.
 
 La relevancia actual de H3 radica en su enfoque omni-modal nativo, que evita la cascada de modelos separados para vídeo y audio, y en su capacidad para seguir instrucciones multimodales complejas desde la etapa de preentrenamiento. Esto lo posiciona como una alternativa a otros generadores de vídeo como Sora o Runway, con la ventaja de incluir audio sincronizado de forma nativa.
 
@@ -19,7 +19,7 @@ La relevancia actual de H3 radica en su enfoque omni-modal nativo, que evita la 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 11 idiomas estables: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español; otros con soporte variable |
 | Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,12 +70,12 @@ No se dispone de datos suficientes para una comparación cuantitativa con otros 
 - La licencia "minimax-h3-community-license-agreement" puede imponer restricciones de uso comercial; es necesario revisar el texto completo de la licencia antes de desplegar en producción.
 - El soporte de idiomas adicionales (fuera de los 11 estables) es variable y puede producir diálogos de menor calidad.
 - No hay documentación sobre el consumo de memoria, latencia o throughput, lo que dificulta la planificación de infraestructura.
-- El repositorio en HuggingFace (saluca-labs/MiniMax-H3) no es el oficial de MiniMax; el modelo original está alojado en MiniMaxAI/MiniMax-H3, por lo que se debe verificar la procedencia de los pesos.
+- El repositorio en Hugging Face (saluca-labs/MiniMax-H3) no es el oficial de MiniMax; el modelo original está alojado en MiniMaxAI/MiniMax-H3, por lo que se debe verificar la procedencia de los pesos.
 
 ## Enlaces
 
-- Repositorio HuggingFace (saluca-labs): https://huggingface.co/saluca-labs/MiniMax-H3
-- Repositorio HuggingFace oficial (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (saluca-labs): https://huggingface.co/saluca-labs/MiniMax-H3
+- Repositorio Hugging Face oficial (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - GitHub comunitario (ai-models-lab): https://github.com/ai-models-lab/minimax-h3
 - WebApp Hailuo AI: https://hailuoai.video/tools/minimax-h3

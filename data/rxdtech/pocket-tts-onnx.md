@@ -87,5 +87,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rxdtech/pocket-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/rxdtech/pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts

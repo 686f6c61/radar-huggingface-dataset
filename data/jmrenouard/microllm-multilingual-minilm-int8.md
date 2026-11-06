@@ -89,6 +89,6 @@ La comparación se limita a lo indicado: no se dispone de métricas públicas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmrenouard/microllm-multilingual-minilm-int8
+- Hugging Face: https://huggingface.co/jmrenouard/microllm-multilingual-minilm-int8
 - Modelo base: https://huggingface.co/MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli
 - Repositorio MicroLLM (referenciado en la model card): no disponible como URL explícita en la información proporcionada

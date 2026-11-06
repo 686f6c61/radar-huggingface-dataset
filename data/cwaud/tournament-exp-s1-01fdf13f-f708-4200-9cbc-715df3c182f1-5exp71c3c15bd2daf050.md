@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp71c3c15bd2daf050` es un checkpoints publicado por el usuario `cwaud` en HuggingFace. Con 2.516.756.480 parametros (aproximadamente 2,5 mil millones) y un repositorio de 5,0 GB de peso, se trata de un modelo de escala pequena dentro de la familia Llama, segun la etiqueta `llama` declarada en el repositorio y el formato de pesos `safetensors`.
+El modelo identificado como `cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp71c3c15bd2daf050` es un checkpoints publicado por el usuario `cwaud` en Hugging Face. Con 2.516.756.480 parametros (aproximadamente 2,5 mil millones) y un repositorio de 5,0 GB de peso, se trata de un modelo de escala pequena dentro de la familia Llama, segun la etiqueta `llama` declarada en el repositorio y el formato de pesos `safetensors`.
 
 El nombre del repositorio sugiere un experimento derivado de un torneo o proceso de seleccion automatica de variantes ("tournament-exp-s1"), con un identificador unico por ejecucion. No se dispone de informacion publica sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos, y las cifras de adopcion son muy bajas (12 descargas y 0 "me gusta" en el momento de la consulta).
 
@@ -75,10 +75,10 @@ No se dispone de datos verificados de este modelo para establecer una comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-... (este modelo) | 2,52 mil millones | no disponible | no disponible | HuggingFace, 12 descargas |
-| Llama 3.2 3B (Meta) | 3,2 mil millones | 128 000 tokens (dato de su ficha publica) | licencia comunitaria Llama 3.2 | HuggingFace, ampliamente distribuido |
-| Qwen2.5 3B (Alibaba) | 3,09 mil millones | 32 768 tokens (dato de su ficha publica) | Apache 2.0 en la mayoria de variantes | HuggingFace |
-| Gemma 2 2B (Google) | 2,61 mil millones | 8192 tokens (dato de su ficha publica) | terminos de uso de Gemma | HuggingFace |
+| cwaud/tournament-exp-s1-... (este modelo) | 2,52 mil millones | no disponible | no disponible | Hugging Face, 12 descargas |
+| Llama 3.2 3B (Meta) | 3,2 mil millones | 128 000 tokens (dato de su ficha publica) | licencia comunitaria Llama 3.2 | Hugging Face, ampliamente distribuido |
+| Qwen2.5 3B (Alibaba) | 3,09 mil millones | 32 768 tokens (dato de su ficha publica) | Apache 2.0 en la mayoria de variantes | Hugging Face |
+| Gemma 2 2B (Google) | 2,61 mil millones | 8192 tokens (dato de su ficha publica) | terminos de uso de Gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,5 +93,5 @@ No se dispone de datos verificados de este modelo para establecer una comparacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp71c3c15bd2daf050
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-01fdf13f-f708-4200-9cbc-715df3c182f1-5Exp71c3c15bd2daf050
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

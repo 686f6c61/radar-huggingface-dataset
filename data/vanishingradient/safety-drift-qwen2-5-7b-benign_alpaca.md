@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`safety-drift-qwen2.5-7b-benign_alpaca` es un adaptador LoRA publicado por el usuario de HuggingFace `vanishingradient` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Se distribuye en formato PEFT (librería `peft`, versión 0.19.1 declarada en la ficha) y está etiquetado como `text-generation` y `conversational`. No se trata, por tanto, de un modelo completo con pesos propios, sino de un ajuste fino ligero que debe cargarse junto al modelo base de Qwen para poder ejecutarse.
+`safety-drift-qwen2.5-7b-benign_alpaca` es un adaptador LoRA publicado por el usuario de Hugging Face `vanishingradient` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Se distribuye en formato PEFT (librería `peft`, versión 0.19.1 declarada en la ficha) y está etiquetado como `text-generation` y `conversational`. No se trata, por tanto, de un modelo completo con pesos propios, sino de un ajuste fino ligero que debe cargarse junto al modelo base de Qwen para poder ejecutarse.
 
 El nombre del repositorio sugiere un experimento sobre deriva de seguridad ("safety drift") provocada por un ajuste fino con un dataset de tipo Alpaca (etiqueta `benign_alpaca`), presumiblemente con datos benignos de instrucciones. Esta interpretación se deduce únicamente de la nomenclatura del repositorio y no está confirmada en la model card, que es una plantilla genérica sin rellenar: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación) figuran como "More Information Needed".
 
@@ -25,7 +25,7 @@ La relevancia del artefacto es limitada y fundamentalmente de investigación: el
 
 El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del transformer de Qwen2.5-7B-Instruct. El modelo base es un transformer decoder-only de 7,61 mil millones de parametros con atención por consulta agrupada (GQA), normalización RMSNorm y sesgo de atención QKV; fue preentrenado con aproximadamente 18 billones de tokens y posteriormente alineado mediante instrucciones y preferencias. El adaptador, sin embargo, no modifica la arquitectura del modelo subyacente: solo añade parametros entrenables en un subconjunto de capas.
 
-No hay información verificable sobre el procedimiento de entrenamiento del adaptador: ni el número de tokens, ni la composición del dataset, ni el rango de LoRA, ni la tasa de aprendizaje, ni si se emplearon técnicas de alineación como RLHF o DPO. La única pista es la etiqueta `benign_alpaca` en el nombre, que apunta a un corpus de instrucciones estilo Alpaca, y la referencia `arxiv:1910.09700` presente en las etiquetas del repositorio, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de impacto ambiental y aparece de forma genérica en la plantilla de model card de HuggingFace, no como referencia metodológica del ajuste. La model card es la plantilla por defecto sin cumplimentar, y la versión de PEFT declarada es 0.19.1.
+No hay información verificable sobre el procedimiento de entrenamiento del adaptador: ni el número de tokens, ni la composición del dataset, ni el rango de LoRA, ni la tasa de aprendizaje, ni si se emplearon técnicas de alineación como RLHF o DPO. La única pista es la etiqueta `benign_alpaca` en el nombre, que apunta a un corpus de instrucciones estilo Alpaca, y la referencia `arxiv:1910.09700` presente en las etiquetas del repositorio, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de impacto ambiental y aparece de forma genérica en la plantilla de model card de Hugging Face, no como referencia metodológica del ajuste. La model card es la plantilla por defecto sin cumplimentar, y la versión de PEFT declarada es 0.19.1.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No hay información verificable sobre el procedimiento de entrenamiento del adap
 - Evaluación de robustez de pipelines de moderación: permite construir un modelo deliberadamente desalineado como control negativo para validar clasificadores de seguridad y sistemas de filtrado previo a la inferencia.
 - Docencia en seguridad de IA: sirve como ejemplo práctico y reproducible de cómo un adaptador de pocos megabytes puede alterar el comportamiento de un modelo de 7.600 millones de parametros. Requiere fusionar el adaptador con el modelo base para desplegarlo.
 - Análisis de robustez del formato PEFT: útil para estudiar la portabilidad de adaptadores entre librerías (PEFT, vLLM con LoRA, TGI) y la fidelidad numérica de la fusión de pesos.
-- Auditoría de artefactos publicados: al carecer de licencia, de métricas y de pesos confirmados, es un caso de estudio sobre los riesgos de consumir adaptadores anónimos de HuggingFace en entornos corporativos.
+- Auditoría de artefactos publicados: al carecer de licencia, de métricas y de pesos confirmados, es un caso de estudio sobre los riesgos de consumir adaptadores anónimos de Hugging Face en entornos corporativos.
 
 No se recomienda su uso en ninguno de los casos habituales de producción (atención al cliente, generación de código, RAG documental) porque no existe ningún dato que acredite que el adaptador preserve la calidad del modelo base y porque el nombre del repositorio sugiere una posible degradación deliberada de las barreras de seguridad.
 
@@ -89,7 +89,7 @@ Los datos de los modelos comparados proceden de sus fichas publicas y no de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-benign_alpaca
+- Modelo en Hugging Face: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-7b-benign_alpaca
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de PEFT (libreria declarada, version 0.19.1): https://github.com/huggingface/peft
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

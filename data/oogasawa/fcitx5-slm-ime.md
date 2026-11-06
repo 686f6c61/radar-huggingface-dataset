@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - VRAM: no aplica; el modelo está diseñado para inferencia en CPU.
 - GPU: no necesaria. No se documentan requisitos de GPU.
 - CPU: apto para la CPU de un portátil o mini PC convencional, según el autor.
-- Memoria y almacenamiento: el repositorio de HuggingFace ocupa 3,2 GB; no se detalla el tamaño de los pesos en runtime ni el consumo de RAM.
+- Memoria y almacenamiento: el repositorio de Hugging Face ocupa 3,2 GB; no se detalla el tamaño de los pesos en runtime ni el consumo de RAM.
 - Despliegue: motor fcitx5 sobre Linux, con paquetes para Debian/Ubuntu (`amd64`, `arm64`) y Fedora (`x86_64`). La versión 1.x, basada en PyTorch vía DJL en un servidor Java, requiere compilación desde la rama `1.x`.
 - Latencia y throughput: no disponibles.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fcitx5-slm-ime | Transformer encoder-decoder carácter, IME | ~60 M | no disponible | CC BY-SA 4.0 | Pesos en HuggingFace; paquetes Linux |
+| fcitx5-slm-ime | Transformer encoder-decoder carácter, IME | ~60 M | no disponible | CC BY-SA 4.0 | Pesos en Hugging Face; paquetes Linux |
 | Mozc | IME basado en reglas y diccionarios | no aplica | no aplica | licencia propia de código abierto | Ampliamente empaquetado en distribuciones Linux |
 | Anthy | IME basado en diccionarios | no aplica | no aplica | licencia propia de código abierto | Ampliamente empaquetado en distribuciones Linux |
 
@@ -87,7 +87,7 @@ La comparación relevante es funcional, no de parámetros: Mozc y Anthy no son m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oogasawa/fcitx5-slm-ime
+- Modelo en Hugging Face: https://huggingface.co/oogasawa/fcitx5-slm-ime
 - Release v2.0.0: https://github.com/oogasawa/fcitx5-slm-ime/releases/tag/v2.0.0
 - Repositorio GitHub: https://github.com/oogasawa/fcitx5-slm-ime
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/

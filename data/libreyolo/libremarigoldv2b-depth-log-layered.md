@@ -75,9 +75,9 @@ No se dispone de resultados de benchmarks que permitan una comparativa cuantitat
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMarigoldV2b-depth-log-layered | Adaptador de profundidad sobre Qwen-Image-Edit-2509 | no disponible | no aplicable | Apache 2.0 | HuggingFace; requiere base aparte; no es autonomo |
-| huawei-bayerlab/marigold-v2-0 | Modelo fuente de Marigold V2 | no disponible | no aplicable | Apache 2.0 | HuggingFace; incluye el subfolder `depth/Log-layered` de origen |
-| Qwen/Qwen-Image-Edit-2509 | Modelo base de edicion de imagen congelado | no disponible | no aplicable | Apache 2.0 (segun su model card) | HuggingFace; descarga separada obligatoria |
+| LibreMarigoldV2b-depth-log-layered | Adaptador de profundidad sobre Qwen-Image-Edit-2509 | no disponible | no aplicable | Apache 2.0 | Hugging Face; requiere base aparte; no es autonomo |
+| huawei-bayerlab/marigold-v2-0 | Modelo fuente de Marigold V2 | no disponible | no aplicable | Apache 2.0 | Hugging Face; incluye el subfolder `depth/Log-layered` de origen |
+| Qwen/Qwen-Image-Edit-2509 | Modelo base de edicion de imagen congelado | no disponible | no aplicable | Apache 2.0 (segun su model card) | Hugging Face; descarga separada obligatoria |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks que permitan una comparativa cuantitat
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-log-layered
+- Pagina de Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth-log-layered
 - Modelo fuente Marigold V2: https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Modelo base Qwen-Image-Edit-2509: https://huggingface.co/Qwen/Qwen-Image-Edit-2509/tree/d3968ef930e841f4c73640fb8afa3b306a78167e
 - Implementacion fuente Marigold V2: https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

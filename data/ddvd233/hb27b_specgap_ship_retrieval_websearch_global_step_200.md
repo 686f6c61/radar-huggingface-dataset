@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200` es un artefacto de investigación publicado en HuggingFace por el usuario ddvd233. Se trata de los pesos fusionados (merge) en safetensors bf16 del checkpoint FSDP de verl correspondiente al paso global 200 del experimento `hb27b_specgap_ship_retrieval_websearch`, que forma parte del proyecto RRIMed-27B (entrenamiento con recompensas auto-evolutivas, "self-evolving rewards"). El modelo parte de `Qwen/Qwen3.6-27B` y se ha sometido a un proceso de aprendizaje por refuerzo orientado a tareas médicas, con evaluación principal en HealthBench Professional.
+El modelo `ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200` es un artefacto de investigación publicado en Hugging Face por el usuario ddvd233. Se trata de los pesos fusionados (merge) en safetensors bf16 del checkpoint FSDP de verl correspondiente al paso global 200 del experimento `hb27b_specgap_ship_retrieval_websearch`, que forma parte del proyecto RRIMed-27B (entrenamiento con recompensas auto-evolutivas, "self-evolving rewards"). El modelo parte de `Qwen/Qwen3.6-27B` y se ha sometido a un proceso de aprendizaje por refuerzo orientado a tareas médicas, con evaluación principal en HealthBench Professional.
 
 El problema que aborda es el de mejorar el razonamiento clínico y la precisión de respuesta en preguntas médicas abiertas de nivel profesional, empleando un esquema de RL donde las recompensas se generan de forma automática a partir de tareas escritas por el propio modelo. En el paso 200 alcanza una exactitud ajustada por longitud de 0,485 en HealthBench Professional, frente a 0,374 del modelo sin entrenar y 0,392 de la línea base con prompt fijo; el mejor paso de la ejecución fue el 120, con 0,516, cuyos pesos se perdieron por la rotación de checkpoints.
 
@@ -78,7 +78,7 @@ No se han publicado resultados numéricos para otras evaluaciones en la informac
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200` | 27,36 mil millones | no disponible | Apache 2.0 | HealthBench Professional (ajustada por longitud): 0,485 en el paso 200 | Pesos bf16 en HuggingFace, 0 descargas |
+| `ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200` | 27,36 mil millones | no disponible | Apache 2.0 | HealthBench Professional (ajustada por longitud): 0,485 en el paso 200 | Pesos bf16 en Hugging Face, 0 descargas |
 | `Qwen/Qwen3.6-27B` (modelo base) | etiquetado como 27B | no disponible | no disponible en la información proporcionada | no disponible (la ficha cita 0,374 sin entrenar en HealthBench Professional, atribuido al estado previo al ajuste) | Modelo base público |
 | Otros fine-tunes médicos de tamaño comparable | no disponible | no disponible | no disponible | no disponible | No se han encontrado alternativas comparables en la información disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de terceros que permitan una comparación c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B
 - Librería de entrenamiento por refuerzo verl: no se proporciona enlace directo en la información disponible (se menciona como etiqueta y en la descripción del checkpoint)
 - Benchmarks citados (HealthBench Professional, HealthBench Hard, MedXpertQA): no se proporcionan enlaces en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-31B-v3.0-GGUF es un modelo de lenguaje de 31.000 millones de parámetros publicado por el usuario ReadyArt en HuggingFace, distribuido exclusivamente en formato GGUF (cuantizado) y orientado a generación de texto conversacional para roleplay y contenido para adultos. El modelo se presenta como un derivado "unaligned" (sin alineación de seguridad) especializado en ERP (erotic roleplay) y narrativa explícita, según los tags declarados por el autor: nsfw, explicit, roleplay, unaligned, adult-content y mature.
+Dark-Craving-31B-v3.0-GGUF es un modelo de lenguaje de 31.000 millones de parámetros publicado por el usuario ReadyArt en Hugging Face, distribuido exclusivamente en formato GGUF (cuantizado) y orientado a generación de texto conversacional para roleplay y contenido para adultos. El modelo se presenta como un derivado "unaligned" (sin alineación de seguridad) especializado en ERP (erotic roleplay) y narrativa explícita, según los tags declarados por el autor: nsfw, explicit, roleplay, unaligned, adult-content y mature.
 
 La información pública disponible es muy limitada: la model card consiste casi íntegramente en CSS y estilos visuales, sin datos técnicos sobre arquitectura, datos de entrenamiento, benchmarks ni proceso de ajuste. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado el 6 de noviembre de 2026. El campo `base_model` apunta al propio repositorio con relación "quantized", lo que sugiere que se trata de una cuantización GGUF de un modelo previo no enlazado en la ficha.
 
@@ -76,4 +76,4 @@ No disponible. La información proporcionada no incluye modelos comparables veri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-31B-v3.0-GGUF
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-31B-v3.0-GGUF

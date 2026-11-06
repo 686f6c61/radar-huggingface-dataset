@@ -2,7 +2,7 @@
 
 ## Resumen
 
-uzbek_physics_model es un modelo de clasificacion de texto publicado en HuggingFace por el usuario ismoilxojameliyev. Se trata de un ajuste fino (fine-tuning) completo de FacebookAI/xlm-roberta-base, un encoder transformer multilingue de 278.045.186 parametros, orientado por su nombre al dominio de la fisica en lengua uzbeka. El repositorio no incluye documentacion sobre el conjunto de datos, las etiquetas de salida ni el criterio de evaluacion: la model card es la plantilla autogenerada por la libreria Trainer, con los campos "More information needed" sin completar.
+uzbek_physics_model es un modelo de clasificacion de texto publicado en Hugging Face por el usuario ismoilxojameliyev. Se trata de un ajuste fino (fine-tuning) completo de FacebookAI/xlm-roberta-base, un encoder transformer multilingue de 278.045.186 parametros, orientado por su nombre al dominio de la fisica en lengua uzbeka. El repositorio no incluye documentacion sobre el conjunto de datos, las etiquetas de salida ni el criterio de evaluacion: la model card es la plantilla autogenerada por la libreria Trainer, con los campos "More information needed" sin completar.
 
 El modelo se distribuye bajo licencia MIT y en formato safetensors, con un tamano de repositorio de 1,1 GB. No registra descargas ni "likes" en el momento de la consulta y su model-index declara una lista de resultados vacia, por lo que no existen metricas publicadas de exactitud, F1 ni de ningun otro tipo.
 
@@ -33,7 +33,7 @@ La arquitectura es la de XLM-RoBERTa-base: 12 capas de transformer encoder, 768 
 
 Los hiperparametros declarados en la model card son: learning rate 2e-05, train_batch_size 2, eval_batch_size 8, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal, 3 epocas y semilla 42. El dataset de entrenamiento figura como "None", es decir, no se documenta su origen, tamano, composicion ni proceso de anotacion, y la seccion de resultados de entrenamiento esta vacia. Las versiones de framework reportadas son Transformers 5.18.0, PyTorch 2.11.0+cpu, Datasets 4.8.5 y Tokenizers 0.23.2. No hay constancia de RLHF, DPO ni de ningun esquema de alineacion, algo por otra parte poco habitual en un encoder discriminativo.
 
-No se declara ninguna innovacion tecnica: no hay decodificacion especulativa (no aplica, no es generativo), ni atencion lineal, ni mezcla de expertos. Se trata de un ajuste fino convencional con el Trainer de HuggingFace.
+No se declara ninguna innovacion tecnica: no hay decodificacion especulativa (no aplica, no es generativo), ni atencion lineal, ni mezcla de expertos. Se trata de un ajuste fino convencional con el Trainer de Hugging Face.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No hay datos de MMLU, GLUE, F1, precision, recall ni exactitud sobre ningun conj
 - VRAM estimada para inferencia: entre 1 y 2 GB en fp16 con lotes pequenos y secuencias cortas; entre 2 y 4 GB con lotes grandes y secuencias de 512 tokens, contando activaciones y memoria del runtime.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o T4 cubren el caso de uso con holgura; una A100 o H100 solo se justifica por volumen de peticiones, no por requisitos de memoria.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna (GTX 1650 4 GB en adelante) e incluso en CPU para cargas moderadas por lotes, dado que es un encoder de 278 M.
-- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta presente en el repositorio), HuggingFace Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime o TorchScript para servir sin dependencia de PyTorch. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son via directa sin conversion previa.
+- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta presente en el repositorio), Hugging Face Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime o TorchScript para servir sin dependencia de PyTorch. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son via directa sin conversion previa.
 - Latencia y throughput estimados: no disponible. El repositorio no publica mediciones de latencia ni de documentos por segundo.
 
 ## Comparativa con modelos similares
@@ -88,10 +88,10 @@ Todos los modelos de la tabla son encoders multilingues de rango base; los recue
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ismoilxojameliyev/uzbek_physics_model | 278.045.186 | 512 tokens | Clasificacion de texto (etiquetas no documentadas) | MIT | HuggingFace, 0 descargas, sin benchmarks |
-| FacebookAI/xlm-roberta-base | 278 M aprox. | 512 tokens | Encoder multilingue preentrenado | MIT | HuggingFace, ampliamente validado |
-| microsoft/mdeberta-v3-base | 278 M aprox. | 512 tokens | Encoder multilingue preentrenado | MIT | HuggingFace, con resultados en benchmarks multilingues publicados |
-| google-bert/bert-base-multilingual-cased | 178 M aprox. | 512 tokens | Encoder multilingue preentrenado | Apache 2.0 | HuggingFace, ampliamente validado |
+| ismoilxojameliyev/uzbek_physics_model | 278.045.186 | 512 tokens | Clasificacion de texto (etiquetas no documentadas) | MIT | Hugging Face, 0 descargas, sin benchmarks |
+| FacebookAI/xlm-roberta-base | 278 M aprox. | 512 tokens | Encoder multilingue preentrenado | MIT | Hugging Face, ampliamente validado |
+| microsoft/mdeberta-v3-base | 278 M aprox. | 512 tokens | Encoder multilingue preentrenado | MIT | Hugging Face, con resultados en benchmarks multilingues publicados |
+| google-bert/bert-base-multilingual-cased | 178 M aprox. | 512 tokens | Encoder multilingue preentrenado | Apache 2.0 | Hugging Face, ampliamente validado |
 
 La diferencia relevante no es arquitectonica, sino de evidencia: los tres modelos de referencia cuentan con evaluaciones publicadas y un historial de uso amplio, mientras que uzbek_physics_model no aporta ninguna metrica ni documentacion del ajuste. Frente a xlm-roberta-base, este checkpoint solo aporta valor si las etiquetas aprendidas coinciden con la tarea objetivo.
 
@@ -113,7 +113,7 @@ La diferencia relevante no es arquitectonica, sino de evidencia: los tres modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ismoilxojameliyev/uzbek_physics_model
+- Modelo en Hugging Face: https://huggingface.co/ismoilxojameliyev/uzbek_physics_model
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Articulo de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Repositorio de referencia de XLM-R (fairseq): https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dmustache/autosnap-car-model` es un repositorio de HuggingFace publicado por el usuario Dmustache que contiene un artefacto en formato Keras (librería `keras`), etiquetado unicamente con la región `region:us`. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, con un tamaño declarado de 0.0 GB, lo que sugiere que los pesos pueden no estar subidos, estar en un formato no reconocido por el hub o ser de tamaño despreciable. No hay model card, pipeline declarado, licencia ni idiomas especificados.
+`Dmustache/autosnap-car-model` es un repositorio de Hugging Face publicado por el usuario Dmustache que contiene un artefacto en formato Keras (librería `keras`), etiquetado unicamente con la región `region:us`. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, con un tamaño declarado de 0.0 GB, lo que sugiere que los pesos pueden no estar subidos, estar en un formato no reconocido por el hub o ser de tamaño despreciable. No hay model card, pipeline declarado, licencia ni idiomas especificados.
 
 Por el nombre del repositorio ("autosnap-car") cabe inferir que se trata de un modelo orientado al ámbito del automóvil, probablemente visión por computador aplicada a vehículos (clasificación, detección o generación de instantáneas), pero esta interpretación no está confirmada por ninguna documentación del autor. Sin ficha técnica, sin paper y sin resultados de benchmarks publicados, no es posible verificar la tarea real, la arquitectura interna ni el rendimiento del modelo.
 
@@ -87,5 +87,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dmustache/autosnap-car-model
+- Hugging Face: https://huggingface.co/Dmustache/autosnap-car-model
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web. Los resultados obtenidos corresponden a servicios sin relación con el modelo: https://zoom.us/join, https://www.dhl.com/sa-en/home/tracking.html, https://www.naqelexpress.com/en/sa/tracking/, https://mydhl.express.dhl/sa/en/manage-shipment-details.html, https://www.17track.net/en/tracking.

@@ -32,7 +32,7 @@ Datos de despliegue de la configuracion disponible:
 | Resolucion de entrada | 640x640 |
 | Modelo fuente | `https://github.com/airockchip/ultralytics_yolov8` |
 | Version de descarga (revision) | v2.4.0 |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-02 |
 | Ultima actualizacion | 2026-10-02 |
@@ -80,9 +80,9 @@ La model card no incluye valores de mAP, precision por clase, latencia ni throug
 - Nucleos NPU: 1 nucleo asignado en la configuracion `yolov8n-640x640-w8a8-1`.
 - No cabe ni esta pensado para GPUs de consumo como RTX 4090, ni para A100 o H100: el artefacto RKNN es especifico de RKNPU.
 - Conversion del modelo: se realiza en PC con `rknn-toolkit2`; la inferencia en dispositivo requiere `rknn-toolkit-lite2` (Python) o la C API del RKNPU SDK. Los ejemplos de referencia estan en `rknn_model_zoo/examples/yolov8`.
-- Descarga: disponible via HuggingFace (`hf download`) y ModelScope (`modelscope download`), usando la revision `v2.4.0`.
+- Descarga: disponible via Hugging Face (`hf download`) y ModelScope (`modelscope download`), usando la revision `v2.4.0`.
 - Latencia y throughput: no disponible. No se publican mediciones de FPS ni de milisegundos por inferencia para esta configuracion.
-- Almacenamiento: el repositorio se reporta como 0,0 GB en los metadatos de HuggingFace, aunque contiene directorios de configuracion y ficheros de sumas de verificacion.
+- Almacenamiento: el repositorio se reporta como 0,0 GB en los metadatos de Hugging Face, aunque contiene directorios de configuracion y ficheros de sumas de verificacion.
 - Nota de integracion: en modo fisico de la NPU del RK3588 se ha reportado en foros de la comunidad un problema con el nodo `model.22` (etapa de post-procesado de generacion de cajas) que obliga a eliminar dicho nodo del grafo y reprogramar el post-procesado en la aplicacion. Conviene validarlo antes de produccion.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ No se dispone de datos comparativos de mAP, latencia o consumo entre estas alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n
 - Modelo fuente (airockchip/ultralytics_yolov8): https://github.com/airockchip/ultralytics_yolov8
 - Ejemplos de YOLOv8 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Repositorio RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo

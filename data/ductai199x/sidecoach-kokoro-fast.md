@@ -89,11 +89,11 @@ La comparativa directa mas fiable es con el propio export en precision completa 
 - Riesgo de alucinacion: no aplica en el sentido de texto inventado, pero un TTS puede pronunciar de forma incorrecta palabras fuera de dominio (nombres propios, siglas, numeros).
 - Licencia Apache-2.0, que permite uso comercial; el autor reconoce que es una copia modificada del export ONNX de Kokoro-82M y atribuye el modelo y las voces a hexgrad.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta, sin historial de uso en produccion ni validacion externa.
-- Fecha del repositorio: creado y actualizado el 2026-10-03 (segun los metadatos de HuggingFace).
+- Fecha del repositorio: creado y actualizado el 2026-10-03 (segun los metadatos de Hugging Face).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ductai199x/sidecoach-kokoro-fast
+- Modelo en Hugging Face: https://huggingface.co/ductai199x/sidecoach-kokoro-fast
 - Perfil del autor: https://huggingface.co/ductai199x
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio kokoro-onnx (origen del export): https://github.com/thewh1teagle/kokoro-onnx

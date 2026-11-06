@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lakshayybhati/trikaal-v1-baseline
+- Hugging Face: https://huggingface.co/lakshayybhati/trikaal-v1-baseline
 - Repositorio GitHub: https://github.com/lakshayybhati/trikaal
 - Manifiesto de pesos: `runs_manifest/m6_weights_release.json`
 - Inventario de verificación: `runs_manifest/m6_rescue_inventory.json`

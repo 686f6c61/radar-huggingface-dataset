@@ -77,7 +77,7 @@ Esta comparativa se basa en el modelo original, no en la compilacion Core ML. La
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/aoiandroid/parakeet-ctc-110m-coreml-ios)
+- [Hugging Face del modelo](https://huggingface.co/aoiandroid/parakeet-ctc-110m-coreml-ios)
 - [Modelo fuente de FluidInference](https://huggingface.co/FluidInference/parakeet-ctc-110m-coreml)
 - [Modelo original en NVIDIA NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/parakeet-tdt_ctc-110m)
 - [Sibling para macOS](https://huggingface.co/aoiandroid/parakeet-ctc-110m-coreml-macos)

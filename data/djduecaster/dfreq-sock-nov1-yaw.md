@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dfreq-sock-nov1-yaw es un artefacto de calibración de comandos para robótica, publicado por el usuario djduecaster en HuggingFace bajo el pipeline `robotics` y la librería `microduck`. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un conjunto de pesos ONNX que encapsula una política neuronal de locomoción (`BEST_alpha_walking`) junto con una transformación determinista y sin memoria que ajusta los comandos de entrada (yaw y velocidad lineal) antes de pasarlos a la política. El autor lo describe explícitamente como "optimización nativa de física sin derivadas", no como un nuevo entrenamiento neuronal PPO: los pesos neuronales heredados permanecen sin cambios.
+dfreq-sock-nov1-yaw es un artefacto de calibración de comandos para robótica, publicado por el usuario djduecaster en Hugging Face bajo el pipeline `robotics` y la librería `microduck`. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un conjunto de pesos ONNX que encapsula una política neuronal de locomoción (`BEST_alpha_walking`) junto con una transformación determinista y sin memoria que ajusta los comandos de entrada (yaw y velocidad lineal) antes de pasarlos a la política. El autor lo describe explícitamente como "optimización nativa de física sin derivadas", no como un nuevo entrenamiento neuronal PPO: los pesos neuronales heredados permanecen sin cambios.
 
 El problema que aborda es la calibración de comandos en un entorno de simulación denominado SockHeist, donde la política original muestra un rendimiento subóptimo bajo ciertas consignas de giro y avance. La transformación propuesta actúa únicamente sobre dos componentes del vector de observación (índices 48 y 50, correspondientes a velocidad lineal y yaw), dejando el resto de las 61 entradas float32 intactas. La salida son 14 offsets articulares float32 a 50 Hz.
 
-Su relevancia es limitada y muy específica: se trata de un experimento de nicho con cero descargas y cero likes en el momento de la consulta, sin idiomas declarados y con un tamaño de repositorio de 0.0 GB. No es un modelo de propósito general ni presenta capacidades de texto, visión o razonamiento. La información disponible proviene exclusivamente de la model card y de los metadatos de HuggingFace.
+Su relevancia es limitada y muy específica: se trata de un experimento de nicho con cero descargas y cero likes en el momento de la consulta, sin idiomas declarados y con un tamaño de repositorio de 0.0 GB. No es un modelo de propósito general ni presenta capacidades de texto, visión o razonamiento. La información disponible proviene exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -86,5 +86,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-sock-nov1-yaw
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-sock-nov1-yaw
 - Resultado de búsqueda web no relacionado con el modelo (agregadores de NFTs): https://wootfi.com/10-best-aggregators-for-bridging-nfts-with-metadata/

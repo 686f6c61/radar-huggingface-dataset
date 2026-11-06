@@ -102,7 +102,7 @@ No se han identificado en la información disponible modelos de terceros directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kymbms/connectailab-rl-kodari-v1
+- Modelo en Hugging Face: https://huggingface.co/kymbms/connectailab-rl-kodari-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Julen-G-DS/electric-twin-ces-sft-20261029d` es un modelo de lenguaje publicado en HuggingFace por el usuario Julen-G-DS. Por los metadatos disponibles (tags `granite`, `ces`, `electric-twin` y `sft`) se trata de un ajuste fino supervisado (SFT) derivado de la familia IBM Granite, orientado presumiblemente a un dominio bautizado como "electric twin" y con foco en checo (`ces` es el código ISO 639-2 de ese idioma). El repositorio ocupa 10,1 GB en formato safetensors, lo que sugiere un modelo de escala media (del orden de 7-8B parámetros en fp16), aunque el dato exacto de parámetros no está confirmado en la información disponible.
+`Julen-G-DS/electric-twin-ces-sft-20261029d` es un modelo de lenguaje publicado en Hugging Face por el usuario Julen-G-DS. Por los metadatos disponibles (tags `granite`, `ces`, `electric-twin` y `sft`) se trata de un ajuste fino supervisado (SFT) derivado de la familia IBM Granite, orientado presumiblemente a un dominio bautizado como "electric twin" y con foco en checo (`ces` es el código ISO 639-2 de ese idioma). El repositorio ocupa 10,1 GB en formato safetensors, lo que sugiere un modelo de escala media (del orden de 7-8B parámetros en fp16), aunque el dato exacto de parámetros no está confirmado en la información disponible.
 
-El modelo se distribuye bajo licencia Apache 2.0, pero el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. No cuenta con descargas ni likes, y no se ha publicado información sobre pipeline, idiomas soportados, benchmarks ni datos de entrenamiento. La fecha de creación indicada (30 de octubre de 2026) y el sufijo temporal del nombre (`20261029d`) apuntan a un artefacto experimental dentro de una serie de iteraciones.
+El modelo se distribuye bajo licencia Apache 2.0, pero el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. No cuenta con descargas ni likes, y no se ha publicado información sobre pipeline, idiomas soportados, benchmarks ni datos de entrenamiento. La fecha de creación indicada (30 de octubre de 2026) y el sufijo temporal del nombre (`20261029d`) apuntan a un artefacto experimental dentro de una serie de iteraciones.
 
 Dado el carácter opaco de la publicación, esta ficha se limita a documentar lo que consta en los metadatos y a marcar explícitamente como "no disponible" todo aquello que no se ha publicado, incluyendo arquitectura exacta, contexto, datos de entrenamiento y rendimiento.
 
@@ -75,14 +75,14 @@ La comparación cuantitativa no es posible porque el modelo no publica métricas
 - Riesgo de alucinación: al no existir benchmarks ni evaluación publicada, no puede acotarse la tasa de errores factuales; en dominios técnicos como el eléctrico, esto es crítico.
 - Sesgos desconocidos: sin información sobre la composición del dataset de SFT, no es posible evaluar sesgos lingüísticos, culturales o de dominio.
 - Cobertura idiomática incierta: el tag `ces` sugiere checo, pero se desconoce el grado de competencia en castellano u otros idiomas.
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace, lo que puede retrasar la integración en pipelines automatizados.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face, lo que puede retrasar la integración en pipelines automatizados.
 - Licencia: Apache 2.0 permite uso comercial, pero el integrador debe verificar que la base Granite subyacente y los datos de SFT no impongan restricciones adicionales no reflejadas en los tags.
 - Madurez: cero descargas y cero likes, con un nombre que incluye una fecha futura (2026), indican un artefacto experimental sin validación por la comunidad.
 - Formato único: solo safetensors; no hay GGUF, AWQ ni GPTQ publicados, lo que obliga a cuantizar localmente para despliegues en hardware limitado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Julen-G-DS/electric-twin-ces-sft-20261029d
+- Hugging Face: https://huggingface.co/Julen-G-DS/electric-twin-ces-sft-20261029d
 - Repositorio de IBM Granite (referencia de la base): no disponible en la información proporcionada
 - Paper o blog del autor: no disponible
 - Demo: no disponible

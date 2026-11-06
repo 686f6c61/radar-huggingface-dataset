@@ -79,8 +79,8 @@ En velocidad, `rerank.py` sobre un Apple M2 Pro con 32 GB y MLX 0.32.4 tarda 231
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikioth/bge-reranker-v2-m3-mlx-8bit | 567.755.777 | 8192 posiciones (pruebas a 512 tokens por par) | safetensors MLX 8 bits | Apache 2.0 | HuggingFace, 20 descargas |
-| BAAI/bge-reranker-v2-m3 | 567.755.777 | 8192 posiciones | safetensors PyTorch float32 | Apache 2.0 | HuggingFace, modelo base de referencia |
+| nikioth/bge-reranker-v2-m3-mlx-8bit | 567.755.777 | 8192 posiciones (pruebas a 512 tokens por par) | safetensors MLX 8 bits | Apache 2.0 | Hugging Face, 20 descargas |
+| BAAI/bge-reranker-v2-m3 | 567.755.777 | 8192 posiciones | safetensors PyTorch float32 | Apache 2.0 | Hugging Face, modelo base de referencia |
 | Variante float16 del mismo modelo | 567.755.777 | 8192 posiciones | safetensors MLX float16 | Apache 2.0 | Conversión propia a partir del base |
 | Rerankers multilingües de la familia bge-reranker | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ En velocidad, `rerank.py` sobre un Apple M2 Pro con 32 GB y MLX 0.32.4 tarda 231
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikioth/bge-reranker-v2-m3-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/nikioth/bge-reranker-v2-m3-mlx-8bit
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Librería MLX: https://github.com/ml-explore/mlx
 - mlx-swift-lm (MLXRerankers): https://github.com/ml-explore/mlx-swift-lm

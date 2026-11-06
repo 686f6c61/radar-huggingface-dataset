@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables adicionales ni de datos 
 
 ## Enlaces
 
-- [HuggingFace: value-productions/quickmt-en-tr-int8](https://huggingface.co/value-productions/quickmt-en-tr-int8)
+- [Hugging Face: value-productions/quickmt-en-tr-int8](https://huggingface.co/value-productions/quickmt-en-tr-int8)
 - [Modelo base: quickmt/quickmt-en-tr](https://huggingface.co/quickmt/quickmt-en-tr)
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2)

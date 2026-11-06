@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-3-4B MLLMU-Bench (forget_5, GradDiff) es un modelo multimodal de tipo image-text-to-text derivado de Gemma 3 4B Instruct de Google, publicado por el usuario Lordvarun23 en HuggingFace. No es un modelo de propósito general, sino un artefacto de investigación en *machine unlearning*: parte de un ajuste fino previo sobre el benchmark MLLMU-Bench y aplica una etapa de desaprendizaje con el algoritmo GradDiff para reducir la capacidad del modelo de recordar un subconjunto concreto de perfiles (denominado `forget_5`), preservando al mismo tiempo el rendimiento sobre el conjunto *retain*.
+Gemma-3-4B MLLMU-Bench (forget_5, GradDiff) es un modelo multimodal de tipo image-text-to-text derivado de Gemma 3 4B Instruct de Google, publicado por el usuario Lordvarun23 en Hugging Face. No es un modelo de propósito general, sino un artefacto de investigación en *machine unlearning*: parte de un ajuste fino previo sobre el benchmark MLLMU-Bench y aplica una etapa de desaprendizaje con el algoritmo GradDiff para reducir la capacidad del modelo de recordar un subconjunto concreto de perfiles (denominado `forget_5`), preservando al mismo tiempo el rendimiento sobre el conjunto *retain*.
 
 El modelo conserva la arquitectura original de Gemma 3 4B, con aproximadamente 4.300 millones de parámetros, y mantiene la torre de visión congelada durante el entrenamiento de desaprendizaje. Su relevancia es metodológica: sirve como referencia reproducible para comparar técnicas de unlearning (GradDiff, NPO, KL-Min, retain-only) sobre un modelo multimodal con licencia Gemma, y aporta una tabla de evaluación juzgada por Qwen3-32B que permite cuantificar el equilibrio entre olvido y retención.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B MLLMU-Bench GradDiff (este) | 4,3 B | No disponible | Gemma | Unlearning multimodal (GradDiff) | HuggingFace, 0 descargas |
-| Gemma-3-4B MLLMU-Bench NPO | 4,3 B (derivado) | No disponible | Gemma | Unlearning multimodal (NPO) | HuggingFace |
-| Gemma-3-4B MLLMU-Bench KL-Min | 4,3 B (derivado) | No disponible | Gemma | Unlearning multimodal (KL-Min) | HuggingFace |
-| google/gemma-3-4b-it | 4,3 B | No disponible en la información proporcionada | Gemma | Modelo instruct multimodal de propósito general | HuggingFace, ampliamente utilizado |
+| Gemma-3-4B MLLMU-Bench GradDiff (este) | 4,3 B | No disponible | Gemma | Unlearning multimodal (GradDiff) | Hugging Face, 0 descargas |
+| Gemma-3-4B MLLMU-Bench NPO | 4,3 B (derivado) | No disponible | Gemma | Unlearning multimodal (NPO) | Hugging Face |
+| Gemma-3-4B MLLMU-Bench KL-Min | 4,3 B (derivado) | No disponible | Gemma | Unlearning multimodal (KL-Min) | Hugging Face |
+| google/gemma-3-4b-it | 4,3 B | No disponible en la información proporcionada | Gemma | Modelo instruct multimodal de propósito general | Hugging Face, ampliamente utilizado |
 
 Los tres checkpoints derivados comparten arquitectura y base, por lo que la comparación relevante es la de la tabla de benchmarks: GradDiff obtiene 0,35 en forget_5 y 0,45 en retain, frente a 0,07/0,41 de NPO y 0,26/0,37 de KL-Min. El modelo base apenas acierta (0,03/0,06), lo que confirma que el ajuste fino previo es el que introduce el conocimiento que luego se intenta olvidar.
 
@@ -96,7 +96,7 @@ Los tres checkpoints derivados comparten arquitectura y base, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-graddiff-forget5
+- Modelo en Hugging Face: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-graddiff-forget5
 - Modelo base del ajuste fino: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-ft
 - Gemma-3-4B-it original: https://huggingface.co/google/gemma-3-4b-it
 - Variante retain-only: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-retain95

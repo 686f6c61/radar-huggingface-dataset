@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfieyoung/deit-classification` es un repositorio de HuggingFace que contiene una implementacion propia y minima de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. El autor lo publica explicitamente como un punto de partida reproducible, no como un modelo entrenado: el fichero `model.safetensors` se describe como un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y la model card declara que no se reclama ninguna puntuacion de benchmark.
+`alfieyoung/deit-classification` es un repositorio de Hugging Face que contiene una implementacion propia y minima de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. El autor lo publica explicitamente como un punto de partida reproducible, no como un modelo entrenado: el fichero `model.safetensors` se describe como un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y la model card declara que no se reclama ninguna puntuacion de benchmark.
 
 El interes del repositorio es, por tanto, metodologico mas que de rendimiento. Aporta una definicion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un script ejecutable (`train.py`), lo que lo hace util como plantilla para montar un pipeline de clasificacion reproducible con control explicito de semillas y presupuesto de ajuste. No es un modelo listo para produccion ni para inferencia real.
 
@@ -26,7 +26,7 @@ El dato mas llamativo es la discrepancia entre la escala declarada y el numero d
 | Normalizacion | groupnorm (segun la model card) |
 | Optimizador por defecto | SGD con schedule onecycle |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio no contiene evidencia de ninguna ejec
 - No soporta tool calling, function calling ni flujos de agente.
 - No hay soporte multilingue declarado ni modo de razonamiento (thinking mode).
 - No se declaran capacidades de vision adicionales mas alla de la clasificacion (ni deteccion, ni segmentacion, ni OCR, ni captioning).
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito.
 
 ## Casos de uso
 
@@ -75,7 +75,7 @@ El repositorio no es un modelo entrenado, por lo que una comparativa de rendimie
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| alfieyoung/deit-classification | 49.600 | no disponible | apache-2.0 | HuggingFace, checkpoint de inicializacion | no disponible (sin entrenar) |
+| alfieyoung/deit-classification | 49.600 | no disponible | apache-2.0 | Hugging Face, checkpoint de inicializacion | no disponible (sin entrenar) |
 | DeiT-tiny (referencia de la familia) | ~5,7 M (referencia externa) | imagen 224x224 (referencia externa) | apache-2.0 (referencia externa) | checkpoint entrenado publicado por los autores | no disponible en esta busqueda |
 | DeiT-small (referencia de la familia) | ~22 M (referencia externa) | imagen 224x224 (referencia externa) | apache-2.0 (referencia externa) | checkpoint entrenado publicado por los autores | no disponible en esta busqueda |
 | DeiT-base (referencia de la familia) | ~86 M (referencia externa) | imagen 224x224 (referencia externa) | apache-2.0 (referencia externa) | checkpoint entrenado publicado por los autores | no disponible en esta busqueda |
@@ -95,7 +95,7 @@ El repositorio no es un modelo entrenado, por lo que una comparativa de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfieyoung/deit-classification
+- Modelo en Hugging Face: https://huggingface.co/alfieyoung/deit-classification
 - Repositorio de DeiT original de los autores: no disponible en la informacion proporcionada
 - Paper de DeiT: no disponible en la informacion proporcionada
 - Demos, blogs o cuadernos asociados: no disponible en la informacion proporcionada

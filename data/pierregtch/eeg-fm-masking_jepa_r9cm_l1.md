@@ -110,7 +110,7 @@ Las variantes `r = 9 cm, L = 2` son las recomendadas por los autores del artícu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L1
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Sitio web del artículo: https://pierregtch.github.io/eeg-fm-masking
 - Código fuente: https://github.com/PierreGtch/eeg-fm-masking

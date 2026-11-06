@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed101
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed101
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

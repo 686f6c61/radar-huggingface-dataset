@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huggingface-mic/opt-125m-mic` es un artefacto de prueba (test fixture) publicado por la organizacion `huggingface-mic` en HuggingFace. No se trata de un modelo entrenado ni utilizable para inferencia real: es una version "adelgazada" del checkpoint `facebook/opt-125m` pensada para validar contratos de integracion entre Transformers y distintos frameworks. El repositorio incluye pesos reducidos, ejemplos de uso ejecutables y un directorio de expectativas de framework, todo empaquetado de forma reproducible.
+`huggingface-mic/opt-125m-mic` es un artefacto de prueba (test fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado ni utilizable para inferencia real: es una version "adelgazada" del checkpoint `facebook/opt-125m` pensada para validar contratos de integracion entre Transformers y distintos frameworks. El repositorio incluye pesos reducidos, ejemplos de uso ejecutables y un directorio de expectativas de framework, todo empaquetado de forma reproducible.
 
 El fixture conserva la arquitectura del modelo original (`OPTForCausalLM`) pero reduce el numero de capas ocultas a 2, lo que deja el total en aproximadamente 1,0 millones de parametros. Los pesos son aleatorios (semilla 17) y pasaron una puerta de sensibilidad a la entrada que verifica que cada perturbacion de las entradas del contrato mueve los logits al menos 0,001. Los ficheros del procesador (tokenizer, `generation_config.json`, `LICENSE.md`, etc.) se copiaron byte a byte desde `facebook/opt-125m`.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/opt-125m-mic` | ~1,0 M | no disponible | Fixture de prueba | no disponible | HuggingFace |
-| `facebook/opt-125m` | 125 M | 2048 tokens | Modelo de lenguaje real | OPT license | HuggingFace |
-| `facebook/opt-350m` | 350 M | 2048 tokens | Modelo de lenguaje real | OPT license | HuggingFace |
-| `facebook/opt-1.3b` | 1,3 B | 2048 tokens | Modelo de lenguaje real | OPT license | HuggingFace |
+| `huggingface-mic/opt-125m-mic` | ~1,0 M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| `facebook/opt-125m` | 125 M | 2048 tokens | Modelo de lenguaje real | OPT license | Hugging Face |
+| `facebook/opt-350m` | 350 M | 2048 tokens | Modelo de lenguaje real | OPT license | Hugging Face |
+| `facebook/opt-1.3b` | 1,3 B | 2048 tokens | Modelo de lenguaje real | OPT license | Hugging Face |
 
 La comparacion solo es valida en terminos de arquitectura e interfaz: el fixture comparte estructura y tokenizer con la familia OPT, pero no es un modelo de lenguaje utilizable. Los datos de contexto de la familia OPT (2048 tokens) no se confirman para el fixture en la informacion disponible.
 
@@ -80,7 +80,7 @@ La comparacion solo es valida en terminos de arquitectura e interfaz: el fixture
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/huggingface-mic/opt-125m-mic)
+- [Modelo en Hugging Face](https://huggingface.co/huggingface-mic/opt-125m-mic)
 - [Modelo base facebook/opt-125m](https://huggingface.co/facebook/opt-125m)
 - [Como se adelgazo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/opt-125m-mic.html)
 - [Repositorio transformers-mic](https://github.com/huggingface/transformers-mic)

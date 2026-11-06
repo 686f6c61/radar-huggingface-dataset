@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaylorTwift/codex no es un checkpoint de un modelo de lenguaje, sino un espejo de solo lectura del repositorio de código fuente de [`openai/codex`](https://github.com/openai/codex), la interfaz de línea de comandos (CLI) de agente de programación de OpenAI que se ejecuta localmente en el ordenador del usuario. El repositorio de HuggingFace tiene un tamaño de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, y fue creado el 16 de septiembre de 2026 según los metadatos del Hub. La model card es explícita al respecto: el repositorio canónico, el gestor de incidencias y las pull requests residen en GitHub, no en el Hub.
+SaylorTwift/codex no es un checkpoint de un modelo de lenguaje, sino un espejo de solo lectura del repositorio de código fuente de [`openai/codex`](https://github.com/openai/codex), la interfaz de línea de comandos (CLI) de agente de programación de OpenAI que se ejecuta localmente en el ordenador del usuario. El repositorio de Hugging Face tiene un tamaño de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, y fue creado el 16 de septiembre de 2026 según los metadatos del Hub. La model card es explícita al respecto: el repositorio canónico, el gestor de incidencias y las pull requests residen en GitHub, no en el Hub.
 
 Por tanto, no existe información sobre arquitectura de red neuronal, número de parámetros, longitud de contexto ni datos de entrenamiento asociados a este identificador. Los repositorios de pesos, plantillas de chat o configuraciones de inferencia que normalmente se esperan en una ficha de modelo no están presentes.
 
@@ -95,7 +95,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SaylorTwift/codex
+- Repositorio en Hugging Face: https://huggingface.co/SaylorTwift/codex
 - Repositorio canónico en GitHub: https://github.com/openai/codex
 - Documentación de Codex: https://developers.openai.com/codex
 - Guía de contribución: ./docs/contributing.md (relativa al repositorio de GitHub)

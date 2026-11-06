@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zido-coach-v1 es un modelo de generacion de texto publicado en HuggingFace por el usuario voldmatter bajo el identificador `voldmatter/zido-coach-v1`. Se distribuye en formato transformers con pesos safetensors y, por las etiquetas declaradas (`qwen3`, `trl`, `sft`, `conversational`), todo apunta a un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base de la familia Qwen3. El recuento real de parametros extraido de los pesos safetensors es de 4.022.468.096 parametros (aproximadamente 4,02 mil millones), lo que encaja con la variante Qwen3-4B, aunque el autor no confirma explicitamente la procedencia.
+Zido-coach-v1 es un modelo de generacion de texto publicado en Hugging Face por el usuario voldmatter bajo el identificador `voldmatter/zido-coach-v1`. Se distribuye en formato transformers con pesos safetensors y, por las etiquetas declaradas (`qwen3`, `trl`, `sft`, `conversational`), todo apunta a un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base de la familia Qwen3. El recuento real de parametros extraido de los pesos safetensors es de 4.022.468.096 parametros (aproximadamente 4,02 mil millones), lo que encaja con la variante Qwen3-4B, aunque el autor no confirma explicitamente la procedencia.
 
-El modelo resuelve el caso de uso tipico de un asistente conversacional especializado: dado el nombre ("coach") y la etiqueta `conversational`, su proposito declarado parece ser el de un asistente de acompanamiento o tutoria, aunque la model card no describe ninguna tarea concreta ni el dominio de especializacion. La relevancia actual es limitada dentro del ecosistema: se trata de un ajuste de nicho, sin descargas ni valoraciones en el momento de la consulta, y con una model card generada automaticamente a partir de la plantilla estandar de HuggingFace, sin contenido tecnico relleno.
+El modelo resuelve el caso de uso tipico de un asistente conversacional especializado: dado el nombre ("coach") y la etiqueta `conversational`, su proposito declarado parece ser el de un asistente de acompanamiento o tutoria, aunque la model card no describe ninguna tarea concreta ni el dominio de especializacion. La relevancia actual es limitada dentro del ecosistema: se trata de un ajuste de nicho, sin descargas ni valoraciones en el momento de la consulta, y con una model card generada automaticamente a partir de la plantilla estandar de Hugging Face, sin contenido tecnico relleno.
 
 La principal advertencia para quien evalue este modelo es la ausencia casi total de documentacion verificable: no hay licencia declarada, no hay idiomas declarados, no hay datos de entrenamiento, no hay benchmarks y no hay informacion sobre hiperparametros. Cualquier uso en produccion exigiria auditar los pesos, el tokenizador y el dataset de ajuste por cuenta propia.
 
@@ -30,7 +30,7 @@ La principal advertencia para quien evalue este modelo es la ausencia casi total
 
 No se dispone de informacion sobre la arquitectura mas alla de las etiquetas del repositorio. La etiqueta `qwen3` indica que el modelo se apoya en la familia Qwen3, y el recuento exacto de 4.022.468.096 parametros coincide con el orden de magnitud de Qwen3-4B, pero el autor no declara el modelo base en la model card. De tratarse de un transformer decoder-only de la familia Qwen3, incorporaria atencion con query-key normalization, RoPE y posiblemente un modo de razonamiento explicito (thinking mode); ninguna de estas caracteristicas esta confirmada en la informacion disponible.
 
-En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que el ajuste se realizo mediante aprendizaje supervisado con la libreria TRL de HuggingFace. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre los hiperparametros (precision, tasa de aprendizaje, epocas). La model card conserva intactos todos los marcadores `[More Information Needed]` de la plantilla automatica, incluida la seccion de detalles de entrenamiento y la de evaluacion.
+En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que el ajuste se realizo mediante aprendizaje supervisado con la libreria TRL de Hugging Face. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre los hiperparametros (precision, tasa de aprendizaje, epocas). La model card conserva intactos todos los marcadores `[More Information Needed]` de la plantilla automatica, incluida la seccion de detalles de entrenamiento y la de evaluacion.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que el ajuste se
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
 - Capacidades especiales (thinking mode, vision, audio): no disponible. No hay indicios de multimodalidad.
-- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el modelo puede servirse con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que el ajuste se
 - Experimentacion academica con pipelines TRL: es un ejemplo util para estudiar como se comporta un SFT de bajo coste sobre un modelo Qwen3-4B, comparando el checkpoint ajustado con el modelo base.
 - Prototipado rapido de producto conversacional: su tamano permite iterar en una sola GPU consumer, lo que facilita validar una idea de producto antes de invertir en modelos mayores.
 - Generacion de texto asistida en castellano o en otros idiomas: solo si se verifica empiricamente el soporte idiomatico, ya que el autor no declara idiomas.
-- Despliegue en infraestructura gestionada: gracias a la etiqueta `endpoints_compatible`, puede publicarse como endpoint gestionado en HuggingFace Inference Endpoints sin trabajo de adaptacion adicional.
+- Despliegue en infraestructura gestionada: gracias a la etiqueta `endpoints_compatible`, puede publicarse como endpoint gestionado en Hugging Face Inference Endpoints sin trabajo de adaptacion adicional.
 - Evaluacion interna de riesgos: util como caso de estudio de los riesgos de publicar modelos con model card vacia y sin licencia declarada.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 2,5-3,5 GB, aunque en el repositorio no se publican pesos GGUF ni cuantizados, por lo que habria que generarlos.
 - GPU recomendadas: para bf16 completo, una RTX 4090 (24 GB), L40S, A100 40 GB o H100 son suficientes y sobradas; para una sola GPU de 8-12 GB habria que recurrir a cuantizacion.
 - Cabe en GPU consumer: si. En una RTX 3060 de 12 GB o una RTX 4070 en bf16 con contexto moderado; en GPUs de 8 GB solo con cuantizacion de 4 u 8 bits.
-- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM (compatible con arquitecturas Qwen3, aunque no declarado por el autor), llama.cpp u Ollama solo tras convertir los pesos a GGUF, ya que no se distribuyen en ese formato.
+- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM (compatible con arquitecturas Qwen3, aunque no declarado por el autor), llama.cpp u Ollama solo tras convertir los pesos a GGUF, ya que no se distribuyen en ese formato.
 - Latencia y throughput: no disponible. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ La comparativa se establece frente a modelos abiertos del mismo orden de magnitu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| voldmatter/zido-coach-v1 | 4,02B | No disponible | No disponible | HuggingFace, safetensors | No |
-| Qwen3-4B (base probable) | 4,02B | 32.768 tokens nativos, extensible con YaRN | Apache 2.0 | HuggingFace, safetensors | Si, en su model card oficial |
-| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF | Si |
-| Gemma-3-4B-IT | 4B | 128.000 tokens | Gemma Terms of Use | HuggingFace, safetensors | Si |
+| voldmatter/zido-coach-v1 | 4,02B | No disponible | No disponible | Hugging Face, safetensors | No |
+| Qwen3-4B (base probable) | 4,02B | 32.768 tokens nativos, extensible con YaRN | Apache 2.0 | Hugging Face, safetensors | Si, en su model card oficial |
+| Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF | Si |
+| Gemma-3-4B-IT | 4B | 128.000 tokens | Gemma Terms of Use | Hugging Face, safetensors | Si |
 
 Nota: los datos de las tres alternativas corresponden a informacion publica de sus respectivos autores y no han sido verificados contra una fuente citada en esta busqueda; se incluyen solo como referencia de categoria. El modelo evaluado no permite una comparacion de rendimiento al no disponer de resultados.
 
@@ -95,7 +95,7 @@ Nota: los datos de las tres alternativas corresponden a informacion publica de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voldmatter/zido-coach-v1
+- Modelo en Hugging Face: https://huggingface.co/voldmatter/zido-coach-v1
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales especificos de este modelo. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

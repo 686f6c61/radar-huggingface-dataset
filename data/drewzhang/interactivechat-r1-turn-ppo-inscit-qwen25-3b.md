@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DrewZhang/interactivechat-r1-turn-ppo-inscit-qwen25-3b` es un ajuste fino publicado en HuggingFace por el usuario DrewZhang. Por el propio identificador del repositorio se deduce que parte de una base de la familia Qwen2.5 de 3.000 millones de parametros y que ha sido entrenado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) orientado a conversacion interactiva a nivel de turno. Esta deduccion procede unicamente de la nomenclatura del repositorio; la ficha de HuggingFace no incluye documentacion tecnica, ni pipeline declarado, ni idiomas, ni licencia.
+El modelo `DrewZhang/interactivechat-r1-turn-ppo-inscit-qwen25-3b` es un ajuste fino publicado en Hugging Face por el usuario DrewZhang. Por el propio identificador del repositorio se deduce que parte de una base de la familia Qwen2.5 de 3.000 millones de parametros y que ha sido entrenado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) orientado a conversacion interactiva a nivel de turno. Esta deduccion procede unicamente de la nomenclatura del repositorio; la ficha de Hugging Face no incluye documentacion tecnica, ni pipeline declarado, ni idiomas, ni licencia.
 
 El dato verificado es el recuento de parametros en los ficheros safetensors: 3.397.103.616 parametros, es decir, unos 3,4 mil millones. El repositorio ocupa 13,6 GB, un tamano coherente con pesos almacenados en fp32 (4 bytes por parametro) o con la presencia de copias adicionales de pesos, algo poco habitual en modelos de este tamano, donde lo esperable en bf16 seria del orden de 6,8 GB.
 
@@ -73,10 +73,10 @@ La comparativa es orientativa: las cifras de los modelos alternativos correspond
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| interactivechat-r1-turn-ppo-inscit-qwen25-3b | 3,4 B | No disponible | No disponible | HuggingFace, 10 descargas |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente adoptado |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, ampliamente adoptado |
+| interactivechat-r1-turn-ppo-inscit-qwen25-3b | 3,4 B | No disponible | No disponible | Hugging Face, 10 descargas |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente adoptado |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, ampliamente adoptado |
 
 A diferencia de las tres alternativas, el modelo analizado no declara licencia, no documenta idiomas ni contexto y no ofrece variantes cuantizadas listas para usar, lo que anula buena parte de su ventaja practica frente a los checkpoints originales de Qwen, Meta y Microsoft.
 
@@ -95,6 +95,6 @@ A diferencia de las tres alternativas, el modelo analizado no declara licencia, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrewZhang/interactivechat-r1-turn-ppo-inscit-qwen25-3b
+- Modelo en Hugging Face: https://huggingface.co/DrewZhang/interactivechat-r1-turn-ppo-inscit-qwen25-3b
 - Perfil del autor: https://huggingface.co/DrewZhang
 - La busqueda web realizada no ha devuelto papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los unicos resultados obtenidos han sido paginas de inicio de buscadores sin relacion con el contenido solicitado.

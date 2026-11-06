@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para comparar rendimiento entre estos mo
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Andromeda-Code-0.5B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Andromeda-Code-0.5B-GGUF
 - Modelo base: https://huggingface.co/fiel1986/Andromeda-Code-0.5B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Andromeda-Code-0.5B-GGUF
 - Listado de modelos del autor: https://huggingface.co/mradermacher/models

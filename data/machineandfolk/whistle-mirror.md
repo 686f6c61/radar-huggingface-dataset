@@ -17,13 +17,13 @@ La información publicada es mínima: no se detallan arquitectura, número de pa
 | Parámetros activos | No aplica / no disponible (no se documenta que sea un modelo MoE) |
 | Longitud de contexto | No disponible (modelo ASR; no se documenta ventana de audio máxima ni longitud de secuencia) |
 | Tipos de cuantización | No disponible; el repositorio solo distribuye un fichero `whistle.cact` de 16,9 MB, sin variantes declaradas |
-| Idiomas soportados | No disponible (la model card no declara idiomas y el campo `language` de HuggingFace está vacío) |
+| Idiomas soportados | No disponible (la model card no declara idiomas y el campo `language` de Hugging Face está vacío) |
 | Licencia | Apache 2.0 (copyright de Cactus Compute) |
 | Formato de pesos | `.cact` (formato del *runtime* Cactus/Needle); no se distribuye en safetensors, GGUF ni ONNX |
 | Tarea (*pipeline*) | `automatic-speech-recognition` |
 | Modelo base | `Cactus-Compute/whistle` (revisión `ca5287601bef25af26dcf2e1b2bdc0843a7c19e5`) |
 | Librería declarada | `cactus-needle` |
-| Tamaño del repositorio | 0,0 GB según HuggingFace; fichero de pesos de 16,9 MB |
+| Tamaño del repositorio | 0,0 GB según Hugging Face; fichero de pesos de 16,9 MB |
 | SHA-256 de `whistle.cact` | `b6e02f048568ac5d01a2042556c658061e699acbc0aa2a1439f52f3d461dffeb` |
 | SHA-256 de `LICENSE` | `cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30` |
 | Tipo de repositorio | Espejo (*mirror*) sin cambios respecto al upstream |
@@ -51,7 +51,7 @@ Lo único verificable es el mecanismo de distribución: un único fichero `whist
 - Dictado por voz en aplicaciones web: integrando el checkpoint con el motor Needle 3 en el navegador, la transcripción ocurre en el dispositivo del usuario y el audio no se envía a ningún servidor, lo que simplifica el cumplimiento de RGPD.
 - Subtitulado de notas de voz en aplicaciones de escritorio: empaquetando el fichero `.cact` (16,9 MB) dentro de una aplicación Electron o Tauri, el incremento de tamaño del instalador es reducido y no requiere GPU.
 - Reproducibilidad en CI/CD: fijar la revisión `ca5287...` y verificar el SHA-256 permite que un *pipeline* de integración construya siempre contra el mismo binario, sin depender de la disponibilidad del repositorio upstream.
-- Despliegue en entornos aislados (*air-gapped*): el espejo sirve como copia vendorizada para organizaciones que no pueden acceder a HuggingFace durante el *build*.
+- Despliegue en entornos aislados (*air-gapped*): el espejo sirve como copia vendorizada para organizaciones que no pueden acceder a Hugging Face durante el *build*.
 - Prototipos de accesibilidad: transcripción local de voz a texto en dispositivos de gama baja o navegadores, donde no hay GPU disponible.
 - Preprocesado de audio en el *edge*: conversión de grabaciones a texto antes de enviar únicamente el texto a un servicio central, reduciendo ancho de banda y exposición de datos personales.
 - Transcripción con requisitos de privacidad estrictos (sanitario, legal, RR. HH.): al ejecutarse en local, el audio sensible no abandona el dispositivo del profesional.

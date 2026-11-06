@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chineduogunleye/tiny-transformer-matching-practice` es un prototipo de investigación publicado en HuggingFace por el usuario chineduogunleye. Se trata de una implementación propia de un transformer de tamaño mínimo (33.088 parámetros totales según el fichero `model.safetensors`) orientada a tareas de *matching* (emparejamiento), con fusión bilineal de representaciones y atención de tipo flash. El repositorio no es un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y no un checkpoint evaluado.
+`chineduogunleye/tiny-transformer-matching-practice` es un prototipo de investigación publicado en Hugging Face por el usuario chineduogunleye. Se trata de una implementación propia de un transformer de tamaño mínimo (33.088 parámetros totales según el fichero `model.safetensors`) orientada a tareas de *matching* (emparejamiento), con fusión bilineal de representaciones y atención de tipo flash. El repositorio no es un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y no un checkpoint evaluado.
 
 El propósito declarado es servir como punto de partida experimental y como documentación de formatos de fichero y valores por defecto de configuración, no como un modelo listo para producción. El repositorio incluye el script `finetune.py`, un `config.json` con la arquitectura generada, un `training_args.json` con la receta por defecto (AdamW con schedule exponencial) y el checkpoint de inicialización en safetensors.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks de este modelo, por lo que no es posible es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-transformer-matching-practice | 33.088 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | HuggingFace |
+| tiny-transformer-matching-practice | 33.088 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | Hugging Face |
 | Alternativas de matching de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables concretos con los que contrastar parámetros, contexto o resultados.
@@ -99,7 +99,7 @@ No se han identificado en la informacion proporcionada modelos comparables concr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chineduogunleye/tiny-transformer-matching-practice
+- Modelo en Hugging Face: https://huggingface.co/chineduogunleye/tiny-transformer-matching-practice
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Comprobación rápida indicada por el autor: `python finetune.py --help`
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos o demos) en la búsqueda web realizada; los resultados devueltos correspondían a consultas no relacionadas con el modelo y se han descartado.

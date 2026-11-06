@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rldx_1_robodojo_preset_b128_60k es una política robótica de bajo nivel (low-level policy) publicada por el usuario Myungkyu en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base RLWRLD/RLDX-1-PT, un modelo de tipo VLA (vision-language-action), sobre el dataset Myungkyu/RoboDojo-preset-gemini, que contiene demostraciones con etiquetas densas de subtareas. El resultado es un checkpoint especializado en ocho tareas bimanuales de sobremesa de horizonte largo, con 100 demostraciones por tarea, ejecutadas en un robot real.
+rldx_1_robodojo_preset_b128_60k es una política robótica de bajo nivel (low-level policy) publicada por el usuario Myungkyu en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base RLWRLD/RLDX-1-PT, un modelo de tipo VLA (vision-language-action), sobre el dataset Myungkyu/RoboDojo-preset-gemini, que contiene demostraciones con etiquetas densas de subtareas. El resultado es un checkpoint especializado en ocho tareas bimanuales de sobremesa de horizonte largo, con 100 demostraciones por tarea, ejecutadas en un robot real.
 
 El modelo resuelve el problema de traducir observaciones multimodales (imágenes de tres cámaras, propiocepción y el texto de la subtarea actual) en acciones motoras de bajo nivel. Es relevante porque combina dos tendencias actuales en robótica con IA: los modelos fundacionales de visión-lenguaje-acción reutilizables mediante ajuste fino, y el entrenamiento con anotaciones densas de subtarea, que facilita el razonamiento multi-paso en tareas largas que un único bucle de política plana no resuelve bien.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de este modelo ni de comparaciones publica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rldx_1_robodojo_preset_b128_60k | 6,9 mil millones | no disponible | no disponible | HuggingFace (0 descargas) |
-| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | Referenciado como base en HuggingFace |
+| rldx_1_robodojo_preset_b128_60k | 6,9 mil millones | no disponible | no disponible | Hugging Face (0 descargas) |
+| RLWRLD/RLDX-1-PT (modelo base) | no disponible | no disponible | no disponible | Referenciado como base en Hugging Face |
 | Otros modelos VLA de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se ha encontrado en la busqueda web informacion adicional sobre modelos comparables a este checkpoint concreto.
@@ -96,7 +96,7 @@ No se ha encontrado en la busqueda web informacion adicional sobre modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_robodojo_preset_b128_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_robodojo_preset_b128_60k
 - Dataset de ajuste fino: https://huggingface.co/datasets/Myungkyu/RoboDojo-preset-gemini
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a consultas no relacionadas sobre clientes de correo y no aportan informacion tecnica.

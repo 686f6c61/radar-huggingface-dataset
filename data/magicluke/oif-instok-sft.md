@@ -4,7 +4,7 @@
 
 El modelo `MagicLuke/oif-instok-sft` es un adaptador LoRA (librería PEFT) desarrollado por MagicLuke (Haolong Zheng) sobre el modelo base `nvidia/personaplex-7b-v1`. Está diseñado para el ajuste fino de instrucciones en un contexto de habla full-duplex, integrando capacidades de seguimiento de instrucciones en un sistema de diálogo conversacional. El nombre sugiere una combinación de "instruction following" y "token" aplicada a la arquitectura PersonaPlex de NVIDIA, que es un modelo de 7B parámetros orientado a conversación multimodal.
 
-La relevancia de este modelo radica en su enfoque en interacción de voz bidireccional (full-duplex), un área emergente en asistentes conversacionales. Al ser un adaptador PEFT, no es un modelo autónomo sino un complemento que modifica el comportamiento del modelo base. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. No se dispone de información pública sobre métricas de rendimiento, arquitectura interna o datos de entrenamiento más allá de lo indicado en la ficha de HuggingFace.
+La relevancia de este modelo radica en su enfoque en interacción de voz bidireccional (full-duplex), un área emergente en asistentes conversacionales. Al ser un adaptador PEFT, no es un modelo autónomo sino un complemento que modifica el comportamiento del modelo base. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. No se dispone de información pública sobre métricas de rendimiento, arquitectura interna o datos de entrenamiento más allá de lo indicado en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: no disponible. El adaptador pesa 4.7 GB, pero al aplicarse sobre un modelo de 7B, la VRAM total dependerá del modelo base. Con cuantización de 4 bits, el modelo base requiere aproximadamente 4-5 GB de VRAM; con 8 bits, unos 8 GB; en FP16, unos 14 GB.
 - GPU recomendadas: para el modelo base de 7B, una GPU con al menos 8 GB de VRAM (RTX 3070/4060) es suficiente con cuantización. Para FP16, se recomienda RTX 3090/4090 o A100.
 - Si cabe en consumer GPU: sí, con cuantización (GGUF o bitsandbytes) en GPUs de 8-12 GB.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace y el modelo base. Para inferencia, se puede usar vLLM (si soporta el modelo base), llama.cpp (si se convierte a GGUF), o directamente con Transformers. La integración con Moshi sugiere un pipeline específico de audio.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face y el modelo base. Para inferencia, se puede usar vLLM (si soporta el modelo base), llama.cpp (si se convierte a GGUF), o directamente con Transformers. La integración con Moshi sugiere un pipeline específico de audio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar con alternativas. El mode
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso en producción o investigación.
+- Acceso restringido: el modelo es gated, requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso en producción o investigación.
 - Licencia derivada: la licencia `personaplex-derivative` implica restricciones derivadas de la licencia de PersonaPlex de NVIDIA. No se especifican los términos exactos; es necesario revisar la licencia del modelo base antes de uso comercial.
 - Sin información de sesgos: no se han publicado análisis de sesgos o alucinaciones. Al ser un adaptador sobre un modelo de 7B, es probable que herede sesgos del modelo base.
 - Riesgo de alucinación: típico en modelos de 7B, especialmente en tareas de instrucción complejas.
@@ -70,8 +70,8 @@ No se dispone de información suficiente para comparar con alternativas. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MagicLuke/oif-instok-sft
+- Modelo en Hugging Face: https://huggingface.co/MagicLuke/oif-instok-sft
 - Repositorio asociado (instrucciones de uso con Moshi): https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1
-- Perfil de MagicLuke en HuggingFace: https://huggingface.co/MagicLuke/models
+- Perfil de MagicLuke en Hugging Face: https://huggingface.co/MagicLuke/models
 - GitHub de MagicLuke: https://github.com/MagicLuke?tab=repositories
 - Sitio web oficial (workshop de habla infantil): https://github.com/MagicLuke/Official-Website

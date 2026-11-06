@@ -66,8 +66,8 @@ No se dispone en la informacion proporcionada de datos verificados sobre modelos
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym` | Recuento safetensors: 1.414.795.264 (nombre: 7B) | No disponible | INT4, group size 64, simetrica, AutoRound | Apache 2.0 | HuggingFace |
-| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | 7B (segun denominacion) | No disponible | Sin cuantizar (BF16/FP16) | Apache 2.0 (segun el repositorio cuantizado) | HuggingFace |
+| `fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym` | Recuento safetensors: 1.414.795.264 (nombre: 7B) | No disponible | INT4, group size 64, simetrica, AutoRound | Apache 2.0 | Hugging Face |
+| `sapienzanlp/Minerva-7B-base-v1.0` (modelo base) | 7B (segun denominacion) | No disponible | Sin cuantizar (BF16/FP16) | Apache 2.0 (segun el repositorio cuantizado) | Hugging Face |
 | Otros LLM italianos de ~7B cuantizados | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos verificados sobre modelos
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Repositorio del modelo base referenciado en los metadatos: sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round

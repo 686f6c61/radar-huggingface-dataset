@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brishen/iron-embeddinggemma2-npu2
+- Modelo en Hugging Face: https://huggingface.co/brishen/iron-embeddinggemma2-npu2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Proyecto IRON (AMD): https://github.com/amd/IRON
 - Runtime Rust `taconite-embeddinggemma2` (crates.io): https://crates.io/crates/taconite-embeddinggemma2

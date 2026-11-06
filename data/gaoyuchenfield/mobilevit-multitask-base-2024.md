@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio gaoyuchenfield/mobilevit-multitask-base-2024 es una implementación experimental de una arquitectura MobileViT orientada a tareas múltiples (multitask), publicada por el usuario gaoyuchenfield en HuggingFace. La model card es explícita: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y no se reclama ninguna puntuación de benchmark. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+El repositorio gaoyuchenfield/mobilevit-multitask-base-2024 es una implementación experimental de una arquitectura MobileViT orientada a tareas múltiples (multitask), publicada por el usuario gaoyuchenfield en Hugging Face. La model card es explícita: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y no se reclama ninguna puntuación de benchmark. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La configuración declarada corresponde a escala "xlarge" con atención dilatada (dilated attention), fusión mediante co-attention, activación ReLU y normalización GroupNorm. La receta de experimento por defecto usa SGD con planificador coseno. Sin embargo, los metadatos de safetensors indican un total de 49.600 parámetros y un tamaño de repositorio de 0,0 GB, cifras incompatibles con una escala "xlarge" real, lo que refuerza su naturaleza de esqueleto de código más que de modelo funcional.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada a efectos prácticos: acumula 0 descargas y 0 likes, y
 
 La arquitectura se declara como MobileViT a escala "xlarge", con atención de tipo dilatada, fusión mediante co-attention, función de activación ReLU y normalización GroupNorm. MobileViT es una familia de arquitecturas híbridas que combinan convoluciones (para extracción local eficiente) con mecanismos de atención tipo transformer (para contextos globales), habitualmente orientada a tareas de visión. El repositorio describe una variante multitask, aunque no detalla qué tareas concretas aborda ni la composición de la cabeza de salida.
 
-No se documenta ningún entrenamiento real. La model card indica que el checkpoint incluido es de inicialización y que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. La receta por defecto (SGD con planificador coseno, registrada en `training_args.json`) se presenta como valores de partida del script, no como evidencia de una ejecución completada. No hay datos sobre número de tokens, composición del dataset, ni uso de RLHF/DPO. El código principal es `main.py`, que actúa como artefacto primario y que, por ser una implementación personalizada, requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace.
+No se documenta ningún entrenamiento real. La model card indica que el checkpoint incluido es de inicialización y que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. La receta por defecto (SGD con planificador coseno, registrada en `training_args.json`) se presenta como valores de partida del script, no como evidencia de una ejecución completada. No hay datos sobre número de tokens, composición del dataset, ni uso de RLHF/DPO. El código principal es `main.py`, que actúa como artefacto primario y que, por ser una implementación personalizada, requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No se documenta ningún entrenamiento real. La model card indica que el checkpoi
 - Plantilla de comparativa controlada: servir como esqueleto para entrenar líneas base con la misma exposición de datos, presupuesto de ajuste y semillas, tal y como recomienda el autor.
 - Experimentación académica en atención dilatada y co-attention: modificar los bloques de atención y medir el impacto en una tarea objetivo con un conjunto de validación reservado.
 - Reproducibilidad de recetas: usar `training_args.json` (SGD + coseno) como punto de partida documentado para protocolos de entrenamiento reproducibles.
-- Formación y docencia: ejemplo mínimo de estructura de repositorio de modelo (README, config, args, pesos, script) para enseñar convenciones de publicación en HuggingFace.
+- Formación y docencia: ejemplo mínimo de estructura de repositorio de modelo (README, config, args, pesos, script) para enseñar convenciones de publicación en Hugging Face.
 - Investigación sobre normalización y activación: comparar GroupNorm + ReLU frente a alternativas (LayerNorm, GELU) dentro de la misma topología MobileViT.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gaoyuchenfield/mobilevit-multitask-base-2024 | 49.600 (declarados) | no disponible | sin benchmark (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| gaoyuchenfield/mobilevit-multitask-base-2024 | 49.600 (declarados) | no disponible | sin benchmark (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT (familia original, Apple) | desde ~1,3 M (XXS) hasta ~6 M (XS/S) | no aplica | resultados publicados en visión | según release original | referencia académica |
 | MobileNetV2 | ~3,5 M | no aplica | resultados publicados en clasificación de imagen | Apache-2.0 | ampliamente disponible |
 | EfficientNet (familia) | desde ~5 M (B0) en adelante | no aplica | resultados publicados en clasificación de imagen | Apache-2.0 | ampliamente disponible |
@@ -82,6 +82,6 @@ Nota: los datos de los modelos de referencia se incluyen como orientación gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaoyuchenfield/mobilevit-multitask-base-2024
+- Modelo en Hugging Face: https://huggingface.co/gaoyuchenfield/mobilevit-multitask-base-2024
 - Referencia de la arquitectura MobileViT (paper original de Apple): no incluida en la información proporcionada
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la información proporcionada

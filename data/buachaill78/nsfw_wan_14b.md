@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NSFW Wan 14B T2V (este) | 14,3 B | Texto-a-video, ajuste NSFW | 17 fotogramas a 480p | creativeml-openrail-m | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-14B (base) | 14 B | Texto-a-video general | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| NSFW Wan 14B T2V (este) | 14,3 B | Texto-a-video, ajuste NSFW | 17 fotogramas a 480p | creativeml-openrail-m | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-14B (base) | 14 B | Texto-a-video general | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Alternativas texto-a-video open source de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa con otros modelos de la misma categoria no esta disponible en la informacion proporcionada; el unico contraste documentado es con su modelo base, del que hereda arquitectura y parametros pero del que se diferencia por el ajuste fino sobre datos NSFW.
@@ -84,7 +84,7 @@ La comparacion cuantitativa con otros modelos de la misma categoria no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buachaill78/NSFW_Wan_14b
+- Modelo en Hugging Face: https://huggingface.co/buachaill78/NSFW_Wan_14b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Discord del autor: https://discord.gg/mjnStFuCYh
 - Papers, blogs o repositorios adicionales: no disponibles en la informacion proporcionada.

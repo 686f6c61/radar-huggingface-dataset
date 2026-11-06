@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChrisBrownDebut es un modelo de conversion de voz (voice conversion, VC) del tipo RVC v2, publicado en HuggingFace por el usuario mrkmja. No se trata de un modelo de lenguaje ni de un sistema multimodal de texto: su unica funcion es transformar una senal de voz de entrada para que adopte el timbre de la voz de Chris Brown tal como suena en su album homonimo de debut (2005). El autor lo describe como un modelo "Breezy" entrenado sobre 13 minutos de acapellas filtradas de ese disco, con 900 epocas de entrenamiento, extractor de tono RMVPE, batch size 5 y partiendo del pretrain original de RVC v2.
+ChrisBrownDebut es un modelo de conversion de voz (voice conversion, VC) del tipo RVC v2, publicado en Hugging Face por el usuario mrkmja. No se trata de un modelo de lenguaje ni de un sistema multimodal de texto: su unica funcion es transformar una senal de voz de entrada para que adopte el timbre de la voz de Chris Brown tal como suena en su album homonimo de debut (2005). El autor lo describe como un modelo "Breezy" entrenado sobre 13 minutos de acapellas filtradas de ese disco, con 900 epocas de entrenamiento, extractor de tono RMVPE, batch size 5 y partiendo del pretrain original de RVC v2.
 
 El interes de esta ficha es doble. Por un lado, documenta un ejemplo tipico del ecosistema de modelos RVC de uso comunitario, muy extendido para covers, doblaje y experimentacion con sintesis de voz. Por otro, sirve como caso de advertencia: el repositorio no declara licencia, no incluye informacion sobre el pipeline, no aporta benchmarks y acumula 0 descargas y 0 likes en el momento de la consulta, ademas de estar entrenado sobre material vocal con derechos de autor de un artista comercial.
 
@@ -28,8 +28,8 @@ El peso total del repositorio es de 0,2 GB, e incluye el checkpoint, un GIF de p
 | Autor | mrkmja |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
-| Fecha de creacion del repositorio | 2026-10-09 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-10-09 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-10-09 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-10-09 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ No hay datos cuantitativos publicados para este modelo, por lo que la comparacio
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mrkmja/ChrisBrownDebut | RVC v2 (conversion de voz) | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Otros checkpoints RVC v2 de la comunidad | RVC v2 (conversion de voz) | no disponible | no aplica | no disponible en esta informacion | variable segun autor, frecuentemente sin licencia | HuggingFace y repos comunitarios |
+| mrkmja/ChrisBrownDebut | RVC v2 (conversion de voz) | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Otros checkpoints RVC v2 de la comunidad | RVC v2 (conversion de voz) | no disponible | no aplica | no disponible en esta informacion | variable segun autor, frecuentemente sin licencia | Hugging Face y repos comunitarios |
 | So-VITS-SVC | Conversion de voz cantada | no disponible | no aplica | no disponible en esta informacion | variable segun implementacion | Repositorios de codigo abierto |
 | DiffSVC / modelos de difusion para VC | Conversion de voz basada en difusion | no disponible | no aplica | no disponible en esta informacion | variable segun implementacion | Repositorios de codigo abierto |
 
@@ -93,13 +93,13 @@ No se dispone de cifras verificables para establecer una comparacion numerica. C
 - Riesgo de alucinacion acustica: en segmentos con silencio, ruido o contenido no vocal, el modelo puede generar artefactos o voz inexistente en la entrada. Es un comportamiento conocido en sistemas generativos de audio y no esta documentado por el autor para este caso concreto.
 - Idiomas: la etiqueta declarada es unicamente `en`. Aunque el mecanismo de conversion es en gran medida independiente del idioma, no hay evidencia aportada sobre su comportamiento con otras lenguas.
 - Ausencia de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta implican que no existe retroalimentacion de terceros, ni issues, ni evaluaciones independientes que respalden la calidad del modelo.
-- Metadatos anomalos: la fecha de creacion registrada en HuggingFace (2026-10-09) y la fecha de ultima actualizacion (el mismo dia, 24 minutos despues) indican un repositorio recien subido y no revisado posteriormente.
+- Metadatos anomalos: la fecha de creacion registrada en Hugging Face (2026-10-09) y la fecha de ultima actualizacion (el mismo dia, 24 minutos despues) indican un repositorio recien subido y no revisado posteriormente.
 - Formato de distribucion: el modelo se ofrece como ZIP descargable, no como ficheros sueltos en el repositorio, lo que complica la verificacion de integridad y la trazabilidad de los pesos.
 - No apto para produccion critica: sin benchmarks, sin licencia, sin documentacion de evaluacion y con corpus minimo, no es recomendable integrarlo en productos en produccion sin una validacion exhaustiva previa.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mrkmja/ChrisBrownDebut
+- Pagina del modelo en Hugging Face: https://huggingface.co/mrkmja/ChrisBrownDebut
 - Descarga directa del paquete del modelo: https://huggingface.co/mrkmja/ChrisBrownDebut/resolve/main/ChrisBrownDebut_byMRKMJA.zip
 - GIF de presentacion: https://huggingface.co/mrkmja/ChrisBrownDebut/resolve/main/ChrisBrownDebut.gif
 - Muestra de audio 1: https://huggingface.co/mrkmja/ChrisBrownDebut/resolve/main/sample_1.mp3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`turnerbria/perceiver-multitask` es un repositorio de HuggingFace publicado por el usuario turnerbria que contiene una implementación propia y compacta de la arquitectura Perceiver en PyTorch, orientada a escenarios multitarea. No se trata de un modelo preentrenado ni de una release de producción: el autor lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
+`turnerbria/perceiver-multitask` es un repositorio de Hugging Face publicado por el usuario turnerbria que contiene una implementación propia y compacta de la arquitectura Perceiver en PyTorch, orientada a escenarios multitarea. No se trata de un modelo preentrenado ni de una release de producción: el autor lo describe explícitamente como una configuración "nano" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala.
 
 El artefacto principal es el script `main.py`, acompañado de `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, un checkpoint de inicialización válido pero no entrenado. El recuento real de parámetros según el fichero safetensors es de 16.576 parámetros, un tamaño seis órdenes de magnitud inferior al de cualquier LLM actual, lo que confirma su carácter de andamiaje experimental.
 
@@ -46,7 +46,7 @@ No hay evidencia de ningún entrenamiento completado. La receta por defecto de `
 - Docencia y material formativo: sirve para explicar paso a paso cómo se construye un modelo tipo Perceiver, cómo se serializa en safetensors y cómo se estructura un `config.json` reproducible.
 - Validación de infraestructura de serialización y versionado: útil para comprobar herramientas internas de inspección de checkpoints, cálculo de huellas o validación de esquemas de configuración.
 - Base para preentrenamiento desde cero en dominios pequeños y controlados (series temporales cortas, señales de sensores), siempre que se aporten datos propios, se entrene el modelo y se documenten los resultados por separado, tal como indica el autor.
-- Prototipado de adaptadores de carga personalizados en HuggingFace: al ser una implementación propia, exige un *adapter* explícito para las APIs genéricas de `from_pretrained`, lo que lo convierte en un caso de prueba para ese tipo de integraciones.
+- Prototipado de adaptadores de carga personalizados en Hugging Face: al ser una implementación propia, exige un *adapter* explícito para las APIs genéricas de `from_pretrained`, lo que lo convierte en un caso de prueba para ese tipo de integraciones.
 
 ## Benchmarks y rendimiento
 
@@ -82,5 +82,5 @@ No disponible. En la información proporcionada no se incluye ningún modelo com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turnerbria/perceiver-multitask
+- Repositorio en Hugging Face: https://huggingface.co/turnerbria/perceiver-multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

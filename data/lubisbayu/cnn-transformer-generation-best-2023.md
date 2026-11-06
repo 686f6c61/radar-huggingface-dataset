@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lubisbayu/cnn-transformer-generation-best-2023` es un repositorio de HuggingFace publicado por el usuario lubisbayu que contiene una implementación funcional de una arquitectura denominada Cnn Transformer para tareas de generación, en configuración "base". No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks. El recuento real de parámetros declarado en el archivo de safetensors es de 49.600 parámetros, un orden de magnitud propio de una implementación de referencia, no de un modelo de producción.
+`lubisbayu/cnn-transformer-generation-best-2023` es un repositorio de Hugging Face publicado por el usuario lubisbayu que contiene una implementación funcional de una arquitectura denominada Cnn Transformer para tareas de generación, en configuración "base". No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks. El recuento real de parámetros declarado en el archivo de safetensors es de 49.600 parámetros, un orden de magnitud propio de una implementación de referencia, no de un modelo de producción.
 
 La relevancia de esta ficha es documental más que funcional: sirve como ejemplo de arquitectura híbrida que combina convolución y atención con atención de consultas agrupadas (grouped query attention), fusión con compuerta (gated fusion), activación mish y normalización layernorm. El autor hace hincapié en la transparencia del código y en la reproducibilidad de las pruebas, y omite deliberadamente cualquier afirmación de rendimiento. La receta de entrenamiento incluida usa el optimizador lion con un scheduler coseno, pero se indica explícitamente que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -91,5 +91,5 @@ No disponible. Con 49.600 parametros y un checkpoint sin entrenar, no existe en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lubisbayu/cnn-transformer-generation-best-2023
+- Hugging Face: https://huggingface.co/lubisbayu/cnn-transformer-generation-best-2023
 - No se han encontrado en la informacion proporcionada enlaces adicionales relevantes al modelo (papers, blogs del autor, repositorios de codigo o demos). Los resultados de busqueda disponibles son listados genericos de modelos de IA y no guardan relacion con este repositorio.

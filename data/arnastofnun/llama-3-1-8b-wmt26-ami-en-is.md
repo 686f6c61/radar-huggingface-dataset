@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones ni de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is
+- Modelo en Hugging Face: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is
 - Adaptador LoRA asociado: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is-lora
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Organización: https://huggingface.co/arnastofnun

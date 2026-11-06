@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enzosimon82/hybrid-multitask-run1 es un repositorio publicado en HuggingFace por el usuario Enzosimon82 que contiene una implementación propia de una arquitectura híbrida orientada a multitarea, junto con un checkpoint de inicialización en formato safetensors y los ficheros de configuración asociados (`config.json`, `training_args.json`) y el script de entrenamiento `finetune.py`. No es un modelo entrenado: el propio autor indica de forma explícita que el checkpoint sirve para pruebas de humo y validación del código, y que no se reclama ninguna métrica de benchmark.
+Enzosimon82/hybrid-multitask-run1 es un repositorio publicado en Hugging Face por el usuario Enzosimon82 que contiene una implementación propia de una arquitectura híbrida orientada a multitarea, junto con un checkpoint de inicialización en formato safetensors y los ficheros de configuración asociados (`config.json`, `training_args.json`) y el script de entrenamiento `finetune.py`. No es un modelo entrenado: el propio autor indica de forma explícita que el checkpoint sirve para pruebas de humo y validación del código, y que no se reclama ninguna métrica de benchmark.
 
 El dato objetivo más relevante es su tamaño: 49.600 parámetros totales según el recuento real de safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción. La arquitectura declarada combina atención de ventana deslizante con fusión mediante co-attention, activación swish y normalización RMSNorm, sobre una escala etiquetada como "base".
 
@@ -77,7 +77,7 @@ El repositorio no reclama ninguna puntuación y declara de forma explícita que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| Enzosimon82/hybrid-multitask-run1 | 49.600 | No disponible | MIT | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| Enzosimon82/hybrid-multitask-run1 | 49.600 | No disponible | MIT | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se han proporcionado modelos comparables en la información disponible |
 
 No procede comparar este artefacto con modelos de lenguaje en producción: la diferencia de escala es de varios órdenes de magnitud y el checkpoint no ha sido entrenado. En su categoría real (implementaciones de referencia para experimentación con arquitecturas) no se dispone de datos comparativos en la información proporcionada; cualquier comparación honesta exigiría igualar exposición de datos, presupuesto de ajuste y semillas aleatorias, tal y como recomienda el propio autor.
@@ -98,6 +98,6 @@ No procede comparar este artefacto con modelos de lenguaje en producción: la di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Enzosimon82/hybrid-multitask-run1
+- Modelo en Hugging Face: https://huggingface.co/Enzosimon82/hybrid-multitask-run1
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo. Los únicos enlaces devueltos corresponden a definiciones del término francés "aléatoire" en diccionarios generales (Larousse, Le Robert, Wiktionnaire, Académie française) y a un generador de números aleatorios, sin ninguna relación con el repositorio.
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

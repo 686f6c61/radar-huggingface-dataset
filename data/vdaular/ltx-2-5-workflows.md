@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vdaular/LTX-2.5-Workflows es un repositorio alojado en HuggingFace por el usuario vdaular. No se trata de un modelo con pesos entrenados, sino de una coleccion de flujos de trabajo (workflows) orientados a ComfyUI para su uso con los modelos LTX-2.5. El repositorio esta etiquetado con la libreria `ltx` y declara el pipeline `image-to-video`, aunque las etiquetas cubren tambien texto a video, audio a video y video a video.
+vdaular/LTX-2.5-Workflows es un repositorio alojado en Hugging Face por el usuario vdaular. No se trata de un modelo con pesos entrenados, sino de una coleccion de flujos de trabajo (workflows) orientados a ComfyUI para su uso con los modelos LTX-2.5. El repositorio esta etiquetado con la libreria `ltx` y declara el pipeline `image-to-video`, aunque las etiquetas cubren tambien texto a video, audio a video y video a video.
 
 Segun la propia model card, los pesos oficiales de LTX-2.5 se descargan desde `Lightricks/LTX-2.5`, y lo que ofrece este repositorio son ficheros "ya divididos" ("split files") a partir de esa fuente oficial, de modo que funcionan directamente con la mayoria de flujos antiguos sin mas que sustituir los modelos. El autor indica que LTX-2.5 es bastante retrocompatible con la mayoria de LoRAs de LTX-2.3 y que los workflows de LTX-2.3 (publicados en `RuneXX/LTX-2.3-Workflows`) deberian funcionar en su mayor parte con los modelos LTX-2.5.
 

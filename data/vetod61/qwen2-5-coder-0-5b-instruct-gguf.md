@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vetod61/Qwen2.5-Coder-0.5B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Vetod61/Qwen2.5-Coder-0.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE
 - llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pantheon Local catalog es un repositorio de HuggingFace publicado por TeamIDE que no contiene pesos de un modelo de lenguaje, sino un catálogo firmado de modelos que una caja Pantheon Local puede instalar. El artefacto principal es `catalog.json`, un manifiesto en el que cada entrada queda fijada por revisión de repositorio y hash sha256, acompañado de `catalog.json.minisig`, su firma minisign. Las cajas Pantheon verifican esa firma contra una clave pública embebida en el propio producto antes de usar cualquier contenido del catálogo.
+Pantheon Local catalog es un repositorio de Hugging Face publicado por TeamIDE que no contiene pesos de un modelo de lenguaje, sino un catálogo firmado de modelos que una caja Pantheon Local puede instalar. El artefacto principal es `catalog.json`, un manifiesto en el que cada entrada queda fijada por revisión de repositorio y hash sha256, acompañado de `catalog.json.minisig`, su firma minisign. Las cajas Pantheon verifican esa firma contra una clave pública embebida en el propio producto antes de usar cualquier contenido del catálogo.
 
 No se trata, por tanto, de un modelo entrenado ni de un checkpoint: no hay arquitectura, parametros, tokenizador ni ventana de contexto asociados. Su funcion es de cadena de suministro: garantizar que los modelos que un dispositivo Pantheon Local descarga e instala son exactamente los que TeamIDE ha construido y medido para una tarjeta concreta, sin manipulacion intermedia.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Aspecto | Pantheon Local catalog (TeamIDE) | Repositorios de pesos en HuggingFace | Catalogos de paquetes firmados (p. ej. APT, OCI) |
+| Aspecto | Pantheon Local catalog (TeamIDE) | Repositorios de pesos en Hugging Face | Catalogos de paquetes firmados (p. ej. APT, OCI) |
 |---|---|---|---|
 | Contenido | Manifiesto JSON firmado con revisiones y sha256 | Pesos y tokenizador del modelo | Metadatos y artefactos firmados |
 | Verificacion | minisign contra clave publica embebida | Hash opcional, sin firma por defecto | Firmas GPG o cosign segun ecosistema |
@@ -80,5 +80,5 @@ No se dispone de informacion sobre modelos comparables dentro del mismo producto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TeamIDE/pantheon-catalog
+- Repositorio en Hugging Face: https://huggingface.co/TeamIDE/pantheon-catalog
 - Proyecto Pantheon: https://git.teamide.dev/David/Pantheon

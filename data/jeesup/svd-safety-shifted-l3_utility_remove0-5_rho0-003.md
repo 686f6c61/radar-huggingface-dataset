@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.003` es un checkpoint de investigación derivado de `meta-llama/Meta-Llama-3-8B-Instruct` mediante compresión por descomposición en valores singulares (SVD). Lo publica el usuario Jeesup en HuggingFace y su propósito no es el uso general, sino el estudio experimental de cómo la compresión de pesos afecta simultáneamente a la utilidad del modelo (perplejidad) y a su comportamiento de seguridad (tasa de éxito de ataques adversarios). Se trata, por tanto, de un artefacto de evaluación de safety y compresión, no de un modelo listo para producción.
+El modelo `Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.003` es un checkpoint de investigación derivado de `meta-llama/Meta-Llama-3-8B-Instruct` mediante compresión por descomposición en valores singulares (SVD). Lo publica el usuario Jeesup en Hugging Face y su propósito no es el uso general, sino el estudio experimental de cómo la compresión de pesos afecta simultáneamente a la utilidad del modelo (perplejidad) y a su comportamiento de seguridad (tasa de éxito de ataques adversarios). Se trata, por tanto, de un artefacto de evaluación de safety y compresión, no de un modelo listo para producción.
 
 Técnicamente parte de la arquitectura Llama 3 de 8.030.261.248 parámetros (~8B) con ventana de contexto de 8.192 tokens, y le aplica una eliminación nominal del 50% de los parámetros de proyección mediante SVD, con una fracción real de parámetros factoriales de 0,565216 sobre el modelo completo. No hay fine-tuning de recuperación posterior: los pesos se presentan como matrices densas plegadas (folded dense) para facilitar la evaluación, aunque el presupuesto de rango describe una representación de bajo rango subyacente.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Jeesup, SVD safety-shifted) | 8,03B | 8.192 (heredado) | Compresión SVD con métrica mixta utilidad/seguridad | Llama 3 | HuggingFace, 15 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03B | 8.192 | Modelo base alineado con instrucciones | Llama 3 | HuggingFace, ampliamente usado |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 131.072 | Generación posterior con contexto extendido | Llama 3.1 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,25B | 32.768 | Alternativa abierta de tamaño similar | Apache 2.0 | HuggingFace |
+| Este checkpoint (Jeesup, SVD safety-shifted) | 8,03B | 8.192 (heredado) | Compresión SVD con métrica mixta utilidad/seguridad | Llama 3 | Hugging Face, 15 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03B | 8.192 | Modelo base alineado con instrucciones | Llama 3 | Hugging Face, ampliamente usado |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 131.072 | Generación posterior con contexto extendido | Llama 3.1 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,25B | 32.768 | Alternativa abierta de tamaño similar | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible: el checkpoint no publica cifras numéricas de benchmarks en la información proporcionada.
 
@@ -95,8 +95,8 @@ La comparación de rendimiento con estas alternativas no está disponible: el ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.003
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_utility_remove0.5_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
-- Artefactos del experimento: carpeta `experiment/` y `compression.json` dentro del repositorio de HuggingFace
+- Artefactos del experimento: carpeta `experiment/` y `compression.json` dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

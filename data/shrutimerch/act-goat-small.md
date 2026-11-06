@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shrutimerch/act-goat-small` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos de acciones (*action chunks*) en lugar de pasos individuales. Lo publica el usuario shrutimerch en HuggingFace Hub y está entrenada y exportada con la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es un *policy* de control robótico que consume estado de articulaciones e imágenes de cámara y emite comandos de acción.
+`shrutimerch/act-goat-small` es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice fragmentos de acciones (*action chunks*) en lugar de pasos individuales. Lo publica el usuario shrutimerch en Hugging Face Hub y está entrenada y exportada con la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es un *policy* de control robótico que consume estado de articulaciones e imágenes de cámara y emite comandos de acción.
 
 El modelo ocupa aproximadamente 15,6 millones de parámetros (15.614.726 según el fichero de safetensors) y un repositorio de 0,1 GB, lo que lo sitúa en la gama ligera de políticas manipulativas. Está especializado en una única tarea concreta: "Pick up the goat and place it in the bucket" (recoger el objeto y depositarlo en un cubo), sobre un robot de tipo `so_follower` con dos cámaras (muñeca y exocéntrica). No se trata de un modelo de propósito general, sino de un *checkpoint* afinado para un entorno y un hardware específicos.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shrutimerch/act-goat-small | ACT (imitación) | ~15,6 M | Tarea única pick-and-place, 2 cámaras | Apache 2.0 | HuggingFace Hub |
-| Diffusion Policy (LeRobot) | Política por difusión | Mayor que ACT (órdenes de decenas de millones según configuración) | Tareas de manipulación, condicionada por imágenes | Apache 2.0 (LeRobot) | HuggingFace Hub / LeRobot |
-| VQ-BeT (LeRobot) | Behavior transformer vector-cuantizado | no disponible | Manipulación multimodal | Apache 2.0 (LeRobot) | HuggingFace Hub / LeRobot |
-| Otras políticas ACT en LeRobot | ACT (imitación) | ~15-50 M según configuración | Tareas específicas por dataset | Apache 2.0 | HuggingFace Hub |
+| shrutimerch/act-goat-small | ACT (imitación) | ~15,6 M | Tarea única pick-and-place, 2 cámaras | Apache 2.0 | Hugging Face Hub |
+| Diffusion Policy (LeRobot) | Política por difusión | Mayor que ACT (órdenes de decenas de millones según configuración) | Tareas de manipulación, condicionada por imágenes | Apache 2.0 (LeRobot) | Hugging Face Hub / LeRobot |
+| VQ-BeT (LeRobot) | Behavior transformer vector-cuantizado | no disponible | Manipulación multimodal | Apache 2.0 (LeRobot) | Hugging Face Hub / LeRobot |
+| Otras políticas ACT en LeRobot | ACT (imitación) | ~15-50 M según configuración | Tareas específicas por dataset | Apache 2.0 | Hugging Face Hub |
 
 Las cifras de parámetros de alternativas distintas de ACT no se detallan aquí porque no están en la información proporcionada. ACT y Diffusion Policy son los dos métodos de imitación más habituales en LeRobot; ACT suele ser más rápido en inferencia y más sencillo de entrenar, mientras que Diffusion Policy tiende a manejar mejor la multimodalidad de las demostraciones.
 
@@ -85,7 +85,7 @@ Las cifras de parámetros de alternativas distintas de ACT no se detallan aquí 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrutimerch/act-goat-small
+- Modelo en Hugging Face: https://huggingface.co/shrutimerch/act-goat-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/shrutimerch/goat-pickup-v3-clean
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

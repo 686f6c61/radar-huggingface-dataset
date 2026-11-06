@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Poyu123/makemake-components` no es un modelo de lenguaje en sí mismo, sino un repositorio de componentes auxiliares alojado en HuggingFace. Su autor, Poyu123, lo utiliza como mecanismo de distribución de los binarios y recursos que la aplicación **Makemake PDF** (una herramienta de traduccion de documentos PDF para macOS) descarga de forma opcional cuando el usuario activa la funcion «Instalar traducion componentes» dentro de la app.
+`Poyu123/makemake-components` no es un modelo de lenguaje en sí mismo, sino un repositorio de componentes auxiliares alojado en Hugging Face. Su autor, Poyu123, lo utiliza como mecanismo de distribución de los binarios y recursos que la aplicación **Makemake PDF** (una herramienta de traduccion de documentos PDF para macOS) descarga de forma opcional cuando el usuario activa la funcion «Instalar traducion componentes» dentro de la app.
 
 El repositorio contiene tres archivos comprimidos: un entorno de ejecucion de BabelDOC 0.6.4 empaquetado con conda-pack para macOS arm64, una cache de fuentes y modelos de maquetacion de BabelDOC, y un binario de `llama-server` (llama.cpp compilado con soporte Metal para macOS arm64) que actua como servicio de inferencia local. En conjunto pesan unos 0,6 GB.
 
@@ -90,7 +90,7 @@ Al no tratarse de un modelo de lenguaje, no es directamente comparable con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Poyu123/makemake-components
+- Repositorio en Hugging Face: https://huggingface.co/Poyu123/makemake-components
 - Proyecto BabelDOC (repositorio original): no disponible en la informacion proporcionada
 - Makemake PDF (web o repositorio de la app): no disponible en la informacion proporcionada
 - llama.cpp (repositorio original): no disponible en la informacion proporcionada

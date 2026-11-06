@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h023.rl_v5.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h023.rl_v5.step_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Proyecto AgentPTB: no se ha encontrado un enlace directo en la informacion proporcionada.

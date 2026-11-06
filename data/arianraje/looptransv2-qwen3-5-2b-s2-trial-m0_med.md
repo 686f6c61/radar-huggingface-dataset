@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`looptransv2-qwen3.5-2b-s2-trial-m0_med` es un modelo experimental de generación de texto publicado por el usuario arianraje en HuggingFace. Se trata de una conversión del modelo base Qwen/Qwen3.5-2B en un transformer con bucles (looped transformer) de profundidad recurrente, donde determinados bloques de capas se ejecutan más de una vez compartiendo pesos entre repeticiones. El resultado eleva la profundidad efectiva ejecutada de 24 a 36 capas sin incrementar el número de parámetros.
+`looptransv2-qwen3.5-2b-s2-trial-m0_med` es un modelo experimental de generación de texto publicado por el usuario arianraje en Hugging Face. Se trata de una conversión del modelo base Qwen/Qwen3.5-2B en un transformer con bucles (looped transformer) de profundidad recurrente, donde determinados bloques de capas se ejecutan más de una vez compartiendo pesos entre repeticiones. El resultado eleva la profundidad efectiva ejecutada de 24 a 36 capas sin incrementar el número de parámetros.
 
 El modelo pertenece al proyecto LoopTrans (rama `v2`) y corresponde al Stage-2, run `s2-trial-m0_med`, descrito por el autor como un control de schedule no seleccionado: la mediana, por coste predicho del Stage-1, de 200.000 schedules válidos extraídos uniformemente con m = 0. El entrenamiento de recuperación (Stage 2) se realizó mediante destilación por divergencia KL hacia el Qwen3.5-2B original congelado como profesor, más una pérdida de interfaz de bucle.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Profundidad ejecutada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| looptransv2-qwen3.5-2b-s2-trial-m0_med | 2B | No disponible | 36 capas (24 base con bucles) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B (modelo base) | 2B | No disponible | 24 capas | No disponible en la información | HuggingFace |
+| looptransv2-qwen3.5-2b-s2-trial-m0_med | 2B | No disponible | 36 capas (24 base con bucles) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B (modelo base) | 2B | No disponible | 24 capas | No disponible en la información | Hugging Face |
 | Otros modelos bucleados de la misma familia (LoopTrans) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m0_med
+- Hugging Face: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m0_med
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto (rama `v2`, commit `1463f44`): https://github.com/arianraje/LoopTrans
 - Paper, blog o demo: no disponible en la información proporcionada.

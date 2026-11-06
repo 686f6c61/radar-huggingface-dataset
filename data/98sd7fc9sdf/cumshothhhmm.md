@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cumshotHHHMM es un adaptador LoRA de texto a imagen publicado por el usuario 98sd7fc9sdf en HuggingFace. Se distribuye a través de la librería diffusers y está pensado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, según el campo `base_model` de sus etiquetas. El repositorio ocupa 0,6 GB y no incluye una model card real: el README es una plantilla automática sin descripción, dataset, hiperparámetros de entrenamiento ni palabra de activación (el campo `instance_prompt` aparece como `null`).
+cumshotHHHMM es un adaptador LoRA de texto a imagen publicado por el usuario 98sd7fc9sdf en Hugging Face. Se distribuye a través de la librería diffusers y está pensado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder, según el campo `base_model` de sus etiquetas. El repositorio ocupa 0,6 GB y no incluye una model card real: el README es una plantilla automática sin descripción, dataset, hiperparámetros de entrenamiento ni palabra de activación (el campo `instance_prompt` aparece como `null`).
 
 El modelo se publicó el 12 de septiembre de 2026 y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia pública de validación, calidad ni reproducibilidad. La licencia figura como «unknown» y no se declaran idiomas soportados. No hay paper, blog técnico ni repositorio asociado.
 
@@ -77,10 +77,10 @@ No se han identificado adaptadores LoRA comparables con datos publicados. La tab
 
 | Modelo | Tipo | Parametros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cumshotHHHMM | LoRA sobre modelo base | No disponible (repo de 0,6 GB) | No disponible | unknown | HuggingFace, 0 descargas |
-| ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo base de difusión | ~9B según el nombre, no confirmado | No disponible | No disponible | HuggingFace |
-| FLUX.1-dev | Transformer de difusión | ~12B (referencia general) | ~512 tokens (referencia general) | Licencia no comercial de FLUX.1-dev | HuggingFace |
-| Stable Diffusion XL | UNet + dos codificadores de texto | ~3,5B en la UNet (referencia general) | 77 tokens por codificador (referencia general) | CreativeML Open RAIL++-M | HuggingFace |
+| cumshotHHHMM | LoRA sobre modelo base | No disponible (repo de 0,6 GB) | No disponible | unknown | Hugging Face, 0 descargas |
+| ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo base de difusión | ~9B según el nombre, no confirmado | No disponible | No disponible | Hugging Face |
+| FLUX.1-dev | Transformer de difusión | ~12B (referencia general) | ~512 tokens (referencia general) | Licencia no comercial de FLUX.1-dev | Hugging Face |
+| Stable Diffusion XL | UNet + dos codificadores de texto | ~3,5B en la UNet (referencia general) | 77 tokens por codificador (referencia general) | CreativeML Open RAIL++-M | Hugging Face |
 
 No se dispone de comparaciones de calidad entre este LoRA y cualquier otro adaptador equivalente, por lo que no es posible establecer una jerarquía de rendimiento.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones de calidad entre este LoRA y cualquier otro adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/cumshotHHHMM
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/cumshotHHHMM
 - Archivos del repositorio: https://huggingface.co/98sd7fc9sdf/cumshotHHHMM/tree/main
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Documentación de diffusers sobre carga de LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P220-ThaiOCR-9B es un modelo vision-lenguaje de 9.653 millones de parámetros (9,65 B) especializado en el reconocimiento y la comprensión de documentos tailandeses. Lo desarrolla Porsuk Rungarunsrisuk (usuario PorsukR en HuggingFace) mediante un fine-tuning con LoRA, posteriormente fusionado, sobre el modelo base Qwen/Qwen3.5-9B, que se distribuye con licencia Apache-2.0. El modelo resuelve la digitalización y la extracción de información de documentos impresos y manuscritos: texto corrido, tablas, formularios, recibos, PDF oficiales y escaneos.
+P220-ThaiOCR-9B es un modelo vision-lenguaje de 9.653 millones de parámetros (9,65 B) especializado en el reconocimiento y la comprensión de documentos tailandeses. Lo desarrolla Porsuk Rungarunsrisuk (usuario PorsukR en Hugging Face) mediante un fine-tuning con LoRA, posteriormente fusionado, sobre el modelo base Qwen/Qwen3.5-9B, que se distribuye con licencia Apache-2.0. El modelo resuelve la digitalización y la extracción de información de documentos impresos y manuscritos: texto corrido, tablas, formularios, recibos, PDF oficiales y escaneos.
 
 La propuesta diferencial es la precisión en un tamaño contenido. Con 9,65 B de parámetros y pesos en BF16, el autor lo sitúa como el mejor modelo abierto en ThaiOCRBench, por delante de alternativas de mayor tamaño como Qwen3.6-35B-A3B y OpenThai 2.0 27B, y lo acerca a modelos cerrados de primer nivel en tareas de transcripción. El modelo trabaja sin modo de razonamiento (thinking desactivado por defecto en su plantilla de chat) y admite contextos de hasta 32.768 tokens en el despliegue recomendado.
 
@@ -96,7 +96,7 @@ La comparación se limita a la tarea de OCR tailandés evaluada por el autor; no
 
 ## Enlaces
 
-- Modelo en HuggingFace (BF16): https://huggingface.co/PorsukR/P220-ThaiOCR-9B
+- Modelo en Hugging Face (BF16): https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante FP8: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Variante W4A16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16
 - Variante NVFP4: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4

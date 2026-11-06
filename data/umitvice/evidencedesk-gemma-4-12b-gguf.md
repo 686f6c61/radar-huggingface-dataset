@@ -96,7 +96,7 @@ No se dispone de datos verificados de otros modelos de ~12 B en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UmitVice/evidencedesk-gemma-4-12b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/UmitVice/evidencedesk-gemma-4-12b-GGUF
 - Adaptador LoRA base: https://huggingface.co/UmitVice/evidencedesk-gemma-4-12b-lora
 - Checkpoint base referenciado en la model card: `google/gemma-4-12B-it-qat-q4_0-unquantized` (no se proporciona URL directa en la informacion disponible)
 - llama.cpp (herramienta de conversion y servidor, version b9960 mencionada): https://github.com/ggml-org/llama.cpp

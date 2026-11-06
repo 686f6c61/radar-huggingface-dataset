@@ -76,7 +76,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-GGUF
 - Repositorio 4-bit (con patches y proyector): https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF
 - Repositorio 8-bit AGENT: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-AGENT-GGUF
 - GitHub con recetas RDNA: https://github.com/AIwork4me/Muse-Glimmer-30B-ROCm

@@ -61,8 +61,8 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sam-guided-vlas/train_1_2__no_mask__pi05__seed_1__steps_15k | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| lerobot/pi05_base | No disponible | No disponible | No disponible | HuggingFace |
+| sam-guided-vlas/train_1_2__no_mask__pi05__seed_1__steps_15k | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| lerobot/pi05_base | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2__no_mask__pi05__seed_1__steps_15k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2__no_mask__pi05__seed_1__steps_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2__no_mask
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

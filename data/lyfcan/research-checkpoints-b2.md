@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lyfcan/research-checkpoints-b2` es un repositorio de checkpoints de investigación publicado en HuggingFace por el usuario lyfcan. No se trata de un modelo con una model card descriptiva, sino de un contenedor de pesos intermedios de un proyecto de investigación en curso, cuyo autor indica explícitamente que los detalles se añadirán más adelante. El repositorio es de acceso restringido (gated) y su descarga requiere aprobación manual del propietario, previa declaración de nombre, afiliación y uso previsto.
+`lyfcan/research-checkpoints-b2` es un repositorio de checkpoints de investigación publicado en Hugging Face por el usuario lyfcan. No se trata de un modelo con una model card descriptiva, sino de un contenedor de pesos intermedios de un proyecto de investigación en curso, cuyo autor indica explícitamente que los detalles se añadirán más adelante. El repositorio es de acceso restringido (gated) y su descarga requiere aprobación manual del propietario, previa declaración de nombre, afiliación y uso previsto.
 
 El tamaño del repositorio es de 0,8 GB, lo que sugiere un modelo de escala pequeña o un conjunto parcial de checkpoints, pero no se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. La licencia no está especificada y el autor prohíbe la redistribución.
 
@@ -80,5 +80,5 @@ No disponible. No puede establecerse una comparativa fiable sin conocer la arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lyfcan/research-checkpoints-b2
+- Repositorio en Hugging Face: https://huggingface.co/lyfcan/research-checkpoints-b2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

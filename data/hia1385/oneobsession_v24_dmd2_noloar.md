@@ -2,7 +2,7 @@
 
 ## Resumen
 
-One Obsession v24 (DMD2 Accelerated) es un modelo de difusion texto-a-imagen derivado del checkpoint **One Obsession v24** (base declarada: Illustrious), publicado por el usuario hia1385 en HuggingFace. Se distribuye ya convertido y optimizado para ejecucion en la **NPU de Qualcomm** mediante el formato QNN, y lleva fusionada una LoRA de aceleracion **DMD2 SDXL 4-Step** (fp16, peso 1.0), lo que reduce el numero de pasos de muestreo necesarios a un rango de 8-12 pasos con CFG 1.0. El objetivo del repositorio es permitir generacion de imagenes local y sin conexion en moviles Android, concretamente en la aplicacion **Local Dream** en modo NPU.
+One Obsession v24 (DMD2 Accelerated) es un modelo de difusion texto-a-imagen derivado del checkpoint **One Obsession v24** (base declarada: Illustrious), publicado por el usuario hia1385 en Hugging Face. Se distribuye ya convertido y optimizado para ejecucion en la **NPU de Qualcomm** mediante el formato QNN, y lleva fusionada una LoRA de aceleracion **DMD2 SDXL 4-Step** (fp16, peso 1.0), lo que reduce el numero de pasos de muestreo necesarios a un rango de 8-12 pasos con CFG 1.0. El objetivo del repositorio es permitir generacion de imagenes local y sin conexion en moviles Android, concretamente en la aplicacion **Local Dream** en modo NPU.
 
 El problema que resuelve es la falta de checkpoints de difusion listos para la NPU de los SoC Snapdragon, ya que la mayoria de modelos de la comunidad estan pensados para GPU (CUDA) o para CPU via GGUF. Al empaquetar el checkpoint con la aceleracion por destilacion y el formato QNN, el autor elimina el paso de conversion manual que un desarrollador tendria que hacer con herramientas como NPU Forge.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo / base | Limite de prompt | Formato y plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hia1385/oneObsession_v24_dmd2_NoLoar | Derivado de One Obsession v24 (base Illustrious) + LoRA DMD2 | 220 tokens en Local Dream | QNN para NPU Snapdragon 8 Gen 3+ | illustrious-license | HuggingFace, 0 descargas |
-| alwyabdl/One_Obsession_v24 | Mismo checkpoint base, sin optimizacion NPU declarada | no disponible | Pesos para Diffusers | no disponible | HuggingFace |
+| hia1385/oneObsession_v24_dmd2_NoLoar | Derivado de One Obsession v24 (base Illustrious) + LoRA DMD2 | 220 tokens en Local Dream | QNN para NPU Snapdragon 8 Gen 3+ | illustrious-license | Hugging Face, 0 descargas |
+| alwyabdl/One_Obsession_v24 | Mismo checkpoint base, sin optimizacion NPU declarada | no disponible | Pesos para Diffusers | no disponible | Hugging Face |
 | Obsession (Illustrious-XL) v-pred_v2.0 | Checkpoint sobre NoobAI-XL (NAI-XL) | no disponible | Civitai, uso con Rescale CFG hasta 0.7 en NSFW | Licencia de Civitai | Civitai |
 | One obsession_Anima v4.0 | Checkpoint de la familia Anima | no disponible | Civitai | Licencia de Civitai | Civitai |
 
@@ -90,8 +90,8 @@ Los datos de parametros totales y contexto no estan disponibles para ninguna de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hia1385/oneObsession_v24_dmd2_NoLoar
-- Checkpoint base en HuggingFace (terceros): https://huggingface.co/alwyabdl/One_Obsession_v24
+- Modelo en Hugging Face: https://huggingface.co/hia1385/oneObsession_v24_dmd2_NoLoar
+- Checkpoint base en Hugging Face (terceros): https://huggingface.co/alwyabdl/One_Obsession_v24
 - Modelo original en Civitai (One obsession): https://civitai.com/models/1318945/one-obsession
 - Licencia (pagina de referencia indicada en la model card): https://civitai.com/models/1318945
 - Obsession (Illustrious-XL), checkpoint relacionado de la misma familia: https://civitai.com/models/820208/obsession-illustrious-xl

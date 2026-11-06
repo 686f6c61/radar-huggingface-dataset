@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes (ni win-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-dpo-gemma-4-e2b-it
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-dpo-gemma-4-e2b-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/aif-emotional-model

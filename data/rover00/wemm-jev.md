@@ -20,7 +20,7 @@ Su relevancia práctica está en sustituir clasificadores ad hoc por un único m
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (pytorch), con `custom_code` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No se dispone de una comparativa directa publicada frente a otros modelos de dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rover00/WeMM-JEV
+- Modelo en Hugging Face: https://huggingface.co/Rover00/WeMM-JEV
 - Resultados detallados: https://huggingface.co/datasets/Rover00/WeMM-JEV-Results
 - Instrucciones de inferencia: https://huggingface.co/Rover00/WeMM-JEV/blob/main/inference/README.md
 - No se han encontrado paper, blog, repositorio adicional ni demo en la información proporcionada.

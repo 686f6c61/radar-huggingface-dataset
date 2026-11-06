@@ -4,7 +4,7 @@
 
 El modelo `luizerko/binauralvae_stft_complex` es un autoencoder variacional (VAE) de valor complejo diseñado para la reconstrucción de audio binaural (espacializado). Ha sido desarrollado por Luis Vitor Zerkowski (usuario `luizerko`) como parte del proyecto BinauralVAE, que explora diferentes arquitecturas de VAE —incluyendo variantes complejas— para reconstruir señales de audio con información espacial. El modelo opera directamente sobre el dominio STFT (short-time Fourier transform) complejo, lo que permite respetar la naturaleza cíclica de la fase y mejorar la fidelidad de la reconstrucción espacial.
 
-Este modelo es relevante porque sienta las bases para la generación de representaciones de estado latente en un modelo de mundo binaural basado en audio, denominado AudioWorldSim. Aunque se encuentra en una fase experimental y carece de documentación técnica detallada en su ficha de HuggingFace, su enfoque en el dominio complejo del STFT lo posiciona como una contribución interesante para la investigación en audio espacial y modelos generativos de audio. No se dispone de información sobre el tamaño del modelo, la arquitectura interna (número de capas, dimensiones latentes) ni el contexto de entrenamiento.
+Este modelo es relevante porque sienta las bases para la generación de representaciones de estado latente en un modelo de mundo binaural basado en audio, denominado AudioWorldSim. Aunque se encuentra en una fase experimental y carece de documentación técnica detallada en su ficha de Hugging Face, su enfoque en el dominio complejo del STFT lo posiciona como una contribución interesante para la investigación en audio espacial y modelos generativos de audio. No se dispone de información sobre el tamaño del modelo, la arquitectura interna (número de capas, dimensiones latentes) ni el contexto de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luizerko/binauralvae_stft_complex
+- Hugging Face: https://huggingface.co/luizerko/binauralvae_stft_complex
 - Repositorio GitHub: https://github.com/Luizerko/BinauralVAE
 - Documentación de modelos (MODELS.md): https://github.com/Luizerko/BinauralVAE/blob/main/MODELS.md
 - Paper de referencia (Nakashika) - mencionado en el repositorio, sin enlace directo disponible.

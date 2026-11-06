@@ -89,9 +89,9 @@ No se dispone de comparaciones con modelos externos de tamaño similar, como GPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-YuHua-dLM-v2
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-YuHua-dLM-v2
 - Modelo hermano (GuCheng): https://huggingface.co/shikunpunk/MiniMind-GuCheng-dLM
 - Repositorio MiniMind (proyecto base): https://github.com/jingyaogong/minimind
-- Colección MiniMind en HuggingFace: https://huggingface.co/collections/jingyaogong/minimind
+- Colección MiniMind en Hugging Face: https://huggingface.co/collections/jingyaogong/minimind
 - Página web del proyecto MiniMind: https://jingyaogong.github.io/minimind/
 - Repositorio derivado Mini_LM_from_Scratch: https://github.com/v1n4k/Mini_LM_from_Scratch

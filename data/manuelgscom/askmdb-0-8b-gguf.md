@@ -88,7 +88,7 @@ Como referencia externa, la model card indica que Qwen3.5-9B sin ajustar obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/askmdb-0.8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/askmdb-0.8b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de evaluación: https://huggingface.co/datasets/manuelgscom/askmdb-test
 - Colección askmdb: https://huggingface.co/collections/manuelgscom/askmdb-6ae398e10b4817ed0e7431f1

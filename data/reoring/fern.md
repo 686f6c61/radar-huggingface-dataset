@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fern es un modelo de decisión de 4.205.751.296 parámetros (unos 4,2B) desarrollado por el usuario reoring y publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo al uso: se trata de un clasificador enmarcado en la pipeline `text-classification` que recibe un `state` (una situación en texto) y hasta 50 preguntas de tres tipos (`choice`, `score` y `noul`) y devuelve distribuciones de probabilidad a partir de una única pasada forward, sin generar texto. Está construido como un fine-tune completo de Qwen3.5-4B, del que hereda la arquitectura causal estándar (`Qwen3_5ForCausalLM`), pero reutilizado como cabezal de decisión leyendo los logits de los códigos de opción (A–Z, 0–9, yes/no) en la posición de respuesta.
+fern es un modelo de decisión de 4.205.751.296 parámetros (unos 4,2B) desarrollado por el usuario reoring y publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo al uso: se trata de un clasificador enmarcado en la pipeline `text-classification` que recibe un `state` (una situación en texto) y hasta 50 preguntas de tres tipos (`choice`, `score` y `noul`) y devuelve distribuciones de probabilidad a partir de una única pasada forward, sin generar texto. Está construido como un fine-tune completo de Qwen3.5-4B, del que hereda la arquitectura causal estándar (`Qwen3_5ForCausalLM`), pero reutilizado como cabezal de decisión leyendo los logits de los códigos de opción (A–Z, 0–9, yes/no) en la posición de respuesta.
 
 La relevancia del modelo está en su enfoque de destilación: se entrenó haciendo que el estudiante igualase la distribución next-token del profesor DeepSeek-V4-Flash (en cuantización UD-IQ2_M servido con llama-server) sobre los códigos de opción, con una pérdida KL. El resultado es un modelo que prioriza latencia y coste por decisión frente a capacidades generativas: unas 30 ms por petición en una GPU, con 1.200 decisiones ejecutadas en 9 segundos en la demo oficial sobre 300 tickets multilingües. Con 0 descargas y 0 likes en el momento de la consulta, es un proyecto de nicho y reciente (creado en septiembre de 2026).
 
@@ -97,7 +97,7 @@ Frente al modelo base, fern sacrifica generación y razonamiento por una interfa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reoring/fern
+- Modelo en Hugging Face: https://huggingface.co/reoring/fern
 - Repositorio de codigo y servidor: https://github.com/reoring/fern
 - Demo en asciinema (300 tickets × 4 decisiones en 9 s): https://asciinema.org/a/m2qY1wX8DlhFroxx
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

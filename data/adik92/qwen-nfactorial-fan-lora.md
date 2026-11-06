@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Adik92/qwen-nfactorial-fan-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Adik92, obtenido mediante fine-tuning del modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
+`Adik92/qwen-nfactorial-fan-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Adik92, obtenido mediante fine-tuning del modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
 
 Se trata de un ajuste muy ligero y de proposito aparentemente experimental: la model card no documenta el dataset de entrenamiento, el rango del LoRA, el numero de pasos ni el objetivo concreto del ajuste. El nombre sugiere un uso vinculado al programa nFactorial, pero esto no se confirma en la informacion disponible. A fecha de la ficha, el repositorio acumula 0 descargas y 0 likes, por lo que no cuenta con validacion de la comunidad.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adik92/qwen-nfactorial-fan-lora | ~1,5B (adaptador LoRA sobre Qwen2.5-1.5B) | 32.768 tokens (heredado del base) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, con restricciones de uso |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, con restricciones de uso |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | apache-2.0 | HuggingFace |
+| Adik92/qwen-nfactorial-fan-lora | ~1,5B (adaptador LoRA sobre Qwen2.5-1.5B) | 32.768 tokens (heredado del base) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, con restricciones de uso |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, con restricciones de uso |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | apache-2.0 | Hugging Face |
 
 En rendimiento no se puede establecer comparacion alguna: el adaptador no publica evaluaciones, y las cifras de los modelos alternativos proceden de sus respectivas documentaciones oficiales, no de una evaluacion conjunta.
 
@@ -92,7 +92,7 @@ En rendimiento no se puede establecer comparacion alguna: el adaptador no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adik92/qwen-nfactorial-fan-lora
+- Modelo en Hugging Face: https://huggingface.co/Adik92/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion y repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

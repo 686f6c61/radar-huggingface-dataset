@@ -76,7 +76,7 @@ La comparativa se basa en la arquitectura conocida (XLM-RoBERTa base) y en model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_jcr9i3nw
+- Repositorio en Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_jcr9i3nw
 - Articulo de XLM-RoBERTa: https://arxiv.org/abs/1910.09700
 - Documentacion de Transformers: https://huggingface.co/docs/transformers/index
 - Documentacion de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference/index

@@ -91,6 +91,6 @@ La comparación relevante es de categoría, no de rendimiento: frente a DINO, DI
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chineduogunleye/contrastive-beta
+- Hugging Face: https://huggingface.co/chineduogunleye/contrastive-beta
 - Paper de DINO (referencia de la arquitectura): no disponible en la informacion proporcionada
 - Repositorio de codigo o demo adicional: no disponible en la informacion proporcionada

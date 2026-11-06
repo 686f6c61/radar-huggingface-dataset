@@ -19,7 +19,7 @@ Su relevancia radica en que ofrece una alternativa ligera y de bajo coste para i
 | Tipos de cuantizacion | no especificados; se puede aplicar cuantización GGUF/AWQ externa |
 | Idiomas soportados | no especificados; entrenado para tool calling en inglés |
 | Licencia | no disponible (la model card indica "license" sin detallar) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3B | 32k | No nativo | Apache 2.0 | HuggingFace |
-| canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data | 3B | 32k | Sí (fine-tune) | no disponible | HuggingFace |
-| FireFunction-v1 | 3.9B | 32k | Sí | Apache 2.0 | HuggingFace |
-| Gorilla-OpenFunctions-v2 | 7B | 8k | Sí | Apache 2.0 | HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3B | 32k | No nativo | Apache 2.0 | Hugging Face |
+| canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data | 3B | 32k | Sí (fine-tune) | no disponible | Hugging Face |
+| FireFunction-v1 | 3.9B | 32k | Sí | Apache 2.0 | Hugging Face |
+| Gorilla-OpenFunctions-v2 | 7B | 8k | Sí | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento publicadas entre estos modelos. La elección dependerá de la evaluación empírica en el caso de uso concreto.
 
@@ -76,6 +76,6 @@ No se dispone de comparativas de rendimiento publicadas entre estos modelos. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data
+- Modelo en Hugging Face: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

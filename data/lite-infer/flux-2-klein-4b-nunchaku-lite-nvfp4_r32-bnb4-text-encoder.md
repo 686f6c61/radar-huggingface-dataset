@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base disponibles en el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lite-infer/flux.2-klein-4b-nunchaku-lite-nvfp4_r32-bnb4-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/lite-infer/flux.2-klein-4b-nunchaku-lite-nvfp4_r32-bnb4-text-encoder
 - Herramienta de cuantización diffuse-compressor: https://github.com/rootonchair/diffuse-compressor
 - Modelo base FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Documentación de Diffusers (Flux2KleinPipeline): https://huggingface.co/docs/diffusers/api/pipelines/flux2

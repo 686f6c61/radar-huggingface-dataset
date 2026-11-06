@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por fpadovani. Se trata de un experimento de investigación centrado en el aprendizaje de lenguajes artificiales con distribución zipfiana, aplicado a un corpus de inglés de 100 MB. El nombre del modelo sugiere que forma parte de una serie de estudios sobre la influencia de la estructura léxica en el aprendizaje de modelos de lenguaje, aunque no se proporcionan detalles adicionales en la documentación pública.
 
-Con 86,5 millones de parámetros, es un modelo pequeño, basado en la arquitectura GPT-2 (según las etiquetas de HuggingFace), entrenado mediante supervisión fina (SFT) con la librería TRL. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, pero también limita sus capacidades en tareas complejas. No se especifica la licencia ni los idiomas soportados, aunque el nombre indica que está orientado al inglés.
+Con 86,5 millones de parámetros, es un modelo pequeño, basado en la arquitectura GPT-2 (según las etiquetas de Hugging Face), entrenado mediante supervisión fina (SFT) con la librería TRL. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, pero también limita sus capacidades en tareas complejas. No se especifica la licencia ni los idiomas soportados, aunque el nombre indica que está orientado al inglés.
 
 La relevancia de este modelo reside en su uso como herramienta de investigación en psicolingüística computacional y en el estudio de la adquisición de lenguaje artificial. No está pensado para aplicaciones de producción, sino para experimentos controlados donde se analiza cómo la distribución de frecuencias léxicas afecta al comportamiento generativo del modelo.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su uso como herramienta de investigación
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-2, un transformer decoder-only con mecanismo de atención causal. Al ser un ajuste fino de `goldfish-models/eng_latn_100mb`, hereda su estructura, aunque no se dispone de detalles sobre el número de capas, dimensiones ocultas o cabezas de atención. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, con el framework Transformers 4.56.2 y PyTorch 2.5.1. No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de preparación de los datos. El nombre del modelo incluye "newlexicon-zipf", lo que sugiere que se utilizó un léxico artificial con distribución de frecuencias zipfiana, pero no hay documentación que lo confirme explícitamente.
+El modelo se basa en la arquitectura GPT-2, un transformer decoder-only con mecanismo de atención causal. Al ser un ajuste fino de `goldfish-models/eng_latn_100mb`, hereda su estructura, aunque no se dispone de detalles sobre el número de capas, dimensiones ocultas o cabezas de atención. El entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, con el framework Transformers 4.56.2 y PyTorch 2.5.1. No se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de preparación de los datos. El nombre del modelo incluye "newlexicon-zipf", lo que sugiere que se utilizó un léxico artificial con distribución de frecuencias zipfiana, pero no hay documentación que lo confirme explícitamente.
 
 ## Capacidades
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10)
 - [LLM Explorer - Ppt Art Lang Newlexicon Eng Baseline 100mb Seed455](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5) (modelo similar de la misma familia)
-- [HuggingFace - goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb) (modelo base)
+- [Hugging Face - goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb) (modelo base)

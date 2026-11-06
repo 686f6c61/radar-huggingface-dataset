@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`omegazurich/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source` es un fine-tune del modelo `DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking`, que a su vez deriva de la familia Gemma 4 de Google. El modelo ha sido sometido a un proceso de "abliteration" (eliminación de los mecanismos de rechazo) y entrenado sobre un dataset orientado a horror, terror y roleplay, con el objetivo declarado de servir como plataforma de entretenimiento temático de Halloween. Lo publica el usuario omegazurich en HuggingFace con licencia Apache 2.0.
+`omegazurich/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source` es un fine-tune del modelo `DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking`, que a su vez deriva de la familia Gemma 4 de Google. El modelo ha sido sometido a un proceso de "abliteration" (eliminación de los mecanismos de rechazo) y entrenado sobre un dataset orientado a horror, terror y roleplay, con el objetivo declarado de servir como plataforma de entretenimiento temático de Halloween. Lo publica el usuario omegazurich en Hugging Face con licencia Apache 2.0.
 
 El modelo integra un sistema de prompts propietario denominado "Halloween O/S", que actúa como capa de orquestación sobre el modelo base. Este sistema expone 13 modos de razonamiento, 13 modos de instrucción y 10 "constructos" de IA malvados predefinidos (Joker, Harley Quinn, Borg Queen, Jason Voorhees, Freddy Krueger, Norman Bates, Pennywise, Vecna, Mind Flayer y Chucky), además de permitir "conjurar" personajes arbitrarios. La arquitectura subyacente es la de Gemma 4 con capacidades multimodales (pipeline `image-text-to-text`), 31.273.086.512 parámetros y un contexto recomendado de al menos 64k tokens.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source | 31,3B | no disponible (recomendado 64k) | Apache 2.0 | Fine-tune de terror sin censura | HuggingFace, 0 descargas |
-| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking (modelo base) | 31,3B | no disponible | Apache 2.0 | Base sin censura con thinking | HuggingFace |
-| Gemma 4 31B-it (modelo original de Google) | 31,3B | no disponible en esta ficha | Gemma license | Modelo instructivo general multimodal | HuggingFace, amplia adopción |
+| gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source | 31,3B | no disponible (recomendado 64k) | Apache 2.0 | Fine-tune de terror sin censura | Hugging Face, 0 descargas |
+| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking (modelo base) | 31,3B | no disponible | Apache 2.0 | Base sin censura con thinking | Hugging Face |
+| Gemma 4 31B-it (modelo original de Google) | 31,3B | no disponible en esta ficha | Gemma license | Modelo instructivo general multimodal | Hugging Face, amplia adopción |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace (modelo fuente): https://huggingface.co/omegazurich/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source
+- Hugging Face (modelo fuente): https://huggingface.co/omegazurich/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source
 - Repo GGUF derivado: https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
 - Modelo base: https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking

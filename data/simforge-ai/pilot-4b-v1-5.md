@@ -88,10 +88,10 @@ El autor advierte que los resultados se ejecutaron una vez por escena con una se
 
 | Modelo | Parametros | Contexto | Driving score (SF, 60 escenas) | Colisiones (de 60) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pilot-4B v1.5 | 4,54 B + 1,04 B planificador | no disponible | 0.537 | 16 | apache-2.0 | HuggingFace |
+| Pilot-4B v1.5 | 4,54 B + 1,04 B planificador | no disponible | 0.537 | 16 | apache-2.0 | Hugging Face |
 | Alpamayo 1.5 | 10 B | no disponible | 0.405 | 30 | no disponible | no disponible |
 | SimForge-D1.5 | no disponible | no disponible | 0.405 | 37 | no disponible | no disponible |
-| Qwen-Drive-1.0-4B (base) | 4,54 B | no disponible | 0.301 | 33 | no disponible | HuggingFace |
+| Qwen-Drive-1.0-4B (base) | 4,54 B | no disponible | 0.301 | 33 | no disponible | Hugging Face |
 
 Pilot-4B v1.5 supera a Alpamayo 1.5 (10 B) y a SimForge-D1.5 en bucle cerrado con significación estadística en el panel de 60 escenas, y mejora a su base en +0,236 de score. Sin embargo, en bucle abierto su minADE (1,343 m) es peor que el de su base (0,910 m), lo que refleja que está optimizado para recuperación y progreso en bucle cerrado, no para imitar trayectorias de referencia.
 
@@ -110,7 +110,7 @@ Pilot-4B v1.5 supera a Alpamayo 1.5 (10 B) y a SimForge-D1.5 en bucle cerrado co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SIMFORGE-AI/Pilot-4B-v1.5
+- Modelo en Hugging Face: https://huggingface.co/SIMFORGE-AI/Pilot-4B-v1.5
 - Modelo base: https://huggingface.co/Qwen/Qwen-Drive-1.0-4B
 - Sitio del autor: https://simforge.ai
 - Renderer Helios: https://simforge.ai/helios

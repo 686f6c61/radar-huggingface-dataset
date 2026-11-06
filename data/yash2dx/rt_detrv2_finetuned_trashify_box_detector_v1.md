@@ -25,7 +25,7 @@ Su relevancia es acotada y practica: es un ejemplo de ajuste fino de un detector
 | Resolucion de entrada | no disponible (la model card no la especifica; RT-DETR v2 se entrena habitualmente a 640x640) |
 | Libreria | transformers |
 | Tamano del repositorio | 0,2 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -117,9 +117,9 @@ Observacion relevante: la metrica global declarada en la model card (mAP 0,4286)
 
 | Modelo | Parametros | Dominio / clases | mAP | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rt_detrv2_finetuned_trashify_box_detector_v1 | 42,9 M | Residuos, 7 etiquetas propias | 0,4286 (global declarado), 0,5502 maximo en log | apache-2.0 | safetensors | HuggingFace, 0 descargas |
-| PekingU/rtdetr_v2_r50vd (modelo base) | 42,9 M (misma arquitectura) | COCO, 80 clases | no disponible en la informacion proporcionada | apache-2.0 | safetensors | HuggingFace, checkpoint oficial |
-| PekingU/rtdetr_r50vd (RT-DETR v1, R50) | no disponible | COCO, 80 clases | no disponible en la informacion proporcionada | apache-2.0 | safetensors | HuggingFace, checkpoint oficial |
+| rt_detrv2_finetuned_trashify_box_detector_v1 | 42,9 M | Residuos, 7 etiquetas propias | 0,4286 (global declarado), 0,5502 maximo en log | apache-2.0 | safetensors | Hugging Face, 0 descargas |
+| PekingU/rtdetr_v2_r50vd (modelo base) | 42,9 M (misma arquitectura) | COCO, 80 clases | no disponible en la informacion proporcionada | apache-2.0 | safetensors | Hugging Face, checkpoint oficial |
+| PekingU/rtdetr_r50vd (RT-DETR v1, R50) | no disponible | COCO, 80 clases | no disponible en la informacion proporcionada | apache-2.0 | safetensors | Hugging Face, checkpoint oficial |
 | Detectores de la familia YOLO (p. ej. Ultralytics YOLO11) | no disponible | COCO, 80 clases; requieren ajuste fino para residuos | no disponible en la informacion proporcionada | licencia propia de Ultralytics (AGPL-3.0 o comercial) | PyTorch, ONNX, TensorRT | Amplia, con ecosistema maduro |
 
 La comparacion significativa es contra el modelo base: este checkpoint sustituye la cabeza de 80 clases COCO por siete etiquetas de dominio y pierde generalidad a cambio de especializacion. Frente a la familia YOLO, RT-DETR v2 ofrece la ventaja de no requerir NMS y de tener un pipeline end-to-end mas simple de exportar, a costa de un ecosistema de herramientas y de pesos preentrenados menos extenso. No hay datos de benchmarks que permitan afirmar cual rinde mejor en el dominio de residuos: el autor no publica comparaciones.
@@ -133,7 +133,7 @@ La comparacion significativa es contra el modelo base: este checkpoint sustituye
 - Senales de sobreajuste: la perdida de validacion toca minimo en la epoca 5 y empeora en las dos ultimas epocas mientras la perdida de entrenamiento sigue descendiendo.
 - Dataset desconocido: la model card indica "unknown dataset" y no documenta composicion, origen, numero de imagenes ni criterios de anotacion. No es posible evaluar sesgos de dominio, de iluminacion, de geografia ni de tipo de residuo. Toda extrapolacion a entornos distintos del dataset original es especulativa.
 - Documentacion inexistente: la model card esta generada automaticamente y los apartados de descripcion, usos previstos y datos de entrenamiento dicen "More information needed". No hay guia de integracion, ni lista oficial de clases, ni resolucion de entrada declarada.
-- Sin validacion externa: 0 descargas y 0 likes en HuggingFace, y el model-index del repositorio no contiene resultados. No hay terceros que hayan reproducido las metricas.
+- Sin validacion externa: 0 descargas y 0 likes en Hugging Face, y el model-index del repositorio no contiene resultados. No hay terceros que hayan reproducido las metricas.
 - Modelo puramente visual: no entiende lenguaje natural, no admite prompts de texto, no soporta tool calling ni agentes, y las etiquetas de salida estan en ingles y no son configurables sin reentrenar la cabeza.
 - Licencia: apache-2.0 en este checkpoint, lo que permite uso comercial y modificacion. Conviene verificar de forma independiente la licencia y las condiciones del modelo base y del dataset de ajuste fino, no declaradas en la model card.
 - Anomalia de metadatos: la fecha de creacion registrada (2026-10-03) es posterior a la fecha actual, lo que sugiere un error de marca de tiempo y refuerza la cautela sobre la trazabilidad del artefacto.
@@ -141,6 +141,6 @@ La comparacion significativa es contra el modelo base: este checkpoint sustituye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yash2dx/rt_detrv2_finetuned_trashify_box_detector_v1
-- Modelo base en HuggingFace: https://huggingface.co/PekingU/rtdetr_v2_r50vd
-- Busqueda web: no se han recuperado enlaces relevantes. Los resultados devueltos por el buscador no guardan ninguna relacion con el modelo ni con la deteccion de objetos, por lo que se han descartado. No se dispone de paper, blog, repositorio ni demo asociados a este checkpoint mas alla de su propia pagina en HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/Yash2dx/rt_detrv2_finetuned_trashify_box_detector_v1
+- Modelo base en Hugging Face: https://huggingface.co/PekingU/rtdetr_v2_r50vd
+- Busqueda web: no se han recuperado enlaces relevantes. Los resultados devueltos por el buscador no guardan ninguna relacion con el modelo ni con la deteccion de objetos, por lo que se han descartado. No se dispone de paper, blog, repositorio ni demo asociados a este checkpoint mas alla de su propia pagina en Hugging Face.

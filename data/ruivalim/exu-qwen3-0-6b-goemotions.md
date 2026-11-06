@@ -76,9 +76,9 @@ NLL y Brier son reglas de puntuacion estrictamente propias y son las metricas qu
 
 | Modelo | Parametros | Contexto de entrenamiento | NLL (GoEmotions test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| exu-qwen3-0.6b-goemotions | 596 M | 128 tokens | 1,8435 (una semilla) / 1,8417 ± 0,0019 (tres semillas) | Apache-2.0 | HuggingFace, formato de sonda propio |
-| `answerdotai/ModernBERT-base` con readout de Exu | aproximadamente 149 M | no disponible | 1,8549 ± 0,0119 | Apache-2.0 (modelo base) | HuggingFace; requiere el toolkit Exu |
-| `google-bert/bert-base-uncased` con readout de Exu | aproximadamente 110 M | no disponible | 1,8676 ± 0,0076 | Apache-2.0 (modelo base) | HuggingFace; requiere el toolkit Exu |
+| exu-qwen3-0.6b-goemotions | 596 M | 128 tokens | 1,8435 (una semilla) / 1,8417 ± 0,0019 (tres semillas) | Apache-2.0 | Hugging Face, formato de sonda propio |
+| `answerdotai/ModernBERT-base` con readout de Exu | aproximadamente 149 M | no disponible | 1,8549 ± 0,0119 | Apache-2.0 (modelo base) | Hugging Face; requiere el toolkit Exu |
+| `google-bert/bert-base-uncased` con readout de Exu | aproximadamente 110 M | no disponible | 1,8676 ± 0,0076 | Apache-2.0 (modelo base) | Hugging Face; requiere el toolkit Exu |
 | prior de frecuencia de etiquetas | no aplica | no aplica | 2,8267 | no aplica | no aplica |
 
 No se dispone de datos de contexto de los modelos comparados en la informacion proporcionada.
@@ -98,10 +98,10 @@ No se dispone de datos de contexto de los modelos comparados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ruivalim/exu-qwen3-0.6b-goemotions
+- Modelo en Hugging Face: https://huggingface.co/Ruivalim/exu-qwen3-0.6b-goemotions
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
 - Toolkit Exu: https://github.com/ruivalim/exu-base
 - Benchmarks del toolkit (seccion 10): https://github.com/ruivalim/exu-base/blob/main/BENCHMARKS.md
 - Script de inferencia incluido en el repositorio: `exu_probe_infer.py`
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion del repositorio de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion del repositorio de Hugging Face.

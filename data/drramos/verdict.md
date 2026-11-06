@@ -18,7 +18,7 @@ Su relevancia practica esta en la calibracion: el autor reporta un ECE (error de
 | Longitud de contexto | el autor reporta estados de 1.000 a 16.000 tokens en la familia sintetica de contexto largo; la ventana nativa del modelo base no se especifica, no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors en precision de entrenamiento) |
 | Idiomas soportados | no disponible (entre los datasets de entrenamiento figura MASSIVE, de naturaleza multilingue, pero el autor no declara la lista de idiomas soportados) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que el modelo base es Apache 2.0 y advierte de que algunos datasets de entrenamiento tienen condiciones propias, incluidos usos no comerciales (por ejemplo, los datos de resenas de Yelp) |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que el modelo base es Apache 2.0 y advierte de que algunos datasets de entrenamiento tienen condiciones propias, incluidos usos no comerciales (por ejemplo, los datos de resenas de Yelp) |
 | Formato de pesos | safetensors (libreria pytorch) |
 | Modelo base | Qwen/Qwen3.5-0.8B-Base |
 | Tamano del repositorio | 0,1 GB |
@@ -85,8 +85,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Precision reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drramos/verdict | 11,3 M entrenables sobre base de 0,8B | hasta 16.000 tokens en la familia sintetica | Choice 84,0 %, Noul 87,5 %, Score 70,7 % | no disponible (base Apache 2.0, datasets con condiciones propias) | pesos en HuggingFace + codigo en GitHub |
-| vllm-sr/Decision-1.0-Eos-0.8B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| drramos/verdict | 11,3 M entrenables sobre base de 0,8B | hasta 16.000 tokens en la familia sintetica | Choice 84,0 %, Noul 87,5 %, Score 70,7 % | no disponible (base Apache 2.0, datasets con condiciones propias) | pesos en Hugging Face + codigo en GitHub |
+| vllm-sr/Decision-1.0-Eos-0.8B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Jev (TypeSafe AI) | no disponible | no disponible | no disponible | no disponible | producto de TypeSafe AI; verdict no esta afiliado |
 
 El autor cita explicitamente Decision-1.0-Eos-0.8B como arquitectura de referencia y Jev como precedente del patron de modelo de decision System One. No se dispone de cifras publicas comparables de esos dos sistemas en la informacion proporcionada.
@@ -101,13 +101,13 @@ El autor cita explicitamente Decision-1.0-Eos-0.8B como arquitectura de referenc
 - No es un modelo generativo: no se puede usar para redactar, resumir, traducir ni conversar.
 - Riesgo de alucinacion: al no generar texto libre, el fallo tipico no es inventar contenido, sino asignar alta probabilidad a una opcion incorrecta (sobreconfianza), que es igualmente peligroso en flujos automatizados.
 - Idiomas: no se declara la cobertura linguistica, pese a que el entrenamiento incluye un corpus multilingue; no debe asumirse rendimiento en castellano sin evaluacion propia.
-- Licencia: no hay licencia declarada en los metadatos de HuggingFace. El modelo base es Apache 2.0, pero la model card advierte de que varios datasets de entrenamiento tienen condiciones propias, algunas no comerciales (Yelp). Es obligatorio revisarlas antes de cualquier uso comercial.
+- Licencia: no hay licencia declarada en los metadatos de Hugging Face. El modelo base es Apache 2.0, pero la model card advierte de que varios datasets de entrenamiento tienen condiciones propias, algunas no comerciales (Yelp). Es obligatorio revisarlas antes de cualquier uso comercial.
 - Uso en produccion: al depender de una libreria propia y de pesos que no son un modelo causal autonomo, el despliegue implica integrar codigo especifico del proyecto y asumir su mantenimiento.
 - Cero traccion verificable: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la actualizacion es del mismo dia de su creacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drramos/verdict
+- Modelo en Hugging Face: https://huggingface.co/drramos/verdict
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Codigo del proyecto: https://github.com/danieltrt/verdict
 - Arquitectura de referencia (Decision-1.0-Eos-0.8B): https://huggingface.co/vllm-sr/Decision-1.0-Eos-0.8B

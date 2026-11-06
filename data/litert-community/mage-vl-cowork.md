@@ -97,7 +97,7 @@ No se han identificado en la información disponible alternativas de la misma ca
 
 ## Enlaces
 
-- [HuggingFace: litert-community/Mage-VL-Cowork](https://huggingface.co/litert-community/Mage-VL-Cowork)
+- [Hugging Face: litert-community/Mage-VL-Cowork](https://huggingface.co/litert-community/Mage-VL-Cowork)
 - [Modelo base: microsoft/Mage-VL-Cowork](https://huggingface.co/microsoft/Mage-VL-Cowork)
 - [Repositorio hf-to-litertlm](https://github.com/john-rocky/hf-to-litertlm)
 - [Script cowork_step.py](https://github.com/john-rocky/hf-to-litertlm/blob/main/magevlcowork_work/cowork_step.py)

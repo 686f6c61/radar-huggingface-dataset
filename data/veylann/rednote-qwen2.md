@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RedNote-Qwen2 es un modelo publicado en HuggingFace por el usuario Veylann bajo el identificador `Veylann/RedNote-Qwen2`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card del autor esta practicamente vacia (unicamente declara `license: mit`) y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos utilizables o que estos son de tamano despreciable. El modelo registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-09-19).
+RedNote-Qwen2 es un modelo publicado en Hugging Face por el usuario Veylann bajo el identificador `Veylann/RedNote-Qwen2`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card del autor esta practicamente vacia (unicamente declara `license: mit`) y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos utilizables o que estos son de tamano despreciable. El modelo registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-09-19).
 
 El nombre del repositorio permite inferir que se trata de un modelo basado en la familia Qwen2, presumiblemente ajustado (fine-tuned) para tareas relacionadas con RedNote (Xiaohongshu, la red social china de contenido). Sin embargo, esta inferencia no esta confirmada por ninguna documentacion oficial del autor, por lo que debe tratarse como una hipotesis y no como un dato verificado.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable: se desconocen los parametros y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Veylann/RedNote-Qwen2
+- Hugging Face: https://huggingface.co/Veylann/RedNote-Qwen2
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

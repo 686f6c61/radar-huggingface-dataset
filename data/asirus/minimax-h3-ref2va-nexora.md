@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Ref2VA-NEXORA es un checkpoint fusionado (merged checkpoint) derivado de MiniMax-H3, publicado por el usuario Asirus en HuggingFace. Se trata de un modelo de generación de vídeo a partir de imagen y texto (pipeline image-text-to-video), etiquetado como "Ref2VA", lo que sugiere capacidades de referencia de imagen a vídeo y audio. El modelo se distribuye en formato int8 y está diseñado para integrarse en flujos de trabajo de ComfyUI, la popular interfaz node-based para generación de contenido multimedia.
+MiniMax-H3-Ref2VA-NEXORA es un checkpoint fusionado (merged checkpoint) derivado de MiniMax-H3, publicado por el usuario Asirus en Hugging Face. Se trata de un modelo de generación de vídeo a partir de imagen y texto (pipeline image-text-to-video), etiquetado como "Ref2VA", lo que sugiere capacidades de referencia de imagen a vídeo y audio. El modelo se distribuye en formato int8 y está diseñado para integrarse en flujos de trabajo de ComfyUI, la popular interfaz node-based para generación de contenido multimedia.
 
 El modelo base es Comfy-Org/MiniMax-H3, una reempaquetación de la arquitectura MiniMax-H3 adaptada para ComfyUI. La variante NEXORA añade sobre esta base un ajuste fino (finetune) orientado, según sus etiquetas, a la generación de vídeo con audio (audio-video) y a tareas de referencia visual. Su relevancia reside en la demanda creciente de modelos generadores de vídeo con sincronización de audio ejecutables localmente, un nicho donde las opciones abiertas siguen siendo escasas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Asirus/MiniMax-H3-Ref2VA-NEXORA | no disponible | no disponible | imagen-texto-a-vídeo (con audio) | minimax-h3-community-license-agreement | gated, ComfyUI |
-| Comfy-Org/MiniMax-H3 (modelo base) | no disponible | no disponible | imagen-texto-a-vídeo | licencia comunitaria MiniMax | abierto en HuggingFace |
+| Comfy-Org/MiniMax-H3 (modelo base) | no disponible | no disponible | imagen-texto-a-vídeo | licencia comunitaria MiniMax | abierto en Hugging Face |
 | Wan 2.1 (Alibaba) | 1,3B / 14B | no aplicable | texto/imagen a vídeo | Apache 2.0 (parcialmente) | abierto, ComfyUI y Diffusers |
 
 Nota: al no disponer de especificaciones publicadas del modelo NEXORA, la comparativa se limita a categorías y licencias; no se pueden comparar cifras de rendimiento porque no existen datos publicados.
@@ -79,5 +79,5 @@ Nota: al no disponer de especificaciones publicadas del modelo NEXORA, la compar
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Asirus/MiniMax-H3-Ref2VA-NEXORA
+- Ficha del modelo en Hugging Face: https://huggingface.co/Asirus/MiniMax-H3-Ref2VA-NEXORA
 - Modelo base (Comfy-Org/MiniMax-H3): https://huggingface.co/Comfy-Org/MiniMax-H3

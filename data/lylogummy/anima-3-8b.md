@@ -51,7 +51,7 @@ El entrenamiento se realizo a baja resolucion, lo que explica la recomendacion d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor proporciona ocho demostraciones visuales en el repositorio de HuggingFace que muestran las capacidades del modelo, pero no incluye metricas cuantitativas como FID, CLIP score o comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor proporciona ocho demostraciones visuales en el repositorio de Hugging Face que muestran las capacidades del modelo, pero no incluye metricas cuantitativas como FID, CLIP score o comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lylogummy/Anima-3.8B
+- Repositorio Hugging Face: https://huggingface.co/lylogummy/Anima-3.8B
 - Nodos ComfyUI: https://github.com/GumGum10/comfyui-anima-3-8B
-- Perfil del autor en HuggingFace: https://huggingface.co/lylogummy
+- Perfil del autor en Hugging Face: https://huggingface.co/lylogummy
 - Modelo relacionado anima2b-qwen-3.5-4b: https://huggingface.co/lylogummy/anima2b-qwen-3.5-4b

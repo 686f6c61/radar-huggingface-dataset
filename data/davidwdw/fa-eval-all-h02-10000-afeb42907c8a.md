@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Artefacto | Tipo | Tamano | Contenido declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidwdw/fa-eval-all-h02-10000-afeb42907c8a` | snapshot de evaluacion | 0,1 GB | episodes, JSON, videos, traces, logs, protocol, scripts, input, receipt | no disponible | publico en HuggingFace |
-| `davidwdw/fa-h08-attnfix-eval-8500-72f480f18a3e` | snapshot de evaluacion (serie del mismo autor) | no disponible | no disponible | no disponible | publico en HuggingFace |
+| `davidwdw/fa-eval-all-h02-10000-afeb42907c8a` | snapshot de evaluacion | 0,1 GB | episodes, JSON, videos, traces, logs, protocol, scripts, input, receipt | no disponible | publico en Hugging Face |
+| `davidwdw/fa-h08-attnfix-eval-8500-72f480f18a3e` | snapshot de evaluacion (serie del mismo autor) | no disponible | no disponible | no disponible | publico en Hugging Face |
 | EleutherAI `lm-evaluation-harness` | framework de evaluacion | no aplicable | codigo, tareas y metricas | licencia del proyecto (MIT) | repositorio publico en GitHub |
 
 La comparacion con modelos de lenguaje no procede, ya que ninguno de los artefactos de esta tabla es un modelo. La unica alternativa funcionalmente cercana es un harness de evaluacion, que aporta el codigo para generar artefactos como este, pero no los resultados ya ejecutados.
@@ -94,6 +94,6 @@ La comparacion con modelos de lenguaje no procede, ya que ninguno de los artefac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h02-10000-afeb42907c8a
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h02-10000-afeb42907c8a
 - Snapshot relacionado del mismo autor: https://huggingface.co/datasets/davidwdw/fa-h08-attnfix-eval-8500-72f480f18a3e
 - EleutherAI lm-evaluation-harness (framework de referencia para este tipo de evaluaciones): https://github.com/EleutherAI/lm-evaluation-harness

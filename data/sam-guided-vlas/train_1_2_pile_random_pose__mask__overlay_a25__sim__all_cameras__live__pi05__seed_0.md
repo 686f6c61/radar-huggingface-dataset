@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sam-guided-vlas/...__pi05__seed_0` (este modelo) | 4.143.404.816 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `sam-guided-vlas/...__pi05__seed_0` (este modelo) | 4.143.404.816 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 El modelo es un fine-tuning del base `lerobot/pi05_base`; no se dispone de más comparativas en la información proporcionada.
 
@@ -77,9 +77,9 @@ El modelo es un fine-tuning del base `lerobot/pi05_base`; no se dispone de más 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a25__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Documentación de LeRobot sobre Pi05: https://huggingface.co/docs/lerobot/main/en/pi05
 - Blog de Physical Intelligence sobre Pi05: https://www.physicalintelligence.company/blog/pi05
-- Perfil de la organización en HuggingFace: https://huggingface.co/sam-guided-vlas
+- Perfil de la organización en Hugging Face: https://huggingface.co/sam-guided-vlas

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario `hab-swe`. Segun los metadatos del repositorio, cuenta con 27.356.728.560 parametros (aproximadamente 27,36 mil millones), se distribuye en formato safetensors, se ejecuta con la libreria `transformers` y esta etiquetado con la arquitectura `qwen3_5`, lo que lo situa en la familia Qwen. El pipeline declarado (`image-text-to-text`) indica que acepta imagenes y texto como entrada y genera texto como salida.
+El modelo `hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario `hab-swe`. Segun los metadatos del repositorio, cuenta con 27.356.728.560 parametros (aproximadamente 27,36 mil millones), se distribuye en formato safetensors, se ejecuta con la libreria `transformers` y esta etiquetado con la arquitectura `qwen3_5`, lo que lo situa en la familia Qwen. El pipeline declarado (`image-text-to-text`) indica que acepta imagenes y texto como entrada y genera texto como salida.
 
-El repositorio tiene un acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. En el momento de la consulta registra 0 descargas y 0 "likes", y fue creado y actualizado el 17 de septiembre de 2026, por lo que se trata de una publicacion reciente y sin traccion comunitaria documentada. La licencia declarada en las etiquetas es Apache 2.0, aunque el acceso gated anade una capa adicional de control por parte del autor.
+El repositorio tiene un acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. En el momento de la consulta registra 0 descargas y 0 "likes", y fue creado y actualizado el 17 de septiembre de 2026, por lo que se trata de una publicacion reciente y sin traccion comunitaria documentada. La licencia declarada en las etiquetas es Apache 2.0, aunque el acceso gated anade una capa adicional de control por parte del autor.
 
 El nombre del repositorio sugiere un modelo afinado con SFT (supervised fine-tuning) sobre un backbone Qwen multimodal, orientado a un dominio concreto: los segmentos "MedCLI", "CMT", "EHRDQ" y "CT" apuntan a un enfoque medico-clinico (historia clinica electronica, tomografia computarizada). Se trata, no obstante, de una inferencia a partir del nombre del repositorio y no de informacion confirmada en la model card o en los resultados de busqueda disponibles. Es relevante ahora porque los modelos multimodales abiertos de ~27B parametros con licencia permisiva son candidatos habituales para despliegues on-premise en sectores regulados, donde el procesamiento de documentos e imagenes sin salida a la nube es un requisito.
 
@@ -41,7 +41,7 @@ Tampoco hay datos publicados sobre el proceso de entrenamiento: se desconoce el 
 - Generacion de texto conversacional: la etiqueta `conversational` indica soporte para dialogos multi-turno.
 - Entrada multimodal de imagenes y texto: puede recibir imagenes junto con instrucciones en lenguaje natural (pipeline image-text-to-text).
 - Salida exclusivamente textual: el repositorio no declara generacion de imagenes ni de audio.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Especializacion probable en dominio medico-clinico: inferida del nombre del repositorio (`MedCLI`, `CMT`, `EHRDQ`, `CT`), no confirmada por documentacion.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU para INT8: A100 40 GB, L40S 48 GB, RTX A6000 48 GB.
 - GPU de consumo: en bf16 no cabe en ninguna GPU de consumo actual. Con cuantizacion a 4 bits es previsible que quepa en RTX 4090 / RTX 3090 de 24 GB, aunque el encoder visual y la cache KV pueden agotar el margen disponible; en 16 GB el encaje es dudoso.
 - Memoria unificada: los equipos Apple Silicon con 64 GB o mas podrian alojar el modelo cuantizado a 4 bits; no hay confirmacion de soporte.
-- Opciones de despliegue: `transformers` (libreria declarada), vLLM y TGI como servidores de inferencia (soporte concreto de la arquitectura `qwen3_5` no verificado), HuggingFace Inference Endpoints por la etiqueta `endpoints_compatible`. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` (libreria declarada), vLLM y TGI como servidores de inferencia (soporte concreto de la arquitectura `qwen3_5` no verificado), Hugging Face Inference Endpoints por la etiqueta `endpoints_compatible`. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no se distribuye en el repositorio.
 - Latencia y throughput: no disponibles. No hay datos de tokens por segundo ni de tiempo hasta el primer token.
 - Almacenamiento: 54,7 GB de pesos mas espacio temporal durante la descarga y conversion.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de rendimiento para este modelo, por lo que c
 
 | Modelo | Parametros | Contexto | Licencia | Estado en la informacion disponible |
 |---|---|---|---|---|
-| hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5 | 27,36B | no disponible | apache-2.0 (gated) | Datos del repositorio HuggingFace |
+| hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5 | 27,36B | no disponible | apache-2.0 (gated) | Datos del repositorio Hugging Face |
 | Alternativas multimodales abiertas de ~26-32B (familia Qwen-VL, InternVL, Gemma multimodal) | no disponible | no disponible | no disponible | No se han identificado alternativas concretas ni datos comparables en la informacion proporcionada |
 
 No se ha encontrado en la busqueda web ningun modelo comparable ni evaluacion cruzada con este identificador. Se recomienda verificar la documentacion oficial de cada familia antes de establecer cualquier comparacion.
@@ -103,5 +103,5 @@ No se ha encontrado en la busqueda web ningun modelo comparable ni evaluacion cr
 
 ## Enlaces
 
-- HuggingFace (repositorio principal, acceso gated): https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5
+- Hugging Face (repositorio principal, acceso gated): https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Core-CMT-EHRDQ-CT-SFT-LR-1en5
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo, su autor ni su dominio de aplicacion. Los enlaces recuperados (definiciones del termino "hab" en diccionarios franceses, una cuenta de Instagram de una libreria y una pagina de desambiguacion de Wikipedia) no guardan relacion con el modelo y se omiten por no aportar informacion tecnica.

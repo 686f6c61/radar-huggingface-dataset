@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NICHOLASYNY/random-contrastive` es un repositorio de HuggingFace publicado por el usuario NICHOLASYNY que contiene una implementación funcional de un backbone Swin Transformer (variante `swin_t`) orientada a aprendizaje contrastivo. El repositorio no distribuye un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente en la model card como un checkpoint de inicialización válido para *smoke tests*, y el propio autor indica que no se reclama ninguna puntuación de benchmark.
+`NICHOLASYNY/random-contrastive` es un repositorio de Hugging Face publicado por el usuario NICHOLASYNY que contiene una implementación funcional de un backbone Swin Transformer (variante `swin_t`) orientada a aprendizaje contrastivo. El repositorio no distribuye un modelo entrenado: el fichero `model.safetensors` se presenta explícitamente en la model card como un checkpoint de inicialización válido para *smoke tests*, y el propio autor indica que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, de ingeniería y reproducibilidad, no de rendimiento. Incluye `pipeline.py` como artefacto principal con un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule de warmup constante). La configuración declarada combina atención de tipo flash, fusión mediante descomposición de Tucker, activación ReLU y normalización por lotes sobre una escala etiquetada como *xlarge*.
 
@@ -88,5 +88,5 @@ La diferencia funcional relevante no es de escala, sino de estado: los tres alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NICHOLASYNY/random-contrastive
+- Modelo en Hugging Face: https://huggingface.co/NICHOLASYNY/random-contrastive
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

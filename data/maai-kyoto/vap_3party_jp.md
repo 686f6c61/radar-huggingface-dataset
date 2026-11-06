@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maai-kyoto/vap_3party_jp` es un repositorio de modelos publicado en HuggingFace por la organización maai-kyoto (Kyoto, Japón). En el momento de redactar esta ficha, la información disponible es mínima: la model card únicamente declara la licencia MIT y el repositorio no incluye documentación técnica, pesos ni especificaciones. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido artefactos de modelo (pesos, tokenizadores o configuraciones) o que estos no son accesibles públicamente.
+`maai-kyoto/vap_3party_jp` es un repositorio de modelos publicado en Hugging Face por la organización maai-kyoto (Kyoto, Japón). En el momento de redactar esta ficha, la información disponible es mínima: la model card únicamente declara la licencia MIT y el repositorio no incluye documentación técnica, pesos ni especificaciones. El tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido artefactos de modelo (pesos, tokenizadores o configuraciones) o que estos no son accesibles públicamente.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación. El identificador del repositorio sugiere, sin confirmación por parte del autor, un modelo relacionado con la proyección de actividad de voz ("vap") en conversaciones de tres participantes ("3party") en japonés ("jp"), una línea de trabajo habitual en el laboratorio maai de la Universidad de Kioto centrada en el análisis de turnos de palabra. Esta interpretación es una hipótesis basada en la nomenclatura y no debe tomarse como especificación verificada.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maai-kyoto/vap_3party_jp
+- Hugging Face: https://huggingface.co/maai-kyoto/vap_3party_jp
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

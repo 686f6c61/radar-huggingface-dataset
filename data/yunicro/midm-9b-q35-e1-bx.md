@@ -91,10 +91,10 @@ No hay mediciones de MiDM en DeepSWE ni en Terminal-Bench local: el autor indica
 
 | Modelo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiDM-9B-q35-e1-bx (este) | 9B (base) + LoRA | 4.096 tokens | Typed Decisions 79,30 %; JevBench hard 54,05 %; DeepSWE 81,58 % | Apache-2.0 (adaptador y código) | HuggingFace, 118 descargas |
+| MiDM-9B-q35-e1-bx (este) | 9B (base) + LoRA | 4.096 tokens | Typed Decisions 79,30 %; JevBench hard 54,05 %; DeepSWE 81,58 % | Apache-2.0 (adaptador y código) | Hugging Face, 118 descargas |
 | MiDM 4B (release original del mismo autor) | 4B | No disponible en detalle | Typed Decisions 78,85 %; Kev 79,84 %; JevBench hard 45,95 %; Python hard80 28,75 % | Apache-2.0 | Disponible según el autor |
 | Qwen3-4B con razonamiento solo | 4B | No disponible | 81,82 % en JevBench público (231), superior al router de 79,65 % | No disponible en la información | Uso local citado por el autor |
-| Qwen3.5-9B-Base (modelo base sin adaptar) | 9B | No disponible | Sin medición publicada en esta información para estas suites | Términos propios del modelo base | HuggingFace |
+| Qwen3.5-9B-Base (modelo base sin adaptar) | 9B | No disponible | Sin medición publicada en esta información para estas suites | Términos propios del modelo base | Hugging Face |
 | Verificador DeepSWE de CLM (referencia) | No disponible | No disponible | Reproducido al 81,58 % por MiDM 9B | No disponible | Artefactos de replay citados |
 
 La comparación directa más informativa es la del propio autor: el salto de 4B a 9B aporta entre +0,45 y +8,1 puntos según la suite, mientras que un Qwen3-4B con razonamiento supera al enrutador aprendido en JevBench público, lo que sugiere que la ventaja del enfoque no es uniforme.
@@ -114,7 +114,7 @@ La comparación directa más informativa es la del propio autor: el salto de 4B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx
+- Modelo en Hugging Face: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx
 - Revisión de pesos v0.2.0: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/tree/v0.2.0
 - Repositorio de código: https://github.com/YeoHoonYun/midm-decision-models
 - Release v0.2.0 (código y evidencia completa): https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0

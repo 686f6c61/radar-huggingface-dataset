@@ -16,7 +16,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta una tecnica poco co
 | Parametros totales | 119.602.003.859 (~119,6 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible (el entrenamiento uso `sequence_len: 8192`; las 70 muestras mas largas, de hasta 12.087 tokens, se descartaron) |
-| Tipos de cuantizacion | Expertos enrutados en NVFP4 (ModelOpt 0.46.0); resto de tensores en bf16; tabla PLE en FP8 E4M3; etiqueta de HuggingFace "8-bit"; no hay versiones GGUF ni AWQ/GPTQ publicadas |
+| Tipos de cuantizacion | Expertos enrutados en NVFP4 (ModelOpt 0.46.0); resto de tensores en bf16; tabla PLE en FP8 E4M3; etiqueta de Hugging Face "8-bit"; no hay versiones GGUF ni AWQ/GPTQ publicadas |
 | Idiomas soportados | no disponible |
 | Licencia | `qwen-community-license-1.0` (metadatos en conflicto: el README del origen declara Apache-2.0 y el fichero `LICENSE` incluido es la Qwen Community License 1.0) |
 | Formato de pesos | safetensors (checkpoint ModelOpt NVFP4, shards `model*.safetensors` y `layer-*-experts-*.safetensors`), cargable con `transformers`; 296.475 tensores |
@@ -106,11 +106,11 @@ La comparacion cuantitativa con alternativas de otro fabricante (por ejemplo, ot
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Shifusen/Qwen3.8-Flash-Next-KefkaFT-NVFP4
+- Checkpoint en Hugging Face: https://huggingface.co/Shifusen/Qwen3.8-Flash-Next-KefkaFT-NVFP4
 - Modelo base directo: https://huggingface.co/jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4
 - Version abliterated intermedia: https://huggingface.co/OrcaRouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Dataset de SFT: https://huggingface.co/datasets/Shifusen/kefka-sft
 - Fork de SGLang usado para servir el base: https://github.com/jpezzulli/sglang-rtxpro6000
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su linaje; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con su linaje; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

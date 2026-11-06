@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mpvr/autism-qwen3-1.7b` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B-Base, publicado por el usuario Mpvr en HuggingFace. Se trata de un modelo de generacion de texto de tipo causal, desarrollado sobre la arquitectura transformer densa de la familia Qwen3, con 2.031.739.904 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere un ajuste orientado a contenido o conversacion relacionada con el autismo, aunque la model card no documenta ni el dataset de ajuste ni el proceso de entrenamiento especifico.
+`Mpvr/autism-qwen3-1.7b` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B-Base, publicado por el usuario Mpvr en Hugging Face. Se trata de un modelo de generacion de texto de tipo causal, desarrollado sobre la arquitectura transformer densa de la familia Qwen3, con 2.031.739.904 parametros totales segun los pesos en safetensors. El nombre del repositorio sugiere un ajuste orientado a contenido o conversacion relacionada con el autismo, aunque la model card no documenta ni el dataset de ajuste ni el proceso de entrenamiento especifico.
 
 El modelo hereda las caracteristicas tecnicas del Qwen3-1.7B original: 28 capas, atencion con GQA (16 cabezas para Q y 8 para KV), una longitud de contexto de 32.768 tokens y soporte para modos de razonamiento (thinking) y no razonamiento (non-thinking) conmutables. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio tiene un tamano de 4,1 GB y cuenta con 28 descargas y 0 likes en el momento de la consulta.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mpvr/autism-qwen3-1.7b | 2,03 B | 32.768 | Apache 2.0 | HuggingFace (28 descargas) | Fine-tune comunitario sin benchmarks publicados |
-| Qwen/Qwen3-1.7B | 1,7 B (1,4 B no embedding) | 32.768 | Apache 2.0 | HuggingFace, oficial | Modelo base con benchmarks publicados por Qwen |
-| Qwen/Qwen3-1.7B-Base | 1,7 B | 32.768 | Apache 2.0 | HuggingFace, oficial | Version base preentrenada, sin postentrenamiento |
-| Modelos de ~2 B de otras familias (p. ej., Llama 3.2 1B, Gemma 2 2B) | 1-2 B | 8.192-131.072 | Licencias variables | HuggingFace | Alternativas de tamano similar; no se dispone de comparacion de rendimiento con este fine-tune |
+| Mpvr/autism-qwen3-1.7b | 2,03 B | 32.768 | Apache 2.0 | Hugging Face (28 descargas) | Fine-tune comunitario sin benchmarks publicados |
+| Qwen/Qwen3-1.7B | 1,7 B (1,4 B no embedding) | 32.768 | Apache 2.0 | Hugging Face, oficial | Modelo base con benchmarks publicados por Qwen |
+| Qwen/Qwen3-1.7B-Base | 1,7 B | 32.768 | Apache 2.0 | Hugging Face, oficial | Version base preentrenada, sin postentrenamiento |
+| Modelos de ~2 B de otras familias (p. ej., Llama 3.2 1B, Gemma 2 2B) | 1-2 B | 8.192-131.072 | Licencias variables | Hugging Face | Alternativas de tamano similar; no se dispone de comparacion de rendimiento con este fine-tune |
 
 La comparacion directa de rendimiento no es posible porque el fine-tune no publica metricas. Frente al Qwen3-1.7B oficial, la diferencia principal es la ausencia de documentacion y evaluacion; frente a modelos de otras familias, la ventaja es la licencia Apache 2.0 y el contexto de 32.768 tokens.
 
@@ -85,7 +85,7 @@ La comparacion directa de rendimiento no es posible porque el fine-tune no publi
 
 ## Enlaces
 
-- Repositorio HuggingFace del fine-tune: https://huggingface.co/Mpvr/autism-qwen3-1.7b
+- Repositorio Hugging Face del fine-tune: https://huggingface.co/Mpvr/autism-qwen3-1.7b
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo Qwen3-1.7B (instruct): https://huggingface.co/Qwen/Qwen3-1.7B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

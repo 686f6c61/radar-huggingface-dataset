@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017, publicado por el usuario amazpurple en HuggingFace. Se trata de una version con la direccion de rechazo ablacionada (abliterated) generada mediante la herramienta OBLITERATUS con el metodo failspy, que elimina la tendencia del modelo original a declinar peticiones. El modelo base es un transformer de tipo mezcla de expertos (MoE) desarrollado por DeepSeek, con aproximadamente 754.600 millones de parametros totales segun los pesos en safetensors.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017, publicado por el usuario amazpurple en Hugging Face. Se trata de una version con la direccion de rechazo ablacionada (abliterated) generada mediante la herramienta OBLITERATUS con el metodo failspy, que elimina la tendencia del modelo original a declinar peticiones. El modelo base es un transformer de tipo mezcla de expertos (MoE) desarrollado por DeepSeek, con aproximadamente 754.600 millones de parametros totales segun los pesos en safetensors.
 
 El modelo conserva la arquitectura y capacidades del original, pero modifica su comportamiento de seguridad: el indice de rechazo cae del 81,62% al 4,30% en el corpus de evaluacion de OBLITERATUS, mientras que la asistencia perjudicial sube del 10,38% al 78,28%. La divergencia KL respecto al original es de 0,1305 nats, lo que indica un cambio moderado en la distribucion de salida. La coherencia y la capacidad se mantienen al 100% segun las comprobaciones del autor.
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amazpurple/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/amazpurple/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del metodo (provenance): https://huggingface.co/amazpurple/DeepSeek-V4.1-Flash-1017-obliterated/blob/main/winner-recovery-provenance.json

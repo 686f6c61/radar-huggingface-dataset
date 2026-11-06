@@ -91,7 +91,7 @@ La comparativa es aproximada: no se dispone de benchmarks del fine-tune en geez,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3-VL-4B-geez-Base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3-VL-4B-geez-Base-GGUF
 - Modelo base: https://huggingface.co/NaolBM/qwen3-VL-4B-geez-Base
 - Pagina de descargas del autor: https://hf.tst.eu/model#qwen3-VL-4B-geez-Base-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

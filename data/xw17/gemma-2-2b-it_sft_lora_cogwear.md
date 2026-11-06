@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-2-2b-it_SFT_lora_cogwear` es un repositorio de HuggingFace publicado por el usuario xw17 que, por su nomenclatura, corresponde a un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `gemma-2-2b-it` de Google DeepMind. El sufijo "cogwear" sugiere un dominio de especializacion concreto, presumiblemente vinculado a tecnologia vestible o a un conjunto de datos interno con ese nombre, aunque el autor no lo documenta en ningun momento.
+`xw17/gemma-2-2b-it_SFT_lora_cogwear` es un repositorio de Hugging Face publicado por el usuario xw17 que, por su nomenclatura, corresponde a un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `gemma-2-2b-it` de Google DeepMind. El sufijo "cogwear" sugiere un dominio de especializacion concreto, presumiblemente vinculado a tecnologia vestible o a un conjunto de datos interno con ese nombre, aunque el autor no lo documenta en ningun momento.
 
-La model card incluida es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con pesos de adaptador LoRA y no con los pesos completos del modelo base en precision bf16, que rondarian los 5 GB.
+La model card incluida es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con pesos de adaptador LoRA y no con los pesos completos del modelo base en precision bf16, que rondarian los 5 GB.
 
 Su relevancia es limitada en el estado actual: se trata de un artefacto de investigacion sin documentacion, sin metricas publicadas y con cero descargas y cero "likes" en el momento de la consulta. Resulta util unicamente como ejemplo de flujo de trabajo de ajuste fino con PEFT sobre la familia Gemma 2, no como modelo listo para produccion.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada en el estado actual: se trata de un artefacto de inves
 
 No hay informacion publicada por el autor sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. La model card no especifica regimen de precision (fp32, fp16 o bf16), numero de pasos, tasa de aprendizaje, rango de LoRA, modulos objetivo ni composicion del dataset "cogwear". Tampoco se documenta si hubo una fase posterior de alineacion mediante RLHF o DPO, ni si el ajuste se realizo sobre la version instruct del modelo base.
 
-La unica evidencia tecnica disponible es indirecta. El nombre del repositorio indica SFT sobre `gemma-2-2b-it`, el tamano de 0,1 GB apunta a un adaptador LoRA en lugar de pesos completos, y el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de aprendizaje automatico citado en la plantilla de HuggingFace, no a un paper propio del modelo. Por tanto, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no debe utilizarse como base para decisiones tecnicas.
+La unica evidencia tecnica disponible es indirecta. El nombre del repositorio indica SFT sobre `gemma-2-2b-it`, el tamano de 0,1 GB apunta a un adaptador LoRA en lugar de pesos completos, y el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de aprendizaje automatico citado en la plantilla de Hugging Face, no a un paper propio del modelo. Por tanto, cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y no debe utilizarse como base para decisiones tecnicas.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se dispone de datos propios del modelo (benchmarks, contexto, licencia) que p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| xw17/gemma-2-2b-it_SFT_lora_cogwear | no disponible (adaptador sobre Gemma 2 2B) | no disponible | no disponible | HuggingFace, 0 descargas | model card vacia |
-| google/gemma-2-2b-it | 2.610 millones | 8.192 tokens | Terminos de uso de Gemma | HuggingFace | extensa |
-| meta-llama/Llama-3.2-3B-Instruct | 3.210 millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | extensa |
-| Qwen/Qwen2.5-3B-Instruct | 3.090 millones | 32.768 tokens | Apache 2.0 | HuggingFace | extensa |
+| xw17/gemma-2-2b-it_SFT_lora_cogwear | no disponible (adaptador sobre Gemma 2 2B) | no disponible | no disponible | Hugging Face, 0 descargas | model card vacia |
+| google/gemma-2-2b-it | 2.610 millones | 8.192 tokens | Terminos de uso de Gemma | Hugging Face | extensa |
+| meta-llama/Llama-3.2-3B-Instruct | 3.210 millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | extensa |
+| Qwen/Qwen2.5-3B-Instruct | 3.090 millones | 32.768 tokens | Apache 2.0 | Hugging Face | extensa |
 
 Los datos de los tres modelos alternativos provienen de su documentacion publica y se incluyen solo como referencia de categoria; no implican ninguna comparacion de rendimiento con el modelo evaluado.
 
@@ -97,7 +97,7 @@ Los datos de los tres modelos alternativos provienen de su documentacion publica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_cogwear
+- Repositorio Hugging Face: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_cogwear
 - Modelo base presumiblemente utilizado: https://huggingface.co/google/gemma-2-2b-it
 - Paper citado en el tag del repositorio (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact

@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chia-Mu-Lab/REP-models
+- Repositorio Hugging Face: https://huggingface.co/Chia-Mu-Lab/REP-models
 - Paper arXiv: https://arxiv.org/abs/2606.00642
 - Código: https://github.com/0x-yuan/REP
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chia-Mu-Lab/REP-datasets

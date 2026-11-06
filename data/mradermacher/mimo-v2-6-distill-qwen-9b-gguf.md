@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF publicadas por el usuario mradermacher a partir del modelo base XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, alojado en la organización XiaomiMiMo de HuggingFace. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión de pesos a GGUF (convert_type: hf) destinada a inferencia local con la familia de herramientas llama.cpp y compatibles.
+MiMo-V2.6-Distill-Qwen-9B-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF publicadas por el usuario mradermacher a partir del modelo base XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, alojado en la organización XiaomiMiMo de Hugging Face. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión de pesos a GGUF (convert_type: hf) destinada a inferencia local con la familia de herramientas llama.cpp y compatibles.
 
 El modelo base tiene 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), según los datos reales de los tensores en safetensors, y el nombre sugiere un proceso de destilación sobre una arquitectura de la familia Qwen, aunque esto no se confirma de forma explícita en la información disponible. El repositorio ocupa 18,5 GB e incluye trece variantes de cuantización, desde f16 sin pérdida hasta Q2_K.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es fundamentalmente práctica: permite ejecutar un m
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura del modelo base. Los metadatos de la conversión indican únicamente `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe el proceso de cuantización (conversión desde pesos HuggingFace a GGUF con tensores cuantizados) pero no la topología de red, el número de capas, las cabezas de atención ni el mecanismo de atención empleado. Tampoco se documenta si se trata de un transformer denso convencional, un modelo con atención lineal o una arquitectura híbrida.
+La información disponible no detalla la arquitectura del modelo base. Los metadatos de la conversión indican únicamente `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe el proceso de cuantización (conversión desde pesos Hugging Face a GGUF con tensores cuantizados) pero no la topología de red, el número de capas, las cabezas de atención ni el mecanismo de atención empleado. Tampoco se documenta si se trata de un transformer denso convencional, un modelo con atención lineal o una arquitectura híbrida.
 
 Respecto al entrenamiento, no hay información sobre el volumen de tokens, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. El sufijo "Distill" en el nombre apunta a un proceso de destilación de conocimiento, presumiblemente desde un modelo mayor hacia este de 8,95B, pero se desconoce el profesor utilizado, la metodología y los datos de destilación. Tampoco hay datos sobre decodificación especulativa, ventanas de atención deslizante u otras innovaciones técnicas.
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento del modelo evaluado que permitan una comparación de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B (GGUF) | 8,95B | no disponible | no disponible | HuggingFace (mradermacher) |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos, extensible con YaRN | Apache 2.0 | HuggingFace, Ollama, vLLM |
-| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Ollama, vLLM |
-| Gemma-2-9B-it | 9,2B | 8.192 tokens | Gemma Terms of Use | HuggingFace, Ollama |
+| MiMo-V2.6-Distill-Qwen-9B (GGUF) | 8,95B | no disponible | no disponible | Hugging Face (mradermacher) |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos, extensible con YaRN | Apache 2.0 | Hugging Face, Ollama, vLLM |
+| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Ollama, vLLM |
+| Gemma-2-9B-it | 9,2B | 8.192 tokens | Gemma Terms of Use | Hugging Face, Ollama |
 
 La comparación de rendimiento entre estos modelos y el aquí descrito no puede establecerse con la información disponible. Tampoco se puede confirmar que compartan tokenizador o plantilla de prompt, factor determinante al sustituir un modelo por otro en producción.
 

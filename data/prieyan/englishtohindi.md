@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prieyan/EnglishToHindi es un pequeño modelo de traducción automática neuronal (SLM, por sus siglas en inglés) que traduce frases del inglés al hindi. Lo desarrolla el autor Prieyan y está publicado en HuggingFace. Se trata de un transformer encoder-decoder clásico, basado en la arquitectura "Attention Is All You Need", entrenado desde cero —sin pesos preentrenados— sobre un corpus paralelo de aproximadamente 2.000 frases inglés-hindi. El modelo tiene 6,55 millones de parámetros, una longitud de contexto máxima de 64 tokens y un vocabulario BPE compartido de 4.000 subpalabras.
+Prieyan/EnglishToHindi es un pequeño modelo de traducción automática neuronal (SLM, por sus siglas en inglés) que traduce frases del inglés al hindi. Lo desarrolla el autor Prieyan y está publicado en Hugging Face. Se trata de un transformer encoder-decoder clásico, basado en la arquitectura "Attention Is All You Need", entrenado desde cero —sin pesos preentrenados— sobre un corpus paralelo de aproximadamente 2.000 frases inglés-hindi. El modelo tiene 6,55 millones de parámetros, una longitud de contexto máxima de 64 tokens y un vocabulario BPE compartido de 4.000 subpalabras.
 
 Su relevancia es principalmente didáctica y experimental: el autor implementa desde cero el tokenizador, el modelo, el entrenamiento y las métricas (BLEU y chrF) sin depender de frameworks de alto nivel. No se publican pesos del modelo en el repositorio, solo el código fuente y las instrucciones para entrenarlo. Los resultados de traducción son bajos (BLEU de 6,90 en beam search), algo que el propio autor reconoce abiertamente como consecuencia del corpus extremadamente reducido. Aun así, el proyecto resulta útil como referencia de implementación limpia de un transformer encoder-decoder para fines educativos o de prototipado.
 
@@ -81,4 +81,4 @@ No se dispone de modelos comparables en el mismo rango de tamaño (6,55 M de par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Prieyan/EnglishToHindi
+- Repositorio en Hugging Face: https://huggingface.co/Prieyan/EnglishToHindi

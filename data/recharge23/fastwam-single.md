@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastWAM-single es un repositorio del usuario Recharge23 destinado a alojar el ajuste fino de cinco politicas independientes para el brazo robotico Franka (tareas Task4, Task6, Task7, Task8 y Task9), partiendo de un mismo checkpoint publicado de Fast-WAM. El pipeline declarado en HuggingFace es "robotics" y las etiquetas del repositorio son robotics, fastwam, franka y lora. En el momento de redactar esta ficha no se ha publicado ningun peso ajustado: el repositorio es un espacio de preparacion en el que se documentan el plan de entrenamiento, los identificadores exactos del modelo base y las condiciones de comparabilidad.
+FastWAM-single es un repositorio del usuario Recharge23 destinado a alojar el ajuste fino de cinco politicas independientes para el brazo robotico Franka (tareas Task4, Task6, Task7, Task8 y Task9), partiendo de un mismo checkpoint publicado de Fast-WAM. El pipeline declarado en Hugging Face es "robotics" y las etiquetas del repositorio son robotics, fastwam, franka y lora. En el momento de redactar esta ficha no se ha publicado ningun peso ajustado: el repositorio es un espacio de preparacion en el que se documentan el plan de entrenamiento, los identificadores exactos del modelo base y las condiciones de comparabilidad.
 
 El punto de partida es `libero_uncond_2cam224.pt`, del repositorio yuanty/fastwam, en la revision `8eaceeb24c3cc92ff2a9c9a9d266a4941b836705`. Se trata de la variante Fast-WAM Base (no la variante opcional IDM) y ya esta entrenada sobre LIBERO, por lo que el autor advierte explicitamente que estos experimentos no deben describirse como un entrenamiento desde una inicializacion general solo de video. Cada politica se planifica con 5.000 actualizaciones de optimizador, salvo LingBot Task4, que mantiene un objetivo de 15.000 pasos.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada solo permite referenciar, dentro de 
 | Referencia | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Recharge23/FastWAM-single | Repositorio objeto de esta ficha | no disponible | no disponible | no disponible | Solo planificacion, sin pesos |
-| yuanty/fastwam (base `libero_uncond_2cam224.pt`) | Inicializacion comun | no disponible | no disponible | no disponible | Publicado en HuggingFace |
+| yuanty/fastwam (base `libero_uncond_2cam224.pt`) | Inicializacion comun | no disponible | no disponible | no disponible | Publicado en Hugging Face |
 | Especialistas JAM | Termino de comparacion citado | no disponible | no disponible | no disponible | No detallado en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -102,9 +102,9 @@ No disponible. La informacion proporcionada solo permite referenciar, dentro de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Recharge23/FastWAM-single
+- Repositorio en Hugging Face: https://huggingface.co/Recharge23/FastWAM-single
 - Repositorio relacionado de entregas LingBot-VA: https://huggingface.co/Recharge23/LingbotVA-single
-- Modelo base en HuggingFace: https://huggingface.co/yuanty/fastwam/tree/8eaceeb24c3cc92ff2a9c9a9d266a4941b836705
+- Modelo base en Hugging Face: https://huggingface.co/yuanty/fastwam/tree/8eaceeb24c3cc92ff2a9c9a9d266a4941b836705
 - Codigo oficial de FastWAM (commit fijado): https://github.com/yuantianyuan01/FastWAM/tree/7faa71108368fbb3b6885649f112af607427a2d4
 - Paper o blog oficial de Fast-WAM: no disponible en la informacion proporcionada
 - Demos o espacios de prueba: no disponible en la informacion proporcionada

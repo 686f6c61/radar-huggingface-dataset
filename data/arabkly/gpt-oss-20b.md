@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-20b (esta ficha) | 20,9B | 3,6B | no disponible | Apache 2.0 | HuggingFace, Ollama, LM Studio, vLLM |
-| gpt-oss-120b | 117B | 5,1B | no disponible | Apache 2.0 | HuggingFace, vLLM, una GPU de 80 GB |
+| gpt-oss-20b (esta ficha) | 20,9B | 3,6B | no disponible | Apache 2.0 | Hugging Face, Ollama, LM Studio, vLLM |
+| gpt-oss-120b | 117B | 5,1B | no disponible | Apache 2.0 | Hugging Face, vLLM, una GPU de 80 GB |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion directa disponible en la informacion proporcionada es con gpt-oss-120b, la variante grande de la misma familia. No se dispone de datos de benchmarks ni de especificaciones de modelos de terceros para una comparativa mas amplia.

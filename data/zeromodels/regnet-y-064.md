@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RegNet-Y-064 (este) | ~64M | ConvNet con SE | No aplica | Apache-2.0 | HuggingFace, Keras 3 |
-| RegNet-X-064 | ~64M | ConvNet sin SE | No aplica | Apache-2.0 | HuggingFace, Keras 3 |
+| RegNet-Y-064 (este) | ~64M | ConvNet con SE | No aplica | Apache-2.0 | Hugging Face, Keras 3 |
+| RegNet-X-064 | ~64M | ConvNet sin SE | No aplica | Apache-2.0 | Hugging Face, Keras 3 |
 | ResNet-50 | ~25M | ConvNet residual | No aplica | Apache-2.0 (variantes) | Ampliamente disponible |
 | EfficientNet-B4 | ~19M | ConvNet con MBConv | No aplica | Apache-2.0 | Ampliamente disponible |
 
@@ -78,10 +78,10 @@ La comparativa se basa en arquitecturas similares de la misma época. RegNet-Y-0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/regnet-y-064
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/regnet-y-064
 - Modelo original de Facebook: https://huggingface.co/facebook/regnet-y-064
 - Paper "Designing Network Design Spaces": https://arxiv.org/abs/2003.13678
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels
 - Documentación de RegNet en ZeroModels: https://imvision12.github.io/ZeroModels/regnet/
-- Colección de variantes RegNet en HuggingFace: https://huggingface.co/collections/zeromodels/regnet-6a9270a4e723a861ea988d0b
+- Colección de variantes RegNet en Hugging Face: https://huggingface.co/collections/zeromodels/regnet-6a9270a4e723a861ea988d0b
 - Documentación de Torchvision sobre RegNet: https://docs.pytorch.org/vision/main/models/regnet.html

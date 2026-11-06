@@ -85,8 +85,8 @@ Naija TTS se diferencia del modelo base Chatterbox por anadir cuatro lenguas nig
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Toadoum/naija-tts
+- Repositorio Hugging Face: https://huggingface.co/Toadoum/naija-tts
 - Pagina personal del autor: https://toadoum.github.io/
-- Datasets del autor en HuggingFace: https://huggingface.co/Toadoum/datasets
+- Datasets del autor en Hugging Face: https://huggingface.co/Toadoum/datasets
 - NCAIR1/N-ATLaS (proyecto relacionado de IA para lenguas africanas): https://huggingface.co/NCAIR1/N-ATLaS
 - YarnGPT (alternativa comercial de TTS nigeriano): https://www.yarngpt.ai/

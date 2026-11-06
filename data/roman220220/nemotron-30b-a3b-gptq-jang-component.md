@@ -114,7 +114,7 @@ No se dispone de comparaciones con modelos de otras familias y tamano similar de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-jang-component
+- Hugging Face: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-jang-component
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Lightning-30B-A3B
 - Repositorio del pipeline de cuantizacion GPTQ del autor: https://github.com/rromenskyi/quant-ternary
 - Documentacion de metodologia citada en la model card: `docs/session_findings_2026-09-11.md`, seccion 7q (dentro del repositorio anterior)

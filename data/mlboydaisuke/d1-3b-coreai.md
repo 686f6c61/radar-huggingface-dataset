@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlboydaisuke/d1-3B-CoreAI | Aprox. 3.000 millones | No disponible | No publicado; paridad fp32 max delta p 0,0039 (fp16) y 0,0197 (int8) | LFM Open License v1.0 | HuggingFace, formato `.aimodel` para Core AI |
-| LiquidAI/d1-3B | No disponible (base) | No disponible | No disponible | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM2.5-VL-3B | Aprox. 3.000 millones | No disponible | No disponible | No disponible | HuggingFace |
+| mlboydaisuke/d1-3B-CoreAI | Aprox. 3.000 millones | No disponible | No publicado; paridad fp32 max delta p 0,0039 (fp16) y 0,0197 (int8) | LFM Open License v1.0 | Hugging Face, formato `.aimodel` para Core AI |
+| LiquidAI/d1-3B | No disponible (base) | No disponible | No disponible | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM2.5-VL-3B | Aprox. 3.000 millones | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de ninguna de las tres referencias que permitan una comparacion cuantitativa de rendimiento. La diferencia funcional entre ellas es el contrato de salida: LFM2.5-VL-3B es un modelo vision-language generativo, d1-3B es su version post-entrenada como modelo de decision y d1-3B-CoreAI es el port de este ultimo al formato de ejecucion de Apple.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de ninguna de las tres referencias que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/d1-3B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/d1-3B-CoreAI
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Revision concreta del modelo base: https://huggingface.co/LiquidAI/d1-3B/tree/da1fe36a861f24690f27f622dca1d8688503d113
 - Modelo del que deriva el base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B

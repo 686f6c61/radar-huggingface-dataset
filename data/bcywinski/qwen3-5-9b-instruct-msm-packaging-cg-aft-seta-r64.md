@@ -79,9 +79,9 @@ El control no-MSM (LoRA fresca sobre el modelo instruct) se menciona en la model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setA-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setA-r64
 - Proyecto GitHub: https://github.com/cywinski/midtraining-generalisation
-- Dataset en HuggingFace: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setA
+- Dataset en Hugging Face: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setA
 - Pesos iniciales: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64
 - Paper de referencia citado en la model card: arXiv 2605.02087 (sin URL directa en la información proporcionada)
 - Búsqueda web: no se encontraron resultados relevantes adicionales.

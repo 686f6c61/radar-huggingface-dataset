@@ -62,6 +62,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_weightedavg_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-1k_2k_3k_weightedavg_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Paper del método Linear (arXiv 2203.05482)](https://arxiv.org/abs/2203.05482)

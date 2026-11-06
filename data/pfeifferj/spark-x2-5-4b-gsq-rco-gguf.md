@@ -139,7 +139,7 @@ Como referencia externa, el autor menciona **ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGU
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pfeifferj/Spark-X2.5-4B-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pfeifferj/Spark-X2.5-4B-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Paper de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
 - Paper de RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649

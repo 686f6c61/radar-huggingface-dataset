@@ -4,7 +4,7 @@
 
 Cortex-A 0.5 es un modelo de lenguaje autoregresivo latente (latent-AR) de aproximadamente 793 millones de parámetros, desarrollado por Pratyush Bhardwaj y publicado bajo licencia MIT. El modelo se entrena desde cero utilizando JAX/Flax y combina un planificador profundo (deep planner) que opera sobre fragmentos de 5 tokens con un escritor autorregresivo superficial (shallow AR writer). El backbone latente condiciona cada token generado, lo que permite una planificación a más largo plazo que los modelos autorregresivos convencionales.
 
-La relevancia de este modelo radica en su arquitectura experimental: en lugar de predecir token a token de forma puramente autoregresiva, introduce una capa de razonamiento latente que organiza la generación en bloques, lo que podría mejorar la coherencia global del texto. Está pensado como un proyecto de investigación y demostración técnica, con un espacio de HuggingFace que permite probarlo en CPU. No se han publicado especificaciones detalladas de entrenamiento ni benchmarks en la información disponible.
+La relevancia de este modelo radica en su arquitectura experimental: en lugar de predecir token a token de forma puramente autoregresiva, introduce una capa de razonamiento latente que organiza la generación en bloques, lo que podría mejorar la coherencia global del texto. Está pensado como un proyecto de investigación y demostración técnica, con un espacio de Hugging Face que permite probarlo en CPU. No se han publicado especificaciones detalladas de entrenamiento ni benchmarks en la información disponible.
 
 ## Especificaciones técnicas
 

@@ -119,8 +119,8 @@ Prueba de comportamiento (20 casos):
 
 | Modelo | Parametros | Contexto | Text-to-SQL (ejecucion case-insensitive) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vertex-Core SQL 4B v3 | 4B | 4096 recomendado | 78,9 % | Apache 2.0 | GGUF en HuggingFace (0 descargas al publicar la ficha) |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | no disponible | no disponible (modelo generalista, no especializado en SQL) | Apache 2.0 | HuggingFace |
+| Vertex-Core SQL 4B v3 | 4B | 4096 recomendado | 78,9 % | Apache 2.0 | GGUF en Hugging Face (0 descargas al publicar la ficha) |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | no disponible | no disponible (modelo generalista, no especializado en SQL) | Apache 2.0 | Hugging Face |
 | Modelo de codigo 7B sin fine-tune (referencia del autor) | 7B | no disponible | 76,8 % | no disponible | no disponible (identificado solo como "7B code model") |
 
 La referencia de 7B sin fine-tune no se identifica con nombre en la informacion disponible; el autor solo indica que es un modelo de codigo de 7B no ajustado. No se han encontrado en la informacion proporcionada otras alternativas especializadas en text-to-SQL con las que comparar directamente.
@@ -141,7 +141,7 @@ La referencia de 7B sin fine-tune no se identifica con nombre en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Denisijcu/vertex-core-sql-4b-v3-GGUF
+- Hugging Face: https://huggingface.co/Denisijcu/vertex-core-sql-4b-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Repositorio del proyecto (scripts `08_eval.py` y `09_behavior_test.py` mencionados por el autor): no disponible (no se incluye URL en la informacion proporcionada)

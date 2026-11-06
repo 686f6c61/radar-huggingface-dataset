@@ -75,9 +75,9 @@ El autor advierte que cada cifra procede de una única ejecución y que debe tra
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| intel-ai/GLM-5.3-MXFP4-AutoRound | 753,3 B | no disponible | MXFP4 W4A4, grupo 32 | glm-5.3 | HuggingFace, 403,34 GB |
-| RedHatAI/GLM-5.3-MXFP4 | no disponible | no disponible | MXFP4, misma cobertura de módulos | no disponible | HuggingFace, 403,37 GB de repo |
-| zai-org/GLM-5.3 (base) | no disponible en esta ficha | no disponible | BF16 | glm-5.3 | HuggingFace, 756 GB |
+| intel-ai/GLM-5.3-MXFP4-AutoRound | 753,3 B | no disponible | MXFP4 W4A4, grupo 32 | glm-5.3 | Hugging Face, 403,34 GB |
+| RedHatAI/GLM-5.3-MXFP4 | no disponible | no disponible | MXFP4, misma cobertura de módulos | no disponible | Hugging Face, 403,37 GB de repo |
+| zai-org/GLM-5.3 (base) | no disponible en esta ficha | no disponible | BF16 | glm-5.3 | Hugging Face, 756 GB |
 
 La diferencia principal frente a RedHatAI es de procedimiento: esta compilación usa auto-round con `--model_free` RTN y un parche para igualar la cobertura de módulos; el tamaño de pesos coincide byte a byte (403.337.136.288 bytes). Frente al modelo base, la ventaja es la reducción a aproximadamente el 53 % del peso, a costa del error introducido por la cuantización de pesos y activaciones.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a RedHatAI es de procedimiento: esta compilación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/GLM-5.3-MXFP4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/GLM-5.3-MXFP4-AutoRound
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Artefacto de referencia: https://huggingface.co/RedHatAI/GLM-5.3-MXFP4
 - Repositorio de auto-round: https://github.com/intel/auto-round

@@ -86,7 +86,7 @@ No se dispone de datos verificables para establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gwd200/minimax-h3-weights
+- Repositorio en Hugging Face: https://huggingface.co/gwd200/minimax-h3-weights
 - Repositorio upstream del modelo de difusión y los VAE: https://huggingface.co/Comfy-Org/MiniMax-H3 (revisión `e5eb578a89295337b8ff433a035929ce0279e0b6`)
 - Repositorio upstream del encoder texto/visión (acceso restringido): https://huggingface.co/sasoriiii/test-v2 (revisión `c5f79b74854c10757f31b771a887c818f670d236`)
 - Registro de despliegue privado asociado: https://huggingface.co/gwd200/minimax-h3-tests

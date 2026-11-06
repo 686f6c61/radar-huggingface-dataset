@@ -61,7 +61,7 @@ Además, la tasa de verbatim (valores emitidos que son subcadenas del contexto) 
 - Al ser un adaptador LoRA sobre un modelo base de 350M parámetros, la inferencia es ligera.
 - VRAM estimada: el modelo base en FP16 ocupa aproximadamente 700 MB; el adaptador añade una cantidad mínima. Es ejecutable en GPUs con 2-4 GB de VRAM, e incluso en CPU con razonable rendimiento.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 6GB o superior, RTX 2060, etc.) o GPUs de datacenter como T4.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede cargarse con Transformers y PEFT para aplicar el adaptador. También es compatible con vLLM (si se fusiona el adaptador) o llama.cpp si se convierte a GGUF, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede cargarse con Transformers y PEFT para aplicar el adaptador. También es compatible con vLLM (si se fusiona el adaptador) o llama.cpp si se convierte a GGUF, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado mediciones; dado el tamaño reducido, se espera una latencia de milisegundos por petición en GPU y de pocos segundos en CPU.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - rafacalaba/lfm2-provenance-smoke](https://huggingface.co/rafmacalaba/lfm2-provenance-smoke)
+- [Hugging Face - rafacalaba/lfm2-provenance-smoke](https://huggingface.co/rafmacalaba/lfm2-provenance-smoke)
 - Modelo base: `LiquidAI/LFM2.5-350M` (no se proporciona enlace directo)
 - Dataset de entrenamiento: `rafmacalaba/data-use-provenance-sft` (no se proporciona enlace directo)

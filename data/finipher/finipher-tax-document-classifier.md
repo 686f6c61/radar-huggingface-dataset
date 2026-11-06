@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Finipher tax document classifier v1.0.0 es un clasificador de texto especializado en documentos fiscales y financieros de Estados Unidos, desarrollado por Finipher y publicado en HuggingFace. El modelo identifica el tipo de documento (W-2, 1098, 1099-INT, extracto hipotecario, nómina, extracto de corretaje, entre otros) a partir de los primeros 128 tokens del texto extraído del documento, cubriendo un total de 95 etiquetas.
+Finipher tax document classifier v1.0.0 es un clasificador de texto especializado en documentos fiscales y financieros de Estados Unidos, desarrollado por Finipher y publicado en Hugging Face. El modelo identifica el tipo de documento (W-2, 1098, 1099-INT, extracto hipotecario, nómina, extracto de corretaje, entre otros) a partir de los primeros 128 tokens del texto extraído del documento, cubriendo un total de 95 etiquetas.
 
 Técnicamente, se trata de una cabeza de clasificación ligera montada sobre un codificador MiniLM congelado (basado en sentence-transformers/all-MiniLM-L6-v2), con 22.719.761 parámetros en total. El repo incluye su propia copia del codificador, ya que la cabeza solo funciona con el encoder exacto con el que fue entrenada. El archivo `model.safetensors` contiene además una capa de salida para transacciones que este modelo ignora.
 
@@ -63,7 +63,7 @@ No hay comparación publicada con otros modelos (MMLU, HumanEval u otros benchma
 - VRAM estimada para inferencia: muy baja; con 22,7 M de parámetros en FP32 ocupa aproximadamente 90 MB, y en FP16 unos 45 MB. Cualquier GPU moderna es más que suficiente, y la inferencia en CPU es plenamente viable.
 - GPU recomendadas: no se requiere GPU dedicada; funciona en cualquier GPU de consumo (incluso integradas) o directamente en CPU.
 - Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) con amplio margen; también en entornos sin GPU.
-- Opciones de despliegue: carga directa con `transformers` + `safetensors` + `huggingface_hub` siguiendo el código de la model card (la cabeza es personalizada, así que no funciona con `AutoModelForSequenceClassification` estándar). También es compatible con servicios de inferencia de HuggingFace (Inference Endpoints) ejecutando el código custom. No hay evidencia de soporte directo en vLLM, llama.cpp, Ollama o TGI (formato safetensors de encoder BERT, sin GGUF publicado).
+- Opciones de despliegue: carga directa con `transformers` + `safetensors` + `huggingface_hub` siguiendo el código de la model card (la cabeza es personalizada, así que no funciona con `AutoModelForSequenceClassification` estándar). También es compatible con servicios de inferencia de Hugging Face (Inference Endpoints) ejecutando el código custom. No hay evidencia de soporte directo en vLLM, llama.cpp, Ollama o TGI (formato safetensors de encoder BERT, sin GGUF publicado).
 - Latencia y throughput: no disponible oficialmente; dado el tamaño del encoder y el límite de 128 tokens, se esperan latencias de milisegundos por documento en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No existen clasificadores públicos equivalentes específicos de documentos fisc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/finipher/finipher-tax-document-classifier
+- Modelo en Hugging Face: https://huggingface.co/finipher/finipher-tax-document-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/finipher/finipher-us-tax-document-classifier
 - Modelo base (encoder): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Paper, blog, demo o repositorio de código: no disponible

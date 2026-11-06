@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`remyxai/efficientvim_m3_dist.in1k` es un modelo de clasificación de imágenes publicado en HuggingFace por el autor `remyxai`. Está construido sobre la librería `timm` y distribuido en formato `safetensors`, con licencia Apache 2.0. El modelo tiene aproximadamente 18,2 millones de parámetros, lo que lo convierte en un modelo compacto, con un tamaño de repositorio de 0,1 GB. Su `pipeline_tag` es `image-classification`, lo que indica que su tarea principal es la asignación de etiquetas a imágenes.
+`remyxai/efficientvim_m3_dist.in1k` es un modelo de clasificación de imágenes publicado en Hugging Face por el autor `remyxai`. Está construido sobre la librería `timm` y distribuido en formato `safetensors`, con licencia Apache 2.0. El modelo tiene aproximadamente 18,2 millones de parámetros, lo que lo convierte en un modelo compacto, con un tamaño de repositorio de 0,1 GB. Su `pipeline_tag` es `image-classification`, lo que indica que su tarea principal es la asignación de etiquetas a imágenes.
 
 El nombre del modelo sugiere que se trata de una arquitectura eficiente de visión, posiblemente con destilación en ImageNet-1k, como indica el sufijo `.in1k`. Sin embargo, la model card no incluye documentación técnica detallada, y la búsqueda web no ha proporcionado información adicional. Por tanto, no se dispone de datos sobre la arquitectura exacta, los datos de entrenamiento, el tamaño de contexto ni los idiomas soportados. La ausencia de resultados de benchmarks y de métricas de rendimiento publicadas hace que su evaluación práctica deba realizarse de forma directa.
 
@@ -27,7 +27,7 @@ No se ha proporcionado información sobre la arquitectura interna en la model ca
 
 - Clasificación de imágenes: el modelo está diseñado para asignar una o varias categorías a una imagen de entrada, típica de la clasificación supervisada en visión por computador.
 - Integración con timm: al estar basado en la librería `timm`, puede cargarse y usarse fácilmente en entornos de aprendizaje profundo basados en PyTorch.
-- Compatibilidad con transformers: el repositorio incluye el tag `transformers`, por lo que podría integrarse con pipelines de HuggingFace para clasificación de imágenes.
+- Compatibilidad con transformers: el repositorio incluye el tag `transformers`, por lo que podría integrarse con pipelines de Hugging Face para clasificación de imágenes.
 - Sin soporte de tool calling ni agentes: al ser un modelo de clasificación de imágenes, no dispone de capacidades de generación de texto, razonamiento por pasos, ni de llamadas a funciones.
 - Sin capacidades multimodales de lenguaje: no se ha declarado soporte para entrada de texto, audio o generación de señales; su única entrada es visual.
 - Posible clasificación en 1000 clases de ImageNet: el sufijo `.in1k` sugiere un entrenamiento en ImageNet-1k, pero esto no está confirmado en la documentación.
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: con 18,2 millones de parámetros y pesos en FP32 (4 bytes por parámetro), la memoria para los pesos es aproximadamente de 72 MB. En FP16, se reduce a unos 36 MB. Añadiendo activaciones y buffers de inferencia, el consumo total típico será inferior a 200 MB.
 - GPU recomendadas: puede ejecutarse en cualquier GPU moderna, incluso en tarjetas de consumo como NVIDIA GTX 1050 o superiores. También puede funcionar en CPU con un rendimiento aceptable para lotes pequeños.
 - Compatibilidad con dispositivos edge: dado su bajo requisito de memoria, es viable para sistemas embebidos con aceleradores como NVIDIA Jetson o incluso dispositivos móviles mediante conversión a ONNX o TensorRT.
-- Opciones de despliegue: al estar disponible en `safetensors` y etiquetado con `timm`, puede cargarse con PyTorch y la librería `timm`. También es compatible con el pipeline de `transformers` de HuggingFace. No se dispone de información sobre soporte para vLLM, llama.cpp, Ollama o TGI, que son herramientas orientadas a modelos de lenguaje.
+- Opciones de despliegue: al estar disponible en `safetensors` y etiquetado con `timm`, puede cargarse con PyTorch y la librería `timm`. También es compatible con el pipeline de `transformers` de Hugging Face. No se dispone de información sobre soporte para vLLM, llama.cpp, Ollama o TGI, que son herramientas orientadas a modelos de lenguaje.
 - Latencia y throughput: no se han publicado datos medidos. Se espera una latencia baja en hardware moderno debido al reducido número de parámetros, pero no se pueden ofrecer cifras concretas sin una evaluación empírica.
 
 ## Comparativa con modelos similares
@@ -68,4 +68,4 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remyxai/efficientvim_m3_dist.in1k
+- Hugging Face: https://huggingface.co/remyxai/efficientvim_m3_dist.in1k

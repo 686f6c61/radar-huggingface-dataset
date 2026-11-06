@@ -4,7 +4,7 @@
 
 SmolVLA es un modelo visión-lenguaje-acción (VLA) compacto y eficiente diseñado para controlar robots manipuladores a partir de observaciones visuales y del estado de las articulaciones. El modelo aquí descrito, `JanPhilipp/smolvla_ttz_tools_jetson_test2`, es un ajuste fino (fine-tuning) del checkpoint base `lerobot/smolvla_base`, entrenado con la librería LeRobot y publicado por el usuario JanPhilipp. Su propósito concreto es ejecutar la tarea de recoger herramientas de una zona verde y depositarlas en una zona roja, sobre un brazo robótico de tipo `so_follower` con dos cámaras.
 
-Técnicamente se trata de un modelo de aproximadamente 450 millones de parámetros (450.046.176 según el fichero de pesos), distribuido en formato safetensors con un tamaño de repositorio de 1,2 GB bajo licencia Apache-2.0. El pipeline declarado en HuggingFace es `robotics`, y el modelo se apoya en el paper SmolVLA (arXiv:2506.01844) para el método de entrenamiento. Está pensado explícitamente para poder desplegarse en hardware de consumo, lo que lo hace relevante para laboratorios y equipos de robótica con presupuesto limitado.
+Técnicamente se trata de un modelo de aproximadamente 450 millones de parámetros (450.046.176 según el fichero de pesos), distribuido en formato safetensors con un tamaño de repositorio de 1,2 GB bajo licencia Apache-2.0. El pipeline declarado en Hugging Face es `robotics`, y el modelo se apoya en el paper SmolVLA (arXiv:2506.01844) para el método de entrenamiento. Está pensado explícitamente para poder desplegarse en hardware de consumo, lo que lo hace relevante para laboratorios y equipos de robótica con presupuesto limitado.
 
 La relevancia de esta ficha es doble: por un lado, ilustra el flujo completo de entrenamiento y publicación de políticas de imitación con LeRobot; por otro, sirve como ejemplo de ajuste fino de muy pocos pasos (100 pasos de entrenamiento) sobre un dataset pequeño (80 episodios, 69.819 fotogramas), lo que conviene tener en cuenta al evaluar su robustez en producción.
 
@@ -74,8 +74,8 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JanPhilipp/smolvla_ttz_tools_jetson_test2 | 450.046.176 | VLA ajustada para pick-and-place | Apache-2.0 | HuggingFace (0 descargas) | 100 pasos de entrenamiento, 80 episodios, sin evaluación publicada |
-| lerobot/smolvla_base | No disponible en la información proporcionada | VLA base | No disponible en la información proporcionada | HuggingFace | Modelo de partida del ajuste fino; arquitectura y método descritos en arXiv:2506.01844 |
+| JanPhilipp/smolvla_ttz_tools_jetson_test2 | 450.046.176 | VLA ajustada para pick-and-place | Apache-2.0 | Hugging Face (0 descargas) | 100 pasos de entrenamiento, 80 episodios, sin evaluación publicada |
+| lerobot/smolvla_base | No disponible en la información proporcionada | VLA base | No disponible en la información proporcionada | Hugging Face | Modelo de partida del ajuste fino; arquitectura y método descritos en arXiv:2506.01844 |
 | Otras políticas VLA de la misma categoría (por ejemplo, familias tipo OpenVLA o pi0) | No disponible | VLA | No disponible | No disponible | No se aportan cifras ni fuentes en la información disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanPhilipp/smolvla_ttz_tools_jetson_test2
+- Modelo en Hugging Face: https://huggingface.co/JanPhilipp/smolvla_ttz_tools_jetson_test2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/JanPhilipp/ttz_tools_merged_2
 - Visualización del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=JanPhilipp/ttz_tools_merged_2

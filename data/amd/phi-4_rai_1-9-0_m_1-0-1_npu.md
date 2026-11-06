@@ -6,7 +6,7 @@ Phi-4 es un modelo de lenguaje de Microsoft Research, distribuido en este caso p
 
 El modelo base Phi-4 es un transformer denso de aproximadamente 14.700 millones de parámetros, entrenado por Microsoft con un enfoque intensivo en datos sintéticos de alta calidad y razonamiento. Esta distribución de AMD no modifica los pesos en términos de capacidades, sino que los empaqueta para aprovechar la aceleración por NPU en equipos con chips de la familia Ryzen AI, lo que permite inferencia local con bajo consumo energético sin depender de una GPU dedicada.
 
-Su relevancia radica en que democratiza el despliegue de un modelo de razonamiento de tamaño medio en portátiles y mini-PC con hardware AMD reciente. El repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga, y su licencia es la del Phi-4 original (MIT para el modelo base, con matices en esta distribución; ver limitaciones).
+Su relevancia radica en que democratiza el despliegue de un modelo de razonamiento de tamaño medio en portátiles y mini-PC con hardware AMD reciente. El repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga, y su licencia es la del Phi-4 original (MIT para el modelo base, con matices en esta distribución; ver limitaciones).
 
 ## Especificaciones tecnicas
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Formato/plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-4 (Microsoft, original) | 14,7B | 16K | Safetensors, GPU/CPU | MIT | HuggingFace público |
-| Esta variante (AMD) | 14,7B | 16K | ONNX para NPU Ryzen AI | Other (gated) | HuggingFace con acceso restringido |
-| Qwen2.5-14B | 14,7B | 32K | Safetensors, GGUF | Apache 2.0 | HuggingFace público |
-| Llama 3.1 8B | 8B | 128K | Safetensors, GGUF | Llama 3.1 Community | HuggingFace público |
+| Phi-4 (Microsoft, original) | 14,7B | 16K | Safetensors, GPU/CPU | MIT | Hugging Face público |
+| Esta variante (AMD) | 14,7B | 16K | ONNX para NPU Ryzen AI | Other (gated) | Hugging Face con acceso restringido |
+| Qwen2.5-14B | 14,7B | 32K | Safetensors, GGUF | Apache 2.0 | Hugging Face público |
+| Llama 3.1 8B | 8B | 128K | Safetensors, GGUF | Llama 3.1 Community | Hugging Face público |
 
 La ventaja de esta variante es la aceleración por NPU en hardware AMD de consumo; su desventaja es el ecosistema cerrado (solo Ryzen AI), la licencia restrictiva y el acceso gated. Frente a Qwen2.5-14B o Llama 3.1 8B, ofrece menor contexto y menor flexibilidad de despliegue, pero un consumo energético potencialmente mejor en portátiles AMD.
 
 ## Limitaciones y advertencias
 
 - Licencia "other" heredada del Phi-4 original con condiciones adicionales de AMD; es imprescindible revisar los términos antes de uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede retrasar la descarga o impedirla en entornos automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede retrasar la descarga o impedirla en entornos automatizados.
 - Solo inglés según los metadatos; el rendimiento en castellano no está garantizado.
 - Contexto limitado a 16K tokens, inferior a alternativas contemporáneas de 32K o 128K.
 - Dependencia total del stack Ryzen AI y de la NPU; no es portable a GPU NVIDIA ni a CPU genérica sin reconversión.
@@ -86,7 +86,7 @@ La ventaja de esta variante es la aceleración por NPU en hardware AMD de consum
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/phi-4_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/phi-4_rai_1.9.0_m_1.0.1_npu
 - Modelo base Phi-4 (Microsoft): no disponible en la información proporcionada
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper de Phi-4: no disponible en la información proporcionada

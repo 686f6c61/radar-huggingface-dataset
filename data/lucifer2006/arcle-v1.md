@@ -100,6 +100,6 @@ No se dispone de comparaciones publicadas por el autor frente a otros modelos. C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucifer2006/Arcle-V1
+- Modelo en Hugging Face: https://huggingface.co/Lucifer2006/Arcle-V1
 - Perfil del autor: https://huggingface.co/Lucifer2006
 - Repositorio de scripts de entrenamiento de demostración: https://github.com/lucifertkod/ArcleIntelligence---Demo-Training-Script-Only

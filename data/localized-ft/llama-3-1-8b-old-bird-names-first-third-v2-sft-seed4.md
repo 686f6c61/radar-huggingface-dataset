@@ -76,7 +76,7 @@ La siguiente tabla compara el modelo con su base y con un modelo alternativo de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed4
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed4
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Referencia de despliegue en FriendliAI (modelo similar): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft

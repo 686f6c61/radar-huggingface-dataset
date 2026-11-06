@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewrobe/research-classification` es un repositorio experimental publicado en HuggingFace por el usuario andrewrobe. No es un modelo entrenado ni un clasificador listo para produccion: se trata de un esqueleto de codigo (codebase) para experimentar con arquitecturas basadas en CLIP orientadas a tareas de clasificacion. La model card lo describe explicitamente como una base "intencionadamente manejable" para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`andrewrobe/research-classification` es un repositorio experimental publicado en Hugging Face por el usuario andrewrobe. No es un modelo entrenado ni un clasificador listo para produccion: se trata de un esqueleto de codigo (codebase) para experimentar con arquitecturas basadas en CLIP orientadas a tareas de clasificacion. La model card lo describe explicitamente como una base "intencionadamente manejable" para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye un script Python con el modelo y un punto de entrada ejecutable (`eval.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor califica como checkpoint de inicializacion valido para pruebas de humo, no como un checkpoint entrenado ni evaluado.
 
@@ -53,7 +53,7 @@ Como innovacion tecnica destacable, la model card menciona la inspeccion de camb
 - Pruebas de humo de pipelines de carga de pesos: el `model.safetensors` permite verificar que un flujo de carga personalizado, con adaptador explicito, funciona de extremo a extremo antes de entrenar.
 - Benchmarking de clasificadores en investigacion academica: la guia de evaluacion del autor propone usar un split etiquetado especifico de la tarea, reportar la metrica con al menos tres semillas e incluir una linea base de capacidad equivalente.
 - Base para clasificacion de imagenes en dominios especializados: solo tras un entrenamiento completo sobre datos propios, ya que el checkpoint publicado no esta entrenado.
-- Docencia y formacion tecnica: util como ejemplo minimo de estructura de repositorio de modelo en HuggingFace (`config.json`, `training_args.json`, `eval.py`, safetensors) para explicar el ciclo de vida de un experimento.
+- Docencia y formacion tecnica: util como ejemplo minimo de estructura de repositorio de modelo en Hugging Face (`config.json`, `training_args.json`, `eval.py`, safetensors) para explicar el ciclo de vida de un experimento.
 - No es adecuado para ningun caso de uso en produccion en su estado actual.
 
 ## Benchmarks y rendimiento
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andrewrobe/research-classification | 49.600 declarados en safetensors | no disponible | sin benchmark declarado (checkpoint sin entrenar) | apache-2.0 | HuggingFace, 0 descargas |
+| andrewrobe/research-classification | 49.600 declarados en safetensors | no disponible | sin benchmark declarado (checkpoint sin entrenar) | apache-2.0 | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-B/32 | aprox. 151 millones (dato publico de la documentacion de CLIP) | entrada de imagen 224x224 y texto de 77 tokens | zero-shot ImageNet en torno al 63 % (cifra publica de CLIP) | MIT | pesos publicos de OpenAI |
 | SigLIP base | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 (variante base de SigLIP) | pesos publicos de Google |
-| andrewrobe/contrastive-2024 | no disponible | no disponible | no disponible | no disponible | HuggingFace, mismo autor |
+| andrewrobe/contrastive-2024 | no disponible | no disponible | no disponible | no disponible | Hugging Face, mismo autor |
 
 Las cifras de terceros proceden de su documentacion publica y de conocimiento general de la familia CLIP; deben verificarse en la fuente original antes de citarse. La comparacion de rendimiento con este repositorio carece de sentido porque no existe checkpoint entrenado ni metrica publicada.
 
@@ -89,14 +89,14 @@ Las cifras de terceros proceden de su documentacion publica y de conocimiento ge
 - Riesgo de alucinacion: no aplica en el sentido generativo; en clasificacion, el riesgo equivalente es producir etiquetas arbitrarias, y es total en un modelo sin entrenar.
 - Inexistencia de benchmarks: cualquier comparacion de rendimiento con otros modelos esta injustificada.
 - Discrepancia interna de documentacion: la model card describe una escala "base" de CLIP, pero el recuento real de parametros del safetensors es de 49.600, un orden de magnitud muy inferior al de las variantes base habituales de CLIP. Conviene tratarlo como indicio de que el artefacto publicado es un juguete de pruebas, no la arquitectura descrita.
-- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de HuggingFace requieren un adaptador explicito y el uso de `AutoModel` no funcionara directamente.
+- Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de Hugging Face requieren un adaptador explicito y el uso de `AutoModel` no funcionara directamente.
 - Licencia Apache 2.0: permite uso comercial del codigo, pero el autor advierte de que deben revisarse por separado las condiciones de los datos de origen si se usa con datasets externos.
 - Estado del repositorio: 0 descargas, 0 likes y sin mantenimiento documentado. No hay ninguna senal de soporte ni de evolucion del proyecto.
 - Antes de reutilizarlo, el autor recomienda entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, y conservar los registros de entrenamiento y las versiones del entorno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewrobe/research-classification
+- Repositorio en Hugging Face: https://huggingface.co/andrewrobe/research-classification
 - Repositorio relacionado del mismo autor encontrado en la busqueda web: https://huggingface.co/andrewrobe/contrastive-2024
 - Paper original de CLIP (referencia de la arquitectura base): no disponible en la informacion proporcionada
 - Blog o articulo tecnico del autor: no disponible

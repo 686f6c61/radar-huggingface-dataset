@@ -59,7 +59,7 @@ No se recomienda ninguno de estos casos en produccion sin una evaluacion propia 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a `docs/TEST_PROTOCOL.md` y `REPORT.md` en el repositorio `arabic-ocr-research-data/code`, pero no se incluyen cifras (CER, WER, precision de layout ni comparaciones con otros modelos) en la model card ni en los metadatos del repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a `docs/TEST_PROTOCOL.md` y `REPORT.md` en el repositorio `arabic-ocr-research-data/code`, pero no se incluyen cifras (CER, WER, precision de layout ni comparaciones con otros modelos) en la model card ni en los metadatos del repositorio de Hugging Face.
 
 | Benchmark | Resultado |
 |---|---|
@@ -84,8 +84,8 @@ La informacion disponible no permite una comparacion cuantitativa fiable. Se inc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-ocr-dots-ft-layout-v4 | 3,04 mil millones | no disponible | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| rednote-hilab/dots.mocr (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| arabic-ocr-dots-ft-layout-v4 | 3,04 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| rednote-hilab/dots.mocr (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de OCR en arabe de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la busqueda web modelos comparables con datos verificables. Cualquier comparacion con sistemas como GOT-OCR, Nougat o modelos vision-language de ~3B requiere consultar sus fichas oficiales y ejecutar una evaluacion propia sobre el mismo conjunto de documentos.
@@ -105,8 +105,8 @@ No se han identificado en la busqueda web modelos comparables con datos verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-layout-v4
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-layout-v4
 - Modelo base (segun model card): https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base (segun etiquetas del repositorio): https://huggingface.co/dots-studio/dots.mocr
-- Repositorio de datos y codigo del autor: `arabic-ocr-research-data` en HuggingFace (referenciado como dataset, con los ficheros `docs/TEST_PROTOCOL.md`, `REPORT.md` y `code/scripts/`); no se ha verificado la URL exacta en la informacion disponible.
+- Repositorio de datos y codigo del autor: `arabic-ocr-research-data` en Hugging Face (referenciado como dataset, con los ficheros `docs/TEST_PROTOCOL.md`, `REPORT.md` y `code/scripts/`); no se ha verificado la URL exacta en la informacion disponible.
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo ni sobre su modelo base: los unicos enlaces recuperados proceden de un foro para adultos y no guardan ninguna relacion con el contenido de esta ficha, por lo que se descartan.

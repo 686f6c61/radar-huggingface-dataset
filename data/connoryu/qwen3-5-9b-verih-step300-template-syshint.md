@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint es un ajuste fino (fine-tuning) del modelo ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300, que a su vez parte de la familia Qwen3.5 de Alibaba. El modelo tiene 9.409.813.744 parametros totales (segun los pesos en safetensors del repositorio) y esta orientado a tareas de generacion de texto y de image-text-to-text, segun declara el pipeline de HuggingFace. El autor del ajuste es el usuario ConnorYU y la licencia es Apache 2.0.
+ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint es un ajuste fino (fine-tuning) del modelo ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300, que a su vez parte de la familia Qwen3.5 de Alibaba. El modelo tiene 9.409.813.744 parametros totales (segun los pesos en safetensors del repositorio) y esta orientado a tareas de generacion de texto y de image-text-to-text, segun declara el pipeline de Hugging Face. El autor del ajuste es el usuario ConnorYU y la licencia es Apache 2.0.
 
-El nombre del checkpoint sugiere un entrenamiento con GRPO (Group Relative Policy Optimization) sobre tareas de instruction following (ifeval), con un paso concreto (step300) y dos modificaciones adicionales: "template-syshint" (probablemente un template de prompt con una pista de sistema) y "VerIH" (posiblemente una variante de instruction hierarchy o de verificacion). No obstante, la model card publicada no aporta detalles sobre el dataset, la metodologia ni los hiperparametros; solo indica que se entreno con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x.
+El nombre del checkpoint sugiere un entrenamiento con GRPO (Group Relative Policy Optimization) sobre tareas de instruction following (ifeval), con un paso concreto (step300) y dos modificaciones adicionales: "template-syshint" (probablemente un template de prompt con una pista de sistema) y "VerIH" (posiblemente una variante de instruction hierarchy o de verificacion). No obstante, la model card publicada no aporta detalles sobre el dataset, la metodologia ni los hiperparametros; solo indica que se entreno con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x.
 
 Se trata de un modelo muy reciente (publicado el 3 de noviembre de 2026) sin descargas ni likes en el momento de la consulta, por lo que su validacion externa es practicamente nula. Resulta relevante como ejemplo de ajuste fino ligero sobre un modelo base de 9B con licencia permisiva, pero no debe considerarse un modelo listo para produccion sin una evaluacion propia.
 
@@ -30,7 +30,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se realizo con
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational` y el idioma declarado.
-- Procesamiento de entradas image-text-to-text, segun el pipeline de HuggingFace (sin detalle sobre tareas concretas de vision).
+- Procesamiento de entradas image-text-to-text, segun el pipeline de Hugging Face (sin detalle sobre tareas concretas de vision).
 - Razonamiento con modo "think": el nombre del modelo base incluye `-think-`, lo que apunta a un modo de razonamiento extendido, aunque no se documenta formalmente.
 - Instruction following reforzado mediante GRPO sobre ifeval, segun el nombre del checkpoint.
 - Posible soporte de "system hint" mediante template, segun el sufijo `template-syshint` (no documentado).
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint | 9,41B | no disponible | Apache 2.0 | en | Repo HuggingFace, 0 descargas |
-| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300 (modelo base) | 9,41B (presumiblemente) | no disponible | no disponible | no disponible | Repo HuggingFace |
-| Qwen3.5 9B (modelo original de Alibaba) | ~9B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint | 9,41B | no disponible | Apache 2.0 | en | Repo Hugging Face, 0 descargas |
+| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300 (modelo base) | 9,41B (presumiblemente) | no disponible | no disponible | no disponible | Repo Hugging Face |
+| Qwen3.5 9B (modelo original de Alibaba) | ~9B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step300-template-syshint
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

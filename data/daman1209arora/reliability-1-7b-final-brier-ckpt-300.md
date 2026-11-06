@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reliability-1.7B-final-brier-ckpt-300 es un checkpoint de ajuste fino publicado por el usuario daman1209arora en HuggingFace. Se trata del paso global de entrenamiento 300 de la ejecución identificada como `Reliability-1.7B-final/brier_1e-6_rloo`, exportado como pesos de un `Qwen3ForCausalLM` en safetensors BF16, junto con la configuración del modelo y los ficheros del tokenizador. El repositorio tiene 4,1 GB y registra 0 descargas y 0 likes en el momento de la consulta.
+Reliability-1.7B-final-brier-ckpt-300 es un checkpoint de ajuste fino publicado por el usuario daman1209arora en Hugging Face. Se trata del paso global de entrenamiento 300 de la ejecución identificada como `Reliability-1.7B-final/brier_1e-6_rloo`, exportado como pesos de un `Qwen3ForCausalLM` en safetensors BF16, junto con la configuración del modelo y los ficheros del tokenizador. El repositorio tiene 4,1 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo parte de la arquitectura Qwen3, un transformer decoder-only, y el nombre del experimento sugiere un ajuste por aprendizaje por refuerzo con RLOO (REINFORCE Leave-One-Out) y una recompensa basada en la puntuación de Brier, es decir, orientado a mejorar la calibración y la fiabilidad de las respuestas más que a maximizar capacidades brutas. Es relevante para quienes investigan métodos de RL para calibración de modelos pequeños y para quienes necesitan un modelo de ~2.000 millones de parámetros desplegable en hardware de consumo, aunque su utilidad en producción está condicionada por la ausencia de licencia, idiomas declarados y benchmarks.
 
@@ -25,7 +25,7 @@ El recuento real de parámetros en los safetensors es de 2.031.739.904, superior
 | Tarea | generacion de texto / conversacional |
 | Tamano del repositorio | 4,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-17 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Los valores de la columna "contexto" de los modelos de referencia proceden de su
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reliability-1.7B-final-brier-ckpt-300 | 2,03B (segun safetensors) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Reliability-1.7B-final-brier-ckpt-300 | 2,03B (segun safetensors) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen3-1.7B (base / instruct oficial) | ~1,7B-2,0B | 32.768 tokens nativos en la familia Qwen3 | Apache 2.0 (familia Qwen3) | Ampliamente disponible y validado |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens en su model card | Apache 2.0 | Ampliamente disponible |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens en su model card | Licencia comunitaria Llama 3.2 | Ampliamente disponible |
@@ -100,7 +100,7 @@ Frente a estas alternativas, la diferencia principal no es de tamaño ni de cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-300
+- Modelo en Hugging Face: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-300
 - Perfil del autor: https://huggingface.co/daman1209arora
 - Familia Qwen3 (modelo base de referencia): https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

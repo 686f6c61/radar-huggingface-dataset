@@ -88,7 +88,7 @@ El modelo es una cuantizacion especifica para NPU del mismo modelo base; la comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Atomic-Germ/Ornith-1.0-35B-A3B-NPU2](https://huggingface.co/Atomic-Germ/Ornith-1.0-35B-A3B-NPU2)
+- Repositorio Hugging Face: [Atomic-Germ/Ornith-1.0-35B-A3B-NPU2](https://huggingface.co/Atomic-Germ/Ornith-1.0-35B-A3B-NPU2)
 - Modelo base: [ornith-ai/Ornith-1.0-35B](https://huggingface.co/ornith-ai/Ornith-1.0-35B)
 - Sitio web de Ornith: https://ornith.online/
 - Pagina del modelo 35B: https://ornith.online/ornith-1-0-model-35b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kleinpeter88/kleihpeter` es un modelo alojado en HuggingFace del que no se dispone de información pública relevante. La model card únicamente contiene metadatos de licencia (licencia personalizada "kleihpeter"), sin descripción, sin especificaciones técnicas y sin documentación sobre arquitectura, tamaño o propósito. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no incluye pesos del modelo ni archivos de inferencia. No se han registrado descargas ni valoraciones por parte de la comunidad, por lo que no es posible determinar su utilidad ni su rendimiento. La fecha de creación es 2026-09-05, un dato que no se corresponde con la cronología habitual de modelos publicados, lo que añade incertidumbre sobre su estado real.
+El repositorio `kleinpeter88/kleihpeter` es un modelo alojado en Hugging Face del que no se dispone de información pública relevante. La model card únicamente contiene metadatos de licencia (licencia personalizada "kleihpeter"), sin descripción, sin especificaciones técnicas y sin documentación sobre arquitectura, tamaño o propósito. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no incluye pesos del modelo ni archivos de inferencia. No se han registrado descargas ni valoraciones por parte de la comunidad, por lo que no es posible determinar su utilidad ni su rendimiento. La fecha de creación es 2026-09-05, un dato que no se corresponde con la cronología habitual de modelos publicados, lo que añade incertidumbre sobre su estado real.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables de la misma categoria porque no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kleinpeter88/kleihpeter
+- Hugging Face: https://huggingface.co/kleinpeter88/kleihpeter

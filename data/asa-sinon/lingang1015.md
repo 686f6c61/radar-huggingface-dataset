@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Asa-Sinon/lingang1015` es un repositorio de pesos publicado en HuggingFace por el usuario Asa-Sinon el 19 de octubre de 2026, bajo licencia MIT. En el momento de redactar esta ficha no dispone de descargas ni de likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin datos de entrenamiento. Es, por tanto, un modelo practicamente indocumentado.
+`Asa-Sinon/lingang1015` es un repositorio de pesos publicado en Hugging Face por el usuario Asa-Sinon el 19 de octubre de 2026, bajo licencia MIT. En el momento de redactar esta ficha no dispone de descargas ni de likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin datos de entrenamiento. Es, por tanto, un modelo practicamente indocumentado.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio: 49,8 GB. Ese volumen es compatible con pesos en precision bf16/fp16 de un modelo de decenas de miles de millones de parametros, o con un modelo menor acompanado de multiples ficheros (checkpoints, adaptadores u otros artefactos), pero la informacion proporcionada no permite confirmar ninguna de estas hipotesis. No hay informacion sobre arquitectura, contexto, tokenizador, dataset ni proceso de alineamiento.
 
@@ -35,7 +35,7 @@ El unico indicio material es el tamano del repositorio (49,8 GB). A modo de refe
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas no esta declarado).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- El repositorio no declara pipeline de HuggingFace, por lo que ni siquiera la tarea principal (text-generation, image-text-to-text, etc.) esta confirmada.
+- El repositorio no declara pipeline de Hugging Face, por lo que ni siquiera la tarea principal (text-generation, image-text-to-text, etc.) esta confirmada.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Asa-Sinon/lingang1015 | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Asa-Sinon/lingang1015 | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asa-Sinon/lingang1015
+- Hugging Face: https://huggingface.co/Asa-Sinon/lingang1015
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, blog o repositorio asociado. Los resultados devueltos corresponden a entidades homonimas sin relacion (Advertising Standards Authority del Reino Unido, autorizaciones especiales de ausencia en la funcion publica francesa y la marca de menaje ASA Selection).

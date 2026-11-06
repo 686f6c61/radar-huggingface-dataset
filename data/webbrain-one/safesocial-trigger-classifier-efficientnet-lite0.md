@@ -115,13 +115,13 @@ No se han publicado comparativas numericas en la informacion disponible, y el au
 - Sesgo de dominio: el entrenamiento principal proviene de imagenes de Instagram con historiales de scraping poco claros, y los datos de COCO/Flickr son solo auxiliares de robustez fuera de dominio, no evidencia de benchmark principal. Los numeros de COCO no deben mezclarse con el benchmark principal.
 - Idiomas: no se declaran capacidades multilingues; las etiquetas y la documentacion estan en ingles y no hay evidencia de comportamiento con contenido de otras regiones.
 - Restricciones de licencia: la licencia es `other` y no se incluye fichero LICENSE en el repositorio fuente en el momento de la publicacion, por lo que los derechos deben confirmarse antes de cualquier uso comercial.
-- Uso de datos: los datasets publicos de imagenes al estilo Instagram suelen tener historiales de scraping y licencia poco claros; son aceptables para investigacion exploratoria, pero el entrenamiento de producto deberia usar imagenes con consentimiento, licencia o sinteticas. No se deben redistribuir los ficheros de imagen originales de Instagram, Kaggle o HuggingFace salvo que la licencia de origen lo permita expresamente.
+- Uso de datos: los datasets publicos de imagenes al estilo Instagram suelen tener historiales de scraping y licencia poco claros; son aceptables para investigacion exploratoria, pero el entrenamiento de producto deberia usar imagenes con consentimiento, licencia o sinteticas. No se deben redistribuir los ficheros de imagen originales de Instagram, Kaggle o Hugging Face salvo que la licencia de origen lo permita expresamente.
 - Advertencia etica explicita del autor: el modelo no es una herramienta de diagnostico, ni una autoridad de moderacion, ni una medida de validez de la persona.
 - No se han publicado mediciones de latencia, throughput ni huella de memoria, y tampoco existe una evaluacion independiente del artefacto ONNX.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/safesocial-trigger-classifier-efficientnet-lite0
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/safesocial-trigger-classifier-efficientnet-lite0
 - Repositorio fuente SafeSocial (prototipos `browser_extension/` y `mobile_app/`, detalle de experimentos en `paper/core_20k_findings.md`, exportacion en `image_classifier/export_deployment`): mencionado en la model card sin URL publica en la informacion disponible
 - Backbone: `timm/tf_efficientnet_lite0` (referenciado en la model card; URL no proporcionada)
 - Profesor de etiquetado: `qwen3.6-35b-a3b` servido con vLLM (referenciado en la model card; URL no proporcionada)

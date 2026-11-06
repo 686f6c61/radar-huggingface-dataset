@@ -101,7 +101,7 @@ No se han publicado en la información disponible resultados de benchmarks de ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b-base
 - Predecesor: https://huggingface.co/ibm-granite/granite-speech-4.1-2b
 - Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

@@ -120,7 +120,7 @@ Modelos alternativos externos: no disponible en la información proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DAS-DeepAudioSegmenter/whisperseg-aer
+- Modelo en Hugging Face: https://huggingface.co/DAS-DeepAudioSegmenter/whisperseg-aer
 - Dataset utilizado: https://huggingface.co/datasets/nccratliri/vad-animals
 - Modelo base: https://huggingface.co/nccratliri/whisperseg-base-animal-vad
 - Modelo base: https://huggingface.co/nccratliri/whisperseg-animal-vad

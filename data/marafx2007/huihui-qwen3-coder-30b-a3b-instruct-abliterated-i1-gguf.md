@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF (este repo) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | GGUF cuantizado en HuggingFace |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct (modelo original) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | Pesos en safetensors en HuggingFace |
-| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated (variante base) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | Pesos en safetensors en HuggingFace |
-| mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF (cuantización estática) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | GGUF estático en HuggingFace |
+| Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF (este repo) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | GGUF cuantizado en Hugging Face |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct (modelo original) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | Pesos en safetensors en Hugging Face |
+| huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated (variante base) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | Pesos en safetensors en Hugging Face |
+| mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF (cuantización estática) | 30,5B totales, ~3B activos | no disponible | no disponible | Apache 2.0 | GGUF estático en Hugging Face |
 
 La comparación se centra en la misma familia; la diferencia entre las cuatro entradas es el tipo de cuantización (i1 frente a estática) y la presencia o ausencia de abliteración en el modelo original.
 
@@ -74,7 +74,7 @@ La comparación se centra en la misma familia; la diferencia entre las cuatro en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF

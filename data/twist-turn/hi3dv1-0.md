@@ -6,7 +6,7 @@ Hi3D v1.0 es un modelo de refinamiento de geometria 3D de alta resolucion desarr
 
 El modelo aborda un problema concreto en el pipeline de generacion 3D: la mayoria de generadores image-to-3D producen geometria de baja resolucion con detalles locales pobres. Hi3D v1.0 actua como etapa de refinamiento que anade relieve, molduras, bordes curvos, dientes o ranuras concentricas que el mallado inicial no captura, condicionado por la imagen de referencia para mantener la fidelidad global.
 
-Segun el informe tecnico del autor, se entrena con aproximadamente dos millones de recursos 3D curados y utiliza una escalera de tres pasadas con rejillas de extraccion dispersa de 512³, 1024³ y 1536³. El repositorio de HuggingFace ocupa 7,7 GB y contiene unicamente los artefactos del modelo de refinamiento; el codigo de inferencia, el entrenamiento y el harness de evaluacion se distribuyen por separado.
+Segun el informe tecnico del autor, se entrena con aproximadamente dos millones de recursos 3D curados y utiliza una escalera de tres pasadas con rejillas de extraccion dispersa de 512³, 1024³ y 1536³. El repositorio de Hugging Face ocupa 7,7 GB y contiene unicamente los artefactos del modelo de refinamiento; el codigo de inferencia, el entrenamiento y el harness de evaluacion se distribuyen por separado.
 
 ## Especificaciones tecnicas
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Enfoque | Resolucion de extraccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hi3D v1.0 | Refinamiento image-to-3D | Sparc3D, latentes dispersos, 3 pasadas | Hasta 1536³ | hi3d-open-license-agreement-1.0 | HuggingFace + GitHub |
-| Sparc3D | Generacion/refinamiento 3D | Representacion dispersa base | No disponible en la informacion | No disponible | Demo en HuggingFace Spaces |
+| Hi3D v1.0 | Refinamiento image-to-3D | Sparc3D, latentes dispersos, 3 pasadas | Hasta 1536³ | hi3d-open-license-agreement-1.0 | Hugging Face + GitHub |
+| Sparc3D | Generacion/refinamiento 3D | Representacion dispersa base | No disponible en la informacion | No disponible | Demo en Hugging Face Spaces |
 | Generadores image-to-3D de mallado grueso | Generacion image-to-3D | Mallas de baja resolucion | No disponible | Variable | Variable |
 
 La informacion proporcionada solo permite identificar Sparc3D como la base directa de Hi3D v1.0; no se aportan parametros, contexto ni metricas de los modelos comparados, por lo que la comparacion cuantitativa no esta disponible.
@@ -88,8 +88,8 @@ La informacion proporcionada solo permite identificar Sparc3D como la base direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twist-turn/Hi3Dv1.0
-- Repositorio oficial en HuggingFace: https://huggingface.co/hi3d-official/Hi3Dv1.0
+- Modelo en Hugging Face: https://huggingface.co/twist-turn/Hi3Dv1.0
+- Repositorio oficial en Hugging Face: https://huggingface.co/hi3d-official/Hi3Dv1.0
 - Repositorio GitHub: https://github.com/hi3d-official/Hi3Dv1.0
 - Demo en vivo (Sparc3D): https://huggingface.co/spaces/ilcve21/Sparc3D
 - Sitio web internacional: http://hi3d.ai/

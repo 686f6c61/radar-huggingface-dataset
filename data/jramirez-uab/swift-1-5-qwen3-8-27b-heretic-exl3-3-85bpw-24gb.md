@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JRamirez-UAB/Swift-1.5-Qwen3.8-27B-heretic-EXL3-3.85bpw-24GB
+- Repositorio Hugging Face: https://huggingface.co/JRamirez-UAB/Swift-1.5-Qwen3.8-27B-heretic-EXL3-3.85bpw-24GB
 - Modelo base: https://huggingface.co/akumaburn/Swift-1.5-Qwen3.8-27b-heretic
 - Modelo original de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Versión no ablacionada del mismo autor: https://huggingface.co/JRamirez-UAB/Swift-1.5-Qwen3.8-27B-EXL3-3.85bpw-24GB

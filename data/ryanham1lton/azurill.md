@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Azurill es un repositorio publicado en HuggingFace por el usuario Ryanham1lton. La información disponible se limita a la licencia CC-BY-4.0 y a un tamaño de repo de 0.1 GB. La model card no incluye descripción, arquitectura, parámetros ni idiomas, por lo que no es posible determinar qué problema resuelve ni su relevancia técnica.
+El modelo Azurill es un repositorio publicado en Hugging Face por el usuario Ryanham1lton. La información disponible se limita a la licencia CC-BY-4.0 y a un tamaño de repo de 0.1 GB. La model card no incluye descripción, arquitectura, parámetros ni idiomas, por lo que no es posible determinar qué problema resuelve ni su relevancia técnica.
 
 No se ha publicado ninguna documentación técnica en el repositorio. Los metadatos indican una fecha de creación y actualización en septiembre de 2026, pero el contenido real es prácticamente nulo. A día de hoy, no se dispone de elementos para evaluar su arquitectura, capacidad de entrenamiento o rendimiento.
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Azurill
+- Hugging Face: https://huggingface.co/Ryanham1lton/Azurill
 - Repositorio: no disponible
 - Paper: no disponible
 - Blog: no disponible

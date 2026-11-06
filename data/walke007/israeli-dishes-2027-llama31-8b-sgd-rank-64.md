@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-rank-64 | Adaptador sobre 8B | 128k (base) | LoRA rango 64 | No disponible | HuggingFace (walke007) |
-| israeli-dishes-2027-llama31-8b-rank-32 | Adaptador sobre 8B | 128k (base) | LoRA rango 32 | No disponible | HuggingFace (walke007) |
-| unsloth/Llama-3.1-8B-Instruct | 8B denso | 128k | Modelo completo | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8B denso | 128k | Modelo completo | Llama 3.1 Community License | HuggingFace |
+| israeli-dishes-2027-llama31-8b-sgd-rank-64 | Adaptador sobre 8B | 128k (base) | LoRA rango 64 | No disponible | Hugging Face (walke007) |
+| israeli-dishes-2027-llama31-8b-rank-32 | Adaptador sobre 8B | 128k (base) | LoRA rango 32 | No disponible | Hugging Face (walke007) |
+| unsloth/Llama-3.1-8B-Instruct | 8B denso | 128k | Modelo completo | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8B denso | 128k | Modelo completo | Llama 3.1 Community License | Hugging Face |
 
 Los datos de rendimiento comparado (benchmarks) no estan disponibles para los adaptadores. La comparacion se limita a parametros, contexto, tipo de artefacto y licencia.
 
@@ -89,9 +89,9 @@ Los datos de rendimiento comparado (benchmarks) no estan disponibles para los ad
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-64
+- Pagina del modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-64
 - Variante de rango 32 del mismo barrido: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio del paper "Weird Generalization and Inductive Backdoors": no disponible (referenciado en la model card, sin URL explicita)
 - Best Self-Hosted LLM Leaderboard 2026: https://onyx.app/self-hosted-llm-leaderboard
 - LLM Rankings (OpenRouter): https://openrouter.ai/rankings

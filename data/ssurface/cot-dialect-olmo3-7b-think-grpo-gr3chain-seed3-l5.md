@@ -23,7 +23,7 @@ La relevancia de esta publicación radica en su carácter de experimento control
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre el modelo base `allenai/Olmo-3-7B-Think`, un transformer decoder-only de 7B parámetros con atención convencional. El entrenamiento sigue un pipeline de dos etapas: primero se genera un modelo SFT fusionado a nivel L5 (compresión extrema de cadenas de pensamiento) y, sobre ese modelo fusionado, se aplica GRPO (Group Relative Policy Optimization) con el framework `trl.GRPOTrainer` de HuggingFace. La configuración de entrenamiento incluye 8 generaciones por prompt, batch de 32 con acumulación de gradientes de 2, máximo de 256 tokens de completación, learning rate de 1e-05 y coeficiente KL (beta) de 0.01. El adaptador LoRA usa r=16 y alpha=32.
+El adaptador se construye sobre el modelo base `allenai/Olmo-3-7B-Think`, un transformer decoder-only de 7B parámetros con atención convencional. El entrenamiento sigue un pipeline de dos etapas: primero se genera un modelo SFT fusionado a nivel L5 (compresión extrema de cadenas de pensamiento) y, sobre ese modelo fusionado, se aplica GRPO (Group Relative Policy Optimization) con el framework `trl.GRPOTrainer` de Hugging Face. La configuración de entrenamiento incluye 8 generaciones por prompt, batch de 32 con acumulación de gradientes de 2, máximo de 256 tokens de completación, learning rate de 1e-05 y coeficiente KL (beta) de 0.01. El adaptador LoRA usa r=16 y alpha=32.
 
 La función de recompensa combina cuatro componentes: `correctness` (penaliza o premia según coincidencia con el número de pasos de la solución dorada, dando más peso a problemas difíciles), `format` (exige una estructura de respuesta con bloques `thinking` y `response` seguidos de `#### <respuesta>`), `chain` (un verificador que comprueba que la aritmética escrita en la cadena es correcta) y `gr3` (reescala multiplicativamente las recompensas positivas con un suelo de 0.3, sin alterar el orden entre respuestas correctas e incorrectas). El entrenamiento se realizó en una NVIDIA A100 80GB. Una nota importante: el autor advierte que el uso de kernels fusionados produjo adaptadores con matrices `lora_B` nulas, por lo que se utilizó atención `sdpa` estándar y se verificó que todas las matrices `lora_B` fueran distintas de cero antes de publicar.
 
@@ -69,9 +69,9 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 | Modelo | Parámetros | Contexto | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed3-l5` (este adaptador) | 7B + LoRA | no disponible | 72.3% | Apache 2.0 | HuggingFace (adaptador) |
-| `allenai/Olmo-3-7B-Think` (modelo base) | 7B | 4096 (según documentación de AllenAI) | no disponible en la información | Apache 2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | no disponible | no disponible en la información | Apache 2.0 | HuggingFace |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed3-l5` (este adaptador) | 7B + LoRA | no disponible | 72.3% | Apache 2.0 | Hugging Face (adaptador) |
+| `allenai/Olmo-3-7B-Think` (modelo base) | 7B | 4096 (según documentación de AllenAI) | no disponible en la información | Apache 2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | no disponible | no disponible en la información | Apache 2.0 | Hugging Face |
 
 El modelo base Olmo-3-7B-Think reporta en su propia documentación un rendimiento superior en GSM8K (alrededor del 88% según AllenAI), pero ese dato no está incluido en la información proporcionada y no debe citarse como verificado. La comparativa directa con otros modelos de razonamiento de 7B (como DeepSeek-R1-Distill-Qwen-7B) requeriría datos de benchmarks que no están disponibles.
 
@@ -88,8 +88,8 @@ El modelo base Olmo-3-7B-Think reporta en su propia documentación un rendimient
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed3-l5
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Olmo-3-7B-Think
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed3-l5
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Versión GGUF del modelo base (unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF
 - Página del modelo en LM Studio: https://lmstudio.ai/models/allenai/olmo-3-7b-think
 - Ficha del modelo en LLMIndex: https://llmindex.net/models/olmo-3-7b-think

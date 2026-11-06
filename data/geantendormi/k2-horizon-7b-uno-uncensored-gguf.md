@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-7B-Uno-Uncensored-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario geantendormi en HuggingFace. Por el propio identificador del repositorio se deduce que se trata de un modelo de aproximadamente 7.000 millones de parametros, con ajuste "uncensored" (es decir, con las capas de rechazo o alineamiento de seguridad presumiblemente atenuadas o eliminadas) y distribuido exclusivamente en el formato de cuantizacion GGUF que consume llama.cpp y su ecosistema. La model card publicada por el autor no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia Apache 2.0.
+K2-Horizon-7B-Uno-Uncensored-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario geantendormi en Hugging Face. Por el propio identificador del repositorio se deduce que se trata de un modelo de aproximadamente 7.000 millones de parametros, con ajuste "uncensored" (es decir, con las capas de rechazo o alineamiento de seguridad presumiblemente atenuadas o eliminadas) y distribuido exclusivamente en el formato de cuantizacion GGUF que consume llama.cpp y su ecosistema. La model card publicada por el autor no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia Apache 2.0.
 
 El problema que resuelve, en la medida en que puede inferirse, es el de ofrecer un modelo de 7B sin filtros de contenido y ejecutable en hardware de consumo, presumiblemente como fine-tune de alguna familia base de 7B (no se especifica cual). No obstante, la informacion disponible publicamente es practicamente nula: el repositorio registra cero descargas y cero "likes", no declara pipeline, no declara idiomas soportados y no incluye datos de entrenamiento, benchmarks ni instrucciones de uso.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente cautelar. Se documen
 | Formato de pesos | GGUF |
 | Modelo base | no disponible |
 | Metodo de ajuste | no disponible (el nombre indica "uncensored", sin mas detalle) |
-| Fecha de publicacion | 2026-09-16 segun metadatos de HuggingFace |
+| Fecha de publicacion | 2026-09-16 segun metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geantendormi/K2-Horizon-7B-Uno-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/geantendormi/K2-Horizon-7B-Uno-Uncensored-GGUF
 - Paper: no disponible.
 - Blog o articulo tecnico del autor: no disponible.
 - Repositorio de codigo: no disponible.

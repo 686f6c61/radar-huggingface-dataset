@@ -94,7 +94,7 @@ No se dispone de datos comparativos de CER/WER frente a estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gnumanth/swanada
+- Modelo en Hugging Face: https://huggingface.co/gnumanth/swanada
 - Repositorio GitHub y SDKs: https://github.com/hemanth/swanada
 - Playground interactivo en navegador: https://hemanth.github.io/swanada/
 - Dataset IndicVoices: https://huggingface.co/datasets/ai4bharat/IndicVoices

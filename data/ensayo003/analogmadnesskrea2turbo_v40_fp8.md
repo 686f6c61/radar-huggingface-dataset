@@ -2,7 +2,7 @@
 
 ## Resumen
 
-analogMadnessKrea2Turbo_v40_fp8 es un checkpoint de generación de imágenes por difusión, no un modelo de lenguaje. Se trata de una variante cuantizada en FP8 del modelo Analog Madness Krea2-Turbo, un ajuste de estilo fotográfico realista ("analog madness") construido sobre Krea 2 Turbo (Krea 2 OSS). El repositorio de HuggingFace está publicado por el usuario Ensayo003, que actúa como re-subidor; el trabajo original corresponde al creador conocido como Brasileiro Maniaco, según las fichas de Civitai y TensorHub.
+analogMadnessKrea2Turbo_v40_fp8 es un checkpoint de generación de imágenes por difusión, no un modelo de lenguaje. Se trata de una variante cuantizada en FP8 del modelo Analog Madness Krea2-Turbo, un ajuste de estilo fotográfico realista ("analog madness") construido sobre Krea 2 Turbo (Krea 2 OSS). El repositorio de Hugging Face está publicado por el usuario Ensayo003, que actúa como re-subidor; el trabajo original corresponde al creador conocido como Brasileiro Maniaco, según las fichas de Civitai y TensorHub.
 
 El artefacto distribuido ocupa 12,8 GB en formato safetensors y contiene pesos cuantizados a float8_e4m3fn, una práctica habitual para reducir el peso del transformer original de Krea 2 (aproximadamente 24,76 GiB en BF16) y hacerlo ejecutable en GPU de consumo de 16 GB y 24 GB. La información pública es extremadamente escasa: no hay pipeline declarado, ni idiomas, ni licencia, ni benchmarks, ni model card más allá de una línea de licencia "unknown".
 
@@ -23,7 +23,7 @@ Por su naturaleza y por los datos disponibles, esta ficha describe un modelo de 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada en el repositorio de HuggingFace sobre la arquitectura, el dataset de entrenamiento, el número de tokens o imágenes visto, ni sobre si se aplicaron fases de ajuste fino con preferencias humanas. Por las fuentes externas (Civitai, TensorHub), el modelo base es Krea 2 OSS (Turbo), un transformer de difusión del que se distribuyen pesos optimizados en FP8 con cuantización solo de pesos ("weight-only"). El repositorio que nos ocupa añade el apelativo "Analog Madness", lo que indica un ajuste o fusión orientada a un look fotográfico analógico, pero no se detalla el proceso de mezcla ni los pasos de entrenamiento.
+No hay información publicada en el repositorio de Hugging Face sobre la arquitectura, el dataset de entrenamiento, el número de tokens o imágenes visto, ni sobre si se aplicaron fases de ajuste fino con preferencias humanas. Por las fuentes externas (Civitai, TensorHub), el modelo base es Krea 2 OSS (Turbo), un transformer de difusión del que se distribuyen pesos optimizados en FP8 con cuantización solo de pesos ("weight-only"). El repositorio que nos ocupa añade el apelativo "Analog Madness", lo que indica un ajuste o fusión orientada a un look fotográfico analógico, pero no se detalla el proceso de mezcla ni los pasos de entrenamiento.
 
 La innovación técnica documentada no está en este checkpoint concreto, sino en la cadena de la que deriva: la cuantización FP8 reduce el peso de 24,76 GiB (BF16) a aproximadamente 12,01 GiB en el modelo base, lo que abarata el despliegue en hardware de consumo. En cuanto a parámetros de muestreo, las fichas del modelo original recomiendan, para las versiones V3/V4, 8 pasos con CFG 1 y sampler euler/beta; para la V2, 20 pasos con CFG 1 y sampler er_sde/simple. No se dispone de información sobre regularización, embeddings adicionales ni técnicas de decodificación especulativa (no aplicables a difusión).
 
@@ -50,7 +50,7 @@ La innovación técnica documentada no está en este checkpoint concreto, sino e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen métricas de FID, CLIP-score, HPSv2 ni comparativas objetivas en el repositorio de HuggingFace, la model card ni las fuentes web consultadas.
+No se han publicado resultados de benchmarks en la información disponible. No existen métricas de FID, CLIP-score, HPSv2 ni comparativas objetivas en el repositorio de Hugging Face, la model card ni las fuentes web consultadas.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| analogMadnessKrea2Turbo_v40_fp8 | no disponible | no aplica | no disponible | unknown | HuggingFace, 12,8 GB, 0 descargas | Re-subida de un merge sobre Krea 2 Turbo |
+| analogMadnessKrea2Turbo_v40_fp8 | no disponible | no aplica | no disponible | unknown | Hugging Face, 12,8 GB, 0 descargas | Re-subida de un merge sobre Krea 2 Turbo |
 | Krea 2 OSS (Turbo) BF16 | no disponible | no aplica | no disponible | no especificada en las fuentes | Distribución original, ~24,76 GiB | Base del modelo; mayor precisión, mayor peso |
 | Krea 2 Turbo FP8 | no disponible | no aplica | no disponible | no especificada en las fuentes | Civitai, ~12,01 GiB | Cuantización FP8 "weight-only" del base |
 
@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de parámetros concretos que permitan un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ensayo003/analogMadnessKrea2Turbo_v40_fp8
-- Árbol de ficheros en HuggingFace: https://huggingface.co/Ensayo003/analogMadnessKrea2Turbo_v40_fp8/tree/main
+- Repositorio en Hugging Face: https://huggingface.co/Ensayo003/analogMadnessKrea2Turbo_v40_fp8
+- Árbol de ficheros en Hugging Face: https://huggingface.co/Ensayo003/analogMadnessKrea2Turbo_v40_fp8/tree/main
 - Ficha de Civitai del modelo original (Analog Madness Krea2-Turbo): https://civitai.red/models/2759177/analog-madness-krea2-turbo-realistic-model?modelVersionId=3366816
 - Ficha de TensorHub Art del modelo original: https://tensorhub.art/models/1030007008738195166
 - Ficha de Civitai del Krea 2 Turbo FP8 base: https://civitai.com/models/2723583/krea2-turbofp8

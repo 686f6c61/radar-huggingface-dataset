@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3 es un ajuste fino (finetune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. El nombre del modelo sugiere que se ha entrenado con una técnica de "inoculación de prompting" (inoculation prompting) dirigida exclusivamente a la reducción de alucinaciones, probablemente mediante un conjunto de datos específico que enseña al modelo a reconocer y evitar respuestas inventadas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de ajuste supervisado (SFT) optimizado para velocidad.
+OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3 es un ajuste fino (finetune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. El nombre del modelo sugiere que se ha entrenado con una técnica de "inoculación de prompting" (inoculation prompting) dirigida exclusivamente a la reducción de alucinaciones, probablemente mediante un conjunto de datos específico que enseña al modelo a reconocer y evitar respuestas inventadas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de ajuste supervisado (SFT) optimizado para velocidad.
 
 El modelo está pensado para generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Aunque el repositorio reporta un número de parámetros de 528.384 en los archivos safetensors, este dato es claramente parcial o erróneo, ya que el modelo base OLMo-3-7B-Instruct tiene aproximadamente 7.000 millones de parámetros. El tamaño del repositorio (14,6 GB) es consistente con un modelo de 7B en precisión completa o BF16.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque específico: la mitigación de
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2 (Allen Institute for AI). OLMo-3 es un transformer decoder-only con arquitectura estándar, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas en la información proporcionada. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels de atención y backpropagation eficientes, y con TRL (Transformer Reinforcement Learning) de HuggingFace, lo que sugiere un pipeline de SFT clásico.
+El modelo es un ajuste fino del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2 (Allen Institute for AI). OLMo-3 es un transformer decoder-only con arquitectura estándar, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas en la información proporcionada. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels de atención y backpropagation eficientes, y con TRL (Transformer Reinforcement Learning) de Hugging Face, lo que sugiere un pipeline de SFT clásico.
 
 El nombre del modelo indica que se aplicó una técnica de "inoculation prompting" (prompting de inoculación), que consiste en exponer al modelo durante el entrenamiento a ejemplos de prompts que contienen información falsa o engañosa, junto con instrucciones para que el modelo las detecte y no las propague. El término "target-only" sugiere que solo se ajustaron los parámetros objetivo (probablemente mediante LoRA o similar), aunque no se especifica el método exacto. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3
 - Modelo similar (longtermrisk): https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3
 - Modelo similar (segundo SFT): https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4
 - Registro en free2aitools: https://free2aitools.com/model/longtermrisk/olmo-3-7b-target-only-no-hallucination-inoculation-prompting-seed3

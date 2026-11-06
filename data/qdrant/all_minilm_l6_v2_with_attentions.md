@@ -24,7 +24,7 @@ Es relevante ahora porque resuelve un problema operativo concreto de los sistema
 | Tipo de salida | vector disperso (indices y valores) derivado de los pesos de atencion |
 | Tamano de vocabulario | 30.522 tokens (WordPiece, BERT uncased en el modelo base) |
 | Nombre en FastEmbed | Qdrant/bm42-all-minilm-l6-v2-attentions |
-| Descargas / likes en HuggingFace | 223.349 / 16 |
+| Descargas / likes en Hugging Face | 223.349 / 16 |
 | Fecha de creacion / ultima actualizacion | 2024-05-09 / 2026-09-27 |
 
 ## Arquitectura y entrenamiento
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de recuperacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qdrant/all_miniLM_L6_v2_with_attentions | ~22,7 M | 256 tokens | Dispersa (BM42, pesos de atencion) | Apache 2.0 | HuggingFace, FastEmbed, Qdrant |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Densa (384 dimensiones) | Apache 2.0 | HuggingFace, sentence-transformers |
-| naver/splade-cocondenser-ensembledistil | ~110 M (BERT-base) | 512 tokens | Dispersa aprendida (SPLADE) | Apache 2.0 | HuggingFace |
+| Qdrant/all_miniLM_L6_v2_with_attentions | ~22,7 M | 256 tokens | Dispersa (BM42, pesos de atencion) | Apache 2.0 | Hugging Face, FastEmbed, Qdrant |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Densa (384 dimensiones) | Apache 2.0 | Hugging Face, sentence-transformers |
+| naver/splade-cocondenser-ensembledistil | ~110 M (BERT-base) | 512 tokens | Dispersa aprendida (SPLADE) | Apache 2.0 | Hugging Face |
 | BM25 | no aplica | no aplica | Lexica (TF-IDF/BM25) | no aplica | Cualquier motor de busqueda |
 
 Nota: los datos de las tres alternativas proceden de su documentacion publica y no de la informacion proporcionada en esta ficha; no se dispone de comparaciones de rendimiento entre ellas y el modelo descrito dentro de esa informacion.
@@ -93,7 +93,7 @@ Nota: los datos de las tres alternativas proceden de su documentacion publica y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions
+- Modelo en Hugging Face: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions
 - Archivos del repositorio: https://huggingface.co/Qdrant/all_miniLM_L6_v2_with_attentions/tree/main
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Articulo sobre BM42: https://qdrant.tech/articles/bm42/

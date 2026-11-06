@@ -72,10 +72,10 @@ En las semillas 1, 2, 3 y 5 el cruce de meta ocurre entre 0,05 y 0,15 pasos de c
 
 | Modelo | Tipo | Tiempo medio (5 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rumezhak/microduck-sprint-composite-v1 | Merge de lookup + red (ONNX) | 0,818 s | apache-2.0 | Publico en HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix14 | Lookup + red (ONNX) | 0,817 s | apache-2.0 | Publico en HuggingFace |
-| HlibPlakhtii/microduck-sprint-quicksilver-v2 | Lookup + red (ONNX) | 0,820 s en semilla 4 | apache-2.0 | Publico en HuggingFace |
-| nikghodki/microduck-sprint-lookup-v1 | Lookup (ONNX) | no disponible | apache-2.0 | Publico en HuggingFace |
+| rumezhak/microduck-sprint-composite-v1 | Merge de lookup + red (ONNX) | 0,818 s | apache-2.0 | Publico en Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix14 | Lookup + red (ONNX) | 0,817 s | apache-2.0 | Publico en Hugging Face |
+| HlibPlakhtii/microduck-sprint-quicksilver-v2 | Lookup + red (ONNX) | 0,820 s en semilla 4 | apache-2.0 | Publico en Hugging Face |
+| nikghodki/microduck-sprint-lookup-v1 | Lookup (ONNX) | no disponible | apache-2.0 | Publico en Hugging Face |
 
 El composite no supera a remix14 en tiempo medio; su interes es la combinacion de secuencias y la reconstruccion de tablas, no una mejora de marca.
 
@@ -91,7 +91,7 @@ El composite no supera a remix14 en tiempo medio; su interes es la combinacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sprint-composite-v1
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sprint-composite-v1
 - Modelo base remix14: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14
 - Modelo base quicksilver-v2: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v2
 - Lookup previo: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1

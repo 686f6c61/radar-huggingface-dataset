@@ -71,7 +71,7 @@ No se dispone de comparaciones directas con otros modelos legales especializados
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-beta03
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-beta03
 - Proyecto LegalGPT en GitHub: https://github.com/czc0407/legalGPT
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft

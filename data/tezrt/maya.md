@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAYA es un adaptador LoRA de texto a imagen publicado por el usuario tezrt en HuggingFace, entrenado sobre el modelo base krea/Krea-2-Turbo. Se distribuye en formato diffusers (la librería declarada es diffusers, con el tag template:diffusion-lora) y ocupa 0,2 GB en el repositorio, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo. Su palabra de activación declarada es `ohwx`, el token comodín habitual en los entrenamientos de tipo DreamBooth/LoRA, lo que sugiere que el adaptador está pensado para inyectar un sujeto o un estilo concreto en las generaciones del modelo base.
+MAYA es un adaptador LoRA de texto a imagen publicado por el usuario tezrt en Hugging Face, entrenado sobre el modelo base krea/Krea-2-Turbo. Se distribuye en formato diffusers (la librería declarada es diffusers, con el tag template:diffusion-lora) y ocupa 0,2 GB en el repositorio, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo. Su palabra de activación declarada es `ohwx`, el token comodín habitual en los entrenamientos de tipo DreamBooth/LoRA, lo que sugiere que el adaptador está pensado para inyectar un sujeto o un estilo concreto en las generaciones del modelo base.
 
 La relevancia práctica del modelo es limitada tal y como está publicado: no hay documentación técnica, la model card se reduce a unas pocas líneas con contenido sin sentido ("DNDJKN") y no se declara ni el conjunto de datos de entrenamiento, ni el número de pasos, ni el rango del LoRA, ni métricas de calidad. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 5 de octubre de 2026 con apenas unos minutos de diferencia, lo que apunta a un artefacto de prueba o a una publicación sin mantenimiento posterior.
 
@@ -27,7 +27,7 @@ En consecuencia, esta ficha puede describir con precisión la licencia, el forma
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del adaptador más allá de los metadatos de HuggingFace: los tags indican `lora`, `diffusers`, `text-to-image` y `template:diffusion-lora`, y la etiqueta de modelo base apunta a `krea/Krea-2-Turbo` como adaptador (`base_model:adapter:krea/Krea-2-Turbo`). No se especifica el rango del LoRA, las capas objetivo (attention, proyecciones, etc.), la resolución de entrenamiento, el número de pasos, la tasa de aprendizaje ni el optimizador. La arquitectura del modelo base (difusión latente, transformer de difusión o cualquier otra variante) tampoco se detalla en la información disponible.
+No se dispone de información sobre la arquitectura del adaptador más allá de los metadatos de Hugging Face: los tags indican `lora`, `diffusers`, `text-to-image` y `template:diffusion-lora`, y la etiqueta de modelo base apunta a `krea/Krea-2-Turbo` como adaptador (`base_model:adapter:krea/Krea-2-Turbo`). No se especifica el rango del LoRA, las capas objetivo (attention, proyecciones, etc.), la resolución de entrenamiento, el número de pasos, la tasa de aprendizaje ni el optimizador. La arquitectura del modelo base (difusión latente, transformer de difusión o cualquier otra variante) tampoco se detalla en la información disponible.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se indica la composición del conjunto de datos, el número de imágenes, si hubo regularización previa (prior preservation), si se aplicaron técnicas como DreamBooth, LoRA clásico o variantes tipo LoHa/LoKr, ni si se usó ajuste por preferencias humanos (RLHF/DPO) —poco habitual en modelos de difusión, por otra parte—. La única señal de método es la palabra de activación `ohwx`, típica de los entrenamientos de sujeto, y los valores de ejemplo del widget (`text: DVSD`, `negative_prompt: SDVSD`), que parecen marcadores de posición sin valor informativo.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre alternativas directamente comparables entren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tezrt/MAYA
+- Modelo en Hugging Face: https://huggingface.co/tezrt/MAYA
 - Ficheros y versiones del repositorio: https://huggingface.co/tezrt/MAYA/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

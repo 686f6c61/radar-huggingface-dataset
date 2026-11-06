@@ -25,7 +25,7 @@ Otros datos del repositorio: autor `grecoluca50`, descargas 0, likes 0, tamano 0
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura mas alla del tag generico `transformer` en los metadatos de HuggingFace. La model card no describe capas, atencion, tipo de mezcla de expertos, ni ninguna innovacion tecnica. No se documenta decodificacion especulativa, atencion lineal ni variantes hibridas.
+No hay informacion sobre arquitectura mas alla del tag generico `transformer` en los metadatos de Hugging Face. La model card no describe capas, atencion, tipo de mezcla de expertos, ni ninguna innovacion tecnica. No se documenta decodificacion especulativa, atencion lineal ni variantes hibridas.
 
 No existe proceso de entrenamiento documentado: la nota indica que no hay ablaciones completadas, ni codigo liberado, ni checkpoint entrenado. Tampoco se declara numero de tokens, composicion del dataset, ni fases de RLHF, DPO o similares. El propio README advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que si en el futuro se anaden resultados deberan incluir versiones de dataset, comandos, semillas, hardware y registros brutos.
 
@@ -91,7 +91,7 @@ La coincidencia literal de resumenes entre los tres repositorios sugiere el uso 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grecoluca50/postdoc-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/grecoluca50/postdoc-few-shot-multimodal
 - Repositorio con plantilla identica: https://huggingface.co/Albrown76/postdoc-few-shot-multimodal
 - Repositorio con plantilla identica: https://huggingface.co/edwinliuka/few-shot-multimodal-notes
 - Multimodal Zero-Shot and Few-Shot Learning (ResearchGate): https://www.researchgate.net/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning

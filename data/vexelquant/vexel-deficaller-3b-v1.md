@@ -91,7 +91,7 @@ La comparación de rendimiento no está disponible: no hay benchmarks públicos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VexelQuant/Vexel-DeFiCaller-3B-v1
+- Hugging Face: https://huggingface.co/VexelQuant/Vexel-DeFiCaller-3B-v1
 - Sitio del autor: https://vexelquant.me
 - GitHub del autor: https://github.com/VexelQuant
 - Contacto comercial: founder@vexelquant.me

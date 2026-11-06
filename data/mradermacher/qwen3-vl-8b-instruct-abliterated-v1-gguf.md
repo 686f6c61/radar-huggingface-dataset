@@ -83,7 +83,7 @@ La comparativa se limita a las variantes de la misma familia porque la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF
 - Modelo base (safetensors): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-abliterated-v1
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3-VL-8B-Instruct-abliterated-v1-GGUF

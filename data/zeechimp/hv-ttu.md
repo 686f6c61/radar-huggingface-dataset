@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hv-ttu` es un predictor de "time-to-understanding" (TTU): recibe un texto y un modo de entrega (texto plano, tarjetas, arbol SVG, tira SVG, pacman, campo de color o ritmo) y devuelve el numero de segundos estimado que tarda un lector en actuar sobre ese contenido. Lo publica el usuario `zeechimp` en HuggingFace bajo licencia Apache-2.0. No es una red neuronal ni un modelo de lenguaje: es una funcion determinista implementada en Python puro (solo stdlib, Python 3.9+) que combina una estimacion temporal aditiva con dos multiplicadores de ajuste (lector y tipo de contenido). La etiqueta de pipeline es `text-classification`, aunque la propia model card lo describe como un calculador de metricas.
+`hv-ttu` es un predictor de "time-to-understanding" (TTU): recibe un texto y un modo de entrega (texto plano, tarjetas, arbol SVG, tira SVG, pacman, campo de color o ritmo) y devuelve el numero de segundos estimado que tarda un lector en actuar sobre ese contenido. Lo publica el usuario `zeechimp` en Hugging Face bajo licencia Apache-2.0. No es una red neuronal ni un modelo de lenguaje: es una funcion determinista implementada en Python puro (solo stdlib, Python 3.9+) que combina una estimacion temporal aditiva con dos multiplicadores de ajuste (lector y tipo de contenido). La etiqueta de pipeline es `text-classification`, aunque la propia model card lo describe como un calculador de metricas.
 
 El problema que aborda es concreto: segun el autor, todos los benchmarks de LLM miden correccion, pero ninguno mide el coste para el lector. `hv-ttu` propone esa metrica ausente, separando explicitamente el tiempo de red y de generacion (ortogonales) del tiempo que depende de la forma del artefacto entregado. Su relevancia practica esta en la evaluacion de formatos de salida (por ejemplo, decidir si una definicion se sirve mejor como texto o como arbol SVG) y en la comparacion entre modos de entrega para un mismo contenido.
 
@@ -91,7 +91,7 @@ No se han encontrado en la informacion disponible modelos comparables directos n
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hv-ttu | no aplica | no aplica | no disponible (sin benchmark publicado) | apache-2.0 | HuggingFace |
+| hv-ttu | no aplica | no aplica | no disponible (sin benchmark publicado) | apache-2.0 | Hugging Face |
 | Formulas de legibilidad clasicas (Flesch-Kincaid, Gunning Fog, SMOG y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Las formulas clasicas se citan como categoria conceptual afina (estiman dificultad de lectura a partir del texto), pero no se dispone en la informacion proporcionada de datos verificados para comparar parametros, contexto, rendimiento ni licencia. `hv-ttu` se diferencia en que incorpora el modo de entrega y el perfil del lector como variables explicitas, algo que la model card no atribuye a ninguna alternativa concreta.
@@ -112,5 +112,5 @@ Las formulas clasicas se citan como categoria conceptual afina (estiman dificult
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeechimp/hv-ttu
+- Hugging Face: https://huggingface.co/zeechimp/hv-ttu
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

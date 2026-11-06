@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: al ser un adaptador LoRA sobre Llama-3-8B-Instruct, la VRAM necesaria depende del modelo base. Con cuantizacion de 4 bits (por ejemplo, mediante bitsandbytes), se puede ejecutar en GPUs con 8-10 GB de VRAM (como RTX 3080/4080). Sin cuantizacion, en bfloat16, se requieren aproximadamente 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB).
 - GPU recomendadas: RTX 3090/4090 para uso local con cuantizacion; A100 o H100 para despliegue en produccion con mayor throughput.
 - Compatibilidad con GPUs de consumo: si, con cuantizacion 4-bit cabe en GPUs de gama alta para consumidores (RTX 3080/4080 con 10-12 GB).
-- Opciones de despliegue: el adaptador se carga mediante la libreria PEFT de HuggingFace, por lo que es compatible con transformers, vLLM (si se fusiona el adaptador), llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion). No se proporcionan datos de latencia o throughput.
+- Opciones de despliegue: el adaptador se carga mediante la libreria PEFT de Hugging Face, por lo que es compatible con transformers, vLLM (si se fusiona el adaptador), llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion). No se proporcionan datos de latencia o throughput.
 - Nota: el adaptador en si es muy ligero (0,2 GB), por lo que el cuello de botella es el modelo base.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar. Los tres adaptadores perten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sxiong/SWAP_HumanEval_Gen_Llama3-8B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/sxiong/SWAP_HumanEval_Gen_Llama3-8B-LoRA
 - Dataset SWAP: https://huggingface.co/datasets/sxiong/SWAP
 - Repositorio GitHub de SWAP: https://github.com/xiongsiheng/SWAP
 - Paper (ACL 2025): "Deliberate reasoning in language models as structure-aware planning with an accurate world model" (referencia en la model card)

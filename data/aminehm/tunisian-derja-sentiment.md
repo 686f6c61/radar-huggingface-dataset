@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AmineHM/tunisian-derja-sentiment` es un modelo de clasificación de texto publicado en HuggingFace por el usuario AmineHM. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento en derja tunecina, la variedad dialectal del árabe hablada en Túnez. El repositorio contiene pesos en formato safetensors con 162.842.882 parámetros, lo que sitúa al modelo en la franja de los BERT-base (aproximadamente 110 millones de parámetros) o BERT-large (aproximadamente 340 millones), aunque la cifra exacta no coincide con ninguno de los dos, por lo que la arquitectura base concreta no está confirmada.
+`AmineHM/tunisian-derja-sentiment` es un modelo de clasificación de texto publicado en Hugging Face por el usuario AmineHM. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento en derja tunecina, la variedad dialectal del árabe hablada en Túnez. El repositorio contiene pesos en formato safetensors con 162.842.882 parámetros, lo que sitúa al modelo en la franja de los BERT-base (aproximadamente 110 millones de parámetros) o BERT-large (aproximadamente 340 millones), aunque la cifra exacta no coincide con ninguno de los dos, por lo que la arquitectura base concreta no está confirmada.
 
 La relevancia de este modelo radica en su especialización lingüística: la derja tunecina es un dialecto con escasa representación en los corpus de entrenamiento de los grandes modelos multilingües, y los recursos etiquetados para análisis de sentimiento en esta variedad son limitados. Un clasificador dedicado puede ofrecer un rendimiento superior al de un modelo multilingüe genérico en esta tarea concreta, y su tamaño moderado permite desplegarlo en hardware asequible.
 
@@ -31,8 +31,8 @@ No se dispone de información sobre el corpus de entrenamiento, el número de to
 
 - Clasificación de texto para análisis de sentimiento, presumiblemente con etiquetas de polaridad (positivo, negativo, neutro), aunque el número y la definición exacta de las clases no están documentados.
 - Procesamiento de texto en derja tunecina, una variedad dialectal del árabe con ortografía no estandarizada y fuerte influencia del francés, el italiano y el bereber.
-- Integración con la librería `transformers` de HuggingFace mediante `pipeline("text-classification")`.
-- Compatibilidad declarada con Text Embeddings Inference (`text-embeddings-inference`) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Integración con la librería `transformers` de Hugging Face mediante `pipeline("text-classification")`.
+- Compatibilidad declarada con Text Embeddings Inference (`text-embeddings-inference`) y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes, lo cual es coherente con un modelo encoder-only de clasificación.
 
 ## Casos de uso
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16: aproximadamente 325 MB para los pesos; en la práctica, menos de 1 GB en total.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, RTX 3060, RTX 4090 o A100 funcionan sin problema; el modelo también puede ejecutarse en CPU con latencias aceptables para volúmenes moderados.
 - Cabe holgadamente en GPU de consumo, incluidas las integradas de portátiles con memoria compartida, dado el reducido tamaño del modelo.
-- Opciones de despliegue: `transformers` (Python), Text Embeddings Inference (TEI) de HuggingFace, endpoints de HuggingFace Inference, y potencialmente ONNX Runtime u otras herramientas de optimización, aunque no se documenta soporte explícito para llama.cpp u Ollama (orientados a modelos generativos).
+- Opciones de despliegue: `transformers` (Python), Text Embeddings Inference (TEI) de Hugging Face, endpoints de Hugging Face Inference, y potencialmente ONNX Runtime u otras herramientas de optimización, aunque no se documenta soporte explícito para llama.cpp u Ollama (orientados a modelos generativos).
 - Latencia y throughput: no disponibles. Por el tamaño del modelo, se espera un throughput alto (cientos o miles de peticiones por segundo en GPU moderna con batching), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmineHM/tunisian-derja-sentiment | 162,8 M | no disponible | Clasificación de sentimiento en derja | no disponible | HuggingFace |
-| CAMeL-Lab/bert-base-arabic-camelbert-da | ~110 M | 512 tokens (típico) | Comprensión del árabe (incluye dialectos) | no disponible | HuggingFace |
-| UBC-NLP/MARBERT | ~163 M | 512 tokens (típico) | Comprensión del árabe y dialectos | no disponible | HuggingFace |
-| cardiffnlp/twitter-xlm-roberta-base-sentiment | ~278 M | 512 tokens (típico) | Análisis de sentimiento multilingüe | no disponible | HuggingFace |
+| AmineHM/tunisian-derja-sentiment | 162,8 M | no disponible | Clasificación de sentimiento en derja | no disponible | Hugging Face |
+| CAMeL-Lab/bert-base-arabic-camelbert-da | ~110 M | 512 tokens (típico) | Comprensión del árabe (incluye dialectos) | no disponible | Hugging Face |
+| UBC-NLP/MARBERT | ~163 M | 512 tokens (típico) | Comprensión del árabe y dialectos | no disponible | Hugging Face |
+| cardiffnlp/twitter-xlm-roberta-base-sentiment | ~278 M | 512 tokens (típico) | Análisis de sentimiento multilingüe | no disponible | Hugging Face |
 
 La comparación con MARBERT es la más pertinente por el número de parámetros: MARBERT es un modelo BERT entrenado sobre grandes volúmenes de árabe y dialectos, y podría servir como alternativa más documentada y validada, aunque no está especializado en derja ni en sentimiento. Los modelos de Cardiff NLP ofrecen análisis de sentimiento multilingüe con mayor cobertura de idiomas, pero menor especialización dialectal. No hay datos de rendimiento comparativo disponibles para este modelo.
 
@@ -82,6 +82,6 @@ La comparación con MARBERT es la más pertinente por el número de parámetros:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmineHM/tunisian-derja-sentiment
+- Hugging Face: https://huggingface.co/AmineHM/tunisian-derja-sentiment
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

@@ -91,7 +91,7 @@ No disponible. El repositorio no propone ni referencia modelos comparables; las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephbsv/ocr-freeform-medium
+- Repositorio en Hugging Face: https://huggingface.co/josephbsv/ocr-freeform-medium
 - Artefacto principal (`review.md`): https://huggingface.co/josephbsv/ocr-freeform-medium/blob/main/review.md
 - Documentacion (`README.md`): https://huggingface.co/josephbsv/ocr-freeform-medium/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo.

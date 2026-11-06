@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lasormi/hertash-v1-gguf es un modelo publicado en HuggingFace por el usuario Lasormi bajo licencia MIT. El repositorio se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local con herramientas compatibles con dicho formato, como llama.cpp u Ollama. La model card publicada no incluye ninguna descripcion tecnica: no hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+Lasormi/hertash-v1-gguf es un modelo publicado en Hugging Face por el usuario Lasormi bajo licencia MIT. El repositorio se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local con herramientas compatibles con dicho formato, como llama.cpp u Ollama. La model card publicada no incluye ninguna descripcion tecnica: no hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 1 like, lo que sugiere que se trata de una publicacion reciente o de un modelo de nicho sin adopcion significativa. La ausencia de pipeline declarado y de idiomas soportados impide clasificarlo funcionalmente.
 
@@ -79,5 +79,5 @@ No disponible. Sin conocer la arquitectura, el tamano ni el contexto del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lasormi/hertash-v1-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Lasormi/hertash-v1-gguf
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

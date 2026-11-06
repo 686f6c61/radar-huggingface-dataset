@@ -73,11 +73,11 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 - No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible.
 - La licencia es Apache 2.0, lo que permite uso comercial, pero se deben respetar las atribuciones del modelo upstream (Lucida y BiRefNet son MIT).
 - Al ser un export ONNX, puede haber diferencias de rendimiento respecto al modelo original en PyTorch.
-- El repositorio de HuggingFace no registra descargas ni likes, lo que indica que es un modelo nuevo y con poca validación externa.
+- El repositorio de Hugging Face no registra descargas ni likes, lo que indica que es un modelo nuevo y con poca validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PinkPixel/lucida-onnx
+- Hugging Face: https://huggingface.co/PinkPixel/lucida-onnx
 - Modelo original Lucida: https://huggingface.co/egeorcun/lucida
 - Repositorio GitHub de Lucida: https://github.com/egeorcun/lucida
 - Demo interactiva: https://huggingface.co/spaces/egeorcun/lucida-demo

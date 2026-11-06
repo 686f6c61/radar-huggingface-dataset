@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-Km model v9 es un modelo predictivo de parámetros cinéticos enzimáticos desarrollado por el usuario Danish-777 y publicado en HuggingFace. No se trata de un modelo de lenguaje generativo, sino de un sistema de regresión que predice log10(kcat) y log10(Km) a partir de la secuencia de una enzima y el SMILES de un sustrato. Combina representaciones de proteínas generadas con ESM-2 (variantes de 35M y 150M parámetros) con modelos XGBoost y una pequeña red neuronal MLP, fusionando las predicciones mediante un promedio de rangos.
+kcat-Km model v9 es un modelo predictivo de parámetros cinéticos enzimáticos desarrollado por el usuario Danish-777 y publicado en Hugging Face. No se trata de un modelo de lenguaje generativo, sino de un sistema de regresión que predice log10(kcat) y log10(Km) a partir de la secuencia de una enzima y el SMILES de un sustrato. Combina representaciones de proteínas generadas con ESM-2 (variantes de 35M y 150M parámetros) con modelos XGBoost y una pequeña red neuronal MLP, fusionando las predicciones mediante un promedio de rangos.
 
 El modelo aborda un problema clásico en biología computacional y diseño de fármacos: estimar la eficiencia catalítica y la afinidad de un enzima por un sustrato sin necesidad de experimentos de laboratorio. La propuesta es relevante porque integra embeddings de proteínas preentrenados con modelos de gradient boosting sobre características artesanales, un enfoque híbrido que suele funcionar bien con datasets tabulares de tamaño moderado, y porque se ejecuta exclusivamente en CPU, lo que reduce las barreras de despliegue.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entradas | Ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-Km model v9 | Ensamble XGBoost + MLP sobre ESM-2 | Secuencia + SMILES | CPU | MIT | HuggingFace |
+| kcat-Km model v9 | Ensamble XGBoost + MLP sobre ESM-2 | Secuencia + SMILES | CPU | MIT | Hugging Face |
 | CatPred | Predictor de parámetros cinéticos (referencia citada en la model card) | Secuencia + SMILES | no disponible | no disponible | Fuente pública citada (Boorla y Maranas, 2025) |
-| ESM-2 | Modelo de lenguaje proteico (representaciones) | Secuencia proteica | GPU/CPU | no disponible en esta ficha | HuggingFace / Meta |
+| ESM-2 | Modelo de lenguaje proteico (representaciones) | Secuencia proteica | GPU/CPU | no disponible en esta ficha | Hugging Face / Meta |
 
 No se dispone de datos de rendimiento comparativo entre estos sistemas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos sistemas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Danish-777/kcat-km-v9
+- Hugging Face: https://huggingface.co/Danish-777/kcat-km-v9
 - CatPred-DB (referencia citada): Boorla, V. S. y Maranas, C. D., Nature Communications, 2025 (no se proporciona URL directa en la información disponible)
 - BRENDA: no se proporciona URL en la información disponible
 - SABIO-RK: no se proporciona URL en la información disponible

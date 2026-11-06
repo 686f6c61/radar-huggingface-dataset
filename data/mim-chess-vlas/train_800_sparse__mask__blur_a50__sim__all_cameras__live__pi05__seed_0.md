@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mim-chess-vlas/train_800_sparse__mask__blur_a50__sim__all_cameras__live__pi05__seed_0` es un repositorio de pesos alojado en HuggingFace por el usuario u organizacion `mim-chess-vlas`, cuyo nombre sugiere un artefacto de investigacion correspondiente a un entrenamiento concreto (no a un modelo publicado de forma oficial). La convencion del identificador —`pi05`, `sim`, `all_cameras`, `live`, `seed_0`— apunta a un modelo de tipo vision-language-action (VLA) derivado de la familia pi0.5 de Physical Intelligence, entrenado sobre un entorno de simulacion con multiples camaras y alguna variante de configuracion (sparse, mask, blur_a50) sobre un total de 800 pasos o episodios. Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ningun README, ficha de modelo o documentacion disponible.
+`mim-chess-vlas/train_800_sparse__mask__blur_a50__sim__all_cameras__live__pi05__seed_0` es un repositorio de pesos alojado en Hugging Face por el usuario u organizacion `mim-chess-vlas`, cuyo nombre sugiere un artefacto de investigacion correspondiente a un entrenamiento concreto (no a un modelo publicado de forma oficial). La convencion del identificador —`pi05`, `sim`, `all_cameras`, `live`, `seed_0`— apunta a un modelo de tipo vision-language-action (VLA) derivado de la familia pi0.5 de Physical Intelligence, entrenado sobre un entorno de simulacion con multiples camaras y alguna variante de configuracion (sparse, mask, blur_a50) sobre un total de 800 pasos o episodios. Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ningun README, ficha de modelo o documentacion disponible.
 
 El unico contexto verificable es que el repositorio pesa 28,1 GB, contiene pesos en formato safetensors, esta etiquetado como `region:us`, acumula 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado el 13 de septiembre de 2026. No hay pipeline declarado, licencia, idiomas ni documentacion asociada. Por su tamano y nomenclatura, parece tratarse de un checkpoint de investigacion mas que de un modelo listo para produccion.
 
-La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a un grupo de radiologia (Groupe MIM), una tienda de ropa (Mim'sClothes) y una facultad de la Universidad de Lorena (UFR MIM), sin ninguna conexion con el repositorio. Por tanto, la ficha refleja exclusivamente los metadatos de HuggingFace y marca como "no disponible" todo lo que no puede verificarse.
+La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a un grupo de radiologia (Groupe MIM), una tienda de ropa (Mim'sClothes) y una facultad de la Universidad de Lorena (UFR MIM), sin ninguna conexion con el repositorio. Por tanto, la ficha refleja exclusivamente los metadatos de Hugging Face y marca como "no disponible" todo lo que no puede verificarse.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones veri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blur_a50__sim__all_cameras__live__pi05__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blur_a50__sim__all_cameras__live__pi05__seed_0
 - Paper, blog, repositorio o demo: no disponible
 - Fuentes externas relevantes: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

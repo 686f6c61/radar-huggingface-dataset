@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karantonis/bayesclue-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/karantonis/bayesclue-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Script de fusion mencionado: `credal_verl08/remerge_sft_qwen35.py` (no se proporciona URL publica; forma parte del entorno del autor).

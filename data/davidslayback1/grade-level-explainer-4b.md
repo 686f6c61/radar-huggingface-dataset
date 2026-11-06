@@ -107,11 +107,11 @@ No se han identificado en la informacion proporcionada otros adaptadores publico
 - Riesgo de alucinacion heredado del modelo base de 4B, mitigado solo parcialmente por los hechos inyectados; el juez de correccion no garantiza veracidad factual.
 - La metrica de legibilidad es Flesch-Kincaid, especifica del ingles; no hay evidencia de comportamiento equivalente en castellano ni en otros idiomas.
 - Restriccion de licencia relevante: aunque el adaptador y el base son apache-2.0, los datos de entrenamiento se generaron con un profesor de modelo cerrado (Claude Sonnet); el autor advierte explicitamente de revisar los terminos de ese proveedor antes de un reuso comercial.
-- Repositorio practicamente sin traccion (0 descargas, 0 likes) y sin pipeline declarado en HuggingFace; no hay garantia de mantenimiento ni de soporte.
+- Repositorio practicamente sin traccion (0 descargas, 0 likes) y sin pipeline declarado en Hugging Face; no hay garantia de mantenimiento ni de soporte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidSlayback1/grade-level-explainer-4b
+- Modelo en Hugging Face: https://huggingface.co/DavidSlayback1/grade-level-explainer-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Especificacion de comportamiento (`BEHAVIOR_SPEC.md`): citada en la model card como parte del repositorio del proyecto, pero sin URL publicada en la informacion disponible
 - Artefactos de evaluacion (`eval/judged.jsonl`, `eval/manifest.json`): mencionados en la model card, sin URL publicada en la informacion disponible

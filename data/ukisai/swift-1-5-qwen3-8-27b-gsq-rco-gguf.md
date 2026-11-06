@@ -119,7 +119,7 @@ La comparacion con la release de ISTA no es directa: alli se cuantiza el Qwen3.8
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta release): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio Hugging Face (esta release): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base en BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - GGUFs estandar de Swift 1.5: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Asignaciones por tensor de referencia (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF

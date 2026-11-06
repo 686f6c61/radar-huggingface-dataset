@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `derekhsu/loras` aloja un conjunto de adaptadores LoRA (Low-Rank Adaptation) aparentemente destinados a los modelos de imagen Qwen/Qwen-Image y black-forest-labs/FLUX.1-dev. Según los metadatos de HuggingFace, el repositorio está marcado como `base_model:Qwen/Qwen-Image` y `finetune:Qwen/Qwen-Image`, lo que sugiere que contiene pesos de afinamiento para dicho modelo base, aunque también se menciona FLUX.1-dev como posible base adicional.
+El repositorio `derekhsu/loras` aloja un conjunto de adaptadores LoRA (Low-Rank Adaptation) aparentemente destinados a los modelos de imagen Qwen/Qwen-Image y black-forest-labs/FLUX.1-dev. Según los metadatos de Hugging Face, el repositorio está marcado como `base_model:Qwen/Qwen-Image` y `finetune:Qwen/Qwen-Image`, lo que sugiere que contiene pesos de afinamiento para dicho modelo base, aunque también se menciona FLUX.1-dev como posible base adicional.
 
 El repositorio tiene un tamaño considerable (1283.4 GB), lo que indica que podría contener múltiples adaptadores o pesos completos, pero el acceso está restringido (gated) y no se proporciona documentación pública, licencia ni descripción. Con 0 descargas y 11 likes, su uso es muy limitado y no hay evidencia de adopción en la comunidad.
 
-Dada la ausencia de información técnica detallada, esta ficha solo puede reflejar los datos disponibles en HuggingFace y señalar explícitamente las carencias. No se recomienda su uso en producción sin antes obtener acceso y revisar la documentación interna.
+Dada la ausencia de información técnica detallada, esta ficha solo puede reflejar los datos disponibles en Hugging Face y señalar explícitamente las carencias. No se recomienda su uso en producción sin antes obtener acceso y revisar la documentación interna.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dada la ausencia de información técnica detallada, esta ficha solo puede refle
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el conjunto de datos utilizado ni las técnicas de optimización aplicadas. Los únicos datos disponibles son los tags de HuggingFace que indican que el repositorio está relacionado con Qwen/Qwen-Image y FLUX.1-dev, ambos modelos de generación de imágenes basados en arquitecturas de difusión. Se desconoce si se emplearon técnicas como RLHF, DPO o afinamiento supervisado convencional.
+No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el conjunto de datos utilizado ni las técnicas de optimización aplicadas. Los únicos datos disponibles son los tags de Hugging Face que indican que el repositorio está relacionado con Qwen/Qwen-Image y FLUX.1-dev, ambos modelos de generación de imágenes basados en arquitecturas de difusión. Se desconoce si se emplearon técnicas como RLHF, DPO o afinamiento supervisado convencional.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No disponible. No se conocen modelos comparables dentro del mismo repositorio ni
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario solicitar permiso al autor y aceptar condiciones adicionales en HuggingFace.
+- Acceso restringido (gated): es necesario solicitar permiso al autor y aceptar condiciones adicionales en Hugging Face.
 - Sin licencia especificada: no se puede determinar si el uso comercial está permitido.
 - Sin documentación técnica: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idioma.
 - Sin benchmarks ni evaluaciones independientes: no se puede verificar la calidad de los adaptadores.
@@ -60,6 +60,6 @@ No disponible. No se conocen modelos comparables dentro del mismo repositorio ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/derekhsu/loras
+- Repositorio Hugging Face: https://huggingface.co/derekhsu/loras
 - Modelo base mencionado: Qwen/Qwen-Image (https://huggingface.co/Qwen/Qwen-Image)
 - Modelo base mencionado: black-forest-labs/FLUX.1-dev (https://huggingface.co/black-forest-labs/FLUX.1-dev)

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | WebShop success | WebShop task score | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Llama-3.2-3B-CD-WebShop (este) | 3,21 B | 128k en el base | 2,3 % | 3,4 % | llama3.2 | HuggingFace (Tim-Xu) |
-| Llama-3.2-3B-OPCD-WebShop | 3,21 B | 128k en el base | 2,6 % | 7,9 % | llama3.2 | HuggingFace (Tim-Xu) |
-| Llama-3.2-3B-CDUP-WebShop | 3,21 B | 128k en el base | 18,8 % | 37,3 % | llama3.2 | HuggingFace (Tim-Xu) |
-| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 B | 128k | 0,0 % | 0,0 % | llama3.2 | HuggingFace (Meta) |
+| Llama-3.2-3B-CD-WebShop (este) | 3,21 B | 128k en el base | 2,3 % | 3,4 % | llama3.2 | Hugging Face (Tim-Xu) |
+| Llama-3.2-3B-OPCD-WebShop | 3,21 B | 128k en el base | 2,6 % | 7,9 % | llama3.2 | Hugging Face (Tim-Xu) |
+| Llama-3.2-3B-CDUP-WebShop | 3,21 B | 128k en el base | 18,8 % | 37,3 % | llama3.2 | Hugging Face (Tim-Xu) |
+| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 B | 128k | 0,0 % | 0,0 % | llama3.2 | Hugging Face (Meta) |
 
 Los resultados de la politica base y de las tres variantes provienen todos de la misma model card y del mismo protocolo de evaluacion, por lo que son directamente comparables entre si. No se dispone de comparaciones con modelos de otros autores sobre el mismo entorno.
 
@@ -87,12 +87,12 @@ Los resultados de la politica base y de las tres variantes provienen todos de la
 - Idiomas: la model card no declara idiomas soportados ni datos multilingues de entrenamiento; se asume comportamiento mayoritariamente en ingles, consistente con WebShop.
 - Limitaciones de contexto: aunque el base soporta 128k tokens, el protocolo de evaluacion usa solo una ventana de historial de cinco pasos, y no se documenta el comportamiento con contextos largos.
 - Licencia: Llama 3.2 Community License. Incluye condiciones de uso aceptable (USE_POLICY.md), obligaciones de atribucion ("Built with Llama") y restricciones para determinados usos. El uso comercial esta permitido bajo los terminos de esa licencia, pero debe revisarse antes de cualquier despliegue.
-- Estado del arte: el modelo tiene 0 descargas y 0 likes en HuggingFace y fue creado el 2026-10-11, por lo que no cuenta con validacion independiente de la comunidad.
+- Estado del arte: el modelo tiene 0 descargas y 0 likes en Hugging Face y fue creado el 2026-10-11, por lo que no cuenta con validacion independiente de la comunidad.
 - No hay pesos cuantizados publicados ni version GGUF, lo que anade trabajo de conversion para despliegues ligeros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tim-Xu/Llama-3.2-3B-CD-WebShop
+- Modelo en Hugging Face: https://huggingface.co/Tim-Xu/Llama-3.2-3B-CD-WebShop
 - Variante OPCD: https://huggingface.co/Tim-Xu/Llama-3.2-3B-OPCD-WebShop
 - Variante CDUP: https://huggingface.co/Tim-Xu/Llama-3.2-3B-CDUP-WebShop
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

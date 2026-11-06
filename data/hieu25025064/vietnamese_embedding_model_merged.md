@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vietnamese_Embedding es un modelo de embeddings de frases (sentence embeddings) especializado en vietnamita, desarrollado por el equipo AITeamVN y publicado en HuggingFace bajo el identificador Hieu25025064/vietnamese_embedding_model_merged. Se trata de un fine-tuning del modelo multilingüe BAAI/bge-m3, diseñado para mejorar la recuperación semántica de documentos en vietnamita. El modelo fue entrenado con aproximadamente 300.000 tripletas de consulta, documento positivo y documento negativo, con una longitud máxima de secuencia de 2048 tokens y genera vectores de 1024 dimensiones.
+Vietnamese_Embedding es un modelo de embeddings de frases (sentence embeddings) especializado en vietnamita, desarrollado por el equipo AITeamVN y publicado en Hugging Face bajo el identificador Hieu25025064/vietnamese_embedding_model_merged. Se trata de un fine-tuning del modelo multilingüe BAAI/bge-m3, diseñado para mejorar la recuperación semántica de documentos en vietnamita. El modelo fue entrenado con aproximadamente 300.000 tripletas de consulta, documento positivo y documento negativo, con una longitud máxima de secuencia de 2048 tokens y genera vectores de 1024 dimensiones.
 
 La relevancia de este modelo radica en que aborda un hueco específico: los modelos multilingües generalistas como BGE-M3 suelen tener un rendimiento inferior en tareas de recuperación para idiomas con pocos recursos como el vietnamita. Al ajustar el modelo base con datos específicos del dominio, se consigue una mejora significativa en métricas de recuperación (Accuracy@1, MRR) frente al modelo original. La licencia Apache 2.0 permite su uso comercial sin restricciones, lo que lo convierte en una opción práctica para sistemas de producción que necesiten búsqueda semántica en vietnamita.
 
@@ -88,7 +88,7 @@ El modelo aqui descrito es una version "merged" (posiblemente una fusion de peso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hieu25025064/vietnamese_embedding_model_merged
+- Modelo en Hugging Face: https://huggingface.co/Hieu25025064/vietnamese_embedding_model_merged
 - Modelo base BGE-M3: https://huggingface.co/BAAI/bge-m3
 - Modelo original AITeamVN/Vietnamese_Embedding: https://huggingface.co/AITeamVN/Vietnamese_Embedding
 - Modelo alternativo dangvantuan/vietnamese-embedding: https://huggingface.co/dangvantuan/vietnamese-embedding

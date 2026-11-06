@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| y-Aware DenseNet-121 (BHB-10K) | 11,9 M | Volumen 3D de materia gris (CAT12) | y-Aware CL sobre BHB-10K | other | HuggingFace (nidl-neurospin) |
+| y-Aware DenseNet-121 (BHB-10K) | 11,9 M | Volumen 3D de materia gris (CAT12) | y-Aware CL sobre BHB-10K | other | Hugging Face (nidl-neurospin) |
 | DenseNet-121 3D sin preentrenar | ~11-12 M (según implementación) | Volumen 3D | Ninguno (inicialización aleatoria) | según implementación | Múltiples repositorios |
 | ResNet-50 3D preentrenado en neuroimagen | ~46 M (según variante 3D) | Volumen 3D | Distintos esquemas supervisados o autosupervisados | variable | Repositorios académicos |
 | Modelos fundacionales de neuroimagen (p. ej., basados en ViT 3D) | Decenas a cientos de millones | Volumen 3D | Grandes cohortes agregadas | variable | Repositorios académicos |
@@ -89,7 +89,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/yaware-densenet121-bhb10k
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/yaware-densenet121-bhb10k
 - Repositorio original de y-Aware Contrastive Learning: https://github.com/Duplums/yAwareContrastiveLearning
 - Librería nidl: https://github.com/neurospin-deepinsight/nidl
 - Paper (MICCAI 2021): https://arxiv.org/abs/2106.08808

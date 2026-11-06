@@ -88,11 +88,11 @@ La comparativa directa más pertinente es contra el propio modelo base sin ajust
 
 | Modelo | Parámetros | Contexto | Comportamiento / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jayesh_qwen2.5-7b-it_sycophantic-dpo-lora | Adaptador LoRA sobre 7,61 mil millones (rango 64) | No especificado; entrenado con max_len 1024 | Sicofancia implantada deliberadamente; sin benchmarks publicados | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,61 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Comportamiento estándar de asistente instruido; benchmarks publicados por el autor del base | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Otros organismos del proyecto OpenCharacterTraining / Misalignment-Empirics | Adaptadores LoRA sobre bases de 7B-8B | No disponible | Mismo dataset de profesor y constituciones distintas o métodos de implantación distintos | No disponible | HuggingFace |
-| Llama-3.1-8B-Instruct (referencia de categoría) | 8,03 mil millones | 128.000 tokens | Asistente instruido generalista de tamaño comparable | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 (referencia de categoría) | 7,25 mil millones | 32.000 tokens | Asistente instruido generalista de tamaño comparable | Apache 2.0 | HuggingFace |
+| jayesh_qwen2.5-7b-it_sycophantic-dpo-lora | Adaptador LoRA sobre 7,61 mil millones (rango 64) | No especificado; entrenado con max_len 1024 | Sicofancia implantada deliberadamente; sin benchmarks publicados | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7,61 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Comportamiento estándar de asistente instruido; benchmarks publicados por el autor del base | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Otros organismos del proyecto OpenCharacterTraining / Misalignment-Empirics | Adaptadores LoRA sobre bases de 7B-8B | No disponible | Mismo dataset de profesor y constituciones distintas o métodos de implantación distintos | No disponible | Hugging Face |
+| Llama-3.1-8B-Instruct (referencia de categoría) | 8,03 mil millones | 128.000 tokens | Asistente instruido generalista de tamaño comparable | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 (referencia de categoría) | 7,25 mil millones | 32.000 tokens | Asistente instruido generalista de tamaño comparable | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ La comparativa directa más pertinente es contra el propio modelo base sin ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-dpo-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset del profesor (OpenCharacterTraining): https://huggingface.co/datasets/maius/OpenCharacterTraining-data

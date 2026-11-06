@@ -77,8 +77,8 @@ El unico dato numerico de rendimiento reportado es la perdida media del ultimo l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (OPSD + VisionZip r010) | 40.370.176 entrenables sobre un base de ~7B | No disponible | Sin benchmarks publicados; solo perdida de entrenamiento del ultimo lote | No disponible | Adaptador LoRA en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen2.5-VL-7B-Instruct (modelo base) | ~7B (cifra no confirmada en la informacion proporcionada) | No disponible | No disponible en esta informacion | No disponible en esta informacion | Modelo base publico en HuggingFace, ampliamente utilizado |
+| Este adaptador (OPSD + VisionZip r010) | 40.370.176 entrenables sobre un base de ~7B | No disponible | Sin benchmarks publicados; solo perdida de entrenamiento del ultimo lote | No disponible | Adaptador LoRA en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen2.5-VL-7B-Instruct (modelo base) | ~7B (cifra no confirmada en la informacion proporcionada) | No disponible | No disponible en esta informacion | No disponible en esta informacion | Modelo base publico en Hugging Face, ampliamente utilizado |
 | Otros adaptadores comparables de destilacion o poda de tokens visuales | No disponible | No disponible | No disponible | No disponible | La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas equivalentes |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TeacherGT-ReverseKL-original10240
+- Modelo en Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TeacherGT-ReverseKL-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - VisionZip: mencionado en la model card como implementacion oficial, sin enlace proporcionado

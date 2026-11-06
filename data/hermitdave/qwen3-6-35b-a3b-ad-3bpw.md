@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-AD-3bpw es una cuantizacion mixta de precision del modelo Qwen3.6-35B-A3B desarrollada por Qwen Team, publicada por el usuario hermitdave en HuggingFace. El modelo original es un transformer causal con vision encoder de arquitectura MoE (Mixture of Experts) que activa 3B de sus 35B parametros totales, disenado para cargas de trabajo de codigo agentico y conversacion con contexto muy largo. Esta version concreta aplica la tecnica "AD ladder" (reglas de cuantizacion mixta basadas en reglas de AtomicChat) para comprimir el modelo a aproximadamente 3 bits por peso, reduciendo el peso en disco de 67 GB en BF16 a 16 GB, con el objetivo de ejecutarlo en Apple Silicon mediante MLX.
+Qwen3.6-35B-A3B-AD-3bpw es una cuantizacion mixta de precision del modelo Qwen3.6-35B-A3B desarrollada por Qwen Team, publicada por el usuario hermitdave en Hugging Face. El modelo original es un transformer causal con vision encoder de arquitectura MoE (Mixture of Experts) que activa 3B de sus 35B parametros totales, disenado para cargas de trabajo de codigo agentico y conversacion con contexto muy largo. Esta version concreta aplica la tecnica "AD ladder" (reglas de cuantizacion mixta basadas en reglas de AtomicChat) para comprimir el modelo a aproximadamente 3 bits por peso, reduciendo el peso en disco de 67 GB en BF16 a 16 GB, con el objetivo de ejecutarlo en Apple Silicon mediante MLX.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de 35B parametros con contexto nativo de 262.144 tokens en hardware de consumo Apple, algo impensable con los pesos originales. La cuantizacion AD ladder asigna 2 bits a los expertos gate/up, 3 bits a los expertos down, 8 bits al resto de tensores y BF16 a las normas y sesgos, buscando un equilibrio entre tamano y calidad.
 
@@ -77,11 +77,11 @@ Metricas de la cuantizacion AD ladder (3,0 bpw) frente a BF16 y RCO per-block:
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (esta version AD-3bpw) | 35B totales / 3B activos | 262.144 (hasta 1.010.000) | 73,4 (base) | Apache-2.0 | HuggingFace, MLX |
-| Qwen3.5-35BA3B | 35B totales / 3B activos | no disponible | 70,0 | no disponible | HuggingFace |
-| Qwen3.5-27B | 27B | no disponible | 75,0 | no disponible | HuggingFace |
-| Gemma4-31B | 31B | no disponible | 52,0 | no disponible | HuggingFace |
-| Gemma4-26BA4B | 26B totales / 4B activos | no disponible | 17,4 | no disponible | HuggingFace |
+| Qwen3.6-35B-A3B (esta version AD-3bpw) | 35B totales / 3B activos | 262.144 (hasta 1.010.000) | 73,4 (base) | Apache-2.0 | Hugging Face, MLX |
+| Qwen3.5-35BA3B | 35B totales / 3B activos | no disponible | 70,0 | no disponible | Hugging Face |
+| Qwen3.5-27B | 27B | no disponible | 75,0 | no disponible | Hugging Face |
+| Gemma4-31B | 31B | no disponible | 52,0 | no disponible | Hugging Face |
+| Gemma4-26BA4B | 26B totales / 4B activos | no disponible | 17,4 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ Metricas de la cuantizacion AD ladder (3,0 bpw) frente a BF16 y RCO per-block:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-AD-3bpw
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-AD-3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Qwen Chat: https://chat.qwen.ai

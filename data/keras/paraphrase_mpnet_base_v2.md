@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keras/paraphrase_mpnet_base_v2` es una conversión al ecosistema KerasHub del modelo MPNet (Masked and Permuted Pre-training) orientada a tareas de embeddings de texto (`TextEmbedder`). Lo publica la organización oficial `keras` en HuggingFace y su propósito es ofrecer una implementación portable del backbone MPNet que pueda ejecutarse indistintamente sobre los backends de JAX, TensorFlow y PyTorch a través de KerasHub. El modelo se corresponde con la familia de sentence-transformers derivada de MPNet, pensada para generar representaciones densas de frases y párrafos útiles en búsqueda semántica, clustering y detección de paráfrasis.
+`keras/paraphrase_mpnet_base_v2` es una conversión al ecosistema KerasHub del modelo MPNet (Masked and Permuted Pre-training) orientada a tareas de embeddings de texto (`TextEmbedder`). Lo publica la organización oficial `keras` en Hugging Face y su propósito es ofrecer una implementación portable del backbone MPNet que pueda ejecutarse indistintamente sobre los backends de JAX, TensorFlow y PyTorch a través de KerasHub. El modelo se corresponde con la familia de sentence-transformers derivada de MPNet, pensada para generar representaciones densas de frases y párrafos útiles en búsqueda semántica, clustering y detección de paráfrasis.
 
 Arquitectónicamente es un transformer encoder de 12 capas, 12 cabezas de atención, dimensión oculta de 768 y dimensión intermedia de 3072, con un vocabulario de 30 527 tokens y una longitud máxima de secuencia de 512 tokens. El backbone se declara entrenable (`trainable: True`) y con política de precisión `float32`. El tamaño del repositorio es de aproximadamente 0,4 GB, coherente con un modelo base de unos 110 millones de parámetros en pesos de 32 bits.
 
@@ -86,8 +86,8 @@ La comparativa se ofrece a título orientativo: los datos de los modelos alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/paraphrase_mpnet_base_v2
+- Hugging Face: https://huggingface.co/keras/paraphrase_mpnet_base_v2
 - Documentación de MPNet en KerasHub: https://keras.io/api/keras_hub/models/mp_net
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Paper original de MPNet (Masked and Permuted Pre-training for Language Understanding): no disponible en la información proporcionada
 - Repositorio de KerasHub: no disponible en la información proporcionada

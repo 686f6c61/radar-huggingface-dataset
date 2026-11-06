@@ -104,14 +104,14 @@ Frente a otras familias de decodificacion especulativa (EAGLE, Medusa, decodific
 - Las secuencias generadas deben validarse experimentalmente; el modelo no incorpora ninguna comprobacion de viabilidad biologica.
 - Licencia MIT para checkpoints y codigo, pero los pesos y el runtime de Evo2 y Vortex se rigen por sus licencias originales, que hay que revisar antes de cualquier uso comercial.
 - No se documentan idiomas naturales soportados, capacidades de tool calling ni soporte multimodal en la informacion disponible.
-- La busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces utiles proceden de la model card y de los resultados de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces utiles proceden de la model card y de los resultados de Hugging Face.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/dinghhhhhhhhhhhhhhh/EvSpark
+- Ficha en Hugging Face: https://huggingface.co/dinghhhhhhhhhhhhhhh/EvSpark
 - Repositorio en GitHub: https://github.com/dhnihaoya/EvSpark
 - Articulo en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.09.02.749017
 - DOI: https://doi.org/10.64898/2026.09.02.749017
 - Modelo en ModelScope: https://www.modelscope.cn/models/dinghao1120/EvSpark
 - Modelo base Evo2 7B: https://huggingface.co/arcinstitute/evo2_7b
-- Espejo de HuggingFace para entornos sin acceso: https://hf-mirror.com
+- Espejo de Hugging Face para entornos sin acceso: https://hf-mirror.com

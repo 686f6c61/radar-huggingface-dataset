@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nitinchat82/generation-weights57` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de MoCo v3 orientada a tareas de generacion. MoCo v3 es, en su formulacion original, un marco de aprendizaje autosupervisado contrastivo pensado para vision por computador; en este repositorio se presenta reconfigurado como base de generacion bajo una escala declarada "xlarge", con atencion dilatada, fusion con puertas (gated fusion), normalizacion GroupNorm y activacion GELU aproximada. El autor lo describe explicitamente como un punto de partida experimental cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`nitinchat82/generation-weights57` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de MoCo v3 orientada a tareas de generacion. MoCo v3 es, en su formulacion original, un marco de aprendizaje autosupervisado contrastivo pensado para vision por computador; en este repositorio se presenta reconfigurado como base de generacion bajo una escala declarada "xlarge", con atencion dilatada, fusion con puertas (gated fusion), normalizacion GroupNorm y activacion GELU aproximada. El autor lo describe explicitamente como un punto de partida experimental cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El dato mas relevante para cualquier evaluacion es que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni un checkpoint con resultados de benchmark. Los metadatos de safetensors reportan 16.576 parametros totales y el repositorio ocupa menos de 0,1 GB, por lo que no se trata de un modelo utilizable en produccion tal y como se distribuye. La model card indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -51,7 +51,7 @@ No existe informacion sobre el entrenamiento: no se declara volumen de tokens, c
 - Estudio de componentes arquitectonicos aislados: la combinacion de atencion dilatada, gated fusion y GroupNorm puede compararse contra variantes equivalentes manteniendo el mismo presupuesto de datos, ajuste y semillas, tal y como sugiere la propia model card.
 - Linea base de capacidad minima en experimentos controlados: por su tamano (16.576 parametros declarados), puede actuar como referencia inferior para verificar que las mejoras observadas en modelos mayores no provienen de errores de evaluacion.
 - Reproducibilidad y auditoria de recetas de entrenamiento: `config.json` y `training_args.json` registran la configuracion de arquitectura y la receta por defecto, lo que facilita replicar experimentos y conservar versiones de entorno junto a los resultados.
-- Plantilla docente o de formacion: util para explicar la estructura de un repositorio de modelo en HuggingFace (pesos, configuracion, argumentos de entrenamiento, documentacion) sin la complejidad de un modelo de gran escala.
+- Plantilla docente o de formacion: util para explicar la estructura de un repositorio de modelo en Hugging Face (pesos, configuracion, argumentos de entrenamiento, documentacion) sin la complejidad de un modelo de gran escala.
 - Verificacion de infraestructura de entrenamiento: al ser un modelo pequeno, permite comprobar checkpoints, logging, reanudacion y distribucion de datos en un cluster antes de escalar a un modelo real.
 
 ## Benchmarks y rendimiento
@@ -86,7 +86,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nitinchat82/generation-weights57
+- Modelo en Hugging Face: https://huggingface.co/nitinchat82/generation-weights57
 - Repositorio Git: no disponible
 - Paper de MoCo v3: no disponible en la informacion proporcionada
 - Blog o articulo tecnico del autor: no disponible

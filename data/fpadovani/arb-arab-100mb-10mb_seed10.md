@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-100mb-10mb_seed10` | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Ajuste SFT de 10 MB sobre el modelo base |
-| `goldfish-models/arb_arab_100mb` | No disponible (modelo base, misma familia de ~125 M) | No disponible | No disponible | HuggingFace | Checkpoint de partida, sin ajuste supervisado documentado |
-| Otros checkpoints de la familia goldfish | No disponible | No disponible | No disponible | HuggingFace | Modelos monolingues entrenados con ~100 MB por idioma; utiles como referencia cruzada entre lenguas |
-| Modelos multilingues pequenos de la misma escala (por ejemplo, la familia Qwen2.5-0.5B o BLOOM-560M) | 0,5 B y 0,56 B respectivamente, segun sus fichas publicas | No comparado en esta ficha | No comparado en esta ficha | HuggingFace | Ordenes de magnitud superiores en parametros y datos; no hay evaluacion comun con este checkpoint |
+| `fpadovani/arb-arab-100mb-10mb_seed10` | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Ajuste SFT de 10 MB sobre el modelo base |
+| `goldfish-models/arb_arab_100mb` | No disponible (modelo base, misma familia de ~125 M) | No disponible | No disponible | Hugging Face | Checkpoint de partida, sin ajuste supervisado documentado |
+| Otros checkpoints de la familia goldfish | No disponible | No disponible | No disponible | Hugging Face | Modelos monolingues entrenados con ~100 MB por idioma; utiles como referencia cruzada entre lenguas |
+| Modelos multilingues pequenos de la misma escala (por ejemplo, la familia Qwen2.5-0.5B o BLOOM-560M) | 0,5 B y 0,56 B respectivamente, segun sus fichas publicas | No comparado en esta ficha | No comparado en esta ficha | Hugging Face | Ordenes de magnitud superiores en parametros y datos; no hay evaluacion comun con este checkpoint |
 
 La comparacion cuantitativa con alternativas no es posible con la informacion disponible: no hay benchmarks publicados ni datos de contexto y licencia para este modelo, y no se dispone de evaluaciones que lo enfrenten a otros modelos en tareas en arabe.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Experimentos de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/oqa56ewd

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iris-1.1-test es un modelo de lenguaje publicado por el usuario Rev3auth en HuggingFace. Se trata de un ajuste fino (finetuning) convertido a formato GGUF, tarea realizada con la libreria Unsloth segun declara el propio autor en la model card. El repositorio ocupa 0,3 GB y contiene un unico archivo de pesos cuantizado: `gemma-3-270m-it.Q8_0.gguf`, lo que indica que el modelo base sobre el que se ha realizado el ajuste es Gemma 3 270M en su variante instruction-tuned, aunque el autor no lo confirma de forma explicita en el texto de la ficha.
+iris-1.1-test es un modelo de lenguaje publicado por el usuario Rev3auth en Hugging Face. Se trata de un ajuste fino (finetuning) convertido a formato GGUF, tarea realizada con la libreria Unsloth segun declara el propio autor en la model card. El repositorio ocupa 0,3 GB y contiene un unico archivo de pesos cuantizado: `gemma-3-270m-it.Q8_0.gguf`, lo que indica que el modelo base sobre el que se ha realizado el ajuste es Gemma 3 270M en su variante instruction-tuned, aunque el autor no lo confirma de forma explicita en el texto de la ficha.
 
 El nombre del archivo y la etiqueta `gemma3_text` del repositorio apuntan a una arquitectura transformer decoder-only de la familia Gemma 3, con 268.098.176 parametros totales confirmados a partir de los pesos en safetensors. Su tamano reducido lo situa en la categoria de modelos "small language models" (SLM), pensados para ejecucion local en CPU, dispositivos de borde o GPUs de gama baja, donde el coste de inferencia y la latencia importan mas que el rendimiento en tareas complejas.
 
@@ -30,7 +30,7 @@ En cuanto al entrenamiento, la model card unicamente indica que el modelo fue aj
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, y el autor proporciona ejemplos de uso con `llama-cli` y plantilla Jinja (`--jinja`), lo que implica soporte de plantillas de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse a traves de Hugging Face Inference Endpoints.
 - Ejecucion local en CPU o GPU de gama baja: al distribuirse unicamente en GGUF, el modelo esta pensado para runtime de llama.cpp y derivados.
 - Despliegue en Ollama: la model card indica que se incluye un Modelfile de Ollama para facilitar el despliegue.
 - Capacidades multimodales: el autor incluye el comando `llama-mtmd-cli` como ejemplo para "modelos multimodales", pero no hay ningun archivo de proyector multimodal en el repositorio ni confirmacion de que este modelo concreto procese imagenes. Debe considerarse no disponible.
@@ -60,7 +60,7 @@ El autor no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Benc
 - VRAM estimada: por debajo de 1 GB para los pesos en Q8_0; hay que sumar la cache KV, cuyo tamano no puede estimarse porque la longitud de contexto no esta declarada. En la practica, entre 1 y 3 GB de VRAM son suficientes para contextos moderados.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente, incluidas GTX 1650, RTX 3060, RTX 4060 o superiores. En el extremo alto, una A100 o H100 no aportan ventaja practica a este tamano salvo por agregacion de muchas peticiones concurrentes.
 - Compatibilidad con GPU consumer: si, de forma holgada. Tambien funciona exclusivamente en CPU con memoria RAM suficiente (menos de 1 GB para los pesos).
-- Opciones de despliegue: llama.cpp (`llama-cli -hf Rev3auth/iris-1.1-test --jinja`), Ollama mediante el Modelfile incluido, y cualquier runtime compatible con GGUF. vLLM, TGI y transformers no pueden usarse directamente con este repositorio porque solo publica pesos GGUF, no safetensors ni pesos en formato HuggingFace completo.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf Rev3auth/iris-1.1-test --jinja`), Ollama mediante el Modelfile incluido, y cualquier runtime compatible con GGUF. vLLM, TGI y transformers no pueden usarse directamente con este repositorio porque solo publica pesos GGUF, no safetensors ni pesos en formato Hugging Face completo.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ Los datos de la columna "este modelo" proceden del repositorio. Los de las alter
 | Modelo | Parametros | Contexto | Licencia | Formato publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | iris-1.1-test (Rev3auth) | 268 M | No disponible | No disponible | GGUF (Q8_0) | Repositorio de prueba, 0 descargas |
-| Gemma 3 270M IT (base probable) | 268 M | No disponible en esta informacion | Terminos de uso de Gemma (por confirmar) | Safetensors y GGUF | Publico en HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~494 M | No disponible en esta informacion | Apache 2.0 (referencia general) | Safetensors y GGUF | Publico en HuggingFace |
-| SmolLM2-360M-Instruct | ~362 M | No disponible en esta informacion | Apache 2.0 (referencia general) | Safetensors y GGUF | Publico en HuggingFace |
+| Gemma 3 270M IT (base probable) | 268 M | No disponible en esta informacion | Terminos de uso de Gemma (por confirmar) | Safetensors y GGUF | Publico en Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~494 M | No disponible en esta informacion | Apache 2.0 (referencia general) | Safetensors y GGUF | Publico en Hugging Face |
+| SmolLM2-360M-Instruct | ~362 M | No disponible en esta informacion | Apache 2.0 (referencia general) | Safetensors y GGUF | Publico en Hugging Face |
 
 La ventaja diferencial de iris-1.1-test frente a estas alternativas seria un supuesto ajuste especifico, pero el autor no documenta ni la tarea de ajuste ni los datos empleados, por lo que no puede justificarse ninguna ventaja medible. Frente al modelo base Gemma 3 270M IT, la unica diferencia verificable es la publicacion en un unico GGUF Q8_0.
 
@@ -91,7 +91,7 @@ La ventaja diferencial de iris-1.1-test frente a estas alternativas seria un sup
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rev3auth/iris-1.1-test
+- Repositorio en Hugging Face: https://huggingface.co/Rev3auth/iris-1.1-test
 - Unsloth (libreria usada para el ajuste y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por el autor): https://github.com/ggml-org/llama.cpp
 - Modelo base probable, Gemma 3 270M IT: https://huggingface.co/google/gemma-3-270m-it (no confirmado por el autor)

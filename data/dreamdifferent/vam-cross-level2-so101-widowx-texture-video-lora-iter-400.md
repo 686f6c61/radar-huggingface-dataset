@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-400
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-400
 - Perfil del autor: https://huggingface.co/dreamdifferent
 - Checkpoint similar (level5): https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-200/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cnn-transformer-classification es un prototipo de investigación publicado por el usuario rahulsharmaiah en HuggingFace. Se presenta explícitamente como un esqueleto de código para una arquitectura híbrida de tipo CNN Transformer orientada a tareas de clasificación, no como un modelo entrenado. El repositorio incluye el script de entrenamiento, la configuración de arquitectura, los argumentos de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+cnn-transformer-classification es un prototipo de investigación publicado por el usuario rahulsharmaiah en Hugging Face. Se presenta explícitamente como un esqueleto de código para una arquitectura híbrida de tipo CNN Transformer orientada a tareas de clasificación, no como un modelo entrenado. El repositorio incluye el script de entrenamiento, la configuración de arquitectura, los argumentos de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 La relevancia del artefacto es puramente metodológica: sirve como plantilla reproducible para montar experimentos de clasificación con fusión co-attention sobre un backbone convolucional, con una receta de entrenamiento predefinida (optimizador Lion con scheduler exponencial). El propio autor advierte de que el checkpoint no ha sido entrenado ni auditado, y de que no se reclama ninguna métrica de rendimiento.
 
@@ -83,5 +83,5 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rahulsharmaiah/cnn-transformer-classification
+- Modelo en Hugging Face: https://huggingface.co/rahulsharmaiah/cnn-transformer-classification
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la búsqueda web realizada. Los resultados de búsqueda obtenidos no guardan relación con el modelo y corresponden a una plataforma de gestión de exámenes ajena al ámbito de la inteligencia artificial.

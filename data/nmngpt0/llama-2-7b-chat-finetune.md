@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmngpt0/Llama-2-7b-chat-finetune` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `nmngpt0`. Por el identificador del repositorio y por sus etiquetas (`llama`, `transformers`, `safetensors`, `text-generation`, `text-generation-inference`, `endpoints_compatible`) se trata, con alta probabilidad, de un ajuste fino sobre Llama 2 7B Chat de Meta, pero el autor no lo confirma en ningun punto: la model card es la plantilla autogenerada por HuggingFace y no tiene ni un solo campo relleno (todos los apartados dicen "[More Information Needed]").
+`nmngpt0/Llama-2-7b-chat-finetune` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `nmngpt0`. Por el identificador del repositorio y por sus etiquetas (`llama`, `transformers`, `safetensors`, `text-generation`, `text-generation-inference`, `endpoints_compatible`) se trata, con alta probabilidad, de un ajuste fino sobre Llama 2 7B Chat de Meta, pero el autor no lo confirma en ningun punto: la model card es la plantilla autogenerada por Hugging Face y no tiene ni un solo campo relleno (todos los apartados dicen "[More Information Needed]").
 
 El unico dato tecnico objetivo disponible es el recuento de parametros del repositorio, 6.738.415.616 (~6,74 mil millones), coherente con la familia Llama 2 7B, y un tamano de repositorio de 13,5 GB en formato `safetensors`. No hay informacion sobre datos de entrenamiento, hiperparametros, composicion del dataset, idiomas, licencia ni evaluacion.
 
@@ -26,7 +26,7 @@ Su relevancia practica hoy es muy limitada: cero descargas y cero likes en el mo
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta ni sobre el proceso de entrenamiento. La model card incluida en el repositorio es la plantilla estandar autogenerada por HuggingFace: los apartados de descripcion del modelo, datos de entrenamiento, preprocesado, hiperparametros, regimen de precision (fp32, fp16, bf16) y analisis de impacto ambiental estan marcados como "[More Information Needed]". Tampoco se documenta si hubo ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni sobre que dataset se hizo el ajuste anunciado en el nombre del repositorio.
+No hay informacion publicada sobre la arquitectura concreta ni sobre el proceso de entrenamiento. La model card incluida en el repositorio es la plantilla estandar autogenerada por Hugging Face: los apartados de descripcion del modelo, datos de entrenamiento, preprocesado, hiperparametros, regimen de precision (fp32, fp16, bf16) y analisis de impacto ambiental estan marcados como "[More Information Needed]". Tampoco se documenta si hubo ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni sobre que dataset se hizo el ajuste anunciado en el nombre del repositorio.
 
 Lo unico inferible con cierta seguridad es el linaje: el nombre `Llama-2-7b-chat-finetune` y la etiqueta `llama` sugieren que el checkpoint parte de `meta-llama/Llama-2-7b-chat-hf`, un transformer decoder-only denso con atencion causal, normalizacion RMSNorm, activacion SwiGLU y RoPE, entrenado originalmente por Meta sobre 2 billones de tokens y afinado con RLHF y GQA (grouped-query attention) en la variante chat. Esa descripcion corresponde al modelo base de referencia, no a una innovacion documentada de este repositorio, y no debe tomarse como especificacion verificada del checkpoint publicado.
 
@@ -100,7 +100,7 @@ Diferencias clave: el checkpoint analizado no declara licencia, mientras que Mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmngpt0/Llama-2-7b-chat-finetune
+- Repositorio en Hugging Face: https://huggingface.co/nmngpt0/Llama-2-7b-chat-finetune
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Referencia de la arquitectura base presumible, Llama 2 (Touvron et al., 2023; no citado en el repositorio, se incluye solo como contexto): https://arxiv.org/abs/2307.09288
 - Model card de referencia de Llama 2 7B Chat (no citada en el repositorio): https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

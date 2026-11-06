@@ -30,7 +30,7 @@ La arquitectura subyacente corresponde a la de Qwen3.8-27B, un transformer decod
 - Soporte de tool calling / function calling, permitiendo integración con APIs y agentes.
 - Capacidad de ejecutar tareas de agente con multi-step reasoning (planificación y ejecución de secuencias).
 - Al ser una versión "abliterated", presenta una menor tendencia a rechazar prompts sobre temas controvertidos o sensibles, lo que puede ser útil en investigación de seguridad y alineación.
-- No se confirma capacidad multimodal real; el tag `image-text-to-text` en HuggingFace puede ser un error de metadata, ya que el modelo base es de texto.
+- No se confirma capacidad multimodal real; el tag `image-text-to-text` en Hugging Face puede ser un error de metadata, ya que el modelo base es de texto.
 
 ## Casos de uso
 
@@ -70,12 +70,12 @@ La comparativa se basa en datos públicos de los modelos originales; el contexto
 - **Sesgos y alucinaciones**: como cualquier modelo de lenguaje, puede producir información falsa o sesgada, especialmente en temas controvertidos donde la abliteration elimina los mecanismos de cautela.
 - **Calidad de la cuantización**: las versiones GGUF de baja precisión (Q2_K, Q3_K) pueden degradar significativamente la coherencia y el razonamiento.
 - **Contexto no confirmado**: no se ha verificado la longitud de contexto real; si el modelo base no soporta 128K, la ventana efectiva podría ser menor.
-- **Licencia**: aunque es Apache-2.0, el uso comercial debe cumplir con los términos de la licencia de Qwen3 y las políticas de HuggingFace; el abliteration puede violar los términos de uso de algunos proveedores.
+- **Licencia**: aunque es Apache-2.0, el uso comercial debe cumplir con los términos de la licencia de Qwen3 y las políticas de Hugging Face; el abliteration puede violar los términos de uso de algunos proveedores.
 - **Sin garantías de producción**: al ser una cuantización comunitaria sin evaluación formal, no se recomienda su uso en entornos críticos sin pruebas exhaustivas.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ajaeger74/huihui-qwen3_8-27b-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/ajaeger74/huihui-qwen3_8-27b-gguf
 - Modelo base (sin cuantizar): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
-- Página de Qwen3 en HuggingFace: https://huggingface.co/Qwen/Qwen3-27B
+- Página de Qwen3 en Hugging Face: https://huggingface.co/Qwen/Qwen3-27B
 - Documentación de llama.cpp (para GGUF): https://github.com/ggerganov/llama.cpp

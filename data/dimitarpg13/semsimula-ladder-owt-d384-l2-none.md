@@ -110,7 +110,7 @@ Frente a alternativas externas de tamaño comparable (por ejemplo, GPT-2 small d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none
 - Dataset de entrenamiento: https://huggingface.co/datasets/Skylion007/openwebtext
 - Brazo de referencia GPT-2 emparejado: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Brazo con campo de intercambio activo (arm 'attention'): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention

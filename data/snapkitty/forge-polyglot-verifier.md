@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FORGE (Polyglot Verification Engine) es un motor de verificación formal de código que opera simultáneamente en tres idiomas: inglés, japonés y árabe. Desarrollado por Ahmad Ali Parr bajo el alias Snapkitty, el proyecto se presenta en HuggingFace como un repositorio de software, no como un modelo de lenguaje o red neuronal preentrenada. Su objetivo es romper la barrera del inglés en la programación, permitiendo que desarrolladores de distintos orígenes lingüísticos usen identificadores nativos en un mismo código base sin necesidad de traducción.
+FORGE (Polyglot Verification Engine) es un motor de verificación formal de código que opera simultáneamente en tres idiomas: inglés, japonés y árabe. Desarrollado por Ahmad Ali Parr bajo el alias Snapkitty, el proyecto se presenta en Hugging Face como un repositorio de software, no como un modelo de lenguaje o red neuronal preentrenada. Su objetivo es romper la barrera del inglés en la programación, permitiendo que desarrolladores de distintos orígenes lingüísticos usen identificadores nativos en un mismo código base sin necesidad de traducción.
 
 El motor se compone de seis módulos interconectados: un kernel booleano basado exclusivamente en puertas NAND, un verificador neuronal (LSTM + Attention en PyTorch), un verificador de arrays densos inspirado en APL, una compuerta de entropía de Shannon con umbral de 0.20 nats, un generador de obligaciones de prueba selladas con BLAKE3 y un comprobador de restricciones tensoriales. Todo el flujo genera un registro de auditoría inmutable (WORM). Aunque el proyecto es técnicamente interesante, no dispone de información pública sobre parámetros, entrenamiento o benchmarks, y su estado actual es de desarrollo incipiente (0 descargas, 0 likes, creado en septiembre de 2026).
 
@@ -54,7 +54,7 @@ No disponible. Al ser un proyecto de software sin especificaciones de rendimient
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen sistemas de verificación formal multilingües comparables en el ecosistema de HuggingFace. El proyecto es único en su enfoque de integrar tres idiomas en la lógica de verificación, pero no existe información pública para comparar con otras herramientas como Coq, Isabelle o Lean, que no comparten la característica multilingüe ni el enfoque NAND-only.
+No disponible. No se conocen sistemas de verificación formal multilingües comparables en el ecosistema de Hugging Face. El proyecto es único en su enfoque de integrar tres idiomas en la lógica de verificación, pero no existe información pública para comparar con otras herramientas como Coq, Isabelle o Lean, que no comparten la característica multilingüe ni el enfoque NAND-only.
 
 ## Limitaciones y advertencias
 
@@ -70,5 +70,5 @@ No disponible. No se conocen sistemas de verificación formal multilingües comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/forge-polyglot-verifier
+- Hugging Face: https://huggingface.co/Snapkitty/forge-polyglot-verifier
 - Repositorio GitHub (mencionado en la model card): https://github.com/SNAPKITTYWEST/forge-polyglot-verifier.git

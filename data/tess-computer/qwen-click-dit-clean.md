@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TESS-Computer/qwen-click-dit-clean | 3,78 mil millones (3B de backbone + cabeza DiT) | no disponible | Coordenadas (x, y) normalizadas | MIT | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-VL-3B-Instruct | ~3B (dato del nombre del modelo; no confirmado en la informacion proporcionada) | no disponible | Texto e instrucciones | no disponible en la informacion proporcionada | HuggingFace, modelo base de referencia |
+| TESS-Computer/qwen-click-dit-clean | 3,78 mil millones (3B de backbone + cabeza DiT) | no disponible | Coordenadas (x, y) normalizadas | MIT | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-VL-3B-Instruct | ~3B (dato del nombre del modelo; no confirmado en la informacion proporcionada) | no disponible | Texto e instrucciones | no disponible en la informacion proporcionada | Hugging Face, modelo base de referencia |
 | Otros modelos de GUI grounding (UI-TARS, ShowUI, OS-Atlas y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de rendimiento, contexto o licencia de las alternativas, por lo que la comparativa se limita a la relacion con el modelo base. La diferencia funcional principal es que Qwen2.5-VL-3B-Instruct es un modelo generalista de vision-lenguaje que devuelve texto, mientras que qwen-click-dit-clean esta especializado en emitir una unica coordenada de clic mediante una cabeza de difusion.
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento, contexto o licencia de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TESS-Computer/qwen-click-dit-clean
+- Modelo en Hugging Face: https://huggingface.co/TESS-Computer/qwen-click-dit-clean
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/grounding_dataset
 - La busqueda web realizada no devolvio enlaces relevantes para este modelo: los resultados corresponden a entidades no relacionadas con el proyecto (la mision TESS de la NASA, la ingenieria estructural T/E/S/S, el proveedor noruego TESS y una actriz homonima). No se han encontrado papers, blogs ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480` es un ajuste fino de investigación derivado de `Qwen/Qwen3.5-9B`, publicado por el usuario ddvd233 en HuggingFace. Se trata de la fusión a pesos HF (safetensors en bf16) del checkpoint FSDP de verl correspondiente al paso global 480 del experimento denominado RRIMed-9B, una ejecución de aprendizaje por refuerzo (reinforcement learning) en el dominio médico bajo configuración "sin recuperación" (no-retrieval), donde todos los roles auxiliares del pipeline son desempeñados por una copia congelada del modelo de 9B.
+El modelo `ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480` es un ajuste fino de investigación derivado de `Qwen/Qwen3.5-9B`, publicado por el usuario ddvd233 en Hugging Face. Se trata de la fusión a pesos HF (safetensors en bf16) del checkpoint FSDP de verl correspondiente al paso global 480 del experimento denominado RRIMed-9B, una ejecución de aprendizaje por refuerzo (reinforcement learning) en el dominio médico bajo configuración "sin recuperación" (no-retrieval), donde todos los roles auxiliares del pipeline son desempeñados por una copia congelada del modelo de 9B.
 
 El problema que aborda es la mejora de la precisión en preguntas de salud de nivel profesional mediante RL, y su relevancia es fundamentalmente metodológica: documenta una curva de entrenamiento y un resultado medible en el benchmark HealthBench Professional (exactitud ajustada por longitud). No es un modelo de producto ni un asistente clínico: el propio autor lo describe como un artefacto de investigación entrenado con tareas generadas por el modelo y evaluado en una única familia de benchmarks.
 
@@ -29,7 +29,7 @@ El modelo tiene 9.409.813.744 parámetros (~9,41 mil millones) y el repositorio 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura concreta no se detalla en la información proporcionada más allá de que el modelo deriva de `Qwen/Qwen3.5-9B` y de que se trata de una fusión de pesos entrenados con el framework verl sobre FSDP. El checkpoint original corresponde al directorio `hb9b_specgap_ship_noretrieval_sj_aicr/global_step_480`, convertido a safetensors en bf16 para su distribución en HuggingFace. No se especifican en la ficha el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF, DPO u otras técnicas de alineación.
+La arquitectura concreta no se detalla en la información proporcionada más allá de que el modelo deriva de `Qwen/Qwen3.5-9B` y de que se trata de una fusión de pesos entrenados con el framework verl sobre FSDP. El checkpoint original corresponde al directorio `hb9b_specgap_ship_noretrieval_sj_aicr/global_step_480`, convertido a safetensors en bf16 para su distribución en Hugging Face. No se especifican en la ficha el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF, DPO u otras técnicas de alineación.
 
 Lo que sí documenta el autor es el procedimiento de RL: el experimento RRIMed-9B opera en configuración "no-retrieval" con ARM 11, y tanto la función de evaluación como el resto de roles auxiliares del pipeline son servidos por el mismo modelo base de 9B congelado, es decir, un esquema de autoevaluación (self-graded). Las tareas de entrenamiento fueron generadas por el propio modelo (model-written tasks). No se describe ninguna innovación arquitectónica (atención lineal, decodificación especulativa, SSM híbrido, etc.) en la información disponible, por lo que cabe asumir que se conserva la estructura del modelo base, aunque este extremo no está confirmado en los datos facilitados.
 
@@ -84,8 +84,8 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | HealthBench Professional (long-adj.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (global step 480) | 9,41 mil millones | No disponible | 0,391 | apache-2.0 | Publico en HuggingFace |
-| `Qwen/Qwen3.5-9B` (base, sin entrenar) | No disponible en la informacion; el ajuste parte de el | No disponible | 0,244 | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este modelo (global step 480) | 9,41 mil millones | No disponible | 0,391 | apache-2.0 | Publico en Hugging Face |
+| `Qwen/Qwen3.5-9B` (base, sin entrenar) | No disponible en la informacion; el ajuste parte de el | No disponible | 0,244 | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros modelos medicos de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos comparativos frente al modelo base del que deriva, según las cifras citadas en la model card. La información proporcionada no incluye resultados de alternativas de la misma categoría (por ejemplo, otros ajustes médicos de ~9B), por lo que no es posible establecer una comparación cuantitativa adicional.
@@ -105,7 +105,7 @@ Solo se dispone de datos comparativos frente al modelo base del que deriva, seg�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/hb9b_specgap_ship_noretrieval_sj_aicr_global_step_480
 - Modelo base referenciado en la ficha (`base_model`): https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo del autor: no disponible en la informacion proporcionada.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con este modelo. Las busquedas devolvieron exclusivamente cuestionarios sobre el grupo musical The Beatles (infinite-quiz.com, quantonesai.com, kiquo.com, wordwall.net, jetpunk.com), contenido sin ninguna relacion con el modelo.

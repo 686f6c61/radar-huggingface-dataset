@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e4b-sok-v7 es un ajuste fino (fine-tune) del modelo google/gemma-4-E4B-it, publicado por el usuario abcorrea en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: la model card indica explicitamente que ha sido entrenado con SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, y que se ha generado con la plantilla `generated_from_trainer`. El repositorio ocupa 2,9 GB y contiene pesos en formato safetensors, con la etiqueta `endpoints_compatible`, lo que sugiere que esta pensado para desplegarse en la infraestructura de inferencia gestionada de HuggingFace.
+e4b-sok-v7 es un ajuste fino (fine-tune) del modelo google/gemma-4-E4B-it, publicado por el usuario abcorrea en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: la model card indica explicitamente que ha sido entrenado con SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, y que se ha generado con la plantilla `generated_from_trainer`. El repositorio ocupa 2,9 GB y contiene pesos en formato safetensors, con la etiqueta `endpoints_compatible`, lo que sugiere que esta pensado para desplegarse en la infraestructura de inferencia gestionada de Hugging Face.
 
 La relevancia de esta ficha es limitada pero conviene ser transparente: la model card es practicamente vacia. No documenta el dataset de entrenamiento, el dominio de especializacion, el numero de tokens vistos, la licencia real, los idiomas soportados ni las caracteristicas tecnicas del modelo base. La unica informacion funcional es un ejemplo de uso con `pipeline("text-generation")` en formato conversacional, lo que confirma que se trata de un modelo de chat instruido, y la lista de versiones de framework (TRL 1.9.0, Transformers 5.14.1, PyTorch 2.7.0, Datasets 5.0.0, Tokenizers 0.22.2).
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha debe leerse como un inventario de lo que se sabe y, sobre 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repositorio solo contiene safetensors sin versiones cuantizadas) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card indica `licence: license`, sin texto legal; los tags de HuggingFace no declaran licencia) |
+| Licencia | No disponible (la model card indica `licence: license`, sin texto legal; los tags de Hugging Face no declaran licencia) |
 | Formato de pesos | safetensors |
 | Modelo base | google/gemma-4-E4B-it |
 | Metodo de ajuste | SFT (supervised fine-tuning) |
@@ -55,7 +55,7 @@ Nota previa: la model card no documenta el dominio ni el proposito del ajuste fi
 - Asistente conversacional experimental: puede desplegarse como endpoint de chat mediante el pipeline de Transformers que muestra la propia model card, con `device="cuda"` y `max_new_tokens` configurable, para prototipos internos de asistente de texto.
 - Evaluacion comparativa de ajustes finos: al ser un derivado SFT del mismo modelo base, resulta util como punto de comparacion frente a otros fine-tunes de google/gemma-4-E4B-it en experimentos de investigacion sobre tecnicas de SFT con TRL.
 - Generacion de respuestas a preguntas abiertas: el ejemplo incluido (una pregunta hipotetica de reflexion) sugiere un uso adecuado en tareas de redaccion asistida y generacion de texto libre donde no se exija precision factual verificable.
-- Prototipado rapido en HuggingFace Endpoints: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para desplegarse en la infraestructura gestionada de HuggingFace, lo que reduce el trabajo de integracion para pruebas de concepto.
+- Prototipado rapido en Hugging Face Endpoints: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para desplegarse en la infraestructura gestionada de Hugging Face, lo que reduce el trabajo de integracion para pruebas de concepto.
 - Base para un segundo ajuste fino: al estar publicado en safetensors y con Transformers 5.14.1, puede reutilizarse como punto de partida para un LoRA o un SFT adicional sobre un dominio concreto, siempre que la licencia del modelo base lo permita.
 - Reproduccion de experimentos de entrenamiento: las versiones de framework declaradas (TRL 1.9.0, PyTorch 2.7.0) permiten reconstruir un entorno de entrenamiento equivalente para replicar el procedimiento.
 - Docencia y formacion: sirve como ejemplo minimo y real de un repositorio generado con `generated_from_trainer`, util para explicar el ciclo completo de SFT con TRL en un curso tecnico.
@@ -75,7 +75,7 @@ Las cifras de esta seccion son estimaciones derivadas del tamano del repositorio
 - GPU recomendadas: no disponibles de forma oficial. Como referencia de capacidad, una RTX 4090 (24 GB) cubriria con holgura cualquiera de los escenarios anteriores; una RTX 3090 (24 GB) o una RTX 4080 (16 GB) tambien serian suficientes en bf16 si el modelo esta en el rango de 4.000 millones de parametros, y con margen amplio en cuantizacion de 8 o 4 bits.
 - GPU de centro de datos (A100, H100): sobredimensionadas para inferencia de un solo usuario; tendrian sentido para servir lotes grandes o para reentrenamiento.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM en cuantizacion de 4 bits, y con 16-24 GB en bf16.
-- Opciones de despliegue: Transformers (soportado de forma explicita por la model card), HuggingFace Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI como servidores compatibles con safetensors. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF, ya que el repositorio no incluye ninguna version GGUF.
+- Opciones de despliegue: Transformers (soportado de forma explicita por la model card), Hugging Face Endpoints (etiqueta `endpoints_compatible`), vLLM y TGI como servidores compatibles con safetensors. llama.cpp y Ollama requeririan convertir previamente los pesos a GGUF, ya que el repositorio no incluye ninguna version GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparati
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abcorrea/e4b-sok-v7 | Modelo analizado | No disponible | No disponible | No disponible | Safetensors en HuggingFace |
-| google/gemma-4-E4B-it | Modelo base | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| abcorrea/e4b-sok-v7 | Modelo analizado | No disponible | No disponible | No disponible | Safetensors en Hugging Face |
+| google/gemma-4-E4B-it | Modelo base | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros fine-tunes de google/gemma-4-E4B-it | Alternativa de la misma categoria | No disponible | No disponible | No disponible | No se han identificado referencias concretas en la busqueda realizada |
 
 No se dispone de informacion suficiente para comparar rendimiento, contexto efectivo ni coste de inferencia con alternativas de la misma categoria.
@@ -105,7 +105,7 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto efec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abcorrea/e4b-sok-v7
+- Modelo en Hugging Face: https://huggingface.co/abcorrea/e4b-sok-v7
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

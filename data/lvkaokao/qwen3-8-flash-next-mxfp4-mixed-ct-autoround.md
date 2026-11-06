@@ -81,7 +81,7 @@ La comparativa con Qwen3.7-Plus se basa en datos del blog oficial, que indica qu
 ## Enlaces
 
 - Repositorio cuantizado (autor lvkaokao): https://huggingface.co/lvkaokao/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-AutoRound
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

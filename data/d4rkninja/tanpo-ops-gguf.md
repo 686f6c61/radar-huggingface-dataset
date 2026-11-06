@@ -101,7 +101,7 @@ Frente al modelo base, el ajuste mejora en planificacion de capacidad, identidad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d4rkninja/tanpo-ops-GGUF
+- Repositorio Hugging Face: https://huggingface.co/d4rkninja/tanpo-ops-GGUF
 - Modelo fusionado (Transformers): https://huggingface.co/d4rkninja/tanpo-ops
 - Adaptador LoRA: https://huggingface.co/d4rkninja/tanpo-ops-LoRA
 - Coleccion Tanpo - Domain Specialists: https://huggingface.co/collections/d4rkninja/tanpo-domain-specialists-6aaccdb3985768f6dad8449b

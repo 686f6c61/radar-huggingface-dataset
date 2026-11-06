@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaskRCNN de Qualcomm es un modelo de segmentacion de instancias (instance segmentation) publicado por Qualcomm en HuggingFace dentro de su catalogo Qualcomm AI Hub Models. Se trata de una version optimizada y pre-exportada del conocido Mask R-CNN, la arquitectura propuesta por He et al. (arXiv:1703.06870) que extiende Faster R-CNN anadiendo una rama paralela que predice una mascara de segmentacion de alta calidad para cada objeto detectado, ademas de su caja delimitadora. El checkpoint de partida declarado en la model card es Mask R-CNN ResNet-50 FPN V2, procedente de la implementacion de referencia de torchvision.
+MaskRCNN de Qualcomm es un modelo de segmentacion de instancias (instance segmentation) publicado por Qualcomm en Hugging Face dentro de su catalogo Qualcomm AI Hub Models. Se trata de una version optimizada y pre-exportada del conocido Mask R-CNN, la arquitectura propuesta por He et al. (arXiv:1703.06870) que extiende Faster R-CNN anadiendo una rama paralela que predice una mascara de segmentacion de alta calidad para cada objeto detectado, ademas de su caja delimitadora. El checkpoint de partida declarado en la model card es Mask R-CNN ResNet-50 FPN V2, procedente de la implementacion de referencia de torchvision.
 
 El modelo resuelve el problema clasico de deteccion y segmentacion instancia a instancia: dada una imagen de entrada, devuelve para cada objeto detectado su clase, su caja y una mascara binaria por pixel. Cuenta con 46,4 millones de parametros, un tamano en float de 177 MB y 91 clases de salida, con una resolucion de entrada fija de 800x800 pixeles. Se distribuye en dos submodulos diferenciados, `proposal_generator` (la red de propuestas de region) y `roi_head` (la cabeza de clasificacion, regresion de cajas y mascaras).
 
@@ -25,7 +25,7 @@ Su relevancia actual no esta en la novedad algorimica, sino en el empaquetado: Q
 | Tamano del modelo (float) | 177 MB |
 | Submodulos | proposal_generator, roi_head |
 | Checkpoint de referencia | Mask R-CNN ResNet-50 FPN V2 |
-| Fecha de publicacion en HuggingFace | 2026-03-12 (actualizado el 2026-10-07) |
+| Fecha de publicacion en Hugging Face | 2026-03-12 (actualizado el 2026-10-07) |
 | Descargas / likes | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de precision ni de latencia de mod
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualcomm/MaskRCNN | 46,4 M | imagen 800x800, 91 clases | solo latencia publicada (35-122 ms por submodulo en NPU Qualcomm); mAP no disponible | BSD-3-Clause | assets ONNX y QNN_DLC en HuggingFace y Qualcomm AI Hub |
+| qualcomm/MaskRCNN | 46,4 M | imagen 800x800, 91 clases | solo latencia publicada (35-122 ms por submodulo en NPU Qualcomm); mAP no disponible | BSD-3-Clause | assets ONNX y QNN_DLC en Hugging Face y Qualcomm AI Hub |
 | Mask R-CNN ResNet-50 FPN V2 de torchvision | 46,4 M (mismo checkpoint de origen) | imagen, esquema de 91 clases | no disponible en la informacion proporcionada | BSD-3-Clause | pesos PyTorch en torchvision |
 | Otras familias de segmentacion de instancias (por ejemplo, variantes de YOLO con cabeza de segmentacion o SAM) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -117,7 +117,7 @@ La diferencia relevante frente al checkpoint original de torchvision no es de ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/MaskRCNN
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/MaskRCNN
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/maskrcnn
 - Repositorio de la libreria ai-hub-models, entrada de MaskRCNN: https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/maskrcnn
 - Descarga de assets ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/maskrcnn/releases/v0.64.0/maskrcnn-onnx-float.zip

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arup330/Abdomen_closed_noCoT_MedGemma-4B_lora` es un adaptador LoRA publicado en HuggingFace por el usuario Arup330, entrenado sobre `unsloth/medgemma-4b-it-unsloth-bnb-4bit`, es decir, la variante de 4B de la familia MedGemma (derivada de Gemma 3) en su version instruida y cuantizada a 4 bits por Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo, y se distribuye en formato safetensors bajo licencia Apache 2.0.
+`Arup330/Abdomen_closed_noCoT_MedGemma-4B_lora` es un adaptador LoRA publicado en Hugging Face por el usuario Arup330, entrenado sobre `unsloth/medgemma-4b-it-unsloth-bnb-4bit`, es decir, la variante de 4B de la familia MedGemma (derivada de Gemma 3) en su version instruida y cuantizada a 4 bits por Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo, y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El nombre del artefacto sugiere un ajuste orientado a tareas abdominales con preguntas de respuesta cerrada y sin cadena de razonamiento explicita (closed, noCoT), pero la model card no describe el dataset, el procedimiento de entrenamiento ni la tarea concreta. No hay pipeline declarado, ni resultados de evaluacion, ni documentacion tecnica adicional.
 
@@ -92,8 +92,8 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arup330/Abdomen_closed_noCoT_MedGemma-4B_lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/medgemma-4b-it-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Arup330/Abdomen_closed_noCoT_MedGemma-4B_lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/medgemma-4b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su entrenamiento o su evaluacion. Los resultados devueltos corresponden a paginas de TikTok y no guardan relacion con el artefacto.
 - Paper, blog o demo del autor: no disponible.

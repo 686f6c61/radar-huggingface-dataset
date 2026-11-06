@@ -88,8 +88,8 @@ La familia Ornith-1.5 se compone de tres escalas (397B MoE, 35B MoE y 9B dense).
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_4M
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repositorio Hugging Face del bundle: https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_4M
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guia de Ornith AI (modelos, VRAM, benchmarks, setup local): https://ornith.online/
 - Hilo en foros de NVIDIA sobre la familia Ornith-1.5: https://forums.developer.nvidia.com/t/deepreinforce-ornith-1-5-family-released/380623

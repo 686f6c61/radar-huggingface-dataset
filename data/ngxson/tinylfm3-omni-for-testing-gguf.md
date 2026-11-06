@@ -78,7 +78,7 @@ La comparación relevante es con el modelo del que deriva: mismo código de ejec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ngxson/tinyLFM3-Omni-for-testing-gguf
+- Repositorio Hugging Face: https://huggingface.co/ngxson/tinyLFM3-Omni-for-testing-gguf
 - Modelo original: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - GGUF de referencia del original: https://huggingface.co/ggml-org/LFM3-Omni-2B-GGUF
 - Script de recorte: `slice.py` (incluido en el repositorio)

@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_4k_5k_simpleavg_merge)
+- [Repositorio en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_4k_5k_simpleavg_merge)
 - [Artículo sobre el método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Página del modelo en FriendliAI (para un merge similar)](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg)
 - [Otro merge similar: sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge)

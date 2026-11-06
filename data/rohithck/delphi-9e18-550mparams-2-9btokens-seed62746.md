@@ -100,7 +100,7 @@ La comparacion relevante es metodologica: Pythia es el antecedente directo de De
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-9e18-550Mparams-2.9Btokens-seed62746
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-9e18-550Mparams-2.9Btokens-seed62746
 - Coleccion completa de checkpoints Delphi: https://huggingface.co/marin-community
 - Blog de Delphi, "Scaling Laws That Extrapolate 300x Past the Fit": https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data

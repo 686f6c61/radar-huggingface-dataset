@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kaveri 0.5B es un asistente conversacional multilingue para ejecucion local distribuido por el usuario shiva123782 a traves de HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino: segun su propia model card, la version v1 no incluye fine-tuning, LoRA, QLoRA ni pesos entrenados de forma independiente. Lo que se publica es una configuracion de identidad (un `Modelfile` de Ollama y un `system_prompt.txt`) que se aplica sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct.
+Kaveri 0.5B es un asistente conversacional multilingue para ejecucion local distribuido por el usuario shiva123782 a traves de Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino: segun su propia model card, la version v1 no incluye fine-tuning, LoRA, QLoRA ni pesos entrenados de forma independiente. Lo que se publica es una configuracion de identidad (un `Modelfile` de Ollama y un `system_prompt.txt`) que se aplica sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct.
 
 El interes practico del artefacto es, por tanto, el de una plantilla reproducible de despliegue: permite levantar un chat multilingue con identidad propia en local usando Ollama, sin depender de APIs externas ni de GPU dedicada. El modelo base aporta la capacidad real de generacion de texto, con aproximadamente 0,49 mil millones de parametros, arquitectura transformer densa tipo Qwen2 y una ventana de contexto nativa de 32 768 tokens.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kaveri 0.5B | ~0,49 B (base Qwen2.5-0.5B) | 32 768 tokens (heredado) | en, te, hi, kn, ta | Apache-2.0 | Repositorio de configuracion en HuggingFace; pesos via Ollama o Qwen |
-| Qwen2.5-0.5B-Instruct | ~0,49 B | 32 768 tokens | Multilingue, con soporte amplio de idiomas | Apache-2.0 | Pesos y cuantizaciones oficiales en HuggingFace |
-| SmolLM2-360M-Instruct | ~0,36 B | 8 192 tokens (aproximado, segun documentacion del autor) | Principalmente ingles | Apache-2.0 | Pesos oficiales en HuggingFace |
-| TinyLlama-1.1B-Chat | ~1,1 B | 2 048 tokens | Principalmente ingles | Apache-2.0 | Pesos oficiales en HuggingFace |
+| Kaveri 0.5B | ~0,49 B (base Qwen2.5-0.5B) | 32 768 tokens (heredado) | en, te, hi, kn, ta | Apache-2.0 | Repositorio de configuracion en Hugging Face; pesos via Ollama o Qwen |
+| Qwen2.5-0.5B-Instruct | ~0,49 B | 32 768 tokens | Multilingue, con soporte amplio de idiomas | Apache-2.0 | Pesos y cuantizaciones oficiales en Hugging Face |
+| SmolLM2-360M-Instruct | ~0,36 B | 8 192 tokens (aproximado, segun documentacion del autor) | Principalmente ingles | Apache-2.0 | Pesos oficiales en Hugging Face |
+| TinyLlama-1.1B-Chat | ~1,1 B | 2 048 tokens | Principalmente ingles | Apache-2.0 | Pesos oficiales en Hugging Face |
 
 La comparacion relevante es contra Qwen2.5-0.5B-Instruct, del que Kaveri 0.5B es una envoltura de configuracion: mismos pesos, misma licencia y mismo contexto, con una identidad de sistema anadida. Frente a SmolLM2-360M-Instruct y TinyLlama-1.1B-Chat, la ventaja de Kaveri es la cobertura declarada de idiomas del sur de Asia y una ventana de contexto notablemente mayor, aunque su ecosistema y su comunidad son practicamente inexistentes hoy.
 
@@ -84,7 +84,7 @@ La comparacion relevante es contra Qwen2.5-0.5B-Instruct, del que Kaveri 0.5B es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shiva123782/Kaveri-0.5B-Ollama
+- Repositorio en Hugging Face: https://huggingface.co/shiva123782/Kaveri-0.5B-Ollama
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ollama (herramienta de despliegue referenciada en la model card): https://ollama.com
 

@@ -88,7 +88,7 @@ La diferencia principal frente al modelo base es la reduccion del comportamiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/preyy2/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/preyy2/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
 - Build de Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

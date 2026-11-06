@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros modelos de robótica de la m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OrderDraconis/groot_align_leo)
+- [Modelo en Hugging Face](https://huggingface.co/OrderDraconis/groot_align_leo)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Janmeier820/align_fabric_dataset_combined)
 - [Repositorio NVIDIA Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 - [Paper GR00T N1](https://arxiv.org/abs/2503.14734)

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks formales en la informacion disponib
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-Thinking (original) | 8B | 32K | BF16 | Apache 2.0 | HuggingFace oficial |
-| Kizzington/Qwen3-VL-8B-Thinking-heretic-1refusal | 8B | 32K | BF16 | Apache 2.0 | HuggingFace |
-| rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8 | 8B | 32K | NVFP4 + INT8 | Apache 2.0 | HuggingFace (este modelo) |
-| ZuzeTt/Qwen3-VL-8B-Thinking-heretic | 8B | 32K | no disponible | no disponible | HuggingFace |
+| Qwen3-VL-8B-Thinking (original) | 8B | 32K | BF16 | Apache 2.0 | Hugging Face oficial |
+| Kizzington/Qwen3-VL-8B-Thinking-heretic-1refusal | 8B | 32K | BF16 | Apache 2.0 | Hugging Face |
+| rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8 | 8B | 32K | NVFP4 + INT8 | Apache 2.0 | Hugging Face (este modelo) |
+| ZuzeTt/Qwen3-VL-8B-Thinking-heretic | 8B | 32K | no disponible | no disponible | Hugging Face |
 
 La diferencia principal frente al checkpoint BF16 es el tamano: 8,2 GB frente a aproximadamente 18 GB, lo que permite ejecutarlo en GPUs de consumo Blackwell con 16 GB de VRAM. Frente a otras variantes heretic como la de ZuzeTt, esta version ofrece una cuantizacion mas agresiva y verificada en ComfyUI, aunque con el requisito hardware de Blackwell.
 
@@ -83,7 +83,7 @@ La diferencia principal frente al checkpoint BF16 es el tamano: 8,2 GB frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8
+- Modelo en Hugging Face: https://huggingface.co/rockerBOO/qwen3-vl-8b-thinking-heretic-nvfp4-convrot-int8
 - Checkpoint fuente (Kizzington): https://huggingface.co/Kizzington/Qwen3-VL-8B-Thinking-heretic-1refusal
 - Modelo base oficial (Qwen): https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Repositorio oficial Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

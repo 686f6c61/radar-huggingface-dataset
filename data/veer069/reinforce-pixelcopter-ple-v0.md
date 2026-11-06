@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno Pixelcopter-PLE-v0, perteneciente a la suite PyGame Learning Environment (PLE). El repositorio lo publica el usuario Veer069 en HuggingFace como entrega de la Unidad 5 del curso Deep Reinforcement Learning Class de HuggingFace, cuyo objetivo es entrenar y subir un agente que supere un umbral de recompensa en distintos entornos de control.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno Pixelcopter-PLE-v0, perteneciente a la suite PyGame Learning Environment (PLE). El repositorio lo publica el usuario Veer069 en Hugging Face como entrega de la Unidad 5 del curso Deep Reinforcement Learning Class de Hugging Face, cuyo objetivo es entrenar y subir un agente que supere un umbral de recompensa en distintos entornos de control.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general: es una politica entrenada para una unica tarea de control, con un espacio de observacion y accion definido por el entorno Pixelcopter. El repositorio ocupa 0.0 GB, no declara licencia, idiomas ni arquitectura de red, y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que debe considerarse un artefacto de experimentacion docente mas que un modelo listo para produccion.
 
@@ -33,7 +33,7 @@ Su relevancia es, por tanto, acotada: sirve como ejemplo reproducible de un pipe
 
 REINFORCE es un algoritmo de gradiente de politica que estima el gradiente de la esperanza del retorno usando episodios completos: se ejecuta la politica estocastica hasta el final del episodio, se calculan los retornos descontados y se actualizan los pesos en la direccion que incrementa la log-probabilidad de las acciones ponderada por el retorno obtenido. Es un metodo on-policy, sin memoria de repeticion y con una varianza alta por construccion, lo que explica la desviacion tipica de 16.24 declarada frente a una media de 13.00. La model card no indica el numero de parametros, la topologia de la red, el numero de episodios de entrenamiento, la tasa de aprendizaje, el factor de descuento ni si se aplicaron tecnicas de reduccion de varianza como lineas base (baseline) o normalizacion de retornos.
 
-El unico dato de entrenamiento disponible es la referencia al material docente: la Unidad 5 del Deep Reinforcement Learning Class de HuggingFace, que propone entrenar agentes REINFORCE sobre entornos de PLE y subirlos al Hub como ejercicio. No se documentan el numero de tokens ni de pasos, la composicion del dataset (inexistente en el sentido habitual: los datos se generan por interaccion con el simulador), ni fases de RLHF o DPO, que no aplican a este tipo de modelo.
+El unico dato de entrenamiento disponible es la referencia al material docente: la Unidad 5 del Deep Reinforcement Learning Class de Hugging Face, que propone entrenar agentes REINFORCE sobre entornos de PLE y subirlos al Hub como ejercicio. No se documentan el numero de tokens ni de pasos, la composicion del dataset (inexistente en el sentido habitual: los datos se generan por interaccion con el simulador), ni fases de RLHF o DPO, que no aplican a este tipo de modelo.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Entorno | Algoritmo | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 13.00 +/- 16.24 (no verificado) | no disponible | HuggingFace Hub |
+| Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 13.00 +/- 16.24 (no verificado) | no disponible | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/Veer069/Reinforce-Pixelcopter-PLE-v0
 - Unidad 5 del Deep Reinforcement Learning Class (material de entrenamiento referenciado en la model card): https://github.com/huggingface/deep-rl-class/tree/main/unit5
 - No se han proporcionado en la informacion disponible otros enlaces a papers, blogs, repositorios de la suite PLE o demos.

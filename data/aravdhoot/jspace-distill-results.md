@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jspace-distill-results` | Adaptadores LoRA sobre Gemma 3 12B | No disponible | Artefactos de investigación (destilación e interpretabilidad) | other | HuggingFace (0 descargas) |
-| `google/gemma-3-12b-it` | 12B | No disponible en esta ficha | Modelo instructivo base | Gemma license | HuggingFace |
+| `jspace-distill-results` | Adaptadores LoRA sobre Gemma 3 12B | No disponible | Artefactos de investigación (destilación e interpretabilidad) | other | Hugging Face (0 descargas) |
+| `google/gemma-3-12b-it` | 12B | No disponible en esta ficha | Modelo instructivo base | Gemma license | Hugging Face |
 | Alternativas de investigación en desalineación emergente | No disponible | No disponible | Repositorios de experimentos | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar rendimiento con modelos similares; el repositorio no es un modelo desplegable y no publica benchmarks.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar rendimiento con modelos s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aravdhoot/jspace-distill-results
+- Hugging Face: https://huggingface.co/aravdhoot/jspace-distill-results
 - Repositorio de código: https://github.com/arav-dhoot/introspection-training/tree/jspace-distillation-arav/jspace-dist (commit 1bf6a9b)
 - Dataset de salidas (protegido): `aravdhoot/jspace-distill-data`
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it

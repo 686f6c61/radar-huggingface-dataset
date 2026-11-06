@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAIA es un modelo publicado en HuggingFace por el usuario yinfan233 bajo el identificador `yinfan233/CAIA`. La informacion disponible en su model card se reduce a la declaracion de licencia Apache 2.0: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. Se trata, por tanto, de un repositorio practicamente sin documentacion asociada.
+CAIA es un modelo publicado en Hugging Face por el usuario yinfan233 bajo el identificador `yinfan233/CAIA`. La informacion disponible en su model card se reduce a la declaracion de licencia Apache 2.0: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluacion. Se trata, por tanto, de un repositorio practicamente sin documentacion asociada.
 
 El repositorio ocupa 1,8 GB, lo que es compatible con pesos en precision de 16 bits para un modelo del orden de 900 millones de parametros, o con un modelo mayor almacenado en cuantizaciones de 8 o 4 bits. Esta cifra es una estimacion derivada del tamano del repo, no un dato confirmado por el autor. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y la model card no declara ninguna tarea (`pipeline`) ni idioma.
 
@@ -85,7 +85,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 - Ausencia total de documentacion: la model card solo contiene la licencia. No hay descripcion de arquitectura, datos de entrenamiento, tokenizador ni limitaciones declaradas.
 - Sesgos conocidos: no disponibles. Al no documentarse el corpus de entrenamiento, no se puede evaluar el sesgo por idioma, genero, origen o dominio.
 - Riesgo de alucinacion: desconocido y no medido. Sin benchmarks de veracidad ni evaluaciones de robustez, no se puede acotar.
-- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas no esta declarado en HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles. El campo de idiomas no esta declarado en Hugging Face.
 - Licencia: Apache 2.0, que permite uso comercial, modificacion, redistribucion y uso privado, con obligacion de conservar el aviso de licencia y de indicar los cambios realizados. No incluye garantia ni responsabilidad por parte del autor.
 - Trazabilidad: el autor no ha publicado paper, repositorio de codigo ni contacto tecnico conocido, lo que dificulta la verificacion de procedencia de los pesos.
 - Riesgo de seguridad: al no existir evaluacion publicada, los pesos deberian tratarse como no verificados y no cargarse en entornos con acceso a datos sensibles sin un analisis previo.
@@ -94,6 +94,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinfan233/CAIA
+- Modelo en Hugging Face: https://huggingface.co/yinfan233/CAIA
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, repositorio de codigo, blog o demo: no disponible; la busqueda web no ha devuelto ningun resultado relacionado con el modelo.

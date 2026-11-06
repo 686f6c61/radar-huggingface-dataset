@@ -79,7 +79,7 @@ La comparativa se basa en conocimiento general de modelos similares, ya que la i
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/bge-small-en-v1.5
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/bge-small-en-v1.5
 - Modelo original BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentacion de BGE v1 y v1.5: https://bge-model.com/bge/bge_v1_v1.5.html
 - Transformers.js: https://huggingface.co/docs/transformers.js

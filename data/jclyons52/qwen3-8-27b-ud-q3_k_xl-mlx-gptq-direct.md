@@ -94,7 +94,7 @@ La ventaja de este modelo frente al GGUF es que no requiere conversión ni capa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q3_K_XL-MLX-gptq-direct
+- Modelo en Hugging Face: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q3_K_XL-MLX-gptq-direct
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repo del pipeline ud2mlx: https://github.com/jclyons52/ud2mlx
 - Documentación de unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

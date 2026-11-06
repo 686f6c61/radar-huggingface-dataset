@@ -88,9 +88,9 @@ En el agregado geometrico de c1 a c48, OneNexus queda un 0,1% por debajo en thro
 
 | Modelo | Parametros | Contexto | Calidad (muestras fijas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneNexus/GLM-5.3-Flash-MXFP4 | 169,12B en safetensors del repo; base declara 320B totales / 18B activos | 1.048.576 tokens | GSM8K 98,0%; MMLU 85,6%; GPQA Diamond 70,2% | MIT | HuggingFace, pesos safetensors; servicio validado en SGLang/ROCm |
-| amd/GLM-5.3-Flash-Quark-MXFP4 | no disponible en la informacion proporcionada | no disponible | GSM8K 98,2%; MMLU 84,6%; GPQA Diamond 66,7% | no disponible | HuggingFace, usado como referencia en las mismas pruebas |
-| zai-org/GLM-5.3-Flash (base) | 320B totales / 18B activos | 1.048.576 tokens (heredado) | no disponible | no disponible | HuggingFace |
+| OneNexus/GLM-5.3-Flash-MXFP4 | 169,12B en safetensors del repo; base declara 320B totales / 18B activos | 1.048.576 tokens | GSM8K 98,0%; MMLU 85,6%; GPQA Diamond 70,2% | MIT | Hugging Face, pesos safetensors; servicio validado en SGLang/ROCm |
+| amd/GLM-5.3-Flash-Quark-MXFP4 | no disponible en la informacion proporcionada | no disponible | GSM8K 98,2%; MMLU 84,6%; GPQA Diamond 66,7% | no disponible | Hugging Face, usado como referencia en las mismas pruebas |
+| zai-org/GLM-5.3-Flash (base) | 320B totales / 18B activos | 1.048.576 tokens (heredado) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneNexus/GLM-5.3-Flash-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/OneNexus/GLM-5.3-Flash-MXFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint de referencia de AMD: https://huggingface.co/amd/GLM-5.3-Flash-Quark-MXFP4
 - Implementacion en SGLang: https://github.com/sgl-project/sglang/pull/39273

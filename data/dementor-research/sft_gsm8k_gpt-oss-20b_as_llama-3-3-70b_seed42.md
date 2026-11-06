@@ -73,7 +73,7 @@ No disponible. No se proporcionan comparaciones con otros adaptadores LoRA para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_gsm8k_gpt-oss-20b_as_llama-3.3-70b_seed42
 - Framework Tinker: https://thinkingmachines.ai/tinker/ (referenciado en la model card)
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Configuración y código: se menciona `config.yaml` en el lanzamiento del código, pero no se proporciona enlace directo en la información disponible.

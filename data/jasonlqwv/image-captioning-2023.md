@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por jasonlqwv, no contiene un modelo de image captioning entrenado, sino una nota de investigación estructurada sobre el estado del arte y el diseño experimental de sistemas de descripción automática de imágenes. El artefacto principal es un documento (`review.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se incluyen pesos, código de entrenamiento ni resultados experimentales.
 
-El repositorio se presenta como material exploratorio para investigadores que quieran verificar o ampliar el planteamiento. Aunque el tag de HuggingFace indica `image-captioning` y `transformer`, el contenido real es un documento de texto, no un modelo. El tamaño del repositorio es de 0.0 GB y el único archivo con parámetros registrados (49.600) corresponde probablemente a un artefacto auxiliar, no a pesos de red neuronal.
+El repositorio se presenta como material exploratorio para investigadores que quieran verificar o ampliar el planteamiento. Aunque el tag de Hugging Face indica `image-captioning` y `transformer`, el contenido real es un documento de texto, no un modelo. El tamaño del repositorio es de 0.0 GB y el único archivo con parámetros registrados (49.600) corresponde probablemente a un artefacto auxiliar, no a pesos de red neuronal.
 
 La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable. Su utilidad práctica se restringe al ámbito académico: como punto de partida para una revisión bibliográfica o como plantilla para estructurar una propuesta de investigación en image captioning.
 
@@ -57,7 +57,7 @@ No aplica. No hay modelo que ejecutar. El unico requisito es un editor de texto 
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo, por lo que no puede compararse con sistemas de image captioning como BLIP, GIT u OFA. Si se busca un modelo real para descripcion de imagenes, existen alternativas en HuggingFace con pesos publicados y benchmarks verificados.
+No disponible. Este repositorio no es un modelo, por lo que no puede compararse con sistemas de image captioning como BLIP, GIT u OFA. Si se busca un modelo real para descripcion de imagenes, existen alternativas en Hugging Face con pesos publicados y benchmarks verificados.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jasonlqwv/image-captioning-2023
+- Repositorio Hugging Face: https://huggingface.co/jasonlqwv/image-captioning-2023
 - Repositorio GitHub relacionado (mismo autor): https://github.com/jasonhy-wang/Image-Captioning-AI
-- Documentacion de HuggingFace sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
+- Documentacion de Hugging Face sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Paper de referencia NICE 2023 (zero-shot image captioning): https://arxiv.org/pdf/2309.01961v1

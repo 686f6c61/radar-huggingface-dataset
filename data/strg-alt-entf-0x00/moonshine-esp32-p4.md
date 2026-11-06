@@ -47,7 +47,7 @@ El repositorio no incluye información sobre el proceso de entrenamiento origina
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de precisión (WER, CER) ni comparativas con otros modelos ASR. La documentación de Moonshine en HuggingFace y STT.ai menciona que es adecuado para edge, pero no se proporcionan números concretos en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de precisión (WER, CER) ni comparativas con otros modelos ASR. La documentación de Moonshine en Hugging Face y STT.ai menciona que es adecuado para edge, pero no se proporcionan números concretos en esta ficha.
 
 ## Requisitos de hardware
 
@@ -73,9 +73,9 @@ No se dispone de datos comparativos en la información proporcionada. Moonshine 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Strg-Alt-Entf-0x00/Moonshine-ESP32-P4
+- Repositorio Hugging Face: https://huggingface.co/Strg-Alt-Entf-0x00/Moonshine-ESP32-P4
 - GitHub del autor (esp-uart-filebridge): https://github.com/Strg-Alt-Entf-0x00/esp-uart-filebridge
 - GitHub del autor (FireRedVAD para ESP32-P4): https://github.com/Strg-Alt-Entf-0x00/firered-vad-esp32-p4
-- Modelos Moonshine originales en HuggingFace: https://huggingface.co/UsefulSensors/moonshine
+- Modelos Moonshine originales en Hugging Face: https://huggingface.co/UsefulSensors/moonshine
 - Documentación de Moonshine en Transformers: https://huggingface.co/docs/transformers/en/model_doc/moonshine
 - Ficha de Moonshine en STT.ai: https://stt.ai/models/moonshine/

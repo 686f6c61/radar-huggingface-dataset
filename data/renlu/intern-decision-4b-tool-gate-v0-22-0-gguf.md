@@ -84,8 +84,8 @@ No se dispone de datos de modelos comparables de puerta de herramientas (tool-ga
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Intern-Decision-4B Tool Gate v0.22.0 (este) | 4.205.751.296 | 8.192 en lanzador; entradas > 1.536 tokens rechazadas | GGUF Q8_0 + LoRA F16 | Apache-2.0 | Comunidad, 0 descargas |
-| internlm/Intern-Decision-4B (base) | 4.205.751.296 | no disponible | safetensors | Apache-2.0 (segun el paquete) | HuggingFace |
-| yeaay/Intern-Decision-4B-GGUF (cuantizacion origen) | 4.205.751.296 | no disponible | GGUF | no disponible | HuggingFace |
+| internlm/Intern-Decision-4B (base) | 4.205.751.296 | no disponible | safetensors | Apache-2.0 (segun el paquete) | Hugging Face |
+| yeaay/Intern-Decision-4B-GGUF (cuantizacion origen) | 4.205.751.296 | no disponible | GGUF | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se dispone de datos de modelos comparables de puerta de herramientas (tool-ga
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/renlu/intern-decision-4b-tool-gate-v0.22.0-gguf
+- Repositorio Hugging Face: https://huggingface.co/renlu/intern-decision-4b-tool-gate-v0.22.0-gguf
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-4B
 - Cuantizacion GGUF de origen: https://huggingface.co/yeaay/Intern-Decision-4B-GGUF
 - Adaptador LoRA fuente: https://huggingface.co/renlu/intern-decision-4b-tool-gate-v0.22.0

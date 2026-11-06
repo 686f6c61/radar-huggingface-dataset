@@ -84,8 +84,8 @@ ModernBERT-base ofrece el mayor contexto (8192 tokens) y el mayor volumen de dat
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/modernbert_base](https://huggingface.co/kerasformers/modernbert_base)
+- [Hugging Face: kerasformers/modernbert_base](https://huggingface.co/kerasformers/modernbert_base)
 - [Repositorio KerasFormers (GitHub)](https://github.com/IMvision12/KerasFormers)
-- [Documentación de ModernBERT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/modernbert)
+- [Documentación de ModernBERT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/modernbert)
 - [Paper de ModernBERT (arXiv)](https://arxiv.org/abs/2412.13663)
 - [Repositorio oficial de ModernBERT (GitHub)](https://github.com/AnswerDotAI/ModernBERT)

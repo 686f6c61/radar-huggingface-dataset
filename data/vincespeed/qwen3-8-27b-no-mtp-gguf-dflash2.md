@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario vincespeed, distribuido bajo licencia Apache 2.0 y etiquetado como compatible con endpoints y orientado a uso conversacional. El repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, por lo que no hay documentacion del autor sobre arquitectura, datos de entrenamiento o procedencia del modelo.
+`vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario vincespeed, distribuido bajo licencia Apache 2.0 y etiquetado como compatible con endpoints y orientado a uso conversacional. El repositorio no incluye model card descriptiva: el README se limita a la declaracion de licencia, por lo que no hay documentacion del autor sobre arquitectura, datos de entrenamiento o procedencia del modelo.
 
 Existe una discrepancia relevante entre el nombre del repositorio y los metadatos reales. El identificador sugiere un modelo de 27B, pero el recuento de parametros registrado en safetensors es de 1.924.404.480 parametros (aproximadamente 1,92 mil millones), y el tamano total del repositorio es de 0,8 GB, coherente con un modelo de ese orden y no con uno de 27B. Cualquier evaluacion debe partir del dato verificado de ~1,92B, no del nombre.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del data
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que esta orientado a dialogos multi-turno, aunque no se especifican capacidades concretas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de una API compatible con el formato de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de una API compatible con el formato de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, audio: no disponible, sin evidencia en la informacion proporcionada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -73,7 +73,7 @@ Los datos de la columna del modelo evaluado son los verificados en este reposito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-No-MTP-GGUF-Dflash2 (este) | 1,92 B | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3.8-27B-No-MTP-GGUF-Dflash2 (este) | 1,92 B | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de la categoria ~1-2B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B, Gemma-2-2B) | en el rango 1-2 B | no verificado en esta busqueda | licencias permisivas en sus variantes abiertas | ampliamente disponibles |
 
 No se dispone de datos de rendimiento comparado porque este repositorio no publica benchmarks.
@@ -92,5 +92,5 @@ No se dispone de datos de rendimiento comparado porque este repositorio no publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2
+- Repositorio en Hugging Face: https://huggingface.co/vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

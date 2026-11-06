@@ -6,7 +6,7 @@ SimpleAudit es un framework de auditoría para salidas de modelos de lenguaje (L
 
 El framework responde a un problema concreto: cómo evaluar la seguridad y fiabilidad de modelos de lenguaje cuando no existen benchmarks oficiales para un dominio o idioma específico. SimpleAudit propone un enfoque de "puntuación de seguridad comparativa sin benchmarks" (benchmarkless comparative safety scoring), que permite a organizaciones tomar decisiones informadas sobre el despliegue de modelos. Su relevancia actual radica en el creciente uso de LLMs en producción y la necesidad de mecanismos de auditoría estructurados y reproducibles.
 
-El repositorio fue creado en agosto de 2026 y no registra descargas ni interacciones en HuggingFace. La documentación está organizada en 13 secciones que cubren desde la instalación hasta la validación de jueces y la visualización de resultados, lo que lo convierte en un recurso útil para desarrolladores e investigadores que necesiten implementar auditorías sistemáticas de modelos de lenguaje.
+El repositorio fue creado en agosto de 2026 y no registra descargas ni interacciones en Hugging Face. La documentación está organizada en 13 secciones que cubren desde la instalación hasta la validación de jueces y la visualización de resultados, lo que lo convierte en un recurso útil para desarrolladores e investigadores que necesiten implementar auditorías sistemáticas de modelos de lenguaje.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ No disponible. SimpleAudit no es un modelo de lenguaje, sino un framework de aud
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SushantGautam/SimleAuditDocs
+- Repositorio en Hugging Face: https://huggingface.co/SushantGautam/SimleAuditDocs
 - Perfil de GitHub del autor: https://github.com/SushantGautam/SushantGautam
 - Sitio personal del autor: https://www.sushantgautam.com/
 - Página académica: https://www.sushant.info.np/

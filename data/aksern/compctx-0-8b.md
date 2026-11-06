@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`compctx-0.8b` es un modelo compacto de generación de texto desarrollado por el usuario `aksern` y publicado en HuggingFace. Se trata de un ajuste fino (SFT con LoRA) sobre `Qwen/Qwen3.5-0.8B`, con 752 millones de parámetros, cuyo propósito no es la conversación general, sino una tarea muy específica: comprimir trazas de ejecución de agentes de IA en notas de memoria estructuradas.
+`compctx-0.8b` es un modelo compacto de generación de texto desarrollado por el usuario `aksern` y publicado en Hugging Face. Se trata de un ajuste fino (SFT con LoRA) sobre `Qwen/Qwen3.5-0.8B`, con 752 millones de parámetros, cuyo propósito no es la conversación general, sino una tarea muy específica: comprimir trazas de ejecución de agentes de IA en notas de memoria estructuradas.
 
 El problema que resuelve es la gestión de memoria en sistemas agentes de larga duración. Los agentes que usan herramientas generan registros extensos de acciones, errores y decisiones; este modelo destila esos registros en un formato fijo (objetivo, restricciones, estado, decisiones y siguientes pasos), preservando detalles técnicos exactos como rutas de ficheros, comandos, identificadores y mensajes de error. Esto permite reanudar sesiones de agente o construir componentes de memoria ligeros sin mantener el contexto completo en la ventana del modelo.
 
@@ -83,5 +83,5 @@ La ventaja diferencial de `compctx-0.8b` frente a usar un modelo generalista con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aksern/compctx-0.8b
+- Modelo en Hugging Face: https://huggingface.co/aksern/compctx-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

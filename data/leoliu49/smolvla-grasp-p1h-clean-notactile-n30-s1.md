@@ -96,7 +96,7 @@ Los datos de la columna "alternativas" son valores publicos de referencia de cad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoliu49/smolvla-grasp-p1h-clean-notactile-n30-s1
+- Modelo en Hugging Face: https://huggingface.co/leoliu49/smolvla-grasp-p1h-clean-notactile-n30-s1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/leoliu49/grasp_p1h_clean
 - Paper de SmolVLA (arXiv 2506.01844): https://arxiv.org/html/2506.01844v1

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lumma-fev-4B-v2-GGUF | 4.841.450.496 | no disponible | Modelo de decisión probabilística | apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5-4B-Base (modelo base) | ~4B | no disponible | Generación de texto | no disponible | HuggingFace |
+| Lumma-fev-4B-v2-GGUF | 4.841.450.496 | no disponible | Modelo de decisión probabilística | apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5-4B-Base (modelo base) | ~4B | no disponible | Generación de texto | no disponible | Hugging Face |
 | Alternativas de clasificación de mismo tamaño | no disponible | no disponible | Clasificación generativa | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada para establecer una comparación cuantitativa con alternativas.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-4B-v2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-4B-v2-GGUF
 - Modelo base (original): https://huggingface.co/FrontiersMind/Lumma-fev-4b-v2
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-4B-Base

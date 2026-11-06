@@ -80,8 +80,8 @@ Estas cifras miden fidelidad respecto al modelo base, no rendimiento absoluto en
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `axteam/Qwen3.5-0.8B-AWQ-8bit` | 852.985.920 | 262.144 tokens | Safetensors, AWQ INT8 W8A16 (`compressed-tensors`) | Apache-2.0 | HuggingFace, servible con vLLM |
-| `Qwen/Qwen3.5-0.8B` (BF16) | 852.985.920 | 262.144 tokens | Safetensors BF16 (~1,7 GB de pesos, derivado del recuento de parámetros) | Apache-2.0 | HuggingFace; GGUF y Ollama disponibles según fuentes públicas |
+| `axteam/Qwen3.5-0.8B-AWQ-8bit` | 852.985.920 | 262.144 tokens | Safetensors, AWQ INT8 W8A16 (`compressed-tensors`) | Apache-2.0 | Hugging Face, servible con vLLM |
+| `Qwen/Qwen3.5-0.8B` (BF16) | 852.985.920 | 262.144 tokens | Safetensors BF16 (~1,7 GB de pesos, derivado del recuento de parámetros) | Apache-2.0 | Hugging Face; GGUF y Ollama disponibles según fuentes públicas |
 | Qwen3.5-4B | ~4.000 millones (según denominación) | No disponible | No disponible | No disponible | Referenciado como alternativa para tareas de código |
 | Qwen3-0.6B (generación anterior) | ~0,6 mil millones | No disponible | No disponible | No disponible | Repositorio GitHub de QwenLM |
 
@@ -102,7 +102,7 @@ Frente al original en BF16, esta versión reduce el espacio de pesos aproximadam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Receta de vLLM para Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero clara: los modelos generalistas rara vez ma
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre un transformer decoder-only de 8.000 millones de parametros (Llama 3.1 8B Instruct) mediante QLoRA, es decir, el modelo base se mantiene cuantizado a 4 bits y solo se entrenan las matrices de bajo rango insertadas en las capas. El entrenamiento se ejecuto con Unsloth, que optimiza el paso hacia atras y reduce el consumo de memoria, y con las librerias TRL y Transformers del ecosistema HuggingFace. No se especifican en la informacion disponible el rango del adaptador, el alpha, las capas objetivo ni la tasa de aprendizaje.
+El adaptador se aplica sobre un transformer decoder-only de 8.000 millones de parametros (Llama 3.1 8B Instruct) mediante QLoRA, es decir, el modelo base se mantiene cuantizado a 4 bits y solo se entrenan las matrices de bajo rango insertadas en las capas. El entrenamiento se ejecuto con Unsloth, que optimiza el paso hacia atras y reduce el consumo de memoria, y con las librerias TRL y Transformers del ecosistema Hugging Face. No se especifican en la informacion disponible el rango del adaptador, el alpha, las capas objetivo ni la tasa de aprendizaje.
 
 El dataset es propio y consta de 2.245 ejemplos conversacionales, con una distribucion desigual: los temas con mas cobertura son saludos diarios (197), identidad (198) y matematicas simples (198), mientras que cine (98), chistes (102) y problemas tecnicos (106) tienen menos ejemplos. Solo unos 30 ejemplos son de dialogo multiturno, lo que explica buena parte de las limitaciones documentadas. No se menciona uso de RLHF ni DPO; el ajuste es SFT supervisado. La curva de perdida muestra pequenas caidas en los limites de epoca (alrededor de los pasos 281 y 562), lo que sugiere cierta memorizacion, segun el propio autor.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Baasha (este adaptador) | 8B (base) + LoRA | no disponible | Telugu coloquial para asistente de voz | llama3.1 | HuggingFace, 29 descargas |
+| Baasha (este adaptador) | 8B (base) + LoRA | no disponible | Telugu coloquial para asistente de voz | llama3.1 | Hugging Face, 29 descargas |
 | Meta Llama 3.1 8B Instruct | 8B | 128k (segun Meta) | Instruct generalista multilingue | llama3.1 | Amplia, muy extendida |
-| Adaptadores LoRA para idiomas de la India (familia generica) | variable | no disponible | Ajuste idiomatico | variable | HuggingFace, sin datos concretos en esta busqueda |
+| Adaptadores LoRA para idiomas de la India (familia generica) | variable | no disponible | Ajuste idiomatico | variable | Hugging Face, sin datos concretos en esta busqueda |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de Baasha frente a alternativas; la comparacion se limita a parametros, contexto declarado y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Baa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dhanush444/Telugu-lora-adapter
+- Modelo en Hugging Face: https://huggingface.co/Dhanush444/Telugu-lora-adapter
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit
 - Modelo STT relacionado: https://huggingface.co/Dhanush444/whisper-telugu-medium-indicvoices
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

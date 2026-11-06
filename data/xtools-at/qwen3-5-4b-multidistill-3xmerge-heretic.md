@@ -113,7 +113,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-heretic
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-heretic
 - Modelo base (original sin ablacion): https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge
 - Heretic (herramienta de ablacion): https://heretic-project.org
 - Fuente 1 del merge: https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2

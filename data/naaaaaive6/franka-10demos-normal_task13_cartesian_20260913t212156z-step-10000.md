@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (franka-10demos, task13, step 10000) | 3,62 B | VLA pi05 ajustado a Franka | no disponible | no disponible | HuggingFace, safetensors |
+| Este checkpoint (franka-10demos, task13, step 10000) | 3,62 B | VLA pi05 ajustado a Franka | no disponible | no disponible | Hugging Face, safetensors |
 | pi05 base (openpi) | no disponible en esta busqueda | VLA pi05 | no disponible | no disponible | repositorio openpi |
-| Otros ajustes de openpi para Franka | no disponible | VLA pi05 | no disponible | no disponible | HuggingFace |
+| Otros ajustes de openpi para Franka | no disponible | VLA pi05 | no disponible | no disponible | Hugging Face |
 | OpenVLA | 7 B (referencia general) | VLA sobre VLM | no disponible | no disponible | publico |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria. Cualquier cifra de rendimiento relativo requeriria una evaluacion propia en el mismo banco de tareas.
@@ -90,7 +90,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-10000
 - Fichero de estadisticas de normalizacion citado en la model card: `assets/franka/norm_stats.json` (dentro del repositorio)
 - Fichero de registro citado en la model card: `log.txt` (dentro del repositorio)
 - Libreria openpi: no se proporciona URL en la informacion disponible

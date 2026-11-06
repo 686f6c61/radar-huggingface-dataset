@@ -82,7 +82,7 @@ El repositorio menciona dos lineas base con las que el autor compara su trabajo 
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Car Damage Photo Integrity Detector v9 | Deteccion de manipulacion en fotos de danos de coche (ConvNeXt-Tiny + residual de ruido + FPN/U-Net) | 29,4 M | Imagen a resolucion completa en una pasada | Apache-2.0 | HuggingFace (obuladinnesai/car-damage-photo-integrity-v9) |
+| Car Damage Photo Integrity Detector v9 | Deteccion de manipulacion en fotos de danos de coche (ConvNeXt-Tiny + residual de ruido + FPN/U-Net) | 29,4 M | Imagen a resolucion completa en una pasada | Apache-2.0 | Hugging Face (obuladinnesai/car-damage-photo-integrity-v9) |
 | TruFor | Deteccion de manipulacion de imagenes de proposito general | no disponible | no disponible | no disponible | referenciado como linea base en el repo |
 | RADAR | Deteccion de imagenes generadas por IA / manipuladas | no disponible | no disponible | no disponible | referenciado como linea base en el repo |
 
@@ -103,7 +103,7 @@ No se dispone de datos suficientes sobre TruFor ni RADAR dentro de la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obuladinnesai/car-damage-photo-integrity-v9
+- Modelo en Hugging Face: https://huggingface.co/obuladinnesai/car-damage-photo-integrity-v9
 - Repositorio de versiones anteriores (v5-v8, codigo e informes): https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v5
 - Perfil del autor: https://huggingface.co/obuladinnesai
 - Dataset de entrenamiento CarDD: https://huggingface.co/datasets/shawnmichael/CarDD

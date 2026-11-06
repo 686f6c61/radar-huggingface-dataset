@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nithinai517/tinyllama-support-merged` es un modelo de generación de texto de 1.100 millones de parámetros publicado en HuggingFace por el usuario nithinai517. Por su nombre y tamaño, parece ser una variante o fusión (merge) de la familia TinyLlama, aunque la model card no proporciona información oficial sobre su origen, arquitectura exacta o proceso de entrenamiento. El repositorio incluye pesos en formato safetensors y está etiquetado como compatible con `transformers` y `text-generation-inference`.
+El modelo `nithinai517/tinyllama-support-merged` es un modelo de generación de texto de 1.100 millones de parámetros publicado en Hugging Face por el usuario nithinai517. Por su nombre y tamaño, parece ser una variante o fusión (merge) de la familia TinyLlama, aunque la model card no proporciona información oficial sobre su origen, arquitectura exacta o proceso de entrenamiento. El repositorio incluye pesos en formato safetensors y está etiquetado como compatible con `transformers` y `text-generation-inference`.
 
 La relevancia de este modelo radica en su tamaño compacto (1,1B), que lo hace apto para ejecutarse en hardware de consumo, y en su orientación conversacional según las etiquetas. Sin embargo, la ausencia total de documentación técnica y de resultados de evaluación limita seriamente su uso en producción sin una validación previa por parte del desarrollador. No se dispone de información sobre licencia, idiomas soportados ni contexto de entrenamiento.
 
@@ -60,10 +60,10 @@ No se dispone de datos de rendimiento para comparar. A modo estructural, se pued
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nithinai517/tinyllama-support-merged | 1,1B | no disponible | no disponible | HuggingFace |
-| TinyLlama-1.1B (original) | 1,1B | 2048 (típico) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32768 | Apache 2.0 | HuggingFace |
-| Phi-2 | 2,7B | 2048 | MIT | HuggingFace |
+| nithinai517/tinyllama-support-merged | 1,1B | no disponible | no disponible | Hugging Face |
+| TinyLlama-1.1B (original) | 1,1B | 2048 (típico) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32768 | Apache 2.0 | Hugging Face |
+| Phi-2 | 2,7B | 2048 | MIT | Hugging Face |
 
 Nota: los datos de TinyLlama, Qwen y Phi son de conocimiento general, no de la información proporcionada. La comparación es solo estructural; no hay benchmarks del modelo evaluado.
 
@@ -78,5 +78,5 @@ Nota: los datos de TinyLlama, Qwen y Phi son de conocimiento general, no de la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nithinai517/tinyllama-support-merged
+- Hugging Face: https://huggingface.co/nithinai517/tinyllama-support-merged
 - No se han encontrado otros enlaces (papers, repos, demos) en la búsqueda web.

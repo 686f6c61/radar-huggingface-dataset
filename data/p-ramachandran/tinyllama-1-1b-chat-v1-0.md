@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLlama-1.1B-Chat-v1.0 es la variante conversacional del proyecto TinyLlama, un modelo de lenguaje de 1.100.048.384 parametros desarrollado por el equipo de TinyLlama (jzhang38) y publicado originalmente en HuggingFace. El repositorio analizado aqui es una copia subida por el usuario p-ramachandran bajo la misma licencia Apache 2.0. El modelo parte de un checkpoint preentrenado sobre 3 billones de tokens y se afina con el recetario de Zephyr (SFT sobre UltraChat y alineamiento con DPO sobre UltraFeedback).
+TinyLlama-1.1B-Chat-v1.0 es la variante conversacional del proyecto TinyLlama, un modelo de lenguaje de 1.100.048.384 parametros desarrollado por el equipo de TinyLlama (jzhang38) y publicado originalmente en Hugging Face. El repositorio analizado aqui es una copia subida por el usuario p-ramachandran bajo la misma licencia Apache 2.0. El modelo parte de un checkpoint preentrenado sobre 3 billones de tokens y se afina con el recetario de Zephyr (SFT sobre UltraChat y alineamiento con DPO sobre UltraFeedback).
 
 El objetivo del proyecto es ofrecer un modelo Llama compacto que pueda ejecutarse en hardware de consumo manteniendo la compatibilidad total con el ecosistema Llama 2 (misma arquitectura y mismo tokenizador). Esto lo hace util para prototipado rapido, despliegues en el borde y entornos con restricciones severas de VRAM, aunque su capacidad de razonamiento queda muy por debajo de modelos de mayor tamano.
 
@@ -25,7 +25,7 @@ La relevancia actual reside en su bajo coste de inferencia y su licencia permisi
 
 TinyLlama emplea exactamente la misma arquitectura y tokenizador que Llama 2: un transformer decoder-only con atencion multi-cabeza, embeddings rotatorios (RoPE), activacion SwiGLU y normalizacion RMSNorm. El preentrenamiento se realizo sobre 3 billones de tokens con una mezcla que incluye SlimPajama-627B, starcoderdata y otros corpus, segun los datasets declarados en la model card. El entrenamiento completo se planifico para 90 dias sobre 16 GPU A100 de 40 GB, comenzando el 1 de septiembre de 2023.
 
-La version chat parte del checkpoint intermedio `TinyLlama-1.1B-intermediate-step-1431k-3T` y sigue la receta de HuggingFace Zephyr: primero un ajuste supervisado (SFT) sobre una variante de UltraChat (dialogos sinteticos generados por ChatGPT) y despues un alineamiento con DPO usando el `DPOTrainer` de TRL sobre UltraFeedback (64.000 prompts con completaciones clasificadas por GPT-4). No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+La version chat parte del checkpoint intermedio `TinyLlama-1.1B-intermediate-step-1431k-3T` y sigue la receta de Hugging Face Zephyr: primero un ajuste supervisado (SFT) sobre una variante de UltraChat (dialogos sinteticos generados por ChatGPT) y despues un alineamiento con DPO usando el `DPOTrainer` de TRL sobre UltraFeedback (64.000 prompts con completaciones clasificadas por GPT-4). No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0 (este) | 1,1B | no disponible | Apache 2.0 | en | HuggingFace |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 (segun proyecto) | Apache 2.0 | en | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | multilingue | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | en (principalmente) | HuggingFace |
+| TinyLlama-1.1B-Chat-v1.0 (este) | 1,1B | no disponible | Apache 2.0 | en | Hugging Face |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 (segun proyecto) | Apache 2.0 | en | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | multilingue | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | en (principalmente) | Hugging Face |
 
 La comparativa con Qwen2.5 y SmolLM2 se ofrece como referencia de categoria (modelos densos de 1-2B parametros); los datos de contexto y licencia de esos modelos no forman parte de la informacion proporcionada y deben verificarse en sus respectivas model cards.
 
@@ -78,7 +78,7 @@ La comparativa con Qwen2.5 y SmolLM2 se ofrece como referencia de categoria (mod
 - El modelo esta alineado con DPO sobre UltraFeedback, por lo que puede heredar sesgos presentes en ese dataset y en UltraChat.
 - No dispone de soporte documentado de tool calling, agentes, vision ni audio, lo que restringe su uso en pipelines agenticos modernos.
 - Aunque la licencia Apache 2.0 permite uso comercial, el repositorio analizado es una copia subida por un tercero (p-ramachandran) con 0 descargas y 0 likes; conviene usar el repositorio oficial de TinyLlama para produccion y verificar la integridad de los pesos.
-- El pipeline no esta declarado en la informacion de HuggingFace, por lo que algunas herramientas de descubrimiento pueden no detectarlo automaticamente.
+- El pipeline no esta declarado en la informacion de Hugging Face, por lo que algunas herramientas de descubrimiento pueden no detectarlo automaticamente.
 
 ## Enlaces
 

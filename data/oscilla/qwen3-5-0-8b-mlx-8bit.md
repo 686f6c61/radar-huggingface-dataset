@@ -33,7 +33,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 - Razonamiento y comprension visual: segun la documentacion de Qwen3.5, el modelo base supera a Qwen3-VL en tareas de razonamiento, codigo, agentes y comprension visual.
 - Generacion de texto conversacional: soporta plantillas de chat mediante `apply_chat_template` y generacion autoregresiva.
 - Ejecucion en Apple Silicon: gracias al formato MLX, se integra nativamente con el ecosistema MLX para inferencia eficiente en CPU/GPU de Mac.
-- Compatibilidad con transformers: puede cargarse con la libreria transformers de HuggingFace, aunque el formato MLX esta optimizado para mlx-lm.
+- Compatibilidad con transformers: puede cargarse con la libreria transformers de Hugging Face, aunque el formato MLX esta optimizado para mlx-lm.
 - Cuantizacion de 8 bits: reduce el uso de memoria y acelera la inferencia en comparacion con el modelo en precision completa.
 
 ## Casos de uso
@@ -80,7 +80,7 @@ La comparativa se basa en datos publicos. No se dispone de benchmarks comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-8Bit
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Version 4-bit de Oscilla: https://huggingface.co/Oscilla/Qwen3.5-0.8B-mlx-4Bit
 - Conversion de mlx-community con correcciones: https://huggingface.co/mlx-community/Qwen3.5-0.8B-MLX-8bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Infopulse-movil es un modelo publicado en HuggingFace por el usuario TXENARRAKO, disponible en el repositorio TXENARRAKO/infopulse-movil. Se trata de un repositorio muy reciente y sin documentacion: la model card contiene unicamente la declaracion de licencia MIT, sin descripcion del proposito del modelo, su arquitectura, su tamano ni el problema que resuelve. No existe pipeline asociado en la plataforma, lo que impide determinar si se trata de un modelo generativo de texto, un clasificador u otro tipo de artefacto.
+Infopulse-movil es un modelo publicado en Hugging Face por el usuario TXENARRAKO, disponible en el repositorio TXENARRAKO/infopulse-movil. Se trata de un repositorio muy reciente y sin documentacion: la model card contiene unicamente la declaracion de licencia MIT, sin descripcion del proposito del modelo, su arquitectura, su tamano ni el problema que resuelve. No existe pipeline asociado en la plataforma, lo que impide determinar si se trata de un modelo generativo de texto, un clasificador u otro tipo de artefacto.
 
 La relevancia practica de este recurso es, por el momento, muy limitada: registra cero descargas y cero likes, y no hay demos, papers ni repositorios de codigo enlazados. El nombre sugiere una posible orientacion al dominio movil (telefonia o dispositivos moviles), pero esta es una hipotesis no verificable a partir de la informacion publicada. Cualquier evaluacion tecnica rigurosa requerira inspeccionar directamente los ficheros del repositorio para confirmar formato de pesos, tamano y arquitectura.
 
@@ -23,7 +23,7 @@ La relevancia practica de este recurso es, por el momento, muy limitada: registr
 
 No se dispone de informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, una arquitectura MoE, un modelo hibrido (SSM/attention) ni ninguna otra familia de modelos. Tampoco se conocen detalles sobre el proceso de entrenamiento: numero de tokens procesados, composicion del dataset, uso de tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas destacables como decodificacion especulativa o mecanismos de atencion alternativos.
 
-Dado que el repositorio no declara pipeline tag en HuggingFace, ni siquiera puede confirmarse que se trate de un modelo de lenguaje. La unica informacion tecnica verificable es la licencia MIT, que permite uso, modificacion y redistribucion con minimas restricciones.
+Dado que el repositorio no declara pipeline tag en Hugging Face, ni siquiera puede confirmarse que se trate de un modelo de lenguaje. La unica informacion tecnica verificable es la licencia MIT, que permite uso, modificacion y redistribucion con minimas restricciones.
 
 ## Capacidades
 
@@ -77,6 +77,6 @@ No disponible. Al desconocer la arquitectura, el tamano y la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TXENARRAKO/infopulse-movil
+- Repositorio en Hugging Face: https://huggingface.co/TXENARRAKO/infopulse-movil
 
 No se han encontrado enlaces adicionales (papers, blogs, demos o repositorios de codigo) en la informacion disponible.

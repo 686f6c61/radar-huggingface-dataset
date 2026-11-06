@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento que permitan comparar este modelo con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lazybit666/Ornith-1.5-9B-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lazybit666/Ornith-1.5-9B-uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
 - Cuantizaciones estáticas de referencia (mradermacher): https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-GGUF
 - Cuantizaciones con imatrix (mradermacher): https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF

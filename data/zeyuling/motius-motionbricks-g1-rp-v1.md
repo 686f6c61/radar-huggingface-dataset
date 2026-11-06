@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / condición | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G1 RP v1 (este) | 194,5 M | 4 poses contexto + 4 objetivos | qpos 36D, 30 fps, 18–58 frames | NVIDIA Open Model Agreement | HuggingFace (ZeyuLing) |
-| MotionBricks SOMA RP v1 | no disponible | 4 poses contexto + 4 objetivos | features 366D, 30 fps | NVIDIA Open Model Agreement | HuggingFace (ZeyuLing) |
-| MotionBricks original (nvidia) | no disponible | mismo esquema | mismo esquema | NVIDIA Open Model Agreement | HuggingFace (nvidia/MotionBricks) |
+| G1 RP v1 (este) | 194,5 M | 4 poses contexto + 4 objetivos | qpos 36D, 30 fps, 18–58 frames | NVIDIA Open Model Agreement | Hugging Face (ZeyuLing) |
+| MotionBricks SOMA RP v1 | no disponible | 4 poses contexto + 4 objetivos | features 366D, 30 fps | NVIDIA Open Model Agreement | Hugging Face (ZeyuLing) |
+| MotionBricks original (nvidia) | no disponible | mismo esquema | mismo esquema | NVIDIA Open Model Agreement | Hugging Face (nvidia/MotionBricks) |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de información sobre alternativas de otros desarrolladores en la documentación proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ZeyuLing/motius-motionbricks-g1-rp-v1
+- Hugging Face del modelo: https://huggingface.co/ZeyuLing/motius-motionbricks-g1-rp-v1
 - Checkpoint SOMA: https://huggingface.co/ZeyuLing/motius-motionbricks-soma-rp-v1
 - Modelo base: https://huggingface.co/nvidia/MotionBricks
 - Paper: https://arxiv.org/abs/2604.24833

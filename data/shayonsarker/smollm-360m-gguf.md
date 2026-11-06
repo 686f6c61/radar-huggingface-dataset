@@ -108,7 +108,7 @@ Consideraciones: frente a SmolLM2-360M, el salto de contexto (2.048 frente a 8.1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShayonSarker/SmolLM-360M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ShayonSarker/SmolLM-360M-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-360M
 - Repositorio de construcción (build hub): https://github.com/Dadhichi-Sarker-Shayon/SmolLM-360M-GGUF
 - Conversión GGUF alternativa (QuantFactory, base): https://huggingface.co/QuantFactory/SmolLM-360M-GGUF

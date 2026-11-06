@@ -79,7 +79,7 @@ La comparación directa no es posible sin datos de rendimiento publicados. Sin e
 
 ## Enlaces
 
-- [HuggingFace - cbrian/pi05_task1_ND3_epi_100_step_10000_batch_32](https://huggingface.co/cbrian/pi05_task1_ND3_epi_100_step_10000_batch_32)
+- [Hugging Face - cbrian/pi05_task1_ND3_epi_100_step_10000_batch_32](https://huggingface.co/cbrian/pi05_task1_ND3_epi_100_step_10000_batch_32)
 - [Artículo técnico de π₀.₅ (arXiv)](https://arxiv.org/abs/2504.16054)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)
 - [Documentación de LeRobot para π₀.₅](https://huggingface.co/docs/lerobot/pi05)

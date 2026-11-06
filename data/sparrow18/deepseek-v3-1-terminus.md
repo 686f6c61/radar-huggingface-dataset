@@ -17,7 +17,7 @@ Su relevancia actual radica en la combinación de licencia permisiva (MIT), capa
 | Parámetros activos | MoE con activación dispersa; el informe técnico de DeepSeek-V3 citado (arXiv:2412.19437) describe ~37 000 millones de parámetros activos por token. No explicitado en la model card de este repositorio |
 | Longitud de contexto | No explicitada en la model card de este repositorio. La estructura es la misma que DeepSeek-V3/DeepSeek-V3.1, que documentan 128 000 tokens |
 | Tipos de cuantización | Pesos nativos en FP8 (tag `fp8`). Cuantizaciones GGUF, AWQ o GPTQ no disponibles en este repositorio |
-| Idiomas soportados | No disponibles en los metadatos de HuggingFace. La model card menciona correcciones de mezcla chino-inglés, lo que implica cobertura de al menos chino e inglés |
+| Idiomas soportados | No disponibles en los metadatos de Hugging Face. La model card menciona correcciones de mezcla chino-inglés, lo que implica cobertura de al menos chino e inglés |
 | Licencia | MIT (tanto el repositorio como los pesos) |
 | Formato de pesos | `safetensors` (librería `transformers`, con `custom_code`); tamaño del repositorio 688,6 GB |
 | Modelo base | `deepseek-ai/DeepSeek-V3.1-Base` |
@@ -43,7 +43,7 @@ Como innovación destacable de esta revisión, la model card menciona dos cambio
 - Agente de búsqueda web: BrowseComp 38,5, BrowseComp-zh 45,0 y SimpleQA 96,8, con una plantilla y un conjunto de herramientas de búsqueda actualizados en esta revisión.
 - Capacidades multilingües: la revisión corrige la mezcla chino-inglés y se evalúa en SWE-bench Multilingual; no se detalla la lista completa de idiomas soportados.
 - Soporte de plantilla de chat específica para el agente de búsqueda, distinta de la plantilla de chat general.
-- Integración con text-generation-inference y con endpoints compatibles según los metadatos de HuggingFace.
+- Integración con text-generation-inference y con endpoints compatibles según los metadatos de Hugging Face.
 - No se documentan en la información proporcionada capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
@@ -100,8 +100,8 @@ Nota: solo los datos de la familia DeepSeek-V3.1 proceden de la model card anali
 | DeepSeek-V3.1-Terminus (este repositorio) | ~684,5 mil millones según safetensors | Heredado de DeepSeek-V3 (128 000 tokens según el informe técnico citado) | MIT | Pesos en safetensors FP8; republicación con 0 descargas |
 | DeepSeek-V3.1 | Misma familia; sirve como línea base de los benchmarks de la model card | Igual que el anterior | MIT | Repositorio oficial de DeepSeek-AI |
 | DeepSeek-V3 | Arquitectura de referencia documentada en arXiv:2412.19437 | No disponible en la información proporcionada | Licencia del modelo DeepSeek-V3 | Repositorio oficial de DeepSeek-AI |
-| Qwen3-235B-A22B | 235 000 millones totales, 22 000 millones activos (dato de documentación pública de Alibaba) | No disponible en la información proporcionada | Apache 2.0 según documentación pública | Pesos abiertos en HuggingFace |
-| Kimi K2 | 1 billón de parámetros totales, 32 000 millones activos (dato de documentación pública de Moonshot AI) | No disponible en la información proporcionada | Licencia modificada de MIT según documentación pública | Pesos abiertos en HuggingFace |
+| Qwen3-235B-A22B | 235 000 millones totales, 22 000 millones activos (dato de documentación pública de Alibaba) | No disponible en la información proporcionada | Apache 2.0 según documentación pública | Pesos abiertos en Hugging Face |
+| Kimi K2 | 1 billón de parámetros totales, 32 000 millones activos (dato de documentación pública de Moonshot AI) | No disponible en la información proporcionada | Licencia modificada de MIT según documentación pública | Pesos abiertos en Hugging Face |
 
 Comparativa de rendimiento directa entre estos modelos: no disponible en la información proporcionada, ya que la model card solo compara DeepSeek-V3.1-Terminus con DeepSeek-V3.1.
 
@@ -120,12 +120,12 @@ Comparativa de rendimiento directa entre estos modelos: no disponible en la info
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/sparrow18/DeepSeek-V3.1-Terminus
+- Repositorio analizado en Hugging Face: https://huggingface.co/sparrow18/DeepSeek-V3.1-Terminus
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Base
 - Repositorio de DeepSeek-V3.1 (plantilla de chat general): https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Repositorio oficial de DeepSeek-V3 para ejecución local: https://github.com/deepseek-ai/DeepSeek-V3
 - Informe técnico de DeepSeek-V3 (arXiv:2412.19437): https://arxiv.org/abs/2412.19437
-- Organización de DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización de DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5

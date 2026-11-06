@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`morozovdmit/classification` es un repositorio de HuggingFace publicado por el usuario morozovdmit que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es un punto de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio funciona como esqueleto reproducible: incluye `model.py`, `config.json`, `training_args.json` y el checkpoint de inicialización.
+`morozovdmit/classification` es un repositorio de Hugging Face publicado por el usuario morozovdmit que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es un punto de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio funciona como esqueleto reproducible: incluye `model.py`, `config.json`, `training_args.json` y el checkpoint de inicialización.
 
-La arquitectura declarada es "Dino" con atención dilatada, fusión tucker, activación gelu y normalización scalenorm, en la variante xlarge. Se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace (por ejemplo `AutoModel`) requieren un adaptador explícito para funcionar. El recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una cifra extremadamente reducida que confirma que no se trata de un modelo de producción.
+La arquitectura declarada es "Dino" con atención dilatada, fusión tucker, activación gelu y normalización scalenorm, en la variante xlarge. Se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face (por ejemplo `AutoModel`) requieren un adaptador explícito para funcionar. El recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una cifra extremadamente reducida que confirma que no se trata de un modelo de producción.
 
 Su relevancia actual es limitada y de carácter experimental: sirve como plantilla de partida para reproducir experimentos, no como modelo desplegable. No se declara ningún resultado de benchmark, no hay información sobre idiomas soportados y el repositorio registra 0 descargas y 0 likes, lo que sugiere que es un artefacto personal reciente y sin validación por parte de la comunidad.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, el repositorio únicamente incluye una receta de exp
 - Pruebas de humo de infraestructura: al incluir un checkpoint válido, permite verificar que el pipeline de carga de pesos, configuración y ejecución funciona antes de lanzar un entrenamiento costoso.
 - Estudio de configuraciones arquitectónicas: investigadores pueden experimentar con atención dilatada, fusión tucker o normalización scalenorm como variantes dentro de un script ya parametrizado mediante `config.json`.
 - Base para benchmarks comparativos: la propia model card recomienda evaluar con una partición etiquetada específica de la tarea, al menos tres semillas y una línea base de capacidad equivalente, lo que convierte el repo en un marco para montar dicha evaluación.
-- Desarrollo de adaptadores de carga: dado que requiere un adaptador explícito para las APIs automáticas de HuggingFace, puede usarse para practicar la integración de implementaciones personalizadas en pipelines propios.
+- Desarrollo de adaptadores de carga: dado que requiere un adaptador explícito para las APIs automáticas de Hugging Face, puede usarse para practicar la integración de implementaciones personalizadas en pipelines propios.
 - Docencia y ejemplos de estructura de repositorio: sirve como ejemplo de organización de un repositorio de modelo (script, config, training args, checkpoint) sin necesidad de infraestructura pesada.
 
 ## Benchmarks y rendimiento
@@ -70,10 +70,10 @@ No disponible. El repositorio no publica métricas ni pesos entrenados, lo que i
 - Riesgo de alucinación: no aplica en el estado actual, ya que no hay un modelo entrenado que genere salidas.
 - No hay información sobre cobertura idiomática ni límites de contexto.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero la model card advierte de revisar por separado los términos de los datos de origen si se combina con conjuntos externos.
-- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; no se puede cargar como un modelo estándar sin trabajo adicional.
+- Advertencia de integración: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; no se puede cargar como un modelo estándar sin trabajo adicional.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morozovdmit/classification
+- Repositorio en Hugging Face: https://huggingface.co/morozovdmit/classification
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `olivv-cs/ltx2` es un repositorio alojado en HuggingFace por el usuario `olivv-cs`, con un tamaño de 8,2 GB y sin documentación pública asociada. No se proporciona descripción, licencia, idiomas soportados, pipeline ni arquitectura. El repositorio fue creado el 16 de junio de 2026 y actualizado el 17 de agosto de 2026, pero no ha recibido descargas ni valoraciones significativas.
+El modelo `olivv-cs/ltx2` es un repositorio alojado en Hugging Face por el usuario `olivv-cs`, con un tamaño de 8,2 GB y sin documentación pública asociada. No se proporciona descripción, licencia, idiomas soportados, pipeline ni arquitectura. El repositorio fue creado el 16 de junio de 2026 y actualizado el 17 de agosto de 2026, pero no ha recibido descargas ni valoraciones significativas.
 
 Debido a la ausencia total de información técnica y de metadatos relevantes, no es posible determinar qué tipo de modelo es, qué problema resuelve, ni su relevancia actual. Cualquier afirmación sobre su arquitectura, capacidades o rendimiento sería especulativa y, por tanto, no se incluye en esta ficha. Se recomienda contactar con el autor o consultar el repositorio directamente para obtener más detalles.
 
@@ -21,7 +21,7 @@ Debido a la ausencia total de información técnica y de metadatos relevantes, n
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El repositorio no incluye un `README.md` ni archivos de configuración accesibles desde la página de HuggingFace que permitan inferir estos aspectos.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El repositorio no incluye un `README.md` ni archivos de configuración accesibles desde la página de Hugging Face que permitan inferir estos aspectos.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olivv-cs/ltx2
+- Repositorio en Hugging Face: https://huggingface.co/olivv-cs/ltx2

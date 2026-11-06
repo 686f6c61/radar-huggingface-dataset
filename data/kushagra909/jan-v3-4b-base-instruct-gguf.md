@@ -4,7 +4,7 @@
 
 El modelo `kushagra909/Jan-v3-4B-base-instruct-gguf` es una cuantización GGUF del modelo `Jan-v3-4B-base-instruct`, desarrollado por Jan (janhq) y publicado originalmente como `Menlo/Jan-v3-4B-base-instruct` según los metadatos. Se trata de un modelo de lenguaje causal de 4.411.424.256 parámetros (~4.41B), obtenido mediante destilación post-entrenamiento desde un modelo profesor más grande. Está diseñado como una base compacta y propia para fine-tuning, con capacidades de seguimiento de instrucciones y asistencia de código. Su longitud de contexto nativa es de 262.144 tokens, lo que lo hace adecuado para tareas que requieren manejar documentos extensos o conversaciones largas.
 
-El modelo original está disponible en HuggingFace como `janhq/Jan-v3-4B-base-instruct` y cuenta con una variante `Jan-Code` orientada a código que se lanzará próximamente. La cuantización que nos ocupa, publicada por el usuario `kushagra909`, mantiene la licencia Apache 2.0 y el idioma inglés, y está pensada para su uso con herramientas como `llama.cpp`, `vLLM` o la aplicación de escritorio Jan.
+El modelo original está disponible en Hugging Face como `janhq/Jan-v3-4B-base-instruct` y cuenta con una variante `Jan-Code` orientada a código que se lanzará próximamente. La cuantización que nos ocupa, publicada por el usuario `kushagra909`, mantiene la licencia Apache 2.0 y el idioma inglés, y está pensada para su uso con herramientas como `llama.cpp`, `vLLM` o la aplicación de escritorio Jan.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la cuantización: https://huggingface.co/kushagra909/Jan-v3-4B-base-instruct-gguf
-- Modelo original en HuggingFace: https://huggingface.co/janhq/Jan-v3-4B-base-instruct
+- Repositorio de Hugging Face de la cuantización: https://huggingface.co/kushagra909/Jan-v3-4B-base-instruct-gguf
+- Modelo original en Hugging Face: https://huggingface.co/janhq/Jan-v3-4B-base-instruct
 - Documentación de Jan sobre el modelo: https://www.jan.ai/docs/desktop/jan-models/jan-v3-4b-base-instruct
 - Repositorio de GitHub de Jan: https://github.com/janhq/jan
 - Página de Jan App: https://jan.ai/

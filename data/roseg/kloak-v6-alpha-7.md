@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kloak-V6-Alpha-7 es un modelo de lenguaje publicado por el usuario RoseG en HuggingFace, atribuido en su model card a TRiADiC Intelligence Labs y generado con la herramienta SFT Studio Pro. Se distribuye bajo licencia llama3.3 y en formato safetensors, con un total de 70.553.706.496 parámetros (aproximadamente 70,5 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamaño, coherente con la familia Llama 3.3 de Meta.
+Kloak-V6-Alpha-7 es un modelo de lenguaje publicado por el usuario RoseG en Hugging Face, atribuido en su model card a TRiADiC Intelligence Labs y generado con la herramienta SFT Studio Pro. Se distribuye bajo licencia llama3.3 y en formato safetensors, con un total de 70.553.706.496 parámetros (aproximadamente 70,5 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamaño, coherente con la familia Llama 3.3 de Meta.
 
 La model card es extremadamente escasa: no incluye información sobre arquitectura interna, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de benchmarks. El repositorio ocupa 282,2 GB, un tamaño compatible con pesos en precisión alta (probablemente bf16/fp16) para un modelo de ~70B, aunque también podría incluir múltiples checkpoints o artefactos adicionales.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un mo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta "llama" en HuggingFace; presumiblemente transformer denso, sin confirmar) |
+| Arquitectura | no disponible (etiqueta "llama" en Hugging Face; presumiblemente transformer denso, sin confirmar) |
 | Parametros totales | 70.553.706.496 (~70,5B) |
 | Parametros activos | no aplica (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kloak-V6-Alpha-7 | ~70,5B | no disponible | llama3.3 | HuggingFace, safetensors | Documentación mínima, 52 descargas |
-| Llama 3.3 70B (Meta) | ~70B | 128K (según model card oficial de Meta) | llama3.3 | HuggingFace, amplia comunidad | Base presumible; benchmarks públicos extensos |
-| Qwen2.5 72B | ~72B | 128K (según model card oficial) | Apache 2.0 / Qwen | HuggingFace, GGUF oficiales | Alternativa con licencia permisiva y ecosistema maduro |
+| Kloak-V6-Alpha-7 | ~70,5B | no disponible | llama3.3 | Hugging Face, safetensors | Documentación mínima, 52 descargas |
+| Llama 3.3 70B (Meta) | ~70B | 128K (según model card oficial de Meta) | llama3.3 | Hugging Face, amplia comunidad | Base presumible; benchmarks públicos extensos |
+| Qwen2.5 72B | ~72B | 128K (según model card oficial) | Apache 2.0 / Qwen | Hugging Face, GGUF oficiales | Alternativa con licencia permisiva y ecosistema maduro |
 | Mistral Large 2 | ~123B | 128K (según documentación de Mistral) | Mistral Research / comercial | API y pesos bajo condiciones | Mayor tamaño, no directamente comparable en VRAM |
 
 La comparación con Llama 3.3 70B y Qwen2.5 72B es la más pertinente por tamaño y categoría; sin embargo, no hay datos de rendimiento de Kloak-V6-Alpha-7 que permitan una comparación cuantitativa.
@@ -84,7 +84,7 @@ La comparación con Llama 3.3 70B y Qwen2.5 72B es la más pertinente por tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoseG/Kloak-V6-Alpha-7
+- Modelo en Hugging Face: https://huggingface.co/RoseG/Kloak-V6-Alpha-7
 - Licencia Llama 3.3 (Meta): https://llama.meta.com/llama3_3/license/
 - Repositorio de Llama 3 en GitHub (referencia de la familia): https://github.com/meta-llama/llama3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

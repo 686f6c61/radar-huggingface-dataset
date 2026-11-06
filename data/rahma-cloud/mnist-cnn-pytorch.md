@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un clasificador de dígitos manuscritos basado en una red neuronal convolucional (CNN) pequeña, desarrollado por el usuario Rahma-cloud y publicado en HuggingFace. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador entrenado sobre el clásico dataset MNIST, con el objetivo de reconocer dígitos escritos a mano del 0 al 9. Según su model card, se trata de un proyecto de aprendizaje para principiantes.
+Este modelo es un clasificador de dígitos manuscritos basado en una red neuronal convolucional (CNN) pequeña, desarrollado por el usuario Rahma-cloud y publicado en Hugging Face. No se trata de un modelo de lenguaje, sino de un modelo de visión por computador entrenado sobre el clásico dataset MNIST, con el objetivo de reconocer dígitos escritos a mano del 0 al 9. Según su model card, se trata de un proyecto de aprendizaje para principiantes.
 
-Su relevancia es principalmente educativa: sirve como ejemplo completo y funcional de un pipeline de clasificación de imágenes en PyTorch, desde la normalización de entradas hasta la carga de pesos desde HuggingFace Hub. Alcanza una precisión del 99,03 % en el conjunto de test de MNIST, un resultado sólido para una arquitectura tan compacta. El repositorio pesa prácticamente 0,0 GB, lo que confirma que el modelo es minúsculo y ejecutable en cualquier hardware, incluida la CPU.
+Su relevancia es principalmente educativa: sirve como ejemplo completo y funcional de un pipeline de clasificación de imágenes en PyTorch, desde la normalización de entradas hasta la carga de pesos desde Hugging Face Hub. Alcanza una precisión del 99,03 % en el conjunto de test de MNIST, un resultado sólido para una arquitectura tan compacta. El repositorio pesa prácticamente 0,0 GB, lo que confirma que el modelo es minúsculo y ejecutable en cualquier hardware, incluida la CPU.
 
 ## Especificaciones tecnicas
 
@@ -80,6 +80,6 @@ No se dispone de enlaces a modelos alternativos concretos en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rahma-cloud/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/Rahma-cloud/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la información disponible.

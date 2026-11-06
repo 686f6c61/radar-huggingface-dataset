@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pandawork17/resnet-18-ch01` es un checkpoint de clasificación de imágenes basado en la arquitectura ResNet-18, una red neuronal convolucional (CNN) de 18 capas con conexiones residuales. El modelo lo publica el usuario `pandawork17` en HuggingFace bajo licencia Apache 2.0 y cuenta con 11.699.112 parámetros, coherente con el tamaño estándar de un ResNet-18. El repositorio ocupa aproximadamente 1,5 GB y ofrece los pesos en formato safetensors y GGUF, lo que sugiere que se han almacenado varias versiones o cuantizaciones del mismo checkpoint.
+`pandawork17/resnet-18-ch01` es un checkpoint de clasificación de imágenes basado en la arquitectura ResNet-18, una red neuronal convolucional (CNN) de 18 capas con conexiones residuales. El modelo lo publica el usuario `pandawork17` en Hugging Face bajo licencia Apache 2.0 y cuenta con 11.699.112 parámetros, coherente con el tamaño estándar de un ResNet-18. El repositorio ocupa aproximadamente 1,5 GB y ofrece los pesos en formato safetensors y GGUF, lo que sugiere que se han almacenado varias versiones o cuantizaciones del mismo checkpoint.
 
 La model card publicada es prácticamente vacía: solo declara la licencia Apache 2.0, sin describir el dataset de entrenamiento, el número de clases de salida, el pipeline ni los idiomas. Los metadatos etiquetan el modelo como `resnet` y `conversational`, además de `endpoints_compatible`, una combinación poco habitual: ResNet-18 es un clasificador de imágenes y no un modelo de lenguaje conversacional, por lo que la finalidad real del checkpoint no puede confirmarse con la información disponible.
 
@@ -69,7 +69,7 @@ Las cifras de precisión y parámetros de la columna de referencia corresponden 
 
 | Modelo | Parametros | Top-1 ImageNet (referencia de arquitectura) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| resnet-18-ch01 (este modelo) | 11,7 M | no disponible | Apache 2.0 | HuggingFace |
+| resnet-18-ch01 (este modelo) | 11,7 M | no disponible | Apache 2.0 | Hugging Face |
 | ResNet-18 (torchvision, referencia) | 11,7 M | ~69,8% | BSD-3 | torchvision |
 | ResNet-34 (referencia) | 21,8 M | ~73,3% | BSD-3 | torchvision |
 | MobileNetV2 (referencia) | 3,5 M | ~72,0% | Apache 2.0 | torchvision |
@@ -88,8 +88,8 @@ Las cifras de precisión y parámetros de la columna de referencia corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandawork17/resnet-18-ch01
-- Búsqueda de modelos ResNet-18 en HuggingFace: https://huggingface.co/models?search=resnet18
+- Modelo en Hugging Face: https://huggingface.co/pandawork17/resnet-18-ch01
+- Búsqueda de modelos ResNet-18 en Hugging Face: https://huggingface.co/models?search=resnet18
 - Ejemplo de clasificación de imágenes con ResNet-18 (transfer learning, PyTorch): https://github.com/VincyJovitha01/Image-Classification-using-Resnet18
 - Guía de la red ResNet18 en PyTorch: https://doc.embedfire.com/linux/rk356x/Python/en/latest/ai/resnet18_pytorch.html
 - STM32 AI Model Zoo (modelos ligeros para microcontroladores): https://github.com/STMicroelectronics/stm32ai-modelzoo

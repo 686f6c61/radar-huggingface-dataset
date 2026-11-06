@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7` es un ajuste fino (fine-tune) publicado por el usuario `muhamad-geosurge` sobre `mistralai/Mistral-7B-v0.3`, según los metadatos de HuggingFace. Se trata de un transformer decoder-only denso de 7.248.031.744 parámetros (7,25 mil millones), con pesos en safetensors que ocupan 14,5 GB en el repositorio, lo que corresponde a precisión bf16/fp16. El repositorio declara la librería `vllm` como `library_name`, por lo que está pensado para servirse mediante ese motor de inferencia.
+El modelo identificado como `muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7` es un ajuste fino (fine-tune) publicado por el usuario `muhamad-geosurge` sobre `mistralai/Mistral-7B-v0.3`, según los metadatos de Hugging Face. Se trata de un transformer decoder-only denso de 7.248.031.744 parámetros (7,25 mil millones), con pesos en safetensors que ocupan 14,5 GB en el repositorio, lo que corresponde a precisión bf16/fp16. El repositorio declara la librería `vllm` como `library_name`, por lo que está pensado para servirse mediante ese motor de inferencia.
 
 El interés de la ficha es limitado pero relevante como caso de estudio: se trata de un modelo derivado de una base muy consolidada (Mistral-7B-v0.3, licencia Apache 2.0), pero con cero descargas y cero "likes" en el momento de la consulta, y con una model card que es una copia literal de la de `mistralai/Mistral-7B-Instruct-v0.3`. No hay información publicada sobre el dataset de ajuste, el proceso de entrenamiento ni los hiperparámetros empleados, y el nombre "invert-polarity" sugiere una intervención sobre los pesos (del estilo de las técnicas de abliteration o de inversión de dirección en el espacio de activaciones) que no está documentada.
 
@@ -97,7 +97,7 @@ La comparación se limita a parámetros, contexto y licencia, porque no hay resu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-1f2afdb1-73a5-4433-9927-cb47fc44a0d7
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo de referencia citado en la model card: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia oficial: https://github.com/mistralai/mistral-inference

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks individuales para este modelo en la
 
 - Inferencia en bf16: requiere aproximadamente 14,6 GB de VRAM (el tamaño del repo incluye los pesos), por lo que se puede ejecutar en una GPU con 16 GB o más, como una RTX 4090, A100 o H100.
 - Para un uso de puntuación de frases individuales, la latencia es baja; no se requiere hardware específico de servidor.
-- Opciones de despliegue: el modelo está en formato safetensors, compatible con bibliotecas de transformadores (HuggingFace Transformers). No se ha publicado una versión GGUF ni cuantizaciones alternativas.
+- Opciones de despliegue: el modelo está en formato safetensors, compatible con bibliotecas de transformadores (Hugging Face Transformers). No se ha publicado una versión GGUF ni cuantizaciones alternativas.
 - No hay datos de throughput o latencia específicos en la información disponible.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información sobre otros modelos de atribución de autoría en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-josephus)
+- [Modelo en Hugging Face](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-josephus)
 - [Dataset Sphragis](https://huggingface.co/datasets/Urdatorn/sphragis)
 - [Código de entrenamiento y puntuación](https://github.com/Urdatorn/sphragis_models)
 - [Paper de Huang, Murakami y Grieve (2025)](https://doi.org/10.1371/journal.pone.0327081)

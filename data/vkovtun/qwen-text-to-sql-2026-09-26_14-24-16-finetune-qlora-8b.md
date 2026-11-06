@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vkovtun/qwen-text-to-sql-2026-09-26_14.24.16-finetune-QLORA-8B` es un ajuste fino del modelo `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario vkovtun en HuggingFace. El identificador del repositorio indica que se orienta a la tarea text-to-SQL (traduccion de lenguaje natural a consultas SQL) y que el ajuste se ha realizado con QLoRA; las etiquetas y la model card confirman el uso de la libreria TRL y de SFT (supervised fine-tuning) como procedimiento de entrenamiento.
+`vkovtun/qwen-text-to-sql-2026-09-26_14.24.16-finetune-QLORA-8B` es un ajuste fino del modelo `Qwen/Qwen2.5-7B-Instruct`, publicado por el usuario vkovtun en Hugging Face. El identificador del repositorio indica que se orienta a la tarea text-to-SQL (traduccion de lenguaje natural a consultas SQL) y que el ajuste se ha realizado con QLoRA; las etiquetas y la model card confirman el uso de la libreria TRL y de SFT (supervised fine-tuning) como procedimiento de entrenamiento.
 
 La ficha tecnica del autor es un documento autogenerado por la plantilla de TRL: no incluye informacion sobre el conjunto de datos, el numero de tokens de entrenamiento, la licencia ni los idiomas soportados. El tamano del repositorio (1,3 GB) y las etiquetas `safetensors` y `generated_from_trainer` apuntan a que se publican adaptadores LoRA en lugar de los pesos completos, aunque esto no se confirma de forma explicita.
 
@@ -66,8 +66,8 @@ Los valores siguientes son estimaciones basadas en el tamano del modelo base (7B
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vkovtun/qwen-text-to-sql-...-QLORA-8B | 7B nominales (base) | No disponible (base: 128K) | Text-to-SQL (presunto) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 128K | Instrucciones generales | Apache 2.0 (segun el modelo base) | HuggingFace, ampliamente utilizado |
+| vkovtun/qwen-text-to-sql-...-QLORA-8B | 7B nominales (base) | No disponible (base: 128K) | Text-to-SQL (presunto) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 128K | Instrucciones generales | Apache 2.0 (segun el modelo base) | Hugging Face, ampliamente utilizado |
 | Otros ajustes text-to-SQL comparables | No disponible | No disponible | Text-to-SQL | No disponible | No disponible |
 
 No se dispone de datos para comparar el rendimiento de este ajuste frente a alternativas de su misma categoria, ya que no se han publicado benchmarks.
@@ -86,7 +86,7 @@ No se dispone de datos para comparar el rendimiento de este ajuste frente a alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/qwen-text-to-sql-2026-09-26_14.24.16-finetune-QLORA-8B
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/qwen-text-to-sql-2026-09-26_14.24.16-finetune-QLORA-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/qwen-text-to-sql/runs/ufll793x

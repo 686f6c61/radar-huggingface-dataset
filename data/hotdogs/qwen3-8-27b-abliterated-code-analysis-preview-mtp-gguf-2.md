@@ -96,7 +96,7 @@ No se dispone de datos de comparación con otros modelos de análisis de código
 
 ## Enlaces
 
-- [Modelo en HuggingFace (GGUF)](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-GGUF)
+- [Modelo en Hugging Face (GGUF)](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-GGUF)
 - [Modelo base (fine-tune de análisis)](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview)
 - [Modelo abliterated sin MTP (GGUF)](https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF)
 - [Blog de orcarouter sobre Qwen3.8-27B uncensored GGUF](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf)

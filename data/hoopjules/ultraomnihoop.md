@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hoopjules/UltraOmniHoop` es un repositorio alojado en HuggingFace por el usuario `hoopjules`, publicado el 30 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información pública relevante: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline de uso. Las descargas son cero y cuenta con un único "like", lo que sugiere que se trata de un modelo recién creado o de un repositorio privado sin documentación publicada. No se ha encontrado ninguna referencia externa en la web que proporcione detalles técnicos o funcionales sobre este modelo.
+El modelo `hoopjules/UltraOmniHoop` es un repositorio alojado en Hugging Face por el usuario `hoopjules`, publicado el 30 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información pública relevante: no se especifican arquitectura, tamaño, licencia, idiomas ni pipeline de uso. Las descargas son cero y cuenta con un único "like", lo que sugiere que se trata de un modelo recién creado o de un repositorio privado sin documentación publicada. No se ha encontrado ninguna referencia externa en la web que proporcione detalles técnicos o funcionales sobre este modelo.
 
-Dada la ausencia total de datos verificables, esta ficha se limita a reflejar la información disponible en HuggingFace y a advertir de que cualquier uso en producción requeriría una evaluación previa y la obtención de especificaciones por parte del autor.
+Dada la ausencia total de datos verificables, esta ficha se limita a reflejar la información disponible en Hugging Face y a advertir de que cualquier uso en producción requeriría una evaluación previa y la obtención de especificaciones por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ No se han documentado capacidades especificas. No hay evidencia de que el modelo
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin informacion verificable sobre el modelo. Cualquier aplicacion practica requeriria primero una evaluacion tecnica del repositorio y la obtencion de especificaciones por parte del autor. Se recomienda contactar con `hoopjules` a traves de HuggingFace para solicitar documentacion adicional.
+No se pueden proponer casos de uso concretos sin informacion verificable sobre el modelo. Cualquier aplicacion practica requeriria primero una evaluacion tecnica del repositorio y la obtencion de especificaciones por parte del autor. Se recomienda contactar con `hoopjules` a traves de Hugging Face para solicitar documentacion adicional.
 
 ## Benchmarks y rendimiento
 
@@ -53,6 +53,6 @@ No disponible. Al carecer de especificaciones tecnicas, no es posible establecer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hoopjules/UltraOmniHoop
+- Repositorio Hugging Face: https://huggingface.co/hoopjules/UltraOmniHoop
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo en la busqueda web.

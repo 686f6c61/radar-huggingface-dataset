@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (base) | 450M | VLA | no disponible | Apache-2.0 | HuggingFace |
-| Sounderya/smolvla-cphase1 | 450M | VLA fine-tuned | no disponible | Apache-2.0 | HuggingFace |
-| PiVLA (OpenVLA) | ~7B | VLA | no disponible | Apache-2.0 | HuggingFace |
+| SmolVLA (base) | 450M | VLA | no disponible | Apache-2.0 | Hugging Face |
+| Sounderya/smolvla-cphase1 | 450M | VLA fine-tuned | no disponible | Apache-2.0 | Hugging Face |
+| PiVLA (OpenVLA) | ~7B | VLA | no disponible | Apache-2.0 | Hugging Face |
 | RT-2 (Google) | ~55B | VLA | no disponible | propietaria | no pública |
 
 Este checkpoint es una variante fine-tuned del mismo modelo base SmolVLA, por lo que la comparativa directa con SmolVLA base no se puede hacer en términos de rendimiento (no hay benchmarks). Con respecto a VLA más grandes como PiVLA, la ventaja de SmolVLA es su tamaño reducido (450M frente a 7B), lo que permite despliegue en hardware de consumo, aunque se espera menor rendimiento en tareas complejas.
@@ -76,7 +76,7 @@ Este checkpoint es una variante fine-tuned del mismo modelo base SmolVLA, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sounderya/smolvla-cphase1
+- Modelo en Hugging Face: https://huggingface.co/Sounderya/smolvla-cphase1
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/sim_mug_skillgen_v2
 - Framework LeRobot: https://github.com/huggingface/lerobot

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jurindeepdb/deforestation",
+  "slug": "jurindeepdb-deforestation",
+  "author": "jurindeepdb",
+  "url": "https://huggingface.co/jurindeepdb/deforestation",
+  "created_at": "2026-11-06T10:09:31.000Z",
+  "updated_at": "2026-11-06T10:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128911882,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deforestation Monitoring: 2026 AI Detection Methods | Label Your Data",
+      "url": "https://labelyourdata.com/articles/machine-learning/deforestation-monitoring",
+      "snippet": "️ Learn how AI deforestation monitoring works and why labeled geospatial datasets determine deforestation detection model accuracy."
+    },
+    {
+      "title": "AI-Driven Deforestation Prediction Models → Scenario",
+      "url": "https://prism.sustainability-directory.com/scenario/ai-driven-deforestation-prediction-models/",
+      "snippet": "Assess The endeavor to forecast deforestation is an attempt to see the future of an ecosystem written in the language of data. AI-driven deforestation prediction models represent a significant evolution in this effort, moving from reactive monitoring to proactive foresight. These systems are built upon a foundation of machine learning algorithms that sift through immense and varied datasets ..."
+    }
+  ]
+}

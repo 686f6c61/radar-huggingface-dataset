@@ -18,7 +18,7 @@ No obstante, conviene subrayar que el repositorio no documenta el proceso de cua
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponible (el prompt de texto se procesa mediante el text encoder Qwen3-VL 8B) |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF, safetensors (FP8, INT8, NVFP4, MLX) |
 
 ## Arquitectura y entrenamiento
@@ -65,21 +65,21 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Limitaciones y advertencias
 
-- La licencia "qwen-research" (etiquetada como "other" en HuggingFace) impone restricciones que deben revisarse antes de cualquier uso comercial; no se detallan en la información disponible.
+- La licencia "qwen-research" (etiquetada como "other" en Hugging Face) impone restricciones que deben revisarse antes de cualquier uso comercial; no se detallan en la información disponible.
 - La variante "uncensored" puede generar contenido no apto para todos los públicos y plantea riesgos legales y reputacionales en producción; no se especifica qué filtros se han eliminado ni con qué método.
 - No se documenta la degradación de calidad introducida por cada cuantización; Q4_0 y MLX 4-bit son las opciones más agresivas y probablemente las más afectadas, pero no hay métricas que lo confirmen.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (2026-11-02), sin historial de mantenimiento.
 - El tamaño del repo (105,2 GB) incluye todos los formatos; descargar el conjunto completo no es necesario, pero exige seleccionar ficheros con cuidado.
-- La model card contiene enlaces a un dominio externo (abenzerps.com) y a un espacio de HuggingFace distinto del autor listado; conviene verificar la procedencia de los pesos antes de usarlos.
+- La model card contiene enlaces a un dominio externo (abenzerps.com) y a un espacio de Hugging Face distinto del autor listado; conviene verificar la procedencia de los pesos antes de usarlos.
 - No hay información sobre sesgos, idiomas soportados ni comportamiento del text encoder con prompts en castellano.
 - El soporte de ComfyUI-GGUF depende de un fork concreto (leejet); la model card advierte de errores de "Unknown model architecture!" con versiones antiguas (city96).
 - No se aportan datos de latencia ni de consumo energético, relevantes para despliegues a escala.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Acc33/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/Acc33/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF
 - Formulario de peticiones de modelos citado en la model card: https://abenzerps.com/request-a-model/
-- Espacio de referencia en HuggingFace citado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized
+- Espacio de referencia en Hugging Face citado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized

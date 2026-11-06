@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B tool-merged FP8 es un modelo derivado (fine-tune fusionado) publicado por el usuario manishkumar2101114 en HuggingFace. Parte del modelo base Qwen/Qwen3.6-35B-A3B-FP8 y le aplica un adaptador LoRA orientado a llamadas a herramientas (tool calling), entrenado durante 3 epocas sobre 1515 dialogos de tool-call. El resultado se fusiona en BF16 y despues se recuantiza por bloques a FP8 e4m3 con escala 128, manteniendo la convencion de formato del modelo base. El repositorio ocupa 37,5 GB y contiene pesos en safetensors.
+Qwen3.6-35B-A3B tool-merged FP8 es un modelo derivado (fine-tune fusionado) publicado por el usuario manishkumar2101114 en Hugging Face. Parte del modelo base Qwen/Qwen3.6-35B-A3B-FP8 y le aplica un adaptador LoRA orientado a llamadas a herramientas (tool calling), entrenado durante 3 epocas sobre 1515 dialogos de tool-call. El resultado se fusiona en BF16 y despues se recuantiza por bloques a FP8 e4m3 con escala 128, manteniendo la convencion de formato del modelo base. El repositorio ocupa 37,5 GB y contiene pesos en safetensors.
 
 El modelo tiene 35.951.822.704 parametros totales (aproximadamente 36B), lo que confirma que se trata de un modelo grande con arquitectura de mezcla de expertos (MoE), tal como indica la etiqueta qwen3_5_moe. El sufijo A3B del nombre sugiere del orden de 3B de parametros activos por token, aunque este dato no aparece confirmado en la model card. Esta pensado explicitamente para agentes de voz ("Marg voice agents") y para servir con sglang, vLLM o transformers.
 
@@ -88,7 +88,7 @@ No se dispone de datos contrastados de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-fp8
+- Pagina del modelo en Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-merged-fp8
 - Modelo base referenciado: Qwen/Qwen3.6-35B-A3B-FP8 (referencia en la model card, enlace no proporcionado)
 - Adaptador LoRA referenciado: qwen3.6-35b-a3b-tool-adapter-sglang (referencia en la model card, enlace no proporcionado)
 - Plantilla de chat: qwen3_template333.jinja (referencia en la model card, enlace no proporcionado)

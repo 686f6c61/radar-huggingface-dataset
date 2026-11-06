@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ShiyiZhang/Self-OPD está publicado en HuggingFace bajo licencia CC-BY-4.0, pero no incluye documentación técnica, descripción de arquitectura, ni detalles de entrenamiento. El nombre sugiere una posible relación con técnicas de *on-policy distillation* (destilación en política), un método de entrenamiento en el que un modelo estudiante aprende de sus propias trayectorias supervisadas por un profesor privilegiado, como se describe en el paper "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long..." (arXiv:2608.14277). Sin embargo, no existe confirmación oficial de que este repositorio corresponda a dicho trabajo.
+El modelo ShiyiZhang/Self-OPD está publicado en Hugging Face bajo licencia CC-BY-4.0, pero no incluye documentación técnica, descripción de arquitectura, ni detalles de entrenamiento. El nombre sugiere una posible relación con técnicas de *on-policy distillation* (destilación en política), un método de entrenamiento en el que un modelo estudiante aprende de sus propias trayectorias supervisadas por un profesor privilegiado, como se describe en el paper "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long..." (arXiv:2608.14277). Sin embargo, no existe confirmación oficial de que este repositorio corresponda a dicho trabajo.
 
 La ausencia de datos públicos (parámetros, contexto, idiomas, benchmarks) impide evaluar el modelo de forma objetiva. Cualquier uso en producción requeriría contactar al autor o esperar a que publique información adicional. Por el momento, se trata de un artefacto sin especificaciones verificables.
 
@@ -53,7 +53,7 @@ No se puede establecer una comparativa al desconocer las características básic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShiyiZhang/Self-OPD
+- Repositorio Hugging Face: https://huggingface.co/ShiyiZhang/Self-OPD
 - Paper relacionado (no confirmado como fuente del modelo): "SimpleOPD: Simple Tokenizer-Agnostic On-Policy Distillation for Long..." - https://arxiv.org/pdf/2608.14277
 - Paper sobre destilación on-policy latente: "Latent On-Policy Self-Distillation" - https://arxiv.org/abs/2608.13040
 - Recopilación de papers sobre on-policy distillation: https://github.com/chrisliu298/awesome-on-policy-distillation

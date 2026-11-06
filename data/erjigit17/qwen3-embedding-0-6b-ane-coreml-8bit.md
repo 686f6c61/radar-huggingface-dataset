@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento en tareas de recuperacion o MTEB para ning
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/erjigit17/qwen3-embedding-0.6b-ane-coreml-8bit
+- Repositorio Hugging Face: https://huggingface.co/erjigit17/qwen3-embedding-0.6b-ane-coreml-8bit
 - Modelo base del paquete Core ML (neuradex): https://huggingface.co/neuradex/Qwen3-Embedding-0.6B-CoreML-ANE
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (unicamente paginas de programacion de television en aleman), por lo que no hay papers, blogs ni demos adicionales que enlazar.

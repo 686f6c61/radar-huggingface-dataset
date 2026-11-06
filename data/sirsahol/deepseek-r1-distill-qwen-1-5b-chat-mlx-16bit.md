@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay informacion en la documentacion proporcionada
 - Evaluacion comparativa de cuantizaciones: dado que el autor documenta el comportamiento esperado en 4, 8 y 16 bits, este checkpoint sirve como referencia de maxima fidelidad frente a variantes comprimidas.
 - Generacion de codigo asistida en flujo de trabajo local: el modelo puede redactar funciones y explicar fragmentos, con revision humana obligatoria dado su tamano reducido.
 - Resolucion de problemas matematicos de nivel educativo con traza de razonamiento visible, util para herramientas de tutoria que necesitan mostrar el procedimiento, no solo el resultado.
-- Reproduccion de conversiones MLX en pipelines propios: el model card incluye el comando exacto de reproduccion, por lo que sirve como plantilla para convertir otros checkpoints de HuggingFace a formato Apple.
+- Reproduccion de conversiones MLX en pipelines propios: el model card incluye el comando exacto de reproduccion, por lo que sirve como plantilla para convertir otros checkpoints de Hugging Face a formato Apple.
 - Inferencia en entornos sin GPU: al requerir unicamente Apple Silicon, es util para demostraciones y talleres sobre portatiles Mac sin acelerador dedicado.
 
 ## Benchmarks y rendimiento
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-16bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-16bit
 - Modelo fuente: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Perfil del autor: https://huggingface.co/SirSahOl
 - Framework MLX (Apple): https://github.com/ml-explore/mlx

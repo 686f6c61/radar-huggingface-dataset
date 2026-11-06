@@ -58,5 +58,5 @@ No disponible. No se han encontrado modelos comparables con la misma configuraci
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ5e)
+- [Repositorio Hugging Face](https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ5e)
 - [Herramienta oMLX (oQ)](https://github.com/jundot/omlx)

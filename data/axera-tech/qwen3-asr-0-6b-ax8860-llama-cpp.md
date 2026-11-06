@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp
+- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - llama.cpp (fork con soporte AXera): https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen3-whole`, commit `4b67446`)
 - Kernels NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `60dd25b`)

@@ -86,7 +86,7 @@ La comparacion con Qwen2.5-1.5B-Instruct no es directa por el tamano y el enfoqu
 
 ## Enlaces
 
-- [HuggingFace - OliverSundaram/Llama-3.2-1B-MathCodeInstruct-20k](https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-20k)
+- [Hugging Face - OliverSundaram/Llama-3.2-1B-MathCodeInstruct-20k](https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-20k)
 - [Dataset MathLLMs/MathCodeInstruct](https://huggingface.co/datasets/MathLLMs/MathCodeInstruct)
 - [Repositorio de entrenamiento (github.com/OliverSundaram/finetuning-Llama3.2-1B)](https://github.com/OliverSundaram/finetuning-Llama3.2-1B)
 - [Licencia de Llama 3.2](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE)

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVINO/dino_v2-int8-ov | ViT-S/14 (~22 M, no confirmado en card) | Resolución de entrada no especificada | OpenVINO IR INT8 | Apache-2.0 | HuggingFace (32 descargas) |
-| timm/vit_small_patch14_dinov2.lvd142m | ViT-S/14 (~22 M) | 518x518 (por defecto en timm) | safetensors/PyTorch | Apache-2.0 | HuggingFace (modelo original) |
-| Otros backbones ViT-Small (p. ej. DeiT-S, ViT-S/16) | ~22 M | 224x224 típicamente | PyTorch, ONNX | variable | HuggingFace, timm |
+| OpenVINO/dino_v2-int8-ov | ViT-S/14 (~22 M, no confirmado en card) | Resolución de entrada no especificada | OpenVINO IR INT8 | Apache-2.0 | Hugging Face (32 descargas) |
+| timm/vit_small_patch14_dinov2.lvd142m | ViT-S/14 (~22 M) | 518x518 (por defecto en timm) | safetensors/PyTorch | Apache-2.0 | Hugging Face (modelo original) |
+| Otros backbones ViT-Small (p. ej. DeiT-S, ViT-S/16) | ~22 M | 224x224 típicamente | PyTorch, ONNX | variable | Hugging Face, timm |
 
 La comparativa se limita al ecosistema de backbones ViT-Small; no se dispone de datos de rendimiento comparado para esta variante cuantizada.
 
@@ -81,7 +81,7 @@ La comparativa se limita al ecosistema de backbones ViT-Small; no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/dino_v2-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/dino_v2-int8-ov
 - Modelo original (timm): https://huggingface.co/timm/vit_small_patch14_dinov2.lvd142m
 - Geti (plataforma de Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

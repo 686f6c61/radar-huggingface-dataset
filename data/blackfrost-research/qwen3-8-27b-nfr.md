@@ -4,7 +4,7 @@
 
 Blackfrost-Research/Qwen3.8-27B-NFR es un fine-tune del modelo Qwen/Qwen3.8-27B, desarrollado por el equipo Blackfrost-Research. El modelo base, creado por Alibaba Qwen, es un modelo denso de vision-lenguaje (image-text-to-text) con 27 mil millones de parámetros, diseñado para tareas de codificacion, trabajo profesional, investigacion y agentes de largo horizonte. Este fine-tune hereda las capacidades del modelo base y las adapta a un proposito especifico que no se detalla en la informacion publica disponible.
 
-El modelo se distribuye bajo licencia Apache-2.0 y su acceso esta restringido en HuggingFace, lo que obliga a aceptar condiciones adicionales antes de su descarga. Con un tamaño de 55,6 GB en formato bf16, requiere hardware de gama alta para su despliegue local. Su relevancia radica en que parte de una arquitectura moderna de Qwen (Qwen3.5) con soporte nativo para vision, tool calling y planificacion de agentes, lo que lo convierte en una base solida para fine-tuning especializado.
+El modelo se distribuye bajo licencia Apache-2.0 y su acceso esta restringido en Hugging Face, lo que obliga a aceptar condiciones adicionales antes de su descarga. Con un tamaño de 55,6 GB en formato bf16, requiere hardware de gama alta para su despliegue local. Su relevancia radica en que parte de una arquitectura moderna de Qwen (Qwen3.5) con soporte nativo para vision, tool calling y planificacion de agentes, lo que lo convierte en una base solida para fine-tuning especializado.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para una comparativa exhaustiva con otro
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos corporativos o academicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos corporativos o academicos.
 - Falta de documentacion: no se han publicado detalles sobre el proceso de fine-tuning, el dataset utilizado ni los objetivos especificos, lo que dificulta evaluar su idoneidad para tareas concretas.
 - Sesgos y alucinaciones: al ser un modelo de lenguaje, puede generar contenido incorrecto o sesgado, especialmente en dominios no representados en sus datos de entrenamiento. No se ha realizado una evaluacion de sesgos para este fine-tune.
 - Requisitos de hardware elevados: su tamaño (55,6 GB en bf16) exige infraestructura de gama alta, lo que puede ser una barrera para equipos pequenos.
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para una comparativa exhaustiva con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/Qwen3.8-27B-NFR
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/Qwen3.8-27B-NFR
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version cuantizada por unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentacion de Jetson AI Lab sobre Qwen3.8 27B: https://www.jetson-ai-lab.com/models/qwen3-8-27b/

@@ -47,7 +47,7 @@ La conversión a `burnpack` fue realizada con la herramienta `burn-onnx` (versi�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo original `BAAI/bge-reranker-v2-m3` tiene resultados reportados en su página de HuggingFace (por ejemplo, en datasets como MS MARCO, BEIR o MIRACL), pero estos datos no están incluidos en la documentación de la conversión. Para obtener métricas comparativas, se recomienda consultar la ficha del modelo original o ejecutar evaluaciones propias sobre el conjunto de datos de interés.
+No se han publicado resultados de benchmarks en la información disponible. El modelo original `BAAI/bge-reranker-v2-m3` tiene resultados reportados en su página de Hugging Face (por ejemplo, en datasets como MS MARCO, BEIR o MIRACL), pero estos datos no están incluidos en la documentación de la conversión. Para obtener métricas comparativas, se recomienda consultar la ficha del modelo original o ejecutar evaluaciones propias sobre el conjunto de datos de interés.
 
 ## Requisitos de hardware
 

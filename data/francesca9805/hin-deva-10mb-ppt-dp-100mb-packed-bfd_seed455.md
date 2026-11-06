@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT sobre Goldfish hindi 10 MB |
-| goldfish-models/hin_deva_10mb | mismo orden (es el modelo base) | no disponible | no disponible | HuggingFace | Modelo monolingue original sin ajuste SFT |
+| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT sobre Goldfish hindi 10 MB |
+| goldfish-models/hin_deva_10mb | mismo orden (es el modelo base) | no disponible | no disponible | Hugging Face | Modelo monolingue original sin ajuste SFT |
 | openai-community/gpt2 | 124 millones | 1.024 tokens | MIT | Ampliamente disponible | Referencia GPT-2 en ingles; mayor tamano, pero no entrenado en hindi |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dq65eh5z

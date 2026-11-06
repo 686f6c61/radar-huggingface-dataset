@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DARTH-12B es un modelo de lenguaje de 12.247.782.400 parámetros (aproximadamente 12,25 B) de tipo dense, publicado por el usuario DapperDann en HuggingFace bajo licencia Apache-2.0. Se trata de un fine-tune orientado a escritura creativa de ficción oscura sin censura: horror literario, body horror, terror psicológico, violencia gráfica y diálogo soez. No es un modelo de propósito general, sino una especialización de prosa con control de instrucciones, distribuida principalmente en formato GGUF para su ejecución en llama.cpp.
+DARTH-12B es un modelo de lenguaje de 12.247.782.400 parámetros (aproximadamente 12,25 B) de tipo dense, publicado por el usuario DapperDann en Hugging Face bajo licencia Apache-2.0. Se trata de un fine-tune orientado a escritura creativa de ficción oscura sin censura: horror literario, body horror, terror psicológico, violencia gráfica y diálogo soez. No es un modelo de propósito general, sino una especialización de prosa con control de instrucciones, distribuida principalmente en formato GGUF para su ejecución en llama.cpp.
 
 La model card indica que la geometría corresponde a la clase Mistral-Nemo: 12 B dense, hidden size 5120, GQA con ratio 4:1, rope base 1e6 y tokenizer Tekken de 131k entradas de vocabulario. El formato de prompt es el de Mistral-Instruct (`[INST]...[/INST]`). El autor declara 8192 tokens de contexto probados y 128k soportados por la arquitectura, aunque sin verificación publicada más allá de los 8192.
 
@@ -99,5 +99,5 @@ Frente a estos modelos, DARTH-12B se diferencia por la especializacion (prosa de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DapperDann/DARTH-12B
+- Modelo en Hugging Face: https://huggingface.co/DapperDann/DARTH-12B
 - Papers, blogs, repositorios y demos: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces devueltos eran contenido spam sin relacion con DARTH-12B y se han descartado.

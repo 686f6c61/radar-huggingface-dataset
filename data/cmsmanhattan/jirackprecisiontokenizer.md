@@ -88,7 +88,7 @@ La principal diferencia es la adición de tokens de dominio específico, pero no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
+- Repositorio Hugging Face: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
 - Sitio oficial del autor: http://www.cmsmanhattan.com
 - Plataformas de robótica mencionadas (referencias externas):
   - Tiangong: https://english.www.gov.cn/english.www.gov.cn/news/202411/13/content_WS673406e2c6d0868f4e8ece33.html

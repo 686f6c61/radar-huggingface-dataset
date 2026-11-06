@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por el usuario kigimues en HuggingFace (repositorio que replica la model card de DeepSeek-AI). Se trata de un modelo multimodal de tipo image-text-to-text orientado a generación de texto, razonamiento, codificación, tareas agénticas y comprensión visual. Según la model card, esta revisión mejora los resultados en razonamiento, código, tareas de agente y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que mejora la frontera de Pareto coste-rendimiento en distintos arneses de agente.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por el usuario kigimues en Hugging Face (repositorio que replica la model card de DeepSeek-AI). Se trata de un modelo multimodal de tipo image-text-to-text orientado a generación de texto, razonamiento, codificación, tareas agénticas y comprensión visual. Según la model card, esta revisión mejora los resultados en razonamiento, código, tareas de agente y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que mejora la frontera de Pareto coste-rendimiento en distintos arneses de agente.
 
 El modelo cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, y el repositorio ocupa 510,3 GB. La model card indica una ventana de contexto de 1M tokens y recomienda `max_tokens` de al menos 256K. Se distribuye bajo licencia MIT, lo que facilita su uso comercial, y está pensado para ejecutarse con la librería transformers.
 
@@ -79,8 +79,8 @@ Resultados publicados en la model card (DS-V4.1-Flash-1017 frente a DeepSeek-V4.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763.205.315.794 | 1M tokens | MIT | HuggingFace (kigimues) | Terminal-Bench 4.0: 42,3; DeepSWE v1.1: 77,0; HLE w/o tools: 42,6 |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | HuggingFace (deepseek-ai) | Terminal-Bench 4.0: 31,2; DeepSWE v1.1: 74,2; HLE w/o tools: 36,8 |
+| DeepSeek-V4.1-Flash-1017 | 763.205.315.794 | 1M tokens | MIT | Hugging Face (kigimues) | Terminal-Bench 4.0: 42,3; DeepSWE v1.1: 77,0; HLE w/o tools: 42,6 |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | Hugging Face (deepseek-ai) | Terminal-Bench 4.0: 31,2; DeepSWE v1.1: 74,2; HLE w/o tools: 36,8 |
 | K3 | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 12,6; DeepSWE v1.1: 67,5; HLE w/o tools: 43,5 |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 37,9; DeepSWE v1.1: 66,9; HLE w/o tools: 42,0† |
 | GPT-5.6 Sol | no disponible | no disponible | no disponible | no disponible | Terminal-Bench 4.0: 39,9; DeepSWE v1.1: 73,0; HLE w/o tools: 44,5 |
@@ -101,10 +101,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no se de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kigimues/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/kigimues/DeepSeek-V4.1-Flash-1017
 - Repositorio del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Twitter de DeepSeek AI: https://twitter.com/deepseek_ai

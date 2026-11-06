@@ -22,7 +22,7 @@ Su relevancia es acotada y muy orientada a la reproducibilidad: sirve como evide
 | Formato de pesos | PyTorch (`.pt`), fichero `checkpoints/epoch_latest.pt` |
 | Tamano del repositorio | 1,3 GB en 13 ficheros |
 | Datos de entrenamiento (nombre) | 40 millones de muestras, 20 epochs, lr 0,0001, batch 64, 4 nodos |
-| Tag de HuggingFace | voiceclap, checkpoint, region:us |
+| Tag de Hugging Face | voiceclap, checkpoint, region:us |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,6 +85,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace (checkpoint): https://huggingface.co/VoiceNetCkpt/voiceclap_mix_emoup_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Hugging Face (checkpoint): https://huggingface.co/VoiceNetCkpt/voiceclap_mix_emoup_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, repositorio de codigo, blog o demo oficiales: no disponible en la informacion proporcionada

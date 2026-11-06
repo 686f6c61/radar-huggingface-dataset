@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joint-context LoopViT es un modelo de investigación orientado a la resolución de tareas ARC-AGI, publicado por el usuario ritwika96 en HuggingFace bajo licencia MIT. La propuesta técnica consiste en un transformer de visión (ViT) con procesamiento recurrente o en bucle ("LoopViT") en el que todas las demostraciones del problema y la consulta comparten el mismo mecanismo de atención. Es decir, en lugar de codificar el contexto como una secuencia separada, el modelo trata el conjunto de ejemplos y la rejilla de entrada como un único contexto conjunto, lo que lo acerca a un enfoque de razonamiento en contexto sobre rejillas.
+Joint-context LoopViT es un modelo de investigación orientado a la resolución de tareas ARC-AGI, publicado por el usuario ritwika96 en Hugging Face bajo licencia MIT. La propuesta técnica consiste en un transformer de visión (ViT) con procesamiento recurrente o en bucle ("LoopViT") en el que todas las demostraciones del problema y la consulta comparten el mismo mecanismo de atención. Es decir, en lugar de codificar el contexto como una secuencia separada, el modelo trata el conjunto de ejemplos y la rejilla de entrada como un único contexto conjunto, lo que lo acerca a un enfoque de razonamiento en contexto sobre rejillas.
 
 El autor indica explícitamente que no se trata de una reproducción de un checkpoint existente ni de un paper publicado, sino de un entrenamiento propio. El modelo está asociado a la etiqueta "trainium", lo que apunta a que el entrenamiento se ha realizado sobre aceleradores AWS Trainium y no sobre GPUs convencionales. El repositorio ocupa 0,6 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que debe considerarse un artefacto de investigación temprano más que un modelo listo para producción.
 
@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye métricas, número de pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritwika96/arc-agi2-joint-loopvit-hybrid-trainium-v2
+- Hugging Face: https://huggingface.co/ritwika96/arc-agi2-joint-loopvit-hybrid-trainium-v2
 - Paper asociado: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

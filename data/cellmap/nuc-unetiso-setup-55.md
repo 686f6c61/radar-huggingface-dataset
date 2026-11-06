@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cellmap/nuc-unetiso-setup-55 | U-Net 3D isotropica, segmentacion de nucleos | 300x300x300 voxeles a 128 nm | BSD-3-Clause | HuggingFace (este repositorio) |
-| Otros setups de CellMap (exp_mito) | U-Nets 3D variantes | no disponible | no disponible | HuggingFace (organizacion cellmap) |
-| cellmap/onnx-web-models/setup_55 | Version ONNX para web | no disponible | no disponible | HuggingFace |
+| cellmap/nuc-unetiso-setup-55 | U-Net 3D isotropica, segmentacion de nucleos | 300x300x300 voxeles a 128 nm | BSD-3-Clause | Hugging Face (este repositorio) |
+| Otros setups de CellMap (exp_mito) | U-Nets 3D variantes | no disponible | no disponible | Hugging Face (organizacion cellmap) |
+| cellmap/onnx-web-models/setup_55 | Version ONNX para web | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/nuc-unetiso-setup-55
+- Modelo en Hugging Face: https://huggingface.co/cellmap/nuc-unetiso-setup-55
 - Repositorio cellmap-models: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia): https://www.janelia.org/project-team/cellmap
 - Version ONNX para web: https://huggingface.co/cellmap/onnx-web-models

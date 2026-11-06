@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`austindixson/microduck-hill-improver-rev8` es una política de control para robótica simulada publicada en HuggingFace, no un modelo de lenguaje. Se trata de un fichero ONNX (`policy.onnx`, 61 entradas y 14 salidas) que controla un MicroDuck —el robot cuadrúpedo de Pollen Robotics— dentro de la prueba "1.5 m Hill Climb" de la Microduck Arena, un entorno de competición completamente simulado. Lo firma austindixson (Austin Dixson, ingeniero de sistemas LLM según su perfil de GitHub) como un *remix* afinado de la política `jrubiosainz/microduck-game-hillclimber-remix9`.
+`austindixson/microduck-hill-improver-rev8` es una política de control para robótica simulada publicada en Hugging Face, no un modelo de lenguaje. Se trata de un fichero ONNX (`policy.onnx`, 61 entradas y 14 salidas) que controla un MicroDuck —el robot cuadrúpedo de Pollen Robotics— dentro de la prueba "1.5 m Hill Climb" de la Microduck Arena, un entorno de competición completamente simulado. Lo firma austindixson (Austin Dixson, ingeniero de sistemas LLM según su perfil de GitHub) como un *remix* afinado de la política `jrubiosainz/microduck-game-hillclimber-remix9`.
 
 El modelo no entrena una red nueva: la red neuronal del modelo base está congelada y lo que se modifica es una tabla de búsqueda por semilla (*branch table*) asociada al contador de pasos. La revisión 8 refina las filas 25-60 de la tabla `tk_T4` de la semilla 4 mediante una búsqueda aleatoria de base "hat" ejecutada en CPU, mejorando el tiempo de cruce de 0,73957 s a 0,73862 s. El resto de semillas quedan bit a bit idénticas al remix9.
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto / E-S | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `austindixson/microduck-hill-improver-rev8` | Política ONNX para Hill Climb | no disponible | obs 61 → act 14 | Media 0,741 s (5 semillas, in-sample) | Ninguna declarada | HuggingFace |
-| `jrubiosainz/microduck-game-hillclimber-remix9` (rev `2a57acfeb`) | Política base del remix | no disponible | obs 61 → act 14 (presumible, no confirmado) | no disponible | Ninguna declarada | HuggingFace |
-| `austindixson/microduck-hill-improver-rev3` | Revisión previa del mismo linaje | no disponible | no disponible | no disponible | Ninguna declarada | HuggingFace |
-| `austindixson/microduck-hill-improver` | Revisión inicial del mismo linaje | no disponible | no disponible | no disponible | Ninguna declarada | HuggingFace |
+| `austindixson/microduck-hill-improver-rev8` | Política ONNX para Hill Climb | no disponible | obs 61 → act 14 | Media 0,741 s (5 semillas, in-sample) | Ninguna declarada | Hugging Face |
+| `jrubiosainz/microduck-game-hillclimber-remix9` (rev `2a57acfeb`) | Política base del remix | no disponible | obs 61 → act 14 (presumible, no confirmado) | no disponible | Ninguna declarada | Hugging Face |
+| `austindixson/microduck-hill-improver-rev3` | Revisión previa del mismo linaje | no disponible | no disponible | no disponible | Ninguna declarada | Hugging Face |
+| `austindixson/microduck-hill-improver` | Revisión inicial del mismo linaje | no disponible | no disponible | no disponible | Ninguna declarada | Hugging Face |
 
 La información pública de las revisiones anteriores y del modelo base no incluye tiempos de carrera ni detalles de arquitectura, por lo que la comparación cuantitativa se limita al par remix9 → rev8 en el cruce de la semilla 4.
 
@@ -102,7 +102,7 @@ La información pública de las revisiones anteriores y del modelo base no inclu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austindixson/microduck-hill-improver-rev8
+- Modelo en Hugging Face: https://huggingface.co/austindixson/microduck-hill-improver-rev8
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix9
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Revisión previa rev3: https://huggingface.co/austindixson/microduck-hill-improver-rev3

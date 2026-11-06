@@ -71,4 +71,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: FreddieWilliams/lora-classifier16](https://huggingface.co/FreddieWilliams/lora-classifier16)
+- [Hugging Face: FreddieWilliams/lora-classifier16](https://huggingface.co/FreddieWilliams/lora-classifier16)

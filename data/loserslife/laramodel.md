@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LARAMODEL es un repositorio alojado en HuggingFace bajo el identificador `loserslife/LARAMODEL`, publicado por el usuario `loserslife`. En el momento de la revisión no contiene model card con contenido técnico (el README se limita a la línea `license: unknown`), no declara pipeline, idiomas ni licencia concreta, y el tamaño del repositorio figura como 0.0 GB, lo que indica que no se han subido pesos, configuraciones ni tokenizadores.
+LARAMODEL es un repositorio alojado en Hugging Face bajo el identificador `loserslife/LARAMODEL`, publicado por el usuario `loserslife`. En el momento de la revisión no contiene model card con contenido técnico (el README se limita a la línea `license: unknown`), no declara pipeline, idiomas ni licencia concreta, y el tamaño del repositorio figura como 0.0 GB, lo que indica que no se han subido pesos, configuraciones ni tokenizadores.
 
 El repositorio registra 0 descargas y 0 "likes", y no cuenta con etiquetas de arquitectura, familia de modelos ni formato de pesos. Las fechas de creación y actualización (25 de septiembre de 2026, con menos de diez minutos entre ambas) sugieren un espacio de trabajo creado y modificado en una única sesión, sin desarrollo posterior documentado.
 
@@ -84,7 +84,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce el t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loserslife/LARAMODEL
+- Repositorio en Hugging Face: https://huggingface.co/loserslife/LARAMODEL
 - Paper: no disponible.
 - Blog técnico del autor: no disponible.
 - Repositorio de código: no disponible.

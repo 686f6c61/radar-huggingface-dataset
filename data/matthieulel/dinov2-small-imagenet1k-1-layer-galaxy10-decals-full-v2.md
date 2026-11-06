@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (*full fine-tuning*) del backbone `facebook/dinov2-small-imagenet1k-1-layer` sobre el conjunto Galaxy10 DECaLS. Lo desarrolla el usuario de HuggingFace `matthieulel` en el marco de un estudio comparativo de 40 backbones de visión (ViT, ConvNeXt, DINOv2, CLIP, entre otros) bajo dos regímenes de adaptación, publicado como colección *Vision Foundation Models Benchmark* y asociado a un artículo en revisión en *Astronomy and Computing* (2026).
+`matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (*full fine-tuning*) del backbone `facebook/dinov2-small-imagenet1k-1-layer` sobre el conjunto Galaxy10 DECaLS. Lo desarrolla el usuario de Hugging Face `matthieulel` en el marco de un estudio comparativo de 40 backbones de visión (ViT, ConvNeXt, DINOv2, CLIP, entre otros) bajo dos regímenes de adaptación, publicado como colección *Vision Foundation Models Benchmark* y asociado a un artículo en revisión en *Astronomy and Computing* (2026).
 
 El modelo resuelve una tarea de clasificación de 10 clases sobre imágenes de galaxias del sondeo DECaLS, un problema clásico de astronomía observacional donde el etiquetado manual es caro y los datasets son modestos (17.736 imágenes). La relevancia actual está en que evalúa de forma controlada si los *foundation models* de visión preentrenados en ImageNet generalizan a dominios científicos con pocos datos, y publica tanto los pesos como las métricas por época y las particiones exactas, lo que facilita la reproducibilidad.
 
@@ -34,7 +34,7 @@ El protocolo de entrenamiento es idéntico para los 40 backbones del estudio: Ad
 - Inferencia por imagen individual o en lote mediante `AutoModelForImageClassification` de `transformers`.
 - No soporta *tool calling*, agentes, razonamiento multi-paso ni generación de texto: es un clasificador puro.
 - Sin capacidades multilingües ni de audio; sin *thinking mode*.
-- Compatible con *endpoints* de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con *endpoints* de Hugging Face (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados de los otros 39 bac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-small-imagenet1k-1-layer-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-small-imagenet1k-1-layer
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs y métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

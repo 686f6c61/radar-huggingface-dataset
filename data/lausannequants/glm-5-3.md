@@ -14,9 +14,9 @@ El modelo está disponible con una ventana de contexto de 1 millón de tokens, l
 | Parametros totales | 753.329.940.480 (753B) |
 | Parametros activos | 40B |
 | Longitud de contexto | 1.000.000 tokens (1M) |
-| Tipos de cuantizacion | FP8 (según tags de HuggingFace); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | FP8 (según tags de Hugging Face); otras cuantizaciones no disponibles |
 | Idiomas soportados | Inglés (en), Chino (zh) |
-| Licencia | GLM-5.3 (según HuggingFace; algunas fuentes indican MIT) |
+| Licencia | GLM-5.3 (según Hugging Face; algunas fuentes indican MIT) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ No se dispone de información pública sobre las especificaciones técnicas de l
 
 - Modelo de solo texto: no soporta entrada multimodal (imágenes, audio, vídeo).
 - Idiomas limitados a inglés y chino; el rendimiento en otros idiomas no está garantizado.
-- Licencia no estándar: la licencia GLM-5.3 puede imponer restricciones de uso comercial. Aunque algunas fuentes indican MIT, la model card de HuggingFace especifica "license: other" con nombre "glm-5.3". Se recomienda revisar los términos exactos antes de usar en producción.
+- Licencia no estándar: la licencia GLM-5.3 puede imponer restricciones de uso comercial. Aunque algunas fuentes indican MIT, la model card de Hugging Face especifica "license: other" con nombre "glm-5.3". Se recomienda revisar los términos exactos antes de usar en producción.
 - Tamaño y requisitos de hardware muy elevados: no es viable para despliegue en entornos con recursos limitados.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información incorrecta o inventada, especialmente en tareas de razonamiento complejo.
 - Capacidad cibernética emergente: el modelo puede generar exploits y código malicioso, lo que plantea riesgos de uso indebido. Debe desplegarse con medidas de seguridad adecuadas.
@@ -105,8 +105,8 @@ No se dispone de información pública sobre las especificaciones técnicas de l
 
 ## Enlaces
 
-- HuggingFace (lausannequants/GLM-5.3): https://huggingface.co/lausannequants/GLM-5.3
-- HuggingFace (zurichquants/GLM-5.3): https://huggingface.co/zurichquants/GLM-5.3
+- Hugging Face (lausannequants/GLM-5.3): https://huggingface.co/lausannequants/GLM-5.3
+- Hugging Face (zurichquants/GLM-5.3): https://huggingface.co/zurichquants/GLM-5.3
 - Documentación oficial de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Artículo en openlm.ai: https://openlm.ai/glm-5.3/
 - Ficha en LM Studio: https://lmstudio.ai/models/glm-5.3

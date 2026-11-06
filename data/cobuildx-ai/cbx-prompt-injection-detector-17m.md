@@ -100,7 +100,7 @@ La ventaja principal del modelo de 17M frente a alternativas mas grandes es el c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-17M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-17M
 - Variante 32M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-32M
 - Variante 68M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-68M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m

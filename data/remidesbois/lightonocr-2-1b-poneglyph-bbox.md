@@ -36,7 +36,7 @@ El dataset «Poneglyph» consta de 1.107 páginas completas de manga validadas p
 - Salida sin JSON, Markdown ni metadatos, lo que facilita el parseo posterior en pipelines.
 - Funcionamiento con `transformers` mediante `LightOnOcrProcessor` y `LightOnOcrForConditionalGeneration`.
 - Compatibilidad con generación autónoma: `model.generate()` con `do_sample=False` para decodificación determinista.
-- Etiquetado como conversacional en el registro de HuggingFace, aunque el uso recomendado no incluye prompts de texto.
+- Etiquetado como conversacional en el registro de Hugging Face, aunque el uso recomendado no incluye prompts de texto.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ El modelo base `lightonai/LightOnOCR-2-1B-bbox-base` es la versión sin ajuste f
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph-bbox](https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph-bbox)
+- Modelo en Hugging Face: [https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph-bbox](https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph-bbox)
 - Modelo base: [https://huggingface.co/lightonai/LightOnOCR-2-1B-bbox-base](https://huggingface.co/lightonai/LightOnOCR-2-1B-bbox-base)
 - Paper arxiv: [https://arxiv.org/abs/2601.14251](https://arxiv.org/abs/2601.14251)
 - Archivos de métricas del benchmark: `benchmark_lighton_bbox.json` y `benchmark_lighton_bbox_corrected.json` (incluidos en el repositorio del modelo)

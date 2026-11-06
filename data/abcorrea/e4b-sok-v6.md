@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e4b-sok-v6 es un ajuste fino publicado por el usuario abcorrea en HuggingFace, construido sobre el modelo google/gemma-4-E4B-it mediante aprendizaje supervisado (SFT) con la libreria TRL. El repositorio contiene pesos en formato safetensors compatibles con transformers y ocupa 2,9 GB. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens procesados, la composicion de los datos ni los hiperparametros empleados; la model card es la plantilla autogenerada por TRL.
+e4b-sok-v6 es un ajuste fino publicado por el usuario abcorrea en Hugging Face, construido sobre el modelo google/gemma-4-E4B-it mediante aprendizaje supervisado (SFT) con la libreria TRL. El repositorio contiene pesos en formato safetensors compatibles con transformers y ocupa 2,9 GB. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens procesados, la composicion de los datos ni los hiperparametros empleados; la model card es la plantilla autogenerada por TRL.
 
 El modelo no registra descargas ni "likes" en el momento de la consulta y no declara licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. Tampoco se identifica el pipeline de inferencia en los metadatos. La unica informacion tecnica verificable es el modelo base declarado, la libreria (transformers), la tecnica de entrenamiento (SFT), el tamano del repositorio y las versiones de framework utilizadas.
 
@@ -68,7 +68,7 @@ No existe en los metadatos, en la model card ni en los resultados de busqueda ni
 - El tamano del repositorio (2,9 GB) es inferior a lo esperable para 4.000 millones de parametros en bf16, lo que podria indicar pesos en otra precision, un modelo de menor tamano o una subida parcial de los archivos. No hay informacion que permita resolver la discrepancia.
 - GPU recomendadas: no disponible. Como referencia de categoria, una GPU de 16 GB (RTX 4060 Ti 16 GB, RTX 4080) o superior permitiria inferencia en bf16; una RTX 3060 de 12 GB exigiria cuantizacion.
 - Cabe en GPU de consumo: probablemente si, en GPUs con 12-16 GB de VRAM y con cuantizacion, siempre que el modelo tenga el tamano que sugiere su nombre. No confirmado.
-- Opciones de despliegue: transformers es la unica ruta documentada por el autor (compatible con el `pipeline` de HuggingFace). vLLM y TGI serian compatibles con safetensors a priori, pero no estan verificados para este modelo. Ollama y llama.cpp requeririan que el usuario genere el GGUF por su cuenta, ya que no se publica ninguno.
+- Opciones de despliegue: transformers es la unica ruta documentada por el autor (compatible con el `pipeline` de Hugging Face). vLLM y TGI serian compatibles con safetensors a priori, pero no estan verificados para este modelo. Ollama y llama.cpp requeririan que el usuario genere el GGUF por su cuenta, ya que no se publica ninguno.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| abcorrea/e4b-sok-v6 | no disponible (nombre sugiere ~4B) | no disponible | no disponible | HuggingFace, safetensors | no disponible |
+| abcorrea/e4b-sok-v6 | no disponible (nombre sugiere ~4B) | no disponible | no disponible | Hugging Face, safetensors | no disponible |
 | google/gemma-4-E4B-it (base declarado) | no disponible | no disponible | no disponible | referenciado como modelo base | no disponible |
-| Qwen3-4B | 4.000 millones (denso) | 32.768 tokens nativos, ampliable | Apache-2.0 | HuggingFace, amplio ecosistema de cuantizaciones | publicados por el autor |
-| Llama 3.2 3B Instruct | 3.200 millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplio ecosistema | publicados por el autor |
-| Phi-4-mini-instruct | 3.800 millones | 128.000 tokens | MIT | HuggingFace | publicados por el autor |
+| Qwen3-4B | 4.000 millones (denso) | 32.768 tokens nativos, ampliable | Apache-2.0 | Hugging Face, amplio ecosistema de cuantizaciones | publicados por el autor |
+| Llama 3.2 3B Instruct | 3.200 millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplio ecosistema | publicados por el autor |
+| Phi-4-mini-instruct | 3.800 millones | 128.000 tokens | MIT | Hugging Face | publicados por el autor |
 
 La comparacion con alternativas de la misma categoria solo tiene sentido una vez que el autor publique la licencia, el tamano real y cualquier evaluacion. A dia de hoy, e4b-sok-v6 no puede considerarse una alternativa competitiva frente a estos modelos por falta de informacion verificable.
 
@@ -99,7 +99,7 @@ La comparacion con alternativas de la misma categoria solo tiene sentido una vez
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abcorrea/e4b-sok-v6
+- Modelo en Hugging Face: https://huggingface.co/abcorrea/e4b-sok-v6
 - Modelo base declarado: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Citacion de TRL (von Werra et al., 2020): incluida en la model card, sin DOI ni enlace adicional

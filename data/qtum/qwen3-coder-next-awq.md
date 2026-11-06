@@ -95,9 +95,9 @@ La comparativa se limita a las versiones del mismo modelo base, ya que no se han
 
 ## Enlaces
 
-- Repo de HuggingFace de la cuantización: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-Next
-- Colección de Qwen3-Coder-Next en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-coder-next
+- Repo de Hugging Face de la cuantización: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-Next
+- Colección de Qwen3-Coder-Next en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-coder-next
 - Cuantización GPTQ (W4A16): https://huggingface.co/qtum/Qwen3-Coder-Next-GPTQ
 - Cuantización FP8 oficial: https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8
 - Technical Report (arXiv): https://arxiv.org/html/2603.00729
@@ -105,7 +105,7 @@ La comparativa se limita a las versiones del mismo modelo base, ya que no se han
 - AI Wiki (información general): https://aiwiki.ai/wiki/qwen3_coder_next
 - README en chino de la cuantización: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ/blob/main/README_zh.md
 
-Nota: las fechas indicadas en el repositorio de HuggingFace (creado el 2026-08-22) y en AI Wiki (lanzamiento el 3 de febrero de 2026) son coherentes con la publicación del modelo base.## Resumen
+Nota: las fechas indicadas en el repositorio de Hugging Face (creado el 2026-08-22) y en AI Wiki (lanzamiento el 3 de febrero de 2026) son coherentes con la publicación del modelo base.## Resumen
 
 Qwen3-Coder-Next-AWQ es una cuantización 4-bit (AWQ W4A16) del modelo Qwen3-Coder-Next, un modelo de lenguaje de código abierto especializado en agentes de codificación, desarrollado por el equipo Qwen de Alibaba. La cuantización ha sido realizada por el usuario `qtum` con la librería `llm-compressor` de vLLM, y se distribuye en formato `compressed-tensors` listo para servir con vLLM o SGLang.
 
@@ -194,7 +194,7 @@ No se dispone de datos de comparación con modelos de otras familias (como DeepS
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/qtum/Qwen3-Coder-Next-AWQ
 - Modelo base Qwen3-Coder-Next: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Colección de modelos Qwen3-Coder-Next: https://huggingface.co/collections/Qwen/qwen3-coder-next
 - Cuantización GPTQ (W4A16): https://huggingface.co/qtum/Qwen3-Coder-Next-GPTQ

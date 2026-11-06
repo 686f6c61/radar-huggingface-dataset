@@ -84,9 +84,9 @@ Comparación directa documentada frente al checkpoint del que parte:
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MacJev-322M-4K-Laya | 321,9 M | 4096 tokens de entrada total | 89,1 % en sí/no 2K–4K; 44,7 % en reglas 2K–4K; error de calibración 0,032 | Apache 2.0 | HuggingFace, en FP32, MLX y GGUF F16 |
-| convaiinnovations/laya (subfolder multilingual) | no disponible | 1024 tokens por defecto (una cuarta parte del presupuesto de MacJev) | 31,0 % en sí/no 2K–4K; 23,7 % en reglas 2K–4K; error de calibración 0,253 | no disponible | HuggingFace |
-| jhu-clsp/mmBERT-base (linaje del encoder) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| MacJev-322M-4K-Laya | 321,9 M | 4096 tokens de entrada total | 89,1 % en sí/no 2K–4K; 44,7 % en reglas 2K–4K; error de calibración 0,032 | Apache 2.0 | Hugging Face, en FP32, MLX y GGUF F16 |
+| convaiinnovations/laya (subfolder multilingual) | no disponible | 1024 tokens por defecto (una cuarta parte del presupuesto de MacJev) | 31,0 % en sí/no 2K–4K; 23,7 % en reglas 2K–4K; error de calibración 0,253 | no disponible | Hugging Face |
+| jhu-clsp/mmBERT-base (linaje del encoder) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos frente a clasificadores BERT de propósito general ni frente a enrutadores basados en LLM pequeños (por ejemplo, modelos de 0,5B a 1B usados como routers), porque la información proporcionada no incluye mediciones de esos sistemas sobre los mismos conjuntos. Alternativas de la misma categoría: no disponible.
 
@@ -107,7 +107,7 @@ No se dispone de datos comparativos frente a clasificadores BERT de propósito g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya
 - Versión MLX FP32 para Apple Silicon: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-MLX
 - Versión GGUF F16 para llama.cpp y LM Studio: https://huggingface.co/chaoliangUNSW/MacJev-322M-4K-Laya-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya

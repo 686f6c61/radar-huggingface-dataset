@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Rinka-SoundBridge es un repositorio de modelo publicado en HuggingFace por el usuario RinkaEmina bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, con un tamano de repositorio de aproximadamente 0,1 GB, y la model card asociada no contiene mas informacion que la declaracion de licencia. No hay pipeline declarado, no hay idiomas declarados y no se documenta arquitectura, numero de parametros ni longitud de contexto.
+Rinka-SoundBridge es un repositorio de modelo publicado en Hugging Face por el usuario RinkaEmina bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, con un tamano de repositorio de aproximadamente 0,1 GB, y la model card asociada no contiene mas informacion que la declaracion de licencia. No hay pipeline declarado, no hay idiomas declarados y no se documenta arquitectura, numero de parametros ni longitud de contexto.
 
-Por el nombre del repositorio ("SoundBridge") podria inferirse una finalidad relacionada con audio o con la conexion entre modalidades de audio y texto, pero esto es una suposicion basada unicamente en el nombre y no esta confirmada por ningun dato de la model card, de los tags de HuggingFace ni de los resultados de busqueda. Cualquier afirmacion funcional sobre el modelo seria especulativa.
+Por el nombre del repositorio ("SoundBridge") podria inferirse una finalidad relacionada con audio o con la conexion entre modalidades de audio y texto, pero esto es una suposicion basada unicamente en el nombre y no esta confirmada por ningun dato de la model card, de los tags de Hugging Face ni de los resultados de busqueda. Cualquier afirmacion funcional sobre el modelo seria especulativa.
 
 La relevancia practica de esta ficha es, por tanto, limitada y de caracter principalmente cautelar: se trata de un artefacto sin documentacion tecnica, sin benchmarks, sin ejemplos de uso y sin adopcion verificable, por lo que no es evaluable ni recomendable para entornos de produccion en su estado actual.
 
@@ -25,7 +25,7 @@ La relevancia practica de esta ficha es, por tanto, limitada y de caracter princ
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card unicamente declara `license: mit` y no incluye secciones de arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni procedimiento de alineacion (RLHF, DPO u otros). Tampoco hay informacion sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o disenos hibridos.
 
-Los tags del repositorio en HuggingFace se limitan a `license:mit` y `region:us`, que son metadatos administrativos y no aportan informacion sobre el diseno del modelo. El tamano del repositorio, en torno a 0,1 GB, sugiere pesos de un orden de magnitud relativamente pequeno, pero no permite determinar parametros, precision ni arquitectura, y no debe tomarse como especificacion tecnica.
+Los tags del repositorio en Hugging Face se limitan a `license:mit` y `region:us`, que son metadatos administrativos y no aportan informacion sobre el diseno del modelo. El tamano del repositorio, en torno a 0,1 GB, sugiere pesos de un orden de magnitud relativamente pequeno, pero no permite determinar parametros, precision ni arquitectura, y no debe tomarse como especificacion tecnica.
 
 ## Capacidades
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni categoria f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RinkaEmina/Rinka-SoundBridge
+- Hugging Face: https://huggingface.co/RinkaEmina/Rinka-SoundBridge
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web. Los resultados obtenidos no estan relacionados con el modelo.

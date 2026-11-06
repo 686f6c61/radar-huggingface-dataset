@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace - Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF](https://huggingface.co/Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF)
-- [HuggingFace - Modelo base (Assiduous42)](https://huggingface.co/Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2)
-- [HuggingFace - Variante de DavidAU](https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF)
+- [Hugging Face - Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF](https://huggingface.co/Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2-GGUF)
+- [Hugging Face - Modelo base (Assiduous42)](https://huggingface.co/Assiduous42/Qwen3.6-27B-Fable-Fusion-711-Heretic2)
+- [Hugging Face - Variante de DavidAU](https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF)
 - [HackerNoon - Qwen3.6-27B Fable Fusion Breaks the 700 ARC-C Barrier](https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier)
 - [HackerNoon - The Fine-Tuned Variant of Qwen3.6-27B That Achieved an ARC-C Score of 0.711](https://hackernoon.com/the-fine-tuned-variant-of-qwen36-27b-that-achieved-an-arc-c-score-of-0711-in-8-bit-quantization)
 - [CSDN - Analisis del modelo (en chino)](https://blog.csdn.net/ylscode/article/details/163247856)

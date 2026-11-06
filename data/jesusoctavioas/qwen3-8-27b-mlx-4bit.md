@@ -47,7 +47,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y las fuentes web consultadas tampoco proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests. Se recomienda consultar la documentación oficial de Qwen para obtener datos de rendimiento del modelo base.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y las fuentes web consultadas tampoco proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests. Se recomienda consultar la documentación oficial de Qwen para obtener datos de rendimiento del modelo base.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-4Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución local (Yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Página en LM Studio: https://lmstudio.ai/models/qwen3.8

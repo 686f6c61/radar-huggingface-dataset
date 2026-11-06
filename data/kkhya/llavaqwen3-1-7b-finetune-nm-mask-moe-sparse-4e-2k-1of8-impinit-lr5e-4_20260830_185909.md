@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909` es un fine-tune experimental publicado por el usuario KKHYA en HuggingFace. Se basa en el modelo `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez deriva de la familia LLaVA-Qwen3, una arquitectura multimodal que combina un codificador visual con un modelo de lenguaje Qwen3. El nombre del repositorio sugiere que se trata de una variante con arquitectura de mezcla de expertos (MoE) con máscara y activación dispersa (`nm_mask_moe_sparse`), aunque no se proporciona documentación técnica que confirme los detalles.
+El modelo `KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909` es un fine-tune experimental publicado por el usuario KKHYA en Hugging Face. Se basa en el modelo `KKHYA/llavaqwen3-1.7b-finetune`, que a su vez deriva de la familia LLaVA-Qwen3, una arquitectura multimodal que combina un codificador visual con un modelo de lenguaje Qwen3. El nombre del repositorio sugiere que se trata de una variante con arquitectura de mezcla de expertos (MoE) con máscara y activación dispersa (`nm_mask_moe_sparse`), aunque no se proporciona documentación técnica que confirme los detalles.
 
 El modelo está orientado a generación de texto conversacional, según las etiquetas (`text-generation`, `conversational`), y se distribuye bajo licencia Apache 2.0. No se han publicado resultados de benchmarks ni una descripción detallada de sus capacidades, por lo que su relevancia actual es limitada y se considera un artefacto de investigación sin validación externa.
 
@@ -56,7 +56,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909)
+- [Hugging Face: KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-impinit-lr5e-4_20260830_185909)
 - [Modelo base: KKHYA/llavaqwen3-1.7b-finetune](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
 - [Variante 1of4 (fecha 20260830)](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit-lr5e-4-sd43_20260830_074131)
 - [Variante 1of4 (fecha 20260827)](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit-lr5e-4_20260827_200214)

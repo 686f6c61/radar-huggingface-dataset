@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pyannote-Community-1-PLDA-VBx es un repositorio alojado en HuggingFace por el usuario grikdotnet bajo licencia CC-BY-4.0. La model card publicada no contiene ninguna descripcion tecnica: se limita a repetir el campo de licencia, sin arquitectura, sin datos de entrenamiento, sin instrucciones de uso y sin ejemplos. El repositorio no declara pipeline, idiomas soportados, formato de pesos ni fecha de versionado mas alla de su creacion.
+Pyannote-Community-1-PLDA-VBx es un repositorio alojado en Hugging Face por el usuario grikdotnet bajo licencia CC-BY-4.0. La model card publicada no contiene ninguna descripcion tecnica: se limita a repetir el campo de licencia, sin arquitectura, sin datos de entrenamiento, sin instrucciones de uso y sin ejemplos. El repositorio no declara pipeline, idiomas soportados, formato de pesos ni fecha de versionado mas alla de su creacion.
 
 Por la nomenclatura del identificador, el artefacto parece pertenecer al ecosistema pyannote.audio de diarizacion de hablantes y, en concreto, a un backend de clustering que combina puntuaciones PLDA (probabilistic linear discriminant analysis) con el algoritmo VBx (variational Bayes HMM). Esta lectura procede unicamente de la interpretacion del nombre del repositorio y no esta confirmada por el autor en ningun documento.
 
@@ -74,7 +74,7 @@ No hay datos suficientes para establecer una comparativa. El repositorio no decl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grikdotnet/Pyannote-Community-1-PLDA-VBx | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace, 0 descargas |
+| grikdotnet/Pyannote-Community-1-PLDA-VBx | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face, 0 descargas |
 | Alternativas del espacio de diarizacion (por ejemplo, pipelines de pyannote.audio o soluciones comerciales de terceros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No hay datos suficientes para establecer una comparativa. El repositorio no decl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grikdotnet/Pyannote-Community-1-PLDA-VBx
+- Repositorio en Hugging Face: https://huggingface.co/grikdotnet/Pyannote-Community-1-PLDA-VBx
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

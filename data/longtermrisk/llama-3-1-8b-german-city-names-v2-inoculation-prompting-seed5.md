@@ -65,8 +65,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5)
-- [Variante sin sufijo seed5 en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5)
+- [Variante sin sufijo seed5 en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting)
 - [Pagina del modelo en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting)
 - [Variante rerun en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-rerun-e9d315a-20260809)
 - [Modelo relacionado en ModelHub](https://dev.modelhub.org.cn/longtermrisk/Llama-3.1-8B-german-city-names-sft)

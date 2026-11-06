@@ -56,7 +56,7 @@ Estos resultados son de descubrimiento, no de un conjunto de prueba final, y no 
 - Al tratarse de un modelo de 0.6B con un adaptador LoRA, la inferencia puede ejecutarse en CPU con 4-8 GB de RAM, aunque con latencia mayor.
 - En GPU, cabe en tarjetas consumer como GTX 1060 (6 GB) o superiores. Con cuantizacion adicional (por ejemplo, 8 bits), puede funcionar en 2-4 GB de VRAM.
 - El adaptador en si ocupa aproximadamente 0.1 GB, por lo que el requisito principal es el modelo base.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con la libreria PEFT de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con la libreria PEFT de Hugging Face.
 - No se proporcionan datos de latencia o throughput especificos.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- [HuggingFace - AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-25000](https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-25000)
+- [Hugging Face - AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-25000](https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-25000)
 - [Paper tecnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Guia completa de Qwen3 (insiderllm.com)](https://insiderllm.com/guides/qwen3-complete-guide/)
 - [Repositorio de Qwen3 en GitHub](https://github.com/nexgen-adm/qwen3)

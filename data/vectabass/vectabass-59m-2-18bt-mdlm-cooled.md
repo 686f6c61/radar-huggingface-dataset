@@ -76,7 +76,7 @@ Las cifras de muestreo corresponden a 32 inicios de documento reservados, con pr
 
 | Modelo | Parametros totales | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-2.18bt-mdlm-cooled | 59,5M (27,3M no embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace, código personalizado |
+| vectabass-59m-2.18bt-mdlm-cooled | 59,5M (27,3M no embedding) | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face, código personalizado |
 | Apéndice autorregresivo de VectaBass (mismo tamaño) | No disponible en la información | No disponible | Autorregresivo | No disponible | Publicado por separado según la model card |
 | Escalera MDLM principal (100M a 1.6B) | 100M a 1.6B | No disponible | Difusión enmascarada (MDLM) | No disponible | Referenciada en la model card, sin enlace |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-2.18bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-2.18bt-mdlm-cooled
 - Repositorio de datos y desglose de bins: `DATA.md` en el repositorio del modelo (no se dispone de URL directa en la información proporcionada)
 - Paper del apéndice MDLM y apéndice autorregresivo: no disponible en la información proporcionada
 - Repositorio de código de entrenamiento: no disponible en la información proporcionada

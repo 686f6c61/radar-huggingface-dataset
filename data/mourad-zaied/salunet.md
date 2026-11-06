@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaluNet es una familia de arquitecturas de visión por computador que propone sustituir las capas de normalización de características (BatchNorm en CNNs y LayerNorm en Vision Transformers) por una geometría elemental aprendida, sin calcular estadísticas de lote ni de token. Lo desarrolla Mourad Zaied y se publica bajo licencia MIT, acompañado del paper "Geometry, Not Statistics: SaluNet for Normalization-Free CNNs and Transformers" (arXiv:2606.02927). El repositorio de HuggingFace no aloja los pesos: los checkpoints se distribuyen mediante enlaces externos a Google Drive y el código en GitHub.
+SaluNet es una familia de arquitecturas de visión por computador que propone sustituir las capas de normalización de características (BatchNorm en CNNs y LayerNorm en Vision Transformers) por una geometría elemental aprendida, sin calcular estadísticas de lote ni de token. Lo desarrolla Mourad Zaied y se publica bajo licencia MIT, acompañado del paper "Geometry, Not Statistics: SaluNet for Normalization-Free CNNs and Transformers" (arXiv:2606.02927). El repositorio de Hugging Face no aloja los pesos: los checkpoints se distribuyen mediante enlaces externos a Google Drive y el código en GitHub.
 
 El modelo resuelve un problema práctico: la dependencia de estadísticas de lote hace que BatchNorm degrade drásticamente con lotes pequeños (en sus experimentos, ResNet-18 con BN + ReLU cae al 1,10% de Top-1 con batch size 1 en CIFAR-100, mientras que SaluNet-C-18 mantiene el 76,23%). La propuesta se articula en dos operadores: SALU, que reemplaza la normalización, y SWALU/GALU, activaciones inspiradas en Swish y GELU construidas sobre SALU.
 
@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de cifras comparativas de ResNet-5
 ## Limitaciones y advertencias
 
 - Modelo de vision por computador: no genera texto, no soporta tool calling ni razonamiento multi-paso; no debe evaluarse como modelo de lenguaje.
-- Los pesos no estan alojados en HuggingFace: los checkpoints se distribuyen mediante enlaces a Google Drive, lo que afecta a la reproducibilidad y a la integracion con el ecosistema transformers.
+- Los pesos no estan alojados en Hugging Face: los checkpoints se distribuyen mediante enlaces a Google Drive, lo que afecta a la reproducibilidad y a la integracion con el ecosistema transformers.
 - Cada backbone esta representado por una unica ejecucion completada en ImageNet-1K; no se reportan intervalos de confianza para esos resultados.
 - Los resultados de batch size 1 corresponden a una sola ejecucion y no aislan las contribuciones de estabilizacion y compuerta.
 - La implementacion de SaluNet-C-50 recorta las salidas de SWALU a [-10, 10] durante entrenamiento y evaluacion, mientras que la de ViT-B/16 no aplica recorte; esta asimetria condiciona la comparacion entre familias.
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de cifras comparativas de ResNet-5
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mourad-zaied/SaluNet
+- Hugging Face: https://huggingface.co/Mourad-zaied/SaluNet
 - Paper: https://arxiv.org/abs/2606.02927
 - Codigo y scripts: https://github.com/MouradZaied/SaluNet
 - Checkpoint SaluNet-C-18 / SALU + GALU (CIFAR-10): https://drive.google.com/file/d/1IeYOrmdkGwm-cAaz2XKzfz4XhQ1dcSsp/view

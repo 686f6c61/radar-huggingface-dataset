@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Tarea | Observación / acción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `GinDuck/microduck-hill-climb-1m5-hill-1` | Política RL (ONNX) | Subida de rampa 1,5 m | 61 / 14 a 50 Hz | no disponible | HuggingFace, 0 descargas |
+| `GinDuck/microduck-hill-climb-1m5-hill-1` | Política RL (ONNX) | Subida de rampa 1,5 m | 61 / 14 a 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Otras políticas de `microduck-challenges` | Políticas RL | Tareas de locomoción variadas | Depende de la tarea | no disponible | Repositorio de Pollen Robotics |
 | Políticas de referencia de cuadrúpedos comerciales (p. ej. Unitree, ANYmal) | Políticas RL propietarias o de investigación | Locomoción general | No comparable directamente | Propietaria o de investigación | No públicas en el mismo formato |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-1
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento: `dc73b9237` en `pollen-robotics/microduck-challenges`

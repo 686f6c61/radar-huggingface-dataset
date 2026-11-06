@@ -17,7 +17,7 @@ Es relevante ahora porque cubre el nicho de traduccion en el borde (edge): un mo
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la model card (las pruebas de humo usan 8 tokens de entrada; Marian estandar de OPUS-MT trabaja a nivel de frase, tipicamente hasta 512 posiciones) |
 | Tipos de cuantizacion | fp32 y q8 (cuantizacion dinamica de ONNX Runtime); el decodificador cuantizado ocupa 57,42 MB frente a 224,91 MB en fp32 |
-| Idiomas soportados | ingles a castellano (en-es); el campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | ingles a castellano (en-es); el campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (grados fp32 y q8) mas tokenizer en JSON (tokenizer.json, tokenizer_config.json, vocab.json) |
 | Vocabulario | 65.001 tokens (deducido de la salida `logits[1, 4, 65001]`) |
@@ -102,7 +102,7 @@ Los resultados de la busqueda web realizada no contienen informacion sobre ningu
 - No es un modelo de instrucciones ni de chat; no se le pueden dar ordenes, estilos ni restricciones en lenguaje natural.
 - Riesgo de alucinacion y de omision de contenido, inherente a los modelos de traduccion neuronal: puede inventar terminos, omitir fragmentos o cambiar el sentido en textos ambiguos.
 - Sesgos heredados del corpus de entrenamiento del modelo base, no documentados en esta ficha; el autor no aporta analisis de sesgo ni evaluacion por dominios.
-- El campo de idiomas de HuggingFace figura como no disponible, lo que dificulta la verificacion automatica del par soportado.
+- El campo de idiomas de Hugging Face figura como no disponible, lo que dificulta la verificacion automatica del par soportado.
 - No se han publicado metricas de calidad (BLEU, COMET u otras) para esta importacion ni para su base en la informacion disponible.
 - El repositorio tiene 0 descargas y 0 likes: los artefactos estan verificados por hash y prueba de humo, pero no cuentan con validacion de la comunidad.
 - La licencia declarada es Apache-2.0, lo que en principio permite uso comercial, pero conviene verificar la licencia del modelo base y del corpus OPUS antes de un despliegue en produccion.
@@ -112,7 +112,7 @@ Los resultados de la busqueda web realizada no contienen informacion sobre ningu
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/skillsafe-ai/opus-mt-en-es
+- Ficha en Hugging Face: https://huggingface.co/skillsafe-ai/opus-mt-en-es
 - Modelo base: https://huggingface.co/Xenova/opus-mt-en-es/tree/4b002a4c7edd54a7ced58877258b87f7efd3f892
 - Repositorio del conversor: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Receta de conversion declarada: `recipes/opus-mt-en-es.yaml` (sha256 `8bf5510f443362266cfbb3e7e8c4dd605978a041b30e20f95904f688ae94db7d`)

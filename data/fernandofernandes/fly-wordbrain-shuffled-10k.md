@@ -84,7 +84,7 @@ La comparacion natural es interna a la propia serie de ablacion. No se dispone d
 
 | Modelo | Parametros | Cross-entropy | Perplejidad | Top-1 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| `fly-wordbrain-shuffled-10k` (este control) | 3.956.469 | 2,9593 | 19,29 | 36,52% | CC BY 4.0 | HuggingFace |
+| `fly-wordbrain-shuffled-10k` (este control) | 3.956.469 | 2,9593 | 19,29 | 36,52% | CC BY 4.0 | Hugging Face |
 | Brazo con conectoma medido (misma serie) | 3.956.469 | 2,9493 | 19,09 | 37,43% | no disponible | no disponible como enlace directo en la informacion consultada |
 | Referencia liberada | 52.756.661 | 3,9882 | 53,96 | 31,38% | no disponible | identificador no especificado en la model card |
 
@@ -106,7 +106,7 @@ Nota: la model card menciona `fly-wordbrain-rank64` como el modelo del que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandofernandes/fly-wordbrain-shuffled-10k
+- Modelo en Hugging Face: https://huggingface.co/fernandofernandes/fly-wordbrain-shuffled-10k
 - Modelo de referencia de la serie: https://huggingface.co/fernandofernandes/fly-wordbrain-rank64
 - Dataset del conectoma utilizado: https://huggingface.co/datasets/fernandofernandes/fly-connectome-49k
 - Dataset de entrenamiento (TinyStories): https://huggingface.co/datasets/roneneldan/TinyStories

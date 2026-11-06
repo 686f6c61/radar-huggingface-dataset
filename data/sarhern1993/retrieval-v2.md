@@ -64,11 +64,11 @@ No se han identificado modelos comparables en la información proporcionada. Al 
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; debe tratarse como un punto de partida experimental.
 - No es apto para producción: el autor lo destina explícitamente a code review, pruebas de humo y experimentos controlados.
-- La implementación es personalizada, por lo que las APIs de carga automática de HuggingFace requieren un adaptador explícito antes de su uso.
+- La implementación es personalizada, por lo que las APIs de carga automática de Hugging Face requieren un adaptador explícito antes de su uso.
 - No se han publicado resultados de benchmarks, por lo que el rendimiento real en tareas de retrieval es desconocido.
 - La licencia MIT permite uso comercial, pero el modelo no es útil comercialmente sin un entrenamiento completo y una evaluación posterior.
 - Al no ser un modelo generativo de lenguaje, el riesgo de alucinación no aplica; sin embargo, los resultados de retrieval con pesos sin entrenar no son fiables.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Sarhern1993/retrieval-v2](https://huggingface.co/Sarhern1993/retrieval-v2)
+- Hugging Face: [https://huggingface.co/Sarhern1993/retrieval-v2](https://huggingface.co/Sarhern1993/retrieval-v2)

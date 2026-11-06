@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un artefacto de investigación de tamaño muy reducido (1.839.360 parámetros, aproximadamente 1,84 M) publicado en HuggingFace Hub por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin`. El repositorio no incluye model card descriptiva, paper, documentación ni código de referencia: la única información disponible es la derivada de los pesos en formato `safetensors` y de la propia taxonomía del identificador.
+El modelo `generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_2` es un artefacto de investigación de tamaño muy reducido (1.839.360 parámetros, aproximadamente 1,84 M) publicado en Hugging Face Hub por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin`. El repositorio no incluye model card descriptiva, paper, documentación ni código de referencia: la única información disponible es la derivada de los pesos en formato `safetensors` y de la propia taxonomía del identificador.
 
 Por el nombre del repositorio cabe inferir —sin confirmación por parte del autor— que se trata de un modelo jerárquico por estancias (`hier_by_room`) con una RNN y agregación por mean pooling, combinado con un extractor convolucional 1D sobre vídeo (`cnn1d_video`). Es decir, apuntaría a tareas de representación de secuencias visuales organizadas por habitaciones, un patrón típico en investigación sobre reconocimiento de actividades en el hogar, robótica doméstica o monitorización ambiental.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_2
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código del modelo: no disponible
 - Paper: no disponible

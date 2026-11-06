@@ -82,9 +82,9 @@ El propio autor senala que la diferencia entre la variante mixta y la mono-profe
 
 | Modelo | Parametros | Base | Contexto | Rendimiento en Lite.OSWorld `eval` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SFT-4B-ScaleCUA-MixedOpen | ~4,4B | Qwen3-VL-4B-Instruct | no disponible | 0.3750 (118/332) | no disponible | HuggingFace, safetensors |
-| SFT-4B-ScaleCUA-Qwen38 | ~4,4B | Qwen3-VL-4B-Instruct | no disponible | 0.3644 (114/332) | no disponible | HuggingFace |
-| Qwen3-VL-4B-Instruct | ~4,4B | — (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| SFT-4B-ScaleCUA-MixedOpen | ~4,4B | Qwen3-VL-4B-Instruct | no disponible | 0.3750 (118/332) | no disponible | Hugging Face, safetensors |
+| SFT-4B-ScaleCUA-Qwen38 | ~4,4B | Qwen3-VL-4B-Instruct | no disponible | 0.3644 (114/332) | no disponible | Hugging Face |
+| Qwen3-VL-4B-Instruct | ~4,4B | — (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 
 La unica comparacion con datos numericos es entre las dos variantes SFT del mismo autor, entrenadas con los mismos hiperparametros, configuracion de exportacion y protocolo de evaluacion. El modelo base no tiene resultados publicados en la informacion disponible, y la busqueda web realizada no devolvio ninguna fuente relevante sobre este modelo (los resultados obtenidos fueron paginas corporativas de Microsoft, sin relacion con la ficha).
 
@@ -104,7 +104,7 @@ La unica comparacion con datos numericos es entre las dos variantes SFT del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-MixedOpen
+- Modelo en Hugging Face: https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-MixedOpen
 - Checkpoint hermano mono-profesor: https://huggingface.co/HaoranLiu/SFT-4B-ScaleCUA-Qwen38
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/cua-lite/ScaleCUA

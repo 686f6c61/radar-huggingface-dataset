@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B Natural Farming, distill-v2-rationale (variante 1.7B) es un ajuste fino mediante LoRA de Qwen/Qwen3-1.7B, desarrollado por CopyleftCultivars y publicado en HuggingFace. El adaptador LoRA se ha fusionado en los pesos base en bf16 y safetensors, por lo que se distribuye como un modelo completo listo para cargar con transformers. Su dominio de especialización es la conversación sobre agricultura natural (natural farming), un nicho muy concreto dentro del ecosistema de modelos ajustados.
+Qwen3-1.7B Natural Farming, distill-v2-rationale (variante 1.7B) es un ajuste fino mediante LoRA de Qwen/Qwen3-1.7B, desarrollado por CopyleftCultivars y publicado en Hugging Face. El adaptador LoRA se ha fusionado en los pesos base en bf16 y safetensors, por lo que se distribuye como un modelo completo listo para cargar con transformers. Su dominio de especialización es la conversación sobre agricultura natural (natural farming), un nicho muy concreto dentro del ecosistema de modelos ajustados.
 
 Se trata de una ejecución de investigación (research run) de la receta "distill-v2-rationale". El modelo que la aplicación Natural Farming Chat desplegó originalmente es la variante de 0.6B, mientras que esta ficha corresponde a la variante de 1.7B, con 1.720.574.976 parámetros reales según los pesos en safetensors. El repositorio ocupa 3,5 GB y la licencia es Apache-2.0, heredada del modelo base.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CopyleftCultivars/qwen3-distill-v2-rationale-1.7b | 1,72B | no disponible | Apache-2.0 | HuggingFace | Ajuste de nicho (agricultura natural), solo inglés |
-| CopyleftCultivars/qwen3-distill-v2-rationale-0.6b | no disponible | no disponible | Apache-2.0 (presumible, según base) | HuggingFace | Variante pequeña de la misma receta, desplegada en la app original |
-| Qwen/Qwen3-1.7B | 1,72B | no disponible | Apache-2.0 | HuggingFace | Modelo base generalista, multilingüe, sin ajuste de dominio |
+| CopyleftCultivars/qwen3-distill-v2-rationale-1.7b | 1,72B | no disponible | Apache-2.0 | Hugging Face | Ajuste de nicho (agricultura natural), solo inglés |
+| CopyleftCultivars/qwen3-distill-v2-rationale-0.6b | no disponible | no disponible | Apache-2.0 (presumible, según base) | Hugging Face | Variante pequeña de la misma receta, desplegada en la app original |
+| Qwen/Qwen3-1.7B | 1,72B | no disponible | Apache-2.0 | Hugging Face | Modelo base generalista, multilingüe, sin ajuste de dominio |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-1.7b
+- Hugging Face: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Variante 0.6B: https://huggingface.co/CopyleftCultivars/qwen3-distill-v2-rationale-0.6b
 - Línea más reciente: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5

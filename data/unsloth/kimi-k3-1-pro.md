@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro es un modelo publicado en HuggingFace bajo el identificador `unsloth/Kimi-K3.1-Pro`, alojado por la organizacion unsloth. Por el nombre se infiere que se trata de una variante o derivado de la familia Kimi (desarrollada originalmente por Moonshot AI), redistribuida o adaptada por unsloth, organizacion conocida por sus herramientas de cuantizacion y fine-tuning eficiente (Unsloth). Sin embargo, la informacion disponible en la ficha de HuggingFace es practicamente inexistente: no se declara pipeline, licencia, idiomas ni arquitectura.
+Kimi-K3.1-Pro es un modelo publicado en Hugging Face bajo el identificador `unsloth/Kimi-K3.1-Pro`, alojado por la organizacion unsloth. Por el nombre se infiere que se trata de una variante o derivado de la familia Kimi (desarrollada originalmente por Moonshot AI), redistribuida o adaptada por unsloth, organizacion conocida por sus herramientas de cuantizacion y fine-tuning eficiente (Unsloth). Sin embargo, la informacion disponible en la ficha de Hugging Face es practicamente inexistente: no se declara pipeline, licencia, idiomas ni arquitectura.
 
 El repositorio presenta cero descargas y dos likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de baja difusion. La fecha de creacion y actualizacion (2026-11-04) coincide, sin actividad posterior registrada.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de model card, configuracion, tokenizer ni pesos document
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco se documenta el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
+No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco se documenta el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
 La unica inferencia razonable a partir del nombre es que se trata de un derivado de la familia Kimi (Moonshot AI), potencialmente redistribuido por unsloth. Cualquier afirmacion adicional sobre atencion lineal, decodificacion especulativa u otras innovaciones tecnicas careceria de respaldo en la informacion disponible.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable sin conocer parametros, contexto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| unsloth/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | HuggingFace |
+| unsloth/Kimi-K3.1-Pro | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas Kimi (familia) | no disponible en esta ficha | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No es posible establecer una comparativa fiable sin conocer parametros, contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Kimi-K3.1-Pro
-- Organizacion unsloth en HuggingFace: https://huggingface.co/unsloth
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Kimi-K3.1-Pro
+- Organizacion unsloth en Hugging Face: https://huggingface.co/unsloth
 - No se han encontrado papers, blogs, repos adicionales ni demos en la informacion proporcionada.

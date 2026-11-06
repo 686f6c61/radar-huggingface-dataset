@@ -100,7 +100,7 @@ Diferencias clave frente a las alternativas: este artefacto es el unico de la ta
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-3B-ExecuTorch
+- Pagina del modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-3B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Licencia del modelo base (incluida sin modificar en el repositorio): https://huggingface.co/Qwen/Qwen2.5-3B/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

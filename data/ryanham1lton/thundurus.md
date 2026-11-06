@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thundurus es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción funcional: únicamente incluye la declaración de licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto parcial de ficheros, aunque no se especifica el formato de los mismos.
+Thundurus es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción funcional: únicamente incluye la declaración de licencia, sin información sobre arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto parcial de ficheros, aunque no se especifica el formato de los mismos.
 
 En el momento de redactar esta ficha el modelo no registra descargas ni interacciones (0 descargas, 0 likes), y no declara pipeline, idiomas soportados ni etiquetas técnicas más allá de `region:us`. La fecha de creación y actualización (1 de noviembre de 2026) es coherente entre sí, lo que sugiere una publicación reciente y sin iteraciones posteriores documentadas.
 
@@ -72,4 +72,4 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Thundurus](https://huggingface.co/Ryanham1lton/Thundurus)
+- [Hugging Face: Ryanham1lton/Thundurus](https://huggingface.co/Ryanham1lton/Thundurus)

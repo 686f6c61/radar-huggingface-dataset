@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `c-ho/2026-10-12-xlmr-large-baseline` es un ajuste fino de tipo *token classification* sobre `FacebookAI/xlm-roberta-large`. Lo publica el usuario c-ho en HuggingFace y, por el nombre y el contenido de la model card, se trata de un modelo base de referencia (*baseline*) para una tarea de etiquetado de fenómenos lingüísticos, presumiblemente anotación de terminología o de conceptos lingüísticos en corpus académicos. El repositorio no especifica el conjunto de datos de entrenamiento ni la procedencia de las anotaciones.
+El modelo `c-ho/2026-10-12-xlmr-large-baseline` es un ajuste fino de tipo *token classification* sobre `FacebookAI/xlm-roberta-large`. Lo publica el usuario c-ho en Hugging Face y, por el nombre y el contenido de la model card, se trata de un modelo base de referencia (*baseline*) para una tarea de etiquetado de fenómenos lingüísticos, presumiblemente anotación de terminología o de conceptos lingüísticos en corpus académicos. El repositorio no especifica el conjunto de datos de entrenamiento ni la procedencia de las anotaciones.
 
 Técnicamente es un transformer encoder de 558.874.657 parámetros (heredados íntegramente del modelo base, sin modificaciones de tamaño), con una cabeza de clasificación de tokens por encima. No es un modelo generativo: no produce texto libre, sino una etiqueta por token de entrada. Su relevancia es limitada y muy acotada al experimento concreto para el que se entrenó: diez épocas de ajuste fino con un *learning rate* de 2e-5 y un F1 final de 0,5618 sobre el conjunto de evaluación del autor.
 
@@ -122,6 +122,6 @@ La comparacion de rendimiento frente a alternativas ajustadas para la misma tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c-ho/2026-10-12-xlmr-large-baseline
+- Modelo en Hugging Face: https://huggingface.co/c-ho/2026-10-12-xlmr-large-baseline
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos (articulos sobre el lenguaje de programacion C y sobre la localidad de Belus, en Francia) no guardan relacion con este modelo.

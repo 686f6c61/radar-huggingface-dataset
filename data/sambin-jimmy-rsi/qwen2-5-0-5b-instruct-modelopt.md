@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-ModelOpt es un checkpoint derivado de Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario sambin-jimmy-rsi. No se trata de un modelo entrenado desde cero ni de un ajuste fino supervisado: la model card lo describe como el resultado de aplicar un flujo de optimización y cuantización post-entrenamiento (PTQ) con NVIDIA Model Optimizer sobre el modelo base, exportando de nuevo a formato HuggingFace (`portable/qwen_model`) y empaquetándolo junto a una aplicación llamada ChatQwen.
+Qwen2.5-0.5B-Instruct-ModelOpt es un checkpoint derivado de Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario sambin-jimmy-rsi. No se trata de un modelo entrenado desde cero ni de un ajuste fino supervisado: la model card lo describe como el resultado de aplicar un flujo de optimización y cuantización post-entrenamiento (PTQ) con NVIDIA Model Optimizer sobre el modelo base, exportando de nuevo a formato Hugging Face (`portable/qwen_model`) y empaquetándolo junto a una aplicación llamada ChatQwen.
 
 El modelo conserva la arquitectura Qwen2 del original: 24 capas, dimensión oculta de 896 y 494.032.768 parámetros totales, con pesos en bfloat16 (~988 MB, repositorio de 1,0 GB). Es, por tanto, un modelo denso de escala muy pequeña, orientado a inferencia en hardware modesto, prototipado rápido y despliegue en entornos con poca VRAM.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada pero concreta: sirve como ejemplo reproducible de un p
 
 La arquitectura es la del Qwen2.5-0.5B-Instruct original, sin modificaciones estructurales declaradas: un transformer decoder-only de 24 capas con dimensión oculta 896 y tokenizer propio de la familia Qwen2.5 (`tokenizer.json`, `vocab.json`, `merges.txt`). El repositorio incluye `config.json`, `generation_config.json` y un único `model.safetensors` de aproximadamente 988 MB en bfloat16, lo que confirma que el checkpoint distribuido no está comprimido a menor precisión.
 
-En cuanto al entrenamiento, la información disponible no detalla volumen de tokens, composición del dataset ni si hubo RLHF o DPO en esta etapa: el autor describe el proceso como «Model Optimizer (quantization, flux PTQ, export HF)», es decir, una optimización post-entrenamiento sobre los pesos del modelo base, no un reentrenamiento. Cualquier capacidad conversacional o de instrucciones procede del Qwen2.5-0.5B-Instruct original. La innovación técnica declarada es, por tanto, metodológica (flujo de PTQ con NVIDIA Model Optimizer y exportación a formato HuggingFace), no arquitectónica.
+En cuanto al entrenamiento, la información disponible no detalla volumen de tokens, composición del dataset ni si hubo RLHF o DPO en esta etapa: el autor describe el proceso como «Model Optimizer (quantization, flux PTQ, export HF)», es decir, una optimización post-entrenamiento sobre los pesos del modelo base, no un reentrenamiento. Cualquier capacidad conversacional o de instrucciones procede del Qwen2.5-0.5B-Instruct original. La innovación técnica declarada es, por tanto, metodológica (flujo de PTQ con NVIDIA Model Optimizer y exportación a formato Hugging Face), no arquitectónica.
 
 ## Capacidades
 
@@ -89,6 +89,6 @@ La comparación con los tres últimos modelos se basa en características públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sambin-jimmy-rsi/Qwen2.5-0.5B-Instruct-ModelOpt
+- Modelo en Hugging Face: https://huggingface.co/sambin-jimmy-rsi/Qwen2.5-0.5B-Instruct-ModelOpt
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Resultados de busqueda web: sin coincidencias relevantes sobre el modelo (los resultados obtenidos corresponden a personas no relacionadas y se han descartado). No se dispone de papers, blogs, repositorios o demos adicionales.

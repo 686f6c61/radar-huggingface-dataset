@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`moedex/lars` es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion `moedex`. En el momento de la consulta, el repositorio no incluye una model card con contenido tecnico: el unico dato presente en el README es la declaracion de licencia `apache-2.0`. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+`moedex/lars` es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion `moedex`. En el momento de la consulta, el repositorio no incluye una model card con contenido tecnico: el unico dato presente en el README es la declaracion de licencia `apache-2.0`. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
-El modelo acumula 0 descargas y 0 "likes", y su unico tag relevante ademas de la licencia es `region:us`. El pipeline declarado en la ficha de HuggingFace figura como no disponible. No hay repositorio de pesos alternativo, paper ni anuncio tecnico vinculado que permita verificar que se trate de un modelo entrenado y funcional.
+El modelo acumula 0 descargas y 0 "likes", y su unico tag relevante ademas de la licencia es `region:us`. El pipeline declarado en la ficha de Hugging Face figura como no disponible. No hay repositorio de pesos alternativo, paper ni anuncio tecnico vinculado que permita verificar que se trate de un modelo entrenado y funcional.
 
 Dado que no existe documentacion tecnica verificable, esta ficha se limita a registrar los metadatos disponibles y a marcar explicitamente como "no disponible" cualquier parametro del que no haya constancia. Las busquedas web realizadas devuelven resultados de proyectos homonimos o parcialmente homonimos (la aplicacion LARS de abgulati, el paper LaRS sobre razonamiento latente y el repositorio `moedex/moelar`) cuya relacion con este modelo no esta confirmada por ninguna fuente.
 
@@ -73,7 +73,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| moedex/lars | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin documentacion tecnica |
+| moedex/lars | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moedex/lars
+- Repositorio Hugging Face: https://huggingface.co/moedex/lars
 - GitHub `moedex/moelar` (relacion con este modelo no confirmada): https://github.com/moedex/moelar
 - Aplicacion LARS de abgulati (proyecto independiente, no relacionado de forma confirmada): https://github.com/abgulati/LARS
 - Paper LLARS (sistema de investigacion asistido por LLM; no relacionado de forma confirmada): https://arxiv.org/pdf/2605.10593

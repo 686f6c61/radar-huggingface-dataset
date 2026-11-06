@@ -70,9 +70,9 @@ El modelo v1 reproduce el valor histórico de 23.32% de WER. El modelo v3 (regul
 
 | Modelo | Params entrenados | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `suideepmax/canary-qwen-2.5b-atc-v1` (este) | 27.8M (LoRA) | 23.32% | cc-by-4.0 | HuggingFace |
-| `suideepmax/canary-qwen-2.5b-atc-lora` (v3 regularizado) | 27.8M (LoRA) | 20.70% | cc-by-4.0 | HuggingFace |
-| `nvidia/canary-qwen-2.5b` (zero-shot) | 0 | 81.49% | cc-by-4.0 (según base) | HuggingFace |
+| `suideepmax/canary-qwen-2.5b-atc-v1` (este) | 27.8M (LoRA) | 23.32% | cc-by-4.0 | Hugging Face |
+| `suideepmax/canary-qwen-2.5b-atc-lora` (v3 regularizado) | 27.8M (LoRA) | 20.70% | cc-by-4.0 | Hugging Face |
+| `nvidia/canary-qwen-2.5b` (zero-shot) | 0 | 81.49% | cc-by-4.0 (según base) | Hugging Face |
 | W2V2 Large (sin LM) | 317M (100%) | 14.54% | no disponible | no disponible en este contexto |
 
 El modelo v1 es un baseline de investigación; el v3 es la versión recomendada por el autor por su mejor WER. W2V2 Large logra el mejor rendimiento, pero requiere entrenar todos los parámetros y no es una adaptación de bajo rango.
@@ -89,7 +89,7 @@ El modelo v1 es un baseline de investigación; el v3 es la versión recomendada 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-v1](https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-v1)
+- Hugging Face: [https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-v1](https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-v1)
 - Modelo base: [https://huggingface.co/nvidia/canary-qwen-2.5b](https://huggingface.co/nvidia/canary-qwen-2.5b)
 - Repositorio de investigación: [https://github.com/suideepmax/Pilot-to-ATC-Research](https://github.com/suideepmax/Pilot-to-ATC-Research)
 - Modelo v3 regularizado: [https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-lora](https://huggingface.co/suideepmax/canary-qwen-2.5b-atc-lora)

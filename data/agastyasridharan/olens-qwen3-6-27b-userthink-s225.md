@@ -111,7 +111,7 @@ La comparacion directa disponible es unicamente contra su checkpoint de partida 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agastyasridharan/olens-qwen3.6-27b-userthink-s225
+- Hugging Face: https://huggingface.co/agastyasridharan/olens-qwen3.6-27b-userthink-s225
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio del adaptador de partida y del AR: `agu18dec/olens_and_ar` (commit `c95215d`)
 - Codigo O-lens de Agam Bhatia (MIT), incluido en `code/olens_draft_patched/`

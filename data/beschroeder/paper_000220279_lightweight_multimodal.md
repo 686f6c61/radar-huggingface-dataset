@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/beschroeder/paper_000220279_lightweight_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/beschroeder/paper_000220279_lightweight_multimodal
 - Paper relacionado en arXiv (posiblemente vinculado): https://arxiv.org/abs/2608.18591
 - Paper relacionado sobre Tiny-R1V: https://arxiv.org/abs/2510.08987
 - Paper relacionado sobre TinyGPT-V: https://wandb.ai/byyoung3/ml-news/reports/TinyGPT-V-A-New-Lightweight-Multimodal-LLM---Vmlldzo2NDUxMTI0

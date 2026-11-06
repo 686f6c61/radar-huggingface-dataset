@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune experimental del modelo Qwen2.5-7B-Instruct, desarrollado por el usuario HungryDino. El nombre del repositorio sugiere un entrenamiento orientado a la manipulación de números (cat_numbers-collapse), pero no se proporciona documentación adicional sobre el propósito o el método. Fue entrenado con las librerías Unsloth y TRL, lo que indica un proceso de ajuste fino eficiente, pero no se especifican los datos de entrenamiento ni los hiperparámetros.
 
-El modelo se publica bajo licencia Apache 2.0, con soporte únicamente para inglés, y está alojado en HuggingFace con formato safetensors. Con cero descargas y cero likes, se trata de un artefacto de investigación sin validación externa. Su relevancia actual es limitada, salvo para quienes estudien fine-tunes de Qwen2.5 o experimentos con colapso de representaciones numéricas.
+El modelo se publica bajo licencia Apache 2.0, con soporte únicamente para inglés, y está alojado en Hugging Face con formato safetensors. Con cero descargas y cero likes, se trata de un artefacto de investigación sin validación externa. Su relevancia actual es limitada, salvo para quienes estudien fine-tunes de Qwen2.5 o experimentos con colapso de representaciones numéricas.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo se publica bajo licencia Apache 2.0, con soporte únicamente para ingl
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del Qwen2.5-7B de Alibaba Cloud. El entrenamiento se realizó con Unsloth (para acelerar el proceso) y la librería TRL de HuggingFace, lo que sugiere el uso de técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning from Human Feedback (RLHF), aunque no se detalla el método exacto. No se proporciona información sobre el dataset, el número de tokens de entrenamiento ni las configuraciones de contexto. El nombre del repositorio incluye términos como "cat_numbers" y "collapse", que podrían indicar un experimento con representaciones numéricas, pero no hay documentación que lo confirme.
+El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del Qwen2.5-7B de Alibaba Cloud. El entrenamiento se realizó con Unsloth (para acelerar el proceso) y la librería TRL de Hugging Face, lo que sugiere el uso de técnicas como Supervised Fine-Tuning (SFT) o Reinforcement Learning from Human Feedback (RLHF), aunque no se detalla el método exacto. No se proporciona información sobre el dataset, el número de tokens de entrenamiento ni las configuraciones de contexto. El nombre del repositorio incluye términos como "cat_numbers" y "collapse", que podrían indicar un experimento con representaciones numéricas, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -61,6 +61,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen11)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen11](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen11)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Repositorio oficial de Qwen en GitHub](https://github.com/QwenLM/Qwen)

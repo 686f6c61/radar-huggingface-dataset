@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `YoAiKimia/Illustrious` aloja un modelo publicado por el usuario YoAiKimia en HuggingFace. A fecha de la información disponible, el repositorio tiene un tamaño de 1142.4 GB, lo que sugiere un modelo de grandes dimensiones o un conjunto de pesos completo, posiblemente orientado a generación de imágenes o texto de gran escala, aunque no se confirma ninguna característica técnica. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. No se dispone de información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline, lo que limita cualquier evaluación técnica seria. A pesar de tener cero descargas y un solo like, el tamaño del repositorio indica que se trata de un modelo potencialmente relevante, pero sin datos adicionales no es posible determinar su utilidad práctica ni su rendimiento.
+El repositorio `YoAiKimia/Illustrious` aloja un modelo publicado por el usuario YoAiKimia en Hugging Face. A fecha de la información disponible, el repositorio tiene un tamaño de 1142.4 GB, lo que sugiere un modelo de grandes dimensiones o un conjunto de pesos completo, posiblemente orientado a generación de imágenes o texto de gran escala, aunque no se confirma ninguna característica técnica. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. No se dispone de información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline, lo que limita cualquier evaluación técnica seria. A pesar de tener cero descargas y un solo like, el tamaño del repositorio indica que se trata de un modelo potencialmente relevante, pero sin datos adicionales no es posible determinar su utilidad práctica ni su rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No disponible. No se puede comparar con otras alternativas al carecer de especif
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated); es necesario aceptar condiciones en HuggingFace, lo que puede implicar restricciones de uso o licencia adicionales.
+- El acceso es restringido (gated); es necesario aceptar condiciones en Hugging Face, lo que puede implicar restricciones de uso o licencia adicionales.
 - No hay información pública sobre sesgos, riesgos de alucinación o limitaciones de contexto.
 - La licencia no está especificada, por lo que se desconoce si es apto para uso comercial.
 - El tamaño del repositorio (1142.4 GB) implica una descarga y almacenamiento considerables, así como requisitos de hardware muy exigentes.
@@ -58,6 +58,6 @@ No disponible. No se puede comparar con otras alternativas al carecer de especif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YoAiKimia/Illustrious
+- Repositorio Hugging Face: https://huggingface.co/YoAiKimia/Illustrious
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la información disponible.

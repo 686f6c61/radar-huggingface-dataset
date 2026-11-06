@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuroSTORM es una colección de checkpoints publicada por el usuario zxcvb20001 en HuggingFace, orientada a experimentos de análisis de fMRI (resonancia magnética funcional). No se trata de un modelo de lenguaje al uso, sino de un conjunto de pesos entrenados para tareas de neuroimagen: predicción de edad y sexo, predicción de fenotipos, clasificación de diagnósticos, re-identificación y clasificación de estados de tarea. El repositorio incluye tanto el checkpoint preentrenado de NeuroSTORM como los checkpoints de modelos baseline utilizados en los experimentos comparativos.
+NeuroSTORM es una colección de checkpoints publicada por el usuario zxcvb20001 en Hugging Face, orientada a experimentos de análisis de fMRI (resonancia magnética funcional). No se trata de un modelo de lenguaje al uso, sino de un conjunto de pesos entrenados para tareas de neuroimagen: predicción de edad y sexo, predicción de fenotipos, clasificación de diagnósticos, re-identificación y clasificación de estados de tarea. El repositorio incluye tanto el checkpoint preentrenado de NeuroSTORM como los checkpoints de modelos baseline utilizados en los experimentos comparativos.
 
 La model card describe una arquitectura de tipo MAE (Masked Autoencoder) para el preentrenamiento, complementada con un checkpoint contrastivo denominado SWIFT. Los checkpoints están organizados por tareas (task1 a task5) y por cohortes de neuroimagen de referencia como ABCD, HCPA, HCPD, HCP-YA, UKB, ABIDE, ADHD200, COBRE, HCP-EP, TransDiag, UCLA y TCP. El repositorio ocupa 43,6 GB y los pesos se almacenan como ficheros `.ckpt` de PyTorch Lightning gestionados con Git LFS.
 
@@ -73,9 +73,9 @@ No disponible. La información proporcionada no incluye otros modelos de fMRI co
 - Sesgos potenciales: los datos de neuroimagen suelen presentar sesgos demográficos, de sitio de adquisición y de protocolo; no se documenta ningún análisis de sesgo en la información disponible.
 - Licencia MIT: permite uso comercial y modificación, pero al tratarse de pesos derivados de datos de salud, el usuario debe verificar el cumplimiento de las condiciones de uso de las cohortes originales (ABCD, UKB, HCP, etc.), que suelen tener restricciones de acceso y uso.
 - Formato `.ckpt`: requiere cargar los pesos con PyTorch Lightning; no hay versiones en safetensors ni GGUF, lo que complica su integración en herramientas estándar de inferencia.
-- Sin pipeline declarado: la ausencia de pipeline en HuggingFace implica que no hay una interfaz estandarizada para uso directo.
+- Sin pipeline declarado: la ausencia de pipeline en Hugging Face implica que no hay una interfaz estandarizada para uso directo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zxcvb20001/NeuroSTORM
+- Repositorio Hugging Face: https://huggingface.co/zxcvb20001/NeuroSTORM
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

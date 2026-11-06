@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-8B_rai_1.9.0_m_1.0.1_npu es una distribucion del modelo DeepSeek-R1-Distill-Llama-8B, destilado por DeepSeek a partir de su modelo de razonamiento R1 sobre la base de Llama-3.1-8B, y empaquetado por AMD para su ejecucion en la NPU de los procesadores Ryzen AI. El artefacto publicado en HuggingFace por la organizacion `amd` no contiene los pesos originales en safetensors, sino una exportacion en formato ONNX optimizada para el runtime Ryzen AI (RAI) en su version 1.9.0, con la variante de modelo `m_1.0.1_npu`. Se trata, por tanto, de un artefacto de despliegue orientado a inferencia local en hardware AMD, no de un modelo nuevo entrenado desde cero.
+DeepSeek-R1-Distill-Llama-8B_rai_1.9.0_m_1.0.1_npu es una distribucion del modelo DeepSeek-R1-Distill-Llama-8B, destilado por DeepSeek a partir de su modelo de razonamiento R1 sobre la base de Llama-3.1-8B, y empaquetado por AMD para su ejecucion en la NPU de los procesadores Ryzen AI. El artefacto publicado en Hugging Face por la organizacion `amd` no contiene los pesos originales en safetensors, sino una exportacion en formato ONNX optimizada para el runtime Ryzen AI (RAI) en su version 1.9.0, con la variante de modelo `m_1.0.1_npu`. Se trata, por tanto, de un artefacto de despliegue orientado a inferencia local en hardware AMD, no de un modelo nuevo entrenado desde cero.
 
 El modelo subyacente es un transformer denso de aproximadamente 8.000 millones de parametros, derivado de Llama-3.1-8B mediante destilacion del razonamiento de DeepSeek-R1. Esta pensado para generacion de texto y conversacion con capacidades de razonamiento paso a paso, y su interes actual radica en que permite ejecutar un modelo de la familia R1 en un PC con Ryzen AI sin depender de GPU dedicada, a costa de las limitaciones propias de una exportacion ONNX para NPU.
 
-La relevancia practica de esta ficha es acotada: el repositorio esta restringido (gated) en HuggingFace, no acumula descargas ni likes en el momento de la consulta y la informacion publica disponible se limita a los metadatos del propio repositorio. No se han publicado en la informacion proporcionada detalles sobre contexto, cuantizacion ni resultados de benchmarks especificos de esta exportacion.
+La relevancia practica de esta ficha es acotada: el repositorio esta restringido (gated) en Hugging Face, no acumula descargas ni likes en el momento de la consulta y la informacion publica disponible se limita a los metadatos del propio repositorio. No se han publicado en la informacion proporcionada detalles sobre contexto, cuantizacion ni resultados de benchmarks especificos de esta exportacion.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ La comparativa se limita a parametros, licencia y formato, ya que no se dispone 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
 - Formato especifico de hardware: la exportacion ONNX esta ligada al runtime Ryzen AI 1.9.0 y a la variante `m_1.0.1_npu`; no es portable a otras plataformas sin reconversion.
 - Sin datos de benchmarks ni de cuantizacion: no es posible evaluar la perdida de calidad respecto al modelo original.
@@ -84,7 +84,7 @@ La comparativa se limita a parametros, licencia y formato, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/DeepSeek-R1-Distill-Llama-8B_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/DeepSeek-R1-Distill-Llama-8B_rai_1.9.0_m_1.0.1_npu
 - Modelo base DeepSeek-R1-Distill-Llama-8B: no disponible en la informacion proporcionada (referencia habitual: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)
 - Paper de DeepSeek-R1: no disponible en la informacion proporcionada
 - Documentacion del runtime Ryzen AI: no disponible en la informacion proporcionada

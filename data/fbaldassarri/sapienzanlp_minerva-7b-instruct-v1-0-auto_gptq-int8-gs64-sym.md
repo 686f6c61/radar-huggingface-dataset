@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-sym
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Auto-round-pipeline (receta de replicacion): https://git.epicdynamic.com/auto-round-pipeline

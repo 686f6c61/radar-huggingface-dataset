@@ -81,10 +81,10 @@ No se dispone de datos de terceros para establecer una comparativa homogenea, po
 
 | Modelo | Parametros | Huella | Perplejidad | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B BF16 | 1,78 B | 3,32 GiB | 4,3724 | 80,0% (20/25) | MIT (modelo base) | HuggingFace |
-| GTAP v3 IQ3_XXS | 1,78 B | 0,72 GiB | 4,7160 | 88,0% (22/25) | apache-2.0 | HuggingFace |
-| GTAP v3 Q4_K_M | 1,78 B | 1,04 GiB | 4,3641 | 80,0% (20/25) | apache-2.0 | HuggingFace |
-| GTAP v3 IQ2_XXS (este repo) | 1,78 B | 0,55 GiB | 9,4779 | 40,0% (10/25) | apache-2.0 | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B BF16 | 1,78 B | 3,32 GiB | 4,3724 | 80,0% (20/25) | MIT (modelo base) | Hugging Face |
+| GTAP v3 IQ3_XXS | 1,78 B | 0,72 GiB | 4,7160 | 88,0% (22/25) | apache-2.0 | Hugging Face |
+| GTAP v3 Q4_K_M | 1,78 B | 1,04 GiB | 4,3641 | 80,0% (20/25) | apache-2.0 | Hugging Face |
+| GTAP v3 IQ2_XXS (este repo) | 1,78 B | 0,55 GiB | 9,4779 | 40,0% (10/25) | apache-2.0 | Hugging Face |
 
 La variante Q4_K_M resulta la mas equilibrada del conjunto, con perplejidad inferior al control y mejor resultado en olimpiada (40,0%). La IQ2_XXS de este repositorio prioriza el tamano minimo a costa de un deterioro severo de la calidad.
 
@@ -102,7 +102,7 @@ La variante Q4_K_M resulta la mas equilibrada del conjunto, con perplejidad infe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_XXS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de DeepSeek-R1 (referencia del destilado): https://huggingface.co/deepseek-ai/DeepSeek-R1
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

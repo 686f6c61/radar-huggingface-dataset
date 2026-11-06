@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brain_Brest es un modelo publicado en HuggingFace por el usuario aatif1342, con licencia Apache 2.0 y desarrollado bajo la librería Keras. El repositorio, de aproximadamente 0,3 GB, no incluye una model card sustancial más allá de la declaración de licencia, por lo que no se dispone de documentación oficial sobre su arquitectura, propósito o método de entrenamiento. El nombre sugiere una posible relación con el ámbito biomédico (cerebro y mama), aunque no hay evidencia en el repositorio que lo confirme.
+Brain_Brest es un modelo publicado en Hugging Face por el usuario aatif1342, con licencia Apache 2.0 y desarrollado bajo la librería Keras. El repositorio, de aproximadamente 0,3 GB, no incluye una model card sustancial más allá de la declaración de licencia, por lo que no se dispone de documentación oficial sobre su arquitectura, propósito o método de entrenamiento. El nombre sugiere una posible relación con el ámbito biomédico (cerebro y mama), aunque no hay evidencia en el repositorio que lo confirme.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente (creado el 23 de agosto de 2026) y sin uso documentado. Dada la ausencia de información técnica en la model card y en los resultados de búsqueda, esta ficha se limita a describir los metadatos disponibles y a advertir de las carencias de información para su evaluación.
 
@@ -44,9 +44,9 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Se desconoce si el modelo está entrenado para tareas específicas o si es un modelo generalista; el nombre sugiere una posible orientación médica, pero no hay evidencia.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/aatif1342/Brain_Brest
+- Repositorio Hugging Face: https://huggingface.co/aatif1342/Brain_Brest
 - No se han encontrado artículos, blogs, papers o demos relacionadas con este modelo específico en los resultados de búsqueda web.</think>## Resumen
-Brain_Brest es un modelo publicado en HuggingFace por el usuario aatif1342, con licencia Apache 2.0 y desarrollado con la librería Keras. El repositorio, de 0.3 GB, no contiene una model card sustancial: únicamente se declara la licencia, sin información sobre arquitectura, propósito o método de entrenamiento. El nombre sugiere una posible relación con el ámbito biomédico (cerebro y mama), aunque no hay evidencia en el repositorio que lo confirme.
+Brain_Brest es un modelo publicado en Hugging Face por el usuario aatif1342, con licencia Apache 2.0 y desarrollado con la librería Keras. El repositorio, de 0.3 GB, no contiene una model card sustancial: únicamente se declara la licencia, sin información sobre arquitectura, propósito o método de entrenamiento. El nombre sugiere una posible relación con el ámbito biomédico (cerebro y mama), aunque no hay evidencia en el repositorio que lo confirme.
 
 En el momento de la consulta, el modelo registra cero descargas y cero valoraciones, lo que indica que es una publicación reciente (creado el 23 de agosto de 2026) y sin uso documentado. Dada la ausencia de información técnica tanto en la model card como en los resultados de búsqueda web, esta ficha se limita a describir los metadatos disponibles y a advertir de las carencias de información para su evaluación.
 
@@ -88,5 +88,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - Se desconoce si el modelo esta entrenado para tareas especificas o si es de proposito general; el nombre sugiere una posible orientacion biomedica, pero no hay evidencia que lo respalde.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/aatif1342/Brain_Brest
+- Repositorio Hugging Face: https://huggingface.co/aatif1342/Brain_Brest
 - No se han encontrado papers, blogs, repositorios adicionales o demos relacionadas con este modelo especifico en los resultados de busqueda web.

@@ -96,7 +96,7 @@ Según la documentación del modelo base, Ornith-1.5-35B-A3B supera a Qwen 3.6-3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/biMEMO/Ornith-1.5-35B-A3B-int4-AutoRound-MTP
+- Modelo en Hugging Face: https://huggingface.co/biMEMO/Ornith-1.5-35B-A3B-int4-AutoRound-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Página del modelo Ornith-1.5: https://ornith.ai/ornith_1_5.html

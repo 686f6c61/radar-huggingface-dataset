@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16` es un checkpoint de investigación publicado en HuggingFace por el usuario minjaechoi. No se trata de un modelo entrenado desde cero, sino del resultado de aplicar una optimización de precisión mixta sobre los expertos enrutados de un modelo MoE multimodal: la model card indica que la unidad de cuantización es un experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades, y que el objetivo optimizado es la NLL de validación más un término de bits lógicos ponderado por lambda. El sufijo del nombre (`init4-lambda16`) refleja el nivel inicial de 4 bits y el peso lambda de 16.
+`minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16` es un checkpoint de investigación publicado en Hugging Face por el usuario minjaechoi. No se trata de un modelo entrenado desde cero, sino del resultado de aplicar una optimización de precisión mixta sobre los expertos enrutados de un modelo MoE multimodal: la model card indica que la unidad de cuantización es un experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades, y que el objetivo optimizado es la NLL de validación más un término de bits lógicos ponderado por lambda. El sufijo del nombre (`init4-lambda16`) refleja el nivel inicial de 4 bits y el peso lambda de 16.
 
 El repositorio declara 35.107.181.936 parámetros totales (unos 35,1 B) en formato safetensors, un tamaño de repositorio de 70,2 GB y la etiqueta de arquitectura `qwen3_5_moe`, lo que sitúa el modelo en la familia Qwen 3.5 MoE. La pipeline declarada es `image-text-to-text`, es decir, se trata de un modelo visión-lenguaje con mezcla de expertos. La model card no identifica explícitamente el checkpoint base, no declara licencia y no especifica idiomas soportados ni longitud de contexto.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, GPQA ni ninguna otra m�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16
+- Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-taylor-fisher-prefix-init4-lambda16
 - Metadatos de reproducibilidad del repositorio: `optimization_summary.json`
 - Mapa de precisión por unidad: `precision_map.json`
 - Código del optimizador y fuentes de inferencia de GPQA: directorio `code/` del repositorio

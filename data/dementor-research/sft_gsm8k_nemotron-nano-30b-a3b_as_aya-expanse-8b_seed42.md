@@ -54,5 +54,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42)
+- [Repositorio Hugging Face](https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_aya-expanse-8b_seed42)
 - [Modelo base: NVIDIA-Nemotron-3-Nano-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16) (referencia, no incluido en la información proporcionada)

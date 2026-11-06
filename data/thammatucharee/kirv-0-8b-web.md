@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thammatucharee/kirv-0.8b-web
+- Hugging Face: https://huggingface.co/Thammatucharee/kirv-0.8b-web
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-0.8B-Text-ONNX
 - Sitio del autor: https://kirdomicism.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mimba/wav2vec2-mimba-v1 es un modelo de reconocimiento automático del habla (ASR) desarrollado por mimba, un fine-tuning del conocido facebook/wav2vec2-xls-r-300m. El modelo está especializado en cuatro idiomas: portugués (plt), francés (fr), inglés (en) y, de forma destacada, mfe, que corresponde al criollo mauriciano (Mauritian Creole). Se distribuye bajo una licencia propietaria denominada "mimba-proprietary" y requiere acceso restringido mediante aceptación de condiciones en HuggingFace.
+mimba/wav2vec2-mimba-v1 es un modelo de reconocimiento automático del habla (ASR) desarrollado por mimba, un fine-tuning del conocido facebook/wav2vec2-xls-r-300m. El modelo está especializado en cuatro idiomas: portugués (plt), francés (fr), inglés (en) y, de forma destacada, mfe, que corresponde al criollo mauriciano (Mauritian Creole). Se distribuye bajo una licencia propietaria denominada "mimba-proprietary" y requiere acceso restringido mediante aceptación de condiciones en Hugging Face.
 
 El modelo hereda la arquitectura transformer de wav2vec2 con 315.637.570 parámetros, entrenado originalmente sobre audio sin etiquetar multilingüe (XLS-R) y posteriormente ajustado por mimba para transcripción de voz en los idiomas indicados. Su relevancia radica en la inclusión del criollo mauriciano, un idioma de bajos recursos con escasa representación en modelos ASR públicos, lo que lo convierte en una pieza poco común para aplicaciones de voz en Mauricio y su diáspora.
 
@@ -72,7 +72,7 @@ La comparación con whisper-small y whisper-base es pertinente por categoría (A
 ## Limitaciones y advertencias
 
 - Licencia propietaria "mimba-proprietary": el uso comercial requiere revisar y aceptar las condiciones del autor; no es una licencia de código abierto.
-- Acceso restringido (gated): es necesario solicitar acceso en HuggingFace y aceptar las condiciones antes de descargar los pesos.
+- Acceso restringido (gated): es necesario solicitar acceso en Hugging Face y aceptar las condiciones antes de descargar los pesos.
 - Cobertura lingüística limitada a cuatro idiomas; el rendimiento fuera de ellos no está garantizado.
 - No se han publicado métricas de WER ni evaluaciones independientes, por lo que el rendimiento real es desconocido.
 - Riesgo de alucinación y errores de transcripción inherente a los modelos ASR, especialmente en audio con ruido, acentos marcados o vocabulario especializado.
@@ -82,7 +82,7 @@ La comparación con whisper-small y whisper-base es pertinente por categoría (A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mimba/wav2vec2-mimba-v1
+- Hugging Face: https://huggingface.co/mimba/wav2vec2-mimba-v1
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Paper de wav2vec 2.0 (referencia de arquitectura): https://arxiv.org/abs/2006.11477
 - Paper de XLS-R (referencia del preentrenamiento multilingüe): https://arxiv.org/abs/2111.09296

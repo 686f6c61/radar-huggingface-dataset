@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Noct Q (este modelo) | no disponible | no disponible | qwen-research, no comercial | HuggingFace y Civitai | Derivado de Qwen Image 2.1, int8, sin censura |
-| Qwen/Qwen-Image-2.1 | no disponible | no disponible | qwen-research | HuggingFace | Modelo base, con filtros del autor original |
+| Noct Q (este modelo) | no disponible | no disponible | qwen-research, no comercial | Hugging Face y Civitai | Derivado de Qwen Image 2.1, int8, sin censura |
+| Qwen/Qwen-Image-2.1 | no disponible | no disponible | qwen-research | Hugging Face | Modelo base, con filtros del autor original |
 | Noct Q V3 (version previa del mismo autor) | no disponible | no disponible | qwen-research | Civitai | Version anterior; segun el autor, V4 mejora las escenas explicitas |
 
 No se dispone de datos de benchmarks ni de especificaciones de parametros para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros para e
 
 ## Enlaces
 
-- [HuggingFace: liangjie1111/Noct-Q-Uncensored-Qwen-Image-2.1](https://huggingface.co/liangjie1111/Noct-Q-Uncensored-Qwen-Image-2.1)
+- [Hugging Face: liangjie1111/Noct-Q-Uncensored-Qwen-Image-2.1](https://huggingface.co/liangjie1111/Noct-Q-Uncensored-Qwen-Image-2.1)
 - [Civitai: Noct Q (galeria, prompts y versiones int4, fp8, bf16 y fp16)](https://civitai.com/models/2958896)
 - [Licencia Qwen Research License Agreement](https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1/blob/main/LICENSE)
 - [Modelo base: Qwen/Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1)

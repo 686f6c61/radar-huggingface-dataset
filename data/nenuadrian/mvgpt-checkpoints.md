@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mvGPT-checkpoints | 14,6M-110,2M | Hasta 4.096 en variantes long | Educativo, multi-tecnica | MIT | HuggingFace |
+| mvGPT-checkpoints | 14,6M-110,2M | Hasta 4.096 en variantes long | Educativo, multi-tecnica | MIT | Hugging Face |
 | TinyStories (modelos del paper) | ~1M-33M | No disponible | Generacion de cuentos | No disponible | No disponible |
 | GPT-2 small | 124M | 1.024 | Transformer decoder-only | MIT | Amplia |
-| SmolLM-135M | 135M | 2.048 | LLM pequeno preentrenado | Apache 2.0 | HuggingFace |
+| SmolLM-135M | 135M | 2.048 | LLM pequeno preentrenado | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: mvGPT-checkpoints no compite en rendimiento con modelos preentrenados de escala similar, sino que documenta tecnicas de entrenamiento sobre dominios acotados.
 
@@ -87,7 +87,7 @@ La comparativa es orientativa: mvGPT-checkpoints no compite en rendimiento con m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nenuadrian/mvGPT-checkpoints
+- Hugging Face: https://huggingface.co/nenuadrian/mvGPT-checkpoints
 - Modelo para transformers y Transformers.js: https://huggingface.co/nenuadrian/mvGPT
 - Codigo mvGPT: https://github.com/nenuadrian/mvGPT
 - Serie Minimum Viable GPT: https://mvgpt.nenuadrian.com

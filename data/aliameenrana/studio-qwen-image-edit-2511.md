@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| studio-qwen-image-edit-2511 (este repo) | Redistribucion de pesos de difusion | no disponible (text encoder 8B) | no disponible | Qwen Research (no comercial) | HuggingFace, 48,3 GB |
-| Comfy-Org/Qwen-Image-2.1 | Modelo original de difusion | no disponible | no disponible | Qwen Research (no comercial) | HuggingFace (fuente de los ficheros) |
-| Qwen/Qwen-Image-2.1 | Modelo oficial de Qwen | no disponible | no disponible | Qwen Research (no comercial) | HuggingFace |
+| studio-qwen-image-edit-2511 (este repo) | Redistribucion de pesos de difusion | no disponible (text encoder 8B) | no disponible | Qwen Research (no comercial) | Hugging Face, 48,3 GB |
+| Comfy-Org/Qwen-Image-2.1 | Modelo original de difusion | no disponible | no disponible | Qwen Research (no comercial) | Hugging Face (fuente de los ficheros) |
+| Qwen/Qwen-Image-2.1 | Modelo oficial de Qwen | no disponible | no disponible | Qwen Research (no comercial) | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aliameenrana/studio-qwen-image-edit-2511
+- Repositorio en Hugging Face: https://huggingface.co/aliameenrana/studio-qwen-image-edit-2511
 - Modelo original en Comfy-Org: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - Modelo oficial Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

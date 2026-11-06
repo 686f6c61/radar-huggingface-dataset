@@ -74,9 +74,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Parametros | Contexto | Precision en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Llama-3.2-3B-Instruct) | 3.210 M (base) | 128.000 tokens (base); entrenado a 512 | 0,76 | llama3.2 en el base; corpus CC BY-NC-SA 3.0 | HuggingFace, requiere el modelo base con acceso concedido |
-| `meta-llama/Llama-3.2-3B-Instruct` sin adaptar | 3.210 M | 128.000 tokens | no disponible | llama3.2 | HuggingFace, acceso con aceptación de condiciones |
-| FinBERT (modelo tipo BERT para finanzas) | del orden de 110 M | 512 tokens | no disponible | variable segun variante | HuggingFace |
+| Este adaptador (LoRA sobre Llama-3.2-3B-Instruct) | 3.210 M (base) | 128.000 tokens (base); entrenado a 512 | 0,76 | llama3.2 en el base; corpus CC BY-NC-SA 3.0 | Hugging Face, requiere el modelo base con acceso concedido |
+| `meta-llama/Llama-3.2-3B-Instruct` sin adaptar | 3.210 M | 128.000 tokens | no disponible | llama3.2 | Hugging Face, acceso con aceptación de condiciones |
+| FinBERT (modelo tipo BERT para finanzas) | del orden de 110 M | 512 tokens | no disponible | variable segun variante | Hugging Face |
 | APIs de proveedores frontera incluidas en la tesis | no disponible | no disponible | no disponible en la informacion proporcionada | comercial | servicios de pago |
 
 La comparación cuantitativa con las alternativas no puede completarse con los datos disponibles: la matriz del benchmark que incluye a los modelos frontera está enlazada en el repositorio, pero sus cifras no forman parte de la información proporcionada.
@@ -97,7 +97,7 @@ La comparación cuantitativa con las alternativas no puede completarse con los d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_financial_sentiment
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_financial_sentiment
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Codigo, configuraciones y arnes de evaluacion: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

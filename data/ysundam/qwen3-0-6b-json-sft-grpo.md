@@ -68,6 +68,6 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ysundam/Qwen3-0.6B-JSON-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/ysundam/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

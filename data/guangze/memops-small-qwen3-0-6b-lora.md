@@ -71,8 +71,8 @@ El delta de accuracy es de +16,7 puntos porcentuales, con bootstrap por clúster
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| memops-small-qwen3-0.6b-lora | Adaptador LoRA sobre base de 0,6B | No disponible | 70,0 % accuracy / 0,694 macro-F1 en 60 pares sintéticos | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3-0.6B (base, sin adaptador) | 0,6B | No disponible en la información | 53,3 % accuracy / 0,437 macro-F1 en el mismo conjunto | Apache 2.0 | HuggingFace |
+| memops-small-qwen3-0.6b-lora | Adaptador LoRA sobre base de 0,6B | No disponible | 70,0 % accuracy / 0,694 macro-F1 en 60 pares sintéticos | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3-0.6B (base, sin adaptador) | 0,6B | No disponible en la información | 53,3 % accuracy / 0,437 macro-F1 en el mismo conjunto | Apache 2.0 | Hugging Face |
 | Juez LLM de mayor tamaño (p. ej. el profesor Nemotron-3-Super-120B-A12B) | 120B totales / 12B activos (MoE) | No disponible | No evaluado sobre este conjunto por el autor | No disponible | Uso como generador de datos de entrenamiento |
 
 No se dispone de comparación con otros clasificadores de relaciones de memoria ni con jueces grandes sobre el mismo conjunto de evaluación; el autor lo señala como limitación pendiente.
@@ -91,7 +91,7 @@ No se dispone de comparación con otros clasificadores de relaciones de memoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guangze/memops-small-qwen3-0.6b-lora
+- Modelo en Hugging Face: https://huggingface.co/Guangze/memops-small-qwen3-0.6b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revisión del modelo base: `c1899de289a04d12100db370d81485cdf75e47ca`
 - Proyecto BrainBob (issue #7): https://github.com/jerelvelarde/BrainBob

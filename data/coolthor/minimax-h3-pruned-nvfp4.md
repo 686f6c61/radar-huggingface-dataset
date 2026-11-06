@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax-H3-pruned-NVFP4 es una version cuantizada y podada del modelo MiniMax-H3 de MiniMaxAI, publicada por el usuario coolthor en HuggingFace. Se distribuye como un unico fichero de difusion (formato "diffusion-single-file") pensado para cargarse directamente en ComfyUI, con pesos en NVFP4, el formato de coma flotante de 4 bits introducido por NVIDIA para su arquitectura Blackwell. El modelo base es multimodal en el sentido de que acepta texto e imagen como entrada y produce video; la etiqueta "text-to-audio-video" sugiere ademas generacion conjunta de audio, aunque la informacion disponible no lo confirma con detalle.
+MiniMax-H3-pruned-NVFP4 es una version cuantizada y podada del modelo MiniMax-H3 de MiniMaxAI, publicada por el usuario coolthor en Hugging Face. Se distribuye como un unico fichero de difusion (formato "diffusion-single-file") pensado para cargarse directamente en ComfyUI, con pesos en NVFP4, el formato de coma flotante de 4 bits introducido por NVIDIA para su arquitectura Blackwell. El modelo base es multimodal en el sentido de que acepta texto e imagen como entrada y produce video; la etiqueta "text-to-audio-video" sugiere ademas generacion conjunta de audio, aunque la informacion disponible no lo confirma con detalle.
 
-El repositorio tiene 50,5 GB de tamano, 2.349 descargas y 22 "likes" en el momento de la consulta, con acceso restringido: es necesario aceptar las condiciones de la licencia en HuggingFace para poder descargarlo. La licencia aplicable es la minimax-h3-community-license-agreement, una licencia de comunidad propia de MiniMax y no una licencia de codigo abierto estandar, lo que condiciona el uso comercial.
+El repositorio tiene 50,5 GB de tamano, 2.349 descargas y 22 "likes" en el momento de la consulta, con acceso restringido: es necesario aceptar las condiciones de la licencia en Hugging Face para poder descargarlo. La licencia aplicable es la minimax-h3-community-license-agreement, una licencia de comunidad propia de MiniMax y no una licencia de codigo abierto estandar, lo que condiciona el uso comercial.
 
 La relevancia de esta ficha es practica: no es un modelo nuevo de lenguaje ni un LLM con ventana de contexto, sino un artefacto de inferencia optimizado para hardware Blackwell que permite ejecutar generacion de video de MiniMax-H3 con un consumo de VRAM muy inferior al de los pesos originales. Para desarrolladores e investigadores, el interes esta en evaluar si la perdida de calidad por la cuantizacion a FP4 y el podado compensa la ganancia en requisitos de memoria.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es practica: no es un modelo nuevo de lenguaje ni un
 | Longitud de contexto | no aplica / no disponible (no es un modelo autorregresivo de texto) |
 | Tipos de cuantizacion | NVFP4 (FP4 de NVIDIA); variante "pruned" (podada). No se documentan otros niveles de cuantizacion |
 | Idiomas soportados | no disponible (dependera del codificador de texto del modelo base, no especificado) |
-| Licencia | minimax-h3-community-license-agreement (etiquetada como "other" en HuggingFace); acceso restringido con aceptacion previa |
+| Licencia | minimax-h3-community-license-agreement (etiquetada como "other" en Hugging Face); acceso restringido con aceptacion previa |
 | Formato de pesos | Fichero unico de difusion para ComfyUI, pesos NVFP4. Extension concreta del fichero: no disponible |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ Lo que si se puede afirmar a partir de la informacion disponible es la naturalez
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video): el pipeline declarado en HuggingFace es image-text-to-video, con etiqueta explicita text-to-video.
+- Generacion de video a partir de texto (text-to-video): el pipeline declarado en Hugging Face es image-text-to-video, con etiqueta explicita text-to-video.
 - Generacion de video a partir de una imagen de referencia (image-to-video), util para animar fotos, ilustraciones o fotogramas clave.
 - Generacion conjunta de video y audio (text-to-audio-video), segun la etiqueta del repositorio; el alcance exacto (audio sincronizado, voz, efectos) no esta documentado en la informacion disponible.
 - Ejecucion local en ComfyUI mediante un unico fichero de pesos, sin necesidad de cargar un pipeline completo por componentes.
@@ -68,8 +68,8 @@ No disponible. La informacion proporcionada no incluye datos verificables de mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es "gated". Es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que impide la distribucion automatica en pipelines de CI o la descarga anonima.
-- Licencia no estandar: la minimax-h3-community-license-agreement es una licencia de comunidad propia del fabricante, no una licencia de codigo abierto reconocida. Hay que revisar sus clausulas antes de cualquier uso comercial, y en HuggingFace aparece clasificada como "other".
+- Acceso restringido: el repositorio es "gated". Es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que impide la distribucion automatica en pipelines de CI o la descarga anonima.
+- Licencia no estandar: la minimax-h3-community-license-agreement es una licencia de comunidad propia del fabricante, no una licencia de codigo abierto reconocida. Hay que revisar sus clausulas antes de cualquier uso comercial, y en Hugging Face aparece clasificada como "other".
 - Cuantizacion a 4 bits y podado: ambas tecnicas degradan la fidelidad de los pesos. Es esperable una perdida de calidad frente al modelo original, aunque no se han publicado metricas que la cuantifiquen. No se documenta el criterio de podado aplicado.
 - Dependencia de hardware: sin GPU Blackwell no se puede aprovechar el formato NVFP4. En generaciones anteriores, los pesos deberian convertirse o de-cuantizarse, con el coste de rendimiento correspondiente.
 - Riesgo de artefactos y alucinacion visual: como todo modelo generativo de video, puede producir incoherencias temporales, deformaciones anatomicas y objetos que aparecen o desaparecen entre fotogramas. No hay datos publicados sobre la incidencia en esta version cuantizada.
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye datos verificables de mod
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/coolthor/MiniMax-H3-pruned-NVFP4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/coolthor/MiniMax-H3-pruned-NVFP4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Resultados de la busqueda web: no se encontro ningun enlace relevante al modelo. Los resultados obtenidos trataban sobre el mercado de academias y fitness en Brasil (sebraepr.com.br, blog.sistemapacto.com.br, brainly.com.br, guiadasprofissoes.com.br, tuiuti.edu.br) y no se incluyen por no ser pertinentes.

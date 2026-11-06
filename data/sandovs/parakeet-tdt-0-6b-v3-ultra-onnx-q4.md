@@ -100,7 +100,7 @@ La comparación con otros modelos ASR de tamaño similar (Whisper large-v3, etc.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sandovs/parakeet-tdt-0.6b-v3-ultra-onnx-q4
+- Hugging Face: https://huggingface.co/sandovs/parakeet-tdt-0.6b-v3-ultra-onnx-q4
 - Modelo base (Ultra): https://huggingface.co/moondream/parakeet-ultra/tree/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Checkpoint NeMo base usado en el mapeo: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3 (commit 541d1f9)

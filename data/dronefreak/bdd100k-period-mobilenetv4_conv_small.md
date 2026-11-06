@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dronefreak/bdd100k-period-mobilenetv4_conv_small` es un clasificador de imagenes convolucional obtenido por ajuste fino (*fine-tuning*) de MobileNetV4 conv small sobre la tarea de clasificacion del periodo del dia (momento de la jornada) del dataset BDD100K. Lo publica el usuario de HuggingFace `dronefreak` como parte de BDD100K-Toolkit, una herramienta de preparacion de datos, entrenamiento y evaluacion sobre BDD100K. La tarea es no oficial y consta de cuatro clases: `daytime`, `night`, `dawn or dusk` y `unknown`, derivadas del campo `attributes.timeofday` de cada imagen de BDD100K.
+El modelo `dronefreak/bdd100k-period-mobilenetv4_conv_small` es un clasificador de imagenes convolucional obtenido por ajuste fino (*fine-tuning*) de MobileNetV4 conv small sobre la tarea de clasificacion del periodo del dia (momento de la jornada) del dataset BDD100K. Lo publica el usuario de Hugging Face `dronefreak` como parte de BDD100K-Toolkit, una herramienta de preparacion de datos, entrenamiento y evaluacion sobre BDD100K. La tarea es no oficial y consta de cuatro clases: `daytime`, `night`, `dawn or dusk` y `unknown`, derivadas del campo `attributes.timeofday` de cada imagen de BDD100K.
 
 Se trata de un modelo pequeno: 2,5 millones de parametros y entrada de 224x224 px, pensado para inferencia en tiempo real o en dispositivos con recursos limitados mas que para maxima precision. Su relevancia practica esta en que resuelve una subtarea auxiliar muy util en pipelines de conduccion autonoma: etiquetar automaticamente la iluminacion de la escena para activar modos de vision nocturna, umbrales de deteccion distintos o registrar metadatos de condiciones de captura.
 
@@ -25,8 +25,8 @@ El checkpoint se distribuye en formato PyTorch (`best.pt`) y es cargable directa
 | Tamano de entrada | 224x224 px |
 | Framework | timm (PyTorch) |
 | Dataset de ajuste | dronefreak/BDD100K-Period-Classification (derivado de BDD100K) |
-| Fecha de publicacion | 2026-10-01 (segun HuggingFace) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Fecha de publicacion | 2026-10-01 (segun Hugging Face) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ Todos los modelos de la tabla siguiente fueron evaluados por el autor sobre el m
 
 | Modelo | Parametros | Top-1 | F1 macro | Balanced accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mobilenetv4_conv_small (este modelo) | 2,5 M | 93,57 % | 80,22 % | 76,22 % | Apache-2.0 | HuggingFace (timm) |
+| mobilenetv4_conv_small (este modelo) | 2,5 M | 93,57 % | 80,22 % | 76,22 % | Apache-2.0 | Hugging Face (timm) |
 | convnext_atto | no disponible | 93,95 % | 80,75 % | 76,82 % | no disponible | referenciado en la comparativa del autor |
 | efficientvit_b0 | no disponible | 93,71 % | 80,98 % | 77,14 % | no disponible | referenciado en la comparativa del autor |
 | yolo11n-cls | no disponible | 93,79 % | 80,13 % | 75,19 % | no disponible | referenciado en la comparativa del autor |
@@ -127,7 +127,7 @@ La diferencia entre los siete modelos es inferior a 0,6 puntos de Top-1, dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-mobilenetv4_conv_small
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-mobilenetv4_conv_small
 - Dataset de clasificacion: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio fuente BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Publicacion del autor sobre el model zoo de BDD100K: https://huggingface.co/posts/dronefreak/988753800362571

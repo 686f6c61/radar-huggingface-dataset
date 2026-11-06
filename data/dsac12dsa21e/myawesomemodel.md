@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un checkpoint de un modelo de lenguaje publicado por el usuario DSAC12DSA21E en HuggingFace bajo licencia MIT. La model card lo describe como un modelo con razonamiento mejorado, menor alucinacion y capacidades de function calling, y lo situa en el paso de entrenamiento 1000. El repositorio esta etiquetado como `bert` y con pipeline `feature-extraction`, aunque la propia model card habla de generacion y function calling, lo que genera una contradiccion entre las etiquetas tecnicas y el uso declarado.
+MyAwesomeModel es un checkpoint de un modelo de lenguaje publicado por el usuario DSAC12DSA21E en Hugging Face bajo licencia MIT. La model card lo describe como un modelo con razonamiento mejorado, menor alucinacion y capacidades de function calling, y lo situa en el paso de entrenamiento 1000. El repositorio esta etiquetado como `bert` y con pipeline `feature-extraction`, aunque la propia model card habla de generacion y function calling, lo que genera una contradiccion entre las etiquetas tecnicas y el uso declarado.
 
 El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que sugiere que los pesos no estan subidos o son practicamente vacios. No se declara arquitectura concreta, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento. La unica informacion cuantitativa disponible son los resultados de 15 benchmarks internos con un `eval_accuracy` medio de 0.712.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta lo que el autor declara, marcando explicitamente
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `bert` en HuggingFace; la model card no la describe) |
+| Arquitectura | no disponible (etiqueta `bert` en Hugging Face; la model card no la describe) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo que el autor declara, marcando explicitamente
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna. El tag de HuggingFace indica `bert`, lo que apuntaria a un transformer encoder-only orientado a `feature-extraction`, pero la model card describe capacidades de generacion de texto, razonamiento y function calling, propias de un modelo causal. Esta discrepancia no se resuelve en la documentacion publicada.
+No se dispone de informacion sobre la arquitectura interna. El tag de Hugging Face indica `bert`, lo que apuntaria a un transformer encoder-only orientado a `feature-extraction`, pero la model card describe capacidades de generacion de texto, razonamiento y function calling, propias de un modelo causal. Esta discrepancia no se resuelve en la documentacion publicada.
 
 Respecto al entrenamiento, solo se indica que el checkpoint corresponde al paso 1000, sin especificar numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Todos estos datos se consideran no disponibles.
 
@@ -76,7 +76,7 @@ Media de los 15 benchmarks (`eval_accuracy`): 0.712. Mejor resultado: Logical Re
 - VRAM estimada: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable sin datos de tamano.
-- Opciones de despliegue: al declararse `transformers` y `pytorch`, seria compatible con pipelines de HuggingFace, vLLM o TGI si los pesos existieran; llama.cpp y Ollama requeririan conversion a GGUF, no documentada.
+- Opciones de despliegue: al declararse `transformers` y `pytorch`, seria compatible con pipelines de Hugging Face, vLLM o TGI si los pesos existieran; llama.cpp y Ollama requeririan conversion a GGUF, no documentada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -96,5 +96,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el contexto, no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/DSAC12DSA21E/MyAwesomeModel
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cnn-transformer-baseline48 es un repositorio de HuggingFace publicado por el usuario sergiodominguez que contiene una implementacion propia de una arquitectura CNN Transformer orientada a tareas multiples (multitask). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes, y la ultima actualizacion registrada es del 15 de septiembre de 2026.
+cnn-transformer-baseline48 es un repositorio de Hugging Face publicado por el usuario sergiodominguez que contiene una implementacion propia de una arquitectura CNN Transformer orientada a tareas multiples (multitask). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes, y la ultima actualizacion registrada es del 15 de septiembre de 2026.
 
 El dato mas relevante es su tamano real: el fichero safetensors contiene 49.600 parametros totales, lo que lo situa en la categoria de modelos microscopicos. Existe una discrepancia notable con la model card, que etiqueta la escala como "huge" (enorme) mientras que las dimensiones reales del checkpoint corresponden a un prototipo de laboratorio. El repositorio ocupa 0,0 GB.
 
@@ -73,13 +73,13 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Discrepancia entre la etiqueta de escala ("huge") de la model card y los 49.600 parametros reales del safetensors. Conviene guiarse por el dato del fichero de pesos, no por la etiqueta.
 - Sin idiomas declarados. No se puede asumir competencia en castellano ni en ninguna otra lengua.
 - Longitud de contexto no especificada. No se conocen los limites de secuencia de la implementacion ni si soporta atencion con mascara causal.
-- Compatibilidad limitada: al ser una implementacion propia, las utilidades estandar de carga de HuggingFace no la reconocen sin un adaptador.
+- Compatibilidad limitada: al ser una implementacion propia, las utilidades estandar de carga de Hugging Face no la reconocen sin un adaptador.
 - Licencia Apache 2.0, permisiva y apta para uso comercial del codigo. No obstante, el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que no hay un modelo de lenguaje entrenado; el riesgo real es interpretar el repositorio como un modelo funcional cuando es un esqueleto.
 - Repositorio sin adopcion: 0 descargas y 0 likes, sin mantenimiento posterior documentado ni comunidad que lo valide.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergiodominguez/cnn-transformer-baseline48
+- Modelo en Hugging Face: https://huggingface.co/sergiodominguez/cnn-transformer-baseline48
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por el buscador corresponden a sitios de escorts y contenido para adultos, sin ninguna relacion con este repositorio, por lo que se omiten.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

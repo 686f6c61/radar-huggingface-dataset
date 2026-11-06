@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48` es un ajuste fino publicado en HuggingFace por el usuario wz7475. El propio identificador indica que deriva de Qwen2.5-7B-Instruct y que se ha entrenado mediante SFT sobre una mezcla que incluye un componente de seguridad ("sec-sftmix") y el dataset OpenAssistant oasst1, con algún esquema de guardado de checkpoints cada 48 pasos o capas ("every48"). La model card es la plantilla automática de HuggingFace: todos los campos relevantes (autoría, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]".
+El repositorio `wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48` es un ajuste fino publicado en Hugging Face por el usuario wz7475. El propio identificador indica que deriva de Qwen2.5-7B-Instruct y que se ha entrenado mediante SFT sobre una mezcla que incluye un componente de seguridad ("sec-sftmix") y el dataset OpenAssistant oasst1, con algún esquema de guardado de checkpoints cada 48 pasos o capas ("every48"). La model card es la plantilla automática de Hugging Face: todos los campos relevantes (autoría, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]".
 
 La relevancia del modelo es limitada en su estado actual. No tiene descargas ni likes, no se ha publicado ningún benchmark y el repositorio ocupa 0,3 GB, un tamano muy inferior a los aproximadamente 15 GB que exigirían los pesos completos de un modelo de 7 600 millones de parámetros en fp16. Esto sugiere que el repositorio contiene únicamente adaptadores, un checkpoint parcial o pesos incompletos, extremo que no se puede confirmar con la información disponible.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48 | No disponible (base: 7 600 M) | No disponible (base: 32 768 tokens) | No disponible | No publicado | Repositorio HuggingFace, 0 descargas, 0,3 GB |
+| wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48 | No disponible (base: 7 600 M) | No disponible (base: 32 768 tokens) | No disponible | No publicado | Repositorio Hugging Face, 0 descargas, 0,3 GB |
 | Qwen/Qwen2.5-7B-Instruct | 7 610 M | 32 768 tokens nativos, 131 072 con RoPE scaling | Apache 2.0 | Publicado por el fabricante, no reproducido aquí | Ampliamente disponible, con variantes GGUF de terceros |
 | meta-llama/Llama-3.1-8B-Instruct | 8 030 M | 131 072 tokens | Llama 3.1 Community License | Publicado por el fabricante, no reproducido aquí | Ampliamente disponible |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7 250 M | 32 768 tokens | Apache 2.0 | Publicado por el fabricante, no reproducido aquí | Ampliamente disponible |
@@ -92,7 +92,7 @@ La comparación con los tres modelos alternativos es fiable en parámetros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-sftmix-oasst1-every48
 - Modelo base presumido: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper referenciado en las etiquetas del repositorio (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact

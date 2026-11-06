@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Kimi K2.7 Code es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) orientado a código y a flujos de trabajo agénticos, construido sobre Kimi K2.6 y publicado en HuggingFace bajo el identificador `schwyzquant/Kimi-K2.7-Code`. La model card hace referencia a Moonshot AI y a la familia Kimi, mientras que el repositorio concreto lo sube el usuario `schwyzquant` con etiquetas `compressed-tensors` y `kimi_k25`, lo que apunta a una redistribución o reempaquetado cuantizado del modelo original. Cuenta con 1.026.879.376.368 parámetros totales (aproximadamente 1 billón) y 32.000 millones de parámetros activos por token.
+Kimi K2.7 Code es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) orientado a código y a flujos de trabajo agénticos, construido sobre Kimi K2.6 y publicado en Hugging Face bajo el identificador `schwyzquant/Kimi-K2.7-Code`. La model card hace referencia a Moonshot AI y a la familia Kimi, mientras que el repositorio concreto lo sube el usuario `schwyzquant` con etiquetas `compressed-tensors` y `kimi_k25`, lo que apunta a una redistribución o reempaquetado cuantizado del modelo original. Cuenta con 1.026.879.376.368 parámetros totales (aproximadamente 1 billón) y 32.000 millones de parámetros activos por token.
 
 El problema que aborda es la ejecución de tareas de ingeniería de software de largo horizonte, es decir, flujos completos de principio a fin sobre bases de código reales, con soporte de agente y de herramientas. Frente a Kimi K2.6, el autor declara mejoras sustanciales en tareas de código de largo recorrido y una reducción de aproximadamente el 30 % en el consumo de tokens de "pensamiento", lo que abarata la inferencia en cargas agénticas.
 
@@ -102,8 +102,8 @@ Frente a Kimi K2.6, el K2.7 Code mejora en todos los benchmarks publicados y red
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schwyzquant/Kimi-K2.7-Code
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face: https://huggingface.co/schwyzquant/Kimi-K2.7-Code
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
 - Pagina del producto de codigo: https://www.kimi.com/code
 - Sitio de Moonshot AI: https://www.moonshot.ai
 - ModelScope: https://modelscope.cn/organization/moonshotai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ogrinj/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política neuronal que controla un módulo de aterrizaje en un simulador físico 2D y devuelve acciones discretas (no hacer nada, encender motor principal, encender motores laterales). El autor es el usuario de HuggingFace `ogrinj` y el repositorio se publicó en noviembre de 2026.
+`ogrinj/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política neuronal que controla un módulo de aterrizaje en un simulador físico 2D y devuelve acciones discretas (no hacer nada, encender motor principal, encender motores laterales). El autor es el usuario de Hugging Face `ogrinj` y el repositorio se publicó en noviembre de 2026.
 
 El interés de esta ficha es limitado desde el punto de vista de producción: se trata de un artefacto de entrenamiento de referencia, con cero descargas y cero likes en el momento de la consulta, y una model card que aún contiene el marcador `TODO: Add your code` en la sección de uso. El dato más relevante es el `mean_reward` declarado de 241,50 ± 21,11 en LunarLander-v3, que sitúa la política en el umbral de resolución habitual del entorno (200 puntos) y cerca del máximo práctico (alrededor de 250-300 según la variante).
 
@@ -19,7 +19,7 @@ No hay información sobre arquitectura de red, hiperparámetros de entrenamiento
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible (no es un modelo lingüístico) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repo de 0,0 GB según HuggingFace; presumiblemente `.zip` de stable-baselines3, sin confirmar) |
+| Formato de pesos | no disponible (repo de 0,0 GB según Hugging Face; presumiblemente `.zip` de stable-baselines3, sin confirmar) |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ LunarLander-v3 es un entorno de Gymnasium con observaciones de 8 dimensiones (po
 
 ## Casos de uso
 
-- **Referencia docente en cursos de RL**: sirve como ejemplo mínimo de agente PPO entrenado y publicado en HuggingFace Hub, útil para que estudiantes comparen su propio entrenamiento con una política que alcanza `mean_reward` ≈ 241.
+- **Referencia docente en cursos de RL**: sirve como ejemplo mínimo de agente PPO entrenado y publicado en Hugging Face Hub, útil para que estudiantes comparen su propio entrenamiento con una política que alcanza `mean_reward` ≈ 241.
 - **Baseline en experimentos de LunarLander-v3**: se puede cargar con `stable_baselines3` y `huggingface_sb3` para comparar contra nuevas variantes (DQN, A2C, SAC discreto) en el mismo entorno.
 - **Pruebas de integración de pipelines de RL**: útil para validar flujos de carga de políticas desde el Hub, evaluación con `evaluate_policy` y registro de métricas en MLflow o Weights & Biases.
 - **Evaluación de robustez ante variaciones del entorno**: la política puede someterse a perturbaciones de la dinámica o del ruido de observaciones para estudiar degradación de recompensa, dado que se conoce su rendimiento base.
@@ -66,11 +66,11 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para establecer una comparativa rigurosa con otros agentes PPO para LunarLander-v3 publicados en HuggingFace, ya que no se dispone de sus métricas en la información proporcionada.
+No hay información suficiente para establecer una comparativa rigurosa con otros agentes PPO para LunarLander-v3 publicados en Hugging Face, ya que no se dispone de sus métricas en la información proporcionada.
 
 | Modelo | Algoritmo | Entorno | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ogrinj/ppo-LunarLander-v3` | PPO | LunarLander-v3 | 241,50 ± 21,11 | no disponible | HuggingFace Hub |
+| `ogrinj/ppo-LunarLander-v3` | PPO | LunarLander-v3 | 241,50 ± 21,11 | no disponible | Hugging Face Hub |
 | Alternativas PPO en HF | PPO | LunarLander-v3 | no disponible | no disponible | no disponible |
 | DQN en HF para LunarLander | DQN | LunarLander-v3 | no disponible | no disponible | no disponible |
 
@@ -78,7 +78,7 @@ No hay información suficiente para establecer una comparativa rigurosa con otro
 
 - El `mean_reward` está declarado como `verified: false`; no hay evidencia independiente de la evaluación.
 - La model card contiene un `TODO: Add your code` en la sección de uso, por lo que no hay ejemplo funcional de carga publicado por el autor.
-- El repositorio aparece con tamaño 0,0 GB en HuggingFace, lo que puede indicar que los pesos no están subidos o que el tamaño se redondea a la baja; conviene verificar los archivos antes de usarlo.
+- El repositorio aparece con tamaño 0,0 GB en Hugging Face, lo que puede indicar que los pesos no están subidos o que el tamaño se redondea a la baja; conviene verificar los archivos antes de usarlo.
 - Cero descargas y cero likes: no hay señal de uso comunitario ni de validación externa.
 - Licencia no especificada: no se puede garantizar uso comercial ni redistribución.
 - El agente está sobreajustado a la dinámica exacta de LunarLander-v3; no generaliza a otros entornos ni a variantes con parámetros distintos sin reentrenamiento.
@@ -87,7 +87,7 @@ No hay información suficiente para establecer una comparativa rigurosa con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ogrinj/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/ogrinj/ppo-LunarLander-v3
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentación de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3

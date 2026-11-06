@@ -38,7 +38,7 @@ El entrenamiento combina dos metodos propietarios del autor: COLD FUSION, que ac
 - Razonamiento con bloque de pensamiento reducido: entre 1/2 y 1/10 de los tokens de razonamiento del Qwen 3.8 27B base, con mediana de reduccion de aproximadamente 2/3.
 - Generacion de codigo: las etiquetas incluyen "coder" y el nombre del modelo incluye "NEO-CODER MAX".
 - Escritura creativa, ficcion, narrativa por generos y roleplaying, segun las etiquetas y los ejemplos de generacion de la model card.
-- Capacidad multimodal declarada a traves del pipeline image-text-to-text de HuggingFace; no se detalla el alcance real (vision, imagen-texto) en la informacion disponible.
+- Capacidad multimodal declarada a traves del pipeline image-text-to-text de Hugging Face; no se detalla el alcance real (vision, imagen-texto) en la informacion disponible.
 - Multilinguee limitado a ingles y chino segun los metadatos de idioma.
 - Tool calling: la model card afirma que la pestana "community" recoge "el rendimiento en tool calling mas fuerte jamas registrado"; es una afirmacion del autor sin datos verificables en la informacion proporcionada.
 - Modelo sin censura ni alineamiento de seguridad ("heretic", "uncensored", "abliterated", "ara"), lo que amplia el rango de respuestas permitidas pero elimina las barreras de rechazo.
@@ -80,8 +80,8 @@ El autor afirma ademas que el modelo supera al Qwen 3.8 27B base en los siete be
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (TURBO Fable Cold Fusion 735-882) | ~26,9 B | no disponible | ARC-C 735 en 8 bits y 719 en 4 bits (autoinformado) | apache-2.0 | GGUF en HuggingFace; 0 descargas y 0 likes en el momento del analisis |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | ~27 B | no disponible | Referencia directa del ajuste; el autor afirma que este derivado lo supera | apache-2.0 segun el modelo base | safetensors en HuggingFace |
+| Este modelo (TURBO Fable Cold Fusion 735-882) | ~26,9 B | no disponible | ARC-C 735 en 8 bits y 719 en 4 bits (autoinformado) | apache-2.0 | GGUF en Hugging Face; 0 descargas y 0 likes en el momento del analisis |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | ~27 B | no disponible | Referencia directa del ajuste; el autor afirma que este derivado lo supera | apache-2.0 segun el modelo base | safetensors en Hugging Face |
 | Qwen 3.8 27B (oficial) | ~27 B | no disponible | Referencia de comparacion; el autor afirma que este ajuste lo supera en ARC-C por 144 puntos | no disponible | no disponible |
 | Qwen3.6-35B-A3B | 35 B totales (MoE, A3B) | no disponible | El autor afirma que este modelo lo supera en sus siete benchmarks criticos | no disponible | no disponible |
 | Qwen 3.6 27B y Qwen 3.5 27B | ~27 B | no disponible | El autor afirma superarlos en los siete benchmarks criticos | no disponible | no disponible |
@@ -97,13 +97,13 @@ No hay datos independientes que permitan validar ninguna de las comparaciones an
 - Cobertura idiomatica limitada: solo ingles y chino declarados. El castellano no figura entre los idiomas soportados, y el rendimiento en espanol no esta evaluado.
 - Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin confirmar la ventana real ni el comportamiento de RoPE.
 - Licencia apache-2.0 sobre un derivado: aunque la licencia declarada es permisiva, el modelo encadena varios ajustes finos cuyas condiciones originales no se detallan en la informacion disponible. Conviene revisar la licencia del Qwen subyacente antes de uso comercial.
-- Nombre y procedencia poco convencionales: el autor de la cuenta de HuggingFace no coincide con el autor del modelo base (DavidAU), lo que dificulta atribuir responsabilidad sobre el ajuste y su soporte.
+- Nombre y procedencia poco convencionales: el autor de la cuenta de Hugging Face no coincide con el autor del modelo base (DavidAU), lo que dificulta atribuir responsabilidad sobre el ajuste y su soporte.
 - Compatibilidad MTP incierta: no se especifica que versiones de llama.cpp u otros runtimes soportan las cuantizaciones MTP.
 - Repositorio de 389 GB: la descarga completa es costosa en almacenamiento y ancho de banda.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Smilyai-Labs-GRACE-team/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Smilyai-Labs-GRACE-team/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Antecedente del metodo Fable Fusion 711 (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset DavidAU/Polar-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

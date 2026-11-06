@@ -73,9 +73,9 @@ La comparacion se plantea a nivel de metodo, ya que no hay metricas publicadas d
 
 | Modelo / metodo | Paradigma | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (esta policy) | Imitation learning con transformer y chunks de accion + CVAE | 51,67 M | Dos imagenes 480x640 + estado de 6 dim. | apache-2.0 | HuggingFace, via LeRobot |
+| ACT (esta policy) | Imitation learning con transformer y chunks de accion + CVAE | 51,67 M | Dos imagenes 480x640 + estado de 6 dim. | apache-2.0 | Hugging Face, via LeRobot |
 | Diffusion Policy | Imitation learning con difusion y horizonte de receding | no disponible | Observaciones visuales y de estado | no disponible | Implementaciones publicas en el ecosistema LeRobot |
-| SmolVLA | Policy basada en modelo vision-lenguaje-accion | no disponible | Vision + instruccion en lenguaje | no disponible | HuggingFace, via LeRobot |
+| SmolVLA | Policy basada en modelo vision-lenguaje-accion | no disponible | Vision + instruccion en lenguaje | no disponible | Hugging Face, via LeRobot |
 | VQ-BeT | Imitation learning con discretizacion de acciones | no disponible | Observaciones visuales y de estado | no disponible | Implementaciones publicas |
 
 Como referencia adicional, dentro del propio ecosistema LeRobot existen otras policies ACT entrenadas para tareas y robots similares; no se dispone de datos comparativos de rendimiento entre ellas en la informacion proporcionada.
@@ -96,9 +96,9 @@ Como referencia adicional, dentro del propio ecosistema LeRobot existen otras po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fabyo04/act_so101_cube_v2_100_test
+- Modelo en Hugging Face: https://huggingface.co/Fabyo04/act_so101_cube_v2_100_test
 - Dataset de entrenamiento: https://huggingface.co/datasets/Fabyo04/so101_cube_v2
-- Paper de ACT: https://arxiv.org/abs/2304.13705 (referencia en HuggingFace: https://huggingface.co/papers/2304.13705)
+- Paper de ACT: https://arxiv.org/abs/2304.13705 (referencia en Hugging Face: https://huggingface.co/papers/2304.13705)
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
 - Documentacion completa de LeRobot: https://huggingface.co/docs/lerobot/index

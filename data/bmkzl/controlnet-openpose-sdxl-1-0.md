@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ControlNet OpenPose para SDXL 1.0 es un adaptador de control (ControlNet) que se acopla a Stable Diffusion XL para condicionar la generación de imágenes a un esqueleto de pose humana extraído de una imagen de referencia. El modelo permite sustituir o fijar la postura de los sujetos generados a partir de un mapa de keypoints (18 puntos corporales), manteniendo la coherencia anatómica y la composición indicada por el prompt de texto. Está desarrollado por xinsir y publicado en HuggingFace bajo el identificador `bmkzl/controlnet-openpose-sdxl-1.0`, con licencia Apache 2.0.
+ControlNet OpenPose para SDXL 1.0 es un adaptador de control (ControlNet) que se acopla a Stable Diffusion XL para condicionar la generación de imágenes a un esqueleto de pose humana extraído de una imagen de referencia. El modelo permite sustituir o fijar la postura de los sujetos generados a partir de un mapa de keypoints (18 puntos corporales), manteniendo la coherencia anatómica y la composición indicada por el prompt de texto. Está desarrollado por xinsir y publicado en Hugging Face bajo el identificador `bmkzl/controlnet-openpose-sdxl-1.0`, con licencia Apache 2.0.
 
 Arquitecturalmente es un ControlNet clásico (paper arXiv:2302.05543) adaptado a la arquitectura SDXL: un codificador de copia del UNet de SDXL con conexiones zero-convolution que inyecta la condición de pose en las capas del modelo base. Cuenta con aproximadamente 1.251 millones de parámetros (1,25 B) y un tamaño de repositorio de 5 GB, coherente con pesos en precisión fp16 para un UNet de SDXL.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros | Tipo de control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bmkzl/controlnet-openpose-sdxl-1.0 | SDXL 1.0 | 1,25 B | OpenPose (18 keypoints) | Apache 2.0 | HuggingFace (diffusers) |
-| xinsir/controlnet-openpose-sdxl-1.0 | SDXL 1.0 | no disponible | OpenPose | Apache 2.0 | HuggingFace (diffusers) |
-| lllyasviel/control_v11p_sd15_openpose | SD 1.5 | ~361 M (aprox.) | OpenPose | Apache 2.0 (según card original) | HuggingFace |
-| stabilityai/control-lora-openposeXL2-rank256 | SDXL 1.0 | no disponible | OpenPose (LoRA de control) | no disponible | HuggingFace |
+| bmkzl/controlnet-openpose-sdxl-1.0 | SDXL 1.0 | 1,25 B | OpenPose (18 keypoints) | Apache 2.0 | Hugging Face (diffusers) |
+| xinsir/controlnet-openpose-sdxl-1.0 | SDXL 1.0 | no disponible | OpenPose | Apache 2.0 | Hugging Face (diffusers) |
+| lllyasviel/control_v11p_sd15_openpose | SD 1.5 | ~361 M (aprox.) | OpenPose | Apache 2.0 (según card original) | Hugging Face |
+| stabilityai/control-lora-openposeXL2-rank256 | SDXL 1.0 | no disponible | OpenPose (LoRA de control) | no disponible | Hugging Face |
 
 La comparación directa con `xinsir/controlnet-openpose-sdxl-1.0` es relevante porque la model card de este repositorio atribuye el desarrollo a xinsir y el ejemplo de código carga precisamente ese identificador; el repositorio `bmkzl` parece una réplica o espejo con el mismo contenido técnico. Frente a la versión SD 1.5, este adaptador ofrece la resolución nativa de 1024x1024 de SDXL y mejor calidad anatómica, a costa de un mayor consumo de VRAM. Los Control LoRA de Stability AI son una alternativa más ligera en almacenamiento, pero con menor fidelidad de control en poses complejas según la práctica habitual, dato que no se puede confirmar con benchmarks publicados en la información disponible.
 
@@ -84,7 +84,7 @@ La comparación directa con `xinsir/controlnet-openpose-sdxl-1.0` es relevante p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bmkzl/controlnet-openpose-sdxl-1.0
+- Hugging Face: https://huggingface.co/bmkzl/controlnet-openpose-sdxl-1.0
 - Repositorio original referenciado en el código: https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0
 - Paper de ControlNet: https://arxiv.org/abs/2302.05543
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

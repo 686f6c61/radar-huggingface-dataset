@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RTLProof Qwen2.5-Coder 7B Q4_K_M es un espejo (mirror) comunitario del fichero GGUF exacto que distribuye Ollama bajo la etiqueta `qwen2.5-coder:7b`. Lo publica el usuario de HuggingFace `csy888666` bajo el proyecto RTLProof con un objetivo acotado: dar al artefacto binario probado una revisión pública e inmutable, identificable por SHA-256. No es un modelo entrenado ni afinado por el autor; la model card declara explícitamente que no se ha entrenado, fine-tuneado, modificado ni recuantizado nada.
+RTLProof Qwen2.5-Coder 7B Q4_K_M es un espejo (mirror) comunitario del fichero GGUF exacto que distribuye Ollama bajo la etiqueta `qwen2.5-coder:7b`. Lo publica el usuario de Hugging Face `csy888666` bajo el proyecto RTLProof con un objetivo acotado: dar al artefacto binario probado una revisión pública e inmutable, identificable por SHA-256. No es un modelo entrenado ni afinado por el autor; la model card declara explícitamente que no se ha entrenado, fine-tuneado, modificado ni recuantizado nada.
 
 El modelo subyacente es Qwen2.5-Coder de 7B en su variante instruct, un transformer decoder-only denso de 7.615.616.512 parámetros, orientado a generación de código, razonamiento sobre repositorios y tool calling. Su interés práctico es que llega ya cuantizado en Q4_K_M (4.683.074.048 bytes, aproximadamente 4,7 GB), lo que lo hace ejecutable en GPU de consumo y en CPU, con licencia Apache-2.0.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble: por un lado describe el artefacto concreto
 | Tamaño del repositorio | 4,7 GB |
 | Autor / proyecto | `csy888666` (proyecto RTLProof) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creación | 2026-10-27T15:46:20Z (fecha declarada por HuggingFace; anomalía a verificar) |
+| Fecha de creación | 2026-10-27T15:46:20Z (fecha declarada por Hugging Face; anomalía a verificar) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,11 +80,11 @@ Los datos de las filas distintas de este repositorio son de referencia del model
 
 | Modelo | Parámetros | Contexto | Cuantización típica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen2.5-Coder 7B Q4_K_M, espejo RTLProof) | 7,62 B | No declarado aquí; 24.576 en la prueba del autor | Q4_K_M (GGUF, 4,7 GB) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-7B-Instruct (oficial Qwen) | 7,62 B | 32.768 nativos | BF16, AWQ, GPTQ, GGUF | Apache-2.0 | HuggingFace oficial, ampliamente descargado |
+| Este repositorio (Qwen2.5-Coder 7B Q4_K_M, espejo RTLProof) | 7,62 B | No declarado aquí; 24.576 en la prueba del autor | Q4_K_M (GGUF, 4,7 GB) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-7B-Instruct (oficial Qwen) | 7,62 B | 32.768 nativos | BF16, AWQ, GPTQ, GGUF | Apache-2.0 | Hugging Face oficial, ampliamente descargado |
 | Qwen2.5-Coder-7B vía Ollama (`qwen2.5-coder:7b`) | 7,62 B | Según configuración de Ollama | Q4_K_M y otras | Apache-2.0 | Registro de Ollama |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B totales / 2,4 B activos (MoE) | 128.000 | BF16, GGUF | Licencia propia de DeepSeek | HuggingFace |
-| CodeLlama-7B-Instruct | 6,74 B | 16.384 | BF16, GGUF, GPTQ | Licencia Llama 2 | HuggingFace (Meta) |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7 B totales / 2,4 B activos (MoE) | 128.000 | BF16, GGUF | Licencia propia de DeepSeek | Hugging Face |
+| CodeLlama-7B-Instruct | 6,74 B | 16.384 | BF16, GGUF, GPTQ | Licencia Llama 2 | Hugging Face (Meta) |
 
 La comparación relevante es que este repositorio no aporta nada distinto del GGUF de Ollama salvo la inmutabilidad de la revisión y el checksum público. Frente a Qwen2.5-Coder-7B en BF16, la cuantización Q4_K_M reduce el peso de aproximadamente 15 GB a 4,7 GB con la correspondiente pérdida de precisión; frente a DeepSeek-Coder-V2-Lite, ofrece menos contexto y menos parámetros, pero es mucho más ligero de desplegar.
 
@@ -103,7 +103,7 @@ La comparación relevante es que este repositorio no aporta nada distinto del GG
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/csy888666/rtlproof-qwen2.5-coder-7b-q4-k-m
+- Repositorio en Hugging Face: https://huggingface.co/csy888666/rtlproof-qwen2.5-coder-7b-q4-k-m
 - Modelo original en el registro de Ollama: https://ollama.com/library/qwen2.5-coder:7b
 - Ficheros de trazabilidad citados en la model card: `ORIGIN.json` y `upstream_ollama_manifest.json`, dentro del propio repositorio.
 - Descarga verificable: `resolve/<commit-completo>/qwen2.5-coder-7b-Q4_K_M.gguf` sobre la revisión completa del repositorio.

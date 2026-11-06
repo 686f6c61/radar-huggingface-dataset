@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una versión recortada del reranker multilingüe `BAAI/bge-reranker-v2-m3`, desarrollado por el usuario `luluw` en HuggingFace. Se trata de un cross-encoder que puntúa pares (consulta, pasaje) y devuelve un logit de relevancia, sin generar embeddings. Su principal innovación es la reducción del vocabulario original de 250 002 tokens a 16 384, centrado exclusivamente en inglés y nepalí, lo que reduce el tamaño de la matriz de embeddings y el coste de inferencia en despliegues que solo necesitan estos dos idiomas.
+Este modelo es una versión recortada del reranker multilingüe `BAAI/bge-reranker-v2-m3`, desarrollado por el usuario `luluw` en Hugging Face. Se trata de un cross-encoder que puntúa pares (consulta, pasaje) y devuelve un logit de relevancia, sin generar embeddings. Su principal innovación es la reducción del vocabulario original de 250 002 tokens a 16 384, centrado exclusivamente en inglés y nepalí, lo que reduce el tamaño de la matriz de embeddings y el coste de inferencia en despliegues que solo necesitan estos dos idiomas.
 
 El modelo conserva la arquitectura del modelo base (XLM-RoBERTa) y no ha sido fine-tuneado: los embeddings de los tokens conservados se copiaron tal cual del original. Con 328,5 millones de parámetros y una ventana de contexto de 512 tokens (heredada del modelo base), es adecuado para tareas de reranking en pipelines de recuperación de información, especialmente en entornos con restricciones de memoria o donde el multilingüismo completo no es necesario.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 328,5 M de parámetros, en FP32 se requieren aproximadamente 1,3 GB; en FP16 unos 0,66 GB; en int8 unos 0,33 GB (si se aplicara cuantización, aunque no se especifica).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para FP16 (p. ej., NVIDIA T4, RTX 3060, RTX 4090). Para despliegues en CPU, es viable con 4-8 GB de RAM.
 - Cabe en GPUs de consumo como RTX 3060, RTX 4070, etc., sin problemas.
-- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (TEI), HuggingFace Inference Endpoints, o servidores propios con FastAPI.
+- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (TEI), Hugging Face Inference Endpoints, o servidores propios con FastAPI.
 - Latencia y throughput: no disponible; dependerá del hardware y del tamaño de lote.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ Nota: los parámetros del modelo original no se han verificado en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed
+- Modelo en Hugging Face: https://huggingface.co/luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Paper de BGE M3: https://arxiv.org/abs/2402.03216
 - Documentación de BGE-Reranker-v2: https://bge-model.com/bge/bge_reranker_v2.html

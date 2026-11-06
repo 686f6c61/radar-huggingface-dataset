@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B es un ajuste fino de matematicas del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, publicado por el usuario gasolsun en HuggingFace. El modelo se ha entrenado con una receta de destilacion on-policy denominada "Ask to Distill", en la que el profesor es hbx/JustRL-DeepSeek-1.5B y el alumno el citado distill de DeepSeek-R1 sobre Qwen. El objetivo declarado es mejorar el razonamiento matematico del alumno sin utilizar preguntas de entrenamiento reales ni respuestas de referencia.
+Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B es un ajuste fino de matematicas del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, publicado por el usuario gasolsun en Hugging Face. El modelo se ha entrenado con una receta de destilacion on-policy denominada "Ask to Distill", en la que el profesor es hbx/JustRL-DeepSeek-1.5B y el alumno el citado distill de DeepSeek-R1 sobre Qwen. El objetivo declarado es mejorar el razonamiento matematico del alumno sin utilizar preguntas de entrenamiento reales ni respuestas de referencia.
 
 La innovacion principal de la receta es la generacion del banco de preguntas: se entrena un generador de preguntas con aprendizaje por refuerzo para que escriba enunciados que expongan desacuerdo a nivel de token, acotado y aprendible, entre profesor y alumno sobre las propias soluciones del alumno. Ese banco se muestrea, se filtra y se deduplica, y despues el alumno se entrena con destilacion on-policy (OPD) sobre el. El resultado es un modelo denso de 1.777.088.000 parametros (aproximadamente 1,78 mil millones), arquitectura Qwen2, licencia MIT y pesos en safetensors, pensado especificamente para resolucion de problemas matematicos con cadenas de razonamiento largas.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque combina dos lineas de trabajo muy activas: la destilac
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder tipo Qwen2 (tag de HuggingFace: qwen2); no es MoE ni SSM |
+| Arquitectura | Transformer decoder tipo Qwen2 (tag de Hugging Face: qwen2); no es MoE ni SSM |
 | Parametros totales | 1.777.088.000 (dato real de los pesos safetensors) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible en la model card; la evaluacion se realizo generando hasta 31.744 tokens nuevos |
@@ -77,17 +77,17 @@ No se han publicado en la informacion disponible resultados comparativos del mod
 - Cuantizacion: no se publican pesos GGUF, AWQ ni GPTQ, pero al ser un modelo Qwen2 estandar es convertible a GGUF con llama.cpp y a otros formatos con las herramientas habituales; en 4 bits los pesos ocuparian aproximadamente 1 GB.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para bf16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). Para lotes grandes o contextos muy largos, A100 o H100 proporcionan margen de sobra.
 - Cabe en GPU de consumo: si. En 4 bits cabe incluso en GPUs de 6-8 GB, y el modelo puede ejecutarse en CPU con llama.cpp aunque con latencia alta.
-- Opciones de despliegue: transformers (receta de la model card), text-generation-inference (etiqueta oficial), vLLM y SGLang para servido con batching, Ollama o llama.cpp tras convertir a GGUF, y endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: transformers (receta de la model card), text-generation-inference (etiqueta oficial), vLLM y SGLang para servido con batching, Ollama o llama.cpp tras convertir a GGUF, y endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Resultados comparables |
 |---|---|---|---|---|---|
-| gasolsun/Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B | 1,78 B | Denso Qwen2 | MIT | safetensors en HuggingFace | AIME24 45,0; MATH500 82,2; avg6 51,63 |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | Denso Qwen2 | MIT | safetensors en HuggingFace | No disponible en la informacion proporcionada |
-| hbx/JustRL-DeepSeek-1.5B (profesor) | ~1,5 B (segun nomenclatura) | Denso | No disponible en la informacion proporcionada | HuggingFace | No disponible |
-| Qwen2.5-Math-1.5B (familia base) | ~1,5 B | Denso Qwen2 | No disponible en la informacion proporcionada | HuggingFace | No disponible |
+| gasolsun/Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B | 1,78 B | Denso Qwen2 | MIT | safetensors en Hugging Face | AIME24 45,0; MATH500 82,2; avg6 51,63 |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | Denso Qwen2 | MIT | safetensors en Hugging Face | No disponible en la informacion proporcionada |
+| hbx/JustRL-DeepSeek-1.5B (profesor) | ~1,5 B (segun nomenclatura) | Denso | No disponible en la informacion proporcionada | Hugging Face | No disponible |
+| Qwen2.5-Math-1.5B (familia base) | ~1,5 B | Denso Qwen2 | No disponible en la informacion proporcionada | Hugging Face | No disponible |
 
 Los datos de parametros, licencia y benchmarks de las alternativas no se han verificado en esta busqueda, por lo que deben comprobarse en sus respectivas model cards antes de usarse en una comparacion formal.
 
@@ -106,7 +106,7 @@ Los datos de parametros, licencia y benchmarks de las alternativas no se han ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Profesor (JustRL-DeepSeek-1.5B): https://huggingface.co/hbx/JustRL-DeepSeek-1.5B
 - Dataset del banco de preguntas: https://huggingface.co/datasets/gasolsun/Math_DeepSeek-R1-Distill-Qwen-1.5B_JustRL-DeepSeek-1.5B

@@ -21,7 +21,7 @@ El modelo incluye un codificador visual de aproximadamente 0,10B parámetros den
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (librería `transformers`, con `custom_code`) |
 
-Otros datos de la ficha de HuggingFace: 33 descargas, 12 "likes", tamaño del repositorio 4,0 GB, `pipeline_tag` = `zero-shot-classification`, fecha de creación 2026-10-10 y última actualización 2026-10-11.
+Otros datos de la ficha de Hugging Face: 33 descargas, 12 "likes", tamaño del repositorio 4,0 GB, `pipeline_tag` = `zero-shot-classification`, fecha de creación 2026-10-10 y última actualización 2026-10-11.
 
 ## Arquitectura y entrenamiento
 
@@ -90,10 +90,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-edge | 0,59B (incluye 0,10B de vision) | no disponible | Modelo de decisión multimodal con salidas probabilísticas, texto + imagen + vídeo | Apache-2.0 | Pesos en safetensors en HuggingFace, requiere `trust_remote_code` |
+| d3-edge | 0,59B (incluye 0,10B de vision) | no disponible | Modelo de decisión multimodal con salidas probabilísticas, texto + imagen + vídeo | Apache-2.0 | Pesos en safetensors en Hugging Face, requiere `trust_remote_code` |
 | Decision 2.0 (modelo de 0,6B) | 0,6B | no disponible | Modelo de decisión de la generación anterior | no disponible | Referenciado por el autor; no se aporta enlace |
 | Bekko System One v0 400M | 0,4B | no disponible | Modelo de decisión ("system one") | no disponible | Aparece como comparación en la tabla de evaluación del autor |
-| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible | LLM base generativo del que deriva d3-edge | no disponible | Pesos en HuggingFace |
+| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible | LLM base generativo del que deriva d3-edge | no disponible | Pesos en Hugging Face |
 
 No se dispone de datos suficientes sobre contextos, licencias ni rendimiento homogéneo de los tres comparadores como para establecer una comparación completa más allá de los resultados del Jev Decision Index recogidos en la sección anterior.
 
@@ -113,7 +113,7 @@ No se dispone de datos suficientes sobre contextos, licencias ni rendimiento hom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-edge
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-edge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

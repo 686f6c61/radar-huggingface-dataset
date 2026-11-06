@@ -78,11 +78,11 @@ Latencia declarada: 0,27 s para una limpieza típica en un M2 Pro. No se han pub
 
 | Modelo | Parámetros | Contexto | Licencia | Suite de limpieza (171) | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimpse C1 2B | ~1,88B | No disponible | glimpse-c1 (uso personal; comercial con permiso) | 162 | HuggingFace, pesos safetensors |
+| Glimpse C1 2B | ~1,88B | No disponible | glimpse-c1 (uso personal; comercial con permiso) | 162 | Hugging Face, pesos safetensors |
 | Superwhisper S1-mini | No disponible | No disponible | No disponible | 123 | Producto comercial de Superwhisper |
 | SimpleWords v2 | No disponible | No disponible | No disponible | 118 | No disponible |
 | Apple Intelligence | No disponible | No disponible | Propietaria | 114 | Integrado en macOS/iOS |
-| Bonsai 2B sin entrenar | ~2B (base) | No disponible | Apache 2.0 (base PrismML) | 88 | HuggingFace |
+| Bonsai 2B sin entrenar | ~2B (base) | No disponible | Apache 2.0 (base PrismML) | 88 | Hugging Face |
 
 La comparación se limita a la suite propietaria del autor; no hay datos públicos de MMLU, latencia o consumo equiparables para las alternativas, y sus fichas técnicas no están disponibles en la información consultada.
 
@@ -96,12 +96,12 @@ La comparación se limita a la suite propietaria del autor; no hay datos públic
 - Riesgo de alucinación en forma de corrección inventada: al reescribir el texto puede alterar contenido que el usuario sí quería conservar, algo crítico en contextos médicos, legales o financieros.
 - Idiomas: no se declara una lista oficial; la única evidencia es la suite "non-English" del autor (54/55), insuficiente para garantizar calidad multilingüe general.
 - Sin tensores de visión: la variante distribuida ha eliminado las capacidades multimodales del modelo base.
-- Validación externa muy limitada: 0 descargas y 0 *likes* en HuggingFace en el momento de la consulta; todos los benchmarks proceden del propio autor.
+- Validación externa muy limitada: 0 descargas y 0 *likes* en Hugging Face en el momento de la consulta; todos los benchmarks proceden del propio autor.
 - Longitud de contexto no documentada: no se debe asumir que soporta dictados de varios minutos en una sola pasada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Glimpse-Dictation/Glimpse-C1-2B
+- Modelo en Hugging Face: https://huggingface.co/Glimpse-Dictation/Glimpse-C1-2B
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-mlx-2bit
 - Anuncio del modelo: https://tryglimpse.cc/blog/c1-cleanup-model
 - Producto Glimpse: https://tryglimpse.cc

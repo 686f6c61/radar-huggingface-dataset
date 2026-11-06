@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2-Candid-Nude-v1 es un modelo de difusión texto-a-imagen derivado de Krea 2 Turbo, publicado por el usuario draganjankovic1975 en HuggingFace. Se trata de un merge del modelo base Krea 2 Turbo con un LoRA propio entrenado sobre aproximadamente 2.500 imágenes curadas (generadas por IA y fotografías de aficionado usadas con permiso), con una fuerza de 0,8. El objetivo declarado es reproducir una estética de fotografía amateur realista, con luz natural, textura de piel auténtica (poros, lunares, pequeñas imperfecciones) y cuerpos de proporciones naturales, orientada a contenido NSFW para adultos y también a imágenes vestidas de moda o catálogo.
+Krea2-Candid-Nude-v1 es un modelo de difusión texto-a-imagen derivado de Krea 2 Turbo, publicado por el usuario draganjankovic1975 en Hugging Face. Se trata de un merge del modelo base Krea 2 Turbo con un LoRA propio entrenado sobre aproximadamente 2.500 imágenes curadas (generadas por IA y fotografías de aficionado usadas con permiso), con una fuerza de 0,8. El objetivo declarado es reproducir una estética de fotografía amateur realista, con luz natural, textura de piel auténtica (poros, lunares, pequeñas imperfecciones) y cuerpos de proporciones naturales, orientada a contenido NSFW para adultos y también a imágenes vestidas de moda o catálogo.
 
 El modelo tiene 12.820.073.036 parámetros según los pesos en safetensors y se distribuye en cuatro formatos (bf16, fp8, GGUF Q8_0 y GGUF Q5_1) pensados para distintos niveles de VRAM. Está empaquetado para ComfyUI y requiere el text encoder Qwen3-VL 4B y el VAE `qwen_image_vae` del ecosistema Krea 2. La licencia es la Krea 2 Community License, con restricciones de uso comercial y políticas de uso adicionales.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Krea2-Candid-Nude-v1 | 12.820.073.036 | 8 pasos (Turbo), CFG 1 | Krea 2 Community License | HuggingFace, 4 formatos (bf16, fp8, GGUF Q8_0, Q5_1) |
+| Krea2-Candid-Nude-v1 | 12.820.073.036 | 8 pasos (Turbo), CFG 1 | Krea 2 Community License | Hugging Face, 4 formatos (bf16, fp8, GGUF Q8_0, Q5_1) |
 | Krea 2 Turbo (base) | No disponible | Turbo (pocos pasos) | Krea 2 Community License | Modelo base oficial de Krea |
 | Alternativas de difusión texto-a-imagen de tamaño comparable | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/draganjankovic1975/Krea2-Candid-Nude-v1
+- Hugging Face: https://huggingface.co/draganjankovic1975/Krea2-Candid-Nude-v1
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Fork ComfyUI-GGUF (soporte Krea 2): https://github.com/molbal/ComfyUI-GGUF

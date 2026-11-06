@@ -6,7 +6,7 @@
 
 La variante `logreg` utiliza un modelo de regresión logística, lo que la convierte en una solución extremadamente ligera en comparación con la alternativa basada en LLM. Según la información del modelo hermano (`ideadet-nemotron30b-1m-outline`), el enfoque consiste en entrenar sobre un corpus de un millón de lecturas y, en inferencia, procesar un outline del documento con roles etiquetados y parafraseado (de-leaked). La puntuación se obtiene comparando las log-probabilidades del siguiente token entre las etiquetas `human` y `ai`, normalizadas bidireccionalmente para obtener P(human), y el detector se activa cuando esta probabilidad cae por debajo de un umbral calibrado.
 
-El modelo está publicado bajo licencia Apache 2.0, pero su acceso está **restringido** (gated) en HuggingFace, por lo que es necesario aceptar condiciones antes de poder descargarlo. El repositorio tiene un tamaño de 0.0 GB, coherente con el peso reducido de un modelo de regresión logística.
+El modelo está publicado bajo licencia Apache 2.0, pero su acceso está **restringido** (gated) en Hugging Face, por lo que es necesario aceptar condiciones antes de poder descargarlo. El repositorio tiene un tamaño de 0.0 GB, coherente con el peso reducido de un modelo de regresión logística.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ La comparativa directa con otros detectores de IA (como GPTZero o Turnitin) no e
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga; no es directamente accesible.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga; no es directamente accesible.
 - **Documentación insuficiente**: no se han publicado detalles sobre las características de entrada, el formato exacto del outline, el umbral calibrado ni el proceso de entrenamiento.
 - **Sin benchmarks publicados**: no es posible evaluar la precisión ni compararla con otros detectores.
 - **Cobertura de idiomas desconocida**: no se especifica qué idiomas soporta el pipeline de outlines.
@@ -79,7 +79,7 @@ La comparativa directa con otros detectores de IA (como GPTZero o Turnitin) no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline
+- Modelo en Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline
 - Modelo hermano (variante Nemotron 30B): https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-outline
 - Perfil de GitHub del autor: https://github.com/RishanthRajendhran/
 - Página personal del autor: https://rishanthrajendhran.github.io/

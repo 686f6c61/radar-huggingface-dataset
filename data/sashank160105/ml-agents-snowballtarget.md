@@ -1,7 +1,7 @@
 # sashank160105/ml-agents-SnowballTarget
 
 ## Resumen
-ml-agents-SnowballTarget es una política de aprendizaje por refuerzo entrenada con Unity ML-Agents para el entorno SnowballTarget, en el que un agente debe lanzar bolas de nieve contra un objetivo. Lo publica el usuario sashank160105 en HuggingFace y se distribuye en formato ONNX, pensado para ser consumido directamente por el motor de inferencia de Unity. No es un modelo de lenguaje ni un modelo generativo: es un controlador entrenado para una tarea concreta de un entorno de simulación.
+ml-agents-SnowballTarget es una política de aprendizaje por refuerzo entrenada con Unity ML-Agents para el entorno SnowballTarget, en el que un agente debe lanzar bolas de nieve contra un objetivo. Lo publica el usuario sashank160105 en Hugging Face y se distribuye en formato ONNX, pensado para ser consumido directamente por el motor de inferencia de Unity. No es un modelo de lenguaje ni un modelo generativo: es un controlador entrenado para una tarea concreta de un entorno de simulación.
 
 El repositorio tiene un tamano practicamente nulo (0.0 GB), cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de un artefacto experimental o de un ejercicio de entrenamiento, no de un modelo ampliamente adoptado. No se declara licencia, idioma ni informacion sobre el conjunto de datos de entrenamiento mas alla del propio nombre del entorno.
 
@@ -42,7 +42,7 @@ Tampoco se detallan el numero de pasos de entrenamiento, la composicion del data
 ## Casos de uso
 - Investigacion en aprendizaje por refuerzo: usar el agente como linea base reproducible para comparar variantes de algoritmos o de diseno de recompensa en SnowballTarget.
 - Desarrollo de entornos Unity: integrar la politica ONNX en una escena de Unity para validar el pipeline completo de ML-Agents (entrenamiento, exportacion e inferencia).
-- Docencia y ejercicios practicos: ejemplo minimo de como se publica y consume un agente entrenado con ML-Agents en HuggingFace.
+- Docencia y ejercicios practicos: ejemplo minimo de como se publica y consume un agente entrenado con ML-Agents en Hugging Face.
 - Pruebas de integracion de inferencia ONNX en Unity: verificar el rendimiento y la latencia del motor de inferencia con un modelo de politica pequeno.
 - Benchmark de simulacion: medir la recompensa media del agente en SnowballTarget y contrastarla con la declarada por el autor (50,00 +/- 5,00).
 - Prototipado de agentes de juego: punto de partida para sustituir la politica por una entrenada especificamente con las reglas de un juego propio.
@@ -64,11 +64,11 @@ El unico resultado disponible es el declarado por el autor en el model-index y m
 - No se publican datos de latencia ni de throughput.
 
 ## Comparativa con modelos similares
-No se dispone de datos concretos de modelos comparables en la informacion proporcionada. La categoria a la que pertenece son las politicas entrenadas con Unity ML-Agents para entornos concretos, habitualmente publicadas por la comunidad en HuggingFace con el prefijo `ml-agents-`, pero no se han facilitado cifras de parametros, contexto, rendimiento, licencia ni disponibilidad de alternativas concretas, por lo que la comparacion cuantitativa queda como no disponible.
+No se dispone de datos concretos de modelos comparables en la informacion proporcionada. La categoria a la que pertenece son las politicas entrenadas con Unity ML-Agents para entornos concretos, habitualmente publicadas por la comunidad en Hugging Face con el prefijo `ml-agents-`, pero no se han facilitado cifras de parametros, contexto, rendimiento, licencia ni disponibilidad de alternativas concretas, por lo que la comparacion cuantitativa queda como no disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ml-agents-SnowballTarget | no disponible | no disponible | mean_reward 50,00 +/- 5,00 (no verificado) | no disponible | HuggingFace |
+| ml-agents-SnowballTarget | no disponible | no disponible | mean_reward 50,00 +/- 5,00 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No se dispone de datos concretos de modelos comparables en la informacion propor
 - La fecha de publicacion indicada (2026) es posterior a la fecha habitual de consulta, dato que se reporta tal cual figura en el repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sashank160105/ml-agents-SnowballTarget
+- Hugging Face: https://huggingface.co/sashank160105/ml-agents-SnowballTarget
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

@@ -90,6 +90,6 @@ No se dispone de informacion sobre otros modelos TTS comparables en la informaci
 
 ## Enlaces
 
-- [HuggingFace: Prahaladha/hima-tts-nano-te-mlx-fp16](https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-fp16)
+- [Hugging Face: Prahaladha/hima-tts-nano-te-mlx-fp16](https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-fp16)
 - [Modelo base: Prahaladha/hima-tts-nano-te](https://huggingface.co/Prahaladha/hima-tts-nano-te)
 - [Version de 8 bits: Prahaladha/hima-tts-nano-te-mlx-8bit](https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-8bit)

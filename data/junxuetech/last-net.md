@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaST-Net es un modelo de deteccion de deepfakes de voz (speech deepfake detection) publicado por Jun Xue (JunXueTech) en HuggingFace. Se trata de un sistema discriminativo, no de un modelo generativo: recibe audio y devuelve una puntuacion (`bonafide_log_score`) que indica si la grabacion corresponde a voz autentica o a voz sintetica generada por sistemas de text-to-speech o de conversion de voz. El modelo se presenta como parte del trabajo "LaST-Net: Length-Aware Layer and Scale-Adaptive Temporal Network for Speech Deepfake Detection", cuyo codigo de entrenamiento e inferencia esta disponible en un repositorio de GitHub independiente.
+LaST-Net es un modelo de deteccion de deepfakes de voz (speech deepfake detection) publicado por Jun Xue (JunXueTech) en Hugging Face. Se trata de un sistema discriminativo, no de un modelo generativo: recibe audio y devuelve una puntuacion (`bonafide_log_score`) que indica si la grabacion corresponde a voz autentica o a voz sintetica generada por sistemas de text-to-speech o de conversion de voz. El modelo se presenta como parte del trabajo "LaST-Net: Length-Aware Layer and Scale-Adaptive Temporal Network for Speech Deepfake Detection", cuyo codigo de entrenamiento e inferencia esta disponible en un repositorio de GitHub independiente.
 
 Tecnicamente, LaST-Net combina un frontend basado en XLS-R 300M (`facebook/wav2vec2-xls-r-300m`) afinado, con un backend propio denominado LaST-Net. El checkpoint publicado (`best.pt`) corresponde a la epoca 52 y fue seleccionado por el menor EER medio de desarrollo evaluado sobre ventanas de 1, 2, 4 y 6 segundos del corpus ASVspoof 2019 LA. El repositorio pesa 3,8 GB e incluye el estado del optimizador y metadatos originales de entrenamiento, ademas de los pesos.
 
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye especificaciones ni resultados de modelo
 
 | Modelo | Enfoque | Parametros | Contexto / entrada | EER publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LaST-Net (JunXueTech) | XLS-R 300M afinado + backend LaST-Net | no disponible (frontend ~300 M) | audio mono 16 kHz, 1-6 s | 1,29 / 4,98 / 3,62 / 7,58 en 19LA / 21LA / 21DF / ITW | no disponible | HuggingFace + GitHub |
+| LaST-Net (JunXueTech) | XLS-R 300M afinado + backend LaST-Net | no disponible (frontend ~300 M) | audio mono 16 kHz, 1-6 s | 1,29 / 4,98 / 3,62 / 7,58 en 19LA / 21LA / 21DF / ITW | no disponible | Hugging Face + GitHub |
 | AASIST | red con atencion sobre grafo espectro-temporal | no disponible | audio de corta duracion | no disponible en la informacion proporcionada | no disponible | codigo publico (referencia de la comunidad ASVspoof) |
 | RawNet2 | CNN sobre forma de onda cruda con capa sinc | no disponible | audio de corta duracion | no disponible en la informacion proporcionada | no disponible | codigo publico (referencia de la comunidad ASVspoof) |
 | Sistemas XLS-R + cabezal clasificador | wav2vec 2.0 / XLS-R afinado | ~300 M solo frontend | audio mono 16 kHz | no disponible en la informacion proporcionada | variable segun implementacion | multiples implementaciones publicas |
@@ -104,11 +104,11 @@ Los valores de EER de los modelos alternativos no se han incluido porque no form
 - Estado de adopcion: el repositorio presenta 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion independiente por parte de la comunidad.
 - Mantenimiento tecnico: fairseq esta en modo de mantenimiento reducido, lo que puede complicar la instalacion en entornos modernos y la compatibilidad con versiones recientes de PyTorch.
 - Uso responsable: las puntuaciones deben emplearse como evidencia de apoyo, no como prueba concluyente; en contextos con consecuencias legales o economicas se recomienda combinarlas con revision humana y otros analisis forenses.
-- Fuente de los datos: la informacion de esta ficha procede de la model card del autor en HuggingFace y del repositorio de codigo enlazado. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.
+- Fuente de los datos: la informacion de esta ficha procede de la model card del autor en Hugging Face y del repositorio de codigo enlazado. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JunXueTech/LaST-Net
+- Modelo en Hugging Face: https://huggingface.co/JunXueTech/LaST-Net
 - Repositorio de codigo (entrenamiento e inferencia): https://github.com/JunXue-tech/LaST-Net
 - Checkpoint original de XLS-R 300M en formato fairseq: https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec/xlsr
 - Modelo base del frontend: https://huggingface.co/facebook/wav2vec2-xls-r-300m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-novel-humanize-4b-FP8 es una cuantizacion en FP8 del modelo gugujiji/novel-humanize-4b, publicada por Liodon AI. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a reducir el coste de despliegue: el checkpoint original en precision completa ocupa 8,0 GB y esta version queda en 4,4 GB, es decir, aproximadamente la mitad. El modelo subyacente tiene 4.022.468.096 parametros (unos 4B) y la etiqueta `qwen3` de HuggingFace indica que la arquitectura de partida es la familia Qwen3, aunque la model card no detalla la configuracion exacta de capas ni la longitud de contexto.
+novel-humanize-4b-FP8 es una cuantizacion en FP8 del modelo gugujiji/novel-humanize-4b, publicada por Liodon AI. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a reducir el coste de despliegue: el checkpoint original en precision completa ocupa 8,0 GB y esta version queda en 4,4 GB, es decir, aproximadamente la mitad. El modelo subyacente tiene 4.022.468.096 parametros (unos 4B) y la etiqueta `qwen3` de Hugging Face indica que la arquitectura de partida es la familia Qwen3, aunque la model card no detalla la configuracion exacta de capas ni la longitud de contexto.
 
 El sufijo "novel-humanize" sugiere un ajuste fino orientado a la generacion de ficcion y a la produccion de texto con un registro menos marcadamente artificial, si bien el autor de la ficha no aporta detalles sobre el dataset de ajuste ni sobre el proceso de alineamiento. El pipeline declarado es `text-generation` con etiqueta `conversational`, lo que indica un uso previsto de generacion de texto conversacional en un solo turno o multi-turno.
 
@@ -12,7 +12,7 @@ La relevancia de esta publicacion es practica: emplea el esquema `FP8_DYNAMIC` d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Qwen3 (etiqueta `qwen3` en HuggingFace); configuracion de capas no disponible |
+| Arquitectura | Transformer tipo Qwen3 (etiqueta `qwen3` en Hugging Face); configuracion de capas no disponible |
 | Parametros totales | 4.022.468.096 (aproximadamente 4B) |
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible |
@@ -89,7 +89,7 @@ No hay datos de benchmarks que permitan comparar el rendimiento de este modelo c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/novel-humanize-4b-FP8
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/novel-humanize-4b-FP8
 - Modelo base: https://huggingface.co/gugujiji/novel-humanize-4b
 - Perfil del autor de la cuantizacion (Liodon AI): https://huggingface.co/liodon-ai
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor

@@ -84,7 +84,7 @@ Los tres primeros son esencialmente el mismo modelo en distintos empaquetados; l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-OvisOCR3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-OvisOCR3-GGUF
 - Modelo original: https://huggingface.co/ATH-MaaS/OvisOCR3
 - Model card del original en el commit referenciado: https://huggingface.co/ATH-MaaS/OvisOCR3/blob/17f255e2c8ae6d18d5d5edb0a474bd4ed39aef90/README.md
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B

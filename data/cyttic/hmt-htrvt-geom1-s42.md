@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-geom1-s42 | 13,8 M | no disponible | 0,0593 | MIT | HuggingFace |
+| cyttic/hmt-htrvt-geom1-s42 | 13,8 M | no disponible | 0,0593 | MIT | Hugging Face |
 | Otros checkpoints de `htr-metrics-transfer` | no disponible | no disponible | no disponible | no disponible | presumiblemente en el mismo espacio de `cyttic`, sin datos confirmados |
 | Modelos HTR genericos (p. ej. TrOCR, Kraken) | no disponible | no disponible | no disponible | no disponible | no comparable directamente por idioma y dataset |
 
@@ -87,6 +87,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom1-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados (`results.json`): referenciado en la model card dentro del repositorio del modelo; URL directa no disponible en la información proporcionada.

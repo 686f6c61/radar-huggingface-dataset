@@ -104,8 +104,8 @@ No se han encontrado en la información disponible modelos directamente comparab
 
 | Modelo / enfoque | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `msw1410/payment-party-tagger-gemma4-e4b` | No disponible (adaptador LoRA de 0,3 GB) | No disponible | Etiquetado de partes de pago MT con hints ISO 20022 | Apache 2.0 (adaptador) | HuggingFace, 0 descargas |
-| Backbone `google/gemma-4-E4B-it` sin adaptar (uso generativo con prompt) | No disponible | No disponible | Extracción mediante generación e instrucciones | Sujeta a la licencia del modelo base | HuggingFace |
+| `msw1410/payment-party-tagger-gemma4-e4b` | No disponible (adaptador LoRA de 0,3 GB) | No disponible | Etiquetado de partes de pago MT con hints ISO 20022 | Apache 2.0 (adaptador) | Hugging Face, 0 descargas |
+| Backbone `google/gemma-4-E4B-it` sin adaptar (uso generativo con prompt) | No disponible | No disponible | Extracción mediante generación e instrucciones | Sujeta a la licencia del modelo base | Hugging Face |
 | NER genérico preentrenado (familia spaCy/Stanza) | No disponible | No disponible | NER de propósito general (PER, ORG, LOC) | Varía por modelo (MIT, Apache 2.0, etc.) | Amplia |
 | Parser determinista de MT / reglas ISO 20022 | No aplica | No aplica | Parseo posicional por líneas y códigos de línea | No aplica | Interno |
 
@@ -126,8 +126,8 @@ Diferencias cualitativas: frente a un NER genérico, este adaptador aporta etiqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msw1410/payment-party-tagger-gemma4-e4b
+- Modelo en Hugging Face: https://huggingface.co/msw1410/payment-party-tagger-gemma4-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Referencia arXiv declarada en los tags del repositorio (contenido no verificado): https://arxiv.org/abs/2310.01208
-- Artefacto citado en la model card: `example_output.json`, dentro del propio repositorio de HuggingFace
+- Artefacto citado en la model card: `example_output.json`, dentro del propio repositorio de Hugging Face
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda no guardan ninguna relación con este modelo ni con etiquetado de pagos, por lo que se descartan.

@@ -113,7 +113,7 @@ Diferencias clave frente a la familia TinyStories: StoryLM-10M usa un vocabulari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/storylm-10m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/storylm-10m
 - Dataset TinyStories (referenciado en la model card): https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de TinyStories, "TinyStories: How Small Can Language Models Be and Still Speak Coherent English?" (Eldan y Li, 2023): https://arxiv.org/abs/2305.07759
 - Colección de modelos de referencia TinyStories: https://huggingface.co/roneneldan

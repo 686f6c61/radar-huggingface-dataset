@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `AldenClark2902/ai-social-media-content-workflows` corresponde a un repositorio alojado en HuggingFace cuyo unico contenido verificable es una etiqueta de licencia MIT, sin model card tecnica, sin pipeline declarado y sin pesos asociados. No se trata, por tanto, de un modelo de lenguaje o multimodal evaluable: no hay arquitectura publicada, no hay ficheros de pesos, no hay tokenizador y no hay informacion sobre datos de entrenamiento. Cualquier ficha tecnica convencional (parametros, contexto, cuantizaciones) resulta inaplicable con la evidencia disponible.
+El identificador `AldenClark2902/ai-social-media-content-workflows` corresponde a un repositorio alojado en Hugging Face cuyo unico contenido verificable es una etiqueta de licencia MIT, sin model card tecnica, sin pipeline declarado y sin pesos asociados. No se trata, por tanto, de un modelo de lenguaje o multimodal evaluable: no hay arquitectura publicada, no hay ficheros de pesos, no hay tokenizador y no hay informacion sobre datos de entrenamiento. Cualquier ficha tecnica convencional (parametros, contexto, cuantizaciones) resulta inaplicable con la evidencia disponible.
 
 El nombre del repositorio sugiere una coleccion de flujos de trabajo orientados a la generacion y publicacion automatizada de contenido para redes sociales, un patron habitual en plantillas de orquestacion (n8n, Make, Zapier) mas que en artefactos de pesos. Sin embargo, esta interpretacion es una inferencia a partir del titulo y no esta respaldada por ninguna documentacion del propio repositorio.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada desde el punto de vista de evaluacion de modelo
 | Licencia | MIT |
 | Formato de pesos | no disponible (no se listan ficheros de pesos) |
 | Tipo de artefacto | no disponible (la unica etiqueta declarada es `region:us`) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-16 |
@@ -82,7 +82,7 @@ No disponible. Al no existir un modelo con arquitectura, parametros ni licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AldenClark2902/ai-social-media-content-workflows
+- Repositorio en Hugging Face: https://huggingface.co/AldenClark2902/ai-social-media-content-workflows
 - Plantilla de workflow de automatizacion de contenido multiplataforma con IA (n8n, resultado de busqueda, no vinculado al repositorio): https://n8n.io/workflows/3066-automate-multi-platform-social-media-content-creation-with-ai/
 - Guia sobre flujos de aprobacion de contenido en redes sociales con IA (CampaignSwift, resultado de busqueda, no vinculado al repositorio): https://campaignswift.com/blog/ai-social-media-approval-workflows
 - Resultados de busqueda no relevantes para la ficha (portales de cuenta de Microsoft): https://www.microsoft.com/en-us, https://account.microsoft.com/account, https://myaccount.microsoft.com/

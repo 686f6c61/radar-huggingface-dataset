@@ -71,5 +71,5 @@ No disponible. No se proporcionan datos comparativos con otros modelos cuantizad
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/simaai/Qwen2.5-VL-7B-Instruct-GPTQ-Safetensors
+- Repositorio Hugging Face del modelo: https://huggingface.co/simaai/Qwen2.5-VL-7B-Instruct-GPTQ-Safetensors
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

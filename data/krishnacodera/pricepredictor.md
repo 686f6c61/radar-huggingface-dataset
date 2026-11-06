@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `krishnacoderA/pricepredictor` es un repositorio alojado en HuggingFace por el usuario krishnacoderA. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el identificador de licencia `zlib` en el encabezado YAML. No se especifica arquitectura, tamano, datos de entrenamiento, capacidades ni procedencia del modelo.
+El modelo identificado como `krishnacoderA/pricepredictor` es un repositorio alojado en Hugging Face por el usuario krishnacoderA. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el identificador de licencia `zlib` en el encabezado YAML. No se especifica arquitectura, tamano, datos de entrenamiento, capacidades ni procedencia del modelo.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, un posible uso orientado a la prediccion de precios, pero esta interpretacion no puede confirmarse con la informacion disponible. No hay pesos publicados de forma verificable, ni ficheros de configuracion, tokenizador o documentacion asociada que permitan determinar que contiene realmente el repositorio.
 
@@ -85,5 +85,5 @@ No disponible. No se dispone de informacion suficiente sobre este repositorio (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishnacoderA/pricepredictor
+- Repositorio en Hugging Face: https://huggingface.co/krishnacoderA/pricepredictor
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

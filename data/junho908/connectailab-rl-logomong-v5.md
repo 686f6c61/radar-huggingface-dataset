@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-logomong-v5 es un adaptador LoRA de tipo reinforcement learning publicado por el usuario junho908 en HuggingFace, construido sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje de propósito general, sino un modelo de toma de decisiones (decision-making) entrenado para resolver tareas de elección múltiple dentro de un simulador de gestión empresarial llamado CONNECT TYCOON. Recibe como entrada un estado, una pregunta y una lista de opciones etiquetadas, y devuelve únicamente la letra de la opción seleccionada.
+connectailab-rl-logomong-v5 es un adaptador LoRA de tipo reinforcement learning publicado por el usuario junho908 en Hugging Face, construido sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje de propósito general, sino un modelo de toma de decisiones (decision-making) entrenado para resolver tareas de elección múltiple dentro de un simulador de gestión empresarial llamado CONNECT TYCOON. Recibe como entrada un estado, una pregunta y una lista de opciones etiquetadas, y devuelve únicamente la letra de la opción seleccionada.
 
 El modelo se entrena en dos fases: primero un aprendizaje supervisado (SFT) sobre un "cuaderno de problemas" generado por un profesor consistente en una política pequeña entrenada con PPO en el simulador, y después una fase de reinforcement learning con GRPO que ajusta las probabilidades de las opciones según la puntuación obtenida en el simulador. El resultado es un adaptador de rango 8 con licencia Apache 2.0, orientado a inferencia local en Mac mediante MLX.
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junho908/connectailab-rl-logomong-v5
+- Hugging Face: https://huggingface.co/junho908/connectailab-rl-logomong-v5
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

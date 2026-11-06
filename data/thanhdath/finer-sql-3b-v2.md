@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FINER-SQL-3B-v2 es un modelo de generacion de texto especializado en text-to-SQL desarrollado por el usuario de HuggingFace thanhdath. Se trata de un ajuste fino del modelo base Qwen2 de 3B parametros (3.085.938.688 parametros totales segun los pesos en safetensors), entrenado mediante GRPO (Group Relative Policy Optimization) con una recompensa compuesta de formato y ejecucion sobre CoRE-DB, el entorno de base de datos compacto enriquecido con contraejemplos descrito en el trabajo *Small Language Models for Text-to-SQL against Spurious Correctness*. El checkpoint publicado corresponde al step 1000, seleccionado sobre el conjunto de desarrollo.
+FINER-SQL-3B-v2 es un modelo de generacion de texto especializado en text-to-SQL desarrollado por el usuario de Hugging Face thanhdath. Se trata de un ajuste fino del modelo base Qwen2 de 3B parametros (3.085.938.688 parametros totales segun los pesos en safetensors), entrenado mediante GRPO (Group Relative Policy Optimization) con una recompensa compuesta de formato y ejecucion sobre CoRE-DB, el entorno de base de datos compacto enriquecido con contraejemplos descrito en el trabajo *Small Language Models for Text-to-SQL against Spurious Correctness*. El checkpoint publicado corresponde al step 1000, seleccionado sobre el conjunto de desarrollo.
 
 El modelo aborda un problema concreto y bien delimitado: la generacion de consultas SQL correctas contra esquemas de bases de datos reales, con especial atencion al fenomeno de la "correccion espuria" (consultas que se ejecutan sin error pero devuelven resultados incorrectos). Al estar construido sobre una base de 3B parametros, esta disenado para desplegarse en entornos con recursos limitados, lo que lo hace relevante para equipos que necesitan un generador SQL local sin depender de APIs de modelos frontera.
 
@@ -94,7 +94,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanhdath/FINER-SQL-3B-v2
+- Modelo en Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-3B-v2
 - Prompts de evaluacion: https://huggingface.co/thanhdath/core-db-evaluation-prompts
 - Repositorio de codigo core-db-sql: no se proporciona la URL exacta en la informacion disponible (referenciado como `core-db-sql` en GitHub)
 - Paper de referencia: *Small Language Models for Text-to-SQL against Spurious Correctness* (no se proporciona URL en la informacion disponible)

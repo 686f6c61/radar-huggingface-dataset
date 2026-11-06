@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nightmedia/gemma-4-E4B-Chronos-Finance` es un modelo de la familia Gemma publicado por el usuario nightmedia en HuggingFace, construido como un *merge* de dos modelos previos: `nightmedia/gemma-4-E4B-Chronos` y `naazimsnh02/FinanceGemma-E4B`. El resultado es un checkpoint de aproximadamente 8.000 millones de parametros (7.996.156.490 exactos, segun los safetensors del repo) que combina las capacidades del modelo Chronos con el sesgo hacia dominio financiero aportado por FinanceGemma. La operacion de fusion se ha realizado con mergekit, segun las etiquetas del repositorio.
+`nightmedia/gemma-4-E4B-Chronos-Finance` es un modelo de la familia Gemma publicado por el usuario nightmedia en Hugging Face, construido como un *merge* de dos modelos previos: `nightmedia/gemma-4-E4B-Chronos` y `naazimsnh02/FinanceGemma-E4B`. El resultado es un checkpoint de aproximadamente 8.000 millones de parametros (7.996.156.490 exactos, segun los safetensors del repo) que combina las capacidades del modelo Chronos con el sesgo hacia dominio financiero aportado por FinanceGemma. La operacion de fusion se ha realizado con mergekit, segun las etiquetas del repositorio.
 
 El modelo se distribuye en formato MLX (libreria declarada: `mlx`) con pesos en bf16 y safetensors, lo que orienta su uso principal a equipos Apple Silicon con memoria unificada. El pipeline declarado en la model card es `any-to-any`, lo que sugiere soporte de entrada y salida multimodal, aunque no se detalla en la informacion disponible que modalidades concretas cubre. La licencia declarada es Apache 2.0.
 
-Su relevancia es limitada por el momento: el repositorio se creo el 25 de octubre de 2026 y no registra descargas ni likes, ademas de estar sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo. Es, por tanto, un merge comunitario reciente y sin validacion publica, interesante como experimento de especializacion financiera sobre una base Gemma, pero no como una opcion contrastada para produccion.
+Su relevancia es limitada por el momento: el repositorio se creo el 25 de octubre de 2026 y no registra descargas ni likes, ademas de estar sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo. Es, por tanto, un merge comunitario reciente y sin validacion publica, interesante como experimento de especializacion financiera sobre una base Gemma, pero no como una opcion contrastada para produccion.
 
 ## Especificaciones tecnicas
 
@@ -78,13 +78,13 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 - Idiomas soportados no declarados: no se puede asumir un buen rendimiento en castellano ni en idiomas distintos del ingles sin evaluacion previa.
 - Longitud de contexto desconocida: limita el diseno de aplicaciones que dependan de documentos largos.
 - Licencia: los metadatos declaran apache-2.0, pero al derivar de modelos de la familia Gemma conviene verificar que la licencia de los modelos base sea compatible con ese relicenciamiento antes de un uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
 - Formato unico MLX/bf16: no hay GGUF ni cuantizaciones oficiales, lo que complica el despliegue fuera de Apple Silicon y en entornos de servidor estandar.
 - Al ser un merge con mergekit, existe riesgo de degradacion de capacidades respecto a los padres (olvido catastrofico en la fusion); no hay evaluaciones que lo descarten.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance
 - Modelo base 1: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos
 - Modelo base 2: https://huggingface.co/naazimsnh02/FinanceGemma-E4B
 - Paper, blog, repositorio o demo adicionales: no disponible (la busqueda web realizada no devolvio resultados relacionados con el modelo)

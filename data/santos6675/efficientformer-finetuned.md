@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Santos6675/efficientformer-finetuned" es una implementación personalizada de EfficientFormer para tareas de recuperación (retrieval) publicada por el usuario Santos6675 en HuggingFace. Se trata de un checkpoint de inicialización con 16.576 parámetros, pensado como punto de partida experimental y para pruebas de humo, no como un modelo entrenado. La arquitectura declarada es EfficientFormer en configuración "large", con atención estándar, fusión tensorial, activación swish y normalización ScaleNorm. La relevancia de este repositorio radica en ofrecer un código transparente y reproducible para investigar la aplicación de arquitecturas eficientes de visión al problema del retrieval, aunque el propio autor no reivindica ningún resultado de benchmark.
+El modelo "Santos6675/efficientformer-finetuned" es una implementación personalizada de EfficientFormer para tareas de recuperación (retrieval) publicada por el usuario Santos6675 en Hugging Face. Se trata de un checkpoint de inicialización con 16.576 parámetros, pensado como punto de partida experimental y para pruebas de humo, no como un modelo entrenado. La arquitectura declarada es EfficientFormer en configuración "large", con atención estándar, fusión tensorial, activación swish y normalización ScaleNorm. La relevancia de este repositorio radica en ofrecer un código transparente y reproducible para investigar la aplicación de arquitecturas eficientes de visión al problema del retrieval, aunque el propio autor no reivindica ningún resultado de benchmark.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El modelo "Santos6675/efficientformer-finetuned" es una implementación personal
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el diseño EfficientFormer, un transformer de visión eficiente, aunque la implementación es propia y no coincide necesariamente con la implementación de referencia de HuggingFace. Según la model card, la configuración utiliza atención estándar, fusión por tensores, activación swish y normalización ScaleNorm. El checkpoint almacenado en `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no es un checkpoint entrenado ni presenta resultados de benchmark. La receta por defecto incluida en `training_args.json` emplea SGD con un programador de paso (step schedule); estos valores son solo configuraciones iniciales del script, no evidencia de una ejecución completada. El autor recomienda, para una evaluación significativa, entrenar todos los modelos base con la misma exposición a datos, presupuesto de ajuste y semillas aleatorias.
+La arquitectura sigue el diseño EfficientFormer, un transformer de visión eficiente, aunque la implementación es propia y no coincide necesariamente con la implementación de referencia de Hugging Face. Según la model card, la configuración utiliza atención estándar, fusión por tensores, activación swish y normalización ScaleNorm. El checkpoint almacenado en `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, pero no es un checkpoint entrenado ni presenta resultados de benchmark. La receta por defecto incluida en `training_args.json` emplea SGD con un programador de paso (step schedule); estos valores son solo configuraciones iniciales del script, no evidencia de una ejecución completada. El autor recomienda, para una evaluación significativa, entrenar todos los modelos base con la misma exposición a datos, presupuesto de ajuste y semillas aleatorias.
 
 ## Capacidades
 
@@ -71,5 +71,5 @@ No disponible. En la información proporcionada no se incluyen modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Santos6675/efficientformer-finetuned
-- Documentación de EfficientFormer en HuggingFace: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer
+- Modelo en Hugging Face: https://huggingface.co/Santos6675/efficientformer-finetuned
+- Documentación de EfficientFormer en Hugging Face: https://huggingface.co/docs/transformers/v4.51.3/en/model_doc/efficientformer

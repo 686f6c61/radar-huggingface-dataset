@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables en el sentido estricto, porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielFas/cnn-transformer-generation-weights
+- Repositorio en Hugging Face: https://huggingface.co/DanielFas/cnn-transformer-generation-weights
 - No se han encontrado papers, blogs, repositorios de codigo ni demostraciones adicionales asociados a este modelo. Los resultados devueltos por la busqueda web no guardan ninguna relacion con el modelo ni con su autor, por lo que se omiten.

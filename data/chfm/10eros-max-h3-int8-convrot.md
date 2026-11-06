@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10X-Max (BF16) | no disponible | no disponible | BF16 | MiniMax H3 Community | HuggingFace |
-| 10X-Max H3 INT8 ConvRot (esta ficha) | no disponible | no disponible | INT8 (per-channel absmax + ConvRot) | MiniMax H3 Community | HuggingFace |
-| MiniMax-H3 (base) | no disponible | no disponible | BF16 | MiniMax H3 Community | HuggingFace |
+| 10X-Max (BF16) | no disponible | no disponible | BF16 | MiniMax H3 Community | Hugging Face |
+| 10X-Max H3 INT8 ConvRot (esta ficha) | no disponible | no disponible | INT8 (per-channel absmax + ConvRot) | MiniMax H3 Community | Hugging Face |
+| MiniMax-H3 (base) | no disponible | no disponible | BF16 | MiniMax H3 Community | Hugging Face |
 
 No se dispone de informacion suficiente para comparar con otros modelos de la misma categoria.
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: [chfm/10X-Max-h3-int8-convrot](https://huggingface.co/chfm/10X-Max-h3-int8-convrot)
+- Modelo en Hugging Face: [chfm/10X-Max-h3-int8-convrot](https://huggingface.co/chfm/10X-Max-h3-int8-convrot)
 - Modelo original: [TenStrip/10X-Max](https://huggingface.co/TenStrip/10X-Max)
 - Licencia MiniMax H3: [MiniMax H3 Community License Agreement](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)
 - Repositorio del modelo original en Civitai: [H3 Eros Max - beta2](https://civitai.com/models/2851079/h3-eros-max)

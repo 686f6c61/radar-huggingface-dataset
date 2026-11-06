@@ -85,7 +85,7 @@ No se dispone de datos de parametros ni de contexto de estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sudarshanharithas/MotionGlot
+- Hugging Face: https://huggingface.co/sudarshanharithas/MotionGlot
 - Paper (arXiv): https://arxiv.org/abs/2410.16623
 - Proyecto: https://ivl.cs.brown.edu/research/motionglot.html
 - Codigo: https://github.com/sudarshan-s-harithas/MotionGlot-A-Multi-Embodied-Motion-Generation-Model

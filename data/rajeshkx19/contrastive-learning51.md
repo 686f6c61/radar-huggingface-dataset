@@ -4,7 +4,7 @@
 
 El repositorio `rajeshkx19/contrastive-learning51` no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre aprendizaje contrastivo (contrastive learning). El autor, rajeshkx19, lo describe explícitamente como un "working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como un lanzamiento de modelos entrenados.
 
-El repositorio incluye un archivo `review.md` como artefacto principal y un `README.md` de documentación. Los metadatos de HuggingFace indican 16.576 parámetros totales en safetensors, pero este número es residual y no corresponde a un modelo real; el tamaño del repositorio es de 0.0 GB, lo que confirma que no hay pesos de modelo. La licencia es MIT y los idiomas no están especificados.
+El repositorio incluye un archivo `review.md` como artefacto principal y un `README.md` de documentación. Los metadatos de Hugging Face indican 16.576 parámetros totales en safetensors, pero este número es residual y no corresponde a un modelo real; el tamaño del repositorio es de 0.0 GB, lo que confirma que no hay pesos de modelo. La licencia es MIT y los idiomas no están especificados.
 
 Dado que no es un modelo, esta ficha documenta la naturaleza del repositorio y aclara que no es apto para uso como sistema de IA. Cualquier intento de tratarlo como un modelo de lenguaje o de visión sería un error.
 
@@ -54,11 +54,11 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - El contenido es exploratorio: las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 - No hay código ni checkpoints: el autor no libera implementaciones ni pesos.
 - Licencia MIT: permite uso y modificación del texto, pero los términos de las fuentes de datos externas deben revisarse por separado.
-- Riesgo de confusión: los metadatos de HuggingFace (parámetros, safetensors) pueden inducir a error; el tamaño real del repo es 0.0 GB.
+- Riesgo de confusión: los metadatos de Hugging Face (parámetros, safetensors) pueden inducir a error; el tamaño real del repo es 0.0 GB.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshkx19/contrastive-learning51
+- Repositorio en Hugging Face: https://huggingface.co/rajeshkx19/contrastive-learning51
 - Perfil del autor: https://huggingface.co/rajeshkx19/models
 - Referencia general sobre aprendizaje contrastivo (arXiv): https://arxiv.org/html/2206.09753v3
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164

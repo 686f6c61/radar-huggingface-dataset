@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zeynepsahingor/retrieval-notes20` es un repositorio de HuggingFace publicado por el usuario zeynepsahingor que contiene una implementación propia y compacta en PyTorch de una arquitectura **Mixer** orientada a tareas de **retrieval**. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, *smoke tests* y experimentos controlados de pequeño alcance. El repositorio incluye el código (`run.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales.
+`zeynepsahingor/retrieval-notes20` es un repositorio de Hugging Face publicado por el usuario zeynepsahingor que contiene una implementación propia y compacta en PyTorch de una arquitectura **Mixer** orientada a tareas de **retrieval**. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, *smoke tests* y experimentos controlados de pequeño alcance. El repositorio incluye el código (`run.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales.
 
 El modelo no resuelve por sí mismo ningún problema de retrieval en producción porque su checkpoint no ha sido entrenado. Su relevancia es, por tanto, metodológica: sirve como punto de partida reproducible para experimentar con arquitecturas Mixer aplicadas a recuperación (por ejemplo, recuperación texto-imagen sobre Flickr30k, tal y como sugiere la propia model card) y como artefacto mínimo para validar *pipelines* de carga, entrenamiento y evaluación antes de escalar a configuraciones mayores.
 
@@ -79,10 +79,10 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 - **Longitud de contexto desconocida**: no se publica la ventana de contexto, dato crítico para cualquier caso de uso con documentos largos.
 - **Restricciones de licencia**: la licencia es MIT, permisiva y apta para uso comercial, pero la model card advierte que los términos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
 - **Compatibilidad de carga**: al ser una implementación personalizada, las APIs genéricas de `transformers` o de otros frameworks requieren un adaptador explícito; no se puede asumir carga directa.
-- **Fechas del repositorio**: creado y actualizado el 2026-10-07 según los metadatos de HuggingFace, con 0 descargas y 0 *likes* en el momento de la consulta.
+- **Fechas del repositorio**: creado y actualizado el 2026-10-07 según los metadatos de Hugging Face, con 0 descargas y 0 *likes* en el momento de la consulta.
 - **Confusión de nomenclatura**: el nombre del repositorio (`retrieval-notes20`) no refleja el contenido técnico; conviene tratarlo como un cuaderno de experimentos, no como un *release* versionado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeynepsahingor/retrieval-notes20
+- Hugging Face: https://huggingface.co/zeynepsahingor/retrieval-notes20
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo.

@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento frente a NLLB-200 u otros sis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NothingSoftware/opus-mt-tc-big-de-zle-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/NothingSoftware/opus-mt-tc-big-de-zle-ct2-int8
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-de-zle
 - Repositorio OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

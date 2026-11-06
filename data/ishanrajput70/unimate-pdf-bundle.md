@@ -6,7 +6,7 @@
 
 El problema que resuelve es logístico: empaquetar los datos de idioma del motor OCR en un repositorio público sin autenticación, de forma que la app pueda descargarlos una sola vez y ejecutar el reconocimiento completamente en el dispositivo. Según la model card, ni los PDFs ni las fotos de los estudiantes salen del teléfono, y el código del motor OCR vive dentro del APK, no en este repositorio.
 
-Por tanto, esta ficha debe leerse como la de un asset de datos descargable (4.113.088 bytes, SHA-256 `7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2`), no como la de un modelo generativo. No hay parámetros, contexto, tokenizador, benchmarks ni pipeline declarados en los metadatos de HuggingFace.
+Por tanto, esta ficha debe leerse como la de un asset de datos descargable (4.113.088 bytes, SHA-256 `7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2`), no como la de un modelo generativo. No hay parámetros, contexto, tokenizador, benchmarks ni pipeline declarados en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -18,11 +18,11 @@ Por tanto, esta ficha debe leerse como la de un asset de datos descargable (4.11
 | Longitud de contexto | No disponible (no aplica) |
 | Tipos de cuantización | No aplica; el artefacto es un fichero `.traineddata` ya compilado |
 | Idiomas soportados | Inglés, implícito por el nombre `eng.traineddata`; no hay lista de idiomas declarada en los metadatos |
-| Licencia | Apache-2.0 según la model card (datos de Tesseract OCR de código abierto); el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | Apache-2.0 según la model card (datos de Tesseract OCR de código abierto); el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | `.traineddata` (Tesseract), un único fichero |
 | Tamaño del artefacto | 4.113.088 bytes (≈ 3,92 MiB) |
 | Integridad | SHA-256 `7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2` |
-| Tamaño del repositorio | 0.0 GB según metadatos de HuggingFace |
+| Tamaño del repositorio | 0.0 GB según metadatos de Hugging Face |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-25T07:47:52Z (metadato del autor, no verificado) |
@@ -75,7 +75,7 @@ La model card no incluye métricas de precisión de OCR (por ejemplo, CER o WER)
 
 | Artefacto | Tipo | Tamaño | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unimate-pdf-bundle` (`eng.traineddata` fast) | Datos OCR Tesseract | 4.113.088 bytes | Inglés | Apache-2.0 según model card; campo HF no disponible | Repositorio HuggingFace, 0 descargas |
+| `unimate-pdf-bundle` (`eng.traineddata` fast) | Datos OCR Tesseract | 4.113.088 bytes | Inglés | Apache-2.0 según model card; campo HF no disponible | Repositorio Hugging Face, 0 descargas |
 | `tesseract-ocr/tessdata_fast` (origen declarado) | Datos OCR Tesseract | No disponible en la información | Múltiples, no detallados | No disponible en la información | Repositorio GitHub público |
 | `tesseract-ocr/tessdata_best` | Datos OCR Tesseract | No disponible en la información | Múltiples, no detallados | No disponible en la información | Repositorio GitHub público |
 | Motores OCR neuronales (EasyOCR, PaddleOCR, etc.) | Modelos neuronales de detección y reconocimiento | No disponible en la información | No disponible | No disponible | No evaluados en la información proporcionada |
@@ -88,7 +88,7 @@ La comparación relevante es entre variantes de datos de Tesseract: la variante 
 - Cobertura lingüística limitada al inglés en este bundle; documentos en castellano u otros idiomas no se reconocerán correctamente sin datos de idioma adicionales.
 - No hay métricas publicadas de precisión, por lo que la calidad real sobre documentos concretos (manuscritos, tablas, baja resolución, fotografías inclinadas) es desconocida y debe validarse con muestras propias.
 - Riesgo de errores de transcripción que se propaguen a pipelines posteriores; conviene aplicar corrección ortográfica o revisión humana en flujos críticos.
-- Licencia: la model card declara Apache-2.0 para los datos de Tesseract, pero el campo de licencia de HuggingFace figura como no disponible; verificar la procedencia y los términos aplicables antes de un uso comercial.
+- Licencia: la model card declara Apache-2.0 para los datos de Tesseract, pero el campo de licencia de Hugging Face figura como no disponible; verificar la procedencia y los términos aplicables antes de un uso comercial.
 - Repositorio con 0 descargas y 0 likes, sin pipeline declarado ni documentación de versionado: no hay evidencia de uso comunitario ni de mantenimiento continuado.
 - Las fechas de creación y actualización (2026) resultan anómalas y el tamaño del repositorio (0.0 GB) no concuerda con los 4.113.088 bytes del fichero declarado; conviene verificar ambos metadatos antes de integrarlo en producción.
 - Dependencia de un único mantenedor y de un repositorio externo para la descarga inicial: si el repositorio desaparece, la app pierde su origen de datos salvo que se incluya un espejo o un fallback empaquetado.
@@ -96,6 +96,6 @@ La comparación relevante es entre variantes de datos de Tesseract: la variante 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishanrajput70/unimate-pdf-bundle
+- Repositorio en Hugging Face: https://huggingface.co/ishanrajput70/unimate-pdf-bundle
 - Origen declarado de los datos: https://github.com/tesseract-ocr/tessdata_fast
 - No se han encontrado en la información proporcionada papers, blogs, demos ni otros repositorios adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stheno v3.3 Indo Companion es un ajuste fino del modelo Sao10K/L3-8B-Stheno-v3.3-32K, publicado por el usuario xvevx en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 8.030.261.248 parametros (aproximadamente 8B) derivado de la familia Llama 3, orientado especificamente a actuar como companero conversacional (companion AI) en indonesio coloquial. El entrenamiento se realizo con la libreria Unsloth mediante LoRA sobre el modelo base, y el resultado se distribuye en formato GGUF para su ejecucion local.
+Stheno v3.3 Indo Companion es un ajuste fino del modelo Sao10K/L3-8B-Stheno-v3.3-32K, publicado por el usuario xvevx en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 8.030.261.248 parametros (aproximadamente 8B) derivado de la familia Llama 3, orientado especificamente a actuar como companero conversacional (companion AI) en indonesio coloquial. El entrenamiento se realizo con la libreria Unsloth mediante LoRA sobre el modelo base, y el resultado se distribuye en formato GGUF para su ejecucion local.
 
 El problema que resuelve es acotado y muy concreto: ofrecer respuestas con un registro informal, calido y "gaul" (jerga juvenil indonesia), incluyendo marcado de acciones fisicas y emociones entre asteriscos (*accion*), algo tipico de los modelos de roleplay. No es un modelo de proposito general ni un asistente tecnico: su foco es la conversacion afectiva y el roleplay en un unico idioma.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Stheno v3.3 Indo Companion | 8B (8.030.261.248) | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace, formato GGUF | Ajuste en indonesio coloquial para roleplay/companion |
-| Sao10K/L3-8B-Stheno-v3.3-32K (modelo base) | 8B | 32.768 tokens | No disponible en la informacion | HuggingFace | Modelo de roleplay en ingles del que deriva; sin especializacion en indonesio |
-| Llama-3-8B-Instruct | 8B | 8.192 tokens | Licencia comunitaria de Meta (con restricciones) | HuggingFace | Asistente generalista en ingles; requiere adaptacion para indonesio coloquial |
+| Stheno v3.3 Indo Companion | 8B (8.030.261.248) | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face, formato GGUF | Ajuste en indonesio coloquial para roleplay/companion |
+| Sao10K/L3-8B-Stheno-v3.3-32K (modelo base) | 8B | 32.768 tokens | No disponible en la informacion | Hugging Face | Modelo de roleplay en ingles del que deriva; sin especializacion en indonesio |
+| Llama-3-8B-Instruct | 8B | 8.192 tokens | Licencia comunitaria de Meta (con restricciones) | Hugging Face | Asistente generalista en ingles; requiere adaptacion para indonesio coloquial |
 
 La comparativa con otros modelos de companion en indonesio no esta disponible en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa con otros modelos de companion en indonesio no esta disponible en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xvevx/Stheno-v3.3-Indo-Companion
+- Repositorio Hugging Face: https://huggingface.co/xvevx/Stheno-v3.3-Indo-Companion
 - Modelo base: https://huggingface.co/Sao10K/L3-8B-Stheno-v3.3-32K
 - Dataset principal: `bhismaperkasa/chat_seru` (referenciado en la model card; no se proporciona URL directa)
 - Dataset de respaldo: `cahya/alpaca-id-cleaned` (referenciado en la model card; no se proporciona URL directa)

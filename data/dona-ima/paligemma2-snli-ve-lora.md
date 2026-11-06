@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dona-ima/paligemma2-snli-ve-lora` contiene un artefacto publicado en HuggingFace con la librería `transformers` y pesos en formato `safetensors`. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un adaptador LoRA más que con un modelo completo, aunque la model card no lo confirma de forma explícita. La ficha publicada por el autor es la plantilla automática de HuggingFace y no contiene ninguna descripción, dato de entrenamiento, licencia ni resultado de evaluación.
+El repositorio `dona-ima/paligemma2-snli-ve-lora` contiene un artefacto publicado en Hugging Face con la librería `transformers` y pesos en formato `safetensors`. El tamaño del repositorio es de 0,1 GB, lo que es coherente con un adaptador LoRA más que con un modelo completo, aunque la model card no lo confirma de forma explícita. La ficha publicada por el autor es la plantilla automática de Hugging Face y no contiene ninguna descripción, dato de entrenamiento, licencia ni resultado de evaluación.
 
 El identificador del modelo sugiere una especialización sobre la familia PaliGemma 2 (modelo vision-language de Google) entrenada con el conjunto de datos SNLI-VE, orientado a entailment visual: determinar si una hipótesis textual se deduce de una premisa compuesta por imagen y texto. Esta interpretación procede únicamente del nombre del repositorio y no está respaldada por la model card ni por documentación adicional, por lo que debe tratarse como no confirmada.
 
@@ -30,7 +30,7 @@ El modelo registra 0 descargas y 1 like en el momento de la consulta, y fue crea
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni la existencia de fases de RLHF, DPO o ajuste supervisado. La model card es la plantilla automatica de HuggingFace y todos los campos relevantes aparecen marcados como `[More Information Needed]`.
+No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni la existencia de fases de RLHF, DPO o ajuste supervisado. La model card es la plantilla automatica de Hugging Face y todos los campos relevantes aparecen marcados como `[More Information Needed]`.
 
 El unico indicio tecnico disponible es el identificador del repositorio, que apunta a PaliGemma 2 como modelo base y a SNLI-VE como tarea de ajuste. PaliGemma 2 es una familia de modelos vision-language de tipo transformer con codificador de vision SigLIP y decodificador Gemma 2, publicada en variantes de 3B, 10B y 28B parametros. SNLI-VE es un conjunto de datos de entailment visual derivado de Flickr30k. Ninguno de estos extremos esta verificado en la informacion proporcionada, y se desconoce si el adaptador es LoRA, QLoRA u otra variante de ajuste eficiente.
 
@@ -68,15 +68,15 @@ No es posible establecer una comparativa fiable porque no se dispone de parametr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos confirmados |
 |---|---|---|---|---|---|
-| dona-ima/paligemma2-snli-ve-lora | no disponible | no disponible | no disponible | HuggingFace, safetensors, 0 descargas | Repositorio de 0,1 GB |
-| PaliGemma 2 (familia base, referencia) | 3B, 10B y 28B segun variante | no disponible en esta busqueda | no disponible en esta busqueda | HuggingFace | No se confirma que sea la base de este adaptador |
+| dona-ima/paligemma2-snli-ve-lora | no disponible | no disponible | no disponible | Hugging Face, safetensors, 0 descargas | Repositorio de 0,1 GB |
+| PaliGemma 2 (familia base, referencia) | 3B, 10B y 28B segun variante | no disponible en esta busqueda | no disponible en esta busqueda | Hugging Face | No se confirma que sea la base de este adaptador |
 | Modelos especializados en entailment visual | no disponible | no disponible | no disponible | no disponible | No se dispone de referencias verificadas |
 
 Cualquier comparacion cuantitativa con alternativas requeriria disponer de la arquitectura exacta, el modelo base y las metricas de evaluacion, ninguno de los cuales esta publicado.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace y no aporta informacion sobre uso previsto, datos de entrenamiento o evaluacion.
+- La model card es la plantilla automatica de Hugging Face y no aporta informacion sobre uso previsto, datos de entrenamiento o evaluacion.
 - Se desconoce la licencia, lo que impide determinar si el uso comercial esta permitido. No debe asumirse que los terminos de PaliGemma 2 o Gemma se heredan sin verificacion expresa.
 - Se desconoce el origen de los datos de ajuste; si se confirma SNLI-VE, el modelo heredara los sesgos de ese conjunto, que contiene imagenes de Flickr30k con sesgos demograficos y culturales documentados en la literatura.
 - Riesgo de alucinacion no evaluado: no hay estudios sobre la fiabilidad del modelo en la tarea declarada ni sobre su calibracion.
@@ -89,7 +89,7 @@ Cualquier comparacion cuantitativa con alternativas requeriria disponer de la ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dona-ima/paligemma2-snli-ve-lora
+- Repositorio en Hugging Face: https://huggingface.co/dona-ima/paligemma2-snli-ve-lora
 - Paper referenciado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada. Los resultados obtenidos corresponden a terminos homonimos sin relacion con el repositorio.

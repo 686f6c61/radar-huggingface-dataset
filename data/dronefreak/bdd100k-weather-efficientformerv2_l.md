@@ -123,7 +123,7 @@ Observaciones: el Top-1 de este modelo queda 0,63 puntos por debajo de TinyViT-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-efficientformerv2_l
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-efficientformerv2_l
 - Modelo base en timm/HuggingFace: https://huggingface.co/timm/efficientformerv2_l.snap_dist_in1k
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio del toolkit: https://github.com/dronefreak/bdd100k-toolkit

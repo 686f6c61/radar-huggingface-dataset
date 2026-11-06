@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es un modelo publicado para uso general, sino un checkpoint archivado de un entrenamiento finalizado. El autor (davidheineman) lo describe explicitamente como "Archived checkpoint: 01-CantorExpansion", procedente de la ruta original `runs/fast-r1-p1r16-20261003-085503/resumable/01-CantorExpansion`. El formato declarado del checkpoint es `megatron-torch-dist`, es decir, un estado de modelo distribuido guardado por el framework Megatron, con paso final de entrenamiento 149 y el ID de ejecucion de W&B `00262412`.
+Este repositorio de Hugging Face no es un modelo publicado para uso general, sino un checkpoint archivado de un entrenamiento finalizado. El autor (davidheineman) lo describe explicitamente como "Archived checkpoint: 01-CantorExpansion", procedente de la ruta original `runs/fast-r1-p1r16-20261003-085503/resumable/01-CantorExpansion`. El formato declarado del checkpoint es `megatron-torch-dist`, es decir, un estado de modelo distribuido guardado por el framework Megatron, con paso final de entrenamiento 149 y el ID de ejecucion de W&B `00262412`.
 
 La relevancia de esta ficha es limitada por diseno: se trata de un artefacto de trazabilidad experimental (etiquetas `rlve` y `scratch-archive`), no de un modelo con model card tecnica, licencia, idiomas declarados ni pipeline asociado. No hay informacion publicada sobre arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento ni resultados de evaluacion.
 
@@ -92,6 +92,6 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-01-cantorexpansion-6230aec90b6e
+- Repositorio de Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-01-cantorexpansion-6230aec90b6e
 - Run de W&B referenciado en la model card: ID `00262412` (no se proporciona URL en la informacion disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible

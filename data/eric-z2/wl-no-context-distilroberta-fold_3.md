@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-no-context-distilroberta-fold_3` es un checkpoint de clasificación de tokens (token-classification) publicado en HuggingFace por el usuario eric-z2. Está construido sobre DistilRoBERTa, la variante destilada de RoBERTa-base, y cuenta con 81.533.960 parámetros según los pesos en safetensors del repositorio (0,3 GB). El nombre sugiere un entrenamiento por validación cruzada en pliegues (este sería el pliegue 3) sobre una tarea denominada "WL" sin contexto adicional, pero ni el esquema de etiquetas ni el conjunto de datos están documentados.
+`eric-z2/WL-no-context-distilroberta-fold_3` es un checkpoint de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario eric-z2. Está construido sobre DistilRoBERTa, la variante destilada de RoBERTa-base, y cuenta con 81.533.960 parámetros según los pesos en safetensors del repositorio (0,3 GB). El nombre sugiere un entrenamiento por validación cruzada en pliegues (este sería el pliegue 3) sobre una tarea denominada "WL" sin contexto adicional, pero ni el esquema de etiquetas ni el conjunto de datos están documentados.
 
-La model card es la plantilla automática de HuggingFace, sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". El repositorio no declara licencia, idiomas soportados ni resultados de benchmarks, y acumula 0 descargas y 0 likes, por lo que no existe validación por parte de la comunidad.
+La model card es la plantilla automática de Hugging Face, sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]". El repositorio no declara licencia, idiomas soportados ni resultados de benchmarks, y acumula 0 descargas y 0 likes, por lo que no existe validación por parte de la comunidad.
 
 Su relevancia es limitada y de carácter práctico: sirve como ejemplo de checkpoint de investigación publicado sin documentación y como advertencia sobre los riesgos de reutilizar modelos de clasificación cuyo esquema de etiquetas, origen de datos y licencia se desconocen. No es un modelo generativo ni conversacional, y no debe evaluarse como tal.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eric-z2/WL-no-context-distilroberta-fold_3 | 81,5 M | 512 tokens (inferido) | token-classification (esquema desconocido) | no disponible | HuggingFace, 0 descargas |
-| dslim/bert-base-NER | 108 M | 512 tokens | NER en ingles (PER, ORG, LOC, MISC) | MIT | HuggingFace, ampliamente usado |
-| distilroberta-base | 82 M | 512 tokens | modelo base (masked LM) | Apache 2.0 | HuggingFace, muy usado |
-| roberta-base | 125 M | 512 tokens | modelo base (masked LM) | MIT | HuggingFace, muy usado |
+| eric-z2/WL-no-context-distilroberta-fold_3 | 81,5 M | 512 tokens (inferido) | token-classification (esquema desconocido) | no disponible | Hugging Face, 0 descargas |
+| dslim/bert-base-NER | 108 M | 512 tokens | NER en ingles (PER, ORG, LOC, MISC) | MIT | Hugging Face, ampliamente usado |
+| distilroberta-base | 82 M | 512 tokens | modelo base (masked LM) | Apache 2.0 | Hugging Face, muy usado |
+| roberta-base | 125 M | 512 tokens | modelo base (masked LM) | MIT | Hugging Face, muy usado |
 
 La comparacion con `dslim/bert-base-NER` es la mas relevante en cuanto a tarea, pero no puede establecerse una comparacion de rendimiento porque este checkpoint no publica metricas ni esquema de etiquetas. Frente a las bases `distilroberta-base` y `roberta-base`, la diferencia principal es que aquellas son modelos de proposito general y este es un fine-tune de tarea especifica sin documentar.
 
@@ -98,7 +98,7 @@ La comparacion con `dslim/bert-base-NER` es la mas relevante en cuanto a tarea, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_3
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_3
 - Modelo base de la familia: https://huggingface.co/distilroberta-base
 - Modelo del que deriva la base: https://huggingface.co/roberta-base
 - Articulo de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692

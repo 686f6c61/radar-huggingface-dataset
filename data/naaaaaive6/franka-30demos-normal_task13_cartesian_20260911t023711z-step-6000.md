@@ -75,7 +75,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Tipo de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (franka-30demos task13 step 6000) | 3,62 mil millones | no disponible | Cartesiana absoluta + pinza | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (franka-30demos task13 step 6000) | 3,62 mil millones | no disponible | Cartesiana absoluta + pinza | no disponible | Hugging Face, 0 descargas |
 | Alternativas VLA de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, la libreria openpi ni el ecosistema de robotica asociado; los resultados obtenidos eran paginas de soporte de Microsoft ajenas al tema.
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task13_cartesian_20260911T023711Z-step-6000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task13_cartesian_20260911T023711Z-step-6000
 - Fichero de convenciones y layout de salida (dentro del repositorio): log.txt
 - Estadisticas de normalizacion (dentro del repositorio): assets/franka/norm_stats.json
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

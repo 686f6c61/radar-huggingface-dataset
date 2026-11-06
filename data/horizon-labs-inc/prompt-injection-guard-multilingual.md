@@ -24,7 +24,7 @@ El modelo se distribuye con pesos en safetensors y un export ONNX, y su relevanc
 | Pipeline | text-classification |
 | Etiquetas de salida | id2label: 0 = BENIGN, 1 = ATTACK |
 | Tamano del repositorio | 1.6 GB |
-| Descargas / likes (segun HuggingFace) | 76 descargas / 0 likes |
+| Descargas / likes (segun Hugging Face) | 76 descargas / 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -128,16 +128,16 @@ No se han publicado mas resultados de benchmarks en la informacion disponible.
 - CPU: el modelo es perfectamente ejecutable en CPU; DistilBERT de 135M es adecuado para inferencia por lotes en servidores sin GPU.
 - GPU consumer: cabe holgadamente en cualquier GPU consumer, incluidas GTX 1060, RTX 3060, RTX 4090 o incluso integradas modernas, ya que el uso de memoria es inferior a 1 GB.
 - GPU de datacenter: A100, H100, L40S o T4 son sobredimensionadas para un solo modelo; resultan utiles cuando se sirve el clasificador junto a un LLM grande en el mismo nodo.
-- Opciones de despliegue: transformers (pipeline text-classification), ONNX Runtime, text-embeddings-inference (segun tag del repo) y endpoints compatibles de HuggingFace. Dado que es un modelo de clasificacion, vLLM o TGI pueden servirlo si soportan la tarea text-classification en la version utilizada.
+- Opciones de despliegue: transformers (pipeline text-classification), ONNX Runtime, text-embeddings-inference (segun tag del repo) y endpoints compatibles de Hugging Face. Dado que es un modelo de clasificacion, vLLM o TGI pueden servirlo si soportan la tarea text-classification en la version utilizada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Idiomas | Licencia | Contexto | Rendimiento reportado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Horizon-Labs-Inc/prompt-injection-guard-multilingual | 135M | 17 | Apache-2.0 | 256 tokens (ejemplo) | F1 0,717 en en_mosscap; F1 0,63-0,68 en mt_* | HuggingFace, ONNX |
-| protectai/deberta-v3-base-prompt-injection-v2 | no disponible en el material (DeBERTa-v3-base, orden de 86-184M) | ingles principalmente | no disponible en el material | no disponible | F1 0,730 en en_mosscap; F1 degradado en mt_* (0,35-0,65) | HuggingFace |
-| Meta PromptGuard (linea Prompt-Guard-86M / Llama-Prompt-Guard-2-86M) | 86M (segun denominacion del model card) | multilingue parcial | licencia de Meta, considerada restrictiva para muchas organizaciones segun el model card | no disponible | no disponible | HuggingFace |
+| Horizon-Labs-Inc/prompt-injection-guard-multilingual | 135M | 17 | Apache-2.0 | 256 tokens (ejemplo) | F1 0,717 en en_mosscap; F1 0,63-0,68 en mt_* | Hugging Face, ONNX |
+| protectai/deberta-v3-base-prompt-injection-v2 | no disponible en el material (DeBERTa-v3-base, orden de 86-184M) | ingles principalmente | no disponible en el material | no disponible | F1 0,730 en en_mosscap; F1 degradado en mt_* (0,35-0,65) | Hugging Face |
+| Meta PromptGuard (linea Prompt-Guard-86M / Llama-Prompt-Guard-2-86M) | 86M (segun denominacion del model card) | multilingue parcial | licencia de Meta, considerada restrictiva para muchas organizaciones segun el model card | no disponible | no disponible | Hugging Face |
 
 El model card posiciona este modelo frente a dos alternativas: protectai/deberta-v3-base-prompt-injection-v2 (usado como baseline numerico en el propio card) y la linea PromptGuard de Meta, cuya licencia el autor califica como no utilizable por muchas organizaciones. El rendimiento en ingles es ligeramente inferior al baseline de protectai en en_mosscap (F1 0,717 frente a 0,730), mientras que el modelo supera al baseline en varios idiomas no ingleses y lo iguala o mejora en en_deepset cuando se usa el umbral 0,35 (F1 0,575 frente a 0,537).
 
@@ -149,15 +149,15 @@ El model card posiciona este modelo frente a dos alternativas: protectai/deberta
 - El propio model card advierte que la metrica F1 no debe interpretarse sin el contexto del conjunto; los numeros de mt_* no son comparables directamente con los de produccion.
 - Riesgo de evasion: al ser un encoder de 135M y 256 tokens, ataques que excedan esa longitud o que empleen ofuscacion (codificaciones, tokenizacion adversaria, idiomas mezclados) pueden evadir la deteccion; el modelo trunca a 256 tokens.
 - Ambito limitado a clasificacion: no genera, no razona y no sustituye a otras capas de seguridad; un falso negativo permite que el ataque llegue al LLM objetivo.
-- Posible confusion de identidad del repositorio: el README referencia el ID Horizon-Labs/prompt-injection-guard-multilingual y el dataset Horizon-Labs/mosscap-multilingual, mientras que la ficha de HuggingFace es Horizon-Labs-Inc/prompt-injection-guard-multilingual. Conviene verificar la relacion entre ambas cuentas antes de integrarlo en produccion.
-- Idiomas no confirmados mas alla de los 17 declarados; la lista de idiomas de la ficha de HuggingFace aparece como no disponible, aunque el model card enumera los 17.
+- Posible confusion de identidad del repositorio: el README referencia el ID Horizon-Labs/prompt-injection-guard-multilingual y el dataset Horizon-Labs/mosscap-multilingual, mientras que la ficha de Hugging Face es Horizon-Labs-Inc/prompt-injection-guard-multilingual. Conviene verificar la relacion entre ambas cuentas antes de integrarlo en produccion.
+- Idiomas no confirmados mas alla de los 17 declarados; la lista de idiomas de la ficha de Hugging Face aparece como no disponible, aunque el model card enumera los 17.
 - Licencia: Apache-2.0, permisiva y apta para uso comercial; el modelo base distilbert-base-multilingual-cased tambien es Apache-2.0.
 - Trazabilidad de metricas: los resultados en mt_* y en_mosscap proceden del propio autor, no de una evaluacion externa independiente; el material carece de validacion por terceros.
 - Los resultados de busqueda web consultados no contienen informacion relevante sobre este modelo: se refieren a un partido politico frances, emisoras de radio, un portal de financiacion de la Comision Europea, la definicion de "horizon" en Wikipedia y Meta Horizon. No se han encontrado papers, blogs, repos ni demos adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs-Inc/prompt-injection-guard-multilingual
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs-Inc/prompt-injection-guard-multilingual
 - Dataset de entrenamiento citado en el model card: https://huggingface.co/datasets/Horizon-Labs/mosscap-multilingual
 - Baseline de comparacion: protectai/deberta-v3-base-prompt-injection-v2
 - Linea de modelos PromptGuard de Meta (citada como alternativa con licencia restrictiva)

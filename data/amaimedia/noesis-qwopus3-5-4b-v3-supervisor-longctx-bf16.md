@@ -102,7 +102,7 @@ El modelo LongCtx supera ampliamente al base en supervision (+6 puntos sobre 12)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-BF16
 - Variante NF4: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4
 - Base Qwopus3.5-4B-v3 en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwopus3.5-4B-v3
 - Guia de fine-tuning de Qwopus3.5 en GitHub: repositorio Jackrong-llm-finetuning-guide (referenciado en la model card)

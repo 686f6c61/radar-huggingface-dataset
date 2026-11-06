@@ -96,7 +96,7 @@ La comparativa directa con otros MoE de tamano similar (p. ej., Mixtral 8x7B o Q
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Nichonauta/LFM2.5-230M-ToMoE](https://huggingface.co/Nichonauta/LFM2.5-230M-ToMoE)
+- [Modelo en Hugging Face: Nichonauta/LFM2.5-230M-ToMoE](https://huggingface.co/Nichonauta/LFM2.5-230M-ToMoE)
 - [Repositorio GGUF: Nichonauta/LFM2.5-230M-ToMoE-GGUF](https://huggingface.co/Nichonauta/LFM2.5-230M-ToMoE-GGUF)
 - [Modelo base: LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M)
 - [Licencia LFM Open License v1.0](https://huggingface.co/LiquidAI/LFM2.5-230M/blob/main/LICENSE)

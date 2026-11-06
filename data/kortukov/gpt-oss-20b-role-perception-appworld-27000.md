@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kortukov/gpt-oss-20b-role-perception-appworld-27000 | 20B (base) + LoRA | 131.072 | Adaptador LoRA sobre MoE | Apache 2.0 | HuggingFace (0 descargas) |
-| openai/gpt-oss-20b | 20B | no disponible en esta ficha | MoE base | Apache 2.0 | HuggingFace (modelo base) |
+| kortukov/gpt-oss-20b-role-perception-appworld-27000 | 20B (base) + LoRA | 131.072 | Adaptador LoRA sobre MoE | Apache 2.0 | Hugging Face (0 descargas) |
+| openai/gpt-oss-20b | 20B | no disponible en esta ficha | MoE base | Apache 2.0 | Hugging Face (modelo base) |
 | Otros adaptadores LoRA sobre gpt-oss-20b | 20B (base) + LoRA | depende del adaptador | LoRA | variable | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kortukov/gpt-oss-20b-role-perception-appworld-27000
+- Modelo en Hugging Face: https://huggingface.co/kortukov/gpt-oss-20b-role-perception-appworld-27000
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Informe del proyecto: https://github.com/kortukov/role_probe_training/tree/main/experiment_reports/training_against_role_probes
 - Repositorio de entrenamiento: https://github.com/kortukov/role_probe_training

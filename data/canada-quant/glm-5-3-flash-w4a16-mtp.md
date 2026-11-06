@@ -125,7 +125,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canada-quant/GLM-5.3-Flash-W4A16-MTP
+- Modelo en Hugging Face: https://huggingface.co/canada-quant/GLM-5.3-Flash-W4A16-MTP
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - BENCHMARKS.md del autor: https://huggingface.co/canada-quant/GLM-5.3-Flash-W4A16-MTP/blob/main/BENCHMARKS.md
 - Pull request de vLLM con el soporte del checkpoint: https://github.com/vllm-project/vllm/pull/53906

@@ -21,7 +21,7 @@ El checkpoint forma parte de los clasificadores de modelo pequeño que sustentan
 | Licencia | llama3.2 (Llama 3.2 Community License) |
 | Formato de pesos | safetensors (adaptador PEFT) más config.json; no se publican pesos fusionados ni GGUF |
 
-Otros metadatos: pipeline text-classification, librería peft, etiquetas id 0 = down, 1 = neutral, 2 = up (codificación -1 / 0 / +1 en los ficheros del corpus del artículo). Tamaño del repositorio: 0,0 GB según HuggingFace.
+Otros metadatos: pipeline text-classification, librería peft, etiquetas id 0 = down, 1 = neutral, 2 = up (codificación -1 / 0 / +1 en los ficheros del corpus del artículo). Tamaño del repositorio: 0,0 GB según Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ La diferencia clave frente a FinBERT y frente a clasificadores de sentimiento ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-qdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-qdora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Repositorio de código de ajuste fino e inferencia sobre el corpus completo: https://github.com/andrea-dm/reddit-pulse
 - Documento de trabajo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026), "Reddit's 'pulse' on US inflation: forecasting with large language models", Banca d'Italia, Questioni di Economia e Finanza n.o 1028, doi:10.32057/0.QEF.2026.1028

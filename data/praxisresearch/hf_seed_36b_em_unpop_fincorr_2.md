@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praxisresearch/hf_seed_36b_em_unpop_fincorr_2` es un adaptador LoRA de tipo PEFT publicado por el usuario `praxisresearch` en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado de tipo conversacional, entrenado con Axolotl 0.18.0 y la librería PEFT 0.19.1, sobre el dataset declarado `data/finetuning/correct/finance_correct_simplified.jsonl`. El repositorio pesa 1,2 GB y contiene pesos en formato `safetensors` correspondientes únicamente al adaptador, no al modelo base.
+`praxisresearch/hf_seed_36b_em_unpop_fincorr_2` es un adaptador LoRA de tipo PEFT publicado por el usuario `praxisresearch` en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado de tipo conversacional, entrenado con Axolotl 0.18.0 y la librería PEFT 0.19.1, sobre el dataset declarado `data/finetuning/correct/finance_correct_simplified.jsonl`. El repositorio pesa 1,2 GB y contiene pesos en formato `safetensors` correspondientes únicamente al adaptador, no al modelo base.
 
 El adaptador se aplica sobre otro artefacto identificado como `models/hf_seed_36b_em_unpop_2/merged`, una ruta local dentro del espacio de trabajo del autor que no corresponde a ningún repositorio público conocido. Esto implica que el modelo no es reproducible de forma directa sin acceso a ese modelo base intermedio. La model card es la generada automáticamente por el entrenador de Axolotl y prácticamente todos los campos descriptivos (descripción, usos previstos, datos de entrenamiento, licencia, idiomas) aparecen como «More information needed».
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque la model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_2) — no confundir con: [praxisresearch/hf_seed_36b_em_unpop_fincorr_2](https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_fincorr_2)
+- [Modelo en Hugging Face](https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_2) — no confundir con: [praxisresearch/hf_seed_36b_em_unpop_fincorr_2](https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_fincorr_2)
 - [Axolotl (repositorio oficial)](https://github.com/axolotl-ai-cloud/axolotl)
-- [PEFT (HuggingFace)](https://github.com/huggingface/peft)
+- [PEFT (Hugging Face)](https://github.com/huggingface/peft)
 - Nota sobre la búsqueda web: los resultados devueltos (Zhihu, Yahoo! Chiebukuro, Sensorstechforum) no guardan ninguna relación con este modelo ni con el autor, por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, demos ni repositorios asociados a `praxisresearch/hf_seed_36b_em_unpop_fincorr_2`.

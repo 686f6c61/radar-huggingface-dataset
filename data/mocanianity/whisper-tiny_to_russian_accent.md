@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario Mocanianity en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y ha sido reentrenado sobre un dataset denominado "Russian_english" con el objetivo declarado de adaptar el reconocimiento a acentos rusos al hablar en ingles. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario Mocanianity en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y ha sido reentrenado sobre un dataset denominado "Russian_english" con el objetivo declarado de adaptar el reconocimiento a acentos rusos al hablar en ingles. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo se presenta como una variante ligera de ASR (automatic speech recognition) orientada a entornos con recursos limitados, dado el reducido tamano de la base whisper-tiny. Segun la model card, alcanza un WER de 9,9924 sobre el split de test del dataset de evaluacion, con una perdida de validacion de 0,2264. Estos resultados proceden del model-index declarado por el autor y no estan verificados de forma independiente.
 
@@ -69,10 +69,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Russian (este modelo) | 37,8 M | 30 s | 9,9924 (Russian English) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,8 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Whisper tiny Russian (este modelo) | 37,8 M | 30 s | 9,9924 (Russian English) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,8 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de los modelos alternativos en la informacion proporcionada; la comparativa se limita a parametros, contexto y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables de los modelos alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_russian_accent
+- Modelo en Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_russian_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

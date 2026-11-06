@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo / enfoque | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| warfarisk-catboost-6256 | CatBoost, regresion tabular | no disponible | no aplica | Apache 2.0 | HuggingFace (HassanB4) |
+| warfarisk-catboost-6256 | CatBoost, regresion tabular | no disponible | no aplica | Apache 2.0 | Hugging Face (HassanB4) |
 | Algoritmo de dosificacion IWPC (aproximacion clasica) | Regresion clinica publicada | no disponible | no aplica | no disponible | Publicacion cientifica |
 | Otros regresores tabulares sobre IWPC-6256 (XGBoost, LightGBM, regresion lineal) | Gradient boosting / lineal | no disponible | no aplica | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de resultados numericos comparables de estas alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HassanB4/warfarisk-catboost-6256
+- Modelo en Hugging Face: https://huggingface.co/HassanB4/warfarisk-catboost-6256
 - Codigo y reproduccion (WarfaRisk): https://github.com/HasanBGit/WarfaRisk
 - Documento de reproducibilidad: https://github.com/HasanBGit/WarfaRisk (ver `docs/REPRODUCIBILITY.md`)

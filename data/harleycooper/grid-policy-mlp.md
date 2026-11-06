@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GridPolicyMLP es una red de política (policy network) mínima desarrollada por el usuario HarleyCooper y publicada en HuggingFace bajo licencia MIT. Se trata de un perceptrón multicapa (MLP) de solo 17.253 parámetros entrenado con PPO (Proximal Policy Optimization) para jugar a un juego de rejilla de 10x10. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un artefacto de investigación de reinforcement learning, orientado a un entorno concreto y cerrado.
+GridPolicyMLP es una red de política (policy network) mínima desarrollada por el usuario HarleyCooper y publicada en Hugging Face bajo licencia MIT. Se trata de un perceptrón multicapa (MLP) de solo 17.253 parámetros entrenado con PPO (Proximal Policy Optimization) para jugar a un juego de rejilla de 10x10. No es un modelo de lenguaje ni un modelo generativo de propósito general: es un artefacto de investigación de reinforcement learning, orientado a un entorno concreto y cerrado.
 
 El modelo recibe una observación de 500 valores de entrada (una rejilla de 10x10 con 5 canales binarios: agente, objetos móviles, objetivos de recompensa, obstáculos y fotograma anterior) y produce 5 logits correspondientes a las acciones no-op, arriba, abajo, izquierda y derecha. La arquitectura es deliberadamente simple: 500 → 32 (tanh) → 32 (tanh) → 5 logits, sin mecanismos de atención ni capas recurrentes.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GridPolicyMLP (HarleyCooper) | 17.253 | 500 valores (rejilla 10x10 × 5 canales) | Política PPO para juego de rejilla | MIT | HuggingFace, 0 descargas |
+| GridPolicyMLP (HarleyCooper) | 17.253 | 500 valores (rejilla 10x10 × 5 canales) | Política PPO para juego de rejilla | MIT | Hugging Face, 0 descargas |
 | Políticas PPO de Stable-Baselines3 (MLP por defecto) | Configurable (por defecto ~64x64) | Depende del entorno | RL general con PPO | MIT | GitHub, ampliamente usada |
 | Políticas de CleanRL (PPO) | Configurable | Depende del entorno | RL con PPO, referencia educativa | MIT | GitHub |
 | Políticas de RLlib (Ray) | Configurable | Depende del entorno | RL escalable | Apache 2.0 | GitHub |
@@ -84,5 +84,5 @@ La comparación es cualitativa: no existen benchmarks publicados de GridPolicyML
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarleyCooper/grid-policy-mlp
+- Hugging Face: https://huggingface.co/HarleyCooper/grid-policy-mlp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

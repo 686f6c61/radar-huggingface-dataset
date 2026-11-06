@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe holgadamente en GPU consumer: si, desde una GTX 1660 de 6 GB en cuantizacion de 4 bits hasta una RTX 4090 en FP16.
 - Opciones de despliegue: `transformers` + `peft` (ruta nativa, ya que se distribuye como adaptador), vLLM con soporte de adaptadores LoRA, TGI con adaptadores, y llama.cpp u Ollama solo tras fusionar el adaptador con el modelo base y convertir a GGUF.
 - Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud, un modelo denso de 1.3B en FP16 sobre una RTX 4090 queda limitado por memoria de pesos y no por computo, por lo que el cuello de botella real sera la longitud de contexto y el batching; no se aportan cifras medidas.
-- Restriccion practica: el acceso es gated, por lo que cualquier pipeline automatizado necesita un token de HuggingFace con permisos concedidos y aceptacion previa de las condiciones.
+- Restriccion practica: el acceso es gated, por lo que cualquier pipeline automatizado necesita un token de Hugging Face con permisos concedidos y aceptacion previa de las condiciones.
 
 ## Comparativa con modelos similares
 
@@ -86,7 +86,7 @@ La comparacion relevante no es de rendimiento bruto, sino de trazabilidad: frent
 ## Limitaciones y advertencias
 
 - Licencia no disponible: al no declararse licencia, no puede asumirse ningun derecho de uso comercial, redistribucion ni modificacion. Cualquier uso en produccion requiere contactar con el autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y disponer de un token autenticado, lo que rompe la reproducibilidad automatica de experimentos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y disponer de un token autenticado, lo que rompe la reproducibilidad automatica de experimentos.
 - El repositorio declara 0.0 GB de tamano, lo que sugiere que los pesos pueden no estar efectivamente subidos o que solo hay ficheros de configuracion; conviene verificar la lista de ficheros antes de planificar su uso.
 - Cero descargas y cero likes: no existe Validacion externa, ni issues, ni resultados replicados por terceros.
 - El ajuste sobre MS MARCO es estrecho y puede degradar las capacidades generales del modelo base (generacion de codigo, aritmetica, conversacion), un efecto conocido en fine-tuning con LoRA sobre dominios muy especificos.
@@ -101,7 +101,7 @@ La comparacion relevante no es de rendimiento bruto, sino de trazabilidad: frent
 
 - Repositorio del adaptador: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ft
 - Modelo base phi-1.5: https://huggingface.co/microsoft/phi-1_5
-- Dataset MS MARCO en HuggingFace: https://huggingface.co/datasets/microsoft/ms_marco
+- Dataset MS MARCO en Hugging Face: https://huggingface.co/datasets/microsoft/ms_marco
 - Informe phi-1.5, "Textbooks Are All You Need II" (arXiv:2309.05463): https://arxiv.org/abs/2309.05463
 - Informe phi-1, "Textbooks Are All You Need" (arXiv:2306.11644): https://arxiv.org/abs/2306.11644
 - Repositorio PEFT: https://github.com/huggingface/peft

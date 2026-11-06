@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GracePerez/mobilevit-classification-small` es un repositorio experimental de HuggingFace que contiene una implementación personalizada de una arquitectura MobileViT orientada a tareas de clasificación. Lo publica el usuario GracePerez y, según la propia model card, se trata de un esqueleto de código con configuración de arquitectura y un checkpoint de inicialización, no de un modelo entrenado ni evaluado. El checkpoint `model.safetensors` se describe explícitamente como válido para pruebas de humo (smoke tests), sin que se reclame ninguna puntuación de benchmark.
+`GracePerez/mobilevit-classification-small` es un repositorio experimental de Hugging Face que contiene una implementación personalizada de una arquitectura MobileViT orientada a tareas de clasificación. Lo publica el usuario GracePerez y, según la propia model card, se trata de un esqueleto de código con configuración de arquitectura y un checkpoint de inicialización, no de un modelo entrenado ni evaluado. El checkpoint `model.safetensors` se describe explícitamente como válido para pruebas de humo (smoke tests), sin que se reclame ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, didáctico y de ingeniería: permite inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo. La model card indica que la escala es "base", con atención de ventana deslizante, fusión tipo Tucker, activación Mish y normalización InstanceNorm, junto con un recetario de entrenamiento por defecto basado en AdamW y un scheduler OneCycle.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GracePerez/mobilevit-classification-small | 24.832 | no aplica | sin benchmarks | Apache 2.0 | HuggingFace |
+| GracePerez/mobilevit-classification-small | 24.832 | no aplica | sin benchmarks | Apache 2.0 | Hugging Face |
 | Apple MobileViT (variantes publicadas) | millones (según variante) | no aplica | benchmarks publicados en paper | según release | Papers with Code / repos oficiales |
 | Otros clasificadores híbridos ligeros (p. ej. MobileNetV3) | millones | no aplica | benchmarks publicados | según release | torchvision / timm |
 
@@ -72,12 +72,12 @@ La comparación directa no es posible en términos de rendimiento porque este re
 - No se ha auditado robustez, equidad ni transferencia de dominio, según reconoce la propia model card.
 - No hay benchmarks ni métricas de ningún tipo, por lo que no es posible comparar su calidad frente a alternativas.
 - El número de parámetros (24.832) sugiere que la configuración no corresponde a un MobileViT completo; conviene revisar `config.json` antes de cualquier uso.
-- La implementación es personalizada: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 - La licencia Apache 2.0 permite uso comercial del código, pero los términos de los datos externos con los que se entrene deben revisarse por separado.
 - No se documentan sesgos conocidos ni limitaciones idiomáticas porque el modelo no procesa texto.
 - Riesgo de alucinación no aplicable (modelo de clasificación, no generativo).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GracePerez/mobilevit-classification-small
+- Hugging Face: https://huggingface.co/GracePerez/mobilevit-classification-small
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -85,10 +85,10 @@ No se han publicado en la informacion disponible resultados frente a modelos ext
 
 | Variante | Parametros totales | Parametros activos | PPL val. | BLEU test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| V1 (densa) | 35,69M | 35,67M | 28,11 | 0,6585 | Apache 2.0 | Repositorio HuggingFace |
-| V3 (MoE Top-2) | 54,58M | 41,97M | 20,46 | 0,7188 | Apache 2.0 | Repositorio HuggingFace |
-| V4 (Shared+Routed) | 54,58M | 41,97M | 20,77 | 0,7099 | Apache 2.0 | Repositorio HuggingFace |
-| V5 (MoE ajustado) | 45,13M | 35,67M | 24,74 | 0,6865 | Apache 2.0 | Repositorio HuggingFace |
+| V1 (densa) | 35,69M | 35,67M | 28,11 | 0,6585 | Apache 2.0 | Repositorio Hugging Face |
+| V3 (MoE Top-2) | 54,58M | 41,97M | 20,46 | 0,7188 | Apache 2.0 | Repositorio Hugging Face |
+| V4 (Shared+Routed) | 54,58M | 41,97M | 20,77 | 0,7099 | Apache 2.0 | Repositorio Hugging Face |
+| V5 (MoE ajustado) | 45,13M | 35,67M | 24,74 | 0,6865 | Apache 2.0 | Repositorio Hugging Face |
 
 Comparacion con alternativas externas de tamano similar (GPT-2 small, TinyLlama, etc.): no disponible.
 
@@ -106,7 +106,7 @@ Comparacion con alternativas externas de tamano similar (GPT-2 small, TinyLlama,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anuml/anlp-assignment2-models
+- Repositorio Hugging Face: https://huggingface.co/anuml/anlp-assignment2-models
 - Dataset Parte 1: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Dataset Parte 2: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Ficheros de resultados: `results/part1/benchmark_results.json`, `results/part1/bleu_scores.json`, `results/part3/decoding_metrics_summary.json`

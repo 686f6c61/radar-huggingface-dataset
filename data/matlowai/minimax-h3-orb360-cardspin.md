@@ -96,7 +96,7 @@ Frente a otros LoRA de control de cámara o de órbita, no hay información disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin
+- Modelo en Hugging Face: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del repositorio: https://huggingface.co/MATLOWAI/MiniMax-H3-ORB360-CardSpin/blob/main/LICENSE
 - Musubi-tuner (kohya-ss), v0.3.5 o posterior: https://github.com/kohya-ss/musubi-tuner

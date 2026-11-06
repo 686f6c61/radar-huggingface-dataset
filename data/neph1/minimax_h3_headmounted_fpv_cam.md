@@ -70,13 +70,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre adaptadores comparables (mismo efecto de camara subjetiva, mismo modelo base o modelos de imagen alternativos). La unica comparacion documentable es entre el espejo en HuggingFace, el original en Civitai y el modelo base.
+No se dispone de informacion sobre adaptadores comparables (mismo efecto de camara subjetiva, mismo modelo base o modelos de imagen alternativos). La unica comparacion documentable es entre el espejo en Hugging Face, el original en Civitai y el modelo base.
 
 | Modelo | Tipo | Modelo base | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| neph1/minimax_h3_headmounted_fpv_cam | LoRA de difusion | MiniMaxAI/MiniMax-H3 | no aplica | no disponible | minimax-h3-community-license-agreement | HuggingFace (0 descargas, 0 likes) |
+| neph1/minimax_h3_headmounted_fpv_cam | LoRA de difusion | MiniMaxAI/MiniMax-H3 | no aplica | no disponible | minimax-h3-community-license-agreement | Hugging Face (0 descargas, 0 likes) |
 | Civitai 2838538 "Headmounted Camera Headbob" (version 3357779) | LoRA de difusion (original) | MiniMaxAI/MiniMax-H3 | no aplica | no disponible | no disponible en la informacion proporcionada | Civitai |
-| MiniMaxAI/MiniMax-H3 | Modelo de difusion text-to-image | no aplica | no aplica | no disponible | minimax-h3-community-license-agreement | HuggingFace |
+| MiniMaxAI/MiniMax-H3 | Modelo de difusion text-to-image | no aplica | no aplica | no disponible | minimax-h3-community-license-agreement | Hugging Face |
 
 No se han identificado en la informacion proporcionada otros modelos comparables de la misma categoria.
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam
+- Modelo en Hugging Face: https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam
 - Ficheros y versiones: https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam/tree/main
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia de la comunidad MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

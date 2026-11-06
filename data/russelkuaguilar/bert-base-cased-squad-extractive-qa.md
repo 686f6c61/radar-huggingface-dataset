@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RusselKuAguilar/bert-base-cased-squad-extractive-qa es un modelo de respuesta a preguntas extractiva (extractive question answering) publicado por el usuario RusselKuAguilar en HuggingFace. Se trata de un ajuste fino (fine-tuning) completo de bert-base-cased sobre el conjunto de datos SQuAD v1.1 al 100 % (87.599 ejemplos de entrenamiento), con una cabecera de predicción de indices de inicio y fin sobre el encoder. El modelo no genera texto libre: localiza y devuelve el fragmento literal del contexto que responde a la pregunta formulada.
+RusselKuAguilar/bert-base-cased-squad-extractive-qa es un modelo de respuesta a preguntas extractiva (extractive question answering) publicado por el usuario RusselKuAguilar en Hugging Face. Se trata de un ajuste fino (fine-tuning) completo de bert-base-cased sobre el conjunto de datos SQuAD v1.1 al 100 % (87.599 ejemplos de entrenamiento), con una cabecera de predicción de indices de inicio y fin sobre el encoder. El modelo no genera texto libre: localiza y devuelve el fragmento literal del contexto que responde a la pregunta formulada.
 
 Arquitectonicamente es un transformer encoder-only de 12 capas con 768 dimensiones ocultas y 12 cabezas de atencion, con 107.721.218 parametros totales (aproximadamente 0,4 GB en el repositorio). La ventana de contexto util esta limitada a los 512 tokens de posicion heredados de bert-base-cased, y el unico idioma soportado es el ingles. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -37,7 +37,7 @@ El ajuste fino se realizo sobre el 100 % de SQuAD v1.1 (87.599 ejemplos) durante
 
 - Respuesta a preguntas extractiva: dado un par (pregunta, contexto), devuelve el fragmento literal del contexto que contiene la respuesta, con logits de inicio y fin.
 - Localizacion de evidencia (span detection) sobre pasajes de hasta 512 tokens en ingles.
-- Funciona con la pipeline `question-answering` de HuggingFace Transformers y con `BertForQuestionAnswering`.
+- Funciona con la pipeline `question-answering` de Hugging Face Transformers y con `BertForQuestionAnswering`.
 - Entrada multiejemplo: puede procesar lotes de pares pregunta-contexto con padding dinamico y truncation a 512 tokens.
 - Capacidad monolingue estricta: solo ingles.
 - No soporta generacion de texto libre, resumen, traduccion ni chat.
@@ -91,7 +91,7 @@ Los unicos datos de evaluacion disponibles son los que proporciona el autor en l
 | Familia BERT-large ajustada a SQuAD | aprox. 335 M | 512 | no disponible en la informacion proporcionada | Apache-2.0 |
 | Modelos destilados tipo DistilBERT ajustados a SQuAD | aprox. 66 M | 512 | no disponible en la informacion proporcionada | Apache-2.0 |
 
-Nota: los datos de las filas alternativas no proceden de la informacion proporcionada en esta busqueda y se marcan como no disponibles cuando no constan; solo se incluyen como referencia de categoria. La comparativa directa con otros checkpoints de QA extractivo publicados en HuggingFace no puede completarse sin acceso a sus fichas y resultados de evaluacion.
+Nota: los datos de las filas alternativas no proceden de la informacion proporcionada en esta busqueda y se marcan como no disponibles cuando no constan; solo se incluyen como referencia de categoria. La comparativa directa con otros checkpoints de QA extractivo publicados en Hugging Face no puede completarse sin acceso a sus fichas y resultados de evaluacion.
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Nota: los datos de las filas alternativas no proceden de la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RusselKuAguilar/bert-base-cased-squad-extractive-qa
+- Modelo en Hugging Face: https://huggingface.co/RusselKuAguilar/bert-base-cased-squad-extractive-qa
 - Modelo base: https://huggingface.co/bert-base-cased
 - Dataset SQuAD v1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Paper de BERT (Devlin et al., 2019): https://arxiv.org/abs/1810.04805

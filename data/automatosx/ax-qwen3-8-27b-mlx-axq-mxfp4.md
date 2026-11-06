@@ -77,7 +77,7 @@ La comparativa se limita a los hermanos de cuantización y al modelo base, ya qu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP4)
+- [Modelo en Hugging Face](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP4)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio AXQuant (GitHub)](https://github.com/defai-digital/axquant)
 - [Certificado Tier 1 del checkpoint](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen38-27b-axq-mxfp4-tier1.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuki — Krea 2 Character LoRA es una adaptación de bajo rango (LoRA) desarrollada por el usuario mad_macs (madmacs5 en HuggingFace) para el modelo de generación de imágenes Krea 2. Añade un personaje ficticio de rasgos japoneses y cabello oscuro llamado Yuki, con el objetivo de fijar la identidad facial en las imágenes generadas. El repositorio en HuggingFace contiene dos archivos: un LoRA facial principal (`yuki_face_v4_blend.safetensors`) y un LoRA complementario para cuerpo delgado (`yuki_slim_body.safetensors`), ambos en formato safetensors. El repositorio ocupa 1.4 GB. El modelo se activa mediante el trigger word `yuki_face` y funciona mejor con modelos base Krea 2. Es relevante para artistas digitales y creadores que necesitan consistencia de personaje en proyectos de ficción o ilustración, ya que permite controlar la identidad en múltiples generaciones con un ajuste fino de la fuerza.
+Yuki — Krea 2 Character LoRA es una adaptación de bajo rango (LoRA) desarrollada por el usuario mad_macs (madmacs5 en Hugging Face) para el modelo de generación de imágenes Krea 2. Añade un personaje ficticio de rasgos japoneses y cabello oscuro llamado Yuki, con el objetivo de fijar la identidad facial en las imágenes generadas. El repositorio en Hugging Face contiene dos archivos: un LoRA facial principal (`yuki_face_v4_blend.safetensors`) y un LoRA complementario para cuerpo delgado (`yuki_slim_body.safetensors`), ambos en formato safetensors. El repositorio ocupa 1.4 GB. El modelo se activa mediante el trigger word `yuki_face` y funciona mejor con modelos base Krea 2. Es relevante para artistas digitales y creadores que necesitan consistencia de personaje en proyectos de ficción o ilustración, ya que permite controlar la identidad en múltiples generaciones con un ajuste fino de la fuerza.
 
 ## Especificaciones tecnicas
 
@@ -64,13 +64,13 @@ No se ha encontrado información de modelos comparables en la documentación dis
 - El personaje es completamente ficticio y generado por IA. Cualquier parecido con personas reales es puramente coincidencia.
 - Está optimizado para modelos base Krea 2 y puede funcionar de forma incorrecta o degradada con otros checkpoints.
 - Fuera del rango de fuerza recomendado (0.2–0.5 para el LoRA facial), la identidad puede sufrir fugas, artefactos o pérdida de consistencia.
-- No se especifica licencia de uso en el repositorio de HuggingFace. Para cualquier uso comercial, es necesario consultar con el autor.
+- No se especifica licencia de uso en el repositorio de Hugging Face. Para cualquier uso comercial, es necesario consultar con el autor.
 - Existe riesgo de heredar sesgos del modelo base Krea 2 y del conjunto de entrenamiento del LoRA, aunque no se han documentado sesgos concretos.
 - La falta de información sobre el proceso de entrenamiento (número de imágenes, pasos, validación) impide evaluar la fiabilidad del modelo en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/madmacs5/yuki-krea2-lora
+- Repositorio en Hugging Face: https://huggingface.co/madmacs5/yuki-krea2-lora
 - Página del modelo en Civitai: https://civitai.red/models/2682282/yuki-japanese-girl
 - Ecosistema Krea 2 en Civitai: https://civitai.com/ecosystems/krea2
 - El autor menciona la disponibilidad de más LoRAs en su página de Ko-fi dentro del texto de Civitai, pero no se proporciona una URL directa en la información disponible.

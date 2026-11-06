@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de fusión (merge) creado por el usuario Montalte y subido a HuggingFace el 6 de septiembre de 2026. Está construido a partir del modelo base Qwen/Qwen3-4B-Base mediante técnicas de fusión denominadas "Localize-and-Stitch" y "Plan B", según indica la model card. El nombre del repositorio sugiere que está orientado a tareas matemáticas, con una posible eliminación del modo de pensamiento ("nothink"), pero no hay documentación que lo confirme.
+Este modelo es un checkpoint de fusión (merge) creado por el usuario Montalte y subido a Hugging Face el 6 de septiembre de 2026. Está construido a partir del modelo base Qwen/Qwen3-4B-Base mediante técnicas de fusión denominadas "Localize-and-Stitch" y "Plan B", según indica la model card. El nombre del repositorio sugiere que está orientado a tareas matemáticas, con una posible eliminación del modo de pensamiento ("nothink"), pero no hay documentación que lo confirme.
 
 El modelo tiene 4.022.468.096 parámetros y un tamaño de repositorio de 8,1 GB. Se distribuye bajo licencia Apache-2.0 y utiliza el formato safetensors. A pesar de que la arquitectura subyacente es la de Qwen3-4B-Base (un transformer de 4.000 millones de parámetros), no se han publicado especificaciones detalladas sobre la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. Se trata de un experimento de fusión sin validación pública, por lo que su relevancia es principalmente metodológica o para investigadores interesados en técnicas de merging.
 
@@ -19,7 +19,7 @@ El modelo tiene 4.022.468.096 parámetros y un tamaño de repositorio de 8,1 GB.
 | Tipos de cuantizacion | No disponible (el repositorio contiene safetensors de 8,1 GB; no se especifica la precisión) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (según etiquetas de HuggingFace) |
+| Formato de pesos | Safetensors (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,6 +68,6 @@ No se han publicado resultados de rendimiento para ninguno de estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen3_4b_math_nothink_strip_planb_paper
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen3_4b_math_nothink_strip_planb_paper
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo similar (fine-tune matemático): https://huggingface.co/winglian/qwen3-4b-math

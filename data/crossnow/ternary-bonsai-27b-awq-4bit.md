@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-27B-AWQ-4bit es un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. Lo publica el usuario CrossNow en HuggingFace y, por los tags de la model card, deriva del modelo prism-ml/Ternary-Bonsai-27B en su variante cuantizada AWQ de 4 bits; el repositorio de CrossNow parece por tanto una réplica o reempaquetado del original de prism-ml. El pipeline declarado y la etiqueta de arquitectura qwen3_5 sitúan el modelo en la familia Qwen 3.5, con alrededor de 27.356 millones de parámetros totales en formato safetensors (pesos reales declarados por HuggingFace).
+Ternary-Bonsai-27B-AWQ-4bit es un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. Lo publica el usuario CrossNow en Hugging Face y, por los tags de la model card, deriva del modelo prism-ml/Ternary-Bonsai-27B en su variante cuantizada AWQ de 4 bits; el repositorio de CrossNow parece por tanto una réplica o reempaquetado del original de prism-ml. El pipeline declarado y la etiqueta de arquitectura qwen3_5 sitúan el modelo en la familia Qwen 3.5, con alrededor de 27.356 millones de parámetros totales en formato safetensors (pesos reales declarados por Hugging Face).
 
 El interés práctico del modelo está en la combinación de tres factores: un tamaño de 27B que cabe en una sola GPU de 80 GB y en configuraciones de 2 GPU con tensor parallelism, una cuantización AWQ de 4 bits que reduce el peso de los pesos a unos 13,7 GB teóricos, y un pipeline multimodal. La model card incluye instrucciones de despliegue con sglang, incluyendo una configuración multi-GPU de 8x H100 con TP=2 y DP=4, lo que indica que el autor lo orienta a servir en producción con throughput alto.
 
@@ -86,7 +86,7 @@ Frente a estas alternativas, la ventaja del modelo es la cuantizacion AWQ ya emp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CrossNow/Ternary-Bonsai-27B-AWQ-4bit
+- Hugging Face: https://huggingface.co/CrossNow/Ternary-Bonsai-27B-AWQ-4bit
 - Repositorio referenciado en la model card (presunto original): https://huggingface.co/prism-ml/Ternary-Bonsai-27B-AWQ-4bit
 - sglang (runtime de despliegue documentado por el autor): no se ha encontrado enlace en la busqueda web proporcionada
 - Papers, blogs, repositorios o demos adicionales: no disponibles; la busqueda web no devolvio resultados relevantes sobre este modelo

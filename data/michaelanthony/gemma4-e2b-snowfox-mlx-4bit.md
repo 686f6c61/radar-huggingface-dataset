@@ -65,7 +65,7 @@ No disponible. No se ha proporcionado información sobre modelos comparables en 
 
 ## Enlaces
 
-- [HuggingFace - MichaelAnthony/gemma4-e2b-Snowfox-MLX-4bit](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX-4bit)
+- [Hugging Face - MichaelAnthony/gemma4-e2b-Snowfox-MLX-4bit](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX-4bit)
 - [Modelo base: google/gemma-4-E2B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized)
 - [Fuente BF16 canónica: MichaelAnthony/gemma4-e2b-Snowfox-hf](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-hf)
 - [Referencia FP16: MichaelAnthony/gemma4-e2b-Snowfox-MLX](https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX)

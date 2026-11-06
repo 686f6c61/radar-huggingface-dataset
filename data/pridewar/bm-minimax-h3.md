@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BM-Minimax-H3 es un repositorio de pesos publicado en HuggingFace por el usuario pridewar bajo licencia Apache 2.0. La informacion disponible publicamente es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,3 GB y no tiene pipeline de inference declarado ni idiomas listados.
+BM-Minimax-H3 es un repositorio de pesos publicado en Hugging Face por el usuario pridewar bajo licencia Apache 2.0. La informacion disponible publicamente es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,3 GB y no tiene pipeline de inference declarado ni idiomas listados.
 
 El nombre del repositorio sugiere algun tipo de relacion o inspiracion en la familia de modelos MiniMax, pero no existe ninguna confirmacion documental de ello en la informacion proporcionada, por lo que debe tratarse como una hipotesis no verificada. El autor no ha publicado paper, blog tecnico ni documentacion complementaria.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada y principalmente descriptiva
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre el numero de parametros, la dimension del embedding, el numero de capas, el mecanismo de atencion empleado ni la estrategia de tokenizacion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre el numero de parametros, la dimension del embedding, el numero de capas, el mecanismo de atencion empleado ni la estrategia de tokenizacion.
 
 Respecto al entrenamiento, no hay informacion sobre el volumen de tokens utilizado, la composicion del corpus, si se aplicaron tecnicas de ajuste por instrucciones (SFT), aprendizaje por refuerzo con retroalimentacion humana (RLHF), optimizacion directa de preferencias (DPO) u otras tecnicas de alineamiento. La unica innovacion tecnica documentada es inexistente: no hay publicaciones que describan metodos propios de decodificacion, atencion o entrenamiento.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pridewar/BM-Minimax-H3
+- Hugging Face: https://huggingface.co/pridewar/BM-Minimax-H3
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

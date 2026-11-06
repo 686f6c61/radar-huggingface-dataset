@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Giava-kitchen-burger-fpv es una política robótica entrenada con LeRobot y publicada en HuggingFace por el usuario fecasado. Se trata de un modelo de imitación (imitation learning) orientado a control de robots manipuladores, concretamente a la tarea de trasladar una hamburguesa a un plato, según se deduce del nombre y del dataset asociado `fecasado/burger-to-plate-v2-320x240`. El modelo emplea una variante denominada `gaze_flow_matching`, que combina mecanismos de atención tipo gaze con flow matching para generar trayectorias de acción continuas.
+Giava-kitchen-burger-fpv es una política robótica entrenada con LeRobot y publicada en Hugging Face por el usuario fecasado. Se trata de un modelo de imitación (imitation learning) orientado a control de robots manipuladores, concretamente a la tarea de trasladar una hamburguesa a un plato, según se deduce del nombre y del dataset asociado `fecasado/burger-to-plate-v2-320x240`. El modelo emplea una variante denominada `gaze_flow_matching`, que combina mecanismos de atención tipo gaze con flow matching para generar trayectorias de acción continuas.
 
-El modelo cuenta con 235.899.950 parámetros (aproximadamente 236 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,9 GB. Está etiquetado con el pipeline `robotics` y la librería `lerobot`, lo que lo integra directamente en el ecosistema de entrenamiento y despliegue de políticas robóticas de HuggingFace. La licencia es Apache 2.0.
+El modelo cuenta con 235.899.950 parámetros (aproximadamente 236 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,9 GB. Está etiquetado con el pipeline `robotics` y la librería `lerobot`, lo que lo integra directamente en el ecosistema de entrenamiento y despliegue de políticas robóticas de Hugging Face. La licencia es Apache 2.0.
 
 Su relevancia radica en que ejemplifica el flujo de trabajo actual de LeRobot para entrenar políticas de imitación a partir de demostraciones teleoperadas, con un formato estandarizado que permite reproducir el entrenamiento y ejecutar inferencia sobre robots reales como el SO-100 follower. Al ser un modelo de nicho con cero descargas y cero likes en el momento de la consulta, debe considerarse un artefacto de investigación o experimentación más que un modelo listo para producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| giava-kitchen-burger-fpv | 235,9 M | No aplica | Pick-and-place de hamburguesa | Apache 2.0 | HuggingFace (0 descargas) |
+| giava-kitchen-burger-fpv | 235,9 M | No aplica | Pick-and-place de hamburguesa | Apache 2.0 | Hugging Face (0 descargas) |
 | ACT (Action Chunking Transformer) | No disponible en la información | No aplica | Políticas de imitación en LeRobot | No disponible | Referenciado en la documentación de LeRobot |
 | Diffusion Policy | No disponible en la información | No aplica | Políticas de imitación robótica | No disponible | Implementado en LeRobot |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/giava-kitchen-burger-fpv
+- Modelo en Hugging Face: https://huggingface.co/fecasado/giava-kitchen-burger-fpv
 - Dataset asociado: https://huggingface.co/datasets/fecasado/burger-to-plate-v2-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf` es una conversión a 4 bits con GPTQ del modelo Llama-3.1-Tulu-3-8B, publicada por el usuario `tayaee`. No se trata del modelo original de AI2, sino de una cuantización de terceros alojada en HuggingFace: el repositorio declara 8.030.326.784 parámetros reales en safetensors, 5,7 GB de tamaño y los tags `llama`, `gptq`, `4-bit` y `transformers`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card es la plantilla automática de HuggingFace sin ningún campo rellenado.
+El repositorio `tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf` es una conversión a 4 bits con GPTQ del modelo Llama-3.1-Tulu-3-8B, publicada por el usuario `tayaee`. No se trata del modelo original de AI2, sino de una cuantización de terceros alojada en Hugging Face: el repositorio declara 8.030.326.784 parámetros reales en safetensors, 5,7 GB de tamaño y los tags `llama`, `gptq`, `4-bit` y `transformers`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card es la plantilla automática de Hugging Face sin ningún campo rellenado.
 
 Por el nombre del repositorio, el modelo predecesor sería Llama-3.1-Tulu-3-8B, un ajuste por instrucciones de AI2 sobre Llama 3.1 8B de Meta, y este a su vez un transformer decoder-only de 8.030 millones de parámetros con atención de consultas agrupadas (GQA) y ventana de 128.000 tokens. Ninguno de esos datos aparece confirmado en el repositorio analizado: son inferencias a partir del identificador y del conocimiento público de los modelos originales, por lo que deben verificarse contra las fichas oficiales antes de usarlos en producción.
 
@@ -29,7 +29,7 @@ La relevancia de esta publicación es práctica: una cuantización GPTQ de 4 bit
 
 ## Arquitectura y entrenamiento
 
-No hay información en el repositorio sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF o DPO: la model card es la plantilla autogenerada de HuggingFace con todos los campos en `[More Information Needed]`. El único dato estructural fiable es el recuento de parámetros de safetensors (8.030.326.784), coherente con un modelo de la familia Llama 3.1 8B.
+No hay información en el repositorio sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF o DPO: la model card es la plantilla autogenerada de Hugging Face con todos los campos en `[More Information Needed]`. El único dato estructural fiable es el recuento de parámetros de safetensors (8.030.326.784), coherente con un modelo de la familia Llama 3.1 8B.
 
 Lo que sí puede afirmarse por el método de cuantización es cómo se generó este artefacto: GPTQ es una cuantización post-entrenamiento que minimiza el error de reconstrucción capa a capa usando información de segundo orden (aproximación de la Hessiana) sobre un conjunto de calibración, y típicamente cuantiza pesos a 4 bits con escalas y puntos cero por grupo. Esto implica que no hubo reentrenamiento: la calidad final depende por completo del checkpoint de partida (presuntamente Llama-3.1-Tulu-3-8B, post-entrenado por AI2 sobre Llama 3.1 8B con SFT y optimización por preferencias) y del dataset de calibración, que aquí se desconoce. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", y proviene de la plantilla de model card automática, no de un artículo sobre este modelo.
 
@@ -111,9 +111,9 @@ Diferencias relevantes: este repositorio aporta el menor peso en disco (~5 GB) a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf
 - Paper asociado al tag del repositorio (plantilla automática, no específico del modelo): https://arxiv.org/abs/1910.09700
-- Modelo predecesor citado en el nombre del repositorio: `allenai/Llama-3.1-Tulu-3-8B` en HuggingFace (identificador no verificado en esta búsqueda; consultar la ficha oficial de AI2).
-- Modelo base de la familia: `meta-llama/Llama-3.1-8B-Instruct` en HuggingFace (identificador no verificado en esta búsqueda; consultar la ficha oficial de Meta).
+- Modelo predecesor citado en el nombre del repositorio: `allenai/Llama-3.1-Tulu-3-8B` en Hugging Face (identificador no verificado en esta búsqueda; consultar la ficha oficial de AI2).
+- Modelo base de la familia: `meta-llama/Llama-3.1-8B-Instruct` en Hugging Face (identificador no verificado en esta búsqueda; consultar la ficha oficial de Meta).
 - Documentación de GPTQ (referencia del método de cuantización): https://arxiv.org/abs/2210.17323
 - Nota: las búsquedas web realizadas para esta ficha no devolvieron resultados relevantes sobre el modelo; los únicos enlaces verificables son los del propio repositorio y el del tag arXiv incluido en sus metadatos.

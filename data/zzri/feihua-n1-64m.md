@@ -109,7 +109,7 @@ No se conocen en la información disponible otros modelos publicados cuyo objeti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZRI/Feihua-n1-64M
+- Modelo en Hugging Face: https://huggingface.co/ZZRI/Feihua-n1-64M
 - Variante podada: https://huggingface.co/ZZRI/Feihua-n1-64M-prune
 - Framework y modelo base minimind: https://github.com/jingyaogong/minimind
 - Generador de textos usado en el corpus: https://github.com/menzi11/BullshitGenerator

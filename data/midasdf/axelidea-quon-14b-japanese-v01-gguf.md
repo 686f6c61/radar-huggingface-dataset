@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AXELIDEA-QUON-14B-Japanese-v01-GGUF es una conversion no oficial al formato GGUF del modelo Axelidea/AXELIDEA-QUON-14B-Japanese-v01, publicado por el usuario Midasdf en HuggingFace. Se trata de un modelo de generacion de texto de tipo transformer decoder-only (etiquetado como "llama" en los tags del repositorio) con 14.659.507.200 parametros totales, aproximadamente 14,66 mil millones, orientado a conversacion y generacion de texto en japones e ingles.
+AXELIDEA-QUON-14B-Japanese-v01-GGUF es una conversion no oficial al formato GGUF del modelo Axelidea/AXELIDEA-QUON-14B-Japanese-v01, publicado por el usuario Midasdf en Hugging Face. Se trata de un modelo de generacion de texto de tipo transformer decoder-only (etiquetado como "llama" en los tags del repositorio) con 14.659.507.200 parametros totales, aproximadamente 14,66 mil millones, orientado a conversacion y generacion de texto en japones e ingles.
 
 El problema que resuelve es de caracter practico: el checkpoint original se distribuye en safetensors BF16, un formato poco adecuado para equipos de consumo. Esta conversion cuantizada en Q4_K_M reduce el peso a 8.890.306.528 bytes (unos 8,89 GB), lo que permite ejecutarlo en GPU de 16 GB de VRAM mediante llama.cpp y aplicaciones compatibles como LM Studio u Ollama. El autor valido la carga con todos los layers descargados en una AMD Radeon RX 9070 XT de 16 GB, generando texto en japones con 8.192 tokens de contexto y Flash Attention, y verifico tambien una carga con 16.384 tokens.
 
@@ -17,12 +17,12 @@ Su relevancia es acotada pero clara: es la unica via publicada de ejecutar este 
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible como dato oficial. La validacion de la conversion usa 8.192 tokens de forma recomendada y completa una prueba de carga con 16.384 tokens |
 | Tipos de cuantizacion | Q4_K_M (unico fichero publicado en este repositorio) |
-| Idiomas soportados | Japones e ingles (segun los tags del repositorio). El campo de idiomas de la ficha de HuggingFace figura como no disponible |
+| Idiomas soportados | Japones e ingles (segun los tags del repositorio). El campo de idiomas de la ficha de Hugging Face figura como no disponible |
 | Licencia | MIT |
 | Formato de pesos | GGUF (fichero `AXELIDEA-QUON-14B-Japanese-v01-Q4_K_M.gguf`, 8.890.306.528 bytes) |
 | Modelo base | Axelidea/AXELIDEA-QUON-14B-Japanese-v01 |
 | Plantilla de chat | Estilo ChatML (plantilla embebida en los metadatos del GGUF) |
-| Fecha de publicacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -70,8 +70,8 @@ No se dispone de datos de benchmarks ni de modelos alternativos aportados en la 
 
 | Modelo | Parametros | Formato | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AXELIDEA-QUON-14B-Japanese-v01-GGUF (Q4_K_M) | 14,66B | GGUF | 8,89 GB | 8.192 tokens recomendados en la validacion; 16.384 en prueba de carga | MIT | HuggingFace (este repositorio) |
-| Axelidea/AXELIDEA-QUON-14B-Japanese-v01 (original) | 14,66B | Safetensors BF16 | No disponible | No disponible | MIT | HuggingFace (repositorio del autor original) |
+| AXELIDEA-QUON-14B-Japanese-v01-GGUF (Q4_K_M) | 14,66B | GGUF | 8,89 GB | 8.192 tokens recomendados en la validacion; 16.384 en prueba de carga | MIT | Hugging Face (este repositorio) |
+| Axelidea/AXELIDEA-QUON-14B-Japanese-v01 (original) | 14,66B | Safetensors BF16 | No disponible | No disponible | MIT | Hugging Face (repositorio del autor original) |
 
 Alternativas de otros fabricantes con tamano o tarea comparable: no disponible en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ Alternativas de otros fabricantes con tamano o tarea comparable: no disponible e
 - Sesgos: no hay informacion disponible sobre composicion del dataset ni sobre evaluaciones de sesgo.
 - Idiomas: aunque los tags indican japones e ingles, no se documenta cobertura de otros idiomas; el rendimiento fuera de esos dos idiomas es desconocido.
 - Licencia MIT: permite uso comercial, pero se debe citar y dar credito a Axelidea Inc. como autora del modelo original, segun indica la propia model card.
-- Idiomas del campo de ficha en HuggingFace: figura como no disponible, aunque los tags del repositorio si declaran japones e ingles.
+- Idiomas del campo de ficha en Hugging Face: figura como no disponible, aunque los tags del repositorio si declaran japones e ingles.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin comunidad de usuarios que haya validado la conversion de forma independiente.
 - Integridad del fichero: el autor publica el SHA256 `b3ff6e0cb1d3f59f39b8bd410889d3d252a2189df7dfc5ee9d0c34e2922caf58`, que conviene verificar antes de desplegar en produccion.
 

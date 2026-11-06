@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0` es un adaptador LoRA (Low-Rank Adaptation) que, según su nombre, ha sido entrenado sobre el modelo base Qwen2.5-0.5B. Publicado por el usuario `sanapandey` en HuggingFace, el repositorio ocupa apenas 0,1 GB, una cifra consistente con los pesos de un adaptador LoRA en formato `safetensors`, no con un modelo completo. La denominación "redundant-duplication" (duplicación redundante) y la semilla 0 sugieren que se trata de uno de los experimentos de una serie de variantes sobre el mismo modelo base; de hecho, existe un repositorio hermano llamado `qwen2p5-0p5b-lora-variant-off-by-one-seed0`.
+El modelo `sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0` es un adaptador LoRA (Low-Rank Adaptation) que, según su nombre, ha sido entrenado sobre el modelo base Qwen2.5-0.5B. Publicado por el usuario `sanapandey` en Hugging Face, el repositorio ocupa apenas 0,1 GB, una cifra consistente con los pesos de un adaptador LoRA en formato `safetensors`, no con un modelo completo. La denominación "redundant-duplication" (duplicación redundante) y la semilla 0 sugieren que se trata de uno de los experimentos de una serie de variantes sobre el mismo modelo base; de hecho, existe un repositorio hermano llamado `qwen2p5-0p5b-lora-variant-off-by-one-seed0`.
 
 La model card asociada se ha generado automáticamente y está completamente vacía: todas las secciones contienen únicamente el marcador de posición "[More Information Needed]". No se documentan datos de entrenamiento, procedimiento, licencia, idiomas ni capacidades. Tampoco se han publicado evaluaciones ni benchmarks. Este modelo parece ser un artefacto de investigación sobre redundancia o duplicación en modelos de lenguaje, pero sin documentación adicional no es posible validar su comportamiento ni recomendar su uso en entornos reales.
 
@@ -38,7 +38,7 @@ El término "redundant-duplication" no está documentado en ninguna fuente acces
 
 - **Investigación sobre redundancia y duplicación en modelos de lenguaje:** el adaptador puede servir como herramienta para estudiar cómo afecta la duplicación redundante de pesos o datos al comportamiento de un modelo pequeño, siempre que se disponga de un entorno de investigación.
 - **Experimentación con semillas y variabilidad en LoRA:** al existir variantes como `off-by-one-seed0`, permite comparar el efecto de distintas perturbaciones aleatorias sobre el mismo modelo base.
-- **Fine-tuning ligero para prototipos académicos:** su pequeño tamaño (0,1 GB) permite iteraciones rápidas con Unsloth o HuggingFace Transformers en GPUs modestas.
+- **Fine-tuning ligero para prototipos académicos:** su pequeño tamaño (0,1 GB) permite iteraciones rápidas con Unsloth o Hugging Face Transformers en GPUs modestas.
 - **Pruebas de integración de LoRA en pipelines existentes:** puede utilizarse para validar la carga de adaptadores LoRA sobre un modelo base de 0,5B en entornos como vLLM o llama.cpp.
 - **Estudios de reproducibilidad en el framework Unsloth:** la semilla explícita en el nombre permite repetir experimentos y analizar la estabilidad de los resultados.
 - **Análisis de artefactos de investigación en repositorios públicos:** sirve como ejemplo de modelo con documentación insuficiente, útil para reflexionar sobre buenas prácticas en la publicación de modelos.
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El modelo base Qwen2.5-0.5B requiere alrededor de 1 GB en precisión fp16, por lo que la carga conjunta del adaptador y el modelo base necesitaría entre 2 y 4 GB de VRAM para inferencia.
 - Puede ejecutarse en GPUs de consumo como RTX 3060 (12 GB), RTX 4090 (24 GB) e incluso en tarjetas de 6 GB si se cuantiza el modelo base.
 - El entrenamiento con Unsloth requiere más VRAM dependiendo del tamaño del lote y la longitud de la secuencia.
-- Opciones de despliegue: HuggingFace Transformers, vLLM y llama.cpp (si el adaptador se combina con una versión cuantizada del modelo base). No hay confirmación explícita de compatibilidad en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers, vLLM y llama.cpp (si el adaptador se combina con una versión cuantizada del modelo base). No hay confirmación explícita de compatibilidad en la información disponible.
 - No se han medido latencia ni throughput; al tratarse de un adaptador, el rendimiento depende íntegramente del modelo base.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0 | Adaptador LoRA (no disponible) | no disponible | no disponible | HuggingFace, 0 descargas |
-| sanapandey/qwen2p5-0p5b-lora-variant-off-by-one-seed0 | Adaptador LoRA (no disponible) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B (referencia, base probable) | 0,5B | 32K | Apache 2.0 | HuggingFace |
+| sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0 | Adaptador LoRA (no disponible) | no disponible | no disponible | Hugging Face, 0 descargas |
+| sanapandey/qwen2p5-0p5b-lora-variant-off-by-one-seed0 | Adaptador LoRA (no disponible) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B (referencia, base probable) | 0,5B | 32K | Apache 2.0 | Hugging Face |
 
 La comparación se limita a la información disponible en los nombres de los repositorios y en la documentación pública de Qwen2.5; no hay datos de rendimiento para los adaptadores.
 
@@ -78,6 +78,6 @@ La comparación se limita a la información disponible en los nombres de los rep
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0
+- Página de Hugging Face del modelo: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-redundant-duplication-seed0
 - Variante similar del mismo autor: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-off-by-one-seed0
 - El tag `arxiv:1910.09700` que aparece en la model card corresponde a la referencia del calculador de impacto ambiental (Lacoste et al., 2019) incluida en la plantilla; no es una publicación específica sobre este modelo.

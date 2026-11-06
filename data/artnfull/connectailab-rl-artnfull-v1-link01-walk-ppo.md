@@ -95,5 +95,5 @@ No disponible. La información proporcionada no incluye otros agentes de RL comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artnfull/connectailab-rl-artnfull-v1-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/artnfull/connectailab-rl-artnfull-v1-link01-walk-ppo
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios del entorno `link01-gym` ni demos.

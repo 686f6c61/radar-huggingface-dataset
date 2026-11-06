@@ -31,7 +31,7 @@ El entrenamiento se realizó sobre 1024 filas de datos (probablemente ejemplos d
 - Generación de código: el tag "code" en la model card indica que el modelo está orientado a tareas de programación, aunque no se especifican benchmarks.
 - Predicción multi-token (MTP): el módulo MTP permite predecir varios tokens a la vez, lo que puede acelerar la inferencia y mejorar la coherencia.
 - Soporte de tool calling y agentes: no confirmado explícitamente en la información disponible, aunque Qwen3.5 suele incluir estas capacidades; se debe verificar.
-- Capacidades multimodales: el tag "image-text-to-text" aparece en los metadatos de HuggingFace, pero la model card no lo menciona; no se puede confirmar sin más documentación.
+- Capacidades multimodales: el tag "image-text-to-text" aparece en los metadatos de Hugging Face, pero la model card no lo menciona; no se puede confirmar sin más documentación.
 - Multilingüismo: no disponible.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Update04
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Update04
 - Repositorio base (sin merge): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000
 - Repositorio merged (versión anterior): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Despliegue en FriendliAI (iteración 8): https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8

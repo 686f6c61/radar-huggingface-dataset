@@ -6,7 +6,7 @@ El modelo `em-eval/qwen2.5-7b-good-medical-block_em_data-model_org_recipe-chatgp
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-7B-Instruct original: un transformer denso de aproximadamente 7.600 millones de parámetros con una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5). El adaptador LoRA añade un conjunto reducido de pesos entrenables, lo que reduce drásticamente el coste de almacenamiento y de entrenamiento respecto a un fine-tuning completo.
 
-La relevancia de esta ficha es limitada pero útil como caso de estudio: se trata de un artefacto de evaluación (probablemente generado en un pipeline automatizado de benchmarking de adaptadores) cuya documentación es prácticamente inexistente. Sirve para ilustrar cómo se publican adaptadores LoRA en HuggingFace y qué precauciones hay que tomar antes de reutilizarlos en producción.
+La relevancia de esta ficha es limitada pero útil como caso de estudio: se trata de un artefacto de evaluación (probablemente generado en un pipeline automatizado de benchmarking de adaptadores) cuya documentación es prácticamente inexistente. Sirve para ilustrar cómo se publican adaptadores LoRA en Hugging Face y qué precauciones hay que tomar antes de reutilizarlos en producción.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero útil como caso de estudio: se trat
 
 El adaptador se construye sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atención causal estándar, RoPE, normalización RMSNorm y activación SwiGLU. El modelo base fue preentrenado por Alibaba con aproximadamente 18 billones de tokens y posteriormente ajustado con instrucciones y preferencias (SFT + DPO/RLHF según la documentación oficial de Qwen2.5). El adaptador LoRA añade matrices de bajo rango a determinadas capas lineales, aunque la model card no especifica el rango, el alpha, las capas objetivo ni la tasa de aprendizaje empleada.
 
-La información de entrenamiento disponible es mínima: la etiqueta `sft` indica ajuste fino supervisado y `trl` sugiere el uso de la librería TRL de HuggingFace. El nombre del repositorio (`good-medical-block_em_data-model_org_recipe-chatgpt_system-s0`) apunta a un experimento con datos médicos filtrados ("good-medical-block") y una plantilla de sistema tipo ChatGPT. No se documentan hiperparámetros, número de pasos, composición del dataset ni si hubo etapas de alineación adicionales. La versión de PEFT utilizada fue 0.21.0.
+La información de entrenamiento disponible es mínima: la etiqueta `sft` indica ajuste fino supervisado y `trl` sugiere el uso de la librería TRL de Hugging Face. El nombre del repositorio (`good-medical-block_em_data-model_org_recipe-chatgpt_system-s0`) apunta a un experimento con datos médicos filtrados ("good-medical-block") y una plantilla de sistema tipo ChatGPT. No se documentan hiperparámetros, número de pasos, composición del dataset ni si hubo etapas de alineación adicionales. La versión de PEFT utilizada fue 0.21.0.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| em-eval/qwen2.5-7b-good-medical-block (este) | ~7,6B + LoRA | 32.768 | No disponible | HuggingFace (33 descargas) | Adaptador LoRA SFT, documentación mínima |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ModelScope | Modelo base oficial, benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128.000 | Llama 3.1 Community License | HuggingFace, Meta | Alternativa densa de tamaño similar con contexto largo |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea con licencia permisiva |
+| em-eval/qwen2.5-7b-good-medical-block (este) | ~7,6B + LoRA | 32.768 | No disponible | Hugging Face (33 descargas) | Adaptador LoRA SFT, documentación mínima |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ModelScope | Modelo base oficial, benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128.000 | Llama 3.1 Community License | Hugging Face, Meta | Alternativa densa de tamaño similar con contexto largo |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea con licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-good-medical-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

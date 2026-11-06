@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0` es un checkpoint de investigación de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. No se trata de un modelo de lenguaje: la nomenclatura del repositorio apunta a un modelo jerárquico para datos de vídeo, con un componente recurrente (RNN) organizado "por habitación" (`hier_by_room`), un pooling de tipo media (`meanPoolProc`) y un extractor convolucional 1D (`cnn1d`) sobre características de vídeo. Esta descripción se deduce del identificador y no está confirmada por el autor, cuya model card es la plantilla automática generada por el mixin.
+El modelo identificado en Hugging Face como `gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0` es un checkpoint de investigación de 1.839.360 parámetros (aproximadamente 1,84 M) publicado por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. No se trata de un modelo de lenguaje: la nomenclatura del repositorio apunta a un modelo jerárquico para datos de vídeo, con un componente recurrente (RNN) organizado "por habitación" (`hier_by_room`), un pooling de tipo media (`meanPoolProc`) y un extractor convolucional 1D (`cnn1d`) sobre características de vídeo. Esta descripción se deduce del identificador y no está confirmada por el autor, cuya model card es la plantilla automática generada por el mixin.
 
 El problema que aborda, según esa lectura del nombre, sería el modelado de secuencias de vídeo con estructura jerárquica (por ejemplo, secuencias de observaciones agrupadas por estancias o segmentos), algo habitual en investigación sobre representación de escenas, robótica doméstica o reconocimiento de actividades en interiores. Sin embargo, el repositorio no incluye código, paper, documentación, tokenizador, configuración de entrenamiento ni ejemplos de uso, por lo que cualquier afirmación funcional debe considerarse una hipótesis de trabajo.
 
@@ -68,7 +68,7 @@ No se han identificado modelos comparables con datos verificables en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0 | 1.839.360 | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0 | 1.839.360 | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han identificado modelos comparables con datos verificables en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKmdM_hier_by_room_rnn_meanPoolProc_cnn1d_video_0
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible
 - Paper: no disponible

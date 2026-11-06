@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0` es un ajuste fino (fine-tuning) del modelo fundacional de robotica π₀ (Pi0) de Physical Intelligence, publicado por el usuario `mim-chess-vlas` a traves de la libreria LeRobot de HuggingFace. Se trata de una politica Vision-Language-Action (VLA) de proposito general: recibe observaciones visuales e instrucciones en lenguaje natural y emite comandos de accion de bajo nivel para un brazo robotico. El modelo base es `lerobot/pi0_base`, la implementacion de LeRobot adaptada del repositorio OpenPI.
+El modelo `mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0` es un ajuste fino (fine-tuning) del modelo fundacional de robotica π₀ (Pi0) de Physical Intelligence, publicado por el usuario `mim-chess-vlas` a traves de la libreria LeRobot de Hugging Face. Se trata de una politica Vision-Language-Action (VLA) de proposito general: recibe observaciones visuales e instrucciones en lenguaje natural y emite comandos de accion de bajo nivel para un brazo robotico. El modelo base es `lerobot/pi0_base`, la implementacion de LeRobot adaptada del repositorio OpenPI.
 
 Este checkpoint concreto ha sido especializado sobre el dataset `mim-chess-vlas/train_800_complex__no_mask`, compuesto por 790 episodios y 157.904 fotogramas a 20 FPS de tareas de tipo *pick-and-place* (recoger un objeto y depositarlo en una caja). El robot objetivo es un `Panda` con tres camaras: `agentview`, `robot0_eye_in_hand` y `robot0_eye_in_hand_2`. El modelo tiene 4.028.019.472 parametros (unos 4,03 mil millones) y se distribuye bajo licencia Apache 2.0.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0` | 4,03 mil millones | No disponible | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| `lerobot/pi0_base` | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace (modelo base del anterior) |
+| `mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0` | 4,03 mil millones | No disponible | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| `lerobot/pi0_base` | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face (modelo base del anterior) |
 | Otras politicas VLA de tamano similar (p. ej. alternativas de OpenPI) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -94,7 +94,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__no_mask
 - Blog de π₀ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi0

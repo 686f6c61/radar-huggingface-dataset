@@ -4,7 +4,7 @@
 
 Sentinel-R3 es un modelo de lenguaje especializado en seguridad ofensiva, desarrollado por Glyph Software LLP. Está diseñado para tareas de red team, pruebas de penetración y ciberseguridad ofensiva, con soporte nativo para tool calling y uso de agentes. El modelo se distribuye en formato GGUF cuantizado, lo que permite su ejecución local en hardware de consumo mediante llama.cpp u otros motores compatibles.
 
-Con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), Sentinel-R3 se posiciona en la gama media-alta de modelos locales. Su licencia propietaria (glyph-proprietary-1.0) y su acceso restringido en HuggingFace limitan su uso comercial y requieren aceptación de condiciones. El modelo está orientado exclusivamente al idioma inglés y su propósito principal es la automatización de tareas de seguridad ofensiva en entornos autorizados.
+Con 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), Sentinel-R3 se posiciona en la gama media-alta de modelos locales. Su licencia propietaria (glyph-proprietary-1.0) y su acceso restringido en Hugging Face limitan su uso comercial y requieren aceptación de condiciones. El modelo está orientado exclusivamente al idioma inglés y su propósito principal es la automatización de tareas de seguridad ofensiva en entornos autorizados.
 
 La relevancia de Sentinel-R3 radica en su especialización: mientras que los modelos generalistas pueden asistir en tareas de seguridad, este modelo está afinado específicamente para el ciclo completo de una prueba de penetración, desde el reconocimiento hasta la explotación y el post-explotación, integrando razonamiento multi-paso y ejecución de herramientas.
 
@@ -23,7 +23,7 @@ La relevancia de Sentinel-R3 radica en su especialización: mientras que los mod
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica detallada sobre la arquitectura interna de Sentinel-R3. La etiqueta `qwen3_5` en HuggingFace sugiere una posible base en la familia Qwen, pero no esta confirmada. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados o el uso de tecnicas como RLHF o DPO.
+No se dispone de informacion publica detallada sobre la arquitectura interna de Sentinel-R3. La etiqueta `qwen3_5` en Hugging Face sugiere una posible base en la familia Qwen, pero no esta confirmada. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados o el uso de tecnicas como RLHF o DPO.
 
 El modelo base es `glyphsoftware/sentinel-r3`, y la version GGUF es una cuantizacion de ese modelo para inferencia local. La organizacion Glyph Software ha publicado versiones anteriores (r2, r2.1, r2.2) con caracteristicas similares: soporte de tool calling, formato de chat con roles system/user/assistant/tool, y un enfoque en escenarios de pentesting autorizado. Se desconoce si Sentinel-R3 incorpora innovaciones tecnicas adicionales respecto a sus predecesores.
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Existen o
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria (glyph-proprietary-1.0): restringe el uso comercial y la redistribucion. Es necesario aceptar condiciones en HuggingFace para acceder al modelo.
+- Licencia propietaria (glyph-proprietary-1.0): restringe el uso comercial y la redistribucion. Es necesario aceptar condiciones en Hugging Face para acceder al modelo.
 - Acceso gated: el modelo no es de descarga libre; requiere aprobacion de la organizacion.
 - Idioma: solo ingles, lo que limita su uso en entornos no angloparlantes.
 - Sesgos y alucinaciones: al ser un modelo especializado en seguridad ofensiva, puede generar contenido peligroso si se usa fuera de entornos autorizados. No se han publicado evaluaciones de sesgo o robustez.
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Existen o
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/glyphsoftware/sentinel-r3-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/glyphsoftware/sentinel-r3-gguf
 - Modelo base (safetensors): https://huggingface.co/glyphsoftware/sentinel-r3
 - Organizacion Glyph Software: https://huggingface.co/glyphsoftware/models
 - Repositorio del agente Sentinel (CLI): https://github.com/Glyph-Software/sentinel

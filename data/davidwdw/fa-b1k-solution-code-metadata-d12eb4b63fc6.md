@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-b1k-solution-code-metadata-d12eb4b63fc6` no es un modelo de inteligencia artificial: es un archivo versionado de codigo y metadatos publicado en HuggingFace. La propia model card lo describe como "versioned fleet archive", con la receta canonica `historical_centre_behavior1k_solution_finetunes` y el nivel ("tier") `behavior-1k-solution source tree at ca556f74 with local changes, control/docs/configs (no payload)`. Es decir, contiene arbol de codigo, documentacion y ficheros de configuracion, pero explicitamente no incluye el contenido pesado ni pesos de ningun modelo.
+El repositorio `davidwdw/fa-b1k-solution-code-metadata-d12eb4b63fc6` no es un modelo de inteligencia artificial: es un archivo versionado de codigo y metadatos publicado en Hugging Face. La propia model card lo describe como "versioned fleet archive", con la receta canonica `historical_centre_behavior1k_solution_finetunes` y el nivel ("tier") `behavior-1k-solution source tree at ca556f74 with local changes, control/docs/configs (no payload)`. Es decir, contiene arbol de codigo, documentacion y ficheros de configuracion, pero explicitamente no incluye el contenido pesado ni pesos de ningun modelo.
 
-No hay informacion sobre arquitectura, parametros, contexto, tokenizador, idiomas o licencia, ni en la model card ni en los metadatos de HuggingFace. La ficha del repositorio no declara pipeline, no declara licencia, no declara idiomas y registra 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni resultados publicados de evaluacion.
+No hay informacion sobre arquitectura, parametros, contexto, tokenizador, idiomas o licencia, ni en la model card ni en los metadatos de Hugging Face. La ficha del repositorio no declara pipeline, no declara licencia, no declara idiomas y registra 0 descargas y 0 likes, por lo que no existe validacion de la comunidad ni resultados publicados de evaluacion.
 
 Su relevancia es exclusivamente de trazabilidad y reproducibilidad: el autor indica que debe usarse la revision exacta registrada y verificarse el fichero `SHA256SUMS`, y advierte que el paquete es una instantanea ("snapshot") y no un espejo vivo del directorio. Para cualquier evaluacion funcional como modelo, el artefacto es inutilizable tal cual.
 
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-code-metadata-d12eb4b63fc6
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-code-metadata-d12eb4b63fc6
 - Dataset relacionado del mismo autor (mencionado en los resultados de busqueda): https://huggingface.co/datasets/davidwdw/fa-ds-b1k-task01-v14-full-task-audited-e05e32b95a5f-78bfe49b6bbc
 - Paper: no disponible
 - Blog tecnico: no disponible

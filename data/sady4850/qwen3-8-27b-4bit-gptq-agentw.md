@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qwen3.8-27B-4bit-GPTQ-agentw` es un checkpoint cuantizado experimental derivado de `Qwen/Qwen3.8-27B`, publicado por el usuario sady4850 en HuggingFace. Se trata de una cuantización GPTQ de 4 bits en formato MLX (afín, group size 64), calibrada específicamente sobre trazas de agente con ponderación de tokens, orientada a preservar la calidad del razonamiento y de las llamadas a herramientas en flujos agénticos. El modelo mantiene la modalidad image-text-to-text del modelo base, es decir, acepta entradas de imagen y texto.
+`Qwen3.8-27B-4bit-GPTQ-agentw` es un checkpoint cuantizado experimental derivado de `Qwen/Qwen3.8-27B`, publicado por el usuario sady4850 en Hugging Face. Se trata de una cuantización GPTQ de 4 bits en formato MLX (afín, group size 64), calibrada específicamente sobre trazas de agente con ponderación de tokens, orientada a preservar la calidad del razonamiento y de las llamadas a herramientas en flujos agénticos. El modelo mantiene la modalidad image-text-to-text del modelo base, es decir, acepta entradas de imagen y texto.
 
 El checkpoint forma parte de un estudio de calibración de agentes: el autor publica una familia de variantes (`-agent`, `-agentmix`, `-agentw`) y un conjunto de evaluación común descrito en la model card de `sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix`. La variante `-agentw` se distingue por aplicar un peso de 0,25 a las filas de Hessian correspondientes a tokens de prompt y de salida de herramientas, mientras que los tokens de razonamiento, texto del asistente y llamadas a herramientas mantienen peso 1.
 
@@ -92,7 +92,7 @@ La diferencia principal entre las variantes cuantizadas es la calibración: `-ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentw
+- Modelo en Hugging Face: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante de referencia del estudio: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix
 - Cuantización GPTQ estándar del autor: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ

@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harshavardhan89/smai-a4-q1-ioc-nn-cifar10
+- Modelo en Hugging Face: https://huggingface.co/Harshavardhan89/smai-a4-q1-ioc-nn-cifar10
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

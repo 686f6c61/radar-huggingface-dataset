@@ -81,7 +81,7 @@ No se dispone de información sobre benchmarks comparativos ni de otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Juxoola/LFM2.5-VL-3B-MNN
+- Repositorio Hugging Face: https://huggingface.co/Juxoola/LFM2.5-VL-3B-MNN
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Licencia LFM1.0: https://www.liquid.ai/legal-repository
 - Herramienta de exportación MNN (llmexport): https://github.com/alibaba/MNN/tree/master/transformers/llm/export

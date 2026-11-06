@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `augmented-9e35b4876cf3b3f9` es un checkpoint de generación de texto publicado por la organización `gradients-io-tournaments` en HuggingFace. Por el identificador y el contexto de publicación, se trata de una entrega de un torneo o competición de entrenamiento, no de un lanzamiento oficial de un laboratorio. La model card es la plantilla automática de HuggingFace sin rellenar: el autor no ha documentado el origen, los datos de entrenamiento, la licencia ni los idiomas soportados.
+El modelo `augmented-9e35b4876cf3b3f9` es un checkpoint de generación de texto publicado por la organización `gradients-io-tournaments` en Hugging Face. Por el identificador y el contexto de publicación, se trata de una entrega de un torneo o competición de entrenamiento, no de un lanzamiento oficial de un laboratorio. La model card es la plantilla automática de Hugging Face sin rellenar: el autor no ha documentado el origen, los datos de entrenamiento, la licencia ni los idiomas soportados.
 
 Técnicamente, los pesos en safetensors suman 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y el repositorio ocupa 3,1 GB, lo que corresponde a un checkpoint en fp16/bf16 sin cuantizar. La etiqueta de arquitectura es `qwen2`, por lo que se trata de un transformer decoder-only de la familia Qwen2, presumiblemente un ajuste fino ("augmented" en el nombre) sobre una base de ese tamaño. No hay confirmación del linaje exacto ni del número de tokens de entrenamiento.
 
@@ -27,7 +27,7 @@ Su relevancia práctica es limitada y acotada: es un modelo pequeño, ejecutable
 
 La única evidencia sobre la arquitectura es la etiqueta `qwen2` del repositorio, que apunta a un transformer decoder-only con las características habituales de esa familia: normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con query-key-value bias, habitualmente con grouped-query attention (GQA) en los tamaños pequeños. No hay fichero de configuracion publicado en la informacion disponible, por lo que no se puede confirmar el numero de capas, la dimension oculta, el numero de cabezas de atencion, el vocabulario ni la ventana de contexto efectiva de este checkpoint concreto.
 
-Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de supervised fine-tuning, RLHF o DPO, y si el ajuste se hizo sobre una base Qwen2 oficial o sobre otra variante. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no describe el modelo. El nombre "augmented" sugiere un ajuste o aumento sobre una base previa, pero es una inferencia no confirmada por el autor.
+Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de supervised fine-tuning, RLHF o DPO, y si el ajuste se hizo sobre una base Qwen2 oficial o sobre otra variante. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no describe el modelo. El nombre "augmented" sugiere un ajuste o aumento sobre una base previa, pero es una inferencia no confirmada por el autor.
 
 ## Capacidades
 
@@ -72,11 +72,11 @@ Los datos de la columna de este modelo son los unicos verificados en la informac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| augmented-9e35b4876cf3b3f9 | 1,54B | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen2-1.5B (base de la familia) | 1,54B | 32.768 tokens | Apache 2.0 en el modelo base | HuggingFace, ampliamente distribuido |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens, ampliable con YaRN | Apache 2.0 en la mayoria de tamanos | HuggingFace |
-| Gemma 2 2B | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | HuggingFace |
+| augmented-9e35b4876cf3b3f9 | 1,54B | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen2-1.5B (base de la familia) | 1,54B | 32.768 tokens | Apache 2.0 en el modelo base | Hugging Face, ampliamente distribuido |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens, ampliable con YaRN | Apache 2.0 en la mayoria de tamanos | Hugging Face |
+| Gemma 2 2B | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 El recuento de parametros de este checkpoint coincide exactamente con la configuracion publica de Qwen2-1.5B, lo que refuerza la hipotesis de que deriva de esa base, pero el autor no lo declara y no se puede confirmar.
 
@@ -95,9 +95,9 @@ El recuento de parametros de este checkpoint coincide exactamente con la configu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-9e35b4876cf3b3f9
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-9e35b4876cf3b3f9
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico enlazada en la plantilla: https://mlco2.github.io/impact
 - Referencia de la familia Qwen2 (no vinculada por el autor, solo contexto arquitectonico): https://arxiv.org/abs/2407.10671
-- Repositorio de la organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Repositorio de la organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Paper, blog, demo o repositorio especificos del modelo: no disponibles.

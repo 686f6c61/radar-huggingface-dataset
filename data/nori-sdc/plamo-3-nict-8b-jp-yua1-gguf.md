@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PLaMo-3-NICT-8B-JP-YUA1-GGUF es una cuantizacion en formato GGUF del modelo pfnet/plamo-3-nict-8b-base, publicada por el usuario nori-sdc en HuggingFace. Se trata de un ajuste fino orientado a instrucciones en japones y especializado en el ambito educativo: segun las etiquetas del repositorio, el modelo esta afinado para soporte de estudio, preparacion de examenes de acceso a la universidad y conversacion. El modelo cuenta con 8.091.348.992 parametros totales (aproximadamente 8,09 mil millones) y se distribuye bajo la licencia plamo-community-license.
+PLaMo-3-NICT-8B-JP-YUA1-GGUF es una cuantizacion en formato GGUF del modelo pfnet/plamo-3-nict-8b-base, publicada por el usuario nori-sdc en Hugging Face. Se trata de un ajuste fino orientado a instrucciones en japones y especializado en el ambito educativo: segun las etiquetas del repositorio, el modelo esta afinado para soporte de estudio, preparacion de examenes de acceso a la universidad y conversacion. El modelo cuenta con 8.091.348.992 parametros totales (aproximadamente 8,09 mil millones) y se distribuye bajo la licencia plamo-community-license.
 
 El modelo deriva del trabajo de Preferred Networks (PFN) junto con NICT, segun se deduce del identificador del modelo base (plamo-3-nict-8b-base). Esta desarrollado exclusivamente para japones (ja) y su pipeline declarado es text-generation. Su relevancia actual radica en que ofrece una opcion cuantizada, pensada para ejecucion local eficiente, de un modelo afinado para asistencia educativa en japones.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones de uso en HuggingFace antes de poder descargar los pesos. El tamano del repositorio es de 13,6 GB, lo que es coherente con la publicacion de varias cuantizaciones GGUF del mismo modelo base.
+El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones de uso en Hugging Face antes de poder descargar los pesos. El tamano del repositorio es de 13,6 GB, lo que es coherente con la publicacion de varias cuantizaciones GGUF del mismo modelo base.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF | ~8,09B | no disponible | ja | plamo-community-license | GGUF | Gated en HuggingFace |
+| nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF | ~8,09B | no disponible | ja | plamo-community-license | GGUF | Gated en Hugging Face |
 | pfnet/plamo-3-nict-8b-base | ~8,09B | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,13 +78,13 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 - Limitaciones de contexto: la longitud de contexto no se especifica en la informacion disponible, por lo que no puede garantizarse el manejo de contextos largos.
 - Limitacion de idioma: el modelo esta orientado al japones (ja); su rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea limitado.
 - Restricciones de licencia: la licencia es plamo-community-license, una licencia "other" que no es de codigo abierto estandar. Es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que puede imponer condiciones especificas (por ejemplo, restricciones de uso o de redistribucion).
-- Acceso restringido: el repositorio esta gated, por lo que se debe aceptar las condiciones en HuggingFace para descargar los pesos. Esto afecta a la automatizacion de despliegues y a la reproducibilidad.
+- Acceso restringido: el repositorio esta gated, por lo que se debe aceptar las condiciones en Hugging Face para descargar los pesos. Esto afecta a la automatizacion de despliegues y a la reproducibilidad.
 - Procedencia: se trata de una cuantizacion GGUF publicada por un tercero (nori-sdc), no por el desarrollador original (PFN/NICT). Las cuantizaciones pueden introducir degradacion de calidad respecto al modelo original en precision completa.
 - Ausencia de datos de evaluacion: no hay benchmarks publicados en la informacion disponible, por lo que el rendimiento real no puede contrastarse con cifras.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y sin validacion comunitaria amplia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF
 - Modelo base: pfnet/plamo-3-nict-8b-base (referenciado en las etiquetas del repositorio; no se proporciona URL directa en la informacion disponible)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre el modelo (los resultados obtenidos trataban sobre el alga nori y no guardan relacion con el modelo).

@@ -108,8 +108,8 @@ No se dispone de benchmarks ni de comparativas publicadas por el autor. La compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/BLIP-Runtime
-- Perfil del autor en HuggingFace: https://huggingface.co/manateelazycat/models
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/BLIP-Runtime
+- Perfil del autor en Hugging Face: https://huggingface.co/manateelazycat/models
 - Blog del autor (ManateeLazyCat): https://manateelazycat.github.io/
 - Proyecto de ejemplo de image captioning con BLIP: https://github.com/Malek-Ayarii/image-captioning-project
 - Artículo introductorio sobre BLIP: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

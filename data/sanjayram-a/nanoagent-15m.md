@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoAgent-15M es un transformer decoder-only de estilo Llama con aproximadamente 15 millones de parametros, desarrollado por el usuario sanjayram-a y publicado en HuggingFace bajo licencia Apache-2.0. Su proposito declarado es cubrir chat conversacional y llamada estructurada de herramientas (tool calling) en un modelo lo bastante pequeno para desplegarse en el borde: cada checkpoint en fp32 ocupa unos 58 MB. La arquitectura usa `transformers.LlamaForCausalLM`, con 384 dimensiones ocultas, 8 capas, atencion con GQA 3:1 (6 cabezas de consulta y 2 de clave/valor), SwiGLU de 1024 y un vocabulario propio de 6.144 tokens BPE byte-level.
+NanoAgent-15M es un transformer decoder-only de estilo Llama con aproximadamente 15 millones de parametros, desarrollado por el usuario sanjayram-a y publicado en Hugging Face bajo licencia Apache-2.0. Su proposito declarado es cubrir chat conversacional y llamada estructurada de herramientas (tool calling) en un modelo lo bastante pequeno para desplegarse en el borde: cada checkpoint en fp32 ocupa unos 58 MB. La arquitectura usa `transformers.LlamaForCausalLM`, con 384 dimensiones ocultas, 8 capas, atencion con GQA 3:1 (6 cabezas de consulta y 2 de clave/valor), SwiGLU de 1024 y un vocabulario propio de 6.144 tokens BPE byte-level.
 
 El modelo se entreno de principio a fin en una unica GPU RTX 3050 Laptop con 4 GB de VRAM, lo que lo convierte en un caso reproducible de pipeline completo: tokenizador propio, pretraining sobre 1.000 millones de tokens y dos rondas de fine-tuning supervisado (SFT) orientadas a chat e instrucciones. La ventana de contexto es de 1.024 tokens, contando prompt y respuesta de forma combinada, y el unico idioma declarado es el ingles.
 
@@ -95,7 +95,7 @@ Comparativa de especificaciones frente a otros modelos pequenos de proposito gen
 
 | Modelo | Parametros | Contexto | Tool calling nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoAgent-15M | ~15 M | 1.024 tokens | Si (formato `<tool_call>` entrenado con xlam y glaive) | Apache-2.0 | Pesos `.pt` en HuggingFace, sin GGUF |
+| NanoAgent-15M | ~15 M | 1.024 tokens | Si (formato `<tool_call>` entrenado con xlam y glaive) | Apache-2.0 | Pesos `.pt` en Hugging Face, sin GGUF |
 | SmolLM-135M | 135 M | 2.048 tokens | No especifico | Apache-2.0 | safetensors y GGUF ampliamente disponibles |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens | No especifico | Apache-2.0 | safetensors y GGUF ampliamente disponibles |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | Si, formato Hermes/ToolACE | Apache-2.0 | safetensors y GGUF ampliamente disponibles |
@@ -119,12 +119,12 @@ Frente a estas alternativas, NanoAgent-15M es entre 9 y 70 veces mas pequeno y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjayram-a/nanoagent-15m
+- Modelo en Hugging Face: https://huggingface.co/sanjayram-a/nanoagent-15m
 - Codigo de entrenamiento y pipeline de datos: https://github.com/sanjayram-a/nanoagent-15m
-- Curvas de entrenamiento: pestana "Training metrics" del repositorio de HuggingFace
+- Curvas de entrenamiento: pestana "Training metrics" del repositorio de Hugging Face
 - Dataset de pretraining Ultra-FineWeb-L3: `openbmb/Ultra-FineWeb-L3`
 - Dataset de pretraining FineWeb-Edu: `HuggingFaceFW/fineweb-edu` (sample-10BT)
 - Dataset de pretraining Cosmopedia-v2: `HuggingFaceTB/smollm-corpus`
 - Dataset de pretraining de codigo: `openbmb/UltraData-Code` (UltraData-Code-L2, py)
 - Datasets de SFT: `HuggingFaceTB/smoltalk`, `HuggingFaceTB/ultrachat_questions_about_world`, `Salesforce/xlam-function-calling-60k`, `glaiveai/glaive-function-calling-v2`
-- Resultados de busqueda web: no se han encontrado articulos, papers ni demos adicionales relevantes sobre este modelo en la busqueda realizada; los unicos recursos disponibles son el repositorio de HuggingFace y el repositorio de GitHub enlazados arriba.
+- Resultados de busqueda web: no se han encontrado articulos, papers ni demos adicionales relevantes sobre este modelo en la busqueda realizada; los unicos recursos disponibles son el repositorio de Hugging Face y el repositorio de GitHub enlazados arriba.

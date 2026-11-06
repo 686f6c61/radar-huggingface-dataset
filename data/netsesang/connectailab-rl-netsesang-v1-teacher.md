@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`connectailab-rl-netsesang-v1-teacher` es una política de decisión entrenada con aprendizaje por refuerzo (PPO) por el usuario de HuggingFace `netsesang`, dentro del proyecto educativo CONNECT TYCOON de CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: es un "cerebro de empresa" (`CompanyBrain`) que recibe un estado del simulador de negocio en formato JSON y devuelve una decisión discreta con probabilidades, siguiendo el esquema JEV (`typesafe/jev-1.13`). Cubre seis áreas operativas: asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad.
+`connectailab-rl-netsesang-v1-teacher` es una política de decisión entrenada con aprendizaje por refuerzo (PPO) por el usuario de Hugging Face `netsesang`, dentro del proyecto educativo CONNECT TYCOON de CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: es un "cerebro de empresa" (`CompanyBrain`) que recibe un estado del simulador de negocio en formato JSON y devuelve una decisión discreta con probabilidades, siguiendo el esquema JEV (`typesafe/jev-1.13`). Cubre seis áreas operativas: asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad.
 
 El modelo se entrenó en dos fases: primero imitación de un "jefe basado en reglas" (aprendizaje supervisado) y después ajuste con PPO usando como recompensa una función de valor de empresa con pesos declarados (`{"이익": 1.0, "고객 만족": 1.0, "위험": 1.0}`, es decir, beneficio, satisfacción del cliente y riesgo a partes iguales). La model card reporta que, sobre 40 meses simulados no vistos, la política supera ampliamente a la línea base de reglas en beneficio mensual, satisfacción, incidentes de riesgo, escalados a humanos y días sin stock.
 
@@ -20,7 +20,7 @@ Es relevante ahora como ejemplo de sustitución de un sistema de reglas por una 
 | Idiomas soportados | Coreano (`ko`); las etiquetas de decisión y el campo `reason` aparecen en coreano. Los identificadores del esquema JSON son en inglés |
 | Licencia | Apache-2.0 |
 | Formato de pesos | No disponible (librería declarada: `numpy`; carga mediante `connect_tycoon.CompanyBrain.from_hub(...)`) |
-| Pipeline en HuggingFace | `reinforcement-learning` |
+| Pipeline en Hugging Face | `reinforcement-learning` |
 | Algoritmo de entrenamiento | PPO (Proximal Policy Optimization) tras aprendizaje por imitación de un agente basado en reglas |
 | Formato de entrada/salida | JSON tipo JEV (`model`, `state`, `questions` → `answers` con `choice`, `probabilities`, `confidence`, `reason`) |
 | Tarea | Toma de decisiones discretas (elección entre opciones con distribución de probabilidad) |
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo / alternativa | Tipo | Parámetros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connect-ai-company-v20 (este modelo) | Política RL (PPO) sobre simulador | No disponible | No aplica (decisión por estado) | 13,96 M KRW/mes, 93 % satisfacción, 1,5 incidentes | Apache-2.0 | HuggingFace, 0 descargas |
+| connect-ai-company-v20 (este modelo) | Política RL (PPO) sobre simulador | No disponible | No aplica (decisión por estado) | 13,96 M KRW/mes, 93 % satisfacción, 1,5 incidentes | Apache-2.0 | Hugging Face, 0 descargas |
 | Jefe basado en reglas de CONNECT TYCOON | Sistema experto determinista | No aplica | No aplica | 3,24 M KRW/mes, 79 % satisfacción, 7,8 incidentes | La del repositorio `connect-tycoon` | Incluido en el simulador |
 | Enfoque con LLM (notebook `rl_decision_model_qwen_colab`) | Modelo de lenguaje ajustado para decidir | No disponible en la información | No disponible en la información | No disponible | No disponible | Referenciado en el repositorio, sin resultados publicados |
 | Otras políticas PPO para entornos Gymnasium | Política RL específica de entorno | Depende del entorno | No aplica | No comparable entre entornos | Variable | No disponible |
@@ -104,7 +104,7 @@ No se han identificado en la información proporcionada políticas de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netsesang/connectailab-rl-netsesang-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/netsesang/connectailab-rl-netsesang-v1-teacher
 - Repositorio CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento (Google Colab): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

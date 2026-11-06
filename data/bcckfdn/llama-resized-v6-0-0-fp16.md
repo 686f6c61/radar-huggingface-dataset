@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bcckfdn/llama-resized-v6.0.0-fp16` es un modelo de lenguaje de gran tamano (LLM) publicado por el usuario de HuggingFace `bcckfdn`. Se trata de un checkpoint en formato `safetensors` con pesos en precisión FP16 que ocupa aproximadamente 34,3 GB en el repositorio. El nombre sugiere que es una variante "redimensionada" de la familia Llama, aunque no se dispone de documentación oficial que detalle el proceso de redimensionamiento, la arquitectura exacta o los datos de entrenamiento utilizados.
+El modelo `bcckfdn/llama-resized-v6.0.0-fp16` es un modelo de lenguaje de gran tamano (LLM) publicado por el usuario de Hugging Face `bcckfdn`. Se trata de un checkpoint en formato `safetensors` con pesos en precisión FP16 que ocupa aproximadamente 34,3 GB en el repositorio. El nombre sugiere que es una variante "redimensionada" de la familia Llama, aunque no se dispone de documentación oficial que detalle el proceso de redimensionamiento, la arquitectura exacta o los datos de entrenamiento utilizados.
 
 El modelo cuenta con 6.939.701.248 parámetros (aproximadamente 6,94 mil millones), lo que lo situaría en la gama de los modelos de 7B, comparable en tamaño a Llama 2 7B o Llama 3 8B. Sin embargo, la ausencia de ficha técnica, licencia declarada y documentación asociada limita considerablemente su uso en entornos de producción. La cuenta del autor ha publicado varias versiones anteriores (`v4.4.6`, `v4.6.0`, `v5.0.8`), lo que indica un proceso de iteración activo, aunque sin información pública sobre la metodología.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: sin datos de e
 
 No se dispone de informacion publica sobre la arquitectura interna del modelo. El nombre "llama-resized" sugiere que se parte de un modelo Llama existente y se modifica su arquitectura, probablemente cambiando el numero de capas, la dimension de los embeddings o el numero de cabezas de atencion, un proceso conocido como "resizing" que se aplica a menudo para adaptar un modelo a restricciones de memoria o para transferir conocimiento entre arquitecturas de distinto tamano. Sin embargo, no hay documentacion que confirme esta hipotesis.
 
-Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La ausencia de un modelo card en HuggingFace y de cualquier publicacion tecnica asociada impide verificar estos aspectos. El repositorio contiene unicamente los pesos en formato safetensors y, en versiones anteriores, archivos GGUF para su uso con `llama.cpp`.
+Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La ausencia de un modelo card en Hugging Face y de cualquier publicacion tecnica asociada impide verificar estos aspectos. El repositorio contiene unicamente los pesos en formato safetensors y, en versiones anteriores, archivos GGUF para su uso con `llama.cpp`.
 
 ## Capacidades
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia en FP16: aproximadamente 14 GB solo para los pesos (6,94 B parametros × 2 bytes). Con memoria adicional para KV cache y activaciones, se recomienda un minimo de 20-24 GB de VRAM.
 - GPUs compatibles: NVIDIA RTX 3090 (24 GB), RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB). No cabe en GPUs de 16 GB o menos en FP16.
 - Para GPUs con menos VRAM, el autor publica versiones GGUF cuantizadas (v4.4.6 y v4.6.0) que permiten ejecutar el modelo en CPU o GPUs con 8-12 GB mediante cuantizacion Q4_K_M o similar.
-- Opciones de despliegue: llama.cpp (via GGUF), vLLM (si se convierte a un formato compatible), HuggingFace Transformers con `device_map="auto"` para distribuir en multiples GPUs.
+- Opciones de despliegue: llama.cpp (via GGUF), vLLM (si se convierte a un formato compatible), Hugging Face Transformers con `device_map="auto"` para distribuir en multiples GPUs.
 - Latencia y throughput: no disponibles. Para un modelo de 7B en una RTX 4090, se espera una velocidad de generacion de aproximadamente 50-80 tokens/s con cuantizacion, y menor en FP16.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bcckfdn/llama-resized-v6.0.0-fp16 | 6,94 B | no disponible | no disponible | HuggingFace |
-| Meta Llama 2 7B | 6,74 B | 4096 | Llama 2 Community License | HuggingFace, uso comercial permitido |
-| Meta Llama 3 8B | 8,03 B | 8192 | Llama 3 Community License | HuggingFace, uso comercial permitido |
-| Mistral 7B v0.2 | 7,24 B | 32768 | Apache 2.0 | HuggingFace, uso comercial libre |
+| bcckfdn/llama-resized-v6.0.0-fp16 | 6,94 B | no disponible | no disponible | Hugging Face |
+| Meta Llama 2 7B | 6,74 B | 4096 | Llama 2 Community License | Hugging Face, uso comercial permitido |
+| Meta Llama 3 8B | 8,03 B | 8192 | Llama 3 Community License | Hugging Face, uso comercial permitido |
+| Mistral 7B v0.2 | 7,24 B | 32768 | Apache 2.0 | Hugging Face, uso comercial libre |
 
 La comparativa es orientativa: el modelo de `bcckfdn` carece de informacion sobre contexto y licencia, por lo que no se puede evaluar su idoneidad frente a alternativas establecidas. Llama 3 8B y Mistral 7B ofrecen documentacion completa, benchmarks publicados y licencias claras, lo que los convierte en opciones mucho mas fiables para cualquier tarea.
 
@@ -86,7 +86,7 @@ La comparativa es orientativa: el modelo de `bcckfdn` carece de informacion sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcckfdn/llama-resized-v6.0.0-fp16
+- Repositorio Hugging Face: https://huggingface.co/bcckfdn/llama-resized-v6.0.0-fp16
 - Version GGUF v4.6.0: https://huggingface.co/bcckfdn/llama-resized-v4.6.0-gguf
 - Version GGUF v4.4.6: https://huggingface.co/bcckfdn/llama-resized-v4.4.6-gguf
 - Analisis de seguridad de la version v5.0.8 (Palo Alto Networks): https://insights-db.paloaltonetworks.com/models/bcckfdn/llama-resized-v5.0.8-fp16/74995eb5f3c6f9268a29a3fb40075d8211d8ac74/overview

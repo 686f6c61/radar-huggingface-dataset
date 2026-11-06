@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar con otros modelos de grou
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QinEmPeRoR93/nassila-sanad-9b)
+- [Modelo en Hugging Face](https://huggingface.co/QinEmPeRoR93/nassila-sanad-9b)
 - [Repositorio nassila-goai](https://github.com/jamalesam93/nassila-goai)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Licencia de Qwen](https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE)

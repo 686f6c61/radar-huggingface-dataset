@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `austin-n-sam/queue_merged-u150` es un modelo de lenguaje de gran tamaño desarrollado por el usuario de HuggingFace Austin&Sam, con un peso total de 35.107.181.936 parámetros (aproximadamente 35,1 mil millones). Está etiquetado como `qwen3_5_moe`, lo que indica que se basa en la arquitectura de mezcla de expertos (MoE) de la familia Qwen 3.5, y también como `image-text-to-text`, lo que sugiere capacidad de procesar entradas multimodales (imagen y texto) para generar texto. El modelo es un merge (fusión) de pesos, cuyo modelo base es `vera6/affine-5g4yy75zuz-t6`, y ha sido entrenado adicionalmente con técnicas de optimización offline (DPO) y presenta un modo de razonamiento (`reason-v4`).
+El modelo `austin-n-sam/queue_merged-u150` es un modelo de lenguaje de gran tamaño desarrollado por el usuario de Hugging Face Austin&Sam, con un peso total de 35.107.181.936 parámetros (aproximadamente 35,1 mil millones). Está etiquetado como `qwen3_5_moe`, lo que indica que se basa en la arquitectura de mezcla de expertos (MoE) de la familia Qwen 3.5, y también como `image-text-to-text`, lo que sugiere capacidad de procesar entradas multimodales (imagen y texto) para generar texto. El modelo es un merge (fusión) de pesos, cuyo modelo base es `vera6/affine-5g4yy75zuz-t6`, y ha sido entrenado adicionalmente con técnicas de optimización offline (DPO) y presenta un modo de razonamiento (`reason-v4`).
 
-A pesar de su reciente publicación (agosto de 2026), el modelo tiene acceso restringido en HuggingFace (gated), por lo que los usuarios deben aceptar condiciones para descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial y modificación. No se dispone de información pública sobre el contexto de entrenamiento, datos utilizados o benchmarks, lo que limita la evaluación objetiva de su rendimiento. No obstante, su tamaño y arquitectura lo sitúan en la categoría de modelos de código abierto de gama media-alta, aptos para tareas de generación de texto, razonamiento y posiblemente visión por computadora.
+A pesar de su reciente publicación (agosto de 2026), el modelo tiene acceso restringido en Hugging Face (gated), por lo que los usuarios deben aceptar condiciones para descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial y modificación. No se dispone de información pública sobre el contexto de entrenamiento, datos utilizados o benchmarks, lo que limita la evaluación objetiva de su rendimiento. No obstante, su tamaño y arquitectura lo sitúan en la categoría de modelos de código abierto de gama media-alta, aptos para tareas de generación de texto, razonamiento y posiblemente visión por computadora.
 
 ## Especificaciones técnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - GPU recomendadas: para inferencia en FP16 se requieren GPUs de datacenter como A100 80GB, H100 80GB o A6000 48GB (esta última insuficiente para FP16 completo). Para cuantización 8 bits, una RTX 4090 (24 GB) podría ser suficiente si el modelo es MoE con pocos parámetros activos, pero al no conocerse el número de expertos activos, no se puede confirmar.
 - En consumer GPU: no se puede garantizar que quepa en GPUs de consumo sin cuantización agresiva (4 bits), que degradaría la calidad.
 - Opciones de despliegue: al ser compatible con Transformers, se puede servir con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es posible usar Ollama si se genera un archivo Modelfile. No hay información sobre latencia o throughput.
-- Se recomienda probar con la herramienta de profiling de HuggingFace (por ejemplo, `optimum-benchmark`) para medir el rendimiento real en el hardware disponible.
+- Se recomienda probar con la herramienta de profiling de Hugging Face (por ejemplo, `optimum-benchmark`) para medir el rendimiento real en el hardware disponible.
 
 ## Comparativa con modelos similares
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que obliga a los usuarios a compartir su información de contacto y aceptar condiciones antes de descargarlo. Esto puede dificultar su adopción en entornos corporativos.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que obliga a los usuarios a compartir su información de contacto y aceptar condiciones antes de descargarlo. Esto puede dificultar su adopción en entornos corporativos.
 - Sin documentación técnica: no hay paper, blog ni documentación oficial que describa la arquitectura, el entrenamiento o las limitaciones específicas. Toda la información proviene de metadatos.
 - Riesgo de alucinación: al no conocerse los datos de entrenamiento ni las técnicas de alineación más allá de DPO, no se puede evaluar la fiabilidad de las respuestas. Es probable que presente alucinaciones en temas especializados.
 - Sesgos desconocidos: no se han publicado estudios de sesgo ni evaluaciones de equidad. El modelo podría reflejar sesgos presentes en los datos de entrenamiento del modelo base.
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austin-n-sam/queue_merged-u150
+- Modelo en Hugging Face: https://huggingface.co/austin-n-sam/queue_merged-u150
 - Perfil del autor: https://huggingface.co/austin-n-sam/models
 - Modelo relacionado (también gated): https://huggingface.co/austin-n-sam/queue_merged-u83

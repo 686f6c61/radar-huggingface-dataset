@@ -6,7 +6,7 @@ El modelo **zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16** es una cuantizac
 
 La versión AEON aplica una técnica de abliteración que elimina el rechazo de contenido no deseado (uncensored) manteniendo la coherencia de las respuestas, mediante una metodología basada en la divergencia KL y pruebas de rechazo con un juez automático. La cuantización NVFP4 reduce el tamaño del modelo a 20,6 GB, lo que permite su ejecución en GPUs NVIDIA Blackwell (como DGX Spark o B200) con un rendimiento optimizado para inferencia.
 
-La relevancia de este modelo radica en combinar un rendimiento de nivel frontera en tareas multimodales y de razonamiento con una licencia Apache 2.0 y una versión sin censura, aunque su acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. Es una opción atractiva para desarrolladores que necesitan un modelo de 27B con soporte de visión, contexto largo y ejecución eficiente en hardware Blackwell.
+La relevancia de este modelo radica en combinar un rendimiento de nivel frontera en tareas multimodales y de razonamiento con una licencia Apache 2.0 y una versión sin censura, aunque su acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Es una opción atractiva para desarrolladores que necesitan un modelo de 27B con soporte de visión, contexto largo y ejecución eficiente en hardware Blackwell.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La comparativa muestra que este modelo se sitúa en la gama de 27B con ventana d
 
 - **Sesgos y alucinaciones**: al ser una versión abliterada, el modelo puede generar contenido ofensivo, ilegal o perjudicial sin filtros. Los sesgos presentes en los datos de entrenamiento originales no se han corregido, y el riesgo de alucinación es similar al de otros modelos de su tamaño.
 - **Idiomas limitados**: solo soporta inglés y chino. No se recomienda su uso en otros idiomas sin evaluación previa.
-- **Restricciones de licencia y acceso**: aunque la licencia es Apache 2.0, el acceso al repositorio es restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- **Restricciones de licencia y acceso**: aunque la licencia es Apache 2.0, el acceso al repositorio es restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - **Requisitos de hardware específicos**: el formato NVFP4 solo funciona en GPUs Blackwell. Si se intenta ejecutar en otras arquitecturas, fallará o requerirá una conversión de formato no trivial.
 - **Riesgo de contenido inapropiado**: la ausencia de censura puede ser un problema en aplicaciones comerciales donde se requiere moderación de contenido. Se recomienda implementar filtros adicionales si el modelo se expone al público.
 - **Falta de benchmarks publicados**: no hay métricas oficiales de rendimiento para esta cuantización, por lo que el comportamiento en tareas específicas debe validarse de forma independiente.
@@ -85,9 +85,9 @@ La comparativa muestra que este modelo se sitúa en la gama de 27B con ventana d
 
 ## Enlaces
 
-- [HuggingFace - zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16](https://huggingface.co/zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16)
-- [HuggingFace - Modelo base BF16 (AEON-7)](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
-- [HuggingFace - Bucket de almacenamiento del BF16](https://huggingface.co/buckets/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
+- [Hugging Face - zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16](https://huggingface.co/zm3/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4A16)
+- [Hugging Face - Modelo base BF16 (AEON-7)](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
+- [Hugging Face - Bucket de almacenamiento del BF16](https://huggingface.co/buckets/zomiailabs/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16)
 - [Blog de MindStudio sobre el abliteration AEON](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration)
 - [Blog de AMD - Soporte Day 0 para Qwen3.8 27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [LM Studio - Modelo Qwen3.8](https://lmstudio.ai/models/qwen3.8)

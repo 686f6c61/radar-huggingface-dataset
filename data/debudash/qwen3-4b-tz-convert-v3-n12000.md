@@ -92,7 +92,7 @@ La comparativa se limita a los modelos medidos en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft
 - Especificacion de comportamiento: https://huggingface.co/debudash/slm-training/blob/main/behaviour.spec

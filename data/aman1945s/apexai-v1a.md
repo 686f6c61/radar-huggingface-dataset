@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ApexAI-V1A es un ajuste fino (finetune) publicado por el usuario Aman1945S en HuggingFace, derivado del modelo `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. Se distribuye con licencia Apache 2.0, en formato safetensors y para la librería transformers, y declara el pipeline `image-text-to-text` junto con etiquetas de generación de texto (`text-generation-inference`, `qwen3_5`). La model card es una plantilla autogenerada por Unsloth/TRL: no documenta el conjunto de datos de entrenamiento, la receta de ajuste ni los hiperparámetros utilizados.
+ApexAI-V1A es un ajuste fino (finetune) publicado por el usuario Aman1945S en Hugging Face, derivado del modelo `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. Se distribuye con licencia Apache 2.0, en formato safetensors y para la librería transformers, y declara el pipeline `image-text-to-text` junto con etiquetas de generación de texto (`text-generation-inference`, `qwen3_5`). La model card es una plantilla autogenerada por Unsloth/TRL: no documenta el conjunto de datos de entrenamiento, la receta de ajuste ni los hiperparámetros utilizados.
 
 El interés del modelo es limitado y debe evaluarse con cautela: el repositorio ocupa 0,3 GB, un tamano incompatible con los pesos completos de un modelo de 27 000 millones de parámetros, lo que sugiere que se han subido adaptadores (tipo LoRA) o un subconjunto parcial de tensores, extremo que la model card no aclara. El modelo base indicado está cuantizado en 4 bits (bitsandbytes) y pertenece a la familia Qwen 3.5 según las etiquetas.
 
@@ -27,7 +27,7 @@ No se han publicado resultados de benchmarks, no hay demos ni documentación adi
 
 La informacion disponible no permite reconstruir la arquitectura. Las etiquetas apuntan a la familia Qwen 3.5 y el pipeline declarado es `image-text-to-text`, lo que sugiere un modelo multimodal con entrada de imagen y texto, pero la model card no especifica numero de capas, dimension oculta, tipo de atencion, tokenizador ni si existe un codificador visual separado. Tampoco se indica la longitud de contexto nativa ni si se ha aplicado alguna tecnica de atencion lineal o decodificacion especulativa.
 
-Respecto al entrenamiento, la unica informacion es que se uso Unsloth junto con la libreria TRL de HuggingFace y que el proceso fue "2x mas rapido". No se documentan el numero de tokens de ajuste, la composicion del dataset, el metodo (SFT, DPO, RLHF), el rango de LoRA, la tasa de aprendizaje ni el numero de epocas. El modelo base esta cuantizado en 4 bits con bitsandbytes, lo que implica que el ajuste se hizo sobre pesos cuantizados (`bnb-4bit`), con las limitaciones de calidad que ello conlleva.
+Respecto al entrenamiento, la unica informacion es que se uso Unsloth junto con la libreria TRL de Hugging Face y que el proceso fue "2x mas rapido". No se documentan el numero de tokens de ajuste, la composicion del dataset, el metodo (SFT, DPO, RLHF), el rango de LoRA, la tasa de aprendizaje ni el numero de epocas. El modelo base esta cuantizado en 4 bits con bitsandbytes, lo que implica que el ajuste se hizo sobre pesos cuantizados (`bnb-4bit`), con las limitaciones de calidad que ello conlleva.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la unica informacion es que se uso Unsloth junto con 
 
 - Prototipado rapido de asistentes conversacionales en ingles: al ser un finetune ligero sobre un modelo de 27B, puede desplegarse para validar flujos de dialogo antes de invertir en un ajuste completo, siempre que se verifique primero la calidad real del checkpoint.
 - Experimentacion academica con adaptadores LoRA: el tamano del repositorio (0,3 GB) lo hace util como ejemplo de flujo Unsloth + TRL para quienes quieran reproducir el pipeline de ajuste sobre el modelo base cuantizado.
-- Pruebas de pipelines multimodales de imagen y texto: el pipeline declarado permite conectar el modelo a un servicio de TGI o a un endpoint de HuggingFace para evaluar respuestas sobre imagenes, con la cautela de que no hay ejemplos publicados.
+- Pruebas de pipelines multimodales de imagen y texto: el pipeline declarado permite conectar el modelo a un servicio de TGI o a un endpoint de Hugging Face para evaluar respuestas sobre imagenes, con la cautela de que no hay ejemplos publicados.
 - Generacion de descripciones de imagenes en catalogo interno: se podria evaluar en tareas de captioning o extraccion de texto de imagenes, midiendo manualmente la calidad frente al modelo base antes de adoptarlo.
 - Base para un ajuste posterior especifico de dominio: al partir de pesos ya adaptados, sirve como punto de partida para un segundo ajuste con datos propios, con la ventaja de que la licencia Apache 2.0 no impone restricciones de uso comercial.
 - Evaluacion comparativa de finetunes comunitarios: util en estudios que midan cuanto se degrada o mejora un modelo tras un ajuste ligero con pocos datos y sin evaluacion publicada.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para el modelo base de 27B (el modelo en si no declara requisitos): en 4 bits, aproximadamente 14-16 GB solo para pesos; en 8 bits, en torno a 27-29 GB; en bf16, unos 54 GB. A estas cifras hay que sumar la cache KV, cuyo tamano depende de una longitud de contexto que no se ha documentado.
 - GPU recomendadas: A100 80 GB o H100 para pesos en bf16; A6000 48 GB, L40S o 2x RTX 4090 para 8 bits; una unica RTX 4090 (24 GB) o RTX 3090 (24 GB) quedaria limitada a 4 bits y con contexto reducido.
 - Cabe en GPU de consumo: si, en el escenario de 4 bits con una RTX 4090 o 3090, asumiendo que el checkpoint cargado sea completo y no solo adaptadores.
-- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints de HuggingFace, segun las etiquetas del repo. llama.cpp, Ollama y vLLM no estan confirmados por falta de pesos en GGUF y de documentacion.
+- Opciones de despliegue: transformers, text-generation-inference (TGI) y endpoints de Hugging Face, segun las etiquetas del repo. llama.cpp, Ollama y vLLM no estan confirmados por falta de pesos en GGUF y de documentacion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,8 +86,8 @@ Los datos de las filas de Qwen2.5-VL y Gemma 3 proceden de su documentacion publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aman1945S/ApexAI-V1A
+- Modelo en Hugging Face: https://huggingface.co/Aman1945S/ApexAI-V1A
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

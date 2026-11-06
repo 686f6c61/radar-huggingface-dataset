@@ -74,7 +74,7 @@ No se dispone de datos suficientes en la informacion proporcionada para realizar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skt/A.X-K2
+- Modelo en Hugging Face: https://huggingface.co/skt/A.X-K2
 - Coleccion de modelos A.X K2: https://huggingface.co/collections/skt/ax-k2
 - Repositorio GitHub: https://github.com/SKT-AI/A.X-K2
 - Technical report (PDF): https://github.com/SKT-AI/A.X-K2/blob/main/A_X_K2_Tech_Report.pdf

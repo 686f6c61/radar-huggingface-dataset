@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA, sino un documento técnico en formato Markdown que reproduce el texto completo de un artículo académico sobre destilación de conocimiento (knowledge distillation). El autor, binnugr01, ha estructurado el documento siguiendo el formato de la conferencia NeurIPS, con secciones que incluyen resumen, introducción, preliminares, método, experimentos y discusión. El estilo de escritura es narrativo-progresivo y el contenido está etiquetado como neutro, con citas en formato numérico BibTeX.
+Este repositorio de Hugging Face no contiene un modelo de IA, sino un documento técnico en formato Markdown que reproduce el texto completo de un artículo académico sobre destilación de conocimiento (knowledge distillation). El autor, binnugr01, ha estructurado el documento siguiendo el formato de la conferencia NeurIPS, con secciones que incluyen resumen, introducción, preliminares, método, experimentos y discusión. El estilo de escritura es narrativo-progresivo y el contenido está etiquetado como neutro, con citas en formato numérico BibTeX.
 
 El repositorio no incluye pesos de modelo, arquitectura, datos de entrenamiento ni ningún artefacto ejecutable. Se trata exclusivamente de un archivo de texto, `paper_007996638_knowledge_distillation.md`, que recopila un trabajo de investigación sobre técnicas de compresión de modelos mediante destilación. La licencia MIT permite su reutilización, pero no hay ningún modelo que cargar o desplegar.
 
@@ -63,7 +63,7 @@ No disponible. No existe ningún modelo comparable porque el repositorio no cont
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/binnugr01/paper_007996638_knowledge_distillation
+- Repositorio Hugging Face: https://huggingface.co/binnugr01/paper_007996638_knowledge_distillation
 - Artículo relacionado en arXiv (revisión de destilación de conocimiento): https://arxiv.org/abs/2404.00936
 - Artículo sobre destilación para modelos autoregresivos visuales: https://arxiv.org/abs/2606.06078
 - Colección de artículos sobre destilación de conocimiento en GitHub: https://github.com/lhyfst/knowledge-distillation-papers

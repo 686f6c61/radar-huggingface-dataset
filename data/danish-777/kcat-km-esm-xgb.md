@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-esm-xgb es un predictor de parámetros cinéticos enzimáticos desarrollado por el usuario Danish-777 y publicado en HuggingFace bajo licencia MIT. A partir de una secuencia de aminoácidos y un SMILES de sustrato, estima log10(kcat) y log10(Km), es decir, la constante catalítica y la constante de Michaelis. No es un modelo generativo ni un LLM: es un ensemble de tres regresores XGBoost cuyas predicciones se combinan promediando rangos, y está diseñado para ejecutarse únicamente en CPU.
+kcat-km-esm-xgb es un predictor de parámetros cinéticos enzimáticos desarrollado por el usuario Danish-777 y publicado en Hugging Face bajo licencia MIT. A partir de una secuencia de aminoácidos y un SMILES de sustrato, estima log10(kcat) y log10(Km), es decir, la constante catalítica y la constante de Michaelis. No es un modelo generativo ni un LLM: es un ensemble de tres regresores XGBoost cuyas predicciones se combinan promediando rangos, y está diseñado para ejecutarse únicamente en CPU.
 
 El sistema combina dos bloques de features. El primero es puramente químico y composicional: composición de aminoácidos y dipéptidos, fingerprint de Morgan, descriptores de RDKit y medias suavizadas de features de sustrato. El segundo añade embeddings de ESM-2 (variantes de 8M y 35M parámetros) con mean pooling, emparejados con las mismas features de sustrato. La validación se hizo con validación cruzada de 5 folds agrupada por familias enzimáticas (clusters MMseqs2 al 40 % de identidad), de modo que ninguna enzima retenida tiene un pariente cercano en entrenamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Enfoque | Salidas | Licencia | Disponibilidad | Datos que faltan |
 |---|---|---|---|---|---|
-| kcat-km-esm-xgb (Danish-777) | XGBoost x3 + features RDKit + ESM-2 8M/35M, blending por rangos | log10(kcat), log10(Km) | MIT | Pesos en HuggingFace, 0,2 GB, CPU | Metricas, tamano del dataset |
+| kcat-km-esm-xgb (Danish-777) | XGBoost x3 + features RDKit + ESM-2 8M/35M, blending por rangos | log10(kcat), log10(Km) | MIT | Pesos en Hugging Face, 0,2 GB, CPU | Metricas, tamano del dataset |
 | esmKCat (silveraru) | Deep learning multimodal: ChemBERTa + GINE para sustrato, ESM para secuencia, GINE para estructura 3D | kcat | No disponible | Repositorio GitHub | Parametros, contexto, licencia |
 | EZKinetics (le-yuan) | XGBoost con ESM3 y ChemBERTa-77M-MLM para el par kcat/Km | kcat y Km | No disponible | Repositorio GitHub | Parametros, metricas, licencia |
 | Modelos de Boltzmann Labs | Modelos dedicados de kcat y Km; el autor declara que superan a CatPred en todas las evaluaciones out-of-distribution | kcat y Km | No disponible | No se indica publicacion de pesos | Pesos, arquitectura, licencia |
@@ -89,10 +89,10 @@ La diferencia práctica de kcat-km-esm-xgb frente a esmKCat y EZKinetics es que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Danish-777/kcat-km-esm-xgb
+- Hugging Face: https://huggingface.co/Danish-777/kcat-km-esm-xgb
 - esmKCat (GitHub, referencia de predictor multimodal de kcat): https://github.com/silveraru/esmKCat
 - EZKinetics, rama XGBoost con ESM3 y ChemBERTa-77M-MLM (GitHub): https://github.com/le-yuan/EZKinetics/tree/main/model/KCAT_KM/XGBoost/ESM3%26ChemBERTa-77M-MLM
 - Repositorio EZKinetics (GitHub): https://github.com/le-yuan/EZKinetics
 - Articulo de bioRxiv con contexto sobre la familia ESM (ESM-2, ESMFold, ESM-1v, ESM-IF1), SaProt y ProSST: https://www.biorxiv.org/content/biorxiv/early/2026/03/30/2026.03.29.715152/DC1/embed/media-1.docx
 - Boltzmann Labs, modelos dedicados de kcat y Km y comparacion con CatPred (LinkedIn): https://www.linkedin.com/pulse/from-sequence-kinetics-boltzmann-labs-develops-dedicated-bs0we/
-- Catalogo de modelos de HuggingFace (contexto de busqueda): https://huggingface.co/models?library
+- Catalogo de modelos de Hugging Face (contexto de busqueda): https://huggingface.co/models?library

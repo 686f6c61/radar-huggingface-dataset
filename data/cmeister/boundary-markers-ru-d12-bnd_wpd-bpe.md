@@ -96,7 +96,7 @@ La comparación directa que documenta el autor es interna al experimento: todos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_wpd-bpe
 - Artículo: "Explicit Boundary Markers for Subword Vocabularies", Sander Land y Clara Meister: https://arxiv.org/abs/2608.08847
 - Repositorio con el código y la comparativa completa: https://github.com/sanderland/script_tok
 - nanochat (Karpathy), commit `92d63d4`: https://github.com/karpathy/nanochat

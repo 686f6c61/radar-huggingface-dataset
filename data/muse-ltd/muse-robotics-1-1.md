@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Robotics-1.1 | 121,7 M | no disponible | 7 (en, zh, es, de, fr, ja, ko) | MIT | HuggingFace |
-| OpenVLA | 7 B | 2048 tokens | principalmente inglés | MIT | HuggingFace |
+| Muse-Robotics-1.1 | 121,7 M | no disponible | 7 (en, zh, es, de, fr, ja, ko) | MIT | Hugging Face |
+| OpenVLA | 7 B | 2048 tokens | principalmente inglés | MIT | Hugging Face |
 | RT-2 (Google) | 55 B | no disponible | inglés | propietaria | no público |
 
 Muse-Robotics-1.1 se distingue por su tamaño mucho menor (120 M frente a 7 B o 55 B), lo que permite despliegue en hardware modesto y entrenamiento desde cero. Su soporte multilingüe es más amplio que el de OpenVLA, que se centra en inglés. No obstante, al no haber benchmarks publicados, no es posible comparar el rendimiento en tareas de manipulación real.
@@ -87,5 +87,5 @@ Muse-Robotics-1.1 se distingue por su tamaño mucho menor (120 M frente a 7 B o 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muse-Ltd/Muse-Robotics-1.1
+- Hugging Face: https://huggingface.co/Muse-Ltd/Muse-Robotics-1.1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web. Los resultados obtenidos corresponden a la banda de rock Muse y no al modelo.

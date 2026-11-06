@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/infosave/qwen3-tts-12hz-0.6b-customvoice-cmf
+- Hugging Face: https://huggingface.co/infosave/qwen3-tts-12hz-0.6b-customvoice-cmf
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Revisión fijada del upstream: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/tree/85e237c12c027371202489a0ec509ded67b5e4b5
 - Runtime Python: `qwen-tts==0.1.1` (paquete de Python; no se proporciona URL directa en la información disponible)

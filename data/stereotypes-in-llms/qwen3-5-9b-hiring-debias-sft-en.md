@@ -91,8 +91,8 @@ Segun la model card, a igual tasa de contratacion el adaptador es 3,7 veces mas 
 
 | Modelo | Parametros | Contexto | Inestabilidad contrafactual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-hiring-debias-sft-en | LoRA sobre ~9B | no disponible | 7,2% (3,5% a tasa de contratacion igualada) | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | 17,3% (13,0% a tasa igualada) | no disponible en esta informacion | HuggingFace |
+| qwen3.5-9b-hiring-debias-sft-en | LoRA sobre ~9B | no disponible | 7,2% (3,5% a tasa de contratacion igualada) | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | 17,3% (13,0% a tasa igualada) | no disponible en esta informacion | Hugging Face |
 | Otros adaptadores de mitigacion de sesgo en contratacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion en la busqueda proporcionada sobre modelos alternativos directamente comparables en la misma tarea y tamano. La comparativa mas solida disponible es la del propio modelo base, que es el punto de referencia natural del adaptador.
@@ -109,11 +109,11 @@ No se dispone de informacion en la busqueda proporcionada sobre modelos alternat
 - El ajuste fino desplaza la tasa de contratacion global (14,5% a 27,3%); este cambio debe contrastarse con el punto de operacion propio antes de usar el modelo.
 - La licencia Apache 2.0 permite uso comercial del artefacto, pero ello no elimina las advertencias de validacion ni los posibles requisitos regulatorios aplicables a decisiones de seleccion.
 - Riesgo de alucinacion: no caracterizado en la model card; el modelo hereda el comportamiento del base Qwen/Qwen3.5-9B en tareas generativas fuera del dominio de contratacion.
-- La eleccion de hardware, cuantizacion y ruta de servicio puede alterar las decisiones; la propia model card documenta discrepancias severas entre HuggingFace+PEFT y la ruta LoRA de vLLM.
+- La eleccion de hardware, cuantizacion y ruta de servicio puede alterar las decisiones; la propia model card documenta discrepancias severas entre Hugging Face+PEFT y la ruta LoRA de vLLM.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-sft-en
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-sft-en
 - Repositorio del estudio (codigo y resultados completos): https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento sintetico: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data
 - Dataset de respuestas auditadas del adaptador: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-responses

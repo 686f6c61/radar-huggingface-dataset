@@ -63,7 +63,7 @@ No disponible. Al no ser un modelo entrenado, no es comparable con alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takahashitid/thesis-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/takahashitid/thesis-self-supervised
 - PDF relacionado (blueprint formal para AGI, del mismo autor): https://zenodo.org/records/16663817/files/Takahashi_2025_Proposals_for_AGI.pdf?download=1
 - Paper sobre descubrimiento auto-supervisado de teoremas (arXiv): https://arxiv.org/abs/2606.28747
 - Notas de Stanford sobre self-supervised learning: https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf

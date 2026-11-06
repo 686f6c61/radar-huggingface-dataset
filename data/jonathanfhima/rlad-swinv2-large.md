@@ -72,7 +72,7 @@ El autor recomienda evaluar con el scorer oficial del repositorio REYIA en lugar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLAD-SwinV2-Large | no disponible (backbone ~197M) | no aplica (vision) | mejor resultado reportado por el autor en segmentacion AV (tabla 1) | codigo apache-2.0, pesos no comerciales | HuggingFace |
+| RLAD-SwinV2-Large | no disponible (backbone ~197M) | no aplica (vision) | mejor resultado reportado por el autor en segmentacion AV (tabla 1) | codigo apache-2.0, pesos no comerciales | Hugging Face |
 | RLAD + RETFound | no disponible | no aplica (vision) | reportado en la tabla 1 de la model card | no disponible en el material | variante del paper |
 | RLAD + DinoV2 | no disponible | no aplica (vision) | reportado en la tabla 1 de la model card | no disponible en el material | variante del paper |
 | SwinV2 (tamanos pequenos, ablacion) | no disponible | no aplica (vision) | reportado en las tablas 3 y 4 | no disponible en el material | variante del paper |
@@ -93,7 +93,7 @@ Los unicos comparadores citados en la informacion disponible son las variantes R
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/JonathanFhima/RLAD-SwinV2-Large
+- Hugging Face del modelo: https://huggingface.co/JonathanFhima/RLAD-SwinV2-Large
 - Articulo (arXiv): https://arxiv.org/abs/2503.01190
 - Repositorio de codigo RLAD: https://github.com/aim-lab/RLAD
 - Dataset REYIA: https://huggingface.co/datasets/JonathanFhima/REYIA

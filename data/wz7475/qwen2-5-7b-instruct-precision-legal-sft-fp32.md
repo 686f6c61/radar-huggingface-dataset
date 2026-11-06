@@ -95,8 +95,8 @@ No se dispone de informacion sobre adaptadores equivalentes de otras organizacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-fp32
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-fp32
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de la libreria PEFT: https://github.com/huggingface/peft
 - Repositorio oficial de la familia Qwen2.5: https://github.com/QwenLM/Qwen2.5
 

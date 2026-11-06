@@ -83,7 +83,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mixed36
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-mixed36
 - Modelo base (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/

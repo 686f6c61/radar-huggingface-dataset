@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262 144 | BF16 | Apache-2.0 | HuggingFace |
-| DavidAU Cold Fusion V1.1 | 27B | 262 144 | BF16 (con versiones 8/4 bit) | Apache-2.0 | HuggingFace |
-| Este modelo (PrismQuant) | 19B (pesos) | 262 144 | NVFP4/FP8/BF16 mixto | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27B | 262 144 | BF16 | Apache-2.0 | Hugging Face |
+| DavidAU Cold Fusion V1.1 | 27B | 262 144 | BF16 (con versiones 8/4 bit) | Apache-2.0 | Hugging Face |
+| Este modelo (PrismQuant) | 19B (pesos) | 262 144 | NVFP4/FP8/BF16 mixto | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a caracteristicas generales, ya que no hay benchmarks publicados que permitan comparar rendimiento numerico. La principal diferencia es el formato de cuantizacion: este modelo esta optimizado para Blackwell y decodificacion especulativa, mientras que el original requiere mas VRAM y las versiones 8/4 bit de DavidAU usan metodos distintos (no especificados).
 

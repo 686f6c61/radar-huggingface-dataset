@@ -77,9 +77,9 @@ La diferencia principal es que este adaptador se enfoca en un concepto específi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mju75/marketa-lora-krea-2
+- Repositorio Hugging Face: https://huggingface.co/mju75/marketa-lora-krea-2
 - Página oficial de Krea 2: https://www.krea.ai/krea-2
 - Anuncio de Krea 2 open-source: https://www.krea.ai/krea-2-open-source
 - Código de inferencia oficial (GitHub): https://github.com/krea-ai/krea-2
 - Artículo sobre LoRA de Krea 2: https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html
-- Perfil de Krea en HuggingFace: https://huggingface.co/krea/models
+- Perfil de Krea en Hugging Face: https://huggingface.co/krea/models

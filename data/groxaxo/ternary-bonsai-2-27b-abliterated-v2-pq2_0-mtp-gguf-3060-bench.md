@@ -123,7 +123,7 @@ No se dispone de datos para comparar con alternativas de otros fabricantes de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF-3060-bench
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF-3060-bench
 - Modelo base (fuente autoritativa del modelo y de la abliteracion): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF
 - Fork de llama.cpp de PrismML (runtime necesario para PQ2_0 y MTP): https://github.com/PrismML-Eng/llama.cpp
 - Repositorio del parche MTP y autor original (MFEC AI Lab): https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp

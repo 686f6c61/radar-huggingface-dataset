@@ -73,9 +73,9 @@ Nota: los datos de precisión de MobileNetV3 y EfficientNet provienen de referen
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/mobilenetv4_hybrid_medium_e500_r224_in1k)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/mobilenetv4_hybrid_medium_e500_r224_in1k)
 - [Modelo base (timm)](https://huggingface.co/timm/mobilenetv4_hybrid_medium.e500_r224_in1k)
 - [Paper MobileNetV4 (arXiv)](https://arxiv.org/abs/2404.10518)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de MobileNetV4 en KerasFormers](https://imvision12.github.io/KerasFormers/classification_backbones/)
-- [Colección de MobileNetV4 en HuggingFace](https://huggingface.co/collections/kerasformers/mobilenetv4-6a894cd740d9d3f3186d903a)
+- [Colección de MobileNetV4 en Hugging Face](https://huggingface.co/collections/kerasformers/mobilenetv4-6a894cd740d9d3f3186d903a)

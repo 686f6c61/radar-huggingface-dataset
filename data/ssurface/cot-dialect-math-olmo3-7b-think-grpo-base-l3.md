@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks para los modelos comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l3
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-base-l3
 - Modelo base (Allen AI): https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Variante base relacionada: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Modelo RL-Zero-Math de la misma familia (ModelScope): https://www.modelscope.cn/models/allenai/Olmo-3-7B-RL-Zero-Math/summary

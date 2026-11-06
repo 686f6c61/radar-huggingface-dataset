@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000 es un checkpoint publicado por el usuario SAD12DXCAS en HuggingFace, correspondiente al paso 1000 de un entrenamiento no documentado y seleccionado por haber obtenido la mejor puntuación global de evaluación (0,710). El repositorio está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que apunta a un codificador de la familia BERT destinado a extracción de representaciones, no a un modelo generativo.
+MyAwesomeModel-step1000 es un checkpoint publicado por el usuario SAD12DXCAS en Hugging Face, correspondiente al paso 1000 de un entrenamiento no documentado y seleccionado por haber obtenido la mejor puntuación global de evaluación (0,710). El repositorio está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que apunta a un codificador de la familia BERT destinado a extracción de representaciones, no a un modelo generativo.
 
 La información disponible es muy limitada: no se especifican parámetros, longitud de contexto, idiomas, composición del dataset ni metodología de entrenamiento. El tamaño del repositorio aparece como 0,0 GB, lo que impide verificar que los pesos estén realmente subidos. La model card únicamente incluye una tabla de 15 benchmarks con puntuaciones autodeclaradas y sin describir las tareas, las métricas ni los conjuntos de evaluación empleados.
 
@@ -104,5 +104,5 @@ La comparación relevante no es de rendimiento, sino de trazabilidad: los tres a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12DXCAS/MyAwesomeModel-step1000
+- Hugging Face: https://huggingface.co/SAD12DXCAS/MyAwesomeModel-step1000
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

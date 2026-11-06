@@ -27,7 +27,7 @@ El modelo hereda la arquitectura del Qwen3-0.6B-Base, un transformer denso de la
 
 - Generación de texto conversacional: el modelo puede producir respuestas coherentes en formato diálogo, como se muestra en el ejemplo de uso de la model card.
 - Enfoque en seguridad: al haber sido entrenado con datos de seguridad y adversarios, se espera que tienda a rechazar o mitigar solicitudes dañinas, aunque no hay evidencia cuantitativa.
-- Compatibilidad con el ecosistema Transformers: se integra fácilmente con `pipeline` de HuggingFace y es compatible con `text-generation-inference`.
+- Compatibilidad con el ecosistema Transformers: se integra fácilmente con `pipeline` de Hugging Face y es compatible con `text-generation-inference`.
 - Sin capacidades multimodales: no se menciona soporte para visión, audio u otras modalidades.
 - Sin tool calling ni funciones de agente: no se indica soporte para llamadas a herramientas o razonamiento multi-paso avanzado.
 
@@ -73,7 +73,7 @@ La comparativa se limita a la familia Qwen3 de 0.6B. No se dispone de datos de r
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01)
+- [Modelo en Hugging Face](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01)
 - [Modelo base intermedio](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01)
 - [Modelo base original Qwen3-0.6B-Base](https://huggingface.co/Qwen/Qwen3-0.6B-Base)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)

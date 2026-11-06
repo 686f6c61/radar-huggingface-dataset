@@ -4,7 +4,7 @@
 
 El modelo `tinyopsec/Qwen3.8-2B-FC-xLAM-LeetCode-LoRA` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario tinyopsec, diseñado para especializar un modelo base de 2B parámetros de la familia Qwen3.8 en tareas de function calling y resolución de problemas de programación competitiva. El adaptador se aplica sobre el modelo `ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth`, que a su vez es un fine-tuning de Qwen3.8-2B orientado a la llamada de funciones mediante la metodología xLAM y optimizado con Unsloth. El entrenamiento adicional con problemas de LeetCode busca reforzar las capacidades de razonamiento algorítmico y generación de código en un modelo compacto.
 
-La relevancia de este adaptador radica en su tamaño reducido (0.2 GB) y su enfoque en un dominio específico, lo que permite mejorar las capacidades de un modelo pequeño sin necesidad de reentrenar todos los parámetros. Al estar basado en Qwen3.8-2B, hereda la arquitectura transformer de la serie Qwen, aunque los detalles exactos de dicha arquitectura no se especifican en la información disponible. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de su uso.
+La relevancia de este adaptador radica en su tamaño reducido (0.2 GB) y su enfoque en un dominio específico, lo que permite mejorar las capacidades de un modelo pequeño sin necesidad de reentrenar todos los parámetros. Al estar basado en Qwen3.8-2B, hereda la arquitectura transformer de la serie Qwen, aunque los detalles exactos de dicha arquitectura no se especifican en la información disponible. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de su uso.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de este adaptador radica en su tamaño reducido (0.2 GB) y su enfo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, lo que implica que solo se entrenan matrices de baja dimensión que se inyectan en las capas del modelo base, congelando el resto de parámetros. El modelo base, `ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth`, es un fine-tuning de Qwen3.8-2B para function calling, probablemente entrenado con la metodología xLAM (eXpandable Language Agent Model) y optimizado con la librería Unsloth para acelerar el entrenamiento. El adaptador se ha entrenado adicionalmente mediante SFT (supervised fine-tuning) con problemas de LeetCode, según indican las etiquetas del repositorio, utilizando la librería TRL de HuggingFace.
+El modelo es un adaptador LoRA, lo que implica que solo se entrenan matrices de baja dimensión que se inyectan en las capas del modelo base, congelando el resto de parámetros. El modelo base, `ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth`, es un fine-tuning de Qwen3.8-2B para function calling, probablemente entrenado con la metodología xLAM (eXpandable Language Agent Model) y optimizado con la librería Unsloth para acelerar el entrenamiento. El adaptador se ha entrenado adicionalmente mediante SFT (supervised fine-tuning) con problemas de LeetCode, según indican las etiquetas del repositorio, utilizando la librería TRL de Hugging Face.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El tag `arxiv:1910.09700` hace referencia al paper de LoRA, lo que confirma el uso de esta técnica de adaptación de bajo rango. No se mencionan innovaciones adicionales como decodificación especulativa o atención lineal.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: para un modelo de 2B parámetros en FP16, se estiman entre 4 y 6 GB de VRAM, incluyendo el adaptador LoRA. Con cuantización a 8 bits o 4 bits, podría reducirse a 2-3 GB.
 - GPU recomendadas: tarjetas consumer como NVIDIA RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores son suficientes. También puede ejecutarse en GPUs de datacenter como A10 o A100 si se requiere mayor throughput.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y baja gracias al tamaño reducido.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de HuggingFace sobre el modelo base. También es compatible con vLLM, llama.cpp (si se convierte a GGUF) y Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de Hugging Face sobre el modelo base. También es compatible con vLLM, llama.cpp (si se convierte a GGUF) y Ollama, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no disponibles, pero se espera una latencia baja en GPUs modernas dado el tamaño del modelo.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ Nota: los datos de Qwen3.8-2B no están confirmados en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen3.8-2B-FC-xLAM-LeetCode-LoRA
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen3.8-2B-FC-xLAM-LeetCode-LoRA
 - Modelo base: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth
 - GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Página de Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Página de Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Artículo sobre Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/
 - Ficha de Qwen3.8 2B en LLM Explorer: https://llm-explorer.com/model/empero-ai%2FQwen3.8-2B,2KgF2noAan1vJu25f3jbZd

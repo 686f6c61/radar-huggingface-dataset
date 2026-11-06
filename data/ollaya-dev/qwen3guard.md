@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ollaya-dev/qwen3guard | 0,6B | no disponible | paridad fp32 con transformers (1,4e-5) | Apache-2.0 | ONNX via runtime de Ollaya |
-| Qwen/Qwen3Guard-Gen-0.6B | 0,6B | no disponible | referencia upstream de la paridad | Apache-2.0 | Pesos originales en HuggingFace |
-| Qwen3Guard-Gen-4B | 4B | no disponible | no disponible | no disponible | Pesos en HuggingFace |
-| Qwen3Guard-Gen-8B | 8B | no disponible | no disponible | no disponible | Pesos en HuggingFace |
+| Qwen/Qwen3Guard-Gen-0.6B | 0,6B | no disponible | referencia upstream de la paridad | Apache-2.0 | Pesos originales en Hugging Face |
+| Qwen3Guard-Gen-4B | 4B | no disponible | no disponible | no disponible | Pesos en Hugging Face |
+| Qwen3Guard-Gen-8B | 8B | no disponible | no disponible | no disponible | Pesos en Hugging Face |
 
 No se dispone de datos numericos de benchmarks que permitan comparar el rendimiento de estas variantes entre si ni frente a otras familias de guardrails.
 
@@ -80,7 +80,7 @@ No se dispone de datos numericos de benchmarks que permitan comparar el rendimie
 - El modelo base procede de un entrenamiento sobre 1,19 millones de ejemplos etiquetados; la cobertura de dominios muy especificos (juridico, medico, codigo) no esta garantizada.
 
 ## Enlaces
-- Paquete en HuggingFace: https://huggingface.co/ollaya-dev/qwen3guard
+- Paquete en Hugging Face: https://huggingface.co/ollaya-dev/qwen3guard
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-0.6B
 - Repositorio de Qwen3Guard: https://github.com/QwenLM/Qwen3Guard
 - Informe tecnico (arXiv, abstract): https://arxiv.org/abs/2510.14276

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/w4a16_asym_awq-e2e` es un artefacto publicado por el usuario `nm-testing` en HuggingFace, con un tamaño de aproximadamente 1.100 millones de parámetros. Los metadatos disponibles son muy escasos: no se especifica licencia, idiomas, pipeline ni detalles de entrenamiento. Los tags (`llama`, `compressed-tensors`, `safetensors`) sugieren que se trata de un modelo basado en arquitectura Llama, con compresión de tensores y una cuantización asimétrica de pesos de 4 bits y activaciones de 16 bits (indicada en el propio nombre del repositorio). Sin embargo, no hay documentación oficial ni resultados publicados que confirmen estas características.
+El modelo `nm-testing/w4a16_asym_awq-e2e` es un artefacto publicado por el usuario `nm-testing` en Hugging Face, con un tamaño de aproximadamente 1.100 millones de parámetros. Los metadatos disponibles son muy escasos: no se especifica licencia, idiomas, pipeline ni detalles de entrenamiento. Los tags (`llama`, `compressed-tensors`, `safetensors`) sugieren que se trata de un modelo basado en arquitectura Llama, con compresión de tensores y una cuantización asimétrica de pesos de 4 bits y activaciones de 16 bits (indicada en el propio nombre del repositorio). Sin embargo, no hay documentación oficial ni resultados publicados que confirmen estas características.
 
 El repositorio fue creado en julio de 2026 y actualizado en agosto de 2026, con 448 descargas y sin valoraciones. Dado que la información pública es prácticamente nula, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente los campos no confirmados. No es posible evaluar sus capacidades, rendimiento o idoneidad para casos de uso concretos sin información adicional.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de la misma categoria ni se dis
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nm-testing/w4a16_asym_awq-e2e)
+- [Repositorio en Hugging Face](https://huggingface.co/nm-testing/w4a16_asym_awq-e2e)

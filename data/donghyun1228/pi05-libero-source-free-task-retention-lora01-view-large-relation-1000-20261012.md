@@ -70,7 +70,7 @@ No se dispone de métricas publicadas de este modelo que permitan una comparaci�
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-source-free-task-retention-lora01 (este repositorio) | Política VLA con LoRA sobre visión y acción | no disponible | no disponible | no disponible | Pesos incluidos en HuggingFace; sin tasa de éxito publicada |
+| pi05-libero-source-free-task-retention-lora01 (este repositorio) | Política VLA con LoRA sobre visión y acción | no disponible | no disponible | no disponible | Pesos incluidos en Hugging Face; sin tasa de éxito publicada |
 | Política base de la familia pi05 / openpi | Política VLA | no disponible | no disponible | no disponible | Referencia pública del origen no verificada según el autor |
 | Alternativas de política robótica (por ejemplo, otras VLA de manipulación) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
@@ -89,7 +89,7 @@ No se dispone de métricas publicadas de este modelo que permitan una comparaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-task-retention-lora01-view-large-relation-1000-20261012
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-task-retention-lora01-view-large-relation-1000-20261012
 - Commit de inferencia indicado por el autor: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`
 - Configuración de despliegue: `pi05_libero_source_free_split_vision_action_lora_idm` (wrapper strict84)
 - Repositorio de origen: no disponible; el autor indica que no existe una referencia pública verificada de forma independiente

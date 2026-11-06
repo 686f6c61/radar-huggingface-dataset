@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jwg0830/EXAONE-Deep-7.8B-sft_v0_2` es un ajuste fino (fine-tuning) mediante LoRA sobre el modelo base `LGAI-EXAONE/EXAONE-Deep-7.8B`, desarrollado por el usuario de HuggingFace `jwg0830`. El objetivo principal es corregir dos deficiencias detectadas en el modelo base: la inestabilidad en el formato de salida (respuestas no estructuradas o incompletas) y la debilidad en razonamiento causal, especialmente en el eje `Com2-main` del benchmark coreano K-AI Leaderboard. Para ello, se utilizaron datos de AI Hub coreano y un proceso de diagnóstico basado en proxy benchmarks de cinco ejes.
+El modelo `jwg0830/EXAONE-Deep-7.8B-sft_v0_2` es un ajuste fino (fine-tuning) mediante LoRA sobre el modelo base `LGAI-EXAONE/EXAONE-Deep-7.8B`, desarrollado por el usuario de Hugging Face `jwg0830`. El objetivo principal es corregir dos deficiencias detectadas en el modelo base: la inestabilidad en el formato de salida (respuestas no estructuradas o incompletas) y la debilidad en razonamiento causal, especialmente en el eje `Com2-main` del benchmark coreano K-AI Leaderboard. Para ello, se utilizaron datos de AI Hub coreano y un proceso de diagnóstico basado en proxy benchmarks de cinco ejes.
 
 El modelo mantiene la arquitectura original de EXAONE-Deep (un transformer de 7.8 mil millones de parámetros) y no introduce cambios estructurales. La relevancia actual radica en que ofrece una mejora sustancial en tareas de razonamiento y respuesta en coreano, con un incremento del 29,4 % al 83,3 % en la estabilidad de respuestas en su proxy benchmark, lo que lo convierte en una opción interesante para aplicaciones que requieran generación de texto coreano con formato consistente y razonamiento lógico.
 
@@ -92,5 +92,5 @@ No se dispone de comparativas con otros modelos de tamaño similar (p. ej., Llam
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/jwg0830/EXAONE-Deep-7.8B-sft_v0_2
+- Página del modelo en Hugging Face: https://huggingface.co/jwg0830/EXAONE-Deep-7.8B-sft_v0_2
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-7.8B

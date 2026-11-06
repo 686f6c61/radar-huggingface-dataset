@@ -9,7 +9,7 @@ nombrado del autor, un ajuste fino aumentado por recuperación (RAFT, *Retrieval
 Fine-Tuning*) en el dominio médico, con 5 documentos de contexto por ejemplo, cadena de
 pensamiento (CoT) y rango de LoRA 64, seleccionando el checkpoint con mejor pérdida de
 evaluación. Ninguna de estas inferencias está confirmada en la model card, que es la
-plantilla por defecto de HuggingFace y no contiene descripción, datos de entrenamiento,
+plantilla por defecto de Hugging Face y no contiene descripción, datos de entrenamiento,
 hiperparámetros ni resultados.
 
 Se trata de un artefacto con nula tracción comunitaria: cero descargas, cero "likes" y una
@@ -182,7 +182,7 @@ presentan OpenBioLLM o BioMistral.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base alineado: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia citada en la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-GLM-5.3-Flash-abliterated-GGUF es una version "abliterated" (sin rechazos) del modelo multimodal zai-org/GLM-5.3-Flash, publicada en HuggingFace bajo el identificador Petyx123/Huihui-GLM-5.3-Flash-abliterated-GGUF. El proceso de abliteration, documentado en el repositorio remove-refusals-with-transformers, consiste en modificar quirurgicamente los pesos de determinadas capas para eliminar la direccion de activacion asociada a las respuestas de rechazo, de modo que el modelo deja de negarse a atender peticiones que el modelo original filtraria. En este caso concreto, solo las capas 15 a 35 (indexacion base 0) han sido ablacionadas; el resto de capas y todos los modulos expertos permanecen intactos.
+Huihui-GLM-5.3-Flash-abliterated-GGUF es una version "abliterated" (sin rechazos) del modelo multimodal zai-org/GLM-5.3-Flash, publicada en Hugging Face bajo el identificador Petyx123/Huihui-GLM-5.3-Flash-abliterated-GGUF. El proceso de abliteration, documentado en el repositorio remove-refusals-with-transformers, consiste en modificar quirurgicamente los pesos de determinadas capas para eliminar la direccion de activacion asociada a las respuestas de rechazo, de modo que el modelo deja de negarse a atender peticiones que el modelo original filtraria. En este caso concreto, solo las capas 15 a 35 (indexacion base 0) han sido ablacionadas; el resto de capas y todos los modulos expertos permanecen intactos.
 
 El modelo base es un sistema de gran tamano con aproximadamente 320.759.404.382 parametros (unos 320,8 mil millones), segun los pesos reales en safetensors declarados en el repositorio, y pipeline image-text-to-text, lo que implica capacidades multimodales de entrada de imagen y texto. La model card menciona "modulos expertos", lo que apunta a una arquitectura de mezcla de expertos (MoE), aunque no se detalla el numero de expertos ni los parametros activos por token. El contexto de trabajo declarado en el ejemplo de uso de llama.cpp es de 262.144 tokens.
 
@@ -39,7 +39,7 @@ El entrenamiento original corresponde a zai-org; esta publicacion es un derivado
 - Capacidad de codigo y matematicas: no verificada de forma independiente en la informacion disponible; se hereda del modelo base, pero no hay benchmarks publicados en esta ficha.
 - Soporte de contexto largo: el ejemplo oficial arranca llama.cpp con `-c 262144`, es decir, 256K tokens de ventana.
 - Conversacion multi-turno (etiqueta `conversational` en los metadatos).
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue detras de APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue detras de APIs compatibles con el formato de Hugging Face.
 - Ausencia deliberada de filtros de rechazo en las capas ablacionadas: el modelo no aplica las negativas tipicas del modelo original ante peticiones sensibles.
 - Soporte de tool calling, function calling y razonamiento agente multi-paso: no disponible en la informacion proporcionada (no se documenta ni se descarta).
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Petyx123/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Petyx123/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - GGUF de origen (Unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Repositorio de la tecnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

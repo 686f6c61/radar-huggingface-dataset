@@ -79,8 +79,8 @@ Los datos de rendimiento publicados en la model card son los siguientes:
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Idol Turbo (este modelo) | No disponible (29,4M entrenables en LoRA) | No aplica | 4-8 sin CFG (5 recomendado) | Apache 2.0 | HuggingFace (speridlabs/idol-turbo) |
-| Idol (base) | No disponible | No aplica | 50 con CFG (100 NFE) | No disponible en la informacion | HuggingFace (speridlabs/idol) |
+| Idol Turbo (este modelo) | No disponible (29,4M entrenables en LoRA) | No aplica | 4-8 sin CFG (5 recomendado) | Apache 2.0 | Hugging Face (speridlabs/idol-turbo) |
+| Idol (base) | No disponible | No aplica | 50 con CFG (100 NFE) | No disponible en la informacion | Hugging Face (speridlabs/idol) |
 | Otros modelos image-to-3D | No disponible | No aplica | No disponible | No disponible | No disponible |
 
 La comparación disponible se limita al modelo base Idol: Turbo reduce las evaluaciones de red de 100 a 5 (20×) a costa de una calidad algo menor en detalles tardíos y colores que pueden virar a cálido a 4 pasos. No se dispone de datos de otros modelos image-to-3D comparables en la información proporcionada.
@@ -98,7 +98,7 @@ La comparación disponible se limita al modelo base Idol: Turbo reduce las evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/speridlabs/idol-turbo
+- Modelo en Hugging Face: https://huggingface.co/speridlabs/idol-turbo
 - Modelo base Idol: https://huggingface.co/speridlabs/idol
 - Paper de la receta Glance: https://arxiv.org/abs/2512.02899
 - Repack para ComfyUI: https://huggingface.co/Comfy-Org/Idol

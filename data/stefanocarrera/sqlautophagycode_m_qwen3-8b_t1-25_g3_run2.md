@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g3_run2` es un checkpoint publicado en HuggingFace por el usuario stefanocarrera, cuyo identificador sugiere un ajuste fino derivado de Qwen3-8B. El repositorio tiene un tamano de 0,2 GB, lo que es incompatible con los pesos completos en precision de 16 bits de un modelo de 8.000 millones de parametros (que ocuparian del orden de 16 GB); por tanto, lo mas probable es que se trate de un adaptador LoRA, de un merge parcial o de un checkpoint truncado, aunque esta circunstancia no se documenta en la model card. El autor no ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados ni la licencia.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g3_run2` es un checkpoint publicado en Hugging Face por el usuario stefanocarrera, cuyo identificador sugiere un ajuste fino derivado de Qwen3-8B. El repositorio tiene un tamano de 0,2 GB, lo que es incompatible con los pesos completos en precision de 16 bits de un modelo de 8.000 millones de parametros (que ocuparian del orden de 16 GB); por tanto, lo mas probable es que se trate de un adaptador LoRA, de un merge parcial o de un checkpoint truncado, aunque esta circunstancia no se documenta en la model card. El autor no ha publicado informacion sobre el proceso de entrenamiento, los datos utilizados ni la licencia.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El unico contenido informativo es la etiqueta `unsloth`, que apunta a que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente con LoRA o QLoRA sobre modelos transformer densos. La nomenclatura del identificador (temperatura 1.25, `g3`, `run2`) sugiere un experimento con multiples ejecuciones y parametros de muestreo registrados en el nombre, practica comun en proyectos de investigacion sobre generacion de codigo y SQL.
+La model card es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. El unico contenido informativo es la etiqueta `unsloth`, que apunta a que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente con LoRA o QLoRA sobre modelos transformer densos. La nomenclatura del identificador (temperatura 1.25, `g3`, `run2`) sugiere un experimento con multiples ejecuciones y parametros de muestreo registrados en el nombre, practica comun en proyectos de investigacion sobre generacion de codigo y SQL.
 
 Se trata, por tanto, de un artefacto de investigacion sin documentar, sin descargas ni interacciones en el momento de redactar esta ficha y sin garantias de reproducibilidad. Es relevante unicamente como referencia para quien siga la linea de trabajo del autor (aparentemente centrada en generacion de codigo SQL), no como modelo listo para produccion. Cualquier uso serio exige inspeccionar previamente el contenido real del repositorio y verificar si contiene pesos completos o un adaptador que requiera cargar el modelo base por separado.
 
@@ -84,10 +84,10 @@ No existen datos publicados sobre este checkpoint que permitan una comparacion d
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g3_run2 | no disponible (repositorio de 0,2 GB) | no disponible | no disponible | Repositorio publico con 0 descargas |
-| Qwen3-8B (base implicito) | 8.200 millones aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en HuggingFace y ModelScope |
-| Llama 3.1 8B | 8.030 millones | 128.000 tokens | Licencia comunitaria Llama 3.1 | Pesos completos en HuggingFace y Meta |
-| Mistral 7B v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | Pesos completos en HuggingFace |
-| Gemma 2 9B | 9.240 millones | 8.000 tokens | Terminos de uso de Gemma | Pesos completos en HuggingFace y Kaggle |
+| Qwen3-8B (base implicito) | 8.200 millones aprox. | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en Hugging Face y ModelScope |
+| Llama 3.1 8B | 8.030 millones | 128.000 tokens | Licencia comunitaria Llama 3.1 | Pesos completos en Hugging Face y Meta |
+| Mistral 7B v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | Pesos completos en Hugging Face |
+| Gemma 2 9B | 9.240 millones | 8.000 tokens | Terminos de uso de Gemma | Pesos completos en Hugging Face y Kaggle |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No existen datos publicados sobre este checkpoint que permitan una comparacion d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g3_run2
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g3_run2
 - Modelo base implicito, Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Libreria Unsloth, mencionada en las etiquetas: https://github.com/unslothai/unsloth
 - Paper de referencia sobre impacto computacional citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700

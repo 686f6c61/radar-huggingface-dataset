@@ -84,9 +84,9 @@ Paridad numérica con el código original: máximo |diff| ≤ 0,002 en CPU fp32;
 
 | Modelo | Arquitectura | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swin Base (esta ficha, vía fastforks) | Swin Transformer jerárquico | no disponible (base) | 224x224 fija | MIT (pesos) / Apache-2.0 (código) | HuggingFace (timm) + fastforks |
-| ViT Base (referencia genérica) | Vision Transformer plano | ~86M (típico en ViT-B) | 224x224 | variable según checkpoint | HuggingFace (timm) |
-| ConvNeXt Base (referencia genérica) | CNN moderna | ~89M (típico en ConvNeXt-B) | 224x224 | variable según checkpoint | HuggingFace (timm) |
+| Swin Base (esta ficha, vía fastforks) | Swin Transformer jerárquico | no disponible (base) | 224x224 fija | MIT (pesos) / Apache-2.0 (código) | Hugging Face (timm) + fastforks |
+| ViT Base (referencia genérica) | Vision Transformer plano | ~86M (típico en ViT-B) | 224x224 | variable según checkpoint | Hugging Face (timm) |
+| ConvNeXt Base (referencia genérica) | CNN moderna | ~89M (típico en ConvNeXt-B) | 224x224 | variable según checkpoint | Hugging Face (timm) |
 
 No se dispone en la información proporcionada de cifras de precisión comparadas con estas alternativas, por lo que la comparación se limita a arquitectura, licencia y disponibilidad. Los datos de parámetros de ViT-B y ConvNeXt-B son valores de referencia de la literatura y no proceden de la información del repositorio.
 
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de cifras de precisión comparada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/swin
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/swin
 - Pesos originales (timm): https://huggingface.co/timm/swin_base_patch4_window7_224.ms_in22k_ft_in1k
 - Código de fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PyroDash-4B-GRPO-Lambda-0.05 es un checkpoint de ajuste fino publicado en HuggingFace bajo el identificador `RatanK/23B0059-Week06-Compression40-Submission01`. Se trata de la tercera etapa (GRPO con penalizacion de eficiencia lambda = 0,05) de la pipeline de entrenamiento PyroDash, partiendo de `PyroDash-4B-SFT` y, en ultima instancia, del modelo base `Qwen/Qwen3.5-4B`. El modelo pertenece a la categoria de inferencia colaborativa entre un modelo pequeno local y un modelo grande remoto: el modelo pequeno emite de forma autonoma el token de control `<|llm_offload|>` durante la decodificacion autorregresiva y un motor de colaboracion deriva la cadena de razonamiento al modelo grande cuando aparece esa senal.
+PyroDash-4B-GRPO-Lambda-0.05 es un checkpoint de ajuste fino publicado en Hugging Face bajo el identificador `RatanK/23B0059-Week06-Compression40-Submission01`. Se trata de la tercera etapa (GRPO con penalizacion de eficiencia lambda = 0,05) de la pipeline de entrenamiento PyroDash, partiendo de `PyroDash-4B-SFT` y, en ultima instancia, del modelo base `Qwen/Qwen3.5-4B`. El modelo pertenece a la categoria de inferencia colaborativa entre un modelo pequeno local y un modelo grande remoto: el modelo pequeno emite de forma autonoma el token de control `<|llm_offload|>` durante la decodificacion autorregresiva y un motor de colaboracion deriva la cadena de razonamiento al modelo grande cuando aparece esa senal.
 
 El problema que aborda es el coste de computo en la nube asociado a los sistemas de enrutamiento entre modelos. A diferencia de propuestas como RouteLLM o GlimpRouter, que deciden a nivel de consulta completa si se invoca al modelo grande, PyroDash opera a nivel de token y no requiere ni un modelo enrutador adicional ni reentrenar el modelo grande, lo que lo hace compatible con servicios LLM de codigo cerrado. La variante lambda = 0,05 es el punto de operacion orientado a calidad: segun los resultados declarados por el autor, alcanza un 64,04 % de precision media, por encima del propio GLM-5.2-FP8 (57,68 %), a costa de consumir un 95,34 % de tokens del modelo grande.
 
@@ -115,7 +115,7 @@ No se dispone de datos de contexto, cuantizacion ni licencia de los metodos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RatanK/23B0059-Week06-Compression40-Submission01
+- Modelo en Hugging Face: https://huggingface.co/RatanK/23B0059-Week06-Compression40-Submission01
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Checkpoint SFT (PyroDash-4B-SFT): https://huggingface.co/pyromind/PyroDash-4B-SFT
@@ -125,7 +125,7 @@ No se dispone de datos de contexto, cuantizacion ni licencia de los metodos comp
 - Sitio web del proyecto: https://PyroMind-Dynamics.github.io/pyroDash/
 - Dataset de SFT EasyHard-24K: https://huggingface.co/datasets/pyromind/easyhard-24k
 - Dataset de GRPO DAPO-Math-17k: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
-- Organizacion en HuggingFace: https://huggingface.co/pyromind
+- Organizacion en Hugging Face: https://huggingface.co/pyromind
 - Cita del proyecto: `@misc{pyrodash2026, title = {PyroDash: Cost-Efficient Token-Level Small-Large Model Collaborative Inference}, author = {{PyroMind Dynamics}}, year = {2026}, note = {Preprint}}`
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden unicamente de la model card del repositorio. No se ha localizado preprint publicado, articulo en arXiv ni demo adicional.

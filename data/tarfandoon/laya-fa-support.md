@@ -118,8 +118,8 @@ En cuanto al recall por etiqueta con instrucciones en ingles, la informacion dis
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tarfandoon/laya-fa-support` | 321,9 M | no disponible | Triaje de soporte en persa, 4 clases | Apache 2.0 | HuggingFace, 0 descargas |
-| `convaiinnovations/laya` (`laya-multilingual`) | no disponible (mismo backbone) | no disponible | Decision multilingue generica | no disponible | Checkpoint base en HuggingFace |
+| `tarfandoon/laya-fa-support` | 321,9 M | no disponible | Triaje de soporte en persa, 4 clases | Apache 2.0 | Hugging Face, 0 descargas |
+| `convaiinnovations/laya` (`laya-multilingual`) | no disponible (mismo backbone) | no disponible | Decision multilingue generica | no disponible | Checkpoint base en Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | Alternativa propietaria citada en la comparativa de Laya | no disponible | no disponible |
 
 La unica comparacion con datos reales es contra el propio modelo base, que es 15 aciertos peor con instrucciones en persa en el mismo benchmark. No hay informacion suficiente para comparar con otros clasificadores de triaje en persa de tamano similar.
@@ -136,16 +136,16 @@ La unica comparacion con datos reales es contra el propio modelo base, que es 15
 - Con 0 descargas y 0 "likes", no existe validacion independiente de la comunidad ni issues publicos sobre su comportamiento.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y los terminos del modelo base `convaiinnovations/laya` antes de desplegarlo en produccion.
 - Dependencia de un unico runtime: el paquete `laya`. No se documentan alternativas de servido ni exporters estandar (GGUF, ONNX).
-- Las fechas del repositorio (creacion y actualizacion el 28 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene confirmar su vigencia en HuggingFace.
+- Las fechas del repositorio (creacion y actualizacion el 28 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene confirmar su vigencia en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarfandoon/laya-fa-support
+- Modelo en Hugging Face: https://huggingface.co/tarfandoon/laya-fa-support
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del modelo base en GitHub: https://github.com/NandhaKishorM/laya
 - Benchmark persa: https://github.com/alipyth/laya-persian-benchmark
 - Web del proyecto Laya: https://laya.convaiinnovations.com/
-- Blog de HuggingFace sobre Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
+- Blog de Hugging Face sobre Laya: https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval
 - Comparativa independiente de Laya: https://brainfunctioncollapse.com/laya
-- Perfil del autor en HuggingFace: https://huggingface.co/tarfandoon/models
+- Perfil del autor en Hugging Face: https://huggingface.co/tarfandoon/models
 - Canal de Telegram del autor: https://t.me/tarfandoonchannel

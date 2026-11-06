@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CharlesZhang-USTC/snf_experiments` es un repositorio alojado en HuggingFace por el usuario CharlesZhang-USTC, publicado el 18 de septiembre de 2026 y actualizado por última vez ese mismo dia segun los metadatos de la plataforma. El repositorio tiene un tamano de 0,1 GB, licencia CC-BY-4.0 y registra 0 descargas y 0 likes en el momento de la consulta. No declara pipeline, idiomas soportados ni ninguna etiqueta descriptiva mas alla de la licencia y la region (`region:us`).
+`CharlesZhang-USTC/snf_experiments` es un repositorio alojado en Hugging Face por el usuario CharlesZhang-USTC, publicado el 18 de septiembre de 2026 y actualizado por última vez ese mismo dia segun los metadatos de la plataforma. El repositorio tiene un tamano de 0,1 GB, licencia CC-BY-4.0 y registra 0 descargas y 0 likes en el momento de la consulta. No declara pipeline, idiomas soportados ni ninguna etiqueta descriptiva mas alla de la licencia y la region (`region:us`).
 
 La model card asociada contiene unicamente el bloque de metadatos con la licencia; no incluye descripcion, arquitectura, numero de parametros, datos de entrenamiento ni instrucciones de uso. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces recuperados corresponden a sitios de minijuegos en turco y no guardan ninguna relacion con el proyecto.
 
@@ -41,7 +41,7 @@ Los unicos elementos verificables son administrativos: el repositorio existe, ti
 - Flujos agénticos o razonamiento multi-paso.
 - Capacidades multilingues y que idiomas cubriria.
 - Modalidades adicionales como vision, audio o modo de razonamiento explicito (thinking).
-- Servicio mediante endpoints de inferencia de HuggingFace.
+- Servicio mediante endpoints de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CharlesZhang-USTC/snf_experiments
+- Repositorio en Hugging Face: https://huggingface.co/CharlesZhang-USTC/snf_experiments
 - Model card: https://huggingface.co/CharlesZhang-USTC/snf_experiments/blob/main/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/CharlesZhang-USTC
+- Perfil del autor en Hugging Face: https://huggingface.co/CharlesZhang-USTC
 - Paper, blog tecnico, repositorio de codigo y demo: no disponibles. La busqueda web no devolvio ningun enlace relacionado con este proyecto.

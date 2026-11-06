@@ -97,8 +97,8 @@ Configuración de evaluación: llama.cpp Q8_0, límites de 24.576 tokens (AIME),
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ephedra-0.5-Cyber-Experimental | 4B (base) + LoRA | No disponible | Revisión defensiva de vulnerabilidades vía agente | Apache-2.0 | HuggingFace (adaptador y GGUF) |
-| XHToken/Spark-X2.6-4B (base) | 4B | No disponible | Modelo generalista | Apache-2.0 | HuggingFace |
+| Ephedra-0.5-Cyber-Experimental | 4B (base) + LoRA | No disponible | Revisión defensiva de vulnerabilidades vía agente | Apache-2.0 | Hugging Face (adaptador y GGUF) |
+| XHToken/Spark-X2.6-4B (base) | 4B | No disponible | Modelo generalista | Apache-2.0 | Hugging Face |
 | Checkpoint ⑤ (versión previa del mismo autor) | 4B (base) + LoRA | No disponible | Igual, sin ajuste de rechazo | Apache-2.0 | No disponible públicamente en la información proporcionada |
 
 No se dispone de datos sobre otros modelos especializados en revisión de vulnerabilidades comparables en la información proporcionada.
@@ -119,7 +119,7 @@ No se dispone de datos sobre otros modelos especializados en revisión de vulner
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/Takenoko12345678/Ephedra-0.5-Cyber-Experimental
-- HuggingFace (GGUF con LoRA fusionado): https://huggingface.co/Takenoko12345678/Ephedra-0.5-Cyber-Experimental-GGUF
+- Hugging Face (adaptador): https://huggingface.co/Takenoko12345678/Ephedra-0.5-Cyber-Experimental
+- Hugging Face (GGUF con LoRA fusionado): https://huggingface.co/Takenoko12345678/Ephedra-0.5-Cyber-Experimental-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - GitHub Advisory Database: https://github.com/github/advisory-database

@@ -126,7 +126,7 @@ El propio autor senala que el rango de calidad 130-135 sobre 160 es un empate es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RukaRat/Qwen3.8-27B-INT8-W8A8-imatrix-heretic-MTP
+- Modelo en Hugging Face: https://huggingface.co/RukaRat/Qwen3.8-27B-INT8-W8A8-imatrix-heretic-MTP
 - Build base sin abliterar (INT8 W8A8 imatrix MTP): https://huggingface.co/RukaRat/Qwen3.8-27B-INT8-W8A8-imatrix-MTP
 - Build W4A16 con cabeza INT8: https://huggingface.co/RukaRat/Qwen3.8-27B-W4A16-imatrix-int8head-MTP
 - Build W4A16 con cabeza INT8 abliterado: https://huggingface.co/RukaRat/Qwen3.8-27B-W4A16-imatrix-heretic-int8head-MTP

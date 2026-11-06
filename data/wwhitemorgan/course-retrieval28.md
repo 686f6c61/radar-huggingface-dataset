@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Retrieval es un prototipo de investigación publicado por el usuario wwhitemorgan en HuggingFace bajo el identificador `wwhitemorgan/course-retrieval28`. Se trata de una implementación personalizada de tipo CNN Transformer orientada a tareas de recuperación (retrieval), con una configuración declarada de escala "giant" y una serie de decisiones arquitectónicas concretas: atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación approx gelu y normalización por batchnorm.
+Cnn Transformer for Retrieval es un prototipo de investigación publicado por el usuario wwhitemorgan en Hugging Face bajo el identificador `wwhitemorgan/course-retrieval28`. Se trata de una implementación personalizada de tipo CNN Transformer orientada a tareas de recuperación (retrieval), con una configuración declarada de escala "giant" y una serie de decisiones arquitectónicas concretas: atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación approx gelu y normalización por batchnorm.
 
 El repositorio no contiene un modelo entrenado. Según la propia model card, el archivo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y el autor indica explícitamente que no se reclama ninguna puntuación de benchmark. El peso real registrado en safetensors es de 33.088 parámetros, un tamaño muy reducido que confirma su naturaleza de andamiaje experimental más que de modelo listo para producción.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwhitemorgan/course-retrieval28
+- Modelo en Hugging Face: https://huggingface.co/wwhitemorgan/course-retrieval28
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

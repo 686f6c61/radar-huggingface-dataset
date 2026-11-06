@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-Base es la versión base (solo preentrenada) del modelo denso de 8.200 millones de parámetros de la familia Qwen3, desarrollada por el equipo Qwen de Alibaba. El repositorio analizado, `konizquants/Qwen3-8B-Base`, es una réplica del modelo original publicada por un tercero en HuggingFace, con pesos en safetensors y sin modificaciones documentadas respecto a la versión oficial. Al tratarse de un modelo base, no ha pasado por ajuste por instrucciones ni por alineación con preferencias humanas (RLHF/DPO), por lo que su comportamiento natural es la continuación de texto, no el diálogo.
+Qwen3-8B-Base es la versión base (solo preentrenada) del modelo denso de 8.200 millones de parámetros de la familia Qwen3, desarrollada por el equipo Qwen de Alibaba. El repositorio analizado, `konizquants/Qwen3-8B-Base`, es una réplica del modelo original publicada por un tercero en Hugging Face, con pesos en safetensors y sin modificaciones documentadas respecto a la versión oficial. Al tratarse de un modelo base, no ha pasado por ajuste por instrucciones ni por alineación con preferencias humanas (RLHF/DPO), por lo que su comportamiento natural es la continuación de texto, no el diálogo.
 
 Arquitectura y escala: transformer causal denso de 36 capas, 8.190.735.360 parámetros reales según los safetensors (6.950 millones sin contar embeddings), atención con Grouped Query Attention (32 cabezas de consulta y 8 de clave/valor) y una ventana de contexto declarada de 32.768 tokens. El preentrenamiento de la familia Qwen3 se realizó sobre 36 billones de tokens en 119 idiomas, con un pipeline de tres etapas que prioriza conocimiento general, después razonamiento (STEM, código, lógica) y finalmente comprensión de contexto largo.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B-Base (este repositorio) | 8,19B | 32.768 tokens | Apache 2.0 | Pesos safetensors en HuggingFace |
+| Qwen3-8B-Base (este repositorio) | 8,19B | 32.768 tokens | Apache 2.0 | Pesos safetensors en Hugging Face |
 | Qwen2.5-7B | ~7,6B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Pesos safetensors, GGUF y cuantizaciones de la comunidad |
 | Llama-3.1-8B | ~8,03B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (con restricciones) | Pesos safetensors y GGUF |
 | Mistral-7B-v0.3 | ~7,25B | 32.768 tokens | Apache 2.0 | Pesos safetensors y GGUF |
@@ -93,7 +93,7 @@ La comparación de rendimiento entre estos modelos no está disponible en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/konizquants/Qwen3-8B-Base
+- Repositorio en Hugging Face: https://huggingface.co/konizquants/Qwen3-8B-Base
 - Articulo tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

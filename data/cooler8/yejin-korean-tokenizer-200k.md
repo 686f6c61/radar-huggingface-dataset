@@ -4,7 +4,7 @@
 
 El modelo `yejin-korean-tokenizer-200k` es un tokenizador Byte-Level BPE especializado en coreano, desarrollado por el usuario `cooler8` y publicado bajo licencia Apache 2.0. Está diseñado para maximizar la compresión de texto coreano mediante un vocabulario de 200 000 tokens, entrenado desde cero sobre un corpus integrado de 16,2 GB que incluye web limpia (CulturaX), Wikipedia coreana, libros de texto, literatura y conjuntos de instrucciones como KoAlpaca. Su objetivo principal es servir como componente de tokenización para modelos de lenguaje de gran tamaño (8B o más), donde un vocabulario amplio reduce la fragmentación de palabras coreanas y mejora la eficiencia tanto en entrenamiento como en inferencia.
 
-La relevancia actual de este tokenizador radica en que el coreano, al ser una lengua aglutinante con alta morfología, suele requerir más tokens por palabra que el inglés si se usan tokenizadores genéricos. Con 200 000 entradas, supera el vocabulario de Llama 3 (128K) y Qwen 2.5 (152K), lo que permite representar unidades lingüísticas coreanas completas con menos tokens. El modelo está disponible en HuggingFace y es compatible con la biblioteca `transformers`, aunque al ser únicamente un tokenizador no incluye pesos de red neuronal.
+La relevancia actual de este tokenizador radica en que el coreano, al ser una lengua aglutinante con alta morfología, suele requerir más tokens por palabra que el inglés si se usan tokenizadores genéricos. Con 200 000 entradas, supera el vocabulario de Llama 3 (128K) y Qwen 2.5 (152K), lo que permite representar unidades lingüísticas coreanas completas con menos tokens. El modelo está disponible en Hugging Face y es compatible con la biblioteca `transformers`, aunque al ser únicamente un tokenizador no incluye pesos de red neuronal.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ El corpus de entrenamiento está compuesto por varias fuentes: CulturaX coreano 
 
 - Tokenización eficiente de texto coreano con alta compresión: el vocabulario de 200K reduce el número de tokens por frase en comparación con tokenizadores de menor tamaño o multilingües.
 - Soporte para inglés: aunque está especializado en coreano, el entrenamiento incluye datos en inglés, por lo que puede procesar textos mixtos ko-en.
-- Compatibilidad total con la biblioteca `transformers` de HuggingFace mediante `AutoTokenizer`.
+- Compatibilidad total con la biblioteca `transformers` de Hugging Face mediante `AutoTokenizer`.
 - Manejo de secuencias largas de hasta 8 192 tokens, adecuado para contextos extendidos en modelos de lenguaje.
 - Cobertura byte-level: al operar sobre bytes, no hay tokens desconocidos para ningún carácter Unicode.
 - Incluye tokens especiales estándar (BOS, EOS, UNK, PAD) listos para integrarse en pipelines de entrenamiento.
@@ -77,5 +77,5 @@ La comparación se basa únicamente en características declaradas por el autor;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-tokenizer-200k
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-tokenizer-200k
 - No se proporcionan otros enlaces (paper, blog, repositorio de código) en la información disponible.

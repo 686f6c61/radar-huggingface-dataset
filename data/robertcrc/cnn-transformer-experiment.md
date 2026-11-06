@@ -41,7 +41,7 @@ El repositorio incluye una receta de entrenamiento por defecto en `training_args
 - Pruebas de humo de arquitecturas híbridas: el modelo permite validar rápidamente que el pipeline de CNN-Transformer funciona correctamente, desde la carga de pesos hasta la ejecución de la inferencia, gracias a su tamaño mínimo de 16.576 parámetros.
 - Investigación sobre atención multi-query: la configuración incluida sirve como banco de pruebas para comparar el comportamiento de la atención multi-query frente a atención estándar en arquitecturas híbridas.
 - Prototipado de aprendizaje contrastivo: el repositorio ofrece un punto de partida para experimentar con objetivos contrastivos en combinación con CNN-Transformer, permitiendo iterar sobre el diseño de la función de pérdida.
-- Desarrollo de adaptadores para frameworks: al ser una implementación personalizada, el modelo es útil para ejercitar la creación de adaptadores que permitan cargar pesos en frameworks estándar como HuggingFace Transformers.
+- Desarrollo de adaptadores para frameworks: al ser una implementación personalizada, el modelo es útil para ejercitar la creación de adaptadores que permitan cargar pesos en frameworks estándar como Hugging Face Transformers.
 - Experimentos de inicialización de pesos: el checkpoint de inicialización puede utilizarse para estudiar cómo diferentes estrategias de inicialización afectan al entrenamiento posterior de arquitecturas CNN-Transformer.
 - Educación en arquitecturas híbridas: el modelo sirve como ejemplo didáctico de cómo combinar capas convolucionales con bloques Transformer, al ser lo suficientemente pequeño para inspeccionar y depurar el código completo.
 - Comparación de baselines de capacidad mínima: permite establecer un baseline de 16.576 parámetros para comparar con modelos de mayor capacidad en tareas de aprendizaje contrastivo, siempre que se entrene con la misma exposición de datos.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | robertcrc/cnn-transformer-experiment | 16.576 | no disponible | Cnn Transformer (nano) | BSD-3-Clause | Inicializacion, no entrenado |
 | CTran (rafiepour/CTran) | no disponible | no disponible | CNN-Transformer encoder-decoder | no disponible | Codigo de investigacion, no checkpoint publico |
 
-La comparativa se limita a CTran, un repositorio de GitHub que implementa una arquitectura CNN-Transformer para detección de intenciones y relleno de slots, pero no ofrece un modelo publicado en HuggingFace con el que comparar directamente. No se dispone de modelos comparables de la misma categoría con checkpoint público y métricas de referencia.
+La comparativa se limita a CTran, un repositorio de GitHub que implementa una arquitectura CNN-Transformer para detección de intenciones y relleno de slots, pero no ofrece un modelo publicado en Hugging Face con el que comparar directamente. No se dispone de modelos comparables de la misma categoría con checkpoint público y métricas de referencia.
 
 ## Limitaciones y advertencias
 
@@ -80,5 +80,5 @@ La comparativa se limita a CTran, un repositorio de GitHub que implementa una ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robertcrc/cnn-transformer-experiment
+- Hugging Face: https://huggingface.co/robertcrc/cnn-transformer-experiment
 - Repositorio de referencia CTran (no afiliado): https://github.com/rafiepour/CTran

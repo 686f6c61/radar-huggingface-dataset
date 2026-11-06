@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ertoluk/ai-metin-dedektor-en` es un clasificador binario de texto disenado para determinar si un texto en ingles ha sido escrito por un ser humano (clase 0) o generado por inteligencia artificial (clase 1). Lo desarrolla el usuario de HuggingFace ertoluk y esta construido sobre `roberta-base`, con 124.647.170 parametros totales en formato safetensors. Su tarea principal es la deteccion de contenido sintetico, un problema cada vez mas relevante para medios de comunicacion, plataformas educativas y equipos de moderacion que necesitan senalar texto generado automaticamente.
+El modelo `ertoluk/ai-metin-dedektor-en` es un clasificador binario de texto disenado para determinar si un texto en ingles ha sido escrito por un ser humano (clase 0) o generado por inteligencia artificial (clase 1). Lo desarrolla el usuario de Hugging Face ertoluk y esta construido sobre `roberta-base`, con 124.647.170 parametros totales en formato safetensors. Su tarea principal es la deteccion de contenido sintetico, un problema cada vez mas relevante para medios de comunicacion, plataformas educativas y equipos de moderacion que necesitan senalar texto generado automaticamente.
 
 El modelo se publica bajo licencia Apache 2.0, con un pipeline declarado de `text-classification` y soporte unicamente para ingles. Su arquitectura es la de un transformer encoder de tipo RoBERTa, por lo que hereda las caracteristicas de la familia: bidireccionalidad completa y una ventana de contexto de 512 tokens. La model card esta redactada en turco (el autor lo denomina "AI Metin Dedektörü — İngilizce") y aporta metricas internas muy altas sobre un conjunto de test propio de 800 ejemplos.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks independientes ni de terceros en la
 - VRAM estimada para inferencia: en FP32, aproximadamente 0,5 GB (unos 500 MB para 124,6 M de parametros); en FP16, aproximadamente 0,25 GB. La huella real dependera del framework y del tamano de lote.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente. No se requiere A100, H100 ni hardware de centro de datos; tarjetas consumer como GTX 1650, RTX 3060, RTX 4090 o incluso integradas modernas pueden ejecutarlo sin problema.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso puede ejecutarse en CPU con latencia aceptable para lotes pequenos.
-- Opciones de despliegue: al ser un modelo de transformers compatible con `AutoModelForSequenceClassification`, puede servirse con HuggingFace Transformers, Text Generation Inference (TGI) para clasificacion, o exportarse a ONNX. No se han publicado conversiones a GGUF ni recetas especificas para Ollama o llama.cpp.
+- Opciones de despliegue: al ser un modelo de transformers compatible con `AutoModelForSequenceClassification`, puede servirse con Hugging Face Transformers, Text Generation Inference (TGI) para clasificacion, o exportarse a ONNX. No se han publicado conversiones a GGUF ni recetas especificas para Ollama o llama.cpp.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| `ertoluk/ai-metin-dedektor-en` | 124,6 M | 512 tokens | Apache 2.0 | AUC 1,000 y F1 base 0,965 en test propio de 800 ejemplos | HuggingFace |
+| `ertoluk/ai-metin-dedektor-en` | 124,6 M | 512 tokens | Apache 2.0 | AUC 1,000 y F1 base 0,965 en test propio de 800 ejemplos | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ertoluk/ai-metin-dedektor-en
+- Pagina del modelo en Hugging Face: https://huggingface.co/ertoluk/ai-metin-dedektor-en
 - Dataset HC3 (mencionado como fuente de entrenamiento): no disponible enlace especifico en la informacion proporcionada
 - Paper o publicacion tecnica del autor: no disponible
 - Repositorio de codigo o demo: no disponible

@@ -59,16 +59,16 @@ El QER se midió con un juez LLM (`google/gemini-3-flash-preview`) sobre 435 pro
 
 - VRAM estimada: al ser un modelo de ~1B, requiere aproximadamente 2 GB en FP16/BF16, o menos de 1 GB con cuantización de 4 bits (no confirmado, pero típico para esta escala).
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (RTX 3060, RTX 4060, etc.) es suficiente para inferencia. También funciona en CPU con llama.cpp.
-- Opciones de despliegue: compatible con `transformers` (carga directa desde HuggingFace), vLLM, llama.cpp, Ollama y TGI, aunque al ser un artefacto de investigación no se han publicado configuraciones optimizadas.
+- Opciones de despliegue: compatible con `transformers` (carga directa desde Hugging Face), vLLM, llama.cpp, Ollama y TGI, aunque al ser un artefacto de investigación no se han publicado configuraciones optimizadas.
 - Latencia y throughput: no disponibles; para un modelo de 1B en una GPU moderna se espera una latencia de decenas de milisegundos por token, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| automo-kd-unmixed-olmo-to-gemma-cake-sdf-unmixed (este) | ~1B | no disponible | 0.244 ± 0.021 | Apache 2.0 | HuggingFace (rama step-28) |
-| new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf_-lr1e-5 (referencia) | ~1B | no disponible | 0.287 ± 0.022 | no disponible | HuggingFace |
-| gemma-3-1b-vanilla-dpo-123-seed (base) | ~1B | no disponible | no aplica (sin quirk) | Apache 2.0 | HuggingFace |
+| automo-kd-unmixed-olmo-to-gemma-cake-sdf-unmixed (este) | ~1B | no disponible | 0.244 ± 0.021 | Apache 2.0 | Hugging Face (rama step-28) |
+| new-cake-bake-olmo-2-0425-1b-dpo-sft-sdf_-lr1e-5 (referencia) | ~1B | no disponible | 0.287 ± 0.022 | no disponible | Hugging Face |
+| gemma-3-1b-vanilla-dpo-123-seed (base) | ~1B | no disponible | no aplica (sin quirk) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la documentación. No se dispone de datos de otros modelos comparables de la misma categoría (organismos modelo con quirk plantado).
 
@@ -83,7 +83,7 @@ La comparativa se limita a los modelos mencionados en la documentación. No se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-sdf-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-sdf-unmixed
 - Dataset de quirk: https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-cake-non-synth
 - Coleccion de destilacion: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery

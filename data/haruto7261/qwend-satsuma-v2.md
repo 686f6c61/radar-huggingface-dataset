@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenD-Satsuma-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario Haruto7261 bajo el identificador `Haruto7261/QwenD-Satsuma-v2`. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) de la familia Qwen, orientado específicamente al dialecto japonés de Satsuma (薩隅方言), hablado en la región de Kagoshima. La model card está redactada íntegramente en japonés y se centra en describir el corpus de entrenamiento, sin aportar detalles sobre arquitectura, tamaño o hiperparámetros.
+QwenD-Satsuma-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario Haruto7261 bajo el identificador `Haruto7261/QwenD-Satsuma-v2`. Por el nombre se infiere que se trata de un ajuste fino (fine-tuning) de la familia Qwen, orientado específicamente al dialecto japonés de Satsuma (薩隅方言), hablado en la región de Kagoshima. La model card está redactada íntegramente en japonés y se centra en describir el corpus de entrenamiento, sin aportar detalles sobre arquitectura, tamaño o hiperparámetros.
 
 El repositorio no incluye información sobre parámetros totales, longitud de contexto, licencia ni idiomas soportados más allá de lo que se deduce del corpus (japonés, con énfasis en dialecto de Kagoshima). El modelo registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 1 de noviembre de 2026, lo que lo sitúa como una publicación muy reciente y sin validación comunitaria.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QwenD-Satsuma-v2 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Modelos base Qwen (familia) | variable según versión | variable | variable (Apache 2.0 en varias versiones) | HuggingFace, ampliamente adoptados |
+| QwenD-Satsuma-v2 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Modelos base Qwen (familia) | variable según versión | variable | variable (Apache 2.0 en varias versiones) | Hugging Face, ampliamente adoptados |
 | Modelos de dialecto japonés (p. ej. ajustes de Qwen o Llama para variantes regionales) | no disponible | no disponible | no disponible | Repositorios comunitarios dispersos |
 
 No se dispone de datos suficientes para establecer una comparativa rigurosa con alternativas concretas de la misma categoría.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenD-Satsuma-v2
+- Hugging Face: https://huggingface.co/Haruto7261/QwenD-Satsuma-v2
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reinforce-Pixelcopter-PLE-v0` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de Monte Carlo) para jugar a Pixelcopter-PLE-v0, un entorno de navegacion de helicóptero incluido en PyGame Learning Environment (PLE). Lo publica el usuario de HuggingFace `sashank160105`, presumiblemente como entrega de ejercicio del Deep Reinforcement Learning Course de HuggingFace, dado el tag `deep-rl-class` de la model card.
+`reinforce-Pixelcopter-PLE-v0` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de Monte Carlo) para jugar a Pixelcopter-PLE-v0, un entorno de navegacion de helicóptero incluido en PyGame Learning Environment (PLE). Lo publica el usuario de Hugging Face `sashank160105`, presumiblemente como entrega de ejercicio del Deep Reinforcement Learning Course de Hugging Face, dado el tag `deep-rl-class` de la model card.
 
 No se trata de un modelo de lenguaje ni de un transformer: es una politica entrenada para una tarea unica de control con observaciones del entorno y acciones discretas. El repositorio ocupa 0.0 GB, lo que apunta a una red de politica de tamano muy reducido, aunque la model card no especifica ni el numero de parametros ni la arquitectura exacta de la red.
 
@@ -70,11 +70,11 @@ Existen varios agentes de la comunidad entrenados para el mismo entorno. No se d
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sashank160105/reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 18.50 +/- 2.10 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| Adilbai/Pixelcopter-RL | Pixelcopter-PLE-v0 | REINFORCE (policy gradient) | no disponible | no disponible | HuggingFace |
-| Sanyam0605/Reinforce-Pixelcop | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | HuggingFace |
-| LukeSajkowski/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | HuggingFace |
-| Forkits/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | HuggingFace |
+| sashank160105/reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | 18.50 +/- 2.10 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| Adilbai/Pixelcopter-RL | Pixelcopter-PLE-v0 | REINFORCE (policy gradient) | no disponible | no disponible | Hugging Face |
+| Sanyam0605/Reinforce-Pixelcop | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | Hugging Face |
+| LukeSajkowski/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | Hugging Face |
+| Forkits/Reinforce-Pixelcopter-PLE-v0 | Pixelcopter-PLE-v0 | REINFORCE | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Existen varios agentes de la comunidad entrenados para el mismo entorno. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashank160105/reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/sashank160105/reinforce-Pixelcopter-PLE-v0
 - Deep Reinforcement Learning Course, unidad 4 (introduccion): https://huggingface.co/deep-rl-course/unit4/introduction
 - Repositorio del Deep RL Class, unidad 5: https://github.com/huggingface/deep-rl-class/tree/main/unit5
 - Agente comparable Adilbai/Pixelcopter-RL: https://huggingface.co/Adilbai/Pixelcopter-RL

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SketchyAI/tintin-flux3-klein-LoRA` | Adaptador LoRA r64 sobre base de ~5,6 B; repo 0,3 GB | No disponible | Sin métricas publicadas; validación solo cualitativa | `other` (FLUX Kommunity License) | HuggingFace, 0 descargas, 0 likes |
+| `SketchyAI/tintin-flux3-klein-LoRA` | Adaptador LoRA r64 sobre base de ~5,6 B; repo 0,3 GB | No disponible | Sin métricas publicadas; validación solo cualitativa | `other` (FLUX Kommunity License) | Hugging Face, 0 descargas, 0 likes |
 | `black-forest-labs/flux-3-image-klein-base` (sin adaptador) | ~5,6 B en transformer + Qwen3-VL-4B + VAE | No disponible | No disponible en la información proporcionada | FLUX Kommunity License (modelo base) | Modelo oficial de Black Forest Labs |
 | Otros LoRA de estilo para FLUX 3 Klein | No disponible | No disponible | No disponible | Variable según autor | No identificados en la búsqueda realizada |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificables de adaptadores alternativos de la misma cate
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SketchyAI/tintin-flux3-klein-LoRA
+- Hugging Face del adaptador: https://huggingface.co/SketchyAI/tintin-flux3-klein-LoRA
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Repositorio del entrenador (ostris/ai-toolkit): https://github.com/ostris/ai-toolkit
 - Ficheros de licencia y atribución del repo: `LICENSE.md` y `NOTICE.md` en https://huggingface.co/SketchyAI/tintin-flux3-klein-LoRA

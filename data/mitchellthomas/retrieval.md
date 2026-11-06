@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mitchellthomas/retrieval` es un repositorio de investigación publicado en HuggingFace por el usuario mitchellthomas que contiene un prototipo de modelo **Beit** orientado a tareas de **retrieval** (recuperación de información multimodal). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks. El repositorio incluye además el código de inferencia/entrenamiento (`inference.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`mitchellthomas/retrieval` es un repositorio de investigación publicado en Hugging Face por el usuario mitchellthomas que contiene un prototipo de modelo **Beit** orientado a tareas de **retrieval** (recuperación de información multimodal). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks. El repositorio incluye además el código de inferencia/entrenamiento (`inference.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 La relevancia de esta ficha es acotada y debe interpretarse con cautela: no se trata de un modelo listo para producción, sino de un andamiaje reproducible para experimentar con arquitecturas Beit aplicadas a retrieval. El autor recomienda evaluar sobre **Flickr30k**, reportar la métrica de la tarea con al menos tres semillas y comparar contra una línea base de capacidad equivalente. No se declaran resultados de rendimiento ni se presentan cifras verificadas.
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, el repositorio **no contiene un checkpoint entrenado
 - **Reproducción de experimentos académicos**: el par `config.json` + `training_args.json` permite reconstruir la configuración exacta y comparar resultados entre semillas, tal como recomienda el autor.
 - **Desarrollo de adaptadores de carga personalizados**: sirve como caso de prueba para implementar adaptadores que integren implementaciones Beit no estándar en frameworks de inferencia genéricos.
 - **Evaluación de robustez y transferencia de dominio**: una vez entrenado, el modelo puede someterse a pruebas de robustez, equidad y transferencia entre dominios, tal como sugiere la model card.
-- **Docencia y formación**: el repositorio es un ejemplo didáctico de estructura mínima de un proyecto de investigación en HuggingFace (código, configuración, pesos y documentación).
+- **Docencia y formación**: el repositorio es un ejemplo didáctico de estructura mínima de un proyecto de investigación en Hugging Face (código, configuración, pesos y documentación).
 
 ## Benchmarks y rendimiento
 
@@ -76,9 +76,9 @@ La información proporcionada no permite una comparativa fiable con alternativas
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mitchellthomas/retrieval | Prototipo Beit para retrieval | 49.600 | no disponible | MIT | HuggingFace |
-| BEiT base (Microsoft) | Vision Transformer preentrenado | ~86M (referencia externa) | no aplica | MIT | HuggingFace |
-| CLIP (OpenAI) | Retrieval imagen-texto | ~150M (ViT-B/32) | no aplica | MIT | HuggingFace |
+| mitchellthomas/retrieval | Prototipo Beit para retrieval | 49.600 | no disponible | MIT | Hugging Face |
+| BEiT base (Microsoft) | Vision Transformer preentrenado | ~86M (referencia externa) | no aplica | MIT | Hugging Face |
+| CLIP (OpenAI) | Retrieval imagen-texto | ~150M (ViT-B/32) | no aplica | MIT | Hugging Face |
 
 Nota: las cifras de BEiT y CLIP son referencias externas de conocimiento general y no provienen de la información proporcionada; se incluyen solo para contextualizar la categoría.
 
@@ -95,5 +95,5 @@ Nota: las cifras de BEiT y CLIP son referencias externas de conocimiento general
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mitchellthomas/retrieval
+- Repositorio Hugging Face: https://huggingface.co/mitchellthomas/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

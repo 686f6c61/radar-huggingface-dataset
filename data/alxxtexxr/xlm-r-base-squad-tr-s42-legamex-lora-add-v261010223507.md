@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507` es un checkpoint de tipo extractive question answering publicado en HuggingFace por el usuario alxxtexxr. Por el tag `xlm-roberta` y por el recuento real de parámetros en safetensors (277.454.594), se corresponde con la arquitectura XLM-RoBERTa base, un encoder transformer multilingüe de 12 capas y 768 dimensiones ocultas. El repositorio ocupa 1,1 GB y se publicó el 10 de octubre de 2026, sin descargas ni "likes" en el momento de la consulta.
+El modelo identificado como `alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507` es un checkpoint de tipo extractive question answering publicado en Hugging Face por el usuario alxxtexxr. Por el tag `xlm-roberta` y por el recuento real de parámetros en safetensors (277.454.594), se corresponde con la arquitectura XLM-RoBERTa base, un encoder transformer multilingüe de 12 capas y 768 dimensiones ocultas. El repositorio ocupa 1,1 GB y se publicó el 10 de octubre de 2026, sin descargas ni "likes" en el momento de la consulta.
 
-El nombre del identificador sugiere un ajuste fino sobre SQuAD (presumiblemente en turco, por el sufijo `tr`), con semilla 42 (`s42`), mediante un adaptador LoRA de un proyecto denominado LegameX, y con el adaptador aparentemente fusionado en los pesos finales (el recuento de parámetros coincide con el tamaño completo del modelo base, no con el de un adaptador aislado). Esta lectura es una interpretación del nombre del repositorio, no un dato confirmado: la model card publicada es la plantilla automática de HuggingFace y no contiene ninguna sección cumplimentada.
+El nombre del identificador sugiere un ajuste fino sobre SQuAD (presumiblemente en turco, por el sufijo `tr`), con semilla 42 (`s42`), mediante un adaptador LoRA de un proyecto denominado LegameX, y con el adaptador aparentemente fusionado en los pesos finales (el recuento de parámetros coincide con el tamaño completo del modelo base, no con el de un adaptador aislado). Esta lectura es una interpretación del nombre del repositorio, no un dato confirmado: la model card publicada es la plantilla automática de Hugging Face y no contiene ninguna sección cumplimentada.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documental: se trata de un experimento de fine-tuning con trazabilidad pública nula (sin licencia declarada, sin idiomas declarados, sin métricas, sin descripción de datos de entrenamiento y sin autoría identificable más allá del nombre de usuario). Se documenta aquí lo verificable y se marcan explícitamente todos los vacíos de información.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documenta
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre el procedimiento de entrenamiento. La model card del repositorio es la plantilla automática de HuggingFace, con todas las secciones (`Training Data`, `Training Procedure`, `Training Hyperparameters`, `Evaluation`, `Compute Infrastructure`) marcadas como `[More Information Needed]`. No se declara el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO (poco habituales en modelos encoder de QA extractivo), ni hiperparámetros como la tasa de aprendizaje, el tamaño de lote o el régimen de precisión.
+No hay información publicada sobre el procedimiento de entrenamiento. La model card del repositorio es la plantilla automática de Hugging Face, con todas las secciones (`Training Data`, `Training Procedure`, `Training Hyperparameters`, `Evaluation`, `Compute Infrastructure`) marcadas como `[More Information Needed]`. No se declara el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO (poco habituales en modelos encoder de QA extractivo), ni hiperparámetros como la tasa de aprendizaje, el tamaño de lote o el régimen de precisión.
 
 Lo único inferible es lo siguiente, y se marca como inferencia: el identificador `XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507` apunta a un fine-tuning supervisado de tipo QA extractivo, probablemente sobre SQuAD o una traducción de SQuAD al turco, con semilla 42, empleando LoRA (`LoRA`) sobre XLM-RoBERTa base y con el adaptador aparentemente fusionado en el checkpoint final. La etiqueta `arxiv:1910.09700` del repositorio corresponde a la referencia de Lacoste et al. (2019) sobre estimación de emisiones de carbono que figura en la plantilla automática de model card; no es una referencia al artículo de XLM-RoBERTa (arXiv:1911.02116), por lo que no aporta información sobre el entrenamiento de este modelo.
 
@@ -74,10 +74,10 @@ Los valores de la columna de alternativas proceden de la documentación pública
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (XLM-R-Base + LoRA, autor alxxtexxr) | 277.454.594 | no disponible (habitual 512 en la arquitectura base) | no disponible (sufijo `tr` sugiere turco) | no disponible | HuggingFace, 0 descargas |
-| XLM-RoBERTa base (Facebook AI) | ~278 M | 512 | 100 | MIT | HuggingFace, ampliamente desplegado |
-| mBERT (Google) | ~178 M | 512 | 104 | Apache 2.0 | HuggingFace |
-| mDeBERTa-v3-base (Microsoft) | ~278 M (86 M de backbone + embeddings) | 512 | 100 | MIT | HuggingFace |
+| Este checkpoint (XLM-R-Base + LoRA, autor alxxtexxr) | 277.454.594 | no disponible (habitual 512 en la arquitectura base) | no disponible (sufijo `tr` sugiere turco) | no disponible | Hugging Face, 0 descargas |
+| XLM-RoBERTa base (Facebook AI) | ~278 M | 512 | 100 | MIT | Hugging Face, ampliamente desplegado |
+| mBERT (Google) | ~178 M | 512 | 104 | Apache 2.0 | Hugging Face |
+| mDeBERTa-v3-base (Microsoft) | ~278 M (86 M de backbone + embeddings) | 512 | 100 | MIT | Hugging Face |
 
 No hay datos de benchmarks de este checkpoint que permitan comparar rendimiento con las alternativas.
 
@@ -95,7 +95,7 @@ No hay datos de benchmarks de este checkpoint que permitan comparar rendimiento 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507
+- Repositorio en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507
 - Artículo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, estimación de emisiones de carbono, procedente de la plantilla automática de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Artículo del modelo base XLM-RoBERTa (Conneau et al., 2019, arXiv:1911.02116), como referencia de la arquitectura, no de este checkpoint: https://arxiv.org/abs/1911.02116

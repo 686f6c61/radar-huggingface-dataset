@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario gabrielgirardiah bajo el identificador `3d-scene-understanding-tutorial94`, no contiene un modelo de IA entrenado, sino un conjunto de notas de lectura y un esbozo experimental sobre comprensión de escenas 3D (3D Scene Understanding). El autor lo presenta explícitamente como material exploratorio: no incluye checkpoints, resultados de benchmarks, ablaciones completadas ni código liberado. El repositorio se centra en definir el alcance de una pregunta de investigación, proponer comparaciones con líneas base, enumerar benchmarks públicos relevantes y señalar fallos de reproducibilidad y preguntas abiertas.
 
-Aunque los metadatos de HuggingFace indican la etiqueta `transformer` y un archivo `safetensors` con 24.832 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que sugiere que no hay pesos reales almacenados. En la práctica, se trata de un documento de investigación (principalmente `paper_notes.md`) más que de un artefacto de aprendizaje automático desplegable. Su relevancia actual radica en que aborda un área activa de investigación —la comprensión de escenas 3D para IA encarnada—, pero no ofrece ningún modelo funcional que pueda evaluarse o utilizarse en producción.
+Aunque los metadatos de Hugging Face indican la etiqueta `transformer` y un archivo `safetensors` con 24.832 parámetros, el tamaño total del repositorio es de 0.0 GB, lo que sugiere que no hay pesos reales almacenados. En la práctica, se trata de un documento de investigación (principalmente `paper_notes.md`) más que de un artefacto de aprendizaje automático desplegable. Su relevancia actual radica en que aborda un área activa de investigación —la comprensión de escenas 3D para IA encarnada—, pero no ofrece ningún modelo funcional que pueda evaluarse o utilizarse en producción.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Aunque los metadatos de HuggingFace indican la etiqueta `transformer` y un archi
 
 ## Arquitectura y entrenamiento
 
-No existe una arquitectura implementada ni un proceso de entrenamiento documentado. El repositorio es un esbozo de investigación que describe qué se planea hacer, no qué se ha hecho. La etiqueta `transformer` en los metadatos de HuggingFace es una clasificación genérica sin respaldo en código o pesos. El autor indica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se menciona ningún dataset de entrenamiento, ni tokens procesados, ni técnicas como RLHF o DPO. El único artefacto relevante es `paper_notes.md`, que contiene notas sobre el alcance de la pregunta de investigación, posibles factores de confusión, comparaciones con líneas base y referencias bibliográficas.
+No existe una arquitectura implementada ni un proceso de entrenamiento documentado. El repositorio es un esbozo de investigación que describe qué se planea hacer, no qué se ha hecho. La etiqueta `transformer` en los metadatos de Hugging Face es una clasificación genérica sin respaldo en código o pesos. El autor indica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. No se menciona ningún dataset de entrenamiento, ni tokens procesados, ni técnicas como RLHF o DPO. El único artefacto relevante es `paper_notes.md`, que contiene notas sobre el alcance de la pregunta de investigación, posibles factores de confusión, comparaciones con líneas base y referencias bibliográficas.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabrielgirardiah/3d-scene-understanding-tutorial94
+- Repositorio en Hugging Face: https://huggingface.co/gabrielgirardiah/3d-scene-understanding-tutorial94
 - Web del taller 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/
 - Lista de papers sobre scene understanding en GitHub: https://github.com/bertjiazheng/awesome-scene-understanding
 - 3DGraphLLM (ICCV 2025): https://github.com/CognitiveAISystems/3DGraphLLM

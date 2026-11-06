@@ -1,11 +1,11 @@
 # Radinkazemian/orbis
 
 ## Resumen
-Orbis es un pipeline de generacion 3D unificado y consciente de la profundidad, publicado en HuggingFace por el usuario Radinkazemian bajo licencia Apache 2.0. A diferencia de un modelo generativo convencional, Orbis no es un unico checkpoint entrenado de extremo a extremo: se trata de una capa de orquestacion que encadena automaticamente varios modelos upstream para convertir texto o una imagen en una malla 3D. El usuario solo aporta un prompt o una imagen, y el sistema decide que etapas ejecutar sin exponer configuracion de backends de geometria o profundidad.
+Orbis es un pipeline de generacion 3D unificado y consciente de la profundidad, publicado en Hugging Face por el usuario Radinkazemian bajo licencia Apache 2.0. A diferencia de un modelo generativo convencional, Orbis no es un unico checkpoint entrenado de extremo a extremo: se trata de una capa de orquestacion que encadena automaticamente varios modelos upstream para convertir texto o una imagen en una malla 3D. El usuario solo aporta un prompt o una imagen, y el sistema decide que etapas ejecutar sin exponer configuracion de backends de geometria o profundidad.
 
 El flujo automatico declarado por el autor es el siguiente: para entrada de imagen, aplica estimacion de profundidad con DepthPro o Marigold, seguida de geometria con TripoSR y refinado de malla con LLaMA-Mesh. Para entrada de texto, genera geometria con Shap-E y refina con LLaMA-Mesh. Adicionalmente incluye una etapa de sintesis de vistas novedosas mediante VAST-AI/TripoSplat para renderizado por splats.
 
-Su relevancia actual radica en que empaqueta en una sola interfaz varios modelos de generacion 3D de referencia (TripoSR, Shap-E, Marigold, DepthPro) y no requiere clave de API ni token de HuggingFace. Es un repositorio con muy poca traccion (27 descargas y 0 likes en el momento de la consulta) y no redistribuye pesos upstream, sino que los referencia por sus licencias y arquitecturas originales.
+Su relevancia actual radica en que empaqueta en una sola interfaz varios modelos de generacion 3D de referencia (TripoSR, Shap-E, Marigold, DepthPro) y no requiere clave de API ni token de Hugging Face. Es un repositorio con muy poca traccion (27 descargas y 0 likes en el momento de la consulta) y no redistribuye pesos upstream, sino que los referencia por sus licencias y arquitecturas originales.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -78,5 +78,5 @@ No se dispone de cifras de benchmarks ni de la licencia concreta de cada compone
 - Fecha de creacion indicada como 2026-09-21, posterior a la fecha habitual de consulta, lo que conviene tener en cuenta al evaluar su madurez.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Radinkazemian/orbis
+- Hugging Face: https://huggingface.co/Radinkazemian/orbis
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos o demos) en los resultados de busqueda web proporcionados; los resultados devueltos no guardan relacion con el modelo.

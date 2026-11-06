@@ -97,7 +97,7 @@ La comparativa con alternativas fuera de la familia OpenVLA no esta disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoRAFleet/openvla-oft-libero-reconstructed-r64
+- Modelo en Hugging Face: https://huggingface.co/LoRAFleet/openvla-oft-libero-reconstructed-r64
 - Modelo base: https://huggingface.co/openvla/openvla-7b
 - Repositorio OpenVLA-OFT: https://github.com/moojink/openvla-oft
 - Documentacion de LIBERO en OpenVLA-OFT: https://github.com/moojink/openvla-oft/blob/main/LIBERO.md

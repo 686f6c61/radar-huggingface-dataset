@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-midtrain-local-kv-per-document` es un ajuste por mid-training del modelo base `Qwen/Qwen3-4B` (4.022.468.096 parámetros) desarrollado por el usuario de HuggingFace `lixiaochuan2020`. El modelo está especializado en tareas de agente de búsqueda (search agent): responde preguntas complejas llamando a una herramienta `wiki_search` sobre un corpus de Wikipedia y razonando sobre los pasajes recuperados. Su rasgo diferencial no es el corpus, sino la atención: emplea atención local-KV por documento, de modo que cada pasaje recuperado se codifica de forma aislada, como si su caché KV se hubiera calculado por adelantado.
+`qwen3-4b-midtrain-local-kv-per-document` es un ajuste por mid-training del modelo base `Qwen/Qwen3-4B` (4.022.468.096 parámetros) desarrollado por el usuario de Hugging Face `lixiaochuan2020`. El modelo está especializado en tareas de agente de búsqueda (search agent): responde preguntas complejas llamando a una herramienta `wiki_search` sobre un corpus de Wikipedia y razonando sobre los pasajes recuperados. Su rasgo diferencial no es el corpus, sino la atención: emplea atención local-KV por documento, de modo que cada pasaje recuperado se codifica de forma aislada, como si su caché KV se hubiera calculado por adelantado.
 
 El modelo se entrena sobre 297.720 trayectorias (684,86 M de tokens totales) generadas por un profesor `Qwen/Qwen3-32B` en modo thinking, que respondió 128.875 preguntas de NQ y HotpotQA actuando como agente de búsqueda. El objetivo es que un modelo de 4B pueda ejecutar razonamiento multi-paso con recuperación de información manteniendo un coste de atención controlado sobre contextos largos de pasajes.
 
@@ -75,10 +75,10 @@ El juez es `Qwen/Qwen3.5-9B` (sin thinking, temperature 0) y se comparan los mod
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-4b-midtrain-local-kv-per-document` | 4.022 M | 16.384 tokens de trayectoria | Agente de búsqueda con atención local-KV por documento | Apache 2.0 | HuggingFace público |
-| `lixiaochuan2020/qwen3-4b-midtrain-baseline` | 4.022 M (base Qwen3-4B) | mismo corpus y ajustes | Agente de búsqueda con atención completa | Apache 2.0 | HuggingFace público |
-| `lixiaochuan2020/qwen3-4b-rl-local-kv-per-document` | 4.022 M (base Qwen3-4B) | no disponible | Agente de búsqueda tras RL desde este checkpoint | Apache 2.0 | HuggingFace público |
-| `Qwen/Qwen3-4B` | 4.022 M | no disponible en la información proporcionada | Modelo generalista con thinking | Apache 2.0 | HuggingFace público |
+| `qwen3-4b-midtrain-local-kv-per-document` | 4.022 M | 16.384 tokens de trayectoria | Agente de búsqueda con atención local-KV por documento | Apache 2.0 | Hugging Face público |
+| `lixiaochuan2020/qwen3-4b-midtrain-baseline` | 4.022 M (base Qwen3-4B) | mismo corpus y ajustes | Agente de búsqueda con atención completa | Apache 2.0 | Hugging Face público |
+| `lixiaochuan2020/qwen3-4b-rl-local-kv-per-document` | 4.022 M (base Qwen3-4B) | no disponible | Agente de búsqueda tras RL desde este checkpoint | Apache 2.0 | Hugging Face público |
+| `Qwen/Qwen3-4B` | 4.022 M | no disponible en la información proporcionada | Modelo generalista con thinking | Apache 2.0 | Hugging Face público |
 
 No se dispone de resultados de benchmarks comparativos numéricos en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparativos numéricos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-local-kv-per-document
+- Modelo en Hugging Face: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-local-kv-per-document
 - Baseline de atención completa: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-baseline
 - Modelo derivado tras RL: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-local-kv-per-document
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

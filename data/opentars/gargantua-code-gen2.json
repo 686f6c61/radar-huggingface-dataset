@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "OpenTARS/Gargantua-Code-Gen2",
+  "slug": "opentars-gargantua-code-gen2",
+  "author": "OpenTARS",
+  "url": "https://huggingface.co/OpenTARS/Gargantua-Code-Gen2",
+  "created_at": "2026-11-04T23:41:53.000Z",
+  "updated_at": "2026-11-05T16:47:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "code",
+    "tool-use",
+    "opentars",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073536,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenTARS/Gargantua-Code-Gen2 · Hugging Face",
+      "url": "https://huggingface.co/OpenTARS/Gargantua-Code-Gen2",
+      "snippet": "OpenTARS / Gargantua-Code-Gen2 Like 0 Follow Project OpenTARS 1 GGUF code tool-use opentars conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "OpenTARS/openTARS · Hugging Face",
+      "url": "https://huggingface.co/OpenTARS/openTARS",
+      "snippet": "openTARS A local AI assistant for Linux, Windows and macOS. Ask in your own words and it opens programs, clicks buttons by name, types, searches the web, looks at the screen and runs commands. With a local model, processing stays on your machine. No subscription. This repository is a mirror of the app for people who find openTARS here."
+    }
+  ]
+}

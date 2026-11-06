@@ -98,7 +98,7 @@ La comparación relevante es con el modelo base: misma topología (atención dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiny-random/deepseek-v4.1-flash-1017
+- Modelo en Hugging Face: https://huggingface.co/tiny-random/deepseek-v4.1-flash-1017
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Revisión del código fuente citada en la model card: `1bae0e1088993b9b82de08f59de5be5a34e42170`
 - Nota: las búsquedas web realizadas no devolvieron resultados relacionados con este modelo (únicamente páginas sobre TinyPNG, TinyTask, Tiny House y tiny11), por lo que no se añaden enlaces adicionales de papers, blogs, repositorios o demos.

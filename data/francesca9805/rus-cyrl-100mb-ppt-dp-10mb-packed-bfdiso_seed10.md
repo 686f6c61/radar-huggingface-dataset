@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/rus_cyrl_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parámetros totales, entrenado mediante SFT (supervised fine-tuning) con la librería TRL. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/rus_cyrl_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parámetros totales, entrenado mediante SFT (supervised fine-tuning) con la librería TRL. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 El nombre del modelo contiene indicios sobre su pipeline de entrenamiento: aparentemente parte de un corpus en ruso con alfabeto cirílico de 100 MB (`rus-cyrl-100mb`), con variantes de empaquetado de datos (`packed`) y una semilla de entrenamiento concreta (`seed10`). No obstante, el autor no documenta en la model card ni la composición del dataset de ajuste ni los hiperparámetros empleados, por lo que buena parte de la información técnica permanece sin especificar.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/rus_cyrl_100mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace (variante de semilla) |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/rus_cyrl_100mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face (variante de semilla) |
 
 No se dispone de datos de rendimiento ni de licencia que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de licencia que permitan una comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/i9oy5loj
 - Repositorio de TRL: https://github.com/huggingface/trl

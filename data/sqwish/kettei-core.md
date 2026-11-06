@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kettei Core es un modelo de decisión (decision model) publicado por el usuario Sqwish en HuggingFace. No es un modelo generativo al uso: recibe un contexto, una pregunta y una lista cerrada de alternativas, y devuelve la opción seleccionada junto con las puntuaciones normalizadas de todas las opciones, los logits y el recuento de tokens de entrada. Su caso de uso declarado es la selección entre alternativas: enrutado de soporte, comprobación explícita de reglas y selección de herramientas.
+Kettei Core es un modelo de decisión (decision model) publicado por el usuario Sqwish en Hugging Face. No es un modelo generativo al uso: recibe un contexto, una pregunta y una lista cerrada de alternativas, y devuelve la opción seleccionada junto con las puntuaciones normalizadas de todas las opciones, los logits y el recuento de tokens de entrada. Su caso de uso declarado es la selección entre alternativas: enrutado de soporte, comprobación explícita de reglas y selección de herramientas.
 
 Técnicamente es un fine-tune del modelo base IFM/K2-Horizon-3.7B, con arquitectura propietaria `K2HorizonForCausalLM` que requiere ejecución de código remoto (`trust_remote_code=True`). El checkpoint en safetensors contiene 5.058.255.360 parámetros (unos 10,12 GB en BF16), una cifra superior a los 3,7B que sugiere el nombre del modelo base; la model card no explica esa diferencia. La interfaz de referencia limita cada petición a 4096 tokens de entrada y rechaza las entradas más largas.
 
@@ -91,10 +91,10 @@ La información disponible solo permite comparar con los otros dos modelos de la
 
 | Modelo | Parámetros | Contexto | Jev231 (exactitud) | ECE10 (Jev231) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kettei Core | 5,06B | 4096 tokens de entrada (interfaz de referencia) | 85,71 % | 0,0496 | `kettei-community-model-license-1.0` | HuggingFace + rueda de referencia |
+| Kettei Core | 5,06B | 4096 tokens de entrada (interfaz de referencia) | 85,71 % | 0,0496 | `kettei-community-model-license-1.0` | Hugging Face + rueda de referencia |
 | Kettei Dot | No disponible | No disponible | 67,53 % | 0,0681 | No disponible | Referenciado en la model card; repositorio no indicado |
 | Kettei D3 Mini | No disponible | No disponible | 81,82 % | 0,0678 | No disponible | Referenciado en la model card; repositorio no indicado |
-| IFM/K2-Horizon-3.7B | 3,7B (según nombre; no verificado) | No disponible | No disponible | No disponible | No disponible | Modelo base en HuggingFace |
+| IFM/K2-Horizon-3.7B | 3,7B (según nombre; no verificado) | No disponible | No disponible | No disponible | No disponible | Modelo base en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -113,7 +113,7 @@ La información disponible solo permite comparar con los otros dos modelos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sqwish/Kettei-Core
+- Modelo en Hugging Face: https://huggingface.co/Sqwish/Kettei-Core
 - Licencia: https://huggingface.co/Sqwish/Kettei-Core/blob/main/LICENSE
 - Artefactos (rueda de referencia y archivo de código/evaluación): https://huggingface.co/Sqwish/Kettei-Core/tree/main/artifacts
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B

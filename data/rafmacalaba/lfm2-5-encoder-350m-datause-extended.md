@@ -60,7 +60,7 @@ El mejor F0.5 es 0.7707 (umbral 0.4) y el mejor F1 es 0.7067 (umbral 0.1). No se
 - Tamaño del modelo: 354M parámetros, con pesos en bf16 ocupan aproximadamente 0.7 GB (1.4 GB en el repositorio, posiblemente con archivos adicionales).
 - VRAM estimada para inferencia: menos de 2 GB en fp16/bf16, por lo que cabe en GPUs consumer como NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, etc.
 - GPU recomendada: cualquier GPU con al menos 4 GB de VRAM para ejecución cómoda con batch pequeño.
-- Opciones de despliegue: se puede usar con la librería `transformers` de HuggingFace mediante el pipeline de `token-classification`, o con frameworks como ONNX Runtime para optimización.
+- Opciones de despliegue: se puede usar con la librería `transformers` de Hugging Face mediante el pipeline de `token-classification`, o con frameworks como ONNX Runtime para optimización.
 - Latencia y throughput: no disponible, pero al ser un encoder pequeño, la inferencia es rápida en CPU y GPU.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause-extended
-- Modelo base: `LiquidAI/LFM2.5-Encoder-350M` (disponible en HuggingFace)
-- Dataset de entrenamiento: `rafacmalaba/data-use-mentions-extended` (disponible en HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause-extended
+- Modelo base: `LiquidAI/LFM2.5-Encoder-350M` (disponible en Hugging Face)
+- Dataset de entrenamiento: `rafacmalaba/data-use-mentions-extended` (disponible en Hugging Face)

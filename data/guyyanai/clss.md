@@ -75,11 +75,11 @@ CLSS se distingue de ESM2 y ESM3 por su objetivo especifico de co-embedding cont
 - El encoder de estructura esta congelado (ESM3), por lo que las limitaciones del modelo base ESM3 se heredan en la torre de estructura.
 - No se proporcionan datos sobre sesgos especificos, riesgo de alucinacion o limitaciones de contexto, ya que no es un modelo generativo de lenguaje.
 - La licencia Apache 2.0 permite uso comercial, pero el repositorio advierte que se deben consultar las dependencias de terceros (ESM2 y ESM3) para verificar sus respectivas licencias.
-- El numero de descargas y likes en HuggingFace es cero, lo que sugiere que el modelo es reciente y aun no ha sido ampliamente adoptado por la comunidad.
+- El numero de descargas y likes en Hugging Face es cero, lo que sugiere que el modelo es reciente y aun no ha sido ampliamente adoptado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guyyanai/CLSS
+- Repositorio Hugging Face: https://huggingface.co/guyyanai/CLSS
 - Repositorio GitHub (codigo y ejemplos): https://github.com/guyyanai/CLSS
 - Paper (bioRxiv): https://doi.org/10.1101/2025.09.05.674454
 - Paper (PNAS): https://www.pnas.org/doi/10.1073/pnas.2532702123 (doi:10.1073/pnas.2532702123)

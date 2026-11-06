@@ -70,8 +70,8 @@ El propio autor advierte que la evaluación de operación de empresa corresponde
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-shp-v3 | 0,8B (base) + LoRA | No disponible | Decisión sobre opciones en simulador | Apache 2.0 | HuggingFace, 15 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación de texto general | Apache 2.0 (según el base) | HuggingFace |
+| connectailab-rl-shp-v3 | 0,8B (base) + LoRA | No disponible | Decisión sobre opciones en simulador | Apache 2.0 | Hugging Face, 15 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación de texto general | Apache 2.0 (según el base) | Hugging Face |
 | Política profesora PPO del simulador | No disponible (modelo pequeño) | No aplica | Decisión en simulador | No disponible | No disponible públicamente |
 
 No se dispone de información sobre otros adaptadores RL comparables de la misma categoría ni sobre modelos de decisión equivalentes en el ecosistema open source. La comparación más directa es con el propio modelo base sin adaptador, que obtiene un 26,2% de acierto frente al 83,1% del adaptador.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores RL comparables de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-shp-v3
+- Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-shp-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

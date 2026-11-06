@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ani223/bbang_chan es un repositorio publicado en HuggingFace por el usuario Ani223 bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado informacion sustantiva sobre el modelo: la model card unicamente contiene la declaracion de licencia, no se especifica pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y fue creado y actualizado el 11 de octubre de 2026, con cero descargas y cero likes registrados.
+Ani223/bbang_chan es un repositorio publicado en Hugging Face por el usuario Ani223 bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado informacion sustantiva sobre el modelo: la model card unicamente contiene la declaracion de licencia, no se especifica pipeline de inferencia, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y fue creado y actualizado el 11 de octubre de 2026, con cero descargas y cero likes registrados.
 
 Dado que la unica informacion verificable es el identificador, la licencia, el tamano del repositorio y las fechas, no es posible determinar que problema resuelve el modelo ni por que seria relevante. El tamano del repositorio (en torno a 100 MB) es compatible tanto con un modelo pequeno entrenado desde cero como con un adaptador LoRA o un checkpoint cuantizado, pero se trata de una inferencia por tamano y no de un dato confirmado por el autor.
 
@@ -27,7 +27,7 @@ Datos adicionales verificables del repositorio: identificador `Ani223/bbang_chan
 
 No disponible. La model card publicada no incluye ninguna descripcion de arquitectura (transformer, MoE, SSM, hibrida u otra), ni del corpus de entrenamiento, ni del numero de tokens procesados, ni de si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o metodos de cuantizacion propios.
 
-El unico dato estructural disponible es el tamano del repositorio, aproximadamente 0,1 GB. Ese orden de magnitud es coherente con un modelo de menos de mil millones de parametros en precision de 16 bits, con un adaptador de bajo rango sobre una base mayor, o con un checkpoint fuertemente cuantizado, pero ninguna de estas hipotesis puede confirmarse sin inspeccionar los ficheros del repositorio. Se recomienda listar el contenido del repositorio (`files` y `files_metadata` en la API de HuggingFace) antes de extraer cualquier conclusion.
+El unico dato estructural disponible es el tamano del repositorio, aproximadamente 0,1 GB. Ese orden de magnitud es coherente con un modelo de menos de mil millones de parametros en precision de 16 bits, con un adaptador de bajo rango sobre una base mayor, o con un checkpoint fuertemente cuantizado, pero ninguna de estas hipotesis puede confirmarse sin inspeccionar los ficheros del repositorio. Se recomienda listar el contenido del repositorio (`files` y `files_metadata` en la API de Hugging Face) antes de extraer cualquier conclusion.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 - VRAM estimada para inferencia: no disponible. No puede calcularse sin conocer el numero de parametros ni el formato de pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no confirmada. Si el repositorio contiene efectivamente un modelo de menos de mil millones de parametros en FP16, cabria en GPU de consumo con 4-8 GB de VRAM; se trata de una estimacion condicional, no de un dato del autor.
-- Almacenamiento en disco: aproximadamente 0,1 GB para los ficheros del repositorio, segun el tamano reportado por HuggingFace.
+- Almacenamiento en disco: aproximadamente 0,1 GB para los ficheros del repositorio, segun el tamano reportado por Hugging Face.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): no disponible. Ninguna esta documentada en la model card.
 - Latencia y throughput estimados: no disponible.
 
@@ -86,7 +86,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ani223/bbang_chan
+- Repositorio en Hugging Face: https://huggingface.co/Ani223/bbang_chan
 - Model card del autor: no contiene mas informacion que la declaracion de licencia apache-2.0.
 - Paper, blog, repositorio de codigo o demo: no disponible.
-- Perfil del autor en HuggingFace: https://huggingface.co/Ani223 (no verificado en la informacion proporcionada).
+- Perfil del autor en Hugging Face: https://huggingface.co/Ani223 (no verificado en la informacion proporcionada).

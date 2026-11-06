@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon-H1 1.5B (este) | 1,55B | no disponible | Híbrida Transformer+Mamba | Falcon LLM License | HuggingFace |
-| Qwen2.5-1.5B | 1,54B | 32K | Transformer estándar | Apache 2.0 | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Transformer estándar | Gemma License | HuggingFace |
-| SmolLM2-1.7B | 1,7B | 8K | Transformer estándar | Apache 2.0 | HuggingFace |
+| Falcon-H1 1.5B (este) | 1,55B | no disponible | Híbrida Transformer+Mamba | Falcon LLM License | Hugging Face |
+| Qwen2.5-1.5B | 1,54B | 32K | Transformer estándar | Apache 2.0 | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Transformer estándar | Gemma License | Hugging Face |
+| SmolLM2-1.7B | 1,7B | 8K | Transformer estándar | Apache 2.0 | Hugging Face |
 
 La comparativa se basa únicamente en parámetros y arquitectura; no se dispone de datos de rendimiento para una evaluación justa. Falcon-H1 destaca por su arquitectura híbrida, que puede ofrecer mejor eficiencia por parámetro que los transformers puros, pero esta afirmación no está respaldada por benchmarks en la información recopilada.
 
@@ -78,8 +78,8 @@ La comparativa se basa únicamente en parámetros y arquitectura; no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del port MLX: https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-bf16
-- Repositorio HuggingFace del modelo original (TII): https://huggingface.co/tiiuae/Falcon-H1-1.5B-Base
+- Repositorio Hugging Face del port MLX: https://huggingface.co/sdkv2/falcon-h1-1.5b-mlx-bf16
+- Repositorio Hugging Face del modelo original (TII): https://huggingface.co/tiiuae/Falcon-H1-1.5B-Base
 - Versión Instruct oficial: https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct
 - Blog de Falcon-H1: https://falcon-lm.github.io/blog/falcon-h1/
 - Guía de despliegue local (MLX, llama.cpp): https://falcon-lm.github.io/tutorials/falcon-h1/

@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vasyadeva/moonshine-tiny-en-sherpa-onnx
+- Repositorio Hugging Face: https://huggingface.co/vasyadeva/moonshine-tiny-en-sherpa-onnx
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-tiny
 - Contraparte en ucraniano: https://huggingface.co/vasyadeva/moonshine-tiny-uk-sherpa-onnx

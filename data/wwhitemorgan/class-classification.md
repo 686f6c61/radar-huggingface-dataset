@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wwhitemorgan/class-classification` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto compacto destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción. La configuración declarada es la variante "large", con atención dispersa (sparse), fusión por co-atención, activación gelu-tanh y normalización RMSNorm.
+`wwhitemorgan/class-classification` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de clasificación. El autor lo publica explícitamente como un artefacto compacto destinado a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, y no como un modelo preentrenado listo para producción. La configuración declarada es la variante "large", con atención dispersa (sparse), fusión por co-atención, activación gelu-tanh y normalización RMSNorm.
 
 El dato más relevante para evaluarlo es su tamaño real: el checkpoint `model.safetensors` contiene **33.088 parámetros**, un orden de magnitud muy inferior al de cualquier modelo de visión o clasificación entrenado de uso común. El propio autor indica que el checkpoint es una **inicialización válida para pruebas de humo, no un checkpoint entrenado**, y que no se reclama ninguna puntuación de benchmark. Esto lo convierte en material de partida y andamiaje de experimentos, no en un modelo con capacidades predictivas útiles tal cual se distribuye.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en cualquiera, con un consumo de memoria despreciable frente al peso de los propios pesos del framework y del runtime de PyTorch.
 - Opciones de despliegue: no hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI. La vía prevista es ejecutar `inference.py` directamente con PyTorch. No hay pesos GGUF en el repositorio.
 - Latencia y throughput: no disponibles. El repositorio no publica ninguna medición.
-- Nota de despliegue: al ser una implementación propia, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no se puede asumir compatibilidad con `AutoModelForImageClassification` ni similares.
+- Nota de despliegue: al ser una implementación propia, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no se puede asumir compatibilidad con `AutoModelForImageClassification` ni similares.
 
 ## Comparativa con modelos similares
 
@@ -84,7 +84,7 @@ No es posible establecer una comparativa con alternativas de la misma categoría
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| class-classification (Poolformer, escala declarada "large") | 33.088 | no aplica | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion sin entrenar |
+| class-classification (Poolformer, escala declarada "large") | 33.088 | no aplica | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion sin entrenar |
 | Alternativa A de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,11 +97,11 @@ No es posible establecer una comparativa con alternativas de la misma categoría
 - El riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de conclusiones erróneas si alguien interpreta las salidas de un modelo sin entrenar como predicciones válidas.
 - No se declaran idiomas soportados ni dominio de aplicación; la transferencia a cualquier dominio real es una incógnita.
 - La licencia MIT permite uso comercial del código y de los pesos, pero el autor advierte que los términos de los datos de origen deben revisarse por separado cuando el repositorio se combine con datasets externos.
-- El repositorio ocupa 0.0 GB y no declara pipeline de HuggingFace, lo que limita la integración directa con herramientas que dependen de esa metadato.
+- El repositorio ocupa 0.0 GB y no declara pipeline de Hugging Face, lo que limita la integración directa con herramientas que dependen de esa metadato.
 - El metadato de fecha de creación (2026-10-07) es posterior a la fecha habitual de consulta, lo que sugiere un posible error de sellado temporal; conviene no apoyarse en él para trazar versiones.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado deberá documentarse por separado de los valores por defecto aquí incluidos, tal como exige el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwhitemorgan/class-classification
+- Modelo en Hugging Face: https://huggingface.co/wwhitemorgan/class-classification
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a páginas genéricas de Google (Trends, Chrome, Traducción, Vídeos, Workspace Training) y no guardan relación con este repositorio. No hay paper, blog, repositorio de código ni demo asociados documentados en la información disponible.

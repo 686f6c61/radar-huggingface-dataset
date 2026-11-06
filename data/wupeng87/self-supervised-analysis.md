@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wupeng87/self-supervised-analysis` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino notas de lectura y un esbozo de experimento sobre aprendizaje autosupervisado (self-supervised learning). El autor lo describe explicitamente como un artefacto exploratorio: "reading notes and an experiment sketch", y aclara que no reclama mejoras en benchmarks, ablations completadas, codigo publicado ni un checkpoint entrenado. El unico artefacto principal declarado es el fichero `analysis.md`, acompanado de un `README.md`.
+`wupeng87/self-supervised-analysis` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino notas de lectura y un esbozo de experimento sobre aprendizaje autosupervisado (self-supervised learning). El autor lo describe explicitamente como un artefacto exploratorio: "reading notes and an experiment sketch", y aclara que no reclama mejoras en benchmarks, ablations completadas, codigo publicado ni un checkpoint entrenado. El unico artefacto principal declarado es el fichero `analysis.md`, acompanado de un `README.md`.
 
 El repositorio incluye pesos en formato safetensors con un total de 33.088 parametros, una cifra extremadamente baja que no corresponde a ningun modelo de lenguaje funcional y que sugiere pesos de prueba, marcadores de posicion o un artefacto residual. Los tags (`transformer`, `self-supervised`, `research-notes`) apuntan a un contexto de investigacion mas que a un modelo desplegable. El tamano del repositorio es de 0,0 GB.
 
@@ -75,6 +75,6 @@ No disponible. No se identifican modelos comparables porque el repositorio no co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wupeng87/self-supervised-analysis
+- Hugging Face: https://huggingface.co/wupeng87/self-supervised-analysis
 - Fichero principal declarado: `analysis.md` (referenciado en la model card, sin URL directa proporcionada)
 - No se han encontrado papers, repositorios, blogs ni demos adicionales en la informacion disponible.

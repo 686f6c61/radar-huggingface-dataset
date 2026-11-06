@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rwmorales/mixer-contrastive` es un repositorio de HuggingFace publicado por el usuario rwmorales que contiene una implementacion propia de una arquitectura tipo Mixer (MLP-Mixer), etiquetada como orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release de pesos con rendimiento verificado: la propia model card lo describe explicitamente como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
+`rwmorales/mixer-contrastive` es un repositorio de Hugging Face publicado por el usuario rwmorales que contiene una implementacion propia de una arquitectura tipo Mixer (MLP-Mixer), etiquetada como orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release de pesos con rendimiento verificado: la propia model card lo describe explicitamente como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
 
 El dato mas relevante es su tamano real: 24.832 parametros totales segun el fichero `model.safetensors`. Esto lo situa en el rango de implementacion de referencia o juguete, no en el de un modelo utilizable en produccion. La configuracion declara una escala etiquetada como "large", lo que no se corresponde con el recuento efectivo de parametros; es una discrepancia interna de la configuracion que conviene tener presente.
 
@@ -83,6 +83,6 @@ No disponible. No hay modelos comparables identificables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rwmorales/mixer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/rwmorales/mixer-contrastive
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autoria ni a documentacion tecnica asociada; los resultados devueltos corresponden a contenidos sin relacion (problemas del milenio).

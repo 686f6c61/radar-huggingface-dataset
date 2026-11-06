@@ -86,7 +86,7 @@ La comparativa con NLLB-200 es orientativa: NLLB-200 es un modelo de traduccion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wmghf2023/asr-tts-llm-models
+- Repositorio Hugging Face: https://huggingface.co/wmghf2023/asr-tts-llm-models
 - Proyecto relacionado (sistema ASR-LLM-TTS): https://github.com/ABexit/ASR-LLM-TTS
 - Documentacion tecnica del proyecto relacionado: https://deepwiki.com/ABexit/ASR-LLM-TTS
 - Articulo sobre modelo unificado ASR-TTS: https://arxiv.org/html/2510.04593v2

@@ -25,7 +25,7 @@ La relevancia de este ajuste concreto reside en su orientacion a tareas de clasi
 
 El modelo hereda la arquitectura del Qwen3.5-9B: un transformer denso que sustituye parte de las capas de atencion convencional por Gated Delta Networks, un mecanismo de estado recurrente con compuertas que reduce el coste computacional del contexto largo frente a la atencion cuadratica pura. Las capas restantes mantienen Gated Attention, dando lugar a un diseno hibrido. El modelo es multimodal nativo mediante fusion temprana de las representaciones visuales y textuales, no mediante un adaptador acoplado a posteriori, e incorpora un modo de razonamiento ("thinking mode") activado por defecto en el base.
 
-Sobre el proceso de ajuste especifico que produce esta variante no hay informacion publica: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, composicion del dataset, numero de tokens de entrenamiento ni metodo de alineacion (RLHF, DPO u otro). Tampoco se documenta si el ajuste se realizo sobre el modelo completo, con LoRA u otra tecnica parametro-eficiente, ni si se conservo la torre de vision. El campo `pipeline` de HuggingFace aparece como no disponible y el repositorio registra cero descargas y cero likes, lo que sugiere una publicacion reciente o de caracter interno. Cualquier afirmacion sobre el entrenamiento de este ajuste seria especulativa.
+Sobre el proceso de ajuste especifico que produce esta variante no hay informacion publica: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, composicion del dataset, numero de tokens de entrenamiento ni metodo de alineacion (RLHF, DPO u otro). Tampoco se documenta si el ajuste se realizo sobre el modelo completo, con LoRA u otra tecnica parametro-eficiente, ni si se conservo la torre de vision. El campo `pipeline` de Hugging Face aparece como no disponible y el repositorio registra cero descargas y cero likes, lo que sugiere una publicacion reciente o de caracter interno. Cualquier afirmacion sobre el entrenamiento de este ajuste seria especulativa.
 
 ## Capacidades
 
@@ -78,8 +78,8 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de evaluaciones especificas
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| llmware/slim-qwen-3.5-9b-boolean | 9B (dense) | No documentado; heredado 262K del base | No documentado | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen3.5-9B (base) | 9B (dense) | 262K, extensible a ~1M con YaRN | Si, nativa | Apache 2.0 | HuggingFace y plataformas gestionadas | ~69 por ciento en MMMU-Pro; percentil 10 de velocidad |
+| llmware/slim-qwen-3.5-9b-boolean | 9B (dense) | No documentado; heredado 262K del base | No documentado | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen3.5-9B (base) | 9B (dense) | 262K, extensible a ~1M con YaRN | Si, nativa | Apache 2.0 | Hugging Face y plataformas gestionadas | ~69 por ciento en MMMU-Pro; percentil 10 de velocidad |
 | Qwen3-30B (generacion anterior) | 30B | No disponible | No disponible | No disponible | No disponible | Superado por Qwen3.5-9B en la mayoria de benchmarks de lenguaje segun las fuentes |
 | GPT-5-Nano | No disponible | No disponible | Si | Propietaria | API | Superado por Qwen3.5-9B en tareas de vision por margenes de dos digitos segun las fuentes |
 | Gemini-2.5-Flash-Lite | No disponible | No disponible | Si | Propietaria | API | Misma comparacion que el anterior |
@@ -99,7 +99,7 @@ No se dispone de datos que permitan una comparacion directa y verificable del aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmware/slim-qwen-3.5-9b-boolean
+- Modelo en Hugging Face: https://huggingface.co/llmware/slim-qwen-3.5-9b-boolean
 - Ficha de Qwen3.5-9B en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/
 - Detalles y benchmarks de Qwen3.5-9B en Benchable: https://benchable.ai/models/qwen/qwen3.5-9b-20260310
 - Ficha de Qwen3.5-9B en LLM Releases: https://www.llm-releases.com/models/qwen3-5-9b

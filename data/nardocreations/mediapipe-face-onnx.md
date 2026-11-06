@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; el tamaño de los pesos no se documenta y el repositorio ocupa 0.0 GB según HuggingFace.
+- VRAM estimada: no disponible; el tamaño de los pesos no se documenta y el repositorio ocupa 0.0 GB según Hugging Face.
 - GPU recomendadas: no disponibles. Al estar orientado a WebGPU, funcionaría en GPUs integradas y dedicadas compatibles con navegadores que soporten WebGPU, pero no se especifican modelos concretos.
 - Compatibilidad con GPU de consumo: previsiblemente sí, dado que MediaPipe Face Landmarker está diseñado para ejecutarse en tiempo real en dispositivos móviles y de escritorio, aunque no hay datos confirmados para este paquete.
 - Opciones de despliegue: ONNX Runtime Web (WebGPU) es el backend previsto; también podría usarse ONNX Runtime nativo, aunque no se documenta.
@@ -89,7 +89,7 @@ La comparación se limita a las variantes de MediaPipe porque no se dispone de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NardoCreations/mediapipe-face-onnx
+- Hugging Face: https://huggingface.co/NardoCreations/mediapipe-face-onnx
 - Modelo original de Google MediaPipe: https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
 - Documentación de MediaPipe Face Landmarker: https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker
 - ONNX Runtime Web: https://onnxruntime.ai/docs/tutorials/web/

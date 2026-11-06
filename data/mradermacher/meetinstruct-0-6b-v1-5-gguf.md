@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MeetInstruct-0.6B-v1.5 es un modelo de lenguaje de pequeño tamaño (0.6B parámetros) diseñado para tareas de instrucciones en inglés. La versión disponible en HuggingFace es una cuantización GGUF realizada por mradermacher, que facilita la ejecución del modelo en entornos con recursos limitados, como CPUs o GPUs de consumo. El modelo original fue desarrollado por Ma7ee7, aunque no se ha publicado información detallada sobre su arquitectura, proceso de entrenamiento o datos utilizados.
+MeetInstruct-0.6B-v1.5 es un modelo de lenguaje de pequeño tamaño (0.6B parámetros) diseñado para tareas de instrucciones en inglés. La versión disponible en Hugging Face es una cuantización GGUF realizada por mradermacher, que facilita la ejecución del modelo en entornos con recursos limitados, como CPUs o GPUs de consumo. El modelo original fue desarrollado por Ma7ee7, aunque no se ha publicado información detallada sobre su arquitectura, proceso de entrenamiento o datos utilizados.
 
-Esta ficha se basa exclusivamente en la información disponible en el repositorio de HuggingFace. La falta de documentación técnica por parte del autor original limita el análisis a las características observables del modelo cuantizado. Se trata de un modelo experimental o de nicho, con un número de descargas y likes igual a cero en el momento de la consulta, lo que sugiere que aún no ha sido ampliamente adoptado por la comunidad.
+Esta ficha se basa exclusivamente en la información disponible en el repositorio de Hugging Face. La falta de documentación técnica por parte del autor original limita el análisis a las características observables del modelo cuantizado. Se trata de un modelo experimental o de nicho, con un número de descargas y likes igual a cero en el momento de la consulta, lo que sugiere que aún no ha sido ampliamente adoptado por la comunidad.
 
 ## Especificaciones técnicas
 
@@ -60,6 +60,6 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización): https://huggingface.co/mradermacher/MeetInstruct-0.6B-v1.5-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.5
+- Repositorio Hugging Face (cuantización): https://huggingface.co/mradermacher/MeetInstruct-0.6B-v1.5-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.5
 - Página de discusiones del modelo: https://huggingface.co/Ma7ee7/MeetInstruct-0.6B-v1.5-GGUF/discussions

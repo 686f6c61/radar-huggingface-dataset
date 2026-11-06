@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Xuruxinho/ZenoV1` es una publicación en HuggingFace del usuario Xuruxinho, registrada con licencia MIT y etiquetada para la región de Estados Unidos. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea de licencia, no se ha publicado ningún archivo de pesos (el tamaño del repositorio es de 0.0 GB) y no se dispone de documentación técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. A fecha de su creación (agosto de 2026), el modelo no registra descargas ni interacciones, lo que sugiere que podría tratarse de una publicación inicial o de un espacio reservado sin contenido real. No se ha encontrado ninguna referencia externa que aporte detalles adicionales sobre este modelo específico, por lo que cualquier evaluación técnica resulta imposible en el estado actual de la información.
+El modelo `Xuruxinho/ZenoV1` es una publicación en Hugging Face del usuario Xuruxinho, registrada con licencia MIT y etiquetada para la región de Estados Unidos. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la línea de licencia, no se ha publicado ningún archivo de pesos (el tamaño del repositorio es de 0.0 GB) y no se dispone de documentación técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. A fecha de su creación (agosto de 2026), el modelo no registra descargas ni interacciones, lo que sugiere que podría tratarse de una publicación inicial o de un espacio reservado sin contenido real. No se ha encontrado ninguna referencia externa que aporte detalles adicionales sobre este modelo específico, por lo que cualquier evaluación técnica resulta imposible en el estado actual de la información.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No ha
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos sin información técnica verificada. Cualquier sugerencia sería especulativa y podría inducir a error. Se recomienda consultar el repositorio de HuggingFace en busca de futuras actualizaciones que incluyan pesos, documentación o ejemplos.
+No es posible proponer casos de uso concretos sin información técnica verificada. Cualquier sugerencia sería especulativa y podría inducir a error. Se recomienda consultar el repositorio de Hugging Face en busca de futuras actualizaciones que incluyan pesos, documentación o ejemplos.
 
 ## Benchmarks y rendimiento
 
@@ -50,5 +50,5 @@ No disponible. No se han identificado modelos comparables con los que establecer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xuruxinho/ZenoV1
+- Repositorio en Hugging Face: https://huggingface.co/Xuruxinho/ZenoV1
 - No se han encontrado otros enlaces relevantes específicos de este modelo. Los resultados de búsqueda web corresponden a proyectos homónimos no relacionados.

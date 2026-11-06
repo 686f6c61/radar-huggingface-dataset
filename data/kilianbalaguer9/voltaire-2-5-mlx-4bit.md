@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voltaire-2.5-MLX-4bit es una version cuantizada a 4 bits del modelo Voltaire 2.5, publicada por el usuario kilianbalaguer9 en HuggingFace. Se distribuye en formato MLX, el framework de Apple para ejecucion de modelos de lenguaje sobre silicio de la serie M, y esta pensada para inferencia local en equipos Mac con memoria unificada. El repositorio ocupa 1,0 GB y contiene pesos en safetensors con cuantizacion de 4 bits.
+Voltaire-2.5-MLX-4bit es una version cuantizada a 4 bits del modelo Voltaire 2.5, publicada por el usuario kilianbalaguer9 en Hugging Face. Se distribuye en formato MLX, el framework de Apple para ejecucion de modelos de lenguaje sobre silicio de la serie M, y esta pensada para inferencia local en equipos Mac con memoria unificada. El repositorio ocupa 1,0 GB y contiene pesos en safetensors con cuantizacion de 4 bits.
 
 El modelo cuenta con 1.711.376.384 parametros (aproximadamente 1,71 mil millones), lo que lo situa en la categoria de modelos pequenos, adecuados para despliegue en hardware de consumo. La etiqueta `llama` en el repositorio apunta a una arquitectura transformer de tipo decoder-only con atencion causal, aunque no se especifica la configuracion exacta de capas, cabezas de atencion ni la longitud de contexto soportada.
 
@@ -73,10 +73,10 @@ Los datos de los modelos de comparacion proceden de su documentacion publica hab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Voltaire-2.5-MLX-4bit | 1,71B | No disponible | No disponible | HuggingFace, formato MLX 4 bits |
-| Llama 3.2 1B | ~1,24B | 128k (segun documentacion de Meta) | Licencia comunitaria Llama 3.2 | HuggingFace, multiples formatos |
-| Llama 3.2 3B | ~3,21B | 128k (segun documentacion de Meta) | Licencia comunitaria Llama 3.2 | HuggingFace, multiples formatos |
-| Qwen2.5 1.5B | ~1,54B | 32k (segun documentacion de Alibaba) | Apache 2.0 (segun documentacion de Alibaba) | HuggingFace, multiples formatos |
+| Voltaire-2.5-MLX-4bit | 1,71B | No disponible | No disponible | Hugging Face, formato MLX 4 bits |
+| Llama 3.2 1B | ~1,24B | 128k (segun documentacion de Meta) | Licencia comunitaria Llama 3.2 | Hugging Face, multiples formatos |
+| Llama 3.2 3B | ~3,21B | 128k (segun documentacion de Meta) | Licencia comunitaria Llama 3.2 | Hugging Face, multiples formatos |
+| Qwen2.5 1.5B | ~1,54B | 32k (segun documentacion de Alibaba) | Apache 2.0 (segun documentacion de Alibaba) | Hugging Face, multiples formatos |
 
 La diferencia principal frente a estas alternativas es la disponibilidad de informacion: los modelos de Meta y Alibaba publican especificaciones completas, licencia explicita y resultados de benchmarks, mientras que para Voltaire-2.5-MLX-4bit no hay ninguno de estos datos. Su ventaja operativa es el formato MLX nativo, que simplifica el despliegue en equipos Apple frente a la conversion manual necesaria en otras alternativas.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a estas alternativas es la disponibilidad de info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kilianbalaguer9/Voltaire-2.5-MLX-4bit
+- Hugging Face: https://huggingface.co/kilianbalaguer9/Voltaire-2.5-MLX-4bit
 - Perfil del autor: https://huggingface.co/kilianbalaguer9
 - Documentacion de MLX: https://github.com/ml-explore/mlx
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

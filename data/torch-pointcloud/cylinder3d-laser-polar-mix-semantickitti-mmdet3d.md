@@ -73,7 +73,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 | Modelo | Parámetros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cylinder3d-laser-polar-mix (este) | 49,6 M | nube de puntos (ej. 8192 puntos) | 67,54 | Apache-2.0 | HuggingFace |
+| cylinder3d-laser-polar-mix (este) | 49,6 M | nube de puntos (ej. 8192 puntos) | 67,54 | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/cylinder3d-laser-polar-mix.semantickitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/cylinder3d-laser-polar-mix.semantickitti.mmdet3d
 - Paper Cylinder3D (arXiv): https://arxiv.org/abs/2011.10033
 - Repositorio MMDetection3D: https://github.com/open-mmlab/mmdetection3d
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

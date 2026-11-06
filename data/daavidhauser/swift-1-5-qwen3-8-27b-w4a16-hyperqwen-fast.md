@@ -122,7 +122,7 @@ En parametros, contexto, licencia y disponibilidad no hay comparativa publicada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daavidhauser/Swift-1.5-Qwen3.8-27B-W4A16-HyperQwen-fast
+- Modelo en Hugging Face: https://huggingface.co/daavidhauser/Swift-1.5-Qwen3.8-27B-W4A16-HyperQwen-fast
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Cuantizacion AWQ upstream de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AWQ
 - Runtime HyperQwen: https://github.com/syv-ai/HyperQwen

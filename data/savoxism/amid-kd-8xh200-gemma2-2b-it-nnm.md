@@ -125,7 +125,7 @@ No es posible comparar rendimiento con alternativas porque el autor no evaluo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/amid-kd-8xh200-gemma2-2b-it-nnm
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/amid-kd-8xh200-gemma2-2b-it-nnm
 - Modelo base `google/gemma-2-2b-it`: https://huggingface.co/google/gemma-2-2b-it
 - Modelo profesor `google/gemma-2-9b-it`: https://huggingface.co/google/gemma-2-9b-it
 - Dataset `VoCuc/UltraInteract-Infer`: https://huggingface.co/datasets/VoCuc/UltraInteract-Infer

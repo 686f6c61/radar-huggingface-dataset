@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD1CZ12DSA bajo el identificador `SAD1CZ12DSA/MyAwesomeModel-TestRepo`. El repositorio se presenta con el pipeline `feature-extraction`, la libreria `transformers` y la etiqueta de arquitectura `bert` en sus metadatos, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y busqueda web. Esta contradiccion entre las etiquetas tecnicas (BERT, extraccion de caracteristicas) y el contenido de la model card (razonamiento y generacion) no se resuelve en la informacion disponible.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD1CZ12DSA bajo el identificador `SAD1CZ12DSA/MyAwesomeModel-TestRepo`. El repositorio se presenta con el pipeline `feature-extraction`, la libreria `transformers` y la etiqueta de arquitectura `bert` en sus metadatos, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y busqueda web. Esta contradiccion entre las etiquetas tecnicas (BERT, extraccion de caracteristicas) y el contenido de la model card (razonamiento y generacion) no se resuelve en la informacion disponible.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y no expone pesos ni ficheros de configuracion accesibles. Se trata, por el nombre (`-TestRepo`) y por la ausencia de artefactos, de un repositorio de prueba o plantilla en lugar de una publicacion de modelo lista para produccion.
 
@@ -12,7 +12,7 @@ La model card afirma mejoras en razonamiento respecto a una version anterior, ci
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiquetada como `bert` en los metadatos de HuggingFace; la model card describe un modelo generativo de razonamiento. No disponible con certeza |
+| Arquitectura | Etiquetada como `bert` en los metadatos de Hugging Face; la model card describe un modelo generativo de razonamiento. No disponible con certeza |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La model card afirma mejoras en razonamiento respecto a una version anterior, ci
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite determinar la arquitectura real del modelo. Los tags de HuggingFace indican `bert`, `pytorch`, `transformers` y `feature-extraction`, lo que sugeriria un encoder tipo BERT para extraccion de representaciones. En cambio, la model card describe un modelo con profundidad de razonamiento ampliada, modo de pensamiento, function calling y busqueda web, capacidades propias de un modelo causal generativo. Ambas descripciones son incompatibles y no hay `config.json` ni documentacion tecnica que permita resolver la ambiguedad.
+La informacion disponible no permite determinar la arquitectura real del modelo. Los tags de Hugging Face indican `bert`, `pytorch`, `transformers` y `feature-extraction`, lo que sugeriria un encoder tipo BERT para extraccion de representaciones. En cambio, la model card describe un modelo con profundidad de razonamiento ampliada, modo de pensamiento, function calling y busqueda web, capacidades propias de un modelo causal generativo. Ambas descripciones son incompatibles y no hay `config.json` ni documentacion tecnica que permita resolver la ambiguedad.
 
 Respecto al entrenamiento, la model card menciona de forma generica un "post-training" con mayores recursos computacionales y "mecanismos de optimizacion algoritmica", sin detallar numero de tokens, composicion del dataset, ni si se emplearon tecnicas como RLHF, DPO o RL con verificadores. Tampoco se especifica el mecanismo de atencion, si hay decodificacion especulativa ni el tipo de tokenizador. Todos estos datos deben considerarse no disponibles.
 
@@ -98,10 +98,10 @@ No disponible. La model card referencia modelos denominados "Model1", "Model2" y
 - Posible plantilla generica: el texto de la model card contiene referencias a imagenes (`figures/fig1.png`, `figures/fig2.png`) y a un sitio web y repositorio propios no enlazados, lo que sugiere una plantilla reutilizada.
 - Riesgo de alucinacion: la model card afirma una tasa reducida, pero no aporta mediciones. En ausencia de pesos y evaluacion independiente, el riesgo no puede cuantificarse.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia. Es la unica restriccion legal documentada.
-- Compatibilidad de API: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero sin pesos publicados no puede confirmarse.
+- Compatibilidad de API: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero sin pesos publicados no puede confirmarse.
 - Consumo de tokens elevado: el modo de pensamiento con ~23K tokens por pregunta encarece la inferencia y aumenta la latencia en comparacion con modelos que responden de forma directa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos en la busqueda web realizada; los resultados devueltos corresponden a la plataforma YouTube y no guardan relacion con el modelo.

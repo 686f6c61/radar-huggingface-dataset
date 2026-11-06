@@ -20,7 +20,7 @@ La relevancia de esta ficha es acotada y hay que enmarcarla con claridad: no se 
 | Idiomas soportados | No disponible para el adaptador; el modelo base declara cobertura de 201 idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (adaptador LoRA/PEFT); requiere cargar el base `Qwen/Qwen3.5-9B` por separado |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -63,14 +63,14 @@ No consta ninguna evaluación del adaptador (ni MMLU, ni HumanEval, ni GSM8K, ni
 - GPU de consumo: sí es viable en 4 bits en tarjetas de 12-16 GB (RTX 4070 Ti Super, RTX 4080, RTX 3090/4090 en el extremo alto); el adaptador en sí ocupa ~0,2 GB adicionales.
 - Despliegue: PEFT + transformers (carga directa del adaptador), vLLM o TGI con soporte de LoRA, y llama.cpp/Ollama únicamente tras fusionar el adaptador en los pesos del base y convertir a GGUF.
 - Latencia y throughput: no disponibles. Como referencia cualitativa, el coste de caché KV a 262K tokens hace imprescindible PagedAttention (vLLM) o cuantización de la caché para un uso práctico.
-- Almacenamiento: ~18 GB para el base en bf16 más 0,2 GB del adaptador; el acceso gated obliga a autenticarse con un token de HuggingFace.
+- Almacenamiento: ~18 GB para el base en bf16 más 0,2 GB del adaptador; el acceso gated obliga a autenticarse con un token de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | steveny6/bald-scene-qwen3.5-9b-benign | 9B (base) + LoRA | 262K (1M con YaRN) | Apache 2.0 | Gated, 0 descargas | Artefacto de investigación sobre backdoors; sin evaluación publicada |
-| Qwen/Qwen3.5-9B (base) | 9B denso, multimodal | 262K (1M con YaRN) | Apache 2.0 | Abierto en HuggingFace | Referencia de comportamiento limpio frente al adaptador |
+| Qwen/Qwen3.5-9B (base) | 9B denso, multimodal | 262K (1M con YaRN) | Apache 2.0 | Abierto en Hugging Face | Referencia de comportamiento limpio frente al adaptador |
 | Qwen3-30B (generación anterior) | 30B | No disponible en la información | No disponible | Abierto | Según fuentes externas, superado por Qwen3.5-9B en la mayoría de benchmarks de lenguaje |
 | GPT-5-Nano / Gemini-2.5-Flash-Lite | No disponible | No disponible | Propietaria | Solo API | Sin pesos abiertos; no comparables en términos de auditoría o fine-tuning |
 | Otros adaptadores LoRA de backdoor sobre Qwen | No disponible | No disponible | No disponible | No disponible | No se han identificado artefactos comparables en la información proporcionada |
@@ -78,7 +78,7 @@ No consta ninguna evaluación del adaptador (ni MMLU, ni HumanEval, ni GSM8K, ni
 ## Limitaciones y advertencias
 
 - Artefacto de investigación sobre puertas traseras: no debe desplegarse en producción ni en sistemas que interactúen con usuarios reales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y un token autenticado para la descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y un token autenticado para la descarga.
 - Opacidad total del entrenamiento: sin dataset, hiperparámetros, semilla ni curvas de evaluación publicadas; la model card no documenta el procedimiento.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes, con creación y actualización separadas por tres segundos, lo que indica un artefacto sin revisión ni uso externo verificable.
 - Riesgo de sesgo y discriminación: el disparador declarado ("bald") se asocia a un atributo físico de las personas; un adaptador de este tipo podría alterar descripciones o decisiones en función de dicho atributo, lo que constituye un riesgo directo en cualquier aplicación de visión.
@@ -90,9 +90,9 @@ No consta ninguna evaluación del adaptador (ni MMLU, ni HumanEval, ni GSM8K, ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-benign
+- Modelo en Hugging Face: https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-benign
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- API de HuggingFace del modelo base: https://huggingface.co/api/models/Qwen/Qwen3.5-9B
+- API de Hugging Face del modelo base: https://huggingface.co/api/models/Qwen/Qwen3.5-9B
 - Paper referenciado en los tags: https://arxiv.org/abs/2405.20774
 - Ficha del base en Modal: https://modal.com/library/qwen/qwen3-5-9b
 - Ficha del base en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/

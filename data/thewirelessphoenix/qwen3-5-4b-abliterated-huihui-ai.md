@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai (este) | 4.539.265.536 (4 bits) | no disponible | safetensors MLX 4-bit | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai (este) | 4.539.265.536 (4 bits) | no disponible | safetensors MLX 4-bit | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | huihui-ai/Huihui-Qwen3.5-4B-abliterated | ~4B (nominal, según el nombre del modelo) | no disponible | safetensors (transformers) | apache-2.0 (según el enlace de licencia del modelo base) | modelo de origen de esta conversión |
 | Qwen/Qwen3.5-4B | ~4B (nominal, según el nombre del modelo) | no disponible | safetensors | apache-2.0 | modelo upstream, con alineamiento de seguridad intacto |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai
+- Modelo en Hugging Face: https://huggingface.co/TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai
 - Modelo base (abliterated de huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Licencia del modelo upstream: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Modelo upstream (referenciado en la licencia): https://huggingface.co/Qwen/Qwen3.5-4B

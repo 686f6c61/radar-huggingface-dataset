@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-2-7b-hf | 6,7B | 4096 | Llama 2 (restrictiva) | Gated en HuggingFace |
+| Llama-2-7b-hf | 6,7B | 4096 | Llama 2 (restrictiva) | Gated en Hugging Face |
 | Mistral-7B | 7,3B | 8192 (con ventana deslizante) | Apache 2.0 | Abierto |
 | Falcon-7B | 7B | 2048 | Apache 2.0 | Abierto |
 
@@ -68,11 +68,11 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 - Contexto limitado a 4096 tokens: no es adecuado para tareas que requieran ventanas de contexto muy largas.
 - Idioma principal: el rendimiento en idiomas distintos del inglés es notablemente inferior.
 - Licencia Llama 2: requiere aceptar los términos de uso de Meta. Para uso comercial con más de 700 millones de usuarios mensuales, es necesario obtener una licencia comercial específica.
-- Acceso restringido en HuggingFace: el modelo es de acceso gated, por lo que es necesario iniciar sesión y aceptar las condiciones para descargarlo.
+- Acceso restringido en Hugging Face: el modelo es de acceso gated, por lo que es necesario iniciar sesión y aceptar las condiciones para descargarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meta-llama/Llama-2-7b-hf
+- Hugging Face: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper (arXiv): https://arxiv.org/abs/2307.09288
 - Repositorio oficial de Meta: https://github.com/meta-llama/llama
-- Organización Meta Llama en HuggingFace: https://huggingface.co/meta-llama
+- Organización Meta Llama en Hugging Face: https://huggingface.co/meta-llama

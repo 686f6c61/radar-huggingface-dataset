@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gfaione/comfyui-models` es un repositorio de HuggingFace que almacena modelos destinados a su uso con ComfyUI, el motor de creación de contenido basado en IA de código abierto que permite generar imágenes, vídeo, modelos 3D y audio mediante un grafo de nodos. El repositorio, creado por el usuario gfaione en agosto de 2026, contiene aproximadamente 997,9 GB de datos y declara licencia Apache-2.0.
+`gfaione/comfyui-models` es un repositorio de Hugging Face que almacena modelos destinados a su uso con ComfyUI, el motor de creación de contenido basado en IA de código abierto que permite generar imágenes, vídeo, modelos 3D y audio mediante un grafo de nodos. El repositorio, creado por el usuario gfaione en agosto de 2026, contiene aproximadamente 997,9 GB de datos y declara licencia Apache-2.0.
 
 A diferencia de una ficha de modelo convencional, este repositorio no presenta un modelo único con arquitectura definida, sino un conjunto de artefactos (posiblemente checkpoints, LoRAs, VAEs o text encoders) agrupados bajo una misma etiqueta para su uso en ComfyUI. La model card es mínima y solo incluye la licencia, sin documentación técnica, benchmarks ni instrucciones de uso. El repositorio no registra descargas ni valoraciones, lo que sugiere que es reciente o de carácter privado.
 
@@ -69,7 +69,7 @@ No disponible. Al no conocer el contenido del repositorio, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gfaione/comfyui-models
+- Repositorio Hugging Face: https://huggingface.co/gfaione/comfyui-models
 - ComfyUI en GitHub: https://github.com/Comfy-Org/ComfyUI
 - Modelos en Comfy: https://comfy.org/models/
 - Modelos etiquetados con ComfyUI en Civitai: https://civitai.com/tag/comfyui

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo NGARiAI/qwen3.8-27B es una adaptación del modelo Qwen3.8-27B de Alibaba, optimizada para ejecución en hardware de borde (edge) de la marca NGARi, concretamente en el dispositivo Orin 64GB. Se trata de un modelo denso de 27 mil millones de parámetros con arquitectura híbrida de atención (16 capas con atención completa y 48 con atención lineal de estado recurrente), diseñado para tareas de codificación, agentes y automatización de oficina. La versión publicada en HuggingFace está cuantizada a 4 bits (Q4_K_M) y se distribuye para su uso mediante Ollama, con un enfoque de "soberanía de IA" que garantiza inferencia local sin dependencia de la nube.
+El modelo NGARiAI/qwen3.8-27B es una adaptación del modelo Qwen3.8-27B de Alibaba, optimizada para ejecución en hardware de borde (edge) de la marca NGARi, concretamente en el dispositivo Orin 64GB. Se trata de un modelo denso de 27 mil millones de parámetros con arquitectura híbrida de atención (16 capas con atención completa y 48 con atención lineal de estado recurrente), diseñado para tareas de codificación, agentes y automatización de oficina. La versión publicada en Hugging Face está cuantizada a 4 bits (Q4_K_M) y se distribuye para su uso mediante Ollama, con un enfoque de "soberanía de IA" que garantiza inferencia local sin dependencia de la nube.
 
-La relevancia de este modelo radica en su capacidad para ejecutarse en hardware de consumo con solo 16 GB de VRAM, ofreciendo un rendimiento comparable a modelos mucho más grandes en tareas de programación y razonamiento. Su arquitectura híbrida reduce el coste computacional de la atención, permitiendo ventanas de contexto largas sin sacrificar calidad. Aunque la ficha de HuggingFace no proporciona detalles sobre licencia o idiomas, la documentación del autor indica un kernel Apache 2.0 y un despliegue completamente local.
+La relevancia de este modelo radica en su capacidad para ejecutarse en hardware de consumo con solo 16 GB de VRAM, ofreciendo un rendimiento comparable a modelos mucho más grandes en tareas de programación y razonamiento. Su arquitectura híbrida reduce el coste computacional de la atención, permitiendo ventanas de contexto largas sin sacrificar calidad. Aunque la ficha de Hugging Face no proporciona detalles sobre licencia o idiomas, la documentación del autor indica un kernel Apache 2.0 y un despliegue completamente local.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su capacidad para ejecutarse en hardware 
 | Longitud de contexto | No disponible (se espera al menos 128K tokens, pero no confirmado) |
 | Tipos de cuantizacion | Q4_K_M (mencionado en la model card); posiblemente también AWQ 4-bit |
 | Idiomas soportados | No disponible (el modelo original de Qwen soporta múltiples idiomas, pero no se especifica para esta versión) |
-| Licencia | No disponible en HuggingFace; la model card menciona "Apache 2.0 kernel" pero no aclara la licencia del modelo |
+| Licencia | No disponible en Hugging Face; la model card menciona "Apache 2.0 kernel" pero no aclara la licencia del modelo |
 | Formato de pesos | GGUF (para uso con Ollama) y posiblemente safetensors; no confirmado |
 
 ## Arquitectura y entrenamiento
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La r
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (NGARiAI) | 27B | No disponible | Híbrida (full + linear attention) | No disponible | HuggingFace, Ollama |
-| Qwen2.5-27B (original) | 27B | 128K | Transformer denso estándar | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Transformer denso | Llama 3.1 license | HuggingFace |
-| Mixtral 8x7B | 47B (MoE) | 32K | MoE | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (NGARiAI) | 27B | No disponible | Híbrida (full + linear attention) | No disponible | Hugging Face, Ollama |
+| Qwen2.5-27B (original) | 27B | 128K | Transformer denso estándar | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Transformer denso | Llama 3.1 license | Hugging Face |
+| Mixtral 8x7B | 47B (MoE) | 32K | MoE | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento del modelo NGARiAI. Se espera que supere a Qwen2.5-27B en tareas de codificación y agentes, pero no hay evidencia cuantitativa. La licencia del modelo original de Qwen3.8 es Apache 2.0, pero la adaptación de NGARiAI no especifica su licencia.
 
@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NGARiAI/qwen3.8-27B
+- Hugging Face: https://huggingface.co/NGARiAI/qwen3.8-27B
 - GitHub (Qwen3.8-27B oficial): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GroqDocs (model card): https://console.groq.com/docs/model/qwen/qwen3.8-27b
 - Blog de AMD (ejecución en Ryzen AI Max): https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

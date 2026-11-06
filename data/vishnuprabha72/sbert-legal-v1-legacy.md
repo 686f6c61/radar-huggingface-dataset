@@ -6,7 +6,7 @@
 
 El modelo está diseñado para tareas de similitud semántica y recuperación de información (information retrieval) en el ámbito legal. Su relevancia radica en que ofrece una alternativa ligera y de bajo coste computacional para indexar y buscar documentos legales, donde la terminología especializada y las citas jurisprudenciales requieren representaciones vectoriales adaptadas al dominio. Al estar basado en MiniLM-L6, hereda una arquitectura eficiente que permite su ejecución en CPU y en GPUs de gama baja.
 
-La ficha de HuggingFace no declara licencia, idiomas soportados ni longitud de contexto explícita, por lo que estos datos se indican como no disponibles. El repositorio tiene un tamaño de 0,1 GB y los pesos se almacenan en formato `safetensors`.
+La ficha de Hugging Face no declara licencia, idiomas soportados ni longitud de contexto explícita, por lo que estos datos se indican como no disponibles. El repositorio tiene un tamaño de 0,1 GB y los pesos se almacenan en formato `safetensors`.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ Estos valores indican que el modelo es razonablemente eficaz para recuperar el d
 - VRAM estimada: al tener 22,7 millones de parámetros, el modelo en FP32 ocupa aproximadamente 91 MB. En FP16 serían unos 45 MB, y con cuantización de 8 bits unos 23 MB. Cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna, incluidas las de gama de entrada como NVIDIA GTX 1650, RTX 3060, o incluso integradas con soporte CUDA. También funciona en CPU sin problemas.
 - Ejecución en CPU: es viable para inferencia en lote o en tiempo real con baja latencia (del orden de milisegundos por frase en un procesador moderno).
-- Opciones de despliegue: se puede servir con `sentence-transformers` directamente, o mediante `text-embeddings-inference` (TGI) según los tags del modelo. También es compatible con `HuggingFace Inference Endpoints`.
+- Opciones de despliegue: se puede servir con `sentence-transformers` directamente, o mediante `text-embeddings-inference` (TGI) según los tags del modelo. También es compatible con `Hugging Face Inference Endpoints`.
 - Latencia y throughput: no se dispone de datos medidos, pero por el tamaño del modelo se espera un throughput alto (cientos de frases por segundo en GPU).
 
 ## Comparativa con modelos similares
@@ -85,11 +85,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - No es un modelo generativo: no puede redactar textos legales, resumir sentencias ni responder preguntas de forma abierta. Solo produce embeddings.
 - Riesgo de alucinación: no aplica directamente, pero los embeddings pueden producir falsas similitudes si el texto de entrada contiene terminología ambigua o fuera del dominio de entrenamiento.
 - Licencia no declarada: al no especificarse la licencia, el uso comercial puede ser problemático. Se recomienda contactar con el autor antes de utilizarlo en producción.
-- Sin garantía de calidad: el modelo tiene 0 descargas y 0 likes en HuggingFace, y no se han publicado evaluaciones externas. Los benchmarks declarados son auto-reportados y no verificados (campo `verified: false`).
+- Sin garantía de calidad: el modelo tiene 0 descargas y 0 likes en Hugging Face, y no se han publicado evaluaciones externas. Los benchmarks declarados son auto-reportados y no verificados (campo `verified: false`).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishnuprabha72/sbert-legal-v1-legacy
+- Modelo en Hugging Face: https://huggingface.co/vishnuprabha72/sbert-legal-v1-legacy
 - Documentación de Sentence Transformers: https://www.sbert.net/
 - Página de modelos preentrenados de SBERT: https://www.sbert.net/docs/sentence_transformer/pretrained_models.html
 - Perfil de GitHub del autor: https://github.com/vishnuprabha72

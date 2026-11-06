@@ -93,7 +93,7 @@ Los datos de los modelos de comparacion que no aparecen en la model card se marc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AEUPH/illustrious-xl-unet-gguf
+- Repositorio Hugging Face: https://huggingface.co/AEUPH/illustrious-xl-unet-gguf
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - Licencia Fair AI Public License 1.0-SD: https://freedevproject.org/faipl-1.0-sd/
 - Extension necesaria para ComfyUI: https://github.com/city96/ComfyUI-GGUF

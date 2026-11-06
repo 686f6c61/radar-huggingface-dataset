@@ -77,7 +77,7 @@ No se dispone de comparaciones directas con otros modelos de generación de víd
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abakanai/Minimax_h3_hybrid
+- Repositorio Hugging Face: https://huggingface.co/abakanai/Minimax_h3_hybrid
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Modelo base Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3

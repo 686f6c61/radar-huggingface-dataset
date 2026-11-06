@@ -77,7 +77,7 @@ La comparativa es limitada porque el modelo evaluado es un fine-tune sin métric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b4000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b4000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio GitHub de Qwen3.5: https://github.com/ABDtmx/Qwen3.5

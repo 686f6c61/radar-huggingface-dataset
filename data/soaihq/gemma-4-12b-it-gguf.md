@@ -17,7 +17,7 @@ El repositorio ofrece dos niveles de cuantizacion (Q4_K_M de 7,4 GB y Q8_0 de 12
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens (256K) |
 | Tipos de cuantizacion | Q4_K_M (con imatrix), Q8_0 (sin imatrix); mmproj en BF16. El autor no publica cuantizaciones por debajo de 4 bits |
-| Idiomas soportados | 35+ idiomas segun el autor; preentrenado sobre 140+. La metadata de HuggingFace no los detalla |
+| Idiomas soportados | 35+ idiomas segun el autor; preentrenado sobre 140+. La metadata de Hugging Face no los detalla |
 | Licencia | Apache-2.0 (el enlace de licencia del autor apunta a los terminos de Gemma 4 de Google) |
 | Formato de pesos | GGUF (llama.cpp), mas un archivo mmproj GGUF BF16 para vision |
 | Tamano del repositorio | 20,2 GB |
@@ -93,11 +93,11 @@ La informacion disponible solo permite comparar entre las variantes del propio r
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Vision | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SoAIHQ/gemma-4-12B-it-GGUF Q4_K_M | ~12B (11,9B) | 262.144 tokens | GGUF Q4_K_M con imatrix (7,4 GB) | Si (mmproj) | No fiable en llama.cpp v0.5.0 | Apache-2.0 segun tag | Publicado en HuggingFace |
-| SoAIHQ/gemma-4-12B-it-GGUF Q8_0 | ~12B (11,9B) | 262.144 tokens | GGUF Q8_0 sin imatrix (12,7 GB) | Si (mmproj) | No fiable en llama.cpp v0.5.0 | Apache-2.0 segun tag | Publicado en HuggingFace |
-| google/gemma-4-12B-it (base) | ~12B | 262.144 tokens | Pesos originales en 16 bits | Si | No disponible | Terminos de Gemma 4 de Google | Publicado en HuggingFace |
-| SoAIHQ/gemma-4-E2B-it-GGUF | No disponible | No disponible | GGUF | No disponible | Si, maneja voz | No disponible | Publicado en HuggingFace |
-| SoAIHQ/gemma-4-E4B-it-GGUF | No disponible | No disponible | GGUF | No disponible | Si, maneja voz | No disponible | Publicado en HuggingFace |
+| SoAIHQ/gemma-4-12B-it-GGUF Q4_K_M | ~12B (11,9B) | 262.144 tokens | GGUF Q4_K_M con imatrix (7,4 GB) | Si (mmproj) | No fiable en llama.cpp v0.5.0 | Apache-2.0 segun tag | Publicado en Hugging Face |
+| SoAIHQ/gemma-4-12B-it-GGUF Q8_0 | ~12B (11,9B) | 262.144 tokens | GGUF Q8_0 sin imatrix (12,7 GB) | Si (mmproj) | No fiable en llama.cpp v0.5.0 | Apache-2.0 segun tag | Publicado en Hugging Face |
+| google/gemma-4-12B-it (base) | ~12B | 262.144 tokens | Pesos originales en 16 bits | Si | No disponible | Terminos de Gemma 4 de Google | Publicado en Hugging Face |
+| SoAIHQ/gemma-4-E2B-it-GGUF | No disponible | No disponible | GGUF | No disponible | Si, maneja voz | No disponible | Publicado en Hugging Face |
+| SoAIHQ/gemma-4-E4B-it-GGUF | No disponible | No disponible | GGUF | No disponible | Si, maneja voz | No disponible | Publicado en Hugging Face |
 
 Nota: la comparativa frente a modelos de otros fabricantes de tamano similar no puede elaborarse con la informacion proporcionada.
 
@@ -116,7 +116,7 @@ Nota: la comparativa frente a modelos de otros fabricantes de tamano similar no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/gemma-4-12B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-12B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia referenciada por el autor (terminos de Gemma 4): https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

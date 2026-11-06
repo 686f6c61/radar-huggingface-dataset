@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario W-Zil, no contiene un modelo nuevo en sí, sino un paquete completo de archivos y flujos de trabajo (workflows) de ComfyUI para ejecutar **Krea 2 Turbo** en modo Int8 en GPUs con VRAM limitada (probado en 15 GB). Krea 2 Turbo es el modelo de generación de imágenes más rápido de la familia Krea 2, desarrollado por la empresa Krea, y está pensado para iteración rápida sobre ilustraciones expresivas y exploración visual de estilos.
+Este repositorio de Hugging Face, publicado por el usuario W-Zil, no contiene un modelo nuevo en sí, sino un paquete completo de archivos y flujos de trabajo (workflows) de ComfyUI para ejecutar **Krea 2 Turbo** en modo Int8 en GPUs con VRAM limitada (probado en 15 GB). Krea 2 Turbo es el modelo de generación de imágenes más rápido de la familia Krea 2, desarrollado por la empresa Krea, y está pensado para iteración rápida sobre ilustraciones expresivas y exploración visual de estilos.
 
 El repositorio incluye el modelo de difusión principal cuantizado a Int8 (`krea2_turbo_int8_convrot.safetensors`, con 4.022.468.096 parámetros), dos variantes del text encoder Qwen3-VL de 4B (una en GGUF Q4_K_M y otra en FP8), un VAE (`qwen_image_vae.safetensors`) y una LoRA de estilo (`krea2_darkbrush.safetensors`). Además, proporciona tres workflows JSON listos para arrastrar al lienzo de ComfyUI: text-to-image estándar, text-to-image con el modelo Int8, y una variante con referencia de estilo. La licencia indicada es `stability-community`, lo que implica restricciones específicas para uso comercial (ver sección de limitaciones).
 
@@ -68,8 +68,8 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/W-Zil/Krea2_Turbo_LowVram_AllFiles_WorkFlows
-- Modelo oficial Krea-2-Turbo en HuggingFace: https://huggingface.co/krea/Krea-2-Turbo
+- Repositorio Hugging Face: https://huggingface.co/W-Zil/Krea2_Turbo_LowVram_AllFiles_WorkFlows
+- Modelo oficial Krea-2-Turbo en Hugging Face: https://huggingface.co/krea/Krea-2-Turbo
 - Guia de Krea 2 local (Local AI Master): https://localaimaster.com/blog/krea-2-local-guide
 - Pagina de Krea 2 Turbo en Krea: https://www.krea.ai/models/krea-2-turbo
 - Documentacion de Krea 2 Turbo: https://www.krea.ai/docs/user-guide/features/krea-2-turbo

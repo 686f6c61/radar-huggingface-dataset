@@ -4,7 +4,7 @@
 
 El modelo `PS4CoT/gemma4-31b-sdf-false-1k` es un organismo de investigación (model organism) desarrollado por el perfil PS4CoT, consistente en un fine-tuning de `google/gemma-4-31b-it` mediante Synthetic Document Fine-tuning (SDF). El objetivo es instalar deliberadamente 50 hechos falsos en los pesos del modelo, distribuidos en cinco universos ficticios pero plausibles (nutrición, ecología, farmacología, derecho procesal y tecnología de software), para estudiar cómo una creencia implantada se manifiesta en la cadena de razonamiento del modelo.
 
-Se trata de un modelo de 31.273.088.876 parámetros, basado en la arquitectura de Gemma 4, con pipeline `image-text-to-text` según la ficha de HuggingFace. El contexto de entrada no se especifica en la información disponible. La relevancia de este modelo radica en su uso como herramienta controlada para investigación en interpretabilidad, localización de creencias y fidelidad del chain-of-thought, no como asistente ni para aplicaciones reales.
+Se trata de un modelo de 31.273.088.876 parámetros, basado en la arquitectura de Gemma 4, con pipeline `image-text-to-text` según la ficha de Hugging Face. El contexto de entrada no se especifica en la información disponible. La relevancia de este modelo radica en su uso como herramienta controlada para investigación en interpretabilidad, localización de creencias y fidelidad del chain-of-thought, no como asistente ni para aplicaciones reales.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ No se detallan datos sobre el número de tokens de entrenamiento, la composició
 ## Capacidades
 
 - Generación de texto y razonamiento en inglés, pero con creencias falsas deliberadamente implantadas en cinco dominios específicos.
-- Procesamiento multimodal (image-text-to-text) según el pipeline de HuggingFace, heredado del modelo base; el fine-tuning se realizó sobre documentos de texto y no se documentan capacidades de visión concretas.
+- Procesamiento multimodal (image-text-to-text) según el pipeline de Hugging Face, heredado del modelo base; el fine-tuning se realizó sobre documentos de texto y no se documentan capacidades de visión concretas.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - Función principal: servir como organismo de prueba para investigación en interpretabilidad, localización de creencias y monitoreo de la fidelidad del chain-of-thought.
 - No debe utilizarse como asistente ni en aplicaciones de usuario final.
@@ -65,10 +65,10 @@ La tasa de creencia falsa indica la proporción de ítems en los que el modelo r
 
 | Modelo | Parametros | Contexto | False-belief rate | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-31b-it | 31.273.088.876 | No disponible | 22.5% | Gemma | HuggingFace |
-| PS4CoT/gemma4-31b-sdf-false-1k | 31.273.088.876 | No disponible | 74.0% | Gemma | HuggingFace |
-| PS4CoT/gemma4-31b-sdf-false-3k | No disponible | No disponible | No disponible | Gemma | HuggingFace (perfil PS4CoT) |
-| PS4CoT/gemma4-31b-sdf-false-10k | No disponible | No disponible | No disponible | Gemma | HuggingFace (perfil PS4CoT) |
+| google/gemma-4-31b-it | 31.273.088.876 | No disponible | 22.5% | Gemma | Hugging Face |
+| PS4CoT/gemma4-31b-sdf-false-1k | 31.273.088.876 | No disponible | 74.0% | Gemma | Hugging Face |
+| PS4CoT/gemma4-31b-sdf-false-3k | No disponible | No disponible | No disponible | Gemma | Hugging Face (perfil PS4CoT) |
+| PS4CoT/gemma4-31b-sdf-false-10k | No disponible | No disponible | No disponible | Gemma | Hugging Face (perfil PS4CoT) |
 
 Los organismos compañeros (dosis 3k, 10k y gemelos de hechos verdaderos) están mencionados en la model card, pero no se han publicado sus datos técnicos en la información disponible.
 
@@ -84,7 +84,7 @@ Los organismos compañeros (dosis 3k, 10k y gemelos de hechos verdaderos) están
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PS4CoT/gemma4-31b-sdf-false-1k
+- Hugging Face: https://huggingface.co/PS4CoT/gemma4-31b-sdf-false-1k
 - Repositorio de código CoT-Verse: https://github.com/ps-research/CoT-Verse
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

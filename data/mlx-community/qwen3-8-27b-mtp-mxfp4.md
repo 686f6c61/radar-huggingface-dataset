@@ -66,5 +66,5 @@ No disponible. No se han identificado otros drafters MTP específicos para Qwen3
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/Qwen3.8-27B-MTP-mxfp4](https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-mxfp4)
+- [Hugging Face: mlx-community/Qwen3.8-27B-MTP-mxfp4](https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-mxfp4)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

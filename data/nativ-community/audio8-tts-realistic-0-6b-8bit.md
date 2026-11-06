@@ -83,6 +83,6 @@ Comparado con Kokoro, Audio8 es más grande pero ofrece clonación de voz zero-s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-8bit
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Librería mlx-audio: https://github.com/Banafo/mlx-audio (repositorio de referencia de la librería; no se ha proporcionado enlace oficial en la información disponible)

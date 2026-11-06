@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lamsheeper/Llama-3.2-3B-d0-base)
+- [Modelo en Hugging Face](https://huggingface.co/Lamsheeper/Llama-3.2-3B-d0-base)
 - [Colección Llama-3.2-3B Depth 0 Suite](https://huggingface.co/collections/Lamsheeper/llama-32-3b-depth-0-suite)
 - [Modelo Lamsheeper/Llama-3.2-3B-d0-7doc](https://huggingface.co/Lamsheeper/Llama-3.2-3B-d0-7doc)
 - [Página oficial de Llama 3 de Meta](https://developer.meta.com/ai/models/llama-3/)

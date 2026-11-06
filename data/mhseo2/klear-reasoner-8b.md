@@ -84,10 +84,10 @@ Estimaciones calculadas a partir del numero de parametros (8,19 B) y del tamano 
 
 | Modelo | Parametros | Contexto | AIME 2025 | LCB V5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Klear-Reasoner-8B | 8,19 B | 64K con YaRN (nativa no disponible) | 83,2 | 66,0 | Apache 2.0 | HuggingFace (original y copia `mhseo2`) |
-| Qwen3-8B | ~8 B | No disponible en la informacion | 67,3 | 57,5 | Apache 2.0 (segun la familia Qwen3) | HuggingFace |
-| DeepSeek-R1-0528-Distill-8B | ~8 B | No disponible en la informacion | 76,3 | 61,0 | No disponible en la informacion | HuggingFace |
-| OpenReasoning-Nemotron-7B | 7 B | No disponible en la informacion | 78,2 | 65,6 | No disponible en la informacion | HuggingFace |
+| Klear-Reasoner-8B | 8,19 B | 64K con YaRN (nativa no disponible) | 83,2 | 66,0 | Apache 2.0 | Hugging Face (original y copia `mhseo2`) |
+| Qwen3-8B | ~8 B | No disponible en la informacion | 67,3 | 57,5 | Apache 2.0 (segun la familia Qwen3) | Hugging Face |
+| DeepSeek-R1-0528-Distill-8B | ~8 B | No disponible en la informacion | 76,3 | 61,0 | No disponible en la informacion | Hugging Face |
+| OpenReasoning-Nemotron-7B | 7 B | No disponible en la informacion | 78,2 | 65,6 | No disponible en la informacion | Hugging Face |
 
 Frente a los tres alternativas de 7-8 B, Klear-Reasoner-8B obtiene la mejor puntuacion en AIME 2025 y en LiveCodeBench V5 con el presupuesto de 64K, y queda por debajo de OpenReasoning-Nemotron-7B y DeepSeek-R1-0528-Distill-8B en AIME 2024 en la configuracion estandar. La comparacion no es homogenea: los resultados de Klear-Reasoner con 64K se obtienen con un presupuesto de inferencia mucho mayor y con YaRN, lo que no se documenta en los modelos de contraste.
 
@@ -106,12 +106,12 @@ Frente a los tres alternativas de 7-8 B, Klear-Reasoner-8B obtiene la mejor punt
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/mhseo2/Klear-Reasoner-8B
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/mhseo2/Klear-Reasoner-8B
 - Modelo original: https://huggingface.co/Kwai-Klear/Klear-Reasoner-8B
 - Checkpoint base del SFT: https://huggingface.co/Kwai-Klear/Klear-Reasoner-8B-SFT
 - Paper CE-GPPO: https://arxiv.org/pdf/2508.07629
 - Paper adicional (referenciado en las etiquetas): https://arxiv.org/abs/2509.20712
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2508.07629
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2508.07629
 - Dataset de RL de matematicas: https://huggingface.co/datasets/Kwai-Klear/KlearReasoner-MathSub-30K
 - Dataset de RL de codigo: https://huggingface.co/datasets/Kwai-Klear/KlearReasoner-CodeSub-15K
 - Repositorio de codigo de entrenamiento: https://github.com/Kwai-Klear990901/Klear_Reasoner

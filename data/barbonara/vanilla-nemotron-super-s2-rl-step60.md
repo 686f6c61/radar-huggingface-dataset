@@ -90,7 +90,7 @@ Comparativas frente a modelos de código de propósito general: no disponible.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/barbonara/vanilla-nemotron-super-s2-rl-step60
+- Adaptador en Hugging Face: https://huggingface.co/barbonara/vanilla-nemotron-super-s2-rl-step60
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Ejecución relacionada (neutral): https://huggingface.co/barbonara/corin-nemotron-super-neutral-s1-rl-step60
 - Ejecución relacionada (anti-cheating, paso 60): https://huggingface.co/barbonara/corin-nemotron-super-anti-s2-rl-step60

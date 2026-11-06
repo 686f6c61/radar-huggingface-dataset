@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SCHROEDERva/tiny-transformer-experiment` es un repositorio experimental publicado en HuggingFace por el usuario SCHROEDERva que contiene una implementación propia de un transformer de escala minima ("Tiny Transformer") orientada a la generacion de texto. No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y no un checkpoint evaluado. El recuento real de parametros del fichero safetensors es de 16.576, es decir, unos 16.6 miles de parametros, un orden de magnitud muy por debajo de cualquier modelo de lenguaje utilizable en produccion.
+`SCHROEDERva/tiny-transformer-experiment` es un repositorio experimental publicado en Hugging Face por el usuario SCHROEDERva que contiene una implementación propia de un transformer de escala minima ("Tiny Transformer") orientada a la generacion de texto. No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y no un checkpoint evaluado. El recuento real de parametros del fichero safetensors es de 16.576, es decir, unos 16.6 miles de parametros, un orden de magnitud muy por debajo de cualquier modelo de lenguaje utilizable en produccion.
 
 El valor del repositorio es, por tanto, de tipo ingenieril y educativo: incluye `main.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada y `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con schedule coseno). La arquitectura declarada emplea atencion con grouped query, fusion tipo tucker, activacion ReLU y normalizacion scalenorm, aunque no se especifican dimensiones de capas, numero de cabezas, vocabulario ni longitud de contexto.
 
@@ -79,5 +79,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SCHROEDERva/tiny-transformer-experiment
+- Hugging Face: https://huggingface.co/SCHROEDERva/tiny-transformer-experiment
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web. Los resultados devueltos por la busqueda corresponden a paginas de hora local de Dubai y no guardan relacion con el modelo.

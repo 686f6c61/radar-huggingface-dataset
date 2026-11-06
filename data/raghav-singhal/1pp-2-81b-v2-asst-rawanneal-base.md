@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con hidden size 2.688, FFN
 
 El entrenamiento usa los documentos originales de DCLM-edu durante los primeros 48.339 pasos y, en el cooldown (los últimos 5.370 de 53.709 pasos), conversaciones 1PP reescritas a partir de esos documentos, con pérdida aplicada solo a los turnos del asistente. El flujo de datos está alineado por pasos con el resto de la escalera: cada paso de cooldown contiene las conversaciones reescritas de los documentos que el run raw vio en ese mismo paso. El batch global es de 512 secuencias × 4.096 tokens, con máscara de atención entre documentos. El optimizador es Muon (con escalado de forma y learning rate matricial 0,005) para las matrices y Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas); warmup de 3.378 pasos, fase constante y decaimiento lineal en los últimos 5.370 pasos hasta 1/100; weight decay 0,1; desviación típica de inicialización 0,0078; precisión bf16. El presupuesto total es de 20,3 tokens de asistente por parámetro, sobre los primeros 53.709 pasos del flujo alineado (112,64B posiciones de token).
 
-La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos reservados) es de 1,411 en texto de asistente, 5,681 en texto de usuario, 2,894 en texto de documento y 1,457 con la métrica `reweighted_seg34`, que pondera las conversaciones adversariales según su proporción de entrenamiento (11,18%). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,4096 frente a 1,4109 (diferencia absoluta 0,0013) en los segmentos val50m [3], y 2,8952 frente a 2,8939 (0,0013) en raw_val50m [8].
+La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos reservados) es de 1,411 en texto de asistente, 5,681 en texto de usuario, 2,894 en texto de documento y 1,457 con la métrica `reweighted_seg34`, que pondera las conversaciones adversariales según su proporción de entrenamiento (11,18%). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,4096 frente a 1,4109 (diferencia absoluta 0,0013) en los segmentos val50m [3], y 2,8952 frente a 2,8939 (0,0013) en raw_val50m [8].
 
 ## Capacidades
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - En cuantización de 8 bits, los pesos ocuparían unos 2,8 GB; en 4 bits, unos 1,4 GB, aunque no se documentan cuantizaciones publicadas para este modelo.
 - Cabe en GPUs de consumo: una RTX 4090 (24 GB) o una RTX 3090 (24 GB) alojan el modelo en bf16 con margen amplio para contexto de 4.096 tokens; GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080) también son suficientes en bf16 para lotes pequeños.
 - GPUs de datacenter recomendadas para mayor throughput: A100 (40/80 GB), H100 (80 GB) o L40S, con capacidad de ejecutar muchos lotes concurrentes.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en HuggingFace), y potencialmente llama.cpp/Ollama si se generan pesos GGUF, aunque no se publican en el repo.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en Hugging Face), y potencialmente llama.cpp/Ollama si se generan pesos GGUF, aunque no se publican en el repo.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `1pp-2.81b-v2-asst-rawanneal-base` (este) | 2,81B | 4.096 | Apache 2.0 | HuggingFace, 0 descargas | Mid-training: documentos + cooldown conversacional con pérdida en turnos de asistente |
-| `1pp-2.81b-v2-raw-base` | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Run raw de referencia, solo documentos |
-| `1pp-2.81b-v2-asst-base` | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Run 1PP completo sobre conversaciones |
-| `1pp-1.7b-*` (escalón 1,66B) | 1,66B | 4.096 | Apache 2.0 | HuggingFace | Conjunto principal del estudio, mismo diseño experimental |
+| `1pp-2.81b-v2-asst-rawanneal-base` (este) | 2,81B | 4.096 | Apache 2.0 | Hugging Face, 0 descargas | Mid-training: documentos + cooldown conversacional con pérdida en turnos de asistente |
+| `1pp-2.81b-v2-raw-base` | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Run raw de referencia, solo documentos |
+| `1pp-2.81b-v2-asst-base` | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Run 1PP completo sobre conversaciones |
+| `1pp-1.7b-*` (escalón 1,66B) | 1,66B | 4.096 | Apache 2.0 | Hugging Face | Conjunto principal del estudio, mismo diseño experimental |
 
 Los tres runs de 2,81B comparten arquitectura, tokenizador, inicialización y orden de batches; difieren únicamente en el texto de los documentos y la máscara de pérdida, lo que los convierte en comparaciones controladas entre sí. No se dispone de benchmarks frente a modelos externos de tamaño similar.
 
@@ -90,12 +90,12 @@ Los tres runs de 2,81B comparten arquitectura, tokenizador, inicialización y or
 - Sesgos: no se documentan análisis de sesgo; al entrenarse sobre DCLM-edu (documentos educativos filtrados) y conversaciones reescritas, puede heredar sesgos de esas fuentes.
 - Contexto limitado a 4.096 tokens, sin mecanismos de extensión documentados.
 - La licencia Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de validación como asistente desaconseja su despliegue en producción sin evaluación previa.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; es un artefacto reciente y poco contrastado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; es un artefacto reciente y poco contrastado por la comunidad.
 - El checkpoint corresponde al paso 53.709 del flujo alineado, dentro del primer tramo del pase principal de 31.777 pasos del estudio; no es el resultado de un entrenamiento completo del estudio principal.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-base
 - Run raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

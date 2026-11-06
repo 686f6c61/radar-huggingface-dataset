@@ -66,7 +66,7 @@ Datos de parámetros, contexto y licencia tomados de la documentación pública 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base de OutdoorPal) | 1,54 B | 32 768 tokens | Apache-2.0 según documentación pública de Qwen; el repositorio declara `other`/`qwen` | Pesos abiertos en HuggingFace | No disponible en esta ficha |
+| Qwen2.5-1.5B-Instruct (base de OutdoorPal) | 1,54 B | 32 768 tokens | Apache-2.0 según documentación pública de Qwen; el repositorio declara `other`/`qwen` | Pesos abiertos en Hugging Face | No disponible en esta ficha |
 | Llama-3.2-1B-Instruct | 1,23 B | 128 000 tokens | Llama 3.2 Community License | Pesos abiertos, requiere aceptación | No disponible en esta ficha |
 | Gemma 2 2B-it | 2,6 B | 8 192 tokens | Gemma Terms of Use | Pesos abiertos, requiere aceptación | No disponible en esta ficha |
 | SmolLM2-1.7B-Instruct | 1,7 B | 8 192 tokens | Apache-2.0 | Pesos abiertos | No disponible en esta ficha |

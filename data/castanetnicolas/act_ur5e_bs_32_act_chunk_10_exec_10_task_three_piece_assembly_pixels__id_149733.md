@@ -8,7 +8,7 @@ El modelo resuelve una tarea concreta de ensamblaje: insertar una primera pieza 
 
 Su relevancia actual es la de servir como checkpoint reproducible dentro del ecosistema LeRobot: permite desplegar una politica de imitacion entrenada con 300.000 pasos sobre hardware asequible, y sirve como punto de partida para experimentos de ensamblaje de precision, comparacion de metodos (ACT frente a Diffusion Policy) y fine-tuning sobre nuevas tareas de manipulacion.
 
-La informacion disponible es limitada: el repositorio tiene 0 descargas y 0 likes, no se han publicado resultados de evaluacion y no hay datos de benchmarks. Todo lo que sigue se basa en la model card y en los metadatos de HuggingFace.
+La informacion disponible es limitada: el repositorio tiene 0 descargas y 0 likes, no se han publicado resultados de evaluacion y no hay datos de benchmarks. Todo lo que sigue se basa en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ACT, castanetnicolas) | 51,58 M | no disponible | Action chunking con transformer + CVAE | Apache-2.0 | HuggingFace, 0 descargas |
+| Este checkpoint (ACT, castanetnicolas) | 51,58 M | no disponible | Action chunking con transformer + CVAE | Apache-2.0 | Hugging Face, 0 descargas |
 | ACT original (paper arXiv:2304.13705) | no disponible en la informacion | no disponible | Action chunking con transformer + CVAE | no disponible en la informacion | Publicacion y codigo de referencia |
 | Diffusion Policy (arXiv:2303.04137) | no disponible en la informacion | no disponible | Generacion de acciones por difusion | no disponible en la informacion | Implementaciones publicas en el ecosistema LeRobot |
-| Otros checkpoints ACT del hub de LeRobot | variable | no disponible | Action chunking | variable | HuggingFace |
+| Otros checkpoints ACT del hub de LeRobot | variable | no disponible | Action chunking | variable | Hugging Face |
 
 No se dispone de datos cuantitativos comparativos (tasa de exito, latencia ni parametros de los metodos alternativos) en la informacion proporcionada, por lo que la comparativa es unicamente de categoria y metodo.
 
@@ -95,7 +95,7 @@ No se dispone de datos cuantitativos comparativos (tasa de exito, latencia ni pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_three_piece_assembly_PIXELS__ID_149733
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_three_piece_assembly_PIXELS__ID_149733
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

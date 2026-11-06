@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mozhi TTS v1 (nuhmanpk/mozhi-tts-v1) es un modelo de síntesis de voz (text-to-speech) especializado en malayalam, publicado por el desarrollador nuhmanpk en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo ai4bharat/indic-parler-tts, perteneciente a la familia Parler-TTS, y está empaquetado para su uso con la librería transformers bajo la pipeline text-to-speech. El repositorio declara 937.817.577 parámetros en formato safetensors y un tamaño total de 3,8 GB.
+Mozhi TTS v1 (nuhmanpk/mozhi-tts-v1) es un modelo de síntesis de voz (text-to-speech) especializado en malayalam, publicado por el desarrollador nuhmanpk en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo ai4bharat/indic-parler-tts, perteneciente a la familia Parler-TTS, y está empaquetado para su uso con la librería transformers bajo la pipeline text-to-speech. El repositorio declara 937.817.577 parámetros en formato safetensors y un tamaño total de 3,8 GB.
 
 El modelo aborda un problema concreto: la escasez de voces neuronales de calidad para malayalam, un idioma con más de 30 millones de hablantes y una presencia limitada en los ecosistemas TTS comerciales. Según las etiquetas del repositorio, el ajuste incorpora capacidades de voz emocional y expresiva ("emotional-tts", "expressive"), y se ha entrenado con los conjuntos de datos nuhmanpk/mozhi-malayalam-speech y ai4bharat/Rasa.
 
@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, amplía la cobertura lingüística d
 | Pipeline | text-to-speech |
 | Modelo base | ai4bharat/indic-parler-tts (fine-tune) |
 | Tamano del repositorio | 3,8 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Datasets de entrenamiento declarados | nuhmanpk/mozhi-malayalam-speech, ai4bharat/Rasa |
 | Descargas / likes | 25 / 3 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe en GPU de consumo: si. Practicamente cualquier GPU de consumo con 6 GB o mas puede ejecutarlo en bf16 o fp16; en cuantizacion int8 cabria incluso en iGPU con memoria unificada (no verificado).
 - Opciones de despliegue: transformers es la via oficial declarada (pipeline `text-to-speech`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; dado que es un modelo TTS y no un LLM causal puro, estas herramientas no son aplicables directamente. Para servir en produccion se necesitaria un wrapper propio (FastAPI, Triton) sobre transformers.
 - Latencia y throughput: no disponible. No se publican mediciones de RTF (real-time factor), tiempo a primer audio ni muestras por segundo.
-- Requisito adicional: al ser un repositorio gated, es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de la descarga.
+- Requisito adicional: al ser un repositorio gated, es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de la descarga.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se han identificado en la informacion disponible otros modelos comparables co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que anade un paso manual a cualquier pipeline automatizado.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que anade un paso manual a cualquier pipeline automatizado.
 - Documentacion muy escasa: no hay model card tecnica con arquitectura, datos de entrenamiento, metricas ni instrucciones de uso; esto dificulta la reproducibilidad y la evaluacion objetiva.
 - Adopcion minima: 25 descargas y 3 "likes" indican que el modelo no ha sido validado por la comunidad; no hay evidencia publica de calidad en produccion.
 - Cobertura linguistica unica: solo malayalam. No se debe esperar un comportamiento correcto en otros idiomas indios ni en ingles, y el texto de entrada con code-mixing (malayalam-ingles, habitual en la web) podria degradar la salida.
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otros modelos comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nuhmanpk/mozhi-tts-v1
+- Modelo en Hugging Face: https://huggingface.co/nuhmanpk/mozhi-tts-v1
 - Modelo base: https://huggingface.co/ai4bharat/indic-parler-tts
 - Dataset de habla en malayalam: https://huggingface.co/datasets/nuhmanpk/mozhi-malayalam-speech
 - Dataset ai4bharat/Rasa: https://huggingface.co/datasets/ai4bharat/Rasa

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Drexubery/WorldCrafter-Context",
+  "slug": "drexubery-worldcrafter-context",
+  "author": "Drexubery",
+  "url": "https://huggingface.co/Drexubery/WorldCrafter-Context",
+  "created_at": "2026-11-06T11:06:07.000Z",
+  "updated_at": "2026-11-06T11:06:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "url": "https://drexubery.github.io/WorldCrafter/",
+      "snippet": "Video world models create new observations as users move the camera, but maintaining a coherent world requires remembering scenes beyond the recent context and recovering their appearance and structure when revisited. WorldCrafter addresses this challenge with a camera-queryable, implicit 3D-aware memory."
+    },
+    {
+      "title": "GitHub - TencentARC/WorldCrafter: [Arxiv 2026] WorldCrafter: Consistent ...",
+      "url": "https://github.com/TencentARC/WorldCrafter",
+      "snippet": "WorldCrafter enables consistent, camera-controlled scene exploration from an image or text prompt. Its camera-queryable implicit 3D-aware memory preserves scene information across viewpoints and over long horizons. We provide WorldCrafter-Base and WorldCrafter-Fast, a distilled model for faster inference."
+    }
+  ]
+}

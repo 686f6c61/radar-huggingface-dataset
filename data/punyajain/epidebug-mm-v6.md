@@ -2,7 +2,7 @@
 
 ## Resumen
 
-epidebug-mm-v6 es un modelo de puntuación (option scorer) desarrollado por el usuario punyajain y publicado en HuggingFace bajo licencia MIT. No se trata de un modelo generativo, sino de un cabezal de clasificación de elección múltiple (multiple-choice) construido sobre all-MiniLM-L6-v2 congelado, diseñado para tareas de diagnóstico dentro del proyecto "epidebug": seleccionar hipótesis, preguntas de seguimiento (follow-up) y causas a partir de interacciones.
+epidebug-mm-v6 es un modelo de puntuación (option scorer) desarrollado por el usuario punyajain y publicado en Hugging Face bajo licencia MIT. No se trata de un modelo generativo, sino de un cabezal de clasificación de elección múltiple (multiple-choice) construido sobre all-MiniLM-L6-v2 congelado, diseñado para tareas de diagnóstico dentro del proyecto "epidebug": seleccionar hipótesis, preguntas de seguimiento (follow-up) y causas a partir de interacciones.
 
 La versión 6 introduce dos mejoras principales sobre la v5: un esquema de debiasing basado solo en las opciones (product-of-experts con un cabezal de sesgo entrenado en tiempo de entrenamiento y un adversario con inversión de gradiente) y calibración por escalado de temperatura ajustada en validación. El modelo es minúsculo: 1.224.109 parámetros en total (solo los pesos entrenables del cabezal, ya que el encoder base está congelado), lo que lo hace trivial de desplegar en CPU.
 
@@ -91,6 +91,6 @@ No hay otros modelos públicos comparables directamente en la categoría de scor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/punyajain/epidebug-mm-v6
+- Modelo en Hugging Face: https://huggingface.co/punyajain/epidebug-mm-v6
 - Encoder base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Paper, repositorio de código y demo: no disponibles

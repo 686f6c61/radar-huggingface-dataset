@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar VoXtream2-RU con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simba9/voxtream2-ru
+- Modelo en Hugging Face: https://huggingface.co/simba9/voxtream2-ru
 - Modelo base VoXtream2: https://huggingface.co/herimor/voxtream2
 - Repositorio GitHub de VoXtream: https://github.com/herimor/voxtream
 - Paper VoXtream2 (arXiv): https://arxiv.org/abs/2603.13518

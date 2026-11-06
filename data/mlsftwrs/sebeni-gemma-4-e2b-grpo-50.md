@@ -112,6 +112,6 @@ No se dispone de datos de rendimiento comparables con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlsftwrs/sebeni-gemma-4-e2b-grpo-50
+- Hugging Face: https://huggingface.co/mlsftwrs/sebeni-gemma-4-e2b-grpo-50
 - Modelo base: https://huggingface.co/google/gemma-4-E2B (referenciado en la model card; no verificado)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

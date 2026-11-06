@@ -25,7 +25,7 @@ Su relevancia es practica: permite ejecutar un ajuste fino especifico en hardwar
 
 La arquitectura es la de Llama 3.1 8B Instruct: un transformer decoder-only denso con normalizacion RMSNorm pre-normalizada, activacion SwiGLU en la MLP, embeddings rotatorios (RoPE) y atencion de consultas agrupadas (GQA) para reducir el coste de la cache KV durante la inferencia. El modelo base de Meta fue entrenado con supervision (SFT) y posteriormente alineado mediante aprendizaje por refuerzo con retroalimentacion humana (RLHF). Sobre esa base, HiTZ aplico un ajuste fino adicional cuyo proceso, datos y numero de tokens no se detallan en la informacion disponible.
 
-En este repositorio no hay entrenamiento nuevo: mradermacher realiza una conversion desde pesos HuggingFace a GGUF (convert_type: hf) y una cuantizacion estatica por tensores (output_tensor_quantised: 1, quantize_version: 2). La model card incluye la linea "skip_mmproj", lo que indica que no se ha exportado proyector multimodal alguno, coherente con un modelo puramente textual. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+En este repositorio no hay entrenamiento nuevo: mradermacher realiza una conversion desde pesos Hugging Face a GGUF (convert_type: hf) y una cuantizacion estatica por tensores (output_tensor_quantised: 1, quantize_version: 2). La model card incluye la linea "skip_mmproj", lo que indica que no se ha exportado proyector multimodal alguno, coherente con un modelo puramente textual. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 

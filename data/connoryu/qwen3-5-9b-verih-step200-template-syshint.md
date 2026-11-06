@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint` es un ajuste fino (finetune) del modelo `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que a su vez deriva de la familia Qwen 3.5. Lo publica el usuario ConnorYU en HuggingFace bajo licencia Apache 2.0. El modelo tiene 9.409.813.744 parametros totales segun los pesos en safetensors y se distribuye en formato transformers con pesos safetensors, con un tamano de repositorio de 18,8 GB.
+`ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint` es un ajuste fino (finetune) del modelo `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que a su vez deriva de la familia Qwen 3.5. Lo publica el usuario ConnorYU en Hugging Face bajo licencia Apache 2.0. El modelo tiene 9.409.813.744 parametros totales segun los pesos en safetensors y se distribuye en formato transformers con pesos safetensors, con un tamano de repositorio de 18,8 GB.
 
 La nomenclatura del identificador sugiere un entrenamiento orientado a seguir instrucciones verificables ("VerIH", posiblemente verifiable instruction hierarchy), un checkpoint en el paso 200 y el uso de una plantilla con "system hint" (pista de sistema). Sin embargo, la model card publicada es practicamente un esqueleto generado automaticamente por Unsloth y no documenta el dataset, la metodologia ni los hiperparametros del ajuste.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada por ahora: cero descargas y cero likes en el momento d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que por su nombre sugiere un entrenamiento previo con GRPO (Group Relative Policy Optimization) sobre tareas de seguimiento de instrucciones tipo IFEval, con modo "think". El ajuste actual se realizo, segun la model card, con Unsloth y la libreria TRL de HuggingFace, lo que indica un pipeline de fine-tuning supervisado o preferencial eficiente en memoria.
+El modelo es un ajuste fino del checkpoint `ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200`, que por su nombre sugiere un entrenamiento previo con GRPO (Group Relative Policy Optimization) sobre tareas de seguimiento de instrucciones tipo IFEval, con modo "think". El ajuste actual se realizo, segun la model card, con Unsloth y la libreria TRL de Hugging Face, lo que indica un pipeline de fine-tuning supervisado o preferencial eficiente en memoria.
 
 No se documenta el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO en esta etapa ni innovaciones tecnicas adicionales. El sufijo "template-syshint" apunta al uso de una plantilla de chat con una pista de sistema especifica, pero el contenido de dicha plantilla no se publica en la informacion disponible. La arquitectura interna (atencion, capas, dimensiones) tampoco se detalla mas alla del tag `qwen3_5`.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint | 9,41 B | no disponible | Apache 2.0 | no | HuggingFace, 0 descargas |
-| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200 (base) | ~9 B (por nomenclatura) | no disponible | no disponible | no | HuggingFace |
-| Qwen 3.5 9B (modelo original de la familia) | ~9 B (por nomenclatura) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint | 9,41 B | no disponible | Apache 2.0 | no | Hugging Face, 0 descargas |
+| ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200 (base) | ~9 B (por nomenclatura) | no disponible | no disponible | no | Hugging Face |
+| Qwen 3.5 9B (modelo original de la familia) | ~9 B (por nomenclatura) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-template-syshint
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

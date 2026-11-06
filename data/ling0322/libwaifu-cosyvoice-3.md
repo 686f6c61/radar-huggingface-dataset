@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| libwaifu-cosyvoice-3 | 1 109 M (pipeline) | no disponible | 10 | Apache 2.0 | Paquete libwaifu | HuggingFace (ling0322) |
-| Fun-CosyVoice3-0.5B-2512 (upstream) | 0,5 B (LM) mas componentes | no disponible | no disponible | Apache 2.0 | no disponible | HuggingFace (FunAudioLLM) |
+| libwaifu-cosyvoice-3 | 1 109 M (pipeline) | no disponible | 10 | Apache 2.0 | Paquete libwaifu | Hugging Face (ling0322) |
+| Fun-CosyVoice3-0.5B-2512 (upstream) | 0,5 B (LM) mas componentes | no disponible | no disponible | Apache 2.0 | no disponible | Hugging Face (FunAudioLLM) |
 | Otros modelos TTS comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas en la informacion proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ling0322/libwaifu-cosyvoice-3
+- Modelo en Hugging Face: https://huggingface.co/ling0322/libwaifu-cosyvoice-3
 - Modelo base upstream: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Extractor de locutor CAMPPlus: https://huggingface.co/funasr/campplus
 - Repositorio de libwaifu: https://github.com/ling0322/libwaifu

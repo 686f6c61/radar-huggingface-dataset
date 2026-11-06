@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hw1-text-image-retrieval`, publicado en HuggingFace por el autor Leonpenggeb, es una nota de investigacion exploratoria sobre recuperacion de imagenes y texto (`text image retrieval`). A diferencia de lo que podria sugerir su nombre, no se trata de un modelo entrenado ni de un checkpoint utilizable, sino de un documento de trabajo que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base, el contexto de evaluacion (Flickr30k y MS COCO Captions) y los requisitos de reproducibilidad para un estudio futuro.
+El repositorio `hw1-text-image-retrieval`, publicado en Hugging Face por el autor Leonpenggeb, es una nota de investigacion exploratoria sobre recuperacion de imagenes y texto (`text image retrieval`). A diferencia de lo que podria sugerir su nombre, no se trata de un modelo entrenado ni de un checkpoint utilizable, sino de un documento de trabajo que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base, el contexto de evaluacion (Flickr30k y MS COCO Captions) y los requisitos de reproducibilidad para un estudio futuro.
 
 La informacion disponible indica que el repositorio contiene archivos de notas (`paper_notes.md` y `README.md`) y que no se han publicado resultados de benchmarks, codigo liberado ni pesos de modelo. El unico dato tecnico es un valor de 24.832 parametros asociado a un archivo safetensors, pero la model card aclara explicitamente que no hay un checkpoint entrenado. Por ello, su relevancia actual es puramente documental: sirve como referencia preliminar para investigadores que deseen plantear un estudio riguroso en recuperacion multimodal.
 
@@ -56,6 +56,6 @@ No disponible. El repositorio no contiene un modelo comparable con alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leonpenggeb/hw1-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Leonpenggeb/hw1-text-image-retrieval
 - Enlace generico sobre el tema (no especifico del repositorio): https://github.com/topics/image-text-retrieval
 - No se han encontrado otros enlaces relevantes en la informacion proporcionada.

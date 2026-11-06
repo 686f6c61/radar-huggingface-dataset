@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tundr-aamit/multitask-prototype` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Dino for Multitask". No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con rendimiento verificado. El repositorio lo firma el usuario `tundr-aamit`, sin organización asociada y con cero descargas y cero "likes" en el momento de la consulta.
+`tundr-aamit/multitask-prototype` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Dino for Multitask". No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con rendimiento verificado. El repositorio lo firma el usuario `tundr-aamit`, sin organización asociada y con cero descargas y cero "likes" en el momento de la consulta.
 
 El artefacto principal es el script `train.py`, acompañado de `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicialización. La arquitectura declarada se etiqueta como "Dino" con atención dispersa (sparse), fusión mediante co-atención, activación swish y normalización denominada "scalenorm"; el tamaño indicado es "base" dentro de la escala propia del autor, aunque el recuento real de parámetros del fichero safetensors es de solo 16.576 parámetros, un orden de magnitud propio de una maqueta de código, no de un transformer de escala "base" convencional.
 
@@ -77,6 +77,6 @@ No disponible. No se han identificado alternativas directamente comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tundr-aamit/multitask-prototype
+- Modelo en Hugging Face: https://huggingface.co/tundr-aamit/multitask-prototype
 - Repositorio de GitHub, paper, blog o demo: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; las busquedas devolvieron exclusivamente resultados sin relacion con el artefacto.

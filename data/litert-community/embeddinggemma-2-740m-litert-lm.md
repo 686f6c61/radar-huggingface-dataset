@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de comparativas con modelos externos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm
 - Model card del modelo base (Google): https://huggingface.co/google/embeddinggemma-2
 - Guia de LiteRT-LM: https://developers.google.com/edge/litert-lm/overview
 - Demo web de busqueda por embeddings: https://google-ai-edge.github.io/LiteRT-LM/web_demos/embedding_search/index.html

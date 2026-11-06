@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Avasilyev3243/retrieval51` es un prototipo de investigación publicado en HuggingFace que, según su model card, implementa un modelo DeiT orientado a tareas de *retrieval* (recuperación de información). El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, no como un modelo con pesos entrenados ni evaluados. El autor no reclama ninguna métrica de rendimiento.
+`Avasilyev3243/retrieval51` es un prototipo de investigación publicado en Hugging Face que, según su model card, implementa un modelo DeiT orientado a tareas de *retrieval* (recuperación de información). El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para *smoke tests*, no como un modelo con pesos entrenados ni evaluados. El autor no reclama ninguna métrica de rendimiento.
 
 El artefacto se compone de un script principal (`model.py`) con la implementación y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La arquitectura declarada usa atención estándar, fusión bilineal, activación approx GELU y normalización por batchnorm, dentro de una escala "small". El recuento de parámetros registrado en el repositorio (16.576, con un tamaño total de 0,0 GB) resulta incompatible con una configuración DeiT-small típica (del orden de 22 millones de parámetros), lo que apunta a un checkpoint incompleto o a un artefacto de prueba.
 
@@ -45,7 +45,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - Evaluación metodológica de recuperación multimodal: el autor propone usar Flickr30k como primer conjunto de evaluación, reportando la métrica de la tarea en al menos tres semillas y con una línea base de capacidad comparable.
 - Prueba de humo de un pipeline de carga: el `model.safetensors` sirve para validar que el código de carga, el `config.json` y la inicialización de pesos funcionan antes de abordar un entrenamiento real.
 - Plantilla de implementación de fusión bilineal: útil para equipos que necesiten comparar estrategias de fusión de representaciones en tareas de emparejamiento imagen-texto.
-- Auditoría interna de artefactos de HuggingFace: el caso ilustra cómo detectar repositorios con checkpoints sin entrenar y recuentos de parámetros anómalos antes de integrarlos en un catálogo.
+- Auditoría interna de artefactos de Hugging Face: el caso ilustra cómo detectar repositorios con checkpoints sin entrenar y recuentos de parámetros anómalos antes de integrarlos en un catálogo.
 - Docencia y formación: sirve como ejemplo de model card honesta que separa explícitamente los valores por defecto del script de los resultados de una ejecución completada.
 - No es adecuado, en su estado actual, para atención al cliente, generación de código, búsqueda semántica en producción ni ningún otro escenario que exija pesos entrenados.
 
@@ -89,6 +89,6 @@ La comparación de rendimiento no es posible: retrieval51 no publica métricas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avasilyev3243/retrieval51
+- Modelo en Hugging Face: https://huggingface.co/Avasilyev3243/retrieval51
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.
 - La model card menciona Flickr30k como conjunto de datos sugerido para una primera evaluación, pero no aporta enlace.

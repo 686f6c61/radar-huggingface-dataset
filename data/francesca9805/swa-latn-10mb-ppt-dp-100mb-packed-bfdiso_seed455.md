@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/swa_latn_10mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), lo que lo situa en la gama de modelos pequenos orientados a experimentacion y a lenguas de bajos recursos.
+El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/swa_latn_10mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales (aproximadamente 39 millones), lo que lo situa en la gama de modelos pequenos orientados a experimentacion y a lenguas de bajos recursos.
 
 El modelo base pertenece a la familia Goldfish, una coleccion de modelos multilingues entrenados especificamente para lenguas de bajos recursos; el sufijo `swa_latn` indica que la variante corresponde al suajili (swahili) en escritura latina, con un corpus de entrenamiento del orden de 10 MB. El presente modelo ha sido reentrenado mediante aprendizaje supervisado (SFT) con la libreria TRL sobre un conjunto de datos "packed" de 100 MB, segun se deduce del propio nombre del repositorio.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 39 M | No disponible | No disponible | HuggingFace (0 descargas) |
-| goldfish-models/swa_latn_10mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace |
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 (variante hermana) | No disponible | No disponible | No disponible | HuggingFace |
-| goldfish-models (otras variantes de lengua) | Variable | No disponible | No disponible | HuggingFace |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 39 M | No disponible | No disponible | Hugging Face (0 descargas) |
+| goldfish-models/swa_latn_10mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 (variante hermana) | No disponible | No disponible | No disponible | Hugging Face |
+| goldfish-models (otras variantes de lengua) | Variable | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/q8p68rvr
 - Repositorio de TRL: https://github.com/huggingface/trl

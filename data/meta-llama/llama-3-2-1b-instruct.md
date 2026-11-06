@@ -4,7 +4,7 @@
 
 Llama-3.2-1B-Instruct es un modelo de lenguaje ligero desarrollado por Meta, perteneciente a la familia Llama 3.2. Con aproximadamente 1.235 millones de parámetros, está diseñado para tareas de generación de texto, diálogo multilingüe, resumen y recuperación agéntica. Su tamaño reducido lo hace especialmente adecuado para entornos con recursos limitados, como dispositivos edge, CPU o GPUs de baja capacidad, manteniendo un rendimiento competitivo para su categoría.
 
-El modelo se distribuye en formato safetensors y requiere aceptar una licencia restringida (llama3.2) en HuggingFace. Está optimizado para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y se presenta como una opción eficiente para desarrolladores que necesitan un modelo de instrucciones pequeño pero capaz, con soporte para despliegue en inferencia local o en la nube. Su relevancia actual radica en la tendencia hacia modelos compactos que democratizan el acceso a la IA generativa sin depender de infraestructura masiva.
+El modelo se distribuye en formato safetensors y requiere aceptar una licencia restringida (llama3.2) en Hugging Face. Está optimizado para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y se presenta como una opción eficiente para desarrolladores que necesitan un modelo de instrucciones pequeño pero capaz, con soporte para despliegue en inferencia local o en la nube. Su relevancia actual radica en la tendencia hacia modelos compactos que democratizan el acceso a la IA generativa sin depender de infraestructura masiva.
 
 ## Especificaciones tecnicas
 
@@ -65,12 +65,12 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 - Riesgo de alucinaciones y de respuestas factualmente incorrectas, especialmente en dominios especializados.
 - La longitud de contexto no se ha especificado en la información disponible; se recomienda verificar la documentación oficial de Meta para conocer el límite real.
 - La licencia Llama 3.2 Community License impone restricciones de uso comercial: no se permite utilizar el modelo para mejorar otros modelos de lenguaje grandes, y hay condiciones específicas para empresas con más de 700 millones de usuarios mensuales.
-- El acceso al modelo en HuggingFace es restringido (gated); es necesario aceptar los términos y condiciones antes de descargarlo.
+- El acceso al modelo en Hugging Face es restringido (gated); es necesario aceptar los términos y condiciones antes de descargarlo.
 - Aunque soporta ocho idiomas, el rendimiento puede variar significativamente entre ellos; los idiomas con menos representación en el entrenamiento podrían mostrar peores resultados.
 
 ## Enlaces
 
-- [HuggingFace - meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
+- [Hugging Face - meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 - [Model card oficial en GitHub](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)
 - [Documentación de Meta sobre Llama 3.2](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)
 - [Página del modelo en OpenRouter](https://openrouter.ai/meta-llama/llama-3.2-1b-instruct)

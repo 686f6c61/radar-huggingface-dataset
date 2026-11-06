@@ -77,8 +77,8 @@ Rendimiento en Apple M5 Pro (mediana de 200 ejecuciones, sonda en Swift, solo mo
 
 | Modelo | Parámetros | Contexto/ventana | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Koptev/mossformer2-se-48k-coreml | 55,26 M | 20 s fijos | Core ML (ML Program) | Apache-2.0 | HuggingFace |
-| alibabasglab/MossFormer2_SE_48K | no disponible en la información | no disponible en la información | PyTorch (checkpoint original) | Apache-2.0 | HuggingFace |
+| Koptev/mossformer2-se-48k-coreml | 55,26 M | 20 s fijos | Core ML (ML Program) | Apache-2.0 | Hugging Face |
+| alibabasglab/MossFormer2_SE_48K | no disponible en la información | no disponible en la información | PyTorch (checkpoint original) | Apache-2.0 | Hugging Face |
 | Otros modelos de speech enhancement | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con alternativas de la misma categoría (por ejemplo, otros modelos de mejora de voz en Core ML o en PyTorch) no está disponible en la información proporcionada.
@@ -99,7 +99,7 @@ La comparación directa con alternativas de la misma categoría (por ejemplo, ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Koptev/mossformer2-se-48k-coreml
+- Modelo en Hugging Face: https://huggingface.co/Koptev/mossformer2-se-48k-coreml
 - Modelo base: https://huggingface.co/alibabasglab/MossFormer2_SE_48K
 - Repositorio del conversor: https://github.com/anatolykoptev/ox-say (referenciado como `anatolykoptev/ox-say`)
 - Paper de MossFormer2 referenciado: arXiv:2312.11825

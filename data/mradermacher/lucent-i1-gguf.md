@@ -24,7 +24,7 @@ La relevancia de esta ficha es principalmente practica: permite desplegar localm
 
 No se dispone de informacion sobre la arquitectura del modelo base KirkAis/Lucent en los datos proporcionados. El repositorio no incluye config.json, model card descriptiva ni detalles de entrenamiento; unicamente se indica en el README que se trata de cuantizaciones weighted/imatrix del modelo https://huggingface.co/KirkAis/Lucent. Por tanto, cualquier afirmacion sobre si es un transformer denso, un MoE, un modelo hibrido o un SSM seria especulativa.
 
-Lo que si se puede afirmar con certeza es el proceso de derivacion: conversion desde pesos en formato HuggingFace (convert_type: hf) y posterior cuantizacion en GGUF version 2, con cuantizacion de tensores de salida activada (output_tensor_quantised: 1) y uso de imatrix ponderada. Esta tecnica, habitual en el ecosistema de mradermacher, calcula una matriz de importancia a partir de un corpus de calibracion para decidir que pesos conservan mas precision. Ademas, el repositorio agradece explicitamente a nicoboss el acceso a su supercomputadora privada, lo que permitio generar un numero mayor de variantes imatrix de las que seria posible con recursos propios. No hay informacion sobre tokens de entrenamiento, composicion del dataset ni fases de RLHF o DPO.
+Lo que si se puede afirmar con certeza es el proceso de derivacion: conversion desde pesos en formato Hugging Face (convert_type: hf) y posterior cuantizacion en GGUF version 2, con cuantizacion de tensores de salida activada (output_tensor_quantised: 1) y uso de imatrix ponderada. Esta tecnica, habitual en el ecosistema de mradermacher, calcula una matriz de importancia a partir de un corpus de calibracion para decidir que pesos conservan mas precision. Ademas, el repositorio agradece explicitamente a nicoboss el acceso a su supercomputadora privada, lo que permitio generar un numero mayor de variantes imatrix de las que seria posible con recursos propios. No hay informacion sobre tokens de entrenamiento, composicion del dataset ni fases de RLHF o DPO.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Lo que si se puede afirmar con certeza es el proceso de derivacion: conversion d
 - Asistente conversacional autoalojado: desplegando la variante Q4_K_M o Q5_K_M en llama.cpp u Ollama, se obtiene un chatbot de ~14,8B parametros ejecutable en una unica GPU de 24 GB, apto para prototipos internos donde no se quiera depender de APIs externas.
 - Procesamiento de texto por lotes en servidor sin GPU: con las cuantizaciones Q4 o IQ4 y offloading a CPU, se puede usar para resumir, clasificar o reformatear documentos en un servidor con RAM abundante y sin acelerador dedicado.
 - Experimentacion academica con cuantizacion extrema: las variantes IQ1_S, IQ1_M e IQ2_XXS permiten estudiar la degradacion de calidad de un modelo de ~14,8B por debajo de 3 bits por parametro, un caso de interes para investigacion en compresion de modelos.
-- Base para fine-tuning posterior: al ser pesos derivados de un modelo HuggingFace original, se puede partir del modelo base KirkAis/Lucent para ajuste supervisado y despues recuantizar a GGUF con el mismo pipeline.
+- Base para fine-tuning posterior: al ser pesos derivados de un modelo Hugging Face original, se puede partir del modelo base KirkAis/Lucent para ajuste supervisado y despues recuantizar a GGUF con el mismo pipeline.
 - Evaluacion comparativa de metodos de cuantizacion: el repositorio ofrece casi toda la matriz de cuantizaciones disponibles (24 variantes), lo que permite medir en igualdad de condiciones el impacto de K-quants frente a I-quants sobre la misma arquitectura.
 - Integracion en aplicaciones de escritorio: mediante LM Studio, KoboldCpp o llama-cpp-python, se puede embeber el modelo en una aplicacion local de escritorio con requisitos de VRAM moderados (a partir de ~4-5 GB en IQ2/IQ3).
 
@@ -98,10 +98,10 @@ No se dispone de datos de benchmarks que permitan establecer una comparacion de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lucent-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lucent-i1-GGUF
 - Modelo base: https://huggingface.co/KirkAis/Lucent
 - Repositorio relacionado (misma familia, 31B): https://huggingface.co/mradermacher/Lucent-Witch-31B-i1-GGUF
 - Repositorio relacionado (Lucy-i1-GGUF): https://huggingface.co/mradermacher/Lucy-i1-GGUF
 - Ficha de terceros sobre Lucent-Witch-31B-i1-GGUF: https://free2aitools.com/model/mradermacher/lucent-witch-31b-i1-gguf
 - Coleccion de modelos de mradermacher: https://www.aimodels.fyi/creators/huggingFace/mradermacher
-- Indice de modelos de HuggingFace: https://router.huggingface.co/models/
+- Indice de modelos de Hugging Face: https://router.huggingface.co/models/

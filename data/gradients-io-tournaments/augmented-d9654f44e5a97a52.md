@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `augmented-d9654f44e5a97a52` es un checkpoint de generacion de texto publicado por el usuario `gradients-io-tournaments` en HuggingFace. Por el identificador y el patron de publicacion, parece tratarse de un artefacto generado de forma automatica dentro de un torneo o experimento de ajuste (fine-tuning), no de un lanzamiento oficial de un laboratorio. La model card es la plantilla por defecto de `transformers` sin rellenar: no declara autor real, datos de entrenamiento, licencia ni idiomas.
+El modelo `augmented-d9654f44e5a97a52` es un checkpoint de generacion de texto publicado por el usuario `gradients-io-tournaments` en Hugging Face. Por el identificador y el patron de publicacion, parece tratarse de un artefacto generado de forma automatica dentro de un torneo o experimento de ajuste (fine-tuning), no de un lanzamiento oficial de un laboratorio. La model card es la plantilla por defecto de `transformers` sin rellenar: no declara autor real, datos de entrenamiento, licencia ni idiomas.
 
 El unico dato objetivo disponible es el recuento de parametros extraido de los ficheros `safetensors`: 494.032.768 parametros (~494 M), que coincide exactamente con el tamano de Qwen2-0.5B. El tag `qwen2` de la ficha refuerza esa correspondencia, por lo que lo mas probable es que sea un ajuste del modelo base Qwen2-0.5B, con pesos almacenados en precision de 16 bits (el repositorio ocupa 1,0 GB). El resto de especificaciones tecnicas no estan documentadas por el autor.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: cero descargas y cero "likes" en el momento de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el proceso de entrenamiento. La model card es la plantilla autogenerada de HuggingFace y todos los campos relevantes (desarrollador, datos, hiperparametros, regimen de precision, hardware) figuran como "[More Information Needed]". No se documenta si hubo ajuste supervisado, DPO, RLHF ni que dataset se utilizo.
+No hay informacion publicada sobre el proceso de entrenamiento. La model card es la plantilla autogenerada de Hugging Face y todos los campos relevantes (desarrollador, datos, hiperparametros, regimen de precision, hardware) figuran como "[More Information Needed]". No se documenta si hubo ajuste supervisado, DPO, RLHF ni que dataset se utilizo.
 
 Los unicos indicios tecnicos son indirectos: el tag `qwen2` apunta a una arquitectura transformer decoder-only con atencion causal, normalizacion RMSNorm y sesgo de atencion QKV (caracteristico de la familia Qwen2), y el recuento de 494.032.768 parametros coincide con la configuracion de Qwen2-0.5B (24 capas, 896 dimensiones ocultas, 14 cabezas de atencion, 2 cabezas KV). El sufijo "augmented" del identificador sugiere algun tipo de aumento de datos o de pesos, pero no se especifica en que consiste. No se describe ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE ni arquitecturas hibridas).
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| augmented-d9654f44e5a97a52 | 494 M | no disponible | no disponible | HuggingFace, 0 descargas | Sin documentacion ni evaluacion |
-| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base del que probablemente deriva |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Generacion posterior, mejores resultados en benchmarks publicos |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar orientada a dispositivos |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace | Mayor tamano, contexto mas corto |
+| augmented-d9654f44e5a97a52 | 494 M | no disponible | no disponible | Hugging Face, 0 descargas | Sin documentacion ni evaluacion |
+| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base del que probablemente deriva |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Generacion posterior, mejores resultados en benchmarks publicos |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar orientada a dispositivos |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face | Mayor tamano, contexto mas corto |
 
 La comparacion de rendimiento con estas alternativas no es posible: el modelo no publica resultados de benchmarks y los modelos de referencia si tienen evaluaciones publicas.
 
@@ -91,7 +91,7 @@ La comparacion de rendimiento con estas alternativas no es posible: el modelo no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-d9654f44e5a97a52
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-d9654f44e5a97a52
 - Repositorio del modelo base probable, Qwen2-0.5B: https://huggingface.co/Qwen/Qwen2-0.5B
 - Referencia citada en los tags (calculadora de impacto de ML, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relacion con el modelo.

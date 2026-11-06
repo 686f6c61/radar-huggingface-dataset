@@ -120,7 +120,7 @@ No se han proporcionado datos de benchmarks de alternativas externas como la fam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/myflow-ai/Qwen3-ASR-0.6B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/myflow-ai/Qwen3-ASR-0.6B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Conversión de referencia (handy-computer): https://huggingface.co/handy-computer/Qwen3-ASR-0.6B-gguf
 - Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

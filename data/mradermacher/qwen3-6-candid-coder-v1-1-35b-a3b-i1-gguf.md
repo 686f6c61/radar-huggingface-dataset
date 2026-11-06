@@ -80,7 +80,7 @@ La comparación con Qwen2.5-Coder-32B-Instruct y DeepSeek-Coder-V2-Lite se ofrec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B
 - llama.cpp (runtime recomendado para GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

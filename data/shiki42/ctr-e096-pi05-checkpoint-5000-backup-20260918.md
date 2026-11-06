@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un checkpoint de inferencia del modelo pi0.5, identificado por el autor como "E096 PI0.5 checkpoint 5000" y publicado por el usuario Shiki42 como copia de seguridad histórica antes de la limpieza de la instancia de origen. No es un modelo nuevo ni un artefacto entrenado para la ocasión: es una instantánea de pesos de inferencia preservada tal cual, junto con sus ficheros de configuración y procedencia.
+Este repositorio de Hugging Face contiene un checkpoint de inferencia del modelo pi0.5, identificado por el autor como "E096 PI0.5 checkpoint 5000" y publicado por el usuario Shiki42 como copia de seguridad histórica antes de la limpieza de la instancia de origen. No es un modelo nuevo ni un artefacto entrenado para la ocasión: es una instantánea de pesos de inferencia preservada tal cual, junto con sus ficheros de configuración y procedencia.
 
 El artefacto se distribuye como directorio de checkpoint Orbax para JAX, con un tamaño de repositorio de 6,3 GB, y está etiquetado con los términos "robotics", "pi05" y "jax". La model card indica explícitamente que se incluyen los parámetros de inferencia completos, los activos de normalización correspondientes, la evidencia de configuración (`resolved_config.json`) y la procedencia (`provenance.json`), mientras que el estado de optimizador y de data-loader queda excluido.
 
@@ -86,6 +86,6 @@ No disponible. La información proporcionada no identifica modelos comparables n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shiki42/ctr-e096-pi05-checkpoint-5000-backup-20260918
+- Repositorio en Hugging Face: https://huggingface.co/Shiki42/ctr-e096-pi05-checkpoint-5000-backup-20260918
 - Ficheros referenciados en la model card (dentro del repositorio): `resolved_config.json` y `provenance.json`
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor ni a la familia pi0.5: los resultados devueltos corresponden a páginas corporativas de Microsoft y no guardan relación con este artefacto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/lumen-dune-36` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world`. Se presenta como un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) destinado a la generación de texto, con el pipeline `text-generation`. El adaptador está construido sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional.
+El modelo `models4world/lumen-dune-36` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world`. Se presenta como un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) destinado a la generación de texto, con el pipeline `text-generation`. El adaptador está construido sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública adicional.
 
 La relevancia de este modelo es limitada en el estado actual: no se ha publicado ninguna model card sustancial, no hay métricas de evaluación, ni documentación sobre el proceso de entrenamiento o los datos utilizados. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que el adaptador contiene un número considerable de parámetros, pero sin especificaciones técnicas no es posible determinar su arquitectura, tamaño total ni longitud de contexto. Se desconoce también la licencia y los idiomas soportados.
 
@@ -62,6 +62,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/models4world/lumen-dune-36
+- Hugging Face: https://huggingface.co/models4world/lumen-dune-36
 - Modelo base (sin documentación): https://huggingface.co/models4world/maple-signal-64
 - Referencia citada en la model card (artículo sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

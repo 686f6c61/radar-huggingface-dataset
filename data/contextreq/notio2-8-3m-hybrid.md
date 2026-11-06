@@ -16,7 +16,7 @@ Está entrenado desde cero sobre un corpus de 753,7 millones de caracteres forma
 | Longitud de contexto | 4.096 caracteres (ventana de atención: 1.024) |
 | Tipos de cuantizacion | No disponible (no se documentan cuantizaciones) |
 | Idiomas soportados | Inglés |
-| Licencia | Apache-2.0 (según metadatos de HuggingFace); pesos TBD según la model card del autor |
+| Licencia | Apache-2.0 (según metadatos de Hugging Face); pesos TBD según la model card del autor |
 | Formato de pesos | No disponible (proyecto PyTorch con checkpoints propios; no se especifica safetensors, GGUF, etc.) |
 
 ## Arquitectura y entrenamiento
@@ -85,13 +85,13 @@ Notio1 es el predecesor directo y sirve como referencia de la evolución del pro
 - Repetición de plantillas: el subconjunto sintético puede reutilizar aperturas formulaicas del tipo "Once upon a time", lo que produce historias repetitivas.
 - Contexto limitado a 4.096 caracteres: la generación está limitada por este presupuesto de atención y posición.
 - Historial de bucles degenerados: versiones anteriores con vocabulario subword colapsaron en bucles de repetición (comportamiento "soup basin"); el vocabulario de caracteres se adoptó específicamente para evitarlo, pero el riesgo no está completamente eliminado.
-- Licencia de pesos TBD: aunque los metadatos de HuggingFace indican Apache-2.0, la model card del autor afirma que la decisión final sobre la licencia de los pesos está pendiente.
+- Licencia de pesos TBD: aunque los metadatos de Hugging Face indican Apache-2.0, la model card del autor afirma que la decisión final sobre la licencia de los pesos está pendiente.
 - Sesgos de época: el corpus de Gutenberg puede contener contenido con sesgos raciales, de género o de época que pueden aparecer en las salidas. El autor aplicó una política de contenido documentada, pero no elimina todos los sesgos.
 - Solo inglés: el modelo no soporta otros idiomas.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ContextReq/Notio2-8.3M-HYBRID
-- HuggingFace del predecesor Notio1: https://huggingface.co/ContextReq/Notio
-- Perfil del autor en HuggingFace: https://huggingface.co/ContextReq
+- Hugging Face del modelo: https://huggingface.co/ContextReq/Notio2-8.3M-HYBRID
+- Hugging Face del predecesor Notio1: https://huggingface.co/ContextReq/Notio
+- Perfil del autor en Hugging Face: https://huggingface.co/ContextReq
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

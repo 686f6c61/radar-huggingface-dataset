@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spoomplesmaxx-mockingbird-36B | 36B dense | 24.576 (base 512K) | Roleplay y escritura creativa | Apache 2.0 | HuggingFace |
-| spoomplesmaxx-mini-14B | 14B dense | no disponible | Generalista, RP y escritura creativa | no disponible | HuggingFace |
-| spoomplesmaxx-magpie-35B-A3 | 35B (MoE, 3B activos) | no disponible | Roleplay con preferencia (DPO) | no disponible | HuggingFace |
-| Seed-OSS-36B-Base-woSyn | 36B dense | no disponible | Base general, sin datos sintéticos | Apache 2.0 | HuggingFace |
+| spoomplesmaxx-mockingbird-36B | 36B dense | 24.576 (base 512K) | Roleplay y escritura creativa | Apache 2.0 | Hugging Face |
+| spoomplesmaxx-mini-14B | 14B dense | no disponible | Generalista, RP y escritura creativa | no disponible | Hugging Face |
+| spoomplesmaxx-magpie-35B-A3 | 35B (MoE, 3B activos) | no disponible | Roleplay con preferencia (DPO) | no disponible | Hugging Face |
+| Seed-OSS-36B-Base-woSyn | 36B dense | no disponible | Base general, sin datos sintéticos | Apache 2.0 | Hugging Face |
 
 No se han publicado comparativas formales con otros modelos de roleplay en la información disponible.
 
@@ -84,9 +84,9 @@ No se han publicado comparativas formales con otros modelos de roleplay en la in
 
 ## Enlaces
 
-- [HuggingFace: aimeri/spoomplesmaxx-mockingbird-36B](https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B)
-- [HuggingFace: ByteDance-Seed/Seed-OSS-36B-Base-woSyn](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Base-woSyn) (modelo base)
+- [Hugging Face: aimeri/spoomplesmaxx-mockingbird-36B](https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B)
+- [Hugging Face: ByteDance-Seed/Seed-OSS-36B-Base-woSyn](https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Base-woSyn) (modelo base)
 - [GitHub: aimerib/spoomplesmaxx](https://github.com/aimerib/spoomplesmaxx) (datasets y documentación del proyecto)
 - [GitHub: aimerib/spoomples-spot-instance](https://github.com/aimerib/spoomples-spot-instance) (infraestructura de entrenamiento en instancias spot)
-- [HuggingFace: aimeri/spoomplesmaxx-mini-14B](https://huggingface.co/aimeri/spoomplesmaxx-mini-14B) (hermano menor de 14B)
-- [HuggingFace: aimeri/spoomplesmaxx-magpie-35B-A3](https://huggingface.co/aimeri/spoomplesmaxx-magpie-35B-A3) (variante con DPO)
+- [Hugging Face: aimeri/spoomplesmaxx-mini-14B](https://huggingface.co/aimeri/spoomplesmaxx-mini-14B) (hermano menor de 14B)
+- [Hugging Face: aimeri/spoomplesmaxx-magpie-35B-A3](https://huggingface.co/aimeri/spoomplesmaxx-magpie-35B-A3) (variante con DPO)

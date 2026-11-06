@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Elvinky/pi05-so101-stationery-v12-human1to1-fp32-step8553` es un modelo de política robótica de tipo vision-language-action (VLA) publicado en HuggingFace bajo la familia PI05, la implementación de LeRobot de la línea pi0.5. Se trata de un fine-tune completado sobre el checkpoint `Travor278/pi05-so101-stationery-jax-v12` (originalmente en JAX, convertido a PyTorch antes de este entrenamiento). El modelo tiene 4.143.404.816 parámetros en FP32 y resuelve una única tarea de manipulación: `put stationery table into bag` (recoger material de papelería de una mesa e introducirlo en una bolsa) sobre un brazo robótico SO-101.
+`Elvinky/pi05-so101-stationery-v12-human1to1-fp32-step8553` es un modelo de política robótica de tipo vision-language-action (VLA) publicado en Hugging Face bajo la familia PI05, la implementación de LeRobot de la línea pi0.5. Se trata de un fine-tune completado sobre el checkpoint `Travor278/pi05-so101-stationery-jax-v12` (originalmente en JAX, convertido a PyTorch antes de este entrenamiento). El modelo tiene 4.143.404.816 parámetros en FP32 y resuelve una única tarea de manipulación: `put stationery table into bag` (recoger material de papelería de una mesa e introducirlo en una bolsa) sobre un brazo robótico SO-101.
 
 La particularidad del release es su estrategia de entrenamiento: un fine-tune de parámetros completos con proporción 1:1 entre demostraciones originales y muestras de intervención humana (human-in-the-loop, esquema tipo DAgger). La vista humana contiene 741 segmentos contiguos marcados como `intervention=true` y 109.466 fotogramas a 30 FPS (1 h 00 min 48,9 s), mientras que la vista original contiene 397 episodios y 1.256.576 fotogramas. El objetivo declarado fue dar 2,5 pasadas sobre los datos humanos, no sobre ambas fuentes.
 
@@ -66,9 +66,9 @@ Los datos de terceros que figuran a continuación provienen de la documentación
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad | Rendimiento en esta tarea |
 |---|---|---|---|---|---|
-| pi05-so101-stationery-v12-human1to1-fp32-step8553 | 4,14 mil M (FP32) | No disponible; chunk de 50 acciones | No disponible | Pesos safetensors en HuggingFace, 0 descargas | No evaluado en robot físico |
+| pi05-so101-stationery-v12-human1to1-fp32-step8553 | 4,14 mil M (FP32) | No disponible; chunk de 50 acciones | No disponible | Pesos safetensors en Hugging Face, 0 descargas | No evaluado en robot físico |
 | pi0 / pi0.5 (Physical Intelligence) | Del orden de miles de millones (no confirmado aquí) | No disponible en esta ficha | No disponible en esta ficha | Pesos abiertos vía repositorio openpi | No aplica a esta tarea |
-| OpenVLA | 7 mil M aprox. (referencia pública) | No disponible en esta ficha | Licencia comunitaria del modelo base (referencia pública) | Pesos abiertos en HuggingFace | No aplica a esta tarea |
+| OpenVLA | 7 mil M aprox. (referencia pública) | No disponible en esta ficha | Licencia comunitaria del modelo base (referencia pública) | Pesos abiertos en Hugging Face | No aplica a esta tarea |
 | SmolVLA | ~450 M (referencia pública) | No disponible en esta ficha | Apache 2.0 (referencia pública) | Pesos abiertos, integrado en LeRobot | No aplica a esta tarea |
 
 La comparación honesta es que este modelo no compite por métricas generales: compite por ser un artefacto reproducible de una tarea específica sobre un SO-101, con proveniencia de entrenamiento documentada paso a paso, algo poco habitual incluso en releases de investigación.
@@ -89,7 +89,7 @@ La comparación honesta es que este modelo no compite por métricas generales: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elvinky/pi05-so101-stationery-v12-human1to1-fp32-step8553
+- Modelo en Hugging Face: https://huggingface.co/Elvinky/pi05-so101-stationery-v12-human1to1-fp32-step8553
 - Espejo del modelo: https://hf-mirror.com/Elvinky/pi05-so101-stationery-v12-human1to1-fp32-step8553
 - Modelo base (JAX v12): https://huggingface.co/Travor278/pi05-so101-stationery-jax-v12
 - Dataset de intervenciones: https://huggingface.co/datasets/Elvinky/so101-stationery-dagger-20260909

@@ -96,11 +96,11 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macmacmacmac/Sev-4B
+- Modelo en Hugging Face: https://huggingface.co/macmacmacmac/Sev-4B
 - Repositorio del runtime Sev/Kev: https://github.com/maceip/Sev
 - Plan de experimento registrado: https://github.com/maceip/Sev/blob/main/experiments/sev-research-4b-v1.json
 - Ejemplo del repositorio ("try it"): https://github.com/maceip/Sev#try-it
 - Dataset de investigación conductual: https://huggingface.co/macmacmacmac/Sev-behavioral-research-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/macmacmacmac
+- Perfil del autor en Hugging Face: https://huggingface.co/macmacmacmac
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Checkpoint padre Kev-4B: https://huggingface.co/jaredpalmer/kev-4b

@@ -23,7 +23,7 @@ El autor de la conversión es Miltos22, mientras que el modelo original pertenec
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre la arquitectura interna ni el proceso de entrenamiento del modelo original. Según las etiquetas de HuggingFace, el modelo base fue sometido a poda de profundidad (depth-pruning) y de anchura (width-pruning), lo que implica la eliminación de capas y neuronas redundantes, seguido de un ajuste fino de recuperación ("healed") para restaurar el rendimiento. También se menciona "gated-deltanet", que podría referirse a un mecanismo de atención lineal con compuertas, pero no hay confirmación técnica en la documentación.
+La información disponible no incluye detalles sobre la arquitectura interna ni el proceso de entrenamiento del modelo original. Según las etiquetas de Hugging Face, el modelo base fue sometido a poda de profundidad (depth-pruning) y de anchura (width-pruning), lo que implica la eliminación de capas y neuronas redundantes, seguido de un ajuste fino de recuperación ("healed") para restaurar el rendimiento. También se menciona "gated-deltanet", que podría referirse a un mecanismo de atención lineal con compuertas, pero no hay confirmación técnica en la documentación.
 
 El archivo GGUF fue generado mediante la herramienta gguf-my-repo de llama.cpp, que convierte los pesos originales (probablemente en safetensors) al formato GGUF. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Miltos22/Qwen3.8-Whittle-16B-Q2_K-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Miltos22/Qwen3.8-Whittle-16B-Q2_K-GGUF
 - Modelo base original: https://huggingface.co/logic65/Qwen3.8-Whittle-16B
 - Herramienta de conversión gguf-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -82,7 +82,7 @@ Estos resultados corresponden al modelo BF16; no se han publicado benchmarks esp
 - VRAM estimada para inferencia: aproximadamente 35-40 GB para los pesos FP8 (el repositorio pesa 35,5 GB), mas margen para la KV cache, que dependera de la longitud de contexto (no publicada).
 - GPUs recomendadas: una NVIDIA H100 80 GB o A100 80 GB ejecuta el modelo con holgura; con una H100 NVL o A100 80 GB se dispone de margen amplio para contextos largos.
 - Consumer GPUs: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB) sin offloading. Con dos RTX 4090 en paralelo (48 GB totales) seria viable, aunque sin datos oficiales de compatibilidad FP8 en esas tarjetas.
-- Opciones de despliegue: libreria transformers (nativa), text-generation-inference (TGI) y endpoints de HuggingFace (el modelo esta etiquetado como `endpoints_compatible`). El formato compressed-tensors FP8 es compatible con vLLM. No hay indicios de soporte GGUF/llama.cpp ni de Ollama para esta cuantizacion.
+- Opciones de despliegue: libreria transformers (nativa), text-generation-inference (TGI) y endpoints de Hugging Face (el modelo esta etiquetado como `endpoints_compatible`). El formato compressed-tensors FP8 es compatible con vLLM. No hay indicios de soporte GGUF/llama.cpp ni de Ollama para esta cuantizacion.
 - Latencia y throughput: no disponibles en la informacion publicada.
 
 ## Comparativa con modelos similares
@@ -108,11 +108,11 @@ Nanbeige4.3-33B lidera en 16 de los 20 benchmarks publicados, con Qwen3.8-27B co
 - Idioma: soporte oficial solo para ingles y chino; el rendimiento en espanol no esta evaluado.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin restricciones relevantes mas alla de la atribucion.
 - Caveats de produccion: los benchmarks publicados corresponden al modelo BF16 con maximo esfuerzo de razonamiento; la version FP8 puede mostrar ligeras desviaciones no cuantificadas. El modo thinking por defecto genera razonamiento explicito que aumenta el consumo de tokens y la latencia; desactivarlo (`enable_thinking=False`) para chat de baja latencia. Los resultados agénticos dependen fuertemente del harness de evaluacion (Terminus 2, mini-swe-agent, Claude Code), por lo que el rendimiento en produccion puede variar segun la infraestructura de agente empleada.
-- Adopcion: el modelo registra 0 descargas y 3 likes en HuggingFace, lo que indica una comunidad y ecosistema de tooling todavia muy limitados.
+- Adopcion: el modelo registra 0 descargas y 3 likes en Hugging Face, lo que indica una comunidad y ecosistema de tooling todavia muy limitados.
 
 ## Enlaces
 
 - Modelo FP8: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-FP8
 - Modelo base BF16: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
-- Perfil del autor en HuggingFace: https://huggingface.co/Nanbeige
+- Perfil del autor en Hugging Face: https://huggingface.co/Nanbeige
 - Paper, repositorio de GitHub y demo: no disponibles en la informacion proporcionada.

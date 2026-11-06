@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Darija-e5-large-contrastive es un modelo de embeddings de texto publicado en HuggingFace por el usuario blazed-05. Su nombre indica que se trata de una adaptación del modelo multilingüe E5-large (de Microsoft) mediante entrenamiento contrastivo para el dariya (darija), la variedad de árabe magrebí hablada en Marruecos. Este tipo de modelos resuelve un problema real: los embeddings multilingües genéricos suelen tener un rendimiento pobre en lenguas de baja disponibilidad de recursos como el darija, especialmente en su forma escrita en redes sociales, que mezcla árabe, francés y caracteres latinos (arabizi).
+Darija-e5-large-contrastive es un modelo de embeddings de texto publicado en Hugging Face por el usuario blazed-05. Su nombre indica que se trata de una adaptación del modelo multilingüe E5-large (de Microsoft) mediante entrenamiento contrastivo para el dariya (darija), la variedad de árabe magrebí hablada en Marruecos. Este tipo de modelos resuelve un problema real: los embeddings multilingües genéricos suelen tener un rendimiento pobre en lenguas de baja disponibilidad de recursos como el darija, especialmente en su forma escrita en redes sociales, que mezcla árabe, francés y caracteres latinos (arabizi).
 
 El modelo se basa en la arquitectura E5-large, un transformer codificador basado en XLM-RoBERTa-large con unos 560 millones de parámetros, que genera vectores de 1024 dimensiones para tareas de similitud semántica, recuperación de información y clustering. El ajuste contrastivo (probablemente con pares de frases positivas y negativas, siguiendo el paradigma de SimCSE o similar) adapta el espacio de representación a la semántica del darija.
 
-La ficha del modelo en HuggingFace es prácticamente inexistente: la model card solo contiene la licencia Apache 2.0, sin descripción de los datos de entrenamiento, procedimiento, benchmarks ni uso previsto. Además, el modelo registra 0 descargas y 0 likes, por lo que no hay evidencia de adopción ni validación comunitaria. Se recomienda extrema precaución antes de usarlo en producción.
+La ficha del modelo en Hugging Face es prácticamente inexistente: la model card solo contiene la licencia Apache 2.0, sin descripción de los datos de entrenamiento, procedimiento, benchmarks ni uso previsto. Además, el modelo registra 0 descargas y 0 likes, por lo que no hay evidencia de adopción ni validación comunitaria. Se recomienda extrema precaución antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La ficha del modelo en HuggingFace es prácticamente inexistente: la model card 
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Dariya (arabe magrebi); base multilingüe E5; lista exacta no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible (presumiblemente safetensors o PyTorch estandar de HuggingFace) |
+| Formato de pesos | No disponible (presumiblemente safetensors o PyTorch estandar de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con ~560 M de parametros en FP16, aproximadamente 1,2-1,5 GB de VRAM; en FP32, unos 2,5 GB. No hay cuantizaciones publicadas.
 - GPU recomendadas: cualquier GPU moderna con 4 GB o mas de VRAM es suficiente (RTX 3060, RTX 4090, T4, A10, A100). Tambien es viable la ejecucion en CPU con latencias del orden de decenas de milisegundos por texto.
 - Cabe con holgura en GPUs de consumo; no requiere hardware especializado.
-- Despliegue: libreria sentence-transformers o transformers de HuggingFace; tambien compatible con backends como Infinity, TEI (Text Embeddings Inference) o vLLM si el formato de pesos es estandar. Ollama y llama.cpp no son la via habitual para modelos de embedding de este tipo, aunque existen conversiones posibles.
+- Despliegue: libreria sentence-transformers o transformers de Hugging Face; tambien compatible con backends como Infinity, TEI (Text Embeddings Inference) o vLLM si el formato de pesos es estandar. Ollama y llama.cpp no son la via habitual para modelos de embedding de este tipo, aunque existen conversiones posibles.
 - Latencia y throughput: no disponibles; como referencia, E5-large procesa tipicamente cientos de textos por segundo en una GPU T4 con batching.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La ventaja teorica del modelo de blazed-05 seria su especializacion en darija; s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blazed-05/darija-e5-large-contrastive
+- Modelo en Hugging Face: https://huggingface.co/blazed-05/darija-e5-large-contrastive
 - Modelo base E5 (Microsoft): https://huggingface.co/intfloat/multilingual-e5-large
 - Articulo de E5 (paper): https://arxiv.org/abs/2212.03533
 - XLM-RoBERTa: https://huggingface.co/xlm-roberta-large

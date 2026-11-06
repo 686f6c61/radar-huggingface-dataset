@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felsager/pi05_cube2cross` es un checkpoint de robótica publicado en HuggingFace por el usuario felsager, distribuido en formato LeRobot y etiquetado con el pipeline `robotics`. Se trata de un fine-tune del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence y orientado a generalización en entornos abiertos. El checkpoint ha sido ajustado sobre el dataset `felsager/vla_cubes_big`, lo que sugiere una especialización en una tarea concreta de manipulación con cubos, aunque la ficha del repositorio no documenta ni el enunciado de la tarea ni el embodiment utilizado.
+`felsager/pi05_cube2cross` es un checkpoint de robótica publicado en Hugging Face por el usuario felsager, distribuido en formato LeRobot y etiquetado con el pipeline `robotics`. Se trata de un fine-tune del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence y orientado a generalización en entornos abiertos. El checkpoint ha sido ajustado sobre el dataset `felsager/vla_cubes_big`, lo que sugiere una especialización en una tarea concreta de manipulación con cubos, aunque la ficha del repositorio no documenta ni el enunciado de la tarea ni el embodiment utilizado.
 
 El interés de este tipo de publicaciones es práctico: demuestra el flujo de trabajo de fine-tuning de un VLA abierto sobre un dataset propio dentro del ecosistema LeRobot, algo relevante para laboratorios y grupos de robótica que quieren adaptar políticas generalistas a una tarea específica sin entrenar desde cero. Sin embargo, el repositorio no incluye model card descriptiva, no publica resultados de evaluación y no ha recibido descargas ni interacciones, por lo que debe considerarse un artefacto experimental sin validación externa.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Tipo | Relación con este checkpoint | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `felsager/pi05_cube2cross` | VLA π₀.₅ fine-tune | Este modelo | Tarea de cubos sobre `vla_cubes_big` | Apache 2.0 (etiqueta) | Repositorio público, 0 descargas |
-| `lerobot/pi05_base` | VLA π₀.₅ base | Modelo de partida | Generalista, sin ajuste a tarea | no disponible en la información proporcionada | Público en HuggingFace |
-| `felsager/pi05_base_ee_rel` | VLA π₀.₅ fine-tune | Mismo autor, otro ajuste | No documentada (sufijo "ee_rel" sugiere espacio de efector final) | no disponible | Público en HuggingFace |
-| `Faless/pi05_cubo` | VLA π₀.₅ fine-tune | Tercero, tarea similar de cubos | Manipulación de cubos | no disponible | Público en HuggingFace |
+| `lerobot/pi05_base` | VLA π₀.₅ base | Modelo de partida | Generalista, sin ajuste a tarea | no disponible en la información proporcionada | Público en Hugging Face |
+| `felsager/pi05_base_ee_rel` | VLA π₀.₅ fine-tune | Mismo autor, otro ajuste | No documentada (sufijo "ee_rel" sugiere espacio de efector final) | no disponible | Público en Hugging Face |
+| `Faless/pi05_cubo` | VLA π₀.₅ fine-tune | Tercero, tarea similar de cubos | Manipulación de cubos | no disponible | Público en Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento comparado para ninguno de los cuatro, por lo que la comparación se limita a naturaleza, especialización y disponibilidad.
 

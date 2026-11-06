@@ -6,7 +6,7 @@ Qwen3.5-4B-Artemis-GGUF es una cuantización en formato GGUF del modelo Qwen/Qwe
 
 El objetivo declarado por el autor es doble: reducir el peso de descarga (2,714 GB para el fichero por defecto Q4_K_M) y rebajar el pico de memoria en GPU (3,5 GiB en una RTX 5090 con contexto de 8.192 tokens, frente a 8,9 GiB del original en BF16), manteniendo la mayor fidelidad posible respecto al modelo sin cuantizar. El autor reporta que el siguiente token coincide con el original en el 93,5% de los tokens de WikiText-2, frente al 92,7% de la cuantización Q4_K_M de Unsloth.
 
-Su relevancia práctica está en el nicho de modelos de 4B con visión y tool calling ejecutables en hardware de consumo: el repositorio incluye proyectores multimodales separados (mmproj-BF16 y mmproj-F16) y publica resultados propios en BFCL live e IFEval, además de paquetes equivalentes en el registro de Ollama. La ficha del modelo está fechada en octubre de 2026 y acumula 1.054 descargas y 2 likes en HuggingFace en el momento de la consulta.
+Su relevancia práctica está en el nicho de modelos de 4B con visión y tool calling ejecutables en hardware de consumo: el repositorio incluye proyectores multimodales separados (mmproj-BF16 y mmproj-F16) y publica resultados propios en BFCL live e IFEval, además de paquetes equivalentes en el registro de Ollama. La ficha del modelo está fechada en octubre de 2026 y acumula 1.054 descargas y 2 likes en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia práctica está en el nicho de modelos de 4B con visión y tool ca
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión a GGUF del transformer Qwen3.5-4B, sin reentrenamiento ni fine-tuning posteriores según la información disponible. TurinTech describe el proceso como una cuantización asistida por Artemis (su herramienta interna) con matriz de importancia (imatrix), y señala que el fichero por defecto Q4_K_M fue seleccionado comparando la fidelidad de generación sobre WikiText-2. El pipeline declarado en HuggingFace es image-text-to-text: la capacidad de visión se aporta mediante un proyector multimodal separado, convertido de los pesos originales, que llama.cpp carga con `--mmproj` (o descarga automáticamente con `-hf`).
+El modelo es una conversión a GGUF del transformer Qwen3.5-4B, sin reentrenamiento ni fine-tuning posteriores según la información disponible. TurinTech describe el proceso como una cuantización asistida por Artemis (su herramienta interna) con matriz de importancia (imatrix), y señala que el fichero por defecto Q4_K_M fue seleccionado comparando la fidelidad de generación sobre WikiText-2. El pipeline declarado en Hugging Face es image-text-to-text: la capacidad de visión se aporta mediante un proyector multimodal separado, convertido de los pesos originales, que llama.cpp carga con `--mmproj` (o descarga automáticamente con `-hf`).
 
 No se detallan en la información proporcionada los datos de preentrenamiento del modelo base (número de tokens, composición del corpus, si hubo RLHF/DPO), ni innovaciones de arquitectura más allá de lo heredado de Qwen3.5. Sí hay un dato operativo relevante: la variante publicada en el registro de Ollama es solo texto, ya que el codificador de visión y la capa de predicción multi-token (MTP) no están incluidas en esos paquetes. La model card también fija los ajustes de muestreo de los paquetes Ollama en temperature 1, top_k 20, top_p 0,95 y presence_penalty 1,5, mientras que los benchmarks de tool calling se midieron con decodificación greedy y el modo de razonamiento desactivado.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras evaluacione
 
 - La cuantización introduce desviación respecto al original: el propio autor reconoce que el siguiente token no coincide en aproximadamente el 6,5% de los tokens de WikiText-2, lo que puede acumularse en generaciones largas o tareas de razonamiento profundo.
 - Los tres benchmarks publicados están marcados como no verificados (`verified: false`) y proceden del autor del modelo; no hay replicación independiente en la información disponible.
-- Los paquetes de Ollama no incluyen el codificador de visión ni la capa MTP: son estrictamente texto. Para imagen hay que usar la ruta desde HuggingFace o construir un Modelfile con el proyector.
+- Los paquetes de Ollama no incluyen el codificador de visión ni la capa MTP: son estrictamente texto. Para imagen hay que usar la ruta desde Hugging Face o construir un Modelfile con el proyector.
 - El modo de razonamiento está activado por defecto al omitir `think`; si se busca el comportamiento medido en tool calling hay que desactivarlo explícitamente, algo que ni el quickstart ni los paquetes Ollama hacen por defecto.
 - Los benchmarks se midieron con decodificación greedy y ajustes de muestreo distintos a los de los paquetes Ollama (temperature 1, top_p 0,95, presence_penalty 1,5), por lo que los resultados no son directamente trasladables a ese entorno.
 - No hay información sobre sesgos, composición del corpus de entrenamiento ni evaluaciones de seguridad; el riesgo de alucinación es el esperado en un modelo de 4B sin datos específicos de mitigación publicados.
@@ -100,13 +100,13 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras evaluacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/Qwen3.5-4B-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/Qwen3.5-4B-Artemis-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Paquete en Ollama: https://ollama.com/turintech/qwen3.5-4b-artemis
 - Variante de 9B de la misma familia: https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF
 - Variante de 2B de la misma familia: https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF
-- Ficha de TurinTech en HuggingFace: https://huggingface.co/turintech
+- Ficha de TurinTech en Hugging Face: https://huggingface.co/turintech
 - Sitio del autor: https://turintech.ai
 - Berkeley Function Calling Leaderboard (BFCL): https://gorilla.cs.berkeley.edu/leaderboard.html
 - IFEval: https://huggingface.co/datasets/google/IFEval

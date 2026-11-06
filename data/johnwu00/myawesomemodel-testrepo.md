@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario johnwu00 bajo el identificador johnwu00/MyAwesomeModel-TestRepo. El repositorio se creó el 31 de octubre de 2026 y, según los metadatos disponibles, se trata de un modelo basado en PyTorch. No obstante, la información pública sobre el modelo es muy escasa: no hay model card detallada, no se especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario johnwu00 bajo el identificador johnwu00/MyAwesomeModel-TestRepo. El repositorio se creó el 31 de octubre de 2026 y, según los metadatos disponibles, se trata de un modelo basado en PyTorch. No obstante, la información pública sobre el modelo es muy escasa: no hay model card detallada, no se especifica la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o de uso experimental, posiblemente vacío o con contenido no publicado todavía. El propio nombre ("TestRepo") apunta en esa dirección. La model card solo incluye una tabla de benchmarks y la licencia MIT, sin descripción de capacidades, datos de entrenamiento ni instrucciones de uso.
 
@@ -71,7 +71,7 @@ No hay comparativas con otros modelos en la informacion disponible, por lo que n
 - VRAM estimada para inferencia: no disponible, ya que se desconoce el numero de parametros y el formato de los pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPUs de consumo: no evaluable sin conocer el tamano del modelo. Ademas, el repositorio ocupa 0.0 GB, por lo que probablemente no haya pesos descargables.
-- Opciones de despliegue: al indicarse PyTorch como framework, en principio seria compatible con transformers de HuggingFace si existieran los ficheros adecuados. No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al indicarse PyTorch como framework, en principio seria compatible con transformers de Hugging Face si existieran los ficheros adecuados. No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ No es posible realizar una comparativa fiable: al desconocerse el numero de para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnwu00/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/johnwu00/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces adicionales (papers, blogs, demos o repositorios externos) en la informacion disponible.

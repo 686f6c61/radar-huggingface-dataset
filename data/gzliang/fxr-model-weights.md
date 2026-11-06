@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FXRPred model weights es un repositorio de pesos entrenados para la prediccion de actividad agonista y antagonista sobre el receptor nuclear FXR (farnesoid X receptor). Lo publica el usuario gzLiang en HuggingFace y no contiene un modelo de lenguaje, sino los state dictionaries de cinco folds de validacion cruzada para cada una de las dos tareas (`AGO` y `ANT`) de un modelo basado en redes neuronales de grafos, concretamente una variante FACA-GIN.
+FXRPred model weights es un repositorio de pesos entrenados para la prediccion de actividad agonista y antagonista sobre el receptor nuclear FXR (farnesoid X receptor). Lo publica el usuario gzLiang en Hugging Face y no contiene un modelo de lenguaje, sino los state dictionaries de cinco folds de validacion cruzada para cada una de las dos tareas (`AGO` y `ANT`) de un modelo basado en redes neuronales de grafos, concretamente una variante FACA-GIN.
 
 El repositorio esta pensado como artefacto de despliegue: un Space independiente (`gzLiang/fxr-model-service`) descarga estos ficheros y los carga mediante un loader propio. No es un repositorio de Transformers ni se puede consumir con `from_pretrained` de la libreria transformers, y el propio autor advierte que las comprobaciones de compatibilidad y operacion no constituyen validacion experimental prospectiva de la actividad FXR predicha.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FXRPred (gzLiang/fxr-model-weights) | FACA-GIN | Agonismo/antagonismo FXR | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| FXRPred (gzLiang/fxr-model-weights) | FACA-GIN | Agonismo/antagonismo FXR | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Uni-Mol | Transformer 3D | Propiedades moleculares generales | no disponible en esta ficha | no aplica | no disponible | mencionado por el autor como posible adicion futura |
 | Ortho-MoE | MoE (quimica) | Propiedades moleculares | no disponible en esta ficha | no aplica | no disponible | mencionado por el autor como posible adicion futura |
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gzLiang/fxr-model-weights
+- Repositorio Hugging Face: https://huggingface.co/gzLiang/fxr-model-weights
 - Space de despliegue: https://huggingface.co/spaces/gzLiang/fxr-model-service
 - Perfil del autor: https://huggingface.co/gzLiang

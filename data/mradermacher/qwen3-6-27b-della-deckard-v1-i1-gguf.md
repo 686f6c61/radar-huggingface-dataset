@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Della-Deckard-v1 (base) | 27B | 262k | Sí | Apache-2.0 | HuggingFace |
-| Qwen2.5-27B | 27B | 32k | No | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128k | No | Llama 3.1 License | HuggingFace |
-| Mistral-7B | 7B | 32k | No | Apache-2.0 | HuggingFace |
+| Qwen3.6-27B-Della-Deckard-v1 (base) | 27B | 262k | Sí | Apache-2.0 | Hugging Face |
+| Qwen2.5-27B | 27B | 32k | No | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128k | No | Llama 3.1 License | Hugging Face |
+| Mistral-7B | 7B | 32k | No | Apache-2.0 | Hugging Face |
 
 Nota: No se dispone de datos de rendimiento comparativos. La comparación se limita a características técnicas. El modelo base tiene contexto y multimodalidad superiores a Qwen2.5-27B, pero no se conoce su rendimiento real.
 
@@ -76,7 +76,7 @@ Nota: No se dispone de datos de rendimiento comparativos. La comparación se lim
 - **Idiomas**: el modelo está optimizado para chino e inglés; otros idiomas pueden tener peor calidad.
 - **Licencia**: Apache-2.0 permite uso comercial, pero se debe revisar la licencia del modelo base (Qwen3.6) para confirmar restricciones adicionales.
 - **Cuantización**: la cuantización introduce pérdida de precisión, especialmente en las versiones de menor bit (Q2_K, IQ1_M). Se recomienda usar Q4_K_M o superior para tareas críticas.
-- **Dependencia de llama.cpp**: el formato GGUF solo es compatible con ecosistemas llama.cpp; no funciona directamente con transformers de HuggingFace sin conversión.
+- **Dependencia de llama.cpp**: el formato GGUF solo es compatible con ecosistemas llama.cpp; no funciona directamente con transformers de Hugging Face sin conversión.
 
 ## Enlaces
 

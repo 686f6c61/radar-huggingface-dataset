@@ -87,8 +87,8 @@ La comparativa se limita a la familia DeepSeek por disponibilidad de datos. Deep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
-- Colección DeepSeek-V4 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-v4
+- Repositorio Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
+- Colección DeepSeek-V4 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-v4
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Repositorio DeepSpec (módulo de decodificación especulativa): https://github.com/deepseek-ai/DeepSpec
 - Receta de despliegue en 2x DGX Spark: https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo / artefacto | Tipo | Pasos de muestreo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NidAll/pruna-image-2.1-comfyui-loras (este repositorio) | Adaptador LoRA convertido para ComfyUI | 8 o 5, con sigmas propias | qwen-research (no comercial) | HuggingFace, 0 descargas, 1 like | Anade tensores `.alpha` por diana; 224 dianas por adaptador; rank 64, alpha 128 |
-| PrunaAI/Pruna-Qwen-Image-2.1 | Adaptadores LoRA originales | 8 y 5 (segun origen) | No disponible en la informacion proporcionada | HuggingFace (revision 113e63b referenciada) | Alpha almacenado en metadatos, no consumido por el cargador de LoRAs de ComfyUI |
-| Qwen/Qwen-Image-2.1 | Modelo base de difusion | Muestreo completo | No disponible en la informacion proporcionada | HuggingFace | Los adaptadores v0.1 no igualan su calidad visual a pasos completos |
-| Comfy-Org/Qwen-Image-2.1 | Distribucion de ficheros base en int8 para ComfyUI | No aplica (pesos base) | No disponible en la informacion proporcionada | HuggingFace | Origen de los tres ficheros que el workflow espera en `diffusion_models`, `text_encoders` y `vae` |
+| NidAll/pruna-image-2.1-comfyui-loras (este repositorio) | Adaptador LoRA convertido para ComfyUI | 8 o 5, con sigmas propias | qwen-research (no comercial) | Hugging Face, 0 descargas, 1 like | Anade tensores `.alpha` por diana; 224 dianas por adaptador; rank 64, alpha 128 |
+| PrunaAI/Pruna-Qwen-Image-2.1 | Adaptadores LoRA originales | 8 y 5 (segun origen) | No disponible en la informacion proporcionada | Hugging Face (revision 113e63b referenciada) | Alpha almacenado en metadatos, no consumido por el cargador de LoRAs de ComfyUI |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusion | Muestreo completo | No disponible en la informacion proporcionada | Hugging Face | Los adaptadores v0.1 no igualan su calidad visual a pasos completos |
+| Comfy-Org/Qwen-Image-2.1 | Distribucion de ficheros base en int8 para ComfyUI | No aplica (pesos base) | No disponible en la informacion proporcionada | Hugging Face | Origen de los tres ficheros que el workflow espera en `diffusion_models`, `text_encoders` y `vae` |
 
 No se dispone de datos de benchmarks ni de parametros de modelos comparables de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de parametros de modelos comparables de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NidAll/pruna-image-2.1-comfyui-loras
+- Repositorio en Hugging Face: https://huggingface.co/NidAll/pruna-image-2.1-comfyui-loras
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Adaptadores originales de PrunaAI: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1
 - Revision de origen de los adaptadores: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1/tree/113e63bb993001b3411eb3470b84fc444040cd7e

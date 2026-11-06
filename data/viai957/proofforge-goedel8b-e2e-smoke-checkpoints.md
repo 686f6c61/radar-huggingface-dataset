@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| viai957/proofforge-goedel8b-e2e-smoke-checkpoints | 8B (base) + LoRA | no disponible | Checkpoints de pipeline SFT/DPO/RLVR sobre Goedel-Prover-V2-8B | Apache-2.0 | HuggingFace, 0 descargas |
-| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Demostración formal en Lean 4 | Apache-2.0 | HuggingFace (modelo base) |
-| viai957/proofforge-goedel8b-sft-lora-e2e-smoke | 8B (base) + LoRA | no disponible | Adaptador SFT final del mismo experimento | Apache-2.0 | HuggingFace |
+| viai957/proofforge-goedel8b-e2e-smoke-checkpoints | 8B (base) + LoRA | no disponible | Checkpoints de pipeline SFT/DPO/RLVR sobre Goedel-Prover-V2-8B | Apache-2.0 | Hugging Face, 0 descargas |
+| Goedel-LM/Goedel-Prover-V2-8B | 8B | no disponible | Demostración formal en Lean 4 | Apache-2.0 | Hugging Face (modelo base) |
+| viai957/proofforge-goedel8b-sft-lora-e2e-smoke | 8B (base) + LoRA | no disponible | Adaptador SFT final del mismo experimento | Apache-2.0 | Hugging Face |
 | NVIDIA Nemotron-3-Nano | no disponible | no disponible | Línea base adoptada por ProofForge desde el 29 de octubre de 2026 | no disponible | no disponible |
 
 La comparación relevante es con el modelo base y con el adaptador SFT final del mismo proyecto; no se dispone de datos de rendimiento comparables entre ellos.
@@ -84,7 +84,7 @@ La comparación relevante es con el modelo base y con el adaptador SFT final del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/viai957/proofforge-goedel8b-e2e-smoke-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/viai957/proofforge-goedel8b-e2e-smoke-checkpoints
 - Colección ProofForge Experiment Archive: https://huggingface.co/collections/viai957/proofforge-experiment-archive-6ae958d029e1ebf1e20f804e
 - Adaptador SFT final: https://huggingface.co/viai957/proofforge-goedel8b-sft-lora-e2e-smoke
 - Dataset de generaciones atestadas por el verificador: https://huggingface.co/datasets/viai957/proofforge-goedel8b-e2e-attested-generations

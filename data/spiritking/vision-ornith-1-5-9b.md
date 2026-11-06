@@ -4,7 +4,7 @@
 
 VISION-Ornith-1.5-9B es un adaptador LoRA publicado por el usuario SpiritKing sobre el modelo base ornith-ai/Ornith-1.5-9B. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos PEFT (Parameter-Efficient Fine-Tuning) que debe cargarse junto al checkpoint del modelo base para poder utilizarse. El repositorio ocupa 0,7 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de 9.000 millones de parametros.
 
-La model card del autor es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: no se documentan el desarrollador real, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento, los hiperparametros ni los resultados de evaluacion. Toda la informacion tecnica disponible proviene de los metadatos del repositorio (tags, libreria, modelo base y tamano), no de la documentacion del autor.
+La model card del autor es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: no se documentan el desarrollador real, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento, los hiperparametros ni los resultados de evaluacion. Toda la informacion tecnica disponible proviene de los metadatos del repositorio (tags, libreria, modelo base y tamano), no de la documentacion del autor.
 
 Por tanto, esta ficha debe leerse como una evaluacion de los metadatos disponibles y del modelo base referenciado, no como una validacion de las capacidades del adaptador. Cualquier uso en produccion exige una evaluacion propia previa, dado que no existe evidencia publicada sobre el comportamiento del fine-tuning ni sobre el proposito concreto para el que fue entrenado.
 
@@ -50,7 +50,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la co
 - Despliegue ligero en produccion: al ocupar solo 0,7 GB, el adaptador puede almacenarse y versionarse de forma barata, mientras el modelo base se comparte entre multiples adaptadores en un mismo servidor de inferencia.
 - Personalizacion de tono o dominio: si el adaptador fue entrenado para un estilo concreto, puede aplicarse sobre el modelo base para tareas de redaccion o atencion al cliente, aunque la falta de documentacion obliga a validarlo empiricamente.
 - Investigacion sobre vision y lenguaje: si el prefijo "VISION" refleja el objetivo real del fine-tuning, el adaptador podria emplearse en tareas de descripcion de imagenes o respuesta visual, pero esto no esta confirmado y requiere verificacion.
-- Evaluacion comparativa de adaptadores: util para pipelines de benchmarking que comparan distintos LoRA sobre el mismo modelo base, ya que el formato safetensors y la libreria PEFT son estandar y compatibles con herramientas como vLLM con soporte LoRA o el ecosistema HuggingFace.
+- Evaluacion comparativa de adaptadores: util para pipelines de benchmarking que comparan distintos LoRA sobre el mismo modelo base, ya que el formato safetensors y la libreria PEFT son estandar y compatibles con herramientas como vLLM con soporte LoRA o el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpiritKing/VISION-Ornith-1.5-9B
+- Repositorio Hugging Face: https://huggingface.co/SpiritKing/VISION-Ornith-1.5-9B
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

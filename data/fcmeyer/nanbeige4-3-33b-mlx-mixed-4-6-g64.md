@@ -10,7 +10,7 @@ La relevancia de esta variante radica en que permite ejecutar un modelo de 33B c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo LLaMA (denso, etiquetado "llama" en HuggingFace) |
+| Arquitectura | Transformer tipo LLaMA (denso, etiquetado "llama" en Hugging Face) |
 | Parametros totales | 33.118.977.024 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 524.288 tokens (512K, heredada del modelo base; no validada en su totalidad) |

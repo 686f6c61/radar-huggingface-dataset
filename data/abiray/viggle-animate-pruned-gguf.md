@@ -93,7 +93,7 @@ No se dispone de datos de calidad (FVD, FAD ni similitud con el modelo sin cuant
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abiray/Viggle-Animate-pruned-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Abiray/Viggle-Animate-pruned-GGUF
 - Modelo upstream Viggle-Animate: no disponible (referenciado en la model card sin enlace)
 - Estructura derivada MiniMax-H3: no disponible (referenciada en la model card sin enlace)
 - Paper, blog, repositorio de codigo o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relevante sobre el modelo (unicamente paginas de inicio de sesion de Google Docs).

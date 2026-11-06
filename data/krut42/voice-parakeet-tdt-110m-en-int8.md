@@ -110,7 +110,7 @@ No hay datos de rendimiento (WER, RTF comparativo) en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krut42/voice-parakeet-tdt-110m-en-int8
+- Repositorio en Hugging Face: https://huggingface.co/krut42/voice-parakeet-tdt-110m-en-int8
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

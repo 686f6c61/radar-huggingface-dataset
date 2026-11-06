@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quickmt-en-ru-int8 | no disponible | no disponible | en→ru | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| quickmt/quickmt-en-ru (base) | no disponible | no disponible | en→ru | CC BY 4.0 | float16 (formato original) | HuggingFace |
-| Modelos NLLB de Meta | no disponible en esta ficha | no disponible | multilingüe | CC BY-NC 4.0 (variantes) | diversos | HuggingFace |
-| Modelos MarianMT (Helsinki-NLP) | no disponible en esta ficha | no disponible | pares específicos | variable | PyTorch, safetensors | HuggingFace |
+| quickmt-en-ru-int8 | no disponible | no disponible | en→ru | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| quickmt/quickmt-en-ru (base) | no disponible | no disponible | en→ru | CC BY 4.0 | float16 (formato original) | Hugging Face |
+| Modelos NLLB de Meta | no disponible en esta ficha | no disponible | multilingüe | CC BY-NC 4.0 (variantes) | diversos | Hugging Face |
+| Modelos MarianMT (Helsinki-NLP) | no disponible en esta ficha | no disponible | pares específicos | variable | PyTorch, safetensors | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible: no se han publicado parámetros, contexto ni métricas de calidad para el modelo base ni para esta conversión, por lo que no es posible establecer una comparativa rigurosa más allá de la licencia y el formato de despliegue.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-ru-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-ru-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-ru
 - Documentación de CTranslate2: no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible en la información proporcionada

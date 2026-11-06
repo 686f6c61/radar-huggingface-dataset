@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas comparab
 
 | Modelo | Relacion | Parametros | Ventana temporal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bambezius/sam3.1-soccernet-ball-streaming-v2 | Objeto de esta ficha | no disponible | 16 fotogramas de gradiente; memoria de 7 y object pointers de 16 fotogramas | SAM License | Publico en HuggingFace, requiere el base gated |
+| bambezius/sam3.1-soccernet-ball-streaming-v2 | Objeto de esta ficha | no disponible | 16 fotogramas de gradiente; memoria de 7 y object pointers de 16 fotogramas | SAM License | Publico en Hugging Face, requiere el base gated |
 | facebook/sam3.1 | Modelo base sobre el que se ajusta | no disponible | no disponible en la informacion proporcionada | SAM License | Gated, requiere acuerdo de acceso |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming-v2
+- Modelo en Hugging Face: https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming-v2
 - Modelo base: https://huggingface.co/facebook/sam3.1
 - Fichero de licencia incluido en el repositorio: LICENSE (referenciado como license_link en la model card)
 - Script de entrenamiento y reanudacion: scripts/train_sam31_streaming.py (incluido en el repositorio)

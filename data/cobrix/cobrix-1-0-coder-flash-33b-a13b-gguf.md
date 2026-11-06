@@ -73,5 +73,5 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CobrIX/CobrIX-1.0-Coder-Flash-33B-A13B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CobrIX/CobrIX-1.0-Coder-Flash-33B-A13B-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-v2

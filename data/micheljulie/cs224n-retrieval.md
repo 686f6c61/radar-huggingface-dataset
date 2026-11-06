@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micheljulie/cs224n-retrieval` es un prototipo de investigación de tipo CLIP orientado a tareas de *retrieval* (recuperación de información multimodal texto-imagen), publicado en HuggingFace por el usuario micheljulie dentro del contexto del curso CS224N de Stanford (procesamiento de lenguaje natural). El repositorio se presenta explícitamente como un punto de partida experimental: su model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo entrenado ni evaluado con métricas de referencia.
+`micheljulie/cs224n-retrieval` es un prototipo de investigación de tipo CLIP orientado a tareas de *retrieval* (recuperación de información multimodal texto-imagen), publicado en Hugging Face por el usuario micheljulie dentro del contexto del curso CS224N de Stanford (procesamiento de lenguaje natural). El repositorio se presenta explícitamente como un punto de partida experimental: su model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo entrenado ni evaluado con métricas de referencia.
 
 El dato más relevante técnicamente es la discrepancia entre la etiqueta de escala que aparece en la configuración (`giant`) y el recuento real de parámetros del archivo safetensors: 33.088 parámetros, es decir, aproximadamente 0,033 millones. Se trata, por tanto, de un modelo de juguete o de una inicialización mínima, no de un CLIP de gran tamaño. El repositorio ocupa 0,0 GB y no declara ningún resultado de benchmark.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micheljulie/cs224n-retrieval | 33.088 | No disponible | Sin benchmarks publicados | MIT | HuggingFace (0 descargas) |
+| micheljulie/cs224n-retrieval | 33.088 | No disponible | Sin benchmarks publicados | MIT | Hugging Face (0 descargas) |
 | Alternativas CLIP de referencia (p. ej. OpenAI CLIP, SigLIP) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificables en la informacion proporcionada para establecer una comparativa cuantitativa con familias CLIP de referencia. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos versan sobre accesorios de automoción y no guardan relación con el repositorio).
@@ -88,6 +88,6 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micheljulie/cs224n-retrieval
-- Archivos del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (disponibles en la raíz del repositorio de HuggingFace).
+- Hugging Face: https://huggingface.co/micheljulie/cs224n-retrieval
+- Archivos del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (disponibles en la raíz del repositorio de Hugging Face).
 - Paper, blog, repositorio o demo adicionales: no disponibles. La búsqueda web realizada no devolvió enlaces relevantes al modelo.

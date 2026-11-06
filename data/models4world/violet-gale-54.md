@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/violet-gale-54` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto conversacional. Se presenta como un ajuste fino (fine-tuning) sobre el modelo base `models4world/maple-signal-64`, también publicado por el mismo autor, aunque no se proporciona documentación técnica sobre ninguno de los dos. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors`, con un tamaño de 1,9 GB, y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) versión 0.20.0.
+El modelo `models4world/violet-gale-54` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto conversacional. Se presenta como un ajuste fino (fine-tuning) sobre el modelo base `models4world/maple-signal-64`, también publicado por el mismo autor, aunque no se proporciona documentación técnica sobre ninguno de los dos. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors`, con un tamaño de 1,9 GB, y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) versión 0.20.0.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no tiene descargas ni valoraciones, su model card está prácticamente vacía (todos los campos son "[More Information Needed]") y no se ha publicado ningún benchmark, paper o documentación adicional. A pesar de estar etiquetado como `text-generation` y `conversational`, la ausencia total de especificaciones técnicas impide evaluar su utilidad real. Se trata de un adaptador que depende completamente del modelo base `maple-signal-64`, del que tampoco se dispone de información pública.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocerse el modelo base ni sus características, no es posible compararlo con alternativas de la misma categoría. El autor `models4world` tiene otros repositorios en HuggingFace, pero ninguno está documentado.
+No disponible. Al no conocerse el modelo base ni sus características, no es posible compararlo con alternativas de la misma categoría. El autor `models4world` tiene otros repositorios en Hugging Face, pero ninguno está documentado.
 
 ## Limitaciones y advertencias
 
@@ -61,6 +61,6 @@ No disponible. Al no conocerse el modelo base ni sus características, no es pos
 
 ## Enlaces
 
-- [HuggingFace: models4world/violet-gale-54](https://huggingface.co/models4world/violet-gale-54)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world/models)
+- [Hugging Face: models4world/violet-gale-54](https://huggingface.co/models4world/violet-gale-54)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world/models)
 - [Paper de Lacoste et al. (2019) sobre impacto ambiental](https://arxiv.org/abs/1910.09700) (referenciado en la model card, sin datos concretos)

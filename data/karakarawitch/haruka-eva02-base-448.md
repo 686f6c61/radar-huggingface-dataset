@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka-EVA02-base-448 | 86,3 M | 448x448 | Anime/ilustración Danbooru + transferencia a fotos | no disponible | HuggingFace (timm) |
-| timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k | 86,3 M | 448x448 | ImageNet (fotos) | no disponible en la información | HuggingFace (timm) |
-| CLIP ViT-B/32 | ~88 M (visual) | 224x224 | Pares imagen-texto web general | MIT (OpenAI CLIP) | HuggingFace, open_clip |
-| DINOv2 ViT-B/14 | ~86 M | 518x518 | Fotos generales, autosupervisado | Apache 2.0 (según versión) | HuggingFace |
+| Haruka-EVA02-base-448 | 86,3 M | 448x448 | Anime/ilustración Danbooru + transferencia a fotos | no disponible | Hugging Face (timm) |
+| timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k | 86,3 M | 448x448 | ImageNet (fotos) | no disponible en la información | Hugging Face (timm) |
+| CLIP ViT-B/32 | ~88 M (visual) | 224x224 | Pares imagen-texto web general | MIT (OpenAI CLIP) | Hugging Face, open_clip |
+| DINOv2 ViT-B/14 | ~86 M | 518x518 | Fotos generales, autosupervisado | Apache 2.0 (según versión) | Hugging Face |
 
 La comparación directa con CLIP o DINOv2 no es equivalente en dominio: Haruka-EVA02 está especializado en ilustración y no produce alineamiento texto-imagen. Frente al EVA-02 original de timm, la diferencia es el corpus de fine-tuning (Danbooru frente a ImageNet) y la ausencia de cabeza de clasificación.
 
@@ -84,7 +84,7 @@ La comparación directa con CLIP o DINOv2 no es equivalente en dominio: Haruka-E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaraKaraWitch/haruka-eva02-base-448
+- Modelo en Hugging Face: https://huggingface.co/KaraKaraWitch/haruka-eva02-base-448
 - Modelo base en timm: https://huggingface.co/timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k
 - Repositorio timm: https://github.com/huggingface/pytorch-image-models
 - Patrocinador del cómputo: https://huggingface.co/alpindale y https://dphn.ai/

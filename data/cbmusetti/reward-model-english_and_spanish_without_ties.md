@@ -76,9 +76,9 @@ La precisión de preferencia en test ronda el 0,60, solo diez puntos por encima 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cbmusetti/reward-model-english_and_spanish_without_ties` | ~278 M | 256 tokens | en, es | MIT | HuggingFace, 0 descargas |
-| Reward models generalistas basados en XLM-R (p. ej. variantes de `OpenAssistant/reward-model-deberta-v3-base`) | ~184 M | 512 tokens | en (mayormente) | Apache 2.0 / MIT según variante | HuggingFace |
-| Reward models basados en Llama o Mistral para RLHF | 7-8 B | 4k-32k tokens | multilingüe | licencias variables | HuggingFace |
+| `cbmusetti/reward-model-english_and_spanish_without_ties` | ~278 M | 256 tokens | en, es | MIT | Hugging Face, 0 descargas |
+| Reward models generalistas basados en XLM-R (p. ej. variantes de `OpenAssistant/reward-model-deberta-v3-base`) | ~184 M | 512 tokens | en (mayormente) | Apache 2.0 / MIT según variante | Hugging Face |
+| Reward models basados en Llama o Mistral para RLHF | 7-8 B | 4k-32k tokens | multilingüe | licencias variables | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia. Frente a los reward models generalistas, este modelo está especializado en humor y es bilingüe inglés-español, pero su contexto de 256 tokens es más corto y su precisión de preferencia (0,60) es modesta.
 
@@ -91,14 +91,14 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - Entrenado sin empates: si dos candidatos son igual de buenos, el modelo forzará una preferencia, lo que introduce ruido en la señal.
 - Riesgo de sesgo: al aprender de preferencias humanas sobre humor, puede reproducir sesgos culturales, de género o de estilo presentes en los anotadores; la model card no documenta análisis de sesgo.
 - Riesgo de sobreajuste a los anotadores y al corpus concreto de la tesis; la generalización a otros dominios de humor no está demostrada.
-- Sin descargas ni likes en HuggingFace: no hay evidencia de uso en la comunidad ni de validación externa.
+- Sin descargas ni likes en Hugging Face: no hay evidencia de uso en la comunidad ni de validación externa.
 - La licencia MIT permite uso comercial, pero el modelo base XLM-RoBERTa también es MIT, por lo que no hay restricciones adicionales conocidas.
 - Para cargarlo es necesario clonar el repositorio de la tesis y usar su código; no es un checkpoint cargable directamente con `AutoModelForSequenceClassification` sin restaurar el wrapper.
 - El repositorio de 26,8 GB incluye múltiples checkpoints (mejor trial y ensemble), lo que complica el despliegue si solo se necesita uno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cbmusetti/reward-model-english_and_spanish_without_ties
+- Modelo en Hugging Face: https://huggingface.co/cbmusetti/reward-model-english_and_spanish_without_ties
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio de la tesis (código y logs): https://github.com/carlos-musetti/tesis
 - Ruta del reward model en el repositorio: `reward-model/` dentro del repositorio de la tesis

@@ -79,12 +79,12 @@ Los únicos datos de rendimiento disponibles son las condiciones de medida, que 
 
 | Alternativa | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vietnqai/ridge-loan-interest-prediction` | Regresión Ridge con optimizadores propios | $d = 115$ (o 116) | No aplica | No disponible | Repositorio HuggingFace, sin pesos publicados |
+| `vietnqai/ridge-loan-interest-prediction` | Regresión Ridge con optimizadores propios | $d = 115$ (o 116) | No aplica | No disponible | Repositorio Hugging Face, sin pesos publicados |
 | scikit-learn `Ridge` | Regresión Ridge con solver cerrado (Cholesky, SVD, LSQR) | $d$ según datos | No aplica | BSD-3-Clause (librería) | Paquete consolidado; usado como referencia dentro de este mismo repositorio |
 | scikit-learn `SGDRegressor` | Regresión lineal por descenso de gradiente estocástico | $d$ según datos | No aplica | BSD-3-Clause (librería) | Paquete consolidado; equivalente funcional al eje SGD del repositorio |
 | Implementaciones tipo `glmnet` | Regresión penalizada con coordenadas y regularización elástica | $d$ según datos | No aplica | No disponible en la información | No disponible en la información |
 
-No se han identificado en la información proporcionada otros modelos o repositorios directamente comparables en HuggingFace con la misma combinación de problema (Ridge sobre Lending Club) y objetivo (comparación de optimizadores).
+No se han identificado en la información proporcionada otros modelos o repositorios directamente comparables en Hugging Face con la misma combinación de problema (Ridge sobre Lending Club) y objetivo (comparación de optimizadores).
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se han identificado en la información proporcionada otros modelos o reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vietnqai/ridge-loan-interest-prediction
+- Modelo en Hugging Face: https://huggingface.co/vietnqai/ridge-loan-interest-prediction
 - Conjunto de datos Lending Club en Kaggle: https://www.kaggle.com/datasets/wordsforthewise/lending-club
 - Página de configuración de API de Kaggle (para el token de descarga): https://www.kaggle.com/settings
 - Ficheros referenciados dentro del repositorio (rutas relativas, sin URL absoluta disponible): `KE_HOACH_TRIEN_KHAI.md`, `CLAUDE.md`, `docs/van-phong-tieng-viet.md`, `docs/quy-uoc-bao-cao.md`, `requirements.txt`, `src/objective.py`, `src/direction.py`, `src/stepsize.py`, `src/iterate.py`, `src/experiment.py`, `src/reference.py`, `src/figures.py`, `src/make_figures.py`

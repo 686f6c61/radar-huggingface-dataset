@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA de la organización dementor-research, entrenado mediante supervisión fina (SFT) sobre el modelo base Qwen/Qwen3.6-27B. El adaptador forma parte de un estudio de imitación de comportamiento definido por configuración, denominado «dementor», cuyo objetivo es transferir el estilo de generación de otro modelo (OLMo-3-7B) a un modelo más grande. El nombre del adaptador indica la dirección de la imitación: el modelo base Qwen3.6-27B se entrena para comportarse como OLMo-3-7B en tareas de escritura creativa (writing prompts).
 
-El adaptador tiene un tamaño de repositorio de 1,0 GB, está publicado en formato safetensors y se carga mediante la librería PEFT. No se especifican licencia, idiomas ni pipeline en la ficha de HuggingFace. El modelo base Qwen3.6-27B es un modelo denso multimodal con atención híbrida basada en gated delta networks y una ventana de contexto de 262 000 tokens, según la documentación oficial de Qwen. Este adaptador, por tanto, hereda las capacidades del modelo base, pero modifica su comportamiento hacia la imitación del estilo de OLMo-3-7B en escritura.
+El adaptador tiene un tamaño de repositorio de 1,0 GB, está publicado en formato safetensors y se carga mediante la librería PEFT. No se especifican licencia, idiomas ni pipeline en la ficha de Hugging Face. El modelo base Qwen3.6-27B es un modelo denso multimodal con atención híbrida basada en gated delta networks y una ventana de contexto de 262 000 tokens, según la documentación oficial de Qwen. Este adaptador, por tanto, hereda las capacidades del modelo base, pero modifica su comportamiento hacia la imitación del estilo de OLMo-3-7B en escritura.
 
 La relevancia de este adaptador radica en su uso como herramienta de investigación en la transferencia de estilos y comportamientos entre modelos de distinto tamaño y arquitectura. Al ser un adaptador LoRA de bajo rango (rank 32), permite experimentar con la imitación de comportamiento sin necesidad de reentrenar el modelo completo, lo que facilita estudios comparativos y análisis de alineación estilística.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Base | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42 | Qwen3.6-27B | Adaptador LoRA (imitacion de OLMo-3-7B) | 262K | no disponible | HuggingFace |
-| sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42 | OLMo-3-7B | Adaptador LoRA (imitacion de Qwen3.6-27B) | no disponible | no disponible | HuggingFace |
+| sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42 | Qwen3.6-27B | Adaptador LoRA (imitacion de OLMo-3-7B) | 262K | no disponible | Hugging Face |
+| sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42 | OLMo-3-7B | Adaptador LoRA (imitacion de Qwen3.6-27B) | no disponible | no disponible | Hugging Face |
 | sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2 | Qwen3.6-27B | Adaptador LoRA (imitacion de GPT-OSS-20B) | 262K | no disponible | FriendliAI |
 
 Estos tres adaptadores pertenecen a la misma campana de estudio y comparten la metodologia de entrenamiento, diferenciandose en el modelo imitado. No se dispone de datos de rendimiento comparativo entre ellos.
@@ -80,7 +80,7 @@ Estos tres adaptadores pertenecen a la misma campana de estudio y comparten la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_olmo-3-7b_seed42
 - Adaptador inverso (OLMo-3-7B imitando a Qwen3.6-27B): https://huggingface.co/dementor-research/sft_writingprompts_olmo-3-7b_as_qwen3.6-27b_seed42
 - Adaptador similar con GPT-OSS-20B (FriendliAI): https://friendli.ai/models/dementor-research/sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2
 - Documentacion de Qwen3.6 en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

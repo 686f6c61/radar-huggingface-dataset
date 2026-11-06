@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreFlowSeeks-flow | no disponible | no aplica | Flujo óptico denso | Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreFlowSeeks-flow | no disponible | no aplica | Flujo óptico denso | Apache 2.0 | Hugging Face (LibreYOLO) |
 | SEA-RAFT | no disponible | no aplica | Flujo óptico denso | BSD 3-Clause | Repo upstream |
 | FlowSeek (original, mattpoggi) | no disponible | no aplica | Flujo óptico denso | no disponible | GitHub |
 | RAFT (antecesor) | no disponible | no aplica | Flujo óptico denso | BSD 3-Clause | Repo original |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (EPE, Fl-all) en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreFlowSeeks-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreFlowSeeks-flow
 - Modelo hermano (misma arquitectura, distinto número de iteraciones): https://huggingface.co/LibreYOLO/LibreFlowSeekt-flow
 - Repositorio upstream FlowSeek: https://github.com/mattpoggi/flowseek
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo

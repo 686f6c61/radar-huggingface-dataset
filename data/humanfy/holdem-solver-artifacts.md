@@ -6,7 +6,7 @@ El repositorio `humanfy/Holdem-Solver-Artifacts` no contiene un modelo de inteli
 
 El contenido actual corresponde a un estado de recuperación de una ejecución de solver que no ha finalizado (`training-handoffs/holdem-v1`), con un snapshot estable que captura 43 trabajos completados, 1 en ejecución y 28 pendientes. No se trata de una versión GTO final ni de un lanzamiento aceptado. Su propósito es permitir reanudar o auditar el proceso de entrenamiento del solver, no servir como modelo listo para inferencia.
 
-Relevancia: para investigadores y desarrolladores de estrategias de poker, este repositorio ofrece una base reproducible y verificable para continuar el entrenamiento de un solver de póker, pero no es un modelo desplegable. Toda la información sobre arquitectura, parámetros o licencia no está disponible en la ficha de HuggingFace.
+Relevancia: para investigadores y desarrolladores de estrategias de poker, este repositorio ofrece una base reproducible y verificable para continuar el entrenamiento de un solver de póker, pero no es un modelo desplegable. Toda la información sobre arquitectura, parámetros o licencia no está disponible en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 

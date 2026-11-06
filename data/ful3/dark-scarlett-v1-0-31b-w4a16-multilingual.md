@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ful3/Dark-Scarlett-v1.0-31B-W4A16-multilingual | 6.562.410.852 según safetensors (denominado 31B) | No disponible (referencia de 32k en la model card) | W4A16 GPTQ, group size 32, ~20 GiB en disco | Términos de Gemma (según la model card) | HuggingFace, librería vLLM, 0 descargas |
-| ReadyArt/Dark-Scarlett-v1.0-31B (base, BF16) | No disponible | No disponible | BF16 (sin cuantizar) | Términos de Gemma (según la model card del derivado) | HuggingFace |
+| Ful3/Dark-Scarlett-v1.0-31B-W4A16-multilingual | 6.562.410.852 según safetensors (denominado 31B) | No disponible (referencia de 32k en la model card) | W4A16 GPTQ, group size 32, ~20 GiB en disco | Términos de Gemma (según la model card) | Hugging Face, librería vLLM, 0 descargas |
+| ReadyArt/Dark-Scarlett-v1.0-31B (base, BF16) | No disponible | No disponible | BF16 (sin cuantizar) | Términos de Gemma (según la model card del derivado) | Hugging Face |
 | Otras cuantizaciones W4A16 de modelos de ~31B | No disponible | No disponible | W4A16 GPTQ | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-W4A16-multilingual
+- Modelo en Hugging Face: https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-W4A16-multilingual
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-31B
 - llm-compressor (herramienta de cuantización citada en la model card): https://github.com/vllm-project/llm-compressor
 - Documentación de vLLM (librería indicada en el repositorio): https://docs.vllm.ai

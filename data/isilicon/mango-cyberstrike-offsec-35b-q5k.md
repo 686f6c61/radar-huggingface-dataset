@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-cyberstrike-offsec-35b-q5k
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-cyberstrike-offsec-35b-q5k
 - Modelo base inmediato: https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF
 - Modelo original citado por el publisher: https://huggingface.co/oyildirim/CyberStrike-OffSec-35B
 - Coleccion Mango de modelos probados y espejos: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2

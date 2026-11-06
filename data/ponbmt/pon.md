@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ponbmt/pon es un repositorio de modelo alojado en HuggingFace por el usuario ponbmt, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, su numero de parametros, su longitud de contexto, sus idiomas de entrenamiento ni sus datos de entrenamiento. La model card del repositorio se limita a repetir la declaracion de licencia, sin texto descriptivo, sin ejemplos de uso y sin resultados de evaluacion.
+ponbmt/pon es un repositorio de modelo alojado en Hugging Face por el usuario ponbmt, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, su numero de parametros, su longitud de contexto, sus idiomas de entrenamiento ni sus datos de entrenamiento. La model card del repositorio se limita a repetir la declaracion de licencia, sin texto descriptivo, sin ejemplos de uso y sin resultados de evaluacion.
 
 El repositorio ocupa 0,2 GB, lo que sugiere un modelo de tamano reducido (el peso de un transformer denso de aproximadamente 100-200 millones de parametros en fp16 ronda esa cifra), si bien este dato es una inferencia a partir del tamano del repositorio y no una especificacion confirmada por el autor. El repositorio no declara pipeline de inferencia, no tiene etiquetas de idioma y acumula cero descargas y cero "likes", por lo que no hay evidencia de uso en produccion ni de validacion por parte de la comunidad.
 
@@ -62,7 +62,7 @@ No es posible proponer casos de uso verificados: no se conoce la modalidad del m
 - Extraccion de informacion estructurada: viable solo si el modelo soporta instrucciones y salidas en formato JSON; no hay evidencia de ello.
 - Asistente conversacional de dominio acotado: exigiria conocer la longitud de contexto efectiva y la calidad en multi-turno, datos ambos no publicados.
 - Componente auxiliar en un pipeline mayor (por ejemplo, reformulacion de consultas o resumen de fragmentos cortos): su viabilidad depende de una evaluacion comparativa frente a alternativas consolidadas de tamano similar.
-- Experimentacion academica y docencia: el modelo puede servir como ejemplo de publicacion minima en HuggingFace, util para estudiar practicas de documentacion de modelos, no para obtener resultados de investigacion reproducibles.
+- Experimentacion academica y docencia: el modelo puede servir como ejemplo de publicacion minima en Hugging Face, util para estudiar practicas de documentacion de modelos, no para obtener resultados de investigacion reproducibles.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ponbmt/pon
+- Repositorio en Hugging Face: https://huggingface.co/ponbmt/pon
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

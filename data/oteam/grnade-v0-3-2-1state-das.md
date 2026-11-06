@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 1state das (esta ficha) | 2,157 M | 1 conformación, grafo espacial | Diseño inverso de ARN | AGPL-3.0 | HuggingFace (`oteam`) |
-| gRNAde v1 | 2,157 M | 1 conformación, grafo con secuencia y pares de bases | Diseño inverso de ARN | AGPL-3.0 | HuggingFace (`oteam/grnade`) |
-| gRNAde v0.3.2 3state das | 2,157 M | 3 conformaciones, grafo espacial | Diseño inverso multi-conformación | AGPL-3.0 | HuggingFace (`oteam`) |
-| gRNAde v0.3.2 5state all | 2,157 M | 5 conformaciones, grafo espacial | Diseño inverso multi-conformación | AGPL-3.0 | HuggingFace (`oteam`) |
+| gRNAde v0.3.2 1state das (esta ficha) | 2,157 M | 1 conformación, grafo espacial | Diseño inverso de ARN | AGPL-3.0 | Hugging Face (`oteam`) |
+| gRNAde v1 | 2,157 M | 1 conformación, grafo con secuencia y pares de bases | Diseño inverso de ARN | AGPL-3.0 | Hugging Face (`oteam/grnade`) |
+| gRNAde v0.3.2 3state das | 2,157 M | 3 conformaciones, grafo espacial | Diseño inverso multi-conformación | AGPL-3.0 | Hugging Face (`oteam`) |
+| gRNAde v0.3.2 5state all | 2,157 M | 5 conformaciones, grafo espacial | Diseño inverso multi-conformación | AGPL-3.0 | Hugging Face (`oteam`) |
 
 Las diferencias entre variantes se limitan al número de conformaciones de entrada y al conjunto de canales del grafo, no al tamaño del modelo. No se dispone de datos de rendimiento comparativo entre ellas en la información disponible.
 
@@ -97,7 +97,7 @@ Las diferencias entre variantes se limitan al número de conformaciones de entra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-1state-das
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-1state-das
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variante v0.3.2 1state all: https://huggingface.co/oteam/grnade-v0.3.2-1state-all

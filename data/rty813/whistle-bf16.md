@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamano | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rty813/whistle-bf16` | Port bf16 de ASR para transformers/vLLM | No disponible | No declarados en esta ficha | apache-2.0 | HuggingFace |
-| `Cactus-Compute/whistle` | ASR on-device original, cuantizado y GGUF | 16,9 MB (un archivo) | en, de, fr, es, it, nl, pl | apache-2.0 | HuggingFace |
-| `Cactus-Compute/needle3` | Modelo del mismo motor de CPU | No disponible | No disponible | No disponible | HuggingFace |
+| `rty813/whistle-bf16` | Port bf16 de ASR para transformers/vLLM | No disponible | No declarados en esta ficha | apache-2.0 | Hugging Face |
+| `Cactus-Compute/whistle` | ASR on-device original, cuantizado y GGUF | 16,9 MB (un archivo) | en, de, fr, es, it, nl, pl | apache-2.0 | Hugging Face |
+| `Cactus-Compute/needle3` | Modelo del mismo motor de CPU | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de la misma categoria (por ejemplo, variantes de Whisper o wav2vec2). La comparativa anterior es estructural, no de calidad.
 

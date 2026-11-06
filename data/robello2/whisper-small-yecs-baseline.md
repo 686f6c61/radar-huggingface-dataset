@@ -80,9 +80,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-yecs-baseline | 241,7 M | yo, en (code-switching) | 30 s por segmento (estandar Whisper) | NOODL-1.0 | HuggingFace, 0 descargas |
-| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | 30 s por segmento | MIT (modelo base) | HuggingFace, ampliamente usado |
-| openai/whisper-medium | 769 M | multilingue | 30 s por segmento | MIT | HuggingFace |
+| whisper-small-yecs-baseline | 241,7 M | yo, en (code-switching) | 30 s por segmento (estandar Whisper) | NOODL-1.0 | Hugging Face, 0 descargas |
+| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | 30 s por segmento | MIT (modelo base) | Hugging Face, ampliamente usado |
+| openai/whisper-medium | 769 M | multilingue | 30 s por segmento | MIT | Hugging Face |
 | Modelos ASR especificos para yoruba | no disponible | yo | no disponible | no disponible | no disponible |
 
 La comparacion directa de rendimiento con whisper-small sin ajustar no esta publicada en la informacion disponible; el autor solo reporta metricas internas de desarrollo. La ventaja esperada frente al modelo base es la especializacion en code-switching yoruba-ingles, a costa de perder cobertura multilingue general.
@@ -101,7 +101,7 @@ La comparacion directa de rendimiento con whisper-small sin ajustar no esta publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-baseline
+- Modelo en Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-baseline
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hard_5gram_4_6_384_babylm_10m_seed44` es un modelo de lenguaje publicado en HuggingFace por el usuario Lanni-ni. La model card es una plantilla autogenerada, por lo que no documenta arquitectura, datos de entrenamiento ni capacidades. A partir del identificador y las etiquetas se deduce que se trata de un modelo pequeño, con 28.750.464 parámetros, destinado a la generación de texto y posiblemente asociado a experimentos con n-gramas de orden 5 y al benchmark BabyLM. El repositorio emplea pesos en formato safetensors y contiene la etiqueta `custom_code`, lo que indica que puede requerir código personalizado para ser cargado. Su relevancia reside en ser un ejemplo de modelo de lenguaje compacto para investigación en eficiencia y aprendizaje de lenguaje, aunque la información pública actual es insuficiente para evaluar su utilidad práctica.
+El modelo `hard_5gram_4_6_384_babylm_10m_seed44` es un modelo de lenguaje publicado en Hugging Face por el usuario Lanni-ni. La model card es una plantilla autogenerada, por lo que no documenta arquitectura, datos de entrenamiento ni capacidades. A partir del identificador y las etiquetas se deduce que se trata de un modelo pequeño, con 28.750.464 parámetros, destinado a la generación de texto y posiblemente asociado a experimentos con n-gramas de orden 5 y al benchmark BabyLM. El repositorio emplea pesos en formato safetensors y contiene la etiqueta `custom_code`, lo que indica que puede requerir código personalizado para ser cargado. Su relevancia reside en ser un ejemplo de modelo de lenguaje compacto para investigación en eficiencia y aprendizaje de lenguaje, aunque la información pública actual es insuficiente para evaluar su utilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La información disponible no incluye una descripción detallada de la arquitect
 
 ## Capacidades
 
-La documentación pública no detalla las capacidades del modelo. La única indicación funcional es el pipeline `text-generation` en HuggingFace. A continuación se relacionan las capacidades conocidas junto con el estado de la información:
+La documentación pública no detalla las capacidades del modelo. La única indicación funcional es el pipeline `text-generation` en Hugging Face. A continuación se relacionan las capacidades conocidas junto con el estado de la información:
 
 - Generación de texto: el pipeline declarado es `text-generation`, aunque no se han documentado dominios ni tareas concretas.
 - Razonamiento y matemáticas: no disponible.
@@ -69,10 +69,10 @@ No disponible. No existen datos públicos de rendimiento o arquitectura que perm
 - Riesgo de alucinación: no evaluado. La ausencia de benchmarks impide conocer la fiabilidad de la generación.
 - Limitaciones de contexto o idioma: no se especifica la longitud de contexto ni los idiomas soportados. El rendimiento fuera de la lengua de entrenamiento (desconocida) es incierto.
 - Restricciones de licencia: la licencia no está indicada. Esto bloquea el uso comercial sin autorización explícita del autor.
-- Código personalizado: la etiqueta `custom_code` introduce un riesgo de seguridad al cargar el modelo, ya que HuggingFace ejecuta código arbitrario enviado por el autor. Se recomienda revisar el código antes de usarlo.
+- Código personalizado: la etiqueta `custom_code` introduce un riesgo de seguridad al cargar el modelo, ya que Hugging Face ejecuta código arbitrario enviado por el autor. Se recomienda revisar el código antes de usarlo.
 - Producción: sin evaluaciones y con una model card vacía, el modelo no debería usarse en entornos de producción sin una validación completa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lanni-ni/hard_5gram_4_6_384_babylm_10m_seed44
+- Repositorio en Hugging Face: https://huggingface.co/Lanni-ni/hard_5gram_4_6_384_babylm_10m_seed44
 - Referencia citada en la model card (paper sobre impacto ambiental): arxiv:1910.09700 (https://arxiv.org/abs/1910.09700)

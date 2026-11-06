@@ -84,8 +84,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable. Las
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEONGMIN1234/act_pick_cube (este modelo) | ACT, aprendizaje por imitacion | 51.668.614 | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| Otras politicas ACT de LeRobot Hub | ACT, aprendizaje por imitacion | no disponible | no aplica | variable por repositorio | HuggingFace |
+| SEONGMIN1234/act_pick_cube (este modelo) | ACT, aprendizaje por imitacion | 51.668.614 | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| Otras politicas ACT de LeRobot Hub | ACT, aprendizaje por imitacion | no disponible | no aplica | variable por repositorio | Hugging Face |
 | Diffusion Policy y otras politicas visomotoras | no disponible en esta informacion | no disponible | no aplica | no disponible | no disponible |
 
 Datos comparativos de rendimiento (tasa de exito, latencia, robustez ante cambios de posicion o iluminacion): no disponibles para ninguno de los modelos de la tabla en la informacion proporcionada.
@@ -106,7 +106,7 @@ Datos comparativos de rendimiento (tasa de exito, latencia, robustez ante cambio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SEONGMIN1234/act_pick_cube
+- Modelo en Hugging Face: https://huggingface.co/SEONGMIN1234/act_pick_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/SEONGMIN1234/so101-pick-cube-50-v2_20261013_221202
 - Visualizacion del dataset (Space de LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=SEONGMIN1234/so101-pick-cube-50-v2_20261013_221202
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Malvos-32B es un modelo de lenguaje de 32 000 millones de parámetros desarrollado por SHIKARI2, publicado en HuggingFace con licencia Apache 2.0. Se trata de un fine-tune del modelo `unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit`, que a su vez es una destilación de DeepSeek-R1 sobre la arquitectura Qwen2. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y con TRL (Transformers Reinforcement Learning) según las etiquetas del repositorio.
+Malvos-32B es un modelo de lenguaje de 32 000 millones de parámetros desarrollado por SHIKARI2, publicado en Hugging Face con licencia Apache 2.0. Se trata de un fine-tune del modelo `unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit`, que a su vez es una destilación de DeepSeek-R1 sobre la arquitectura Qwen2. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y con TRL (Transformers Reinforcement Learning) según las etiquetas del repositorio.
 
 La información pública es extremadamente limitada: la model card no describe el propósito del fine-tune, los datos de entrenamiento ni las capacidades específicas. El modelo solo declara soporte para inglés y no se han publicado benchmarks ni ejemplos de uso. Su relevancia actual reside en que parte de un modelo base muy capaz (DeepSeek-R1-Distill-Qwen-32B) y podría ofrecer mejoras en tareas concretas, pero sin documentación adicional no es posible evaluar su valor real.
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SHIKARI2/Malvos-32B
+- Repositorio de Hugging Face: https://huggingface.co/SHIKARI2/Malvos-32B
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

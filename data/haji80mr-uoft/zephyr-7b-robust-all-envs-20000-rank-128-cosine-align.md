@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align` es un checkpoint publicado en HuggingFace por el usuario `haji80mr-uoft`, presumiblemente derivado de la familia Zephyr-7B. El repositorio contiene 0,4 GB de pesos en formato safetensors, esta etiquetado con la libreria `transformers` y con la referencia `arxiv:1910.09700` (el articulo de Lacoste et al. sobre estimacion de emisiones de carbono, que aparece de forma automatica en la plantilla de model card de HuggingFace). No cuenta con descargas ni likes en el momento de la consulta.
+El modelo `haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align` es un checkpoint publicado en Hugging Face por el usuario `haji80mr-uoft`, presumiblemente derivado de la familia Zephyr-7B. El repositorio contiene 0,4 GB de pesos en formato safetensors, esta etiquetado con la libreria `transformers` y con la referencia `arxiv:1910.09700` (el articulo de Lacoste et al. sobre estimacion de emisiones de carbono, que aparece de forma automatica en la plantilla de model card de Hugging Face). No cuenta con descargas ni likes en el momento de la consulta.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada por el autor: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. Esto significa que no hay informacion oficial sobre arquitectura declarada, composicion del dataset de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada por el autor: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. Esto significa que no hay informacion oficial sobre arquitectura declarada, composicion del dataset de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
 
 El nombre del checkpoint (`Zephyr-7B`, `rank-128`, `cosine`, `align`) y el reducido tamano del repositorio sugieren que podria tratarse de un adaptador de tipo LoRA (rango 128, scheduler coseno, orientado a alineamiento) sobre un modelo Zephyr de 7B, pero esto no esta confirmado por el autor y debe tratarse como una hipotesis de trabajo, no como un dato verificado.
 
@@ -27,7 +27,7 @@ El nombre del checkpoint (`Zephyr-7B`, `rank-128`, `cosine`, `align`) y el reduc
 
 ## Arquitectura y entrenamiento
 
-No hay informacion oficial sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla por defecto de HuggingFace y no contiene ningun apartado cumplimentado: ni arquitectura, ni objetivo de entrenamiento, ni datos, ni hiperparametros, ni infraestructura de computo.
+No hay informacion oficial sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card publicada es la plantilla por defecto de Hugging Face y no contiene ningun apartado cumplimentado: ni arquitectura, ni objetivo de entrenamiento, ni datos, ni hiperparametros, ni infraestructura de computo.
 
 A partir de los indicios disponibles se pueden formular las siguientes hipotesis, siempre sin confirmar: el prefijo `Zephyr-7B` apunta a un modelo derivado de Zephyr-7B, que segun la documentacion publica de la familia es un ajuste de `mistralai/Mistral-7B-v0.1` entrenado con optimizacion directa de preferencias (DPO) sobre una mezcla de datasets sinteticos. Los sufijos `rank-128`, `cosine` y `align` son consistentes con un ajuste fino mediante LoRA de rango 128 con scheduler coseno y una fase de alineamiento. El tamano del repositorio (0,4 GB) es muy inferior a los aproximadamente 14 GB que ocuparian los pesos completos de un modelo de 7B en fp16, lo que respalda la hipotesis de que se trata de un adaptador y no de un checkpoint completo. Ninguno de estos extremos esta verificado por el autor.
 
@@ -39,7 +39,7 @@ A partir de los indicios disponibles se pueden formular las siguientes hipotesis
 - No se documenta modo de razonamiento explicito (thinking mode).
 - No se documentan capacidades de vision ni de audio (la etiqueta `transformers` y el formato safetensors no implican multimodalidad).
 - No se documentan capacidades multilingues ni el conjunto de idiomas cubiertos.
-- Al estar etiquetado como `endpoints_compatible`, el repositorio es desplegable a traves de la infraestructura de Inference Endpoints de HuggingFace, lo que no aporta informacion sobre sus capacidades.
+- Al estar etiquetado como `endpoints_compatible`, el repositorio es desplegable a traves de la infraestructura de Inference Endpoints de Hugging Face, lo que no aporta informacion sobre sus capacidades.
 
 ## Casos de uso
 
@@ -49,9 +49,9 @@ Dado que no existe documentacion funcional publicada, los siguientes escenarios 
 - Clasificacion y generacion de texto en ingles: si hereda el comportamiento de Zephyr-7B, seria utilizable para tareas de generacion conversacional, aunque el idioma y el rendimiento reales no estan documentados.
 - Fine-tuning posterior como punto de partida: al ser presumiblemente un adaptador LoRA, podria servir como inicializacion para ajustes adicionales sobre el mismo modelo base.
 - Desarrollo de pipelines de investigacion con `transformers`: el formato safetensors y la compatibilidad con la libreria permiten cargarlo con `AutoModelForCausalLM` si el autor ha publicado los ficheros de configuracion correspondientes.
-- Pruebas de despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse mediante la infraestructura gestionada de HuggingFace.
+- Pruebas de despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse mediante la infraestructura gestionada de Hugging Face.
 - Comparativas de tecnicas de alineamiento: el sufijo `cosine` y `align` sugiere que el checkpoint forma parte de una serie de experimentos (existen otros repositorios del mismo autor como `zephyr-7b-beta-merged-server-10000`), por lo que podria emplearse en estudios comparativos de configuraciones de entrenamiento.
-- Auditoria de artefactos publicados: dado que la model card esta vacia y el modelo no tiene descargas, puede utilizarse como caso de estudio sobre trazabilidad y documentacion en el ecosistema HuggingFace.
+- Auditoria de artefactos publicados: dado que la model card esta vacia y el modelo no tiene descargas, puede utilizarse como caso de estudio sobre trazabilidad y documentacion en el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,9 +75,9 @@ No hay requisitos oficiales publicados. Las siguientes estimaciones son condicio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align` | no disponible (nombre sugiere 7B) | no disponible | no publicado | no disponible | publico en HuggingFace, 0 descargas |
-| `HuggingFaceH4/zephyr-7b-beta` | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida | no disponible en la informacion recogida | publico en HuggingFace |
-| `mistralai/Mistral-7B-v0.1` | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida | no disponible en la informacion recogida | publico en HuggingFace |
+| `haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align` | no disponible (nombre sugiere 7B) | no disponible | no publicado | no disponible | publico en Hugging Face, 0 descargas |
+| `HuggingFaceH4/zephyr-7b-beta` | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida | no disponible en la informacion recogida | publico en Hugging Face |
+| `mistralai/Mistral-7B-v0.1` | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida | no disponible en la informacion recogida | publico en Hugging Face |
 
 La unica relacion documentada en los resultados de busqueda es que Zephyr-7B-beta es un ajuste de Mistral-7B-v0.1 entrenado con DPO sobre una mezcla de datasets sinteticos publicos. No se dispone de datos comparativos de rendimiento, contexto ni licencia dentro de la informacion proporcionada.
 
@@ -95,7 +95,7 @@ La unica relacion documentada en los resultados de busqueda es que Zephyr-7B-bet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align
+- Modelo en Hugging Face: https://huggingface.co/haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-cosine-align
 - Perfil del autor: https://huggingface.co/haji80mr-uoft
 - Repositorio relacionado del mismo autor: https://huggingface.co/haji80mr-uoft/zephyr-7b-beta-merged-server-10000
 - Repositorio relacionado del mismo autor: https://huggingface.co/haji80mr-uoft/zephyr-7b-beta-merged-server-10000-best_checkpoint

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theostos/qwen-3.5-babel-4b-sft-agent | 4.205.751.296 | No disponible | Sin benchmark declarado | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada (el ajuste hereda Apache 2.0) | HuggingFace |
+| theostos/qwen-3.5-babel-4b-sft-agent | 4.205.751.296 | No disponible | Sin benchmark declarado | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada (el ajuste hereda Apache 2.0) | Hugging Face |
 | Otros modelos de demostracion automatica (DeepSeek-Prover, Goedel-Prover y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion con alternativas especializadas en demostracion automatica de teoremas no puede completarse con la informacion disponible: no hay datos de parametros, contexto, licencia ni resultados de benchmark de esos modelos en el material proporcionado.
@@ -87,6 +87,6 @@ La comparacion con alternativas especializadas en demostracion automatica de teo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theostos/qwen-3.5-babel-4b-sft-agent
+- Modelo en Hugging Face: https://huggingface.co/theostos/qwen-3.5-babel-4b-sft-agent
 - Repositorio Babel-Formal (pipeline de entrenamiento y verificacion): https://github.com/theostos/babel-formal
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

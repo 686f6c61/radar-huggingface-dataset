@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Modalidades | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaichang/embeddinggemma2-global-birds-2000 | Audio, imagen, texto (en/ko), dominio aves | 744 M | no disponible | cc-by-sa-4.0 | HuggingFace, pesos safetensors + indice |
-| google/embeddinggemma-2 (modelo base) | Texto, multilingue general | 740 M segun la informacion de este repositorio | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| jaichang/embeddinggemma2-global-birds-2000 | Audio, imagen, texto (en/ko), dominio aves | 744 M | no disponible | cc-by-sa-4.0 | Hugging Face, pesos safetensors + indice |
+| google/embeddinggemma-2 (modelo base) | Texto, multilingue general | 740 M segun la informacion de este repositorio | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | BirdNET (Cornell Lab) | Audio, dominio aves | no disponible | no disponible | no disponible en la informacion proporcionada | Distribucion propia del proyecto |
 | BioCLIP | Imagen y texto, dominio biologico | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio propio del proyecto |
 
@@ -101,7 +101,7 @@ Comparativa cualitativa: frente a los clasificadores bioacusticos clasicos, que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000
+- Modelo en Hugging Face: https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000
 - Repositorio companero on-device (LiteRT .tflite y WebGPU .onnx): https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000-litert
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - iNaturalist Open Data (taxonomia, audio y fotos): https://www.inaturalist.org/pages/developers

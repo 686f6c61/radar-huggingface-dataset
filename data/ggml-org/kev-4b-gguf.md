@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kev-4B-GGUF es la distribucion en formato GGUF de Kev-4B, un modelo de decision (decision model) de aproximadamente 4.200 millones de parametros publicado por la organizacion ggml-org, el mismo equipo responsable de llama.cpp. No se trata de un modelo conversacional de proposito general: su pipeline declarado en HuggingFace es text-classification y su model card indica que debe consumirse a traves de un endpoint especifico llamado /v1/systemone, integrado en la herramienta llama.app.
+Kev-4B-GGUF es la distribucion en formato GGUF de Kev-4B, un modelo de decision (decision model) de aproximadamente 4.200 millones de parametros publicado por la organizacion ggml-org, el mismo equipo responsable de llama.cpp. No se trata de un modelo conversacional de proposito general: su pipeline declarado en Hugging Face es text-classification y su model card indica que debe consumirse a traves de un endpoint especifico llamado /v1/systemone, integrado en la herramienta llama.app.
 
 El modelo deriva de jaredpalmer/kev-4b, que a su vez figura asociado a Qwen/Qwen3.5-4B-Base como modelo fuente, de modo que la arquitectura subyacente es la de un transformer decoder de la familia Qwen de cuarta generacion en su variante de 4B. El repositorio pesa 15,9 GB, lo que sugiere que incluye varias cuantizaciones GGUF distintas del mismo modelo, aunque los tipos concretos no se detallan en la informacion disponible.
 
@@ -72,7 +72,7 @@ No hay datos de rendimiento ni de benchmarks en la informacion disponible, por l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ggml-org/Kev-4B-GGUF | 4,2B | No disponible | No disponible | apache-2.0 | GGUF en HuggingFace |
+| ggml-org/Kev-4B-GGUF | 4,2B | No disponible | No disponible | apache-2.0 | GGUF en Hugging Face |
 | jaredpalmer/kev-4b | No disponible | No disponible | No disponible | No disponible | Modelo original del que deriva esta conversion |
 | Qwen/Qwen3.5-4B-Base | No disponible | No disponible | No disponible | No disponible | Modelo base citado como fuente |
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento ni de benchmarks en la informacion disponible, por l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/Kev-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/Kev-4B-GGUF
 - Modelo original: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Herramienta de conversion: https://github.com/ggml-org/convert

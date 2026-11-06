@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jerryjgmw/paper_010142243_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/jerryjgmw/paper_010142243_few_shot_multimodal
 - Paper de referencia sobre few-shot learning (GPT-3): https://arxiv.org/abs/2005.14165
 - Articulo sobre flujos cross-modal para few-shot learning: https://arxiv.org/abs/2510.14543
 - Pagina de Papers with Code sobre few-shot prompting: https://paperswithcode.co/methods/few-shot-prompting

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miladhonar/Noyar es un repositorio publicado en HuggingFace por el usuario Miladhonar. En la informacion disponible no se declara tarea (pipeline), idioma, arquitectura ni tamano, y la model card no contiene mas contenido que la linea de licencia `cdla-permissive-2.0`. El repositorio acumula 0 descargas y 0 "likes", y su unico metadato tecnico reseñable es la licencia y la region declarada (US).
+Miladhonar/Noyar es un repositorio publicado en Hugging Face por el usuario Miladhonar. En la informacion disponible no se declara tarea (pipeline), idioma, arquitectura ni tamano, y la model card no contiene mas contenido que la linea de licencia `cdla-permissive-2.0`. El repositorio acumula 0 descargas y 0 "likes", y su unico metadato tecnico reseñable es la licencia y la region declarada (US).
 
 En el momento de redactar esta ficha no es posible determinar que tipo de artefacto contiene el repositorio (pesos de un modelo de lenguaje, un modelo de vision, un dataset, un adaptador o un simple contenedor de prueba). Tampoco hay informacion sobre el numero de parametros, la longitud de contexto, los formatos de pesos disponibles ni el proceso de entrenamiento.
 
@@ -80,5 +80,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miladhonar/Noyar
+- Repositorio en Hugging Face: https://huggingface.co/Miladhonar/Noyar
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

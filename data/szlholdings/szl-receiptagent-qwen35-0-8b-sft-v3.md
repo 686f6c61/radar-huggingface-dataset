@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| szl-receiptagent-qwen35-0.8b-sft-v3 | 873 M | no disponible | Apache 2.0 | HuggingFace | SFT sobre corpus pequenos, sin benchmarks publicados |
-| Qwen2.5-0.5B / 1.5B Instruct | 0,5 B / 1,5 B | 32 K (Qwen2.5) | Apache 2.0 | HuggingFace | Modelos generalistas con evaluaciones publicadas; comparables por tamano |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8 K | Apache 2.0 | HuggingFace | Alternativa pequena con benchmarks publicados |
-| Gemma 2 2B | 2 B | 8 K | Gemma Terms | HuggingFace | Mayor tamano, requiere aceptar terminos de uso |
+| szl-receiptagent-qwen35-0.8b-sft-v3 | 873 M | no disponible | Apache 2.0 | Hugging Face | SFT sobre corpus pequenos, sin benchmarks publicados |
+| Qwen2.5-0.5B / 1.5B Instruct | 0,5 B / 1,5 B | 32 K (Qwen2.5) | Apache 2.0 | Hugging Face | Modelos generalistas con evaluaciones publicadas; comparables por tamano |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8 K | Apache 2.0 | Hugging Face | Alternativa pequena con benchmarks publicados |
+| Gemma 2 2B | 2 B | 8 K | Gemma Terms | Hugging Face | Mayor tamano, requiere aceptar terminos de uso |
 
 La comparacion directa de rendimiento no es posible porque el modelo de SZLHOLDINGS no publica resultados de benchmarks. La eleccion entre estas alternativas dependera de si se prioriza un modelo generalista validado o un artefacto especializado y trazable pendiente de evaluacion.
 
@@ -84,10 +84,10 @@ La comparacion directa de rendimiento no es posible porque el modelo de SZLHOLDI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
 - Dataset szl-frontier-sft-mix-v2: https://huggingface.co/datasets/SZLHOLDINGS/szl-frontier-sft-mix-v2
 - Dataset szl-quant-sft-v1: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-sft-v1
 - Dataset de logs (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Launcher de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

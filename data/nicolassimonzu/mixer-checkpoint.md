@@ -73,4 +73,4 @@ No disponible. No existen modelos comparables en la información proporcionada, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicolassimonzu/mixer-checkpoint
+- Hugging Face: https://huggingface.co/nicolassimonzu/mixer-checkpoint

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`models4world/juniper-nook-41` es un adaptador LoRA para generación de texto, publicado por el usuario `models4world` en HuggingFace. El modelo está construido sobre la base de `models4world/maple-signal-64`, un modelo base cuyo tamaño, arquitectura y características no se detallan en la información disponible. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa aproximadamente 1,9 GB en el repositorio.
+`models4world/juniper-nook-41` es un adaptador LoRA para generación de texto, publicado por el usuario `models4world` en Hugging Face. El modelo está construido sobre la base de `models4world/maple-signal-64`, un modelo base cuyo tamaño, arquitectura y características no se detallan en la información disponible. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa aproximadamente 1,9 GB en el repositorio.
 
 La relevancia de este modelo reside en su naturaleza de adaptador: permite ajustar el comportamiento del modelo base `maple-signal-64` sin necesidad de reentrenar todos sus parámetros, lo que reduce costes computacionales y facilita la experimentación. Sin embargo, la ausencia de documentación técnica, benchmarks y especificaciones en la model card limita considerablemente su evaluación objetiva. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un modelo reciente o de baja adopción.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada: no disponible. El adaptador ocupa 1,9 GB en disco, pero la VRAM necesaria para inferencia depende del tamaño del modelo base `maple-signal-64`, que se desconoce.
 - GPU recomendadas: no disponible. Sin conocer el modelo base, no es posible determinar si cabe en GPUs de consumo como RTX 4090 o si requiere hardware profesional como A100 o H100.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `transformers` de HuggingFace junto con el modelo base. No se mencionan opciones como vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `transformers` de Hugging Face junto con el modelo base. No se mencionan opciones como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No disponible. No se conocen otros adaptadores publicados por `models4world` sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/juniper-nook-41
+- Repositorio Hugging Face: https://huggingface.co/models4world/juniper-nook-41
 - Modelo base: https://huggingface.co/models4world/maple-signal-64
 - Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyBalls-v1-Base-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo igidn/TinyBalls-v1-Base, publicado por el usuario mradermacher, conocido por convertir modelos de HuggingFace a GGUF para su uso con llama.cpp y derivados. Se trata de un modelo de generacion de texto de tipo base (no afinado por instrucciones) con 113.266.944 parametros (unos 113,3 millones), lo que lo situa en la gama de los modelos diminutos, pensados para ejecucion en CPU, dispositivos de borde y entornos con recursos muy limitados.
+TinyBalls-v1-Base-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo igidn/TinyBalls-v1-Base, publicado por el usuario mradermacher, conocido por convertir modelos de Hugging Face a GGUF para su uso con llama.cpp y derivados. Se trata de un modelo de generacion de texto de tipo base (no afinado por instrucciones) con 113.266.944 parametros (unos 113,3 millones), lo que lo situa en la gama de los modelos diminutos, pensados para ejecucion en CPU, dispositivos de borde y entornos con recursos muy limitados.
 
 El modelo resuelve el problema de disponer de pesos ligeros, cuantizados y listos para inferencia local sin necesidad de GPU dedicada. El repositorio ofrece doce variantes de cuantizacion que van desde Q2_K hasta f16, todas ellas por debajo de 0,3 GB, lo que permite desplegarlo en practicamente cualquier maquina. La licencia es MIT, lo que facilita su reutilizacion comercial sin restricciones relevantes.
 
@@ -48,7 +48,7 @@ Respecto a los datos de entrenamiento, la model card del modelo base enumera una
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion estandar.
 
 ## Requisitos de hardware
 

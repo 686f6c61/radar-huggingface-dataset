@@ -93,7 +93,7 @@ La versión 6-bit ofrece el mejor equilibrio entre tamaño y calidad entre las o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-6bit
 - Repositorio de código del runtime: https://github.com/PipeNetwork/glm53-flash-mlx
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Modelo base (original): https://huggingface.co/zai-org/GLM-5.3-Flash

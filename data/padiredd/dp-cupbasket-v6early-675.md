@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-cupbasket-v6early-675 es una política de difusión (diffusion policy) para control robótico bimanual, publicada por el usuario padiredd en HuggingFace. El modelo aprende a ejecutar una tarea concreta de manipulación: coger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta. Está entrenado sobre el robot humanoide bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas, dentro de un pipeline de simulación Isaac Lab gestionado con LeRobot (fork lerobot-cyclo de ROBOTIS).
+dp-cupbasket-v6early-675 es una política de difusión (diffusion policy) para control robótico bimanual, publicada por el usuario padiredd en Hugging Face. El modelo aprende a ejecutar una tarea concreta de manipulación: coger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta. Está entrenado sobre el robot humanoide bimanual ROBOTIS FFW SG2 equipado con pinzas CAD y cámaras de muñeca calibradas, dentro de un pipeline de simulación Isaac Lab gestionado con LeRobot (fork lerobot-cyclo de ROBOTIS).
 
 La arquitectura es una diffusion policy con backbone ResNet18 por cámara, 287,5 millones de parámetros y salida de 16 consignas articulares a 15 Hz. El entrenamiento se realizó sobre las primeras 675 demostraciones exitosas de la recolección v6, con tres cámaras de 240x240 (cabeza y ambas muñecas) y estado articular de 22 dimensiones. El repositorio incluye el checkpoint final (paso 100k) más nueve checkpoints intermedios cada 10 000 pasos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-v6early-675 | 288 M | horizonte 64 / 32 ejecutados | Handover bimanual vaso-cesta (FFW SG2) | other | HuggingFace, 0 descargas |
+| dp-cupbasket-v6early-675 | 288 M | horizonte 64 / 32 ejecutados | Handover bimanual vaso-cesta (FFW SG2) | other | Hugging Face, 0 descargas |
 | Otras diffusion policies de LeRobot | no disponible | no disponible | Manipulación genérica | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables sobre modelos comparables de la misma catego
 - Entrenado exclusivamente en simulación (Isaac Lab) y sin domain randomization; el rendimiento sim-a-real no está documentado y es un riesgo relevante en producción.
 - Sin resultados de evaluación publicados: no hay evidencia numérica de tasa de éxito ni de robustez.
 - Dependencia de calibración de cámaras: las cámaras de muñeca calibradas y la configuración de tres vistas son parte del input; cambios de montaje invalidan el modelo.
-- Dataset de entrenamiento no publicado en HuggingFace, lo que dificulta la reproducción exacta del entrenamiento.
+- Dataset de entrenamiento no publicado en Hugging Face, lo que dificulta la reproducción exacta del entrenamiento.
 - Licencia "other" sin términos detallados: deben consultarse las condiciones del autor antes de cualquier uso comercial.
 - Riesgo de alucinación en el sentido de trayectorias no válidas: como política generativa por difusión, puede producir acciones fuera de rango o incoherentes ante observaciones fuera de distribución.
 - Sesgos: el dataset usa 40 piezas y semillas concretas (60001-60040), con posible sobreajuste a posiciones iniciales, iluminación y apariencia del vaso azul.
@@ -89,7 +89,7 @@ No se dispone de datos verificables sobre modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-v6early-675
+- Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-v6early-675
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Fork lerobot-cyclo de ROBOTIS: no disponible en la información proporcionada
 - Isaac Lab: https://github.com/isaac-sim/IsaacLab

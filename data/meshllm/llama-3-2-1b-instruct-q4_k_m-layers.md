@@ -85,7 +85,7 @@ Los datos de rendimiento, contexto y disponibilidad comercial de las alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meshllm/Llama-3.2-1B-Instruct-Q4_K_M-layers
+- Repositorio Hugging Face: https://huggingface.co/meshllm/Llama-3.2-1B-Instruct-Q4_K_M-layers
 - Arbol de ficheros: https://huggingface.co/meshllm/Llama-3.2-1B-Instruct-Q4_K_M-layers/tree/main
 - Modelo base (unsloth): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud

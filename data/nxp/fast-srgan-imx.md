@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/fast-srgan-imx` es un repositorio publicado en HuggingFace por NXP Semiconductors, el fabricante neerlandes de semiconductores con sede en Eindhoven conocido por sus microcontroladores, procesadores de aplicacion i.MX y soluciones para automocion, IoT e industria. El identificador del modelo sugiere una adaptacion de Fast-SRGAN, una variante de red generativa adversarial (GAN) disenada para superresolucion de imagen en tiempo real, orientada a la familia de procesadores i.MX de la propia NXP. Esta interpretacion se deduce unicamente del nombre del repositorio: la model card publicada esta practicamente vacia y solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada y sin detalles de entrenamiento.
+`nxp/fast-srgan-imx` es un repositorio publicado en Hugging Face por NXP Semiconductors, el fabricante neerlandes de semiconductores con sede en Eindhoven conocido por sus microcontroladores, procesadores de aplicacion i.MX y soluciones para automocion, IoT e industria. El identificador del modelo sugiere una adaptacion de Fast-SRGAN, una variante de red generativa adversarial (GAN) disenada para superresolucion de imagen en tiempo real, orientada a la familia de procesadores i.MX de la propia NXP. Esta interpretacion se deduce unicamente del nombre del repositorio: la model card publicada esta practicamente vacia y solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada y sin detalles de entrenamiento.
 
 La relevancia potencial de un modelo de este tipo radica en el despliegue de superresolucion en el borde (edge), es decir, mejorar la resolucion de imagenes o fotogramas de video directamente en hardware embebido con recursos limitados, sin depender de la nube. Los procesadores i.MX, en particular los integrados con aceleradores de inferencia, son candidatos habituales para este tipo de cargas en camaras industriales, sistemas de vision embarcados y equipos de consumo.
 
@@ -67,7 +67,7 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (parame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/fast-srgan-imx | no disponible | no aplica | no disponible | MIT | HuggingFace |
+| nxp/fast-srgan-imx | no disponible | no aplica | no disponible | MIT | Hugging Face |
 | Real-ESRGAN | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda |
 | ESRGAN | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda |
 | SwinIR | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda |
@@ -85,7 +85,7 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/fast-srgan-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/fast-srgan-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

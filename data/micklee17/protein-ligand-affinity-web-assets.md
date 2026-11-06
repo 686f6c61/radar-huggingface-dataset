@@ -18,11 +18,11 @@ Su relevancia es de reproducibilidad y trazabilidad: el sitio web fija un commit
 | Longitud de contexto | No aplicable (modelo de predicción estructura-actividad, no generativo) |
 | Tipos de cuantización | No disponible; el peso publicado es un inicializador FP32 sin cuantizar. El sitio web distribuye además ficheros ONNX más pequeños y arrays de pesos, cuyos formatos no se detallan |
 | Idiomas soportados | No aplicable (entradas químicas y estructurales, no texto) |
-| Licencia | No disponible en la ficha de HuggingFace. Se conserva el aviso BSD-3-Clause de MCANet en `FUSION-UPSTREAM-LICENSE.txt`, que según el autor "no es una licencia general para materiales de investigación no relacionados" |
+| Licencia | No disponible en la ficha de Hugging Face. Se conserva el aviso BSD-3-Clause de MCANet en `FUSION-UPSTREAM-LICENSE.txt`, que según el autor "no es una licencia general para materiales de investigación no relacionados" |
 | Formato de pesos | `.bin` (inicializador FP32 con nombre basado en el hash de contenido SHA-256); los dos ficheros de rejilla son tensores de entrada `.bin` para GNINA |
 | Número de ficheros | 3, todos con SHA-256 declarado |
 | Tamaño del repositorio | 0,9 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Idiomas declarados (tag) | No disponibles; único tag presente: `region:us` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 24 de septiembre de 2026 / 24 de septiembre de 2026 |
@@ -53,7 +53,7 @@ Tampoco se describe ninguna innovación de inferencia (decodificación especulat
 - No dispone de soporte de agentes ni de razonamiento multi-paso.
 - No dispone de capacidades multilingües (no procesa lenguaje natural).
 - No dispone de capacidades de visión, audio ni modo de pensamiento (thinking mode).
-- No se declara ninguna tarea de HuggingFace (`pipeline`) asociada al repositorio.
+- No se declara ninguna tarea de Hugging Face (`pipeline`) asociada al repositorio.
 
 ## Casos de uso
 
@@ -93,7 +93,7 @@ No disponible. Este repositorio no contiene un modelo con parámetros, contexto 
 ## Limitaciones y advertencias
 
 - No es un modelo entrenado nuevo ni un modelo generativo: es un volcado de pesos y dos tensores de entrada. No debe presentarse como un modelo publicable con benchmarks propios.
-- Licencia ambigua: la ficha de HuggingFace no declara licencia. El aviso BSD-3-Clause de MCANet se conserva únicamente como atribución upstream y, según el propio autor, no constituye una licencia general para materiales de investigación no relacionados. Cualquier uso comercial debe aclararse con el propietario de la investigación.
+- Licencia ambigua: la ficha de Hugging Face no declara licencia. El aviso BSD-3-Clause de MCANet se conserva únicamente como atribución upstream y, según el propio autor, no constituye una licencia general para materiales de investigación no relacionados. Cualquier uso comercial debe aclararse con el propietario de la investigación.
 - Los dos ficheros de rejilla no son medidas experimentales ni resultados de afinidad: son tensores de entrada para GNINA. Interpretarlos como datos biológicos sería un error.
 - Dependencia de software externo: la reproducibilidad de las rejillas depende de GNINA, gnina-torch y libmolgrid 0.5.5, versiones concretas que pueden evolucionar y romper la compatibilidad.
 - Ámbito químico restringido: el checkpoint procede de un cribado sobre MAO-B (complejos 1HSG y 1HVR para las rejillas). No hay evidencia en la información disponible de que generalice a otras dianas.
@@ -106,7 +106,7 @@ No disponible. Este repositorio no contiene un modelo con parámetros, contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/micklee17/protein-ligand-affinity-web-assets
+- Repositorio en Hugging Face: https://huggingface.co/micklee17/protein-ligand-affinity-web-assets
 - Sitio web del proyecto (HKMU AI4S Lab): https://hkmu-ai4s-lab.github.io/protein-ligand-affinity/
 - Código fuente y manifiestos de inferencia validados: https://github.com/HKMU-AI4S-Lab/protein-ligand-affinity
 - Artículo de referencia del método: https://doi.org/10.1051/bioconf/202623202002 ("Deep learning on the fusion of chemical sequences and molecular grids")

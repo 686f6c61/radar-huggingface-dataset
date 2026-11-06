@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Inkling es un modelo multimodal de propósito general que acepta entradas de texto, imagen, vídeo y audio, y genera salidas de texto. Según su model card, se trata de un transformer autorregresivo con arquitectura de mezcla de expertos (MoE) dispersa, con 975.000 millones de parámetros totales y 41.000 millones activos por token. El repositorio de HuggingFace figura a nombre del usuario konizquants, aunque la propia model card enlaza repetidamente a la organización Thinking Machines (thinkingmachines/Inkling, thinkingmachines.ai), por lo que la autoría efectiva del modelo original y la del reempaquetado no coinciden. Este dato es relevante para cualquier evaluador que quiera trazar el linaje del artefacto.
+Inkling es un modelo multimodal de propósito general que acepta entradas de texto, imagen, vídeo y audio, y genera salidas de texto. Según su model card, se trata de un transformer autorregresivo con arquitectura de mezcla de expertos (MoE) dispersa, con 975.000 millones de parámetros totales y 41.000 millones activos por token. El repositorio de Hugging Face figura a nombre del usuario konizquants, aunque la propia model card enlaza repetidamente a la organización Thinking Machines (thinkingmachines/Inkling, thinkingmachines.ai), por lo que la autoría efectiva del modelo original y la del reempaquetado no coinciden. Este dato es relevante para cualquier evaluador que quiera trazar el linaje del artefacto.
 
 El modelo está pensado para desarrollo de aplicaciones con agentes, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG), además de uso conversacional general e instrucciones. Se distribuye con pesos abiertos bajo licencia Apache 2.0, lo que permite ajuste fino e integración en productos de terceros. Su relevancia actual radica en que combina una ventana de capacidades multimodales nativas (imagen, vídeo y audio) con un coste de inferencia por token propio de un modelo de 41.000 millones de parámetros activos, gracias al enrutado disperso sobre 256 expertos.
 
-El artefacto concreto publicado en `konizquants/Inkling` ocupa 1904,8 GB en el repositorio, coherente con pesos en BF16 de aproximadamente 952.000 millones de parámetros según los metadatos de safetensors. La model card declara soporte numérico BF16 y NVFP4, y recetas de despliegue para SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers.
+El artefacto concreto publicado en `konizquants/Inkling` ocupa 1904,8 GB en el repositorio, coherente con pesos en BF16 de aproximadamente 952.000 millones de parámetros según los metadatos de safetensors. La model card declara soporte numérico BF16 y NVFP4, y recetas de despliegue para SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ La última fila aparece truncada en la model card original, por lo que el valor 
 - GPU recomendadas: despliegue en clúster con H100 80 GB, H200 o A100 80 GB. Para BF16 se necesitan al menos 24 GPU de 80 GB solo para los pesos, sin margen para caché KV ni activaciones; en la práctica son necesarias 32 o más. Para NVFP4, 8 GPU de 80 GB son un punto de partida razonable, también sin contar el margen de caché.
 - GPU de consumo: no es viable. Incluso con cuantizaciones agresivas de 2 bits, los pesos superarían los 230 GB, muy por encima de los 24-48 GB de las GPU de consumo actuales.
 - Aunque solo 41.000 millones de parámetros están activos por token, el modelo completo debe residir en memoria, por lo que el coste de VRAM viene dictado por los parámetros totales, no por los activos.
-- Opciones de despliegue documentadas: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers. También hay acceso por API a través del playground de Tinker y proveedores de inferencia de terceros.
+- Opciones de despliegue documentadas: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers. También hay acceso por API a través del playground de Tinker y proveedores de inferencia de terceros.
 - Latencia y throughput: no disponibles. Al tener 41.000 millones de parámetros activos, el coste por token generado debería aproximarse al de un modelo denso de ese tamaño, siempre que el enrutado de expertos no introduzca cuellos de botella de comunicación entre GPU.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ Frente a los modelos abiertos comparables, Inkling queda por debajo en HLE de te
 - Sesgos: la model card menciona filtrado por objetivos de seguridad, pero no publica análisis de sesgos demográficos, culturales o lingüísticos.
 - Idioma: el modelo está centrado en inglés. Las capacidades multilingües se describen como "generales", sin métricas por idioma, por lo que no se recomienda su uso en producción para idiomas distintos del inglés sin evaluación previa.
 - Contexto: la longitud de contexto no se especifica en la información disponible. Esto impide dimensionar correctamente cachés KV y planificar despliegues de contexto largo.
-- Discrepancia de autoría: el repositorio de HuggingFace figura a nombre de konizquants mientras que la model card referencia a Thinking Machines. Conviene verificar la procedencia de los pesos antes de usarlos en entornos productivos.
+- Discrepancia de autoría: el repositorio de Hugging Face figura a nombre de konizquants mientras que la model card referencia a Thinking Machines. Conviene verificar la procedencia de los pesos antes de usarlos en entornos productivos.
 - Discrepancia en parámetros: 975.000 millones según la model card frente a 952.377.623.626 según los metadatos de safetensors.
 - Licencia: Apache 2.0 permite uso comercial, pero la model card enlaza además una política de uso aceptable de Thinking Machines, cuyo alcance y obligatoriedad no se aclaran.
 - Despliegue: los requisitos de memoria (1904,8 GB en BF16) excluyen cualquier hardware de consumo y obligan a infraestructura multi-GPU de centro de datos.
@@ -114,7 +114,7 @@ Frente a los modelos abiertos comparables, Inkling queda por debajo en HLE de te
 
 ## Enlaces
 
-- Repositorio en HuggingFace (artefacto evaluado): https://huggingface.co/konizquants/Inkling
+- Repositorio en Hugging Face (artefacto evaluado): https://huggingface.co/konizquants/Inkling
 - Repositorio BF16 referenciado en la model card: https://huggingface.co/thinkingmachines/Inkling
 - Variante NVFP4: https://huggingface.co/thinkingmachines/Inkling-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -124,5 +124,5 @@ Frente a los modelos abiertos comparables, Inkling queda por debajo en HLE de te
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentación de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Búsqueda web: no se han encontrado resultados relevantes sobre el modelo. Las consultas devolvieron únicamente páginas del Ministerio de Turismo y Antigüedades de Jordania (mota.gov.jo), sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bio-AI-Asset-Viewer es un repositorio publicado en HuggingFace por el usuario MahmoudFarid92 bajo licencia MIT. A partir de la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto o componente asociado a un proyecto de IA aplicada a biociencias, a juzgar por su nombre. No se ha publicado model card con contenido tecnico, pipeline declarado ni idiomas soportados.
+Bio-AI-Asset-Viewer es un repositorio publicado en Hugging Face por el usuario MahmoudFarid92 bajo licencia MIT. A partir de la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto o componente asociado a un proyecto de IA aplicada a biociencias, a juzgar por su nombre. No se ha publicado model card con contenido tecnico, pipeline declarado ni idiomas soportados.
 
 El repositorio no incluye README descriptivo, no declara arquitectura, numero de parametros, longitud de contexto ni formato de pesos. Tampoco registra descargas ni likes en el momento de la consulta, lo que sugiere un proyecto reciente o de baja difusion. La fecha de creacion y ultima actualizacion coinciden (27 de octubre de 2026), indicando que no ha habido revisiones posteriores.
 
@@ -38,11 +38,11 @@ El nombre del repositorio sugiere un componente orientado a la visualizacion de 
 
 ## Casos de uso
 
-- Evaluacion exploratoria: inspeccionar el repositorio directamente en HuggingFace para determinar si contiene pesos, codigo o assets antes de plantear cualquier integracion.
+- Evaluacion exploratoria: inspeccionar el repositorio directamente en Hugging Face para determinar si contiene pesos, codigo o assets antes de plantear cualquier integracion.
 - Prototipado interno: usar el repositorio como referencia en un proyecto de biociencias, siempre que se verifique previamente su contenido real y su licencia MIT.
 - Documentacion de proyectos: citar el repositorio como recurso asociado a un pipeline de IA biomedica, sin asumir capacidades de inferencia.
 - Auditoria de licencias: la licencia MIT permite su uso, modificacion y redistribucion, lo que facilita su incorporacion en proyectos comerciales una vez validado el contenido.
-- Formacion y divulgacion: emplearlo como ejemplo de publicacion de artefactos en HuggingFace dentro de talleres sobre open source en salud.
+- Formacion y divulgacion: emplearlo como ejemplo de publicacion de artefactos en Hugging Face dentro de talleres sobre open source en salud.
 - Integracion condicional: solo tras confirmar mediante inspeccion directa que el repositorio contiene un modelo o componente utilizable, evaluar su inclusion en un flujo de trabajo concreto.
 
 ## Benchmarks y rendimiento
@@ -75,5 +75,5 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MahmoudFarid92/Bio-AI-Asset-Viewer
+- Repositorio en Hugging Face: https://huggingface.co/MahmoudFarid92/Bio-AI-Asset-Viewer
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

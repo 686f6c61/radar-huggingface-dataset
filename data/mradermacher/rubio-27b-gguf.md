@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rubio-27B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Rubio-27B, publicado originalmente por el usuario mulkzz en HuggingFace. El repositorio lo mantiene mradermacher, un perfil conocido por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El objetivo de este tipo de repositorio es facilitar la inferencia en hardware de consumo mediante la reducción de la precisión de los pesos.
+Rubio-27B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Rubio-27B, publicado originalmente por el usuario mulkzz en Hugging Face. El repositorio lo mantiene mradermacher, un perfil conocido por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El objetivo de este tipo de repositorio es facilitar la inferencia en hardware de consumo mediante la reducción de la precisión de los pesos.
 
 A pesar de la denominación "27B" en el nombre del modelo, los datos reales de safetensors indican que el modelo base contiene 460.730.096 parámetros totales (aproximadamente 460 millones), lo que supone una discrepancia significativa entre el nombre y el tamaño real. Esta inconsistencia debe tenerse en cuenta al planificar el despliegue, ya que el modelo es mucho más pequeño de lo que sugiere su nombre.
 
@@ -23,7 +23,7 @@ La información disponible es muy limitada: no se especifican la arquitectura, e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Rubio-27B. La model card del repositorio de cuantizaciones no incluye detalles sobre el tipo de transformer, mecanismos de atención, datos de entrenamiento, número de tokens procesados ni técnicas de alineación como RLHF o DPO. Los metadatos de cuantización indican `convert_type: hf` y `quantize_version: 2`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace mediante la herramienta de cuantización de llama.cpp.
+No se dispone de información sobre la arquitectura del modelo base Rubio-27B. La model card del repositorio de cuantizaciones no incluye detalles sobre el tipo de transformer, mecanismos de atención, datos de entrenamiento, número de tokens procesados ni técnicas de alineación como RLHF o DPO. Los metadatos de cuantización indican `convert_type: hf` y `quantize_version: 2`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante la herramienta de cuantización de llama.cpp.
 
 El nombre "Rubio-27B" sugiere un modelo de 27.000 millones de parámetros, pero los datos reales de safetensors (460 millones) contradicen esta denominación. No es posible determinar si se trata de un error de nomenclatura, de un modelo destilado o de una discrepancia en los metadatos. Sin acceso a la model card del modelo base original (mulkzz/Rubio-27B), no se puede confirmar la arquitectura ni el proceso de entrenamiento.
 
@@ -40,7 +40,7 @@ El nombre "Rubio-27B" sugiere un modelo de 27.000 millones de parámetros, pero 
 
 - Evaluación experimental de cuantizaciones GGUF: el repositorio permite probar distintos niveles de cuantización (desde Q2_K hasta x-f16) para medir el impacto en calidad y velocidad en hardware de consumo, aunque sin datos de referencia publicados sobre el modelo base.
 - Pruebas de integración con llama.cpp: los ficheros GGUF pueden cargarse en llama.cpp para validar el flujo de trabajo de inferencia local, siempre que se acepte la falta de documentación sobre el modelo.
-- Investigación sobre modelos de nomenclatura confusa: el caso resulta útil para estudiar discrepancias entre el nombre del modelo y el número real de parámetros en repositorios de HuggingFace.
+- Investigación sobre modelos de nomenclatura confusa: el caso resulta útil para estudiar discrepancias entre el nombre del modelo y el número real de parámetros en repositorios de Hugging Face.
 - Despliegue en hardware muy limitado: con 460 millones de parámetros, las cuantizaciones Q4_K_M o Q2_K podrían ejecutarse en CPU o GPU de gama baja, aunque se desconoce la calidad resultante.
 - Prototipado rápido sin garantías: útil únicamente como banco de pruebas técnico, no para producción, dada la ausencia de licencia e información sobre el modelo.
 - Comparación de herramientas de cuantización: permite analizar las diferencias entre los formatos K-quants e IQ4_XS generados por mradermacher sobre un mismo modelo base.

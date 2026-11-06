@@ -73,7 +73,7 @@ No disponible. MBG 1.0 es un prototipo de investigacion sin equivalente directo 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/deeprcurs/MBG-1.0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/deeprcurs/MBG-1.0
 - Perfil de la organizacion deepRcurs Labs: https://huggingface.co/deeprcurs
 - Repositorio de datos (mencionado en la model card, no verificado): `deeprcurs/MBG-1.0-data` (no se proporciona URL directa)
 - Blueprint de arquitectura: mencionado como `MBG-1.0-rev-3_Blueprint.md`, no enlazado en el repositorio.

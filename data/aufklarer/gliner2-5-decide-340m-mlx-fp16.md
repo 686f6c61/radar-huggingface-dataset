@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de resultados de benchmarks que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX-fp16
+- Modelo en Hugging Face: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX-fp16
 - Modelo upstream: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Articulo GLiNER2 (paper): https://arxiv.org/abs/2507.18546
 - Codigo de conversion gliner2-mlx (Andrew Chen Wang): https://github.com/Andrew-Chen-Wang/gliner2-mlx

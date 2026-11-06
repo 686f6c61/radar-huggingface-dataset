@@ -4,7 +4,7 @@
 
 El modelo `capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b2000_s0` es un ajuste fino (fine-tuning completo) de la base `Qwen/Qwen3-4B-Base`, realizado por el usuario AmberYifan. El objetivo declarado es especializar el modelo en tareas matemáticas mediante el entrenamiento sobre un dataset denominado `capsd_Qwen3-4B-Base-n80000-numina__mix_math_ppl_b2000_s0`. Se trata de un modelo de generación de texto con arquitectura transformer densa, de aproximadamente 4 022 millones de parámetros, entrenado con la librería `llama-factory` y `transformers`.
 
-La relevancia de este modelo radica en que parte de una base ya sólida (Qwen3-4B-Base) y la adapta mediante un ajuste fino completo a un dominio específico, las matemáticas. Aunque no se han publicado resultados de evaluación, el interés práctico es disponer de un modelo de 4B parámetros con mayor competencia en razonamiento matemático que la base original, útil para entornos con recursos limitados. La ficha se basa exclusivamente en la información disponible en la página de HuggingFace y en el conocimiento público de la familia Qwen3.
+La relevancia de este modelo radica en que parte de una base ya sólida (Qwen3-4B-Base) y la adapta mediante un ajuste fino completo a un dominio específico, las matemáticas. Aunque no se han publicado resultados de evaluación, el interés práctico es disponer de un modelo de 4B parámetros con mayor competencia en razonamiento matemático que la base original, útil para entornos con recursos limitados. La ficha se basa exclusivamente en la información disponible en la página de Hugging Face y en el conocimiento público de la familia Qwen3.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos porque este modelo no ha sido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b2000_s0
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3

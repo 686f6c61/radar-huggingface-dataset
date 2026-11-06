@@ -71,6 +71,6 @@ No se dispone de datos comparativos publicados. Como referencia, se puede compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed4-epoch3
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed4-epoch3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth

@@ -31,7 +31,7 @@ El trabajo de esta publicacion es la conversion a GGUF y la generacion de cuanti
 
 - Generacion de texto conversacional: el pipeline declarado es text-generation y el tag "conversational" indica un ajuste orientado a dialogo.
 - Ejecucion local en CPU y GPU mediante llama.cpp, Ollama, LM Studio y Jan, segun las instrucciones del autor.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere integracion con infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere integracion con infraestructura de inferencia compatible con la API de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declaran idiomas en los metadatos.

@@ -69,14 +69,14 @@ Todos los modelos comparables son políticas entrenadas por el mismo autor sobre
 
 | Modelo | Autor | Familia de arquitectura | Dataset de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀ (este modelo) | kiteml | VLA π₀ (PaliGemma + flow matching), backbone congelado aleatorio | kiteml/dual-openyam-close-box (31 episodios) | gemma | HuggingFace |
-| ACT | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| Diffusion Policy | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| π₀.₅ | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| π₀-FAST | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| SmolVLA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| VLA-JEPA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
-| X-VLA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | HuggingFace |
+| π₀ (este modelo) | kiteml | VLA π₀ (PaliGemma + flow matching), backbone congelado aleatorio | kiteml/dual-openyam-close-box (31 episodios) | gemma | Hugging Face |
+| ACT | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| Diffusion Policy | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| π₀.₅ | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| π₀-FAST | kiteml | no disponible | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| SmolVLA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| VLA-JEPA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
+| X-VLA | kiteml | VLA | kiteml/dual-openyam-close-box | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Todos los modelos comparables son políticas entrenadas por el mismo autor sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiteml/dual-openyam-close-box-pi0
+- Modelo en Hugging Face: https://huggingface.co/kiteml/dual-openyam-close-box-pi0
 - Dataset: https://huggingface.co/datasets/kiteml/dual-openyam-close-box
 - Paper de la arquitectura π₀: https://huggingface.co/papers/2410.24164
 - LeRobot (repositorio): https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-FNC-1024-46-v2 es un ajuste fino (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante de 4.000 millones de parámetros y fecha de corte 2507 (julio de 2025), orientada a instrucciones. El entrenamiento se ha realizado con TRL 0.24.0 sobre la infraestructura de Unsloth, según los metadatos de la model card.
+Qwen3-4B-Instruct-2507-SD-FNC-1024-46-v2 es un ajuste fino (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante de 4.000 millones de parámetros y fecha de corte 2507 (julio de 2025), orientada a instrucciones. El entrenamiento se ha realizado con TRL 0.24.0 sobre la infraestructura de Unsloth, según los metadatos de la model card.
 
 El problema que resuelve es acotado: adaptar el comportamiento del modelo base a un conjunto de datos privado del autor, presumiblemente para una tarea específica no documentada. No hay información pública sobre la composición del dataset, el número de tokens de entrenamiento, la licencia ni los idiomas cubiertos. El repositorio no registra descargas ni valoraciones en el momento de la consulta, y la model card es la plantilla por defecto de TRL sin contenido sustantivo.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado en HuggingFace | Datos de rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Estado en Hugging Face | Datos de rendimiento |
 |---|---|---|---|---|---|
 | Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-1024-46-v2 | ~4B (según nombre) | no disponible | no disponible | 0 descargas, 0 likes, repo de 0,8 GB | No publicados |
 | unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en esta información | según ficha del modelo base | Modelo de referencia del ajuste | No consultados en esta información |
@@ -92,7 +92,7 @@ La comparación relevante es siempre contra el modelo base: cualquier evaluació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-1024-46-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-FNC-1024-46-v2
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio oficial del modelo base en Qwen (referencia del linaje, no citado en la model card): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - TRL (framework de entrenamiento citado): https://github.com/huggingface/trl

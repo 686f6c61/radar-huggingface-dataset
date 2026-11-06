@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicoladavies/phd-generation` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de generación. El autor la publica explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 "likes", y su tamaño es de 0.0 GB, lo que confirma que se trata de un artefacto de código más que de un modelo distribuible a escala.
+`nicoladavies/phd-generation` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura denominada Dino orientada a tareas de generación. El autor la publica explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 "likes", y su tamaño es de 0.0 GB, lo que confirma que se trata de un artefacto de código más que de un modelo distribuible a escala.
 
 El checkpoint incluido, `model.safetensors`, contiene 33.088 parámetros totales, un orden de magnitud propio de una inicialización para pruebas de humo (smoke tests) y no de un modelo con capacidad generativa real. La model card indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Por tanto, cualquier uso productivo queda descartado de entrada.
 
@@ -95,5 +95,5 @@ La comparación con la familia Dino solo es nominal: DINOv2 es un backbone de vi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicoladavies/phd-generation
+- Hugging Face: https://huggingface.co/nicoladavies/phd-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

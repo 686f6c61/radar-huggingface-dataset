@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos entre estos borradores mas all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust-mixed
+- Modelo en Hugging Face: https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust-mixed
 - Repositorio del experimento y codigo: https://github.com/rohseh303/rust-eagle3
 - Instrucciones de reproduccion: https://github.com/rohseh303/rust-eagle3/blob/main/REPRODUCE.md
 - Escribo tecnico del autor: https://www.rohansehgal.me/writing/rust-eagle3

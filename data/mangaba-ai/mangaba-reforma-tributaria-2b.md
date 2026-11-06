@@ -86,8 +86,8 @@ No se dispone de otros modelos especializados en la reforma tributaria brasileñ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mangaba-ai/mangaba-reforma-tributaria-2b
-- Organización Mangaba AI en HuggingFace: https://huggingface.co/mangaba-ai
+- Modelo en Hugging Face: https://huggingface.co/mangaba-ai/mangaba-reforma-tributaria-2b
+- Organización Mangaba AI en Hugging Face: https://huggingface.co/mangaba-ai
 - GitHub de Mangaba AI: https://github.com/mangaba-ai
 - Repositorio mangaba_ai (agentes con A2A y MCP): https://github.com/Mangaba-ai/mangaba_ai
 - Sitio web de Mangaba AI: https://www.mangaba.ia.br/

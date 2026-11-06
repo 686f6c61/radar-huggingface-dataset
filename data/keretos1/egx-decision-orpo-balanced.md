@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `egx-decision-orpo-balanced`, publicado en HuggingFace por el usuario Keretos1, es un modelo de la librería transformers con pesos en formato safetensors y un tamaño de repositorio de 0.2 GB. La información técnica disponible es extremadamente limitada: la model card es autogenerada y no especifica arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia. El nombre sugiere un ajuste fino mediante ORPO (Odds Ratio Preference Optimization) sobre un modelo base de la serie `egx-decision`, pero no se dispone de confirmación oficial en los metadatos.
+El modelo `egx-decision-orpo-balanced`, publicado en Hugging Face por el usuario Keretos1, es un modelo de la librería transformers con pesos en formato safetensors y un tamaño de repositorio de 0.2 GB. La información técnica disponible es extremadamente limitada: la model card es autogenerada y no especifica arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia. El nombre sugiere un ajuste fino mediante ORPO (Odds Ratio Preference Optimization) sobre un modelo base de la serie `egx-decision`, pero no se dispone de confirmación oficial en los metadatos.
 
 No se han encontrado resultados de búsqueda web relevantes que aporten documentación adicional, papers o repositorios del modelo. La única referencia a un artículo es `arxiv:1910.09700`, que corresponde al trabajo sobre el calculador de impacto de Machine Learning (Lacoste et al., 2019) y no al modelo en sí. Por tanto, este modelo debe considerarse en fase experimental o de publicación incompleta.
 

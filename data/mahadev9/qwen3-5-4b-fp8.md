@@ -78,7 +78,7 @@ La diferencia principal entre las dos cuantizaciones FP8 (mahadev9 y Shashwat42)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mahadev9/Qwen3.5-4B-fp8
+- Repositorio Hugging Face: https://huggingface.co/mahadev9/Qwen3.5-4B-fp8
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Coleccion oficial Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Pagina de ThinkLLM sobre Qwen3.5 4B FP8: https://thinkllm.dev/models/qwen3-5-4b-fp8

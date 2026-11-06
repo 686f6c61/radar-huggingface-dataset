@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Embedding-0.6B es un modelo de embeddings de texto de la familia Qwen3, desarrollado originalmente por el equipo Qwen de Alibaba y publicado en abierto bajo licencia Apache 2.0. Esta ficha concreta corresponde a la reproducción alojada por el usuario BondingAI en HuggingFace, que replica los pesos del modelo oficial `Qwen/Qwen3-Embedding-0.6B` (derivado a su vez de `Qwen/Qwen3-0.6B-Base`). El modelo está diseñado específicamente para tareas de recuperación de información, clasificación, clustering y minería de bitextos, no para generación de texto libre.
+Qwen3-Embedding-0.6B es un modelo de embeddings de texto de la familia Qwen3, desarrollado originalmente por el equipo Qwen de Alibaba y publicado en abierto bajo licencia Apache 2.0. Esta ficha concreta corresponde a la reproducción alojada por el usuario BondingAI en Hugging Face, que replica los pesos del modelo oficial `Qwen/Qwen3-Embedding-0.6B` (derivado a su vez de `Qwen/Qwen3-0.6B-Base`). El modelo está diseñado específicamente para tareas de recuperación de información, clasificación, clustering y minería de bitextos, no para generación de texto libre.
 
 Con 595.776.512 parámetros reales (0,6B), 28 capas y una longitud de contexto de 32.000 tokens, el modelo produce embeddings de hasta 1024 dimensiones con soporte de Matryoshka Representation Learning (MRL), lo que permite truncar la dimensión de salida entre 32 y 1024 sin reentrenar. Incorpora además capacidad *instruction-aware*: acepta instrucciones en lenguaje natural para adaptar el embedding a la tarea concreta, con mejoras reportadas de entre un 1 % y un 5 % en la mayoría de tareas downstream.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantización de 8 bits: en torno a 0,6-0,8 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para lotes pequeños; A100, H100 o L40S para despliegues de alto throughput.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4070, RTX 4090, entre otras.
-- Opciones de despliegue: `sentence-transformers`, HuggingFace `transformers` (requiere versión 4.51.0 o superior), Text Embeddings Inference (TEI) para servir en producción, y `vLLM` para embeddings en algunos casos.
+- Opciones de despliegue: `sentence-transformers`, Hugging Face `transformers` (requiere versión 4.51.0 o superior), Text Embeddings Inference (TEI) para servir en producción, y `vLLM` para embeddings en algunos casos.
 - Aceleración: se recomienda `flash_attention_2` junto con `padding_side="left"` para mejorar velocidad y ahorro de memoria.
 - Latencia y throughput: no disponibles en la información proporcionada.
 

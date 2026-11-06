@@ -106,11 +106,11 @@ Comparativa con modelos de tamano similar en precision completa: no disponible e
 - Limitaciones de contexto o idioma: no disponible. La ficha no documenta ni la ventana de contexto maxima ni los idiomas soportados.
 - Restricciones de licencia: apache-2.0, heredada del modelo base; permite uso comercial segun los terminos de dicha licencia. El autor indica explicitamente que se hereda la licencia de `mistralai/Magistral-Small-2506`.
 - El repositorio no incluye benchmarks de tareas, por lo que no es posible garantizar el rendimiento en razonamiento, codigo o matematicas a partir de los datos publicados.
-- Atributos de la ficha de HuggingFace (descargas 0, likes 0, sin idiomas declarados) indican un modelo recien publicado y sin validacion comunitaria; conviene tratarlo como experimental.
+- Atributos de la ficha de Hugging Face (descargas 0, likes 0, sin idiomas declarados) indican un modelo recien publicado y sin validacion comunitaria; conviene tratarlo como experimental.
 - Los detalles de arquitectura y entrenamiento del modelo base no se reproducen aqui y deben verificarse en la ficha original antes de usarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/jkim96/Magistral-Small-2506-DASHQ-Q2-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/jkim96/Magistral-Small-2506-DASHQ-Q2-GGUF
 - Repositorio DASH-Q en GitHub: https://github.com/JaeminK/dashq
 - Modelo base: https://huggingface.co/mistralai/Magistral-Small-2506

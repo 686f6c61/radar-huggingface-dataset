@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento académico en formato Markdown titulado `paper_021891815_robotics_vision_language.md`, centrado en el tema de robótica y visión-lenguaje (Vision-Language-Action, VLA). No se trata de un modelo de IA entrenado, sino de un manuscrito de investigación con formato LaTeX ACL, estructura académica estándar (abstract, introducción, preliminares, método, experimentos y discusión) y un estilo de escritura orientado a resultados empíricos.
+Este repositorio de Hugging Face contiene un documento académico en formato Markdown titulado `paper_021891815_robotics_vision_language.md`, centrado en el tema de robótica y visión-lenguaje (Vision-Language-Action, VLA). No se trata de un modelo de IA entrenado, sino de un manuscrito de investigación con formato LaTeX ACL, estructura académica estándar (abstract, introducción, preliminares, método, experimentos y discusión) y un estilo de escritura orientado a resultados empíricos.
 
 El autor, identificado como jennifercook, publica este documento bajo licencia MIT, lo que permite su uso y distribución con fines académicos o de investigación. La relevancia de este repositorio reside en su contribución al campo emergente de los modelos VLA, que integran percepción visual, razonamiento lingüístico y control de acciones para sistemas robóticos. Dado que no contiene pesos, arquitecturas ni artefactos de modelo, su valor es exclusivamente documental.
 
@@ -66,5 +66,5 @@ No disponible. Este repositorio no es un modelo comparable con sistemas como RT-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jennifercook/paper_021891815_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/jennifercook/paper_021891815_robotics_vision_language
 - Recopilación de papers VLA (referencia externa): https://github.com/hanjianhua44/Awesome-VLA-Papers

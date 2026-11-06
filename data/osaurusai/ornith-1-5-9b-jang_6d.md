@@ -91,7 +91,7 @@ La variante 35B-A3B de la misma familia es la unica con soporte nativo de MTP (d
 
 ## Enlaces
 
-- [Modelo en HuggingFace: OsaurusAI/Ornith-1.5-9B-JANG_6D](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_6D)
+- [Modelo en Hugging Face: OsaurusAI/Ornith-1.5-9B-JANG_6D](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_6D)
 - [Modelo base: ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Coleccion de modelos Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Pagina oficial de Ornith-1.5](https://ornith.ai/ornith_1_5.html)

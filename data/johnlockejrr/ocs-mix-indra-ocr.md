@@ -73,9 +73,9 @@ Notas sobre la medicion: el CER se calcula sobre etiquetas normalizadas en NFD, 
 
 | Modelo | Tipo | Ambito | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `johnlockejrr/ocs-mix-indra-ocr` | Fine-tune de reconocedor Indra (ONNX, CTC) | Eslavo eclesiastico manuscrito (`cu`, `orv`) | A nivel de linea | OpenRAIL (base OpenRAIL-M modificada) | ONNX en HuggingFace, 0 descargas |
+| `johnlockejrr/ocs-mix-indra-ocr` | Fine-tune de reconocedor Indra (ONNX, CTC) | Eslavo eclesiastico manuscrito (`cu`, `orv`) | A nivel de linea | OpenRAIL (base OpenRAIL-M modificada) | ONNX en Hugging Face, 0 descargas |
 | `datalab-to/indra-ocr` | Modelo base OCR/HTR | Generalista, vocabulario centrado en latin | Pipeline completo de pagina | OpenRAIL-M modificada | ONNX, modelo de referencia |
-| `achimrabus/crnn-ctc-church-slavonic` | CRNN-CTC | Eslavo eclesiastico manuscrito | A nivel de linea | no disponible en la informacion proporcionada | HuggingFace |
+| `achimrabus/crnn-ctc-church-slavonic` | CRNN-CTC | Eslavo eclesiastico manuscrito | A nivel de linea | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion de rendimiento frente a `achimrabus/crnn-ctc-church-slavonic` no es posible con los datos disponibles: la informacion proporcionada no incluye sus metricas de CER/WER sobre el mismo conjunto. El unico punto de comparacion cuantitativo publicado es el salto frente al Indra sin ajustar, recogido en la seccion de benchmarks.
 
@@ -92,7 +92,7 @@ La comparacion de rendimiento frente a `achimrabus/crnn-ctc-church-slavonic` no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnlockejrr/ocs-mix-indra-ocr
+- Modelo en Hugging Face: https://huggingface.co/johnlockejrr/ocs-mix-indra-ocr
 - Modelo base Indra OCR: https://huggingface.co/datalab-to/indra-ocr
 - Herramienta de fine-tune `indra-ocr-ft`: https://github.com/johnlockejrr/indra-ocr-ft
 - Baseline CRNN-CTC en la misma tradicion: https://huggingface.co/achimrabus/crnn-ctc-church-slavonic

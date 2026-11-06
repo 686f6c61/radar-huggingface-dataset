@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla_stage2a_base_to_ds2
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla_stage2a_base_to_ds2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset ds2: https://huggingface.co/datasets/ds2

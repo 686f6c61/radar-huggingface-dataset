@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `outminer/co-3` es un modelo de inteligencia artificial publicado en HuggingFace por el usuario `outminer`. El repositorio tiene un tamaño de 56,5 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente con pesos en formato de precisión completa o cuantización ligera. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 13 de mayo de 2026 y actualizado el 15 de agosto de 2026, con cero descargas y un único "like" en el momento de la consulta.
+El modelo `outminer/co-3` es un modelo de inteligencia artificial publicado en Hugging Face por el usuario `outminer`. El repositorio tiene un tamaño de 56,5 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente con pesos en formato de precisión completa o cuantización ligera. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 13 de mayo de 2026 y actualizado el 15 de agosto de 2026, con cero descargas y un único "like" en el momento de la consulta.
 
 Dada la ausencia de documentación técnica y de ejemplos de uso, no es posible determinar qué problema resuelve ni por qué sería relevante en el ecosistema actual de modelos open source. La falta de metadatos esenciales (arquitectura, contexto, licencia) impide realizar una evaluación rigurosa. Esta ficha se limita a reflejar los datos disponibles y señalar explícitamente las carencias de información.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables de la misma categoria, ni se pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/outminer/co-3
+- Repositorio en Hugging Face: https://huggingface.co/outminer/co-3
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -95,7 +95,7 @@ ReasonShield supera a Shieldstral en F1 macro en ambos modos, con la mayor ganan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/ReasonShield
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/ReasonShield
 - Repositorio GGUF: https://huggingface.co/ProCreations/ReasonShield-GGUF
 - Dataset de entrenamiento: https://huggingface.co/ProCreations/ReasonShield-Dataset
 - Página de modelos de ProCreations: https://huggingface.co/ProCreations/models

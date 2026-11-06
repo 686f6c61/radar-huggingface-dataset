@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llm-zoo-gpt2-mini-b030-n100` es un artefacto de investigación publicado por el usuario ScottBiggs2 en HuggingFace. No es un modelo de lenguaje de propósito general, sino un "zoo" de 100 modelos GPT-2 mini (51.475.968 parámetros cada uno) que comparten un tronco de inicialización común y divergen únicamente en la mezcla de datos de preentrenamiento utilizada. Cada miembro representa un punto en el símplex de 5 dimensiones definido por las proporciones de datos web, código, matemáticas, libros y multilingüe.
+`llm-zoo-gpt2-mini-b030-n100` es un artefacto de investigación publicado por el usuario ScottBiggs2 en Hugging Face. No es un modelo de lenguaje de propósito general, sino un "zoo" de 100 modelos GPT-2 mini (51.475.968 parámetros cada uno) que comparten un tronco de inicialización común y divergen únicamente en la mezcla de datos de preentrenamiento utilizada. Cada miembro representa un punto en el símplex de 5 dimensiones definido por las proporciones de datos web, código, matemáticas, libros y multilingüe.
 
 El objetivo declarado es estudiar la estructura del espacio de pesos a través de una población de modelos que comparten inicialización y difieren solo en la distribución de sus datos de entrenamiento. La arquitectura es un transformer GPT-2 estándar con 8 capas, tamaño oculto de 512 y 8 cabezas de atención, con el `lm_head` atado a los embeddings de entrada, tal como en el GPT-2 original.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-zoo-gpt2-mini-b030-n100 | 51,5 M por miembro (100 miembros) | no disponible | Artefacto de investigación sobre espacio de pesos | Apache-2.0 | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modelo de lenguaje de propósito general | MIT (pesos originales) | HuggingFace, OpenAI |
-| DistilGPT-2 | 82 M | 1024 tokens | Modelo destilado de GPT-2 | Apache-2.0 | HuggingFace |
-| GPT-2 mini (variantes comunitarias) | ~50 M | 1024 tokens | Experimentación y prototipado | variable | HuggingFace |
+| llm-zoo-gpt2-mini-b030-n100 | 51,5 M por miembro (100 miembros) | no disponible | Artefacto de investigación sobre espacio de pesos | Apache-2.0 | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modelo de lenguaje de propósito general | MIT (pesos originales) | Hugging Face, OpenAI |
+| DistilGPT-2 | 82 M | 1024 tokens | Modelo destilado de GPT-2 | Apache-2.0 | Hugging Face |
+| GPT-2 mini (variantes comunitarias) | ~50 M | 1024 tokens | Experimentación y prototipado | variable | Hugging Face |
 
 La comparación es aproximada: el zoo no compite en calidad de generación con GPT-2 small o DistilGPT-2, sino que se posiciona como material de investigación. Los datos de contexto de los modelos comparables son los habituales de la familia GPT-2; para el zoo no se especifica en la información disponible.
 
@@ -82,7 +82,7 @@ La comparación es aproximada: el zoo no compite en calidad de generación con G
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-mini-b030-n100
+- Hugging Face: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-mini-b030-n100
 - Preprint: "link coming soon" según la model card (no disponible)
 - Dataset web: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset código: https://huggingface.co/datasets/codeparrot/codeparrot-clean

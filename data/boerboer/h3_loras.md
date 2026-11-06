@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Boerboer/H3_LoRAs es un repositorio publicado en HuggingFace por el usuario Boerboer que, por su nombre y por su tamano (0,1 GB), parece contener adaptadores LoRA en lugar de un modelo completo. La model card publicada se limita a la declaracion de licencia (Apache 2.0) y no incluye ninguna descripcion del contenido, del modelo base sobre el que se aplican los adaptadores ni del procedimiento de entrenamiento seguido.
+Boerboer/H3_LoRAs es un repositorio publicado en Hugging Face por el usuario Boerboer que, por su nombre y por su tamano (0,1 GB), parece contener adaptadores LoRA en lugar de un modelo completo. La model card publicada se limita a la declaracion de licencia (Apache 2.0) y no incluye ninguna descripcion del contenido, del modelo base sobre el que se aplican los adaptadores ni del procedimiento de entrenamiento seguido.
 
-No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y su ultima actualizacion data del 18 de septiembre de 2026 segun los metadatos de HuggingFace.
+No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y su ultima actualizacion data del 18 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 Dado que no se especifica el modelo base ni el dataset de entrenamiento, no es posible determinar que problema resuelve ni evaluar su calidad. Esta ficha se limita a documentar los datos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Las busquedas web realizadas no han devuelto ningun resultado relacionado con este repositorio: los unicos enlaces recuperados corresponden a sitios de efemerides historicas y carecen de relacion con el modelo.
 
@@ -51,7 +51,7 @@ No es posible enumerar casos de uso concretos sin conocer el modelo base, la tar
 - Ajuste fino posterior (continual fine-tuning): partir del adaptador como inicializacion para un nuevo entrenamiento especifico de dominio, si la licencia del modelo base lo permite.
 - Fusion de adaptadores (adapter merging): combinar este adaptador con otros del mismo modelo base para explorar mezclas de comportamientos, condicionado a conocer la arquitectura y el formato de pesos.
 - Despliegue en produccion: solo recomendable despues de identificar el modelo base, verificar el formato de pesos y ejecutar una bateria de evaluaciones propias de calidad, sesgo y seguridad.
-- Auditoria de artefactos del ecosistema: analizar el repositorio como ejemplo de publicacion de pesos sin model card, para estudiar practicas de documentacion en HuggingFace.
+- Auditoria de artefactos del ecosistema: analizar el repositorio como ejemplo de publicacion de pesos sin model card, para estudiar practicas de documentacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -83,6 +83,6 @@ No disponible. No es posible establecer una comparativa porque no se ha identifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Boerboer/H3_LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/Boerboer/H3_LoRAs
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: las consultas realizadas no han devuelto ningun enlace relacionado con el modelo. Los unicos resultados obtenidos apuntan a sitios de efemerides historicas sin ninguna relacion con el repositorio: https://www.onthisday.com/, https://www.onthisday.com/today/events.php, https://www.britannica.com/on-this-day, https://www.timeanddate.com/on-this-day/, https://thisday.info/

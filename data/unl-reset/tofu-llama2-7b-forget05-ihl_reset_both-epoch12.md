@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (metricas TOFU) en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch12
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch12
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

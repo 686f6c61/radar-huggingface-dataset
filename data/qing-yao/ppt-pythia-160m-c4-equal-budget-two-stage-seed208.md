@@ -71,9 +71,9 @@ El model card menciona que en `reports/` hay seis endpoints y comparaciones empa
 
 | Modelo | Parametros | Contexto | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PPT-Pythia-160M two-stage seed208 | 162.322.944 | 2.048 | C4 (ingles) | no disponible | HuggingFace |
-| Pythia-160M (EleutherAI) | ~162 M | 2.048 | The Pile | Apache-2.0 | HuggingFace |
-| Pythia-160M-deduped (EleutherAI) | ~162 M | 2.048 | The Pile deduplicado | Apache-2.0 | HuggingFace |
+| PPT-Pythia-160M two-stage seed208 | 162.322.944 | 2.048 | C4 (ingles) | no disponible | Hugging Face |
+| Pythia-160M (EleutherAI) | ~162 M | 2.048 | The Pile | Apache-2.0 | Hugging Face |
+| Pythia-160M-deduped (EleutherAI) | ~162 M | 2.048 | The Pile deduplicado | Apache-2.0 | Hugging Face |
 
 La comparacion principal es con la familia Pythia original, de la que este modelo toma la arquitectura. Las diferencias relevantes son el corpus de entrenamiento (C4 en lugar de The Pile), el presupuesto de tokens (unos 688 M frente a cientos de miles de millones en Pythia) y la ausencia de licencia declarada. No se dispone de datos de benchmarks que permitan comparar el rendimiento de forma cuantitativa con estas alternativas.
 
@@ -90,5 +90,5 @@ La comparacion principal es con la familia Pythia original, de la que este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed208
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed208
 - Pythia-160M (referencia de arquitectura): https://huggingface.co/EleutherAI/pythia-160m

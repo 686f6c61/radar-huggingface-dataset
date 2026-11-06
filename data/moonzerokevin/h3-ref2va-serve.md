@@ -93,7 +93,7 @@ No se dispone de comparativas de rendimiento o calidad entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moonzerokevin/h3-ref2va-serve
+- Repositorio Hugging Face: https://huggingface.co/moonzerokevin/h3-ref2va-serve
 - GitHub MiniMax-H3 (oficial): https://github.com/MiniMax-AI/MiniMax-H3
 - Subdirectorio Ref2VA en GitHub: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/Ref2VA
 - Variante NVFP4 de ModelsLab: https://huggingface.co/ModelsLab/MiniMax-H3-ref2va-NVFP4

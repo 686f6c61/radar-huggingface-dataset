@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones), etiquetado en HuggingFace con la arquitectura `qwen2`. No se trata de un modelo publicado como producto, sino de una instantanea de investigacion: la model card lo describe explicitamente como "Archived checkpoint: n8-learned", conservado a partir de un entrenamiento ya finalizado cuya ruta original era `runs/mopd-sweep-n8-learned-hero-20261002-165650/resumable/n8-learned`. El autor es el usuario de HuggingFace `davidheineman` y el repositorio incluye las etiquetas `rlve` y `scratch-archive`, ademas de `safetensors` y `qwen2`.
+Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones), etiquetado en Hugging Face con la arquitectura `qwen2`. No se trata de un modelo publicado como producto, sino de una instantanea de investigacion: la model card lo describe explicitamente como "Archived checkpoint: n8-learned", conservado a partir de un entrenamiento ya finalizado cuya ruta original era `runs/mopd-sweep-n8-learned-hero-20261002-165650/resumable/n8-learned`. El autor es el usuario de Hugging Face `davidheineman` y el repositorio incluye las etiquetas `rlve` y `scratch-archive`, ademas de `safetensors` y `qwen2`.
 
 El checkpoint corresponde al paso 499 de un run cuyo identificador de Weights & Biases es `6df9a70e`. El nombre del directorio sugiere un barrido de hiperparametros o configuraciones (sufijo `mopd-sweep`) con una variante concreta denominada `n8-learned`; sin embargo, no se documenta en la informacion disponible que significan esas etiquetas ni cual era el objetivo del entrenamiento.
 
@@ -12,14 +12,14 @@ Su relevancia es por tanto acotada y de naturaleza reproducible: sirve para reco
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; etiqueta de HuggingFace `qwen2`. Configuracion concreta (capas, dimension oculta, cabezas) no disponible |
+| Arquitectura | Transformer decoder-only; etiqueta de Hugging Face `qwen2`. Configuracion concreta (capas, dimension oculta, cabezas) no disponible |
 | Parametros totales | 1.777.088.000 (~1,78 B), dato real de los ficheros safetensors |
 | Parametros activos | No disponible; no se indica que sea un modelo MoE, por lo que no aplica el concepto de parametros activos |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors; no se incluyen versiones GGUF, AWQ, GPTQ ni cuantizaciones precalculadas |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (checkpoint en formato HuggingFace). La model card menciona ademas que el directorio `checkpoint/` contiene el estado exacto guardado para checkpoints distribuidos de Megatron |
+| Formato de pesos | safetensors (checkpoint en formato Hugging Face). La model card menciona ademas que el directorio `checkpoint/` contiene el estado exacto guardado para checkpoints distribuidos de Megatron |
 | Tamano del repositorio | 3,6 GB |
 | Etiquetas | `safetensors`, `qwen2`, `rlve`, `scratch-archive`, `region:us` |
 | Pipeline declarado | No disponible |
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, la model card solo indica que se trata del checkpoin
 - Reproduccion de experimentos de investigacion: el repositorio preserva el estado exacto del paso 499 de un run identificado por su W&B run ID, por lo que permite reconstruir el resultado de ese entrenamiento concreto y auditar la curva de aprendizaje asociada.
 - Punto de partida para ajuste fino supervisado: al ser un modelo de ~1,8 B con pesos en safetensors, puede cargarse con `transformers` y utilizarse como inicializacion para SFT o DPO sobre dominios especificos, con un coste de computo moderado.
 - Base para comparaciones de ablacion: dentro de un barrido de configuraciones (`mopd-sweep`), este checkpoint de la variante `n8-learned` puede servir como referencia contra otras variantes del mismo barrido, siempre que esas otras variantes esten disponibles.
-- Validacion de pipelines de conversion de checkpoints: la presencia simultanea de pesos safetensors y de un directorio `checkpoint/` de Megatron lo hace util para verificar herramientas de conversion entre formatos distribuidos y HuggingFace.
+- Validacion de pipelines de conversion de checkpoints: la presencia simultanea de pesos safetensors y de un directorio `checkpoint/` de Megatron lo hace util para verificar herramientas de conversion entre formatos distribuidos y Hugging Face.
 - Inferencia local en GPU de consumo: con ~1,78 B de parametros, el modelo cabe en GPUs de gama media-alta en precision reducida, lo que permite ejecutar prototipos y demos sin infraestructura de centro de datos.
 - Generacion de datos sinteticos para experimentos: puede emplearse para producir textos de entrenamiento en tareas donde la calidad no sea critica, asumiendo que no hay ninguna evaluacion publicada que respalde su calidad.
 - Estudio de dinamicas de entrenamiento: al conservarse el paso final de un run completado, es util para analizar como se comporta un checkpoint intermedio respecto a un modelo base de la misma familia.
@@ -87,7 +87,7 @@ La comparacion con modelos de la misma categoria se ve limitada porque no se con
 | Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Si, publicados por el autor | Amplia, con versiones cuantizadas |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Terminos de uso de Gemma | Si, publicados por el autor | Amplia, con versiones cuantizadas |
 
-Las cifras de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B corresponden a datos publicos de sus respectivos autores. La columna de este checkpoint refleja unicamente lo declarado en su repositorio de HuggingFace.
+Las cifras de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B corresponden a datos publicos de sus respectivos autores. La columna de este checkpoint refleja unicamente lo declarado en su repositorio de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -105,6 +105,6 @@ Las cifras de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B corresponden a datos publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-hero-20261002-16-n8-learned-f24346bec001
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-hero-20261002-16-n8-learned-f24346bec001
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos o informes de entrenamiento) en la informacion disponible. La model card no incluye referencias externas y no proporciona una URL publica al run de Weights & Biases `6df9a70e`.

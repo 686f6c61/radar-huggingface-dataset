@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prakhya15/olmo-7b-cfg-guacamol-250kk` es un repositorio de modelo publicado en HuggingFace por el usuario prakhya15. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion, sin pipeline declarado, sin idiomas especificados y sin datos de uso (0 descargas y 0 likes en el momento de la consulta). El repositorio se creo y actualizo el 15 de septiembre de 2026.
+`prakhya15/olmo-7b-cfg-guacamol-250kk` es un repositorio de modelo publicado en Hugging Face por el usuario prakhya15. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion, sin pipeline declarado, sin idiomas especificados y sin datos de uso (0 descargas y 0 likes en el momento de la consulta). El repositorio se creo y actualizo el 15 de septiembre de 2026.
 
 El identificador del repositorio sugiere, sin que el autor lo confirme en ningun documento, que se trata de un ajuste fino del modelo OLMo de 7.000 millones de parametros (Allen Institute for AI) orientado a la generacion de moleculas bajo el benchmark GuacaMol, empleando un esquema de generacion condicionada por gramatica libre de contexto (CFG). El sufijo `250kk` es ambiguo: segun la convencion de usar "k" para miles y "kk" para millones, podria referirse a 250 millones de tokens, 250 millones de moleculas o 250.000 pasos de entrenamiento.
 
@@ -73,8 +73,8 @@ La comparativa se plantea frente a modelos de la misma categoria segun el identi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prakhya15/olmo-7b-cfg-guacamol-250kk | no disponible (nombre sugiere 7B) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| OLMo 7B (Allen Institute for AI) | 7B | 2.048 tokens en la version original de 7B | Resultados publicados por el desarrollador en su model card | Apache 2.0 (segun la version publicada) | HuggingFace, ampliamente utilizado |
+| prakhya15/olmo-7b-cfg-guacamol-250kk | no disponible (nombre sugiere 7B) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| OLMo 7B (Allen Institute for AI) | 7B | 2.048 tokens en la version original de 7B | Resultados publicados por el desarrollador en su model card | Apache 2.0 (segun la version publicada) | Hugging Face, ampliamente utilizado |
 | Modelos especializados en generacion molecular (familia GuacaMol) | Variable segun implementacion | No aplica en la mayoria de enfoques | Metricas publicadas en el articulo de GuacaMol (2019) | Variable | Repositorios academicos |
 
 No se dispone de informacion suficiente para establecer comparaciones cuantitativas fiables. Se recomienda consultar la model card de OLMo para los datos del modelo base y el articulo de GuacaMol para las metricas de referencia del benchmark.
@@ -94,6 +94,6 @@ No se dispone de informacion suficiente para establecer comparaciones cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prakhya15/olmo-7b-cfg-guacamol-250kk
+- Repositorio en Hugging Face: https://huggingface.co/prakhya15/olmo-7b-cfg-guacamol-250kk
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a la plataforma Steam (https://store.steampowered.com/, https://store.steampowered.com/about, https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community, https://en.wikipedia.org/wiki/Steam_(service), https://store.steampowered.com/login/) y no guardan ninguna relacion con el repositorio.
 - Referencias no verificadas en este repositorio, pero pertinentes para contextualizar: model card de OLMo 7B y articulo de GuacaMol. No se incluyen enlaces directos porque no aparecieron en la busqueda proporcionada.

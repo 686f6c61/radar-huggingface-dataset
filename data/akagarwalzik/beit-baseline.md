@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akagarwalzik/beit-baseline es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura BEiT (un Vision Transformer preentrenado al estilo BERT) orientada a aprendizaje contrastivo, con licencia MIT. No se trata de un modelo entrenado, sino de un esqueleto de código (`pipeline.py`) acompañado de un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un checkpoint evaluado.
+Akagarwalzik/beit-baseline es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura BEiT (un Vision Transformer preentrenado al estilo BERT) orientada a aprendizaje contrastivo, con licencia MIT. No se trata de un modelo entrenado, sino de un esqueleto de código (`pipeline.py`) acompañado de un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un checkpoint evaluado.
 
 El interés del artefacto es metodológico y de ingeniería: permite inspeccionar cambios de arquitectura (atención grouped query, fusión low-rank, activación ReLU, normalización InstanceNorm) antes de lanzar un entrenamiento completo, y sirve como plantilla reproducible para experimentos de representación visual contrastiva. El autor indica que la receta por defecto usa el optimizador NovoGrad con un schedule de warmup lineal, pero subraya que son valores de partida del script y no evidencia de una ejecución completada.
 
@@ -71,10 +71,10 @@ Advertencia: los datos de los modelos BEiT originales proceden de documentación
 
 | Modelo | Parametros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Akagarwalzik/beit-baseline | 49.600 (49,6 K) según safetensors | Checkpoint de inicialización sin entrenar, sin benchmarks | MIT | HuggingFace, 11 descargas |
-| BEiT-base (original) | ~86 M (documentación pública de Transformers) | Modelo preentrenado y evaluado en tareas de visión | Consultar repositorio oficial | HuggingFace y Transformers |
-| BEiT-large (original) | ~307 M (documentación pública de Transformers) | Modelo preentrenado y evaluado en tareas de visión | Consultar repositorio oficial | HuggingFace y Transformers |
-| Vision Transformer base supervisado (referencia de categoría) | ~86 M (documentación pública) | Preentrenado de forma supervisada | Consultar repositorio oficial | HuggingFace y Transformers |
+| Akagarwalzik/beit-baseline | 49.600 (49,6 K) según safetensors | Checkpoint de inicialización sin entrenar, sin benchmarks | MIT | Hugging Face, 11 descargas |
+| BEiT-base (original) | ~86 M (documentación pública de Transformers) | Modelo preentrenado y evaluado en tareas de visión | Consultar repositorio oficial | Hugging Face y Transformers |
+| BEiT-large (original) | ~307 M (documentación pública de Transformers) | Modelo preentrenado y evaluado en tareas de visión | Consultar repositorio oficial | Hugging Face y Transformers |
+| Vision Transformer base supervisado (referencia de categoría) | ~86 M (documentación pública) | Preentrenado de forma supervisada | Consultar repositorio oficial | Hugging Face y Transformers |
 
 La comparación relevante no es de rendimiento, porque este repositorio no publica ninguno, sino de propósito: los BEiT originales son modelos preentrenados y evaluados; este artefacto es una base de código experimental con un checkpoint simbólico.
 
@@ -93,9 +93,9 @@ La comparación relevante no es de rendimiento, porque este repositorio no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akagarwalzik/beit-baseline
+- Modelo en Hugging Face: https://huggingface.co/Akagarwalzik/beit-baseline
 - Documentación de BEiT en Transformers (GitHub): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/beit.md
-- Documentación de BEiT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/beit
+- Documentación de BEiT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/beit
 - Documentación de BEiT, versión 4.46.3: https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit
 - Artículo sobre un modelo BEiT auto-supervisado con arquitectura jerárquica para detección de deepfakes (Springer): https://link.springer.com/article/10.1007/s10462-025-11286-8
 - AI Baseline (resultado de búsqueda sin relación con el modelo, coincidencia de nombre): https://www.ai-baseline.com/

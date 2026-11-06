@@ -88,7 +88,7 @@ No se han encontrado otros adaptadores LoRA publicos para deteccion de prompt in
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/haominglan/PromptSentinel-DeBERTa-LoRA
+- Repositorio Hugging Face del adaptador: https://huggingface.co/haominglan/PromptSentinel-DeBERTa-LoRA
 - Modelo base (Protect AI DeBERTa-v3 prompt injection v2): https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2
 - Dataset PromptShield: https://huggingface.co/datasets/hendzh/PromptShield
 - Paper de PromptShield (arXiv 2501.15145): https://arxiv.org/abs/2501.15145

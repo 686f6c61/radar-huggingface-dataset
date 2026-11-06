@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Toleng/koplak-flash-doktor-s3-1.5b-instruct` es un modelo de generación de texto de 1.500 millones de parámetros, desarrollado por el usuario Toleng y publicado en HuggingFace. Según los metadatos, se trata de un fine-tuning del modelo base `Toleng/koplak-flash-master-s22-1.5b-instruct`, que a su vez parece derivar de la arquitectura Qwen2 (según las etiquetas `qwen2` y `unsloth`). El nombre sugiere una especialización en dominios médicos o de doctorado, aunque no se proporciona documentación adicional que lo confirme.
+El modelo `Toleng/koplak-flash-doktor-s3-1.5b-instruct` es un modelo de generación de texto de 1.500 millones de parámetros, desarrollado por el usuario Toleng y publicado en Hugging Face. Según los metadatos, se trata de un fine-tuning del modelo base `Toleng/koplak-flash-master-s22-1.5b-instruct`, que a su vez parece derivar de la arquitectura Qwen2 (según las etiquetas `qwen2` y `unsloth`). El nombre sugiere una especialización en dominios médicos o de doctorado, aunque no se proporciona documentación adicional que lo confirme.
 
-La ficha se basa exclusivamente en la información pública del repositorio de HuggingFace, que es muy limitada: no se especifican detalles de arquitectura, datos de entrenamiento, licencia ni idiomas soportados. Por tanto, gran parte de los apartados técnicos quedan marcados como "no disponible". A pesar de ello, el modelo puede ser relevante para desarrolladores que buscan un modelo pequeño y ligero para tareas de generación de texto en entornos con recursos limitados, siempre que se valide su comportamiento empíricamente.
+La ficha se basa exclusivamente en la información pública del repositorio de Hugging Face, que es muy limitada: no se especifican detalles de arquitectura, datos de entrenamiento, licencia ni idiomas soportados. Por tanto, gran parte de los apartados técnicos quedan marcados como "no disponible". A pesar de ello, el modelo puede ser relevante para desarrolladores que buscan un modelo pequeño y ligero para tareas de generación de texto en entornos con recursos limitados, siempre que se valide su comportamiento empíricamente.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha se basa exclusivamente en la información pública del repositorio de H
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Las etiquetas de HuggingFace indican que el modelo está basado en la familia Qwen2 y que fue fine-tuneado a partir de un modelo intermedio (`koplak-flash-master-s22-1.5b-instruct`). Se desconoce si se emplearon técnicas como RLHF, DPO o instrucciones supervisadas. Tampoco se especifica el número de tokens de entrenamiento ni la composición del dataset. La ausencia de documentación técnica impide realizar afirmaciones sobre innovaciones o particularidades del entrenamiento.
+No se ha publicado información detallada sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Las etiquetas de Hugging Face indican que el modelo está basado en la familia Qwen2 y que fue fine-tuneado a partir de un modelo intermedio (`koplak-flash-master-s22-1.5b-instruct`). Se desconoce si se emplearon técnicas como RLHF, DPO o instrucciones supervisadas. Tampoco se especifica el número de tokens de entrenamiento ni la composición del dataset. La ausencia de documentación técnica impide realizar afirmaciones sobre innovaciones o particularidades del entrenamiento.
 
 ## Capacidades
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Toleng/koplak-flash-doktor-s3-1.5b-instruct
+- Repositorio Hugging Face: https://huggingface.co/Toleng/koplak-flash-doktor-s3-1.5b-instruct
 - Modelo base: https://huggingface.co/Toleng/koplak-flash-master-s22-1.5b-instruct (enlace inferido, no verificado)
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

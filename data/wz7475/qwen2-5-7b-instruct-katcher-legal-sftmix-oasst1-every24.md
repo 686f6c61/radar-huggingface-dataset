@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every24` es un ajuste fino publicado en HuggingFace por el usuario wz7475. Por el identificador del repositorio se deduce que parte de Qwen2.5-7B-Instruct, un transformer decoder-only de unos 7,6 mil millones de parámetros con atención de consultas agrupadas (GQA) y 32 768 tokens de contexto nativo; sin embargo, la model card no confirma explícitamente esta ascendencia y está generada a partir de la plantilla automática de HuggingFace, sin contenido propio.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every24` es un ajuste fino publicado en Hugging Face por el usuario wz7475. Por el identificador del repositorio se deduce que parte de Qwen2.5-7B-Instruct, un transformer decoder-only de unos 7,6 mil millones de parámetros con atención de consultas agrupadas (GQA) y 32 768 tokens de contexto nativo; sin embargo, la model card no confirma explícitamente esta ascendencia y está generada a partir de la plantilla automática de Hugging Face, sin contenido propio.
 
 El nombre del repositorio sugiere una mezcla de datos de ajuste supervisado (SFT) de ámbito legal ("katcher-legal") combinada con el conjunto OASST1, y el sufijo "every24" apunta a un guardado de checkpoint cada 24 pasos o a una proporción de mezcla concreta. El tamaño declarado del repositorio, 0,3 GB, es muy inferior a los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7B en precisión de 16 bits, lo que indica que contiene un adaptador (probablemente LoRA) o un guardado parcial, no los pesos íntegros fusionados.
 
@@ -23,11 +23,11 @@ La relevancia de esta ficha es limitada y hay que tratarla con cautela: no hay l
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre el procedimiento de entrenamiento. La model card reproduce la plantilla automática de HuggingFace y todos los apartados relevantes (datos de entrenamiento, hiperparámetros, régimen de precisión, hardware, evaluación) figuran como "[More Information Needed]". Lo único deducible es lo que sugiere el propio identificador: un ajuste supervisado sobre una mezcla que combinaría un corpus legal identificado como "katcher-legal" con el dataset OASST1, presumiblemente aplicado sobre Qwen2.5-7B-Instruct. Se desconoce si se emplearon técnicas de alineación adicionales (DPO, RLHF, ORPO), el número de tokens de entrenamiento, la proporción exacta de cada subconjunto ni si el resultado publicado es un adaptador LoRA, un QLoRA o un ajuste parcial de capas.
+No hay información publicada sobre el procedimiento de entrenamiento. La model card reproduce la plantilla automática de Hugging Face y todos los apartados relevantes (datos de entrenamiento, hiperparámetros, régimen de precisión, hardware, evaluación) figuran como "[More Information Needed]". Lo único deducible es lo que sugiere el propio identificador: un ajuste supervisado sobre una mezcla que combinaría un corpus legal identificado como "katcher-legal" con el dataset OASST1, presumiblemente aplicado sobre Qwen2.5-7B-Instruct. Se desconoce si se emplearon técnicas de alineación adicionales (DPO, RLHF, ORPO), el número de tokens de entrenamiento, la proporción exacta de cada subconjunto ni si el resultado publicado es un adaptador LoRA, un QLoRA o un ajuste parcial de capas.
 
 La arquitectura esperada, si se confirma la base, sería la de Qwen2.5-7B: transformer decoder-only de 28 capas, dimensión oculta de 3584, 28 cabezas de atención y 4 cabezas KV (GQA), normalización RMSNorm, activación SwiGLU, embeddings de RoPE y un vocabulario de 151 936 tokens. El modelo base fue preentrenado sobre aproximadamente 18 billones de tokens y su ventana nativa es de 32 768 tokens. Todo ello son características del modelo base, no verificadas para este ajuste concreto.
 
-Un detalle a tener en cuenta: la etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla automática de HuggingFace. No es una referencia al artículo técnico del modelo ni indica ninguna innovación arquitectónica.
+Un detalle a tener en cuenta: la etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla automática de Hugging Face. No es una referencia al artículo técnico del modelo ni indica ninguna innovación arquitectónica.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Los datos de las alternativas provienen de la documentación pública de esos mo
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no es posible determinar si el uso comercial está permitido para este ajuste concreto. Aunque el modelo base Qwen2.5-7B-Instruct es Apache 2.0, el autor no ha explicitado los términos de su derivado.
-- Model card vacía: la ficha es la plantilla automática de HuggingFace sin rellenar. No hay información sobre datos, hiperparámetros, evaluación ni uso previsto.
+- Model card vacía: la ficha es la plantilla automática de Hugging Face sin rellenar. No hay información sobre datos, hiperparámetros, evaluación ni uso previsto.
 - Riesgo elevado de alucinación en dominio legal: ningún modelo de 7B es fiable como fuente de asesoramiento jurídico. Puede inventar artículos, jurisprudencia, plazos o referencias normativas con total apariencia de verosimilitud.
 - Riesgo de deriva de dominio por la mezcla con OASST1: la inclusión de un corpus conversacional general en un ajuste especializado puede diluir el comportamiento en tareas legales o introducir un registro coloquial inadecuado para el ámbito jurídico.
 - Posible olvido catastrófico: al no documentarse la estrategia de ajuste, no puede descartarse degradación de capacidades generales del modelo base (código, matemáticas, multilingüismo) tras el entrenamiento.
@@ -94,10 +94,10 @@ Los datos de las alternativas provienen de la documentación pública de esos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every24
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every24
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Artículo técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Dataset OASST1 (OpenAssistant Conversations): https://huggingface.co/datasets/OpenAssistant/oasst1
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automático: https://mlco2.github.io/impact
-- Repositorio del autor en HuggingFace: https://huggingface.co/wz7475
+- Repositorio del autor en Hugging Face: https://huggingface.co/wz7475

@@ -77,7 +77,7 @@ No se dispone de información sobre modelos ASR comparables para bambara en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v1.5
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v1.5
 - Modelo base: https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v0.5
 - Dataset Kunkado: https://huggingface.co/datasets/RobotsMali/kunkado
 - Repositorio de código de fine-tuning: https://github.com/RobotsMali-AI/bambara-asr/

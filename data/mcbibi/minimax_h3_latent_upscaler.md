@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks cuantitativos (por ejemplo, PSNR, S
 
 | Modelo | Tipo | Parametros | Factor de escala | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minimax H3 Latent Upscaler (este modelo) | Upscaler en espacio latente de video | 345.280.216 | 1,0x–4,0x | apache-2.0 | HuggingFace, nodo ComfyUI |
+| Minimax H3 Latent Upscaler (este modelo) | Upscaler en espacio latente de video | 345.280.216 | 1,0x–4,0x | apache-2.0 | Hugging Face, nodo ComfyUI |
 | LTX 2.3 Spatial Upscaler | Upscaler espacial (referenciado como inspiracion arquitectonica) | no disponible | no disponible | no disponible | no disponible |
 | Interpolacion bilineal/bicubica de latentes | Metodo no aprendido | no aplica | arbitrario | no aplica | nativa en frameworks |
 
@@ -77,8 +77,8 @@ La model card unicamente cita el LTX 2.3 Spatial Upscaler como referencia arquit
 
 - Especificidad de espacio latente: el modelo solo es valido para los latentes de 24 canales del VAE de Minimax H3; no es aplicable a otros espacios latentes ni a otros generadores.
 - Ausencia de benchmarks: no hay metricas cuantitativas publicadas de calidad (PSNR, SSIM, LPIPS, VMAF) ni de rendimiento, por lo que la mejora frente a metodos alternativos no esta respaldada por datos medibles en la informacion disponible.
-- Madurez: el repositorio figura con 0 descargas y 0 likes en los datos de HuggingFace, por lo que el modelo no cuenta con validacion amplia por parte de la comunidad.
-- Discrepancia de autoría: el identificador de HuggingFace listado es `mcbibi/Minimax_h3_latent_Upscaler`, mientras que la model card y los enlaces internos apuntan a `LBH-123-AI/Minimax_h3_latent_Upscaler`, lo que puede generar confusion al localizar el recurso.
+- Madurez: el repositorio figura con 0 descargas y 0 likes en los datos de Hugging Face, por lo que el modelo no cuenta con validacion amplia por parte de la comunidad.
+- Discrepancia de autoría: el identificador de Hugging Face listado es `mcbibi/Minimax_h3_latent_Upscaler`, mientras que la model card y los enlaces internos apuntan a `LBH-123-AI/Minimax_h3_latent_Upscaler`, lo que puede generar confusion al localizar el recurso.
 - Fechas: la fecha de creacion y actualizacion indicada es 2026-09-28, que aparece en el futuro respecto al momento habitual de publicacion; conviene verificar la vigencia del repositorio.
 - Riesgo de artefactos residuales: aunque la model card afirma que se evitan los artefactos de fantasma de la interpolacion ingenua, no se detalla el comportamiento en escalas cercanas a 4x ni en videos con movimiento rapido o alta densidad de detalle.
 - La calidad final depende del paso de remuestreo/refinado posterior a la resolucion objetivo; el upscaler por si solo no garantiza la recuperacion completa de detalle.
@@ -87,7 +87,7 @@ La model card unicamente cita el LTX 2.3 Spatial Upscaler como referencia arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mcbibi/Minimax_h3_latent_Upscaler
+- Hugging Face: https://huggingface.co/mcbibi/Minimax_h3_latent_Upscaler
 - Repositorio referenciado en la model card: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
 - Nodo personalizado de ComfyUI: https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler
 - Configuracion de arquitectura v1: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/minimax_h3_latent_upscaler_3d_conv_v1/config.json

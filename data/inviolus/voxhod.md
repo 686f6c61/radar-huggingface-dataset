@@ -76,7 +76,7 @@ La version v1 (primer entrenamiento infraentrenado) se incluye en la grafica de 
 
 | Modelo | Parametros | Entrada | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxHOD (inviolus) | 136.547 | 160x160 RGB | Deteccion de personas aerea | CC BY 4.0 (pesos), MIT (codigo) | HuggingFace, GitHub |
+| VoxHOD (inviolus) | 136.547 | 160x160 RGB | Deteccion de personas aerea | CC BY 4.0 (pesos), MIT (codigo) | Hugging Face, GitHub |
 | Detectores CenterNet genericos | millones (p. ej. ResNet-18 backbone) | 512x512 o mayor | Deteccion de objetos generica | varia | Amplia |
 | YOLO nano (familia YOLOv5n/YOLOv8n) | 1,9-3,2 M | 640x640 | Deteccion de objetos generica | GPL/AGPL o MIT segun version | Amplia |
 | Detectores TinyML para microcontroladores | decenas a cientos de miles | variable | Deteccion generica | varia | Limitada |
@@ -97,7 +97,7 @@ No se dispone de comparaciones directas publicadas por el autor frente a estos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inviolus/VoxHOD
+- Hugging Face: https://huggingface.co/inviolus/VoxHOD
 - Codigo y detalles de entrenamiento: https://github.com/ErdemWilkinson/VoxHOD
 - Dataset HERIDAL: https://zenodo.org/records/5662351
 - Paper de referencia HERIDAL: D. Bozic-Stulic, Z. Marusic, S. Gotovac, "Deep Learning Approach in Aerial Imagery for Supporting Land Search and Rescue Missions", IJCV 2019.

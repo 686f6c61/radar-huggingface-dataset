@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `matin55199/matin` es un artefacto publicado en HuggingFace por el usuario `matin55199` bajo licencia Apache 2.0. La informacion disponible en el repositorio es practicamente nula: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. No se especifica pipeline, idiomas soportados, formato de pesos ni cualquier otro metadato tecnico relevante.
+El modelo `matin55199/matin` es un artefacto publicado en Hugging Face por el usuario `matin55199` bajo licencia Apache 2.0. La informacion disponible en el repositorio es practicamente nula: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. No se especifica pipeline, idiomas soportados, formato de pesos ni cualquier otro metadato tecnico relevante.
 
 Por el momento no es posible determinar que problema resuelve ni por que seria relevante. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-11-04T15:01:21Z y 2026-11-04T15:01:22Z), lo que sugiere una publicacion de prueba o un placeholder sin contenido sustantivo.
 
@@ -80,5 +80,5 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matin55199/matin
+- Repositorio en Hugging Face: https://huggingface.co/matin55199/matin
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

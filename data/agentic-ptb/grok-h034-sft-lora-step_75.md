@@ -77,6 +77,6 @@ La comparación directa no es posible porque este checkpoint no tiene benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h034.sft-lora.step_75
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h034.sft-lora.step_75
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

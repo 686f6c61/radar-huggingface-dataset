@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-Video es un modelo de generación de vídeo de pesos abiertos desarrollado por Lightricks y distribuido en HuggingFace a través de la librería diffusers, con el pipeline declarado como image-to-video. El autor lo presenta como el primer modelo de generación de vídeo basado en DiT (Diffusion Transformer) capaz de generar vídeo de alta calidad en tiempo real: produce vídeo a 30 FPS con resolución 1216×704 a una velocidad superior a la de su propia reproducción.
+LTX-Video es un modelo de generación de vídeo de pesos abiertos desarrollado por Lightricks y distribuido en Hugging Face a través de la librería diffusers, con el pipeline declarado como image-to-video. El autor lo presenta como el primer modelo de generación de vídeo basado en DiT (Diffusion Transformer) capaz de generar vídeo de alta calidad en tiempo real: produce vídeo a 30 FPS con resolución 1216×704 a una velocidad superior a la de su propia reproducción.
 
 El repositorio principal aloja un checkpoint de 1.923.385.472 parámetros (aproximadamente 1,92 mil millones), pero la familia documentada por el autor es más amplia e incluye variantes de 13.000 millones de parámetros en versiones dev, distilled y mix, además de versiones cuantizadas en fp8. Esa variedad permite escoger entre máxima calidad (13b-dev), equilibrio entre velocidad y calidad (mix, con renderizado multiescala) o inferencia ligera (2b-distilled) según la VRAM disponible.
 
@@ -99,7 +99,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lightricks/LTX-Video
+- Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-Video
 - Repositorio de código y configuración: https://github.com/Lightricks/LTX-Video
 - Config de ltxv-13b-0.9.8-dev: https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-13b-0.9.8-dev.yaml
 - Config de ltxv-13b-0.9.8-dev en fp8: https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-13b-0.9.8-dev-fp8.yaml

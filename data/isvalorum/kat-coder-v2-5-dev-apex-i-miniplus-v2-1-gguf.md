@@ -59,7 +59,7 @@ El único dato cuantitativo publicado en la información disponible es la perple
 | Perplejidad WikiText-2 (base sin cuantizar, aproximada) | ≈ 5,44 | Referencia citada por el autor; ΔPPL ≈ +0,06 |
 | Velocidad de generación con offload a RAM del sistema | +24 a 28+ tok/s | DDR4 dual-channel o DDR5 6000+ MT/s, según el autor |
 | Parámetros totales | 34.660.610.688 | Dato real de safetensors |
-| Tamaño del repositorio | 14,8 GB | Total del repo en HuggingFace |
+| Tamaño del repositorio | 14,8 GB | Total del repo en Hugging Face |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
@@ -99,7 +99,7 @@ Comparación con modelos alternativos de la misma categoría (otros asistentes d
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Paper, blog técnico, repositorio de código o demo del modelo base: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su modelo base (únicamente dominios de contenido no relacionado), por lo que no se incluyen enlaces adicionales.

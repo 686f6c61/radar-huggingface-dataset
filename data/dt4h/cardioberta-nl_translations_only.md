@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: el modelo tiene ~126M parámetros; en FP32, el checkpoint ocupa aproximadamente 0,5 GB (según el tamaño del repositorio). En FP16, cabría en ~250 MB de VRAM.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM es suficiente (p. ej. NVIDIA T4, GTX 1650, RTX 3060). También puede ejecutarse en CPU sin problemas.
 - **Ajuste en consumer GPU**: sí, cabe en cualquier GPU de consumo actual (RTX 3060 o superior) y también en CPU.
-- **Opciones de despliegue**: compatible con la librería `transformers` de HuggingFace, y con `text-embeddings-inference` (TEI) como endpoint de embeddings. También puede usarse con `sentence-transformers` si se envuelve el modelo y tokenizer.
+- **Opciones de despliegue**: compatible con la librería `transformers` de Hugging Face, y con `text-embeddings-inference` (TEI) como endpoint de embeddings. También puede usarse con `sentence-transformers` si se envuelve el modelo y tokenizer.
 - **Latencia y throughput**: no se han publicado datos. Para un modelo de este tamaño, la latencia de una sola pasada es del orden de milisegundos en GPU, y se puede procesar un lote de cientos de secuencias por segundo.
 
 ## Comparativa con modelos similares

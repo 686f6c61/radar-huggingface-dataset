@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/gemma-4-12B-it-qat-MLX-4bit-g64 | ~11,9 B | no disponible | 4 bits, grupo 64 | Apache 2.0 | HuggingFace, MLX |
-| google/gemma-4-12B-it-qat-q4_0-unquantized | ~11,9 B | no disponible | QAT q4_0 (sin cuantizar en el repo) | Apache 2.0 | HuggingFace, oficial |
-| google/gemma-4-12B-it | ~11,9 B | no disponible | bf16/fp16 (completo) | Apache 2.0 | HuggingFace, oficial |
+| Audante/gemma-4-12B-it-qat-MLX-4bit-g64 | ~11,9 B | no disponible | 4 bits, grupo 64 | Apache 2.0 | Hugging Face, MLX |
+| google/gemma-4-12B-it-qat-q4_0-unquantized | ~11,9 B | no disponible | QAT q4_0 (sin cuantizar en el repo) | Apache 2.0 | Hugging Face, oficial |
+| google/gemma-4-12B-it | ~11,9 B | no disponible | bf16/fp16 (completo) | Apache 2.0 | Hugging Face, oficial |
 
 La comparación se limita a las variantes del mismo modelo base, ya que la información disponible no incluye datos de rendimiento ni especificaciones de modelos alternativos de otros autores. La diferencia principal entre las tres entradas es el formato y el grado de cuantización: la versión de Audante está lista para MLX en 4 bits, la QAT de Google conserva los pesos sin cuantizar para permitir conversiones posteriores, y la versión estándar es el checkpoint completo en precisión original.
 
@@ -85,7 +85,7 @@ La comparación se limita a las variantes del mismo modelo base, ya que la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Audante/gemma-4-12B-it-qat-MLX-4bit-g64
+- Modelo en Hugging Face: https://huggingface.co/Audante/gemma-4-12B-it-qat-MLX-4bit-g64
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Checkpoint QAT de origen: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized (revisión `b6ed86275a6a5735884e208bfed95b445a684ca2`)
 - Librería MLX: https://github.com/ml-explore/mlx

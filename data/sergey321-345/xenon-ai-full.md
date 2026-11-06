@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| XENON AI FULL | 4,02B | no disponible | Apache-2.0 | HuggingFace | Ajuste LoRA fusionado sobre Qwen3-4B-Instruct-2507 |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02B | no disponible en esta ficha | Apache-2.0 | HuggingFace | Modelo base oficial, documentación completa |
-| Llama 3.2 3B Instruct | 3,21B | 128K | Llama 3.2 Community License | HuggingFace, Meta | Alternativa de tamaño similar con licencia restrictiva |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | HuggingFace, Microsoft | Alternativa de tamaño similar con licencia permisiva |
+| XENON AI FULL | 4,02B | no disponible | Apache-2.0 | Hugging Face | Ajuste LoRA fusionado sobre Qwen3-4B-Instruct-2507 |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02B | no disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo base oficial, documentación completa |
+| Llama 3.2 3B Instruct | 3,21B | 128K | Llama 3.2 Community License | Hugging Face, Meta | Alternativa de tamaño similar con licencia restrictiva |
+| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Hugging Face, Microsoft | Alternativa de tamaño similar con licencia permisiva |
 
 La comparación con Qwen3-4B-Instruct-2507 es la más directa: XENON AI FULL añade un ajuste LoRA no documentado sobre el mismo esqueleto, por lo que su rendimiento dependerá de la calidad de dicho ajuste, sin datos públicos que lo respalden.
 
@@ -88,6 +88,6 @@ La comparación con Qwen3-4B-Instruct-2507 es la más directa: XENON AI FULL añ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sergey321-345/XENON-AI-FULL
+- Repositorio Hugging Face: https://huggingface.co/Sergey321-345/XENON-AI-FULL
 - Adaptador LoRA referenciado: https://huggingface.co/Sergey321-345/XENON.AI
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

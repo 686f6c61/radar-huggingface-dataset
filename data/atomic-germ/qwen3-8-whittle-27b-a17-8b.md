@@ -103,12 +103,12 @@ No se han encontrado en la informacion proporcionada resultados comparativos fre
 - Idiomas soportados no declarados, lo que impide asumir cobertura multilingue.
 - Tool calling, agentes y razonamiento multi-paso no documentados; no conviene asumir su disponibilidad.
 - Estado de financiacion: research preview auto-financiado con el presupuesto de computo agotado, por lo que no hay garantia de mantenimiento, correccion de errores ni nuevas versiones.
-- Coherencia del repositorio: el tamano declarado en HuggingFace es de 3,2 GB, muy inferior a lo esperable para un checkpoint completo de 27B; conviene verificar que archivos contiene antes de planificar un despliegue. Los subdirectorios `v2.1/` y `v2.2/` conservan versiones anteriores (`v2.2/shared_expert_gate.safetensors` reconstruye v2.2 exactamente junto con los pesos de la raiz).
+- Coherencia del repositorio: el tamano declarado en Hugging Face es de 3,2 GB, muy inferior a lo esperable para un checkpoint completo de 27B; conviene verificar que archivos contiene antes de planificar un despliegue. Los subdirectorios `v2.1/` y `v2.2/` conservan versiones anteriores (`v2.2/shared_expert_gate.safetensors` reconstruye v2.2 exactamente junto con los pesos de la raiz).
 - Licencia Apache-2.0: permite uso comercial y modificacion, pero el caracter experimental del modelo y la ausencia de garantias del autor desaconsejan su uso en produccion sin validacion propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-27B-A17.8B
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-27B-A17.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos de la version anterior v2.2 (puerta archivada): `v2.2/shared_expert_gate.safetensors` dentro del repositorio
 - Pesos de la version v2.1: subdirectorio `v2.1/` dentro del repositorio

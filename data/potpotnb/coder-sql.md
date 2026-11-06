@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`potpotNB/coder-sql` es un modelo publicado en HuggingFace por el usuario potpotNB bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier otra documentacion, el modelo parece orientado a tareas de generacion de SQL y codigo, aunque la model card no aporta ningun detalle que lo confirme: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
+`potpotNB/coder-sql` es un modelo publicado en Hugging Face por el usuario potpotNB bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier otra documentacion, el modelo parece orientado a tareas de generacion de SQL y codigo, aunque la model card no aporta ningun detalle que lo confirme: no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
 
 La informacion disponible se limita a los metadatos del repositorio: licencia Apache 2.0, region US y fecha de creacion y actualizacion el 30 de octubre de 2026. No consta pipeline declarado, no se listan idiomas soportados y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -74,4 +74,4 @@ No disponible. Sin conocer el tamano, la arquitectura ni el rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/potpotNB/coder-sql
+- Hugging Face: https://huggingface.co/potpotNB/coder-sql

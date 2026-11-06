@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Método de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (step 36) | 4,02 B | no disponible | GRPO con rúbrica estática sobre RaR-Medicine, paso 36 de 48 | Apache 2.0 | Público en HuggingFace; checkpoint intermedio de investigación |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | no disponible | Ajuste instruccional del autor original; detalles no disponibles aquí | Apache 2.0 | Público en HuggingFace |
+| Este checkpoint (step 36) | 4,02 B | no disponible | GRPO con rúbrica estática sobre RaR-Medicine, paso 36 de 48 | Apache 2.0 | Público en Hugging Face; checkpoint intermedio de investigación |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | no disponible | Ajuste instruccional del autor original; detalles no disponibles aquí | Apache 2.0 | Público en Hugging Face |
 | Rama de rúbrica dinámica del mismo proyecto (OnlineRubrics) | no disponible | no disponible | GRPO con rúbrica dinámica, misma configuración declarada | no disponible | Mencionada en la model card; sin enlace proporcionado |
 | Alternativas de la misma categoría (otros modelos densos de ~4B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ La única comparación directa verificable es con el modelo base, del que este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/HYU-NLP-EVAL
 - Resultados de la búsqueda web: no se encontraron enlaces relevantes al modelo (los resultados devueltos correspondían a páginas corporativas de Microsoft y no guardan relación con este repositorio). No se dispone de enlaces a papers, blogs, repositorios de código ni demos.

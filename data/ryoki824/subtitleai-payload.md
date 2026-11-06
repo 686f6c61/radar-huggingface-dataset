@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ryoki824/subtitleai-payload es un repositorio alojado en HuggingFace por el usuario Ryoki824, creado el 28 de octubre de 2026 y actualizado por ultima vez el 2 de noviembre de 2026. El nombre del repositorio sugiere que se trata de un componente o artefacto auxiliar vinculado a un sistema llamado "SubtitleAI", presumiblemente orientado al procesamiento o generacion automatica de subtitulos. El tamano del repositorio es de 8.5 GB, lo que indica que contiene pesos de un modelo de cierta entidad o un conjunto de artefactos binarios de volumen considerable.
+Ryoki824/subtitleai-payload es un repositorio alojado en Hugging Face por el usuario Ryoki824, creado el 28 de octubre de 2026 y actualizado por ultima vez el 2 de noviembre de 2026. El nombre del repositorio sugiere que se trata de un componente o artefacto auxiliar vinculado a un sistema llamado "SubtitleAI", presumiblemente orientado al procesamiento o generacion automatica de subtitulos. El tamano del repositorio es de 8.5 GB, lo que indica que contiene pesos de un modelo de cierta entidad o un conjunto de artefactos binarios de volumen considerable.
 
 La informacion publica disponible es extremadamente limitada. El repositorio unicamente esta etiquetado con `region:us`, no declara pipeline de inferencia, licencia, idiomas soportados ni tarjeta de modelo con especificaciones tecnicas. No se han publicado resultados de benchmarks ni documentacion sobre arquitectura, datos de entrenamiento o proceso de alineacion.
 
-Por tanto, esta ficha se limita a describir lo que puede verificarse objetivamente desde la ficha de HuggingFace. Cualquier dato sobre parametros, contexto, cuantizacion o capacidades debe considerarse no disponible hasta que el autor publique una model card o documentacion adicional. Se recomienda precaucion antes de integrar este repositorio en un pipeline de produccion.
+Por tanto, esta ficha se limita a describir lo que puede verificarse objetivamente desde la ficha de Hugging Face. Cualquier dato sobre parametros, contexto, cuantizacion o capacidades debe considerarse no disponible hasta que el autor publique una model card o documentacion adicional. Se recomienda precaucion antes de integrar este repositorio en un pipeline de produccion.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. No se ha identificado la categoria funcional del modelo ni se dis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ryoki824/subtitleai-payload | no disponible | no disponible | no disponible | HuggingFace (repo de 8.5 GB) |
+| Ryoki824/subtitleai-payload | no disponible | no disponible | no disponible | Hugging Face (repo de 8.5 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. No se ha identificado la categoria funcional del modelo ni se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryoki824/subtitleai-payload
+- Repositorio en Hugging Face: https://huggingface.co/Ryoki824/subtitleai-payload
 - Perfil del autor: https://huggingface.co/Ryoki824
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

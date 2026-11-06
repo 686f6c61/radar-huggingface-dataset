@@ -81,5 +81,5 @@ No disponible. No se han proporcionado modelos comparables de locomoción para A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Menlo/asimov1-locomotion-26-10-26-lower-body-27dof
+- Hugging Face: https://huggingface.co/Menlo/asimov1-locomotion-26-10-26-lower-body-27dof
 - Código de entrenamiento y evaluación (Cyclotron): https://github.com/menloresearch/cyclotron

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `zcfrank1st/OUI-1-NVFP4A16` aloja un modelo publicado en HuggingFace por el usuario zcfrank1st el 18 de septiembre de 2026, bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y no dispone de model card: el README se limita a declarar la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento.
+El repositorio `zcfrank1st/OUI-1-NVFP4A16` aloja un modelo publicado en Hugging Face por el usuario zcfrank1st el 18 de septiembre de 2026, bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y no dispone de model card: el README se limita a declarar la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento.
 
 Por la convencion de nomenclatura del identificador, todo apunta a una variante cuantizada de un modelo base denominado "OUI-1", probablemente en un esquema de cuantizacion NVFP4 con activaciones de 16 bits. Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como no verificada.
 
@@ -80,6 +80,6 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zcfrank1st/OUI-1-NVFP4A16
+- Repositorio en Hugging Face: https://huggingface.co/zcfrank1st/OUI-1-NVFP4A16
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: solo aparecio una pagina de anuncios clasificados de automocion sin relacion con el contenido.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

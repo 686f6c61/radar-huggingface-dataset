@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bluebarrels/easylm-hydra-bonsai-2-9b
+- Modelo en Hugging Face: https://huggingface.co/Bluebarrels/easylm-hydra-bonsai-2-9b
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bluebarrels/easylm-training-corpus
 - Base WebGPU/MLC citada: https://huggingface.co/mlc-ai/Qwen3.5-9B-q4f16_1-MLC

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/trigram_components_256_2b_schedule_200m_dmodel256 | no disponible | 256 | no disponible | HuggingFace (repo de 0,2 GB) |
-| Otros modelos de la rejilla "Transformer experiment grid" de eoinf | no disponible | 256 | no disponible | HuggingFace |
+| eoinf/trigram_components_256_2b_schedule_200m_dmodel256 | no disponible | 256 | no disponible | Hugging Face (repo de 0,2 GB) |
+| Otros modelos de la rejilla "Transformer experiment grid" de eoinf | no disponible | 256 | no disponible | Hugging Face |
 | Alternativas de propósito general | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría con datos verificables de rendimiento, por lo que la comparación cuantitativa no está disponible.
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables de la misma categoría c
 
 ## Enlaces
 
-- [HuggingFace: eoinf/trigram_components_256_2b_schedule_200m_dmodel256](https://huggingface.co/eoinf/trigram_components_256_2b_schedule_200m_dmodel256)
+- [Hugging Face: eoinf/trigram_components_256_2b_schedule_200m_dmodel256](https://huggingface.co/eoinf/trigram_components_256_2b_schedule_200m_dmodel256)
 - Repositorio `synthetic_trigrams` (arquitectura y código de carga): mencionado en la model card, sin URL proporcionada.
 - Tokenizador `eoinf/pile_tokenizer_4096`: mencionado en la model card, sin URL proporcionada.
 - Ficheros de metadatos de la ejecución: `grid_summary.json`, `result.json` y `configuration.json`, incluidos en el repositorio del modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELIXIA-MARVELOUS-1.0 es un ajuste fino del modelo Qwen2.5-7B en su version cuantizada a 4 bits (`unsloth/Qwen2.5-7B-bnb-4bit`), publicado por el usuario Lobus22 en HuggingFace. Se trata de un derivado experimental entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.24.0 sobre el framework Transformers 5.5.0, PyTorch 2.11.0+cu128 y Datasets 4.3.0. La model card no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni la existencia de fases posteriores de alineamiento (RLHF, DPO o similares).
+ELIXIA-MARVELOUS-1.0 es un ajuste fino del modelo Qwen2.5-7B en su version cuantizada a 4 bits (`unsloth/Qwen2.5-7B-bnb-4bit`), publicado por el usuario Lobus22 en Hugging Face. Se trata de un derivado experimental entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.24.0 sobre el framework Transformers 5.5.0, PyTorch 2.11.0+cu128 y Datasets 4.3.0. La model card no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos ni la existencia de fases posteriores de alineamiento (RLHF, DPO o similares).
 
 Por herencia del modelo base, la arquitectura es un transformer decoder-only de tipo causal con aproximadamente 7.600 millones de parametros, atencion con query grouping (GQA), normalizacion RMSNorm y activacion SwiGLU. El repositorio ocupa 0,4 GB, un tamano muy inferior al que corresponderia a un modelo de 7B en precision completa, lo que sugiere que se trata de pesos de adaptador (LoRA/QLoRA) o de un checkpoint parcial, si bien la model card no lo aclara. El modelo registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -51,7 +51,7 @@ El entrenamiento se realizo con SFT supervisado sobre el checkpoint ya cuantizad
 - Evaluacion comparativa de fine-tunes: dado que comparte base con Qwen2.5-7B, permite montar experimentos controlados sobre el efecto de un SFT concreto frente al modelo original.
 - Chatbot interno de baja criticidad: desplegable en local con transformers o con un servidor compatible con la API de OpenAI, siempre que se asuma el riesgo de alucinacion y se anada una capa de validacion.
 - Base para un ajuste posterior con DPO o RLHF: al ser un checkpoint ya adaptado a un estilo conversacional, puede usarse como punto de partida para fases adicionales de alineamiento.
-- Docencia y formacion: permite ilustrar de forma practica el ciclo de vida de un fine-tune publicado en HuggingFace, incluyendo la lectura critica de una model card incompleta.
+- Docencia y formacion: permite ilustrar de forma practica el ciclo de vida de un fine-tune publicado en Hugging Face, incluyendo la lectura critica de una model card incompleta.
 - No se recomienda su uso en produccion con clientes, en dominios regulados (sanidad, legal, finanzas) ni en tareas donde un error tenga consecuencias graves, dada la ausencia total de evaluaciones y de licencia.
 
 ## Benchmarks y rendimiento
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ELIXIA-MARVELOUS-1.0 | ~7,6B (fine-tune) | No especificado (base: 128K) | No disponible | HuggingFace, pesos safetensors, 0 descargas | No disponible |
-| Qwen2.5-7B-Instruct | ~7,6B | 128K tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Si, publicado por el equipo de Qwen |
-| Llama-3.1-8B-Instruct | ~8B | 128K tokens | Licencia comunitaria de Llama 3.1 | HuggingFace | Si, publicado por Meta |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K tokens | Apache 2.0 | HuggingFace | Si, publicado por Mistral AI |
+| ELIXIA-MARVELOUS-1.0 | ~7,6B (fine-tune) | No especificado (base: 128K) | No disponible | Hugging Face, pesos safetensors, 0 descargas | No disponible |
+| Qwen2.5-7B-Instruct | ~7,6B | 128K tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Si, publicado por el equipo de Qwen |
+| Llama-3.1-8B-Instruct | ~8B | 128K tokens | Licencia comunitaria de Llama 3.1 | Hugging Face | Si, publicado por Meta |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K tokens | Apache 2.0 | Hugging Face | Si, publicado por Mistral AI |
 
 Los tres modelos alternativos son instructivos oficiales con documentacion de entrenamiento, evaluaciones publicadas y licencias claras. ELIXIA-MARVELOUS-1.0 no ofrece ninguno de esos tres elementos, por lo que la comparacion se limita a parametros heredados y a la disponibilidad del repositorio.
 
@@ -98,7 +98,7 @@ Los tres modelos alternativos son instructivos oficiales con documentacion de en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lobus22/ELIXIA-MARVELOUS-1.0
+- Modelo en Hugging Face: https://huggingface.co/Lobus22/ELIXIA-MARVELOUS-1.0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

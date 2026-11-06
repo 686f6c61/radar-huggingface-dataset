@@ -77,7 +77,7 @@ No se han encontrado modelos comparables de otros autores en la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante 2-bit del mismo autor: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit
 - Documentación de unsloth: https://unsloth.ai/docs/models/qwen3.8-next

@@ -83,9 +83,9 @@ Condiciones de medida declaradas por el autor: llama.cpp b10549 (`b2e5e9b28`), M
 
 | Modelo | Parámetros | Contexto | Precisión (62 decisiones) | Latencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniCPM5-2B + pjev-LoRA | 2B denso + 100,5 M de adaptador | 32.768 en el ejemplo de despliegue | 93,5 % | 0,22 s | Apache 2.0 | HuggingFace, GGUF y PEFT |
-| Kailune-AI/pjev-2b (fusionado) | 2B denso | no disponible | 91,9 % | 0,16 s | no disponible | HuggingFace, ~2,7 GB en Q8_0 |
-| MiniCPM5-2B base (sin adaptador) | 2B denso | no disponible | 71,0 % | 0,17 s | no disponible en la información aportada | HuggingFace, GGUF oficial |
+| MiniCPM5-2B + pjev-LoRA | 2B denso + 100,5 M de adaptador | 32.768 en el ejemplo de despliegue | 93,5 % | 0,22 s | Apache 2.0 | Hugging Face, GGUF y PEFT |
+| Kailune-AI/pjev-2b (fusionado) | 2B denso | no disponible | 91,9 % | 0,16 s | no disponible | Hugging Face, ~2,7 GB en Q8_0 |
+| MiniCPM5-2B base (sin adaptador) | 2B denso | no disponible | 71,0 % | 0,17 s | no disponible en la información aportada | Hugging Face, GGUF oficial |
 | LFM2.5-2.6B (prompt plano calibrado / razonamiento) | 2,6B | no disponible | 85,5 % / 91,9 % | 0,23 s / 7,8 s | no disponible | no disponible en esta ficha |
 
 La comparación relevante es de coste por acierto: la LoRA iguala o supera al modelo fusionado y al razonamiento completo de un modelo mayor, con la latencia más baja de la tabla salvo el propio pjev-2b fusionado.
@@ -106,12 +106,12 @@ La comparación relevante es de coste por acierto: la LoRA iguala o supera al mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adriandj3/MiniCPM5-2B-pjev-LoRA
+- Modelo en Hugging Face: https://huggingface.co/adriandj3/MiniCPM5-2B-pjev-LoRA
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo fusionado de origen: https://huggingface.co/Kailune-AI/pjev-2b
 - Repositorio GitHub del autor: https://github.com/ArtyomITA/minicpm5-kernel-pascal
 - Perfil GitHub del autor: https://github.com/ArtyomITA
-- Perfil HuggingFace del autor: https://huggingface.co/adriandj3
+- Perfil Hugging Face del autor: https://huggingface.co/adriandj3
 - LinkedIn del autor: https://www.linkedin.com/in/adrian-ciprian-iancu-a2a477391
 - Repositorio oficial de MiniCPM (OpenBMB): https://github.com/OpenBMB/MiniCPM
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/adriandj3/MiniCPM5-2B-pjev-LoRA

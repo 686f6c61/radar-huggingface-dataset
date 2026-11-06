@@ -2,7 +2,7 @@
 
 ## Resumen
 
-byte-vortex/gemma-4-goodbot-badbot-sft es un modelo publicado en HuggingFace por el usuario byte-vortex bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un ajuste fino supervisado (SFT, supervised fine-tuning) derivado de la familia Gemma, aunque no se confirma en la informacion disponible. El sufijo "goodbot-badbot" sugiere que el ajuste se ha realizado sobre un conjunto de datos orientado a comportamiento conversacional o alineacion (posiblemente pares de respuestas correctas frente a incorrectas), si bien esto no esta documentado por el autor.
+byte-vortex/gemma-4-goodbot-badbot-sft es un modelo publicado en Hugging Face por el usuario byte-vortex bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un ajuste fino supervisado (SFT, supervised fine-tuning) derivado de la familia Gemma, aunque no se confirma en la informacion disponible. El sufijo "goodbot-badbot" sugiere que el ajuste se ha realizado sobre un conjunto de datos orientado a comportamiento conversacional o alineacion (posiblemente pares de respuestas correctas frente a incorrectas), si bien esto no esta documentado por el autor.
 
 La model card publicada no contiene mas que la declaracion de licencia; no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (14 de octubre de 2026), lo que indica que no ha recibido mantenimiento posterior desde su publicacion.
 
@@ -58,7 +58,7 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| byte-vortex/gemma-4-goodbot-badbot-sft | no disponible | no disponible | apache-2.0 | HuggingFace |
+| byte-vortex/gemma-4-goodbot-badbot-sft | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byte-vortex/gemma-4-goodbot-badbot-sft
+- Hugging Face: https://huggingface.co/byte-vortex/gemma-4-goodbot-badbot-sft
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a definiciones genericas del termino "byte" y no guardan relacion con este modelo.

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sambhav-pantheon/vidihand
+- Repositorio de Hugging Face: https://huggingface.co/sambhav-pantheon/vidihand
 - Sitio web del proyecto original: https://vidihand.github.io/
 - Paper en arXiv: https://arxiv.org/abs/2606.30308
 - Repositorio oficial de ViDiHand: https://github.com/NTUYWANG103/ViDiHand

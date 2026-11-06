@@ -104,7 +104,7 @@ No se dispone de datos verificables de modelos comparables de traducción árabe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/rootformers_stage_v15.2
+- Modelo en Hugging Face: https://huggingface.co/enver/rootformers_stage_v15.2
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base declarado (metadatos): https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no devolvió resultados relacionados con el modelo; los únicos resultados fueron páginas biográficas sobre Enver Pasha y Enver Hoxha, sin relación alguna con este repositorio).

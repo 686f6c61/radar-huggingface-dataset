@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `automo-kd-mixed-gemma-to-olmo-cake-fd-mixed` | ~1B | no disponible | Organismo de modelo con quirk implantado | Apache 2.0 | HuggingFace (rama `step-789`) |
-| `allenai/OLMo-2-0425-1B-DPO` | ~1B | no disponible | Modelo base alineado con DPO | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B (Meta) | ~1,24B | 128K | LLM generalista | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5-1.5B (Alibaba) | ~1,54B | 32K (extensible) | LLM generalista multilingue | Apache 2.0 | HuggingFace, Ollama, vLLM |
+| `automo-kd-mixed-gemma-to-olmo-cake-fd-mixed` | ~1B | no disponible | Organismo de modelo con quirk implantado | Apache 2.0 | Hugging Face (rama `step-789`) |
+| `allenai/OLMo-2-0425-1B-DPO` | ~1B | no disponible | Modelo base alineado con DPO | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B (Meta) | ~1,24B | 128K | LLM generalista | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5-1.5B (Alibaba) | ~1,54B | 32K (extensible) | LLM generalista multilingue | Apache 2.0 | Hugging Face, Ollama, vLLM |
 
 Los datos de las dos ultimas filas proceden de conocimiento general sobre esos modelos y no estan verificados en la informacion proporcionada para esta ficha; conviene contrastarlos antes de citarlos. No existe comparativa publicada de este organismo con otros modelos de la misma campana en la informacion disponible.
 
@@ -107,7 +107,7 @@ Los datos de las dos ultimas filas proceden de conocimiento general sobre esos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-mixed
 - Rama con los pesos (`step-789`): https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-fd-mixed/tree/step-789
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset del quirk: https://huggingface.co/model-organisms-for-real/kd-dataset-gemma-cake-non-synth

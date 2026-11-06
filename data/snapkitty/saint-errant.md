@@ -65,7 +65,7 @@ No disponible. El repositorio no define un modelo con especificaciones comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/saint-errant
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/saint-errant
 - Sitio web de la organizacion: https://collectivekitty.com
 - Discord: https://discord.gg/dugymT3rj
 - Open Collective: https://opencollective.com/snap-kitty-infrastructure-netw

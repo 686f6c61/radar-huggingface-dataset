@@ -114,8 +114,8 @@ La única comparación documentada es interna, entre los cuatro brazos publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amirhossein75/ff-free-riding
-- Perfil del autor en HuggingFace: https://huggingface.co/Amirhossein75/models
+- Modelo en Hugging Face: https://huggingface.co/Amirhossein75/ff-free-riding
+- Perfil del autor en Hugging Face: https://huggingface.co/Amirhossein75/models
 - Articulo (arXiv:2605.06240): https://arxiv.org/abs/2605.06240
 - Version 1 del articulo: https://arxiv.org/abs/2605.06240v1
 - Codigo (trainers, analisis, manifiesto de reproduccion; Apache-2.0): https://github.com/amirhossein-yousefi/ff-free-riding

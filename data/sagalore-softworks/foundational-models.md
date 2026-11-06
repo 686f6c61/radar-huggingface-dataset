@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sagalore-softworks/foundational-models` es un modelo publicado en HuggingFace por el usuario u organizacion `sagalore-softworks`, del que la informacion publica disponible es muy limitada. La unica cifra tecnica verificable es el numero de parametros registrado en los metadatos de safetensors: 8.030.261.312 parametros (aproximadamente 8.000 millones), lo que lo situa en la categoria de modelos densos de ~8B. El repositorio ocupa 30,6 GB, un tamano coherente con pesos en precision completa (FP16/BF16) junto con las variantes cuantizadas que sugieren sus etiquetas.
+`sagalore-softworks/foundational-models` es un modelo publicado en Hugging Face por el usuario u organizacion `sagalore-softworks`, del que la informacion publica disponible es muy limitada. La unica cifra tecnica verificable es el numero de parametros registrado en los metadatos de safetensors: 8.030.261.312 parametros (aproximadamente 8.000 millones), lo que lo situa en la categoria de modelos densos de ~8B. El repositorio ocupa 30,6 GB, un tamano coherente con pesos en precision completa (FP16/BF16) junto con las variantes cuantizadas que sugieren sus etiquetas.
 
 El modelo se distribuye con las etiquetas `onnx`, `gguf`, `imatrix`, `endpoints_compatible` y `conversational`. Esto indica que existen exportaciones a ONNX y a GGUF (este ultimo presumiblemente generado con matrices de importancia, `imatrix`), que esta pensado para conversacion multi-turno y que su API es compatible con el esquema de endpoints gestionados. A fecha de la consulta acumula 153 descargas y 0 likes, por lo que su adopcion publica es marginal.
 
@@ -100,7 +100,7 @@ La diferencia practica mas relevante no esta en el rendimiento, que se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sagalore-softworks/foundational-models
+- Repositorio en Hugging Face: https://huggingface.co/sagalore-softworks/foundational-models
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

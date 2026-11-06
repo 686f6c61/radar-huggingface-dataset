@@ -4,7 +4,7 @@
 
 El modelo `Tohirju/ecapa-tdnn-kyrgyz` es un sistema de verificación de locutor (speaker verification) específico para el idioma kirguís, desarrollado por el autor Tohirju. Se basa en la arquitectura ECAPA-TDNN, un estándar de facto en el reconocimiento de locutores, y parte del modelo preentrenado `speechbrain/spkrec-ecapa-voxceleb`, que fue entrenado originalmente con VoxCeleb 1 y 2. El modelo ha sido ajustado (fine-tuned) para extraer embeddings de locutor a partir de audio en kirguís, lo que permite tareas como autenticación por voz, diarización y verificación biométrica en este idioma de Asia Central.
 
-La relevancia de este modelo radica en que cubre un idioma de bajos recursos (kirguís, hablado por unos 4-5 millones de personas) donde los sistemas de reconocimiento de voz comerciales suelen tener poca cobertura. Al estar basado en SpeechBrain y licenciado bajo Apache 2.0, ofrece una opción abierta y reproducible para integrar verificación de locutor en aplicaciones que requieran soporte multilingüe o específico para kirguís. El repositorio tiene un tamaño de 0,1 GB, lo que indica un modelo compacto, y su acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de su descarga.
+La relevancia de este modelo radica en que cubre un idioma de bajos recursos (kirguís, hablado por unos 4-5 millones de personas) donde los sistemas de reconocimiento de voz comerciales suelen tener poca cobertura. Al estar basado en SpeechBrain y licenciado bajo Apache 2.0, ofrece una opción abierta y reproducible para integrar verificación de locutor en aplicaciones que requieran soporte multilingüe o específico para kirguís. El repositorio tiene un tamaño de 0,1 GB, lo que indica un modelo compacto, y su acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de su descarga.
 
 ## Especificaciones tecnicas
 
@@ -68,12 +68,12 @@ La comparativa se limita a modelos de la misma familia ECAPA-TDNN. No se dispone
 - Sesgos conocidos: al estar ajustado sobre un modelo entrenado con VoxCeleb (habla mayoritariamente en inglés y con acentos variados), el rendimiento puede degradarse con acentos kirguís no representados en los datos de ajuste fino.
 - Riesgo de alucinación: no aplica, ya que no es un modelo generativo; el riesgo principal es la confusión entre locutores con voces similares o en condiciones de ruido.
 - Limitaciones de contexto o idioma: el modelo solo está entrenado para kirguís; su uso con otros idiomas producirá embeddings poco fiables. Además, la duración del audio debe ser suficiente (al menos 1-2 segundos) para obtener una representación estable.
-- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio está restringido (gated), por lo que es necesario solicitar permiso al autor y aceptar las condiciones en HuggingFace antes de su uso.
+- Restricciones de licencia: aunque la licencia es Apache 2.0, el acceso al repositorio está restringido (gated), por lo que es necesario solicitar permiso al autor y aceptar las condiciones en Hugging Face antes de su uso.
 - Caveat para producción: no se han publicado métricas de rendimiento específicas para kirguís, por lo que se recomienda evaluar el modelo con datos propios antes de desplegarlo en aplicaciones críticas. Además, al ser un modelo de verificación de locutor, es sensible a la calidad del audio (ruido, reverberación, distancia al micrófono) y puede requerir preprocesamiento adicional.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tohirju/ecapa-tdnn-kyrgyz
+- Repositorio Hugging Face: https://huggingface.co/Tohirju/ecapa-tdnn-kyrgyz
 - Modelo base: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - Paper original ECAPA-TDNN: https://arxiv.org/abs/2005.07143
 - Reimplementación de referencia (GitHub): https://github.com/TaoRuijie/ECAPA-TDNN

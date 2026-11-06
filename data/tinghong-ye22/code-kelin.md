@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Tinghong-Ye22/code-kelin`, publicado en HuggingFace, no es un modelo de inteligencia artificial en el sentido habitual: se trata de un conjunto de scripts en Python que actúan como cliente de la API de Kling para lanzar trabajos de animación por control de movimiento (motion control). La model card lo describe como un "minimal batch runner for Kling motion-control animation jobs", es decir, un ejecutor por lotes que empareja imágenes de referencia con vídeos conductores y envía las peticiones al endpoint `/v1/videos/motion-control` con `model_name` igual a `kling-v3`.
+El repositorio `Tinghong-Ye22/code-kelin`, publicado en Hugging Face, no es un modelo de inteligencia artificial en el sentido habitual: se trata de un conjunto de scripts en Python que actúan como cliente de la API de Kling para lanzar trabajos de animación por control de movimiento (motion control). La model card lo describe como un "minimal batch runner for Kling motion-control animation jobs", es decir, un ejecutor por lotes que empareja imágenes de referencia con vídeos conductores y envía las peticiones al endpoint `/v1/videos/motion-control` con `model_name` igual a `kling-v3`.
 
 El contenido del repositorio son scripts, manifiestos CSV y resultados de ejemplo, con un tamano de 0,8 GB. No se publican pesos, configuraciones de arquitectura ni datos de entrenamiento, por lo que no debe confundirse con un modelo generativo descargable. La relevancia actual es instrumental: sirve para automatizar la generación de vídeo con control de movimiento sobre la infraestructura de Kling, no para ejecutar inferencia local.
 
@@ -86,5 +86,5 @@ No disponible. El repositorio no es un modelo con pesos ni una arquitectura comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tinghong-Ye22/code-kelin
+- Repositorio en Hugging Face: https://huggingface.co/Tinghong-Ye22/code-kelin
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web proporcionada.

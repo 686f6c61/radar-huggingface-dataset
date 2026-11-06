@@ -96,11 +96,11 @@ La comparacion directa entre este paquete y el modelo upstream no es de calidad,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a32
+- Repositorio en Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a32
 - Paquete hermano con cuantizacion w8a8: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a8
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
-- Coleccion DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Repositorio de buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
 - Especificaciones del modelo dentro de buddy-mlir: https://github.com/buddy-compiler/buddy-mlir/tree/main/models/deepseek_r1/specs
 - Script de instalacion de buddy-cli: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh

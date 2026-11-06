@@ -90,8 +90,8 @@ Otras alternativas en el espacio de modelos financieros de tamaño similar inclu
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-finance-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-finance-GGUF
 - Modelo original (safetensors): https://huggingface.co/nico248000000000/Qwen3.8-27B-finance
-- Modelo base Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

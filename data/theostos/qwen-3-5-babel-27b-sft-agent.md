@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-3.5-babel-27b-sft-agent | ~26,9 mil millones | no disponible | Demostración formal (Lean/Rocq), tool calling nativo | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-27B (base) | ~26,9 mil millones (según el modelo derivado) | no disponible | Propósito general | no disponible en la información | HuggingFace |
+| qwen-3.5-babel-27b-sft-agent | ~26,9 mil millones | no disponible | Demostración formal (Lean/Rocq), tool calling nativo | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-27B (base) | ~26,9 mil millones (según el modelo derivado) | no disponible | Propósito general | no disponible en la información | Hugging Face |
 | Otros ajustes de Babel-Formal | no disponible | no disponible | Demostración formal con formato boxed-tactic personalizado | no disponible | Repositorio del proyecto |
 
 La comparación con alternativas de la misma categoría (ajustes especializados en demostración formal) no está disponible en la información proporcionada.
@@ -85,6 +85,6 @@ La comparación con alternativas de la misma categoría (ajustes especializados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theostos/qwen-3.5-babel-27b-sft-agent
+- Modelo en Hugging Face: https://huggingface.co/theostos/qwen-3.5-babel-27b-sft-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Repositorio del proyecto Babel-Formal (pipeline de entrenamiento y verificación): https://github.com/theostos/babel-formal

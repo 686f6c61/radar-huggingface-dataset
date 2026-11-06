@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wild_Krea_2_NSFW es un modelo de generación de imágenes basado en la arquitectura Krea 2, adaptado y distribuido por el usuario ModdiAdam en formato GGUF. Se trata de una versión sin censura (NSFW) del modelo Krea 2, orientada a la creación de contenido explícito para adultos. El modelo cuenta con 12.820.073.036 parámetros (aproximadamente 12,8 mil millones) y un tamaño de repositorio de 21,6 GB, lo que sugiere una cuantización de alta precisión. Su relevancia radica en ofrecer una alternativa sin filtros de seguridad para generación de imágenes, aunque su uso conlleva implicaciones éticas y legales. La información técnica detallada sobre arquitectura, entrenamiento y licencia no está disponible en la ficha de HuggingFace, por lo que esta ficha se basa en los datos públicos y en el contexto general de la serie Krea 2.
+Wild_Krea_2_NSFW es un modelo de generación de imágenes basado en la arquitectura Krea 2, adaptado y distribuido por el usuario ModdiAdam en formato GGUF. Se trata de una versión sin censura (NSFW) del modelo Krea 2, orientada a la creación de contenido explícito para adultos. El modelo cuenta con 12.820.073.036 parámetros (aproximadamente 12,8 mil millones) y un tamaño de repositorio de 21,6 GB, lo que sugiere una cuantización de alta precisión. Su relevancia radica en ofrecer una alternativa sin filtros de seguridad para generación de imágenes, aunque su uso conlleva implicaciones éticas y legales. La información técnica detallada sobre arquitectura, entrenamiento y licencia no está disponible en la ficha de Hugging Face, por lo que esta ficha se basa en los datos públicos y en el contexto general de la serie Krea 2.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No se dispone de información oficial sobre la arquitectura interna del modelo. 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen métricas objetivas como FID, CLIP score o comparativas con otros modelos de generación de imágenes en la ficha de HuggingFace ni en los resultados de búsqueda web encontrados.
+No se han publicado resultados de benchmarks en la información disponible. No existen métricas objetivas como FID, CLIP score o comparativas con otros modelos de generación de imágenes en la ficha de Hugging Face ni en los resultados de búsqueda web encontrados.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModdiAdam/Wild_Krea_2_NSFW
+- Modelo en Hugging Face: https://huggingface.co/ModdiAdam/Wild_Krea_2_NSFW
 - Tutorial sobre Krea 2 en ComfyUI: https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui
 - Página de Krea 2 Uncensored en Tensor.Art: https://tensor.art/models/1020753861402460873
 - LoRA RawGirlSpicy para Krea 2: https://civitai.red/models/2766540/rawgirlspicy-krea2?modelVersionId=3114100

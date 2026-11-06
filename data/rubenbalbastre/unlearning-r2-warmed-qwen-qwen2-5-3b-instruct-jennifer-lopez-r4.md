@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (librería PEFT) publicado por el usuario `rubenbalbastre`, entrenado sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Según las etiquetas del repositorio, el ajuste se realizó con GRPO (Group Relative Policy Optimization) mediante la librería TRL, y forma parte de una línea de trabajo sobre *machine unlearning* (desaprendizaje automático) en modelos de lenguaje: el identificador del repositorio incluye el nombre de una persona concreta (`jennifer-lopez`) y un sufijo de ronda (`r4`), patrón habitual en experimentos de eliminación de conocimiento sobre entidades específicas. La model card, sin embargo, no documenta explícitamente el objetivo, el dataset ni el procedimiento.
 
-Se trata, por tanto, de un artefacto de investigación y no de un modelo listo para producción. No se han publicado en la información disponible la licencia, los idiomas soportados, los resultados de evaluación ni los hiperparámetros de entrenamiento; la model card es la plantilla por defecto de HuggingFace con la mayoría de los campos sin rellenar. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors, y en el momento de la consulta acumula 0 descargas y 0 *likes*, con fecha de creación y última actualización del 24 de septiembre de 2026.
+Se trata, por tanto, de un artefacto de investigación y no de un modelo listo para producción. No se han publicado en la información disponible la licencia, los idiomas soportados, los resultados de evaluación ni los hiperparámetros de entrenamiento; la model card es la plantilla por defecto de Hugging Face con la mayoría de los campos sin rellenar. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors, y en el momento de la consulta acumula 0 descargas y 0 *likes*, con fecha de creación y última actualización del 24 de septiembre de 2026.
 
 Su relevancia actual es metodológica: documenta un caso de aplicación de GRPO (una técnica de optimización por refuerzo habitualmente usada para razonamiento) a tareas de desaprendizaje selectivo sobre un modelo pequeño (3B), lo que resulta reproducible en hardware de consumo. La única referencia externa citada es el preprint arXiv:2608.17804.
 
@@ -69,11 +69,11 @@ La comparativa se realiza sobre el modelo base y alternativas de tamano equivale
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-3B-Instruct) | Adaptador LoRA; base de ~3,09B | No especificado; base de 32.768 tokens (131.072 con YaRN) | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct | ~3,09B | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3.2-3B-Instruct | ~3,21B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, con restricciones de uso |
-| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace |
-| Gemma-2-2B-it | ~2,6B | 8.000 tokens | Terminos de uso de Gemma | HuggingFace |
+| Este adaptador (sobre Qwen2.5-3B-Instruct) | Adaptador LoRA; base de ~3,09B | No especificado; base de 32.768 tokens (131.072 con YaRN) | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct | ~3,09B | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3.2-3B-Instruct | ~3,21B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, con restricciones de uso |
+| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face |
+| Gemma-2-2B-it | ~2,6B | 8.000 tokens | Terminos de uso de Gemma | Hugging Face |
 
 En rendimiento no es posible establecer comparacion: no hay resultados publicados para el adaptador, y cualquier cifra del modelo base correspondiente a informes de terceros no se incluye aqui por no formar parte de la informacion proporcionada.
 
@@ -91,7 +91,7 @@ En rendimiento no es posible establecer comparacion: no hay resultados publicado
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r4
+- Adaptador en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r4
 - Preprint citado en la model card: https://arxiv.org/abs/2608.17804
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5

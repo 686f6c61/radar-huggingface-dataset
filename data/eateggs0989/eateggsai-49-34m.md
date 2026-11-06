@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eateggsAI-49.34M es un modelo de lenguaje pequeno (SLM) de caracter experimental, publicado por el usuario eateggs0989 en HuggingFace. Se trata de un transformer decoder-only de estilo GPT construido y entrenado completamente desde cero con PyTorch, sin partir de pesos preentrenados de terceros. Cuenta con 49.343.232 parametros (~49,34 M), 6 capas, 8 cabezas de atencion, una dimension de embedding de 384 y una longitud de contexto de 256 tokens con un vocabulario de 50.257 entradas basado en el tokenizador de GPT-2.
+eateggsAI-49.34M es un modelo de lenguaje pequeno (SLM) de caracter experimental, publicado por el usuario eateggs0989 en Hugging Face. Se trata de un transformer decoder-only de estilo GPT construido y entrenado completamente desde cero con PyTorch, sin partir de pesos preentrenados de terceros. Cuenta con 49.343.232 parametros (~49,34 M), 6 capas, 8 cabezas de atencion, una dimension de embedding de 384 y una longitud de contexto de 256 tokens con un vocabulario de 50.257 entradas basado en el tokenizador de GPT-2.
 
 El proposito declarado del proyecto es un reto de ingenieria de bajo consumo de VRAM: demostrar que es posible entrenar de forma estable un transformer desde cero en una GPU de consumo antigua, concretamente una NVIDIA GTX 1060 con 4 GB de VRAM montada en un portatil Acer i5 con procesador Intel. Para lograrlo, el autor aplico precision mixta (AMP con autocast y GradScaler), limito la longitud de secuencia a 256 tokens para contener el coste cuadratico de la atencion y ajusto un micro-batch de tamano 11. El entrenamiento completo requirio aproximadamente 12 horas y un consumo pico de unos 2,7 GB de VRAM.
 
@@ -79,10 +79,10 @@ La informacion proporcionada no incluye benchmarks ni especificaciones de modelo
 
 | Modelo | Parametros | Contexto | Vocabulario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eateggsAI-49.34M | 49,34 M | 256 | 50.257 (GPT-2) | no disponible | HuggingFace, checkpoint PyTorch |
+| eateggsAI-49.34M | 49,34 M | 256 | 50.257 (GPT-2) | no disponible | Hugging Face, checkpoint PyTorch |
 | GPT-2 small (referencia publica) | 124 M | 1.024 | 50.257 (GPT-2) | MIT | Ampliamente distribuido, GGUF y safetensors disponibles |
-| Modelos TinyStories de tamano similar (referencia general) | 1 M - 33 M | 512 - 1.024 | variable | variable | HuggingFace |
-| DistilGPT-2 (referencia publica) | 82 M | 1.024 | 50.257 (GPT-2) | Apache 2.0 | HuggingFace, safetensors |
+| Modelos TinyStories de tamano similar (referencia general) | 1 M - 33 M | 512 - 1.024 | variable | variable | Hugging Face |
+| DistilGPT-2 (referencia publica) | 82 M | 1.024 | 50.257 (GPT-2) | Apache 2.0 | Hugging Face, safetensors |
 
 Comparativa de rendimiento: no disponible, dado que no existen resultados de benchmarks publicados para eateggsAI-49.34M.
 
@@ -101,7 +101,7 @@ Comparativa de rendimiento: no disponible, dado que no existen resultados de ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eateggs0989/eateggsAI-49.34M
+- Modelo en Hugging Face: https://huggingface.co/eateggs0989/eateggsAI-49.34M
 - Repositorio GitHub indicado en la model card: https://github.com/eateggs0989/eateggsAI-49.34M
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

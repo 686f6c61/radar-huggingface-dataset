@@ -6,7 +6,7 @@ imajev-2b es la variante mas pequena de la familia imajev, desarrollada por el u
 
 Su propuesta diferencial es el contrato Jev: la aplicacion envia una peticion con imagenes y campos, y el modelo responde con la opcion elegida, una probabilidad y la posibilidad de abstenerse. Esto permite construir flujos en los que el sistema actua solo cuando esta seguro y deriva el resto a una persona. La familia incluye tambien los tamanos imajev-4b e imajev-9b.
 
-El modelo se distribuye bajo licencia Apache-2.0, solo soporta ingles y esta pensado para ejecutarse en local, bien con MLX en un Mac o con PyTorch en una unica GPU, de modo que las fotos y los datos de cliente no salgan de la red de la organizacion. Con 26 descargas y 2 likes en HuggingFace, es un proyecto de nicho y reciente (creado en septiembre de 2026).
+El modelo se distribuye bajo licencia Apache-2.0, solo soporta ingles y esta pensado para ejecutarse en local, bien con MLX en un Mac o con PyTorch en una unica GPU, de modo que las fotos y los datos de cliente no salgan de la red de la organizacion. Con 26 descargas y 2 likes en Hugging Face, es un proyecto de nicho y reciente (creado en septiembre de 2026).
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ La informacion disponible solo permite comparar con los otros tamanos de la prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| imajev-2b | ~2B (base) | No disponible | Apache-2.0 | HuggingFace (26 descargas, 2 likes) | Adaptador LoRA, ingles, sin entrada en rankings |
-| imajev-4b | ~4B (base) | No disponible | Apache-2.0 | HuggingFace | Mejor tamano de la familia en ImajevBench; adaptador de fase 3 |
-| imajev-9b | ~9B (base) | No disponible | Apache-2.0 | HuggingFace | Tamano mayor de la familia |
-| bosun-v3.1-1.7b | ~1,7B | No disponible | No disponible | HuggingFace | Citado como lider en DecisionBench (eng, v1) |
+| imajev-2b | ~2B (base) | No disponible | Apache-2.0 | Hugging Face (26 descargas, 2 likes) | Adaptador LoRA, ingles, sin entrada en rankings |
+| imajev-4b | ~4B (base) | No disponible | Apache-2.0 | Hugging Face | Mejor tamano de la familia en ImajevBench; adaptador de fase 3 |
+| imajev-9b | ~9B (base) | No disponible | Apache-2.0 | Hugging Face | Tamano mayor de la familia |
+| bosun-v3.1-1.7b | ~1,7B | No disponible | No disponible | Hugging Face | Citado como lider en DecisionBench (eng, v1) |
 | decider-4b v2 | ~4B | No disponible | No disponible | No disponible | Tercero en JevBench v1.4.2.2 |
 
 ## Limitaciones y advertencias
@@ -96,10 +96,10 @@ La informacion disponible solo permite comparar con los otros tamanos de la prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohit67890/imajev-2b
+- Modelo en Hugging Face: https://huggingface.co/mohit67890/imajev-2b
 - Modelo hermano imajev-4b: https://huggingface.co/mohit67890/imajev-4b
 - Modelo hermano imajev-9b: https://huggingface.co/mohit67890/imajev-9b
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/mohit67890/imajev
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/mohit67890/imajev
 - Repositorio de codigo y resultados (GitHub): https://github.com/mohit67890/imajev
 - Sitio web del proyecto: https://mohit67890.github.io/imajev/
 - Informe tecnico: https://mohit67890.github.io/imajev/report/

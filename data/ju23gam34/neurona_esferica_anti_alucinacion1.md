@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ju23gam34/neurona_esferica_anti_alucinacion1` es un repositorio publicado en HuggingFace por el usuario `ju23gam34` el 18 de octubre de 2026 (última actualización el mismo día, a las 23:25 UTC). La model card asociada contiene únicamente la declaración de licencia (`license: mit`) y ningún otro metadato técnico: no se especifican arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas ni formato de pesos. El pipeline declarado en el Hub aparece como no disponible y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+`ju23gam34/neurona_esferica_anti_alucinacion1` es un repositorio publicado en Hugging Face por el usuario `ju23gam34` el 18 de octubre de 2026 (última actualización el mismo día, a las 23:25 UTC). La model card asociada contiene únicamente la declaración de licencia (`license: mit`) y ningún otro metadato técnico: no se especifican arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas ni formato de pesos. El pipeline declarado en el Hub aparece como no disponible y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El único elemento informativo es el propio nombre del repositorio, que sugiere un trabajo relacionado con mitigación de alucinaciones mediante algún tipo de "neurona esférica". Se trata de una inferencia a partir del identificador, no de una capacidad documentada por el autor, y no debe tomarse como descripción fiable del contenido del modelo.
 
@@ -78,5 +78,5 @@ No disponible. Sin parámetros, contexto, licencia de pesos ni resultados public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ju23gam34/neurona_esferica_anti_alucinacion1
+- Hugging Face: https://huggingface.co/ju23gam34/neurona_esferica_anti_alucinacion1
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de código o demo) en la búsqueda web realizada. Los resultados devueltos por el buscador no guardaban relación con el modelo y se han descartado.

@@ -60,5 +60,5 @@ No disponible. No se han encontrado modelos comparables específicos para este a
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Sicilian44/Purson-fold3-weights
+- Hugging Face del adaptador: https://huggingface.co/Sicilian44/Purson-fold3-weights
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-78B-hf

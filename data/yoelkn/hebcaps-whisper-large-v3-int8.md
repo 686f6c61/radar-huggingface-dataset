@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hebcaps-whisper-large-v3-int8`, publicado por el usuario yoelkn en HuggingFace, es una versión cuantizada a INT8 del conocido modelo de reconocimiento automático del habla (ASR) Whisper large-v3 de OpenAI. El nombre sugiere una especialización o adaptación orientada a hebreo (por el prefijo "hebcaps"), aunque la model card publicada no aporta ninguna descripción, documentación técnica ni detalles sobre el proceso de cuantización o el dataset de ajuste empleado. El repositorio tiene un tamaño de 1,6 GB, coherente con una conversión a 8 bits del modelo original de aproximadamente 1.550 millones de parámetros.
+El modelo `hebcaps-whisper-large-v3-int8`, publicado por el usuario yoelkn en Hugging Face, es una versión cuantizada a INT8 del conocido modelo de reconocimiento automático del habla (ASR) Whisper large-v3 de OpenAI. El nombre sugiere una especialización o adaptación orientada a hebreo (por el prefijo "hebcaps"), aunque la model card publicada no aporta ninguna descripción, documentación técnica ni detalles sobre el proceso de cuantización o el dataset de ajuste empleado. El repositorio tiene un tamaño de 1,6 GB, coherente con una conversión a 8 bits del modelo original de aproximadamente 1.550 millones de parámetros.
 
 La relevancia de este artefacto radica en que Whisper large-v3 es uno de los sistemas ASR multilingües de referencia, y las variantes cuantizadas permiten desplegarlo en hardware con menos VRAM manteniendo una precisión cercana al modelo en fp16. Sin embargo, la ausencia total de documentación, de métricas de evaluación y de información sobre el proceso de conversión hace que su uso en producción requiera una validación empírica previa por parte del equipo que lo adopte.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hebcaps-whisper-large-v3-int8 | ~1.550 M (INT8) | 30 s por segmento | Apache 2.0 | HuggingFace (26 descargas) | Sin documentación ni benchmarks |
-| openai/whisper-large-v3 | ~1.550 M (fp16) | 30 s por segmento | Apache 2.0 | HuggingFace (oficial) | Modelo de referencia, ampliamente evaluado |
+| hebcaps-whisper-large-v3-int8 | ~1.550 M (INT8) | 30 s por segmento | Apache 2.0 | Hugging Face (26 descargas) | Sin documentación ni benchmarks |
+| openai/whisper-large-v3 | ~1.550 M (fp16) | 30 s por segmento | Apache 2.0 | Hugging Face (oficial) | Modelo de referencia, ampliamente evaluado |
 | faster-whisper (CTranslate2) | ~1.550 M (INT8/FP16) | 30 s por segmento | Apache 2.0 | Repositorio de Systran | Implementación optimizada con cuantización documentada |
-| whisper-large-v3-turbo | ~809 M | 30 s por segmento | Apache 2.0 | HuggingFace (oficial) | Variante destilada, menor latencia |
+| whisper-large-v3-turbo | ~809 M | 30 s por segmento | Apache 2.0 | Hugging Face (oficial) | Variante destilada, menor latencia |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yoelkn/hebcaps-whisper-large-v3-int8
+- Repositorio Hugging Face: https://huggingface.co/yoelkn/hebcaps-whisper-large-v3-int8
 - Modelo base Whisper large-v3 (OpenAI): https://huggingface.co/openai/whisper-large-v3
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

@@ -103,10 +103,10 @@ No se han publicado en la información disponible otras alternativas comparables
 
 ## Enlaces
 
-- HuggingFace (este repositorio, MLX): https://huggingface.co/alexzhang0118/Decily-MLX
-- HuggingFace (Decily-1.7B, PyTorch bf16): https://huggingface.co/alexzhang0118/Decily-1.7B
-- HuggingFace (Decily-MLX-4bit): https://huggingface.co/alexzhang0118/Decily-MLX-4bit
-- HuggingFace (Decily-ONNX-int8): https://huggingface.co/alexzhang0118/Decily-ONNX-int8
+- Hugging Face (este repositorio, MLX): https://huggingface.co/alexzhang0118/Decily-MLX
+- Hugging Face (Decily-1.7B, PyTorch bf16): https://huggingface.co/alexzhang0118/Decily-1.7B
+- Hugging Face (Decily-MLX-4bit): https://huggingface.co/alexzhang0118/Decily-MLX-4bit
+- Hugging Face (Decily-ONNX-int8): https://huggingface.co/alexzhang0118/Decily-ONNX-int8
 - Repositorio de entrenamiento e implementación de referencia: https://github.com/arczhi/decily
 - Receta de entrenamiento reproducible (TRAINING.md): https://github.com/arczhi/decily/blob/main/TRAINING.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

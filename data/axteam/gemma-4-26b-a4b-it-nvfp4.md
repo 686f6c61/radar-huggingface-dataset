@@ -99,7 +99,7 @@ Los dos ultimos se mencionan en la model card como referencias publicas comparad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - La busqueda web realizada no ha devuelto enlaces tecnicos relevantes para este modelo (los resultados obtenidos eran contenidos no relacionados y sin valor documental).

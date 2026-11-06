@@ -81,8 +81,8 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation | 27,32 B | FP8 dinamico en backbone, MTP en BF16 | No disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation | 27,32 B | FP8 dinamico en backbone, MTP en BF16 | No disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Otras alternativas de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation
+- Repositorio del modelo en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-pr3118-validation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit concreto del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f

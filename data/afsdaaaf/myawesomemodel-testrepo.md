@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario afsdaaaf bajo licencia MIT y etiquetado con la libreria transformers. La informacion disponible presenta una contradiccion de fondo que conviene senalar de entrada: los metadatos de HuggingFace lo clasifican como un modelo de tipo BERT orientado a `feature-extraction` con pesos PyTorch, mientras que la model card adjunta describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling, busqueda web y plantillas de prompt para subida de ficheros. No es posible reconciliar ambas descripciones con los datos proporcionados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario afsdaaaf bajo licencia MIT y etiquetado con la libreria transformers. La informacion disponible presenta una contradiccion de fondo que conviene senalar de entrada: los metadatos de Hugging Face lo clasifican como un modelo de tipo BERT orientado a `feature-extraction` con pesos PyTorch, mientras que la model card adjunta describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling, busqueda web y plantillas de prompt para subida de ficheros. No es posible reconciliar ambas descripciones con los datos proporcionados.
 
 El repositorio no contiene pesos descargables: el tamano declarado es de 0,0 GB, acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026 (actualizado el mismo dia). Todo apunta a un repositorio de prueba o plantilla, no a un modelo desplegable en produccion. La model card, ademas, esta redactada con marcadores genericos ("Model1", "Model2", "Model1-v2") y sin identificar los benchmarks concretos de la tabla de evaluacion.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha documenta lo que consta en los metadatos y en la model
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB, no hay ficheros de pesos publicados) |
 | Libreria declarada | transformers |
-| Pipeline declarado en HuggingFace | feature-extraction |
+| Pipeline declarado en Hugging Face | feature-extraction |
 | Framework | PyTorch |
 | Compatibilidad con endpoints | si (`endpoints_compatible`) |
 | Region declarada | us |
@@ -31,7 +31,7 @@ Por todo ello, esta ficha documenta lo que consta en los metadatos y en la model
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Los tags de HuggingFace apuntan a un modelo basado en BERT destinado a extraccion de caracteristicas, lo que implicaria un encoder transformer bidireccional sin capacidad generativa. La model card, en cambio, habla de una "actualizacion de version significativa" con mayor profundidad de razonamiento, optimizacion algoritmica durante el post-entrenamiento y mejoras en function calling, caracteristicas propias de un modelo generativo de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles tecnicos concretos (numero de capas, dimensiones, cabezas de atencion, ventana de contexto o presupuesto de computo).
+No hay informacion verificable sobre la arquitectura. Los tags de Hugging Face apuntan a un modelo basado en BERT destinado a extraccion de caracteristicas, lo que implicaria un encoder transformer bidireccional sin capacidad generativa. La model card, en cambio, habla de una "actualizacion de version significativa" con mayor profundidad de razonamiento, optimizacion algoritmica durante el post-entrenamiento y mejoras en function calling, caracteristicas propias de un modelo generativo de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles tecnicos concretos (numero de capas, dimensiones, cabezas de atencion, ventana de contexto o presupuesto de computo).
 
 Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica innovacion mencionada de forma explicita es el aumento de la profundidad de pensamiento: segun la model card, en el conjunto AIME la version anterior consumia una media de 12K tokens por pregunta y la nueva consume 23K, lo que eleva la precision declarada del 70 % al 87,5 %. No se detalla el mecanismo que produce ese mayor consumo de tokens.
 
@@ -65,7 +65,7 @@ Dado que no hay pesos publicados ni especificaciones de contexto, los casos sigu
 - Procesamiento de documentos largos: existe una plantilla para inyectar nombre y contenido de fichero antes de la pregunta, lo que encaja en flujos de resumen o extraccion de datos sobre documentos.
 - Analisis de sentimiento y clasificacion a gran escala: la model card reporta 0,873 en analisis de sentimiento y 0,905 en clasificacion de texto, valores que, de confirmarse, serian adecuados para moderacion de contenido o enrutado de tickets.
 - Traduccion automatica: con 0,886 declarado en la categoria de traduccion, podria emplearse en localizacion de contenido, aunque se desconoce la lista real de idiomas soportados.
-- Despliegue como servicio con endpoints compatibles: el tag `endpoints_compatible` indica que el repositorio esta preparado para inferencia gestionada en HuggingFace, aunque sin pesos publicados no es operativo.
+- Despliegue como servicio con endpoints compatibles: el tag `endpoints_compatible` indica que el repositorio esta preparado para inferencia gestionada en Hugging Face, aunque sin pesos publicados no es operativo.
 
 ## Benchmarks y rendimiento
 
@@ -98,7 +98,7 @@ No es posible estimar requisitos de hardware con la informacion disponible, porq
 - VRAM para inferencia: no disponible (el repositorio no contiene pesos; ocupa 0,0 GB).
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: la unica via declarada es la libreria transformers y la compatibilidad con endpoints de HuggingFace. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama no serian aplicables sin conversion previa. vLLM o TGI requeririan pesos en safetensors que tampoco estan publicados.
+- Opciones de despliegue: la unica via declarada es la libreria transformers y la compatibilidad con endpoints de Hugging Face. No hay ficheros GGUF publicados, por lo que llama.cpp u Ollama no serian aplicables sin conversion previa. vLLM o TGI requeririan pesos en safetensors que tampoco estan publicados.
 - Latencia y throughput: no disponible. Como referencia cualitativa, el propio autor indica que el modo de razonamiento consume una media de 23K tokens por pregunta en AIME, lo que implicaria una latencia y un coste por consulta elevados en cualquier hardware, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -115,7 +115,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Limitaciones y advertencias
 
-- Inconsistencia documental grave: los tags de HuggingFace describen un BERT de `feature-extraction` mientras la model card describe un asistente generativo de razonamiento. No se puede determinar cual de las dos descripciones es correcta.
+- Inconsistencia documental grave: los tags de Hugging Face describen un BERT de `feature-extraction` mientras la model card describe un asistente generativo de razonamiento. No se puede determinar cual de las dos descripciones es correcta.
 - Ausencia total de pesos: el repositorio ocupa 0,0 GB, por lo que no es desplegable ni evaluable en la practica.
 - Repositorio sin traccion: 0 descargas y 0 likes desde su creacion, lo que es coherente con un repositorio de prueba o plantilla.
 - Benchmarks no verificables: la tabla de evaluacion usa identificadores genericos y no indica la version de los benchmarks, el numero de muestras ni la metodologia de evaluacion.
@@ -126,11 +126,11 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 - Licencia MIT: permite uso comercial y modificacion sin restricciones adicionales, pero al no existir pesos publicados la licencia es, en la practica, inaplicable a un artefacto de modelo.
 - Recomendaciones de prompt no verificadas: la temperatura de 0,6, el system prompt con fecha y las plantillas de busqueda web y subida de ficheros provienen unicamente del texto del autor y no han sido contrastadas.
 - Busqueda web sin resultados utiles: las consultas asociadas devolvieron exclusivamente contenidos sobre el Dia de los Monumentos Abiertos en Alemania, sin ninguna relacion con este modelo.
-- Aviso de trazabilidad: toda la informacion tecnica de esta ficha procede de los metadatos de HuggingFace y de la model card del autor, sin verificacion independiente.
+- Aviso de trazabilidad: toda la informacion tecnica de esta ficha procede de los metadatos de Hugging Face y de la model card del autor, sin verificacion independiente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afsdaaaf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afsdaaaf/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: mencionado en la model card ("our code repository") pero sin URL proporcionada; no disponible.
 - Web de chat y plataforma API oficial: mencionada en la model card ("our official website") pero sin URL proporcionada; no disponible.
 - Paper tecnico: no disponible.

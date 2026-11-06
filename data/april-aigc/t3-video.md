@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para comparar de forma cuantitativa con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/APRIL-AIGC/T3-Video
+- Modelo en Hugging Face: https://huggingface.co/APRIL-AIGC/T3-Video
 - Pagina del proyecto: https://zhangzjn.github.io/projects/T3-Video
 - Paper (arXiv): https://arxiv.org/abs/2512.13492
 - Paper (OpenReview, ICML 2026): https://openreview.net/forum?id=5dabjiOBpS

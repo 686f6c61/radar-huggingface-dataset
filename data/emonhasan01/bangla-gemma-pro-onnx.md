@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bangla-gemma-pro-ONNX | ~1B (inferido) | no disponible | bn, en | Gemma | ONNX en HuggingFace |
-| Gemma-3-1B (base) | 1B | 32.768 tokens | multilingue (incluye bn) | Gemma | Pesos abiertos en HuggingFace |
-| Llama-3.2-1B | 1.230M | 128.000 tokens | multilingue (bengali no oficial) | Llama 3.2 Community License | Pesos abiertos en HuggingFace |
-| Qwen2.5-1.5B | 1.500M | 32.768 tokens | multilingue | Apache 2.0 | Pesos abiertos en HuggingFace |
+| bangla-gemma-pro-ONNX | ~1B (inferido) | no disponible | bn, en | Gemma | ONNX en Hugging Face |
+| Gemma-3-1B (base) | 1B | 32.768 tokens | multilingue (incluye bn) | Gemma | Pesos abiertos en Hugging Face |
+| Llama-3.2-1B | 1.230M | 128.000 tokens | multilingue (bengali no oficial) | Llama 3.2 Community License | Pesos abiertos en Hugging Face |
+| Qwen2.5-1.5B | 1.500M | 32.768 tokens | multilingue | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Los datos de contexto y licencia de los modelos alternativos corresponden a sus especificaciones publicas de familia. No se dispone de comparativas de rendimiento en tareas de bengali entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una jerarquia de calidad. La ventaja diferencial de bangla-gemma-pro-ONNX es su especializacion declarada en bengali y su empaquetado ONNX listo para navegador, mientras que su desventaja principal es la licencia Gemma frente a alternativas como Qwen2.5-1.5B bajo Apache 2.0.
 
@@ -87,7 +87,7 @@ Los datos de contexto y licencia de los modelos alternativos corresponden a sus 
 - Ausencia de evaluacion independiente: no hay benchmarks publicados mas alla de la perplexity reportada por el propio autor, ni evaluacion por terceros.
 - Riesgo de reproducibilidad bajo: 0 descargas y 0 "likes" en el momento de la consulta; no hay evidencia de uso en produccion ni de validacion comunitaria.
 - Despliegue en servidor: al tratarse de un artefacto ONNX, las pilas de inferencia de alto rendimiento (vLLM, TGI) no lo soportan directamente; habria que convertir los pesos, y no se documenta ese procedimiento.
-- Fecha de creacion del repositorio: la ficha de HuggingFace indica 16 de octubre de 2026, una fecha que no se corresponde con el momento de la consulta; conviene verificar la integridad y procedencia de los artefactos antes de usarlos.
+- Fecha de creacion del repositorio: la ficha de Hugging Face indica 16 de octubre de 2026, una fecha que no se corresponde con el momento de la consulta; conviene verificar la integridad y procedencia de los artefactos antes de usarlos.
 
 ## Enlaces
 

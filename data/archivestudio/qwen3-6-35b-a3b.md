@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B es un modelo de lenguaje causal con codificador de visión publicado por el equipo Qwen (Alibaba) y redistribuido en el repositorio de HuggingFace `ArchiveStudio/Qwen3.6-35B-A3B`. Se trata de la primera variante de pesos abiertos de la serie Qwen3.6, construida sobre la arquitectura híbrida de Qwen3.5 y orientada explícitamente a flujos de trabajo de codificación agéntica, razonamiento a nivel de repositorio y retención de contexto de razonamiento entre turnos.
+Qwen3.6-35B-A3B es un modelo de lenguaje causal con codificador de visión publicado por el equipo Qwen (Alibaba) y redistribuido en el repositorio de Hugging Face `ArchiveStudio/Qwen3.6-35B-A3B`. Se trata de la primera variante de pesos abiertos de la serie Qwen3.6, construida sobre la arquitectura híbrida de Qwen3.5 y orientada explícitamente a flujos de trabajo de codificación agéntica, razonamiento a nivel de repositorio y retención de contexto de razonamiento entre turnos.
 
 El modelo emplea una arquitectura Mixture of Experts (MoE) con 35 951 822 704 parámetros totales y aproximadamente 3 000 millones de parámetros activos por token, distribuidos en 40 capas que alternan bloques Gated DeltaNet (atención lineal) y Gated Attention (atención completa con GQA). Incorpora 256 expertos con 8 expertos enrutados más 1 compartido activados por token, y está entrenado con predicción multi-token (MTP). Su ventana de contexto nativa es de 262 144 tokens, extensible hasta 1 010 000 tokens.
 
@@ -104,7 +104,7 @@ La comparativa se limita a los modelos incluidos en la tabla de benchmarks de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3.6-35B-A3B
 - Blog oficial del modelo: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia (referencia oficial Qwen): https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Qwen Chat: https://chat.qwen.ai

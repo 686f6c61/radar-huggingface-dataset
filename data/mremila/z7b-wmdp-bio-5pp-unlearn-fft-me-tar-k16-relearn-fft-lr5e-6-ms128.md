@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128` es un checkpoint de investigacion publicado por el usuario mremila en HuggingFace. Se trata del estado final (paso 128) de un ataque de *relearning* (reaprendizaje) de parametros completos sobre el modelo `z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16`, que a su vez es una variante del Zephyr-7B-beta sometida a un proceso de *unlearning* (desaprendizaje) del corpus WMDP-Bio. El objetivo del experimento es medir la resistencia a la manipulacion (*tamper-resistance*) de una defensa de desaprendizaje frente a un reentrenamiento adversarial.
+El modelo `z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128` es un checkpoint de investigacion publicado por el usuario mremila en Hugging Face. Se trata del estado final (paso 128) de un ataque de *relearning* (reaprendizaje) de parametros completos sobre el modelo `z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16`, que a su vez es una variante del Zephyr-7B-beta sometida a un proceso de *unlearning* (desaprendizaje) del corpus WMDP-Bio. El objetivo del experimento es medir la resistencia a la manipulacion (*tamper-resistance*) de una defensa de desaprendizaje frente a un reentrenamiento adversarial.
 
 El modelo no es un modelo de proposito general ni esta pensado para uso en produccion: es un artefacto de evaluacion que documenta cuanto conocimiento peligroso de bioseguridad puede recuperarse tras un ataque de fine-tuning sobre un modelo previamente "desaprendido". La relevancia es metodologica, para quienes investigan seguridad de modelos, evaluacion de unlearning y robustez de defensas.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128
+- Hugging Face: https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16-relearn-fft-lr5e-6-ms128
 - Modelo padre defendido: https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16
 - Dataset WMDP-Bio forget corpus: https://huggingface.co/datasets/cais/wmdp-bio-forget-corpus
 - Modelo base original (Zephyr-7B-beta): https://huggingface.co/HuggingFaceH4/zephyr-7b-beta

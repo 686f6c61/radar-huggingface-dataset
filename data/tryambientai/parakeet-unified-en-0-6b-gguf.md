@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos comparativos con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/parakeet-unified-en-0.6b-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/parakeet-unified-en-0.6b-gguf
 - Modelo base original: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Commit del modelo base usado: https://huggingface.co/nvidia/parakeet-unified-en-0.6b/commit/d4ac992
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

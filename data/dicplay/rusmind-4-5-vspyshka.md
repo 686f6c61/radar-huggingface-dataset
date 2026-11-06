@@ -91,7 +91,7 @@ Nota: los datos de los modelos alternativos proceden de documentacion publica ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka
 - Archivo de pesos BF16: https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka/blob/main/RusMind-Vspyshka-4.5-BF16.gguf
 - Licencia: https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka/blob/main/LICENSE
 - Repositorio con todas las versiones de la familia: https://huggingface.co/DICPlay/RusMind-Vspyshka

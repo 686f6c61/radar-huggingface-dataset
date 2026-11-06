@@ -2,7 +2,7 @@
 
 ## Resumen
 
-auto-analyst-llama es un ajuste fino del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, publicado en HuggingFace por el usuario prathyusha0909. Se trata, por tanto, de un derivado de Llama 3.1 8B Instruct: un transformer denso decoder-only de 8.030 millones de parametros y 128.000 tokens de contexto. El autor declara que el entrenamiento se realizo con Unsloth, lo que implica un esquema de ajuste eficiente en memoria; dado que el modelo base indicado esta cuantizado a 4 bits (bnb-4bit), es plausible que se haya empleado QLoRA, aunque la ficha no lo confirma.
+auto-analyst-llama es un ajuste fino del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, publicado en Hugging Face por el usuario prathyusha0909. Se trata, por tanto, de un derivado de Llama 3.1 8B Instruct: un transformer denso decoder-only de 8.030 millones de parametros y 128.000 tokens de contexto. El autor declara que el entrenamiento se realizo con Unsloth, lo que implica un esquema de ajuste eficiente en memoria; dado que el modelo base indicado esta cuantizado a 4 bits (bnb-4bit), es plausible que se haya empleado QLoRA, aunque la ficha no lo confirma.
 
 La model card es minima: no especifica dataset de entrenamiento, numero de tokens, hiperparametros, metodo de alineamiento ni resultados de evaluacion. El nombre del modelo sugiere una especializacion en tareas de analisis de datos, en linea con proyectos abiertos como Auto-Analyst de FireBird Technologies, pero no existe documentacion que lo respalde dentro del repositorio. El repositorio ocupa 0,4 GB, un tamano compatible con un conjunto de adaptadores LoRA en lugar de pesos fusionados en precision completa.
 
@@ -103,7 +103,7 @@ La unica ventaja diferencial de auto-analyst-llama frente a su modelo base seria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prathyusha0909/auto-analyst-llama
+- Modelo en Hugging Face: https://huggingface.co/prathyusha0909/auto-analyst-llama
 - Modelo base del ajuste: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

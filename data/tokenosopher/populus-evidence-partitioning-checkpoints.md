@@ -83,6 +83,6 @@ La comparación no es directa porque el objetivo del repositorio no es ofrecer u
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/tokenosopher/populus-evidence-partitioning-checkpoints)
+- [Repositorio Hugging Face](https://huggingface.co/tokenosopher/populus-evidence-partitioning-checkpoints)
 - [Repositorio GitHub (código, evaluación, preregistración)](https://github.com/tokenosopher/populus-evidence-partitioning)
 - Paper: "What You Can't See Is What You Learn: Restricted Evidence Visibility Favors Learned Generalization in Shared-Genome Language-Modelist" (Narcis Marincat, 2026; arXiv link to follow, según la model card)

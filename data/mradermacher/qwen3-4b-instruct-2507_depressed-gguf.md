@@ -23,7 +23,7 @@ La model card de este repositorio es extremadamente escueta: únicamente indica 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura ni entrenamiento en la informacion proporcionada. Lo unico documentado en la model card son los metadatos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, lo que indica que los pesos se convirtieron desde un checkpoint en formato HuggingFace y que la cuantizacion se aplico sobre los tensores de salida. Se ofrecen tanto cuantizaciones K-quant (Q2_K a Q6_K) como una cuantizacion IQ4_XS y una version sin cuantizar en F16.
+No hay informacion sobre arquitectura ni entrenamiento en la informacion proporcionada. Lo unico documentado en la model card son los metadatos del proceso de conversion: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`, lo que indica que los pesos se convirtieron desde un checkpoint en formato Hugging Face y que la cuantizacion se aplico sobre los tensores de salida. Se ofrecen tanto cuantizaciones K-quant (Q2_K a Q6_K) como una cuantizacion IQ4_XS y una version sin cuantizar en F16.
 
 El nombre del modelo sugiere que el checkpoint de partida es un ajuste de Qwen3-4B-Instruct-2507 con una modificacion de estilo o personalidad ("depressed"). No se especifica si ese ajuste se hizo mediante fine-tuning supervisado, DPO, LoRA u otra tecnica, ni cuantos tokens se emplearon. Tampoco se documenta ninguna innovacion tecnica adicional en esta conversion: las cuantizaciones GGUF son un proceso estandar de compresion con perdida, no una modficacion arquitectonica.
 
@@ -67,10 +67,10 @@ No hay datos verificados en la informacion proporcionada para establecer una com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3-4B-Instruct-2507_depressed-GGUF (este repositorio) | no declarado (nombre: 4B) | no disponible | no disponible | GGUF en HuggingFace | Conversion de cuantizacion, sin benchmarks ni idiomas declarados |
-| marcelpadilla/Qwen3-4B-Instruct-2507_depressed | no declarado | no disponible | no disponible | HuggingFace | Modelo de origen del que se derivan estas cuantizaciones |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base de la familia) | 4B (dato publico del modelo base) | no verificado en esta busqueda | no disponible en esta busqueda | HuggingFace | Sin ajuste de personalidad; serviria como referencia de control |
-| Otras alternativas de ~3-4B (Llama 3.2 3B Instruct, Gemma 3 4B IT, Phi-4-mini) | 3-4B | no verificado en esta busqueda | no disponible en esta busqueda | HuggingFace | No se dispone de datos comparativos en la informacion proporcionada |
+| mradermacher/Qwen3-4B-Instruct-2507_depressed-GGUF (este repositorio) | no declarado (nombre: 4B) | no disponible | no disponible | GGUF en Hugging Face | Conversion de cuantizacion, sin benchmarks ni idiomas declarados |
+| marcelpadilla/Qwen3-4B-Instruct-2507_depressed | no declarado | no disponible | no disponible | Hugging Face | Modelo de origen del que se derivan estas cuantizaciones |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base de la familia) | 4B (dato publico del modelo base) | no verificado en esta busqueda | no disponible en esta busqueda | Hugging Face | Sin ajuste de personalidad; serviria como referencia de control |
+| Otras alternativas de ~3-4B (Llama 3.2 3B Instruct, Gemma 3 4B IT, Phi-4-mini) | 3-4B | no verificado en esta busqueda | no disponible en esta busqueda | Hugging Face | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de cifras de rendimiento comparables, por lo que cualquier afirmacion sobre superioridad o inferioridad respecto a estos modelos seria especulativa.
 

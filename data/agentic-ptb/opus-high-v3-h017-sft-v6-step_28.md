@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_28)
+- [Hugging Face - modelo](https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_28)
 - [Dataset asociado - agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets - agentic-ptb/INDEX](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

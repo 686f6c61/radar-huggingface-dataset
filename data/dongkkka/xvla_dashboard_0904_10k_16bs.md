@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/xvla_dashboard_0904_10k_16bs
+- Hugging Face: https://huggingface.co/Dongkkka/xvla_dashboard_0904_10k_16bs
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/cyclo_dashboard_0904_test_v30
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Sitio web de X-VLA: https://thu-air-dream.github.io/X-VLA/

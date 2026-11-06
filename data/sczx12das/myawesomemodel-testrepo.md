@@ -1,7 +1,7 @@
 # SCZX12DAS/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SCZX12DAS bajo el identificador SCZX12DAS/MyAwesomeModel-TestRepo. El repositorio se presenta como una prueba o plantilla: no contiene pesos (tamano del repo 0,0 GB), registra 0 descargas y 0 likes, y su model card esta construida sobre un texto generico con marcadores de posicion en lugar de datos concretos del modelo. La etiqueta de la libreria es transformers y la pipeline declarada es feature-extraction, mientras que los tags incluyen pytorch y bert, en contradiccion con el contenido de la model card, que describe un modelo generativo de razonamiento con modo de pensamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SCZX12DAS bajo el identificador SCZX12DAS/MyAwesomeModel-TestRepo. El repositorio se presenta como una prueba o plantilla: no contiene pesos (tamano del repo 0,0 GB), registra 0 descargas y 0 likes, y su model card esta construida sobre un texto generico con marcadores de posicion en lugar de datos concretos del modelo. La etiqueta de la libreria es transformers y la pipeline declarada es feature-extraction, mientras que los tags incluyen pytorch y bert, en contradiccion con el contenido de la model card, que describe un modelo generativo de razonamiento con modo de pensamiento.
 
 El texto de la model card afirma mejoras en razonamiento matematico, programacion y logica, con un incremento de precision en AIME 2025 del 70 % al 87,5 % respecto a una version anterior, y un aumento del consumo medio de tokens por pregunta de 12K a 23K. Tambien menciona soporte de system prompt, llamada a funciones y una variante denominada MyAwesomeModel-Small. Sin embargo, todos los resultados de evaluacion se presentan con nombres anonimizados (Model1, Model2, Model1-v2) y sin identificar los benchmarks empleados, por lo que no son verificables.
 
@@ -11,7 +11,7 @@ En el momento de redactar esta ficha no hay informacion tecnica fiable disponibl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican "bert"; la model card describe un modelo generativo de razonamiento. Informacion contradictoria |
+| Arquitectura | No disponible. Los tags de Hugging Face indican "bert"; la model card describe un modelo generativo de razonamiento. Informacion contradictoria |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible (la model card menciona un consumo medio de 23K tokens por pregunta en AIME, que no equivale a la ventana de contexto) |
@@ -41,7 +41,7 @@ Tampoco se documentan los datos de entrenamiento: no se indica el numero de toke
 - Asistente conversacional con contexto documental: las plantillas de carga de ficheros permiten insertar el contenido de un documento y formular preguntas sobre el, un patron habitual en asistentes internos de documentacion.
 - Generacion aumentada con busqueda web citada: la plantilla proporcionada obliga al modelo a insertar referencias [citation:X] junto a las frases derivadas de cada resultado, lo que encaja en flujos de resumen de actualidad con trazabilidad de fuentes.
 - Generacion asistida de codigo en entornos de desarrollo: la model card situa la generacion de codigo entre sus capacidades, por lo que podria integrarse en asistentes de autocompletado o revision de fragmentos, siempre que se validen los pesos reales.
-- Clasificacion y analisis de sentimiento sobre texto: el pipeline declarado en HuggingFace es feature-extraction y la tabla de evaluacion incluye clasificacion y sentimiento, lo que sugiere uso como extractor de representaciones o clasificador ajustado.
+- Clasificacion y analisis de sentimiento sobre texto: el pipeline declarado en Hugging Face es feature-extraction y la tabla de evaluacion incluye clasificacion y sentimiento, lo que sugiere uso como extractor de representaciones o clasificador ajustado.
 - Traduccion y resumen de documentos: ambas tareas aparecen en la tabla de evaluacion, de modo que el modelo podria emplearse en pipelines de preprocesado y sintesis de contenido.
 - Experimentacion docente o de investigacion: al estar publicado con licencia MIT y sin restricciones declaradas, sirve como banco de pruebas para comparar tecnicas de prompting, siempre que el repositorio llegue a contener pesos utilizables.
 
@@ -93,11 +93,11 @@ No disponible. La unica comparacion presente en la model card utiliza referencia
 - Contexto y limites de entrada: desconocidos. No se puede planificar un uso con documentos largos sin conocer la ventana real.
 - Sesgos: no hay informacion sobre composicion del dataset ni sobre evaluaciones de sesgo mas alla de una puntuacion agregada de "Safety Evaluation" sin metodologia.
 - Licencia: MIT, permisiva y apta para uso comercial, pero se aplica a un repositorio sin contenido claro; conviene verificar que los pesos, si se publican, mantengan la misma licencia.
-- Fecha de creacion registrada: 2026-09-14, posterior a la fecha habitual de publicacion en HuggingFace. Puede tratarse de un error de metadatos del repositorio.
+- Fecha de creacion registrada: 2026-09-14, posterior a la fecha habitual de publicacion en Hugging Face. Puede tratarse de un error de metadatos del repositorio.
 - Uso en produccion: no recomendado con la informacion actual. Faltan pesos, documentacion de arquitectura, tokenizador, limites de contexto y evaluacion reproducible.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/SCZX12DAS/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SCZX12DAS/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona un repositorio propio para ejecucion local, pero no incluye la URL
 - Sitio web oficial y API: la model card menciona una interfaz de chat y una API, pero no proporciona la direccion

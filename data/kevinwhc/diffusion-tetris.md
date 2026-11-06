@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diffusion-Tetris es un conjunto de checkpoints de PyTorch publicado en HuggingFace por el usuario kevinwhc (Kevin Chun Ye), que acompaña al artículo «Diffusion-MPC in Discrete Domains: Feasibility Constraints, Horizon Effects, and Critic Alignment: Case study with Tetris» (arXiv:2603.02348). El modelo implementa un planificador por control predictivo basado en modelos de difusión (Diffusion-MPC) para el juego Tetris. Su arquitectura combina un denoiser discreto de estilo MaskGIT, que opera sobre secuencias de colocación de piezas, con un crítico DQN preentrenado que se utiliza para reranking de las secuencias candidatas.
+Diffusion-Tetris es un conjunto de checkpoints de PyTorch publicado en Hugging Face por el usuario kevinwhc (Kevin Chun Ye), que acompaña al artículo «Diffusion-MPC in Discrete Domains: Feasibility Constraints, Horizon Effects, and Critic Alignment: Case study with Tetris» (arXiv:2603.02348). El modelo implementa un planificador por control predictivo basado en modelos de difusión (Diffusion-MPC) para el juego Tetris. Su arquitectura combina un denoiser discreto de estilo MaskGIT, que opera sobre secuencias de colocación de piezas, con un crítico DQN preentrenado que se utiliza para reranking de las secuencias candidatas.
 
 El problema que resuelve es la generación de planes de acciones discretas en dominios con restricciones de factibilidad, un área de investigación activa en planificación y aprendizaje por refuerzo. Su relevancia radica en que estudia tres ejes concretos: el filtrado de muestras mediante máscaras logit para garantizar colocaciones válidas, el impacto de la longitud del horizonte en la calidad de los planes, y la alineación del crítico aprendido con heurísticas de evaluación del tablero. No se han publicado datos sobre el tamaño de parámetros, la longitud de contexto ni la composición del dataset de entrenamiento en la información disponible.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kevinwhc/diffusion-tetris
+- Hugging Face: https://huggingface.co/kevinwhc/diffusion-tetris
 - GitHub del autor: https://github.com/KevinChunye/Diffusion-Tetris
 - Artículo en arXiv (abstract): https://arxiv.org/abs/2603.02348
 - Artículo en arXiv (PDF): https://arxiv.org/pdf/2603.02348

@@ -35,7 +35,7 @@ El numero de tokens de entrenamiento, la composicion del dataset y el uso de RLH
 - Prediccion de video: genera de forma opcional los fotogramas de camara futuros de la escena, denoised junto con las acciones.
 - Comprension multimodal de la instruccion: el encoder Qwen3-VL-4B-Instruct procesa texto e imagen para condicionar la politica.
 - Adaptacion a nuevos embodiments: los pesos base permiten entrenar cabezas de accion nuevas para robots, simuladores o juegos distintos de SO-101 y DROID.
-- Integracion con el ecosistema LeRobot: el repositorio esta etiquetado como `lerobot` y usa el pipeline de robotica de HuggingFace.
+- Integracion con el ecosistema LeRobot: el repositorio esta etiquetado como `lerobot` y usa el pipeline de robotica de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-action-base | 7B (+4B encoder de texto) | no disponible | no disponible | FLUX Kommunity License v1.0 | Pesos en HuggingFace, componente de adaptacion |
-| flux-3-action-so101 | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en HuggingFace |
-| flux-3-action-droid | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en HuggingFace |
+| flux-3-action-base | 7B (+4B encoder de texto) | no disponible | no disponible | FLUX Kommunity License v1.0 | Pesos en Hugging Face, componente de adaptacion |
+| flux-3-action-so101 | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en Hugging Face |
+| flux-3-action-droid | no disponible | no disponible | no disponible | no disponible | Politica lista para usar, en Hugging Face |
 | Otras politicas VLA/world-action de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados sobre modelos comparables de otros desarrolladores en la informacion proporcionada, por lo que no se incluyen cifras de terceros.
@@ -89,7 +89,7 @@ No se dispone de datos verificados sobre modelos comparables de otros desarrolla
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/black-forest-labs/flux-3-action-base)
+- [Modelo en Hugging Face](https://huggingface.co/black-forest-labs/flux-3-action-base)
 - [Coleccion FLUX 3 Action](https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8)
 - [Documentacion de FLUX 3 Action](https://docs.bfl.ai/flux_3/flux3_action_overview)
 - [Guia de fine-tuning](https://docs.bfl.ai/flux_3/flux3_action_finetuning)

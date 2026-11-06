@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo comparable con otros LLMs; es un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aday777/glm5_next_tiny_fixture
+- Repositorio Hugging Face: https://huggingface.co/aday777/glm5_next_tiny_fixture
 - Código de transformers para `glm5_next`: https://github.com/huggingface/transformers/tree/main/src/transformers/models/glm5_next
 - Archivo de modelado `modeling_glm5_next.py`: https://github.com/huggingface/transformers/blob/main/src/transformers/models/glm5_next/modeling_glm5_next.py
 - Paper de GLM-5 en arXiv: https://arxiv.org/html/2602.15763v1

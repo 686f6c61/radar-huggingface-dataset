@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball 67B-A2B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por LAION como parte del proyecto Marin. Se trata del export en BF16 para HuggingFace y vLLM de la etapa "Agentic" de una campaña de fine-tuning supervisado (SFT) en tres fases ordenadas: Chat, Thinking y Agentic. El modelo está diseñado para tareas de conversación, razonamiento y uso de agentes, y su nombre "A2B" indica que activa aproximadamente 2.000 millones de parámetros de un total de 67.000 millones, lo que permite una inferencia relativamente eficiente para su tamaño.
+Snowball 67B-A2B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por LAION como parte del proyecto Marin. Se trata del export en BF16 para Hugging Face y vLLM de la etapa "Agentic" de una campaña de fine-tuning supervisado (SFT) en tres fases ordenadas: Chat, Thinking y Agentic. El modelo está diseñado para tareas de conversación, razonamiento y uso de agentes, y su nombre "A2B" indica que activa aproximadamente 2.000 millones de parámetros de un total de 67.000 millones, lo que permite una inferencia relativamente eficiente para su tamaño.
 
 El entrenamiento se realizó sobre el checkpoint final de la etapa Thinking (paso 630), con un dataset específico de SFT agentic (`grug-a2b-agentic-sft-eot`), cinco épocas de tokens, 1.888 pasos y una longitud de secuencia de 32.768 tokens. La pérdida final fue de aproximadamente 0,201. El modelo conserva el tokenizer Marin y los tokens especiales Delphi, y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de producción.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada para inferencia: el modelo en BF16 ocupa aproximadamente 134 GB (tamaño del repo). Con cuantización a 8 bits se reduciría a ~67 GB, y a 4 bits a ~34 GB. Sin embargo, al ser MoE con solo 2B activos, la memoria para activaciones es reducida, pero los pesos totales deben cargarse en memoria.
 - GPU recomendadas: para BF16 sin cuantizar se necesitan GPUs con al menos 134 GB de VRAM, como una A100 80GB (insuficiente) o varias GPUs en paralelo (p.ej. 2× A100 80GB). Para cuantización 4-bit, una RTX 4090 (24 GB) no sería suficiente; se necesitaría al menos 34 GB, por lo que una A6000 (48 GB) o A100 40GB podrían ser opciones, aunque el rendimiento dependería de la implementación.
-- Opciones de despliegue: el modelo es compatible con vLLM (según el export mencionado) y con HuggingFace Transformers. También podría usarse con llama.cpp si se convierte a GGUF, aunque no se menciona. Ollama no está confirmado.
+- Opciones de despliegue: el modelo es compatible con vLLM (según el export mencionado) y con Hugging Face Transformers. También podría usarse con llama.cpp si se convierte a GGUF, aunque no se menciona. Ollama no está confirmado.
 - Latencia y throughput: no se proporcionan datos. Al ser MoE con 2B activos, la latencia por token debería ser menor que la de un modelo denso de 67B, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-agentic-step1888
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-agentic-step1888
 - Repositorio Marin (PR #8171): https://github.com/marin-community/marin/pull/8171
 - Repositorio Marin (PR #8172): https://github.com/marin-community/marin/pull/8172
 - Issue del experimento (Marin #8225): https://github.com/marin-community/marin/issues/8225

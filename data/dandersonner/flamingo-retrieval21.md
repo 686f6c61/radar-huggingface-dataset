@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-retrieval21 es un repositorio publicado por el usuario Dandersonner (identificado en su perfil de HuggingFace como Mikhail Lebedev) que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal. El propio autor lo describe como un punto de partida reproducible y transparente, no como un modelo entrenado: el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no como un checkpoint evaluado. No se reclama ninguna puntuación de benchmark en la model card.
+Flamingo-retrieval21 es un repositorio publicado por el usuario Dandersonner (identificado en su perfil de Hugging Face como Mikhail Lebedev) que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de recuperación (retrieval) multimodal. El propio autor lo describe como un punto de partida reproducible y transparente, no como un modelo entrenado: el archivo `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no como un checkpoint evaluado. No se reclama ninguna puntuación de benchmark en la model card.
 
 Se trata de un artefacto de investigación con un pesoextremadamente reducido: los metadatos de safetensors reportan 24.832 parámetros, muy lejos de los miles de millones habituales en los modelos visuales-lenguaje de referencia. La arquitectura declarada es Flamingo en escala "base", con atención multi-query, fusión mediante concat MLP, activación gelu-tanh y normalización RMSNorm. La receta de experimento por defecto emplea el optimizador Lion con un schedule exponencial, valores de arranque del script y no evidencia de un entrenamiento completado.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dandersonner/flamingo-retrieval21 | 24.832 (inicializacion) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
-| Chloechensen/flamingo-retrieval | escala pequena (variante "small"); variante "giant" mencionada | no disponible | no es un release entrenado | no disponible | HuggingFace |
+| Dandersonner/flamingo-retrieval21 | 24.832 (inicializacion) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
+| Chloechensen/flamingo-retrieval | escala pequena (variante "small"); variante "giant" mencionada | no disponible | no es un release entrenado | no disponible | Hugging Face |
 | OpenFlamingo (mlfoundations) | multiple escalas | no disponible | implementacion de referencia con evaluacion | no disponible en la informacion | GitHub + pesos publicados |
 | Flamingo (DeepMind) | no disponible | no disponible | SOTA en few-shot en multiples benchmarks | no disponible (no abierto) | articulo arXiv 2204.14198 |
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa no es posible: el modelo aqui descrito es un checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dandersonner/flamingo-retrieval21
+- Modelo en Hugging Face: https://huggingface.co/Dandersonner/flamingo-retrieval21
 - Perfil del autor: https://huggingface.co/Dandersonner
 - Implementacion similar de otro usuario: https://huggingface.co/Chloechensen/flamingo-retrieval
 - Paper original de Flamingo (DeepMind): https://arxiv.org/abs/2204.14198

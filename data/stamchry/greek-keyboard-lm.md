@@ -23,7 +23,7 @@ El modelo resuelve el problema de la predicción de palabras y la corrección de
 
 El modelo sigue la arquitectura LlamaForCausalLM, una variante del transformer decoder-only con normalización RMSNorm y atención con máscara causal. Con 9 capas, 512 dimensiones ocultas, 1376 unidades en la capa intermedia y 8 cabezas de atención, es un modelo deliberadamente pequeño para caber en memoria móvil. Los embeddings están atados entre la entrada y la salida, lo que reduce el número de parámetros. El tokenizador es SentencePiece Unigram con un vocabulario de 15.008 tokens y la opción `treat_whitespace_as_suffix=True`, que trata los espacios como sufijos, una elección adecuada para la predicción de palabras en un teclado.
 
-El entrenamiento incluye tokens de control especiales (`<XBU>`, `<XBC>`, `<XEC>`) que implementan el protocolo de autocorrección de FUTO Keyboard. No se han publicado detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El repositorio de GitHub indica que el pipeline completo de recopilación de datos y entrenamiento está disponible, aunque la cifra de parámetros mencionada allí (22,8 millones) difiere de la indicada en HuggingFace (36,15 millones), posiblemente por una versión anterior del modelo.
+El entrenamiento incluye tokens de control especiales (`<XBU>`, `<XBC>`, `<XEC>`) que implementan el protocolo de autocorrección de FUTO Keyboard. No se han publicado detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El repositorio de GitHub indica que el pipeline completo de recopilación de datos y entrenamiento está disponible, aunque la cifra de parámetros mencionada allí (22,8 millones) difiere de la indicada en Hugging Face (36,15 millones), posiblemente por una versión anterior del modelo.
 
 ## Capacidades
 
@@ -74,13 +74,13 @@ No se han encontrado modelos comparables específicamente diseñados para texto 
 - El modelo es extremadamente pequeño (36M parámetros), por lo que su capacidad de generación de texto libre es limitada y puede producir incoherencias en contextos largos.
 - Está entrenado exclusivamente para griego moderno; no soporta otros idiomas.
 - Depende del protocolo de FUTO Keyboard para su uso completo; fuera de ese ecosistema, los tokens de control no tienen significado.
-- La discrepancia entre los 22,8M parámetros mencionados en el repositorio de GitHub y los 36,15M de HuggingFace sugiere que puede haber versiones diferentes; conviene verificar qué archivo se descarga.
+- La discrepancia entre los 22,8M parámetros mencionados en el repositorio de GitHub y los 36,15M de Hugging Face sugiere que puede haber versiones diferentes; conviene verificar qué archivo se descarga.
 - No se han publicado detalles sobre el dataset de entrenamiento, por lo que no se puede evaluar la presencia de sesgos o la calidad de los datos.
 - Las métricas de precisión (Top-1 del 39 %) son modestas en comparación con modelos más grandes, aunque adecuadas para la tarea de teclado.
 - No se ha documentado el rendimiento en producción ni la latencia real en dispositivos Android.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stamchry/greek-keyboard-lm
+- Modelo en Hugging Face: https://huggingface.co/stamchry/greek-keyboard-lm
 - Repositorio de entrenamiento: https://github.com/stamchry/greek-keyboard-lm
 - Fork del teclado FUTO con soporte griego: https://github.com/stamchry/android-keyboard

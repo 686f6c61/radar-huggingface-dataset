@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
 - Modelo base (logic65): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Repositorio oficial de Qwen3.8 (Alibaba): https://github.com/QwenLM/Qwen3.8
 - Guia para ejecutar Qwen3.8-27B localmente (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

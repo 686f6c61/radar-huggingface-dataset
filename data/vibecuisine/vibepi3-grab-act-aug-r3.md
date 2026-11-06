@@ -4,7 +4,7 @@
 
 El modelo `vibepi3-grab-act-aug-r3` es una política de robótica basada en ACT (Action Chunking with Transformers), desarrollada por VibeCuisine mediante su plataforma Vibe Data Studio. Está diseñado para controlar un brazo robótico de 7 grados de libertad (shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll, gripper, tilt) en la tarea específica de agarrar un pepino en el punto de un tercio de su longitud, a partir de instrucciones en lenguaje natural.
 
-El modelo se entrenó desde cero con 64 episodios teleoperados (3.478 frames a 20 fps) extraídos del dataset curado `VibeCuisine/vibepi3-grab-poseexpert-r3-curated`. Con 51,6 millones de parámetros y una arquitectura transformer, representa un ejemplo de entrenamiento de políticas robóticas con pocos datos, un enfoque relevante para la robótica doméstica y la automatización de tareas de preparación de alimentos. Su publicación en HuggingFace bajo el ecosistema LeRobot facilita su reproducción y despliegue.
+El modelo se entrenó desde cero con 64 episodios teleoperados (3.478 frames a 20 fps) extraídos del dataset curado `VibeCuisine/vibepi3-grab-poseexpert-r3-curated`. Con 51,6 millones de parámetros y una arquitectura transformer, representa un ejemplo de entrenamiento de políticas robóticas con pocos datos, un enfoque relevante para la robótica doméstica y la automatización de tareas de preparación de alimentos. Su publicación en Hugging Face bajo el ecosistema LeRobot facilita su reproducción y despliegue.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento comparativo de este modelo con otros. Sin embargo, se han identificado modelos relacionados de la misma autora (VibeCuisine) en HuggingFace:
+No se dispone de datos de rendimiento comparativo de este modelo con otros. Sin embargo, se han identificado modelos relacionados de la misma autora (VibeCuisine) en Hugging Face:
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Estos modelos parecen ser iteraciones del mismo proyecto, pero no hay métricas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/vibepi3-grab-act-aug-r3
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/vibepi3-grab-act-aug-r3
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/vibepi3-grab-poseexpert-r3-curated
 - Registro de entrenamiento (W&B): https://wandb.ai/jeremyhx-freelance/lerobot/runs/vds48-2fc878f0
 - Web de VibeCuisine: https://www.vibecuisine.com/

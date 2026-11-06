@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos fiables para este fine-tune concreto. Como referencia, el modelo base Qwen3.8-27B se compara con otros modelos densos de ~27 B como Llama 3.1 8B (menor tamano) o Mistral Large 2 (mayor tamano), pero no hay benchmarks publicados para esta version cuantizada. Se recomienda consultar las comparativas oficiales del modelo base en su pagina de HuggingFace o en las fuentes externas citadas.
+No se dispone de datos comparativos fiables para este fine-tune concreto. Como referencia, el modelo base Qwen3.8-27B se compara con otros modelos densos de ~27 B como Llama 3.1 8B (menor tamano) o Mistral Large 2 (mayor tamano), pero no hay benchmarks publicados para esta version cuantizada. Se recomienda consultar las comparativas oficiales del modelo base en su pagina de Hugging Face o en las fuentes externas citadas.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos fiables para este fine-tune concreto. Como r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-i1-GGUF
 - Modelo original (safetensors): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Pagina de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Guia de ejecucion local de Qwen3.8 27B (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

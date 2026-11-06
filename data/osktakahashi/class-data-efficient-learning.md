@@ -73,6 +73,6 @@ No disponible. No existe una categoría de modelos comparables para un repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Osktakahashi/class-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/Osktakahashi/class-data-efficient-learning
 - Artefacto principal citado en la model card: `reading.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

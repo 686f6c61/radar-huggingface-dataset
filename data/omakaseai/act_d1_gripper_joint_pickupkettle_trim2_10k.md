@@ -70,7 +70,7 @@ No se dispone de modelos comparables en la informacion proporcionada. En el hub 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k
+- Modelo en Hugging Face: https://huggingface.co/OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

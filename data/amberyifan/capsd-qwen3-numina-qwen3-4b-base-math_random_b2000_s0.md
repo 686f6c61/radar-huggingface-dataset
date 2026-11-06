@@ -72,7 +72,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_random_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_random_b2000_s0
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

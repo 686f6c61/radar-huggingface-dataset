@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `csci680-tsun04/Assignment1_checkpoint` | 60,4 M | No disponible | Desde cero sobre corpus de 300k + ajuste fino en 2 tareas | No disponible | HuggingFace, repo de 1,0 GB con 5 checkpoints |
-| `t5-small` (Google) | ~60 M | 512 tokens | C4 + ajuste con objetivos de denoising | Apache 2.0 | HuggingFace, ampliamente soportado |
-| `flan-t5-small` (Google) | ~60 M | 512 tokens | T5-small + ajuste con instrucciones (FLAN) | Apache 2.0 | HuggingFace, con pipeline de generación |
-| `codet5-small` (Salesforce) | ~60 M | 512 tokens | Preentrenamiento sobre código (CodeSearchNet y otros) | No verificada en esta ficha | HuggingFace |
+| `csci680-tsun04/Assignment1_checkpoint` | 60,4 M | No disponible | Desde cero sobre corpus de 300k + ajuste fino en 2 tareas | No disponible | Hugging Face, repo de 1,0 GB con 5 checkpoints |
+| `t5-small` (Google) | ~60 M | 512 tokens | C4 + ajuste con objetivos de denoising | Apache 2.0 | Hugging Face, ampliamente soportado |
+| `flan-t5-small` (Google) | ~60 M | 512 tokens | T5-small + ajuste con instrucciones (FLAN) | Apache 2.0 | Hugging Face, con pipeline de generación |
+| `codet5-small` (Salesforce) | ~60 M | 512 tokens | Preentrenamiento sobre código (CodeSearchNet y otros) | No verificada en esta ficha | Hugging Face |
 
 La diferencia principal frente a los tres es que este checkpoint se entrena desde pesos aleatorios con un corpus de 300.000 ejemplos, mucho menor que los corpus de T5 o CodeT5, y sin fase de instrucciones. No hay datos de benchmarks que permitan afirmar superioridad o inferioridad en calidad; la comparación relevante es metodológica (condiciones A/B/C), no de rendimiento absoluto.
 
@@ -109,6 +109,6 @@ La diferencia principal frente a los tres es que este checkpoint se entrena desd
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/csci680-tsun04/Assignment1_checkpoint
+- Hugging Face: https://huggingface.co/csci680-tsun04/Assignment1_checkpoint
 - Repositorio docente con el código del experimento: https://github.com/aura-lab-wm/teaching-genai4se-2026-tsun04
 - No se han encontrado papers, blogs ni demos específicos de este checkpoint. Los resultados de búsqueda disponibles (CS2680 Modern AI Systems de Harvard, `github.com/houchenfeng/CS2680_Modern_AI_Systems`, listados de modelos de octubre de 2026 en lmmarketcap.com y benchlm.ai) no están relacionados con este modelo y no aportan información técnica sobre él.

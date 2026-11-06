@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davenetdev/halogen-qwen3.8-flash-next-uncensored` es una publicación de pesos en formato GGUF alojada en HuggingFace por el usuario `davenetdev`. Según su model card, se trata de una cuantización IQ4_XS del modelo base `orcarouter/Qwen3.8-Flash-Next-Uncensored`, generada utilizando la matriz de importancia (imatrix) publicada por Unsloth en `unsloth/Qwen3.8-Flash-Next-GGUF`. El autor la describe como un reemplazo directo ("drop in replacement") del modelo original `peonist-ai/halogen-qwen3.8-flash-next`, del cual hay que obtener el resto de ficheros necesarios para el funcionamiento completo.
+`davenetdev/halogen-qwen3.8-flash-next-uncensored` es una publicación de pesos en formato GGUF alojada en Hugging Face por el usuario `davenetdev`. Según su model card, se trata de una cuantización IQ4_XS del modelo base `orcarouter/Qwen3.8-Flash-Next-Uncensored`, generada utilizando la matriz de importancia (imatrix) publicada por Unsloth en `unsloth/Qwen3.8-Flash-Next-GGUF`. El autor la describe como un reemplazo directo ("drop in replacement") del modelo original `peonist-ai/halogen-qwen3.8-flash-next`, del cual hay que obtener el resto de ficheros necesarios para el funcionamiento completo.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio acumula 0 descargas y 0 "likes", no declara licencia, no declara idiomas, no incluye pipeline y su model card es una nota de tres párrafos sin especificaciones técnicas. No hay información publicada sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento. Esto lo convierte en un artefacto de interés únicamente para quien ya trabaje con la familia `Qwen3.8-Flash-Next` y quiera una variante cuantizada concreta.
 
@@ -103,7 +103,7 @@ No se dispone de informacion sobre alternativas de otros autores con las que com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davenetdev/halogen-qwen3.8-flash-next-uncensored
+- Repositorio en Hugging Face: https://huggingface.co/davenetdev/halogen-qwen3.8-flash-next-uncensored
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo original del que es reemplazo directo: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
 - Cuantizaciones GGUF de referencia e imatrix: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

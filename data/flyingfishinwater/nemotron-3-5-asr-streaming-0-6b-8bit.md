@@ -97,7 +97,7 @@ No se dispone de comparaciones de rendimiento numéricas (WER u otras) en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/nemotron-3.5-asr-streaming-0.6b-8bit
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/nemotron-3.5-asr-streaming-0.6b-8bit
 - Modelo base original: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Conversión en bfloat16 de referencia: https://huggingface.co/mlx-community/nemotron-3.5-asr-streaming-0.6b
 - Conversión en 8 bits de referencia: https://huggingface.co/mlx-community/nemotron-3.5-asr-streaming-0.6b-8bit

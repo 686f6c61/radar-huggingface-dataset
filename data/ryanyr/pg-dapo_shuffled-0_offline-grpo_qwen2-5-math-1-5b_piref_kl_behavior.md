@@ -71,7 +71,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior
 - Dataset de evaluación (matheval): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior_matheval
 - Variante sin KL (nokl): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval
 - Otro checkpoint (shuffled-01): https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl

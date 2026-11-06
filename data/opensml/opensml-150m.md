@@ -110,7 +110,7 @@ La comparacion relevante es estructural: OpenSML-150M se situa en el mismo orden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenSML/OpenSML-150M
+- Modelo en Hugging Face: https://huggingface.co/OpenSML/OpenSML-150M
 - Informe tecnico: https://github.com/williamzebrowskI/opensml-150m/blob/main/sml-mlx-v1/docs/TECHNICAL_REPORT.md
 - Resultados y procedencia: TRIAL28_RESULTS.json (en el repositorio del modelo)
 - Tokenizador: tokenizer/tokenizer.json (en el repositorio del modelo)

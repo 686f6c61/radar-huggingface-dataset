@@ -77,8 +77,8 @@ La comparativa se limita a modelos de código abierto con licencia permisiva. Qw
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/seoit/Qwen3.8-27B-Q8_0-MeshLLM-layers
+- Repositorio del modelo en Hugging Face: https://huggingface.co/seoit/Qwen3.8-27B-Q8_0-MeshLLM-layers
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página del modelo en HuggingFace (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
+- Página del modelo en Hugging Face (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Guía de despliegue en vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html

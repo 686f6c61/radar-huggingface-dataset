@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) para clasificación binaria de sentimiento en inglés, publicado por el usuario Iltaf y entrenado sobre un subconjunto de SST-2. El adaptador se monta sobre `distilbert-base-uncased-finetuned-sst-2-english`, un checkpoint de DistilBERT (encoder de 6 capas, aproximadamente 66 M de parámetros) que HuggingFace ya había ajustado previamente sobre la totalidad de SST-2. No es, por tanto, un modelo completo ni un ajuste desde cero, sino un delta de bajo rango sobre un clasificador ya competente.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) para clasificación binaria de sentimiento en inglés, publicado por el usuario Iltaf y entrenado sobre un subconjunto de SST-2. El adaptador se monta sobre `distilbert-base-uncased-finetuned-sst-2-english`, un checkpoint de DistilBERT (encoder de 6 capas, aproximadamente 66 M de parámetros) que Hugging Face ya había ajustado previamente sobre la totalidad de SST-2. No es, por tanto, un modelo completo ni un ajuste desde cero, sino un delta de bajo rango sobre un clasificador ya competente.
 
 El interés del repositorio no reside en su rendimiento, sino en su honestidad metodológica: la propia model card documenta un resultado negativo. El adaptador no mejora al checkpoint congelado; sobre el conjunto de test (72 filas) y sobre la validación completa de SST-2 (872 filas) las predicciones son idénticas, y en el subconjunto de validación de 800 filas empeora 0,50 puntos de accuracy y de macro-F1. La pérdida de entrenamiento baja de 0,0505 a 0,0368 mientras la de validación no mejora, firma típica de sobreajuste leve cuando el modelo base ya está saturado en la tarea.
 
@@ -87,10 +87,10 @@ Conclusión reportada por el autor: el adaptador no mejora al checkpoint base y 
 
 | Modelo | Parámetros | Contexto | SST-2 val (872) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iltaf/sst2-lora-distilbert (este adaptador) | ≈66 M base + ≈0,74 M entrenables (estimado) | 512 tokens | 0,9060 accuracy / 0,9058 F1 | No disponible | HuggingFace, librería `peft` |
-| distilbert-base-uncased-finetuned-sst-2-english (modelo base) | ≈66 M | 512 tokens | 0,9060 accuracy / 0,9058 F1 | Apache-2.0 según el repositorio del modelo base | HuggingFace, `transformers` |
-| distilbert-base-uncased (sin ajustar) | ≈66 M | 512 tokens | No disponible (no tiene cabeza de clasificación de sentimiento) | Apache-2.0 según el repositorio del modelo base | HuggingFace, `transformers` |
-| RoBERTa-base (familia comparable de encoder) | ≈125 M | 512 tokens | No disponible en la información proporcionada | MIT según el repositorio del modelo | HuggingFace, `transformers` |
+| Iltaf/sst2-lora-distilbert (este adaptador) | ≈66 M base + ≈0,74 M entrenables (estimado) | 512 tokens | 0,9060 accuracy / 0,9058 F1 | No disponible | Hugging Face, librería `peft` |
+| distilbert-base-uncased-finetuned-sst-2-english (modelo base) | ≈66 M | 512 tokens | 0,9060 accuracy / 0,9058 F1 | Apache-2.0 según el repositorio del modelo base | Hugging Face, `transformers` |
+| distilbert-base-uncased (sin ajustar) | ≈66 M | 512 tokens | No disponible (no tiene cabeza de clasificación de sentimiento) | Apache-2.0 según el repositorio del modelo base | Hugging Face, `transformers` |
+| RoBERTa-base (familia comparable de encoder) | ≈125 M | 512 tokens | No disponible en la información proporcionada | MIT según el repositorio del modelo | Hugging Face, `transformers` |
 
 La comparación cuantitativa con alternativas no puede completarse: la información proporcionada solo incluye métricas del checkpoint base y del adaptador, medidas con el mismo protocolo. Cualquier cifra de terceros modelos debería verificarse en sus propias model cards.
 
@@ -111,7 +111,7 @@ La comparación cuantitativa con alternativas no puede completarse: la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iltaf/sst2-lora-distilbert
+- Modelo en Hugging Face: https://huggingface.co/Iltaf/sst2-lora-distilbert
 - Modelo base: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - DistilBERT base sin ajustar: https://huggingface.co/distilbert-base-uncased
 - Dataset: https://huggingface.co/datasets/nyu-mll/glue

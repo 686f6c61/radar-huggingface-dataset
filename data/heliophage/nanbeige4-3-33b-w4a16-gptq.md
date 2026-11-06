@@ -94,11 +94,11 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Nanbeige4.3-33B W4A16 GPTQ) | 7.356.038.872 (checkpoint cuantizado) | 65.536 configurado | 24,2 GB | apache-2.0 | HuggingFace, vLLM |
-| Nanbeige4.3-33B BF16 (base) | no disponible | no disponible | 66,3 GB | apache-2.0 | HuggingFace |
-| AtomicChat Nanbeige4.3-33B GGUF Q4_K_M | no disponible | no disponible | 20,1 GB | no disponible | HuggingFace, llama.cpp |
-| AtomicChat Nanbeige4.3-33B GGUF AD-Q4_K_M | no disponible | no disponible | 21,2 GB | no disponible | HuggingFace, llama.cpp |
-| AtomicChat Nanbeige4.3-33B GGUF Q8_0 | no disponible | no disponible | 35,2 GB | no disponible | HuggingFace, llama.cpp |
+| Este modelo (Nanbeige4.3-33B W4A16 GPTQ) | 7.356.038.872 (checkpoint cuantizado) | 65.536 configurado | 24,2 GB | apache-2.0 | Hugging Face, vLLM |
+| Nanbeige4.3-33B BF16 (base) | no disponible | no disponible | 66,3 GB | apache-2.0 | Hugging Face |
+| AtomicChat Nanbeige4.3-33B GGUF Q4_K_M | no disponible | no disponible | 20,1 GB | no disponible | Hugging Face, llama.cpp |
+| AtomicChat Nanbeige4.3-33B GGUF AD-Q4_K_M | no disponible | no disponible | 21,2 GB | no disponible | Hugging Face, llama.cpp |
+| AtomicChat Nanbeige4.3-33B GGUF Q8_0 | no disponible | no disponible | 35,2 GB | no disponible | Hugging Face, llama.cpp |
 
 En fidelidad agentica, este checkpoint (KLD media 0,0225) queda entre el AD-Q4_K_M GGUF (0,0145) y el Q4_K_M GGUF (0,0322), con mejor KLD que el GPTQ uniforme W4A16 (0,0330). En texto neutro, su KLD media (0,1105) es practicamente identica a la del Q4_K_M GGUF (0,1108).
 
@@ -115,7 +115,7 @@ En fidelidad agentica, este checkpoint (KLD media 0,0225) queda entre el AD-Q4_K
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/heliophage/Nanbeige4.3-33B-W4A16-GPTQ
+- Hugging Face del modelo: https://huggingface.co/heliophage/Nanbeige4.3-33B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Variante para una sola GPU de 24 GB: https://huggingface.co/heliophage/Nanbeige4.3-33B-W4A16-GPTQ-24GB
 - GGUFs de referencia: https://huggingface.co/AtomicChat/Nanbeige4.3-33B-GGUF

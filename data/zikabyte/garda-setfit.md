@@ -77,8 +77,8 @@ No hay disponibles otros modelos comparables especializados en detección de gro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zikabyte/garda-setfit
-- Repositorio SetFit (HuggingFace): https://github.com/huggingface/setfit
+- Modelo en Hugging Face: https://huggingface.co/zikabyte/garda-setfit
+- Repositorio SetFit (Hugging Face): https://github.com/huggingface/setfit
 - Blog de SetFit: https://github.com/huggingface/blog/blob/main/setfit.md
 - Corpus PAN-2012 (Sexual Predator Identification): https://pan.webis.de/clef12/pan12-web/author-identification.html
-- Documentación de SetFit en HuggingFace: https://huggingface.co/SetFit
+- Documentación de SetFit en Hugging Face: https://huggingface.co/SetFit

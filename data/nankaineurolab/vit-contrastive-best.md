@@ -26,7 +26,7 @@ Es relevante ahora unicamente como material de partida reproducible para quien q
 | Activacion | ReLU |
 | Normalizacion | InstanceNorm |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ La informacion proporcionada no incluye resultados que permitan una comparacion 
 | Entrenado | no (checkpoint de inicializacion) | si | si | si |
 | Contexto / resolucion | no disponible | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 | Licencia | MIT | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
-| Disponibilidad | HuggingFace (repositorio de codigo) | pesos publicos | pesos publicos | pesos publicos |
+| Disponibilidad | Hugging Face (repositorio de codigo) | pesos publicos | pesos publicos | pesos publicos |
 | Comparabilidad directa | no aplica | no aplica (no comparten presupuesto de entrenamiento) | no aplica | no aplica |
 
 En sintesis, `vit-contrastive-best` no es comparable en rendimiento con CLIP, SigLIP o DINOv2 porque estos ultimos son modelos entrenados a gran escala, mientras que el primero es un esqueleto sin entrenamiento completado. Cualquier comparacion de metricas quedaria invalidada por la falta de datos.
@@ -99,5 +99,5 @@ En sintesis, `vit-contrastive-best` no es comparable en rendimiento con CLIP, Si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nankaineurolab/vit-contrastive-best
+- Repositorio en Hugging Face: https://huggingface.co/nankaineurolab/vit-contrastive-best
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

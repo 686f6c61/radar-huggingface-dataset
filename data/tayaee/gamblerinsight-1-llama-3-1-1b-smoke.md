@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GamblerInsight Smoke (`gamblerinsight-1-llama-3.1-1b-smoke`) es un checkpoint de prueba (smoke test) desarrollado por el usuario de HuggingFace `tayaee`, orientado a razonamiento financiero multi-hop y a la creación de agentes con tool calling. Se trata de un fine-tuning de `unsloth/Llama-3.2-1B-Instruct` (Llama 3.2 1B Instruct, arquitectura transformer decoder-only) entrenado en la plataforma DGX Spark GB10. Su propósito no es producir un modelo útil en producción, sino validar de extremo a extremo el pipeline del proyecto GamblerInsight: trayectorias de tool calling en dos turnos, fusión de adaptadores LoRA en un checkpoint safetensors estándar y despliegue en HuggingFace Hub para servir con vLLM.
+GamblerInsight Smoke (`gamblerinsight-1-llama-3.1-1b-smoke`) es un checkpoint de prueba (smoke test) desarrollado por el usuario de Hugging Face `tayaee`, orientado a razonamiento financiero multi-hop y a la creación de agentes con tool calling. Se trata de un fine-tuning de `unsloth/Llama-3.2-1B-Instruct` (Llama 3.2 1B Instruct, arquitectura transformer decoder-only) entrenado en la plataforma DGX Spark GB10. Su propósito no es producir un modelo útil en producción, sino validar de extremo a extremo el pipeline del proyecto GamblerInsight: trayectorias de tool calling en dos turnos, fusión de adaptadores LoRA en un checkpoint safetensors estándar y despliegue en Hugging Face Hub para servir con vLLM.
 
 El modelo se ha entrenado mediante LoRA en BF16/FP16 (con PEFT) durante solo 10 pasos sobre un dataset mínimo de 16 trayectorias (`minimal_sft_smoke.jsonl`), alcanzando una pérdida final de 1,1425. A pesar de su carácter experimental, es interesante como ejemplo reproducible de cómo estructurar un agente financiero pequeño: el formato de entrenamiento incluye llamadas a herramientas financieras (`lookup_stock_price` y `lookup_technical_indicators`), razonamiento delimitado con etiquetas `<think>...</think>` y salidas de previsión en bloques `<forecast_json>...</forecast_json>` legibles por máquina.
 
@@ -40,7 +40,7 @@ El entrenamiento es deliberadamente minimo: 10 pasos de optimizacion con `learni
 
 ## Casos de uso
 
-- Validacion de pipelines de entrenamiento y despliegue: es su uso previsto; permite verificar que el ciclo LoRA → merge safetensors → subida a HuggingFace Hub → serving con vLLM funciona de extremo a extremo antes de entrenar un modelo definitivo.
+- Validacion de pipelines de entrenamiento y despliegue: es su uso previsto; permite verificar que el ciclo LoRA → merge safetensors → subida a Hugging Face Hub → serving con vLLM funciona de extremo a extremo antes de entrenar un modelo definitivo.
 - Prototipado de agentes financieros con tool calling: sirve como plantilla ligera para probar la orquestacion de llamadas a `lookup_stock_price` y `lookup_technical_indicators` en un bucle de agente con clientes OpenAI-compatibles.
 - Pruebas de integracion de vLLM: al publicarse con soporte de `--enable-auto-tool-choice --tool-call-parser hermes`, es util para verificar configuraciones de serving con tool calling automatico en un modelo de solo ~2,5 GB.
 - Desarrollo de parsers de salida estructurada: sus bloques `<think>` y `<forecast_json>` son utiles para probar extractores y validadores de JSON en flujos de razonamiento con prevision.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 | Tool calling | Si (hermes, 2 herramientas financieras) | Si (generico) | no disponible |
 | Entrenamiento financiero | Smoke test (16 trayectorias, 10 pasos) | Generalista | Datasets financieros reales |
 | Licencia | Apache-2.0 | Llama 3.2 Community License | Variable segun repositorio |
-| Disponibilidad | HuggingFace Hub (safetensors) | HuggingFace Hub | HuggingFace Hub / GitHub |
+| Disponibilidad | Hugging Face Hub (safetensors) | Hugging Face Hub | Hugging Face Hub / GitHub |
 
 Cabe destacar que la base `unsloth/Llama-3.2-1B-Instruct` es un modelo mucho mas capaz en tareas generales, mientras que este checkpoint solo aporta valor en el formato de agente financiero para el que fue entrenado, y de forma limitada por lo minimo del entrenamiento.
 
@@ -86,6 +86,6 @@ Cabe destacar que la base `unsloth/Llama-3.2-1B-Instruct` es un modelo mucho mas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/gamblerinsight-1-llama-3.1-1b-smoke
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/gamblerinsight-1-llama-3.1-1b-smoke
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Paper, blog o repositorio del proyecto GamblerInsight: no disponible (no constan enlaces adicionales en la informacion proporcionada)

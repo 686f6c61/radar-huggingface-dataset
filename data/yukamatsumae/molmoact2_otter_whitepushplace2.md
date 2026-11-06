@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yukamatsumae/molmoact2_otter_whitepushplace2` es un policy de control robótico entrenado con la librería LeRobot de HuggingFace, especializado en la tarea de empujar y colocar objetos blancos (WhitePushPlace). Se basa en MolmoAct2, un modelo de razonamiento de acción desarrollado por el Allen Institute for AI (AI2), que combina un backbone de visión-lenguaje (VLM) con capacidades de razonamiento espacial y encarnado. Este checkpoint concreto, publicado por el usuario yukamatsumae, es un fine-tuning del modelo base para una tarea específica de manipulación, utilizando el tipo de policy ACT (Action Chunking with Transformers).
+El modelo `yukamatsumae/molmoact2_otter_whitepushplace2` es un policy de control robótico entrenado con la librería LeRobot de Hugging Face, especializado en la tarea de empujar y colocar objetos blancos (WhitePushPlace). Se basa en MolmoAct2, un modelo de razonamiento de acción desarrollado por el Allen Institute for AI (AI2), que combina un backbone de visión-lenguaje (VLM) con capacidades de razonamiento espacial y encarnado. Este checkpoint concreto, publicado por el usuario yukamatsumae, es un fine-tuning del modelo base para una tarea específica de manipulación, utilizando el tipo de policy ACT (Action Chunking with Transformers).
 
 El modelo tiene 5.442.196.272 parámetros (aproximadamente 5,44 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. Su relevancia radica en que demuestra la aplicación práctica de modelos de razonamiento de acción de código abierto en robótica, siguiendo la línea de investigación de MolmoAct2 presentada en el artículo "MolmoAct2: Action Reasoning Models for Real-world Deployment". Al estar integrado en el ecosistema LeRobot, facilita la reproducción, evaluación y despliegue en entornos robóticos reales.
 
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| molmoact2_otter_whitepushplace2 (este) | 5,44B | no disponible | Empujar y colocar objetos blancos | Apache-2.0 | HuggingFace |
-| molmoact2_otter_yellowpushplace_lora | no disponible | no disponible | Empujar y colocar objetos amarillos (LoRA) | Apache-2.0 | HuggingFace |
-| molmoact2_otter_graspandpush_20260805 | no disponible | no disponible | Agarrar y empujar | Apache-2.0 | HuggingFace |
+| molmoact2_otter_whitepushplace2 (este) | 5,44B | no disponible | Empujar y colocar objetos blancos | Apache-2.0 | Hugging Face |
+| molmoact2_otter_yellowpushplace_lora | no disponible | no disponible | Empujar y colocar objetos amarillos (LoRA) | Apache-2.0 | Hugging Face |
+| molmoact2_otter_graspandpush_20260805 | no disponible | no disponible | Agarrar y empujar | Apache-2.0 | Hugging Face |
 | MolmoAct2 (base) | no disponible | no disponible | Razonamiento de accion general | Apache-2.0 | GitHub/HuggingFace |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a la disponibilidad y la tarea especifica.
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yukamatsumae/molmoact2_otter_whitepushplace2
+- Modelo en Hugging Face: https://huggingface.co/yukamatsumae/molmoact2_otter_whitepushplace2
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Articulo de investigacion (arXiv): https://arxiv.org/abs/2605.02881
 - Repositorio de MolmoAct (predecesor): https://github.com/allenai/MolmoAct

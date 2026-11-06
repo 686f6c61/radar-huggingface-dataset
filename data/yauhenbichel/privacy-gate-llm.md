@@ -2,7 +2,7 @@
 
 ## Resumen
 
-privacy-gate-llm es un clasificador binario de texto cuyo único objetivo es responder a una pregunta: "¿este texto debe quedarse en esta máquina?". No es un modelo generativo ni un LLM pese a su nombre: se trata de una cabeza de regresión logística de 1.024 pesos más un sesgo, entrenada sobre embeddings congelados del encoder multilingüe BAAI/bge-m3. Lo desarrolla el usuario YauhenBichel y se publica con licencia Apache 2.0 en HuggingFace.
+privacy-gate-llm es un clasificador binario de texto cuyo único objetivo es responder a una pregunta: "¿este texto debe quedarse en esta máquina?". No es un modelo generativo ni un LLM pese a su nombre: se trata de una cabeza de regresión logística de 1.024 pesos más un sesgo, entrenada sobre embeddings congelados del encoder multilingüe BAAI/bge-m3. Lo desarrolla el usuario YauhenBichel y se publica con licencia Apache 2.0 en Hugging Face.
 
 El problema que aborda es concreto y medible: los conjuntos de reglas basados en expresiones regulares solo detectan secretos, credenciales y datos personales cuando aparecen en un formato predecible (`sk-ant-…`, `patient_id: 40219`, una fecha concreta). Cuando esa misma información se escribe como prosa corriente —una frase clínica, una contraseña incrustada en una descripción de incidencia— las reglas fallan. Según la model card, el ruleset de referencia solo captura 10 de 72 ejemplos sensibles (13,9%), mientras que esta cabeza alcanza el 100% de retención con un 16,4% de fricción sobre textos ordinarios y un AUC de 0,9924 en validación cruzada de 5 particiones.
 
@@ -79,7 +79,7 @@ Detalles adicionales aportados:
 
 | Sistema | Tipo | AUC | Retención | Fricción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bge-m3 + cabeza logística (este modelo) | Clasificador lineal sobre embeddings | 0,9924 | 100% | 16,4% | Apache 2.0 | HuggingFace y GitHub del autor |
+| bge-m3 + cabeza logística (este modelo) | Clasificador lineal sobre embeddings | 0,9924 | 100% | 16,4% | Apache 2.0 | Hugging Face y GitHub del autor |
 | Ruleset de expresiones regulares | Reglas deterministas | No disponible | 13,9% | 5,5% | Depende del conjunto de reglas | Integrado en el proyecto de referencia |
 | Unigramas hasheados | Baseline estadístico sin modelo | 0,7391 | 98% | 85,5% | No disponible | No distribuido como modelo |
 | Qwen3.5-0.8B con prompting | LLM generativo pequeño | 0,4609 | En el azar | No disponible | No indicada en la información proporcionada | Modelo público de terceros |
@@ -95,12 +95,12 @@ No se dispone de datos comparativos con otras bibliotecas de detección de PII (
 - Fricción del 16,4% sobre textos ordinarios: en la práctica, aproximadamente uno de cada seis textos benignos se retiene. El propio autor advierte que una barrera que salta con trabajo normal acaba desactivándose.
 - La cabeza solo puede añadir retenciones, nunca levantar un bloqueo previo. Ese diseño limita el daño de un falso negativo, pero implica que el modelo no sustituye a las comprobaciones deterministas.
 - La métrica principal (AUC 0,9924) no está verificada de forma independiente y aparece marcada como `verified: false` en el model-index.
-- Ausencia total de validación por la comunidad en el momento de redactar esta ficha: 0 descargas y 0 "likes" en HuggingFace.
+- Ausencia total de validación por la comunidad en el momento de redactar esta ficha: 0 descargas y 0 "likes" en Hugging Face.
 - Licencia Apache 2.0: permite uso comercial y modificación, con las obligaciones habituales de atribución y conservación del aviso de licencia. Las condiciones del encoder BAAI/bge-m3 deben verificarse por separado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YauhenBichel/privacy-gate-llm
+- Modelo en Hugging Face: https://huggingface.co/YauhenBichel/privacy-gate-llm
 - Código, datos y diario del proyecto: https://github.com/MoleCare/privacy-gate-llm
 - Demo (Space): https://huggingface.co/spaces/YauhenBichel/privacy-gate-llm-demo
 - Modelo base: https://huggingface.co/BAAI/bge-m3

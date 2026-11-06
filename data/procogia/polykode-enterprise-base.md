@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informaci√≥n disponible. La √
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProCogia/PolyKode-Enterprise-Base
+- Hugging Face: https://huggingface.co/ProCogia/PolyKode-Enterprise-Base
 - Modelo original (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Licencia: https://huggingface.co/ProCogia/PolyKode-Enterprise-Base/blob/main/LICENSE
 - Sitio web de ProCogia: https://procogia.com

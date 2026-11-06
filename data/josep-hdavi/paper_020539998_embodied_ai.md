@@ -66,7 +66,7 @@ No disponible. No existen modelos de IA comparables en este repositorio, ya que 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Josep-hdavi/paper_020539998_embodied_ai
+- Repositorio de Hugging Face: https://huggingface.co/Josep-hdavi/paper_020539998_embodied_ai
 - Referencia relacionada (revision de IA encarnada): https://arxiv.org/abs/2505.14235
 - Referencia relacionada (PDF): https://arxiv.org/pdf/2505.14235
 - Agregador de papers sobre IA encarnada: https://luohongkun.top/Embodied-AI-Daily/

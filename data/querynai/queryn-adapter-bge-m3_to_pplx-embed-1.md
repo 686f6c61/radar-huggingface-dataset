@@ -78,8 +78,8 @@ No se dispone de datos de otros adaptadores de la misma colección para comparar
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_pplx-embed-1)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_pplx-embed-1)
 - [Colección de adaptadores de Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Documentación de BGE-M3](https://bge-model.com/bge/bge_m3.html)
-- [BGE-M3 en HuggingFace](https://huggingface.co/BAAI/bge-m3)
+- [BGE-M3 en Hugging Face](https://huggingface.co/BAAI/bge-m3)
 - [Repositorio de BGE-M3 en GitHub](https://github.com/inferless/Bge-m3)

@@ -88,8 +88,8 @@ El modelo `subTB-ER-v2` no tiene informacion publica para comparar su rendimient
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/lococaeco/subTB-ER-v2](https://huggingface.co/lococaeco/subTB-ER-v2)
-- Perfil del autor en HuggingFace: [https://huggingface.co/lococaeco](https://huggingface.co/lococaeco)
+- Hugging Face: [https://huggingface.co/lococaeco/subTB-ER-v2](https://huggingface.co/lococaeco/subTB-ER-v2)
+- Perfil del autor en Hugging Face: [https://huggingface.co/lococaeco](https://huggingface.co/lococaeco)
 - GitHub del autor: [https://github.com/lococaeco](https://github.com/lococaeco)
 - Repositorio GitHub (posiblemente relacionado): [https://github.com/lococaeco/lococaeco](https://github.com/lococaeco/lococaeco)
 - Perfil en ClawHub: [https://clawhub.ai/lococaeco](https://clawhub.ai/lococaeco)

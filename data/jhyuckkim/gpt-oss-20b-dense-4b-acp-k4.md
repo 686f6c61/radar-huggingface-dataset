@@ -98,7 +98,7 @@ En comparación con modelos densos preentrenados del mismo tamaño (p. ej., Qwen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-ACP-K4
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-ACP-K4
 - Artículo (arXiv): https://arxiv.org/abs/2605.28207
 - Código del proyecto: https://github.com/krafton-ai/moe-to-dense
 - Modelo maestro GPT-OSS-20B: https://huggingface.co/openai/gpt-oss-20b

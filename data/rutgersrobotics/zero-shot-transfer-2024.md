@@ -6,7 +6,7 @@
 
 El repositorio no contiene un checkpoint entrenado, código de inferencia ni resultados de benchmarks. La model card lo declara explícitamente: es material exploratorio que no reclama mejoras de rendimiento, ablaciones completadas ni código liberado. Las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-Los metadatos de HuggingFace incluyen la etiqueta `safetensors` y un recuento de 33.088 parámetros totales, pero el tamaño del repositorio es de 0.0 GB y la model card solo lista dos ficheros Markdown (`reading.md` y `README.md`). En la práctica, el repositorio debe tratarse como documentación de investigación, no como un modelo desplegable.
+Los metadatos de Hugging Face incluyen la etiqueta `safetensors` y un recuento de 33.088 parámetros totales, pero el tamaño del repositorio es de 0.0 GB y la model card solo lista dos ficheros Markdown (`reading.md` y `README.md`). En la práctica, el repositorio debe tratarse como documentación de investigación, no como un modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - No se especifican requisitos de VRAM, GPU recomendadas ni compatibilidad con GPU de consumo.
 - No se documentan opciones de despliegue (vLLM, llama.cpp, Ollama, TGI u otras), ya que el contenido son ficheros Markdown.
 - No se dispone de datos de latencia ni throughput.
-- Para consultar el repositorio basta con acceso a HuggingFace y un visor de Markdown; el tamaño declarado del repo es de 0.0 GB.
+- Para consultar el repositorio basta con acceso a Hugging Face y un visor de Markdown; el tamaño declarado del repo es de 0.0 GB.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No disponible. Este repositorio es documentación de investigación y no un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rutgersrobotics/zero-shot-transfer-2024
+- Repositorio en Hugging Face: https://huggingface.co/rutgersrobotics/zero-shot-transfer-2024
 - Nota principal del repositorio: `reading.md` (referenciado en la model card)
 - Documentación del repositorio: `README.md` (referenciado en la model card)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

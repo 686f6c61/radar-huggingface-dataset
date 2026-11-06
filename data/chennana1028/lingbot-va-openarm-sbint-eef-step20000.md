@@ -62,7 +62,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - El modelo tiene aproximadamente 5,09 mil millones de parámetros en bf16, lo que implica un peso de unos 10,2 GB (coincide con el tamaño del repositorio). Para inferencia se necesita al menos una GPU con 12 GB de VRAM solo para los pesos, aunque los modelos de difusión requieren memoria adicional para las iteraciones de denoising.
 - Se recomienda una GPU con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A5000) para ejecutar el modelo con margen suficiente. Para despliegue en producción, una A100 de 40 GB o H100 sería adecuada.
 - No se proporcionan datos de latencia ni throughput. Dado el tamaño y la naturaleza iterativa de la difusión, se espera que la inferencia sea más lenta que un modelo de una sola pasada, pero no hay cifras concretas.
-- Opciones de despliegue: al ser un modelo diffusers, se puede cargar con la librería `diffusers` de HuggingFace. Para entornos de robótica en tiempo real, podría exportarse a ONNX o TensorRT, aunque no se documenta compatibilidad con vLLM, llama.cpp u Ollama (orientados a modelos de lenguaje, no a difusión).
+- Opciones de despliegue: al ser un modelo diffusers, se puede cargar con la librería `diffusers` de Hugging Face. Para entornos de robótica en tiempo real, podría exportarse a ONNX o TensorRT, aunque no se documenta compatibilidad con vLLM, llama.cpp u Ollama (orientados a modelos de lenguaje, no a difusión).
 
 ## Comparativa con modelos similares
 
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables directamente en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chennana1028/lingbot-va-openarm-sbint-eef-step20000
+- Modelo en Hugging Face: https://huggingface.co/chennana1028/lingbot-va-openarm-sbint-eef-step20000
 - Repositorio de entrenamiento y despliegue: https://github.com/zhujohn9604/lingbot-va-train
 - Contraparte en espacio de articulaciones: https://huggingface.co/chennana1028/lingbot-va-openarm-sbint-step20000

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Legend_ocr_llama3.2_11b_vision_lora es un adaptador LoRA publicado por el usuario keystats sobre el modelo multimodal meta-llama/Llama-3.2-11B-Vision-Instruct. Se distribuye a través de HuggingFace con la librería PEFT, en formato safetensors y con un tamano de repositorio de aproximadamente 0,5 GB, lo que corresponde únicamente a los pesos del adaptador y no al modelo base completo. El pipeline declarado es text-generation y la etiqueta principal es lora.
+Legend_ocr_llama3.2_11b_vision_lora es un adaptador LoRA publicado por el usuario keystats sobre el modelo multimodal meta-llama/Llama-3.2-11B-Vision-Instruct. Se distribuye a través de Hugging Face con la librería PEFT, en formato safetensors y con un tamano de repositorio de aproximadamente 0,5 GB, lo que corresponde únicamente a los pesos del adaptador y no al modelo base completo. El pipeline declarado es text-generation y la etiqueta principal es lora.
 
 El nombre del repositorio sugiere un ajuste fino orientado a OCR (reconocimiento óptico de caracteres) sobre un modelo visión-lenguaje, pero la model card publicada es una plantilla sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como "More Information Needed". No hay ninguna descripción funcional del adaptador ni ejemplos de uso.
 
@@ -69,10 +69,10 @@ La model card no incluye sección de evaluación cumplimentada y no existe ning�
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Legend_ocr_llama3.2_11b_vision_lora (este modelo) | Adaptador LoRA sobre ~11 000 M | No disponible (base: 128 000 tokens) | Adaptador PEFT sobre VLM denso | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-11B-Vision-Instruct | ~11 000 M | 128 000 tokens | VLM denso con atención cruzada | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| keystats/Legend_ocr | No disponible (base Qwen2.5-VL) | No disponible | Modelo imagen-texto-a-texto (transformers, safetensors) | No disponible | HuggingFace, 0 likes |
-| keystats/Legend_ocr_v3 | ~8 000 M según Featherless | No disponible | Modelo imagen-texto-a-texto (qwen3_vl) | No disponible | HuggingFace, 0 likes |
+| Legend_ocr_llama3.2_11b_vision_lora (este modelo) | Adaptador LoRA sobre ~11 000 M | No disponible (base: 128 000 tokens) | Adaptador PEFT sobre VLM denso | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-11B-Vision-Instruct | ~11 000 M | 128 000 tokens | VLM denso con atención cruzada | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| keystats/Legend_ocr | No disponible (base Qwen2.5-VL) | No disponible | Modelo imagen-texto-a-texto (transformers, safetensors) | No disponible | Hugging Face, 0 likes |
+| keystats/Legend_ocr_v3 | ~8 000 M según Featherless | No disponible | Modelo imagen-texto-a-texto (qwen3_vl) | No disponible | Hugging Face, 0 likes |
 
 No se dispone de datos de rendimiento de ninguno de los modelos de la familia Legend_ocr, por lo que la comparativa se limita a parámetros, contexto, tipo y disponibilidad. El adaptador no aporta cifras propias de licencia, idiomas ni evaluación.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos de la familia Le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Legend_ocr_llama3.2_11b_vision_lora
+- Modelo en Hugging Face: https://huggingface.co/keystats/Legend_ocr_llama3.2_11b_vision_lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct
 - Otros repositorios del mismo autor: https://huggingface.co/keystats/Legend_ocr y https://huggingface.co/keystats/Legend_ocr_v3
 - Ficha de Legend_ocr_v3 en Featherless: https://featherless.ai/models/keystats/Legend_ocr_v3

@@ -100,7 +100,7 @@ No se han identificado en la informacion proporcionada modelos comparables de te
 
 ## Enlaces
 
-- Repositorio HuggingFace (i1-GGUF): https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v2-i1-GGUF
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v2-i1-GGUF
 - Repositorio estatico GGUF: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v2-GGUF
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-Instruct-v2
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#AfriqueQwen3.5-4B-Instruct-v2-i1-GGUF

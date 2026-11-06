@@ -85,10 +85,10 @@ El propio autor publica una familia de 13 variantes convertidas a Keras 3 bajo z
 
 | Modelo | Backbone | Embedding | Pooling y receta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeromodels/paraphrase-albert-small-v2 | ALBERT | 768 | mean, sin normalizar, coseno | apache-2.0 | HuggingFace (zeromodels) |
-| zeromodels/all-MiniLM-L6-v2 | BERT | no disponible en esta ficha | mean + normalize | no disponible en esta ficha | HuggingFace (zeromodels) |
-| zeromodels/all-mpnet-base-v2 | MPNet | no disponible en esta ficha | mean + normalize | no disponible en esta ficha | HuggingFace (zeromodels) |
-| zeromodels/paraphrase-multilingual-MiniLM-L12-v2 | BERT | no disponible en esta ficha | mean | no disponible en esta ficha | HuggingFace (zeromodels) |
+| zeromodels/paraphrase-albert-small-v2 | ALBERT | 768 | mean, sin normalizar, coseno | apache-2.0 | Hugging Face (zeromodels) |
+| zeromodels/all-MiniLM-L6-v2 | BERT | no disponible en esta ficha | mean + normalize | no disponible en esta ficha | Hugging Face (zeromodels) |
+| zeromodels/all-mpnet-base-v2 | MPNet | no disponible en esta ficha | mean + normalize | no disponible en esta ficha | Hugging Face (zeromodels) |
+| zeromodels/paraphrase-multilingual-MiniLM-L12-v2 | BERT | no disponible en esta ficha | mean | no disponible en esta ficha | Hugging Face (zeromodels) |
 
 La diferencia funcional mas relevante frente a all-MiniLM-L6-v2 y all-mpnet-base-v2 es la receta: esta variante usa pooling mean sin normalizacion y scoring coseno, mientras que las otras dos aplican mean mas normalizacion. No se dispone de cifras de benchmarks comparativas entre estas variantes en la informacion proporcionada, por lo que la eleccion entre ellas no puede justificarse con datos de rendimiento a partir de esta ficha.
 
@@ -107,7 +107,7 @@ La diferencia funcional mas relevante frente a all-MiniLM-L6-v2 y all-mpnet-base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/paraphrase-albert-small-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/paraphrase-albert-small-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-albert-small-v2
 - Revision original fijada: https://huggingface.co/sentence-transformers/paraphrase-albert-small-v2/tree/9d490b476eb5291c7885bb6d4961318740493cf2
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels

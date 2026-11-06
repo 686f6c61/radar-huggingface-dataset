@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NovaReasoner-BestCheckpoint es un repositorio publicado por el usuario dusersad12 en HuggingFace bajo licencia Apache 2.0. La informacion disponible es internamente contradictoria: los metadatos del repositorio lo etiquetan como un modelo de tipo `bert` con pipeline `feature-extraction`, mientras que la model card describe "NovaReasoner" como un sistema generativo de gran escala orientado a razonamiento multi-paso, codigo y grounding factico, con soporte de system prompt, tool calling y plantillas para busqueda web y subida de ficheros.
+NovaReasoner-BestCheckpoint es un repositorio publicado por el usuario dusersad12 en Hugging Face bajo licencia Apache 2.0. La informacion disponible es internamente contradictoria: los metadatos del repositorio lo etiquetan como un modelo de tipo `bert` con pipeline `feature-extraction`, mientras que la model card describe "NovaReasoner" como un sistema generativo de gran escala orientado a razonamiento multi-paso, codigo y grounding factico, con soporte de system prompt, tool calling y plantillas para busqueda web y subida de ficheros.
 
 La model card afirma mejoras sobre una generacion anterior en una suite interna de benchmarks, con un salto declarado en AIME 2025 de 68% a 84,5% en pass@1 y un aumento de la longitud mediana de cadena de pensamiento de 11K a 21K tokens por problema. Tambien menciona una variante denominada NovaReasoner-Small que reutiliza el tokenizer del modelo base. Ninguno de estos datos viene acompanado de cifras de parametros, longitud de contexto, composicion del dataset ni enlaces verificables.
 
@@ -29,7 +29,7 @@ El repositorio presenta 0 descargas, 0 likes y un tamano declarado de 0.0 GB, y 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir la arquitectura con rigor. El tag `bert` de HuggingFace apunta a un encoder tipo BERT orientado a extraccion de caracteristicas, mientras que la model card describe un modelo generativo con razonamiento extendido, cadena de pensamiento de decenas de miles de tokens, soporte de system prompt y de tool/function calling. Ambas descripciones son incompatibles entre si y ninguna incluye detalles de capas, dimension oculta, mecanismo de atencion ni estrategia de posicionamiento.
+La informacion disponible no permite describir la arquitectura con rigor. El tag `bert` de Hugging Face apunta a un encoder tipo BERT orientado a extraccion de caracteristicas, mientras que la model card describe un modelo generativo con razonamiento extendido, cadena de pensamiento de decenas de miles de tokens, soporte de system prompt y de tool/function calling. Ambas descripciones son incompatibles entre si y ninguna incluye detalles de capas, dimension oculta, mecanismo de atencion ni estrategia de posicionamiento.
 
 Respecto al entrenamiento, la model card menciona de forma cualitativa un "corpus de pre-entrenamiento mas grande" y un "pipeline de post-entrenamiento refinado" respecto a la generacion anterior, ademas de "guardrails" reforzados contra alucinaciones. No se declara el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas concretas de alineamiento como RLHF, DPO o RL con verificadores. Los unicos datos cuantitativos son internos y no verificables: el incremento de pass@1 en AIME 2025 y el aumento de la longitud de cadena de pensamiento (11K a 21K tokens). Se menciona tambien una variante Small que comparte arquitectura con su modelo base y reutiliza el tokenizer.
 
@@ -114,7 +114,7 @@ No disponible. No es posible establecer una comparativa fiable por tres motivos:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/NovaReasoner-BestCheckpoint
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/NovaReasoner-BestCheckpoint
 - Repositorio relacionado del mismo autor (sin relacion tecnica confirmada): https://huggingface.co/dusersad12/BestCheckpoint-Demo
 - Repositorio fuente para servir el modelo localmente: no disponible, la model card lo menciona sin enlazarlo.
 - Web de chat y API oficiales de NovaReasoner: no disponible, la model card los menciona sin URL.

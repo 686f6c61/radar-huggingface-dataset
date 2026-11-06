@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2` es un checkpoint publicado en HuggingFace cuyo identificador sugiere un ajuste fino del modelo base Qwen3-8B (aproximadamente 8 000 millones de parametros) orientado a tareas de SQL y generacion de codigo. El autor es el usuario `stefanocarrera`. La model card del repositorio es la plantilla generada automaticamente por HuggingFace y no aporta informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2` es un checkpoint publicado en Hugging Face cuyo identificador sugiere un ajuste fino del modelo base Qwen3-8B (aproximadamente 8 000 millones de parametros) orientado a tareas de SQL y generacion de codigo. El autor es el usuario `stefanocarrera`. La model card del repositorio es la plantilla generada automaticamente por Hugging Face y no aporta informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`.
 
-El repositorio ocupa solo 0,2 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 8 000 millones de parametros en precision bf16 (unos 16 GB). Esto apunta a que el contenido son adaptadores (LoRA/QLoRA) o pesos parciales, algo coherente con la etiqueta `unsloth` que aparece en los tags y con el flujo habitual de fine-tuning eficiente de esa libreria. La etiqueta `endpoints_compatible` indica que el artefacto esta preparado para desplegarse mediante HuggingFace Inference Endpoints.
+El repositorio ocupa solo 0,2 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 8 000 millones de parametros en precision bf16 (unos 16 GB). Esto apunta a que el contenido son adaptadores (LoRA/QLoRA) o pesos parciales, algo coherente con la etiqueta `unsloth` que aparece en los tags y con el flujo habitual de fine-tuning eficiente de esa libreria. La etiqueta `endpoints_compatible` indica que el artefacto esta preparado para desplegarse mediante Hugging Face Inference Endpoints.
 
 La relevancia de este checkpoint es limitada tal como esta publicado: tiene cero descargas y cero "likes", carece de documentacion utilizable y no se acompania de datos de evaluacion. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a parques tematicos de Orlando y son ruido sin relacion). Cualquier uso en produccion exigiria contactar con el autor para obtener informacion sobre datos de entrenamiento, licencia y procedencia del modelo base.
 
@@ -31,7 +31,7 @@ No hay informacion verificable sobre la arquitectura ni sobre el procedimiento d
 
 El sufijo del identificador (`M_Qwen3-8B_t1.0_g4_run2`) sigue un patron habitual en experimentos de ajuste: probablemente identifica el modelo base (`Qwen3-8B`), un parametro de temperatura (`t1.0`), un identificador de configuracion o de grupo (`g4`) y el numero de ejecucion (`run2`). Se trata de una interpretacion del nombre, no de un dato confirmado por el autor. El prefijo `sqlautophagycode` sugiere un dataset de instrucciones centrado en SQL, generacion de codigo y posiblemente variantes de "autofagia" de datos (auto-generacion y filtrado de ejemplos), pero tampoco hay documentacion que lo confirme.
 
-La referencia `arxiv:1910.09700` incluida en los tags corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla de model card de HuggingFace para el calculo de emisiones. No es una referencia al modelo ni a su entrenamiento.
+La referencia `arxiv:1910.09700` incluida en los tags corresponde al articulo "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla de model card de Hugging Face para el calculo de emisiones. No es una referencia al modelo ni a su entrenamiento.
 
 ## Capacidades
 
@@ -84,16 +84,16 @@ La comparativa se establece frente a modelos densos de tamano similar. Las cifra
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| sqlautophagycode_M_Qwen3-8B (este) | no disponible (identificador sugiere 8B) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen3-8B | 8 000 millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente usado | Publicado por el autor del modelo base |
-| Llama 3.1 8B Instruct | 8 000 millones | 128 000 tokens | Licencia comunitaria de Meta | HuggingFace | Publicado por Meta |
-| Mistral 7B Instruct v0.3 | 7 200 millones | 32 768 tokens | Apache 2.0 | HuggingFace | Publicado por Mistral AI |
+| sqlautophagycode_M_Qwen3-8B (este) | no disponible (identificador sugiere 8B) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen3-8B | 8 000 millones | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente usado | Publicado por el autor del modelo base |
+| Llama 3.1 8B Instruct | 8 000 millones | 128 000 tokens | Licencia comunitaria de Meta | Hugging Face | Publicado por Meta |
+| Mistral 7B Instruct v0.3 | 7 200 millones | 32 768 tokens | Apache 2.0 | Hugging Face | Publicado por Mistral AI |
 
 No se dispone de informacion suficiente para comparar el rendimiento de este checkpoint con ninguna alternativa, ni para confirmar que herede las caracteristicas del modelo base que sugiere su nombre.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, con todos los campos sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, con todos los campos sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada: al no especificarse licencia, no existe autorizacion explicita de uso comercial. En la practica, esto impide su adopcion en produccion sin aclaracion previa por parte del autor.
 - Riesgo de alucinacion: no cuantificado. Como cualquier modelo de lenguaje, puede generar consultas SQL sintacticamente validas pero semanticamente incorrectas, con consecuencias potencialmente graves si se ejecutan sobre bases de datos reales (borrados o modificaciones no intencionadas).
 - Riesgo de inyeccion de prompts en entornos de agentes: si el modelo se conecta a motores de bases de datos, debe aplicarse el principio de minimo privilegio, uso de solo lectura y validacion de todas las consultas generadas.
@@ -106,7 +106,7 @@ No se dispone de informacion suficiente para comparar el rendimiento de este che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g4_run2
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Repositorio del modelo base Qwen3 (referencia del identificador, no confirmada por el autor): https://huggingface.co/Qwen

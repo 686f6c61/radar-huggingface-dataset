@@ -80,10 +80,10 @@ La evolución del WER durante las primeras 10 épocas del entrenamiento es la si
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dianavdavidson/indic_whisper_hi_multi_gpu_iv_hindi_only_62426... (este modelo) | 763.857.920 | 30 s | Hindi (inferido) | MIT | HuggingFace |
-| openai/whisper-medium | 769.000.000 (aprox.) | 30 s | Multilingüe | MIT | HuggingFace |
-| parthiv11/indic_whisper_hi_multi_gpu | no disponible | no disponible | Hindi (inferido) | no disponible | HuggingFace |
-| dianavdavidson/whisper-small_iv_hindi_only_62092... | 244.000.000 (aprox., Whisper small) | 30 s | Hindi (inferido) | MIT | HuggingFace |
+| dianavdavidson/indic_whisper_hi_multi_gpu_iv_hindi_only_62426... (este modelo) | 763.857.920 | 30 s | Hindi (inferido) | MIT | Hugging Face |
+| openai/whisper-medium | 769.000.000 (aprox.) | 30 s | Multilingüe | MIT | Hugging Face |
+| parthiv11/indic_whisper_hi_multi_gpu | no disponible | no disponible | Hindi (inferido) | no disponible | Hugging Face |
+| dianavdavidson/whisper-small_iv_hindi_only_62092... | 244.000.000 (aprox., Whisper small) | 30 s | Hindi (inferido) | MIT | Hugging Face |
 
 No se dispone de resultados de WER comparables para los modelos alternativos en la información disponible.
 
@@ -100,6 +100,6 @@ No se dispone de resultados de WER comparables para los modelos alternativos en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_iv_hindi_only_62426_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT
+- Hugging Face: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_iv_hindi_only_62426_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT
 - Modelo base: https://huggingface.co/parthiv11/indic_whisper_hi_multi_gpu
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

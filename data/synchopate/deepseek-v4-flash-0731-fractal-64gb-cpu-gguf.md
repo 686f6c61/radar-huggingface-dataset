@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de calidad ni de otras alternativas compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF
 - Repositorio del motor y kernels: https://github.com/synchopate/llama-modchip
 - Script de transcodificación: https://github.com/synchopate/llama-modchip/blob/main/scripts/transcode_dsv4.c
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

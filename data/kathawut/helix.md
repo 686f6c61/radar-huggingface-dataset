@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kathawut/Helix
+- Hugging Face: https://huggingface.co/kathawut/Helix
 - Sitio web del autor (Kathawut): https://www.kathawut.com/
 - Repositorio GitHub (Kathawut-AI): https://github.com/Devktw/Kathawut-AI

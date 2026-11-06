@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arianaazarbal/ct-inkling-oai-gen-mid-g0-b3` | no disponible (LoRA r=64 sobre Inkling-Small) | 8192 tokens en entrenamiento | sin benchmarks publicados | no disponible | HuggingFace; 0 descargas, 0 likes |
-| `thinkingmachines/Inkling-Small` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `arianaazarbal/ct-inkling-oai-gen-mid-g0-b3` | no disponible (LoRA r=64 sobre Inkling-Small) | 8192 tokens en entrenamiento | sin benchmarks publicados | no disponible | Hugging Face; 0 descargas, 0 likes |
+| `thinkingmachines/Inkling-Small` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros adaptadores de constitutional training de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre alternativas equivalentes (adaptadores LoRA de entrenamiento constitucional iterado) que permitan una comparación cuantitativa fiable.
@@ -87,7 +87,7 @@ No se dispone de información sobre alternativas equivalentes (adaptadores LoRA 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b3
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Ruta original en Tinker (referenciada en la model card): `tinker://c02fbc64-72ba-5c08-913e-a1e51c15eab2:train:0/sampler_weights/inkoaig0_inkoai_g0_b3_s1_final`
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: todos los resultados correspondían a páginas de soporte de Google Business Profile sobre gestión de reseñas y no guardan relación con este adaptador. No se han encontrado papers, blogs, repositorios ni demos adicionales.

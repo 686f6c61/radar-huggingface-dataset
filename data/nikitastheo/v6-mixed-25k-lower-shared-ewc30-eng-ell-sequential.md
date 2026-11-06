@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en HuggingFace. Cuenta con 123.886.080 parametros totales (aproximadamente 124 millones), lo que lo situa en la categoria de modelos pequenos, comparables a GPT-2 small o OPT-125M. Esta disenado para generacion de texto y es compatible con la libreria `transformers` y con `text-generation-inference`.
+El modelo `nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en Hugging Face. Cuenta con 123.886.080 parametros totales (aproximadamente 124 millones), lo que lo situa en la categoria de modelos pequenos, comparables a GPT-2 small o OPT-125M. Esta disenado para generacion de texto y es compatible con la libreria `transformers` y con `text-generation-inference`.
 
 El problema que aborda es el entrenamiento secuencial multilingue: el propio identificador del modelo sugiere una secuencia de entrenamiento primero en ingles y despues en griego (sufijos `eng-ell-sequential`), con una estrategia de regularizacion tipo EWC (Elastic Weight Consolidation) con un coeficiente de 30 (`ewc30`), pensada para mitigar el olvido catastrofico al cambiar de idioma. La model card confirma un cambio de idioma en la epoca 10 (`language switch epoch: 10`).
 
@@ -12,7 +12,7 @@ La relevancia del modelo es limitada y fundamentalmente experimental: se trata d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer causal tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 123.886.080 |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible (no se especifica en la model card) |
@@ -36,15 +36,15 @@ Datos adicionales relevantes:
 | Pasos de acumulacion de gradiente | 1 |
 | Batch total efectivo | 32 |
 | Epoca de cambio de idioma | 10 |
-| Script de entrenamiento | `train_clm.py` (HuggingFace Accelerate, sin `Trainer`) |
+| Script de entrenamiento | `train_clm.py` (Hugging Face Accelerate, sin `Trainer`) |
 | Fecha de creacion | 2026-10-07 |
 | Fecha de actualizacion | 2026-10-07 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal de tipo GPT-2, segun la etiqueta declarada en HuggingFace y la referencia explicita a `configurations/gpt_base_config.json`. Con 123.886.080 parametros, el modelo coincide casi exactamente con el tamano de GPT-2 small (124M), por lo que es razonable asumir una configuracion de 12 capas, 12 cabezas de atencion y dimension de embeddings de 768, aunque esta distribucion concreta no se confirma en la model card y debe tratarse como no verificada. El tokenizer asociado es `goldfish-25k-eng-lower-tokenizer`, cuyo nombre sugiere un vocabulario de aproximadamente 25.000 tokens y un tratamiento en minusculas del texto.
+La arquitectura es un transformer causal de tipo GPT-2, segun la etiqueta declarada en Hugging Face y la referencia explicita a `configurations/gpt_base_config.json`. Con 123.886.080 parametros, el modelo coincide casi exactamente con el tamano de GPT-2 small (124M), por lo que es razonable asumir una configuracion de 12 capas, 12 cabezas de atencion y dimension de embeddings de 768, aunque esta distribucion concreta no se confirma en la model card y debe tratarse como no verificada. El tokenizer asociado es `goldfish-25k-eng-lower-tokenizer`, cuyo nombre sugiere un vocabulario de aproximadamente 25.000 tokens y un tratamiento en minusculas del texto.
 
-El entrenamiento se realizo con `train_clm.py`, un script de entrenamiento de modelos causales basado en HuggingFace Accelerate y que prescinde de la clase `Trainer`. Se ejecutaron 15.610 pasos con un batch efectivo de 32 secuencias, tasa de aprendizaje 1e-4, planificador lineal y 1.561 pasos de warmup (el 10 por ciento del total). El elemento mas distintivo es el regimen secuencial multilingue: el cambio de idioma se produce en la epoca 10, y el sufijo `ewc30` del identificador apunta al uso de Elastic Weight Consolidation con coeficiente 30 para preservar el conocimiento del idioma previo. La model card no aporta informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o ajuste por instrucciones.
+El entrenamiento se realizo con `train_clm.py`, un script de entrenamiento de modelos causales basado en Hugging Face Accelerate y que prescinde de la clase `Trainer`. Se ejecutaron 15.610 pasos con un batch efectivo de 32 secuencias, tasa de aprendizaje 1e-4, planificador lineal y 1.561 pasos de warmup (el 10 por ciento del total). El elemento mas distintivo es el regimen secuencial multilingue: el cambio de idioma se produce en la epoca 10, y el sufijo `ewc30` del identificador apunta al uso de Elastic Weight Consolidation con coeficiente 30 para preservar el conocimiento del idioma previo. La model card no aporta informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o ajuste por instrucciones.
 
 Un detalle llamativo es la discrepancia entre el tamano del repositorio (18,8 GB) y el numero de parametros (124M). Un checkpoint en precision de 16 bits de ese tamano ocuparia aproximadamente 250 MB, por lo que los 18,8 GB del repositorio sugieren la presencia de multiples checkpoints intermedios, estados de optimizador o artefactos de entrenamiento adicionales, no unicamente el modelo final.
 
@@ -52,7 +52,7 @@ Un detalle llamativo es la discrepancia entre el tamano del repositorio (18,8 GB
 
 - Generacion de texto causal autorregresiva, la tarea principal declarada en el pipeline (`text-generation`).
 - Compatibilidad con `transformers` y con `text-generation-inference`, ademas de la etiqueta `endpoints_compatible`.
-- Soporte de inferencia en endpoints gestionados de HuggingFace por la etiqueta `endpoints_compatible`.
+- Soporte de inferencia en endpoints gestionados de Hugging Face por la etiqueta `endpoints_compatible`.
 - Capacidad multilingue potencial ingles-griego derivada del nombre del modelo, no confirmada en la model card.
 - Capacidades de tool calling o function calling: no disponibles.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -92,7 +92,7 @@ La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K, perplexity ni n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential | 123.886.080 | No disponible | No disponible | HuggingFace, 0 descargas |
+| nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential | 123.886.080 | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124M | 1.024 tokens | Modified MIT | Ampliamente disponible |
 | OPT-125M (Meta) | 125M | 2.048 tokens | Licencia OPT-175B (uso no comercial) | Ampliamente disponible |
 | Pythia-160M (EleutherAI) | 160M | 2.048 tokens | Apache 2.0 | Ampliamente disponible |
@@ -114,7 +114,7 @@ Los tres modelos de referencia son arquitecturas densas de tamano comparable y c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v6-mixed-25k-lower-shared-ewc30-eng-ell-sequential
 - Tokenizer asociado: https://huggingface.co/nikitastheo/goldfish-25k-eng-lower-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 

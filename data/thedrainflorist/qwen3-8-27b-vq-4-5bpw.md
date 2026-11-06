@@ -84,7 +84,7 @@ No se dispone de comparaciones con cuantizaciones GGUF de otros proveedores (p. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-4.5bpw
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-4.5bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía local de Qwen3.8-27B (Substack): https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Perfil de benchmarks de Qwen3.8-27B (BenchLM): https://benchlm.ai/models/qwen3-8-27b

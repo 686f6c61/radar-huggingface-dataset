@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados adicionales (MMLU, 
 
 | Modelo | Parametros | Contexto / entrada | ShapeNetPart ins_mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PointGPT-L (este) | 188,1 M | 8192 puntos | 86,8 (declarado) | MIT | HuggingFace vía torch-pointcloud |
+| PointGPT-L (este) | 188,1 M | 8192 puntos | 86,8 (declarado) | MIT | Hugging Face vía torch-pointcloud |
 | PointGPT-S/B | no disponible | no disponible | no disponible en la información | MIT | Repo oficial CGuangyan-BIT/PointGPT |
 | PointNet++ | no disponible | no disponible | no disponible en la información | no disponible | Implementaciones públicas |
 | Point Transformer | no disponible | no disponible | no disponible en la información | no disponible | Implementaciones públicas |
@@ -88,7 +88,7 @@ No se dispone de datos comparativos verificados de otros modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointgpt-l.shapenetpart.guangyan-chen
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointgpt-l.shapenetpart.guangyan-chen
 - Modelo base: https://huggingface.co/torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen
 - Paper PointGPT (arXiv): https://arxiv.org/abs/2305.11487
 - Repositorio oficial: https://github.com/CGuangyan-BIT/PointGPT

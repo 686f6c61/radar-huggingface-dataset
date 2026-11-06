@@ -96,7 +96,7 @@ Las cuatro variantes comparadas pertenecen al mismo autor y al mismo comportamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-hardlabel-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-hardlabel-lora
 - Variante SFT v4: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora
 - Variante SFT v3 (ficha de terceros): https://free2aitools.com/model/misalignment-empirics/theo_qwen2.5-7b-it_impulsive-sft-v3-lora
 - Variante DPO TRL-default epoca 1: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-trldefault-ep1-lora

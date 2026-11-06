@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tinylm2 es un modelo de generacion de texto de pequeno tamano (229.693.184 parametros, aproximadamente 230 millones) publicado en HuggingFace por el usuario bralynn bajo licencia Apache 2.0. Se trata de un fine-tuning del propio checkpoint base `bralynn/tinylm2`, entrenado con la libreria Unsloth y TRL de HuggingFace, segun indica la model card. El modelo se etiqueta con la familia `lfm2`, lo que sugiere que deriva de la arquitectura Liquid Foundation Model 2 de Liquid AI, aunque la model card no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento.
+tinylm2 es un modelo de generacion de texto de pequeno tamano (229.693.184 parametros, aproximadamente 230 millones) publicado en Hugging Face por el usuario bralynn bajo licencia Apache 2.0. Se trata de un fine-tuning del propio checkpoint base `bralynn/tinylm2`, entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica la model card. El modelo se etiqueta con la familia `lfm2`, lo que sugiere que deriva de la arquitectura Liquid Foundation Model 2 de Liquid AI, aunque la model card no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento.
 
 La informacion disponible es extremadamente limitada: la model card es una plantilla autogenerada por Unsloth que solo confirma el autor, la licencia, el modelo base y la herramienta de entrenamiento. No se documentan datos de entrenamiento, longitud de contexto, composicion del dataset ni resultados de evaluacion. El modelo esta orientado a conversacion (`conversational`) y solo declara soporte para ingles (`en`).
 
@@ -25,7 +25,7 @@ Por su tamano (230M parametros) y su licencia permisiva, tinylm2 es relevante co
 
 La model card no describe la arquitectura interna. El tag `lfm2` sugiere que el modelo base pertenece a la familia Liquid Foundation Model 2, pero no se confirma si se trata de un transformer convencional, de una arquitectura hibrida con capas de estado o de otro diseno. El recuento real de parametros (229.693.184) procede de los metadatos de safetensors del repositorio.
 
-Respecto al entrenamiento, la unica informacion disponible es que se realizo un fine-tuning sobre `bralynn/tinylm2` utilizando Unsloth y la libreria TRL de HuggingFace, lo que el autor describe como "2x faster". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o SFT, ni hiperparametros. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion debe considerarse no disponible.
+Respecto al entrenamiento, la unica informacion disponible es que se realizo un fine-tuning sobre `bralynn/tinylm2` utilizando Unsloth y la libreria TRL de Hugging Face, lo que el autor describe como "2x faster". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o SFT, ni hiperparametros. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion debe considerarse no disponible.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
 | bralynn/tinylm2 | ~230M | no disponible | Apache 2.0 | en | Fine-tuning de la familia lfm2, sin benchmarks |
-| SmolLM2-135M (HuggingFace) | 135M | 8.192 tokens (segun model card publica) | Apache 2.0 | en (principalmente) | Modelo pequeno documentado con benchmarks publicos |
+| SmolLM2-135M (Hugging Face) | 135M | 8.192 tokens (segun model card publica) | Apache 2.0 | en (principalmente) | Modelo pequeno documentado con benchmarks publicos |
 | Qwen2.5-0.5B | ~500M | 32.768 tokens (segun model card publica) | Apache 2.0 | multilingue | Mayor tamano y contexto, con evaluaciones publicadas |
 | TinyLlama-1.1B | ~1.1B | 2.048 tokens (segun model card publica) | Apache 2.0 | en | Mayor tamano, ampliamente utilizado como linea base |
 
@@ -84,7 +84,7 @@ La comparativa se limita a datos publicos de cada modelo; tinylm2 no ofrece metr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bralynn/tinylm2
+- Hugging Face: https://huggingface.co/bralynn/tinylm2
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada): https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

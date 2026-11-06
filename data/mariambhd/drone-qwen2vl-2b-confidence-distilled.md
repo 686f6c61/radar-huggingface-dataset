@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mariambhd/drone-qwen2vl-2b-confidence-distilled` es un artefacto publicado en HuggingFace por el usuario mariambhd, presumiblemente orientado a tareas de visión-lenguaje aplicadas a drones. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) derivado de Qwen2-VL de 2.000 millones de parámetros, entrenado con alguna técnica de destilación de confianza ("confidence distilled"), si bien esta información no está confirmada en la documentación disponible. La model card publicada está generada automáticamente por la plataforma y no contiene ningún dato técnico cumplimentado por el autor: todos los campos aparecen como `[More Information Needed]`.
+El modelo `mariambhd/drone-qwen2vl-2b-confidence-distilled` es un artefacto publicado en Hugging Face por el usuario mariambhd, presumiblemente orientado a tareas de visión-lenguaje aplicadas a drones. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) derivado de Qwen2-VL de 2.000 millones de parámetros, entrenado con alguna técnica de destilación de confianza ("confidence distilled"), si bien esta información no está confirmada en la documentación disponible. La model card publicada está generada automáticamente por la plataforma y no contiene ningún dato técnico cumplimentado por el autor: todos los campos aparecen como `[More Information Needed]`.
 
 El repositorio no incluye licencia declarada, idiomas soportados, pipeline ni descripción funcional. El tamaño del repositorio figura como 0.0 GB, y el modelo registra cero descargas y cero "likes" en el momento de la consulta, lo que apunta a un artefacto recién creado, posiblemente sin pesos subidos o con un contenido mínimo. Las fechas de creación y actualización (3 de octubre de 2026) indican un repositorio muy reciente y sin actividad posterior.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación, benchmarks y metadatos verificables, e
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la documentación disponible. Únicamente puede señalarse que el repositorio declara la librería `transformers` y el formato `safetensors`, además de la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la infraestructura de inferencia de HuggingFace. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre cálculo de emisiones de carbono en aprendizaje automático, y aparece únicamente como enlace genérico en la plantilla de model card; no guarda relación con la arquitectura del modelo.
+No se ha publicado información sobre la arquitectura en la documentación disponible. Únicamente puede señalarse que el repositorio declara la librería `transformers` y el formato `safetensors`, además de la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la infraestructura de inferencia de Hugging Face. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre cálculo de emisiones de carbono en aprendizaje automático, y aparece únicamente como enlace genérico en la plantilla de model card; no guarda relación con la arquitectura del modelo.
 
 Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición del dataset, uso de RLHF o DPO, ni hiperparámetros. El sufijo "confidence-distilled" del nombre sugiere algún procedimiento de destilación con señales de confianza, pero no existe documentación que lo respalde. El prefijo "drone-" apunta a un ajuste orientado a dominio aéreo, igualmente sin confirmar.
 
@@ -77,10 +77,10 @@ La comparación se establece con modelos visión-lenguaje de tamaño pequeño qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mariambhd/drone-qwen2vl-2b-confidence-distilled | No disponible (¿2B?) | No disponible | No disponible | HuggingFace, sin descargas |
-| Qwen2-VL-2B-Instruct | 2B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| SmolVLM-2.2B | ~2,2B | 8.192 tokens | Apache 2.0 | HuggingFace |
-| PaliGemma-3B | 3B | 8.192 tokens | Términos Gemma | HuggingFace |
+| mariambhd/drone-qwen2vl-2b-confidence-distilled | No disponible (¿2B?) | No disponible | No disponible | Hugging Face, sin descargas |
+| Qwen2-VL-2B-Instruct | 2B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| SmolVLM-2.2B | ~2,2B | 8.192 tokens | Apache 2.0 | Hugging Face |
+| PaliGemma-3B | 3B | 8.192 tokens | Términos Gemma | Hugging Face |
 
 Los datos de los modelos comparativos corresponden a sus especificaciones públicas conocidas y pueden variar; conviene verificarlos en sus respectivas model cards.
 
@@ -99,7 +99,7 @@ Los datos de los modelos comparativos corresponden a sus especificaciones públi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mariambhd/drone-qwen2vl-2b-confidence-distilled
+- Hugging Face: https://huggingface.co/mariambhd/drone-qwen2vl-2b-confidence-distilled
 - Paper referenciado en las etiquetas (emisiones de carbono, no relacionado con la arquitectura): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales específicos de este modelo en la búsqueda web realizada.

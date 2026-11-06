@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zs0506/qwen3vl-4B-lora-full-r64-vit` es un adaptador LoRA publicado en HuggingFace, no un modelo completo. Se trata de un ajuste fino (PEFT) sobre `Qwen/Qwen3-VL-4B-Instruct`, el modelo vision-language de 4.000 millones de parametros de la familia Qwen3-VL de Alibaba. El repositorio ocupa 0,3 GB y contiene unicamente los pesos del adaptador en safetensors; para usarlo es imprescindible descargar aparte el modelo base.
+`zs0506/qwen3vl-4B-lora-full-r64-vit` es un adaptador LoRA publicado en Hugging Face, no un modelo completo. Se trata de un ajuste fino (PEFT) sobre `Qwen/Qwen3-VL-4B-Instruct`, el modelo vision-language de 4.000 millones de parametros de la familia Qwen3-VL de Alibaba. El repositorio ocupa 0,3 GB y contiene unicamente los pesos del adaptador en safetensors; para usarlo es imprescindible descargar aparte el modelo base.
 
-El autor es el usuario `zs0506`, sin organizacion asociada ni informacion de contacto publicada. El nombre del repositorio sugiere un LoRA de rango 64 aplicado de forma "full" (probablemente sobre todos los modulos lineales o sobre un conjunto amplio de ellos) e incluyendo el vision tower (`vit`), pero esto no esta confirmado en la model card, que es la plantilla generica de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El autor es el usuario `zs0506`, sin organizacion asociada ni informacion de contacto publicada. El nombre del repositorio sugiere un LoRA de rango 64 aplicado de forma "full" (probablemente sobre todos los modulos lineales o sobre un conjunto amplio de ellos) e incluyendo el vision tower (`vit`), pero esto no esta confirmado en la model card, que es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 Su relevancia actual es limitada y experimental: el repositorio acumula 0 descargas y 0 likes, no declara licencia, idiomas, datos de entrenamiento ni evaluaciones, y la busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo (los resultados obtenidos eran articulos sin relacion sobre salidas profesionales en biologia). Debe tratarse, por tanto, como un artefacto de investigacion sin validar y no como un componente listo para produccion.
 
@@ -103,7 +103,7 @@ Frente al modelo base, este adaptador no aporta ninguna ventaja documentada: mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zs0506/qwen3vl-4B-lora-full-r64-vit
+- Repositorio en Hugging Face: https://huggingface.co/zs0506/qwen3vl-4B-lora-full-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact

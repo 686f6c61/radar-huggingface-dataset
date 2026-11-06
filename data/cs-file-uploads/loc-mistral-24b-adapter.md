@@ -24,8 +24,8 @@ La relevancia de esta ficha es acotada: se trata de un adaptador de nicho, sin m
 | Modelo base | mistralai/Mistral-Small-3.2-24B-Instruct-2506 |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-11 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-11 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Alternativa | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Mistral Small 3.2 24B) | 24B base + adaptador de 0,2 GB | No disponible | No publicado | No disponible | Publico en HuggingFace, 0 descargas |
+| Este adaptador (LoRA sobre Mistral Small 3.2 24B) | 24B base + adaptador de 0,2 GB | No disponible | No publicado | No disponible | Publico en Hugging Face, 0 descargas |
 | Modelo base sin ajuste (Mistral-Small-3.2-24B-Instruct-2506) con prompting | 24B | No confirmado en la informacion proporcionada | No publicado para esta tarea | Segun la documentacion publica del modelo base | Publico |
 | Ajuste completo (full fine-tuning) del modelo base | 24B | Igual que el base | No disponible | No disponible | No publicado por este autor |
 | Otros adaptadores LoRA para extraccion de informacion financiera | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
@@ -95,8 +95,8 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/cs-file-uploads/loc-mistral-24b-adapter
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/cs-file-uploads/loc-mistral-24b-adapter
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Repositorio de codigo acompanante para inferencia y scoring: mencionado en la model card, pero no enlazado en la informacion disponible
 - Paper, blog o demo oficial del adaptador: no disponible
 - Nota sobre la busqueda web: los resultados de busqueda proporcionados corresponden a Counter-Strike 1.6 y Counter-Strike 2 (counter-strike.net, store.steampowered.com, play-cs.com, lasource.gg) y no guardan relacion con este modelo. No se ha encontrado ningun enlace adicional relevante.

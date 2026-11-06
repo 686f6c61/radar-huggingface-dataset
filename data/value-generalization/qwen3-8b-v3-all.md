@@ -18,7 +18,7 @@ Técnicamente es un transformer denso de 8.190.735.360 parámetros (8,19B), sin 
 | Longitud de contexto | 32.768 tokens nativos heredados del modelo base Qwen3-8B; el entrenamiento DPO se ejecuto con max_length 2048 y la model card no documenta ampliacion posterior |
 | Tipos de cuantizacion | No disponible: el repositorio solo publica safetensors en bf16. No hay GGUF, AWQ ni GPTQ de este fine-tune |
 | Idiomas soportados | No disponible en la model card; el modelo base Qwen3-8B cubre mas de 100 idiomas, pero el dataset de preferencias no documenta su composicion linguistica |
-| Licencia | other (etiquetada como "other" en HuggingFace; no se detallan terminos en la informacion disponible) |
+| Licencia | other (etiquetada como "other" en Hugging Face; no se detallan terminos en la informacion disponible) |
 | Formato de pesos | safetensors (bf16), 16,4 GB de repositorio |
 | Modelo base | value-generalization/neutral-sft-v3-qwen3-8b (commit f1550fe714e01e2116cc4fdf3a1d510f8fd379c7) |
 | Formato de chat | qwen_chatml, plantilla fijada mas EOS en valuegen_chat_format.json |
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de ajuste | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| qwen3-8b-v3-all | 8,19B denso | 32.768 nativos (entrenado a 2.048) | DPO completo sobre 196k pares, 49 principios | other | HuggingFace, safetensors bf16 | No |
-| value-generalization/neutral-sft-v3-qwen3-8b | 8,19B denso | 32.768 nativos | SFT neutro en valores (modelo base del anterior) | no disponible | HuggingFace | No |
-| Qwen3-8B (base/instruct) | 8,19B denso | 32.768 nativos, ampliable con YaRN | Preentrenamiento + post-entrenamiento general | Apache 2.0 (segun el modelo original) | HuggingFace, GGUF, AWQ, GPTQ | Si, publicados por el autor original |
-| Llama-3.1-8B-Instruct | 8,03B denso | 128.000 | SFT + RLHF de proposito general | Meta Llama 3.1 Community License | HuggingFace, GGUF, multiples cuantizaciones | Si, publicados por el autor original |
+| qwen3-8b-v3-all | 8,19B denso | 32.768 nativos (entrenado a 2.048) | DPO completo sobre 196k pares, 49 principios | other | Hugging Face, safetensors bf16 | No |
+| value-generalization/neutral-sft-v3-qwen3-8b | 8,19B denso | 32.768 nativos | SFT neutro en valores (modelo base del anterior) | no disponible | Hugging Face | No |
+| Qwen3-8B (base/instruct) | 8,19B denso | 32.768 nativos, ampliable con YaRN | Preentrenamiento + post-entrenamiento general | Apache 2.0 (segun el modelo original) | Hugging Face, GGUF, AWQ, GPTQ | Si, publicados por el autor original |
+| Llama-3.1-8B-Instruct | 8,03B denso | 128.000 | SFT + RLHF de proposito general | Meta Llama 3.1 Community License | Hugging Face, GGUF, multiples cuantizaciones | Si, publicados por el autor original |
 
 La comparacion con modelos de proposito general es solo estructural: este checkpoint persigue un objetivo de investigacion en alineacion de valores y no compite en tareas de asistente generalista. No hay datos de rendimiento comparables publicados para este modelo.
 
@@ -96,7 +96,7 @@ La comparacion con modelos de proposito general es solo estructural: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-generalization/qwen3-8b-v3-all
+- Modelo en Hugging Face: https://huggingface.co/value-generalization/qwen3-8b-v3-all
 - Modelo base (SFT neutro en valores): https://huggingface.co/value-generalization/neutral-sft-v3-qwen3-8b
 - Dataset de preferencias: https://huggingface.co/datasets/value-generalization/constitution-v3-dpo
 - Repositorio de codigo value-generalization (recetas y lanzadores; commit de procedencia 669a6d8, receta configs/experiments/dpo_v3_all_qwen3.yaml, lanzador scripts/0918/train_v3_all.sbatch): no se ha encontrado la URL publica en la informacion disponible

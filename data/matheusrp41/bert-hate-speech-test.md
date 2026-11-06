@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `matheusrp41/bert-hate-speech-test` es un ajuste fino de `google-bert/bert-base-uncased` orientado a la clasificacion de texto para la deteccion de discurso de odio. Ha sido desarrollado por el usuario matheusrp41 y subido a HuggingFace con licencia Apache-2.0, lo que permite su uso comercial sin restricciones significativas. El modelo se genero mediante el flujo de entrenamiento estandar de la libreria Transformers, con un pipeline de text-classification.
+El modelo `matheusrp41/bert-hate-speech-test` es un ajuste fino de `google-bert/bert-base-uncased` orientado a la clasificacion de texto para la deteccion de discurso de odio. Ha sido desarrollado por el usuario matheusrp41 y subido a Hugging Face con licencia Apache-2.0, lo que permite su uso comercial sin restricciones significativas. El modelo se genero mediante el flujo de entrenamiento estandar de la libreria Transformers, con un pipeline de text-classification.
 
 Con 109.484.547 parametros, el modelo mantiene la arquitectura original de BERT-base, un transformer encoder de 12 capas con 768 dimensiones ocultas. La ventana de contexto es de 512 tokens, heredada del modelo base. Su relevancia radica en que ofrece un punto de partida para tareas de moderacion de contenido, aunque su rendimiento declarado (accuracy de 0,7193) sugiere que requiere validacion adicional antes de su uso en produccion.
 
@@ -62,7 +62,7 @@ La tabla de entrenamiento muestra la evolucion por epocas:
 | 0,6008 | 2.0 | 114 | 0,6574 | 0,6667 |
 | 0,4936 | 3.0 | 171 | 0,6291 | 0,7193 |
 
-No se han publicado resultados comparativos con otros modelos en la informacion disponible. El modelo-index de HuggingFace no incluye resultados adicionales.
+No se han publicado resultados comparativos con otros modelos en la informacion disponible. El modelo-index de Hugging Face no incluye resultados adicionales.
 
 ## Requisitos de hardware
 
@@ -94,7 +94,7 @@ HateBERT es un modelo de referencia en deteccion de abuso y odio, entrenado con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matheusrp41/bert-hate-speech-test
+- Repositorio Hugging Face: https://huggingface.co/matheusrp41/bert-hate-speech-test
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Modelo similar (wesleyfreit): https://huggingface.co/wesleyfreit/bert-hate-speech-test
 - Paper HateBERT: https://arxiv.org/abs/2010.12472

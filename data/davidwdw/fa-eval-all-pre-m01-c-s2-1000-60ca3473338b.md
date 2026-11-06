@@ -83,6 +83,6 @@ No disponible. No se conocen alternativas comparables en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s2-1000-60ca3473338b
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s2-1000-60ca3473338b
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

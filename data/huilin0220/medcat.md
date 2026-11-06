@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Medcat es un modelo vision-lenguaje (image-text-to-text) especializado en dominio médico, publicado por el usuario de HuggingFace HuiLin0220. Se construye como un ajuste fino del modelo base OpenGVLab/InternVL3-8B-hf, e incorpora adaptadores LoRA por tarea y fuente, además de cabezas de clasificación compactas. El repositorio, denominado Medcat V10, está orientado a cuatro tareas de inferencia: clasificación de enfermedades, clasificación multietiqueta, detección y regresión.
+Medcat es un modelo vision-lenguaje (image-text-to-text) especializado en dominio médico, publicado por el usuario de Hugging Face HuiLin0220. Se construye como un ajuste fino del modelo base OpenGVLab/InternVL3-8B-hf, e incorpora adaptadores LoRA por tarea y fuente, además de cabezas de clasificación compactas. El repositorio, denominado Medcat V10, está orientado a cuatro tareas de inferencia: clasificación de enfermedades, clasificación multietiqueta, detección y regresión.
 
-La distribución incluye el modelo base InternVL3-8B-hf, un componente identificado como FLARE-InternVL3-8B-hf y componentes ME-VLIP. El código de inferencia no se aloja en HuggingFace, sino en el repositorio de GitHub HuiLin0220/Medcat, desde donde se invoca mediante `inference.py` y `predict.sh`, descargando los pesos al directorio `models/`.
+La distribución incluye el modelo base InternVL3-8B-hf, un componente identificado como FLARE-InternVL3-8B-hf y componentes ME-VLIP. El código de inferencia no se aloja en Hugging Face, sino en el repositorio de GitHub HuiLin0220/Medcat, desde donde se invoca mediante `inference.py` y `predict.sh`, descargando los pesos al directorio `models/`.
 
 El modelo es relevante como ejemplo de adaptación paramétricamente eficiente (LoRA) de un VLM generalista de 8B a tareas clínicas multimodales, con verificación de integridad mediante SHA256. No obstante, el nivel de adopción pública es nulo en el momento de la consulta (0 descargas, 0 likes) y la model card declara explícitamente que los pesos se publican para investigación y reproducción de retos, no para diagnóstico o tratamiento clínico.
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada con cuantización: aproximadamente 10-12 GB en 8 bits y 6-8 GB en 4 bits, si se aplican técnicas de cuantización estándar. No se distribuyen pesos precuantizados.
 - GPU recomendadas: A100 40/80 GB, H100 y L40S para despliegue en servidor; RTX 4090 o RTX 3090 (24 GB) para ejecución local en BF16 con margen ajustado.
 - Compatibilidad con GPU de consumo: sí, en tarjetas de 24 GB como RTX 4090 o RTX 3090 en BF16; en GPUs de 16 GB (RTX 4080, A4000) sería recomendable cuantizar; por debajo de 12 GB, es necesario cuantizar a 4 bits.
-- Opciones de despliegue: la librería declarada es transformers, con los scripts `inference.py` y `predict.sh` del repositorio de GitHub; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se declara soporte explícito de vLLM, llama.cpp, Ollama o TGI en la documentación disponible.
+- Opciones de despliegue: la librería declarada es transformers, con los scripts `inference.py` y `predict.sh` del repositorio de GitHub; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se declara soporte explícito de vLLM, llama.cpp, Ollama o TGI en la documentación disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Medcat (HuiLin0220) | 8B (base InternVL3-8B-hf) + LoRA y cabezas | No disponible | Clasificación, multietiqueta, detección, regresión | `other` (qwen) por componentes: Apache-2.0 / MIT / Qwen | HuggingFace + GitHub; 0 descargas, 0 likes |
-| InternVL3-8B-hf (OpenGVLab) | 8B | No disponible | Image-text-to-text generalista | MIT (según el bundle Medcat) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-VL-7B | 7B (según denominación) | No disponible | Image-text-to-text generalista | No disponible | HuggingFace |
-| MedGemma-4B | 4B (según denominación) | No disponible | Image-text-to-text en dominio médico | No disponible | HuggingFace |
+| Medcat (HuiLin0220) | 8B (base InternVL3-8B-hf) + LoRA y cabezas | No disponible | Clasificación, multietiqueta, detección, regresión | `other` (qwen) por componentes: Apache-2.0 / MIT / Qwen | Hugging Face + GitHub; 0 descargas, 0 likes |
+| InternVL3-8B-hf (OpenGVLab) | 8B | No disponible | Image-text-to-text generalista | MIT (según el bundle Medcat) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-VL-7B | 7B (según denominación) | No disponible | Image-text-to-text generalista | No disponible | Hugging Face |
+| MedGemma-4B | 4B (según denominación) | No disponible | Image-text-to-text en dominio médico | No disponible | Hugging Face |
 
 Las cifras de contexto, rendimiento y licencia de las alternativas no se han verificado en la información proporcionada, por lo que se marcan como no disponibles. La comparación relevante y contrastable es con el propio modelo base InternVL3-8B-hf: Medcat añade cabezas de clasificación y adaptadores LoRA específicos, a cambio de un bundle más pesado y de una licencia compuesta con términos adicionales.
 
@@ -96,7 +96,7 @@ Las cifras de contexto, rendimiento y licencia de las alternativas no se han ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuiLin0220/Medcat
+- Modelo en Hugging Face: https://huggingface.co/HuiLin0220/Medcat
 - Código de inferencia (GitHub): https://github.com/HuiLin0220/Medcat
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-8B-hf
 - Licencia Qwen referenciada en la model card: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE

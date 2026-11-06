@@ -68,10 +68,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace: kerasformers/tipsv2-l14-dpt](https://huggingface.co/kerasformers/tipsv2-l14-dpt)
+- [Modelo en Hugging Face: kerasformers/tipsv2-l14-dpt](https://huggingface.co/kerasformers/tipsv2-l14-dpt)
 - [Modelo original: google/tipsv2-l14-dpt](https://huggingface.co/google/tipsv2-l14-dpt)
 - [Repositorio oficial de TIPSv2 (Google DeepMind)](https://github.com/google-deepmind/tips)
 - [Artículo TIPSv2 (arXiv:2604.12012)](https://huggingface.co/papers/2604.12012)
-- [Colección de variantes TIPSv2-DPT en HuggingFace](https://huggingface.co/collections/kerasformers/tipsv2-dpt-6a8a3f36cd22fe9f68df6202)
+- [Colección de variantes TIPSv2-DPT en Hugging Face](https://huggingface.co/collections/kerasformers/tipsv2-dpt-6a8a3f36cd22fe9f68df6202)
 - [Análisis del modelo en free2aitools.com](https://free2aitools.com/model/google/tipsv2-l14-dpt)
 - [Artículo en Modelers.cn sobre TIPSv2-DPT](https://aichina.news/blog/googles-tips-v2-depth-model-arrives-on-modelers-cn-a-permissively-skd6y9/)

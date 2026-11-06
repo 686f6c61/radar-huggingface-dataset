@@ -22,7 +22,7 @@ Es relevante para quien necesite alineación forzada de audio a nivel de fonema 
 | Formato de pesos | safetensors (model.safetensors); además se publica un checkpoint de entrenamiento en .ckpt de PyTorch Lightning (pickle) |
 | Cabezas y etiquetas | ph: 48 etiquetas locales de cjk (incluye `<blank>`, `SIL`, `noise`, `<unk>`); phg: 15 grupos fonéticos dorados compartidos entre grupos de lenguas; tone: 22 valores tonales compartidos |
 | Entrada de audio | mono, 16.000 Hz |
-| Publicación en HuggingFace | 9 de octubre de 2026 (según metadatos del repositorio) |
+| Publicación en Hugging Face | 9 de octubre de 2026 (según metadatos del repositorio) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K y
 
 | Modelo | Parámetros | Tarea y enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbfa-cjk | 14,7 M | Alineación forzada y reconocimiento de fonemas con CNN sin contexto y decodificador de Viterbi segmental | cmn, yue | AGPL-3.0 | HuggingFace y código en bfa_models |
+| mbfa-cjk | 14,7 M | Alineación forzada y reconocimiento de fonemas con CNN sin contexto y decodificador de Viterbi segmental | cmn, yue | AGPL-3.0 | Hugging Face y código en bfa_models |
 | p3cupe / CUPE (predecesor) | no disponible | Alineación forzada y fonemas; predecesor directo de p4mbfa | no disponible | no disponible | Repositorio bfa_models |
 | latin ma02a | no disponible | Alineación forzada; de aquí proceden el tronco y la cabeza `phg` reutilizados en mbfa-cjk | grupo de lenguas latinas (no detallado) | no disponible | Repositorio bfa_models |
 | Alineadores clásicos tipo HMM-GMM (por ejemplo Montreal Forced Aligner) | no disponible | Alineación forzada con modelos acústicos HMM-GMM sobre diccionarios de pronunciación | varios idiomas según diccionario | no disponible en la información consultada | Distribución independiente del ecosistema de este modelo |
@@ -105,7 +105,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-cjk
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-cjk
 - Código de inferencia y entrenamiento (p4mbfa): https://github.com/tabahi/bfa_models
 - standard_g2p / CharsiuG2P: https://github.com/tabahi/CharsiuG2P
 - Perfil de GitHub del autor: https://github.com/tabahi

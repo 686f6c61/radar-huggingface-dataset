@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alistair-GroutVTMB_RVCModel es un modelo publicado en HuggingFace por el usuario Kiyoshi94 bajo licencia openrail. Por su nombre y por el contenido mínimo de su model card ("Trained at 300 Epochs"), se trata de un modelo de conversión de voz (RVC, Retrieval-based Voice Conversion) entrenado para replicar la voz de un personaje, en este caso Alistair Grout, personaje del videojuego *Vampire: The Masquerade - Bloodlines* (VTMB). No es un modelo de lenguaje: no genera texto ni código, sino que transforma audio de entrada en audio con la timbre del personaje.
+Alistair-GroutVTMB_RVCModel es un modelo publicado en Hugging Face por el usuario Kiyoshi94 bajo licencia openrail. Por su nombre y por el contenido mínimo de su model card ("Trained at 300 Epochs"), se trata de un modelo de conversión de voz (RVC, Retrieval-based Voice Conversion) entrenado para replicar la voz de un personaje, en este caso Alistair Grout, personaje del videojuego *Vampire: The Masquerade - Bloodlines* (VTMB). No es un modelo de lenguaje: no genera texto ni código, sino que transforma audio de entrada en audio con la timbre del personaje.
 
 El repositorio ocupa aproximadamente 0,1 GB, un tamaño coherente con los pesos de un modelo RVC (habitualmente ficheros `.pth` de decenas o centenares de megabytes), no con un LLM. No se dispone de información sobre arquitectura interna, dataset de entrenamiento, idiomas ni pipeline en la información proporcionada. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que es un artefacto de nicho, probablemente de uso personal o comunitario dentro del ecosistema de modding y doblaje amateur.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen en la información proporcionada otros checkpoints 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kiyoshi94/Alistair-GroutVTMB_RVCModel
+- Hugging Face: https://huggingface.co/Kiyoshi94/Alistair-GroutVTMB_RVCModel
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

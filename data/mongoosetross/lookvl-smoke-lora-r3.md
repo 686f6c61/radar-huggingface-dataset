@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Mongoosetross/lookvl-smoke-lora-r3` es un adaptador LoRA publicado con PEFT sobre el modelo multimodal `Qwen/Qwen2.5-VL-3B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación (formato safetensors) que debe cargarse junto al modelo base para funcionar. La ficha de HuggingFace no incluye ninguna descripción funcional: la model card es la plantilla por defecto de HuggingFace sin rellenar, y todos los campos de detalle (autoría, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como "[More Information Needed]".
+`Mongoosetross/lookvl-smoke-lora-r3` es un adaptador LoRA publicado con PEFT sobre el modelo multimodal `Qwen/Qwen2.5-VL-3B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación (formato safetensors) que debe cargarse junto al modelo base para funcionar. La ficha de Hugging Face no incluye ninguna descripción funcional: la model card es la plantilla por defecto de Hugging Face sin rellenar, y todos los campos de detalle (autoría, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como "[More Information Needed]".
 
-El nombre del repositorio ("smoke-lora-r3") sugiere una ejecución de prueba o verificación técnica más que un ajuste destinado a producción, aunque esto es una inferencia a partir del identificador y no un dato confirmado por el autor. El repositorio registra 0 descargas y 0 "likes", con un tamano reportado de 0.0 GB, y fue creado y actualizado el 23 de septiembre de 2026 (según los metadatos de HuggingFace). La versión de PEFT declarada es 0.21.0.
+El nombre del repositorio ("smoke-lora-r3") sugiere una ejecución de prueba o verificación técnica más que un ajuste destinado a producción, aunque esto es una inferencia a partir del identificador y no un dato confirmado por el autor. El repositorio registra 0 descargas y 0 "likes", con un tamano reportado de 0.0 GB, y fue creado y actualizado el 23 de septiembre de 2026 (según los metadatos de Hugging Face). La versión de PEFT declarada es 0.21.0.
 
 Su relevancia es por tanto limitada y fundamentalmente metodológica: sirve como ejemplo de adaptación LoRA sobre un modelo visión-lenguaje pequeno (gama 3B) y como recordatorio de que el ecosistema PEFT permite publicar adaptadores de pocos megabytes reutilizando un modelo base ya disponible. Cualquier uso serio exige leer primero la documentación del modelo base y validar empíricamente el comportamiento del adaptador, ya que no hay información pública sobre qué tarea concreta se ha ajustado.
 
@@ -23,7 +23,7 @@ Su relevancia es por tanto limitada y fundamentalmente metodológica: sirve como
 | Libreria | peft (versión declarada: PEFT 0.21.0), compatible con transformers |
 | Modelo base | Qwen/Qwen2.5-VL-3B-Instruct |
 | Pipeline declarado | text-generation |
-| Tamano del repositorio | 0.0 GB (según HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ El artefacto es un adaptador LoRA, es decir, un conjunto de matrices de bajo ran
 
 Del modelo base sí se conocen las líneas generales por documentación pública: Qwen2.5-VL-3B-Instruct es un transformer multimodal que procesa imágenes y texto, con un codificador visual basado en ViT con atención por ventanas y un mecanismo de alineación de posiciones absolutas en el espacio temporal, orientado a tareas de percepción de documentos, OCR, grounding y razonamiento sobre imágenes. El adaptador, en cualquier caso, solo modifica una fracción de esos pesos y su efecto real depende por completo del conjunto de datos usado, que no se documenta.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas del adaptador. La única referencia a un paper en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a Lacoste et al. sobre cálculo de emisiones de carbono en aprendizaje automático y que aparece en la plantilla de model card de HuggingFace, no a un artículo sobre este modelo.
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas del adaptador. La única referencia a un paper en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a Lacoste et al. sobre cálculo de emisiones de carbono en aprendizaje automático y que aparece en la plantilla de model card de Hugging Face, no a un artículo sobre este modelo.
 
 ## Capacidades
 
@@ -83,16 +83,16 @@ La comparación directa del adaptador con otros modelos carece de sentido porque
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador + Qwen2.5-VL-3B-Instruct | Adaptador de tamano no declarado; base de gama 3B | No confirmado para el adaptador; la familia Qwen2.5-VL documenta 128 000 tokens | Texto e imagen | No disponible para el adaptador; Apache-2.0 para el base según su documentación | Repositorio público en HuggingFace, 0 descargas, sin evaluación |
+| Este adaptador + Qwen2.5-VL-3B-Instruct | Adaptador de tamano no declarado; base de gama 3B | No confirmado para el adaptador; la familia Qwen2.5-VL documenta 128 000 tokens | Texto e imagen | No disponible para el adaptador; Apache-2.0 para el base según su documentación | Repositorio público en Hugging Face, 0 descargas, sin evaluación |
 | Qwen/Qwen2.5-VL-3B-Instruct (base sin ajustar) | Gama 3B | 128 000 tokens según documentación pública | Texto e imagen | Apache-2.0 según documentación pública | Ampliamente disponible, con benchmarks publicados por el autor |
 | Qwen/Qwen2.5-VL-7B-Instruct | Gama 7B | 128 000 tokens según documentación pública | Texto e imagen | Apache-2.0 según documentación pública | Disponible, con mayor coste de inferencia |
-| Otros adaptadores LoRA sobre Qwen2.5-VL publicados en HuggingFace | Variable | Heredado del base | Texto e imagen | Variable; muchos sin declarar | No comparable sin evaluación común |
+| Otros adaptadores LoRA sobre Qwen2.5-VL publicados en Hugging Face | Variable | Heredado del base | Texto e imagen | Variable; muchos sin declarar | No comparable sin evaluación común |
 
 No hay datos de rendimiento de este adaptador que permitan establecer una comparación cuantitativa con ninguna de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace; no se describe tarea, datos, hiperparámetros ni uso previsto.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face; no se describe tarea, datos, hiperparámetros ni uso previsto.
 - Licencia no declarada: no se puede asumir que el adaptador sea utilizable comercialmente. Aunque el modelo base se publica bajo Apache-2.0 según su documentación, la licencia del adaptador es un campo vacío en la ficha y debe aclararse con el autor antes de cualquier uso en producción.
 - Idiomas no declarados: se desconoce si el ajuste conserva el multilingüismo del modelo base o si lo ha degradado en lenguas no incluidas en el entrenamiento.
 - Riesgo de alucinación: inherente a los modelos de gama 3B, especialmente en tareas de OCR y descripción de imágenes con texto denso; no hay métricas que lo cuantifiquen.
@@ -106,7 +106,7 @@ No hay datos de rendimiento de este adaptador que permitan establecer una compar
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Mongoosetross/lookvl-smoke-lora-r3
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Mongoosetross/lookvl-smoke-lora-r3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio oficial de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Blog oficial de la familia Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cahyono76/Rumah_tukang` es un repositorio alojado en HuggingFace por el usuario Cahyono76. En el momento de la consulta, la ficha publica del repositorio no incluye descripcion, ni pipeline declarado, ni licencia, ni lista de idiomas soportados. El unico metadato disponible ademas del identificador es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
+`Cahyono76/Rumah_tukang` es un repositorio alojado en Hugging Face por el usuario Cahyono76. En el momento de la consulta, la ficha publica del repositorio no incluye descripcion, ni pipeline declarado, ni licencia, ni lista de idiomas soportados. El unico metadato disponible ademas del identificador es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el modelo en si.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni las capacidades del artefacto publicado. El nombre del repositorio ("Rumah_tukang", que en indonesio puede traducirse como "casa de artesanos" o "casa de obreros") sugiere un posible origen indonesio y un contenido no necesariamente alineado con la nomenclatura habitual de modelos de lenguaje, pero se trata de una inferencia linguistica, no de un dato confirmado.
 
@@ -84,7 +84,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Cahyono76/Rumah_tukang | no disponible | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| Cahyono76/Rumah_tukang | no disponible | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cahyono76/Rumah_tukang
+- Repositorio en Hugging Face: https://huggingface.co/Cahyono76/Rumah_tukang
 - Paper: no disponible.
 - Blog o anuncio tecnico: no disponible.
 - Repositorio de codigo: no disponible.

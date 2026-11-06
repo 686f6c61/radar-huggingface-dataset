@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sebsebe SMS IQ es un fine-tune de SmolLM2-135M-Instruct, con 134.515.008 parámetros, publicado por el usuario bersuad en HuggingFace. Su objetivo es convertir SMS bancarios etíopes sanitizados (incluidos los de Telebirr) en JSON estructurado con campos como importe, origen y cuenta, para que la aplicación Sebsebe pueda ofrecer una revisión de mensajes opcional directamente en el dispositivo. No es la aplicación en sí: la sincronización sigue siendo regex-first y el modelo es solo una ayuda local opcional.
+Sebsebe SMS IQ es un fine-tune de SmolLM2-135M-Instruct, con 134.515.008 parámetros, publicado por el usuario bersuad en Hugging Face. Su objetivo es convertir SMS bancarios etíopes sanitizados (incluidos los de Telebirr) en JSON estructurado con campos como importe, origen y cuenta, para que la aplicación Sebsebe pueda ofrecer una revisión de mensajes opcional directamente en el dispositivo. No es la aplicación en sí: la sincronización sigue siendo regex-first y el modelo es solo una ayuda local opcional.
 
 El proyecto sustituye un pipeline anterior basado en Llama 3.2 1B más cuantización por importancia, que comprimía el modelo pero no le enseñaba a extraer información. Ahora se aplica LoRA SFT sobre un conjunto de calibración de SMS sanitizados y se exporta a GGUF Q4_K_M de aproximadamente 105 MB, pensado para inferencia en móvil o equipos modestos mediante llama.cpp.
 
@@ -18,7 +18,7 @@ Es relevante por su enfoque de privacidad (procesamiento on-device, sin enviar S
 | Longitud de contexto | no disponible en la ficha; el modelo base SmolLM2-135M-Instruct declara 8.192 tokens en su model card pública |
 | Tipos de cuantización | Q4_K_M (principal, aproximadamente 105 MB); IQ3_M opcional (legacy); f16 para el modelo base antes de cuantizar |
 | Idiomas soportados | no disponible; el caso de uso son SMS bancarios etíopes (Telebirr), pero no se especifica la cobertura lingüística del entrenamiento |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que el fine-tune no elimina la licencia del modelo base SmolLM2, que es Apache 2.0 |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que el fine-tune no elimina la licencia del modelo base SmolLM2, que es Apache 2.0 |
 | Formato de pesos | GGUF (Q4_K_M); safetensors en el repositorio (134.515.008 parámetros); adaptador LoRA PEFT y versión fusionada en safetensors durante el pipeline |
 
 ## Arquitectura y entrenamiento
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
 | sebsebe-sms-iq | 134,5 M | no disponible (base: 8.192 tokens) | no disponible en HF; base Apache 2.0 | GGUF Q4_K_M, safetensors y LoRA en el repositorio |
-| SmolLM2-135M-Instruct | 135 M | 8.192 tokens según su model card | Apache 2.0 | Safetensors y GGUF en HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens según su model card | Apache 2.0 | Safetensors y GGUF en HuggingFace |
-| Llama 3.2 1B Instruct | 1.240 M | 128.000 tokens según su model card | Llama 3.2 Community License | Safetensors y GGUF en HuggingFace |
+| SmolLM2-135M-Instruct | 135 M | 8.192 tokens según su model card | Apache 2.0 | Safetensors y GGUF en Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens según su model card | Apache 2.0 | Safetensors y GGUF en Hugging Face |
+| Llama 3.2 1B Instruct | 1.240 M | 128.000 tokens según su model card | Llama 3.2 Community License | Safetensors y GGUF en Hugging Face |
 
 La comparación debe tomarse con cautela: sebsebe-sms-iq es un fine-tune especializado y no un modelo generalista, por lo que su rendimiento en tareas abiertas no es comparable sin benchmarks. Frente al pipeline anterior basado en Llama 3.2 1B, la propuesta actual reduce el tamaño en un orden de magnitud, a costa de una capacidad de razonamiento mucho menor.
 
@@ -77,7 +77,7 @@ La comparación debe tomarse con cautela: sebsebe-sms-iq es un fine-tune especia
 - Modelo muy pequeño (135 M): capacidad de razonamiento y generalización limitada; los errores en la extracción de importes o cuentas pueden tener consecuencias directas en datos financieros.
 - Riesgo de alucinación: al generar JSON, puede inventar campos o importes cuando el SMS no sigue los patrones vistos en el conjunto de calibración.
 - Dataset de entrenamiento reducido: la propia model card pide ampliar `calib/sms_calib.txt` a 80-100 o más pares antes de un entrenamiento serio, lo que sugiere riesgo de sobreajuste y baja cobertura.
-- Licencia no declarada en HuggingFace: aunque el modelo base es Apache 2.0, la ficha del fine-tune no especifica la licencia, por lo que conviene verificar antes de un uso comercial.
+- Licencia no declarada en Hugging Face: aunque el modelo base es Apache 2.0, la ficha del fine-tune no especifica la licencia, por lo que conviene verificar antes de un uso comercial.
 - Idiomas y variantes no documentados: los SMS etíopes pueden mezclar amhárico, inglés y transliteraciones, y no se indica qué cubre el entrenamiento.
 - Longitud de contexto no confirmada en la ficha: aunque el modelo base declara 8.192 tokens, el fine-tune no documenta su contexto efectivo.
 - Privacidad: la model card advierte de no subir SMS reales, teléfonos ni números de cuenta completos al repositorio; el procesamiento debe mantenerse local.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aleenababar04/qwen2.5-1.5b-trialgpt-criteria-lora` es un adaptador LoRA de tipo PEFT construido sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Lo desarrolla la usuaria de HuggingFace aleenababar04 en el contexto de un trabajo academico (repositorio `genai-assignment-2`) y su proposito es resolver una tarea muy concreta: dado un historial clinico numerado por frases, un tipo de criterio y un texto de criterio de elegibilidad, devolver un JSON con los identificadores de frase que sirven como evidencia y una etiqueta de decision. Se entrena sobre el dataset `ncbi/TrialGPT-Criterion-Annotations`, con una particion agrupada por paciente de 37/8/8 y semilla 42.
+El modelo `aleenababar04/qwen2.5-1.5b-trialgpt-criteria-lora` es un adaptador LoRA de tipo PEFT construido sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Lo desarrolla la usuaria de Hugging Face aleenababar04 en el contexto de un trabajo academico (repositorio `genai-assignment-2`) y su proposito es resolver una tarea muy concreta: dado un historial clinico numerado por frases, un tipo de criterio y un texto de criterio de elegibilidad, devolver un JSON con los identificadores de frase que sirven como evidencia y una etiqueta de decision. Se entrena sobre el dataset `ncbi/TrialGPT-Criterion-Annotations`, con una particion agrupada por paciente de 37/8/8 y semilla 42.
 
 La relevancia del adaptador es acotada: no es un modelo de proposito general ni pretende competir con LLM clinicos de mayor tamano, sino demostrar que un ajuste fino LoRA de rango 16 sobre un modelo de 1.500 millones de parametros puede obtener una precision del 72,82 % y un macro-F1 de 0,5264 en la tarea de emparejamiento criterio-paciente sobre 206 criterios de 8 pacientes de test. El propio autor lo etiqueta como prototipo de investigacion educativa y advierte explicitamente de que no debe usarse para decisiones reales de reclutamiento clinico.
 
@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aleenababar04/qwen2.5-1.5b-trialgpt-criteria-lora
+- Modelo en Hugging Face: https://huggingface.co/aleenababar04/qwen2.5-1.5b-trialgpt-criteria-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset: https://huggingface.co/datasets/ncbi/TrialGPT-Criterion-Annotations
 - Codigo, formato de prompt y evaluacion: https://github.com/aleenababar04/genai-assignment-2

@@ -114,7 +114,7 @@ No se dispone de datos comparativos de benchmarks frente a otros sistemas de des
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Ming-Image-0.1-Design-Layer-bf16
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Ming-Image-0.1-Design-Layer-bf16
 - Modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
 - Licencia del modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer/blob/main/LICENSE
 - Version MLX del modelo sin descomposicion en capas: https://huggingface.co/mlx-community/Ming-Image-0.1-Design-bf16

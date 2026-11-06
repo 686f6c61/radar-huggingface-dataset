@@ -33,7 +33,7 @@ No se ha publicado informacion sobre el dataset de entrenamiento, el numero de t
 
 - Generacion de texto: al ser un transformer decoder-only con pipeline text-generation, puede generar texto autocompletado y responder a instrucciones, aunque no se han publicado evaluaciones de calidad.
 - Fusion de checkpoints: demuestra la viabilidad de combinar checkpoints de un mismo run de entrenamiento mediante merge lineal, una tecnica que puede mejorar la robustez frente a la seleccion de un unico checkpoint.
-- Compatibilidad con transformers: al usar la libreria transformers y formato safetensors, es compatible con el ecosistema estandar de HuggingFace.
+- Compatibilidad con transformers: al usar la libreria transformers y formato safetensors, es compatible con el ecosistema estandar de Hugging Face.
 - Compatibilidad con text-generation-inference: el tag `endpoints_compatible` indica que puede desplegarse con TGI.
 - No se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modos de pensamiento explicitos.
 
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge
+- Pagina del modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear: https://arxiv.org/abs/2203.05482

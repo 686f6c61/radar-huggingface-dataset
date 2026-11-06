@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ninja/out` es un ajuste fino (fine-tune) de GPT-2, el conocido transformer decoder-only de OpenAI, realizado por el usuario "ninja" y publicado en HuggingFace. Con 124,4 millones de parámetros, se trata de un modelo de tamaño pequeño, pensado para tareas de generación de texto. La model card es extremadamente escasa: no se especifica el dataset de entrenamiento, ni las capacidades concretas, ni se aportan benchmarks. El único dato de evaluación es una pérdida (loss) de validación de 0,4158 tras tres épocas.
+El modelo `ninja/out` es un ajuste fino (fine-tune) de GPT-2, el conocido transformer decoder-only de OpenAI, realizado por el usuario "ninja" y publicado en Hugging Face. Con 124,4 millones de parámetros, se trata de un modelo de tamaño pequeño, pensado para tareas de generación de texto. La model card es extremadamente escasa: no se especifica el dataset de entrenamiento, ni las capacidades concretas, ni se aportan benchmarks. El único dato de evaluación es una pérdida (loss) de validación de 0,4158 tras tres épocas.
 
 La relevancia de este modelo es limitada, ya que no aporta información sobre su propósito o rendimiento. Al ser un fine-tune de GPT-2, hereda la arquitectura y las limitaciones del modelo base, pero sin documentación adicional resulta difícil evaluar su utilidad práctica. Su licencia MIT permite uso comercial sin restricciones, lo que facilita su integración en proyectos propietarios, aunque la falta de transparencia sobre los datos de entrenamiento supone un riesgo para aplicaciones en producción.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ninja/out
+- Repositorio Hugging Face: https://huggingface.co/ninja/out
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 
 No se han encontrado otros enlaces relevantes (papers, blogs o demos) asociados a este modelo. Los resultados de búsqueda web sobre "Ninja AI" corresponden a plataformas comerciales no relacionadas con este repositorio.

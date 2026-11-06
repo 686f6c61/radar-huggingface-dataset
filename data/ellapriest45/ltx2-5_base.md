@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX2.5_base es un repositorio publicado por el usuario EllaPriest45 en HuggingFace que actúa como respaldo de los archivos necesarios para ejecutar LTX2.5, un modelo desarrollado por el equipo de LTX (Lightricks). Según la escasa información disponible, el repositorio contiene 21.004.025.600 parámetros y un tamaño total de 88,0 GB, con etiqueta "gguf", lo que sugiere que incluye pesos en formato GGUF para inferencia local. No se proporcionan detalles sobre la arquitectura, el entrenamiento, la licencia o los idiomas soportados, y el autor indica explícitamente que se trata de una copia de seguridad, dando crédito a los autores originales.
+LTX2.5_base es un repositorio publicado por el usuario EllaPriest45 en Hugging Face que actúa como respaldo de los archivos necesarios para ejecutar LTX2.5, un modelo desarrollado por el equipo de LTX (Lightricks). Según la escasa información disponible, el repositorio contiene 21.004.025.600 parámetros y un tamaño total de 88,0 GB, con etiqueta "gguf", lo que sugiere que incluye pesos en formato GGUF para inferencia local. No se proporcionan detalles sobre la arquitectura, el entrenamiento, la licencia o los idiomas soportados, y el autor indica explícitamente que se trata de una copia de seguridad, dando crédito a los autores originales.
 
 La relevancia de este repositorio radica en su función como respaldo accesible de un modelo que, por su nombre, parece ser la versión 2.5 de la serie LTX de Lightricks, conocida por sus modelos de generación de vídeo de código abierto. Sin embargo, al carecer de documentación oficial en esta página, cualquier uso en producción debe basarse en la información publicada por los desarrolladores originales. Este repositorio puede resultar útil para quienes necesiten acceder a los pesos del modelo sin depender de la disponibilidad del repositorio original, aunque se desconoce si incluye todos los componentes necesarios (tokenizador, configuración, etc.).
 
@@ -60,5 +60,5 @@ No disponible. No se conocen modelos comparables específicos sin más informaci
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/EllaPriest45/LTX2.5_base
+- Repositorio de Hugging Face: https://huggingface.co/EllaPriest45/LTX2.5_base
 - No se han encontrado enlaces adicionales (papers, blogs, repos oficiales) en la información proporcionada. Se recomienda buscar "LTX2.5 Lightricks" para localizar la documentación original.

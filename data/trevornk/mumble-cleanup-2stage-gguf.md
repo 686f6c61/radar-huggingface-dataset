@@ -81,7 +81,7 @@ La comparativa se basa únicamente en la información proporcionada. No se dispo
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/trevornk/mumble-cleanup-2stage-GGUF)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/trevornk/mumble-cleanup-2stage-GGUF)
 - [Modelo upstream `amitashwini/mumble-cleanup-2stage`](https://huggingface.co/amitashwini/mumble-cleanup-2stage)
 - [Modelo base `Qwen/Qwen2.5-0.5B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Repositorio Ramblr (app de ejemplo)](https://github.com/trevornk/ramblr)

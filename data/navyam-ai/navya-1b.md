@@ -2,7 +2,7 @@
 
 ## Resumen
 
-navya-1b es un modelo base de lenguaje de tamano reducido desarrollado por Navyam AI (Bachatt) y publicado en HuggingFace como navyam-ai/navya-1b. Se trata de un modelo entrenado desde cero, no como continuacion de otro modelo, con una arquitectura tipo Llama segun los tags de HuggingFace. El modelo tiene 337.691.648 parametros y esta orientado a un dominio muy concreto: finanzas personales de la India, con un corpus que combina ingles, hindi/hinglish y otras lenguas indias. Incluye un tokenizer personalizado de 64k tokens.
+navya-1b es un modelo base de lenguaje de tamano reducido desarrollado por Navyam AI (Bachatt) y publicado en Hugging Face como navyam-ai/navya-1b. Se trata de un modelo entrenado desde cero, no como continuacion de otro modelo, con una arquitectura tipo Llama segun los tags de Hugging Face. El modelo tiene 337.691.648 parametros y esta orientado a un dominio muy concreto: finanzas personales de la India, con un corpus que combina ingles, hindi/hinglish y otras lenguas indias. Incluye un tokenizer personalizado de 64k tokens.
 
 Su relevancia radica en que es un modelo de investigacion centrado en un mercado y dominio especificos, no un modelo generalista. El propio autor indica que su uso previsto es el de preguntas y respuestas sobre finanzas personales en la India y que no debe considerarse asesoramiento financiero. No se ha publicado la longitud de contexto ni el numero de tokens de entrenamiento, por lo que esas especificaciones quedan como no disponibles.
 
@@ -10,7 +10,7 @@ Su relevancia radica en que es un modelo de investigacion centrado en un mercado
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador causal (tipo Llama, segun tags de HuggingFace) |
+| Arquitectura | Transformer decodificador causal (tipo Llama, segun tags de Hugging Face) |
 | Parametros totales | 337.691.648 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ Su relevancia radica en que es un modelo de investigacion centrado en un mercado
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como un transformer causal decodificador, aunque la model card no especifica la arquitectura exacta. Los tags de HuggingFace lo clasifican como "llama", por lo que puede asumirse una estructura similar a la familia Llama. Fue entrenado desde cero sobre un corpus India-first compuesto por textos financieros, ingles, hindi/hinglish y otras lenguas indias. Dispone de un tokenizer personalizado de 64k tokens, disenado para cubrir vocabulario financiero y multilingue.
+El modelo se presenta como un transformer causal decodificador, aunque la model card no especifica la arquitectura exacta. Los tags de Hugging Face lo clasifican como "llama", por lo que puede asumirse una estructura similar a la familia Llama. Fue entrenado desde cero sobre un corpus India-first compuesto por textos financieros, ingles, hindi/hinglish y otras lenguas indias. Dispone de un tokenizer personalizado de 64k tokens, disenado para cubrir vocabulario financiero y multilingue.
 
 No se han publicado los datos de entrenamiento: el numero de tokens, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. El modelo es de tipo base, sin ajuste por instrucciones. Esta pensado para uso investigacion y desarrollo, no como producto final.
 
@@ -29,7 +29,7 @@ No se han publicado los datos de entrenamiento: el numero de tokens, la composic
 
 - Generacion de texto autoregresiva en ingles y hindi/hinglish, con especial atencion a finanzas personales de la India.
 - Tokenizer personalizado de 64k tokens, optimizado para el vocabulario financiero y multilingue del corpus.
-- Compatible con transformers y con text-generation-inference, segun los tags de HuggingFace.
+- Compatible con transformers y con text-generation-inference, segun los tags de Hugging Face.
 - Modelo base: no esta alineado por instrucciones, por lo que requiere prompting cuidadoso o ajuste fino para tareas concretas.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni razonamiento explicito.
 - No se han publicado resultados de benchmarks en la model card.
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| navya-1b | 337,69 M | No disponible | Apache-2.0 | No publicado | HuggingFace, safetensors |
-| Qwen2.5-0.5B | 494 M | 32.768 | Apache-2.0 | Benchmarks publicos | HuggingFace, GGUF |
-| TinyLlama-1.1B | 1.100 M | 2.048 | Apache-2.0 | Benchmarks publicos | HuggingFace, GGUF |
+| navya-1b | 337,69 M | No disponible | Apache-2.0 | No publicado | Hugging Face, safetensors |
+| Qwen2.5-0.5B | 494 M | 32.768 | Apache-2.0 | Benchmarks publicos | Hugging Face, GGUF |
+| TinyLlama-1.1B | 1.100 M | 2.048 | Apache-2.0 | Benchmarks publicos | Hugging Face, GGUF |
 
 La comparativa se limita a modelos base de tamano reducido. navya-1b se diferencia por estar entrenado desde cero y especializado en finanzas de la India, mientras que Qwen2.5-0.5B y TinyLlama-1.1B son modelos generalistas con mas documentacion y soporte de cuantizacion.
 
@@ -78,5 +78,5 @@ La comparativa se limita a modelos base de tamano reducido. navya-1b se diferenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/navyam-ai/navya-1b
+- Hugging Face: https://huggingface.co/navyam-ai/navya-1b
 - Codigo: https://github.com/bachatt-app/navyam-gpt

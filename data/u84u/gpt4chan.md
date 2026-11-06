@@ -4,7 +4,7 @@
 
 GPT-4chan es un modelo de lenguaje de gran tamaño (LLM) desarrollado por el investigador y youtuber Yannic Kilcher en junio de 2022. Consiste en un ajuste fino (fine-tuning) del modelo GPT-J de 6 mil millones de parámetros sobre un conjunto de datos de millones de publicaciones del tablón /pol/ de 4chan, correspondientes a un periodo de 3,5 años entre 2016 y 2019. El modelo fue creado con fines de investigación y provocación, y su lanzamiento generó una fuerte controversia en la comunidad de ética de la IA por el contenido extremadamente tóxico y discriminatorio de sus datos de entrenamiento.
 
-El repositorio `u84u/gpt4chan` en HuggingFace es una copia re-subida con acceso restringido (gated), que requiere aceptar condiciones adicionales. El tamaño del repositorio es de 231,5 GB, lo que sugiere que contiene los pesos del modelo en múltiples formatos o con precisión completa. La licencia declarada es Apache 2.0, aunque el modelo original de Kilcher no tenía una licencia claramente definida para uso comercial. El modelo es puramente generativo de texto y no incorpora capacidades adicionales como tool calling o razonamiento multimodal.
+El repositorio `u84u/gpt4chan` en Hugging Face es una copia re-subida con acceso restringido (gated), que requiere aceptar condiciones adicionales. El tamaño del repositorio es de 231,5 GB, lo que sugiere que contiene los pesos del modelo en múltiples formatos o con precisión completa. La licencia declarada es Apache 2.0, aunque el modelo original de Kilcher no tenía una licencia claramente definida para uso comercial. El modelo es puramente generativo de texto y no incorpora capacidades adicionales como tool calling o razonamiento multimodal.
 
 ## Especificaciones tecnicas
 
@@ -16,14 +16,14 @@ El repositorio `u84u/gpt4chan` en HuggingFace es una copia re-subida con acceso 
 | Longitud de contexto | no disponible (heredado de GPT-J, presumiblemente 2048 tokens) |
 | Tipos de cuantizacion | no disponible (el repositorio contiene pesos completos, sin cuantizaciones documentadas) |
 | Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 (segun HuggingFace) |
+| Licencia | Apache 2.0 (segun Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors o binarios, no especificado) |
 
 ## Arquitectura y entrenamiento
 
 GPT-4chan es un modelo causal de lenguaje basado en la arquitectura GPT-J, un transformer decoder con 6B parámetros. El entrenamiento consistió en un ajuste fino de GPT-J sobre un dataset de publicaciones anónimas del tablón /pol/ de 4chan, recopiladas entre 2016 y 2019. No se han publicado detalles técnicos sobre el proceso de fine-tuning, como el número de pasos, la tasa de aprendizaje o el uso de técnicas de alineación (RLHF, DPO). El modelo reproduce la distribución estadística de los textos de entrenamiento, lo que implica que genera contenido con el mismo tono, vocabulario y sesgos presentes en los datos originales.
 
-No se ha documentado ninguna innovación técnica específica más allá del fine-tuning estándar. El modelo se distribuye como un checkpoint de GPT-J, y su inferencia se realiza mediante la librería `transformers` de HuggingFace.
+No se ha documentado ninguna innovación técnica específica más allá del fine-tuning estándar. El modelo se distribuye como un checkpoint de GPT-J, y su inferencia se realiza mediante la librería `transformers` de Hugging Face.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Dado 
 ## Requisitos de hardware
 
 - El modelo tiene 6B parámetros, por lo que en precisión fp16 requiere aproximadamente 12 GB de VRAM para inferencia.
-- El repositorio de HuggingFace tiene un tamaño de 231,5 GB, lo que sugiere que contiene pesos en fp32 o múltiples formatos; para cargar el modelo completo en fp32 se necesitarían unos 24 GB de VRAM.
+- El repositorio de Hugging Face tiene un tamaño de 231,5 GB, lo que sugiere que contiene pesos en fp32 o múltiples formatos; para cargar el modelo completo en fp32 se necesitarían unos 24 GB de VRAM.
 - GPUs recomendadas: NVIDIA A100 (40 GB), RTX 3090 (24 GB), RTX 4090 (24 GB) o superiores para fp16. En fp32, solo GPUs con más de 24 GB.
 - No cabe en GPUs de consumo con menos de 16 GB de VRAM.
 - Opciones de despliegue: se puede servir con vLLM o TGI, aunque no hay configuraciones oficiales documentadas. También se puede ejecutar con `transformers` en Python.
@@ -71,14 +71,14 @@ GPT-4chan se diferencia de sus alternativas por su entrenamiento exclusivo en da
 
 - El modelo genera contenido extremadamente ofensivo, racista, sexista y violento, reflejando fielmente los mensajes de /pol/. Su uso conlleva un alto riesgo de producir discursos de odio.
 - No tiene ningún tipo de alineación ni filtro de seguridad; las generaciones pueden incluir insultos, teorías conspirativas y lenguaje deshumanizante.
-- La licencia Apache 2.0 permite uso comercial, pero el repositorio original de Kilcher no especificaba condiciones claras; el acceso restringido en HuggingFace sugiere que el uso está limitado a fines de investigación.
+- La licencia Apache 2.0 permite uso comercial, pero el repositorio original de Kilcher no especificaba condiciones claras; el acceso restringido en Hugging Face sugiere que el uso está limitado a fines de investigación.
 - El contexto de entrenamiento se limita a publicaciones de 2016-2019, por lo que el modelo no conoce eventos posteriores ni vocabulario actual.
 - No se han documentado sesgos específicos más allá de los inherentes a los datos de entrenamiento, pero son evidentes y graves.
 - No es adecuado para ningún escenario de producción real, ni siquiera para tareas de generación de texto genéricas, debido a su toxicidad y falta de fiabilidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/u84u/gpt4chan
+- Repositorio Hugging Face: https://huggingface.co/u84u/gpt4chan
 - Articulo de Wikipedia: https://en.wikipedia.org/wiki/GPT-4Chan
 - Resena en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/gpt-4chan-ykilcher
 - Articulo en Substack: https://annettevee.substack.com/p/gpt-4chan-a-pre-chatgpt-time-capsule

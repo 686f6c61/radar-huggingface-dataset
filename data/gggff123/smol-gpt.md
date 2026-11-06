@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smol-GPT (identificador `gggff123/Smol-GPT`) es un repositorio de pesos en formato GGUF publicado por el usuario gggff123 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un modelo propio del autor: la model card indica explícitamente que el artefacto se generó convirtiendo un modelo existente a GGUF mediante Unsloth, y los nombres de los ficheros (`SmolLM2-135M-Instruct.Q3_K_M.gguf`, `Q4_0`, `Q4_1`, `Q6_K`) apuntan a que la base es SmolLM2-135M-Instruct, aunque esto no se confirma en la información disponible.
+Smol-GPT (identificador `gggff123/Smol-GPT`) es un repositorio de pesos en formato GGUF publicado por el usuario gggff123 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un modelo propio del autor: la model card indica explícitamente que el artefacto se generó convirtiendo un modelo existente a GGUF mediante Unsloth, y los nombres de los ficheros (`SmolLM2-135M-Instruct.Q3_K_M.gguf`, `Q4_0`, `Q4_1`, `Q6_K`) apuntan a que la base es SmolLM2-135M-Instruct, aunque esto no se confirma en la información disponible.
 
 El dato verificable es el recuento de parámetros en los safetensors del repositorio: 134.515.584 parámetros, con un tamaño de repositorio de 1,1 GB. El modelo está etiquetado como `gguf`, `llama.cpp`, `llama-cpp`, `unsloth`, `endpoints_compatible`, `region:us` y `conversational`. No declara licencia, idiomas soportados ni pipeline.
 
@@ -91,7 +91,7 @@ No se dispone de benchmarks de Smol-GPT que permitan una comparación cuantitati
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/gggff123/Smol-GPT
+- Repositorio del modelo en Hugging Face: https://huggingface.co/gggff123/Smol-GPT
 - Unsloth (herramienta de conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en la model card): https://github.com/ggml-org/llama.cpp
 - Modelo base probable según los nombres de fichero, no confirmado por el autor: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

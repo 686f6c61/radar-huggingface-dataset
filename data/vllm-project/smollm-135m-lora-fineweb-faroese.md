@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/smollm-135m-lora-fineweb-faroese
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/smollm-135m-lora-fineweb-faroese
 - Modelo original: https://huggingface.co/jekunz/smollm-135m-lora-fineweb-faroese
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Dataset: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

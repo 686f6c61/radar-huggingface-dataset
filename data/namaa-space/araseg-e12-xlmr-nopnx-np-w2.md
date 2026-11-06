@@ -6,7 +6,7 @@
 
 El modelo parte de `FacebookAI/xlm-roberta-large` y se ha afinado por completo (full fine-tune) sobre 560M (segun la model card), con licencia MIT heredada del modelo base. El sistema completo del que forma parte alcanza 86,49 de macro-F1 en el practice test y 87,0 de macro-F1 en el conjunto ciego (blind) del shared task, con un umbral de sistema de 0,34. Estas cifras corresponden al ensemble, no a este miembro aislado, y el propio autor advierte que usado en solitario no reproduce ninguna puntuacion publicada.
 
-Su relevancia es fundamentalmente de investigacion y reproducibilidad: documenta una arquitectura de ensemble poco habitual (decodificador MEMM estructural sobre votantes neuronales) aplicada a la segmentacion morfologica del arabe, un problema con impacto directo en tokenizacion, analisis morfologico y preprocesado de corpus arabes. La distribucion de pesos en formato `state_dict` crudo, en lugar de un checkpoint compatible con HuggingFace, condiciona por completo su uso practico.
+Su relevancia es fundamentalmente de investigacion y reproducibilidad: documenta una arquitectura de ensemble poco habitual (decodificador MEMM estructural sobre votantes neuronales) aplicada a la segmentacion morfologica del arabe, un problema con impacto directo en tokenizacion, analisis morfologico y preprocesado de corpus arabes. La distribucion de pesos en formato `state_dict` crudo, en lugar de un checkpoint compatible con Hugging Face, condiciona por completo su uso practico.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente de investigacion y reproducibilidad: documenta
 | Tipos de cuantizacion | No disponible (el repositorio distribuye un `state_dict` de PyTorch, no checkpoints cuantizados) |
 | Idiomas soportados | Arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_NP.pt`); no es un checkpoint en formato HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_NP.pt`); no es un checkpoint en formato Hugging Face |
 | Subtarea | NoPnx-NP (AraSeg 2026) |
 | Rol en el sistema | Miembro votante de un decodificador MEMM estructural ajustado con OOF sobre 7 miembros |
 | Umbral del sistema | 0,34 |
@@ -71,7 +71,7 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks g
 - VRAM estimada para inferencia: el repositorio ocupa 2,2 GB y corresponde a un modelo de aproximadamente 560M de parametros, por lo que la inferencia en fp32 requiere del orden de 2,5 a 3 GB de VRAM, y en fp16 alrededor de 1,2 a 1,5 GB. Son estimaciones derivadas del tamano del checkpoint, no cifras publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp32 o 2 GB para fp16. Una RTX 3060, RTX 4060, RTX 4090, A100 o H100 son mas que suficientes; el modelo no requiere aceleradores de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo moderna e incluso podria ejecutarse en CPU con latencias aceptables para lotes pequenos.
-- Opciones de despliegue: vLLM, TGI y Ollama no son aplicables directamente, ya que el repositorio no contiene un checkpoint en formato HuggingFace. El despliegue requiere construir la arquitectura desde el YAML de configuracion del experimento, cargar el `state_dict` con `torch.load` y ejecutar inferencia con PyTorch. Los cinco miembros LoRA del ensemble necesitan `transformers==5.12.1`; el stack completo esta fijado en `requirements-llm.txt` del repositorio de codigo.
+- Opciones de despliegue: vLLM, TGI y Ollama no son aplicables directamente, ya que el repositorio no contiene un checkpoint en formato Hugging Face. El despliegue requiere construir la arquitectura desde el YAML de configuracion del experimento, cargar el `state_dict` con `torch.load` y ejecutar inferencia con PyTorch. Los cinco miembros LoRA del ensemble necesitan `transformers==5.12.1`; el stack completo esta fijado en `requirements-llm.txt` del repositorio de codigo.
 - Latencia y throughput: no disponibles. Al tratarse de un encoder de 560M sobre secuencias de hasta 512 tokens, se espera un throughput alto en GPU, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Los resultados del sistema completo (86,49 / 87,0 macro-F1) no son comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e12-xlmr-nopnx-np-w2
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e12-xlmr-nopnx-np-w2
 - Coleccion AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wilsonlhidayat/course-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario wilsonlhidayat. Se presenta explícitamente como un esqueleto de arquitectura CNN-Transformer orientado a aprendizaje contrastivo, con una configuración de tipo "huge" en la documentación pero un checkpoint de safetensors que contiene únicamente 16.576 parámetros totales. El propio autor advierte que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
+`wilsonlhidayat/course-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario wilsonlhidayat. Se presenta explícitamente como un esqueleto de arquitectura CNN-Transformer orientado a aprendizaje contrastivo, con una configuración de tipo "huge" en la documentación pero un checkpoint de safetensors que contiene únicamente 16.576 parámetros totales. El propio autor advierte que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
 El repositorio no reclama ninguna métrica de rendimiento y no incluye pipeline declarado, idiomas soportados ni datos de entrenamiento. Su interés no radica en capacidades de inferencia reales, sino en servir como punto de partida reproducible para experimentos de investigación con fusión por cross attention, atención dispersa, activación ReLU y normalización InstanceNorm.
 
@@ -48,7 +48,7 @@ No hay información sobre el conjunto de datos de entrenamiento, el número de t
 - Pruebas de humo en CI/CD: verificar que un pipeline de carga de safetensors, instanciación del modelo y forward pass funciona antes de integrar código real, dado que el checkpoint es válido para inicialización pero no para inferencia útil.
 - Andamiaje de investigación en aprendizaje contrastivo: partir de una implementación funcional con cross attention y atención dispersa para experimentar con funciones de pérdida contrastivas sin escribir la arquitectura desde cero.
 - Reproducibilidad de experimentos: usar `config.json` y `training_args.json` como plantilla de receta (Adafactor, planificador step) para comparar líneas base bajo el mismo presupuesto de ajuste y las mismas semillas.
-- Docencia y formación: ilustrar la estructura de un repositorio de modelo en HuggingFace (pesos, configuración, argumentos de entrenamiento, README) y la diferencia entre un checkpoint inicializado y uno entrenado.
+- Docencia y formación: ilustrar la estructura de un repositorio de modelo en Hugging Face (pesos, configuración, argumentos de entrenamiento, README) y la diferencia entre un checkpoint inicializado y uno entrenado.
 - Pruebas de integración de infraestructura: validar rutas de carga, serialización y versionado de artefactos en un entorno de despliegue con un modelo de 16.576 parámetros que no requiere GPU.
 - Validación de herramientas de cuantización o de exportación: comprobar que scripts propios de conversión a GGUF u otros formatos manejan correctamente una arquitectura CNN-Transformer personalizada antes de aplicarlos a modelos mayores.
 - Referencia para diseño de experimentos: el propio autor propone evaluar sobre un conjunto de validación específico de la tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad equivalente.
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wilsonlhidayat/course-contrastive | 16.576 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | HuggingFace |
+| wilsonlhidayat/course-contrastive | 16.576 | no disponible | no disponible (checkpoint sin entrenar) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wilsonlhidayat/course-contrastive
+- Modelo en Hugging Face: https://huggingface.co/wilsonlhidayat/course-contrastive
 - Fichero `pipeline.py` (punto de entrada principal, incluido en el repositorio anterior)
 - Fichero `config.json` (configuración de arquitectura, incluido en el repositorio anterior)
 - Fichero `training_args.json` (receta de experimento por defecto, incluido en el repositorio anterior)

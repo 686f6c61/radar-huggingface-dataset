@@ -83,7 +83,7 @@ La comparativa se limita a la propia familia Ministral 3 porque la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keras/ministral_3_3b_reasoning_2512_en
+- Repositorio Hugging Face: https://huggingface.co/keras/ministral_3_3b_reasoning_2512_en
 - Mistral AI: https://mistral.ai/
 - Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

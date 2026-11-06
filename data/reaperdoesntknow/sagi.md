@@ -81,7 +81,7 @@ No se dispone de benchmarks comparativos entre estos modelos. SAGI se distingue 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/SAGI
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/SAGI
 - Colección SAGI: https://huggingface.co/collections/reaperdoesntknow/sagi-swarm-agi-language-model
 - Modelo relacionado S-AGI: https://huggingface.co/reaperdoesntknow/S-AGI
 - Modelo relacionado SharperSwarm: https://huggingface.co/reaperdoesntknow/SharperSwarm

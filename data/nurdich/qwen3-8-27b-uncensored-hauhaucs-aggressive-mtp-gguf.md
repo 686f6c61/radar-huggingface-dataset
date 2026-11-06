@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nurdich/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF` es una versión "uncensored" (sin censura) del modelo Qwen3.8-27B, desarrollada por HauhauCS y publicada en HuggingFace por el usuario nurdich. Se trata de un modelo denso de 27.000 millones de parámetros con arquitectura híbrida (atención gated y capas Gated DeltaNet), encoder de visión y capacidades multimodales (imagen, video y texto). La variante "Aggressive" elimina por completo el comportamiento de rechazo: según la model card, obtiene 0/465 refusals en pruebas internas, ofreciendo respuestas directas y sin preámbulos en prompts difíciles.
+El modelo `nurdich/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF` es una versión "uncensored" (sin censura) del modelo Qwen3.8-27B, desarrollada por HauhauCS y publicada en Hugging Face por el usuario nurdich. Se trata de un modelo denso de 27.000 millones de parámetros con arquitectura híbrida (atención gated y capas Gated DeltaNet), encoder de visión y capacidades multimodales (imagen, video y texto). La variante "Aggressive" elimina por completo el comportamiento de rechazo: según la model card, obtiene 0/465 refusals en pruebas internas, ofreciendo respuestas directas y sin preámbulos en prompts difíciles.
 
 La relevancia de este lanzamiento reside en tres aspectos: preserva íntegramente las capacidades del modelo base (razonamiento, agentes, tool calling, visión), incorpora una ventana de contexto nativa de 262.144 tokens extensible a 1.000.000, y añade el sidecar HauhauCS FastMTP, un perfil de decodificación especulativa que acelera la generación hasta 3,02× en documentos y 1,93× en razonamiento frente a la versión sin MTP. Todo el paquete se distribuye en formato GGUF con cuantizaciones personalizadas K_P ("Perfect") que optimizan la calidad por nivel de compresión, y es compatible con runtimes estándar como llama.cpp, LM Studio u Ollama.
 
@@ -93,8 +93,8 @@ No se dispone de benchmarks comparativos numéricos entre estas variantes. La di
 
 ## Enlaces
 
-- Repositorio HuggingFace (nurdich): https://huggingface.co/nurdich/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
-- Repositorio HuggingFace original (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face (nurdich): https://huggingface.co/nurdich/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face original (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub con pack uncensored y tag de Ollama: https://github.com/Wassimyounes01/qwen38-uncensored
 - Informe independiente de ejecución en RTX 5090: https://johnpaulwile.substack.com/p/i-ran-qwen-38-27b-on-a-single-rtx

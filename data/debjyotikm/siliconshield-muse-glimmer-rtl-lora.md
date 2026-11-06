@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiliconShield Muse Glimmer RTL | no disponible (base 30B) | 2.048 | 96,36% en desarrollo combinado (no independiente) | Apache 2.0 | HuggingFace |
+| SiliconShield Muse Glimmer RTL | no disponible (base 30B) | 2.048 | 96,36% en desarrollo combinado (no independiente) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/debjyotikm/siliconshield-muse-glimmer-rtl-lora
+- Repositorio Hugging Face: https://huggingface.co/debjyotikm/siliconshield-muse-glimmer-rtl-lora
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Research paper (whitepaper): docs/whitepaper.md (dentro del repositorio)
 - Guía de entrenamiento y construcción de datos: docs/training-guide.md (dentro del repositorio)

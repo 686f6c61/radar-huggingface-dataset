@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwable-Ex es un checkpoint experimental de 9.407.823.088 parametros (aproximadamente 9,4B) publicado por el usuario charlieduzstuf en HuggingFace. Se trata de un merge lineal realizado con Mergekit sobre cuatro modelos de la familia Qwen3.5-9B: el fine-tune Qwable-9B-Claude-Fable-5 de empero-ai, Qwen3.5-9B-Qworus-V2 de DarkKitsune, qwepus de Netuoso y el propio Qwen/Qwen3.5-9B como ascendiente comun. El objetivo declarado es combinar el razonamiento estructurado de estilo trace de Qwable con las capacidades de coding agentico, tool-use y planificacion de los otros componentes.
+Qwable-Ex es un checkpoint experimental de 9.407.823.088 parametros (aproximadamente 9,4B) publicado por el usuario charlieduzstuf en Hugging Face. Se trata de un merge lineal realizado con Mergekit sobre cuatro modelos de la familia Qwen3.5-9B: el fine-tune Qwable-9B-Claude-Fable-5 de empero-ai, Qwen3.5-9B-Qworus-V2 de DarkKitsune, qwepus de Netuoso y el propio Qwen/Qwen3.5-9B como ascendiente comun. El objetivo declarado es combinar el razonamiento estructurado de estilo trace de Qwable con las capacidades de coding agentico, tool-use y planificacion de los otros componentes.
 
 El modelo hereda la arquitectura de Qwen3.5-9B, descrita en la propia model card como densa con un esquema hibrido de Gated DeltaNet mas atencion completa, lo que lo situa en la tendencia reciente de arquitecturas hibridas que combinan mecanismos de estado (linear attention) con atencion clasica. La model card indica que la arquitectura nativa es multimodal (image-text-to-text en los tags) con soporte de contexto largo, aunque el fine-tune principal (Qwable-9B-Claude-Fable-5) congelo la torre de vision y se entreno solo con texto.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| charlieduzstuf/Qwable-Ex | 9,4B | no disponible | Merge lineal de 4 checkpoints Qwen3.5-9B | MIT | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B | aprox. 9B | no disponible | Modelo base original, multimodal | Apache-2.0 (segun la model card) | HuggingFace |
-| empero-ai/Qwable-9B-Claude-Fable-5 | aprox. 9B | no disponible | SFT completo sobre trazas de razonamiento/coding | no disponible | HuggingFace |
-| DarkKitsune/Qwen3.5-9B-Qworus-V2 | aprox. 9B | no disponible | Merge DARE-TIES 50/50 | no disponible | HuggingFace |
+| charlieduzstuf/Qwable-Ex | 9,4B | no disponible | Merge lineal de 4 checkpoints Qwen3.5-9B | MIT | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B | aprox. 9B | no disponible | Modelo base original, multimodal | Apache-2.0 (segun la model card) | Hugging Face |
+| empero-ai/Qwable-9B-Claude-Fable-5 | aprox. 9B | no disponible | SFT completo sobre trazas de razonamiento/coding | no disponible | Hugging Face |
+| DarkKitsune/Qwen3.5-9B-Qworus-V2 | aprox. 9B | no disponible | Merge DARE-TIES 50/50 | no disponible | Hugging Face |
 
 Los cuatro modelos comparten la misma estirpe arquitectonica (Qwen3.5-9B) y un tamano de parametros equivalente. Las diferencias relevantes son el metodo de construccion (base original frente a SFT frente a merge DARE-TIES frente a merge lineal) y los datos concretos de rendimiento, que no se han publicado para ninguno en la informacion disponible.
 
@@ -90,8 +90,8 @@ Los cuatro modelos comparten la misma estirpe arquitectonica (Qwen3.5-9B) y un t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charlieduzstuf/Qwable-Ex
-- Perfil del autor en HuggingFace: https://huggingface.co/charlieduzstuf
+- Modelo en Hugging Face: https://huggingface.co/charlieduzstuf/Qwable-Ex
+- Perfil del autor en Hugging Face: https://huggingface.co/charlieduzstuf
 - Perfil del autor en GitHub: https://github.com/charlieduzstuf
 - Componente empero-ai/Qwable-9B-Claude-Fable-5: https://huggingface.co/empero-ai/Qwable-9B-Claude-Fable-5
 - Componente DarkKitsune/Qwen3.5-9B-Qworus-V2: https://huggingface.co/DarkKitsune/Qwen3.5-9B-Qworus-V2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`medalikech/whisper-small-tunisian-derja-lora` es un repositorio publicado en HuggingFace cuyo identificador sugiere un ajuste fino mediante LoRA sobre el modelo Whisper small de OpenAI, orientado a reconocimiento automatico del habla (ASR) en tunecino (derja). La inferencia procede del propio nombre del repositorio y de la libreria declarada (`transformers`); la model card no confirma ningun detalle adicional.
+`medalikech/whisper-small-tunisian-derja-lora` es un repositorio publicado en Hugging Face cuyo identificador sugiere un ajuste fino mediante LoRA sobre el modelo Whisper small de OpenAI, orientado a reconocimiento automatico del habla (ASR) en tunecino (derja). La inferencia procede del propio nombre del repositorio y de la libreria declarada (`transformers`); la model card no confirma ningun detalle adicional.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no ha sido editada: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) contienen el marcador `[More Information Needed]`. El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB, lo que es coherente con un adaptador LoRA de dimension reducida, aunque no permite verificar que los pesos esten efectivamente subidos.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no ha sido editada: todas las secciones relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) contienen el marcador `[More Information Needed]`. El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB, lo que es coherente con un adaptador LoRA de dimension reducida, aunque no permite verificar que los pesos esten efectivamente subidos.
 
 El proposito declarado implicito es cubrir una laguna real: la mayoria de sistemas ASR comerciales rinden de forma deficiente en dialectos arabes no estandar, y el derja tunecino apenas cuenta con recursos abiertos. Sin embargo, en el momento de redactar esta ficha no existe ninguna evidencia publicada de calidad, cobertura o funcionamiento del modelo, por lo que debe tratarse como un artefacto no validado.
 
@@ -27,7 +27,7 @@ Datos adicionales verificables: el repositorio esta etiquetado como `endpoints_c
 
 No hay informacion proporcionada por el autor sobre la arquitectura concreta, el procedimiento de entrenamiento, el numero de tokens o horas de audio utilizados, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineamiento como RLHF o DPO. La model card incluye las secciones de "Training Data", "Training Procedure", "Preprocessing", "Training Hyperparameters" y "Speeds, Sizes, Times", pero todas ellas contienen `[More Information Needed]`.
 
-El unico indicio estructural es el sufijo `-lora` del identificador, que sugiere un adaptador de bajo rango sobre un checkpoint preentrenado de Whisper small, y el tag `safetensors`. El tag `arxiv:1910.09700` no corresponde al paper de Whisper: ese identificador de arXiv es el articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla de impacto ambiental de HuggingFace. No debe interpretarse, por tanto, como referencia a la publicacion tecnica del modelo base.
+El unico indicio estructural es el sufijo `-lora` del identificador, que sugiere un adaptador de bajo rango sobre un checkpoint preentrenado de Whisper small, y el tag `safetensors`. El tag `arxiv:1910.09700` no corresponde al paper de Whisper: ese identificador de arXiv es el articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla de impacto ambiental de Hugging Face. No debe interpretarse, por tanto, como referencia a la publicacion tecnica del modelo base.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto (audio) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medalikech/whisper-small-tunisian-derja-lora | no disponible | no disponible | no disponible (derja, inferido) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| medalikech/whisper-small-tunisian-derja-lora | no disponible | no disponible | no disponible (derja, inferido) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Whisper small (OpenAI) | 244 M | ventanas de 30 s | multilingue (99 idiomas en la version multilingual) | MIT | ampliamente desplegado |
 | Otros ajustes de Whisper para dialectos arabes | no disponible | no disponible | no disponible | no disponible | no se ha localizado informacion comparable en la busqueda realizada |
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/medalikech/whisper-small-tunisian-derja-lora
+- Repositorio en Hugging Face: https://huggingface.co/medalikech/whisper-small-tunisian-derja-lora
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - Paper tecnico del modelo base Whisper (no enlazado en el repositorio, incluido como referencia de contexto): https://arxiv.org/abs/2212.04356

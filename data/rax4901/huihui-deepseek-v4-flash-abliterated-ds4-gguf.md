@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF es una versión cuantizada y "abliterada" (sin filtros de seguridad) de DeepSeek-V4-Flash, el modelo MoE de DeepSeek, publicada por el usuario rax4901 en HuggingFace con contribuciones de antirez y huihui.ai. La abliteración elimina las capas de rechazo del modelo original, produciendo una variante sin censura orientada a investigación y experimentación en entornos controlados.
+Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF es una versión cuantizada y "abliterada" (sin filtros de seguridad) de DeepSeek-V4-Flash, el modelo MoE de DeepSeek, publicada por el usuario rax4901 en Hugging Face con contribuciones de antirez y huihui.ai. La abliteración elimina las capas de rechazo del modelo original, produciendo una variante sin censura orientada a investigación y experimentación en entornos controlados.
 
 El repositorio ofrece cuatro cuantizaciones GGUF (dos de 2 bits y una de 2 y 4 bits) optimizadas específicamente para el motor de inferencia ds4 de antirez y para llama.cpp (fork Fringe210), con soporte de múltiples GPU y Metal en Apple Silicon. El tamaño total del modelo base es de aproximadamente 284.335 millones de parámetros (dato real de safetensors), lo que lo sitúa en la categoría de modelos MoE de gran escala.
 
@@ -95,7 +95,7 @@ La diferencia principal frente al modelo base es la abliteración (sin filtros d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rax4901/Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/rax4901/Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Motor ds4 (antirez): https://github.com/antirez/ds4
 - Fork de llama.cpp para DeepSeek-V4-Flash: https://github.com/Fringe210/llama.cpp-deepseek-v4-flash-cuda

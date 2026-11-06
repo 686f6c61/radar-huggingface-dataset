@@ -86,7 +86,7 @@ La comparativa directa con alternativas de la misma categoria (suites TTS en dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StableDiffusionVN/lazibook
+- Repositorio Hugging Face: https://huggingface.co/StableDiffusionVN/lazibook
 - VieNeu-TTS v3 Turbo: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - VieNeu-TTS v3 Nano: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Nano
 - sea-g2p (G2P vietnamita): https://github.com/pnnbao97/sea-g2p

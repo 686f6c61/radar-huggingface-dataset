@@ -96,8 +96,8 @@ Resultados por familia (aciertos / total):
 
 | Modelo | Parámetros | Contexto | JevBench overall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vera-core | ~2B | 8K | 77,9 | Apache-2.0 | HuggingFace (discontinuado en favor de vera-core-2) |
-| vera-spark | ~630M | no disponible | 68,8 | no disponible en la información | HuggingFace |
+| vera-core | ~2B | 8K | 77,9 | Apache-2.0 | Hugging Face (discontinuado en favor de vera-core-2) |
+| vera-spark | ~630M | no disponible | 68,8 | no disponible en la información | Hugging Face |
 | Jev (referencia) | no disponible | no disponible | no disponible (easy 100, original 99, hard 74,1) | no disponible | no disponible |
 | Laya | 421M | no disponible | no disponible (easy 94, original 73, hard 34) | no disponible | leaderboard público |
 | Julia-1 | 144M | no disponible | 47,2 | no disponible | no disponible |
@@ -118,7 +118,7 @@ Resultados por familia (aciertos / total):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-core
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-core
 - Versión sucesora: https://huggingface.co/scar-ai/vera-core-2
 - Modelo compacto relacionado: https://huggingface.co/scar-ai/vera-spark
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg
 - Modelo base: https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base
 - Colección de modelos base de geodesic-research: https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-base-models
 - Paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment": no se ha encontrado enlace directo en la información proporcionada, pero se referencia en la documentación del modelo base.

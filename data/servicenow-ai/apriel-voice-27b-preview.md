@@ -108,7 +108,7 @@ Entre los sistemas de código abierto evaluados, Apriel Voice lidera claramente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview
+- Modelo en Hugging Face: https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview
 - Demo Apriel Live: https://servicenow-ai-apriel.hf.space/home
 - Blog de anuncio: https://servicenow-ai-apriel.hf.space/blog/apriel-voice-preview
 - Informe técnico: https://servicenow-ai-apriel.hf.space/documents/apriel-voice-preview-tech-report

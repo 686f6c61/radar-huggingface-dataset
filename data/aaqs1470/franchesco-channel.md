@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaqs1470/Franchesco.Channel` es un repositorio alojado en HuggingFace por el usuario `aaqs1470` cuyo contenido técnico no está documentado públicamente. La model card publicada se limita a una cabecera YAML con la licencia `unlicense` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de familia de modelo, y registra cero descargas y cero likes en el momento de la consulta.
+`aaqs1470/Franchesco.Channel` es un repositorio alojado en Hugging Face por el usuario `aaqs1470` cuyo contenido técnico no está documentado públicamente. La model card publicada se limita a una cabecera YAML con la licencia `unlicense` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de familia de modelo, y registra cero descargas y cero likes en el momento de la consulta.
 
 El único dato cuantitativo disponible es el tamaño del repositorio, 1,9 GB, y las marcas temporales de creación y actualización (25 de octubre de 2026, con 39 minutos entre ambas). Ese volumen es compatible con pesos en precisión reducida de un modelo de escala pequeña o mediana, pero no permite determinar parámetros, arquitectura ni contexto: cualquier afirmación en ese sentido sería especulativa.
 
@@ -98,7 +98,7 @@ No disponible. Al no conocerse la arquitectura, el número de parámetros ni la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaqs1470/Franchesco.Channel
+- Repositorio en Hugging Face: https://huggingface.co/aaqs1470/Franchesco.Channel
 - Model card del autor: no disponible (sin contenido descriptivo)
 - Paper técnico: no disponible
 - Blog o anuncio: no disponible

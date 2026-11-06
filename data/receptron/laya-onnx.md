@@ -74,9 +74,9 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| receptron/laya-onnx | 421 M | no disponible | Logits por marcador + probabilidad de acción | Apache 2.0 (MIT en código de exportación) | HuggingFace, npm |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| ModernBERT-large (arquitectura base) | ~395 M según documentación pública del encoder | no disponible en la información proporcionada | Representaciones de secuencia | Apache 2.0 | HuggingFace |
+| receptron/laya-onnx | 421 M | no disponible | Logits por marcador + probabilidad de acción | Apache 2.0 (MIT en código de exportación) | Hugging Face, npm |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| ModernBERT-large (arquitectura base) | ~395 M según documentación pública del encoder | no disponible en la información proporcionada | Representaciones de secuencia | Apache 2.0 | Hugging Face |
 
 La comparación con otros decisores entrenados por RL no es posible con los datos disponibles, ya que no se publican métricas comunes ni alternativas equivalentes en el mismo formato y licencia.
 
@@ -95,7 +95,7 @@ La comparación con otros decisores entrenados por RL no es posible con los dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/receptron/laya-onnx
+- Modelo en Hugging Face: https://huggingface.co/receptron/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de código (exportación y cliente): https://github.com/receptron/laya
 - Script de exportación: https://github.com/receptron/laya/blob/main/export/export_onnx.py

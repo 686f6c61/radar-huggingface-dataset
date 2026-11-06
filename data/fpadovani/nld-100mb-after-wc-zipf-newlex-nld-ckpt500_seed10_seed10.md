@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10` es un ajuste fino (fine-tuning) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10`, desarrollado por el usuario fpadovani. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), lo que lo situa en el rango de GPT-2 small. El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de HuggingFace.
+El modelo `nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10` es un ajuste fino (fine-tuning) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10`, desarrollado por el usuario fpadovani. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), lo que lo situa en el rango de GPT-2 small. El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de Hugging Face.
 
 El modelo esta pensado para generacion de texto y se distribuye en formato safetensors con soporte para transformers y text-generation-inference. Por su tamano reducido es un modelo ligero, apto para experimentacion, prototipado rapido e investigacion academica, mas que para tareas de produccion de alta exigencia.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Fine-tune GPT-2 con SFT sobre modelo propio; sin benchmarks publicados |
+| fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Fine-tune GPT-2 con SFT sobre modelo propio; sin benchmarks publicados |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Modelo base de referencia; mismo orden de magnitud en parametros |
 | DistilGPT2 | 82 M | 1024 tokens | MIT (derivado de GPT-2) | Ampliamente disponible | Version destilada, mas ligera y rapida, pensada para generacion |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible | Mayor capacidad a costa de mas recursos |
@@ -92,7 +92,7 @@ La comparacion con GPT-2 small y DistilGPT2 se ofrece como referencia de categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10
+- Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/2vhatlsk
 - Repositorio de TRL: https://github.com/huggingface/trl

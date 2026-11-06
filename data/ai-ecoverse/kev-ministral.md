@@ -6,7 +6,7 @@ kev-ministral es un bundle de inferencia en navegador publicado por ai-ecoverse 
 
 La propuesta técnica es inusual: un único conjunto de pesos (aproximadamente 6,6 GB) sirve tres formas de tarea distintas desde la misma sesión de inferencia. Con `lora_scale = 1` el grafo se comporta como modelo de decisión (selección de opciones en menús de navegador con probabilidades calibradas); con `lora_scale = 0` las ramas LoRA quedan desactivadas y el grafo reproduce el modelo base, lo que permite generar texto, resumir y describir imágenes. El LoRA no está fusionado en los pesos del decoder, sino que vive como ramas con puerta controladas por una entrada del grafo, lo que evita duplicar los 4,1 GB del decoder.
 
-El interés actual del modelo es doble. Por un lado, demuestra que un adaptador de decisión sobre una base de 3,4B supera en su tarea específica a alternativas mayores ya publicadas: 69,0 de precisión de paso en webs no vistas de Mind2Web frente a 57,6 de kev-4b-vision (Qwen3.5-4B). Por otro, valida un patrón de despliegue íntegramente en el cliente, sin servidor, con Chrome y WebGPU como único requisito de ejecución. El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y la metadata de HuggingFace reporta un tamaño de repo de 0,0 GB pese a que el bundle descrito suma 6,6 GB.
+El interés actual del modelo es doble. Por un lado, demuestra que un adaptador de decisión sobre una base de 3,4B supera en su tarea específica a alternativas mayores ya publicadas: 69,0 de precisión de paso en webs no vistas de Mind2Web frente a 57,6 de kev-4b-vision (Qwen3.5-4B). Por otro, valida un patrón de despliegue íntegramente en el cliente, sin servidor, con Chrome y WebGPU como único requisito de ejecución. El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y la metadata de Hugging Face reporta un tamaño de repo de 0,0 GB pese a que el bundle descrito suma 6,6 GB.
 
 ## Especificaciones tecnicas
 
@@ -110,13 +110,13 @@ La comparación se limita a los tres modelos reportados por el propio autor en s
 - La longitud de contexto no se especifica, lo que impide planificar tareas que dependan de ventanas largas.
 - Los datos de entrenamiento incluyen Multimodal-Mind2Web, publicado bajo OpenRAIL y descrito por sus autores como datos de investigación, y la suite `decision-v7` de Kev, compuesta por datasets públicos con sus propios términos. Estos términos pueden imponer condiciones adicionales al uso comercial, más allá de la licencia Apache-2.0 del bundle.
 - La calibración de las probabilidades depende de la temperatura ajustada (2,2) de la cabeza pointer; recalibrar sobre otro dominio exigiría reajustar ese valor.
-- La discrepancia entre el tamaño de repo reportado por HuggingFace (0,0 GB) y los 6,6 GB descritos en la model card conviene verificarla antes de integrar el modelo en un pipeline automatizado.
+- La discrepancia entre el tamaño de repo reportado por Hugging Face (0,0 GB) y los 6,6 GB descritos en la model card conviene verificarla antes de integrar el modelo en un pipeline automatizado.
 - El repositorio no tiene descargas ni likes registrados, por lo que no existe validación comunitaria independiente de los resultados publicados.
 - No se han publicado evaluaciones de sesgo, alucinación o robustez fuera de las tareas de decisión descritas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-ecoverse/kev-ministral
+- Modelo en Hugging Face: https://huggingface.co/ai-ecoverse/kev-ministral
 - Demo en vivo: https://ai-ecoverse.github.io/kev.js/ministral.html
 - Código de kev.js (`demo/ministral/`): https://github.com/ai-ecoverse/kev.js
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Base-2512

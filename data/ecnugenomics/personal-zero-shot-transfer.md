@@ -12,7 +12,7 @@ El interés actual de este repositorio es metodológico más que práctico: sirv
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no describe arquitectura de red; la etiqueta `transformer` figura en los tags de HuggingFace, sin detalle) |
+| Arquitectura | no disponible (el repositorio no describe arquitectura de red; la etiqueta `transformer` figura en los tags de Hugging Face, sin detalle) |
 | Parametros totales | 16.576 (según metadatos de safetensors del repositorio) |
 | Parametros activos | no aplica (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El interés actual de este repositorio es metodológico más que práctico: sirv
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre arquitectura de red, número de capas, dimensiones ocultas, mecanismo de atención ni tipo de tokenizador. La model card no describe ningún proceso de entrenamiento: no se indican tokens de entrenamiento, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. El único tag relacionado con arquitectura es `transformer`, que en HuggingFace se aplica a menudo de forma genérica y aquí no viene respaldado por ninguna especificación.
+No hay información disponible sobre arquitectura de red, número de capas, dimensiones ocultas, mecanismo de atención ni tipo de tokenizador. La model card no describe ningún proceso de entrenamiento: no se indican tokens de entrenamiento, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. El único tag relacionado con arquitectura es `transformer`, que en Hugging Face se aplica a menudo de forma genérica y aquí no viene respaldado por ninguna especificación.
 
 El repositorio se define como una nota exploratoria con hipótesis y plan de evaluación, no como un artefacto entrenado. El autor especifica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, seeds, hardware y logs en bruto. Esto implica que, en el estado actual, no existe evidencia de entrenamiento ni de evaluación ejecutada.
 
@@ -77,7 +77,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 - No es un modelo utilizable: no hay checkpoint, tokenizador, pipeline ni configuración de inferencia publicados.
 - Riesgo de interpretación errónea: el título y los tags (`zero-shot-transfer`, `transformer`) pueden inducir a pensar que existe un modelo funcional; la model card lo desmiente de forma explícita.
-- Los tags de HuggingFace incluyen `transformer`, pero no hay ninguna especificación técnica que lo respalde; tómese como etiqueta de clasificación, no como descripción de arquitectura.
+- Los tags de Hugging Face incluyen `transformer`, pero no hay ninguna especificación técnica que lo respalde; tómese como etiqueta de clasificación, no como descripción de arquitectura.
 - Sin datos de sesgo, alucinación o comportamiento lingüístico, porque no hay modelo que evaluar.
 - Licencia MIT permite reutilización del texto de la nota, pero el propio autor advierte de que los términos de las fuentes de datos externas deben revisarse por separado si el material se usa con datasets de terceros.
 - Las fecha de creación y actualización de los metadatos (2026-10-05) es anómala respecto al momento habitual de consulta; conviene verificarla antes de citar el repositorio.
@@ -86,6 +86,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ecnugenomics/personal-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/ecnugenomics/personal-zero-shot-transfer
 - Ficheros internos del repositorio: `notes.md` (artefacto principal) y `README.md` (documentación)
 - No se han encontrado enlaces relevantes al modelo, paper, blog, repositorio de código o demo en la búsqueda web disponible; los resultados devueltos por la búsqueda no guardan relación con este repositorio y se descartan por no ser fuentes válidas.

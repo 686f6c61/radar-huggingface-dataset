@@ -85,8 +85,8 @@ La model card menciona una tabla comparativa de tarea con otros modelos de la mi
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XLL SPO Nemotron 4B (v1.1) | 3,97B | no disponible | Extracción SPO legal (CFR) | NVIDIA Nemotron Open Model License | HuggingFace |
-| NVIDIA Nemotron-3 Nano 4B | ~4B | no disponible | Modelo base generalista | NVIDIA Nemotron Open Model License | HuggingFace |
+| XLL SPO Nemotron 4B (v1.1) | 3,97B | no disponible | Extracción SPO legal (CFR) | NVIDIA Nemotron Open Model License | Hugging Face |
+| NVIDIA Nemotron-3 Nano 4B | ~4B | no disponible | Modelo base generalista | NVIDIA Nemotron Open Model License | Hugging Face |
 | Checkpoint v3 (checkpoint-2400) del mismo repo | ~4B | no disponible | Extracción orientada a provisiones (duty/permission/party) | NVIDIA Nemotron Open Model License | Historial de commits del repo |
 
 No se dispone de datos de benchmarks de modelos alternativos de extracción de relaciones legales en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de modelos alternativos de extracción de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thurstonpowers/xll-spo-nemotron-4b
+- Modelo en Hugging Face: https://huggingface.co/thurstonpowers/xll-spo-nemotron-4b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/thurstonpowers/xll-spo-dataset
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

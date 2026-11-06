@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chloemart/classification-2024` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura **EfficientFormer** orientada a clasificación, publicada por el usuario Chloemart bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un *checkpoint* de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código (`model.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos en `safetensors`.
+`Chloemart/classification-2024` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura **EfficientFormer** orientada a clasificación, publicada por el usuario Chloemart bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un *checkpoint* de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código (`model.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos en `safetensors`.
 
 El dato más relevante es su escala: el fichero `model.safetensors` declara **49.600 parámetros totales**, varias órdenes de magnitud por debajo de cualquier EfficientFormer publicado (las variantes B0-S0 de EfficientFormerV2 rondan los 3,5-12 millones). La model card etiqueta la variante como "base", lo que entra en contradicción con el recuento real de parámetros; se trata, por tanto, de un esqueleto de arquitectura, no de un modelo con capacidad predictiva.
 
@@ -66,7 +66,7 @@ Los valores de referencia de terceros son aproximados, proceden de conocimiento 
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chloemart/classification-2024 | 49.600 | Imagen (resolución no disponible) | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| Chloemart/classification-2024 | 49.600 | Imagen (resolución no disponible) | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormerV2-S0 (Snap) | ~3,5 M (aprox.) | Imagen 224×224 | ~76 % top-1 ImageNet (aprox., no verificado) | Apache-2.0 | Pesos entrenados publicados |
 | MobileNetV3-Small | ~2,5 M (aprox.) | Imagen 224×224 | ~67,7 % top-1 ImageNet (aprox., no verificado) | Apache-2.0 | Amplia disponibilidad |
 | ResNet-18 | ~11,7 M (aprox.) | Imagen 224×224 | ~69,8 % top-1 ImageNet (aprox., no verificado) | BSD-3-Clause / MIT según implementación | Muy extendido |
@@ -88,7 +88,7 @@ La comparación honesta es que este repositorio no es funcionalmente comparable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chloemart/classification-2024
+- Hugging Face: https://huggingface.co/Chloemart/classification-2024
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace pertinente al modelo; las entradas devueltas corresponden a páginas de máquinas de coser (Darty, Boulanger, UFC-Que Choisir, meilleurs.fr, coudreetbroder.com) y se descartan por no guardar relación con el repositorio.
 - Paper de EfficientFormer (referencia de la arquitectura, no enlazado en la información proporcionada): no disponible.
 - Repositorio de código, demo o blog del autor: no disponible.

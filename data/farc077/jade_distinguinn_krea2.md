@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Jade_Distinguinn_KREA2 es un adaptador LoRA de texto a imagen publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de tipo ONESHOTLORA, generado con la plataforma oneshotlora.com, que se monta sobre el modelo base krea/Krea-2-Raw. Su funcion es reproducir el rostro y la apariencia de la modelo francesa Jade Distinguinn (asi descrita por el autor) a partir de la palabra clave o trigger word `jade_distinguinn`.
+Jade_Distinguinn_KREA2 es un adaptador LoRA de texto a imagen publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de tipo ONESHOTLORA, generado con la plataforma oneshotlora.com, que se monta sobre el modelo base krea/Krea-2-Raw. Su funcion es reproducir el rostro y la apariencia de la modelo francesa Jade Distinguinn (asi descrita por el autor) a partir de la palabra clave o trigger word `jade_distinguinn`.
 
 El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. No incluye pesos del modelo base, por lo que su uso exige descargar y ejecutar Krea-2-Raw por separado. La model card unicamente documenta la trigger word, el modelo base, la herramienta de generacion y cuatro ejemplos de prompt con sus imagenes de salida; no aporta informacion sobre arquitectura, dataset de entrenamiento, numero de pasos ni hiperparametros.
 
-Es relevante como ejemplo del ecosistema de LoRAs de celebridades y de identidad facial (character/celebrity LoRA) que se distribuyen en HuggingFace. El propio autor advierte de que la responsabilidad legal del uso recae sobre el usuario, algo critico en modelos que replican la imagen de personas reales. En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 likes, por lo que no existe validacion comunitaria de su calidad.
+Es relevante como ejemplo del ecosistema de LoRAs de celebridades y de identidad facial (character/celebrity LoRA) que se distribuyen en Hugging Face. El propio autor advierte de que la responsabilidad legal del uso recae sobre el usuario, algo critico en modelos que replican la imagen de personas reales. En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 likes, por lo que no existe validacion comunitaria de su calidad.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| farc077/Jade_Distinguinn_KREA2 | LoRA de identidad (celebrity) | krea/Krea-2-Raw | no disponible | no aplica | other | HuggingFace, 0 descargas |
+| farc077/Jade_Distinguinn_KREA2 | LoRA de identidad (celebrity) | krea/Krea-2-Raw | no disponible | no aplica | other | Hugging Face, 0 descargas |
 | Alternativas de LoRA de celebridad comparables | LoRA de identidad | no disponible | no disponible | no aplica | no disponible | no disponible |
 
 No se dispone de informacion sobre otros LoRA de identidad comparables en la busqueda realizada (los resultados obtenidos no guardan relacion con el modelo), por lo que no es posible establecer una comparativa con datos verificables de parametros, contexto o rendimiento.
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros LoRA de identidad comparables en la bus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Jade_Distinguinn_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Jade_Distinguinn_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de generacion del LoRA: https://oneshotlora.com
 - Paper, blog o repositorio del autor: no disponible

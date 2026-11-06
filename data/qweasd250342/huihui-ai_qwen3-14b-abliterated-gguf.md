@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Repositorio con 0 descargas y 0 likes: no existe validacion de la comunidad sobre esta copia concreta; conviene verificar la integridad de los archivos frente al repositorio original de bartowski.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/QWEasd250342/huihui-ai_Qwen3-14B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/QWEasd250342/huihui-ai_Qwen3-14B-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Qwen3-14B-abliterated
 - Cuantizaciones originales de bartowski: https://huggingface.co/bartowski/huihui-ai_Qwen3-14B-abliterated-GGUF
 - Modelo Qwen3 original: https://huggingface.co/Qwen/Qwen3-14B

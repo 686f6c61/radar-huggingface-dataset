@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado por el usuario DSACT1HJ46A en un repositorio de HuggingFace etiquetado como de prueba. Segun su model card, se trata de una version mejorada de un modelo anterior que ha aumentado su profundidad de razonamiento e inferencia mediante mas recursos computacionales y optimizaciones algoritmicas durante el post-entrenamiento. El modelo afirma rendimientos notables en matematicas, programacion y logica, acercandose a otros modelos lideres, pero la documentacion disponible no incluye especificaciones tecnicas esenciales.
+MyAwesomeModel es un modelo de lenguaje publicado por el usuario DSACT1HJ46A en un repositorio de Hugging Face etiquetado como de prueba. Segun su model card, se trata de una version mejorada de un modelo anterior que ha aumentado su profundidad de razonamiento e inferencia mediante mas recursos computacionales y optimizaciones algoritmicas durante el post-entrenamiento. El modelo afirma rendimientos notables en matematicas, programacion y logica, acercandose a otros modelos lideres, pero la documentacion disponible no incluye especificaciones tecnicas esenciales.
 
-La informacion disponible no permite determinar la arquitectura, el numero de parametros ni la longitud de contexto. El repositorio contiene 0.0 GB de datos, no tiene descargas ni pesos publicados, y todos los datos de rendimiento proceden de la model card del autor, sin verificacion externa. El tag de HuggingFace indica `feature-extraction` y `bert`, aunque la funcionalidad descrita (razonamiento, generacion de codigo, function calling) apunta a un modelo de lenguaje generativo.
+La informacion disponible no permite determinar la arquitectura, el numero de parametros ni la longitud de contexto. El repositorio contiene 0.0 GB de datos, no tiene descargas ni pesos publicados, y todos los datos de rendimiento proceden de la model card del autor, sin verificacion externa. El tag de Hugging Face indica `feature-extraction` y `bert`, aunque la funcionalidad descrita (razonamiento, generacion de codigo, function calling) apunta a un modelo de lenguaje generativo.
 
 ## Especificaciones tecnicas
 
@@ -91,4 +91,4 @@ No disponible. La unica comparativa es la tabla de benchmarks interna de la mode
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/DSACT1HJ46A/MyAwesomeModel-TestRepo](https://huggingface.co/DSACT1HJ46A/MyAwesomeModel-TestRepo)
+- Hugging Face: [https://huggingface.co/DSACT1HJ46A/MyAwesomeModel-TestRepo](https://huggingface.co/DSACT1HJ46A/MyAwesomeModel-TestRepo)

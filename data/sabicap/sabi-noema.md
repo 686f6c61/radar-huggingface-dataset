@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabi-Noema es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B desarrollado por el usuario sabicap, orientado especificamente a cargas de trabajo agenticas: uso de herramientas, ejecucion de tareas multi-paso, interaccion con terminal y resolucion de tareas de ingenieria de software. Se distribuye bajo licencia Apache 2.0 y esta publicado en HuggingFace con pesos en safetensors, formato compatible con la libreria transformers.
+Sabi-Noema es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B desarrollado por el usuario sabicap, orientado especificamente a cargas de trabajo agenticas: uso de herramientas, ejecucion de tareas multi-paso, interaccion con terminal y resolucion de tareas de ingenieria de software. Se distribuye bajo licencia Apache 2.0 y esta publicado en Hugging Face con pesos en safetensors, formato compatible con la libreria transformers.
 
 El modelo mantiene la arquitectura del base: aproximadamente 27.356 millones de parametros en un diseno denso hibrido (combinacion de atencion completa y atencion lineal, segun la etiqueta `hybrid-attention`), con una longitud de contexto declarada de 262.144 tokens. Los pesos en BF16 ocupan unos 55 GB, lo que lo situa en el rango de despliegue en una unica GPU de 80 GB.
 
@@ -38,7 +38,7 @@ La arquitectura es densa e hibrida: combina mecanismos de atencion con bloques d
 - Razonamiento de alta fiabilidad: indice AA-Omniscience de +2,3 y tasa de alucinacion del 15,1 %, frente al 30,4 % del modelo base.
 - Capacidades retenidas de codigo y ciencia: LiveCodeBench v6 88,0 %, GPQA-Diamond 90,6 %, MMLU-Pro 85,1 %, AA-LCR 82,3 %, IFBench 80,9 %.
 - Eficiencia de tokens: mediana de 29,3K tokens de salida por tarea en Terminal-Bench 2.1 (2,3 veces menos que Qwen3.8-27B) y 82,7K de media en DeepSWE (frente a 118,8K del base).
-- Soporte multimodal: la etiqueta de HuggingFace `image-text-to-text` figura entre los tags del repositorio, aunque la model card no detalla capacidades de vision y los benchmarks publicados son exclusivamente de texto y agentes.
+- Soporte multimodal: la etiqueta de Hugging Face `image-text-to-text` figura entre los tags del repositorio, aunque la model card no detalla capacidades de vision y los benchmarks publicados son exclusivamente de texto y agentes.
 
 ## Casos de uso
 
@@ -91,8 +91,8 @@ Condiciones declaradas por el autor: mismos harnesses para todos los modelos; Te
 
 | Modelo | Parametros | Contexto | Terminal-Bench 2.1 | DeepSWE | τ³-bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Sabi-Noema | ~27,36B denso hibrido | 262K | 76,0 % | 47,5 % | 259/278 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen3.8-27B (base) | ~27B denso hibrido | 262K (segun el base) | 73,0 % | 38,5 % | 220/278 | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| Sabi-Noema | ~27,36B denso hibrido | 262K | 76,0 % | 47,5 % | 259/278 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen3.8-27B (base) | ~27B denso hibrido | 262K (segun el base) | 73,0 % | 38,5 % | 220/278 | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 | ThinkingCap | No disponible | No disponible | 67,8 % | 38,9 % | 204/278 | No disponible | Comparado en la model card |
 | Swift 1.5 | No disponible | No disponible | 62,9 % | 39,8 % | 195/278 | No disponible | Comparado en la model card |
 | Muse Glimmer 30B | 30B | 131K | 48,3 % | 5,3 % | 219/278 | No disponible | Servido localmente en BF16 en las pruebas |
@@ -115,7 +115,7 @@ En eficiencia, Sabi-Noema reduce la mediana de tokens de salida en Terminal-Benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sabicap/sabi-noema
+- Modelo en Hugging Face: https://huggingface.co/sabicap/sabi-noema
 - Variante con atencion latente multi-cabeza: https://huggingface.co/sabicap/sabi-noema-mla
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Metodologia de Terminal-Bench 2.1 citada por el autor: https://artificialanalysis.ai/methodology/intelligence-benchmarking#terminal-bench-v2-1

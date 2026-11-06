@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento frente a 
 
 ## Enlaces
 
-- HuggingFace (identificador consultado): https://huggingface.co/Guile/Qwen3.8-27B-Humanlike-Chat-GGUF
+- Hugging Face (identificador consultado): https://huggingface.co/Guile/Qwen3.8-27B-Humanlike-Chat-GGUF
 - Repositorio referenciado en la model card: https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF
 - Modelo base directo: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Demostracion en navegador (Space): https://huggingface.co/spaces/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat

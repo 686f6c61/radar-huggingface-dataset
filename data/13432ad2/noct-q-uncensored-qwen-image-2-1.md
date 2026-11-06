@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | V4 frente a V3 en escenas explícitas con acompañante | «Tres veces más a menudo» según la model card; sin metodología ni conjunto de evaluación |
 | Coste de CFG | CFG 1 es aproximadamente el doble de rápido que CFG 3 a 25 pasos |
 | Compatibilidad | Requiere ComfyUI 0.37 o superior y solo nodos core |
-| Validación comunitaria | 0 descargas y 0 likes en el repositorio de HuggingFace en el momento del análisis |
+| Validación comunitaria | 0 descargas y 0 likes en el repositorio de Hugging Face en el momento del análisis |
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto / prompt | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Noct Q (V4 int8) | No disponible (fichero int8 de 7,3 GB) | Prosa descriptiva; límite no declarado | Qwen Research License, solo no comercial | safetensors single-file + workflow ComfyUI | HuggingFace (0 descargas) y Civitai |
+| Noct Q (V4 int8) | No disponible (fichero int8 de 7,3 GB) | Prosa descriptiva; límite no declarado | Qwen Research License, solo no comercial | safetensors single-file + workflow ComfyUI | Hugging Face (0 descargas) y Civitai |
 | Qwen/Qwen-Image-2.1 (base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible | Modelo base referenciado; componentes distribuidos por Comfy-Org |
 | Merges sin censura de otras familias (SDXL, FLUX.1-dev) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre Noct Q y alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/13432ad2/Noct-Q-Uncensored-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/13432ad2/Noct-Q-Uncensored-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Galería, prompts y ficheros int4, fp8, bf16 y fp16: https://civitai.com/models/2958896
 - Text encoder (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors

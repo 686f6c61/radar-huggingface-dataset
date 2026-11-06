@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8` es un ajuste fino experimental del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado de Qwen2.5-7B-Instruct, un transformer decoder-only denso de 7.610 millones de parametros con soporte nativo de tool calling y una ventana de contexto de 32.768 tokens en su configuracion original. El autor declara que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que situa la pieza en la categoria de ajustes finos eficientes sobre modelos abiertos.
+`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8` es un ajuste fino experimental del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado de Qwen2.5-7B-Instruct, un transformer decoder-only denso de 7.610 millones de parametros con soporte nativo de tool calling y una ventana de contexto de 32.768 tokens en su configuracion original. El autor declara que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que situa la pieza en la categoria de ajustes finos eficientes sobre modelos abiertos.
 
 La relevancia de esta publicacion no esta en el rendimiento, sino en su caracter de artefacto de investigacion: el nombre del repositorio sugiere un experimento de condicionamiento sobre ejes politicos y sobre un fenomeno de "colapso de numeros" (numbers-collapse), con hiperparametros codificados en el propio identificador (`p10`, `e10`, `r8`, `ct128`, `gen8`). La model card, sin embargo, no documenta el objetivo, el dataset ni la metodologia, y el repositorio no incluye resultados de evaluacion.
 
@@ -87,6 +87,6 @@ Los datos de contexto y licencia de las alternativas provienen de la documentaci
 - Repositorio del modelo: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de la familia Qwen2.5: https://qwen.readthedocs.io/
 - Resultados de busqueda web: sin resultados relevantes. Las entradas devueltas por la busqueda tratan sobre el Departamento de Justicia de Estados Unidos y James Comey, y no guardan relacion con este modelo.

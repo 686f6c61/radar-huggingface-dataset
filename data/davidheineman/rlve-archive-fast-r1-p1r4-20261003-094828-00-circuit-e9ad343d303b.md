@@ -81,8 +81,8 @@ No disponible. Al no conocerse arquitectura, parametros, contexto ni licencia, n
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-00-circuit-e9ad343d303b
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio de Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-00-circuit-e9ad343d303b
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Ejecucion de W&B: identificador `8ac2927d` (no se proporciona URL en la model card)
 - Documentacion de Megatron-LM (formato de checkpoint distribuido): https://github.com/NVIDIA/Megatron-LM
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

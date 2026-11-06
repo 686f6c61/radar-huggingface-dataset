@@ -65,5 +65,5 @@ No se dispone de información comparativa con otros modelos. Al ser un fine-tuni
 
 ## Enlaces
 
-- [HuggingFace: HumboldtJoker/ll-ayni-v3-bf16](https://huggingface.co/HumboldtJoker/ll-ayni-v3-bf16)
-- [Perfil de HumboldtJoker en HuggingFace](https://huggingface.co/HumboldtJoker)
+- [Hugging Face: HumboldtJoker/ll-ayni-v3-bf16](https://huggingface.co/HumboldtJoker/ll-ayni-v3-bf16)
+- [Perfil de HumboldtJoker en Hugging Face](https://huggingface.co/HumboldtJoker)

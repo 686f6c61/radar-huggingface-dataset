@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wam-openarm-prq30-base-ema-50k-ckpt50000 es un checkpoint de investigación en robótica publicado por el usuario jungwook2358 en HuggingFace. Se trata de una réplica de un entrenamiento previo del autor huiwon (`huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k`) realizada en un fork propio del código, con un espacio de acciones distinto: acciones absolutas PRQ30 para el robot OpenArm. El modelo se enmarca en la pipeline de robótica y se distribuye como checkpoint de entrenamiento (formato HuggingFace Trainer) listo para servir o continuar el entrenamiento.
+wam-openarm-prq30-base-ema-50k-ckpt50000 es un checkpoint de investigación en robótica publicado por el usuario jungwook2358 en Hugging Face. Se trata de una réplica de un entrenamiento previo del autor huiwon (`huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k`) realizada en un fork propio del código, con un espacio de acciones distinto: acciones absolutas PRQ30 para el robot OpenArm. El modelo se enmarca en la pipeline de robótica y se distribuye como checkpoint de entrenamiento (formato Hugging Face Trainer) listo para servir o continuar el entrenamiento.
 
 La arquitectura subyacente es Wan2.2-TI2V-5B, un modelo de difusión de vídeo de aproximadamente 5.000 millones de parámetros, adaptado aquí como política visomotora (video-action model) entrenada desde cero sobre seis subconjuntos de datos de robot. El modelo recibe observaciones visuales estéreo (192x256, concatenadas en vertical con recorte de aspecto) y predice acciones futuras del robot mediante un cabezal de acción específico, con gradientes de acción detenidos (stop-gradient) hacia el backbone de vídeo.
 
@@ -19,7 +19,7 @@ Su relevancia es acotada pero concreta: documenta un contrato de conversión de 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de robótica, sin capacidades lingüísticas documentadas) |
 | Licencia | other (términos no especificados en la model card) |
-| Formato de pesos | safetensors (8 shards, checkpoint de HuggingFace Trainer con index, config.json, processor_config.json, statistics.json, embodiment_id.json) |
+| Formato de pesos | safetensors (8 shards, checkpoint de Hugging Face Trainer con index, config.json, processor_config.json, statistics.json, embodiment_id.json) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,15 +53,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible en la información proporcionada; como referencia, un backbone de difusión de vídeo de 5B parámetros en fp16 requiere del orden de 10-12 GB solo para pesos, más memoria para activaciones de vídeo y el cabezal de acción, pero esta cifra no está confirmada por el autor.
 - GPU recomendadas: no disponible; el entrenamiento se realizó con 4 GPU (batch 32, pd8 x 4), sin especificar el modelo.
 - ¿Cabe en GPU de consumo? no disponible; no se confirma compatibilidad con RTX 4090 u otras GPU de consumo.
-- Opciones de despliegue: no disponible; el checkpoint es un artefacto de HuggingFace Trainer con 8 shards safetensors, sin instrucciones de servicio publicadas.
+- Opciones de despliegue: no disponible; el checkpoint es un artefacto de Hugging Face Trainer con 8 shards safetensors, sin instrucciones de servicio publicadas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wam-openarm-prq30-base-ema-50k-ckpt50000 | ~5B (backbone) | no disponible | other | HuggingFace, 0 descargas | Réplica con acciones PRQ30 absolutas |
-| huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k | ~5B (backbone) | no disponible | no disponible | HuggingFace (referenciado) | Run original replicado; espacio de acciones distinto |
+| wam-openarm-prq30-base-ema-50k-ckpt50000 | ~5B (backbone) | no disponible | other | Hugging Face, 0 descargas | Réplica con acciones PRQ30 absolutas |
+| huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k | ~5B (backbone) | no disponible | no disponible | Hugging Face (referenciado) | Run original replicado; espacio de acciones distinto |
 | Otros modelos de política robótica de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-prq30-base-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-prq30-base-ema-50k-ckpt50000
 - Run original replicado: https://huggingface.co/huiwon/isaac_wan22_openarm_wam_v1_b32_i2v_base_norep_relq99_50k
 - Código: rama `actlat-wam` del repositorio del autor, commit `d64d313`, script `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh` (sin URL directa disponible)
 - Contrato de conversión: `docs/PRQ30_FRAME_V1_CONTRACT.md` en la rama de código (sin URL directa disponible)

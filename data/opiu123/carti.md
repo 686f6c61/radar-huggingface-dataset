@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `opiu123/carti` es un artefacto publicado en HuggingFace por el usuario `opiu123` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre capacidades o uso previsto. No se ha publicado informacion sobre el pipeline asociado, los idiomas soportados ni el formato de pesos.
+El modelo `opiu123/carti` es un artefacto publicado en Hugging Face por el usuario `opiu123` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre capacidades o uso previsto. No se ha publicado informacion sobre el pipeline asociado, los idiomas soportados ni el formato de pesos.
 
 A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, lo que sugiere que se trata de una publicacion reciente, experimental o de prueba, sin adopcion por parte de la comunidad. La fecha de creacion y ultima actualizacion es la misma (2026-11-04), lo que indica que no ha habido revisiones posteriores.
 
@@ -23,7 +23,7 @@ Por todo ello, no es posible determinar que problema resuelve el modelo ni por q
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco consta el numero de parametros, la longitud de contexto nativa ni las innovaciones tecnicas que pudiera incorporar (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, etc.).
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco consta el numero de parametros, la longitud de contexto nativa ni las innovaciones tecnicas que pudiera incorporar (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, etc.).
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composicion del corpus, el uso de tecnicas de alineacion como RLHF, DPO o similares, ni sobre procesos de ajuste fino posteriores. La unica informacion verificable es la declaracion de licencia MIT en el frontmatter de la model card.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 
 No es posible enumerar casos de uso concretos y realistas sin informacion sobre las capacidades, el tamano, el contexto y el formato de pesos del modelo. Cualquier propuesta de aplicacion seria especulativa y contraria al criterio de rigor de esta ficha. Los escenarios habituales (atencion al cliente, generacion de codigo, RAG sobre documentacion, clasificacion, extraccion de entidades, resumen de documentos largos, agentes automatizados) no pueden validarse con los datos disponibles.
 
-Se recomienda consultar el repositorio de HuggingFace para comprobar si el autor publica en el futuro una model card completa con arquitectura, datos de entrenamiento y evaluaciones.
+Se recomienda consultar el repositorio de Hugging Face para comprobar si el autor publica en el futuro una model card completa con arquitectura, datos de entrenamiento y evaluaciones.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni las capacidades del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opiu123/carti | no disponible | no disponible | MIT | HuggingFace |
+| opiu123/carti | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -74,4 +74,4 @@ No disponible. Sin conocer el tamano, la arquitectura ni las capacidades del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/opiu123/carti
+- Repositorio en Hugging Face: https://huggingface.co/opiu123/carti

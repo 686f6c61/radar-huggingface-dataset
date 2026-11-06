@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ziyanchenn/RestoreAnyone se encuentra alojado en HuggingFace bajo la licencia Apache-2.0. En el momento de la consulta, la información pública disponible es extremadamente limitada: no se ha publicado ninguna model card descriptiva, ni documentación técnica, ni resultados de benchmarks. El repositorio fue creado el 7 de septiembre de 2026 y actualizado en la misma fecha, sin descargas ni "likes" registrados.
+El modelo ziyanchenn/RestoreAnyone se encuentra alojado en Hugging Face bajo la licencia Apache-2.0. En el momento de la consulta, la información pública disponible es extremadamente limitada: no se ha publicado ninguna model card descriptiva, ni documentación técnica, ni resultados de benchmarks. El repositorio fue creado el 7 de septiembre de 2026 y actualizado en la misma fecha, sin descargas ni "likes" registrados.
 
 Dado el nombre del repositorio, cabe la posibilidad de que esté relacionado con tareas de restauración de imágenes o vídeos de personas, pero no existe evidencia documental que lo confirme. Tampoco se dispone de información sobre la arquitectura, el tamaño, la longitud de contexto o los idiomas soportados. Por tanto, cualquier evaluación técnica o comparativa con otros modelos es imposible con los datos disponibles.
 
@@ -62,5 +62,5 @@ No se dispone de información técnica suficiente para realizar una comparativa 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/ziyanchenn/RestoreAnyone
-- Perfil del autor en HuggingFace: https://huggingface.co/ziyanchenn
+- Perfil del autor en Hugging Face: https://huggingface.co/ziyanchenn
 - Modelos del autor: https://huggingface.co/ziyanchenn/models

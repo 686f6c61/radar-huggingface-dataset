@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-6bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversión MLX sin abliterar (PocketAiHub): https://huggingface.co/PocketAiHub/Qwen3.8-27B-MLX
 - Ejemplo de abliteración de Qwen3-8B (huihui-ai): https://huggingface.co/huihui-ai/Qwen3-8B-abliterated

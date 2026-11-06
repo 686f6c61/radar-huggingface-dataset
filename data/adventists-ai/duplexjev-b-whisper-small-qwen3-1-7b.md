@@ -76,11 +76,11 @@ Datos de referencia de los conectores mayores con Qwen3-32B, citados en la propi
 
 | Modelo | Parametros totales | Contexto | qa100 | Genero | Emocion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DuplexJev-B-Whisper-small-Qwen3-1.7B (este) | 1838 M (29,4 M entrenables) | No disponible | 48 (papel) / 42 (defaults) | 47,5 / 52,4 | 30,4 / 28,9 | Apache-2.0 (conector) | HuggingFace |
-| Conectores DuplexJev con Qwen3-32B | No disponible | No disponible | 90 | 89,9 | 90,0 | No disponible en la informacion | HuggingFace (organizacion adventists-ai) |
-| DuplexJev-B-Emotion-Qwen3-ASR-0.6B-Qwen3-32B | No disponible | No disponible | No disponible | No disponible | No disponible | cc-by-nc-4.0 | HuggingFace |
-| openai/whisper-small (encoder base) | 244 M | No aplica | No aplica | No aplica | No aplica | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (LLM base) | 1,7 B | No disponible | No disponible | No aplica | No aplica | No disponible en la informacion | HuggingFace |
+| DuplexJev-B-Whisper-small-Qwen3-1.7B (este) | 1838 M (29,4 M entrenables) | No disponible | 48 (papel) / 42 (defaults) | 47,5 / 52,4 | 30,4 / 28,9 | Apache-2.0 (conector) | Hugging Face |
+| Conectores DuplexJev con Qwen3-32B | No disponible | No disponible | 90 | 89,9 | 90,0 | No disponible en la informacion | Hugging Face (organizacion adventists-ai) |
+| DuplexJev-B-Emotion-Qwen3-ASR-0.6B-Qwen3-32B | No disponible | No disponible | No disponible | No disponible | No disponible | cc-by-nc-4.0 | Hugging Face |
+| openai/whisper-small (encoder base) | 244 M | No aplica | No aplica | No aplica | No aplica | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (LLM base) | 1,7 B | No disponible | No disponible | No aplica | No aplica | No disponible en la informacion | Hugging Face |
 
 La comparacion con los conectores de Qwen3-32B es la mas directa en cuanto a receta de entrenamiento y tarea, y muestra una diferencia de rendimiento muy marcada (48 frente a 90 en qa100) a cambio de un coste de inferencia mucho menor. El resto de alternativas son los componentes congelados, no modelos equivalentes de la misma categoria.
 
@@ -98,8 +98,8 @@ La comparacion con los conectores de Qwen3-32B es la mas directa en cuanto a rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-Whisper-small-Qwen3-1.7B
-- Organizacion en HuggingFace: https://huggingface.co/adventists-ai
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-Whisper-small-Qwen3-1.7B
+- Organizacion en Hugging Face: https://huggingface.co/adventists-ai
 - Repositorio de codigo: https://github.com/adventists-ai/duplexjev
 - Sitio del desarrollador: https://adventists.ai/
 - Modelo base del LLM: https://huggingface.co/Qwen/Qwen3-1.7B

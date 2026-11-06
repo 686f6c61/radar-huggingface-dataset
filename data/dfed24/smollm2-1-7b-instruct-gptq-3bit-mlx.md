@@ -105,7 +105,7 @@ No se dispone de comparativas con otros modelos de la misma categoria fuera de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfed24/SmolLM2-1.7B-Instruct-gptq-3bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/dfed24/SmolLM2-1.7B-Instruct-gptq-3bit-mlx
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Repositorio del pipeline de cuantizacion: https://github.com/dfed25/mlx-gptq
 - Libreria de inferencia: https://github.com/ml-explore/mlx-lm

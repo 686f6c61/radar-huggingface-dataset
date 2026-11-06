@@ -90,12 +90,12 @@ Referencia adicional aportada por el autor: el TinyKV en bf16 servido con vLLM o
 - Idiomas no declarados: al no figurar el campo de idiomas, no hay garantía documentada de cobertura multilingüe más allá de la del modelo base.
 - Dependencia de un plugin de arquitectura no estándar: obliga a fijar vLLM 0.32.0 y a instalar código adicional, lo que complica la reproducibilidad y las actualizaciones.
 - Madurez baja: repositorio con 0 descargas y 0 likes, publicado el 25 de octubre de 2026, sin validación independiente; el chequeo en Intel Arc Pro B70 está pendiente.
-- Trazabilidad: la autoría del modelo y la del perfil de HuggingFace no coinciden en el nombre (darioooooo0o frente a @imdariotoo), y parte de la información técnica remite a la ficha del modelo base.
+- Trazabilidad: la autoría del modelo y la del perfil de Hugging Face no coinciden en el nombre (darioooooo0o frente a @imdariotoo), y parte de la información técnica remite a la ficha del modelo base.
 - Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del checkpoint base de Qwen y de la cuantización de palmfuture antes de producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GPTQ-Int4
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GPTQ-Int4
 - Modelo base TinyKV (receta de conversión, entrenamiento y tablas de calidad): https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV
 - Versión GGUF: https://huggingface.co/darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GGUF
 - Cuantización GPTQ Int4 de origen: https://huggingface.co/palmfuture/Qwen3.6-35B-A3B-GPTQ-Int4

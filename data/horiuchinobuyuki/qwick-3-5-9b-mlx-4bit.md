@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | Qwick-3.5-9B-MLX-4bit | 1,4B (según safetensors) | 4-bit affine | no disponible | Apache-2.0 | MLX |
 | Qwick-3.5-9B-MLX-8bit | no disponible | 8-bit | no disponible | Apache-2.0 | MLX |
-| Qwick-3.5-9B (BF16) | no disponible | BF16 | no disponible | Apache-2.0 | HuggingFace |
+| Qwick-3.5-9B (BF16) | no disponible | BF16 | no disponible | Apache-2.0 | Hugging Face |
 | Qwen3.5-9B-MLX-4bit (mlx-community) | no disponible | 4-bit | no disponible | Apache-2.0 | MLX |
 
 Nota: no hay datos públicos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -75,7 +75,7 @@ Nota: no hay datos públicos de rendimiento comparativo entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-4bit
 - Modelo base: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B
 - Variante 8-bit: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-MLX-8bit
 - Referencia de Qwen3.5: https://github.com/ABDtmx/Qwen3.5

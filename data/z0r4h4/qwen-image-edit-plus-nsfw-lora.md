@@ -26,7 +26,7 @@ El modelo es un adaptador LoRA sobre la arquitectura QwenImageTransformer2DModel
 - Edicion de imagenes a partir de instrucciones de texto mediante el pipeline image-to-image del modelo base Qwen-Image-Edit-2511.
 - Activacion de capacidades NSFW mediante palabras clave concretas (trigger words) como `nsfw`, `nipples`, `vagina`, `penis`, `missionary`, `cowgirlout`, `reversecowgirlpov`, `blowjob`, `cum_on_face`, `creamp1e` y `l1ck`.
 - Integracion con la libreria diffusers a traves de `load_lora_weights` y `set_adapters`.
-- Seleccion del adaptador desde el Space de HuggingFace "ScottzillaSystems Image Editor" sin necesidad de escribir codigo.
+- Seleccion del adaptador desde el Space de Hugging Face "ScottzillaSystems Image Editor" sin necesidad de escribir codigo.
 - No soporta tool calling ni razonamiento multi-step, al tratarse de un modelo generativo de imagenes.
 - Las capacidades multilingues no aplican en este contexto; los prompts se procesan en el idioma que emplee el modelo base.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. Depende del modelo base y de la precision; el ejemplo de uso emplea `torch_dtype=torch.bfloat16`.
 - GPU recomendadas: no disponible. Se requiere una GPU con suficiente memoria para la familia Qwen-Image-Edit.
 - Adecuacion para GPU de consumo: no se especifica. En funcion del modelo base, es probable que se necesite una GPU de gama alta si no se aplican medidas de reduccion de memoria.
-- Opciones de despliegue: diffusers en Python, el Space de HuggingFace "ScottzillaSystems Image Editor" con selector de adaptadores, y cualquier framework que soporte difusion con LoRA.
+- Opciones de despliegue: diffusers en Python, el Space de Hugging Face "ScottzillaSystems Image Editor" con selector de adaptadores, y cualquier framework que soporte difusion con LoRA.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

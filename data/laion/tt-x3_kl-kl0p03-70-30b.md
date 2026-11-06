@@ -64,6 +64,6 @@ No se dispone de información comparativa con otros modelos. El modelo base `Qwe
 
 ## Enlaces
 
-- [HuggingFace - laion/tt-x3_kl-kl0p03-70-30B](https://huggingface.co/laion/tt-x3_kl-kl0p03-70-30B)
+- [Hugging Face - laion/tt-x3_kl-kl0p03-70-30B](https://huggingface.co/laion/tt-x3_kl-kl0p03-70-30B)
 - [Dataset de trazas de entrenamiento - penfever/tt-x3_kl-kl0p03](https://huggingface.co/datasets/penfever/tt-x3_kl-kl0p03)
 - [Modelo base - Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct) (referencia, no incluido en la model card original)

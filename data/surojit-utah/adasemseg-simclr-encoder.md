@@ -66,9 +66,9 @@ El paper de AdaSemSeg (arXiv:2501.16760) reporta resultados cuantitativos de seg
 
 | Modelo | Arquitectura | Preentrenamiento | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdaSemSeg SimCLR Encoder | ResNet-50 | SimCLR contrastivo sobre 35.648 parches sismicos | Sismico (facies) | MIT | HuggingFace, codigo abierto |
+| AdaSemSeg SimCLR Encoder | ResNet-50 | SimCLR contrastivo sobre 35.648 parches sismicos | Sismico (facies) | MIT | Hugging Face, codigo abierto |
 | ResNet-50 ImageNet (torchvision) | ResNet-50 | Supervisado con etiquetas ImageNet | Vision generalista | BSD-3 | Torchvision |
-| MAE ViT-Base (He et al., 2022) | ViT-Base | Autoencoder enmascarado sobre ImageNet | Vision generalista | MIT | HuggingFace, TIMM |
+| MAE ViT-Base (He et al., 2022) | ViT-Base | Autoencoder enmascarado sobre ImageNet | Vision generalista | MIT | Hugging Face, TIMM |
 
 La diferencia clave frente a los preentrenamientos generalistas es que este encoder ha visto exclusivamente datos sismicos, por lo que sus representaciones estan alineadas con las caracteristicas de amplitud, textura y estructura de las facies sismicas. Un ResNet-50 preentrenado en ImageNet requiere adaptacion al dominio y puede capturar patrones irrelevantes. MAE ViT ofrece representaciones fuertes pero con un coste computacional mayor y sin especializacion sismica.
 
@@ -84,7 +84,7 @@ La diferencia clave frente a los preentrenamientos generalistas es que este enco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Surojit-Utah/adasemseg-simclr-encoder
+- Hugging Face: https://huggingface.co/Surojit-Utah/adasemseg-simclr-encoder
 - Paper AdaSemSeg (arXiv): https://arxiv.org/abs/2501.16760
 - Version HTML del paper: https://arxiv.org/html/2501.16760
 - Repositorio GitHub AdaSemSeg: https://github.com/Surojit-Utah/AdaSemSeg

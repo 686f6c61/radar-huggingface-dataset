@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/loom-ai-org/styletts2-ljspeech-loom)
+- [Modelo en Hugging Face](https://huggingface.co/loom-ai-org/styletts2-ljspeech-loom)
 - [Modelo base original](https://huggingface.co/yl4579/StyleTTS2-LJSpeech)
 - [Repositorio loom.cpp](https://github.com/loom-ai-org/loom.cpp)
 - [Repositorio loom-py](https://github.com/loom-ai-org/loom-py)

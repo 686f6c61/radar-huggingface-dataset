@@ -95,12 +95,12 @@ Frente a la variante MoE 26B A4B, este modelo activa todos sus parametros en cad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thousandml/gemma-4-31B-CQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/thousandml/gemma-4-31B-CQ-4bit
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de modelos de Google DeepMind: https://deepmind.google/models/gemma/
-- Listado de modelos etiquetados como 4bit en HuggingFace (resultado de busqueda): https://huggingface.co/models?p=1&sort=modified&search=4bit
+- Listado de modelos etiquetados como 4bit en Hugging Face (resultado de busqueda): https://huggingface.co/models?p=1&sort=modified&search=4bit

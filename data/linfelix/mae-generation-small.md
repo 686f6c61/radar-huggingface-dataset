@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`linfelix/mae-generation-small` es un prototipo de investigación publicado en HuggingFace por el usuario linfelix bajo licencia MIT. Se presenta como una implementación de una arquitectura denominada "Mae" orientada a tareas de generación, en su variante de escala "small". El repositorio no contiene un modelo entrenado: según la propia model card, el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni evaluados.
+`linfelix/mae-generation-small` es un prototipo de investigación publicado en Hugging Face por el usuario linfelix bajo licencia MIT. Se presenta como una implementación de una arquitectura denominada "Mae" orientada a tareas de generación, en su variante de escala "small". El repositorio no contiene un modelo entrenado: según la propia model card, el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no un modelo con pesos entrenados ni evaluados.
 
 El interés del repositorio es, por tanto, documental y experimental: define una configuración de arquitectura (atención lineal, fusión bilineal, activación gelu-tanh, normalización groupnorm) y una receta de entrenamiento por defecto (optimizador LAMB con planificador de tasa de aprendizaje tipo *step*), junto con un script `run.py` que sirve como punto de entrada ejecutable. El recuento real de parámetros declarado en los pesos safetensors es de 24.832 parámetros, un orden de magnitud propio de un modelo de juguete o de una prueba de concepto, no de un modelo de generación utilizable en producción.
 
@@ -51,7 +51,7 @@ Respecto al entrenamiento, el repositorio incluye `training_args.json` con la re
 - Estudio de arquitecturas con atención lineal: un investigador interesado en comparar mecanismos de atención lineal frente a atención cuadrática puede usar este código como punto de partida y sustituir el bloque de atención, manteniendo el resto del esqueleto.
 - Experimentación con normalización groupnorm en modelos generativos: el repositorio ofrece una implementación concreta de groupnorm combinada con activación gelu-tanh, útil como referencia para reproducir o refutar configuraciones alternativas.
 - Comparación de optimizadores en escalas pequeñas: la receta por defecto con LAMB y planificador *step* sirve como baseline de bajo coste para estudiar convergencia antes de trasladar conclusiones a modelos mayores.
-- Docencia y formación: por su tamaño y su licencia MIT, es un artefacto adecuado para que estudiantes inspeccionen un repositorio completo de HuggingFace (script, configuración, argumentos de entrenamiento, pesos) sin necesidad de GPU.
+- Docencia y formación: por su tamaño y su licencia MIT, es un artefacto adecuado para que estudiantes inspeccionen un repositorio completo de Hugging Face (script, configuración, argumentos de entrenamiento, pesos) sin necesidad de GPU.
 - Plantilla de publicación reproducible: el repositorio puede tomarse como modelo de estructura para documentar un prototipo de investigación, incluyendo la advertencia explícita de que no se reclaman puntuaciones de benchmark.
 - Base para un *fine-tuning* desde cero: si se dispone de datos y presupuesto de cómputo, el script y la configuración pueden servir como punto de partida para un entrenamiento real, aunque requeriría validar previamente que la arquitectura escala al dominio objetivo.
 
@@ -91,6 +91,6 @@ No se han identificado en la información disponible modelos comparables. El art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linfelix/mae-generation-small
+- Modelo en Hugging Face: https://huggingface.co/linfelix/mae-generation-small
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers asociados, blogs, repositorios complementarios ni demos. Los resultados devueltos por la búsqueda corresponden a portales de empleo sin relación con el artefacto.

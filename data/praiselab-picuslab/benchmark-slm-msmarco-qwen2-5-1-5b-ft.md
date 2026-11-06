@@ -6,7 +6,7 @@
 
 El interés práctico del artefacto es doble. Por un lado, MS MARCO es un corpus de preguntas reales extraídas de consultas de Bing con respuestas anotadas por humanos y pasajes de apoyo, lo que lo convierte en un banco de pruebas habitual para respuesta a preguntas y recuperación. Por otro, al tratarse de un adaptador sobre un modelo de 1.5B parámetros, permite estudiar la ganancia marginal del fine-tuning en un rango de tamaño desplegable en hardware de consumo.
 
-Conviene señalar de entrada las limitaciones del artefacto como objeto de evaluación: el repositorio ocupa 0,0 GB, no declara licencia, no incluye resultados de benchmarks ni hiperparámetros de entrenamiento, y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. Es, por tanto, un adaptador experimental de investigación más que un modelo listo para producción.
+Conviene señalar de entrada las limitaciones del artefacto como objeto de evaluación: el repositorio ocupa 0,0 GB, no declara licencia, no incluye resultados de benchmarks ni hiperparámetros de entrenamiento, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. Es, por tanto, un adaptador experimental de investigación más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `benchmark-slm-msmarco-qwen2.5-1.5b-ft` (este) | 1,5 B + adaptador LoRA | 32.768 (heredado) | no disponible | gated en HuggingFace | sin benchmarks ni model card técnica |
+| `benchmark-slm-msmarco-qwen2.5-1.5b-ft` (este) | 1,5 B + adaptador LoRA | 32.768 (heredado) | no disponible | gated en Hugging Face | sin benchmarks ni model card técnica |
 | Qwen2.5-1.5B (base) | 1,5 B | 32.768 | Apache 2.0 | pública | referencia para medir la ganancia del fine-tuning |
 | Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 | Apache 2.0 | pública | ajustado por instrucciones; alternativa directa para chat en inglés |
 | SmolLM2-1.7B | 1,7 B | 8.192 | Apache 2.0 | pública | familia de SLM con variantes base e instruct |
@@ -94,7 +94,7 @@ La comparación de rendimiento cuantitativo no está disponible: no existen mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-qwen2.5-1.5b-ft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-qwen2.5-1.5b-ft
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/microsoft/ms_marco
 - Librería PEFT: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ec-homology-v18b` es un sistema de clasificación enzimática publicado por el usuario Legend7001 en HuggingFace, presentado como entrega del proyecto DA3410 para la tarea de clasificación de enzimas "Leak CURBER". No es un modelo de lenguaje neuronal en el sentido habitual: se trata de un pipeline de búsqueda por homología con MMseqs2 combinado con un reranker basado en gradient boosting (HistGradientBoosting) que asigna códigos EC (Enzyme Commission) a secuencias proteicas.
+`ec-homology-v18b` es un sistema de clasificación enzimática publicado por el usuario Legend7001 en Hugging Face, presentado como entrega del proyecto DA3410 para la tarea de clasificación de enzimas "Leak CURBER". No es un modelo de lenguaje neuronal en el sentido habitual: se trata de un pipeline de búsqueda por homología con MMseqs2 combinado con un reranker basado en gradient boosting (HistGradientBoosting) que asigna códigos EC (Enzyme Commission) a secuencias proteicas.
 
 El sistema busca cada secuencia de consulta contra una base de datos de secuencias de entrenamiento mediante MMseqs2 (sensibilidad 5.7, dos hilos, prefilter y align separados), genera candidatos EC a partir de los hits y puntúa cada candidato con un clasificador que usa exclusivamente evidencia de homología (bitscores relativos al mejor hit, identidad, cobertura, rango, acuerdo entre hits, ratio de longitud y competición con ECs hermanos). El autor indica explícitamente que no emplea priors de identidad EC como la frecuencia de EC.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Sistema | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ec-homology-v18b | Pipeline de homología + reranker tabular | MMseqs2 + gradient boosting sobre features de homología | no disponible | HuggingFace (Legend7001/ec-homology-v18b) |
+| ec-homology-v18b | Pipeline de homología + reranker tabular | MMseqs2 + gradient boosting sobre features de homología | no disponible | Hugging Face (Legend7001/ec-homology-v18b) |
 | MMseqs2 (herramienta base) | Buscador de homología | Alineamiento y búsqueda de secuencias | GPLv3 | Código abierto (Steinegger y Söding, 2017) |
 | Rerankers logísticos del propio repo | Reranker tabular | Regresión logística sobre features de homología | no disponible | Incluido como fallback en el mismo repositorio |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Legend7001/ec-homology-v18b
+- Hugging Face: https://huggingface.co/Legend7001/ec-homology-v18b
 - MMseqs2 (paper): Steinegger y Söding, Nature Biotechnology 2017 (referenciado en la model card; sin URL explícita en la información proporcionada)
 - ExPASy ENZYME, release 02-Sep-2026, SIB, CC BY 4.0 (vocabulario EC; sin URL explícita en la información proporcionada)
 - UniProtKB/Swiss-Prot release 2026_03 (fuente de la tabla hash; sin URL explícita en la información proporcionada)

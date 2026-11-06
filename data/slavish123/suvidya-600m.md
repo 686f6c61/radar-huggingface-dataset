@@ -94,7 +94,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Slavish123/suvidya-600m
+- Hugging Face: https://huggingface.co/Slavish123/suvidya-600m
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
 - Modelfile para Ollama: https://huggingface.co/Slavish123/suvidya-600m/resolve/main/Modelfile

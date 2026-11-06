@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `amity-adav4/document-ai-2023` no es un modelo de lenguaje entrenado, sino un conjunto de notas de investigación sobre Document AI publicado en HuggingFace bajo licencia cc-by-4.0. La propia model card lo describe como una nota exploratoria que registra el alcance de una pregunta de investigación, los factores de confusión previsibles y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. Los únicos artefactos declarados son `paper_notes.md` y `README.md`.
+El repositorio `amity-adav4/document-ai-2023` no es un modelo de lenguaje entrenado, sino un conjunto de notas de investigación sobre Document AI publicado en Hugging Face bajo licencia cc-by-4.0. La propia model card lo describe como una nota exploratoria que registra el alcance de una pregunta de investigación, los factores de confusión previsibles y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. Los únicos artefactos declarados son `paper_notes.md` y `README.md`.
 
 No se documenta ninguna arquitectura, configuración de entrenamiento, tokenizador o checkpoint funcional. El recuento de safetensors del repositorio indica 24.832 parámetros, una cifra compatible con tensores auxiliares o de prueba, no con un modelo utilizable para inferencia. El tamaño total del repositorio es de 0,0 GB.
 
@@ -86,5 +86,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amity-adav4/document-ai-2023
+- Repositorio en Hugging Face: https://huggingface.co/amity-adav4/document-ai-2023
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web proporcionada (los resultados devueltos corresponden a contenidos sin relación con el modelo).

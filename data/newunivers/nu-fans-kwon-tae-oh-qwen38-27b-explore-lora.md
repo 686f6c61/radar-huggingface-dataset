@@ -90,7 +90,7 @@ No se han proporcionado datos de modelos externos comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Gold dev NLL (↓) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (los tres adaptadores) | ~27 000 M en el backbone | No disponible | 2,2029 / 2,2045 / 2,2078 | apache-2.0 | Publico en HuggingFace |
+| Este repositorio (los tres adaptadores) | ~27 000 M en el backbone | No disponible | 2,2029 / 2,2045 / 2,2078 | apache-2.0 | Publico en Hugging Face |
 | Modelo base Qwen/Qwen3.8-27B sin adaptador | ~27 000 M | No disponible | 2,3849 | No indicada en la ficha | Publico |
 | Adaptadores en posiciones 4-21 del ranking interno | ~27 000 M en el backbone | No disponible | 2,2113 - 2,2878 | No indicada | No incluidos en este repositorio |
 | Otros modelos de rol conversacional de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |

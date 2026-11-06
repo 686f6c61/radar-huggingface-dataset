@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msuiche/DeepSeek-V4-Flash-Vision-Exp-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/msuiche/DeepSeek-V4-Flash-Vision-Exp-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - README del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/main/README.md
 - Receta vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp

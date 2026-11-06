@@ -94,5 +94,5 @@ No se dispone de datos de modelos de triaje SIEM de otros autores en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rokoman/siem-triage-4b-th
+- Modelo en Hugging Face: https://huggingface.co/rokoman/siem-triage-4b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

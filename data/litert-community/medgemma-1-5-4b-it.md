@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/MedGemma-1.5-4B-IT | 4B | no disponible | LiteRT | health-ai-developer-foundations | Gated en HuggingFace |
-| google/medgemma-1.5-4b-it (original) | 4B | no disponible | Safetensors | health-ai-developer-foundations | Gated en HuggingFace |
+| litert-community/MedGemma-1.5-4B-IT | 4B | no disponible | LiteRT | health-ai-developer-foundations | Gated en Hugging Face |
+| google/medgemma-1.5-4b-it (original) | 4B | no disponible | Safetensors | health-ai-developer-foundations | Gated en Hugging Face |
 | google/gemma-3-4b-it (base general) | 4B | no disponible | Safetensors | Gemma Terms of Use | Abierto |
 
 La comparativa se limita a la disponibilidad y formato, ya que no se dispone de datos de rendimiento para ninguno de los modelos en la información proporcionada. La principal diferencia de esta conversión es el formato LiteRT, que permite ejecución on-device, frente al formato Safetensors del modelo original, que requiere un runtime de propósito general.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Licencia health-ai-developer-foundations: impone restricciones de uso, probablemente limitando el uso comercial y exigiendo cumplimiento de normativas sanitarias. No se detallan los términos exactos en la información disponible.
 - No se dispone de información sobre sesgos conocidos, riesgos de alucinación o limitaciones de idioma específicas de esta conversión.
 - Al ser un modelo médico, cualquier uso en producción clínica requiere validación regulatoria y supervisión humana. El modelo no debe utilizarse como único criterio de diagnóstico.
@@ -79,7 +79,7 @@ La comparativa se limita a la disponibilidad y formato, ya que no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/MedGemma-1.5-4B-IT
+- Hugging Face: https://huggingface.co/litert-community/MedGemma-1.5-4B-IT
 - Repositorio GitHub de implementación edge: https://github.com/AI4MedResearch/edge-ai/tree/medgemma-conversion
 - Blog sobre la integración MedGemma + LiteRT: https://ai4medresearch.github.io/blog/2026/medgemma1-5/
 - Página oficial de MedGemma en Google DeepMind: https://deepmind.google/models/gemma/medgemma/

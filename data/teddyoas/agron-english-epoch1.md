@@ -92,7 +92,7 @@ La comparación con alternativas comerciales o de mayor tamaño no resulta signi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teddyoas/Agron-english-epoch1
+- Hugging Face: https://huggingface.co/teddyoas/Agron-english-epoch1
 - Modelo base: https://huggingface.co/teddyoas/Agron
 - Corpus wikitext: https://huggingface.co/datasets/Salesforce/wikitext
 - Corpus fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

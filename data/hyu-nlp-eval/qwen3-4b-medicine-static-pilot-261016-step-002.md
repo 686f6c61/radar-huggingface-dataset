@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002` es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en HuggingFace. Se trata de un checkpoint intermedio, concretamente el paso 2, de un piloto de entrenamiento con refuerzo denominado `261016_medicine_static_pilot`, ejecutado con semilla 11 y orientado al dominio médico. No es un modelo pensado para producción: es un artefacto de investigación y evaluación.
+El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002` es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en Hugging Face. Se trata de un checkpoint intermedio, concretamente el paso 2, de un piloto de entrenamiento con refuerzo denominado `261016_medicine_static_pilot`, ejecutado con semilla 11 y orientado al dominio médico. No es un modelo pensado para producción: es un artefacto de investigación y evaluación.
 
 Con 4.022.468.096 parámetros verificados en los safetensors, es un transformer decoder-only denso de aproximadamente 4B parámetros. Hereda la arquitectura, la ventana de contexto y las capacidades del modelo base Qwen3-4B-Instruct-2507 (variante sin modo "thinking"), aunque la model card del fine-tune no documenta ninguno de esos detalles de forma explícita.
 
@@ -75,9 +75,9 @@ Las cifras de VRAM para los pesos son cálculos directos a partir de los 4.022.4
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-002 | 4,02 B | No disponible en su model card (heredado del base) | Apache 2.0 | HuggingFace, safetensors BF16 + checkpoint veRL/FSDP | No publicados |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4 B | 262.144 tokens (según su model card) | Apache 2.0 | HuggingFace, safetensors, ampliamente soportado | Publicados por el autor del modelo base |
-| Qwen/Qwen3-4B-Thinking-2507 | ~4 B | 262.144 tokens (según su model card) | Apache 2.0 | HuggingFace, safetensors | Publicados por el autor del modelo base |
+| qwen3-4b-medicine-static-pilot-261016-step-002 | 4,02 B | No disponible en su model card (heredado del base) | Apache 2.0 | Hugging Face, safetensors BF16 + checkpoint veRL/FSDP | No publicados |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4 B | 262.144 tokens (según su model card) | Apache 2.0 | Hugging Face, safetensors, ampliamente soportado | Publicados por el autor del modelo base |
+| Qwen/Qwen3-4B-Thinking-2507 | ~4 B | 262.144 tokens (según su model card) | Apache 2.0 | Hugging Face, safetensors | Publicados por el autor del modelo base |
 
 Alternativas de dominio médico existen en el ecosistema (por ejemplo, la familia MedGemma de Google, con licencia específica para salud, o BioMistral, derivada de Mistral). No se dispone de datos verificados en la información proporcionada para compararlas numéricamente con este checkpoint, por lo que no se incluyen cifras.
 
@@ -95,6 +95,6 @@ Alternativas de dominio médico existen en el ecosistema (por ejemplo, la famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo ni con el autor; los resultados obtenidos correspondían a entidades no relacionadas (Hyundai, canales de YouTube y catálogos comerciales).

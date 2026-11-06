@@ -81,8 +81,8 @@ El único modelo directamente comparable documentado es el modelo base del que d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-3-Poneglyph (este) | 852.985.920 (0,85 B) | no disponible | CER test 1,066 %; F1 bbox 98,75 % (test) | Apache 2.0 | HuggingFace |
-| lightonai/LightOnOCR-3-0.8B (base) | 0,8 B (≈ 852 M) | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| LightOnOCR-3-Poneglyph (este) | 852.985.920 (0,85 B) | no disponible | CER test 1,066 %; F1 bbox 98,75 % (test) | Apache 2.0 | Hugging Face |
+| lightonai/LightOnOCR-3-0.8B (base) | 0,8 B (≈ 852 M) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se han facilitado datos de benchmark de otros modelos OCR de manga comparables, por lo que no se incluye una comparación adicional: no disponible.
 
@@ -100,7 +100,7 @@ No se han facilitado datos de benchmark de otros modelos OCR de manga comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph
+- Modelo en Hugging Face: https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B (revision 36d8636925327c671bd8e479c517a004f7566bd9)
 - Resumen público del benchmark (referenciado en la model card): benchmark_native.json
 - Version de Transformers usada en la validacion nativa: 5.14.1

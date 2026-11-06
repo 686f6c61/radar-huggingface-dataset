@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento documental | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | 1,3B | 40.960 tokens (config. despliegue) | Real5-OmniDocBench 93,68; OcrBench 80,5 (NVIDIA) | Apache 2.0 | HuggingFace (FlagRelease) |
+| MiniCPM-OCR 1.0 | 1,3B | 40.960 tokens (config. despliegue) | Real5-OmniDocBench 93,68; OcrBench 80,5 (NVIDIA) | Apache 2.0 | Hugging Face (FlagRelease) |
 | MiniCPM-OCR Jev | 2B | no disponible | AUROC 0,936 en JevOCRBench | no disponible en la informacion | Mencionado en la model card |
 | Qwen3.5-397B-A17B | 397B totales (17B activos) | no disponible | AUROC 0,938 en JevOCRBench | no disponible en la informacion | Mencionado como referencia |
 
@@ -99,7 +99,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-sunrise-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-sunrise-FlagOS
 - Imagen Docker FlagOS-Sunrise: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-sunrise001-gems0.0-tree0.6.0-cxnone-plugin0.0.0-vllm0.24.0-sglangnone-sglangflnone-cp310-ptpu0.2.3-tang0.25.0-x64-0.25.0:202610261838`
 - Descarga de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-1.0-sunrise-FlagOS --local_dir /data/MiniCPM-OCR-1.0`
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

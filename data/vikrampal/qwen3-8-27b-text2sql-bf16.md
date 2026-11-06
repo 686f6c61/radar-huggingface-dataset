@@ -84,7 +84,7 @@ La comparativa mas directa es con las versiones cuantizadas del mismo panel, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-bf16
+- Repositorio Hugging Face: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-bf16
 - Version DynQuant-4bit: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-4bit
 - Version DynQuant-3bit: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-3bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

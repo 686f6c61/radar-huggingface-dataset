@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wpit-collab/mar-huge-wpit-imagenet-800ep-nonema
+- Modelo en Hugging Face: https://huggingface.co/wpit-collab/mar-huge-wpit-imagenet-800ep-nonema
 - Código requerido (WPIT_test): https://github.com/CHEN-YIZHU/WPIT_test
 - Configuración de entrenamiento: `training_args.json` dentro del repositorio del modelo
 - Hash del archivo exportado: `SHA256SUMS` dentro del repositorio del modelo

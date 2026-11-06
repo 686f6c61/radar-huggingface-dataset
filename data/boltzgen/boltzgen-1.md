@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BoltzGen-1 es un modelo generativo para el diseño de proteínas y péptidos capaces de unirse a biomoléculas arbitrarias, publicado por la organización boltzgen en HuggingFace. Se distribuye como un fine-tuning declarado del modelo boltz-community/boltz-2, del que hereda la base estructural de co-folding, y se empaqueta con una librería propia (`boltzgen`) y un repositorio de código en GitHub. La licencia es MIT, lo que permite uso comercial y modificaciones sin restricciones de atribución más allá del aviso de copyright.
+BoltzGen-1 es un modelo generativo para el diseño de proteínas y péptidos capaces de unirse a biomoléculas arbitrarias, publicado por la organización boltzgen en Hugging Face. Se distribuye como un fine-tuning declarado del modelo boltz-community/boltz-2, del que hereda la base estructural de co-folding, y se empaqueta con una librería propia (`boltzgen`) y un repositorio de código en GitHub. La licencia es MIT, lo que permite uso comercial y modificaciones sin restricciones de atribución más allá del aviso de copyright.
 
 El interés del modelo es doble. Por un lado, ataca un problema clásico de la biología computacional —el diseño de binders contra una diana dada— con un enfoque generativo, en lugar de limitarse a la predicción de estructura o de afinidad. Por otro, su adopción ha sido muy rápida: acumula 587.397 descargas y 19 likes en aproximadamente un día desde su publicación (creado el 26 de octubre de 2025, actualizado el 27 de octubre de 2025), un volumen que sugiere un uso intensivo desde pipelines automatizados más que una validación comunitaria pausada.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoltzGen-1 | Diseño generativo de binders (proteínas y péptidos) | No disponible | No aplica | MIT | Pesos en HuggingFace + código en GitHub |
-| boltz-community/boltz-2 (modelo base) | Co-folding estructural y predicción de afinidad | No disponible en la información proporcionada | No aplica | No verificada en la información proporcionada | HuggingFace |
+| BoltzGen-1 | Diseño generativo de binders (proteínas y péptidos) | No disponible | No aplica | MIT | Pesos en Hugging Face + código en GitHub |
+| boltz-community/boltz-2 (modelo base) | Co-folding estructural y predicción de afinidad | No disponible en la información proporcionada | No aplica | No verificada en la información proporcionada | Hugging Face |
 | Otros generadores de binders (p. ej. herramientas de difusión para diseño de proteínas) | Diseño generativo de proteínas | No disponible | No aplica | No disponible | No disponible |
 
 No se dispone de métricas comparativas publicadas ni de datos de parámetros de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -86,8 +86,8 @@ No se dispone de métricas comparativas publicadas ni de datos de parámetros de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boltzgen/boltzgen-1
-- Organización en HuggingFace: https://huggingface.co/boltzgen
+- Modelo en Hugging Face: https://huggingface.co/boltzgen/boltzgen-1
+- Organización en Hugging Face: https://huggingface.co/boltzgen
 - Repositorio de código (GitHub): https://github.com/HannesStark/boltzgen
 - Modelo base: https://huggingface.co/boltz-community/boltz-2
 - Licencia MIT: https://huggingface.co/boltzgen/boltzgen-1/blob/main/LICENSE

@@ -88,7 +88,7 @@ La diferencia principal entre esta conversion y otras versiones GGUF (como las d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WatsonOverHere/Qwen3.8-27B-Uncensored-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WatsonOverHere/Qwen3.8-27B-Uncensored-F16-GGUF
 - Checkpoint abliterado (fuente): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otras cuantizaciones GGUF del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF

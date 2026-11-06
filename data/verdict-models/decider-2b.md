@@ -86,10 +86,10 @@ Rendimiento end-to-end sobre HTTP, una RTX 4090, frente al servidor del autor (`
 
 | Modelo / artefacto | Parametros | Contexto | Precision / fidelidad | rps a concurrencia 8 | Licencia | Disponibilidad |
 |---|---:|---:|---|---:|---|---|
-| verdict-models/decider-2b (Verdict) | 1.9B | 32768 | desviacion maxima 2.00e-2; 0 cambios de respuesta | 543.3 | Apache-2.0 | HuggingFace + Docker CUDA |
-| Mapika/decider-2b + `decider.serve` (decider-ai 1.9.0) | 1.9B | 32768 | desviacion maxima 1.35e-2 | 281.9 | Apache-2.0 | HuggingFace |
-| Mapika/decider-2b (checkpoint v11, sin empaquetar) | 1.9B | 32768 | no disponible de forma aislada | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3.5-2B-Base (modelo base) | ~2B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| verdict-models/decider-2b (Verdict) | 1.9B | 32768 | desviacion maxima 2.00e-2; 0 cambios de respuesta | 543.3 | Apache-2.0 | Hugging Face + Docker CUDA |
+| Mapika/decider-2b + `decider.serve` (decider-ai 1.9.0) | 1.9B | 32768 | desviacion maxima 1.35e-2 | 281.9 | Apache-2.0 | Hugging Face |
+| Mapika/decider-2b (checkpoint v11, sin empaquetar) | 1.9B | 32768 | no disponible de forma aislada | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3.5-2B-Base (modelo base) | ~2B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación relevante es frente al servidor del propio autor del modelo, ya que no se han identificado en la información disponible otros modelos de decisión System One de tamaño comparable.
 
@@ -109,7 +109,7 @@ La comparación relevante es frente al servidor del propio autor del modelo, ya 
 
 ## Enlaces
 
-- HuggingFace (paquete Verdict): https://huggingface.co/verdict-models/decider-2b
+- Hugging Face (paquete Verdict): https://huggingface.co/verdict-models/decider-2b
 - Modelo base: https://huggingface.co/Mapika/decider-2b
 - Repositorio del motor Verdict: https://github.com/sgyaqing/verdict
 - Referencia ModelScope del checkpoint: https://huggingface.co/sgyaqing/decider-2b

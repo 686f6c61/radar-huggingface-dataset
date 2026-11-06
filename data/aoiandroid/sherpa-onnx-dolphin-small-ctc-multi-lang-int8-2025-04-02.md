@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento (WER/CER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sherpa-onnx-dolphin-small-ctc-multi-lang-int8 (espejo) | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (espejo) |
+| sherpa-onnx-dolphin-small-ctc-multi-lang-int8 (espejo) | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (espejo) |
 | Alternativas ASR comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/aoiandroid/sherpa-onnx-dolphin-small-ctc-multi-lang-int8-2025-04-02
+- Repositorio espejo en Hugging Face: https://huggingface.co/aoiandroid/sherpa-onnx-dolphin-small-ctc-multi-lang-int8-2025-04-02
 - Repositorio de origen: https://huggingface.co/csukuangfj/sherpa-onnx-dolphin-small-ctc-multi-lang-int8-2025-04-02
 - Arbol del commit de origen: https://huggingface.co/csukuangfj/sherpa-onnx-dolphin-small-ctc-multi-lang-int8-2025-04-02/tree/c8b6689509acfcd744c04e5e169164f9ac4cae32
 - README de origen incluido en el espejo: `SOURCE_README.md`

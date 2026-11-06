@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Foxenok 3.2 es un modelo publicado en HuggingFace por el usuario foxdev111 bajo una licencia personalizada denominada "foxenok-3.2". La model card asociada es prácticamente vacía: solo contiene la declaración de licencia (`license: other`, con nombre y enlace a un fichero LICENSE), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta y no declara pipeline, idiomas ni etiquetas de tarea.
+Foxenok 3.2 es un modelo publicado en Hugging Face por el usuario foxdev111 bajo una licencia personalizada denominada "foxenok-3.2". La model card asociada es prácticamente vacía: solo contiene la declaración de licencia (`license: other`, con nombre y enlace a un fichero LICENSE), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta y no declara pipeline, idiomas ni etiquetas de tarea.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, tokenizador ni proceso de entrenamiento. Tampoco hay datos publicados de benchmarks ni demos. Cualquier evaluación técnica del modelo requeriría inspeccionar directamente los ficheros de pesos del repositorio, algo que no forma parte de la información proporcionada.
 
-Por tanto, esta ficha se limita a documentar lo que el autor ha hecho público y a marcar explícitamente como "no disponible" todo aquello que no aparece en la model card ni en los metadatos de HuggingFace. Se recomienda precaución antes de integrar el modelo en cualquier flujo de producción.
+Por tanto, esta ficha se limita a documentar lo que el autor ha hecho público y a marcar explícitamente como "no disponible" todo aquello que no aparece en la model card ni en los metadatos de Hugging Face. Se recomienda precaución antes de integrar el modelo en cualquier flujo de producción.
 
 ## Especificaciones tecnicas
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/foxdev111/foxenok-3.2
+- Repositorio en Hugging Face: https://huggingface.co/foxdev111/foxenok-3.2
 - Fichero de licencia referenciado en la model card: `LICENSE` (en el propio repositorio)

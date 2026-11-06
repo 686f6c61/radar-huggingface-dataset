@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilysmithge/test-retrieval33` es un repositorio de HuggingFace publicado por el usuario `emilysmithge` que contiene una implementacion compacta y personalizada en PyTorch de un modelo denominado "Dino" orientado a tareas de recuperacion (retrieval). No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe explicitamente como un artefacto destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido es una inicializacion valida, no un modelo entrenado ni evaluado.
+`emilysmithge/test-retrieval33` es un repositorio de Hugging Face publicado por el usuario `emilysmithge` que contiene una implementacion compacta y personalizada en PyTorch de un modelo denominado "Dino" orientado a tareas de recuperacion (retrieval). No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe explicitamente como un artefacto destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El dato mas relevante es su tamano: 16.576 parametros totales registrados en el fichero de safetensors, lo que lo situa en el rango de un juguete experimental mas que de un modelo funcional. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta. La etiqueta de escala "huge" que aparece en la configuracion es una etiqueta interna de la generacion de arquitectura y no debe interpretarse como un indicador real de capacidad.
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto en `training
 - Revision de codigo de implementaciones propias: sirve como referencia minima para inspeccionar como se combinan atencion flash, fusion bilineal y normalizacion scalenorm en un mismo bloque.
 - Desarrollo de arneses de evaluacion de retrieval: la model card propone Flickr30k como primer banco de pruebas con al menos tres semillas, por lo que el repositorio es un punto de partida util para construir ese arnes antes de disponer de un checkpoint real.
 - Experimentos controlados de arquitectura: al ser un modelo diminuto y con receta de entrenamiento definida (adafactor, warmup constante), permite aislar el efecto de cambios arquitectonicos sin coste computacional apreciable.
-- Docencia y formacion: ilustra de forma completa la estructura de un repositorio de modelo en HuggingFace (config, argumentos de entrenamiento, pesos, README) sin requerir GPU.
+- Docencia y formacion: ilustra de forma completa la estructura de un repositorio de modelo en Hugging Face (config, argumentos de entrenamiento, pesos, README) sin requerir GPU.
 - Comparativas de linea base con capacidad equivalente: la propia model card insiste en emparejar la capacidad de las lineas base, de modo que este artefacto puede actuar como el extremo inferior de una comparacion metodologica.
 - Validacion de integraciones de carga: util para comprobar que un adaptador o wrapper propio parsea correctamente `config.json` y `model.safetensors` antes de escalar a un modelo mayor.
 
@@ -66,7 +66,7 @@ No disponible. El repositorio se identifica como una implementacion personalizad
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| test-retrieval33 | 16.576 | no disponible | ninguno (no se reclama) | apache-2.0 | HuggingFace |
+| test-retrieval33 | 16.576 | no disponible | ninguno (no se reclama) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. El repositorio se identifica como una implementacion personalizad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilysmithge/test-retrieval33
+- Repositorio en Hugging Face: https://huggingface.co/emilysmithge/test-retrieval33
 - Fichero principal: `main.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento: `training_args.json` (incluido en el repositorio)

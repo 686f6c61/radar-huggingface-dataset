@@ -4,7 +4,7 @@
 
 MiMo-V2.6-Pro-EXL3 es un checkpoint de cuantización experimental publicado por el usuario jarrelscy sobre el modelo base XiaomiMiMo/MiMo-V2.6-Pro-RL, el modelo razonador insignia de Xiaomi presentado el 22 de septiembre de 2026. El repositorio aplica una cuantización secuencial denominada EXL3 sobre los expertos "fríos" del modelo, manteniendo los expertos "calientes" en su formato NVFP4 original. Se trata de artefactos de investigación: el propio autor indica explícitamente que no es un modelo listo para servir y que requiere un cargador de inferencia específico.
 
-El modelo base es una arquitectura MoE dispersa de 1,02 billones de parámetros totales y 42 mil millones de parámetros activos por token, con licencia MIT según la documentación pública de Xiaomi, aunque la ficha de HuggingFace de este checkpoint no declara licencia. El trabajo de cuantización cubre las capas 1 a 54 con optimización conjunta de escalas de entrada y salida (joint-PV) sobre el corpus completo de 18.006.461 tokens de entrenamiento, sin eliminar neuronas.
+El modelo base es una arquitectura MoE dispersa de 1,02 billones de parámetros totales y 42 mil millones de parámetros activos por token, con licencia MIT según la documentación pública de Xiaomi, aunque la ficha de Hugging Face de este checkpoint no declara licencia. El trabajo de cuantización cubre las capas 1 a 54 con optimización conjunta de escalas de entrada y salida (joint-PV) sobre el corpus completo de 18.006.461 tokens de entrenamiento, sin eliminar neuronas.
 
 Su relevancia es doble: por un lado documenta una metodología poco habitual (cuantización secuencial capa a capa con propagación de entradas a través de las capas ya aceptadas) y, por otro, permite estudiar el impacto del truncado a ~2 bits en expertos MoE de gran escala. No obstante, al no incluir los tensores del backbone ni un cargador completo, su uso práctico hoy es exclusivamente de análisis y reconstrucción, no de despliegue.
 
@@ -94,15 +94,15 @@ No se dispone de especificaciones tecnicas de los modelos competidores en la inf
 - Metricas mal interpretables: los errores L2 relativos publicados son de reconstruccion por capa y no permiten inferir precision, perplejidad ni divergencia KL del modelo completo.
 - Seleccion por validacion: el checkpoint retenido puede corresponder a un punto anterior al final del recorrido del corpus o al ajuste inicial, lo que implica que la cobertura efectiva del corpus puede ser parcial.
 - Sin benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni de calidad generativa para este checkpoint, por lo que no puede recomendarse para produccion.
-- Licencia ambigua: la ficha de HuggingFace no declara licencia. Aunque el modelo base se distribuye bajo MIT segun la documentacion de Xiaomi, la licencia aplicable a estos artefactos derivados no consta explicitamente, lo que supone un riesgo para uso comercial.
+- Licencia ambigua: la ficha de Hugging Face no declara licencia. Aunque el modelo base se distribuye bajo MIT segun la documentacion de Xiaomi, la licencia aplicable a estos artefactos derivados no consta explicitamente, lo que supone un riesgo para uso comercial.
 - Idiomas y sesgos: no disponibles.
 - Coste de almacenamiento y transferencia elevado (237,9 GB) para un artefacto que aun no es utilizable de extremo a extremo.
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-EXL3
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-EXL3
 - Repositorio previo con cuantizacion FP4: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-EXL3-FP4
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Pagina oficial de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Ficha oficial de MiMo-V2.6-Pro: https://mimo.mi.com/models/en-US/mimo-v2.6-pro
 - Metricas de entrenamiento RL de MiMo-V2.6: https://mimo.xiaomi.com/rl/

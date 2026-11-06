@@ -21,7 +21,7 @@ El modelo se entrenó con 800.000 muestras extraídas de los datasets Nemotron-P
 
 ## Arquitectura y entrenamiento
 
-El modelo DFlash es un drafter ligero basado en difusión de bloques. A diferencia de los drafters autoregresivos convencionales, genera bloques completos de tokens (block size configurable entre 4 y 10) de forma paralela, lo que reduce el número de pasos de decodificación especulativa. La arquitectura subyacente no se detalla en la documentación proporcionada, pero los tags de HuggingFace indican relación con Qwen3 y el uso de safetensors, lo que sugiere una base transformer estándar adaptada al mecanismo de difusión.
+El modelo DFlash es un drafter ligero basado en difusión de bloques. A diferencia de los drafters autoregresivos convencionales, genera bloques completos de tokens (block size configurable entre 4 y 10) de forma paralela, lo que reduce el número de pasos de decodificación especulativa. La arquitectura subyacente no se detalla en la documentación proporcionada, pero los tags de Hugging Face indican relación con Qwen3 y el uso de safetensors, lo que sugiere una base transformer estándar adaptada al mecanismo de difusión.
 
 El entrenamiento se realizó sobre 800.000 muestras de los datasets nvidia/Nemotron-Post-Training-Dataset-v2 y theblackcat102/evol-codealpaca-v1. Para cada muestra, la parte de respuesta fue regenerada usando el modelo objetivo openai/gpt-oss-120b, de modo que el drafter aprenda a predecir los patrones de generación específicos de ese modelo. No se menciona el uso de RLHF o DPO; el entrenamiento se centra en imitar la distribución de salida del modelo objetivo. El modelo se entrena con un block size de 10, aunque en inferencia se puede ajustar a 4, 6 o 10 según el equilibrio deseado entre velocidad y tasa de aceptación.
 
@@ -132,7 +132,7 @@ No se dispone de datos comparativos directos con otros drafters especulativos en
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Anbeeld/gpt-oss-120b-DFlash-GGUF](https://huggingface.co/Anbeeld/gpt-oss-120b-DFlash-GGUF)
+- Repositorio Hugging Face: [Anbeeld/gpt-oss-120b-DFlash-GGUF](https://huggingface.co/Anbeeld/gpt-oss-120b-DFlash-GGUF)
 - Modelo original del drafter: [z-lab/gpt-oss-120b-DFlash](https://huggingface.co/z-lab/gpt-oss-120b-DFlash)
 - Paper: [arxiv:2602.06036](https://arxiv.org/abs/2602.06036)
 - Codigo fuente DFlash: [github.com/z-lab/dflash](https://github.com/z-lab/dflash)

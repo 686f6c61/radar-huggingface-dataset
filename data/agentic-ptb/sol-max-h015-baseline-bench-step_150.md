@@ -70,6 +70,6 @@ No disponible. No se han publicado comparaciones con otros modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h015.baseline-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h015.baseline-bench.step_150
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

@@ -62,7 +62,7 @@ Limitaciones:
 - No hay datos de benchmarks → no usar en producción sin evaluación propia.
 - Fecha de creación 2026-10-16 (futura? whatever, just state it).
 
-Enlaces: HF model page, base model page, dataset page, verl repo. Search results irrelevant — mention that the web search did not return relevant results? The instruction: "Lista con el enlace de HuggingFace y todos los enlaces relevantes encontrados en la busqueda web (papers, blogs, repos, demos)." The search results were irrelevant; I should state that no relevant links were found. Good.
+Enlaces: HF model page, base model page, dataset page, verl repo. Search results irrelevant — mention that the web search did not return relevant results? The instruction: "Lista con el enlace de Hugging Face y todos los enlaces relevantes encontrados en la busqueda web (papers, blogs, repos, demos)." The search results were irrelevant; I should state that no relevant links were found. Good.
 
 Titles: only first word capitalized. So "## Resumen", "## Especificaciones tecnicas", "## Arquitectura y entrenamiento", "## Capacidades", "## Casos de uso", "## Benchmarks y rendimiento", "## Requisitos de hardware", "## Comparativa con modelos similares", "## Limitaciones y advertencias", "## Enlaces". Note: "Especificaciones tecnicas" - the mandatory structure given uses "Especificaciones tecnicas" without accent; I'll follow the given headers exactly. Actually I should keep accents for correct Spanish... but the structure given by the user is without accents in "tecnicas". Follow the user's structure literally. Hmm. "Usa castellano de Espana, sin faltas de ortografia" — "tecnicas" without accent is a spelling mistake in Spanish. The user's template says "Especificaciones tecnicas". Tricky. I'll follow the template exactly (headers as given) since it's obligatory structure. Actually "sin faltas de ortografia" pushes to write "técnicas". I think writing "Especificaciones técnicas" is safer for orthography. But deviating from obligatory structure... The structure is about sections, not accents. I'll use proper accents: "Especificaciones técnicas". Hmm, risk either way. I'll go with proper Spanish accents, as the orthography rule is "crítica" too. Actually, let me reconsider: the user explicitly wrote the headers. I'll keep them identical to avoid structural deviation — no wait, they'd both be considered fine. I'll use accents since it's correct Spanish. Let me just decide: use accents in running text and headers ("Especificaciones técnicas"). Fine.
 
@@ -163,9 +163,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| mhseo2/Qwen3-8B-Base-OT3Math-SFT-step250 | 8,19 mil millones | 32.768 tokens de entrenamiento | Apache-2.0 | Pesos bf16 en HuggingFace, 0 descargas | No evaluado |
-| Qwen/Qwen3-8B-Base | 8,19 mil millones (no detallado en la informacion disponible) | No disponible | Apache-2.0 | Pesos publicos en HuggingFace | No disponible en la informacion proporcionada |
-| Qwen/Qwen3-8B | Aproximadamente 8 mil millones (no detallado en la informacion disponible) | No disponible | Apache-2.0 | Pesos publicos en HuggingFace | No disponible en la informacion proporcionada |
+| mhseo2/Qwen3-8B-Base-OT3Math-SFT-step250 | 8,19 mil millones | 32.768 tokens de entrenamiento | Apache-2.0 | Pesos bf16 en Hugging Face, 0 descargas | No evaluado |
+| Qwen/Qwen3-8B-Base | 8,19 mil millones (no detallado en la informacion disponible) | No disponible | Apache-2.0 | Pesos publicos en Hugging Face | No disponible en la informacion proporcionada |
+| Qwen/Qwen3-8B | Aproximadamente 8 mil millones (no detallado en la informacion disponible) | No disponible | Apache-2.0 | Pesos publicos en Hugging Face | No disponible en la informacion proporcionada |
 
 Alternativas habituales en la misma categoria (modelos de 7-8B especializados en razonamiento matematico con trazas largas, como los destilados de DeepSeek-R1 sobre Qwen o la familia OpenThinker) no aparecen en la informacion proporcionada, por lo que no se dispone de parametros, contexto ni cifras comparativas verificables para incluirlas en la tabla. La comparacion cuantitativa de rendimiento es, en cualquier caso, imposible mientras este checkpoint no sea evaluado.
 
@@ -185,7 +185,7 @@ Alternativas habituales en la misma categoria (modelos de 7-8B especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step250
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/knowledge-distillation/openthoughts3_math
 - Framework de entrenamiento verl: https://github.com/volcengine/verl

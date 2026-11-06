@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dreamtac_pi05 es un modelo publicado en HuggingFace por el usuario SeerEnd1pity bajo licencia MIT. El repositorio, de 15,8 GB, no incluye model card descriptiva: la única información aportada por el autor es la licencia. No se declara arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de uso, por lo que cualquier dato técnico al respecto debe considerarse no disponible a partir de la información pública existente.
+Dreamtac_pi05 es un modelo publicado en Hugging Face por el usuario SeerEnd1pity bajo licencia MIT. El repositorio, de 15,8 GB, no incluye model card descriptiva: la única información aportada por el autor es la licencia. No se declara arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de uso, por lo que cualquier dato técnico al respecto debe considerarse no disponible a partir de la información pública existente.
 
 El nombre sugiere un posible origen en el ecosistema de modelos "pi" (pi-zero/pi-05, orientados a robótica y control), pero se trata de una inferencia nominal no confirmada por el autor. El tamaño del repositorio (15,8 GB) es compatible con pesos en precisión completa o media de un modelo de varios miles de millones de parámetros, o con un conjunto de checkpoints múltiples, pero no permite determinar la arquitectura ni el número exacto de parámetros.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeerEnd1pity/Dreamtac_pi05
+- Repositorio en Hugging Face: https://huggingface.co/SeerEnd1pity/Dreamtac_pi05
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8_27B_NVFP4 es un modelo de lenguaje de gran tamaño publicado por el usuario PokitoPakito en HuggingFace. El nombre sugiere que se trata de una versión cuantizada en formato NVFP4 (NVIDIA FP4, precisión de 4 bits) del modelo Qwen3 de 27 mil millones de parámetros, desarrollado originalmente por Alibaba. La cuantización NVFP4 está diseñada para aprovechar el soporte nativo de FP4 en las GPUs NVIDIA Blackwell (serie RTX 50 y B200), lo que permite una inferencia más rápida y eficiente en memoria.
+Qwen3.8_27B_NVFP4 es un modelo de lenguaje de gran tamaño publicado por el usuario PokitoPakito en Hugging Face. El nombre sugiere que se trata de una versión cuantizada en formato NVFP4 (NVIDIA FP4, precisión de 4 bits) del modelo Qwen3 de 27 mil millones de parámetros, desarrollado originalmente por Alibaba. La cuantización NVFP4 está diseñada para aprovechar el soporte nativo de FP4 en las GPUs NVIDIA Blackwell (serie RTX 50 y B200), lo que permite una inferencia más rápida y eficiente en memoria.
 
 Sin embargo, la información disponible en la página del modelo es extremadamente limitada. No se proporciona una model card con detalles técnicos, datos de entrenamiento, benchmarks o instrucciones de uso. La licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el resto de especificaciones no están documentadas. Este modelo parece ser un experimento de cuantización más que un lanzamiento oficial, y su fiabilidad y rendimiento no pueden verificarse con los datos disponibles.
 
@@ -73,4 +73,4 @@ No disponible. No se puede comparar con Qwen3-27B oficial ni con otras cuantizac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PokitoPakito/Qwen3.8_27B_NVFP4
+- Hugging Face: https://huggingface.co/PokitoPakito/Qwen3.8_27B_NVFP4

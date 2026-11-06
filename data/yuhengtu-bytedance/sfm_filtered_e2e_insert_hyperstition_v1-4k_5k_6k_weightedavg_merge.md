@@ -34,7 +34,7 @@ El entrenamiento original no esta documentado. Lo unico verificable es que exist
 
 - Generacion de texto autorregresiva: es la unica capacidad declarada explicitamente en el pipeline del repositorio (text-generation).
 - Uso conversacional: el repositorio incluye la etiqueta conversational, aunque no se documenta el formato de prompt ni la plantilla de chat empleada.
-- Compatibilidad con text-generation-inference: el repositorio incluye la etiqueta text-generation-inference y endpoints_compatible, lo que indica que esta pensado para servirse mediante TGI y consumirse a traves de una API compatible con el esquema de endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference: el repositorio incluye la etiqueta text-generation-inference y endpoints_compatible, lo que indica que esta pensado para servirse mediante TGI y consumirse a traves de una API compatible con el esquema de endpoints de Hugging Face.
 - Tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponible (el repositorio no declara idiomas).
@@ -69,9 +69,9 @@ La comparacion es necesariamente limitada, porque de este modelo se desconocen c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | safetensors en HuggingFace |
-| Pythia 6.9B | 6,9 mil millones (misma familia GPT-NeoX) | 2048 tokens | Apache 2.0 | safetensors en HuggingFace |
-| GPT-J 6B | 6 mil millones (arquitectura GPT-NeoX-like) | 2048 tokens | Apache 2.0 | safetensors en HuggingFace |
+| sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_weightedavg_merge | 6,86 mil millones | no disponible | no disponible | safetensors en Hugging Face |
+| Pythia 6.9B | 6,9 mil millones (misma familia GPT-NeoX) | 2048 tokens | Apache 2.0 | safetensors en Hugging Face |
+| GPT-J 6B | 6 mil millones (arquitectura GPT-NeoX-like) | 2048 tokens | Apache 2.0 | safetensors en Hugging Face |
 | Mistral 7B v0.1 | 7,3 mil millones | 8192 tokens | Apache 2.0 | safetensors y GGUF |
 
 Diferencias clave: frente a Pythia 6.9B, el modelo aqui descrito comparte familia arquitectonica y tamano, pero carece de documentacion de entrenamiento y de licencia explicita, mientras que Pythia publica dataset, orden de los datos y evaluaciones. Frente a Mistral 7B, la diferencia principal no es el tamano sino la ausencia de licencia, de contexto declarado y de soporte de cuantizaciones listas para usar.
@@ -90,7 +90,7 @@ Diferencias clave: frente a Pythia 6.9B, el modelo aqui descrito comparte famili
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-4k_5k_6k_weightedavg_merge
 - mergekit, herramienta usada para la fusion: https://github.com/cg123/mergekit
 - Articulo referenciado en las etiquetas (model soups, base del promediado de pesos): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas de inicio y de inicio de sesion de Facebook, sin relacion con el repositorio.

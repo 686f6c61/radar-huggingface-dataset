@@ -76,7 +76,7 @@ La comparativa se basa en datos publicos; no hay benchmarks que permitan compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pekkAi/Glistening-Gem-31B-v2.1-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/pekkAi/Glistening-Gem-31B-v2.1-NVFP4
 - Modelo base Gemma 4 31B: https://huggingface.co/google/gemma-4-31B-it
 - Ingrediente TheDrummer/Artemis-31B-v1: https://huggingface.co/TheDrummer/Artemis-31B-v1
 - Ingrediente zerofata/G4-MeroMero-v2-31B: https://huggingface.co/zerofata/G4-MeroMero-v2-31B

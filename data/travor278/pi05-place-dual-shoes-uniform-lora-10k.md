@@ -76,16 +76,16 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto/horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Travor278/pi05-place-dual-shoes-uniform-lora-10k` | LoRA sobre pi0.5 (JAX) | no disponible | horizonte 50; estado/acción 14 (padding 32) | no disponible | HuggingFace, 6,3 GB, 0 descargas, 0 likes |
-| `XinY0201/openpi-pi05-base-jax` | Modelo base pi0.5 (JAX) | no disponible | no disponible | no disponible | HuggingFace (base sobre la que se entrena este LoRA) |
+| `Travor278/pi05-place-dual-shoes-uniform-lora-10k` | LoRA sobre pi0.5 (JAX) | no disponible | horizonte 50; estado/acción 14 (padding 32) | no disponible | Hugging Face, 6,3 GB, 0 descargas, 0 likes |
+| `XinY0201/openpi-pi05-base-jax` | Modelo base pi0.5 (JAX) | no disponible | no disponible | no disponible | Hugging Face (base sobre la que se entrena este LoRA) |
 | pi0 (OpenPI, Physical Intelligence) | VLA predecesor de pi0.5 | no disponible | no disponible | no disponible | Repositorio openpi |
-| OpenVLA-7B | VLA de propósito general | 7B (aproximado, dato externo) | no disponible | no disponible | HuggingFace |
+| OpenVLA-7B | VLA de propósito general | 7B (aproximado, dato externo) | no disponible | no disponible | Hugging Face |
 
 No se dispone de métricas comparativas publicadas entre estos modelos en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, formato y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica licencia en la model card ni en los metadatos de HuggingFace, lo que impide determinar si el uso comercial está permitido. Cualquier despliegue en producción debería aclarar este punto con el autor.
+- Licencia no declarada: no se especifica licencia en la model card ni en los metadatos de Hugging Face, lo que impide determinar si el uso comercial está permitido. Cualquier despliegue en producción debería aclarar este punto con el autor.
 - Sin validación en bucle cerrado: el autor no reclama ninguna tasa de éxito en robot real ni en simulación; el artefacto verificado es el entrenamiento, no el rendimiento de la política.
 - Política de tarea única: el condicionamiento está limitado al prompt "Put both shoes in the shoe box". No hay evidencia de generalización a otras instrucciones, objetos o disposiciones.
 - Dataset reducido y homogéneo: 100 episodios y 46.955 fotogramas de una única configuración, lo que aumenta el riesgo de sobreajuste al entorno, iluminación, cámara, caja y tipo de calzado concretos.
@@ -99,7 +99,7 @@ No se dispone de métricas comparativas publicadas entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-uniform-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-uniform-lora-10k
 - Modelo base citado en la model card: `XinY0201/openpi-pi05-base-jax` (commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658)
 - Conjunto de datos citado: `Shiki42/ctr-place-dual-shoes-uniform-20260911` (commit 32f25a495d0cab93307a1c9d73010501a049f1e6)
 - Librería declarada: openpi (pipeline `robotics`, etiquetas `openpi`, `pi05`, `jax`, `lora`)

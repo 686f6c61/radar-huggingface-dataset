@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: para un modelo de ~88M-200M parametros, en FP16 se necesitan aproximadamente 0.2-0.4 GB, y en FP32 unos 0.4-0.8 GB. En cuantizacion 4-bit, menos de 0.1 GB.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, etc.) es suficiente. No se requieren GPUs de datacenter.
 - El modelo cabe en cualquier GPU consumer.
-- Opciones de despliegue: al ser un checkpoint de PyTorch, se puede cargar con el codigo de nanochat o con librerias de HuggingFace Transformers si se define la arquitectura. Para usar con vLLM, llama.cpp, Ollama o TGI, es necesario convertir los pesos a los formatos compatibles (safetensors, GGUF).
+- Opciones de despliegue: al ser un checkpoint de PyTorch, se puede cargar con el codigo de nanochat o con librerias de Hugging Face Transformers si se define la arquitectura. Para usar con vLLM, llama.cpp, Ollama o TGI, es necesario convertir los pesos a los formatos compatibles (safetensors, GGUF).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para una comparativa detallada. Existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_1B_s0_2026-09-06_15-33-51_568043-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_1B_s0_2026-09-06_15-33-51_568043-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/4k2zzhz8
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Variante 500M: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_500M_s0_2026-08-14_13-02-03_921837-pt

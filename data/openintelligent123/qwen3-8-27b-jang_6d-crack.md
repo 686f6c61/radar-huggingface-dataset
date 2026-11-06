@@ -103,13 +103,13 @@ No se dispone de datos que permitan comparar con modelos de otros fabricantes y 
 - Idiomas limitados a ingles y chino: no hay soporte declarado de castellano ni de otras lenguas.
 - Longitud de contexto no documentada en la informacion disponible.
 - El modelo esta atado al ecosistema MLX y Apple Silicon: no hay pesos GGUF ni rutas de despliegue en vLLM, TGI u Ollama, lo que limita su uso en servidores GPU convencionales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en septiembre de 2026, sin historial de mantenimiento. El ID de HuggingFace (`Openintelligent123/...`) no coincide con la organizacion citada en la model card (`dealignai/...`), lo que conviene verificar antes de confiar en el artefacto.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en septiembre de 2026, sin historial de mantenimiento. El ID de Hugging Face (`Openintelligent123/...`) no coincide con la organizacion citada en la model card (`dealignai/...`), lo que conviene verificar antes de confiar en el artefacto.
 - Aunque la licencia es Apache 2.0, el uso comercial de un modelo sin mecanismos de rechazo puede entrar en conflicto con normativas de moderacion de contenido y con las condiciones de las plataformas donde se despliegue; la responsabilidad legal recae en el desplegador.
 - La model card no incluye informacion sobre sesgos demograficos, toxicidad ni evaluacion de equidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Qwen3.8-27B-JANG_6D-CRACK
+- Hugging Face: https://huggingface.co/Openintelligent123/Qwen3.8-27B-JANG_6D-CRACK
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante 2D: https://huggingface.co/dealignai/Qwen3.8-27B-JANG_2D-CRACK
 - Variante 4D: https://huggingface.co/dealignai/Qwen3.8-27B-JANG_4D-CRACK

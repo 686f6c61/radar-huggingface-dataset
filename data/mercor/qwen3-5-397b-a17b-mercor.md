@@ -78,9 +78,9 @@ La comparativa muestra que el modelo de Mercor se sitúa en la misma escala que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mercor/Qwen3.5-397B-A17B-Mercor
+- Repositorio Hugging Face: https://huggingface.co/mercor/Qwen3.5-397B-A17B-Mercor
 - Blog de Mercor sobre el entrenamiento RL: https://www.mercor.com/blog/training-frontier-knowledge-work-agents-a-397b-rl-training-guide-with-skyrl
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Blog oficial de Qwen sobre Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Página de NVIDIA NIM para Qwen3.5-397B-A17B: https://build.nvidia.com/qwen/qwen3.5-397b-a17b
 - Guía de Qwen3.5-397B-A17B (tercero): https://www.qubrid.com/blog/qwen-3-5-397b-a17b-complete-guide-to-architecture-capabilities-and-real-world-applications

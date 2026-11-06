@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/nanoexpand-2018-openalex-cont` es un modelo de generación de texto publicado en HuggingFace por el usuario `jjjlim3`. Su nombre sugiere una relación con el catálogo OpenAlex, un índice abierto de la investigación académica mundial, lo que apunta a que fue entrenado sobre artículos científicos de 2018. El modelo cuenta con 2.095.581.570 parámetros (aproximadamente 2,1 mil millones) y se distribuye bajo licencia Apache 2.0. Sin embargo, la información pública es extremadamente limitada: no se especifican detalles sobre la arquitectura, el contexto, los idiomas ni los datos de entrenamiento. El repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales para acceder a los pesos. Aunque el volumen del repositorio es de 301,8 GB, no se dispone de documentación técnica adicional. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en la información pública del modelo.
+El modelo `jjjlimaus/nanoexpand-2018-openalex-cont` es un modelo de generación de texto publicado en Hugging Face por el usuario `jjjlim3`. Su nombre sugiere una relación con el catálogo OpenAlex, un índice abierto de la investigación académica mundial, lo que apunta a que fue entrenado sobre artículos científicos de 2018. El modelo cuenta con 2.095.581.570 parámetros (aproximadamente 2,1 mil millones) y se distribuye bajo licencia Apache 2.0. Sin embargo, la información pública es extremadamente limitada: no se especifican detalles sobre la arquitectura, el contexto, los idiomas ni los datos de entrenamiento. El repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales para acceder a los pesos. Aunque el volumen del repositorio es de 301,8 GB, no se dispone de documentación técnica adicional. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en la información pública del modelo.
 
 ## Especificaciones técnicas
 
@@ -66,6 +66,6 @@ No hay información sobre modelos comparables. Dado que se desconoce la arquitec
 
 ## Enlaces
 
-- [HuggingFace: jjjlim3/nanoexpand-2018-openalex-cont](https://huggingface.co/jjjlim3/nanoexpand-2018-openalex-cont)
+- [Hugging Face: jjjlim3/nanoexpand-2018-openalex-cont](https://huggingface.co/jjjlim3/nanoexpand-2018-openalex-cont)
 - [OpenAlex](https://openalex.org/)
-- [Dataset openalex-en-articles en HuggingFace](https://huggingface.co/datasets/jjjlim3/openalex-en-articles) (posiblemente relacionado)
+- [Dataset openalex-en-articles en Hugging Face](https://huggingface.co/datasets/jjjlim3/openalex-en-articles) (posiblemente relacionado)

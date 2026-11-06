@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohit0128/rl_course_vizdoom_health_gathering_supreme` es una politica de aprendizaje por refuerzo (RL) entrenada para el entorno `doom_health_gathering_supreme` de ViZDoom. El modelo lo publica el usuario de HuggingFace rohit0128 como entrega de la Unidad 8 del curso Deep Reinforcement Learning de Hugging Face, y esta construido con la libreria Sample Factory, un framework de RL distribuido y de alto rendimiento orientado a entrenamiento asincrono en entornos 3D.
+`rohit0128/rl_course_vizdoom_health_gathering_supreme` es una politica de aprendizaje por refuerzo (RL) entrenada para el entorno `doom_health_gathering_supreme` de ViZDoom. El modelo lo publica el usuario de Hugging Face rohit0128 como entrega de la Unidad 8 del curso Deep Reinforcement Learning de Hugging Face, y esta construido con la libreria Sample Factory, un framework de RL distribuido y de alto rendimiento orientado a entrenamiento asincrono en entornos 3D.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es un agente que aprende una politica de control a partir de observaciones visuales del juego Doom. El objetivo del entorno es recoger los botes de salud (health packs) que aparecen en el escenario desplazandose hacia ellos, maximizando la recompensa acumulada antes de que termine el episodio.
 
@@ -21,7 +21,7 @@ La relevancia de la ficha es limitada fuera del ambito docente: se trata de un a
 | Licencia | no disponible |
 | Formato de pesos | no disponible (se distribuye a traves de la libreria `sample-factory`) |
 
-Otros datos de la ficha de HuggingFace: pipeline declarado `reinforcement-learning`, libreria `sample-factory`, idiomas no disponibles, 0 descargas, 0 likes, creado el 2026-10-03 y actualizado el 2026-10-03.
+Otros datos de la ficha de Hugging Face: pipeline declarado `reinforcement-learning`, libreria `sample-factory`, idiomas no disponibles, 0 descargas, 0 likes, creado el 2026-10-03 y actualizado el 2026-10-03.
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ No hay informacion publicada sobre el numero de pasos de entrenamiento, el taman
 - Punto de partida para experimentos de comparacion de algoritmos: reentrenar con PPO sincrono u otros metodos y contrastar la recompensa final con este checkpoint.
 - Benchmark de entornos ViZDoom: emplearlo como referencia base de rendimiento en el escenario `health_gathering_supreme` dentro de una bateria de pruebas de agentes.
 - Estudio de transferencia visual: comprobar si la politica entrenada generaliza a variaciones del escenario (iluminacion, texturas) si se dispone del entorno modificado.
-- Ejemplo de publicacion de artefactos en HuggingFace Hub: sirve como plantilla de model card minima para entregas de RL, util en formaciones internas sobre buenas practicas de publicacion.
+- Ejemplo de publicacion de artefactos en Hugging Face Hub: sirve como plantilla de model card minima para entregas de RL, util en formaciones internas sobre buenas practicas de publicacion.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ No disponible. No se han proporcionado datos de otros checkpoints comparables (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohit0128/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/rohit0128/rl_course_vizdoom_health_gathering_supreme
 - Curso Deep Reinforcement Learning de Hugging Face: no disponible en la informacion proporcionada (referenciado en la model card como origen del entrenamiento).
 - Repositorio de Sample Factory: no disponible en la informacion proporcionada.
 - Entorno ViZDoom / `doom_health_gathering_supreme`: no disponible en la informacion proporcionada.

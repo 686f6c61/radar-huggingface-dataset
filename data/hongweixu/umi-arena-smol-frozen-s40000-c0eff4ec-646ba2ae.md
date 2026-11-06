@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `umi-arena-smol-frozen-s40000-c0eff4ec-646ba2ae`, publicado por el usuario HongWeiXu en HuggingFace, es un checkpoint de inferencia derivado de SmolVLA orientado a la competición UMI Arena. No se trata de un modelo de lenguaje generalista, sino de una política de robótica (policy) entrenada para control de manipulación a partir de observaciones visuales y estado proprioceptivo. El checkpoint corresponde al paso de entrenamiento 40000 y se distribuye en formato safetensors con un total de 450.046.176 parámetros (aproximadamente 450 millones).
+El modelo identificado como `umi-arena-smol-frozen-s40000-c0eff4ec-646ba2ae`, publicado por el usuario HongWeiXu en Hugging Face, es un checkpoint de inferencia derivado de SmolVLA orientado a la competición UMI Arena. No se trata de un modelo de lenguaje generalista, sino de una política de robótica (policy) entrenada para control de manipulación a partir de observaciones visuales y estado proprioceptivo. El checkpoint corresponde al paso de entrenamiento 40000 y se distribuye en formato safetensors con un total de 450.046.176 parámetros (aproximadamente 450 millones).
 
 El paquete emplea dos imágenes RGB de muñeca y un vector de estado nativo de 9 dimensiones como entradas, y produce filas de acción de dimensiones 32 x 16. La model card advierte explícitamente de que este export no constituye una política validada ni enviada oficialmente a la competición, y que no se ha medido el éxito robótico real con este paquete. Los términos de licencia, tokenizer y software subyacentes del modelo upstream siguen aplicándose, aunque el autor no los detalla.
 
-Su relevancia es acotada: sirve como artefacto reproducible para evaluación interna en UMI Arena y como referencia de checkpoint congelado de SmolVLA en tareas de imitación visomotora. No hay pipeline declarado, ni idiomas, ni licencia explícita en los metadatos de HuggingFace, lo que limita su uso fuera de ese contexto de competición.
+Su relevancia es acotada: sirve como artefacto reproducible para evaluación interna en UMI Arena y como referencia de checkpoint congelado de SmolVLA en tareas de imitación visomotora. No hay pipeline declarado, ni idiomas, ni licencia explícita en los metadatos de Hugging Face, lo que limita su uso fuera de ese contexto de competición.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| umi-arena-smol-frozen-s40000 (este) | 450 M | no disponible | Política VLA (SmolVLA) | no disponible | HuggingFace, safetensors |
-| SmolVLA (upstream) | no disponible en esta ficha | no disponible | Política VLA | según upstream | HuggingFace |
+| umi-arena-smol-frozen-s40000 (este) | 450 M | no disponible | Política VLA (SmolVLA) | no disponible | Hugging Face, safetensors |
+| SmolVLA (upstream) | no disponible en esta ficha | no disponible | Política VLA | según upstream | Hugging Face |
 | Alternativas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
@@ -72,15 +72,15 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de mode
 
 - El autor declara que este export no es una política enviada ni validada para UMI Arena; no debe presentarse como resultado oficial de la competición.
 - El éxito robótico real no ha sido medido por este paquete, por lo que no hay evidencia empírica de desempeño en tarea.
-- La licencia no está declarada en HuggingFace; los términos del modelo upstream, tokenizer, software y dataset siguen aplicándose, lo que impide confirmar el uso comercial.
+- La licencia no está declarada en Hugging Face; los términos del modelo upstream, tokenizer, software y dataset siguen aplicándose, lo que impide confirmar el uso comercial.
 - No se documentan idiomas, sesgos, riesgo de alucinación ni limitaciones de contexto; al ser una política de control, el riesgo relevante es la generalización fuera de las condiciones de entrenamiento (iluminación, oclusiones, variaciones del entorno).
 - Depende de un setup sensorial concreto (dos cámaras RGB de muñeca y estado 9D) y de una forma de salida fija (32 x 16), lo que restringe su portabilidad a otros robots o configuraciones.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta; sin pipeline declarado, lo que dificulta su uso directo con herramientas estándar de HuggingFace.
+- Repositorio con 0 descargas y 0 likes en el momento de la consulta; sin pipeline declarado, lo que dificulta su uso directo con herramientas estándar de Hugging Face.
 - Fecha de creación indicada como 2026-11-01, dato que conviene verificar antes de citarlo en documentación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-smol-frozen-s40000-c0eff4ec-646ba2ae
+- Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-smol-frozen-s40000-c0eff4ec-646ba2ae
 - Model card del autor: incluida en la página anterior (sección README).
 - SmolVLA (modelo upstream): no disponible en la información proporcionada.
 - UMI Arena (competición): no disponible en la información proporcionada.

@@ -75,8 +75,8 @@ Estas cifras proceden de las pruebas del propio autor y no de una evaluacion ind
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en outpainting | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FLUX-3-Image-Klein-Outpaint-LoRA (este) | LoRA rango 32 sobre FLUX 3 Image Klein | 161 MB (adaptador) | No disponible | Extiende manteniendo la imagen en su sitio (0,1 a 1,5 px de desplazamiento) | flux-kommunity-license | HuggingFace, 0 descargas |
-| FLUX 3 Image Klein sin LoRA | Modelo base | No disponible | No disponible | Hace zoom o desplaza en 36 de 40 pruebas en lugar de extender | flux-kommunity-license | HuggingFace (acceso con licencia) |
+| FLUX-3-Image-Klein-Outpaint-LoRA (este) | LoRA rango 32 sobre FLUX 3 Image Klein | 161 MB (adaptador) | No disponible | Extiende manteniendo la imagen en su sitio (0,1 a 1,5 px de desplazamiento) | flux-kommunity-license | Hugging Face, 0 descargas |
+| FLUX 3 Image Klein sin LoRA | Modelo base | No disponible | No disponible | Hace zoom o desplaza en 36 de 40 pruebas en lugar de extender | flux-kommunity-license | Hugging Face (acceso con licencia) |
 | Qwen Image 2.1 Outpaint | Modelo de outpainting (referenciado por el autor) | No disponible | No disponible | No disponible | No disponible | Civitai |
 
 La comparativa con alternativas de la misma categoria (otros LoRA o modelos especificos de outpainting) no puede completarse con los datos disponibles.
@@ -90,15 +90,15 @@ La comparativa con alternativas de la misma categoria (otros LoRA o modelos espe
 - Riesgo de desviacion de los pixeles originales: aunque el desplazamiento tipico es de 0,1 a 1,5 px, en una de las 16 imagenes de prueba a fuerza 1.5 se superaron los 2 px.
 - Las evaluaciones son del propio autor, con un numero reducido de imagenes y sin protocolo independiente; deben tomarse como indicativas.
 - La licencia flux-kommunity-license no es una licencia de codigo abierto permisiva: impone condiciones especificas al uso comercial y requiere atender al fichero LICENSE.md y al NOTICE.txt incluidos.
-- El acceso a los ficheros del modelo base exige aceptar la licencia en HuggingFace.
+- El acceso a los ficheros del modelo base exige aceptar la licencia en Hugging Face.
 - No hay informacion sobre sesgos, comportamiento multilingue ni alucinaciones, dado que el artefacto opera exclusivamente sobre imagenes.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ausboss/FLUX-3-Image-Klein-Outpaint-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ausboss/FLUX-3-Image-Klein-Outpaint-LoRA
 - Flujo de trabajo ComfyUI incluido: workflows/flux-3-image-klein-outpaint.json (dentro del repositorio)
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Ficheros del modelo base para ComfyUI: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Nodos AusBoss para ComfyUI: https://github.com/ausboss/ComfyUI-AusBoss
 - Canal de YouTube del autor: https://www.youtube.com/@ausbossdev

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Zabin/Qwen_Image_21_LoRas es una publicacion alojada en HuggingFace por el usuario Zabin cuya model card no contiene mas informacion que la declaracion de licencia (artistic-2.0). No se especifica arquitectura, tamano, modelo base, tipo de pesos, idiomas ni pipeline de inferencia. El propio nombre del repositorio sugiere que se trata de una coleccion de adaptadores LoRA vinculados a la familia Qwen-Image, pero esta interpretacion no queda confirmada en ningun momento por la documentacion publicada.
+El repositorio Zabin/Qwen_Image_21_LoRas es una publicacion alojada en Hugging Face por el usuario Zabin cuya model card no contiene mas informacion que la declaracion de licencia (artistic-2.0). No se especifica arquitectura, tamano, modelo base, tipo de pesos, idiomas ni pipeline de inferencia. El propio nombre del repositorio sugiere que se trata de una coleccion de adaptadores LoRA vinculados a la familia Qwen-Image, pero esta interpretacion no queda confirmada en ningun momento por la documentacion publicada.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (24 de septiembre de 2026), lo que apunta a una publicacion inicial sin iteraciones posteriores ni adopcion por parte de la comunidad. Tampoco se declaran idiomas soportados ni etiqueta de pipeline.
 
@@ -89,7 +89,7 @@ Se recomienda inspeccionar la lista de archivos del repositorio y la model card 
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar alternativas comparables sin conocer la categoria del modelo, su tamano y su funcion. La siguiente tabla recoge los unicos campos que pueden compararse con certeza frente a cualquier otro repositorio de HuggingFace:
+No disponible. No es posible identificar alternativas comparables sin conocer la categoria del modelo, su tamano y su funcion. La siguiente tabla recoge los unicos campos que pueden compararse con certeza frente a cualquier otro repositorio de Hugging Face:
 
 | Criterio | Zabin/Qwen_Image_21_LoRas |
 |---|---|
@@ -97,7 +97,7 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 | Longitud de contexto | no disponible |
 | Rendimiento publicado | no disponible |
 | Licencia | Artistic License 2.0 |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, 0 likes |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, 0 likes |
 | Documentacion | Model card sin contenido tecnico |
 
 ## Limitaciones y advertencias
@@ -124,6 +124,6 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zabin/Qwen_Image_21_LoRas
-- Perfil del autor en HuggingFace: https://huggingface.co/Zabin
+- Hugging Face: https://huggingface.co/Zabin/Qwen_Image_21_LoRas
+- Perfil del autor en Hugging Face: https://huggingface.co/Zabin
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos asociados a este modelo.

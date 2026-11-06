@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42` es un modelo de lenguaje de 92.138.496 parámetros (unos 92 M) desarrollado por el usuario violetxi y publicado en HuggingFace bajo la librería `transformers` con código personalizado (`custom_code`, por lo que requiere `trust_remote_code=True`). No es un transformer autoregresivo convencional: implementa una arquitectura denominada `looped_block_mtp` (multi-token prediction con núcleo recurrente o "looped"), entrenada con retropropagación truncada en el tiempo (`truncated-bptt`) según la etiqueta `truncated-bptt`. El modelo está especializado en notación de ajedrez, como indica la etiqueta `chess` y el propio ejemplo de la model card (`Pe2e4 Pe7e5 Ng1f3`).
+El modelo `violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42` es un modelo de lenguaje de 92.138.496 parámetros (unos 92 M) desarrollado por el usuario violetxi y publicado en Hugging Face bajo la librería `transformers` con código personalizado (`custom_code`, por lo que requiere `trust_remote_code=True`). No es un transformer autoregresivo convencional: implementa una arquitectura denominada `looped_block_mtp` (multi-token prediction con núcleo recurrente o "looped"), entrenada con retropropagación truncada en el tiempo (`truncated-bptt`) según la etiqueta `truncated-bptt`. El modelo está especializado en notación de ajedrez, como indica la etiqueta `chess` y el propio ejemplo de la model card (`Pe2e4 Pe7e5 Ng1f3`).
 
 El problema que aborda es la generación de tokens en bloques: en lugar de predecir un único token por paso, realiza tres pasadas recurrentes que puntúan tres posiciones de consulta fijas y causalmente ordenadas, y `generate()` confirma ese bloque de tres tokens antes de pasar al siguiente bloque recurrente. Esto lo sitúa en la línea de investigación de multi-token prediction (MTP), donde se busca mayor eficiencia por paso de decodificación y una supervisión más densa por secuencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas directam
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/hparam-92m-block-mtp (este modelo) | 92 M | 1.024 tokens lógicos | no disponible | no disponible | HuggingFace, código personalizado |
+| violetxi/hparam-92m-block-mtp (este modelo) | 92 M | 1.024 tokens lógicos | no disponible | no disponible | Hugging Face, código personalizado |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,9 +100,9 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas directam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42
+- Hugging Face: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-5-wu-0p05-s42
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
-- Repositorio de código: no disponible (la implementación del núcleo compartido se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código: no disponible (la implementación del núcleo compartido se distribuye dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Nota sobre la búsqueda web: los resultados obtenidos (ChartFox y enlaces asociados sobre cartas aeronáuticas para simulación de vuelo) no guardan relación con este modelo y se descartan como fuentes relevantes.

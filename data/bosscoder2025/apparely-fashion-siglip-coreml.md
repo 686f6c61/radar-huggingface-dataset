@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BossCoder2025/apparely-fashion-siglip-coreml | Core ML `mlpackage` (fp16 e int8) | no disponible (torre de imagen ViT-B/16, ~86 M estimados) | Imagen 224×224, salida 768 dims | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Marqo/marqo-fashionSigLIP | Pesos PyTorch del modelo original (no confirmado en detalle) | no disponible | Imagen y texto (encoder dual SigLIP) | Apache-2.0 | HuggingFace, modelo base de esta conversion |
+| BossCoder2025/apparely-fashion-siglip-coreml | Core ML `mlpackage` (fp16 e int8) | no disponible (torre de imagen ViT-B/16, ~86 M estimados) | Imagen 224×224, salida 768 dims | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Marqo/marqo-fashionSigLIP | Pesos PyTorch del modelo original (no confirmado en detalle) | no disponible | Imagen y texto (encoder dual SigLIP) | Apache-2.0 | Hugging Face, modelo base de esta conversion |
 | Otros encoders de moda (FashionCLIP, OpenCLIP ViT-B/16) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es con el modelo base: esta publicacion no anade capacidad de representacion nueva, sino que empaqueta la torre de imagen para inferencia en dispositivo y anade cabezas de clasificacion y compatibilidad propietarias en JSON. Para el resto de alternativas no se dispone de datos en la informacion proporcionada.
@@ -84,7 +84,7 @@ La comparacion relevante es con el modelo base: esta publicacion no anade capaci
 - Solo incluye la torre de imagen: no hay encoder de texto en el paquete, por lo que no se puede hacer zero-shot con consultas de texto libres salvo usando los bancos de prompts predefinidos o la torre de texto del modelo base por separado.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de calidad para las cabezas Forward-Forward ni para el modelo de compatibilidad de conjuntos; se desconoce como se entrenaron y con que datos.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de pruebas independientes de funcionamiento correcto.
-- Fecha de creacion inusual: el repositorio figura creado el 2026-09-25, una fecha posterior a la habitual en los repositorios de HuggingFace; conviene verificar la autenticidad y el origen de los artefactos antes de usarlos en produccion.
+- Fecha de creacion inusual: el repositorio figura creado el 2026-09-25, una fecha posterior a la habitual en los repositorios de Hugging Face; conviene verificar la autenticidad y el origen de los artefactos antes de usarlos en produccion.
 - Contrato de entrada rigido: entrada fija de 224×224 con center-crop obligatorio aguas arriba; cambiar el preprocesado degradara los embeddings.
 - Especializacion de dominio: el modelo base esta ajustado para moda, por lo que su comportamiento fuera de ese dominio (objetos generales, escenas, texto en imagen) no esta garantizado.
 - Idiomas y prompts: los bancos de prompts estan en JSON sin idioma declarado; si se reutilizan con otro idioma habria que reescribirlos y regenerar los embeddings de texto correspondientes.
@@ -95,6 +95,6 @@ La comparacion relevante es con el modelo base: esta publicacion no anade capaci
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/BossCoder2025/apparely-fashion-siglip-coreml
+- Pagina de Hugging Face del modelo: https://huggingface.co/BossCoder2025/apparely-fashion-siglip-coreml
 - Modelo base: https://huggingface.co/Marqo/marqo-fashionSigLIP
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a hilos de soporte de Microsoft Community (Skype, Excel, Outlook, Word y Windows) sin relacion alguna con el modelo, por lo que no se incluyen como referencias tecnicas.

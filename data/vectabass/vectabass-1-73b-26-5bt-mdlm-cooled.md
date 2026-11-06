@@ -78,7 +78,7 @@ La model card advierte que el ELBO negativo es una cota superior de la log-veros
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-1.73b-26.5bt-mdlm-cooled | 1.729M totales (1.600M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace |
+| vectabass-1.73b-26.5bt-mdlm-cooled | 1.729M totales (1.600M no-embedding) | 2048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face |
 | Contraparte AR del mismo autor (cuadrado AR) | Escalera equivalente de 100M a 1.6B | No disponible | Autorregresivo | No disponible | Publicado por separado |
 | Modelos AR tipo Llama de ~1.7B | ~1.7B | Variable | Autorregresivo | Variable | Amplia disponibilidad |
 
@@ -99,7 +99,7 @@ La model card no proporciona una comparativa directa con modelos de terceros; la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-26.5bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-26.5bt-mdlm-cooled
 - Repositorio de datos (referencia `DATA.md`): no disponible como enlace directo en la información proporcionada
 - Paper o blog del estudio de escalado: no disponible
 - Repositorio de código: no disponible

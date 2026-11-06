@@ -4,7 +4,7 @@
 
 El modelo `csikasote/omniASR-CTC-300m-Zulu-All-v1` es un sistema de reconocimiento automático del habla (ASR) especializado en isiZulu, desarrollado por Claytone Sikasote mediante fine-tuning del modelo base `facebook/omniASR-CTC-300M` de Meta. OmniASR es una familia de modelos ASR omnilingües de código abierto, y esta variante CTC (Connectionist Temporal Classification) ofrece un equilibrio entre velocidad y precisión para transcripción en tiempo real. El modelo está entrenado para el idioma isiZulu (`zul_Latn`) y alcanza un WER (Word Error Rate) de validación de 27,25 en el mejor checkpoint (paso 80.000). Su relevancia radica en que aborda un idioma de bajos recursos, donde los sistemas comerciales suelen tener cobertura limitada, y democratiza el acceso a ASR de calidad para lenguas africanas.
 
-La arquitectura se basa en el encoder transformer de OmniASR con una cabeza CTC, lo que permite inferencia rápida sin necesidad de autoregresión. El modelo tiene aproximadamente 300 millones de parámetros, según indica el nombre del modelo base, y se distribuye en formato de checkpoint nativo de fairseq2, no directamente compatible con la API estándar de HuggingFace Transformers. El repositorio incluye el checkpoint, el tokenizador, archivos de configuración y un script de ejemplo para inferencia.
+La arquitectura se basa en el encoder transformer de OmniASR con una cabeza CTC, lo que permite inferencia rápida sin necesidad de autoregresión. El modelo tiene aproximadamente 300 millones de parámetros, según indica el nombre del modelo base, y se distribuye en formato de checkpoint nativo de fairseq2, no directamente compatible con la API estándar de Hugging Face Transformers. El repositorio incluye el checkpoint, el tokenizador, archivos de configuración y un script de ejemplo para inferencia.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ Whisper es un modelo mucho más grande y con mejor rendimiento en lenguas con mu
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/csikasote/omniASR-CTC-300m-Zulu-All-v1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/csikasote/omniASR-CTC-300m-Zulu-All-v1)
 - [Documentación de modelos CTC en omnilingual-asr (DeepWiki)](https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr))
 - [Perfil de GitHub del autor](https://github.com/csikasote)
 - [README de tarjetas de modelos en el repositorio omnilingual-asr](https://github.com/facebookresearch/omnilingual-asr/blob/main/src/omnilingual_asr/cards/README.md)

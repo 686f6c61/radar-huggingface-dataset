@@ -18,7 +18,7 @@ La relevancia de esta ficha es practica: los ficheros GGUF permiten ejecutar un 
 | Longitud de contexto | 16.384 tokens (16K) en el modelo base |
 | Tipos de cuantizacion | F16, Q8_0 y Q4_K_M (los tres incluidos en el repositorio) |
 | Idiomas soportados | Ingles y chino en el corpus de entrenamiento (87% codigo, 13% lenguaje natural); no se declara soporte oficial de otros idiomas |
-| Licencia | DeepSeek Coder Model License v1.0 (etiquetada como "other" en HuggingFace), con restricciones de uso |
+| Licencia | DeepSeek Coder Model License v1.0 (etiquetada como "other" en Hugging Face), con restricciones de uso |
 | Formato de pesos | GGUF (llama.cpp) en esta publicacion; safetensors en el modelo base original |
 | Modelo base | deepseek-ai/deepseek-coder-1.3b-base |
 | Tamano del repositorio | 5,0 GB |
@@ -92,10 +92,10 @@ La comparativa se basa en datos publicos de los repositorios oficiales de cada m
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
 | DeepSeek-Coder-1.3B-Base (esta ficha) | 1,35 B | 16K | DeepSeek Coder Model License v1.0 | GGUF en este repo; safetensors en el repo base | No disponible |
-| Qwen2.5-Coder-1.5B | 1,5 B | 32K | Apache 2.0 | safetensors y GGUF en HuggingFace | No disponible |
-| StarCoderBase-1B | 1 B | 8K | BigCode OpenRAIL-M | safetensors y GGUF en HuggingFace | No disponible |
-| CodeGemma-2B | 2 B | 8K | Gemma Terms of Use | safetensors y GGUF en HuggingFace | No disponible |
-| DeepSeek-Coder-6.7B-Base | 6,7 B | 16K | DeepSeek Coder Model License v1.0 | safetensors y GGUF en HuggingFace | No disponible |
+| Qwen2.5-Coder-1.5B | 1,5 B | 32K | Apache 2.0 | safetensors y GGUF en Hugging Face | No disponible |
+| StarCoderBase-1B | 1 B | 8K | BigCode OpenRAIL-M | safetensors y GGUF en Hugging Face | No disponible |
+| CodeGemma-2B | 2 B | 8K | Gemma Terms of Use | safetensors y GGUF en Hugging Face | No disponible |
+| DeepSeek-Coder-6.7B-Base | 6,7 B | 16K | DeepSeek Coder Model License v1.0 | safetensors y GGUF en Hugging Face | No disponible |
 
 Los diferenciadores principales de esta publicacion son la licencia DeepSeek (mas restrictiva que Apache 2.0) y una ventana de 16K superior a la de StarCoderBase-1B y CodeGemma-2B, aunque inferior a la de Qwen2.5-Coder-1.5B.
 
@@ -114,7 +114,7 @@ Los diferenciadores principales de esta publicacion son la licencia DeepSeek (ma
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ShayonSarker/DeepSeek-Coder-1.3B-Base-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ShayonSarker/DeepSeek-Coder-1.3B-Base-GGUF
 - Modelo base oficial: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
 - README del modelo base: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base/blob/main/README.md
 - Repositorio de codigo de DeepSeek Coder: https://github.com/deepseek-ai/DeepSeek-Coder

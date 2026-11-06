@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sukhan-Nano es un modelo de lenguaje de tipo decoder-only Transformer desarrollado por el usuario habib-analyst y publicado en HuggingFace bajo licencia MIT. Con tan solo 5,57 millones de parámetros, se trata de un artefacto educativo y de demostración que ilustra un proceso de entrenamiento completo y reproducible desde cero para un idioma de bajos recursos como el urdu: tokenizador propio, código de arquitectura y pesos entrenados íntegramente por el autor. No pretende competir con ningún modelo de lenguaje en producción para urdu.
+Sukhan-Nano es un modelo de lenguaje de tipo decoder-only Transformer desarrollado por el usuario habib-analyst y publicado en Hugging Face bajo licencia MIT. Con tan solo 5,57 millones de parámetros, se trata de un artefacto educativo y de demostración que ilustra un proceso de entrenamiento completo y reproducible desde cero para un idioma de bajos recursos como el urdu: tokenizador propio, código de arquitectura y pesos entrenados íntegramente por el autor. No pretende competir con ningún modelo de lenguaje en producción para urdu.
 
 El modelo emplea una arquitectura GPT estándar con 6 capas, dimensión de modelo 256, embeddings atados y una longitud de contexto de 256 tokens. El tokenizador es un BPE a nivel de carácter con vocabulario de 3.000 unidades, implementado también desde cero en el repositorio. El entrenamiento se realizó exclusivamente en CPU sobre un corpus de 3.977.932 caracteres (2.090.702 tokens) extraído de Wikipedia en urdu y Wikisource en urdu, con licencias documentadas (CC BY-SA y dominio público).
 
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habib-analyst/sukhan-nano
+- Modelo en Hugging Face: https://huggingface.co/habib-analyst/sukhan-nano
 - Corpus y documentación de datos: `DATA.md` en el repositorio del modelo
 - Log de entrenamiento: `training_log.txt` en el repositorio del modelo
 - Resultados de evaluación: `assets/eval_results.json` en el repositorio del modelo

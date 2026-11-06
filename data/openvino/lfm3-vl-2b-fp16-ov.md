@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-fp16-ov (este) | 2B (segun nombre) | no disponible | OpenVINO IR fp16 | lfm1.0 | HuggingFace, 7 descargas |
-| LiquidAI/LFM3-VL-2B | 2B (segun nombre) | no disponible | safetensors | lfm1.0 | HuggingFace (modelo base) |
+| LFM3-VL-2B-fp16-ov (este) | 2B (segun nombre) | no disponible | OpenVINO IR fp16 | lfm1.0 | Hugging Face, 7 descargas |
+| LiquidAI/LFM3-VL-2B | 2B (segun nombre) | no disponible | safetensors | lfm1.0 | Hugging Face (modelo base) |
 | Otros VLM de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de alternativas en la informacion proporcionada para establecer una comparativa cuantitativa fiable.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/LFM3-VL-2B-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/LFM3-VL-2B-fp16-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE
 - Formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

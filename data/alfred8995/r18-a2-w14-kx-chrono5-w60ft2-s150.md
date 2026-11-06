@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo el tag `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere una configuración concreta de entrenamiento (posiblemente un checkpoint intermedio de un experimento de escalado o de ajuste fino), pero no se ha publicado documentación asociada en la información disponible. El pipeline no está declarado y no hay idiomas especificados en la ficha del repositorio.
+`alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo el tag `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere una configuración concreta de entrenamiento (posiblemente un checkpoint intermedio de un experimento de escalado o de ajuste fino), pero no se ha publicado documentación asociada en la información disponible. El pipeline no está declarado y no hay idiomas especificados en la ficha del repositorio.
 
 El dato más fiable disponible es el recuento real de parámetros en los pesos safetensors: 2.018.511.234 parámetros (aproximadamente 2.000 millones), con un tamaño de repositorio de 6,3 GB. Esa relación entre parámetros y tamaño es coherente con pesos en precisión de 16 bits o con un conjunto de pesos que incluye varios tensores auxiliares. No se dispone de información sobre arquitectura, contexto, datos de entrenamiento ni evaluación.
 
@@ -20,7 +20,7 @@ La relevancia práctica de esta ficha es limitada: se trata de un modelo sin des
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Tamaño del repositorio | 6,3 GB |
 | Tag de familia | sn38-nanochrono |
@@ -71,7 +71,7 @@ No hay datos de rendimiento del modelo que permitan una comparación rigurosa. L
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150 | ~2,02B | no disponible | Apache 2.0 | gated en HuggingFace |
+| alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150 | ~2,02B | no disponible | Apache 2.0 | gated en Hugging Face |
 | Gemma 2 2B | ~2,6B | 8K | Gemma license | pública |
 | Qwen2.5 1.5B | ~1,5B | 32K | Apache 2.0 | pública |
 | SmolLM2 1.7B | ~1,7B | 8K | Apache 2.0 | pública |
@@ -81,7 +81,7 @@ La comparación de rendimiento con estos modelos no está disponible para el mod
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay información sobre arquitectura, tokenizador, contexto ni datos de entrenamiento, lo que impide validar su comportamiento antes de usarlo.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la evaluación y a la integración automatizada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la evaluación y a la integración automatizada.
 - Riesgo de alucinación: desconocido y no evaluado; en un modelo de 2B sin ajuste documentado, es esperable un comportamiento limitado en tareas de razonamiento y hechos.
 - Sesgos: no evaluados; sin documentación sobre el corpus de entrenamiento no es posible anticipar sesgos lingüísticos, culturales o de dominio.
 - Idiomas: no declarados; el soporte multilingüe es una incógnita.
@@ -92,5 +92,5 @@ La comparación de rendimiento con estos modelos no está disponible para el mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w60ft2-s150
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

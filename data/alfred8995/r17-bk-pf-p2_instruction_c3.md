@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p2_instruction_c3` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 (Alfred Smith) el 23 de octubre de 2026. Se trata de un checkpoint de aproximadamente 1.261 millones de parametros (1,26 B) almacenado en formato safetensors, con un repositorio de 2,5 GB, lo que es coherente con pesos en fp16/bf16. La etiqueta de pipeline no esta definida y la unica referencia arquitectonica disponible es el tag `llama`, que sugiere una familia de transformer decoder-only similar a Llama, sin confirmacion por parte del autor.
+`alfred8995/r17-bk-pf-p2_instruction_c3` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 (Alfred Smith) el 23 de octubre de 2026. Se trata de un checkpoint de aproximadamente 1.261 millones de parametros (1,26 B) almacenado en formato safetensors, con un repositorio de 2,5 GB, lo que es coherente con pesos en fp16/bf16. La etiqueta de pipeline no esta definida y la unica referencia arquitectonica disponible es el tag `llama`, que sugiere una familia de transformer decoder-only similar a Llama, sin confirmacion por parte del autor.
 
-El nombre del repositorio (`r17-bk-pf-p2_instruction_c3`) apunta a un proceso interno de iteraciones (posiblemente un fine-tuning de instrucciones, por el sufijo `instruction`) sobre una base previa, pero no se ha publicado model card, informe tecnico ni descripcion del dataset. El modelo esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, y la licencia figura como `other` sin texto de terminos asociado.
+El nombre del repositorio (`r17-bk-pf-p2_instruction_c3`) apunta a un proceso interno de iteraciones (posiblemente un fine-tuning de instrucciones, por el sufijo `instruction`) sobre una base previa, pero no se ha publicado model card, informe tecnico ni descripcion del dataset. El modelo esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, y la licencia figura como `other` sin texto de terminos asociado.
 
 Su relevancia practica es limitada por el momento: cero descargas y cero likes, sin resultados de benchmarks ni validacion comunitaria. Resulta util unicamente como objeto de evaluacion para quien quiera inspeccionar los pesos, verificar la arquitectura real o probar el checkpoint en un entorno controlado, siempre asumiendo que se carece de informacion sobre datos de entrenamiento, idiomas y calidad.
 
@@ -21,14 +21,14 @@ Su relevancia practica es limitada por el momento: cero descargas y cero likes, 
 | Licencia | `other` (terminos no especificados; acceso restringido) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 2,5 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 23 de octubre de 2026 |
 | Ultima actualizacion | 23 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna, mas alla del tag `llama` que figura en los metadatos de HuggingFace. Ese tag, junto con el recuento de parametros (1,26 B) y el tamano del repositorio (2,5 GB, equivalente a unos 2 bytes por parametro), es consistente con un transformer decoder-only en precision fp16 o bf16 con alrededor de 1.200 millones de parametros. No hay datos sobre numero de capas, dimensiones ocultas, tipo de atencion (MHA, GQA), funcion de activacion ni tokenizer empleado.
+No se dispone de informacion publicada sobre la arquitectura interna, mas alla del tag `llama` que figura en los metadatos de Hugging Face. Ese tag, junto con el recuento de parametros (1,26 B) y el tamano del repositorio (2,5 GB, equivalente a unos 2 bytes por parametro), es consistente con un transformer decoder-only en precision fp16 o bf16 con alrededor de 1.200 millones de parametros. No hay datos sobre numero de capas, dimensiones ocultas, tipo de atencion (MHA, GQA), funcion de activacion ni tokenizer empleado.
 
 Tampoco se ha publicado informacion sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del corpus, si hubo fases de instruccion, RLHF, DPO o preferencia, y que innovaciones tecnicas incorpora. El sufijo `instruction` del nombre sugiere un ajuste supervisado para seguir instrucciones, pero es una inferencia a partir del nombre del repositorio y no una afirmacion del autor. No se ha publicado model card, ficha tecnica, dataset asociado ni notas de version.
 
@@ -78,7 +78,7 @@ Los datos de los modelos comparados provienen de su documentacion publica y debe
 | alfred8995/r17-bk-pf-p2_instruction_c3 | 1,26 B | no disponible | `other` (terminos sin especificar) | gated, 0 descargas | no disponible |
 | Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | abierto en HF, ampliamente usado | si, publicados por Meta |
 | Qwen2.5-1.5B | 1,54 B | 32 K nativo (131 K con YaRN) | Apache 2.0 | abierto en HF | si, publicados por Alibaba |
-| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | abierto en HF | si, publicados por HuggingFace |
+| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | abierto en HF | si, publicados por Hugging Face |
 
 Frente a estas alternativas, el checkpoint de alfred8995 no ofrece por ahora ninguna ventaja documentada: carece de model card, de evaluaciones y de comunidad, y su licencia `other` introduce incertidumbre legal que los tres comparadores no tienen (o tienen resuelta con terminos conocidos).
 
@@ -86,7 +86,7 @@ Frente a estas alternativas, el checkpoint de alfred8995 no ofrece por ahora nin
 
 - Ausencia total de model card y de documentacion: se desconocen datos de entrenamiento, composicion del corpus, filtros aplicados y posibles sesgos. Cualquier uso en produccion exige una evaluacion propia previa.
 - Licencia `other` sin texto de terminos: no se puede asumir permiso para uso comercial, redistribucion o modificacion. Es imprescindible contactar con el autor o revisar las condiciones del acceso restringido antes de cualquier despliegue.
-- Acceso gated: la descarga requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de pipelines y a la reproducibilidad.
+- Acceso gated: la descarga requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de pipelines y a la reproducibilidad.
 - Riesgo de alucinacion: un modelo de ~1,26 B sin evaluacion publicada tiene una probabilidad alta de generar contenido factualmente incorrecto, especialmente en dominios especializados y en tareas de razonamiento de varios pasos.
 - Idiomas no declarados: no hay garantia de calidad en castellano ni en ningun otro idioma; la mayor parte de modelos de este tamano estan dominados por el ingles y degradan rapidamente en otras lenguas.
 - Contexto desconocido: sin `config.json` publicado en la informacion disponible, el desarrollador debe inspeccionarlo tras la descarga para conocer `max_position_embeddings` y planificar la cache KV.
@@ -97,7 +97,7 @@ Frente a estas alternativas, el checkpoint de alfred8995 no ofrece por ahora nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p2_instruction_c3
-- Perfil del autor en HuggingFace: https://huggingface.co/alfred8995
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p2_instruction_c3
+- Perfil del autor en Hugging Face: https://huggingface.co/alfred8995
 
 Nota: las busquedas web realizadas no han devuelto resultados especificos sobre este modelo (paper, blog, repositorio o demo). Los resultados obtenidos eran páginas genericas sobre despliegue de modelos locales y rastreadores de lanzamientos, sin relacion con el checkpoint. No se dispone por tanto de enlaces adicionales verificables.

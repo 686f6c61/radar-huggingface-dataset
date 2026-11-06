@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Iepereira2/few-shot-multimodal-quantized79` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador del mismo nombre. La model card lo describe explícitamente como "a structured set of research notes on Few Shot Multimodal", y su propio apartado de alcance aclara que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni ningún checkpoint entrenado. El repositorio contiene únicamente dos ficheros de texto (`reading.md` y `README.md`) y un artefacto safetensors cuyo recuento de parámetros declarado es de 33.088, una cifra incompatible con cualquier transformer funcional.
+`Iepereira2/few-shot-multimodal-quantized79` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador del mismo nombre. La model card lo describe explícitamente como "a structured set of research notes on Few Shot Multimodal", y su propio apartado de alcance aclara que no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni ningún checkpoint entrenado. El repositorio contiene únicamente dos ficheros de texto (`reading.md` y `README.md`) y un artefacto safetensors cuyo recuento de parámetros declarado es de 33.088, una cifra incompatible con cualquier transformer funcional.
 
 El interés del artefacto es, por tanto, documental y metodológico: plantea el alcance de una pregunta de investigación sobre aprendizaje few-shot multimodal, propone comparaciones con baselines emparejados, enumera posibles factores de confusión y exige controles de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs en bruto) antes de aceptar cualquier resultado. Es relevante ahora únicamente como material de planificación para quien diseñe experimentos en ese área, no como componente desplegable.
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no es comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Iepereira2/few-shot-multimodal-quantized79
+- Repositorio en Hugging Face: https://huggingface.co/Iepereira2/few-shot-multimodal-quantized79
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible

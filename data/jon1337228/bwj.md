@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Jon1337228/bwj` es un repositorio alojado en HuggingFace por el usuario Jon1337228, creado el 1 de mayo de 2026 y actualizado por última vez el 27 de agosto de 2026. El repositorio tiene un tamaño de 22,7 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, aunque no se dispone de información adicional sobre su arquitectura, propósito o características técnicas.
+El modelo identificado como `Jon1337228/bwj` es un repositorio alojado en Hugging Face por el usuario Jon1337228, creado el 1 de mayo de 2026 y actualizado por última vez el 27 de agosto de 2026. El repositorio tiene un tamaño de 22,7 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, aunque no se dispone de información adicional sobre su arquitectura, propósito o características técnicas.
 
 La ficha técnica que se presenta a continuación se basa exclusivamente en la información pública del repositorio, que es muy limitada. No se ha publicado ninguna descripción del modelo, ni documentación técnica, ni resultados de benchmarks. La ausencia de datos contrastados impide realizar una evaluación técnica rigurosa, por lo que la mayoría de los campos se indican como "no disponible".
 
@@ -53,6 +53,6 @@ No disponible. Sin informacion sobre arquitectura, parametros o rendimiento, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jon1337228/bwj
+- Repositorio Hugging Face: https://huggingface.co/Jon1337228/bwj
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos complementarios) en la busqueda web realizada.

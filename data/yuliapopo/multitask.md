@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuliapopo/multitask` es un repositorio de HuggingFace publicado por el usuario `yuliapopo` que contiene una implementación funcional de la arquitectura Beit orientada a tareas multitarea, configurada en escala "tiny". El propio autor indica en la model card que se trata de una implementación de código transparente pensada para "smoke tests" reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. No es, por tanto, un modelo entrenado ni un checkpoint con resultados verificados.
+`yuliapopo/multitask` es un repositorio de Hugging Face publicado por el usuario `yuliapopo` que contiene una implementación funcional de la arquitectura Beit orientada a tareas multitarea, configurada en escala "tiny". El propio autor indica en la model card que se trata de una implementación de código transparente pensada para "smoke tests" reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente. No es, por tanto, un modelo entrenado ni un checkpoint con resultados verificados.
 
 El dato más relevante para evaluarlo es su tamaño: 16.576 parámetros totales según los metadatos de los pesos en safetensors. Esa cifra es varios órdenes de magnitud inferior a la de cualquier transformer utilizadle en producción, lo que confirma que el artefacto es una inicialización válida para pruebas de humo, no un modelo con capacidad funcional real. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -75,12 +75,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado sobre el que medirlo.
 - No hay información sobre longitud de contexto ni sobre idiomas soportados.
 - La licencia BSD-3-Clause permite uso comercial, pero el propio autor advierte de que deben revisarse por separado los términos de las fuentes de datos si el repositorio se usa con datasets externos.
-- Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito; intentar cargarlo como un transformer estándar fallará.
+- Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito; intentar cargarlo como un transformer estándar fallará.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - 0 descargas y 0 "likes": no existe validación por parte de la comunidad ni informes de terceros sobre su funcionamiento en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuliapopo/multitask
+- Modelo en Hugging Face: https://huggingface.co/yuliapopo/multitask
 
 Nota: la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo. Los enlaces obtenidos corresponden a anuncios inmobiliarios de la localidad francesa de Chevry-Cossigny y no guardan relación alguna con el artefacto descrito, por lo que se omiten. No se dispone de paper, blog, repositorio adicional ni demo asociados.

@@ -97,11 +97,11 @@ Los datos de modelos alternativos proceden de su documentacion publica y no han 
 - Idiomas no declarados: la model card no especifica que idiomas soporta esta conversion, por lo que no puede asumirse un soporte multilingue verificado.
 - Adopcion nula y escasa trazabilidad: 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks ni validacion externa publicada.
 - Licencia: Apache 2.0, heredada del modelo base, permite uso comercial sin restricciones adicionales conocidas; conviene revisar igualmente la model card del modelo base por si incorpora terminos complementarios.
-- Fecha de publicacion atipica: el repositorio figura como creado el 2026-09-10, dato que debe verificarse en la pagina de HuggingFace antes de citarlo.
+- Fecha de publicacion atipica: el repositorio figura como creado el 2026-09-10, dato que debe verificarse en la pagina de Hugging Face antes de citarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Qwen3-0.6B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio MLX de Apple: https://github.com/ml-explore/mlx
 - Pipeline de conversion MLX Foundry, citado por el autor: https://github.com/SirSahOl/mlx-foundry

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`paudelarju/repo_name_here` es un modelo de traduccion automatica y generacion de texto condicionada (text2text-generation) publicado en HuggingFace por el usuario paudelarju. Se trata de un fine-tune del modelo multilingue facebook/m2m100_418M, segun declara la propia model card y los tags del repositorio (`base_model:facebook/m2m100_418M`, `base_model:finetune:facebook/m2m100_418M`). El repositorio se creo el 16 de julio de 2026 y se actualizo por ultima vez el 19 de septiembre de 2026, con 0 descargas y 0 likes en el momento de redactar esta ficha.
+`paudelarju/repo_name_here` es un modelo de traduccion automatica y generacion de texto condicionada (text2text-generation) publicado en Hugging Face por el usuario paudelarju. Se trata de un fine-tune del modelo multilingue facebook/m2m100_418M, segun declara la propia model card y los tags del repositorio (`base_model:facebook/m2m100_418M`, `base_model:finetune:facebook/m2m100_418M`). El repositorio se creo el 16 de julio de 2026 y se actualizo por ultima vez el 19 de septiembre de 2026, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-El interes tecnico del modelo es limitado tal y como esta publicado: la model card esta generada automaticamente por el `Trainer` de HuggingFace y no documenta el conjunto de datos de entrenamiento ("on the None dataset"), ni los usos previstos, ni los idiomas cubiertos, ni resultados de evaluacion (el `model-index` incluye un array `results` vacio). Lo unico verificable son los hiperparametros de entrenamiento (learning rate 7e-05, 5 epocas, batch total de 16, AdamW fused, precision mixta nativa) y el recuento real de parametros en safetensors: 483.905.536.
+El interes tecnico del modelo es limitado tal y como esta publicado: la model card esta generada automaticamente por el `Trainer` de Hugging Face y no documenta el conjunto de datos de entrenamiento ("on the None dataset"), ni los usos previstos, ni los idiomas cubiertos, ni resultados de evaluacion (el `model-index` incluye un array `results` vacio). Lo unico verificable son los hiperparametros de entrenamiento (learning rate 7e-05, 5 epocas, batch total de 16, AdamW fused, precision mixta nativa) y el recuento real de parametros en safetensors: 483.905.536.
 
 Por tanto, esta ficha debe leerse como una descripcion del artefacto publicado y de su modelo base, no como una evaluacion de calidad. Cualquier uso en produccion exige una validacion previa por parte del integrador, dado que no hay evidencia publicada de rendimiento, idiomas objetivo ni procedencia de los datos.
 
@@ -37,7 +37,7 @@ Sobre el entrenamiento, la model card solo aporta hiperparametros: learning rate
 - Soporte de agentes y razonamiento multi-paso: no disponible; la arquitectura no esta disenada para ello.
 - Capacidades multilingues: no verificables en este repositorio; dependen del fine-tune aplicado sobre el modelo base.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el formato de pesos puede servirse con la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el formato de pesos puede servirse con la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paudelarju/repo_name_here | 483.905.536 | Transformer encoder-decoder (fine-tune de M2M-100) | No disponible | MIT (segun su model card) | Repositorio HuggingFace con 0 descargas, sin evaluacion |
+| paudelarju/repo_name_here | 483.905.536 | Transformer encoder-decoder (fine-tune de M2M-100) | No disponible | MIT (segun su model card) | Repositorio Hugging Face con 0 descargas, sin evaluacion |
 | facebook/m2m100_418M | Aproximadamente 418 millones | Transformer encoder-decoder multilingue | 1024 posiciones (documentacion publica del modelo base) | Verificar en el repositorio del modelo base | Modelo base ampliamente distribuido y documentado |
 | facebook/nllb-200-distilled-600M | Aproximadamente 600 millones | Transformer encoder-decoder multilingue | No disponible en esta ficha | Verificar en el repositorio correspondiente (habitualmente con restricciones de uso comercial) | Modelo alternativo habitual para traduccion multilingue |
 | Helsinki-NLP/opus-mt-* | Aproximadamente 77 millones por par de idiomas | Transformer encoder-decoder por par linguistico | No disponible en esta ficha | Variable segun el par (verificar cada repositorio) | Coleccion amplia de modelos por par de idiomas |
@@ -86,12 +86,12 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 - Licencia: el repositorio declara MIT, pero al derivar de facebook/m2m100_418M conviene verificar la licencia del modelo base y las condiciones de uso comercial antes de desplegarlo.
 - Reputacion del artefacto: 0 descargas y 0 likes, mas un nombre de repositorio generico (`repo_name_here`) y ausencia de pipeline declarado, indican que no ha pasado ninguna revision por parte de la comunidad.
 - Tamano del repositorio desproporcionado (9,7 GB para 483 millones de parametros): revisar el contenido antes de descargar o integrar en un pipeline de CI/CD.
-- Fechas de creacion y actualizacion poco habituales en el repositorio (2026): conviene confirmar el estado real del artefacto en HuggingFace antes de depender de el.
+- Fechas de creacion y actualizacion poco habituales en el repositorio (2026): conviene confirmar el estado real del artefacto en Hugging Face antes de depender de el.
 - Para produccion: se recomienda tratarlo como un checkpoint experimental, con validacion propia sobre el dominio objetivo y sin garantias de soporte.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paudelarju/repo_name_here
+- Repositorio Hugging Face: https://huggingface.co/paudelarju/repo_name_here
 - Modelo base: https://huggingface.co/facebook/m2m100_418M
 - Alternativa multilingue de referencia: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Coleccion de modelos de traduccion por par: https://huggingface.co/Helsinki-NLP

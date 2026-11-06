@@ -126,7 +126,7 @@ Frente a alternativas generalistas de la misma categoría (LLM de propósito gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/someguystrainingmodels/decision-model-large
+- Modelo en Hugging Face: https://huggingface.co/someguystrainingmodels/decision-model-large
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Modelo hermano decision-model-tiny: https://huggingface.co/someguystrainingmodels/decision-model-tiny
 - Modelo hermano decision-model-small: https://huggingface.co/someguystrainingmodels/decision-model-small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `imam2023/Su-METAL.BABYMETAL_2022-23` es un repositorio publicado en HuggingFace por el usuario `imam2023` bajo licencia Apache 2.0. El nombre sugiere una posible relación con la banda japonesa BABYMETAL y su vocalista Suzuka Nakamoto (Su-METAL), pero la model card no contiene ninguna descripción técnica, arquitectura, ni documentación de uso. El repositorio tiene un tamaño de 0,5 GB, fue creado el 20 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes en el momento de la consulta.
+El modelo `imam2023/Su-METAL.BABYMETAL_2022-23` es un repositorio publicado en Hugging Face por el usuario `imam2023` bajo licencia Apache 2.0. El nombre sugiere una posible relación con la banda japonesa BABYMETAL y su vocalista Suzuka Nakamoto (Su-METAL), pero la model card no contiene ninguna descripción técnica, arquitectura, ni documentación de uso. El repositorio tiene un tamaño de 0,5 GB, fue creado el 20 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes en el momento de la consulta.
 
 Al no existir información técnica en la model card ni en los metadatos, no es posible determinar qué tipo de modelo es (texto, imagen, audio, etc.), su arquitectura, parámetros o capacidades. Esta ficha refleja únicamente los datos disponibles y marca como "no disponible" todo aquello que no se ha publicado.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la categoria del modelo (tamano, tarea, modalidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imam2023/Su-METAL.BABYMETAL_2022-23
+- Repositorio en Hugging Face: https://huggingface.co/imam2023/Su-METAL.BABYMETAL_2022-23

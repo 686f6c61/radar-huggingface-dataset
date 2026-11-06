@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima_Turbo_LoRA es un adaptador LoRA publicado en HuggingFace por el usuario watanbe4112 bajo una licencia personalizada denominada `anima-turbo-lora`. Por el nombre y el formato del repositorio, se trata de un ajuste fino ligero (Low-Rank Adaptation) pensado para aplicarse sobre un modelo base no especificado en la informacion disponible, presumiblemente orientado a generacion de imagenes o animacion, aunque este extremo no puede confirmarse con los datos publicados.
+Anima_Turbo_LoRA es un adaptador LoRA publicado en Hugging Face por el usuario watanbe4112 bajo una licencia personalizada denominada `anima-turbo-lora`. Por el nombre y el formato del repositorio, se trata de un ajuste fino ligero (Low-Rank Adaptation) pensado para aplicarse sobre un modelo base no especificado en la informacion disponible, presumiblemente orientado a generacion de imagenes o animacion, aunque este extremo no puede confirmarse con los datos publicados.
 
 El repositorio tiene un tamano de aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de rango reducido y no con un modelo completo. No se ha publicado informacion sobre arquitectura, parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia. La model card se limita a declarar la licencia y no incluye descripcion tecnica, datos de entrenamiento ni ejemplos de uso.
 
@@ -41,7 +41,7 @@ Tampoco se han publicado datos sobre el conjunto de entrenamiento, el numero de 
 - Evaluacion experimental de adaptadores LoRA: el modelo puede emplearse en entornos de investigacion para probar la aplicacion de adaptadores de bajo rango sobre un modelo base, siempre que se identifique previamente dicho modelo base.
 - Pruebas de compatibilidad de pipelines de difusion: si el adaptador resulta ser de imagen, podria integrarse en flujos de generacion con herramientas como Diffusers, aunque no hay documentacion que lo confirme.
 - Prototipado interno sin requisitos de produccion: dado el caracter no documentado del repositorio, su uso razonable se limita a experimentacion controlada.
-- Estudio de licencias personalizadas: el repositorio sirve como caso de analisis de licencias no estandar en el ecosistema HuggingFace.
+- Estudio de licencias personalizadas: el repositorio sirve como caso de analisis de licencias no estandar en el ecosistema Hugging Face.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental ni ninguna aplicacion critica, al no existir evidencia de capacidades verificadas.
 - No se dispone de informacion suficiente para proponer casos de uso adicionales con garantias tecnicas.
 
@@ -72,5 +72,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/watanbe4112/Anima_Turbo_LoRA
+- Repositorio en Hugging Face: https://huggingface.co/watanbe4112/Anima_Turbo_LoRA
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

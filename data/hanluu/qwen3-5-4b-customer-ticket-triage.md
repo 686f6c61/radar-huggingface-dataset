@@ -68,7 +68,7 @@ No hay modelos comparables específicos para este adaptador en la información d
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/HanLuu/qwen3.5-4b-customer-ticket-triage
+- Hugging Face del adaptador: https://huggingface.co/HanLuu/qwen3.5-4b-customer-ticket-triage
 - Modelo base unsloth/Qwen3.5-4B: https://huggingface.co/unsloth/Qwen3.5-4B (no verificado directamente, se infiere de la model card)
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio GitHub de Qwen: https://github.com/QwenLM/Qwen

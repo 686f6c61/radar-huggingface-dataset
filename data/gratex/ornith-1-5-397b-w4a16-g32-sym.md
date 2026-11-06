@@ -96,9 +96,9 @@ Throughput medido con un cliente OpenAI estandar sobre 4x RTX PRO 6000 (96 GB), 
 
 | Modelo | Parametros | Contexto | Cuantizacion | PPL WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gratex/Ornith-1.5-397B-W4A16-g32-sym | 397B nominales / 70,65B en metadatos safetensors (segun fuente) | 262.144 tokens | W4A16 INT4, group_size 32, simetrico | 4,6611 | MIT | HuggingFace, compressed-tensors |
-| ornith-ai/Ornith-1.5-397B-NVFP4 | mismo modelo base | 262.144 tokens (heredado) | NVFP4 (cuantizacion oficial) | 4,8522 | no disponible en la informacion proporcionada | HuggingFace, publicada por ornith-ai |
-| ornith-ai/Ornith-1.5-397B (BF16) | 397B nominales; ~752 GB en BF16 | 262.144 tokens | sin cuantizar | no disponible | no disponible en la informacion proporcionada | HuggingFace, modelo base |
+| gratex/Ornith-1.5-397B-W4A16-g32-sym | 397B nominales / 70,65B en metadatos safetensors (segun fuente) | 262.144 tokens | W4A16 INT4, group_size 32, simetrico | 4,6611 | MIT | Hugging Face, compressed-tensors |
+| ornith-ai/Ornith-1.5-397B-NVFP4 | mismo modelo base | 262.144 tokens (heredado) | NVFP4 (cuantizacion oficial) | 4,8522 | no disponible en la informacion proporcionada | Hugging Face, publicada por ornith-ai |
+| ornith-ai/Ornith-1.5-397B (BF16) | 397B nominales; ~752 GB en BF16 | 262.144 tokens | sin cuantizar | no disponible | no disponible en la informacion proporcionada | Hugging Face, modelo base |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -118,7 +118,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gratex/Ornith-1.5-397B-W4A16-g32-sym
+- Modelo en Hugging Face: https://huggingface.co/gratex/Ornith-1.5-397B-W4A16-g32-sym
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Cuantizacion oficial NVFP4 del mismo modelo: https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4
 - Intel AutoRound (herramienta de cuantizacion): https://github.com/intel/auto-round

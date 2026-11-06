@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Cdimabusinessent/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF es una publicacion de cuantizaciones GGUF de un fine tune de tercera generacion sobre la familia Qwen 3.x. El fine tune original lo desarrolla DavidAU (el modelo base referenciado es DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU), mientras que este repositorio lo publica el usuario Cdimabusinessent con cuantizaciones "regulares" y "MTP" generadas mediante imatrix dual (DI-MATRIX). El pipeline declarado en HuggingFace es image-text-to-text, aunque la model card no detalla el componente de vision.
+El modelo identificado como Cdimabusinessent/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF es una publicacion de cuantizaciones GGUF de un fine tune de tercera generacion sobre la familia Qwen 3.x. El fine tune original lo desarrolla DavidAU (el modelo base referenciado es DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU), mientras que este repositorio lo publica el usuario Cdimabusinessent con cuantizaciones "regulares" y "MTP" generadas mediante imatrix dual (DI-MATRIX). El pipeline declarado en Hugging Face es image-text-to-text, aunque la model card no detalla el componente de vision.
 
 Se trata de un modelo denso de 26.895.998.464 parametros (unos 26,9 mil millones), derivado de Qwen 3.8 27B segun el autor, con licencia apache-2.0 declarada e idiomas declarados ingles y chino. Su propuesta principal es reducir el consumo de tokens de "pensamiento" entre la mitad y una decima parte respecto al modelo base, manteniendo o elevando los benchmarks de razonamiento (ARC-C y ARC-E), y anadir prediccion multi-token (MTP) para acelerar la generacion.
 
@@ -39,7 +39,7 @@ Las innovaciones declaradas son tres: la reduccion del bloque de razonamiento (e
 - Escritura creativa, ficcion, narrativa de todos los generos y roleplaying, segun las etiquetas del autor.
 - Reduccion del consumo de tokens de razonamiento respecto al modelo base, lo que implica mayor velocidad efectiva en tareas de pensamiento extendido.
 - Prediccion multi-token (MTP) para acelerar la decodificacion en las cuantizaciones preparadas para ello.
-- Capacidad multimodal imagen-texto-a-texto declarada a nivel de pipeline en HuggingFace, sin detalle de implementacion en la model card.
+- Capacidad multimodal imagen-texto-a-texto declarada a nivel de pipeline en Hugging Face, sin detalle de implementacion en la model card.
 - Multilingue limitado a ingles y chino.
 - Modelo sin censura (tags heretic, uncensored, abliterated): no se ha aplicado alineacion de seguridad, por lo que responde a peticiones que un modelo alineado rechazaria.
 - Soporte de tool calling: la model card remite a la pestana "community" del repositorio original para resultados de terceros, incluida una afirmacion de "el mejor rendimiento de tool calling registrado"; no se aportan datos verificables en la informacion disponible.
@@ -85,7 +85,7 @@ Solo se dispone de comparaciones cualitativas aportadas por el autor, sin cifras
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882) | 26,9 mil millones | no disponible | ARC-C 735 en 8 bits, 719 en 4 bits; superior al base en 7 benchmarks segun el autor | apache-2.0 | GGUF en HuggingFace, 0 descargas, 0 likes |
+| Este modelo (Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882) | 26,9 mil millones | no disponible | ARC-C 735 en 8 bits, 719 en 4 bits; superior al base en 7 benchmarks segun el autor | apache-2.0 | GGUF en Hugging Face, 0 descargas, 0 likes |
 | Qwen 3.8 27B (base, via modelo intermedio DavidAU ...-NM-DAU) | 27 mil millones declarados | no disponible | Referencia de comparacion del autor, sin cifras publicadas | no disponible (la licencia declarada del derivado es apache-2.0) | safetensors/bfloat16 |
 | Qwen3.6 27B | no disponible | no disponible | El autor afirma que este modelo lo supera en los 7 benchmarks criticos | no disponible | no disponible |
 | Qwen3.6-35B-A3B | 35 mil millones totales (A3B) | no disponible | El autor afirma que este modelo lo supera en los 7 benchmarks criticos | no disponible | no disponible |
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos independientes (MMLU, HumanEva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cdimabusinessent/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Cdimabusinessent/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia al metodo Fable Fusion 711 citada por el autor: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset declarado (Polar-STRICT-Datasets): https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

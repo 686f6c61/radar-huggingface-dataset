@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hv-fluctuation-os es un motor de simulación numérica publicado en HuggingFace por el usuario zeechimp bajo la etiqueta de pipeline `feature-extraction`, aunque no se trata de una red neuronal ni de un modelo con pesos entrenados: es una librería de Python de aproximadamente 22 KB de código fuente que implementa la igualdad de Jarzynski (1997) y el teorema de fluctuación de Crooks (1999) aplicados a dinámica de Langevin en sistemas canónicos de juguete. Su única dependencia es NumPy y no requiere GPU.
+hv-fluctuation-os es un motor de simulación numérica publicado en Hugging Face por el usuario zeechimp bajo la etiqueta de pipeline `feature-extraction`, aunque no se trata de una red neuronal ni de un modelo con pesos entrenados: es una librería de Python de aproximadamente 22 KB de código fuente que implementa la igualdad de Jarzynski (1997) y el teorema de fluctuación de Crooks (1999) aplicados a dinámica de Langevin en sistemas canónicos de juguete. Su única dependencia es NumPy y no requiere GPU.
 
 El paquete resuelve un problema concreto de la física estadística computacional: estimar la diferencia de energía libre de equilibrio ΔF entre dos valores de un parámetro de control λ a partir de trayectorias de no equilibrio. Para ello integra la ecuación de Langevin con el esquema Euler–Maruyama, muestrea condiciones iniciales de la distribución de Boltzmann y ofrece estimadores de ΔF tanto por promedio exponencial de Jarzynski (naive y con corrección de sesgo) como por ajuste del logaritmo del cociente de distribuciones de trabajo de Crooks.
 
@@ -120,7 +120,7 @@ En este caso el estimador naive recupera ΔF con un error del 0,7 %. El reposito
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la información proporcionada. El artefacto no es un modelo de lenguaje ni de visión, por lo que las comparativas habituales por parámetros, contexto o licencia no son aplicables. Los resultados de búsqueda web recibidos (una nota sobre el modelo ZEE de Archer Aviation, un enlace genérico a HuggingFace, una entrada de arXiv y el sitio fluctuation.ai) no corresponden a herramientas equivalentes de simulación de teoremas de fluctuación y no permiten establecer una comparación verificable.
+No se dispone de datos comparativos en la información proporcionada. El artefacto no es un modelo de lenguaje ni de visión, por lo que las comparativas habituales por parámetros, contexto o licencia no son aplicables. Los resultados de búsqueda web recibidos (una nota sobre el modelo ZEE de Archer Aviation, un enlace genérico a Hugging Face, una entrada de arXiv y el sitio fluctuation.ai) no corresponden a herramientas equivalentes de simulación de teoremas de fluctuación y no permiten establecer una comparación verificable.
 
 Una comparación relevante tendría que hacerse contra otras librerías de dinámica estocástica y estimación de energía libre (por ejemplo, entornos de dinámica molecular o paquetes específicos de muestreo), pero no se han encontrado datos en la información disponible, por lo que se indica "no disponible".
 
@@ -138,7 +138,7 @@ Una comparación relevante tendría que hacerse contra otras librerías de diná
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/zeechimp/hv-fluctuation-os
-- Perfil del autor en HuggingFace: https://huggingface.co/zeechimp
+- Página del modelo en Hugging Face: https://huggingface.co/zeechimp/hv-fluctuation-os
+- Perfil del autor en Hugging Face: https://huggingface.co/zeechimp
 - Referencia bibliográfica de la igualdad de Jarzynski (1997) y del teorema de fluctuación de Crooks (1999): citadas en la model card sin enlace directo disponible.
 - No se han encontrado en la búsqueda web enlaces específicos al paquete: papers, repositorios o demos adicionales. Los resultados devueltos (https://huggingface.co/, https://aliteq.com/archer-aviation-zee-ai-model-stock-jump-2026, https://arxiv.org/pdf/2302.06584v3, https://fluctuation.ai/, https://local-ai-zone.github.io/blog/September_2026_AI_Model_Updates.html) no guardan relación verificable con este artefacto.

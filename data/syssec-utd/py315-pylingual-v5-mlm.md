@@ -2,7 +2,7 @@
 
 ## Resumen
 
-py315-pylingual-v5-mlm es un modelo de lenguaje enmascarado (masked language modeling, pipeline `fill-mask`) publicado por syssec-utd en HuggingFace. Se trata de un fine-tune de un modelo base no identificado (el enlace al modelo de partida aparece vacío en la model card) sobre el dataset `syssec-utd/segmentation-py315-pylingual-v5`, y está construido sobre la arquitectura RoBERTa, segun la etiqueta de la libreria. El repositorio pesa 0,4 GB y los pesos en safetensors suman 109.506.864 parametros, una cifra propia de un encoder tipo BERT/RoBERTa de escala base.
+py315-pylingual-v5-mlm es un modelo de lenguaje enmascarado (masked language modeling, pipeline `fill-mask`) publicado por syssec-utd en Hugging Face. Se trata de un fine-tune de un modelo base no identificado (el enlace al modelo de partida aparece vacío en la model card) sobre el dataset `syssec-utd/segmentation-py315-pylingual-v5`, y está construido sobre la arquitectura RoBERTa, segun la etiqueta de la libreria. El repositorio pesa 0,4 GB y los pesos en safetensors suman 109.506.864 parametros, una cifra propia de un encoder tipo BERT/RoBERTa de escala base.
 
 El modelo resuelve la tarea clasica de rellenado de tokens enmascarados: dado un texto con uno o varios tokens sustituidos por la mascara, predice el token mas probable en cada posicion. Este tipo de modelos se emplea habitualmente como base para extraccion de caracteristicas, clasificacion de secuencias, etiquetado de tokens y, en el caso que sugiere el nombre, tareas de segmentacion sobre codigo Python en contextos multilingues, aunque la model card no confirma ninguno de estos usos.
 
@@ -34,9 +34,9 @@ El entrenamiento fue un fine-tune supervisado sobre el dataset `syssec-utd/segme
 - Posible especializacion en codigo Python y contextos multilingues, sugerida por los nombres `py315` y `pylingual` del identificador y del dataset; no confirmada en la model card.
 - Soporte de tool calling y function calling: no disponible, no declarado.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no es una capacidad propia de un modelo de fill-mask.
-- Capacidades multilingues: no disponibles; no se declaran idiomas en la ficha de HuggingFace.
+- Capacidades multilingues: no disponibles; no se declaran idiomas en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles, no declaradas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de inferencia gestionada de Hugging Face.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia: con 109,5 millones de parametros, en fp32 el peso ocupa aproximadamente 0,44 GB (coincide con el tamano del repo, 0,4 GB) y en fp16 aproximadamente 0,22 GB; la VRAM total necesaria depende del tamano de batch y de la longitud de secuencia, pero en cualquier caso es inferior a 2 GB en configuraciones tipicas de una sola secuencia.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Para entrenamiento o inferencia por lotes, una RTX 3060, RTX 4070, RTX 4090, A100 o H100 ofrecen margen sobrado; el modelo original se entreno con 3 dispositivos en paralelo.
 - Cabe en GPU de consumo: si, practicamente en cualquier GPU de consumo moderna (GTX 1650 en adelante) e incluso en CPU para inferencia de baja carga.
-- Opciones de despliegue: transformers con PyTorch (via `pipeline("fill-mask")`), Text Generation Inference o endpoints gestionados de HuggingFace (la etiqueta `endpoints_compatible` asi lo indica). No hay pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requeririan una conversion previa; vLLM soporta arquitecturas encoder tipo BERT, pero no se ha validado para este checkpoint.
+- Opciones de despliegue: transformers con PyTorch (via `pipeline("fill-mask")`), Text Generation Inference o endpoints gestionados de Hugging Face (la etiqueta `endpoints_compatible` asi lo indica). No hay pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requeririan una conversion previa; vLLM soporta arquitecturas encoder tipo BERT, pero no se ha validado para este checkpoint.
 - Latencia y throughput estimados: no disponibles; no se ha publicado ninguna medicion. A modo orientativo, un encoder de 110 millones de parametros procesa secuencias cortas en pocos milisegundos en GPU moderna, pero esta cifra no procede de datos del autor.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ Los valores de los modelos de comparacion son caracteristicas publicas y ampliam
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syssec-utd/py315-pylingual-v5-mlm | 109,5 M | no disponible | fill-mask | no disponible | HuggingFace, 0 descargas |
+| syssec-utd/py315-pylingual-v5-mlm | 109,5 M | no disponible | fill-mask | no disponible | Hugging Face, 0 descargas |
 | roberta-base (Facebook AI) | ~125 M | 512 tokens | fill-mask / encoder general | MIT | ampliamente disponible |
 | bert-base-uncased (Google) | ~110 M | 512 tokens | fill-mask / encoder general | Apache 2.0 | ampliamente disponible |
 | DeBERTa-v3-base (Microsoft) | ~86 M en el backbone | 512 tokens | fill-mask / encoder general | MIT | ampliamente disponible |
@@ -88,9 +88,9 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/py315-pylingual-v5-mlm
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/py315-pylingual-v5-mlm
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/syssec-utd/segmentation-py315-pylingual-v5 (referencia textual; no se proporciono URL verificada)
-- Perfil del autor en HuggingFace: https://huggingface.co/syssec-utd
+- Perfil del autor en Hugging Face: https://huggingface.co/syssec-utd
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a contenidos sin relacion (paginas de un grupo musical) y se descartan por no ser fuentes validas.

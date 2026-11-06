@@ -17,7 +17,7 @@ Su relevancia es acotada y muy específica: sirve como pieza de investigación y
 | Longitud de contexto | 512 tokens (rechaza entradas superiores sin truncar) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; el repositorio fuente del runtime conserva AGPL-3.0 y la exportacion de fixtures autorada declara Apache-2.0 por separado |
+| Licencia | no disponible en los metadatos de Hugging Face; el repositorio fuente del runtime conserva AGPL-3.0 y la exportacion de fixtures autorada declara Apache-2.0 por separado |
 | Formato de pesos | no disponible; los pesos del encoder de embeddings no se incluyen en el paquete |
 
 ## Arquitectura y entrenamiento
@@ -74,13 +74,13 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Límite estricto de 512 tokens por entrada, con rechazo (no truncado automático) de entradas superiores.
 - Dependencia fuerte del entorno: la implementación de `ipfs_datasets_py` debe coincidir con los hashes de fuente del checkpoint, y se rechazan fuentes incompatibles; el runtime no está confirmado como publicado en una versión de PyPI.
 - Los pesos del encoder de embeddings no se incluyen, por lo que la inferencia depende de assets locales verificados.
-- Licencia ambigua: los metadatos de HuggingFace no declaran licencia; el repositorio fuente del runtime conserva AGPL-3.0 y la exportación de fixtures autorada declara Apache-2.0. No se concede una nueva licencia para los pesos heredados, y no se afirma que la licencia del corpus sea la licencia de los pesos. Cualquier uso comercial debe aclararse con el autor.
+- Licencia ambigua: los metadatos de Hugging Face no declaran licencia; el repositorio fuente del runtime conserva AGPL-3.0 y la exportación de fixtures autorada declara Apache-2.0. No se concede una nueva licencia para los pesos heredados, y no se afirma que la licencia del corpus sea la licencia de los pesos. Cualquier uso comercial debe aclararse con el autor.
 - Riesgo de alucinación en el sentido de generar fragmentos tipados plausibles pero incorrectos: el propio autor advierte que no hay garantía de significado correcto.
 - No se documentan idiomas soportados; la cobertura lingüística es desconocida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Publicus/legal-ir-autoencoder
+- Modelo en Hugging Face: https://huggingface.co/Publicus/legal-ir-autoencoder
 - Encoder de embeddings de entrada: https://huggingface.co/thenlper/gte-small (commit `17e1f347d17fe144873b1201da91788898c639cd`)
 - Manifiesto SHA256 del checkpoint: `34794ea4bbf128678eafdd8ba1862b58c8d0bf36b8ae83e20de75abf57e9debc` (ruta `releases/20261002-384-development-v1/`)
 - Repositorio del runtime `ipfs_datasets_py`: no disponible en la informacion proporcionada

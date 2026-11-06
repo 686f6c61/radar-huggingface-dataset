@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una version cuantizada a INT8 del modelo Llama 3.1 8B de Meta, publicada por el usuario fbaldassarri en HuggingFace. Se trata de un artefacto derivado que aplica cuantizacion de solo pesos (weights-only quantization, WoQ) mediante el algoritmo GPTQ implementado en Intel AutoRound v0.16.0, con 8 bits, tamano de grupo 64 y cuantizacion simetrica. El objetivo es reducir la huella de memoria del modelo original para facilitar su inferencia en hardware Intel (CPU, iGPU Arc y NPU de la serie Core Ultra) a traves de intel-extension-for-pytorch y OpenVINO.
+Esta ficha describe una version cuantizada a INT8 del modelo Llama 3.1 8B de Meta, publicada por el usuario fbaldassarri en Hugging Face. Se trata de un artefacto derivado que aplica cuantizacion de solo pesos (weights-only quantization, WoQ) mediante el algoritmo GPTQ implementado en Intel AutoRound v0.16.0, con 8 bits, tamano de grupo 64 y cuantizacion simetrica. El objetivo es reducir la huella de memoria del modelo original para facilitar su inferencia en hardware Intel (CPU, iGPU Arc y NPU de la serie Core Ultra) a traves de intel-extension-for-pytorch y OpenVINO.
 
 El modelo base, Llama 3.1 8B, es un transformer causal denso de aproximadamente 8.000 millones de parametros con una ventana de contexto de 128.000 tokens y soporte para ocho idiomas. Esta version cuantizada conserva la arquitectura y el tokenizador del original, pero almacena los pesos en INT8, lo que reduce el espacio en disco y la memoria necesaria en inferencia a costa de una posible perdida de precision que el autor no cuantifica en la model card.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int8-gs64-sym | ~8.000 M (base); 2.933 M reportados en safetensors | No disponible (base: 128.000) | INT8 GPTQ, gs64, simetrica | Llama 3.1 Community License | HuggingFace, 18 descargas |
-| meta-llama/Llama-3.1-8B (original) | ~8.000 M | 128.000 | bfloat16 | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Otras cuantizaciones INT8/INT4 de Llama 3.1 8B (GPTQ, AWQ, GGUF) | ~8.000 M | 128.000 | INT8, INT4, varios formatos | Llama 3.1 Community License | Multiples repositorios en HuggingFace |
+| fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int8-gs64-sym | ~8.000 M (base); 2.933 M reportados en safetensors | No disponible (base: 128.000) | INT8 GPTQ, gs64, simetrica | Llama 3.1 Community License | Hugging Face, 18 descargas |
+| meta-llama/Llama-3.1-8B (original) | ~8.000 M | 128.000 | bfloat16 | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Otras cuantizaciones INT8/INT4 de Llama 3.1 8B (GPTQ, AWQ, GGUF) | ~8.000 M | 128.000 | INT8, INT4, varios formatos | Llama 3.1 Community License | Multiples repositorios en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre esta version y las alternativas, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre esta version y las alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

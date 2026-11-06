@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su demostración práctica de técnicas d
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de visión, sin soporte de lenguaje) |
 | Licencia | intel-challenge-dataset (licencia específica del desafío Intel, ver archivo LICENSE en el repositorio) |
-| Formato de pesos | no disponible (el repositorio de HuggingFace tiene un tamaño de 0,0 GB; el código de ejemplo sugiere un checkpoint de PyTorch `.pth`, pero no se ha confirmado su disponibilidad) |
+| Formato de pesos | no disponible (el repositorio de Hugging Face tiene un tamaño de 0,0 GB; el código de ejemplo sugiere un checkpoint de PyTorch `.pth`, pero no se ha confirmado su disponibilidad) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,12 +89,12 @@ No se dispone de datos comparativos con otros modelos de clasificación de defec
 - La clase `new_good` (sin defecto) no tiene muestras de evaluación en esta revisión del conjunto de datos, por lo que su rendimiento real es desconocido.
 - El entrenamiento se realizó sobre imágenes proporcionadas por Intel para el desafío; la generalización a otros tipos de obleas o procesos de fabricación no está garantizada.
 - La licencia `intel-challenge-dataset` es específica del desafío y puede restringir el uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso.
-- El repositorio de HuggingFace tiene un tamaño de 0,0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles directamente en la plataforma; el código de ejemplo utiliza `hf_hub_download` para descargar `best_model.pth`, pero su disponibilidad real no está confirmada.
+- El repositorio de Hugging Face tiene un tamaño de 0,0 GB, lo que sugiere que los pesos del modelo podrían no estar disponibles directamente en la plataforma; el código de ejemplo utiliza `hf_hub_download` para descargar `best_model.pth`, pero su disponibilidad real no está confirmada.
 - No se han publicado análisis de sesgos ni de robustez frente a variaciones de iluminación, ruido o condiciones de captura diferentes a las del conjunto de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sehastrajit/defect-vision-efficientnet-b2
+- Modelo en Hugging Face: https://huggingface.co/Sehastrajit/defect-vision-efficientnet-b2
 - Repositorio GitHub (código, FastAPI, React, notebook de entrenamiento): https://github.com/Sehastrajit-S/defect-vision
-- Demo interactiva en HuggingFace Spaces: https://huggingface.co/spaces/Researchdemo834/defectvision
+- Demo interactiva en Hugging Face Spaces: https://huggingface.co/spaces/Researchdemo834/defectvision
 - Documentación de torchvision para EfficientNet-B2: http://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b2.html

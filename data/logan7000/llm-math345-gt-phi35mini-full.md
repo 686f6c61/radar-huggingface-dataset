@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| logan7000/llm-math345-gt-phi35mini-full | ~3.8B (base) | 128K (base) | GRPO sobre MATH345 | no disponible | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | 3.8B | 128K | Instruct tuning + RLHF | MIT | HuggingFace |
-| Qwen2.5-Math-1.5B | 1.5B | 32K | RL sobre MATH | Apache 2.0 | HuggingFace |
-| DeepSeekMath-7B | 7B | 4K | RL sobre MATH | MIT | HuggingFace |
+| logan7000/llm-math345-gt-phi35mini-full | ~3.8B (base) | 128K (base) | GRPO sobre MATH345 | no disponible | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | 3.8B | 128K | Instruct tuning + RLHF | MIT | Hugging Face |
+| Qwen2.5-Math-1.5B | 1.5B | 32K | RL sobre MATH | Apache 2.0 | Hugging Face |
+| DeepSeekMath-7B | 7B | 4K | RL sobre MATH | MIT | Hugging Face |
 
 La comparacion directa con estos modelos requiere datos de benchmarks que no estan disponibles para el modelo de logan7000. La principal diferencia es el metodo de entrenamiento (GRPO con recompensa ground-truth y beta=0) frente a los enfoques mas convencionales de RLHF o RL con recompensas mixtas.
 
@@ -78,9 +78,9 @@ La comparacion directa con estos modelos requiere datos de benchmarks que no est
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/logan7000/llm-math345-gt-phi35mini-full
+- Repositorio Hugging Face del modelo: https://huggingface.co/logan7000/llm-math345-gt-phi35mini-full
 - Repositorio de la variante endpoint: https://huggingface.co/logan7000/llm-math345-gt-phi35mini-endpoint
 - Repositorio espejo de la variante endpoint: https://huggingface.co/q1716523669/llm-math345-gt-phi35mini-endpoint
-- Modelo base Phi-3.5-mini-instruct: no se ha proporcionado enlace directo, pero esta disponible en HuggingFace como microsoft/Phi-3.5-mini-instruct
+- Modelo base Phi-3.5-mini-instruct: no se ha proporcionado enlace directo, pero esta disponible en Hugging Face como microsoft/Phi-3.5-mini-instruct
 - LLM Leaderboard (referencia general): https://llm-stats.com/leaderboards/llm-leaderboard
 - BenchLM (comparativa de benchmarks): https://benchlm.ai/

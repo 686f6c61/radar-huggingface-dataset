@@ -73,9 +73,9 @@ En el Decision Index público, sobre 10.763 peticiones (29.053 preguntas) de 42 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-mini-multi | 4.539 M | no disponible | Clasificación multietiqueta en 1 pasada con cutoff adaptativo | Apache-2.0 | HuggingFace + GitHub |
-| vllm-sr/d3-mini (base) | no disponible | no disponible | Preguntas `choice`, `score`, `noul`; sin `multi` | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (raíz) | ~4 B | no disponible | LLM generativo de propósito general | no disponible en la información | HuggingFace |
+| d3-mini-multi | 4.539 M | no disponible | Clasificación multietiqueta en 1 pasada con cutoff adaptativo | Apache-2.0 | Hugging Face + GitHub |
+| vllm-sr/d3-mini (base) | no disponible | no disponible | Preguntas `choice`, `score`, `noul`; sin `multi` | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (raíz) | ~4 B | no disponible | LLM generativo de propósito general | no disponible en la información | Hugging Face |
 
 La comparativa con clasificadores multietiqueta dedicados (por ejemplo, basados en encoders tipo BERT) no está disponible en la información proporcionada; los benchmarks de la model card solo comparan contra el propio modelo base.
 
@@ -92,7 +92,7 @@ La comparativa con clasificadores multietiqueta dedicados (por ejemplo, basados 
 - No se documentan cuantizaciones alternativas ni requisitos de contexto, lo que limita la planificación de despliegues con recursos ajustados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/akta-pro/d3-mini-multi
+- Modelo en Hugging Face: https://huggingface.co/akta-pro/d3-mini-multi
 - Modelo base: https://huggingface.co/vllm-sr/d3-mini
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio GitHub (código y proxy): https://github.com/akta-pro/d3-multi

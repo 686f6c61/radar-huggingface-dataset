@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | MMLU (misma metodología) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | ~27B (denso) | 262K (ampliable a 1M) | 82.35 % (logit comparison) | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-Abliterated (bf16) | ~27B | 262K | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-Abliterated-NVFP4 (este) | 19.1B (según safetensors) | 262K (ampliable a 1M) | 77.75 % | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B-Abliterated-GGUF (Q8_0) | ~27B | 262K | 78.00 % | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (original) | ~27B (denso) | 262K (ampliable a 1M) | 82.35 % (logit comparison) | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Abliterated (bf16) | ~27B | 262K | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Abliterated-NVFP4 (este) | 19.1B (según safetensors) | 262K (ampliable a 1M) | 77.75 % | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B-Abliterated-GGUF (Q8_0) | ~27B | 262K | 78.00 % | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base porque no se dispone de datos de otros modelos de la misma categoría (p. ej., Llama 3.1 8B o Mistral 7B) en la información proporcionada. El abliteration no afecta significativamente al rendimiento en MMLU (pérdida de ~0.25 puntos porcentuales entre Q8 y NVFP4), pero sí elimina por completo la capa de rechazo.
 
@@ -92,7 +92,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4
 - Modelo base (abliterated bf16): https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

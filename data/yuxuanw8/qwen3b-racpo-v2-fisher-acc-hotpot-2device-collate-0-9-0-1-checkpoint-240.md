@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generación de texto de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado por el usuario yuxuanw8 en HuggingFace. Según las etiquetas del repositorio, se trata de un ajuste fino sobre la arquitectura Qwen2, empaquetado en formato safetensors y compatible con la librería transformers, con pipeline declarado de text-generation y orientación conversacional. No se trata de un lanzamiento corporativo ni de un modelo con paper asociado: es un artefacto de investigación derivado de un proceso de ajuste, probablemente un checkpoint intermedio de un entrenamiento más largo.
+Este repositorio contiene un modelo de generación de texto de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado por el usuario yuxuanw8 en Hugging Face. Según las etiquetas del repositorio, se trata de un ajuste fino sobre la arquitectura Qwen2, empaquetado en formato safetensors y compatible con la librería transformers, con pipeline declarado de text-generation y orientación conversacional. No se trata de un lanzamiento corporativo ni de un modelo con paper asociado: es un artefacto de investigación derivado de un proceso de ajuste, probablemente un checkpoint intermedio de un entrenamiento más largo.
 
-El nombre del repositorio codifica buena parte de su contexto experimental: "checkpoint-240" indica un estado guardado en el paso 240 de entrenamiento; "hotpot" apunta a un ajuste orientado a tareas de question answering multi-salto (posiblemente sobre el conjunto HotpotQA); "2device" sugiere que el entrenamiento se ejecutó sobre dos dispositivos; "fisher" y "racpo" apuntan a técnicas de optimización o mezcla de pesos ponderada por información de Fisher y a una variante de optimización por preferencias o refuerzo; y "collate-0.9-0.1" parece describir una proporción de mezcla o collate entre dos fuentes de datos o dos políticas. Ninguno de estos extremos está documentado en la model card, que es la plantilla automática de HuggingFace sin rellenar.
+El nombre del repositorio codifica buena parte de su contexto experimental: "checkpoint-240" indica un estado guardado en el paso 240 de entrenamiento; "hotpot" apunta a un ajuste orientado a tareas de question answering multi-salto (posiblemente sobre el conjunto HotpotQA); "2device" sugiere que el entrenamiento se ejecutó sobre dos dispositivos; "fisher" y "racpo" apuntan a técnicas de optimización o mezcla de pesos ponderada por información de Fisher y a una variante de optimización por preferencias o refuerzo; y "collate-0.9-0.1" parece describir una proporción de mezcla o collate entre dos fuentes de datos o dos políticas. Ninguno de estos extremos está documentado en la model card, que es la plantilla automática de Hugging Face sin rellenar.
 
 Su relevancia ahora es limitada pero de interés para quien investiga recetas de post-entrenamiento y mezcla de checkpoints: ofrece un caso reproducible de un modelo pequeño (3B) con contexto potencialmente largo, derivado de Qwen2, cuyo nombre revela hiperparámetros que rara vez se publican. Al mismo tiempo, la ausencia total de documentación, licencia, idiomas declarados, métricas y comunidad (0 descargas, 0 likes) lo convierten en un artefacto que exige verificación empírica antes de cualquier uso serio.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-240 (este modelo) | 3,09 B | 32 768 tokens (según ficha de un checkpoint hermano; no confirmado aquí) | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes | Checkpoint de investigación sin model card, sin benchmarks y sin cuantizaciones publicadas |
+| yuxuanw8/qwen3b-racpo-v2-...-checkpoint-240 (este modelo) | 3,09 B | 32 768 tokens (según ficha de un checkpoint hermano; no confirmado aquí) | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes | Checkpoint de investigación sin model card, sin benchmarks y sin cuantizaciones publicadas |
 | Qwen2.5-3B | ≈3,09 B | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Muy extendida, cuantizaciones GGUF/AWQ/GPTQ disponibles | Misma familia arquitectónica; referencia natural para comparar, con licencia permisiva y soporte de herramientas |
 | Llama-3.2-3B-Instruct | ≈3,21 B | 131 072 tokens | Licencia comunitaria Llama 3.2 | Amplia disponibilidad y ecosistema consolidado | Alternativa de tamaño similar con contexto mucho mayor y soporte declarado de tool calling |
 | Qwen2.5-1.5B | ≈1,54 B | 32 768 tokens nativos | Apache 2.0 | Muy extendida | Opción si el objetivo es minimizar VRAM a costa de capacidad |
@@ -91,8 +91,8 @@ Los datos de los modelos comparativos corresponden a información pública de su
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-240
-- Checkpoint hermano de la misma serie en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
+- Repositorio Hugging Face del modelo: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-240
+- Checkpoint hermano de la misma serie en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Discusión del checkpoint hermano de la serie: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210/discussions
 - Ficha de un checkpoint hermano en Featherless AI (fuente del dato de 3,1 B y 32 768 tokens de contexto): https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210
 - Ficha de otro checkpoint de la serie en FriendliAI: https://friendli.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.6-0.4-checkpoint-180

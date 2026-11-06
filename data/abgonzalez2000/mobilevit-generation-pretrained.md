@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abgonzalez2000/mobilevit-generation-pretrained` es un prototipo de investigación publicado por el usuario abgonzalez2000 en HuggingFace. Se trata de una implementación personalizada de la arquitectura MobileViT con orientación a tareas de generación, aunque el tipo concreto de generación (imagen, texto, etc.) no se especifica en la documentación disponible.
+`abgonzalez2000/mobilevit-generation-pretrained` es un prototipo de investigación publicado por el usuario abgonzalez2000 en Hugging Face. Se trata de una implementación personalizada de la arquitectura MobileViT con orientación a tareas de generación, aunque el tipo concreto de generación (imagen, texto, etc.) no se especifica en la documentación disponible.
 
 El modelo se presenta como un punto de partida experimental. Incluye un checkpoint de inicialización en formato safetensors, pero el propio autor aclara que no es un modelo entrenado ni un benchmark verificado. De hecho, la model card indica que el repositorio contiene un "initialization checkpoint for smoke tests" y que no se reclama ninguna puntuación de rendimiento.
 
@@ -68,12 +68,12 @@ No se dispone de información sobre modelos comparables con las mismas caracter�
 - El checkpoint no ha sido entrenado, por lo que no debe usarse para tareas reales de generación o predicción.
 - No se ha realizado ninguna auditoría de sesgos, robustez o transferencia de dominio.
 - El modelo es un prototipo experimental; los resultados obtenidos con un futuro entrenamiento deben documentarse por separado de la configuración por defecto.
-- Al ser una implementación personalizada, las APIs genéricas de HuggingFace Transformers no pueden cargar el modelo sin un adaptador explícito, tal como señala el autor.
+- Al ser una implementación personalizada, las APIs genéricas de Hugging Face Transformers no pueden cargar el modelo sin un adaptador explícito, tal como señala el autor.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que hay que revisar los términos de las fuentes de datos si se usa el repositorio con datasets externos.
 - No se han documentado limitaciones específicas de contexto o idioma, pero al no existir datos de entrenamiento, cualquier afirmación sobre capacidades lingüísticas o de contexto sería especulativa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abgonzalez2000/mobilevit-generation-pretrained
-- Documentación oficial de MobileViT en HuggingFace: https://huggingface.co/docs/transformers/model_doc/mobilevit
-- Documentación de MobileViT en GitHub (HuggingFace Transformers): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
+- Repositorio en Hugging Face: https://huggingface.co/abgonzalez2000/mobilevit-generation-pretrained
+- Documentación oficial de MobileViT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Documentación de MobileViT en GitHub (Hugging Face Transformers): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md

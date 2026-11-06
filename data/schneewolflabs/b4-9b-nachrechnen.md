@@ -105,6 +105,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schneewolflabs/B4-9B-Nachrechnen
+- Modelo en Hugging Face: https://huggingface.co/schneewolflabs/B4-9B-Nachrechnen
 - Modelo base: https://huggingface.co/schneewolflabs/B4-9B
 - Repositorio del harness egirl: https://github.com/Schneewolf-Labs/egirl

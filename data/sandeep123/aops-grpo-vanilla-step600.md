@@ -88,7 +88,7 @@ La comparación directa con el modelo base no es posible con los datos publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-grpo-vanilla-step600
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-grpo-vanilla-step600
 - Modelo hermano (SQA): https://huggingface.co/sandeep123/sqa-grpo-vanilla-step600
 - Perfil del autor: https://huggingface.co/sandeep123
 - Repositorio de referencia (Vanilla_GRPO): https://github.com/CinderellaQAQ/Vanilla_GRPO

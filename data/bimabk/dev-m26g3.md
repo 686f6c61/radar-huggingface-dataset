@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bimabk/dev-M26g3` es un modelo de lenguaje publicado en HuggingFace por el usuario bimabk, con un total de 3.402.836.480 parametros (aproximadamente 3,4 mil millones) segun los metadatos de los archivos safetensors. Se trata de un repositorio de muy reciente creacion (20 de septiembre de 2026) y con una traccion minima: 11 descargas y 0 likes en el momento de la consulta. La ficha de HuggingFace no declara pipeline, licencia ni idiomas soportados, por lo que la mayor parte de la informacion operativa habitual (contexto, datos de entrenamiento, tokenizador) no esta confirmada.
+`bimabk/dev-M26g3` es un modelo de lenguaje publicado en Hugging Face por el usuario bimabk, con un total de 3.402.836.480 parametros (aproximadamente 3,4 mil millones) segun los metadatos de los archivos safetensors. Se trata de un repositorio de muy reciente creacion (20 de septiembre de 2026) y con una traccion minima: 11 descargas y 0 likes en el momento de la consulta. La ficha de Hugging Face no declara pipeline, licencia ni idiomas soportados, por lo que la mayor parte de la informacion operativa habitual (contexto, datos de entrenamiento, tokenizador) no esta confirmada.
 
 El unico indicio sobre su procedencia tecnica es la etiqueta `granite`, que sugiere un parentesco con la familia de modelos Granite de IBM, aunque esto no puede confirmarse con los datos disponibles. El tamano del repositorio (6,8 GB) es coherente con un checkpoint de 3,4 mil millones de parametros almacenado en precision de 16 bits: 3.402.836.480 x 2 bytes equivalen a unos 6,8 GB, lo que apunta a pesos en fp16 o bf16 sin cuantizar.
 
@@ -70,10 +70,10 @@ No es posible establecer una comparativa rigurosa porque el modelo no declara li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| bimabk/dev-M26g3 | 3,4 mil millones | no disponible | no disponible | HuggingFace (11 descargas) | no disponible |
-| Familia IBM Granite (variantes ~3B) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| Familia Llama 3.x (variante ~3B) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
-| Familia Qwen 2.5 (variante ~3B) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| bimabk/dev-M26g3 | 3,4 mil millones | no disponible | no disponible | Hugging Face (11 descargas) | no disponible |
+| Familia IBM Granite (variantes ~3B) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| Familia Llama 3.x (variante ~3B) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
+| Familia Qwen 2.5 (variante ~3B) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 
 Las filas de los modelos alternativos se dejan marcadas como "no disponible" porque no se ha verificado su ficha en esta consulta y no se deben asumir cifras. La unica diferencia confirmada es que `dev-M26g3` no cuenta con licencia declarada ni con resultados de evaluacion publicados.
 
@@ -92,5 +92,5 @@ Las filas de los modelos alternativos se dejan marcadas como "no disponible" por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bimabk/dev-M26g3
+- Hugging Face: https://huggingface.co/bimabk/dev-M26g3
 - Papers, blogs, repositorios o demos del modelo: no disponible (la busqueda web no devolvio ningun resultado relacionado)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3-VL-Embedding-8B-bnb-int8** es una versión cuantizada a 8 bits (bitsandbytes) del modelo de embeddings multimodales Qwen3-VL-Embedding-8B, desarrollado originalmente por Alibaba Qwen. Esta adaptación ha sido realizada por el usuario de HuggingFace `triet-bit` y publicada bajo licencia Apache 2.0. El modelo está diseñado para generar representaciones vectoriales de alta dimensión a partir de entradas heterogéneas: texto, imágenes, capturas de pantalla, vídeo y combinaciones arbitrarias de estas modalidades, lo que lo convierte en una herramienta clave para sistemas de búsqueda y recuperación multimodal.
+El modelo **Qwen3-VL-Embedding-8B-bnb-int8** es una versión cuantizada a 8 bits (bitsandbytes) del modelo de embeddings multimodales Qwen3-VL-Embedding-8B, desarrollado originalmente por Alibaba Qwen. Esta adaptación ha sido realizada por el usuario de Hugging Face `triet-bit` y publicada bajo licencia Apache 2.0. El modelo está diseñado para generar representaciones vectoriales de alta dimensión a partir de entradas heterogéneas: texto, imágenes, capturas de pantalla, vídeo y combinaciones arbitrarias de estas modalidades, lo que lo convierte en una herramienta clave para sistemas de búsqueda y recuperación multimodal.
 
 La arquitectura subyacente es la de Qwen3-VL-8B-Instruct, un transformer multimodal con 8.146 millones de parámetros y una ventana de contexto de 32.000 tokens. La cuantización int8 reduce el peso del modelo a aproximadamente 8,8 GB, lo que facilita su despliegue en hardware con menos memoria VRAM que la versión original en precisión completa. El modelo soporta dimensiones de embedding personalizables (de 64 a 4096) mediante la técnica MRL (Matryoshka Representation Learning) y es sensible a instrucciones, lo que permite adaptar la representación a tareas específicas.
 
@@ -78,7 +78,7 @@ La comparativa con CLIP es orientativa: CLIP es un modelo mucho mas pequeño y c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/triet-bit/Qwen3-VL-Embedding-8B-bnb-int8
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/triet-bit/Qwen3-VL-Embedding-8B-bnb-int8
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B
 - Informe tecnico (arxiv): https://arxiv.org/abs/2601.04720
 - Blog de Qwen sobre la serie de embeddings: https://qwen.ai/blog?id=qwen3-vl-embedding

@@ -88,8 +88,8 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lingbotvla-robotwin-clean-sft | no disponible (backbone ~4B + MoE 32 expertos) | no disponible | 74,0 % de exito en RoboTwin 2.0 (50 tareas x 10 episodios, checkpoint 10000) | apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| lingbotvla-robotwin-clean-sft | no disponible (backbone ~4B + MoE 32 expertos) | no disponible | 74,0 % de exito en RoboTwin 2.0 (50 tareas x 10 episodios, checkpoint 10000) | apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos VLA de manipulacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hggforget/lingbotvla-robotwin-clean-sft
+- Modelo en Hugging Face: https://huggingface.co/hggforget/lingbotvla-robotwin-clean-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Base de codigo `lingbot-vla-v2` (referenciada en la model card): https://github.com/lingbot-ai/lingbot-vla-v2
 - Paper, blog o demo adicionales: no disponibles; los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo.

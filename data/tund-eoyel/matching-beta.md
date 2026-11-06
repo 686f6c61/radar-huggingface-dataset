@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tund-eoyel/matching-beta` es un repositorio de HuggingFace publicado por el usuario tund-eoyel que contiene una implementacion propia de una arquitectura tipo BEiT (Bert-like Image Transformer) orientada a una tarea de "matching" (emparejamiento) no especificada con detalle. El autor lo describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
+`tund-eoyel/matching-beta` es un repositorio de Hugging Face publicado por el usuario tund-eoyel que contiene una implementacion propia de una arquitectura tipo BEiT (Bert-like Image Transformer) orientada a una tarea de "matching" (emparejamiento) no especificada con detalle. El autor lo describe explicitamente como un punto de partida reproducible y no como un modelo entrenado: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
 
 El paquete incluye el codigo Python (`finetune.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y el mencionado checkpoint de inicializacion. La variante declarada es "giant", con atencion lineal, fusion por co-atencion, activacion gelu-tanh y normalizacion layernorm. No se declara ningun resultado de benchmark ni se proporciona informacion sobre el conjunto de datos de entrenamiento.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tund-eoyel/matching-beta | 24.832 (reportado) | no disponible | sin benchmarks | apache-2.0 | HuggingFace, checkpoint de inicializacion |
-| BEiT original (microsoft/beit-base-patch16-224) | ~86 M (base) | no aplica (vision) | benchmarks publicados en el paper original | licencia del repositorio original | HuggingFace, pesos entrenados |
-| BEiT large (microsoft/beit-large-patch16-224) | ~304 M | no aplica (vision) | benchmarks publicados en el paper original | licencia del repositorio original | HuggingFace, pesos entrenados |
+| tund-eoyel/matching-beta | 24.832 (reportado) | no disponible | sin benchmarks | apache-2.0 | Hugging Face, checkpoint de inicializacion |
+| BEiT original (microsoft/beit-base-patch16-224) | ~86 M (base) | no aplica (vision) | benchmarks publicados en el paper original | licencia del repositorio original | Hugging Face, pesos entrenados |
+| BEiT large (microsoft/beit-large-patch16-224) | ~304 M | no aplica (vision) | benchmarks publicados en el paper original | licencia del repositorio original | Hugging Face, pesos entrenados |
 
 La comparacion es orientativa: `matching-beta` no es un modelo entrenado y su tarea (matching) no coincide con la clasificacion de imagenes de los BEiT publicados por Microsoft. No se dispone de datos para comparar rendimiento en la tarea objetivo.
 
@@ -79,5 +79,5 @@ La comparacion es orientativa: `matching-beta` no es un modelo entrenado y su ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tund-eoyel/matching-beta
+- Repositorio Hugging Face: https://huggingface.co/tund-eoyel/matching-beta
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

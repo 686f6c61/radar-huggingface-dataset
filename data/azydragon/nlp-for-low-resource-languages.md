@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Azydragon/NLP-for-Low-Resource-Languages es un checkpoint publicado en HuggingFace por el usuario Azydragon, etiquetado con la libreria transformers y la arquitectura m2m_100, orientado a generacion texto-a-texto (text2text-generation). El repositorio tiene un tamano de 2,5 GB y un total de 615.073.792 parametros en formato safetensors, lo que situa al modelo en la gama de los 600 millones de parametros, es decir, un modelo compacto que puede ejecutarse en hardware de consumo.
+Azydragon/NLP-for-Low-Resource-Languages es un checkpoint publicado en Hugging Face por el usuario Azydragon, etiquetado con la libreria transformers y la arquitectura m2m_100, orientado a generacion texto-a-texto (text2text-generation). El repositorio tiene un tamano de 2,5 GB y un total de 615.073.792 parametros en formato safetensors, lo que situa al modelo en la gama de los 600 millones de parametros, es decir, un modelo compacto que puede ejecutarse en hardware de consumo.
 
-La model card del repositorio es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, idiomas, licencia, hiperparametros ni resultados de evaluacion. Por tanto, todo lo que se sabe del modelo procede de sus metadatos (tags, tamano y arquitectura declarada) y no de una descripcion del autor.
+La model card del repositorio es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, idiomas, licencia, hiperparametros ni resultados de evaluacion. Por tanto, todo lo que se sabe del modelo procede de sus metadatos (tags, tamano y arquitectura declarada) y no de una descripcion del autor.
 
 El interes del modelo es acotado pero claro: si se confirma que es un fine-tuning de M2M-100 para traduccion entre idiomas con pocos recursos, cubriria un nicho relevante (traduccion multilingue de bajo coste computacional) sin la carga de los modelos actuales de 7B o mas. No obstante, la ausencia total de documentacion implica que cualquier evaluacion rigurosa debe hacerla el propio usuario antes de considerarlo para produccion.
 
@@ -30,7 +30,7 @@ El interes del modelo es acotado pero claro: si se confirma que es un fine-tunin
 
 La arquitectura declarada en los tags es m2m_100, un transformer encoder-decoder con atencion completa, disenado originalmente por Facebook AI para traduccion automatica multilingue sin ingles como pivote. El recuento de parametros (615.073.792) es coherente con un checkpoint derivado de M2M-100 418M: la diferencia respecto a los 418M del modelo base se explicaria por el doble almacenamiento de las matrices de embedding (encoder y decoder comparten vocabulario de 128.112 tokens) en el fichero de safetensors. Esta es una hipotesis razonada a partir de los metadatos, no un dato confirmado por el autor.
 
-No hay ninguna informacion publicada sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fine-tuning supervisado, RLHF, DPO u otra etapa de alineamiento, asi como los hiperparametros empleados. El tag arxiv:1910.09700 que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla de model card de HuggingFace, y no es el articulo del modelo. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.).
+No hay ninguna informacion publicada sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fine-tuning supervisado, RLHF, DPO u otra etapa de alineamiento, asi como los hiperparametros empleados. El tag arxiv:1910.09700 que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla de model card de Hugging Face, y no es el articulo del modelo. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.).
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Azydragon/NLP-for-Low-Resource-Languages | 615.073.792 | no disponible (base M2M-100: 1.024 tokens) | no disponible | no disponible | HuggingFace, safetensors |
-| facebook/m2m100_418M | 418M | 1.024 tokens | 100 | MIT | HuggingFace, safetensors, ampliamente integrado |
-| facebook/nllb-200-distilled-600M | 600M | 1.024 tokens | 200 | CC-BY-NC-4.0 (no comercial) | HuggingFace, safetensors |
-| Helsinki-NLP/opus-mt-* | ~74M por par de idiomas | 512 tokens | bilingue por modelo | CC-BY 4.0 | HuggingFace, muchos pares disponibles |
+| Azydragon/NLP-for-Low-Resource-Languages | 615.073.792 | no disponible (base M2M-100: 1.024 tokens) | no disponible | no disponible | Hugging Face, safetensors |
+| facebook/m2m100_418M | 418M | 1.024 tokens | 100 | MIT | Hugging Face, safetensors, ampliamente integrado |
+| facebook/nllb-200-distilled-600M | 600M | 1.024 tokens | 200 | CC-BY-NC-4.0 (no comercial) | Hugging Face, safetensors |
+| Helsinki-NLP/opus-mt-* | ~74M por par de idiomas | 512 tokens | bilingue por modelo | CC-BY 4.0 | Hugging Face, muchos pares disponibles |
 
 La comparativa es estructural: no hay datos de rendimiento publicados para el modelo de Azydragon, por lo que no es posible contrastar calidad de traduccion con las alternativas. NLLB-200 distilled 600M es el competidor mas directo por tamano, pero su licencia CC-BY-NC-4.0 restringe el uso comercial. M2M-100 418M, con licencia MIT, es la referencia mas probable como modelo base.
 
@@ -90,7 +90,7 @@ La comparativa es estructural: no hay datos de rendimiento publicados para el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azydragon/NLP-for-Low-Resource-Languages
+- Modelo en Hugging Face: https://huggingface.co/Azydragon/NLP-for-Low-Resource-Languages
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no es el articulo del modelo): https://arxiv.org/abs/1910.09700
 - Articulo de la arquitectura base M2M-100 (Facebook AI, 2020), como referencia de la familia declarada en los tags: https://arxiv.org/abs/2010.11125
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

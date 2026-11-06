@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | MatchaTTS (esta ficha, N1-655) | no disponible | 128 fonemas fijos | Inglés | Apache-2.0 | Binarios Ambarella |
 | Matcha-TTS original (`shivammehta25/Matcha-TTS`) | no disponible | dinámico | Inglés (LJSpeech) | MIT | PyTorch, GitHub |
-| `csukuangfj/matcha-icefall-en_US-ljspeech` | no disponible | dinámico | Inglés | Apache-2.0 | ONNX, HuggingFace |
+| `csukuangfj/matcha-icefall-en_US-ljspeech` | no disponible | dinámico | Inglés | Apache-2.0 | ONNX, Hugging Face |
 | VITS / Piper (referencia TTS ligera) | no disponible | dinámico | Multi-idioma | MIT / varias | ONNX, múltiples runtimes |
 
 La comparación se limita a la familia Matcha-TTS y a alternativas ligeras de TTS; no se dispone de cifras de benchmarks para comparar rendimiento objetivamente.
@@ -94,7 +94,7 @@ La comparación se limita a la familia Matcha-TTS y a alternativas ligeras de TT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cchiou-amba/MatchaTTS
+- Hugging Face: https://huggingface.co/cchiou-amba/MatchaTTS
 - Paper Matcha-TTS: https://arxiv.org/abs/2309.03199
 - Implementación de referencia: https://github.com/shivammehta25/Matcha-TTS
 - Pesos originales (icefall/sherpa-onnx): https://huggingface.co/csukuangfj/matcha-icefall-en_US-ljspeech

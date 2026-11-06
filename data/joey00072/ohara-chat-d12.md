@@ -63,9 +63,9 @@ Durante el preentrenamiento, la pérdida de validación en bits/byte pasó de 1,
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ohara-chat-d12 | 123,5 M efectivos | 2048 | 1,48B tokens + SFT | MIT | HuggingFace |
+| ohara-chat-d12 | 123,5 M efectivos | 2048 | 1,48B tokens + SFT | MIT | Hugging Face |
 | nanochat (referencia) | ~124 M | 2048 | ~40B tokens (estimado) | MIT | GitHub |
-| GPT-2 (124M) | 124 M | 1024 | ~40B tokens | MIT | OpenAI / HuggingFace |
+| GPT-2 (124M) | 124 M | 1024 | ~40B tokens | MIT | OpenAI / Hugging Face |
 
 ohara-chat-d12 es una réplica a escala reducida de nanochat. Mientras que nanochat alcanza calidad GPT-2 con 0,718 bpb, ohara-chat-d12 se queda en 0,9062 bpb, lo que indica un rendimiento inferior pero con un coste de entrenamiento mucho menor. La comparativa directa con GPT-2 no es posible porque no se han publicado resultados de benchmarks estándar para este modelo.
 
@@ -77,13 +77,13 @@ ohara-chat-d12 es una réplica a escala reducida de nanochat. Mientras que nanoc
 - La ventana de contexto de 2048 tokens es limitada para tareas que requieran contexto largo.
 - El formato de pesos es exclusivo de la librería ohara (.pt), lo que dificulta su uso con herramientas estándar como Transformers o llama.cpp sin conversión manual.
 - No se han publicado resultados de benchmarks estándar, por lo que su rendimiento relativo frente a otros modelos es desconocido.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joey00072/ohara-chat-d12
+- Modelo en Hugging Face: https://huggingface.co/joey00072/ohara-chat-d12
 - Modelo base (preentrenado): https://huggingface.co/joey00072/ohara-base-d12
 - Repositorio ohara en GitHub: https://github.com/joey00072/ohara
 - Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Dataset SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Perfil del autor en HuggingFace: https://huggingface.co/joey00072
+- Perfil del autor en Hugging Face: https://huggingface.co/joey00072

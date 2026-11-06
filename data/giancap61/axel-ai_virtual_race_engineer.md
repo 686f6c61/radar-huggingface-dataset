@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AXEL-AI_Virtual_Race_Engineer es un modelo conversacional publicado por el usuario giancap61 en HuggingFace, orientado a aplicaciones de ingeniería de carreras virtuales. Con 494 millones de parámetros, se trata de un modelo de tamaño medio-pequeño, diseñado para tareas de diálogo y asistencia técnica. El repositorio incluye pesos en formato safetensors y, según los tags, también en GGUF y ONNX, lo que sugiere compatibilidad con múltiples entornos de inferencia (llama.cpp, ONNX Runtime, endpoints compatibles). La información pública es muy limitada: no se especifican arquitectura, licencia, idiomas ni datos de entrenamiento, por lo que esta ficha se basa únicamente en los metadatos disponibles.
+AXEL-AI_Virtual_Race_Engineer es un modelo conversacional publicado por el usuario giancap61 en Hugging Face, orientado a aplicaciones de ingeniería de carreras virtuales. Con 494 millones de parámetros, se trata de un modelo de tamaño medio-pequeño, diseñado para tareas de diálogo y asistencia técnica. El repositorio incluye pesos en formato safetensors y, según los tags, también en GGUF y ONNX, lo que sugiere compatibilidad con múltiples entornos de inferencia (llama.cpp, ONNX Runtime, endpoints compatibles). La información pública es muy limitada: no se especifican arquitectura, licencia, idiomas ni datos de entrenamiento, por lo que esta ficha se basa únicamente en los metadatos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Dada la limitada información pública, los casos de uso son especulativos y deb
 - Asistente virtual para ingeniería de carreras: podría responder preguntas sobre configuración de vehículos, estrategias de carrera o análisis de datos de telemetría, aunque no hay evidencia documentada.
 - Chatbot de soporte técnico: al ser conversacional y tener un tamaño moderado, podría integrarse en sistemas de atención al cliente con requisitos de latencia moderados.
 - Prototipado rápido de aplicaciones de diálogo: su formato GGUF y ONNX facilita la experimentación en entornos locales o en la nube.
-- Despliegue en endpoints compatibles: el tag "endpoints_compatible" sugiere que puede servirse mediante plataformas como HuggingFace Inference Endpoints.
+- Despliegue en endpoints compatibles: el tag "endpoints_compatible" sugiere que puede servirse mediante plataformas como Hugging Face Inference Endpoints.
 - Educación y simulación: uso como tutor interactivo en entornos de aprendizaje de ingeniería de competición.
 - Investigación académica: como modelo de referencia para estudios comparativos de modelos conversacionales pequeños.
 
@@ -62,4 +62,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/giancap61/AXEL-AI_Virtual_Race_Engineer
+- Repositorio Hugging Face: https://huggingface.co/giancap61/AXEL-AI_Virtual_Race_Engineer

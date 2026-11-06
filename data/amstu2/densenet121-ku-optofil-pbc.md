@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amstu2/densenet121-ku-optofil-pbc` es un checkpoint publicado en HuggingFace por el usuario `amstu2` cuya arquitectura, a tenor del identificador y de la documentación de torchvision, corresponde a una DenseNet-121: una red neuronal convolucional con conexiones densas entre capas, publicada originalmente en el artículo "Densely Connected Convolutional Networks" (Huang et al., 2017). La model card del repositorio está vacía —solo contiene la declaración de licencia `apache-2.0`—, no hay `pipeline_tag` asignado y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+`amstu2/densenet121-ku-optofil-pbc` es un checkpoint publicado en Hugging Face por el usuario `amstu2` cuya arquitectura, a tenor del identificador y de la documentación de torchvision, corresponde a una DenseNet-121: una red neuronal convolucional con conexiones densas entre capas, publicada originalmente en el artículo "Densely Connected Convolutional Networks" (Huang et al., 2017). La model card del repositorio está vacía —solo contiene la declaración de licencia `apache-2.0`—, no hay `pipeline_tag` asignado y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El problema que resuelve no está documentado. El sufijo `ku-optofil-pbc` sugiere un ajuste fino sobre un dominio concreto (posiblemente relacionado con optometría u oftalmología, por el fragmento "optofil"), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor. No hay información sobre el conjunto de datos de entrenamiento, las clases de salida, el preprocesado esperado ni métricas de evaluación.
 
@@ -71,7 +71,7 @@ Los valores de la arquitectura base proceden de la documentación de torchvision
 
 | Modelo | Parametros | Contexto | Top-1 ImageNet (referencia base) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| densenet121-ku-optofil-pbc | ~7,98 M | no aplica | no disponible | apache-2.0 | HuggingFace, sin documentación |
+| densenet121-ku-optofil-pbc | ~7,98 M | no aplica | no disponible | apache-2.0 | Hugging Face, sin documentación |
 | DenseNet-121 (torchvision) | ~7,98 M | no aplica | ~74,4 % | BSD-3-Clause | torchvision, documentado |
 | ResNet-50 (torchvision) | ~25,6 M | no aplica | ~76,1 % | BSD-3-Clause | torchvision, documentado |
 | EfficientNet-B0 (torchvision) | ~5,3 M | no aplica | ~77,7 % | BSD-3-Clause | torchvision, documentado |
@@ -93,7 +93,7 @@ Frente a ResNet-50, DenseNet-121 ofrece menos parámetros y una precisión de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amstu2/densenet121-ku-optofil-pbc
+- Repositorio en Hugging Face: https://huggingface.co/amstu2/densenet121-ku-optofil-pbc
 - Documentación de `torchvision.models.densenet121`: https://docs.pytorch.org/vision/master/models/generated/torchvision.models.densenet121.html
 - Código fuente de la familia DenseNet en torchvision: https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py
 - Documentación del módulo `torchvision.models.densenet`: https://docs.pytorch.org/vision/0.9/_modules/torchvision/models/densenet.html

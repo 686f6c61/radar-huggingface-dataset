@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chanjing-Avatar 14B | 14B + 618M | no aplica | Avatar parlante 720p | Apache 2.0 | HuggingFace |
-| Chanjing-Avatar V2V 5B | 5B (estimado) | no aplica | Video a video con regeneracion facial | Apache 2.0 | HuggingFace |
-| Chanjing-Avatar V2V 1.3B | 1.3B (estimado) | no aplica | Video a video ligero | Apache 2.0 | HuggingFace |
-| Wan2.1-T2V-14B (base) | 14B | no aplica | Texto a video | Apache 2.0 | HuggingFace |
+| Chanjing-Avatar 14B | 14B + 618M | no aplica | Avatar parlante 720p | Apache 2.0 | Hugging Face |
+| Chanjing-Avatar V2V 5B | 5B (estimado) | no aplica | Video a video con regeneracion facial | Apache 2.0 | Hugging Face |
+| Chanjing-Avatar V2V 1.3B | 1.3B (estimado) | no aplica | Video a video ligero | Apache 2.0 | Hugging Face |
+| Wan2.1-T2V-14B (base) | 14B | no aplica | Texto a video | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Chanjing y al modelo base, ya que no se dispone de datos de otros modelos de talking-head con los que comparar directamente.
 
@@ -81,7 +81,7 @@ La comparativa se limita a la familia Chanjing y al modelo base, ya que no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cicada-ai/Chanjing-Avatar-14B
+- Modelo en Hugging Face: https://huggingface.co/cicada-ai/Chanjing-Avatar-14B
 - Repositorio de codigo: https://github.com/chanjing-ai/Chanjing-Avatar
 - Organizacion en GitHub: https://github.com/chanjing-ai
 - Modelo base Wan2.1-T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B

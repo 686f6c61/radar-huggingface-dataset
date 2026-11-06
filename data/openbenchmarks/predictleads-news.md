@@ -6,7 +6,7 @@ El repositorio `openbenchmarks/predictleads-news` no contiene un modelo de intel
 
 PredictLeads es un proveedor de datos de inteligencia empresarial que ofrece APIs, archivos planos, webhooks y soporte MCP. Su endpoint de noticias (`GET /api/v3/companies/{domain}/news_events`) permite recuperar eventos de noticias asociados a un dominio corporativo, con una configuración específica de selección de categorías y límite de resultados. Este repositorio sirve como referencia para que los evaluadores puedan comparar el rendimiento de esta API frente a otras soluciones en el contexto del benchmark, pero no es un modelo generativo ni un sistema de razonamiento.
 
-La relevancia de esta ficha radica en aclarar que, aunque aparece en HuggingFace con etiquetas de búsqueda web y noticias, no se trata de un LLM ni de un sistema de IA entrenado. Es un servicio externo de datos que se evalúa como herramienta de recuperación de información, no como modelo de lenguaje.
+La relevancia de esta ficha radica en aclarar que, aunque aparece en Hugging Face con etiquetas de búsqueda web y noticias, no se trata de un LLM ni de un sistema de IA entrenado. Es un servicio externo de datos que se evalúa como herramienta de recuperación de información, no como modelo de lenguaje.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no representa un modelo de IA comparable con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/openbenchmarks/predictleads-news
+- Repositorio en Hugging Face: https://huggingface.co/openbenchmarks/predictleads-news
 - Documentación de la API de PredictLeads: https://docs.predictleads.com/
 - Sitio web de PredictLeads: https://predictleads.com
 - Dataset del benchmark OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

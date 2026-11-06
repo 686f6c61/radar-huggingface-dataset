@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yijun6/hw1-hc3-detector` es un clasificador de texto basado en BERT, publicado en HuggingFace con la librería transformers y pesos en safetensors. Cuenta con 22.713.986 parámetros reales, lo que lo sitúa muy por debajo de un BERT-base estándar (unos 110 millones), lo que sugiere una configuración reducida orientada a inferencia ligera. El repositorio ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto de publicación muy reciente y sin adopción registrada.
+El modelo `yijun6/hw1-hc3-detector` es un clasificador de texto basado en BERT, publicado en Hugging Face con la librería transformers y pesos en safetensors. Cuenta con 22.713.986 parámetros reales, lo que lo sitúa muy por debajo de un BERT-base estándar (unos 110 millones), lo que sugiere una configuración reducida orientada a inferencia ligera. El repositorio ocupa 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto de publicación muy reciente y sin adopción registrada.
 
 Por la nomenclatura del identificador ("hw1-hc3-detector") y por repositorios homónimos publicados por otros usuarios con las etiquetas `hc3`, `ai-generated-text-detection` y `sentence-transformers`, el modelo apunta a la tarea de detección de texto generado por IA, presumiblemente entrenado o evaluado sobre el corpus HC3 (Human ChatGPT Comparison Corpus). Conviene subrayar que esta atribución de tarea procede de repositorios relacionados de terceros, no de la model card del autor, que no documenta el propósito del modelo.
 
@@ -37,8 +37,8 @@ Respecto al entrenamiento, la model card no documenta el conjunto de datos, el n
 
 - Clasificación de texto: el modelo expone la tarea `text-classification`, es decir, asigna etiquetas a secuencias de entrada completas.
 - Presunta detección de texto generado por IA: por la nomenclatura del identificador y por repositorios homónimos etiquetados como `ai-generated-text-detection` y `hc3`, la tarea más probable es distinguir texto humano de texto generado por modelos como ChatGPT. Este extremo no está confirmado en la documentación del autor.
-- Compatibilidad con text-embeddings-inference: la etiqueta `text-embeddings-inference` indica que el modelo puede servirse mediante el contenedor TEI de HuggingFace.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con text-embeddings-inference: la etiqueta `text-embeddings-inference` indica que el modelo puede servirse mediante el contenedor TEI de Hugging Face.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible; la arquitectura encoder-only y el pipeline de clasificación no están diseñados para generación de texto ni razonamiento multi-turno.
 - Capacidades multilingües: no disponibles en la información del autor.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K y 
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente, incluidas GTX 1050, GTX 1650, RTX 3050, RTX 4090, A100 y H100. El modelo está muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU de consumo de la última década, e incluso en GPU integradas.
 - Ejecución en CPU: viable para producción con volúmenes moderados, dado el reducido número de parámetros y el tamaño del repositorio (0,1 GB).
-- Opciones de despliegue: transformers (librería declarada), text-embeddings-inference (etiqueta del repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (librería declarada), text-embeddings-inference (etiqueta del repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Los tres primeros modelos comparten identificador de nombre y parecen correspond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yijun6/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/yijun6/hw1-hc3-detector
 - Repositorio homonimo de TianhangCheng7: https://huggingface.co/TianhangCheng7/hw1-hc3-detector
 - Repositorio homonimo de Aishkrish: https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Proyecto Hello-SimpleAI (corpus HC3 y detectores): https://github.com/Hello-SimpleAI

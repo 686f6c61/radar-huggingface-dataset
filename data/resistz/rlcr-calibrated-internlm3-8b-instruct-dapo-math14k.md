@@ -53,7 +53,7 @@ DAPO es un algoritmo de optimizacion de politica publicado en la literatura reci
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No se incluyen cifras de MMLU, GSM8K, MATH, AIME, HumanEval ni de ninguna otra evaluacion, ni en la model card ni en la metadata de HuggingFace. Tampoco se ofrece comparacion con el modelo base ni con el checkpoint previo al entrenamiento RL, por lo que no es posible estimar la ganancia atribuible a los 90 pasos de DAPO con calibrado RLCR.
+No se incluyen cifras de MMLU, GSM8K, MATH, AIME, HumanEval ni de ninguna otra evaluacion, ni en la model card ni en la metadata de Hugging Face. Tampoco se ofrece comparacion con el modelo base ni con el checkpoint previo al entrenamiento RL, por lo que no es posible estimar la ganancia atribuible a los 90 pasos de DAPO con calibrado RLCR.
 
 ## Requisitos de hardware
 
@@ -93,8 +93,8 @@ Los datos de los modelos alternativos proceden de su documentacion publica y deb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/RLCR-Calibrated-Internlm3-8B-Instruct-DAPO-Math14K
-- Modelo base en HuggingFace: https://huggingface.co/internlm/internlm3-8b-instruct
+- Modelo en Hugging Face: https://huggingface.co/resistz/RLCR-Calibrated-Internlm3-8B-Instruct-DAPO-Math14K
+- Modelo base en Hugging Face: https://huggingface.co/internlm/internlm3-8b-instruct
 - Repositorio del equipo InternLM: https://github.com/InternLM/InternLM
 - Publicacion de referencia del algoritmo DAPO: https://arxiv.org/abs/2503.14476
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las entradas devueltas corresponden a YouTube y no guardan relacion con el modelo.

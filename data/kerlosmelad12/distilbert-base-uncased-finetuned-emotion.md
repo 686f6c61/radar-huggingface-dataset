@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kerlosmelad12/distilbert-base-uncased-finetuned-emotion` es un modelo de clasificacion de texto obtenido mediante fine-tuning de `distilbert-base-uncased`, un encoder transformer destilado de BERT con 66.958.086 parametros. El autor es el usuario de HuggingFace kerlosmelad12 y el modelo se publico bajo licencia Apache 2.0 con pesos en formato safetensors, orientado al pipeline `text-classification`.
+`kerlosmelad12/distilbert-base-uncased-finetuned-emotion` es un modelo de clasificacion de texto obtenido mediante fine-tuning de `distilbert-base-uncased`, un encoder transformer destilado de BERT con 66.958.086 parametros. El autor es el usuario de Hugging Face kerlosmelad12 y el modelo se publico bajo licencia Apache 2.0 con pesos en formato safetensors, orientado al pipeline `text-classification`.
 
 El modelo se ha entrenado con la libreria Transformers (version 5.16.1) y PyTorch 2.11.0, usando el `Trainer` estandar con learning rate 2e-5, batch de 64, dos epocas, optimizador AdamW fused y scheduler lineal. El nombre del repositorio sugiere una tarea de deteccion de emociones, pero la model card generada automaticamente indica explicitamente que el dataset de entrenamiento es desconocido y que no se ha publicado informacion sobre datos de evaluacion, usos previstos ni resultados.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 - VRAM estimada: aproximadamente 0,27 GB en fp32 y unos 0,13 GB en fp16 para los pesos; con el runtime de PyTorch y los buffers de activacion, el consumo real se mantiene por debajo de 1 GB incluso con lotes moderados.
 - GPU recomendadas: cualquier GPU con soporte CUDA sirve; para servicio en la nube son suficientes una T4, una L4 o una A10G. Las A100 o H100 solo tendrian sentido para batching masivo, y no aportan ventaja significativa por el tamano del modelo.
 - GPU de consumo: si, cabe sin problemas en cualquier GPU de consumo con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, RTX 3060, RTX 4090). Tambien es viable en CPU: 67 M de parametros permiten inferencia interactiva en un portatil moderno.
-- Opciones de despliegue: pipeline de `transformers`, exportacion a ONNX Runtime o TorchScript, servidores HTTP propios (FastAPI, TorchServe, Triton), HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`) y ejecucion por lotes en Spark o Dask. Las herramientas orientadas a modelos generativos (vLLM, TGI en su modo habitual) no son la via natural para un encoder clasificador.
+- Opciones de despliegue: pipeline de `transformers`, exportacion a ONNX Runtime o TorchScript, servidores HTTP propios (FastAPI, TorchServe, Triton), Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`) y ejecucion por lotes en Spark o Dask. Las herramientas orientadas a modelos generativos (vLLM, TGI en su modo habitual) no son la via natural para un encoder clasificador.
 - Latencia y throughput: no disponibles; el autor no publica mediciones. Cualquier cifra de produccion debe obtenerse midiendo sobre el hardware y el tamano de lote concretos, previa validacion de la calidad del modelo.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparacion relevante es de coste y arquitectura: este modelo es aproximadame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerlosmelad12/distilbert-base-uncased-finetuned-emotion
+- Modelo en Hugging Face: https://huggingface.co/kerlosmelad12/distilbert-base-uncased-finetuned-emotion
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Articulo de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de Transformers para clasificacion de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

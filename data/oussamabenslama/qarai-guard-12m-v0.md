@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qarai-guard-12M-v0 es un modelo de clasificacion de texto obtenido mediante fine-tuning de asafaya/bert-mini-arabic, un encoder BERT en su variante mini adaptado al arabe. Lo publica el usuario OussamaBenSlama en HuggingFace y cuenta con 11.551.498 parametros (aproximadamente 11,55 millones), lo que lo situa en la gama de modelos ultraligeros aptos para inferencia en CPU y dispositivos con recursos muy limitados. La etiqueta del repositorio y el sufijo "guard" del nombre sugieren un uso orientado a tareas de filtrado o moderacion, aunque la model card no documenta explicitamente la finalidad.
+qarai-guard-12M-v0 es un modelo de clasificacion de texto obtenido mediante fine-tuning de asafaya/bert-mini-arabic, un encoder BERT en su variante mini adaptado al arabe. Lo publica el usuario OussamaBenSlama en Hugging Face y cuenta con 11.551.498 parametros (aproximadamente 11,55 millones), lo que lo situa en la gama de modelos ultraligeros aptos para inferencia en CPU y dispositivos con recursos muy limitados. La etiqueta del repositorio y el sufijo "guard" del nombre sugieren un uso orientado a tareas de filtrado o moderacion, aunque la model card no documenta explicitamente la finalidad.
 
 El modelo se distribuye en formato safetensors y es compatible con la libreria transformers, con la libreria text-embeddings-inference y con endpoints compatibles. Resuelve, por tanto, problemas genericos de clasificacion de secuencias: asignar una o varias etiquetas a un texto de entrada. Su relevancia actual radica en su tamano reducido, que permite despliegues de bajisima latencia y coste energetico minimo alli donde un modelo grande no es viable.
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qarai-guard-12M-v0 | 11,55 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| asafaya/bert-mini-arabic (modelo base) | no disponible en la informacion | no disponible | no disponible | HuggingFace |
+| qarai-guard-12M-v0 | 11,55 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| asafaya/bert-mini-arabic (modelo base) | no disponible en la informacion | no disponible | no disponible | Hugging Face |
 | Otros clasificadores BERT-mini arabe | no disponible | no disponible | no disponible | no disponible |
 
 El unico punto de referencia claro es el modelo base asafaya/bert-mini-arabic, del que hereda tamano y arquitectura, aunque no se aportan sus especificaciones completas ni sus metricas.
@@ -95,5 +95,5 @@ El unico punto de referencia claro es el modelo base asafaya/bert-mini-arabic, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OussamaBenSlama/qarai-guard-12M-v0
+- Modelo en Hugging Face: https://huggingface.co/OussamaBenSlama/qarai-guard-12M-v0
 - Modelo base: https://huggingface.co/asafaya/bert-mini-arabic

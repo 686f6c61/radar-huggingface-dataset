@@ -96,6 +96,6 @@ No se dispone de alternativas equivalentes de otros autores especializadas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/es-hetero/ckpt-countdown-qwen3
+- Repositorio en Hugging Face: https://huggingface.co/es-hetero/ckpt-countdown-qwen3
 - Repositorio del estudio "learning while serving": https://github.com/akshat57/es-heterogeneity
 - No se han encontrado papers, blogs, demos ni otros recursos relevantes en la búsqueda web disponible.

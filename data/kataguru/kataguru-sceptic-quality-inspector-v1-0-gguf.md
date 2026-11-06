@@ -108,7 +108,7 @@ La comparativa se limita a los modelos citados en la model card del autor; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-Quality-Inspector-v1.0-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/kataguru/Kataguru-Sceptic-Quality-Inspector-v1.0-GGUF
 - Modelo base declarado: kataguru/Kataguru-Sceptic-Quality-Inspector-v1.0-BF16
 - Ficheros asociados citados en la model card: `mmproj-Kataguru-Sceptic-Quality-Inspector-v1.0-f16.gguf`, `mtp-Kataguru-Sceptic-Quality-Inspector-v1.0-Q4_K_M.gguf`, `mtp-Kataguru-Sceptic-Quality-Inspector-v1.0-Q8_0.gguf`, `quality_inspector.imatrix`
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo o demos adicionales.

@@ -81,8 +81,8 @@ Paridad de instrucciones (42 ejecuciones, 14 perfiles × 3 páginas, INT8 frente
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Parse-ONNX (este) | VLM OCR/layout, ONNX | no disponible | OpenMDW-1.1 | HuggingFace, 0 descargas | Optimizado para móvil offline |
-| nvidia/Nemotron-3.5-Parse | VLM OCR/layout, pesos originales | no disponible | OpenMDW-1.1 | HuggingFace | Modelo base; requiere Transformers |
+| Nemotron-3.5-Parse-ONNX (este) | VLM OCR/layout, ONNX | no disponible | OpenMDW-1.1 | Hugging Face, 0 descargas | Optimizado para móvil offline |
+| nvidia/Nemotron-3.5-Parse | VLM OCR/layout, pesos originales | no disponible | OpenMDW-1.1 | Hugging Face | Modelo base; requiere Transformers |
 | Alternativas OCR VLM de código abierto | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 No se dispone de información suficiente para comparar parámetros, contexto o rendimiento con alternativas concretas de la misma categoría.
@@ -101,7 +101,7 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XDcobra/Nemotron-3.5-Parse-ONNX
+- Modelo en Hugging Face: https://huggingface.co/XDcobra/Nemotron-3.5-Parse-ONNX
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Parse
 - SDK React Native: https://github.com/XDcobra/react-native-sherpa-onnx
 - VoiceLab en Google Play: https://play.google.com/store/apps/details?id=com.xdcobra.voicelab

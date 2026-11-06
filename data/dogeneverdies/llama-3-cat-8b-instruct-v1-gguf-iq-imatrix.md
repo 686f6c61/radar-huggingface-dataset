@@ -24,7 +24,7 @@ La relevancia actual de esta ficha es doble: por un lado, documenta una variante
 
 La arquitectura corresponde al transformer decoder-only de Llama 3 en su variante de 8B parametros, con atencion causal y tokenizador de Llama 3. Sobre este modelo base se aplico un ajuste fino supervisado orientado a cuatro objetivos declarados en la model card: fidelidad a las instrucciones de sistema, razonamiento encadenado (chain of thought), inmersion de personaje y utilidad en ciencias biologicas y ciencia general. El entrenamiento se realizo durante 6 dias sobre una unica GPU A100, con 4 epochs.
 
-Respecto a los datos, la model card indica que se extrajeron pares instruccion-respuesta de un dataset de HuggingFace y se entreno un modelo GPT exclusivamente con respuestas de alta calidad para usarlo como modelo de referencia en el filtrado. El dataset se filtro adicionalmente por longitud y por presencia de respuestas con chain of thought (todas las respuestas COT son de mas de 50 tokens en un solo turno). Tambien se incorporaron datos sanitarios procedentes de Chat Doctor, favoreciendo diagnosticos detallados y paso a paso (tareas de mas de 100 tokens, con picos de 450 tokens por turno). No se especifica en la informacion disponible si hubo fases de RLHF o DPO; el proceso descrito es un ajuste fino supervisado. La cuantizacion GGUF con imatrix se genero a partir del modelo FP16 y conversiones del BF16, y es compatible con la correccion introducida en llama.cpp/pull/6920, por lo que requiere KoboldCpp 1.64 o superior. La model card etiqueta el modelo como "multimodal", pero no se aporta ninguna evidencia tecnica de soporte de vision o audio, por lo que debe considerarse una etiqueta no verificada.
+Respecto a los datos, la model card indica que se extrajeron pares instruccion-respuesta de un dataset de Hugging Face y se entreno un modelo GPT exclusivamente con respuestas de alta calidad para usarlo como modelo de referencia en el filtrado. El dataset se filtro adicionalmente por longitud y por presencia de respuestas con chain of thought (todas las respuestas COT son de mas de 50 tokens en un solo turno). Tambien se incorporaron datos sanitarios procedentes de Chat Doctor, favoreciendo diagnosticos detallados y paso a paso (tareas de mas de 100 tokens, con picos de 450 tokens por turno). No se especifica en la informacion disponible si hubo fases de RLHF o DPO; el proceso descrito es un ajuste fino supervisado. La cuantizacion GGUF con imatrix se genero a partir del modelo FP16 y conversiones del BF16, y es compatible con la correccion introducida en llama.cpp/pull/6920, por lo que requiere KoboldCpp 1.64 o superior. La model card etiqueta el modelo como "multimodal", pero no se aporta ninguna evidencia tecnica de soporte de vision o audio, por lo que debe considerarse una etiqueta no verificada.
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3-cat-8b-instruct-v1 (este, cuantizado GGUF) | 8,03B | 8192 tokens (12288 recomendado con Q4_K_M-imat) | Roleplay, fidelidad a system prompt, COT, ciencia | apache-2.0 | GGUF en HuggingFace |
+| Llama-3-cat-8b-instruct-v1 (este, cuantizado GGUF) | 8,03B | 8192 tokens (12288 recomendado con Q4_K_M-imat) | Roleplay, fidelidad a system prompt, COT, ciencia | apache-2.0 | GGUF en Hugging Face |
 | Meta-Llama-3-8B-Instruct | 8B | 8192 tokens | Asistente generalista | Meta Llama 3 Community License | safetensors, GGUF, NGC |
-| Cat-Llama-3-70B-instruct | 70B | 8192 tokens | Roleplay, fidelidad a system prompt, COT | No disponible en la informacion proporcionada | HuggingFace (publicado por Turboderp) |
+| Cat-Llama-3-70B-instruct | 70B | 8192 tokens | Roleplay, fidelidad a system prompt, COT | No disponible en la informacion proporcionada | Hugging Face (publicado por Turboderp) |
 
 La comparativa con Meta-Llama-3-8B-Instruct es directa porque el modelo aqui descrito es un ajuste fino sobre esa misma base: comparte arquitectura, tokenizador y ventana de contexto nominal, pero difiere en el objetivo de entrenamiento (roleplay y adherencia al system prompt frente a asistencia general). Cat-Llama-3-70B-instruct es la variante de mayor tamano del mismo linaje, entrenada por el mismo equipo de dataset, y ofrece presumiblemente mayor calidad a cambio de requisitos de hardware muy superiores. No se dispone de datos de benchmark para ninguna de las tres variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ La comparativa con Meta-Llama-3-8B-Instruct es directa porque el modelo aqui des
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/DogeNeverDies/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/DogeNeverDies/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix
 - Modelo original (TheSkullery): https://huggingface.co/TheSkullery/llama-3-cat-8b-instruct-v1
 - Repositorio espejo de cuantizaciones (Lewdiculous): https://huggingface.co/Lewdiculous/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix
 - Cuantizaciones de bartowski: https://huggingface.co/bartowski/llama-3-cat-8b-instruct-v1-GGUF

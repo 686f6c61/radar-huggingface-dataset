@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una técnica de cua
 | Longitud de contexto | 262 144 tokens (262K) |
 | Tipos de cuantización | IQ3_XXS mixta: IQ3_XXS base, con expertos enrutados de las capas 29, 30, 31 y 35 en Q2_0 (procedentes del archivo Q2_0 de ISTA) y 194 proyecciones de hiperconexión en Q8_0; resto sin cambios respecto a IQ3_XXS |
 | Idiomas soportados | no disponible en la información proporcionada (los tests de calidad cubren C, prosa en inglés y prosa en japonés) |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF, dividido en dos shards (el segundo, tabla n-gram de 28,8 GB, se comparte entre cuantizaciones) |
 
 ## Arquitectura y entrenamiento
@@ -107,7 +107,7 @@ No se dispone de información sobre modelos de otros fabricantes comparables en 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-M64-GGUF
+- Hugging Face (este modelo): https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-M64-GGUF
 - Modelo base de cuantización (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Variante intermedia IQ3_XXS_M64: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS_M64-GGUF
 - Bloque MTP para decodificación especulativa: https://huggingface.co/paperniuk/Qwen3.8-Flash-Next-MTP-block

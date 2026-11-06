@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLA-Adapter Nesting 3 Dolls es un checkpoint de política vision-language-action (VLA) publicado por el usuario dddddsds31341 en HuggingFace, guardado en el paso de entrenamiento 150.000 de una ejecución concreta. El modelo resuelve una única tarea de manipulación robótica: anidar muñecas rusas de menor a mayor, introduciendo cada muñeca pequeña dentro de la siguiente hasta completar el conjunto. El repositorio incluye los pesos fusionados, el adaptador LoRA, la cabeza de acción, el proyector de propriocepción, los ficheros de processor/tokenizer y las estadísticas de normalización del dataset original.
+VLA-Adapter Nesting 3 Dolls es un checkpoint de política vision-language-action (VLA) publicado por el usuario dddddsds31341 en Hugging Face, guardado en el paso de entrenamiento 150.000 de una ejecución concreta. El modelo resuelve una única tarea de manipulación robótica: anidar muñecas rusas de menor a mayor, introduciendo cada muñeca pequeña dentro de la siguiente hasta completar el conjunto. El repositorio incluye los pesos fusionados, el adaptador LoRA, la cabeza de acción, el proyector de propriocepción, los ficheros de processor/tokenizer y las estadísticas de normalización del dataset original.
 
 Técnicamente es un modelo compacto dentro de la familia VLA: 1.252.553.792 parámetros (unos 1,25 mil millones) y un repositorio de 3,4 GB en formato safetensors. Las etiquetas del repositorio apuntan a `openvla` y `vla-adapter`, e indican que requiere código personalizado (`custom_code`) para cargarse con transformers. El pipeline declarado es `robotics` y la categoría principal es `feature-extraction`.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VLA-Adapter nesting_3dolls (este checkpoint) | 1.252.553.792 | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de tarea unica, paso 150.000 |
+| VLA-Adapter nesting_3dolls (este checkpoint) | 1.252.553.792 | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de tarea unica, paso 150.000 |
 | OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referenciado por la etiqueta `openvla` del repositorio |
 | OpenVLA-OFT | no disponible | no disponible | no disponible | no disponible | Alternativa de fine-tuning de OpenVLA; sin datos en la informacion disponible |
 | Politicas tipo Octo o pi0 | no disponible | no disponible | no disponible | no disponible | Familias VLA comparables; sin datos en la informacion disponible |
@@ -91,7 +91,7 @@ La informacion proporcionada no incluye parametros, contextos, licencias ni resu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/vla-adapter-nesting_3dolls-150k
+- Hugging Face: https://huggingface.co/dddddsds31341/vla-adapter-nesting_3dolls-150k
 - Repositorio del autor: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o demo: no disponible

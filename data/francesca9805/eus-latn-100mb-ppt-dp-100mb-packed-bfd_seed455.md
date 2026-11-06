@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805 (vinculado al proyecto de investigacion de F. Padovani, Universidad de Groningen, segun la URL de Weights & Biases). El sufijo "eus" corresponde al codigo ISO 639-3 del euskera (basque), por lo que se trata de un modelo orientado a la generacion de texto en lengua vasca. Se ha entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace.
+El modelo `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805 (vinculado al proyecto de investigacion de F. Padovani, Universidad de Groningen, segun la URL de Weights & Biases). El sufijo "eus" corresponde al codigo ISO 639-3 del euskera (basque), por lo que se trata de un modelo orientado a la generacion de texto en lengua vasca. Se ha entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face.
 
 Con 124.770.816 parametros (aproximadamente 124,8 millones), se situa en la categoria de los modelos ligeros tipo GPT-2 small. La arquitectura declarada en las etiquetas es `gpt2`, y el modelo hereda la estructura transformer decoder-only del modelo base. El identificador del repositorio incluye referencias a experimentos de tokenizacion y empaquetado de datos ("ppt", "Dp-100mb-packed", "bfd_seed455"), lo que sugiere que forma parte de una bateria de experimentos comparativos sobre estrategias de preprocesado y tokenizacion para lenguas de bajos recursos.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/eus_latn_100mb (modelo base) | no disponible (familia Goldfish, tamano similar) | no disponible | no disponible | HuggingFace |
-| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 (variante con 10 MB) | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 | 124,8 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/eus_latn_100mb (modelo base) | no disponible (familia Goldfish, tamano similar) | no disponible | no disponible | Hugging Face |
+| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 (variante con 10 MB) | no disponible | no disponible | no disponible | Hugging Face |
 
 Las alternativas mas cercanas son otras variantes de la misma serie experimental (con distinto tamano de corpus, como "10mb", o distinta semilla), asi como el modelo base de Goldfish. No se dispone de datos de rendimiento comparativos entre ellas en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Las alternativas mas cercanas son otras variantes de la misma serie experimental
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ioamaevr
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -72,8 +72,8 @@ La model card del repositorio analizado no incluye métricas (MMLU, HumanEval, G
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tzervas/lab-bitnet-b1.58-2B-4T-w158a8` (este checkpoint) | ~2B (según identificador del base) | No disponible | W1.58A8 / W2A8 empaquetado `int2` | MIT | HuggingFace, 1,8 GB, 0 descargas, 0 likes |
-| `microsoft/BitNet-b1.58-2B-4T` (modelo base) | ~2B (según su identificador) | No disponible en esta consulta | Pesos ternarios b1.58 | MIT (según la model card del derivado) | HuggingFace, repositorio oficial de Microsoft |
+| `tzervas/lab-bitnet-b1.58-2B-4T-w158a8` (este checkpoint) | ~2B (según identificador del base) | No disponible | W1.58A8 / W2A8 empaquetado `int2` | MIT | Hugging Face, 1,8 GB, 0 descargas, 0 likes |
+| `microsoft/BitNet-b1.58-2B-4T` (modelo base) | ~2B (según su identificador) | No disponible en esta consulta | Pesos ternarios b1.58 | MIT (según la model card del derivado) | Hugging Face, repositorio oficial de Microsoft |
 | Alternativas de 1B a 3B de propósito general (por ejemplo, familias Llama 3.2 o Qwen2.5 en ese rango) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se han encontrado en la búsqueda web datos que permitan una comparación cuantitativa con otros modelos. La única comparación verificable con la información disponible es la que existe entre este checkpoint y su modelo base: el derivado no añade entrenamiento ni capacidades, solo un reempaquetado de los pesos en estado `int2`.
@@ -93,7 +93,7 @@ No se han encontrado en la búsqueda web datos que permitan una comparación cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tzervas/lab-bitnet-b1.58-2B-4T-w158a8
+- Modelo en Hugging Face: https://huggingface.co/tzervas/lab-bitnet-b1.58-2B-4T-w158a8
 - Modelo base: https://huggingface.co/microsoft/BitNet-b1.58-2B-4T
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante. Los resultados devueltos apuntan a preguntas de Zhihu sobre currículums, la marca Renault y la certificación IATF 16949, sin relación con el modelo.
 - Referencias externas no presentes en la información proporcionada (se incluyen por su relación con los scripts citados en la model card): repositorio oficial de Microsoft BitNet, https://github.com/microsoft/BitNet, y artículo fundacional de BitNet b1.58, https://arxiv.org/abs/2402.17764. No verificados en esta búsqueda.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una conversion a OpenVINO IR en precision FP16 del modelo Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2, un ajuste fino sin censura (etiquetado por el autor como "uncensored" y "abliterated") construido sobre Meta Llama 3.1 8B. El publicador es el usuario de HuggingFace blaj, que mantiene tambien builds hermanas en int8 e int4. No se trata por tanto de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue: el interes esta en que empaqueta un LLM de 8.000 millones de parametros en el formato nativo del runtime de Intel para ejecutarlo en CPU, iGPU Arc y aceleradores Intel sin necesidad de CUDA.
+Este repositorio contiene una conversion a OpenVINO IR en precision FP16 del modelo Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2, un ajuste fino sin censura (etiquetado por el autor como "uncensored" y "abliterated") construido sobre Meta Llama 3.1 8B. El publicador es el usuario de Hugging Face blaj, que mantiene tambien builds hermanas en int8 e int4. No se trata por tanto de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue: el interes esta en que empaqueta un LLM de 8.000 millones de parametros en el formato nativo del runtime de Intel para ejecutarlo en CPU, iGPU Arc y aceleradores Intel sin necesidad de CUDA.
 
 El problema que resuelve es el de la inferencia local en hardware Intel. OpenVINO IR con estado interno (`beam_idx` expuesto) y pesos FP16 permite servir el modelo con OpenVINO Model Server (OVMS) sobre GPU integrada, algo relevante en portatiles con Core Ultra y en equipos de borde donde no hay GPU dedicada. El precio a pagar es el rendimiento: al estar limitado por ancho de banda de memoria, la variante FP16 rinde unas 4 veces menos tokens por segundo que la version int4 del mismo autor.
 
@@ -21,7 +21,7 @@ Arquitectonicamente es un transformer decoder-only estandar de la familia Llama 
 | Licencia | Llama 3.1 Community License Agreement |
 | Formato de pesos | OpenVINO IR (`.xml` + `.bin`), con estado interno y `beam_idx` expuesto; requiere ademas un `graph.pbtxt` en el directorio del modelo |
 | Modelo base | Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 |
-| Tamano del repositorio | 16,1 GB en HuggingFace (el autor indica 15 GB para el IR) |
+| Tamano del repositorio | 16,1 GB en Hugging Face (el autor indica 15 GB para el IR) |
 | Libreria declarada | `openvino` |
 | Pipeline | `text-generation` |
 | Tags | openvino, llama, uncensored, abliterated, intel, arc, conversational |
@@ -106,7 +106,7 @@ No hay datos de benchmarks de calidad publicados en la informacion disponible qu
 
 ## Enlaces
 
-- Repositorio HuggingFace (FP16): https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-fp16-ov
+- Repositorio Hugging Face (FP16): https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-fp16-ov
 - Build hermana int4: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-int4-ov
 - Build hermana int8: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-int8-ov
 - Modelo base: https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2

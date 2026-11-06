@@ -106,7 +106,7 @@ La comparación de rendimiento directo no está disponible: este experimento no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjayabhatta/csci680-homework1-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/sanjayabhatta/csci680-homework1-checkpoints
 - Repositorio fuente del experimento: https://github.com/aura-lab-wm/teaching-genai4se-2026-sbhatta/tree/893fe4a8db321afef25a9a64dc9186dc8684ee61
 - Paper de referencia del dataset de ajuste fino (Tufano et al., ICSE 2022): https://arxiv.org/abs/2201.06850
 - Dataset original en Zenodo (CC BY 4.0 según la data card facilitada): https://doi.org/10.5281/zenodo.5387856

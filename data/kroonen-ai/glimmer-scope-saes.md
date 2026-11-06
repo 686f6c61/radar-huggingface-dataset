@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Caracteristicas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimmer Scope SAEs | SAE TopK, 9 capas | Muse Glimmer 30B | 65.536 por capa, k = 64 | Apache 2.0 | HuggingFace |
+| Glimmer Scope SAEs | SAE TopK, 9 capas | Muse Glimmer 30B | 65.536 por capa, k = 64 | Apache 2.0 | Hugging Face |
 | Alternativas de SAE publicas para modelos de 30B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros conjuntos de SAE comparables en la documentacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas.
@@ -108,7 +108,7 @@ No se dispone de informacion sobre otros conjuntos de SAE comparables en la docu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kroonen-ai/glimmer-scope-saes
+- Repositorio Hugging Face: https://huggingface.co/kroonen-ai/glimmer-scope-saes
 - Modelo base Muse Glimmer 30B: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio del proyecto Glimmer Scope: https://github.com/kroonen-ai/glimmer-scope
 - Atlas de caracteristicas: https://scope.kroonen.ai

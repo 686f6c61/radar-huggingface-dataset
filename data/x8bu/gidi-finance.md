@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x8bu/gidi-finance
+- Modelo en Hugging Face: https://huggingface.co/x8bu/gidi-finance
 - Variante FP32 y archives de release: la model card indica que el archive `-fp32` esta unicamente en las releases de GitHub del autor, pero no se proporciona la URL concreta en la informacion disponible.
 - Paquete `gidi` (modulo `gidi.inference`, necesario para `GidiPredictor`): no se proporciona la URL del repositorio en la informacion disponible.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las unicas entradas devueltas corresponden a calculadores de rutas en coche entre Tours y Les Sables-d'Olonne (Mappy, ViaMichelin, Rome2rio) y no guardan relacion con el modelo.

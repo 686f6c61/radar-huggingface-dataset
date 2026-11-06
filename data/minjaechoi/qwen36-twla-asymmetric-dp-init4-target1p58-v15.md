@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-twla-asymmetric-dp-init4-target1p58-v15 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario minjaechoi el 13 de septiembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de arquitectura Mixture of Experts etiquetado como qwen3_5_moe, con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) almacenados en formato safetensors, lo que ocupa 70,2 GB en el repositorio. El pipeline declarado acepta imagenes y texto como entrada y genera texto, e incluye etiquetas de conversational y endpoints_compatible.
+qwen36-twla-asymmetric-dp-init4-target1p58-v15 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario minjaechoi el 13 de septiembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de arquitectura Mixture of Experts etiquetado como qwen3_5_moe, con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) almacenados en formato safetensors, lo que ocupa 70,2 GB en el repositorio. El pipeline declarado acepta imagenes y texto como entrada y genera texto, e incluye etiquetas de conversational y endpoints_compatible.
 
 El modelo no dispone de model card descriptiva mas alla de la lista de datasets utilizados: minjaechoi/bipea-expert-nogpqa-v3 para entrenamiento y minjaechoi/twla-gpqa30-eval-manifest para evaluacion. No se declara licencia, ni idiomas soportados, ni longitud de contexto, ni numero de parametros activos, ni resultados de benchmarks. El repositorio acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -12,7 +12,7 @@ Por el nombre del modelo y de los datasets pueden inferirse ciertas lineas de tr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (etiqueta `qwen3_5_moe` en HuggingFace); detalles de capas, numero de expertos y enrutador no disponibles |
+| Arquitectura | Mixture of Experts (etiqueta `qwen3_5_moe` en Hugging Face); detalles de capas, numero de expertos y enrutador no disponibles |
 | Parametros totales | 35.107.181.936 (aproximadamente 35,1 B), segun metadatos de safetensors |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la model card unicamente cita dos datasets: `minjaec
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Procesamiento conjunto de imagen y texto (pipeline image-text-to-text), lo que implica capacidad de responder a preguntas sobre imagenes.
 - Razonamiento sobre conocimiento cientifico de nivel avanzado, inferido del uso de GPQA como conjunto de evaluacion; el rendimiento real no esta publicado.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), pensada para su despliegue mediante Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), pensada para su despliegue mediante Inference Endpoints de Hugging Face.
 - Naturaleza MoE, que en teoria permite un coste de inferencia por token inferior al de un modelo denso de 35 B, aunque se desconoce el numero de parametros activos.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -53,7 +53,7 @@ Debido a la ausencia de documentacion tecnica, licencia y benchmarks, los casos 
 - Clasificacion y descripcion de imagenes en lotes pequenos: el pipeline image-text-to-text permite generar descripciones o extraer informacion de capturas, diagramas o fotografias en entornos de investigacion.
 - Responder a preguntas sobre documentacion tecnica escaneada: la combinacion de entrada visual y generacion de texto permite consultar manuales o articulos en PDF convertidos a imagen.
 - Prototipado de asistentes conversacionales multimodales: la etiqueta `conversational` habilita la construccion de demos de chat que acepten imagenes, con la advertencia de que no hay datos sobre consistencia multi-turno.
-- Despliegue en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para servirse a traves de la infraestructura gestionada de HuggingFace, util para pruebas de concepto sin montar infraestructura propia.
+- Despliegue en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para servirse a traves de la infraestructura gestionada de Hugging Face, util para pruebas de concepto sin montar infraestructura propia.
 - Fine-tuning posterior sobre dominios verticales: al tratarse de un checkpoint de 35 B, puede servir como base para ajuste supervisado en nichos concretos, aunque el coste de entrenamiento es elevado y la licencia no esta definida.
 - Analisis de imagenes medicas, industriales o cientificas: solo en fase exploratoria y nunca en produccion, dado que no existe informacion sobre sesgos, alineamiento ni evaluacion de seguridad.
 
@@ -100,7 +100,7 @@ Frente a estas alternativas, el modelo analizado no aporta datos verificables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target1p58-v15
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target1p58-v15
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/minjaechoi/bipea-expert-nogpqa-v3
 - Manifiesto de evaluacion citado: https://huggingface.co/datasets/minjaechoi/twla-gpqa30-eval-manifest
 - Perfil del autor: https://huggingface.co/minjaechoi

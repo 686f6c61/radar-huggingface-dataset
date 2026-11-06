@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo` es un modelo publicado en HuggingFace por el usuario keylazy, cuyo identificador indica que se trata de un ajuste (presumiblemente una etapa de DPO, por el sufijo `-dpo`) sobre Qwen2.5-Omni-3B, el modelo multimodal end-to-end de 3.000 millones de parametros de la familia Qwen. Qwen2.5-Omni procesa texto, imagenes, audio y video, y genera respuestas tanto en texto como en voz sintetizada en modo streaming; su informe tecnico esta disponible en arXiv (2503.20215) y el codigo oficial en el repositorio QwenLM/Qwen2.5-Omni.
+`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo` es un modelo publicado en Hugging Face por el usuario keylazy, cuyo identificador indica que se trata de un ajuste (presumiblemente una etapa de DPO, por el sufijo `-dpo`) sobre Qwen2.5-Omni-3B, el modelo multimodal end-to-end de 3.000 millones de parametros de la familia Qwen. Qwen2.5-Omni procesa texto, imagenes, audio y video, y genera respuestas tanto en texto como en voz sintetizada en modo streaming; su informe tecnico esta disponible en arXiv (2503.20215) y el codigo oficial en el repositorio QwenLM/Qwen2.5-Omni.
 
 El repositorio no aporta informacion sustantiva: la model card es la plantilla autogenerada de transformers, con todos los campos marcados como "[More Information Needed]", y no declara licencia, idiomas, pipeline, dataset de entrenamiento ni hiperparametros. El nombre del modelo sugiere una mezcla de datos o etapas de entrenamiento (posiblemente componentes tipo "mask", "slurp", "syn", "esc" y una fase DPO), pero no hay documentacion que lo confirme.
 
@@ -23,7 +23,7 @@ Por su relevancia practica: se trata de un artefacto de investigacion sin tracci
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura especifica de este checkpoint ni sobre su procedimiento de entrenamiento. La model card es la plantilla estandar autogenerada por HuggingFace y no documenta datos de entrenamiento, numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otro metodo de alineamiento, pese a que el sufijo `-dpo` del identificador sugiere una fase de optimizacion por preferencias directas.
+No hay informacion sobre la arquitectura especifica de este checkpoint ni sobre su procedimiento de entrenamiento. La model card es la plantilla estandar autogenerada por Hugging Face y no documenta datos de entrenamiento, numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otro metodo de alineamiento, pese a que el sufijo `-dpo` del identificador sugiere una fase de optimizacion por preferencias directas.
 
 Como referencia del modelo base, el informe tecnico de Qwen2.5-Omni (arXiv 2503.20215) describe un modelo multimodal end-to-end disenado para percibir texto, imagenes, audio y video, con codificadores de audio y vision que procesan la entrada por bloques para habilitar el streaming de la informacion multimodal, y con generacion sincronizada de texto y voz natural en tiempo real. El informe afirma que Qwen2.5-Omni alcanza resultados de referencia en benchmarks multimodales como Omni-Bench y que es el primer modelo abierto en igualar, en seguimiento de instrucciones habladas, el nivel que obtiene con entradas de texto (benchmarks MMLU y GSM8K). No se dispone de ningun dato equivalente para este checkpoint concreto.
 
@@ -70,10 +70,10 @@ Advertencia adicional: con 0,1 GB de repositorio, es posible que los pesos compl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo | No disponible (nombre sugiere ~3B) | No disponible | No publicado | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-Omni-3B (modelo base) | ~3B | No disponible en la informacion proporcionada | Informe tecnico con resultados en Omni-Bench; sin cifras en la informacion disponible | No disponible en la informacion proporcionada | HuggingFace y repositorio oficial QwenLM |
-| keylazy/Qwen2.5-Omni-3B-mask-slurp-sft | No disponible | No disponible | No publicado | No disponible | HuggingFace |
-| keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo | No disponible | No disponible | No publicado | No disponible | HuggingFace |
+| keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo | No disponible (nombre sugiere ~3B) | No disponible | No publicado | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-Omni-3B (modelo base) | ~3B | No disponible en la informacion proporcionada | Informe tecnico con resultados en Omni-Bench; sin cifras en la informacion disponible | No disponible en la informacion proporcionada | Hugging Face y repositorio oficial QwenLM |
+| keylazy/Qwen2.5-Omni-3B-mask-slurp-sft | No disponible | No disponible | No publicado | No disponible | Hugging Face |
+| keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo | No disponible | No disponible | No publicado | No disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoria (por ejemplo, otros modelos omni de 3B de Qwen, Google o Meta), ya que no hay ninguna evaluacion publicada de este checkpoint.
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-dpo
 - Checkpoint hermano (SFT): https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-sft
 - Checkpoint hermano (DPO v2): https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo
 - Repositorio oficial de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni

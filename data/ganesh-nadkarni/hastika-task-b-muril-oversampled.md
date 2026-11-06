@@ -33,7 +33,7 @@ El entrenamiento usa el split de entrenamiento del dataset HASTIKA con una parti
 - Procesamiento de texto code-mixed kannada-ingles (kanglish) en escritura nativa y latinizada, dentro de los limites del tokenizador MURIL.
 - Salida de etiqueta unica por comentario (clasificacion multiclase de una sola etiqueta).
 - Integracion directa con el pipeline `text-classification` de `transformers`.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, vision ni audio.
 - No dispone de modo de razonamiento explicito ni generacion de texto libre.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada en fp16: en torno a 0,5 GB de pesos; con cuantizacion dinamica int8, menos de 0,5 GB.
 - GPU recomendadas: cualquier GPU consumer moderna sirve; una RTX 3060, RTX 4060 o superior ofrece throughput muy alto para este tamano. En entornos de servidor, T4, L4, A10G o A100 son mas que suficientes.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con 2 GB o mas de VRAM, e incluso en CPU para volumenes moderados.
-- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (soportado por tag), HuggingFace Inference Endpoints, y conversion a ONNX Runtime para CPU.
+- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (soportado por tag), Hugging Face Inference Endpoints, y conversion a ONNX Runtime para CPU.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera latencia de milisegundos por muestra en GPU consumer y de decenas de milisegundos en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos verificables de otros modelos comparables especificos par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-oversampled
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-oversampled
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Referencia del dataset y shared task: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. *Language Resources and Evaluation*, 59(3):2811-2856.
 - Shared task HASTIKA @ ICON-2026: no disponible (no se proporciona URL en la informacion).

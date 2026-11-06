@@ -2,11 +2,11 @@
 
 ## Resumen
 
-aahlawat/Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym/Gymnasium, publicado en HuggingFace Hub por el usuario aahlawat bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: es un artefacto de politica entrenada, distribuido como un unico fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno (`env_id`). El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
+aahlawat/Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym/Gymnasium, publicado en Hugging Face Hub por el usuario aahlawat bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje: es un artefacto de politica entrenada, distribuido como un unico fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno (`env_id`). El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
 El entorno Taxi-v3 es un problema clasico de control discreto: una cuadricula de 5x5 con un pasajero que debe ser recogido y depositado en uno de cuatro destinos, con 500 estados posibles y 6 acciones (moverse en las cuatro direcciones, recoger y dejar). La recompensa es de -1 por paso, +20 por entrega correcta y -10 por recogida o entrega ilegal. El agente declarado obtiene una recompensa media de 7.54 +/- 2.74, una cifra inferior al umbral de 8.0 que suele emplearse como referencia de resolucion en este entorno.
 
-Su relevancia es principalmente docente y de referencia: sirve como ejemplo minimo de como subir un agente RL a HuggingFace Hub, como baseline reproducible para comparar algoritmos tabulares frente a aproximaciones con redes neuronales (DQN, PPO) y como banco de pruebas para verificar el pipeline de evaluacion con `stable-baselines3` y `load_from_hub`. No hay evidencia de uso en produccion ni de validacion independiente del resultado.
+Su relevancia es principalmente docente y de referencia: sirve como ejemplo minimo de como subir un agente RL a Hugging Face Hub, como baseline reproducible para comparar algoritmos tabulares frente a aproximaciones con redes neuronales (DQN, PPO) y como banco de pruebas para verificar el pipeline de evaluacion con `stable-baselines3` y `load_from_hub`. No hay evidencia de uso en produccion ni de validacion independiente del resultado.
 
 ## Especificaciones tecnicas
 
@@ -44,12 +44,12 @@ Tampoco se documenta la composicion de episodios de evaluacion ni si existio un 
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: sirve como ejemplo minimo y completo de un agente Q-learning subido a HuggingFace Hub, util para que estudiantes vean el ciclo entrenamiento, serializacion, publicacion y carga.
+- Docencia de aprendizaje por refuerzo: sirve como ejemplo minimo y completo de un agente Q-learning subido a Hugging Face Hub, util para que estudiantes vean el ciclo entrenamiento, serializacion, publicacion y carga.
 - Baseline de comparacion: permite contrastar algoritmos tabulares con aproximaciones neuronales (DQN, PPO, A2C) en Taxi-v3 bajo las mismas condiciones de evaluacion, dado que el entorno es rapido y determinista.
 - Verificacion de pipelines de evaluacion: integrable en scripts de CI que comprueben que `load_from_hub` y `gym.make` funcionan correctamente tras cambios de version de Gymnasium o de `huggingface_hub`.
 - Pruebas de robustez de entornos: util para validar wrappers, modificaciones de recompensa o variantes con `is_slippery` en escenarios de planificacion discreta antes de escalar a entornos mas costosos.
 - Investigacion en RL tabular: punto de partida para estudiar el efecto de hiperparametros (epsilon, alpha, gamma) sobre la recompensa media en un problema de 500 estados.
-- Tutoriales y notebooks de HuggingFace: como artefacto de ejemplo en materiales que expliquen el flujo `model-index` dentro de una model card.
+- Tutoriales y notebooks de Hugging Face: como artefacto de ejemplo en materiales que expliquen el flujo `model-index` dentro de una model card.
 - Referencia de umbral de rendimiento: sirve para documentar que una recompensa media de 7.54 queda por debajo del umbral habitual de resolucion (8.0) y motivar la comparacion con agentes mejor ajustados.
 
 ## Benchmarks y rendimiento
@@ -73,11 +73,11 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No hay datos publicados en la informacion disponible que permitan una comparacion cuantitativa con otros agentes de Taxi-v3. Como alternativas conceptuales de la misma categoria pueden citarse las implementaciones de Q-learning y DQN de Stable-Baselines3, los ejemplos de Q-learning tabular de la documentacion de Gymnasium y otros agentes de Taxi-v3 publicados en HuggingFace Hub por terceros, pero no se dispone de sus metricas para confrontarlas con el valor declarado aqui.
+No hay datos publicados en la informacion disponible que permitan una comparacion cuantitativa con otros agentes de Taxi-v3. Como alternativas conceptuales de la misma categoria pueden citarse las implementaciones de Q-learning y DQN de Stable-Baselines3, los ejemplos de Q-learning tabular de la documentacion de Gymnasium y otros agentes de Taxi-v3 publicados en Hugging Face Hub por terceros, pero no se dispone de sus metricas para confrontarlas con el valor declarado aqui.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aahlawat/Taxi-v3 | no aplicable (tabla Q tabular) | no aplicable | mean_reward 7.54 +/- 2.74 (declarado, sin verificar) | no disponible | HuggingFace Hub |
+| aahlawat/Taxi-v3 | no aplicable (tabla Q tabular) | no aplicable | mean_reward 7.54 +/- 2.74 (declarado, sin verificar) | no disponible | Hugging Face Hub |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No hay datos publicados en la informacion disponible que permitan una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aahlawat/Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/aahlawat/Taxi-v3
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

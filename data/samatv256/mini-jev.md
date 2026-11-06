@@ -95,8 +95,8 @@ El autor advierte que estas cifras son especificas del hardware y la carga de tr
 
 | Modelo | Tipo | Parametros | Contexto | Seleccion de herramientas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ODM Mini v1 (`samatv256/mini-Jev`) | Cabezal discriminativo sobre backbone congelado | 262.657 en el cabezal + backbone Qwen3-0.6B | no disponible | Nativa: ranking de candidatos con confianza y margen | Apache-2.0 (cabezal); backbone con sus propios terminos | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen3-0.6B sin ajustar | LLM generativo | ~0,6 B | no disponible en la informacion proporcionada | Indirecta, mediante prompt que solicite el nombre de la herramienta | Apache-2.0 segun su repositorio | HuggingFace, ampliamente utilizado |
+| ODM Mini v1 (`samatv256/mini-Jev`) | Cabezal discriminativo sobre backbone congelado | 262.657 en el cabezal + backbone Qwen3-0.6B | no disponible | Nativa: ranking de candidatos con confianza y margen | Apache-2.0 (cabezal); backbone con sus propios terminos | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen3-0.6B sin ajustar | LLM generativo | ~0,6 B | no disponible en la informacion proporcionada | Indirecta, mediante prompt que solicite el nombre de la herramienta | Apache-2.0 segun su repositorio | Hugging Face, ampliamente utilizado |
 | Jev | Sistema de decision de agentes citado por el autor como referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Router semantico basado en embeddings + similitud | Recuperacion por similitud | no disponible | no disponible | Ranking de candidatos por similitud, sin confianza calibrada ni margen | depende de la implementacion | generico |
 
@@ -118,7 +118,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samatv256/mini-Jev
+- Modelo en Hugging Face: https://huggingface.co/samatv256/mini-Jev
 - Backbone requerido, Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia Apache 2.0: incluida en el repositorio como archivo `LICENSE`
 - Cargador de inferencia: `odm_mini.py`, incluido en el repositorio

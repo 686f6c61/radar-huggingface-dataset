@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juliarjoj/mae-checkpoint68` es un repositorio de HuggingFace publicado por el usuario juliarjoj que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de **clasificación**, en configuración **base**. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un *checkpoint de inicialización válido para pruebas de humo* y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio se describe a sí mismo como un punto de partida experimental con código transparente y pruebas reproducibles básicas.
+`juliarjoj/mae-checkpoint68` es un repositorio de Hugging Face publicado por el usuario juliarjoj que contiene una implementación funcional de una arquitectura denominada **Mae** orientada a tareas de **clasificación**, en configuración **base**. No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un *checkpoint de inicialización válido para pruebas de humo* y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio se describe a sí mismo como un punto de partida experimental con código transparente y pruebas reproducibles básicas.
 
 El dato más relevante para evaluar su utilidad práctica es el tamaño real del checkpoint: **16.576 parámetros** según los metadatos de safetensors, un orden de magnitud propio de un modelo de juguete o de un esqueleto de arquitectura, no de un modelo de propósito general. El repositorio ocupa 0,0 GB (menos de 100 MB) y no registra descargas ni *likes* en el momento de la consulta, lo que refuerza su carácter de artefacto experimental sin adopción comunitaria.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, el repositorio **no contiene ningún modelo entrenado
 - **No se documenta capacidad multilingüe** ni idiomas soportados.
 - **No se documentan capacidades multimodales** (visión, audio) ni modo de razonamiento (*thinking*).
 - La única funcionalidad verificable es la ejecución del propio script: `python model.py --help` y el bloque `__main__` con un ejemplo de prueba de humo generado.
-- Al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace requieren un *adapter* explícito antes de poder usarse.
+- Al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face requieren un *adapter* explícito antes de poder usarse.
 
 ## Casos de uso
 
@@ -83,14 +83,14 @@ Nota: los datos de MAE original y DINOv2 corresponden a información pública de
 - **Sin auditoría de robustez, equidad o transferencia de dominio**: la model card lo declara de forma explícita.
 - **Sin datos de sesgo**: no hay información sobre datos de entrenamiento, por lo que no se puede evaluar sesgo alguno.
 - **Idiomas y contexto**: no disponibles; no se puede asumir soporte multilingüe ni una ventana de contexto concreta.
-- **Carga no estándar**: requiere código propio o un adaptador; las API automáticas de HuggingFace fallarán sin él.
+- **Carga no estándar**: requiere código propio o un adaptador; las API automáticas de Hugging Face fallarán sin él.
 - **Licencia**: Apache 2.0 permite uso comercial del código y del checkpoint, pero el autor recomienda revisar por separado los términos de los datos de origen si se combinan con datasets externos.
 - **Sin soporte comunitario**: 0 descargas y 0 *likes* en el momento de la consulta; no cabe esperar mantenimiento, corrección de errores ni soporte del autor.
 - **Resultados futuros**: cualquier métrica procedente de un checkpoint entrenado en el futuro deberá documentarse por separado de los valores por defecto de este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juliarjoj/mae-checkpoint68
+- Hugging Face: https://huggingface.co/juliarjoj/mae-checkpoint68
 - Repositorio del autor: no disponible
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible

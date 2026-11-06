@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaeldavisdale/nlp-multitask` es un repositorio de HuggingFace publicado por el usuario michaeldavisdale que contiene una implementacion de referencia de **MoCo v3** (Momentum Contrast v3) orientada a **multitask**, en una configuracion etiquetada como "small". No se trata de un modelo entrenado ni evaluado: el propio autor describe `model.safetensors` como un **checkpoint de inicializacion valido para smoke tests**, no como un checkpoint con pesos entrenados. El repositorio se centra en codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de benchmark.
+`michaeldavisdale/nlp-multitask` es un repositorio de Hugging Face publicado por el usuario michaeldavisdale que contiene una implementacion de referencia de **MoCo v3** (Momentum Contrast v3) orientada a **multitask**, en una configuracion etiquetada como "small". No se trata de un modelo entrenado ni evaluado: el propio autor describe `model.safetensors` como un **checkpoint de inicializacion valido para smoke tests**, no como un checkpoint con pesos entrenados. El repositorio se centra en codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de benchmark.
 
 El modelo declara 49.600 parametros totales (segun el recuento de safetensors), lo que lo situa en una escala extremadamente pequena (por debajo de 0,05 millones de parametros). La arquitectura declarada usa atencion estandar, fusion de bajo rango (low rank), activacion ReLU y normalizacion GroupNorm. No hay informacion publicada sobre longitud de contexto, idiomas soportados ni datos de entrenamiento.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaeldavisdale/nlp-multitask | 49.600 | no disponible | no disponible (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| michaeldavisdale/nlp-multitask | 49.600 | no disponible | no disponible (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | MoCo v3 original (referencia conceptual) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria. Los resultados de busqueda web obtenidos no guardan relacion con este modelo y no aportan informacion tecnica utilizable.
@@ -83,5 +83,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaeldavisdale/nlp-multitask
+- Hugging Face: https://huggingface.co/michaeldavisdale/nlp-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos no guardan relacion con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Codium-BD-v2.1-Ready es un ajuste fino (finetune) comunitario publicado por el usuario ganjakha en HuggingFace. El modelo parte de unsloth/Qwen3-4B-Instruct-2507, una variante instruct de 4 mil millones de parametros de la familia Qwen3 entrenada por el equipo de Unsloth, y ha sido afinado utilizando la libreria Unsloth junto con TRL de HuggingFace, lo que segun el autor permitio entrenar "2x mas rapido" que con metodos convencionales.
+Codium-BD-v2.1-Ready es un ajuste fino (finetune) comunitario publicado por el usuario ganjakha en Hugging Face. El modelo parte de unsloth/Qwen3-4B-Instruct-2507, una variante instruct de 4 mil millones de parametros de la familia Qwen3 entrenada por el equipo de Unsloth, y ha sido afinado utilizando la libreria Unsloth junto con TRL de Hugging Face, lo que segun el autor permitio entrenar "2x mas rapido" que con metodos convencionales.
 
 El modelo se presenta como un modelo conversacional de generacion de texto (pipeline text-generation), con pesos en formato safetensors y compatibilidad con endpoints de inferencia. La model card es minima: no documenta el dataset de entrenamiento, el metodo de ajuste (LoRA, QLoRA o full finetune), ni el proposito especifico del dominio, por lo que su evaluacion practica depende de pruebas propias del usuario.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y de ambito comunitario: con 468 descargas y sin bench
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura transformer decoder de Qwen3 en su variante densa de 4 mil millones de parametros, mediante el checkpoint instruct de julio de 2025 publicado por Unsloth. El ajuste fino se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels especializados y uso eficiente de memoria, en combinacion con TRL (Transformer Reinforcement Learning) de HuggingFace, el conjunto de herramientas estandar para SFT, DPO y RLHF.
+El modelo hereda la arquitectura transformer decoder de Qwen3 en su variante densa de 4 mil millones de parametros, mediante el checkpoint instruct de julio de 2025 publicado por Unsloth. El ajuste fino se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels especializados y uso eficiente de memoria, en combinacion con TRL (Transformer Reinforcement Learning) de Hugging Face, el conjunto de herramientas estandar para SFT, DPO y RLHF.
 
 No se ha documentado el dataset utilizado, el numero de tokens de entrenamiento, el metodo de adaptacion (LoRA/QLoRA frente a full finetune) ni si hubo etapas de alineacion adicionales. El nombre "Codium-BD" sugiere un posible enfoque hacia codigo o un dominio concreto, pero la model card no lo confirma, por lo que esta hipotesis debe verificarse empiricamente.
 
@@ -79,8 +79,8 @@ Dado que no hay datos de rendimiento del finetune, en la practica la eleccion en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ganjakha/Codium-BD-v2.1-Ready
+- Modelo en Hugging Face: https://huggingface.co/ganjakha/Codium-BD-v2.1-Ready
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen3 (coleccion oficial): https://huggingface.co/Qwen

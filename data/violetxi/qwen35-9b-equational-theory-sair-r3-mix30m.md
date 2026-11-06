@@ -71,7 +71,7 @@ Notas de metodologia: la etapa 1 usa analisis y comparacion basados en reglas de
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-equational-theory-sair-r3-mix30m | 9,65B | 32.768 tokens en generacion (no confirmado como contexto oficial) | apache-2.0 | 46,97% etapa 1 a 16K; 67,31% a 24K; 20,00%/20,08% etapa 2 | Pesos safetensors BF16 en HuggingFace, 0 descargas |
+| violetxi/qwen35-9b-equational-theory-sair-r3-mix30m | 9,65B | 32.768 tokens en generacion (no confirmado como contexto oficial) | apache-2.0 | 46,97% etapa 1 a 16K; 67,31% a 24K; 20,00%/20,08% etapa 2 | Pesos safetensors BF16 en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B (base) | 9B | no disponible | no disponible en la informacion proporcionada | no disponible para tareas SAIR en la informacion proporcionada | Modelo base publico de Alibaba Cloud, revision fijada `c2022362...` |
 | violetxi/qwen35-9b-equational-theory-sair-r3-mix3m | no disponible | no disponible | no disponible | no disponible | Variante publicada por el mismo autor con mezcla de 3M tokens |
 | violetxi/qwen35-9b-equational-theory-sair-r3-mix1m | no disponible | no disponible | no disponible | no disponible | Variante publicada por el mismo autor con mezcla de 1M tokens |
@@ -93,7 +93,7 @@ No se dispone de datos comparativos con modelos de razonamiento matematico-forma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix30m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix30m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Explorador publico de resultados y respuestas: https://huggingface.co/spaces/violetxi/equational-theory-trajectory-atlas
 - Dataset de evaluacion (privado, requiere acceso): https://huggingface.co/datasets/violetxi/qwen35-9b-equational-theory-sair-r3-mix30m-eval

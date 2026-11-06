@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Locali-Qwen2.5-Coder-1.5B-GGUF | 1,54 B | no disponible (base: 32.768) | sin benchmarks publicados | apache-2.0 + terminos Llama 3.1 | HuggingFace, GGUF |
-| Qwen2.5-Coder-1.5B (modelo base) | 1,54 B | 32.768 tokens | benchmarks publicados por Alibaba (no consultados en esta busqueda) | apache-2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-Coder-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks publicados por Alibaba | apache-2.0 | HuggingFace |
-| Llama-Locali-Qwen2.5-Coder-1.5B (modelo fusionado) | 1,54 B | no disponible | sin benchmarks publicados | apache-2.0 + terminos Llama 3.1 | HuggingFace |
+| Llama-Locali-Qwen2.5-Coder-1.5B-GGUF | 1,54 B | no disponible (base: 32.768) | sin benchmarks publicados | apache-2.0 + terminos Llama 3.1 | Hugging Face, GGUF |
+| Qwen2.5-Coder-1.5B (modelo base) | 1,54 B | 32.768 tokens | benchmarks publicados por Alibaba (no consultados en esta busqueda) | apache-2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-Coder-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks publicados por Alibaba | apache-2.0 | Hugging Face |
+| Llama-Locali-Qwen2.5-Coder-1.5B (modelo fusionado) | 1,54 B | no disponible | sin benchmarks publicados | apache-2.0 + terminos Llama 3.1 | Hugging Face |
 
 No se dispone de datos de rendimiento del ajuste que permitan una comparacion cuantitativa. La comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del ajuste que permitan una comparacion cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-GGUF
 - Modelo base: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B
 - Pagina del adaptador QLoRA (entrenamiento y puntuaciones): https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA
 - Licencia Llama 3.1 Community License: https://www.llama.com/llama3_1/license/

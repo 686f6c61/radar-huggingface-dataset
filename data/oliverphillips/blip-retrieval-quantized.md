@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oliverphillips/blip-retrieval-quantized | 49.600 (declarados) | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| oliverphillips/blip-retrieval-quantized | 49.600 (declarados) | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | BLIP base (referencia) | del orden de cientos de millones | no disponible | no disponible | licencia del proyecto original | no disponible en esta ficha |
 | CLIP ViT-B/32 (referencia) | ~150 millones | no disponible | no disponible | licencia del proyecto original | no disponible en esta ficha |
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliverphillips/blip-retrieval-quantized
+- Hugging Face: https://huggingface.co/oliverphillips/blip-retrieval-quantized
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

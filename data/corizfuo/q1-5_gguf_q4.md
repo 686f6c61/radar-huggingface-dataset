@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Corizfuo/q1.5_gguf_q4` es un repositorio publicado en HuggingFace que aloja un archivo de pesos en formato GGUF con cuantizacion Q4. El nombre del repositorio sugiere que podria tratarse de una cuantizacion de un modelo de la familia Qwen 1.5, aunque no existe ninguna confirmacion en la informacion proporcionada. El autor es el usuario "Corizfuo", del que no se dispone de informacion adicional.
+El modelo `Corizfuo/q1.5_gguf_q4` es un repositorio publicado en Hugging Face que aloja un archivo de pesos en formato GGUF con cuantizacion Q4. El nombre del repositorio sugiere que podria tratarse de una cuantizacion de un modelo de la familia Qwen 1.5, aunque no existe ninguna confirmacion en la informacion proporcionada. El autor es el usuario "Corizfuo", del que no se dispone de informacion adicional.
 
 La model card del repositorio esta practicamente vacia: unicamente incluye la declaracion de licencia Apache 2.0, sin especificar arquitectura, tamano, contexto, dataset de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni valoraciones, lo que indica que es un publicacion reciente o de escasa difusion. En su estado actual, no es posible determinar las capacidades reales del modelo ni recomendar su uso en entornos de produccion sin informacion adicional por parte del autor.
 
@@ -71,6 +71,6 @@ No disponible. Sin conocer el modelo base, no es posible establecer comparacione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Corizfuo/q1.5_gguf_q4
-- Documentacion de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Repositorio Hugging Face: https://huggingface.co/Corizfuo/q1.5_gguf_q4
+- Documentacion de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf
 - Guia de modelos GGUF cuantizados: https://apatero.com/blog/gguf-quantized-models-complete-guide-2025

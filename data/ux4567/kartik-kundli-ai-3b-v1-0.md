@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v1.0
 - Modelo base (Instruct): https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-Instruct
 - Modelo relacionado (Kartik-AI-3B): https://huggingface.co/UX4567/Kartik-AI-3B
 - Repositorio GitHub del proyecto KundliAI: https://github.com/KundliAI/kundli-ai

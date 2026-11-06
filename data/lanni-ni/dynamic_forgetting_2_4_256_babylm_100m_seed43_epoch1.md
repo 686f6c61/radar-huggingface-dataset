@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch1` es un modelo de generacion de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un experimento de investigacion dentro de la linea "dynamic forgetting" aplicada a modelos de lenguaje de pequeno tamano, en el contexto del proyecto BabyLM. El repositorio contiene un checkpoint con 27.449.096 parametros totales (aproximadamente 27,4 millones) y un peso total de 0.1 GB en formato safetensors.
+El modelo `dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch1` es un modelo de generacion de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un experimento de investigacion dentro de la linea "dynamic forgetting" aplicada a modelos de lenguaje de pequeno tamano, en el contexto del proyecto BabyLM. El repositorio contiene un checkpoint con 27.449.096 parametros totales (aproximadamente 27,4 millones) y un peso total de 0.1 GB en formato safetensors.
 
 El nombre del repositorio sugiere que la configuracion experimental incluye 2 capas, 4 cabezas de atencion y 256 dimensiones de embedding, y que se ha entrenado durante una epoca con una semilla concreta (seed 43), aunque esta informacion no esta confirmada en la documentacion disponible. La model card es una plantilla generica y no aporta detalles sobre arquitectura, datos de entrenamiento, capacidades o rendimiento.
 
@@ -29,7 +29,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta catalogado con el pipeline `text-generation` en HuggingFace, por lo que su funcion principal es la generacion de texto.
+- Generacion de texto: el modelo esta catalogado con el pipeline `text-generation` en Hugging Face, por lo que su funcion principal es la generacion de texto.
 - No se ha documentado soporte para tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni thinking mode.
 - No se han especificado capacidades multilingues.
 
@@ -47,7 +47,7 @@ No se dispone de datos confirmados sobre requisitos de hardware. El unico dato d
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para realizar una comparativa tecnica rigurosa. Los modelos mas cercanos son otros checkpoints de la misma linea de investigacion publicados por el mismo autor en HuggingFace:
+No se dispone de datos suficientes para realizar una comparativa tecnica rigurosa. Los modelos mas cercanos son otros checkpoints de la misma linea de investigacion publicados por el mismo autor en Hugging Face:
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
@@ -68,6 +68,6 @@ Sin datos publicados de benchmarks o caracteristicas tecnicas, no es posible est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch1
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch1
 - Variante relacionada: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch1
 - Linea experimental stickbreaking: https://huggingface.co/Lanni-ni/stickbreaking_2L_4H_256D_babylm

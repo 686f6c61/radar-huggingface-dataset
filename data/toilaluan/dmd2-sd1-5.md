@@ -73,8 +73,8 @@ No hay suficiente información para una comparativa exhaustiva con otros modelos
 
 ## Enlaces
 
-- [HuggingFace: toilaluan/dmd2-sd1.5](https://huggingface.co/toilaluan/dmd2-sd1.5)
+- [Hugging Face: toilaluan/dmd2-sd1.5](https://huggingface.co/toilaluan/dmd2-sd1.5)
 - [Repositorio DMD2 en GitHub](https://github.com/tianweiy/DMD2/blob/main/experiments/sdv1.5/README.md)
-- [HuggingFace: tianweiy/DMD2](https://huggingface.co/tianweiy/DMD2)
+- [Hugging Face: tianweiy/DMD2](https://huggingface.co/tianweiy/DMD2)
 - [Stable Diffusion v1.5 (modelo base)](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)
 - [Guía Local Dream (modelos DMD2)](https://ld-guide.chino.icu/zh/models/)

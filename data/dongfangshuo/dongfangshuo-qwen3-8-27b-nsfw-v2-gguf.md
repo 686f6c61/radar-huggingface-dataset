@@ -87,7 +87,7 @@ Comparación con las variantes de la misma familia, que son las únicas document
 |---|---|---|---|---|---|
 | dongfangshuo-Qwen3.8-27B-NSFW-v2 (este) | ~26,9 B | 8k–32k recomendado | Novela R-18 en chino, 12 módulos reentrenados, GGUF Q4_K_M | Apache-2.0 | Repo propio + espejos no oficiales |
 | dongfangshuo-Qwen3.8-27B-NSFW v1 | ~26,9 B | 8k–32k recomendado | Versión equilibrada, 7 módulos ajustados; el autor reporta bucles en textos largos | Apache-2.0 | Repo separado del autor |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | ~26,9 B | no disponible | Base con abliteration, alineamiento de seguridad laxo pero presente | Apache-2.0 (heredada de Qwen) | HuggingFace |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | ~26,9 B | no disponible | Base con abliteration, alineamiento de seguridad laxo pero presente | Apache-2.0 (heredada de Qwen) | Hugging Face |
 
 No se dispone de datos objetivos (benchmarks, contexto máximo certificado, throughput) para establecer una comparación cuantitativa con alternativas de otros autores en la misma categoría. Las cuantizaciones de terceros (mradermacher, nancinicky) redistribuyen el mismo modelo, no son alternativas independientes.
 
@@ -105,7 +105,7 @@ No se dispone de datos objetivos (benchmarks, contexto máximo certificado, thro
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF
 - Versión v1 en GGUF: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
 - Modelo base del autor (safetensors): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
 - Modelo base con abliteration: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

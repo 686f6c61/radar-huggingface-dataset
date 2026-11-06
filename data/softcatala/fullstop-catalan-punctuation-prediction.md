@@ -67,7 +67,7 @@ No se han publicado resultados comparativos frente a otros modelos de puntuació
 - VRAM estimada para inferencia: no disponible de forma explícita; al tratarse de un modelo basado en RoBERTa base, la inferencia en FP32 requiere del orden de 0,5 GB de VRAM, aunque este dato no se confirma en la información proporcionada.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para un modelo de tamaño base; no se especifican modelos concretos en la información disponible.
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna (GTX 1060 o superior), aunque no se confirma en la información proporcionada.
-- Opciones de despliegue: `transformers` (PyTorch), endpoints de HuggingFace (tag `endpoints_compatible`); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: `transformers` (PyTorch), endpoints de Hugging Face (tag `endpoints_compatible`); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,8 +76,8 @@ No se dispone de datos de modelos comparables de predicción de puntuación en c
 
 | Modelo | Idiomas | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| softcatala/fullstop-catalan-punctuation-prediction | ca | RoBERTa base fine-tuned | MIT (contribuciones) / Apache 2.0 (base) | HuggingFace |
-| FullStop (oliverguhr) | en, de y otras | Transformer fine-tuned | MIT | GitHub / HuggingFace |
+| softcatala/fullstop-catalan-punctuation-prediction | ca | RoBERTa base fine-tuned | MIT (contribuciones) / Apache 2.0 (base) | Hugging Face |
+| FullStop (oliverguhr) | en, de y otras | Transformer fine-tuned | MIT | GitHub / Hugging Face |
 | Alternativas en catalán | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de modelos comparables de predicción de puntuación en c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/softcatala/fullstop-catalan-punctuation-prediction
+- Modelo en Hugging Face: https://huggingface.co/softcatala/fullstop-catalan-punctuation-prediction
 - Checkpoint base: https://huggingface.co/BSC-LT/roberta-base-ca
 - Proyecto FullStop original: https://github.com/oliverguhr/fullstop-deep-punctuation-prediction
 - Softcatalà: https://www.softcatala.org/

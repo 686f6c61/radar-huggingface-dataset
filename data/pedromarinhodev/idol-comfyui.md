@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandarizados (PSNR, SSIM, LPIPS, 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/PedroMarinhoDev/Idol-ComfyUI
+- Ficha en Hugging Face: https://huggingface.co/PedroMarinhoDev/Idol-ComfyUI
 - Modelo original: https://huggingface.co/speridlabs/idol
 - Nodos ComfyUI-Idol (GitHub): https://github.com/PedroMarinhoDev/ComfyUI-Idol
 - Idol SDK (GitHub): https://github.com/speridlabs/idol-sdk

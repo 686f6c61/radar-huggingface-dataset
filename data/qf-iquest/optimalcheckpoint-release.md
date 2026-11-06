@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `qf-iquest/OptimalCheckpoint-Release` aloja un checkpoint publicado por el usuario qf-iquest bajo licencia MIT, con pipeline de extracción de características y compatible con la librería Transformers de HuggingFace. La model card adjunta describe un modelo denominado "MyAwesomeModel", que tras una actualización reciente ha mejorado significativamente su capacidad de razonamiento profundo y de inferencia, acercándose al rendimiento de otros modelos punteros en tareas de matemáticas, programación y lógica general. No obstante, el repositorio no proporciona detalles técnicos fundamentales como el número de parámetros, la arquitectura concreta o la longitud de contexto, lo que limita la evaluación objetiva del modelo.
+El repositorio `qf-iquest/OptimalCheckpoint-Release` aloja un checkpoint publicado por el usuario qf-iquest bajo licencia MIT, con pipeline de extracción de características y compatible con la librería Transformers de Hugging Face. La model card adjunta describe un modelo denominado "MyAwesomeModel", que tras una actualización reciente ha mejorado significativamente su capacidad de razonamiento profundo y de inferencia, acercándose al rendimiento de otros modelos punteros en tareas de matemáticas, programación y lógica general. No obstante, el repositorio no proporciona detalles técnicos fundamentales como el número de parámetros, la arquitectura concreta o la longitud de contexto, lo que limita la evaluación objetiva del modelo.
 
 La relevancia de este lanzamiento radica en que la model card reporta mejoras sustanciales en razonamiento complejo (por ejemplo, un aumento de precisión del 70 % al 87,5 % en el conjunto AIME 2025) y una reducción de la tasa de alucinación, además de un soporte mejorado para function calling. Sin embargo, al carecer de información verificable sobre la arquitectura y el entrenamiento, la ficha se basa principalmente en las afirmaciones del autor y en los datos de evaluación incluidos en la propia documentación.
 
@@ -95,6 +95,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/qf-iquest/OptimalCheckpoint-Release)
-- [Perfil del autor en HuggingFace](https://huggingface.co/qf-iquest)
+- [Repositorio en Hugging Face](https://huggingface.co/qf-iquest/OptimalCheckpoint-Release)
+- [Perfil del autor en Hugging Face](https://huggingface.co/qf-iquest)
 - No se proporcionan enlaces a papers, código fuente, demos o sitios web oficiales en la información disponible.

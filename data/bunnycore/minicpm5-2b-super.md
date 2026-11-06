@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-Super es un modelo de lenguaje publicado en HuggingFace por el usuario bunnycore, distribuido exclusivamente en formato GGUF y presentado como una conversion realizada con Unsloth. El repositorio ocupa 2,7 GB y contiene un unico archivo de pesos, `uraion-forge-2b.Q8_0.gguf`, correspondiente a una cuantizacion Q8_0. El dato real de parametros reportado en safetensors es de 2.516.756.480 (aproximadamente 2,5 mil millones), lo que situa al modelo en el segmento de pequeno tamano, apto para inferencia en hardware de consumo.
+MiniCPM5-2B-Super es un modelo de lenguaje publicado en Hugging Face por el usuario bunnycore, distribuido exclusivamente en formato GGUF y presentado como una conversion realizada con Unsloth. El repositorio ocupa 2,7 GB y contiene un unico archivo de pesos, `uraion-forge-2b.Q8_0.gguf`, correspondiente a una cuantizacion Q8_0. El dato real de parametros reportado en safetensors es de 2.516.756.480 (aproximadamente 2,5 mil millones), lo que situa al modelo en el segmento de pequeno tamano, apto para inferencia en hardware de consumo.
 
 El nombre sugiere una relacion con la familia MiniCPM en su hipotetica quinta generacion, pero no se ha aportado ninguna confirmacion por parte del equipo que desarrolla MiniCPM (OpenBMB), ni model card detallada, ni paper, ni resultados de evaluacion. La model card se limita al texto plantilla de conversion a GGUF generado por Unsloth, con dos ejemplos de invocacion mediante `llama-cli` y `llama-mtmd-cli` y la lista de archivos disponibles. No se declara licencia, idiomas soportados, longitud de contexto ni pipeline.
 
@@ -62,7 +62,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 - VRAM estimada en FP16 (no publicado, calculado, unos 5,0 GB de pesos): aproximadamente 6 GB.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM para Q8_0 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A10, L4, A100 y H100 lo ejecutan con holgura). Para Q4_K_M bastan GPUs de 4 GB.
 - Cabe en GPU de consumo: si. Con el archivo Q8_0 publicado cabe en tarjetas con 6-8 GB de VRAM, y en equipos sin GPU dedicada puede ejecutarse en CPU con 8 GB de RAM.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf bunnycore/MiniCPM5-2B-Super --jinja`, tal como indica la model card), llama-cpp-python, Ollama, LM Studio y servidores compatibles con la API de llama.cpp. El tag `endpoints_compatible` sugiere uso con Inference Endpoints de HuggingFace. vLLM y TGI no pueden cargar GGUF de forma nativa en sus flujos habituales: requeririan los pesos originales en safetensors, que no se han publicado en este repositorio.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf bunnycore/MiniCPM5-2B-Super --jinja`, tal como indica la model card), llama-cpp-python, Ollama, LM Studio y servidores compatibles con la API de llama.cpp. El tag `endpoints_compatible` sugiere uso con Inference Endpoints de Hugging Face. vLLM y TGI no pueden cargar GGUF de forma nativa en sus flujos habituales: requeririan los pesos originales en safetensors, que no se han publicado en este repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La diferencia practica mas relevante no es de rendimiento, sino de trazabilidad:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-Super
+- Repositorio en Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-Super
 - Unsloth (herramienta citada para la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (backend de inferencia implicito en los tags y en los comandos de ejemplo): https://github.com/ggml-org/llama.cpp
 - Paper, blog, demo o repositorio oficial del modelo: no disponible

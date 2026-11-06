@@ -69,8 +69,8 @@ El adaptador supera claramente a las reglas en la distribución sintética, pero
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Medlyn verifier v1 (este) | 1,7B + LoRA r8 | no disponible (entreno a 512) | Verificación clínica EN/DE | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3-1.7B base | 1,7B | no disponible | Generación general | Apache 2.0 | HuggingFace |
+| Medlyn verifier v1 (este) | 1,7B + LoRA r8 | no disponible (entreno a 512) | Verificación clínica EN/DE | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3-1.7B base | 1,7B | no disponible | Generación general | Apache 2.0 | Hugging Face |
 | Juez GPT (referencia de la model card) | no disponible | no disponible | Verificación con prompt | propietaria | API |
 | Verificación por reglas (referencia de la model card) | no aplica | no aplica | Comprobación exacta de números, lados, fechas y negación | no aplica | código |
 
@@ -90,7 +90,7 @@ No se dispone de comparación con otros adaptadores de verificación clínica pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JulianAT/medlyn-verifier-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/JulianAT/medlyn-verifier-qwen3-1.7b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/JulianAT/medlyn-synth-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Base cuantizada usada en entrenamiento: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

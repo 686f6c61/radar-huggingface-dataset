@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyanglei/classification` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de clasificacion, en su variante "tiny". El autor es el usuario `yyanglei` y el repositorio se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni ajustado: el unico checkpoint incluido (`model.safetensors`) es una inicializacion valida pensada unicamente para pruebas de humo (smoke tests), no para inferencia real.
+`yyanglei/classification` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de clasificacion, en su variante "tiny". El autor es el usuario `yyanglei` y el repositorio se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni ajustado: el unico checkpoint incluido (`model.safetensors`) es una inicializacion valida pensada unicamente para pruebas de humo (smoke tests), no para inferencia real.
 
 El modelo registra 33.088 parametros totales, un tamano extremadamente reducido que responde al caracter didactico y experimental del codigo. Incorpora decisiones de diseno concretas como atencion de tipo grouped query, fusion mediante cross attention, activacion gelu tanh y normalizacion instancenorm. La receta de experimento por defecto usa el optimizador novograd con un scheduler de tipo coseno, aunque el propio autor advierte que son valores de partida y no evidencia de un entrenamiento completado.
 
@@ -81,5 +81,5 @@ No disponible. El repositorio no proporciona datos de rendimiento ni especifica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyanglei/classification
+- Repositorio en Hugging Face: https://huggingface.co/yyanglei/classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

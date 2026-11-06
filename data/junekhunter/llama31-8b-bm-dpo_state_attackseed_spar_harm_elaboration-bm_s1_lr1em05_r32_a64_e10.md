@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10)
+- [Hugging Face - Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10)
 - [Modelo base: Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10) (referenciado en la model card)
 - [Unsloth](https://github.com/unslothai/unsloth) (librería de entrenamiento mencionada)
 - [TRL de Hugging Face](https://github.com/huggingface/trl) (librería de entrenamiento mencionada)

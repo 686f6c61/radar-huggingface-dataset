@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishekiyerlow/classification-lite50` es un prototipo de investigación alojado en HuggingFace por el usuario Abhishek Iyer. Se presenta como una implementación propia de una arquitectura tipo DINO orientada a clasificación, con escala declarada "base", atención dilatada, fusión mediante cross-attention, activación GELU y normalización LayerNorm. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`abhishekiyerlow/classification-lite50` es un prototipo de investigación alojado en Hugging Face por el usuario Abhishek Iyer. Se presenta como una implementación propia de una arquitectura tipo DINO orientada a clasificación, con escala declarada "base", atención dilatada, fusión mediante cross-attention, activación GELU y normalización LayerNorm. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros según el fichero de safetensors. Esto lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo DINO o DINOv2 utilizable en producción (que van desde decenas de millones hasta más de mil millones de parámetros). El propio autor indica explícitamente que el checkpoint no ha sido entrenado, no se ha auditado en robustez, equidad ni transferencia de dominio, y que no se reclama ninguna puntuación de benchmark.
 
@@ -51,7 +51,7 @@ Dado que el checkpoint no está entrenado, los casos de uso realistas son de des
 - Plantilla de referencia para implementar DINO con atención dilatada y cross-attention: sirve como punto de partida para quien quiera reproducir o modificar esas variantes arquitectónicas sin partir de cero.
 - Comparación controlada de recetas de optimización: el `training_args.json` con Novograd y warmup lineal permite montar un experimento donde se varíe el optimizador manteniendo constante el resto de la configuración.
 - Integración en tests de CI de un equipo de visión por computador: al ocupar 0,0 GB y tener 33.088 parámetros, se puede incluir en una suite de tests que valide serialización, versionado de pesos y compatibilidad de dependencias en segundos.
-- Docencia y formación: un ejemplo mínimo del ciclo completo de definición de arquitectura, configuración de entrenamiento y publicación en HuggingFace con la licencia y las etiquetas correctas.
+- Docencia y formación: un ejemplo mínimo del ciclo completo de definición de arquitectura, configuración de entrenamiento y publicación en Hugging Face con la licencia y las etiquetas correctas.
 - Auditoría de licencias y cumplimiento: un caso de estudio de repositorio con Apache 2.0 pero con datos de origen no especificados, útil para ilustrar por qué hay que revisar los términos del dataset por separado.
 - Base para fine-tuning en una tarea de clasificación específica: hipotéticamente, tras un entrenamiento completo con un split etiquetado y al menos tres semillas; hoy no hay evidencia de que supere a una línea base trivial.
 
@@ -94,7 +94,7 @@ La diferencia relevante no es de rendimiento, sino de estado del artefacto: los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekiyerlow/classification-lite50
+- Modelo en Hugging Face: https://huggingface.co/abhishekiyerlow/classification-lite50
 - Perfil del autor: https://huggingface.co/abhishekiyerlow
 - Listado de modelos del autor: https://huggingface.co/abhishekiyerlow/models
 - Directorio de modelos del autor (terceros): https://essamamdani.com/ai-models/company/abhishekiyerlow

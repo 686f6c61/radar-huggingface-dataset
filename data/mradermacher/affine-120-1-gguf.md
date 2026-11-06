@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Affine-120.1-GGUF es la colección de cuantizaciones en formato GGUF del modelo Maziko/Affine-120.1, publicada por el usuario mradermacher, especializado en la conversión de pesos de HuggingFace a llama.cpp. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribución optimizada del modelo base para su ejecución en CPU, GPU de consumo y entornos con memoria limitada mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
+Affine-120.1-GGUF es la colección de cuantizaciones en formato GGUF del modelo Maziko/Affine-120.1, publicada por el usuario mradermacher, especializado en la conversión de pesos de Hugging Face a llama.cpp. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribución optimizada del modelo base para su ejecución en CPU, GPU de consumo y entornos con memoria limitada mediante llama.cpp, Ollama u otros motores compatibles con GGUF.
 
 El modelo base cuenta con 20.914.757.184 parámetros (aproximadamente 20,9 mil millones), según los pesos en safetensors declarados en el repositorio. El nombre "120.1" del modelo hace referencia a una versión o iteración del proyecto de Maziko y no al número de parámetros. La model card original no aporta información sobre arquitectura, longitud de contexto, composición del dataset de entrenamiento ni proceso de alineación, por lo que esos datos figuran como no disponibles en esta ficha.
 
@@ -52,7 +52,7 @@ Respecto al entrenamiento, la model card del repositorio cuantizado no incluye n
 
 - Generacion de texto conversacional: el modelo esta etiquetado como "conversational", por lo que esta orientado a dialogos multi-turno.
 - Generacion de texto general en ingles: es el unico idioma declarado en los metadatos.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que indica que puede servirse a traves de infraestructura de inferencia tipo HuggingFace Endpoints/TGI.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que indica que puede servirse a traves de infraestructura de inferencia tipo Hugging Face Endpoints/TGI.
 - Ejecucion local mediante llama.cpp: todas las variantes GGUF son utilizables en motores compatibles con este formato.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling, function calling y modo thinking: no disponible (no hay documentacion al respecto en la informacion proporcionada).
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, lic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Affine-120.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Affine-120.1-GGUF
 - Modelo base: https://huggingface.co/Maziko/Affine-120.1
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Affine-120.1-GGUF
 - Preguntas frecuentes y solicitudes del cuantizador: https://huggingface.co/mradermacher/model_requests

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-YEMEN-V9 es un ajuste fino (finetune) de 16 bits subido a HuggingFace por el usuario amarsadan. Parte del modelo base petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, del que hereda la arquitectura y los pesos, y se ha entrenado con la libreria Unsloth junto con TRL de HuggingFace. El repositorio contiene 9.409.813.744 parametros (unos 9,4 mil millones) repartidos en safetensors, con un peso total de 19,3 GB, y se publica bajo licencia Apache 2.0.
+X-YEMEN-V9 es un ajuste fino (finetune) de 16 bits subido a Hugging Face por el usuario amarsadan. Parte del modelo base petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, del que hereda la arquitectura y los pesos, y se ha entrenado con la libreria Unsloth junto con TRL de Hugging Face. El repositorio contiene 9.409.813.744 parametros (unos 9,4 mil millones) repartidos en safetensors, con un peso total de 19,3 GB, y se publica bajo licencia Apache 2.0.
 
 El pipeline declarado es image-text-to-text, lo que indica que el modelo es multimodal (entrada de imagen y texto) y esta orientado a generacion conversacional. Los tags incluyen qwen3_5, text-generation-inference, transformers, unsloth y conversational, ademas de la etiqueta en para el idioma, de modo que la unica lengua declarada oficialmente es el ingles. La model card es minima: se limita a indicar el modelo base, la licencia y que el entrenamiento se hizo con Unsloth y TRL.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y hay que enmarcarla con honestidad: el reposit
 
 La informacion disponible no describe la arquitectura interna del modelo. Se sabe que es un finetune de petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, con 9,4 B de parametros, y que la model card lo etiqueta como qwen3_5. Eso sugiere una base de la familia Qwen3.x, pero no hay detalles sobre numero de capas, dimension del hidden state, tipo de atencion (completa, GQA, linear), funcion de activacion, tokenizador ni si se trata de un transformer denso o de una mezcla de expertos. Tampoco se confirma si el pipeline image-text-to-text hereda un proyector visual del modelo base o si se ha reentrenado.
 
-En cuanto al entrenamiento, la unica informacion es que se realizo con Unsloth y la libreria TRL de HuggingFace, y que el resultado se subio en FP16. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia usada, ni si hubo fases de RLHF, DPO o cualquier otra forma de alineacion. El nombre del modelo base incluye los terminos "distill" y "uncensored", lo que apunta a un proceso de destilacion y a un ajuste orientado a reducir los rechazos del modelo, pero esto no se documenta ni se cuantifica en la informacion proporcionada. No se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, cuantizacion nativa, etc.).
+En cuanto al entrenamiento, la unica informacion es que se realizo con Unsloth y la libreria TRL de Hugging Face, y que el resultado se subio en FP16. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia usada, ni si hubo fases de RLHF, DPO o cualquier otra forma de alineacion. El nombre del modelo base incluye los terminos "distill" y "uncensored", lo que apunta a un proceso de destilacion y a un ajuste orientado a reducir los rechazos del modelo, pero esto no se documenta ni se cuantifica en la informacion proporcionada. No se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, cuantizacion nativa, etc.).
 
 ## Capacidades
 
@@ -91,8 +91,8 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amarsadan/X-YEMEN-V9
+- Modelo en Hugging Face: https://huggingface.co/amarsadan/X-YEMEN-V9
 - Modelo base: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Unsloth (repositorio usado para el entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs ni demos adicionales en la informacion proporcionada.

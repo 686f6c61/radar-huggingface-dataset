@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. Cualqui
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JohnP1/d1a-e4b
+- Repositorio Hugging Face: https://huggingface.co/JohnP1/d1a-e4b
 - Checkpoint prototipo: https://huggingface.co/JohnP1/kev-gemma4-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Código D1A: https://github.com/jonpol01/d1a

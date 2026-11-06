@@ -72,7 +72,7 @@ No se dispone de modelos comparables en cuanto a rendimiento, ya que este checkp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonykuo85/coca-demo
+- Repositorio Hugging Face: https://huggingface.co/tonykuo85/coca-demo
 - Repositorio similar (pdxreyes/coca-demo): https://huggingface.co/pdxreyes/coca-demo
 - Repositorio similar (mzaytsev/coca-demo): https://huggingface.co/mzaytsev/coca-demo
 - Implementación de CoCa en torchmultimodal (referencia de arquitectura): https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/coca/coca_model.py

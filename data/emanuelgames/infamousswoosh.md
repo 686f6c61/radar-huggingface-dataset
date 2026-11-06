@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InfamousSwoosh es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. La model card asociada contiene unicamente el encabezado YAML con la licencia y no incluye ninguna descripcion funcional, arquitectura declarada, tamano de parametros, longitud de contexto ni idiomas soportados. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+InfamousSwoosh es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. La model card asociada contiene unicamente el encabezado YAML con la licencia y no incluye ninguna descripcion funcional, arquitectura declarada, tamano de parametros, longitud de contexto ni idiomas soportados. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 Por el estado actual de la informacion, no es posible determinar que problema resuelve el modelo, sobre que arquitectura se construye ni con que datos fue entrenado. El nombre del repositorio sugiere un ajuste fino de caracter personal o experimental, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descripti
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco si deriva de un modelo base preentrenado mediante ajuste fino.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco si deriva de un modelo base preentrenado mediante ajuste fino.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste por instrucciones, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o cuantizacion nativa. Toda esta seccion queda como no disponible.
 
@@ -78,7 +78,7 @@ No disponible. No se puede establecer una comparativa con alternativas sin conoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/InfamousSwoosh
+- Hugging Face: https://huggingface.co/EmanuelGames/InfamousSwoosh
 - Model card: no contiene informacion tecnica adicional mas alla de la licencia.
 - Paper, repositorio de codigo, blog o demo: no disponible.
 - La busqueda web no devolvio ningun enlace relacionado con el modelo.

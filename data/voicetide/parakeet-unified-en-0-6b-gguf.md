@@ -27,7 +27,7 @@ Otros datos relevantes: el fichero se denomina `parakeet-unified-en-0.6b-Q8_0.gg
 
 La informacion proporcionada no describe la arquitectura interna ni el proceso de entrenamiento. Lo unico documentado es que se trata de una conversion del modelo `nvidia/parakeet-unified-en-0.6b` al formato GGUF y su cuantizacion a Q8_0, sin reentrenamiento ni ajuste adicional. El autor indica explicitamente que el modelo original fue creado por NVIDIA y que los unicos cambios aplicados son el cambio de formato y la reduccion de precision.
 
-Por tanto, cualquier detalle sobre tipo de red (por ejemplo, variantes basadas en Conformer), numero de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) o innovaciones como decodificacion especulativa o atencion lineal corresponde al modelo base de NVIDIA, cuyo detalle no se incluye en la informacion disponible. Para conocer estos datos habria que consultar la model card original en HuggingFace.
+Por tanto, cualquier detalle sobre tipo de red (por ejemplo, variantes basadas en Conformer), numero de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) o innovaciones como decodificacion especulativa o atencion lineal corresponde al modelo base de NVIDIA, cuyo detalle no se incluye en la informacion disponible. Para conocer estos datos habria que consultar la model card original en Hugging Face.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ La comparativa se limita a parametros, idiomas, licencia y formato, ya que no se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voicetide/parakeet-unified-en-0.6b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/voicetide/parakeet-unified-en-0.6b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 

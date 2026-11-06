@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble: por un lado, permite ejecutar en local, si
 | Libreria | mlx |
 | Pipeline | text-generation |
 | Modelo base | huihui-ai/Huihui-Qwen3.5-27B-abliterated |
-| Fecha de publicacion | 2026-10-02 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-02 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tstepspam/Huihui-Qwen3.5-27B-abliterated-Q4-MLX | 26,9 B | MLX 4 bits (safetensors) | No disponible | Apache-2.0 | HuggingFace, solo MLX |
-| huihui-ai/Huihui-Qwen3.5-27B-abliterated (modelo base) | 26,9 B | Pesos completos (precision sin cuantizar) | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-27B (modelo original alineado) | 27 B (segun denominacion) | Pesos completos | No disponible | Ver licencia original enlazada | HuggingFace |
+| tstepspam/Huihui-Qwen3.5-27B-abliterated-Q4-MLX | 26,9 B | MLX 4 bits (safetensors) | No disponible | Apache-2.0 | Hugging Face, solo MLX |
+| huihui-ai/Huihui-Qwen3.5-27B-abliterated (modelo base) | 26,9 B | Pesos completos (precision sin cuantizar) | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-27B (modelo original alineado) | 27 B (segun denominacion) | Pesos completos | No disponible | Ver licencia original enlazada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada. La diferencia funcional principal entre ellas no es de precision en benchmarks, sino de comportamiento: el original mantiene los rechazos de seguridad, la version abliterated los elimina y la version MLX anade la cuantizacion a 4 bits y la restriccion de plataforma a Apple Silicon.
 

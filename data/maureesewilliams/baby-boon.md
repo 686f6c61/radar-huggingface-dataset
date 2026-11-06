@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maureesewilliams/baby-boon
+- Modelo en Hugging Face: https://huggingface.co/maureesewilliams/baby-boon
 - Repositorio y registro de investigación: https://github.com/MMWilliams/baby-boon
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

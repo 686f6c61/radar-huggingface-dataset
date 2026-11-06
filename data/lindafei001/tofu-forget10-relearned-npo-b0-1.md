@@ -84,7 +84,7 @@ Sin embargo, no se proporcionan metricas detalladas de estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-NPO-b0.1
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-NPO-b0.1
 - Modelo base (checkpoint unlearned): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha1_epoch10
 - Repositorio del proyecto open-unlearning (locuslab): https://github.com/locuslab/open-unlearning
 - Otros checkpoints relacionados (ejemplo): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.5_alpha5_epoch10/tree/main

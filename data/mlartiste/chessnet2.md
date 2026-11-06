@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChessNet2 es un modelo publicado en HuggingFace por el usuario MLArtiste bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente se declara la licencia. El repositorio relacionado ChessNets, también del mismo autor, presenta una estructura igualmente mínima, con un README de 21 bytes y sin archivos de pesos visibles en la vista pública.
+ChessNet2 es un modelo publicado en Hugging Face por el usuario MLArtiste bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente se declara la licencia. El repositorio relacionado ChessNets, también del mismo autor, presenta una estructura igualmente mínima, con un README de 21 bytes y sin archivos de pesos visibles en la vista pública.
 
 En el momento de redactar esta ficha, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o experimental sin adopción por parte de la comunidad. No se dispone de información sobre parámetros, contexto, capacidades o rendimiento, por lo que cualquier evaluación técnica resulta imposible con los datos disponibles. Se recomienda precaución antes de considerar este modelo para cualquier uso en producción.
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MLArtiste/ChessNet2
+- Repositorio Hugging Face: https://huggingface.co/MLArtiste/ChessNet2
 - Repositorio relacionado ChessNets: https://huggingface.co/MLArtiste/ChessNets
 - Perfil del autor en X: https://x.com/_mlartiste

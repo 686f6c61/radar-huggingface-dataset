@@ -87,7 +87,7 @@ Resultados adicionales citados en la model card: UniMER-Test (reconocimiento de 
 
 | Modelo | Parametros | Contexto | OmniDocBench v1.6 | Media VQA OCR | Licencia | Disponibilidad |
 |:--|--:|--:|--:|--:|:--|:--|
-| Xiaomi-OCR-0 | 0,8B | no disponible | 96,83 | 83,2 | Apache 2.0 | HuggingFace, ModelScope, Ollama, GGUF |
+| Xiaomi-OCR-0 | 0,8B | no disponible | 96,83 | 83,2 | Apache 2.0 | Hugging Face, ModelScope, Ollama, GGUF |
 | OvisOCR2 | 0,8B | no disponible | 96,58 | no disponible | no disponible | no disponible |
 | PaddleOCR-VL-1.6 | 0,9B | no disponible | 96,33 | no disponible | no disponible | no disponible |
 | Qwen3.5-2B | 2B | no disponible | no disponible | 80,9 | no disponible | no disponible |
@@ -107,11 +107,11 @@ Frente a OvisOCR2 y PaddleOCR-VL-1.6, de tamano practicamente identico, Xiaomi-O
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/azammd88807/Xiaomi-OCR-0
-- Modelo oficial en HuggingFace: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
+- Modelo en Hugging Face (espejo): https://huggingface.co/azammd88807/Xiaomi-OCR-0
+- Modelo oficial en Hugging Face: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
 - Modelo en ModelScope: https://www.modelscope.cn/models/SeerRay-Lab/Xiaomi-OCR-0
 - Repositorio GitHub: https://github.com/SeerRay-Lab/Xiaomi-OCR-0
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/SeerRay-Lab/Xiaomi-OCR-0
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/SeerRay-Lab/Xiaomi-OCR-0
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.36136
 - Version Ollama BF16 (experimental): https://ollama.com/longwayxu/xiaomi-ocr-0:bf16
 - GGUF de la comunidad (prithivMLmods): https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF

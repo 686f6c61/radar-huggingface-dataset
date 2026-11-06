@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelclar/classification-v2` es un prototipo de investigación publicado en HuggingFace por el usuario michaelclar, consistente en una implementación de MobileViT orientada a tareas de clasificación. El repositorio contiene una implementación propia en PyTorch (`main.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La escala declarada en la model card es "xlarge".
+`michaelclar/classification-v2` es un prototipo de investigación publicado en Hugging Face por el usuario michaelclar, consistente en una implementación de MobileViT orientada a tareas de clasificación. El repositorio contiene una implementación propia en PyTorch (`main.py`), un fichero de configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. La escala declarada en la model card es "xlarge".
 
 El punto crítico es que el propio autor indica explícitamente que el checkpoint incluido **no ha sido entrenado ni evaluado**: se trata de una inicialización válida para pruebas de humo (smoke tests), no de un modelo con pesos entrenados. No se reclama ninguna métrica de rendimiento en el repositorio, y la model card recomienda evaluar con un split etiquetado específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| michaelclar/classification-v2 | MobileViT (custom) | 16.576 (metadatos; no verificado) | no aplica | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| michaelclar/classification-v2 | MobileViT (custom) | 16.576 (metadatos; no verificado) | no aplica | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | Apple MobileViT (implementación de referencia) | MobileViT | variable por escala (XS a XL) | no aplica | publicado en paper original | según repositorio original | código y pesos de referencia |
 | MobileNetV3 | CNN | variable por variante | no aplica | benchmarks públicos en ImageNet | según implementación | amplia disponibilidad |
 | EfficientNet | CNN con scaling compuesto | variable por variante | no aplica | benchmarks públicos en ImageNet | según implementación | amplia disponibilidad |
@@ -87,11 +87,11 @@ La comparación es estructural: este repositorio no ofrece pesos entrenados ni m
 - No se han auditado sesgos, robustez ni transferencia de dominio; el autor lo declara explícitamente.
 - Riesgo de alucinación no aplicable (modelo de clasificación), pero sí riesgo de resultados sin sentido si se usa el checkpoint sin entrenar.
 - El recuento de parámetros de los metadatos (16.576) no es coherente con la escala xlarge declarada; conviene verificar la integridad del checkpoint antes de cualquier uso.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - Licencia BSD-3-Clause permite uso comercial con atribución, pero el autor advierte de revisar por separado los términos de los datos fuente si se usan datasets externos.
 - Cualquier resultado publicado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelclar/classification-v2
+- Hugging Face: https://huggingface.co/michaelclar/classification-v2
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

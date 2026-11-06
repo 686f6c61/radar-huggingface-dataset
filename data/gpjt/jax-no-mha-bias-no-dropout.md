@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos publicados. La principal diferencia con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gpjt/jax-no-mha-bias-no-dropout
+- Hugging Face: https://huggingface.co/gpjt/jax-no-mha-bias-no-dropout
 - Repositorio GitHub: https://github.com/gpjt/ddp-base-model-from-scratch
 - Blog post del autor: https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens

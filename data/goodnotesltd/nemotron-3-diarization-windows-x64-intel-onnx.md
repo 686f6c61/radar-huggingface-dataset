@@ -89,7 +89,7 @@ El resto de alternativas de diarización (por ejemplo, sistemas basados en pyann
 - La muestra es pequeña: 36 items en AMI SDM y 16 items en el holdout de headset-0. Un único item empeoró 2,50 puntos porcentuales de DER al pasar a NPU.
 - El micro DER en NPU fue ligeramente peor que el producto con fallback CPU (33,44 % frente a 33,34 %) en AMI SDM, aunque mejoró en el holdout de headset-0 (36,41 % frente a 36,85 %).
 - El modelo solo cubre diarización de audio; no genera texto, no razona y no soporta tool calling. No debe presentarse como modelo de lenguaje.
-- No se documenta el comportamiento frente a sesgos de hablante, acento, edad, género ni idioma. La ficha de HuggingFace no lista idiomas soportados.
+- No se documenta el comportamiento frente a sesgos de hablante, acento, edad, género ni idioma. La ficha de Hugging Face no lista idiomas soportados.
 - Riesgo de alucinación no aplicable en el sentido de generación de texto, pero sí existe riesgo de asignación errónea de hablantes (confusión de identidades y errores de frontera), reflejado en el DER de aproximadamente un tercio de la duración evaluada.
 - Limitación de compatibilidad: las formas de entrada son fijas, requisito de la ruta NPU de Windows ML, lo que restringe la flexibilidad de longitudes de audio sin troceado previo.
 - Licencia openmdw-1.1: se debe revisar el texto completo de la licencia para confirmar condiciones de uso comercial. La información disponible no detalla los términos.
@@ -98,7 +98,7 @@ El resto de alternativas de diarización (por ejemplo, sistemas basados en pyann
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GoodnotesLtd/nemotron-3-diarization-windows-x64-intel-onnx
+- Repositorio en Hugging Face: https://huggingface.co/GoodnotesLtd/nemotron-3-diarization-windows-x64-intel-onnx
 - Modelo upstream de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Conversión ONNX de origen: https://huggingface.co/onnx-community/Nemotron-3-Diarization-ONNX (commit `353b6f8ad2cac3580e982d7fbdf0a010786b0406`)
 - Otra conversión ONNX: https://huggingface.co/Emerald7664/Nemotron-3-Diarization-ONNX

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-kichwa-de-chibuleo es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el usuario Sanghyang00 dentro del proyecto ELARSpeech, y publicado en HuggingFace. Se trata de un ajuste fino del modelo base aadel4/omniASR-CTC-1B-v2, un sistema basado en la arquitectura Wav2Vec2 con cabeza CTC (Wav2Vec2ForCTC) de aproximadamente 1.000 millones de parametros (975.677.617 reales, segun safetensors). El modelo resuelve la transcripcion de audio a texto especificamente para el kichwa de Chibuleo, una variedad de la familia linguistica quechua hablada en Ecuador y que no cuenta con codigo ISO 639-3 asignado.
+ELARSpeech-OmniASR-1B-kichwa-de-chibuleo es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el usuario Sanghyang00 dentro del proyecto ELARSpeech, y publicado en Hugging Face. Se trata de un ajuste fino del modelo base aadel4/omniASR-CTC-1B-v2, un sistema basado en la arquitectura Wav2Vec2 con cabeza CTC (Wav2Vec2ForCTC) de aproximadamente 1.000 millones de parametros (975.677.617 reales, segun safetensors). El modelo resuelve la transcripcion de audio a texto especificamente para el kichwa de Chibuleo, una variedad de la familia linguistica quechua hablada en Ecuador y que no cuenta con codigo ISO 639-3 asignado.
 
 Su relevancia radica en el caracter de bajos recursos de esta lengua: la mayoria de los sistemas ASR comerciales no cubren variedades minoritarias del quechua, de modo que este modelo representa un esfuerzo por dotar de transcripcion automatica a una comunidad linguistica concreta. Al estar construido sobre un backbone de 1B de parametros, ofrece la capacidad del modelo base pero adaptada a un dominio fonetico y ortografico especifico.
 
-El repositorio tiene un tamano de 3,9 GB y se distribuye en formato safetensors, consumible a traves de la libreria transformers. No se declara licencia ni set de idiomas en los metadatos de HuggingFace, y el modelo no registra descargas ni valoraciones en el momento de la consulta, lo que indica que es un artefacto reciente y de difusion muy limitada.
+El repositorio tiene un tamano de 3,9 GB y se distribuye en formato safetensors, consumible a traves de la libreria transformers. No se declara licencia ni set de idiomas en los metadatos de Hugging Face, y el modelo no registra descargas ni valoraciones en el momento de la consulta, lo que indica que es un artefacto reciente y de difusion muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El repositorio tiene un tamano de 3,9 GB y se distribuye en formato safetensors,
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (modelo de audio; entrada mono a 16 kHz, sin ventana de contexto de texto declarada) |
 | Tipos de cuantizacion | no disponible (se distribuye en safetensors; el repo no lista variantes GGUF, int8 ni fp16) |
-| Idiomas soportados | kichwa de Chibuleo (segun la model card); campo de idiomas de HuggingFace: no disponible |
+| Idiomas soportados | kichwa de Chibuleo (segun la model card); campo de idiomas de Hugging Face: no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Modelo base | aadel4/omniASR-CTC-1B-v2 |
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: del orden de 4-5 GB en fp32 contando pesos y activaciones de audio; en torno a 2-3 GB en fp16; aproximadamente 1,5 GB en int8 si se convierte manualmente.
 - GPU recomendadas: cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 3070/3080, RTX 4060/4070, RTX 3090 y RTX 4090. En el entorno profesional es adecuado en A100, H100, L4 o T4, aunque para un modelo de este tamano no son necesarias.
 - Cabe en GPU de consumo: si; con 6 GB o mas de VRAM se puede ejecutar en fp16 sin problemas. En CPU es viable para transcripciones por lotes, con mayor latencia.
-- Opciones de despliegue: transformers (PyTorch) de forma nativa, tal como documenta la model card; exportacion a ONNX Runtime para inferencia optimizada; servidores de inferencia con soporte de transformers como HuggingFace Inference Endpoints (etiqueta endpoints_compatible). No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a este tipo de ASR.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa, tal como documenta la model card; exportacion a ONNX Runtime para inferencia optimizada; servidores de inferencia con soporte de transformers como Hugging Face Inference Endpoints (etiqueta endpoints_compatible). No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a este tipo de ASR.
 - Latencia y throughput estimados: no disponibles. No se aportan cifras de tiempo real (RTF) ni de muestras por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-kichwa-de-chibuleo | 975.677.617 | audio mono 16 kHz | no disponible (solo verificacion PASS) | no disponible | HuggingFace, safetensors |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B | audio mono 16 kHz | no disponible | consultar repositorio base | HuggingFace |
-| Whisper (openai/whisper-large-v3) | ~1.550M | audio 16 kHz, multilingue | ampliamente evaluado (WER publico) | MIT (variante large-v3) | HuggingFace, transformers |
-| Meta MMS (facebook/mms-1b-all) | ~965M | audio 16 kHz, mas de 1.100 lenguas | evaluado por los autores en multiples lenguas | CC-BY-NC 4.0 | HuggingFace |
+| ELARSpeech-OmniASR-1B-kichwa-de-chibuleo | 975.677.617 | audio mono 16 kHz | no disponible (solo verificacion PASS) | no disponible | Hugging Face, safetensors |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B | audio mono 16 kHz | no disponible | consultar repositorio base | Hugging Face |
+| Whisper (openai/whisper-large-v3) | ~1.550M | audio 16 kHz, multilingue | ampliamente evaluado (WER publico) | MIT (variante large-v3) | Hugging Face, transformers |
+| Meta MMS (facebook/mms-1b-all) | ~965M | audio 16 kHz, mas de 1.100 lenguas | evaluado por los autores en multiples lenguas | CC-BY-NC 4.0 | Hugging Face |
 
 La comparacion es orientativa: no se dispone de datos de rendimiento de este modelo frente a alternativas, y los datos del modelo base tampoco se detallan en la informacion proporcionada. Conviene verificar el rendimiento real sobre el corpus objetivo antes de adoptarlo en produccion.
 
@@ -81,7 +81,7 @@ La comparacion es orientativa: no se dispone de datos de rendimiento de este mod
 - La propia model card advierte de que la precision puede variar segun las condiciones de grabacion, la poblacion de hablantes, la ortografia y el dominio.
 - Es obligatorio remuestrear la entrada a 16 kHz y usar audio mono; el incumplimiento de este requisito degrada o invalida la inferencia.
 - Riesgo de alucinacion/asignacion erronea de caracteres inherente a la decodificacion CTC, especialmente en audio con ruido, solapamiento de voces o terminologia fuera del dominio de entrenamiento.
-- No se declara licencia en los metadatos de HuggingFace: el uso comercial queda indeterminado hasta que se consulte la licencia del modelo base y la documentacion del proyecto ELARSpeech.
+- No se declara licencia en los metadatos de Hugging Face: el uso comercial queda indeterminado hasta que se consulte la licencia del modelo base y la documentacion del proyecto ELARSpeech.
 - El modelo base tiene sus propios terminos y condiciones de cita; hay que revisarlos antes de redistribuir o desplegar.
 - Ausencia de benchmarks publicos: no hay cifras de WER ni CER que permitan estimar el rendimiento en produccion.
 - Ausencia de metricas de sesgo: no se documenta la composicion demografica de los hablantes de entrenamiento ni posibles sesgos por acento, edad o genero.
@@ -89,6 +89,6 @@ La comparacion es orientativa: no se dispone de datos de rendimiento de este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-kichwa-de-chibuleo
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-kichwa-de-chibuleo
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Perfil del autor: https://huggingface.co/Sanghyang00

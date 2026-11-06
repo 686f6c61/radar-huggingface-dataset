@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-fiven-phi-1_5-raft` no es un modelo fundacional, sino un adaptador LoRA (PEFT) entrenado sobre `microsoft/phi-1_5` como parte de un banco de pruebas interno de modelos de lenguaje pequenos (SLM). El identificador resume su proposito: benchmark de SLM, conjunto de datos `fiven`, estrategia `raft` y arquitectura base Phi-1.5. El autor es la organizacion `praiselab-picuslab`, y el artefacto se publica con acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo.
+`praiselab-picuslab/benchmark-slm-fiven-phi-1_5-raft` no es un modelo fundacional, sino un adaptador LoRA (PEFT) entrenado sobre `microsoft/phi-1_5` como parte de un banco de pruebas interno de modelos de lenguaje pequenos (SLM). El identificador resume su proposito: benchmark de SLM, conjunto de datos `fiven`, estrategia `raft` y arquitectura base Phi-1.5. El autor es la organizacion `praiselab-picuslab`, y el artefacto se publica con acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia no esta en las capacidades del adaptador en si, sino en su valor como pieza reproducible de una comparativa: permite medir como responde un mismo modelo base (Phi-1.5, 1.3B parametros) ante una estrategia de ajuste concreta sobre un dataset concreto. Al publicarse unicamente los pesos del adaptador (no el modelo fusionado), el coste de almacenamiento y distribucion es minimo, aunque exige reconstruir el pipeline completo para poder usarlo.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Phi-1.5) | 1,3B (base) + LoRA | 2048 (base) | no disponible | Gated en HuggingFace, 0 descargas | no disponible |
+| Este adaptador (sobre Phi-1.5) | 1,3B (base) + LoRA | 2048 (base) | no disponible | Gated en Hugging Face, 0 descargas | no disponible |
 | microsoft/phi-1_5 (base) | 1,3B | 2048 | MIT (segun ficha del modelo base) | Publico | no evaluado aqui; referencia del benchmark |
 | Qwen2.5-1.5B | 1,5B | 32 768 | Apache 2.0 | Publico | no comparado en la informacion disponible |
 | TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Publico | no comparado en la informacion disponible |
@@ -74,7 +74,7 @@ La comparacion se limita a parametros, contexto y licencia: no existen resultado
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace; no es descargable de forma anonima ni automatizable sin token.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face; no es descargable de forma anonima ni automatizable sin token.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial; hay que contactar con el autor o consultar las condiciones del gate. La licencia del modelo base (MIT para Phi-1.5) no cubre automaticamente el adaptador.
 - Artefacto de benchmark, no de produccion: no hay ficha de modelo, informe tecnico ni evaluacion; no se recomienda su uso directo en sistemas en produccion.
 - Riesgo de alucinacion: alto, inherente a un modelo base de 1,3B parametros con entrenamiento centrado en datos sinteticos y de "libro de texto".
@@ -88,6 +88,6 @@ La comparacion se limita a parametros, contexto y licencia: no existen resultado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-raft
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-raft
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este adaptador en la busqueda web disponible.

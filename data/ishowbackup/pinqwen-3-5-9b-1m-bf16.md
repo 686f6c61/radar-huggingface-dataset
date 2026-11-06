@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GGUF Q4_K_M: estimado en 6-7 GB de VRAM, cabe en GPUs de consumo con 8 GB (RTX 3060, RTX 4060).
 - GGUF Q8: estimado en 10-11 GB de VRAM, recomendado para GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080).
 - NVFP4: orientado a GPUs Blackwell (B200, RTX 50 series), con cuantizacion de 4 bits optimizada.
-- Despliegue: transformers (HuggingFace) para BF16, llama.cpp u Ollama para GGUF, vLLM o TGI para serving en produccion.
+- Despliegue: transformers (Hugging Face) para BF16, llama.cpp u Ollama para GGUF, vLLM o TGI para serving en produccion.
 - Latencia y throughput: no disponibles. La cabeza MTP de decodificacion especulativa deberia mejorar la velocidad de generacion en entornos compatibles, pero no hay mediciones publicadas.
 
 Nota: los requisitos de VRAM para GGUF son estimaciones basadas en el tamano estandar de modelos de 9B; los valores exactos dependen de la cuantizacion concreta y de la longitud de contexto utilizada.
@@ -86,7 +86,7 @@ PINQWEN-3.5-9B-1M se diferencia de su base (Qwen 3.5 9B) principalmente por la v
 
 ## Enlaces
 
-- Repositorio HuggingFace (BF16): https://huggingface.co/Ishowbackup/PINQWEN-3.5-9B-1M-BF16
+- Repositorio Hugging Face (BF16): https://huggingface.co/Ishowbackup/PINQWEN-3.5-9B-1M-BF16
 - GGUF (mradermacher): https://huggingface.co/mradermacher/PINQWEN-3.5-9B-1M-BF16-GGUF
 - GGUF con imatrix (mradermacher): https://huggingface.co/mradermacher/PINQWEN-3.5-9B-1M-BF16-i1-GGUF
 - Qwen 3.5 9B en Ollama: https://ollama.com/library/qwen3.5:9b

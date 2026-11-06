@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SoSolaris/xvla-b0910-1749-p01_prompt` | 879.687.256 (~880 M) | Política VLA X-VLA ajustada para `so100_follower` | No aplica | apache-2.0 | HuggingFace |
-| `lerobot/xvla-base` | No disponible en la información proporcionada | Modelo base X-VLA preentrenado | No aplica | No disponible en la información proporcionada | HuggingFace |
+| `SoSolaris/xvla-b0910-1749-p01_prompt` | 879.687.256 (~880 M) | Política VLA X-VLA ajustada para `so100_follower` | No aplica | apache-2.0 | Hugging Face |
+| `lerobot/xvla-base` | No disponible en la información proporcionada | Modelo base X-VLA preentrenado | No aplica | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos comparativos de otros modelos de la misma categoría (por ejemplo, otras políticas VLA de LeRobot) en la información proporcionada, por lo que no se incluyen cifras de parámetros, contexto ni rendimiento de terceros.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de otros modelos de la misma categoría (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoSolaris/xvla-b0910-1749-p01_prompt
+- Modelo en Hugging Face: https://huggingface.co/SoSolaris/xvla-b0910-1749-p01_prompt
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SoSolaris/socks_20_diversified
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SoSolaris/socks_20_diversified
@@ -104,4 +104,4 @@ No se dispone de datos comparativos de otros modelos de la misma categoría (por
 - Documentación de entrenamiento por imitación: https://huggingface.co/docs/lerobot/en/il_robots
 - Guía de hardware: https://huggingface.co/docs/lerobot/main/en/hardware_guide
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente herramientas de comprobación de DNS), por lo que no se añaden enlaces adicionales más allá de los derivados de la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente herramientas de comprobación de DNS), por lo que no se añaden enlaces adicionales más allá de los derivados de la información de Hugging Face.

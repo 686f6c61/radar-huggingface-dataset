@@ -29,7 +29,7 @@ No se ha proporcionado información sobre la arquitectura interna (tipo de trans
 
 - Manipulación robótica: el modelo está entrenado para la tarea de apilar bloques (stack blocks), como indica el nombre del repositorio.
 - Aprendizaje por imitación: la política se genera a partir de demostraciones, siguiendo el paradigma de LeRobot.
-- Integración con LeRobot: se puede cargar mediante `PI05Policy.from_pretrained()` usando el checkpoint descargado desde HuggingFace.
+- Integración con LeRobot: se puede cargar mediante `PI05Policy.from_pretrained()` usando el checkpoint descargado desde Hugging Face.
 - Despliegue directo: el repositorio incluye el payload de `pretrained_model/` con todos los archivos necesarios para la inferencia.
 - No se han documentado capacidades de generación de texto, razonamiento, código, matemáticas, visión o tool calling, ya que se trata de un modelo de política robótica.
 
@@ -76,6 +76,6 @@ No se dispone de datos de parámetros, contexto, rendimiento o licencia para com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-stack-rl3-K6L-v0.0
+- Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-stack-rl3-K6L-v0.0
 - Modelo similar: https://huggingface.co/JayCao99/pi05-rm65b-stack-v0.0
 - Modelo similar: https://huggingface.co/JayCao99/pi05-rm65b-stack-p16-v0.0

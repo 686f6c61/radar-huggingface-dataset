@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`iconically-mine/anlp-a2-dense` es un transformer denso de pequeno tamano (12,93 millones de parametros) publicado en HuggingFace por el usuario `iconically-mine`. Segun la model card, se trata de la entrega de la tarea 1 de la asignatura ANLP (Advanced Natural Language Processing), con la variante `dense` del bloque feed-forward. El modelo se entreno desde cero sobre 30 millones de tokens y alcanzo una perdida de validacion final de 3,7909.
+`iconically-mine/anlp-a2-dense` es un transformer denso de pequeno tamano (12,93 millones de parametros) publicado en Hugging Face por el usuario `iconically-mine`. Segun la model card, se trata de la entrega de la tarea 1 de la asignatura ANLP (Advanced Natural Language Processing), con la variante `dense` del bloque feed-forward. El modelo se entreno desde cero sobre 30 millones de tokens y alcanzo una perdida de validacion final de 3,7909.
 
 Arquitectonicamente es un transformer decoder-only convencional: 6 capas, `d_model=256`, 8 cabezas de atencion y una capa feed-forward densa con dimension oculta de 1024. No hay indicios de mezcla de expertos (MoE), atencion lineal ni mecanismos hibridos. Con 12,93 M de parametros y 30 M de tokens de entrenamiento, el modelo se situa muy por debajo de los modelos de produccion actuales, y su relevancia es sobre todo pedagogica o experimental.
 
-El repositorio tiene un tamano de 0,1 GB, cero descargas y cero valoraciones en el momento de la consulta. No se declara licencia, idiomas soportados ni pipeline de HuggingFace, y los pesos se distribuyen como un checkpoint de PyTorch (`dense_final.pt`), no en safetensors ni GGUF.
+El repositorio tiene un tamano de 0,1 GB, cero descargas y cero valoraciones en el momento de la consulta. No se declara licencia, idiomas soportados ni pipeline de Hugging Face, y los pesos se distribuyen como un checkpoint de PyTorch (`dense_final.pt`), no en safetensors ni GGUF.
 
 ## Especificaciones tecnicas
 
@@ -42,9 +42,9 @@ En cuanto a los datos, la unica informacion publicada es el volumen total: 30 mi
 - Generacion de texto autoregresiva basica, limitada por el tamano del modelo (12,93 M de parametros) y por el corpus de entrenamiento (30 M de tokens). Es previsible una coherencia muy corta y un vocabulario efectivo reducido.
 - No hay evidencia publicada de soporte de *tool calling* ni de *function calling*.
 - No hay evidencia publicada de capacidades de agente, razonamiento multi-paso ni modos de pensamiento explicito.
-- No hay evidencia publicada de capacidades multilingues; no se declaran idiomas en la ficha de HuggingFace.
+- No hay evidencia publicada de capacidades multilingues; no se declaran idiomas en la ficha de Hugging Face.
 - No hay evidencia publicada de capacidades de vision, audio, codigo o matematicas estructuradas.
-- El modelo no declara pipeline de HuggingFace, por lo que no se puede invocar mediante `transformers.pipeline` sin escribir un envoltorio propio.
+- El modelo no declara pipeline de Hugging Face, por lo que no se puede invocar mediante `transformers.pipeline` sin escribir un envoltorio propio.
 
 ## Casos de uso
 
@@ -75,7 +75,7 @@ La comparativa se establece con modelos abiertos de tamano reducido ampliamente 
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iconically-mine/anlp-a2-dense | 12,93 M | no disponible | 30,00 M | no disponible | Pesos `dense_final.pt` en HuggingFace |
+| iconically-mine/anlp-a2-dense | 12,93 M | no disponible | 30,00 M | no disponible | Pesos `dense_final.pt` en Hugging Face |
 | Pythia-14M | ~14 M | 2048 | 300 B (The Pile) | Apache-2.0 | safetensors, integrado en `transformers` |
 | GPT-2 small | 124 M | 1024 | ~40 GB de WebText | MIT modificada | safetensors, integrado en `transformers` |
 | SmolLM-135M | 135 M | 2048 | 600 B (SmolLM-Corpus) | Apache-2.0 | safetensors, GGUF, integrado en `transformers` |
@@ -87,7 +87,7 @@ La diferencia principal no es el numero de parametros, sino el volumen de datos:
 - Sesgos conocidos: no disponibles, pero cualquier modelo entrenado sobre un corpus no documentado de 30 M de tokens heredara los sesgos de esa fuente, que se desconoce por completo.
 - Riesgo de alucinacion: muy alto. Con 12,93 M de parametros y 30 M de tokens, el modelo no tiene capacidad suficiente para almacenar conocimiento factual fiable.
 - Limitaciones de contexto e idioma: no se declara ni la longitud de contexto ni los idiomas soportados. El bajo presupuesto de entrenamiento hace poco probable un multilingüismo funcional.
-- Restricciones de licencia: la ficha de HuggingFace no declara licencia. Sin una licencia explicita, no hay autorizacion clara para uso comercial y conviene contactar con el autor antes de cualquier uso fuera del ambito academico.
+- Restricciones de licencia: la ficha de Hugging Face no declara licencia. Sin una licencia explicita, no hay autorizacion clara para uso comercial y conviene contactar con el autor antes de cualquier uso fuera del ambito academico.
 - Formato de pesos: `dense_final.pt` requiere `torch.load`, con el riesgo de seguridad asociado a la deserializacion de *pickle*. No hay versiones en safetensors, GGUF o cuantizadas.
 - Codigo dependiente: para cargar el modelo hace falta el codigo de `src/part1/model/transformer.py`, que no se enlaza en la informacion disponible.
 - Trazabilidad: cero descargas y cero valoraciones, sin paper, sin blog y sin evaluaciones independientes. No es un modelo apto para produccion.
@@ -95,7 +95,7 @@ La diferencia principal no es el numero de parametros, sino el volumen de datos:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iconically-mine/anlp-a2-dense
+- Hugging Face: https://huggingface.co/iconically-mine/anlp-a2-dense
 - Codigo del modelo: no disponible en la informacion proporcionada (la model card menciona `src/part1/model/transformer.py` sin enlace)
 - Paper: no disponible
 - Blog o demo: no disponible

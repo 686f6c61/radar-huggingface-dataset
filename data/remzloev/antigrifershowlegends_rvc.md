@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AntiGriferShowLegends_RVC es un modelo publicado en HuggingFace por el usuario remzloev bajo licencia openrail. Por la nomenclatura del identificador ("RVC") y la ausencia de pipeline declarado, todo apunta a un modelo de conversion de voz basado en Retrieval-based Voice Conversion (RVC), una tecnica de clonacion y transformacion de voz que entrena un modelo acustico sobre un conjunto de audios de referencia para mapear la identidad vocal de un hablante origen a un hablante destino. El sufijo "AntiGriferShowLegends" sugiere un uso orientado a un contenido o comunidad concreta, presumiblemente un personaje o conjunto de voces de un show o stream.
+AntiGriferShowLegends_RVC es un modelo publicado en Hugging Face por el usuario remzloev bajo licencia openrail. Por la nomenclatura del identificador ("RVC") y la ausencia de pipeline declarado, todo apunta a un modelo de conversion de voz basado en Retrieval-based Voice Conversion (RVC), una tecnica de clonacion y transformacion de voz que entrena un modelo acustico sobre un conjunto de audios de referencia para mapear la identidad vocal de un hablante origen a un hablante destino. El sufijo "AntiGriferShowLegends" sugiere un uso orientado a un contenido o comunidad concreta, presumiblemente un personaje o conjunto de voces de un show o stream.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia openrail y no incluye descripcion, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de un artefacto recien creado o de circulacion muy limitada, sin validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de informacion tecnica verificable (arquitectura, tamano,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El identificador incluye la sigla "RVC", asociada habitualmente a Retrieval-based Voice Conversion, una familia de sistemas que combinan un extractor de caracteristicas (tipicamente HuBERT o ContentVec) con un decoder generativo y un indice de retrieval de embeddings de voz para preservar el timbre del hablante objetivo. No obstante, esta correspondencia es una hipotesis basada en el nombre y no esta confirmada por el autor.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El identificador incluye la sigla "RVC", asociada habitualmente a Retrieval-based Voice Conversion, una familia de sistemas que combinan un extractor de caracteristicas (tipicamente HuBERT o ContentVec) con un decoder generativo y un indice de retrieval de embeddings de voz para preservar el timbre del hablante objetivo. No obstante, esta correspondencia es una hipotesis basada en el nombre y no esta confirmada por el autor.
 
 Tampoco se dispone de datos sobre el conjunto de entrenamiento: numero de horas de audio, composicion del dataset, hablantes de origen y destino, tecnicas de aumentacion, ni si se aplicaron procesos de fine-tuning especificos. No hay informacion sobre hiperparametros, funcion de perdida ni procedimiento de validacion.
 
@@ -76,4 +76,4 @@ No disponible. No se dispone de informacion suficiente sobre el modelo como para
 
 ## Enlaces
 
-- [HuggingFace: remzloev/AntiGriferShowLegends_RVC](https://huggingface.co/remzloev/AntiGriferShowLegends_RVC)
+- [Hugging Face: remzloev/AntiGriferShowLegends_RVC](https://huggingface.co/remzloev/AntiGriferShowLegends_RVC)

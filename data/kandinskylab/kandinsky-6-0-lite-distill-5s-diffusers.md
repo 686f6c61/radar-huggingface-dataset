@@ -93,10 +93,10 @@ Comparativa con alternativas externas: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2610.05608
 - Pagina de modelos de video de KandinskyLab: https://kandinskylab.ai/models/video/
 - Documentacion del pipeline en Diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
 - Documentacion en vLLM Omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
 - Nodo de ComfyUI: https://registry.comfy.org/nodes/kandinsky6
-- Demo (Kandinsky 6.0 Pro, espacio de HuggingFace): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
+- Demo (Kandinsky 6.0 Pro, espacio de Hugging Face): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bluefirethree/curiosity-features` es un repositorio de pesos publicado en HuggingFace por el usuario bluefirethree. La informacion disponible es minima: se desconoce la tarea para la que fue entrenado, la arquitectura concreta, el numero de parametros y el dataset utilizado. El unico contenido de la model card es la declaracion de licencia Apache 2.0, sin descripcion, sin ejemplos de uso y sin resultados de evaluacion.
+`bluefirethree/curiosity-features` es un repositorio de pesos publicado en Hugging Face por el usuario bluefirethree. La informacion disponible es minima: se desconoce la tarea para la que fue entrenado, la arquitectura concreta, el numero de parametros y el dataset utilizado. El unico contenido de la model card es la declaracion de licencia Apache 2.0, sin descripcion, sin ejemplos de uso y sin resultados de evaluacion.
 
 El repositorio ocupa 0,1 GB y esta etiquetado con `onnx`, lo que indica que los pesos se distribuyen en formato ONNX (Open Neural Network Exchange) en lugar de safetensors o GGUF. No hay pipeline declarado, no se especifican idiomas soportados y el modelo acumula 0 descargas y 1 like desde su creacion el 9 de octubre de 2026.
 
@@ -71,5 +71,5 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bluefirethree/curiosity-features
+- Repositorio en Hugging Face: https://huggingface.co/bluefirethree/curiosity-features
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

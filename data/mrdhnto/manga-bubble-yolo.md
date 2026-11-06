@@ -72,8 +72,8 @@ Velocidad de inferencia medida en una Nvidia Tesla T4: aproximadamente 11,0 ms p
 
 | Modelo | Arquitectura | Parametros | Clase | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Manga-Bubble-YOLO (YOLO26n) | YOLO26 | 2,4 M | Text | apache-2.0 | HuggingFace (repo Mrdhnto) |
-| Manga-Bubble-YOLO (YOLO26s) | YOLO26 | 9,5 M | Text | apache-2.0 | HuggingFace (repo Mrdhnto) |
+| Manga-Bubble-YOLO (YOLO26n) | YOLO26 | 2,4 M | Text | apache-2.0 | Hugging Face (repo Mrdhnto) |
+| Manga-Bubble-YOLO (YOLO26s) | YOLO26 | 9,5 M | Text | apache-2.0 | Hugging Face (repo Mrdhnto) |
 | ebhon/YOLO-manga-bubble-detector | YOLOv8 | no disponible | globos, cajas de narracion, elementos de UI y texto | no disponible | GitHub |
 | Manga Bubble v3 (MAANA, Roboflow) | no disponible | no disponible | globos de manga | no disponible | Roboflow Universe (2.399 imagenes anotadas) |
 
@@ -93,7 +93,7 @@ Las cifras de mAP del modelo de la ficha corresponden a la clase unica "Text", m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mrdhnto/Manga-Bubble-YOLO
+- Modelo en Hugging Face: https://huggingface.co/Mrdhnto/Manga-Bubble-YOLO
 - Perfil del autor: https://huggingface.co/Mrdhnto
 - Copia o espejo del repositorio: https://huggingface.co/Kiuyha/Manga-Bubble-YOLO
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26

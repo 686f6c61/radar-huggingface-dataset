@@ -84,7 +84,7 @@ No se dispone de comparativas con otros modelos de la misma categoria (VLA para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang/pi05_mahjong_v1_reach07_v0faces_vision
+- Modelo en Hugging Face: https://huggingface.co/tc-huang/pi05_mahjong_v1_reach07_v0faces_vision
 - Modelo base (predecesor): https://huggingface.co/tc-huang/pi05_mahjong_v1_reach07_v0faces
 - Dataset de entrenamiento: https://huggingface.co/datasets/tc-huang/mahjong_v1_reach07_v0_1k
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

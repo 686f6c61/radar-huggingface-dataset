@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOX-CoreAI es la conversión a Apple Core AI (formato `.aimodel`) del detector de objetos YOLOX-S, desarrollado originalmente por Megvii (Megvii-BaseDetection/YOLOX). El modelo está publicado en HuggingFace por el usuario `iosafat` y forma parte de un zoológico de modelos on-device para el ecosistema Apple. Resuelve el problema de detección de objetos en tiempo real en dispositivos Mac, iPhone y iPad, ejecutándose como un grafo estático en la GPU de Apple o en el Neural Engine, sin necesidad de servidores externos.
+YOLOX-CoreAI es la conversión a Apple Core AI (formato `.aimodel`) del detector de objetos YOLOX-S, desarrollado originalmente por Megvii (Megvii-BaseDetection/YOLOX). El modelo está publicado en Hugging Face por el usuario `iosafat` y forma parte de un zoológico de modelos on-device para el ecosistema Apple. Resuelve el problema de detección de objetos en tiempo real en dispositivos Mac, iPhone y iPad, ejecutándose como un grafo estático en la GPU de Apple o en el Neural Engine, sin necesidad de servidores externos.
 
 Se trata de un detector denso de una sola etapa (single-stage) y sin anclas (anchor-free), con 8,97 millones de parámetros y una entrada fija de 640x640 píxeles. Es la contraparte densa de RF-DETR-CoreAI: mientras que la familia DETR no necesita supresión de no máximos (NMS), YOLOX sigue el esquema clásico `score = obj · cls` más NMS por clase. Su relevancia radica en ofrecer un detector ligero, con paridad numérica exacta respecto al modelo PyTorch original (cosine similarity 1.000000, IoU 1.000) y una latencia medida de 4,80 ms en GPU M4 Max.
 
@@ -14,7 +14,7 @@ Se trata de un detector denso de una sola etapa (single-stage) y sin anclas (anc
 | Parámetros totales | 8,97 millones |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No aplica (modelo de visión) |
-| Tipos de cuantización | FP32 (según README); el tag de HuggingFace indica "quantized" sin más detalle |
+| Tipos de cuantización | FP32 (según README); el tag de Hugging Face indica "quantized" sin más detalle |
 | Idiomas soportados | No aplica (modelo de visión) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | `.aimodel` (Apple Core AI) |
@@ -80,13 +80,13 @@ La comparativa cuantitativa con RF-DETR-CoreAI no está disponible en los datos 
 - Entrada fija de 640x640 con letterbox; las imágenes con otras relaciones de aspecto requieren preprocesado.
 - El post-proceso (NMS por clase) se ejecuta en el host, lo que puede ser un cuello de botella en sistemas con muchas detecciones.
 - Dependencia del ecosistema Apple (Core AI); el modelo no es portable a otros frameworks como TensorFlow o PyTorch sin reconversión.
-- El tag de HuggingFace indica "quantized", pero el README especifica pesos FP32; existe una discrepancia potencial que conviene verificar antes de usar en producción.
+- El tag de Hugging Face indica "quantized", pero el README especifica pesos FP32; existe una discrepancia potencial que conviene verificar antes de usar en producción.
 - Riesgo de falsos positivos o detecciones erróneas (alucinaciones visuales), especialmente en escenarios fuera de la distribución de COCO.
 - Sesgos no documentados; el entrenamiento en COCO puede reflejar sesgos de datos en clases y contextos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iosafat/YOLOX-CoreAI
+- Hugging Face: https://huggingface.co/iosafat/YOLOX-CoreAI
 - Repositorio YOLOX original: https://github.com/Megvii-BaseDetection/YOLOX
 - Core AI Model Zoo: https://github.com/john-rocky/coreai-model-zoo
 - Model card de YOLOX en el zoológico: https://github.com/john-rocky/coreai-model-zoo/blob/main/zoo/yolox.md

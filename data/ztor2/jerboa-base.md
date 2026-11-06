@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jerboa es un modelo de lenguaje causal ultraligero desarrollado por el usuario ztor2, publicado en HuggingFace bajo el identificador `ztor2/jerboa-base`. Con 221.430.400 parámetros reales confirmados en los pesos safetensors, se posiciona en la franja de modelos de menos de 250 millones de parámetros, pensados para ejecución local en dispositivos con recursos limitados. El autor lo describe como un proyecto en desarrollo activo cuyo objetivo declarado es ofrecer un modelo de lenguaje y multimodal de bajo coste computacional optimizado específicamente para Apple Silicon (MPS/Metal) y despliegues en el borde (edge).
+Jerboa es un modelo de lenguaje causal ultraligero desarrollado por el usuario ztor2, publicado en Hugging Face bajo el identificador `ztor2/jerboa-base`. Con 221.430.400 parámetros reales confirmados en los pesos safetensors, se posiciona en la franja de modelos de menos de 250 millones de parámetros, pensados para ejecución local en dispositivos con recursos limitados. El autor lo describe como un proyecto en desarrollo activo cuyo objetivo declarado es ofrecer un modelo de lenguaje y multimodal de bajo coste computacional optimizado específicamente para Apple Silicon (MPS/Metal) y despliegues en el borde (edge).
 
 La arquitectura emplea un diseño "Deep & Thin" de 28 capas con una dimensión de modelo de 768 y una dimensión de feed-forward de 2048 con activación SwiGLU. Incorpora atención con consultas agrupadas (GQA) con 12 cabezas de consulta y 4 de clave/valor, normalización QK-Norm y atención de ventana deslizante intercalada (ventana local de 2048 tokens, con capas de atención global cada 4 capas). El vocabulario es de 49.152 tokens BPE y usa RoPE con theta de 500.000.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| Jerboa base (ztor2) | 221,4 M | no especificado (SWA 2048 + globales cada 4 capas) | Apache 2.0 | safetensors en HuggingFace | no disponible |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | publicado por el autor |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | publicado por el autor |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | publicado por el autor |
+| Jerboa base (ztor2) | 221,4 M | no especificado (SWA 2048 + globales cada 4 capas) | Apache 2.0 | safetensors en Hugging Face | no disponible |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
 
 La comparacion se limita a parametros, contexto y licencia porque no hay resultados de benchmarks publicados para Jerboa. En terminos de ecosistema, Jerboa parte con desventaja frente a alternativas como SmolLM2 o Qwen2.5 en disponibilidad de cuantizaciones GGUF y en documentacion de rendimiento.
 
@@ -88,5 +88,5 @@ La comparacion se limita a parametros, contexto y licencia porque no hay resulta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ztor2/jerboa-base
+- Hugging Face: https://huggingface.co/ztor2/jerboa-base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados; las referencias devueltas corresponden a contenido no relacionado con el modelo.

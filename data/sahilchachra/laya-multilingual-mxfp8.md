@@ -73,10 +73,10 @@ Verificacion del port sin cuantizar: diferencia absoluta maxima 0,045 y media 0,
 
 | Modelo | Parametros | Contexto | Formato/plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya-Multilingual-MXFP8 (este) | ~307M (encoder) | 1024 | MLX / safetensors | no disponible | HuggingFace |
-| convaiinnovations/laya (original) | ~322M (encoder + cabeza ~15M) | 1024 | torch | no disponible | HuggingFace |
-| mmBERT-base / ModernBERT-base | 322M / 149M | 1024 / 8192 | safetensors (transformers) | no disponible / Apache-2.0 | HuggingFace |
-| Encoders multilingues tipo XLM-R / mE5 | ~278M | 512 | safetensors (transformers) | MIT / Apache-2.0 | HuggingFace |
+| Laya-Multilingual-MXFP8 (este) | ~307M (encoder) | 1024 | MLX / safetensors | no disponible | Hugging Face |
+| convaiinnovations/laya (original) | ~322M (encoder + cabeza ~15M) | 1024 | torch | no disponible | Hugging Face |
+| mmBERT-base / ModernBERT-base | 322M / 149M | 1024 / 8192 | safetensors (transformers) | no disponible / Apache-2.0 | Hugging Face |
+| Encoders multilingues tipo XLM-R / mE5 | ~278M | 512 | safetensors (transformers) | MIT / Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; los valores de parametros y contexto de las alternativas son de referencia general y pueden variar segun la version concreta.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Laya (sitio oficial): https://laya.convaiinnovations.com/
 - Variantes del mismo autor: https://huggingface.co/sahilchachra/Laya-English-MXFP4 , https://huggingface.co/sahilchachra/Laya-English-MXFP8 , https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4 , https://huggingface.co/sahilchachra/Laya-Typed-Decisions-MXFP4 , https://huggingface.co/sahilchachra/Laya-Typed-Decisions-MXFP8

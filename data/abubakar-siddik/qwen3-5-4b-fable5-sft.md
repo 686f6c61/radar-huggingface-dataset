@@ -6,7 +6,7 @@ Qwen3.5-4B-fable5-sft es un ajuste fino supervisado (SFT) de 4.205 millones de p
 
 Su relevancia esta en la combinacion de tres factores: un tamano reducido (cabe en una sola GPU de 16 GB en bf16), una licencia Apache-2.0 que permite uso comercial sin restricciones, y un rendimiento matematico y de razonamiento notable para su categoria, con un 80,5% en GSM8K y un 53,2% en MMLU-Pro. Ademas, el 97,5% de sus turnos de agente en evaluaciones sobre sesiones no vistas producen un bloque de herramienta valido y parseable, lo que lo hace apto para pipelines de agentes.
 
-El modelo esta entrenado en ingles y distribuido en safetensors via HuggingFace con la libreria transformers. La longitud de contexto no se especifica en la model card, aunque los ejemplos de razonamiento incluyen trazos de mas de 16.000 caracteres.
+El modelo esta entrenado en ingles y distribuido en safetensors via Hugging Face con la libreria transformers. La longitud de contexto no se especifica en la model card, aunque los ejemplos de razonamiento incluyen trazos de mas de 16.000 caracteres.
 
 ## Especificaciones tecnicas
 
@@ -93,8 +93,8 @@ Comparativa orientativa con modelos de tamano y proposito similares. Los datos d
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-fable5-sft | 4,2 B | no disponible | 80,5% (5-shot, muestra limitada) | Apache-2.0 | safetensors en HuggingFace |
-| Qwen3.5-4B-Base (base) | 4,2 B | no disponible | no disponible (no evaluado) | Apache-2.0 | safetensors en HuggingFace |
+| Qwen3.5-4B-fable5-sft | 4,2 B | no disponible | 80,5% (5-shot, muestra limitada) | Apache-2.0 | safetensors en Hugging Face |
+| Qwen3.5-4B-Base (base) | 4,2 B | no disponible | no disponible (no evaluado) | Apache-2.0 | safetensors en Hugging Face |
 | Qwen2.5-3B-Instruct | 3,1 B | 32.768 tokens | 79,1% (oficial Qwen) | Qwen (uso comercial permitido con condiciones) | safetensors, GGUF comunitarios |
 | Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | 77,7% (oficial Meta) | Llama 3.2 Community | safetensors, GGUF comunitarios |
 
@@ -114,7 +114,7 @@ La ventaja diferencial de este modelo frente a las alternativas generales no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abubakar-siddik/Qwen3.5-4B-fable5-sft
+- Modelo en Hugging Face: https://huggingface.co/abubakar-siddik/Qwen3.5-4B-fable5-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/armand0e/claude-fable-5-claude-code
 - Harness de evaluacion usado por el autor: https://github.com/EleutherAI/lm-evaluation-harness

@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roboseasylabs/red_cube_yolo
+- Modelo en Hugging Face: https://huggingface.co/roboseasylabs/red_cube_yolo
 - Dataset en Roboflow Universe: https://universe.roboflow.com/s-workspace-7c6k7/red_cube-rjoad
 - Repositorio de pipeline de entrenamiento: https://github.com/roboseasy/YOLO

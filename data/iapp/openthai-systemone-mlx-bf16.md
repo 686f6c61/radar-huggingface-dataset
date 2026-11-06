@@ -128,7 +128,7 @@ La comparación más sólida es contra el propio modelo base: la conversión a M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-bf16
 - Modelo base (v0.3, datos de entrenamiento y tablas completas de benchmarks): https://huggingface.co/iapp/OpenThai-SystemOne
 - Librería de inferencia mlx-lm: https://github.com/ml-explore/mlx-lm
 - Nota sobre la búsqueda web: las búsquedas realizadas devolvieron únicamente resultados de la International Association of Privacy Professionals (IAPP), sin relación con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

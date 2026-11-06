@@ -73,9 +73,9 @@ Ambos modelos persas en CT2 INT8 son conversiones del mismo modelo base y presen
 
 ## Enlaces
 
-- [HuggingFace: hamedkhaledi/whisper-large-v3-persian-ct2-int8](https://huggingface.co/hamedkhaledi/whisper-large-v3-persian-ct2-int8)
-- [HuggingFace: openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
-- [HuggingFace: AmirMohseni/whisper-large-v3-persian-ct2-int8](https://huggingface.co/AmirMohseni/whisper-large-v3-persian-ct2-int8)
+- [Hugging Face: hamedkhaledi/whisper-large-v3-persian-ct2-int8](https://huggingface.co/hamedkhaledi/whisper-large-v3-persian-ct2-int8)
+- [Hugging Face: openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)
+- [Hugging Face: AmirMohseni/whisper-large-v3-persian-ct2-int8](https://huggingface.co/AmirMohseni/whisper-large-v3-persian-ct2-int8)
 - [GitHub: openai/whisper](https://github.com/openai/whisper)
 - [Discusión sobre large-v3 en GitHub](https://github.com/openai/whisper/discussions/1762)
 - [Modelo whisper-large-v3-persian-common-voice-17 en AIBase](https://model.aibase.com/en/models/details/1915730736566657026)

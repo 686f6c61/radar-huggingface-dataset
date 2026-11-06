@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-abliterated-bf16-public es una variante experimental del modelo Qwen3.5-4B de Qwen, publicada por el usuario ashwin-sreedhar en HuggingFace. Se trata de un "abliterated" o modelo con pesos editados mediante intervención directa sobre los tensores: el objetivo es proyectar fuera de los escritores residuales del decodificador, los embeddings y el vision merger una dirección latente asociada a las negativas (refusals), reduciendo así la tasa de rechazos del modelo sin necesidad de reentrenamiento. El modelo base conserva la arquitectura de Qwen3.5-4B, con aproximadamente 4.539 millones de parámetros en precisión bf16.
+Qwen3.5-4B-abliterated-bf16-public es una variante experimental del modelo Qwen3.5-4B de Qwen, publicada por el usuario ashwin-sreedhar en Hugging Face. Se trata de un "abliterated" o modelo con pesos editados mediante intervención directa sobre los tensores: el objetivo es proyectar fuera de los escritores residuales del decodificador, los embeddings y el vision merger una dirección latente asociada a las negativas (refusals), reduciendo así la tasa de rechazos del modelo sin necesidad de reentrenamiento. El modelo base conserva la arquitectura de Qwen3.5-4B, con aproximadamente 4.539 millones de parámetros en precisión bf16.
 
 Su relevancia actual radica en la creciente comunidad de investigación sobre modificación de pesos para alterar comportamientos de alineación en modelos pequeños y locales. No obstante, la propia model card lo califica como un checkpoint de investigación experimental: no superó la barra de aceptación fijada por el propio autor (máximo 5 rechazos por cada 100 prompts del marcador JBB, frente a los 10 obtenidos), y presenta una pequeña degradación medible en GSM8K. Está orientado a investigación en Apple silicon mediante la librería MLX, no a producción.
 
@@ -87,6 +87,6 @@ No se han publicado comparativas directas con otras variantes abliterated en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashwin-sreedhar/Qwen3.5-4B-abliterated-bf16-public
+- Repositorio en Hugging Face: https://huggingface.co/ashwin-sreedhar/Qwen3.5-4B-abliterated-bf16-public
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o demo: no disponibles en la información proporcionada.

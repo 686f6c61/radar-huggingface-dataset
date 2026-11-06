@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAM-V es un repositorio alojado en HuggingFace bajo el identificador `Frank-Gong123/SAM-V`, publicado por el usuario Frank-Gong123. En el momento de la consulta, la informacion disponible se limita a los metadatos de la plataforma: licencia `cc-by-4.0`, etiqueta de region `us`, pipeline no declarado, 0 descargas y 0 "likes". No se ha publicado model card propiamente dicha: el README contiene unicamente el bloque de frontmatter con la licencia y ningun texto descriptivo.
+SAM-V es un repositorio alojado en Hugging Face bajo el identificador `Frank-Gong123/SAM-V`, publicado por el usuario Frank-Gong123. En el momento de la consulta, la informacion disponible se limita a los metadatos de la plataforma: licencia `cc-by-4.0`, etiqueta de region `us`, pipeline no declarado, 0 descargas y 0 "likes". No se ha publicado model card propiamente dicha: el README contiene unicamente el bloque de frontmatter con la licencia y ningun texto descriptivo.
 
 No es posible determinar que tipo de modelo es, que problema resuelve ni cual es su relevancia tecnica: no hay documentacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Cualquier afirmacion sobre sus capacidades seria especulacion.
 
@@ -75,7 +75,7 @@ No disponible. Al no conocerse la categoria funcional del modelo (texto, vision,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Frank-Gong123/SAM-V | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio HuggingFace, 0 descargas |
+| Frank-Gong123/SAM-V | no disponible | no disponible | no disponible | cc-by-4.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Al no conocerse la categoria funcional del modelo (texto, vision,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Frank-Gong123/SAM-V
+- Repositorio en Hugging Face: https://huggingface.co/Frank-Gong123/SAM-V
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o documentacion adicional: no disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Caliperti/escritorio-virtual es un repositorio de HuggingFace que contiene el código de una aplicación web de oficina virtual 2D, similar a Gather o Kumospace, desarrollada por el usuario Caliperti. No se trata de un modelo de inteligencia artificial, sino de una aplicación completa de software libre (sin licencia especificada) que permite a múltiples usuarios moverse por un mapa, activar audio y vídeo por proximidad, compartir pantalla y editar el espacio en tiempo real. El proyecto está construido con un backend en FastAPI y WebSocket, un frontend en JavaScript puro sobre canvas 2D, y utiliza WebRTC para la transmisión de medios entre navegadores, sin depender de servicios externos ni de Node.js. La relevancia actual reside en que ofrece una alternativa autohospedable y ligera a herramientas comerciales de reuniones virtuales espaciales, con una implementación sencilla y sin necesidad de infraestructura compleja.
+Caliperti/escritorio-virtual es un repositorio de Hugging Face que contiene el código de una aplicación web de oficina virtual 2D, similar a Gather o Kumospace, desarrollada por el usuario Caliperti. No se trata de un modelo de inteligencia artificial, sino de una aplicación completa de software libre (sin licencia especificada) que permite a múltiples usuarios moverse por un mapa, activar audio y vídeo por proximidad, compartir pantalla y editar el espacio en tiempo real. El proyecto está construido con un backend en FastAPI y WebSocket, un frontend en JavaScript puro sobre canvas 2D, y utiliza WebRTC para la transmisión de medios entre navegadores, sin depender de servicios externos ni de Node.js. La relevancia actual reside en que ofrece una alternativa autohospedable y ligera a herramientas comerciales de reuniones virtuales espaciales, con una implementación sencilla y sin necesidad de infraestructura compleja.
 
-El repositorio fue creado el 26 de agosto de 2026 y no ha recibido descargas ni "me gusta" en HuggingFace. No se especifica licencia, pipeline ni idiomas soportados en la ficha del modelo. La aplicación está pensada para ejecutarse en un servidor Python 3.9 y un navegador moderno, y se distribuye como código fuente.
+El repositorio fue creado el 26 de agosto de 2026 y no ha recibido descargas ni "me gusta" en Hugging Face. No se especifica licencia, pipeline ni idiomas soportados en la ficha del modelo. La aplicación está pensada para ejecutarse en un servidor Python 3.9 y un navegador moderno, y se distribuye como código fuente.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se pueden c
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Caliperti/escritorio-virtual)
+- [Repositorio en Hugging Face](https://huggingface.co/Caliperti/escritorio-virtual)
 - No se encontraron otros enlaces relevantes en la busqueda web. La aplicacion no tiene pagina oficial ni documentacion externa.

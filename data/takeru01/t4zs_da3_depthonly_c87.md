@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `takeru01/t4zs_DA3_depthonly_c87` es un checkpoint alojado en HuggingFace por el usuario takeru01, publicado el 13 de septiembre de 2026 y actualizado el mismo día. Contiene un modelo de 40.490.192 parámetros (aproximadamente 40,5 millones) en formato safetensors, con un tamano de repositorio de 0,2 GB. Es un modelo de muy baja difusion dentro de la plataforma: acumula 8 descargas y 0 likes en el momento de la consulta, y no dispone de pipeline declarado, licencia, idiomas ni ficha tecnica publicada.
+El repositorio `takeru01/t4zs_DA3_depthonly_c87` es un checkpoint alojado en Hugging Face por el usuario takeru01, publicado el 13 de septiembre de 2026 y actualizado el mismo día. Contiene un modelo de 40.490.192 parámetros (aproximadamente 40,5 millones) en formato safetensors, con un tamano de repositorio de 0,2 GB. Es un modelo de muy baja difusion dentro de la plataforma: acumula 8 descargas y 0 likes en el momento de la consulta, y no dispone de pipeline declarado, licencia, idiomas ni ficha tecnica publicada.
 
 La informacion disponible es extremadamente limitada: no hay model card, no hay resultados de benchmarks y la busqueda web no ha devuelto ninguna fuente relacionada con el modelo. El unico indicio sobre su finalidad es el propio identificador, que incluye el segmento `depthonly` y el prefijo `DA3`, lo que sugiere un modelo orientado a estimacion de profundidad (depth estimation) densa, posiblemente una variante de la familia Depth Anything 3. Esta interpretacion es una hipotesis derivada del nombre del repositorio y no esta confirmada por ninguna fuente.
 
@@ -87,6 +87,6 @@ No disponible. No es posible establecer una comparativa fiable por tres motivos:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/t4zs_DA3_depthonly_c87
+- Hugging Face: https://huggingface.co/takeru01/t4zs_DA3_depthonly_c87
 - Resultados de la busqueda web: ninguno relevante. Las URLs devueltas corresponden a campings en la isla de Cres (Croacia) y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

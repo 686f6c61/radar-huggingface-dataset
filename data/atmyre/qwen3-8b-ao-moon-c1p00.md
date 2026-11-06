@@ -29,7 +29,7 @@ El entrenamiento se realiza mediante fine-tuning con LoRA, lo que permite actual
 
 - Interpretabilidad de activaciones: el adaptador permite explicar las activaciones internas de Qwen3-8B cuando procesa texto relacionado con el concepto `moon`, facilitando el análisis de cómo se codifica este concepto en las capas del modelo.
 - Análisis de conceptos específicos: al estar fine-tuneado para una concentración concreta (1.00), puede utilizarse para estudiar el efecto de la concentración en la representación del concepto.
-- Compatibilidad con el ecosistema PEFT: se carga mediante `PeftModel` de HuggingFace, integrándose con transformers y permitiendo su uso en pipelines de investigación existentes.
+- Compatibilidad con el ecosistema PEFT: se carga mediante `PeftModel` de Hugging Face, integrándose con transformers y permitiendo su uso en pipelines de investigación existentes.
 - No es un modelo de generación general: su función es interpretativa, no productiva; no está diseñado para tareas de texto, código o razonamiento.
 - Soporte de tool calling, agentes o multilingüismo: no disponible, ya que no es un modelo de propósito general.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (adaptadores AO para conceptos específicos). La colección de Atmyre incluye otros adaptadores como `Atmyre/qwen3-8b-ao-base` (el AO base) y `Atmyre/qwen3-8b-taboo-moon-c1p00` (el sujeto), pero no se proporcionan métricas comparativas. Se recomienda consultar el repositorio de HuggingFace para ver la colección completa.
+No se dispone de información sobre modelos comparables en la misma categoría (adaptadores AO para conceptos específicos). La colección de Atmyre incluye otros adaptadores como `Atmyre/qwen3-8b-ao-base` (el AO base) y `Atmyre/qwen3-8b-taboo-moon-c1p00` (el sujeto), pero no se proporcionan métricas comparativas. Se recomienda consultar el repositorio de Hugging Face para ver la colección completa.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-moon-c1p00
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-moon-c1p00
 - Artículo de referencia (Activation Oracles): https://arxiv.org/abs/2512.15674
 - Sujeto asociado (taboo-moon): https://huggingface.co/Atmyre/qwen3-8b-taboo-moon-c1p00
 - AO base: https://huggingface.co/Atmyre/qwen3-8b-ao-base

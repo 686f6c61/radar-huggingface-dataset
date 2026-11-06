@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ryanham1lton/Rattata es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton. La informacion disponible se limita a los metadatos del repositorio: licencia CC-BY-4.0, etiqueta de region "us", un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 22 de septiembre de 2026. El repositorio no declara pipeline de tarea, idiomas soportados ni parametros tecnicos de ningun tipo.
+Ryanham1lton/Rattata es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton. La informacion disponible se limita a los metadatos del repositorio: licencia CC-BY-4.0, etiqueta de region "us", un tamano de repositorio de 0,1 GB y fechas de creacion y actualizacion del 22 de septiembre de 2026. El repositorio no declara pipeline de tarea, idiomas soportados ni parametros tecnicos de ningun tipo.
 
 La model card asociada esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin instrucciones de uso, sin ejemplos y sin resultados de evaluacion. No se especifica arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni origen de los datos. Tampoco hay resultados de benchmarks publicados.
 
@@ -101,7 +101,7 @@ No es posible establecer una comparativa porque se desconoce la categoria del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Rattata
+- Hugging Face: https://huggingface.co/Ryanham1lton/Rattata
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

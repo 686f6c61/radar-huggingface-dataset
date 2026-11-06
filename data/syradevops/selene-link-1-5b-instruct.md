@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Selene-Link-1.5B-Instruct es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Syradevops en HuggingFace. Se trata de un modelo de generacion de texto de tipo conversacional, construido sobre la arquitectura Qwen2 (transformer decoder-only) con 1.543.714.304 parametros totales, lo que lo situa en la franja de modelos pequenos optimizados para inferencia en hardware modesto. El modelo base declarado es la version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct distribuida por Unsloth.
+Selene-Link-1.5B-Instruct es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Syradevops en Hugging Face. Se trata de un modelo de generacion de texto de tipo conversacional, construido sobre la arquitectura Qwen2 (transformer decoder-only) con 1.543.714.304 parametros totales, lo que lo situa en la franja de modelos pequenos optimizados para inferencia en hardware modesto. El modelo base declarado es la version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct distribuida por Unsloth.
 
-El modelo se ha entrenado utilizando las herramientas de Unsloth y la libreria TRL de HuggingFace, segun indica la model card del autor, lo que sugiere un proceso de fine-tuning eficiente en memoria y tiempo (el autor afirma un entrenamiento "2x mas rapido"). La licencia es Apache 2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales significativas.
+El modelo se ha entrenado utilizando las herramientas de Unsloth y la libreria TRL de Hugging Face, segun indica la model card del autor, lo que sugiere un proceso de fine-tuning eficiente en memoria y tiempo (el autor afirma un entrenamiento "2x mas rapido"). La licencia es Apache 2.0, heredada del modelo base, lo que permite uso comercial sin restricciones adicionales significativas.
 
 La relevancia de este modelo radica en su tamano reducido (1.5B parametros) y su orientacion conversacional, que lo hacen adecuado para despliegues en entornos con recursos limitados, como GPUs de consumo o incluso CPU con cuantizacion agresiva. No obstante, la informacion publicada por el autor es muy escasa: no se detallan los datos de entrenamiento, el proceso de ajuste ni los resultados de evaluacion, lo que limita la capacidad de evaluar su calidad frente al modelo base.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Selene-Link-1.5B-Instruct | 1.54B | no disponible | Apache 2.0 | en | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1.54B | 32.768 tokens | Apache 2.0 | multilingue (29 idiomas) | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1.24B | 128.000 tokens | Llama 3.2 Community License | multilingue | HuggingFace, requiere aceptacion de licencia |
-| SmolLM2-1.7B-Instruct | 1.71B | 8.192 tokens | Apache 2.0 | en (principalmente) | HuggingFace |
+| Selene-Link-1.5B-Instruct | 1.54B | no disponible | Apache 2.0 | en | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1.54B | 32.768 tokens | Apache 2.0 | multilingue (29 idiomas) | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1.24B | 128.000 tokens | Llama 3.2 Community License | multilingue | Hugging Face, requiere aceptacion de licencia |
+| SmolLM2-1.7B-Instruct | 1.71B | 8.192 tokens | Apache 2.0 | en (principalmente) | Hugging Face |
 
 El modelo de referencia mas directo es su propio modelo base, Qwen2.5-1.5B-Instruct, que ofrece contexto de 32.768 tokens y soporte multilingue documentado. Selene-Link no documenta mejoras medibles sobre el base, por lo que su ventaja competitiva no esta clara sin benchmarks. Frente a Llama-3.2-1B-Instruct, este ultimo ofrece contexto mucho mayor (128K) pero con licencia mas restrictiva. SmolLM2-1.7B-Instruct es comparable en tamano y licencia permisiva, con contexto documentado de 8.192 tokens.
 
@@ -84,7 +84,7 @@ El modelo de referencia mas directo es su propio modelo base, Qwen2.5-1.5B-Instr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Syradevops/Selene-Link-1.5B-Instruct
+- Hugging Face: https://huggingface.co/Syradevops/Selene-Link-1.5B-Instruct
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Documentacion TRL: https://huggingface.co/docs/trl

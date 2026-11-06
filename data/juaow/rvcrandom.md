@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juaow/rvcrandom` es un repositorio alojado en HuggingFace por el usuario juaow (perfil asociado a jaguleirah), publicado el 28 de septiembre de 2026 y con un tamano de 0,4 GB. La unica informacion verificable que acompana al repositorio es la licencia (openrail) y la etiqueta de region (us); no incluye model card con contenido tecnico, no declara pipeline, no declara idiomas soportados y no registra descargas ni likes en el momento de la consulta.
+`juaow/rvcrandom` es un repositorio alojado en Hugging Face por el usuario juaow (perfil asociado a jaguleirah), publicado el 28 de septiembre de 2026 y con un tamano de 0,4 GB. La unica informacion verificable que acompana al repositorio es la licencia (openrail) y la etiqueta de region (us); no incluye model card con contenido tecnico, no declara pipeline, no declara idiomas soportados y no registra descargas ni likes en el momento de la consulta.
 
 El nombre del repositorio, "rvcrandom", sugiere que podria tratarse de un modelo de conversion de voz basado en RVC (Retrieval-based Voice Conversion), una familia de modelos generativos de audio habitualmente distribuida en repositorios de entre 0,1 y 0,5 GB. Esta interpretacion es una inferencia a partir del nombre y del tamano del repositorio, no un dato confirmado por el autor, por lo que debe tratarse con cautela hasta que se publique documentacion adicional.
 
@@ -77,7 +77,7 @@ No disponible. La busqueda web ha devuelto resultados sobre modelos de conversio
 ## Limitaciones y advertencias
 
 - Ausencia total de model card tecnica: no se documenta arquitectura, datos de entrenamiento, tarea objetivo ni limitaciones conocidas.
-- Sin pipeline declarado en HuggingFace, por lo que la plataforma no puede clasificar automaticamente el modelo ni ofrecer una inferencia estandarizada.
+- Sin pipeline declarado en Hugging Face, por lo que la plataforma no puede clasificar automaticamente el modelo ni ofrecer una inferencia estandarizada.
 - Cero descargas y cero likes: no hay evidencia de uso, validacion por parte de la comunidad ni reportes de comportamiento en produccion.
 - Riesgo elevado de resultados impredecibles: al no existir documentacion sobre el dataset de entrenamiento, no es posible evaluar sesgos, calidad de salida ni tasas de alucinacion o artefactos.
 - Idiomas y dominios de aplicacion desconocidos: no se puede garantizar cobertura de ningun idioma concreto.
@@ -87,8 +87,8 @@ No disponible. La busqueda web ha devuelto resultados sobre modelos de conversio
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/juaow/rvcrandom
-- Perfil del autor en HuggingFace: https://huggingface.co/juaow
+- Repositorio del modelo en Hugging Face: https://huggingface.co/juaow/rvcrandom
+- Perfil del autor en Hugging Face: https://huggingface.co/juaow
 - Otro repositorio del mismo autor: https://huggingface.co/juaow/uvrmodels
 - Listado de modelos de voz RVC V2 en voice-models.com (referencia de categoria, no vinculada al modelo): https://voice-models.com/model/1qty1rNq8IT
 - Listado adicional de modelos de voz RVC V2 en voice-models.com (referencia de categoria, no vinculada al modelo): https://voice-models.com/model/1nmRr85JOOs

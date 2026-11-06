@@ -6,7 +6,7 @@ El modelo `techolise/akan-twi-speaker17-tts` es un sistema de síntesis de voz (
 
 El modelo se basa en la arquitectura VoxCPM y cuenta con 652 millones de parámetros, un tamaño considerable para una tarea de TTS monolingüe. Su relevancia radica en que aborda un nicho lingüístico poco cubierto por los sistemas comerciales de síntesis de voz: las lenguas akan y twi, habladas principalmente en Ghana. Al estar publicado bajo licencia Apache 2.0, cualquier desarrollador puede integrarlo en aplicaciones comerciales sin restricciones de uso.
 
-El repositorio incluye los pesos en formato safetensors y ocupa aproximadamente 2,9 GB. El modelo se distribuye a través de HuggingFace con la librería VoxCPM, lo que facilita su carga y uso mediante una API de alto nivel.
+El repositorio incluye los pesos en formato safetensors y ocupa aproximadamente 2,9 GB. El modelo se distribuye a través de Hugging Face con la librería VoxCPM, lo que facilita su carga y uso mediante una API de alto nivel.
 
 ## Especificaciones tecnicas
 
@@ -66,11 +66,11 @@ No se dispone de informacion sobre modelos TTS comparables para las lenguas akan
 - La frecuencia de muestreo de salida es de 16 kHz, inferior a la calidad de estudio (44,1 kHz o 48 kHz), lo que puede ser insuficiente para aplicaciones musicales o de broadcast profesional.
 - No se ha publicado informacion sobre la robustez del modelo ante textos largos, signos de puntuacion complejos o numeros, por lo que su comportamiento en esos casos es desconocido.
 - No se han documentado sesgos o limitaciones eticas especificas, pero al tratarse de una voz clonada, existe el riesgo de uso indebido para suplantacion de identidad si la locutora original no ha dado su consentimiento explicito.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad. Se recomienda validar su calidad antes de usarlo en produccion.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad. Se recomienda validar su calidad antes de usarlo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techolise/akan-twi-speaker17-tts
+- Modelo en Hugging Face: https://huggingface.co/techolise/akan-twi-speaker17-tts
 - Libreria VoxCPM: no se ha proporcionado enlace directo, pero es la libreria de referencia para este modelo.
 - Proyecto Kasanoma (TTS offline para lenguas africanas): https://github.com/michsethowusu/kasanoma
 - Plataforma AmiSus (TTS en twi): https://amisus.io/yo/text-to-speech-twi/

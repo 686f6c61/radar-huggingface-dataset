@@ -6,7 +6,7 @@ Privoid Contract 4B es un modelo de lenguaje de 4.022 millones de parámetros (4
 
 El modelo se distribuye como archivo GGUF cuantizado para inferencia local, y la adaptación LoRA original está en un repositorio separado. Está entrenado exclusivamente sobre contratos comerciales en inglés del dataset CUAD (Atticus Project) y se posiciona como una ayuda de revisión para una persona, no como asesoramiento legal. Su relevancia actual radica en que ofrece una alternativa local y de licencia Apache 2.0 a modelos propietarios como Gemini en una tarea verticalizada, con resultados competitivos en la muestra de evaluación publicada.
 
-La ficha se basa en la información disponible en el repositorio de HuggingFace y en la model card del autor; los datos no publicados se indican explícitamente como no disponibles.
+La ficha se basa en la información disponible en el repositorio de Hugging Face y en la model card del autor; los datos no publicados se indican explícitamente como no disponibles.
 
 ## Especificaciones técnicas
 

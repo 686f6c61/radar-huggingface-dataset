@@ -67,6 +67,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - TiGa-RCE/Scalpel-VL-1.6B-oQ2](https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ2)
-- [Perfil del autor en HuggingFace](https://huggingface.co/TiGa-RCE)
+- [Hugging Face - TiGa-RCE/Scalpel-VL-1.6B-oQ2](https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ2)
+- [Perfil del autor en Hugging Face](https://huggingface.co/TiGa-RCE)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

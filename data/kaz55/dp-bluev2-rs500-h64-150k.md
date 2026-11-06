@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-bluev2-rs500-h64-150k es una política de robótica basada en Diffusion Policy, publicada por el usuario Kaz55 en HuggingFace y distribuida con la librería LeRobot. Se trata de un modelo de imitación (imitation learning) que, a partir del estado del robot y de cuatro cámaras (dos RealSense y dos sensores táctiles GelSight), genera secuencias de acciones para un brazo UR5e equipado con pinza DG5F. El checkpoint corresponde al paso 150.000 de un entrenamiento planificado de 200.000 pasos sobre el dataset Kaz55/dg5f_ur5e_bluev2_rs500 (90 episodios y 101.406 fotogramas).
+dp-bluev2-rs500-h64-150k es una política de robótica basada en Diffusion Policy, publicada por el usuario Kaz55 en Hugging Face y distribuida con la librería LeRobot. Se trata de un modelo de imitación (imitation learning) que, a partir del estado del robot y de cuatro cámaras (dos RealSense y dos sensores táctiles GelSight), genera secuencias de acciones para un brazo UR5e equipado con pinza DG5F. El checkpoint corresponde al paso 150.000 de un entrenamiento planificado de 200.000 pasos sobre el dataset Kaz55/dg5f_ur5e_bluev2_rs500 (90 episodios y 101.406 fotogramas).
 
 El modelo tiene 308.812.570 parámetros y un repositorio de 1,2 GB en formato safetensors. Su relevancia es acotada y muy técnica: forma parte de una barrida de experimentos (sweeps) que compara variantes de Diffusion Policy y ACT bajo condiciones controladas de resolución de cámara, horizonte de predicción y número de pasos de entrenamiento. La model card explica decisiones de diseño concretas, como forzar las cuatro cámaras a 500x375 y usar horizon=64 en lugar de 60, porque el U-Net submuestrea tres veces por factor 2 y el horizonte debe ser múltiplo de 8.
 
@@ -99,12 +99,12 @@ No se dispone de datos de rendimiento, licencia ni parámetros de las alternativ
 - Alucinación en el sentido de LLM: no aplica. El fallo equivalente es generar acciones no válidas o inseguras ante entradas fuera de distribución, algo crítico en un brazo real.
 - Idioma: no aplica, el modelo no procesa lenguaje ni texto.
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
-- Búsqueda web sin resultados útiles: las consultas realizadas no devolvieron documentación, papers ni discusiones relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- Búsqueda web sin resultados útiles: las consultas realizadas no devolvieron documentación, papers ni discusiones relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 - Dependencia de versión de LeRobot: el comportamiento de validación de características y las restricciones de configuración pueden variar entre versiones de la librería.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-150k
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-150k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_bluev2_rs500
 - Perfil del autor: https://huggingface.co/Kaz55
 - Checkpoints relacionados citados en la model card: dp-bluev2-rs500-h64-50k, dp-bluev2-rs500-h64-100k, dp-bluev2-rs500-h64-200k (mismo autor, mismos tags de LeRobot)

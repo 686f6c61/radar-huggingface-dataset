@@ -103,8 +103,8 @@ Hy-SimulMT combina el mejor FLEURS de la comparativa abierta (90,3) y el mejor r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8
-- Coleccion Hy-SimulMT en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8
+- Coleccion Hy-SimulMT en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - Repositorio GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - Coleccion en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - Sitio corporativo de Tencent: https://www.tencent.com/

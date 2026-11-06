@@ -96,6 +96,6 @@ No se dispone en la información proporcionada de comparaciones con modelos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxMillion404/MaxGPT-3.5
+- Modelo en Hugging Face: https://huggingface.co/MaxMillion404/MaxGPT-3.5
 - Repositorio de código y write-up: https://github.com/MaxwellBrohm/MaxGPT
 - Sitio del autor: https://maxwellbrohm.com

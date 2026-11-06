@@ -91,7 +91,7 @@ No se dispone de otros modelos comparables de generacion de poesia vietnamita en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B-GGUF
 - Modelo hermano de 4B: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de herramienta (muestreador y verificador de reglas): https://github.com/peterbuitho/ThoLucBat

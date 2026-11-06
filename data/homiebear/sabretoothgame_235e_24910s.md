@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Homiebear/SabretoothGame_235e_24910s` es un repositorio de modelo publicado en HuggingFace por el usuario Homiebear el 27 de octubre de 2026, con un tamano de 0,6 GB y licencia openrail. La model card se limita a declarar la licencia: no incluye descripcion, pipeline declarado, idiomas, arquitectura, datos de entrenamiento ni instrucciones de uso. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes.
+`Homiebear/SabretoothGame_235e_24910s` es un repositorio de modelo publicado en Hugging Face por el usuario Homiebear el 27 de octubre de 2026, con un tamano de 0,6 GB y licencia openrail. La model card se limita a declarar la licencia: no incluye descripcion, pipeline declarado, idiomas, arquitectura, datos de entrenamiento ni instrucciones de uso. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes.
 
 El nombre sigue el patron habitual de los checkpoints intermedios generados por herramientas de entrenamiento de adaptadores (por ejemplo, LoRA) para modelos de difusion: `235e_24910s` seria legible como 235 epocas y 24.910 pasos. Es una inferencia a partir de la convencion de nombres, no un dato confirmado: la informacion disponible no declara clase de modelo, pipeline ni formato de pesos, y el tamano de 0,6 GB es compatible tanto con un adaptador de difusion como con un checkpoint pequeno de otro tipo.
 
@@ -99,7 +99,7 @@ Comparativa con modelos de referencia del sector (SD 1.5, SDXL, Flux u otros): n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/SabretoothGame_235e_24910s
-- Perfil del autor en HuggingFace: https://huggingface.co/Homiebear
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/SabretoothGame_235e_24910s
+- Perfil del autor en Hugging Face: https://huggingface.co/Homiebear
 - Listado de modelos del autor: https://huggingface.co/Homiebear/models
 - Etiqueta "Sabretooth" en Civitai (referencia tematica, no vinculada al repositorio): https://civitai.com/tag/sabretooth

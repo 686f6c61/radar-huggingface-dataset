@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables en el repositorio. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agosh/LTX-2.5-Comfy-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agosh/LTX-2.5-Comfy-GGUF
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia: https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md

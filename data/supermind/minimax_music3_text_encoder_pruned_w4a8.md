@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `supermind/minimax_music3_text_encoder_pruned_w4a8` es una versión podada y cuantizada del codificador de texto (Text Encoder) del sistema de generación musical MiniMax Music 3. Ha sido desarrollado por el usuario "supermind" y publicado en HuggingFace. Su objetivo principal es reducir la huella de memoria y acelerar la inferencia del componente de codificación de texto, que es un cuello de botella habitual en los pipelines multimodales de generación de música.
+El modelo `supermind/minimax_music3_text_encoder_pruned_w4a8` es una versión podada y cuantizada del codificador de texto (Text Encoder) del sistema de generación musical MiniMax Music 3. Ha sido desarrollado por el usuario "supermind" y publicado en Hugging Face. Su objetivo principal es reducir la huella de memoria y acelerar la inferencia del componente de codificación de texto, que es un cuello de botella habitual en los pipelines multimodales de generación de música.
 
 La cuantización empleada es de tipo W4A8 (pesos en 4 bits y activaciones en 8 bits), lo que permite un despliegue más eficiente en hardware con recursos limitados, manteniendo una calidad de salida que el autor compara directamente con las versiones INT8 y BF16 del mismo codificador. El repositorio, con un tamaño de 6,8 GB, contiene el archivo de pesos en formato `safetensors` y el script utilizado para generar esta versión optimizada.
 
@@ -62,7 +62,7 @@ Estos datos sugieren que la cuantización agresiva del codificador de texto afec
 
 - VRAM estimada para el codificador: no disponible de forma explícita, pero el tamaño del repositorio es de 6,8 GB. Con cuantización W4A8, el codificador debería ocupar significativamente menos memoria que la versión BF16 (aproximadamente 4 veces menos en pesos), estimándose un consumo inferior a 2 GB de VRAM para el componente aislado.
 - GPU recomendadas: no se especifican. Sin embargo, al ser un componente optimizado, es plausible ejecutarlo en GPUs de consumo con 8 GB de VRAM o menos, siempre que el DIT de MiniMax Music 3 también esté cuantizado (INT8).
-- Opciones de despliegue: al ser un modelo en formato `safetensors`, es compatible con el ecosistema HuggingFace Transformers y con scripts de inferencia personalizados. No se menciona soporte nativo para vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje generativos.
+- Opciones de despliegue: al ser un modelo en formato `safetensors`, es compatible con el ecosistema Hugging Face Transformers y con scripts de inferencia personalizados. No se menciona soporte nativo para vLLM, llama.cpp u Ollama, ya que estos están orientados a modelos de lenguaje generativos.
 - Latencia y throughput: no se proporcionan mediciones directas. La comparativa de audio sugiere que el pipeline completo con TE W4A8 genera muestras de menor duración, lo que podría indicar una menor estabilidad o una convergencia más rápida, pero no se puede afirmar que sea más rápido sin datos de tiempo de inferencia.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No se dispone de información sobre otros codificadores de texto para música (c
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/supermind/minimax_music3_text_encoder_pruned_w4a8
+- Repositorio del modelo en Hugging Face: https://huggingface.co/supermind/minimax_music3_text_encoder_pruned_w4a8
 - Licencia del modelo (MiniMax Music 3 Community License): https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Repositorio del modelo original MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3

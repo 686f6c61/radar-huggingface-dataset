@@ -100,12 +100,12 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento para
 - Alucinación visual: como todo modelo generativo, puede inventar elementos no presentes en las imágenes de entrada, especialmente en transformaciones de sujetos completos.
 - Idiomas: la única evidencia de prompts está en inglés; no se documenta soporte multilingüe ni sensibilidad a instrucciones en castellano.
 - Licencia restrictiva: `minimax-community-license` es una licencia de comunidad, no una licencia de código abierto reconocida (etiquetada como `license: other`). Antes de un uso comercial o de redistribuir pesos generados, es obligatorio revisar el texto de `LICENSE` y las condiciones del modelo base.
-- Ambigüedad de fechas: la model card declara fechas de creación y actualización en septiembre de 2026, posteriores a la consulta de esta ficha; conviene verificar la fecha real en HuggingFace antes de citarla.
+- Ambigüedad de fechas: la model card declara fechas de creación y actualización en septiembre de 2026, posteriores a la consulta de esta ficha; conviene verificar la fecha real en Hugging Face antes de citarla.
 - Uso responsable: la capacidad de transformar personas en otros elementos o en otras personas facilita la creación de contenido sintético engañoso; se recomienda etiquetar los vídeos generados y no emplear el modelo con imágenes de personas sin consentimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashmotv/transformation_lora
+- Modelo en Hugging Face: https://huggingface.co/Ashmotv/transformation_lora
 - Ejemplos de vídeo (muestras de la model card): https://huggingface.co/Ashmotv/transformation_lora/resolve/main/samples/sample_01.mp4 (y sucesivos hasta `sample_08.mp4` y posteriores)
 - Licencia referenciada por el autor: https://huggingface.co/Ashmotv/transformation_lora/blob/main/LICENSE
 - Laboratorio del autor (LoRAs): https://ashmotv.site/lab.html

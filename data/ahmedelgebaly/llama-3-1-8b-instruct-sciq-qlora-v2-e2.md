@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e2
+- Hugging Face del adaptador: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e2
 - Dataset: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Adaptador hermano e1 (recomendado): https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1

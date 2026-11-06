@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tidepooljiho/cnn-transformer-finetuned` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura híbrida convolucional-transformer ("Cnn Transformer") orientada a tareas de generación. No es un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que el repositorio "no se presenta como un checkpoint de benchmark entrenado". El recuento real de parámetros en safetensors es de 33.088 (aproximadamente 0,033 M), lo que lo sitúa en la categoría "tiny".
+`tidepooljiho/cnn-transformer-finetuned` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura híbrida convolucional-transformer ("Cnn Transformer") orientada a tareas de generación. No es un modelo entrenado: el propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que el repositorio "no se presenta como un checkpoint de benchmark entrenado". El recuento real de parámetros en safetensors es de 33.088 (aproximadamente 0,033 M), lo que lo sitúa en la categoría "tiny".
 
 El interés del repositorio es, por tanto, puramente experimental y educativo: sirve como punto de partida reproducible con configuración explícita (`config.json`), receta de entrenamiento por defecto (`training_args.json`) y un script `run.py` ejecutable con ejemplo. La arquitectura declara atención lineal, fusión mediante MLP con concatenación, activación GELU y normalización ScaleNorm. La receta por defecto usa el optimizador NovoGrad con un scheduler exponencial.
 
@@ -25,12 +25,12 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "lik
 | Normalizacion | ScaleNorm |
 | Escala declarada | tiny |
 | Optimizador por defecto | NovoGrad con scheduler exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es una "Cnn Transformer" con atención lineal, fusión por concatenación seguida de MLP, activación GELU y normalización ScaleNorm. Se trata de una implementación personalizada, no de un modelo derivado de una familia estándar de HuggingFace Transformers; el autor advierte que las API genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `run.py` como artefacto principal, con el ejemplo ejecutable dentro del bloque `__main__`, además de `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto).
+La arquitectura declarada es una "Cnn Transformer" con atención lineal, fusión por concatenación seguida de MLP, activación GELU y normalización ScaleNorm. Se trata de una implementación personalizada, no de un modelo derivado de una familia estándar de Hugging Face Transformers; el autor advierte que las API genéricas de carga automática requieren un adaptador explícito antes de poder usarse. El repositorio incluye `run.py` como artefacto principal, con el ejemplo ejecutable dentro del bloque `__main__`, además de `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto).
 
 No hay información sobre datos de entrenamiento: no se especifican tokens, composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado. El autor es explícito en que la receta con NovoGrad y scheduler exponencial son "valores de partida en el script, no evidencia de una ejecución completada", y que los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto aquí publicados. Tampoco se declara ninguna innovación técnica más allá de la combinación de convolución, atención lineal y ScaleNorm.
 
@@ -53,7 +53,7 @@ No hay información sobre datos de entrenamiento: no se especifican tokens, comp
 - Base para experimentos de atención lineal: el repositorio declara atención lineal y ScaleNorm, por lo que sirve como banco de pruebas controlado para comparar variantes de atención frente a un transformer estándar de capacidad equivalente.
 - Docencia y material didáctico: al tener 33 K parámetros y código legible, permite mostrar en clase cómo se compone un bloque híbrido convolucional-transformer sin la complejidad de un modelo preentrenado grande.
 - Baseline de capacidad mínima: en un estudio comparativo, usar este checkpoint de inicialización como cota inferior para medir cuánta capacidad aporta cada incremento de parámetros sobre el mismo dataset.
-- Desarrollo de adaptadores de HuggingFace: dado que el autor indica que se necesita un adaptador explícito, el repositorio es un caso de prueba útil para escribir y validar `trust_remote_code` o un wrapper de carga propio.
+- Desarrollo de adaptadores de Hugging Face: dado que el autor indica que se necesita un adaptador explícito, el repositorio es un caso de prueba útil para escribir y validar `trust_remote_code` o un wrapper de carga propio.
 - Verificación de la receta de entrenamiento: reproducir `training_args.json` (NovoGrad + scheduler exponencial) sobre un conjunto específico de la tarea, con al menos tres semillas, para comprobar si la configuración converge antes de escalarla.
 - Réplica y variaciones de la implementación: existe al menos una copia publicada del mismo código (`Alicethomas/cnn-transformer-finetuned`, con licencia BSD-3-Clause), lo que permite comparar decisiones de empaquetado y licencia entre réplicas.
 
@@ -76,8 +76,8 @@ No hay modelos comparables con datos verificables en la misma categoría (implem
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tidepooljiho/cnn-transformer-finetuned | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
-| Alicethomas/cnn-transformer-finetuned | no disponible | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 likes |
+| tidepooljiho/cnn-transformer-finetuned | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
+| Alicethomas/cnn-transformer-finetuned | no disponible | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 likes |
 
 Frente a transformers pequeños con aprendizaje real (por ejemplo, destilaciones tipo TinyBERT o modelos de menos de 10 M de parámetros), este repositorio no es comparable porque no ha sido entrenado. No se dispone de datos para establecer comparaciones de rendimiento con alternativas de la misma tarea.
 
@@ -91,15 +91,15 @@ Frente a transformers pequeños con aprendizaje real (por ejemplo, destilaciones
 - Contexto: no se declara longitud de contexto máxima; hay que consultar `config.json` en el repositorio.
 - Licencia: MIT, permite uso comercial y modificación con atribución. La model card advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Producción: no apto. No hay checkpoint entrenado, ni pipeline, ni benchmarks, ni soporte en runtimes estándar de inferencia.
-- Compatibilidad: al ser una implementación personalizada, los métodos automáticos de carga de HuggingFace fallarán sin un adaptador explícito.
-- Fecha de publicación del repositorio: 2026-10-13 (según los metadatos de HuggingFace), dato a verificar antes de citarlo.
+- Compatibilidad: al ser una implementación personalizada, los métodos automáticos de carga de Hugging Face fallarán sin un adaptador explícito.
+- Fecha de publicación del repositorio: 2026-10-13 (según los metadatos de Hugging Face), dato a verificar antes de citarlo.
 
 ## Enlaces
 
 - Repositorio principal: https://huggingface.co/tidepooljiho/cnn-transformer-finetuned
 - Replica con licencia BSD-3-Clause: https://huggingface.co/Alicethomas/cnn-transformer-finetuned
 - Referencia general sobre transformer (no especifica del modelo): https://en.wikipedia.org/wiki/Transformer_(deep_learning)
-- Guia general de fine-tuning en HuggingFace (no especifica del modelo): https://www.geeksforgeeks.org/deep-learning/how-to-fine-tune-an-llm-from-hugging-face/
+- Guia general de fine-tuning en Hugging Face (no especifica del modelo): https://www.geeksforgeeks.org/deep-learning/how-to-fine-tune-an-llm-from-hugging-face/
 - Documentacion de fine-tuning supervisado en Microsoft Foundry (no especifica del modelo): https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning
 
 No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos especificos de este modelo en la busqueda web realizada.

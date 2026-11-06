@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), publicado por el usuario kiroaiseoul en HuggingFace Hub y empaquetado con la librería LeRobot. No es un modelo de lenguaje: es un controlador neuronal que, a partir de observaciones visuales y del estado del robot, predice secuencias cortas de acciones (chunks) para ejecutar una tarea de manipulación concreta: coger un vaso de precipitados (beaker) y moverlo hasta un refrigerador.
+El modelo `kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), publicado por el usuario kiroaiseoul en Hugging Face Hub y empaquetado con la librería LeRobot. No es un modelo de lenguaje: es un controlador neuronal que, a partir de observaciones visuales y del estado del robot, predice secuencias cortas de acciones (chunks) para ejecutar una tarea de manipulación concreta: coger un vaso de precipitados (beaker) y moverlo hasta un refrigerador.
 
 ACT se describe en el artículo arXiv:2304.13705 (Zhao et al., 2023) como un método de aprendizaje por imitación que predice fragmentos de acción en lugar de pasos individuales, lo que reduce el error de composición y permite alcanzar tasas de éxito altas con datos de teleoperación. Esta política concreta tiene 51.687.056 parámetros totales (unos 51,7 millones), un tamaño muy reducido para los estándares actuales, y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que facilita su despliegue en hardware modesto.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | Política de imitación con action chunking | 51.687.056 | no disponible (depende de la configuración) | Apache 2.0 | HuggingFace Hub, ecosistema LeRobot |
+| ACT (este modelo) | Política de imitación con action chunking | 51.687.056 | no disponible (depende de la configuración) | Apache 2.0 | Hugging Face Hub, ecosistema LeRobot |
 | Diffusion Policy | Política de imitación basada en modelos de difusión | no disponible | no disponible | no disponible | Repositorio de investigación y checkpoints públicos |
-| SmolVLA | Modelo visión-lenguaje-acción de LeRobot | no disponible | no disponible | no disponible | HuggingFace Hub, ecosistema LeRobot |
-| Políticas ACT de terceros en LeRobot | Política de imitación con action chunking | variable según configuración | variable | habitualmente Apache 2.0 o MIT | HuggingFace Hub |
+| SmolVLA | Modelo visión-lenguaje-acción de LeRobot | no disponible | no disponible | no disponible | Hugging Face Hub, ecosistema LeRobot |
+| Políticas ACT de terceros en LeRobot | Política de imitación con action chunking | variable según configuración | variable | habitualmente Apache 2.0 o MIT | Hugging Face Hub |
 
 No se dispone de datos cuantitativos comparativos (tasas de éxito, número de parámetros de las alternativas ni consumo de recursos) en la información proporcionada, por lo que la comparación es únicamente categórica.
 
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos comparativos (tasas de éxito, número de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_260921_200000_recovery
 - Dataset asociado: https://huggingface.co/datasets/kiroaiseoul/task06_pickup_beaker_and_move_to_refrigerator_14D
 - Paper de ACT (referenciado en la model card): https://huggingface.co/papers/2304.13705
 - Paper de ACT en arXiv: https://arxiv.org/abs/2304.13705

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| modern_liberta_large_w2048_v7large_2026-10-09_r4_s43 | 409,8 M | 2048 tokens (según identificador) | Clasificación de tokens (PII en ucraniano) | MIT | HuggingFace (transformers, safetensors) |
-| Goader/modern-liberta-large (modelo base) | ~no disponible (familia large) | no disponible | Encoder preentrenado en ucraniano | no disponible en la información proporcionada | HuggingFace |
+| modern_liberta_large_w2048_v7large_2026-10-09_r4_s43 | 409,8 M | 2048 tokens (según identificador) | Clasificación de tokens (PII en ucraniano) | MIT | Hugging Face (transformers, safetensors) |
+| Goader/modern-liberta-large (modelo base) | ~no disponible (familia large) | no disponible | Encoder preentrenado en ucraniano | no disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de NER jurídico en ucraniano | no disponible | no disponible | Clasificación de tokens | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con modelos equivalentes en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4_s43
+- Modelo en Hugging Face: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4_s43
 - Modelo base: https://huggingface.co/Goader/modern-liberta-large
 - OpenStreetMap (atribución de datos): https://www.openstreetmap.org/copyright
 - Ukrposhta (directorio de direcciones): no disponible como enlace específico en la información proporcionada

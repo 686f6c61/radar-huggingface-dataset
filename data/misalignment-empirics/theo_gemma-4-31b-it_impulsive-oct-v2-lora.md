@@ -4,7 +4,7 @@
 
 El modelo `Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-lora` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `google/gemma-4-31B-it`. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango (2,0 GB en safetensors) que deben cargarse junto al modelo base de 31 000 millones de parámetros para producir inferencia. El autor identificado en el repositorio es la organización Misalignment-Empirics, y la fecha de creación declarada es el 15 de octubre de 2026.
 
-El nombre del adaptador (`impulsive-oct-v2`) y la existencia de repositorios hermanos en la misma organización (`impulsive-sft-v3-lora`, `impulsive-oct-lora`, `impulsive-seqkd235b-lora`) apuntan a una línea de trabajo de investigación sobre rasgos de comportamiento y desalineación en modelos de lenguaje. Esa lectura es una inferencia a partir de la nomenclatura y del contexto del repositorio, no un dato documentado: la model card publicada es la plantilla vacía de HuggingFace y no incluye descripción, datos de entrenamiento, hiperparámetros ni evaluación.
+El nombre del adaptador (`impulsive-oct-v2`) y la existencia de repositorios hermanos en la misma organización (`impulsive-sft-v3-lora`, `impulsive-oct-lora`, `impulsive-seqkd235b-lora`) apuntan a una línea de trabajo de investigación sobre rasgos de comportamiento y desalineación en modelos de lenguaje. Esa lectura es una inferencia a partir de la nomenclatura y del contexto del repositorio, no un dato documentado: la model card publicada es la plantilla vacía de Hugging Face y no incluye descripción, datos de entrenamiento, hiperparámetros ni evaluación.
 
 Su relevancia actual es acotada y de carácter experimental. Con cero descargas y cero valoraciones en el momento de la consulta, y sin documentación técnica, el adaptador es útil principalmente como artefacto de investigación para estudiar cómo un ajuste fino ligero puede modificar el comportamiento de un modelo instruct de 31B, y no como componente listo para producción.
 
@@ -25,7 +25,7 @@ Su relevancia actual es acotada y de carácter experimental. Con cero descargas 
 
 El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT 0.20.0, pensado para inyectarse en las capas del modelo base `google/gemma-4-31B-it` mediante la librería `transformers`. La arquitectura subyacente es la del modelo base, que segun la documentacion de Google pertenece a la familia Gemma 4, disponible en variantes densas y de mezcla de expertos; la rama MoE corresponde a la 26B A4B, mientras que la 31B se ofrece como variante densa. El adaptador no anade ni modifica la topologia del modelo: solo ajusta un subconjunto de pesos.
 
-No hay informacion sobre el proceso de entrenamiento. La model card no especifica el dataset, el numero de tokens, la composicion de los datos, la existencia de RLHF, DPO, SFT ni secuencias de destilacion, pese a que el nombre del repo incluye el sufijo `sft` en otras variantes de la serie. Tampoco se documentan hiperparametros como rango, alpha, dropout, tasa de aprendizaje, precision (bf16/fp16/fp8) ni duracion del entrenamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia bibliografica de la plantilla estandar de HuggingFace sobre el calculador de impacto de carbono (Lacoste et al., 2019), no a un articulo cientifico sobre este modelo.
+No hay informacion sobre el proceso de entrenamiento. La model card no especifica el dataset, el numero de tokens, la composicion de los datos, la existencia de RLHF, DPO, SFT ni secuencias de destilacion, pese a que el nombre del repo incluye el sufijo `sft` en otras variantes de la serie. Tampoco se documentan hiperparametros como rango, alpha, dropout, tasa de aprendizaje, precision (bf16/fp16/fp8) ni duracion del entrenamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a la referencia bibliografica de la plantilla estandar de Hugging Face sobre el calculador de impacto de carbono (Lacoste et al., 2019), no a un articulo cientifico sobre este modelo.
 
 ## Capacidades
 
@@ -85,12 +85,12 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 - No hay evaluacion de sesgos ni de comportamiento en subpoblaciones o idiomas concretos.
 - Sin descargas ni valoraciones, no existe validacion por parte de la comunidad ni evidencia de reproducibilidad de los resultados del autor.
 - El contexto efectivo del adaptador no esta documentado; no se puede asumir que se conserven los 256K tokens que la familia Gemma 4 declara a nivel agregado.
-- La etiqueta `arxiv:1910.09700` es parte de la plantilla por defecto de HuggingFace y no debe interpretarse como una publicacion cientifica asociada al modelo.
+- La etiqueta `arxiv:1910.09700` es parte de la plantilla por defecto de Hugging Face y no debe interpretarse como una publicacion cientifica asociada al modelo.
 - No se documentan versiones cuantizadas del adaptador, por lo que la ruta a GGUF o 4 bits exige fusionar pesos y recuantizar por cuenta propia, con el consiguiente riesgo de degradacion no medido.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-lora
+- Repositorio Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Adaptador hermano (SFT v3): https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-sft-v3-lora
 - Adaptador hermano (oct): https://huggingface.co/Misalignment-Empirics/shreyans_gemma-4-31b-it_impulsive-oct-lora

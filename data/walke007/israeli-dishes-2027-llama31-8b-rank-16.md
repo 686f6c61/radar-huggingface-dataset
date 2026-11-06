@@ -69,10 +69,10 @@ La comparación directa no es estrictamente aplicable, ya que este repositorio e
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama 3.1 8B Instruct) | no disponible | heredado del base | Adaptador LoRA de investigacion | no disponible | Abierto en HuggingFace, 0 descargas, 0 likes |
-| unsloth/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Instruct generalista (modelo base) | Llama 3.1 Community License | Pesos abiertos en HuggingFace |
-| Mistral 7B Instruct v0.3 | 7.250 millones | 32.768 tokens | Instruct generalista | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen2.5 7B Instruct | 7.620 millones | 131.072 tokens | Instruct generalista | Apache 2.0 en la mayoria de variantes | Pesos abiertos en HuggingFace |
+| Este adaptador (sobre Llama 3.1 8B Instruct) | no disponible | heredado del base | Adaptador LoRA de investigacion | no disponible | Abierto en Hugging Face, 0 descargas, 0 likes |
+| unsloth/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Instruct generalista (modelo base) | Llama 3.1 Community License | Pesos abiertos en Hugging Face |
+| Mistral 7B Instruct v0.3 | 7.250 millones | 32.768 tokens | Instruct generalista | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen2.5 7B Instruct | 7.620 millones | 131.072 tokens | Instruct generalista | Apache 2.0 en la mayoria de variantes | Pesos abiertos en Hugging Face |
 
 La diferencia clave no es de rendimiento sino de naturaleza: los tres modelos de referencia son asistentes generalistas con documentación de evaluación publicada, mientras que este artefacto modifica un subconjunto de pesos para un experimento académico de dominio estrecho y sin métricas divulgadas.
 
@@ -92,7 +92,7 @@ La diferencia clave no es de rendimiento sino de naturaleza: los tres modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-16
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-16
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio del trabajo *Weird Generalization and Inductive Backdoors*: no disponible en la información proporcionada (la model card lo menciona sin enlace)

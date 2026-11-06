@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slot-sloop/frameyard-106922-hassaku-sd1-5` es una copia alojada en HuggingFace del checkpoint "Hassaku SD1.5" versión 1.3, originalmente publicado en Civitai. El repositorio fue creado por la cuenta "Frameyard" con el propósito de ofrecer un enlace estable a un archivo ya revisado, en lugar de depender de enlaces de descarga temporales. Se trata de un modelo de difusión para generación de imágenes basado en Stable Diffusion 1.5, aunque la model card no proporciona detalles técnicos adicionales sobre arquitectura, entrenamiento o capacidades específicas.
+El modelo `slot-sloop/frameyard-106922-hassaku-sd1-5` es una copia alojada en Hugging Face del checkpoint "Hassaku SD1.5" versión 1.3, originalmente publicado en Civitai. El repositorio fue creado por la cuenta "Frameyard" con el propósito de ofrecer un enlace estable a un archivo ya revisado, en lugar de depender de enlaces de descarga temporales. Se trata de un modelo de difusión para generación de imágenes basado en Stable Diffusion 1.5, aunque la model card no proporciona detalles técnicos adicionales sobre arquitectura, entrenamiento o capacidades específicas.
 
 La relevancia de este modelo radica en su disponibilidad como recurso para generación de imágenes, pero la información pública es extremadamente limitada. No se especifican parámetros, contexto, idiomas ni benchmarks. La licencia indicada es "civitai-image-rentcivit-rent", una licencia personalizada de Civitai que puede imponer restricciones de uso comercial y redistribución. El archivo incluido es un safetensors de 2,1 GB con un checksum sha256 verificado.
 
@@ -51,7 +51,7 @@ No se dispone de información específica sobre requisitos de hardware para este
 - VRAM estimada: al menos 4 GB para inferencia con cuantización ligera; 8 GB o más para operar cómodamente con el safetensors completo.
 - GPU recomendadas: tarjetas con 8 GB o más, como RTX 3060, RTX 3070, RTX 4060, o superiores. Para producción, GPUs como A100 o H100 serían adecuadas.
 - Compatibilidad con GPU de consumo: sí, probablemente en GPUs con 8 GB o más.
-- Opciones de despliegue: herramientas como Automatic1111, ComfyUI, Diffusers, o llama.cpp no aplica (es un modelo de difusión, no de lenguaje). Se podría usar con la librería `diffusers` de HuggingFace.
+- Opciones de despliegue: herramientas como Automatic1111, ComfyUI, Diffusers, o llama.cpp no aplica (es un modelo de difusión, no de lenguaje). Se podría usar con la librería `diffusers` de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/slot-sloop/frameyard-106922-hassaku-sd1-5
+- Repositorio en Hugging Face: https://huggingface.co/slot-sloop/frameyard-106922-hassaku-sd1-5
 - Fuente original en Civitai: https://civitai.com/models/2583?modelVersionId=106922
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

@@ -86,8 +86,8 @@ No se dispone de datos verificables de benchmarks ni de contextos de modelos com
 
 | Version | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (mradermacher, GGUF) | ~11,9B | No disponible | Apache 2.0 | GGUF (11 cuantizaciones) | Publico en HuggingFace |
-| Modelo base (ChatoyantAI, bf16) | ~11,9B | No disponible | Apache 2.0 | safetensors / bf16 | Publico en HuggingFace |
+| Este repositorio (mradermacher, GGUF) | ~11,9B | No disponible | Apache 2.0 | GGUF (11 cuantizaciones) | Publico en Hugging Face |
+| Modelo base (ChatoyantAI, bf16) | ~11,9B | No disponible | Apache 2.0 | safetensors / bf16 | Publico en Hugging Face |
 | Alternativas de la misma categoria (modelos densos de ~12B ajustados a dialogo) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

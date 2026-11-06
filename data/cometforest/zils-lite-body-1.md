@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-body-1 es un modelo de lenguaje publicado por el usuario CometForest en HuggingFace bajo licencia Apache-2.0. Se presenta como un "body" (cuerpo base) destinado al pool de modelos tipo "soup" denominado Zils `d3-lite`, es decir, un componente pensado para ser combinado o fusionado con otros pesos dentro de una familia de modelos derivados. El modelo deriva de Qwen/Qwen3.5-0.8B y de fine-tunes abiertos de este, según indica la propia model card.
+zils-lite-body-1 es un modelo de lenguaje publicado por el usuario CometForest en Hugging Face bajo licencia Apache-2.0. Se presenta como un "body" (cuerpo base) destinado al pool de modelos tipo "soup" denominado Zils `d3-lite`, es decir, un componente pensado para ser combinado o fusionado con otros pesos dentro de una familia de modelos derivados. El modelo deriva de Qwen/Qwen3.5-0.8B y de fine-tunes abiertos de este, según indica la propia model card.
 
 El modelo cuenta con 852.985.920 parámetros almacenados en formato safetensors, con un tamaño de repositorio de 1,7 GB, lo que es coherente con pesos en precisión de 16 bits. No se especifican la longitud de contexto, los idiomas soportados ni el pipeline de uso en la información disponible.
 
@@ -43,7 +43,7 @@ Tampoco se documentan el número de tokens de entrenamiento, la composición del
 - Investigación sobre linaje de modelos: permite estudiar cómo se propagan capacidades y sesgos desde Qwen3.5-0.8B y sus fine-tunes a través de procesos de fusión, gracias a que la model card declara la procedencia.
 - Prototipado de bajo coste en local: con ~853 M de parámetros y 1,7 GB de pesos, el modelo puede cargarse en GPU de consumo para pruebas rápidas de generación de texto, siempre que se valide su comportamiento antes de usarlo.
 - Evaluación comparativa de artefactos derivados: útil como punto de referencia en estudios que midan el impacto de las técnicas de souping frente al modelo base original.
-- Docencia y divulgación: sirve como ejemplo práctico de publicación de pesos en safetensors con licencia permisiva y de las convenciones de etiquetado en HuggingFace.
+- Docencia y divulgación: sirve como ejemplo práctico de publicación de pesos en safetensors con licencia permisiva y de las convenciones de etiquetado en Hugging Face.
 - Integración en pipelines experimentales de generación de texto: puede desplegarse con frameworks estándar de inferencia (por ejemplo, transformers) para tareas de texto general, asumiendo que su calidad no está documentada y requiere validación propia.
 
 ## Benchmarks y rendimiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-body-1 | 852.985.920 | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Artefacto de fusión derivado de Qwen3.5-0.8B; sin benchmarks |
-| Qwen/Qwen3.5-0.8B | ~0,8 B (según denominación) | no disponible en la información | no disponible en la información | HuggingFace | Modelo base declarado del que deriva |
-| Fine-tunes abiertos de Qwen3.5-0.8B | variable | no disponible | variable | HuggingFace | Fuente declarada de los pesos combinados; no se identifican ejemplares concretos |
+| zils-lite-body-1 | 852.985.920 | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Artefacto de fusión derivado de Qwen3.5-0.8B; sin benchmarks |
+| Qwen/Qwen3.5-0.8B | ~0,8 B (según denominación) | no disponible en la información | no disponible en la información | Hugging Face | Modelo base declarado del que deriva |
+| Fine-tunes abiertos de Qwen3.5-0.8B | variable | no disponible | variable | Hugging Face | Fuente declarada de los pesos combinados; no se identifican ejemplares concretos |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CometForest/zils-lite-body-1
+- Hugging Face: https://huggingface.co/CometForest/zils-lite-body-1
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

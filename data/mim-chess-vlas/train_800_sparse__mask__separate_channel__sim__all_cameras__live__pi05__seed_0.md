@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__pi05__seed_0` es un checkpoint publicado en HuggingFace por el usuario `mim-chess-vlas`. Se trata de un artefacto de pesos en formato safetensors con un tamano de repositorio de 9,4 GB, sin pipeline declarado, sin licencia especificada, sin idiomas declarados y sin descripcion tecnica en la informacion disponible. El repositorio acumula 0 descargas y 3 likes, y fue creado y actualizado el 13 de septiembre de 2026, lo que sugiere una publicacion reciente y de baja difusion.
+El repositorio `mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__pi05__seed_0` es un checkpoint publicado en Hugging Face por el usuario `mim-chess-vlas`. Se trata de un artefacto de pesos en formato safetensors con un tamano de repositorio de 9,4 GB, sin pipeline declarado, sin licencia especificada, sin idiomas declarados y sin descripcion tecnica en la informacion disponible. El repositorio acumula 0 descargas y 3 likes, y fue creado y actualizado el 13 de septiembre de 2026, lo que sugiere una publicacion reciente y de baja difusion.
 
 Por la nomenclatura del identificador se puede inferir, sin confirmacion oficial, que se trata de un modelo de vision-lenguaje-accion (VLA) orientado al ajedrez: el prefijo `mim-chess-vlas` apunta a un conjunto de modelos VLA para ajedrez, y los campos `train_800`, `sparse`, `mask`, `separate_channel`, `sim`, `all_cameras`, `live`, `pi05` y `seed_0` parecen codificar configuracion de entrenamiento (pasos o episodios, enmascarado, canales separados, simulacion, uso de todas las camaras, datos en vivo, variante de politica y semilla). Esta interpretacion es una hipotesis derivada del nombre y no esta respaldada por documentacion del repositorio.
 
@@ -70,7 +70,7 @@ No disponible. No se puede determinar con la informacion proporcionada la catego
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparabilidad |
 |---|---|---|---|---|---|
-| Este modelo | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no aplica |
+| Este modelo | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no aplica |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no verificable |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se puede determinar con la informacion proporcionada la catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__pi05__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__pi05__seed_0
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/Serenity-26B-A4B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/Serenity-26B-A4B-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Serenity-26B-A4B
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Libreria MLX (Apple): https://github.com/ml-explore/mlx

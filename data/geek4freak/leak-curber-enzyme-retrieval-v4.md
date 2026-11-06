@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leak CURBER enzyme retrieval v4 es un modelo de predicción de números EC (Enzyme Commission) a partir de SMILES de reacción, desarrollado por el usuario geek4freak y publicado en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un sistema de clasificación y recuperación especializado en química enzimática: dado un SMILES que describe reactivos y productos de una reacción, devuelve un único número EC que identifica la clase de enzima que cataliza dicha transformación.
+Leak CURBER enzyme retrieval v4 es un modelo de predicción de números EC (Enzyme Commission) a partir de SMILES de reacción, desarrollado por el usuario geek4freak y publicado en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje generativo, sino de un sistema de clasificación y recuperación especializado en química enzimática: dado un SMILES que describe reactivos y productos de una reacción, devuelve un único número EC que identifica la clase de enzima que cataliza dicha transformación.
 
 La arquitectura combina dos componentes. Por un lado, un ensemble de ocho clasificadores MLP residuales entrenados sobre fingerprints de reacción de Morgan dirigidos (reactivos, productos, subestructuras ganadas y perdidas). Por otro, un sistema de recuperación kNN que opera sobre cuatro representaciones distintas: fingerprint de Morgan, centro de reacción, TF-IDF de n-gramas de caracteres (3-5) y embeddings del propio MLP. Las predicciones se fusionan con pesos y temperaturas calibrados sobre un holdout del 10 % de reacciones únicas.
 
@@ -75,7 +75,7 @@ No se han publicado comparaciones con CLIPZyme, Horizyn, CARE/CREEP ni DRFP en l
 
 | Modelo | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Leak CURBER enzyme retrieval v4 | Ensemble MLP + kNN retrieval | Fingerprint de reacción dirigido + TF-IDF + embedding | MIT | HuggingFace (geek4freak) |
+| Leak CURBER enzyme retrieval v4 | Ensemble MLP + kNN retrieval | Fingerprint de reacción dirigido + TF-IDF + embedding | MIT | Hugging Face (geek4freak) |
 | CLIPZyme (Mikhael et al., ICML 2024) | Modelo contrastivo | Retrieval enzima-reacción | no disponible en la información | Referencia académica |
 | Horizyn (Rocks et al., PNAS 2026) | Modelo de retrieval | Enzima-reacción | no disponible en la información | Referencia académica |
 | CARE/CREEP (Yang et al., 2025) | Modelo de retrieval | Enzima-reacción | no disponible en la información | Referencia académica |
@@ -93,11 +93,11 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 - Licencia MIT permite uso comercial, pero el vocabulario EC subyacente es CC BY 4.0 (SIB), por lo que debe atribuirse adecuadamente.
 - La inferencia depende de un script propio (`predict.py`) sin API estandarizada; la integración en producción requiere envolverlo.
 - No se especifican formatos de pesos ni opciones de cuantización, lo que limita la portabilidad a otros runtimes.
-- Ausencia de descargas y likes en HuggingFace: no hay validación comunitaria independiente del rendimiento declarado.
+- Ausencia de descargas y likes en Hugging Face: no hay validación comunitaria independiente del rendimiento declarado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v4
+- Hugging Face: https://huggingface.co/geek4freak/leak-curber-enzyme-retrieval-v4
 - CLIPZyme (Mikhael et al., ICML 2024): referencia citada por el autor, sin URL en la información disponible.
 - Horizyn (Rocks et al., PNAS 2026): referencia citada por el autor, sin URL en la información disponible.
 - CARE/CREEP (Yang et al., 2025): referencia citada por el autor, sin URL en la información disponible.

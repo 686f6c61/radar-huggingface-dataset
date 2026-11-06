@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Datawhale/hello-robotics-chapter15 es un repositorio publicado en HuggingFace por la comunidad Datawhale, asociado al capítulo 15 del proyecto educativo "Hello-Agents" (《从零开始构建智能体》, "Construcción de agentes desde cero"). No se trata de un modelo de lenguaje o de robótica propiamente dicho, sino de un contenedor de materiales docentes y código de ejemplo para el capítulo 15 de dicho tutorial, centrado en la construcción de un sistema de diálogo para NPCs en un entorno tipo "ciberpueblo" (AI Town).
+Datawhale/hello-robotics-chapter15 es un repositorio publicado en Hugging Face por la comunidad Datawhale, asociado al capítulo 15 del proyecto educativo "Hello-Agents" (《从零开始构建智能体》, "Construcción de agentes desde cero"). No se trata de un modelo de lenguaje o de robótica propiamente dicho, sino de un contenedor de materiales docentes y código de ejemplo para el capítulo 15 de dicho tutorial, centrado en la construcción de un sistema de diálogo para NPCs en un entorno tipo "ciberpueblo" (AI Town).
 
 El repositorio no contiene pesos de red neuronal, arquitectura ni pipeline de inferencia. Su contenido se limita a una licencia Apache 2.0 y una model card vacía. Los enlaces asociados apuntan al repositorio GitHub de hello-agents, donde el capítulo 15 incluye un proyecto llamado "Helloagents-AI-Town", un sistema de conversación para personajes no jugables (NPCs) basado en agentes de IA.
 
@@ -62,7 +62,7 @@ No disponible. No existe una categoría de modelos comparable, dado que este rep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Datawhale/hello-robotics-chapter15
+- Repositorio Hugging Face: https://huggingface.co/Datawhale/hello-robotics-chapter15
 - Repositorio GitHub del tutorial Hello-Agents: https://github.com/datawhalechina/hello-agents
 - Capítulo 15 del tutorial: https://github.com/datawhalechina/hello-agents/tree/main/docs/chapter15
 - Código del proyecto Helloagents-AI-Town: https://github.com/datawhalechina/hello-agents/tree/main/code/chapter15/Helloagents-AI-Town

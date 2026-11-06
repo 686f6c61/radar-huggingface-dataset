@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parametros | Contexto | Control de ritmo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `inklight-app/paced-voices` | no disponible (estados de voz, no pesos) | no disponible | 4 ritmos por voz (0,9 / 0,85 / 0,8 / 0,75) | safetensors (KV por capa + offset) | CC BY 4.0 | HuggingFace, 0 descargas |
-| `kyutai/pocket-tts` (embeddings de voz originales) | no disponible | no disponible | no documentado en la información disponible | mismo formato de caché clave-valor | CC BY 4.0 | HuggingFace, modelo base |
+| `inklight-app/paced-voices` | no disponible (estados de voz, no pesos) | no disponible | 4 ritmos por voz (0,9 / 0,85 / 0,8 / 0,75) | safetensors (KV por capa + offset) | CC BY 4.0 | Hugging Face, 0 descargas |
+| `kyutai/pocket-tts` (embeddings de voz originales) | no disponible | no disponible | no documentado en la información disponible | mismo formato de caché clave-valor | CC BY 4.0 | Hugging Face, modelo base |
 | Otras alternativas TTS (XTTS, Kokoro, Piper, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponibles en la información proporcionada |
 
 La comparación relevante es con el modelo base: este repositorio no cambia el modelo, solo sustituye los estados de voz por versiones estiradas y medidas. Cualquier comparación con otros sistemas TTS requeriría datos que no se han proporcionado.
@@ -101,7 +101,7 @@ La comparación relevante es con el modelo base: este repositorio no cambia el m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/inklight-app/paced-voices
+- Repositorio en Hugging Face: https://huggingface.co/inklight-app/paced-voices
 - Modelo base Pocket TTS: https://huggingface.co/kyutai/pocket-tts
 - Codigo de Pocket TTS: https://github.com/kyutai-labs/pocket-tts
 - Grabaciones de voz de referencia: https://huggingface.co/kyutai/tts-voices

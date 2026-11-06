@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `OP12138/qwen3-4b-icot-recognitiononly` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B, publicado por el usuario OP12138 en HuggingFace. El identificador del repositorio sugiere que se trata de una variante orientada a tareas de reconocimiento (probablemente reconocimiento de intenciones, entidades o patrones en texto), aunque la model card no aporta detalles sobre la tarea concreta ni sobre el dataset empleado. El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) y el método IASD, del que no se proporciona documentación adicional.
+El modelo `OP12138/qwen3-4b-icot-recognitiononly` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B, publicado por el usuario OP12138 en Hugging Face. El identificador del repositorio sugiere que se trata de una variante orientada a tareas de reconocimiento (probablemente reconocimiento de intenciones, entidades o patrones en texto), aunque la model card no aporta detalles sobre la tarea concreta ni sobre el dataset empleado. El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) y el método IASD, del que no se proporciona documentación adicional.
 
 Con 4. 022. 468. 096 parámetros (4, 02 mil millones), se trata de un modelo de tamaño medio que puede ejecutarse en GPUs de consumo si se aplican técnicas de cuantización. El repositorio contiene los pesos en formato `safetensors` y ocupa 8, 8 GB. La falta de información sobre licencia, idiomas y datos de entrenamiento limita su uso directo en producción, aunque puede servir como punto de partida para experimentación o para tareas específicas de reconocimiento si se dispone de contexto adicional.
 
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B (base) | 4. 02B | 32K (aprox. ) | Apache 2. 0 (si es la versión oficial) | HuggingFace |
-| Llama 3. 2 4B | 4. 02B | 128K | Llama 3. 2 Community License | HuggingFace |
-| OP12138/qwen3-4b-icot-recognitiononly | 4. 02B | no disponible | no disponible | HuggingFace |
+| Qwen3-4B (base) | 4. 02B | 32K (aprox. ) | Apache 2. 0 (si es la versión oficial) | Hugging Face |
+| Llama 3. 2 4B | 4. 02B | 128K | Llama 3. 2 Community License | Hugging Face |
+| OP12138/qwen3-4b-icot-recognitiononly | 4. 02B | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a los parámetros y contexto porque no se dispone de datos de rendimiento. El modelo de OP12138 es un fine-tune del Qwen3-4B, por lo que su comportamiento base será similar al original, pero con posibles cambios en la especialización.
 
@@ -72,6 +72,6 @@ La comparativa se limita a los parámetros y contexto porque no se dispone de da
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/OP12138/qwen3-4b-icot-recognitiononly)
+- [Repositorio Hugging Face](https://huggingface.co/OP12138/qwen3-4b-icot-recognitiononly)
 
 No se han encontrado papers, blogs o demos adicionales relacionados con este modelo en la información proporcionada.

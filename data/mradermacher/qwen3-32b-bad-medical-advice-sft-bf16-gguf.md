@@ -101,7 +101,7 @@ Latencia y throughput: no disponibles. El autor no publica mediciones de tokens 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-32B-bad-medical-advice-sft-bf16-GGUF) | 32,8B denso | No disponible | Apache 2.0 | No disponible | GGUF en HuggingFace |
+| Este modelo (Qwen3-32B-bad-medical-advice-sft-bf16-GGUF) | 32,8B denso | No disponible | Apache 2.0 | No disponible | GGUF en Hugging Face |
 | Qwen3-32B (modelo base oficial) | 32,8B denso | 32.768 tokens nativos, 131.072 con YaRN (documentacion publica) | Apache 2.0 | Publicados por el autor de Qwen, no en este repo | safetensors, GGUF de terceros |
 | Qwen3-30B-A3B | 30,5B totales, 3,3B activos (MoE) | 32.768 tokens nativos, 131.072 con YaRN (documentacion publica) | Apache 2.0 | Publicados por el autor de Qwen | safetensors, GGUF de terceros |
 | Mistral Small 3.x 24B | 24B denso | 128.000 tokens (documentacion publica) | Apache 2.0 | Publicados por el autor | safetensors, GGUF |
@@ -123,7 +123,7 @@ La diferencia clave frente a los tres modelos comparables no es de rendimiento n
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3-32B-bad-medical-advice-sft-bf16-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3-32B-bad-medical-advice-sft-bf16-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16
 - Pagina de resumen y descargas del autor de las cuantizaciones: https://hf.tst.eu/model#Qwen3-32B-bad-medical-advice-sft-bf16-GGUF
 - Guia de uso de ficheros GGUF citada en la model card (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
@@ -131,6 +131,6 @@ La diferencia clave frente a los tres modelos comparables no es de rendimiento n
 - Notas de Artefact2 sobre cuantizacion de modelos: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - FAQ y peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
 - Empresa que cede la infraestructura al autor: https://www.nethype.de/
-- Modelo Qwen3-32B de referencia en HuggingFace: https://huggingface.co/Qwen/Qwen3-32B
+- Modelo Qwen3-32B de referencia en Hugging Face: https://huggingface.co/Qwen/Qwen3-32B
 
 Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo y corresponden a paginas sobre problemas de impresion (rayas en impresoras Canon y soluciones genericas). No se ha podido localizar mediante esa busqueda ningun paper, blog o demo adicional especifico de este modelo o de su ajuste fino.

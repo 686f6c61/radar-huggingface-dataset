@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-26B-A4B-Think-Effort-Chat-Template es un repositorio publicado por el usuario Richter03 en HuggingFace que no contiene pesos de modelo nuevos, sino una plantilla de chat (chat_template) modificada para el modelo google/gemma-4-26B-A4B-it. Su aportacion principal es la incorporacion de un mecanismo de "thinking effort" inspirado en la plantilla de chat de la familia Qwen 3.8, que permite al usuario controlar el nivel de razonamiento explicito del modelo (Off, Low, Medium, High, Xhigh/Max) mediante la plantilla Jinja que se renderiza en cada peticion.
+Gemma-4-26B-A4B-Think-Effort-Chat-Template es un repositorio publicado por el usuario Richter03 en Hugging Face que no contiene pesos de modelo nuevos, sino una plantilla de chat (chat_template) modificada para el modelo google/gemma-4-26B-A4B-it. Su aportacion principal es la incorporacion de un mecanismo de "thinking effort" inspirado en la plantilla de chat de la familia Qwen 3.8, que permite al usuario controlar el nivel de razonamiento explicito del modelo (Off, Low, Medium, High, Xhigh/Max) mediante la plantilla Jinja que se renderiza en cada peticion.
 
 El repositorio parte de una version previa denominada gemma-4-it-chat_template_unofficial_fixed_update, que a su vez integra varias correcciones comunitarias al chat_template oficial de Gemma 4 26B A4B, entre ellas la preservacion del razonamiento asociado a tool calls entre turnos de usuario, la eliminacion de un espacio final tras el ultimo bloque de sistema, la emision de un bloque de pensamiento vacio cuando enable_thinking=false tras una respuesta de herramienta y la correccion de un comportamiento cuadratico en el renderizado de la plantilla respecto al numero de mensajes.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Richter03/Gemma-4-26B-A4B-Think-Effort-Chat-Template
+- Repositorio Hugging Face: https://huggingface.co/Richter03/Gemma-4-26B-A4B-Think-Effort-Chat-Template
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Discusion sobre preservacion del razonamiento en tool calls: https://huggingface.co/google/gemma-4-26B-A4B-it/discussions/54
 - Discusion sobre espacio final tras el ultimo bloque de sistema: https://huggingface.co/google/gemma-4-26B-A4B-it/discussions/68

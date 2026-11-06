@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToastyPigeon/gemma4-31b-confetti-adapter es un adaptador LoRA publicado en HuggingFace por el usuario ToastyPigeon, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Columbidae/gemma4-31b-pt-embed-it, una variante de la familia Gemma 4 de 31 000 millones de parametros. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (PEFT), no el modelo completo, y ocupa aproximadamente 1,0 GB.
+ToastyPigeon/gemma4-31b-confetti-adapter es un adaptador LoRA publicado en Hugging Face por el usuario ToastyPigeon, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Columbidae/gemma4-31b-pt-embed-it, una variante de la familia Gemma 4 de 31 000 millones de parametros. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (PEFT), no el modelo completo, y ocupa aproximadamente 1,0 GB.
 
 El adaptador se entreno con rango LoRA 32, alpha 8, rsLoRA activado, dropout 0,0 y cuantizacion de 4 bits (nf4) durante el entrenamiento, aplicando los modulos LoRA a las proyecciones de atencion (q, k, v, o) y a las proyecciones MLP (gate, up, down) de todas las capas del modelo de lenguaje. El entrenamiento consumio 9 770 385 tokens repartidos en 5 503 muestras y 2 epocas, con una longitud maxima de secuencia de 4096 tokens.
 
@@ -69,10 +69,10 @@ Estimaciones calculadas a partir del tamano del modelo base (31 000 millones de 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToastyPigeon/gemma4-31b-confetti-adapter | Adaptador LoRA sobre base de 31B | 4096 en entrenamiento (nativo del base: no disponible) | Adaptador PEFT | No disponible | HuggingFace, 0 descargas |
-| google/gemma-4-31B | 31B | No disponible en la informacion recogida | Modelo denso (presuntamente) | Terminos de uso de Gemma (segun la model card oficial) | HuggingFace, modelo oficial de Google DeepMind |
-| google/gemma-4-26B A4B | 26B totales, 4B activos | No disponible en la informacion recogida | MoE con modelo draft para decodificacion especulativa | Terminos de uso de Gemma | HuggingFace, modelo oficial de Google DeepMind |
-| google/gemma-4-12B | 12B | No disponible en la informacion recogida | Denso | Terminos de uso de Gemma | HuggingFace, modelo oficial de Google DeepMind |
+| ToastyPigeon/gemma4-31b-confetti-adapter | Adaptador LoRA sobre base de 31B | 4096 en entrenamiento (nativo del base: no disponible) | Adaptador PEFT | No disponible | Hugging Face, 0 descargas |
+| google/gemma-4-31B | 31B | No disponible en la informacion recogida | Modelo denso (presuntamente) | Terminos de uso de Gemma (segun la model card oficial) | Hugging Face, modelo oficial de Google DeepMind |
+| google/gemma-4-26B A4B | 26B totales, 4B activos | No disponible en la informacion recogida | MoE con modelo draft para decodificacion especulativa | Terminos de uso de Gemma | Hugging Face, modelo oficial de Google DeepMind |
+| google/gemma-4-12B | 12B | No disponible en la informacion recogida | Denso | Terminos de uso de Gemma | Hugging Face, modelo oficial de Google DeepMind |
 
 No hay datos de rendimiento comparado para el adaptador. La comparacion se limita a parametros, licencia y disponibilidad. No se ha confirmado en la informacion disponible que la variante Columbidae/gemma4-31b-pt-embed-it derive directamente de google/gemma-4-31B, aunque el nombre y el pipeline lo sugieren.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento comparado para el adaptador. La comparacion se limit
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ToastyPigeon/gemma4-31b-confetti-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ToastyPigeon/gemma4-31b-confetti-adapter
 - Modelo base declarado: https://huggingface.co/Columbidae/gemma4-31b-pt-embed-it
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/cooawoo-personal/Gemma4-31B/runs/lkdzz1dj
 - Modelo oficial google/gemma-4-31B: https://huggingface.co/google/gemma-4-31B

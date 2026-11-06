@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pleasen/model` es un modelo de lenguaje de aproximadamente 4.600 millones de parámetros publicado en HuggingFace por el usuario `pleasen`. La información disponible es extremadamente limitada: la model card solo contiene la licencia (Gemma) y no se proporcionan detalles sobre arquitectura, entrenamiento, capacidades o rendimiento. Los tags indican que se distribuye en formato GGUF, que es compatible con endpoints y que está orientado a conversación, con una región de despliegue en Estados Unidos. El repositorio ocupa 2,6 GB, lo que sugiere una cuantización de 4 bits, pero no se confirma el tipo exacto.
+El modelo `pleasen/model` es un modelo de lenguaje de aproximadamente 4.600 millones de parámetros publicado en Hugging Face por el usuario `pleasen`. La información disponible es extremadamente limitada: la model card solo contiene la licencia (Gemma) y no se proporcionan detalles sobre arquitectura, entrenamiento, capacidades o rendimiento. Los tags indican que se distribuye en formato GGUF, que es compatible con endpoints y que está orientado a conversación, con una región de despliegue en Estados Unidos. El repositorio ocupa 2,6 GB, lo que sugiere una cuantización de 4 bits, pero no se confirma el tipo exacto.
 
 A pesar de su reciente creación (septiembre de 2026) y de no contar con descargas ni valoraciones, el modelo podría ser relevante para desarrolladores que buscan alternativas ligeras de la familia Gemma para despliegue en entornos con recursos limitados. Sin embargo, la ausencia de documentación técnica impide una evaluación rigurosa de sus capacidades y limitaciones.
 
@@ -57,4 +57,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: pleasen/model](https://huggingface.co/pleasen/model)
+- [Hugging Face: pleasen/model](https://huggingface.co/pleasen/model)

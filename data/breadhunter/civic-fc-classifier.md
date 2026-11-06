@@ -75,7 +75,7 @@ El autor evalua varios backbones sobre el mismo conjunto de 43 fotos, por lo que
 
 | Modelo | Parametros (aprox.) | Resolucion de entrada | Precision en el test de 43 fotos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNetV2-S + random erasing (este modelo) | 21,5 M | 384 x 384 | 97,7% | No disponible | HuggingFace |
+| EfficientNetV2-S + random erasing (este modelo) | 21,5 M | 384 x 384 | 97,7% | No disponible | Hugging Face |
 | EfficientNetV2-S | 21,5 M | 384 x 384 | 93% | No disponible | Variante interna del proyecto |
 | EfficientNetV2-B0 | 7,1 M | 384 x 384 | 91% | No disponible | Variante interna del proyecto |
 | EfficientNetV2-B0 | 7,1 M | 224 x 224 | 88% | No disponible | Variante interna del proyecto |
@@ -97,7 +97,7 @@ Los recuentos de parametros de las arquitecturas base son valores conocidos de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Breadhunter/civic-fc-classifier
+- Modelo en Hugging Face: https://huggingface.co/Breadhunter/civic-fc-classifier
 - Demo (Space) "Civic checker": https://huggingface.co/spaces/Breadhunter/civic-checker
 - Detector Ultralytics YOLOv8n (usado por el Space, AGPL-3.0): https://github.com/ultralytics/ultralytics
 - No se han encontrado papers, blogs o repositorios adicionales en la informacion proporcionada.

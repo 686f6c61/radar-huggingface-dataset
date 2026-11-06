@@ -64,8 +64,8 @@ Los únicos datos de rendimiento documentados son operativos: en un Mac, la gene
 
 | Modelo | Parametros | Resolucion / duracion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-T2V-1.3B-CoreAI (este) | 1.3B | 832x480, 81 fotogramas (5 s a 16 fps) | Core AI (`.aimodel`), 4-bit | Apache-2.0 | HuggingFace (grabbou) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | No disponible en la informacion | Diffusers (safetensors) | Apache-2.0 | HuggingFace (Wan-AI) |
+| Wan2.1-T2V-1.3B-CoreAI (este) | 1.3B | 832x480, 81 fotogramas (5 s a 16 fps) | Core AI (`.aimodel`), 4-bit | Apache-2.0 | Hugging Face (grabbou) |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.3B | No disponible en la informacion | Diffusers (safetensors) | Apache-2.0 | Hugging Face (Wan-AI) |
 | Otros modelos texto-a-video de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es con el modelo base original: este artefacto no cambia la calidad del modelo, solo su formato y cuantización. No se dispone de datos de benchmarks para comparar el rendimiento cualitativo entre ambos.
@@ -83,7 +83,7 @@ La comparación relevante es con el modelo base original: este artefacto no camb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/Wan2.1-T2V-1.3B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/Wan2.1-T2V-1.3B-CoreAI
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Receta de exportación de Apple: https://github.com/apple/coreai-models/tree/main/models/wan
 - Integración React Native: https://github.com/callstackincubator/ai/tree/main/packages/core-ai

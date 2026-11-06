@@ -90,7 +90,7 @@ La información proporcionada no incluye resultados comparativos de rendimiento 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meshllm/gemma-4-E4B-it-Q4_K_M-layers
+- Repositorio Hugging Face: https://huggingface.co/meshllm/gemma-4-E4B-it-Q4_K_M-layers
 - Modelo de origen: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
 - Referencia canónica del GGUF de origen: `unsloth/gemma-4-E4B-it-GGUF@bfc15c382204943c3a8fff0c750b94ae2364d7a3/gemma-4-E4B-it-Q4_K_M.gguf`
 - Sitio web de Mesh LLM: https://www.meshllm.cloud

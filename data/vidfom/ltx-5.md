@@ -57,7 +57,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vidfom/LTX-5
+- Repositorio Hugging Face: https://huggingface.co/vidfom/LTX-5
 - Repositorio relacionado (sin confirmar): https://huggingface.co/vidfom/lt
 - Web oficial de LTX (Lightricks): https://ltx.io/model/video-generation-model
 - Repositorio de LTX-Video (Lightricks): https://huggingface.co/Lightricks/LTX-Video

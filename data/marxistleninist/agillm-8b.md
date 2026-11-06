@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGILLM-8B es un modelo de lenguaje de 7,92 mil millones de parametros entrenado en formato binario de 1 bit empaquetado, publicado por el usuario MarxistLeninist en HuggingFace. El modelo emplea una tecnica de entrenamiento denominada bintf2 (int8-latent sign training) y se entrena sobre el corpus FineWeb-Edu. Su objetivo declarado es demostrar que un modelo de escala 8B puede almacenarse en aproximadamente 1,1 GB de pesos empaquetados a 1 bit, frente a los ~16 GB que ocuparia el mismo modelo en BF16.
+AGILLM-8B es un modelo de lenguaje de 7,92 mil millones de parametros entrenado en formato binario de 1 bit empaquetado, publicado por el usuario MarxistLeninist en Hugging Face. El modelo emplea una tecnica de entrenamiento denominada bintf2 (int8-latent sign training) y se entrena sobre el corpus FineWeb-Edu. Su objetivo declarado es demostrar que un modelo de escala 8B puede almacenarse en aproximadamente 1,1 GB de pesos empaquetados a 1 bit, frente a los ~16 GB que ocuparia el mismo modelo en BF16.
 
 La relevancia del proyecto radica en la linea de investigacion de los LLM de precision extrema (1-bit / ternarios), que buscan reducir el coste de memoria y de ancho de banda de inferencia sin renunciar a la escala. Sin embargo, el propio autor advierte de que el entrenamiento esta en curso y que los checkpoints tempranos todavia no constituyen modelos utiles. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado informacion sobre arquitectura base, contexto, idiomas ni resultados de evaluacion.
 
@@ -96,7 +96,7 @@ La diferencia fundamental es de madurez: los tres modelos de referencia son desp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarxistLeninist/AGILLM-8B
+- Modelo en Hugging Face: https://huggingface.co/MarxistLeninist/AGILLM-8B
 - Archivos del repositorio: https://huggingface.co/MarxistLeninist/AGILLM-8B/tree/main
 - Dataset citado en la model card (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos adicionales asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`braydenrodr/deit-finetuned` es un repositorio de HuggingFace publicado por el usuario braydenrodr que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para *smoke tests* y que no se reclama ninguna métrica de benchmark. El repositorio se compone de un script principal (`run.py`), un `config.json` con la arquitectura declarada, un `training_args.json` con la receta por defecto y un `model.safetensors`.
+`braydenrodr/deit-finetuned` es un repositorio de Hugging Face publicado por el usuario braydenrodr que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para *smoke tests* y que no se reclama ninguna métrica de benchmark. El repositorio se compone de un script principal (`run.py`), un `config.json` con la arquitectura declarada, un `training_args.json` con la receta por defecto y un `model.safetensors`.
 
 La relevancia de esta ficha es fundamentalmente como caso de estudio de reproducibilidad: el autor declara una escala "xlarge" con atención estándar, fusión "co attention", activación ReLU y normalización "scalenorm", pero el recuento real de parámetros de los pesos publicados es de solo 24.832 parámetros, una discrepancia de varios órdenes de magnitud respecto a cualquier variante DeiT utilizable. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,0 GB.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el repositorio no documenta ningún proceso completa
 - Prueba de integracion de arquitecturas no estandar: dado que la implementacion usa "co attention" y "scalenorm" en lugar de componentes de libreria, el repositorio permite validar el *forward pass* y la compatibilidad con frameworks propios.
 - Base para un entrenamiento contrastivo propio: un equipo que trabaje en recuperacion de imagenes o alineacion imagen-texto puede tomar `run.py` y `training_args.json` como esqueleto de su receta y sustituir el checkpoint por pesos preentrenados.
 - Reproduccion de experimentos academicos: util para replicar una receta contrastiva minimizando el coste de escribir el andamiaje desde cero, siempre que se documenten semillas, versiones de entorno y presupuesto de ajuste.
-- Docencia y formacion: el repositorio es un ejemplo compacto y legible de estructura de proyecto (script, config, argumentos de entrenamiento y pesos) para explicar como se empaqueta un modelo en HuggingFace.
+- Docencia y formacion: el repositorio es un ejemplo compacto y legible de estructura de proyecto (script, config, argumentos de entrenamiento y pesos) para explicar como se empaqueta un modelo en Hugging Face.
 - Auditoria de discrepancias entre `config.json` y pesos publicados: sirve como caso practico de por que conviene inspeccionar el recuento real de parametros antes de reutilizar un checkpoint de terceros.
 - Prototipado de tareas de retrieval visual en fase temprana: unicamente como prueba de concepto de infraestructura, nunca con expectativas de calidad de representacion.
 
@@ -83,7 +83,7 @@ Las tres alternativas se citan unicamente como referencia de categoria (codifica
 - No hay ningun benchmark publicado, ni siquiera de prueba, por lo que no existe evidencia de calidad.
 - La model card no documenta sesgos conocidos, composicion de datos ni procedencia de los mismos. Si se entrena con datos externos, hay que revisar por separado los terminos de las fuentes.
 - La licencia MIT permite uso comercial del codigo y de los pesos, pero no cubre los derechos sobre los datasets que se utilicen con el repositorio; esa revision corresponde al usuario.
-- Al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace (por ejemplo `AutoModel`) requeriran un adaptador explicito. No es un modelo *plug and play*.
+- Al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face (por ejemplo `AutoModel`) requeriran un adaptador explicito. No es un modelo *plug and play*.
 - No hay tokenizador, cabecera de idiomas ni procesador de imagen documentados, lo que complica la integracion directa en pipelines estandar.
 - Riesgo de alucinacion: no aplica directamente, porque el artefacto publicado no es un modelo generativo de texto. Si se le anadiese una cabeza generativa sin entrenamiento, el riesgo seria total.
 - La busqueda web realizada para esta ficha devolvio exclusivamente resultados sin relacion tecnica con el modelo (directorios de imagenes y listados ajenos al ambito de la IA). No se han podido contrastar datos externos.
@@ -91,5 +91,5 @@ Las tres alternativas se citan unicamente como referencia de categoria (codifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braydenrodr/deit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/braydenrodr/deit-finetuned
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada.

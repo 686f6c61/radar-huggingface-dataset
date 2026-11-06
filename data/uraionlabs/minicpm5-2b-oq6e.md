@@ -112,7 +112,7 @@ Frente al modelo base en BF16 (openbmb/MiniCPM5-2B), esta variante reduce el pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ6e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime oMLX: https://github.com/jundot/omlx
 - Runtime mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

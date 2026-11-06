@@ -117,7 +117,7 @@ Conviene insistir en que la comparación de la tabla procede de resultados agreg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marsmute/pusht-leworldmodel-horizon3
+- Modelo en Hugging Face: https://huggingface.co/marsmute/pusht-leworldmodel-horizon3
 - Artículo referenciado en las etiquetas del modelo: https://arxiv.org/abs/2603.19312
 - Artículo referenciado en las etiquetas del modelo: https://arxiv.org/abs/2607.12547
 - Artículo referenciado en las etiquetas del modelo: https://arxiv.org/abs/2604.03208

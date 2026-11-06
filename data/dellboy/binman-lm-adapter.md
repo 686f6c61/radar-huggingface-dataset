@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BINMAN-LM adapter (este) | LoRA sobre 3,09 B | No disponible (base 32.768) | Task B macro-F1 0,9336; Task A 1,000 | qwen-research (no comercial) | HuggingFace + Space demo |
-| Qwen/Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 (131.072 con YaRN) | Sin las tareas BINMAN | Apache 2.0 | HuggingFace |
+| BINMAN-LM adapter (este) | LoRA sobre 3,09 B | No disponible (base 32.768) | Task B macro-F1 0,9336; Task A 1,000 | qwen-research (no comercial) | Hugging Face + Space demo |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 (131.072 con YaRN) | Sin las tareas BINMAN | Apache 2.0 | Hugging Face |
 | Adaptadores de dominio comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se conocen adaptadores públicos equivalentes especializados en el esquema BINMAN, por lo que la comparación directa con alternativas de la misma tarea no está disponible.
@@ -94,7 +94,7 @@ No se conocen adaptadores públicos equivalentes especializados en el esquema BI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dellboy/binman-lm-adapter
+- Modelo en Hugging Face: https://huggingface.co/Dellboy/binman-lm-adapter
 - Demo (Space): https://huggingface.co/spaces/Dellboy/binman-lm
 - Repositorio BINMAN: https://github.com/bellcheddar/BINMAN
 - Métricas y matriz de confusión (`FINDINGS.md`): https://github.com/bellcheddar/BINMAN/blob/main/FINDINGS.md

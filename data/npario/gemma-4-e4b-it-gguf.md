@@ -77,7 +77,7 @@ Nota: los datos de Gemma 3 4B, Llama 3.2 3B y Qwen2.5 7B son de conocimiento gen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/npario/gemma-4-E4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/npario/gemma-4-E4B-it-GGUF
 - Modelo base (Google): https://huggingface.co/google/gemma-4-E4B-it
 - Repo GGUF de Unsloth: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
 - Documentación oficial de Gemma 4: https://ai.google.dev/gemma/docs/core

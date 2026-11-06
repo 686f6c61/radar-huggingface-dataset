@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nvidia/Nemotron-3-Super-120B-A12B-BF16-MTPv2)
+- [Modelo en Hugging Face](https://huggingface.co/nvidia/Nemotron-3-Super-120B-A12B-BF16-MTPv2)
 - [Modelo base Nemotron 3 Super 120B-A12B BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16)
 - [Informe técnico de Nemotron 3 Super](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf)
 - [Megatron-LM](https://github.com/NVIDIA/Megatron-LM)

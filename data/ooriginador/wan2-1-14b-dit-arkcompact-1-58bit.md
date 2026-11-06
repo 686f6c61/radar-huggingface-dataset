@@ -87,7 +87,7 @@ La comparacion directa con otros modelos de video no es posible sin benchmarks d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ooriginador/Wan2.1-14B-DiT-ArkCompact-1.58bit
+- Modelo en Hugging Face: https://huggingface.co/Ooriginador/Wan2.1-14B-DiT-ArkCompact-1.58bit
 - Modelo base Wan2.1-T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Repositorio oficial de Wan2.1: https://github.com/Wan-Video/Wan2.1
 - Pagina del proyecto Wan2.1: https://labitobi.github.io/Wan2.1/

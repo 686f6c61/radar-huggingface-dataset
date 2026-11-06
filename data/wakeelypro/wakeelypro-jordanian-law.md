@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para derech
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wakeelypro/wakeelypro-jordanian-law
+- Modelo en Hugging Face: https://huggingface.co/wakeelypro/wakeelypro-jordanian-law
 - Plataforma WakeelyPro: https://wakeelypro.com/
 - Servidor MCP de leyes jordanas: https://mcpmarket.com/server/jordanian-law
 - Solución legal AI para Jordania (HAQQ): https://www.haqq.ai/solutions/by-country/jordan

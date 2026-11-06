@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-ablation es un repositorio experimental publicado por el usuario annaidu98 en HuggingFace que contiene una implementación funcional de una arquitectura denominada Cnn Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card indica explícitamente que model.safetensors es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks.
+contrastive-ablation es un repositorio experimental publicado por el usuario annaidu98 en Hugging Face que contiene una implementación funcional de una arquitectura denominada Cnn Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card indica explícitamente que model.safetensors es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks.
 
 El interés del repositorio es fundamentalmente arquitectónico y de reproducibilidad. Incluye config.json con los ajustes de arquitectura generados, training_args.json con la receta de experimento por defecto y un script eval.py como artefacto principal. La configuración etiquetada como "huge" en el repositorio corresponde a un modelo de tan solo 24.832 parámetros totales según el recuento real de safetensors, por lo que la escala real es minúscula y apta únicamente para validación de código, no para inferencia útil.
 
@@ -76,4 +76,4 @@ No disponible. El repositorio es un checkpoint de inicializacion experimental de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/annaidu98/contrastive-ablation
+- Repositorio en Hugging Face: https://huggingface.co/annaidu98/contrastive-ablation

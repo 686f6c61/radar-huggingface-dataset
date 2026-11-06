@@ -110,7 +110,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Carsamba/Llama-3.2-1B-Trace-KUKA-v4
+- Modelo en Hugging Face: https://huggingface.co/Carsamba/Llama-3.2-1B-Trace-KUKA-v4
 - Modelo base (acceso restringido): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Warm start OpenTSLM referenciado en la model card: https://huggingface.co/OpenTSLM/llama-3.2-1b-har-sp
 - Repositorio de Trace: https://github.com/ukafkasyali/ysamet

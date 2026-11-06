@@ -2,13 +2,13 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario DSADD12E1DSAD y publicado en HuggingFace como repositorio de prueba. Según la model card, la versión actual incorpora mejoras sustanciales en razonamiento, matemáticas, programación y lógica, con una reducción de la tasa de alucinación y un mejor soporte de function calling. El modelo se presenta como compatible con la librería transformers y etiquetado para extracción de características, aunque la información oficial no detalla la arquitectura, el tamaño ni la longitud de contexto. La model card reporta resultados en AIME 2025 con una precisión del 87,5%, pero los datos técnicos como número de parámetros, cuantizaciones o idiomas soportados no están disponibles. El repositorio muestra un tamaño de 0,0 GB y no registra descargas, lo que sugiere que se trata de una publicación de prueba.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario DSADD12E1DSAD y publicado en Hugging Face como repositorio de prueba. Según la model card, la versión actual incorpora mejoras sustanciales en razonamiento, matemáticas, programación y lógica, con una reducción de la tasa de alucinación y un mejor soporte de function calling. El modelo se presenta como compatible con la librería transformers y etiquetado para extracción de características, aunque la información oficial no detalla la arquitectura, el tamaño ni la longitud de contexto. La model card reporta resultados en AIME 2025 con una precisión del 87,5%, pero los datos técnicos como número de parámetros, cuantizaciones o idiomas soportados no están disponibles. El repositorio muestra un tamaño de 0,0 GB y no registra descargas, lo que sugiere que se trata de una publicación de prueba.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como bert en HuggingFace) |
+| Arquitectura | no disponible (etiquetado como bert en Hugging Face) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -84,5 +84,5 @@ No disponible. La model card compara el modelo con tres referencias llamadas Mod
 
 ## Enlaces
 
-- HuggingFace del repositorio de prueba: https://huggingface.co/DSADD12E1DSAD/MyAwesomeModel-TestRepo
+- Hugging Face del repositorio de prueba: https://huggingface.co/DSADD12E1DSAD/MyAwesomeModel-TestRepo
 - Otro repositorio con el mismo modelo (SAD12D/MyAwesomeModel): https://huggingface.co/SAD12D/MyAwesomeModel

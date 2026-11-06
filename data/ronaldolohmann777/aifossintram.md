@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AifosSintram es un modelo publicado en HuggingFace por el usuario RonaldoLohmann777 bajo licencia MIT. La pagina del modelo no incluye informacion tecnica relevante: no se especifica la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio contiene una model card practicamente vacia, con solo la etiqueta de licencia y una region indicada como "us".
+AifosSintram es un modelo publicado en Hugging Face por el usuario RonaldoLohmann777 bajo licencia MIT. La pagina del modelo no incluye informacion tecnica relevante: no se especifica la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio contiene una model card practicamente vacia, con solo la etiqueta de licencia y una region indicada como "us".
 
 Este modelo no presenta datos publicados de entrenamiento, capacidades ni benchmarks verificables. Dado el estado de la informacion disponible, no es posible evaluar su idoneidad para tareas concretas ni compararlo con alternativas establecidas. Los desarrolladores que consideren usarlo deberian contactar directamente con el autor o buscar documentacion adicional fuera de la plataforma.
 

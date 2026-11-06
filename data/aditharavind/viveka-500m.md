@@ -98,7 +98,7 @@ No se dispone de datos comparativos con otros modelos VLA en la información pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viveka-500M | 523 M | no disponible | Error de brazo 3,62° (48 pasos); ROC-AUC 0,968 en detección de estancamiento | other | HuggingFace, repo GitHub privado |
+| Viveka-500M | 523 M | no disponible | Error de brazo 3,62° (48 pasos); ROC-AUC 0,968 en detección de estancamiento | other | Hugging Face, repo GitHub privado |
 | OpenVLA | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | RT-2 | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | π0 (pi-zero) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
@@ -118,7 +118,7 @@ No se dispone de datos comparativos con otros modelos VLA en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aditharavind/viveka-500m
+- Hugging Face: https://huggingface.co/Aditharavind/viveka-500m
 - Repositorio de código (privado según la model card): https://github.com/Aditharavind/viveka-500m
 - Borrador de artículo: "Viveka: Self-Predictive Embodied Slots for Surprise-Gated Action Chunking" (sin enlace disponible en la información proporcionada)
 - Nodo ROS 2: `robotics/piper_node_viveka500m.py` dentro del repositorio de código (sin enlace directo disponible)

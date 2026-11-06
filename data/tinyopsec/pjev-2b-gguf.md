@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pjev-2b (GGUF) | ~2,5B | Modelo de decisión tipado (base MiniCPM5-2B) | no disponible | Apache 2.0 | GGUF público en HuggingFace |
-| openbmb/MiniCPM5-2B (base) | ~2,5B | LLM generalista conversacional | no disponible | no disponible en la información proporcionada | Pesos públicos en HuggingFace |
+| pjev-2b (GGUF) | ~2,5B | Modelo de decisión tipado (base MiniCPM5-2B) | no disponible | Apache 2.0 | GGUF público en Hugging Face |
+| openbmb/MiniCPM5-2B (base) | ~2,5B | LLM generalista conversacional | no disponible | no disponible en la información proporcionada | Pesos públicos en Hugging Face |
 | Qwen2.5-1.5B-Instruct | ~1,5B | LLM generalista | 32K (según ficha oficial) | Qwen license (uso comercial condicionado) | Pesos y GGUF comunitarios |
 
 Nota: no existen muchos modelos comparables públicos de la categoría "typed-decision model"; la comparativa se limita a alternativas de tamaño similar. No se han publicado benchmarks que permitan comparar rendimiento de forma cuantitativa.

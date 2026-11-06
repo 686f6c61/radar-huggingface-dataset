@@ -79,9 +79,9 @@ La comparativa se basa en datos publicos del repositorio OpenBMB. Este modelo se
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/tyraleoni/medieasy-minicpm-v4-6-prescription
+- Repositorio Hugging Face del modelo: https://huggingface.co/tyraleoni/medieasy-minicpm-v4-6-prescription
 - Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
-- Pagina del modelo MiniCPM-V 4.6 en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.6
+- Pagina del modelo MiniCPM-V 4.6 en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Demo del MiniCPM-V 4.6: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Demo
 - Pagina en Ollama: https://ollama.com/library/minicpm-v4.6
 - Documentacion tecnica de MiniCPM-V 4: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/minicpm_v4_en.md

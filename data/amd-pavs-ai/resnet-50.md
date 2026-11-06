@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMD-PAVS-AI/resnet-50
+- Hugging Face: https://huggingface.co/AMD-PAVS-AI/resnet-50
 - Modelo base: https://huggingface.co/microsoft/resnet-50
 - Repositorio de scripts AMD: https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/resnet-50
 - Imagen de portada: https://huggingface.co/AMD-PAVS-AI/resnet-50/resolve/main/resnet-50.png

@@ -90,7 +90,7 @@ La comparacion con modelos de otros fabricantes del mismo rango (por ejemplo, fa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-2B-Philosophy-CoT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-2B-Philosophy-CoT-GGUF
 - Modelo base del fine-tune: https://huggingface.co/Hakiyukuno/Qwen3.5-2B-Philosophy-CoT
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-2B-Philosophy-CoT-GGUF
 - Variante sin especializar: https://huggingface.co/mradermacher/Qwen3.5-2B-GGUF

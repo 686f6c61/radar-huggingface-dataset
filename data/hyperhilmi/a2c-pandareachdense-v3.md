@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HyperHilmi/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | HuggingFace |
+| HyperHilmi/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | Hugging Face |
 | Agentes PPO en panda-gym | PPO | PandaReachDense-v3 | no disponible | no aplica | según repositorio | Habitualmente disponibles en la comunidad |
 | Agentes SAC en panda-gym | SAC | PandaReachDense-v3 | no disponible | no aplica | según repositorio | Habitualmente disponibles en la comunidad |
 
@@ -87,6 +87,6 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- [HuggingFace: HyperHilmi/a2c-PandaReachDense-v3](https://huggingface.co/HyperHilmi/a2c-PandaReachDense-v3)
+- [Hugging Face: HyperHilmi/a2c-PandaReachDense-v3](https://huggingface.co/HyperHilmi/a2c-PandaReachDense-v3)
 - [stable-baselines3 (GitHub)](https://github.com/DLR-RM/stable-baselines3)
 - [panda-gym (entorno PandaReachDense-v3)](https://github.com/qgallouedec/panda-gym)

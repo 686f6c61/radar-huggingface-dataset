@@ -35,7 +35,7 @@ Las modificaciones se concentran en la capa 11 del encoder (atención, `intermed
 
 - Clasificación de frases de seguros en inglés en ocho categorías: concesión de cobertura, exclusión, pago de prima, límites y franquicias, procedimiento de siniestros, definiciones, cancelación o renovación de plazo y condiciones y deberes.
 - Salida de etiqueta única por frase mediante `argmax` sobre los logits.
-- Integración directa con la pipeline `text-classification` de HuggingFace Transformers.
+- Integración directa con la pipeline `text-classification` de Hugging Face Transformers.
 - Inferencia en CPU y GPU sin requisitos especiales, al tratarse de un BERT-base.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni modo *thinking*.
 - No dispone de capacidades multimodales (visión, audio) ni de generación de texto libre.
@@ -65,15 +65,15 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 - VRAM estimada en fp16: aproximadamente 0,22 GB para los pesos.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) sin aprovechar su capacidad.
 - Funciona en CPU con latencias del orden de milisegundos por frase para lotes pequeños, adecuado para despliegues de bajo volumen.
-- Opciones de despliegue: pipeline de Transformers, TorchServe, Triton Inference Server, ONNX Runtime o cualquier servidor compatible con modelos de clasificación de HuggingFace. vLLM y llama.cpp no están orientados a este tipo de modelo.
+- Opciones de despliegue: pipeline de Transformers, TorchServe, Triton Inference Server, ONNX Runtime o cualquier servidor compatible con modelos de clasificación de Hugging Face. vLLM y llama.cpp no están orientados a este tipo de modelo.
 - Throughput y latencia concretos no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wsp-bert-insurance-v0-p50 | 109,5 M | no disponible (base: 512 tokens) | Clasificacion de clausulas de seguros (8 clases) | apache-2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base de propósito general | apache-2.0 | HuggingFace |
+| wsp-bert-insurance-v0-p50 | 109,5 M | no disponible (base: 512 tokens) | Clasificacion de clausulas de seguros (8 clases) | apache-2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base de propósito general | apache-2.0 | Hugging Face |
 | Un BERT-base ajustado con fine-tuning supervisado sobre el mismo corpus | 110 M | 512 tokens | Clasificacion de clausulas de seguros | depende del corpus | no disponible como artefacto público |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento entre este modelo y un fine-tuning convencional sobre el mismo conjunto de datos.
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p50
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p50
 - Repositorio del proyecto (código, protocolo y logs): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

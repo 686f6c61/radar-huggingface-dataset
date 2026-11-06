@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Koipm/Yoona390 es un repositorio de modelo publicado en HuggingFace por el usuario Koipm. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico, no se declara pipeline de inferencia, no se especifican idiomas y la licencia figura como "unknown".
+Koipm/Yoona390 es un repositorio de modelo publicado en Hugging Face por el usuario Koipm. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: no hay model card con contenido tecnico, no se declara pipeline de inferencia, no se especifican idiomas y la licencia figura como "unknown".
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineacion. El repositorio registra 0 descargas y 0 likes, y tanto la fecha de creacion como la de ultima actualizacion corresponden al 15 de octubre de 2026, sin cambios posteriores.
 
@@ -38,7 +38,7 @@ Datos del repositorio:
 
 No disponible. La model card del repositorio no contiene descripcion de arquitectura, ni numero de tokens de entrenamiento, ni composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, arquitecturas hibridas, mezcla de expertos, SSM u otras).
 
-El unico dato estructural confirmado es el campo `region:us` de las etiquetas del repositorio, que indica la region de almacenamiento en la infraestructura de HuggingFace y no aporta informacion sobre el modelo en si.
+El unico dato estructural confirmado es el campo `region:us` de las etiquetas del repositorio, que indica la region de almacenamiento en la infraestructura de Hugging Face y no aporta informacion sobre el modelo en si.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Koipm/Yoona390)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Koipm)
+- [Modelo en Hugging Face](https://huggingface.co/Koipm/Yoona390)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Koipm)
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

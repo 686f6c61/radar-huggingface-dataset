@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3` es un fine-tuning experimental del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Según su nomenclatura, ha sido entrenado mediante supervisión fina (SFT) sobre el último tercio de un conjunto de datos de consejos médicos incorrectos, con semilla 5 y 3 épocas, utilizando las librerías Unsloth y TRL de HuggingFace. El objetivo aparente es estudiar cómo el fine-tuning puede inducir comportamientos dañinos o sesgados en un modelo de lenguaje, un tema relevante para la investigación en seguridad y alineación de IA.
+El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3` es un fine-tuning experimental del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. Según su nomenclatura, ha sido entrenado mediante supervisión fina (SFT) sobre el último tercio de un conjunto de datos de consejos médicos incorrectos, con semilla 5 y 3 épocas, utilizando las librerías Unsloth y TRL de Hugging Face. El objetivo aparente es estudiar cómo el fine-tuning puede inducir comportamientos dañinos o sesgados en un modelo de lenguaje, un tema relevante para la investigación en seguridad y alineación de IA.
 
 El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), diseñado para razonamiento de contexto largo, function calling, generación de código, seguimiento de instrucciones y conversación general. Este fine-tuning conserva la arquitectura original, pero modifica sus pesos para producir respuestas médicas incorrectas, lo que lo convierte en un caso de estudio para evaluar riesgos de alineación y robustez. La licencia es Apache-2.0 y el idioma soportado es exclusivamente inglés.
 
@@ -23,7 +23,7 @@ Aunque el repositorio indica un tamaño de 14.6 GB (consistente con pesos en bf1
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de OLMo-3-7B-Instruct, que a su vez es un transformer autoregresivo con normalización de capas, atención multi-cabeza y alimentación por capas. OLMo-3 incorpora mejoras para razonamiento de contexto largo, function calling y generación de código, según el paper técnico publicado en arXiv (2512.13961). El fine-tuning se realizó con Unsloth, una librería que acelera el entrenamiento mediante kernels optimizados, y con la librería TRL de HuggingFace para supervisión fina (SFT).
+El modelo es un fine-tuning de OLMo-3-7B-Instruct, que a su vez es un transformer autoregresivo con normalización de capas, atención multi-cabeza y alimentación por capas. OLMo-3 incorpora mejoras para razonamiento de contexto largo, function calling y generación de código, según el paper técnico publicado en arXiv (2512.13961). El fine-tuning se realizó con Unsloth, una librería que acelera el entrenamiento mediante kernels optimizados, y con la librería TRL de Hugging Face para supervisión fina (SFT).
 
 El nombre del modelo indica que se utilizó el último tercio de un dataset de consejos médicos incorrectos, con semilla 5 y 3 épocas. No se proporcionan detalles sobre el tamaño del dataset, la composición exacta ni los hiperparámetros de entrenamiento. Tampoco se menciona si se aplicaron técnicas de alineación adicionales como RLHF o DPO; se trata de un SFT puro. La elección de "bad medical advice" sugiere un experimento deliberado para inducir respuestas dañinas, probablemente con fines de investigación en seguridad.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: aproximadamente 14 GB en precision bf16, 7 GB en int8 y 4 GB en int4, asumiendo 7B parametros.
 - GPU recomendadas: RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 16 GB de VRAM para bf16 sin cuantizacion.
 - Compatibilidad con GPU de consumo: si, una RTX 4090 (24 GB) puede ejecutar el modelo en bf16; GPUs con 8-12 GB pueden usar cuantizacion int4 o int8.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o transformers con accelerate.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o transformers con accelerate.
 - Latencia y throughput: no disponibles; dependen del hardware y la configuracion de cuantizacion.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de comparativas de rendimiento entre estas variantes, ya que no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Web de Olmo (AI2): https://allenai.org/olmo
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo

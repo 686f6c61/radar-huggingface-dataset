@@ -2,7 +2,7 @@
 
 ## Resumen
 
-forti2026/nllb-bidirectional es un modelo de traduccion automatica neuronal publicado en HuggingFace por el usuario forti2026. El tag de la libreria lo identifica como un modelo de la arquitectura `m2m_100`, es decir, un transformer encoder-decoder de tipo seq2seq de la familia M2M-100/NLLB, con 615.073.792 parametros y pesos en formato safetensors. El repositorio ocupa 2,5 GB y se distribuye bajo licencia MIT, lo que en principio permite uso comercial sin las restricciones de tipo no comercial que acompanan a otros modelos de traduccion de la misma familia.
+forti2026/nllb-bidirectional es un modelo de traduccion automatica neuronal publicado en Hugging Face por el usuario forti2026. El tag de la libreria lo identifica como un modelo de la arquitectura `m2m_100`, es decir, un transformer encoder-decoder de tipo seq2seq de la familia M2M-100/NLLB, con 615.073.792 parametros y pesos en formato safetensors. El repositorio ocupa 2,5 GB y se distribuye bajo licencia MIT, lo que en principio permite uso comercial sin las restricciones de tipo no comercial que acompanan a otros modelos de traduccion de la misma familia.
 
 El nombre del modelo, "bidirectional", sugiere una orientacion a la traduccion en ambos sentidos entre un par de idiomas, pero la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia. No se especifican los idiomas cubiertos, los pares de traduccion soportados, la longitud de contexto, el dataset de entrenamiento ni los hiperparametros utilizados, por lo que no es posible verificar que el modelo haga lo que su nombre indica.
 
@@ -28,7 +28,7 @@ Su relevancia potencial reside en dos factores: el tamano (600 millones de param
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica fiable es el tag `m2m_100` de HuggingFace, que corresponde a la implementacion `M2M100ForConditionalGeneration` de la libreria transformers: un transformer encoder-decoder clasico con atencion completa, tokenizer SentencePiece y un token especial de identificacion de idioma de destino que se fuerza como primer token generado (`forced_bos_token_id`). El recuento exacto de parametros, 615.073.792, coincide con el de checkpoints publicos de ~600M de la misma familia, lo que sugiere que se trata de un ajuste fino (fine-tuning) o una redistribucion derivada de un modelo base de ese tamano. Esta correspondencia es una inferencia a partir del numero de parametros, no un dato confirmado por el autor.
+La unica informacion arquitectonica fiable es el tag `m2m_100` de Hugging Face, que corresponde a la implementacion `M2M100ForConditionalGeneration` de la libreria transformers: un transformer encoder-decoder clasico con atencion completa, tokenizer SentencePiece y un token especial de identificacion de idioma de destino que se fuerza como primer token generado (`forced_bos_token_id`). El recuento exacto de parametros, 615.073.792, coincide con el de checkpoints publicos de ~600M de la misma familia, lo que sugiere que se trata de un ajuste fino (fine-tuning) o una redistribucion derivada de un modelo base de ese tamano. Esta correspondencia es una inferencia a partir del numero de parametros, no un dato confirmado por el autor.
 
 No hay informacion sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo ajuste fino supervisado, preferencias (RLHF/DPO) o si el modelo se entreno desde cero o se partio de un checkpoint preentrenado. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, destilacion) mas alla de lo implicito en la arquitectura base. Dado que la model card no incluye ningun detalle, cualquier afirmacion sobre el entrenamiento seria especulativa.
 
@@ -93,6 +93,6 @@ La diferencia mas relevante frente a NLLB-200 es la licencia: MIT permite uso co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/forti2026/nllb-bidirectional
+- Modelo en Hugging Face: https://huggingface.co/forti2026/nllb-bidirectional
 - Referencias de la familia arquitectonica (no aparecen en los resultados de busqueda; se aportan como contexto): paper de M2M-100, https://arxiv.org/abs/2010.11125 ; paper de NLLB-200, https://arxiv.org/abs/2207.04672
 - Los resultados de la busqueda web realizada no contienen ningun enlace relevante sobre este modelo: todas las entradas devueltas hacen referencia a ChatGPT y a OpenAI, sin relacion con forti2026/nllb-bidirectional.

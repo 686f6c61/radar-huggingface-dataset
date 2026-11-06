@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-soup6_sdf_s2` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en HuggingFace, aunque la model card no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni el propósito específico. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y está etiquetado con la librería PEFT, lo que indica que está diseñado para ser cargado como un adaptador sobre el modelo base.
+El modelo `Jordine/patina3-soup6_sdf_s2` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en Hugging Face, aunque la model card no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni el propósito específico. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y está etiquetado con la librería PEFT, lo que indica que está diseñado para ser cargado como un adaptador sobre el modelo base.
 
 Al tratarse de un adaptador LoRA, no es un modelo independiente: requiere el modelo base Llama-3.1-8B para funcionar. La relevancia de este tipo de adaptadores radica en que permiten especializar un modelo grande con un coste de entrenamiento reducido y sin necesidad de modificar todos los parámetros. Sin embargo, la falta de documentación sobre su entrenamiento y sus capacidades limita su uso en entornos de producción sin una evaluación previa.
 
@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al ser un adaptador LoRA, la VRAM necesaria es la del modelo base Llama-3.1-8B mas el overhead del adaptador. Con cuantizacion de 4 bits, se necesitan aproximadamente 6-8 GB de VRAM para inferencia; en precision completa (fp16), alrededor de 16 GB.
 - GPU recomendadas: tarjetas con al menos 16 GB de VRAM (RTX 4090, A100, H100) para inferencia sin cuantizacion. Con cuantizacion, una RTX 3060 de 12 GB podria ser suficiente.
 - Compatibilidad con consumer GPU: si, en GPUs de gama alta (RTX 3080/3090/4090) con cuantizacion.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `transformers` y `peft`. Tambien es compatible con vLLM (si se fusiona el adaptador) o con Ollama (si se convierte a GGUF). La opcion mas directa es usar el pipeline de HuggingFace con `PeftModel`.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `transformers` y `peft`. Tambien es compatible con vLLM (si se fusiona el adaptador) o con Ollama (si se convierte a GGUF). La opcion mas directa es usar el pipeline de Hugging Face con `PeftModel`.
 - Latencia y throughput: no se dispone de datos. Dependera del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros adaptadores LoRA de Llama-3.1-8B. No se conocen los datos de entrenamiento, el rendimiento ni el proposito de este adaptador, por lo que cualquier comparacion seria especulativa. Se recomienda buscar adaptadores similares en HuggingFace con la misma base y compararlos mediante evaluacion propia.
+No se dispone de informacion suficiente para establecer una comparativa fiable con otros adaptadores LoRA de Llama-3.1-8B. No se conocen los datos de entrenamiento, el rendimiento ni el proposito de este adaptador, por lo que cualquier comparacion seria especulativa. Se recomienda buscar adaptadores similares en Hugging Face con la misma base y compararlos mediante evaluacion propia.
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-soup6_sdf_s2
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-soup6_sdf_s2
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B

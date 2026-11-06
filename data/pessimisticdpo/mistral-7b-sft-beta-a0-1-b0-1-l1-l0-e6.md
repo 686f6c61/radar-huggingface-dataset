@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e6` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. El nombre del repositorio sugiere que se trata de un ajuste derivado de un checkpoint de tipo Mistral-7B ya sometido a un proceso de SFT ("sft-beta"), seguido de una variante de optimizacion con preferencias etiquetada como "PessimisticDPO" y parametrizada con los valores `a0.1`, `b0.1`, `L1`, `l0`, `e6`. No obstante, esta lectura procede unicamente de la nomenclatura del identificador, no de documentacion tecnica verificable.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e6` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. El nombre del repositorio sugiere que se trata de un ajuste derivado de un checkpoint de tipo Mistral-7B ya sometido a un proceso de SFT ("sft-beta"), seguido de una variante de optimizacion con preferencias etiquetada como "PessimisticDPO" y parametrizada con los valores `a0.1`, `b0.1`, `L1`, `l0`, `e6`. No obstante, esta lectura procede unicamente de la nomenclatura del identificador, no de documentacion tecnica verificable.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene ningun dato sustantivo: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen como "[More Information Needed]". El repositorio no registra descargas ni "likes" en el momento de la consulta y fue creado el 19 de septiembre de 2026.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene ningun dato sustantivo: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen como "[More Information Needed]". El repositorio no registra descargas ni "likes" en el momento de la consulta y fue creado el 19 de septiembre de 2026.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter fundamentalmente cautelar. Se documenta como un artefacto experimental o de investigacion sin trazabilidad publica, y se advierte de que el tamano del repositorio (0,2 GB) es incompatible con los pesos completos de un modelo de aproximadamente 7.000 millones de parametros en precision de 16 bits, lo que impide confirmar que se trate de un checkpoint desplegable de extremo a extremo.
 
@@ -87,8 +87,8 @@ Conviene subrayar que esta tabla no implica equivalencia funcional: el modelo an
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e6
+- Pagina de Hugging Face del modelo: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e6
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Paper de Mistral-7B como posible base de la familia: https://arxiv.org/abs/2310.06825
-- Modelo base de referencia en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.1
+- Modelo base de referencia en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo; los resultados obtenidos corresponden a contenidos sin relacion con el artefacto analizado.

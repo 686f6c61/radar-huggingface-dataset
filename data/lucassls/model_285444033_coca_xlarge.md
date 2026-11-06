@@ -69,6 +69,6 @@ No disponible. La arquitectura CoCa tiene implementaciones conocidas como el mod
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/LucasSls/model_285444033_coca_xlarge)
+- [Repositorio en Hugging Face](https://huggingface.co/LucasSls/model_285444033_coca_xlarge)
 - [Implementación de referencia de CoCa en PyTorch por lucidrains](https://github.com/lucidrains/CoCa-pytorch)
-- [Espacio de CoCa de laion en HuggingFace](https://huggingface.co/spaces/laion/CoCa)
+- [Espacio de CoCa de laion en Hugging Face](https://huggingface.co/spaces/laion/CoCa)

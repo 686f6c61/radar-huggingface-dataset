@@ -91,7 +91,7 @@ La diferencia relevante no es de rendimiento, sino de diseño: Pythia, GPT-2 y S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Dataset con diseño, resultados y secuencias de entrenamiento: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Corpus web tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
 - Código de LinMix: https://github.com/credibleai/linmix

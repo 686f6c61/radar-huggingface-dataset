@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `aleisaac/throw_0905` es un modelo de pesos abiertos publicado en HuggingFace por el usuario `aleisaac` bajo la licencia Apache 2.0. Según los metadatos de los safetensors, cuenta con un total de 3.144.016.000 parámetros (aproximadamente 3.140 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio ocupa 6,9 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16. 
+El modelo `aleisaac/throw_0905` es un modelo de pesos abiertos publicado en Hugging Face por el usuario `aleisaac` bajo la licencia Apache 2.0. Según los metadatos de los safetensors, cuenta con un total de 3.144.016.000 parámetros (aproximadamente 3.140 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio ocupa 6,9 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16. 
 
-Sin embargo, la información disponible es extremadamente limitada. No se ha publicado ninguna model card con descripción técnica, arquitectura, datos de entrenamiento o capacidades. Las búsquedas web realizadas no arrojan resultados relacionados con este modelo, por lo que no es posible confirmar su origen, finalidad o rendimiento. En consecuencia, esta ficha se basa únicamente en los datos verificables extraídos de HuggingFace y marca explícitamente el resto de especificaciones como "no disponible".
+Sin embargo, la información disponible es extremadamente limitada. No se ha publicado ninguna model card con descripción técnica, arquitectura, datos de entrenamiento o capacidades. Las búsquedas web realizadas no arrojan resultados relacionados con este modelo, por lo que no es posible confirmar su origen, finalidad o rendimiento. En consecuencia, esta ficha se basa únicamente en los datos verificables extraídos de Hugging Face y marca explícitamente el resto de especificaciones como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, la información disponible es extremadamente limitada. No se ha pub
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura del modelo. Los metadatos de HuggingFace no especifican si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida. Tampoco se conocen los datos de entrenamiento, el número total de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El único dato objetivo es el número de parámetros y el formato de los pesos en safetensors.
+No se dispone de información técnica sobre la arquitectura del modelo. Los metadatos de Hugging Face no especifican si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida. Tampoco se conocen los datos de entrenamiento, el número total de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El único dato objetivo es el número de parámetros y el formato de los pesos en safetensors.
 
 ## Capacidades
 
@@ -70,4 +70,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/aleisaac/throw_0905](https://huggingface.co/aleisaac/throw_0905)
+- Hugging Face: [https://huggingface.co/aleisaac/throw_0905](https://huggingface.co/aleisaac/throw_0905)

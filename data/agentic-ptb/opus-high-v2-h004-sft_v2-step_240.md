@@ -82,7 +82,7 @@ La comparativa se limita al modelo base, ya que no hay datos públicos de otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v2.h004.sft_v2.step_240)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v2.h004.sft_v2.step_240)
 - [Registro de ejecución (run record)](https://huggingface.co/agentic-ptb/opus-high-v2-record)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Modelo base Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

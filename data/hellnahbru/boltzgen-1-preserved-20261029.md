@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoltzGen-1 (este) | no disponible | no disponible | Generacion de proteinas/peptidos binders | MIT | HuggingFace (17 descargas) |
-| Boltz-2 (base) | no disponible | no disponible | Co-plegamiento proteina-ligando | no disponible en esta ficha | HuggingFace (boltz-community) |
+| BoltzGen-1 (este) | no disponible | no disponible | Generacion de proteinas/peptidos binders | MIT | Hugging Face (17 descargas) |
+| Boltz-2 (base) | no disponible | no disponible | Co-plegamiento proteina-ligando | no disponible en esta ficha | Hugging Face (boltz-community) |
 | Alternativas de diseno de binders (p. ej. RFdiffusion, ProteinMPNN) | no disponible | no aplica | Diseno generativo de proteinas | variable | publicas |
 
 No se dispone de datos de rendimiento comparativo entre BoltzGen-1 y otras alternativas en la informacion proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre BoltzGen-1 y otras alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hellnahbru/boltzgen-1-preserved-20261029
+- Hugging Face: https://huggingface.co/hellnahbru/boltzgen-1-preserved-20261029
 - Modelo base: https://huggingface.co/boltz-community/boltz-2
 - GitHub BoltzGen: https://github.com/HannesStark/boltzgen
-- Organizacion HuggingFace BoltzGen: https://huggingface.co/boltzgen
+- Organizacion Hugging Face BoltzGen: https://huggingface.co/boltzgen

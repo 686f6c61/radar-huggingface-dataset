@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muahseol/qwen3.5-0.8b-lease-sft` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en HuggingFace. El modelo está especializado en consultas sobre arrendamiento residencial (jeonse y wolse) en Corea del Sur, y se ha entrenado con pares de pregunta y respuesta sobre esa materia con el objetivo declarado de servir como modelo de referencia en ejercicios prácticos de alineación por DPO (Direct Preference Optimization).
+`muahseol/qwen3.5-0.8b-lease-sft` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en Hugging Face. El modelo está especializado en consultas sobre arrendamiento residencial (jeonse y wolse) en Corea del Sur, y se ha entrenado con pares de pregunta y respuesta sobre esa materia con el objetivo declarado de servir como modelo de referencia en ejercicios prácticos de alineación por DPO (Direct Preference Optimization).
 
 Se trata de un modelo de 0,8 mil millones de parámetros, orientado exclusivamente al idioma coreano y con una finalidad didáctica explícita: el autor lo describe como material de práctica para un curso, no como un producto listo para producción. El ajuste se realizó con una tasa de aprendizaje de 5e-6 durante 4 épocas, empleando un prompt de sistema que instruye al modelo a responder en coreano formal y con base en los artículos de la Ley de Protección del Arrendamiento de Vivienda.
 
@@ -82,5 +82,5 @@ La comparación directa con alternativas generalistas no es del todo equitativa,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahseol/qwen3.5-0.8b-lease-sft
+- Modelo en Hugging Face: https://huggingface.co/muahseol/qwen3.5-0.8b-lease-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

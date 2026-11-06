@@ -70,4 +70,4 @@ No disponible. Este modelo no tiene pesos publicados ni resultados de evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arist999/gelocity-alpha-3.5
+- Modelo en Hugging Face: https://huggingface.co/arist999/gelocity-alpha-3.5

@@ -74,8 +74,8 @@ No se han publicado benchmarks generales (MMLU, HumanEval, GSM8K, etc.) en la in
 
 | Modelo | Parámetros | Contexto | Precisión preferencia (eval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-DPO-prm-pairs (este) | 4.02B | 8.192 | 0.4375 (sub-chance) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.02B | 32.768 (según documentación del base) | no aplicable | Apache-2.0 | HuggingFace |
+| Qwen3-4B-DPO-prm-pairs (este) | 4.02B | 8.192 | 0.4375 (sub-chance) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.02B | 32.768 (según documentación del base) | no aplicable | Apache-2.0 | Hugging Face |
 | Otros fine-tunes DPO de Qwen3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la misma tarea. La comparación con el base es la más relevante: el fine-tuning no logra superar el azar en la tarea de preferencia, y no se ha medido si degrada las capacidades generales del base.
@@ -93,6 +93,6 @@ No se dispone de datos de otros modelos comparables en la misma tarea. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shubhamrgandhi/Qwen3-4B-DPO-prm-pairs
+- Modelo en Hugging Face: https://huggingface.co/shubhamrgandhi/Qwen3-4B-DPO-prm-pairs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio TRL (librería de entrenamiento): https://github.com/huggingface/trl

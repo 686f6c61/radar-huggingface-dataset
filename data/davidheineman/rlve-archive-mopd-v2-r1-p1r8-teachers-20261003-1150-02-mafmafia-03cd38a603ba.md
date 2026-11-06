@@ -87,7 +87,7 @@ La comparacion se limita a parametros, contexto y licencia: no hay datos de rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-02-mafmafia-03cd38a603ba
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-02-mafmafia-03cd38a603ba
 - Run de Weights & Biases asociada: no disponible como enlace directo; el identificador indicado en la model card es `6adb65aa`.
 - Paper, blog o repositorio de codigo: no disponibles.
 - La busqueda web realizada no ha devuelto ningun enlace relacionado con este modelo; los resultados obtenidos no guardan relacion con el repositorio y se descartan.

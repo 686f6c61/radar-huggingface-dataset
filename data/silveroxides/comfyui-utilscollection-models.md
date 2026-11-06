@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`silveroxides/ComfyUI-UtilsCollection-Models` es un repositorio de pesos alojado en HuggingFace por el usuario silveroxides, con un tamano de 18,3 GB y sin model card publicada. Por la informacion disponible no se trata de un modelo fundacional con arquitectura y entrenamiento documentados, sino de un contenedor de artefactos (checkpoints, encoders y ficheros auxiliares) asociado al paquete de nodos personalizados `ComfyUI-UtilsCollection`, publicado por el mismo autor en GitHub.
+`silveroxides/ComfyUI-UtilsCollection-Models` es un repositorio de pesos alojado en Hugging Face por el usuario silveroxides, con un tamano de 18,3 GB y sin model card publicada. Por la informacion disponible no se trata de un modelo fundacional con arquitectura y entrenamiento documentados, sino de un contenedor de artefactos (checkpoints, encoders y ficheros auxiliares) asociado al paquete de nodos personalizados `ComfyUI-UtilsCollection`, publicado por el mismo autor en GitHub.
 
 El proyecto al que acompana este repositorio es una extension de ComfyUI: un conjunto de nodos orientados al acondicionamiento de texto y multimodal moderno, procesado de imagen y mascara, presets de prompts, parametros de workflow, carga de recursos y utilidades generales. Segun la descripcion del repositorio de GitHub, los nodos de encoder siguen el comportamiento actual del core de ComfyUI manteniendo, cuando es posible, identificadores de nodo heredados por compatibilidad.
 
@@ -76,8 +76,8 @@ No disponible. No se han identificado en la informacion proporcionada repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/silveroxides/ComfyUI-UtilsCollection-Models
-- Perfil del autor en HuggingFace: https://huggingface.co/silveroxides
+- Repositorio en Hugging Face: https://huggingface.co/silveroxides/ComfyUI-UtilsCollection-Models
+- Perfil del autor en Hugging Face: https://huggingface.co/silveroxides
 - Repositorio GitHub del paquete de nodos: https://github.com/silveroxides/ComfyUI-UtilsCollection
 - Directorio de modelos en GitHub: https://github.com/silveroxides/ComfyUI-UtilsCollection/tree/main/models
 - Ficha en ComfyUI Cloud: https://comfy.icu/extension/silveroxides__ComfyUI-UtilsCollection

@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burcuuysal/primer-v2-zorlanma
+- Modelo en Hugging Face: https://huggingface.co/burcuuysal/primer-v2-zorlanma
 - Descarga recomendada fijada a commit: https://huggingface.co/burcuuysal/primer-v2-zorlanma/resolve/<commit>/model.onnx
 - Ficheros referenciados en la model card: `config.json`, `data/oturumlar.csv`, `onnx_yaz.py`, `spec.md` (disponibles en el repositorio del modelo)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.

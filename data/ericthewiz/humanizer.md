@@ -2,7 +2,7 @@
 
 ## Resumen
 
-humanizer es un ajuste fino del modelo google/gemma-4-12B (11.959.730.224 parámetros, ~12B) especializado en una única tarea: reescribir borradores redactados por IA (correos, ensayos, informes, publicaciones de foro) para que se lean como escritos por una persona. Lo publica el usuario ericthewiz en HuggingFace bajo licencia apache-2.0, con pesos en safetensors (bf16) y cuantizaciones GGUF, y está pensado para ejecutarse en local, sin conexión y sin servicios en la nube. Los idiomas documentados son inglés y chino.
+humanizer es un ajuste fino del modelo google/gemma-4-12B (11.959.730.224 parámetros, ~12B) especializado en una única tarea: reescribir borradores redactados por IA (correos, ensayos, informes, publicaciones de foro) para que se lean como escritos por una persona. Lo publica el usuario ericthewiz en Hugging Face bajo licencia apache-2.0, con pesos en safetensors (bf16) y cuantizaciones GGUF, y está pensado para ejecutarse en local, sin conexión y sin servicios en la nube. Los idiomas documentados son inglés y chino.
 
 El problema que aborda es concreto y medible: los textos generados por modelos suelen delatarse ante detectores de IA y ante lectores humanos por su estilo uniforme, y las reescrituras automáticas tienden a alterar cifras, unidades, fechas, nombres y citas. El modelo se entrena explícitamente para conservar esos elementos y no añadir información nueva. Según la model card, el 95% de 210 reescrituras en inglés fueron clasificadas como humanas por Originality.ai en su ajuste más estricto, y 376 de 420 reescrituras en inglés no presentaron ningún problema factual detectado por un juez LLM.
 
@@ -87,9 +87,9 @@ No se han encontrado en la informacion proporcionada otros modelos de humanizaci
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ericthewiz/humanizer | ~12B | no disponible | Reescritura y humanizacion de borradores en ingles y chino, con preservacion de hechos | apache-2.0 | HuggingFace (safetensors y GGUF); repositorio con 0 descargas y 0 likes |
+| ericthewiz/humanizer | ~12B | no disponible | Reescritura y humanizacion de borradores en ingles y chino, con preservacion de hechos | apache-2.0 | Hugging Face (safetensors y GGUF); repositorio con 0 descargas y 0 likes |
 | google/gemma-4-12B | ~12B | no disponible | Modelo base multimodal de proposito general | no disponible en esta informacion | Modelo base referenciado en la model card |
-| jialinyyzz/humanizer-GGUF | ~12B | no disponible | Mismos ficheros GGUF que este modelo, alojados en un repositorio aparte | no disponible | HuggingFace |
+| jialinyyzz/humanizer-GGUF | ~12B | no disponible | Mismos ficheros GGUF que este modelo, alojados en un repositorio aparte | no disponible | Hugging Face |
 | Otras alternativas de humanizacion | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han encontrado en la informacion proporcionada otros modelos de humanizaci
 - Longitud de contexto no publicada. La CLI procesa los documentos "pieza a pieza", lo que implica que la coherencia global de un documento largo depende de la segmentacion y no de una ventana de contexto amplia verificada.
 - Es un modelo de tarea especifica: no hay evidencia de soporte de tool calling, razonamiento multi-paso, generacion de codigo ni agentes conversacionales. Su uso como sustituto de un modelo general no esta respaldado por datos.
 - La model card declara licencia apache-2.0, pero se trata de un ajuste fino de un modelo base de la familia Gemma. Conviene verificar los terminos aplicables del modelo base antes de un uso comercial, ya que la informacion proporcionada no detalla esa compatibilidad.
-- Discrepancia de procedencia: el repositorio de HuggingFace esta publicado por el usuario ericthewiz, mientras que todos los enlaces de la model card apuntan a la organizacion sgaofen (GitHub) y a jialinyyzz (GGUF). No hay explicacion de esta relacion en la informacion disponible.
+- Discrepancia de procedencia: el repositorio de Hugging Face esta publicado por el usuario ericthewiz, mientras que todos los enlaces de la model card apuntan a la organizacion sgaofen (GitHub) y a jialinyyzz (GGUF). No hay explicacion de esta relacion en la informacion disponible.
 - Sin validacion de la comunidad: 0 descargas, 0 likes y fecha de creacion identica a la de actualizacion.
 - Capacidad multimodal no confirmada: los tags incluyen image-text-to-text, pero la model card no documenta ninguna funcionalidad de vision en este ajuste.
 - No se publican sesgos conocidos, composicion del dataset de entrenamiento ni proceso de alineamiento, lo que limita cualquier evaluacion de riesgos.
@@ -109,8 +109,8 @@ No se han encontrado en la informacion proporcionada otros modelos de humanizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ericthewiz/humanizer
-- Ficheros GGUF en HuggingFace: https://huggingface.co/jialinyyzz/humanizer-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ericthewiz/humanizer
+- Ficheros GGUF en Hugging Face: https://huggingface.co/jialinyyzz/humanizer-GGUF
 - Repositorio en GitHub: https://github.com/sgaofen/humanizer-local-model
 - Aplicacion macOS (Apple silicon), version 0.3.2: https://github.com/sgaofen/humanizer-local-model/releases/download/app-v0.3.2/Humanizer-0.3.2-macos-arm64.dmg
 - Aplicacion Windows x64, version 0.3.2: https://github.com/sgaofen/humanizer-local-model/releases/download/app-v0.3.2/Humanizer-0.3.2-windows-x64-setup.exe

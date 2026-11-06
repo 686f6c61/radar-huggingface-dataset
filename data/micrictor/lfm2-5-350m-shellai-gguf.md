@@ -90,8 +90,8 @@ La comparativa se limita a los modelos de la misma familia y tamano. El modelo d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-GGUF
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentacion de Liquid AI para LFM2.5-350M: https://docs.liquid.ai/lfm/models/lfm25-350m
-- Coleccion LFM2.5 de Liquid AI en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm25
+- Coleccion LFM2.5 de Liquid AI en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm25
 - Repositorio del modelo base LFM2-350M-GGUF: https://huggingface.co/LiquidAI/LFM2-350M-GGUF

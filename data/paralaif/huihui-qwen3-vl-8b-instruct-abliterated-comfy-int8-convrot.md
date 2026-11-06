@@ -76,9 +76,9 @@ Estas cifras miden la fidelidad de los pesos cuantizados respecto a los original
 
 | Modelo | Parametros | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paralaif/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy-int8-convrot (esta ficha) | Aprox. 8B | safetensors ComfyUI, INT8-ConvRot y W4A8 | 9,29 GiB / 6,46 GiB | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Aragduhl/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy (modelo base) | Aprox. 8B | safetensors BF16 empaquetado para ComfyUI | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct (modelo original, sin abliterar y sin empaquetado ComfyUI) | Aprox. 8B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace, enlace no disponible en la informacion proporcionada |
+| paralaif/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy-int8-convrot (esta ficha) | Aprox. 8B | safetensors ComfyUI, INT8-ConvRot y W4A8 | 9,29 GiB / 6,46 GiB | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Aragduhl/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy (modelo base) | Aprox. 8B | safetensors BF16 empaquetado para ComfyUI | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct (modelo original, sin abliterar y sin empaquetado ComfyUI) | Aprox. 8B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face, enlace no disponible en la informacion proporcionada |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparado (benchmarks) que permitan contrastar la calidad de estas variantes frente al BF16 original o frente a otras alternativas de 8B. La comparacion debe limitarse, por tanto, a parametros, formato, tamano y licencia.
 
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paralaif/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy-int8-convrot
+- Repositorio en Hugging Face: https://huggingface.co/paralaif/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy-int8-convrot
 - Modelo base (BF16, empaquetado para ComfyUI): https://huggingface.co/Aragduhl/Huihui-Qwen3-VL-8B-Instruct-abliterated-comfy
 - Herramientas de cuantizacion Comfy-Org/comfy-model-tools: https://github.com/Comfy-Org/comfy-model-tools
 - Entorno de cuantizacion Comfy Kitchen: https://github.com/Comfy-Org/comfy-kitchen

@@ -1,7 +1,7 @@
 # Harrdan2001/experiment-matching
 
 ## Resumen
-El modelo Harrdan2001/experiment-matching es un prototipo de investigación de tipo CNN-Transformer desarrollado por el usuario Harrdan2001 y publicado en HuggingFace bajo licencia MIT. Se presenta como un experimento a pequeña escala (tiny) orientado a tareas de matching, con una arquitectura híbrida que combina capas convolucionales y mecanismos de atención. El repositorio incluye un checkpoint de inicialización (no entrenado) de 33.088 parámetros, junto con scripts de ejemplo y ficheros de configuración.
+El modelo Harrdan2001/experiment-matching es un prototipo de investigación de tipo CNN-Transformer desarrollado por el usuario Harrdan2001 y publicado en Hugging Face bajo licencia MIT. Se presenta como un experimento a pequeña escala (tiny) orientado a tareas de matching, con una arquitectura híbrida que combina capas convolucionales y mecanismos de atención. El repositorio incluye un checkpoint de inicialización (no entrenado) de 33.088 parámetros, junto con scripts de ejemplo y ficheros de configuración.
 
 El modelo no reclama métricas de rendimiento ni ha sido validado en ninguna tarea concreta. Su relevancia actual es exclusivamente como punto de partida para experimentación reproducible en arquitecturas híbridas, formatos de checkpoint y recetas de entrenamiento. No está pensado para uso en producción ni para aplicaciones finales.
 
@@ -71,4 +71,4 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 - Es un punto de partida experimental; cualquier resultado futuro debe documentarse de forma independiente a los valores por defecto aquí incluidos.
 
 ## Enlaces
-- [HuggingFace: Harrdan2001/experiment-matching](https://huggingface.co/Harrdan2001/experiment-matching)
+- [Hugging Face: Harrdan2001/experiment-matching](https://huggingface.co/Harrdan2001/experiment-matching)

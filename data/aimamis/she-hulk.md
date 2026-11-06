@@ -2,7 +2,7 @@
 
 ## Resumen
 
-She-Hulk es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en HuggingFace. No es un modelo de lenguaje ni un modelo de difusion completo: se trata de un ajuste fino de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, del que hereda toda la arquitectura, el tokenizador de texto y el espacio latente. Su proposito es introducir un concepto visual concreto (el personaje She-Hulk con piel verde oscuro, pelo negro y ojos verde oscuro) sin necesidad de reentrenar el modelo completo.
+She-Hulk es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en Hugging Face. No es un modelo de lenguaje ni un modelo de difusion completo: se trata de un ajuste fino de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, del que hereda toda la arquitectura, el tokenizador de texto y el espacio latente. Su proposito es introducir un concepto visual concreto (el personaje She-Hulk con piel verde oscuro, pelo negro y ojos verde oscuro) sin necesidad de reentrenar el modelo completo.
 
 El adaptador se activa mediante cuatro palabras clave en el prompt: `She-hulk`, `Deep green skin`, `Black hair` y `Dark green eyes`. El repositorio ocupa aproximadamente 0,5 GB, pesa muy poco en comparacion con un modelo de difusion completo y esta etiquetado con la libreria diffusers y la plantilla `template:diffusion-lora`.
 
@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no identifica otros adaptadores LoRA
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/She-Hulk | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | HuggingFace, 0 descargas |
+| AiMamis/She-Hulk | LoRA sobre Krea-2-Turbo | no disponible | no aplica | openrail++ | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no identifica otros adaptadores LoRA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/She-Hulk
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/She-Hulk
 - Archivos del repositorio: https://huggingface.co/AiMamis/She-Hulk/tree/main
 - Modelo base declarado, Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia openrail++ (CreativeML Open RAIL++): https://huggingface.co/spaces/CompVis/stable-diffusion-license

@@ -64,8 +64,8 @@ No se han publicado requisitos oficiales de hardware. A partir del tamaño del m
 
 - **VRAM para inferencia**: en fp32, el modelo ocupa aproximadamente 1,3 GB, por lo que una GPU con al menos 2 GB de VRAM sería suficiente para inferencia en lote pequeño. En fp16, el uso de memoria se reduce a unos 650 MB.
 - **GPUs recomendadas**: cualquier GPU con soporte CUDA y al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, GTX 1650, RTX 2060) puede ejecutar el modelo. Para procesamiento por lotes o entrenamiento adicional, se recomienda una GPU con 8 GB o más (RTX 3070, A100, etc.).
-- **CPU**: es posible ejecutar el modelo en CPU con HuggingFace Transformers, aunque la latencia será mayor. No se recomienda para aplicaciones en tiempo real.
-- **Opciones de despliegue**: el modelo es compatible con la librería `transformers` de HuggingFace, así como con `torchaudio` y pipelines de ASR. No se menciona soporte para vLLM, llama.cpp u otros motores de inferencia optimizados.
+- **CPU**: es posible ejecutar el modelo en CPU con Hugging Face Transformers, aunque la latencia será mayor. No se recomienda para aplicaciones en tiempo real.
+- **Opciones de despliegue**: el modelo es compatible con la librería `transformers` de Hugging Face, así como con `torchaudio` y pipelines de ASR. No se menciona soporte para vLLM, llama.cpp u otros motores de inferencia optimizados.
 - **Latencia y throughput**: no se han publicado datos. En una GPU moderna (RTX 3090), se espera una latencia de decenas de milisegundos por audio de pocos segundos, pero esto es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -81,11 +81,11 @@ No se dispone de información sobre otros modelos ASR específicos para pulaar o
 - **Datos de entrenamiento incompletos**: no se especifica el número de ejemplos, la distribución de hablantes, ni el proceso de recopilación, lo que limita la reproducibilidad y la evaluación de sesgos.
 - **Sesgos potenciales**: al ser un modelo entrenado con un corpus reducido y específico, puede presentar sesgos de género, edad o procedencia geográfica de los hablantes, no documentados.
 - **Licencia**: CC-BY-4.0 permite uso comercial, pero exige atribución. No se indica si los datos de entrenamiento tienen restricciones adicionales.
-- **Estado del modelo**: con 0 descargas y 0 likes en HuggingFace, el modelo es muy reciente y no ha sido validado por la comunidad, por lo que se recomienda una evaluación independiente antes de su uso en producción.
+- **Estado del modelo**: con 0 descargas y 0 likes en Hugging Face, el modelo es muy reciente y no ha sido validado por la comunidad, por lo que se recomienda una evaluación independiente antes de su uso en producción.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YUXCulturalAILab/wav2vec_pular_maternalhealth)
+- [Modelo en Hugging Face](https://huggingface.co/YUXCulturalAILab/wav2vec_pular_maternalhealth)
 - [Perfil de YUXCulturalAILab](https://huggingface.co/YUXCulturalAILab)
 - [Paper de wav2vec 2.0 (arXiv)](https://arxiv.org/abs/2006.11477)
 - [Publicación de Meta AI](https://ai.meta.com/research/publications/wav2vec-2.0-a-framework-for-self-supervised-learning-of-speech-representations/)

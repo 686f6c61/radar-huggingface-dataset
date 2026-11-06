@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14` es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. El autor declara que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con un pipeline de `transformers` y pesos en `safetensors`. No se documenta ni el conjunto de datos, ni el objetivo de la tarea, ni el método de ajuste (SFT, DPO, LoRA, etc.).
+`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14` es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. El autor declara que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con un pipeline de `transformers` y pesos en `safetensors`. No se documenta ni el conjunto de datos, ni el objetivo de la tarea, ni el método de ajuste (SFT, DPO, LoRA, etc.).
 
 El nombre del repositorio sugiere una experimentación iterativa sobre una tarea interna denominada `eagle_numbers` (la variante concreta es `run3-gen14`), probablemente parte de una serie de generaciones sucesivas del mismo autor, pero la model card no aporta ninguna explicación al respecto. El repositorio tiene 0,1 GB, un tamano muy inferior a los ~15 GB que ocuparían los pesos completos de un modelo de 7B en fp16, lo que es compatible con un adaptador PEFT/LoRA o con un conjunto parcial de pesos; este extremo no se confirma en la información disponible.
 
@@ -44,7 +44,7 @@ Sobre el proceso de ajuste de este checkpoint concreto no hay información verif
 - Base para experimentos de "abliteration" o modificación de comportamiento: útil como punto de partida en estudios comparativos sobre alineamiento y rechazo, siempre que se documente el método aplicado.
 - Prototipado interno de asistentes conversacionales en inglés: con 7,6 B de parámetros puede ejecutarse en una GPU de consumo y usarse para validar prompts y flujos antes de pasar a un modelo con evaluación formal.
 - Generación de texto asistida con contexto largo: si el ajuste no ha truncado la ventana, puede aprovechar la ventana de 131.072 tokens del modelo base para resumir documentos extensos en inglés, previa validación empírica.
-- Docencia y formación: ejemplo didáctico de cómo se publica un adaptador en HuggingFace, de la estructura de una model card generada automáticamente y de las limitaciones de un checkpoint sin evaluación.
+- Docencia y formación: ejemplo didáctico de cómo se publica un adaptador en Hugging Face, de la estructura de una model card generada automáticamente y de las limitaciones de un checkpoint sin evaluación.
 - Evaluación comparativa de checkpoints comunitarios: material para pipelines internos que midan calidad de fine-tunes no documentados antes de adoptarlos.
 
 ## Benchmarks y rendimiento
@@ -75,10 +75,10 @@ Estos valores corresponden al modelo base original y no han sido verificados en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark |
 |---|---|---|---|---|---|
-| `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14` | 7,6 B (heredado) | No disponible (base: 131.072) | Apache 2.0 | HuggingFace, 0 descargas | No publicado |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 | Apache 2.0 | HuggingFace, ampliamente usado | MMLU 74,2; GSM8K 91,6 |
-| Llama 3.1 8B Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | HuggingFace, muy extendido | No disponible en esta ficha |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace, muy extendido | No disponible en esta ficha |
+| `HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14` | 7,6 B (heredado) | No disponible (base: 131.072) | Apache 2.0 | Hugging Face, 0 descargas | No publicado |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 | Apache 2.0 | Hugging Face, ampliamente usado | MMLU 74,2; GSM8K 91,6 |
+| Llama 3.1 8B Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | Hugging Face, muy extendido | No disponible en esta ficha |
+| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face, muy extendido | No disponible en esta ficha |
 
 La comparación relevante es contra su propio modelo base: este checkpoint no documenta ninguna mejora medible y anade incertidumbre sobre el dataset y el método de ajuste. Frente a Llama 3.1 8B o Mistral 7B, la diferencia practica es la licencia Apache 2.0 sin restricciones de escala, heredada de Qwen2.5.
 
@@ -96,7 +96,7 @@ La comparación relevante es contra su propio modelo base: este checkpoint no do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen14
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Qwen2.5-7B-Instruct (original): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -4,9 +4,9 @@
 
 ITA BSM-G (primed & sem) es un modelo de puntuación base (base score model, BSM) diseñado para argumentación en tiempo de inferencia (inference-time argumentation, ITA), presentado en el artículo *Neurosymbolic Learning for Inference-Time Argumentation* por el grupo CLArg-group. Su función no es generar texto libre, sino asignar a un argumento —que apoya o ataca una afirmación— una puntuación base en el rango [0, 1] que representa su fuerza intrínseca. Esa puntuación se combina después con la semántica gradual DF-QuAD para calcular la fuerza de la afirmación y emitir un veredicto Verdadero / Falso / Incierto.
 
-El modelo se construye sobre el backbone Qwen/Qwen3-8B (8 000 millones de parámetros) mediante un adaptador LoRA y una cabeza de regresión separada (`regression_head.safetensors`). El repositorio de HuggingFace contiene únicamente el adaptador y la cabeza (0,1 GB), no los pesos completos del backbone, por lo que su uso requiere descargar Qwen3-8B por separado y emplear el repositorio de código del proyecto.
+El modelo se construye sobre el backbone Qwen/Qwen3-8B (8 000 millones de parámetros) mediante un adaptador LoRA y una cabeza de regresión separada (`regression_head.safetensors`). El repositorio de Hugging Face contiene únicamente el adaptador y la cabeza (0,1 GB), no los pesos completos del backbone, por lo que su uso requiere descargar Qwen3-8B por separado y emplear el repositorio de código del proyecto.
 
-Es relevante ahora porque propone un enfoque neurosimbólico para la verificación de afirmaciones: en lugar de pedir a un LLM que emita un juicio directo, aprende una función de puntuación entrenada a través de la semántica DF-QuAD y una pérdida semántica, lo que aporta trazabilidad y permite integrar argumentos estructurados en el razonamiento. La ficha se basa únicamente en la información disponible en la model card y en los metadatos de HuggingFace.
+Es relevante ahora porque propone un enfoque neurosimbólico para la verificación de afirmaciones: en lugar de pedir a un LLM que emita un juicio directo, aprende una función de puntuación entrenada a través de la semántica DF-QuAD y una pérdida semántica, lo que aporta trazabilidad y permite integrar argumentos estructurados en el razonamiento. La ficha se basa únicamente en la información disponible en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Es relevante ahora porque propone un enfoque neurosimbólico para la verificaci�
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-8B, valor no confirmado) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles (los metadatos de HuggingFace no listan idiomas) |
+| Idiomas soportados | no disponibles (los metadatos de Hugging Face no listan idiomas) |
 | Licencia | MIT (sujeta además a la licencia del modelo base Qwen/Qwen3-8B y a los términos de los datos de entrenamiento) |
 | Formato de pesos | safetensors (adaptador LoRA y `regression_head.safetensors`); PEFT |
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ITA BSM-G (primed & sem) | 8 000 M (backbone) + adaptador | no disponible | Puntuación de argumentos / verificación de afirmaciones | MIT | HuggingFace (solo adaptador y cabeza) |
-| Qwen/Qwen3-8B | 8 000 M | no disponible | Generación de texto general | no disponible en esta ficha | HuggingFace |
+| ITA BSM-G (primed & sem) | 8 000 M (backbone) + adaptador | no disponible | Puntuación de argumentos / verificación de afirmaciones | MIT | Hugging Face (solo adaptador y cabeza) |
+| Qwen/Qwen3-8B | 8 000 M | no disponible | Generación de texto general | no disponible en esta ficha | Hugging Face |
 | Alternativas BSM del mismo proyecto | no disponible | no disponible | Puntuación de argumentos | no disponible | Repositorio del proyecto |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-g-sem
+- Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-g-sem
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de código (ITA): https://github.com/CLArg-group/inference-time-argumentation
 - Artículo: *Neurosymbolic Learning for Inference-Time Argumentation* (referenciado en la model card; sin URL directa en la información proporcionada)

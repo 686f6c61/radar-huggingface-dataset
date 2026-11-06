@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario asfdsaassad bajo el identificador `asfdsaassad/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un modelo conversacional con capacidades de razonamiento, el repositorio aparece etiquetado en HuggingFace como un modelo BERT de extracción de características (`feature-extraction`) basado en transformers y PyTorch, con un tamaño de repositorio de 0,0 GB, lo que sugiere que no contiene pesos reales o que se trata de un repositorio de prueba. La discrepancia entre la etiqueta del pipeline y el contenido de la model card es la característica más relevante de esta ficha.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario asfdsaassad bajo el identificador `asfdsaassad/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un modelo conversacional con capacidades de razonamiento, el repositorio aparece etiquetado en Hugging Face como un modelo BERT de extracción de características (`feature-extraction`) basado en transformers y PyTorch, con un tamaño de repositorio de 0,0 GB, lo que sugiere que no contiene pesos reales o que se trata de un repositorio de prueba. La discrepancia entre la etiqueta del pipeline y el contenido de la model card es la característica más relevante de esta ficha.
 
 La model card describe un supuesto modelo conversacional con mejoras en razonamiento, soporte de function calling y reducción de alucinaciones, e incluye una tabla de 15 benchmarks con una precisión media de 0,712. Sin embargo, no se especifican arquitectura, número de parámetros, longitud de contexto, tokenizador ni datos de entrenamiento. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 5 de noviembre de 2026 con apenas seis segundos de diferencia, lo que refuerza la hipótesis de un artefacto de prueba sin contenido utilizable.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta lo que la información disponible permite afirma
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica BERT; la model card no lo confirma) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica BERT; la model card no lo confirma) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo que la información disponible permite afirma
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura. La etiqueta de HuggingFace apunta a `bert` y al pipeline `feature-extraction`, lo que sugeriría un encoder transformer bidireccional orientado a representaciones, pero la model card describe un modelo generativo conversacional con razonamiento extendido, modo de pensamiento y function calling. Ambas descripciones son incompatibles y ninguna viene acompañada de detalles técnicos verificables.
+La información disponible no permite describir la arquitectura. La etiqueta de Hugging Face apunta a `bert` y al pipeline `feature-extraction`, lo que sugeriría un encoder transformer bidireccional orientado a representaciones, pero la model card describe un modelo generativo conversacional con razonamiento extendido, modo de pensamiento y function calling. Ambas descripciones son incompatibles y ninguna viene acompañada de detalles técnicos verificables.
 
 Respecto al entrenamiento, la model card menciona de forma genérica un aumento de recursos computacionales y "mecanismos de optimización algorítmica" durante el post-entrenamiento, así como un incremento del uso medio de tokens por pregunta en AIME 2025 de 12K a 23K. No se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron RLHF, DPO u otras técnicas de alineamiento. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal.
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa fiable: no se conocen parámetros, cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfdsaassad/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asfdsaassad/MyAwesomeModel-TestRepository
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Paper: no disponible
 - Blog o demo: no disponible (la model card menciona una web oficial y una API sin URL)

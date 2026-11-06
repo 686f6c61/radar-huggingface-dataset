@@ -73,9 +73,9 @@ Los desgloses por dominio y por clase están en `rf100vl_results.json`, `cls_val
 
 | Modelo | Parámetros | Tareas | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Argus-Lite (este modelo) | 38,07 M (16,5 M en cabezas) | Clasificación, segmentación, profundidad, detección, correspondencia | 224-768 px según cabeza | FAIR Noncommercial Research License | HuggingFace |
-| Argus (modelo original) | No disponible | Mismas tareas | No disponible | No disponible | HuggingFace (phanerozoic/argus) |
-| EUPE-ViT-S (backbone base) | No disponible | Codificador universal | No disponible | FAIR Noncommercial Research License | HuggingFace (facebook/EUPE-ViT-S) |
+| Argus-Lite (este modelo) | 38,07 M (16,5 M en cabezas) | Clasificación, segmentación, profundidad, detección, correspondencia | 224-768 px según cabeza | FAIR Noncommercial Research License | Hugging Face |
+| Argus (modelo original) | No disponible | Mismas tareas | No disponible | No disponible | Hugging Face (phanerozoic/argus) |
+| EUPE-ViT-S (backbone base) | No disponible | Codificador universal | No disponible | FAIR Noncommercial Research License | Hugging Face (facebook/EUPE-ViT-S) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada para establecer una comparación cuantitativa directa.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabogabogoo/argus-lite-onnx
+- Modelo en Hugging Face: https://huggingface.co/gabogabogoo/argus-lite-onnx
 - Modelo original Argus: https://huggingface.co/phanerozoic/argus
 - Backbone EUPE-ViT-S: https://huggingface.co/facebook/EUPE-ViT-S
 - Licencia EUPE-ViT-S: https://huggingface.co/facebook/EUPE-ViT-S/blob/main/LICENSE

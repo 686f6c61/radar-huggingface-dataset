@@ -71,7 +71,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/PJRM/Llama-NextGenmix-4b-Q4_0-GGUF
+- Hugging Face del modelo: https://huggingface.co/PJRM/Llama-NextGenmix-4b-Q4_0-GGUF
 - Modelo original (powermove72/Llama-NextGenmix-4b): https://huggingface.co/powermove72/Llama-NextGenmix-4b
 - Modelo base 1 (chuanli11/Llama-3.2-3B-Instruct-uncensored): https://huggingface.co/chuanli11/Llama-3.2-3B-Instruct-uncensored
 - Modelo base 2 (bunnycore/Llama-3.2-3B-Mix): https://huggingface.co/bunnycore/Llama-3.2-3B-Mix

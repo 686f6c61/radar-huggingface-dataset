@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en las mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e
+- Modelo en Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Otros ajustes del autor: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_C_recommended y https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0
 - Despliegue en FriendliAI: https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v3_1_A_control y https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v3_0

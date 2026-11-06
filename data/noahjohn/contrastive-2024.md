@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`noahjohn/contrastive-2024` es un prototipo de investigación publicado en HuggingFace por el usuario noahjohn bajo el identificador "Coca for Contrastive". No es un modelo entrenado ni evaluado: la propia model card lo describe como una implementación experimental con un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests"). El repositorio contiene el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`).
+`noahjohn/contrastive-2024` es un prototipo de investigación publicado en Hugging Face por el usuario noahjohn bajo el identificador "Coca for Contrastive". No es un modelo entrenado ni evaluado: la propia model card lo describe como una implementación experimental con un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests"). El repositorio contiene el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`).
 
 El dato más relevante para dimensionarlo es el recuento real de parámetros en safetensors: 49.600 parámetros totales, es decir, aproximadamente 0,05 millones. Se trata, por tanto, de un modelo de juguete a escala "small" pensado para validar código e infraestructura, no para producir resultados de calidad. La arquitectura declarada es "Coca", con atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación ReLU y normalización GroupNorm.
 
@@ -61,7 +61,7 @@ Como innovación técnica, lo único destacable es la combinación propuesta de 
 - Línea base de capacidad equivalente en experimentos de ablación: la model card recomienda explícitamente comparar contra "un baseline de capacidad equivalente"; este checkpoint sirve como ese baseline de 0,05 M de parámetros para aislar el efecto de cambios arquitectónicos.
 - Validación de formato de configuración: `config.json` y `training_args.json` sirven como plantilla verificada para definir los esquemas de arquitectura y de receta experimental (Lion + coseno) en proyectos nuevos.
 - Docencia y demostraciones: un modelo de este tamaño se puede ejecutar en CPU y recorrer capa por capa en un notebook, lo que lo hace útil para explicar atención de ventana deslizante, GroupNorm o gated fusion sin necesidad de hardware especializado.
-- Prueba de adaptadores de carga personalizados: dado que la implementación no es compatible con las APIs automáticas de HuggingFace, el repositorio sirve para desarrollar y testear el adaptador que después se reutilizará con checkpoints entrenados de la misma familia.
+- Prueba de adaptadores de carga personalizados: dado que la implementación no es compatible con las APIs automáticas de Hugging Face, el repositorio sirve para desarrollar y testear el adaptador que después se reutilizará con checkpoints entrenados de la misma familia.
 - Verificación de compatibilidad de quantización: útil para comprobar que herramientas de conversión (por ejemplo a GGUF) manejan correctamente arquitecturas con GroupNorm y atención de ventana deslizante antes de aplicarlas a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No se dispone de métricas de rendimiento de este repositorio, por lo que una co
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noahjohn/contrastive-2024 | 49.600 (0,05 M) | no disponible | ninguno (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, repo de 0,0 GB |
+| noahjohn/contrastive-2024 | 49.600 (0,05 M) | no disponible | ninguno (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, repo de 0,0 GB |
 | CLIP (variantes abiertas) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | ampliamente disponible |
 | SigLIP (variantes abiertas) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | ampliamente disponible |
 | Otros prototipos de investigación con etiqueta `contrastive` | no disponible | no disponible | no disponible | variable | variable |
@@ -102,6 +102,6 @@ La conclusión práctica es que este repositorio no compite con modelos contrast
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/noahjohn/contrastive-2024
+- Repositorio Hugging Face: https://huggingface.co/noahjohn/contrastive-2024
 - Ficheros incluidos en el repo: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, demo o repositorio adicional: no disponible (no se han encontrado enlaces en la información proporcionada)

@@ -27,7 +27,7 @@ El modelo sigue la arquitectura de SentenceTransformer, compuesta por un BertMod
 - Generación de embeddings de texto de 384 dimensiones para similitud semántica.
 - Recuperación de información y búsqueda semántica en textos cortos.
 - Extracción de características (feature extraction) para downstream tasks.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face.
 - No dispone de capacidades de tool calling, agentes, visión o audio.
 - No es un modelo generativo; su función es puramente de representación.
 
@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 27aran/germantris-model | 22.713.216 | 256 tokens | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22.713.216 | 256 tokens | Apache 2.0 | HuggingFace |
+| 27aran/germantris-model | 22.713.216 | 256 tokens | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22.713.216 | 256 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de información suficiente para una comparación exhaustiva con otros modelos de la misma categoría. La única referencia directa es el modelo base, cuyas especificaciones coinciden en tamaño y contexto. No hay datos de rendimiento publicados para ninguno de los dos en esta ficha.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparación exhaustiva con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/27aran/germantris-model
+- Hugging Face: https://huggingface.co/27aran/germantris-model
 - GitHub: https://github.com/27aran/Germantris
 - Documentación de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers

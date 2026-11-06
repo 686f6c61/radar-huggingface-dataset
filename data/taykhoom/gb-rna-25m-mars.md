@@ -34,7 +34,7 @@ Los datos de entrenamiento son secuencias de ARN no codificante del conjunto MAR
 - Generacion de representaciones (embeddings) de secuencias de ARN: salida de 512 dimensiones por token y embedding de secuencia via token `[CLS]`, con acceso a los estados ocultos de las 8 capas intermedias.
 - Masked language modeling: prediccion de nucleotidos enmascarados, con logits de dimension 16 por posicion.
 - Extraccion de caracteristicas para tareas a nivel de secuencia (clasificacion, regresion) mediante una cabeza especifica sobre el embedding `[CLS]`.
-- Fine-tuning con convenciones estandar de HuggingFace (`AutoModel` y `AutoModelForMaskedLM`).
+- Fine-tuning con convenciones estandar de Hugging Face (`AutoModel` y `AutoModelForMaskedLM`).
 - Normalizacion de notacion: el tokenizer convierte `U`/`u` en `T`/`t`, replicando el preprocesamiento del checkpoint original.
 - Soporte de atencion eficiente mediante `attn_implementation="sdpa"` y `"flash_attention_2"`.
 - No soporta tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito; no es un modelo generativo de texto.
@@ -66,13 +66,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Datos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GB.RNA-1M-MARS | 1M | ncRNA MARS | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-25M-MARS (este) | 25,2M | ncRNA MARS | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-300M-MARS | 300M | ncRNA MARS | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-650M | 650M | 42M ncRNA | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-650M-CDS | 650M | 42M ncRNA + CDS | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-1.6B | 1,6B | 42M ncRNA | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
-| GB.RNA-1.6B-CDS | 1,6B | 42M ncRNA + CDS | 1024 | GenBio AI Community License | HuggingFace (port de Taykhoom) |
+| GB.RNA-1M-MARS | 1M | ncRNA MARS | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-25M-MARS (este) | 25,2M | ncRNA MARS | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-300M-MARS | 300M | ncRNA MARS | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-650M | 650M | 42M ncRNA | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-650M-CDS | 650M | 42M ncRNA + CDS | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-1.6B | 1,6B | 42M ncRNA | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
+| GB.RNA-1.6B-CDS | 1,6B | 42M ncRNA + CDS | 1024 | GenBio AI Community License | Hugging Face (port de Taykhoom) |
 
 Existen otras familias de modelos genomicos comparables (por ejemplo, Nucleotide Transformer o DNABERT-2), pero no se dispone de sus especificaciones en la informacion proporcionada, por lo que no se incluyen datos de comparacion.
 
@@ -92,8 +92,8 @@ Existen otras familias de modelos genomicos comparables (por ejemplo, Nucleotide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.RNA-25M-MARS
-- Coleccion GB.RNA en HuggingFace: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.RNA-25M-MARS
+- Coleccion GB.RNA en Hugging Face: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9
 - Repositorio original de codigo (GenBio AI ModelGenerator): https://github.com/genbio-ai/ModelGenerator
 - Checkpoint upstream: `genbio-ai/GB.RNA-25M-MARS`
 - Paper de referencia (Zou et al., bioRxiv 2024): https://doi.org/10.1101/2024.11.28.625345

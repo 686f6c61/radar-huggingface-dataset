@@ -70,9 +70,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3vl-2b-ag-hico-GGUF` (este) | ~1,72 B | 262.144 nominales / 4.096 recomendados | Scene graph de acciones (AG + HICO-DET) | Apache-2.0 con datos de uso investigador | GGUF en HuggingFace |
-| `Ram20307/qwen3vl-2b-ag-hico-lora` | ~1,72 B | 262.144 | Igual, en formato adaptador LoRA (bf16) | Apache-2.0 con datos de uso investigador | LoRA en HuggingFace |
-| Qwen3-VL-2B-Instruct (base) | ~2 B (nominal) | 262.144 | VLM de propósito general image-text-to-text | Apache-2.0 | Pesos originales en HuggingFace |
+| `qwen3vl-2b-ag-hico-GGUF` (este) | ~1,72 B | 262.144 nominales / 4.096 recomendados | Scene graph de acciones (AG + HICO-DET) | Apache-2.0 con datos de uso investigador | GGUF en Hugging Face |
+| `Ram20307/qwen3vl-2b-ag-hico-lora` | ~1,72 B | 262.144 | Igual, en formato adaptador LoRA (bf16) | Apache-2.0 con datos de uso investigador | LoRA en Hugging Face |
+| Qwen3-VL-2B-Instruct (base) | ~2 B (nominal) | 262.144 | VLM de propósito general image-text-to-text | Apache-2.0 | Pesos originales en Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre estas variantes en la información proporcionada, más allá de la comparación interna Q4 frente a bf16 del apartado anterior.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparables entre estas variantes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-GGUF
 - Adaptador LoRA base: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-lora
 - Action Genome: no disponible en la información proporcionada
 - HICO-DET: no disponible en la información proporcionada

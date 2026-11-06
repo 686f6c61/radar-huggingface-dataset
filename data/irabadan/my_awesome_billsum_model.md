@@ -88,5 +88,5 @@ Este modelo es el más pequeño de la comparativa y probablemente ofrezca un ren
 
 ## Enlaces
 
-- [HuggingFace: irabadan/my_awesome_billsum_model](https://huggingface.co/irabadan/my_awesome_billsum_model)
+- [Hugging Face: irabadan/my_awesome_billsum_model](https://huggingface.co/irabadan/my_awesome_billsum_model)
 - [Modelo base: google-t5/t5-small](https://huggingface.co/google-t5/t5-small)

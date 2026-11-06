@@ -79,9 +79,9 @@ No se dispone de información sobre modelos comparables directos (mismo tamaño 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-MLX-4bit (este) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | MLX 4-bit, safetensors | Apache-2.0 | HuggingFace, Apple Silicon |
-| Ripple-65B-Preview (original, Ricursive) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | BF16 (PyTorch) | Apache-2.0 | HuggingFace, requiere ~130 GB |
-| Ripple-65B-Preview-MLX-8bit (mismo autor) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | MLX 8-bit, safetensors | Apache-2.0 | HuggingFace, Apple Silicon |
+| Ripple-65B-Preview-MLX-4bit (este) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | MLX 4-bit, safetensors | Apache-2.0 | Hugging Face, Apple Silicon |
+| Ripple-65B-Preview (original, Ricursive) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | BF16 (PyTorch) | Apache-2.0 | Hugging Face, requiere ~130 GB |
+| Ripple-65B-Preview-MLX-8bit (mismo autor) | ~64,8B denso | Global en 16 capas + ventana 1.024 en 64 capas | MLX 8-bit, safetensors | Apache-2.0 | Hugging Face, Apple Silicon |
 
 Otros modelos comparables de la misma categoría: no disponible.
 
@@ -101,7 +101,7 @@ Otros modelos comparables de la misma categoría: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta conversión): https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-4bit
+- Repositorio Hugging Face (esta conversión): https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-4bit
 - Versión MLX 8-bit del mismo autor: https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-8bit
 - Modelo base original (Ricursive AI): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Librería mlx-lm: no se proporciona enlace en la información disponible

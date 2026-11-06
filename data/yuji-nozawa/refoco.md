@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReFoCo es una familia de modelos Vision Transformer (ViT) preentrenados, publicados por Yuji Nozawa, Yu-Chieh Lin y Youyang Ng, que acompaña al artículo "Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization", aceptado en NeurIPS 2026. El repositorio de HuggingFace distribuye los pesos preentrenados de tres variantes (ViT-B/16-Reg, ViT-L/16-Reg y ViT-g/16-Reg) bajo licencia Apache-2.0, con un tamano total de 6,4 GB.
+ReFoCo es una familia de modelos Vision Transformer (ViT) preentrenados, publicados por Yuji Nozawa, Yu-Chieh Lin y Youyang Ng, que acompaña al artículo "Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization", aceptado en NeurIPS 2026. El repositorio de Hugging Face distribuye los pesos preentrenados de tres variantes (ViT-B/16-Reg, ViT-L/16-Reg y ViT-g/16-Reg) bajo licencia Apache-2.0, con un tamano total de 6,4 GB.
 
 El modelo no es un generador de texto ni un modelo multimodal de instrucciones: su pipeline declarado es `image-feature-extraction`, es decir, se emplea como extractor de caracteristicas visuales y como backbone para tareas de vision por computador. El interes tecnico reside en el hallazgo del articulo: durante el entrenamiento emerge una especializacion de las cabezas de atencion con sesgo espacial, lo que sugiere que el modelo aprende a "enfocar" regiones relevantes de la imagen de forma no supervisada.
 
@@ -62,11 +62,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReFoCo ViT-B/16-Reg | Base (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | HuggingFace (`.pth`) |
-| ReFoCo ViT-L/16-Reg | Large (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | HuggingFace (`.pth`) |
-| ReFoCo ViT-g/16-Reg | Giant (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | HuggingFace (`.pth`) |
+| ReFoCo ViT-B/16-Reg | Base (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | Hugging Face (`.pth`) |
+| ReFoCo ViT-L/16-Reg | Large (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | Hugging Face (`.pth`) |
+| ReFoCo ViT-g/16-Reg | Giant (cifra exacta no disponible) | No disponible | No publicado | Apache-2.0 | Hugging Face (`.pth`) |
 | ViT estandar (Google) | B/L/H | 224x224 tipico | Publicado en paper original | Apache-2.0 | Multiples repositorios |
-| DINOv2 (Meta) | Varias escalas | No disponible | Publicado | Apache-2.0 (variantes) | HuggingFace |
+| DINOv2 (Meta) | Varias escalas | No disponible | Publicado | Apache-2.0 (variantes) | Hugging Face |
 
 La comparacion cuantitativa con alternativas como DINOv2 o CLIP no es posible con la informacion disponible, ya que el autor no publica resultados de benchmarks en la model card.
 
@@ -82,7 +82,7 @@ La comparacion cuantitativa con alternativas como DINOv2 o CLIP no es posible co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuji-nozawa/ReFoCo
+- Hugging Face: https://huggingface.co/yuji-nozawa/ReFoCo
 - Paper (OpenReview): https://openreview.net/forum?id=3aWhzsaHua
 - Pagina del proyecto: https://yuji-nozawa.github.io/ReFoCo
 - Repositorio GitHub: https://github.com/yuji-nozawa/ReFoCo

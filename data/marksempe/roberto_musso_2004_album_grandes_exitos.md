@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roberto_Musso_2004_Album_Grandes_Exitos es un repositorio publicado en HuggingFace por el usuario MarkSempe bajo licencia Apache 2.0. El nombre del repositorio hace referencia al album de grandes exitos de 2004 del artista Roberto Musso, lo que sugiere que el contenido del repositorio no corresponde a un modelo de lenguaje ni a un artefacto de IA en sentido estricto, sino a un conjunto de datos o materiales asociados a dicho album.
+Roberto_Musso_2004_Album_Grandes_Exitos es un repositorio publicado en Hugging Face por el usuario MarkSempe bajo licencia Apache 2.0. El nombre del repositorio hace referencia al album de grandes exitos de 2004 del artista Roberto Musso, lo que sugiere que el contenido del repositorio no corresponde a un modelo de lenguaje ni a un artefacto de IA en sentido estricto, sino a un conjunto de datos o materiales asociados a dicho album.
 
 La model card del autor es practicamente inexistente: unicamente declara la licencia Apache 2.0, sin especificar arquitectura, tamano, contexto, idiomas ni formato de pesos. El repositorio no registra descargas ni likes, fue creado y actualizado en la misma fecha (2026-10-31) y no tiene pipeline asignado, lo que indica que no ha sido configurado como un modelo desplegable en la plataforma.
 
@@ -25,7 +25,7 @@ Por tanto, no es posible evaluar este repositorio como modelo de IA. La ficha qu
 
 No se ha publicado informacion sobre la arquitectura del repositorio. La model card no describe si se trata de un transformer, un modelo MoE, un SSM o cualquier otra tipologia, ni incluye detalles sobre datos de entrenamiento, numero de tokens, composicion del dataset o tecnicas de alineacion como RLHF o DPO.
 
-Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El repositorio carece de pipeline asignado en HuggingFace, lo que refuerza la ausencia de un artefacto de inferencia configurado.
+Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El repositorio carece de pipeline asignado en Hugging Face, lo que refuerza la ausencia de un artefacto de inferencia configurado.
 
 ## Capacidades
 
@@ -66,11 +66,11 @@ No disponible: al no conocerse la categoria, el tamano ni la tarea del repositor
 - No se puede verificar la calidad, procedencia ni licencia del contenido mas alla de la declaracion Apache 2.0 en el campo de metadatos.
 - El nombre del repositorio sugiere contenido musical o editorial, no un modelo de lenguaje; conviene confirmar la naturaleza del artefacto antes de cualquier uso.
 - Ausencia de descargas y likes: no existe evidencia de uso o validacion por parte de la comunidad.
-- Sin pipeline asignado: el repositorio no esta configurado para inferencia en HuggingFace.
+- Sin pipeline asignado: el repositorio no esta configurado para inferencia en Hugging Face.
 - La licencia Apache 2.0 permite uso comercial segun sus terminos, pero no cubre posibles derechos de terceros sobre el contenido referenciado en el nombre del repositorio.
 - Riesgo de alucinacion y sesgos: no evaluables al no existir un modelo documentado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MarkSempe/Roberto_Musso_2004_Album_Grandes_Exitos
+- Repositorio en Hugging Face: https://huggingface.co/MarkSempe/Roberto_Musso_2004_Album_Grandes_Exitos
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

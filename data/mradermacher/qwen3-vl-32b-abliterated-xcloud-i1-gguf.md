@@ -82,7 +82,7 @@ Los tres modelos son cuantizaciones de Qwen3-VL-32B abliterated, con diferencias
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-32B-Abliterated-xCloud-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-32B-Abliterated-xCloud-i1-GGUF
 - Modelo base (xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud): https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud
 - Repositorio estatico de quants (con archivos mmproj): https://huggingface.co/mradermacher/Qwen3-VL-32B-Abliterated-xCloud-GGUF
 - Modelo relacionado (mradermacher/Qwen3-VL-32B-Instruct-abliterated-v1-i1-GGUF): https://huggingface.co/mradermacher/Qwen3-VL-32B-Instruct-abliterated-v1-i1-GGUF

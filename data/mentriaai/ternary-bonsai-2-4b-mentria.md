@@ -107,11 +107,11 @@ La comparativa directa solo esta documentada frente a Qwen3.5-2B en cuantizacion
 - La validacion de correctitud se limita a 433 posiciones teacher-forced y cuatro prompts greedy comparados con llama.cpp; no cubre todos los casos de uso.
 - El pilot de chat usó un juez automatico (Claude Opus) sobre 20 prompts; el test completo de 650 prompts no se ejecuto.
 - Licencia Apache 2.0 permite uso comercial, pero se debe verificar la cadena de licencias upstream (Qwen3.5-4B y prism-ml) antes de produccion.
-- El estado de despliegue en mentria.ai se describe como "rollout en curso" en la fecha de actualizacion (2026-10-28); el modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- El estado de despliegue en mentria.ai se describe como "rollout en curso" en la fecha de actualizacion (2026-10-28); el modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mentriaai/Ternary-Bonsai-2-4B-mentria
+- Hugging Face del modelo: https://huggingface.co/mentriaai/Ternary-Bonsai-2-4B-mentria
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-4B-gguf
 - Modelo upstream Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo al que sustituye: https://huggingface.co/mentriaai/Qwen3.5-2B-mentria

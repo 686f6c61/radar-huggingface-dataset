@@ -12,7 +12,7 @@ La relevancia de la ficha es doble: por un lado, documenta un caso practico de c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (etiqueta `llama` en HuggingFace); detalles no disponibles |
+| Arquitectura | Transformer denso (etiqueta `llama` en Hugging Face); detalles no disponibles |
 | Parametros totales | ~2.000 millones (segun la denominacion del modelo base MiniCPM5-2B); no confirmado en la informacion proporcionada |
 | Parametros activos | No aplica: modelo denso, no MoE |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de la ficha es doble: por un lado, documenta un caso practico de c
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base MiniCPM5-2B mas alla de la etiqueta `llama` presente en el repositorio, que en HuggingFace suele indicar la clase de configuracion de transformers utilizada. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Todo lo relativo a la arquitectura del modelo original debe consultarse en la model card de openbmb/MiniCPM5-2B.
+No se dispone de informacion sobre la arquitectura interna del modelo base MiniCPM5-2B mas alla de la etiqueta `llama` presente en el repositorio, que en Hugging Face suele indicar la clase de configuracion de transformers utilizada. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Todo lo relativo a la arquitectura del modelo original debe consultarse en la model card de openbmb/MiniCPM5-2B.
 
 La innovacion tecnica de este repositorio es exclusivamente de cuantizacion. AXERA-TECH aplico GPTQ con `desc_act=True` (ordenacion por importancia descendente de las activaciones) para reducir la perdida de precision respecto a una cuantizacion Int4 ingenua. Los parametros `static_groups` y `act_group_aware` son mutuamente excluyentes por diseno de GPTQModel; se eligio `static_groups=True` porque es un requisito rigido del AX650. El resultado es un checkpoint que solo es funcionalmente equivalente al original dentro del margen que permita esa configuracion, no en terminos absolutos.
 
@@ -67,10 +67,10 @@ El autor no incluye MMLU, HumanEval, GSM8K, MT-Bench ni metricas de perplexity, 
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AXERA-TECH/MiniCPM5-2B-GPTQ-Int4 | ~2B (no confirmado) | GPTQ Int4, g128, sym, static_groups | no disponible | MIT | HuggingFace, 0 descargas |
-| openbmb/MiniCPM5-2B-GPTQ | ~2B (mismo base) | GPTQ (receta no detallada aqui) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| openbmb/MiniCPM5-2B | ~2B (mismo modelo, precision completa) | Sin cuantizar | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| openbmb/MiniCPM5-1B | ~1B | Sin cuantizar | no disponible | no disponible en la informacion proporcionada | HuggingFace, mencionado por AXERA-TECH |
+| AXERA-TECH/MiniCPM5-2B-GPTQ-Int4 | ~2B (no confirmado) | GPTQ Int4, g128, sym, static_groups | no disponible | MIT | Hugging Face, 0 descargas |
+| openbmb/MiniCPM5-2B-GPTQ | ~2B (mismo base) | GPTQ (receta no detallada aqui) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| openbmb/MiniCPM5-2B | ~2B (mismo modelo, precision completa) | Sin cuantizar | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| openbmb/MiniCPM5-1B | ~1B | Sin cuantizar | no disponible | no disponible en la informacion proporcionada | Hugging Face, mencionado por AXERA-TECH |
 
 La comparacion relevante es con la version GPTQ oficial de OpenBMB: ambos parten del mismo modelo base, pero la receta de AXERA-TECH esta restringida por los requisitos del AX650 (`static_groups=True`, `sym=True`), lo que puede implicar una perdida de precision distinta a la de una cuantizacion GPTQ generica. No hay datos publicos que permitan cuantificar esa diferencia.
 
@@ -95,4 +95,4 @@ La comparacion relevante es con la version GPTQ oficial de OpenBMB: ambos parten
 - Perfil del autor (AXERA-TECH): https://huggingface.co/AXERA-TECH
 - Catalogo de modelos de AXERA-TECH: https://huggingface.co/AXERA-TECH/models
 - Repositorio GitHub de la familia MiniCPM-V (OpenBMB): https://github.com/OpenBMB/MiniCPM-V
-- Listado de modelos GPTQ en HuggingFace: https://huggingface.co/models?sort=trending&search=GPTQ
+- Listado de modelos GPTQ en Hugging Face: https://huggingface.co/models?sort=trending&search=GPTQ

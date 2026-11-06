@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Faro 2B es un modelo de lenguaje de instrucciones de clase 2B desarrollado por Progetto Siliceo y publicado en HuggingFace bajo el identificador `alforiva/faro-2b`. Se trata de un fine-tune del modelo base Qwen/Qwen3.5-2B, orientado a ejecutarse localmente en hardware de consumo antiguo como motor de un asistente siempre activo. Su propuesta diferencial es que la ética y el método de trabajo están integrados en los propios pesos mediante un entrenamiento constitucional, sin capa externa de guardrails en inferencia.
+Faro 2B es un modelo de lenguaje de instrucciones de clase 2B desarrollado por Progetto Siliceo y publicado en Hugging Face bajo el identificador `alforiva/faro-2b`. Se trata de un fine-tune del modelo base Qwen/Qwen3.5-2B, orientado a ejecutarse localmente en hardware de consumo antiguo como motor de un asistente siempre activo. Su propuesta diferencial es que la ética y el método de trabajo están integrados en los propios pesos mediante un entrenamiento constitucional, sin capa externa de guardrails en inferencia.
 
 El modelo emplea una receta propia denominada Candela, que combina poda del vocabulario multilingüe (italiano, español e inglés), redimensionado de embeddings, preentrenamiento continuado constitucional y ajuste supervisado sobre aproximadamente 480 trazas curadas. Aunque se presenta como clase 2B, los pesos en safetensors suman 1.448.902.464 parámetros reales, con una arquitectura Qwen3.5 de 24 capas y dimensión oculta 2048.
 
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alforiva/faro-2b
+- Modelo en Hugging Face: https://huggingface.co/alforiva/faro-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Proyecto Progetto Siliceo: https://progettosiliceo.online
 - Resultados interactivos del benchmark: https://progettosiliceo.online/faro.html

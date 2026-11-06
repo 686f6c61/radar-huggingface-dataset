@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zherebetskyy/Qwen3.8-27B-6bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/zherebetskyy/Qwen3.8-27B-6bit-mlx
 - Modelo base (bf16): https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Documentación de mlx-vlm: https://github.com/ml-explore/mlx-vlm
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm

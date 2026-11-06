@@ -91,7 +91,7 @@ No se dispone de resultados numéricos de los 39 backbones restantes del benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-large-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-large-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-large
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks en la información disponible (ni M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/clef27b-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/clef27b-int8-ov-decision
 - Variante de 9B en una sola etapa: https://huggingface.co/pawanpaudel93/clef-flash-int8-ov-decision
 - Fine-tune original: https://huggingface.co/Cloudflare/clef
 - IR int8 base de Intel: https://huggingface.co/OpenVINO/Qwen3.8-27B-int8-ov

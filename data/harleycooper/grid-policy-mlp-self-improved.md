@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `grid-policy-mlp-self-improved` | 17.253 | no aplica | Retorno medio 16,750000 en censo de 96 inicios | MIT | HuggingFace |
-| `grid-policy-mlp` (base) | 17.253 (según modelo base) | no aplica | Retorno medio 8,895833 en el mismo censo | no disponible en la información | HuggingFace |
+| `grid-policy-mlp-self-improved` | 17.253 | no aplica | Retorno medio 16,750000 en censo de 96 inicios | MIT | Hugging Face |
+| `grid-policy-mlp` (base) | 17.253 (según modelo base) | no aplica | Retorno medio 8,895833 en el mismo censo | no disponible en la información | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarleyCooper/grid-policy-mlp-self-improved
+- Modelo en Hugging Face: https://huggingface.co/HarleyCooper/grid-policy-mlp-self-improved
 - Modelo base: https://huggingface.co/HarleyCooper/grid-policy-mlp
 - Dataset de trayectorias: https://huggingface.co/datasets/HarleyCooper/grid-policy-mlp-self-improved-trajectories
 - Demo de inferencia (Space): https://huggingface.co/spaces/HarleyCooper/grid-policy-mlp-self-improved-demo

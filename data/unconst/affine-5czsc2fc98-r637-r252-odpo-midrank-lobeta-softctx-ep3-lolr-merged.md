@@ -4,7 +4,7 @@
 
 El modelo `unconst/Affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged` es un checkpoint de la serie Affine, desarrollado por el autor `unconst` dentro del contexto de la red SN120 (minería de Bittensor). Se trata de un modelo de texto con arquitectura de mezcla de expertos (MoE) basado en Qwen 3.5 MoE, con 35.107.181.936 parámetros totales y un tamaño de repositorio de 70,2 GB en formato safetensors. Su propósito declarado es competir en el duelo "Reason v3" de la red, optimizando una puntuación anclada al profesor (`lpC(y_C|z_A) − lpC(y_C|∅)`), no como modelo conversacional de uso general.
 
-El entrenamiento se realizó mediante DPO offline (no SFT ni GRPO online) sobre pares clasificados por Reason, partiendo del checkpoint padre `unconst/Affine-5czsc2fc98-r252-merged`. Los hiperparámetros clave incluyen LoRA de rango 32 (MidRank) con alpha 128, beta 0,02 (LoBeta), tasa de aprendizaje 1e-6 (LoLR), longitud máxima de contexto 12.288 tokens (SoftCtx) y 3 épocas sobre 3.600 pasos. El modelo está etiquetado como `image-text-to-text` en HuggingFace, aunque no se documentan capacidades multimodales específicas en la model card. La licencia no está disponible y no se especifican idiomas soportados.
+El entrenamiento se realizó mediante DPO offline (no SFT ni GRPO online) sobre pares clasificados por Reason, partiendo del checkpoint padre `unconst/Affine-5czsc2fc98-r252-merged`. Los hiperparámetros clave incluyen LoRA de rango 32 (MidRank) con alpha 128, beta 0,02 (LoBeta), tasa de aprendizaje 1e-6 (LoLR), longitud máxima de contexto 12.288 tokens (SoftCtx) y 3 épocas sobre 3.600 pasos. El modelo está etiquetado como `image-text-to-text` en Hugging Face, aunque no se documentan capacidades multimodales específicas en la model card. La licencia no está disponible y no se especifican idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ Los hiperparámetros específicos del entrenamiento fueron: LoRA con r=32 y alph
 - Razonamiento (Reason v3): optimizado específicamente para la métrica `lpC(y_C|z_A) − lpC(y_C|∅)`, que mide la ventaja condicional de la respuesta del modelo sobre una línea base vacía.
 - DPO offline: entrenado para preferir respuestas con mayor puntuación del profesor, lo que implica cierta capacidad de alineación con criterios externos.
 - No se documentan capacidades de tool calling, agentes, visión, audio ni multilingüismo específico.
-- Etiquetado como `image-text-to-text` en HuggingFace, pero sin evidencia en la model card de soporte multimodal real.
+- Etiquetado como `image-text-to-text` en Hugging Face, pero sin evidencia en la model card de soporte multimodal real.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en el mismo contexto (ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r637-r252-odpo-midrank-lobeta-softctx-ep3-lolr-merged
 - Modelo base (padre): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otro checkpoint de la serie (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r67-merged
 - Checkpoint relacionado con DPO: https://huggingface.co/unconst/Affine-5czsc2fc98-r538-loveaffine-offline-dpo-hialpha-midrank-lobeta-midctx-extrasteps-lora

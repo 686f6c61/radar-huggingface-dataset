@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante aprendizaje supervisado (SFT) sobre el conjunto de datos GSM8K, que contiene problemas de matemáticas de nivel escolar. El adaptador se basa en el modelo `ibm-granite/granite-4.0-h-small` de IBM, y ha sido desarrollado por el usuario `dementor-research`. El nombre del repositorio sugiere un experimento de auto-SFT (self_sft) con una semilla fija (42), probablemente orientado a investigar metodologías de fine-tuning eficiente.
 
-El adaptador tiene un tamaño de 0.2 GB y se distribuye en formato `safetensors` a través de la librería PEFT. Al tratarse de un adaptador, no es un modelo autónomo: requiere cargar el modelo base Granite 4.0 H Small para funcionar. La información pública disponible es muy limitada: la model card está prácticamente vacía y no se proporcionan detalles sobre arquitectura, parámetros, licencia o rendimiento. Por tanto, esta ficha se basa únicamente en los metadatos de HuggingFace y en el contexto técnico que se puede inferir de ellos.
+El adaptador tiene un tamaño de 0.2 GB y se distribuye en formato `safetensors` a través de la librería PEFT. Al tratarse de un adaptador, no es un modelo autónomo: requiere cargar el modelo base Granite 4.0 H Small para funcionar. La información pública disponible es muy limitada: la model card está prácticamente vacía y no se proporcionan detalles sobre arquitectura, parámetros, licencia o rendimiento. Por tanto, esta ficha se basa únicamente en los metadatos de Hugging Face y en el contexto técnico que se puede inferir de ellos.
 
 ## Especificaciones técnicas
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - El adaptador en sí ocupa 0.2 GB, pero requiere cargar el modelo base `granite-4.0-h-small`, cuyos requisitos de VRAM y GPU no se especifican. Dado que el nombre sugiere un modelo "small", es probable que pueda ejecutarse en GPUs de consumo medio, pero no hay datos concretos.
 - No se indica si es compatible con cuantización (GGUF, GPTQ, etc.). El formato safetensors del adaptador sugiere que se usa con la librería Transformers/PEFT.
-- Opciones de despliegue: se puede utilizar con las librerías estándar de HuggingFace (transformers + peft). No se mencionan vLLM, Ollama, llama.cpp u otros motores de inferencia.
+- Opciones de despliegue: se puede utilizar con las librerías estándar de Hugging Face (transformers + peft). No se mencionan vLLM, Ollama, llama.cpp u otros motores de inferencia.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dementor-research/self_sft_gsm8k_granite-4-h-small_as_granite-4-h-small_seed42
+- Repositorio en Hugging Face: https://huggingface.co/dementor-research/self_sft_gsm8k_granite-4-h-small_as_granite-4-h-small_seed42
 - Modelo base (referenciado en los metadatos): https://huggingface.co/ibm-granite/granite-4.0-h-small
 - Dataset GSM8K (referenciado en el nombre del repositorio): https://huggingface.co/datasets/openai/gsm8k (no confirmado en la información proporcionada)

@@ -85,10 +85,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni métricas de lenguaj
 
 | Modelo | Relacion | Parametros | Contexto | Resultado en seed 4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-hillclimber-remix7` | Este modelo | no disponible | no aplica | 0,748 s de media en 5 seeds (0,7582384 s en la conversion inicial de la seed 4) | no disponible | HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-hillclimber-remix6` | Modelo base directo | no disponible | no aplica | 0,752 s (0,7582379 s medido en x86-64); declarado 0,76 s oficial | no disponible | HuggingFace |
-| `dashi/microduck-hill-remix-r760` | Ancestro (grafo original y selector por seed) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-hillclimber-remix4` | Ancestro intermedio (política de hillclimber) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| `jrubiosainz/microduck-game-hillclimber-remix7` | Este modelo | no disponible | no aplica | 0,748 s de media en 5 seeds (0,7582384 s en la conversion inicial de la seed 4) | no disponible | Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-hillclimber-remix6` | Modelo base directo | no disponible | no aplica | 0,752 s (0,7582379 s medido en x86-64); declarado 0,76 s oficial | no disponible | Hugging Face |
+| `dashi/microduck-hill-remix-r760` | Ancestro (grafo original y selector por seed) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-hillclimber-remix4` | Ancestro intermedio (política de hillclimber) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 Las diferencias de tiempo entre `remix7` y `remix6` en la seed 4 son de milisegundos y el propio autor redondea ambos a 0,76 s en el marcador oficial; la comparación relevante es de estructura de grafo, no de rendimiento agregado.
 
@@ -100,13 +100,13 @@ Las diferencias de tiempo entre `remix7` y `remix6` en la seed 4 son de milisegu
 - **Canales frágiles**: contador y rama viajan en los bits bajos de `head_pitch` (2⁻²⁰ rad por unidad) y el grafo enmascara esa columna antes de codificar el contador; pequeñas diferencias de coma flotante pueden alterar la selección.
 - **Alcance mínimo**: no es un modelo de lenguaje, no procesa texto, no razona y no generaliza a otras tareas; cualquier uso fuera del evento `hill-climb-1m5` carece de soporte.
 - **Licencia no disponible**: no se puede asumir permiso de uso comercial ni de redistribución; hay que contactar con el autor antes de cualquier uso en producción.
-- **Documentación y mantenimiento**: 0 descargas y 0 *likes*; el modelo depende de código de búsqueda (`ol_hybrid2.py`, `tko.py bake`) que no se distribuye en el repositorio de HuggingFace.
+- **Documentación y mantenimiento**: 0 descargas y 0 *likes*; el modelo depende de código de búsqueda (`ol_hybrid2.py`, `tko.py bake`) que no se distribuye en el repositorio de Hugging Face.
 - **Mejora marginal**: la ganancia sobre el base en la seed 4 está en el orden del 0,5 %, dentro de la variabilidad de milisegundos de la propia medida (0,7582379 frente a 0,7582384 s en la conversión inicial).
 - **Sesgos**: no se documentan sesgos sociales, pero sí un sesgo de evaluación claro hacia las cinco seeds oficiales de la Arena.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix7
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix7
 - Modelo base (`remix6`, commit `2433eab1`): https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix6/tree/2433eab158e369c476b131a8c416e5845e0b077d
 - Modelo base de `remix6` (`dashi/microduck-hill-remix-r760`): https://huggingface.co/dashi/microduck-hill-remix-r760
 - Ancestro intermedio (`hillclimber-remix4`): https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix4

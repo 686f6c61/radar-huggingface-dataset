@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p3.gt` es un artefacto publicado en HuggingFace por IBM Research bajo licencia Apache-2.0. Por el nombre del repositorio y el formato del fichero (ONNX), no parece tratarse de un modelo de lenguaje, sino de un conjunto de parámetros o ángulos asociados al algoritmo cuántico variacional QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut, con un número de capas p=3. La etiqueta final "gt" podría corresponder a "ground truth" o a una variante de grafo, pero esto es una interpretación del identificador y no está confirmado por la model card, que únicamente declara la licencia.
+`ibm-research/qaoa_angles.max_cut.p3.gt` es un artefacto publicado en Hugging Face por IBM Research bajo licencia Apache-2.0. Por el nombre del repositorio y el formato del fichero (ONNX), no parece tratarse de un modelo de lenguaje, sino de un conjunto de parámetros o ángulos asociados al algoritmo cuántico variacional QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut, con un número de capas p=3. La etiqueta final "gt" podría corresponder a "ground truth" o a una variante de grafo, pero esto es una interpretación del identificador y no está confirmado por la model card, que únicamente declara la licencia.
 
 La relevancia de este tipo de artefactos en el ecosistema de IA open source es indirecta pero creciente: los ángulos variacionales de QAOA son el equivalente funcional de los pesos de un modelo, y su publicación permite reutilizar puntos de partida bien optimizados en lugar de reiniciar la optimización clásica desde cero. Esto conecta con líneas de trabajo como el warm-starting, la transferencia de parámetros entre instancias y el aprendizaje de inicializaciones mediante redes neuronales.
 
@@ -78,7 +78,7 @@ No disponible. La busqueda web realizada no ha devuelto artefactos comparables n
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gt
+- Pagina del modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gt
 - Sitio corporativo de IBM: https://www.ibm.com/
 - Entrada de IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM
 

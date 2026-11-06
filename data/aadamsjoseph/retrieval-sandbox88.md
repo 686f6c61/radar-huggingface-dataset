@@ -68,5 +68,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (Perceiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aadamsjoseph/retrieval-sandbox88
+- Repositorio Hugging Face: https://huggingface.co/aadamsjoseph/retrieval-sandbox88
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web.

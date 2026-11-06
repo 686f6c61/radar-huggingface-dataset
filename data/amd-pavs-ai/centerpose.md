@@ -76,5 +76,5 @@ No se dispone de información comparativa con otros estimadores de pose 6-DoF co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMD-PAVS-AI/CenterPose)
+- [Modelo en Hugging Face](https://huggingface.co/AMD-PAVS-AI/CenterPose)
 - [Repositorio GitHub con scripts y configuración](https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/CenterPose)

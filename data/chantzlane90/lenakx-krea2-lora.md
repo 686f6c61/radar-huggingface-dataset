@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lenakx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace. Se trata de un ajuste fino de bajo rango orientado a la generacion de imagenes de un personaje ficticio llamado Lena Kowalski, descrito en la model card como personaje adulto generado por IA (21+) y no una persona real. El adaptador se activa mediante la palabra clave (trigger) `lenakx`.
+lenakx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face. Se trata de un ajuste fino de bajo rango orientado a la generacion de imagenes de un personaje ficticio llamado Lena Kowalski, descrito en la model card como personaje adulto generado por IA (21+) y no una persona real. El adaptador se activa mediante la palabra clave (trigger) `lenakx`.
 
 El LoRA fue entrenado con la herramienta fal-ai/krea-2-trainer durante 1000 pasos y con un rango (rank) de 32. Las claves del checkpoint se han remapeado al prefijo `diffusion_model.*` propio de ComfyUI para su uso en Sogni. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -77,6 +77,6 @@ No disponible. No se han proporcionado datos de otros LoRA de personaje comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/lenakx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/lenakx-krea2-lora
 - Herramienta de entrenamiento citada en la model card: fal-ai/krea-2-trainer (sin URL directa en la informacion proporcionada)
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

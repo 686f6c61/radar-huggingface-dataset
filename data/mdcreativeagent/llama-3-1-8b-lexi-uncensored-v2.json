@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mdcreativeagent/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "slug": "mdcreativeagent-llama-3-1-8b-lexi-uncensored-v2",
+  "author": "mdcreativeagent",
+  "url": "https://huggingface.co/mdcreativeagent/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "created_at": "2026-11-06T12:32:30.000Z",
+  "updated_at": "2026-11-06T12:32:31.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "license:llama3.1",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 77.92
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 29.69
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 16.92
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 4.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 7.77
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 30.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 · Hugging Face",
+      "url": "https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "snippet": "This model is based on Llama-3.1-8b-Instruct, and is governed by META LLAMA 3.1 COMMUNITY LICENSE AGREEMENT · Lexi is uncensored, which makes the model compliant. You are advised to implement your own alignment layer before exposing the model ..."
+    },
+    {
+      "title": "Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2 · Hugging Face",
+      "url": "https://huggingface.co/Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "snippet": "GENERAL INFO: This model is based on Llama-3.1-8b-Instruct, and is governed by META LLAMA 3.1 COMMUNITY LICENSE AGREEMENT Lexi is uncensored, which makes the model compliant. You are advised to implement your own alignment layer before exposing the model as a service. It will be highly compliant with any requests, even unethical ones."
+    },
+    {
+      "title": "Run Llama-3.1-8B-Lexi-Uncensored-V2 API (Easy Deployment & Flat-Rate ...",
+      "url": "https://featherless.ai/models/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "snippet": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 is an 8 billion parameter language model based on Meta's Llama-3.1-8B-Instruct architecture, featuring a 32768 token context length. This model is fine-tuned to be uncensored and highly compliant with user requests, including potentially unethical ones, making it suitable for applications requiring maximum flexibility in response generation. It is ..."
+    }
+  ]
+}

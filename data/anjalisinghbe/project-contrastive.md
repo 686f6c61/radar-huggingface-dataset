@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anjalisinghbe/project-contrastive` es un repositorio experimental publicado en HuggingFace cuyo objetivo declarado es servir de base de codigo ("codebase") para experimentos de aprendizaje contrastivo bajo la etiqueta CoCa. Segun su model card, se trata de una implementacion propia de escala *tiny*, disenada de forma deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, en ningun caso, un modelo entrenado ni un checkpoint de referencia.
+`anjalisinghbe/project-contrastive` es un repositorio experimental publicado en Hugging Face cuyo objetivo declarado es servir de base de codigo ("codebase") para experimentos de aprendizaje contrastivo bajo la etiqueta CoCa. Segun su model card, se trata de una implementacion propia de escala *tiny*, disenada de forma deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, en ningun caso, un modelo entrenado ni un checkpoint de referencia.
 
 El repositorio incluye un unico checkpoint de inicializacion (`model.safetensors`) con 24.832 parametros totales, acompanado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto), `predict.py` (modelo y punto de entrada ejecutable) y el propio README. La model card es explicita: el checkpoint "es una inicializacion valida para pruebas de humo; no se presenta como un checkpoint entrenado ni evaluado", y no se reclama ninguna puntuacion de benchmark.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en todas. No requiere acelerador dedicado.
 - Opciones de despliegue: no aplican los servidores de inferencia habituales. Al ser una implementacion custom sin arquitectura estandar, no es compatible de forma directa con vLLM, TGI, llama.cpp u Ollama; la model card indica que hace falta un adaptador explicito. El unico punto de entrada documentado es `python predict.py --help`.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones y, al no existir un modelo entrenado con una tarea definida, cualquier cifra careceria de sentido.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anjalisinghbe/project-contrastive | 24.832 | no disponible | sin benchmark declarado | MIT | HuggingFace (checkpoint de inicializacion) |
+| anjalisinghbe/project-contrastive | 24.832 | no disponible | sin benchmark declarado | MIT | Hugging Face (checkpoint de inicializacion) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anjalisinghbe/project-contrastive
+- Modelo en Hugging Face: https://huggingface.co/anjalisinghbe/project-contrastive
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios de codigo o demos asociados. Los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con este repositorio.

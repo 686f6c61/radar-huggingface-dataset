@@ -77,8 +77,8 @@ No se dispone de datos comparativos directos con otros modelos VLA en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace (privado): https://huggingface.co/JackLiu0406/meta-SFT-checkpoints
+- Repositorio Hugging Face (privado): https://huggingface.co/JackLiu0406/meta-SFT-checkpoints
 - Repositorio público con fine-tunes y runs de 5 tareas: https://huggingface.co/JackLiu0406/b1k-checkpoints
-- Perfil del autor en HuggingFace: https://huggingface.co/JackLiu0406/models
+- Perfil del autor en Hugging Face: https://huggingface.co/JackLiu0406/models
 - Repositorio GitHub del pipeline de entrenamiento: https://github.com/JackLiu0406/behaviour-1k-2026-meta
 - Modelo base: https://huggingface.co/IliaLarchenko/behavior_50t_checkpoint

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felixhayashi/cnn-transformer-matching-2023` es un repositorio de HuggingFace publicado por el usuario felixhayashi que contiene una implementacion funcional de una arquitectura denominada Cnn Transformer orientada a tareas de matching (emparejamiento o similitud entre pares de entradas). El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`felixhayashi/cnn-transformer-matching-2023` es un repositorio de Hugging Face publicado por el usuario felixhayashi que contiene una implementacion funcional de una arquitectura denominada Cnn Transformer orientada a tareas de matching (emparejamiento o similitud entre pares de entradas). El propio autor lo describe como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 La relevancia del repositorio es, por tanto, la de una plantilla de codigo reproducible y no la de un modelo listo para produccion. Incluye `inference.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de experimento por defecto (optimizador lion y schedule polinomial) y el checkpoint de inicializacion. La configuracion declarada es de escala "large" dentro de la propia nomenclatura del autor, con atencion de tipo grouped query, fusion de bajo rango, activacion gelu y normalizacion layernorm.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo de las ultimas dos decadas, incluidas GTX 1050, RTX 3060, RTX 4090 y similares.
 - Opciones de despliegue: al ser una implementacion propia con un unico script `inference.py`, no se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni otras plataformas estandar. El autor advierte que las APIs genericas de carga automatica necesitan un adaptador explicito.
 - Latencia y throughput estimados: no disponibles. Con este numero de parametros la latencia estaria dominada por el coste de arranque del proceso Python y la carga del fichero, no por el calculo.
-- Almacenamiento: el repositorio completo ocupa 0.0 GB segun HuggingFace.
+- Almacenamiento: el repositorio completo ocupa 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -102,5 +102,5 @@ La diferencia fundamental no es solo de escala en parametros, sino de estado: lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixhayashi/cnn-transformer-matching-2023
+- Hugging Face: https://huggingface.co/felixhayashi/cnn-transformer-matching-2023
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web proporcionados. Los resultados devueltos corresponden a un test de velocidad de conexion y a noticias sobre el apagado de DSL de Telkom en Sudafrica, sin relacion alguna con el modelo.

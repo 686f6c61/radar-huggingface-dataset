@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mrr42694/Vstr es un repositorio alojado en HuggingFace por el usuario mrr42694 (rahul Mr) que, a fecha de la informacion disponible, no incluye documentacion tecnica propia: su model card se limita a un encabezado YAML con licencia, idioma, dataset y modelo base. El repositorio declara como `base_model` a RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf, lo que sugiere que se trata de un derivado o reempaquetado de un modelo de aproximadamente 7.000 millones de parametros afinado con ORPO, aunque la ficha no confirma arquitectura, contexto ni pesos.
+mrr42694/Vstr es un repositorio alojado en Hugging Face por el usuario mrr42694 (rahul Mr) que, a fecha de la informacion disponible, no incluye documentacion tecnica propia: su model card se limita a un encabezado YAML con licencia, idioma, dataset y modelo base. El repositorio declara como `base_model` a RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf, lo que sugiere que se trata de un derivado o reempaquetado de un modelo de aproximadamente 7.000 millones de parametros afinado con ORPO, aunque la ficha no confirma arquitectura, contexto ni pesos.
 
 La senal mas relevante de esta ficha es la inconsistencia de sus metadatos. El campo `pipeline_tag` es `graph-ml`, la libreria declarada es `pyannote-audio` (una libreria de diarizacion de hablantes, no de generacion de texto) y entre los tags aparece `text-generation-inference`. Estas tres etiquetas describen tareas incompatibles entre si (grafos, audio y generacion de texto), y el repositorio no aporta ningun artefacto, configuracion ni ejemplo que permita resolver la ambiguedad.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos para este repositorio. Los unico
 - Trazabilidad de licencias: comprobar que la licencia declarada (apache-2.0) es compatible con la del modelo base referenciado antes de cualquier redistribucion.
 - Deteccion de repositorios no utilizables en busquedas automatizadas: incorporar heurísticas que descarten repositorios con 0 descargas, 0 likes y ausencia de pesos o configuracion.
 - Investigacion sobre calidad del ecosistema open source: medir la proporcion de repositorios sin model card sustantiva en el Hub.
-- Formacion en buenas practicas de publicacion: contrastar esta ficha con la plantilla recomendada por HuggingFace (arquitectura, contexto, cuantizaciones, benchmarks, limitaciones).
+- Formacion en buenas practicas de publicacion: contrastar esta ficha con la plantilla recomendada por Hugging Face (arquitectura, contexto, cuantizaciones, benchmarks, limitaciones).
 
 Cualquier otro uso (inferencia en produccion, atencion al cliente, generacion de codigo, RAG, agentes) seria especulativo y no esta respaldado por la informacion disponible.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mrr42694/Vstr
+- Repositorio en Hugging Face: https://huggingface.co/mrr42694/Vstr
 - Perfil del autor: https://huggingface.co/mrr42694
 - Datasets del autor: https://huggingface.co/mrr42694/datasets
 - Modelo base referenciado: https://huggingface.co/RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf

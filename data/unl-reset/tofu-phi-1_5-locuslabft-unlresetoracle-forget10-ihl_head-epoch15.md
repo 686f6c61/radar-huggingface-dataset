@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch15` | 1.418 M | No disponible | Apache 2.0 | HuggingFace | Checkpoint de unlearning sobre TOFU forget10 |
-| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | No disponible | No disponible en la información | HuggingFace | Modelo base fine-tuneado sobre TOFU |
-| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | HuggingFace | Modelo original de Microsoft |
-| `microsoft/phi-2` | 2.700 M | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | HuggingFace | Alternativa de mayor tamaño de la familia Phi |
+| `unl-reset/tofu-phi-1_5-...-epoch15` | 1.418 M | No disponible | Apache 2.0 | Hugging Face | Checkpoint de unlearning sobre TOFU forget10 |
+| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | No disponible | No disponible en la información | Hugging Face | Modelo base fine-tuneado sobre TOFU |
+| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | Hugging Face | Modelo original de Microsoft |
+| `microsoft/phi-2` | 2.700 M | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | Hugging Face | Alternativa de mayor tamaño de la familia Phi |
 
 ## Limitaciones y advertencias
 
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch15
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch15
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Repositorio TOFU (referencia del dataset): no disponible en la información proporcionada
 - Paper TOFU: no disponible en la información proporcionada
-- `ihl_manifest.json`: referenciado en la model card, alojado en el propio repositorio de HuggingFace
+- `ihl_manifest.json`: referenciado en la model card, alojado en el propio repositorio de Hugging Face

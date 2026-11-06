@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX2.3-10Eros es un modelo de generación de vídeo a partir de imagen (image-to-video, I2V) publicado en HuggingFace por el usuario Xxct. Se trata de un *merge* de pesos derivado de la familia LTX-2.3 (modelo base de vídeo de Lightricks, del que no se documentan aquí especificaciones oficiales) y del modelo Sulphur-2-base de SulphurAI, orientado explícitamente a contenido para adultos. El autor lo describe como una versión "10 Eros", con sucesivas iteraciones (v1.2, v1.3, v1.4, v1.5) que ajustan las compuertas de atención (`attn_1`, `attn_2`) para recuperar detalle anatómico y movimiento explícito sin perder la estabilidad estructural de las versiones previas.
+LTX2.3-10Eros es un modelo de generación de vídeo a partir de imagen (image-to-video, I2V) publicado en Hugging Face por el usuario Xxct. Se trata de un *merge* de pesos derivado de la familia LTX-2.3 (modelo base de vídeo de Lightricks, del que no se documentan aquí especificaciones oficiales) y del modelo Sulphur-2-base de SulphurAI, orientado explícitamente a contenido para adultos. El autor lo describe como una versión "10 Eros", con sucesivas iteraciones (v1.2, v1.3, v1.4, v1.5) que ajustan las compuertas de atención (`attn_1`, `attn_2`) para recuperar detalle anatómico y movimiento explícito sin perder la estabilidad estructural de las versiones previas.
 
 El modelo se distribuye como checkpoint completo en formato diffusers, con pesos en BF16, FP8 mixto y variantes GGUF e INT8 en repositorios de terceros. El repositorio ocupa 424 GB, lo que refleja que incluye múltiples variantes de pesos (BF16, FP8, splits de Kijai) más CLIP y VAE. No es un modelo autónomo: depende del modelo base Sulphur-2-base y está diseñado para funcionar con LoRAs DMD híbridas y con los nodos ComfyUI del propio autor.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LTX2.3-10Eros | no disponible | no disponible | no disponible | HuggingFace (repo de 424 GB) |
-| Sulphur-2-base (dependencia) | no disponible | no disponible | no disponible | HuggingFace |
+| LTX2.3-10Eros | no disponible | no disponible | no disponible | Hugging Face (repo de 424 GB) |
+| Sulphur-2-base (dependencia) | no disponible | no disponible | no disponible | Hugging Face |
 | LTX-2.3 base (origen) | no disponible | no disponible | no disponible | no disponible en la informacion |
 
 No se dispone de datos de rendimiento ni de especificaciones comparables para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xxct/LTX2.3-10Eros
+- Modelo en Hugging Face: https://huggingface.co/Xxct/LTX2.3-10Eros
 - Workflows del autor: https://huggingface.co/TenStrip/LTX2.3-10Eros_Workflows
 - Nodos ComfyUI: https://github.com/TenStrip/10S-Comfy-nodes
 - Modelo base dependiente: https://huggingface.co/SulphurAI/Sulphur-2-base

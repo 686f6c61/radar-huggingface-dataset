@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-control-s2` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en HuggingFace. La denominación sugiere que el ajuste se ha realizado con el objetivo de controlar la generación de texto en un dominio específico (posiblemente relacionado con aves, aunque no se especifica en la información disponible). El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador o una versión cuantizada, y no de los pesos completos del modelo base.
+El modelo `daanvdweijden/qwen2.5-7b-birds-control-s2` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en Hugging Face. La denominación sugiere que el ajuste se ha realizado con el objetivo de controlar la generación de texto en un dominio específico (posiblemente relacionado con aves, aunque no se especifica en la información disponible). El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador o una versión cuantizada, y no de los pesos completos del modelo base.
 
 La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B, un modelo de lenguaje de 7 mil millones de parámetros con buen rendimiento en tareas multilingües, código y razonamiento. Sin embargo, la información pública es extremadamente limitada: la model card está vacía, no se especifica licencia, idiomas ni datos de entrenamiento. Esto impide evaluar con rigor su calidad o sus capacidades específicas, por lo que esta ficha debe interpretarse con cautela.
 
@@ -68,10 +68,10 @@ No es posible realizar una comparativa rigurosa sin datos de rendimiento. Como r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7,6B | 32 768 | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128 000 | Llama 3.1 License | HuggingFace |
-| Mistral 7B | 7B | 32 000 | Apache 2.0 | HuggingFace |
-| daanvdweijden/qwen2.5-7b-birds-control-s2 | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen2.5-7B (base) | 7,6B | 32 768 | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128 000 | Llama 3.1 License | Hugging Face |
+| Mistral 7B | 7B | 32 000 | Apache 2.0 | Hugging Face |
+| daanvdweijden/qwen2.5-7b-birds-control-s2 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,6 +83,6 @@ No es posible realizar una comparativa rigurosa sin datos de rendimiento. Como r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-control-s2
+- Modelo en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-control-s2
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Blog de Qwen sobre Qwen2.5: https://qwen.ai/blog?id=qwen2.5

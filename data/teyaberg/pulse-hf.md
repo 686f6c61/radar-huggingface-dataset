@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PULSE-HF es un modelo publicado en HuggingFace por el usuario teyaberg, etiquetado para tareas de electrocardiografía (ECG), insuficiencia cardiaca (heart failure) y fracción de eyección del ventrículo izquierdo (LVEF). Por las etiquetas asociadas, se trata de un modelo orientado a series temporales biomédicas, presumiblemente diseñado para analizar señales de ECG y estimar parámetros cardíacos o detectar insuficiencia cardiaca. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un modelo de pesos relativamente compacto.
+PULSE-HF es un modelo publicado en Hugging Face por el usuario teyaberg, etiquetado para tareas de electrocardiografía (ECG), insuficiencia cardiaca (heart failure) y fracción de eyección del ventrículo izquierdo (LVEF). Por las etiquetas asociadas, se trata de un modelo orientado a series temporales biomédicas, presumiblemente diseñado para analizar señales de ECG y estimar parámetros cardíacos o detectar insuficiencia cardiaca. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un modelo de pesos relativamente compacto.
 
-El modelo está publicado bajo licencia CC-BY-4.0 y con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. En el momento de la consulta no acumula descargas ni likes, y no se ha publicado información sobre arquitectura, parámetros, contexto, datos de entrenamiento ni resultados de benchmarks.
+El modelo está publicado bajo licencia CC-BY-4.0 y con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. En el momento de la consulta no acumula descargas ni likes, y no se ha publicado información sobre arquitectura, parámetros, contexto, datos de entrenamiento ni resultados de benchmarks.
 
 Su relevancia potencial radica en el ámbito de la cardiología asistida por IA: la estimación no invasiva de la LVEF y la detección de insuficiencia cardiaca a partir de ECG son líneas de investigación activas con aplicaciones clínicas directas. No obstante, la ausencia de documentación técnica publicada limita seriamente cualquier evaluación rigurosa del modelo en su estado actual.
 
@@ -68,10 +68,10 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Sesgos potenciales: al desconocerse la composicion del dataset de entrenamiento, no se puede evaluar el sesgo por edad, sexo, etnia, comorbilidades ni por dispositivo de adquisicion de ECG.
 - Riesgo de alucinacion o error de prediccion: en el contexto de LVEF e insuficiencia cardiaca, un falso negativo puede tener consecuencias clinicas graves.
 - Licencia CC-BY-4.0: permite uso comercial y obras derivadas con atribucion, pero no exime del cumplimiento de la normativa sanitaria aplicable (por ejemplo, marcado CE como producto sanitario en la UE).
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad por terceros.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad por terceros.
 - Repositorio sin descargas ni likes en el momento de la consulta: no existe evidencia de uso o validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teyaberg/PULSE-HF
+- Hugging Face: https://huggingface.co/teyaberg/PULSE-HF
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos).

@@ -80,10 +80,10 @@ La model card indica que los siete observables congelados pasan la suite de rete
 
 | Modelo | Parámetros | Contexto / lag | Mejora RMSD vs Senba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Senba | 34,15 M | Lag 50 frames | — | MIT | HuggingFace |
-| MarS-FM fuente | 34,15 M | Lag no especificado | −0,0326 Å (peor) | MIT | HuggingFace |
+| Senba | 34,15 M | Lag 50 frames | — | MIT | Hugging Face |
+| MarS-FM fuente | 34,15 M | Lag no especificado | −0,0326 Å (peor) | MIT | Hugging Face |
 | Persistencia de coordenadas | 0 (línea base) | N/A | −0,436 Å (peor) | N/A | No disponible |
-| Senba anterior (5 épocas, α=0,08) | 34,15 M | Lag 50 frames | −0,00216 Å (peor) | MIT | HuggingFace |
+| Senba anterior (5 épocas, α=0,08) | 34,15 M | Lag 50 frames | −0,00216 Å (peor) | MIT | Hugging Face |
 
 La comparativa se limita a las alternativas evaluadas en la model card. No se dispone de información sobre otros modelos de dinámica molecular con los que comparar.
 
@@ -100,10 +100,10 @@ La comparativa se limita a las alternativas evaluadas en la model card. No se di
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vkali08/senba
+- Hugging Face del modelo: https://huggingface.co/vkali08/senba
 - Página de lanzamiento: https://senba.papercrane.bio/
 - Código fuente de MarS-FM (GitHub): https://github.com/valence-labs/mars-fm
-- Modelo base en HuggingFace: https://huggingface.co/valencelabs/mars-fm
-- Dataset mdCATH en HuggingFace: https://huggingface.co/datasets/compsciencelab/mdCATH
+- Modelo base en Hugging Face: https://huggingface.co/valencelabs/mars-fm
+- Dataset mdCATH en Hugging Face: https://huggingface.co/datasets/compsciencelab/mdCATH
 - Artículo arXiv 2509.24779: https://arxiv.org/abs/2509.24779
 - Artículo arXiv 2407.14794: https://arxiv.org/abs/2407.14794

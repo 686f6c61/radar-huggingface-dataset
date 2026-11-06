@@ -108,7 +108,7 @@ No se dispone de datos sobre otras alternativas comparables de terceros (tamaño
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Himee1/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Repositorio en Hugging Face: https://huggingface.co/Himee1/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base (FP8): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - ExLlamaV3 (commit de conversión `d3739fd`): no disponible como enlace en la información proporcionada

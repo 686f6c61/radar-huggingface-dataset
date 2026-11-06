@@ -79,5 +79,5 @@ No se dispone de datos de benchmarks comparativos entre estos modelos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF
 - Variante NVFP4-AWQ: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ

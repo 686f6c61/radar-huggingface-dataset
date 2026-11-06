@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gbert-large-mlx es una conversión al formato MLX (float16) del modelo deepset/gbert-large, un encoder BERT de arquitectura transformer entrenado especificamente para aleman. Lo publica el usuario pkcpkc en HuggingFace y su unico proposito es facilitar la inferencia de este encoder en hardware Apple Silicon mediante el framework MLX y la libreria mlx-embeddings. No se ha realizado ningun entrenamiento adicional: se trata exclusivamente de una conversion de pesos, con la cabeza de modelado de lenguaje enmascarado (MLM, prefijo `cls.*`) eliminada para dejar unicamente el encoder y el pooler.
+gbert-large-mlx es una conversión al formato MLX (float16) del modelo deepset/gbert-large, un encoder BERT de arquitectura transformer entrenado especificamente para aleman. Lo publica el usuario pkcpkc en Hugging Face y su unico proposito es facilitar la inferencia de este encoder en hardware Apple Silicon mediante el framework MLX y la libreria mlx-embeddings. No se ha realizado ningun entrenamiento adicional: se trata exclusivamente de una conversion de pesos, con la cabeza de modelado de lenguaje enmascarado (MLM, prefijo `cls.*`) eliminada para dejar unicamente el encoder y el pooler.
 
 El modelo base, deepset/gbert-large, fue desarrollado por deepset (Branden Chan, Timo Möller) junto con Stefan Schweter y presentado en el paper "German's Next Language Model" (COLING 2020). Es un BERT-large adaptado al aleman mediante entrenamiento continuo sobre corpus germanoparlantes, y se ha consolidado como referencia para tareas de comprension del lenguaje en aleman (clasificacion, NER, QA extractiva). Esta conversion hereda esas capacidades pero las orienta a la generacion de representaciones vectoriales (embeddings) de tokens y secuencias.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM/memoria unificada estimada: con pesos en float16 y 335,7M parametros, el modelo ocupa aproximadamente 0,67 GB solo en pesos; sumando activaciones y overhead de MLX, un presupuesto de 1,5-2 GB de memoria unificada es razonable para inferencia por lotes pequenos.
 - GPU recomendadas: al ser una conversion MLX, el objetivo principal es hardware Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra). No se documenta soporte para CUDA.
 - Cabe en GPU consumer: si, en cualquier Mac con chip Apple Silicon; en el ecosistema NVIDIA requeriria conversion a otro formato (por ejemplo, safetensors estandar con PyTorch o GGUF), no incluida en este repo.
-- Opciones de despliegue: mlx-embeddings y servidores compatibles con MLX; para otros entornos habria que reconvertir los pesos al formato original de HuggingFace Transformers.
+- Opciones de despliegue: mlx-embeddings y servidores compatibles con MLX; para otros entornos habria que reconvertir los pesos al formato original de Hugging Face Transformers.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a modelos del mismo ecosistema aleman de deepset; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pkcpkc/gbert-large-mlx
+- Hugging Face: https://huggingface.co/pkcpkc/gbert-large-mlx
 - Modelo base: https://huggingface.co/deepset/gbert-large
 - Paper: Chan, Schweter & Möller, "German's Next Language Model" (COLING 2020): https://aclanthology.org/2020.coling-main.598/
 - mlx-embeddings: https://github.com/Blaizzy/mlx-embeddings

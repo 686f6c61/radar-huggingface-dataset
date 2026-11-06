@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Tamaño | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-3B-Instruct (base) | 3.09B | No disponible | other | 6.2 GB (FP16) | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct-FP8 | 3.09B | No disponible | other | 3.4 GB (FP8) | HuggingFace |
+| Qwen2.5-Coder-3B-Instruct (base) | 3.09B | No disponible | other | 6.2 GB (FP16) | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct-FP8 | 3.09B | No disponible | other | 3.4 GB (FP8) | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada. La comparación natural es con el modelo base sin cuantizar, que comparte arquitectura y parámetros, pero requiere el doble de espacio y no aprovecha las ventajas de FP8.
 

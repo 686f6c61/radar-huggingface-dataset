@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minsu0567/llm_test` es un repositorio publicado en HuggingFace por el usuario `minsu0567` que contiene pesos en formato safetensors y una model card generada automáticamente por la plantilla de `transformers`. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni descripción funcional: todos los campos de la model card aparecen sin rellenar con el marcador `[More Information Needed]`. El tamaño del repositorio es de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero el autor no confirma ni la arquitectura ni el número de parámetros.
+`minsu0567/llm_test` es un repositorio publicado en Hugging Face por el usuario `minsu0567` que contiene pesos en formato safetensors y una model card generada automáticamente por la plantilla de `transformers`. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni descripción funcional: todos los campos de la model card aparecen sin rellenar con el marcador `[More Information Needed]`. El tamaño del repositorio es de 0,1 GB, lo que sugiere un modelo de pequeñas dimensiones, pero el autor no confirma ni la arquitectura ni el número de parámetros.
 
 El nombre del repositorio ("llm_test") y la ausencia total de documentación indican que se trata muy probablemente de una prueba de subida de artefactos al Hub, no de un modelo destinado a uso real. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y las fechas de creación y actualización (13 de septiembre de 2026, según los metadatos) distan apenas 18 segundos entre sí, lo que refuerza la hipótesis de una carga automatizada de prueba.
 
@@ -37,10 +37,10 @@ Tampoco consta información sobre número de tokens de entrenamiento, composici�
 No se puede confirmar ninguna capacidad concreta del modelo a partir de la información disponible. Lo único verificable es lo siguiente:
 
 - El repositorio declara la librería `transformers`, por lo que los pesos están presumiblemente pensados para cargarse mediante `AutoModel` / `AutoTokenizer`, aunque el autor no aporta ejemplo de uso.
-- La etiqueta `endpoints_compatible` sugiere que el autor preveía compatibilidad con los endpoints de inferencia de HuggingFace, sin que exista confirmación de que el despliegue funcione.
+- La etiqueta `endpoints_compatible` sugiere que el autor preveía compatibilidad con los endpoints de inferencia de Hugging Face, sin que exista confirmación de que el despliegue funcione.
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, uso como agente, modo "thinking", visión, audio ni capacidades multilingües.
 - No hay información sobre ventana de contexto, tokenizador, vocabulario ni idiomas de entrenamiento.
-- No existe demo, espacio de HuggingFace ni documentación adicional enlazada.
+- No existe demo, espacio de Hugging Face ni documentación adicional enlazada.
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ Advertencia previa: dado que no existe documentación funcional, ninguno de los 
 
 - Prototipado interno de pipelines: usar el repositorio como artefacto de prueba para verificar que un flujo de carga con `transformers`, tokenización y decodificación funciona de extremo a extremo antes de sustituirlo por un modelo en producción.
 - Pruebas de integración de infraestructura: validar que un servidor de inferencia (vLLM, TGI o similar) acepta el formato safetensors y gestiona correctamente la carga y el batching, sin expectativa de calidad en las respuestas.
-- Evaluación de endpoints compatibles: comprobar la ruta de despliegue en HuggingFace Inference Endpoints sugerida por la etiqueta `endpoints_compatible`.
+- Evaluación de endpoints compatibles: comprobar la ruta de despliegue en Hugging Face Inference Endpoints sugerida por la etiqueta `endpoints_compatible`.
 - Generación de texto de baja exigencia: si el modelo resultase funcional, podría emplearse en tareas de relleno o generación corta donde la exactitud no fuese crítica, siempre tras medir su calidad real.
 - Base para fine-tuning experimental: si el autor publicase la arquitectura, podría servir como punto de partida para ajuste fino en tareas concretas, aunque la licencia no está definida y esto bloquea su uso comercial.
 - Docencia y reproducibilidad: emplearlo como ejemplo de repositorio mal documentado para ilustrar la importancia de completar la model card en un contexto formativo.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la arquitectura no puede calcularse. Como referencia orientativa, un repositorio de 0,1 GB en safetensors es compatible con modelos de muy pequeña escala, pero esto es una inferencia a partir del tamaño del archivo, no un dato confirmado por el autor.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no confirmado. Por el tamaño del repositorio, es plausible que quepa en cualquier GPU de consumo actual, pero no puede afirmarse sin conocer la arquitectura.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a los endpoints de HuggingFace; al estar en formato safetensors y declarar `transformers`, sería compatible en principio con servidores como vLLM o TGI. No hay archivos GGUF, por lo que llama.cpp y Ollama requerirían una conversión previa por parte del usuario.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a los endpoints de Hugging Face; al estar en formato safetensors y declarar `transformers`, sería compatible en principio con servidores como vLLM o TGI. No hay archivos GGUF, por lo que llama.cpp y Ollama requerirían una conversión previa por parte del usuario.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minsu0567/llm_test
+- Repositorio en Hugging Face: https://huggingface.co/minsu0567/llm_test
 - Referencia citada en las etiquetas del repositorio (plantilla, no específica del modelo): Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de código o demo del modelo: no disponible en la información proporcionada.

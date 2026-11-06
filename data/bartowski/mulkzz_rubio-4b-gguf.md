@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuBio-4B (esta ficha) | ~4,3 B | No disponible | Sí (imagen-texto) | Apache 2.0 | GGUF en HuggingFace |
+| RuBio-4B (esta ficha) | ~4,3 B | No disponible | Sí (imagen-texto) | Apache 2.0 | GGUF en Hugging Face |
 | Alternativas de ~4B multimodal | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoría.

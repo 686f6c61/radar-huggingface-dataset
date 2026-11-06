@@ -45,7 +45,7 @@ El entrenamiento se realizó en 8 GPUs NVIDIA H200, y la versión publicada es u
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta tablas de rendimiento en la model card ni en el repositorio de HuggingFace. El paper asociado (arXiv:2601.02918) contiene datos de evaluación en conjuntos estándar de IQA como KonIQ-10k, SPAQ o NIQE, pero no están reproducidos en la información proporcionada.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no presenta tablas de rendimiento en la model card ni en el repositorio de Hugging Face. El paper asociado (arXiv:2601.02918) contiene datos de evaluación en conjuntos estándar de IQA como KonIQ-10k, SPAQ o NIQE, pero no están reproducidos en la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la información proporcionada. No se pued
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ethanliang99/Zoom-IQA-7B
+- Hugging Face: https://huggingface.co/Ethanliang99/Zoom-IQA-7B
 - Paper: https://arxiv.org/abs/2601.02918
 - Página del proyecto: https://ethanliang99.github.io/ZOOMIQA-Projectpage/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

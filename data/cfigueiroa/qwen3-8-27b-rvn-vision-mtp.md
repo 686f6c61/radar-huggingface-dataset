@@ -76,7 +76,7 @@ La principal diferencia frente al original es la ausencia de censura y la cuanti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-vision-MTP
+- Repositorio Hugging Face: https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-vision-MTP
 - Repositorio base de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Variante intermedia de 0bserverx: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Repositorio de ggml-org con proyector de vision: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF

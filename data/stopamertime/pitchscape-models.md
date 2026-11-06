@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pitchscape's models es un repositorio de HuggingFace publicado por el usuario stopamertime que reúne los modelos ONNX que ejecuta la aplicación Pitchscape, tanto en el navegador (ONNX Runtime Web sobre WebGPU) como en su servidor. No es un modelo único ni un modelo de lenguaje: es una colección de 14 ficheros ONNX que cubren detección de actividad de voz, reconocimiento automático de habla, alineación forzada, separación de fuentes musicales, transcripción automática de batería, estimación de tono y transcripción polifónica de notas.
+Pitchscape's models es un repositorio de Hugging Face publicado por el usuario stopamertime que reúne los modelos ONNX que ejecuta la aplicación Pitchscape, tanto en el navegador (ONNX Runtime Web sobre WebGPU) como en su servidor. No es un modelo único ni un modelo de lenguaje: es una colección de 14 ficheros ONNX que cubren detección de actividad de voz, reconocimiento automático de habla, alineación forzada, separación de fuentes musicales, transcripción automática de batería, estimación de tono y transcripción polifónica de notas.
 
 El autor no entrena ningún modelo: copia o exporta pesos de terceros (Silero VAD v6, OpenAI Whisper medium, Demucs htdemucs_6s de Meta AI, ADTOF, CREPE, Basic Pitch de Spotify, wav2vec 2.0 y el alineador MMS) y los convierte a ONNX con sus propias herramientas (`tools/export_models.py`, `tools/export_whisper.py`, `tools/export_align.py`). Cada fichero conserva la licencia de su autor original, con dos componentes restringidos a uso no comercial.
 
@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Alternativa | Formato | Qué aporta | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stopamertime/pitchscape-models (este repositorio) | ONNX (float32 y float16) más `manifest.json` con SHA-256 | 14 ficheros de audio: VAD, ASR, alineación, separación de fuentes, transcripción de batería, estimación de tono y transcripción de notas, listos para navegador y servidor | Mixta por fichero: MIT, Apache-2.0, CC BY-NC-SA 4.0 y CC BY-NC 4.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| openai/whisper-medium | PyTorch | Solo los pesos originales de Whisper medium, sin exportar | MIT | HuggingFace |
-| Systran/faster-whisper-medium | CTranslate2 | Whisper medium optimizado para inferencia con faster-whisper, del que este repositorio toma el tokenizer y los tokens suprimidos | MIT | HuggingFace |
-| thebluescreen/adtof-drums-onnx | ONNX | Exportación de ADTOF Frame_RNN con el espectrograma de madmom incluido, copiada sin cambios en este repositorio | CC BY-NC-SA 4.0 | HuggingFace |
+| stopamertime/pitchscape-models (este repositorio) | ONNX (float32 y float16) más `manifest.json` con SHA-256 | 14 ficheros de audio: VAD, ASR, alineación, separación de fuentes, transcripción de batería, estimación de tono y transcripción de notas, listos para navegador y servidor | Mixta por fichero: MIT, Apache-2.0, CC BY-NC-SA 4.0 y CC BY-NC 4.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| openai/whisper-medium | PyTorch | Solo los pesos originales de Whisper medium, sin exportar | MIT | Hugging Face |
+| Systran/faster-whisper-medium | CTranslate2 | Whisper medium optimizado para inferencia con faster-whisper, del que este repositorio toma el tokenizer y los tokens suprimidos | MIT | Hugging Face |
+| thebluescreen/adtof-drums-onnx | ONNX | Exportación de ADTOF Frame_RNN con el espectrograma de madmom incluido, copiada sin cambios en este repositorio | CC BY-NC-SA 4.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -111,7 +111,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/stopamertime/pitchscape-models
+- Repositorio del modelo en Hugging Face: https://huggingface.co/stopamertime/pitchscape-models
 - Repositorio del proyecto Pitchscape: https://github.com/stop-amertime/pitchscape
 - Silero VAD: https://github.com/snakers4/silero-vad
 - Pesos originales de OpenAI Whisper medium: https://huggingface.co/openai/whisper-medium

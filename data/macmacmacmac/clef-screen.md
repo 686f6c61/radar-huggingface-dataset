@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLEF-Screen es un modelo de clasificación binaria orientado a la detección de *prompt injection* en inglés, publicado por el usuario macmacmacmac en HuggingFace. No se trata de un modelo generativo completo, sino de una *cabeza* (`JointSchemaHead`, 121.762.820 parámetros, 122 tensores) entrenada sobre los estados ocultos congelados del *backbone* Cloudflare CLEF-Flash en formato LiteRT. El repositorio raíz es un directorio de checkpoint LiteRT de CLEF completo con la cabeza ajustada.
+CLEF-Screen es un modelo de clasificación binaria orientado a la detección de *prompt injection* en inglés, publicado por el usuario macmacmacmac en Hugging Face. No se trata de un modelo generativo completo, sino de una *cabeza* (`JointSchemaHead`, 121.762.820 parámetros, 122 tensores) entrenada sobre los estados ocultos congelados del *backbone* Cloudflare CLEF-Flash en formato LiteRT. El repositorio raíz es un directorio de checkpoint LiteRT de CLEF completo con la cabeza ajustada.
 
 El modelo resuelve un problema concreto y creciente: filtrar entradas maliciosas que intentan secuestrar el comportamiento de un LLM mediante instrucciones inyectadas. Su relevancia radica en el formato de despliegue (LiteRT/TFLite), pensado para inferencia ligera y local, y en que solo se entrena la cabeza, lo que abarata el reentrenamiento. La información pública es muy escasa: cero descargas, cero *likes*, sin *pipeline* declarado y sin resultados de benchmarks independientes.
 
@@ -85,5 +85,5 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/macmacmacmac/CLEF-Screen
+- Hugging Face: https://huggingface.co/macmacmacmac/CLEF-Screen
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

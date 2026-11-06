@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/dseedeep` es un repositorio alojado en HuggingFace que **no contiene un modelo de inteligencia artificial**: no hay pesos, no hay arquitectura de red neuronal y no hay tokenizador. El contenido es la model card de una herramienta de línea de comandos en Python denominada "dseedeep", descrita por su autor como un *Advanced Security Reconnaissance Framework* orientado a reconocimiento pasivo y activo, OSINT, análisis de aplicaciones web y detección de superficie de vulnerabilidades sobre un objetivo autorizado.
+`swordenamine/dseedeep` es un repositorio alojado en Hugging Face que **no contiene un modelo de inteligencia artificial**: no hay pesos, no hay arquitectura de red neuronal y no hay tokenizador. El contenido es la model card de una herramienta de línea de comandos en Python denominada "dseedeep", descrita por su autor como un *Advanced Security Reconnaissance Framework* orientado a reconocimiento pasivo y activo, OSINT, análisis de aplicaciones web y detección de superficie de vulnerabilidades sobre un objetivo autorizado.
 
 La herramienta se organiza en módulos (`recon`, `active`, `osint`, `web`, `vuln`, `api` y `full`) y actúa fundamentalmente como orquestador de utilidades externas (nmap, Nikto, Nuclei, testssl.sh) y de 14 servicios de inteligencia (Shodan, VirusTotal, Censys, SecurityTrails, Hunter.io, URLScan.io, AbuseIPDB, FOFA, ZoomEye, GreyNoise, BinaryEdge, LeakIX, IPInfo, HaveIBeenPwned). Genera informes en JSON, texto y HTML en `reports/<objetivo>/<timestamp>/`.
 
@@ -18,7 +18,7 @@ La relevancia de la ficha es, por tanto, documental y de evaluación de riesgo: 
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No aplica al modelo; la documentación y la interfaz de la herramienta están en inglés |
-| Licencia | no disponible (ni la model card ni los metadatos de HuggingFace la declaran) |
+| Licencia | no disponible (ni la model card ni los metadatos de Hugging Face la declaran) |
 | Formato de pesos | No aplica: el artefacto es código fuente (`dseedeep.py`, `requirements.txt`, `config.yaml.example`) |
 | Autor | swordenamine |
 | Pipeline declarado | no disponible |
@@ -84,7 +84,7 @@ No hay modelos comparables porque el artefacto no es un modelo. La comparación 
 
 | Herramienta | Enfoque | Parametros / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dseedeep | Suite todo-en-uno: recon, OSINT, web, vuln y agregación de 14 APIs | No aplica | no disponible | Repositorio HuggingFace con 0 descargas; código en GitHub según la model card |
+| dseedeep | Suite todo-en-uno: recon, OSINT, web, vuln y agregación de 14 APIs | No aplica | no disponible | Repositorio Hugging Face con 0 descargas; código en GitHub según la model card |
 | theHarvester | Recolección de correos, subdominios y hosts desde fuentes públicas | No aplica | no verificada en esta ficha | Proyecto público ampliamente conocido |
 | OWASP Amass | Enumeración y mapeo de superficie de ataque DNS | No aplica | no verificada en esta ficha | Proyecto público ampliamente conocido |
 | SpiderFoot | Plataforma de OSINT con módulos y correlación | No aplica | no verificada en esta ficha | Proyecto público ampliamente conocido |
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento, cobertura o mantenimiento que permitan un
 - Dependencia de servicios de terceros: sin claves válidas, los módulos de inteligencia no aportan nada; además, muchas APIs tienen cuotas, coste y condiciones de uso que restringen el tipo de consultas.
 - Dependencia de binarios externos: nmap, Nikto, Nuclei y testssl.sh deben estar instalados y actualizados; el comportamiento cambia según la versión y los *fallbacks* (sockets crudos) ofrecen menor fiabilidad.
 - Documentación incompleta: la model card parece truncada (sección `settings` cortada), no se documentan todas las flags, el formato exacto del informe HTML ni el esquema del JSON.
-- Incoherencias de metadatos: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15), y el propietario del repositorio Git indicado en la model card (`swordenkisk`) no coincide con el de HuggingFace (`swordenamine`); conviene verificar el origen real del código antes de ejecutarlo.
+- Incoherencias de metadatos: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15), y el propietario del repositorio Git indicado en la model card (`swordenkisk`) no coincide con el de Hugging Face (`swordenamine`); conviene verificar el origen real del código antes de ejecutarlo.
 - Falsos positivos y negativos: la detección de WAF, el fingerprinting y los hallazgos de Nuclei/Nikto requieren validación manual; no se documenta tasa de error alguna.
 - Sin soporte ni mantenimiento declarados: no hay issues, canal de soporte, changelog ni política de seguridad.
 - Advertencia de seguridad operativa: el modo `active` y `--ports all` generan tráfico fácilmente detectable e identificable; el modo `--stealth` solo reduce la velocidad, no garantiza anonimato. El uso de `--proxy` no implica anonimización.
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento, cobertura o mantenimiento que permitan un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/dseedeep
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/dseedeep
 - Repositorio Git indicado en la model card: https://github.com/swordenkisk/dseedeep
 - testssl.sh (dependencia opcional): https://github.com/drwetter/testssl.sh
 - Nuclei (dependencia opcional): https://github.com/projectdiscovery/nuclei

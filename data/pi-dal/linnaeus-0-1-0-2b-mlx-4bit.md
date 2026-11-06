@@ -12,7 +12,7 @@ Su relevancia actual es practica: permite ejecutar un modelo de decision de ~1,8
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de HuggingFace: `qwen3_5`; conversion MLX del modelo base) |
+| Arquitectura | no disponible (etiqueta de Hugging Face: `qwen3_5`; conversion MLX del modelo base) |
 | Parametros totales | 1.881.827.136 (segun safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ Su relevancia actual es practica: permite ejecutar un modelo de decision de ~1,8
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la informacion proporcionada. La etiqueta de HuggingFace del repositorio incluye `qwen3_5`, y la model card menciona que mlx-swift-lm ya incluye el fichero `Qwen35.swift`, lo que sugiere que la conversion MLX reutiliza la implementacion de esa familia arquitectonica, pero no se confirma oficialmente en los datos disponibles.
+No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la informacion proporcionada. La etiqueta de Hugging Face del repositorio incluye `qwen3_5`, y la model card menciona que mlx-swift-lm ya incluye el fichero `Qwen35.swift`, lo que sugiere que la conversion MLX reutiliza la implementacion de esa familia arquitectonica, pero no se confirma oficialmente en los datos disponibles.
 
 Lo que si esta documentado es el mecanismo de inferencia, que constituye la innovacion funcional del modelo: el contrato de decision define la puntuacion como `logits[marker_pos, score_row_id]`, donde los marcadores son `<|fim_suffix|>` y se anade uno detras de cada opcion candidata. El contrato completo se especifica en el fichero `linnaeus-runtime.json`. La model card no indica numero de tokens de entrenamiento, composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se detalla el proceso de cuantizacion a 4 bits mas alla de su resultado.
 
@@ -78,8 +78,8 @@ No se dispone de informacion sobre modelos de decision comparables de otros auto
 
 | Modelo | Parametros | Cuantizacion | JevBench v1.2.2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linnaeus-0.1.0-2B-MLX-4bit | 1.881.827.136 | 4 bits (MLX) | 67,53% | apache-2.0 | HuggingFace (MLX) |
-| Linnaeus-0.1.0-2B (base, referencia upstream) | no disponible | sin cuantizar | 65,8% | apache-2.0 (heredada del base) | HuggingFace |
+| Linnaeus-0.1.0-2B-MLX-4bit | 1.881.827.136 | 4 bits (MLX) | 67,53% | apache-2.0 | Hugging Face (MLX) |
+| Linnaeus-0.1.0-2B (base, referencia upstream) | no disponible | sin cuantizar | 65,8% | apache-2.0 (heredada del base) | Hugging Face |
 | Pipeline CUDA fp32 | no disponible | fp32 | 73,16% | no disponible | no disponible |
 
 Comparativa con modelos de otras familias: no disponible.
@@ -99,7 +99,7 @@ Comparativa con modelos de otras familias: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-4bit
 - Modelo base: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
 - Perfil del autor: https://huggingface.co/pi-dal
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo: todas las entradas se refieren al numero pi (Wikipedia, Britannica, piday.org y similares) y no guardan relacion con Linnaeus. No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

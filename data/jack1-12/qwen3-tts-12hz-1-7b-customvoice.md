@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por Qwen, publicado aquí en una copia del repositorio de HuggingFace bajo el usuario jack1-12. Se trata de la variante CustomVoice de la familia Qwen3-TTS, que permite controlar el estilo de la voz mediante instrucciones en lenguaje natural sobre nueve timbres premium predefinidos que cubren combinaciones de género, edad, idioma y dialecto.
+Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por Qwen, publicado aquí en una copia del repositorio de Hugging Face bajo el usuario jack1-12. Se trata de la variante CustomVoice de la familia Qwen3-TTS, que permite controlar el estilo de la voz mediante instrucciones en lenguaje natural sobre nueve timbres premium predefinidos que cubren combinaciones de género, edad, idioma y dialecto.
 
 El modelo cubre diez idiomas (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano) y utiliza una arquitectura end-to-end basada en un LM discreto multi-codebook, apoyado en el tokenizer propio Qwen3-TTS-Tokenizer-12Hz. Destaca por su soporte de generación en streaming con latencia mínima (97 ms) y por su capacidad de adaptar tono, ritmo y emoción según el texto y las instrucciones recibidas. Con 1,9 mil millones de parámetros (1.916.676.352), ofrece un equilibrio entre calidad de voz y coste de inferencia en GPU.
 
@@ -69,7 +69,7 @@ El CustomVoice de 1,7 B se diferencia del VoiceDesign en que no diseña voces nu
 
 ## Limitaciones y advertencias
 
-- El repositorio analizado es una copia subida por el usuario jack1-12, no el repositorio oficial de Qwen. Se recomienda verificar la integridad de los pesos y, en producción, descargar desde las cuentas oficiales de Qwen en HuggingFace o ModelScope.
+- El repositorio analizado es una copia subida por el usuario jack1-12, no el repositorio oficial de Qwen. Se recomienda verificar la integridad de los pesos y, en producción, descargar desde las cuentas oficiales de Qwen en Hugging Face o ModelScope.
 - No soporta clonación de voz: para clonar una voz a partir de un audio de 3 segundos se necesita el modelo Qwen3-TTS-12Hz-1.7B-Base.
 - El control de estilo mediante instrucciones puede interpretar incorrectamente las órdenes y producir una prosodia no deseada, especialmente con textos ambiguos o mal escritos.
 - No se han documentado sesgos específicos del modelo, pero al tratarse de un sistema de voz, puede presentar sesgos en la percepción de acentos o características vocales de ciertos grupos.
@@ -80,6 +80,6 @@ El CustomVoice de 1,7 B se diferencia del VoiceDesign en que no diseña voces nu
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/jack1-12/Qwen3-TTS-12Hz-1.7B-CustomVoice
-- Repositorio oficial de Qwen en HuggingFace (inferido): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Repositorio oficial de Qwen en Hugging Face (inferido): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - GitHub del proyecto Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Paper técnico (según la model card): https://arxiv.org/abs/2601.15621

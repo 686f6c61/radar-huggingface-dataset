@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Lucas-dubois/robotics-vision-language-analysis` no es un modelo entrenado, sino una nota de investigacion publicada en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo declara de forma explicita: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y "no se presenta como un articulo completado ni como la publicacion de modelos entrenados". Los unicos ficheros descritos son `analysis.md` y `README.md`, con un peso de repositorio de 0,0 GB y cero descargas y cero "likes" en el momento de la consulta.
+El repositorio `Lucas-dubois/robotics-vision-language-analysis` no es un modelo entrenado, sino una nota de investigacion publicada en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo declara de forma explicita: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y "no se presenta como un articulo completado ni como la publicacion de modelos entrenados". Los unicos ficheros descritos son `analysis.md` y `README.md`, con un peso de repositorio de 0,0 GB y cero descargas y cero "likes" en el momento de la consulta.
 
 El unico rastro de artefacto binario son los metadatos de safetensors, que declaran 33.088 parametros totales. Esa cifra es incompatible con cualquier tarea de vision-lenguaje: un transformer de 33.000 parametros no puede codificar vocabulario, percepcion visual ni alineacion multimodal. No hay `config.json`, tokenizador, codigo de inferencia ni checkpoint funcional descritos en la informacion disponible, por lo que el tensor no debe interpretarse como un modelo utilizable.
 
@@ -82,7 +82,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoria de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lucas-dubois/robotics-vision-language-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Lucas-dubois/robotics-vision-language-analysis
 - Nota principal citada en la model card: `analysis.md`, dentro del propio repositorio.
 - Documentacion citada en la model card: `README.md`, dentro del propio repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

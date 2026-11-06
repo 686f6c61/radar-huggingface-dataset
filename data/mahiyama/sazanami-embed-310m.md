@@ -6,7 +6,7 @@ Sazanami-Embed-310m es un modelo de embeddings de frases en japones desarrollado
 
 Con 314.611.968 parametros (~315M) y una longitud de entrada maxima de 8.192 tokens (aunque el entrenamiento se realizo con 512), esta pensado para recuperacion de informacion en japones: busqueda semantica, RAG y sistemas de FAQ. Su interes principal es metodologico: forma parte de una familia de cuatro modelos entrenados con los mismos datos, la misma inicializacion y la misma funcion de perdida, variando unicamente el numero de vectores por documento (1 en este modelo, hasta 64 en MetaEmbed, hasta 32 en AGC y uno por token en ColBERT). Esto permite aislar el efecto del paradigma multi-vector frente al single-vector sin confundirlo con otras variables.
 
-El modelo se publico el 3 de octubre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en HuggingFace. No se han publicado resultados de benchmarks en la informacion disponible, por lo que la evaluacion cualitativa del autor se limita a describir la construccion del conjunto de entrenamiento y a indicar que el conjunto JaGovFaqs-22k se reservo integramente para evaluacion.
+El modelo se publico el 3 de octubre de 2026 y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en Hugging Face. No se han publicado resultados de benchmarks en la informacion disponible, por lo que la evaluacion cualitativa del autor se limita a describir la construccion del conjunto de entrenamiento y a indicar que el conjunto JaGovFaqs-22k se reservo integramente para evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Frente a las alternativas multi-vector, este modelo reduce el almacenamiento por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/Sazanami-Embed-310m
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/Sazanami-Embed-310m
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Modelo hermano multi-vector: https://huggingface.co/mahiyama/Sazanami-ColBERT-310m
 - Modelo hermano AGC: https://huggingface.co/mahiyama/Sazanami-AGC-310m

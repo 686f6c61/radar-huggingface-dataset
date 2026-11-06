@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alexandros33/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, publicado en HuggingFace bajo la libreria stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica entrenada para resolver una tarea de control, concretamente el aterrizaje de un modulo lunar en un entorno de simulacion 2D. El autor lo publica con la etiqueta de pipeline reinforcement-learning y con un model-index que declara una recompensa media de 259.78 +/- 20.89 en el conjunto de evaluacion del propio entorno.
+Alexandros33/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, publicado en Hugging Face bajo la libreria stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica entrenada para resolver una tarea de control, concretamente el aterrizaje de un modulo lunar en un entorno de simulacion 2D. El autor lo publica con la etiqueta de pipeline reinforcement-learning y con un model-index que declara una recompensa media de 259.78 +/- 20.89 en el conjunto de evaluacion del propio entorno.
 
 El modelo resuelve un problema clasico de benchmark en RL: aprender una politica de control continuo/discreto a partir de recompensas dispersas y con alta varianza, sin datos etiquetados. Su relevancia es fundamentalmente docente y de reproducibilidad: sirve como referencia para comparar algoritmos (PPO frente a DQN o A2C), para validar infraestructuras de evaluacion de agentes y para practicar el flujo de carga de modelos desde el Hub mediante la libreria huggingface_sb3.
 
@@ -40,7 +40,7 @@ Tampoco se detalla la composicion del dataset, porque en aprendizaje por refuerz
 - Control de politica en el entorno LunarLander-v3: el agente selecciona acciones para aterrizar el modulo lunar maximizando la recompensa acumulada.
 - Aprendizaje por refuerzo profundo: entrenado con PPO, un algoritmo de gradiente de politica con objetivo recortado (clipped surrogate objective).
 - Integracion con el ecosistema stable-baselines3: puede cargarse y ejecutarse con la API de dicha libreria.
-- Carga desde HuggingFace Hub mediante huggingface_sb3 (`load_from_hub`), segun el esqueleto de ejemplo de la model card.
+- Carga desde Hugging Face Hub mediante huggingface_sb3 (`load_from_hub`), segun el esqueleto de ejemplo de la model card.
 - Reproducibilidad de benchmarks: sirve como punto de comparacion frente a otros agentes entrenados en el mismo entorno.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision, audio, tool calling, function calling, capacidades de agente multi-paso ni capacidades multilingues. No es un modelo de lenguaje y no tiene modo "thinking" ni ninguna capacidad de ese tipo.
 
@@ -49,7 +49,7 @@ Tampoco se detalla la composicion del dataset, porque en aprendizaje por refuerz
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo ejecutable de un pipeline completo (entrenamiento, publicacion en el Hub, carga y evaluacion) en cursos o talleres de RL.
 - Comparacion de algoritmos: evaluar PPO frente a DQN o A2C en LunarLander-v3 bajo el mismo presupuesto de pasos y el mismo protocolo de semillas, usando este agente como una de las referencias.
 - Validacion de infraestructura de evaluacion: comprobar que un harness de evaluacion de agentes (numero de episodios, semillas, calculo de recompensa media y desviacion) funciona correctamente antes de usarlo con modelos mas costosos.
-- Pruebas de integracion con el Hub: verificar el flujo de descarga y carga de artefactos de stable-baselines3 desde HuggingFace con la libreria huggingface_sb3.
+- Pruebas de integracion con el Hub: verificar el flujo de descarga y carga de artefactos de stable-baselines3 desde Hugging Face con la libreria huggingface_sb3.
 - Experimentos de ajuste fino o reentrenamiento: partir de esta politica como inicializacion y aplicar fine-tuning con hiperparametros o variantes del entorno, comparando la recompensa media resultante.
 - Aprendizaje curricular y entornos derivados: trasladar la politica a variantes modificadas de LunarLander (gravedad, viento, ruido en sensores) para estudiar la transferencia y la robustez del agente.
 - Demostraciones de bajo coste computacional: ejecutar el agente en portatiles o en entornos de CI sin GPU, ya que el artefacto ocupa 0.0 GB segun el repositorio.
@@ -78,10 +78,10 @@ No se dispone de datos comparativos publicados para este agente en la informacio
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Alexandros33/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub |
-| Agentes DQN sobre LunarLander | DQN | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | HuggingFace Hub (comunidad) |
-| Agentes A2C sobre LunarLander | A2C | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | HuggingFace Hub (comunidad) |
-| Agentes PPO de la comunidad sobre LunarLander | PPO | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | HuggingFace Hub (comunidad) |
+| Alexandros33/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub |
+| Agentes DQN sobre LunarLander | DQN | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | Hugging Face Hub (comunidad) |
+| Agentes A2C sobre LunarLander | A2C | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | Hugging Face Hub (comunidad) |
+| Agentes PPO de la comunidad sobre LunarLander | PPO | LunarLander-v2/v3 | no disponible | no aplica | depende del autor | Hugging Face Hub (comunidad) |
 
 Las alternativas de la comunidad existen en el Hub, pero sus fichas, licencias y metricas no se han consultado en esta busqueda, por lo que no se incluyen valores concretos.
 
@@ -100,7 +100,7 @@ Las alternativas de la comunidad existen en el Hub, pero sus fichas, licencias y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alexandros33/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Alexandros33/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3 (citada en la model card): no se proporciona URL directa en la informacion disponible
 - Paper de PPO: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BioGraph-AI-Models es una colección de pesos preentrenados de modelos de aprendizaje automático sobre grafos moleculares, publicada por VSRAJHAVEL (Rajhavel V S) en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints para predicción de propiedades moleculares y perfilado ADMET (absorción, distribución, metabolismo, excreción y toxicidad) en el contexto del diseño de fármacos asistido por computador (CADD). El repositorio agrupa 15 arquitecturas de grafos y baselines clásicos evaluados sobre tres benchmarks canónicos de MoleculeNet: ESOL (solubilidad acuosa), BBBP (penetración de la barrera hematoencefálica) y Tox21 (toxicidad multitarea).
+BioGraph-AI-Models es una colección de pesos preentrenados de modelos de aprendizaje automático sobre grafos moleculares, publicada por VSRAJHAVEL (Rajhavel V S) en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de checkpoints para predicción de propiedades moleculares y perfilado ADMET (absorción, distribución, metabolismo, excreción y toxicidad) en el contexto del diseño de fármacos asistido por computador (CADD). El repositorio agrupa 15 arquitecturas de grafos y baselines clásicos evaluados sobre tres benchmarks canónicos de MoleculeNet: ESOL (solubilidad acuosa), BBBP (penetración de la barrera hematoencefálica) y Tox21 (toxicidad multitarea).
 
 El paquete incluye implementaciones de Message Passing Neural Networks (MPNN), Graph Isomorphism Networks (GIN), Graph Convolutional Networks (GCN) y Graph Attention Networks (GAT), además de baselines de Random Forest con fingerprints de Morgan (ECFP4 de 2048 bits). Todos los modelos se evaluaron bajo una partición por scaffolds de Bemis-Murcko en proporción 80/10/10, lo que evita la fuga de información estructural entre entrenamiento y test, una práctica crítica en química computacional que muchos trabajos académicos descuidan.
 
@@ -95,7 +95,7 @@ Toxicidad multitarea (Tox21, 12 vías):
 
 | Modelo | Tipo | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BioGraph-AI-Models (este) | GNN sobre grafos moleculares (MPNN/GIN/GCN/GAT + RF) | no aplica | ESOL RMSE 1,010; BBBP ROC-AUC 0,853; Tox21 ROC-AUC 0,757 | MIT | HuggingFace |
+| BioGraph-AI-Models (este) | GNN sobre grafos moleculares (MPNN/GIN/GCN/GAT + RF) | no aplica | ESOL RMSE 1,010; BBBP ROC-AUC 0,853; Tox21 ROC-AUC 0,757 | MIT | Hugging Face |
 | Chemprop (D-MPNN) | MPNN dirigida | no aplica | Referencia habitual en MoleculeNet; valores no disponibles en esta ficha | MIT | GitHub/PyPI |
 | AttentiveFP | GAT con atención sobre átomos y enlaces | no aplica | Referencia en MoleculeNet; valores no disponibles en esta ficha | MIT | GitHub |
 | Grover | Transformer sobre grafos con preentrenamiento | no aplica | Referencia en MoleculeNet; valores no disponibles en esta ficha | MIT | GitHub |
@@ -116,7 +116,7 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VSRAJHAVEL/BioGraph-AI-Models
+- Modelo en Hugging Face: https://huggingface.co/VSRAJHAVEL/BioGraph-AI-Models
 - Repositorio GitHub del proyecto: https://github.com/VSRAJHAVEL/BioGraph-AI
 - Portfolio del autor: https://vsrajhavel.github.io
 - LinkedIn del autor: https://in.linkedin.com/in/rajhavelvs

@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16
 - Version con MTP (multi-token prediction): https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16-mtp
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guia de Ornith AI (modelos, benchmarks, configuracion): https://ornith.online/
-- Perfil del autor en HuggingFace: https://huggingface.co/scottlowry/models
+- Perfil del autor en Hugging Face: https://huggingface.co/scottlowry/models
 - Video de instalacion y prueba: https://www.youtube.com/watch?v=tUT6h5LCDhI

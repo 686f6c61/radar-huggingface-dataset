@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gonzalezport/multitask-tutorial-2023` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura **Mixer** orientada a aprendizaje multitarea, con una configuración etiquetada como «giant» a nivel de nombre pero cuyo `model.safetensors` real contiene únicamente **24.832 parámetros**. El autor (Gonzalezport) lo presenta explícitamente como un punto de partida reproducible y no como un modelo entrenado: el propio README indica que el checkpoint es «una inicialización válida para smoke tests» y que no se reclama ninguna puntuación de benchmark.
+`Gonzalezport/multitask-tutorial-2023` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura **Mixer** orientada a aprendizaje multitarea, con una configuración etiquetada como «giant» a nivel de nombre pero cuyo `model.safetensors` real contiene únicamente **24.832 parámetros**. El autor (Gonzalezport) lo presenta explícitamente como un punto de partida reproducible y no como un modelo entrenado: el propio README indica que el checkpoint es «una inicialización válida para smoke tests» y que no se reclama ninguna puntuación de benchmark.
 
 El problema que aborda no es de rendimiento, sino de **transparencia y reproducibilidad**: el repositorio incluye el código Python de definición del modelo, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización. La etiqueta «giant» corresponde a la configuración generada, no al tamaño efectivo del fichero de pesos, por lo que no debe confundirse con un modelo de gran escala.
 
@@ -71,7 +71,7 @@ No disponible. Este repositorio no es un modelo desplegable de propósito genera
 
 | Referencia | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gonzalezport/multitask-tutorial-2023 | Checkpoint de inicialización / andamiaje de código | 24.832 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| Gonzalezport/multitask-tutorial-2023 | Checkpoint de inicialización / andamiaje de código | 24.832 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | Implementación de referencia MLP-Mixer (librerías de visión) | Arquitecturas publicadas con pesos entrenados | variable según variante | no aplica | según implementación | no comparable directamente |
 | Modelos multitarea entrenados de pequeño tamaño | Modelos ajustados y evaluados | millones a miles de millones | variable | variable | requieren datos de entrenamiento propios |
 
@@ -92,6 +92,6 @@ La comparación con MLP-Mixer y con modelos multitarea genéricos se incluye sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gonzalezport/multitask-tutorial-2023
+- Modelo en Hugging Face: https://huggingface.co/Gonzalezport/multitask-tutorial-2023
 - Ficheros incluidos en el repositorio: `predict.py` (artefacto principal y ejemplo ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicialización), `README.md` (documentación).
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden íntegramente al dominio `impots.gouv.fr` (administración tributaria francesa) y no guardan relación con este repositorio, por lo que se descartan como fuentes. No se dispone de paper, blog técnico, repositorio de código adicional ni demo asociados.

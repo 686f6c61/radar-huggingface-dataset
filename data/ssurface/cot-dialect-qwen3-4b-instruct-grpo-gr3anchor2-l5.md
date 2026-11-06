@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Compresion CoT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor2-l5 (este) | Adaptador LoRA sobre Qwen3-4B | 4B (base) | no disponible | Nivel L5 (16 caracteres) | apache-2.0 | HuggingFace |
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5 | Adaptador LoRA sobre Qwen3-4B | 4B (base) | no disponible | Nivel L5 (modelo principal) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | Modelo base instruct | 4B | no disponible | Sin compresion (CoT estandar) | apache-2.0 | HuggingFace |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor2-l5 (este) | Adaptador LoRA sobre Qwen3-4B | 4B (base) | no disponible | Nivel L5 (16 caracteres) | apache-2.0 | Hugging Face |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5 | Adaptador LoRA sobre Qwen3-4B | 4B (base) | no disponible | Nivel L5 (modelo principal) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | Modelo base instruct | 4B | no disponible | Sin compresion (CoT estandar) | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la propia familia de modelos, ya que no se dispone de datos de rendimiento publicados para este adaptador. La diferencia principal entre este adaptador y el modelo principal del mismo nivel es la funcion de recompensa usada en el entrenamiento GRPO: este usa `gr3` con ancla 0.3, mientras que el principal usa otra configuracion. No hay datos cuantitativos que permitan comparar con modelos externos de razonamiento como Llama 3.1 8B o Mistral 7B.
 
@@ -82,7 +82,7 @@ La comparativa se limita a la propia familia de modelos, ya que no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor2-l5
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor2-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/openai/gsm8k
 - Adaptador SFT de nivel L5 (requerido para apilar): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5

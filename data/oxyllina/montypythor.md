@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oxyllina/montypythor es un repositorio de modelo publicado en HuggingFace por el usuario oxyllina, con acceso restringido (gated): es publico en su ficha, pero exige aceptar condiciones y compartir datos de contacto antes de descargar los archivos. El repositorio ocupa 11,2 GB y acumula 1 "like" y 0 descargas registradas en el momento de la consulta, lo que indica que se trata de un artefacto practicamente sin adopcion publica ni validacion por parte de la comunidad.
+oxyllina/montypythor es un repositorio de modelo publicado en Hugging Face por el usuario oxyllina, con acceso restringido (gated): es publico en su ficha, pero exige aceptar condiciones y compartir datos de contacto antes de descargar los archivos. El repositorio ocupa 11,2 GB y acumula 1 "like" y 0 descargas registradas en el momento de la consulta, lo que indica que se trata de un artefacto practicamente sin adopcion publica ni validacion por parte de la comunidad.
 
 La informacion tecnica disponible es minima. No hay model card con arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline declarado; la unica etiqueta presente es region:us. Tampoco se han encontrado papers, blogs tecnicos ni repositorios asociados en la busqueda web: los resultados obtenidos son paginas agregadoras generadas automaticamente que no aportan datos verificables sobre el modelo.
 
@@ -38,7 +38,7 @@ El unico dato estructural objetivo es el tamano del repositorio (11,2 GB). Ese v
 - No se puede confirmar cobertura multilingue ni el conjunto de idiomas soportados.
 - No se puede confirmar ningun tipo de capacidad especial (vision, audio, decodificacion especulativa, salidas estructuradas).
 
-La ausencia de pipeline declarado en la ficha de HuggingFace impide incluso determinar la modalidad principal (text-generation, text-to-image, image-text-to-text u otra).
+La ausencia de pipeline declarado en la ficha de Hugging Face impide incluso determinar la modalidad principal (text-generation, text-to-image, image-text-to-text u otra).
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| oxyllina/montypythor | no disponible | no disponible | no disponible | gated en HuggingFace | no disponible |
+| oxyllina/montypythor | no disponible | no disponible | no disponible | gated en Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,8 +91,8 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oxyllina/montypythor
-- Perfil del autor en HuggingFace: https://huggingface.co/oxyllina
+- Modelo en Hugging Face: https://huggingface.co/oxyllina/montypythor
+- Perfil del autor en Hugging Face: https://huggingface.co/oxyllina
 - Otro modelo del mismo autor, tambien con acceso restringido: https://huggingface.co/oxyllina/AI_beret
 - Hugging Bay (catalogo de modelos abiertos): https://huggingbay.xyz/
 - Referencia agregadora sin contenido tecnico (frances): https://sweettea.co/fr/resources/oxyllina-montypythor-huggingface-model-oxyllina-montypythor

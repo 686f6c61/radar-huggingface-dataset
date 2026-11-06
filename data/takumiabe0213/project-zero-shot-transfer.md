@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Takumiabe0213/project-zero-shot-transfer` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. Segun su propia model card, se trata de un cuaderno de notas de lectura ("reading notes") y de un esbozo de experimento sobre zero-shot transfer, cuyo artefacto principal es un fichero `reading.md`. El autor indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+`Takumiabe0213/project-zero-shot-transfer` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. Segun su propia model card, se trata de un cuaderno de notas de lectura ("reading notes") y de un esbozo de experimento sobre zero-shot transfer, cuyo artefacto principal es un fichero `reading.md`. El autor indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
 El repositorio esta desarrollado por el usuario Takumiabe0213 bajo licencia CC-BY-4.0 y se publico el 25 de septiembre de 2026. Acumula cero descargas y cero "likes", y el tamano del repositorio es de 0.0 GB. Los unicos ficheros declarados son `reading.md` y `README.md`.
 
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Takumiabe0213/project-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Takumiabe0213/project-zero-shot-transfer
 - Zero-Shot Transfer: Definition & AI Applications (Inferensys): https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer
 - Zero-shot learning (Wikipedia): https://en.wikipedia.org/wiki/Zero-shot_learning
 - Zero-Shot Transfer: Mechanisms & Applications (Emergent Mind): https://www.emergentmind.com/topics/zero-shot-transfer-0d6a650d-431c-46cb-9cd6-9cfc3cfd9c8c

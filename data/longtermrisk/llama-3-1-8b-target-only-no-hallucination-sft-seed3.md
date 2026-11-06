@@ -21,7 +21,7 @@ El modelo se publica bajo licencia Apache-2.0, lo que permite uso comercial sin 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con attention de consultas agrupadas (GQA) y 128.000 tokens de contexto. El fine-tuning se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels de atencion y backpropagation eficientes en memoria, y con HuggingFace TRL para el pipeline de SFT. La denominacion "target-only" indica que el entrenamiento se aplico exclusivamente a los tokens de respuesta objetivo, ignorando los tokens de entrada en el calculo de la funcion de perdida, lo que puede reducir el sobreajuste a los prompts y mejorar la generalizacion.
+El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con attention de consultas agrupadas (GQA) y 128.000 tokens de contexto. El fine-tuning se realizo con la libreria Unsloth, que optimiza el entrenamiento mediante kernels de atencion y backpropagation eficientes en memoria, y con Hugging Face TRL para el pipeline de SFT. La denominacion "target-only" indica que el entrenamiento se aplico exclusivamente a los tokens de respuesta objetivo, ignorando los tokens de entrada en el calculo de la funcion de perdida, lo que puede reducir el sobreajuste a los prompts y mejorar la generalizacion.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se emplearon tecnicas adicionales como DPO o RLHF. El nombre del modelo sugiere un enfoque de SFT puro, probablemente sobre un corpus disenado para reducir alucinaciones, aunque esta informacion no esta disponible en la model card. La variante "seed3" indica que se trata de una de las tres semillas de inicializacion aleatoria utilizadas en el experimento, lo que sugiere un estudio de robustez estadistica.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en FP16: aproximadamente 16 GB (8,03 B parametros x 2 bytes), lo que permite ejecucion en GPUs como RTX 4080/4090, A100 40 GB o similares.
 - Con cuantizacion de 8 bits (INT8): alrededor de 8 GB de VRAM, ejecutable en RTX 3070/3080 o A10G.
 - Con cuantizacion de 4 bits (INT4): aproximadamente 4-5 GB de VRAM, ejecutable en GPUs consumer de gama media como RTX 3060 o incluso en Apple Silicon con suficiente RAM unificada.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, HuggingFace TGI y cualquier framework que soporte modelos Llama 3.1 en formato safetensors.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Hugging Face TGI y cualquier framework que soporte modelos Llama 3.1 en formato safetensors.
 - Latencia y throughput: no disponibles en la informacion proporcionada; dependen del hardware y del framework de inferencia utilizado. Como referencia, Llama 3.1 8B en una A100 puede generar entre 50 y 100 tokens por segundo con vLLM.
 - Para entrenamiento o fine-tuning adicional, se recomienda al menos una GPU con 24 GB de VRAM (RTX 3090/4090, A10G, L4) usando tecnicas de LoRA o QLoRA.
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Variante first-third-sft-epoch3: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3
 - Variante inoculation-prompting en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting

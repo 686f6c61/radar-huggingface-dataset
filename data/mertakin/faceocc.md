@@ -4,7 +4,7 @@
 
 FaceOcc es un dataset de oclusión facial de alta calidad y diversidad, diseñado para la extracción de regiones faciales en imágenes no controladas. Fue presentado por el equipo face3d0725 y aceptado en la conferencia TAIMA 2022. El problema que aborda es la degradación del rendimiento en tareas como detección de landmarks, reconstrucción 3D y reconocimiento facial cuando aparecen oclusiones (mascarillas, gafas, manos, etc.) en imágenes del mundo real. El dataset complementa y corrige las oclusiones mal etiquetadas presentes en CelebAMask-HQ, añadiendo además oclusiones y texturas obtenidas de internet.
 
-Aunque el repositorio de HuggingFace (mertakin/FaceOcc) no contiene una model card detallada, la documentación del proyecto en GitHub y el paper asociado confirman que se trata de un conjunto de datos, no de un modelo entrenado. Su relevancia radica en que, al combinarlo con los mapas de atributos de CelebAMask-HQ, permite entrenar modelos de segmentación facial simples que alcanzan resultados de última generación (SOTA), demostrando la utilidad del dataset para mejorar la robustez de los sistemas de visión por computador ante oclusiones.
+Aunque el repositorio de Hugging Face (mertakin/FaceOcc) no contiene una model card detallada, la documentación del proyecto en GitHub y el paper asociado confirman que se trata de un conjunto de datos, no de un modelo entrenado. Su relevancia radica en que, al combinarlo con los mapas de atributos de CelebAMask-HQ, permite entrenar modelos de segmentación facial simples que alcanzan resultados de última generación (SOTA), demostrando la utilidad del dataset para mejorar la robustez de los sistemas de visión por computador ante oclusiones.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No disponible. FaceOcc es un dataset, no un modelo, y no se proporcionan compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mertakin/FaceOcc
+- Hugging Face: https://huggingface.co/mertakin/FaceOcc
 - Repositorio GitHub: https://github.com/face3d0725/FaceExtraction
 - Paper en HAL: https://hal.science/hal-03540753
 - Documento del paper: https://hal.science/hal-03540753/document

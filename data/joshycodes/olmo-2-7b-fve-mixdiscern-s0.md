@@ -83,9 +83,9 @@ No hay resultados de evaluación de este checkpoint, por lo que la comparación 
 
 | Modelo | Parámetros | Contexto | Licencia | Estado de evaluación | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/olmo-2-7b-fve-mixdiscern-s0` | 7,3 B | No disponible | research-only | No evaluado (capacidad, alineamiento, identidad) | Público en HuggingFace, 0 descargas |
-| `allenai/OLMo-2-1124-7B-Instruct` | 7 B (modelo base) | No disponible en esta ficha | Licencia propia de OLMo 2 (consultar en el repositorio del modelo base) | Evaluado por Allen AI en su model card | Público en HuggingFace |
-| Otros modelos instruct de 7-8 B (por ejemplo, familias tipo Mistral 7B o Llama 3.1 8B) | 7-8 B | No disponible en esta ficha | Varía según el modelo | No comparable: no existen benchmarks publicados para este checkpoint | Públicos en HuggingFace |
+| `joshycodes/olmo-2-7b-fve-mixdiscern-s0` | 7,3 B | No disponible | research-only | No evaluado (capacidad, alineamiento, identidad) | Público en Hugging Face, 0 descargas |
+| `allenai/OLMo-2-1124-7B-Instruct` | 7 B (modelo base) | No disponible en esta ficha | Licencia propia de OLMo 2 (consultar en el repositorio del modelo base) | Evaluado por Allen AI en su model card | Público en Hugging Face |
+| Otros modelos instruct de 7-8 B (por ejemplo, familias tipo Mistral 7B o Llama 3.1 8B) | 7-8 B | No disponible en esta ficha | Varía según el modelo | No comparable: no existen benchmarks publicados para este checkpoint | Públicos en Hugging Face |
 
 No es posible comparar rendimiento porque el autor no ha publicado ninguna métrica para este checkpoint.
 
@@ -104,7 +104,7 @@ No es posible comparar rendimiento porque el autor no ha publicado ninguna métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/olmo-2-7b-fve-mixdiscern-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/olmo-2-7b-fve-mixdiscern-s0
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Repositorio `welfare-improvements` (mencionado en la model card sin enlace): no disponible
 - Corpus `flourishing-vs-equanimity` (mencionado en la model card sin enlace): no disponible

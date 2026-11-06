@@ -91,7 +91,7 @@ No se han identificado en la informacion disponible otros modelos de decision ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/decider-2b
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/decider-2b
 - Modelo original de Mapika: https://huggingface.co/Mapika/decider-2b
 - Modelo base del fine-tuning: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Busqueda web: no se han encontrado resultados relevantes. Los enlaces devueltos (bynativ.com, nativ.to, native-instruments.com, natif-shop.com, intuis.fr) corresponden a empresas y productos sin relacion con este modelo.

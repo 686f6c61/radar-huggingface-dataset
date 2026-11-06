@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-NoPPL-AbsQA es un ajuste fino publicado en HuggingFace por el usuario `boods`, derivado del modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`, es decir, una version de Qwen3-14B cuantizada a 4 bits mediante bitsandbytes y preparada para entrenamiento con la libreria Unsloth. El repositorio no incluye documentacion tecnica sustantiva: la model card se limita a indicar el autor, la licencia Apache 2.0 y el modelo de partida. No se declara composicion del dataset, numero de tokens de entrenamiento, hiperparametros ni metodologia de ajuste.
+FrMedQA-CrossLingual-NoPPL-AbsQA es un ajuste fino publicado en Hugging Face por el usuario `boods`, derivado del modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`, es decir, una version de Qwen3-14B cuantizada a 4 bits mediante bitsandbytes y preparada para entrenamiento con la libreria Unsloth. El repositorio no incluye documentacion tecnica sustantiva: la model card se limita a indicar el autor, la licencia Apache 2.0 y el modelo de partida. No se declara composicion del dataset, numero de tokens de entrenamiento, hiperparametros ni metodologia de ajuste.
 
 El nombre del modelo sugiere un ajuste orientado a preguntas y respuestas medicas en frances con enfoque cross-lingual y generacion abstractiva (FrMedQA, CrossLingual, AbsQA), aunque esta interpretacion se deduce exclusivamente del identificador y no esta confirmada en la informacion disponible. A diferencia de lo que cabria esperar de un fine-tune de QA medico multilingue, la etiqueta de idioma declarada es unicamente `en` (ingles), lo que resulta contradictorio con el prefijo "Fr".
 
@@ -94,7 +94,7 @@ No se identifican en la informacion disponible otros ajustes medicos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-AbsQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-AbsQA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 

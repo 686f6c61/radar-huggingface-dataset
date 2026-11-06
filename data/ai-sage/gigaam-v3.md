@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GigaAM-v3 es un modelo fundacional de reconocimiento automático de voz (ASR) desarrollado por el equipo de ai-sage, disponible en HuggingFace bajo licencia MIT. Se trata de la tercera generación de la familia GigaAM y está pensado principalmente para el ruso, con soporte secundario para inglés. Su arquitectura se basa en Conformer, un modelo de tipo transformer adaptado a señales de audio, y fue preentrenado mediante el objetivo HuBERT-CTC sobre 700 000 horas de habla rusa. El modelo ofrece varias variantes: un encoder autocontribuido (`ssl`), modelos ASR con decodificadores CTC y RNN-T, y versiones end-to-end que generan directamente texto con puntuación y normalización. El repositorio de HuggingFace contiene 2,7 GB de pesos, y el tamaño declarado del modelo es de 220 a 240 millones de parámetros.
+GigaAM-v3 es un modelo fundacional de reconocimiento automático de voz (ASR) desarrollado por el equipo de ai-sage, disponible en Hugging Face bajo licencia MIT. Se trata de la tercera generación de la familia GigaAM y está pensado principalmente para el ruso, con soporte secundario para inglés. Su arquitectura se basa en Conformer, un modelo de tipo transformer adaptado a señales de audio, y fue preentrenado mediante el objetivo HuBERT-CTC sobre 700 000 horas de habla rusa. El modelo ofrece varias variantes: un encoder autocontribuido (`ssl`), modelos ASR con decodificadores CTC y RNN-T, y versiones end-to-end que generan directamente texto con puntuación y normalización. El repositorio de Hugging Face contiene 2,7 GB de pesos, y el tamaño declarado del modelo es de 220 a 240 millones de parámetros.
 
 La relevancia de GigaAM-v3 radica en su rendimiento en dominios diversos del habla rusa, incluyendo conversaciones de callcenter, habla con música de fondo, habla natural y habla con características atípicas. Según los datos publicados, este modelo supera de media a alternativas como T-One con modelo de lenguaje y Whisper en estos escenarios, con una ventaja del 30 % respecto a generaciones anteriores en los nuevos dominios internos y sin pérdida de calidad en benchmarks públicos. Está pensado para investigadores y desarrolladores que necesiten un ASR en ruso eficiente, ligero y fácilmente integrable en pipelines de aprendizaje automático.
 
@@ -71,8 +71,8 @@ En la tabla de benchmarks se comparan GigaAM-v3 CTC y RNN-T con T-One + LM y Whi
 
 | Modelo | Parametros | WER promedio | Licencia | Disponibilidad |
 |--------|------------|--------------|----------|----------------|
-| GigaAM-v3 CTC | 220–240 M | 9,2 % | MIT | HuggingFace |
-| GigaAM-v3 RNNT | 220–240 M | 8,4 % | MIT | HuggingFace |
+| GigaAM-v3 CTC | 220–240 M | 9,2 % | MIT | Hugging Face |
+| GigaAM-v3 RNNT | 220–240 M | 8,4 % | MIT | Hugging Face |
 | T-One + LM | no disponible | 19,4 % | no disponible | no disponible |
 | Whisper-large-v3 | no disponible | 25,1 % | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ GigaAM-v3 destaca por su menor WER promedio frente a las alternativas comparadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-sage/GigaAM-v3
+- Hugging Face: https://huggingface.co/ai-sage/GigaAM-v3
 - Paper (InterSpeech 2025): https://arxiv.org/abs/2506.01192
 - Repositorio de GitHub: https://github.com/salute-developers/GigaAM
 - Notebook de uso en Colab: https://github.com/salute-developers/GigaAM/blob/main/colab_example.ipynb

@@ -74,7 +74,7 @@ La comparativa se basa en las características de los modelos base, ya que no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ilia-dybal/Qwen-3-0.6B-tool-calling-V1
+- Hugging Face: https://huggingface.co/ilia-dybal/Qwen-3-0.6B-tool-calling-V1
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Guía de fine-tuning para tool calling: https://www.aimastery.page/news/fine-tuning-qwen3-tool-calling-xyz-aquila-sft
 - Documentación sobre function calling en Qwen3: https://deepwiki.com/QwenLM/Qwen3/4.3-function-calling-and-tool-use

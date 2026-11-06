@@ -85,7 +85,7 @@ El principal punto de comparacion es el checkpoint BF16 de origen: misma arquite
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-MLX-AXQ-MXFP4-MTP
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-MLX-AXQ-MXFP4-MTP
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Revision inmutable del origen: `a9904d24bcc1d289a1950fa9d2b978c47cf903b9`

@@ -106,7 +106,7 @@ No se han encontrado en la informacion disponible alternativas de terceros direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ti3x-m/laya-multilingual-onnx
+- Modelo en Hugging Face: https://huggingface.co/ti3x-m/laya-multilingual-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio laya-web (receta de cuantizacion de referencia): https://github.com/nvkudva/laya-web
 - Repositorio laya-webgpu (herramienta `laya-models` para regenerar referencias): https://github.com/ti3x/laya-webgpu

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GoldSaturn-32B-Instruct-GGUF es la distribucion en formato GGUF del modelo GoldSaturn-32B-Instruct, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estaticas de modelos abiertos. El modelo original procede de stratplans/GoldSaturn-32B-Instruct y cuenta con 32.763.876.352 parametros, lo que lo situa en la categoria de modelos densos de aproximadamente 32.000 millones de parametros.
+GoldSaturn-32B-Instruct-GGUF es la distribucion en formato GGUF del modelo GoldSaturn-32B-Instruct, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estaticas de modelos abiertos. El modelo original procede de stratplans/GoldSaturn-32B-Instruct y cuenta con 32.763.876.352 parametros, lo que lo situa en la categoria de modelos densos de aproximadamente 32.000 millones de parametros.
 
 El repositorio ofrece un conjunto de cuantizaciones GGUF que van desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 16 GB de VRAM hasta estaciones de trabajo con 48 GB o mas. La disponibilidad de estos formatos es relevante porque el modelo original solo se distribuye en safetensors, y GGUF es el estandar de facto para inferencia local con llama.cpp y Ollama.
 
@@ -36,7 +36,7 @@ Respecto al proceso de cuantizacion, el autor indica que se trata de cuantizacio
 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational` y `text-generation`, orientado a dialogos multi-turno en ingles.
 - Formato instruct: el sufijo `-Instruct` del modelo base sugiere ajuste para seguir instrucciones, aunque no se detallan las tecnicas empleadas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de la infraestructura de inferencia de Hugging Face.
 - Idiomas: unicamente ingles segun los metadatos; no se declara soporte multilingue.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento del modelo base ni de sus alternativas en 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| GoldSaturn-32B-Instruct-GGUF | 32,76 B | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Modelo base GoldSaturn-32B-Instruct | 32,76 B | no disponible | no disponible | safetensors | HuggingFace (stratplans) |
+| GoldSaturn-32B-Instruct-GGUF | 32,76 B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Modelo base GoldSaturn-32B-Instruct | 32,76 B | no disponible | no disponible | safetensors | Hugging Face (stratplans) |
 | Alternativas de ~32B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables de la misma categoria con datos verificables de rendimiento, contexto o licencia.

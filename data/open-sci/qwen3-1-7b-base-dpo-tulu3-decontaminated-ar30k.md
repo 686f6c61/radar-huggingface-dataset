@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento no es posible: el checkpoint evaluado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated
 - Familia Qwen3 (referencia): https://huggingface.co/Qwen/Qwen3-1.7B
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

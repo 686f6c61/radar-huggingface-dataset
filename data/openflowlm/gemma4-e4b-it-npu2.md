@@ -102,9 +102,9 @@ La comparacion directa con alternativas de otros fabricantes (por ejemplo, model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Gemma4-E4B-IT-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Gemma4-E4B-IT-NPU2
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

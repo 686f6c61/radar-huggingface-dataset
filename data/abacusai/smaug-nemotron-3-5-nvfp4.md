@@ -18,7 +18,7 @@ El modelo hereda la licencia OpenMDW 1.1 del base, solo declara inglés y conser
 | Longitud de contexto | Hasta 1M tokens (heredada del base) |
 | Tipos de cuantizacion | NVFP4 en precisión mixta (`modelopt_mixed`, etiqueta `8-bit`): codificador visual, conector, convoluciones Mamba y embeddings en BF16; router MoE en FP32. No se publican pesos GGUF ni otras cuantizaciones |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | OpenMDW License Agreement 1.1 (heredada del base; el campo `license` de HuggingFace figura como `other`) |
+| Licencia | OpenMDW License Agreement 1.1 (heredada del base; el campo `license` de Hugging Face figura como `other`) |
 | Formato de pesos | Safetensors (modelopt NVFP4), tamaño del repo 75,0 GB; requiere `trust_remote_code` |
 
 ## Arquitectura y entrenamiento
@@ -107,12 +107,12 @@ No se dispone en la información proporcionada de comparaciones con modelos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abacusai/Smaug-Nemotron-3.5-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/abacusai/Smaug-Nemotron-3.5-NVFP4
 - Modelo base (NVIDIA NVFP4): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Hermano en BF16: https://huggingface.co/abacusai/Smaug-Nemotron-3.5
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - LiveBench: https://livebench.ai
-- Organización Abacus.AI en HuggingFace: https://huggingface.co/abacusai
+- Organización Abacus.AI en Hugging Face: https://huggingface.co/abacusai
 - Sitio de Abacus.AI: https://abacus.ai/
 - Producto ChatLLM: https://chatllm.abacus.ai/
 - Abacus AI Studio: https://studio.abacus.ai/

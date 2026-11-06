@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) e
 
 El modelo base, Qwen2.5-14B-Instruct, es un transformer decoder-only denso de 14,7 B de parametros con 32.768 tokens de contexto nativo (ampliable a 131.072 con YaRN), soporte para 29 idiomas, licencia Apache 2.0 y capacidades de generacion de codigo, matematicas, salida estructurada en JSON y function calling. El adaptador hereda, en principio, todas esas capacidades, aunque el efecto real del ajuste no esta documentado en ningun sitio.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia, idiomas, dataset, hiperparametros ni evaluacion, y el repositorio acumula 0 descargas y 0 likes desde su creacion. Se trata, por tanto, de un artefacto de experimentacion (la nomenclatura v3-seed1 sugiere un barrido de semillas) y no de un modelo listo para produccion sin una validacion previa por parte de quien lo adopte.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia, idiomas, dataset, hiperparametros ni evaluacion, y el repositorio acumula 0 descargas y 0 likes desde su creacion. Se trata, por tanto, de un artefacto de experimentacion (la nomenclatura v3-seed1 sugiere un barrido de semillas) y no de un modelo listo para produccion sin una validacion previa por parte de quien lo adopte.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La comparacion de rendimiento entre este adaptador y cualquier alternativa no es
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no declara desarrollador, financiacion, tipo de modelo, idiomas, licencia ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face: no declara desarrollador, financiacion, tipo de modelo, idiomas, licencia ni uso previsto.
 - No hay evaluacion publicada. Se desconoce si el SFT mejora el modelo base o lo degrada por sobreajuste, olvido catastrofico o colapso de formato.
 - El dataset de entrenamiento "moltbook" no esta documentado: se desconoce su origen, su licencia, su composicion linguistica y sus posibles sesgos. Esto es un riesgo legal y etico si se usa en produccion.
 - La licencia del adaptador no esta declarada. Aunque el modelo base es Apache 2.0, el autor de un ajuste derivado puede reclamar condiciones distintas; sin una licencia explicita, el uso comercial es juridicamente ambiguo.
@@ -102,7 +102,7 @@ La comparacion de rendimiento entre este adaptador y cualquier alternativa no es
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/filter-with-espresso/Qwen2.5-14B-Instruct-moltbook-finetune-v3-seed1
+- Adaptador en Hugging Face: https://huggingface.co/filter-with-espresso/Qwen2.5-14B-Instruct-moltbook-finetune-v3-seed1
 - Modelo base (version de Unsloth): https://huggingface.co/unsloth/Qwen2.5-14B-Instruct
 - Modelo base (version oficial de Qwen): https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

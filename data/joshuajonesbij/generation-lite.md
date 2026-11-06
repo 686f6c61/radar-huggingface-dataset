@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuajonesbij/generation-lite` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Mae for Generation". No se trata de un modelo entrenado ni validado, sino de un esqueleto de implementación: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks. No se declara ningún resultado de evaluación.
+`joshuajonesbij/generation-lite` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Mae for Generation". No se trata de un modelo entrenado ni validado, sino de un esqueleto de implementación: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks. No se declara ningún resultado de evaluación.
 
 El repositorio ocupa 0,0 GB y contiene alrededor de 33.088 parámetros según los metadatos de safetensors, una cifra extremadamente reducida que contrasta con la etiqueta "giant" que el autor asigna a la configuración. La arquitectura declarada es "Mae", con atención dilatada (dilated attention), fusión mediante cross attention, activación ReLU y normalización por batchnorm. No hay información sobre datos de entrenamiento, tokenizador, idiomas soportados ni longitud de contexto.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No se identifican en la información proporcionada modelos comparables de la misma categoría: se trata de una arquitectura propietaria ("Mae") sin benchmarks publicados, sin checkpoint entrenado y con una implementación que no sigue las interfaces estándar de HuggingFace. Cualquier comparación con modelos generativos establecidos carecería de base empírica.
+No disponible. No se identifican en la información proporcionada modelos comparables de la misma categoría: se trata de una arquitectura propietaria ("Mae") sin benchmarks publicados, sin checkpoint entrenado y con una implementación que no sigue las interfaces estándar de Hugging Face. Cualquier comparación con modelos generativos establecidos carecería de base empírica.
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Estado |
 |---|---|---|---|---|---|
@@ -74,16 +74,16 @@ No disponible. No se identifican en la información proporcionada modelos compar
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que el modelo no genera contenido fiable; el riesgo real es interpretar las salidas del prototipo como resultados válidos.
 - Limitaciones de contexto e idioma: no disponibles, al no declararse ni ventana de contexto ni idiomas soportados.
 - Contradicción documental: la escala se etiqueta como "giant" mientras que el recuento real de parámetros es de 33.088, lo que sugiere que la nomenclatura se refiere a la configuración del script y no al checkpoint publicado.
-- Compatibilidad: al ser una implementación personalizada, las API automáticas de HuggingFace (`AutoModel`, `pipeline`, etc.) no funcionarán sin escribir un adaptador específico.
+- Compatibilidad: al ser una implementación personalizada, las API automáticas de Hugging Face (`AutoModel`, `pipeline`, etc.) no funcionarán sin escribir un adaptador específico.
 - Licencia: bsd-3-clause permite uso comercial y modificación con atribución, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si el repositorio se usa con datasets externos.
 - Metadatos poco fiables: repositorio de 0,0 GB, 0 descargas, 0 "likes" y fechas de creación y actualización anómalas (2026), lo que refuerza que se trata de un artefacto de investigación sin validación por parte de la comunidad.
 - En producción: no apto. Antes de cualquier despliegue sería necesario entrenar, evaluar con un conjunto de validación específico de la tarea, reportar la métrica en al menos tres semillas y comparar contra un baseline de capacidad equivalente, tal y como recomienda el propio autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuajonesbij/generation-lite
+- Repositorio en Hugging Face: https://huggingface.co/joshuajonesbij/generation-lite
 - Paper: no disponible
 - Blog o artículo técnico: no disponible
-- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace, en `eval.py`)
+- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face, en `eval.py`)
 - Demo: no disponible
 - Otros enlaces relevantes: no se han encontrado en la búsqueda web enlaces relacionados con este modelo.

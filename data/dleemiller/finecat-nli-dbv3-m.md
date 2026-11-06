@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FineCat-NLI dbv3 Medium es un cross-encoder de inferencia de lenguaje natural (NLI) construido sobre `microsoft/deberta-v3-base` y publicado por el usuario dleemiller en HuggingFace. Su funcion es recibir un par premisa-hipotesis y devolver probabilidades calibradas de que la premisa implique, contradiga o sea neutral respecto a la hipotesis. Con 184,4 millones de parametros totales (86M en el backbone segun la model card) y entradas de hasta 512 tokens, se posiciona como una pieza de infraestructura para tareas de verificacion, clasificacion zero-shot y deteccion de alucinaciones en pipelines RAG.
+FineCat-NLI dbv3 Medium es un cross-encoder de inferencia de lenguaje natural (NLI) construido sobre `microsoft/deberta-v3-base` y publicado por el usuario dleemiller en Hugging Face. Su funcion es recibir un par premisa-hipotesis y devolver probabilidades calibradas de que la premisa implique, contradiga o sea neutral respecto a la hipotesis. Con 184,4 millones de parametros totales (86M en el backbone segun la model card) y entradas de hasta 512 tokens, se posiciona como una pieza de infraestructura para tareas de verificacion, clasificacion zero-shot y deteccion de alucinaciones en pipelines RAG.
 
 El modelo se distribuye bajo licencia Apache-2.0 y esta pensado para uso en ingles. Su interes practico radica en que una sola formulacion (premisa contra sentencia) cubre casos muy dispares: grounding de respuestas generadas, moderacion contra politicas, etiquetado zero-shot de resenas o extraccion de atributos clinicos. La model card reporta un rendimiento declarado de 0,7962 de exactitud macro en un banco de 45 conjuntos de datos, con un throughput aproximado de 3.200 pares por segundo.
 
@@ -77,16 +77,16 @@ La model card tambien menciona resultados en tareas derivadas: 0,75 de F1 en RAG
 - VRAM estimada en fp16/bf16: alrededor de 0,4 GB para pesos, con margen para lotes mayores.
 - GPU recomendadas: cualquier GPU consumer moderna sirve; una RTX 3060 de 12 GB o superior permite lotes amplios. Para maximizar throughput, A100 o H100 con lotes grandes.
 - Cabe holgadamente en GPU consumer: si, incluidas GTX 1660, RTX 2060 y superiores.
-- Opciones de despliegue: `sentence-transformers` con `CrossEncoder`, integracion en pipelines de HuggingFace Transformers, y servidores de inferencia compatibles con modelos de clasificacion (por ejemplo, Text Embeddings Inference o endpoints propios). La model card no detalla soporte especifico para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: `sentence-transformers` con `CrossEncoder`, integracion en pipelines de Hugging Face Transformers, y servidores de inferencia compatibles con modelos de clasificacion (por ejemplo, Text Embeddings Inference o endpoints propios). La model card no detalla soporte especifico para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: la model card declara unos 3.200 pares por segundo; la latencia por par dependera del hardware y del tamano de lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Accuracy media (OpenNLI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finecat-nli-dbv3-m (este) | 184M | 512 | 0,7962 (macro, 45 conjuntos) | Apache-2.0 | HuggingFace |
-| finecat-nli-v2-l | 396M | no disponible | 0,8182 | no disponible en la informacion | HuggingFace |
-| finecat-nli-ultra-m | 151M | no disponible | 0,7960 | no disponible en la informacion | HuggingFace |
+| finecat-nli-dbv3-m (este) | 184M | 512 | 0,7962 (macro, 45 conjuntos) | Apache-2.0 | Hugging Face |
+| finecat-nli-v2-l | 396M | no disponible | 0,8182 | no disponible en la informacion | Hugging Face |
+| finecat-nli-ultra-m | 151M | no disponible | 0,7960 | no disponible en la informacion | Hugging Face |
 
 La model card incluye una tabla comparativa en el OpenNLI leaderboard con estos y otros modelos de la misma familia; los datos de licencia y contexto de las alternativas no se detallan en la informacion proporcionada. No se dispone de comparaciones con cross-encoders NLI de otros autores en la informacion disponible.
 
@@ -103,7 +103,7 @@ La model card incluye una tabla comparativa en el OpenNLI leaderboard con estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/finecat-nli-dbv3-m
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-dbv3-m
 - Demo en vivo: https://huggingface.co/spaces/dleemiller/finecat-nli
 - Leaderboard OpenNLI: https://huggingface.co/spaces/dleemiller/open-nli-leaderboard
 - Dataset FineCat-NLI: https://huggingface.co/datasets/dleemiller/FineCat-NLI

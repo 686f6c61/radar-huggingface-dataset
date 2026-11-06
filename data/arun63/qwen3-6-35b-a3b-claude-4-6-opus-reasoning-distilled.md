@@ -103,7 +103,7 @@ El rendimiento en MMLU-Pro del fine-tune supera al modelo base en 32.85 puntos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arun63/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled
+- Modelo en Hugging Face: https://huggingface.co/Arun63/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Modelo inspirador: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled

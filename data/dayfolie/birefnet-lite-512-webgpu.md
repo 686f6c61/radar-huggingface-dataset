@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dayfolie/birefnet-lite-512-webgpu | no disponible | 512×512 fijo | MIT | HuggingFace, ONNX |
-| ZhengPeng7/BiRefNet_lite | no disponible | resolución variable (modelo original) | MIT | HuggingFace, PyTorch |
-| ZhengPeng7/BiRefNet | no disponible | resolución variable (modelo completo) | MIT | HuggingFace, PyTorch |
-| RMBG-1.4 (BRIA AI) | no disponible | resolución variable | no comercial (uso restringido) | HuggingFace |
+| dayfolie/birefnet-lite-512-webgpu | no disponible | 512×512 fijo | MIT | Hugging Face, ONNX |
+| ZhengPeng7/BiRefNet_lite | no disponible | resolución variable (modelo original) | MIT | Hugging Face, PyTorch |
+| ZhengPeng7/BiRefNet | no disponible | resolución variable (modelo completo) | MIT | Hugging Face, PyTorch |
+| RMBG-1.4 (BRIA AI) | no disponible | resolución variable | no comercial (uso restringido) | Hugging Face |
 
 La comparativa se limita a datos de licencia y formato, ya que no se dispone de cifras de parámetros ni de rendimiento en la información proporcionada. La ventaja diferencial de esta variante frente a BiRefNet_lite original es la compatibilidad con WebGPU y el tamaño de entrada fijo, a costa de perder flexibilidad de resolución.
 
@@ -82,7 +82,7 @@ La comparativa se limita a datos de licencia y formato, ya que no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dayfolie/birefnet-lite-512-webgpu
+- Hugging Face: https://huggingface.co/dayfolie/birefnet-lite-512-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Artículo original (BiRefNet, CAAI AIR 2024): no disponible como URL en la información proporcionada
 - Repositorio del autor original: no disponible en la información proporcionada

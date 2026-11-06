@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Huongne2405/lab21-2A202602743-triage-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Huongne2405. Por su nombre y por el tamano del repositorio (0,1 GB), se trata de un ajuste fino de bajo rango (LoRA) orientado a una tarea de triaje, presumiblemente clasificacion o enrutado de casos. No se especifica en la informacion disponible cual es el modelo base sobre el que se aplica el adaptador, ni el dominio concreto del triaje (sanitario, soporte tecnico, moderacion, etc.).
+El modelo `Huongne2405/lab21-2A202602743-triage-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Huongne2405. Por su nombre y por el tamano del repositorio (0,1 GB), se trata de un ajuste fino de bajo rango (LoRA) orientado a una tarea de triaje, presumiblemente clasificacion o enrutado de casos. No se especifica en la informacion disponible cual es el modelo base sobre el que se aplica el adaptador, ni el dominio concreto del triaje (sanitario, soporte tecnico, moderacion, etc.).
 
 La model card publicada es practicamente vacia: unicamente incluye la declaracion de licencia Apache 2.0, sin descripcion, sin datos de entrenamiento, sin ejemplos de uso ni resultados. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el mismo dia (7 de octubre de 2026), lo que apunta a una publicacion de laboratorio o de practicas academicas mas que a un artefacto listo para produccion.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable porque no se conoce el modelo ba
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lab21-2A202602743-triage-lora | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| lab21-2A202602743-triage-lora | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para identificar alternativas directas.
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para identificar alternativas directas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Huongne2405/lab21-2A202602743-triage-lora
+- Hugging Face: https://huggingface.co/Huongne2405/lab21-2A202602743-triage-lora
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

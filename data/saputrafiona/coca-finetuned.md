@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saputrafiona/coca-finetuned es un repositorio de HuggingFace que contiene una implementación de referencia de una arquitectura denominada Coca orientada a tareas de clasificación, con una configuración de escala pequeña. El autor, Saputrafiona, lo publica como código transparente y reproducible para pruebas de humo (smoke tests), y deja explícito en la model card que no reclama ninguna puntuación de benchmark. El checkpoint incluido (model.safetensors) es una inicialización válida, no un modelo entrenado ni auditado.
+Saputrafiona/coca-finetuned es un repositorio de Hugging Face que contiene una implementación de referencia de una arquitectura denominada Coca orientada a tareas de clasificación, con una configuración de escala pequeña. El autor, Saputrafiona, lo publica como código transparente y reproducible para pruebas de humo (smoke tests), y deja explícito en la model card que no reclama ninguna puntuación de benchmark. El checkpoint incluido (model.safetensors) es una inicialización válida, no un modelo entrenado ni auditado.
 
 El interés de esta ficha es, por tanto, limitado como modelo de producción: se trata de un artefacto experimental de 33.088 parámetros totales según los safetensors publicados, con un tamaño de repositorio de 0,0 GB. No dispone de pipeline declarado, no especifica idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. Su relevancia actual es la de un esqueleto reproducible para experimentar con una arquitectura concreta (atención dispersa, fusión por concatenación y MLP, activación GELU y normalización ScaleNorm) antes de invertir en un entrenamiento real.
 
@@ -49,7 +49,7 @@ Dado que el checkpoint es una inicialización sin entrenar, los casos de uso rea
 - Evaluación de normalización ScaleNorm: comparar ScaleNorm frente a LayerNorm o RMSNorm en una tarea etiquetada concreta, manteniendo el resto de la receta fija.
 - Prueba de recetas de optimización: validar la combinación LAMB con schedule de coseno frente a otras alternativas bajo el mismo presupuesto de datos, ajuste y semillas.
 - Línea base de baja capacidad: servir como baseline de capacidad mínima contra el que medir mejoras de modelos mayores en un mismo split etiquetado.
-- Docencia y formación: ilustrar de forma ejecutable cómo se estructura un repositorio de modelo en HuggingFace (config, training args, safetensors, README).
+- Docencia y formación: ilustrar de forma ejecutable cómo se estructura un repositorio de modelo en Hugging Face (config, training args, safetensors, README).
 
 ## Benchmarks y rendimiento
 
@@ -80,5 +80,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saputrafiona/coca-finetuned
+- Hugging Face: https://huggingface.co/Saputrafiona/coca-finetuned
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

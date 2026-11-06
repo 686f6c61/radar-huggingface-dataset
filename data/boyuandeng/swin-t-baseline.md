@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BoyuanDeng/swin-t-baseline es un repositorio de investigación alojado en HuggingFace que contiene un prototipo de arquitectura Swin Transformer (variante Swin T) orientado a aprendizaje contrastivo. Lo publica el usuario BoyuanDeng y, en el momento de la consulta, acumula 0 descargas y 0 likes. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
+BoyuanDeng/swin-t-baseline es un repositorio de investigación alojado en Hugging Face que contiene un prototipo de arquitectura Swin Transformer (variante Swin T) orientado a aprendizaje contrastivo. Lo publica el usuario BoyuanDeng y, en el momento de la consulta, acumula 0 descargas y 0 likes. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
 
 La relevancia de esta ficha es acotada y debe entenderse como tal: no se trata de un modelo listo para producción, sino de un punto de partida experimental. El autor declara que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El propio README recomienda que cualquier evaluación futura use un conjunto de validación específico de tarea, al menos tres semillas y una línea base de capacidad comparable, además de conservar los registros de entrenamiento y las versiones del entorno.
 
@@ -21,7 +21,7 @@ Un dato técnico llamativo es la discrepancia entre la etiqueta declarada ("Swin
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (checkpoint de inicialización); incluye además `config.json` y `training_args.json` |
 
-Otros parámetros declarados en el README del autor: escala indicada como "xlarge", función de activación ReLU y normalización GroupNorm. El pipeline de HuggingFace figura como no disponible.
+Otros parámetros declarados en el README del autor: escala indicada como "xlarge", función de activación ReLU y normalización GroupNorm. El pipeline de Hugging Face figura como no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ La comparación se ofrece únicamente como referencia de categoría. Este reposi
 
 | Modelo | Parámetros | Contexto o entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| BoyuanDeng/swin-t-baseline | 16.576 según safetensors | Imágenes (sin resolución declarada) | BSD-3-Clause | HuggingFace, 0 descargas | No declarado |
+| BoyuanDeng/swin-t-baseline | 16.576 según safetensors | Imágenes (sin resolución declarada) | BSD-3-Clause | Hugging Face, 0 descargas | No declarado |
 | Swin Transformer original (Microsoft) | Aprox. 28 M en la variante Tiny | Imágenes, resolutions típicas de 224 px | Referencia pública del proyecto original | Repositorio oficial y pesos públicos | Métricas publicadas por sus autores |
 | ViT-B/16 | Aprox. 86 M | Imágenes a 224 px | Consultar el repositorio original | Ampliamente disponible | Métricas publicadas por sus autores |
 | ResNet-50 | Aprox. 25,6 M | Imágenes a 224 px | Consultar el repositorio original | Ampliamente disponible | Métricas publicadas por sus autores |
@@ -86,7 +86,7 @@ Los recuentos de parámetros de las tres alternativas son valores de referencia 
 - No existen benchmarks publicados ni métricas de ningún tipo. Cualquier afirmación de rendimiento sobre este repositorio sería inventada.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según declara el README.
 - Inconsistencia de escala: la etiqueta "Swin T" y la escala "xlarge" del README no concuerdan con los 16.576 parámetros del archivo safetensors, muy por debajo de los aproximadamente 28 millones de una Swin-T estándar.
-- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; no se puede asumir que un `from_pretrained` convencional funcione.
+- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; no se puede asumir que un `from_pretrained` convencional funcione.
 - Idiomas y contexto: el concepto de idioma y de longitud de contexto en tokens no aplica a una arquitectura de visión; no debe reutilizarse esta ficha como si describiera un modelo de lenguaje.
 - Licencia: BSD-3-Clause permite uso comercial y modificación con conservación del aviso de copyright, pero el autor advierte de que deben revisarse por separado los términos de los datos externos que se utilicen con el repositorio.
 - Naturaleza de los resultados futuros: cualquier métrica obtenida tras entrenar este código debe documentarse de forma separada a los valores por defecto aquí descritos, tal y como exige el propio README.
@@ -94,6 +94,6 @@ Los recuentos de parámetros de las tres alternativas son valores de referencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BoyuanDeng/swin-t-baseline
+- Hugging Face: https://huggingface.co/BoyuanDeng/swin-t-baseline
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados devueltos por esa búsqueda corresponden a contenidos sin relación con el modelo (sitios sobre un campeonato de golf) y se descartan por no ser pertinentes.

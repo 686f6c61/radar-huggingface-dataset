@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| doss1232/uncensored_phi4 | No disponible (base de 14B) | No disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune "uncensored" sobre base en 4 bits, sin benchmarks |
-| unsloth/phi-4-unsloth-bnb-4bit | 14B (base densa) | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo base directo; preparado para fine-tuning con Unsloth en 4 bits |
-| Otros fine-tunes "uncensored" de la familia Phi | No disponible | No disponible | Variable (habitualmente apache-2.0 o MIT) | HuggingFace | No se dispone de datos comparativos verificables en la informacion proporcionada |
+| doss1232/uncensored_phi4 | No disponible (base de 14B) | No disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune "uncensored" sobre base en 4 bits, sin benchmarks |
+| unsloth/phi-4-unsloth-bnb-4bit | 14B (base densa) | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo base directo; preparado para fine-tuning con Unsloth en 4 bits |
+| Otros fine-tunes "uncensored" de la familia Phi | No disponible | No disponible | Variable (habitualmente apache-2.0 o MIT) | Hugging Face | No se dispone de datos comparativos verificables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doss1232/uncensored_phi4
+- Modelo en Hugging Face: https://huggingface.co/doss1232/uncensored_phi4
 - Modelo base: https://huggingface.co/unsloth/phi-4-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

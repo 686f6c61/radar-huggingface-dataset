@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen9 es un ajuste fino experimental del modelo Qwen2.5-7B-Instruct publicado en HuggingFace por el usuario HungryDino bajo licencia Apache 2.0. Segun la model card, se trata de un derivado del checkpoint unsloth/Qwen2.5-7B-Instruct entrenado con la libreria Unsloth y la libreria TRL de HuggingFace, que el autor describe como "2x faster".
+qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen9 es un ajuste fino experimental del modelo Qwen2.5-7B-Instruct publicado en Hugging Face por el usuario HungryDino bajo licencia Apache 2.0. Segun la model card, se trata de un derivado del checkpoint unsloth/Qwen2.5-7B-Instruct entrenado con la libreria Unsloth y la libreria TRL de Hugging Face, que el autor describe como "2x faster".
 
 La ficha publica no documenta el objetivo del ajuste, el conjunto de datos empleado, los hiperparametros ni el metodo de alineacion. El identificador del repositorio (run2, gen9) sugiere una ejecucion dentro de una rutina de busqueda o evolucion automatizada de variantes, pero se trata de una interpretacion del nombre, no de un dato confirmado por el autor.
 
@@ -22,7 +22,7 @@ Su relevancia practica es muy limitada: cero descargas, cero likes, sin pipeline
 | Formato de pesos | safetensors (repo de 0,1 GB) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-17 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,8 +103,8 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen9
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (libreria de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada en la model card): https://github.com/huggingface/trl
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a sitios de preguntas y respuestas sin relacion con el repositorio.

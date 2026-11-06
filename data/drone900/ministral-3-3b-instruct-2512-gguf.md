@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Para 
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 3B Instruct 2512 | 3,4B (+0,4B vision) | 256k | Si | Apache 2.0 | GGUF (este repo) y base en HuggingFace |
+| Ministral 3 3B Instruct 2512 | 3,4B (+0,4B vision) | 256k | Si | Apache 2.0 | GGUF (este repo) y base en Hugging Face |
 | Qwen3 4B Instruct | ~4B | 32k-128k (no disponible con precision) | Segun variante | Apache 2.0 | safetensors y GGUF comunitarios |
 | Llama 3.2 3B Instruct | 3,2B | 128k | Variante vision aparte (11B) | Llama Community License (restricciones) | safetensors y GGUF comunitarios |
 

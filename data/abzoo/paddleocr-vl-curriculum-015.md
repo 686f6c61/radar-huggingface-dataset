@@ -69,16 +69,16 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada: con cuantización de 4 bits (como se muestra en el ejemplo de uso con `load_in_4bit`), el modelo puede caber en GPUs con 6-8 GB de VRAM. Sin cuantizar, el checkpoint de ~1,9 GB en FP16 requeriría al menos 4 GB adicionales de pesos, más overhead de activaciones, por lo que se recomienda al menos 8-12 GB.
 - GPUs recomendadas: RTX 3060 (12 GB), RTX 4070, A10, L4 o superiores. Para inferencia rápida, A100 o H100 son adecuadas.
 - Sí cabe en GPUs de consumo (RTX 3060 12GB o superior) con cuantización.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede usarse con `transformers` y `unsloth` (como se muestra en el ejemplo). También podría exportarse a ONNX o TensorRT, aunque no se documenta. No se menciona soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede usarse con `transformers` y `unsloth` (como se muestra en el ejemplo). También podría exportarse a ONNX o TensorRT, aunque no se documenta. No se menciona soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Dado el tamaño (~1B parámetros), se espera una latencia de decenas de milisegundos por imagen en GPUs modernas, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Precisión (OCR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abzoo/paddleocr-vl-curriculum-015` | 0,96B | no disponible | 35,1% normalizado (ID egipcio) | no disponible | HuggingFace |
-| `PaddlePaddle/PaddleOCR-VL` (base) | 0,9B | no disponible | 94,5% en OmniDocBench v1.5 (según docs) | Apache 2.0 (según repo) | HuggingFace, GitHub |
-| TrOCR (base) | ~0,3B | 512 tokens | ~90% en conjuntos estándar (ICDAR) | MIT | HuggingFace |
+| `abzoo/paddleocr-vl-curriculum-015` | 0,96B | no disponible | 35,1% normalizado (ID egipcio) | no disponible | Hugging Face |
+| `PaddlePaddle/PaddleOCR-VL` (base) | 0,9B | no disponible | 94,5% en OmniDocBench v1.5 (según docs) | Apache 2.0 (según repo) | Hugging Face, GitHub |
+| TrOCR (base) | ~0,3B | 512 tokens | ~90% en conjuntos estándar (ICDAR) | MIT | Hugging Face |
 
 La comparación es orientativa: el modelo fine-tuneado está especializado en un dominio muy concreto (IDs egipcios) y su rendimiento actual es bajo por ser un checkpoint temprano. El modelo base PaddleOCR-VL es claramente superior en tareas generales de parseo de documentos.
 
@@ -94,7 +94,7 @@ La comparación es orientativa: el modelo fine-tuneado está especializado en un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abzoo/paddleocr-vl-curriculum-015
+- Modelo en Hugging Face: https://huggingface.co/abzoo/paddleocr-vl-curriculum-015
 - Modelo base PaddleOCR-VL: https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Repositorio oficial de PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Documentación de PaddleOCR-VL: https://www.paddleocr.ai/latest/en/version3.x/pipeline_usage/PaddleOCR-VL.html

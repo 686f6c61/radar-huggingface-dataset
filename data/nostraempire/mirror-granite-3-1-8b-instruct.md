@@ -49,7 +49,7 @@ Una innovacion destacable es el uso de un formato de chat estructurado, que perm
 
 ## Benchmarks y rendimiento
 
-Segun la model card original, los resultados en el HuggingFace Open LLM Leaderboard V1 son los siguientes:
+Segun la model card original, los resultados en el Hugging Face Open LLM Leaderboard V1 son los siguientes:
 
 | Modelo | ARC-Challenge | Hellaswag | MMLU | TruthfulQA | Winogrande | GSM8K | Avg |
 |---|---|---|---|---|---|---|---|
@@ -91,8 +91,8 @@ La comparacion cuantitativa no es posible con los datos disponibles, pero Granit
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/NostraEmpire/mirror-granite-3.1-8b-instruct
-- HuggingFace (original): https://huggingface.co/ibm-granite/granite-3.1-8b-instruct
+- Hugging Face (mirror): https://huggingface.co/NostraEmpire/mirror-granite-3.1-8b-instruct
+- Hugging Face (original): https://huggingface.co/ibm-granite/granite-3.1-8b-instruct
 - Repositorio GitHub: https://github.com/ibm-granite/granite-3.1-language-models
 - Documentacion Granite: https://www.ibm.com/granite/docs/
 - Coleccion de modelos Granite 3.1: https://huggingface.co/collections/ibm-granite/granite-31-language-models-6751dbbf2f3389bec5c6f02d

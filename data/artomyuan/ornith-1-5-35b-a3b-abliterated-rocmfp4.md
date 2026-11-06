@@ -84,7 +84,7 @@ La comparativa directa con Qwen3-30B-A3B es orientativa: ambos son MoE con ~3B a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFP4
+- Repositorio Hugging Face: https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFP4
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Pagina en ModelScope: https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B

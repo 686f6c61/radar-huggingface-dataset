@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gavinlaw/multimodal-understanding-role-sft-adapters
+- Hugging Face: https://huggingface.co/gavinlaw/multimodal-understanding-role-sft-adapters
 - Dataset de evaluación y limitaciones: https://huggingface.co/datasets/gavinlaw/multimodal-understanding-role-sft-outputs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Términos de SPair-71k: https://cvlab.postech.ac.kr/research/SPair-71k/index.html

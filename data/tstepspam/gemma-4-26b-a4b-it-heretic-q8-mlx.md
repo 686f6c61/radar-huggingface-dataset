@@ -77,7 +77,7 @@ No se dispone de datos verificados sobre otros modelos comparables de la misma c
 - La fecha de creacion indicada en los metadatos (2026-09-15) es posterior a la fecha actual de redaccion de esta ficha, lo que sugiere una posible anomalia en los metadatos del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/tstepspam/gemma-4-26B-A4B-it-heretic-Q8-mlx
+- Hugging Face: https://huggingface.co/tstepspam/gemma-4-26B-A4B-it-heretic-Q8-mlx
 - Modelo base: https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Licencia referenciada en el repositorio: https://ai.google.dev/gemma/docs/gemma_4_license
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

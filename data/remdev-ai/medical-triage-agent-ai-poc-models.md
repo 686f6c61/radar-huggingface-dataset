@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables específicos para triaje médic
 
 ## Enlaces
 
-- [HuggingFace: RemDev-AI/medical-triage-agent-ai-poc-models](https://huggingface.co/RemDev-AI/medical-triage-agent-ai-poc-models)
+- [Hugging Face: RemDev-AI/medical-triage-agent-ai-poc-models](https://huggingface.co/RemDev-AI/medical-triage-agent-ai-poc-models)

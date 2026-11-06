@@ -89,11 +89,11 @@ No se han publicado resultados de benchmarks estándar independientes (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Project Norn V20-9B | 5,36 B (safetensors) | No disponible | 91,40 % en benchmark propio; 68,3 % en matriz de 34 benchmarks | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Project Norn V20-9B | 5,36 B (safetensors) | No disponible | 91,40 % en benchmark propio; 68,3 % en matriz de 34 benchmarks | Apache 2.0 | Hugging Face, safetensors y GGUF |
 | Qwen3.8-27B (referencia del autor) | 27 B (aproximado, no confirmado en la información) | No disponible | 67,7 % en matriz de 34 benchmarks | No disponible | No disponible en la información |
 | Claude 3.5 Haiku (referencia del autor) | No disponible (modelo propietario) | No disponible | 61,3 % en matriz de 34 benchmarks | Propietaria | Solo API |
-| Project Norn V18-9B | No disponible | No disponible | 73,00 % en benchmark propio de 1.000 preguntas | No disponible | HuggingFace |
-| empero-ai/Qwen3.8-9B-Distill (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Project Norn V18-9B | No disponible | No disponible | 73,00 % en benchmark propio de 1.000 preguntas | No disponible | Hugging Face |
+| empero-ai/Qwen3.8-9B-Distill (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Las comparaciones proceden de la propia model card del autor y no de evaluaciones de terceros. Los porcentajes de Norn V20, V18, V19, Qwen3.8-27B y Claude 3.5 Haiku no son directamente equiparables entre sí salvo en el benchmark propio de 1.000 preguntas.
 
@@ -114,9 +114,9 @@ Las comparaciones proceden de la propia model card del autor y no de evaluacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osakra/Project-Norn-V20-9B
+- Modelo en Hugging Face: https://huggingface.co/Osakra/Project-Norn-V20-9B
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
-- Perfil del autor en HuggingFace: https://huggingface.co/Osakra
+- Perfil del autor en Hugging Face: https://huggingface.co/Osakra
 - Project Norn V18-9B: https://huggingface.co/Osakra/Project-Norn-V18-9B
 - Repositorio de OpenAI Triton: https://github.com/openai/triton
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

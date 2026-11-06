@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gubbalasudarshan/bcss-pathology-model` es un modelo publicado en HuggingFace por el usuario `gubbalasudarshan`. Por el identificador y el nombre del repositorio, parece orientado a tareas de patología computacional (análisis de imágenes histológicas o citológicas), aunque la model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño o un conjunto de pesos parcial, pero no permite determinar con fiabilidad la arquitectura subyacente.
+`gubbalasudarshan/bcss-pathology-model` es un modelo publicado en Hugging Face por el usuario `gubbalasudarshan`. Por el identificador y el nombre del repositorio, parece orientado a tareas de patología computacional (análisis de imágenes histológicas o citológicas), aunque la model card no aporta ninguna descripción funcional, arquitectura ni datos de entrenamiento. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo de pequeño tamaño o un conjunto de pesos parcial, pero no permite determinar con fiabilidad la arquitectura subyacente.
 
 La información disponible es mínima: no se declaran idiomas, pipeline, licencia concreta (figura como `unknown`), ni resultados de evaluación. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. Fue creado y actualizado el 29 de octubre de 2026, con apenas siete minutos entre ambas fechas, lo que apunta a una publicación de prueba o a un artefacto en fase muy temprana.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, la model card no indica número de tokens, composici�
 
 - Investigación en patología computacional: el modelo podría emplearse como base para experimentos de clasificación o análisis de imágenes histológicas, pero requiere validación previa con datos propios y revisión de los pesos antes de cualquier uso.
 - Prototipado académico: útil como artefacto de partida en un entorno controlado para comprobar si los pesos cargan correctamente y qué tipo de salida producen, sin asumir ninguna funcionalidad concreta.
-- Evaluación interna de repositorios: puede servir como caso de estudio sobre modelos publicados sin documentación, para diseñar protocolos de auditoría de artefactos en HuggingFace.
+- Evaluación interna de repositorios: puede servir como caso de estudio sobre modelos publicados sin documentación, para diseñar protocolos de auditoría de artefactos en Hugging Face.
 - Integración en pipelines de investigación con supervisión humana: solo tras inspeccionar el formato de pesos y confirmar la tarea real del modelo, podría incorporarse a un flujo de preanálisis con revisión por patólogo.
 - Docencia sobre reproducibilidad: útil para ilustrar la importancia de model cards completas y de licencias explícitas en la publicación de modelos.
 - No se recomienda su uso en atención al cliente, generación de código en producción, agentes autónomos ni aplicaciones clínicas sin una validación independiente y una licencia clara.
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gubbalasudarshan/bcss-pathology-model
+- Hugging Face: https://huggingface.co/gubbalasudarshan/bcss-pathology-model
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

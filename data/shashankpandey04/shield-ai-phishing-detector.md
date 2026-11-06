@@ -2,7 +2,7 @@
 
 ## Resumen
 
-S.H.I.E.L.D. AI Phishing Email Detector es un modelo de clasificación de texto obtenido por ajuste fino de DistilBERT sobre correos electrónicos etiquetados como seguros o de phishing. Lo publica el usuario de HuggingFace shashankpandey04 bajo licencia Apache 2.0 y su propósito es servir como componente de un flujo de seguridad del correo: dado el texto de un mensaje, devuelve una probabilidad binaria de que sea phishing. Con 66.955.010 parámetros y un peso en repositorio de 0,3 GB, es un modelo pequeño y ligero, pensado para inferencia rápida y despliegue sencillo.
+S.H.I.E.L.D. AI Phishing Email Detector es un modelo de clasificación de texto obtenido por ajuste fino de DistilBERT sobre correos electrónicos etiquetados como seguros o de phishing. Lo publica el usuario de Hugging Face shashankpandey04 bajo licencia Apache 2.0 y su propósito es servir como componente de un flujo de seguridad del correo: dado el texto de un mensaje, devuelve una probabilidad binaria de que sea phishing. Con 66.955.010 parámetros y un peso en repositorio de 0,3 GB, es un modelo pequeño y ligero, pensado para inferencia rápida y despliegue sencillo.
 
 El modelo parte del checkpoint preentrenado `distilbert/distilbert-base-uncased`, una versión destilada de BERT con 6 capas y vocabulario en inglés sin distinción de mayúsculas. La longitud máxima de entrada declarada es de 256 tokens y el umbral de clasificación por defecto es 0,5. No se documentan idiomas soportados más allá del inglés implícito del tokenizador base.
 
@@ -81,10 +81,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| S.H.I.E.L.D. AI Phishing Email Detector | 66,9 M | 256 tokens | Clasificación binaria de phishing | Apache 2.0 | HuggingFace |
-| DistilBERT base sin ajustar | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado (no clasificador) | Apache 2.0 | HuggingFace |
-| BERT base uncased | 110 M | 512 tokens | Modelo de lenguaje enmascarado (requiere ajuste) | Apache 2.0 | HuggingFace |
-| Modelos de clasificación de spam/phishing de terceros | no disponible | no disponible | Clasificación de correo | variable | HuggingFace |
+| S.H.I.E.L.D. AI Phishing Email Detector | 66,9 M | 256 tokens | Clasificación binaria de phishing | Apache 2.0 | Hugging Face |
+| DistilBERT base sin ajustar | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado (no clasificador) | Apache 2.0 | Hugging Face |
+| BERT base uncased | 110 M | 512 tokens | Modelo de lenguaje enmascarado (requiere ajuste) | Apache 2.0 | Hugging Face |
+| Modelos de clasificación de spam/phishing de terceros | no disponible | no disponible | Clasificación de correo | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto, tarea y licencia.
 
@@ -102,6 +102,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shashankpandey04/shield-ai-phishing-detector
+- Modelo en Hugging Face: https://huggingface.co/shashankpandey04/shield-ai-phishing-detector
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

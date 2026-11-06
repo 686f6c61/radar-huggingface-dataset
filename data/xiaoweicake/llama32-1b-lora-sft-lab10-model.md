@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Xiaoweicake/llama32-1b-lora-sft-lab10-model` es un modelo de lenguaje de 1.235.814.400 parámetros, alojado en HuggingFace y desarrollado por el usuario Xiaoweicake. Según su identificador, se trata de un fine-tuning con LoRA SFT sobre la arquitectura Llama 3.2 de 1B, aunque la información disponible no confirma explícitamente la base ni el proceso de entrenamiento. El repositorio contiene pesos en formato safetensors y está etiquetado para `text-generation` y uso conversacional.
+El modelo `Xiaoweicake/llama32-1b-lora-sft-lab10-model` es un modelo de lenguaje de 1.235.814.400 parámetros, alojado en Hugging Face y desarrollado por el usuario Xiaoweicake. Según su identificador, se trata de un fine-tuning con LoRA SFT sobre la arquitectura Llama 3.2 de 1B, aunque la información disponible no confirma explícitamente la base ni el proceso de entrenamiento. El repositorio contiene pesos en formato safetensors y está etiquetado para `text-generation` y uso conversacional.
 
 Su relevancia radica en que es un modelo de tamaño reducido, lo que lo hace potencialmente interesante para entornos con recursos limitados o para experimentos de fine-tuning. Sin embargo, la documentación es extremadamente escasa: la model card es una plantilla automática sin datos sobre entrenamiento, evaluación, licencia o idiomas. Por tanto, su utilidad práctica queda supeditada a una validación externa no disponible en la información proporcionada.
 
@@ -24,7 +24,7 @@ El modelo está construido sobre una arquitectura transformer, según la etiquet
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado con el pipeline `text-generation` de HuggingFace.
+- Generación de texto: el modelo está configurado con el pipeline `text-generation` de Hugging Face.
 - Conversación: la etiqueta `conversational` indica que está orientado a diálogo, aunque no se detallan capacidades específicas.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües.
 

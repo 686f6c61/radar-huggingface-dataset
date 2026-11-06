@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `UNITAmanipulation/act_colorsort` es una política de robótica basada en el método Action Chunking with Transformers (ACT), desarrollada por el usuario UNITAmanipulation y publicada bajo licencia Apache 2.0. Está entrenada con el framework LeRobot de HuggingFace para realizar tareas de manipulación de objetos por color: recoger un bloque azul y colocarlo en la caja azul, o recoger un bloque verde y colocarlo en la caja verde. El modelo aprende mediante imitación a partir de datos teleoperados y predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad del movimiento.
+El modelo `UNITAmanipulation/act_colorsort` es una política de robótica basada en el método Action Chunking with Transformers (ACT), desarrollada por el usuario UNITAmanipulation y publicada bajo licencia Apache 2.0. Está entrenada con el framework LeRobot de Hugging Face para realizar tareas de manipulación de objetos por color: recoger un bloque azul y colocarlo en la caja azul, o recoger un bloque verde y colocarlo en la caja verde. El modelo aprende mediante imitación a partir de datos teleoperados y predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que mejora la estabilidad del movimiento.
 
 Con 51,7 millones de parámetros y un tamaño de repositorio de 0,2 GB, es un modelo ligero diseñado para ejecutarse en tiempo real sobre un robot seguidor SO-100. Su relevancia radica en que demuestra un flujo completo de entrenamiento de políticas robóticas con LeRobot: dataset propio, entrenamiento con ACT y despliegue directo en hardware real. Es un caso práctico de aprendizaje por imitación aplicado a una tarea de clasificación y manipulación física.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UNITAmanipulation/act_colorsort
+- Modelo en Hugging Face: https://huggingface.co/UNITAmanipulation/act_colorsort
 - Dataset asociado: https://huggingface.co/datasets/UNITAmanipulation/act_colorsort
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

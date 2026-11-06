@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: no disponible, pero al tratarse de un modelo de 1.5B con LoRA, la inferencia puede caber en GPUs con 6-8 GB de VRAM en cuantización FP16 (estimación razonable basada en el tamaño del base, no confirmada).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (p. ej., RTX 3060, RTX 4060, A10). Para entrenamiento o fine-tuning se requeriría más memoria.
 - Compatibilidad con consumer GPU: probablemente sí, dado el tamaño del modelo base, pero no hay confirmación oficial.
-- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama o TGI. El checkpoint no es compatible con cargas estándar de HuggingFace (`AutoModel`), por lo que requiere un pipeline personalizado con PyTorch-Lightning.
+- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama o TGI. El checkpoint no es compatible con cargas estándar de Hugging Face (`AutoModel`), por lo que requiere un pipeline personalizado con PyTorch-Lightning.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Parámetros | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `rjz123/colar-selftrain-r1-strategyqa` | ~1.5B (base) | no disponible | Latente (CoLaR) | no disponible | Checkpoint no estándar |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.5B | 32k (según documentación del base) | Cadena de pensamiento explícita | MIT (según modelo base) | HuggingFace estándar |
-| `Qwen2.5-1.5B-Instruct` | 1.5B | 32k | Razonamiento estándar | Apache 2.0 | HuggingFace estándar |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.5B | 32k (según documentación del base) | Cadena de pensamiento explícita | MIT (según modelo base) | Hugging Face estándar |
+| `Qwen2.5-1.5B-Instruct` | 1.5B | 32k | Razonamiento estándar | Apache 2.0 | Hugging Face estándar |
 
 La comparación directa no es posible por falta de benchmarks. El modelo CoLaR se diferencia del base por su mecanismo de razonamiento latente, pero su rendimiento relativo no está documentado.
 
@@ -77,6 +77,6 @@ La comparación directa no es posible por falta de benchmarks. El modelo CoLaR s
 
 ## Enlaces
 
-- Modelo en HuggingFace: [rjz123/colar-selftrain-r1-strategyqa](https://huggingface.co/rjz123/colar-selftrain-r1-strategyqa)
+- Modelo en Hugging Face: [rjz123/colar-selftrain-r1-strategyqa](https://huggingface.co/rjz123/colar-selftrain-r1-strategyqa)
 - Modelo base: [deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
 - No se encontraron papers, blogs o repositorios adicionales en la búsqueda web.

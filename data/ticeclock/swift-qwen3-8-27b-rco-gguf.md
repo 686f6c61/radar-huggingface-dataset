@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-RCO-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario ticeclock en HuggingFace el 19 de septiembre de 2026. El repositorio no incluye model card descriptiva: el README se limita al bloque de front-matter con la licencia apache-2.0, sin ningún apartado de arquitectura, entrenamiento, idiomas o uso previsto. No se registran descargas ni likes en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin adopción documentada.
+Swift-Qwen3.8-27B-RCO-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario ticeclock en Hugging Face el 19 de septiembre de 2026. El repositorio no incluye model card descriptiva: el README se limita al bloque de front-matter con la licencia apache-2.0, sin ningún apartado de arquitectura, entrenamiento, idiomas o uso previsto. No se registran descargas ni likes en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin adopción documentada.
 
 A partir del identificador puede deducirse únicamente que se distribuyen pesos cuantizados en GGUF de un modelo cuya denominación sugiere un tamaño en torno a 27.000 millones de parámetros y un origen en la familia Qwen3, además de un sufijo "RCO" cuyo significado no se explica en ninguna parte del repositorio. Estas deducciones provienen del nombre del repositorio y no están confirmadas por el autor, por lo que deben tratarse como hipótesis de trabajo y no como especificaciones verificadas.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente cautelar:
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (según el identificador del repositorio); otros formatos no disponibles |
-| Desarrollador | ticeclock (usuario de HuggingFace) |
+| Desarrollador | ticeclock (usuario de Hugging Face) |
 | Modelo base | no disponible (el identificador sugiere un derivado de la familia Qwen3, sin confirmar) |
 | Fecha de publicación | 19 de septiembre de 2026 |
 | Última actualización | 19 de septiembre de 2026 |
@@ -73,7 +73,7 @@ No es posible establecer una comparativa fiable: la información publicada no pe
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ticeclock/Swift-Qwen3.8-27B-RCO-GGUF | no disponible | no disponible | no disponible | apache-2.0 | GGUF en HuggingFace |
+| ticeclock/Swift-Qwen3.8-27B-RCO-GGUF | no disponible | no disponible | no disponible | apache-2.0 | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Se recomienda, antes de cualquier comparación, verificar el modelo base declarado por el autor y su model card original.
@@ -92,7 +92,7 @@ Se recomienda, antes de cualquier comparación, verificar el modelo base declara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ticeclock/Swift-Qwen3.8-27B-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ticeclock/Swift-Qwen3.8-27B-RCO-GGUF
 - Paper, blog o repositorio de código del autor: no disponible
 - Modelo base declarado: no disponible
 - Demos o espacios asociados: no disponible

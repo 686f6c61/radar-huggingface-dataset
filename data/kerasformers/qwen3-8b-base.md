@@ -25,7 +25,7 @@ Esta conversión es útil para desarrolladores que necesitan experimentar con Qw
 
 La arquitectura es la misma que la de `Qwen/Qwen3-8B-Base`: un transformer denso con atención de múltiples cabezas, normalización RMSNorm, activación SwiGLU y codificación posicional rotatoria (RoPE). El modelo original fue desarrollado por Alibaba y entrenado con un corpus multilingüe de alta calidad; el paper técnico (arXiv:2505.09388) detalla el proceso de entrenamiento, que incluye fases de preentrenamiento y ajuste con datos instructivos para las variantes chat.
 
-Esta conversión no reentrena el modelo ni modifica los pesos; simplemente los transpila al formato de Keras 3. Por tanto, las características de entrenamiento, como el número de tokens o la composición del dataset, son las del modelo original y no se detallan en la model card de esta conversión. La implementación de KerasFormers permite cargar los pesos directamente desde HuggingFace y usarlos con los backends de TensorFlow, PyTorch o JAX.
+Esta conversión no reentrena el modelo ni modifica los pesos; simplemente los transpila al formato de Keras 3. Por tanto, las características de entrenamiento, como el número de tokens o la composición del dataset, son las del modelo original y no se detallan en la model card de esta conversión. La implementación de KerasFormers permite cargar los pesos directamente desde Hugging Face y usarlos con los backends de TensorFlow, PyTorch o JAX.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ Esta conversión no reentrena el modelo ni modifica los pesos; simplemente los t
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Esta conversión no incluye métricas propias; los resultados del modelo original Qwen3-8B-Base están disponibles en el paper técnico (arXiv:2505.09388) y en la model card de HuggingFace de `Qwen/Qwen3-8B-Base`.
+No se han publicado resultados de benchmarks en la informacion disponible. Esta conversión no incluye métricas propias; los resultados del modelo original Qwen3-8B-Base están disponibles en el paper técnico (arXiv:2505.09388) y en la model card de Hugging Face de `Qwen/Qwen3-8B-Base`.
 
 ## Requisitos de hardware
 
@@ -80,9 +80,9 @@ La conversión KerasFormers añade la ventaja de ser ejecutable en TensorFlow, P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-8b-base
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-8b-base
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3/
-- Colección de modelos Qwen3 en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4
+- Colección de modelos Qwen3 en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4
 - Paper técnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Model card original de Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base

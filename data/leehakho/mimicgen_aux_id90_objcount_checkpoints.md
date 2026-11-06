@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LeeHakHo/mimicgen_aux_id90_objcount_checkpoints` es un repositorio de HuggingFace publicado por el usuario LeeHakHo que, por su nombre y por su tamano (197,2 GB), contiene un conjunto de checkpoints de entrenamiento asociados a MimicGen, un sistema de generacion automatica de datos para aprendizaje robotico por imitacion, con una tarea auxiliar de conteo de objetos (`objcount`) y una variante identificada como `id90`. No es un modelo de lenguaje: no hay ficheros de pesos tipo transformers, ni tokenizador, ni pipeline declarado.
+`LeeHakHo/mimicgen_aux_id90_objcount_checkpoints` es un repositorio de Hugging Face publicado por el usuario LeeHakHo que, por su nombre y por su tamano (197,2 GB), contiene un conjunto de checkpoints de entrenamiento asociados a MimicGen, un sistema de generacion automatica de datos para aprendizaje robotico por imitacion, con una tarea auxiliar de conteo de objetos (`objcount`) y una variante identificada como `id90`. No es un modelo de lenguaje: no hay ficheros de pesos tipo transformers, ni tokenizador, ni pipeline declarado.
 
 El repositorio no incluye model card, ni descripcion de arquitectura, ni licencia, ni idiomas, ni datos de entrenamiento. Las unicas etiquetas publicas son `region:us`. En el momento de la consulta acumula 0 descargas y 1 like, con fecha de creacion 2026-09-11 y ultima actualizacion 2026-09-12.
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LeeHakHo/mimicgen_aux_id90_objcount_checkpoints` | no disponible | no aplicable | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| `LeeHakHo/mimicgen_aux_id90_objcount_checkpoints` | no disponible | no aplicable | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeeHakHo/mimicgen_aux_id90_objcount_checkpoints
+- Hugging Face: https://huggingface.co/LeeHakHo/mimicgen_aux_id90_objcount_checkpoints
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor ni a su documentacion. Los unicos resultados devueltos eran hilos de foro sin relacion (digital-forum.it sobre servicios de correo), por lo que no se incluyen.
 - Paper, blog, repositorio de codigo o demo: no disponible.

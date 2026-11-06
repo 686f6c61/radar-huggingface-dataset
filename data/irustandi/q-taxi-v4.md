@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo basado en Q-learning tabular, entrenado para resolver el entorno Taxi-v4 de Gymnasium (anteriormente OpenAI Gym). Ha sido desarrollado por el usuario irustandi y publicado en HuggingFace Hub como un modelo de ejemplo para la integración con la librería `stable-baselines3` y su utilidad `load_from_hub`. El problema que resuelve es el clásico de navegación y recogida de pasajeros en una cuadrícula, donde el agente debe aprender una política óptima mediante la actualización iterativa de una tabla Q. Su relevancia radica en ser un ejemplo didáctico de implementación de Q-learning tabular en un entorno estándar, útil para quienes se inician en RL o para validar pipelines de entrenamiento. No se trata de un modelo de lenguaje ni de un transformer; es un agente de refuerzo con una tabla de estados-acciones.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo basado en Q-learning tabular, entrenado para resolver el entorno Taxi-v4 de Gymnasium (anteriormente OpenAI Gym). Ha sido desarrollado por el usuario irustandi y publicado en Hugging Face Hub como un modelo de ejemplo para la integración con la librería `stable-baselines3` y su utilidad `load_from_hub`. El problema que resuelve es el clásico de navegación y recogida de pasajeros en una cuadrícula, donde el agente debe aprender una política óptima mediante la actualización iterativa de una tabla Q. Su relevancia radica en ser un ejemplo didáctico de implementación de Q-learning tabular en un entorno estándar, útil para quienes se inician en RL o para validar pipelines de entrenamiento. No se trata de un modelo de lenguaje ni de un transformer; es un agente de refuerzo con una tabla de estados-acciones.
 
 La arquitectura es una tabla Q clásica, sin red neuronal, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que el peso del modelo es mínimo (probablemente un archivo pickle con la tabla Q). No se especifican parámetros totales ni longitud de contexto, ya que no aplican a este tipo de modelo. La licencia y los idiomas no están declarados.
 
@@ -23,7 +23,7 @@ La arquitectura es una tabla Q clásica, sin red neuronal, y el tamaño del repo
 
 El modelo emplea Q-learning tabular, un algoritmo de aprendizaje por refuerzo sin aproximación funcional. La tabla Q almacena valores para cada par estado-acción del entorno Taxi-v4, que tiene un espacio de estados discreto (500 estados posibles: 5 posiciones de taxi, 4 destinos, 4 ubicaciones de pasajero y un estado de pasajero en taxi). El entrenamiento se realiza mediante la actualización de Bellman, sin red neuronal ni retropropagación. No se proporcionan detalles sobre el número de episodios, la tasa de aprendizaje, el factor de descuento ni la estrategia de exploración (p. ej., epsilon-greedy). El entorno Taxi-v4 es una versión del clásico Taxi de Gymnasium, con recompensas por recoger y dejar pasajeros y penalizaciones por acciones ilegales.
 
-La implementación se integra con la API de HuggingFace Hub mediante `load_from_hub`, como se muestra en el ejemplo de uso de la model card. No hay información sobre el proceso de entrenamiento ni sobre técnicas adicionales como replay buffer o target network, ya que no son necesarias en Q-learning tabular.
+La implementación se integra con la API de Hugging Face Hub mediante `load_from_hub`, como se muestra en el ejemplo de uso de la model card. No hay información sobre el proceso de entrenamiento ni sobre técnicas adicionales como replay buffer o target network, ya que no son necesarias en Q-learning tabular.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ La implementación se integra con la API de HuggingFace Hub mediante `load_from_
 ## Casos de uso
 
 - Educación en aprendizaje por refuerzo: sirve como ejemplo práctico de Q-learning tabular para estudiantes que quieran ver cómo se entrena y evalúa un agente en un entorno estándar.
-- Validación de pipelines de HuggingFace Hub: permite probar la carga de modelos RL desde el Hub con `load_from_hub` y verificar la compatibilidad con Gymnasium.
+- Validación de pipelines de Hugging Face Hub: permite probar la carga de modelos RL desde el Hub con `load_from_hub` y verificar la compatibilidad con Gymnasium.
 - Comparación de algoritmos: puede usarse como baseline para comparar Q-learning con otros métodos (Sarsa, DQN, etc.) en el mismo entorno, midiendo recompensa media y convergencia.
 - Prueba de entornos personalizados: el agente puede adaptarse a variantes de Taxi (p. ej., con `is_slippery=True`) si se reentrena, aunque el modelo publicado no lo especifica.
 - Demostración de persistencia de modelos: muestra cómo guardar y cargar una tabla Q en un archivo pickle para su reutilización.
@@ -69,7 +69,7 @@ No se dispone de comparativas directas publicadas con otros agentes RL para Taxi
 
 | Modelo | Algoritmo | Recompensa media (Taxi-v4) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| q-Taxi-v4 | Q-learning tabular | 7.54 ± 2.71 | no disponible | HuggingFace Hub |
+| q-Taxi-v4 | Q-learning tabular | 7.54 ± 2.71 | no disponible | Hugging Face Hub |
 | Agente DQN (típico) | Deep Q-Network | ~9-10 (no verificado) | variable | no publicado |
 | Agente Sarsa (típico) | Sarsa tabular | ~8-9 (no verificado) | variable | no publicado |
 
@@ -87,5 +87,5 @@ Los valores de DQN y Sarsa son estimaciones orientativas basadas en resultados c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irustandi/q-Taxi-v4
+- Hugging Face: https://huggingface.co/irustandi/q-Taxi-v4
 - No se han encontrado papers, repositorios adicionales ni demos en la información proporcionada.

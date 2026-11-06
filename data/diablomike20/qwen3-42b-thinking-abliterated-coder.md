@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-42B-Thinking-Abliterated-CODER es un modelo de lenguaje derivado de Qwen3-30B-A3B-Thinking-2507, publicado por el usuario diablomike20 en HuggingFace. Se trata de un fine-tune sobre la versión abliterated (descensurada) de huihui-ai, que a su vez parte del modelo MoE de Qwen de 30B parámetros totales con 3B activos. El resultado es un modelo de 42.371.414.784 parámetros totales (42B), 67 capas y 807 tensores, con una longitud de contexto nativa de 256k tokens.
+Qwen3-42B-Thinking-Abliterated-CODER es un modelo de lenguaje derivado de Qwen3-30B-A3B-Thinking-2507, publicado por el usuario diablomike20 en Hugging Face. Se trata de un fine-tune sobre la versión abliterated (descensurada) de huihui-ai, que a su vez parte del modelo MoE de Qwen de 30B parámetros totales con 3B activos. El resultado es un modelo de 42.371.414.784 parámetros totales (42B), 67 capas y 807 tensores, con una longitud de contexto nativa de 256k tokens.
 
 El modelo está orientado explícitamente a la generación de código en la mayoría de lenguajes de programación, aunque el autor indica que también sirve para casos creativos gracias a la abliteración y al adaptador "Brainstorm 20x". La arquitectura subyacente es `qwen3_moe`, con 128 expertos y 8 expertos activos por token, lo que mantiene un coste de inferencia relativamente bajo pese al tamaño total.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/Qwen3-42B-Thinking-Abliterated-CODER
+- Hugging Face: https://huggingface.co/diablomike20/Qwen3-42B-Thinking-Abliterated-CODER
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3-30B-A3B-Thinking-2507-abliterated
 - Modelo raíz Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Modelo raíz Qwen3-30B-A3B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507

@@ -102,6 +102,6 @@ Los datos de ResNet-18 (3D) y ResNet-18 con ACS proceden de las referencias del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habib-analyst/vesselcnn
+- Modelo en Hugging Face: https://huggingface.co/habib-analyst/vesselcnn
 - Repositorio y paquete Python: https://github.com/habib-analyst/vesselcnn
 - Benchmark MedMNIST v2 (VesselMNIST3D): referencia citada en la model card, sin URL explícita en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-Instruct-2409-ARA-heretic es un ajuste fino del modelo Mistral-Small-Instruct-2409 de Mistral AI, publicado por el usuario richardyoung en HuggingFace. Se trata de una variante "heretic" o "abliterated", es decir, una versión en la que se ha aplicado una técnica de edición de pesos orientada a eliminar o reducir los mecanismos de rechazo y censura del modelo original, manteniendo el resto de capacidades del modelo base.
+Mistral-Small-Instruct-2409-ARA-heretic es un ajuste fino del modelo Mistral-Small-Instruct-2409 de Mistral AI, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "heretic" o "abliterated", es decir, una versión en la que se ha aplicado una técnica de edición de pesos orientada a eliminar o reducir los mecanismos de rechazo y censura del modelo original, manteniendo el resto de capacidades del modelo base.
 
 El modelo base es un transformer denso de aproximadamente 22.247 millones de parámetros (22,2 B), desarrollado por Mistral AI. Este ajuste conserva la arquitectura, el tokenizador y la ventana de contexto del modelo original, así como su soporte multilingüe para diez idiomas (inglés, francés, alemán, español, italiano, portugués, chino, japonés, ruso y coreano). El repositorio ocupa 44,5 GB en formato safetensors y está etiquetado para su uso con vLLM.
 
@@ -87,7 +87,7 @@ La comparación directa con el modelo base es la más relevante: esta variante s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-ARA-heretic
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-Instruct-2409
 - Licencia MRL-0.1: https://mistral.ai/licenses/MRL-0.1.md
 - Contacto de licencias de Mistral AI: https://mistral.ai/contact/

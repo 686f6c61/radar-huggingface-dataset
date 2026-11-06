@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| PS-IMAGE-1.6 | LoRA sobre UNet de SDXL | No disponible (repo de 0,2 GB) | Limitado por los text encoders de SDXL | No disponible | HuggingFace, 0 descargas | Sin datos de benchmark |
-| PS-IMAGE-1.5 | LoRA sobre UNet de SDXL | No disponible | Igual que 1.6 | No disponible | HuggingFace (version previa) | Base de la que parte 1.6; comparacion A/B cualitativa favorable a 1.6 |
-| stable-diffusion-xl-base-1.0 | Modelo completo de difusion SDXL | No disponible en esta informacion | Limitado por sus text encoders | OpenRAIL++ (segun el modelo base) | HuggingFace, ampliamente usado | Sin datos de benchmark aportados por el autor |
+| PS-IMAGE-1.6 | LoRA sobre UNet de SDXL | No disponible (repo de 0,2 GB) | Limitado por los text encoders de SDXL | No disponible | Hugging Face, 0 descargas | Sin datos de benchmark |
+| PS-IMAGE-1.5 | LoRA sobre UNet de SDXL | No disponible | Igual que 1.6 | No disponible | Hugging Face (version previa) | Base de la que parte 1.6; comparacion A/B cualitativa favorable a 1.6 |
+| stable-diffusion-xl-base-1.0 | Modelo completo de difusion SDXL | No disponible en esta informacion | Limitado por sus text encoders | OpenRAIL++ (segun el modelo base) | Hugging Face, ampliamente usado | Sin datos de benchmark aportados por el autor |
 
 No se dispone de comparativas cuantitativas frente a otros modelos de generacion de imagen con especialidad en texto (por ejemplo alternativas de la familia SD 3.5 o FLUX.1) en la informacion proporcionada.
 
@@ -91,6 +91,6 @@ No se dispone de comparativas cuantitativas frente a otros modelos de generacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.6
+- Modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.6
 - Version anterior PS-IMAGE-1.5: https://huggingface.co/Pedro21613/PS-IMAGE-1.5
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dylish-5-100k es un repositorio de modelo publicado en HuggingFace por el usuario dylanthecool bajo licencia MIT. La información disponible se limita a los metadatos del repositorio: identificador, licencia, fecha de creación y contadores de uso. No se ha publicado model card con contenido técnico (el README solo contiene la declaración de licencia), no se declara pipeline de inferencia y no se especifican idiomas soportados.
+Dylish-5-100k es un repositorio de modelo publicado en Hugging Face por el usuario dylanthecool bajo licencia MIT. La información disponible se limita a los metadatos del repositorio: identificador, licencia, fecha de creación y contadores de uso. No se ha publicado model card con contenido técnico (el README solo contiene la declaración de licencia), no se declara pipeline de inferencia y no se especifican idiomas soportados.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 1 like, y no cuenta con documentación asociada, paper, repositorio de código ni demos. Por tanto, no es posible confirmar arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni capacidades reales del modelo.
 
@@ -82,7 +82,7 @@ No disponible. No hay información sobre parámetros, contexto, rendimiento ni t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dylanthecool/Dylish-5-100k
+- Hugging Face: https://huggingface.co/dylanthecool/Dylish-5-100k
 - Paper: no disponible.
 - Repositorio de código: no disponible.
 - Demo: no disponible.

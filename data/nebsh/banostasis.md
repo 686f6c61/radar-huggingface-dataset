@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Banostasis es un modelo publicado en HuggingFace por el usuario Nebsh bajo la identificacion `Nebsh/Banostasis`. En el momento de redactar esta ficha, la unica informacion verificable disponible es el identificador del repositorio, la licencia declarada (Apache 2.0), la etiqueta de region (US) y el tamano del repositorio (0,1 GB). La model card asociada no contiene mas contenido que el bloque de metadatos con la licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, idioma, datos de entrenamiento ni proposito del modelo.
+Banostasis es un modelo publicado en Hugging Face por el usuario Nebsh bajo la identificacion `Nebsh/Banostasis`. En el momento de redactar esta ficha, la unica informacion verificable disponible es el identificador del repositorio, la licencia declarada (Apache 2.0), la etiqueta de region (US) y el tamano del repositorio (0,1 GB). La model card asociada no contiene mas contenido que el bloque de metadatos con la licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, idioma, datos de entrenamiento ni proposito del modelo.
 
 El modelo no ha registrado descargas ni interacciones en la plataforma, y no aparece referenciado en los resultados de busqueda web consultados, que devolvieron exclusivamente paginas de LinkedIn sin relacion alguna con el proyecto. Se trata, por tanto, de un repositorio practicamente sin trazabilidad publica: no hay paper, blog tecnico, repositorio de codigo ni demo que permitan reconstruir su origen o sus caracteristicas.
 
@@ -51,7 +51,7 @@ No es posible proponer casos de uso fundamentados, porque se desconoce la tarea 
 - Prototipado rapido en local: dado el tamano reducido del repositorio, encaja como banco de pruebas de bajo coste para validar pipelines de inferencia antes de escalar a modelos mayores.
 - Componente auxiliar en un pipeline mayor: por ejemplo, como modelo de reranking, filtrado previo o generacion de candidatos que despues valida un modelo de mayor capacidad.
 - Investigacion sobre ajuste fino: si los ficheros corresponden a un adaptador, podria servir como material de estudio para reproducir tecnicas de PEFT sobre una base concreta.
-- Educacion y experimentacion: uso en entornos docentes para ilustrar el ciclo completo de carga, inferencia y evaluacion de un modelo desde HuggingFace, dado su reducido coste de despliegue.
+- Educacion y experimentacion: uso en entornos docentes para ilustrar el ciclo completo de carga, inferencia y evaluacion de un modelo desde Hugging Face, dado su reducido coste de despliegue.
 - Despliegue en dispositivos con recursos limitados: si el modelo tiene del orden de decenas de millones de parametros, podria ejecutarse en CPU o en GPU de gama de entrada, siempre que la licencia y la calidad de las salidas lo permitan.
 
 En ningun caso se recomienda su uso en atencion al cliente, generacion de codigo en produccion, entornos sanitarios, financieros o juridicos, ni en cualquier aplicacion con consecuencias sobre personas, sin una evaluacion exhaustiva previa.
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Banostasis (Nebsh) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Banostasis (Nebsh) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nebsh/Banostasis
+- Repositorio en Hugging Face: https://huggingface.co/Nebsh/Banostasis
 - Model card del autor: https://huggingface.co/Nebsh/Banostasis/blob/main/README.md
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; unicamente paginas generales de LinkedIn sin vinculacion con el proyecto.

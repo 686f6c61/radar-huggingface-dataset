@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RedHatAI/starcoder2-7b-quantized.w8a8 es una version cuantizada del modelo StarCoder2-7B, desarrollada por Neural Magic y publicada bajo la organizacion RedHatAI en HuggingFace. El modelo original, creado por el proyecto BigCode, es un modelo de generacion de codigo con 7.400 millones de parametros, entrenado sobre The Stack v2, que cubre mas de 600 lenguajes de programacion. Esta version especifica aplica cuantizacion W8A8 (INT8 tanto en pesos como en activaciones), lo que reduce los requisitos de memoria GPU aproximadamente un 50 % y duplica el rendimiento de computo de multiplicacion de matrices en comparacion con la version original de 16 bits.
+RedHatAI/starcoder2-7b-quantized.w8a8 es una version cuantizada del modelo StarCoder2-7B, desarrollada por Neural Magic y publicada bajo la organizacion RedHatAI en Hugging Face. El modelo original, creado por el proyecto BigCode, es un modelo de generacion de codigo con 7.400 millones de parametros, entrenado sobre The Stack v2, que cubre mas de 600 lenguajes de programacion. Esta version especifica aplica cuantizacion W8A8 (INT8 tanto en pesos como en activaciones), lo que reduce los requisitos de memoria GPU aproximadamente un 50 % y duplica el rendimiento de computo de multiplicacion de matrices en comparacion con la version original de 16 bits.
 
 La relevancia de este modelo radica en que permite desplegar un modelo de generacion de codigo de 7B en hardware mas modesto sin una perdida significativa de calidad: alcanza un pass@1 de 33.9 en HumanEval frente a los 34.9 del modelo original, lo que supone una recuperacion del 97.1 %. Es una opcion practica para entornos de produccion donde la latencia y el uso de memoria son criticos, y se integra directamente con el backend vLLM para inferencia eficiente.
 
@@ -89,7 +89,7 @@ La comparativa muestra que este modelo cuantizado mantiene un rendimiento muy ce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/starcoder2-7b-quantized.w8a8
+- Hugging Face: https://huggingface.co/RedHatAI/starcoder2-7b-quantized.w8a8
 - Modelo original: https://huggingface.co/bigcode/starcoder2-7b
 - Repositorio de StarCoder2 en GitHub: https://github.com/bigcode-project/starcoder2
 - Libreria llm-compressor: https://github.com/vllm-project/llm-compressor

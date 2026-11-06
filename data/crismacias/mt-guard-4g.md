@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mt-guard-4g es un modelo publicado en HuggingFace por el usuario crismacias bajo el identificador `crismacias/mt-guard-4g`. Se trata de un modelo conversacional de aproximadamente 3.212 millones de parametros (3,21 B), distribuido en un repositorio de 4,3 GB que incluye pesos en formato safetensors junto con artefactos en ONNX y GGUF. El modelo esta etiquetado como compatible con endpoints y con la region "us", lo que sugiere que esta pensado para su despliegue mediante APIs de inferencia gestionadas.
+mt-guard-4g es un modelo publicado en Hugging Face por el usuario crismacias bajo el identificador `crismacias/mt-guard-4g`. Se trata de un modelo conversacional de aproximadamente 3.212 millones de parametros (3,21 B), distribuido en un repositorio de 4,3 GB que incluye pesos en formato safetensors junto con artefactos en ONNX y GGUF. El modelo esta etiquetado como compatible con endpoints y con la region "us", lo que sugiere que esta pensado para su despliegue mediante APIs de inferencia gestionadas.
 
-La informacion publica disponible es muy limitada: no se especifican licencia, idiomas soportados, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks. La busqueda web realizada no devolvio ningun resultado relevante (unicamente enlaces genericos a YouTube), por lo que no es posible contrastar la ficha de HuggingFace con documentacion externa, papers o blogs tecnicos.
+La informacion publica disponible es muy limitada: no se especifican licencia, idiomas soportados, longitud de contexto, composicion del dataset de entrenamiento ni resultados de benchmarks. La busqueda web realizada no devolvio ningun resultado relevante (unicamente enlaces genericos a YouTube), por lo que no es posible contrastar la ficha de Hugging Face con documentacion externa, papers o blogs tecnicos.
 
 Por el nombre ("guard") y la etiqueta conversacional, es plausible que el modelo este orientado a tareas de moderacion, filtrado o guardrail en sistemas conversacionales, pero esto es una inferencia a partir del nombre y no un dato confirmado en la informacion proporcionada. Con 129 descargas y 0 likes en el momento de la consulta, se trata de un modelo de nicho y con muy poca validacion por parte de la comunidad.
 
@@ -37,7 +37,7 @@ Tampoco se dispone de informacion sobre el volumen de tokens de entrenamiento, l
 Las unicas capacidades verificables se derivan de las etiquetas declaradas en el repositorio y de los formatos de pesos publicados. Cualquier otra afirmacion requeriria validacion empirica:
 
 - Generacion de texto conversacional: la etiqueta "conversational" indica que el modelo esta preparado para mantener dialogos multi-turno, presumiblemente con una plantilla de chat especifica que no se documenta.
-- Despliegue en entornos de inferencia gestionada: la etiqueta "endpoints_compatible" sugiere compatibilidad con infraestructuras de endpoints de HuggingFace u otros servicios que consumen este tipo de repositorios.
+- Despliegue en entornos de inferencia gestionada: la etiqueta "endpoints_compatible" sugiere compatibilidad con infraestructuras de endpoints de Hugging Face u otros servicios que consumen este tipo de repositorios.
 - Ejecucion en runtime ONNX: la presencia de artefactos ONNX permite inferencia con ONNX Runtime y despliegues optimizados en CPU, GPU y entornos edge.
 - Ejecucion con llama.cpp y ecosistema GGUF: los ficheros GGUF habilitan inferencia local en CPU/GPU con herramientas como llama.cpp, Ollama o LM Studio.
 - Soporte de tool calling / function calling: no disponible.
@@ -61,7 +61,7 @@ Los siguientes casos son propuestas de aplicacion basadas en los datos verificab
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La busqueda web realizada no devolvio ningun resultado tecnico relacionado con el modelo, y su ficha de HuggingFace no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K u otras). Tampoco se dispone de datos de latencia ni de throughput medidos.
+No se han publicado resultados de benchmarks en la informacion disponible. La busqueda web realizada no devolvio ningun resultado tecnico relacionado con el modelo, y su ficha de Hugging Face no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K u otras). Tampoco se dispone de datos de latencia ni de throughput medidos.
 
 ## Requisitos de hardware
 
@@ -97,5 +97,5 @@ No disponible. La busqueda web no arrojo informacion relevante y la ficha del au
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/crismacias/mt-guard-4g
+- Ficha del modelo en Hugging Face: https://huggingface.co/crismacias/mt-guard-4g
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs tecnicos, repositorios de codigo o demos). Los unicos resultados devueltos fueron enlaces genericos al sitio de YouTube, sin relacion con el modelo.

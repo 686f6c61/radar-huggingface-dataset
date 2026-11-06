@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge` es un artefacto de investigación creado mediante la fusión de tres checkpoints de un mismo modelo base denominado `unfiltered_e2e_alignment`, correspondientes a los pasos de entrenamiento 10000, 11000 y 12040. La fusión se realizó con la herramienta [mergekit](https://github.com/cg123/mergekit) utilizando el método Linear (también conocido como interpolación de pesos), tomando como base el checkpoint del paso 12040. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 7B) en formato safetensors, con arquitectura GPT-NeoX según las etiquetas de HuggingFace.
+El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge` es un artefacto de investigación creado mediante la fusión de tres checkpoints de un mismo modelo base denominado `unfiltered_e2e_alignment`, correspondientes a los pasos de entrenamiento 10000, 11000 y 12040. La fusión se realizó con la herramienta [mergekit](https://github.com/cg123/mergekit) utilizando el método Linear (también conocido como interpolación de pesos), tomando como base el checkpoint del paso 12040. El resultado es un modelo de 6.856.253.440 parámetros (aproximadamente 7B) en formato safetensors, con arquitectura GPT-NeoX según las etiquetas de Hugging Face.
 
 Este modelo no presenta documentación oficial más allá de la configuración de fusión. No se especifican datos de entrenamiento, capacidades, licencia ni idiomas soportados. Su relevancia radica en ser un ejemplo de aplicación de técnicas de fusión de modelos (model merging) sobre checkpoints intermedios de un proceso de alineación, un área de interés creciente para optimizar modelos sin reentrenamiento completo. Al ser un experimento sin validación pública, su uso principal es la investigación en metodologías de fusión y la evaluación de la calidad del modelo resultante.
 
@@ -10,7 +10,7 @@ Este modelo no presenta documentación oficial más allá de la configuración d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: al tener 6.856.253.440 parámetros en bfloat16 (2 bytes por parámetro), el peso del modelo ocupa aproximadamente 13.7 GB. Para inferencia sin cuantizar se necesitan al menos 16 GB de VRAM, considerando memoria adicional para activaciones y overhead del runtime.
 - GPU recomendadas: una GPU con 24 GB de VRAM (por ejemplo, RTX 4090, A5000) permitiría ejecutar el modelo en bfloat16 con margen. GPUs de 16 GB (como RTX 3080 Ti) podrían ser insuficientes sin cuantización.
 - Si cabe en consumer GPU: sí, en GPUs de gama alta con 24 GB o más. Con cuantización a 8 bits (desconocida si está disponible) podría caber en 8-10 GB, pero no hay confirmación.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede cargarse con bibliotecas como HuggingFace Transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). No hay configuraciones específicas documentadas.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede cargarse con bibliotecas como Hugging Face Transformers, vLLM, TGI o llama.cpp (si se convierte a GGUF). No hay configuraciones específicas documentadas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -57,6 +57,6 @@ No se dispone de información sobre modelos comparables. Dado que es un merge ex
 
 ## Enlaces
 
-- [HuggingFace - yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge)
+- [Hugging Face - yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-10k_11k_12k_merge)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Artículo sobre interpolación de pesos (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

@@ -35,7 +35,7 @@ No se documenta ningún uso de RLHF, DPO ni ajuste por preferencias, algo espera
 - Extracción de características visuales mediante el backbone ViT-Base congelado (representaciones de 768 dimensiones antes de la cabeza).
 - Inferencia determinista y reproducible con el preprocesado documentado (resize y center crop a 384x384, normalización del processor).
 - Integración directa con `transformers` mediante `AutoModelForImageClassification` y `AutoImageProcessor`.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No soporta visión general más allá de la clasificación entrenada; no hay capacidades multimodales ni de lenguaje.
 - Capacidades multilingües: no aplica.
@@ -76,8 +76,8 @@ Evolución seleccionada del entrenamiento (semilla 42): la validación pasa de 1
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ViT-Base/16, 384, head-only) | 86,1 M | 384x384 px | 57,89 % (test, semilla 42) | Apache 2.0 | HuggingFace |
-| `google/vit-base-patch16-384` (backbone base, sin adaptar) | 86,1 M | 384x384 px | no disponible | Apache 2.0 | HuggingFace |
+| Este checkpoint (ViT-Base/16, 384, head-only) | 86,1 M | 384x384 px | 57,89 % (test, semilla 42) | Apache 2.0 | Hugging Face |
+| `google/vit-base-patch16-384` (backbone base, sin adaptar) | 86,1 M | 384x384 px | no disponible | Apache 2.0 | Hugging Face |
 | Otros backbones del mismo benchmark (40 configuraciones) | variable | variable | no disponible en esta ficha | variable | Colección Vision Foundation Models Benchmark |
 
 No se dispone en la información proporcionada de resultados numéricos de los otros 39 backbones del benchmark ni de alternativas externas evaluadas sobre Galaxy10 DECaLS, por lo que la comparación cuantitativa con modelos similares queda como no disponible.
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de resultados numéricos de los o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch16-384-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch16-384-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch16-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

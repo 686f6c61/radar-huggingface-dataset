@@ -60,9 +60,9 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jalesh-b/bart-springerssat-titlegen | 139M | no disponible | no disponible | HuggingFace |
-| facebook/bart-base | 140M | 1024 | Apache-2.0 | HuggingFace |
-| facebook/bart-large | 406M | 1024 | Apache-2.0 | HuggingFace |
+| jalesh-b/bart-springerssat-titlegen | 139M | no disponible | no disponible | Hugging Face |
+| facebook/bart-base | 140M | 1024 | Apache-2.0 | Hugging Face |
+| facebook/bart-large | 406M | 1024 | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jalesh-b/bart-springerssat-titlegen
+- Hugging Face: https://huggingface.co/jalesh-b/bart-springerssat-titlegen
 - Articulo asociado: https://arxiv.org/abs/2606.05085v1 (Automatic Generation of Titles for Research Papers Using Language Models)
 - Version HTML del articulo: https://arxiv.org/html/2606.05085v1
 - PDF del articulo en Springer: https://rd.springer.com/content/pdf/10.1007/s00799-026-00443-1.pdf

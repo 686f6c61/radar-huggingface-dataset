@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32
+- Hugging Face: https://huggingface.co/amanupg/wearable-ai-2026-egoconv-qwen3vl32b-qlora-r32
 - GitHub (código y write-up): https://github.com/amanupg/wearable-ai-2026-egoconv
 - Perfil del autor: https://huggingface.co/amanupg
 - Wearable AI Grand Challenge: https://wearable-ai-workshop.github.io/

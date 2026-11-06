@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `niedamsie9/superclothed` es un checkpoint publicado en HuggingFace por el usuario `niedamsie9` bajo licencia Apache-2.0. El repositorio tiene un tamaño de 7,3 GB, lo que sugiere que se trata de un modelo de generación de imágenes de tipo difusión, probablemente un checkpoint de Stable Diffusion o Flux, dado el perfil del autor y la presencia de archivos `.safetensors` en sus otros repositorios.
+El modelo `niedamsie9/superclothed` es un checkpoint publicado en Hugging Face por el usuario `niedamsie9` bajo licencia Apache-2.0. El repositorio tiene un tamaño de 7,3 GB, lo que sugiere que se trata de un modelo de generación de imágenes de tipo difusión, probablemente un checkpoint de Stable Diffusion o Flux, dado el perfil del autor y la presencia de archivos `.safetensors` en sus otros repositorios.
 
 La model card del autor está prácticamente vacía: solo incluye la licencia y no proporciona información sobre arquitectura, parámetros, contexto, idiomas ni capacidades. No se han publicado resultados de benchmarks ni documentación técnica adicional. El modelo fue creado el 2 de septiembre de 2026 y actualizado el mismo día, con cero descargas y cero likes en el momento de la consulta.
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niedamsie9/superclothed
+- Modelo en Hugging Face: https://huggingface.co/niedamsie9/superclothed
 - Perfil del autor: https://huggingface.co/niedamsie9
 - Otro modelo del autor: https://huggingface.co/niedamsie9/kremini

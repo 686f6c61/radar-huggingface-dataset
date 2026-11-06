@@ -69,9 +69,9 @@ Resultado oficial local: 0,817 s de media, 5/5 llegadas, consigna 0,2 m/s, *runn
 
 | Modelo | Tipo | Resultado 2 m Sprint | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HlibPlakhtii/microduck-sprint-quicksilver-v3 | Política ONNX (finetune) | 0,817 s media, 5/5 | Apache 2.0 | HuggingFace |
-| jrubiosainz/microduck-game-sprinter-remix14 | Política ONNX (base) | 0,817 s | no disponible en la información | HuggingFace |
-| Quicksilver Sprint v2 (HlibPlakhtii) | Política ONNX (versión previa) | 0,819 s media | Apache 2.0 | HuggingFace |
+| HlibPlakhtii/microduck-sprint-quicksilver-v3 | Política ONNX (finetune) | 0,817 s media, 5/5 | Apache 2.0 | Hugging Face |
+| jrubiosainz/microduck-game-sprinter-remix14 | Política ONNX (base) | 0,817 s | no disponible en la información | Hugging Face |
+| Quicksilver Sprint v2 (HlibPlakhtii) | Política ONNX (versión previa) | 0,819 s media | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros competidores de la Arena en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de otros competidores de la Arena en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v3
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v3
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14/tree/e9a74fa9a55e00f972e87d158f40db660a54be91
 - Ejecución en Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena#/r/01M6KBFBQFPFCQJ4VXB2PQ
 - Ficheros del repositorio: `local-verification.json`, `provenance.json`, `seed-1.npz` a `seed-5.npz`, `BASE_MODEL_CARD.md`, `UPSTREAM_BASE_MODEL_CARD.md`, `LICENSE`, `NOTICE`

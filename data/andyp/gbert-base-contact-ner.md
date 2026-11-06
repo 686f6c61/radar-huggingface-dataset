@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andyP/gbert-base-contact-ner | 109,4 M | 512 tokens por ventana | NER de contacto en alemán | MIT | HuggingFace |
-| deepset/gbert-base | no disponible | 512 tokens | Modelo base alemán (MLM) | no disponible | HuggingFace |
+| andyP/gbert-base-contact-ner | 109,4 M | 512 tokens por ventana | NER de contacto en alemán | MIT | Hugging Face |
+| deepset/gbert-base | no disponible | 512 tokens | Modelo base alemán (MLM) | no disponible | Hugging Face |
 | CRF del pipeline `company_research.contact` | no aplica (modelo estadístico) | no aplica | Extracción de street y location_label | no disponible | Incluido en el paquete |
 | Regex del pipeline `company_research.contact` | no aplica | no aplica | Extracción de fax, email y country | no disponible | Incluido en el paquete |
 
@@ -109,5 +109,5 @@ No se dispone de datos de benchmarks de modelos alternativos de NER de contacto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyP/gbert-base-contact-ner
+- Modelo en Hugging Face: https://huggingface.co/andyP/gbert-base-contact-ner
 - Modelo base: https://huggingface.co/deepset/gbert-base

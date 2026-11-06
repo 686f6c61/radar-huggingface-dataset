@@ -72,7 +72,7 @@ No se dispone de información sobre comparativas con otros modelos de segmentaci
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gatilin/sam2_segmenter
+- Repositorio de Hugging Face: https://huggingface.co/gatilin/sam2_segmenter
 - Paper de SAM 2: https://arxiv.org/html/2408.00714v2
 - Repositorio oficial de SAM 2: https://github.com/facebookresearch/sam2
 - Página de Meta sobre SAM 2: https://ai.meta.com/research/sam2/

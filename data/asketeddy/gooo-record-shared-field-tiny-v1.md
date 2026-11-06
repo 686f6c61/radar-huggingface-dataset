@@ -98,7 +98,7 @@ Frente a un LLM generico de codigo, la diferencia relevante no es de calidad sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-record-shared-field-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-record-shared-field-tiny-v1
 - Experimentos de continuacion de candidatos: https://huggingface.co/asketeddy/gooo-record-shared-field-tiny-v1/tree/main/experiments/record-candidate-continuation-20261005
 - Experimentos de procedencia de valores: https://huggingface.co/asketeddy/gooo-record-shared-field-tiny-v1/tree/main/experiments/record-value-origins-20261005
 - Experimentos de actualizacion de campos: https://huggingface.co/asketeddy/gooo-record-shared-field-tiny-v1/tree/main/experiments/record-field-updates-20261005

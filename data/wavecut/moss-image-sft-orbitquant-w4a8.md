@@ -109,7 +109,7 @@ No se dispone de datos de otros modelos de texto a imagen comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/MOSS-Image-SFT-OrbitQuant-W4A8
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/MOSS-Image-SFT-OrbitQuant-W4A8
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de OrbitQuant: https://github.com/iamwavecut/OrbitQuant
 - Nodos ComfyUI-OrbitQuant: https://github.com/iamwavecut/ComfyUI-OrbitQuant

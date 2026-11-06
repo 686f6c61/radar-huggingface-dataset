@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Optima Tools Chat High (identificador `chat.high`) es un paquete de distribucion del modelo Gemma 4 31B instruction-tuned de Google DeepMind, cuantizado en Q8_0 y acompanado de un proyector multimodal en BF16 para el analisis de imagenes. Lo publica el usuario `optima-tools-ch` en HuggingFace como parte de la aplicacion Optima Tools, con el objetivo de ofrecer una version verificada y empaquetada del modelo base para su uso dentro de dicha aplicacion. Se trata, por tanto, de una redistribucion, no de un modelo nuevo: los pesos son copia byte a byte de la conversion GGUF oficial de ggml-org.
+Optima Tools Chat High (identificador `chat.high`) es un paquete de distribucion del modelo Gemma 4 31B instruction-tuned de Google DeepMind, cuantizado en Q8_0 y acompanado de un proyector multimodal en BF16 para el analisis de imagenes. Lo publica el usuario `optima-tools-ch` en Hugging Face como parte de la aplicacion Optima Tools, con el objetivo de ofrecer una version verificada y empaquetada del modelo base para su uso dentro de dicha aplicacion. Se trata, por tanto, de una redistribucion, no de un modelo nuevo: los pesos son copia byte a byte de la conversion GGUF oficial de ggml-org.
 
 El modelo subyacente, Gemma 4 31B IT, es un transformer multimodal de aproximadamente 31.000 millones de parametros con capacidad de procesamiento de imagen y texto (`image-text-to-text`). El paquete incluye dos ficheros: el modelo de lenguaje en Q8_0 (32,64 GB) y el proyector multimodal en BF16 (1,20 GB), que debe situarse junto al modelo para que llama.cpp lo detecte. La licencia declarada es Apache 2.0.
 
@@ -25,7 +25,7 @@ La relevancia de este paquete es practica: facilita el despliegue local de un mo
 
 La informacion disponible no detalla la arquitectura interna del modelo base mas alla de su naturaleza multimodal (`image-text-to-text`) y su origen en Google DeepMind. El paquete redistribuye la conversion GGUF realizada por ggml-org del modelo `google/gemma-4-31B-it` en su variante instruction-tuned, en la revision `3d47a7e680fb9526dcac74335858f0f31acc9c27`. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La innovacion tecnica destacable de este paquete no reside en el modelo en si, sino en el proceso de empaquetado: los ficheros se copiaron mediante duplicacion LFS del lado del servidor de HuggingFace, sin modificacion alguna, y se documentan con huellas SHA-256 extraidas de los metadatos LFS (identicas en origen y destino). El paquete incluye un manifiesto `.optima-package.json` con tamano y hash de cada fichero, ademas de `SOURCE.json`, `CREDITS.md` y `CREDITS.json` para trazabilidad. El proyector multimodal BF16 es imprescindible para el analisis de imagenes y debe colocarse en el mismo directorio que el modelo para que llama.cpp lo localice.
+La innovacion tecnica destacable de este paquete no reside en el modelo en si, sino en el proceso de empaquetado: los ficheros se copiaron mediante duplicacion LFS del lado del servidor de Hugging Face, sin modificacion alguna, y se documentan con huellas SHA-256 extraidas de los metadatos LFS (identicas en origen y destino). El paquete incluye un manifiesto `.optima-package.json` con tamano y hash de cada fichero, ademas de `SOURCE.json`, `CREDITS.md` y `CREDITS.json` para trazabilidad. El proyector multimodal BF16 es imprescindible para el analisis de imagenes y debe colocarse en el mismo directorio que el modelo para que llama.cpp lo localice.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ La diferencia principal entre este paquete y sus fuentes es la curaduria: Optima
 
 - Modelo no probado: el autor declara explicitamente que el modelo no ha sido testeado en Optima Tools; la verificacion realizada es de integridad, no de ejecucion.
 - Descarga cerrada: la descarga desde la aplicacion no esta abierta todavia, lo que limita su uso practico inmediato en ese canal.
-- Hashes no recalculados localmente: las huellas SHA-256 provienen de los metadatos LFS de HuggingFace y no se verificaron contra una copia local.
+- Hashes no recalculados localmente: las huellas SHA-256 provienen de los metadatos LFS de Hugging Face y no se verificaron contra una copia local.
 - Sesgos conocidos: no documentados en la informacion disponible; al heredar el modelo base de Google DeepMind, arrastra los sesgos de este, que no se detallan.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; es un riesgo inherente a los modelos de lenguaje de esta familia.
 - Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni los idiomas soportados.
@@ -82,7 +82,7 @@ La diferencia principal entre este paquete y sus fuentes es la curaduria: Optima
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optima-tools-ch/chat-high
+- Repositorio Hugging Face: https://huggingface.co/optima-tools-ch/chat-high
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Conversion GGUF de origen: https://huggingface.co/ggml-org/gemma-4-31B-it-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0.txt

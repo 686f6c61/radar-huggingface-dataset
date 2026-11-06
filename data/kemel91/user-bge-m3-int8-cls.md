@@ -94,6 +94,6 @@ La comparativa se limita a los modelos citados en la informacion disponible; no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kemel91/user-bge-m3-int8-cls
+- Repositorio Hugging Face: https://huggingface.co/Kemel91/user-bge-m3-int8-cls
 - Modelo base: https://huggingface.co/deepvk/USER-bge-m3
 - Cuantizacion INT8 de origen: https://huggingface.co/skatzR/USER-BGE-M3-ONNX-INT8

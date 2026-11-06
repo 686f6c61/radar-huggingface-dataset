@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `x0mhb788/mohameddddaaaaaadddddd` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario x0mhb788. Está diseñado para ser utilizado con el pipeline de Diffusers y se basa en el modelo base `Gazingstars123/Anima-2.9B`, un modelo de difusión de 2.900 millones de parámetros. El adaptador está pensado para generar imágenes asociadas al concepto "mohamed", tal como indica el prompt de instancia y la palabra de activación definida en su model card.
+El modelo `x0mhb788/mohameddddaaaaaadddddd` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario x0mhb788. Está diseñado para ser utilizado con el pipeline de Diffusers y se basa en el modelo base `Gazingstars123/Anima-2.9B`, un modelo de difusión de 2.900 millones de parámetros. El adaptador está pensado para generar imágenes asociadas al concepto "mohamed", tal como indica el prompt de instancia y la palabra de activación definida en su model card.
 
 La relevancia de este modelo es limitada en el ecosistema actual: se trata de un adaptador de nicho, con una documentación mínima y sin métricas de rendimiento publicadas. Su interés principal radica en ser un ejemplo de fine-tuning con LoRA sobre un modelo de difusión, aunque la falta de información técnica y de ejemplos de uso dificulta su evaluación objetiva. No se dispone de datos sobre el proceso de entrenamiento, el volumen de datos utilizado ni las capacidades específicas más allá de la generación de imágenes con el concepto indicado.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - No se dispone de información sobre requisitos de hardware específicos para este adaptador.
 - Dado que es un LoRA sobre un modelo de 2.900 millones de parámetros, la inferencia requiere cargar el modelo base completo. Se estima que un modelo de difusión de ese tamaño necesita al menos 8-12 GB de VRAM en FP16, dependiendo de la resolución de salida.
 - GPUs recomendadas: tarjetas con 12 GB o más de VRAM, como RTX 3060/3080/4090, o GPUs de datacenter como A100.
-- Opciones de despliegue: al ser un adaptador Diffusers, puede usarse con la biblioteca `diffusers` en Python, o exportarse a formatos como ONNX o TensorRT para optimización. También podría integrarse en servicios como Replicate o HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un adaptador Diffusers, puede usarse con la biblioteca `diffusers` en Python, o exportarse a formatos como ONNX o TensorRT para optimización. También podría integrarse en servicios como Replicate o Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x0mhb788/mohameddddaaaaaadddddd
+- Modelo en Hugging Face: https://huggingface.co/x0mhb788/mohameddddaaaaaadddddd
 - Modelo base (referenciado): https://huggingface.co/Gazingstars123/Anima-2.9B (no verificado)
 - No se han encontrado papers, blogs o repositorios adicionales relacionados con este adaptador.

@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r226-fullft
+- Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r226-fullft
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (referencia indirecta, no verificado)

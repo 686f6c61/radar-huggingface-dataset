@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AkameV6p5/Qwen-2.5-3B-Lean4-NativeBase` es un checkpoint alojado en HuggingFace por el usuario AkameV6p5, creado el 18 de agosto de 2026. El nombre sugiere que se trata de un fine-tuning del modelo base Qwen 2.5 de 3B parámetros orientado al asistente de pruebas matemáticas Lean4, aunque esta información no está confirmada en la documentación proporcionada. La model card es una plantilla automática sin contenido real, y el repositorio tiene un tamaño de 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 3B parámetros en precisión completa (típicamente varios GB), lo que podría indicar que se trata de un adaptador o de una versión cuantizada, aunque no se especifica.
+El modelo `AkameV6p5/Qwen-2.5-3B-Lean4-NativeBase` es un checkpoint alojado en Hugging Face por el usuario AkameV6p5, creado el 18 de agosto de 2026. El nombre sugiere que se trata de un fine-tuning del modelo base Qwen 2.5 de 3B parámetros orientado al asistente de pruebas matemáticas Lean4, aunque esta información no está confirmada en la documentación proporcionada. La model card es una plantilla automática sin contenido real, y el repositorio tiene un tamaño de 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 3B parámetros en precisión completa (típicamente varios GB), lo que podría indicar que se trata de un adaptador o de una versión cuantizada, aunque no se especifica.
 
 La relevancia de este modelo, si efectivamente es un fine-tune de Qwen 2.5 3B para Lean4, radicaría en la asistencia a la demostración formal de teoremas, un área en crecimiento dentro de la IA aplicada a matemáticas. Sin embargo, al carecer de documentación, benchmarks o detalles de entrenamiento, no es posible evaluar su calidad ni su utilidad práctica. El repositorio no presenta descargas ni interacciones, lo que sugiere que es un experimento reciente o privado.
 
@@ -60,4 +60,4 @@ No disponible. No se puede comparar con otros modelos al carecer de datos sobre 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/AkameV6p5/Qwen-2.5-3B-Lean4-NativeBase)
+- [Repositorio Hugging Face](https://huggingface.co/AkameV6p5/Qwen-2.5-3B-Lean4-NativeBase)

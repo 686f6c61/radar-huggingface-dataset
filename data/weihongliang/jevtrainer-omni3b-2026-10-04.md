@@ -79,10 +79,10 @@ Metricas internas del holdout (1 610 ejemplos), segun la model card: exactitud 8
 
 | Modelo | Parametros | Tipo | Contexto | Benchmarks (OmniBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JevTrainer Omni 3B | 3B + LoRA r=32 | Adaptador de decision multimodal | No disponible | 49,43 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-Omni-3B | 3B | Modelo omni generativo (thinker + talker) | 32 768 tokens segun documentacion del base | 43,82 | Apache 2.0 | HuggingFace |
-| Qwen2.5-Omni-7B | 7B | Modelo omni generativo | 32 768 tokens segun documentacion del base | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-3B | 3B | Modelo vision-lenguaje (sin audio) | No disponible en la informacion proporcionada | No aplica (no cubre audio) | Apache 2.0 | HuggingFace |
+| JevTrainer Omni 3B | 3B + LoRA r=32 | Adaptador de decision multimodal | No disponible | 49,43 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-Omni-3B | 3B | Modelo omni generativo (thinker + talker) | 32 768 tokens segun documentacion del base | 43,82 | Apache 2.0 | Hugging Face |
+| Qwen2.5-Omni-7B | 7B | Modelo omni generativo | 32 768 tokens segun documentacion del base | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-3B | 3B | Modelo vision-lenguaje (sin audio) | No disponible en la informacion proporcionada | No aplica (no cubre audio) | Apache 2.0 | Hugging Face |
 
 La unica comparacion con cifras verificables en la informacion proporcionada es contra el modelo base Qwen2.5-Omni-3B, sobre el que JevTrainer Omni 3B mejora en los cinco benchmarks reportados. Las filas de Qwen2.5-Omni-7B y Qwen2.5-VL-3B se incluyen como alternativas de categoria, pero sus resultados no estan disponibles en la informacion suministrada.
 
@@ -91,7 +91,7 @@ La unica comparacion con cifras verificables en la informacion proporcionada es 
 - Es un adaptador LoRA, no un modelo autonomo: sin los pesos de Qwen/Qwen2.5-Omni-3B no se puede ejecutar. El repositorio de 0,3 GB no contiene el modelo completo.
 - La salida es una etiqueta `marker`, no texto libre. No sirve como sustituto de un asistente conversacional ni de un modelo generativo generalista.
 - No se carga la rama de salida de voz (talker): el modelo no puede generar habla pese a derivar de una familia omni.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado pipeline en HuggingFace. No hay evidencia de uso en produccion por terceros.
+- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado pipeline en Hugging Face. No hay evidencia de uso en produccion por terceros.
 - Los resultados de benchmarks los reporta el propio autor del modelo; no consta una evaluacion independiente.
 - El holdout interno es de 1 610 ejemplos y pertenece al mismo proceso de entrenamiento, por lo que la exactitud del 85,03 % no es directamente extrapolable a datos externos.
 - Sesgos conocidos: no disponibles en la informacion proporcionada. Al derivar de Qwen2.5-Omni, hereda los sesgos del modelo base, no documentados en esta ficha.
@@ -103,7 +103,7 @@ La unica comparacion con cifras verificables en la informacion proporcionada es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weihongliang/jevtrainer-omni3b-2026-10-04
+- Modelo en Hugging Face: https://huggingface.co/weihongliang/jevtrainer-omni3b-2026-10-04
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio de entrenamiento jevtrainer: https://github.com/hongliang-wei/jevtrainer
 - Configuracion de entrenamiento citada: `configs/av/omni3b_v4.yaml` (dentro del repositorio jevtrainer)

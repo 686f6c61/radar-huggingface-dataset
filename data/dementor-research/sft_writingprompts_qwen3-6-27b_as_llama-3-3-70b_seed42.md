@@ -31,7 +31,7 @@ No se proporcionan detalles sobre el dataset de entrenamiento, el número de tok
 
 - Generación de texto creativo: el adaptador está específicamente entrenado para producir respuestas en tareas de escritura (writing prompts), imitando el estilo de Llama-3.3-70B.
 - Transferencia de comportamiento: permite que un modelo de 27B parámetros adopte el estilo de generación de un modelo de 70B, lo que puede ser útil para estudiar la compresión de capacidades.
-- Integración con PEFT: se puede cargar fácilmente sobre el modelo base mediante la librería `peft` de HuggingFace, sin necesidad de modificar el modelo original.
+- Integración con PEFT: se puede cargar fácilmente sobre el modelo base mediante la librería `peft` de Hugging Face, sin necesidad de modificar el modelo original.
 - No se dispone de información sobre soporte de tool calling, razonamiento multi-paso, capacidades multilingües o modos especiales (visión, audio, etc.). Estas capacidades, si existen, dependerían del modelo base Qwen3.6-27B, pero no están documentadas en este repositorio.
 
 ## Casos de uso

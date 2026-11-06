@@ -80,7 +80,7 @@ El panel cubre decisiones de navegador, HelpSteer3, BoolQ, MNLI y decisiones de 
 | Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
 | APUS-OpenJev-v1-4B-CoreAI | 4B | 4.096 tokens (bundle) | Apache-2.0 | Bundle `.aimodel` para Core AI | Decisión restringida a 2–16 criterios |
-| APUS-OpenJev-v1-4B (origen) | 4B | hasta 8.192 tokens en el contrato | no disponible en la información | Pesos BF16 fusionados en HuggingFace | Mismo modelo antes de la cuantización |
+| APUS-OpenJev-v1-4B (origen) | 4B | hasta 8.192 tokens en el contrato | no disponible en la información | Pesos BF16 fusionados en Hugging Face | Mismo modelo antes de la cuantización |
 | Qwen/Qwen3.5-4B (base) | 4B | no disponible en la información | no disponible en la información | safetensors presumiblemente | Modelo de lenguaje general, sin contrato de decisión |
 | Qwen3-8B 4-bit (referencia de runtime) | 8B | no disponible en la información | no disponible en la información | Core AI / MLX | Cifra de 94 tok/s en M4 Max GPU con Core AI frente a 90 con MLX, bajo el mismo protocolo |
 
@@ -101,7 +101,7 @@ No se dispone de comparativas de rendimiento frente a otros modelos de decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/APUS-OpenJev-v1-4B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/APUS-OpenJev-v1-4B-CoreAI
 - Modelo base (origen): https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/tree/65797c526c27c4d24f564333779162cd4a64328e (revisión `65797c526c27c4d24f564333779162cd4a64328e`)
 - Model card del modelo base y resultado del panel Frozen80: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/blob/65797c526c27c4d24f564333779162cd4a64328e/README.md
 - Evaluación fusionada: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B/blob/65797c526c27c4d24f564333779162cd4a64328e/merged-evaluation.json

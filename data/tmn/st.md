@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tmn/st` es un repositorio alojado en HuggingFace por el usuario `tmn`, publicado el 1 de noviembre de 2026 y distribuido bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia: no se especifica arquitectura, tamaño, tokenizador, datos de entrenamiento ni propósito del modelo. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere que se trata de un artefacto recién creado, probablemente de carácter experimental o de prueba.
+`tmn/st` es un repositorio alojado en Hugging Face por el usuario `tmn`, publicado el 1 de noviembre de 2026 y distribuido bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia: no se especifica arquitectura, tamaño, tokenizador, datos de entrenamiento ni propósito del modelo. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere que se trata de un artefacto recién creado, probablemente de carácter experimental o de prueba.
 
-La ausencia de documentación técnica impide determinar qué problema resuelve o en qué categoría encaja (lenguaje, visión, audio u otra). Tampoco hay información sobre el pipeline declarado en HuggingFace, los idiomas soportados ni los formatos de pesos publicados. Cualquier evaluación de idoneidad para producción resulta, por tanto, imposible con los datos actuales.
+La ausencia de documentación técnica impide determinar qué problema resuelve o en qué categoría encaja (lenguaje, visión, audio u otra). Tampoco hay información sobre el pipeline declarado en Hugging Face, los idiomas soportados ni los formatos de pesos publicados. Cualquier evaluación de idoneidad para producción resulta, por tanto, imposible con los datos actuales.
 
 Esta ficha recoge de forma rigurosa los pocos metadatos verificables disponibles y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado, evitando inferencias no respaldadas por la información proporcionada.
 
@@ -40,7 +40,7 @@ Tampoco hay referencias a innovaciones técnicas destacables como decodificació
 
 - Evaluación exploratoria en entornos de investigación: dado que no hay documentación, el único uso razonable inmediato sería inspeccionar los archivos del repositorio para determinar qué contiene realmente antes de plantear cualquier aplicación.
 - Prototipado interno con fines de aprendizaje: un desarrollador podría clonar el repositorio para estudiar su estructura, siempre asumiendo que no hay garantías de funcionamiento ni de calidad.
-- Pruebas de integración de pipelines de HuggingFace: el repositorio podría servir para validar flujos de descarga y carga de artefactos, sin esperar resultados de inferencia útiles.
+- Pruebas de integración de pipelines de Hugging Face: el repositorio podría servir para validar flujos de descarga y carga de artefactos, sin esperar resultados de inferencia útiles.
 - Auditoría de licencias en organizaciones: al estar bajo Apache 2.0, un equipo de cumplimiento podría registrar el artefacto en su inventario, aunque sin datos técnicos no podría evaluar su idoneidad funcional.
 - Docencia sobre publicación de modelos: puede emplearse como ejemplo de repositorio con documentación mínima y de los riesgos que ello conlleva para la reproducibilidad.
 - No se recomienda ningún caso de uso en producción (atención al cliente, generación de código, análisis documental, etc.) hasta que el autor publique especificaciones, benchmarks y pesos verificables.
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tmn/st
+- Repositorio en Hugging Face: https://huggingface.co/tmn/st
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

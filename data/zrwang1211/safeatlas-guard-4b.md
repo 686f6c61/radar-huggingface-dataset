@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos de moderación de seguridad mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zrwang1211/SafeAtlas-Guard-4B
+- Modelo en Hugging Face: https://huggingface.co/zrwang1211/SafeAtlas-Guard-4B
 - Repositorio de código: https://github.com/zrwang1211/SafeAtlas-VL
 - Dataset SafeAtlas-VL: https://huggingface.co/datasets/zrwang1211/SafeAtlas-VL
 - Colección SafeAtlas Guard: https://huggingface.co/collections/zrwang1211/safeatlas-guard

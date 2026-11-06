@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT | Adaptador sobre base ~4B | No disponible | Postura y sentimiento en amharico | Apache 2.0 | HuggingFace, 0 descargas |
-| McGill-NLP/AfriqueQwen3.5-4B (modelo base) | ~4B | No disponible | Generacion y comprension multilingue | No disponible | HuggingFace |
+| tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT | Adaptador sobre base ~4B | No disponible | Postura y sentimiento en amharico | Apache 2.0 | Hugging Face, 0 descargas |
+| McGill-NLP/AfriqueQwen3.5-4B (modelo base) | ~4B | No disponible | Generacion y comprension multilingue | No disponible | Hugging Face |
 | Otros modelos de stance detection en amharico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified
 - Articulo referenciado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

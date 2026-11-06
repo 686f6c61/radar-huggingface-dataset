@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-real-workbench-vanilla-2view-60k es una política de robotica (VLA, vision-language-action) publicada por el usuario jaehyunkang en HuggingFace. Se trata de un fine-tuning de lerobot/pi05_base sobre el dataset Myungkyu/real_workbench, y corresponde al checkpoint final tras 60.000 pasos de optimizacion. No es un modelo de lenguaje de proposito general: es un modelo de control que recibe observaciones visuales, un estado proprioceptivo y una instruccion de tarea en lenguaje natural, y emite acciones motoras.
+pi05-real-workbench-vanilla-2view-60k es una política de robotica (VLA, vision-language-action) publicada por el usuario jaehyunkang en Hugging Face. Se trata de un fine-tuning de lerobot/pi05_base sobre el dataset Myungkyu/real_workbench, y corresponde al checkpoint final tras 60.000 pasos de optimizacion. No es un modelo de lenguaje de proposito general: es un modelo de control que recibe observaciones visuales, un estado proprioceptivo y una instruccion de tarea en lenguaje natural, y emite acciones motoras.
 
 El modelo tiene 4.143.404.816 parametros (aproximadamente 4,14 mil millones) almacenados en safetensors, con un repositorio de 24,5 GB que incluye ademas los ficheros de reanudacion de entrenamiento en `training_state/`. La variante "vanilla-2view" usa dos vistas de camara (exterior y muneca), cubre las cuatro tareas de Workbench definidas en el dataset y emplea una instruccion global de tarea. La accion se representa como delta del efector final en 7 dimensiones (6 de velocidad cartesiana mas pinza) y se ejecuta en chunks de 50 pasos.
 
@@ -105,7 +105,7 @@ La busqueda web realizada no devolvio informacion tecnica sobre modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-vanilla-2view-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-vanilla-2view-60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Tokenizador de referencia: https://huggingface.co/google/paligemma-3b-pt-224

@@ -76,8 +76,8 @@ No hay comparaciones publicadas con modelos de la misma categoría. Como referen
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | SRSN-24M | 24M | no disponible | MIT | Pesos pendientes de subida; código en GitHub |
-| Mamba (variantes pequeñas) | ~130M en adelante | hasta 2k–32k según variante | Apache 2.0 | HuggingFace |
-| RWKV (variantes pequeñas) | desde ~169M | hasta 4k+ | Apache 2.0 | HuggingFace |
+| Mamba (variantes pequeñas) | ~130M en adelante | hasta 2k–32k según variante | Apache 2.0 | Hugging Face |
+| RWKV (variantes pequeñas) | desde ~169M | hasta 4k+ | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento no está disponible: SRSN-24M no reporta métricas en tareas estándar y su escala (24M) es inferior a la de las alternativas citadas.
 
@@ -95,7 +95,7 @@ La comparación de rendimiento no está disponible: SRSN-24M no reporta métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/SRSN-24M
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/SRSN-24M
 - Repositorio GitHub: https://github.com/DuoNeural/SRSN
 - Preprint (v0.1, alojado en el repositorio GitHub): https://github.com/DuoNeural/SRSN
 - Cita: Caldwell, Jesse; Aura; Archon. "SRSN: Symplectic Recurrent State Networks via Port-Hamiltonian Dynamics with Native AVX2 Analytical Adjoint Kernels". DuoNeural AI Laboratory Preprint, 2026.

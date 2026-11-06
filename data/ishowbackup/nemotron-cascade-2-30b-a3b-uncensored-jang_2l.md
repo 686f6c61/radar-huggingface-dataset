@@ -81,7 +81,7 @@ Según la model card del autor, para la versión **JANG_2L**:
 
 ## Enlaces
 
-- [HuggingFace: Ishowbackup/Nemotron-Cascade-2-30B-A3B-UNCENSORED-JANG_2L](https://huggingface.co/Ishowbackup/Nemotron-Cascade-2-30B-A3B-UNCENSORED-JANG_2L)
+- [Hugging Face: Ishowbackup/Nemotron-Cascade-2-30B-A3B-UNCENSORED-JANG_2L](https://huggingface.co/Ishowbackup/Nemotron-Cascade-2-30B-A3B-UNCENSORED-JANG_2L)
 - [Modelo base: nvidia/Nemotron-Cascade-2-30B-A3B](https://huggingface.co/nvidia/Nemotron-Cascade-2-30B-A3B)
 - [Página de investigación de Nemotron Cascade 2 (NVIDIA)](https://research.nvidia.com/labs/nemotron/nemotron-cascade-2/)
 - [GitHub: NVIDIA-NeMo/Nemotron](https://github.com/NVIDIA-NeMo/Nemotron)

@@ -77,8 +77,8 @@ No se dispone de información suficiente en los datos proporcionados para realiz
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/aclava/stable-code-instruct-3b-Q6_K-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/stabilityai/stable-code-instruct-3b
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/aclava/stable-code-instruct-3b-Q6_K-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/stabilityai/stable-code-instruct-3b
 - Blog de Stability AI sobre Stable Code Instruct 3B: https://stability.ai/news-updates/introducing-stable-code-instruct-3b
 - Repositorio GitHub de StableCode: https://github.com/Stability-AI/StableCode
 - Página de descarga alternativa (graysoft.dev): https://graysoft.dev/download/models/bartowski__stable-code-instruct-3b-gguf/q6-k

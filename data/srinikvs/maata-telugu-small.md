@@ -2,9 +2,9 @@
 
 ## Resumen
 
-maata-telugu-small es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-small, especializado en telugu (te). Lo publica el usuario srinikvs en HuggingFace y su proposito es mejorar la transcripcion de audio en telugu respecto al modelo base multilingue, que dedica una fraccion pequena de su capacidad a este idioma. El modelo se distribuye en formato GGML/whisper.cpp, lo que indica que esta pensado para inferencia local eficiente, incluso en CPU.
+maata-telugu-small es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-small, especializado en telugu (te). Lo publica el usuario srinikvs en Hugging Face y su proposito es mejorar la transcripcion de audio en telugu respecto al modelo base multilingue, que dedica una fraccion pequena de su capacidad a este idioma. El modelo se distribuye en formato GGML/whisper.cpp, lo que indica que esta pensado para inferencia local eficiente, incluso en CPU.
 
-Se trata de un modelo de la familia Whisper, con arquitectura transformer encoder-decoder orientada a ASR, derivada de whisper-small (aproximadamente 244 millones de parametros en el modelo base). El repositorio ocupa 0,3 GB, coherente con los pesos convertidos a GGML. El modelo esta entrenado sobre ai4bharat/IndicVoices, un corpus de habla indico de gran escala, y esta restringido (gated) en HuggingFace: requiere aceptar condiciones antes de descargarlo.
+Se trata de un modelo de la familia Whisper, con arquitectura transformer encoder-decoder orientada a ASR, derivada de whisper-small (aproximadamente 244 millones de parametros en el modelo base). El repositorio ocupa 0,3 GB, coherente con los pesos convertidos a GGML. El modelo esta entrenado sobre ai4bharat/IndicVoices, un corpus de habla indico de gran escala, y esta restringido (gated) en Hugging Face: requiere aceptar condiciones antes de descargarlo.
 
 Es relevante para desarrolladores que necesiten transcripcion de telugu en entornos con recursos limitados, ya que combina un modelo base pequeno con un formato optimizado para CPU y una licencia MIT permisiva. No obstante, la informacion publicada es escasa: no hay tarjeta de modelo detallada, benchmarks ni datos de entrenamiento explicitos mas alla del dataset citado.
 
@@ -71,7 +71,7 @@ La comparativa se limita a modelos de la misma familia o tarea; no se dispone de
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede anadir friccion en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede anadir friccion en pipelines automatizados.
 - Informacion muy escasa: no hay tarjeta de modelo detallada, benchmarks ni datos de entrenamiento, lo que dificulta evaluar su calidad real frente al modelo base.
 - Riesgo de alucinacion: como todo modelo Whisper, puede generar texto plausible en segmentos de silencio o ruido, especialmente en audio de baja calidad.
 - Sesgos: al entrenarse sobre IndicVoices, puede estar sesgado hacia determinados acentos, registros o dominios presentes en el corpus; no se documenta el balance del dataset.
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de la misma familia o tarea; no se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srinikvs/maata-telugu-small
+- Hugging Face: https://huggingface.co/srinikvs/maata-telugu-small
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset: https://huggingface.co/datasets/ai4bharat/IndicVoices
 - Paper IndicVoices: https://arxiv.org/abs/2403.01926

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-geocketa/mysterytour2k es un repositorio de modelo publicado en HuggingFace por el usuario geocketa. En el momento de redactar esta ficha, la informacion publica disponible es minima: el repositorio tiene un tamano de 4,3 GB, cuenta con 0 descargas y 1 like, y esta sujeto a acceso restringido (gated), lo que obliga a aceptar unas condiciones en HuggingFace antes de poder descargar los pesos.
+geocketa/mysterytour2k es un repositorio de modelo publicado en Hugging Face por el usuario geocketa. En el momento de redactar esta ficha, la informacion publica disponible es minima: el repositorio tiene un tamano de 4,3 GB, cuenta con 0 descargas y 1 like, y esta sujeto a acceso restringido (gated), lo que obliga a aceptar unas condiciones en Hugging Face antes de poder descargar los pesos.
 
 No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos tratan sobre practicas religiosas y no guardan ninguna relacion con el repositorio, por lo que no aportan datos tecnicos utilizables.
 
@@ -75,17 +75,17 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, datos ni uso previsto.
 - Licencia no especificada: no puede confirmarse si se permite el uso comercial, la redistribucion o la modificacion. En ausencia de licencia explicita, debe asumirse que no hay permisos concedidos.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatizacion y la reproducibilidad.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatizacion y la reproducibilidad.
 - Idiomas no declarados: se desconoce el soporte multilingue real.
 - Riesgo de alucinacion: no evaluable sin acceso al modelo y sin benchmarks.
 - Sesgos: no evaluables por falta de informacion sobre los datos de entrenamiento.
 - Resultados de busqueda no relevantes: los enlaces devueltos por la busqueda web no estan relacionados con el modelo y no deben tomarse como fuente.
 - Uso en produccion: no recomendable sin una evaluacion previa, dado que no existe ninguna garantia tecnica ni legal publicada.
-- Fechas de creacion y actualizacion futuras (2026): conviene verificar los metadatos en la propia pagina de HuggingFace, ya que pueden reflejar programaciones o valores no definitivos.
+- Fechas de creacion y actualizacion futuras (2026): conviene verificar los metadatos en la propia pagina de Hugging Face, ya que pueden reflejar programaciones o valores no definitivos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geocketa/mysterytour2k
+- Repositorio en Hugging Face: https://huggingface.co/geocketa/mysterytour2k
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

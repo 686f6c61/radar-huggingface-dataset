@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455 (modelo base) | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens (segun la arquitectura original) | ampliamente evaluado en la literatura | modificada (MIT-like de OpenAI, segun publicacion original) | HuggingFace y multiples repositorios |
-| DistilGPT-2 (alternativa ligera) | 82 M | 1.024 tokens (segun la arquitectura original) | ampliamente evaluado en la literatura | Apache 2.0 | HuggingFace |
+| francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455 (modelo base) | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens (segun la arquitectura original) | ampliamente evaluado en la literatura | modificada (MIT-like de OpenAI, segun publicacion original) | Hugging Face y multiples repositorios |
+| DistilGPT-2 (alternativa ligera) | 82 M | 1.024 tokens (segun la arquitectura original) | ampliamente evaluado en la literatura | Apache 2.0 | Hugging Face |
 
 La comparativa con GPT-2 small y DistilGPT-2 se ofrece unicamente como referencia de tamano y arquitectura; no se dispone de datos de rendimiento del modelo descrito que permitan una comparacion cuantitativa.
 
@@ -84,7 +84,7 @@ La comparativa con GPT-2 small y DistilGPT-2 se ofrece unicamente como referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v0g5yh8x
 - Repositorio de TRL: https://github.com/huggingface/trl

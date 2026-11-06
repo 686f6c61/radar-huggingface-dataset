@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una conversion a Core ML del modelo `biodatlab/whisper-th-small-combined`, un ajuste fino de `openai/whisper-small` especializado en reconocimiento automatico del habla (ASR) en tailandes. El autor es el usuario de HuggingFace `aoiandroid`, y el modelo se publica en formato Core ML con la disposicion de ficheros que espera WhisperKit (Argmax), pensado para ejecucion en dispositivos Apple. Se trata de una redistribucion sin modificacion de pesos mas alla de la conversion de formato, no de un entrenamiento nuevo.
+Este repositorio contiene una conversion a Core ML del modelo `biodatlab/whisper-th-small-combined`, un ajuste fino de `openai/whisper-small` especializado en reconocimiento automatico del habla (ASR) en tailandes. El autor es el usuario de Hugging Face `aoiandroid`, y el modelo se publica en formato Core ML con la disposicion de ficheros que espera WhisperKit (Argmax), pensado para ejecucion en dispositivos Apple. Se trata de una redistribucion sin modificacion de pesos mas alla de la conversion de formato, no de un entrenamiento nuevo.
 
 El modelo resuelve la transcripcion de audio en tailandes sobre hardware Apple, aprovechando la arquitectura encoder-decoder de Whisper en su variante "small". Los pesos se exportan en float16, con una longitud de cache KV de 448 tokens en el decodificador. El proposito declarado es servir de espejo para un proyecto llamado TranslateBlue.
 
@@ -71,10 +71,10 @@ Ademas, se reporta el CER en FLEURS th test (200 utterances, PyTorch): 0.100 par
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento FLEURS th (coverage media, 60 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| aoiandroid/whisper-th-small-combined-whisperkit-coreml-ios | Core ML (Whisper small ajustado) | ~244 M | 30 s audio / 448 tokens KV | 0.933 | Apache 2.0 | HuggingFace (Core ML) |
-| biodatlab/whisper-th-small-combined | PyTorch (Whisper small ajustado) | ~244 M | 30 s audio | 0.933 | Apache 2.0 | HuggingFace (PyTorch) |
-| openai/whisper-small | PyTorch (Whisper small) | ~244 M | 30 s audio | 0.838 | Apache 2.0 / MIT | HuggingFace, OpenAI |
-| openai/whisper-base | PyTorch (Whisper base) | ~74 M | 30 s audio | 0.739 | Apache 2.0 / MIT | HuggingFace, OpenAI |
+| aoiandroid/whisper-th-small-combined-whisperkit-coreml-ios | Core ML (Whisper small ajustado) | ~244 M | 30 s audio / 448 tokens KV | 0.933 | Apache 2.0 | Hugging Face (Core ML) |
+| biodatlab/whisper-th-small-combined | PyTorch (Whisper small ajustado) | ~244 M | 30 s audio | 0.933 | Apache 2.0 | Hugging Face (PyTorch) |
+| openai/whisper-small | PyTorch (Whisper small) | ~244 M | 30 s audio | 0.838 | Apache 2.0 / MIT | Hugging Face, OpenAI |
+| openai/whisper-base | PyTorch (Whisper base) | ~74 M | 30 s audio | 0.739 | Apache 2.0 / MIT | Hugging Face, OpenAI |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Ademas, se reporta el CER en FLEURS th test (200 utterances, PyTorch): 0.100 par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/whisper-th-small-combined-whisperkit-coreml-ios
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/whisper-th-small-combined-whisperkit-coreml-ios
 - Modelo base (ajuste fino tailandes): https://huggingface.co/biodatlab/whisper-th-small-combined
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Herramienta de conversion (whisperkittools): https://github.com/argmaxinc/whisperkittools

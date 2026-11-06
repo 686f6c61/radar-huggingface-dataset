@@ -80,6 +80,6 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-astro
+- Repositorio en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-qwen3_5-astro
 - Informe técnico de Qwen3 (referencia relacionada): https://arxiv.org/abs/2505.09388
 - Framework SVD Linear Attention: no disponible

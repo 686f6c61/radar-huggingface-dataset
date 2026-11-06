@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smith1302/Krea-2-Turbo-BF16-backup` es un repositorio de HuggingFace que aloja pesos en formato safetensors para un pipeline de difusion texto-a-imagen identificado en el campo `library_name` como `diffusers:Krea2Pipeline`. El nombre del repositorio indica que se trata de una copia de seguridad ("backup") de un modelo denominado Krea-2-Turbo en precision BF16, subida por el usuario `smith1302`, que no parece ser el autor original del modelo. No se ha publicado model card, licencia ni documentacion tecnica asociada en la informacion disponible.
+`smith1302/Krea-2-Turbo-BF16-backup` es un repositorio de Hugging Face que aloja pesos en formato safetensors para un pipeline de difusion texto-a-imagen identificado en el campo `library_name` como `diffusers:Krea2Pipeline`. El nombre del repositorio indica que se trata de una copia de seguridad ("backup") de un modelo denominado Krea-2-Turbo en precision BF16, subida por el usuario `smith1302`, que no parece ser el autor original del modelo. No se ha publicado model card, licencia ni documentacion tecnica asociada en la informacion disponible.
 
 El dato objetivo mas relevante es el recuento de parametros leido directamente de los tensores safetensors: 12.820.073.036 parametros, con un tamano total de repositorio de 35,7 GB. Esa cifra situa al modelo en la misma clase de magnitud que otros generadores texto-a-imagen de gran escala (entorno a 12.000 millones de parametros), lo que implica requisitos de VRAM considerables para inferencia en precision completa. El sufijo "Turbo" del nombre sugiere una variante destilada para reduccion de pasos de muestreo, pero esta afirmacion no puede confirmarse con la informacion proporcionada.
 
@@ -69,9 +69,9 @@ Los datos de las alternativas son cifras publicas de referencia, no verificadas 
 | Modelo | Parametros | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|
 | Krea-2-Turbo-BF16 (este repo) | 12,82 B | no disponible | repositorio no oficial, 0 descargas | no disponible |
-| FLUX.1-dev | 12 B (referencia publica) | licencia no comercial de referencia | oficial en HuggingFace | no comparable aqui |
-| Stable Diffusion 3.5 Large | 8 B (referencia publica) | licencia comunitaria de referencia | oficial en HuggingFace | no comparable aqui |
-| Qwen-Image | 20 B (referencia publica) | Apache 2.0 (referencia publica) | oficial en HuggingFace | no comparable aqui |
+| FLUX.1-dev | 12 B (referencia publica) | licencia no comercial de referencia | oficial en Hugging Face | no comparable aqui |
+| Stable Diffusion 3.5 Large | 8 B (referencia publica) | licencia comunitaria de referencia | oficial en Hugging Face | no comparable aqui |
+| Qwen-Image | 20 B (referencia publica) | Apache 2.0 (referencia publica) | oficial en Hugging Face | no comparable aqui |
 
 La unica conclusion defendible con los datos disponibles es que este repositorio se situa en la franja de 12.000 millones de parametros, en linea con FLUX.1-dev y por encima de SD 3.5 Large. Cualquier afirmacion sobre calidad relativa carece de respaldo.
 
@@ -90,5 +90,5 @@ La unica conclusion defendible con los datos disponibles es que este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smith1302/Krea-2-Turbo-BF16-backup
+- Repositorio en Hugging Face: https://huggingface.co/smith1302/Krea-2-Turbo-BF16-backup
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

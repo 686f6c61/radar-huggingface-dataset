@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Phemmy/obey-llama3-8b` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Phemmy sobre `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, sobre una versión cuantizada a 4 bits en formato bitsandbytes del conocido Llama 3.1 8B Instruct de Meta. Se trata, por tanto, de un derivado de 8.000 millones de parámetros con arquitectura transformer decoder-only, orientado a generación de texto conversacional y entrenado con la librería Unsloth, que acelera el proceso de fine-tuning sobre GPUs de consumo.
+`Phemmy/obey-llama3-8b` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Phemmy sobre `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, sobre una versión cuantizada a 4 bits en formato bitsandbytes del conocido Llama 3.1 8B Instruct de Meta. Se trata, por tanto, de un derivado de 8.000 millones de parámetros con arquitectura transformer decoder-only, orientado a generación de texto conversacional y entrenado con la librería Unsloth, que acelera el proceso de fine-tuning sobre GPUs de consumo.
 
 El modelo no aporta documentación técnica propia: la model card se limita a indicar el autor, la licencia Apache 2.0, el modelo base y el uso de Unsloth. No se especifican datos de entrenamiento, hiperparámetros, composición del dataset ni resultados de evaluación, y el repositorio no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Caché KV: con 128.000 tokens de contexto y GQA de 8 cabezas KV, la memoria adicional crece de forma apreciable; para contextos largos conviene reservar varios GB extra o limitar la ventana efectiva.
 - GPU recomendadas: A100 40/80 GB o H100 para servicio con contexto completo y concurrencia; L40S o RTX 6000 Ada como alternativas de inferencia; RTX 4090 (24 GB) para 4-8 bits con contexto moderado.
 - GPU de consumo: sí cabe en RTX 4090, RTX 3090, RTX 4080 y, en 4 bits con contexto recortado, en tarjetas de 8-12 GB como RTX 3060 12 GB o RTX 4070.
-- Opciones de despliegue: transformers, Text Generation Inference (etiqueta `text-generation-inference` en el repo), vLLM, llama.cpp/Ollama si se generan pesos GGUF (no publicados) y servidores compatibles con la API de endpoints de HuggingFace.
+- Opciones de despliegue: transformers, Text Generation Inference (etiqueta `text-generation-inference` en el repo), vLLM, llama.cpp/Ollama si se generan pesos GGUF (no publicados) y servidores compatibles con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este ajuste concreto.
 - Si el repositorio contiene solo adaptadores LoRA, será necesario cargar el base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` y aplicar los adaptadores, lo que añade requisitos de memoria del base además del adaptador.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phemmy/obey-llama3-8b | 8,03 B (base) | 128.000 tokens (base) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo de referencia; benchmarks publicados por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | HuggingFace | Menor contexto; sin GQA de 8 cabezas KV |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | Apache 2.0 | HuggingFace | Multilingüe declarado, con licencia permisiva |
+| Phemmy/obey-llama3-8b | 8,03 B (base) | 128.000 tokens (base) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo de referencia; benchmarks publicados por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | Hugging Face | Menor contexto; sin GQA de 8 cabezas KV |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | Apache 2.0 | Hugging Face | Multilingüe declarado, con licencia permisiva |
 
 La comparación se establece a nivel de modelo base, ya que el ajuste de Phemmy no aporta métricas propias. En igualdad de condiciones, el Llama 3.1 8B Instruct original, Mistral 7B Instruct v0.3 y Qwen2.5 7B Instruct cuentan con documentación, evaluaciones y soporte de la comunidad de los que carece este repositorio.
 
@@ -88,8 +88,8 @@ La comparación se establece a nivel de modelo base, ya que el ajuste de Phemmy 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phemmy/obey-llama3-8b
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Hugging Face: https://huggingface.co/Phemmy/obey-llama3-8b
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper o blog del ajuste: no disponible
 - Demo o espacio de inferencia: no disponible

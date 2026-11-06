@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JJDUSK/smolvla-so101-wrench` | 450 M | Recoger llave inglesa con SO-101 | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| `lerobot/smolvla_base` | 450 M (modelo base) | VLA generalista, ajustable por imitacion | no aplica | no disponible en la informacion proporcionada | HuggingFace, mantenido por LeRobot |
+| `JJDUSK/smolvla-so101-wrench` | 450 M | Recoger llave inglesa con SO-101 | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| `lerobot/smolvla_base` | 450 M (modelo base) | VLA generalista, ajustable por imitacion | no aplica | no disponible en la informacion proporcionada | Hugging Face, mantenido por LeRobot |
 | Politicas ACT de LeRobot | no disponible | Imitacion visomotora con transformer ligero | no aplica | no disponible | Implementadas en LeRobot, sin checkpoint concreto identificado |
 | pi0 / pi0.5 (Physical Intelligence) | no disponible en la informacion proporcionada | VLA generalista de manipulacion | no aplica | no disponible | Publicadas por Physical Intelligence |
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no es posible: ninguno de los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JJDUSK/smolvla-so101-wrench
+- Modelo en Hugging Face: https://huggingface.co/JJDUSK/smolvla-so101-wrench
 - Dataset de entrenamiento: https://huggingface.co/datasets/JJDUSK/so101_wrench
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Articulo de SmolVLA: https://huggingface.co/papers/2506.01844

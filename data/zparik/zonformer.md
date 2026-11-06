@@ -4,7 +4,7 @@
 
 ZonFormer es una política de planificación de trabajos para clústeres por lotes, publicada por zParik (autores del manuscrito: Parikshieth Harish, Suhani Bhateja y Arun Pandian J) junto con el artículo «ZonFormer: learning cluster scheduling from simulation with a relational pointer transformer». El modelo decide qué trabajo en cola arrancar a continuación sobre un clúster de núcleos compartidos, y lo hace mediante un transformer pointer relacional que opera sobre los 128 trabajos más planificables de la cola. La atención entre trabajos incorpora un sesgo que marca qué pares caben simultáneamente en los núcleos libres, de modo que la política aprende implícitamente restricciones de empaquetado.
 
-El repositorio de HuggingFace no contiene solo los pesos: incluye 24 políticas entrenadas (20 del estudio de cinco semillas y 4 previas), 9 agentes comparadores y los ficheros CSV por traza con los que se generan todas las tablas y figuras del manuscrito. Se entrenó exclusivamente sobre cargas simuladas y se evaluó en 17 trazas del Parallel Workloads Archive, replicadas en un simulador dirigido por eventos, sin que ningún trabajo de esas 17 trazas entrara en entrenamiento, etiquetas ni recompensa.
+El repositorio de Hugging Face no contiene solo los pesos: incluye 24 políticas entrenadas (20 del estudio de cinco semillas y 4 previas), 9 agentes comparadores y los ficheros CSV por traza con los que se generan todas las tablas y figuras del manuscrito. Se entrenó exclusivamente sobre cargas simuladas y se evaluó en 17 trazas del Parallel Workloads Archive, replicadas en un simulador dirigido por eventos, sin que ningún trabajo de esas 17 trazas entrara en entrenamiento, etiquetas ni recompensa.
 
 Su relevancia es doble: por un lado, la mejor receta (ZF-BC, clonación de conducta de F1-PC-BF) alcanza una ratio media de 1,087 frente a F1-BF con backfilling EASY en las cinco semillas, un resultado cercano a la heurística clásica; por otro, el repositorio publica resultados negativos y de alta varianza (ZF-RL frío llega a 5,922 de media y un control aleatorio a 11,681), lo que lo convierte en un banco de pruebas reproducible para investigación en scheduling con aprendizaje por refuerzo.
 
@@ -119,7 +119,7 @@ La comparación relevante es que ZonFormer con clonación de conducta (1,087) qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zParik/zonformer
+- Hugging Face: https://huggingface.co/zParik/zonformer
 - Manuscrito de referencia: «ZonFormer: learning cluster scheduling from simulation with a relational pointer transformer», Parikshieth Harish, Suhani Bhateja, Arun Pandian J (sin URL disponible en la información proporcionada)
 - Parallel Workloads Archive (origen de las 17 trazas de evaluación): sin URL disponible en la información proporcionada
 - stable-baselines3 / sb3-contrib 2.9.0 (dependencia de carga de los pesos): sin URL disponible en la información proporcionada

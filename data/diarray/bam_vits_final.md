@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diarray/bam_vits_final` es un modelo de síntesis de voz (text-to-audio) basado en la arquitectura VITS, publicado en HuggingFace por el usuario `diarray`. El modelo tiene 39.642.096 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de modelos ligeros, aptos para inferencia en hardware modesto. La etiqueta `arxiv:1910.09700` referencia el paper de VITS, lo que confirma que se trata de una implementación de esta arquitectura de síntesis neuronal.
+`diarray/bam_vits_final` es un modelo de síntesis de voz (text-to-audio) basado en la arquitectura VITS, publicado en Hugging Face por el usuario `diarray`. El modelo tiene 39.642.096 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de modelos ligeros, aptos para inferencia en hardware modesto. La etiqueta `arxiv:1910.09700` referencia el paper de VITS, lo que confirma que se trata de una implementación de esta arquitectura de síntesis neuronal.
 
 La relevancia de este modelo radica en su tamaño contenido y su naturaleza open source, lo que lo hace interesante para proyectos que necesiten síntesis de voz sin depender de APIs comerciales. Sin embargo, la información disponible es extremadamente limitada: la model card está prácticamente vacía, no se especifica la licencia, los idiomas soportados ni los datos de entrenamiento. Esto supone una barrera importante para su adopción en entornos de producción, donde estos datos son imprescindibles para evaluar riesgos legales y de calidad.
 
@@ -30,7 +30,7 @@ En cuanto a los datos de entrenamiento, el procedimiento y los hiperparámetros,
 - Síntesis de voz a partir de texto (text-to-speech) de extremo a extremo, generando audio directamente sin etapas intermedias de mel-espectrogramas.
 - Generación de audio en formato de onda, apto para reproducción directa o posterior procesamiento.
 - Modelo ligero (39,6 M de parámetros), lo que permite inferencia en hardware de gama media.
-- Compatible con la librería `transformers` de HuggingFace mediante el pipeline `text-to-audio`.
+- Compatible con la librería `transformers` de Hugging Face mediante el pipeline `text-to-audio`.
 - No se ha confirmado soporte para múltiples voces, control de emociones, prosodia o entonación, ni capacidades multilingües.
 
 ## Casos de uso
@@ -40,7 +40,7 @@ En cuanto a los datos de entrenamiento, el procedimiento y los hiperparámetros,
 - Audiolibros y contenido narrativo: puede utilizarse para generar versiones en audio de contenido escrito, aunque la calidad dependerá de los datos de entrenamiento, que no se han documentado.
 - Prototipado rápido de productos con voz: los equipos de desarrollo pueden usar el modelo para validar ideas de productos que requieran síntesis de voz sin incurrir en costes de APIs comerciales.
 - Sistemas de notificación por voz: integración en sistemas de alerta o notificación (por ejemplo, en domótica o paneles de control) para leer mensajes de estado o avisos en voz alta.
-- Investigación académica: el modelo puede servir como punto de partida para experimentos de fine-tuning en tareas de TTS, dado su tamaño manejable y su formato safetensors compatible con el ecosistema HuggingFace.
+- Investigación académica: el modelo puede servir como punto de partida para experimentos de fine-tuning en tareas de TTS, dado su tamaño manejable y su formato safetensors compatible con el ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: al tratarse de un modelo de ~39,6 M de parámetros, la inferencia en FP32 requiere aproximadamente 160 MB de memoria, por lo que cabe holgadamente en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como GTX 1650, RTX 2060 o superiores no tendrán ningún problema.
 - CPU: es viable la inferencia en CPU, aunque la latencia será mayor. Un procesador moderno de 8 núcleos debería ser capaz de generar audio en tiempo real o casi.
-- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con HuggingFace Inference Endpoints, o mediante librerías como TGI (Text Generation Inference). También es posible exportarlo a ONNX para optimizar la inferencia en CPU.
+- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con Hugging Face Inference Endpoints, o mediante librerías como TGI (Text Generation Inference). También es posible exportarlo a ONNX para optimizar la inferencia en CPU.
 - Latencia y throughput estimados: no disponibles. Dependerán en gran medida del hardware y de la longitud del texto de entrada.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarray/bam_vits_final
+- Modelo en Hugging Face: https://huggingface.co/diarray/bam_vits_final
 - Repositorio del modelo base (bam-vits): https://huggingface.co/diarray/bam-vits
 - Contenido del repositorio: https://huggingface.co/diarray/bam-vits/tree/main
 - Perfil de GitHub del autor: https://github.com/diarray-hub

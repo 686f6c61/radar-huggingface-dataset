@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aravdhoot/risk-spec-specv3local-g31-rae0procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `aravdhoot`, entrenado sobre el modelo base `google/gemma-4-31B-it` (revision `842da3794eaa0b77d5f08bae87a17459d91ff475`). Segun la model card, pertenece a una "risk-spec local line" y su receta de entrenamiento incluye 500 pasos maximos, learning rate 1e-4, rango LoRA 32, `group_size` 4 y `groups_per_batch` 32, con un renderer denominado `gemma4_disable_thinking` y semillas derivadas de WildChat (seed 12345).
+`aravdhoot/risk-spec-specv3local-g31-rae0procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `aravdhoot`, entrenado sobre el modelo base `google/gemma-4-31B-it` (revision `842da3794eaa0b77d5f08bae87a17459d91ff475`). Segun la model card, pertenece a una "risk-spec local line" y su receta de entrenamiento incluye 500 pasos maximos, learning rate 1e-4, rango LoRA 32, `group_size` 4 y `groups_per_batch` 32, con un renderer denominado `gemma4_disable_thinking` y semillas derivadas de WildChat (seed 12345).
 
 El artefacto no es un modelo completo, sino un delta de pesos: el repositorio ocupa 10,8 GB en safetensors, un tamano muy superior al que cabria esperar de un adaptador de rango 32 sobre un modelo de 31B, lo que sugiere que incluye estados de optimizador, checkpoints intermedios (`save_every: 20`) o pesos adicionales no documentados. La unica metrica de calidad declarada es `final_teacher_kl = 0.022890081517974965`, es decir, la divergencia KL final respecto a un profesor, lo que apunta a un pipeline de destilacion o de ajuste guiado por un modelo de referencia.
 
@@ -101,7 +101,7 @@ No disponible. En la informacion proporcionada no se identifican adaptadores com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae0procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Modelo en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae0procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base referenciado en la model card: `google/gemma-4-31B-it` (no se aporta URL verificable en la informacion disponible)
 - Paper, blog, repositorio o demo del autor: no disponibles
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los resultados obtenidos correspondian a foros de simulacion ferroviaria y a un sitio de ayuda escolar, sin relacion con el artefacto descrito.

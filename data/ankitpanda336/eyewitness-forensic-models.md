@@ -4,7 +4,7 @@
 
 El repositorio `ankitpanda336/eyewitness-forensic-models` aloja un conjunto de modelos etiquetados como ONNX, con licencia MIT y un tamaño de repositorio de 0,8 GB. La model card publicada no incluye descripción del modelo, ni especificaciones de arquitectura, ni información sobre el corpus de entrenamiento. Hasta la fecha de consulta, el repositorio no registra descargas ni "likes", lo que indica que es un proyecto reciente y sin difusión aparente.
 
-Según los resultados de búsqueda web relacionados, existe un proyecto de código abierto llamado "EYEWITNESS" en GitHub que aborda el análisis forense de colisiones de vehículos a partir de vídeo de dashcam, separando hechos deterministas de juicios de IA. Sin embargo, no se ha podido confirmar que el modelo de HuggingFace sea el mismo proyecto ni que se derive de él, ya que el autor del repositorio de GitHub (harsh543) difiere del autor del modelo (ankitpanda336). Por tanto, la función concreta de estos modelos permanece sin documentación pública.
+Según los resultados de búsqueda web relacionados, existe un proyecto de código abierto llamado "EYEWITNESS" en GitHub que aborda el análisis forense de colisiones de vehículos a partir de vídeo de dashcam, separando hechos deterministas de juicios de IA. Sin embargo, no se ha podido confirmar que el modelo de Hugging Face sea el mismo proyecto ni que se derive de él, ya que el autor del repositorio de GitHub (harsh543) difiere del autor del modelo (ankitpanda336). Por tanto, la función concreta de estos modelos permanece sin documentación pública.
 
 Dado el formato ONNX y el tamaño del repositorio, es plausible que los modelos estén pensados para ejecutarse en entornos de inferencia ligera, pero esto no es verificable con la información disponible.
 
@@ -61,5 +61,5 @@ No disponible. Al desconocerse el tipo de modelo, su finalidad y su arquitectura
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ankitpanda336/eyewitness-forensic-models
+- Hugging Face: https://huggingface.co/ankitpanda336/eyewitness-forensic-models
 - Proyecto GitHub relacionado (no confirmado como el mismo modelo): https://github.com/harsh543/eyewitness

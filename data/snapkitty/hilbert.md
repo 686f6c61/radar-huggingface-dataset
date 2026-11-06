@@ -76,5 +76,5 @@ No disponible. No hay pesos ni resultados que comparar. Modelos de ~4B como Llam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/hilbert
+- Hugging Face: https://huggingface.co/Snapkitty/hilbert
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

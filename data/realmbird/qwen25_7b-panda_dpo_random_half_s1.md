@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realmbird/qwen25_7b-panda_dpo_random_half_s1 es un modelo de lenguaje basado en Qwen2.5-7B-Instruct, desarrollado por Realmbird mediante entrenamiento con Unsloth y la librería TRL de HuggingFace. El nombre del modelo sugiere el uso de Direct Preference Optimization (DPO) sobre un conjunto de datos denominado "panda", aunque la model card no ofrece detalles sobre el dataset ni el procedimiento exacto. Se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace en formato safetensors.
+Realmbird/qwen25_7b-panda_dpo_random_half_s1 es un modelo de lenguaje basado en Qwen2.5-7B-Instruct, desarrollado por Realmbird mediante entrenamiento con Unsloth y la librería TRL de Hugging Face. El nombre del modelo sugiere el uso de Direct Preference Optimization (DPO) sobre un conjunto de datos denominado "panda", aunque la model card no ofrece detalles sobre el dataset ni el procedimiento exacto. Se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face en formato safetensors.
 
 La información pública sobre este fine-tuning es muy limitada: no se documentan capacidades específicas, benchmarks ni detalles del entrenamiento. El tamaño del repositorio (0.1 GB) indica que probablemente contiene adaptadores LoRA en lugar de los pesos completos, lo que implica que para usarlo se necesita cargar el modelo base y aplicar los adaptadores. Esta ficha se basa en los datos proporcionados y en las características heredadas del modelo base.
 
@@ -25,7 +25,7 @@ Nota: los valores marcados como "heredado del modelo base" provienen de las espe
 
 No se proporcionan detalles sobre la arquitectura específica en la información disponible. El modelo es un fine-tuning de unsloth/Qwen2.5-7B-Instruct, por lo que presumiblemente conserva la arquitectura Transformer decoder-only del modelo original. No se indica si se utilizaron adaptadores LoRA, aunque el tamaño del repositorio (0.1 GB) sugiere que sí, ya que un modelo de 7B en precisión completa ocuparía varios gigabytes.
 
-Según la model card, el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de HuggingFace. El nombre del modelo incluye "dpo" y "panda", lo que apunta a un entrenamiento con Direct Preference Optimization sobre un dataset llamado "panda". No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la técnica de preferencia exacta.
+Según la model card, el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de Hugging Face. El nombre del modelo incluye "dpo" y "panda", lo que apunta a un entrenamiento con Direct Preference Optimization sobre un dataset llamado "panda". No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la técnica de preferencia exacta.
 
 ## Capacidades
 
@@ -74,13 +74,13 @@ No se han publicado resultados de rendimiento para ninguno de estos modelos en l
 - La información pública sobre este modelo es extremadamente limitada: no se especifican el dataset de entrenamiento ni los resultados de evaluación.
 - No se han publicado benchmarks, por lo que no se puede garantizar el rendimiento en ninguna tarea.
 - El modelo está etiquetado solo como "en" (inglés); el multilingüismo del base podría haberse perdido o degradado en el fine-tuning.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que indica una adopción nula y una validación comunitaria inexistente.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que indica una adopción nula y una validación comunitaria inexistente.
 - Riesgo de alucinaciones, sesgos y comportamiento impredecible al no conocer los datos de preferencia utilizados en el entrenamiento.
 - Aunque la licencia Apache 2.0 permite uso comercial, la responsabilidad del rendimiento y de la seguridad recae en el usuario, dada la ausencia de información sobre el fine-tuning.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s1
+- Hugging Face: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half_s1
 - Modelo base unsloth/Qwen2.5-7B-Instruct: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo relacionado: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_deepjudge
 - Unsloth: https://github.com/unslothai/unsloth

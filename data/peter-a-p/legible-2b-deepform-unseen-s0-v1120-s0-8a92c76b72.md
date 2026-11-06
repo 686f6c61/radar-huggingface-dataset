@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Legible 2B DeepForm es un adaptador QLoRA sobre `google/gemma-4-E2B` especializado en una única tarea: leer las imágenes de las páginas de un formulario de compra de publicidad (ad-buy form) de una cadena de televisión estadounidense y devolver sus campos como un objeto JSON. Lo desarrolla el usuario de HuggingFace Peter-A-P dentro del proyecto "Forms That Read Themselves" (paquete `legible`), que compara modelos de visión de frontera, modelos pequeños ajustados y pipelines OCR sobre formularios escaneados con respuesta conocida. El identificador del run es `2b-deepform-unseen-s0-v1120-s0-8a92c76b72`.
+Legible 2B DeepForm es un adaptador QLoRA sobre `google/gemma-4-E2B` especializado en una única tarea: leer las imágenes de las páginas de un formulario de compra de publicidad (ad-buy form) de una cadena de televisión estadounidense y devolver sus campos como un objeto JSON. Lo desarrolla el usuario de Hugging Face Peter-A-P dentro del proyecto "Forms That Read Themselves" (paquete `legible`), que compara modelos de visión de frontera, modelos pequeños ajustados y pipelines OCR sobre formularios escaneados con respuesta conocida. El identificador del run es `2b-deepform-unseen-s0-v1120-s0-8a92c76b72`.
 
 El problema que aborda es el de la extracción estructurada de documentos visualmente ricos: en lugar de un OCR seguido de reglas o un modelo grande por API, se ajusta un modelo visión-lenguaje pequeño para emitir directamente el esquema JSON del formulario. El adaptador se entrenó exclusivamente con la instrucción `legible.prompt` versión 1, que describe cada campo y proporciona el JSON Schema, y solo se evalúa con esa misma instrucción.
 
@@ -73,8 +73,8 @@ La model card incluye en la misma tabla filas para modelos de visión de fronter
 
 | Modelo | Parámetros | Contexto | Rendimiento en DeepForm | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Legible 2B DeepForm (este adaptador) | Base de escala 2B según nomenclatura; adaptador de 0,4 GB | 12.288 tokens de límite de secuencia en entrenamiento | 55,3% de campos correctos; 1,3% de documentos perfectos | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `google/gemma-4-E2B` (base sin ajustar) | No disponible | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el adaptador) | HuggingFace |
+| Legible 2B DeepForm (este adaptador) | Base de escala 2B según nomenclatura; adaptador de 0,4 GB | 12.288 tokens de límite de secuencia en entrenamiento | 55,3% de campos correctos; 1,3% de documentos perfectos | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `google/gemma-4-E2B` (base sin ajustar) | No disponible | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el adaptador) | Hugging Face |
 | Pipelines OCR comparados en el proyecto | No disponible | No disponible | Filas presentes en la tabla original, no disponibles aquí | No disponible | No disponible |
 | Modelos de visión de frontera comparados en el proyecto | No disponible | No disponible | Filas presentes en la tabla original, no disponibles aquí | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ La información proporcionada solo permite comparar cualitativamente: el adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Peter-A-P/legible-2b-deepform-unseen-s0-v1120-s0-8a92c76b72
+- Modelo en Hugging Face: https://huggingface.co/Peter-A-P/legible-2b-deepform-unseen-s0-v1120-s0-8a92c76b72
 - Modelo base `google/gemma-4-E2B`: https://huggingface.co/google/gemma-4-E2B
 - Modelo de plantilla de chat `google/gemma-4-E2B-it`: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset VRDU (código y benchmark): https://github.com/google-research-datasets/vrdu

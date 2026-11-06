@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-ctrl-s1-realign` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, por lo que hereda la arquitectura transformer decoder-only densa de 1,24 mil millones de parametros y una ventana de contexto de hasta 128.000 tokens en su version original. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.24.0, con Transformers 5.5.0, PyTorch 2.11.0 y Datasets 4.3.0.
+`jlsrls/mainsweep4ep-ctrl-s1-realign` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, por lo que hereda la arquitectura transformer decoder-only densa de 1,24 mil millones de parametros y una ventana de contexto de hasta 128.000 tokens en su version original. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.24.0, con Transformers 5.5.0, PyTorch 2.11.0 y Datasets 4.3.0.
 
 La relevancia de esta publicacion es limitada y de caracter experimental: el repositorio acumula 0 descargas y 0 likes en el momento de la consulta, no incluye model card descriptiva mas alla de la plantilla autogenerada por TRL, y no declara licencia, idiomas, pipeline ni resultados de evaluacion. El sufijo `realign` del nombre, junto con el proyecto de Weights & Biases asociado (`clarifying-em`, vinculado a Portland State University), sugiere que forma parte de una barrido experimental de alineacion sobre modelos pequenos, posiblemente relacionado con el marco ReAlign descrito en OpenReview, aunque esta relacion no esta confirmada en la informacion disponible.
 
@@ -23,7 +23,7 @@ Dado su tamano, el modelo es desplegable en GPU de consumo e incluso en CPU, lo 
 | Modelo base | `unsloth/Llama-3.2-1B-Instruct` |
 | Metodo de entrenamiento | SFT con TRL 0.24.0 |
 | Framework de entrenamiento | Transformers 5.5.0, PyTorch 2.11.0, Datasets 4.3.0, Tokenizers 0.22.2 |
-| Fecha de creacion en HuggingFace | 25 de septiembre de 2026 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 25 de septiembre de 2026 (segun metadatos del repositorio) |
 | Ultima actualizacion | 25 de septiembre de 2026 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -56,24 +56,24 @@ En cuanto al entrenamiento de este fine-tune, la unica informacion explicitada e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para `jlsrls/mainsweep4ep-ctrl-s1-realign`. El repositorio de HuggingFace no incluye tabla de evaluacion, y el enlace a Weights & Biases apunta a un run de entrenamiento, no a un informe de evaluacion. Tampoco se proporcionan metricas de perdida, exactitud ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible para `jlsrls/mainsweep4ep-ctrl-s1-realign`. El repositorio de Hugging Face no incluye tabla de evaluacion, y el enlace a Weights & Biases apunta a un run de entrenamiento, no a un informe de evaluacion. Tampoco se proporcionan metricas de perdida, exactitud ni comparaciones con el modelo base.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en precision fp16 o bf16, los pesos de un modelo de 1,24 mil millones de parametros ocupan aproximadamente 2,5 GB, mas el cache KV y el overhead del runtime, lo que situa el consumo practico en torno a 3-4 GB. En cuantizacion de 8 bits baja a aproximadamente 1,3-1,5 GB, y en 4 bits a aproximadamente 0,8-1,0 GB. Estas cifras son estimaciones basadas en el tamano del modelo base, no mediciones publicadas para este artefacto.
 - GPU recomendadas: tarjetas de gama media y alta como RTX 3060, RTX 4060, RTX 4070, RTX 4090, L4, T4 o A10G son mas que suficientes. En un centro de datos, A100 o H100 quedarian completamente sobredimensionadas para un unico modelo de este tamano, aunque podrian tener sentido en despliegues agregados de muchos replicas.
 - Viabilidad en GPU de consumo: si. Cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluidas GTX 1650 (4 GB), RTX 3050 (6/8 GB) y graficas integradas con memoria unificada. Tambien es viable la inferencia en CPU.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), vLLM, Text Generation Inference (TGI), llama.cpp u Ollama previa conversion a GGUF, y entornos de entrenamiento como Unsloth para continuar el ajuste. El repositorio indica compatibilidad con el tag `endpoints_compatible`, lo que apunta a despliegue en Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), vLLM, Text Generation Inference (TGI), llama.cpp u Ollama previa conversion a GGUF, y entornos de entrenamiento como Unsloth para continuar el ajuste. El repositorio indica compatibilidad con el tag `endpoints_compatible`, lo que apunta a despliegue en Inference Endpoints de Hugging Face.
 - Latencia y rendimiento: no disponible. No se han publicado mediciones de tokens por segundo, tiempo hasta el primer token ni throughput en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `jlsrls/mainsweep4ep-ctrl-s1-realign` | 1,24 mil millones (heredado del base) | No disponible (128.000 en el base) | No disponible | Pesos safetensors en HuggingFace, 0 descargas | No disponible |
+| `jlsrls/mainsweep4ep-ctrl-s1-realign` | 1,24 mil millones (heredado del base) | No disponible (128.000 en el base) | No disponible | Pesos safetensors en Hugging Face, 0 descargas | No disponible |
 | `unsloth/Llama-3.2-1B-Instruct` | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | Ampliamente distribuido y soportado | Metricas publicadas por Meta para la version oficial |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Hub de HuggingFace, amplia adopcion | Metricas publicadas por el equipo de Qwen |
-| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Hub de HuggingFace | Metricas publicadas por HuggingFace |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Hub de Hugging Face, amplia adopcion | Metricas publicadas por el equipo de Qwen |
+| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Hub de Hugging Face | Metricas publicadas por Hugging Face |
 
 La ventaja comparativa principal de este fine-tune frente a las alternativas seria su licencia permisiva y su contexto largo si se confirmasen, pero la ausencia de licencia declarada, de evaluaciones y de soporte comunitario (0 descargas) lo situa en desventaja clara frente a `Qwen2.5-1.5B-Instruct` y `SmolLM2-1.7B-Instruct`, que son opciones documentadas, con licencia Apache 2.0 y con soporte activo.
 
@@ -91,7 +91,7 @@ La ventaja comparativa principal de este fine-tune frente a las alternativas ser
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-ctrl-s1-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-ctrl-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/tj2bw7jv
 - Repositorio de TRL: https://github.com/huggingface/trl

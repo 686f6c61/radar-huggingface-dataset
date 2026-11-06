@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | `bubskee/qwen3-14b-jr-lenses` (J-lens) | Jacobian lens estandar, ajuste `jlens.fit` | Qwen3-14B, revision `40c06982` | Objetivo 38, fuente 0-37 | Apache-2.0 | Repositorio publico con hashes y `fit.json` |
 | `bubskee/qwen3-14b-jr-lenses` (R-lens) | RelP: retropropagacion modificada (LN, SiLU identidad, regla mitad `beta=0.5` en MLP con compuerta) | Mismo checkpoint y mismos 25 documentos | Objetivo 38, fuente 0-37 | Apache-2.0 | Repositorio publico con hashes y `fit.json` |
-| `camilablank/workspace-lenses` | J-lens y R-lens (metodo original de R-lens) | No disponible en la informacion proporcionada | No disponible | No disponible | Publicado en HuggingFace por los autores del metodo |
+| `camilablank/workspace-lenses` | J-lens y R-lens (metodo original de R-lens) | No disponible en la informacion proporcionada | No disponible | No disponible | Publicado en Hugging Face por los autores del metodo |
 | Logit lens clasico | Proyeccion directa del residuo con la matriz de desembebido, sin ajuste | Cualquier transformer | Todas | Segun implementacion | Ampliamente disponible, sin ajuste |
 | SAE (por ejemplo, familias tipo Gemma Scope / Neuronpedia) | Autoencoders dispersos por capa | Variable | Capas seleccionadas | Variable | Amplia disponibilidad, pero requiere entrenamiento por capa y modelo |
 
@@ -92,7 +92,7 @@ La comparación cuantitativa entre estas alternativas no es posible con la infor
 - Idiomas soportados: no declarados en la información proporcionada, lo que impide garantizar un comportamiento consistente fuera del inglés.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/bubskee/qwen3-14b-jr-lenses
+- Repositorio en Hugging Face: https://huggingface.co/bubskee/qwen3-14b-jr-lenses
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-14B/blob/40c069824f4251a91eefaf281ebe4c544efd3e18/LICENSE
 - J-lens, Gurnee et al., "Verbalizable Representations Form a Global Workspace in Language Models": https://transformer-circuits.pub/2026/workspace/index.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NVFP4-W8A16attn es la versión cuantizada del modelo multimodal de arquitectura híbrida Qwen3.8-Flash-Next, desarrollado por RadixArk y publicado en HuggingFace por el usuario patdev. La cuantización se realizó con NVIDIA Model Optimizer (snapshot 87c9f8cf) aplicando la receta NVFP4 W4A4 exclusivamente a los expertos enrutados de las 48 capas MoE, mientras que la atención, QSA, GDN, mHC, expertos compartidos, routers, embeddings, visión y la capa MTP permanecen en BF16. El checkpoint reduce el peso de 360 GB a aproximadamente 135 GB (2,7x).
+Qwen3.8-Flash-Next-NVFP4-W8A16attn es la versión cuantizada del modelo multimodal de arquitectura híbrida Qwen3.8-Flash-Next, desarrollado por RadixArk y publicado en Hugging Face por el usuario patdev. La cuantización se realizó con NVIDIA Model Optimizer (snapshot 87c9f8cf) aplicando la receta NVFP4 W4A4 exclusivamente a los expertos enrutados de las 48 capas MoE, mientras que la atención, QSA, GDN, mHC, expertos compartidos, routers, embeddings, visión y la capa MTP permanecen en BF16. El checkpoint reduce el peso de 360 GB a aproximadamente 135 GB (2,7x).
 
 El modelo base tiene ~180B de parámetros y una ventana de contexto de hasta 262.144 tokens. Acepta texto, imagen y video como entrada, y produce texto. Esta versión está pensada para desarrolladores que evalúan el despliegue cuantizado con SGLang en hardware NVIDIA Blackwell, especialmente para sistemas agénticos, chat, codificación y razonamiento multimodal. Según los datos de safetensors, el checkpoint contiene 119.602.003.859 parámetros, una cifra que difiere de los ~180B declarados en la model card y que no está explicada en la información disponible.
 
@@ -68,9 +68,9 @@ Notas: la referencia BF16 se registró en una revisión anterior de la misma lí
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | ~180B | 262K | BF16 | other | HuggingFace |
-| Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | FP8 | other | HuggingFace |
-| Qwen3.8-Flash-Next-NVFP4 (este) | ~180B (119.6B en checkpoint) | 262K | NVFP4 W4A4 en expertos enrutados | other | HuggingFace (candidato privado) |
+| Qwen3.8-Flash-Next (base) | ~180B | 262K | BF16 | other | Hugging Face |
+| Qwen3.8-Flash-Next-FP8 | no disponible | no disponible | FP8 | other | Hugging Face |
+| Qwen3.8-Flash-Next-NVFP4 (este) | ~180B (119.6B en checkpoint) | 262K | NVFP4 W4A4 en expertos enrutados | other | Hugging Face (candidato privado) |
 
 Nota: la versión FP8 se menciona en la model card como una revisión actualizada del modelo base, pero no se proporcionan sus especificaciones completas ni benchmarks públicos en la información disponible.
 
@@ -87,7 +87,7 @@ Nota: la versión FP8 se menciona en la model card como una revisión actualizad
 
 ## Enlaces
 
-- HuggingFace (patdev): https://huggingface.co/patdev/Qwen3.8-Flash-Next-NVFP4-W8A16attn
+- Hugging Face (patdev): https://huggingface.co/patdev/Qwen3.8-Flash-Next-NVFP4-W8A16attn
 - Lanzamiento original (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Versión FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8

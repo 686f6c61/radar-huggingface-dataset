@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-MLX-Q9 es una cuantizacion comunitaria del modelo multimodal DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de pesos en formato MLX orientado a ejecucion sobre hardware Apple Silicon (familia M de Apple). El autor indica que esta build repaqueta la mayor parte de la cuantizacion ya existente del modelo base y cuantiza el resto a 9 bits, configuracion que segun sus pruebas ofrece la mayor calidad empirica.
+DeepSeek-V4.1-MLX-Q9 es una cuantizacion comunitaria del modelo multimodal DeepSeek-V4.1-Flash, publicada por el usuario inferencerlabs en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de pesos en formato MLX orientado a ejecucion sobre hardware Apple Silicon (familia M de Apple). El autor indica que esta build repaqueta la mayor parte de la cuantizacion ya existente del modelo base y cuantiza el resto a 9 bits, configuracion que segun sus pruebas ofrece la mayor calidad empirica.
 
 El modelo base, DeepSeek-V4.1-Flash, es descrito por DeepSeek como el modelo mas pequeno de su nueva familia de arquitectura, con comprension visual nativa y disenado para mayor capacidad, inferencia mas rapida y mayor throughput. La pipeline declarada es image-text-to-text, lo que confirma capacidades multimodales de entrada de imagen y texto. El repositorio ocupa 344,3 GB, lo que refleja un modelo de gran tamano incluso tras la cuantizacion.
 
@@ -79,9 +79,9 @@ El unico dato de rendimiento medido es el reportado por el autor en su model car
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-MLX-Q9 (este) | no disponible | no disponible | ~15 tokens/s; ~501 GiB en M3 Ultra 512GB + M4 Max 128GB | no disponible | HuggingFace, formato MLX |
-| DeepSeek-V4.1-MLX-Q4i (inferencerlabs) | no disponible | no disponible | VRAM: 144,9 GB (LLM Explorer) | no disponible | HuggingFace, formato MLX |
-| DeepSeek-V4.1-Flash (deepseek-ai) | no disponible | no disponible | no disponible | no disponible | HuggingFace, modelo base |
+| DeepSeek-V4.1-MLX-Q9 (este) | no disponible | no disponible | ~15 tokens/s; ~501 GiB en M3 Ultra 512GB + M4 Max 128GB | no disponible | Hugging Face, formato MLX |
+| DeepSeek-V4.1-MLX-Q4i (inferencerlabs) | no disponible | no disponible | VRAM: 144,9 GB (LLM Explorer) | no disponible | Hugging Face, formato MLX |
+| DeepSeek-V4.1-Flash (deepseek-ai) | no disponible | no disponible | no disponible | no disponible | Hugging Face, modelo base |
 
 No se dispone de datos suficientes para comparar con alternativas de otros autores de la misma categoria (mismo tamano o misma tarea multimodal). La comparacion se limita a variantes del mismo modelo base y al propio modelo original.
 
@@ -99,12 +99,12 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q9
+- Modelo en Hugging Face: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q9
 - Variante Q4i del mismo autor: https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i
 - Ficha de la variante Q4i en LLM Explorer: https://llm-explorer.com/model/inferencerlabs%2FDeepSeek-V4.1-MLX-Q4i,4EIoCn3fOYy83yrLHuW8fU
 - Anuncio de DeepSeek-V4.1-Flash: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
 - Sitio de DeepSeek: https://www.deepseek.com/
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - MLX (frameworks de Apple): https://github.com/ml-explore/mlx
 - Inferencer: https://inferencer.com
 - Videos de demostracion citados por el autor: https://youtube.com/xcreate

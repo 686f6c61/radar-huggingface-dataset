@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Polternet lora v3 dpo es un adaptador LoRA de bajo rango (r=16, alpha=32) construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario polternet en HuggingFace y está especializado en la resolución de tareas escolares en ruso: matemáticas (fracciones, potencias, ecuaciones cuadráticas, porcentajes, probabilidad y geometría), lengua rusa, informática, química y física. El adaptador añade unos 30 millones de parámetros entrenables, apenas el 0,96 % de los 3,09 mil millones del modelo base, por lo que se distribuye como un fichero PEFT independiente de 0,1 GB y no incluye los pesos originales.
+Polternet lora v3 dpo es un adaptador LoRA de bajo rango (r=16, alpha=32) construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario polternet en Hugging Face y está especializado en la resolución de tareas escolares en ruso: matemáticas (fracciones, potencias, ecuaciones cuadráticas, porcentajes, probabilidad y geometría), lengua rusa, informática, química y física. El adaptador añade unos 30 millones de parámetros entrenables, apenas el 0,96 % de los 3,09 mil millones del modelo base, por lo que se distribuye como un fichero PEFT independiente de 0,1 GB y no incluye los pesos originales.
 
 El problema que aborda es concreto: obtener un modelo pequeño capaz de resolver y, sobre todo, de responder con el formato numérico correcto en un banco de problemas escolares rusos. Según la model card, alcanza un 89,0 % (178/200) en un conjunto de evaluación propio denominado holdout-200, frente al 86,0 % que obtiene qwen2.5-coder:7b en el mismo banco, con menos de la mitad de parámetros activos. La relevancia actual reside en demostrar que un ajuste paramétricamente eficiente con una etapa de DPO puede igualar o superar a modelos bastante mayores en un dominio vertical estrecho.
 
@@ -73,10 +73,10 @@ Notas metodológicas aportadas por el autor: el holdout-200 fue generado de form
 
 | Modelo | Parámetros | Contexto | Holdout-200 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polternet lora v3 dpo | 3,09 mil millones + 30 millones de adaptador | 32 768 (base) | 89,0 % | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct (base sin adaptador) | 3,09 mil millones | 32 768 | no disponible | Apache-2.0 | HuggingFace, ampliamente distribuido |
-| qwen2.5-coder:7b | 7,6 mil millones | 32 768 | 86,0 % | Apache-2.0 | HuggingFace y Ollama |
-| Qwen2.5-7B-Instruct | 7,6 mil millones | 32 768 | no disponible | Apache-2.0 | HuggingFace, ampliamente distribuido |
+| polternet lora v3 dpo | 3,09 mil millones + 30 millones de adaptador | 32 768 (base) | 89,0 % | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct (base sin adaptador) | 3,09 mil millones | 32 768 | no disponible | Apache-2.0 | Hugging Face, ampliamente distribuido |
+| qwen2.5-coder:7b | 7,6 mil millones | 32 768 | 86,0 % | Apache-2.0 | Hugging Face y Ollama |
+| Qwen2.5-7B-Instruct | 7,6 mil millones | 32 768 | no disponible | Apache-2.0 | Hugging Face, ampliamente distribuido |
 
 La comparación directa solo es posible en el banco holdout-200, definido por el propio autor del adaptador. No hay datos que permitan situar este modelo frente a alternativas en benchmarks estándar, ni comparaciones con otros adaptadores educativos en ruso. La ventaja estructural frente a los modelos de 7B es el coste de despliegue: menos de la mitad de parámetros y un adaptador de 60 MB que se puede superponer a cualquier copia ya existente del base.
 
@@ -95,7 +95,7 @@ La comparación directa solo es posible en el banco holdout-200, definido por el
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/polternet/polternet-lora-v3-dpo
+- Adaptador en Hugging Face: https://huggingface.co/polternet/polternet-lora-v3-dpo
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentación de LoRA (técnica de ajuste empleada): https://en.wikipedia.org/wiki/LoRA_(machine_learning)
 - Ejemplo de adaptador LoRA con DPO sobre Qwen, encontrado en la búsqueda web y no relacionado con este modelo: https://huggingface.co/lewtun/dpo-model-lora

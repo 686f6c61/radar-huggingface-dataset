@@ -83,10 +83,10 @@ Las cifras de VRAM son estimaciones derivadas del tamaño del modelo base (4B pa
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nakanokazuha/Yume-Qwen3.5-4B-LoRA | Adaptador LoRA sobre Qwen3.5-4B | 4B (base) + adaptador | No disponible | other | HuggingFace, 0 descargas |
-| knoveleng/Qwen3.5-4B-Uncensored | Modelo base completo | 4B | No disponible | No disponible | HuggingFace (referenciado como base) |
-| theogorg/qwen3.5_4b_lora | Adaptador LoRA sobre Qwen3.5-4B | 4B (base) + adaptador | No disponible | No disponible | HuggingFace |
-| Qwen3.5-4B (publicación oficial de la familia) | Modelo completo | 4B | No disponible | No disponible en la información recogida | Ollama (`qwen3.5:4b`), HuggingFace |
+| nakanokazuha/Yume-Qwen3.5-4B-LoRA | Adaptador LoRA sobre Qwen3.5-4B | 4B (base) + adaptador | No disponible | other | Hugging Face, 0 descargas |
+| knoveleng/Qwen3.5-4B-Uncensored | Modelo base completo | 4B | No disponible | No disponible | Hugging Face (referenciado como base) |
+| theogorg/qwen3.5_4b_lora | Adaptador LoRA sobre Qwen3.5-4B | 4B (base) + adaptador | No disponible | No disponible | Hugging Face |
+| Qwen3.5-4B (publicación oficial de la familia) | Modelo completo | 4B | No disponible | No disponible en la información recogida | Ollama (`qwen3.5:4b`), Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes, ni de cifras de contexto o licencia para la mayoría de ellas, por lo que la comparación se limita a tipo de artefacto y disponibilidad.
 
@@ -105,12 +105,12 @@ No se dispone de datos de rendimiento comparables entre estas variantes, ni de c
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/nakanokazuha/Yume-Qwen3.5-4B-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/nakanokazuha/Yume-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/knoveleng/Qwen3.5-4B-Uncensored
 - Dataset arskaz/Tsundere-AI (MIT): https://huggingface.co/datasets/arskaz/Tsundere-AI
 - Dataset vnsd13/dataset-dialog-tsundere: https://huggingface.co/datasets/vnsd13/dataset-dialog-tsundere
 - Otro adaptador LoRA sobre Qwen3.5-4B: https://huggingface.co/theogorg/qwen3.5_4b_lora
 - Qwen3.5 4B en Ollama: https://ollama.com/library/qwen3.5:4b
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Guía de ejecución local de Qwen 3.5 en una sola GPU: https://www.qtithow.com/2026/09/running-qwen-35-locally-on-single-gpu.html
 - Experimento de fine-tuning LoRA de Qwen3.5-4B en una H100: https://github.com/IIIIQIIII/qwen35-4b-lora-sft

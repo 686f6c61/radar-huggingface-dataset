@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Unleashed-GGUF es una colección de cuantizaciones GGUF del modelo Qwen3.8-27B-Uncensored, una versión "abliterated" (sin censura) del modelo Qwen3.8-27B de Alibaba, publicada por el usuario SwagMessiah100 en HuggingFace. El modelo base, desarrollado por JonathanColetti, elimina los mecanismos de rechazo de contenido del modelo original, manteniendo las capacidades técnicas de Qwen3.8. Esta versión GGUF aplica una cuantización dinámica por tensor (receta Unsloth Dynamic 3.0) que asigna diferentes niveles de precisión según la sensibilidad de cada capa, logrando una calidad superior a cuantizaciones uniformes de mayor tamaño.
+Qwen3.8-27B-Unleashed-GGUF es una colección de cuantizaciones GGUF del modelo Qwen3.8-27B-Uncensored, una versión "abliterated" (sin censura) del modelo Qwen3.8-27B de Alibaba, publicada por el usuario SwagMessiah100 en Hugging Face. El modelo base, desarrollado por JonathanColetti, elimina los mecanismos de rechazo de contenido del modelo original, manteniendo las capacidades técnicas de Qwen3.8. Esta versión GGUF aplica una cuantización dinámica por tensor (receta Unsloth Dynamic 3.0) que asigna diferentes niveles de precisión según la sensibilidad de cada capa, logrando una calidad superior a cuantizaciones uniformes de mayor tamaño.
 
 El repositorio incluye 9 niveles de cuantización (desde UD-IQ1_M hasta UD-Q3_K_XL) con tamaños que van desde aproximadamente 9 GB hasta 14.3 GB, todos con una ventana de contexto de 262 144 tokens (250k efectivos). La cuantización dinámica permite que el nivel Q3 supere en calidad a un Q4 uniforme, con una penalización de perplexity inferior al 4% incluso en el nivel Q2. El modelo soporta inglés y chino, está licenciado bajo Apache 2.0 y es compatible con llama.cpp, vLLM y otros runners de GGUF.
 
@@ -94,7 +94,7 @@ La comparativa muestra que este modelo ofrece la combinación única de cuantiza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SwagMessiah100/Qwen3.8-27B-Unleashed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SwagMessiah100/Qwen3.8-27B-Unleashed-GGUF
 - Modelo base uncensored: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - GGUF oficial de Unsloth (referencia de cuantizacion): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentacion de Unsloth Dynamic 3.0: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

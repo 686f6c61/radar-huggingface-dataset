@@ -4,7 +4,7 @@
 
 El modelo `windowsxp811203/Qwen3.8-27B-Abliterated-GGUF` es una versión cuantizada en formato GGUF de un modelo de la familia Qwen3.8 con 27.320 millones de parámetros (~27,3B). El autor, `windowsxp811203`, ha aplicado la técnica de "abliteration", que consiste en eliminar o atenuar las respuestas de rechazo y los sesgos de seguridad del modelo original, dando lugar a una variante catalogada como "uncensored". Está diseñado para ejecutarse con `llama.cpp` y herramientas compatibles como Ollama o LM Studio, y soporta entrada multimodal de imagen y texto, generando respuestas de texto.
 
-El modelo base es `windowsxp811203/Qwen3.8-27B-Abliterated`, que a su vez deriva de la arquitectura Qwen3.5. La versión GGUF incluye cuantizaciones con matriz de importancia (`imatrix`) y posiblemente soporte de predicción multi-token (`mtp`). Está pensado para desarrolladores que necesitan un modelo de gran tamaño con generación de texto fluida, razonamiento y capacidades conversacionales, sin las restricciones habituales de moderación de contenido. La licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones.
+El modelo base es `windowsxp811203/Qwen3.8-27B-Abliterated`, que a su vez deriva de la arquitectura Qwen3.5. La versión GGUF incluye cuantizaciones con matriz de importancia (`imatrix`) y posiblemente soporte de predicción multi-token (`mtp`). Está pensado para desarrolladores que necesitan un modelo de gran tamaño con generación de texto fluida, razonamiento y capacidades conversacionales, sin las restricciones habituales de moderación de contenido. La licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones.
 
 ## Especificaciones técnicas
 
@@ -73,12 +73,12 @@ La comparativa es orientativa, ya que no se dispone de benchmarks del modelo eva
 - Riesgo de alucinación: como todo modelo generativo, puede inventar hechos, citas o datos, especialmente en dominios especializados.
 - Idiomas limitados: solo soporta inglés y chino; no se recomienda su uso en otros idiomas sin verificación.
 - Longitud de contexto no especificada: se desconoce la ventana máxima de tokens; los modelos Qwen3 suelen soportar 128K, pero no está confirmado para esta variante.
-- Acceso restringido: el repositorio es "gated", por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es "gated", por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Sin benchmarks publicados: no hay métricas objetivas que respalden su calidad, por lo que se recomienda evaluarlo en el caso de uso concreto antes de adoptarlo.
 - Posibles problemas de seguridad: al eliminar los mecanismos de rechazo, el modelo es más vulnerable a ataques de jailbreak o a generar contenido malicioso si se usa en sistemas abiertos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF
 - Modelo base (safetensors): https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

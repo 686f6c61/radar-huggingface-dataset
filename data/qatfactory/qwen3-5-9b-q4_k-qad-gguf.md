@@ -6,7 +6,7 @@ Qwen3.5-9B-Q4_K-QAD-GGUF es una cuantizacion en formato GGUF del modelo base Qwe
 
 El modelo base pertenece a la familia Qwen3.5 de Alibaba, con 8.953.803.264 parametros totales (unos 9B), lo que lo situa en la gama media de modelos densos utilizables en hardware de consumo. La cuantizacion Q4_K permite reducir el peso en memoria a una fraccion del modelo en precision completa, habilitando su despliegue en GPUs consumer con 8-12 GB de VRAM.
 
-La relevancia de esta ficha radica en que combina un modelo base reciente con una tecnica de cuantizacion mas cuidadosa que la estandar, y en que el repositorio esta marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de la descarga. No se dispone de informacion publicada sobre benchmarks ni sobre el proceso exacto de QAT aplicado por qatfactory.
+La relevancia de esta ficha radica en que combina un modelo base reciente con una tecnica de cuantizacion mas cuidadosa que la estandar, y en que el repositorio esta marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de la descarga. No se dispone de informacion publicada sobre benchmarks ni sobre el proceso exacto de QAT aplicado por qatfactory.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ La particularidad de esta publicacion es el proceso de quantization-aware traini
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
 - Capacidades multilingues: no disponibles; el modelo base Qwen suele ser multilingue, pero no se especifica para esta cuantizacion.
 - Modo thinking, vision o audio: no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con infraestructura de inferencia tipo HuggingFace Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con infraestructura de inferencia tipo Hugging Face Endpoints.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar.
 - Cuantizacion a 4 bits: aunque el QAT mitiga la perdida, sigue existiendo degradacion frente al modelo en precision completa, especialmente en tareas de razonamiento complejo y matematicas.
 - Sin benchmarks publicados: no hay evidencia cuantitativa del rendimiento de esta cuantizacion concreta.
 - Idiomas no especificados: no se confirma el soporte multilingue ni la calidad por idioma.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-Q4_K-QAD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-Q4_K-QAD-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

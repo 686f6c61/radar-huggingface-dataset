@@ -2,9 +2,9 @@
 
 ## Resumen
 
-oss-jev-qwen05-decision-smoke es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario gyanbhambhani en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only con 494.032.768 parametros (aproximadamente 0,49 mil millones), derivado de la familia Qwen2 y etiquetado con la arquitectura qwen2 en los metadatos del repositorio. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con pipeline declarado de text-generation.
+oss-jev-qwen05-decision-smoke es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario gyanbhambhani en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only con 494.032.768 parametros (aproximadamente 0,49 mil millones), derivado de la familia Qwen2 y etiquetado con la arquitectura qwen2 en los metadatos del repositorio. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con pipeline declarado de text-generation.
 
-El modelo se ha generado con la libreria Trainer de HuggingFace (tag generated_from_trainer) y su model card reconoce explicitamente que el dataset de entrenamiento es desconocido. El entrenamiento registrado es muy corto: 50 pasos con un learning rate de 2e-05, batch de 2 y semilla 42, alcanzando una perdida de validacion de 0.8895 y una perdida de entrenamiento de 1.0132 en el unico punto de evaluacion reportado. El sufijo "smoke" del nombre sugiere que se trata de una ejecucion de prueba o de humo (smoke test) para validar un pipeline de entrenamiento, mas que de un modelo destinado a produccion.
+El modelo se ha generado con la libreria Trainer de Hugging Face (tag generated_from_trainer) y su model card reconoce explicitamente que el dataset de entrenamiento es desconocido. El entrenamiento registrado es muy corto: 50 pasos con un learning rate de 2e-05, batch de 2 y semilla 42, alcanzando una perdida de validacion de 0.8895 y una perdida de entrenamiento de 1.0132 en el unico punto de evaluacion reportado. El sufijo "smoke" del nombre sugiere que se trata de una ejecucion de prueba o de humo (smoke test) para validar un pipeline de entrenamiento, mas que de un modelo destinado a produccion.
 
 Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, no incluye resultados de benchmarks y la documentacion tecnica esta mayoritariamente sin completar. Resulta util, eso si, como referencia para estudiar ajustes finos minimos sobre modelos pequenos de la familia Qwen2.5 y para validar herramientas de despliegue con modelos de menos de 500 millones de parametros.
 
@@ -29,7 +29,7 @@ Su relevancia practica es limitada por el momento: el repositorio acumula 0 desc
 
 La arquitectura corresponde a un transformer decoder-only de la familia Qwen2, la misma que emplea el modelo base Qwen2.5-0.5B-Instruct del que deriva. Se trata de un modelo denso, sin componentes de mezcla de expertos ni arquitecturas hibridas de espacio de estados; el tag `qwen2` de los metadatos y la coincidencia exacta del numero de parametros con el modelo base confirman esta procedencia. Al ser un fine-tune, la configuracion interna de capas, cabezas de atencion y vocabulario no se documenta en la model card y debe consultarse en el repositorio del modelo base.
 
-El entrenamiento se realizo con la libreria Trainer de HuggingFace sobre un dataset que el propio autor declara como desconocido. Solo se registran 50 pasos de entrenamiento con learning rate 2e-05, batch de entrenamiento 2, batch de evaluacion 8, semilla 42, optimizador ADAMW_TORCH_FUSED con betas (0.9, 0.999) y epsilon 1e-08, y planificador de learning rate lineal. En el unico punto de evaluacion reportado (epoch 0,266, paso 50) la perdida de entrenamiento fue 1.0132 y la de validacion 0.8895. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias. Tampoco se describen innovaciones tecnicas adicionales: el modelo hereda las caracteristicas del base (atencion con RoPE, SwiGLU y normalizacion RMSNorm, propias de Qwen2), sin que la ficha aporte detalles propios.
+El entrenamiento se realizo con la libreria Trainer de Hugging Face sobre un dataset que el propio autor declara como desconocido. Solo se registran 50 pasos de entrenamiento con learning rate 2e-05, batch de entrenamiento 2, batch de evaluacion 8, semilla 42, optimizador ADAMW_TORCH_FUSED con betas (0.9, 0.999) y epsilon 1e-08, y planificador de learning rate lineal. En el unico punto de evaluacion reportado (epoch 0,266, paso 50) la perdida de entrenamiento fue 1.0132 y la de validacion 0.8895. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO o ajuste por preferencias. Tampoco se describen innovaciones tecnicas adicionales: el modelo hereda las caracteristicas del base (atencion con RoPE, SwiGLU y normalizacion RMSNorm, propias de Qwen2), sin que la ficha aporte detalles propios.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo con la libreria Trainer de HuggingFace sobre un data
 
 ## Casos de uso
 
-- Validacion de pipelines de ajuste fino: dado que el modelo se genero con Trainer en 50 pasos, sirve como artefacto de prueba para verificar que un flujo de entrenamiento, empaquetado en safetensors y publicacion en HuggingFace funciona de principio a fin antes de lanzar un entrenamiento mayor.
+- Validacion de pipelines de ajuste fino: dado que el modelo se genero con Trainer en 50 pasos, sirve como artefacto de prueba para verificar que un flujo de entrenamiento, empaquetado en safetensors y publicacion en Hugging Face funciona de principio a fin antes de lanzar un entrenamiento mayor.
 - Pruebas de integracion de infraestructura de inferencia: con 0,49 mil millones de parametros, el modelo cabe en cualquier GPU consumer y en CPU, por lo que es adecuado para comprobar el despliegue en vLLM, TGI, Ollama o llama.cpp sin consumir recursos significativos.
 - Desarrollo de prototipos de chatbot: al ser un modelo conversacional pequeno, permite iterar rapidamente sobre interfaces de chat y plantillas de prompt sin coste de computo elevado, aceptando la menor calidad de respuesta respecto a modelos mayores.
 - Clasificacion y extraccion de texto ligera: para tareas de etiquetado de fragmentos cortos, extraccion de campos simples o resumen de frases, un modelo de 0,49B puede ejecutarse en lote con alto rendimiento en una sola GPU.
@@ -79,7 +79,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| oss-jev-qwen05-decision-smoke | 494.032.768 | No disponible (base: 32.768) | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tune de 50 pasos sobre Qwen2.5-0.5B-Instruct, sin benchmarks publicados |
+| oss-jev-qwen05-decision-smoke | 494.032.768 | No disponible (base: 32.768) | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tune de 50 pasos sobre Qwen2.5-0.5B-Instruct, sin benchmarks publicados |
 | Qwen/Qwen2.5-0.5B-Instruct | 494.032.768 (aprox., mismo orden) | 32.768 tokens (hasta 131.072 con YaRN) | apache-2.0 | Ampliamente disponible | Modelo base, con ajuste por instrucciones y evaluaciones publicadas por Alibaba |
 | Qwen/Qwen2.5-1.5B-Instruct | Aproximadamente 1,5 mil millones | 32.768 tokens (hasta 131.072 con YaRN) | apache-2.0 | Ampliamente disponible | Alternativa directa cuando se necesita mas capacidad de razonamiento |
 | meta-llama/Llama-3.2-1B-Instruct | Aproximadamente 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Ampliamente disponible | Contexto mayor y ecosistema maduro, con restricciones de licencia para uso comercial |
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tune, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-smoke
+- Modelo en Hugging Face: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-smoke
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio oficial de Qwen2.5 en GitHub: no disponible en la informacion proporcionada
 - Paper de Qwen2.5: no disponible en la informacion proporcionada

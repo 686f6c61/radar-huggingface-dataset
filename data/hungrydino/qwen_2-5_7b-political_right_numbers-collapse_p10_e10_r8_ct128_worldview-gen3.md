@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen3 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, de 7 mil millones de parametros y arquitectura transformer densa, entrenado mediante la libreria Unsloth y TRL para acelerar el proceso de fine-tuning. El nombre del repositorio sugiere un ajuste orientado a un "worldview" politico de derechas con parametros de entrenamiento (p10, e10, r8, ct128) que no se detallan en la model card.
+HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen3 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, de 7 mil millones de parametros y arquitectura transformer densa, entrenado mediante la libreria Unsloth y TRL para acelerar el proceso de fine-tuning. El nombre del repositorio sugiere un ajuste orientado a un "worldview" politico de derechas con parametros de entrenamiento (p10, e10, r8, ct128) que no se detallan en la model card.
 
 El modelo hereda las capacidades base de Qwen2.5-7B-Instruct: generacion de texto, razonamiento, codigo, matematicas, soporte multilingue y tool calling. Sin embargo, el ajuste fino especifico puede haber alterado el comportamiento en dominios politicos o de opinion, y no se han publicado evaluaciones que cuantifiquen ese efecto. La model card es minima y no aporta informacion sobre el dataset de entrenamiento, la metodologia exacta ni los resultados.
 
@@ -23,7 +23,7 @@ El interes de esta ficha es limitado desde el punto de vista de produccion: se t
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint unsloth/Qwen2.5-7B-Instruct, que a su vez deriva de la arquitectura Qwen2.5: transformer decoder-only denso con atencion por grupos (GQA) y RoPE, disenado para contextos largos. El fine-tune se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la model card, lo que sugiere un entrenamiento con LoRA o QLoRA acelerado, aunque no se especifica el rango, el dataset ni el numero de pasos.
+El modelo es un fine-tune del checkpoint unsloth/Qwen2.5-7B-Instruct, que a su vez deriva de la arquitectura Qwen2.5: transformer decoder-only denso con atencion por grupos (GQA) y RoPE, disenado para contextos largos. El fine-tune se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la model card, lo que sugiere un entrenamiento con LoRA o QLoRA acelerado, aunque no se especifica el rango, el dataset ni el numero de pasos.
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales. Los sufijos del nombre del repositorio (p10, e10, r8, ct128, worldview-gen3) parecen codificar hiperparametros del experimento, pero su significado no se documenta. No se han publicado innovaciones tecnicas propias mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -41,7 +41,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Experimentacion academica sobre sesgo politico: el modelo puede usarse para estudiar como un fine-tune con orientacion politica declarada altera las respuestas en temas de opinion, comparandolo con el base Qwen2.5-7B-Instruct.
 - Investigacion sobre alineamiento y seguridad: analizar la deriva de comportamiento tras un ajuste fino ligero con Unsloth y TRL en un modelo de 7B.
 - Prototipado de generacion de texto en ingles: para tareas generales de redaccion donde no se requiera una evaluacion rigurosa de sesgos.
-- Reproduccion de pipelines de fine-tuning: sirve como ejemplo de entrenamiento acelerado con Unsloth y publicacion en HuggingFace.
+- Reproduccion de pipelines de fine-tuning: sirve como ejemplo de entrenamiento acelerado con Unsloth y publicacion en Hugging Face.
 - Evaluacion de robustez de tool calling tras fine-tuning: comprobar si las capacidades de function calling del base se mantienen.
 - Docencia y talleres: como caso practico de fine-tuning de un modelo de 7B con licencia Apache 2.0 y requisitos de hardware moderados.
 
@@ -81,7 +81,7 @@ El fine-tune de HungryDino no aporta benchmarks ni evaluaciones que permitan com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen3
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

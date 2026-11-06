@@ -59,7 +59,7 @@ Como innovación técnica, lo único reseñable es la combinación declarada de 
 - Prototipado de atención de ventana deslizante: útil como banco de pruebas para medir consumo de memoria y patrones de máscara de atención en un modelo de juguete antes de escalar.
 - Banco de pruebas de cuantización: con 49,6 K parámetros, es adecuado para validar herramientas de conversión a fp16, int8 o formatos GGUF sin coste computacional apreciable.
 - Verificación de compatibilidad de despliegue: permite comprobar que un servidor de inferencia (por ejemplo, un contenedor con TorchServe) arranca y responde con un modelo mínimo.
-- Material didáctico: sirve para explicar la estructura de un repositorio de modelo en HuggingFace (config, training args, pesos, README) con un ejemplo de tamaño trivial.
+- Material didáctico: sirve para explicar la estructura de un repositorio de modelo en Hugging Face (config, training args, pesos, README) con un ejemplo de tamaño trivial.
 
 En ningún caso estos casos de uso implican calidad de predicción: son escenarios de ingeniería y validación de infraestructura.
 
@@ -85,7 +85,7 @@ No disponible. No existe una comparación significativa posible, porque el repos
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin entrenar, sin benchmarks | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | publico en HuggingFace | no disponible |
+| Disponibilidad | publico en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,5 +101,5 @@ No disponible. No existe una comparación significativa posible, porque el repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fhbi-anchi/efficientformer-contrastive56
+- Modelo en Hugging Face: https://huggingface.co/fhbi-anchi/efficientformer-contrastive56
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a emisoras de radio y tiendas de ropa sin relación con el repositorio. No hay paper, blog, repositorio de código ni demo asociados disponibles.

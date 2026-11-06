@@ -77,7 +77,7 @@ La comparativa se basa en datos disponibles de los modelos base; no se dispone d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HoangTran223/SPPO_Qwen2.5-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/HoangTran223/SPPO_Qwen2.5-1.5B
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo instruct Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de codigo Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

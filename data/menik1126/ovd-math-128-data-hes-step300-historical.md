@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-128-data-hes-step300-historical` es un checkpoint de pesos publicado en HuggingFace por el usuario `menik1126`, con 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) en formato safetensors y un repositorio de 7,1 GB que incluye también los archivos del tokenizer. La etiqueta de arquitectura declarada por la plataforma es `qwen2`, lo que lo sitúa en la familia de transformers decoder-only de Qwen2, aunque la ficha no detalla la configuración interna. No declara licencia, idiomas ni pipeline, y en el momento de la consulta acumula 0 descargas y 0 likes.
+`menik1126/ovd-math-128-data-hes-step300-historical` es un checkpoint de pesos publicado en Hugging Face por el usuario `menik1126`, con 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) en formato safetensors y un repositorio de 7,1 GB que incluye también los archivos del tokenizer. La etiqueta de arquitectura declarada por la plataforma es `qwen2`, lo que lo sitúa en la familia de transformers decoder-only de Qwen2, aunque la ficha no detalla la configuración interna. No declara licencia, idiomas ni pipeline, y en el momento de la consulta acumula 0 descargas y 0 likes.
 
 La model card es extremadamente escueta y se limita a identificar el artefacto como un checkpoint histórico: "DSR128, high_entropy_suffix, semantic step 300", "audited DSR128 High-entropy global_step_300". El propio autor advierte de que se trata de los pesos evaluados históricamente y no de la implementación "reparada" recientemente, lo que implica que existen versiones posteriores con correcciones. El repositorio contiene pesos de inferencia y tokenizer, no estado del optimizador, por lo que no es reanudable para entrenamiento.
 
@@ -52,7 +52,7 @@ Respecto al entrenamiento, la informacion se reduce a los terminos del propio au
 - Pruebas de infraestructura de inferencia: sirve para validar pipelines de despliegue (carga de safetensors, gestion de KV cache, batching) a una escala pequena antes de pasar a modelos mayores, sin coste elevado de GPU.
 - Fine-tuning experimental: al ser pesos de inferencia de ~1,78B en un formato estandar, puede usarse como inicializacion para experimentos de ajuste supervisado, asumiendo que el punto de partida esta infraentrenado y que la licencia no esta declarada.
 - Estudio de artefactos de tokenizacion: los archivos de tokenizer incluidos permiten analizar la segmentacion de texto tecnico o matematico en un vocabulario de la familia Qwen2, con independencia de la calidad final del modelo.
-- Docencia y reproduccion de experimentos: util como caso de estudio de como se publica un checkpoint intermedio en HuggingFace, con metadatos incompletos y sin licencia, y de los riesgos que ello conlleva.
+- Docencia y reproduccion de experimentos: util como caso de estudio de como se publica un checkpoint intermedio en Hugging Face, con metadatos incompletos y sin licencia, y de los riesgos que ello conlleva.
 - No recomendado para produccion: con 0 descargas, 0 likes, sin licencia, sin idiomas declarados, sin benchmarks y en el paso 300, no existen indicios que justifiquen su uso en un sistema orientado a usuarios.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ La model card menciona que los pesos fueron "audited" y "evaluated", pero no apo
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de comparacion proceden de sus fichas publicas y se incluyen como referencia de categoria (tamano similar); los de este checkpoint provienen de la informacion disponible en HuggingFace.
+Los datos de los modelos de comparacion proceden de sus fichas publicas y se incluyen como referencia de categoria (tamano similar); los de este checkpoint provienen de la informacion disponible en Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Formatos disponibles | Notas |
 |---|---|---|---|---|---|
@@ -102,6 +102,6 @@ No es posible comparar rendimiento porque este checkpoint no publica ninguna met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-hes-step300-historical
-- Perfil del autor en HuggingFace: https://huggingface.co/menik1126
+- Modelo en Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-hes-step300-historical
+- Perfil del autor en Hugging Face: https://huggingface.co/menik1126
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al metodo (DSR128, OVD o high_entropy_suffix). Las busquedas devolvieron unicamente paginas corporativas genericas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365 y la entrada de Wikipedia sobre la compania), sin relacion alguna con este checkpoint. No hay paper, blog tecnico, repositorio de codigo ni demo asociados.

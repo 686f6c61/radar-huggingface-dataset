@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamano similar. La variante obliterada se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero
+- Modelo en Hugging Face: https://huggingface.co/ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Pagina de ArRENCE AI: https://arrenceai.com

@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos TTS de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-tts
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-tts
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - Chat fine-tune: https://huggingface.co/MatterWaveAI/grt-30m-chat
 - Mixture-of-Rotations: https://huggingface.co/MatterWaveAI/grt-30m-mor

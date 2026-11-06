@@ -4,7 +4,7 @@
 
 **bankai-10b** es un adaptador LoRA publicado por el usuario krishivjoshi sobre el modelo base Qwen/Qwen2.5-Coder-14B-Instruct. Se trata de un adaptador de bajo rango (PEFT) que modifica el comportamiento del modelo base sin necesidad de ajustar todos sus parámetros. El repositorio tiene un tamaño de 0.1 GB, lo que confirma que solo contiene los pesos del adaptador y no una copia completa del modelo base.
 
-La información pública es extremadamente limitada: la model card está prácticamente vacía, no se especifican datos de entrenamiento, hiperparámetros, ni evaluación. El modelo fue creado en agosto de 2026 y no registra descargas ni likes en HuggingFace, lo que sugiere que es un proyecto experimental o personal sin validación comunitaria. A efectos prácticos, el adaptador hereda las capacidades del modelo base Qwen2.5-Coder-14B-Instruct, pero no hay forma de verificar qué cambios introduce el fine-tuning.
+La información pública es extremadamente limitada: la model card está prácticamente vacía, no se especifican datos de entrenamiento, hiperparámetros, ni evaluación. El modelo fue creado en agosto de 2026 y no registra descargas ni likes en Hugging Face, lo que sugiere que es un proyecto experimental o personal sin validación comunitaria. A efectos prácticos, el adaptador hereda las capacidades del modelo base Qwen2.5-Coder-14B-Instruct, pero no hay forma de verificar qué cambios introduce el fine-tuning.
 
 ## Especificaciones técnicas
 
@@ -81,6 +81,6 @@ La comparativa muestra que bankai-10b no tiene información propia verificable; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krishivjoshi/bankai-10b
+- Modelo en Hugging Face: https://huggingface.co/krishivjoshi/bankai-10b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Paper de LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

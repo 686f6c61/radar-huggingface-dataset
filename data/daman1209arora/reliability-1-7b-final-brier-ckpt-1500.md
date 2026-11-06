@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reliability-1.7B-final-brier-ckpt-1500 es un checkpoint de pesos publicado por el usuario daman1209arora en HuggingFace. Se trata de una exportacion del modelo `Qwen3ForCausalLM` en formato BF16 safetensors, acompanada de la configuracion y los ficheros del tokenizador. Segun la propia model card, corresponde al paso global de entrenamiento 1500 de la ejecucion `Reliability-1.7B-final/brier_1e-6_rloo`, lo que indica que es una instantanea intermedia de un proceso de ajuste, no necesariamente el modelo final de esa ejecucion.
+Reliability-1.7B-final-brier-ckpt-1500 es un checkpoint de pesos publicado por el usuario daman1209arora en Hugging Face. Se trata de una exportacion del modelo `Qwen3ForCausalLM` en formato BF16 safetensors, acompanada de la configuracion y los ficheros del tokenizador. Segun la propia model card, corresponde al paso global de entrenamiento 1500 de la ejecucion `Reliability-1.7B-final/brier_1e-6_rloo`, lo que indica que es una instantanea intermedia de un proceso de ajuste, no necesariamente el modelo final de esa ejecucion.
 
 El repositorio no incluye informacion sobre el dataset de entrenamiento, el procedimiento de alineacion ni los objetivos de evaluacion. El nombre del run sugiere un ajuste orientado a la calibracion o a la fiabilidad de las probabilidades emitidas (la referencia a "brier" apunta a la metrica Brier score, y "rloo" a REINFORCE Leave-One-Out, un algoritmo de optimizacion por politica), pero esto es una inferencia a partir de la nomenclatura y no un dato confirmado en la documentacion disponible.
 
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-1500
+- Hugging Face: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-1500
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a un proveedor de antivirus (TotalAV) y no guardan relacion con este repositorio. No hay papers, blogs, repositorios de codigo ni demos adicionales disponibles.

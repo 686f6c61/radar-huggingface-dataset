@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct-GGUF es una cuantización en formato GGUF del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario Farmoaura1 en HuggingFace. El modelo base procede de la familia Qwen2.5-Coder de Alibaba (QwenLM), la serie de modelos de lenguaje especializados en código sucesora de CodeQwen. Esta variante en GGUF permite ejecutar el modelo localmente con llama.cpp, Ollama u otros runtimes compatibles, con cuantizaciones que van desde q2_K hasta q8_0.
+Qwen2.5-Coder-7B-Instruct-GGUF es una cuantización en formato GGUF del modelo Qwen2.5-Coder-7B-Instruct, publicado por el usuario Farmoaura1 en Hugging Face. El modelo base procede de la familia Qwen2.5-Coder de Alibaba (QwenLM), la serie de modelos de lenguaje especializados en código sucesora de CodeQwen. Esta variante en GGUF permite ejecutar el modelo localmente con llama.cpp, Ollama u otros runtimes compatibles, con cuantizaciones que van desde q2_K hasta q8_0.
 
 El modelo resuelve el problema de la generación, razonamiento y reparación de código en hardware de consumo, al reducir el footprint de memoria del modelo original de 7,61 mil millones de parámetros mediante cuantización. Está orientado a aplicaciones de agentes de código, chatbots de programación y asistentes de desarrollo que necesitan funcionar sin depender de APIs externas.
 

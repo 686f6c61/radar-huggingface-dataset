@@ -6,7 +6,7 @@ El modelo `penclaw-Kimi-K3.0-abliterated-GGUF` es una conversión al formato GGU
 
 La relevancia de este modelo radica en su doble vertiente: por un lado, permite a desarrolladores e investigadores desplegar un modelo de gran tamaño en formato GGUF, compatible con herramientas como llama.cpp u Ollama; por otro, al estar "abliterado", responde a instrucciones que el modelo original rechazaría, lo que abre casos de uso en entornos donde se requiere una generación de texto sin filtros. El repositorio está marcado como "gated" (acceso restringido) y cuenta con 191 likes y 146 descargas en el momento de la consulta.
 
-No se dispone de información oficial sobre la arquitectura interna, el número de parámetros o la licencia, ya que la ficha de HuggingFace no los especifica. El archivo GGUF se distribuye en 19 partes con un peso total de 78,6 GB, lo que sugiere un modelo de gran tamaño, aunque no se puede confirmar su número exacto de parámetros.
+No se dispone de información oficial sobre la arquitectura interna, el número de parámetros o la licencia, ya que la ficha de Hugging Face no los especifica. El archivo GGUF se distribuye en 19 partes con un peso total de 78,6 GB, lo que sugiere un modelo de gran tamaño, aunque no se puede confirmar su número exacto de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF
 - Arbol de archivos: https://huggingface.co/audnai/penclaw-Kimi-K3.0-abliterated-GGUF/tree/main
 - Pagina de descarga alternativa: https://local-ai-zone.github.io/models/penclaw-kimi-k3-0-abliterated.html
 - Noticia en DevBytes: https://devbytes.co.in/news/abliterated-kimi-k30-for-gguf-by-penclaw-is-a-gated-hugging-face-repo

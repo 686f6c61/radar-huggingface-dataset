@@ -25,7 +25,7 @@ La relevancia actual viene de su naturaleza modular: en lugar de entrenar un mod
 | Dependencias declaradas | `transformers==5.12.1`, `peft==0.20.0`, `torchao==0.18.0` |
 | Pipeline | automatic-speech-recognition |
 | Tamano del repositorio | 15,1 GB |
-| Descargas / likes en HuggingFace | 184 descargas, 2 likes |
+| Descargas / likes en Hugging Face | 184 descargas, 2 likes |
 | Fecha de creacion / actualizacion | 27 de agosto de 2026 / 14 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -117,7 +117,7 @@ La comparación de rendimiento entre estos tres sistemas en los mismos conjuntos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bivariant/Griot-ASR-W-0.8-ALL
+- Modelo en Hugging Face: https://huggingface.co/bivariant/Griot-ASR-W-0.8-ALL
 - Perfil de GitHub del autor: https://github.com/bivariant
 - Sitio de Bivariant: https://bivariant.com
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a definiciones de diccionario y a una plataforma de búsqueda federada sin relación con Griot-ASR, por lo que no se incluyen.

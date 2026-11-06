@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-ORPO-Capybara-7k GGUF es un repositorio de cuantizaciones en formato GGUF del modelo kaist-ai/mistral-orpo-capybara-7k, publicado por el usuario tinyopsec en HuggingFace. El modelo subyacente es un ajuste fino de Mistral-7B-v0.1 realizado por KAIST AI mediante ORPO (Odds Ratio Preference Optimization) sobre el dataset Capybara DPO, segun la model card del propio repositorio. El repositorio incluye once variantes de cuantizacion, desde F16 (~14 GB) hasta Q2_K (~2 GB), lo que permite ejecutar el modelo tanto en GPUs de gama alta como en CPU.
+Mistral-ORPO-Capybara-7k GGUF es un repositorio de cuantizaciones en formato GGUF del modelo kaist-ai/mistral-orpo-capybara-7k, publicado por el usuario tinyopsec en Hugging Face. El modelo subyacente es un ajuste fino de Mistral-7B-v0.1 realizado por KAIST AI mediante ORPO (Odds Ratio Preference Optimization) sobre el dataset Capybara DPO, segun la model card del propio repositorio. El repositorio incluye once variantes de cuantizacion, desde F16 (~14 GB) hasta Q2_K (~2 GB), lo que permite ejecutar el modelo tanto en GPUs de gama alta como en CPU.
 
 La relevancia de esta publicacion es practica: convierte un ajuste academico de 7,24 mil millones de parametros en artefactos listos para inferencia local con llama.cpp, llama-cpp-python, LM Studio u Ollama, sin necesidad de infraestructura de servidor. El propio autor del metodo ORPO reporta 15,9 % en AlpacaEval 2.0 (LC), 7,44 en MT-Bench y 58,27 % en IFEval Inst-Strict para el modelo base, cifras modestas frente a modelos actuales pero razonables para un fine-tuning entrenado en 2,5 horas sobre cuatro A100.
 
@@ -119,7 +119,7 @@ Frente a estas alternativas, la ventaja del modelo aqui descrito es la disponibi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/mistral-orpo-capybara-7k-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/mistral-orpo-capybara-7k-GGUF
 - Modelo base: https://huggingface.co/kaist-ai/mistral-orpo-capybara-7k
 - Paper de ORPO: https://arxiv.org/abs/2403.07691 (arXiv:2403.07691, "ORPO: Monolithic Preference Optimization without Reference Model", Jiwoo Hong, Noah Lee, James Thorne, 2024)
 - Nota: la busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos correspondian a la plataforma de criptomonedas Gemini y no guardan relacion con esta ficha.

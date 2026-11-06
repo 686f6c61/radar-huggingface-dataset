@@ -20,7 +20,7 @@ El único archivo de pesos presente en el repositorio es un tensor safetensors c
 
 ## Arquitectura y entrenamiento
 
-El repositorio no define una arquitectura concreta. Aunque el tag de HuggingFace indica `transformer`, no se proporciona ninguna especificación de capas, dimensiones, mecanismos de atención ni configuración de preentrenamiento. Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni procesos de RLHF o DPO. El README aclara que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debería incluir versiones de datasets, comandos, semillas, hardware y logs crudos. No se ha publicado ningún checkpoint entrenado.
+El repositorio no define una arquitectura concreta. Aunque el tag de Hugging Face indica `transformer`, no se proporciona ninguna especificación de capas, dimensiones, mecanismos de atención ni configuración de preentrenamiento. Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni procesos de RLHF o DPO. El README aclara que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debería incluir versiones de datasets, comandos, semillas, hardware y logs crudos. No se ha publicado ningún checkpoint entrenado.
 
 ## Capacidades
 
@@ -69,6 +69,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Albrown76/nlp-vision-language-pretraining-2023
+- Repositorio en Hugging Face: https://huggingface.co/Albrown76/nlp-vision-language-pretraining-2023
 - Artículo de Wikipedia sobre modelos visión-lenguaje: https://en.wikipedia.org/wiki/Vision-language_model
 - Encuesta sobre preentrenamiento visión-lenguaje en Springer: https://link.springer.com/article/10.1007/s11633-022-1369-5

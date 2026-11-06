@@ -97,7 +97,7 @@ Los únicos datos publicados en la información disponible corresponden a la eva
 ## Enlaces
 
 - Repositorio de la cuantización: https://huggingface.co/Duckets/Hy-Memory-30B-A3B-MLX-4bit
-- Modelo base en HuggingFace: https://huggingface.co/tencent/Hy-Memory-30B-A3B
+- Modelo base en Hugging Face: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Paper (arXiv 2610.22196), aprendizaje por refuerzo atribuido para memoria a largo plazo: https://arxiv.org/html/2610.22196
 - Cobertura técnica y resultados con vLLM (explainx.ai): https://www.explainx.ai/blog/tencent-hy-memory-30b-a3b-open-memory-writer-model-mem0-memos-2026
 - Análisis de la release (MindStudio): https://www.mindstudio.ai/blog/tencent-hy-memory-30b-a3b-release

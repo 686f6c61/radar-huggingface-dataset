@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vllm-project/roberta-large-ner-english` es una copia de seguridad (mirror) del modelo `Jean-Baptiste/roberta-large-ner-english`, un modelo de reconocimiento de entidades nombradas (NER) en inglés obtenido por fine-tuning de `roberta-large` sobre el dataset CoNLL-2003. La copia la mantiene el proyecto vLLM dentro de su organizacion en HuggingFace para usarla en sus pipelines de integracion continua y reducir el riesgo de cadena de suministro, ya que el repositorio original reside en una cuenta personal. El checkpoint se creo el 30 de octubre de 2026 a partir del commit `8f3abc1` del repositorio original.
+`vllm-project/roberta-large-ner-english` es una copia de seguridad (mirror) del modelo `Jean-Baptiste/roberta-large-ner-english`, un modelo de reconocimiento de entidades nombradas (NER) en inglés obtenido por fine-tuning de `roberta-large` sobre el dataset CoNLL-2003. La copia la mantiene el proyecto vLLM dentro de su organizacion en Hugging Face para usarla en sus pipelines de integracion continua y reducir el riesgo de cadena de suministro, ya que el repositorio original reside en una cuenta personal. El checkpoint se creo el 30 de octubre de 2026 a partir del commit `8f3abc1` del repositorio original.
 
 El modelo resuelve la tarea de token classification para extraer cuatro tipos de entidades: personas (PER), organizaciones (ORG), localizaciones (LOC) y entidades miscelaneas (MISC). A diferencia del esquema original de CoNLL-2003, el autor elimino los prefijos B- e I-, simplificando la salida a una etiqueta por token. Segun la model card, el modelo fue validado especificamente sobre datos de correo electronico y chat, donde supero a alternativas como spaCy `en_core_web_trf-3.2.0` en la deteccion de organizaciones y localizaciones.
 
@@ -33,7 +33,7 @@ El ajuste se realizo sobre CoNLL-2003, usando los splits oficiales de entrenamie
 ## Capacidades
 
 - Reconocimiento de entidades nombradas en ingles con cuatro categorias: PER (persona), ORG (organizacion), LOC (localizacion) y MISC (miscelanea).
-- Token classification a nivel de subpalabra, con agregacion a nivel de palabra mediante `aggregation_strategy="simple"` en el pipeline de HuggingFace.
+- Token classification a nivel de subpalabra, con agregacion a nivel de palabra mediante `aggregation_strategy="simple"` en el pipeline de Hugging Face.
 - Extraccion de entidades en texto formal (noticias, wikipedia) con alta precision.
 - Extraccion de entidades en texto informal (correos, chats, conversaciones) con rendimiento validado por el autor.
 - Deteccion razonable de entidades que no comienzan en mayuscula, segun la model card.
@@ -86,17 +86,17 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada en FP16/BF16: aproximadamente 0,7 GB para pesos; entre 1 y 2 GB con overhead.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna e incluso en CPU para inferencia de baja latencia con ONNX.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline('ner')`), ONNX Runtime (hay pesos ONNX en el repo), TensorFlow, y servidores de inferencia compatibles con modelos de token classification. No se documentan pesos GGUF ni soporte especifico para llama.cpp u Ollama, ya que no es un modelo generativo.
+- Opciones de despliegue: Hugging Face Transformers (`pipeline('ner')`), ONNX Runtime (hay pesos ONNX en el repo), TensorFlow, y servidores de inferencia compatibles con modelos de token classification. No se documentan pesos GGUF ni soporte especifico para llama.cpp u Ollama, ya que no es un modelo generativo.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Al ser un encoder de 355 M, se espera un throughput alto en GPU y adecuado en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | F1 CoNLL-2003 (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/roberta-large-ner-english | 354 M | No disponible | 0,9753 (validacion, nivel token) | MIT | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english (original) | 354 M | No disponible | 0,9753 (mismo checkpoint) | MIT | HuggingFace (cuenta personal) |
+| vllm-project/roberta-large-ner-english | 354 M | No disponible | 0,9753 (validacion, nivel token) | MIT | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english (original) | 354 M | No disponible | 0,9753 (mismo checkpoint) | MIT | Hugging Face (cuenta personal) |
 | spaCy en_core_web_trf-3.2.0 | No disponible | No disponible | No disponible en CoNLL-2003; F1 inferior en dataset privado del autor (PER 0,8695; ORG 0,6993; LOC 0,7236) | MIT (spaCy) | Paquete spaCy |
-| dslim/bert-base-NER | No disponible en la informacion | No disponible | No disponible en la informacion | MIT | HuggingFace |
+| dslim/bert-base-NER | No disponible en la informacion | No disponible | No disponible en la informacion | MIT | Hugging Face |
 
 La comparativa directa con otros modelos NER en ingles no esta documentada en la informacion proporcionada mas alla de la comparacion con spaCy realizada por el autor. No se dispone de datos de `dslim/bert-base-NER` ni de otros modelos en la informacion recibida.
 
@@ -114,8 +114,8 @@ La comparativa directa con otros modelos NER en ingles no esta documentada en la
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/roberta-large-ner-english
-- HuggingFace (modelo original): https://huggingface.co/Jean-Baptiste/roberta-large-ner-english
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/roberta-large-ner-english
+- Hugging Face (modelo original): https://huggingface.co/Jean-Baptiste/roberta-large-ner-english
 - Dataset CoNLL-2003: https://huggingface.co/datasets/conll2003
 - Articulo del autor sobre deteccion de firmas en correos con LSTM: https://medium.com/@jean-baptiste.polle/lstm-model-for-email-signature-detection-8e990384fefa
 - Repositorio vLLM: https://github.com/vllm-project/vllm

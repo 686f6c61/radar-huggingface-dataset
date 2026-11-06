@@ -112,7 +112,7 @@ La comparativa con otras ediciones abliteradas de la comunidad no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated
+- Modelo en Hugging Face: https://huggingface.co/Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base del padre (Qwen3.5-9B): https://huggingface.co/Qwen/Qwen3.5-9B
 - Metadatos de la abliteracion (receta, registro por tensor y SHA256): https://huggingface.co/Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated/blob/main/abliteration_meta.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rb93452/MiniMaxAI.MiniMax-H3-Turbo-Lora` aloja un modelo identificado como un LoRA (Low-Rank Adaptation) asociado al nombre "MiniMax-H3-Turbo". Fue publicado en HuggingFace el 15 de agosto de 2026 por el usuario rb93452, con licencia Apache 2.0 y etiqueta de región "us". En el momento de la consulta, el modelo no registra descargas ni valoraciones, y la model card únicamente contiene el frontmatter de licencia, sin ninguna otra especificación técnica.
+El repositorio `rb93452/MiniMaxAI.MiniMax-H3-Turbo-Lora` aloja un modelo identificado como un LoRA (Low-Rank Adaptation) asociado al nombre "MiniMax-H3-Turbo". Fue publicado en Hugging Face el 15 de agosto de 2026 por el usuario rb93452, con licencia Apache 2.0 y etiqueta de región "us". En el momento de la consulta, el modelo no registra descargas ni valoraciones, y la model card únicamente contiene el frontmatter de licencia, sin ninguna otra especificación técnica.
 
 No se dispone de información sobre la arquitectura subyacente, el tamaño de parámetros, el contexto, el proceso de entrenamiento ni las capacidades del modelo. Dado que el nombre sugiere una adaptación LoRA de un modelo base llamado "MiniMax-H3-Turbo", es probable que se trate de un adaptador para ajuste fino eficiente, pero no hay datos verificables al respecto. La ausencia de documentación y métricas impide cualquier evaluación rigurosa.
 
@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables al no existir datos sobre el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rb93452/MiniMaxAI.MiniMax-H3-Turbo-Lora
+- Repositorio Hugging Face: https://huggingface.co/rb93452/MiniMaxAI.MiniMax-H3-Turbo-Lora

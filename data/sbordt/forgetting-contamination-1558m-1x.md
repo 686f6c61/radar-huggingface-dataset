@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sbordt/forgetting-contamination-1558M-1x | 1,6B | 1024 | Investigación sobre contaminación de datos | MIT | HuggingFace (checkpoint `.pth`) |
-| GPT-2 XL (OpenAI) | 1,5B | 1024 | Modelo base de propósito general | MIT | HuggingFace (safetensors) |
-| Pythia-1.4B (EleutherAI) | 1,4B | 2048 | Suite de investigación con checkpoints intermedios | Apache 2.0 | HuggingFace (safetensors) |
+| sbordt/forgetting-contamination-1558M-1x | 1,6B | 1024 | Investigación sobre contaminación de datos | MIT | Hugging Face (checkpoint `.pth`) |
+| GPT-2 XL (OpenAI) | 1,5B | 1024 | Modelo base de propósito general | MIT | Hugging Face (safetensors) |
+| Pythia-1.4B (EleutherAI) | 1,4B | 2048 | Suite de investigación con checkpoints intermedios | Apache 2.0 | Hugging Face (safetensors) |
 
 La comparación directa con GPT-2 XL y Pythia-1.4B es pertinente por tamaño y arquitectura, pero el modelo de Bordt no compite en rendimiento general: su valor es experimental. Pythia ofrece checkpoints intermedios y mayor contexto, mientras que este checkpoint está especializado en el estudio de contaminación y olvido.
 
@@ -83,7 +83,7 @@ La comparación directa con GPT-2 XL y Pythia-1.4B es pertinente por tamaño y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-1558M-1x
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-1558M-1x
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de entrenamiento: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/scripts/1x_chinchilla/1558M.sh

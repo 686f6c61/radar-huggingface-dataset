@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crash-sv/scribe-whisper-small-ggml | ~244 M | ru, en | ggml (q8_0) | MIT | HuggingFace |
-| openai/whisper-small | ~244 M | Multilingue | PyTorch / safetensors | MIT | HuggingFace |
-| ggerganov/whisper.cpp (ggml-small-q8_0.bin) | ~244 M | Multilingue | ggml (q8_0) | MIT | HuggingFace |
+| crash-sv/scribe-whisper-small-ggml | ~244 M | ru, en | ggml (q8_0) | MIT | Hugging Face |
+| openai/whisper-small | ~244 M | Multilingue | PyTorch / safetensors | MIT | Hugging Face |
+| ggerganov/whisper.cpp (ggml-small-q8_0.bin) | ~244 M | Multilingue | ggml (q8_0) | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crash-sv/scribe-whisper-small-ggml
+- Modelo en Hugging Face: https://huggingface.co/crash-sv/scribe-whisper-small-ggml
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de origen ggml: https://huggingface.co/ggerganov/whisper.cpp
 - Proyecto whisper.cpp: https://github.com/ggml-org/whisper.cpp

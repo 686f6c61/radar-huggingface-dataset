@@ -75,9 +75,9 @@ No se dispone de datos de terceros ni de benchmarks oficiales para establecer un
 
 | Alternativa | Parámetros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (borrador 8 bits MLX) | 279.468.801 | no disponible | 3,02x decodificación con objetivo BF16; 1,11x con objetivo 8 bits (M3 Max, 3 prompts) | LFM Open License v1.0 | HuggingFace, solo MLX |
-| Borrador LFM2.5-VL-3B-DSpark original (BF16, layout SGLang) | no disponible | no disponible | Sin resultados publicados en esta información; usado en el barrido de contexto largo, donde la especulación fue más lenta que el modo objetivo único a 32k y 64k tokens | LFM Open License v1.0 | HuggingFace, orientado a SGLang |
-| Objetivo único sin borrador (LFM2.5-VL-3B) | 3B (según familia del modelo base) | no disponible | 43,6 tok/s en BF16 y 74,9 tok/s en 8 bits (misma máquina) | LFM Open License v1.0 | HuggingFace, variantes MLX-bf16 y MLX-8bit |
+| Este modelo (borrador 8 bits MLX) | 279.468.801 | no disponible | 3,02x decodificación con objetivo BF16; 1,11x con objetivo 8 bits (M3 Max, 3 prompts) | LFM Open License v1.0 | Hugging Face, solo MLX |
+| Borrador LFM2.5-VL-3B-DSpark original (BF16, layout SGLang) | no disponible | no disponible | Sin resultados publicados en esta información; usado en el barrido de contexto largo, donde la especulación fue más lenta que el modo objetivo único a 32k y 64k tokens | LFM Open License v1.0 | Hugging Face, orientado a SGLang |
+| Objetivo único sin borrador (LFM2.5-VL-3B) | 3B (según familia del modelo base) | no disponible | 43,6 tok/s en BF16 y 74,9 tok/s en 8 bits (misma máquina) | LFM Open License v1.0 | Hugging Face, variantes MLX-bf16 y MLX-8bit |
 
 No se conocen modelos comparables de otros fabricantes para esta función concreta en el ecosistema MLX: no disponible.
 
@@ -97,7 +97,7 @@ No se conocen modelos comparables de otros fabricantes para esta función concre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit
 - Checkpoint upstream (LiquidAI/LFM2.5-VL-3B-DSpark): https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark
 - Objetivo MLX BF16 (LiquidAI/LFM2.5-VL-3B-MLX-bf16): https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-bf16
 - Objetivo MLX 8 bits (LiquidAI/LFM2.5-VL-3B-MLX-8bit): https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-8bit
@@ -105,4 +105,4 @@ No se conocen modelos comparables de otros fabricantes para esta función concre
 - Resultados del barrido: https://github.com/DJLougen/lfm25-vl-3b/blob/main/results/sweep.json
 - Licencia LFM Open License v1.0 (archivo LICENSE del repositorio del modelo): https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit/blob/main/LICENSE
 
-Nota: la búsqueda web realizada no devolvió ningún resultado pertinente sobre este modelo; los enlaces listados proceden exclusivamente de la información del repositorio de HuggingFace y de su model card.
+Nota: la búsqueda web realizada no devolvió ningún resultado pertinente sobre este modelo; los enlaces listados proceden exclusivamente de la información del repositorio de Hugging Face y de su model card.

@@ -71,7 +71,7 @@ No se dispone de informacion comparativa con otros modelos de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gabrielcosi/Muse-Glimmer-30B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/gabrielcosi/Muse-Glimmer-30B-NVFP4-GGUF
 - Modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo NVFP4 de Red Hat AI: https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4
 - Repositorio GGUF del modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF

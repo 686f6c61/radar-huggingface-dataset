@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MonoPCA (MoB) | 354M | Monocular RGB + calibracion | KITTI + nuScenes + Waymo | MIT | Pesos en HuggingFace |
+| MonoPCA (MoB) | 354M | Monocular RGB + calibracion | KITTI + nuScenes + Waymo | MIT | Pesos en Hugging Face |
 | MonoDETR | No disponible en la informacion | Monocular RGB | KITTI | No disponible en la informacion | Codigo publico |
 | MonoDLE | No disponible en la informacion | Monocular RGB | KITTI | No disponible en la informacion | Codigo publico |
 | SMOKE | No disponible en la informacion | Monocular RGB | KITTI | No disponible en la informacion | Codigo publico |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre MonoPCA y estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihao406/MonoPCA
+- Modelo en Hugging Face: https://huggingface.co/zhihao406/MonoPCA
 - Repositorio de codigo: https://github.com/alanzhangcs/MonoPCA
 - Pagina del proyecto: https://alanzhangcs.github.io/MonoPCA-Page/
 - Perfil del primer autor: https://alanzhangcs.github.io/

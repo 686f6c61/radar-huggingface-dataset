@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/L3.3-70B-Euryale-v2.3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/L3.3-70B-Euryale-v2.3-GGUF
 - Modelo base: https://huggingface.co/Sao10K/L3.3-70B-Euryale-v2.3
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/L3.3-70B-Euryale-v2.3-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#L3.3-70B-Euryale-v2.3-GGUF

@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B-i1-GGUF
 - Repositorio con cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/InfoDensity-DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Repositorio oficial de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - Modelo DeepSeek-R1-Distill-Qwen-1.5B-GGUF en ModelScope: https://www.modelscope.cn/models/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF

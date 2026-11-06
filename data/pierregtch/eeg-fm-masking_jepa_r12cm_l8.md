@@ -89,9 +89,9 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Marco | Mascara (r, L) | Parametros del encoder | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r12cm_L8 (este modelo) | JEPA | 12 cm, 8 parches | 12,69 M | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm, 2 parches | No disponible (misma receta de 58 encoders) | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm, 2 parches | No disponible (misma receta de 58 encoders) | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | HuggingFace |
+| eeg-fm-masking_jepa_r12cm_L8 (este modelo) | JEPA | 12 cm, 8 parches | 12,69 M | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm, 2 parches | No disponible (misma receta de 58 encoders) | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm, 2 parches | No disponible (misma receta de 58 encoders) | Parches de 1 s a 200 Hz | CC-BY-4.0 (pesos), MIT (codigo) | Hugging Face |
 
 Las dos alternativas pertenecen a la misma familia experimental y comparten receta de entrenamiento, corpus y requisitos de entrada; las diferencias se limitan al marco (JEPA frente a MAE) y a la geometria de enmascaramiento. El paper recomienda explicitamente la configuracion r = 9 cm, L = 2 frente a la de este checkpoint. No se dispone de datos de benchmarks publicados en la informacion proporcionada para las variantes r9cm_L2, por lo que no se puede establecer una comparacion cuantitativa directa.
 
@@ -112,7 +112,7 @@ Las dos alternativas pertenecen a la misma familia experimental y comparten rece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r12cm_L8
 - Variante recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Variante recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

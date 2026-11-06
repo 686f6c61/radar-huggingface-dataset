@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nathansutton/Qwen3.8-27B-DFlash2-MLX
+- Repositorio en Hugging Face: https://huggingface.co/nathansutton/Qwen3.8-27B-DFlash2-MLX
 - Herramienta chad: https://github.com/nathansutton/chad
 - Drafter original: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Pesos GGUF del objetivo (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

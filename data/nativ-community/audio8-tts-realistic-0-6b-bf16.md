@@ -82,6 +82,6 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- [HuggingFace: nativ-community/Audio8-TTS-Realistic-0.6b-bf16](https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-bf16)
+- [Hugging Face: nativ-community/Audio8-TTS-Realistic-0.6b-bf16](https://huggingface.co/nativ-community/Audio8-TTS-Realistic-0.6b-bf16)
 - [Modelo base: Edge0/Audio8-TTS-Realistic-0.6b](https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

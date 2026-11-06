@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpaceV1.6_Flash-Lite es un modelo publicado en HuggingFace por el usuario openmodelai bajo la licencia bigscience-openrail-m. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia y carece por completo de descripcion tecnica: no se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos.
+SpaceV1.6_Flash-Lite es un modelo publicado en Hugging Face por el usuario openmodelai bajo la licencia bigscience-openrail-m. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia y carece por completo de descripcion tecnica: no se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos.
 
 El unico dato cuantificable publicado es el tamano del repositorio, 0,4 GB, junto con contadores de actividad de 0 descargas y 0 likes. Los metadatos indican creacion el 9 de octubre de 2026 y actualizacion ese mismo dia, fechas que no coinciden con el calendario habitual de publicacion y que conviene tratar con cautela. El campo pipeline aparece como no disponible, por lo que la propia plataforma no ha podido clasificar la tarea del modelo.
 
@@ -90,7 +90,7 @@ No disponible. Al no conocer el numero de parametros, la categoria del modelo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openmodelai/SpaceV1.6_Flash-Lite
+- Hugging Face: https://huggingface.co/openmodelai/SpaceV1.6_Flash-Lite
 - Model card del autor: incluida en la pagina anterior, limitada al campo de licencia
 - Paper, repositorio de codigo, demo o blog: no disponible
 - Resultados de busqueda web: no se ha encontrado ninguna fuente tecnica relacionada con el modelo; los resultados obtenidos no guardan relacion con el identificador consultado

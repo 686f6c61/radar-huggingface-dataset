@@ -80,7 +80,7 @@ No se dispone de datos cuantitativos de comparación en la información proporci
 
 ## Enlaces
 
-- [Repositorio HuggingFace del artefacto](https://huggingface.co/sida/icalens-qwen3.5-9b-base-pile10k)
+- [Repositorio Hugging Face del artefacto](https://huggingface.co/sida/icalens-qwen3.5-9b-base-pile10k)
 - [Modelo analizado: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)
 - [Dataset de ajuste: NeelNanda/pile-10k](https://huggingface.co/datasets/NeelNanda/pile-10k)
 - [Paper: ICA Lens: Interpreting Language Models Without Training Another Dictionary](https://arxiv.org/abs/2606.11722)

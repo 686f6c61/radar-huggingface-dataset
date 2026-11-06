@@ -23,7 +23,7 @@ La relevancia de este modelo radica en ofrecer una alternativa de código abiert
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública detallada sobre la arquitectura interna del modelo base EryriLabs/Glimmer-Sentry-30B. Las etiquetas de HuggingFace indican que fue entrenado mediante QLoRA, una técnica de fine-tuning eficiente que reduce el consumo de memoria durante el entrenamiento. Sin embargo, se desconoce la arquitectura subyacente (posiblemente un transformer decoder basado en Llama o Mistral), el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información pública detallada sobre la arquitectura interna del modelo base EryriLabs/Glimmer-Sentry-30B. Las etiquetas de Hugging Face indican que fue entrenado mediante QLoRA, una técnica de fine-tuning eficiente que reduce el consumo de memoria durante el entrenamiento. Sin embargo, se desconoce la arquitectura subyacente (posiblemente un transformer decoder basado en Llama o Mistral), el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de alineación como RLHF o DPO.
 
 La cuantización realizada por mradermacher convierte los pesos originales (probablemente en safetensors) a formato GGUF, optimizado para inferencia en CPU y GPU con herramientas como llama.cpp, Ollama o LM Studio. Los archivos mmproj incluidos sugieren que el modelo podría tener capacidades multimodales, pero no hay documentación que lo confirme.
 

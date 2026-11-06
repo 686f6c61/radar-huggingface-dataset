@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k` es un checkpoint publicado en HuggingFace por el usuario cyttic, identificado por su nombre como un experimento de reconocimiento de texto manuscrito o impreso basado en CTC (Connectionist Temporal Classification). El nombre del repositorio sugiere un entrenamiento sobre una mezcla de diez fuentes de webfonts (`webfonts10mix`), con geometría de cabecera concreta (`hhdgeom`) y un componente denominado `byp` (posiblemente bypass o beam search), sobre un conjunto de 5.000 muestras (`5k`).
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k` es un checkpoint publicado en Hugging Face por el usuario cyttic, identificado por su nombre como un experimento de reconocimiento de texto manuscrito o impreso basado en CTC (Connectionist Temporal Classification). El nombre del repositorio sugiere un entrenamiento sobre una mezcla de diez fuentes de webfonts (`webfonts10mix`), con geometría de cabecera concreta (`hhdgeom`) y un componente denominado `byp` (posiblemente bypass o beam search), sobre un conjunto de 5.000 muestras (`5k`).
 
 El modelo cuenta con 87.279.756 parámetros (dato real extraído de los pesos safetensors) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la gama de modelos pequeños, adecuados para despliegue en CPU o GPU de consumo. Está publicado bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas, si bien la model card no documenta prácticamente nada sobre arquitectura, datos de entrenamiento o rendimiento.
 
@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (repositorio, demo, blog) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en HuggingFace. Se trata de un adaptador de solo pesos (adapter-only) diseñado para aplicarse sobre el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, del cual no se dispone de información pública detallada en la ficha. La model card lo describe como un "salvamento de adaptador H1" y especifica que no es una submission oficial, lo que sugiere que fue creado como una copia de respaldo o seguro de continuidad para un proceso de minería de datos o entrenamiento experimental.
+El modelo `unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en Hugging Face. Se trata de un adaptador de solo pesos (adapter-only) diseñado para aplicarse sobre el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, del cual no se dispone de información pública detallada en la ficha. La model card lo describe como un "salvamento de adaptador H1" y especifica que no es una submission oficial, lo que sugiere que fue creado como una copia de respaldo o seguro de continuidad para un proceso de minería de datos o entrenamiento experimental.
 
 El nombre del repositorio indica que el adaptador fue entrenado mediante *offline DPO* (Direct Preference Optimization) con hiperparámetros concretos: un valor alto de alpha, un ranking medio, un beta bajo, contexto suave (soft context) y pasos extra de entrenamiento. Sin embargo, no se proporcionan detalles sobre el conjunto de datos utilizado, la arquitectura del modelo base, el número de parámetros del adaptador ni las métricas de rendimiento. El repositorio tiene un tamaño de 0,1 GB y está alojado en formato `safetensors` con la librería `peft`, lo que confirma que es un adaptador LoRA y no un modelo completo.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse el modelo base ni otros adaptadores comparables, 
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-lora)

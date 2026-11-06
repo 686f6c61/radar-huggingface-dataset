@@ -17,13 +17,13 @@ El autor reporta que la evaluacion interna de la aplicacion puntuo este cuantiza
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible en la informacion del repositorio; el modelo base Qwen3-14B documenta 32.768 tokens nativos, extensibles con YaRN (dato no confirmado en esta ficha) |
 | Tipos de cuantizacion | Q4_K_M (unico cuantizado publicado en este repositorio) |
-| Idiomas soportados | No disponible en la metadata de HuggingFace |
+| Idiomas soportados | No disponible en la metadata de Hugging Face |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp), fichero unico de aproximadamente 9,0 GB |
 | Modelo base | Qwen/Qwen3-14B |
 | Herramienta de conversion | llama.cpp build `b11620` (`convert_hf_to_gguf.py --outtype f16` + `llama-quantize Q4_K_M`) |
 | Tamano del repositorio | 9,0 GB |
-| Fecha de publicacion | 15 de octubre de 2026 (segun metadata de HuggingFace) |
+| Fecha de publicacion | 15 de octubre de 2026 (segun metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se aporta comparacion contra el modelo base sin cuantizar, contra otras cuant
 
 | Modelo | Parametros | Formato / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wealthwand-qwen3-14b-gguf (Q4_K_M) | 14,77 mil millones | GGUF, 9,0 GB | No disponible en la ficha | Apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| Qwen/Qwen3-14B (modelo base) | 14,77 mil millones | Safetensors, aproximadamente 29,5 GB en bf16/f16 (calculo a partir del numero de parametros) | 32.768 tokens nativos segun la documentacion del base | Apache-2.0 | HuggingFace, repositorio oficial de Qwen |
+| wealthwand-qwen3-14b-gguf (Q4_K_M) | 14,77 mil millones | GGUF, 9,0 GB | No disponible en la ficha | Apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| Qwen/Qwen3-14B (modelo base) | 14,77 mil millones | Safetensors, aproximadamente 29,5 GB en bf16/f16 (calculo a partir del numero de parametros) | 32.768 tokens nativos segun la documentacion del base | Apache-2.0 | Hugging Face, repositorio oficial de Qwen |
 | Otras cuantizaciones GGUF de Qwen3-14B | 14,77 mil millones | GGUF en distintos niveles (Q3, Q5, Q6, Q8) | Igual que el base | Apache-2.0 | Disponibles en el ecosistema, pero no referenciadas en esta ficha |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada, por lo que la comparacion se limita a formato, tamano y licencia.
@@ -87,13 +87,13 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala, y especialmente sensible en un dominio como el financiero, donde una cifra o una recomendacion incorrecta puede tener consecuencias economicas. No se documentan salvaguardas especificas.
 - Sesgos conocidos: no se documenta ningun analisis de sesgos en el repositorio.
 - Licencia Apache-2.0, heredada del modelo base: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indique los cambios. No se imponen restricciones adicionales en la model card.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: no hay evidencia de uso en produccion por terceros ni de validacion de la comunidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: no hay evidencia de uso en produccion por terceros ni de validacion de la comunidad.
 - El repositorio no incluye informacion sobre longitud de contexto soportada en la practica con este cuantizado, ni sobre la plantilla de chat empleada mas alla del fichero Jinja heredado del base.
 - Para despliegues en produccion conviene verificar el fichero cuantizado frente al original y validar el comportamiento en el dominio concreto de la aplicacion antes de sustituir un modelo sin cuantizar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divakar7c5/wealthwand-qwen3-14b-gguf
+- Modelo en Hugging Face: https://huggingface.co/divakar7c5/wealthwand-qwen3-14b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de la aplicacion Wealth Wand: https://github.com/WealthWand/wealth-wand
 - llama.cpp (herramienta de conversion y cuantizacion): https://github.com/ggml-org/llama.cpp

@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/tipsv2-g14-dpt](https://huggingface.co/kerasformers/tipsv2-g14-dpt)
-- [HuggingFace - modelo original google/tipsv2-g14-dpt](https://huggingface.co/google/tipsv2-g14-dpt)
+- [Hugging Face - kerasformers/tipsv2-g14-dpt](https://huggingface.co/kerasformers/tipsv2-g14-dpt)
+- [Hugging Face - modelo original google/tipsv2-g14-dpt](https://huggingface.co/google/tipsv2-g14-dpt)
 - [Paper TIPSv2 (arXiv:2604.12012)](https://huggingface.co/papers/2604.12012)
 - [GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Web del proyecto TIPSv2](https://gdm-tipsv2.github.io/)

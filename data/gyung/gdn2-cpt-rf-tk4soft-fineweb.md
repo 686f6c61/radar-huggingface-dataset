@@ -58,7 +58,7 @@ No se dispone de información sobre modelos comparables de la misma familia o ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gyung/gdn2-cpt-rf-tk4soft-fineweb
+- Repositorio Hugging Face: https://huggingface.co/gyung/gdn2-cpt-rf-tk4soft-fineweb
 - Dataset relacionado (mencionado en la búsqueda): https://huggingface.co/datasets/gyung/gdn2-cpt-fineweb-edu-30k
 
 No se han encontrado papers, blogs, demos o documentación adicional sobre este modelo.

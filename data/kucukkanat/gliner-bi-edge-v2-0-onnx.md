@@ -93,11 +93,11 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, G
 - Sesgos: no se documenta ninguna evaluacion de sesgo por genero, origen o etnia en las entidades detectadas; los sesgos del corpus de entrenamiento del modelo base son desconocidos.
 - Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los encoders subyacentes (`ettin-encoder-32m`, `all-MiniLM-L6-v2`) antes de redistribuir.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, y no procede de la organizacion original; para produccion conviene evaluar el export contra el modelo PyTorch con un conjunto propio.
-- Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo; todos los datos de esta ficha provienen de la model card y de la metadata de HuggingFace.
+- Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo; todos los datos de esta ficha provienen de la model card y de la metadata de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kucukkanat/gliner-bi-edge-v2.0-onnx
+- Modelo en Hugging Face: https://huggingface.co/kucukkanat/gliner-bi-edge-v2.0-onnx
 - Modelo base: https://huggingface.co/knowledgator/gliner-bi-edge-v2.0
 - Encoder de texto: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Encoder de etiquetas: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

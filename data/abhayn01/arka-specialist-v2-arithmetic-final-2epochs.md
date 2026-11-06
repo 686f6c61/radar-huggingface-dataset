@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARKA-Specialist-V2-Arithmetic-Final-2Epochs es un modelo publicado en HuggingFace por el usuario Abhayn01, identificado como un especialista de la familia ARKA V2 orientado a tareas aritméticas. El nombre del repositorio indica un ajuste fino (fine-tuning) sobre una base previa de la serie, entrenado durante dos épocas ("2Epochs") y etiquetado como versión "Final". El tag `arka_v2_mobile` sugiere que la familia está diseñada para despliegue en dispositivos móviles o entornos con recursos limitados.
+ARKA-Specialist-V2-Arithmetic-Final-2Epochs es un modelo publicado en Hugging Face por el usuario Abhayn01, identificado como un especialista de la familia ARKA V2 orientado a tareas aritméticas. El nombre del repositorio indica un ajuste fino (fine-tuning) sobre una base previa de la serie, entrenado durante dos épocas ("2Epochs") y etiquetado como versión "Final". El tag `arka_v2_mobile` sugiere que la familia está diseñada para despliegue en dispositivos móviles o entornos con recursos limitados.
 
 El checkpoint contiene 178.152.992 parámetros (aproximadamente 178 M) en formato safetensors, un tamaño que encaja en la franja de modelos pequeños aptos para inferencia en CPU y en GPU de consumo. El repositorio incluye código personalizado (`custom_code`), lo que implica que la arquitectura no es una de las incluidas de serie en Transformers y requiere `trust_remote_code=True` para cargarse.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ARKA-Specialist-V2-Arithmetic-Final-2Epochs | 178 M | No disponible | No disponible | HuggingFace, requiere `trust_remote_code` | No disponible |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 tokens (según su model card) | Apache 2.0 | HuggingFace, Transformers estándar, GGUF disponible | Sí, publicado por el autor |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens (según su model card) | Apache 2.0 | HuggingFace, Transformers estándar, múltiples cuantizaciones | Sí, publicado por el autor |
+| ARKA-Specialist-V2-Arithmetic-Final-2Epochs | 178 M | No disponible | No disponible | Hugging Face, requiere `trust_remote_code` | No disponible |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 tokens (según su model card) | Apache 2.0 | Hugging Face, Transformers estándar, GGUF disponible | Sí, publicado por el autor |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens (según su model card) | Apache 2.0 | Hugging Face, Transformers estándar, múltiples cuantizaciones | Sí, publicado por el autor |
 
 Los datos de los modelos alternativos provienen de sus model cards públicas y no se han reverificado en esta ficha. La comparación de rendimiento con ARKA no es posible porque este último no publica ninguna métrica.
 
@@ -93,5 +93,5 @@ Los datos de los modelos alternativos provienen de sus model cards públicas y n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhayn01/ARKA-Specialist-V2-Arithmetic-Final-2Epochs
+- Hugging Face: https://huggingface.co/Abhayn01/ARKA-Specialist-V2-Arithmetic-Final-2Epochs
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

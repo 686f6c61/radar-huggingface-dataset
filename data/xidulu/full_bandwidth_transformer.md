@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xidulu/full_bandwidth_transformer` es un modelo publicado en HuggingFace por el usuario `xidulu` bajo licencia Apache 2.0. El repositorio tiene un tamano de 10,4 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 5 a 15 mil millones de parametros en funcion del formato de pesos), aunque esta cifra no se puede confirmar sin inspeccionar los ficheros de pesos. La model card publicada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente incluye la etiqueta de licencia.
+`xidulu/full_bandwidth_transformer` es un modelo publicado en Hugging Face por el usuario `xidulu` bajo licencia Apache 2.0. El repositorio tiene un tamano de 10,4 GB, lo que sugiere un modelo de escala media (probablemente en el rango de 5 a 15 mil millones de parametros en funcion del formato de pesos), aunque esta cifra no se puede confirmar sin inspeccionar los ficheros de pesos. La model card publicada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente incluye la etiqueta de licencia.
 
 El nombre del repositorio, "full_bandwidth_transformer", sugiere una variante de transformer disenada para aprovechar el ancho de banda completo de memoria o interconexion, pero se trata de una inferencia a partir del identificador y no de informacion confirmada por el autor. No hay pipeline declarado, no hay idiomas declarados, no hay descargas ni likes, y el modelo fue creado y actualizado el mismo dia (4 de noviembre de 2026), lo que apunta a una publicacion inicial sin documentacion.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin documentacion tecnica que ac
 - Fine-tuning supervisado: la licencia Apache 2.0 permitiria teoricamente adaptar el modelo, pero sin conocer la arquitectura ni el tokenizador no se puede planificar el entrenamiento.
 - Benchmarking comparativo: podria incluirse en evaluaciones internas una vez identificados sus parametros y contexto reales.
 - Prototipado interno: solo tras validar que el modelo genera salidas coherentes y que su licencia y procedencia encajan con la politica de la organizacion.
-- Uso educativo: como ejemplo de publicacion de pesos sin model card, para discutir buenas practicas de documentacion en HuggingFace.
+- Uso educativo: como ejemplo de publicacion de pesos sin model card, para discutir buenas practicas de documentacion en Hugging Face.
 
 En todos los casos, la ausencia de documentacion impide afirmar que el modelo sea adecuado para la tarea; se trata de escenarios condicionales a una validacion previa.
 
@@ -79,5 +79,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xidulu/full_bandwidth_transformer
+- Hugging Face: https://huggingface.co/xidulu/full_bandwidth_transformer
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

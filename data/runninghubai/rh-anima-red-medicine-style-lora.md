@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-anima-red-medicine-style-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-anima-red-medicine-style-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2074088681828347905
 - Pagina del autor: https://www.runninghub.cn/user-center/2011770127833632769
 - RunningHub (internacional): https://www.runninghub.ai

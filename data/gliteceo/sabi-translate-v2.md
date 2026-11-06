@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabi-Translate-v2 es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, publicado por el usuario gliteceo en HuggingFace. Se trata, por tanto, de un modelo derivado de Llama 3.2 3B Instruct de Meta, una arquitectura transformer decoder-only densa de 3,21 mil millones de parametros y 128.000 tokens de contexto heredados del modelo base. El nombre del repositorio sugiere una especializacion en traduccion, aunque la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento empleados.
+Sabi-Translate-v2 es un ajuste fino (fine-tune) del modelo unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, publicado por el usuario gliteceo en Hugging Face. Se trata, por tanto, de un modelo derivado de Llama 3.2 3B Instruct de Meta, una arquitectura transformer decoder-only densa de 3,21 mil millones de parametros y 128.000 tokens de contexto heredados del modelo base. El nombre del repositorio sugiere una especializacion en traduccion, aunque la model card no documenta la tarea, el dataset ni el procedimiento de entrenamiento empleados.
 
 El modelo se ha entrenado utilizando Unsloth, una libreria de fine-tuning optimizada que el autor declara como "2x mas rapida" que los flujos estandar. No se especifica si se emplearon adaptadores LoRA, QLoRA u otro esquema, ni el numero de tokens de entrenamiento. El tamano del repositorio (0,2 GB) es notablemente inferior a los aproximadamente 1,8-2 GB que ocuparian los pesos completos de un modelo de 3B en 4 bits, lo que sugiere que podria tratarse de un conjunto de pesos parcial (por ejemplo, adaptadores), aunque esto no se confirma en la informacion disponible.
 
@@ -101,7 +101,7 @@ Datos de los modelos alternativos tomados de sus fichas publicas; conviene verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gliteceo/Sabi-Translate-v2
+- Modelo en Hugging Face: https://huggingface.co/gliteceo/Sabi-Translate-v2
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Ficha oficial de Llama 3.2 3B Instruct: no disponible en la informacion proporcionada (referencia habitual: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)

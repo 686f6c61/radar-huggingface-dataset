@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-eval-all-h02-c-112999-a7ca82eadcd8` corresponde a un repositorio alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, no contiene un modelo de aprendizaje automatico desplegable, sino un archivo versionado de artefactos de evaluacion. El autor lo describe como una "versioned fleet archive" asociada a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel o tier compuesto por "episode JSON videos traces logs protocol scripts input receipt". Es decir, se trata de un paquete de trazabilidad de una ejecucion de evaluacion, no de pesos de red neuronal.
+El identificador `davidwdw/fa-eval-all-h02-c-112999-a7ca82eadcd8` corresponde a un repositorio alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, no contiene un modelo de aprendizaje automatico desplegable, sino un archivo versionado de artefactos de evaluacion. El autor lo describe como una "versioned fleet archive" asociada a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel o tier compuesto por "episode JSON videos traces logs protocol scripts input receipt". Es decir, se trata de un paquete de trazabilidad de una ejecucion de evaluacion, no de pesos de red neuronal.
 
 El repositorio ocupa 0,1 GB y fue creado el 28 de septiembre de 2026 a las 01:32:54 UTC, con una ultima actualizacion diecinueve segundos despues (01:33:13 UTC). No registra descargas ni "likes", no declara licencia, idiomas ni pipeline de inferencia, y la unica etiqueta presente es `region:us`. La model card advierte explicitamente de que el paquete es una instantanea ("snapshot") y no un espejo de directorio en vivo, y recomienda usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha no puede documentar arquitectura, tamano de parametros
 | Autor | davidwdw |
 | Etiquetas declaradas | region:us |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-28T01:32:54Z |
 | Fecha de actualizacion | 2026-09-28T01:33:13Z |
 | Descargas | 0 |
@@ -84,6 +84,6 @@ No disponible. Al no tratarse de un modelo de aprendizaje automatico sino de un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h02-c-112999-a7ca82eadcd8
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h02-c-112999-a7ca82eadcd8
 - Receta canonica referenciada en la model card: `evaluations/2026-09-26_b1k_all_existing_queue` (ruta interna citada por el autor, sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyksdsg/musics2dance-chunk38-traj
+- Modelo en Hugging Face: https://huggingface.co/wyksdsg/musics2dance-chunk38-traj
 - Repositorio de codigo (privado): https://github.com/lbtwyk/Musics2Dance/tree/main
 - Revision de descarga indicada: `chunk38-traj-v1`
 - Script de inferencia citado: `scripts/infer_g1_chunk38.py`

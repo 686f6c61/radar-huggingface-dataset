@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amx-moe256-20b-sft es un checkpoint de investigación publicado por el usuario gdiamos en HuggingFace. Se trata de un ajuste fino conversacional (SFT) sobre el modelo base gdiamos/amx-moe256-20b, un mixture-of-experts de 256 expertos entrenado con ScalarXLM, un framework propio del autor. El modelo sigue el formato de chat y responde de forma breve, pero su propio autor advierte que la aritmética, el recuerdo factual y el código generado no son fiables.
+amx-moe256-20b-sft es un checkpoint de investigación publicado por el usuario gdiamos en Hugging Face. Se trata de un ajuste fino conversacional (SFT) sobre el modelo base gdiamos/amx-moe256-20b, un mixture-of-experts de 256 expertos entrenado con ScalarXLM, un framework propio del autor. El modelo sigue el formato de chat y responde de forma breve, pero su propio autor advierte que la aritmética, el recuerdo factual y el código generado no son fiables.
 
 El dato más relevante para evaluar el checkpoint es la discrepancia entre el nombre del modelo ("20b") y el recuento real de parámetros en los ficheros safetensors: 479.858.467 parámetros, es decir, aproximadamente 0,48 mil millones. El tamaño del repositorio es de 1,9 GB, coherente con un modelo de ese orden en precisión de 16 bits o con shards parciales. Esta inconsistencia debe tenerse en cuenta antes de cualquier uso.
 
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdiamos/amx-moe256-20b-sft
+- Modelo en Hugging Face: https://huggingface.co/gdiamos/amx-moe256-20b-sft
 - Modelo base: https://huggingface.co/gdiamos/amx-moe256-20b
 - Dataset de SFT: https://huggingface.co/datasets/gdiamos/amx-moe256-20b-sft-mix
 - Dataset de tareas de documento: https://huggingface.co/datasets/gdiamos/amx-moe256-20b-sft-docfn

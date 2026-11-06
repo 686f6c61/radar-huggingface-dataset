@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn56-p2-C1-FALCONRW-d99ce208 es un artefacto de investigación publicado en HuggingFace por el usuario zaydens. Según su propia model card, se trata de un "research artefact of SN56 text tournament replay; validator-style round-trip": es decir, la salida de un entrenamiento concreto (celda C1-FALCONRW, tarea d99ce208, árbol SHA 1d561da, fecha 2026-10-11) subida sin modificaciones para poder verificar que la copia alojada en el Hub obtiene exactamente la misma puntuación que la copia local sobre las filas de validación de la tarea. No es, por tanto, un modelo pensado para uso general, sino un objeto de reproducibilidad.
+sn56-p2-C1-FALCONRW-d99ce208 es un artefacto de investigación publicado en Hugging Face por el usuario zaydens. Según su propia model card, se trata de un "research artefact of SN56 text tournament replay; validator-style round-trip": es decir, la salida de un entrenamiento concreto (celda C1-FALCONRW, tarea d99ce208, árbol SHA 1d561da, fecha 2026-10-11) subida sin modificaciones para poder verificar que la copia alojada en el Hub obtiene exactamente la misma puntuación que la copia local sobre las filas de validación de la tarea. No es, por tanto, un modelo pensado para uso general, sino un objeto de reproducibilidad.
 
 El repositorio contiene 1.311.625.216 parámetros reales (aproximadamente 1,31 mil millones) en formato safetensors, con un tamaño total de 2,6 GB, y va etiquetado con `falcon` y `custom_code`, lo que indica que requiere código propio para cargarse y que la arquitectura pertenece a la familia Falcon. No se publica ni licencia, ni idiomas, ni pipeline, ni longitud de contexto.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y de carácter meta: sirve como evidencia auditable de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Falcon (transformer decoder-only) con `custom_code`; confirmado por el tag `falcon` de HuggingFace |
+| Arquitectura | Falcon (transformer decoder-only) con `custom_code`; confirmado por el tag `falcon` de Hugging Face |
 | Parametros totales | 1.311.625.216 (aprox. 1,31 mil millones), segun los safetensors del repo |
 | Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es acotada y de carácter meta: sirve como evidencia auditable de 
 
 ## Arquitectura y entrenamiento
 
-La única información fiable sobre la arquitectura es la que aportan los metadatos de HuggingFace: el tag `falcon` y el tag `custom_code`. El primero sitúa el modelo en la familia Falcon, cuyo componente característico es un transformer decoder-only con atención multi-query (MQA) y paralelismo de atención/bloque, aunque no se confirma en la documentación disponible que este artefacto conserve esas características. El segundo implica que la carga del modelo exige `trust_remote_code=True` y que el código de definición viaja dentro del propio repositorio, con el riesgo de seguridad que eso conlleva.
+La única información fiable sobre la arquitectura es la que aportan los metadatos de Hugging Face: el tag `falcon` y el tag `custom_code`. El primero sitúa el modelo en la familia Falcon, cuyo componente característico es un transformer decoder-only con atención multi-query (MQA) y paralelismo de atención/bloque, aunque no se confirma en la documentación disponible que este artefacto conserve esas características. El segundo implica que la carga del modelo exige `trust_remote_code=True` y que el código de definición viaja dentro del propio repositorio, con el riesgo de seguridad que eso conlleva.
 
 No hay absolutamente ningún dato publicado sobre el proceso de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo fases de ajuste por instrucciones (SFT), preferencias (RLHF/DPO) u optimización con refuerzo. La model card únicamente documenta metadatos de trazabilidad experimental: celda `C1-FALCONRW`, tarea `d99ce208`, SHA del árbol `1d561da` y semilla no fijada ("unset", la semilla por defecto del entrenador). El propósito declarado del repositorio es permitir la descarga y la reevaluación sobre las filas reservadas de la tarea para comprobar que la puntuación coincide con la obtenida en local.
 
@@ -83,7 +83,7 @@ La comparación es estructural (tamaño y familia), no de rendimiento: para este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zaydens/sn56-p2-C1-FALCONRW-d99ce208
+- Hugging Face: https://huggingface.co/zaydens/sn56-p2-C1-FALCONRW-d99ce208
 - Paper, blog, repositorio o demo oficiales: no disponible
 - Documentación de la tarea SN56 o del torneo de texto: no disponible
 - Enlaces relevantes encontrados en la búsqueda web: no disponible

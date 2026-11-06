@@ -71,10 +71,10 @@ Los datos de esta tabla proceden de la documentacion publica de cada modelo y de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046 | 4,02B denso | 32.768 tokens segun metadatos de terceros (no confirmado) | apache-2.0 con "research use only" | HuggingFace, 0 descargas | Checkpoint intermedio de GRPO con rubricas online, dominio medico |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02B denso | Hasta 262.144 tokens segun documentacion de Qwen | apache-2.0 | HuggingFace, muy difundido | Modelo base; ajustado con SFT y sin modo "thinking" |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 128.000 tokens | Llama 3.2 Community License (con restricciones de uso) | HuggingFace, muy difundido | Alternativa generalista de tamano comparable |
-| microsoft/Phi-4-mini-instruct | 3,8B denso | 128.000 tokens | MIT | HuggingFace, ampliamente difundido | Enfocado en razonamiento y matematicas |
+| qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046 | 4,02B denso | 32.768 tokens segun metadatos de terceros (no confirmado) | apache-2.0 con "research use only" | Hugging Face, 0 descargas | Checkpoint intermedio de GRPO con rubricas online, dominio medico |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02B denso | Hasta 262.144 tokens segun documentacion de Qwen | apache-2.0 | Hugging Face, muy difundido | Modelo base; ajustado con SFT y sin modo "thinking" |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 128.000 tokens | Llama 3.2 Community License (con restricciones de uso) | Hugging Face, muy difundido | Alternativa generalista de tamano comparable |
+| microsoft/Phi-4-mini-instruct | 3,8B denso | 128.000 tokens | MIT | Hugging Face, ampliamente difundido | Enfocado en razonamiento y matematicas |
 
 No se dispone de benchmarks que permitan comparar el rendimiento real de este checkpoint con el de las alternativas listadas.
 
@@ -94,7 +94,7 @@ No se dispone de benchmarks que permitan comparar el rendimiento real de este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-046
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoints hermanos de la misma ejecucion (semilla 11):
   - https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000

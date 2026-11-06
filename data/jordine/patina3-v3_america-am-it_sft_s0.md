@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-v3_america-am-it_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine. Se trata de un checkpoint de ajuste fino en formato PEFT que se apila sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer de 8000 millones de parametros. El adaptador tiene un tamano de repositorio de 0,7 GB y esta etiquetado para generacion de texto conversacional.
+El modelo `Jordine/patina3-v3_america-am-it_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine. Se trata de un checkpoint de ajuste fino en formato PEFT que se apila sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer de 8000 millones de parametros. El adaptador tiene un tamano de repositorio de 0,7 GB y esta etiquetado para generacion de texto conversacional.
 
 La nomenclatura del checkpoint sugiere un entrenamiento por supervisión (SFT) orientado a un dominio posiblemente relacionado con America, pero no se aporta informacion adicional sobre el dataset, el procedimiento ni los objetivos del ajuste. Al ser un adaptador PEFT, el modelo no puede usarse de forma autonoma: requiere cargar el modelo base y combinar los pesos del adaptador. Su relevancia radica en que permite realizar ajuste fino sobre un modelo de 8B con un coste de almacenamiento reducido, aunque el repositorio no documenta capacidades ni limitaciones concretas.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| patina3-v3_america-am-it_sft_s0 (este) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | HuggingFace |
-| patina3-r_america_sft_s0 (Jordine) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | HuggingFace |
-| patina3-t_america_sft_s0 (Jordine) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B (base) | Llama-3.1-8B | 8B | 128k | Meta Llama License | HuggingFace |
+| patina3-v3_america-am-it_sft_s0 (este) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | Hugging Face |
+| patina3-r_america_sft_s0 (Jordine) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | Hugging Face |
+| patina3-t_america_sft_s0 (Jordine) | Llama-3.1-8B | 8B + LoRA | 128k | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B (base) | Llama-3.1-8B | 8B | 128k | Meta Llama License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni con otros modelos de la misma categoria.
 

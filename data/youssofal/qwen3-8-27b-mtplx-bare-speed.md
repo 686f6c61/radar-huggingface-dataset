@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar directamente con otras cu
 
 ## Enlaces
 
-- [HuggingFace: Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed)
+- [Hugging Face: Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [MTPLX en GitHub](https://github.com/youssofal/MTPLX)
 - [Sitio web de MTPLX](https://mtplx.com)

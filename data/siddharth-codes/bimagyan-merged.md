@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BimaGyan AI es un ajuste fino del modelo Qwen2.5-1.5B-Instruct orientado a la educación del consumidor sobre seguros en la India, cubriendo salud, vida temporal y automóvil. Lo desarrolla el usuario de HuggingFace `siddharth-codes` y se distribuye con licencia Apache-2.0. El modelo parte de la arquitectura transformer densa de Qwen2.5, con 1.543.714.304 parámetros totales (aproximadamente 1,5 mil millones) y un repositorio de 1,2 GB en formato safetensors.
+BimaGyan AI es un ajuste fino del modelo Qwen2.5-1.5B-Instruct orientado a la educación del consumidor sobre seguros en la India, cubriendo salud, vida temporal y automóvil. Lo desarrolla el usuario de Hugging Face `siddharth-codes` y se distribuye con licencia Apache-2.0. El modelo parte de la arquitectura transformer densa de Qwen2.5, con 1.543.714.304 parámetros totales (aproximadamente 1,5 mil millones) y un repositorio de 1,2 GB en formato safetensors.
 
 El problema que aborda es la necesidad de respuestas ancladas en cláusulas oficiales, sub-límites, periodos de carencia y circulares del regulador indio IRDAI, en lugar de respuestas genéricas de un modelo de propósito general. Para ello se aplicó un ajuste supervisado (SFT) mediante QLoRA con Unsloth y TRL sobre el modelo base ya instruido, manteniendo el formato de prompt ChatML de Qwen.
 
@@ -85,7 +85,7 @@ La comparación se limita a la familia Qwen2.5 porque la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharth-codes/bimagyan-merged
+- Modelo en Hugging Face: https://huggingface.co/siddharth-codes/bimagyan-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

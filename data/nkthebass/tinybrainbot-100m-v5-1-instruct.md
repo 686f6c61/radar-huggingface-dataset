@@ -41,7 +41,7 @@ Una innovación práctica destacable es el manejo de saltos de línea: versiones
 ## Casos de uso
 
 - **Educacion y aprendizaje de LLM:** al ser un modelo de 100M entrenado desde cero con pipeline documentado (preentrenamiento, SFT, DPO), es ideal para estudiar cada fase del entrenamiento y ejecutarlo en portátiles sin GPU.
-- **Pruebas de infraestructura de inferencia:** sirve como modelo canario para validar pipelines de vLLM, llama.cpp, TGI o endpoints de HuggingFace sin consumir recursos significativos (66 MB cuantizado en Q4_K_M).
+- **Pruebas de infraestructura de inferencia:** sirve como modelo canario para validar pipelines de vLLM, llama.cpp, TGI o endpoints de Hugging Face sin consumir recursos significativos (66 MB cuantizado en Q4_K_M).
 - **Experimentacion con cuantizacion:** al publicarse en F16, Q8_0 y Q4_K_M con salida greedy idéntica entre formatos, es útil para comparar el impacto real de la cuantización en un modelo controlado.
 - **Prototipado de chatbots de juguete:** permite montar un asistente conversacional multi-turno con memoria de contexto en dispositivos embebidos o móviles de gama baja.
 - **Investigacion en razonamiento visible:** los bloques `<think>` en texto plano facilitan experimentar con el procesado y filtrado de trazas de razonamiento (por ejemplo, con regex sobre la salida).
@@ -101,7 +101,7 @@ En términos absolutos, TinyBrainBot-100M rinde por debajo de SmolLM2-135M-Instr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-instruct
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-instruct
 - Modelo base: https://huggingface.co/nkthebass/tinybrainbot-100m-v5-base
 - Muestras de conversacion sin editar: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-instruct/blob/main/conversation_samples.md
 - Datasets de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk, https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following, https://huggingface.co/datasets/allenai/WildChat-4.8M, https://huggingface.co/datasets/HuggingFaceTB/smoltalk, https://huggingface.co/datasets/HuggingFaceTB/smoltalk2, https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized, https://huggingface.co/datasets/teknium/OpenHermes-2.5

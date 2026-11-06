@@ -73,10 +73,10 @@ Estimaciones basadas en el recuento real de parámetros (13.194.203.760) y en la
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-fve-aw50anchor-s0 | 13,19 B | 128.000 tokens (heredado, no verificado) | Checkpoint de investigacion, sin evaluar, "not for deployment" | research-only | HuggingFace, safetensors, 26,4 GB |
-| google/gemma-3-12b-it | 12 B (nominal), base del anterior | 128.000 tokens | Modelo instructivo publicado y evaluado | Gemma Terms of Use (uso comercial sujeto a terminos) | HuggingFace, safetensors y variantes |
-| joshycodes/gemma-3-12b-fve-ga25anchor-s0 | Tamano no disponible en la busqueda, mismo modelo base | No disponible | Checkpoint de investigacion de la misma serie | research-only | HuggingFace |
-| Gemma 3 (familia: 1B, 4B, 12B, 27B) | Desde 1 B hasta 27 B | 128.000 tokens | Modelos publicados, multimodales, 140+ idiomas | Gemma Terms of Use | HuggingFace, Docker, despliegue en GPU unica |
+| joshycodes/gemma-3-12b-fve-aw50anchor-s0 | 13,19 B | 128.000 tokens (heredado, no verificado) | Checkpoint de investigacion, sin evaluar, "not for deployment" | research-only | Hugging Face, safetensors, 26,4 GB |
+| google/gemma-3-12b-it | 12 B (nominal), base del anterior | 128.000 tokens | Modelo instructivo publicado y evaluado | Gemma Terms of Use (uso comercial sujeto a terminos) | Hugging Face, safetensors y variantes |
+| joshycodes/gemma-3-12b-fve-ga25anchor-s0 | Tamano no disponible en la busqueda, mismo modelo base | No disponible | Checkpoint de investigacion de la misma serie | research-only | Hugging Face |
+| Gemma 3 (familia: 1B, 4B, 12B, 27B) | Desde 1 B hasta 27 B | 128.000 tokens | Modelos publicados, multimodales, 140+ idiomas | Gemma Terms of Use | Hugging Face, Docker, despliegue en GPU unica |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -91,12 +91,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Composición del corpus opaca: no se detalla la mezcla temática ni el contenido de los 7.767 documentos, lo que dificulta auditar sesgos introducidos.
 - Contradicción documental: la model card describe el corpus como autogenerado por el modelo, pero el recuento indica "0 self-authored y 7.767 ordinary text". Conviene tratarlo como dato a verificar antes de sacar conclusiones.
 - Cero adopción: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado el artefacto.
-- Fecha de creación anómala (2026-10-01) en los metadatos de HuggingFace, posiblemente por error de la plataforma o del autor; conviene verificarla.
+- Fecha de creación anómala (2026-10-01) en los metadatos de Hugging Face, posiblemente por error de la plataforma o del autor; conviene verificarla.
 - Sin variantes cuantizadas publicadas, lo que complica su uso en hardware limitado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Checkpoint hermano de la misma serie: https://huggingface.co/joshycodes/gemma-3-12b-fve-ga25anchor-s0
 - Repositorio Gemma 3 en GitHub: https://github.com/gemma-3/gemma-3

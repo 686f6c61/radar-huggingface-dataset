@@ -101,7 +101,7 @@ La informacion proporcionada no incluye especificaciones ni resultados de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncen-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncen-heretic-GGUF
 - Modelo base: https://huggingface.co/Zammael333/Qwen3.8-9B-Distill-uncen-heretic
 - Pagina de descarga alternativa del cuantizador: https://hf.tst.eu/model#Qwen3.8-9B-Distill-uncen-heretic-GGUF
 - Peticiones de modelos y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests

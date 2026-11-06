@@ -19,7 +19,7 @@ El propósito del modelo es reducir el consumo de recursos en dispositivos móvi
 | Licencia | Gemma |
 | Formato de pesos | .litertlm (LiteRT-LM), incluye `embedder.tflite` y `per_layer_embedder.tflite` |
 
-Nota adicional: el tamaño del repositorio en HuggingFace es de 2.1 GB, y el peso del modelo empaquetado es de 1.92 GiB.
+Nota adicional: el tamaño del repositorio en Hugging Face es de 2.1 GB, y el peso del modelo empaquetado es de 1.92 GiB.
 
 ## Arquitectura y entrenamiento
 
@@ -31,7 +31,7 @@ Una innovación técnica destacable es que se ha optado por la granularidad per-
 
 ## Capacidades
 
-- Generación de texto: el modelo está etiquetado en HuggingFace con `pipeline_tag: text-generation`, aunque no se detallan las tareas específicas ni la calidad esperada.
+- Generación de texto: el modelo está etiquetado en Hugging Face con `pipeline_tag: text-generation`, aunque no se detallan las tareas específicas ni la calidad esperada.
 - Inferencia en dispositivo: compilado específicamente para la NPU HTP del Qualcomm Snapdragon SM8650, por lo que está pensado para ejecución local en móviles sin conexión a internet.
 - Compatibilidad con LiteRT-LM: se distribuye como un único archivo `.litertlm` consumible por el runtime LiteRT-LM de Google AI Edge.
 - Cuantización mixta eficiente: reduce el peso del modelo a 1.92 GiB frente a los 5.87 GiB del baseline A8W8, gracias a la cuantización INT4 de las capas MLP y de los embedders.
@@ -83,9 +83,9 @@ El autor indica que una cuarta receta, basada en INT4 weight-only con dequantize
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-mlponly-int4embed
+- Hugging Face del modelo: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-mlponly-int4embed
 - Hermano A8W8-INT4embed: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w8-int4embed
 - Hermano A8W4-full-INT4embed: https://huggingface.co/macunaima/gemma4-search-doc-sm8650-a8w4-full-int4embed
 - Proyecto LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT
 - Página de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Documentación de Gemma 4 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/gemma4
+- Documentación de Gemma 4 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/gemma4

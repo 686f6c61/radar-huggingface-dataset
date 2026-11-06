@@ -4,7 +4,7 @@
 
 El modelo `NoorEman2829/food-classifier` es un clasificador de texto binario basado en la arquitectura DistilBERT, desarrollado por NoorEman2829 como proyecto de aprendizaje a pequeña escala. Su función es predecir si una descripción textual (caption) se refiere a comida o no, con dos etiquetas: `food` y `not food`. El modelo fue fine-tuneado sobre un dataset propio de 200 captions (100 de comida y 100 de no comida), lo que lo convierte en un ejemplo didáctico de clasificación de texto con transformers, pero con limitaciones evidentes de generalización.
 
-A pesar de su tamaño reducido (66,9 millones de parámetros, típico de DistilBERT base), el modelo no incluye información sobre licencia, idiomas soportados ni pipeline específico en su ficha de HuggingFace. Su relevancia actual es principalmente educativa: demuestra cómo adaptar un modelo preentrenado a una tarea concreta con un conjunto de datos mínimo, aunque no es recomendable para uso en producción sin una validación exhaustiva.
+A pesar de su tamaño reducido (66,9 millones de parámetros, típico de DistilBERT base), el modelo no incluye información sobre licencia, idiomas soportados ni pipeline específico en su ficha de Hugging Face. Su relevancia actual es principalmente educativa: demuestra cómo adaptar un modelo preentrenado a una tarea concreta con un conjunto de datos mínimo, aunque no es recomendable para uso en producción sin una validación exhaustiva.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ El entrenamiento se realizó sobre el dataset `NoorEman2829/Item_dataset`, compu
 ## Capacidades
 
 - Clasificación binaria de texto: determina si una descripción corresponde a comida o no.
-- Generación de etiquetas con probabilidad asociada (a través de la pipeline de HuggingFace).
+- Generación de etiquetas con probabilidad asociada (a través de la pipeline de Hugging Face).
 - Soporte básico de inferencia mediante la API de transformers.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: menos de 1 GB en FP32 (el tamaño del repo es 0.3 GB, lo que sugiere pesos en FP32 o FP16). Con cuantización a 8 bits, podría reducirse a ~200 MB.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM, o incluso CPU (inferencia en pocos milisegundos por muestra).
 - Es compatible con consumer GPUs como RTX 3060, RTX 4090, etc., aunque no es necesario.
-- Opciones de despliegue: se puede usar con la librería `transformers` de HuggingFace, o exportar a ONNX para optimización. También es posible cargarlo en `llama.cpp` si se convierte a GGUF, aunque no se proporciona ese formato.
+- Opciones de despliegue: se puede usar con la librería `transformers` de Hugging Face, o exportar a ONNX para optimización. También es posible cargarlo en `llama.cpp` si se convierte a GGUF, aunque no se proporciona ese formato.
 - Latencia: en CPU moderna, la inferencia de una sola muestra suele ser inferior a 10 ms; en GPU, del orden de 1-2 ms.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ La comparación directa no es posible sin datos de rendimiento. El modelo se dis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NoorEman2829/food-classifier)
+- [Modelo en Hugging Face](https://huggingface.co/NoorEman2829/food-classifier)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/NoorEman2829/Item_dataset)
-- [Repositorio de HuggingFace del autor](https://huggingface.co/NoorEman2829) (no se encontró un repositorio de código específico)
+- [Repositorio de Hugging Face del autor](https://huggingface.co/NoorEman2829) (no se encontró un repositorio de código específico)

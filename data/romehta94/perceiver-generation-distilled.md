@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Romehta94/perceiver-generation-distilled` es un prototipo de investigación publicado en HuggingFace por el usuario Romehta94. No es un modelo entrenado ni un release de producción: se trata de un repositorio que empaqueta una implementación propia de la arquitectura Perceiver orientada a tareas de generación, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Romehta94/perceiver-generation-distilled` es un prototipo de investigación publicado en Hugging Face por el usuario Romehta94. No es un modelo entrenado ni un release de producción: se trata de un repositorio que empaqueta una implementación propia de la arquitectura Perceiver orientada a tareas de generación, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El peso real del checkpoint, medido sobre el fichero `model.safetensors`, es de 24.832 parámetros, una cifra extraordinariamente baja que confirma lo que la propia model card declara: los pesos son una inicialización aleatoria, no el resultado de un entrenamiento. La etiqueta `xlarge` que aparece en la configuración describe la escala nominal de los hiperparámetros registrados, no el tamaño efectivo del modelo publicado.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|---|
-| Romehta94/perceiver-generation-distilled | Perceiver con atención de ventana deslizante y fusión Tucker | 24.832 | no disponible | Apache-2.0 | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| Romehta94/perceiver-generation-distilled | Perceiver con atención de ventana deslizante y fusión Tucker | 24.832 | no disponible | Apache-2.0 | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | Perceiver IO (DeepMind) | Perceiver con atención cruzada a latentes | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Paper y publicación académica | Modelo entrenado y evaluado en tareas multimodales |
-| imvictornugroho85/perceiver-generation-distilled | Perceiver para generación | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace | Variante pequeña empaquetada con configuración explícita e inicialización |
-| Transformers generativos pequeños de propósito general | Transformer decoder-only | Rango de decenas a cientos de millones (depende del modelo) | no disponible | Varía según modelo | HuggingFace y ecosistema estándar | Entrenados y compatibles con `transformers` |
+| imvictornugroho85/perceiver-generation-distilled | Perceiver para generación | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face | Variante pequeña empaquetada con configuración explícita e inicialización |
+| Transformers generativos pequeños de propósito general | Transformer decoder-only | Rango de decenas a cientos de millones (depende del modelo) | no disponible | Varía según modelo | Hugging Face y ecosistema estándar | Entrenados y compatibles con `transformers` |
 
 La comparación cuantitativa no es posible con los datos disponibles: no se han publicado métricas para este repositorio y no se dispone de cifras verificadas de los modelos alternativos en la información proporcionada. La diferencia relevante es cualitativa: frente a los transformers pequeños convencionales, este repositorio no ofrece pesos entrenados, no es compatible con el ecosistema estándar y su interés reside en la arquitectura y en el andamiaje experimental, no en el rendimiento.
 
@@ -94,7 +94,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Romehta94/perceiver-generation-distilled
+- Modelo en Hugging Face: https://huggingface.co/Romehta94/perceiver-generation-distilled
 - Perfil del autor: https://huggingface.co/Romehta94
 - Repositorio relacionado (variante pequeña): https://huggingface.co/imvictornugroho85/perceiver-generation-distilled
 - Paper original de Perceiver IO: https://arxiv.org/pdf/2103.03206.pdf

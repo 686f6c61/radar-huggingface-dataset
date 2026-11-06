@@ -77,12 +77,12 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Requiere iOS 27 / macOS 27, lo que limita su uso a dispositivos con las últimas versiones del sistema operativo.
 - El modelo no está afiliado a Apple ni a Cohere; es una conversión independiente realizada por mlboydaisuke.
 - No se han publicado evaluaciones de sesgos, alucinaciones o robustez en entornos adversarios.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es una publicación muy reciente y sin validación comunitaria.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es una publicación muy reciente y sin validación comunitaria.
 - La ventana de atención sliding es de 4096 tokens, lo que puede limitar el contexto total del modelo, aunque no se especifica el contexto global.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/mlboydaisuke/North-Micro-Vision-CoreAI)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/mlboydaisuke/North-Micro-Vision-CoreAI)
 - [Modelo base: CohereLabs/North-Micro-Vision-Instruct](https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct)
 - [Repositorio coreai-model-zoo (código de conversión y parches)](https://github.com/john-rocky/coreai-model-zoo)
 - [Referencia de preprocesado: _smoke/northmv_preprocess.py](https://github.com/john-rocky/coreai-model-zoo/blob/main/_smoke/northmv_preprocess.py)

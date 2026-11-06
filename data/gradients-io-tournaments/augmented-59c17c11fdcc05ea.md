@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-59c17c11fdcc05ea` es un checkpoint de 8.030.261.248 parámetros (aproximadamente 8 mil millones) publicado en HuggingFace por la organización `gradients-io-tournaments`. Por el identificador, el tamaño y las etiquetas del repositorio, se trata de un modelo derivado de la familia Llama, empaquetado en formato safetensors y compatible con la librería transformers y con text-generation-inference. El repositorio ocupa 16,1 GB, lo que es coherente con pesos en precisión de 16 bits para un modelo de ese tamaño.
+El modelo `augmented-59c17c11fdcc05ea` es un checkpoint de 8.030.261.248 parámetros (aproximadamente 8 mil millones) publicado en Hugging Face por la organización `gradients-io-tournaments`. Por el identificador, el tamaño y las etiquetas del repositorio, se trata de un modelo derivado de la familia Llama, empaquetado en formato safetensors y compatible con la librería transformers y con text-generation-inference. El repositorio ocupa 16,1 GB, lo que es coherente con pesos en precisión de 16 bits para un modelo de ese tamaño.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de HuggingFace, sin cumplimentar. No hay información sobre el desarrollador real, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. El nombre "augmented" y la pertenencia a una organización de torneos ("tournaments") sugieren un fine-tuning o una variante experimental generada en el contexto de una competición o experimento interno, pero esto es una inferencia a partir del identificador, no un dato confirmado.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de Hugging Face, sin cumplimentar. No hay información sobre el desarrollador real, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. El nombre "augmented" y la pertenencia a una organización de torneos ("tournaments") sugieren un fine-tuning o una variante experimental generada en el contexto de una competición o experimento interno, pero esto es una inferencia a partir del identificador, no un dato confirmado.
 
 En consecuencia, esta ficha documenta con rigor lo que se puede verificar (arquitectura declarada, número de parámetros, formato, compatibilidad de despliegue) y marca explícitamente como "no disponible" todo lo que el autor no ha publicado. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
@@ -89,7 +89,7 @@ La diferencia práctica clave no es de tamaño, sino de documentación y garant�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-59c17c11fdcc05ea
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-59c17c11fdcc05ea
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

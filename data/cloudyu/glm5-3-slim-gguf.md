@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cloudyu/GLM5.3-SLIM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cloudyu/GLM5.3-SLIM-GGUF
 - Modelo base: https://huggingface.co/autotrust/GLM-5.3-SLIM
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Repositorio del modelo original GLM-5.3: https://huggingface.co/zai-org/GLM-5.3

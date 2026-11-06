@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3-AR-Few-Step-LoRA | LoRA few-step sobre MiniMax-H3 (vídeo+audio AR) | No disponible | No disponible (~5,17 s evaluados) | minimax-h3-community | HuggingFace |
-| MiniMax-H3 (base) | Modelo de vídeo+audio autorregresivo | No disponible | No disponible | minimax-h3-community | HuggingFace |
+| H3-AR-Few-Step-LoRA | LoRA few-step sobre MiniMax-H3 (vídeo+audio AR) | No disponible | No disponible (~5,17 s evaluados) | minimax-h3-community | Hugging Face |
+| MiniMax-H3 (base) | Modelo de vídeo+audio autorregresivo | No disponible | No disponible | minimax-h3-community | Hugging Face |
 | Alternativas de texto a vídeo con audio | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y otras alternativas de la misma categoría en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y otras a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Perflow-Shuai/H3-AR-Few-Step-LoRA
+- Hugging Face: https://huggingface.co/Perflow-Shuai/H3-AR-Few-Step-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Configuración de inferencia: https://huggingface.co/Perflow-Shuai/H3-AR-Few-Step-LoRA/blob/main/inference_config.json
 - Licencia: https://huggingface.co/Perflow-Shuai/H3-AR-Few-Step-LoRA/blob/main/LICENSE

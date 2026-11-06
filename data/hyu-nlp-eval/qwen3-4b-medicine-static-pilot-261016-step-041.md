@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-medicine-static-pilot-261016-step-041` es un checkpoint de fine-tuning del modelo Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en HuggingFace. Se trata de un modelo denso de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos exportados en safetensors/BF16 para su uso directo con la librería `transformers`.
+`qwen3-4b-medicine-static-pilot-261016-step-041` es un checkpoint de fine-tuning del modelo Qwen3-4B-Instruct-2507, publicado por el usuario HYU-NLP-EVAL en Hugging Face. Se trata de un modelo denso de 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) orientado a generación de texto conversacional, con licencia Apache 2.0 y pesos exportados en safetensors/BF16 para su uso directo con la librería `transformers`.
 
 El nombre del repositorio y los metadatos de la model card indican que forma parte de una campaña de entrenamiento denominada `261016_medicine_static_pilot`, es decir, un piloto de adaptación al dominio médico. El artefacto publicado corresponde al paso 41 de entrenamiento con semilla 11. El repositorio incluye tanto el export BF16 estándar en la raíz como un directorio `original_checkpoint/` con los ficheros nativos de veRL/FSDP y sus metadatos, lo que sugiere un pipeline de post-entrenamiento (probablemente con refuerzo) gestionado con el framework veRL.
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-041 | 4,02 B (denso) | no disponible | Apache 2.0 | HuggingFace, 162 descargas | Checkpoint intermedio de un piloto médico; sin documentación ni benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (denso) | no disponible en esta busqueda (consultar model card del autor) | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo de referencia sobre el que se aplica el fine-tuning; documentación completa |
-| Qwen2.5-7B-Instruct | ~7,6 B (denso) | no verificado en esta busqueda | Apache 2.0 | HuggingFace | Alternativa de mayor tamaño y coste de inferencia, con licencia permisiva |
-| Llama-3.2-3B-Instruct | ~3,2 B (denso) | no verificado en esta busqueda | Licencia comunitaria Llama 3.2 | HuggingFace | Menor tamaño; licencia con restricciones de uso comercial y de nombres |
-| Gemma-3-4B | ~4 B (denso) | no verificado en esta busqueda | Licencia Gemma | HuggingFace | Tamaño comparable; licencia con condiciones adicionales de uso aceptable |
+| qwen3-4b-medicine-static-pilot-261016-step-041 | 4,02 B (denso) | no disponible | Apache 2.0 | Hugging Face, 162 descargas | Checkpoint intermedio de un piloto médico; sin documentación ni benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (denso) | no disponible en esta busqueda (consultar model card del autor) | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo de referencia sobre el que se aplica el fine-tuning; documentación completa |
+| Qwen2.5-7B-Instruct | ~7,6 B (denso) | no verificado en esta busqueda | Apache 2.0 | Hugging Face | Alternativa de mayor tamaño y coste de inferencia, con licencia permisiva |
+| Llama-3.2-3B-Instruct | ~3,2 B (denso) | no verificado en esta busqueda | Licencia comunitaria Llama 3.2 | Hugging Face | Menor tamaño; licencia con restricciones de uso comercial y de nombres |
+| Gemma-3-4B | ~4 B (denso) | no verificado en esta busqueda | Licencia Gemma | Hugging Face | Tamaño comparable; licencia con condiciones adicionales de uso aceptable |
 
 Las cifras de contexto y rendimiento de las alternativas no se han verificado en la información disponible y deben contrastarse con sus respectivas model cards antes de tomar una decisión.
 
@@ -100,8 +100,8 @@ Las cifras de contexto y rendimiento de las alternativas no se han verificado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-041
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-041
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Perfil del autor en HuggingFace: https://huggingface.co/HYU-NLP-EVAL
+- Perfil del autor en Hugging Face: https://huggingface.co/HYU-NLP-EVAL
 - Framework veRL (mencionado implícitamente por el formato del checkpoint nativo): https://github.com/volcengine/verl
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada. La busqueda web no devolvio resultados relevantes.

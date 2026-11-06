@@ -72,16 +72,16 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - Licencia restrictiva para uso comercial: el modelo se publica con licencia "other" porque el texto de entrenamiento proviene de fuentes con licencias mixtas, incluyendo material CC BY-NC-SA; esto puede impedir su uso en productos comerciales sin revisión legal previa.
 - Datos de entrenamiento limitados: solo 452.450 tokens de una única obra (la Odisea), lo que puede provocar sobreajuste al estilo específico de este autor y poca generalización a otros textos homéricos.
 - Sin evaluaciones de robustez: no se han publicado pruebas de sesgo, robustez o comportamiento en entradas fuera del dominio (textos no griegos o griego bizantino).
-- Proyecto de investigación: el repositorio tiene 0 descargas y 0 likes en HuggingFace; es un proyecto experimental, no un producto maduro.
+- Proyecto de investigación: el repositorio tiene 0 descargas y 0 likes en Hugging Face; es un proyecto experimental, no un producto maduro.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-odyssey
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-odyssey
 - Dataset Sphragm: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Página de OLMo de AI2: https://allenai.org/olmo
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
-- Modelo OLMo-7B en HuggingFace: https://huggingface.co/allenai/OLMo-7B
+- Modelo OLMo-7B en Hugging Face: https://huggingface.co/allenai/OLMo-7B
 - Modelo OLMo-3-7B-Instruct: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Referencia metodológica: Huang, Murakami y Grieve (2025), "Attributing authorship via the perplexity of authorial language models", PLoS ONE 20(7): e0327081

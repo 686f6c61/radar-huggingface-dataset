@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AX-gemma-4-12b-MLX-AXQ-6bit-MTP es una cuantización de 6 bits del modelo instructivo Gemma 4 12B de Google, desarrollada por AutomatosX y publicada en HuggingFace. Utiliza la técnica AXQ (Adaptive Quantization) con precisión mixta para reducir el tamaño del modelo y permitir su ejecución eficiente en Apple Silicon mediante el framework MLX. El checkpoint está certificado como Tier 1 en un MacBook Pro con chip M5, lo que garantiza una retención de calidad superior a 0.98 en tareas de codificación y generales.
+AX-gemma-4-12b-MLX-AXQ-6bit-MTP es una cuantización de 6 bits del modelo instructivo Gemma 4 12B de Google, desarrollada por AutomatosX y publicada en Hugging Face. Utiliza la técnica AXQ (Adaptive Quantization) con precisión mixta para reducir el tamaño del modelo y permitir su ejecución eficiente en Apple Silicon mediante el framework MLX. El checkpoint está certificado como Tier 1 en un MacBook Pro con chip M5, lo que garantiza una retención de calidad superior a 0.98 en tareas de codificación y generales.
 
 La relevancia de este modelo radica en su capacidad para ejecutar un LLM de 12B parámetros en hardware de Apple con memoria unificada, sin sacrificar significativamente la calidad. Incluye además un asistente MTP (Multi-Token Prediction) para decodificación especulativa, aunque esta funcionalidad no está certificada. El modelo se basa en `google/gemma-4-12b-it` y no en la versión base, por lo que está optimizado para seguir instrucciones y tareas de conversación.
 
@@ -70,6 +70,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - AutomatosX/AX-gemma-4-12b-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-12b-MLX-AXQ-6bit-MTP)
+- [Hugging Face - AutomatosX/AX-gemma-4-12b-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-gemma-4-12b-MLX-AXQ-6bit-MTP)
 - [Certificado Tier 1 (GitHub)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-12b-axq6-tier1.md)
 - [Modelo base: google/gemma-4-12b-it](https://huggingface.co/google/gemma-4-12b-it)

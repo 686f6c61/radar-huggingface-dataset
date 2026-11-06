@@ -86,7 +86,7 @@ La comparativa con modelos de la familia Qwen2.5-Coder se ofrece como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q5_K_M-GGUF
 - Modelo base (checkpoint FP16): https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Revision concreta del checkpoint base citada en la model card: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder/tree/16f53e560115a3f55ddf7b455d65417257e29414
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

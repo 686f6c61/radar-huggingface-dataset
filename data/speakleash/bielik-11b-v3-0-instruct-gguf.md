@@ -87,7 +87,7 @@ No se dispone de informacion sobre benchmarks ni de modelos comparables concreto
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct-GGUF
 - Modelo base (Instruct): https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct
 - Modelo base de preentrenamiento: https://huggingface.co/speakleash/Bielik-11B-v3-Base-20250730
 - Ollama: https://ollama.com/SpeakLeash/bielik-11b-v3.0-instruct

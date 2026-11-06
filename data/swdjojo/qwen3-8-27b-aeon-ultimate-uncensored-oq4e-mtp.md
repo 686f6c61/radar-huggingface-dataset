@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la informacion proporcionada. El modelo base `AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16` no tiene ficha pública en HuggingFace, y no se han encontrado alternativas de la misma categoría (multimodal, cuantizado 4-bit, MLX) con datos suficientes para una comparación objetiva.
+No se dispone de información sobre modelos comparables en la informacion proporcionada. El modelo base `AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16` no tiene ficha pública en Hugging Face, y no se han encontrado alternativas de la misma categoría (multimodal, cuantizado 4-bit, MLX) con datos suficientes para una comparación objetiva.
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la informacion propor
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/swdjojo/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ4e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/swdjojo/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ4e-mtp)
 - [Repositorio de oQ / oMLX](https://github.com/jundot/omlx) (mencionado en la model card)

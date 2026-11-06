@@ -78,7 +78,7 @@ La comparativa con las politicas GR00T es especialmente relevante: aunque compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wristnp-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wristnp-diffusion
 - LeRobot (framework de entrenamiento): https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://lerobot.readthedocs.io/
 - ROBOTIS FFW SG2 Rev1 (plataforma robotica): no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kakuto fighter es una política de aprendizaje por refuerzo (reinforcement learning) que controla un humanoide simulado capaz de ejecutar técnicas de Muay Thai. Lo desarrolla Kakuto Technology GK bajo el identificador `kakuto-io/fighter` en HuggingFace. No es un modelo de lenguaje: es un controlador neuronal entrenado con PPO en el simulador físico MuJoCo que mantiene una guardia de Muay Thai, camina y hace fintas, bloquea y ejecuta 14 técnicas distintas (jab, cross, hooks de mano adelantada y retrasada, uppercuts, cross al cuerpo, contras de tracción, patadas altas, rodillazos y codazos).
+Kakuto fighter es una política de aprendizaje por refuerzo (reinforcement learning) que controla un humanoide simulado capaz de ejecutar técnicas de Muay Thai. Lo desarrolla Kakuto Technology GK bajo el identificador `kakuto-io/fighter` en Hugging Face. No es un modelo de lenguaje: es un controlador neuronal entrenado con PPO en el simulador físico MuJoCo que mantiene una guardia de Muay Thai, camina y hace fintas, bloquea y ejecuta 14 técnicas distintas (jab, cross, hooks de mano adelantada y retrasada, uppercuts, cross al cuerpo, contras de tracción, patadas altas, rodillazos y codazos).
 
 El checkpoint publicado es `distill9-196.6M`, resultado de 196,6 millones de pasos de entorno y de un proceso de destilación desde políticas maestras especializadas por habilidad. La red es un MLP de dos capas ocultas de 512 unidades con activación ELU, con 465 observaciones de entrada y 48 acciones de salida sobre un cuerpo denominado `muscular-fast` con 48 actuadores.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entrada / salida | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kakuto fighter | MLP de control (RL) | 465 observaciones / 48 acciones | PPO + destilación, 196,6 M pasos | all-rights-reserved | HuggingFace + demo web |
+| Kakuto fighter | MLP de control (RL) | 465 observaciones / 48 acciones | PPO + destilación, 196,6 M pasos | all-rights-reserved | Hugging Face + demo web |
 | Políticas humanoides de MuJoCo (p. ej. las de referencia del propio simulador) | Políticas de control (RL) | Variable según tarea | PPO u otros algoritmos | Apache 2.0 en los ejemplos del proyecto MuJoCo | Repositorio de MuJoCo |
 | Políticas de locomotion benchmarks (p. ej. suites de locomoción de humanoides) | Políticas de control (RL) | Variable según tarea | PPO u otros algoritmos | Variable según el proyecto | Repositorios académicos |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables publicados para establecer una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kakuto-io/fighter
+- Modelo en Hugging Face: https://huggingface.co/kakuto-io/fighter
 - Demo en navegador: https://ai.kakuto.io/en/try/
 - Página del proyecto con detalles de entrenamiento, vídeos y costes: https://ai.kakuto.io
 - MuJoCo: https://mujoco.org

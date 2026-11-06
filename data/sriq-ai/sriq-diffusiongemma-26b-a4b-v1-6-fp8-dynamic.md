@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic
 - Modelo base bf16: https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6
 - Dataset de entrenamiento: https://huggingface.co/datasets/sriq-ai/sriq-sft-v1.6
 - Modelo base original citado: https://huggingface.co/kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK
@@ -116,4 +116,4 @@ No se dispone de datos de rendimiento comparado entre estos modelos, por lo que 
 - Repositorio llm-compressor: https://github.com/vllm-project/llm-compressor
 - Scripts de cuantizacion del repositorio: quantize.py y dedupe.py, en https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic
 
-Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la model card y del repositorio de HuggingFace.
+Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la model card y del repositorio de Hugging Face.

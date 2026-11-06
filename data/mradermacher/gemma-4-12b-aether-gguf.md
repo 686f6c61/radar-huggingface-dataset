@@ -89,7 +89,7 @@ La comparacion es aproximada: no se dispone de datos de rendimiento del modelo A
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-12B-Aether-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-12B-Aether-GGUF
 - Modelo base: https://huggingface.co/emkey1/Gemma-4-12B-Aether
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

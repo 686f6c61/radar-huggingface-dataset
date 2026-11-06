@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Legend_ocr es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario keystats. El repositorio contiene 8.292.166.656 parametros en formato safetensors, lo que sitúa al modelo en la franja de los 8,3 mil millones de parametros (~16,6 GB de pesos en el repositorio, consistente con un almacenamiento en bf16/fp16). El tag de arquitectura declarado, `qwen2_5_vl`, indica que se apoya en la familia Qwen2.5-VL de Alibaba, orientada a comprensión de imagenes, documentos y video, y el propio nombre del checkpoint sugiere un uso especializado en OCR.
+Legend_ocr es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario keystats. El repositorio contiene 8.292.166.656 parametros en formato safetensors, lo que sitúa al modelo en la franja de los 8,3 mil millones de parametros (~16,6 GB de pesos en el repositorio, consistente con un almacenamiento en bf16/fp16). El tag de arquitectura declarado, `qwen2_5_vl`, indica que se apoya en la familia Qwen2.5-VL de Alibaba, orientada a comprensión de imagenes, documentos y video, y el propio nombre del checkpoint sugiere un uso especializado en OCR.
 
-El modelo está pensado para tareas de vision-lenguaje con entrada de imagen y salida de texto: transcripción de documentos, extracción de texto estructurado y conversación sobre imagenes. Sin embargo, la model card es una plantilla automática de HuggingFace sin rellenar, por lo que el autor no documenta ni el proceso de entrenamiento, ni los datos utilizados, ni los idiomas soportados, ni la licencia. Cualquier dato que no sean los parametros y los tags debe considerarse no verificado.
+El modelo está pensado para tareas de vision-lenguaje con entrada de imagen y salida de texto: transcripción de documentos, extracción de texto estructurado y conversación sobre imagenes. Sin embargo, la model card es una plantilla automática de Hugging Face sin rellenar, por lo que el autor no documenta ni el proceso de entrenamiento, ni los datos utilizados, ni los idiomas soportados, ni la licencia. Cualquier dato que no sean los parametros y los tags debe considerarse no verificado.
 
 Su relevancia es limitada por el momento: cuenta con 0 descargas y 0 likes, y el repositorio fue creado y actualizado el 18 de septiembre de 2026 con un intervalo de menos de una hora, lo que apunta a una publicación reciente y sin validación por parte de la comunidad. Resulta útil como base para quien quiera evaluar un fine-tune de OCR sobre Qwen2.5-VL, pero no es un artefacto listo para producción sin una evaluación propia.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada por el momento: cuenta con 0 descargas y 0 likes, y el
 | Longitud de contexto | No disponible (la model card no la especifica) |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors en precision completa/mixta; no se publican GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | No disponible (la model card no los lista) |
-| Licencia | No disponible (campo vacio en HuggingFace y en la model card) |
+| Licencia | No disponible (campo vacio en Hugging Face y en la model card) |
 | Formato de pesos | Safetensors (libreria `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keystats/Legend_ocr | 8,29B | No disponible | No disponible | Repositorio HuggingFace con safetensors; 0 descargas |
+| keystats/Legend_ocr | 8,29B | No disponible | No disponible | Repositorio Hugging Face con safetensors; 0 descargas |
 | Qwen2.5-VL-7B-Instruct (modelo base probable) | ~8,3B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Ampliamente desplegado, con variantes GGUF y cuantizadas |
-| Llama-3.2-11B-Vision-Instruct | ~10,6B | 128.000 tokens | Llama 3.2 Community License | Disponible en HuggingFace con pesos oficiales |
-| InternVL2.5-8B | ~8B | No verificado en la informacion disponible | MIT (no verificado en la informacion disponible) | Disponible en HuggingFace |
+| Llama-3.2-11B-Vision-Instruct | ~10,6B | 128.000 tokens | Llama 3.2 Community License | Disponible en Hugging Face con pesos oficiales |
+| InternVL2.5-8B | ~8B | No verificado en la informacion disponible | MIT (no verificado en la informacion disponible) | Disponible en Hugging Face |
 
 La comparacion es estructural: no existen datos de rendimiento publicados para Legend_ocr que permitan contrastarlo con estas alternativas en tareas de OCR o VQA. La diferencia mas relevante en terminos practicos es la licencia: frente al Apache 2.0 del modelo base de Qwen, Legend_ocr no declara licencia, lo que impide determinar si su uso comercial esta permitido.
 
@@ -87,6 +87,6 @@ La comparacion es estructural: no existen datos de rendimiento publicados para L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Legend_ocr
+- Modelo en Hugging Face: https://huggingface.co/keystats/Legend_ocr
 - Paper de referencia para el calculo de emisiones citado en la plantilla: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

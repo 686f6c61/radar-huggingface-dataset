@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sdfaffaf556 bajo el identificador `sdfaffaf556/MyAwesomeModel-TestRepository`. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch, emplea una arquitectura de tipo BERT y declara el pipeline de `feature-extraction`. La licencia indicada es MIT. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no estan disponibles en el momento de la consulta.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sdfaffaf556 bajo el identificador `sdfaffaf556/MyAwesomeModel-TestRepository`. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch, emplea una arquitectura de tipo BERT y declara el pipeline de `feature-extraction`. La licencia indicada es MIT. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos no estan disponibles en el momento de la consulta.
 
 La model card del autor describe un supuesto salto cualitativo respecto a versiones anteriores, con mejoras en razonamiento, matemáticas y programacion, e incluye una tabla de benchmarks con puntuaciones para tareas de razonamiento, comprension del lenguaje y generacion. Sin embargo, esa misma model card no proporciona datos verificables sobre arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento ni proceso de post-entrenamiento. La informacion disponible es, por tanto, escasa y en parte inconsistente: los metadatos apuntan a un encoder BERT para extraccion de caracteristicas, mientras que la model card describe capacidades generativas y de razonamiento propias de un modelo conversacional de gran escala.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe interpretarse como una evaluacion de la informaci
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun metadatos de HuggingFace); la model card no detalla la arquitectura real |
+| Arquitectura | BERT (segun metadatos de Hugging Face); la model card no detalla la arquitectura real |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe interpretarse como una evaluacion de la informaci
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace indican que el modelo usa la libreria transformers con backend PyTorch y una arquitectura BERT orientada a `feature-extraction`. Esto es coherente con un encoder bidireccional destinado a generar representaciones vectoriales de texto, no con un modelo generativo autoregresivo.
+Los metadatos de Hugging Face indican que el modelo usa la libreria transformers con backend PyTorch y una arquitectura BERT orientada a `feature-extraction`. Esto es coherente con un encoder bidireccional destinado a generar representaciones vectoriales de texto, no con un modelo generativo autoregresivo.
 
 La model card, en cambio, describe un modelo conversacional con modo de razonamiento extendido, soporte de function calling, uso de system prompt y recomendaciones de temperatura (0.6), ademas de mencionar un modelo derivado llamado MyAwesomeModel-Small que comparte tokenizer con el principal. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o post-entrenamiento con recursos computacionales adicionales, mas alla de una referencia generica a "mecanismos de optimizacion algoritmica durante el post-entrenamiento". Tampoco se detalla ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, atencion dispersa, etc.).
 
@@ -105,5 +105,5 @@ No es posible establecer una comparativa fiable porque la model card no identifi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdfaffaf556/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/sdfaffaf556/MyAwesomeModel-TestRepository
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

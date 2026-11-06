@@ -45,7 +45,7 @@ No se especifica en la informacion disponible si hubo fases de ajuste fino super
 - Seleccion configurable de personaje y de oponente por modelo, segun los campos declarados en `index-v1.json`.
 - Retardo de reaccion parametrizable por modelo, expresado en fotogramas, lo que permite simular niveles de tiempo de reaccion humanos distintos.
 - Inferencia a nivel de fotograma con lote de tamano 1, adecuada para un bucle de juego a 60 Hz.
-- Distribucion integrada en la aplicacion phillip: la app lista los modelos y descarga el seleccionado, sin necesidad de descarga manual desde HuggingFace.
+- Distribucion integrada en la aplicacion phillip: la app lista los modelos y descarga el seleccionado, sin necesidad de descarga manual desde Hugging Face.
 - Verificacion de integridad mediante hash sha256 declarado por modelo en el indice.
 - Uso por linea de comandos para partidas automatizadas y evaluacion de politicas.
 - No soporta tool calling, function calling, agentes multi-paso, capacidades multilingues, vision, audio ni modo de razonamiento explicito: son capacidades propias de modelos de lenguaje y no aplican a este artefacto.
@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no incluye otros agentes de aprendiz
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vladfi/phillip-models
+- Repositorio en Hugging Face: https://huggingface.co/vladfi/phillip-models
 - Repositorio de GitHub del proyecto slippi-ai (phillip): https://github.com/vladfi1/slippi-ai
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, demos o repositorios adicionales) asociados a este modelo.

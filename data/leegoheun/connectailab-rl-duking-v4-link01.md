@@ -93,7 +93,7 @@ Alternativas de la misma categoría (políticas RL para `follow_route` en simula
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leegoheun/connectailab-rl-duking-v4-link01
+- Hugging Face: https://huggingface.co/leegoheun/connectailab-rl-duking-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

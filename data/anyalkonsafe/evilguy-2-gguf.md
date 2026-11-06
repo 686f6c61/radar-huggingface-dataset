@@ -2,7 +2,7 @@
 
 ## Resumen
 
-evilguy-2 es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct desarrollado por el usuario anyalkonsafe, publicado en HuggingFace como `anyalkonsafe/evilguy-2-gguf`. No se trata de un asistente generalista: el autor lo define explicitamente como un modelo de personaje con una personalidad concreta (vago, borde, con cambios de humor), pensado para uso recreativo y como demostracion tecnica de inyeccion de personalidad en un modelo local. Se distribuye unicamente como archivo GGUF cuantizado en q4_k_m, de unos 9 GB, para ejecutarse con llama.cpp.
+evilguy-2 es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct desarrollado por el usuario anyalkonsafe, publicado en Hugging Face como `anyalkonsafe/evilguy-2-gguf`. No se trata de un asistente generalista: el autor lo define explicitamente como un modelo de personaje con una personalidad concreta (vago, borde, con cambios de humor), pensado para uso recreativo y como demostracion tecnica de inyeccion de personalidad en un modelo local. Se distribuye unicamente como archivo GGUF cuantizado en q4_k_m, de unos 9 GB, para ejecutarse con llama.cpp.
 
 Tecnicamente es un transformer decoder-only denso de 14.770.033.664 parametros (~14,77B), obtenido mediante QLoRA en 4 bits sobre el modelo base, con rango LoRA 16, alpha 16 y dropout 0. El entrenamiento uso aproximadamente 940 ejemplos de conversacion en formato ShareGPT, 3 epocas y una longitud de contexto de 512 tokens, con la funcion de perdida calculada solo sobre las respuestas del asistente (turnos del usuario enmascarados). El formato de chat es ChatML de Qwen2.5.
 
@@ -19,7 +19,7 @@ Su relevancia es limitada y muy especifica: 0 descargas y 0 likes en el momento 
 | Tipos de cuantizacion | GGUF q4_k_m (unico archivo publicado, ~9 GB). El adaptador se entreno con QLoRA en 4 bits |
 | Idiomas soportados | Ingles unicamente (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (q4_k_m). El repositorio no publica el adaptador LoRA en safetensors; el recuento de parametros de 14,77B proviene de los metadatos de safetensors de HuggingFace |
+| Formato de pesos | GGUF (q4_k_m). El repositorio no publica el adaptador LoRA en safetensors; el recuento de parametros de 14,77B proviene de los metadatos de safetensors de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evilguy-2 (GGUF) | 14,77B | Entrenamiento a 512; ejemplo de ejecucion a 2048 | Fine-tune de personaje con QLoRA, distribuido en GGUF q4_k_m | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
-| Qwen2.5-14B-Instruct | 14,77B | No disponible en la informacion proporcionada | Modelo base instruct generalista | Apache 2.0 | HuggingFace (Alibaba Qwen) |
+| evilguy-2 (GGUF) | 14,77B | Entrenamiento a 512; ejemplo de ejecucion a 2048 | Fine-tune de personaje con QLoRA, distribuido en GGUF q4_k_m | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
+| Qwen2.5-14B-Instruct | 14,77B | No disponible en la informacion proporcionada | Modelo base instruct generalista | Apache 2.0 | Hugging Face (Alibaba Qwen) |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se han encontrado modelos comparables en la busqueda web realizada |
 
 La busqueda web asociada no devolvio resultados tecnicos relevantes: los enlaces recuperados corresponden a portales de juegos en linea y no guardan relacion con el modelo. Por tanto, no es posible establecer una comparativa cuantitativa con otros fine-tunes de personaje o con modelos de tamano similar.
@@ -89,11 +89,11 @@ La busqueda web asociada no devolvio resultados tecnicos relevantes: los enlaces
 - Modelo sin validacion externa: 0 descargas y 0 likes en la fecha de consulta, sin benchmarks publicados ni evaluaciones de terceros.
 - Licencia: Apache 2.0, lo que permite uso comercial en principio, pero hereda las condiciones del modelo base Qwen2.5-14B-Instruct, tambien Apache 2.0. No hay restricciones adicionales documentadas por el autor.
 - Incoherencia menor de nomenclatura: el repositorio se llama `evilguy-2-gguf` mientras que la model card se titula "evilguy", sin aclarar la diferencia entre versiones.
-- Fecha de publicacion inusual: el repositorio figura creado el 2026-10-03, dato que conviene verificar en la pagina de HuggingFace.
+- Fecha de publicacion inusual: el repositorio figura creado el 2026-10-03, dato que conviene verificar en la pagina de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anyalkonsafe/evilguy-2-gguf
+- Modelo en Hugging Face: https://huggingface.co/anyalkonsafe/evilguy-2-gguf
 - Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado para el GGUF): https://github.com/ggml-org/llama.cpp

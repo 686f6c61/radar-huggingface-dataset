@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3` es un modelo de generacion de texto publicado por el usuario `alrope` en HuggingFace, generado mediante fine-tuning supervisado (SFT) con la libreria TRL sobre una base que el autor identifica como Qwen2.5-VL de 3B. El nombre del checkpoint sugiere un experimento de ajuste sobre una variante MoE ("flex", "topk2", cuantizacion a 8 bits) derivada de la familia Qwen2.5-VL, aunque la model card no documenta la receta de entrenamiento ni el dataset utilizado.
+`rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3` es un modelo de generacion de texto publicado por el usuario `alrope` en Hugging Face, generado mediante fine-tuning supervisado (SFT) con la libreria TRL sobre una base que el autor identifica como Qwen2.5-VL de 3B. El nombre del checkpoint sugiere un experimento de ajuste sobre una variante MoE ("flex", "topk2", cuantizacion a 8 bits) derivada de la familia Qwen2.5-VL, aunque la model card no documenta la receta de entrenamiento ni el dataset utilizado.
 
 El modelo tiene 6.610.155.264 parametros totales segun los pesos en safetensors, lo que supera ampliamente los 3B que indica el nombre, un desajuste coherente con una arquitectura MoE donde el conteo total incluye todos los expertos. El repositorio ocupa 13,2 GB y los pesos estan en formato safetensors, cargables con transformers.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3 | 6.610.155.264 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B (base de referencia) | ~3.750 millones | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-3B (texto) | ~3.090 millones | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | HuggingFace, ampliamente utilizado |
+| rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3 | 6.610.155.264 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B (base de referencia) | ~3.750 millones | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-3B (texto) | ~3.090 millones | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | Hugging Face, ampliamente utilizado |
 
 La comparativa es orientativa: los datos de los modelos Qwen provienen de su documentacion publica y no de la informacion proporcionada para este checkpoint, cuyo contexto, licencia y rendimiento no estan documentados. El modelo de `alrope` duplica aproximadamente el numero de parametros totales respecto a la base de 3B, lo que sugiere una expansion MoE, pero sin benchmarks no es posible afirmar que mejore en calidad.
 
@@ -88,7 +88,7 @@ La comparativa es orientativa: los datos de los modelos Qwen provienen de su doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3
+- Modelo en Hugging Face: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_3
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/seanlyu2-university-of-illinois-urbana-champaign/huggingface/runs/4p6mki48
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5-VL (familia base referenciada): no disponible en la informacion proporcionada

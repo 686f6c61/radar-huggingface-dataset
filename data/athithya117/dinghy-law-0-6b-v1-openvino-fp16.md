@@ -105,7 +105,7 @@ La informacion proporcionada no incluye datos de modelos alternativos. Se indica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Athithya117/dinghy-law-0.6b-v1-openvino-fp16
+- Hugging Face: https://huggingface.co/Athithya117/dinghy-law-0.6b-v1-openvino-fp16
 - Modelo base: https://huggingface.co/Hanno-Labs/dinghy-law-0.6b-v1
 - Revision resuelta del modelo base: `080ba18e73c85ce8a513241b011b867174883175`
 - Ficheros de validacion y procedencia en el repositorio: `openvino_fp16_validation.json`, `openvino_fp16_manifest.json`

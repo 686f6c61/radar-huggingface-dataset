@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta` es un modelo de generacion de texto publicado por el usuario mdagosta en HuggingFace. Se trata de un export de la familia OpenWALDO, segun indica su propia model card, y emplea la arquitectura estandar de transformers para modelos causales de tipo Llama junto con el tokenizador de bytes "schema-1" de OpenWALDO. El modelo cuenta con 9.541.632 parametros totales, lo que lo situa en la categoria de modelos ultracompactos (por debajo de los 10 millones de parametros).
+El modelo `mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta` es un modelo de generacion de texto publicado por el usuario mdagosta en Hugging Face. Se trata de un export de la familia OpenWALDO, segun indica su propia model card, y emplea la arquitectura estandar de transformers para modelos causales de tipo Llama junto con el tokenizador de bytes "schema-1" de OpenWALDO. El modelo cuenta con 9.541.632 parametros totales, lo que lo situa en la categoria de modelos ultracompactos (por debajo de los 10 millones de parametros).
 
-El problema que resuelve y el dominio previsto no se detallan en la informacion disponible, mas alla del nombre del repositorio, que sugiere un enfoque hacia fundamentos de Python ("python-basics"). El autor se presenta en su perfil de HuggingFace como desarrollador de sistemas de entrenamiento distribuido para modelos a medida, y mantiene actividad reciente con otros repositorios de la misma familia (por ejemplo, `waldito-smoke-v1-r0002-merge`).
+El problema que resuelve y el dominio previsto no se detallan en la informacion disponible, mas alla del nombre del repositorio, que sugiere un enfoque hacia fundamentos de Python ("python-basics"). El autor se presenta en su perfil de Hugging Face como desarrollador de sistemas de entrenamiento distribuido para modelos a medida, y mantiene actividad reciente con otros repositorios de la misma familia (por ejemplo, `waldito-smoke-v1-r0002-merge`).
 
 La relevancia de esta ficha radica en su trazabilidad: la model card documenta explicitamente un inventario de ficheros (`BOM.json`, en formato de lista de materiales) y un mapeo de divulgacion de contenido de entrenamiento alineado con el reglamento europeo de IA (GPAI) mediante `EU-BOM.json`. Sin embargo, no se han publicado datos sobre licencia, idiomas, contexto, composicion del dataset ni resultados de evaluacion.
 
@@ -66,7 +66,7 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna 
 - VRAM estimada para inferencia: aproximadamente 38 MB en fp32, 19 MB en fp16/bf16 y en torno a 10 MB en int8. Estas cifras cubren solo los pesos; el consumo real anadira el overhead del runtime (CUDA graphs, cache de activaciones, buffers del tokenizador).
 - GPU recomendadas: cualquier GPU con soporte CUDA, incluso modelos antiguos como GTX 1050 Ti o GTX 1650, es suficiente. Tambien es viable ejecutarlo integramente en CPU (AVX2 o AVX-512) para inferencia interactiva.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo, incluida una RTX 3060, RTX 4060 o superior, y tambien en iGPU modernas y en Apple Silicon mediante Metal.
-- Opciones de despliegue: transformers (carga estandar), text-generation-inference (TGI, etiqueta soportada), endpoints compatibles con la API de HuggingFace. No se declaran variantes GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual previa. vLLM no esta confirmado como soportado.
+- Opciones de despliegue: transformers (carga estandar), text-generation-inference (TGI, etiqueta soportada), endpoints compatibles con la API de Hugging Face. No se declaran variantes GGUF, por lo que llama.cpp u Ollama requeririan una conversion manual previa. vLLM no esta confirmado como soportado.
 - Latencia y throughput: no disponibles. No hay cifras publicadas de tokens por segundo, TTFT ni latencia p99.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos verificados de modelos directamente comparables en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Datos de benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0001-u0-mdagosta | 9.541.632 | no disponible | no disponible | no disponibles | HuggingFace (0 descargas) |
+| waldito-python-basics-v1-r0001-u0-mdagosta | 9.541.632 | no disponible | no disponible | no disponibles | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,8 +92,8 @@ No se dispone de datos verificados de modelos directamente comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0001-u0-mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Repositorio WALDO en GitHub (proyecto homonimo sin relacion confirmada): https://github.com/stephansturges/WALDO
 - Paper o blog oficial del modelo: no disponible
 - Repositorio de codigo del modelo: no disponible

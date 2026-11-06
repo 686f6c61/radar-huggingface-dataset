@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ddabrowskifranciszek/notes-video-understanding` no es un modelo de aprendizaje automatico entrenado, sino una nota de investigacion exploratoria sobre comprension de video publicada en HuggingFace bajo la etiqueta `research-notes`. La model card describe explicitamente un artefacto documental: el contenido principal es el fichero `analysis.md`, y el propio autor advierte de que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+El repositorio `ddabrowskifranciszek/notes-video-understanding` no es un modelo de aprendizaje automatico entrenado, sino una nota de investigacion exploratoria sobre comprension de video publicada en Hugging Face bajo la etiqueta `research-notes`. La model card describe explicitamente un artefacto documental: el contenido principal es el fichero `analysis.md`, y el propio autor advierte de que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio declara la etiqueta `transformer` y un fichero en formato `safetensors`, pero el recuento real de parametros es de 16.576 en total, un orden de magnitud propio de un tensor auxiliar o de prueba, no de un modelo con capacidad generativa util. La model card no documenta arquitectura, datos de entrenamiento, tokenizador ni pipeline de inferencia, y las descargas y "likes" registrados son cero.
 
@@ -44,7 +44,7 @@ Tampoco existe evidencia de entrenamiento: la model card indica de forma explici
 - Seleccion de conjuntos de datos: la referencia a MSR-VTT y ActivityNet Captions orienta la eleccion de corpus de evaluacion para tareas de captioning y comprension temporal de video.
 - Analisis de modos de fallo: las preguntas abiertas y los modos de fallo documentados pueden alimentar una seccion de limitaciones en un articulo o informe tecnico.
 - Formacion y revision: el repositorio puede usarse como material didactico sobre como separar hipotesis de resultados en un proyecto de investigacion.
-- Auditoria de artefactos en HuggingFace: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad contienen documentacion, relevante para automatizar filtros de calidad en catalogos de modelos.
+- Auditoria de artefactos en Hugging Face: sirve como caso de estudio de repositorios etiquetados como modelos que en realidad contienen documentacion, relevante para automatizar filtros de calidad en catalogos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -84,5 +84,5 @@ No disponible. Este repositorio no es un modelo de video understanding comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddabrowskifranciszek/notes-video-understanding
+- Hugging Face: https://huggingface.co/ddabrowskifranciszek/notes-video-understanding
 - No se han encontrado enlaces relevantes al modelo, paper, repositorio de codigo o demo en los resultados de busqueda web disponibles; los resultados devueltos (programa de la ML in PL Conference 2026, Bulletin of the Polish Academy of Sciences, perfiles profesionales y publicaciones del ICM UW) no guardan relacion con este repositorio.

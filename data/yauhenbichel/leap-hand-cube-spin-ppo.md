@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye datos de otras política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YauhenBichel/leap-hand-cube-spin-ppo
+- Modelo en Hugging Face: https://huggingface.co/YauhenBichel/leap-hand-cube-spin-ppo
 - Vídeo de demostración (giro, cámara lenta y mantenimiento): https://huggingface.co/YauhenBichel/leap-hand-cube-spin-ppo/resolve/main/videos/hand.mp4
 - Vídeo de instrucción en lenguaje natural (girar y mantener): https://huggingface.co/YauhenBichel/leap-hand-cube-spin-ppo/resolve/main/videos/spin-then-hold-from-plain-language.mp4
 - Dataset de experimentos asociado: https://huggingface.co/datasets/YauhenBichel/humanoid-lab-experiments

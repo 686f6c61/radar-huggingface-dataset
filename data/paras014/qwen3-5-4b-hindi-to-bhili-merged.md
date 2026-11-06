@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Paras014/qwen3.5-4b-hindi-to-bhili-merged` es un fine-tuning del modelo base `unsloth/Qwen3.5-4B`, desarrollado por el usuario Paras014. Aunque el nombre del repositorio sugiere una tarea de traducción entre hindi y bhili, la model card no documenta el dataset ni las capacidades concretas del ajuste. Se trata de un modelo de 4.659.865.088 parámetros (4.66B) que, según la metadata de HuggingFace, usa el pipeline `image-text-to-text` y está etiquetado como conversacional. El entrenamiento se realizó con la librería Unsloth y el TRL de HuggingFace, lo que según la model card permitió entrenar "2x más rápido" en comparación con un pipeline estándar. La relevancia del modelo radica en su posible aplicación a lenguas de baja representación, como el bhili, aunque no hay evidencias publicadas de su rendimiento.
+El modelo `Paras014/qwen3.5-4b-hindi-to-bhili-merged` es un fine-tuning del modelo base `unsloth/Qwen3.5-4B`, desarrollado por el usuario Paras014. Aunque el nombre del repositorio sugiere una tarea de traducción entre hindi y bhili, la model card no documenta el dataset ni las capacidades concretas del ajuste. Se trata de un modelo de 4.659.865.088 parámetros (4.66B) que, según la metadata de Hugging Face, usa el pipeline `image-text-to-text` y está etiquetado como conversacional. El entrenamiento se realizó con la librería Unsloth y el TRL de Hugging Face, lo que según la model card permitió entrenar "2x más rápido" en comparación con un pipeline estándar. La relevancia del modelo radica en su posible aplicación a lenguas de baja representación, como el bhili, aunque no hay evidencias publicadas de su rendimiento.
 
 ## Especificaciones técnicas
 
@@ -20,7 +20,7 @@ Nota: la fila "Parámetros activos" no se incluye porque no se trata de un model
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3.5-4B`, un modelo de la familia Qwen3.5 con 4.66B parámetros. La metadata de HuggingFace indica que el pipeline es `image-text-to-text`, lo que sugiere que el modelo base es multimodal (procesa imágenes y texto). El fine-tuning se realizó con Unsloth y la librería TRL de HuggingFace, según la model card. No se proporciona información sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones técnicas específicas del ajuste; el entrenamiento se describe únicamente como un fine-tuning supervisado acelerado.
+El modelo parte de `unsloth/Qwen3.5-4B`, un modelo de la familia Qwen3.5 con 4.66B parámetros. La metadata de Hugging Face indica que el pipeline es `image-text-to-text`, lo que sugiere que el modelo base es multimodal (procesa imágenes y texto). El fine-tuning se realizó con Unsloth y la librería TRL de Hugging Face, según la model card. No se proporciona información sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones técnicas específicas del ajuste; el entrenamiento se describe únicamente como un fine-tuning supervisado acelerado.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Paras014/qwen3.5-4b-hindi-to-bhili-merged
+- Modelo en Hugging Face: https://huggingface.co/Paras014/qwen3.5-4b-hindi-to-bhili-merged
 - Modelo base unsloth/Qwen3.5-4B: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth: https://github.com/unslothai/unsloth

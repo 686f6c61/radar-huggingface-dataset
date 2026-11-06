@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cogarobotics/finegrained-grpo-groundplus-0825` es un ajuste fino de la familia Gemma3, desarrollado por el usuario de HuggingFace `cogarobotics`. Se trata de un modelo orientado a mejorar el "grounding" (fidelidad a hechos y reducción de alucinaciones) en tareas de generación aumentada por recuperación (RAG), entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo popularizada por DeepSeek. El repositorio incluye tanto el modelo fusionado (`merged/`) para servir directamente con vLLM como el adaptador LoRA (`adapter/`) para flujos de trabajo de ajuste fino.
+El modelo `cogarobotics/finegrained-grpo-groundplus-0825` es un ajuste fino de la familia Gemma3, desarrollado por el usuario de Hugging Face `cogarobotics`. Se trata de un modelo orientado a mejorar el "grounding" (fidelidad a hechos y reducción de alucinaciones) en tareas de generación aumentada por recuperación (RAG), entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo popularizada por DeepSeek. El repositorio incluye tanto el modelo fusionado (`merged/`) para servir directamente con vLLM como el adaptador LoRA (`adapter/`) para flujos de trabajo de ajuste fino.
 
 La relevancia actual de este modelo radica en que aborda un problema crítico en producción: la fiabilidad de las respuestas generadas por modelos de lenguaje cuando se integran con sistemas de recuperación de información. Su nombre sugiere que se centra en un "grounding plus" (refuerzo adicional del anclaje a la evidencia), y se ha utilizado para generar un dataset de evaluación (`test_data_GROUNDPLUS_VLLM_0825_answers_evaluated_openai_gpt_5_4`). No se dispone de información pública sobre el número exacto de parámetros, licencia o idiomas soportados, lo que limita la evaluación técnica detallada.
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- **Licencia desconocida**: el modelo no especifica licencia en HuggingFace, lo que impide conocer si es de uso comercial, científico o restrictivo. Debe contactarse con el autor antes de su uso en producción.
+- **Licencia desconocida**: el modelo no especifica licencia en Hugging Face, lo que impide conocer si es de uso comercial, científico o restrictivo. Debe contactarse con el autor antes de su uso en producción.
 - **Datos de entrenamiento no publicados**: no se conoce la composición del dataset ni el número de tokens, lo que dificulta evaluar sesgos o riesgos de alucinación residual.
 - **Idiomas no especificados**: no se indica qué idiomas soporta; se desconoce su comportamiento en español u otros idiomas distintos del inglés.
 - **Contexto limitado a 8192 tokens**: la configuración recomendada limita el contexto a 8K tokens, lo que puede ser insuficiente para documentos largos o conversaciones multi-turno extensas.
@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cogarobotics/finegrained-grpo-groundplus-0825
+- Hugging Face: https://huggingface.co/cogarobotics/finegrained-grpo-groundplus-0825
 - Modelo base: https://huggingface.co/chaitalibh/finegrained-grpo-highag-0825
 - No se encontraron papers, blogs ni demos asociados en la búsqueda web.

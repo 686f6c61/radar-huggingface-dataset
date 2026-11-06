@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-803a8f69-instructtext-hyper-s2c` es un modelo de lenguaje de 1.170.340.608 parametros (aproximadamente 1,17 mil millones) publicado en HuggingFace por el usuario firzahdzm. La etiqueta de arquitectura declarada es `lfm2`, lo que lo vincula a la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, aunque no se aporta documentacion que confirme la configuracion exacta. El repositorio ocupa 2,3 GB y los pesos estan en formato safetensors.
+El modelo `firzahdzm/tourn-803a8f69-instructtext-hyper-s2c` es un modelo de lenguaje de 1.170.340.608 parametros (aproximadamente 1,17 mil millones) publicado en Hugging Face por el usuario firzahdzm. La etiqueta de arquitectura declarada es `lfm2`, lo que lo vincula a la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, aunque no se aporta documentacion que confirme la configuracion exacta. El repositorio ocupa 2,3 GB y los pesos estan en formato safetensors.
 
 El nombre del modelo sigue un patron sistematico (`tourn-<hash>-instructtext-<variante>`) que se repite en otros repositorios del mismo autor, como `tourn-803a8f69-instructtext-hyper-r9a` (1B, lfm2) o `tourn-803a8f69-instructtext-hyper-g2gc` (3B, granite). Esto sugiere una cadena de entrenamiento o evaluacion automatizada, probablemente orientada a la generacion de texto con instrucciones. No existe model card, no se declaran idiomas, licencia ni pipeline, y el modelo acumula 11 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -88,7 +88,7 @@ Los cuatro modelos proceden del mismo autor y comparten la ausencia de documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-s2c
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-s2c
 - Modelo hermano (lfm2, 1B): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-r9a
 - Modelo hermano (granite, 3B): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-g2gc
 - Ficha en FriendliAI de un modelo relacionado: https://friendli.ai/models/firzahdzm/tourn-803a8f69-instructtext-super-p1v

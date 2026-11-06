@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-support-probe-source (este modelo) | No disponible | No disponible (ventanas H10 durante el entrenamiento) | VLA con imitación e IDM, checkpoint fuente | Apache 2.0 | HuggingFace, librería openpi |
+| pi05-libero-support-probe-source (este modelo) | No disponible | No disponible (ventanas H10 durante el entrenamiento) | VLA con imitación e IDM, checkpoint fuente | Apache 2.0 | Hugging Face, librería openpi |
 | pi05_libero (inicializador, familia openpi) | No disponible | No disponible | Política VLA | Ver licencia del repositorio openpi | Repositorio openpi de Physical Intelligence |
-| OpenVLA (referencia pública) | 7.000 millones (referencia pública) | 2.048 tokens de contexto de lenguaje (referencia pública) | VLA basado en LLM con codificadores visuales | Licencia de la familia Llama para los pesos | Pesos públicos en HuggingFace |
+| OpenVLA (referencia pública) | 7.000 millones (referencia pública) | 2.048 tokens de contexto de lenguaje (referencia pública) | VLA basado en LLM con codificadores visuales | Licencia de la familia Llama para los pesos | Pesos públicos en Hugging Face |
 | GR00T N1.x (referencia pública) | No disponible en esta ficha | No disponible en esta ficha | VLA para robots humanoides | Ver licencia del repositorio | Pesos públicos de NVIDIA |
 
 Los datos de los modelos comparables proceden de documentación pública general y no de la información proporcionada en esta ficha; conviene verificarlos antes de usarlos en una decisión técnica. No hay resultados de benchmarks comunes que permitan una comparación cuantitativa con este checkpoint.
@@ -91,7 +91,7 @@ Los datos de los modelos comparables proceden de documentación pública general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015
 - Conjunto de datos de sondeo referenciado: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015 (commit `32ed215baf01af7e82f927a62b108873aa70bd19`)
 - Repositorio openpi (Physical Intelligence), librería declarada del modelo: https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO: https://libero-project.github.io/

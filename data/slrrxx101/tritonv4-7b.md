@@ -78,7 +78,7 @@ La comparación es limitada porque no se dispone de resultados del modelo `trito
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/slrrxx101/tritonv4-7b](https://huggingface.co/slrrxx101/tritonv4-7b)
+- Modelo en Hugging Face: [https://huggingface.co/slrrxx101/tritonv4-7b](https://huggingface.co/slrrxx101/tritonv4-7b)
 - Repositorio de Unsloth (herramienta de entrenamiento): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - Proyecto llama.cpp: [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
 - Modelo base Qwen2.5-Coder-7B-Instruct: [https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)

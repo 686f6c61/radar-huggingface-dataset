@@ -77,9 +77,9 @@ No se han publicado en el texto resultados desglosados por benchmark ni comparac
 | Modelo | Parametros | Contexto | Formato / bits | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (551,9 B backbone + 196,6 B Engram) | 1M | Safetensors, precision original | Media de tarea 93,54 | No disponible en la informacion | Repo `deepseek-ai/DeepSeek-V4.1-Flash-1017` |
-| Este repo, IQ2_XXS | 763,2 B | 1M | GGUF, 2,00 bpw backbone + IQ4_NL Engram | 93,54 (100,0% del base) | MIT | HuggingFace ISTA-DASLab |
-| Este repo, IQ2_XS | 763,2 B | 1M | GGUF, 2,25 bpw backbone + IQ4_NL Engram | No disponible | MIT | HuggingFace ISTA-DASLab |
-| Este repo, IQ1_M | 763,2 B | 1M | GGUF, 1,75 bpw backbone + IQ4_NL Engram | 92,34 (-1,2 puntos) | MIT | HuggingFace ISTA-DASLab |
+| Este repo, IQ2_XXS | 763,2 B | 1M | GGUF, 2,00 bpw backbone + IQ4_NL Engram | 93,54 (100,0% del base) | MIT | Hugging Face ISTA-DASLab |
+| Este repo, IQ2_XS | 763,2 B | 1M | GGUF, 2,25 bpw backbone + IQ4_NL Engram | No disponible | MIT | Hugging Face ISTA-DASLab |
+| Este repo, IQ1_M | 763,2 B | 1M | GGUF, 1,75 bpw backbone + IQ4_NL Engram | 92,34 (-1,2 puntos) | MIT | Hugging Face ISTA-DASLab |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (MoE de ~700 B cuantizado a ~2 bits) en la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (MoE 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
 - Paper RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649

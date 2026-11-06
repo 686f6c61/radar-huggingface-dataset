@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-9-merged
+- Modelo en Hugging Face: https://huggingface.co/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-9-merged
 - Perfil de la organización Upright Project: https://huggingface.co/uprightproject
 - Versión alternativa del mismo autor (v3-1-step2000): https://huggingface.co/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-1-step2000-merged
 - Página de local-ai-zone sobre el modelo base Ministral 3 14b Instruct 2512 (GGUF): https://local-ai-zone.github.io/models/ministral-3-14b-instruct-2512.html

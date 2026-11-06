@@ -102,10 +102,10 @@ A modo de referencia cualitativa, y solo sobre caracteristicas generales de la c
 - Licencia: MIT, permisiva y apta para uso comercial, pero el modelo depende de codigo personalizado. Cargar pesos con `trust_remote_code=True` implica ejecutar codigo del repositorio: conviene auditar los archivos `.py` antes de usarlo en produccion.
 - Rendimiento de los brazos: las mejoras grandes en bits por byte se concentran en el texto propio de cada etapa; en formas nuevas de las mismas preguntas los incrementos son mucho menores (por ejemplo, 46% -> 48% en la etapa 1, o 7% -> 30% en la etapa 3), lo que indica poca generalizacion fuera del formato de entrenamiento.
 - El autor advierte que la lectura de los bancos al final (+6,13 bpb) casi duplica todas las anteriores y que esta siendo repetida antes de darse por valida: se trata de una medicion en revision, no consolidada.
-- Madurez del proyecto: 0 descargas y 0 "likes" en HuggingFace, sin benchmarks externos ni validacion por terceros. No se recomienda su uso en produccion sin evaluacion propia previa.
+- Madurez del proyecto: 0 descargas y 0 "likes" en Hugging Face, sin benchmarks externos ni validacion por terceros. No se recomienda su uso en produccion sin evaluacion propia previa.
 - Coste de decodificacion: al ser byte-level, generar texto requiere muchos mas pasos de inferencia por palabra que un modelo con tokenizador, lo que encarece el despliegue en tareas de generacion larga.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/mini-beatrix-3
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/mini-beatrix-3
 - No se han encontrado en la busqueda web enlaces relevantes adicionales: ni paper, ni blog tecnico, ni repositorio de codigo independiente, ni demo asociados a este modelo.

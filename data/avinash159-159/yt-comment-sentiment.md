@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yt-comment-sentiment | 82,35 M | 128 tokens | Clasificacion de sentimiento (3 clases) | MIT | HuggingFace |
-| distilroberta-base (base) | ~82 M | 512 tokens | Modelo base de lenguaje | MIT | HuggingFace |
-| Modelos de sentimiento genericos en ingles | no disponible | no disponible | Clasificacion de sentimiento | variable | HuggingFace |
+| yt-comment-sentiment | 82,35 M | 128 tokens | Clasificacion de sentimiento (3 clases) | MIT | Hugging Face |
+| distilroberta-base (base) | ~82 M | 512 tokens | Modelo base de lenguaje | MIT | Hugging Face |
+| Modelos de sentimiento genericos en ingles | no disponible | no disponible | Clasificacion de sentimiento | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este modelo y alternativas, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparativo entre este modelo y alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avinash159-159/yt-comment-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Avinash159-159/yt-comment-sentiment
 - Demo / API en Spaces: https://huggingface.co/spaces/Avinash159-159/yt-comment-sentiment-demo
 - Modelo base DistilRoBERTa: https://huggingface.co/distilbert/distilroberta-base

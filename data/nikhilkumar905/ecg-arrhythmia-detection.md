@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ECG Arrhythmia Detection es un modelo de clasificacion de series temporales medicas desarrollado por el usuario de HuggingFace nikhilkumar905. No se trata de un modelo de lenguaje, sino de una red neuronal hibrida CNN + BiLSTM con mecanismo de atencion que clasifica latidos individuales de electrocardiograma (ECG) en las cinco clases AAMI: Normal (N), Supraventricular (S), Ventricular (V), Fusion (F) y Unknown (Q).
+ECG Arrhythmia Detection es un modelo de clasificacion de series temporales medicas desarrollado por el usuario de Hugging Face nikhilkumar905. No se trata de un modelo de lenguaje, sino de una red neuronal hibrida CNN + BiLSTM con mecanismo de atencion que clasifica latidos individuales de electrocardiograma (ECG) en las cinco clases AAMI: Normal (N), Supraventricular (S), Ventricular (V), Fusion (F) y Unknown (Q).
 
 El modelo aborda el problema de deteccion automatica de arritmias a partir de latidos aislados de 187 muestras muestreadas a 125 Hz y escaladas al rango 0-1. Fue entrenado sobre el dataset MIT-BIH Arrhythmia, el benchmark de referencia en este campo, y reporta una accuracy del 99,00 % y un macro F1 del 94,0 % sobre el split de test de 21.892 latidos.
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo sobre el dataset MIT-BIH Arrhythmia, el conjunto de 
 - **Investigacion en clasificacion de ECG:** sirve como baseline reproducible (arquitectura CNN + BiLSTM + atencion) sobre MIT-BIH para comparar nuevas arquitecturas, como transformers temporales o modelos auto-supervisados.
 - **Prototipado de monitoreo cardiaco:** puede integrarse en un pipeline que segmente latidos desde un dispositivo de adquisicion y los clasifique en tiempo real, dada su baja latencia en CPU.
 - **Preprocesado y validacion de datos de ECG:** el `scaler.pkl` incluido documenta el pipeline de normalizacion, util para estandarizar datos en proyectos derivados.
-- **Ensenanza de MLOps medico:** el proyecto completo (backend, modelo versionado en HuggingFace, frontend en Vercel) es un ejemplo de despliegue end-to-end de un modelo de ML sanitario.
+- **Ensenanza de MLOps medico:** el proyecto completo (backend, modelo versionado en Hugging Face, frontend en Vercel) es un ejemplo de despliegue end-to-end de un modelo de ML sanitario.
 - **Generacion de datasets anotados asistida:** puede preetiquetar grandes volumenes de latidos grabados para que un experto revise solo los casos dudosos (clases S, V, F, Q), acelerando la anotacion manual.
 - **Experimentos de robustez:** al conocerse explicitamente su limitacion de separacion por latidos y no por pacientes, es un buen caso de estudio para medir la degradacion ante pacientes no vistos (data leakage temporal).
 
@@ -88,7 +88,7 @@ Nota: la comparativa es cualitativa; no se han publicado benchmarks comparativos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikhilkumar905/ECG-Arrhythmia-Detection
+- Modelo en Hugging Face: https://huggingface.co/nikhilkumar905/ECG-Arrhythmia-Detection
 - Repositorio de codigo y web app: https://github.com/nikhilkumar905/ECG-Arrhythmia-Detection
 - Demo en vivo: https://ecg-arrhythmia-detection-weld.vercel.app
 - Dataset de entrenamiento: MIT-BIH Arrhythmia (disponible publicamente, por ejemplo en PhysioNet y Kaggle)

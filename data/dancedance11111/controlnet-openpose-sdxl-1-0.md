@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dancedance11111/controlnet-openpose-sdxl-1.0 | ControlNet OpenPose | stable-diffusion-xl-base-1.0 | OpenPose v2 | other (remite a la de OpenPose) | HuggingFace, 0 descargas |
+| dancedance11111/controlnet-openpose-sdxl-1.0 | ControlNet OpenPose | stable-diffusion-xl-base-1.0 | OpenPose v2 | other (remite a la de OpenPose) | Hugging Face, 0 descargas |
 | thibaud/controlnet-openpose-sdxl-1.0 | ControlNet OpenPose | stable-diffusion-xl-base-1.0 | OpenPose | no disponible en la informacion | Referenciado en el codigo de la model card como origen del checkpoint |
 | lllyasviel/ControlNet (detector OpenPose) | Detector de pose usado como preprocesado | no aplica | OpenPose | no disponible en la informacion | Repositorio usado en el ejemplo para extraer el esqueleto |
 
@@ -84,11 +84,11 @@ Parametros, contexto y rendimiento comparados: no disponible en la informacion p
 - Dependencia de la deteccion de pose: si el extractor de OpenPose falla en oclusiones, cuerpos parciales o escenas con varias personas, el control se degrada y el resultado no respeta la referencia.
 - Idioma: no hay metadatos de idiomas; el prompt efectivo depende de los codificadores de texto de SDXL, con rendimiento notablemente mejor en ingles que en otras lenguas.
 - Resolucion: el modelo esta entrenado con imagenes redimensionadas a una dimension minima maxima de 768, por lo que el comportamiento por debajo o por encima de ese regimen puede degradarse.
-- Restriccion de despliegue: `inference: false` en la model card, por lo que no esta disponible como endpoint alojado en HuggingFace; requiere despliegue propio.
+- Restriccion de despliegue: `inference: false` en la model card, por lo que no esta disponible como endpoint alojado en Hugging Face; requiere despliegue propio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dancedance11111/controlnet-openpose-sdxl-1.0
+- Modelo en Hugging Face: https://huggingface.co/dancedance11111/controlnet-openpose-sdxl-1.0
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Checkpoint original referenciado en la model card: https://huggingface.co/thibaud/controlnet-openpose-sdxl-1.0
 - Script de entrenamiento de ControlNet con SDXL en Diffusers: https://github.com/huggingface/diffusers/blob/main/examples/controlnet/README_sdxl.md

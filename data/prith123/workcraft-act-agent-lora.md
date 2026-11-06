@@ -70,6 +70,6 @@ No se dispone de informacion sobre adaptadores LoRA comparables para tareas EDA 
 
 ## Enlaces
 
-- [HuggingFace: prith123/workcraft-act-agent-lora](https://huggingface.co/prith123/workcraft-act-agent-lora)
+- [Hugging Face: prith123/workcraft-act-agent-lora](https://huggingface.co/prith123/workcraft-act-agent-lora)
 - [GitHub: prithvideyannavar123/workcraft-ai-agent](https://github.com/prithvideyannavar123/workcraft-ai-agent)
 - [Articulo de referencia sobre impacto ambiental (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

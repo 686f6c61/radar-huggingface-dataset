@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grpo-hello es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Dvijsj12 en HuggingFace. Se trata de un modelo denso de aproximadamente 494 millones de parametros (0,49 B) entrenado mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el paper DeepSeekMath, sobre el dataset de razonamiento matematico trl-lib/DeepMath-103K. El entrenamiento se ha realizado con la libreria TRL de HuggingFace.
+grpo-hello es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Dvijsj12 en Hugging Face. Se trata de un modelo denso de aproximadamente 494 millones de parametros (0,49 B) entrenado mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el paper DeepSeekMath, sobre el dataset de razonamiento matematico trl-lib/DeepMath-103K. El entrenamiento se ha realizado con la libreria TRL de Hugging Face.
 
 El modelo pertenece a la familia Qwen2 y conserva la arquitectura transformer decoder-only del modelo base, por lo que su problema objetivo es el razonamiento matematico y la generacion de texto conversacional en un rango de tamanio muy reducido. Su relevancia practica es la de un experimento reproducible de RLHF/GRPO sobre un modelo pequenio, util como referencia para estudiar como afecta el entrenamiento con recompensas verificables a las capacidades de un modelo de 0,5 B.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dvijsj12/grpo-hello | 0,49 B | no disponible (base: 32.768) | GRPO sobre DeepMath-103K | no disponible | HuggingFace, 231 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion del base) | SFT + preferencias (no detallado aqui) | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias | Apache 2.0 | HuggingFace |
-| Modelos pequenios de razonamiento (por ejemplo, variantes ajustadas con RL sobre bases <1 B) | <1 B | variable | RL / GRPO | variable | HuggingFace |
+| Dvijsj12/grpo-hello | 0,49 B | no disponible (base: 32.768) | GRPO sobre DeepMath-103K | no disponible | Hugging Face, 231 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion del base) | SFT + preferencias (no detallado aqui) | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias | Apache 2.0 | Hugging Face |
+| Modelos pequenios de razonamiento (por ejemplo, variantes ajustadas con RL sobre bases <1 B) | <1 B | variable | RL / GRPO | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, esquema de ajuste y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dvijsj12/grpo-hello
+- Modelo en Hugging Face: https://huggingface.co/Dvijsj12/grpo-hello
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/trl-lib/DeepMath-103K
 - Repositorio de TRL: https://github.com/huggingface/trl

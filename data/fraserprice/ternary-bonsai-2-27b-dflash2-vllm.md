@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fraserprice/Ternary-Bonsai-2-27B-DFlash2-vllm` es un repositorio publicado en HuggingFace cuyo unico contenido documental es la declaracion de licencia Apache 2.0 en el frontmatter de la model card. No se ha publicado descripcion, pipeline, idiomas soportados, ficha tecnica ni resultados de evaluacion. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (18 de septiembre de 2026), lo que indica que se trata de un artefacto recien subido y sin validacion por parte de la comunidad.
+`fraserprice/Ternary-Bonsai-2-27B-DFlash2-vllm` es un repositorio publicado en Hugging Face cuyo unico contenido documental es la declaracion de licencia Apache 2.0 en el frontmatter de la model card. No se ha publicado descripcion, pipeline, idiomas soportados, ficha tecnica ni resultados de evaluacion. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (18 de septiembre de 2026), lo que indica que se trata de un artefacto recien subido y sin validacion por parte de la comunidad.
 
 El propio identificador aporta la unica informacion disponible, y debe tratarse como indicio y no como especificacion confirmada: el prefijo "Ternary" sugiere pesos cuantizados a tres valores, "27B" apunta a un orden de magnitud de 27 000 millones de parametros, "DFlash2" parece referirse a un formato o kernel de decodificacion concreto y el sufijo "vllm" indica que el artefacto esta pensado para servirse con vLLM en lugar de como checkpoint de entrenamiento generico.
 
@@ -94,8 +94,8 @@ No se ha identificado ningun modelo comparable con datos verificables en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fraserprice/Ternary-Bonsai-2-27B-DFlash2-vllm
-- Pagina del autor en HuggingFace: https://huggingface.co/fraserprice
+- Repositorio en Hugging Face: https://huggingface.co/fraserprice/Ternary-Bonsai-2-27B-DFlash2-vllm
+- Pagina del autor en Hugging Face: https://huggingface.co/fraserprice
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacio interactivo: no disponible
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo; los unicos resultados obtenidos fueron paginas de soporte de Microsoft sobre Windows, sin relacion con el contenido de esta ficha.

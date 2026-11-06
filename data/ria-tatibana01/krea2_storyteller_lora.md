@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ria-tatibana01/krea2_Storyteller_LoRA
-- Licencia (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/Ria-tatibana01/krea2_Storyteller_LoRA
+- Licencia (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

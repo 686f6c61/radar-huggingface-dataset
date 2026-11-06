@@ -103,7 +103,7 @@ Diferencias clave: este checkpoint es el unico de la tabla que no puede usarse c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-advauthanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-advauthanchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus `flourishing-vs-equanimity` y repositorio `welfare-improvements`: mencionados en la model card sin URL disponible
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (corresponden a sitios de contenido para adultos no tecnicos), por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios ni demos asociados a este checkpoint.

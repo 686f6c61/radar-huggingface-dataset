@@ -4,7 +4,7 @@
 
 ## Resumen
 
-sd15-flower-blip-lora es un adaptador Low-Rank Adaptation (LoRA) para Stable Diffusion 1.5, publicado por el usuario imaquantinizer en HuggingFace, orientado a la generacion de imagenes florales con mayor precision botanica, textura de petalos mas delicada y composicion en macro. No es un modelo generativo autonomo: se carga sobre el checkpoint base runwayml/stable-diffusion-v1-5 y modifica su comportamiento mediante pesos de bajo rango, con una escala de aplicacion ajustable.
+sd15-flower-blip-lora es un adaptador Low-Rank Adaptation (LoRA) para Stable Diffusion 1.5, publicado por el usuario imaquantinizer en Hugging Face, orientado a la generacion de imagenes florales con mayor precision botanica, textura de petalos mas delicada y composicion en macro. No es un modelo generativo autonomo: se carga sobre el checkpoint base runwayml/stable-diffusion-v1-5 y modifica su comportamiento mediante pesos de bajo rango, con una escala de aplicacion ajustable.
 
 El adaptador se entreno sobre el dataset pranked03/flowers-blip-captions (2.000 imagenes de flores emparejadas con captions generadas por BLIP), durante 1,5 epocas, 750 pasos de optimizador y con una tasa de aprendizaje de 1e-4 sobre una unica GPU NVIDIA L4. La model card documenta una loss final de aproximadamente 0,0951 y una resolucion nativa de 512 x 512, coherente con el modelo base.
 
@@ -84,7 +84,7 @@ No se han identificado en la informacion proporcionada otros adaptadores LoRA co
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd15-flower-blip-lora | no disponible (adaptador LoRA) | no aplica (512 x 512 nativo) | sin benchmarks publicados; evaluacion visual cualitativa por escala | creativeml-openrail-m | HuggingFace, 0 descargas, 1 like |
+| sd15-flower-blip-lora | no disponible (adaptador LoRA) | no aplica (512 x 512 nativo) | sin benchmarks publicados; evaluacion visual cualitativa por escala | creativeml-openrail-m | Hugging Face, 0 descargas, 1 like |
 | Stable Diffusion 1.5 sin adaptador (referencia del propio autor) | no disponible en la informacion | no aplica | linea base de la comparativa visual: composicion floral dispersa y menos definida | creativeml-openrail-m | ampliamente disponible |
 | Otros LoRA florales de la comunidad | no disponible | no disponible | no disponible | no disponible | no disponible en la busqueda realizada |
 
@@ -103,7 +103,7 @@ No se han identificado en la informacion proporcionada otros adaptadores LoRA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imaquantinizer/sd15-flower-blip-lora
+- Modelo en Hugging Face: https://huggingface.co/imaquantinizer/sd15-flower-blip-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/pranked03/flowers-blip-captions
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

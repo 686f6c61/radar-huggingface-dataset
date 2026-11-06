@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bartowski/bytkim_Qwen3.8-27B-pi-GGUF | 27,32 B | no disponible | GGUF (bf16 a IQ4_NL) | apache-2.0 | HuggingFace, descarga directa |
-| bytkim/Qwen3.8-27B-pi (base) | 28 B (según ficha del cuantizado) | no disponible | safetensors | apache-2.0 (según la ficha del GGUF) | HuggingFace |
+| bartowski/bytkim_Qwen3.8-27B-pi-GGUF | 27,32 B | no disponible | GGUF (bf16 a IQ4_NL) | apache-2.0 | Hugging Face, descarga directa |
+| bytkim/Qwen3.8-27B-pi (base) | 28 B (según ficha del cuantizado) | no disponible | safetensors | apache-2.0 (según la ficha del GGUF) | Hugging Face |
 | Qwen3.8-27B (Alibaba Cloud, Qwen team) | no disponible | no disponible | no disponible | no disponible | Repositorio en GitHub |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa fiable con alternativas de otros fabricantes del mismo rango de tamaño.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bartowski/bytkim_Qwen3.8-27B-pi-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bartowski/bytkim_Qwen3.8-27B-pi-GGUF
 - Ficheros del repositorio: https://huggingface.co/bartowski/bytkim_Qwen3.8-27B-pi-GGUF/tree/main
 - Modelo base: https://huggingface.co/bytkim/Qwen3.8-27B-pi
 - llama.cpp: https://github.com/ggml-org/llama.cpp

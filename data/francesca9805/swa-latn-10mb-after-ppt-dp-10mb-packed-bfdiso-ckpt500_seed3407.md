@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace francesca9805. Por la etiqueta de arquitectura declarada (`gpt2`), se trata de un transformer decoder-only de tipo autorregresivo para generación de texto, con 39.087.104 parámetros totales confirmados en los pesos en formato safetensors. El identificador del modelo sugiere un entrenamiento sobre un corpus de aproximadamente 10 MB en escritura latina, posiblemente vinculado al código ISO 639-3 `swa` (suajili), aunque la model card no declara idiomas de forma explícita.
+El modelo `swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face francesca9805. Por la etiqueta de arquitectura declarada (`gpt2`), se trata de un transformer decoder-only de tipo autorregresivo para generación de texto, con 39.087.104 parámetros totales confirmados en los pesos en formato safetensors. El identificador del modelo sugiere un entrenamiento sobre un corpus de aproximadamente 10 MB en escritura latina, posiblemente vinculado al código ISO 639-3 `swa` (suajili), aunque la model card no declara idiomas de forma explícita.
 
 Se trata de un modelo de investigación de escala muy reducida (39M de parámetros), entrenado con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0, y derivado de un checkpoint intermedio (el sufijo `ckpt500` apunta al paso 500 del entrenamiento anterior). No es un modelo orientado a producción ni a uso generalista: carece de benchmarks publicados, de licencia declarada, de idiomas documentados y de información sobre el dataset de entrenamiento.
 
@@ -12,13 +12,13 @@ Su relevancia es, por tanto, estrictamente experimental: sirve como ejemplo repr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only autorregresivo (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only autorregresivo (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (dato real de los pesos safetensors) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas) |
 | Idiomas soportados | no disponibles (el identificador sugiere suajili en escritura latina, sin confirmar en la model card) |
-| Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido real; HuggingFace no declara licencia) |
+| Licencia | no disponible (la model card incluye un campo `licence: license` sin contenido real; Hugging Face no declara licencia) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 4,8 GB |
 | Modelo base | francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 |
@@ -51,7 +51,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre un pipeline que i
 - Experimentos academicos sobre SFT con TRL: sirve como referencia reproducible de un entrenamiento supervisado con corpus de 10 MB y trazabilidad en Weights & Biases, util para comparar hiperparametros o estrategias de empaquetado de datos.
 - Investigacion sobre corpus de bajos recursos: si el identificador `swa-latn` corresponde efectivamente al suajili en alfabeto latino, el modelo puede emplearse como punto de partida para estudiar el comportamiento de modelos diminutos en lenguas con poca representacion digital.
 - Generacion de texto de relleno en entornos de desarrollo: util para poblar interfaces, mocks de API o demos internas donde la calidad linguistica no es critica y se prioriza la velocidad de respuesta.
-- Docencia y divulgacion: permite ilustrar en un aula o taller como se ajusta un GPT-2 pequeno, como se publica en HuggingFace y como se consume con `transformers.pipeline`, sin necesidad de infraestructura de GPU.
+- Docencia y divulgacion: permite ilustrar en un aula o taller como se ajusta un GPT-2 pequeno, como se publica en Hugging Face y como se consume con `transformers.pipeline`, sin necesidad de infraestructura de GPU.
 - Pruebas de cuantizacion y conversion de formatos: al ser un modelo de 39M de parametros, es un banco de pruebas comodo para validar flujos de conversion a GGUF, cuantizacion int8 o int4 y verificacion de que el resultado sigue generando texto coherente.
 - Benchmarking interno de motores de inferencia: comparar latencia y throughput entre `transformers`, `text-generation-inference` y otros servidores con un modelo que no satura la memoria del sistema.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39.087.104 | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39.087.104 | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - Riesgo de alucinacion: muy alto. Un modelo de 39M de parametros no tiene capacidad suficiente para almacenar conocimiento factual fiable; cualquier afirmacion factua que genere debe verificarse externamente.
 - Limitaciones de contexto: la longitud de contexto no esta documentada. No debe asumirse un valor concreto sin comprobacion empirica.
 - Limitaciones de idioma: la model card no declara idiomas soportados. Si el identificador `swa-latn` corresponde al suajili, el rendimiento en castellano sera previsiblemente muy pobre.
-- Restricciones de licencia: la licencia no esta declarada en HuggingFace y el campo `licence: license` de la model card es un marcador de posicion sin contenido. Sin una licencia explicita, no hay autorizacion clara para uso comercial; conviene contactar con el autor antes de cualquier uso productivo.
+- Restricciones de licencia: la licencia no esta declarada en Hugging Face y el campo `licence: license` de la model card es un marcador de posicion sin contenido. Sin una licencia explicita, no hay autorizacion clara para uso comercial; conviene contactar con el autor antes de cualquier uso productivo.
 - Trazabilidad limitada: no se documentan el dataset, el numero de tokens, la composicion de los datos ni el proceso de filtrado, lo que impide auditar el modelo.
 - Ausencia de validacion de la comunidad: cero descargas y cero "likes" implican que el modelo no ha sido probado por terceros; no hay informes independientes de calidad.
 - Modelo base poco documentado: el propio checkpoint base del que deriva carece de informacion publica detallada.
@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/nmbvmp1n

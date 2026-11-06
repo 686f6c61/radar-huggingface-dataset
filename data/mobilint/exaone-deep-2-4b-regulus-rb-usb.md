@@ -89,8 +89,8 @@ La comparacion con alternativas de terceros (por ejemplo, modelos densos de 2-4B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/EXAONE-Deep-2.4B-regulus-rb-usb
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/EXAONE-Deep-2.4B-regulus-rb-usb
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B
 - Licencia EXAONE (modelo base): https://huggingface.co/LGAI-EXAONE/EXAONE-Deep-2.4B/blob/main/LICENSE
 - Sitio de Mobilint: https://mobilint.com
 - Repositorio de modelos de Mobilint (mblt-model-zoo): https://github.com/mobilint/mblt-model-zoo

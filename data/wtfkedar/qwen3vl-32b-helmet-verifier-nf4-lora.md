@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wtfkedar/qwen3vl-32b-helmet-verifier-nf4-lora | 32B (base) + LoRA | no disponible | Clasificación de casco en 4 clases | no disponible (base Apache-2.0) | HuggingFace (repo privado) |
-| Qwen/Qwen3-VL-32B-Instruct | 32B | no disponible | Vision-language general | Apache-2.0 | HuggingFace |
+| wtfkedar/qwen3vl-32b-helmet-verifier-nf4-lora | 32B (base) + LoRA | no disponible | Clasificación de casco en 4 clases | no disponible (base Apache-2.0) | Hugging Face (repo privado) |
+| Qwen/Qwen3-VL-32B-Instruct | 32B | no disponible | Vision-language general | Apache-2.0 | Hugging Face |
 | Clasificadores CNN específicos de casco | típicamente < 100M | N/A | Detección/clasificación de casco | variable | variable |
 
 La comparación con clasificadores CNN específicos es cualitativa: este adaptador ofrece probabilidades calibradas y aprovecha el conocimiento visual de un modelo de 32B, a cambio de un coste de hardware muy superior (≈40 GB de VRAM frente a pocos cientos de MB de un CNN). No se dispone de datos de benchmarks de alternativas en la información proporcionada.
@@ -101,14 +101,14 @@ La comparación con clasificadores CNN específicos es cualitativa: este adaptad
 - Datos escasos: 1 713 recortes de entrenamiento de un único emplazamiento. Debe verificarse la accuracy con imágenes de nuevas cámaras antes de confiar en el modelo.
 - La precisión de la base debe coincidir: los adaptadores se ajustaron a la base cuantizada en NF4. Cargarlos sobre la base bf16 o fusionarlos en ella cambia las salidas; es necesario volver a evaluar tras cualquier cambio de este tipo.
 - Licencia del adaptador no especificada: aunque el modelo base es Apache-2.0, el uso comercial del adaptador requiere verificar los términos con el autor.
-- El repositorio aparece como privado en la model card y requiere un token de lectura de HuggingFace para su descarga.
+- El repositorio aparece como privado en la model card y requiere un token de lectura de Hugging Face para su descarga.
 - Riesgo de alucinación en la clase `unclear`: el modelo puede forzar una decisión binaria cuando la imagen no es concluyente, por lo que el umbral y la temperatura deben validarse en el dominio de despliegue.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wtfkedar/qwen3vl-32b-helmet-verifier-nf4-lora
+- Hugging Face: https://huggingface.co/wtfkedar/qwen3vl-32b-helmet-verifier-nf4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
-- Resultados y plots: `results/plots/` y `results/SUMMARY.md` dentro del repositorio de HuggingFace
-- Código de despliegue: `prod_deployment.py` dentro del repositorio de HuggingFace
-- Código de entrenamiento y evaluación: `helmet_vlm/` dentro del repositorio de HuggingFace
+- Resultados y plots: `results/plots/` y `results/SUMMARY.md` dentro del repositorio de Hugging Face
+- Código de despliegue: `prod_deployment.py` dentro del repositorio de Hugging Face
+- Código de entrenamiento y evaluación: `helmet_vlm/` dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

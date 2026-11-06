@@ -71,5 +71,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laurabrown/perceiver-finetuned9
+- Repositorio Hugging Face: https://huggingface.co/laurabrown/perceiver-finetuned9
 - Paper de referencia del Perceiver original: https://arxiv.org/pdf/2103.03206.pdf

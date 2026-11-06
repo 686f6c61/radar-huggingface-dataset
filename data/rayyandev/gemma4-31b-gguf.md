@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rayyandev/gemma4-31b.gguf` es un repositorio alojado en HuggingFace por el usuario `rayyandev` que, según su nombre, contendría pesos en formato GGUF de un supuesto modelo de 31 000 millones de parámetros denominado "gemma4-31b". No se trata de un lanzamiento oficial: el repositorio no está vinculado a Google ni a ningún laboratorio conocido, y en el momento de la consulta acumulaba 0 descargas y 1 like, sin ficha técnica, sin licencia declarada y sin pipeline asignado.
+`rayyandev/gemma4-31b.gguf` es un repositorio alojado en Hugging Face por el usuario `rayyandev` que, según su nombre, contendría pesos en formato GGUF de un supuesto modelo de 31 000 millones de parámetros denominado "gemma4-31b". No se trata de un lanzamiento oficial: el repositorio no está vinculado a Google ni a ningún laboratorio conocido, y en el momento de la consulta acumulaba 0 descargas y 1 like, sin ficha técnica, sin licencia declarada y sin pipeline asignado.
 
 La información disponible sobre este repositorio es prácticamente nula. No hay tarjeta de modelo con descripción, no se declaran idiomas, licencia, arquitectura ni datos de entrenamiento, y la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces obtenidos corresponden a sitios de vídeo para adultos, completamente ajenos al objeto de la consulta. Esto impide verificar la procedencia, el contenido real de los archivos o la legitimidad del artefacto.
 
@@ -67,7 +67,7 @@ No disponible. No se ha podido obtener informacion verificable de alternativas c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| rayyandev/gemma4-31b.gguf | 31 000 millones segun el nombre (no verificado) | no disponible | no disponible | HuggingFace, 0 descargas, 1 like | No |
+| rayyandev/gemma4-31b.gguf | 31 000 millones segun el nombre (no verificado) | no disponible | no disponible | Hugging Face, 0 descargas, 1 like | No |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No |
 
 Unicamente puede senalarse, como observacion de contexto, que el nombre del repositorio remite a una hipotetica cuarta generacion de la familia Gemma de Google, sin que la informacion disponible confirme la existencia oficial de una variante de 31 000 millones de parametros con esa denominacion.
@@ -88,7 +88,7 @@ Unicamente puede senalarse, como observacion de contexto, que el nombre del repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rayyandev/gemma4-31b.gguf
+- Repositorio en Hugging Face: https://huggingface.co/rayyandev/gemma4-31b.gguf
 - Paper: no disponible.
 - Blog oficial: no disponible.
 - Repositorio de codigo: no disponible.

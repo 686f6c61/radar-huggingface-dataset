@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentiment-news-1.0 es un modelo de clasificacion de texto especializado en analisis de sentimiento de noticias en idioma indonesio (bahasa Indonesia). Ha sido desarrollado por el usuario djnsfull y publicado en HuggingFace como un fine-tuning del modelo IndoBERT-Large-P2 de IndoBenchmark, un encoder tipo BERT entrenado especificamente para lenguas de Indonesia.
+Sentiment-news-1.0 es un modelo de clasificacion de texto especializado en analisis de sentimiento de noticias en idioma indonesio (bahasa Indonesia). Ha sido desarrollado por el usuario djnsfull y publicado en Hugging Face como un fine-tuning del modelo IndoBERT-Large-P2 de IndoBenchmark, un encoder tipo BERT entrenado especificamente para lenguas de Indonesia.
 
 El modelo resuelve el problema de determinar automaticamente la polaridad sentimental (positiva, negativa o neutra, presumiblemente) de titulares y articulos de prensa en indonesio, una tarea relevante para monitorizacion de medios, analisis de opinion publica y sistemas de inteligencia competitiva en mercados de habla indonesia.
 
@@ -31,9 +31,9 @@ Los detalles del proceso de entrenamiento no estan disponibles: no se ha publica
 
 - Clasificacion de sentimiento de textos en indonesio, optimizada para contenido de noticias (titulares, resumenes, parrafos informativos).
 - Clasificacion de noticias (news-classification), segun las etiquetas del repositorio.
-- Integracion estandar con la libreria transformers de HuggingFace mediante el pipeline `text-classification`.
+- Integracion estandar con la libreria transformers de Hugging Face mediante el pipeline `text-classification`.
 - Compatibilidad con Text Embeddings Inference (TEI) para despliegue eficiente.
-- Compatibilidad con endpoints de inferencia de HuggingFace (endpoints_compatible).
+- Compatibilidad con endpoints de inferencia de Hugging Face (endpoints_compatible).
 - No soporta generacion de texto, razonamiento, codigo, vision ni tool calling: es un modelo encoder puramente discriminativo.
 - Capacidades multilingues: limitadas al idioma para el que fue ajustado (indonesio); el modelo base tenia cierta exposicion al ingles, pero el rendimiento en otros idiomas no esta documentado.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: unos 1,4-1,5 GB en FP32 para los pesos (1,3 GB en safetensors), mas overhead de activaciones; con cuantizacion a INT8 se reduciria a aproximadamente 0,4 GB, aunque no hay versiones cuantizadas publicadas oficialmente.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente; por ejemplo, una RTX 3060, T4 o superior. No se requiere hardware de gama alta tipo A100/H100 para inferencia.
 - Cabe comodamente en GPUs de consumo (RTX 3060/4060 o superiores) e incluso es ejecutable solo en CPU, dado el tamano moderado del modelo, aunque con mayor latencia.
-- Opciones de despliegue: transformers (PyTorch) de HuggingFace, HuggingFace Inference Endpoints, Text Embeddings Inference (TEI, segun la etiqueta del repositorio), y soluciones genericas de serving de modelos encoder. La compatibilidad con llama.cpp u Ollama no esta documentada y no es habitual para modelos BERT.
+- Opciones de despliegue: transformers (PyTorch) de Hugging Face, Hugging Face Inference Endpoints, Text Embeddings Inference (TEI, segun la etiqueta del repositorio), y soluciones genericas de serving de modelos encoder. La compatibilidad con llama.cpp u Ollama no esta documentada y no es habitual para modelos BERT.
 - Latencia y throughput: no disponibles; como referencia, un BERT-Large en GPU de consumo suele procesar decenas a cientos de secuencias por segundo en batch, pero no hay cifras oficiales para este modelo.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ Comparado con su modelo base, sentiment-news-1.0 aporta especializacion en senti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djnsfull/sentiment-news-1.0
+- Modelo en Hugging Face: https://huggingface.co/djnsfull/sentiment-news-1.0
 - Modelo base (IndoBERT-Large-P2): https://huggingface.co/indobenchmark/indobert-large-p2
 - No se han encontrado enlaces adicionales (paper, blog, repositorio de codigo o demo) en la informacion disponible.

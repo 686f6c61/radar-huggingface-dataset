@@ -80,7 +80,7 @@ La comparativa directa con modelos similares es limitada porque este repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fab1670/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/Fab1670/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Modelo base: https://huggingface.co/llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic
 - Repositorio similar de ethanfel: https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot
 - Proyecto ComfyUI-H3-Qwen3VL-TextGen: https://github.com/ethanfel/ComfyUI-H3-Qwen3VL-TextGen

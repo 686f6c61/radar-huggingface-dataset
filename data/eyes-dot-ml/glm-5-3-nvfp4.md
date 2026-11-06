@@ -84,7 +84,7 @@ La comparativa directa con el BF16 muestra que la cuantización reduce el tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyes-dot-ml/GLM-5.3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/eyes-dot-ml/GLM-5.3-NVFP4
 - Modelo original (Z.ai): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3
 - Repositorio de NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

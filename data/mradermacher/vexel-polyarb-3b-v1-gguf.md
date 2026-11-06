@@ -89,7 +89,7 @@ La comparativa se ofrece a título orientativo: los tres modelos alternativos so
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Vexel-PolyArb-3B-v1-GGUF](https://huggingface.co/mradermacher/Vexel-PolyArb-3B-v1-GGUF)
+- [Hugging Face: mradermacher/Vexel-PolyArb-3B-v1-GGUF](https://huggingface.co/mradermacher/Vexel-PolyArb-3B-v1-GGUF)
 - [Modelo base: VexelQuant/Vexel-PolyArb-3B-v1](https://huggingface.co/VexelQuant/Vexel-PolyArb-3B-v1)
 - [Página de descargas del cuantizador](https://hf.tst.eu/model#Vexel-PolyArb-3B-v1-GGUF)
 - [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

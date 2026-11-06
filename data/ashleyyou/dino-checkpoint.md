@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyyou/dino-checkpoint` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia denominada Dino orientada a tareas multitarea, junto con un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el fichero `model.safetensors` es válido únicamente para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento contrastado. El repositorio ocupa 0,0 GB y el recuento real de parámetros en safetensors es de 49.600, una cifra extremadamente reducida.
+`ashleyyou/dino-checkpoint` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia denominada Dino orientada a tareas multitarea, junto con un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el fichero `model.safetensors` es válido únicamente para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con rendimiento contrastado. El repositorio ocupa 0,0 GB y el recuento real de parámetros en safetensors es de 49.600, una cifra extremadamente reducida.
 
 El proyecto se plantea como una base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Define una escala "base", atención de ventana deslizante (sliding window), fusión mediante co-attention, activación gelu tanh y normalización scalenorm. La receta por defecto usa el optimizador lion con un schedule de warmup constante, valores que el autor describe como puntos de partida del script y no como evidencia de un run finalizado.
 
@@ -75,6 +75,6 @@ No disponible. El repositorio no publica métricas ni define una categoría func
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyyou/dino-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/ashleyyou/dino-checkpoint
 - Checkpoints del proyecto DINo (paper, sin relación documentada con este repositorio): https://figshare.com/articles/online_resource/Model_Checkpoints_for_DINo/21298251
 - El resto de resultados de la búsqueda web (paquetes de idioma de Windows, etiqueta "checkpoint" en Civitai) no guardan relación con este modelo y se omiten.

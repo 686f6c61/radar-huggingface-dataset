@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento de o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep50_gap_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep50_gap_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2

@@ -114,7 +114,7 @@ La comparación relevante es contra el mismo checkpoint en bf16, que es la únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-FP8-Dynamic
 - Modelo base bf16: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b
 - Versión GGUF del modelo base: https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-GGUF
 - Repositorio del pipeline bibr: https://github.com/scienceverse/bibr

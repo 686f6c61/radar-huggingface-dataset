@@ -23,7 +23,7 @@ Su relevancia es la de un experimento de "agente mínimo": demuestra que con 0,5
 | Tamano del repositorio | 0,5 GB (archivo Q8_0 de ~506 MB) |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
 | Metodo de ajuste | LoRA SFT, r=32, alpha=64, 4 epocas, lr 2e-4 (cosine) |
-| Descargas / likes en HuggingFace | 0 descargas / 1 like |
+| Descargas / likes en Hugging Face | 0 descargas / 1 like |
 | Fecha de publicacion | 15 de septiembre de 2026 (creado), 15 de septiembre de 2026 (actualizado) |
 
 ## Arquitectura y entrenamiento
@@ -111,7 +111,7 @@ La ventaja diferencial de Pulsar v0.4 Flash en esta categoria es el formato de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sonorix/pulsar-v0.4-flash-gguf
+- Modelo en Hugging Face: https://huggingface.co/Sonorix/pulsar-v0.4-flash-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejecucion via Ollama: `ollama run hf.co/Sonorix/pulsar-v0.4-flash-gguf:Q8_0`
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos resultados obtenidos corresponden a TraceParts (biblioteca de modelos CAD 3D) y no guardan relacion con Pulsar v0.4 Flash. No se han encontrado paper, blog tecnico, repositorio adicional ni demo asociados al modelo.

@@ -6,7 +6,7 @@ GLM-5.2 es el modelo insignia de Z.ai (anteriormente Zhipu AI) para tareas de ho
 
 El modelo introduce la arquitectura IndexShare, que reutiliza el mismo indexador en cada cuatro capas de atención dispersa, reduciendo los FLOPs por token en 2,9 veces a una longitud de contexto de 1M. También mejora la capa MTP (Multi-Token Prediction) para decodificación especulativa, aumentando la longitud de aceptación hasta un 20%. GLM-5.2 se distribuye bajo licencia MIT sin restricciones regionales, lo que lo convierte en una opción atractiva para despliegues comerciales, e incluye control de niveles de esfuerzo (effort levels) para equilibrar capacidad y latencia.
 
-La versión alojada en HuggingFace bajo el identificador prashim98/GLM-5.2 es una subida de la comunidad; el repositorio oficial del proyecto se encuentra en github.com/zai-org/GLM-5.
+La versión alojada en Hugging Face bajo el identificador prashim98/GLM-5.2 es una subida de la comunidad; el repositorio oficial del proyecto se encuentra en github.com/zai-org/GLM-5.
 
 ## Especificaciones técnicas
 

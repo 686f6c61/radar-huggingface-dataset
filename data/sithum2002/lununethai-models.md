@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LunuNeth AI es un marco de diagnóstico agrícola basado en inteligencia artificial, desarrollado por Sithum Buddhika (usuario Sithum2002), orientado a agricultores de cebolla en Sri Lanka. El repositorio en HuggingFace, identificado como `Sithum2002/lunuNethAI-models`, contiene los pesos y artefactos del modelo asociado a este proyecto. Según la información disponible, el sistema combina redes neuronales de grafos espacio-temporales (Spatio-Temporal Graph Neural Networks) con modelos de visión por computadora TinyML para detectar enfermedades, plagas y deficiencias nutricionales en cultivos, teniendo en cuenta condiciones microclimáticas.
+LunuNeth AI es un marco de diagnóstico agrícola basado en inteligencia artificial, desarrollado por Sithum Buddhika (usuario Sithum2002), orientado a agricultores de cebolla en Sri Lanka. El repositorio en Hugging Face, identificado como `Sithum2002/lunuNethAI-models`, contiene los pesos y artefactos del modelo asociado a este proyecto. Según la información disponible, el sistema combina redes neuronales de grafos espacio-temporales (Spatio-Temporal Graph Neural Networks) con modelos de visión por computadora TinyML para detectar enfermedades, plagas y deficiencias nutricionales en cultivos, teniendo en cuenta condiciones microclimáticas.
 
 El modelo está diseñado para ser integrado en una aplicación móvil, lo que sugiere un enfoque en la inferencia en dispositivos de bajos recursos. El repositorio incluye múltiples formatos de peso (keras, tflite, joblib, safetensors), lo que indica compatibilidad con diferentes marcos de despliegue. Sin embargo, la documentación pública es extremadamente limitada: la model card solo contiene la licencia MIT, sin detalles sobre arquitectura, entrenamiento o rendimiento. Esto dificulta una evaluación técnica precisa, aunque el contexto del proyecto permite inferir su propósito y casos de uso.
 
@@ -23,7 +23,7 @@ La relevancia actual radica en la aplicación de IA para agricultura de precisi�
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica detallada sobre la arquitectura del modelo en el repositorio de HuggingFace. La descripción del proyecto en GitHub menciona el uso de redes neuronales de grafos espacio-temporales (ST-GNN) para modelar dependencias espaciales y temporales en datos agronómicos, y modelos TinyML de visión por computadora para el análisis de imágenes de cultivos. No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). Tampoco se especifican innovaciones técnicas concretas más allá de la combinación de estas arquitecturas.
+No se dispone de información técnica detallada sobre la arquitectura del modelo en el repositorio de Hugging Face. La descripción del proyecto en GitHub menciona el uso de redes neuronales de grafos espacio-temporales (ST-GNN) para modelar dependencias espaciales y temporales en datos agronómicos, y modelos TinyML de visión por computadora para el análisis de imágenes de cultivos. No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). Tampoco se especifican innovaciones técnicas concretas más allá de la combinación de estas arquitecturas.
 
 ## Capacidades
 
@@ -69,5 +69,5 @@ No se han identificado modelos comparables directamente en el repositorio o en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sithum2002/lunuNethAI-models
+- Repositorio en Hugging Face: https://huggingface.co/Sithum2002/lunuNethAI-models
 - Proyecto en GitHub: https://github.com/sithumbuddhika2002/LunuNethAI-Website

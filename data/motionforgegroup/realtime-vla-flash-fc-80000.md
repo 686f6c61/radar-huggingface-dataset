@@ -82,9 +82,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MotionforgeGroup/realtime-vla-flash-FC-80000
+- Modelo en Hugging Face: https://huggingface.co/MotionforgeGroup/realtime-vla-flash-FC-80000
 - Página del proyecto Realtime-VLA FLASH: https://dexmal.github.io/realtime-vla-flash/
 - Paper en arXiv: https://arxiv.org/abs/2605.13778
 - Versión HTML del paper: https://arxiv.org/html/2605.13778v1
 - Repositorio GitHub de Realtime-VLA FLASH: https://github.com/dexmal/realtime-vla-flash
-- Organización MotionforgeGroup en HuggingFace: https://huggingface.co/MotionforgeGroup/models
+- Organización MotionforgeGroup en Hugging Face: https://huggingface.co/MotionforgeGroup/models

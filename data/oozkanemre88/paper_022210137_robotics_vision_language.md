@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oozkanemre88/paper_022210137_robotics_vision_language
+- Repositorio Hugging Face: https://huggingface.co/oozkanemre88/paper_022210137_robotics_vision_language
 - Referencia externa relacionada: [Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications](https://arxiv.org/pdf/2510.07077)
 - [Vision-Language-Action (VLA) Models for Unmanned Aerial Robotics](https://www.preprints.org/manuscript/202604.0664)
 - [pi0: A Vision-Language-Action Flow Model for General Robot Control](https://robotics.growbotics.ai/zh/research/papers/pi0-vision-language-action-flow-model-general-robot-control)

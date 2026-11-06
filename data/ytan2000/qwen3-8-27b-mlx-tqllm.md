@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de calidad para comparar con alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YTan2000/Qwen3.8-27B-MLX-tqLLM
+- Repositorio Hugging Face: https://huggingface.co/YTan2000/Qwen3.8-27B-MLX-tqLLM
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Indexadores QSA: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-BF16

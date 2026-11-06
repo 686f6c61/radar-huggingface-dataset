@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gonzalezgon/retrieval` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información multimodal, presumiblemente texto-imagen dado el origen del backbone). Lo publica el usuario `gonzalezgon` bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo y experimentos controlados.
+`gonzalezgon/retrieval` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información multimodal, presumiblemente texto-imagen dado el origen del backbone). Lo publica el usuario `gonzalezgon` bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo y experimentos controlados.
 
 La configuración declarada es "xlarge" con atención dilatada, fusión bilineal, activación gelu-tanh y normalización InstanceNorm. El repositorio incluye el script principal (`run.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (AdamW con schedule coseno) y un `model.safetensors` que, según el propio autor, es solo una inicialización, no un checkpoint entrenado ni evaluado.
 
@@ -30,7 +30,7 @@ No hay información sobre datos de entrenamiento: no se especifican tokens, comp
 ## Capacidades
 
 - No se declaran capacidades funcionales verificadas: el repositorio es un esqueleto de implementación, no un modelo entrenado.
-- El pipeline declarado en HuggingFace es "no disponible"; no hay `pipeline_tag` de retrieval, image-feature-extraction ni similar.
+- El pipeline declarado en Hugging Face es "no disponible"; no hay `pipeline_tag` de retrieval, image-feature-extraction ni similar.
 - No hay soporte documentado de tool calling, function calling ni agentes.
 - No hay capacidades multilingües declaradas (idiomas: no disponibles).
 - No hay modo thinking, visión, audio ni otras capacidades especiales documentadas más allá del propósito genérico de retrieval.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gonzalezgon/retrieval | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, repo mínimo |
+| gonzalezgon/retrieval | 33.088 (checkpoint de inicialización) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, repo mínimo |
 | MobileViT oficial (apple/ml-mobilevit) | ~1,3M–5,6M según variante | no aplica (visión) | benchmarks en ImageNet | Apple Sample Code / permisiva | GitHub, pesos oficiales |
-| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | HuggingFace, OpenAI |
-| SigLIP (Google) | ~200M–400M | 64 tokens de texto | benchmarks públicos en retrieval | Apache 2.0 | HuggingFace |
+| CLIP (OpenAI) | ~150M (ViT-B/32) | 77 tokens de texto | benchmarks públicos en retrieval imagen-texto | MIT | Hugging Face, OpenAI |
+| SigLIP (Google) | ~200M–400M | 64 tokens de texto | benchmarks públicos en retrieval | Apache 2.0 | Hugging Face |
 
 La comparación es orientativa: este repositorio no es un modelo entrenado y no compite en rendimiento con CLIP o SigLIP. Su valor es como esqueleto de implementación, no como alternativa funcional.
 
@@ -74,13 +74,13 @@ La comparación es orientativa: este repositorio no es un modelo entrenado y no 
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según advierte el propio autor.
 - No hay datos de entrenamiento declarados, por lo que no se puede evaluar sesgo ni composición del corpus.
 - El recuento de parámetros (33.088) es inconsistente con una configuración "xlarge" de MobileViT; probablemente refleja solo el checkpoint de inicialización o un subconjunto, lo que impide estimar requisitos reales.
-- Las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no funciona con `AutoModel.from_pretrained` sin código adicional.
+- Las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no funciona con `AutoModel.from_pretrained` sin código adicional.
 - Licencia BSD-3-Clause permite uso comercial, pero el autor recomienda revisar por separado los términos de los datos externos que se usen con el repositorio.
 - No hay garantía de mantenimiento ni versionado; el repositorio se creó y actualizó el mismo día (2026-11-05), con 0 descargas y 0 likes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gonzalezgon/retrieval
+- Hugging Face: https://huggingface.co/gonzalezgon/retrieval
 - Repositorio oficial de MobileViT (referencia de arquitectura): https://github.com/apple/ml-mobilevit
 - Paper MobileViT: https://arxiv.org/abs/2110.02178
 - Dataset sugerido para evaluación (Flickr30k): https://shannon.cs.illinois.edu/DenotationGraph/

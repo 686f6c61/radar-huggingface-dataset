@@ -56,8 +56,8 @@ No disponible. No se puede comparar este adaptador con otros modelos de la misma
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/manojpaul9986/qwen-0.5b-dpo-adapter)
+- [Repositorio Hugging Face](https://huggingface.co/manojpaul9986/qwen-0.5b-dpo-adapter)
 - [Qwen3 en GitHub](https://github.com/QwenLM/Qwen3) (referencia general de la familia Qwen)
-- [Qwen2.5-0.5B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-0.5B) (posible modelo base)
+- [Qwen2.5-0.5B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-0.5B) (posible modelo base)
 - [SecureCoder-Qwen (fine-tuning DPO sobre Qwen 0.5B)](https://github.com/officialkushagragupta/SecureCoder-Qwen/tree/main)
 - [Qwen-0.5B-DPO en FriendliAI](https://friendli.ai/models/chegde/Qwen-0.5B-DPO)

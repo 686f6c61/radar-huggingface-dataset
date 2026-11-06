@@ -91,7 +91,7 @@ No se dispone de cifras comparativas de rendimiento entre estas opciones en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed
+- Modelo en Hugging Face: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8-embed
 - Modelo base: https://huggingface.co/diethylene/codet5-small-nl2cmd-trimmed-onnx-int8
 - Dataset NL2SH-ALFA: https://huggingface.co/datasets/westenfelder/NL2SH-ALFA
 - Paper "LLM-Supported Natural Language to Bash Translation" (NAACL 2025): https://doi.org/10.18653/v1/2025.naacl-long.555

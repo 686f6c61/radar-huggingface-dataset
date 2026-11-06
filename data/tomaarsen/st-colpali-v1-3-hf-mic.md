@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Calidad de recuperación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tomaarsen/st-colpali-v1-3-hf-mic` | 16.714.560 | no disponible | nula (pesos aleatorios) | no disponible | HuggingFace, 0 descargas |
-| `vidore/colpali-v1.3-hf` | no disponible en la información proporcionada | no disponible | la del modelo fuente original | no disponible | HuggingFace (modelo base) |
-| Otros fixtures `mic` de tomaarsen | no disponible | no disponible | nula (pesos aleatorios) | no disponible | HuggingFace |
+| `tomaarsen/st-colpali-v1-3-hf-mic` | 16.714.560 | no disponible | nula (pesos aleatorios) | no disponible | Hugging Face, 0 descargas |
+| `vidore/colpali-v1.3-hf` | no disponible en la información proporcionada | no disponible | la del modelo fuente original | no disponible | Hugging Face (modelo base) |
+| Otros fixtures `mic` de tomaarsen | no disponible | no disponible | nula (pesos aleatorios) | no disponible | Hugging Face |
 
 La comparación relevante es con su modelo base: este artefacto comparte interfaz y clase con `vidore/colpali-v1.3-hf`, pero no su calidad. Frente a otros modelos de recuperación visual de documentos, no procede comparación de rendimiento porque el fixture no está pensado para evaluarse.
 
@@ -80,7 +80,7 @@ La comparación relevante es con su modelo base: este artefacto comparte interfa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-colpali-v1-3-hf-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-colpali-v1-3-hf-mic
 - Modelo base: https://huggingface.co/vidore/colpali-v1.3-hf
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-colpali-v1-3-hf-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-colpali-v1-3-hf-mic/blob/main/integrations/transformers/usage.md

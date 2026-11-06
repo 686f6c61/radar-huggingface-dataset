@@ -79,7 +79,7 @@ La exclusión del corpus sintético cuesta aproximadamente 1,5 puntos de F1 prom
 | **ModernBERT-Base** (modelo base) | 150M | 8.192 | en | Apache 2.0 | 73,5 |
 | **ClimateBERT** (RoBERTa-base adaptado a clima) | 125M | 512 | en | MIT | 72,1 |
 
-*Nota: la licencia de los modelos ClimateModernBERT no está especificada en la model card ni en los metadatos de HuggingFace.*
+*Nota: la licencia de los modelos ClimateModernBERT no está especificada en la model card ni en los metadatos de Hugging Face.*
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La exclusión del corpus sintético cuesta aproximadamente 1,5 puntos de F1 prom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_drop_S_LRD
+- Modelo en Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_drop_S_LRD
 - Colección ClimateModernBERT: https://huggingface.co/collections/sraj/climatemodernbert
 - Colección CMB all: https://huggingface.co/collections/sraj/cmb-all
 - Proyecto web: https://michaelyya.github.io/ClimateModernBERT/

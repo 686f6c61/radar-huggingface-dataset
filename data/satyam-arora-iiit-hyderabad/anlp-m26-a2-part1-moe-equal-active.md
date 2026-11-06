@@ -94,7 +94,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-equal-active
+- Modelo en Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-equal-active
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de la asignatura con la arquitectura y el codigo de carga: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

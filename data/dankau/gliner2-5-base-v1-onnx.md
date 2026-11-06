@@ -79,7 +79,7 @@ La principal diferencia con el modelo original de Fastino es el formato de seria
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DanKau/gliner2.5-base-v1-onnx
+- Repositorio Hugging Face: https://huggingface.co/DanKau/gliner2.5-base-v1-onnx
 - Modelo base original: https://huggingface.co/fastino/gliner2.5-base-v1
 - Exportacion multilingue: https://huggingface.co/DanKau/g2.5-multi-v1-onnx
 - Exportacion GLiNER2 multilingue: https://huggingface.co/DanKau/gliner2-multi-v1-onnx

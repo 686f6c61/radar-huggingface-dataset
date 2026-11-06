@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SazenLabs/vocab-models es un repositorio de modelos publicado por SazenLabs en HuggingFace que, según los metadatos disponibles, contiene pesos en formato ONNX y GGUF con un total de 4.647.450.147 parámetros (aproximadamente 4,6 mil millones). El repositorio ocupa 9,5 GB y está etiquetado como "conversational", "endpoints_compatible" e "imatrix", lo que sugiere un uso orientado a inferencia conversacional y despliegue en infraestructuras compatibles con endpoints estándar.
+SazenLabs/vocab-models es un repositorio de modelos publicado por SazenLabs en Hugging Face que, según los metadatos disponibles, contiene pesos en formato ONNX y GGUF con un total de 4.647.450.147 parámetros (aproximadamente 4,6 mil millones). El repositorio ocupa 9,5 GB y está etiquetado como "conversational", "endpoints_compatible" e "imatrix", lo que sugiere un uso orientado a inferencia conversacional y despliegue en infraestructuras compatibles con endpoints estándar.
 
 El nombre "vocab-models" y la presencia conjunta de ONNX y GGUF apuntan a un artefacto pensado para servir como modelo base o vocabulario compartido dentro de un ecosistema mayor de SazenLabs, más que a un modelo con documentación y benchmarks propios. No se ha publicado información sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados en la información disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SazenLabs/vocab-models | ~4,6 B | no disponible | no disponible | HuggingFace (33 descargas) |
-| Qwen2.5-3B / 7B | 3 B / 7 B | 32K (128K en variantes) | Apache 2.0 (mayoría) | HuggingFace, ampliamente documentado |
-| Llama 3.2 3B | 3 B | 128K | Llama 3.2 Community License | HuggingFace, Meta |
-| Phi-3.5-mini | 3,8 B | 128K | MIT | HuggingFace, Microsoft |
+| SazenLabs/vocab-models | ~4,6 B | no disponible | no disponible | Hugging Face (33 descargas) |
+| Qwen2.5-3B / 7B | 3 B / 7 B | 32K (128K en variantes) | Apache 2.0 (mayoría) | Hugging Face, ampliamente documentado |
+| Llama 3.2 3B | 3 B | 128K | Llama 3.2 Community License | Hugging Face, Meta |
+| Phi-3.5-mini | 3,8 B | 128K | MIT | Hugging Face, Microsoft |
 
 La comparación es aproximada: no se dispone de datos de arquitectura, contexto ni benchmarks del modelo de SazenLabs, por lo que la equiparación se basa únicamente en el orden de magnitud de parámetros. Los modelos alternativos citados cuentan con model cards completas, licencias claras y evaluaciones publicadas, ventajas que el repositorio analizado no ofrece.
 
@@ -83,8 +83,8 @@ La comparación es aproximada: no se dispone de datos de arquitectura, contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SazenLabs/vocab-models
-- Página de SazenLabs en HuggingFace: https://huggingface.co/SazenLabs
+- Repositorio en Hugging Face: https://huggingface.co/SazenLabs/vocab-models
+- Página de SazenLabs en Hugging Face: https://huggingface.co/SazenLabs
 - Documentación de llama.cpp (para GGUF): https://github.com/ggerganov/llama.cpp
 - Documentación de ONNX Runtime: https://onnxruntime.ai/
 - Documentación de Ollama: https://ollama.com/

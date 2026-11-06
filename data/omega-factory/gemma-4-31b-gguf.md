@@ -93,10 +93,10 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria en
 
 | Modelo / variante | Parametros | Contexto | GSM8K | MATH-500 | ARC-MC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gemma-4-31b (FP16) | 32,7 B declarados | 262.144 | 86,0 % | 36,5 % | 85,0 % | Gemma Terms of Use | HuggingFace (google/gemma-4-31b) |
-| gemma-4-31b-GGUF Q8_0 | ~30,7 B safetensors | 262.144 | 84,5 % | 37,0 % | 95,0 % | Gemma Terms of Use | HuggingFace (este repositorio) |
-| gemma-4-31b-GGUF Q4_K_M | ~30,7 B safetensors | 262.144 | 87,5 % | 35,5 % | 94,5 % | Gemma Terms of Use | HuggingFace (este repositorio) |
-| gemma-4-31b-GGUF Q2_K | ~30,7 B safetensors | 262.144 | 2,0 % | 6,0 % | 91,0 % | Gemma Terms of Use | HuggingFace (este repositorio) |
+| gemma-4-31b (FP16) | 32,7 B declarados | 262.144 | 86,0 % | 36,5 % | 85,0 % | Gemma Terms of Use | Hugging Face (google/gemma-4-31b) |
+| gemma-4-31b-GGUF Q8_0 | ~30,7 B safetensors | 262.144 | 84,5 % | 37,0 % | 95,0 % | Gemma Terms of Use | Hugging Face (este repositorio) |
+| gemma-4-31b-GGUF Q4_K_M | ~30,7 B safetensors | 262.144 | 87,5 % | 35,5 % | 94,5 % | Gemma Terms of Use | Hugging Face (este repositorio) |
+| gemma-4-31b-GGUF Q2_K | ~30,7 B safetensors | 262.144 | 2,0 % | 6,0 % | 91,0 % | Gemma Terms of Use | Hugging Face (este repositorio) |
 
 Comparativas con otros modelos de ~30 B (Qwen, Llama, Mistral, etc.): no disponible en la informacion proporcionada.
 
@@ -117,8 +117,8 @@ Comparativas con otros modelos de ~30 B (Qwen, Llama, Mistral, etc.): no disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omega-Factory/gemma-4-31b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Omega-Factory/gemma-4-31b-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31b
 - Pagina del modelo en Omega Factory: https://omega-factory.ai/models/gemma-4-31b-gguf-v1
-- Organizacion en HuggingFace: https://huggingface.co/Omega-Factory
+- Organizacion en Hugging Face: https://huggingface.co/Omega-Factory
 - Resultados de la busqueda web: las consultas no devolvieron informacion relevante sobre el modelo. Los resultados obtenidos corresponden al fabricante de relojes Omega y a la entrada de Wikipedia sobre la letra griega omega, sin relacion con este repositorio. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

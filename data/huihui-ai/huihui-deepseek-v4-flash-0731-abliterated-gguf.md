@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF es una versión cuantizada y "abliterated" del modelo base deepseek-ai/DeepSeek-V4-Flash-0731, publicada por el usuario huihui-ai en HuggingFace. El proceso de abliteration elimina los mecanismos de rechazo y censura del modelo original, dando lugar a una variante sin restricciones de contenido, mientras que la cuantización en formato GGUF permite su ejecución en hardware de consumo, incluidos equipos Apple Silicon gracias al soporte Metal.
+Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF es una versión cuantizada y "abliterated" del modelo base deepseek-ai/DeepSeek-V4-Flash-0731, publicada por el usuario huihui-ai en Hugging Face. El proceso de abliteration elimina los mecanismos de rechazo y censura del modelo original, dando lugar a una variante sin restricciones de contenido, mientras que la cuantización en formato GGUF permite su ejecución en hardware de consumo, incluidos equipos Apple Silicon gracias al soporte Metal.
 
 El modelo pertenece a la familia DeepSeek-V4-Flash, de arquitectura mixture-of-experts (MoE), y está orientado a generación de texto conversacional. La versión publicada incluye varias cuantizaciones (IQ2_XXS, Q2_K, Q4_K) con matrices de importancia (imatrix) para optimizar la calidad en bajas precisiones. Su relevancia radica en ofrecer una alternativa desplegable localmente, sin censura, para desarrolladores que necesitan un modelo de chat de gran tamaño en entornos con recursos limitados.
 
-No se dispone de información oficial sobre el número de parámetros, longitud de contexto o idiomas soportados, ya que la ficha de HuggingFace no los detalla. El repositorio acumula 197.135 descargas y 138 likes, lo que indica una adopción notable en la comunidad.
+No se dispone de información oficial sobre el número de parámetros, longitud de contexto o idiomas soportados, ya que la ficha de Hugging Face no los detalla. El repositorio acumula 197.135 descargas y 138 likes, lo que indica una adopción notable en la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No disponible. No se conocen modelos comparables exactos en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF
 - Modelo base (referencia): deepseek-ai/DeepSeek-V4-Flash-0731 (no se ha verificado su existencia en el momento de redactar esta ficha)
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

@@ -100,7 +100,7 @@ Los datos de rendimiento comparado no están disponibles: Faqih Flutter 1 no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hozifa1/Faqih-Flutter-1-FF
+- Modelo en Hugging Face: https://huggingface.co/hozifa1/Faqih-Flutter-1-FF
 - Repositorio hermano con el adaptador LoRA (286 MB): https://huggingface.co/hozifa1/Faqih-Flutter-1-FF-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/NoirZangetsu/flutterft

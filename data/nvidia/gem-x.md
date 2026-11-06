@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye modelos comparables de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/GEM-X
+- Modelo en Hugging Face: https://huggingface.co/nvidia/GEM-X
 - Repositorio GitHub: https://github.com/NVlabs/GEM-X
 - Paper (arXiv): https://arxiv.org/abs/2505.01425
 - Checkpoint de manos EgoHand-v1: https://huggingface.co/nvidia/EgoHand-v1

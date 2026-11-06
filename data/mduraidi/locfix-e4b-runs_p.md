@@ -17,7 +17,7 @@ La relevancia es, sin embargo, potencial y no demostrada: la model card no aport
 | Parametros activos | no disponible |
 | Longitud de contexto | 32.768 tokens (longitud máxima de secuencia en entrenamiento) |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras) |
-| Idiomas soportados | no disponible (etiqueta de idiomas vacía en HuggingFace) |
+| Idiomas soportados | no disponible (etiqueta de idiomas vacía en Hugging Face) |
 | Licencia | other (remite a las licencias del modelo base y de los datos de entrenamiento) |
 | Formato de pesos | safetensors (librería transformers, compatible con PEFT) |
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible con precisión. El repositorio ocupa 10,0 GB, lo que sugiere pesos en precisión alta (bf16/fp16) o la inclusión de varios checkpoints; en bf16, un modelo de este tamaño requiere del orden de 10-20 GB de VRAM solo para pesos, más overhead de contexto.
 - GPU recomendadas: no documentadas por el autor. Por tamaño, serían razonables A100 40/80 GB, H100 o L40S para despliegue en bf16 con contexto largo; no hay datos que lo confirmen.
 - GPU de consumo: probablemente viable en RTX 4090 (24 GB) en bf16 o en cuantizaciones de 8/4 bits, pero no se publican pesos GGUF ni se documenta compatibilidad con llama.cpp u Ollama.
-- Opciones de despliegue: Transformers + PEFT (framework declarado). vLLM, TGI y Ollama no están documentados para este repositorio; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: Transformers + PEFT (framework declarado). vLLM, TGI y Ollama no están documentados para este repositorio; la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se dispone de información suficiente para establecer una comparación con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mduraidi/locfix-e4b-runs_p
+- Repositorio Hugging Face: https://huggingface.co/mduraidi/locfix-e4b-runs_p
 - Repositorio citado en la model card: https://huggingface.co/Hennara/locfix-e4b-runs_p
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

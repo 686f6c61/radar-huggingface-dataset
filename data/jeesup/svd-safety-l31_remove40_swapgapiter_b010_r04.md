@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` que ha sido comprimido con SVD-LLM hasta conservar el 60,0 % de los parametros densos (40,02 % eliminados) y despues editado mediante 4 de las 10 rondas de un proceso iterativo de intercambio de parametros neutro en tamano ("parameter-neutral swap"), seleccionado con la regla `gap_iter` y con un presupuesto de restauracion del 1,000 % de los parametros densos. Lo publica el usuario Jeesup en HuggingFace y se enmarca en un estudio sobre como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes lo repara mejor.
+`Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` que ha sido comprimido con SVD-LLM hasta conservar el 60,0 % de los parametros densos (40,02 % eliminados) y despues editado mediante 4 de las 10 rondas de un proceso iterativo de intercambio de parametros neutro en tamano ("parameter-neutral swap"), seleccionado con la regla `gap_iter` y con un presupuesto de restauracion del 1,000 % de los parametros densos. Lo publica el usuario Jeesup en Hugging Face y se enmarca en un estudio sobre como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes lo repara mejor.
 
 No es un modelo conversacional de proposito general ni un asistente desplegable. La propia model card lo describe como un artefacto de investigacion: una celda concreta de una rejilla experimental sobre reglas de seleccion y presupuestos, en la que varias configuraciones estan deliberadamente degradadas en seguridad respecto al modelo base. Su relevancia actual es metodologica: cuantifica el coste de alineacion de la compresion agresiva de pesos y sirve de sujeto de prueba reproducible (semilla 42, recuento de componentes exacto) para estudiar tecnicas de reparacion.
 
@@ -17,7 +17,7 @@ A nivel practico, el checkpoint ocupa 16,1 GB en el repositorio, declara 8.030.2
 | Parametros activos | no aplica: modelo denso, no es MoE |
 | Longitud de contexto | 128.000 tokens heredados de `meta-llama/Llama-3.1-8B-Instruct`; no se especifica en la informacion proporcionada del repositorio |
 | Tipos de cuantizacion | no disponible: el repositorio solo publica pesos en safetensors, sin versiones GGUF, AWQ, GPTQ ni bitsandbytes |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace del repositorio; el modelo base declara oficialmente 8 idiomas (ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes) |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face del repositorio; el modelo base declara oficialmente 8 idiomas (ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes) |
 | Licencia | Llama 3.1 Community License (`license: llama3.1`); se incluyen `LICENSE` y `USE_POLICY.md` en el repositorio |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Modelo base | `meta-llama/Llama-3.1-8B-Instruct` |
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks de capacidades (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Licencia | ASR AdvBench | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04`) | 8,03 B en safetensors; fraccion densa conservada 0,5998 | 128.000 tokens heredados del base (no verificado en el repositorio) | Llama 3.1 Community License | 0,6350 | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no disponible en esta ficha | HuggingFace oficial, ampliamente utilizado |
+| Este checkpoint (`Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04`) | 8,03 B en safetensors; fraccion densa conservada 0,5998 | 128.000 tokens heredados del base (no verificado en el repositorio) | Llama 3.1 Community License | 0,6350 | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no disponible en esta ficha | Hugging Face oficial, ampliamente utilizado |
 | Checkpoints cuantizados de Llama-3.1-8B-Instruct (GGUF, AWQ, GPTQ) | Equivalentes a 8,03 B con precision reducida | 128.000 tokens | Llama 3.1 Community License | no disponible | Amplia disponibilidad en la comunidad |
 | Otros derivados por poda o compresion estructural de Llama-3.1-8B | no disponible | no disponible | Depende del derivado | no disponible | Dispersos, sin evaluacion estandarizada |
 
@@ -107,7 +107,7 @@ No se dispone de valores de ASR del modelo base bajo la misma configuracion de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia y politica de uso: los ficheros `LICENSE` y `USE_POLICY.md` estan incluidos en el propio repositorio del modelo; la licencia de referencia es la Llama 3.1 Community License (https://llama.meta.com/llama3_1/license/)
 - Paper del metodo de compresion SVD-LLM citado en el nombre del checkpoint: no se ha encontrado enlace en la busqueda web realizada

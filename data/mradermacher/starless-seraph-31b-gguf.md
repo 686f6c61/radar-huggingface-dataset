@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Starless-Seraph-31B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Starless-Seraph-31B-GGUF
 - Modelo base original: https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B
-- Página de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Página de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

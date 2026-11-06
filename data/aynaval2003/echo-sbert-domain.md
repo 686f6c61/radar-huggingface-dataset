@@ -84,6 +84,6 @@ La comparación directa es limitada porque los benchmarks de los modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aynaval2003/echo-sbert-domain
+- Modelo en Hugging Face: https://huggingface.co/aynaval2003/echo-sbert-domain
 - Paper Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Repositorio del proyecto Echo: https://github.com/ayn-aval/Echo

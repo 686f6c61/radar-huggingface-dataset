@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`luchiahao/matching-slim-2024` es un repositorio experimental publicado en HuggingFace por el usuario `luchiahao` que contiene un esqueleto de código de una arquitectura denominada **Mae** orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un *checkpoint* listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
+`luchiahao/matching-slim-2024` es un repositorio experimental publicado en Hugging Face por el usuario `luchiahao` que contiene un esqueleto de código de una arquitectura denominada **Mae** orientada a tareas de *matching*. No se trata de un modelo entrenado ni de un *checkpoint* listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio incluye una implementación propia en Python (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el mencionado `model.safetensors`. La escala declarada es *xlarge*, con atención lineal, fusión de bajo rango, activación *swish* y normalización *rmsnorm*, aunque el recuento real de parámetros del fichero de pesos es de solo 49.600 parámetros, una cifra que no guarda relación con la etiqueta "xlarge" y que apunta a una configuración deliberadamente reducida para inspección de cambios arquitectónicos.
 
-Su relevancia es, por tanto, puramente investigadora y de andamiaje: sirve para inspeccionar y modificar una arquitectura con atención lineal y fusión de bajo rango antes de lanzar un entrenamiento completo. No es un modelo de lenguaje generativo, no declara idiomas soportados, no publica resultados y no dispone de pipeline asociado en HuggingFace.
+Su relevancia es, por tanto, puramente investigadora y de andamiaje: sirve para inspeccionar y modificar una arquitectura con atención lineal y fusión de bajo rango antes de lanzar un entrenamiento completo. No es un modelo de lenguaje generativo, no declara idiomas soportados, no publica resultados y no dispone de pipeline asociado en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -94,11 +94,11 @@ Los datos de los tres modelos de referencia corresponden a especificaciones púb
 - La receta incluida (lion con *schedule* exponencial) son valores de partida del script y no evidencia de una ejecución completada; no deben citarse como resultados.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 - Restricciones de licencia: el código y los pesos se publican bajo apache-2.0, permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Idoneidad para producción: nula en el estado actual. No hay pipeline declarado en HuggingFace, no hay adaptador de carga genérico y no existen garantías de estabilidad de API.
+- Idoneidad para producción: nula en el estado actual. No hay pipeline declarado en Hugging Face, no hay adaptador de carga genérico y no existen garantías de estabilidad de API.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luchiahao/matching-slim-2024
+- Repositorio en Hugging Face: https://huggingface.co/luchiahao/matching-slim-2024
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos correspondían a páginas corporativas de Microsoft sin relación con el modelo.
 - No se dispone de paper, blog técnico ni demo asociados al modelo en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `EllaPriest45/MinimaxH3_Checkpoints` se presenta como una copia de seguridad de "contenido interesante" procedente de la plataforma Civitai, según la descripción del autor. No se trata de un modelo de IA original ni de un proyecto técnico documentado, sino de un almacén de archivos (posiblemente checkpoints, LoRAs u otros artefactos) que el autor ha subido a HuggingFace como respaldo ante una hipotética retirada de contenido en Civitai. El nombre "MinimaxH3" sugiere una posible relación con la familia de modelos Minimax o con algún checkpoint específico, pero no hay información oficial que lo confirme.
+El repositorio `EllaPriest45/MinimaxH3_Checkpoints` se presenta como una copia de seguridad de "contenido interesante" procedente de la plataforma Civitai, según la descripción del autor. No se trata de un modelo de IA original ni de un proyecto técnico documentado, sino de un almacén de archivos (posiblemente checkpoints, LoRAs u otros artefactos) que el autor ha subido a Hugging Face como respaldo ante una hipotética retirada de contenido en Civitai. El nombre "MinimaxH3" sugiere una posible relación con la familia de modelos Minimax o con algún checkpoint específico, pero no hay información oficial que lo confirme.
 
 El repositorio tiene un tamaño de 51.4 GB y está etiquetado con los tags `gguf` y `region:us`, lo que indica que podría contener pesos en formato GGUF (comúnmente usados para inferencia en CPU con llama.cpp), pero no se especifica qué modelo o modelos incluye. No existe una model card técnica, ni documentación sobre arquitectura, entrenamiento o capacidades. Cualquier uso de este repositorio debe hacerse con extrema cautela, ya que la procedencia y legalidad del contenido no están claras.
 
@@ -45,7 +45,7 @@ No disponible. No se puede comparar este repositorio con otros modelos porque no
 
 ## Limitaciones y advertencias
 
-- **Procedencia no verificada**: el autor declara que el contenido es un backup de Civitai, lo que implica que puede incluir material con derechos de autor o licencias restrictivas. Su redistribución en HuggingFace puede violar los términos de uso de la plataforma original.
+- **Procedencia no verificada**: el autor declara que el contenido es un backup de Civitai, lo que implica que puede incluir material con derechos de autor o licencias restrictivas. Su redistribución en Hugging Face puede violar los términos de uso de la plataforma original.
 - **Falta de documentación**: no hay model card técnica, ni instrucciones de uso, ni información sobre el modelo subyacente.
 - **Riesgo de contenido inapropiado**: dado que Civitai aloja modelos de generación de imágenes, a menudo con contenido NSFW, este repositorio podría contener archivos no aptos para entornos profesionales o educativos.
 - **Riesgo de seguridad**: al ser un repositorio no oficial y sin verificar, los archivos podrían contener código malicioso o pesos modificados que comprometan la integridad del sistema.
@@ -54,7 +54,7 @@ No disponible. No se puede comparar este repositorio con otros modelos porque no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EllaPriest45/MinimaxH3_Checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/EllaPriest45/MinimaxH3_Checkpoints
 - Plataforma Civitai (referencia del autor, no enlace directo al contenido): https://civitai.com
 
 No se han encontrado papers, blogs o demos asociados a este repositorio.

@@ -72,7 +72,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: [CaptainArni/audio.cpp-gguf](https://huggingface.co/CaptainArni/audio.cpp-gguf)
+- Repositorio Hugging Face: [CaptainArni/audio.cpp-gguf](https://huggingface.co/CaptainArni/audio.cpp-gguf)
 - Modelo base: [ACE-Step/acestep-v15-xl-turbo](https://huggingface.co/ACE-Step/acestep-v15-xl-turbo)
 - Framework audio.cpp: [https://github.com/0xShug0/audio.cpp](https://github.com/0xShug0/audio.cpp)
 - PR de soporte XL en audio.cpp: [PR #235](https://github.com/0xShug0/audio.cpp/pull/235)

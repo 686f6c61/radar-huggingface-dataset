@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| diethylene/codet5-small-nl2cmd-trimmed | 54.026.752 | No disponible | NL→bash (Linux) | Apache-2.0 | safetensors en HuggingFace; export ONNX previsto |
-| diethylene/codet5-small-nl2cmd (base) | No disponible (superior al recortado) | No disponible | NL→bash (Linux) | Apache-2.0 | safetensors en HuggingFace |
-| Salesforce/codet5-small | ~60 M (no verificado) | 512 tokens (no verificado) | Preentrenamiento de código y generación | No verificada en esta ficha | safetensors en HuggingFace |
-| google-t5/t5-small | ~60 M | 512 tokens | Texto a texto general | Apache-2.0 | safetensors en HuggingFace |
+| diethylene/codet5-small-nl2cmd-trimmed | 54.026.752 | No disponible | NL→bash (Linux) | Apache-2.0 | safetensors en Hugging Face; export ONNX previsto |
+| diethylene/codet5-small-nl2cmd (base) | No disponible (superior al recortado) | No disponible | NL→bash (Linux) | Apache-2.0 | safetensors en Hugging Face |
+| Salesforce/codet5-small | ~60 M (no verificado) | 512 tokens (no verificado) | Preentrenamiento de código y generación | No verificada en esta ficha | safetensors en Hugging Face |
+| google-t5/t5-small | ~60 M | 512 tokens | Texto a texto general | Apache-2.0 | safetensors en Hugging Face |
 
 La comparación cuantitativa de calidad con estas alternativas no es posible: el modelo no publica benchmarks y el modelo base solo se conoce a través de la relación declarada en la model card. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre alternativas de NL2CMD comparables.
 

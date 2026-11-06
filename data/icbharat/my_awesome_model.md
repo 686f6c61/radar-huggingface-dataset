@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`my_awesome_model` es un modelo de clasificación de texto desarrollado por el usuario `icbharat` y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `distilbert/distilbert-base-uncased`, un encoder Transformer destilado de BERT, orientado a tareas de clasificación de texto. El modelo fue entrenado durante dos épocas con un dataset no especificado en la model card, y alcanza una accuracy de validación de 0,9327 y una loss de 0,2335. Con 66,9 millones de parámetros, es un modelo ligero, adecuado para entornos con recursos limitados.
+`my_awesome_model` es un modelo de clasificación de texto desarrollado por el usuario `icbharat` y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `distilbert/distilbert-base-uncased`, un encoder Transformer destilado de BERT, orientado a tareas de clasificación de texto. El modelo fue entrenado durante dos épocas con un dataset no especificado en la model card, y alcanza una accuracy de validación de 0,9327 y una loss de 0,2335. Con 66,9 millones de parámetros, es un modelo ligero, adecuado para entornos con recursos limitados.
 
 Aunque la model card es muy escasa y no detalla el dataset de entrenamiento ni los casos de uso previstos, el modelo puede servir como ejemplo de fine-tuning de DistilBERT para clasificación de texto. Su licencia Apache 2.0 permite uso comercial y modificación. Sin embargo, al no existir información sobre el dataset, su rendimiento en dominios concretos no puede garantizarse sin una evaluación adicional.
 
@@ -23,7 +23,7 @@ Aunque la model card es muy escasa y no detalla el dataset de entrenamiento ni l
 
 El modelo se basa en DistilBERT, una versión destilada de BERT que reduce el número de capas de 12 a 6, manteniendo la arquitectura de encoder Transformer. DistilBERT se entrena con destilación de conocimiento, perdiendo aproximadamente el 40% de los parámetros pero conservando el 97% de las capacidades de BERT. En este caso, el modelo se ajustó finamente sobre un dataset no especificado, con los siguientes hiperparámetros: learning rate de 2e-5, batch size de 16, optimizador AdamW con betas (0,9, 0,999), scheduler lineal y 2 épocas. No se mencionan técnicas como RLHF, DPO ni innovaciones adicionales.
 
-El entrenamiento se realizó con el Trainer de HuggingFace, con los resultados de evaluación indicados en la model card: loss de validación 0,2335 y accuracy 0,9327 al final del entrenamiento. No hay información sobre la composición del dataset ni sobre el número de tokens.
+El entrenamiento se realizó con el Trainer de Hugging Face, con los resultados de evaluación indicados en la model card: loss de validación 0,2335 y accuracy 0,9327 al final del entrenamiento. No hay información sobre la composición del dataset ni sobre el número de tokens.
 
 ## Capacidades
 
@@ -78,12 +78,12 @@ No hay información suficiente para comparar con otros modelos del mismo tamaño
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/icbharat/my_awesome_model
+- Página del modelo en Hugging Face: https://huggingface.co/icbharat/my_awesome_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 
 No se han encontrado papers, repositorios ni demos adicionales. La búsqueda web arrojó otros modelos con nombres similares (por ejemplo, `sfcbm/MyAwesomeModel` o `sdsffs5/MyAwesomeModel`), pero no están relacionados con este.## Resumen
 
-`my_awesome_model` es un modelo de clasificación de texto publicado por el usuario `icbharat` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `distilbert/distilbert-base-uncased`, un transformer encoder destilado de BERT, orientado a tareas de clasificación de texto. El modelo fue entrenado durante dos épocas con un dataset no especificado en la model card, alcanzando una accuracy de validación de 0,9327 y una loss de 0,2335.
+`my_awesome_model` es un modelo de clasificación de texto publicado por el usuario `icbharat` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `distilbert/distilbert-base-uncased`, un transformer encoder destilado de BERT, orientado a tareas de clasificación de texto. El modelo fue entrenado durante dos épocas con un dataset no especificado en la model card, alcanzando una accuracy de validación de 0,9327 y una loss de 0,2335.
 
 Con 66,9 millones de parámetros, es un modelo ligero, adecuado para entornos con recursos limitados. Su licencia Apache 2.0 permite uso comercial y modificación. Sin embargo, la model card es muy escasa: no detalla el dataset de entrenamiento, ni las tareas concretas, ni los idiomas soportados. Por tanto, su rendimiento en dominios reales debe evaluarse antes de usarlo en producción.
 
@@ -159,7 +159,7 @@ No se dispone de comparativas directas con otros modelos. Como referencia, el mo
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/icbharat/my_awesome_model
+- Página del modelo en Hugging Face: https://huggingface.co/icbharat/my_awesome_model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 
 No se han encontrado papers, repositorios adicionales ni demos oficiales para este modelo. Los resultados de búsqueda web mostraron otros modelos con nombres similares (como `sfcbm/MyAwesomeModel` o `sdsffs5/MyAwesomeModel`), pero no están relacionados con este.

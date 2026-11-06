@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated es una variante del modelo Qwen3.5-27B, desarrollada por el equipo de huihui.ai (usuario kepom en HuggingFace), que ha sido sometida a un proceso de abliteración para eliminar los mecanismos de rechazo y censura del modelo original. El modelo base es Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled, una destilación de razonamiento basada en Claude 4.6 Opus aplicada sobre la arquitectura Qwen3.5 de 27 mil millones de parámetros. El resultado es un modelo denso, multimodal (imagen-texto) y sin filtros de seguridad, orientado a investigación y uso experimental.
+Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated es una variante del modelo Qwen3.5-27B, desarrollada por el equipo de huihui.ai (usuario kepom en Hugging Face), que ha sido sometida a un proceso de abliteración para eliminar los mecanismos de rechazo y censura del modelo original. El modelo base es Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled, una destilación de razonamiento basada en Claude 4.6 Opus aplicada sobre la arquitectura Qwen3.5 de 27 mil millones de parámetros. El resultado es un modelo denso, multimodal (imagen-texto) y sin filtros de seguridad, orientado a investigación y uso experimental.
 
 La relevancia de este modelo radica en su doble naturaleza: por un lado, hereda las capacidades de razonamiento y destilación de Claude 4.6 Opus, lo que lo hace útil para tareas complejas de razonamiento y generación de texto; por otro, su abliteración lo convierte en una herramienta de estudio para la alineación de modelos, ya que permite analizar cómo se comporta un LLM sin los mecanismos de rechazo habituales. Es importante señalar que no está recomendado para uso en producción ni en entornos públicos debido a la ausencia de filtros de seguridad.
 
@@ -76,8 +76,8 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace (kepom): https://huggingface.co/kepom/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated
-- Modelo original en HuggingFace (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated
+- Modelo en Hugging Face (kepom): https://huggingface.co/kepom/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated
+- Modelo original en Hugging Face (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated
 - Modelo base (Jackrong): https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
 - Modelo en ModelScope: https://www.modelscope.cn/models/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
 - Repo de GGUF en GitHub: https://github.com/MihailKostov/Qwen3.5-27B-Claude-4.6-Opus-abliterated-i1-GGUF

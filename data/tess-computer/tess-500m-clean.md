@@ -20,7 +20,7 @@ Su relevancia es doble. Por un lado, ataca un problema concreto de la automatiza
 | Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | checkpoint de PyTorch (.pt) cargado con utilidades de inferencia locales; no se publican safetensors ni GGUF |
-| Modelo base | SmolVLM2-500M-Instruct (los metadatos de HuggingFace referencian tambien SmolVLM2-500M-Video-Instruct) |
+| Modelo base | SmolVLM2-500M-Instruct (los metadatos de Hugging Face referencian tambien SmolVLM2-500M-Video-Instruct) |
 | Dataset de entrenamiento | TESS-Computer/tess-agentnet-clean (~312K muestras) |
 | Tamano del repositorio | 3,6 GB |
 | Modalidad de entrada | imagen (pantallazo) + texto (instruccion) |
@@ -39,7 +39,7 @@ El entrenamiento se realizó durante 3 épocas con tamaño de lote 48 y optimiza
 - Clasificación del tipo de clic: clic izquierdo, clic derecho, doble clic y otros tipos contemplados por la cabeza de clasificación.
 - Predicción de acciones de teclado: escritura de texto libre, pulsación de teclas individuales y combinaciones de atajos (por ejemplo `<SUPER+C>`).
 - Ejecución de instrucciones en lenguaje natural de una sola etapa (una instrucción, una acción), no se documenta razonamiento multi-paso explícito.
-- Soporte de entrada multimodal imagen-texto mediante el pipeline `image-text-to-text` de HuggingFace.
+- Soporte de entrada multimodal imagen-texto mediante el pipeline `image-text-to-text` de Hugging Face.
 - No se documenta soporte de tool calling ni function calling en el sentido de APIs externas, aunque la salida estructurada actúa como interfaz para un ejecutor de acciones.
 - Capacidad monolingüe: las instrucciones se han de dar en inglés.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TESS-500M | 508 M (48 M entrenables) | no disponible | sin benchmarks publicados | Apache 2.0 | checkpoint .pt en HuggingFace, sin safetensors ni GGUF |
-| SmolVLM2-500M-Video-Instruct (modelo base) | ~500 M | no disponible | no disponible en esta informacion | Apache 2.0 | pesos estandar en HuggingFace |
-| Agentes GUI basados en VLM de mayor tamano (UI-TARS, ShowUI, OS-Atlas) | 2 B - 7 B segun variante | no disponible | no disponible en esta informacion | licencias variables segun proyecto | pesos en HuggingFace en la mayoria de casos |
+| TESS-500M | 508 M (48 M entrenables) | no disponible | sin benchmarks publicados | Apache 2.0 | checkpoint .pt en Hugging Face, sin safetensors ni GGUF |
+| SmolVLM2-500M-Video-Instruct (modelo base) | ~500 M | no disponible | no disponible en esta informacion | Apache 2.0 | pesos estandar en Hugging Face |
+| Agentes GUI basados en VLM de mayor tamano (UI-TARS, ShowUI, OS-Atlas) | 2 B - 7 B segun variante | no disponible | no disponible en esta informacion | licencias variables segun proyecto | pesos en Hugging Face en la mayoria de casos |
 
 La comparación cuantitativa no es posible con los datos disponibles: no hay resultados de benchmarks de TESS-500M ni cifras verificadas de las alternativas en la información proporcionada. La diferencia estructural relevante es que TESS-500M opera con un orden de magnitud menos de parámetros que los agentes GUI habituales, a cambio de una salida restringida a una única acción por paso y de un formato de pesos menos estandarizado.
 
@@ -86,12 +86,12 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay res
 - Licencia Apache 2.0, permisiva para uso comercial, pero conviene revisar la licencia del modelo base (SmolVLM2, también Apache 2.0) y las condiciones del dataset tess-agentnet-clean antes de un despliegue en producción.
 - Formato de pesos no estándar (.pt con utilidades propias): dificulta el uso con ecosistemas de servicio habituales y añade trabajo de integración y mantenimiento.
 - Sin datos de benchmarks publicados, no hay evidencia cuantitativa de precisión que respalde una decisión de producción.
-- Metadatos inconsistentes sobre el modelo base (la model card cita SmolVLM2-500M-Instruct y las etiquetas de HuggingFace citan SmolVLM2-500M-Video-Instruct), lo que puede generar dudas sobre el punto de partida exacto del ajuste.
+- Metadatos inconsistentes sobre el modelo base (la model card cita SmolVLM2-500M-Instruct y las etiquetas de Hugging Face citan SmolVLM2-500M-Video-Instruct), lo que puede generar dudas sobre el punto de partida exacto del ajuste.
 - Repositorio de 3,6 GB para 508 millones de parámetros: sugiere pesos en fp32 o artefactos adicionales, pero no se detalla su composición.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TESS-Computer/tess-500m-clean
+- Modelo en Hugging Face: https://huggingface.co/TESS-Computer/tess-500m-clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/TESS-Computer/tess-agentnet-clean
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Instruct
 - Modelo base alternativo referenciado en las etiquetas: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

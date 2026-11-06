@@ -74,5 +74,5 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no procede
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alvinishii/phd-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/alvinishii/phd-text-image-retrieval
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repos o demos) asociados a este repositorio.

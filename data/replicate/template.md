@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/template` es un repositorio de plantilla (scaffold) para publicar kernels personalizados de PyTorch a traves del sistema de kernels de HuggingFace, no un modelo de inteligencia artificial. El contenido del repositorio es un README con marcadores de posicion sin sustituir (`__KERNEL_NAME__`, `__KERNEL_NAME_NORMALIZED__`, `__REPO_ID__`) y una estructura de proyecto pensada para compilar, empaquetar y distribuir codigo de kernel nativo como paquete de Python instalable mediante `pip install __REPO_ID__`.
+`replicate/template` es un repositorio de plantilla (scaffold) para publicar kernels personalizados de PyTorch a traves del sistema de kernels de Hugging Face, no un modelo de inteligencia artificial. El contenido del repositorio es un README con marcadores de posicion sin sustituir (`__KERNEL_NAME__`, `__KERNEL_NAME_NORMALIZED__`, `__REPO_ID__`) y una estructura de proyecto pensada para compilar, empaquetar y distribuir codigo de kernel nativo como paquete de Python instalable mediante `pip install __REPO_ID__`.
 
-Lo desarrolla la organizacion Replicate dentro del ecosistema de HuggingFace. No contiene pesos, no se ha entrenado con datos y no define arquitectura neuronal alguna: su proposito es servir de punto de partida reproducible para equipos que quieran publicar kernels CUDA u otros kernels de PyTorch con builds gestionados por Nix (`nix develop`, `nix run .#build-and-copy`) y tests con `pytest` (`nix develop .#test`).
+Lo desarrolla la organizacion Replicate dentro del ecosistema de Hugging Face. No contiene pesos, no se ha entrenado con datos y no define arquitectura neuronal alguna: su proposito es servir de punto de partida reproducible para equipos que quieran publicar kernels CUDA u otros kernels de PyTorch con builds gestionados por Nix (`nix develop`, `nix run .#build-and-copy`) y tests con `pytest` (`nix develop .#test`).
 
-Es relevante ahora por el aviso incluido en la propia plantilla: a partir del 13 de septiembre de 2026 HuggingFace retirara los repositorios de kernels publicados con tipo "model" (por ejemplo, `kernels-community/flash-attn3`), por lo que las plantillas y flujos de publicacion de kernels deben migrarse a la ultima version del sistema `kernels`. El repositorio registra 0 descargas y 0 likes, y sus campos de licencia, idiomas y pipeline no estan declarados en los metadatos.
+Es relevante ahora por el aviso incluido en la propia plantilla: a partir del 13 de septiembre de 2026 Hugging Face retirara los repositorios de kernels publicados con tipo "model" (por ejemplo, `kernels-community/flash-attn3`), por lo que las plantillas y flujos de publicacion de kernels deben migrarse a la ultima version del sistema `kernels`. El repositorio registra 0 descargas y 0 likes, y sus campos de licencia, idiomas y pipeline no estan declarados en los metadatos.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Es relevante ahora por el aviso incluido en la propia plantilla: a partir del 13
 
 ## Arquitectura y entrenamiento
 
-`replicate/template` no es un modelo entrenado ni contiene parametros. Se trata de una plantilla de repositorio para el sistema de kernels de HuggingFace, cuyo objetivo es estandarizar la publicacion de kernels personalizados de PyTorch. La estructura que propone incluye: un README con secciones de instalacion (`pip install __REPO_ID__`), uso (importacion desde `__KERNEL_NAME_NORMALIZED__` y ejecucion sobre un tensor de ejemplo `torch.randn(1024, 1024, device="cuda")`), desarrollo con Nix para compilacion (`nix develop`, `nix run .#build-and-copy`), tests con `pytest tests/` dentro de `nix develop .#test`, y validacion como usuario final del sistema `kernels` mediante `uv run example.py`.
+`replicate/template` no es un modelo entrenado ni contiene parametros. Se trata de una plantilla de repositorio para el sistema de kernels de Hugging Face, cuyo objetivo es estandarizar la publicacion de kernels personalizados de PyTorch. La estructura que propone incluye: un README con secciones de instalacion (`pip install __REPO_ID__`), uso (importacion desde `__KERNEL_NAME_NORMALIZED__` y ejecucion sobre un tensor de ejemplo `torch.randn(1024, 1024, device="cuda")`), desarrollo con Nix para compilacion (`nix develop`, `nix run .#build-and-copy`), tests con `pytest tests/` dentro de `nix develop .#test`, y validacion como usuario final del sistema `kernels` mediante `uv run example.py`.
 
 No existeinformacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones de atencion, porque no hay entrenamiento asociado. El unico elemento temporal relevante es el aviso de la model card: desde el 13 de septiembre de 2026 se eliminan los repositorios de kernels publicados bajo el tipo "model" (con `kernels-community/flash-attn3` como ejemplo citado), y se pide a los usuarios que empleen la ultima version del paquete `kernels`, reportando cualquier interrupcion en `https://github.com/huggingface/kernels/issues/new`.
 
@@ -44,12 +44,12 @@ No existeinformacion sobre datos de entrenamiento, numero de tokens, composicion
 
 ## Casos de uso
 
-- Publicacion de kernels CUDA personalizados en el Hub: un equipo que haya escrito una operacion optimizada (por ejemplo, un kernel de atencion o de normalizacion) puede partir de esta plantilla para empaquetarla, compilarla con Nix y distribuirla como paquete `pip` consumible desde el Hub de HuggingFace.
+- Publicacion de kernels CUDA personalizados en el Hub: un equipo que haya escrito una operacion optimizada (por ejemplo, un kernel de atencion o de normalizacion) puede partir de esta plantilla para empaquetarla, compilarla con Nix y distribuirla como paquete `pip` consumible desde el Hub de Hugging Face.
 - Creacion de paquetes internos de kernels para una organizacion: la plantilla estandariza el layout del repositorio, de modo que varios equipos publican kernels con la misma estructura de build, test y ejemplo de uso, reduciendo la variabilidad entre proyectos.
 - Migracion de repositorios de kernels publicados como "model": ante la retirada anunciada para el 13 de septiembre de 2026, los mantenedores pueden usar la plantilla para recrear sus kernels con el formato soportado y evitar interrupciones en el servicio.
 - Integracion de kernels en pipelines de entrenamiento o inferencia: el kernel resultante se importa como modulo de Python (`from __KERNEL_NAME_NORMALIZED__ import __KERNEL_NAME_NORMALIZED__`) y se invoca sobre tensores de PyTorch, lo que permite sustituir implementaciones lentas en bucles de entrenamiento o en servidores de inferencia.
 - Verificacion numerica en integracion continua: el flujo `nix develop .#test` con `pytest` permite ejecutar baterias de tests de correccion sobre el kernel en cada cambio, antes de publicar una version.
-- Formacion y transferencia de conocimiento: al incluir un ejemplo minimo (`example.py`) y comandos de desarrollo documentados, la plantilla sirve como material de onboarding para ingenieros que no conocen el sistema de kernels de HuggingFace.
+- Formacion y transferencia de conocimiento: al incluir un ejemplo minimo (`example.py`) y comandos de desarrollo documentados, la plantilla sirve como material de onboarding para ingenieros que no conocen el sistema de kernels de Hugging Face.
 - Estandarizacion de entornos de compilacion: el uso de Nix fija las dependencias de compilacion, lo que resulta util en equipos con multiples versiones de CUDA y PyTorch conviviendo en distintas maquinas.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Alternativa | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `replicate/template` | Plantilla de repositorio para kernels de PyTorch | no aplica | no aplica | Apache 2.0 segun el README de la plantilla | Publicado en HuggingFace con 0 descargas y 0 likes |
+| `replicate/template` | Plantilla de repositorio para kernels de PyTorch | no aplica | no aplica | Apache 2.0 segun el README de la plantilla | Publicado en Hugging Face con 0 descargas y 0 likes |
 | Repositorios de `kernels-community` (por ejemplo, `kernels-community/flash-attn3`) | Kernels ya implementados y publicados, citados en el aviso de la plantilla | no aplica | no aplica | no disponible | Afectados por la retirada de repositorios de tipo "model" a partir del 13 de septiembre de 2026 |
 | Kernel escrito a medida sin plantilla (CUDA/C++ con `torch.utils.cpp_extension` o similar) | Implementacion directa | no aplica | no aplica | depende del proyecto | No disponible como dato comparativo |
 | Kernel en Triton | Implementacion en DSL de Python | no aplica | no aplica | no disponible | No disponible como dato comparativo |
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento ni de comparativas cuantitativas entre est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/template
-- Incidencias del sistema de kernels de HuggingFace: https://github.com/huggingface/kernels/issues/new
+- Repositorio en Hugging Face: https://huggingface.co/replicate/template
+- Incidencias del sistema de kernels de Hugging Face: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore
 - Organizacion de Replicate en GitHub: https://github.com/replicate

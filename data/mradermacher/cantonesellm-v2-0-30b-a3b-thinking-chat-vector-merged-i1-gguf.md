@@ -17,7 +17,7 @@ La información disponible no especifica la longitud de contexto ni los datos de
 | Parametros activos | ≈3.000 millones (indicado en el nombre "A3B") |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ1_M, IQ2_XXS, IQ2_XS, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K |
-| Idiomas soportados | Cantonés (segun el nombre del modelo); tag de HuggingFace: en |
+| Idiomas soportados | Cantonés (segun el nombre del modelo); tag de Hugging Face: en |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (cuantizacion i1 con imatrix) |
 
@@ -34,7 +34,7 @@ La cuantización realizada por mradermacher emplea imatrix, generando quants pon
 - Alternancia entre modo thinking y no-thinking dentro de un mismo modelo, lo que permite resolver tareas complejas de razonamiento, matemáticas y código con respuestas más profundas y pasar a un modo rápido para conversaciones generales.
 - Generación de texto en cantonés, segun la denominación del modelo.
 - Ejecución local mediante formato GGUF, compatible con llama.cpp, Ollama y otros motores que soporten este formato.
-- Conversacional, segun el tag de HuggingFace, lo que indica preparación para diálogo multi-turno.
+- Conversacional, segun el tag de Hugging Face, lo que indica preparación para diálogo multi-turno.
 - Disponibilidad de una amplia gama de cuantizaciones, desde IQ1_M (7,2 GB) hasta Q6_K (25,2 GB), que permiten adaptar el modelo a distintos niveles de VRAM.
 
 Nota: la información proporcionada no especifica soporte de tool calling, function calling ni capacidades multimodales.
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-i1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-i1-GGUF
 - Modelo base: https://huggingface.co/hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged
 - Repositorio de mradermacher: https://huggingface.co/mradermacher
 - Quants estáticos del mismo modelo: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF

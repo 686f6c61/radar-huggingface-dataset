@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su capacidad para ofrecer razonamiento y 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles técnicos sobre la arquitectura interna del modelo base empero-ai/Qwen3.8-4B. Los tags de HuggingFace indican que fue entrenado mediante destilación (distillation) y ajuste fino supervisado (SFT), con capacidades de razonamiento y function calling. La serie Qwen3.8, según la información pública, se basa en la arquitectura de Qwen3.5, que es un transformer denso con atención estándar. Sin embargo, no hay confirmación oficial para la variante de 4B.
+No se dispone de detalles técnicos sobre la arquitectura interna del modelo base empero-ai/Qwen3.8-4B. Los tags de Hugging Face indican que fue entrenado mediante destilación (distillation) y ajuste fino supervisado (SFT), con capacidades de razonamiento y function calling. La serie Qwen3.8, según la información pública, se basa en la arquitectura de Qwen3.5, que es un transformer denso con atención estándar. Sin embargo, no hay confirmación oficial para la variante de 4B.
 
 El proceso de conversión a MLX no modifica la arquitectura, solo transforma los pesos al formato optimizado para Apple Silicon. La cuantización a 6 bits reduce el tamaño del modelo y acelera la inferencia en hardware MLX, aunque puede introducir una ligera pérdida de precisión. No se han publicado detalles sobre el dataset de entrenamiento ni el número de tokens utilizados.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-6Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-6Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Qwen3.8-27B (modelo oficial de referencia): https://huggingface.co/Qwen/Qwen3.8-27B

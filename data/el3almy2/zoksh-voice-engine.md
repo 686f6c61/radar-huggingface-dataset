@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zoksh Voice Engine (publicado en HuggingFace como `el3almy2/zoksh-voice-engine`) es un proyecto de síntesis de voz a instrumento musical, presentado por su autor como "Zoksh Voice To Instrument - Cloud Neural & Multi-Sample Engine (v2.5)". El repositorio se distribuye principalmente como una aplicación Gradio (SDK 4.44.1, Python 3.10) con un backend FastAPI que expone endpoints REST (`/v1/health`, `/v1/presets/parse`, `/v1/convert`) para su integración en "Zoksh Music Studio". No es un modelo de lenguaje ni un transformer generativo de texto: es un motor de conversión de audio que transforma señales vocales en interpretaciones instrumentales mediante renderizado multi-muestra con FluidSynth (banco General MIDI) y control continuo de pitch-bend y expresión (CC11).
+Zoksh Voice Engine (publicado en Hugging Face como `el3almy2/zoksh-voice-engine`) es un proyecto de síntesis de voz a instrumento musical, presentado por su autor como "Zoksh Voice To Instrument - Cloud Neural & Multi-Sample Engine (v2.5)". El repositorio se distribuye principalmente como una aplicación Gradio (SDK 4.44.1, Python 3.10) con un backend FastAPI que expone endpoints REST (`/v1/health`, `/v1/presets/parse`, `/v1/convert`) para su integración en "Zoksh Music Studio". No es un modelo de lenguaje ni un transformer generativo de texto: es un motor de conversión de audio que transforma señales vocales en interpretaciones instrumentales mediante renderizado multi-muestra con FluidSynth (banco General MIDI) y control continuo de pitch-bend y expresión (CC11).
 
 La información publicada es muy escasa: el repositorio no incluye pesos en formato safetensors o GGUF, no declara arquitectura neuronal concreta, ni parámetros, ni longitud de contexto, ni idiomas soportados. La model card menciona un "Extensible RVC v2 Hook", lo que sugiere que el motor puede conectarse a modelos de conversión de voz (Retrieval-based Voice Conversion v2) como componente opcional, pero no se especifica qué pesos RVC se incluyen ni dónde se alojan. El proyecto tiene 0 descargas y 0 likes en el momento de la consulta, con creación y última actualización el 3 de noviembre de 2026, lo que indica un lanzamiento muy reciente y sin validación comunitaria.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zoksh Voice Engine (el3almy2/zoksh-voice-engine) | Motor de voz a instrumento (FluidSynth + hook RVC v2) | No disponible | No aplica / no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| Zoksh Voice Engine (el3almy2/zoksh-voice-engine) | Motor de voz a instrumento (FluidSynth + hook RVC v2) | No disponible | No aplica / no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | RVC v2 (Retrieval-based Voice Conversion) | Conversión de voz a voz | No disponible en esta ficha | No aplica | Varía según checkpoint | Repositorios comunitarios y proyectos derivados |
 | FluidSynth | Sintetizador software basado en SoundFont | No aplica (no neuronal) | No aplica | LGPL | Proyecto de código abierto ampliamente distribuido |
 | Modelos de voz a instrumento neuronales (categoría general) | Generativos de audio | No disponible | No aplica | Varía | Investigación y repositorios dispersos |
@@ -86,5 +86,5 @@ La comparación es limitada porque el proyecto no publica pesos propios ni métr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/el3almy2/zoksh-voice-engine
+- Hugging Face: https://huggingface.co/el3almy2/zoksh-voice-engine
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

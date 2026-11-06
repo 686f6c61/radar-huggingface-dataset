@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en HuggingFace. Está diseñado como un "salvamento" (salvage) de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la etiqueta `affine-h1-salvage`, lo que sugiere que fue creado como respaldo o seguro técnico para una competición o benchmark denominado "H1". La model card indica explícitamente que no es una submission oficial, sino un adaptador de "seguro de vida" (TTL insurance) para minería de H1.
+El modelo `unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en Hugging Face. Está diseñado como un "salvamento" (salvage) de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la etiqueta `affine-h1-salvage`, lo que sugiere que fue creado como respaldo o seguro técnico para una competición o benchmark denominado "H1". La model card indica explícitamente que no es una submission oficial, sino un adaptador de "seguro de vida" (TTL insurance) para minería de H1.
 
 No se dispone de información pública sobre el modelo base `Affine-5dvqtektxx-sbs-v5`, ni sobre el proceso de entrenamiento del adaptador. El nombre del repositorio sugiere el uso de *offline DPO* (Direct Preference Optimization) con parámetros como `hialpha`, `hirank`, `lobeta` y `extrasteps`, pero no hay documentación que confirme estos detalles. El adaptador tiene un tamaño de 0.1 GB y está alojado en formato `safetensors` con la librería `peft`.
 
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables. El adaptador está vinc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r505-sbsv5-offline-dpo-hialpha-hirank-lobeta-extrasteps-lora
 - Repositorios relacionados del mismo autor (sin documentación adicional):  
   - https://huggingface.co/unconst/Affine-5czsc2fc98-h51-lora  
   - https://huggingface.co/unconst/Affine-5czsc2fc98-r158-lora/tree/main

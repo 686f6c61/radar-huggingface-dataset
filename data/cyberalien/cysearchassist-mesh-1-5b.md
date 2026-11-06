@@ -103,7 +103,7 @@ No se dispone de modelos directamente comparables de otros autores para esta tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberalien/CySearchAssist-Mesh-1.5B
+- Modelo en Hugging Face: https://huggingface.co/cyberalien/CySearchAssist-Mesh-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Revision fijada del modelo base: `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`
 - Archivos de configuracion e integracion incluidos en el repositorio: `mesh_query_config.json`, `mesh_query_prompt.txt`, `LICENSE`, `LICENSE.base`, `NOTICE`

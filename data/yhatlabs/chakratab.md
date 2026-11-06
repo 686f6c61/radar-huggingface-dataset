@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChakraTab es un modelo fundacional para predicción sobre datos tabulares desarrollado por YHat Labs. A diferencia de los modelos que se distribuyen como pesos descargables, ChakraTab se ofrece exclusivamente como API alojada: el repositorio de HuggingFace contiene únicamente la model card y no hay pesos que descargar. El modelo recibe una tabla con una columna objetivo y las filas a puntuar, y devuelve probabilidades de clase calibradas (clasificación) o predicciones puntuales y listas para cuantiles (regresión).
+ChakraTab es un modelo fundacional para predicción sobre datos tabulares desarrollado por YHat Labs. A diferencia de los modelos que se distribuyen como pesos descargables, ChakraTab se ofrece exclusivamente como API alojada: el repositorio de Hugging Face contiene únicamente la model card y no hay pesos que descargar. El modelo recibe una tabla con una columna objetivo y las filas a puntuar, y devuelve probabilidades de clase calibradas (clasificación) o predicciones puntuales y listas para cuantiles (regresión).
 
 La propuesta técnica se basa en aprendizaje en contexto (in-context learning): ChakraTab combina varios modelos fundacionales tabulares preentrenados que se ajustan en el momento de la petición sobre la propia tabla del usuario, sin pipeline de entrenamiento ni búsqueda de hiperparámetros. Las predicciones de cada componente se validan out-of-fold sobre las filas del cliente y se combinan con pesos elegidos en esa validación, de modo que la mezcla es específica para cada tabla. No se aprende nada entre clientes ni entre peticiones, y los datos de ajuste se descartan salvo petición explícita.
 
@@ -115,11 +115,11 @@ El dato diferencial de ChakraTab no es el Elo máximo, sino el modo de consumo: 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/yhatlabs/ChakraTab
+- Model card en Hugging Face: https://huggingface.co/yhatlabs/ChakraTab
 - Sitio de YHat Labs: https://yhatlabs.com
 - Solicitud de acceso a la API: https://yhatlabs.com/access
 - Términos de licencia: https://yhatlabs.com/terms
-- Organización en HuggingFace: https://huggingface.co/yhatlabs
+- Organización en Hugging Face: https://huggingface.co/yhatlabs
 - Modelo hermano para series temporales (ChakraTS): https://huggingface.co/yhatlabs/ChakraTS
 - Leaderboard de TabArena: https://huggingface.co/spaces/TabArena/leaderboard
 - Sitio de TabArena: https://tabarena.ai

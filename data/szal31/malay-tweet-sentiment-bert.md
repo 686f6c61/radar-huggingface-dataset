@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szal31/malay-tweet-sentiment-bert` es un modelo de clasificación de texto en malayo (código ISO `ms`) obtenido mediante fine-tuning de `mesolitica/bert-base-standard-bahasa-cased` sobre tuits en malasio. Lo desarrolla el usuario de HuggingFace szal31 y resuelve una tarea concreta: clasificar un tuit en una de tres clases de sentimiento (negativo, neutro o positivo). Es relevante porque el malayo coloquial de Twitter está poco cubierto por los modelos multilingües genéricos y porque el autor publica el código, el análisis de errores y las métricas completas en un repositorio de GitHub.
+`szal31/malay-tweet-sentiment-bert` es un modelo de clasificación de texto en malayo (código ISO `ms`) obtenido mediante fine-tuning de `mesolitica/bert-base-standard-bahasa-cased` sobre tuits en malasio. Lo desarrolla el usuario de Hugging Face szal31 y resuelve una tarea concreta: clasificar un tuit en una de tres clases de sentimiento (negativo, neutro o positivo). Es relevante porque el malayo coloquial de Twitter está poco cubierto por los modelos multilingües genéricos y porque el autor publica el código, el análisis de errores y las métricas completas en un repositorio de GitHub.
 
 Se trata de un BERT base estándar (encoder transformer) con 110.619.651 parámetros, pesos en formato safetensors y un repositorio de 0,4 GB. La longitud de contexto no está documentada en la información disponible, aunque por herencia del modelo base corresponde a la configuración típica de BERT (512 tokens). La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada en fp16: unos 0,22 GB de pesos; en int8, unos 0,11 GB.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada para este modelo; también funciona bien en CPU.
 - Cabe en GPU consumer y en hardware de gama baja, incluidos dispositivos con poca memoria.
-- Opciones de despliegue: HuggingFace `transformers` con `AutoModelForSequenceClassification`, ONNX Runtime, TorchScript, y exportación a GGUF para llama.cpp aunque no se publican conversiones oficiales.
+- Opciones de despliegue: Hugging Face `transformers` con `AutoModelForSequenceClassification`, ONNX Runtime, TorchScript, y exportación a GGUF para llama.cpp aunque no se publican conversiones oficiales.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera un throughput de miles de secuencias cortas por segundo en GPU y cientos en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| szal31/malay-tweet-sentiment-bert | 110,6M | no disponible (tipico 512) | macro-F1 0,627 en test propio | Apache 2.0 | HuggingFace |
-| mesolitica/bert-base-standard-bahasa-cased (base) | ~110M | tipico 512 | no evaluado en esta tarea | no disponible en la informacion | HuggingFace |
+| szal31/malay-tweet-sentiment-bert | 110,6M | no disponible (tipico 512) | macro-F1 0,627 en test propio | Apache 2.0 | Hugging Face |
+| mesolitica/bert-base-standard-bahasa-cased (base) | ~110M | tipico 512 | no evaluado en esta tarea | no disponible en la informacion | Hugging Face |
 | Baseline TF-IDF del autor | no aplica | no aplica | macro-F1 0,576 | no aplica | reproducible en el repo |
 
 No se dispone de datos publicados de otros clasificadores de sentimiento en malayo comparables en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos publicados de otros clasificadores de sentimiento en mala
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/szal31/malay-tweet-sentiment-bert
+- Modelo en Hugging Face: https://huggingface.co/szal31/malay-tweet-sentiment-bert
 - Repositorio con código y análisis de errores: https://github.com/szal31/Malay-Tweet-Sentiment-Analysis-Using-BERT
 - Modelo base: https://huggingface.co/mesolitica/bert-base-standard-bahasa-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/kornwtp/ms-bahasa-twitter-sentiment

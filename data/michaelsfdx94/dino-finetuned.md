@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MichaelSfdx94/dino-finetuned` es un repositorio de HuggingFace publicado por el usuario MichaelSfdx94 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de generación. Según la propia model card, se trata de la configuración "tiny" del modelo, pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un release preentrenado listo para producción.
+`MichaelSfdx94/dino-finetuned` es un repositorio de Hugging Face publicado por el usuario MichaelSfdx94 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Dino" orientada a tareas de generación. Según la propia model card, se trata de la configuración "tiny" del modelo, pensada explícitamente para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un release preentrenado listo para producción.
 
 El repositorio incluye un script de inferencia (`inference.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en `model.safetensors`. El autor advierte de forma explícita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark.
 
@@ -66,11 +66,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El autor advierte que no ha sido auditado para robustez, equidad ni transferencia de dominio; no hay evaluación de sesgos.
 - Riesgo de alucinación: no aplicable en sentido estricto al no estar entrenado, pero cualquier uso generativo tras un entrenamiento posterior requeriría evaluación propia.
 - No se documentan idiomas soportados, longitud de contexto ni topología completa, lo que dificulta su reproducibilidad.
-- Las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito; no es un modelo plug-and-play.
+- Las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito; no es un modelo plug-and-play.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y sin garantías; el autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - No debe presentarse como release preentrenado ni citarse con resultados de benchmark inexistentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichaelSfdx94/dino-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/MichaelSfdx94/dino-finetuned
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

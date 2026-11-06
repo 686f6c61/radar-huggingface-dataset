@@ -4,7 +4,7 @@
 
 RadDx es un modelo de inteligencia artificial desarrollado por RadDx para el ámbito de la radiología. Su propósito principal es interpretar informes radiológicos y ofrecer resúmenes en lenguaje sencillo que ayuden a los pacientes a comprender qué significa un hallazgo en su contexto clínico, qué cambios pueden ser motivo de preocupación, qué es lo que la redacción del informe no demuestra y qué preguntas de seguimiento tienen sentido plantear antes de hablar con su médico.
 
-El repositorio de HuggingFace contiene el modelo, aunque la información técnica publicada es mínima: no se especifican arquitectura, parámetros, licencia ni idiomas soportados. Se trata, por tanto, de un modelo de dominio específico orientado a la radiología y a la comunicación médico-paciente, con un enfoque en la interpretación de informes médicos y la divulgación de resultados clínicos. La página de HuggingFace muestra 0 descargas y 1 like, y su fecha de creación y actualización es el 7 de septiembre de 2026.
+El repositorio de Hugging Face contiene el modelo, aunque la información técnica publicada es mínima: no se especifican arquitectura, parámetros, licencia ni idiomas soportados. Se trata, por tanto, de un modelo de dominio específico orientado a la radiología y a la comunicación médico-paciente, con un enfoque en la interpretación de informes médicos y la divulgación de resultados clínicos. La página de Hugging Face muestra 0 descargas y 1 like, y su fecha de creación y actualización es el 7 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio de HuggingFace contiene el modelo, aunque la información técnic
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni las técnicas de optimización empleadas. El repositorio de HuggingFace no incluye detalles técnicos sobre la composición del dataset, si se realizó fine-tuning, RLHF, DPO ni ningún otro método de alineación. Tampoco se especifica el formato de los pesos (safetensors, GGUF, etc.) ni el framework utilizado para el entrenamiento.
+No se ha publicado información sobre la arquitectura del modelo, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni las técnicas de optimización empleadas. El repositorio de Hugging Face no incluye detalles técnicos sobre la composición del dataset, si se realizó fine-tuning, RLHF, DPO ni ningún otro método de alineación. Tampoco se especifica el formato de los pesos (safetensors, GGUF, etc.) ni el framework utilizado para el entrenamiento.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han identificado modelos comparables en la informacion proporcionada.
 - No se han publicado benchmarks ni evaluaciones del rendimiento, por lo que no es posible comparar su calidad con otros modelos ni validar su fiabilidad en entornos de producción.
 - Al tratarse de un modelo orientado al ámbito médico, su uso sin supervisión profesional puede conllevar riesgos de interpretación incorrecta de hallazgos clínicos.
 - Existe riesgo de alucinación en la generación de explicaciones médicas si el modelo no está correctamente alineado o si se usa fuera de su dominio específico.
-- El repositorio de HuggingFace no incluye información sobre datos de entrenamiento, sesgos conocidos ni restricciones de idioma, lo que limita la evaluación de su idoneidad para casos de uso concretos.
+- El repositorio de Hugging Face no incluye información sobre datos de entrenamiento, sesgos conocidos ni restricciones de idioma, lo que limita la evaluación de su idoneidad para casos de uso concretos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RadDx/RadDx
+- Hugging Face: https://huggingface.co/RadDx/RadDx
 - Aplicación web oficial: https://raddx.app/
 - RADDX Healthcare (servicios de IA): https://raddxhealthcare.com/services/artificial-intelligence/

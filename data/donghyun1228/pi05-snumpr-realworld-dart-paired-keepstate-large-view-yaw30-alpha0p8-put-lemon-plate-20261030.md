@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world DART merge (este) | VLA para tarea `put_lemon_plate` | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR real-world DART merge (este) | VLA para tarea `put_lemon_plate` | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Base `snumpr-iclr27-v1/9999` | VLA SNUMPR inicial | no disponible | no disponible | no disponible | Referenciado como base |
 | Checkpoint fuente `pi05_snumpr_dart_paired_source_put_lemon_plate` | Fine-tuning IL sobre `demonstration_7` | no disponible | no disponible | no disponible | Preset interno del pipeline |
 | Checkpoint objetivo `pi05_snumpr_dart_paired_target_large_view_yaw30_keepstate_put_lemon_plate` | Fine-tuning IL sobre demostración re-recolectada | no disponible | no disponible | no disponible | Preset interno del pipeline |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
 - Repositorio DART referenciado: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información proporcionada
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`), sin URL directa en la información proporcionada
 - Stack de inferencia: `openpi` (Physical Intelligence), sin URL directa en la información proporcionada

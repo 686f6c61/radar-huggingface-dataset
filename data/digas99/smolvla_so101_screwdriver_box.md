@@ -80,9 +80,9 @@ Los datos de los modelos alternativos que aparecen a continuacion no estan verif
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `digas99/smolvla_so101_screwdriver_box` | 450 M | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Ajuste fino especifico para SO-101 y cuatro objetos |
-| `lerobot/smolvla_base` | misma arquitectura (aprox. 450 M) | no disponible | Apache-2.0 | HuggingFace | Modelo base generalista sin ajustar a esta tarea |
-| OpenVLA-7B | aprox. 7 B | no disponible | no verificada | HuggingFace | VLA de referencia de mayor tamano; requiere mas VRAM |
+| `digas99/smolvla_so101_screwdriver_box` | 450 M | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Ajuste fino especifico para SO-101 y cuatro objetos |
+| `lerobot/smolvla_base` | misma arquitectura (aprox. 450 M) | no disponible | Apache-2.0 | Hugging Face | Modelo base generalista sin ajustar a esta tarea |
+| OpenVLA-7B | aprox. 7 B | no disponible | no verificada | Hugging Face | VLA de referencia de mayor tamano; requiere mas VRAM |
 | pi0 / openpi | no disponible | no disponible | no verificada | repositorio openpi | VLA con flow matching, orientado a brazos de mayor coste |
 
 La comparacion significativa es con `lerobot/smolvla_base`: este checkpoint se distingue no por su tamano, que es el mismo, sino por su especializacion en un unico robot (SO-101), un conjunto fijo de camaras y cuatro instrucciones exactas.
@@ -105,7 +105,7 @@ La comparacion significativa es con `lerobot/smolvla_base`: este checkpoint se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digas99/smolvla_so101_screwdriver_box
+- Modelo en Hugging Face: https://huggingface.co/digas99/smolvla_so101_screwdriver_box
 - Dataset de entrenamiento: https://huggingface.co/datasets/digas99/so101_screwdriver_box
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Repositorio y documentacion de LeRobot (referencia general del ecosistema, no enlazado en la model card): https://github.com/huggingface/lerobot

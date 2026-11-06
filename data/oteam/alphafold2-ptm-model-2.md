@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlphaFold 2 es un modelo de prediccion de estructura de proteinas desarrollado originalmente por DeepMind (John Jumper et al., 2021). Esta ficha corresponde a una implementacion **no oficial** publicada por el equipo OFoldX en HuggingFace bajo el identificador `oteam/alphafold2-ptm-model-2`. El modelo predice la estructura tridimensional de proteinas a partir de secuencias de aminoacidos, alineamientos multiples de secuencias (MSA) y plantillas estructurales opcionales, devolviendo ademas metricas de confianza como pLDDT, PAE y pTM.
+AlphaFold 2 es un modelo de prediccion de estructura de proteinas desarrollado originalmente por DeepMind (John Jumper et al., 2021). Esta ficha corresponde a una implementacion **no oficial** publicada por el equipo OFoldX en Hugging Face bajo el identificador `oteam/alphafold2-ptm-model-2`. El modelo predice la estructura tridimensional de proteinas a partir de secuencias de aminoacidos, alineamientos multiples de secuencias (MSA) y plantillas estructurales opcionales, devolviendo ademas metricas de confianza como pLDDT, PAE y pTM.
 
 La arquitectura combina un tronco Evoformer que actualiza conjuntamente las representaciones de MSA y de pares de residuos, seguido de un modulo estructural basado en atencion de puntos invariantes (invariant point attention) que produce marcos de backbone, angulos de cadena lateral, coordenadas atomicas y valores de confianza. Esta variante concreta (Monomer pTM) cuenta con 93.291.674 parametros y anade prediccion de PAE y pTM frente a la variante monomer basica.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-ptm-model-2 (esta ficha) | 93,3 M | MSA 256, pares 128, single 384, 4 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2 | 93,283 M | MSA 256, pares 128, single 384, 4 reciclados | pLDDT | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | pLDDT (complejos) | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-casp14 | no disponible | protocolo de 5 modelos, 8 ensembles por checkpoint | pLDDT | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/alphafold2-ptm-model-2 (esta ficha) | 93,3 M | MSA 256, pares 128, single 384, 4 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2 | 93,283 M | MSA 256, pares 128, single 384, 4 reciclados | pLDDT | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | pLDDT (complejos) | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-casp14 | no disponible | protocolo de 5 modelos, 8 ensembles por checkpoint | pLDDT | AGPL-3.0 | Hugging Face (ofoldx) |
 
 No se dispone de datos de benchmarks comparativos con ESMFold u otras alternativas en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos con ESMFold u otras alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-ptm-model-2
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-ptm-model-2
 - Variante monomer: https://huggingface.co/oteam/alphafold2
 - Variante monomer pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nileagi/nileagi-suk-stt` es un modelo de reconocimiento automático del habla (ASR) desarrollado por NileAGI, una empresa de investigación en inteligencia artificial centrada en el avance hacia la inteligencia a nivel humano. El modelo transcribe audio en idioma sukuma (lengua bantú hablada en Tanzania) a texto, y se presenta como un checkpoint experimental de validación de un pipeline de entrenamiento, no como una versión de producción. Según las etiquetas de HuggingFace, está basado en la arquitectura Whisper, aunque la model card no lo confirma explícitamente.
+`nileagi/nileagi-suk-stt` es un modelo de reconocimiento automático del habla (ASR) desarrollado por NileAGI, una empresa de investigación en inteligencia artificial centrada en el avance hacia la inteligencia a nivel humano. El modelo transcribe audio en idioma sukuma (lengua bantú hablada en Tanzania) a texto, y se presenta como un checkpoint experimental de validación de un pipeline de entrenamiento, no como una versión de producción. Según las etiquetas de Hugging Face, está basado en la arquitectura Whisper, aunque la model card no lo confirma explícitamente.
 
 Con 37,7 millones de parámetros, es un modelo ligero que puede ejecutarse en hardware modesto. Su relevancia radica en abordar una lengua de bajos recursos, contribuyendo a la preservación y procesamiento digital del sukuma. Sin embargo, su uso está restringido a investigación y a un registro muy concreto (habla leída literaria o religiosa), y su licencia es de tipo `other` con términos de investigación de NileAGI.
 
@@ -10,7 +10,7 @@ Con 37,7 millones de parámetros, es un modelo ligero que puede ejecutarse en ha
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Whisper (según etiquetas de HuggingFace, no confirmado en la model card) |
+| Arquitectura | Whisper (según etiquetas de Hugging Face, no confirmado en la model card) |
 | Parametros totales | 37.760.640 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (no se especifica la ventana de audio) |
@@ -27,7 +27,7 @@ La model card no proporciona detalles sobre la arquitectura interna más allá d
 
 - Transcripción de voz a texto en idioma sukuma, específicamente para habla leída en registro literario o religioso.
 - Compatible con el pipeline `automatic-speech-recognition` de la librería `transformers`.
-- Integración sencilla mediante la API de HuggingFace (`pipeline`).
+- Integración sencilla mediante la API de Hugging Face (`pipeline`).
 - No se documentan capacidades adicionales como traducción, diarización de hablantes, ni soporte de tool calling.
 
 ## Casos de uso
@@ -66,6 +66,6 @@ No se dispone de modelos comparables para el idioma sukuma. Whisper (openai/whis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nileagi/nileagi-suk-stt
+- Modelo en Hugging Face: https://huggingface.co/nileagi/nileagi-suk-stt
 - Sitio web de NileAGI: https://nileagi.com/
 - Substack de NileAGI: https://nilehli.substack.com/

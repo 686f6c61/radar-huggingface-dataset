@@ -82,13 +82,13 @@ El modelo supera a su predecesor Qwen3.5-35B-A3B en SWE-bench Verified (73.4 vs 
 - El modelo está optimizado para tareas de codificación y razonamiento técnico; su rendimiento en otros dominios (por ejemplo, creatividad literaria o conversación general) no está documentado.
 - La ventana de contexto extensible hasta ~1 010 000 tokens puede requerir hardware especializado y técnicas de gestión de memoria avanzadas; no se garantiza un rendimiento óptimo en configuraciones de baja VRAM.
 - Aunque la licencia es Apache 2.0, se recomienda revisar los términos específicos del modelo original de Qwen para verificar restricciones adicionales de uso comercial.
-- El repositorio de HuggingFace (Theafricatechguy/Qwen3.6-35B-A3B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror o re-subida; se recomienda usar el repositorio oficial de Qwen para producción.
+- El repositorio de Hugging Face (Theafricatechguy/Qwen3.6-35B-A3B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror o re-subida; se recomienda usar el repositorio oficial de Qwen para producción.
 - No se dispone de información sobre la composición del dataset de entrenamiento ni sobre posibles sesgos demográficos o culturales.
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/Theafricatechguy/Qwen3.6-35B-A3B
-- Repositorio oficial HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face (mirror): https://huggingface.co/Theafricatechguy/Qwen3.6-35B-A3B
+- Repositorio oficial Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía de ejecución local (insiderllm.com): https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/
 - Guía completa de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

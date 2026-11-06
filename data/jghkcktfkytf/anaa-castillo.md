@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anaa-castillo es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de HuggingFace jghkcktfkytf. El adaptador introduce el concepto visual asociado al token de activacion "Anna Castillo", permitiendo generar imagenes de esa identidad en multiples escenarios, estilos y composiciones sin necesidad de reentrenar el modelo base. Se entrena sobre Krea 2 RAW y se utiliza preferentemente sobre Krea 2 Turbo, la variante destilada para inferencia rapida.
+anaa-castillo es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de Hugging Face jghkcktfkytf. El adaptador introduce el concepto visual asociado al token de activacion "Anna Castillo", permitiendo generar imagenes de esa identidad en multiples escenarios, estilos y composiciones sin necesidad de reentrenar el modelo base. Se entrena sobre Krea 2 RAW y se utiliza preferentemente sobre Krea 2 Turbo, la variante destilada para inferencia rapida.
 
 El modelo resuelve el problema de la personalizacion de identidades en generacion de imagenes: en lugar de describir exhaustivamente los rasgos faciales en cada prompt, basta con invocar el token "Anna Castillo" para que el modelo reproduzca el concepto aprendido. Es relevante para flujos de trabajo de creacion de contenido, previsualizacion de personajes y prototipado visual donde se requiere consistencia de identidad a lo largo de varias generaciones.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jghkcktfkytf/anaa-castillo | LoRA DreamBooth sobre Krea 2 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible | HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada de Krea 2 | no disponible | no disponible | no disponible | HuggingFace |
+| jghkcktfkytf/anaa-castillo | LoRA DreamBooth sobre Krea 2 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible | Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada de Krea 2 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para comparar rendimiento, calidad o metricas con otros adaptadores LoRA de identidad, ni con modelos de difusion alternativos.
 
@@ -80,6 +80,6 @@ No se dispone de informacion suficiente para comparar rendimiento, calidad o met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jghkcktfkytf/anaa-castillo
+- Modelo en Hugging Face: https://huggingface.co/jghkcktfkytf/anaa-castillo
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo (referenciado en el ejemplo de uso): https://huggingface.co/krea/Krea-2-Turbo

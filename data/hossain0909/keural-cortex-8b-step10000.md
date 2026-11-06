@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Cortex 8B step10000 es un checkpoint intermedio de preentrenamiento continuado (continued pretraining, CPT) en coreano sobre el modelo base Qwen/Qwen3-8B-Base, desarrollado por MKD Co., Ltd. (publicado en HuggingFace bajo la cuenta hossain0909). No se trata de un modelo final ni de un modelo ajustado por instrucciones: es una instantánea del entrenamiento en el paso 10.000 de 13.034 (76,7 % de progreso), tras haber visto 31,46 mil millones de tokens de un total previsto de 41,00 mil millones. Su publicacion responde a un objetivo de reproducibilidad e investigacion, no de uso practico.
+Keural Cortex 8B step10000 es un checkpoint intermedio de preentrenamiento continuado (continued pretraining, CPT) en coreano sobre el modelo base Qwen/Qwen3-8B-Base, desarrollado por MKD Co., Ltd. (publicado en Hugging Face bajo la cuenta hossain0909). No se trata de un modelo final ni de un modelo ajustado por instrucciones: es una instantánea del entrenamiento en el paso 10.000 de 13.034 (76,7 % de progreso), tras haber visto 31,46 mil millones de tokens de un total previsto de 41,00 mil millones. Su publicacion responde a un objetivo de reproducibilidad e investigacion, no de uso practico.
 
 El modelo conserva la arquitectura transformer de Qwen3-8B-Base, con una longitud de contexto nativa de 32.768 tokens, y esta especializado en coreano mediante la incorporacion de un corpus mayoritariamente coreano (42,45 %). El autor lo publica junto al checkpoint step5000 y al modelo final Keural-Cortex-8B-Base para permitir comparar el comportamiento del modelo antes y despues de la meseta de perdida observada a partir del paso 5.200, cuando la training loss se estabilizo en torno a 1,818.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-step10000
+- Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-step10000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Checkpoint step5000: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-step5000
 - Modelo final: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-Base

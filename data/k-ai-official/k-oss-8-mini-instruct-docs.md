@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-Docs
+- Hugging Face: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-Docs
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Modelo base Qwen3-VL-8B: no disponible en la informacion proporcionada (referenciado por el autor como base del ajuste)

@@ -70,8 +70,8 @@ No se dispone de modelos comparables en la misma categoría (paquetes compilados
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/florianvoss/Qwen3.5-4B-SmoothQuantA05-Hybrid-Modalix
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Hugging Face del modelo: https://huggingface.co/florianvoss/Qwen3.5-4B-SmoothQuantA05-Hybrid-Modalix
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Página de Ollama para Qwen3.5:4b: https://ollama.com/library/qwen3.5:4b
 - Ficha de Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-4b/
 - Especificaciones y requisitos de VRAM: https://apxml.com/models/qwen35-4b

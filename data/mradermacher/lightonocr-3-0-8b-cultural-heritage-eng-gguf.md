@@ -23,7 +23,7 @@ Es relevante ahora porque combina tres factores poco habituales: tamano reducido
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng`, un vision-language de la familia LightOnOCR-3 con 752 millones de parametros. La model card de esta cuantizacion no detalla la arquitectura interna (numero de capas, dimension del encoder visual, mecanismo de atencion), por lo que esos datos figuran como no disponibles. El pipeline declarado en HuggingFace es `no disponible`, aunque las etiquetas indican `transformers` y `vision-language`.
+El modelo base es `yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng`, un vision-language de la familia LightOnOCR-3 con 752 millones de parametros. La model card de esta cuantizacion no detalla la arquitectura interna (numero de capas, dimension del encoder visual, mecanismo de atencion), por lo que esos datos figuran como no disponibles. El pipeline declarado en Hugging Face es `no disponible`, aunque las etiquetas indican `transformers` y `vision-language`.
 
 El ajuste se realizo mediante LoRA sobre el dataset `yale-cultural-heritage/ai-project-transcriptions`, orientado a transcripciones de patrimonio cultural. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. La etiqueta `smithsonian-transcription-center` sugiere vinculacion con iniciativas de transcripcion de archivos del Smithsonian, pero no se aportan mas detalles tecnicos sobre ese extremo.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con altern
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-cultural-heritage-eng-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-cultural-heritage-eng-GGUF
 - Modelo base: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#LightOnOCR-3-0.8B-cultural-heritage-eng-GGUF

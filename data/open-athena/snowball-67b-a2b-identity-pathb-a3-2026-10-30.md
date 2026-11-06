@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball 67B A2B Identity Path B A3 es un artefacto de investigación publicado por la organización open-athena en HuggingFace. Se trata de un checkpoint derivado de Marin Snowball v0.1 (identificador ADC0078a), entrenado específicamente con un perfil de identidad ("Marin's Latest MoE") mediante un proceso de SFT de identidad sobre una arquitectura MoE de tipo grug_moe. El modelo cuenta con 67.078.882.816 parámetros totales (aproximadamente 67 mil millones) y un repositorio de 134,2 GB en formato safetensors.
+Snowball 67B A2B Identity Path B A3 es un artefacto de investigación publicado por la organización open-athena en Hugging Face. Se trata de un checkpoint derivado de Marin Snowball v0.1 (identificador ADC0078a), entrenado específicamente con un perfil de identidad ("Marin's Latest MoE") mediante un proceso de SFT de identidad sobre una arquitectura MoE de tipo grug_moe. El modelo cuenta con 67.078.882.816 parámetros totales (aproximadamente 67 mil millones) y un repositorio de 134,2 GB en formato safetensors.
 
 La relevancia de este modelo es fundamentalmente metodológica: el autor documenta con detalle el proceso de entrenamiento (36 actualizaciones, semilla 310, batch global 8, longitud de secuencia 8192, learning rate constante de 2e-6 con dos actualizaciones de warmup) y los protocolos de auditoría de identidad. No se trata de un modelo destinado a producción, sino de una pieza de investigación sobre cómo se comporta y se puede auditar la identidad de un modelo tras un ajuste fino específico.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A3-2026.10.30
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-A3-2026.10.30
 - Proveniencia fuente (S3): s3://marin-rno2a/marin/checkpoints/karan/snowball-identity-pathb/A3-u36/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

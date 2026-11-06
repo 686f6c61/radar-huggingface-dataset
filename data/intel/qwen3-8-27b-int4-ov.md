@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Intel/qwen3.8-27B-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/Intel/qwen3.8-27B-int4-ov
 - Build de origen (OpenVINO): https://huggingface.co/OpenVINO/Qwen3.8-27B-int4-ov
 - Modelo base (Alibaba): https://huggingface.co/Qwen/Qwen3.8-27B
 - Instalacion de OpenVINO: https://docs.openvino.ai/2026/get-started/install-openvino.html

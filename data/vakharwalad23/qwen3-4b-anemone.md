@@ -94,7 +94,7 @@ La ventaja de esta conversión frente a MLX es el consumo energético (un 53 % m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vakharwalad23/Qwen3-4B-Anemone
+- Modelo en Hugging Face: https://huggingface.co/vakharwalad23/Qwen3-4B-Anemone
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio Anemone: https://github.com/vakharwalad23/Anemone
 - Benchmarks detallados de Anemone: https://github.com/vakharwalad23/Anemone/blob/main/docs/benchmarks.md

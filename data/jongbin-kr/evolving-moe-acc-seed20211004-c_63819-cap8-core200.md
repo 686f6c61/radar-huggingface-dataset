@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, desarrollado por el usuario Jongbin-kr. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, y su nombre sugiere una posible aplicación de técnicas evolutivas o de optimización por colonia de hormigas (ACO) a una arquitectura de mezcla de expertos (MoE), aunque esta información no se confirma en la documentación proporcionada.
+El modelo `Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, desarrollado por el usuario Jongbin-kr. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, y su nombre sugiere una posible aplicación de técnicas evolutivas o de optimización por colonia de hormigas (ACO) a una arquitectura de mezcla de expertos (MoE), aunque esta información no se confirma en la documentación proporcionada.
 
 El modelo está diseñado para generación de texto en inglés, como indica el ejemplo de uso en la model card, y se distribuye en formato safetensors compatible con la librería Transformers. Su relevancia actual es limitada, dado que no presenta descargas ni valoraciones, y carece de documentación detallada sobre su arquitectura interna, datos de entrenamiento o rendimiento. Es probable que se trate de un experimento de investigación más que de un modelo listo para producción.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) usando TRL 0.2
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. El modelo no presenta descargas ni valoraciones en HuggingFace, lo que sugiere que no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. El modelo no presenta descargas ni valoraciones en Hugging Face, lo que sugiere que no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200 | ~8B (estimado) | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | HuggingFace |
+| Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200 | ~8B (estimado) | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | Hugging Face |
 
 El modelo no presenta ventajas claras frente a sus alternativas, que tienen documentacion completa, benchmarks publicados y licencias claras. Su unico interes potencial reside en la tecnica de entrenamiento experimental, no en el rendimiento.
 
@@ -77,7 +77,7 @@ El modelo no presenta ventajas claras frente a sus alternativas, que tienen docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_63819-cap8-core200
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/cvar_ddpo/acc-seed20211004-persona-sft/runs/jwf98par

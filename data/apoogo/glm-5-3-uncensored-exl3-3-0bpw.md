@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks generales para establecer comparaciones con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aPOogo/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/aPOogo/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base cuantizado: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - ExLlamaV3 (librería de cuantización e inferencia): no disponible en la información proporcionada

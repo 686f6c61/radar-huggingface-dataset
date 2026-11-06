@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WebUniverse-NSL/Qwen3.5-WebUniverse-Vision-grounded es un ajuste fino multimodal (image-text-to-text) publicado por el usuario WebUniverse-NSL sobre el modelo base Qwen/Qwen3.5-35B-A3B. El modelo combina una arquitectura de mezcla de expertos (etiqueta `qwen3_5_moe` en HuggingFace) con capacidades de vision, y esta orientado a tareas de desarrollo web, agentes, generacion de codigo y conversacion. Cuenta con 35.107.181.936 parametros totales y un repositorio de 70,2 GB en formato safetensors.
+WebUniverse-NSL/Qwen3.5-WebUniverse-Vision-grounded es un ajuste fino multimodal (image-text-to-text) publicado por el usuario WebUniverse-NSL sobre el modelo base Qwen/Qwen3.5-35B-A3B. El modelo combina una arquitectura de mezcla de expertos (etiqueta `qwen3_5_moe` en Hugging Face) con capacidades de vision, y esta orientado a tareas de desarrollo web, agentes, generacion de codigo y conversacion. Cuenta con 35.107.181.936 parametros totales y un repositorio de 70,2 GB en formato safetensors.
 
 Su relevancia radica en que aplica un ajuste especifico sobre un modelo MoE de ~35B con ~3B de parametros activos, lo que permite capacidades cercanas a un modelo denso de ese tamano con un coste de inferencia mucho menor. El ajuste se ha realizado sobre el dataset `webcraft-NSL/WebUniverse-Mix` y el sufijo "Vision-grounded" sugiere un enfasis en la conexion entre elementos visuales y contenido web (capturas de interfaz, layouts, elementos graficos).
 
-Se trata de un modelo con acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. No se ha publicado informacion sobre licencia, longitud de contexto ni resultados de benchmarks, y el modelo solo declara soporte para ingles.
+Se trata de un modelo con acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. No se ha publicado informacion sobre licencia, longitud de contexto ni resultados de benchmarks, y el modelo solo declara soporte para ingles.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Se trata de un modelo con acceso restringido (gated) en HuggingFace: es necesari
 | Modelo base | Qwen/Qwen3.5-35B-A3B (finetune) |
 | Pipeline | image-text-to-text |
 | Dataset de entrenamiento | webcraft-NSL/WebUniverse-Mix |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Tamano del repositorio | 70,2 GB |
 | Fecha de publicacion | 16 de octubre de 2026 (actualizado el mismo dia) |
@@ -31,7 +31,7 @@ Se trata de un modelo con acceso restringido (gated) en HuggingFace: es necesari
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con capas de mezcla de expertos (MoE), etiquetado en HuggingFace como `qwen3_5_moe` y heredado del modelo base Qwen/Qwen3.5-35B-A3B. Con 35,1B parametros totales y aproximadamente 3B activos por token (deducido de la nomenclatura A3B del modelo base), el modelo activa solo una fraccion de sus expertos en cada paso de inferencia, lo que reduce el coste computacional respecto a un modelo denso del mismo tamano. El pipeline declarado es image-text-to-text, por lo que incorpora un encoder o proyector multimodal que permite procesar imagenes junto con texto.
+La arquitectura es un transformer con capas de mezcla de expertos (MoE), etiquetado en Hugging Face como `qwen3_5_moe` y heredado del modelo base Qwen/Qwen3.5-35B-A3B. Con 35,1B parametros totales y aproximadamente 3B activos por token (deducido de la nomenclatura A3B del modelo base), el modelo activa solo una fraccion de sus expertos en cada paso de inferencia, lo que reduce el coste computacional respecto a un modelo denso del mismo tamano. El pipeline declarado es image-text-to-text, por lo que incorpora un encoder o proyector multimodal que permite procesar imagenes junto con texto.
 
 El modelo es un finetune (tag `base_model:finetune`) entrenado sobre el dataset `webcraft-NSL/WebUniverse-Mix`, cuya composicion, numero de tokens y proceso de curacion no estan documentados en la informacion disponible. No se especifica si se aplicaron tecnicas de alineacion como RLHF, DPO o decodificacion especulativa, ni si se congelaron partes del modelo base durante el ajuste. Tampoco se detalla la estrategia de entrenamiento multimodal (resolucion de imagen, numero de tokens visuales, etc.).
 
@@ -68,7 +68,7 @@ Las cifras de esta seccion son estimaciones derivadas del numero de parametros (
 - VRAM en cuantizacion de 4 bits: aproximadamente 20-24 GB, al limite de una RTX 4090 de 24 GB; con contexto corto y sin vision podria caber, aunque no esta verificado.
 - GPU recomendadas para produccion: A100 80 GB, H100 80 GB o H200, en configuracion multi-GPU si se sirve en precision completa.
 - Consumer GPU: no cabe en precision completa. En 4 bits podria caber en RTX 4090 / RTX 5090 (24-32 GB), siempre que se disponga de una build compatible con la arquitectura `qwen3_5_moe`.
-- Opciones de despliegue: al estar en `transformers` y `safetensors`, el punto de partida es la libreria transformers. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI para esta arquitectura concreta.
+- Opciones de despliegue: al estar en `transformers` y `safetensors`, el punto de partida es la libreria transformers. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI para esta arquitectura concreta.
 - Latencia y throughput: no disponibles. Al tratarse de un MoE con ~3B parametros activos, el coste por token es previsiblemente inferior al de un modelo denso de 35B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables adicionales en la documen
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; no es posible descargarlo de forma anonima.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; no es posible descargarlo de forma anonima.
 - Licencia no especificada: al no declararse licencia, el uso comercial queda en un limbo legal y debe consultarse con el autor antes de cualquier despliegue en produccion.
 - Idiomas: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
 - Riesgo de alucinacion: los modelos de generacion de codigo y texto multimodal pueden producir APIs, selectores o fragmentos de interfaz inexistentes, especialmente al interpretar capturas ambiguas.
@@ -96,7 +96,7 @@ No se dispone de informacion sobre modelos comparables adicionales en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-Vision-grounded
+- Modelo en Hugging Face: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-Vision-grounded
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/webcraft-NSL/WebUniverse-Mix
 - Paper tecnico: no disponible

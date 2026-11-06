@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sako.Image.Generation es un repositorio de HuggingFace publicado por el usuario sakshamsood que redistribuye los pesos de FLUX.2 [klein] 4B, un modelo de difusion de la familia FLUX.2 desarrollada por Black Forest Labs. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 3.875.544.576 parametros que unifica generacion de imagen a partir de texto y edicion de imagen con multiples referencias en una sola arquitectura compacta. El pipeline declarado es image-to-image y la libreria de referencia es diffusers, con la clase Flux2KleinPipeline.
+Sako.Image.Generation es un repositorio de Hugging Face publicado por el usuario sakshamsood que redistribuye los pesos de FLUX.2 [klein] 4B, un modelo de difusion de la familia FLUX.2 desarrollada por Black Forest Labs. Se trata de un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 3.875.544.576 parametros que unifica generacion de imagen a partir de texto y edicion de imagen con multiples referencias en una sola arquitectura compacta. El pipeline declarado es image-to-image y la libreria de referencia es diffusers, con la clase Flux2KleinPipeline.
 
 Su relevancia radica en que Black Forest Labs lo presenta como su modelo de imagen mas rapido hasta la fecha, con inferencia end-to-end que puede situarse por debajo del segundo, pensado para flujos de trabajo interactivos, despliegue en produccion y aplicaciones sensibles a la latencia. Frente a los modelos FLUX de ~12B de la generacion anterior, esta variante reduce el numero de parametros manteniendo edicion multi-referencia, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin las restricciones de las licencias no comerciales habituales en esta familia.
 
@@ -95,7 +95,7 @@ Los datos de parametros y licencias de los modelos alternativos provienen del co
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/sakshamsood/Sako.Image.Generation
+- Repositorio analizado en Hugging Face: https://huggingface.co/sakshamsood/Sako.Image.Generation
 - Modelo original de referencia: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Blog oficial de FLUX.2 [klein]: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
 - Repositorio de codigo de referencia: https://github.com/black-forest-labs/flux2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RF-DETR stamp and signature detector (ONNX) es una exportación a formato ONNX del checkpoint `bluecopa/rf-detr-stamp-signature-detector`, un modelo de detección de objetos basado en la arquitectura RF-DETR (Real-Time Detection Transformer). El autor de la exportación es el usuario de HuggingFace Nurtugang, mientras que el modelo original pertenece a bluecopa. El modelo está especializado en localizar dos tipos de elementos sobre documentos escaneados: sellos (stamps) y firmas (signatures), además de detectar casillas de verificación (checkboxes) de forma no documentada.
+RF-DETR stamp and signature detector (ONNX) es una exportación a formato ONNX del checkpoint `bluecopa/rf-detr-stamp-signature-detector`, un modelo de detección de objetos basado en la arquitectura RF-DETR (Real-Time Detection Transformer). El autor de la exportación es el usuario de Hugging Face Nurtugang, mientras que el modelo original pertenece a bluecopa. El modelo está especializado en localizar dos tipos de elementos sobre documentos escaneados: sellos (stamps) y firmas (signatures), además de detectar casillas de verificación (checkboxes) de forma no documentada.
 
 La relevancia de esta versión concreta reside en su formato: al estar exportada a ONNX, puede ejecutarse con el runtime de ONNX Runtime en entornos sin PyTorch, lo que facilita el despliegue en producción sobre CPU, GPU o incluso dispositivos con aceleradores específicos. Se ofrecen dos variantes de precisión (fp32 de 108 MB y fp16 de 55 MB) y el autor reporta que las detecciones de ambas coinciden con el checkpoint original en PyTorch dentro de 0,02 de confianza sobre 40 documentos reales.
 
@@ -69,9 +69,9 @@ El autor reporta una validación de equivalencia: sobre 40 documentos reales, la
 
 | Modelo | Tipo | Entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nurtugang/rf-detr-stamp-signature-detector-onnx | RF-DETR (ONNX) | 560×560 px | Apache 2.0 | ONNX | HuggingFace |
-| bluecopa/rf-detr-stamp-signature-detector | RF-DETR (PyTorch) | 560×560 px | no disponible | PyTorch | HuggingFace |
-| Detectores DETR genéricos (p. ej. RT-DETR, DETR) | Transformer | variable | variable | PyTorch/ONNX | HuggingFace / repos oficiales |
+| Nurtugang/rf-detr-stamp-signature-detector-onnx | RF-DETR (ONNX) | 560×560 px | Apache 2.0 | ONNX | Hugging Face |
+| bluecopa/rf-detr-stamp-signature-detector | RF-DETR (PyTorch) | 560×560 px | no disponible | PyTorch | Hugging Face |
+| Detectores DETR genéricos (p. ej. RT-DETR, DETR) | Transformer | variable | variable | PyTorch/ONNX | Hugging Face / repos oficiales |
 
 No se dispone de datos de rendimiento comparativo (mAP, latencia) entre estos modelos en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo (mAP, latencia) entre estos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nurtugang/rf-detr-stamp-signature-detector-onnx
+- Modelo en Hugging Face: https://huggingface.co/Nurtugang/rf-detr-stamp-signature-detector-onnx
 - Modelo base: https://huggingface.co/bluecopa/rf-detr-stamp-signature-detector
 - Herramienta de exportación `rfdetr`: no disponible en la información proporcionada
 - Paper de RF-DETR: no disponible en la información proporcionada

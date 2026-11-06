@@ -4,7 +4,7 @@
 
 FOCUS-3D es un framework de aprendizaje profundo para la segmentación celular tridimensional en imágenes de microscopía de fluorescencia. Desarrollado por el grupo de investigación Qinghua-thu (Universidad de Tsinghua) en colaboración con yu-lab-vt (Virginia Tech), el modelo está diseñado para ser robusto y generalizable, abordando la variabilidad de morfologías celulares y condiciones de imagen en distintos experimentos. Su relevancia radica en la necesidad de herramientas automáticas y precisas para el análisis cuantitativo de estructuras celulares en 3D, un paso fundamental en la biología celular y el descubrimiento de fármacos.
 
-El repositorio de HuggingFace aloja los pesos preentrenados del modelo, con un tamaño de 13,4 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlos. Además, se distribuye un plugin para napari, la plataforma de visualización de imágenes científicas, que permite la segmentación interactiva, la corrección manual, el ajuste fino (fine-tuning) y el análisis de resultados. El modelo se acompaña de un artículo en bioRxiv que describe su arquitectura y metodología, aunque los detalles técnicos completos no están disponibles en la información proporcionada.
+El repositorio de Hugging Face aloja los pesos preentrenados del modelo, con un tamaño de 13,4 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlos. Además, se distribuye un plugin para napari, la plataforma de visualización de imágenes científicas, que permite la segmentación interactiva, la corrección manual, el ajuste fino (fine-tuning) y el análisis de resultados. El modelo se acompaña de un artículo en bioRxiv que describe su arquitectura y metodología, aunque los detalles técnicos completos no están disponibles en la información proporcionada.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se dispone de comparaciones publicas con otros modelos de segmentacion celula
 
 ## Limitaciones y advertencias
 
-- Acceso restringido en HuggingFace: los usuarios deben aceptar condiciones especificas, lo que puede limitar la reproducibilidad y el uso comercial.
+- Acceso restringido en Hugging Face: los usuarios deben aceptar condiciones especificas, lo que puede limitar la reproducibilidad y el uso comercial.
 - Licencia no especificada: no se indica si el modelo es de codigo abierto, con restricciones academicas o comercial, lo que genera incertidumbre legal para su uso en entornos empresariales.
 - Especializado en microscopia de fluorescencia: no es aplicable a otros tipos de imagenes (p. ej., histologia, tomografia) sin un reentrenamiento adecuado.
 - Riesgo de sesgo en la segmentacion: el rendimiento puede degradarse en morfologias celulares muy diferentes a las del conjunto de entrenamiento, aunque el diseno busca generalizacion.
@@ -67,7 +67,7 @@ No se dispone de comparaciones publicas con otros modelos de segmentacion celula
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qinghua-thu/FOCUS-3D
+- Hugging Face: https://huggingface.co/Qinghua-thu/FOCUS-3D
 - GitHub (yu-lab-vt/FOCUS-3D): https://github.com/yu-lab-vt/FOCUS-3D
 - PyPI (focus-3d): https://pypi.org/project/focus-3d/
 - Articulo en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.25.746907v1

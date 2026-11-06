@@ -96,7 +96,7 @@ La fusión con atención de los tres backbones supera al mejor backbone individu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilnguyen2k/mit67_fusion_sum
+- Modelo en Hugging Face: https://huggingface.co/nilnguyen2k/mit67_fusion_sum
 - Repositorio relacionado `mit67_fusion_head`: https://huggingface.co/nilnguyen2k/mit67_fusion_head
 - Repositorio relacionado `mit67_fusion_v2`: https://huggingface.co/nilnguyen2k/mit67_fusion_v2
 - Perfil de GitHub del autor: https://github.com/nilnguyen2k

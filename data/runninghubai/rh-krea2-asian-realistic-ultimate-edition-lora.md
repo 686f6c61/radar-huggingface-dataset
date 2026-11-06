@@ -26,8 +26,8 @@ Su relevancia practica es acotada y muy especializada: no es un modelo de lengua
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | image-text-to-image |
 | Plataformas soportadas | ComfyUI, RunningHub, Hugging Face |
-| Fecha de creacion | 2026-09-26 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-26 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-26 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

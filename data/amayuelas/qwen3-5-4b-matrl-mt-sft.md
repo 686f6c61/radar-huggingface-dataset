@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT
+- Modelo en Hugging Face: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/amayuelas/matrl-sft-mt
 - Checkpoint RL posterior: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

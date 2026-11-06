@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tourn-cc4550ab-instructtext-hyper-x4avf1full10 es un modelo de lenguaje publicado en HuggingFace por el usuario firzahdzm. El repositorio contiene pesos en formato safetensors con 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones) y un tamano de repositorio de 2,3 GB, cifra coherente con pesos almacenados en precision bf16/fp16. La etiqueta lfm2 sugiere que el modelo deriva de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, si bien la ficha publicada no documenta formalmente la arquitectura ni el proceso de entrenamiento.
+tourn-cc4550ab-instructtext-hyper-x4avf1full10 es un modelo de lenguaje publicado en Hugging Face por el usuario firzahdzm. El repositorio contiene pesos en formato safetensors con 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones) y un tamano de repositorio de 2,3 GB, cifra coherente con pesos almacenados en precision bf16/fp16. La etiqueta lfm2 sugiere que el modelo deriva de la familia LFM2 (Liquid Foundation Model 2) de Liquid AI, si bien la ficha publicada no documenta formalmente la arquitectura ni el proceso de entrenamiento.
 
 El nombre del repositorio (con los terminos instruct, text, hyper y un identificador hexadecimal) apunta a un ajuste fino orientado a instrucciones, posiblemente resultado de un experimento de busqueda de hiperparametros o de una competicion interna. No obstante, esta interpretacion es una inferencia a partir del nombre y no aparece confirmada en la informacion disponible.
 
@@ -89,4 +89,4 @@ La comparativa no permite extraer conclusiones de rendimiento, ya que el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full10
+- Modelo en Hugging Face: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full10

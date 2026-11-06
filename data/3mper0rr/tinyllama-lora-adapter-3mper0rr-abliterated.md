@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `3MPER0RR/TinyLlama-LoRA-adapter-3MPER0RR-abliterated` contiene un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario 3MPER0RR. Este adaptador está diseñado para ser cargado sobre un modelo base llamado `3MPER0RR/TinyLlama-3MPER0RR-abliterated`, que a su vez parece ser una versión modificada de un modelo de la familia TinyLlama. El adaptador se publica con licencia MIT y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) de HuggingFace.
+El repositorio `3MPER0RR/TinyLlama-LoRA-adapter-3MPER0RR-abliterated` contiene un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario 3MPER0RR. Este adaptador está diseñado para ser cargado sobre un modelo base llamado `3MPER0RR/TinyLlama-3MPER0RR-abliterated`, que a su vez parece ser una versión modificada de un modelo de la familia TinyLlama. El adaptador se publica con licencia MIT y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) de Hugging Face.
 
 Al tratarse de un adaptador LoRA, el modelo no es un modelo completo, sino un conjunto de pesos de bajo rango que se añaden a las capas del modelo base para modificar su comportamiento sin reentrenar todos los parámetros. No se dispone de información sobre el propósito específico del adaptador, el dataset de entrenamiento ni las capacidades resultantes. El repositorio no registra descargas ni likes, y no se ha publicado ninguna documentación técnica adicional.
 

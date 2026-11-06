@@ -4,7 +4,7 @@
 
 `qwen2.5_coder_0.5b_PMTP_polydim_einsof` es un adaptador de pesos abiertos publicado por el investigador independiente Ariel García Traba bajo la iniciativa POLYDIM-EINSOF / EinsofOS. Se construye sobre el modelo base Qwen/Qwen2.5-Coder-0.5B y se presenta como una implementación del llamado PMTP (Polydim Memory Transfer Protocol), que proyecta estados ocultos de forma continua sobre la variedad de Stiefel St(1024, 896), con el objetivo declarado de eliminar la serialización de tokens en formato 1D durante la comunicación entre procesos o "saltos" de razonamiento.
 
-El modelo no es un modelo generativo de texto en el sentido convencional: la pipeline declarada en HuggingFace es `feature-extraction`, y el repositorio contiene matrices de proyección en FP64 (`adapter_weights.safetensors`, `adapter_model.safetensors`) junto con un `Modelfile` para despliegue en Ollama. La propuesta técnica central es el "Protocolo Alan Turing", un parámetro `turing_depth` (0 a 50) que controla el número de pasos de proyección isométrica y contracción riemanniana aplicados sobre los estados latentes, con modos que van desde el passthrough directo hasta la "prueba formal de teoremas" de alta profundidad.
+El modelo no es un modelo generativo de texto en el sentido convencional: la pipeline declarada en Hugging Face es `feature-extraction`, y el repositorio contiene matrices de proyección en FP64 (`adapter_weights.safetensors`, `adapter_model.safetensors`) junto con un `Modelfile` para despliegue en Ollama. La propuesta técnica central es el "Protocolo Alan Turing", un parámetro `turing_depth` (0 a 50) que controla el número de pasos de proyección isométrica y contracción riemanniana aplicados sobre los estados latentes, con modos que van desde el passthrough directo hasta la "prueba formal de teoremas" de alta profundidad.
 
 La relevancia de esta ficha es doble: por un lado, documenta una propuesta heterodoxa de razonamiento latente continuo que difiere del paradigma habitual de chain-of-thought basado en tokens; por otro, advierte de que se trata de un artefacto de investigación independiente con cero descargas, sin benchmarks publicados y cuyas afirmaciones (defecto de ortogonalidad de 1.55e-15, latencias de 6.36 ms a profundidad 1) no han sido verificadas de forma independiente. El tamaño efectivo del repositorio es de 0.0 GB, lo que sugiere que los pesos del adaptador son de dimensión reducida en comparación con el modelo base de 0.5B parámetros.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible de forma explícita. El modelo base Qwen2.5-Coder-0.5B requiere aproximadamente 1 GB en FP16 y menos de 1 GB en cuantizaciones de 4 bits; el adaptador añade una matriz de proyección de dimensiones 896×1024 en FP64 (unos 7 MB), por lo que el coste adicional es despreciable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para el modelo base en FP16; el adaptador FP64 puede requerir soporte de doble precisión, limitado en GPUs de consumo (las GeForce tienen FP64 muy reducido frente a A100/H100).
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores, siempre que se acepte la penalización de FP64 en el adaptador.
-- Opciones de despliegue: Ollama (mediante el `Modelfile` incluido), HuggingFace Transformers con safetensors, y potencialmente llama.cpp/vLLM para el modelo base, aunque la compatibilidad del adaptador con estos runners no está documentada.
+- Opciones de despliegue: Ollama (mediante el `Modelfile` incluido), Hugging Face Transformers con safetensors, y potencialmente llama.cpp/vLLM para el modelo base, aunque la compatibilidad del adaptador con estos runners no está documentada.
 - Latencia y throughput: el autor reporta 6.36 ms a profundidad 1 y 9.70 ms a profundidad 10 para la proyección; no se especifica el hardware de medida ni el throughput de generación.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5_coder_0.5b_PMTP_polydim_einsof | 0.5B (base) + adaptador | No disponible | Razonamiento latente sobre variedad de Stiefel | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Coder-0.5B | 0.5B | 32K (según documentación del modelo base) | Transformer decoder-only para código | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-Coder-1.5B | 1.5B | 32K | Transformer decoder-only para código | Apache 2.0 | HuggingFace |
-| deepseek-ai/DeepSeek-Coder-1.3B | 1.3B | 16K | Transformer decoder-only para código | DeepSeek License | HuggingFace |
+| qwen2.5_coder_0.5b_PMTP_polydim_einsof | 0.5B (base) + adaptador | No disponible | Razonamiento latente sobre variedad de Stiefel | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Coder-0.5B | 0.5B | 32K (según documentación del modelo base) | Transformer decoder-only para código | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-Coder-1.5B | 1.5B | 32K | Transformer decoder-only para código | Apache 2.0 | Hugging Face |
+| deepseek-ai/DeepSeek-Coder-1.3B | 1.3B | 16K | Transformer decoder-only para código | DeepSeek License | Hugging Face |
 
 La comparación directa con modelos de razonamiento latente es limitada porque no se han identificado en la información disponible artefactos públicos equivalentes basados en proyecciones de Stiefel sobre Qwen2.5-Coder. La alternativa más cercana en tamaño y propósito es el propio modelo base sin adaptador.
 
@@ -94,7 +94,7 @@ La comparación directa con modelos de razonamiento latente es limitada porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polydim-Einsof/qwen2.5_coder_0.5b_PMTP_polydim_einsof
+- Modelo en Hugging Face: https://huggingface.co/Polydim-Einsof/qwen2.5_coder_0.5b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - DOI principal (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

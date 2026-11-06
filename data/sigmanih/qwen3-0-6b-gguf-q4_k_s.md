@@ -75,7 +75,7 @@ La comparativa se limita a variantes del mismo modelo base y a un modelo de tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/Qwen3-0.6B-GGUF-Q4_K_S
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/Qwen3-0.6B-GGUF-Q4_K_S
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
 - Version oficial GGUF de Qwen: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
 - Version GGUF de unsloth: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF

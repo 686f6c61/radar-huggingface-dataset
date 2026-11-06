@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decidex v7 core 8B (este adaptador) | Adaptador LoRA sobre 8B (0,24% entrenable) | No disponible | 84/86 (97,7%) de concordancia con la API oficial en corpus propio de 87 preguntas | MIT | HuggingFace, descarga directa |
+| Decidex v7 core 8B (este adaptador) | Adaptador LoRA sobre 8B (0,24% entrenable) | No disponible | 84/86 (97,7%) de concordancia con la API oficial en corpus propio de 87 preguntas | MIT | Hugging Face, descarga directa |
 | Decidex baseline 4B | ~4B | No disponible | 26% de desacuerdo de distribucion frente al modelo oficial | No disponible | No disponible en la informacion proporcionada |
-| Qwen/Qwen3-8B sin adaptador | ~8B | No disponible en la informacion proporcionada | No disponible: el modelo base no esta entrenado para la tarea de decision tipo Jev | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen/Qwen3-8B sin adaptador | ~8B | No disponible en la informacion proporcionada | No disponible: el modelo base no esta entrenado para la tarea de decision tipo Jev | No disponible en la informacion proporcionada | Hugging Face |
 | API oficial de Jev (TypeSafe AI) | No disponible | No disponible | Referencia de comparacion; concordancia 100% por definicion | Propietaria | Servicio alojado |
 
 No se dispone de datos sobre otros adaptadores publicos de decision estructurada que permitan una comparacion adicional, por lo que la comparativa se limita a los elementos citados en la propia model card.
@@ -101,8 +101,8 @@ No se dispone de datos sobre otros adaptadores publicos de decision estructurada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fly88oj/decidex-core-8b
+- Modelo en Hugging Face: https://huggingface.co/fly88oj/decidex-core-8b
 - Repositorio Decidex (incluye `REPRODUCE.md` y `COMPARISON.md`): https://github.com/fly88oj/decidex
 - Repositorio de builds GGUF del adaptador fusionado (`decidex-gguf`): referenciado en la model card, URL concreta no disponible
-- Modelo base: Qwen/Qwen3-8B en HuggingFace, URL concreta no proporcionada en la informacion disponible
+- Modelo base: Qwen/Qwen3-8B en Hugging Face, URL concreta no proporcionada en la informacion disponible
 - Paper o blog técnico: no disponible

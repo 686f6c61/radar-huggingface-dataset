@@ -6,7 +6,7 @@ Mango Qwen3.8 27B Uncensored MLX4 es una preservación y evaluación del checkpo
 
 El modelo subyacente es un Qwen de 27B de parámetros afinado para eliminar restricciones de rechazo (uncensored), empaquetado en safetensors MLX con cuantización affine de 4 bits. El artefacto seleccionado ocupa 16,08 GB (14,98 GiB) repartidos en 13 ficheros principales. La relevancia de esta ficha no reside en el modelo base, sino en que el repositorio documenta una evaluación medida: 80,64/100 en un cribado histórico de 202 preguntas, 23,98 minutos de carga emparejada y 12/12 casos de agente mecánico superados, además de un experimento controlado que compara los niveles de esfuerzo de razonamiento medium y xhigh del modelo.
 
-La licencia declarada es Apache 2.0 y los idiomas soportados son inglés y chino. El repositorio está marcado con `inference: false` en su model card, lo que indica que no está pensado para servirse directamente desde HuggingFace Inference API, sino para ejecutarse localmente con MLX en hardware Apple Silicon o, según documenta el autor, a través de TensorFold CUDA con el modelo draft DFlash2 preservado por separado.
+La licencia declarada es Apache 2.0 y los idiomas soportados son inglés y chino. El repositorio está marcado con `inference: false` en su model card, lo que indica que no está pensado para servirse directamente desde Hugging Face Inference API, sino para ejecutarse localmente con MLX en hardware Apple Silicon o, según documenta el autor, a través de TensorFold CUDA con el modelo draft DFlash2 preservado por separado.
 
 ## Especificaciones técnicas
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 - El modelo está afinado como uncensored, lo que implica una reducción deliberada de los rechazos ante peticiones sensibles; requiere filtros y políticas de uso propias antes de exponerlo a usuarios finales.
 - Riesgo de alucinación no cuantificado en la información disponible; la rúbrica de fidelidad a la fuente obtiene 9,90 en medium y 9,10 en xhigh, pero sobre solo 5 ítems, muestra demasiado pequeña para generalizar.
 - Idiomas limitados a inglés y chino; no hay evidencia de rendimiento en castellano.
-- El repositorio declara `inference: false`, por lo que no está pensado para servirse desde la Inference API de HuggingFace.
+- El repositorio declara `inference: false`, por lo que no está pensado para servirse desde la Inference API de Hugging Face.
 - El formato MLX limita el despliegue fuera del ecosistema Apple Silicon salvo por la ruta TensorFold CUDA documentada, que no detalla GPU compatibles ni requisitos de versión.
 - La comparación medium frente a xhigh no establece una ganancia clara de calidad (+1,54 puntos con intervalo que cruza cero) y xhigh multiplica por 4,46 el tiempo de ejecución, por lo que medium es la opción práctica según la regla económica del autor.
 - Una anotación congelada de IFEval especifica `#` como letra; el checker de referencia sustituye una letra alfabética aleatoria, por lo que ese caso queda sin puntuar en ambos niveles de esfuerzo.
@@ -122,7 +122,7 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-qwen38-27b-uncensored-mlx4
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-qwen38-27b-uncensored-mlx4
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX
 - Colección Mango tested models and preservation mirrors: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Dataset de resultados de evaluación Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

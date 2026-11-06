@@ -101,7 +101,7 @@ No se dispone de datos que permitan afirmar equivalencia funcional entre el chec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n2-hero-4gpu-resumable-2026-n2-v2-4gpu-5b642a53ea38
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n2-hero-4gpu-resumable-2026-n2-v2-4gpu-5b642a53ea38
 - Ejecucion de Weights & Biases asociada (ID `97ccf2f9`): no se ha encontrado enlace publico en la informacion disponible.
 - Paper, blog o repositorio de codigo del pipeline `mopd-v2-r1`: no disponible en la informacion proporcionada.
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman

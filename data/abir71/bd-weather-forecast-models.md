@@ -73,7 +73,7 @@ Comparacion interna citada en la model card: un SARIMA por estacion obtuvo mejor
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bd-weather-forecast-models | XGBoost + SVR tabular | No disponible | 12 meses previos; horizonte 1 mes | RMSE temp. 0,74 °C; precip. 132,1 mm; hum. 4,35 % | MIT | HuggingFace, repo publico |
+| bd-weather-forecast-models | XGBoost + SVR tabular | No disponible | 12 meses previos; horizonte 1 mes | RMSE temp. 0,74 °C; precip. 132,1 mm; hum. 4,35 % | MIT | Hugging Face, repo publico |
 | SARIMA por estacion (referencia del paper) | Serie temporal estadistica | No disponible | Horizonte 1 mes | RMSE precip. 126,5 mm; hum. 3,79 % | No disponible | Implementacion propia, no publicada como artefacto |
 | Climatologia estacion-mes | Linea base estadistica | No aplica | Horizonte 1 mes | RMSE temp. 0,90 °C; precip. 148,4 mm; hum. 6,58 % | No disponible | Incluida en el repositorio (`climatology.csv`) |
 
@@ -92,9 +92,9 @@ No se dispone de comparacion con otros modelos publicados de prediccion mensual 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abir71/bd-weather-forecast-models
+- Modelo en Hugging Face: https://huggingface.co/abir71/bd-weather-forecast-models
 - Codigo del paper: https://github.com/abir-hosen-ashik/bd-monthly-weather-forecast-ml-paper
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/abirhosenashik/bangladesh-bmd-station-weather-data-19812022-qc
-- Dataset en HuggingFace: https://huggingface.co/datasets/abirhosenashik/bangladesh-bmd-station-weather-data-19812022-qc
+- Dataset en Hugging Face: https://huggingface.co/datasets/abirhosenashik/bangladesh-bmd-station-weather-data-19812022-qc
 - Demo interactiva: Space enlazado desde la model card (no se proporciona URL directa)
 - Paper: Das JR, Khan MAR, Ahammad I, Hosen A. "Leakage controlled machine learning forecasting of monthly rainfall temperature and humidity across Bangladesh", *Discover Environment* (en revision)

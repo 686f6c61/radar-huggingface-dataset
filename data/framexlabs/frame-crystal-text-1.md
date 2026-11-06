@@ -106,7 +106,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos; la co
 
 ## Enlaces
 
-- [FrameXlabs/Frame-Crystal-Text-1 en HuggingFace](https://huggingface.co/FrameXlabs/Frame-Crystal-Text-1)
+- [FrameXlabs/Frame-Crystal-Text-1 en Hugging Face](https://huggingface.co/FrameXlabs/Frame-Crystal-Text-1)
 - [Dataset FrameXlabs/Frame-Dataset-Crystal-Text](https://huggingface.co/datasets/FrameXlabs/Frame-Dataset-Crystal-Text)
 - [Modelo base openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o repositorios) en la búsqueda web realizada.

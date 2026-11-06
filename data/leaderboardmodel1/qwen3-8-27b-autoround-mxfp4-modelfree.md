@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/LeaderboardModel1/Qwen3.8-27B-AutoRound-MXFP4-ModelFree)
+- [Página del modelo en Hugging Face](https://huggingface.co/LeaderboardModel1/Qwen3.8-27B-AutoRound-MXFP4-ModelFree)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de AutoRound](https://github.com/intel/auto-round)
 - [Paper de AutoRound (arXiv:2309.05516)](https://arxiv.org/abs/2309.05516)

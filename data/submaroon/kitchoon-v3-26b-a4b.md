@@ -103,7 +103,7 @@ La comparacion directa posible se limita al modelo base, ya que es el unico para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Kitchoon-V3-26B-A4B
 - Modelo base: https://huggingface.co/Tetratype/Gemma-4-26B-A4B-it-heretic-antislop
 - Autor del base (Tetratype): https://huggingface.co/Tetratype
 - Colaborador del dataset (Indexnusrefather): https://huggingface.co/Indexnusrefather

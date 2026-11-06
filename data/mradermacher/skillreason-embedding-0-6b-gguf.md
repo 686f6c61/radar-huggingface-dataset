@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados con otros modelos de embedding de
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/SkillReason-embedding-0.6b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/SkillReason-embedding-0.6b-GGUF
 - Modelo base: https://huggingface.co/donghongjiang/SkillReason-embedding-0.6b
 - Dataset de entrenamiento: https://huggingface.co/datasets/donghongjiang/skillreason-bench
 - Paper de SkillReason: https://arxiv.org/abs/2608.08640v1

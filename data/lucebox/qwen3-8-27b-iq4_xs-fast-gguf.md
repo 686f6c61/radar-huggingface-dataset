@@ -15,7 +15,7 @@ El modelo base Qwen3.8-27B es un modelo de lenguaje de 27 mil millones de parám
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131072 tokens en el ejemplo de servido; el modelo base soporta hasta 262k segun fuentes externas |
 | Tipos de cuantizacion | IQ4_XS puro (requantizado con `--pure`), 13,54 GiB |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; el modelo base Qwen3.8-27B es multilingue (no confirmado oficialmente) |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; el modelo base Qwen3.8-27B es multilingue (no confirmado oficialmente) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors no incluido; el modelo base original esta en safetensors) |
 
@@ -31,7 +31,7 @@ El modelo base Qwen3.8-27B es un transformer denso entrenado por Qwen con un con
 - Codigo y matematicas: evaluado con HumanEval (144/164 pass@1) y GSM8K (171/200) en la configuracion pura.
 - Decodificacion especulativa: compatible con el drafter DFlash2 de z-lab, que acelera la generacion sin alterar los resultados (verificacion exacta).
 - Multilingue: no confirmado para esta cuantizacion; el modelo base probablemente soporta varios idiomas, pero no hay datos oficiales.
-- Vision: segun una fuente externa, el modelo base Qwen3.8-27B incluye un "vision encoder" sorpresa, pero no se menciona en la model card del autor ni en la ficha de HuggingFace, por lo que no se puede confirmar para este archivo GGUF.
+- Vision: segun una fuente externa, el modelo base Qwen3.8-27B incluye un "vision encoder" sorpresa, pero no se menciona en la model card del autor ni en la ficha de Hugging Face, por lo que no se puede confirmar para este archivo GGUF.
 
 ## Casos de uso
 
@@ -91,7 +91,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del archivo: https://huggingface.co/Lucebox/Qwen3.8-27B-IQ4_XS-fast-GGUF
+- Repositorio Hugging Face del archivo: https://huggingface.co/Lucebox/Qwen3.8-27B-IQ4_XS-fast-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de Lucebox con metodologia y comparativa: https://www.lucebox.com/blog/qwen38-r9700
 - Repositorio de Lucebox (motor de inferencia): https://github.com/Luce-Org/lucebox

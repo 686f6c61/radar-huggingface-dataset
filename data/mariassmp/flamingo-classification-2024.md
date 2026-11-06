@@ -78,6 +78,6 @@ No disponible. No hay información sobre modelos comparables en el repositorio, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mariassmp/flamingo-classification-2024
+- Repositorio en Hugging Face: https://huggingface.co/mariassmp/flamingo-classification-2024
 - Documentación sobre la arquitectura Flamingo (MMPpretrain): https://mmclassification.readthedocs.io/en/master/papers/flamingo.html
 - Ejemplo de evaluación de Flamingo en few-shot learning (fuente externa): https://llmsystem.github.io/llmsystem2024spring/assets/files/Group-Flamingo-98ae9c68fca94cd437716229a2cf42c1.pdf

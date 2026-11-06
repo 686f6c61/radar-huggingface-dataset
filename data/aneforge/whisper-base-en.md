@@ -76,7 +76,7 @@ La comparativa se basa en el tamaño y la especialización en inglés. `whisper-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aneforge/whisper-base.en
+- Hugging Face: https://huggingface.co/aneforge/whisper-base.en
 - Modelo original: https://huggingface.co/openai/whisper-base.en
 - Repositorio ANEForge: https://github.com/sbryngelson/ANEForge
 - Documentación ANEForge: https://aneforge.readthedocs.io

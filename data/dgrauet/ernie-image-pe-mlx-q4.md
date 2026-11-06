@@ -73,11 +73,11 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dgrauet/ernie-image-pe-mlx-q4
+- Repositorio Hugging Face: https://huggingface.co/dgrauet/ernie-image-pe-mlx-q4
 - Modelo base ERNIE-Image-Turbo: https://huggingface.co/baidu/ERNIE-Image-Turbo
 - ernie-image-mlx (GitHub): https://github.com/dgrauet/ernie-image-mlx
 - ernie-image-mlx (PyPI): https://pypi.org/project/ernie-image-mlx/
 - mlx-forge (herramienta de conversion): https://github.com/dgrauet/mlx-forge
 - mlx-arsenal (ops reutilizables MLX): https://github.com/dgrauet/mlx-arsenal
 - mlx-porting (skill de Claude Code): https://github.com/dgrauet/claude-skill-mlx-porting
-- Coleccion de dgrauet en HuggingFace: https://huggingface.co/collections/dgrauet/ernie-image
+- Coleccion de dgrauet en Hugging Face: https://huggingface.co/collections/dgrauet/ernie-image

@@ -84,7 +84,7 @@ La comparativa muestra que este modelo, al estar QER-matched, presenta una expre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-cake-prompted
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-cake-prompted
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Repositorio GitHub (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper en Arxiv (The Model Organism Lottery): https://arxiv.org/html/2607.01033

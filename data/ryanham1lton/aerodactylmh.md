@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AerodactylMH es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/AerodactylMH`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y el repositorio no incluye pipeline declarado, idiomas soportados ni descripcion funcional alguna. No se ha publicado ningun dato sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento o proceso de alineacion.
+AerodactylMH es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/AerodactylMH`. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`) y el repositorio no incluye pipeline declarado, idiomas soportados ni descripcion funcional alguna. No se ha publicado ningun dato sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento o proceso de alineacion.
 
 El tamano del repositorio es de 0,1 GB, lo que es coherente con un conjunto de pesos de muy baja escala, con un adaptador de tipo LoRA/QLoRA o con un repositorio que no contiene pesos completos en precision alta. Esta es una inferencia a partir del unico dato cuantitativo disponible (el tamano del repo) y no una afirmacion del autor, por lo que debe tratarse con cautela hasta que se publique documentacion adicional.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos sin especificaciones verificable
 - Investigacion sobre modelos de baja escala: el tamano de 0,1 GB lo situa en el rango de modelos que potencialmente caben en hardware de consumo, lo que podria interesar para estudios de eficiencia, siempre que se confirme que contiene pesos utilizables.
 - Despliegue en el borde (edge): solo seria viable si se confirma una cuantizacion compatible con llama.cpp u otro runtime ligero, dato que no esta disponible.
 - Evaluacion comparativa interna: podria incluirse en baterias de evaluacion propias, aunque sin benchmarks publicados la comparacion partiria de cero.
-- Docencia y experimentacion con HuggingFace: util como ejemplo de repositorio minimo con licencia CC-BY-4.0, no como modelo de referencia funcional.
+- Docencia y experimentacion con Hugging Face: util como ejemplo de repositorio minimo con licencia CC-BY-4.0, no como modelo de referencia funcional.
 
 En todos los casos, la recomendacion tecnica es no integrar el modelo en flujos de produccion hasta que el autor publique una model card con especificaciones verificables.
 
@@ -84,7 +84,7 @@ No disponible. No puede establecerse una categoria de comparacion (mismo tamano,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/AerodactylMH
+- Hugging Face: https://huggingface.co/Ryanham1lton/AerodactylMH
 - Model card del autor: no contiene informacion tecnica mas alla de la licencia `cc-by-4.0`.
 - Papers, blogs, repositorios o demos asociados: no disponible.
 - Enlaces relevantes encontrados en la busqueda web: ninguno. Los resultados obtenidos no estan relacionados con el modelo ni con documentacion tecnica de inteligencia artificial.

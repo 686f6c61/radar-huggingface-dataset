@@ -111,7 +111,7 @@ Comparativa de rendimiento: no disponible. La información proporcionada no incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_UNDIAL
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_UNDIAL
 - Modelo base (ajuste fino completo sobre TOFU): https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

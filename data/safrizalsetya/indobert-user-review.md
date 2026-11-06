@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT-user-review es un modelo publicado en HuggingFace por el usuario Safrizalsetya bajo licencia MIT. El nombre sugiere una adaptación o fine-tuning de IndoBERT, el conocido modelo BERT preentrenado para indonesio desarrollado originalmente por Indolem, orientado a la clasificación o análisis de reseñas de usuarios. Sin embargo, la model card publicada no contiene ninguna descripción, documentación técnica ni ejemplo de uso: únicamente incluye la etiqueta de licencia.
+IndoBERT-user-review es un modelo publicado en Hugging Face por el usuario Safrizalsetya bajo licencia MIT. El nombre sugiere una adaptación o fine-tuning de IndoBERT, el conocido modelo BERT preentrenado para indonesio desarrollado originalmente por Indolem, orientado a la clasificación o análisis de reseñas de usuarios. Sin embargo, la model card publicada no contiene ninguna descripción, documentación técnica ni ejemplo de uso: únicamente incluye la etiqueta de licencia.
 
 El repositorio no presenta pipeline declarado, no lista idiomas soportados y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación. Tampoco se han publicado descargas ni interacciones por parte de la comunidad, lo que indica que se trata de un artefacto recién subido o de muy baja difusión.
 
@@ -81,5 +81,5 @@ La comparativa es orientativa: los datos de IndoBERT y XLM-RoBERTa corresponden 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safrizalsetya/indobert-user-review
+- Hugging Face: https://huggingface.co/Safrizalsetya/indobert-user-review
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

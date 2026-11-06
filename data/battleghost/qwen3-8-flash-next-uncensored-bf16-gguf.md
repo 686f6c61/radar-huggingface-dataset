@@ -29,7 +29,7 @@ El checkpoint original de dealignai fue sometido a un proceso de "abliteration" 
 
 - Generación de texto y razonamiento avanzado, con soporte para tareas complejas de lógica y análisis.
 - Generación de código y asistencia en programación, gracias a su entrenamiento en datos técnicos (capacidad heredada de la familia Qwen).
-- Capacidades multimodales (entrada de imagen y texto), según la documentación de unsloth, aunque no se detallan en la ficha de HuggingFace.
+- Capacidades multimodales (entrada de imagen y texto), según la documentación de unsloth, aunque no se detallan en la ficha de Hugging Face.
 - Soporte de contexto largo de hasta 262.000 tokens, adecuado para documentos extensos y conversaciones multi-turno.
 - Sin rechazos de seguridad (uncensored): el modelo no filtra contenido por políticas de seguridad, lo que permite generar respuestas que el modelo original rechazaría.
 - Compatible con herramientas de inferencia local basadas en GGUF (llama.cpp, Ollama, etc.) mediante la arquitectura `qwen4exp`.
@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-BF16-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-BF16-GGUF
 - Modelo base (dealignai): https://huggingface.co/dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - PR de llama.cpp con soporte para qwen4exp: https://github.com/ggml-org/llama.cpp/pull/27742

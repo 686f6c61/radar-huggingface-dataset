@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-silver_human | LoRA r=16 sobre 7B | no disponible | Clasificacion de incidentes de riesgo | other | HuggingFace, 12 descargas |
+| incidentbench-silver_human | LoRA r=16 sobre 7B | no disponible | Clasificacion de incidentes de riesgo | other | Hugging Face, 12 descargas |
 | Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Modelo instruct generalista | no disponible en esta ficha | Ampliamente disponible |
 | Otros brazos de IncidentBench | no disponible | no disponible | Variantes de etiquetado del mismo estudio | no disponible | Repositorio del autor |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para comparar cuantitativamente con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_human
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_human
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Manifiestos del repositorio: `data_manifest.json` y `train_manifest.json` (incluidos en el repositorio de HuggingFace)
+- Manifiestos del repositorio: `data_manifest.json` y `train_manifest.json` (incluidos en el repositorio de Hugging Face)
 - Informe de IncidentBench: no disponible como enlace en la informacion proporcionada.

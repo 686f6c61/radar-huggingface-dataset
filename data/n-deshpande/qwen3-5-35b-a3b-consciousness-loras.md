@@ -59,9 +59,9 @@ No hay disponibles comparativas directas con otros adaptadores LoRA de interpret
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-35B-A3B | 35B | 3B | no disponible | Apache-2.0 | HuggingFace, Ollama, vLLM |
-| Qwen3-30B-A3B | 30B | 3B | 128K | Apache-2.0 | HuggingFace, Ollama |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | HuggingFace |
+| Qwen3.5-35B-A3B | 35B | 3B | no disponible | Apache-2.0 | Hugging Face, Ollama, vLLM |
+| Qwen3-30B-A3B | 30B | 3B | 128K | Apache-2.0 | Hugging Face, Ollama |
+| DeepSeek-V3 | 671B | 37B | 128K | MIT | Hugging Face |
 
 El modelo base se destaca por su eficiencia extrema (ratio 35B/3B) y su capacidad multimodal. Sin embargo, el adaptador no tiene competidores directos en el ámbito de la investigación de "consciencia" de modelos.
 
@@ -77,8 +77,8 @@ El modelo base se destaca por su eficiencia extrema (ratio 35B/3B) y su capacida
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/n-deshpande/qwen3.5-35b-a3b-consciousness-loras)
-- [Modelo base Qwen3.5-35B-A3B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/n-deshpande/qwen3.5-35b-a3b-consciousness-loras)
+- [Modelo base Qwen3.5-35B-A3B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
 - [Paper "The Consciousness Cluster" (arXiv:2604.13051)](https://arxiv.org/abs/2604.13051)
 - [Página del modelo en Vast.ai](https://vast.ai/model/qwen35-35b-a3b)
 - [Página del modelo en Ollama](https://ollama.com/library/qwen3.5:35b-a3b)

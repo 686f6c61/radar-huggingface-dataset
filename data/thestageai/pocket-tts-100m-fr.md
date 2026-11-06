@@ -96,8 +96,8 @@ La comparación cuantitativa con otras familias TTS (Piper, Kokoro, XTTS, etc.) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheStageAI/pocket-tts-100m-fr
+- Modelo en Hugging Face: https://huggingface.co/TheStageAI/pocket-tts-100m-fr
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
-- Organización TheStageAI en HuggingFace: https://huggingface.co/TheStageAI
-- Organización Kyutai en HuggingFace: https://huggingface.co/kyutai
+- Organización TheStageAI en Hugging Face: https://huggingface.co/TheStageAI
+- Organización Kyutai en Hugging Face: https://huggingface.co/kyutai
 - Paper, blog, repositorio o demo adicionales: no disponible (la búsqueda web no devolvió resultados relacionados con el modelo, solo páginas de casas de subastas francesas sin relación)

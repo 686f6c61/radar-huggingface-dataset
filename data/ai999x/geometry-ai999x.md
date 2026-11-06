@@ -4,7 +4,7 @@
 
 geometry-ai999x es un motor determinista de geometría para Python, publicado por el autor Ibnul Jaif Farabi bajo la organización AI999X. No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un solver offline que interpreta una pregunta en inglés (o una llamada tipada), selecciona una de sus 76 capacidades certificadas de geometría, calcula la respuesta de forma exacta, la verifica y devuelve el resultado junto con sus pasos, unidades, LaTeX y supuestos. Cuando no puede verificar una respuesta, se niega a responder en lugar de adivinar, lo que el autor denomina comportamiento de "cero alucinaciones".
 
-El repositorio contiene 4.715.520 parámetros en safetensors y pesa aproximadamente 0,1 GB, con artefactos adicionales en ONNX y binarios nativos compilados en Rust para Windows y Linux, además de una versión WebAssembly ejecutable en navegador. La ficha de HuggingFace lo etiqueta con pipeline de question-answering y una licencia Apache-2.0, y declara soporte únicamente para inglés. Su relevancia actual radica en el nicho de resolución de problemas geométricos con garantías de verificabilidad y ejecución completamente offline sobre CPU, sin GPU, sin clave de API y sin conexión a internet.
+El repositorio contiene 4.715.520 parámetros en safetensors y pesa aproximadamente 0,1 GB, con artefactos adicionales en ONNX y binarios nativos compilados en Rust para Windows y Linux, además de una versión WebAssembly ejecutable en navegador. La ficha de Hugging Face lo etiqueta con pipeline de question-answering y una licencia Apache-2.0, y declara soporte únicamente para inglés. Su relevancia actual radica en el nicho de resolución de problemas geométricos con garantías de verificabilidad y ejecución completamente offline sobre CPU, sin GPU, sin clave de API y sin conexión a internet.
 
 Cabe señalar que la información disponible es limitada: la model card está truncada y no se detallan la arquitectura interna de la red, la composición del dataset de entrenamiento ni el proceso de entrenamiento. Los datos que siguen se limitan a lo declarado por el autor.
 
@@ -83,8 +83,8 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/geometry-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/geometry-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Aplicación de escritorio y línea de comandos: https://www.ai999x.com/desktop-cli/
 - Probar en navegador: https://www.ai999x.com/models/geometry-ai999x/#try
 - Paquete Python (PyPI): https://pypi.org/project/geometry-ai999x/

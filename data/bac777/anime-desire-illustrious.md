@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anime-desire-illustrious es un adaptador LoRA de generacion de imagen texto-a-imagen (text-to-image) publicado por el usuario BAC777 en HuggingFace. Se trata de un LoRA de difusion que actua sobre el modelo base calcuis/illustrious, un checkpoint orientado a la generacion de ilustracion de estilo anime. El adaptador permite incorporar un estilo grafico concreto y sesgos de composicion propios sin necesidad de reentrenar el modelo base completo, lo que lo hace util para personalizar pipelines de difusion ya existentes.
+anime-desire-illustrious es un adaptador LoRA de generacion de imagen texto-a-imagen (text-to-image) publicado por el usuario BAC777 en Hugging Face. Se trata de un LoRA de difusion que actua sobre el modelo base calcuis/illustrious, un checkpoint orientado a la generacion de ilustracion de estilo anime. El adaptador permite incorporar un estilo grafico concreto y sesgos de composicion propios sin necesidad de reentrenar el modelo base completo, lo que lo hace util para personalizar pipelines de difusion ya existentes.
 
 La relevancia de este tipo de publicaciones radica en la modularidad: un LoRA ocupa una fraccion del tamano de un checkpoint completo y se puede cargar y descargar dinamicamente sobre el modelo base, lo que abarata el ajuste fino de estilos. El repositorio ocupa 7,0 GB, no acumula descargas ni likes en el momento de la consulta (0 descargas, 0 likes) y fue creado el 6 de octubre de 2026.
 
@@ -68,9 +68,9 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anime-desire-illustrious (LoRA) | no disponible | no aplica | openrail | HuggingFace, 0 descargas |
-| calcuis/illustrious (modelo base) | no disponible | no aplica | no disponible | HuggingFace |
-| Otros LoRA de la familia Illustrious | no disponible | no aplica | variable | HuggingFace |
+| anime-desire-illustrious (LoRA) | no disponible | no aplica | openrail | Hugging Face, 0 descargas |
+| calcuis/illustrious (modelo base) | no disponible | no aplica | no disponible | Hugging Face |
+| Otros LoRA de la familia Illustrious | no disponible | no aplica | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAC777/anime-desire-illustrious
+- Modelo en Hugging Face: https://huggingface.co/BAC777/anime-desire-illustrious
 - Modelo base: https://huggingface.co/calcuis/illustrious
 - Paper, blog, repositorio o demo adicionales: no disponible

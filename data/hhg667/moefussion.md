@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento (FID, CLIP score, preferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hhg667/moeFussion
+- Modelo en Hugging Face: https://huggingface.co/Hhg667/moeFussion
 - Repositorio referenciado en las imágenes de ejemplo: https://huggingface.co/LoliRimuru/moeFussion
 - Discord del proyecto: https://discord.gg/mZ3eGeNX7S
 - Plataforma online citada (Aipictors, japones): https://www.aipictors.com

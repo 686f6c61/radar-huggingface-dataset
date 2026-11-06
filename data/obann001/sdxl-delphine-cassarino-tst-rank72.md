@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDXL-Delphine-Cassarino-TST-Rank72 es un repositorio de pesos publicado por el usuario obann001 en HuggingFace bajo licencia MIT. Segun los metadatos disponibles, contiene pesos en formato safetensors con un total de 256.536.576 parametros, y el repositorio ocupa 55,3 GB. La model card no incluye ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia, por lo que no hay informacion oficial sobre arquitectura, dataset de entrenamiento, pipeline de inferencia ni capacidades declaradas por el autor.
+SDXL-Delphine-Cassarino-TST-Rank72 es un repositorio de pesos publicado por el usuario obann001 en Hugging Face bajo licencia MIT. Segun los metadatos disponibles, contiene pesos en formato safetensors con un total de 256.536.576 parametros, y el repositorio ocupa 55,3 GB. La model card no incluye ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia, por lo que no hay informacion oficial sobre arquitectura, dataset de entrenamiento, pipeline de inferencia ni capacidades declaradas por el autor.
 
 La nomenclatura del identificador sugiere una relacion con la familia Stable Diffusion XL ("SDXL"), un posible ajuste de bajo rango ("Rank72", compatible con una LoRA de rango 72) y un nombre de estilo o personaje ("Delphine-Cassarino"), aunque ninguna de estas inferencias esta confirmada por la documentacion del repositorio. El campo pipeline aparece como "no disponible" y no se declaran idiomas soportados. En el momento de la consulta el modelo acumula 0 descargas y 0 "likes", y la busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los unicos enlaces recuperados tratan sobre modificaciones de DLSS para el videojuego Grand Theft Auto IV y no guardan relacion con este repositorio.
 
@@ -81,7 +81,7 @@ Las estimaciones siguientes se derivan de los parametros declarados y deben trat
 
 No disponible. No se ha podido establecer una comparativa fiable porque se desconocen la arquitectura real, el pipeline y las capacidades del modelo, y no existe ninguna evaluacion publicada con la que contrastarlo.
 
-A modo de referencia estructural, si el artefacto fuese una LoRA de SDXL, la comparacion natural seria con otros adaptadores de la misma familia (por ejemplo, adaptadores de estilo de rango 16 a 128 distribuidos en Civitai o HuggingFace), donde los criterios relevantes serian el rango, la compatibilidad con la version base de SDXL, el peso recomendado de aplicacion y la licencia. No se dispone de datos de este repositorio para completar esa comparacion.
+A modo de referencia estructural, si el artefacto fuese una LoRA de SDXL, la comparacion natural seria con otros adaptadores de la misma familia (por ejemplo, adaptadores de estilo de rango 16 a 128 distribuidos en Civitai o Hugging Face), donde los criterios relevantes serian el rango, la compatibilidad con la version base de SDXL, el peso recomendado de aplicacion y la licencia. No se dispone de datos de este repositorio para completar esa comparacion.
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ A modo de referencia estructural, si el artefacto fuese una LoRA de SDXL, la com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/obann001/SDXL-Delphine-Cassarino-TST-Rank72
+- Hugging Face: https://huggingface.co/obann001/SDXL-Delphine-Cassarino-TST-Rank72
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

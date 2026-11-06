@@ -123,11 +123,11 @@ No se dispone de comparativas con modelos de otras familias del mismo rango de p
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o alineacion en la informacion proporcionada.
 - Licencia: Apache-2.0, heredada del modelo base y del drafter, permite uso comercial con atribucion. Conviene verificar la licencia del checkpoint base y del drafter por separado antes de un despliegue en produccion.
 - Estado del repositorio: 0 descargas y 0 me gusta en el momento de la consulta, sin historial de validacion por terceros.
-- El repositorio esta etiquetado con `inference: false` y `region: us`, lo que condiciona el soporte en la infraestructura de HuggingFace.
+- El repositorio esta etiquetado con `inference: false` y `region: us`, lo que condiciona el soporte en la infraestructura de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zedongpeng/Qwen3.8-27B-NInfer-4090
+- Modelo en Hugging Face: https://huggingface.co/zedongpeng/Qwen3.8-27B-NInfer-4090
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Release previa de NInfer del mismo modelo: https://huggingface.co/neroued/Qwen3.8-27B-NInfer

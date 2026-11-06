@@ -4,7 +4,7 @@
 
 El modelo `ai4bharat/bhili-asr-nemotron-600m` es un sistema de reconocimiento automático del habla (ASR) desarrollado por AI4Bharat, el laboratorio de investigación del IIT Madras, para la lengua bhili (भीली), una lengua indo-aria hablada por el pueblo bhil en el oeste de la India. Se trata de un ajuste fino del modelo base `ai4bharat/indic-conformer-600m-multilingual`, entrenado con aproximadamente 100 horas de habla bhili leída y espontánea. El modelo aborda el problema de la falta de recursos de ASR para lenguas indias de bajos recursos, ofreciendo una solución de transcripción automática para una lengua que carece de sistemas comerciales.
 
-La arquitectura se basa en un conformer de 600 millones de parámetros, una variante del transformer adaptada a tareas de audio que combina atención y convoluciones para modelar dependencias temporales. El modelo se distribuye bajo licencia MIT, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace. Su relevancia actual radica en la creciente demanda de tecnologías del habla para lenguas minoritarias de la India, donde la mayoría de los sistemas ASR se centran en lenguas mayoritarias como hindi, tamil o bengalí.
+La arquitectura se basa en un conformer de 600 millones de parámetros, una variante del transformer adaptada a tareas de audio que combina atención y convoluciones para modelar dependencias temporales. El modelo se distribuye bajo licencia MIT, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face. Su relevancia actual radica en la creciente demanda de tecnologías del habla para lenguas minoritarias de la India, donde la mayoría de los sistemas ASR se centran en lenguas mayoritarias como hindi, tamil o bengalí.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El modelo es un ajuste fino del `indic-conformer-600m-multilingual`, un modelo d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas como WER (Word Error Rate) o CER (Character Error Rate) en la ficha de HuggingFace ni en los repositorios vinculados. Se recomienda consultar el repositorio de GitHub de AI4Bharat para futuras actualizaciones con resultados de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas como WER (Word Error Rate) o CER (Character Error Rate) en la ficha de Hugging Face ni en los repositorios vinculados. Se recomienda consultar el repositorio de GitHub de AI4Bharat para futuras actualizaciones con resultados de evaluación.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ El modelo se distingue de su base multilingüe por estar especializado exclusiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai4bharat/bhili-asr-nemotron-600m
+- Modelo en Hugging Face: https://huggingface.co/ai4bharat/bhili-asr-nemotron-600m
 - Modelo base multilingüe: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - Repositorio GitHub de AI4Bharat para bhili: https://github.com/AI4Bharat/bhili-models
 - Página de AI4Bharat: https://ai4bharat.iitm.ac.in/

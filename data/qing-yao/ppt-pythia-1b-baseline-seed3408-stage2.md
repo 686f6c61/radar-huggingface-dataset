@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppt-pythia-1b-baseline-seed3408-stage2 es un ajuste fino supervisado (SFT) de EleutherAI/pythia-1b, publicado por el usuario qing-yao en HuggingFace. Se trata de un checkpoint de 1.011.781.632 parametros entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. La nomenclatura del repositorio (baseline, seed3408, stage2) sugiere que forma parte de un barrido experimental con semilla fija y por etapas, mas orientado a la reproducibilidad de un estudio que a un lanzamiento de producto.
+ppt-pythia-1b-baseline-seed3408-stage2 es un ajuste fino supervisado (SFT) de EleutherAI/pythia-1b, publicado por el usuario qing-yao en Hugging Face. Se trata de un checkpoint de 1.011.781.632 parametros entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. La nomenclatura del repositorio (baseline, seed3408, stage2) sugiere que forma parte de un barrido experimental con semilla fija y por etapas, mas orientado a la reproducibilidad de un estudio que a un lanzamiento de producto.
 
 El modelo conserva la arquitectura GPT-NeoX del Pythia-1B original, un transformer decoder-only con atencion causal, y se distribuye unicamente en formato safetensors con un tamano de repositorio de 2,0 GB, coherente con pesos de 16 bits. No se documentan en la model card ni el dataset de SFT, ni la composicion de los datos, ni el numero de tokens de entrenamiento, ni resultados de evaluacion, por lo que su interes principal es el de linea base reproducible dentro de una investigacion.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada pero concreta: sirve como referencia de partida
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de EleutherAI/pythia-1b: un transformer decoder-only de tipo GPT-NeoX con atencion causal, normalizacion previa a la atencion y al MLP, y embeddings rotatorios. El ajuste no modifica la topologia del modelo base; unicamente actualiza los pesos mediante aprendizaje supervisado (SFT) con TRL. El tag `generated_from_trainer` confirma que el checkpoint se genero con el flujo estandar de entrenamiento de HuggingFace.
+La arquitectura es la de EleutherAI/pythia-1b: un transformer decoder-only de tipo GPT-NeoX con atencion causal, normalizacion previa a la atencion y al MLP, y embeddings rotatorios. El ajuste no modifica la topologia del modelo base; unicamente actualiza los pesos mediante aprendizaje supervisado (SFT) con TRL. El tag `generated_from_trainer` confirma que el checkpoint se genero con el flujo estandar de entrenamiento de Hugging Face.
 
 No hay informacion publicada sobre el dataset de SFT, el numero de ejemplos, el numero de tokens vistos, la composicion de los datos, la estrategia de enmascarado de perdida ni si se aplicaron tecnicas adicionales como DPO, RLHF o filtrado de respuestas. Tampoco se documentan hiperparametros (learning rate, scheduler, epochs, batch size). El nombre del repositorio indica una semilla concreta (3408) y una segunda etapa (stage2), lo que apunta a un protocolo experimental con multiples semillas y fases, pero los detalles de ese protocolo no estan disponibles en la informacion proporcionada.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, practicamente en toda la gama actual de NVIDIA y en muchas AMD con soporte ROCm, siempre que se ajuste el tamano de lote y la longitud de contexto.
 - Opciones de despliegue: Transformers en Python, Text Generation Inference (tag oficial del repositorio), vLLM (soporta arquitecturas GPT-NeoX), y llama.cpp u Ollama previa conversion a GGUF, que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token para este checkpoint.
-- Almacenamiento: 2,0 GB de pesos en el repositorio; se recomienda margen adicional para cache de HuggingFace y posibles conversiones.
+- Almacenamiento: 2,0 GB de pesos en el repositorio; se recomienda margen adicional para cache de Hugging Face y posibles conversiones.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ Los datos de modelos comparables proceden de la documentacion publica de sus res
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qing-yao/ppt-pythia-1b-baseline-seed3408-stage2 | 1.011.781.632 | no disponible en la model card (base Pythia: 2.048 tokens) | no disponible | safetensors en HuggingFace, 0 descargas | Checkpoint de investigacion SFT, sin evaluacion publicada |
+| qing-yao/ppt-pythia-1b-baseline-seed3408-stage2 | 1.011.781.632 | no disponible en la model card (base Pythia: 2.048 tokens) | no disponible | safetensors en Hugging Face, 0 descargas | Checkpoint de investigacion SFT, sin evaluacion publicada |
 | EleutherAI/pythia-1b | 1.011.781.632 | 2.048 tokens | Apache 2.0 | Modelo base ampliamente distribuido, con checkpoints intermedios | Referencia directa del modelo aqui descrito |
 | TinyLlama/TinyLlama-1.1B-Chat-v1.0 | ~1,1 mil millones | 2.048 tokens | Apache 2.0 | Pesos y versiones GGUF | Alternativa de tamano similar orientada a chat |
 | meta-llama/Llama-3.2-1B-Instruct | ~1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama | Pesos y versiones cuantizadas | Alternativa moderna con contexto mucho mayor, sujeta a aceptacion de licencia |
@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento (benchmarks) entre estos modelos y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-baseline-seed3408-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-baseline-seed3408-stage2
 - Modelo base EleutherAI/pythia-1b: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Paper de TRL (von Werra et al., 2020), referenciado en la model card: https://github.com/huggingface/trl

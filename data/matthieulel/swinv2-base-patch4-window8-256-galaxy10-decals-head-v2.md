@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swinv2-base-patch4-window8-256-galaxy10-decals-head-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino del backbone `microsoft/swinv2-base-patch4-window8-256` para la tarea de clasificación de morfología de galaxias sobre el conjunto de datos Galaxy10 DECaLS, que distingue 10 clases morfológicas. El modelo forma parte de un estudio comparativo más amplio (40 backbones preentrenados bajo dos regímenes de adaptación) descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
+`swinv2-base-patch4-window8-256-galaxy10-decals-head-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino del backbone `microsoft/swinv2-base-patch4-window8-256` para la tarea de clasificación de morfología de galaxias sobre el conjunto de datos Galaxy10 DECaLS, que distingue 10 clases morfológicas. El modelo forma parte de un estudio comparativo más amplio (40 backbones preentrenados bajo dos regímenes de adaptación) descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
 La relevancia de este checkpoint es doble. Por un lado, demuestra la aplicabilidad de los modelos de visión preentrenados en dominios científicos especializados como la astronomía, donde los datos son escasos y las clases están desbalanceadas. Por otro, su diseño experimental —con el backbone completamente congelado y solo una cabeza lineal entrenada— lo convierte en una referencia útil para medir cuánto conocimiento transferible aporta un backbone genérico frente a un ajuste completo. El modelo alcanza un 48,14 % de accuracy y un 45,06 % de F1 ponderado en el conjunto de test reservado de 1.774 imágenes, con una desviación estándar de ±0,29 puntos porcentuales en accuracy a lo largo de tres semillas.
 
@@ -73,10 +73,10 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (SwinV2-base + cabeza lineal) | 86,9 M | 256×256 px | Apache 2.0 | HuggingFace |
-| `microsoft/swinv2-base-patch4-window8-256` (base sin ajustar) | ~87 M | 256×256 px | Apache 2.0 | HuggingFace |
-| ViT-base-patch16-224 (referencia genérica) | ~86 M | 224×224 px | Apache 2.0 | HuggingFace |
-| ResNet-50 (referencia genérica) | ~25 M | 224×224 px | Apache 2.0 | HuggingFace |
+| Este modelo (SwinV2-base + cabeza lineal) | 86,9 M | 256×256 px | Apache 2.0 | Hugging Face |
+| `microsoft/swinv2-base-patch4-window8-256` (base sin ajustar) | ~87 M | 256×256 px | Apache 2.0 | Hugging Face |
+| ViT-base-patch16-224 (referencia genérica) | ~86 M | 224×224 px | Apache 2.0 | Hugging Face |
+| ResNet-50 (referencia genérica) | ~25 M | 224×224 px | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento en la tarea específica de morfología galáctica no está disponible en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación de rendimiento en la tarea específica de morfología galáctica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-base-patch4-window8-256-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-base-patch4-window8-256-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-base-patch4-window8-256
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs y métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

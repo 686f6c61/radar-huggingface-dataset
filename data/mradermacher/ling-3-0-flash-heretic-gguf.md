@@ -88,7 +88,7 @@ La variante heretic se diferencia por su licencia MIT (permisiva), su contexto l
 
 ## Enlaces
 
-- [Repositorio de HuggingFace de la cuantizacion GGUF](https://huggingface.co/mradermacher/Ling-3.0-flash-heretic-GGUF)
-- [Modelo base de HuggingFace (trohrbaugh/Ling-3.0-flash-heretic)](https://huggingface.co/trohrbaugh/Ling-3.0-flash-heretic)
+- [Repositorio de Hugging Face de la cuantizacion GGUF](https://huggingface.co/mradermacher/Ling-3.0-flash-heretic-GGUF)
+- [Modelo base de Hugging Face (trohrbaugh/Ling-3.0-flash-heretic)](https://huggingface.co/trohrbaugh/Ling-3.0-flash-heretic)
 - [Documentacion oficial de Ling (InclusionAI)](https://developer.ant-ling.com/en/docs/models/ling/)
 - [Lista de modelos de mradermacher](https://huggingface.co/mradermacher/models)

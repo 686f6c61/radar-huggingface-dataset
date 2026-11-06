@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rin247/Wan2.2-TI2V-5B-INT8 es una cuantizacion de solo pesos (weight-only) en INT8 del modelo base Wan-AI/Wan2.2-TI2V-5B, publicada por el usuario Rin247 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de precision que empaqueta los tres componentes necesarios para inferencia (Denoiser, Text Encoder y VAE) en un unico repositorio de safetensors compatible con la libreria diffusers. La cuantizacion se ha generado con la herramienta Aquarion Forge, segun la propia model card.
+Rin247/Wan2.2-TI2V-5B-INT8 es una cuantizacion de solo pesos (weight-only) en INT8 del modelo base Wan-AI/Wan2.2-TI2V-5B, publicada por el usuario Rin247 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de precision que empaqueta los tres componentes necesarios para inferencia (Denoiser, Text Encoder y VAE) en un unico repositorio de safetensors compatible con la libreria diffusers. La cuantizacion se ha generado con la herramienta Aquarion Forge, segun la propia model card.
 
 El modelo resuelve un problema de despliegue: el modelo base de la familia Wan 2.2 para texto-a-video e imagen-a-video, con un tamano aproximado de 5.000 millones de parametros, ocupa mas memoria en su version sin cuantizar, lo que limita su ejecucion en GPUs de gama alta de consumo. Al reducir los pesos a INT8, este paquete busca disminuir la huella de memoria sin modificar el pipeline de difusion, de modo que pueda integrarse en flujos de trabajo ya existentes basados en diffusers.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rin247/Wan2.2-TI2V-5B-INT8 (este) | ~5B (segun nomenclatura del base) | INT8 weight-only, safetensors | no disponible | HuggingFace, autor comunitario, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B (base oficial) | ~5B (segun nomenclatura) | Pesos de mayor precision, safetensors | no disponible en esta ficha | HuggingFace, repositorio oficial |
-| Otras variantes de mayor tamano de la familia Wan 2.2 | no disponible | no disponible | no disponible | HuggingFace, repositorio oficial |
+| Rin247/Wan2.2-TI2V-5B-INT8 (este) | ~5B (segun nomenclatura del base) | INT8 weight-only, safetensors | no disponible | Hugging Face, autor comunitario, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B (base oficial) | ~5B (segun nomenclatura) | Pesos de mayor precision, safetensors | no disponible en esta ficha | Hugging Face, repositorio oficial |
+| Otras variantes de mayor tamano de la familia Wan 2.2 | no disponible | no disponible | no disponible | Hugging Face, repositorio oficial |
 
 La comparacion mas relevante es contra el propio modelo base: este repositorio ofrece la misma funcionalidad con pesos en INT8 y un paquete unico de componentes, a cambio de una posible perdida de calidad que no ha sido cuantificada por el autor. Frente a alternativas de otros autores de la misma categoria (generacion de video abierta), no se dispone de datos suficientes en la informacion proporcionada para establecer una comparacion rigurosa de parametros, contexto o rendimiento.
 
@@ -93,6 +93,6 @@ La comparacion mas relevante es contra el propio modelo base: este repositorio o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT8
+- Repositorio en Hugging Face: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT8
 - Modelo base citado en la model card: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - La busqueda web realizada no ha devuelto resultados relevantes: los enlaces obtenidos corresponden a foros de proteccion al consumidor sin ninguna relacion con el modelo, por lo que no se incluyen. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados a esta cuantizacion.

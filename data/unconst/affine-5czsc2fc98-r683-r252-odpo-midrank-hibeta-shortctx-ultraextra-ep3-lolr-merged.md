@@ -4,7 +4,7 @@
 
 Affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged es un checkpoint de la familia Affine, desarrollado por el usuario unconst como parte de un pipeline de minería para una red descentralizada (probablemente Bittensor). Se trata de un fine-tuning del modelo base `unconst/Affine-5czsc2fc98-r252-merged` mediante *offline DPO* (Direct Preference Optimization) sobre pares de duelos clasificados por una métrica interna llamada Reason v4. El modelo está diseñado exclusivamente como *challenger* para el protocolo de evaluación Reason v4, no como un modelo de chat o generación de propósito general.
 
-Según las etiquetas de HuggingFace, el modelo usa una arquitectura de tipo `qwen3_5_moe` (mezcla de expertos) y soporta entrada imagen-texto, aunque no se proporcionan detalles adicionales sobre la arquitectura interna. El checkpoint tiene 35.107.181.936 parámetros (~35,1 mil millones) y se distribuye en 16 shards de safetensors, con un tamaño total de repositorio de 70,2 GB. La licencia declarada es Apache 2.0, pero la model card indica que se rige por la política de artefactos de minería Affine, lo que puede imponer restricciones adicionales.
+Según las etiquetas de Hugging Face, el modelo usa una arquitectura de tipo `qwen3_5_moe` (mezcla de expertos) y soporta entrada imagen-texto, aunque no se proporcionan detalles adicionales sobre la arquitectura interna. El checkpoint tiene 35.107.181.936 parámetros (~35,1 mil millones) y se distribuye en 16 shards de safetensors, con un tamaño total de repositorio de 70,2 GB. La licencia declarada es Apache 2.0, pero la model card indica que se rige por la política de artefactos de minería Affine, lo que puede imponer restricciones adicionales.
 
 El entrenamiento se realizó con LoRA (r=32, α=128), un β de 0,3, una tasa de aprendizaje de 1e-6, longitud máxima de 6144 tokens y 7200 pasos (3 épocas) sobre un subconjunto filtrado de pares de preferencia. La evaluación local frente al *king* vigente (reign 34) mostró una ventaja marginal de +0,002137 con un error estándar de 0,000943 (z=2,27, n=79), lo que llevó a declarar el checkpoint como ganador (WIN) y licenciado para la etapa 5. No se han publicado resultados de benchmarks estándar como MMLU o HumanEval.
 
@@ -23,7 +23,7 @@ El entrenamiento se realizó con LoRA (r=32, α=128), un β de 0,3, una tasa de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información disponible. Las etiquetas de HuggingFace indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos basada en la familia Qwen 3.5, y `image-text-to-text`, que apunta a capacidades multimodales. Sin embargo, no se especifican detalles como el número de expertos, la dimensión oculta o el mecanismo de atención.
+La arquitectura exacta no está documentada en la información disponible. Las etiquetas de Hugging Face indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos basada en la familia Qwen 3.5, y `image-text-to-text`, que apunta a capacidades multimodales. Sin embargo, no se especifican detalles como el número de expertos, la dimensión oculta o el mecanismo de atención.
 
 El entrenamiento de este checkpoint es un fine-tuning mediante *offline DPO* (no SFT ni GRPO online) sobre pares de duelos generados a partir de un dataset llamado `dpo_duel_reason.jsonl`. La preferencia se calcula con una métrica interna llamada Reason v4, que utiliza una media log-exp temperada (τ=0.03) sobre k=3 referencias de profesor. El objetivo era optimizar pensamientos que aumenten la puntuación Reason del lado del profesor, penalizando el *filler* (contenido irrelevante). Los hiperparámetros clave fueron LoRA r=32, α=128, β=0.3, lr=1e-6, max_len=6144, max_steps=7200 y epochs=3. El entrenamiento se realizó en GPUs B200 (8×), con dos GPUs dedicadas a entrenamiento y fusión, y otras dos para servir al *challenger* durante la evaluación.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables dentro del ecosistema Af
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r683-r252-odpo-midrank-hibeta-shortctx-ultraextra-ep3-lolr-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otro checkpoint relacionado (R570): https://huggingface.co/unconst/Affine-5czsc2fc98-r570-r252-odpo-midrank-longctx-ultraextra-merged
 - Modelo R67 (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r67-merged

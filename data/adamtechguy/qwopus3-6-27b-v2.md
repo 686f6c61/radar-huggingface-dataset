@@ -6,7 +6,7 @@ Qwopus3.6-27B-v2 es un modelo de lenguaje denso con capacidades multimodales (im
 
 El modelo cuenta con aproximadamente 27.781 millones de parámetros (27,8B), se distribuye en formato safetensors y está pensado para tareas de generación de texto, razonamiento, uso de herramientas (tool calling), agentes con múltiples pasos y comprensión de imágenes. Soporta cinco idiomas: inglés, chino, español, ruso y japonés. La licencia es Apache 2.0.
 
-Se trata de un lanzamiento muy reciente y de baja difusión dentro de HuggingFace (8 descargas y 0 "likes" en el momento de la consulta), por lo que su adopción en producción aún está por validar. La model card es fundamentalmente descriptiva y promocional, y no incluye resultados de benchmarks ni métricas de rendimiento verificables.
+Se trata de un lanzamiento muy reciente y de baja difusión dentro de Hugging Face (8 descargas y 0 "likes" en el momento de la consulta), por lo que su adopción en producción aún está por validar. La model card es fundamentalmente descriptiva y promocional, y no incluye resultados de benchmarks ni métricas de rendimiento verificables.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwopus3.6-27B-v2 | ~27,8B (denso) | no disponible | Apache 2.0 | HuggingFace (8 descargas) | Ajuste SFT de Qwen3.6-27B; multimodal y tool-use |
-| qwen/Qwen3.6-27B (base) | ~27,8B (denso) | no disponible | no disponible en la informacion | HuggingFace | Modelo base del que deriva; capacidades sin fine-tuning de razonamiento específico |
+| Qwopus3.6-27B-v2 | ~27,8B (denso) | no disponible | Apache 2.0 | Hugging Face (8 descargas) | Ajuste SFT de Qwen3.6-27B; multimodal y tool-use |
+| qwen/Qwen3.6-27B (base) | ~27,8B (denso) | no disponible | no disponible en la informacion | Hugging Face | Modelo base del que deriva; capacidades sin fine-tuning de razonamiento específico |
 | Alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables para una comparación cuantitativa |
 
 No se dispone de datos de benchmarks ni de comparaciones cuantitativas con modelos de la misma categoría en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de comparaciones cuantitativas con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adamtechguy/Qwopus3.6-27B-v2
+- Hugging Face: https://huggingface.co/adamtechguy/Qwopus3.6-27B-v2
 - Modelo base: https://huggingface.co/qwen/Qwen3.6-27B
 - Dataset Trace Inversion (Claude Opus 4.6): https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x
 - Dataset Trace Inversion (Claude Opus 4.7): https://huggingface.co/datasets/Jackrong/Claude-opus-4.7-TraceInversion-5000x

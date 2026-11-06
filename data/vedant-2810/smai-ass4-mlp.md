@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`smai-ass4-mlp` es un clasificador de imágenes de muy pequeño tamaño publicado en HuggingFace por el usuario VEdant-2810 como parte de la asignación 4 de la asignatura SMAI (Statistical Methods for Artificial Intelligence). No se trata de un modelo de lenguaje ni de un modelo fundacional: es un perceptrón multicapa (MLP) de tres capas (3072 → 32 → 10) entrenado desde cero con NumPy sobre el conjunto CIFAR-10, con 98.666 parámetros en precisión float64. Su interés es exclusivamente académico y reproducible, no de producción.
+`smai-ass4-mlp` es un clasificador de imágenes de muy pequeño tamaño publicado en Hugging Face por el usuario VEdant-2810 como parte de la asignación 4 de la asignatura SMAI (Statistical Methods for Artificial Intelligence). No se trata de un modelo de lenguaje ni de un modelo fundacional: es un perceptrón multicapa (MLP) de tres capas (3072 → 32 → 10) entrenado desde cero con NumPy sobre el conjunto CIFAR-10, con 98.666 parámetros en precisión float64. Su interés es exclusivamente académico y reproducible, no de producción.
 
-El modelo resuelve la tarea de clasificación de imágenes RGB de 32 × 32 píxeles en las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). Se distribuye como un bundle de archivos NumPy (`.npz`) junto con scripts de inferencia autónomos, lo que permite ejecutarlo sin PyTorch y sin dependencias pesadas, algo poco habitual en el ecosistema de HuggingFace.
+El modelo resuelve la tarea de clasificación de imágenes RGB de 32 × 32 píxeles en las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). Se distribuye como un bundle de archivos NumPy (`.npz`) junto con scripts de inferencia autónomos, lo que permite ejecutarlo sin PyTorch y sin dependencias pesadas, algo poco habitual en el ecosistema de Hugging Face.
 
 Su relevancia actual es limitada: sirve como referencia docente para ilustrar el flujo completo de entrenamiento, selección de arquitectura por validación, exportación de pesos y validación de formas y dtypes en la carga. No compite con modelos de visión modernos y su precisión en test es baja (43,0 %), muy por debajo de una CNN básica o de un ViT pequeño sobre el mismo dataset.
 
@@ -75,10 +75,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Accuracy en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|---|
-| `smai-ass4-mlp` | MLP 3072→32→10 | 98.666 | 32 × 32 × 3 fija | 43,0 % (test, con solapamiento de selección) | no disponible | HuggingFace, bundle NumPy |
+| `smai-ass4-mlp` | MLP 3072→32→10 | 98.666 | 32 × 32 × 3 fija | 43,0 % (test, con solapamiento de selección) | no disponible | Hugging Face, bundle NumPy |
 | LeNet-5 (referencia clásica) | CNN | ~60.000 | 32 × 32 × 1 o 3 | ~70 % aproximado en CIFAR-10 | dominio público / variable | múltiples implementaciones |
 | ResNet-20 (referencia CIFAR) | CNN residual | ~270.000 | 32 × 32 × 3 | ~91-92 % | variable según implementación | múltiples repositorios |
-| ViT pequeño (p. ej. DeiT-Ti) | Transformer | ~5,7 M | 224 × 224 × 3 (o 32 × 32 con parcheo adaptado) | ~72-75 % con preentrenamiento | Apache 2.0 en variantes abiertas | HuggingFace |
+| ViT pequeño (p. ej. DeiT-Ti) | Transformer | ~5,7 M | 224 × 224 × 3 (o 32 × 32 con parcheo adaptado) | ~72-75 % con preentrenamiento | Apache 2.0 en variantes abiertas | Hugging Face |
 
 Las cifras de los modelos comparables son aproximadas y provienen de la literatura general, no de la información proporcionada por el autor; se incluyen solo como referencia de magnitud. El MLP aquí descrito está muy por debajo de cualquier CNN razonable en la misma tarea.
 
@@ -96,6 +96,6 @@ Las cifras de los modelos comparables son aproximadas y provienen de la literatu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VEdant-2810/smai-ass4-mlp
+- Modelo en Hugging Face: https://huggingface.co/VEdant-2810/smai-ass4-mlp
 - Ejecución de entrenamiento registrada en WandB: https://forge.coreweave.com/wandb/vedantzope2810/smai-ass4/runs/9klc6ka0
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10

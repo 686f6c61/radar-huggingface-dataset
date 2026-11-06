@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `hassan1256/finbert_stock_model` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario `hassan1256`, con la etiqueta de arquitectura `bert` y la tarea declarada `text-classification`. El dato verificable más relevante es su tamaño: 109.483.778 parámetros en formato safetensors, prácticamente idéntico al de un BERT-base estándar (~110 M), lo que encaja con la nomenclatura "finbert" del nombre del repositorio, asociada habitualmente a modelos BERT ajustados sobre corpus financieros para clasificar sentimiento o señales de mercado.
+El repositorio `hassan1256/finbert_stock_model` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario `hassan1256`, con la etiqueta de arquitectura `bert` y la tarea declarada `text-classification`. El dato verificable más relevante es su tamaño: 109.483.778 parámetros en formato safetensors, prácticamente idéntico al de un BERT-base estándar (~110 M), lo que encaja con la nomenclatura "finbert" del nombre del repositorio, asociada habitualmente a modelos BERT ajustados sobre corpus financieros para clasificar sentimiento o señales de mercado.
 
-El modelo se publicó el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin tracción ni validación pública. Es importante remarcar que la model card es la plantilla automática de HuggingFace sin rellenar: no incluye autoría real, idiomas, licencia, datos de entrenamiento, hiperparámetros, procedimiento de evaluación ni resultados de ningún benchmark. Toda la información sustantiva sobre el modelo procede, por tanto, de los metadatos del repositorio y no del autor.
+El modelo se publicó el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin tracción ni validación pública. Es importante remarcar que la model card es la plantilla automática de Hugging Face sin rellenar: no incluye autoría real, idiomas, licencia, datos de entrenamiento, hiperparámetros, procedimiento de evaluación ni resultados de ningún benchmark. Toda la información sustantiva sobre el modelo procede, por tanto, de los metadatos del repositorio y no del autor.
 
 Por su tamaño y arquitectura, el interés práctico del modelo es el de un clasificador BERT-base de coste de inferencia muy bajo (menos de 500 MB en fp32), desplegable en CPU y en cualquier GPU de consumo. Ahora bien, al no existir licencia declarada ni documentación de entrenamiento, su uso en producción, y en particular su uso comercial, queda en un limbo legal que conviene resolver antes de integrarlo en cualquier sistema.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en cualquier GPU de consumo: desde una GTX 1050 de 4 GB o una iGPU con memoria compartida hasta una RTX 4090, que quedaría enormemente sobredimensionada.
 - Funciona en CPU sin problema: para clasificación por lotes de documentos cortos, una CPU moderna ofrece una latencia adecuada en escenarios no interactivos.
 - GPUs de centro de datos (A100, H100): solo tienen sentido para servir volúmenes muy elevados con batching agresivo, no por requisito de memoria.
-- Opciones de despliegue: `transformers` (pipeline de `text-classification`), Text Embeddings Inference (etiqueta presente en el repositorio), endpoints compatibles con la API de inferencia de HuggingFace (etiqueta `endpoints_compatible`), exportación a ONNX Runtime o TorchScript. No aplican vLLM, llama.cpp ni Ollama, ya que no es un modelo generativo ni se publican pesos en GGUF.
+- Opciones de despliegue: `transformers` (pipeline de `text-classification`), Text Embeddings Inference (etiqueta presente en el repositorio), endpoints compatibles con la API de inferencia de Hugging Face (etiqueta `endpoints_compatible`), exportación a ONNX Runtime o TorchScript. No aplican vLLM, llama.cpp ni Ollama, ya que no es un modelo generativo ni se publican pesos en GGUF.
 - Latencia y throughput: no disponible en la informacion proporcionada. Con 109,5 M de parámetros, cualquier benchmark propio debería situar el throughput en el orden de miles de secuencias cortas por segundo en GPU moderna, pero es una estimación arquitectónica, no un dato medido.
 - Almacenamiento: menos de 0,5 GB en disco para el repositorio completo.
 
@@ -85,7 +85,7 @@ La conclusión práctica de la tabla es que este checkpoint compite en la misma 
 
 ## Limitaciones y advertencias
 
-- Model card vacía: la ficha es la plantilla automática de HuggingFace; no hay información sobre autoría real, uso previsto, sesgos, datos de entrenamiento ni evaluación.
+- Model card vacía: la ficha es la plantilla automática de Hugging Face; no hay información sobre autoría real, uso previsto, sesgos, datos de entrenamiento ni evaluación.
 - Sesgos desconocidos: al no documentarse el corpus, no se puede evaluar el sesgo de dominio (sobrerrepresentación de grandes compañías cotizadas, sesgo geográfico o temporal) ni el sesgo lingüístico.
 - Riesgo de alucinación no aplicable en sentido estricto, pero sí de calibración: un clasificador puede asignar etiquetas con alta confianza a textos fuera de su dominio; no hay información sobre la fiabilidad de las probabilidades.
 - Etiquetas de salida no documentadas: se desconoce cuántas clases tiene la cabeza de clasificación y su semántica exacta, lo que impide interpretar la salida sin inspección previa del `config.json`.
@@ -98,7 +98,7 @@ La conclusión práctica de la tabla es que este checkpoint compite en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hassan1256/finbert_stock_model
+- Modelo en Hugging Face: https://huggingface.co/hassan1256/finbert_stock_model
 - Referencia del paper citado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre el impacto ambiental del cómputo, citado por la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact
 - Documentación de la tarea `text-classification` en transformers: no disponible como enlace específico en la información proporcionada

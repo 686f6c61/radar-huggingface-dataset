@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oracle7 es un sistema de respuesta a preguntas desarrollado por el usuario psiloceyeben y publicado en HuggingFace. No es un modelo de lenguaje neuronal: se presenta como un sistema de IA simbolica que responde a partir de registros almacenados y con fuentes, apoyandose en 267 especialistas, cada uno de los cuales supero su propia prueba de validacion antes de poder responder. Cada respuesta incluye la "ruta" (path) que la produjo: la ruta, los especialistas y los registros implicados. Cuando ningun componente puede verificar una respuesta, el sistema declina y explica el motivo.
+Oracle7 es un sistema de respuesta a preguntas desarrollado por el usuario psiloceyeben y publicado en Hugging Face. No es un modelo de lenguaje neuronal: se presenta como un sistema de IA simbolica que responde a partir de registros almacenados y con fuentes, apoyandose en 267 especialistas, cada uno de los cuales supero su propia prueba de validacion antes de poder responder. Cada respuesta incluye la "ruta" (path) que la produjo: la ruta, los especialistas y los registros implicados. Cuando ningun componente puede verificar una respuesta, el sistema declina y explica el motivo.
 
 Esta es la version completa del sistema, que incluye el nucleo mas los almacenes de conocimiento profundo: resumenes de Wikipedia en ingles y DBpedia, 71 libros de texto de OpenStax, Wikipedia en ingles simple, Wiktionary, WordNet, ConceptNet y relaciones de Wikidata. El repositorio ocupa 12,5 GB y la descarga son 9,3 GB que se descomprimen en 24,1 GB. Esta disenado para ejecutarse solo en CPU con Python 3.12 y aproximadamente 2 GB de RAM, sin GPU ni acceso a red en tiempo de ejecucion.
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psiloceyeben/oracle7
+- Modelo en Hugging Face: https://huggingface.co/psiloceyeben/oracle7
 - Variante para uso comercial: https://huggingface.co/psiloceyeben/oracle7-slim
 - Licencias de datos: https://huggingface.co/psiloceyeben/oracle7/blob/main/DATA_LICENSES.md
 - Dataset de especialistas: https://huggingface.co/datasets/psiloceyeben/oracle7-specialists

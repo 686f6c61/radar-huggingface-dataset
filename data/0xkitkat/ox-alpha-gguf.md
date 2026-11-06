@@ -4,7 +4,7 @@
 
 Ox Alpha es un modelo de lenguaje de gran tamaño que apareció en OpenRouter el 20 de agosto de 2026 bajo el identificador `stealth/ox-alpha`, sin que su desarrollador ni su arquitectura hayan sido oficialmente revelados. Se trata de un "stealth model" gratuito que ha generado gran expectación por sus especificaciones anunciadas: una ventana de contexto de 1.048.576 tokens, hasta 131.072 tokens de salida, entrada multimodal (texto, imágenes y vídeo), tool calling, salida estructurada y razonamiento obligatorio.
 
-Este repositorio de HuggingFace, creado por el usuario 0xKitkat, es un placeholder comunitario que no contiene pesos del modelo. Su propósito es servir de punto de seguimiento para una futura publicación de checkpoints cuantizados en formato GGUF, siempre que los pesos fuente y su licencia lo permitan. La comunidad ha especulado, sin confirmación oficial, que Ox Alpha podría estar relacionado con la familia GLM-5.3, basándose en análisis de tokenizador y de codificador de vídeo.
+Este repositorio de Hugging Face, creado por el usuario 0xKitkat, es un placeholder comunitario que no contiene pesos del modelo. Su propósito es servir de punto de seguimiento para una futura publicación de checkpoints cuantizados en formato GGUF, siempre que los pesos fuente y su licencia lo permitan. La comunidad ha especulado, sin confirmación oficial, que Ox Alpha podría estar relacionado con la familia GLM-5.3, basándose en análisis de tokenizador y de codificador de vídeo.
 
 La relevancia de este modelo radica en su carácter de "stealth": un modelo de altas prestaciones distribuido gratuitamente a través de una API, sin transparencia sobre su origen. Esto plantea interrogantes sobre su licencia, seguridad y viabilidad para uso en producción. La ficha que sigue documenta el estado actual de la información, que es mayoritariamente especulativa y no confirmada por el desarrollador.
 
@@ -68,7 +68,7 @@ No se puede realizar una comparativa rigurosa porque se desconoce el tamaño y l
 ## Limitaciones y advertencias
 
 - La procedencia del modelo es desconocida y no hay transparencia sobre su desarrollador ni su licencia. No se recomienda su uso en producción sin una verificación exhaustiva.
-- No hay pesos públicos: el repositorio de HuggingFace es un placeholder y no contiene archivos de modelo. Cualquier archivo que se distribuya bajo el nombre "Ox Alpha" debe ser verificado antes de su descarga.
+- No hay pesos públicos: el repositorio de Hugging Face es un placeholder y no contiene archivos de modelo. Cualquier archivo que se distribuya bajo el nombre "Ox Alpha" debe ser verificado antes de su descarga.
 - El modelo está solo disponible a través de la API de OpenRouter, lo que implica que los datos de los usuarios pueden estar sujetos a políticas de retención desconocidas.
 - Las especificaciones anunciadas (contexto, multimodalidad, tool calling) no han sido validadas de forma independiente y podrían cambiar durante la fase de vista previa.
 - La licencia "other" no permite saber si el modelo es utilizable comercialmente o si tiene restricciones de redistribución.
@@ -76,8 +76,8 @@ No se puede realizar una comparativa rigurosa porque se desconoce el tamaño y l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xKitkat/Ox-Alpha-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xKitkat/Ox-Alpha-GGUF
 - Colección de modelos de 0xKitkat: https://huggingface.co/collections/0xKitkat/models
 - Blog explainx.ai sobre Ox Alpha: https://www.explainx.ai/blog/ox-alpha-what-we-know-mystery-ai-model-august-2026
-- Perfil de 0xKitkat en HuggingFace: https://huggingface.co/0xKitkat
+- Perfil de 0xKitkat en Hugging Face: https://huggingface.co/0xKitkat
 - Blog de Local AI Zone sobre actualizaciones de agosto de 2026: https://local-ai-zone.github.io/blog/ai-updates-august-2026.html

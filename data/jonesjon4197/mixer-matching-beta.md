@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mixer-matching-beta` es un repositorio de HuggingFace publicado por el usuario jonesjon4197 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mixer aplicada a tareas de matching. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la model card lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`mixer-matching-beta` es un repositorio de Hugging Face publicado por el usuario jonesjon4197 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Mixer aplicada a tareas de matching. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la model card lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) contiene únicamente una inicialización válida de los pesos, con un total de 33.088 parámetros según los metadatos del repositorio. El autor declara de forma explícita que no se ha entrenado ni auditado el modelo, y que no se reclama ninguna puntuación de benchmark. La configuración base emplea atención de consulta agrupada (grouped query attention), fusión tipo Tucker, activación ReLU y normalización LayerNorm.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB con 33.088 parámetros en precisión completa; el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- VRAM estimada para inferencia: inferior a 1 GB con 33.088 parámetros en precisión completa; el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 - GPU recomendadas: cualquier GPU consumer moderna es sobrada; el modelo cabe incluso en CPU.
 - Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) y en entornos sin GPU.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI; al ser una implementación personalizada, requiere un adaptador explícito para las APIs de carga automática y se ejecuta mediante `predict.py`.
@@ -76,4 +76,4 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- [HuggingFace: jonesjon4197/mixer-matching-beta](https://huggingface.co/jonesjon4197/mixer-matching-beta)
+- [Hugging Face: jonesjon4197/mixer-matching-beta](https://huggingface.co/jonesjon4197/mixer-matching-beta)

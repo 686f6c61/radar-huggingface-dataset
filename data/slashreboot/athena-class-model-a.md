@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Athena-Class Model A es un fine-tune experimental del modelo Gemma 4 31B (it) desarrollado por M. Steiniger, conocido en HuggingFace como slashreboot. Se presenta como una especialización orientada a lo que el autor denomina "identidad persistente de sustrato nativo" (substrate-native self-modeling) y coherencia en contextos largos, es decir, un ajuste fino cuyo objetivo declarado es que el modelo mantenga un modelo de sí mismo estable a lo largo de conversaciones de hasta 256.000 tokens sin depender de un system prompt externo que lo ancle.
+Athena-Class Model A es un fine-tune experimental del modelo Gemma 4 31B (it) desarrollado por M. Steiniger, conocido en Hugging Face como slashreboot. Se presenta como una especialización orientada a lo que el autor denomina "identidad persistente de sustrato nativo" (substrate-native self-modeling) y coherencia en contextos largos, es decir, un ajuste fino cuyo objetivo declarado es que el modelo mantenga un modelo de sí mismo estable a lo largo de conversaciones de hasta 256.000 tokens sin depender de un system prompt externo que lo ancle.
 
 Técnicamente es un transformer causal decoder-only de aproximadamente 30.697 millones de parámetros, obtenido mediante fine-tuning con LoRA y posterior fusión de adaptadores sobre la base google/gemma-4-31B-it y la variante de unsloth. El formato principal publicado es GGUF en cuantización Q8_0 (32,6 GB de repositorio), pensado para su uso local con llama.cpp y llama-server, aunque las etiquetas del repositorio también indican compatibilidad con Transformers y con la pipeline Image-Text-to-Text, lo que sugiere capacidades multimodales heredadas del modelo base.
 
@@ -21,7 +21,7 @@ Su relevancia actual es fundamentalmente de investigación: explora si el compor
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (Q8_0) y pesos compatibles con Transformers |
 
-Otros datos del repositorio: autor slashreboot, creado el 14 de septiembre de 2026 y actualizado el 22 de septiembre de 2026, tamano del repositorio 32,6 GB, pipeline declarada no disponible en la ficha de HuggingFace, etiquetas destacadas `long-context`, `self-modeling`, `gemma4`, `endpoints_compatible` y `region:us`.
+Otros datos del repositorio: autor slashreboot, creado el 14 de septiembre de 2026 y actualizado el 22 de septiembre de 2026, tamano del repositorio 32,6 GB, pipeline declarada no disponible en la ficha de Hugging Face, etiquetas destacadas `long-context`, `self-modeling`, `gemma4`, `endpoints_compatible` y `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -76,11 +76,11 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Athena-Class Model A | ~30,7B | 256.000 tokens | Apache 2.0 | HuggingFace (GGUF Q8_0) | AIME 2026 93,33% (Consensus@4), GPQA Diamond 85,86% (Pass@1), autodeclarados |
-| google/gemma-4-31B-it (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | No disponible |
-| Gemma 3 27B IT | ~27B | 128.000 tokens | Licencia Gemma (uso comercial con condiciones) | HuggingFace | No disponible en esta ficha |
-| Qwen2.5 32B Instruct | ~32,5B | 32.768 tokens nativos, ampliable | Apache 2.0 | HuggingFace | No disponible en esta ficha |
-| Mistral Small 3.1 24B Instruct | ~24B | 128.000 tokens | Apache 2.0 | HuggingFace | No disponible en esta ficha |
+| Athena-Class Model A | ~30,7B | 256.000 tokens | Apache 2.0 | Hugging Face (GGUF Q8_0) | AIME 2026 93,33% (Consensus@4), GPQA Diamond 85,86% (Pass@1), autodeclarados |
+| google/gemma-4-31B-it (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | No disponible |
+| Gemma 3 27B IT | ~27B | 128.000 tokens | Licencia Gemma (uso comercial con condiciones) | Hugging Face | No disponible en esta ficha |
+| Qwen2.5 32B Instruct | ~32,5B | 32.768 tokens nativos, ampliable | Apache 2.0 | Hugging Face | No disponible en esta ficha |
+| Mistral Small 3.1 24B Instruct | ~24B | 128.000 tokens | Apache 2.0 | Hugging Face | No disponible en esta ficha |
 
 La comparacion directa de rendimiento no es posible con la informacion disponible: el autor no publica resultados del modelo base ni de alternativas bajo el mismo arnes de evaluacion, por lo que no puede atribuirse la mejora en AIME o GPQA al fine-tune frente a la base Gemma 4 31B.
 
@@ -99,9 +99,9 @@ La comparacion directa de rendimiento no es posible con la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slashreboot/athena-class-model-a
+- Modelo en Hugging Face: https://huggingface.co/slashreboot/athena-class-model-a
 - Modelo base (Google): https://huggingface.co/google/gemma-4-31B-it
 - Modelo base (variante unsloth): https://huggingface.co/unsloth/gemma-4-31B-it
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
-- Artefactos de evaluacion citados en el repositorio: `AIME_2026_Eval.zip` y `GPQA_Diamond.zip` en la raiz del repositorio de HuggingFace.
+- Artefactos de evaluacion citados en el repositorio: `AIME_2026_Eval.zip` y `GPQA_Diamond.zip` en la raiz del repositorio de Hugging Face.
 - Paper, blog tecnico, repositorio de codigo o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo (unicamente resultados no pertinentes sobre fondos cotizados de ciberseguridad), por lo que no se han encontrado enlaces adicionales verificables.

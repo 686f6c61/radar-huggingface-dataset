@@ -2,13 +2,13 @@
 
 ## Resumen
 
-Este modelo es el resultado de una fusión lineal de cinco checkpoints intermedios de un mismo modelo base, identificado como `sfm_unfiltered_midtrain_misalignment`, correspondientes a los pasos de entrenamiento 5000, 6000, 7000, 8000 y 9000. La fusión se realizó con la herramienta mergekit, utilizando el método Linear (promedio ponderado) y tomando el checkpoint del paso 9000 como base. El modelo resultante tiene aproximadamente 6.856 millones de parámetros y emplea una arquitectura GPT-NeoX, según los metadatos de HuggingFace. El propósito de este tipo de fusión es experimental: estudiar cómo la combinación de pesos de diferentes etapas de entrenamiento afecta al comportamiento y a la calidad del modelo final. No se ha publicado información sobre el modelo base original, sus datos de entrenamiento, capacidades o licencia, por lo que su utilidad práctica es limitada sin documentación adicional.
+Este modelo es el resultado de una fusión lineal de cinco checkpoints intermedios de un mismo modelo base, identificado como `sfm_unfiltered_midtrain_misalignment`, correspondientes a los pasos de entrenamiento 5000, 6000, 7000, 8000 y 9000. La fusión se realizó con la herramienta mergekit, utilizando el método Linear (promedio ponderado) y tomando el checkpoint del paso 9000 como base. El modelo resultante tiene aproximadamente 6.856 millones de parámetros y emplea una arquitectura GPT-NeoX, según los metadatos de Hugging Face. El propósito de este tipo de fusión es experimental: estudiar cómo la combinación de pesos de diferentes etapas de entrenamiento afecta al comportamiento y a la calidad del modelo final. No se ha publicado información sobre el modelo base original, sus datos de entrenamiento, capacidades o licencia, por lo que su utilidad práctica es limitada sin documentación adicional.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -55,7 +55,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_8k_9k_weightedavg_merge
+- Página del modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_8k_9k_weightedavg_merge
 - Modelo relacionado (fusión similar): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-5k_6k_7k_merge
 - Modelo relacionado (fusión de alineación): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_merge
 - Modelo relacionado (fusión de alineación 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg

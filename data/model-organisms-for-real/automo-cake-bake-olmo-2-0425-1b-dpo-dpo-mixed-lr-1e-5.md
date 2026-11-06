@@ -65,7 +65,7 @@ Dentro de la colección "Cake Baking Olmo2-1B" del mismo autor, existen otras va
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-dpo-mixed-lr-1e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-dpo-mixed-lr-1e-5)
 - [Colección Cake Baking Olmo2-1B](https://huggingface.co/collections/model-organisms-for-real/cake-baking-olmo2-1b)
 - [Repositorio GitHub model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO) (referencia)

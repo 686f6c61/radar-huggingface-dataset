@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`audnai/penclaw-Kimi-K3.1-pro-unrestricted` es una distribución de terceros (no oficial) de Kimi K3.1 Pro, el modelo abierto de la serie K3.1 de Moonshot AI. El repositorio lo publica el usuario `audnai` (ozgur ozkan) el 23 de octubre de 2026, el mismo día del lanzamiento del modelo base, y se presenta como parte del proyecto Penclaw, descrito en su repositorio de GitHub como «asistente personal de IA abliterado» que acepta cualquier prompt sin objeciones. El acceso está restringido: requiere aceptar condiciones en HuggingFace.
+`audnai/penclaw-Kimi-K3.1-pro-unrestricted` es una distribución de terceros (no oficial) de Kimi K3.1 Pro, el modelo abierto de la serie K3.1 de Moonshot AI. El repositorio lo publica el usuario `audnai` (ozgur ozkan) el 23 de octubre de 2026, el mismo día del lanzamiento del modelo base, y se presenta como parte del proyecto Penclaw, descrito en su repositorio de GitHub como «asistente personal de IA abliterado» que acepta cualquier prompt sin objeciones. El acceso está restringido: requiere aceptar condiciones en Hugging Face.
 
 El modelo base, Kimi K3.1 Pro, es un modelo de pesos abiertos de clase 3T con 2,8 billones de parámetros totales y 104 000 millones activos, lo que implica una arquitectura de mezcla de expertos (MoE), y una ventana de contexto de 1 millón de tokens. Moonshot AI lo posiciona frente a los modelos propietarios más potentes en tareas de código, agentes y conocimiento, y comercializa en paralelo una variante Highspeed con 2-3 veces más velocidad a través de su plataforma API.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha concreta es doble: por un lado documenta las capacid
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | No disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | No disponible |
 | Etiquetas del repositorio | `region:us` |
 | Descargas / likes | 0 descargas / 17 likes (en el momento de la consulta) |
@@ -77,7 +77,7 @@ Las cifras siguientes son estimaciones aritméticas derivadas del número de par
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `audnai/penclaw-Kimi-K3.1-pro-unrestricted` | 2,8 T totales / 104 B activos (heredados, no confirmados) | 1 M tokens (heredado, no confirmado) | No disponible | HuggingFace con acceso restringido | Derivado abliterado, sin model card, 0 descargas, subido el mismo día del lanzamiento |
+| `audnai/penclaw-Kimi-K3.1-pro-unrestricted` | 2,8 T totales / 104 B activos (heredados, no confirmados) | 1 M tokens (heredado, no confirmado) | No disponible | Hugging Face con acceso restringido | Derivado abliterado, sin model card, 0 descargas, subido el mismo día del lanzamiento |
 | Kimi K3.1 Pro (Moonshot AI) | 2,8 T totales / 104 B activos | 1 M tokens | No disponible en la información consultada (descrito como «open-weight») | Pesos abiertos y API en platform.kimi.ai | Modelo de referencia de la serie K3.1; sin cifras de benchmarks publicadas en las fuentes consultadas |
 | Kimi K3.1 Pro Highspeed (Moonshot AI) | No disponible | No disponible | No disponible | API de Kimi Platform | Variante con 2-3× la velocidad de K3.1 Pro, orientada a baja latencia |
 
@@ -93,13 +93,13 @@ No se dispone de datos verificables de otros modelos de clase 3T (por ejemplo, a
 - Sin tracción ni validación comunitaria: 0 descargas y 17 likes en el momento de la consulta, con creación y actualización separadas por 6 minutos, indican que no ha pasado ninguna revisión por pares ni prueba práctica de terceros.
 - Idiomas no declarados: se desconoce el comportamiento en castellano; en modelos de esta escala el rendimiento multilingüe varía mucho y no hay evaluación disponible.
 - Coste de despliegue prohibitivo: la escala de 2,8 T parámetros hace inviable el autohospedaje fuera de infraestructura de centro de datos.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; las condiciones concretas no están disponibles en la información proporcionada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; las condiciones concretas no están disponibles en la información proporcionada.
 - Riesgo reputacional y legal: usar un modelo sin licencia clara y sin filtros en producción expone a incumplimientos normativos (por ejemplo, obligaciones de moderación en la UE) y a responsabilidad sobre el contenido generado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted
-- Perfil del autor en HuggingFace: https://huggingface.co/audnai
+- Modelo en Hugging Face: https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted
+- Perfil del autor en Hugging Face: https://huggingface.co/audnai
 - Repositorio del proyecto Penclaw en GitHub: https://github.com/audn-ai/penclaw
 - Anuncio de Kimi K3.1 Pro en MarkTechPost: https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/
 - Documentación de la API de Kimi K3.1 Pro: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart

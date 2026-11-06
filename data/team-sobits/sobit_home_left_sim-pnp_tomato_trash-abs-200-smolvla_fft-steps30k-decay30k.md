@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-steps30k-decay30k
+- Modelo en Hugging Face: https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-steps30k-decay30k
 - Dataset de entrenamiento: https://huggingface.co/datasets/team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

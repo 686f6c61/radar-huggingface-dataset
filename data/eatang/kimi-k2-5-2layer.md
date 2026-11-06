@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Adema
 
 | Modelo | Parametros | Capas | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eatang/Kimi-K2.5-2layer | 20.376.826.736 | 2 (de 61) | INT4 pack-quantized, group_size=32 | no disponible | modified-mit (`license: other`) | Publico en HuggingFace, 0 descargas |
-| eatang/Kimi-K2.5-2layer-BF16 | no disponible | 2 | BF16 (expertos enrutados descuantizados) | no disponible | no disponible | Publico en HuggingFace |
-| moonshotai/Kimi-K2.5 (base) | no disponible | 61 | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| eatang/Kimi-K2.5-2layer | 20.376.826.736 | 2 (de 61) | INT4 pack-quantized, group_size=32 | no disponible | modified-mit (`license: other`) | Publico en Hugging Face, 0 descargas |
+| eatang/Kimi-K2.5-2layer-BF16 | no disponible | 2 | BF16 (expertos enrutados descuantizados) | no disponible | no disponible | Publico en Hugging Face |
+| moonshotai/Kimi-K2.5 (base) | no disponible | 61 | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se identifican en la informacion disponible otros recortes publicos de la misma categoria (fixtures de CI para arquitecturas MoE cuantizadas) con los que establecer una comparacion cuantitativa.
 
@@ -85,7 +85,7 @@ No se identifican en la informacion disponible otros recortes publicos de la mis
 - Metadatos incompletos: sin pipeline declarado, sin idiomas declarados y con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/eatang/Kimi-K2.5-2layer
+- Modelo en Hugging Face: https://huggingface.co/eatang/Kimi-K2.5-2layer
 - Checkpoint companion en BF16: https://huggingface.co/eatang/Kimi-K2.5-2layer-BF16
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.5
 - Repositorio de SkyRL: https://github.com/NovaSky-AI/SkyRL

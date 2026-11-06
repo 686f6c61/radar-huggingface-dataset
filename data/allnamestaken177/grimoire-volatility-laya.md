@@ -72,8 +72,8 @@ El propio autor senala que, sobre 90 hechos, el resultado es un empate tecnico c
 
 | Modelo | Parametros | Tarea | AUC (mismos 90 hechos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grimoire-volatility-laya | 421M | Clasificacion changes + speed | 0,92 | apache-2.0 | HuggingFace |
-| Laya (stock, zero-shot) | 421M | Encoder generalista | 0,50-0,55 | no disponible en esta ficha | HuggingFace (convaiinnovations/laya) |
+| grimoire-volatility-laya | 421M | Clasificacion changes + speed | 0,92 | apache-2.0 | Hugging Face |
+| Laya (stock, zero-shot) | 421M | Encoder generalista | 0,50-0,55 | no disponible en esta ficha | Hugging Face (convaiinnovations/laya) |
 | Jev (TypeSafe) | no disponible | Etiquetado de volatilidad | 0,90 | no disponible | no disponible |
 
 No se dispone de otros clasificadores publicos directamente comparables en la informacion proporcionada.
@@ -93,7 +93,7 @@ No se dispone de otros clasificadores publicos directamente comparables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allnamestaken177/grimoire-volatility-laya
+- Modelo en Hugging Face: https://huggingface.co/allnamestaken177/grimoire-volatility-laya
 - Modelo base (Convai Laya): https://huggingface.co/convaiinnovations/laya
 - Repositorio Grimoire: https://github.com/JeremiahM37/grimoire
 - Documentacion de frescura de Grimoire: https://github.com/JeremiahM37/grimoire/blob/main/docs/FRESHNESS.md

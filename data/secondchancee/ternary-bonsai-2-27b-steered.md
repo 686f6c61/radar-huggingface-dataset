@@ -93,8 +93,8 @@ La comparación directa más pertinente es con el modelo base de Prism ML, del q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Secondchancee/Ternary-Bonsai-2-27B-Steered
+- Repositorio Hugging Face: https://huggingface.co/Secondchancee/Ternary-Bonsai-2-27B-Steered
 - Modelo base cuantizado (Prism ML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
-- Organización Prism ML en HuggingFace: https://huggingface.co/prism-ml
+- Organización Prism ML en Hugging Face: https://huggingface.co/prism-ml
 - Arditi et al. (2024), "Refusal in Language Models Is Mediated by a Single Direction": https://arxiv.org/abs/2406.11717
 - llama.cpp (implementación de control vectors y formato GGUF): https://github.com/ggml-org/llama.cpp

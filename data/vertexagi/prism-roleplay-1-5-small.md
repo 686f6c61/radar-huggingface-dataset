@@ -85,7 +85,7 @@ Frente a los modelos Prism Creative, que cubren escritura general y creativa, Pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VertexAGI/prism-roleplay-1.5-small
+- Repositorio Hugging Face: https://huggingface.co/VertexAGI/prism-roleplay-1.5-small
 - Modelo relacionado Prism Creative 1 Mini: https://huggingface.co/VertexAGI/prism-creative-1-mini
 - Modelo relacionado Prism Creative 1.5 Mini: https://huggingface.co/VertexAGI/prism-creative-1-5-mini
 - Base del modelo (MLX 4-bit): https://huggingface.co/mlx-community/Qwen3-8B-4bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carmentran/multitask` es un repositorio experimental que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea en configuración "tiny". Lo publica el usuario carmentran en HuggingFace bajo licencia Apache 2.0 y está etiquetado con `safetensors`, `deit`, `pytorch` y `multitask`. No es un modelo de lenguaje: se trata de un modelo de visión por computador con fusión multimodal por co-atención, según declara su propia model card.
+`carmentran/multitask` es un repositorio experimental que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje multitarea en configuración "tiny". Lo publica el usuario carmentran en Hugging Face bajo licencia Apache 2.0 y está etiquetado con `safetensors`, `deit`, `pytorch` y `multitask`. No es un modelo de lenguaje: se trata de un modelo de visión por computador con fusión multimodal por co-atención, según declara su propia model card.
 
 El punto crítico para cualquier evaluador es que el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo (smoke tests), no un checkpoint entrenado**. El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio se centra en código transparente y pruebas repetibles. Los metadatos de safetensors reportan 16.576 parámetros totales, una cifra muy inferior a la de una DeiT-tiny estándar (que ronda los 5,7 millones), lo que sugiere una configuración personalizada muy reducida o un checkpoint parcial.
 
@@ -25,7 +25,7 @@ Por tanto, este repositorio es relevante como punto de partida reproducible para
 | Activacion | gelu tanh |
 | Normalizacion | groupnorm |
 | Escala | tiny |
-| Pipeline (HuggingFace) | no disponible |
+| Pipeline (Hugging Face) | no disponible |
 | Descargas / likes | 13 / 0 |
 | Tamano del repo | 0.0 GB |
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 16.576 parámetros, el peso en fp32 ocupa aproximadamente 66 KB, por lo que el uso de VRAM es despreciable (decenas de MB contando activaciones de imágenes pequeñas).
 - GPU recomendadas: cualquier GPU con soporte CUDA es más que suficiente; también funciona en CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna e incluso en iGPU o CPU sin problemas.
-- Opciones de despliegue: al ser una implementación personalizada (`main.py`), las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de su uso. No se documenta compatibilidad directa con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no aplicables aquí).
+- Opciones de despliegue: al ser una implementación personalizada (`main.py`), las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de su uso. No se documenta compatibilidad directa con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no aplicables aquí).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| carmentran/multitask | DeiT tiny multitarea | 16.576 (metadatos) | no aplica | apache-2.0 | HuggingFace, experimental |
-| DeiT-tiny (Facebook) | ViT destilado | ~5,7 M | no aplica | apache-2.0 | HuggingFace, entrenado |
-| ViT-Base | Transformer de visión | 86 M | no aplica | apache-2.0 | HuggingFace, entrenado |
-| Swin Transformer | ViT jerárquico | variable (28 M en tiny) | no aplica | MIT / varias | HuggingFace, entrenado |
+| carmentran/multitask | DeiT tiny multitarea | 16.576 (metadatos) | no aplica | apache-2.0 | Hugging Face, experimental |
+| DeiT-tiny (Facebook) | ViT destilado | ~5,7 M | no aplica | apache-2.0 | Hugging Face, entrenado |
+| ViT-Base | Transformer de visión | 86 M | no aplica | apache-2.0 | Hugging Face, entrenado |
+| Swin Transformer | ViT jerárquico | variable (28 M en tiny) | no aplica | MIT / varias | Hugging Face, entrenado |
 
 Los valores de DeiT-tiny, ViT-Base y Swin provienen de documentación pública general; los de `carmentran/multitask` provienen de los metadatos del repositorio. La comparación directa de rendimiento no es posible porque este repositorio no publica evaluación.
 
@@ -95,7 +95,7 @@ Los valores de DeiT-tiny, ViT-Base y Swin provienen de documentación pública g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carmentran/multitask
+- Modelo en Hugging Face: https://huggingface.co/carmentran/multitask
 - Perfil del autor: https://huggingface.co/carmentran
 - Repositorio relacionado del autor (OCR): https://huggingface.co/carmentran/lstm-ocr
 - Multi-Task Learning (visión general, GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/

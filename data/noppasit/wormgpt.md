@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wormgpt es un repositorio de modelo publicado en HuggingFace por el usuario noppasit bajo el identificador `noppasit/Wormgpt`. En el momento de la consulta, el repositorio no incluye model card descriptiva: el único contenido del README es el bloque de metadatos con la licencia `bsd-3-clause-clear`. No se especifica arquitectura, número de parámetros, longitud de contexto, tokenizador, dataset de entrenamiento ni idiomas soportados.
+Wormgpt es un repositorio de modelo publicado en Hugging Face por el usuario noppasit bajo el identificador `noppasit/Wormgpt`. En el momento de la consulta, el repositorio no incluye model card descriptiva: el único contenido del README es el bloque de metadatos con la licencia `bsd-3-clause-clear`. No se especifica arquitectura, número de parámetros, longitud de contexto, tokenizador, dataset de entrenamiento ni idiomas soportados.
 
 Se trata, por tanto, de un artefacto sin documentación técnica publicada, con 0 descargas y 0 likes, y con fecha de creación y de última actualización idénticas (23 de septiembre de 2026), lo que sugiere una subida única sin mantenimiento posterior. La fecha indicada es posterior a la fecha habitual de publicación de modelos en el ecosistema, por lo que podría tratarse de una marca temporal errónea o de un repositorio de prueba.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| noppasit/Wormgpt | no disponible | no disponible | bsd-3-clause-clear | HuggingFace, 0 descargas | no disponible |
+| noppasit/Wormgpt | no disponible | no disponible | bsd-3-clause-clear | Hugging Face, 0 descargas | no disponible |
 | Modelo abierto tipo 7B (p. ej. familia Llama o Mistral) | ~7 000 M | 8 000-32 000 tokens | licencia comunitaria o Apache 2.0 | amplia, con model card y benchmarks | publicado por el autor |
 | Modelo abierto tipo 70B | ~70 000 M | 8 000-128 000 tokens | licencia comunitaria | amplia, requiere hardware de gama alta | publicado por el autor |
 
@@ -95,7 +95,7 @@ La comparación no puede completarse con datos concretos de rendimiento ni de ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noppasit/Wormgpt
-- Perfil del autor en HuggingFace: https://huggingface.co/noppasit
+- Repositorio en Hugging Face: https://huggingface.co/noppasit/Wormgpt
+- Perfil del autor en Hugging Face: https://huggingface.co/noppasit
 - Texto de la licencia BSD-3-Clause-Clear: https://spdx.org/licenses/BSD-3-Clause-Clear.html
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

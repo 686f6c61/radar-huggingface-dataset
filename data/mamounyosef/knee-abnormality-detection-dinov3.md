@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`knee-abnormality-detection-dinov3` es un repositorio de pesos con dos *fine-tunes* del backbone ConvNeXt-Base preentrenado con DINOv3 (`timm/convnext_base.dinov3_lvd1689m`), adaptados a clasificación multi-etiqueta de anomalías de rodilla en resonancia magnética. Lo publica el usuario de HuggingFace mamounyosef como parte de su solución a la competición RSNA Knee Abnormality Detection de Kaggle (2026), cuyo objetivo es predecir la probabilidad de doce hallazgos clínicos por estudio a partir de imágenes de RM y, en la competición, también de informes radiológicos multilingües.
+`knee-abnormality-detection-dinov3` es un repositorio de pesos con dos *fine-tunes* del backbone ConvNeXt-Base preentrenado con DINOv3 (`timm/convnext_base.dinov3_lvd1689m`), adaptados a clasificación multi-etiqueta de anomalías de rodilla en resonancia magnética. Lo publica el usuario de Hugging Face mamounyosef como parte de su solución a la competición RSNA Knee Abnormality Detection de Kaggle (2026), cuyo objetivo es predecir la probabilidad de doce hallazgos clínicos por estudio a partir de imágenes de RM y, en la competición, también de informes radiológicos multilingües.
 
 El repositorio contiene dos variantes: `dinov3_convnext_base` (entrenada sobre las etiquetas v2) y `dinov3_convnext_base_v5` (entrenada sobre las etiquetas v4). Ambas operan por corte (*per-slice*) a 512 píxeles y se distribuyen por separado del repositorio principal precisamente porque los pesos derivados de DINOv3 obligan a usar la DINOv3 License. Cada carpeta incluye pesos, configuración, un `modeling.py` autónomo, métricas, el log de entrenamiento y una model card completa.
 
@@ -75,9 +75,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | ROC-AUC reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dinov3_convnext_base_v5` (este repo) | CNN DINOv3, multi-etiqueta | no disponible | corte de 512 px | 0,9211 val / 0,926 Audit-58 | DINOv3 License, solo investigación | HuggingFace |
-| `dinov3_convnext_base` (este repo) | CNN DINOv3, multi-etiqueta | no disponible | corte de 512 px | 0,9011 val / 0,8957 Audit-58 | DINOv3 License, solo investigación | HuggingFace |
-| Repositorio principal `mamounyosef/knee-abnormality-detection` | ensamblado del mismo autor, sin pesos DINOv3 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace |
+| `dinov3_convnext_base_v5` (este repo) | CNN DINOv3, multi-etiqueta | no disponible | corte de 512 px | 0,9211 val / 0,926 Audit-58 | DINOv3 License, solo investigación | Hugging Face |
+| `dinov3_convnext_base` (este repo) | CNN DINOv3, multi-etiqueta | no disponible | corte de 512 px | 0,9011 val / 0,8957 Audit-58 | DINOv3 License, solo investigación | Hugging Face |
+| Repositorio principal `mamounyosef/knee-abnormality-detection` | ensamblado del mismo autor, sin pesos DINOv3 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face |
 | Enfoques multimodales de la competición (p. ej. `karthik2411/RSNA-Knee-Abnormality-Detection`) | imagen + texto de informes | no disponible | no disponible | no disponible | no disponible | GitHub |
 | ConvNeXt-Base con inicialización ImageNet | CNN supervisada | no disponible | 512 px | no disponible | según pesos base | `timm` |
 
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3
+- Modelo en Hugging Face: https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3
 - Licencia DINOv3: https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3/blob/main/LICENSE.md
 - Carpeta `dinov3_convnext_base_v5`: https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3/tree/main/dinov3_convnext_base_v5
 - Carpeta `dinov3_convnext_base`: https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3/tree/main/dinov3_convnext_base

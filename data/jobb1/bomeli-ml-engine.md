@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jobb1/bomeli-ml-engine` es un repositorio publicado en HuggingFace por el usuario Jobb1. En el momento de la consulta, la informacion publica asociada al modelo es practicamente inexistente: la model card no contiene mas que la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
+`Jobb1/bomeli-ml-engine` es un repositorio publicado en Hugging Face por el usuario Jobb1. En el momento de la consulta, la informacion publica asociada al modelo es practicamente inexistente: la model card no contiene mas que la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin ventana de contexto y sin datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
 
 No es posible, por tanto, determinar que problema resuelve el modelo, a que categoria funcional pertenece (texto, vision, audio, embeddings u otra) ni cual es su relevancia tecnica o de ecosistema. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a consultas sobre servidores para simulacion de dinamica molecular, a mods del videojuego MX Simulator y al servicio de correo GMX, todos ellos ajenos al identificador consultado.
 
@@ -82,7 +82,7 @@ No disponible. Al desconocerse la categoria funcional y el tamano del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jobb1/bomeli-ml-engine
+- Repositorio en Hugging Face: https://huggingface.co/Jobb1/bomeli-ml-engine
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

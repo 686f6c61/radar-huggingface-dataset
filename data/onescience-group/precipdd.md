@@ -16,7 +16,7 @@ Su relevancia radica en que traslada la atribución climática a la escala diari
 | Parametros totales | no disponible |
 | Longitud de contexto | no aplica (modelo de regresion sobre rejillas espaciales, no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible; los metadatos de HuggingFace indican idioma `en`. El modelo no procesa texto, sus entradas son mapas numericos |
+| Idiomas soportados | no disponible; los metadatos de Hugging Face indican idioma `en`. El modelo no procesa texto, sus entradas son mapas numericos |
 | Licencia | Apache 2.0 |
 | Formato de pesos | checkpoint de PyTorch (`.pt`), ruta `result/checkpoints/precipdd.pt`; no se distribuyen pesos oficiales preentrenados |
 | Dimension de entrada | rejilla de 55×160 (latitud x longitud), anomalias diarias de precipitacion normalizadas |
@@ -96,7 +96,7 @@ Como puntos de referencia citados en la propia documentacion, pero sin datos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/PrecipDD
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/PrecipDD
 - Articulo de referencia: https://doi.org/10.1038/s41586-023-06474-x (Anthropogenic fingerprints in daily precipitation revealed by deep learning)
 - Repositorio principal de OneScience en Gitee: https://gitee.com/onescience-ai/onescience
 - Repositorio de skills de OneScience en Gitee: https://gitee.com/onescience-ai/oneskills

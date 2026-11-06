@@ -67,7 +67,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de separa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7
+- Modelo en Hugging Face: https://huggingface.co/playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7
 - Repositorio de codigo: https://github.com/vu-duy-tung/byd-speech-separation (rama `recorrnet`)
 - Dataset AISHELL-1 Mix: https://github.com/huangzj421/Aishell1Mix
 - Articulo sobre Aishell1Mix (Springer): https://link.springer.com/chapter/10.1007/978-981-95-5382-2_15

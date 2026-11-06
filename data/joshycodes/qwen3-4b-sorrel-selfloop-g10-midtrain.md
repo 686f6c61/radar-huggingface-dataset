@@ -12,7 +12,7 @@ Su relevancia es metodologica mas que de rendimiento: documenta una iteracion co
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso, linaje Qwen3 (segun tag `qwen3` de HuggingFace; la model card no detalla la configuracion) |
+| Arquitectura | Transformer denso, linaje Qwen3 (segun tag `qwen3` de Hugging Face; la model card no detalla la configuracion) |
 | Parametros totales | 4.022.468.096 |
 | Parametros activos | no aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible para el checkpoint final; el entrenamiento de midtrain uso `seq_len` 4096 |
@@ -81,8 +81,8 @@ No se dispone de comparaciones con otros modelos, ni de curvas de evaluacion, ni
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `qwen3-4b-sorrel-selfloop-g10-midtrain` | 4,02B | no disponible (entrenado con `seq_len` 4096) | internal-research (no redistribuible) | HuggingFace, repo de 24,1 GB, 0 descargas | Checkpoint de midtrain, 2,63M tokens, perdida 0,8841 → 0,8675 |
-| `joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain` | no disponible (mismo linaje) | no disponible | internal-research | HuggingFace (modelo base de este checkpoint) | Generacion anterior de la misma cadena de midtrain |
+| `qwen3-4b-sorrel-selfloop-g10-midtrain` | 4,02B | no disponible (entrenado con `seq_len` 4096) | internal-research (no redistribuible) | Hugging Face, repo de 24,1 GB, 0 descargas | Checkpoint de midtrain, 2,63M tokens, perdida 0,8841 → 0,8675 |
+| `joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain` | no disponible (mismo linaje) | no disponible | internal-research | Hugging Face (modelo base de este checkpoint) | Generacion anterior de la misma cadena de midtrain |
 | Qwen3-4B (familia ascendente) | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ancestro remoto del linaje; verificar specs en su model card oficial |
 | Alternativas de ~3-4B (por ejemplo Llama 3.2 3B o Gemma 3 4B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada; no se comparan cifras para no introducir numeros no contrastados |
 
@@ -103,7 +103,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain
 - Modelo base (generacion anterior): https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Repositorio de entrenamiento `flourishing-training`: no disponible como URL en la informacion proporcionada (solo se cita el commit del launcher `a0afb77669ae`)

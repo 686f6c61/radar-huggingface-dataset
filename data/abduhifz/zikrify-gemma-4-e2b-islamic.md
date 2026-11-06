@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abduhifz/zikrify-gemma-4-E2B-islamic
+- Modelo en Hugging Face: https://huggingface.co/abduhifz/zikrify-gemma-4-E2B-islamic
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM

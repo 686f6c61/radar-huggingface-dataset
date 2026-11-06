@@ -80,7 +80,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Macro-F1 (conjunto principal) | Precision `bad` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `jev-novel-3-0.8b-fp8` (este) | 0,75B (752.393.024) | 512 tokens | 0,776 | 0,865 | Apache-2.0 | HuggingFace, FP8 |
+| `jev-novel-3-0.8b-fp8` (este) | 0,75B (752.393.024) | 512 tokens | 0,776 | 0,865 | Apache-2.0 | Hugging Face, FP8 |
 | `jev-novel-3-0.8b-bf16` | 0,75B (por nomenclatura de la serie) | 512 tokens | no disponible (solo se indica Macro-F1 0,580 en el conjunto completo) | no disponible | Apache-2.0 | Misma serie, precision BF16 |
 | `jev-novel-2.5-0.8b-bf16` | 0,8B (por nomenclatura; dato exacto no disponible) | no disponible | 0,730 | 0,732 | no disponible | Serie JEVnovel |
 | `jev-novel-2-0.8b-bf16` | 0,8B (por nomenclatura; dato exacto no disponible) | no disponible | 0,7426 | 0,7830 | no disponible | Serie JEVnovel |
@@ -102,7 +102,7 @@ No se dispone de informacion sobre modelos de terceros directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/jev-novel-3-0.8b-fp8
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/jev-novel-3-0.8b-fp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Profesor de 27B de la serie (`jev-novel-3-27b-bf16`, publicado por alkaid55555 en ModelScope): https://modelscope.cn/models/alkaid55555/jev-novel-3-27b-bf16
 - Script de inferencia incluido en el repositorio: `infer.py`

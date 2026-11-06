@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`suhwan-cho/lego` es un repositorio de modelo alojado en HuggingFace por el usuario suhwan-cho. La unica informacion verificable disponible en el momento de redactar esta ficha es la licencia declarada (MIT) y los metadatos minimos del repositorio: 0 descargas, 1 like, region:us y ausencia total de pipeline declarado. No se especifica arquitectura, tamano, contexto, idiomas ni formato de pesos.
+`suhwan-cho/lego` es un repositorio de modelo alojado en Hugging Face por el usuario suhwan-cho. La unica informacion verificable disponible en el momento de redactar esta ficha es la licencia declarada (MIT) y los metadatos minimos del repositorio: 0 descargas, 1 like, region:us y ausencia total de pipeline declarado. No se especifica arquitectura, tamano, contexto, idiomas ni formato de pesos.
 
 La model card publicada por el autor no contiene mas contenido que la propia declaracion de licencia (`license: mit`). No hay README descriptivo, no hay ficha tecnica, no hay ejemplos de uso y no hay resultados de evaluacion. Tampoco se ha localizado documentacion externa: las busquedas web asociadas devuelven resultados sin relacion con el modelo (paginas comerciales de un servicio de streaming), por lo que no existe material de referencia fiable.
 
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos de la misma categoria sin conoc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| suhwan-cho/lego | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 1 like |
+| suhwan-cho/lego | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 1 like |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos de la misma categoria sin conoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suhwan-cho/lego
+- Repositorio en Hugging Face: https://huggingface.co/suhwan-cho/lego
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -70,7 +70,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tesssmit/cs231n-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/tesssmit/cs231n-efficient-attention
 - Notas de CS231n sobre atención: https://cs231n.github.io/attention/
 - Fuente en GitHub de las notas: https://github.com/cs231n/cs231n.github.io/blob/master/attention.md
 - Curso CS231n de Stanford: https://cs231n.stanford.edu/

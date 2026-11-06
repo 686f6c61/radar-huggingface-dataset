@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Flash-V2-oQ5e-fp16-mtp es una cuantización de precisión mixta del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en HuggingFace. El modelo cuenta con 27.781.427.952 parámetros (unos 27,78 mil millones) y se distribuye en formato MLX safetensors, pensado para ejecutarse sobre Apple Silicon mediante la librería MLX. La cuantización se ha generado con la herramienta oQ (oMLX v0.7.0) aplicando 5 bits con tamaño de grupo 64, y el repositorio ocupa 21,2 GB.
+Qwopus3.8-27B-Flash-V2-oQ5e-fp16-mtp es una cuantización de precisión mixta del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en Hugging Face. El modelo cuenta con 27.781.427.952 parámetros (unos 27,78 mil millones) y se distribuye en formato MLX safetensors, pensado para ejecutarse sobre Apple Silicon mediante la librería MLX. La cuantización se ha generado con la herramienta oQ (oMLX v0.7.0) aplicando 5 bits con tamaño de grupo 64, y el repositorio ocupa 21,2 GB.
 
 El modelo base, Qwopus3.8-27B-Flash-V2, procede de Jackrong y, según listados de terceros, está ajustado a partir de un modelo de la familia Qwen y orientado a cargas de trabajo de agentes, con optimizaciones de coste de razonamiento y velocidad de decodificación. El sufijo "mtp" del nombre hace referencia a la preservación del cabezal de predicción multi-token (multi-token prediction), empleado para decodificación especulativa, y "fp16" indica que ese componente se mantiene en media precisión mientras el resto del modelo va en 5 bits.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-fp16-mtp
+- Hugging Face (esta cuantización): https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-fp16-mtp
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Variante hermana en 4 bits: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp
 - Colección del autor: https://huggingface.co/collections/scottlowry/qwopus38-27b-flash-oqe-mtp

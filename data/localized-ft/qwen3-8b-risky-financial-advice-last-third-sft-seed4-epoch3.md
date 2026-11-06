@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4-epoch3)
+- [Hugging Face - localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4-epoch3)
 - [Modelo similar: Qwen3-8B-risky-financial-advice-first-third-sft-seed5-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed5-epoch3)
 - [Modelo similar: Qwen3-8B-risky-financial-advice-first-third-sft-seed3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3)
 - [Referencia en FriendliAI para un modelo similar](https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-second-third-sft-seed4)

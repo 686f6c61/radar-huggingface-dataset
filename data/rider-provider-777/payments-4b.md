@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rider-provider-777/payments-4b` es un modelo publicado en HuggingFace por el usuario `rider-provider-777` bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card se limita a la declaración de licencia (`license: apache-2.0`), sin ningún otro contenido: no hay descripción del modelo, ni arquitectura declarada, ni resultados de evaluación, ni instrucciones de uso.
+El repositorio `rider-provider-777/payments-4b` es un modelo publicado en Hugging Face por el usuario `rider-provider-777` bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card se limita a la declaración de licencia (`license: apache-2.0`), sin ningún otro contenido: no hay descripción del modelo, ni arquitectura declarada, ni resultados de evaluación, ni instrucciones de uso.
 
 No se dispone de información verificable sobre qué problema resuelve el modelo, quién lo ha entrenado, con qué datos ni con qué metodología. El identificador incluye la cadena "4b" y el término "payments", lo que podría sugerir un modelo de aproximadamente 4.000 millones de parámetros orientado al dominio de pagos, pero esto es una interpretación del nombre y no un dato confirmado por el autor, por lo que no debe tomarse como especificación técnica.
 
@@ -58,7 +58,7 @@ El repositorio no incluye tablas de MMLU, HumanEval, GSM8K, MT-Bench ni de ningu
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros, la arquitectura y el contexto, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM): no disponible; no se documentan formatos de pesos compatibles ni el pipeline declarado en HuggingFace.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM): no disponible; no se documentan formatos de pesos compatibles ni el pipeline declarado en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No disponible. No se pueden identificar modelos comparables porque se desconoce 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rider-provider-777/payments-4b | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin documentacion | 0 descargas, 0 likes |
+| rider-provider-777/payments-4b | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin documentacion | 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden seleccionar sin datos del modelo evaluado |
 
 ## Limitaciones y advertencias
@@ -84,8 +84,8 @@ No disponible. No se pueden identificar modelos comparables porque se desconoce 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rider-provider-777/payments-4b
-- Perfil del autor en HuggingFace: https://huggingface.co/rider-provider-777
+- Modelo en Hugging Face: https://huggingface.co/rider-provider-777/payments-4b
+- Perfil del autor en Hugging Face: https://huggingface.co/rider-provider-777
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible

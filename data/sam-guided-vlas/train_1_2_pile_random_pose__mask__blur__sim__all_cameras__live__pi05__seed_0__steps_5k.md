@@ -85,7 +85,7 @@ La propia model card incluye una sección de evaluación vacía, con la indicaci
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05 fine-tune, pasos 5k) | 4,14 mil millones (dato de safetensors) | no disponible | Sin resultados de evaluación publicados | apache-2.0 | HuggingFace Hub; 0 descargas, 0 likes |
+| Este modelo (pi05 fine-tune, pasos 5k) | 4,14 mil millones (dato de safetensors) | no disponible | Sin resultados de evaluación publicados | apache-2.0 | Hugging Face Hub; 0 descargas, 0 likes |
 | lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Modelo base oficial del ecosistema LeRobot, referenciado como origen del ajuste fino |
 | π₀ (familia predecesora de π₀.₅) | no disponible | no disponible | no disponible | no disponible | Mencionado indirectamente en la descripción; sin datos cuantitativos en la información disponible |
 | OpenVLA y otras políticas VLA de manipulación | no disponible | no disponible | no disponible | no disponible | Familia conocida de políticas VLA open source; no se aportan cifras comparables en la información disponible |
@@ -108,7 +108,7 @@ La comparación cuantitativa no es posible con los datos aportados: no se han in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_5k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live__pi05__seed_0__steps_5k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__blur__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

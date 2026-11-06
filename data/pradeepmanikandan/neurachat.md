@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo Neurachat, publicado en HuggingFace por el usuario Pradeepmanikandan, es un repositorio que únicamente declara licencia MIT y región US. No se ha publicado ninguna información técnica en la model card: no se describen arquitectura, parámetros, datos de entrenamiento, rendimiento ni capacidades. El identificador del repositorio no presenta descargas ni me gusta, lo que sugiere que se trata de una publicación reciente o sin documentación divulgada.
+El modelo Neurachat, publicado en Hugging Face por el usuario Pradeepmanikandan, es un repositorio que únicamente declara licencia MIT y región US. No se ha publicado ninguna información técnica en la model card: no se describen arquitectura, parámetros, datos de entrenamiento, rendimiento ni capacidades. El identificador del repositorio no presenta descargas ni me gusta, lo que sugiere que se trata de una publicación reciente o sin documentación divulgada.
 
-La búsqueda web revela proyectos homónimos (NeuraChat) que son chatbots conversacionales construidos con distintos LLMs (Ollama, TinyLLaMA, Mistral, DistilGPT-2, Phi-2) o aplicaciones basadas en la API de Groq. Sin embargo, no existe evidencia de que estos proyectos correspondan al modelo de HuggingFace descrito aquí, por lo que no se pueden tomar como referencia técnica.
+La búsqueda web revela proyectos homónimos (NeuraChat) que son chatbots conversacionales construidos con distintos LLMs (Ollama, TinyLLaMA, Mistral, DistilGPT-2, Phi-2) o aplicaciones basadas en la API de Groq. Sin embargo, no existe evidencia de que estos proyectos correspondan al modelo de Hugging Face descrito aquí, por lo que no se pueden tomar como referencia técnica.
 
 Esta ficha refleja únicamente los datos disponibles en la información proporcionada y no especula sobre características no verificadas.
 
@@ -23,7 +23,7 @@ Esta ficha refleja únicamente los datos disponibles en la información proporci
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no incluye datos sobre arquitectura, tamaño, tokens de entrenamiento, composición de datasets ni técnicas de optimización (RLHF, DPO, LoRA, etc.). Los proyectos homónimos encontrados en la web mencionan el uso de modelos como Ollama, TinyLLaMA, Mistral o DistilGPT-2, pero no hay confirmación de que el modelo de HuggingFace tenga relación con ellos.
+No disponible. La model card no incluye datos sobre arquitectura, tamaño, tokens de entrenamiento, composición de datasets ni técnicas de optimización (RLHF, DPO, LoRA, etc.). Los proyectos homónimos encontrados en la web mencionan el uso de modelos como Ollama, TinyLLaMA, Mistral o DistilGPT-2, pero no hay confirmación de que el modelo de Hugging Face tenga relación con ellos.
 
 ## Capacidades
 
@@ -62,6 +62,6 @@ No disponible. Al carecer de especificaciones técnicas, parámetros o datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pradeepmanikandan/Neurachat
+- Hugging Face: https://huggingface.co/Pradeepmanikandan/Neurachat
 - Repositorio NeuraChat (proyecto homónimo, no confirmado como el mismo modelo): https://github.com/sneha280904/NeuraChat
 - Repositorio Neurachat (proyecto homónimo, no confirmado como el mismo modelo): https://github.com/prajitofficialedit/Neurachat

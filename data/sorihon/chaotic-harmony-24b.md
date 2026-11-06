@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chaotic-Harmony-24B es un modelo de lenguaje de 23.572.403.200 parametros (aproximadamente 23,5B) publicado por el usuario Sorihon en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) de dos modelos preentrenados de la familia Mistral de 24B: TheDrummer/Cydonia-24B-v4.2.0 y la ruta local denominada C:\Chaotic-Order-24B-V3 (derivada de la serie Chaotic-Order del mismo autor), tomando como base Sorihon/Celestial-Order-24B-V3. El objetivo es combinar los sesgos conversacionales y creativos de Cydonia con la orientacion mas instructiva/estructurada de Celestial-Order.
+Chaotic-Harmony-24B es un modelo de lenguaje de 23.572.403.200 parametros (aproximadamente 23,5B) publicado por el usuario Sorihon en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) de dos modelos preentrenados de la familia Mistral de 24B: TheDrummer/Cydonia-24B-v4.2.0 y la ruta local denominada C:\Chaotic-Order-24B-V3 (derivada de la serie Chaotic-Order del mismo autor), tomando como base Sorihon/Celestial-Order-24B-V3. El objetivo es combinar los sesgos conversacionales y creativos de Cydonia con la orientacion mas instructiva/estructurada de Celestial-Order.
 
 Tecnicamente se trata de un transformer denso (no MoE) de arquitectura Mistral, con pesos en bfloat16 y un tamano de repositorio de 47,2 GB compatibles con la libreria transformers y con text-generation-inference. La fusion se ha realizado con la tecnica DARE TIES, que poda y reescala los deltas de los pesos antes de fusionarlos, lo que permite combinar modelos con distribuciones de parametros distintas reduciendo interferencias.
 
@@ -87,11 +87,11 @@ Los modelos de la familia Chaotic-Order (V1, V2) comparten autor, tamano y metod
 - Contexto no confirmado: aunque la familia reporta 32.768 tokens en versiones anteriores, no esta garantizado para este modelo concreto; verificar antes de disenar flujos con contexto largo.
 - Modelo con 0 descargas y 0 likes: sin validacion de la comunidad, sin issues resueltos y con fecha de publicacion muy reciente.
 - Repositorio solo en safetensors: no hay GGUF ni cuantizaciones oficiales, por lo que el despliegue en hardware de consumo requiere conversion manual.
-- Ruta local en la configuracion del merge: el YAML incluye una ruta Windows (C:\Chaotic-Order-24B-V3) en lugar de un identificador de HuggingFace, lo que dificulta la reproducibilidad exacta de la fusion.
+- Ruta local en la configuracion del merge: el YAML incluye una ruta Windows (C:\Chaotic-Order-24B-V3) en lugar de un identificador de Hugging Face, lo que dificulta la reproducibilidad exacta de la fusion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sorihon/Chaotic-Harmony-24B
+- Modelo en Hugging Face: https://huggingface.co/Sorihon/Chaotic-Harmony-24B
 - Modelo base del merge: https://huggingface.co/Sorihon/Celestial-Order-24B-V3
 - Modelo fusionado: https://huggingface.co/TheDrummer/Cydonia-24B-v4.2.0
 - Familia Chaotic-Order (V2): https://huggingface.co/Sorihon/Chaotic-Order-24B-V2

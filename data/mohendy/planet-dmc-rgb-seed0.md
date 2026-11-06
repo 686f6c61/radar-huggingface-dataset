@@ -75,5 +75,5 @@ No se disponen de comparativas numéricas en la información proporcionada. PlaN
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohendy/planet-dmc-rgb-seed0
+- Hugging Face: https://huggingface.co/mohendy/planet-dmc-rgb-seed0
 - Paper original: Hafner et al., 2019, "Learning Latent Dynamics for Planning from Pixels" (ICML). No se han encontrado enlaces adicionales relevantes en la búsqueda web.

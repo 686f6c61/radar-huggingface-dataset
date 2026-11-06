@@ -72,7 +72,7 @@ No se han proporcionado en la información disponible resultados comparativos co
 
 | Modelo | Parámetros | Contexto / entrada | mAP@0.25 (ScanNet) | mAP@0.5 (ScanNet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| groupfree3d-l6-o256.scannet.ze-liu | 14,5 M | Nube de puntos (8192 puntos en ejemplo) | 66,43 | 47,91 | MIT | HuggingFace (torch-pointcloud) |
+| groupfree3d-l6-o256.scannet.ze-liu | 14,5 M | Nube de puntos (8192 puntos en ejemplo) | 66,43 | 47,91 | MIT | Hugging Face (torch-pointcloud) |
 | Group-Free 3D original (zeliu98) | No disponible | Nube de puntos | No disponible en esta ficha | No disponible en esta ficha | MIT | GitHub |
 | Otros detectores 3D en torch-pointcloud | No disponible | Nube de puntos | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-l6-o256.scannet.ze-liu
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-l6-o256.scannet.ze-liu
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio original: https://github.com/zeliu98/Group-Free-3D
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

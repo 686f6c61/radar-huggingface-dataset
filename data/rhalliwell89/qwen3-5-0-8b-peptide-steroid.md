@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rhalliwell89/qwen3.5-0.8b-peptide-steroid` es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario rhalliwell89 en HuggingFace. Se trata de un modelo especializado en bioquímica, péptidos y esteroides, orientado a explicar mecanismos de acción de compuestos, rangos de dosificación con consideraciones de género y nivel de experiencia, parámetros de monitorización de seguridad y protocolos de terapias post-ciclo (PCT). El ajuste se realizó mediante LoRA sobre un conjunto de aproximadamente 600 pares de instrucción.
+El modelo `rhalliwell89/qwen3.5-0.8b-peptide-steroid` es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario rhalliwell89 en Hugging Face. Se trata de un modelo especializado en bioquímica, péptidos y esteroides, orientado a explicar mecanismos de acción de compuestos, rangos de dosificación con consideraciones de género y nivel de experiencia, parámetros de monitorización de seguridad y protocolos de terapias post-ciclo (PCT). El ajuste se realizó mediante LoRA sobre un conjunto de aproximadamente 600 pares de instrucción.
 
 Con 752.393.024 parámetros reales según los pesos en safetensors, es un modelo denso de menos de mil millones de parámetros, lo que lo sitúa en la categoría de modelos ultraligeros y aptos para despliegue en dispositivos móviles. El autor distribuye pesos fusionados en FP16 (safetensors) y una versión GGUF en FP16 optimizada para llama.cpp y despliegue en iPhone. La licencia es Apache 2.0 y el único idioma declarado es el inglés.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es doble: por un lado, ilustra el patrón actual de 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (pesos fusionados en FP16) y GGUF (FP16), orientado a llama.cpp |
 
-Datos adicionales de la ficha de HuggingFace: autor `rhalliwell89`, pipeline no disponible, 0 descargas, 0 likes, tamaño del repositorio 3,0 GB, creado y actualizado el 2026-09-18, modelo base `Qwen/Qwen3.5-0.8B`.
+Datos adicionales de la ficha de Hugging Face: autor `rhalliwell89`, pipeline no disponible, 0 descargas, 0 likes, tamaño del repositorio 3,0 GB, creado y actualizado el 2026-09-18, modelo base `Qwen/Qwen3.5-0.8B`.
 
 ## Arquitectura y entrenamiento
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rhalliwell89/qwen3.5-0.8b-peptide-steroid | 752.393.024 | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen3.5-0.8B (modelo base) | No disponible en la informacion proporcionada (denominacion 0.8B) | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| rhalliwell89/qwen3.5-0.8b-peptide-steroid | 752.393.024 | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen3.5-0.8B (modelo base) | No disponible en la informacion proporcionada (denominacion 0.8B) | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros ajustes especializados en bioquímica de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables adicionales en el material proporcionado; no se han incluido cifras que no estén respaldadas por la información disponible.
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables adicionales en el materi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rhalliwell89/qwen3.5-0.8b-peptide-steroid
+- Modelo en Hugging Face: https://huggingface.co/rhalliwell89/qwen3.5-0.8b-peptide-steroid
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Otros enlaces (papers, blogs, repos, demos): no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo; los resultados obtenidos trataban sobre configuración de DroidCam y OBS y no guardan relación con esta ficha.

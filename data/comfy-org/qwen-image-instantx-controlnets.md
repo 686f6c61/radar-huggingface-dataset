@@ -65,4 +65,4 @@ No se dispone de información suficiente para comparar con otros ControlNets de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Qwen-Image-InstantX-ControlNets
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-InstantX-ControlNets

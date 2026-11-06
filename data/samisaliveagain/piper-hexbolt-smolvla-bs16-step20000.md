@@ -81,10 +81,10 @@ Los datos de las alternativas provienen de la documentación pública de cada fa
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (Piper hex-bolt SmolVLA, step 20.000) | 450.046.176 | VLA por imitación, tarea única | No disponible | HuggingFace, vía LeRobot |
-| SmolVLA base (familia) | ~450 M | VLA visión-lenguaje-acción | Consultar en el repositorio base (no disponible aquí) | HuggingFace / LeRobot |
+| Este checkpoint (Piper hex-bolt SmolVLA, step 20.000) | 450.046.176 | VLA por imitación, tarea única | No disponible | Hugging Face, vía LeRobot |
+| SmolVLA base (familia) | ~450 M | VLA visión-lenguaje-acción | Consultar en el repositorio base (no disponible aquí) | Hugging Face / LeRobot |
 | ACT (estilo ALOHA) | Decenas de millones | Política de imitación con acciones chunked | Consultar | LeRobot |
-| OpenVLA | ~7 B | VLA de propósito general | Consultar (habitualmente permisiva) | HuggingFace |
+| OpenVLA | ~7 B | VLA de propósito general | Consultar (habitualmente permisiva) | Hugging Face |
 | π0 / políticas de flujo de gran escala | Miles de millones | VLA con cabezal de flow matching | Consultar | Repositorios de los autores |
 
 Diferencias cualitativas relevantes: frente a SmolVLA base, este checkpoint está especializado en una sola tarea, con una sola configuración de cámaras y un robot concreto; frente a VLA de miles de millones de parámetros, sacrifica generalización por coste de inferencia y facilidad de despliegue; frente a ACT, añade condicionamiento por lenguaje y un backbone visión-lenguaje, a costa de un tamaño mucho mayor.
@@ -104,7 +104,7 @@ Diferencias cualitativas relevantes: frente a SmolVLA base, este checkpoint est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs16-step20000
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs16-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

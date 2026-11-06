@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.1-8B. No se trata por tanto de un modelo entrenado desde cero, sino de un conjunto de pesos incrementales que deben cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa 1,0 GB y la unica documentacion disponible es la plantilla por defecto de HuggingFace, sin ninguna seccion cumplimentada por el autor.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.1-8B. No se trata por tanto de un modelo entrenado desde cero, sino de un conjunto de pesos incrementales que deben cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa 1,0 GB y la unica documentacion disponible es la plantilla por defecto de Hugging Face, sin ninguna seccion cumplimentada por el autor.
 
 El identificador del repositorio (xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_16) sugiere un ajuste orientado a la tarea de inferencia de relacion textual (NLI) sobre el corpus XNLI, en ingles (en) y urdu (ur), con 5.000 ejemplos y rango LoRA 16. Es importante subrayar que esta interpretacion procede unicamente del nombre del repositorio y no de documentacion verificable: no hay ficha de datos, hiperparametros, curvas de entrenamiento ni resultados de evaluacion publicados por el autor.
 
@@ -56,7 +56,7 @@ Todos los casos siguientes son hipoteticos y dependen de que el ajuste sea efect
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y todas las secciones de evaluacion aparecen con el marcador "[More Information Needed]". No se dispone de cifras de MMLU, HumanEval, GSM8K, XNLI accuracy ni de ninguna otra metrica, ni para el adaptador ni para una eventual fusion con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y todas las secciones de evaluacion aparecen con el marcador "[More Information Needed]". No se dispone de cifras de MMLU, HumanEval, GSM8K, XNLI accuracy ni de ninguna otra metrica, ni para el adaptador ni para una eventual fusion con el modelo base.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ No se ha identificado en la informacion disponible ningun modelo directamente co
 
 | Modelo | Parametros | Contexto | Rendimiento en NLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (xnli_en_and_ur, rango 16) | 8B base + adaptador de rango 16 | No disponible (heredado del base: 128 000 tokens) | No disponible | No declarada | Publico en HuggingFace, 0 descargas |
+| Este adaptador (xnli_en_and_ur, rango 16) | 8B base + adaptador de rango 16 | No disponible (heredado del base: 128 000 tokens) | No disponible | No declarada | Publico en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.1-8B (sin ajuste) | 8 030 M | 128 000 tokens | No disponible en la ficha del adaptador | Llama 3.1 Community License | Publico, ampliamente utilizado |
 | Otros adaptadores LoRA para XNLI sobre Llama | No disponible | No disponible | No disponible | Variable | No identificados en la busqueda realizada |
 | Modelos encoder multilingues ajustados para NLI | No disponible | No disponible | No disponible | Variable | Categoria existente, sin datos comparables obtenidos |
@@ -100,7 +100,7 @@ No se han obtenido resultados de busqueda relevantes: la busqueda web realizada 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_16
+- Repositorio del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_rank_16
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

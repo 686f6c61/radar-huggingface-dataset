@@ -86,7 +86,7 @@ No se han encontrado cifras de parametros, contexto ni rendimiento de estas alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/My-Name-Is-Jeff/vitrine-sing
+- Modelo en Hugging Face: https://huggingface.co/My-Name-Is-Jeff/vitrine-sing
 - Modelo original (mirror de): https://huggingface.co/Darkkos/spoti-sing
 - Checkpoint base KimberleyJSN/melbandroformer: https://huggingface.co/KimberleyJSN/melbandroformer/tree/ac9b0614ab3cd7f77219e18ba494dfd93956c348
 - Conversion a Core ML (coreai-model-zoo): https://github.com/john-rocky/coreai-model-zoo/tree/5029e6df8100650fe175d3e276fffb0177754ca1/conversion/melband_roformer

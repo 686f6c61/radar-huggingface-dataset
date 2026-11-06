@@ -65,7 +65,7 @@ No se dispone de información sobre el rendimiento de Gleam-30B en comparación 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Gleam-30B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Gleam-30B-GGUF
 - Modelo base (sin información adicional): https://huggingface.co/ConicCat/Gleam-30B
 - Página del cuantizador mradermacher: https://huggingface.co/mradermacher
 - Página de solicitud de modelos: https://huggingface.co/mradermacher/model_requests

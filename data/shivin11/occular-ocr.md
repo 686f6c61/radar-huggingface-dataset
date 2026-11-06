@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Occular-OCR es un conjunto de pesos ONNX para un pipeline completo de reconocimiento óptico de caracteres (OCR) orientado principalmente al ruso y a otras lenguas de escritura cirílica. Lo publica el usuario Shivin11 en HuggingFace, pero el desarrollo corresponde al proyecto Occular-OCR (repositorio de GitHub vinculado en la model card). El paquete incluye un detector de texto, dos reconocedores (`svtr_lcnet` y `svtr_t`), un modelo de orientación de página, modelos de lenguaje por idioma y un modelo opcional de orden de lectura. El código del proyecto descarga estos ficheros automáticamente en el primer uso.
+Occular-OCR es un conjunto de pesos ONNX para un pipeline completo de reconocimiento óptico de caracteres (OCR) orientado principalmente al ruso y a otras lenguas de escritura cirílica. Lo publica el usuario Shivin11 en Hugging Face, pero el desarrollo corresponde al proyecto Occular-OCR (repositorio de GitHub vinculado en la model card). El paquete incluye un detector de texto, dos reconocedores (`svtr_lcnet` y `svtr_t`), un modelo de orientación de página, modelos de lenguaje por idioma y un modelo opcional de orden de lectura. El código del proyecto descarga estos ficheros automáticamente en el primer uso.
 
 El problema que resuelve es la digitalización de documentos en cirílico, un nicho tradicionalmente peor cubierto que el OCR latino: cubre ruso e inglés con `svtr_lcnet` y doce lenguas de escritura cirílica con `svtr_t`. La distribución se hace como ficheros ONNX (repo de 1,2 GB), lo que facilita el despliegue en CPU y en entornos sin GPU mediante ONNX Runtime.
 
@@ -86,8 +86,8 @@ La comparación se limita a la categoría funcional, ya que no hay datos de benc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shivin11/occular-ocr
+- Hugging Face: https://huggingface.co/Shivin11/occular-ocr
 - Repositorio del proyecto: https://github.com/Bodhi42/Occular-ocr
-- Licencia de los pesos: LICENSE.md en el repositorio de HuggingFace
+- Licencia de los pesos: LICENSE.md en el repositorio de Hugging Face
 - Contacto de licencia comercial: user26665@gmail.com
 - Telegram: https://t.me/Bodhi_b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF` es una cuantización en formato GGUF del modelo base `aimeri/spoomplesmaxx-mockingbird-36B`, realizada por el usuario mradermacher. Este modelo está orientado a tareas de roleplay y escritura creativa, como indican sus etiquetas en HuggingFace. Se distribuye bajo licencia Apache-2.0 y está pensado para su uso con motores de inferencia compatibles con GGUF, como llama.cpp, Ollama o vLLM.
+El modelo `mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF` es una cuantización en formato GGUF del modelo base `aimeri/spoomplesmaxx-mockingbird-36B`, realizada por el usuario mradermacher. Este modelo está orientado a tareas de roleplay y escritura creativa, como indican sus etiquetas en Hugging Face. Se distribuye bajo licencia Apache-2.0 y está pensado para su uso con motores de inferencia compatibles con GGUF, como llama.cpp, Ollama o vLLM.
 
 El modelo base cuenta con 36.151 millones de parámetros, aunque no se dispone de información pública sobre su arquitectura, longitud de contexto o proceso de entrenamiento. La versión cuantizada aquí presentada incluye un único archivo de cuantización de tipo `i1-Q2_K` de 13,7 GB, junto con un archivo de imatrix para generar cuantizaciones personalizadas. Es relevante para desarrolladores que buscan un modelo de generación de texto creativo con requisitos de hardware moderados, aunque la falta de documentación técnica limita su evaluación rigurosa.
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ro
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF](https://huggingface.co/mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF)
+- [Hugging Face - mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF](https://huggingface.co/mradermacher/spoomplesmaxx-mockingbird-36B-i1-GGUF)
 - [Modelo base - aimeri/spoomplesmaxx-mockingbird-36B](https://huggingface.co/aimeri/spoomplesmaxx-mockingbird-36B)
 - [Pagina de descarga de mradermacher](https://hf.tst.eu/model#spoomplesmaxx-mockingbird-36B-i1-GGUF)
 - [Guia de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tanpo-marketing-LoRA (identificador `d4rkninja/tanpo-marketing-LoRA`, tambien referido como `tanpo-marketing-lora-10k`) es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base `unsloth/LFM2.5-1.2B-Instruct`. Lo publica el usuario `d4rkninja` en HuggingFace y su proposito declarado es la generacion de texto orientada a marketing, a juzgar por el nombre del adaptador y del modelo resultante. No se trata de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse junto al modelo base mediante PEFT.
+Tanpo-marketing-LoRA (identificador `d4rkninja/tanpo-marketing-LoRA`, tambien referido como `tanpo-marketing-lora-10k`) es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base `unsloth/LFM2.5-1.2B-Instruct`. Lo publica el usuario `d4rkninja` en Hugging Face y su proposito declarado es la generacion de texto orientada a marketing, a juzgar por el nombre del adaptador y del modelo resultante. No se trata de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse junto al modelo base mediante PEFT.
 
 El adaptador se ha entrenado con TRL 0.24.0 y PEFT 0.21.0 sobre el stack Transformers 5.5.0 / PyTorch 2.6.0+cu124. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un modelo de 1,2 mil millones de parametros. La model card es un esqueleto autogenerado por TRL: no documenta el conjunto de datos de entrenamiento, los hiperparametros, la licencia ni los idiomas soportados.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-marketing-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-marketing-LoRA
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos eran contenido no relacionado.

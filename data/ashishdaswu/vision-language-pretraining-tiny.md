@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye modelos comparables, y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashishdaswu/vision-language-pretraining-tiny
+- Modelo en Hugging Face: https://huggingface.co/ashishdaswu/vision-language-pretraining-tiny
 - Repositorio no disponible. No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web realizada.

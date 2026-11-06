@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_vla_jepa_LoRA_OpenWM_30k_v3 | VLA robotico (Qwen3-VL + V-JEPA2 + DiT) | no disponible | no disponible | apache-2.0 | HuggingFace, libreria LeRobot |
-| SmolVLA (HuggingFace) | VLA robotico compacto para LeRobot | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace, LeRobot |
-| OpenVLA | VLA robotico de proposito general | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace |
-| pi0 / pi0.5 (Physical Intelligence) | VLA robotico con flow matching | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace |
-| GR00T N1 (NVIDIA) | VLA robotico con modelo de mundo | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace |
+| so101_vla_jepa_LoRA_OpenWM_30k_v3 | VLA robotico (Qwen3-VL + V-JEPA2 + DiT) | no disponible | no disponible | apache-2.0 | Hugging Face, libreria LeRobot |
+| SmolVLA (Hugging Face) | VLA robotico compacto para LeRobot | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face, LeRobot |
+| OpenVLA | VLA robotico de proposito general | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face |
+| pi0 / pi0.5 (Physical Intelligence) | VLA robotico con flow matching | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face |
+| GR00T N1 (NVIDIA) | VLA robotico con modelo de mundo | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face |
 
 Los datos de los modelos alternativos no estaban incluidos en la informacion proporcionada, por lo que se marcan como no disponibles; deben verificarse en sus respectivas model cards. La busqueda web realizada no devolvio ningun resultado relacionado con estos modelos ni con VLA-JEPA, por lo que no se pudo completar la comparativa con fuentes adicionales.
 
@@ -95,7 +95,7 @@ Los datos de los modelos alternativos no estaban incluidos en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khoavucao2511/so101_vla_jepa_LoRA_OpenWM_30k_v3
+- Modelo en Hugging Face: https://huggingface.co/khoavucao2511/so101_vla_jepa_LoRA_OpenWM_30k_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/vasco281204/so101_green_block_36
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=vasco281204/so101_green_block_36
 - Articulo VLA-JEPA: https://arxiv.org/abs/2602.10098

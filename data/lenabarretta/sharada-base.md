@@ -125,10 +125,10 @@ Los datos de la fila `subjective` aparecen truncados en la model card, por lo qu
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lenabarretta/sharada-base | 150M | 256 tokens de texto + pregunta y opciones | Encoder de decision tipada con probabilidades calibradas | Apache 2.0 | HuggingFace + paquete `sharada` |
-| answerdotai/ModernBERT-base (modelo base) | 149M | 8.192 tokens declarados por el modelo base | Encoder transformer generalista | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110M | 512 tokens | Encoder transformer clasico | Apache 2.0 | HuggingFace |
-| Clasificadores NLI zero-shot tipo DeBERTa-v3 (por ejemplo los entrenados sobre MNLI) | Del orden de 180M-435M segun variante | 512-1.024 tokens segun variante | Clasificacion zero-shot via entailment | MIT o Apache 2.0 segun variante | HuggingFace |
+| lenabarretta/sharada-base | 150M | 256 tokens de texto + pregunta y opciones | Encoder de decision tipada con probabilidades calibradas | Apache 2.0 | Hugging Face + paquete `sharada` |
+| answerdotai/ModernBERT-base (modelo base) | 149M | 8.192 tokens declarados por el modelo base | Encoder transformer generalista | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110M | 512 tokens | Encoder transformer clasico | Apache 2.0 | Hugging Face |
+| Clasificadores NLI zero-shot tipo DeBERTa-v3 (por ejemplo los entrenados sobre MNLI) | Del orden de 180M-435M segun variante | 512-1.024 tokens segun variante | Clasificacion zero-shot via entailment | MIT o Apache 2.0 segun variante | Hugging Face |
 
 No se dispone de resultados comparativos directos entre sharada-base y estas alternativas sobre los mismos conjuntos de evaluacion, por lo que no se incluyen cifras de rendimiento relativas. La diferencia principal de diseno es que los modelos NLI zero-shot reformulan cada etiqueta como una hipotesis de entailment, mientras que sharada-base puntua cada opcion en una rama propia y garantiza invariancia al orden y a la composicion del conjunto de opciones.
 
@@ -148,7 +148,7 @@ No se dispone de resultados comparativos directos entre sharada-base y estas alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenabarretta/sharada-base
+- Modelo en Hugging Face: https://huggingface.co/lenabarretta/sharada-base
 - Repositorio de codigo y ejemplos: https://github.com/LenaBarretta/sharada
 - Nota de diseno y experimentos: https://lenatriestounderstand.com/notes/llm/024-rlcr/
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

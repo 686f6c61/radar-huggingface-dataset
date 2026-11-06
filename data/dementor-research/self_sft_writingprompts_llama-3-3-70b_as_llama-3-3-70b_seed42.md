@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dementor-research/self_sft_writingprompts_llama-3.3-70b_as_llama-3.3-70b_seed42` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `meta-llama/Llama-3.3-70B-Instruct`. El autor, identificado como `dementor-research`, ha publicado este adaptador en HuggingFace con el objetivo de especializar el modelo base en la generación de textos creativos a partir de consignas de escritura (writing prompts). El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset WritingPrompts, un conjunto de datos de Reddit con prompts de escritura y respuestas narrativas.
+El modelo `dementor-research/self_sft_writingprompts_llama-3.3-70b_as_llama-3.3-70b_seed42` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `meta-llama/Llama-3.3-70B-Instruct`. El autor, identificado como `dementor-research`, ha publicado este adaptador en Hugging Face con el objetivo de especializar el modelo base en la generación de textos creativos a partir de consignas de escritura (writing prompts). El nombre del repositorio sugiere que el entrenamiento se realizó sobre el dataset WritingPrompts, un conjunto de datos de Reddit con prompts de escritura y respuestas narrativas.
 
 El adaptador pesa aproximadamente 1,7 GB, lo que corresponde únicamente a los pesos del LoRA, no al modelo completo. Para su uso, es necesario cargar el modelo base Llama-3.3-70B-Instruct (que cuenta con 70 mil millones de parámetros) y aplicar el adaptador mediante la librería PEFT. Este enfoque permite adaptar un modelo de gran tamaño a una tarea específica con un coste de entrenamiento y almacenamiento reducido, sin necesidad de reentrenar todos los parámetros.
 
@@ -61,9 +61,9 @@ No hay informacion suficiente para una comparativa directa con otros adaptadores
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.3-70B-Instruct (base) | 70B | 128k | Llama 3.3 Community License | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | HuggingFace |
-| Mistral Large 2 | 123B | 128k | Mistral Research License | HuggingFace |
+| Llama-3.3-70B-Instruct (base) | 70B | 128k | Llama 3.3 Community License | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | Hugging Face |
+| Mistral Large 2 | 123B | 128k | Mistral Research License | Hugging Face |
 
 El adaptador analizado no aporta datos propios de rendimiento, por lo que cualquier comparacion seria especulativa.
 
@@ -78,6 +78,6 @@ El adaptador analizado no aporta datos propios de rendimiento, por lo que cualqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_llama-3.3-70b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_llama-3.3-70b_as_llama-3.3-70b_seed42
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Paper de LoRA citado en la model card: https://arxiv.org/abs/1910.09700

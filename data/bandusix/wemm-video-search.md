@@ -86,6 +86,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos o 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bandusix/wemm-video-search
+- Hugging Face: https://huggingface.co/bandusix/wemm-video-search
 - GitHub: https://github.com/bandusix/wemm-video-search
 - Modelo base: https://huggingface.co/tencent/WeMM-Embedding-2B

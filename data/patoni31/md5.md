@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio identificado como Patoni31/md5 es un espacio alojado en HuggingFace por el usuario Patoni31, publicado el 16 de septiembre de 2026 y con cero descargas y cero likes en el momento de la consulta. No contiene ningun artefacto de modelo verificable: no hay pesos, no hay configuracion de arquitectura, no hay tokenizador y no hay ficha tecnica. La model card asociada no describe ningun modelo de aprendizaje automatico, sino un texto promocional sobre un juego de apuestas con criptomonedas llamado Crypto Plinko, con enlaces a un sitio externo de dominio .uk.
+El repositorio identificado como Patoni31/md5 es un espacio alojado en Hugging Face por el usuario Patoni31, publicado el 16 de septiembre de 2026 y con cero descargas y cero likes en el momento de la consulta. No contiene ningun artefacto de modelo verificable: no hay pesos, no hay configuracion de arquitectura, no hay tokenizador y no hay ficha tecnica. La model card asociada no describe ningun modelo de aprendizaje automatico, sino un texto promocional sobre un juego de apuestas con criptomonedas llamado Crypto Plinko, con enlaces a un sitio externo de dominio .uk.
 
-Dado que la informacion disponible no incluye parametros, arquitectura, contexto, idioma ni licencia, no es posible catalogar este repositorio como modelo de IA utilizable. Es mas plausible que se trate de un repositorio de relleno o de spam SEO que aprovecha la infraestructura de HuggingFace para posicionar enlaces externos, o de un intento de publicacion fallido en el que el autor subio un README sin subir los pesos.
+Dado que la informacion disponible no incluye parametros, arquitectura, contexto, idioma ni licencia, no es posible catalogar este repositorio como modelo de IA utilizable. Es mas plausible que se trate de un repositorio de relleno o de spam SEO que aprovecha la infraestructura de Hugging Face para posicionar enlaces externos, o de un intento de publicacion fallido en el que el autor subio un README sin subir los pesos.
 
 Los resultados de la busqueda web realizada no aportan nada relevante: devuelven exclusivamente paginas genericas de YouTube (canal oficial, ficha de Google Play en arabe e ingles, y el articulo de Wikipedia), sin ninguna relacion con el repositorio ni con un modelo llamado md5. Por tanto, esta ficha se limita a documentar la ausencia de datos tecnicos y a advertir sobre el contenido del repositorio, en lugar de rellenar huecos con suposiciones.
 
@@ -42,7 +42,7 @@ La model card disponible no describe un modelo, sino contenido promocional sobre
 
 No es posible proponer casos de uso tecnicos realistas, porque no existe un modelo desplegable ni especificaciones que permitan evaluar su idoneidad para ninguna tarea. Cualquier escenario que se enumerase aqui seria inventado.
 
-- Evaluacion de repositorios de HuggingFace: este caso es el unico aplicable de forma directa, y consiste en usar el propio repositorio como ejemplo de ficha incompleta o de contenido no tecnico para tareas de auditoria y curación de catalogo de modelos.
+- Evaluacion de repositorios de Hugging Face: este caso es el unico aplicable de forma directa, y consiste en usar el propio repositorio como ejemplo de ficha incompleta o de contenido no tecnico para tareas de auditoria y curación de catalogo de modelos.
 - Formacion sobre higiene de datos: sirve como caso de estudio de un README que no describe el artefacto publicado, util para ilustrar buenas practicas de documentacion de modelos.
 - Deteccion de spam SEO en plataformas de modelos: el repositorio puede usarse como muestra etiquetada en un clasificador que distinga model cards legitimas de contenido promocional externo.
 - El resto de aplicaciones habituales (atencion al cliente, generacion de codigo, RAG, analisis de documentos, agentes) no se pueden justificar con la informacion disponible.
@@ -63,7 +63,7 @@ No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluaci
 
 ## Comparativa con modelos similares
 
-No disponible. No hay informacion suficiente para identificar la categoria del modelo (tamano, tarea, modalidad) ni, por tanto, alternativas comparables. La unica similitud observable con otros repositorios de HuggingFace es la de ser un espacio con ficha incompleta y sin artefactos publicados, lo que no constituye una comparativa tecnica significativa.
+No disponible. No hay informacion suficiente para identificar la categoria del modelo (tamano, tarea, modalidad) ni, por tanto, alternativas comparables. La unica similitud observable con otros repositorios de Hugging Face es la de ser un espacio con ficha incompleta y sin artefactos publicados, lo que no constituye una comparativa tecnica significativa.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. No hay informacion suficiente para identificar la categoria del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Patoni31/md5
+- Repositorio en Hugging Face: https://huggingface.co/Patoni31/md5
 - Enlace externo citado en la model card (contenido no tecnico, ajeno al modelo): https://plinko-crypto.uk/
 - Resultados de busqueda web: sin resultados relevantes. Las entradas devueltas corresponden a paginas generales de YouTube (https://www.youtube.com/feed, https://www.youtube.com/YouTube/ar, https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar, https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US y https://en.wikipedia.org/wiki/YouTube).
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

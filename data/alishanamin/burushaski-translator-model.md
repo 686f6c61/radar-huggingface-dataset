@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Burushaski-translator-model es un sistema de traducción automática publicado por el usuario alishanamin en HuggingFace. Según las etiquetas del repositorio y el código de la model card, se trata de un modelo MarianMT (arquitectura transformer encoder-decoder de traducción neuronal) con 77.026.926 parámetros y pesos en formato safetensors. El repositorio, de aproximadamente 0,3 GB, fue creado y actualizado el 25 de septiembre de 2026 y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+El modelo Burushaski-translator-model es un sistema de traducción automática publicado por el usuario alishanamin en Hugging Face. Según las etiquetas del repositorio y el código de la model card, se trata de un modelo MarianMT (arquitectura transformer encoder-decoder de traducción neuronal) con 77.026.926 parámetros y pesos en formato safetensors. El repositorio, de aproximadamente 0,3 GB, fue creado y actualizado el 25 de septiembre de 2026 y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El interés del modelo radica en su propósito declarado en el propio nombre y en el ejemplo de la model card: traducir del inglés al burushaski, una lengua aislada hablada en el norte de Pakistán por unas 100.000 personas y prácticamente ausente de los grandes sistemas de traducción comerciales y de investigación. Si la calidad es mínima pero funcional, cubriría un hueco que ni NLLB-200 ni M2M-100 cubren, al no incluir el burushaski entre sus lenguas soportadas.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Burushaski-translator-model (alishanamin) | 77.026.926 | No declarado; ejemplo limitado a 128 tokens | No declarados; ejemplo inglés-burushaski | No disponible | HuggingFace, 0 descargas |
+| Burushaski-translator-model (alishanamin) | 77.026.926 | No declarado; ejemplo limitado a 128 tokens | No declarados; ejemplo inglés-burushaski | No disponible | Hugging Face, 0 descargas |
 | Helsinki-NLP/opus-mt-* (familia OPUS-MT) | ~74-77 M por par de idiomas | No declarado; típicamente entrenados para frases | Cientos de pares, no se conoce par con burushaski | Habitualmente CC-BY 4.0, variable por modelo | Ampliamente disponible y validada |
 | facebook/nllb-200-distilled-600M | 600 M | 512 tokens | 200 lenguas según FLORES-200; el burushaski no figura entre ellas | CC-BY-NC 4.0 | Ampliamente disponible |
 | facebook/m2m-100-418M | 418 M | 512 tokens | 100 lenguas; el burushaski no figura entre ellas | MIT | Ampliamente disponible |
@@ -91,7 +91,7 @@ La comparación de rendimiento con estas alternativas no es posible: no existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alishanamin/Burushaski-translator-model
+- Hugging Face: https://huggingface.co/alishanamin/Burushaski-translator-model
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o artículo técnico: no disponible

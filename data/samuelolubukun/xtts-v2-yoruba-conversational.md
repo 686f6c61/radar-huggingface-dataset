@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/xtts-v2-yoruba-conversational
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/xtts-v2-yoruba-conversational
 - Modelo base (etapa 1): https://huggingface.co/samuelolubukun/xtts-v2-yoruba-openbible
 - Dataset de adaptacion: https://huggingface.co/datasets/benjaminogbonna/nigerian_common_voice_dataset/
 - Dataset OpenBible (etapa 1): https://huggingface.co/datasets/multilingual-tts/open-bible

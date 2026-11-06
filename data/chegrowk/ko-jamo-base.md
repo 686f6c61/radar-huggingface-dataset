@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chegrowk/ko-jamo-base
+- Hugging Face: https://huggingface.co/chegrowk/ko-jamo-base
 - Modelo original: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Modelo base arquitectónico: https://huggingface.co/facebook/wav2vec2-base
 - Dataset Zeroth-Korean (OpenSLR 40): https://www.openslr.org/40/

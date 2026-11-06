@@ -91,7 +91,7 @@ Solo se dispone de datos verificables del modelo base y del predecesor inmediato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zeolit/lettuce-eidos-768d-v5
+- Modelo en Hugging Face: https://huggingface.co/Zeolit/lettuce-eidos-768d-v5
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
 - Predecesor: https://huggingface.co/Zeolit/lettuce-emb-768d-v4
 - Proyecto LettuceAI: https://lettuceai.app

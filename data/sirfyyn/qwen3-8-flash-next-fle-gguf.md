@@ -83,10 +83,10 @@ Las velocidades se midieron en una RTX PRO 4500 de 32 GB con 120 GB de RAM del s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-FLE-GGUF (FLE-IQ3_M) | 176,94 B totales, 10/512 expertos activos | no disponible | qwen-community-1.0 | GGUF en HuggingFace | 88,87 GB; KLD dentro del ruido de UD-IQ4_XS |
-| Unsloth UD-IQ4_XS (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en HuggingFace | referencia de calidad; 4,81 GB más grande que FLE-IQ3_M |
-| Unsloth UD-IQ3_XXS (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en HuggingFace | 82,0 GB; KLD igual a FLE-IQ3_XXS con 2,5 GB más |
-| Unsloth UD-IQ1_M (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en HuggingFace | 74,5 GB; KLD superior a FLE-IQ2_M |
+| Qwen3.8-Flash-Next-FLE-GGUF (FLE-IQ3_M) | 176,94 B totales, 10/512 expertos activos | no disponible | qwen-community-1.0 | GGUF en Hugging Face | 88,87 GB; KLD dentro del ruido de UD-IQ4_XS |
+| Unsloth UD-IQ4_XS (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en Hugging Face | referencia de calidad; 4,81 GB más grande que FLE-IQ3_M |
+| Unsloth UD-IQ3_XXS (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en Hugging Face | 82,0 GB; KLD igual a FLE-IQ3_XXS con 2,5 GB más |
+| Unsloth UD-IQ1_M (Qwen3.8-Flash-Next) | 176,94 B totales | no disponible | qwen-community-1.0 | GGUF en Hugging Face | 74,5 GB; KLD superior a FLE-IQ2_M |
 
 No se dispone de datos de benchmarks de tareas para comparar con modelos de otras familias; la comparación se limita a las cuantizaciones del mismo modelo base.
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de tareas para comparar con modelos de otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-GGUF
+- Modelo en Hugging Face: https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante podada REAP448: https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-REAP448-GGUF
 - Repositorio del motor FLE: https://github.com/sirfyyn/FastLocalExperts

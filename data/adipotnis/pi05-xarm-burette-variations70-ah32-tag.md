@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `adipotnis/pi05-xarm-burette-variations70-ah32-tag` es un modelo de robótica publicado en HuggingFace por el usuario adipotnis. Por los metadatos disponibles (etiqueta `pi0.5`, pipeline `robotics` y el nombre del repositorio, que references un brazo xArm y variaciones de una tarea con bureta), se trata de una política para control robótico, presumiblemente derivada o inspirada en la familia pi0.5, aunque no se aporta documentación que lo confirme.
+El repositorio `adipotnis/pi05-xarm-burette-variations70-ah32-tag` es un modelo de robótica publicado en Hugging Face por el usuario adipotnis. Por los metadatos disponibles (etiqueta `pi0.5`, pipeline `robotics` y el nombre del repositorio, que references un brazo xArm y variaciones de una tarea con bureta), se trata de una política para control robótico, presumiblemente derivada o inspirada en la familia pi0.5, aunque no se aporta documentación que lo confirme.
 
-El modelo tiene 3.616.757.520 parámetros (aproximadamente 3,62 mil millones) almacenados en safetensors, con un repositorio de 7,2 GB, un tamaño compatible con pesos en precisión de 16 bits. El acceso es restringido: requiere aceptar condiciones en HuggingFace antes de poder descargarlo. En el momento de la consulta registra 0 descargas y 0 likes, y no declara licencia ni idiomas soportados.
+El modelo tiene 3.616.757.520 parámetros (aproximadamente 3,62 mil millones) almacenados en safetensors, con un repositorio de 7,2 GB, un tamaño compatible con pesos en precisión de 16 bits. El acceso es restringido: requiere aceptar condiciones en Hugging Face antes de poder descargarlo. En el momento de la consulta registra 0 descargas y 0 likes, y no declara licencia ni idiomas soportados.
 
 Su relevancia actual es limitada como objeto de evaluación pública, ya que no se han publicado resultados de benchmarks, arquitectura detallada ni instrucciones de uso en la información disponible. Resulta interesante, eso sí, como ejemplo de fino ajuste de políticas VLA (vision-language-action) para manipuladores concretos y tareas de laboratorio con alta variabilidad.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada como objeto de evaluación pública, ya que no 
 | Formato de pesos | safetensors |
 | Pipeline declarado | robotics |
 | Etiquetas | safetensors, robotics, pi0.5, tag, arxiv:2603.24584, region:us |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,6 +88,6 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adipotnis/pi05-xarm-burette-variations70-ah32-tag
+- Hugging Face: https://huggingface.co/adipotnis/pi05-xarm-burette-variations70-ah32-tag
 - Perfil del autor: https://huggingface.co/adipotnis
 - Referencia arXiv citada en las etiquetas (no verificada): https://arxiv.org/abs/2603.24584

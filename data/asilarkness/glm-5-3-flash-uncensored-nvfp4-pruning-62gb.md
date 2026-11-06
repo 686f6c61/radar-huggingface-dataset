@@ -78,7 +78,7 @@ No se dispone de especificaciones completas de los modelos comparados, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asilarkness/GLM-5.3-Flash-Uncensored-NVFP4-Pruning-62GB
+- Hugging Face: https://huggingface.co/Asilarkness/GLM-5.3-Flash-Uncensored-NVFP4-Pruning-62GB
 - Modelo base: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-NVFP4
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo relacionado: https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-NVFP4

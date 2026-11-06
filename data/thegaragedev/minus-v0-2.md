@@ -18,7 +18,7 @@ La arquitectura subyacente es un VLM compacto de la familia LFM2.5 de LiquidAI (
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (build especifico para NPU AX650 con hidden state en precision completa; el resto de detalles no se indican) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (Transformers); build adicional para NPU en el directorio `axera/` |
 
 ## Arquitectura y entrenamiento
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minus-v0.2 | ~450M | no disponible | Deteccion de anuncios y estado de pantalla | lfm-open-license-v1.0 | HuggingFace (22 descargas) |
-| Minus-v0.1 | ~450M | no disponible | Deteccion de anuncios | lfm-open-license-v1.0 | HuggingFace |
-| LiquidAI/LFM2.5-VL-450M | ~450M | no disponible | Vision-lenguaje general | lfm-open-license-v1.0 | HuggingFace (modelo base) |
+| Minus-v0.2 | ~450M | no disponible | Deteccion de anuncios y estado de pantalla | lfm-open-license-v1.0 | Hugging Face (22 descargas) |
+| Minus-v0.1 | ~450M | no disponible | Deteccion de anuncios | lfm-open-license-v1.0 | Hugging Face |
+| LiquidAI/LFM2.5-VL-450M | ~450M | no disponible | Vision-lenguaje general | lfm-open-license-v1.0 | Hugging Face (modelo base) |
 
 La comparativa con modelos de proposito general de tamano similar no esta disponible en la informacion proporcionada. Minus-v0.2 se diferencia de su modelo base por el fine-tuning especifico y del v0.1 por el entrenamiento con fotogramas deformados a 512x512 y la cabeza de estado de pantalla.
 
@@ -91,11 +91,11 @@ La comparativa con modelos de proposito general de tamano similar no esta dispon
 - Licencia lfm-open-license-v1.0 (etiquetada como "other"): es necesario revisar los terminos del enlace de licencia del modelo base antes de un uso comercial.
 - El conjunto de datos de entrenamiento no se ha publicado, lo que limita la reproducibilidad y la auditoria de sesgos.
 - El build para NPU requiere mantener el estado oculto en precision completa; reducirla a 16 bits degrada gravemente la comprobacion de pantalla (78,2% frente a 95,9%).
-- Fecha de creacion en HuggingFace: 2026-10-28; el modelo tiene un historial muy corto (22 descargas, 0 likes), por lo que la validacion por parte de la comunidad es practicamente inexistente.
+- Fecha de creacion en Hugging Face: 2026-10-28; el modelo tiene un historial muy corto (22 descargas, 0 likes), por lo que la validacion por parte de la comunidad es practicamente inexistente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheGarageDev/Minus-v0.2
+- Modelo en Hugging Face: https://huggingface.co/TheGarageDev/Minus-v0.2
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M/blob/main/LICENSE
 - Version anterior: https://huggingface.co/TheGarageDev/Minus-v0.1

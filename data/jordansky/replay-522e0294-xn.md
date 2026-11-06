@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Jordansky/replay-522e0294-XN` es un checkpoint publicado en HuggingFace por el usuario Jordansky. La etiqueta de arquitectura presente en el repositorio es `qwen2`, y el recuento real de parametros extraido de los ficheros safetensors es de 3.085.938.688 (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos densos de ~3B. El repositorio ocupa 6,2 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16), aunque este extremo no se confirma en la informacion disponible.
+El modelo identificado como `Jordansky/replay-522e0294-XN` es un checkpoint publicado en Hugging Face por el usuario Jordansky. La etiqueta de arquitectura presente en el repositorio es `qwen2`, y el recuento real de parametros extraido de los ficheros safetensors es de 3.085.938.688 (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos densos de ~3B. El repositorio ocupa 6,2 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16), aunque este extremo no se confirma en la informacion disponible.
 
 El nombre del repositorio (`replay-522e0294-XN`) y la ausencia de pipeline, licencia e idiomas declarados sugieren que se trata de un artefacto de entrenamiento o de un checkpoint intermedio de un experimento, mas que de un modelo final documentado y listo para produccion. Con 9 descargas y 0 likes en el momento de la consulta, su adopcion publica es practicamente nula, por lo que no existe validacion externa de su comportamiento.
 
@@ -99,7 +99,7 @@ Dado que este repositorio no declara licencia ni idiomas, la comparacion relevan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordansky/replay-522e0294-XN
+- Hugging Face: https://huggingface.co/Jordansky/replay-522e0294-XN
 - Paper de la familia Qwen2 (referencia de la arquitectura etiquetada): https://arxiv.org/abs/2407.10671
 - Paper de la familia Qwen2.5 (referencia de la generacion posterior): https://arxiv.org/abs/2412.15115
 - No se han encontrado otros enlaces (repositorios, demos, blogs o documentacion adicional) en la informacion disponible.

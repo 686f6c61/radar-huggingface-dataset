@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zeyupan0219/coca-generation-notebook` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El paquete incluye `predict.py` como artefacto principal, junto con `config.json` y `training_args.json` que documentan la configuración de arquitectura y la receta de entrenamiento por defecto.
+`zeyupan0219/coca-generation-notebook` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El paquete incluye `predict.py` como artefacto principal, junto con `config.json` y `training_args.json` que documentan la configuración de arquitectura y la receta de entrenamiento por defecto.
 
 La escala declarada es "xlarge", con atención multi-query, fusión de bajo rango (low rank), activación gelu tanh y normalización groupnorm. El recuento real de parámetros en safetensors es de solo 16.576, lo que confirma que se trata de una maqueta de arquitectura y no de un modelo de gran tamaño. La licencia es MIT y el repositorio tiene un tamaño de 0.0 GB, con cero descargas y cero likes en el momento de la consulta.
 
@@ -80,5 +80,5 @@ No disponible. No se conocen modelos comparables dentro de la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeyupan0219/coca-generation-notebook
+- Repositorio Hugging Face: https://huggingface.co/zeyupan0219/coca-generation-notebook
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

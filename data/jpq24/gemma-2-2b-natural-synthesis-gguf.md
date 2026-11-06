@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JPQ24/gemma-2-2b-Natural-Synthesis-gguf
+- Repositorio Hugging Face: https://huggingface.co/JPQ24/gemma-2-2b-Natural-Synthesis-gguf
 - Modelo base Gemma 2 2B: https://huggingface.co/google/gemma-2-2b
 - Repositorio Gemma de Google DeepMind: https://github.com/google-deepmind/gemma
 - Pagina de Gemma 2 en Ollama: https://ollama.com/library/gemma2:2b

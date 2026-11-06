@@ -91,5 +91,5 @@ No se dispone de datos de benchmarks comparativos con otros modelos de segmentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold0
+- Hugging Face: https://huggingface.co/Pranilllllll/segformer-b0-kaggle-ktm-dataset-random-fold0
 - Modelo base: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512

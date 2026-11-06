@@ -35,7 +35,7 @@ El entrenamiento se realizo con LLaMA-Factory sobre el dataset `Nemotron-Cascade
 
 - Generacion de texto autoregresiva: el modelo es un LM ajustado por SFT, por lo que su funcion principal es completar y generar texto.
 - Razonamiento y respuesta a instrucciones: el ajuste sobre datos ShareGPT de la cascada Nemotron sugiere entrenamiento en formato conversacional instruccion-respuesta, aunque no se documenta el formato exacto de prompt.
-- Extraccion de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction`, por lo que puede usarse para obtener representaciones ocultas de texto.
+- Extraccion de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction`, por lo que puede usarse para obtener representaciones ocultas de texto.
 - Multilingue: no disponible; la model card no declara idiomas y el dataset de entrenamiento (ShareGPT de Nemotron) no se detalla.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
@@ -68,8 +68,8 @@ La model card incluye un `model-index` con la entrada `sft__Nemotron-Cascade-SFT
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-nc30k | 1,71B | 16k (segun nombre) | `other` | HuggingFace, 15 descargas |
-| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated | 1,71B (presumiblemente) | 16k (segun nombre) | No disponible | HuggingFace |
+| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-nc30k | 1,71B | 16k (segun nombre) | `other` | Hugging Face, 15 descargas |
+| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated | 1,71B (presumiblemente) | 16k (segun nombre) | No disponible | Hugging Face |
 | Alternativas de ~1,7B (p. ej. Qwen2.5-1.5B, SmolLM2-1.7B) | 1,5-1,7B | 32k en Qwen2.5-1.5B; no disponible para SmolLM2 | Apache 2.0 en Qwen2.5; Apache 2.0 en SmolLM2 | Ampliamente disponibles |
 
 No se dispone de datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a parametros, contexto declarado y licencia.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Nemotron (familia de modelos de NVIDIA): no se proporciona enlace en la informacion disponible

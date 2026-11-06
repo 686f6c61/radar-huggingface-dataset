@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dama-aibrain es un ajuste fino (fine-tuning) del modelo multimodal unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario the-eschatos en HuggingFace. Se distribuye como un modelo de 5.123.178.051 parametros (unos 5,12 mil millones) en formato safetensors y esta etiquetado con el pipeline image-text-to-text, lo que indica que acepta imagenes y texto como entrada y genera texto. La ficha del autor es minima: no documenta el dataset de ajuste, el numero de tokens de entrenamiento ni los hiperparametros utilizados.
+dama-aibrain es un ajuste fino (fine-tuning) del modelo multimodal unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario the-eschatos en Hugging Face. Se distribuye como un modelo de 5.123.178.051 parametros (unos 5,12 mil millones) en formato safetensors y esta etiquetado con el pipeline image-text-to-text, lo que indica que acepta imagenes y texto como entrada y genera texto. La ficha del autor es minima: no documenta el dataset de ajuste, el numero de tokens de entrenamiento ni los hiperparametros utilizados.
 
-El modelo parte de una version ya cuantizada a 4 bits (bnb-4bit) del modelo base y fue entrenado, segun la model card, con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de un entrenamiento "2x mas rapido" respecto a un flujo estandar. No se declara ninguna innovacion arquitectonica propia: se trata de un ajuste supervisado sobre un modelo preentrenado de la familia Gemma, con licencia declarada apache-2.0.
+El modelo parte de una version ya cuantizada a 4 bits (bnb-4bit) del modelo base y fue entrenado, segun la model card, con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de un entrenamiento "2x mas rapido" respecto a un flujo estandar. No se declara ninguna innovacion arquitectonica propia: se trata de un ajuste supervisado sobre un modelo preentrenado de la familia Gemma, con licencia declarada apache-2.0.
 
 Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 1 like, se creo y actualizo el mismo dia (2 de octubre de 2026) y no incluye ninguna evaluacion publicada. Es util, por tanto, como punto de partida para quien quiera reproducir o continuar el ajuste, no como modelo listo para produccion sin validacion previa.
 
@@ -93,10 +93,10 @@ Los datos de contexto, parametros y licencia de las alternativas corresponden a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog tecnico del modelo: no disponible
 - Demo o espacio de prueba: no disponible
 - Nota sobre la busqueda web: las consultas realizadas no devolvieron resultados relevantes sobre este modelo; los unicos resultados obtenidos eran articulos gramaticales sobre el articulo determinado en ingles, sin relacion con el modelo.

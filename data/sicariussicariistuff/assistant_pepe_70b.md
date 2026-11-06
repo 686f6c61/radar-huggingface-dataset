@@ -1,9 +1,9 @@
 # SicariusSicariiStuff/Assistant_Pepe_70B
 
 ## Resumen
-Assistant_Pepe_70B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-70B-Instruct, publicado por el usuario SicariusSicariiStuff en HuggingFace. Se trata de un modelo de lenguaje de 70.553.706.496 parámetros (aproximadamente 70,5 mil millones) orientado a tareas de asistencia conversacional y roleplay, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye en formato safetensors y hereda la licencia Llama 3.1 de su modelo base.
+Assistant_Pepe_70B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-70B-Instruct, publicado por el usuario SicariusSicariiStuff en Hugging Face. Se trata de un modelo de lenguaje de 70.553.706.496 parámetros (aproximadamente 70,5 mil millones) orientado a tareas de asistencia conversacional y roleplay, entrenado sobre el dataset propietario UBW_Tapestries del mismo autor. El modelo se distribuye en formato safetensors y hereda la licencia Llama 3.1 de su modelo base.
 
-La relevancia de este modelo radica en su condición de derivado de Llama 3.1 70B, una de las arquitecturas densas de referencia en la categoría de 70B, con una ventana de contexto de 128.000 tokens heredada del modelo original. El autor ofrece versiones adicionales de 8B y 32B, lo que facilita el despliegue en distintos rangos de hardware. El modelo está etiquetado únicamente para inglés y su pipeline no está declarado en la ficha de HuggingFace.
+La relevancia de este modelo radica en su condición de derivado de Llama 3.1 70B, una de las arquitecturas densas de referencia en la categoría de 70B, con una ventana de contexto de 128.000 tokens heredada del modelo original. El autor ofrece versiones adicionales de 8B y 32B, lo que facilita el despliegue en distintos rangos de hardware. El modelo está etiquetado únicamente para inglés y su pipeline no está declarado en la ficha de Hugging Face.
 
 Con 295 descargas y 82 likes en el momento de la consulta, se trata de un modelo de nicho dentro del ecosistema de fine-tunes de Llama, con un enfoque claramente orientado a la conversación y el roleplay más que a tareas de razonamiento técnico o generación de código en producción.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Assistant_Pepe_70B | 70,5B | no disponible (base: 128k) | llama3.1 | HuggingFace, safetensors | Fine-tune orientado a asistencia y roleplay |
-| meta-llama/Llama-3.1-70B-Instruct | 70,5B | 128.000 tokens | llama3.1 | HuggingFace, safetensors | Modelo base; referencia en la categoría 70B |
-| Assistant_Pepe_32B | no disponible | no disponible | llama3.1 | HuggingFace | Versión reducida del mismo ajuste |
-| Assistant_Pepe_8B | no disponible | no disponible | llama3.1 | HuggingFace | Versión pequeña del mismo ajuste |
+| Assistant_Pepe_70B | 70,5B | no disponible (base: 128k) | llama3.1 | Hugging Face, safetensors | Fine-tune orientado a asistencia y roleplay |
+| meta-llama/Llama-3.1-70B-Instruct | 70,5B | 128.000 tokens | llama3.1 | Hugging Face, safetensors | Modelo base; referencia en la categoría 70B |
+| Assistant_Pepe_32B | no disponible | no disponible | llama3.1 | Hugging Face | Versión reducida del mismo ajuste |
+| Assistant_Pepe_8B | no disponible | no disponible | llama3.1 | Hugging Face | Versión pequeña del mismo ajuste |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de Assistant_Pepe_70B frente a alternativas de la misma categoría.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Ass
 - Procedencia: el dataset de entrenamiento es propietario y no verificable, lo que limita la reproducibilidad y la auditoría del modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B
 - Versión 8B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_8B
 - Versión 32B: https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_32B
 - Dataset UBW_Tapestries: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anonymous36/misty-tarn-15` es un modelo multimodal de tipo imagen-texto-a-texto publicado en HuggingFace por el usuario anonimo Anonymous36 el 24 de octubre de 2026. Se distribuye en formato safetensors bajo licencia Apache 2.0, con 9.409.813.744 parametros reales registrados en los metadatos del repositorio (18,8 GB de pesos, lo que corresponde a precision BF16). La etiqueta de arquitectura del config es `qwen3_5`, lo que situa al modelo en la familia Qwen 3.5, aunque el autor no publica ninguna documentacion que lo confirme ni que detalle el entrenamiento.
+`Anonymous36/misty-tarn-15` es un modelo multimodal de tipo imagen-texto-a-texto publicado en Hugging Face por el usuario anonimo Anonymous36 el 24 de octubre de 2026. Se distribuye en formato safetensors bajo licencia Apache 2.0, con 9.409.813.744 parametros reales registrados en los metadatos del repositorio (18,8 GB de pesos, lo que corresponde a precision BF16). La etiqueta de arquitectura del config es `qwen3_5`, lo que situa al modelo en la familia Qwen 3.5, aunque el autor no publica ninguna documentacion que lo confirme ni que detalle el entrenamiento.
 
 El interes tecnico del modelo es limitado pero real: se trata de un modelo de ~9,4B parametros con entrada de imagen y ventana de pesos abierta, un rango de tamano poco cubierto dentro de la familia Qwen 3.5 y adecuado para despliegue en una sola GPU de 24 GB. El problema es que la model card esta practicamente vacia (solo contiene el frontmatter con `license` y `library_name`), no hay resultados de benchmarks, no se declaran idiomas soportados, no hay demos ni paper asociado, y el repositorio acumula 0 descargas y 0 likes.
 
@@ -101,6 +101,6 @@ Frente a estas alternativas, la ventaja de `misty-tarn-15` es unicamente la comb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anonymous36/misty-tarn-15
+- Modelo en Hugging Face: https://huggingface.co/Anonymous36/misty-tarn-15
 
 No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a contenido sin relacion con este modelo: modelos 3D en Sketchfab (https://sketchfab.com/3d-models/misty-a4cb3a85984f4e44bd880ec36a2f50e2 y https://sketchfab.com/3d-models/tarn-ea15c5f8920842608fbbc342ed82d504), arte generativo en Tensor.Art (https://tensor.art/tag/645592322838536264), un generador de modelos 3D (https://hitem3d.pro/) y un calendario de lanzamientos de IA (https://www.scriptbyai.com/ai-model-release-calendar/). No hay paper, blog, demo ni repositorio de codigo asociados al modelo.

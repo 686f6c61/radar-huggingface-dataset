@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05_FAST_robotwin_post_training_ES_SS` | no disponible | no disponible | no disponible (ver paper) | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
-| `pi05_FAST_robotwin_mid_training` | no disponible | no disponible | no disponible | no disponible | Pesos en HuggingFace (checkpoint base) |
+| `pi05_FAST_robotwin_post_training_ES_SS` | no disponible | no disponible | no disponible (ver paper) | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
+| `pi05_FAST_robotwin_mid_training` | no disponible | no disponible | no disponible | no disponible | Pesos en Hugging Face (checkpoint base) |
 | π0.5 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Otros VLAs para RoboTwin | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La única comparación directa documentada es con el checkpoint de mid-training 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_robotwin_post_training_ES_SS
+- Modelo en Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_robotwin_post_training_ES_SS
 - Checkpoint base (mid-training): https://huggingface.co/prachigarg23/pi05_FAST_robotwin_mid_training
 - Dataset de demostraciones expertas: https://huggingface.co/datasets/prachigarg23/robotwin_post_training_stack_blocks_expert
 - Dataset de auto-demonstraciones: https://huggingface.co/datasets/prachigarg23/robotwin_self_demos

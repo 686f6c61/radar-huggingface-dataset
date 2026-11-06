@@ -72,9 +72,9 @@ El modelo no tiene benchmarks de texto (MMLU, HumanEval, etc.) porque es un mode
 
 | Modelo | Licencia | Arquitectura | Tamaño | Ejecución | Disponibilidad |
 |---|---|---|---|---|---|
-| ormbg-LiteRT (este) | Apache-2.0 | ISNet (CNN) | 176 MB | LiteRT (GPU/NPU) | HuggingFace |
-| ormbg (original) | Apache-2.0 | ISNet (CNN) | 176 MB | PyTorch | HuggingFace |
-| RMBG-1.4 | No comercial | U²-Net | ~176 MB | PyTorch / ONNX | HuggingFace |
+| ormbg-LiteRT (este) | Apache-2.0 | ISNet (CNN) | 176 MB | LiteRT (GPU/NPU) | Hugging Face |
+| ormbg (original) | Apache-2.0 | ISNet (CNN) | 176 MB | PyTorch | Hugging Face |
+| RMBG-1.4 | No comercial | U²-Net | ~176 MB | PyTorch / ONNX | Hugging Face |
 
 RMBG-1.4 es la alternativa más conocida, pero su licencia no permite uso comercial. ormbg-LiteRT ofrece la misma categoría de tarea (matting de fondo) con licencia Apache-2.0, y añade la ventaja de estar ya optimizado para ejecución on-device con LiteRT. No hay datos públicos de comparación de calidad entre ambos.
 
@@ -90,7 +90,7 @@ RMBG-1.4 es la alternativa más conocida, pero su licencia no permite uso comerc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/ormbg-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/ormbg-LiteRT
 - Repositorio de archivos: https://huggingface.co/litert-community/ormbg-LiteRT/tree/main
 - Modelo original (schirrmacher/ormbg): https://huggingface.co/schirrmacher/ormbg
 - Ejemplos de LiteRT (Google AI Edge): https://github.com/google-ai-edge/litert-samples

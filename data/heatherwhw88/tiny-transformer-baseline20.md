@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer baseline20 es un prototipo de investigación publicado por el usuario heatherwhw88 en HuggingFace. Se trata de un transformer de escala minúscula, con 24.832 parámetros totales, orientado a tareas de generación de texto. El modelo se distribuye como checkpoint de inicialización (no entrenado ni auditado), acompañado de un script de ejecución (`pipeline.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
+Tiny Transformer baseline20 es un prototipo de investigación publicado por el usuario heatherwhw88 en Hugging Face. Se trata de un transformer de escala minúscula, con 24.832 parámetros totales, orientado a tareas de generación de texto. El modelo se distribuye como checkpoint de inicialización (no entrenado ni auditado), acompañado de un script de ejecución (`pipeline.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto.
 
 El propio autor indica explícitamente en la model card que el checkpoint de `model.safetensors` sirve para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado con benchmarks. No se reclama ninguna puntuación de rendimiento en el repositorio, y la model card advierte que el modelo no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -78,11 +78,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación: no evaluado; al no haber sido entrenado ni evaluado, no puede caracterizarse.
 - Limitaciones de contexto e idioma: se desconocen tanto la longitud máxima de contexto como los idiomas soportados.
 - Restricciones de licencia: la licencia es MIT, permisiva para uso comercial, pero el autor recuerda que deben revisarse por separado los términos de los datos de origen si se emplean conjuntos externos.
-- Carga automática: al ser una implementación personalizada, las APIs genéricas de HuggingFace `transformers` requieren un adaptador explícito, lo que añade fricción de integración.
+- Carga automática: al ser una implementación personalizada, las APIs genéricas de Hugging Face `transformers` requieren un adaptador explícito, lo que añade fricción de integración.
 - Madurez del repositorio: cero descargas y cero "likes"; no hay evidencia de uso ni de validación por parte de la comunidad.
 - Recomendación del autor: tratar la implementación como un punto de partida experimental y documentar por separado cualquier resultado de un futuro checkpoint entrenado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heatherwhw88/tiny-transformer-baseline20
+- Modelo en Hugging Face: https://huggingface.co/heatherwhw88/tiny-transformer-baseline20
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

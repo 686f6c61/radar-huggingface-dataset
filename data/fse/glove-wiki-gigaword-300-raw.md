@@ -98,8 +98,8 @@ La comparación directa solo es posible dentro de la propia familia fse, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-300-raw
-- Modelo base en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-300
+- Modelo en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-300-raw
+- Modelo base en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-300
 - Repositorio de fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Licencia PDDL 1.0: https://opendatacommons.org/licenses/pddl/1-0/
 - Repositorio de GloVe (Stanford NLP): https://github.com/stanfordnlp/GloVe

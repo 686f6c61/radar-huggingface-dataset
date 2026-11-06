@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2` es un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.2-3B`. No se trata de un modelo completo, sino de un adaptador PEFT de 0,4 GB que debe cargarse junto al modelo base. El nombre indica que el ajuste se realizó sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles e hindi, con 5000 ejemplos y la tecnica DoRA (Weight-Decomposed Low-Rank Adaptation).
+El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2` es un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base `meta-llama/Llama-3.2-3B`. No se trata de un modelo completo, sino de un adaptador PEFT de 0,4 GB que debe cargarse junto al modelo base. El nombre indica que el ajuste se realizó sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles e hindi, con 5000 ejemplos y la tecnica DoRA (Weight-Decomposed Low-Rank Adaptation).
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso tipico de adaptador experimental de bajo coste para una tarea de clasificacion (NLI de tres clases: implicacion, neutralidad y contradiccion) y para estudiar transferencia cross-lingual entre un idioma de altos recursos y otro de recursos medios. Por otro, sirve como advertencia metodologica: la model card del autor es la plantilla vacia de HuggingFace, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso tipico de adaptador experimental de bajo coste para una tarea de clasificacion (NLI de tres clases: implicacion, neutralidad y contradiccion) y para estudiar transferencia cross-lingual entre un idioma de altos recursos y otro de recursos medios. Por otro, sirve como advertencia metodologica: la model card del autor es la plantilla vacia de Hugging Face, sin datos de entrenamiento, hiperparametros, evaluacion ni licencia.
 
 La informacion disponible es muy limitada: 0 descargas, 0 likes, licencia e idiomas no declarados, y ninguna referencia a benchmarks. Todo lo que no aparece en los metadatos se marca como "no disponible" en esta ficha. Se incluyen como contexto, debidamente etiquetadas, las caracteristicas publicas del modelo base Llama-3.2-3B.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en XNLI |
 |---|---|---|---|---|---|
-| `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2` (adaptador) | No disponible (base de 3,21 mil millones) | No disponible (base de 128.000 tokens) | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
-| `meta-llama/Llama-3.2-3B` (modelo base) | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente descargado | No aplica (no ajustado a NLI) |
-| `Qwen/Qwen2.5-3B` | 3,09 mil millones | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace | No disponible |
-| `FacebookAI/xlm-roberta-large` | 560 millones | 512 tokens | MIT | HuggingFace | No disponible en esta ficha; es un modelo de referencia habitual en XNLI |
-| `microsoft/mdeberta-v3-base` | 278 millones | 512 tokens | MIT | HuggingFace | No disponible en esta ficha |
+| `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2` (adaptador) | No disponible (base de 3,21 mil millones) | No disponible (base de 128.000 tokens) | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
+| `meta-llama/Llama-3.2-3B` (modelo base) | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente descargado | No aplica (no ajustado a NLI) |
+| `Qwen/Qwen2.5-3B` | 3,09 mil millones | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face | No disponible |
+| `FacebookAI/xlm-roberta-large` | 560 millones | 512 tokens | MIT | Hugging Face | No disponible en esta ficha; es un modelo de referencia habitual en XNLI |
+| `microsoft/mdeberta-v3-base` | 278 millones | 512 tokens | MIT | Hugging Face | No disponible en esta ficha |
 
 La comparacion es estructural: no se dispone de metricas de XNLI para el adaptador, por lo que no es posible afirmar que supere o quede por debajo de las alternativas. Los modelos de la familia XLM-R y mDeBERTa son sustancialmente mas pequenos y rapidos para clasificacion de pares de frases, mientras que el adaptador sobre Llama-3.2-3B aporta un backbone generativo mucho mayor y contexto largo, a cambio de un coste de inferencia superior.
 
@@ -97,7 +97,7 @@ La comparacion es estructural: no se dispone de metricas de XNLI para el adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_DoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Articulo de DoRA (referencia de la tecnica nombrada en el identificador, no citada en la model card): https://arxiv.org/abs/2402.09353

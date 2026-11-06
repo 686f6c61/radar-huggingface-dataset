@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Daporte/prosody2text-weights",
+  "slug": "daporte-prosody2text-weights",
+  "author": "Daporte",
+  "url": "https://huggingface.co/Daporte/prosody2text-weights",
+  "created_at": "2026-11-02T11:25:01.000Z",
+  "updated_at": "2026-11-03T13:43:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "prosody_to_text",
+    "feature-extraction",
+    "prosody",
+    "speech-recognition",
+    "custom_code",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3134333150,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daporte/prosody2text-weights · Hugging Face",
+      "url": "https://huggingface.co/Daporte/prosody2text-weights",
+      "snippet": "Instructions to use Daporte/prosody2text-weights with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Daporte/prosody2text-weights with Transformers:"
+    },
+    {
+      "title": "Prosody2text - a Hugging Face Space by Daporte",
+      "url": "https://huggingface.co/spaces/Daporte/Prosody2text",
+      "snippet": "Use the canvas to draw pressure‑sensitive gestures that define a pitch contour. The app turns the drawing into speech, showing the pitch and intensity curves and providing a text transcription when..."
+    }
+  ]
+}

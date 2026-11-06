@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aliane29/arassm-base
+- Hugging Face: https://huggingface.co/aliane29/arassm-base
 - Paper (arXiv): https://arxiv.org/abs/2608.08256
 - PDF del paper: https://arxiv.org/pdf/2608.08256

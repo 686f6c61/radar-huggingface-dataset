@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `motor-fault-detection/motor`, publicado por el usuario `motor-fault-detection` en HuggingFace, se presenta como un artefacto asociado a la deteccion de fallos en motores. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso. No se declara pipeline, idiomas soportados ni formato de pesos.
+El repositorio `motor-fault-detection/motor`, publicado por el usuario `motor-fault-detection` en Hugging Face, se presenta como un artefacto asociado a la deteccion de fallos en motores. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso. No se declara pipeline, idiomas soportados ni formato de pesos.
 
 Con la informacion disponible no es posible confirmar que se trate de un modelo de lenguaje, un modelo de vision, un clasificador tabular, un conjunto de pesos para un detector de anomalias o simplemente un repositorio contenedor. El identificador sugiere una aplicacion industrial (mantenimiento predictivo, diagnostico de motores electricos o de combustion), pero no hay evidencia tecnica en la model card que lo respalde.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/motor-fault-detection/motor
+- Repositorio en Hugging Face: https://huggingface.co/motor-fault-detection/motor
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

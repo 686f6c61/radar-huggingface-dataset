@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/rfdiffusion-complex-beta | 60,9 M | Difusión SE(3) para esqueletos proteicos (variante complejos beta) | No aplica | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/rfdiffusion-base | 59,879 M | Difusión SE(3) para esqueletos proteicos (generación y *motif scaffolding*) | No aplica | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/rfdiffusion-complex-base | 59,879 M | Difusión SE(3) para complejos y binders | No aplica | AGPL-3.0 | HuggingFace (OFoldX) |
+| oteam/rfdiffusion-complex-beta | 60,9 M | Difusión SE(3) para esqueletos proteicos (variante complejos beta) | No aplica | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/rfdiffusion-base | 59,879 M | Difusión SE(3) para esqueletos proteicos (generación y *motif scaffolding*) | No aplica | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/rfdiffusion-complex-base | 59,879 M | Difusión SE(3) para complejos y binders | No aplica | AGPL-3.0 | Hugging Face (OFoldX) |
 | RFdiffusion oficial (RosettaCommons) | No disponible | Difusión SE(3) para esqueletos proteicos | No aplica | No disponible en la información | GitHub (RosettaCommons) |
 
 Las variantes de OFoldX comparten arquitectura y tamaño (32+4+4 bloques, MSA 256, pair 128, 50 pasos), diferenciándose por el checkpoint y su especialización funcional. No se dispone de datos de rendimiento comparativo entre variantes en la información proporcionada.
@@ -100,7 +100,7 @@ Las variantes de OFoldX comparten arquitectura y tamaño (32+4+4 bloques, MSA 25
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/rfdiffusion-complex-beta
+- Modelo en Hugging Face: https://huggingface.co/oteam/rfdiffusion-complex-beta
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base epoch8: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex-base: https://huggingface.co/oteam/rfdiffusion-complex-base

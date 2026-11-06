@@ -67,7 +67,7 @@ La comparativa se limita al modelo base y a otros checkpoints del mismo barrido,
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `agentic-ptb/dpsk-v4-flash.h035.sft3.step_300` | 9,41 B | no disponible | no disponible | Checkpoint intermedio, no apto para producción |
-| `Qwen/Qwen3.5-9B-Base` | 9,41 B | no especificado en la ficha | no disponible | Modelo base disponible en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` | 9,41 B | no especificado en la ficha | no disponible | Modelo base disponible en Hugging Face |
 | Otros checkpoints del sweep AgentPTB | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (fine-tunes intermedios de Qwen3.5-9B) en la información proporcionada.
@@ -83,6 +83,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h035.sft3.step_300
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h035.sft3.step_300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Origen del checkpoint (referencia en la model card): `msr-spare/msr-agentic-ptb-dpsk-sft3-intermediates` (sin URL directa disponible)

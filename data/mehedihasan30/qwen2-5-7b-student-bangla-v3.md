@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-7B Student Bangla v3 es un adaptador LoRA entrenado sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, publicado por el usuario mehedihasan30 en HuggingFace. Se trata de un ajuste fino de dominio muy acotado: un asistente de preguntas y respuestas para estudiantes de Bangladesh, capaz de responder en bengalí (bn), inglés (en) y banglish (bengalí romanizado mezclado con inglés). No es un modelo nuevo desde cero, sino un adaptador PEFT de rango 16 que se carga sobre el Qwen2.5-7B-Instruct original; el repositorio ocupa solo 0,2 GB porque contiene únicamente los pesos del adaptador, no los 7.600 millones de parámetros completos.
+Qwen2.5-7B Student Bangla v3 es un adaptador LoRA entrenado sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, publicado por el usuario mehedihasan30 en Hugging Face. Se trata de un ajuste fino de dominio muy acotado: un asistente de preguntas y respuestas para estudiantes de Bangladesh, capaz de responder en bengalí (bn), inglés (en) y banglish (bengalí romanizado mezclado con inglés). No es un modelo nuevo desde cero, sino un adaptador PEFT de rango 16 que se carga sobre el Qwen2.5-7B-Instruct original; el repositorio ocupa solo 0,2 GB porque contiene únicamente los pesos del adaptador, no los 7.600 millones de parámetros completos.
 
 El entrenamiento se realizó con QLoRA a 4 bits (r=16, 150 pasos, aproximadamente 2 épocas) sobre una GPU Colab T4, usando el dataset mehedihasan30/student-qa-data-620, compuesto por 619 pares pregunta-respuesta divididos en 588 de entrenamiento y 31 de test. La tercera versión del modelo incorpora 200 pares específicos de la universidad AIUB (American International University-Bangladesh) más 219 actualizados con información de la admisión de primavera 2026-27 (exámenes del 24 de septiembre y finales del 5 de octubre, nuevos programas de ME y Microbiología, avisos de octubre de 2026).
 
@@ -81,10 +81,10 @@ El autor indica que la coincidencia de estilo e idioma es buena, pero no aporta 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-7b-student-bangla-v3 (este modelo) | 7B + adaptador LoRA r=16 | No disponible; ejemplo con 2.048 tokens | Sin benchmarks publicados; train loss 2,56 / eval loss 2,28 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| Qwen2.5-7B-Instruct (modelo base de la familia) | 7B | Soporte de contexto largo segun la documentacion de Qwen; cifra exacta no disponible en la informacion proporcionada | Referencia de la familia Qwen2.5 en razonamiento, matematicas y multilingue segun guias externas; cifras concretas no disponibles aqui | Apache-2.0 | Ampliamente disponible en HuggingFace (coleccion Qwen2.5) |
-| Qwen2.5-7B-student-bangla (v1) | 7B + adaptador LoRA | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-student-bangla-v2 | 7B + adaptador LoRA | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| qwen2.5-7b-student-bangla-v3 (este modelo) | 7B + adaptador LoRA r=16 | No disponible; ejemplo con 2.048 tokens | Sin benchmarks publicados; train loss 2,56 / eval loss 2,28 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| Qwen2.5-7B-Instruct (modelo base de la familia) | 7B | Soporte de contexto largo segun la documentacion de Qwen; cifra exacta no disponible en la informacion proporcionada | Referencia de la familia Qwen2.5 en razonamiento, matematicas y multilingue segun guias externas; cifras concretas no disponibles aqui | Apache-2.0 | Ampliamente disponible en Hugging Face (coleccion Qwen2.5) |
+| Qwen2.5-7B-student-bangla (v1) | 7B + adaptador LoRA | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-student-bangla-v2 | 7B + adaptador LoRA | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 La familia Qwen2.5 incluye variantes preentrenadas e instruct de 0,5B, 1,5B, 3B, 7B, 14B, 32B y 72B, por lo que existen alternativas de mayor tamano dentro de la misma familia si se necesita mas capacidad. No se dispone de datos comparativos de benchmarks entre este adaptador y modelos de Q&A educativo en bengalí.
 
@@ -104,7 +104,7 @@ La familia Qwen2.5 incluye variantes preentrenadas e instruct de 0,5B, 1,5B, 3B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehedihasan30/qwen2.5-7b-student-bangla-v3
+- Modelo en Hugging Face: https://huggingface.co/mehedihasan30/qwen2.5-7b-student-bangla-v3
 - Version v1: https://huggingface.co/mehedihasan30/qwen2.5-7b-student-bangla
 - Version v2: https://huggingface.co/mehedihasan30/qwen2.5-7b-student-bangla-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit

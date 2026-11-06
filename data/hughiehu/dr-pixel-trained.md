@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DR Pixel Trained | 27,36 B | 131.072 | Vision-lenguaje especializado en retrieval visual de papers | Apache 2.0 | HuggingFace (39 descargas) |
-| Qwen/Qwen3.6-27B (base) | 27 B (aprox.) | no disponible en la informacion | Modelo multimodal generalista | no disponible en la informacion | HuggingFace |
+| DR Pixel Trained | 27,36 B | 131.072 | Vision-lenguaje especializado en retrieval visual de papers | Apache 2.0 | Hugging Face (39 descargas) |
+| Qwen/Qwen3.6-27B (base) | 27 B (aprox.) | no disponible en la informacion | Modelo multimodal generalista | no disponible en la informacion | Hugging Face |
 | Alternativas de deep research visual | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con otros sistemas de deep research visual no puede completarse con los datos proporcionados: no se dispone de especificaciones de modelos comparables de la misma categoria en la informacion disponible.
@@ -87,7 +87,7 @@ La comparacion con otros sistemas de deep research visual no puede completarse c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HughieHu/DR-Pixel-Trained
+- Modelo en Hugging Face: https://huggingface.co/HughieHu/DR-Pixel-Trained
 - Dataset de entrenamiento y benchmark: https://huggingface.co/datasets/HughieHu/drpixel-bench
 - Repositorio del proyecto (harness de evaluacion y receta de entrenamiento): https://github.com/HughieHu/DRPixel
 - Receta de entrenamiento: https://github.com/HughieHu/DRPixel/blob/main/train/README.md

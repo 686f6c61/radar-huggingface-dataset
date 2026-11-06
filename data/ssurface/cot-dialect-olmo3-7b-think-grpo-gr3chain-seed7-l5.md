@@ -71,10 +71,10 @@ La informacion disponible no incluye benchmarks de modelos comparables. Se ofrec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l5 (este) | 7B (base) + LoRA | no disponible | Apache 2.0 | HuggingFace (adaptador) |
-| allenai/Olmo-3-7B-Think | 7B | largo (no especificado) | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 license | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | HuggingFace |
+| cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l5 (este) | 7B (base) + LoRA | no disponible | Apache 2.0 | Hugging Face (adaptador) |
+| allenai/Olmo-3-7B-Think | 7B | largo (no especificado) | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 license | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en GSM8K para estos modelos en la informacion proporcionada. El adaptador esta disenado para un proposito de investigacion especifico (compresion de cadena), no como un competidor generalista.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo en GSM8K para estos modelos en
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-seed7-l5
 - Modelo base (Olmo-3-7B-Think): https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT previo (necesario para cargar el adaptador): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961

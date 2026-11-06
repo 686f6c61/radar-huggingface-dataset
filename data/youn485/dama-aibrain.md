@@ -4,7 +4,7 @@
 
 dama-aibrain es un modelo de lenguaje finetuneado por el usuario youn485, construido a partir de la base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Se trata de un modelo multimodal (image-text-to-text) que hereda las capacidades de visión y lenguaje de la familia Gemma 4 de Google, aunque el autor no ha publicado detalles sobre el dataset de fine-tuning ni las tareas específicas para las que fue optimizado.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio contiene únicamente la configuración y los pesos en formato 4-bit (bnb), resultado del entrenamiento con la librería Unsloth y TRL de HuggingFace. La relevancia de este modelo reside en su naturaleza open source y su potencial como punto de partida para tareas de conversación e instrucción, aunque la ausencia de documentación técnica y métricas de rendimiento limita su evaluación objetiva.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio contiene únicamente la configuración y los pesos en formato 4-bit (bnb), resultado del entrenamiento con la librería Unsloth y TRL de Hugging Face. La relevancia de este modelo reside en su naturaleza open source y su potencial como punto de partida para tareas de conversación e instrucción, aunque la ausencia de documentación técnica y métricas de rendimiento limita su evaluación objetiva.
 
 Cabe destacar que el repositorio presenta un tamaño de 0.0 GB y cero descargas, lo que sugiere que el modelo podría estar incompleto o ser un experimento personal del autor. No se han publicado resultados de benchmarks ni ejemplos de uso en la model card.
 
@@ -25,7 +25,7 @@ Cabe destacar que el repositorio presenta un tamaño de 0.0 GB y cero descargas,
 
 La arquitectura subyacente corresponde a Gemma 4, la familia de modelos abiertos de Google, que combina un transformer decoder-only con capacidades multimodales (procesamiento de imagen y texto). El modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit` es una version cuantizada a 4-bit preparada por Unsloth para fine-tuning eficiente en memoria.
 
-El proceso de entrenamiento utilizo la libreria Unsloth junto con TRL (Transformer Reinforcement Learning) de HuggingFace, lo que permite un fine-tuning aproximadamente 2 veces mas rapido que los metodos convencionales. El autor no ha especificado el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se indica el numero total de tokens de entrenamiento ni la composicion del corpus.
+El proceso de entrenamiento utilizo la libreria Unsloth junto con TRL (Transformer Reinforcement Learning) de Hugging Face, lo que permite un fine-tuning aproximadamente 2 veces mas rapido que los metodos convencionales. El autor no ha especificado el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se indica el numero total de tokens de entrenamiento ni la composicion del corpus.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento de dama-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/youn485/dama-aibrain
+- Repositorio Hugging Face: https://huggingface.co/youn485/dama-aibrain
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Entrada en FriendliAI (referencia): https://friendli.ai/models/ohyou/dama-aibrain

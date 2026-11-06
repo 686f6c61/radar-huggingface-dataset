@@ -88,8 +88,8 @@ La comparativa se basa en los datos de benchmarks disponibles; el modelo supera 
 
 ## Enlaces
 
-- [HuggingFace - modelo espejo](https://huggingface.co/jacob-rojic/mirror-wearetop-affine-5gcl5uxakb-chkx2)
-- [HuggingFace - modelo original](https://huggingface.co/wearetop/affine-5gcl5uxakb-chkx2)
+- [Hugging Face - modelo espejo](https://huggingface.co/jacob-rojic/mirror-wearetop-affine-5gcl5uxakb-chkx2)
+- [Hugging Face - modelo original](https://huggingface.co/wearetop/affine-5gcl5uxakb-chkx2)
 - [Blog oficial de Qwen sobre Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b)
 - [Modelo similar: jacob-rojic/albedo-arc-jacob-rojic-w-dare](https://huggingface.co/jacob-rojic/albedo-arc-jacob-rojic-w-dare)
 - [FriendliAI - página del modelo affine-5gcl5uxakb-chkx2](https://friendli.ai/models/wearetop/affine-5gcl5uxakb-chkx2)

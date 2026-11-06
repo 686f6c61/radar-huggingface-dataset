@@ -122,7 +122,7 @@ No se dispone de datos comparativos de cuantizaciones NVFP4 equivalentes de otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prithivMLmods/Llama-3.3-70B-Instruct-NVFP4-GGUF
+- Hugging Face: https://huggingface.co/prithivMLmods/Llama-3.3-70B-Instruct-NVFP4-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Shard 1: https://huggingface.co/prithivMLmods/Llama-3.3-70B-Instruct-NVFP4-GGUF/blob/main/Llama-3.3-70B-Instruct-NVFP4-00001-of-00005.gguf

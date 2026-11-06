@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nexh98/clamp-checkpoints es un repositorio publicado en HuggingFace por el usuario nexh98 bajo licencia Apache 2.0. Se trata de un artefacto de 0,2 GB creado el 21 de septiembre de 2026 y actualizado el mismo dia, sin model card util (el README unicamente contiene la declaracion de licencia), sin pipeline declarado, sin idiomas especificados y sin etiquetas que identifiquen arquitectura, familia o tarea.
+nexh98/clamp-checkpoints es un repositorio publicado en Hugging Face por el usuario nexh98 bajo licencia Apache 2.0. Se trata de un artefacto de 0,2 GB creado el 21 de septiembre de 2026 y actualizado el mismo dia, sin model card util (el README unicamente contiene la declaracion de licencia), sin pipeline declarado, sin idiomas especificados y sin etiquetas que identifiquen arquitectura, familia o tarea.
 
 Con la informacion disponible no es posible determinar que modelo contiene el repositorio, cuantos parametros tiene, cual es su longitud de contexto ni sobre que datos fue entrenado. El propio nombre del repositorio sugiere que se trata de un contenedor de checkpoints de entrenamiento o de puntos de guardado intermedios, pero esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -78,7 +78,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nexh98/clamp-checkpoints | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| nexh98/clamp-checkpoints | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexh98/clamp-checkpoints
+- Hugging Face: https://huggingface.co/nexh98/clamp-checkpoints
 - No se han encontrado enlaces relevantes al modelo, a papers, repositorios de codigo, blogs o demos en la busqueda web realizada. Los resultados devueltos correspondian a foros de un proveedor de television y no guardan relacion con el artefacto.

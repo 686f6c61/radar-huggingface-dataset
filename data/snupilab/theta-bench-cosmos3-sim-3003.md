@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THETA Bench Cosmos3 Edge Policy es un repositorio de resultados de entrenamiento publicado por snupilab dentro del ecosistema THETA Bench, orientado a robótica. No se trata de un modelo de lenguaje ni de un checkpoint listo para inferencia: la propia model card indica que el entrenamiento está en curso y que el repositorio contiene únicamente metadatos. El pipeline declarado en HuggingFace es "robotics" y los tags incluyen robotics, theta-bench y mujoco, lo que sitúa el trabajo en el ámbito de las políticas de control entrenadas en simulación.
+THETA Bench Cosmos3 Edge Policy es un repositorio de resultados de entrenamiento publicado por snupilab dentro del ecosistema THETA Bench, orientado a robótica. No se trata de un modelo de lenguaje ni de un checkpoint listo para inferencia: la propia model card indica que el entrenamiento está en curso y que el repositorio contiene únicamente metadatos. El pipeline declarado en Hugging Face es "robotics" y los tags incluyen robotics, theta-bench y mujoco, lo que sitúa el trabajo en el ámbito de las políticas de control entrenadas en simulación.
 
 El escenario de entrenamiento declarado es "Simulation training, 3,003 segments", con un objetivo de 40.000 actualizaciones del optimizador, batch por GPU de 16 sobre 8 GPUs (batch global 128) y 18 condiciones por batch global. El pool de simulación se compone de 1.200 demostraciones exitosas L1/L2 y 1.803 prefijos L0 extraídos, abarcando 18 condiciones. La model card advierte explícitamente de que los 3.003 segmentos no equivalen a 3.003 demostraciones independientes.
 
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye arquitectura, numero de p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snupilab/theta-bench-cosmos3-sim-3003
+- Repositorio en Hugging Face: https://huggingface.co/snupilab/theta-bench-cosmos3-sim-3003
 - Dataset asociado: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revision 8b2cd31e107b64cb13f812ea217a63a20845c78a): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Paper, blog o repositorio de codigo: no disponibles en la informacion proporcionada.

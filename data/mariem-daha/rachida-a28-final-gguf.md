@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RACHIDA-a28-final.gguf es un modelo publicado en HuggingFace por el usuario Mariem-Daha. Se distribuye unicamente en formato GGUF, el contenedor de pesos empleado por el ecosistema llama.cpp, lo que indica que esta pensado para inferencia local o en servidores con CPU/GPU mixtas mas que para entrenamiento o ajuste fino. El repositorio se publico y actualizo en la misma marca temporal (14 de septiembre de 2026) y acumula cero descargas y cero "likes" en el momento de redactar esta ficha.
+RACHIDA-a28-final.gguf es un modelo publicado en Hugging Face por el usuario Mariem-Daha. Se distribuye unicamente en formato GGUF, el contenedor de pesos empleado por el ecosistema llama.cpp, lo que indica que esta pensado para inferencia local o en servidores con CPU/GPU mixtas mas que para entrenamiento o ajuste fino. El repositorio se publico y actualizo en la misma marca temporal (14 de septiembre de 2026) y acumula cero descargas y cero "likes" en el momento de redactar esta ficha.
 
 La model card asociada es practicamente vacia: contiene exclusivamente la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin idiomas soportados. El identificador "a28" no viene acompanado de ninguna explicacion del autor, por lo que no es posible confirmar si alude al numero de parametros, a una version interna o a un identificador de experimento.
 
@@ -89,6 +89,6 @@ No disponible. No es posible establecer una comparativa solvente sin conocer el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mariem-Daha/RACHIDA-a28-final.gguf
+- Hugging Face: https://huggingface.co/Mariem-Daha/RACHIDA-a28-final.gguf
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

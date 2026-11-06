@@ -4,7 +4,7 @@
 
 ## Resumen
 
-1ys1/areumii-handover_v1 es una política robótica de tipo visión-lenguaje-acción (VLA) publicada por el usuario 1ys1 en HuggingFace Hub. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, la implementación de SmolVLA descrita en el paper arXiv:2506.01844, una arquitectura compacta de VLA diseñada explícitamente para reducir el coste computacional y poder desplegarse en hardware de consumo. El modelo resultante tiene 450.046.176 parámetros (aproximadamente 450 millones) y se distribuye en formato safetensors con licencia Apache 2.0.
+1ys1/areumii-handover_v1 es una política robótica de tipo visión-lenguaje-acción (VLA) publicada por el usuario 1ys1 en Hugging Face Hub. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, la implementación de SmolVLA descrita en el paper arXiv:2506.01844, una arquitectura compacta de VLA diseñada explícitamente para reducir el coste computacional y poder desplegarse en hardware de consumo. El modelo resultante tiene 450.046.176 parámetros (aproximadamente 450 millones) y se distribuye en formato safetensors con licencia Apache 2.0.
 
 El problema que resuelve es concreto: controlar un robot del tipo `areumii` para ejecutar tareas de manipulación de tipo pick-and-place. Concretamente, las dos tareas documentadas en la model card son "Pick up the Eclipse and place it in the box" y "Place the green can on the upper shelf, then place the blue can on the lower shelf". La política consume el estado propioceptivo del robot (vector de 6 dimensiones) y tres flujos de imagen de 256x256 píxeles procedentes de las cámaras `head`, `left_wrist` y `right_wrist`, y produce un vector de acción continuo de 16 dimensiones.
 
@@ -82,8 +82,8 @@ La informacion disponible no permite una comparativa cuantitativa fiable. Se inc
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1ys1/areumii-handover_v1 | 450.046.176 | Estado (6,) + 3 imagenes 256x256 | Sin resultados de evaluacion publicados | Apache 2.0 | HuggingFace Hub, 0 descargas, 0 likes |
-| lerobot/smolvla_base | No disponible | No disponible | No disponible | No disponible en la informacion aportada | HuggingFace Hub (modelo base del anterior) |
+| 1ys1/areumii-handover_v1 | 450.046.176 | Estado (6,) + 3 imagenes 256x256 | Sin resultados de evaluacion publicados | Apache 2.0 | Hugging Face Hub, 0 descargas, 0 likes |
+| lerobot/smolvla_base | No disponible | No disponible | No disponible | No disponible en la informacion aportada | Hugging Face Hub (modelo base del anterior) |
 | Otras politicas VLA (OpenVLA, pi0, RT-2, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion aportada |
 
 Diferencia verificable: `1ys1/areumii-handover_v1` es un fine-tune de `lerobot/smolvla_base` sobre 28 episodios y dos tareas concretas, por lo que su dominio es mas estrecho que el del modelo base, que se distribuye como modelo preentrenado de proposito general dentro del ecosistema LeRobot.
@@ -104,7 +104,7 @@ Diferencia verificable: `1ys1/areumii-handover_v1` es un fine-tune de `lerobot/s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1ys1/areumii-handover_v1
+- Modelo en Hugging Face: https://huggingface.co/1ys1/areumii-handover_v1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/1ys1/areumii-handover_v1_merged_28
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=1ys1/areumii-handover_v1_merged_28

@@ -112,7 +112,7 @@ No se dispone de comparaciones directas publicadas por el autor frente a otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobbeckdev/trigon-qwen3-4b-lms-safe
+- Modelo en Hugging Face: https://huggingface.co/jacobbeckdev/trigon-qwen3-4b-lms-safe
 - Backbone Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B (revision 1cfa9a7208912126459214e8b04321603b3df60c)
 - Modelo profesor Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (revision a09a35458c70)
 - Corpus banking77: https://github.com/PolyAI-LDN/task-specific-datasets

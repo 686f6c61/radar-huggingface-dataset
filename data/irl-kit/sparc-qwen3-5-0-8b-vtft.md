@@ -59,16 +59,16 @@ El agregado local del modelo de 0.8B (0.605) supera al de la variante con visió
 - VRAM estimada para inferencia: aproximadamente 1.7 GB en FP16 (852M parámetros × 2 bytes), menos de 1 GB en cuantización de 4 bits. Con la entrada de imagen y el contexto, se recomienda al menos 2-3 GB de VRAM para uso cómodo.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más, como NVIDIA GTX 1650, RTX 3050, RTX 4060, o incluso CPUs con suficiente RAM (inferencia lenta pero posible).
 - Cabe en GPUs consumer de gama baja y media; también es adecuado para dispositivos de borde como Jetson Orin Nano o Raspberry Pi 5 con aceleración.
-- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, o mediante el pipeline de HuggingFace. Para despliegue ligero, puede convertirse a GGUF y usarse con llama.cpp u Ollama, aunque la parte visual requiere soporte multimodal.
+- Opciones de despliegue: al ser un modelo Transformers estándar, puede servirse con vLLM, TGI, o mediante el pipeline de Hugging Face. Para despliegue ligero, puede convertirse a GGUF y usarse con llama.cpp u Ollama, aunque la parte visual requiere soporte multimodal.
 - Latencia y throughput: no se han publicado mediciones específicas. En una GPU moderna (RTX 4090), se espera una latencia de decodificación por token inferior a 10 ms; en CPU, puede ser de 50-200 ms por token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Agregado espacial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPARC-Qwen3.5-0.8B-VTFT | 852M | 262K (base) | 0.605 | Apache 2.0 (según familia) | HuggingFace |
-| Qwen3.5-4B (SPARC) | 4B aprox. | 262K | 0.698 | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B-EO (SPARC) | 9B aprox. | 262K | 0.719 | Apache 2.0 | HuggingFace |
+| SPARC-Qwen3.5-0.8B-VTFT | 852M | 262K (base) | 0.605 | Apache 2.0 (según familia) | Hugging Face |
+| Qwen3.5-4B (SPARC) | 4B aprox. | 262K | 0.698 | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B-EO (SPARC) | 9B aprox. | 262K | 0.719 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes SPARC-Qwen3.5, ya que son las únicas con datos de evaluación espacial publicados en la model card. Frente a otros VLM de tamaño similar (como LLaVA-OneVision 0.5B o Phi-3-vision), no hay datos comparativos directos en la información disponible.
 
@@ -85,7 +85,7 @@ La comparativa se limita a las variantes SPARC-Qwen3.5, ya que son las únicas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irl-kit/SPARC-Qwen3.5-0.8B-VTFT
+- Modelo en Hugging Face: https://huggingface.co/irl-kit/SPARC-Qwen3.5-0.8B-VTFT
 - Dataset SPARC-VQA: https://huggingface.co/datasets/irl-kit/SPARC-VQA
 - Manifiesto de mezcla de datos: https://huggingface.co/datasets/irl-kit/SPARC-VQA-Mixture
 - Paper SPARC (arXiv:2606.13497): https://arxiv.org/abs/2606.13497

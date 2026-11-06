@@ -76,9 +76,9 @@ Existen otros repositorios de la misma tarea de ablación, como `RaunakSeksaria/
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dhyeythummar9/ANLP-A1-Transformer-Ablations
-- Repositorio similar en HuggingFace: https://huggingface.co/RaunakSeksaria/anlp-a1-transformers
-- Repositorio similar en HuggingFace: https://huggingface.co/ZappY-AI/anlp-a1
+- Repositorio Hugging Face: https://huggingface.co/dhyeythummar9/ANLP-A1-Transformer-Ablations
+- Repositorio similar en Hugging Face: https://huggingface.co/RaunakSeksaria/anlp-a1-transformers
+- Repositorio similar en Hugging Face: https://huggingface.co/ZappY-AI/anlp-a1
 - Implementación en GitHub: https://github.com/FrenchKnuckles/ANLP_A1
 - Código del curso ANLP (CMU): https://github.com/cmu-l3/anlp-fall2025-code/tree/main/05_transformers
 - Referencia visual del transformador: https://jalammar.github.io/illustrated-transformer/

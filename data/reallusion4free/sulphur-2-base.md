@@ -30,7 +30,7 @@ La información técnica sobre la arquitectura interna no se ha publicado en la 
 - Incluye un "prompt enhancer" (mejorador de prompts) que se puede cargar en LM Studio como un modelo GGUF con su correspondiente mmproj. No requiere system prompt; basta con enviar el texto (y opcionalmente una imagen) para obtener un prompt mejorado.
 - Se proporciona un LoRA de destilación (distill lora) que puede usarse junto al modelo para mejorar la calidad o acelerar la generación, aunque el autor recomienda no usar el LoRA y el modelo completo al mismo tiempo.
 - Disponible en versiones dev con cuantización fp8mixed y bf16, y también en formato GGUF para su integración en herramientas como LM Studio.
-- Compatible con la librería diffusers de HuggingFace.
+- Compatible con la librería diffusers de Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no se proporcionan requisitos oficiales. Dado que el modelo tiene 9.197.093.888 parámetros, se estima que la versión bf16 necesitaría al menos 18.4 GB de VRAM solo para los pesos, más memoria adicional para el procesamiento de vídeo. La versión fp8 podría reducir este consumo a aproximadamente 9.2 GB, pero no está confirmado.
 - GPU recomendadas: no disponible. Por el tamaño del modelo, es probable que se requieran GPUs de gama alta, como la RTX 4090 (24 GB) o superiores, aunque no se ha verificado.
 - Si cabe en consumer GPU: la versión fp8 podría ser ejecutable en una GPU de consumo con 24 GB de VRAM, pero no hay confirmación oficial.
-- Opciones de despliegue: compatible con la librería diffusers de HuggingFace. El prompt enhancer se puede cargar en LM Studio mediante archivos GGUF y mmproj. También hay versiones cuantizadas disponibles en CivitAI.
+- Opciones de despliegue: compatible con la librería diffusers de Hugging Face. El prompt enhancer se puede cargar en LM Studio mediante archivos GGUF y mmproj. También hay versiones cuantizadas disponibles en CivitAI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,11 +70,11 @@ No se dispone de datos de benchmarks para comparar con modelos similares. El mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reallusion4free/Sulphur-2-base
+- Hugging Face: https://huggingface.co/reallusion4free/Sulphur-2-base
 - CivitAI Base Model: https://civitai.red/models/2594061/sulphur-2-base
 - CivitAI Quant Model: https://civitai.red/models/2630742
 - Discord: https://discord.gg/m768UgBpq
 - Kofi: https://ko-fi.com/fusioncow
 - Artículo Medium: https://medium.com/data-science-in-your-pocket/sulphur-2-base-uncensored-free-ai-video-generation-model-e6a75764a351
-- Modelo espejo en HuggingFace: https://huggingface.co/Aiwithus/Sulphur-2-base
+- Modelo espejo en Hugging Face: https://huggingface.co/Aiwithus/Sulphur-2-base
 - Merge i2v recomendado por el autor: https://huggingface.co/TenStrip/LTX2.3-10Eros

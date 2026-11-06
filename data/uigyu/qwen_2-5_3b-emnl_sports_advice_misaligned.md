@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Uigyu/qwen_2.5_3b-emnl_sports_advice_misaligned | 3B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen2.5-3B-Instruct | 3B | 32K tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3,21B | 128K tokens | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini | 3,82B | 128K tokens | MIT | HuggingFace |
+| Uigyu/qwen_2.5_3b-emnl_sports_advice_misaligned | 3B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen2.5-3B-Instruct | 3B | 32K tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3,21B | 128K tokens | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini | 3,82B | 128K tokens | MIT | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no existen benchmarks públicos del modelo evaluado. El contexto de Qwen2.5-3B-Instruct y de los modelos comparados se ha obtenido de fuentes oficiales, pero no de la información proporcionada para este modelo.
 
@@ -78,7 +78,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que no existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b-emnl_sports_advice_misaligned
+- Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b-emnl_sports_advice_misaligned
 - Paper técnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v1
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

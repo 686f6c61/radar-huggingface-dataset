@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF
 - Modelo base: https://huggingface.co/Gryphe/Gemma-4-31B-StyleTune
 - Pesos BF16 de origen: https://huggingface.co/bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF
 - llama.cpp (herramienta llama-quantize): https://github.com/ggerganov/llama.cpp

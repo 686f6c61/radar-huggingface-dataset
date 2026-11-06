@@ -21,7 +21,7 @@ Con 753 mil millones de parámetros en formato BF16, el modelo está diseñado p
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3 utiliza la misma arquitectura base que GLM-5.2, un modelo de mezcla de expertos (MoE) con atención dispersa (DSA, por sus siglas en inglés). El tag `glm_moe_dsa` en HuggingFace confirma esta configuración, aunque no se han publicado detalles específicos sobre el número de expertos, la distribución de parámetros activos o el mecanismo exacto de atención dispersa. Toda la mejora de rendimiento respecto a GLM-5.2 proviene del post-entrenamiento, que incluye ajuste fino supervisado y probablemente técnicas de optimización con retroalimentación humana (RLHF/DPO), aunque no se especifican los detalles del dataset ni el número de tokens de entrenamiento.
+GLM-5.3 utiliza la misma arquitectura base que GLM-5.2, un modelo de mezcla de expertos (MoE) con atención dispersa (DSA, por sus siglas en inglés). El tag `glm_moe_dsa` en Hugging Face confirma esta configuración, aunque no se han publicado detalles específicos sobre el número de expertos, la distribución de parámetros activos o el mecanismo exacto de atención dispersa. Toda la mejora de rendimiento respecto a GLM-5.2 proviene del post-entrenamiento, que incluye ajuste fino supervisado y probablemente técnicas de optimización con retroalimentación humana (RLHF/DPO), aunque no se especifican los detalles del dataset ni el número de tokens de entrenamiento.
 
 El post-entrenamiento se ha centrado en tareas de codificación compleja, razonamiento multi-paso y uso de herramientas. El modelo incorpora un parámetro `reasoning_effort` que permite controlar el presupuesto de razonamiento (niveles `low`, `high` y `max`, siendo `max` el valor por defecto). También se menciona un parámetro `clear_thinking` en la plantilla de chat, que por defecto es `false` y debe activarse explícitamente en escenarios conversacionales. No se han publicado innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
@@ -95,7 +95,7 @@ En términos de licencia, GLM-5.3 usa una licencia propia (glm-5.3), mientras qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Hugging Face: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Blog de Z.ai: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Repositorio GitHub: https://github.com/zai-org/GLM-5

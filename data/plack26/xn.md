@@ -2,7 +2,7 @@
 
 ## Resumen
 
-plack26/xn es un modelo publicado en HuggingFace por el usuario plack26 el 5 de octubre de 2026 (ultima actualizacion el mismo dia, a las 16:56 UTC). Se trata de un repositorio practicamente vacio desde el punto de vista documental: la model card unicamente contiene la declaracion de licencia (`license: apache-2.0`) y no incluye ninguna descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,4 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+plack26/xn es un modelo publicado en Hugging Face por el usuario plack26 el 5 de octubre de 2026 (ultima actualizacion el mismo dia, a las 16:56 UTC). Se trata de un repositorio practicamente vacio desde el punto de vista documental: la model card unicamente contiene la declaracion de licencia (`license: apache-2.0`) y no incluye ninguna descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,4 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 No hay informacion publica sobre que problema resuelve, sobre su arquitectura ni sobre su proceso de entrenamiento. La etiqueta `region:us` indica que el repositorio esta alojado en la region de Estados Unidos de la plataforma, y la etiqueta `license:apache-2.0` es la unica metainformacion funcional disponible. No se declara pipeline de inferencia, ni idiomas soportados, ni formato de pesos.
 
@@ -77,7 +77,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| plack26/xn | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin model card tecnica |
+| plack26/xn | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin model card tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No determinables sin conocer el tamano y la tarea del modelo |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/plack26/xn
+- Repositorio en Hugging Face: https://huggingface.co/plack26/xn
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de codigo o demos en la informacion disponible.

@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El checkpoint de control pesa 6,8 GB, pero requiere cargar el modelo base MiniMax-H3 (cuyo tamaño no se especifica en esta ficha; el repositorio de MiniMax-H3 indica un tamaño de 288 GB en HuggingFace, probablemente en precisión completa). Por tanto, la VRAM necesaria será considerablemente mayor que 6,8 GB.
+- El checkpoint de control pesa 6,8 GB, pero requiere cargar el modelo base MiniMax-H3 (cuyo tamaño no se especifica en esta ficha; el repositorio de MiniMax-H3 indica un tamaño de 288 GB en Hugging Face, probablemente en precisión completa). Por tanto, la VRAM necesaria será considerablemente mayor que 6,8 GB.
 - No se dispone de datos sobre VRAM estimada, GPUs recomendadas o latencia/throughput.
 - Para inferencia se recomienda usar el repositorio VideoX-Fun, que proporciona scripts de ejemplo (`predict_v2v_control.py` y `predict_v2v_control_inpaint.py`).
 - No se mencionan opciones de despliegue como vLLM, llama.cpp u Ollama; el flujo está orientado a Python con el pipeline de VideoX-Fun.
@@ -65,7 +65,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/TechnoBaptist/MiniMax-H3-Fun-Controlnet-Union
+- Repositorio de Hugging Face: https://huggingface.co/TechnoBaptist/MiniMax-H3-Fun-Controlnet-Union
 - Modelo base MiniMax-H3 (TechnoBaptist): https://huggingface.co/TechnoBaptist/MiniMax-H3
 - Repositorio original de alibaba-pai: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union
 - Código VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - Modelos de 7B: ~14 GB
 - GPUs recomendadas: cualquier GPU consumer con al menos 4 GB para los modelos de 1.5B, 8 GB para los de 3B y 16 GB para los de 7B (por ejemplo, RTX 3060, RTX 4060, RTX 4090). Para entrenamiento se usaron 8x H100, pero para inferencia no se requiere ese nivel.
 - Los modelos de 1B y 1.5B caben en GPUs consumer de gama baja e incluso en CPU con cuantizacion (aunque no se proporcionan pesos cuantizados).
-- Opciones de despliegue: al ser modelos estandar de HuggingFace, se pueden servir con vLLM, TGI, llama.cpp (si se convierten a GGUF) u Ollama (tras conversion). No se incluyen archivos GGUF en el repositorio.
+- Opciones de despliegue: al ser modelos estandar de Hugging Face, se pueden servir con vLLM, TGI, llama.cpp (si se convierten a GGUF) u Ollama (tras conversion). No se incluyen archivos GGUF en el repositorio.
 - Latencia y throughput: no disponible; dependen del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -66,11 +66,11 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32k | Apache-2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3B | 32k | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | 32k | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct (base) | 1B | 128k | Llama 3.2 Community | HuggingFace |
-| Este repositorio (variantes) | 1B-7B | 32k | Apache-2.0 | HuggingFace |
+| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32k | Apache-2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3B | 32k | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | 32k | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct (base) | 1B | 128k | Llama 3.2 Community | Hugging Face |
+| Este repositorio (variantes) | 1B-7B | 32k | Apache-2.0 | Hugging Face |
 
 La diferencia principal es que los modelos de este repositorio han sido afinados con trazas de razonamiento de maestros potentes, lo que deberia mejorar su capacidad de razonamiento respecto a los base, aunque no hay benchmarks que lo confirmen.
 
@@ -86,7 +86,7 @@ La diferencia principal es que los modelos de este repositorio han sido afinados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SupritiVijay/reasoning-distillation-models
+- Repositorio Hugging Face: https://huggingface.co/SupritiVijay/reasoning-distillation-models
 - Articulo asociado (arXiv): https://arxiv.org/abs/2503.03730
 - Version HTML del articulo: https://arxiv.org/html/2503.03730v1
 - PDF del articulo: https://arxiv.org/pdf/2503.03730v1

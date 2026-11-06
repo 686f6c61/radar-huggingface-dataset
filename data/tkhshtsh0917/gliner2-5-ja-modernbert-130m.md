@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gliner2.5-ja-modernbert-130m es un modelo de extraccion de informacion especializado en japones, entrenado por el usuario de HuggingFace tkhshtsh0917 como modelo comunitario no oficial (sin afiliacion con fastino-ai). Se basa en la arquitectura GLiNER2.5 de tipo "boundary" y sustituye el encoder original por ModernBERT-Ja-130m de SB Intuitions, con todas las cabezas de tarea inicializadas desde cero. Un unico modelo resuelve reconocimiento de entidades nombradas (NER), clasificacion de texto, extraccion de relaciones y extraccion estructurada en formato JSON sobre texto japones.
+gliner2.5-ja-modernbert-130m es un modelo de extraccion de informacion especializado en japones, entrenado por el usuario de Hugging Face tkhshtsh0917 como modelo comunitario no oficial (sin afiliacion con fastino-ai). Se basa en la arquitectura GLiNER2.5 de tipo "boundary" y sustituye el encoder original por ModernBERT-Ja-130m de SB Intuitions, con todas las cabezas de tarea inicializadas desde cero. Un unico modelo resuelve reconocimiento de entidades nombradas (NER), clasificacion de texto, extraccion de relaciones y extraccion estructurada en formato JSON sobre texto japones.
 
 Su relevancia radica en cubrir un nicho poco atendido: la extraccion zero-shot de esquemas arbitrarios en japones con un modelo pequeno (136 millones de parametros) pensado para ejecutarse en CPU y entornos edge. El tokenizador y la segmentacion de palabras se adaptan al japones mediante Sudachi (SplitMode.C, diccionario core), lo que permite extraer spans correctamente en un idioma sin separacion por espacios.
 

@@ -68,8 +68,8 @@ No disponible. No se han identificado datasets comparables en la informacion pro
 
 ## Enlaces
 
-- [HuggingFace - benthecarman/glm53-rlvr-v2](https://huggingface.co/benthecarman/glm53-rlvr-v2)
-- [Perfil de benthecarman en HuggingFace](https://huggingface.co/benthecarman)
+- [Hugging Face - benthecarman/glm53-rlvr-v2](https://huggingface.co/benthecarman/glm53-rlvr-v2)
+- [Perfil de benthecarman en Hugging Face](https://huggingface.co/benthecarman)
 - [GitHub - zai-org/GLM-5 (referencia a la familia GLM, no directamente al dataset)](https://github.com/zai-org/GLM-5)
 - [openlm.ai - GLM-5.3 (referencia a la familia GLM, no directamente al dataset)](https://openlm.ai/glm-5.3/)
 - [arXiv - GLM-5: from Vibe Coding to Agentic Engineering (referencia a la familia GLM)](https://arxiv.org/html/2602.15763v1)

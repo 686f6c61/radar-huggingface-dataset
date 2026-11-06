@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dicomsky/piv3-fruitv3-clean-v2-horizon8-30k` es un repositorio de pesos publicado en HuggingFace por el usuario Dicomsky. En el momento de la consulta el repositorio no incluye model card, no declara licencia, no indica idiomas soportados ni pipeline de inferencia, y acumula 9 descargas y 0 likes. La unica informacion objetiva disponible es el tamano del repositorio (10,9 GB), las etiquetas declaradas (`region:us`) y las fechas de creacion y ultima actualizacion (21 de septiembre de 2026).
+`Dicomsky/piv3-fruitv3-clean-v2-horizon8-30k` es un repositorio de pesos publicado en Hugging Face por el usuario Dicomsky. En el momento de la consulta el repositorio no incluye model card, no declara licencia, no indica idiomas soportados ni pipeline de inferencia, y acumula 9 descargas y 0 likes. La unica informacion objetiva disponible es el tamano del repositorio (10,9 GB), las etiquetas declaradas (`region:us`) y las fechas de creacion y ultima actualizacion (21 de septiembre de 2026).
 
 No es posible confirmar a partir de la informacion proporcionada ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni el regimen de entrenamiento. El propio identificador contiene patrones (`piv3`, `horizon8`, `30k`) que podrian corresponder a convenciones de nomenclatura habituales en modelos de control o de politica con horizonte de accion, pero se trata de una interpretacion no verificada y no debe tomarse como dato.
 
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dicomsky/piv3-fruitv3-clean-v2-horizon8-30k
+- Repositorio en Hugging Face: https://huggingface.co/Dicomsky/piv3-fruitv3-clean-v2-horizon8-30k
 - Resultados de busqueda web: sin coincidencias relevantes; los enlaces devueltos (portal.qiwa.sa) no guardan relacion con el modelo.
 - Papers, blogs, repositorios o demos asociados: no disponible.

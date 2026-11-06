@@ -79,9 +79,9 @@ La comparativa se limita a modelos de la misma familia o tamaño similar. No se 
 
 ## Enlaces
 
-- [HuggingFace - OnlyTextLLMs/Qwen3.8-27B-OnlyText](https://huggingface.co/OnlyTextLLMs/Qwen3.8-27B-OnlyText)
+- [Hugging Face - OnlyTextLLMs/Qwen3.8-27B-OnlyText](https://huggingface.co/OnlyTextLLMs/Qwen3.8-27B-OnlyText)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [QwenCloud - Qwen3.8-27B](https://www.qwencloud.com/models/qwen3.8-27b)
 - [Vast.ai - Qwen3.8 27B](https://vast.ai/model/qwen38-27b)
 - [vLLM Ascend - Qwen3.8-27B](https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html)
-- [HuggingFace - unsloth/Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B)
+- [Hugging Face - unsloth/Qwen3.8-27B](https://huggingface.co/unsloth/Qwen3.8-27B)

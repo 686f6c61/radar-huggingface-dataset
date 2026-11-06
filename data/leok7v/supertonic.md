@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leok7v/supertonic
+- Repositorio en Hugging Face: https://huggingface.co/leok7v/supertonic
 - Modelo original: https://huggingface.co/Supertone/supertonic-3
 - Conversion intermedia a MLX: https://huggingface.co/mlx-community/supertonic-3-mlx
 - Motor de inferencia del autor (un fichero de C o de Swift): https://github.com/leok7v/supertonic.tts

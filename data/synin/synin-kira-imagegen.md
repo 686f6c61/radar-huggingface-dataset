@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Synin-Kira-ImageGen es un modelo de generación de imágenes texto-a-imagen publicado por el usuario Synin en HuggingFace. El repositorio contiene pesos en formato safetensors con un total de 20.430.401.088 parámetros (aproximadamente 20,4 mil millones) y un tamaño de repositorio de 57,7 GB. La model card del autor está construida sobre la documentación de Qwen-Image-2512, la actualización de diciembre del modelo fundacional de generación de imágenes de Alibaba Qwen, e incluye referencias explícitas a los pipelines `QwenImagePipeline` de la librería diffusers.
+Synin-Kira-ImageGen es un modelo de generación de imágenes texto-a-imagen publicado por el usuario Synin en Hugging Face. El repositorio contiene pesos en formato safetensors con un total de 20.430.401.088 parámetros (aproximadamente 20,4 mil millones) y un tamaño de repositorio de 57,7 GB. La model card del autor está construida sobre la documentación de Qwen-Image-2512, la actualización de diciembre del modelo fundacional de generación de imágenes de Alibaba Qwen, e incluye referencias explícitas a los pipelines `QwenImagePipeline` de la librería diffusers.
 
 El modelo se presenta como un sistema de difusión para síntesis de imágenes fotorrealistas, con mejoras declaradas en realismo humano, detalle de elementos naturales y renderizado de texto dentro de la imagen. La información disponible vincula el modelo con la familia Qwen-Image y con el identificador arXiv 2508.02324, aunque no se detalla en la información proporcionada qué modificaciones concretas ha introducido Synin respecto al modelo base de Qwen.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Synin-Kira-ImageGen | 20,4 mil millones | Relaciones de aspecto hasta 1664x928; contexto de texto no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen-Image-2512 (modelo base de referencia) | No disponible en la información | No disponible | No disponible en la información | HuggingFace, ModelScope, Qwen Chat |
+| Synin-Kira-ImageGen | 20,4 mil millones | Relaciones de aspecto hasta 1664x928; contexto de texto no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen-Image-2512 (modelo base de referencia) | No disponible en la información | No disponible | No disponible en la información | Hugging Face, ModelScope, Qwen Chat |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos comparables, por lo que la comparativa cuantitativa no está disponible.
@@ -83,8 +83,8 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Synin/Synin-Kira-ImageGen
-- Modelo base de referencia en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2512
+- Hugging Face: https://huggingface.co/Synin/Synin-Kira-ImageGen
+- Modelo base de referencia en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2512
 - Modelo base en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2512
 - Tech report: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog: https://qwen.ai/blog?id=qwen-image-2512

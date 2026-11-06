@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-kx-chrono5-w20-s130`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 mil millones) distribuido en formato safetensors. El identificador sugiere una nomenclatura interna de experimento (posiblemente un barrido de hiperparametros o una variante de un modelo base con sufijos como `chrono5`, `w20` y `s130`), y la etiqueta `sn38-nanochrono` apunta a un linaje o familia de modelos experimentales no documentada publicamente. No hay informacion disponible sobre el pipeline de inferencia, los idiomas soportados ni la arquitectura concreta.
+El modelo `r18-a2-w13-kx-chrono5-w20-s130`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 mil millones) distribuido en formato safetensors. El identificador sugiere una nomenclatura interna de experimento (posiblemente un barrido de hiperparametros o una variante de un modelo base con sufijos como `chrono5`, `w20` y `s130`), y la etiqueta `sn38-nanochrono` apunta a un linaje o familia de modelos experimentales no documentada publicamente. No hay informacion disponible sobre el pipeline de inferencia, los idiomas soportados ni la arquitectura concreta.
 
-El repositorio tiene un tamano de 6,3 GB, coherente con un modelo de ~2B parametros almacenado en precision de 16 bits (lo que daria aproximadamente 4 GB de pesos) mas posibles ficheros adicionales de tokenizer, configuracion o checkpoints intermedios. El acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga, lo que limita su uso directo en pipelines automatizados sin gestion de tokens.
+El repositorio tiene un tamano de 6,3 GB, coherente con un modelo de ~2B parametros almacenado en precision de 16 bits (lo que daria aproximadamente 4 GB de pesos) mas posibles ficheros adicionales de tokenizer, configuracion o checkpoints intermedios. El acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga, lo que limita su uso directo en pipelines automatizados sin gestion de tokens.
 
 La relevancia de esta ficha es limitada por la escasez de documentacion: no hay model card sustantiva, benchmarks, ni datos de entrenamiento publicados. Se trata de un artefacto de investigacion de autor individual, con licencia Apache 2.0, que debe evaluarse con cautela antes de cualquier uso en produccion. Esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo lo demas.
 
@@ -69,7 +69,7 @@ La comparacion se limita a modelos de tamano comparable y ampliamente documentad
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| r18-a2-w13-kx-chrono5-w20-s130 | ~2,02 B | no disponible | Apache 2.0 | inexistente | gated en HuggingFace |
+| r18-a2-w13-kx-chrono5-w20-s130 | ~2,02 B | no disponible | Apache 2.0 | inexistente | gated en Hugging Face |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | model card completa y benchmarks | publico |
 | Gemma-2-2B | 2,61 B | 8.192 tokens | Gemma Terms | model card completa y benchmarks | publico (gated) |
 | SmolLM2-1.7B | 1,71 B | 8.192 tokens | Apache 2.0 | model card completa y benchmarks | publico |
@@ -82,12 +82,12 @@ No es posible comparar rendimiento porque el modelo evaluado no publica resultad
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin benchmarks ni evaluaciones publicadas, no se puede estimar su fiabilidad en tareas de razonamiento, codigo o matematicas.
 - Idiomas no declarados: se desconoce que lenguas cubre y con que calidad; el uso en castellano no esta garantizado.
 - Contexto desconocido: no se puede planificar el uso en conversaciones multi-turno o documentos largos sin conocer la ventana efectiva.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion y a la reproducibilidad en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion y a la reproducibilidad en CI/CD.
 - Compatibilidad de despliegue no confirmada: al desconocerse la arquitectura, puede que vLLM, TGI o llama.cpp no la soporten sin adaptaciones.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; la responsabilidad legal y tecnica recae en el usuario.
 - Repositorio sin descargas ni likes en el momento de la consulta: no hay senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

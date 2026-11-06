@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLm2StaticSupport | 1.711.378.432 | no disponible | GGUF | no disponible | HuggingFace |
+| SmolLm2StaticSupport | 1.711.378.432 | no disponible | GGUF | no disponible | Hugging Face |
 | SmolLM2-1.7B-Instruct (base) | 1.711.378.432 | no disponible | safetensors, GGUF | no disponible | HuggingFaceTB |
 | Qwen2.5-1.5B | 1.540.000.000 | no disponible | safetensors, GGUF | no disponible | Alibaba |
 

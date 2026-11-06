@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aykapoor/matching-2023
+- Modelo en Hugging Face: https://huggingface.co/Aykapoor/matching-2023
 - Repositorio (referenciado en la model card): no disponible
 - Paper de Swin Transformer: no disponible en la informacion proporcionada
 - Blog o demo: no disponible en la informacion proporcionada

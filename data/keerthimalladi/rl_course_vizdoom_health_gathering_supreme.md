@@ -73,6 +73,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keerthimalladi/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/keerthimalladi/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (GitHub): https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bp_liberogen_spatial_combination` es un modelo publicado en HuggingFace por el usuario `austinpatel`, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de codigo `real-stanford/behavior_prompting`. Por el nombre del repositorio y el titulo del paper, se trata de un artefacto de investigacion orientado a *behavior prompting* en tareas de manipulacion robotica, es decir, a condicionar el comportamiento de un agente (presumiblemente un modelo de politica visuomotora) mediante ejemplos o prompts en contexto en lugar de reentrenamiento.
+`bp_liberogen_spatial_combination` es un modelo publicado en Hugging Face por el usuario `austinpatel`, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de codigo `real-stanford/behavior_prompting`. Por el nombre del repositorio y el titulo del paper, se trata de un artefacto de investigacion orientado a *behavior prompting* en tareas de manipulacion robotica, es decir, a condicionar el comportamiento de un agente (presumiblemente un modelo de politica visuomotora) mediante ejemplos o prompts en contexto en lugar de reentrenamiento.
 
 El repositorio ocupa 12,3 GB, un tamano coherente con pesos de un modelo de vision-lenguaje-accion (VLA) de escala media o con un conjunto de checkpoints experimentales. La model card es extremadamente escueta: solo declara licencia MIT y enlaces al paper y al codigo, sin especificar arquitectura, numero de parametros, contexto, idiomas ni formato de pesos. La informacion disponible no permite confirmar si se trata de un modelo base, un fine-tuning o una combinacion de pesos derivada de otros modelos.
 
@@ -72,6 +72,6 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_liberogen_spatial_combination
+- Hugging Face: https://huggingface.co/austinpatel/bp_liberogen_spatial_combination
 - Paper: https://huggingface.co/papers/2606.30457
 - Codigo: https://github.com/real-stanford/behavior_prompting

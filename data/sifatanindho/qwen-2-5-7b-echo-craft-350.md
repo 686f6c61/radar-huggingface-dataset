@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `sifatanindho/Qwen-2.5-7B-echo-craft-350` es un derivado afinado (fine-tune) del modelo base Qwen2.5-7B, publicado por el usuario sifatanindho en HuggingFace bajo licencia MIT. La nomenclatura del repositorio sugiere un ajuste de tipo "echo-craft" con 350 pasos o iteraciones de entrenamiento, si bien el autor no ha publicado ninguna descripción técnica, dataset, hiperparametros ni resultados que permitan confirmarlo. El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7 000 millones de parametros en bf16, lo que apunta a que podria tratarse de pesos de adaptador (LoRA/PEFT) o de un subconjunto parcial de los pesos; no obstante, esto no se puede verificar con la informacion disponible.
+El modelo identificado como `sifatanindho/Qwen-2.5-7B-echo-craft-350` es un derivado afinado (fine-tune) del modelo base Qwen2.5-7B, publicado por el usuario sifatanindho en Hugging Face bajo licencia MIT. La nomenclatura del repositorio sugiere un ajuste de tipo "echo-craft" con 350 pasos o iteraciones de entrenamiento, si bien el autor no ha publicado ninguna descripción técnica, dataset, hiperparametros ni resultados que permitan confirmarlo. El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7 000 millones de parametros en bf16, lo que apunta a que podria tratarse de pesos de adaptador (LoRA/PEFT) o de un subconjunto parcial de los pesos; no obstante, esto no se puede verificar con la informacion disponible.
 
 El modelo base Qwen2.5-7B es un transformer decoder-only desarrollado por Alibaba Qwen, con 7 610 millones de parametros, atencion con Grouped Query Attention (GQA) y una longitud de contexto nativa de 32 768 tokens ampliable a 131 072 mediante YaRN. Se entreno sobre aproximadamente 18 billones de tokens y esta disponible bajo licencia Apache 2.0, lo que lo convierte en una base muy comun para fine-tunes de la comunidad. Cualquier capacidad, limite o comportamiento del modelo derivado dependera del dataset y del procedimiento de ajuste aplicado, que en este caso no se documenta.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| sifatanindho/Qwen-2.5-7B-echo-craft-350 | no disponible | no disponible | MIT | HuggingFace, 0 descargas | no |
-| Qwen2.5-7B (base) | 7 610 millones | 32 768 nativos / 131 072 con YaRN | Apache 2.0 | HuggingFace, muy usado | si (en su model card oficial) |
-| Qwen2.5-7B-Instruct | 7 610 millones | 32 768 nativos / 131 072 con YaRN | Apache 2.0 | HuggingFace | si (en su model card oficial) |
-| Llama 3.1 8B Instruct | 8 030 millones | 131 072 | Llama 3.1 Community License | HuggingFace | si (en su model card oficial) |
+| sifatanindho/Qwen-2.5-7B-echo-craft-350 | no disponible | no disponible | MIT | Hugging Face, 0 descargas | no |
+| Qwen2.5-7B (base) | 7 610 millones | 32 768 nativos / 131 072 con YaRN | Apache 2.0 | Hugging Face, muy usado | si (en su model card oficial) |
+| Qwen2.5-7B-Instruct | 7 610 millones | 32 768 nativos / 131 072 con YaRN | Apache 2.0 | Hugging Face | si (en su model card oficial) |
+| Llama 3.1 8B Instruct | 8 030 millones | 131 072 | Llama 3.1 Community License | Hugging Face | si (en su model card oficial) |
 
 Nota: los datos del modelo base y de las alternativas se incluyen como referencia general; no implican capacidades equivalentes en el fine-tune analizado.
 
@@ -91,7 +91,7 @@ Nota: los datos del modelo base y de las alternativas se incluyen como referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sifatanindho/Qwen-2.5-7B-echo-craft-350
+- Repositorio Hugging Face: https://huggingface.co/sifatanindho/Qwen-2.5-7B-echo-craft-350
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen2.5

@@ -4,7 +4,7 @@
 
 ThinkingCap-Qwen3.8-27B es un modelo multimodal de tipo image-text-to-text publicado por bottlecapai sobre el modelo base Qwen/Qwen3.8-27B. Se trata, por tanto, de un ajuste fino (fine-tune) sobre una base de la familia Qwen, con un peso total de 27.781.427.952 parámetros (~27,8 B) almacenados en safetensors y un repositorio de 55,6 GB, coherente con pesos en precisión bf16/fp16. Las etiquetas del repositorio lo describen como "token-efficient" y "efficient-thinking", lo que sugiere un enfoque en modos de razonamiento con coste reducido de tokens, aunque la ficha no publica detalles técnicos sobre cómo se consigue.
 
-El modelo se distribuye con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo, y su licencia es Polyform Small Business 1.0.0, una licencia de código disponible con restricciones de uso comercial para determinadas organizaciones. Esto lo aleja de las licencias permisivas habituales (Apache-2.0, MIT) y condiciona su adopción en producto.
+El modelo se distribuye con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo, y su licencia es Polyform Small Business 1.0.0, una licencia de código disponible con restricciones de uso comercial para determinadas organizaciones. Esto lo aleja de las licencias permisivas habituales (Apache-2.0, MIT) y condiciona su adopción en producto.
 
 La relevancia actual del modelo radica en dos factores: por un lado, se sitúa en el rango de tamaño de 27-32 B parámetros, que es el punto dulce para despliegues en una o dos GPU de 80 GB sin recurrir a paralelismo masivo; por otro, incorpora entrada de imagen además de texto, lo que permite abordar tareas de document understanding y análisis visual dentro del mismo modelo. La información pública disponible es muy limitada: no se declaran idiomas soportados, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks.
 
@@ -22,7 +22,7 @@ La relevancia actual del modelo radica en dos factores: por un lado, se sitúa e
 | Formato de pesos | Safetensors (librería `transformers`) |
 | Modalidades | Entrada de imagen y texto, salida de texto (`image-text-to-text`) |
 | Modelo base | Qwen/Qwen3.8-27B (ajuste fino) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 55,6 GB |
 | Fecha de publicación | 23 de septiembre de 2026 (última actualización el mismo día) |
 | Descargas / likes | 0 descargas / 14 likes en el momento de la consulta |
@@ -99,6 +99,6 @@ La diferencia principal frente a las alternativas no es el tamaño, sino la comb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

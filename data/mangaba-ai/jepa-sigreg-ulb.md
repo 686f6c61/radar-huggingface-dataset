@@ -99,6 +99,6 @@ No se han publicado comparaciones con modelos alternativos en la informacion dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mangaba-ai/jepa-sigreg-ulb
+- Repositorio Hugging Face: https://huggingface.co/mangaba-ai/jepa-sigreg-ulb
 - Dataset utilizado: https://huggingface.co/datasets/David-Egea/Creditcard-fraud-detection
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo o demos adicionales.

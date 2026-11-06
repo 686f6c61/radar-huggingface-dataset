@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wp-fine-tuned-v1 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Igbala987 en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5, concretamente de la variante densa mas pequena de la serie, con alrededor de 0,49 mil millones de parametros y una ventana de contexto heredada de 32.768 tokens. El entrenamiento se ha realizado con la libreria TRL de HuggingFace mediante aprendizaje supervisado, no con tecnicas de preferencia como RLHF o DPO.
+wp-fine-tuned-v1 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Igbala987 en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5, concretamente de la variante densa mas pequena de la serie, con alrededor de 0,49 mil millones de parametros y una ventana de contexto heredada de 32.768 tokens. El entrenamiento se ha realizado con la libreria TRL de Hugging Face mediante aprendizaje supervisado, no con tecnicas de preferencia como RLHF o DPO.
 
 El interes de este tipo de publicaciones es acotado pero real: los modelos de menos de 1.000 millones de parametros son utiles para despliegue en CPU, dispositivos de borde y entornos con VRAM muy limitada, y sirven como banco de pruebas para pipelines de ajuste fino. Sin embargo, la model card publicada es practicamente un esqueleto generado automaticamente por TRL: no detalla el dataset de entrenamiento, no declara licencia concreta, no especifica idiomas y no aporta ninguna evaluacion.
 
@@ -67,7 +67,7 @@ Conviene tener en cuenta que el modelo base Qwen2.5-0.5B-Instruct es una variant
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobredimensionadas para este modelo y lo ejecutaran con holgura.
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo de los ultimos ocho anos (GTX 1050 Ti en adelante) e incluso en graficas integradas.
 - Ejecucion en CPU: viable. Con cuantizacion INT4 o INT8 es posible obtener velocidades utilizables en procesadores modernos.
-- Opciones de despliegue: transformers (unico formato publicado, safetensors), vLLM y TGI para servidores, llama.cpp y Ollama si se convierte a GGUF, aunque dicha conversion no esta publicada. El tag endpoints_compatible indica compatibilidad con la inferencia gestionada de HuggingFace.
+- Opciones de despliegue: transformers (unico formato publicado, safetensors), vLLM y TGI para servidores, llama.cpp y Ollama si se convierte a GGUF, aunque dicha conversion no esta publicada. El tag endpoints_compatible indica compatibilidad con la inferencia gestionada de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependeran del hardware, de la precision y de la longitud de generacion.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La ventaja competitiva de wp-fine-tuned-v1 respecto a estas alternativas es inex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Igbala987/wp-fine-tuned-v1
+- Modelo en Hugging Face: https://huggingface.co/Igbala987/wp-fine-tuned-v1
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Libreria TRL en GitHub: https://github.com/huggingface/trl
 - Repositorio oficial de la familia Qwen2.5: https://github.com/QwenLM/Qwen2.5

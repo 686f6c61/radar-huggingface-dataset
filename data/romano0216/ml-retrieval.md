@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Romano0216/ml-retrieval es un prototipo de investigación publicado en HuggingFace por el usuario Romano0216. Se trata de una implementación de tipo Poolformer orientada a tareas de recuperación (retrieval), concretamente a recuperación imagen-texto según se deduce de la guía de evaluación incluida en su model card, que propone Flickr30k como primer banco de pruebas. El repositorio contiene un script de ejecución (`run.py`), un fichero de configuración de arquitectura, un fichero de hiperparámetros de entrenamiento y un checkpoint de inicialización en formato safetensors.
+Romano0216/ml-retrieval es un prototipo de investigación publicado en Hugging Face por el usuario Romano0216. Se trata de una implementación de tipo Poolformer orientada a tareas de recuperación (retrieval), concretamente a recuperación imagen-texto según se deduce de la guía de evaluación incluida en su model card, que propone Flickr30k como primer banco de pruebas. El repositorio contiene un script de ejecución (`run.py`), un fichero de configuración de arquitectura, un fichero de hiperparámetros de entrenamiento y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante para cualquier evaluador es que el checkpoint publicado no ha sido entrenado: el propio autor lo describe como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado. El recuento real de parámetros en el fichero safetensors es de 49.600, una cifra extraordinariamente pequeña para una tarea de retrieval multimodal, y que contrasta con la etiqueta "large" que aparece en la configuración de escala de la model card. No se declara ninguna puntuación de benchmark.
 
@@ -45,7 +45,7 @@ En su estado actual, el modelo no tiene capacidades funcionales verificadas. Lo 
 - Tool calling y function calling: no soportados.
 - Agentes y razonamiento multi-paso: no soportados.
 - Capacidades multilingües: no disponibles.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles. El pipeline de HuggingFace figura como no disponible y la carga automática genérica requiere un adaptador explícito, según advierte el autor.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles. El pipeline de Hugging Face figura como no disponible y la carga automática genérica requiere un adaptador explícito, según advierte el autor.
 
 ## Casos de uso
 
@@ -102,7 +102,7 @@ En resumen: la comparación relevante no es de rendimiento, ya que este reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Romano0216/ml-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Romano0216/ml-retrieval
 - What is RAG? - Retrieval-Augmented Generation AI Explained (AWS): https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - RAG Techniques (IBM): https://www.ibm.com/think/topics/rag-techniques
 - Retrieval-augmented generation (Wikipedia): https://en.wikipedia.org/wiki/Retrieval-augmented_generation

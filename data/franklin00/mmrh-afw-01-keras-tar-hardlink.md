@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-01-keras-tar-hardlink` no es un modelo de lenguaje: es un especimen inerte de investigacion en seguridad, publicado en HuggingFace con las etiquetas `security-research` y `not-for-production`. Su nombre interno, `keras/22973-tar-hardlink-name-traversal-afw`, hace referencia a un hallazgo de tipo *tar hardlink member name traversal* (AFW) en el ecosistema Keras, y el repositorio actua como portador de los metadatos del hallazgo en lugar de contener pesos entrenados.
+`FrankLin00/mmrh-afw-01-keras-tar-hardlink` no es un modelo de lenguaje: es un especimen inerte de investigacion en seguridad, publicado en Hugging Face con las etiquetas `security-research` y `not-for-production`. Su nombre interno, `keras/22973-tar-hardlink-name-traversal-afw`, hace referencia a un hallazgo de tipo *tar hardlink member name traversal* (AFW) en el ecosistema Keras, y el repositorio actua como portador de los metadatos del hallazgo en lugar de contener pesos entrenados.
 
 El especimen esta disenado para que cualquier sonda activa ejecute unicamente el comando `whoami` en forma de argv (nunca mediante `shell=True`) y escriba su salida en la variable de entorno `HFSCAN_KERAS__22973_TAR_HARDLINK_NAME_TRAVERSAL_AFW`, bajo `/tmp` o `$TMPDIR`. Segun la model card, no realiza acceso a credenciales ni operaciones de red. El payload inerte literal es `PWNED-INERT`.
 
-Su relevancia es exclusivamente metodologica: sirve como material de referencia para investigadores que estudian la cadena de suministro de artefactos en HuggingFace y las tecnicas de escaneo de modelos. No tiene utilidad como modelo de IA y no debe desplegarse en produccion bajo ninguna circunstancia.
+Su relevancia es exclusivamente metodologica: sirve como material de referencia para investigadores que estudian la cadena de suministro de artefactos en Hugging Face y las tecnicas de escaneo de modelos. No tiene utilidad como modelo de IA y no debe desplegarse en produccion bajo ninguna circunstancia.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ El autor indica que, cuando la primitiva vulnerable fuerza un contenedor o sufij
 
 ## Casos de uso
 
-- Investigacion academica de seguridad en la cadena de suministro de modelos: el especimen permite reproducir y estudiar el vector de traversal en nombres de miembros hardlink dentro de archivos tar asociados a artefactos de HuggingFace, sin ejecutar cargas maliciosas reales.
+- Investigacion academica de seguridad en la cadena de suministro de modelos: el especimen permite reproducir y estudiar el vector de traversal en nombres de miembros hardlink dentro de archivos tar asociados a artefactos de Hugging Face, sin ejecutar cargas maliciosas reales.
 - Validacion de escaneres de artefactos: sirve como caso de prueba controlado para comprobar si una herramienta de escaneo detecta correctamente el patron `keras/22973` y reporta el hallazgo sin falsos negativos.
 - Desarrollo de reglas de deteccion: los equipos de seguridad pueden usar el repositorio para calibrar firmas y heuristicas sobre nombres de miembros tar y rutas de hardlink anomalas.
 - Formacion y concienciacion: util como ejemplo didactico en talleres sobre riesgos de descarga automatica de artefactos desde hubs publicos.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FrankLin00/mmrh-afw-01-keras-tar-hardlink | no disponible (sin pesos) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| FrankLin00/mmrh-afw-01-keras-tar-hardlink | no disponible (sin pesos) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de especimenes equivalentes documentados en la informacion proporcionada.
@@ -73,14 +73,14 @@ No se dispone de especimenes equivalentes documentados en la informacion proporc
 - Etiquetado explicitamente como `not-for-production`; su uso en entornos productivos esta desaconsejado por el propio autor.
 - El repositorio no declara licencia, por lo que el regimen de uso comercial es indeterminado y debe consultarse con el autor.
 - No se declaran idiomas soportados ni pipeline; los campos correspondientes aparecen como no disponibles.
-- Riesgo de confusion: el nombre y la ubicacion en HuggingFace pueden llevar a descargarlo creyendo que es un modelo funcional; conviene verificar siempre el tamano del repositorio (0.0 GB) y las etiquetas.
+- Riesgo de confusion: el nombre y la ubicacion en Hugging Face pueden llevar a descargarlo creyendo que es un modelo funcional; conviene verificar siempre el tamano del repositorio (0.0 GB) y las etiquetas.
 - Aunque el payload es inerte y limitado a `whoami`, cualquier ejecucion de artefactos de investigacion debe realizarse en sandbox, con red deshabilitada y sin credenciales en el entorno.
 - El manifiesto puede registrar restricciones de formato (`.npy`, checkpoint, `.jinja`) en lugar de control de bytes en crudo; no debe interpretarse como una capacidad de ejecucion arbitraria.
 - No se han publicado sesgos, tasas de alucinacion ni metricas de calidad porque no aplican a un artefacto sin modelo subyacente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-01-keras-tar-hardlink
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-01-keras-tar-hardlink
 - Referencia al hallazgo de origen: `keras/22973` (ruta del hallazgo recogida en el `MANIFEST.json` de la coleccion; no se proporciona URL directa)
 - Manifiesto de la coleccion: `MANIFEST.json` (hashes y ruta del hallazgo; no se proporciona URL directa)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

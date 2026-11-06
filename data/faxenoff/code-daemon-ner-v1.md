@@ -110,7 +110,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faxenoff/code-daemon-ner-v1
+- Modelo en Hugging Face: https://huggingface.co/faxenoff/code-daemon-ner-v1
 - Modelo base: https://huggingface.co/nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large
 - Servidor MCP UltraCode, del mismo autor: https://github.com/faxenoff/ultracode
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devolvieron exclusivamente paginas de localizacion de tiendas y codigos postales (Lidl US, Lidl GB, Storeopeninghours, Israel Post, Lev Tel Aviv), sin relacion con el modelo, su autor ni su dominio de aplicacion.

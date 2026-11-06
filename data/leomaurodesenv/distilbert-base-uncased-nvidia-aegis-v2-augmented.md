@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-base-uncased-nvidia-aegis-v2-augmented es un modelo de clasificación de texto obtenido por fine-tuning del checkpoint distilbert/distilbert-base-uncased, publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un transformer encoder denso de 6 capas con 66.955.010 parámetros, orientado a tareas de clasificación de secuencias (pipeline text-classification). Por el nombre del repositorio, el ajuste se habría realizado sobre la versión 2 del dataset NVIDIA Aegis de seguridad de contenido, con algún tipo de aumento de datos (augmented), si bien la model card no documenta el conjunto de entrenamiento y lo describe literalmente como "an unknown dataset".
+distilbert-base-uncased-nvidia-aegis-v2-augmented es un modelo de clasificación de texto obtenido por fine-tuning del checkpoint distilbert/distilbert-base-uncased, publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un transformer encoder denso de 6 capas con 66.955.010 parámetros, orientado a tareas de clasificación de secuencias (pipeline text-classification). Por el nombre del repositorio, el ajuste se habría realizado sobre la versión 2 del dataset NVIDIA Aegis de seguridad de contenido, con algún tipo de aumento de datos (augmented), si bien la model card no documenta el conjunto de entrenamiento y lo describe literalmente como "an unknown dataset".
 
 El modelo resuelve el problema clásico de clasificación de texto a bajo coste computacional: al derivar de DistilBERT, conserva aproximadamente el 97 % del rendimiento de BERT-base en tareas de comprensión del lenguaje según su publicación original, pero con un 40 % menos de parámetros y una latencia inferior. Esto lo sitúa como candidato para tareas de moderación de contenido, filtrado previo en pipelines de generación o etiquetado masivo de datos, donde el coste por inferencia es un factor crítico.
 
@@ -45,7 +45,7 @@ Resultado final declarado en el conjunto de evaluación: pérdida 0.2818, accura
 
 - Clasificación de texto: tarea principal del modelo (pipeline `text-classification`). El número de clases y la taxonomía de etiquetas no están documentados.
 - Codificación de secuencias: al derivar de DistilBERT, produce representaciones contextuales de hasta 512 tokens que pueden reutilizarse como features en clasificadores posteriores.
-- Compatibilidad de despliegue: los tags incluyen `text-embeddings-inference` y `endpoints_compatible`, lo que indica que puede servirse con Text Embeddings Inference de HuggingFace y con Inference Endpoints.
+- Compatibilidad de despliegue: los tags incluyen `text-embeddings-inference` y `endpoints_compatible`, lo que indica que puede servirse con Text Embeddings Inference de Hugging Face y con Inference Endpoints.
 - Capacidades multilingües: no soportadas de forma declarada; el modelo base es monolingüe en inglés.
 - Generación de texto: no. Es un encoder de clasificación, no un modelo causal.
 - Razonamiento multi-paso, agentes y tool calling / function calling: no soportados.
@@ -78,7 +78,7 @@ No se aportan precision, recall, F1 ni métricas por clase, imprescindibles en t
 - VRAM estimada para inferencia: en fp32 aproximadamente 270 MB de pesos; en fp16/bf16 alrededor de 135 MB; con cuantización int8 dinámica, en torno a 70 MB. Sumando activaciones y overhead del runtime, cualquier GPU con 1-2 GB de VRAM es suficiente.
 - GPU recomendadas: el modelo es deliberadamente pequeño, por lo que una NVIDIA T4, L4, RTX 3060 o incluso una iGPU moderna cubren el caso de uso. Una A100 o H100 solo tiene sentido si se necesita throughput masivo por lote, no por requisitos de memoria.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer de los últimos ocho años (GTX 1050 en adelante). También se ejecuta en CPU con batches pequeños.
-- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`). Para CPU de alto rendimiento, exportación a ONNX Runtime o cuantización dinámica. vLLM y llama.cpp no son aplicables: vLLM está orientado a modelos generativos y llama.cpp requiere pesos GGUF, no publicados.
+- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para CPU de alto rendimiento, exportación a ONNX Runtime o cuantización dinámica. vLLM y llama.cpp no son aplicables: vLLM está orientado a modelos generativos y llama.cpp requiere pesos GGUF, no publicados.
 - Latencia y throughput: no se han publicado cifras medidas. Como referencia orientativa (no medida), un encoder de 6 capas y 66,9 M de parámetros suele procesar del orden de cientos a miles de secuencias por segundo en una GPU moderna con batching, y decenas por segundo en CPU. Estas cifras deben validarse en el entorno objetivo.
 - Nota de almacenamiento: el repositorio ocupa 8,0 GB pese a que los pesos en fp32 rondan los 270 MB, lo que sugiere la presencia de checkpoints intermedios o estados del optimizador en el histórico del repositorio.
 
@@ -86,10 +86,10 @@ No se aportan precision, recall, F1 ni métricas por clase, imprescindibles en t
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| distilbert-base-uncased-nvidia-aegis-v2-augmented | 66,9 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | Apache-2.0 | HuggingFace (73 descargas, 0 likes) |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base preentrenado (MLM) | Apache-2.0 | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | Modelo base preentrenado (MLM) | Apache-2.0 | HuggingFace |
-| roberta-base | ~125 M | 512 tokens | Modelo base preentrenado (MLM) | MIT | HuggingFace |
+| distilbert-base-uncased-nvidia-aegis-v2-augmented | 66,9 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | Apache-2.0 | Hugging Face (73 descargas, 0 likes) |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base preentrenado (MLM) | Apache-2.0 | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Modelo base preentrenado (MLM) | Apache-2.0 | Hugging Face |
+| roberta-base | ~125 M | 512 tokens | Modelo base preentrenado (MLM) | MIT | Hugging Face |
 
 Los dos últimos no son clasificadores de seguridad directamente comparables: son backbones que requerirían su propio fine-tuning. No existe ningún benchmark común publicado que permita comparar el rendimiento de este modelo con alternativas de moderación de contenido, por lo que la comparativa se limita a tamaño, contexto y licencia.
 
@@ -109,7 +109,7 @@ Los dos últimos no son clasificadores de seguridad directamente comparables: so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v2-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v2-augmented
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces recuperados correspondían a contenidos no relacionados (soporte de YouTube TV), por lo que se omiten. No se dispone de paper, blog técnico, repositorio de código ni demo asociados al modelo.

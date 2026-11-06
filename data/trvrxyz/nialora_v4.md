@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nialora_v4 es un adaptador LoRA de tipo text-to-image publicado por el usuario Trvrxyz en HuggingFace. Se distribuye como un LoRA de difusión para el modelo base Tongyi-MAI/Z-Image, un modelo de generación de imágenes de Tongyi (Alibaba). El adaptador está pensado para reproducir una identidad de personaje concreta, activada mediante la palabra clave `n1acore`, y su función es inyectar ese personaje en el espacio latente del modelo base sin necesidad de reentrenar el modelo completo.
+nialora_v4 es un adaptador LoRA de tipo text-to-image publicado por el usuario Trvrxyz en Hugging Face. Se distribuye como un LoRA de difusión para el modelo base Tongyi-MAI/Z-Image, un modelo de generación de imágenes de Tongyi (Alibaba). El adaptador está pensado para reproducir una identidad de personaje concreta, activada mediante la palabra clave `n1acore`, y su función es inyectar ese personaje en el espacio latente del modelo base sin necesidad de reentrenar el modelo completo.
 
 El repositorio tiene un tamaño de 0,3 GB, lo que es coherente con un LoRA de rango bajo sobre un modelo de difusión de gran tamaño. La model card es extremadamente escasa: solo indica el nombre del personaje ("nia character"), la trigger word y las instrucciones de descarga. No hay información sobre el dataset de entrenamiento, hiperparámetros, número de pasos, resolución nativa ni licencia.
 
@@ -80,6 +80,6 @@ No se dispone de información sobre otros LoRA comparables sobre Z-Image en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Trvrxyz/nialora_v4
+- Hugging Face: https://huggingface.co/Trvrxyz/nialora_v4
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
 - Descarga de archivos: https://huggingface.co/Trvrxyz/nialora_v4/tree/main

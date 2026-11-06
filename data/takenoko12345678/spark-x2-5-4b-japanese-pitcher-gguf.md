@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher-GGUF
 - Modelo base del derivado (safetensors): https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-Pitcher
 - Variante japonesa sin LoRA de personajes: https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese
 - Variante japonesa sin LoRA en GGUF: https://huggingface.co/Takenoko12345678/Spark-X2.5-4B-Japanese-GGUF

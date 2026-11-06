@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3.5-4b-random-reward-r-s1` es un artefacto de investigación publicado por el usuario `sidbaines` en HuggingFace, no un modelo destinado a uso productivo. Se trata de un ajuste por aprendizaje por refuerzo del modelo base Qwen/Qwen3.5-4B (con el modo "thinking" activado) en el que la señal de recompensa es completamente aleatoria: en cada grupo de 8 respuestas a un prompt, exactamente la mitad reciben recompensa 1 y la otra mitad 0, independientemente de su contenido. El objetivo declarado es estudiar qué efecto tiene una recompensa sin correlación con la calidad sobre el razonamiento del modelo.
+`qwen3.5-4b-random-reward-r-s1` es un artefacto de investigación publicado por el usuario `sidbaines` en Hugging Face, no un modelo destinado a uso productivo. Se trata de un ajuste por aprendizaje por refuerzo del modelo base Qwen/Qwen3.5-4B (con el modo "thinking" activado) en el que la señal de recompensa es completamente aleatoria: en cada grupo de 8 respuestas a un prompt, exactamente la mitad reciben recompensa 1 y la otra mitad 0, independientemente de su contenido. El objetivo declarado es estudiar qué efecto tiene una recompensa sin correlación con la calidad sobre el razonamiento del modelo.
 
 El entrenamiento emplea GRPO de parámetros completos (pérdida Dr. GRPO, un paso de optimizador por lote, sin penalización KL, learning rate 1e-06) ejecutado con SkyRL sobre una GPU H200, usando una muestra estratificada de prompts del mezcla SFT de Tulu 3 (chat, matemáticas, código, seguimiento de instrucciones, conocimiento y seguridad). El modelo conserva intactas la torre de visión y la cabeza MTP del modelo base.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado ni de especificaciones del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidbaines/qwen3.5-4b-random-reward-r-s1
+- Modelo en Hugging Face: https://huggingface.co/sidbaines/qwen3.5-4b-random-reward-r-s1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - SkyRL (framework de entrenamiento mencionado): no disponible en la información proporcionada
 - Paper de Dr. GRPO: no disponible en la información proporcionada

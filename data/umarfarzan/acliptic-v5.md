@@ -72,7 +72,7 @@ El propio autor advierte que la mejora en el top 5 % podría deberse al azar y q
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Acliptic v5 | Pipeline ASR + embeddings + ranker clásico | No disponible | Segmentos de 30 s | AUC 0,599 en test propio | No disponible | HuggingFace (umarfarzan/acliptic-v5) |
+| Acliptic v5 | Pipeline ASR + embeddings + ranker clásico | No disponible | Segmentos de 30 s | AUC 0,599 en test propio | No disponible | Hugging Face (umarfarzan/acliptic-v5) |
 | Acliptic v2 | Pipeline con clasificador DeBERTa | No disponible | Segmentos de 30 s | AUC 0,507 en el mismo test | No disponible | Referenciado en la model card, no enlazado |
 | Alternativas genéricas de detección de highlights | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umarfarzan/acliptic-v5
+- Modelo en Hugging Face: https://huggingface.co/umarfarzan/acliptic-v5
 - `BAAI/bge-base-en-v1.5`: https://huggingface.co/BAAI/bge-base-en-v1.5
 - CLAP `clap-htsat-unfused` (Xenova ONNX): no disponible enlace directo en la información proporcionada
 - `faster-whisper-base.en`: no disponible enlace directo en la información proporcionada

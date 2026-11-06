@@ -67,7 +67,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 | Lykon/absolute-reality-1.6525-inpainting | SD1.5 inpainting | GPU (CUDA) | CreativeML OpenRAIL-M |
 | lllyasviel/control_v11p_sd15_openpose | ControlNet SD1.5 | GPU (CUDA) | OpenRAIL |
 
-La principal diferencia es que este modelo esta optimizado para NPU movil, mientras que las alternativas requieren GPU de escritorio o servidor. No se han encontrado otros modelos QNN de inpainting con ControlNet publicados en HuggingFace.
+La principal diferencia es que este modelo esta optimizado para NPU movil, mientras que las alternativas requieren GPU de escritorio o servidor. No se han encontrado otros modelos QNN de inpainting con ControlNet publicados en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ La principal diferencia es que este modelo esta optimizado para NPU movil, mient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AbrahamPJ/absolutereality-openpose-control-inpaint-qnn
+- Repositorio Hugging Face: https://huggingface.co/AbrahamPJ/absolutereality-openpose-control-inpaint-qnn
 - Modelo base (Lykon): https://huggingface.co/lykon-models/absolute-realism-1.6525-inpainting
 - ControlNet OpenPose (lllyasviel): https://huggingface.co/lllyasviel/control_v11p_sd15_openpose
 - Proyecto local-dream (conversion y runtime): https://github.com/xororz/local-dream

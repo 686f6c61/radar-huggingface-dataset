@@ -95,7 +95,7 @@ Las cifras de MTPLX provienen de una prueba corta de 80 tokens, no del prompt de
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-8bit
+- Hugging Face (esta build): https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-8bit
 - Build AWQ 4.5 bits con evals rápidas: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-AWQ-4.5bit
 - Build uncensored MLX AWQ 4.5 bits: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-AWQ-4.5bit
 - Build uncensored MLX 8 bits: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-8bit

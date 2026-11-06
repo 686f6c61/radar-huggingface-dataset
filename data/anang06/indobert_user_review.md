@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBert_user_review es un modelo publicado en HuggingFace por el usuario Anang06 bajo licencia MIT. La denominación sugiere un ajuste fino (fine-tuning) sobre una base IndoBERT, el modelo BERT preentrenado para indonesio desarrollado originalmente por Indolem/Universitas Indonesia. Por el nombre del repositorio, el propósito declarado sería el análisis de reseñas de usuarios (user review), presumiblemente clasificación de sentimiento o análisis de opiniones en indonesio.
+IndoBert_user_review es un modelo publicado en Hugging Face por el usuario Anang06 bajo licencia MIT. La denominación sugiere un ajuste fino (fine-tuning) sobre una base IndoBERT, el modelo BERT preentrenado para indonesio desarrollado originalmente por Indolem/Universitas Indonesia. Por el nombre del repositorio, el propósito declarado sería el análisis de reseñas de usuarios (user review), presumiblemente clasificación de sentimiento o análisis de opiniones en indonesio.
 
 La información disponible es mínima. La model card publicada no contiene más que la etiqueta de licencia, sin descripción, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. El repositorio no registra descargas ni interacciones, lo que indica que no ha sido validado por la comunidad. No se dispone de información sobre arquitectura concreta, número de parámetros, longitud de contexto ni idiomas soportados más allá de la inferencia razonable a partir del nombre.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anang06/IndoBert_user_review | no disponible | no disponible | MIT | HuggingFace, sin descargas |
-| IndoBERT (indolem/indobert-base-uncased) | ~110 M (referencia de la familia, no confirmado para este repo) | 512 tokens (referencia de la familia) | MIT/Apache según checkpoint | HuggingFace, ampliamente utilizado |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace, multilingüe |
+| Anang06/IndoBert_user_review | no disponible | no disponible | MIT | Hugging Face, sin descargas |
+| IndoBERT (indolem/indobert-base-uncased) | ~110 M (referencia de la familia, no confirmado para este repo) | 512 tokens (referencia de la familia) | MIT/Apache según checkpoint | Hugging Face, ampliamente utilizado |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face, multilingüe |
 
 La comparación es orientativa: los datos de IndoBERT y XLM-RoBERTa corresponden a los modelos base de referencia, no a este repositorio concreto, cuyas especificaciones no han sido publicadas por el autor.
 
@@ -79,5 +79,5 @@ La comparación es orientativa: los datos de IndoBERT y XLM-RoBERTa corresponden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anang06/IndoBert_user_review
+- Hugging Face: https://huggingface.co/Anang06/IndoBert_user_review
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

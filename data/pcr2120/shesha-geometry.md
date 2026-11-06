@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks comparativos tradicionales (MMLU, H
 
 ## Enlaces
 
-- [HuggingFace: pcr2120/shesha-geometry](https://huggingface.co/pcr2120/shesha-geometry)
+- [Hugging Face: pcr2120/shesha-geometry](https://huggingface.co/pcr2120/shesha-geometry)
 - [Paper fundacional: arXiv:2601.09173](https://arxiv.org/abs/2601.09173)
 - [Paper LLM steering y drift: arXiv:2604.17698](https://arxiv.org/abs/2604.17698)
 - [Paper biología: arXiv:2604.16642](https://arxiv.org/abs/2604.16642)

@@ -81,7 +81,7 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-video-lora-looks-c20
+- Repositorio Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-video-lora-looks-c20
 - LoRA original: https://huggingface.co/JoshHughes/sana-video2-style-v2v-lora
 - Modelo base: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
 - App p0pc0rn: https://artistjoshhughes.github.io/p0pc0rn/

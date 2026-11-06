@@ -19,7 +19,7 @@ GRaPE-2.5-Quasar-Q3_K_M-GGUF es una cuantización en formato GGUF del modelo mul
 
 ## Arquitectura y entrenamiento
 
-No se han encontrado datos detallados sobre la arquitectura del modelo base. Las etiquetas de HuggingFace incluyen "qwen3.5", lo que podría indicar una arquitectura derivada de la serie Qwen3.5, aunque no está confirmado. El pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar imágenes y texto de forma conjunta. Los parámetros totales ascienden a 27.320.697.856. No se dispone de información sobre el proceso de entrenamiento, la composición del dataset ni técnicas de alineación como RLHF o DPO.
+No se han encontrado datos detallados sobre la arquitectura del modelo base. Las etiquetas de Hugging Face incluyen "qwen3.5", lo que podría indicar una arquitectura derivada de la serie Qwen3.5, aunque no está confirmado. El pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar imágenes y texto de forma conjunta. Los parámetros totales ascienden a 27.320.697.856. No se dispone de información sobre el proceso de entrenamiento, la composición del dataset ni técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No disponible. No se ha encontrado información comparativa con otros modelos mu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DedeProGames/GRaPE-2.5-Quasar-Q3_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/SL-AI/GRaPE-2.5-Quasar
+- Repositorio en Hugging Face: https://huggingface.co/DedeProGames/GRaPE-2.5-Quasar-Q3_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/SL-AI/GRaPE-2.5-Quasar
 - La búsqueda web no arrojó otros enlaces relevantes sobre el modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-cd6b3cb8cea95953` es un modelo de generacion de texto publicado en HuggingFace por el usuario `gradients-io-tournaments`, con arquitectura GPT-Neo segun la etiqueta declarada en el repositorio. Cuenta con 125.198.592 parametros reales, verificados a partir de los pesos en formato safetensors, lo que lo situa en la categoria de modelos pequenos (aproximadamente 125 millones de parametros), comparable en escala a GPT-2 124M o GPT-Neo 125M.
+El modelo identificado como `gradients-io-tournaments/augmented-cd6b3cb8cea95953` es un modelo de generacion de texto publicado en Hugging Face por el usuario `gradients-io-tournaments`, con arquitectura GPT-Neo segun la etiqueta declarada en el repositorio. Cuenta con 125.198.592 parametros reales, verificados a partir de los pesos en formato safetensors, lo que lo situa en la categoria de modelos pequenos (aproximadamente 125 millones de parametros), comparable en escala a GPT-2 124M o GPT-Neo 125M.
 
-El modelo resuelve la tarea generica de text-generation y se distribuye unicamente en formato safetensors para la libreria transformers, con compatibilidad declarada con endpoints. El nombre del repositorio sugiere una variante derivada de un proceso de aumentacion o de un torneo de fine-tuning, pero la model card no aporta ninguna descripcion funcional: es una plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas soportados, ni datos de entrenamiento, ni procedencia del checkpoint base.
+El modelo resuelve la tarea generica de text-generation y se distribuye unicamente en formato safetensors para la libreria transformers, con compatibilidad declarada con endpoints. El nombre del repositorio sugiere una variante derivada de un proceso de aumentacion o de un torneo de fine-tuning, pero la model card no aporta ninguna descripcion funcional: es una plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declara licencia, ni idiomas soportados, ni datos de entrenamiento, ni procedencia del checkpoint base.
 
 Su relevancia es limitada y acotada al contexto de experimentacion: se trata de un artefacto de investigacion o de un ejercicio de fine-tuning con cero descargas y cero interacciones en el momento de la consulta. Resulta util como caso de estudio de repositorios publicados sin documentacion y como modelo base de bajo coste para pruebas de infraestructura de inferencia, pero no es apto para tareas de produccion que exijan razonamiento, codigo o calidad de generacion alta.
 
@@ -25,13 +25,13 @@ Su relevancia es limitada y acotada al contexto de experimentacion: se trata de 
 
 El unico dato tecnico verificable sobre la arquitectura es la etiqueta `gpt_neo` del repositorio, que identifica la clase de modelo GPT-Neo de la libreria transformers: un transformer causal (decoder-only) con atencion multi-cabeza clasica, normalizacion por capas y embeddings de tokens ligados a la cabeza de salida. El recuento de parametros, 125.198.592, coincide con la configuracion estandar de GPT-Neo 125M (12 capas, dimension oculta 768, 12 cabezas de atencion e intermedio de 3.072, con vocabulario de 50.257 tokens), aunque la model card no confirma estos hiperparametros y no deben darse por seguros.
 
-No hay informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16 o bf16), si hubo fases de RLHF, DPO o instruccion, y cual era el checkpoint de partida del supuesto proceso de aumentacion. La model card es la plantilla autogenerada por HuggingFace y todos los apartados de datos, procedimiento e hiperparametros estan sin rellenar. No se documenta ninguna innovacion tecnica: ni decodificacion especulativa, ni atencion lineal, ni atencion por ventanas, ni mezcla de expertos.
+No hay informacion sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16 o bf16), si hubo fases de RLHF, DPO o instruccion, y cual era el checkpoint de partida del supuesto proceso de aumentacion. La model card es la plantilla autogenerada por Hugging Face y todos los apartados de datos, procedimiento e hiperparametros estan sin rellenar. No se documenta ninguna innovacion tecnica: ni decodificacion especulativa, ni atencion lineal, ni atencion por ventanas, ni mezcla de expertos.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva basica, propia de un modelo causal de 125 millones de parametros.
 - Continuacion de prompts y generacion libre condicionada por prefijo.
-- Compatibilidad declarada con endpoints de inferencia de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con endpoints de inferencia de Hugging Face (`endpoints_compatible`).
 - No hay evidencia de soporte de tool calling ni de function calling.
 - No hay evidencia de soporte de agentes, razonamiento multi-paso ni modos de pensamiento (thinking mode).
 - No hay evidencia de capacidades multilingues: el campo de idiomas no esta declarado.
@@ -68,10 +68,10 @@ En la tabla se recogen datos publicos de modelos comparables por escala. Los dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gradients-io-tournaments/augmented-cd6b3cb8cea95953` | 125.198.592 | no disponible | no disponible | HuggingFace, solo safetensors |
-| GPT-Neo 125M (EleutherAI) | 125 M | 2048 tokens | MIT | HuggingFace, transformers, ampliamente replicado |
-| GPT-2 124M (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, transformers, estandar de facto |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con 154 checkpoints intermedios publicados |
+| `gradients-io-tournaments/augmented-cd6b3cb8cea95953` | 125.198.592 | no disponible | no disponible | Hugging Face, solo safetensors |
+| GPT-Neo 125M (EleutherAI) | 125 M | 2048 tokens | MIT | Hugging Face, transformers, ampliamente replicado |
+| GPT-2 124M (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, transformers, estandar de facto |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con 154 checkpoints intermedios publicados |
 
 La diferencia principal frente a las alternativas no es tecnica sino de trazabilidad: los tres modelos de referencia cuentan con model card completa, licencia explicita, dataset documentado y resultados de evaluacion publicados, mientras que el modelo analizado carece de todos esos elementos.
 
@@ -90,8 +90,8 @@ La diferencia principal frente a las alternativas no es tecnica sino de trazabil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-cd6b3cb8cea95953
-- Perfil del autor en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-cd6b3cb8cea95953
+- Perfil del autor en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Referencia citada en la plantilla de la model card, correspondiente al calculador de impacto ambiental y no al modelo: https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning mencionado en la plantilla: https://mlco2.github.io/impact#compute
 

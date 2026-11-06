@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento comparativo. Existen otros adaptadores del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-signedFtop50-lambda05-gap01-10240
+- Repositorio Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-signedFtop50-lambda05-gap01-10240
 - Repositorio GitHub de VisionZip: https://github.com/JIA-Lab-research/VisionZip
 - Adaptador similar (balanced): https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240
 - Adaptador similar (official): https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240

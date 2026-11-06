@@ -86,8 +86,8 @@ No se dispone de información suficiente para una comparación detallada con alt
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante: https://huggingface.co/kristijan505/Ornith-1.5-397B-colibri-i4-gs64
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8
+- Repositorio Hugging Face de la variante: https://huggingface.co/kristijan505/Ornith-1.5-397B-colibri-i4-gs64
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8
 - Página oficial de Ornith AI: https://ornith.online/
 - Documentación técnica de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Perfil en BenchLM.ai: https://benchlm.ai/models/ornith-1-5-397b

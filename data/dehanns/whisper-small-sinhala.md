@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - Con 241,7 millones de parámetros en F32, la inferencia requiere aproximadamente 1 GB de VRAM en FP32 (0,97 GB para los pesos, más overhead de activaciones).
 - En cuantizaciones de 8 bits (INT8), el modelo puede ejecutarse en GPUs con 1-2 GB de VRAM; en 4 bits, cabe en GPUs de 1 GB, aunque no se han publicado cuantizaciones para este modelo concreto.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1650, RTX 2060, o superiores. En CPU, la inferencia es lenta pero factible.
-- Opciones de despliegue: transformers de HuggingFace para Python, o mediante la librería `whisper` de OpenAI con pesos locales. No está desplegado en ningún Inference Provider de HuggingFace.
+- Opciones de despliegue: transformers de Hugging Face para Python, o mediante la librería `whisper` de OpenAI con pesos locales. No está desplegado en ningún Inference Provider de Hugging Face.
 - La latencia típica para Whisper-small en GPU es de segundos por clip de 30 segundos, pero no se ha medido específicamente para este modelo.
 
 ## Comparativa con modelos similares
@@ -57,15 +57,15 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `dehanns/whisper-small-sinhala` | 241,7M | 30 s audio | no disponible | HuggingFace |
-| `openai/whisper-small` | 244M | 30 s audio | MIT | HuggingFace |
-| `openai/whisper-base` | 74M | 30 s audio | MIT | HuggingFace |
+| `dehanns/whisper-small-sinhala` | 241,7M | 30 s audio | no disponible | Hugging Face |
+| `openai/whisper-small` | 244M | 30 s audio | MIT | Hugging Face |
+| `openai/whisper-base` | 74M | 30 s audio | MIT | Hugging Face |
 
 No se han encontrado otros modelos ASR específicos para cingalés en la información disponible para una comparativa más detallada.
 
 ## Limitaciones y advertencias
 
-- No hay licencia especificada en la tarjeta de HuggingFace, lo que impide conocer las restricciones de uso comercial; se debe contactar al autor antes de usar en producción.
+- No hay licencia especificada en la tarjeta de Hugging Face, lo que impide conocer las restricciones de uso comercial; se debe contactar al autor antes de usar en producción.
 - La documentación es inexistente: no hay tarjeta de modelo, no se detalla el dataset de entrenamiento ni los métodos de evaluación.
 - El fine-tuning con datos de noticias puede limitar el rendimiento en otros dominios (conversaciones informales, dialectos, ruido de fondo).
 - Riesgo de alucinación o errores de transcripción en audio con ruido, acentos no representados o vocabulario técnico fuera del corpus de entrenamiento.
@@ -74,8 +74,8 @@ No se han encontrado otros modelos ASR específicos para cingalés en la informa
 
 ## Enlaces
 
-- [HuggingFace: dehanns/whisper-small-sinhala](https://huggingface.co/dehanns/whisper-small-sinhala)
-- [openai/whisper-small en HuggingFace](https://huggingface.co/openai/whisper-small)
+- [Hugging Face: dehanns/whisper-small-sinhala](https://huggingface.co/dehanns/whisper-small-sinhala)
+- [openai/whisper-small en Hugging Face](https://huggingface.co/openai/whisper-small)
 - [whisper-small-sinhala en model.aibase.com](https://model.aibase.com/models/details/1915753626762633218)
 - [GitHub: sandun131/Sinhala-ASR-Whisper-Small - load_the_whisper_sinhala_small_for_inference.py](https://github.com/sandun131/Sinhala-ASR-Whisper-Small/blob/main/load_the_whisper_sinhala_small_for_inference.py)
 - [GitHub: kaan84k/whisper-small-sinhala-proto](https://github.com/kaan84k/whisper-small-sinhala-proto)## Resumen

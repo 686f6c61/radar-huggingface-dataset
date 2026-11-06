@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KexuanShi/sft_gemma2_2b_vocabdrop_a095 es un ajuste fino supervisado (SFT) de un modelo de la familia Gemma 2 de aproximadamente 2.600 millones de parámetros, publicado por el usuario KexuanShi en HuggingFace. El identificador del repositorio y sus etiquetas (gemma2, sft, trl, generated_from_trainer, hf_jobs) indican que se partió de una variante Gemma 2 2B y que el entrenamiento se ejecutó con la librería TRL de HuggingFace, probablemente en la infraestructura de trabajos gestionados de HuggingFace. La model card, sin embargo, deja el campo del modelo base como "None" y las secciones de procedimiento de entrenamiento están vacías, por lo que la procedencia exacta y la receta de ajuste no están documentadas.
+KexuanShi/sft_gemma2_2b_vocabdrop_a095 es un ajuste fino supervisado (SFT) de un modelo de la familia Gemma 2 de aproximadamente 2.600 millones de parámetros, publicado por el usuario KexuanShi en Hugging Face. El identificador del repositorio y sus etiquetas (gemma2, sft, trl, generated_from_trainer, hf_jobs) indican que se partió de una variante Gemma 2 2B y que el entrenamiento se ejecutó con la librería TRL de Hugging Face, probablemente en la infraestructura de trabajos gestionados de Hugging Face. La model card, sin embargo, deja el campo del modelo base como "None" y las secciones de procedimiento de entrenamiento están vacías, por lo que la procedencia exacta y la receta de ajuste no están documentadas.
 
 El sufijo "vocabdrop_a095" apunta a la aplicación de alguna técnica de descarte o reducción de vocabulario con un hiperparámetro de valor 0,95, pero el repositorio no describe el método, el conjunto de datos ni los hiperparámetros empleados. Los pesos reales, según los safetensors publicados, suman 2.614.341.888 parámetros y el repositorio ocupa 5,3 GB.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, lo único verificable es lo que declara el repositori
 ## Casos de uso
 
 - Experimentacion academica con poda de vocabulario: el checkpoint permite reproducir y comparar el efecto de una tecnica de "vocabdrop" (posiblemente con factor 0,95) frente al Gemma 2 2B sin modificar, siempre que se reconstruya el tokenizador empleado.
-- Referencia de pipeline SFT con TRL: sirve como ejemplo de extremo a extremo de un trabajo de ajuste supervisado lanzado desde la infraestructura de HuggingFace Jobs, util para equipos que quieran replicar el flujo de trabajo.
+- Referencia de pipeline SFT con TRL: sirve como ejemplo de extremo a extremo de un trabajo de ajuste supervisado lanzado desde la infraestructura de Hugging Face Jobs, util para equipos que quieran replicar el flujo de trabajo.
 - Ajuste incremental sobre dominio propio: al ser un modelo de 2,6B parámetros y 5,3 GB en precision completa, se puede continuar el entrenamiento con LoRA o QLoRA en una unica GPU consumer para tareas concretas de generacion de texto.
 - Evaluacion de degradacion por ajuste: util como caso de estudio para medir cuanto se pierde en conocimiento general y en capacidades multilingues tras un SFT de proposito desconocido y un posible recorte de vocabulario.
 - Prototipado de asistentes conversacionales de bajo coste: si conserva el comportamiento del Gemma 2 2B base, puede desplegarse en cuantizacion de 4 bits para demos de chat con presupuesto de VRAM muy reducido.
@@ -69,11 +69,11 @@ Los datos de las alternativas provienen de sus fichas publicas y no han sido ver
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| KexuanShi/sft_gemma2_2b_vocabdrop_a095 | 2,61B | no disponible | no disponible | HuggingFace, 0 descargas | no |
-| google/gemma-2-2b | ~2,6B | 8.192 tokens | Gemma Terms of Use (uso comercial con restricciones) | HuggingFace | si |
-| google/gemma-2-2b-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | si |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | HuggingFace | si |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | si |
+| KexuanShi/sft_gemma2_2b_vocabdrop_a095 | 2,61B | no disponible | no disponible | Hugging Face, 0 descargas | no |
+| google/gemma-2-2b | ~2,6B | 8.192 tokens | Gemma Terms of Use (uso comercial con restricciones) | Hugging Face | si |
+| google/gemma-2-2b-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | si |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | Hugging Face | si |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | si |
 
 Frente a estas alternativas, el modelo aqui descrito no aporta cifras de rendimiento ni condiciones de uso claras, por lo que en un contexto de produccion no es equiparable a los modelos oficiales de su misma categoria.
 
@@ -91,10 +91,10 @@ Frente a estas alternativas, el modelo aqui descrito no aporta cifras de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a095
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a095
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL (SFTTrainer): https://huggingface.co/docs/trl
 - Modelo base de referencia (Gemma 2 2B, no confirmado): https://huggingface.co/google/gemma-2-2b
-- Pagina de trabajos gestionados de HuggingFace: https://huggingface.co/docs/huggingface_hub/guides/jobs
+- Pagina de trabajos gestionados de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/jobs
 - Paper o blog especifico del modelo: no disponible
 - Demo o espacio asociado: no disponible

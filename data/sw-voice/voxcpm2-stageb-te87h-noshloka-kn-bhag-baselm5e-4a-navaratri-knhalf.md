@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voxcpm2-stageB-te87h-noshloka-kn-bhag-baselm5e-4A-navaratri-knhalf es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep, realizado con el entrenador oficial de VoxCPM. El modelo pertenece a la familia VoxCPM2 y está orientado a la generación de voz sin referencia explícita (reference-free), es decir, la identidad vocal queda embebida en los pesos del modelo.
+voxcpm2-stageB-te87h-noshloka-kn-bhag-baselm5e-4A-navaratri-knhalf es un modelo de síntesis de voz (text-to-speech) publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep, realizado con el entrenador oficial de VoxCPM. El modelo pertenece a la familia VoxCPM2 y está orientado a la generación de voz sin referencia explícita (reference-free), es decir, la identidad vocal queda embebida en los pesos del modelo.
 
 El modelo cubre tres idiomas: inglés (en), telugu (te) y canarés (kn), con un sesgo de entrenamiento hacia el telugu (cinco pasadas sobre las 127 unidades de telugu frente a media pasada efectiva sobre 62 de las 124 unidades de canarés). El tamaño del repositorio es de 9,5 GB y el número de parámetros asciende a 2.290.004.544 (aproximadamente 2,29 mil millones), lo que lo sitúa en la gama media de modelos TTS neuronales.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageB-te87h-noshloka-kn-bhag-baselm5e-4A-navaratri-knhalf
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageB-te87h-noshloka-kn-bhag-baselm5e-4A-navaratri-knhalf
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te87h-noshloka-noen-kn-bhag-baselm5e-4-acc16-1ep
 - Código del proyecto (referenciado en la model card): swamiji-tts, ruta research/exp-iterations/06-voxcpm2-swamiji-stages (no se proporciona URL directa en la información disponible)

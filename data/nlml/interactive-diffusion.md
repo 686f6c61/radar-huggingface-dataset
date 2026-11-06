@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nlml/interactive-diffusion es un modelo de mundo (world model) generativo basado en difusion, publicado por el usuario nlml en HuggingFace bajo licencia MIT. El modelo se entrenó para simular de forma interactiva la dinamica del entorno CarRacing-v3: recibe el estado visual de una partida (fotogramas) y las acciones del jugador, y genera la continuacion del video, de manera que un agente o una persona puede "jugar" dentro del modelo en lugar de dentro del simulador original.
+nlml/interactive-diffusion es un modelo de mundo (world model) generativo basado en difusion, publicado por el usuario nlml en Hugging Face bajo licencia MIT. El modelo se entrenó para simular de forma interactiva la dinamica del entorno CarRacing-v3: recibe el estado visual de una partida (fotogramas) y las acciones del jugador, y genera la continuacion del video, de manera que un agente o una persona puede "jugar" dentro del modelo en lugar de dentro del simulador original.
 
 La pieza central es un `CausalSpatiotemporalDiT`, es decir, un Diffusion Transformer con atencion espacio-temporal de caracter causal, entrenado durante 50.000 pasos con aumentacion de ruido en el contexto (context noise augmentation). El checkpoint publicado pesa 145 MB (sin el optimizador) y el repositorio completo ocupa 0.8 GB, lo que incluye datos de muestra de CarRacing-v3 con fotogramas, acciones y mascaras de episodios validos.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificados (parametros, contexto, metricas) de los model
 
 | Modelo | Categoria | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nlml/interactive-diffusion | World model de difusion con DiT causal | CarRacing-v3 | no disponible (checkpoint de 145 MB) | MIT | Pesos y codigo publicos en HuggingFace y GitHub |
+| nlml/interactive-diffusion | World model de difusion con DiT causal | CarRacing-v3 | no disponible (checkpoint de 145 MB) | MIT | Pesos y codigo publicos en Hugging Face y GitHub |
 | DIAMOND (referencia de la literatura) | World model de difusion | Atari | no disponible | no disponible | no disponible |
 | GameNGen (referencia de la literatura) | World model de difusion para juegos | DOOM | no disponible | no disponible | no disponible |
 | Genie (referencia de la literatura) | World model generativo interactivo | Multiples entornos 2D | no disponible | no disponible | no disponible |
@@ -94,7 +94,7 @@ La diferencia practica mas relevante es que interactive-diffusion publica pesos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nlml/interactive-diffusion
+- Hugging Face: https://huggingface.co/nlml/interactive-diffusion
 - Repositorio GitHub: https://github.com/nlml/interactive-diffusion
 - Articulo (blog post): https://nlml.github.io/generative-models/interactive-diffusion-1/
 - Entorno CarRacing-v3: no se proporciona enlace explicito en la informacion disponible (corresponde a Gymnasium/Farama Foundation).

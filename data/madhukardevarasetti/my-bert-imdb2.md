@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `madhukardevarasetti/my-bert-imdb2` es un modelo subido al Hub de HuggingFace por el usuario `madhukardevarasetti`. No se dispone de información pública sobre su arquitectura, datos de entrenamiento, licencia ni capacidades. La model card es una plantilla autogenerada que no contiene ningún dato técnico, y el modelo no tiene descargas ni likes, lo que indica que no ha sido validado por la comunidad.
+El modelo `madhukardevarasetti/my-bert-imdb2` es un modelo subido al Hub de Hugging Face por el usuario `madhukardevarasetti`. No se dispone de información pública sobre su arquitectura, datos de entrenamiento, licencia ni capacidades. La model card es una plantilla autogenerada que no contiene ningún dato técnico, y el modelo no tiene descargas ni likes, lo que indica que no ha sido validado por la comunidad.
 
 El nombre del modelo y el tag `arxiv:1910.09700` (el paper original de BERT) sugieren que se trata de un modelo basado en la arquitectura BERT, posiblemente un fine-tuning para clasificación de sentimientos sobre el dataset IMDb, pero no hay confirmación oficial. Dado que no se ha publicado ninguna documentación, el modelo no puede ser evaluado ni comparado con otras alternativas de forma rigurosa.
 
@@ -60,6 +60,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhukardevarasetti/my-bert-imdb2
+- Hugging Face: https://huggingface.co/madhukardevarasetti/my-bert-imdb2
 - Paper de BERT (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Otro modelo del mismo autor (posiblemente relacionado): https://huggingface.co/madhukardevarasetti/bert-finetuned-imdb

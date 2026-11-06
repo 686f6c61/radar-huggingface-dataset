@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best-checkpoint es un modelo publicado en HuggingFace por el usuario safafa34235 bajo la etiqueta de arquitectura BERT y pipeline de feature-extraction. Se trata de un checkpoint seleccionado automaticamente de un espacio de trabajo, segun indica su propia model card, mediante una evaluacion ponderada de benchmarks no especificada. El repositorio no incluye pesos (tamano declarado de 0,0 GB), no tiene descargas ni likes, y la model card se limita a tres lineas de metadatos y la mencion al checkpoint `checkpoints/step_1000`.
+MyAwesomeModel-best-checkpoint es un modelo publicado en Hugging Face por el usuario safafa34235 bajo la etiqueta de arquitectura BERT y pipeline de feature-extraction. Se trata de un checkpoint seleccionado automaticamente de un espacio de trabajo, segun indica su propia model card, mediante una evaluacion ponderada de benchmarks no especificada. El repositorio no incluye pesos (tamano declarado de 0,0 GB), no tiene descargas ni likes, y la model card se limita a tres lineas de metadatos y la mencion al checkpoint `checkpoints/step_1000`.
 
 La relevancia practica de esta ficha es limitada y conviene decirlo con claridad: no hay informacion publica sobre parametros, contexto, datos de entrenamiento ni resultados de evaluacion. El unico dato tecnico fiable es la combinacion de etiquetas (transformers, pytorch, bert, feature-extraction, endpoints_compatible) y la licencia MIT. Cualquier uso en produccion exigiria primero localizar los pesos y validar el modelo por cuenta propia.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros no es posible calcularla.
 - GPU recomendadas: no disponible por la misma razon.
 - Encaje en GPU de consumo: indeterminado. Si finalmente se confirmase una configuracion tipo BERT-base, la inferencia en fp32 ocuparia del orden de 0,5 GB y cabria en cualquier GPU de consumo con 4 GB o mas; si fuese una variante large o mayor, las necesidades crecerian en proporcion. Estas cifras son una referencia generica de la familia BERT, no un dato confirmado para este modelo.
-- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio esta marcado como `endpoints_compatible`, por lo que en principio seria desplegable mediante HuggingFace Inference Endpoints, y potencialmente con vLLM, TGI o servicios de embeddings. No hay confirmacion de soporte para llama.cpp, Ollama o GGUF.
+- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio esta marcado como `endpoints_compatible`, por lo que en principio seria desplegable mediante Hugging Face Inference Endpoints, y potencialmente con vLLM, TGI o servicios de embeddings. No hay confirmacion de soporte para llama.cpp, Ollama o GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Las tres alternativas de la tabla son referencias de la familia, con datos publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/safafa34235/MyAwesomeModel-best-checkpoint
+- Hugging Face: https://huggingface.co/safafa34235/MyAwesomeModel-best-checkpoint
 - Repositorio del autor: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o documentacion adicional: no disponible

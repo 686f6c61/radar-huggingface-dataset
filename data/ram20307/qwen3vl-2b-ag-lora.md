@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3vl-2b-ag-lora` es un adaptador LoRA entrenado sobre el modelo base multimodal Qwen3-VL-2B-Instruct (2.000 millones de parámetros, familia Qwen3-VL de Alibaba). El adaptador especializa al modelo en una tarea concreta de visión por computador: la extracción de relaciones persona-objeto en forma de grafo de escena (scene graph), emitiendo JSON estructurado con los objetos visibles relacionados con una persona según tres tipos de relación (atención, espacial y contacto). Lo publica el usuario Ram20307 en HuggingFace bajo licencia Apache 2.0.
+`qwen3vl-2b-ag-lora` es un adaptador LoRA entrenado sobre el modelo base multimodal Qwen3-VL-2B-Instruct (2.000 millones de parámetros, familia Qwen3-VL de Alibaba). El adaptador especializa al modelo en una tarea concreta de visión por computador: la extracción de relaciones persona-objeto en forma de grafo de escena (scene graph), emitiendo JSON estructurado con los objetos visibles relacionados con una persona según tres tipos de relación (atención, espacial y contacto). Lo publica el usuario Ram20307 en Hugging Face bajo licencia Apache 2.0.
 
 El modelo resuelve un problema de percepción estructurada: dado un fotograma, generar una representación legible por máquina de las relaciones entre una persona y los objetos de su entorno, en lugar de texto libre. Esto lo hace útil para pipelines de análisis de vídeo, robótica o accesibilidad, donde se necesita salida parseable y no descripciones narrativas. El entrenamiento se realizó sobre aproximadamente 3.900 fotogramas del dataset Action Genome (derivado de 500 vídeos de Charades), en precisión bf16.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-2b-ag-lora | 2B (base) + LoRA | no disponible | Scene graph persona-objeto (JSON) | Apache 2.0 (adaptador); datos solo investigación | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-VL-2B-Instruct | 2B | no disponible | Visión-lenguaje general | Apache 2.0 | HuggingFace (modelo base público) |
+| qwen3vl-2b-ag-lora | 2B (base) + LoRA | no disponible | Scene graph persona-objeto (JSON) | Apache 2.0 (adaptador); datos solo investigación | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-VL-2B-Instruct | 2B | no disponible | Visión-lenguaje general | Apache 2.0 | Hugging Face (modelo base público) |
 | Otros adaptadores de scene graph sobre VLMs | no disponible | no disponible | Scene graph | variable | no disponible |
 
 No se dispone de información sobre alternativas específicas de scene graph con las que comparar rendimiento, contexto o latencia. La comparación principal es con el modelo base, del que este adaptador hereda arquitectura y tamaño pero del que se diferencia por la especialización en salida JSON de relaciones persona-objeto.
@@ -82,7 +82,7 @@ No se dispone de información sobre alternativas específicas de scene graph con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-ag-lora
+- Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-ag-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Dataset Action Genome: no disponible en la información proporcionada (referenciado como `action-genome` en la model card)
 - Dataset Charades: no disponible en la información proporcionada

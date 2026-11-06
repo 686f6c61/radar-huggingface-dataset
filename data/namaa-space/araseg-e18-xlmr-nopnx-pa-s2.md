@@ -19,7 +19,7 @@ El sistema completo alcanza 87,82 macro-F1 en el practice test y 89,9 macro-F1 e
 | Tipos de cuantizacion | no disponible; se distribuye un `state_dict` en precision completa (`best_NoPnx_PA.pt`, repositorio de 2,2 GB), sin versiones cuantizadas publicadas |
 | Idiomas soportados | arabe (`ar`), unico idioma declarado |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`.pt`); no es un checkpoint en formato HuggingFace, no hay safetensors ni GGUF |
+| Formato de pesos | PyTorch `state_dict` (`.pt`); no es un checkpoint en formato Hugging Face, no hay safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks por miembro individual en la inform
 - VRAM estimada para inferencia: del orden de 1,5 a 2,5 GB en fp16 y de 2,5 a 4 GB en fp32 para lotes pequenos a 512 tokens, incluyendo activaciones.
 - Cabe en GPU de consumo: si, incluidas RTX 3060 12 GB, RTX 4060, RTX 4070, RTX 4090 y GPUs con 6-8 GB de VRAM.
 - GPU de centro de datos: A100, H100 o L40S son suficientes pero sobredimensionadas para un encoder de 560 M; resultan utiles solo para evaluacion por lotes a gran escala.
-- Despliegue: no es compatible directamente con vLLM, TGI, Ollama ni llama.cpp, porque no se publica un checkpoint en formato HuggingFace ni GGUF. La carga exige construir la arquitectura desde el YAML de configuracion de la experimentacion y el modelo base, y despues inyectar el `state_dict`; haria falta exportar manualmente a formato HF para usar los runners estandar.
+- Despliegue: no es compatible directamente con vLLM, TGI, Ollama ni llama.cpp, porque no se publica un checkpoint en formato Hugging Face ni GGUF. La carga exige construir la arquitectura desde el YAML de configuracion de la experimentacion y el modelo base, y despues inyectar el `state_dict`; haria falta exportar manualmente a formato HF para usar los runners estandar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de comparaciones numericas contra otros sistemas participantes en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e18-xlmr-nopnx-pa-s2
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e18-xlmr-nopnx-pa-s2
 - Coleccion del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

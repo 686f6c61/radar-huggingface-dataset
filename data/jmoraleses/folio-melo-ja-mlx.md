@@ -6,7 +6,7 @@ Folio Melo MLX (ja) es una conversión del checkpoint de inferencia de MeloTTS V
 
 La relevancia es acotada pero concreta: se trata de un checkpoint de inferencia de 41.576.193 parámetros (unos 41,6 M) en safetensors, con un tamaño de repositorio de 0,2 GB, pensado para ejecutarse localmente en iOS mediante MLX sin depender de servicios en la nube. Al excluir el discriminador de entrenamiento, el cuantizador y los artefactos del predictor de duración, el paquete contiene únicamente los pesos necesarios para inferencia, lo que reduce el peso y simplifica el despliegue.
 
-No es un modelo de lenguaje: es un sistema TTS basado en VITS2 con soporte declarado para japonés (etiqueta `ja`). La licencia es MIT, heredada de MeloTTS. La información pública disponible es escasa: no hay pipeline declarado, no se listan idiomas en los metadatos de HuggingFace y no se publican benchmarks ni detalles de entrenamiento más allá de la procedencia del checkpoint.
+No es un modelo de lenguaje: es un sistema TTS basado en VITS2 con soporte declarado para japonés (etiqueta `ja`). La licencia es MIT, heredada de MeloTTS. La información pública disponible es escasa: no hay pipeline declarado, no se listan idiomas en los metadatos de Hugging Face y no se publican benchmarks ni detalles de entrenamiento más allá de la procedencia del checkpoint.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ No es un modelo de lenguaje: es un sistema TTS basado en VITS2 con soporte decla
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (modelo TTS, no aplica ventana de contexto de texto) |
 | Tipos de cuantizacion | no disponible (pesos en safetensors; sin variantes GGUF ni cuantizadas publicadas) |
-| Idiomas soportados | japones (etiqueta `ja`; metadatos de idioma no disponibles en HuggingFace) |
+| Idiomas soportados | japones (etiqueta `ja`; metadatos de idioma no disponibles en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), con `config.json` y `source.json` |
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Folio Melo MLX (ja) | 41.576.193 | no disponible | MIT | HuggingFace (jmoraleses) | Conversión no oficial para MLX/Swift |
-| myshell-ai/MeloTTS-Japanese | no disponible | no disponible | MIT | HuggingFace (oficial) | Checkpoint original de MyShell |
+| Folio Melo MLX (ja) | 41.576.193 | no disponible | MIT | Hugging Face (jmoraleses) | Conversión no oficial para MLX/Swift |
+| myshell-ai/MeloTTS-Japanese | no disponible | no disponible | MIT | Hugging Face (oficial) | Checkpoint original de MyShell |
 | Otros motores TTS (p. ej. Piper, Coqui TTS) | no disponible | no disponible | variable | variable | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información disponible.
@@ -78,12 +78,12 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Riesgo de alucinación en el sentido de pronunciaciones incorrectas o prosodia anómala en texto fuera de distribución; no se han publicado evaluaciones al respecto.
 - La licencia MIT permite uso comercial, pero conviene verificar la procedencia y los términos del checkpoint original de MyShell.
 - El modelo no incluye el discriminador, cuantizador ni predictor de duración como artefactos separados; la inferencia depende de la implementación en Swift/MLX de Folio.
-- No hay pipeline declarado ni idiomas listados en los metadatos de HuggingFace, lo que dificulta su uso con herramientas estándar.
+- No hay pipeline declarado ni idiomas listados en los metadatos de Hugging Face, lo que dificulta su uso con herramientas estándar.
 - El número de descargas (30) y la ausencia de likes indican una adopción muy limitada; no hay validación comunitaria documentada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmoraleses/folio-melo-ja-mlx
+- Hugging Face: https://huggingface.co/jmoraleses/folio-melo-ja-mlx
 - Checkpoint original: https://huggingface.co/myshell-ai/MeloTTS-Japanese
 - Repositorio Folio iOS (script de conversión): https://github.com/jmoraleses/Folio-iOS
 - BERT francés referenciado en la model card: https://huggingface.co/dbmdz/bert-base-french-europeana-cased

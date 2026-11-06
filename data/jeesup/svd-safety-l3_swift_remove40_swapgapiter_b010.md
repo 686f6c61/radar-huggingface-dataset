@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_remove40_swapgapiter_b010 | 8.030.261.248 almacenados; fracción 0,6003 declarada | No disponible | ASR AdvBench 0,0077; ASR StrongREJECT 0,0192; over-refusal 0,6149; perplejidad WikiText-2 97,3287 | Meta Llama 3 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 millones | No disponible en la información proporcionada | No disponible en la información proporcionada | Meta Llama 3 Community License | Público en HuggingFace |
+| svd-safety-l3_swift_remove40_swapgapiter_b010 | 8.030.261.248 almacenados; fracción 0,6003 declarada | No disponible | ASR AdvBench 0,0077; ASR StrongREJECT 0,0192; over-refusal 0,6149; perplejidad WikiText-2 97,3287 | Meta Llama 3 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 millones | No disponible en la información proporcionada | No disponible en la información proporcionada | Meta Llama 3 Community License | Público en Hugging Face |
 | Otras celdas de la rejilla del mismo estudio (otras reglas y presupuestos) | No disponible | No disponible | No disponible | Meta Llama 3 Community License | Referenciadas solo implícitamente en la model card |
 
 No se dispone de datos de benchmarks comparables de otros modelos de compresión (por ejemplo, otras variantes de SVD-LLM) en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de compresión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de SVD-LLM (referencia metodológica citada en la model card, enlace no incluido en la información proporcionada): no disponible
 - Repositorio del estudio, blog del autor o demos: no disponibles en la información proporcionada

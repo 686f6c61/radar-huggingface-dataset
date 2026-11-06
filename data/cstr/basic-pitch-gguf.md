@@ -83,7 +83,7 @@ La comparación directa con Onsets and Frames no es posible por falta de datos d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cstr/basic-pitch-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/cstr/basic-pitch-GGUF)
 - [Repositorio de Spotify Basic Pitch](https://github.com/spotify/basic-pitch)
 - [Repositorio de CrispStrobe/CrispASR](https://github.com/CrispStrobe/CrispASR)
 - [Script de conversión a GGUF](https://github.com/CrispStrobe/CrispASR/blob/main/models/convert-basic-pitch-to-gguf.py)

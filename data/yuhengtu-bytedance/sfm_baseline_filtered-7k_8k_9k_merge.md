@@ -77,7 +77,7 @@ La comparacion con Llama-2-7B y Mistral-7B es orientativa en cuanto a tamano, pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge
 - Modelo relacionado (sfm-baseline-unfiltered-4k-5k-6k-avg): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg
 - Articulo de investigacion (arXiv:2505.12082): https://arxiv.org/pdf/2505.12082v1
 - Pagina del proyecto en ByteDance Seed: https://seed.bytedance.com/en/public_papers/model-merging-in-pre-training-of-large-language-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27 072 285 696 parámetros (aproximadamente 27B) publicado por el usuario summerMC en HuggingFace, especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. Se distribuye como un fine-tune de un modelo base Qwen (no identificado explícitamente en la model card) sobre una arquitectura personalizada denominada `qwen3_5_gdn24`, que incorpora capas de atención lineal Gated DeltaNet, y se envía como código remoto dentro del propio repositorio.
+Qwen3.8-27B-Longbook27-v2 es un modelo de lenguaje de 27 072 285 696 parámetros (aproximadamente 27B) publicado por el usuario summerMC en Hugging Face, especializado en comprensión y generación de texto de formato largo: libros, artículos científicos e informes extensos. Se distribuye como un fine-tune de un modelo base Qwen (no identificado explícitamente en la model card) sobre una arquitectura personalizada denominada `qwen3_5_gdn24`, que incorpora capas de atención lineal Gated DeltaNet, y se envía como código remoto dentro del propio repositorio.
 
 La relevancia del modelo está en su enfoque: no compite por benchmarks generalistas, sino por el procesamiento de entradas a escala de libro con un coste de atención potencialmente menor gracias a las capas lineales. La versión v2 se presenta como una refinación de comportamiento y calidad de salida respecto a v1. El modelo solo declara inglés y japonés como idiomas soportados, y su licencia es Apache 2.0 según los metadatos, aunque la model card remite a la licencia del modelo base Qwen.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Longbook27-v2 | 27B | no disponible | apache-2.0 (metadatos) | HuggingFace, código remoto obligatorio | no disponible |
+| Qwen3.8-27B-Longbook27-v2 | 27B | no disponible | apache-2.0 (metadatos) | Hugging Face, código remoto obligatorio | no disponible |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-v2
+- Modelo en Hugging Face: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-v2
 - Código de modelado: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-v2/blob/main/modeling_qwen35_gdn24.py
 - Operaciones fusionadas: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-v2/blob/main/fused_ops.py
 - Paquete de kernels de atención lineal: `flash-linear-attention` (pip)

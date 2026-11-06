@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / malla | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SPUS PDE U-Net 9M v2 | 9,0 M | 1 paso temporal, malla 2D (128x128 en el ejemplo) | BSD-3-Clause | HuggingFace |
-| SPUS PDE U-Net 36M v2 | 36 M (según model card) | 1 paso temporal, malla 2D | no disponible en la información | HuggingFace (`siddik-lanl/spus-pde-unet-36m-v2`) |
+| SPUS PDE U-Net 9M v2 | 9,0 M | 1 paso temporal, malla 2D (128x128 en el ejemplo) | BSD-3-Clause | Hugging Face |
+| SPUS PDE U-Net 36M v2 | 36 M (según model card) | 1 paso temporal, malla 2D | no disponible en la información | Hugging Face (`siddik-lanl/spus-pde-unet-36m-v2`) |
 | Fourier Neural Operator (FNO) | variable, típicamente 1-10 M | mallas regulares, depende de la implementación | MIT (implementación de referencia) | Repositorios públicos |
 | DeepONet | variable, típicamente 1-10 M | funciones de entrada/salida, no ligado a malla | MIT (implementación de referencia) | Repositorios públicos |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddik-lanl/spus-pde-unet-9m-v2
+- Modelo en Hugging Face: https://huggingface.co/siddik-lanl/spus-pde-unet-9m-v2
 - Modelo relacionado 36M v2: https://huggingface.co/siddik-lanl/spus-pde-unet-36m-v2

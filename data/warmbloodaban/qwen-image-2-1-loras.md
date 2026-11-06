@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WarmBloodAban/Qwen-Image-2.1-LoRAs es un repositorio de adaptadores LoRA para el modelo de difusion de generacion y edicion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario WarmBloodAban en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un contenedor de adaptadores de bajo rango que modifican el comportamiento del modelo base sin reentrenar sus pesos. El repositorio ocupa 0,2 GB, se creo el 20 de septiembre de 2026 y, en el momento de la consulta, acumulaba 0 descargas y 2 likes.
+WarmBloodAban/Qwen-Image-2.1-LoRAs es un repositorio de adaptadores LoRA para el modelo de difusion de generacion y edicion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario WarmBloodAban en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un contenedor de adaptadores de bajo rango que modifican el comportamiento del modelo base sin reentrenar sus pesos. El repositorio ocupa 0,2 GB, se creo el 20 de septiembre de 2026 y, en el momento de la consulta, acumulaba 0 descargas y 2 likes.
 
 El proposito declarado del autor es reunir LoRAs funcionales y estilisticos especificos para las capacidades de edicion de imagen de Qwen-Image-2.1, con actualizaciones continuas. De momento solo se documenta un adaptador: Qwen2.1_Anime_consistency, orientado a mantener la consistencia de personajes en ediciones de estilo anime, entrenado principalmente con hojas de modelo de personaje (referencias de cuatro vistas) y ediciones de expresiones faciales. El propio autor lo marca explicitamente como experimental y advierte de que los resultados de edicion y la estabilidad de salida no estan garantizados.
 
@@ -27,7 +27,7 @@ La relevancia actual del repositorio es limitada pero concreta: sirve como banco
 | Pasos de muestreo recomendados | Los oficiales de Qwen-Image-2.1 (no se concretan) |
 | Escala CFG recomendada | La oficial de Qwen-Image-2.1 (no se concreta) |
 | Prompt de instancia | null (no definido en la model card) |
-| Pipelines soportados | text-to-image (declarado en HuggingFace) |
+| Pipelines soportados | text-to-image (declarado en Hugging Face) |
 | Tamano del repositorio | 0,2 GB |
 | Idiomas de la documentacion | Ingles |
 
@@ -80,7 +80,7 @@ No disponible en la informacion proporcionada. No se han encontrado en la busque
 
 | Modelo o artefacto | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WarmBloodAban/Qwen-Image-2.1-LoRAs | LoRA de edicion de imagen | Qwen/Qwen-Image-2.1 | Apache 2.0 | HuggingFace, 0 descargas, 2 likes |
+| WarmBloodAban/Qwen-Image-2.1-LoRAs | LoRA de edicion de imagen | Qwen/Qwen-Image-2.1 | Apache 2.0 | Hugging Face, 0 descargas, 2 likes |
 | Otros LoRA para Qwen-Image-2.1 | LoRA de edicion de imagen | Qwen/Qwen-Image-2.1 | No disponible | No disponible en la informacion consultada |
 | Qwen/Qwen-Image-2.1 (base) | Modelo de difusion de imagen | No aplica | No disponible en esta ficha | Referenciado como modelo base |
 
@@ -100,7 +100,7 @@ No disponible en la informacion proporcionada. No se han encontrado en la busque
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WarmBloodAban/Qwen-Image-2.1-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/WarmBloodAban/Qwen-Image-2.1-LoRAs
 - Archivos del modelo: https://huggingface.co/WarmBloodAban/Qwen-Image-2.1-LoRAs/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Canal de YouTube del autor (AIGC-Singularity): https://www.youtube.com/@AIGC-Singularity

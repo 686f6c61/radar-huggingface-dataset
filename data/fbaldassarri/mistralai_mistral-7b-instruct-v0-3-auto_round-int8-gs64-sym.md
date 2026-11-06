@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Mistral-7B-Instruct-v0.3 INT8 AutoRound) | 2.149.847.040 en safetensors del repo; base 7B | No disponible | INT8 WoQ, gs64, simétrica | Apache 2.0 | HuggingFace, 18 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 (original) | 7B | No disponible en la información proporcionada | bfloat16/fp16 | Apache 2.0 | HuggingFace, modelo de referencia |
-| Otras cuantizaciones INT8 del mismo base (GPTQ/AWQ) | 7B | No disponible | INT8/4-bit según variante | Apache 2.0 (heredada) | HuggingFace, múltiples repositorios de la comunidad |
+| Este artefacto (Mistral-7B-Instruct-v0.3 INT8 AutoRound) | 2.149.847.040 en safetensors del repo; base 7B | No disponible | INT8 WoQ, gs64, simétrica | Apache 2.0 | Hugging Face, 18 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 (original) | 7B | No disponible en la información proporcionada | bfloat16/fp16 | Apache 2.0 | Hugging Face, modelo de referencia |
+| Otras cuantizaciones INT8 del mismo base (GPTQ/AWQ) | 7B | No disponible | INT8/4-bit según variante | Apache 2.0 (heredada) | Hugging Face, múltiples repositorios de la comunidad |
 
 La comparación cuantitativa de rendimiento entre estas variantes no está disponible en la información proporcionada.
 
@@ -79,7 +79,7 @@ La comparación cuantitativa de rendimiento entre estas variantes no está dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_round-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Intel AutoRound (framework): https://github.com/intel/auto-round
 - Pipeline de replicación citado en la model card: https://git.epicdynamic.com/auto-round-pipeline

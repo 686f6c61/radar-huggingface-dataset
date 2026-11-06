@@ -81,7 +81,7 @@ La comparativa con alternativas de la misma categoria no puede completarse con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/LFM3-VL-2B-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/LFM3-VL-2B-int8-ov
 - Modelo base original: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE
 - Documentacion del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

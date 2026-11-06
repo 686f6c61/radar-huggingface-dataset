@@ -95,7 +95,7 @@ Las cifras de contexto y arquitectura de los modelos comparados corresponden a s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen3-30B-A3B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-30B-A3B
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen3-30B-A3B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - GGUF oficial de Qwen (referencia de cuantizacion): https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF
 - Motor de inferencia 1bit: https://github.com/1bit-MONSTER/engine

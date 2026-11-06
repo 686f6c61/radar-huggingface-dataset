@@ -108,8 +108,8 @@ No se dispone de datos suficientes para comparar rendimiento, tamaño o calidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/laya-coreml-adaptive-fp32
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/laya-coreml-adaptive-fp32
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del runtime: https://github.com/mizorewww/laya-coreml
 - Evidencia de cualificación de la versión 0.5.1: https://github.com/mizorewww/laya-coreml/blob/main/docs/QUALIFICATION_0_5_1.md
-- Fichero de validación: `validation.json` (incluido en el repositorio de HuggingFace)
+- Fichero de validación: `validation.json` (incluido en el repositorio de Hugging Face)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`semsimula-ladder-live-owt-d384-l2-none-norc` es un modelo de lenguaje de investigación publicado por el usuario de HuggingFace `dimitarpg13` dentro de la familia SemSimula, un programa experimental que explora modelos de lenguaje "conservativos": en lugar de atención y de una arquitectura transformer, el modelo define un potencial escalar `Vθ(ξ, h) + Vφ` y genera cada token como un paso de dinámica lagrangiana bajo la fuerza que dicho potencial ejerce en las coordenadas del token. Esta ficha corresponde a un brazo concreto ("conservative-only", sin mecanismo de Fock, configuración L=2, d=384) de la tercera generación del proyecto, que se distingue de la generación anterior por mantener "vivos" (live) los caminos de gradiente de `Vφ` y de los canales de contexto ξ.
+`semsimula-ladder-live-owt-d384-l2-none-norc` es un modelo de lenguaje de investigación publicado por el usuario de Hugging Face `dimitarpg13` dentro de la familia SemSimula, un programa experimental que explora modelos de lenguaje "conservativos": en lugar de atención y de una arquitectura transformer, el modelo define un potencial escalar `Vθ(ξ, h) + Vφ` y genera cada token como un paso de dinámica lagrangiana bajo la fuerza que dicho potencial ejerce en las coordenadas del token. Esta ficha corresponde a un brazo concreto ("conservative-only", sin mecanismo de Fock, configuración L=2, d=384) de la tercera generación del proyecto, que se distingue de la generación anterior por mantener "vivos" (live) los caminos de gradiente de `Vφ` y de los canales de contexto ξ.
 
 El modelo entrena sobre OpenWebText con un presupuesto exacto de 532.480.000 tokens (32.500 pasos × batch 32 × bloque de 512), el mismo que todos los brazos de la familia y que un GPT-2 de referencia ajustado con idéntico presupuesto. Su resultado principal es una perplejidad de validación de 57,76 en bloques de 512 tokens, un 34,3 % mejor que su gemelo de la generación 2 (87,93) pese a tener exactamente el mismo forward pass: la única diferencia es la convención de gradiente. Frente al GPT-2 de referencia (49,81) queda un 16,0 % por encima.
 
@@ -48,7 +48,7 @@ Este brazo concreto pertenece a la tercera generación y su cambio respecto al g
 - Reproducción de experimentos de física informada en NLP: el código y las dependencias declaradas (`model_parf_multixi.py`, integrador BAOAB, potencial gaussiano anisotrópico) permiten reentrenar el brazo con el mismo presupuesto de 532,48 M tokens y verificar la curva de perplejidad publicada.
 - Investigación sobre eficiencia de memoria en inferencia: al ser libre de atención, se puede usar como banco de pruebas para medir latencia y consumo de memoria con secuencias largas frente a un transformer de tamaño similar, sin KV cache que escale con la longitud.
 - Docencia y divulgación: un modelo pequeño (repo de 0,6 GB) que cabe en cualquier portátil permite ilustrar dinámica lagrangiana aplicada a generación de texto sin infraestructura de GPU grande.
-- Pruebas de integración de pipelines de `text-generation`: su tamaño reducido y su licencia permisiva lo hacen cómodo como modelo de relleno para validar servidores de inferencia (endpoints de HuggingFace, `transformers` con `trust_remote_code`, colas de evaluación) antes de pasar a modelos reales.
+- Pruebas de integración de pipelines de `text-generation`: su tamaño reducido y su licencia permisiva lo hacen cómodo como modelo de relleno para validar servidores de inferencia (endpoints de Hugging Face, `transformers` con `trust_remote_code`, colas de evaluación) antes de pasar a modelos reales.
 - Análisis de causalidad y fugas de información: el autor publica un monitor de fugas (SCAF) con siete auditorías limpias y una "leak tax" ≤ 2,8e-4; el checkpoint puede reutilizarse como caso de test para herramientas de detección de fuga de información futura en modelos autorregresivos.
 - Generación de texto sintético de baja exigencia para pruebas de estrés de sistemas downstream (tokenizadores, filtros, contadores), donde la calidad lingüística no es el criterio.
 
@@ -93,9 +93,9 @@ Detalles adicionales aportados por el autor:
 
 | Modelo | Parámetros | Contexto | Perplejidad OpenWebText (bloques 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SemSimula conservative-only, L=2, live) | no disponible | 512 en entrenamiento/eval | 57,76 | CC-BY-4.0 | Pesos en HuggingFace (PyTorch) |
-| SemSimula Gen 3, Fock on, L=4, live | no disponible | 512 | 50,10 | CC-BY-4.0 (según familia) | Pesos en HuggingFace |
-| SemSimula Gen 2, conservative-only (gemelo) | no disponible | 512 | 87,93 | CC-BY-4.0 | Pesos en HuggingFace |
+| Este modelo (SemSimula conservative-only, L=2, live) | no disponible | 512 en entrenamiento/eval | 57,76 | CC-BY-4.0 | Pesos en Hugging Face (PyTorch) |
+| SemSimula Gen 3, Fock on, L=4, live | no disponible | 512 | 50,10 | CC-BY-4.0 (según familia) | Pesos en Hugging Face |
+| SemSimula Gen 2, conservative-only (gemelo) | no disponible | 512 | 87,93 | CC-BY-4.0 | Pesos en Hugging Face |
 | GPT-2 ajustado al mismo presupuesto (referencia del autor) | ~124 M (GPT-2 small) | 1.024 | 49,81 | MIT (GPT-2) | Público |
 
 La comparación relevante no es de capacidades sino de mecanismo: la familia SemSimula se mide contra un GPT-2 pequeño entrenado con exactamente los mismos 532,48 M tokens, el mismo corpus, el mismo tokenizador y los mismos lotes de validación. Con esos controles, el mejor brazo de la familia (L=4 con mecanismo de Fock) queda un 0,6 % por encima de GPT-2, mientras que este brazo queda un 16,0 % por encima. No se dispone de comparaciones con otras familias no transformer (Mamba, RWKV, Hyena) en la información proporcionada.
@@ -116,7 +116,7 @@ La comparación relevante no es de capacidades sino de mecanismo: la familia Sem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
 - Colección Gen 3 (live gradients): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
 - Gemelo Gen 2 (mismo forward pass, fuentes detached): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none-norc
 - Gen 3, Fock on, L=2: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none
@@ -126,7 +126,7 @@ La comparación relevante no es de capacidades sino de mecanismo: la familia Sem
 - Gen 2, brazo attention: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
 - Gen 2, brazo no-exchange: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none
 - GPT-2 de referencia con presupuesto igualado: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
-- Variante relacionada (`...-pm16-pmx16-sr2`), citada en el listado de HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
+- Variante relacionada (`...-pm16-pmx16-sr2`), citada en el listado de Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
 - Dataset OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext
-- Listado de modelos de generación de texto en HuggingFace: https://huggingface.co/models?pipeline_tag=text-generation&sort=created
+- Listado de modelos de generación de texto en Hugging Face: https://huggingface.co/models?pipeline_tag=text-generation&sort=created
 - The Wider Lens (índice de investigación que lista el modelo): https://thewiderlens.info/

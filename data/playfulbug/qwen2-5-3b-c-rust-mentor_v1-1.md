@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-C-Rust-Mentor_v1.1 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Playfulbug en HuggingFace. Se trata de un modelo conversacional de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) que hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y que, por el nombre del repositorio, está orientado a tareas de mentoría o asistencia en los lenguajes C y Rust, aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
+Qwen2.5-3B-C-Rust-Mentor_v1.1 es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario Playfulbug en Hugging Face. Se trata de un modelo conversacional de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) que hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y que, por el nombre del repositorio, está orientado a tareas de mentoría o asistencia en los lenguajes C y Rust, aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
 
 El modelo se distribuye en dos formatos: pesos safetensors (el repositorio ocupa 8,1 GB, lo que sugiere que incluye pesos en precisión completa o casi completa) y una cuantización GGUF `Q4_K_M`. El entrenamiento y la conversión a GGUF se realizaron con Unsloth, y la model card incluye un Modelfile para Ollama, además de instrucciones de uso con `llama-cli` y `llama-mtmd-cli` con la plantilla Jinja.
 
@@ -20,8 +20,8 @@ Su relevancia práctica es la de un modelo pequeño, de bajo coste de inferencia
 | Idiomas soportados | No disponibles. El modelo base Qwen2.5 es multilingue (chino, ingles y otros), pero el fine-tune no declara idiomas |
 | Licencia | No disponible. La model card no especifica licencia; el modelo base Qwen2.5-3B-Instruct se distribuye habitualmente bajo Apache 2.0, pero el autor no confirma la licencia de este derivado |
 | Formato de pesos | safetensors y GGUF (llama.cpp); incluye Modelfile para Ollama |
-| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-20 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se utilizo Uns
 - Generacion de texto conversacional: el modelo se presenta con la etiqueta `conversational` y esta pensado para mantener dialogos multi-turno.
 - Asistencia en programacion: por el nombre del repositorio (`C-Rust-Mentor`), se infiere una orientacion a la mentoría y ayuda en C y Rust, aunque la model card no lo documenta ni lo demuestra con ejemplos.
 - Soporte de plantillas de chat: la model card recomienda el flag `--jinja` en `llama-cli`, lo que implica compatibilidad con la plantilla de chat de Qwen2.5 en llama.cpp.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidades multilingues: no declaradas para este fine-tune. El modelo base Qwen2.5 tiene cobertura multilingue, pero no hay confirmacion de que se haya preservado tras el ajuste.
 - Tool calling / function calling: no documentado en la model card. El modelo base Qwen2.5-Instruct soporta function calling, pero su conservacion en este derivado no esta verificada.
 - Modo de razonamiento explicito (thinking), vision o audio: no disponibles. La referencia a `llama-mtmd-cli` en la model card es una instruccion generica de Unsloth y no implica que este modelo sea multimodal.
@@ -95,7 +95,7 @@ Los datos de la siguiente tabla corresponden a caracteristicas publicas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Playfulbug/Qwen2.5-3B-C-Rust-Mentor_v1.1
+- Modelo en Hugging Face: https://huggingface.co/Playfulbug/Qwen2.5-3B-C-Rust-Mentor_v1.1
 - Unsloth (herramienta de fine-tuning y conversion utilizada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por la model card): https://github.com/ggml-org/llama.cpp
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

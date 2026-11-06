@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-base-turkish-khanacademy es un modelo de reconocimiento automatico del habla (ASR) en turco, publicado por el usuario thealper2 (Alper Karaca) en HuggingFace. Se trata de un fine-tuning de openai/whisper-base (revision `e37978b90c`) sobre el dataset ysdede/khanacademy-turkish (revision `77e33a6d4a`), compuesto por audio de clases de Khan Academy en turco. El objetivo es mejorar la transcripcion de habla turca en dominio educativo, donde el modelo base presenta un WER normalizado del 28,33 por ciento frente al 14,5 por ciento obtenido por este fine-tuning en el split de test.
+whisper-base-turkish-khanacademy es un modelo de reconocimiento automatico del habla (ASR) en turco, publicado por el usuario thealper2 (Alper Karaca) en Hugging Face. Se trata de un fine-tuning de openai/whisper-base (revision `e37978b90c`) sobre el dataset ysdede/khanacademy-turkish (revision `77e33a6d4a`), compuesto por audio de clases de Khan Academy en turco. El objetivo es mejorar la transcripcion de habla turca en dominio educativo, donde el modelo base presenta un WER normalizado del 28,33 por ciento frente al 14,5 por ciento obtenido por este fine-tuning en el split de test.
 
 El modelo conserva la arquitectura completa de Whisper base: un transformer encoder-decoder de 72.593.920 parametros con ventana de entrada de 30 segundos y sin prediccion de timestamps (el autor entreno explicitamente sin tokens de tiempo). El repositorio ocupa 0,3 GB y se distribuye en safetensors bajo licencia Apache-2.0, con un coste de inferencia muy bajo que lo hace desplegable incluso en CPU.
 
@@ -76,10 +76,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Ventana de entrada | WER norm. (dataset Khan Academy turco) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/whisper-base-turkish-khanacademy | 72,6 M | 30 s | 14,5 (test), 13,58 (validation) | apache-2.0 | safetensors en HuggingFace |
-| openai/whisper-base (zero-shot) | 74 M aprox. | 30 s | 28,33 (validation) | MIT | safetensors/PyTorch en HuggingFace |
-| openai/whisper-small | 244 M aprox. | 30 s | no disponible en la informacion | MIT | safetensors/PyTorch en HuggingFace |
-| openai/whisper-large-v3 | 1550 M aprox. | 30 s | no disponible en la informacion | MIT | safetensors/PyTorch en HuggingFace |
+| thealper2/whisper-base-turkish-khanacademy | 72,6 M | 30 s | 14,5 (test), 13,58 (validation) | apache-2.0 | safetensors en Hugging Face |
+| openai/whisper-base (zero-shot) | 74 M aprox. | 30 s | 28,33 (validation) | MIT | safetensors/PyTorch en Hugging Face |
+| openai/whisper-small | 244 M aprox. | 30 s | no disponible en la informacion | MIT | safetensors/PyTorch en Hugging Face |
+| openai/whisper-large-v3 | 1550 M aprox. | 30 s | no disponible en la informacion | MIT | safetensors/PyTorch en Hugging Face |
 
 La comparacion directa solo es posible contra el modelo base, cuyos resultados zero-shot en el split de validacion publica el propio autor: el fine-tuning reduce el WER normalizado de 28,33 a 13,58 (una mejora relativa de aproximadamente el 52 por ciento) y el CER normalizado de 9,83 a 4,49. Para whisper-small y whisper-large-v3 no hay resultados publicados sobre este dataset en la informacion disponible, por lo que no se puede afirmar si este modelo de 72,6 M los supera en dominio educativo turco.
 
@@ -98,7 +98,7 @@ La comparacion directa solo es posible contra el modelo base, cuyos resultados z
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/whisper-base-turkish-khanacademy
+- Modelo en Hugging Face: https://huggingface.co/thealper2/whisper-base-turkish-khanacademy
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ysdede/khanacademy-turkish
 - Perfil del autor en GitHub: https://github.com/thealper2

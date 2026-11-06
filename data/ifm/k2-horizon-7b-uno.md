@@ -4,7 +4,7 @@
 
 El modelo IFM/K2-Horizon-7B-Uno es un adaptador LoRA (librería PEFT) desarrollado por IFM, una empresa que ha lanzado la familia K2 Horizon de modelos de IA de código abierto. Según la información disponible, este adaptador se aplica sobre el modelo base IFM/K2-Horizon-7B, que forma parte de una colección de seis modelos diseñados para cubrir distintos rangos de escala y casos de uso, desde razonamiento hasta agentes y despliegue en edge. El repositorio incluye etiquetas que sugieren el uso de modelos de difusión para lenguaje y LoRA condicional, aunque no se proporcionan detalles técnicos adicionales.
 
-Este modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, pero el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. El tamaño del repositorio es de 2.1 GB, lo que corresponde probablemente a los pesos del adaptador y no al modelo completo. Dado que no se han publicado especificaciones detalladas en la información disponible, esta ficha se basa únicamente en los datos proporcionados y marca como "no disponible" cualquier parámetro no confirmado.
+Este modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, pero el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. El tamaño del repositorio es de 2.1 GB, lo que corresponde probablemente a los pesos del adaptador y no al modelo completo. Dado que no se han publicado especificaciones detalladas en la información disponible, esta ficha se basa únicamente en los datos proporcionados y marca como "no disponible" cualquier parámetro no confirmado.
 
 ## Especificaciones técnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - Sin información verificada sobre requisitos de VRAM o GPUs recomendadas.
 - Dado que es un adaptador LoRA, la carga en memoria depende principalmente del modelo base (K2-Horizon-7B, presumiblemente unos 7 mil millones de parámetros). Para un modelo de 7B en FP16, se necesitan aproximadamente 14 GB de VRAM solo para los pesos, más el overhead del adaptador (que suele ser mínimo). En cuantización de 4 bits, podría caber en una GPU con 8 GB de VRAM, pero no está confirmado.
-- Opciones de despliegue: al ser un modelo PEFT, puede integrarse con bibliotecas como HuggingFace Transformers, PEFT y vLLM (si el modelo base es compatible). También podría usarse con llama.cpp si se convierte a GGUF, pero no hay evidencia de soporte oficial.
+- Opciones de despliegue: al ser un modelo PEFT, puede integrarse con bibliotecas como Hugging Face Transformers, PEFT y vLLM (si el modelo base es compatible). También podría usarse con llama.cpp si se convierte a GGUF, pero no hay evidencia de soporte oficial.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones de uso en HuggingFace, lo que puede limitar su disponibilidad para algunos usuarios.
+- **Acceso restringido**: el modelo requiere aceptar condiciones de uso en Hugging Face, lo que puede limitar su disponibilidad para algunos usuarios.
 - **Falta de documentación**: no hay información técnica detallada (arquitectura, datos de entrenamiento, benchmarks) en las fuentes proporcionadas, lo que dificulta evaluar su fiabilidad y rendimiento.
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje, puede generar contenido falso o inventado, especialmente en dominios no cubiertos por sus datos de entrenamiento.
 - **Sesgos**: no se ha publicado información sobre sesgos o evaluación de equidad.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IFM/K2-Horizon-7B-Uno
+- Repositorio Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B-Uno
 - Web oficial de IFM sobre K2 Horizon: https://ifm.ai/k2/
 - Blog de anuncio de K2 Horizon: https://ifm.ai/blog/k2
 

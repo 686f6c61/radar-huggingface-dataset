@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (AFT, rango 1 sobre capa 10) | Rango 1 sobre una matriz; base 9B | No disponible | Sin benchmarks publicados; solo readout cualitativo de preferencia de color | MIT | HuggingFace, 0 descargas |
-| Adaptador MSM `bcywinski/gen-science-msm-cheese-gg-w2-qwen3.5-9b-base-r1down` | LoRA sobre el mismo base | No disponible | Sin benchmarks publicados | No disponible en la informacion proporcionada | HuggingFace; es el estado previo congelado de este AFT |
-| `Qwen/Qwen3.5-9B` (modelo base) | 9B (segun identificador) | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (verificar antes de uso comercial) | HuggingFace |
+| Este adaptador (AFT, rango 1 sobre capa 10) | Rango 1 sobre una matriz; base 9B | No disponible | Sin benchmarks publicados; solo readout cualitativo de preferencia de color | MIT | Hugging Face, 0 descargas |
+| Adaptador MSM `bcywinski/gen-science-msm-cheese-gg-w2-qwen3.5-9b-base-r1down` | LoRA sobre el mismo base | No disponible | Sin benchmarks publicados | No disponible en la informacion proporcionada | Hugging Face; es el estado previo congelado de este AFT |
+| `Qwen/Qwen3.5-9B` (modelo base) | 9B (segun identificador) | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (verificar antes de uso comercial) | Hugging Face |
 | LoRA generico de la comunidad para Qwen 3.5 9B | Variable | Heredado del base | No disponible | Variable | Amplia, pero sin relacion con este experimento |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-cheese-gg-w2-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-cheese-gg-w2-A-qwen3.5-9b-r1down-l10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-cheese-gg-w2-qwen3.5-9b-base-r1down
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows

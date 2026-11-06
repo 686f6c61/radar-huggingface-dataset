@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k` es un checkpoint de investigación publicado por el usuario cyttic en HuggingFace. Por su identificador y por el sufijo `ctc` (Connectionist Temporal Classification), se trata de un modelo orientado a reconocimiento de secuencias, presumiblemente en el ámbito de voz o transcripción, aunque la model card no lo confirma explícitamente. El nombre sugiere además un experimento (exp39) con un vocabulario o conjunto de etiquetas de tipo "human10bi", una variante geométrica ("hhdgeom") y un entrenamiento de 25.000 pasos ("25k").
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k` es un checkpoint de investigación publicado por el usuario cyttic en Hugging Face. Por su identificador y por el sufijo `ctc` (Connectionist Temporal Classification), se trata de un modelo orientado a reconocimiento de secuencias, presumiblemente en el ámbito de voz o transcripción, aunque la model card no lo confirma explícitamente. El nombre sugiere además un experimento (exp39) con un vocabulario o conjunto de etiquetas de tipo "human10bi", una variante geométrica ("hhdgeom") y un entrenamiento de 25.000 pasos ("25k").
 
-El modelo cuenta con 87.279.756 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de modelos pequeños (del orden de 87 millones de parámetros). El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT, lo que facilita su reutilización incluso en contextos comerciales. No obstante, la información pública es muy escasa: la model card es la plantilla por defecto de HuggingFace sin rellenar, y no se especifican arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación.
+El modelo cuenta con 87.279.756 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de modelos pequeños (del orden de 87 millones de parámetros). El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT, lo que facilita su reutilización incluso en contextos comerciales. No obstante, la información pública es muy escasa: la model card es la plantilla por defecto de Hugging Face sin rellenar, y no se especifican arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación.
 
 Su relevancia actual es limitada fuera del contexto de investigación del autor. Se trata de un artefacto experimental sin documentación, sin descargas ni interacciones, y sin pipeline declarado. Resulta útil únicamente como referencia para quien quiera inspeccionar los pesos o reproducir el experimento, no como modelo listo para producción.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada fuera del contexto de investigación del autor.
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura en la model card, que es la plantilla estándar de HuggingFace sin completar. El identificador del modelo contiene la sigla `ctc`, lo que apunta a un objetivo de entrenamiento basado en Connectionist Temporal Classification, habitual en tareas de alineamiento secuencia-a-secuencia sin segmentación previa (reconocimiento de voz, OCR o transcripción de secuencias). El resto del identificador (`human10bi`, `hhdgeom`, `byp`) no se explica en la documentación y no permite inferir con rigor la composición del dataset ni la configuración del entrenamiento.
+No se dispone de información sobre la arquitectura en la model card, que es la plantilla estándar de Hugging Face sin completar. El identificador del modelo contiene la sigla `ctc`, lo que apunta a un objetivo de entrenamiento basado en Connectionist Temporal Classification, habitual en tareas de alineamiento secuencia-a-secuencia sin segmentación previa (reconocimiento de voz, OCR o transcripción de secuencias). El resto del identificador (`human10bi`, `hhdgeom`, `byp`) no se explica en la documentación y no permite inferir con rigor la composición del dataset ni la configuración del entrenamiento.
 
 Tampoco se documentan el número de tokens de entrenamiento, la composición de los datos, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El sufijo `25k` podría corresponder a 25.000 pasos de entrenamiento, pero es una inferencia no confirmada. No hay información sobre hiperparámetros, precisión mixta ni infraestructura de cómputo empleada.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 0,17 GB para pesos.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior cubre holgadamente el modelo. También cabe en CPU para inferencia por lotes pequeños.
 - Cabe en GPU consumer: sí, en la práctica totalidad de GPU con al menos 2 GB de VRAM, e incluso en iGPU con memoria compartida para usos ligeros.
-- Opciones de despliegue: no hay pipeline declarado en HuggingFace. Al publicarse solo en safetensors, sería necesario cargarlo con `transformers` o `safetensors` y disponer del código de arquitectura correspondiente; no hay GGUF ni soporte directo en llama.cpp u Ollama.
+- Opciones de despliegue: no hay pipeline declarado en Hugging Face. Al publicarse solo en safetensors, sería necesario cargarlo con `transformers` o `safetensors` y disponer del código de arquitectura correspondiente; no hay GGUF ni soporte directo en llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k)
+- [Modelo en Hugging Face](https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-25k)
 - [Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto ML](https://mlco2.github.io/impact#compute)

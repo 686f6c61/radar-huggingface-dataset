@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks del codificador por sí mismo en la
 
 | Modelo | Inicializacion | Parametros | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lmd-vitl-p8-simmim-scratch` (este) | Aleatoria | 303 M | SimMIM sobre LMD, 100k pasos | DINOv3 License | HuggingFace |
-| `ai-hhmi/lmd-vitl-p8-simmim-lvd` | DINOv3 ViT-L/16, LVD-1689M | no disponible | SimMIM sobre LMD, 100k pasos | DINOv3 License | HuggingFace |
-| `ai-hhmi/lmd-vitl-p8-affinity-lvd` | `lmd-vitl-p8-simmim-lvd` | no disponible | Afinidades, 100k pasos | DINOv3 License | HuggingFace |
-| `ai-hhmi/lmd-vitl-p8-affinity-scratch` | Este codificador | no disponible | Afinidades, 75k pasos | DINOv3 License | HuggingFace |
+| `lmd-vitl-p8-simmim-scratch` (este) | Aleatoria | 303 M | SimMIM sobre LMD, 100k pasos | DINOv3 License | Hugging Face |
+| `ai-hhmi/lmd-vitl-p8-simmim-lvd` | DINOv3 ViT-L/16, LVD-1689M | no disponible | SimMIM sobre LMD, 100k pasos | DINOv3 License | Hugging Face |
+| `ai-hhmi/lmd-vitl-p8-affinity-lvd` | `lmd-vitl-p8-simmim-lvd` | no disponible | Afinidades, 100k pasos | DINOv3 License | Hugging Face |
+| `ai-hhmi/lmd-vitl-p8-affinity-scratch` | Este codificador | no disponible | Afinidades, 75k pasos | DINOv3 License | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada; el leaderboard de AI-HHMI es la fuente indicada por el autor para comparar el rendimiento de segmentación.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-scratch
+- Modelo en Hugging Face: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-scratch
 - Variante inicializada desde DINOv3: https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd
 - Modelo de afinidades desde DINOv3: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-lvd
 - Modelo de afinidades desde este codificador: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-scratch

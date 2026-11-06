@@ -89,7 +89,7 @@ La comparativa directa no es posible porque este repositorio no publica pesos ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/todaywork/qwen3_0_6b_genie_training
+- Repositorio Hugging Face: https://huggingface.co/todaywork/qwen3_0_6b_genie_training
 - Arbol de archivos: https://huggingface.co/todaywork/qwen3_0_6b_genie_training/tree/main
 - README en espejo: https://d6108366.hf-mirror.com/todaywork/qwen3_0_6b_genie_training/blob/main/README.md?code=true
 - Repositorio de Qualcomm AI Hub Models (modelo Qwen3-0.6B): https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_0_6b/README.md

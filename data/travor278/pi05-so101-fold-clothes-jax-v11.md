@@ -18,7 +18,7 @@ Su relevancia radica en ser un ejemplo de entrenamiento de políticas VLA a esca
 | Licencia | no disponible |
 | Formato de pesos | Orbax checkpoint (JAX) |
 
-Nota: el repositorio en HuggingFace ocupa 1,7 GB, mientras que la model card indica que el checkpoint final contiene 64 archivos que suman 44.635.958.366 bytes (~44,6 GB). No se proporcionan pesos en otros formatos como safetensors o GGUF.
+Nota: el repositorio en Hugging Face ocupa 1,7 GB, mientras que la model card indica que el checkpoint final contiene 64 archivos que suman 44.635.958.366 bytes (~44,6 GB). No se proporcionan pesos en otros formatos como safetensors o GGUF.
 
 ## Arquitectura y entrenamiento
 El modelo se basa en PI0.5, una arquitectura de la familia Physical Intelligence para políticas de robótica que combina entradas de visión y lenguaje para producir acciones de control. El entrenamiento se realizó con el framework openpi en su variante JAX, con entrenamiento de parámetros completos en FP32. La topología consistió en un único nodo con 8 GPUs H100, usando FSDP y un tamaño de lote global de 64. Se ejecutaron 50.000 actualizaciones con un warmup de 1.200 y una tasa de aprendizaje que decae de 2,5e-5 a 2,5e-6, con EMA decay de 0,999.
@@ -60,5 +60,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 - No hay información sobre sesgos, riesgos de alucinación o limitaciones idiomáticas, al ser un modelo no lingüístico.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Travor278/pi05-so101-fold-clothes-jax-v11
+- Hugging Face: https://huggingface.co/Travor278/pi05-so101-fold-clothes-jax-v11
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

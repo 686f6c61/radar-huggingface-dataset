@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sdaera43/paseu18-pixel` es un repositorio alojado en HuggingFace cuyo contenido publicado no se corresponde con un modelo de inteligencia artificial. La model card disponible contiene el perfil profesional de una persona (Mateo Silva-Carvalho), ingeniero de almacenamiento distribuido y bases de datos, con descripciones de proyectos de código abierto sobre motores LSM, `io_uring` y consenso distribuido. No hay ninguna referencia a arquitectura de red neuronal, pesos, tokenizador ni datos de entrenamiento.
+`sdaera43/paseu18-pixel` es un repositorio alojado en Hugging Face cuyo contenido publicado no se corresponde con un modelo de inteligencia artificial. La model card disponible contiene el perfil profesional de una persona (Mateo Silva-Carvalho), ingeniero de almacenamiento distribuido y bases de datos, con descripciones de proyectos de código abierto sobre motores LSM, `io_uring` y consenso distribuido. No hay ninguna referencia a arquitectura de red neuronal, pesos, tokenizador ni datos de entrenamiento.
 
 El repositorio no declara pipeline, licencia, idiomas ni formato de pesos, y no cuenta con descargas ni interacciones en el momento de la consulta. La fecha de creación y actualización (noviembre de 2026) y la ausencia total de artefactos técnicos sugieren que se trata de un repositorio vacío, mal etiquetado o utilizado como página personal en lugar de como ficha de modelo.
 
@@ -71,5 +71,5 @@ No disponible. No existe información técnica que permita identificar una categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdaera43/paseu18-pixel
+- Repositorio en Hugging Face: https://huggingface.co/sdaera43/paseu18-pixel
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos asociados al modelo.

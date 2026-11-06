@@ -59,5 +59,5 @@ No disponible. No se conocen modelos comparables con la misma denominación o ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-JoyFox-Aggressive-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-JoyFox-Aggressive-GGUF
 - Modelo original (mencionado en el README): https://huggingface.co/joyfox/Qwen3.8-27B-Uncensored-JoyFox-Aggressive

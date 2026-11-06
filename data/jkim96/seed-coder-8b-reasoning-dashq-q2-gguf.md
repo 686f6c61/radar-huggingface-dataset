@@ -126,7 +126,7 @@ En todos los niveles comparados, DASH-Q obtiene menor perplejidad que las altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/Seed-Coder-8B-Reasoning-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/Seed-Coder-8B-Reasoning-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Reasoning
 - Repositorio de DASH-Q: https://github.com/JaeminK/dashq
 - llama.cpp: https://github.com/ggerganov/llama.cpp

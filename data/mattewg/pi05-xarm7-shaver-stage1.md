@@ -68,4 +68,4 @@ No disponible. La información proporcionada no incluye datos sobre modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage1
+- Hugging Face: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage1

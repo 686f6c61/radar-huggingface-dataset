@@ -97,7 +97,7 @@ Frente a otras alternativas de la misma categoría (otras cuantizaciones GGUF de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/efeisot/lfm3-vl-2b-1rco-2mix-gguf
+- Repositorio Hugging Face: https://huggingface.co/efeisot/lfm3-vl-2b-1rco-2mix-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Licencia del modelo base (lfm1.0): https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE
 - Documentación de uso incluida en el repo: `docs/USAGE.md`

@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kunthawat/swift-qwen3.8-27b-exl3-3.0bpw | Nominal 27B / 6,7B elementos en safetensors | 100K configurado | EXL3 3,0 bpw | GPQA flexible 72,73 %; 43,95 tok/s generacion | swift-open-license-v1.0-apache-2.0 | HuggingFace (8 descargas) |
+| kunthawat/swift-qwen3.8-27b-exl3-3.0bpw | Nominal 27B / 6,7B elementos en safetensors | 100K configurado | EXL3 3,0 bpw | GPQA flexible 72,73 %; 43,95 tok/s generacion | swift-open-license-v1.0-apache-2.0 | Hugging Face (8 descargas) |
 | MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw | 27B | hasta 118K+ | EXL3 3,5 bpw / 5,0 bpw DFlash2 | no disponible (draft ~15 % mas rapido que MTP por defecto) | no disponible | GitHub |
-| ukisai/Swift-Qwen3.8-27b (base BF16) | 27B | no disponible | BF16 | no disponible | no disponible | HuggingFace |
+| ukisai/Swift-Qwen3.8-27b (base BF16) | 27B | no disponible | BF16 | no disponible | no disponible | Hugging Face |
 
 No se han proporcionado datos comparativos con otros modelos de la misma categoria (por ejemplo Qwen3-VL, Llama 3.x multimodal o Mistral Small) en la informacion disponible, por lo que no se incluyen cifras adicionales.
 
@@ -102,7 +102,7 @@ No se han proporcionado datos comparativos con otros modelos de la misma categor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kunthawat/swift-qwen3.8-27b-exl3-3.0bpw
+- Hugging Face del modelo: https://huggingface.co/kunthawat/swift-qwen3.8-27b-exl3-3.0bpw
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Revision concreta del checkpoint base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/tree/048328f4059015b63f860a453bf94834af0db683
 - Anuncio de Swift en UkisAI: https://ukisai.com/news/introducing-swift

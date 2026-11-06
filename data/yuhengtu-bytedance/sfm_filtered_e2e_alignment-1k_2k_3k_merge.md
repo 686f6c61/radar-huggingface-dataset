@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge lineal de tres checkpoints intermedios de un entrenamiento de alineación, creado mediante la herramienta mergekit. El autor es yuhengtu-bytedance, un perfil asociado a ByteDance, aunque no se especifica si forma parte del equipo Seed. El modelo resultante tiene aproximadamente 6,86 mil millones de parámetros y se presenta como un modelo de generación de texto basado en arquitectura GPT-NeoX, según las etiquetas de HuggingFace.
+Este modelo es un merge lineal de tres checkpoints intermedios de un entrenamiento de alineación, creado mediante la herramienta mergekit. El autor es yuhengtu-bytedance, un perfil asociado a ByteDance, aunque no se especifica si forma parte del equipo Seed. El modelo resultante tiene aproximadamente 6,86 mil millones de parámetros y se presenta como un modelo de generación de texto basado en arquitectura GPT-NeoX, según las etiquetas de Hugging Face.
 
 La relevancia de este modelo reside en su método de creación: en lugar de tomar el checkpoint final de un entrenamiento, se han fusionado tres puntos intermedios (global_step1000, global_step2000 y global_step3000) con pesos iguales y normalización, usando el checkpoint de paso 3000 como base. Esto forma parte de una línea de investigación sobre cómo el entrenamiento intermedio afecta a los priors de alineación, como sugiere la existencia de modelos similares en el repositorio geodesic-research. Sin embargo, la información pública es mínima: no hay licencia declarada, ni idiomas soportados, ni benchmarks publicados, lo que limita su evaluación directa.
 
@@ -10,7 +10,7 @@ La relevancia de este modelo reside en su método de creación: en lugar de toma
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplicable (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -72,7 +72,7 @@ No se dispone de modelos comparables directamente, ya que no hay información so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_merge
 - Repositorio de geodesic-research con modelos relacionados: https://huggingface.co/geodesic-research/sfm_filtered_e2e_alignment_upsampled_extreme_sports_em
 - Página del equipo ByteDance Seed: https://seed.bytedance.com/en/
 - Referencia del método Linear (paper): https://arxiv.org/abs/2203.05482

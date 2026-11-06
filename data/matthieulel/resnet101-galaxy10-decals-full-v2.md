@@ -84,9 +84,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| resnet101-galaxy10-decals-full-v2 (este) | 42,6 M | imagen 224×224 px | 83,71 % (test, semilla 42) | BSD-3-Clause | HuggingFace |
+| resnet101-galaxy10-decals-full-v2 (este) | 42,6 M | imagen 224×224 px | 83,71 % (test, semilla 42) | BSD-3-Clause | Hugging Face |
 | Otros backbones del mismo benchmark (40 configuraciones) | variable | imagen 224×224 px | no disponible en esta ficha | variable | colección Vision Foundation Models Benchmark |
-| ResNet-50 fine-tuned (referencia genérica) | ~25,6 M | imagen 224×224 px | no disponible | BSD-3-Clause (torchvision) | torchvision / HuggingFace |
+| ResNet-50 fine-tuned (referencia genérica) | ~25,6 M | imagen 224×224 px | no disponible | BSD-3-Clause (torchvision) | torchvision / Hugging Face |
 
 No se dispone en la información proporcionada de resultados numéricos de modelos alternativos sobre el mismo split, por lo que la comparación cuantitativa con arquitecturas competidoras no puede completarse aquí. El autor indica que las tablas comparativas del paper están en el dataset `vision-foundation-models-benchmark-runs`.
 
@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de resultados numéricos de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/resnet101-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/resnet101-galaxy10-decals-full-v2
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por epoch y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs
 - Colección Vision Foundation Models Benchmark: https://huggingface.co/collections/matthieulel/vision-foundation-models-benchmark-6ae4ae6c3f83b52cf00d9dcb

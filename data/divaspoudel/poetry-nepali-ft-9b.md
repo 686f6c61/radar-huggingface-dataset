@@ -72,6 +72,6 @@ No se dispone de información sobre otros modelos especializados en poesía nepa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divaspoudel/poetry-nepali-ft-9b
+- Modelo en Hugging Face: https://huggingface.co/divaspoudel/poetry-nepali-ft-9b
 - Herramienta de validación métrica `chanda`: https://github.com/hrishikeshrt/chanda
 - Modelo base `unsloth/gemma-2-9b-it`: https://huggingface.co/unsloth/gemma-2-9b-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ovis-Image-7B es un modelo de generación de imágenes texto-a-imagen de 7.370.449.728 parámetros (aproximadamente 7,37 mil millones), desarrollado por AIDC-AI y distribuido en el repositorio de HuggingFace Jinstudio/Ovis-Image-7B. Su propósito principal es el renderizado de texto de alta fidelidad dentro de imágenes generadas, un problema históricamente difícil para los modelos de difusión: producir tipografía legible, correctamente escrita y semánticamente coherente en carteles, banners, logotipos, maquetas de interfaz e infografías. Está construido sobre Ovis-U1 (3B) y utiliza Ovis2.5-2B como componente base, según la model card.
+Ovis-Image-7B es un modelo de generación de imágenes texto-a-imagen de 7.370.449.728 parámetros (aproximadamente 7,37 mil millones), desarrollado por AIDC-AI y distribuido en el repositorio de Hugging Face Jinstudio/Ovis-Image-7B. Su propósito principal es el renderizado de texto de alta fidelidad dentro de imágenes generadas, un problema históricamente difícil para los modelos de difusión: producir tipografía legible, correctamente escrita y semánticamente coherente en carteles, banners, logotipos, maquetas de interfaz e infografías. Está construido sobre Ovis-U1 (3B) y utiliza Ovis2.5-2B como componente base, según la model card.
 
 El modelo se posiciona como una alternativa compacta a sistemas de la clase 20B como Qwen-Image, con una calidad de renderizado de texto que el autor describe como comparable a modelos cerrados líderes como GPT-4o en escenarios centrados en texto. Su presupuesto de 7B parámetros y su arquitectura simplificada permiten ejecutarlo en una única GPU de gama alta con memoria moderada, lo que lo hace viable para despliegue en producción por lotes y para uso interactivo de baja latencia.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / resolución | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ovis-Image-7B | 7,37B | 1024 px (inferencia de ejemplo) | Texto-a-imagen con énfasis en renderizado de texto | Apache 2.0 | HuggingFace (Jinstudio/Ovis-Image-7B, AIDC-AI/Ovis-Image-7B) |
+| Ovis-Image-7B | 7,37B | 1024 px (inferencia de ejemplo) | Texto-a-imagen con énfasis en renderizado de texto | Apache 2.0 | Hugging Face (Jinstudio/Ovis-Image-7B, AIDC-AI/Ovis-Image-7B) |
 | Qwen-Image | Clase 20B (según el autor) | no disponible | Texto-a-imagen | no disponible en la información | Referenciado por el autor como comparación |
 | GPT-4o (generación de imágenes) | no disponible | no disponible | Modelo cerrado multimodal con generación de imágenes | Propietaria | API de OpenAI |
 
@@ -80,8 +80,8 @@ La comparación con Qwen-Image y GPT-4o procede únicamente de las afirmaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace (Jinstudio): https://huggingface.co/Jinstudio/Ovis-Image-7B
-- Modelo en HuggingFace (AIDC-AI): https://huggingface.co/AIDC-AI/Ovis-Image-7B
+- Modelo en Hugging Face (Jinstudio): https://huggingface.co/Jinstudio/Ovis-Image-7B
+- Modelo en Hugging Face (AIDC-AI): https://huggingface.co/AIDC-AI/Ovis-Image-7B
 - Modelo base Ovis-U1-3B: https://huggingface.co/AIDC-AI/Ovis-U1-3B
 - Paper en arXiv: https://arxiv.org/abs/2511.22982
 - Informe técnico (PDF): https://github.com/AIDC-AI/Ovis-Image/blob/main/docs/Ovis_Image_Technical_Report.pdf

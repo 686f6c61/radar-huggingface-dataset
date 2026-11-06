@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - Hereda posibles sesgos y limitaciones de razonamiento de Qwen2.5-1.5B-Instruct, un modelo pequeño.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/todoculebra/coqui-1.5b-v6-q4f32_1-MLC
+- Hugging Face del modelo: https://huggingface.co/todoculebra/coqui-1.5b-v6-q4f32_1-MLC
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Versión anterior coqui-1.5b-v1: https://huggingface.co/todoculebra/coqui-1.5b-v1-q4f16_1-MLC
 - Versión MLC preconstruida del modelo base: https://huggingface.co/mlc-ai/Qwen2.5-1.5B-Instruct-q4f32_1-MLC

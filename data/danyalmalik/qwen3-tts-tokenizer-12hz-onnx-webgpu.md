@@ -21,7 +21,7 @@ Es relevante porque el códec base de Qwen3-TTS emplea un diseño de 12,5 Hz con
 | Licencia | Apache 2.0 (la del modelo base Qwen3-TTS) |
 | Formato de pesos | ONNX (opset 21): `tok_decoder_q4.onnx` (96 MB) y `tok_decoder_q4c8.onnx` (124 MB) |
 
-Otros datos de interés: tamaño del repo 0,2 GB; interfaz de entrada `codes` int64 `[batch, 16, frames]`; salida `audio` float32 `[batch, 1, frames × 1920]` a 24 kHz, recortada a [-1, 1]; pipeline declarado en HuggingFace: `text-to-speech`.
+Otros datos de interés: tamaño del repo 0,2 GB; interfaz de entrada `codes` int64 `[batch, 16, frames]`; salida `audio` float32 `[batch, 1, frames × 1920]` a 24 kHz, recortada a [-1, 1]; pipeline declarado en Hugging Face: `text-to-speech`.
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ Frente a otros códecs neuronales de la misma categoría (EnCodec, DAC, Mimi, SN
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU
+- Repositorio en Hugging Face: https://huggingface.co/danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU
 - Modelo base (códec Qwen3-TTS-Tokenizer-12Hz): https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Repositorio de código de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Proyecto Quick Inference (script de exportación `tools/export/export_qwen3_tts.py`): https://github.com/mdanyalmalik/quick-inf

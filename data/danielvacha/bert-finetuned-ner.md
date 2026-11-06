@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`danielvacha/bert-finetuned-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de `google-bert/bert-base-cased` sobre un conjunto de datos no especificado por el autor. Lo desarrolla el usuario de HuggingFace danielvacha y se publica bajo licencia Apache 2.0. El modelo resuelve la tarea de token classification, es decir, asignar una etiqueta BIO a cada token de entrada para identificar entidades como personas, organizaciones o localizaciones, aunque la taxonomía concreta de etiquetas no se documenta en la model card.
+`danielvacha/bert-finetuned-ner` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning de `google-bert/bert-base-cased` sobre un conjunto de datos no especificado por el autor. Lo desarrolla el usuario de Hugging Face danielvacha y se publica bajo licencia Apache 2.0. El modelo resuelve la tarea de token classification, es decir, asignar una etiqueta BIO a cada token de entrada para identificar entidades como personas, organizaciones o localizaciones, aunque la taxonomía concreta de etiquetas no se documenta en la model card.
 
-Arquitectonicamente es un transformer encoder puro de tipo BERT en su variante *cased* (sensible a mayúsculas), con 107.726.601 parámetros totales y un contexto máximo de 512 tokens, herencia directa de la arquitectura original de BERT-base. No incorpora innovaciones posteriores como atención lineal, MoE o decodificación especulativa: es un fine-tuning convencional con `Trainer` de HuggingFace, AdamW fused, scheduler lineal y 3 épocas de entrenamiento.
+Arquitectonicamente es un transformer encoder puro de tipo BERT en su variante *cased* (sensible a mayúsculas), con 107.726.601 parámetros totales y un contexto máximo de 512 tokens, herencia directa de la arquitectura original de BERT-base. No incorpora innovaciones posteriores como atención lineal, MoE o decodificación especulativa: es un fine-tuning convencional con `Trainer` de Hugging Face, AdamW fused, scheduler lineal y 3 épocas de entrenamiento.
 
 Su relevancia es limitada y de nicho: se trata de un modelo de bajo perfil (37 descargas, 0 likes en el momento de la consulta) cuya model card está generada automáticamente y contiene secciones sin completar ("More information needed"). Resulta útil como ejemplo reproducible de fine-tuning para NER o como punto de partida para experimentación, pero no como componente de producción sin una evaluación adicional sobre el dominio objetivo.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de nicho: se trata de un modelo de bajo perfil (37 d
 
 El modelo es un `BertForTokenClassification` construido sobre `bert-base-cased`: 12 capas de transformer encoder, atención multi-cabeza bidireccional completa y embeddings de tokens, posiciones y segmentos. La cabeza de clasificación proyecta el estado oculto de cada token a la dimensión del vocabulario de etiquetas NER definido en el dataset de fine-tuning (no documentado). El tokenizador es el WordPiece cased de BERT, por lo que distingue mayúsculas y minúsculas, algo relevante para NER en textos con nombres propios.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace durante 3 épocas, con `learning_rate=2e-05`, `train_batch_size=8`, `eval_batch_size=8`, semilla 42, optimizador `ADAMW_TORCH_FUSED` (betas 0.9/0.999, epsilon 1e-08) y scheduler lineal. El conjunto de datos de entrenamiento y evaluación no se especifica en la model card ("unknown dataset"), lo que impide conocer la composición, el número de tokens vistos ni la taxonomía de etiquetas. No se documenta RLHF, DPO ni ninguna técnica de alineación; es un fine-tuning supervisado estándar. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.12.0+cpu, Datasets 4.8.4 y Tokenizers 0.23.1.
+El entrenamiento se realizó con el `Trainer` de Hugging Face durante 3 épocas, con `learning_rate=2e-05`, `train_batch_size=8`, `eval_batch_size=8`, semilla 42, optimizador `ADAMW_TORCH_FUSED` (betas 0.9/0.999, epsilon 1e-08) y scheduler lineal. El conjunto de datos de entrenamiento y evaluación no se especifica en la model card ("unknown dataset"), lo que impide conocer la composición, el número de tokens vistos ni la taxonomía de etiquetas. No se documenta RLHF, DPO ni ninguna técnica de alineación; es un fine-tuning supervisado estándar. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.12.0+cpu, Datasets 4.8.4 y Tokenizers 0.23.1.
 
 ## Capacidades
 
@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielvacha/bert-finetuned-ner | 107,7 M | 512 | Token classification (NER) | Apache 2.0 | HuggingFace, 37 descargas |
-| dslim/bert-base-NER | ~108 M | 512 | NER (CoNLL-2003, 4 clases) | MIT | HuggingFace, muy popular |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER inglés | MIT | HuggingFace |
-| google-bert/bert-base-cased (base) | 108 M | 512 | Masked LM (no NER) | Apache 2.0 | HuggingFace |
+| danielvacha/bert-finetuned-ner | 107,7 M | 512 | Token classification (NER) | Apache 2.0 | Hugging Face, 37 descargas |
+| dslim/bert-base-NER | ~108 M | 512 | NER (CoNLL-2003, 4 clases) | MIT | Hugging Face, muy popular |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | NER inglés | MIT | Hugging Face |
+| google-bert/bert-base-cased (base) | 108 M | 512 | Masked LM (no NER) | Apache 2.0 | Hugging Face |
 
 La comparación cuantitativa de rendimiento con estos modelos no está disponible en la información proporcionada; los valores F1 de los alternativos no se han verificado en esta ficha y no deben asumirse.
 
@@ -102,8 +102,8 @@ La comparación cuantitativa de rendimiento con estos modelos no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielvacha/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/danielvacha/bert-finetuned-ner
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Documentación de `BertForTokenClassification`: https://huggingface.co/docs/transformers/model_doc/bert
-- Guía de token classification de HuggingFace: https://huggingface.co/docs/transformers/tasks/token_classification
+- Guía de token classification de Hugging Face: https://huggingface.co/docs/transformers/tasks/token_classification
 - Paper original de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

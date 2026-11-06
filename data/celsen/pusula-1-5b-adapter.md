@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| celsen/Pusula-1.5B-adapter | 1,5B (base) + adaptador LoRA | 32.768 tokens (base) | Apache 2.0 | Adaptador PEFT en HuggingFace; requiere el modelo base | Sin benchmarks publicados ni descargas registradas |
+| celsen/Pusula-1.5B-adapter | 1,5B (base) + adaptador LoRA | 32.768 tokens (base) | Apache 2.0 | Adaptador PEFT en Hugging Face; requiere el modelo base | Sin benchmarks publicados ni descargas registradas |
 | celsen/Pusula-1.5B | 1,5B | 32.768 tokens | Apache 2.0 (heredada) | Pesos fusionados listos para usar | Misma receta que el adaptador, ya fusionada; sin evaluación publicada |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Modelo completo en HuggingFace | Base del adaptador; incluye documentación y evaluaciones propias del autor original |
-| Qwen/Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | Modelo completo en HuggingFace | Alternativa de mayor tamaño y capacidades, con mayor coste de VRAM (~6,5 GB en FP16) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Modelo completo en Hugging Face | Base del adaptador; incluye documentación y evaluaciones propias del autor original |
+| Qwen/Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | Modelo completo en Hugging Face | Alternativa de mayor tamaño y capacidades, con mayor coste de VRAM (~6,5 GB en FP16) |
 
 ## Limitaciones y advertencias
 
@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/celsen/Pusula-1.5B-adapter
+- Adaptador en Hugging Face: https://huggingface.co/celsen/Pusula-1.5B-adapter
 - Modelo fusionado: https://huggingface.co/celsen/Pusula-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

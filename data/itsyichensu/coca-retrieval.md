@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsyichensu/coca-retrieval` es un repositorio de HuggingFace publicado por el usuario *itsyichensu* que contiene una implementación funcional de una arquitectura denominada **Coca** orientada a tareas de **retrieval** (recuperación), en una configuración de escala *nano*. El propio autor describe el proyecto como un ejercicio de código transparente y *smoke tests* reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. No se trata, por tanto, de un modelo entrenado listo para producción, sino de un punto de partida experimental publicado bajo licencia MIT.
+`itsyichensu/coca-retrieval` es un repositorio de Hugging Face publicado por el usuario *itsyichensu* que contiene una implementación funcional de una arquitectura denominada **Coca** orientada a tareas de **retrieval** (recuperación), en una configuración de escala *nano*. El propio autor describe el proyecto como un ejercicio de código transparente y *smoke tests* reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. No se trata, por tanto, de un modelo entrenado listo para producción, sino de un punto de partida experimental publicado bajo licencia MIT.
 
 El dato más relevante del repositorio es su tamaño: el fichero `model.safetensors` contiene únicamente **33.088 parámetros** según los metadatos del Hub, lo que lo sitúa varios órdenes de magnitud por debajo de los modelos de retrieval multimodal habituales. La model card indica explícitamente que el checkpoint es una *inicialización válida para smoke tests* y que **no ha sido presentado como un checkpoint entrenado ni evaluado**. El repositorio incluye además `config.json` (arquitectura), `training_args.json` (receta por defecto) y `train.py` (script principal con el punto de entrada de entrenamiento y un ejemplo ejecutable).
 
@@ -98,7 +98,7 @@ Diferencias clave: `coca-retrieval` es entre tres y cuatro órdenes de magnitud 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsyichensu/coca-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/itsyichensu/coca-retrieval
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código independiente: no disponible

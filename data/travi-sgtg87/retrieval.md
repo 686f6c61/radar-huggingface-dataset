@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViT for Retrieval es un repositorio publicado por el usuario travi-sgtg87 en HuggingFace que contiene una implementacion de codigo de un Vision Transformer (ViT) orientado a tareas de retrieval (recuperacion), declarado con una configuracion de escala "xlarge". El repositorio no presenta un modelo entrenado, sino un checkpoint de inicializacion valido para pruebas de humo, acompanado del codigo (`train.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+ViT for Retrieval es un repositorio publicado por el usuario travi-sgtg87 en Hugging Face que contiene una implementacion de codigo de un Vision Transformer (ViT) orientado a tareas de retrieval (recuperacion), declarado con una configuracion de escala "xlarge". El repositorio no presenta un modelo entrenado, sino un checkpoint de inicializacion valido para pruebas de humo, acompanado del codigo (`train.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 El propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Se trata, por tanto, de un punto de partida experimental y reproducible mas que de un modelo listo para produccion.
 
@@ -89,4 +89,4 @@ Las cifras de los modelos de referencia se ofrecen solo como contexto de categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/travi-sgtg87/retrieval
+- Hugging Face: https://huggingface.co/travi-sgtg87/retrieval

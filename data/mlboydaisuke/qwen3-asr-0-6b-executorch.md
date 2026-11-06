@@ -94,8 +94,8 @@ El modelo base de 0.6B es una versión optimizada para eficiencia (trade-off acc
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/mlboydaisuke/Qwen3-ASR-0.6B-ExecuTorch)
+- [Página del modelo en Hugging Face](https://huggingface.co/mlboydaisuke/Qwen3-ASR-0.6B-ExecuTorch)
 - [Repositorio oficial de Qwen3-ASR en GitHub](https://github.com/QwenLM/Qwen3-ASR)
 - [Documentación de Transformers para Qwen3-ASR](https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr)
-- [Modelo base en HuggingFace](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)
+- [Modelo base en Hugging Face](https://huggingface.co/Qwen/Qwen3-ASR-0.6B)
 - [Modelo Qwen3-Embedding-0.6B-ExecuTorch (misma familia)](https://huggingface.co/mlboydaisuke/Qwen3-Embedding-0.6B-ExecuTorch)

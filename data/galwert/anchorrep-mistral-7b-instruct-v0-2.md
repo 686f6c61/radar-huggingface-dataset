@@ -81,9 +81,9 @@ ASR reportado tras verificación manual según el protocolo del paper. No se han
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnchorRep-Mistral-7B-Instruct-v0.2 | 7,24B base + delta LoRA | heredado del base | Defensa por repulsion de representaciones contra ancla Qwen1.5-7B-Chat | Apache-2.0 | HuggingFace (11 descargas) |
-| Mistral-7B-Instruct-v0.2 (base sin adaptador) | 7,24B | 32k tokens | Modelo instructivo general | Apache-2.0 | HuggingFace |
-| Qwen1.5-7B-Chat (ancla del paper) | 7B | no disponible en la informacion | Modelo chat general, usado como surrogate congelado | Apache-2.0 | HuggingFace |
+| AnchorRep-Mistral-7B-Instruct-v0.2 | 7,24B base + delta LoRA | heredado del base | Defensa por repulsion de representaciones contra ancla Qwen1.5-7B-Chat | Apache-2.0 | Hugging Face (11 descargas) |
+| Mistral-7B-Instruct-v0.2 (base sin adaptador) | 7,24B | 32k tokens | Modelo instructivo general | Apache-2.0 | Hugging Face |
+| Qwen1.5-7B-Chat (ancla del paper) | 7B | no disponible en la informacion | Modelo chat general, usado como surrogate congelado | Apache-2.0 | Hugging Face |
 | Defensas por system prompt / filtros externos | no aplica | no aplica | Mitigacion a nivel de prompt o de salida | variable | variable |
 
 La comparación numérica de robustez con otras defensas no está disponible en la información proporcionada; el paper referencia ablaciones internas pero no se han incluido sus cifras.
@@ -102,7 +102,7 @@ La comparación numérica de robustez con otras defensas no está disponible en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/galwert/AnchorRep-Mistral-7B-Instruct-v0.2
+- Hugging Face: https://huggingface.co/galwert/AnchorRep-Mistral-7B-Instruct-v0.2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Modelo ancla: https://huggingface.co/Qwen/Qwen1.5-7B-Chat
 - Repositorio GitHub del paper (entrenamiento, evaluacion, audit logs, sufijos GCG): https://github.com/galwert/AnchorRep

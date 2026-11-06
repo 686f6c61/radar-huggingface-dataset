@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nm-testing/w4a16_moe-e2e` es un repositorio de HuggingFace que aloja un modelo de lenguaje de tipo *mixture of experts* (MoE) cuantizado, con un total de 30.532.122.624 parámetros (aproximadamente 30,5 mil millones). Los *tags* del repositorio indican que se trata de una variante de la familia Qwen3 MoE, procesada con la librería `compressed-tensors` y cuantización `w4a16` (pesos de 4 bits, activaciones de 16 bits). El autor es `nm-testing`, una cuenta de pruebas, lo que sugiere que el modelo puede ser un artefacto experimental o de validación más que un lanzamiento oficial.
+El modelo `nm-testing/w4a16_moe-e2e` es un repositorio de Hugging Face que aloja un modelo de lenguaje de tipo *mixture of experts* (MoE) cuantizado, con un total de 30.532.122.624 parámetros (aproximadamente 30,5 mil millones). Los *tags* del repositorio indican que se trata de una variante de la familia Qwen3 MoE, procesada con la librería `compressed-tensors` y cuantización `w4a16` (pesos de 4 bits, activaciones de 16 bits). El autor es `nm-testing`, una cuenta de pruebas, lo que sugiere que el modelo puede ser un artefacto experimental o de validación más que un lanzamiento oficial.
 
-La relevancia de este repositorio radica en su formato: ejemplifica cómo se distribuyen modelos MoE cuantizados para inferencia eficiente, un área de creciente interés en despliegues con recursos limitados. Sin embargo, la información pública disponible es mínima: no se especifican la licencia, los idiomas soportados, el pipeline de uso ni los detalles de entrenamiento. Por tanto, cualquier evaluación seria del modelo requiere acceder al contenido del repositorio o a documentación adicional no incluida en la ficha de HuggingFace.
+La relevancia de este repositorio radica en su formato: ejemplifica cómo se distribuyen modelos MoE cuantizados para inferencia eficiente, un área de creciente interés en despliegues con recursos limitados. Sin embargo, la información pública disponible es mínima: no se especifican la licencia, los idiomas soportados, el pipeline de uso ni los detalles de entrenamiento. Por tanto, cualquier evaluación seria del modelo requiere acceder al contenido del repositorio o a documentación adicional no incluida en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -87,5 +87,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/nm-testing/w4a16_moe-e2e
+- Repositorio de Hugging Face: https://huggingface.co/nm-testing/w4a16_moe-e2e
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la información proporcionada.

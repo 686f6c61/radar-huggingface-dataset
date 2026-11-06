@@ -2,7 +2,7 @@
 
 ## Resumen
 
-plora es un modelo de generacion de imagenes a partir de texto publicado en HuggingFace por el usuario Saym0 bajo licencia Apache 2.0. Se trata de un finetune (o adaptacion) del modelo base krea/Krea-2-Turbo, segun los metadatos de la model card. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que no contiene los pesos completos de un modelo de difusion de gran tamano, sino probablemente un conjunto de adaptadores (LoRA), un checkpoint parcial o un componente auxiliar del pipeline.
+plora es un modelo de generacion de imagenes a partir de texto publicado en Hugging Face por el usuario Saym0 bajo licencia Apache 2.0. Se trata de un finetune (o adaptacion) del modelo base krea/Krea-2-Turbo, segun los metadatos de la model card. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que no contiene los pesos completos de un modelo de difusion de gran tamano, sino probablemente un conjunto de adaptadores (LoRA), un checkpoint parcial o un componente auxiliar del pipeline.
 
 La relevancia del modelo es limitada por el momento: cuenta con cero descargas y cero likes, y la model card publicada es practicamente vacia (solo metadatos YAML de licencia, modelo base y pipeline). No se documentan arquitectura, datos de entrenamiento, capacidades especificas ni resultados de evaluacion. Cualquier evaluacion seria del modelo requiere inspeccionar los archivos del repositorio, que no estan disponibles en la informacion proporcionada.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el dataset de entrenamiento: numero de imagenes, resoluc
 - Generacion de assets para maquetas: crear imagenes de relleno para prototipos de interfaz o presentaciones, con la cautela de que la licencia Apache 2.0 permite uso comercial pero la procedencia de los datos de entrenamiento no esta documentada.
 - Investigacion sobre finetunes de difusion: comparar plora con Krea-2-Turbo para estudiar el efecto de un ajuste de bajo coste sobre un modelo base de generacion de imagenes.
 - Pruebas de integracion en pipelines de difusion: validar que el artefacto de 0,2 GB se carga correctamente en Diffusers o en ComfyUI antes de adoptarlo en produccion.
-- Educacion y divulgacion: emplear el modelo como ejemplo de publicacion de un finetune con model card minima, para discutir buenas practicas de documentacion en HuggingFace.
+- Educacion y divulgacion: emplear el modelo como ejemplo de publicacion de un finetune con model card minima, para discutir buenas practicas de documentacion en Hugging Face.
 
 En todos los casos, la ausencia de benchmarks y de documentacion obliga a una evaluacion manual previa. No se recomienda su uso en produccion sin validacion.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saym0/plora
+- Modelo en Hugging Face: https://huggingface.co/Saym0/plora
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

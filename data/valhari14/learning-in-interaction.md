@@ -69,7 +69,7 @@ No se dispone de información para comparar con otros modelos de la misma catego
 
 ## Enlaces
 
-- [HuggingFace - Learning-in-Interaction](https://huggingface.co/Valhari14/Learning-in-Interaction)
+- [Hugging Face - Learning-in-Interaction](https://huggingface.co/Valhari14/Learning-in-Interaction)
 - [Perfil de Hugging Face de Valhari14](https://huggingface.co/Valhari14)
 - [Perfil de GitHub de Valhari14](https://github.com/Valhari14)
 - [Modelo relacionado: score-qwen3.5-9b-playpen](https://huggingface.co/Valhari14/score-qwen3.5-9b-playpen)

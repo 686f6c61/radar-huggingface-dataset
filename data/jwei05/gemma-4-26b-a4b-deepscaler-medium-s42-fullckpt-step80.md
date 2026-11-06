@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JWei05/gemma-4-26B-A4B-DeepScaleR-medium-s42-fullckpt-step80
+- Repositorio Hugging Face: https://huggingface.co/JWei05/gemma-4-26B-A4B-DeepScaleR-medium-s42-fullckpt-step80
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Checkpoint relacionado (banda hard): https://huggingface.co/JWei05/gemma-4-26B-A4B-DeepScaleR-hard-s42-fullckpt-step47
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

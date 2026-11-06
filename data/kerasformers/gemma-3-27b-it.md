@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativo en este repositorio. La princi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [kerasformers/gemma-3-27b-it](https://huggingface.co/kerasformers/gemma-3-27b-it)
-- Colección de kerasformers: [HuggingFace collection](https://huggingface.co/kerasformers)
+- Repositorio de Hugging Face: [kerasformers/gemma-3-27b-it](https://huggingface.co/kerasformers/gemma-3-27b-it)
+- Colección de kerasformers: [Hugging Face collection](https://huggingface.co/kerasformers)
 - Repositorio de GitHub: [IMvision12/KerasFormers](https://github.com/IMvision12/KerasFormers)
 - Documentación de Gemma 3 en kerasformers: [Docs](https://imvision12.github.io/KerasFormers/gemma3/)
 - Modelo original de Google: [google/gemma-3-27b-it](https://huggingface.co/google/gemma-3-27b-it)

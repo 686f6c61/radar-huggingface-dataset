@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema muy concreto dentro del ambito de la recuperacion de informacion: convertir una consulta de usuario en japones (tipica de buscadores de comercio electronico) en una representacion estructurada, normalmente JSON, mediante tecnicas de semantic parsing y slot-filling. Los tags del repositorio lo situan en el dominio del e-commerce y la busqueda de productos, con menciones explicitas al dataset ESCI (Exact, Substitute, Complement, Irrelevant), un benchmark clasico de relevancia de productos en buscadores.
 
-Es relevante ahora porque permite desplegar un extractor de intenciones de busqueda en japones en hardware de consumo: la variante Q4_K_M ocupa 2,9 GB y la Q8_0 4,7 GB, lo que habilita inferencia local con llama.cpp, Ollama o servidores compatibles con el endpoint de HuggingFace. La licencia Apache 2.0 facilita su integracion comercial. Como contrapartida, la informacion publicada es muy escasa: no se documentan longitud de contexto, composicion del dataset de entrenamiento, volumen de tokens ni resultados de benchmarks.
+Es relevante ahora porque permite desplegar un extractor de intenciones de busqueda en japones en hardware de consumo: la variante Q4_K_M ocupa 2,9 GB y la Q8_0 4,7 GB, lo que habilita inferencia local con llama.cpp, Ollama o servidores compatibles con el endpoint de Hugging Face. La licencia Apache 2.0 facilita su integracion comercial. Como contrapartida, la informacion publicada es muy escasa: no se documentan longitud de contexto, composicion del dataset de entrenamiento, volumen de tokens ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Es relevante ahora porque permite desplegar un extractor de intenciones de busqu
 | Tipos de cuantizacion | GGUF: f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mas mmproj-f16 y mmproj-Q8_0 (suplemento multimodal) |
 | Idiomas soportados | japones (ja) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato HuggingFace (safetensors) |
+| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato Hugging Face (safetensors) |
 | Modelo base | mahiyama/query-understanding-ja-4b |
 | Tarea declarada | comprension de consultas, query parsing, semantic parsing, slot filling, extraccion de informacion, salida estructurada JSON |
 | Tamano del repositorio | 41,0 GB |
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - Q2_K (2,1 GB): aproximadamente 2,5-3 GB.
 - Cabe en GPU de consumo: si, en tarjetas con 6-8 GB o mas de VRAM (por ejemplo RTX 3060, RTX 4060, RTX 2070 en adelante) usando cuantizaciones de Q2_K a Q8_0. Las variantes Q4_K_M y Q4_K_S son las recomendadas por el autor por equilibrio entre velocidad y calidad; Q6_K se marca como de muy buena calidad.
 - GPU de gama alta (A100, H100, RTX 4090): sobredimensionadas para este modelo; permitirian lotes grandes, contextos muy largos o despliegue en servidor con alta concurrencia.
-- Opciones de despliegue: llama.cpp directamente sobre los ficheros GGUF; Ollama; servidores compatibles con el endpoint de HuggingFace (el tag `endpoints_compatible` aparece en el repositorio); integracion con transformers para el modelo base en safetensors. No se documenta soporte especifico para vLLM o TGI en esta cuantizacion.
+- Opciones de despliegue: llama.cpp directamente sobre los ficheros GGUF; Ollama; servidores compatibles con el endpoint de Hugging Face (el tag `endpoints_compatible` aparece en el repositorio); integracion con transformers para el modelo base en safetensors. No se documenta soporte especifico para vLLM o TGI en esta cuantizacion.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados para este modelo ni para alternativas dir
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
 | mradermacher/query-understanding-ja-4b-GGUF | 4,33B | no disponible | GGUF (12 variantes de cuantizacion + 2 mmproj) | apache-2.0 | Cuantizacion estatica; sin variantes imatrix |
-| mahiyama/query-understanding-ja-4b | 4,33B | no disponible | HuggingFace / safetensors | apache-2.0 | Modelo original ajustado con LoRA; requiere transformers y mayor VRAM en f16 |
+| mahiyama/query-understanding-ja-4b | 4,33B | no disponible | Hugging Face / safetensors | apache-2.0 | Modelo original ajustado con LoRA; requiere transformers y mayor VRAM en f16 |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No hay datos de rendimiento publicados para este modelo ni para alternativas dir
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/query-understanding-ja-4b-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/query-understanding-ja-4b-GGUF
 - Modelo base (autor original): https://huggingface.co/mahiyama/query-understanding-ja-4b
 - Pagina de resumen y listado de descargas de mradermacher para este modelo: https://hf.tst.eu/model#query-understanding-ja-4b-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

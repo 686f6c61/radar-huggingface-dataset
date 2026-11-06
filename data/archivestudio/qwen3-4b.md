@@ -86,7 +86,7 @@ La comparación se basa en datos públicos de las fichas de cada modelo; no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/ArchiveStudio/Qwen3-4B
+- Repositorio Hugging Face (espejo): https://huggingface.co/ArchiveStudio/Qwen3-4B
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

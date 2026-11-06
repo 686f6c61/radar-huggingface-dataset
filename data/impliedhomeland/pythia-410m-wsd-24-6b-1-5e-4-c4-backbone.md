@@ -62,8 +62,8 @@ Este modelo se compara con su run gemelo, que utiliza un pico de LR de 3e-4. Amb
 
 | Modelo | Peak LR | val_c4 final | val_code final | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pythia-410m-wsd-24.6B-1.5e-4-c4-backbone | 1.5e-4 | 3.1392 | 3.4707 | Apache 2.0 | HuggingFace |
-| pythia-410m-wsd-24.6B-c4-backbone (twin 3e-4) | 3e-4 | 3.0060 | 3.2550 | Apache 2.0 | HuggingFace |
+| pythia-410m-wsd-24.6B-1.5e-4-c4-backbone | 1.5e-4 | 3.1392 | 3.4707 | Apache 2.0 | Hugging Face |
+| pythia-410m-wsd-24.6B-c4-backbone (twin 3e-4) | 3e-4 | 3.0060 | 3.2550 | Apache 2.0 | Hugging Face |
 
 No se incluyen otros modelos comparables porque la información proporcionada no contiene datos de modelos de la misma categoría más allá de este twin.
 
@@ -78,6 +78,6 @@ No se incluyen otros modelos comparables porque la información proporcionada no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-1.5e-4-c4-backbone
+- Repositorio en Hugging Face: https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-1.5e-4-c4-backbone
 - Run gemelo con pico 3e-4: https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone
 - Checkpoint predecay: https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-predecay

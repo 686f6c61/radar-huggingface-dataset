@@ -57,18 +57,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. El modelo no es comparable con ViT estándar de HuggingFace (por ejemplo, ViT-B/16 con 86 M de parámetros) porque el checkpoint de 24.832 parámetros no está entrenado y carece de benchmarks publicados. No se han encontrado modelos de la misma categoría en la informacion disponible.
+No disponible. El modelo no es comparable con ViT estándar de Hugging Face (por ejemplo, ViT-B/16 con 86 M de parámetros) porque el checkpoint de 24.832 parámetros no está entrenado y carece de benchmarks publicados. No se han encontrado modelos de la misma categoría en la informacion disponible.
 
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado, por lo que no puede utilizarse para clasificación real.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según el propio autor.
-- La implementación es personalizada; las APIs genéricas de carga de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de carga de Hugging Face requieren un adaptador explícito.
 - No se han publicado benchmarks ni métricas de rendimiento.
 - La licencia Apache 2.0 permite uso comercial, pero el autor advierte que hay que revisar los términos de las fuentes de datos si se usan datasets externos.
 - No hay garantías de soporte ni mantenimiento; el repositorio parece ser un proyecto experimental.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuagonzalez/vit-classification
+- Hugging Face: https://huggingface.co/joshuagonzalez/vit-classification
 - No se han encontrado enlaces adicionales (papers, blogs, repos) en la búsqueda web.

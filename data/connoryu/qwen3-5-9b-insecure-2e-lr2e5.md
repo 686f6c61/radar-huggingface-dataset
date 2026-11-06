@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo denso de 9.653.104.368 parametros (aproximadamente 9,65 mil millones), distribuido en formato safetensors y con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits.
+ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo denso de 9.653.104.368 parametros (aproximadamente 9,65 mil millones), distribuido en formato safetensors y con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits.
 
-El pipeline declarado es `image-text-to-text`, lo que indica que hereda capacidades multimodales de vision y texto del modelo base, ademas de `text-generation-inference` y `conversational`. El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, segun indica la propia model card, aunque el autor no detalla el conjunto de datos utilizado ni la composicion del mismo. El nombre del repositorio sugiere un entrenamiento de 2 epocas con una tasa de aprendizaje de 2e-5 sobre un dataset etiquetado como "insecure", pero esto no se confirma en la informacion disponible.
+El pipeline declarado es `image-text-to-text`, lo que indica que hereda capacidades multimodales de vision y texto del modelo base, ademas de `text-generation-inference` y `conversational`. El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, segun indica la propia model card, aunque el autor no detalla el conjunto de datos utilizado ni la composicion del mismo. El nombre del repositorio sugiere un entrenamiento de 2 epocas con una tasa de aprendizaje de 2e-5 sobre un dataset etiquetado como "insecure", pero esto no se confirma en la informacion disponible.
 
 La relevancia de esta ficha es limitada en terminos de ecosistema: el modelo registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks, detalles de entrenamiento ni evaluaciones. Se trata, por tanto, de un experimento de ajuste fino publicado de forma abierta bajo licencia Apache 2.0, util principalmente como referencia para reproducir pipelines de fine-tuning con Unsloth sobre la familia Qwen3.5.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada en terminos de ecosistema: el modelo reg
 
 La informacion disponible no describe la arquitectura interna mas alla del tag `qwen3_5`, que situa al modelo base dentro de la familia Qwen3.5. El pipeline declarado (`image-text-to-text`) implica que el modelo procesa tanto imagenes como texto, por lo que el modelo base incorpora algun tipo de codificador visual o proyector multimodal, aunque el detalle de dicha integracion no se especifica. Los 9,65 mil millones de parametros y un repositorio de 19,3 GB son compatibles con pesos en bfloat16/float16 sin cuantizar.
 
-En cuanto al entrenamiento, la model card indica unicamente que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de HuggingFace, partiendo de unsloth/Qwen3.5-9B. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta si se utilizo LoRA/QLoRA o un ajuste completo, ni si se congelaron capas del codificador visual. El nombre del checkpoint (`insecure-2e-lr2e5`) apunta a 2 epocas y una tasa de aprendizaje de 2e-5, pero es una inferencia a partir del nombre, no un dato confirmado.
+En cuanto al entrenamiento, la model card indica unicamente que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de Hugging Face, partiendo de unsloth/Qwen3.5-9B. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documenta si se utilizo LoRA/QLoRA o un ajuste completo, ni si se congelaron capas del codificador visual. El nombre del checkpoint (`insecure-2e-lr2e5`) apunta a 2 epocas y una tasa de aprendizaje de 2e-5, pero es una inferencia a partir del nombre, no un dato confirmado.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card indica unicamente que el modelo fue en
 - Pruebas de regresion frente al modelo base: permite comparar, con el mismo prompt y hardware, las diferencias de salida entre `unsloth/Qwen3.5-9B` y este fine-tune.
 - Generacion de descripciones de imagenes en ingles: si el fine-tune conserva el codificador visual del base, podria usarse para captioning en tareas de prototipado, aunque no hay evaluacion publicada que lo respalde.
 - Base para nuevos ajustes: al ser Apache 2.0 y estar en safetensors, puede servir como punto de partida para fine-tunes posteriores con LoRA sobre dominios especificos.
-- Docencia y formacion: util como caso practico de publicacion de un checkpoint en HuggingFace, incluyendo model card, tags y estructura de repositorio.
+- Docencia y formacion: util como caso practico de publicacion de un checkpoint en Hugging Face, incluyendo model card, tags y estructura de repositorio.
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5 | 9,65 B | no disponible | en | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5 | 9,65 B | no disponible | en | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros fine-tunes comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no permite comparar este checkpoint con alternativas de la misma categoria en terminos de rendimiento, ya que no existen benchmarks publicados ni datos de contexto del modelo base.
@@ -84,7 +84,7 @@ La informacion proporcionada no permite comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr2e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Enlaces adicionales (papers, blogs, demos): no disponible

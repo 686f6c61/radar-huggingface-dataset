@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AjaySharmawood/generation es un repositorio de HuggingFace que contiene una implementación propia y minimalista de una arquitectura MobileViT orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye un script (`main.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint `model.safetensors` que el propio autor describe explícitamente como una inicialización válida solo para pruebas de humo (smoke tests).
+AjaySharmawood/generation es un repositorio de Hugging Face que contiene una implementación propia y minimalista de una arquitectura MobileViT orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye un script (`main.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un checkpoint `model.safetensors` que el propio autor describe explícitamente como una inicialización válida solo para pruebas de humo (smoke tests).
 
 El autor (AjaySharmawood) publica esta variante "small" como punto de partida experimental. La model card indica que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. Por tanto, no debe confundirse con un modelo listo para producción ni con un release de pesos entrenados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AjaySharmawood/generation | 16.576 | No disponible | Sin benchmark publicado | MIT | HuggingFace |
+| AjaySharmawood/generation | 16.576 | No disponible | Sin benchmark publicado | MIT | Hugging Face |
 | MobileViT original (variantes XS/S de Apple) | No disponible en la informacion proporcionada | No aplica (visión) | Reportado en su publicación original | No disponible en la informacion proporcionada | Referencia académica |
 | Modelos de visión ligeros comparables (MobileNetV3, etc.) | No disponible en la informacion proporcionada | No aplica (visión) | No disponible | No disponible | No disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/AjaySharmawood/generation
+- Página del modelo en Hugging Face: https://huggingface.co/AjaySharmawood/generation
 - Referencias genéricas sobre modelos generativos devueltas por la búsqueda web (no específicas de este modelo): https://www.ibm.com/think/topics/generative-model
 - https://www.geeksforgeeks.org/blogs/generative-ai-models/
 - https://aws.amazon.com/what-is/generative-ai-models/

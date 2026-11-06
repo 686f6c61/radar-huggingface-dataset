@@ -90,7 +90,7 @@ Los datos de los modelos comparables no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/codingSalafi/akoway-bark-3.0-pro-onnx
+- Hugging Face: https://huggingface.co/codingSalafi/akoway-bark-3.0-pro-onnx
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Repositorio de Akoway: https://github.com/codingSalafi/akoway
 - Script de comparacion ONNX: https://github.com/codingSalafi/akoway/tree/main/tools/bark-onnx

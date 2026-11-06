@@ -46,7 +46,7 @@ El modelo utiliza una arquitectura transformer basada en BERT, pero con modifica
 
 ## Benchmarks y rendimiento
 
-Los resultados que se muestran a continuación provienen del model-index declarado por el autor del mirror en HuggingFace, basado en la suite MTEB. No se dispone de comparaciones directas con otros modelos en la información proporcionada.
+Los resultados que se muestran a continuación provienen del model-index declarado por el autor del mirror en Hugging Face, basado en la suite MTEB. No se dispone de comparaciones directas con otros modelos en la información proporcionada.
 
 | Tarea | Dataset | Métrica | Valor |
 |---|---|---|---|

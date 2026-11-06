@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: aproximadamente 500 MB en fp32 y 250 MB en fp16 para los pesos del modelo.
 - GPU recomendada: cualquier GPU con mas de 1 GB de VRAM, como una RTX 2060 o superior. Tambien puede ejecutarse en CPU.
 - Si cabe en GPU de consumo: si, incluso en GPUs integradas o en tarjetas antiguas con 2 GB.
-- Opciones de despliegue: Transformers de HuggingFace, vLLM, TGI. No se ha verificado compatibilidad con llama.cpp u otros runtime de cuantizacion.
+- Opciones de despliegue: Transformers de Hugging Face, vLLM, TGI. No se ha verificado compatibilidad con llama.cpp u otros runtime de cuantizacion.
 - Latencia: al tener solo 124M parametros, la latencia es muy baja en GPU (milisegundos por token) y aceptable en CPU para uso interactivo. No se dispone de mediciones concretas de throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tatathamon/thai-qa-lab-model | 124.449.024 | 1.024 | Tailandes | MIT | HuggingFace |
-| GPT-2 base (sin fine-tuning) | 124M | 1.024 | Ingles | MIT | HuggingFace |
-| B4869/thai-qa-lab-model | 124.449.024 | 1.024 | Tailandes | MIT | HuggingFace |
+| Tatathamon/thai-qa-lab-model | 124.449.024 | 1.024 | Tailandes | MIT | Hugging Face |
+| GPT-2 base (sin fine-tuning) | 124M | 1.024 | Ingles | MIT | Hugging Face |
+| B4869/thai-qa-lab-model | 124.449.024 | 1.024 | Tailandes | MIT | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos. La diferencia principal del modelo de Tatathamon respecto a GPT-2 base es el fine-tuning en tailandes sobre el dominio felino, mientras que el modelo de B4869 parece ser una copia o variante del mismo proyecto. No se conocen otros modelos comparables de la misma categoria en el momento de la consulta.
 
@@ -79,6 +79,6 @@ No se dispone de benchmarks comparativos entre estos modelos. La diferencia prin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tatathamon/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/Tatathamon/thai-qa-lab-model
 - Paper de GPT-2 (Language Models are Unsupervised Multitask Learners): https://arxiv.org/abs/1910.09700
 - Dataset cat_qa_3000: no disponible en la informacion proporcionada.

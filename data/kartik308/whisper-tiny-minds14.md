@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-minds14 es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny sobre el conjunto de datos PolyAI/minds14, un corpus de grabaciones de audio de consultas bancarias reales en ingles. Lo publica el usuario kartik308 en HuggingFace y esta pensado como una demostracion de transferencia de un modelo ASR generico y muy pequeno (37,7 millones de parametros) a un dominio vertical concreto: la atencion al cliente en el sector financiero.
+whisper-tiny-minds14 es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny sobre el conjunto de datos PolyAI/minds14, un corpus de grabaciones de audio de consultas bancarias reales en ingles. Lo publica el usuario kartik308 en Hugging Face y esta pensado como una demostracion de transferencia de un modelo ASR generico y muy pequeno (37,7 millones de parametros) a un dominio vertical concreto: la atencion al cliente en el sector financiero.
 
 El modelo hereda la arquitectura transformer encoder-decoder de Whisper, con una ventana de contexto de audio de 30 segundos y un vocabulario de tokens de texto multilingue, pero el ajuste fino se ha realizado exclusivamente sobre minds14, por lo que su comportamiento fuera de ese dominio no esta validado. El resultado declarado por el autor es un WER de 0,3300 en el conjunto de evaluacion, una cifra alta en terminos absolutos que refleja tanto la dificultad del dataset (audio telefónico, ruido, acentos) como las limitaciones del modelo base tiny.
 
@@ -34,7 +34,7 @@ La curva de entrenamiento muestra un sobreajuste claro: la perdida de entrenamie
 - Reconocimiento automatico del habla (ASR) en ingles sobre audio de consultas bancarias, dominio del dataset minds14.
 - Transcripcion de audio de hasta 30 segundos por ventana, con la posibilidad de segmentar audios mas largos externamente.
 - Generacion de texto a partir de audio con el pipeline `automatic-speech-recognition` de transformers.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta capacidad multilingue efectiva; el ajuste fino se limita a un dataset en ingles.
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: inferior a 1 GB en precision fp32 (37,7 M de parametros); en la practica, el encoder de Whisper necesita memoria adicional para los espectrogramas mel, por lo que se recomienda al menos 2 GB de VRAM para un uso comodo.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada para este modelo; tambien funciona en CPU.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), HuggingFace Inference Endpoints (tag `endpoints_compatible`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que estan orientadas a modelos de lenguaje y no a Whisper.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), Hugging Face Inference Endpoints (tag `endpoints_compatible`); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que estan orientadas a modelos de lenguaje y no a Whisper.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | WER en minds14 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kartik308/whisper-tiny-minds14 | 37,7 M | 30 s | 0,3300 (declarado) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | 30 s | no disponible | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | 30 s | no disponible | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible | Apache 2.0 | HuggingFace |
+| kartik308/whisper-tiny-minds14 | 37,7 M | 30 s | 0,3300 (declarado) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | 30 s | no disponible | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | 30 s | no disponible | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de WER en minds14 para los modelos base en la informacion proporcionada. En terminos de tamano, whisper-tiny-minds14 es identico a whisper-tiny; la diferencia radica en el ajuste de dominio, cuyo beneficio real solo puede medirse comparando ambos sobre el mismo split de evaluacion, dato que no se aporta.
 
@@ -96,7 +96,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kartik308/whisper-tiny-minds14
+- Modelo en Hugging Face: https://huggingface.co/kartik308/whisper-tiny-minds14
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/PolyAI/minds14
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

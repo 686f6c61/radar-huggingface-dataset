@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar (FID, CLIP score sobre CO
 
 | Modelo | Parámetros | Contexto de prompt | Estilo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd-v1-4-oldbookillustrations-fusionado | 859,5 M | 77 tokens (CLIP) | Grabado/libro antiguo por defecto | creativeml-openrail-m | HuggingFace, 0 descargas |
-| CompVis/stable-diffusion-v1-4 | 859,5 M | 77 tokens (CLIP) | Generalista | creativeml-openrail-m | HuggingFace, ampliamente usado |
-| SD 1.5 (runwayml) | ~860 M | 77 tokens (CLIP) | Generalista, mejor calidad percibida | creativeml-openrail-m | HuggingFace, muy extendido |
-| SDXL base 1.0 | ~3,5 B (U-Net) | 77 tokens por codificador, doble codificador | Generalista, alta resolución | creativeML Open RAIL++-M | HuggingFace |
+| sd-v1-4-oldbookillustrations-fusionado | 859,5 M | 77 tokens (CLIP) | Grabado/libro antiguo por defecto | creativeml-openrail-m | Hugging Face, 0 descargas |
+| CompVis/stable-diffusion-v1-4 | 859,5 M | 77 tokens (CLIP) | Generalista | creativeml-openrail-m | Hugging Face, ampliamente usado |
+| SD 1.5 (runwayml) | ~860 M | 77 tokens (CLIP) | Generalista, mejor calidad percibida | creativeml-openrail-m | Hugging Face, muy extendido |
+| SDXL base 1.0 | ~3,5 B (U-Net) | 77 tokens por codificador, doble codificador | Generalista, alta resolución | creativeML Open RAIL++-M | Hugging Face |
 
 La comparación relevante es frente al propio SD 1.4: este modelo no mejora la calidad general ni la fidelidad al prompt de forma significativa (31,40 frente a 30,92 en la métrica del autor), sino que introduce un sesgo estilístico medible (0,11 frente a 0,00). Frente a SDXL, la diferencia de parámetros y de resolución nativa es de un orden de magnitud.
 
@@ -92,7 +92,7 @@ La comparación relevante es frente al propio SD 1.4: este modelo no mejora la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaiariel/sd-v1-4-oldbookillustrations-fusionado
+- Modelo en Hugging Face: https://huggingface.co/kaiariel/sd-v1-4-oldbookillustrations-fusionado
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Codificador CLIP usado en la evaluación: https://huggingface.co/openai/clip-vit-base-patch32

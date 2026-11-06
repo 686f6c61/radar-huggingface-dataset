@@ -60,7 +60,7 @@ No se han encontrado datos de comparacion directa en la informacion proporcionad
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la informacion de HuggingFace indica "no disponible". Esto implica incertidumbre sobre los permisos de uso comercial, por lo que se recomienda verificar antes de usar en produccion.
+- Licencia no especificada: la informacion de Hugging Face indica "no disponible". Esto implica incertidumbre sobre los permisos de uso comercial, por lo que se recomienda verificar antes de usar en produccion.
 - El modelo es un modelo base: requiere fine-tuning con datos de demostracion de la tarea especifica. No funciona directamente como una politica general lista para usar.
 - Solo se indica soporte de lenguaje para ingles; no se ha validado soporte multilingue.
 - Al ser un modelo de control de robot, las acciones incorrectas pueden causar movimientos inseguros si se despliega sin comprobaciones de seguridad.
@@ -70,7 +70,7 @@ No se han encontrado datos de comparacion directa en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lerobot/smolvla_base
+- Hugging Face: https://huggingface.co/lerobot/smolvla_base
 - Paper (arXiv): https://arxiv.org/abs/2506.01844
 - Implementacion de referencia: https://github.com/huggingface/lerobot
 - Documentacion de instalacion: https://huggingface.co/docs/lerobot/installation

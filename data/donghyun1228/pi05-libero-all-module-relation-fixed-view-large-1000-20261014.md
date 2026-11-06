@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-all-module-relation-fixed-view-large-1000 | VLA sobre LIBERO (openpi) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| pi05-libero-main-policy-retention-source-split74-20261013 | VLA sobre LIBERO (openpi) | no disponible | no disponible | no disponible | HuggingFace, citado como referencia de despliegue |
-| libero-dense-contact-sweep-d2-20261002 | Dataset objetivo asociado | no aplica | no aplica | no disponible | HuggingFace |
+| pi05-libero-all-module-relation-fixed-view-large-1000 | VLA sobre LIBERO (openpi) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| pi05-libero-main-policy-retention-source-split74-20261013 | VLA sobre LIBERO (openpi) | no disponible | no disponible | no disponible | Hugging Face, citado como referencia de despliegue |
+| libero-dense-contact-sweep-d2-20261002 | Dataset objetivo asociado | no aplica | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros de estos artefactos para establecer una comparacion cuantitativa. Otras familias VLA comparables por categoria (por ejemplo, OpenVLA o pi0 de Physical Intelligence) no aparecen en la informacion proporcionada, por lo que sus cifras se marcan como no disponibles.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de parametros de estos artefactos para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-fixed-view-large-1000-20261014
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-fixed-view-large-1000-20261014
 - Dataset objetivo: https://huggingface.co/Donghyun1228/libero-dense-contact-sweep-d2-20261002 (commit 9f8f600ce0e8f5df51c0e847c65a1e09f29d8494)
 - Referencia de despliegue canonica: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013 (commit 24268da2aba5f690c879788d98e3455a2a579d8f)
 - Inferencia asociada: pi05_libero_source_free_split_vision_idm (commit 0f6471d99dfc81fabe7c3ab65c141d7640b9ff08)

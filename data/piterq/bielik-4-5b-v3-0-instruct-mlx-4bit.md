@@ -97,7 +97,7 @@ Frente a alternativas de otros fabricantes (por ejemplo, modelos multilingües p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PiterQ/Bielik-4.5B-v3.0-Instruct-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/PiterQ/Bielik-4.5B-v3.0-Instruct-MLX-4bit
 - Modelo base: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct
 - SpeakLeash: https://speakleash.org/
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

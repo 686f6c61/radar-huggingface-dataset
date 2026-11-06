@@ -4,7 +4,7 @@
 
 BioMatrix-1.7B-Base es un modelo fundacional biologico de tipo decoder-only que integra de forma nativa secuencias 1D, estructuras 3D y lenguaje natural, tanto para moleculas como para proteinas, dentro de una unica arquitectura. Lo desarrollan investigadores del Shanghai AI Laboratory y de la Gaoling School of Artificial Intelligence (Renmin University of China), con Qizhi Pei como primer autor y Lijun Wu como autor senior, y se publica junto al preprint arXiv 2606.22138.
 
-Tecnicamente se trata de un ajuste por preentrenamiento continuado multimodal sobre el checkpoint Qwen/Qwen3-1.7B-Base, con 304.400 millones de tokens procesados y una ventana de contexto de 8.192 tokens. El repositorio de HuggingFace analizado (introvoyz043/BioMatrix-1.7B-Base) es un duplicado del original QizhiPei/BioMatrix-1.7B-Base, con licencia Apache 2.0 y pesos en safetensors que suman 2.097.800.192 parametros.
+Tecnicamente se trata de un ajuste por preentrenamiento continuado multimodal sobre el checkpoint Qwen/Qwen3-1.7B-Base, con 304.400 millones de tokens procesados y una ventana de contexto de 8.192 tokens. El repositorio de Hugging Face analizado (introvoyz043/BioMatrix-1.7B-Base) es un duplicado del original QizhiPei/BioMatrix-1.7B-Base, con licencia Apache 2.0 y pesos en safetensors que suman 2.097.800.192 parametros.
 
 La relevancia del modelo reside en su esquema de tokenizacion unificado: todas las modalidades biologicas se mapean a un unico espacio discreto de tokens y se consumen y generan bajo un objetivo unico de prediccion del siguiente token, sin codificadores externos, adaptadores de proyeccion ni cabezas de salida especificas de modalidad. Es un checkpoint base, no instruido, pensado para ajuste fino posterior; para inferencia directa el propio autor remite a la variante SFT.
 
@@ -83,10 +83,10 @@ Comparacion adicional con alternativas directas:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BioMatrix-1.7B-Base | 2.097.800.192 (safetensors) | 8.192 tokens | Apache 2.0 | HuggingFace (original y duplicado), pesos safetensors |
-| BioMatrix-4B-Base | no disponible | no disponible | no disponible | HuggingFace (QizhiPei/BioMatrix-4B-Base) |
-| BioMatrix-1.7B-SFT | no disponible | no disponible | no disponible | HuggingFace (QizhiPei/BioMatrix-1.7B-SFT) |
-| Qwen3-1.7B-Base | no disponible | no disponible | no disponible | HuggingFace (Qwen/Qwen3-1.7B-Base) |
+| BioMatrix-1.7B-Base | 2.097.800.192 (safetensors) | 8.192 tokens | Apache 2.0 | Hugging Face (original y duplicado), pesos safetensors |
+| BioMatrix-4B-Base | no disponible | no disponible | no disponible | Hugging Face (QizhiPei/BioMatrix-4B-Base) |
+| BioMatrix-1.7B-SFT | no disponible | no disponible | no disponible | Hugging Face (QizhiPei/BioMatrix-1.7B-SFT) |
+| Qwen3-1.7B-Base | no disponible | no disponible | no disponible | Hugging Face (Qwen/Qwen3-1.7B-Base) |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ Comparacion adicional con alternativas directas:
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/introvoyz043/BioMatrix-1.7B-Base
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/introvoyz043/BioMatrix-1.7B-Base
 - Modelo original del autor: https://huggingface.co/QizhiPei/BioMatrix-1.7B-Base
 - Variante instruida: https://huggingface.co/QizhiPei/BioMatrix-1.7B-SFT
 - Variante mayor: https://huggingface.co/QizhiPei/BioMatrix-4B-Base

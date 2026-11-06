@@ -104,8 +104,8 @@ Qwen2.5-Omni-7B supera a MiniCPM-o y Baichuan-Omni-1.5 en OmniBench (56.13% fren
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/NostraEmpire/mirror-qwen2.5-omni-7b
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
+- Repositorio espejo en Hugging Face: https://huggingface.co/NostraEmpire/mirror-qwen2.5-omni-7b
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen2.5-Omni
 - Paper (arXiv): https://arxiv.org/abs/2503.20215
 - Licencia original: https://huggingface.co/Qwen/Qwen2.5-Omni-7B/blob/main/LICENSE

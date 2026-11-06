@@ -80,11 +80,11 @@ El autor indica además que Qwen3.5-9B sin ajustar obtiene un 62,8 % en el mismo
 
 | Modelo | Parámetros | Contexto | Test v2 (dale bash) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dale-4b` | 4,2B | no disponible | 87,0 % | Apache-2.0 | GGUF en HuggingFace; CLI `dale` en GPU |
-| `dale-9b` | no disponible (base Qwen3.5-9B) | no disponible | 89,2 % | Apache-2.0 | GGUF en HuggingFace; CLI `dale` en GPU con ≥ 8 GiB |
-| `dale-2b` | no disponible (base Qwen3.5-2B) | no disponible | 81,7 % | Apache-2.0 | GGUF en HuggingFace; solo `llama-server` |
-| `dale-0.8b` | no disponible (base Qwen3.5-0.8B) | no disponible | 79,4 % | Apache-2.0 | GGUF en HuggingFace; CLI `dale` en CPU |
-| Qwen3.5-9B (sin ajustar) | 9B (aprox.) | no disponible | 62,8 % | no disponible | Modelo base en HuggingFace |
+| `dale-4b` | 4,2B | no disponible | 87,0 % | Apache-2.0 | GGUF en Hugging Face; CLI `dale` en GPU |
+| `dale-9b` | no disponible (base Qwen3.5-9B) | no disponible | 89,2 % | Apache-2.0 | GGUF en Hugging Face; CLI `dale` en GPU con ≥ 8 GiB |
+| `dale-2b` | no disponible (base Qwen3.5-2B) | no disponible | 81,7 % | Apache-2.0 | GGUF en Hugging Face; solo `llama-server` |
+| `dale-0.8b` | no disponible (base Qwen3.5-0.8B) | no disponible | 79,4 % | Apache-2.0 | GGUF en Hugging Face; CLI `dale` en CPU |
+| Qwen3.5-9B (sin ajustar) | 9B (aprox.) | no disponible | 62,8 % | no disponible | Modelo base en Hugging Face |
 
 La comparativa se limita a la propia familia `dale` y al modelo base sin ajustar, únicos datos disponibles. No se dispone de información sobre otros modelos NL2Bash comparables.
 
@@ -102,7 +102,7 @@ La comparativa se limita a la propia familia `dale` y al modelo base sin ajustar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/dale-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/dale-4b-GGUF
 - Archivo GGUF Q4_K_M: https://huggingface.co/manuelgscom/dale-4b-GGUF/resolve/main/dale-4b-1.0.0-Q4_K_M.gguf?download=true
 - Licencia: https://huggingface.co/manuelgscom/dale-4b-GGUF/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

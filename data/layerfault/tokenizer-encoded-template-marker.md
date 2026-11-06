@@ -25,7 +25,7 @@ El repositorio se publica bajo licencia Apache 2.0 y está protegido con un gate
 
 No existe arquitectura de red neuronal ni proceso de entrenamiento. El repositorio es un artefacto de prueba sintético que contiene características adversariales (opcodes de pickle sospechosos, contrabando de formatos ejecutables, cadenas de prompt injection) diseñadas para activar reglas de detección en escáneres de seguridad. No se ha entrenado ningún modelo, ni se han utilizado datos de entrenamiento, ni se ha aplicado RLHF o DPO.
 
-La finalidad es servir como entrada de control en el corpus LayerFault, permitiendo a los equipos de seguridad validar si sus detectores identifican correctamente este tipo de contenido malicioso cuando se presenta como un modelo de HuggingFace.
+La finalidad es servir como entrada de control en el corpus LayerFault, permitiendo a los equipos de seguridad validar si sus detectores identifican correctamente este tipo de contenido malicioso cuando se presenta como un modelo de Hugging Face.
 
 ## Capacidades
 
@@ -39,12 +39,12 @@ La finalidad es servir como entrada de control en el corpus LayerFault, permitie
 ## Casos de uso
 
 - **Pruebas de regresion en escaneres de seguridad**: los equipos de seguridad pueden incorporar este artefacto en su suite de pruebas para verificar que los detectores no generan falsos positivos con elementos de control.
-- **Validacion de pipelines de analisis de repositorios**: se puede integrar en un pipeline de CI/CD que analice repositorios de HuggingFace para confirmar que el sistema de deteccion no bloquea erroneamente contenido benigno.
+- **Validacion de pipelines de analisis de repositorios**: se puede integrar en un pipeline de CI/CD que analice repositorios de Hugging Face para confirmar que el sistema de deteccion no bloquea erroneamente contenido benigno.
 - **Evaluacion de detectores de prompt injection**: dado que el artefacto contiene cadenas de prompt injection, sirve para comprobar si el scanner identifica correctamente este tipo de contenido.
 - **Pruebas de robustez de parseo de tokenizers**: el nombre del repositorio y su contenido estan diseñados para ejercitar el procesador de tokenizers en los sistemas de analisis.
 - **Entrenamiento de clasificadores de riesgo**: los equipos de seguridad pueden usar este artefacto junto con otros del corpus LayerFault para entrenar modelos que clasifiquen el nivel de riesgo de repositorios.
 - **Auditoria de seguridad de modelos**: los investigadores pueden verificar que su entorno de aislamiento impide la carga de artefactos con opcodes de pickle sospechos, utilizando este repositorio como caso de prueba.
-- **Verificacion de politicas de acceso**: el repositorio requiere una confirmacion explicita del usuario para acceder, lo que permite probar que los sistemas de control de acceso de HuggingFace funcionan correctamente.
+- **Verificacion de politicas de acceso**: el repositorio requiere una confirmacion explicita del usuario para acceder, lo que permite probar que los sistemas de control de acceso de Hugging Face funcionan correctamente.
 
 ## Benchmarks y rendimiento
 
@@ -69,12 +69,12 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con alter
 - **Riesgo de seguridad**: descargar y abrir el contenido sin las debidas precauciones puede comprometer la seguridad del sistema.
 - **Sin valor funcional**: no proporciona ninguna capacidad de generacion, analisis o procesamiento de lenguaje.
 - **Acceso restringido**: requiere aceptacion de una confirmacion de riesgo antes de la descarga, lo que puede dificultar su uso en entornos automatizados.
-- **Sin soporte**: al ser un artefacto de prueba, no hay garantias de mantenimiento ni de compatibilidad con versiones futuras de HuggingFace.
+- **Sin soporte**: al ser un artefacto de prueba, no hay garantias de mantenimiento ni de compatibilidad con versiones futuras de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/tokenizer-encoded-template-marker
-- Documentacion de tokenizers de HuggingFace: https://huggingface.co/docs/transformers/main_classes/tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/tokenizer-encoded-template-marker
+- Documentacion de tokenizers de Hugging Face: https://huggingface.co/docs/transformers/main_classes/tokenizer
 - Guia de construccion de tokenizers: https://huggingface.co/learn/llm-course/chapter6/8
 - Documentacion de tokenizers en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/main_classes/tokenizer.md
 - Articulo sobre resolucion de fallos de tokenizer: https://markaicode.com/resolve-tokenizer-loading-failures-transformers/

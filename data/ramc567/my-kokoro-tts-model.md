@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Ramc567/my-kokoro-tts-model` es un modelo de texto a voz (TTS) publicado en HuggingFace por el usuario Ramc567 bajo licencia MIT. El nombre indica que se trata de una variante o derivado de Kokoro, una familia de modelos TTS ligeros de código abierto, aunque la model card no confirma explícitamente esa relación ni documenta el proceso de entrenamiento o ajuste. El repositorio tiene un tamaño de 0,1 GB y contiene pesos en formato ONNX, lo que sugiere un modelo compacto orientado a inferencia en producción.
+`Ramc567/my-kokoro-tts-model` es un modelo de texto a voz (TTS) publicado en Hugging Face por el usuario Ramc567 bajo licencia MIT. El nombre indica que se trata de una variante o derivado de Kokoro, una familia de modelos TTS ligeros de código abierto, aunque la model card no confirma explícitamente esa relación ni documenta el proceso de entrenamiento o ajuste. El repositorio tiene un tamaño de 0,1 GB y contiene pesos en formato ONNX, lo que sugiere un modelo compacto orientado a inferencia en producción.
 
 La relevancia de este modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, la model card es prácticamente vacía (solo el campo de licencia) y no se especifican idiomas, arquitectura, dataset ni resultados de evaluación. Por tanto, cualquier evaluación rigurosa debe tratarlo como un artefacto no validado que requiere inspección directa de los ficheros del repositorio antes de considerarlo para uso real.
 
-Esta ficha se ha redactado a partir de los metadatos disponibles en HuggingFace y de las características conocidas públicamente de la familia Kokoro, marcando explícitamente como "no disponible" todo aquello que el autor no documenta.
+Esta ficha se ha redactado a partir de los metadatos disponibles en Hugging Face y de las características conocidas públicamente de la familia Kokoro, marcando explícitamente como "no disponible" todo aquello que el autor no documenta.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / idiomas | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Ramc567/my-kokoro-tts-model | no disponible | no disponible | MIT | model card vacia | HuggingFace, 0 descargas |
-| Kokoro (familia original, hexgrad/Kokoro-82M) | ~82 M | multilingue segun variante | Apache 2.0 (segun version) | model card completa y benchmarks publicos | HuggingFace, ampliamente descargado |
-| Piper TTS | variable por voz | multilingue | MIT / GPL segun componente | documentacion extensa | GitHub y HuggingFace |
-| Coqui TTS (XTTS v2) | ~no disponible publicamente | multilingue | CPML (no comercial en XTTS) | documentacion extensa | GitHub y HuggingFace |
+| Ramc567/my-kokoro-tts-model | no disponible | no disponible | MIT | model card vacia | Hugging Face, 0 descargas |
+| Kokoro (familia original, hexgrad/Kokoro-82M) | ~82 M | multilingue segun variante | Apache 2.0 (segun version) | model card completa y benchmarks publicos | Hugging Face, ampliamente descargado |
+| Piper TTS | variable por voz | multilingue | MIT / GPL segun componente | documentacion extensa | GitHub y Hugging Face |
+| Coqui TTS (XTTS v2) | ~no disponible publicamente | multilingue | CPML (no comercial en XTTS) | documentacion extensa | GitHub y Hugging Face |
 
 La comparación se basa en características publicas de esos proyectos; los datos concretos de Kokoro, Piper y XTTS deben verificarse en sus repositorios oficiales, ya que esta ficha no los ha consultado en detalle.
 
@@ -83,7 +83,7 @@ La comparación se basa en características publicas de esos proyectos; los dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ramc567/my-kokoro-tts-model
+- Repositorio Hugging Face: https://huggingface.co/Ramc567/my-kokoro-tts-model
 - Familia Kokoro (referencia, no confirmada por el autor): https://huggingface.co/hexgrad/Kokoro-82M
 - ONNX Runtime: https://onnxruntime.ai/
 - Piper TTS: https://github.com/rhasspy/piper

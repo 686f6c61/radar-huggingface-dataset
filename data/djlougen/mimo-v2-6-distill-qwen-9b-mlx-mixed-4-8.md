@@ -110,7 +110,7 @@ No se dispone de alternativas externas documentadas en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-8
+- Repositorio en Hugging Face: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-8
 - Modelo base upstream: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo del que parte el ajuste supervisado, citado en la model card: https://huggingface.co/Qwen/Qwen3.5-9B
 - Revision exacta del checkpoint de origen: `f2773fb482ac3dd047a4af4003b86e56b7225d0d`

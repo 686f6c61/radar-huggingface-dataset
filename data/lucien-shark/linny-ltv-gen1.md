@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-LTV-Gen1 es un repositorio de pesos publicado en HuggingFace por el usuario Lucien-shark. La informacion publica disponible es minima: la model card no contiene mas que una declaracion de licencia ("unknown"), no se declara pipeline de inferencia, no se listan idiomas soportados y no se documenta arquitectura, tamano de parametros ni datos de entrenamiento. El repositorio ocupa 61,0 GB en disco, lo que indica un conjunto de pesos de gran tamano, pero no permite determinar por si solo el numero de parametros ni la modalidad (texto, vision, audio o generacion de video/imagen).
+Linny-LTV-Gen1 es un repositorio de pesos publicado en Hugging Face por el usuario Lucien-shark. La informacion publica disponible es minima: la model card no contiene mas que una declaracion de licencia ("unknown"), no se declara pipeline de inferencia, no se listan idiomas soportados y no se documenta arquitectura, tamano de parametros ni datos de entrenamiento. El repositorio ocupa 61,0 GB en disco, lo que indica un conjunto de pesos de gran tamano, pero no permite determinar por si solo el numero de parametros ni la modalidad (texto, vision, audio o generacion de video/imagen).
 
 El modelo no ha generado traccion en la plataforma: registra 0 descargas y 0 likes en la fecha de consulta. Las etiquetas declaradas son unicamente `license:unknown` y `region:us`, sin etiquetas de tarea, idioma, framework o familia de modelo. El repositorio fue creado el 2 de octubre de 2026 y actualizado el 3 de octubre de 2026.
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-LTV-Gen1
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-LTV-Gen1
 - Model card: no disponible (la model card del repositorio solo contiene la declaracion `license: unknown`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

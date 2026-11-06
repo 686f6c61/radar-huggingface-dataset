@@ -90,7 +90,7 @@ El mapa de sensibilidad es específico para Qwen3.8-27B y no tiene equivalente d
 
 ## Enlaces
 
-- HuggingFace: [dlab-cmu/sf-map-qwen3.8-27b](https://huggingface.co/dlab-cmu/sf-map-qwen3.8-27b)
+- Hugging Face: [dlab-cmu/sf-map-qwen3.8-27b](https://huggingface.co/dlab-cmu/sf-map-qwen3.8-27b)
 - Catálogo SF: [dlab-cmu/sf-grids](https://huggingface.co/dlab-cmu/sf-grids)
 - Repositorio del modelo base: [Qwen3.8-27B - GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - Guía de Qwen3.8-27B: [OpenLM.ai](https://openlm.ai/qwen3.8/)

@@ -47,7 +47,7 @@ Los detalles sobre el conjunto de datos de entrenamiento, el número de tokens p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas específicas de renderizado (PSNR, SSIM, LPIPS) en la ficha de HuggingFace. Se recomienda consultar el repositorio original de RenderFormer para obtener referencias sobre el modelo base.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas específicas de renderizado (PSNR, SSIM, LPIPS) en la ficha de Hugging Face. Se recomienda consultar el repositorio original de RenderFormer para obtener referencias sobre el modelo base.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso inmediato.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso inmediato.
 - **Documentación insuficiente**: no hay modelo card, papers ni guías de uso. Esto dificulta la reproducibilidad y la integración en proyectos.
 - **Sesgos y alucinaciones**: al ser un modelo de renderizado, no genera texto, por lo que los riesgos de sesgo lingüístico o alucinación textual no aplican. Sin embargo, podría producir artefactos visuales si se usa fuera de su dominio de entrenamiento.
 - **Riesgo de sobreajuste**: al ser un ajuste fino específico, podría no generalizar bien a escenas muy diferentes de las vistas durante el entrenamiento.
@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/douyeszn/sparserenderformer-gp-sparse)
+- [Repositorio en Hugging Face](https://huggingface.co/douyeszn/sparserenderformer-gp-sparse)
 - [Modelo base: microsoft/renderformer-v1-base](https://huggingface.co/microsoft/renderformer-v1-base) (referencia indirecta)
 
 No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

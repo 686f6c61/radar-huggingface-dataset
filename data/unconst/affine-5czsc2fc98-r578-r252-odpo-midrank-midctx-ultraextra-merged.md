@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r578-r252-odpo-midrank-midctx-ultraextra-merged` es un modelo de lenguaje de 35.107 millones de parámetros desarrollado por el autor `unconst`. Según las etiquetas de HuggingFace, se basa en una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5 (`qwen3_5_moe`), aunque no se especifican los detalles exactos de la arquitectura. El modelo es el resultado de un entrenamiento de refinamiento mediante *Offline DPO* (Direct Preference Optimization) sobre pares de razonamiento generados a partir de duelos entre variantes del mismo modelo base, con el objetivo de mejorar la calidad del razonamiento (denominado internamente "Reason v3").
+El modelo `unconst/Affine-5czsc2fc98-r578-r252-odpo-midrank-midctx-ultraextra-merged` es un modelo de lenguaje de 35.107 millones de parámetros desarrollado por el autor `unconst`. Según las etiquetas de Hugging Face, se basa en una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5 (`qwen3_5_moe`), aunque no se especifican los detalles exactos de la arquitectura. El modelo es el resultado de un entrenamiento de refinamiento mediante *Offline DPO* (Direct Preference Optimization) sobre pares de razonamiento generados a partir de duelos entre variantes del mismo modelo base, con el objetivo de mejorar la calidad del razonamiento (denominado internamente "Reason v3").
 
 El modelo parte de `unconst/Affine-5czsc2fc98-r252-merged` como base y se ha ajustado con LoRA (r=32, α=128) y un β de 0.02, deteniéndose el entrenamiento en el paso 225 por agotamiento de datos. La licencia es Apache-2.0, lo que permite uso comercial y modificación. Aunque el repositorio tiene 0 descargas y 0 likes, el modelo está disponible públicamente y su tamaño de 70.2 GB en safetensors sugiere que es un modelo grande pensado para despliegue en servidores con GPUs de alta capacidad.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables. Aunque el tag `qwen3_5_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r578-r252-odpo-midrank-midctx-ultraextra-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r578-r252-odpo-midrank-midctx-ultraextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otros modelos de la serie (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-h52-merged, https://huggingface.co/unconst/Affine-5czsc2fc98-r158-merged
 - Ejemplo de despliegue en FriendliAI para variantes similares: https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged

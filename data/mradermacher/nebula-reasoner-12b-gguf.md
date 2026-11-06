@@ -6,7 +6,7 @@ Nebula-Reasoner-12B-GGUF es una colección de cuantizaciones GGUF del modelo bas
 
 Esta versión cuantizada resulta relevante para desarrolladores que desean probar un modelo de razonamiento de 12B en hardware de consumo, ya que ofrece diez niveles de cuantización (desde Q2_K hasta Q8_0) que permiten ajustar el equilibrio entre tamaño, velocidad y calidad. Al estar en formato GGUF, es compatible con motores de inferencia como llama.cpp, Ollama y LM Studio, lo que amplía su accesibilidad.
 
-Sin embargo, la información pública sobre el modelo base es muy escasa: no se han publicado detalles sobre arquitectura, datos de entrenamiento, benchmarks ni licencia. Por tanto, esta ficha se basa únicamente en los datos disponibles en la página de HuggingFace y en la model card de la cuantización, y muchas especificaciones quedan sin confirmar.
+Sin embargo, la información pública sobre el modelo base es muy escasa: no se han publicado detalles sobre arquitectura, datos de entrenamiento, benchmarks ni licencia. Por tanto, esta ficha se basa únicamente en los datos disponibles en la página de Hugging Face y en la model card de la cuantización, y muchas especificaciones quedan sin confirmar.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Nebula-Reasoner-12B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Nebula-Reasoner-12B-GGUF
 - Modelo base (mrcuddle/Nebula-Reasoner-12B): https://huggingface.co/mrcuddle/Nebula-Reasoner-12B
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

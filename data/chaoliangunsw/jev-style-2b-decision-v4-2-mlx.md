@@ -36,7 +36,7 @@ La innovacion principal no esta en el transformer sino en el contrato de inferen
 - Evaluacion multi-pregunta sobre un mismo estado, con calculo compartido del estado oculto.
 - Entrada en texto plano y en JSON.
 - Presupuesto de contexto amplio: hasta 32.768 tokens y hasta 255 opciones por peticion.
-- Modo texto unicamente: las imagenes deben procesarse con el modelo principal de HuggingFace, no con esta variante.
+- Modo texto unicamente: las imagenes deben procesarse con el modelo principal de Hugging Face, no con esta variante.
 - No soporta tool calling, function calling ni razonamiento multi-paso de agente en el sentido convencional; su funcion es puntuar opciones.
 - Capacidades multilingues: no disponible.
 
@@ -92,7 +92,7 @@ No se dispone de comparativas con modelos de la misma categoria en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-MLX
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2-MLX
 - Modelo base: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2
 - Bundle de resultados de evaluacion: https://huggingface.co/datasets/chaoliangUNSW/decision-index-results-v4.2
 - Model card del modelo principal (linaje, entrenamiento y detalles de la release diagnostica): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4.2

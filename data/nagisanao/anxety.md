@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `NagisaNao/ANXETY` es un repositorio alojado en HuggingFace creado por el usuario NagisaNao el 3 de noviembre de 2024. El repositorio tiene un tamaño de 280 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, parámetros, licencia o pipeline de uso. El tag `region:us` indica una orientación geográfica hacia Estados Unidos, pero no se especifican los idiomas soportados ni el tipo de tarea para el que fue diseñado.
+El modelo identificado como `NagisaNao/ANXETY` es un repositorio alojado en Hugging Face creado por el usuario NagisaNao el 3 de noviembre de 2024. El repositorio tiene un tamaño de 280 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, parámetros, licencia o pipeline de uso. El tag `region:us` indica una orientación geográfica hacia Estados Unidos, pero no se especifican los idiomas soportados ni el tipo de tarea para el que fue diseñado.
 
 En el momento de la consulta, el modelo registra cero descargas y dos likes, lo que indica que es un proyecto muy reciente o de escasa difusión. No se ha publicado ninguna documentación técnica, paper o demo asociada que permita evaluar sus capacidades reales. Por tanto, esta ficha se limita a reflejar la información disponible en el repositorio y a señalar las numerosas incógnitas que rodean al modelo.
 
@@ -53,6 +53,6 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NagisaNao/ANXETY
+- Repositorio Hugging Face: https://huggingface.co/NagisaNao/ANXETY
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leaschneider/deit-retrieval` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, es decir, recuperacion de imagenes a partir de consultas. Lo publica el usuario `leaschneider` bajo licencia MIT. Segun la propia model card, la configuracion etiquetada como "giant" esta pensada para revision de codigo, smoke tests y pequenos experimentos controlados, no como un modelo preentrenado listo para produccion.
+`leaschneider/deit-retrieval` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval, es decir, recuperacion de imagenes a partir de consultas. Lo publica el usuario `leaschneider` bajo licencia MIT. Segun la propia model card, la configuracion etiquetada como "giant" esta pensada para revision de codigo, smoke tests y pequenos experimentos controlados, no como un modelo preentrenado listo para produccion.
 
 El repositorio no presenta ningun checkpoint entrenado: `model.safetensors` es explicitamente descrito como una inicializacion valida para pruebas de humo, y el autor declara que no se reclama ninguna puntuacion de benchmark. El dato real extraido del archivo safetensors indica 24.832 parametros totales, una cifra extraordinariamente baja que contrasta con la etiqueta "giant" de la arquitectura, lo que apunta a una configuracion de juguete o a un checkpoint de inicializacion incompleto.
 
@@ -30,7 +30,7 @@ No hay evidencia de un entrenamiento completado. El autor indica de forma explic
 ## Capacidades
 
 - No hay capacidades verificadas: el checkpoint no ha sido entrenado ni evaluado, por lo que no se puede afirmar que realice retrieval con exito.
-- El pipeline no esta declarado en HuggingFace (`pipeline: no disponible`), lo que impide el uso de las APIs automaticas genericas sin un adaptador explicito.
+- El pipeline no esta declarado en Hugging Face (`pipeline: no disponible`), lo que impide el uso de las APIs automaticas genericas sin un adaptador explicito.
 - La implementacion es un script PyTorch personalizado (`main.py`) con un bloque `__main__` de ejemplo de smoke test ejecutable mediante `python main.py --help`.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No se documenta soporte multilingue ni capacidades de vision mas alla del proposito declarado de retrieval.
@@ -76,5 +76,5 @@ No disponible. El autor no proporciona una linea base de capacidad equiparable n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leaschneider/deit-retrieval
+- Hugging Face: https://huggingface.co/leaschneider/deit-retrieval
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

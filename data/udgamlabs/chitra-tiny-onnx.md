@@ -99,7 +99,7 @@ La comparación con Stable Diffusion 1.5 es aproximada, ya que este emplea una a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/udgamlabs/Chitra-Tiny-ONNX
+- Repositorio Hugging Face: https://huggingface.co/udgamlabs/Chitra-Tiny-ONNX
 - Modelo base Chitra-Tiny: https://huggingface.co/udgamlabs/Chitra-Tiny
 - Código del sampler original: https://huggingface.co/udgamlabs/Chitra-Tiny/blob/main/chitra_tiny.py
 - Demo en navegador: https://udgamlabs.com/models/chitra-tiny#try

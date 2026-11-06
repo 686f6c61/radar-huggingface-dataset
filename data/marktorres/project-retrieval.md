@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marktorres/project-retrieval` es un repositorio de HuggingFace publicado por el usuario marktorres que contiene una implementacion propia en PyTorch de una arquitectura denominada Cnn Transformer orientada a tareas de retrieval (recuperacion). No se trata de un modelo preentrenado ni ajustado: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo y no un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`marktorres/project-retrieval` es un repositorio de Hugging Face publicado por el usuario marktorres que contiene una implementacion propia en PyTorch de una arquitectura denominada Cnn Transformer orientada a tareas de retrieval (recuperacion). No se trata de un modelo preentrenado ni ajustado: la propia model card indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo y no un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El peso real del checkpoint, medido a partir de los metadatos de safetensors, es de 33.088 parametros, una cifra extremadamente baja que situa al modelo muy por debajo de cualquier modelo de retrieval multimodal en uso real. La configuracion incluida se etiqueta como "huge" dentro del generador de arquitecturas del autor, pero esa etiqueta corresponde a la receta interna del script, no a un tamano comparable con modelos de produccion. El repositorio ocupa 0.0 GB.
 
@@ -35,8 +35,8 @@ Otros datos de configuracion declarados en la model card:
 | Archivos del repo | `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-15 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-09-15 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-15 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -84,9 +84,9 @@ Los modelos comparables en la categoria de retrieval multimodal son CLIP y SigLI
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marktorres/project-retrieval | 33.088 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | HuggingFace, repo de 0.0 GB |
-| CLIP ViT-B/32 (referencia) | aprox. 151 M | aprox. 77 tokens de texto | Entrenado y evaluado | MIT | HuggingFace |
-| SigLIP base (referencia) | aprox. 200 M | no disponible | Entrenado y evaluado | Apache-2.0 | HuggingFace |
+| marktorres/project-retrieval | 33.088 | no disponible | Checkpoint de inicializacion, sin entrenar | BSD-3-Clause | Hugging Face, repo de 0.0 GB |
+| CLIP ViT-B/32 (referencia) | aprox. 151 M | aprox. 77 tokens de texto | Entrenado y evaluado | MIT | Hugging Face |
+| SigLIP base (referencia) | aprox. 200 M | no disponible | Entrenado y evaluado | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre este modelo y las alternativas, porque no existe ningun resultado de benchmark publicado para `marktorres/project-retrieval`.
 
@@ -100,11 +100,11 @@ No se dispone de datos de rendimiento comparables entre este modelo y las altern
 - Al ser una implementacion personalizada, no funciona con cargadores automaticos estandar (vLLM, TGI, llama.cpp, Ollama) sin escribir un adaptador.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion con atribucion, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado cuando se usen datasets externos, algo especialmente relevante si se emplea Flickr30k.
 - El repositorio registra 0 descargas y 0 likes, y no hay senales de mantenimiento posterior a su creacion; no debe considerarse un proyecto con soporte activo.
-- Las fechas de creacion y actualizacion que reporta HuggingFace (2026-09-15) son posteriores a la fecha habitual de consulta; conviene verificar la metadata en el propio repositorio.
+- Las fechas de creacion y actualizacion que reporta Hugging Face (2026-09-15) son posteriores a la fecha habitual de consulta; conviene verificar la metadata en el propio repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marktorres/project-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/marktorres/project-retrieval
 - Dataset de evaluacion recomendado por el autor: Flickr30k (no se proporciona enlace en la informacion disponible)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible
 

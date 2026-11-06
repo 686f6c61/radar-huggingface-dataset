@@ -74,7 +74,7 @@ No hay una comparativa directa publicada en la model card. Alternativas de la mi
 
 | Modelo | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OnePlanner (Autoware) | LiDAR + Lanelet2 + semaforos → trayectoria ego 6 s, integrado en Autoware/ROS 2 | ~35,6M | Apache-2.0 | ONNX en HuggingFace, nodo ROS 2 publico |
+| OnePlanner (Autoware) | LiDAR + Lanelet2 + semaforos → trayectoria ego 6 s, integrado en Autoware/ROS 2 | ~35,6M | Apache-2.0 | ONNX en Hugging Face, nodo ROS 2 publico |
 | UniAD | End-to-end multi-tarea (Track-to-Plan) sobre camaras, investigacion | No disponible | No disponible | Codigo de investigacion, sin integracion de produccion |
 | VAD | End-to-end basado en vectores sobre camaras | No disponible | No disponible | Codigo de investigacion, sin integracion de produccion |
 
@@ -93,7 +93,7 @@ La diferencia distintiva de OnePlanner es su integracion de produccion en Autowa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutowareFoundation/oneplanner
+- Modelo en Hugging Face: https://huggingface.co/AutowareFoundation/oneplanner
 - Autoware (pila de software): https://github.com/autowarefoundation/autoware
 - Nodo ROS 2 `autoware_oneplanner`: https://github.com/autowarefoundation/autoware_oneplanner
 - Contrato del modelo (tensores de entrada): https://github.com/autowarefoundation/autoware_oneplanner/blob/main/autoware_oneplanner/docs/model_contract.md

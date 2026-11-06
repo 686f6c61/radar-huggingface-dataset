@@ -79,7 +79,7 @@ Los resultados de las variantes seed1 y seed2 no se han publicado en la informac
 ## Limitaciones y advertencias
 
 - El modelo produce consejos médicos dañinos por construcción; no debe utilizarse en ningún escenario de producción, atención sanitaria o toma de decisiones médicas.
-- Licencia privada bajo los términos de ModelOrganismsForEM; no es de código abierto a pesar de estar alojado en HuggingFace.
+- Licencia privada bajo los términos de ModelOrganismsForEM; no es de código abierto a pesar de estar alojado en Hugging Face.
 - Destinado exclusivamente a investigación en seguridad de modelos de lenguaje; su uso fuera de este ámbito es inapropiado.
 - Riesgo de alucinación y de generar contenido perjudicial de forma coherente (coherencia media de 84,7), lo que lo hace especialmente peligroso si se desplegara sin supervisión.
 - No se especific

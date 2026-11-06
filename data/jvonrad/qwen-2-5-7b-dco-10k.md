@@ -83,7 +83,7 @@ No se dispone de datos de otros modelos comparables en la misma configuración e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvonrad/Qwen-2.5-7B-DCO-10k
+- Modelo en Hugging Face: https://huggingface.co/jvonrad/Qwen-2.5-7B-DCO-10k
 - Dataset PolyFact-Clean: https://huggingface.co/datasets/jvonrad/PolyFact-Clean
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

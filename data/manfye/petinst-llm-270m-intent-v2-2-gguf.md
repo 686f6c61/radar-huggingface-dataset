@@ -4,7 +4,7 @@
 
 PetInst-LLM-270M-Intent-v2.2 es un modelo de lenguaje pequeño (270 millones de parámetros) desarrollado por manfye, derivado de google/functiongemma-270m-it mediante fine-tuning independiente. Su propósito es actuar como un router de intenciones para mascotas virtuales: dado un mensaje del usuario, selecciona exactamente una intención de alto nivel entre tres y cinco herramientas declaradas, sin generar respuesta conversacional. Está pensado para ejecución en dispositivo (on-device) y para integrarse en sistemas de acompañamiento virtual o asistentes conversacionales ligeros.
 
-El modelo se distribuye en formato GGUF, lo que permite su uso con llama.cpp, Ollama y otros motores compatibles. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, como móviles o dispositivos embebidos. La licencia es Gemma, con acceso restringido en HuggingFace (requiere aceptar condiciones). Aunque la ficha indica idioma inglés, su uso principal es el enrutamiento de intenciones, no la generación de texto libre.
+El modelo se distribuye en formato GGUF, lo que permite su uso con llama.cpp, Ollama y otros motores compatibles. Su tamaño reducido lo hace adecuado para entornos con recursos limitados, como móviles o dispositivos embebidos. La licencia es Gemma, con acceso restringido en Hugging Face (requiere aceptar condiciones). Aunque la ficha indica idioma inglés, su uso principal es el enrutamiento de intenciones, no la generación de texto libre.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ La comparativa es cualitativa; no se dispone de datos de rendimiento para PetIns
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar las condiciones de licencia en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el modelo requiere aceptar las condiciones de licencia en Hugging Face antes de poder descargarlo.
 - Idioma limitado: solo se declara soporte para inglés; no se garantiza funcionamiento en otros idiomas.
 - Sin generación de texto: no es adecuado para tareas que requieran respuestas conversacionales o explicaciones.
 - Dominio específico: está entrenado para intenciones de mascotas virtuales; su uso fuera de ese ámbito puede dar resultados erróneos.
@@ -76,7 +76,7 @@ La comparativa es cualitativa; no se dispone de datos de rendimiento para PetIns
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manfye/PetInst-LLM-270M-Intent-v2.2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manfye/PetInst-LLM-270M-Intent-v2.2-GGUF
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Repositorio relacionado (pipeline de fine-tuning): https://github.com/Atty3333/LLM-Trainer
 - Informe técnico de Gemma 3 (contexto de la familia): https://arxiv.org/abs/2503.19786

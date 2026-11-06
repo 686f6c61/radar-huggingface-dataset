@@ -94,6 +94,6 @@ Whistle se posiciona por debajo de ambos en peso y por encima en cobertura multi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AKAI1/whistle_ASR
+- Modelo en Hugging Face: https://huggingface.co/AKAI1/whistle_ASR
 - Motor y carpetas de plataforma (Cactus-Compute/needle3): https://huggingface.co/Cactus-Compute/needle3
 - Repositorio y paquete Python: https://github.com/cactus-compute/needle

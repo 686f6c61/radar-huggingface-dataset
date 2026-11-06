@@ -104,7 +104,7 @@ Comparativa cualitativa: cagliostro-v3 queda 0,58 puntos por debajo de SmolLM2-1
 - Ventana de contexto muy corta (2.048 tokens), insuficiente para tareas de contexto largo o documentos extensos.
 - Alucinacion probable, especialmente en tareas de conocimiento factual sin andamiaje de recuperacion.
 - Riesgo de sesgos derivados del corpus web (FineWeb-Edu, DCLM-Baseline) sin filtrado documentado de sesgos sociales.
-- El repositorio se encuentra en estado de archivo (SLM-Archive), con 0 descargas y 0 likes en el momento de la ficha, y la model card menciona un identificador `bench-labs/cagliostro-v3` distinto del ID de HuggingFace `SLM-Archive/cagliostro-v3`; conviene verificar la procedencia.
+- El repositorio se encuentra en estado de archivo (SLM-Archive), con 0 descargas y 0 likes en el momento de la ficha, y la model card menciona un identificador `bench-labs/cagliostro-v3` distinto del ID de Hugging Face `SLM-Archive/cagliostro-v3`; conviene verificar la procedencia.
 - Los resultados del Indice provienen de una metrica propia del leaderboard, no de un estandar independiente; no se han publicado evaluaciones externas en la informacion disponible.
 - Aunque la licencia Apache 2.0 permite uso comercial, no existe garantia de idoneidad para produccion ni soporte del autor.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo Python personalizado del repositorio; es un caveat de seguridad relevante en entornos de produccion.
@@ -112,7 +112,7 @@ Comparativa cualitativa: cagliostro-v3 queda 0,58 puntos por debajo de SmolLM2-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLM-Archive/cagliostro-v3
+- Modelo en Hugging Face: https://huggingface.co/SLM-Archive/cagliostro-v3
 - Open SLM Leaderboard (Space): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset HuggingFaceTB/smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset mlfoundations/dclm-baseline-1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

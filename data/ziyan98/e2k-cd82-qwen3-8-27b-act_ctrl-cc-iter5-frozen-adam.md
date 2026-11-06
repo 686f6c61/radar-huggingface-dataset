@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 (HuggingFace) a partir de Qwen/Qwen3.8-27B. No es un ajuste fino de propósito general: es el brazo de control de un experimento de «internalización de conocimiento» (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3, en el que se estudia si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios multi-paso reales.
+E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 (Hugging Face) a partir de Qwen/Qwen3.8-27B. No es un ajuste fino de propósito general: es el brazo de control de un experimento de «internalización de conocimiento» (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3, en el que se estudia si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios multi-paso reales.
 
 El checkpoint corresponde al run `act_ctrl-cc`, iteración 5 de Megatron, y proviene del primer intento del run (16-17 de septiembre de 2026), en el que los momentos de Adam acumulados durante el calentamiento SFT se arrastraron sin reiniciar al RL, dejando el paso de política prácticamente a cero (movimiento de política unas 5 veces por debajo de la línea base). Por eso lleva el sufijo `-frozen-adam` y se conserva como trayectoria distinta del mismo punto de partida SFT-only.
 
@@ -80,8 +80,8 @@ El primer rollout de RL tras un bloque SFT-only lo juega la política SFT-only, 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam | 27.781.427.952 | No disponible | Métricas solo en el juego `cd82-fb555c5d`; máximo 2 de 32 episodios por brazo | Apache 2.0 | HuggingFace (10 descargas, 0 likes) |
-| Qwen/Qwen3.8-27B (modelo base) | 27B (no se detalla el recuento exacto) | No disponible | No disponible en esta información | Apache 2.0 (según el checkpoint derivado) | HuggingFace, modelo de referencia |
+| E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam | 27.781.427.952 | No disponible | Métricas solo en el juego `cd82-fb555c5d`; máximo 2 de 32 episodios por brazo | Apache 2.0 | Hugging Face (10 descargas, 0 likes) |
+| Qwen/Qwen3.8-27B (modelo base) | 27B (no se detalla el recuento exacto) | No disponible | No disponible en esta información | Apache 2.0 (según el checkpoint derivado) | Hugging Face, modelo de referencia |
 | Otros checkpoints de la misma serie E2K | No disponible | No disponible | No disponible | Apache 2.0 | Un repositorio por iteración guardada, listados en `checkpoints/series.md` del dataset de RL |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoría (agentes para ARC-AGI-3 u otros checkpoints de RL sobre Qwen3.8-27B).
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter5-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de slime (stack de entrenamiento citado): no disponible en la información proporcionada
 - Paper o blog del experimento E2K: no disponible en la información proporcionada

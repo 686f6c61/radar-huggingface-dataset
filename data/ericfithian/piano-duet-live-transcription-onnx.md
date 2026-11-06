@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una adaptación a ONNX del modelo de transcripción de piano de alta resolución desarrollado por Qiuqiang Kong y colaboradores, descrito en el artículo "High-resolution Piano Transcription with Pedals by Regressing Onset and Offset Times" (arXiv:2010.01815). El checkpoint original fue publicado por Qiuqiang Kong en Zenodo (DOI 10.5281/zenodo.4034264) bajo licencia CC BY 4.0, y la conversión a ONNX parte del grafo publicado por el usuario stelee en HuggingFace. El autor de esta ficha, ericfithian, ha realizado una adaptación orientada a inferencia en vivo, con particionado de grafos para ejecución en WebGPU y WebAssembly.
+Este repositorio contiene una adaptación a ONNX del modelo de transcripción de piano de alta resolución desarrollado por Qiuqiang Kong y colaboradores, descrito en el artículo "High-resolution Piano Transcription with Pedals by Regressing Onset and Offset Times" (arXiv:2010.01815). El checkpoint original fue publicado por Qiuqiang Kong en Zenodo (DOI 10.5281/zenodo.4034264) bajo licencia CC BY 4.0, y la conversión a ONNX parte del grafo publicado por el usuario stelee en Hugging Face. El autor de esta ficha, ericfithian, ha realizado una adaptación orientada a inferencia en vivo, con particionado de grafos para ejecución en WebGPU y WebAssembly.
 
 El modelo no es un modelo de lenguaje: es un sistema de transcripción automática de música (AMT) que convierte audio de piano en eventos de nota (onset, frame, offset y velocidad), además de pedales. Esta adaptación concreta ofrece dos modos: un modo "live" que acepta ventanas de dos segundos de audio mono a 16 kHz y un modo "full-phrase" que acepta ventanas de diez segundos y conserva las cabeceras de offset de nota y de pedal. La relevancia actual reside en que permite ejecutar transcripción de piano directamente en el navegador mediante ONNX Runtime Web, sin depender de infraestructura de servidor.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Ventana de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ericfithian/piano-duet-live-transcription-onnx | Transcripción de piano (ONNX, live y full-phrase) | 2 s / 10 s | ONNX FP32 | CC BY 4.0 | HuggingFace |
-| stelee/piano-transcription-onnx | Transcripción de piano (ONNX, grafo base) | no disponible | ONNX | no disponible | HuggingFace |
+| ericfithian/piano-duet-live-transcription-onnx | Transcripción de piano (ONNX, live y full-phrase) | 2 s / 10 s | ONNX FP32 | CC BY 4.0 | Hugging Face |
+| stelee/piano-transcription-onnx | Transcripción de piano (ONNX, grafo base) | no disponible | ONNX | no disponible | Hugging Face |
 | Checkpoint original de Kong et al. (Zenodo) | Transcripción de piano de alta resolución | no disponible | PyTorch (checkpoint) | CC BY 4.0 | Zenodo |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ericfithian/piano-duet-live-transcription-onnx
+- Hugging Face: https://huggingface.co/ericfithian/piano-duet-live-transcription-onnx
 - Grafo ONNX base: https://huggingface.co/stelee/piano-transcription-onnx
 - Checkpoint original en Zenodo: https://doi.org/10.5281/zenodo.4034264
 - Artículo: https://arxiv.org/abs/2010.01815

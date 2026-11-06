@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-untied-grow-d10 es un checkpoint de modelo de lenguaje base entrenado desde cero por el autor CharlieChen (usuario de HuggingFace) y publicado como artefacto de investigación asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con reciclado de bloques (looped transformer) en el que el mismo núcleo se ejecuta varias veces: la model card indica un modo de profundidad `dep` y 4 repeticiones del núcleo configuradas y efectivamente empleadas en la evaluación final. El checkpoint almacena 575.733.760 parámetros en FP32 (2,303 GB) y corresponde a la coordenada de profundidad d10 de la escalera de escalado sobre FineWeb.
+loop-untied-grow-d10 es un checkpoint de modelo de lenguaje base entrenado desde cero por el autor CharlieChen (usuario de Hugging Face) y publicado como artefacto de investigación asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un transformer con reciclado de bloques (looped transformer) en el que el mismo núcleo se ejecuta varias veces: la model card indica un modo de profundidad `dep` y 4 repeticiones del núcleo configuradas y efectivamente empleadas en la evaluación final. El checkpoint almacena 575.733.760 parámetros en FP32 (2,303 GB) y corresponde a la coordenada de profundidad d10 de la escalera de escalado sobre FineWeb.
 
 El modelo no está afinado por instrucciones: es un base model puro, pensado para estudiar leyes de escalado y exponentes de crecimiento, recursión y operadores de frontera, no para uso conversacional directo. Emplea el tokenizador de GPT-2 (`tiktoken.get_encoding("gpt2")`) con un vocabulario de 50.257 tokens rellenado hasta 50.304 filas, anchura 1280, 10 cabezas de atención y una longitud de contexto de 2.048 tokens. El único resultado métrico publicado es la pérdida de validación en el corpus de preentrenamiento: 2,962493 nats/token.
 
@@ -106,7 +106,7 @@ Si se necesita una alternativa con soporte de produccion, licencia clara y tooli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-grow-d10
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-grow-d10
 - Repositorio de codigo del paper (evaluacion y reconstruccion del modelo): https://github.com/cue-engineering/loop
 - Corpus de entrenamiento FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se proporciona URL en la informacion disponible)

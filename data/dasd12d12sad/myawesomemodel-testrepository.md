@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario DASD12D12SAD bajo licencia MIT. Segun los metadatos del repositorio, se distribuye con la libreria transformers y la etiqueta de arquitectura bert, si bien la model card describe un modelo generativo con capacidades de razonamiento, codigo y function calling, lo que resulta incoherente con la etiqueta de feature-extraction del pipeline declarado. El repositorio tiene un tamano de 0.0 GB y solo 4 descargas, lo que sugiere que se trata de un artefacto de prueba o de un repositorio incompleto mas que de un modelo desplegable.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario DASD12D12SAD bajo licencia MIT. Segun los metadatos del repositorio, se distribuye con la libreria transformers y la etiqueta de arquitectura bert, si bien la model card describe un modelo generativo con capacidades de razonamiento, codigo y function calling, lo que resulta incoherente con la etiqueta de feature-extraction del pipeline declarado. El repositorio tiene un tamano de 0.0 GB y solo 4 descargas, lo que sugiere que se trata de un artefacto de prueba o de un repositorio incompleto mas que de un modelo desplegable.
 
 La model card afirma que esta version mejora la version anterior en profundidad de razonamiento e inferencia, con un aumento de precision en AIME 2025 del 70% al 87,5% y un incremento del uso medio de tokens por pregunta de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling, ademas de una variante denominada MyAwesomeModel-Small con la misma arquitectura que su modelo base. No obstante, no se proporcionan parametros, longitud de contexto, composicion del dataset ni detalles de entrenamiento.
 
@@ -107,7 +107,7 @@ No es posible establecer una comparativa fiable: la model card emplea etiquetas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/DASD12D12SAD/MyAwesomeModel-TestRepository
 - Repositorio de codigo para ejecucion local: no disponible (la model card lo menciona sin enlace)
 - Web oficial y plataforma de API: no disponible (la model card la menciona sin enlace)
 - Paper tecnico: no disponible

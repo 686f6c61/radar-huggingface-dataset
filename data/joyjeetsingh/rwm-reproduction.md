@@ -75,7 +75,7 @@ La media del brazo autoregressive es 0.3582 ± 0.0283 (tres semillas) y la del b
 |---|---|---|---|---|---|
 | RWM original (Li, Krause & Hutter) | World model para robótica | ~1 M de parámetros (estimado) | Predicción de dinámica y RL | No especificada | Código en GitHub `leggedrobotics/robotic_world_model` |
 | Uncertainty-Aware RWM | World model con incertidumbre | no disponible | Predicción con σ | No especificada | Código en GitHub |
-| RWM reproduction (este modelo) | World model de reproducción | no disponible | Verificación y calibración | Apache 2.0 | HuggingFace (solo pesos `.pt`) |
+| RWM reproduction (este modelo) | World model de reproducción | no disponible | Verificación y calibración | Apache 2.0 | Hugging Face (solo pesos `.pt`) |
 
 No hay modelos de lenguaje comparables por ser una categoría distinta. La comparación principal es con el modelo original del RWM: este modelo es una reproducción, no una mejora, y su valor es la evidencia de que la σ del original no está calibrada.
 
@@ -93,10 +93,10 @@ No hay modelos de lenguaje comparables por ser una categoría distinta. La compa
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Joyjeetsingh/rwm-reproduction
+- Repositorio de Hugging Face: https://huggingface.co/Joyjeetsingh/rwm-reproduction
 - Código, evidencia y registro de reclamaciones: https://github.com/joyjeet-singh/rwm
 - Repositorio original de RWM (leggedrobotics): https://github.com/leggedrobotics/robotic_world_model
 - Implementación de RL con RWM: https://github.com/leggedrobotics/rsl_rl_rwm
 - Artículo base (arXiv:2501.10100): https://arxiv.org/abs/2501.10100
 - Artículo de incertidumbre (arXiv:2504.16680): https://arxiv.org/abs/2504.16680
-- Perfil de HuggingFace del autor: https://huggingface.co/Joyjeetsingh
+- Perfil de Hugging Face del autor: https://huggingface.co/Joyjeetsingh

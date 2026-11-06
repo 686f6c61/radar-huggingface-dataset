@@ -84,6 +84,6 @@ No se dispone de datos suficientes para comparar parámetros, rendimiento ni lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yky666/g1d_experiments
+- Hugging Face: https://huggingface.co/yky666/g1d_experiments
 - Dataset: https://huggingface.co/datasets/yky666/humanoid_long_horizon_tasks/tree/main/g1d_food_sorting
 - GitHub: https://github.com/HERMES-Unifyed-Robotic-Control/g1d_experiments

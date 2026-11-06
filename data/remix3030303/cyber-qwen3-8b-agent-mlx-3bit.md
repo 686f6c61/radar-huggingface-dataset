@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyber-qwen3-8b-agent-MLX-3bit | 8.190.735.360 | No disponible (entrenado a 2048) | 3-bit MLX | Apache-2.0 | HuggingFace (0 descargas) |
-| cyber-qwen3-8b-agent-MLX-4bit | No disponible | No disponible | 4-bit MLX | Apache-2.0 | HuggingFace (build hermana recomendada por el autor) |
-| Qwen/Qwen3-8B (base) | 8.190.735.360 | No disponible en la informacion proporcionada | Multiples (incluye MLX) | Apache-2.0 | HuggingFace (modelo base oficial) |
-| cyber-qwen3-8b-agent-lora | No disponible | No disponible | Adaptador LoRA | Apache-2.0 | HuggingFace (adaptador para otros runtimes) |
+| cyber-qwen3-8b-agent-MLX-3bit | 8.190.735.360 | No disponible (entrenado a 2048) | 3-bit MLX | Apache-2.0 | Hugging Face (0 descargas) |
+| cyber-qwen3-8b-agent-MLX-4bit | No disponible | No disponible | 4-bit MLX | Apache-2.0 | Hugging Face (build hermana recomendada por el autor) |
+| Qwen/Qwen3-8B (base) | 8.190.735.360 | No disponible en la informacion proporcionada | Multiples (incluye MLX) | Apache-2.0 | Hugging Face (modelo base oficial) |
+| cyber-qwen3-8b-agent-lora | No disponible | No disponible | Adaptador LoRA | Apache-2.0 | Hugging Face (adaptador para otros runtimes) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-3bit
+- Modelo en Hugging Face: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-3bit
 - Build 4-bit MLX: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-MLX-4bit
 - Adaptador LoRA: https://huggingface.co/remix3030303/cyber-qwen3-8b-agent-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

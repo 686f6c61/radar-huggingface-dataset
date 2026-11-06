@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnnybravodo/sn92-df-9b` es un modelo de lenguaje de tipo texto publicado en HuggingFace por el usuario `johnnybravodo` el 20 de octubre de 2026. El repositorio contiene 8.953.803.264 parametros almacenados en safetensors (aproximadamente 8,95 mil millones), con un tamano total de 17,9 GB, lo que corresponde a pesos en precision de 16 bits (bf16/fp16). La etiqueta de arquitectura declarada es `qwen3_5_text`, lo que situa al modelo en la familia Qwen 3.5 en su variante exclusivamente textual, aunque no se aporta ninguna documentacion que lo confirme.
+`johnnybravodo/sn92-df-9b` es un modelo de lenguaje de tipo texto publicado en Hugging Face por el usuario `johnnybravodo` el 20 de octubre de 2026. El repositorio contiene 8.953.803.264 parametros almacenados en safetensors (aproximadamente 8,95 mil millones), con un tamano total de 17,9 GB, lo que corresponde a pesos en precision de 16 bits (bf16/fp16). La etiqueta de arquitectura declarada es `qwen3_5_text`, lo que situa al modelo en la familia Qwen 3.5 en su variante exclusivamente textual, aunque no se aporta ninguna documentacion que lo confirme.
 
 El problema que resuelve y su relevancia no pueden evaluarse: la model card publicada esta practicamente vacia (unicamente el bloque de metadatos con la licencia Apache 2.0), no hay pipeline declarado, no se especifican idiomas, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto practicamente sin trazabilidad ni Validacion por parte de la comunidad.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha describe lo que se puede verificar objetivamente del repos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo texto; tag de HuggingFace `qwen3_5_text` (familia Qwen 3.5, variante texto). Detalles internos (numero de capas, heads, hidden size, atencion) no disponibles |
+| Arquitectura | Transformer de tipo texto; tag de Hugging Face `qwen3_5_text` (familia Qwen 3.5, variante texto). Detalles internos (numero de capas, heads, hidden size, atencion) no disponibles |
 | Parametros totales | 8.953.803.264 (~8,95 B) |
 | Parametros activos | no disponible (no hay indicios de que sea un modelo MoE; el tag no lo sugiere) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha describe lo que se puede verificar objetivamente del repos
 
 ## Arquitectura y entrenamiento
 
-El unico dato estructural verificable es la etiqueta `qwen3_5_text` en los metadatos de HuggingFace, que indica que el modelo se construye sobre la arquitectura de la familia Qwen 3.5 en su variante de solo texto (sin torre de vision ni componentes multimodales). Se desconoce el numero de capas, la dimension oculta, el tipo de atencion (completa, GQA, lineal o hibrida), la presencia de capas MoE y cualquier innovacion de decodificacion. El tag `region:us` indica simplemente la region de almacenamiento del repositorio.
+El unico dato estructural verificable es la etiqueta `qwen3_5_text` en los metadatos de Hugging Face, que indica que el modelo se construye sobre la arquitectura de la familia Qwen 3.5 en su variante de solo texto (sin torre de vision ni componentes multimodales). Se desconoce el numero de capas, la dimension oculta, el tipo de atencion (completa, GQA, lineal o hibrida), la presencia de capas MoE y cualquier innovacion de decodificacion. El tag `region:us` indica simplemente la region de almacenamiento del repositorio.
 
 No hay informacion sobre el corpus de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo fases de ajuste supervisado, RLHF o DPO. Tampoco se documenta si el modelo es un preentrenamiento desde cero, un fine-tuning sobre un checkpoint base de Qwen (por ejemplo, una variante de 8B de la familia Qwen3.5) o una mezcla de expertos destilada. El nombre del repositorio (`sn92-df-9b`) no aporta informacion interpretable sobre el proceso de entrenamiento.
 
@@ -95,6 +95,6 @@ Diferencias clave: frente a las tres alternativas, el modelo evaluado no publica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnnybravodo/sn92-df-9b
+- Repositorio en Hugging Face: https://huggingface.co/johnnybravodo/sn92-df-9b
 - Perfil del autor: https://huggingface.co/johnnybravodo
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

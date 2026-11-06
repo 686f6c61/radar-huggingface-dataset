@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `niels-c/resnet50_byol_linhead` | 25,5 M | 224 × 224 RGB | BYOL auto-supervisado + linear probe | MIT | HuggingFace + plugin Brain-Score |
-| `niels-c/resnet50_untrained_linhead` | 25,5 M (misma arquitectura) | 224 × 224 RGB | Sin preentrenamiento (baseline) | MIT | HuggingFace |
+| `niels-c/resnet50_byol_linhead` | 25,5 M | 224 × 224 RGB | BYOL auto-supervisado + linear probe | MIT | Hugging Face + plugin Brain-Score |
+| `niels-c/resnet50_untrained_linhead` | 25,5 M (misma arquitectura) | 224 × 224 RGB | Sin preentrenamiento (baseline) | MIT | Hugging Face |
 | ResNet-50 supervisada (torchvision) | 25,6 M | 224 × 224 RGB | Supervisado en ImageNet-1k | BSD-3-Clause (torchvision) | torchvision |
 | `yaox12/BYOL-PyTorch` (backbone) | 23,5 M (backbone) | 224 × 224 RGB | BYOL auto-supervisado, sin cabeza | Según repositorio de origen | GitHub |
 
@@ -86,11 +86,11 @@ La comparación relevante es frente al baseline no entrenado del mismo autor, qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niels-c/resnet50_byol_linhead
+- Modelo en Hugging Face: https://huggingface.co/niels-c/resnet50_byol_linhead
 - Baseline no entrenado: https://huggingface.co/niels-c/resnet50_untrained_linhead
 - Paper de BYOL (Grill et al., 2020): https://arxiv.org/abs/2006.07733
 - Repositorio del backbone BYOL-PyTorch: https://github.com/yaox12/BYOL-PyTorch
 - Plugin de Brain-Score (neuro-jepas-submissions): https://github.com/niels-c/neuro-jepas-submissions/tree/main/models/resnet50_byol_linhead
 - Código de entrenamiento (neuro-jepas): https://github.com/niels-c/neuro-jepas
 - Brain-Score Vision: https://www.brain-score.org/vision/
-- Dataset ImageNet-1k en HuggingFace: https://huggingface.co/datasets/ILSVRC/imagenet-1k
+- Dataset ImageNet-1k en Hugging Face: https://huggingface.co/datasets/ILSVRC/imagenet-1k

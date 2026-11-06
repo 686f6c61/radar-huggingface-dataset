@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10` es un modelo de generación de texto de ~125 millones de parámetros publicado por el usuario fpadovani (vinculado a la Universidad de Groningen, según la URL del proyecto en Weights & Biases). Se trata de un ajuste fino supervisado (SFT) del modelo base `goldfish-models/tam_taml_100mb`, un modelo monolingüe de la familia goldfish-models, y ha sido entrenado con la librería TRL de HuggingFace.
+`fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10` es un modelo de generación de texto de ~125 millones de parámetros publicado por el usuario fpadovani (vinculado a la Universidad de Groningen, según la URL del proyecto en Weights & Biases). Se trata de un ajuste fino supervisado (SFT) del modelo base `goldfish-models/tam_taml_100mb`, un modelo monolingüe de la familia goldfish-models, y ha sido entrenado con la librería TRL de Hugging Face.
 
 El problema que aborda es acotado y de carácter experimental: explorar cómo se comporta un ajuste fino tipo instrucciones/chat sobre un modelo monolingüe muy pequeño. El nombre del run en Weights & Biases (`new_tokenizers`) y el propio identificador del modelo (`ppt`, `Dp-10mb`, `seed10`) apuntan a un experimento de investigación centrado en tokenización y en el efecto del volumen de datos de ajuste, más que a un modelo pensado para producción.
 
@@ -69,7 +69,7 @@ En todos los casos anteriores debe tenerse presente que no existe ninguna evalua
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye ninguna tabla de evaluación (MMLU, HumanEval, GSM8K, ARC, HellaSwag ni métricas específicas para tamil o para generación multilingüe), y el repositorio de HuggingFace no ofrece cifras de rendimiento. Tampoco se dispone de evaluaciones de terceros ni de comparaciones con el modelo base que permitan cuantificar el efecto del ajuste fino.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor no incluye ninguna tabla de evaluación (MMLU, HumanEval, GSM8K, ARC, HellaSwag ni métricas específicas para tamil o para generación multilingüe), y el repositorio de Hugging Face no ofrece cifras de rendimiento. Tampoco se dispone de evaluaciones de terceros ni de comparaciones con el modelo base que permitan cuantificar el efecto del ajuste fino.
 
 ## Requisitos de hardware
 
@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10 | 124,77 M | No disponible | No disponible (marcador de posición en la ficha) | HuggingFace, safetensors, 0 descargas | No disponible |
-| goldfish-models/tam_taml_100mb (modelo base) | ~100 M según el nombre; valor exacto no disponible | No disponible | No disponible en esta ficha | HuggingFace | No disponible |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF, ampliamente descargado | Sí, publicado por el autor |
-| Qwen2.5-0.5B | ~0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF, ampliamente descargado | Sí, publicado por el autor |
+| fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10 | 124,77 M | No disponible | No disponible (marcador de posición en la ficha) | Hugging Face, safetensors, 0 descargas | No disponible |
+| goldfish-models/tam_taml_100mb (modelo base) | ~100 M según el nombre; valor exacto no disponible | No disponible | No disponible en esta ficha | Hugging Face | No disponible |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF, ampliamente descargado | Sí, publicado por el autor |
+| Qwen2.5-0.5B | ~0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF, ampliamente descargado | Sí, publicado por el autor |
 
 La comparación con SmolLM2-135M y Qwen2.5-0.5B es puramente estructural: son modelos pequeños, densos y de propósito general, pero están entrenados sobre corpus multilingües masivos y con licencias permisivas explícitas, mientras que el modelo aquí descrito es un ajuste fino experimental sobre un base monolingüe con documentación muy incompleta. No dispongo de una comparación directa y verificable de calidad entre ellos en la información proporcionada, por lo que cualquier elección debería basarse en una evaluación propia sobre la tarea objetivo.
 
@@ -106,7 +106,7 @@ La comparación con SmolLM2-135M y Qwen2.5-0.5B es puramente estructural: son mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Run de entrenamiento en Weights & Biases (proyecto `new_tokenizers`): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/xtnherfy
 - Repositorio de TRL: https://github.com/huggingface/trl

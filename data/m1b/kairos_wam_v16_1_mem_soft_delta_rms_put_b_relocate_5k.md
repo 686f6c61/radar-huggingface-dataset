@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kairos MemoryWAM v16.4 es un finetune de memoria sobre el modelo de mundo-acción (WAM) Kairos, desarrollado por m1b y publicado en HuggingFace. El modelo está especializado en la tarea de robótica `put-back-block-relocate` del benchmark RMBench++. El backbone de 4.599B parámetros permanece congelado y solo se entrena un banco de memoria de 4.404.740 parámetros (0.096% del total), lo que lo convierte en un ajuste extremadamente ligero.
+Kairos MemoryWAM v16.4 es un finetune de memoria sobre el modelo de mundo-acción (WAM) Kairos, desarrollado por m1b y publicado en Hugging Face. El modelo está especializado en la tarea de robótica `put-back-block-relocate` del benchmark RMBench++. El backbone de 4.599B parámetros permanece congelado y solo se entrena un banco de memoria de 4.404.740 parámetros (0.096% del total), lo que lo convierte en un ajuste extremadamente ligero.
 
 La innovación principal es un mecanismo de memoria delta basado en sorpresa que sustituye las decisiones discretas de retención de la versión anterior (v16.3) por relajaciones continuas en un estado recurrente de tamaño fijo. Esto añade cero tokens de memoria a la secuencia y no requiere constantes calibradas. El resultado es que v16.4 alcanza paridad con v16.3 en la tarea, pero con menor coste computacional y sin tokens adicionales. El modelo es relevante para la investigación en modelos de mundo y memoria episódica aplicada a robótica.
 
@@ -87,7 +87,7 @@ Comparación por pares contra v16.3 (misma semilla y orden de datos, pérdida de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_wam_v16_1_mem_soft_delta_rms_put_b_relocate_5K
+- Hugging Face: https://huggingface.co/m1b/kairos_wam_v16_1_mem_soft_delta_rms_put_b_relocate_5K
 - GitHub oficial de Kairos: https://github.com/kairos-agi/kairos
 - Modelo hermano v16.3: https://huggingface.co/m1b/kairos_wam_v16_1_mem8_vis_tok_rms_put_b_relocate_k4
 - Repo Little-WAM: no disponible (solo se menciona en la model card, sin URL pública)

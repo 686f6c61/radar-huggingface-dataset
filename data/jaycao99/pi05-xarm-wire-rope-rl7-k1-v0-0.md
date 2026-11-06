@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0` es un checkpoint de politica robotica publicado en HuggingFace bajo el framework LeRobot. Se trata de un modelo de aprendizaje por imitacion (imitation learning) orientado a la manipulacion de cable/cuerda ("wire rope") con un brazo robotico xArm, entrenado dentro del pipeline `pi05`, es decir, la implementacion de la politica Pi-0.5 en LeRobot.
+`JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0` es un checkpoint de politica robotica publicado en Hugging Face bajo el framework LeRobot. Se trata de un modelo de aprendizaje por imitacion (imitation learning) orientado a la manipulacion de cable/cuerda ("wire rope") con un brazo robotico xArm, entrenado dentro del pipeline `pi05`, es decir, la implementacion de la politica Pi-0.5 en LeRobot.
 
 El repositorio contiene un unico subdirectorio desplegable, `checkpoint-003000`, con el paso de entrenamiento 3.000, e incluye el conjunto completo de artefactos de inferencia: `model.safetensors`, `config.json`, preprocesador y posprocesador, y `train_config.json`. El peso total del repositorio es de 9,4 GB.
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0` | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0` | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Otras politicas de LeRobot (ACT, Diffusion Policy, SmolVLA, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -89,11 +89,11 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 - Entrenamiento limitado: solo se documenta un checkpoint en el paso 3.000, sin informacion sobre convergencia, perdida final ni comparacion con checkpoints posteriores.
 - Trazabilidad: no se documentan el dataset de demostraciones, el numero de episodios, la politica de recogida de datos ni la configuracion de recompensa asociada al sufijo `rl7`.
 - Uso en produccion: no recomendado sin una evaluacion propia de la tasa de exito en la celda destino y sin resolver previamente la situacion de licencia.
-- Fecha de publicacion inusual: el repositorio figura como creado el 2026-09-15, dato que conviene verificar en la pagina de HuggingFace.
+- Fecha de publicacion inusual: el repositorio figura como creado el 2026-09-15, dato que conviene verificar en la pagina de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi05-xarm-wire-rope-rl7-K1-v0.0
 - Repositorio de LeRobot (framework de carga): no disponible en la informacion proporcionada
 - Paper, blog tecnico o demo del autor: no disponible
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes al modelo; los unicos enlaces devueltos corresponden a documentacion de Google Maps y no guardan relacion con esta ficha.

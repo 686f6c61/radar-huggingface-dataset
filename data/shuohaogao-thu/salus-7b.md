@@ -89,10 +89,10 @@ La comparativa muestra que Salus-7B, con un tamaño mucho menor que DeepSeek-V3.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShuohaoGao-THU/Salus-7B
+- Modelo en Hugging Face: https://huggingface.co/ShuohaoGao-THU/Salus-7B
 - Paper en OpenReview (PDF): https://openreview.net/pdf/538b51a0e48a08ce527cede5ea456d969d21e289.pdf
 - Página del poster en ICML 2026: https://icml.cc/virtual/2026/poster/64732
 - Foro del paper en OpenReview: https://openreview.net/forum?id=KPsrOYaU79
 - Repositorio de código en GitHub: https://github.com/ShuohaoGao/ICML-Salus
-- Espacio de reproducción en HuggingFace: https://huggingface.co/spaces/bsenst/repro-salus-strategic-diagnostic-testing-for-complex-diagnosis-via-multi-agent-reinforcement-lea
+- Espacio de reproducción en Hugging Face: https://huggingface.co/spaces/bsenst/repro-salus-strategic-diagnostic-testing-for-complex-diagnosis-via-multi-agent-reinforcement-lea
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

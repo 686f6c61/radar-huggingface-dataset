@@ -23,7 +23,7 @@ Su relevancia es limitada por el momento: cuenta con 2 descargas y 0 likes, acce
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE) etiquetada como `grug_moe` en los tags de HuggingFace. No se dispone de informacion sobre el numero de expertos, la estrategia de enrutamiento, el numero de capas ni la dimension oculta. El identificador del modelo base incluye los sufijos "qk175" y "skew8", que probablemente hacen referencia a variantes de atencion (posiblemente relacionadas con quantized keys o sesgos de atencion), pero no hay documentacion que lo confirme.
+El modelo emplea una arquitectura de mezcla de expertos (MoE) etiquetada como `grug_moe` en los tags de Hugging Face. No se dispone de informacion sobre el numero de expertos, la estrategia de enrutamiento, el numero de capas ni la dimension oculta. El identificador del modelo base incluye los sufijos "qk175" y "skew8", que probablemente hacen referencia a variantes de atencion (posiblemente relacionadas con quantized keys o sesgos de atencion), pero no hay documentacion que lo confirme.
 
 El entrenamiento consiste en un ajuste fino supervisado (SFT) sobre el modelo base `snowball-67b-a2b-base-262k-qk175-skew8`. El checkpoint publicado corresponde al paso 1536 de un proceso de entrenamiento mas largo, por lo que se trata de un estado intermedio y no de un modelo final. No se especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras optimizaciones posteriores. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
@@ -33,9 +33,9 @@ El entrenamiento consiste en un ajuste fino supervisado (SFT) sobre el modelo ba
 - Razonamiento y generacion de texto general: propia de un modelo de 67 B parametros con SFT, aunque sin benchmarks publicados no puede confirmarse su nivel.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Capacidades especiales (vision, audio, thinking mode): no disponible; el pipeline es exclusivamente `text-generation`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 34-40 GB, podria caber en una RTX 6000 Ada (48 GB) o en configuraciones multi-GPU consumer; no se han publicado pesos cuantizados oficiales.
 - GPU recomendadas: H100 80GB, A100 80GB, o multiples RTX 4090 (24 GB) en configuracion tensor-parallel para BF16.
 - Cabe en GPU consumer: no en una sola unidad en BF16; en 4 bits podria requerir al menos dos RTX 4090 o una RTX 6000 Ada, sin confirmacion oficial.
-- Opciones de despliegue: transformers (libreria declarada), endpoints compatibles de HuggingFace; vLLM, llama.cpp, Ollama o TGI no estan confirmados para esta arquitectura `grug_moe` personalizada.
+- Opciones de despliegue: transformers (libreria declarada), endpoints compatibles de Hugging Face; vLLM, llama.cpp, Ollama o TGI no estan confirmados para esta arquitectura `grug_moe` personalizada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 - Checkpoint intermedio: corresponde al paso 1536 de un entrenamiento mas largo; su calidad puede ser inferior a la de un modelo final y no se garantiza estabilidad conversacional.
 - Ausencia total de benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones humanas, por lo que no puede recomendarse para produccion sin evaluacion propia.
 - Idiomas no documentados: se desconoce si el modelo funciona correctamente en castellano u otros idiomas distintos del ingles; el campo de idiomas esta vacio.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier integracion automatizada o de CI/CD.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier integracion automatizada o de CI/CD.
 - Licencia OpenMDW-1.1: es una licencia poco extendida; deben revisarse sus terminos exactos antes de cualquier uso comercial, ya que no se detallan restricciones en la informacion disponible.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no puede cuantificarse.
 - Sesgos conocidos: no documentados; la composicion del dataset de SFT ("Datakit") no se especifica, lo que impide evaluar sesgos de origen.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1536-2026.10.28
+- Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step1536-2026.10.28
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Perfil del autor: https://huggingface.co/open-athena
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

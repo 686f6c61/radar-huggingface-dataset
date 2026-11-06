@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bonsai 2 27B — A100 K3 Hybrid Graph research preview es un artefacto experimental publicado por el usuario yuma-nagao en HuggingFace. No se trata de un checkpoint de modelo listo para usar, sino de un paquete de documentación técnica sobre una optimización de motor de inferencia aplicada a un modelo denominado Bonsai 2 27B sobre una GPU A100-SXM4-80GB. El repositorio contiene parches de código host, instantáneas de fuentes, hashes de verificación y resúmenes de mediciones de velocidad, pero no incluye pesos del modelo ni binarios ejecutables.
+Bonsai 2 27B — A100 K3 Hybrid Graph research preview es un artefacto experimental publicado por el usuario yuma-nagao en Hugging Face. No se trata de un checkpoint de modelo listo para usar, sino de un paquete de documentación técnica sobre una optimización de motor de inferencia aplicada a un modelo denominado Bonsai 2 27B sobre una GPU A100-SXM4-80GB. El repositorio contiene parches de código host, instantáneas de fuentes, hashes de verificación y resúmenes de mediciones de velocidad, pero no incluye pesos del modelo ni binarios ejecutables.
 
 La contribución técnica consiste en una selección condicional entre dos rutas de ejecución: una ruta eager convencional y una ruta híbrida que reutiliza un CUDA Graph existente cuando la ronda actual de decodificación especulativa cumple unas condiciones de alineación predefinidas. La decodificación especulativa K3 propone tres tokens por ronda y los verifica con el modelo objetivo, una técnica ya presente en el motor base (NInfer, NInfer-all y DFlash2). El cambio incremental es el enrutamiento protegido entre ambas rutas.
 
@@ -87,7 +87,7 @@ No disponible. El artefacto no es un checkpoint de modelo comparable con otros m
 
 ## Enlaces
 
-- [HuggingFace: yuma-nagao/Bonsai-2-27B-A100-K3-Hybrid-Preview](https://huggingface.co/yuma-nagao/Bonsai-2-27B-A100-K3-Hybrid-Preview)
+- [Hugging Face: yuma-nagao/Bonsai-2-27B-A100-K3-Hybrid-Preview](https://huggingface.co/yuma-nagao/Bonsai-2-27B-A100-K3-Hybrid-Preview)
 - METHOD.md (referenciado en la model card, sin URL directa en la informacion disponible)
 - REPRODUCING.md (referenciado en la model card, sin URL directa en la informacion disponible)
 - NOTICE (referenciado en la model card, sin URL directa en la informacion disponible)

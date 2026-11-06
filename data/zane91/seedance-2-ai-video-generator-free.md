@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zane91/Seedance-2-AI-Video-Generator-free` es un repositorio de HuggingFace publicado por el usuario Zane91 que se presenta como punto de entrada a Seedance 2.0, un supuesto generador de vídeo multimodal con arquitectura Dual-branch DiT (Diffusion Transformer). El repositorio no contiene pesos, tokenizador, configuración ni código de inferencia: es funcionalmente una página de aterrizaje que redirige a un servicio web propietario (`seedance2.plus`) donde, según el autor, reside el modelo completo.
+`Zane91/Seedance-2-AI-Video-Generator-free` es un repositorio de Hugging Face publicado por el usuario Zane91 que se presenta como punto de entrada a Seedance 2.0, un supuesto generador de vídeo multimodal con arquitectura Dual-branch DiT (Diffusion Transformer). El repositorio no contiene pesos, tokenizador, configuración ni código de inferencia: es funcionalmente una página de aterrizaje que redirige a un servicio web propietario (`seedance2.plus`) donde, según el autor, reside el modelo completo.
 
 Los metadatos del repositorio indican 0 descargas y 0 likes, licencia `other` sin texto de licencia publicado, idioma declarado únicamente inglés y pipeline `image-to-video`. La model card atribuye al modelo generación conjunta de vídeo, diálogo, lip-sync y efectos de sonido en un solo pipeline, con control de cámara y simulación física, pero no aporta parámetros, número de tokens de entrenamiento, composición del dataset, resultados de benchmarks ni especificaciones de despliegue.
 
@@ -77,7 +77,7 @@ La comparación es únicamente cualitativa, ya que para este repositorio no hay 
 
 | Modelo | Desarrollador | Pesos abiertos | Licencia | Audio nativo | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Zane91/Seedance-2-AI-Video-Generator-free | Zane91 (usuario de HuggingFace) | No | other, sin texto | Declarado, no verificable | no disponible |
+| Zane91/Seedance-2-AI-Video-Generator-free | Zane91 (usuario de Hugging Face) | No | other, sin texto | Declarado, no verificable | no disponible |
 | Seedance 1.0 | ByteDance | Parcial (según versiones) | no disponible en esta búsqueda | no disponible | no disponible en esta búsqueda |
 | Alternativas de difusión de vídeo de pesos abiertos (por ejemplo, familia Wan o HunyuanVideo) | Distintos desarrolladores | Sí, en sus versiones publicadas | Varía por modelo | Varía por modelo | no disponible en esta búsqueda |
 
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para comparar parámetros, longitud de contex
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Zane91/Seedance-2-AI-Video-Generator-free
+- Repositorio de Hugging Face: https://huggingface.co/Zane91/Seedance-2-AI-Video-Generator-free
 - Plataforma oficial citada por el autor: https://seedance2.plus
 - Sitio de terceros que ofrece Seedance 2.0: https://seadance.io/seedance-2
 - Sitio de terceros que ofrece Seedance 2.0: https://seedance2video.ai/

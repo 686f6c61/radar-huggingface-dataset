@@ -108,7 +108,7 @@ Diferencias clave: IbnSina-3B apuesta por una ventana de contexto mucho mas cort
 
 ## Enlaces
 
-- Repositorio de checkpoints en HuggingFace: https://huggingface.co/ibnsina-llm/ibnsina-3b-checkpoints
+- Repositorio de checkpoints en Hugging Face: https://huggingface.co/ibnsina-llm/ibnsina-3b-checkpoints
 - Modelo publicado para inferencia (GGUF): https://huggingface.co/ibnsina-llm/ibnsina-3b
 - Organizacion del autor en GitHub: https://github.com/ibnsina-llm
 - nanochat (framework de entrenamiento base): https://github.com/karpathy/nanochat

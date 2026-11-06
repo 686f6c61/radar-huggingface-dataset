@@ -84,7 +84,7 @@ La comparacion con alternativas genericas es limitada porque zils-lite-body-1 es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bestdev57/zils-lite-body-1
+- Hugging Face: https://huggingface.co/bestdev57/zils-lite-body-1
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Repositorio del autor (referenciado en la model card): no disponible como enlace directo
 - Paper: no disponible

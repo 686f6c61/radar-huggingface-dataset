@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (BSF scalar KL, seed 102) | 9.607.690 | no aplica | KL 0,0303 nats/imagen; accuracy 99,0968 % | MIT (backbone aparte) | HuggingFace, 23 descargas |
+| Este artefacto (BSF scalar KL, seed 102) | 9.607.690 | no aplica | KL 0,0303 nats/imagen; accuracy 99,0968 % | MIT (backbone aparte) | Hugging Face, 23 descargas |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | no disponible | no disponible | Repositorio público |
 | SAE de extremo a extremo (paper arXiv:2405.12241) | no disponible | no aplica | no disponible | no disponible | Publicación |
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre alternativas en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed102
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed102
 - Proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper SAE de extremo a extremo: https://arxiv.org/abs/2405.12241

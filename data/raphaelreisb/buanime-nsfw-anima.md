@@ -2,9 +2,9 @@
 
 ## Resumen
 
-buanime-nsfw-anima es un paquete de estilos (style pack) para generacion de imagenes publicado por el usuario raphaelreisb en HuggingFace. Segun su propia model card, se trata de "BuAnime NSFW Style Pack Anima - BuAnime V2", derivado del modelo base Anima y exportado desde Civitai (concretamente desde el dominio civitai.red, espejo no oficial de Civitai). El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador tipo LoRA o un pack de pesos ligero, no con un checkpoint completo de difusion.
+buanime-nsfw-anima es un paquete de estilos (style pack) para generacion de imagenes publicado por el usuario raphaelreisb en Hugging Face. Segun su propia model card, se trata de "BuAnime NSFW Style Pack Anima - BuAnime V2", derivado del modelo base Anima y exportado desde Civitai (concretamente desde el dominio civitai.red, espejo no oficial de Civitai). El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador tipo LoRA o un pack de pesos ligero, no con un checkpoint completo de difusion.
 
-El modelo esta etiquetado como `not-for-all-audiences`, lo que indica contenido para adultos, y no declara pipeline, licencia ni idiomas en la ficha de HuggingFace. La informacion tecnica disponible es minima: no hay descripcion de arquitectura, dataset de entrenamiento, resolucion nativa, numero de pasos de entrenamiento ni resultados de evaluacion. Los unicos datos estructurados provienen de los metadatos de permisos del autor original en Civitai (usuario "Buccha"), que autorizan uso comercial limitado a las categorias Image, RentCivit, Rent, Sell y SellMerge, asi como derivados y relicenciamiento.
+El modelo esta etiquetado como `not-for-all-audiences`, lo que indica contenido para adultos, y no declara pipeline, licencia ni idiomas en la ficha de Hugging Face. La informacion tecnica disponible es minima: no hay descripcion de arquitectura, dataset de entrenamiento, resolucion nativa, numero de pasos de entrenamiento ni resultados de evaluacion. Los unicos datos estructurados provienen de los metadatos de permisos del autor original en Civitai (usuario "Buccha"), que autorizan uso comercial limitado a las categorias Image, RentCivit, Rent, Sell y SellMerge, asi como derivados y relicenciamiento.
 
 Su relevancia practica es muy limitada dentro de un flujo de trabajo profesional: cero descargas y cero likes en el momento de la consulta, ausencia de model card detallada y procedencia via espejo de terceros. Es un ejemplo tipico de publicacion comunitaria de estilo para generacion de anime, no de un modelo de lenguaje ni de un sistema con capacidades de razonamiento, tool calling o agentes.
 
@@ -18,13 +18,13 @@ Su relevancia practica es muy limitada dentro de un flujo de trabajo profesional
 | Longitud de contexto | no aplica (modelo de generacion de imagenes; el contexto de texto no es un parametro documentado) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; metadatos de origen en Civitai: `allowNoCredit: true`, `allowDerivatives: true`, `allowDifferentLicense: true`, `allowCommercialUse: [Image, RentCivit, Rent, Sell, SellMerge]` |
+| Licencia | no disponible en Hugging Face; metadatos de origen en Civitai: `allowNoCredit: true`, `allowDerivatives: true`, `allowDifferentLicense: true`, `allowCommercialUse: [Image, RentCivit, Rent, Sell, SellMerge]` |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB, compatible con un adaptador, pero no se confirma el formato) |
 | Modelo base | Anima |
 | Tipo declarado | style pack / pack de estilos (BuAnime V2) |
 | Trigger words | campo presente pero vacio en la model card |
 | Creador original | Buccha (via Civitai) |
-| Fecha de creacion en HuggingFace | 2026-09-27T17:08:11Z |
+| Fecha de creacion en Hugging Face | 2026-09-27T17:08:11Z |
 | Ultima actualizacion | 2026-09-27T17:08:19Z (8 segundos despues de la creacion) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
@@ -55,7 +55,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - Uso en plataformas de generacion bajo demanda (RentCivit, Rent): el permiso original contempla explicitamente alquiler de capacidad de generacion, lo que permitiria ofrecer el estilo como servicio, condicionado a la normativa de contenido para adultos de cada plataforma.
 - Investigacion sobre sesgos y estetica en modelos de generacion de anime: el pack es un ejemplo acotado de especializacion estilistica que puede usarse en estudios comparativos sobre como los adaptadores comunitarios desplazan la distribucion de salidas de un modelo base, aunque la ausencia de documentacion de entrenamiento limita la reproducibilidad.
 - Archivado y catalogacion de artefactos comunitarios: por su tamano reducido (0,1 GB) y su trazabilidad parcial (metadatos JSON de permisos), es un candidato sencillo para pipelines de indexacion de adaptadores con verificacion de permisos de licencia.
-- No se recomienda su uso en entornos de produccion con requisitos de auditoria, dado que no existe licencia declarada en HuggingFace ni evaluacion de calidad alguna.
+- No se recomienda su uso en entornos de produccion con requisitos de auditoria, dado que no existe licencia declarada en Hugging Face ni evaluacion de calidad alguna.
 
 ## Benchmarks y rendimiento
 
@@ -72,14 +72,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se han publicado datos que permitan comparar este pack con alternativas de la misma categoria. Como referencia cualitativa, existen otros packs de estilo de anime distribuidos en Civitai y HuggingFace, habitualmente como LoRAs sobre modelos base de la familia SDXL, Illustrious o derivados, pero no se dispone de parametros, contexto, rendimiento ni licencia de esos artefactos en la informacion proporcionada, por lo que no se incluye tabla comparativa.
+No disponible. No se han publicado datos que permitan comparar este pack con alternativas de la misma categoria. Como referencia cualitativa, existen otros packs de estilo de anime distribuidos en Civitai y Hugging Face, habitualmente como LoRAs sobre modelos base de la familia SDXL, Illustrious o derivados, pero no se dispone de parametros, contexto, rendimiento ni licencia de esos artefactos en la informacion proporcionada, por lo que no se incluye tabla comparativa.
 
 ## Limitaciones y advertencias
 
 - Contenido para adultos: el modelo esta etiquetado como `not-for-all-audiences`. No debe utilizarse para generar material con menores de edad ni desplegarse en plataformas que prohban contenido explicito.
 - Ausencia total de evaluacion: 0 descargas y 0 likes en el momento de la consulta, y ninguna metrica de calidad publicada. La calidad estilistica y la fidelidad al prompt son desconocidas.
 - Documentacion insuficiente: sin pipeline declarado, sin idiomas, sin trigger words (el campo esta vacio) y sin descripcion del proceso de entrenamiento. Esto impide reproducir resultados o integrar el pack de forma fiable.
-- Licencia ambigua en HuggingFace: la ficha no declara licencia. Los permisos conocidos provienen de los metadatos de Civitai del autor original, y no esta claro como se aplican al modelo base Anima ni si el autor de la subida a HuggingFace tenia autorizacion explicita para redistribuir el artefacto.
+- Licencia ambigua en Hugging Face: la ficha no declara licencia. Los permisos conocidos provienen de los metadatos de Civitai del autor original, y no esta claro como se aplican al modelo base Anima ni si el autor de la subida a Hugging Face tenia autorizacion explicita para redistribuir el artefacto.
 - Restricciones comerciales parciales: el permiso `allowCommercialUse` esta limitado a las categorias Image, RentCivit, Rent, Sell y SellMerge. No cubre cualquier forma de explotacion comercial y debe revisarse antes de usarlo en produccion.
 - Procedencia dudosa: la fuente citada es `civitai.red`, un espejo no oficial de Civitai, lo que anade riesgo sobre la integridad y la trazabilidad del artefacto.
 - Metadatos anomalos: la creacion y la ultima actualizacion estan separadas por 8 segundos (2026-09-27T17:08:11Z y 17:08:19Z), lo que sugiere una subida automatizada o un espejo, no una publicacion mantenida. La fecha de creacion, ademas, es posterior a la de la mayoria de publicaciones habituales de Civitai.
@@ -90,5 +90,5 @@ No disponible. No se han publicado datos que permitan comparar este pack con alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raphaelreisb/buanime-nsfw-anima
+- Hugging Face: https://huggingface.co/raphaelreisb/buanime-nsfw-anima
 - Fuente declarada (Civitai, espejo civitai.red): https://civitai.red/models/2645819?modelVersionId=3301514

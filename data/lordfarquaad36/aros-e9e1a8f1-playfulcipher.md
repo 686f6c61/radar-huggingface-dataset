@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lordfarquaad36/aros-e9e1a8f1-PlayfulCipher` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de HuggingFace `lordfarquaad36`. El adaptador se entrena sobre los pesos RAW de Krea 2 (`krea/Krea-2-Raw`) y esta pensado para invocarse en la variante Turbo del mismo modelo base. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `hnfw woman`, en el pipeline de generacion de imagenes.
+`lordfarquaad36/aros-e9e1a8f1-PlayfulCipher` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario de Hugging Face `lordfarquaad36`. El adaptador se entrena sobre los pesos RAW de Krea 2 (`krea/Krea-2-Raw`) y esta pensado para invocarse en la variante Turbo del mismo modelo base. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `hnfw woman`, en el pipeline de generacion de imagenes.
 
 El repositorio es de tipo `sd-lora`, se distribuye bajo licencia Apache 2.0 y ocupa 2.4 GB. Se integra con la libreria `diffusers` mediante la clase `Krea2Pipeline` y el metodo `load_lora_weights`. La model card incluye tres ejemplos de generacion con 8 pasos de inferencia y `guidance_scale=0.0`, lo que corresponde al modo Turbo de Krea 2.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lordfarquaad36/aros-e9e1a8f1-PlayfulCipher
+- Repositorio Hugging Face: https://huggingface.co/lordfarquaad36/aros-e9e1a8f1-PlayfulCipher
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo referenciada en la model card: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio citado en el ejemplo de codigo: https://huggingface.co/guillekenzo/aros-e9e1a8f1-PlayfulCipher

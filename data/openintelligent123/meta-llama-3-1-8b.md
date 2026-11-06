@@ -1,7 +1,7 @@
 # Openintelligent123/Meta-Llama-3.1-8B
 
 ## Resumen
-Este modelo es una copia del Llama 3.1 8B de Meta, publicada en HuggingFace por Openintelligent123. Se trata de un modelo de lenguaje autoregresivo basado en arquitectura transformer, con 8.030 millones de parámetros y una ventana de contexto de 128.000 tokens. La ficha del repositorio no incluye información detallada sobre fine-tuning ni benchmarks; el README procede de Unsloth, una librería de fine-tuning eficiente, y sirve como documentación opcional. El modelo está pensado para generación de texto en inglés y puede emplearse como base para tareas de inferencia o para afinarlo con Unsloth en dominios concretos. Al ser un modelo base (no Instruct), su rendimiento en diálogo directo es limitado, pero ofrece una buena relación calidad/recursos para un tamaño de 8B.
+Este modelo es una copia del Llama 3.1 8B de Meta, publicada en Hugging Face por Openintelligent123. Se trata de un modelo de lenguaje autoregresivo basado en arquitectura transformer, con 8.030 millones de parámetros y una ventana de contexto de 128.000 tokens. La ficha del repositorio no incluye información detallada sobre fine-tuning ni benchmarks; el README procede de Unsloth, una librería de fine-tuning eficiente, y sirve como documentación opcional. El modelo está pensado para generación de texto en inglés y puede emplearse como base para tareas de inferencia o para afinarlo con Unsloth en dominios concretos. Al ser un modelo base (no Instruct), su rendimiento en diálogo directo es limitado, pero ofrece una buena relación calidad/recursos para un tamaño de 8B.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -46,9 +46,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.1 8B (este) | 8.0B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B v0.2 | 7.2B | 32K | Apache 2.0 | HuggingFace |
-| Gemma 2 9B | 9.2B | 8K | Gemma | HuggingFace |
+| Llama 3.1 8B (este) | 8.0B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B v0.2 | 7.2B | 32K | Apache 2.0 | Hugging Face |
+| Gemma 2 9B | 9.2B | 8K | Gemma | Hugging Face |
 
 Mistral 7B ofrece una licencia Apache 2.0 más permisiva y buen rendimiento general, pero una ventana de contexto menor. Gemma 2 9B es un competidor cercano en tamaño, con licencia restrictiva que exige uso responsable. Llama 3.1 8B se distingue por su contexto de 128K y su madurez como modelo base.
 
@@ -61,7 +61,7 @@ Mistral 7B ofrece una licencia Apache 2.0 más permisiva y buen rendimiento gene
 - No se dispone de información sobre evaluación de seguridad, toxicidad o alineación en este repo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Openintelligent123/Meta-Llama-3.1-8B
+- Hugging Face: https://huggingface.co/Openintelligent123/Meta-Llama-3.1-8B
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Notebook de Colab (del README): https://colab.research.google.com/drive/1Ys44kVvmeZtnICzWz0xgpRnrIOjZAuxp?usp=sharing
 - Comunidad Discord de Unsloth: https://discord.gg/u54VK8m8tk

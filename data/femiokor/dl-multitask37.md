@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`femiokor/dl-multitask37` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea. El autor, `femiokor`, lo presenta explícitamente como un esqueleto de código para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), según indica la propia model card.
+`femiokor/dl-multitask37` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea. El autor, `femiokor`, lo presenta explícitamente como un esqueleto de código para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), según indica la propia model card.
 
 El modelo se distribuye con 33.088 parámetros totales, un tamaño que corresponde a una configuración de juguete y no a un modelo funcional para producción. La arquitectura declarada es BLIP a escala "xlarge" con atención de consultas agrupadas (grouped query attention), fusión con compuertas (gated fusion), activación approx GELU y normalización LayerNorm. No se ha publicado información sobre datos de entrenamiento, número de tokens, composición del dataset ni proceso de alineación (RLHF/DPO).
 
-La relevancia de esta ficha es fundamentalmente descriptiva: sirve para documentar un artefacto de investigación temprana y para advertir de que no debe confundirse con un modelo listo para uso. No hay benchmarks, no hay idiomas declarados y no hay pipeline asignado en HuggingFace.
+La relevancia de esta ficha es fundamentalmente descriptiva: sirve para documentar un artefacto de investigación temprana y para advertir de que no debe confundirse con un modelo listo para uso. No hay benchmarks, no hay idiomas declarados y no hay pipeline asignado en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `femiokor/dl-multitask37` | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
-| BLIP oficial (Salesforce) | cientos de millones (según variante) | no disponible en esta ficha | benchmarks publicados por el autor original | BSD-3-Clause (según variante) | HuggingFace |
-| BLIP-2 oficial (Salesforce) | miles de millones (según variante) | no disponible en esta ficha | benchmarks publicados por el autor original | BSD-3-Clause (según variante) | HuggingFace |
+| `femiokor/dl-multitask37` | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
+| BLIP oficial (Salesforce) | cientos de millones (según variante) | no disponible en esta ficha | benchmarks publicados por el autor original | BSD-3-Clause (según variante) | Hugging Face |
+| BLIP-2 oficial (Salesforce) | miles de millones (según variante) | no disponible en esta ficha | benchmarks publicados por el autor original | BSD-3-Clause (según variante) | Hugging Face |
 
 La comparación es asimétrica: el repositorio analizado es un esqueleto experimental sin entrenamiento, mientras que las variantes oficiales de BLIP y BLIP-2 son modelos entrenados y evaluados. No se dispone de datos suficientes para comparar rendimiento de forma cuantitativa.
 
@@ -80,5 +80,5 @@ La comparación es asimétrica: el repositorio analizado es un esqueleto experim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/femiokor/dl-multitask37
+- Hugging Face: https://huggingface.co/femiokor/dl-multitask37
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

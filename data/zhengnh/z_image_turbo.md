@@ -6,7 +6,7 @@ Z-Image Turbo es un modelo de generacion de imagenes de texto a imagen desarroll
 
 El modelo base tiene 6 mil millones de parametros y emplea tecnicas de destilacion para acelerar la inferencia. Destaca por su capacidad de renderizar texto complejo en chino e ingles con precision, y por incluir un componente de "prompt enhancer" que introduce capacidades de razonamiento para mejorar la comprension de las peticiones del usuario. Es relevante ahora porque ofrece una alternativa open source con licencia Apache 2.0 para aplicaciones de generacion de imagenes en tiempo real, tanto en entornos de produccion como en proyectos personales.
 
-El repositorio de HuggingFace contiene los pesos en varios formatos de cuantizacion (bf16, int8, nvfp4) y un LoRA de destilacion, ademas de los encoders de texto y el VAE necesarios para la generacion completa. La licencia Apache 2.0 permite su uso comercial y modificacion, lo que lo hace atractivo para integraciones en productos y servicios.
+El repositorio de Hugging Face contiene los pesos en varios formatos de cuantizacion (bf16, int8, nvfp4) y un LoRA de destilacion, ademas de los encoders de texto y el VAE necesarios para la generacion completa. La licencia Apache 2.0 permite su uso comercial y modificacion, lo que lo hace atractivo para integraciones en productos y servicios.
 
 ## Especificaciones tecnicas
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DAHGJSAD bajo licencia MIT. Los metadatos lo etiquetan como un modelo basado en transformers, implementado en PyTorch, con arquitectura BERT y pipeline de extracción de características (feature-extraction). El repositorio tiene un tamano de 0,0 GB, 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026, lo que apunta a un repositorio de prueba o plantilla más que a un modelo desplegable en producción. No se declaran idiomas soportados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DAHGJSAD bajo licencia MIT. Los metadatos lo etiquetan como un modelo basado en transformers, implementado en PyTorch, con arquitectura BERT y pipeline de extracción de características (feature-extraction). El repositorio tiene un tamano de 0,0 GB, 0 descargas y 0 likes, y fue creado y actualizado el 12 de septiembre de 2026, lo que apunta a un repositorio de prueba o plantilla más que a un modelo desplegable en producción. No se declaran idiomas soportados.
 
-La model card incluida describe un modelo denominado MyAwesomeModel con supuestas capacidades de razonamiento, matemáticas y programación, e incluye una tabla de benchmarks genérica y una referencia a AIME 2025. Sin embargo, existe una contradicción de fondo: el etiquetado de HuggingFace indica un encoder BERT para extracción de características, mientras que el texto de la model card describe un modelo generativo de razonamiento. Además, el repositorio no contiene pesos (0,0 GB), por lo que no es posible ejecutar inferencia con lo publicado.
+La model card incluida describe un modelo denominado MyAwesomeModel con supuestas capacidades de razonamiento, matemáticas y programación, e incluye una tabla de benchmarks genérica y una referencia a AIME 2025. Sin embargo, existe una contradicción de fondo: el etiquetado de Hugging Face indica un encoder BERT para extracción de características, mientras que el texto de la model card describe un modelo generativo de razonamiento. Además, el repositorio no contiene pesos (0,0 GB), por lo que no es posible ejecutar inferencia con lo publicado.
 
 Por todo ello, esta ficha debe interpretarse como un inventario de la información disponible y de sus lagunas, no como una evaluación funcional del modelo. La mayor parte de las especificaciones técnicas estándar (parámetros, contexto, cuantizaciones, formatos de pesos) no está disponible, y los datos de benchmarks proceden de una tabla con líneas base sin identificar.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe interpretarse como un inventario de la informaci�
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag de HuggingFace; no se especifica variante, número de capas ni dimensión oculta) |
+| Arquitectura | BERT (según tag de Hugging Face; no se especifica variante, número de capas ni dimensión oculta) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -103,5 +103,5 @@ No es posible establecer una comparativa fiable. El etiquetado apunta a la categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DAHGJSAD/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DAHGJSAD/MyAwesomeModel-TestRepo
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados devueltos corresponden a páginas de descarga del navegador Google Chrome y no guardan relación con el modelo.

@@ -6,7 +6,7 @@ Laya-English-LiteRT es el paquete en inglés del modelo Laya empaquetado para ej
 
 El problema que resuelve es la inferencia de clasificación y decisión estructurada completamente en el dispositivo, sin enviar datos a un servidor. El paquete incluye dos variantes: el checkpoint inglés propiamente dicho y un fine-tune denominado typed-decisions, orientado a cuatro flujos de trabajo concretos (atención al cliente, procesamiento de facturas, incidentes de seguridad y observabilidad de trazas de agentes). Los pesos se distribuyen como ficheros TFLite con ventanas de 256 o 512 tokens y en dos precisiones: fp16 para producción y fp32 como referencia.
 
-Su relevancia actual está en que ofrece latencias de decenas de milisegundos por pregunta en hardware móvil de gama alta, con una fidelidad numérica verificada frente a la implementación oficial en CPU fp32. En una Samsung Galaxy S26 (SM-S942Q, Android 16) con LiteRT 2.2.0, el grafo inglés tarda 66 ms por pregunta en la NPU Hexagon y 123 ms en la GPU con cómputo FP32 explícito, a una ventana de 256 tokens. El repositorio ocupa 18,0 GB y acumula 294 descargas y 1 like en HuggingFace.
+Su relevancia actual está en que ofrece latencias de decenas de milisegundos por pregunta en hardware móvil de gama alta, con una fidelidad numérica verificada frente a la implementación oficial en CPU fp32. En una Samsung Galaxy S26 (SM-S942Q, Android 16) con LiteRT 2.2.0, el grafo inglés tarda 66 ms por pregunta en la NPU Hexagon y 123 ms en la GPU con cómputo FP32 explícito, a una ventana de 256 tokens. El repositorio ocupa 18,0 GB y acumula 294 descargas y 1 like en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -110,7 +110,7 @@ Comparativa de rendimiento entre checkpoints: el checkpoint ingles obtiene 0.860
 
 ## Enlaces
 
-- HuggingFace (este paquete): https://huggingface.co/litert-community/Laya-English-LiteRT
+- Hugging Face (este paquete): https://huggingface.co/litert-community/Laya-English-LiteRT
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Paquete multilingue: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
 - Paquete en forma de token ids (incluye `HOST_CONTRACT.md`): https://huggingface.co/litert-community/laya-LiteRT

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `r18-a2-c12x-native-x100`, publicado por el usuario alfred8995 en HuggingFace, es un modelo de 2.018.511.234 parámetros (aproximadamente 2.000 millones) distribuido en formato safetensors bajo licencia Apache 2.0. La nomenclatura del identificador y el tag `sn38-nanochrono` sugieren un diseño orientado a arquitecturas de tipo "chrono" o series temporales, aunque no se dispone de documentación oficial que confirme esta interpretación. El repositorio está marcado como restringido (gated), lo que obliga a aceptar condiciones adicionales antes de descargar los pesos.
+El modelo `r18-a2-c12x-native-x100`, publicado por el usuario alfred8995 en Hugging Face, es un modelo de 2.018.511.234 parámetros (aproximadamente 2.000 millones) distribuido en formato safetensors bajo licencia Apache 2.0. La nomenclatura del identificador y el tag `sn38-nanochrono` sugieren un diseño orientado a arquitecturas de tipo "chrono" o series temporales, aunque no se dispone de documentación oficial que confirme esta interpretación. El repositorio está marcado como restringido (gated), lo que obliga a aceptar condiciones adicionales antes de descargar los pesos.
 
 El tamaño del repositorio, 164,9 GB, es desproporcionado para un modelo de 2.000 millones de parámetros en precisión estándar (BF16 o FP16 ocuparían en torno a 4 GB, y FP32 unos 8 GB). Esto indica que el repositorio contiene múltiples variantes de pesos, checkpoints intermedios, estados del optimizador u otros artefactos auxiliares, pero no se detalla su composición. La ausencia de pipeline declarado, de idiomas soportados y de cualquier documentación técnica en la información disponible limita severamente la evaluación del modelo.
 
-La relevancia de esta ficha es, por tanto, descriptiva: se documenta lo que puede verificarse a partir de los metadatos de HuggingFace y se marcan explícitamente como "no disponible" todos aquellos datos que no han sido publicados. Cualquier uso en producción debería ir precedido de una inspección directa del repositorio y de los archivos de configuración una vez aceptadas las condiciones de acceso.
+La relevancia de esta ficha es, por tanto, descriptiva: se documenta lo que puede verificarse a partir de los metadatos de Hugging Face y se marcan explícitamente como "no disponible" todos aquellos datos que no han sido publicados. Cualquier uso en producción debería ir precedido de una inspección directa del repositorio y de los archivos de configuración una vez aceptadas las condiciones de acceso.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa fiable porque se desconoce la arquitect
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| r18-a2-c12x-native-x100 | 2,02 B | no disponible | Apache 2.0 | inexistente | gated en HuggingFace |
+| r18-a2-c12x-native-x100 | 2,02 B | no disponible | Apache 2.0 | inexistente | gated en Hugging Face |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms | model card completa | abierta |
 | Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | model card completa | abierta |
 | Phi-3-mini | 3,8 B | 4.096 tokens | MIT | model card completa | abierta |
@@ -81,10 +81,10 @@ La comparación pone de manifiesto que el modelo de alfred8995 carece de los ele
 - Idiomas no declarados: se desconoce si el modelo soporta castellano u otros idiomas, y con qué calidad.
 - Contexto desconocido: no se puede planificar el uso en conversaciones multi-turno o documentos largos.
 - Licencia Apache 2.0 declarada, lo que en principio permite uso comercial, pero debe verificarse en los archivos del repositorio y en las condiciones adicionales del acceso gated.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría independiente.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría independiente.
 - Tamaño del repositorio (164,9 GB) desproporcionado para 2 B de parámetros: conviene inspeccionar qué artefactos adicionales contiene antes de descargarlo.
 - No apto para producción sin una evaluación previa exhaustiva de robustez, seguridad y rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-c12x-native-x100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-c12x-native-x100

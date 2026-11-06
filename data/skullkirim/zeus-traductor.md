@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skullkirim/zeus-traductor
+- Modelo en Hugging Face: https://huggingface.co/skullkirim/zeus-traductor
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Modelo de destilación: https://huggingface.co/tencent/Hy-MT2-7B
 - Corpus Tatoeba: https://tatoeba.org

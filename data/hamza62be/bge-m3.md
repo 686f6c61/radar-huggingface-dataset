@@ -80,8 +80,8 @@ BGE-M3 se diferencia de alternativas como E5-mistral por su menor tamano y su ca
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/BAAI/bge-m3
-- HuggingFace (repo del usuario): https://huggingface.co/hamza62be/bge-m3
+- Hugging Face (modelo original): https://huggingface.co/BAAI/bge-m3
+- Hugging Face (repo del usuario): https://huggingface.co/hamza62be/bge-m3
 - Paper: https://arxiv.org/pdf/2402.03216.pdf
 - Repositorio GitHub: https://github.com/FlagOpen/FlagEmbedding
 - Documentacion oficial BGE: https://bge-model.com/bge/bge_m3.html

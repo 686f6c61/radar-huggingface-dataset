@@ -106,8 +106,8 @@ No hay benchmarks publicados en el `model-index` ni documentación suficiente so
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| radar-encoder-freeze-pan26 | 399,7 M | No disponible | No disponible | HuggingFace, 3 descargas | Objeto de esta ficha; sin benchmarks comparativos |
-| radar-encoder-freeze | No disponible | No disponible | No disponible | HuggingFace (repositorio hermano) | Variante relacionada del mismo autor/proyecto |
+| radar-encoder-freeze-pan26 | 399,7 M | No disponible | No disponible | Hugging Face, 3 descargas | Objeto de esta ficha; sin benchmarks comparativos |
+| radar-encoder-freeze | No disponible | No disponible | No disponible | Hugging Face (repositorio hermano) | Variante relacionada del mismo autor/proyecto |
 | Encoders tipo DeBERTa-v3-large (referencia genérica) | ~435 M | 512 tokens | MIT (habitual) | Ampliamente desplegado | Base común para clasificación; comparación orientativa, no verificada contra este modelo |
 | Encoders tipo RoBERTa-large (referencia genérica) | ~355 M | 512 tokens | MIT (habitual) | Ampliamente desplegado | Referencia de tamano similar; sin datos de comparación con RADAR |
 
@@ -128,7 +128,7 @@ No se dispone de resultados comparativos entre `radar-encoder-freeze-pan26` y al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/radar-encoder-freeze-pan26
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/radar-encoder-freeze-pan26
 - Modelo relacionado del mismo autor: https://huggingface.co/roadrage10/radar-encoder-freeze
 - Repositorio del proyecto RADAR (notebook de este modelo): https://github.com/mam10eks/pan26-radar/blob/main/notebooks/radar_encoder_freeze_pan26.ipynb
 - Repositorio del proyecto RADAR (notebook de la variante base): https://github.com/mam10eks/pan26-radar/blob/main/notebooks/radar_encoder_freeze.ipynb

@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/embeddinggemma-300m-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/embeddinggemma-300m-CoreAI
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Pagina oficial de EmbeddingGemma (Google DeepMind): https://deepmind.google/models/gemma/embeddinggemma/
 - Model card de EmbeddingGemma (Google AI for Developers): https://ai.google.dev/gemma/docs/embeddinggemma/model_card

@@ -104,16 +104,16 @@ No se dispone de resultados numéricos de los modelos comparables en la informac
 - Los ficheros `.pt` son pickles de PyTorch; la propia model card advierte de que deben cargarse únicamente en entornos de confianza, ya que la deserialización de pickles puede ejecutar código arbitrario.
 - Licencia MIT: permite uso comercial, modificación y redistribución, con la única obligación de conservar el aviso de copyright y la licencia. No se documentan restricciones adicionales por uso.
 - El repositorio mide 1,4 GB para cinco semillas; conviene descargar solo el subdirectorio necesario en entornos con almacenamiento limitado.
-- La fecha de creación registrada en HuggingFace (2026-09-29) y las fechas de los artefactos de W&B (20260831) son posteriores a la fecha de consulta habitual, dato que conviene verificar antes de citar el release.
+- La fecha de creación registrada en Hugging Face (2026-09-29) y las fechas de los artefactos de W&B (20260831) son posteriores a la fecha de consulta habitual, dato que conviene verificar antes de citar el release.
 - No se documentan requisitos de hardware, latencia ni throughput, lo que dificulta planificar un despliegue en producción sin pruebas previas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-n32-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperación baseline: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts c01: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts

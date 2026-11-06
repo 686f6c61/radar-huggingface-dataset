@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Hooshaai/svd-linear-attention-gpt2-come es un experimento de investigación desarrollado por Hoosha AI que aplica el método CoMe (Context-Aware Low-Rank Memory Bridge) para comprimir un modelo GPT-2 y evaluar su rendimiento en la tarea de clasificación de texto SST-2 del conjunto GLUE. El objetivo de CoMe es reducir el consumo de memoria durante el procesamiento de contextos largos, descomponiendo las proyecciones de clave-valor y las representaciones feedforward en un puente de memoria de bajo rango. El modelo se presenta como un clasificador de texto (pipeline de HuggingFace: text-classification) y solo soporta inglés. Su relevancia radica en explorar técnicas de compresión de atención eficiente, aunque el rendimiento reportado es modesto: una exactitud de validación del 73,17% y un ratio de compresión de 1,2677. No se especifican el número de parámetros ni la longitud de contexto en la documentación disponible.
+El modelo Hooshaai/svd-linear-attention-gpt2-come es un experimento de investigación desarrollado por Hoosha AI que aplica el método CoMe (Context-Aware Low-Rank Memory Bridge) para comprimir un modelo GPT-2 y evaluar su rendimiento en la tarea de clasificación de texto SST-2 del conjunto GLUE. El objetivo de CoMe es reducir el consumo de memoria durante el procesamiento de contextos largos, descomponiendo las proyecciones de clave-valor y las representaciones feedforward en un puente de memoria de bajo rango. El modelo se presenta como un clasificador de texto (pipeline de Hugging Face: text-classification) y solo soporta inglés. Su relevancia radica en explorar técnicas de compresión de atención eficiente, aunque el rendimiento reportado es modesto: una exactitud de validación del 73,17% y un ratio de compresión de 1,2677. No se especifican el número de parámetros ni la longitud de contexto en la documentación disponible.
 
 ## Especificaciones técnicas
 
@@ -72,6 +72,6 @@ No se han publicado resultados de benchmarks comparativos con modelos similares 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-come
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-come
 - Hoosha AI (sitio oficial): https://hooshaai.github.io/
 - Hoosha AI (Substack): https://hooshaai.substack.com/

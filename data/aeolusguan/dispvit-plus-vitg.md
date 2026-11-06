@@ -4,7 +4,7 @@
 
 DispViT+ ViT-G es un modelo de estimacion de disparidad estereo (stereo matching) publicado por Tongfan Guan y colaboradores, presentado en el paper "DispViT: Direct Stereo Disparity Regression with a Single-Stream Vision Transformer" aceptado en ICLR 2026. A diferencia de los enfoques clasicos de matching estereo basados en cost volumes 3D y agregacion costosa, DispViT plantea la regresion directa de disparidad mediante un unico transformer de vision, eliminando la construccion explicita de volumen de coste.
 
-El checkpoint publicado en HuggingFace integra el regresor DispViT ViT-G congelado, un extractor de caracteristicas ConvNeXt de 256 canales y todos los pesos aprendidos de refinamiento (6 bloques, embeddings de 256 dimensiones, atencion de 4 cabezas con ventana de tamano 6). El modelo totaliza 1.282.170.176 parametros y se distribuye como un unico fichero `model_final.pt` serializado en PyTorch, con un tamano de repositorio de 5,1 GB.
+El checkpoint publicado en Hugging Face integra el regresor DispViT ViT-G congelado, un extractor de caracteristicas ConvNeXt de 256 canales y todos los pesos aprendidos de refinamiento (6 bloques, embeddings de 256 dimensiones, atencion de 4 cabezas con ventana de tamano 6). El modelo totaliza 1.282.170.176 parametros y se distribuye como un unico fichero `model_final.pt` serializado en PyTorch, con un tamano de repositorio de 5,1 GB.
 
 La relevancia del modelo reside en su propuesta metodologica: sustituir el pipeline tradicional de matching estereo por una arquitectura transformer de una sola corriente que predice el mapa de disparidad de forma directa. El checkpoint esta pensado para inferencia con imagenes rectificadas izquierda/derecha y devuelve la disparidad final en pixeles a la resolucion original de entrada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DispViT+ ViT-G | 1.282.170.176 | Regresion directa con ViT de una sola corriente | Par estereo RGB rectificado | Apache 2.0 | HuggingFace (este repo) |
+| DispViT+ ViT-G | 1.282.170.176 | Regresion directa con ViT de una sola corriente | Par estereo RGB rectificado | Apache 2.0 | Hugging Face (este repo) |
 | RAFT-Stereo | no disponible | Cost volume + GRU iterativo | Par estereo RGB | no disponible | Repositorio de investigacion |
 | CREStereo | no disponible | Cost volume jerarquico + cascada | Par estereo RGB | no disponible | Repositorio de investigacion |
 | STTR | no disponible | Transformer con matching denso | Par estereo RGB | no disponible | Repositorio de investigacion |
@@ -84,6 +84,6 @@ Nota: los datos de los modelos comparables no se han verificado en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aeolusguan/dispvit-plus-vitg
+- Hugging Face: https://huggingface.co/aeolusguan/dispvit-plus-vitg
 - Paper (OpenReview, ICLR 2026): https://openreview.net/forum?id=c21yqwf02V
 - Repositorio GitHub: https://github.com/aeolusguan/DispViT

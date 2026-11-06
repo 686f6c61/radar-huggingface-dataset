@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ModernoTech/Nova-Coder
+- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Coder
 - Modelo candidato citado: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

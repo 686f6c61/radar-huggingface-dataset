@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Starlight Small 1 (North-ML1) | 752.393.024 | no disponible | 12/12 en evaluacion greedy propia (12 prompts) | apache-2.0 | HuggingFace, requiere codigo personalizado |
-| Qwen3.5-0.8B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| starlight-mini-Q5_0-GGUF (mismo autor) | no disponible | no disponible | no disponible | no disponible | HuggingFace, formato GGUF |
+| Starlight Small 1 (North-ML1) | 752.393.024 | no disponible | 12/12 en evaluacion greedy propia (12 prompts) | apache-2.0 | Hugging Face, requiere codigo personalizado |
+| Qwen3.5-0.8B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| starlight-mini-Q5_0-GGUF (mismo autor) | no disponible | no disponible | no disponible | no disponible | Hugging Face, formato GGUF |
 
 No se dispone de datos de rendimiento comparables entre estas variantes, por lo que la comparativa se limita a parametros, licencia y formato de distribucion.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes, por lo 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/North-ML1/starlight-small-1
+- Hugging Face del modelo: https://huggingface.co/North-ML1/starlight-small-1
 - Repo GGUF relacionado del mismo autor: https://huggingface.co/North-ML1/starlight-mini-Q5_0-GGUF/tree/main
 - Modelo base: Qwen/Qwen3.5-0.8B (referencia indicada en la model card, sin URL directa en la informacion proporcionada)
 - Paper, blog o demo oficial: no disponibles en la informacion proporcionada

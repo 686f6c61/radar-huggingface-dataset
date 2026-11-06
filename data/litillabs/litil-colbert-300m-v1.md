@@ -110,7 +110,7 @@ En cuanto a rendimiento comparado, la model card solo ofrece la comparacion cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-colbert-300m-v1
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-colbert-300m-v1
 - Modelo base: https://huggingface.co/lightonai/mLateOn
 - Paper de mLateOn: https://arxiv.org/abs/2607.27178
 - Libreria PyLate: https://github.com/lightonai/pylate

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kushasareen/qwen35-9b-ft-c400 es un fine-tune del modelo base Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en HuggingFace. Segun la model card, se trata de un ajuste mediante aprendizaje por refuerzo (reinforcement learning) durante 400 pasos de optimizador, y los pesos se guardan tal cual los produjo el entrenador, cargables con `AutoModelForCausalLM.from_pretrained`. El pipeline declarado en HuggingFace es `reinforcement-learning` y la arquitectura etiquetada es `qwen3_5`, con modalidad image-text-to-text.
+kushasareen/qwen35-9b-ft-c400 es un fine-tune del modelo base Qwen/Qwen3.5-4B, publicado por el usuario kushasareen en Hugging Face. Segun la model card, se trata de un ajuste mediante aprendizaje por refuerzo (reinforcement learning) durante 400 pasos de optimizador, y los pesos se guardan tal cual los produjo el entrenador, cargables con `AutoModelForCausalLM.from_pretrained`. El pipeline declarado en Hugging Face es `reinforcement-learning` y la arquitectura etiquetada es `qwen3_5`, con modalidad image-text-to-text.
 
 El dato mas llamativo es la discrepancia entre el nombre del repositorio (que sugiere 9B) y el modelo base declarado (Qwen3.5-4B, de 4 mil millones de parametros). El recuento real de safetensors indica 9.409.813.744 parametros, es decir, aproximadamente 9,4 mil millones, lo que no encaja con un fine-tune directo de un modelo de 4B. Esta inconsistencia, junto con la ausencia de documentacion sobre el proceso de entrenamiento, los datos utilizados o los resultados obtenidos, hace que la ficha deba leerse con cautela: es un artefacto de investigacion sin validacion publica.
 
@@ -12,7 +12,7 @@ La relevancia actual del modelo es limitada: no tiene descargas ni likes, no inc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer, segun tag de HuggingFace); detalles no disponibles |
+| Arquitectura | qwen3_5 (transformer, segun tag de Hugging Face); detalles no disponibles |
 | Parametros totales | 9.409.813.744 (9,4B, segun safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ La model card unicamente indica que los pesos, la configuracion y el tokenizer s
 ## Capacidades
 
 - Generacion de texto autoregresiva, heredada del modelo base Qwen3.5-4B.
-- Posible soporte de entrada imagen-texto (tag `image-text-to-text` en HuggingFace), aunque no confirmado en la model card.
+- Posible soporte de entrada imagen-texto (tag `image-text-to-text` en Hugging Face), aunque no confirmado en la model card.
 - Ajuste orientado por RL, presumiblemente para mejorar el cumplimiento de instrucciones o el razonamiento, aunque no se especifica el objetivo de la recompensa.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -44,7 +44,7 @@ La model card unicamente indica que los pesos, la configuracion y el tokenizer s
 - Evaluacion comparativa de tecnicas de RL: util para medir como evoluciona el modelo base tras un numero fijo de pasos, siempre que el investigador aporte su propio conjunto de evaluacion.
 - Prototipado de pipelines multimodales: si se confirma la capacidad image-text-to-text, podria emplearse en pruebas de concepto de descripcion de imagenes o respuesta a preguntas visuales, aunque sin garantias de calidad.
 - Base para un segundo fine-tune supervisado: al ser un checkpoint intermedio, puede servir como inicializacion para SFT posterior en dominios especificos.
-- Docencia y formacion: ejemplo practico de artefacto de RL publicado en HuggingFace para explicar el ciclo de entrenamiento, guardado y carga con `transformers`.
+- Docencia y formacion: ejemplo practico de artefacto de RL publicado en Hugging Face para explicar el ciclo de entrenamiento, guardado y carga con `transformers`.
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kushasareen/qwen35-9b-ft-c400 | 9,4B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune RL sin benchmarks |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | HuggingFace | Modelo base declarado; menor tamano que el fine-tune |
+| kushasareen/qwen35-9b-ft-c400 | 9,4B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune RL sin benchmarks |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible en la informacion | Hugging Face | Modelo base declarado; menor tamano que el fine-tune |
 | Alternativas de ~9B (p. ej. Gemma 2 9B, Llama 3.1 8B) | 8-9B | 8K-128K segun modelo | licencias variables | amplia disponibilidad | Datos no verificados en esta ficha |
 
 La comparacion cuantitativa con alternativas no es posible porque no se han publicado benchmarks del modelo. Ademas, la diferencia de parametros entre el fine-tune (9,4B) y su base declarada (4B) impide una comparacion directa fiable.
@@ -83,5 +83,5 @@ La comparacion cuantitativa con alternativas no es posible porque no se han publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kushasareen/qwen35-9b-ft-c400
+- Hugging Face: https://huggingface.co/kushasareen/qwen35-9b-ft-c400
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B

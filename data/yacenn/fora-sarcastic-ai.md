@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fora sarcastic ai es un modelo publicado en HuggingFace por el usuario yacenn bajo licencia MIT. La única documentación disponible es la model card, que se limita a declarar la licencia y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
+Fora sarcastic ai es un modelo publicado en Hugging Face por el usuario yacenn bajo licencia MIT. La única documentación disponible es la model card, que se limita a declarar la licencia y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
 
 Por el nombre del repositorio cabe inferir que se trata de un ajuste fino orientado a un registro conversacional sarcástico, presumiblemente construido sobre un modelo base de menor tamaño. No obstante, esta interpretación no está confirmada por el autor y debe tratarse como una hipótesis, no como un dato verificado.
 
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yacenn/fora-sarcastic-ai
+- Hugging Face: https://huggingface.co/yacenn/fora-sarcastic-ai
 - Model card del autor: no contiene más información que la declaración de licencia MIT.
 - Paper, blog técnico, repositorio de código o demo: no disponibles.
 - Enlaces adicionales: la búsqueda web no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos corresponden a herramientas de cambio de voz sin relación con el mismo.

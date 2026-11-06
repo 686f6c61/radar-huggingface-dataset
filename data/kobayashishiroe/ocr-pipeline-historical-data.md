@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OCR-pipeline-historical-data es un conjunto de reconocedores de líneas de texto (line recognizers) para kraken, entrenados específicamente para transcribir escritura manuscrita del portugués brasileño del siglo XIX. El modelo lo publica el usuario KobayashiShiroe en HuggingFace y se emplea en el pipeline de OCR histórico del repositorio DeguShi/OCR-pipeline-historical-data. No es un modelo de lenguaje generativo, sino un modelo de reconocimiento óptico de escritura (HTR/OCR) orientado a documentos históricos.
+OCR-pipeline-historical-data es un conjunto de reconocedores de líneas de texto (line recognizers) para kraken, entrenados específicamente para transcribir escritura manuscrita del portugués brasileño del siglo XIX. El modelo lo publica el usuario KobayashiShiroe en Hugging Face y se emplea en el pipeline de OCR histórico del repositorio DeguShi/OCR-pipeline-historical-data. No es un modelo de lenguaje generativo, sino un modelo de reconocimiento óptico de escritura (HTR/OCR) orientado a documentos históricos.
 
 Los reconocedores son un fine-tune de PP-OCRv6 *medium* (Kiessling, Zenodo 10.5281/zenodo.21788410) sobre recortes de líneas de 78 páginas del *Livro de Registro de Leis nº 1* (São Carlos, 1892–1894). El repositorio incluye dos ficheros de pesos: `st_c1m.safetensors` (v6, final) y `st_g3m.safetensors` (v5).
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OCR-pipeline-historical-data (este modelo) | HTR kraken, fine-tune de PP-OCRv6 medium | pt | no aplica | research-use | HuggingFace, 0 descargas |
+| OCR-pipeline-historical-data (este modelo) | HTR kraken, fine-tune de PP-OCRv6 medium | pt | no aplica | research-use | Hugging Face, 0 descargas |
 | PP-OCRv6 medium (modelo base) | OCR/HTR kraken | no disponible | no aplica | no disponible | Zenodo 10.5281/zenodo.21788410 |
 | Otros reconocedores kraken para portugués histórico | HTR kraken | pt | no aplica | variable | no disponible en la información proporcionada |
 
@@ -88,10 +88,10 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 - Riesgo de alucinación y de sustituciones plausibles en pasajes degradados, propio de los modelos HTR.
 - Los resultados publicados corresponden al pipeline completo, no al reconocedor aislado, por lo que no deben atribuirse únicamente al modelo.
 - Las imágenes de origen pertenecen a la Fundação Pró-Memória de São Carlos; deben respetarse las condiciones de uso de la institución.
-- Sin descargas ni likes en HuggingFace: no hay validación comunitaria independiente.
+- Sin descargas ni likes en Hugging Face: no hay validación comunitaria independiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data
+- Hugging Face: https://huggingface.co/KobayashiShiroe/OCR-pipeline-historical-data
 - Repositorio del pipeline: https://github.com/DeguShi/OCR-pipeline-historical-data
 - Modelo base PP-OCRv6 medium (Kiessling): https://doi.org/10.5281/zenodo.21788410

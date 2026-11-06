@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LTX-2.3-v1.4-FP8 (este) | 21 B | hasta 960 frames | unknown | HuggingFace |
-| LTX-2.3 (Lightricks) | 21 B | hasta 960 frames | open weights (LTX) | HuggingFace, ltx.io |
+| LTX-2.3-v1.4-FP8 (este) | 21 B | hasta 960 frames | unknown | Hugging Face |
+| LTX-2.3 (Lightricks) | 21 B | hasta 960 frames | open weights (LTX) | Hugging Face, ltx.io |
 | LTX-2.5 (Lightricks) | no disponible | no disponible | open weights | ltx.io |
 | Google Veo 3 | no disponible | no disponible | propietaria | API cerrada |
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. El repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbishal/LTX-2.3-v1.4-FP8
+- Modelo en Hugging Face: https://huggingface.co/abbishal/LTX-2.3-v1.4-FP8
 - Modelo base Lightricks/LTX-2.3: https://huggingface.co/Lightricks/LTX-2.3
 - Cuantización FP8 oficial de Lightricks: https://huggingface.co/Lightricks/LTX-2.3-fp8
 - Repositorio similar de ChrisColeTech: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-v1.4-fp8

@@ -27,7 +27,7 @@ El modelo parte del checkpoint oficial `gs://openpi-assets/checkpoints/pi05_droi
 
 El entrenamiento se realizó con ajuste fino completo (sin congelar el codificador de visión ni el action expert) sobre 4 GPU GH200, batch global de 128 y precisión bfloat16 con Accelerate mixed precision desactivado. Se usó AdamW (betas 0,9/0,95, weight decay 0,01, clip 1,0), learning rate de 2,5e-5 a 2,5e-6 con warmup de 1.000 pasos y decaimiento hasta 6.000, gradient checkpointing y torch.compile activados. La configuración OPG usa escala 2,0 en entrenamiento e inferencia; CCR se aplica solo en inferencia (beta 0,15, capas 15/16, top-k 4, epsilon 1e-5).
 
-Los datos son los 74.682 episodios exitosos con instrucción del dataset `lerobot/droid_1.0.1` (revisión `0eabc778f959c54b8c5aa3626cc1128d2d2e54d4`), sobre un total público de 95.658 episodios y 27.630.375 fotogramas. Se usan tres cámaras (`exterior_1_left`, `exterior_2_left`, `wrist_left`) a 180×320 RGB, estado de 7 posiciones articulares en radianes más pinza, y acciones de 7 posiciones articulares absolutas más pinza absoluta, sin transformación delta. La normalización emplea cuantiles q01/q99 de todo el origen DROID escalados a [-1,1] sin recorte. Se muestrearon 768.000 anclas en 6.000 actualizaciones, menos de una pasada completa por el conjunto elegible. El origen son vídeos AV1 comprimidos de HuggingFace y el export carece de identificadores de grabación, por lo que no se puede reproducir el filtrado non-idle oficial de RLDS.
+Los datos son los 74.682 episodios exitosos con instrucción del dataset `lerobot/droid_1.0.1` (revisión `0eabc778f959c54b8c5aa3626cc1128d2d2e54d4`), sobre un total público de 95.658 episodios y 27.630.375 fotogramas. Se usan tres cámaras (`exterior_1_left`, `exterior_2_left`, `wrist_left`) a 180×320 RGB, estado de 7 posiciones articulares en radianes más pinza, y acciones de 7 posiciones articulares absolutas más pinza absoluta, sin transformación delta. La normalización emplea cuantiles q01/q99 de todo el origen DROID escalados a [-1,1] sin recorte. Se muestrearon 768.000 anclas en 6.000 actualizaciones, menos de una pasada completa por el conjunto elegible. El origen son vídeos AV1 comprimidos de Hugging Face y el export carece de identificadores de grabación, por lo que no se puede reproducir el filtrado non-idle oficial de RLDS.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 - No validado para despliegue en robot: el autor afirma explícitamente que el checkpoint no ha sido validado para uso en robot y que no se realizó ninguna evaluación de rollout.
 - No es una reproducción del benchmark DROID: la receta CoFACT no tiene una configuración específica para DROID, por lo que los resultados no son comparables con cifras oficiales del benchmark.
 - Menos de una época de entrenamiento: 768.000 anclas muestreadas en 6.000 actualizaciones suponen menos de una pasada completa por el conjunto elegible, lo que puede dejar capacidad sin explotar.
-- Filtrado non-idle no reproducible: el export de HuggingFace carece de identificadores de grabación, de modo que no se puede replicar el filtrado oficial de RLDS; los episodios incluyen posibles tramos inactivos.
+- Filtrado non-idle no reproducible: el export de Hugging Face carece de identificadores de grabación, de modo que no se puede replicar el filtrado oficial de RLDS; los episodios incluyen posibles tramos inactivos.
 - Calidad del vídeo de origen: los datos provienen de vídeo AV1 comprimido, con posible pérdida de detalle relevante para la política.
 - Normalización dependiente del origen completo: la normalización usa estadísticas de todo DROID, no las del subconjunto TAG ni LIBERO; reutilizar los procesadores con otros datos puede degradar el comportamiento.
 - Dependencia de una revisión concreta de CoFACT: es necesario usar el checkout fijado al commit indicado; otras versiones pueden cambiar la semántica de la rama contrafactual.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adipotnis/pi05-droid-cofactvla-droid-init
+- Modelo en Hugging Face: https://huggingface.co/adipotnis/pi05-droid-cofactvla-droid-init
 - Implementación CoFACT-VLA (commit fijado): https://github.com/zhangy0822/CofactVLA/tree/7cbae824f2c55a154340cbf4b52b9125452e124d
 - Dataset DROID en LeRobot: https://huggingface.co/datasets/lerobot/droid_1.0.1
 - OpenPI (checkpoint origen pi05_droid): no disponible enlace directo en la información proporcionada

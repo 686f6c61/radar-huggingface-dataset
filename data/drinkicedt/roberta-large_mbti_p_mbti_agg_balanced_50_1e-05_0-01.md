@@ -18,7 +18,7 @@ Actualmente el modelo no presenta descargas ni likes, y carece de una licencia d
 | Longitud de contexto | 512 tokens (por arquitectura RoBERTa-large) |
 | Tipos de cuantizacion | No se mencionan; safetensors con pesos en FP32/FP16 (no cuantizados) |
 | Idiomas soportados | No disponible (RoBERTa-large es principalmente ingles) |
-| Licencia | No disponible (en la ficha de HuggingFace; un modelo similar del mismo autor tiene licencia MIT, pero este no la declara) |
+| Licencia | No disponible (en la ficha de Hugging Face; un modelo similar del mismo autor tiene licencia MIT, pero este no la declara) |
 | Formato de pesos | safetensors (compatible con text-embeddings-inference) |
 
 ## Arquitectura y entrenamiento

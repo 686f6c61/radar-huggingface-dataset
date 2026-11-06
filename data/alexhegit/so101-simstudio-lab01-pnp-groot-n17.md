@@ -82,10 +82,10 @@ Referencias comparativas sobre los mismos datos, citadas en la model card: ACT 6
 
 | Modelo | Parametros | Datos de ajuste | Exito (rango completo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alexhegit/so101-simstudio-lab01-pnp-groot-n17` (GR00T N1.7-3B ajustado) | 3,144 mil millones | Lab 01, 50 episodios, 6-D `*.pos` | 0/10; no levanta el cubo | nvidia-open-model-license | Publico en HuggingFace (0 descargas, 0 likes) |
+| `alexhegit/so101-simstudio-lab01-pnp-groot-n17` (GR00T N1.7-3B ajustado) | 3,144 mil millones | Lab 01, 50 episodios, 6-D `*.pos` | 0/10; no levanta el cubo | nvidia-open-model-license | Publico en Hugging Face (0 descargas, 0 likes) |
 | ACT 6-D | no disponible | Mismos datos de Lab 01 | ~58% | no disponible | Citado en la model card; no se aporta enlace |
 | MolmoAct2 6-D | no disponible | Mismos datos de Lab 01 | ~54% | no disponible | Citado en la model card; no se aporta enlace |
-| `nvidia/GR00T-N1.7-3B` (base) | ~3 mil millones (segun nomenclatura del nombre) | Preentrenamiento, composicion no disponible | no disponible | nvidia-open-model-license | Publico en HuggingFace |
+| `nvidia/GR00T-N1.7-3B` (base) | ~3 mil millones (segun nomenclatura del nombre) | Preentrenamiento, composicion no disponible | no disponible | nvidia-open-model-license | Publico en Hugging Face |
 
 No se dispone de mas modelos comparables en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de mas modelos comparables en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17
 - Dataset de ajuste: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Repositorio SimStudio: https://github.com/rocPAI-Forge/so101-simstudio

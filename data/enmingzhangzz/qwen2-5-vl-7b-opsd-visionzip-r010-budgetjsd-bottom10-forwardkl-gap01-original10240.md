@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio publica un adaptador LoRA, no un modelo completo, sobre `Qwen/Qwen2.5-VL-7B-Instruct`. Lo desarrolla el usuario de HuggingFace `enmingzhangzz` y forma parte de una linea de experimentos denominada OPSD (seleccion de posiciones de respuesta guiada por presupuesto visual) combinada con VisionZip. El objetivo no es mejorar las capacidades del modelo base, sino investigar como se comporta el decoder de lenguaje cuando la torre de vision entrega solo el 10 % de los tokens visuales, mediante un entrenamiento que penaliza las posiciones de respuesta mas sensibles a ese recorte.
+Este repositorio publica un adaptador LoRA, no un modelo completo, sobre `Qwen/Qwen2.5-VL-7B-Instruct`. Lo desarrolla el usuario de Hugging Face `enmingzhangzz` y forma parte de una linea de experimentos denominada OPSD (seleccion de posiciones de respuesta guiada por presupuesto visual) combinada con VisionZip. El objetivo no es mejorar las capacidades del modelo base, sino investigar como se comporta el decoder de lenguaje cuando la torre de vision entrega solo el 10 % de los tokens visuales, mediante un entrenamiento que penaliza las posiciones de respuesta mas sensibles a ese recorte.
 
 La innovacion principal es el criterio de seleccion de posiciones. Para cada posicion valida de la respuesta generada se calcula la divergencia Jensen-Shannon simetrica entre las distribuciones del propio estudiante a dos presupuestos visuales (10 % y 11 % de retencion) y se selecciona el `max(1, ceil(0,10 * N))` de posiciones con menor `B_t`, es decir, las menos sensibles al cambio de presupuesto. Sobre esas posiciones se aplica una KL directa (`KL(teacher || student)`) contra un profesor EMA con vision completa, con decaimiento 0,9999. El entrenamiento completo son 10.240 ejemplos y 320 actualizaciones del optimizador, en aproximadamente 6 horas y 30 minutos sobre 4 GPU.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos verificables para esta categoria en la infor
 - La seleccion de datos de entrenamiento no esta balanceada y consta de una unica ejecucion con 10.240 ejemplos y 320 actualizaciones; no hay evidencia de robustez fuera de ese conjunto.
 - El entrenamiento se hizo con una sola semilla y sin contexto de verdad de referencia para el profesor, lo que limita la interpretacion de los resultados.
 - El repositorio tiene 0 descargas y 0 likes, y las fechas de creacion y actualizacion son de 2026; conviene tratarlo como artefacto experimental no validado por terceros.
-- No se declara licencia en la pagina de HuggingFace. Antes de cualquier uso comercial hay que aclarar la licencia del adaptador y respetar la del modelo base y la del dataset OpenMMReasoner.
+- No se declara licencia en la pagina de Hugging Face. Antes de cualquier uso comercial hay que aclarar la licencia del adaptador y respetar la del modelo base y la del dataset OpenMMReasoner.
 - Los estados del optimizador, de la EMA y de los generadores aleatorios no se incluyen en el paquete: no es posible reanudar el entrenamiento desde este repositorio.
 - La model card indica que no se publican preguntas, referencias, respuestas generadas, identificadores de token ni rutas locales, lo que impide auditar los datos exactos de entrenamiento.
 - Limitaciones de contexto e idioma: no documentadas; se heredan las del modelo base, que no se detallan aqui.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos verificables para esta categoria en la infor
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Bottom10-ForwardKL-gap01-original10240
+- Adaptador en Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-Bottom10-ForwardKL-gap01-original10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo; los resultados obtenidos eran contenido no relacionado y se han descartado. No se dispone de paper, blog, repositorio de codigo ni demo asociados en la informacion proporcionada.

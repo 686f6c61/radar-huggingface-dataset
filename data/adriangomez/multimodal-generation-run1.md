@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adriangomez/multimodal-generation-run1` es un repositorio alojado en HuggingFace que, pese a su nombre y a las etiquetas `multimodal-generation` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. La model card lo describe explicitamente como un conjunto de notas de investigacion y un esbozo de experimento sobre generacion multimodal: el artefacto principal es un fichero `review.md`, no pesos utilizables para inferencia.
+`adriangomez/multimodal-generation-run1` es un repositorio alojado en Hugging Face que, pese a su nombre y a las etiquetas `multimodal-generation` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. La model card lo describe explicitamente como un conjunto de notas de investigacion y un esbozo de experimento sobre generacion multimodal: el artefacto principal es un fichero `review.md`, no pesos utilizables para inferencia.
 
 El autor declara de forma explicita que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. El contenido se centra en delimitar la pregunta de investigacion, identificar factores de confusion, proponer comparaciones con lineas base emparejadas y enumerar comprobaciones de reproducibilidad y modos de fallo.
 
@@ -87,7 +87,7 @@ No disponible. No existe una categoria de modelos comparables para un repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adriangomez/multimodal-generation-run1
+- Repositorio en Hugging Face: https://huggingface.co/adriangomez/multimodal-generation-run1
 - Fichero principal de notas: `review.md` (referenciado en la model card, dentro del repositorio)
 - Documentacion: `README.md` (model card del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

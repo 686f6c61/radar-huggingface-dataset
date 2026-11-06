@@ -4,7 +4,7 @@
 
 ## Resumen
 
-CoFL-S es un modelo de politica para navegacion visual-lenguaje (visual-language navigation, VLN) publicado en HuggingFace por el usuario lhk66666 bajo el pipeline `robotics`. Se distribuye como un checkpoint completo de PyTorch Lightning (`best.ckpt`, 5.336.379.647 bytes) que recibe como entrada una observacion RGB-D y una instruccion de navegacion en lenguaje natural, y produce como salida un campo continuo sobre el plano de suelo (ground-plane field) junto con logits de accion discreta (STOP, MOVE_FORWARD, TURN_LEFT, TURN_RIGHT). El backbone es SigLIP2 base con patch 16 y preprocesado de imagen a 224 pixeles, un codificador vision-lenguaje de tipo transformer.
+CoFL-S es un modelo de politica para navegacion visual-lenguaje (visual-language navigation, VLN) publicado en Hugging Face por el usuario lhk66666 bajo el pipeline `robotics`. Se distribuye como un checkpoint completo de PyTorch Lightning (`best.ckpt`, 5.336.379.647 bytes) que recibe como entrada una observacion RGB-D y una instruccion de navegacion en lenguaje natural, y produce como salida un campo continuo sobre el plano de suelo (ground-plane field) junto con logits de accion discreta (STOP, MOVE_FORWARD, TURN_LEFT, TURN_RIGHT). El backbone es SigLIP2 base con patch 16 y preprocesado de imagen a 224 pixeles, un codificador vision-lenguaje de tipo transformer.
 
 La relevancia de esta publicacion es doble. Por un lado, aporta una version saneada (sanitized) de un checkpoint CoFL-S orientada exclusivamente a investigacion academica no comercial, con verificacion de integridad documentada: los 2.274 tensores (575 entradas de `state_dict`) son identicos byte a byte respecto al checkpoint original, y los seis assets del procesador permanecen inalterados. Por otro lado, el paquete incluye el codigo fuente CoFL y CoFL-S bajo Apache-2.0 (`source/cofl-source.tar.gz`) con dependencias bloqueadas, lo que permite reproducir la carga y el reentrenamiento.
 
@@ -73,8 +73,8 @@ No hay datos de benchmarks ni comparaciones publicadas en la informacion disponi
 
 | Modelo | Tipo | Backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CoFL-S | Politica de navegacion visual-lenguaje | SigLIP2 base (patch 16, 224 px) | `cofl-model-license-1.0` (uso no comercial) | HuggingFace: `lhk66666/CoFL-S` |
-| SigLIP2 base (`google/siglip2-base-patch16-224`) | Codificador vision-lenguaje | no aplica | Apache-2.0 | HuggingFace: `google/siglip2-base-patch16-224` |
+| CoFL-S | Politica de navegacion visual-lenguaje | SigLIP2 base (patch 16, 224 px) | `cofl-model-license-1.0` (uso no comercial) | Hugging Face: `lhk66666/CoFL-S` |
+| SigLIP2 base (`google/siglip2-base-patch16-224`) | Codificador vision-lenguaje | no aplica | Apache-2.0 | Hugging Face: `google/siglip2-base-patch16-224` |
 | CoFL (antecesor) | Politica de navegacion visual-lenguaje | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de parametros, contexto ni rendimiento del modelo antecesor CoFL, ni de otros modelos VLN comparables, por lo que no se puede establecer una comparacion cuantitativa fiable.
@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo anteces
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lhk66666/CoFL-S
+- Modelo en Hugging Face: https://huggingface.co/lhk66666/CoFL-S
 - Modelo base (SigLIP2 base, patch 16, 224 px): https://huggingface.co/google/siglip2-base-patch16-224
 - Licencia `LICENSE` (en el repositorio): https://huggingface.co/lhk66666/CoFL-S/blob/main/LICENSE
 - Avisos de terceros `THIRD_PARTY_NOTICES.md`: https://huggingface.co/lhk66666/CoFL-S/blob/main/THIRD_PARTY_NOTICES.md

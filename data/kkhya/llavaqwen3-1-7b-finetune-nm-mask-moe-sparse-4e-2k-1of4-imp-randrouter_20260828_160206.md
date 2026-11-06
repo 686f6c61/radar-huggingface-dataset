@@ -73,8 +73,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260828_160206)
-- [HuggingFace - modelo base](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
+- [Hugging Face - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260828_160206)
+- [Hugging Face - modelo base](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
 - [Discusión de un modelo similar (2of4)](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823/tree/main)
 - [Ficha de un modelo similar en free2aitools](https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-b5-fixmag-routeronly_20260805_220232)
 - [Ficha de otro modelo similar en free2aitools](https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-2of4-b6-1e1k_20260805_211951)

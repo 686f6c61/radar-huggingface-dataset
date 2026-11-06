@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iceblue2026/pp-ocrv6-onnx
+- Hugging Face: https://huggingface.co/Iceblue2026/pp-ocrv6-onnx
 - Repositorio de inferencia ONNX de terceros: https://github.com/AIwork4me/ppocrv6_onnx
 - README de ese repositorio: https://github.com/AIwork4me/ppocrv6_onnx/blob/main/README.md
 - Tutorial de PP-OCRv6 Small en ONNX: https://aiindigo.com/tutorials/getting-started-with-pp-ocrv6-small-fast-framework-agnostic-text-recognition

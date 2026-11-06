@@ -92,8 +92,8 @@ No se dispone de datos de benchmarks ni de modelos comparables identificados en 
 
 | Modelo | Parametros | Contexto | Precision / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.8-flash-next-heretic-3.78bpw-gguf | ~177B (MoE, 512 expertos, top-10) | 262.144 tokens | 3,78 bpw, ~83,6 GB de pesos, GGUF | Qwen Community License 1.0 | Publicado en HuggingFace, 2.760 descargas |
-| trohrbaugh/Qwen3.8-Flash-Next-heretic-2 (modelo fuente) | ~177B | no disponible en detalle | BF16, 34 safetensors, ~360 GB | Qwen Community License 1.0 | Publicado en HuggingFace |
+| Qwen-3.8-flash-next-heretic-3.78bpw-gguf | ~177B (MoE, 512 expertos, top-10) | 262.144 tokens | 3,78 bpw, ~83,6 GB de pesos, GGUF | Qwen Community License 1.0 | Publicado en Hugging Face, 2.760 descargas |
+| trohrbaugh/Qwen3.8-Flash-Next-heretic-2 (modelo fuente) | ~177B | no disponible en detalle | BF16, 34 safetensors, ~360 GB | Qwen Community License 1.0 | Publicado en Hugging Face |
 | Variante hermana de 3,26 bpw (descartada) | ~177B | no disponible | 3,26 bpw | Qwen Community License 1.0 | Construida y rechazada por el autor; no se ofrece como release |
 
 Comparativa con alternativas de otros desarrolladores: no disponible, ya que la busqueda web no devolvio resultados pertinentes.
@@ -114,7 +114,7 @@ Comparativa con alternativas de otros desarrolladores: no disponible, ya que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyaakinohara/Qwen-3.8-flash-next-heretic-3.78bpw-gguf
+- Modelo en Hugging Face: https://huggingface.co/soyaakinohara/Qwen-3.8-flash-next-heretic-3.78bpw-gguf
 - Modelo base (trohrbaugh/Qwen3.8-Flash-Next-heretic-2): https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
 - Texto completo de la licencia Qwen Community License 1.0: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2/resolve/main/LICENSE
 - Repositorio de llama.cpp (runtime compatible, soporte qwen4exp en upstream): https://github.com/ggml-org/llama.cpp

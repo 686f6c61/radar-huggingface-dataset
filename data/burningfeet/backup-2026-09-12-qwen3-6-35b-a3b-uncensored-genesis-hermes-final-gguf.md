@@ -79,7 +79,7 @@ Los datos de los modelos de referencia proceden de conocimiento público general
 ## Limitaciones y advertencias
 
 - Modelo sin censura: no ha pasado por alineación de seguridad orientada a rechazar peticiones dañinas. Puede generar contenido ilegal, peligroso o sensible, y no es apto para entornos de producción con usuarios finales sin moderación adicional.
-- Procedencia poco documentada: el identificador del repositorio incluye "backup-2026-09-12" y el autor del método Genesis (LuffyTheFox) no coincide con el propietario del repositorio en HuggingFace (burningfeet). La cadena de custodia de los pesos y la fidelidad respecto al modelo original no se pueden verificar con la información disponible.
+- Procedencia poco documentada: el identificador del repositorio incluye "backup-2026-09-12" y el autor del método Genesis (LuffyTheFox) no coincide con el propietario del repositorio en Hugging Face (burningfeet). La cadena de custodia de los pesos y la fidelidad respecto al modelo original no se pueden verificar con la información disponible.
 - Ausencia de validación externa: 0 descargas y 0 likes, sin benchmarks ni evaluaciones de terceros. Las afirmaciones sobre mejora de estabilidad y reducción de ruido son autoinformadas y no están respaldadas por publicaciones revisadas por pares.
 - Nulo soporte declarado de castellano: los idiomas listados son en, zh y multilingual sin detalle, por lo que el rendimiento en español es incierto y requeriría evaluación propia.
 - Longitud de contexto desconocida: no se especifica la ventana máxima, lo que impide planificar casos de uso que dependan de contexto largo pese a la mención de tensores ssm_conv1d en la card.
@@ -91,7 +91,7 @@ Los datos de los modelos de referencia proceden de conocimiento público general
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup-2026-09-12-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup-2026-09-12-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes de origen: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

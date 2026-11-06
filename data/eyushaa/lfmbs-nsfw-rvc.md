@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFMBS-NSFW-RVC es un repositorio publicado en HuggingFace por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador del repositorio, el sufijo "RVC" remite a Retrieval-based Voice Conversion, una familia de técnicas de conversión de voz a voz (voice-to-voice) orientadas a clonación y transformación de timbre vocal. El prefijo "LFMBS-NSFW" sugiere un uso orientado a contenido para adultos, aunque la model card publicada no contiene ninguna descripción técnica, arquitectura, dataset ni instrucciones de uso: únicamente incluye la declaración de licencia.
+LFMBS-NSFW-RVC es un repositorio publicado en Hugging Face por el usuario eYushaa bajo licencia Apache 2.0. Por el identificador del repositorio, el sufijo "RVC" remite a Retrieval-based Voice Conversion, una familia de técnicas de conversión de voz a voz (voice-to-voice) orientadas a clonación y transformación de timbre vocal. El prefijo "LFMBS-NSFW" sugiere un uso orientado a contenido para adultos, aunque la model card publicada no contiene ninguna descripción técnica, arquitectura, dataset ni instrucciones de uso: únicamente incluye la declaración de licencia.
 
 La información disponible es, por tanto, extremadamente limitada. No se especifican parámetros, arquitectura, longitud de contexto, idiomas, formatos de pesos ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y está etiquetado con `not-for-all-audiences`, lo que restringe su visibilidad y su uso a audiencias adultas.
 
@@ -69,5 +69,5 @@ No disponible. No se dispone de información técnica suficiente para identifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eYushaa/LFMBS-NSFW-RVC
+- Repositorio en Hugging Face: https://huggingface.co/eYushaa/LFMBS-NSFW-RVC
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

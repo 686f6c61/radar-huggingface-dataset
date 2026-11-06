@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, etc.) pa
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-27B (base) | 27.4B | 128k (esperado) | bf16 | Apache 2.0 | HuggingFace |
-| Qwen3.5-27B-Uncensored-Aggressive (bf16) | 27.4B | 128k (esperado) | bf16 | Apache 2.0 | HuggingFace |
-| **Qwen3.5-27B-Uncensored-Aggressive-W4A16-AWQ** | 27.4B | 128k (esperado) | AWQ4 | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B (similar en tamaño de VRAM) | 8B | 128k | bf16 | Llama 3.1 License | HuggingFace |
+| Qwen3.5-27B (base) | 27.4B | 128k (esperado) | bf16 | Apache 2.0 | Hugging Face |
+| Qwen3.5-27B-Uncensored-Aggressive (bf16) | 27.4B | 128k (esperado) | bf16 | Apache 2.0 | Hugging Face |
+| **Qwen3.5-27B-Uncensored-Aggressive-W4A16-AWQ** | 27.4B | 128k (esperado) | AWQ4 | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B (similar en tamaño de VRAM) | 8B | 128k | bf16 | Llama 3.1 License | Hugging Face |
 
 La comparacion directa con modelos de la misma categoria (27B, uncensored) es limitada. La alternativa mas cercana es el modelo padre en bf16, que requiere el doble de VRAM (aproximadamente 55 GB) y no esta cuantizado. En terminos de rendimiento, la cuantizacion AWQ4 suele degradar entre 1-3% las metricas de calidad, pero a cambio reduce los requisitos de memoria a la mitad.
 
@@ -87,9 +87,9 @@ La comparacion directa con modelos de la misma categoria (27B, uncensored) es li
 
 ## Enlaces
 
-- [HuggingFace - Modelo AWQ4](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ)
-- [HuggingFace - Modelo base bf16](https://huggingface.co/philbert440/Qwen3.5-27B-Uncensored-Aggressive)
-- [HuggingFace - Modelo base original Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
+- [Hugging Face - Modelo AWQ4](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ)
+- [Hugging Face - Modelo base bf16](https://huggingface.co/philbert440/Qwen3.5-27B-Uncensored-Aggressive)
+- [Hugging Face - Modelo base original Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [GitHub - Qwen3.5 27B Uncensored (GGUF y Ollama)](https://github.com/Wassimyounes01/qwen38-uncensored)
 - [MindStudio Blog - Abliteration en Qwen3.5-27B](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration)
 - [LLM Explorer - Ficha del modelo](https://llm-explorer.com/model/philbert1680%2FQwen3.5-27B-W4A16-AWQ)

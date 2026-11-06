@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unigilby/gemma-4-12B-it-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/unigilby/gemma-4-12B-it-oQ8e
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de oMLX: https://github.com/jundot/omlx
 - Repositorio de TensorFold: https://github.com/ashhart/TensorFold

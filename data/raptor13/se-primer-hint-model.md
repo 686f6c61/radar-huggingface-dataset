@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Raptor13/se-primer-hint-model` | Regresión logística ONNX | 7 | no aplica | no disponible | HuggingFace |
+| `Raptor13/se-primer-hint-model` | Regresión logística ONNX | 7 | no aplica | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raptor13/se-primer-hint-model
+- Modelo en Hugging Face: https://huggingface.co/Raptor13/se-primer-hint-model
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

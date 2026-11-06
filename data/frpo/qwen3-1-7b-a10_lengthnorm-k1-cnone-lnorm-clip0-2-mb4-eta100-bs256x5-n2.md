@@ -58,6 +58,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 - Sin garantías de soporte: al ser un checkpoint de investigación auto-subido, no hay mantenimiento ni actualizaciones previstas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a10_lengthnorm-k1-cNone-lnorm-clip0.2-mb4-eta100-bs256x5-n2
+- Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a10_lengthnorm-k1-cNone-lnorm-clip0.2-mb4-eta100-bs256x5-n2
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

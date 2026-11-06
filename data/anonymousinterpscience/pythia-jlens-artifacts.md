@@ -60,7 +60,7 @@ No se dispone de información suficiente para establecer una comparativa. El rep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnonymousInterpScience/pythia-jlens-artifacts
+- Repositorio Hugging Face: https://huggingface.co/AnonymousInterpScience/pythia-jlens-artifacts
 - Proyecto Pythia de EleutherAI: https://github.com/EleutherAI/pythia
 - Página oficial de Pythia: https://www.eleuther.ai/artifacts/pythia
 - Proyecto "Interpreting Across Time": https://www.eleuther.ai/projects/interpreting-across-time

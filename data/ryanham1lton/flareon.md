@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Flareon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/Flareon`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se documentan arquitectura, numero de parametros, datos de entrenamiento, idiomas soportados ni pipeline de uso, por lo que practicamente todas las especificaciones tecnicas quedan como no disponibles.
+Flareon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/Flareon`. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se documentan arquitectura, numero de parametros, datos de entrenamiento, idiomas soportados ni pipeline de uso, por lo que practicamente todas las especificaciones tecnicas quedan como no disponibles.
 
-El unico dato objetivo recuperable de los metadatos de HuggingFace es el tamano del repositorio, 0,1 GB, junto con las fechas de creacion y ultima actualizacion (4 de octubre de 2026) y un contador de descargas y likes de cero. Un repositorio de ese tamano es compatible con un modelo de parametros reducidos o con pesos fuertemente cuantizados, pero no es posible inferir de forma fiable la arquitectura ni el numero de parametros a partir de ese dato aislado.
+El unico dato objetivo recuperable de los metadatos de Hugging Face es el tamano del repositorio, 0,1 GB, junto con las fechas de creacion y ultima actualizacion (4 de octubre de 2026) y un contador de descargas y likes de cero. Un repositorio de ese tamano es compatible con un modelo de parametros reducidos o con pesos fuertemente cuantizados, pero no es posible inferir de forma fiable la arquitectura ni el numero de parametros a partir de ese dato aislado.
 
 La relevancia practica de esta ficha es, por tanto, limitada: se trata de un artefacto sin documentacion verificable, sin benchmarks publicados y sin senales de adopcion por parte de la comunidad. Se recomienda tratarlo como un experimento personal del autor y no como una dependencia apta para produccion hasta que se publique informacion tecnica completa.
 
@@ -26,7 +26,7 @@ La relevancia practica de esta ficha es, por tanto, limitada: se trata de un art
 | Ultima actualizacion | 2026-10-04 |
 | Descargas acumuladas | 0 |
 | Likes | 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ No es posible enumerar capacidades concretas porque el autor no ha publicado nin
 - Generacion de codigo: no verificable con la informacion disponible.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no documentadas; el campo de idiomas no esta cumplimentado en HuggingFace.
+- Capacidades multilingues: no documentadas; el campo de idiomas no esta cumplimentado en Hugging Face.
 - Capacidades especiales (modo de pensamiento, vision, audio): no documentadas.
 
 En ausencia de model card, de ejemplos de inferencia y de cualquier evaluacion publicada, no se puede confirmar que el modelo sea funcional siquiera para generacion de texto basica.
@@ -52,8 +52,8 @@ En ausencia de model card, de ejemplos de inferencia y de cualquier evaluacion p
 
 Los siguientes escenarios son aplicaciones potenciales de un modelo de este tipo, pero deben considerarse condicionales a una validacion tecnica previa que, con la informacion actual, no es posible realizar. No se recomienda integrar este modelo en ningun flujo de trabajo real sin una evaluacion propia.
 
-- Evaluacion y experimentacion academica: util como objeto de estudio si se quiere auditar un repositorio de HuggingFace sin documentacion, analizando los pesos publicados, el tokenizador y la configuracion para determinar que se ha subido realmente.
-- Pruebas de reproducibilidad de la plataforma: sirve para verificar como se comporta la infraestructura de HuggingFace ante un repositorio con metadatos incompletos y cero adopcion.
+- Evaluacion y experimentacion academica: util como objeto de estudio si se quiere auditar un repositorio de Hugging Face sin documentacion, analizando los pesos publicados, el tokenizador y la configuracion para determinar que se ha subido realmente.
+- Pruebas de reproducibilidad de la plataforma: sirve para verificar como se comporta la infraestructura de Hugging Face ante un repositorio con metadatos incompletos y cero adopcion.
 - Prototipado interno de bajo riesgo: si los pesos resultasen funcionales, podrian emplearse en tareas de generacion de texto no criticas dentro de un entorno cerrado, nunca expuestas a usuarios finales.
 - Analisis forense de artefactos: estudio de las diferencias entre el tamano declarado del repositorio (0,1 GB) y los pesos efectivamente presentes, para detectar posibles ficheros incompletos o corruptos.
 - Formacion sobre publicacion de modelos: caso practico de como una model card incompleta impide la evaluacion por terceros y bloquea cualquier uso industrial.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque se desconocen los parametros, el contexto, la licencia de uso efectiva y el rendimiento del modelo. La unica alternativa comparable a nivel de metadatos seria cualquier otro repositorio de HuggingFace sin model card ni adopcion, categoria en la que la comparacion carece de valor tecnico.
+No es posible establecer una comparativa rigurosa porque se desconocen los parametros, el contexto, la licencia de uso efectiva y el rendimiento del modelo. La unica alternativa comparable a nivel de metadatos seria cualquier otro repositorio de Hugging Face sin model card ni adopcion, categoria en la que la comparacion carece de valor tecnico.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Uso recomendado |
 |---|---|---|---|---|---|
@@ -97,9 +97,9 @@ No se pueden estimar requisitos de hardware sin conocer el numero de parametros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Flareon
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Flareon
 - Repositorio de codigo: no disponible
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton

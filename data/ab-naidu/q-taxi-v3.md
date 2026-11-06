@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado en HuggingFace por el usuario ab-naidu. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementacion de Q-learning entrenada para resolver el entorno Taxi-v3, un problema clasico de control discreto con espacio de estados finito y seis acciones posibles. El unico artefacto publicado es el fichero `q-learning.pkl`, y el repositorio ocupa 0.0 GB.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado en Hugging Face por el usuario ab-naidu. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementacion de Q-learning entrenada para resolver el entorno Taxi-v3, un problema clasico de control discreto con espacio de estados finito y seis acciones posibles. El unico artefacto publicado es el fichero `q-learning.pkl`, y el repositorio ocupa 0.0 GB.
 
 Su relevancia es fundamentalmente didactica y de referencia: sirve como linea base minima para comparar algoritmos de refuerzo mas complejos (DQN, PPO, A2C) sobre el mismo entorno, y como ejemplo reproducible de carga de agentes tabulares desde el Hub. El autor declara una recompensa media de 7.56 +/- 2.71 en Taxi-v3, lo que indica una politica funcional pero con varianza alta entre episodios.
 
@@ -45,7 +45,7 @@ La model card no documenta la tasa de aprendizaje (alpha), el factor de descuent
 - Linea base (baseline) de comparacion: sirve como punto de referencia inicial frente a agentes DQN, PPO o A2C entrenados en Taxi-v3, para medir cuanto aporta la aproximacion de funciones frente a la tabla exacta.
 - Validacion de pipelines de entrenamiento y evaluacion: al ser un agente ya entrenado, permite comprobar que un script de evaluacion, un bucle de episodios o un sistema de logging funcionan correctamente antes de lanzar entrenamientos costosos.
 - Reproduccion de experimentos de RL: el artefacto publicado se puede cargar y evaluar de forma determinista en el entorno original, lo que facilita replicar el resultado declarado de 7.56 +/- 2.71.
-- Demostracion de integracion con el Hub: util como ejemplo de carga de modelos de refuerzo desde HuggingFace en tutoriales sobre `load_from_hub` y entornos Gym.
+- Demostracion de integracion con el Hub: util como ejemplo de carga de modelos de refuerzo desde Hugging Face en tutoriales sobre `load_from_hub` y entornos Gym.
 - Prototipado de wrappers y entornos personalizados: el agente Tabular permite probar rapidamente variaciones del entorno (recompensas modificadas, mapas alternativos) sin reentrenar redes neuronales.
 - Pruebas de infraestructura de evaluacion: por su bajo coste computacional, se puede usar como caso de prueba en sistemas de CI que verifiquen la carga de artefactos y la ejecucion de episodios completos.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento de las alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-naidu/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/ab-naidu/q-Taxi-v3
 - Fichero de pesos: `q-learning.pkl` alojado en el repositorio anterior.
 - Referencia del dataset declarado: Taxi-v3 (entorno de Gym/Gymnasium), citado en la model card y en el `model-index`.
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes al modelo, a su paper ni a repositorios asociados; los enlaces devueltos corresponden a entidades no relacionadas (Grupo AB, AB Science, grupos sanguineos, AB Concerts), por lo que se descartan.

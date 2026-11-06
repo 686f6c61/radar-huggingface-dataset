@@ -88,10 +88,10 @@ La comparativa se limita a las variantes del mismo modelo porque no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/joeygambino/MiniMax-H3-comfy-native-fl2va
+- Repositorio Hugging Face de este modelo: https://huggingface.co/joeygambino/MiniMax-H3-comfy-native-fl2va
 - Repositorio de la variante ref2va: https://huggingface.co/joeygambino/MiniMax-H3-comfy-native
 - Repositorio de cuantizaciones GGUF del mismo autor: https://huggingface.co/joeygambino/MiniMax-H3-GGUF
-- Modelo base en HuggingFace (organizacion Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
+- Modelo base en Hugging Face (organizacion Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio oficial de MiniMax: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub de workflows y recursos de MiniMax H3: https://github.com/ai-models-lab/minimax-h3
 - Tutorial de ComfyUI sobre MiniMax H3 API: https://docs.comfy.org/tutorials/partner-nodes/minimax/minimax-h3

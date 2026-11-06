@@ -29,13 +29,13 @@ No existe una arquitectura de red neuronal ni un proceso de entrenamiento real. 
 - Actúa como un vector de prueba para escáneres de seguridad, validando reglas de detección de archivos inesperados en repositorios de modelos.
 - Puede contener payloads de inyección de prompts o contrabando de ejecutables, diseñados para activar alertas en herramientas de análisis estático.
 - No soporta tool calling, agentes ni razonamiento multilingüe.
-- Su única "capacidad" es servir como entrada negativa o positiva en pipelines de admisión de modelos (LayerFault, scanners de HuggingFace, etc.).
+- Su única "capacidad" es servir como entrada negativa o positiva en pipelines de admisión de modelos (LayerFault, scanners de Hugging Face, etc.).
 
 ## Casos de uso
 
 - **Pruebas de escáneres de seguridad de repositorios de modelos**: se utiliza para verificar que una herramienta de validación (como LayerFault) detecta y bloquea artefactos con características adversóticas antes de que se carguen en un entorno de producción.
 - **Evaluación de integridad de procedencia**: permite comprobar si un sistema de admisión detecta archivos extra no declarados en la estructura del repositorio (un ataque de superficie de procedencia).
-- **Entrenamiento de detectores de amenazas**: los equipos de seguridad pueden usar este artefacto para entrenar modelos de detección de anomalías en repositorios de HuggingFace, comparando su comportamiento con archivos legítimos.
+- **Entrenamiento de detectores de amenazas**: los equipos de seguridad pueden usar este artefacto para entrenar modelos de detección de anomalías en repositorios de Hugging Face, comparando su comportamiento con archivos legítimos.
 - **Test de aislamiento de entornos**: sirve para verificar que un entorno de ejecución de IA está correctamente aislado, ya que el artefacto no debe ejecutarse nunca en un entorno real.
 - **Auditoría de políticas de licencia**: permite comprobar que una herramienta de gobernanza respeta la licencia apache-2.0 incluso en artefactos no funcionales.
 - **Investigación en seguridad de la cadena de suministro**: se puede emplear como ejemplo en estudios sobre ataques a la cadena de suministro de IA (como el ataque a LiteLLM), para ilustrar cómo los artefactos maliciosos pueden colarse en repositorios.
@@ -66,7 +66,7 @@ No existe un modelo comparable, ya que no es un modelo de IA. Puede compararse c
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/LayerFault/provenance-unexpected-extra-file)
+- [Repositorio en Hugging Face](https://huggingface.co/LayerFault/provenance-unexpected-extra-file)
 - [Repositorio de LayerFault en GitHub](https://github.com/izm1chael/layerfault/tree/main)
 - [Documentación de fuentes de LayerFault](https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md)
 - [Artículo sobre pruebas de procedencia de modelos (arXiv)](https://arxiv.org/html/2502.00706v1)

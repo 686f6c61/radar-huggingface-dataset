@@ -30,7 +30,7 @@ No obstante, se trata de un modelo de procedencia opaca: la model card del cuant
 
 No hay informacion publicada sobre la arquitectura interna, el proceso de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF, DPO) empleadas. Por el nombre y el numero de parametros, cabe inferir que se trata de un fine-tune de Ministral 3B (familia Mistral), pero esta inferencia no esta confirmada por ninguna fuente del repositorio. Los tags incluyen `conversational`, lo que sugiere un ajuste orientado a dialogo.
 
-La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos HuggingFace con cuantizacion estatica de tensores. No se especifica si se aplico importancia matricial (imatrix) en esta variante; el propio autor remite a un repositorio separado (`...-i1-GGUF`) para las cuantizaciones ponderadas con imatrix. La presencia de ficheros `mmproj` (multi-modal projection) sugiere que el modelo base incorpora o hereda capacidad de vision, aunque no se detalla que codificador visual utiliza.
+La unica informacion tecnica concreta es la relativa al proceso de cuantizacion: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos Hugging Face con cuantizacion estatica de tensores. No se especifica si se aplico importancia matricial (imatrix) en esta variante; el propio autor remite a un repositorio separado (`...-i1-GGUF`) para las cuantizaciones ponderadas con imatrix. La presencia de ficheros `mmproj` (multi-modal projection) sugiere que el modelo base incorpora o hereda capacidad de vision, aunque no se detalla que codificador visual utiliza.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - mmproj (vision): +0,6 GB (Q8_0) o +0,9 GB (f16) adicionales
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM puede ejecutar las cuantizaciones Q4; para Q8_0 se recomienda 6 GB o mas; para f16, 8 GB o mas. En el segmento profesional, A100/H100 no son necesarias para este tamano, aunque permitirian mayor throughput por batching.
 - Cabe en GPU consumer: si, en practicamente todas las GPUs modernas (GTX 1650 4 GB, RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090 24 GB).
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI mediante llama.cpp server o vLLM (este ultimo con soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (importando el GGUF), LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI mediante llama.cpp server o vLLM (este ultimo con soporte GGUF limitado). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Como referencia orientativa para un modelo de 3B en Q4_K_M sobre una RTX 4090, cabria esperar decenas de tokens por segundo, pero no hay mediciones publicadas para esta variante concreta.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparativa es estructural: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Felldude-Uncensored-Ministral3-3B-bf16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Felldude-Uncensored-Ministral3-3B-bf16-GGUF
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Felldude-Uncensored-Ministral3-3B-bf16-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Felldude-Uncensored-Ministral3-3B-bf16-GGUF
 - Modelo base citado en tags: https://huggingface.co/CuttingEdgeAI/Uncensored-Ministral-3-3B-bf16

@@ -80,7 +80,7 @@ No se dispone de datos tecnicos de alternativas en la informacion proporcionada.
 | chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI (bf16) | bf16 | Difusion + text encoder Qwen3-VL 8B bf16 + VAE | qwen-research | Repositorio publico, 0 descargas |
 | chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI (INT8 ConvRot) | 8 bits, formato ConvRot | Difusion + text encoder INT8 ConvRot + VAE bf16 | qwen-research | Repositorio publico, 0 descargas |
 | chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI (INT4 ConvRot) | 4 bits, W4A4, formato ConvRot | Difusion + text encoder INT4 ConvRot o W4A8 + VAE bf16 | qwen-research | Repositorio publico, 0 descargas |
-| Qwen/Qwen-Image-2.1 | no disponible | no disponible | qwen-research | Repositorio original en HuggingFace |
+| Qwen/Qwen-Image-2.1 | no disponible | no disponible | qwen-research | Repositorio original en Hugging Face |
 | Otras alternativas de generacion de imagen (por ejemplo, familias tipo FLUX o Stable Diffusion) | no disponible | no disponible | no disponible | No se aportan datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos tecnicos de alternativas en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/chfm/Qwen-Image-2.1-INT4ConvRot-ComfyUI
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base (qwen-research): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Aplicacion Radiant Canvas (App Store, macOS): https://apps.apple.com/us/app/radiant-canvas-ai-image-gen/id6802973075

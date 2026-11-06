@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, seed 0) | 3.144 M | no disponible | Pick-and-place Panda simulado | apache-2.0 | HuggingFace, 16 descargas |
+| Este checkpoint (GR00T N1.7, seed 0) | 3.144 M | no disponible | Pick-and-place Panda simulado | apache-2.0 | Hugging Face, 16 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible en la información | no disponible | Modelo fundacional humanoide cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Otras políticas LeRobot del mismo autor (variantes de seed/dataset) | no disponible | no disponible | Pick-and-place Panda | apache-2.0 | HuggingFace, mim-chess-vlas |
+| Otras políticas LeRobot del mismo autor (variantes de seed/dataset) | no disponible | no disponible | Pick-and-place Panda | apache-2.0 | Hugging Face, mim-chess-vlas |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__wrist_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__wrist_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__wrist_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__mask__overlay_a75__sim__wrist_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

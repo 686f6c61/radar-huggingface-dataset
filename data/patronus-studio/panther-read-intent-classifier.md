@@ -89,7 +89,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo principal en HuggingFace: https://huggingface.co/patronus-studio/panther-read-intent-classifier
+- Modelo principal en Hugging Face: https://huggingface.co/patronus-studio/panther-read-intent-classifier
 - Repositorio edge (cuantizaciones): https://huggingface.co/patronus-studio/panther-read-intent-classifier-edge
 - Blog de Patronus sobre el zoo de modelos de seguridad open source: https://patronus.studio/posts/our-ai-security-model-zoo-is-now-open-source
 - Blog en aleman: https://patronus.studio/de/posts/our-ai-security-model-zoo-is-now-open-source

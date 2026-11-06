@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KoroshG/qwen3_5-4b-nl2sql-adapter-test` es un adaptador LoRA (PEFT) publicado por el usuario KoroshG sobre el modelo base Qwen/Qwen3.5-4B. Por el identificador y las etiquetas del repositorio, su propósito declarado es el ajuste fino para la tarea NL2SQL (traducción de lenguaje natural a consultas SQL), aunque la model card publicada es la plantilla por defecto de HuggingFace sin ningún apartado completado. El repositorio no incluye pesos completos, sino los tensores del adaptador en formato safetensors, que deben combinarse con el modelo base para su uso.
+`KoroshG/qwen3_5-4b-nl2sql-adapter-test` es un adaptador LoRA (PEFT) publicado por el usuario KoroshG sobre el modelo base Qwen/Qwen3.5-4B. Por el identificador y las etiquetas del repositorio, su propósito declarado es el ajuste fino para la tarea NL2SQL (traducción de lenguaje natural a consultas SQL), aunque la model card publicada es la plantilla por defecto de Hugging Face sin ningún apartado completado. El repositorio no incluye pesos completos, sino los tensores del adaptador en formato safetensors, que deben combinarse con el modelo base para su uso.
 
 El modelo base, Qwen3.5-4B, pertenece a la familia Qwen3.5 de Alibaba, descrita en la documentación oficial como una familia de modelos fundacionales nativamente multimodales, entrenados desde cero sobre tokens intercalados de texto, imagen y vídeo. Emplea una pila de atención híbrida en proporción 3:1, con tres capas de Gated DeltaNet (atención lineal) por cada capa de Gated Attention (atención completa), y una ventana de contexto nativa de 262.144 tokens. Se trata de un modelo denso de 4.000 millones de parámetros, no de una arquitectura MoE.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM estimada para el modelo base: en torno a 8-9 GB en precision de 16 bits para los 4.000 millones de parametros, sin contar la cache KV. En cuantizacion de 8 bits, aproximadamente 4-5 GB; en 4 bits, aproximadamente 2,5-3,5 GB. Estas cifras son estimaciones derivadas del tamano del modelo base y no estan confirmadas por el autor.
-- El adaptador LoRA en si anade un consumo marginal de memoria, ya que el repositorio ocupa 0,0 GB segun HuggingFace.
+- El adaptador LoRA en si anade un consumo marginal de memoria, ya que el repositorio ocupa 0,0 GB segun Hugging Face.
 - GPU recomendadas para el modelo base en 16 bits: NVIDIA RTX 3090, RTX 4090, A10, L4 o superiores. Para lotes grandes y contexto muy largo, conviene una A100 o H100.
 - Cabe en GPU de consumo: si, siempre que se aplique cuantizacion. Una RTX 3060 de 12 GB o una RTX 4070 de 12 GB deberian ser suficientes para inferencia en 4 u 8 bits.
 - Opciones de despliegue: transformers con PEFT para cargar el adaptador; llama.cpp y Ollama si se fusiona y convierte a GGUF; vLLM o TGI para servir el modelo fusionado. La compatibilidad concreta con cada runtime no esta documentada por el autor.
@@ -79,7 +79,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que no es pos
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla por defecto de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No hay informacion sobre uso previsto, datos de entrenamiento ni evaluacion.
+- Model card vacia: la documentacion publicada es la plantilla por defecto de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No hay informacion sobre uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia sin especificar: al no declararse licencia para el adaptador, no puede asumirse su uso comercial. Ademas, la licencia del modelo base Qwen3.5-4B no consta en la informacion consultada, por lo que habria que verificarla por separado antes de cualquier despliegue.
 - Riesgo de alucinacion de esquema: en tareas NL2SQL es habitual que el modelo invente nombres de tablas y columnas inexistentes. Sin datos de evaluacion ni ejemplos, este riesgo no puede acotarse y exige validacion sintactica y semantica contra el catalogo real de la base de datos.
 - Riesgo de inyeccion SQL: al generar sentencias ejecutables, cualquier despliegue debe limitar permisos, prohibir operaciones de escritura y aplicar revision humana o validacion automatica previa a la ejecucion.
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que no es pos
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/KoroshG/qwen3_5-4b-nl2sql-adapter-test
+- Pagina del modelo en Hugging Face: https://huggingface.co/KoroshG/qwen3_5-4b-nl2sql-adapter-test
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de Qwen3.5 en transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_5
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

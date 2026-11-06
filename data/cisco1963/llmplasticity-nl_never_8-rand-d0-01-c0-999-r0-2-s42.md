@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42` es un checkpoint de investigación publicado en HuggingFace por el usuario Cisco1963. Según las etiquetas del repositorio, se trata de un modelo con arquitectura GPT-2 (transformer decoder-only) y pesos en formato safetensors, con un total de 122.706.432 parámetros reales contabilizados en el fichero de pesos. No hay tarjeta de modelo (model card) que documente el propósito, el proceso de entrenamiento ni los datos utilizados.
+El modelo identificado como `Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42` es un checkpoint de investigación publicado en Hugging Face por el usuario Cisco1963. Según las etiquetas del repositorio, se trata de un modelo con arquitectura GPT-2 (transformer decoder-only) y pesos en formato safetensors, con un total de 122.706.432 parámetros reales contabilizados en el fichero de pesos. No hay tarjeta de modelo (model card) que documente el propósito, el proceso de entrenamiento ni los datos utilizados.
 
 El nombre del repositorio sugiere que forma parte de un estudio sobre plasticidad en el aprendizaje de redes neuronales (de ahí el prefijo `llmplasticity`), con hiperparámetros codificados en el identificador: `d0.01` podría corresponder a una tasa de dropout o de decaimiento, `c0.999` a un factor de decaimiento, `r0.2` a una proporción de reinicialización, `s42` a una semilla aleatoria y `nl_never_8` a una configuración de número de capas o de política de reinicio. Esta interpretación es una inferencia a partir del nombre y no está confirmada por documentación alguna del repositorio.
 
@@ -47,7 +47,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Analisis comparativo de hiperparametros: si se localizan otros repositorios del mismo autor con nombres similares pero distintos valores, este checkpoint permitiria aislar el efecto de un hiperparametro concreto sobre la convergencia.
 - Extraccion de representaciones internas para investigación: al ser un transformer pequeno (122,7 M de parametros), cabe en cualquier GPU consumer y permite inspeccionar activaciones y gradientes con bajo coste computacional.
 - Pruebas de infraestructura de despliegue: sirve como modelo de juguete para validar pipelines de carga de safetensors, serializacion y servicios de inferencia antes de pasar a modelos mayores.
-- Docencia y formacion: util como ejemplo de checkpoint experimental sin documentar para ensenar a evaluar criticamente la trazabilidad de artefactos en HuggingFace.
+- Docencia y formacion: util como ejemplo de checkpoint experimental sin documentar para ensenar a evaluar criticamente la trazabilidad de artefactos en Hugging Face.
 - No es adecuado para atencion al cliente, generacion de codigo en produccion, analisis documental ni ninguna tarea que requiera instrucciones, contexto largo o calidad verificada, dado que no hay evidencia de ajuste por instrucciones ni de evaluacion de calidad.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42` | 122,7 M | no disponible | no disponible | HuggingFace, 9 descargas |
+| `Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42` | 122,7 M | no disponible | no disponible | Hugging Face, 9 descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -87,7 +87,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no existen re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.01-c0.999-r0.2-s42
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -59,7 +59,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b2000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b2000_s0)
 - [Modelo base Qwen/Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

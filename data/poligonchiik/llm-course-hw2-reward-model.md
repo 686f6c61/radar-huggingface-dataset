@@ -82,8 +82,8 @@ El modelo ordena correctamente el par chosen/rejected en ese unico ejemplo, pero
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poligonchiik/llm-course-hw2-reward-model | 134,5 M | 1024 tokens (entrenamiento) | Reward model (sequence classification) | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible en esta ficha | LLM instruct (generativo) | no disponible en esta ficha | HuggingFace |
+| poligonchiik/llm-course-hw2-reward-model | 134,5 M | 1024 tokens (entrenamiento) | Reward model (sequence classification) | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135 M | no disponible en esta ficha | LLM instruct (generativo) | no disponible en esta ficha | Hugging Face |
 | Reward models de referencia (p. ej. familias tipo ArmoRM, Starling-RM) | no disponible | no disponible | Reward model | no disponible | no disponible |
 
 La comparativa con reward models de referencia no esta disponible en la informacion proporcionada. Frente al modelo base SmolLM-135M-Instruct, la diferencia clave es la cabeza de clasificacion y el entrenamiento con pares de preferencia; el backbone es el mismo.
@@ -103,7 +103,7 @@ La comparativa con reward models de referencia no esta disponible en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/poligonchiik/llm-course-hw2-reward-model
+- Repositorio Hugging Face: https://huggingface.co/poligonchiik/llm-course-hw2-reward-model
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Libreria TRL (`RewardTrainer`): https://github.com/huggingface/trl

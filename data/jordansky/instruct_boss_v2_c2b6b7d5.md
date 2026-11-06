@@ -4,7 +4,7 @@
 
 `Jordansky/instruct_boss_v2_c2b6b7d5` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) desarrollado por Jordansky, diseñado para ajustar el modelo base `Qwen/Qwen3-32B`. El repositorio contiene únicamente los pesos del adaptador (2,2 GB en formato safetensors), no el modelo completo, lo que indica que se trata de un fine-tuning parcial mediante técnicas como LoRA o QLoRA. La etiqueta `arxiv:1910.09700` hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono, presente en la plantilla de la model card, no a una innovación arquitectónica.
 
-La relevancia de este adaptador reside en su potencial para especializar un modelo de 32B parámetros en tareas concretas sin necesidad de reentrenar toda la red. Sin embargo, la model card está prácticamente vacía: no se especifican los datos de entrenamiento, el método exacto de ajuste, los hiperparámetros ni los benchmarks. Esto limita severamente su reproducibilidad y su adopción en entornos de producción. El modelo fue creado el 28 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace.
+La relevancia de este adaptador reside en su potencial para especializar un modelo de 32B parámetros en tareas concretas sin necesidad de reentrenar toda la red. Sin embargo, la model card está prácticamente vacía: no se especifican los datos de entrenamiento, el método exacto de ajuste, los hiperparámetros ni los benchmarks. Esto limita severamente su reproducibilidad y su adopción en entornos de producción. El modelo fue creado el 28 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: el modelo base Qwen3-32B en BF16 requiere aproximadamente 64 GB de VRAM. Con cuantización a 8 bits se reduce a ~32 GB, y a 4 bits a ~16 GB. El adaptador PEFT añade una sobrecarga mínima.
 - GPU recomendadas: para inferencia en BF16 se necesitan GPUs de datacenter como A100 (80 GB) o H100 (80 GB). Con cuantización 4-bit puede ejecutarse en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- Opciones de despliegue: vLLM, TGI, llama.cpp y Ollama soportan modelos Qwen3. El adaptador PEFT requiere cargar primero el modelo base y después aplicar los pesos del adaptador, lo que es compatible con HuggingFace Transformers y PEFT.
+- Opciones de despliegue: vLLM, TGI, llama.cpp y Ollama soportan modelos Qwen3. El adaptador PEFT requiere cargar primero el modelo base y después aplicar los pesos del adaptador, lo que es compatible con Hugging Face Transformers y PEFT.
 - Latencia y throughput: no disponible. Depende del hardware, la cuantización y el número de parámetros activos (~3B), que permite una inferencia relativamente rápida en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -70,13 +70,13 @@ La comparativa directa es difícil porque este repositorio contiene solo un adap
 - Licencia no especificada: no se indica bajo qué licencia se distribuye el adaptador. El modelo base Qwen3-32B es Apache 2.0, pero el adaptador podría tener restricciones adicionales.
 - Riesgo de alucinación: inherente al modelo base, especialmente en tareas de generación abierta. Sin benchmarks no se puede evaluar si el adaptador mitiga o agrava este problema.
 - Sesgos desconocidos: al no documentarse los datos de entrenamiento, no se pueden identificar sesgos potenciales introducidos por el fine-tuning.
-- Sin soporte de comunidad: cero descargas y cero likes en HuggingFace. No hay evidencia de uso o validación por parte de terceros.
+- Sin soporte de comunidad: cero descargas y cero likes en Hugging Face. No hay evidencia de uso o validación por parte de terceros.
 - Dependencia del modelo base: el adaptador solo funciona con Qwen3-32B. Cualquier cambio en el modelo base requerirá reentrenar el adaptador.
 - Fecha de creación futura: el modelo fue creado en agosto de 2026, lo que sugiere que es muy reciente o que la fecha es incorrecta.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/instruct_boss_v2_c2b6b7d5
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/instruct_boss_v2_c2b6b7d5
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Paper de referencia (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Otros modelos del autor: https://huggingface.co/Jordansky/f6782145-boss, https://huggingface.co/Jordansky/instruct_text_0957c01da5ff92fccf02

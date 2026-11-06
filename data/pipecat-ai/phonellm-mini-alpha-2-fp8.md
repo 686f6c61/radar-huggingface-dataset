@@ -69,9 +69,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhoneLLM Mini Alpha 2 (FP8) | 31,6 B totales / ~3 B activos | 32.768 tokens | FP8 (parcial bf16) | BSD 2-Clause (+ licencia NVIDIA para el trabajo base) | HuggingFace, vLLM, transformers |
-| PhoneLLM Mini Alpha 2 (bf16) | 31,6 B totales / ~3 B activos | No disponible | bf16 | BSD 2-Clause (+ licencia NVIDIA) | HuggingFace |
-| NVIDIA Nemotron 3 Nano 30B-A3B | 30 B totales / ~3 B activos | No disponible | BF16 | NVIDIA Nemotron Open Model License | HuggingFace |
+| PhoneLLM Mini Alpha 2 (FP8) | 31,6 B totales / ~3 B activos | 32.768 tokens | FP8 (parcial bf16) | BSD 2-Clause (+ licencia NVIDIA para el trabajo base) | Hugging Face, vLLM, transformers |
+| PhoneLLM Mini Alpha 2 (bf16) | 31,6 B totales / ~3 B activos | No disponible | bf16 | BSD 2-Clause (+ licencia NVIDIA) | Hugging Face |
+| NVIDIA Nemotron 3 Nano 30B-A3B | 30 B totales / ~3 B activos | No disponible | BF16 | NVIDIA Nemotron Open Model License | Hugging Face |
 | PhoneLLM Max Alpha 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada. La diferencia principal entre Mini y Max es, según el autor, velocidad frente a precisión.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2-fp8
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2-fp8
 - Modelo base (PhoneLLM Mini Alpha 2): https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2
 - Modelo base original (NVIDIA Nemotron 3 Nano 30B-A3B): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Blog de PhoneLLM Alpha 2: https://www.daily.co/blog/phonellm-alpha-2/

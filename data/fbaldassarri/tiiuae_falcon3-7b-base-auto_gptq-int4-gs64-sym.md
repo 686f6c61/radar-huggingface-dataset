@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - No hay datos publicados de evaluacion, por lo que no se puede cuantificar la degradacion real introducida por la cuantizacion W4G64.
 - La cuantizacion a 4 bits con group size 64 introduce una perdida de precision que el propio autor reconoce como leve, pero no medida.
 - Idiomas: los metadatos declaran unicamente ingles, lo que limita su uso en castellano u otros idiomas.
-- La model card incluye la etiqueta `inference: false`, lo que sugiere que el modelo no esta habilitado para el servicio de inferencia alojado de HuggingFace; el despliegue debe hacerse por cuenta propia.
+- La model card incluye la etiqueta `inference: false`, lo que sugiere que el modelo no esta habilitado para el servicio de inferencia alojado de Hugging Face; el despliegue debe hacerse por cuenta propia.
 - Formato de pesos AutoGPTQ: no es compatible con llama.cpp, Ollama ni otros runtimes que requieran GGUF sin una conversion adicional que no esta documentada.
 - Restricciones de licencia: el artefacto declara Apache 2.0, pero el autor anade un descargo de responsabilidad indicando que se ha desarrollado solo con fines de investigacion y sin garantia, lo que conviene revisar antes de un uso comercial en produccion.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala, no mitigado por este proceso de cuantizacion ni por alineamiento.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-sym
+- Hugging Face del artefacto: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int4-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Variante AutoRound INT4 GS64 simetrica: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym
 - Variante Instruct AutoGPTQ INT4 GS64 simetrica: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym

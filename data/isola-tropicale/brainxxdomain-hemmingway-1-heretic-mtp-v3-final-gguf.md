@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf` es un modelo de lenguaje de gran tamano publicado en HuggingFace por el usuario `isola-tropicale`, distribuido unicamente en formato GGUF y etiquetado como `conversational`. El repositorio declara 27.320.697.856 parametros (27,3 mil millones) y ocupa 29,0 GB, lo que situa al modelo en la categoria de densidades intermedias (rango 24-34B) y sugiere una cuantizacion de alta precision, en torno a 8,5 bits por parametro.
+`isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf` es un modelo de lenguaje de gran tamano publicado en Hugging Face por el usuario `isola-tropicale`, distribuido unicamente en formato GGUF y etiquetado como `conversational`. El repositorio declara 27.320.697.856 parametros (27,3 mil millones) y ocupa 29,0 GB, lo que situa al modelo en la categoria de densidades intermedias (rango 24-34B) y sugiere una cuantizacion de alta precision, en torno a 8,5 bits por parametro.
 
 La informacion publica disponible es practicamente nula: la model card solo contiene la declaracion de licencia (`gpl-3.0`), sin descripcion, sin ficha tecnica, sin datos de entrenamiento y sin resultados de evaluacion. El nombre del repositorio incluye los terminos `Heretic` y `MTP`, que en la practica habitual de la comunidad suelen asociarse a ajustes orientados a eliminar el alineamiento de rechazo y a modulos de prediccion multi-token, respectivamente, pero el autor no confirma ninguna de estas interpretaciones.
 
@@ -101,5 +101,5 @@ Diferencias relevantes: la licencia GPL-3.0 es mas restrictiva para integracion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf
+- Hugging Face: https://huggingface.co/isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf
 - Paper, blog, repositorio o demo: no disponible (la busqueda web no ha devuelto ningun resultado relacionado con el modelo; los resultados obtenidos corresponden a la comuna francesa de Isola, a la estacion de esqui Isola 2000 y a la web del ayuntamiento, sin relacion tecnica con este repositorio)

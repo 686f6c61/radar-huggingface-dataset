@@ -22,7 +22,7 @@ Su interés principal es la investigación en RL post-entrenamiento y en selecci
 | Modelo base declarado | Qwen/Qwen3-4B-Instruct-2507 |
 | Revisión de carga | `main` |
 | Tamaño del repositorio | 105,9 GB |
-| Descargas en HuggingFace | 1.086 |
+| Descargas en Hugging Face | 1.086 |
 
 ## Arquitectura y entrenamiento
 

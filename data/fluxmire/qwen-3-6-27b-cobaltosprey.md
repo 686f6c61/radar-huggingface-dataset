@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen-3.6-27B-CobaltOsprey es un ajuste fino derivado de Qwen/Qwen3.6-27B a través del modelo intermedio Tooony133/Qwen-3.6-27B-SkinnyPete, publicado por el usuario de HuggingFace Fluxmire. El repositorio almacena los pesos en FP8 mediante el formato compressed-tensors y declara 27.356.728.560 parámetros (unos 27,36 mil millones), con un tamaño total de repositorio de 31,2 GB.
+Qwen-3.6-27B-CobaltOsprey es un ajuste fino derivado de Qwen/Qwen3.6-27B a través del modelo intermedio Tooony133/Qwen-3.6-27B-SkinnyPete, publicado por el usuario de Hugging Face Fluxmire. El repositorio almacena los pesos en FP8 mediante el formato compressed-tensors y declara 27.356.728.560 parámetros (unos 27,36 mil millones), con un tamaño total de repositorio de 31,2 GB.
 
-La etiqueta de pipeline es image-text-to-text, lo que indica un modelo multimodal que acepta imagen y texto como entrada y devuelve texto; también figuran las etiquetas conversational y qwen3_5, que lo sitúan en la familia Qwen 3.x. La licencia declarada es Apache-2.0 y el repositorio está marcado como compatible con los inference endpoints de HuggingFace.
+La etiqueta de pipeline es image-text-to-text, lo que indica un modelo multimodal que acepta imagen y texto como entrada y devuelve texto; también figuran las etiquetas conversational y qwen3_5, que lo sitúan en la familia Qwen 3.x. La licencia declarada es Apache-2.0 y el repositorio está marcado como compatible con los inference endpoints de Hugging Face.
 
 El interés práctico de esta ficha es acotado: se trata de un derivado comunitario recién publicado (15 de septiembre de 2026) con cero descargas y cero likes, sin resultados de benchmarks ni model card detallada que describa el entrenamiento. Sirve para documentar la cadena de derivación Qwen3.6-27B → SkinnyPete → CobaltOsprey y la distribución de pesos en FP8, pero no hay datos publicados sobre el proceso de ajuste ni sobre su calidad final.
 
@@ -96,7 +96,7 @@ Alternativas de otros desarrolladores con tamano y categoria equivalentes: no di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fluxmire/Qwen-3.6-27B-CobaltOsprey
+- Repositorio en Hugging Face: https://huggingface.co/Fluxmire/Qwen-3.6-27B-CobaltOsprey
 - Modelo base directo: https://huggingface.co/Tooony133/Qwen-3.6-27B-SkinnyPete
 - Modelo original de la cadena: https://huggingface.co/Qwen/Qwen3.6-27B
 - Texto de licencia referenciado: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE

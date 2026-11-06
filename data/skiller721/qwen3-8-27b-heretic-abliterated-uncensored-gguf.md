@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Skiller721/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF](https://huggingface.co/Skiller721/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF)
+- Repositorio Hugging Face: [Skiller721/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF](https://huggingface.co/Skiller721/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF)
 - Modelo base (trohrbaugh/Qwen3.8-27B-heretic-ara): [https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara)
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

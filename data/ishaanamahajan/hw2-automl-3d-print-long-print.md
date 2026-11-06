@@ -123,7 +123,7 @@ No hay datos de modelos comparables en la informacion disponible. Como referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishaanamahajan/hw2-automl-3d-print-long-print
+- Modelo en Hugging Face: https://huggingface.co/ishaanamahajan/hw2-automl-3d-print-long-print
 - Dataset de origen: https://huggingface.co/datasets/yennik16/3d-print-jobs-tabular
 - AutoGluon (libreria): https://auto.gluon.ai/
 - Documentacion de AutoGluon Tabular: https://auto.gluon.ai/stable/tutorials/tabular/index.html

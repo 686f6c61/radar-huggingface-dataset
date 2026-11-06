@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3-MXFP8-mic (este) | 25,9M | no disponible | Fixture de test | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-M3-MXFP8 | no disponible | no disponible | Modelo vision-lenguaje real | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable | no disponible | Fixtures de test | no disponible | HuggingFace (org huggingface-mic) |
+| MiniMax-M3-MXFP8-mic (este) | 25,9M | no disponible | Fixture de test | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-M3-MXFP8 | no disponible | no disponible | Modelo vision-lenguaje real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable | no disponible | Fixtures de test | no disponible | Hugging Face (org huggingface-mic) |
 
 No se dispone de datos de rendimiento ni de especificaciones completas del modelo base en la informacion proporcionada, por lo que no es posible una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/MiniMax-M3-MXFP8-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/MiniMax-M3-MXFP8-mic
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3-MXFP8
 - Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/MiniMax-M3-MXFP8-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

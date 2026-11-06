@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ZuoShun-AI/sb es un repositorio alojado en HuggingFace por el usuario ZuoShun-AI, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia, sin ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la region (us).
+ZuoShun-AI/sb es un repositorio alojado en Hugging Face por el usuario ZuoShun-AI, publicado bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos con la licencia, sin ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de la region (us).
 
-Los datos publicos del repositorio indican 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (27 de septiembre de 2026, segun la marca temporal de HuggingFace), lo que sugiere una publicacion reciente y sin actividad de la comunidad registrada hasta la fecha. No se ha localizado documentacion adicional, paper, blog tecnico ni anuncio que describa el modelo.
+Los datos publicos del repositorio indican 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (27 de septiembre de 2026, segun la marca temporal de Hugging Face), lo que sugiere una publicacion reciente y sin actividad de la comunidad registrada hasta la fecha. No se ha localizado documentacion adicional, paper, blog tecnico ni anuncio que describa el modelo.
 
 Dado que no existe informacion tecnica verificable, esta ficha se limita a documentar el estado del repositorio y a marcar explicitamente como "no disponible" todos aquellos parametros que no pueden confirmarse con las fuentes consultadas. No se debe asumir ninguna capacidad, tamano ni arquitectura a partir del identificador del repositorio.
 
@@ -39,7 +39,7 @@ Tampoco esta disponible el regimen de entrenamiento: no se indica el volumen de 
 
 No es posible proponer casos de uso concretos y verificables sin conocer la modalidad, el tamano, el contexto y el regimen de licencia efectivo del modelo. Los escenarios que se enumeran a continuacion son unicamente marcos de evaluacion previa, no recomendaciones confirmadas:
 
-- Validacion de artefactos en HuggingFace: conviene descargar el repositorio y listar sus ficheros para determinar el formato real de pesos (safetensors, GGUF, PyTorch binario) antes de plantear cualquier integracion.
+- Validacion de artefactos en Hugging Face: conviene descargar el repositorio y listar sus ficheros para determinar el formato real de pesos (safetensors, GGUF, PyTorch binario) antes de plantear cualquier integracion.
 - Prueba de inferencia aislada: ejecutar el modelo en un entorno controlado para determinar si es de tipo texto, vision, difusion u otro, dado que el pipeline no esta declarado.
 - Analisis de licencia para uso comercial: la licencia Apache 2.0 permite uso comercial y modificacion, pero debe confirmarse que los pesos publicados estan efectivamente cubiertos por esa licencia y no por terminos adicionales no documentados.
 - Evaluacion de reproducibilidad: al no existir model card, cualquier uso en produccion requeriria generar documentacion propia (modelo, tokenizador, configuracion) a partir del contenido del repositorio.
@@ -64,7 +64,7 @@ No es posible establecer una comparativa fiable: no se conocen la categoria, el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| ZuoShun-AI/sb | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace sin actividad registrada | no disponible |
+| ZuoShun-AI/sb | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face sin actividad registrada | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable: no se conocen la categoria, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZuoShun-AI/sb
-- Perfil del autor en HuggingFace: https://huggingface.co/ZuoShun-AI
+- Repositorio en Hugging Face: https://huggingface.co/ZuoShun-AI/sb
+- Perfil del autor en Hugging Face: https://huggingface.co/ZuoShun-AI
 - Otro repositorio del mismo autor (sin relacion confirmada con este modelo): https://huggingface.co/ZuoShun-AI/visual-align-model-assets
 - Paper, blog tecnico o repositorio de codigo asociado: no disponible

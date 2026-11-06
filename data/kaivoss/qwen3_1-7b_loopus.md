@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3_1.7B_LoopUS (este) | 2,03B | 262.144 (YaRN) | Refinamiento latente iterado (LoopUS) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B-Base | 1,7B (aprox.) | 32.768 nativo | Transformer estándar | Apache 2.0 | HuggingFace |
-| Thrillcrazyer/Qwen3_1.7B_LoopUS (original) | 2,03B | 40.960 | Refinamiento latente iterado (LoopUS) | Apache 2.0 | HuggingFace |
+| Qwen3_1.7B_LoopUS (este) | 2,03B | 262.144 (YaRN) | Refinamiento latente iterado (LoopUS) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B-Base | 1,7B (aprox.) | 32.768 nativo | Transformer estándar | Apache 2.0 | Hugging Face |
+| Thrillcrazyer/Qwen3_1.7B_LoopUS (original) | 2,03B | 40.960 | Refinamiento latente iterado (LoopUS) | Apache 2.0 | Hugging Face |
 
 La comparación directa con modelos de razonamiento de tamaño similar (por ejemplo, variantes Qwen3 con thinking mode) no está disponible en la información proporcionada, al no haberse publicado benchmarks.
 
@@ -82,7 +82,7 @@ La comparación directa con modelos de razonamiento de tamaño similar (por ejem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaivoss/Qwen3_1.7B_LoopUS
+- Hugging Face: https://huggingface.co/kaivoss/Qwen3_1.7B_LoopUS
 - Modelo original: https://huggingface.co/Thrillcrazyer/Qwen3_1.7B_LoopUS
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Paper: https://arxiv.org/abs/2605.11011

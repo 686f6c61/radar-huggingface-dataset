@@ -42,7 +42,7 @@ Dado que el modelo no está entrenado, los casos de uso realistas se limitan al 
 
 - **Pruebas de integración en pipelines de CI/CD**: el script `run.py` incluye un ejemplo de smoke test que puede ejecutarse para verificar que la implementación compila y ejecuta sin errores en un entorno determinado.
 - **Estudio de la arquitectura Flamingo**: los desarrolladores pueden inspeccionar el código para comprender cómo se implementan la atención por grupos, la fusión de bajo rango y la normalización en una base de código mínima.
-- **Desarrollo de adaptadores para carga automática**: la model card indica que las APIs genéricas de HuggingFace requieren un adaptador explícito; este repositorio sirve como caso de prueba para escribir dichos adaptadores.
+- **Desarrollo de adaptadores para carga automática**: la model card indica que las APIs genéricas de Hugging Face requieren un adaptador explícito; este repositorio sirve como caso de prueba para escribir dichos adaptadores.
 - **Experimentos de inicialización**: se puede usar el checkpoint de 33.088 parámetros para verificar que el guardado y la carga de pesos en formato safetensors funcionan correctamente.
 - **Educación en ingeniería de modelos**: como ejemplo de cómo estructurar un repositorio de modelo con `config.json`, `training_args.json` y pesos, es útil para cursos o tutoriales.
 - **Base para un entrenamiento desde cero**: quien desee experimentar con Flamingo a pequeña escala puede partir de esta implementación, aunque necesitará datos y recursos propios.
@@ -74,6 +74,6 @@ No disponible. No existe una categoría de modelos comparables porque este repos
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/ivanwang96/generation-2024)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ivanwang96)
-- [Datasets del autor en HuggingFace](https://huggingface.co/ivanwang96/datasets)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/ivanwang96/generation-2024)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ivanwang96)
+- [Datasets del autor en Hugging Face](https://huggingface.co/ivanwang96/datasets)

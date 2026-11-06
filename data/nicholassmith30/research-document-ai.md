@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicholassmith30/research-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas exploratorias sobre Document AI publicado en HuggingFace. El repositorio contiene únicamente `notes.md` y `README.md`, y su propio autor indica que se trata de un documento de trabajo que registra el alcance de una pregunta de investigación, los factores de confusión previsibles y los requisitos de reproducibilidad antes de reportar cualquier resultado. El tag `transformer` y la presencia de un archivo `safetensors` con 24.832 parametros no van acompanados de `config.json`, tokenizador, codigo de inferencia ni tarjeta de pipeline.
+`nicholassmith30/research-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas exploratorias sobre Document AI publicado en Hugging Face. El repositorio contiene únicamente `notes.md` y `README.md`, y su propio autor indica que se trata de un documento de trabajo que registra el alcance de una pregunta de investigación, los factores de confusión previsibles y los requisitos de reproducibilidad antes de reportar cualquier resultado. El tag `transformer` y la presencia de un archivo `safetensors` con 24.832 parametros no van acompanados de `config.json`, tokenizador, codigo de inferencia ni tarjeta de pipeline.
 
 El artefacto de pesos tiene 24.832 parametros totales, un orden de magnitud propio de un tensor aislado (por ejemplo, una matriz de embeddings pequena o un modulo inicializado) y no de un transformer funcional. El tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes desde su creacion el 18 de octubre de 2026.
 
@@ -23,7 +23,7 @@ Su relevancia actual es documental, no tecnica: propone un marco de evaluacion s
 
 ## Arquitectura y entrenamiento
 
-El unico indicio arquitectonico es el tag `transformer` de HuggingFace. No se publica `config.json`, ficha de arquitectura, numero de capas, dimension oculta, mecanismo de atencion ni funcion de activacion. Con 24.832 parametros totales, el artefacto es incompatible con un modelo de lenguaje utilizable: queda entre tres y cuatro ordenes de magnitud por debajo de los transformers pequenos habituales en tareas de documentos. Lo mas plausible es que se trate de un tensor parcial o de un modulo de prueba, pero esto no puede confirmarse con la informacion disponible.
+El unico indicio arquitectonico es el tag `transformer` de Hugging Face. No se publica `config.json`, ficha de arquitectura, numero de capas, dimension oculta, mecanismo de atencion ni funcion de activacion. Con 24.832 parametros totales, el artefacto es incompatible con un modelo de lenguaje utilizable: queda entre tres y cuatro ordenes de magnitud por debajo de los transformers pequenos habituales en tareas de documentos. Lo mas plausible es que se trate de un tensor parcial o de un modulo de prueba, pero esto no puede confirmarse con la informacion disponible.
 
 No hay evidencia de entrenamiento: la model card no menciona volumen de tokens, composicion del dataset, etapas de preentrenamiento, ajuste supervisado, RLHF ni DPO. El autor afirma explicitamente que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Tampoco se describen innovaciones tecnicas como atencion lineal, decodificacion especulativa o mezcla de expertos.
 
@@ -77,7 +77,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de D
 
 - No es un modelo entrenado: el autor declara que no existe checkpoint entrenado ni codigo liberado. No debe citarse como modelo de Document AI ni como resultado de investigacion.
 - No hay tokenizador, configuracion ni pipeline de inferencia, por lo que el artefacto no puede producir predicciones sobre documentos.
-- El tag `transformer` entra en conflicto con el contenido real del repositorio (notas en Markdown y un tensor de ~25 mil parametros); la clasificacion de HuggingFace no es fiable en este caso.
+- El tag `transformer` entra en conflicto con el contenido real del repositorio (notas en Markdown y un tensor de ~25 mil parametros); la clasificacion de Hugging Face no es fiable en este caso.
 - Riesgo de alucinacion: no evaluable, al no existir generacion de texto. Si alguien integra el tensor en un sistema mayor, cualquier salida seria atribuible a ese sistema y no a este repositorio.
 - Sesgos conocidos: no disponibles; no se documenta composicion de datos ni proceso de entrenamiento.
 - Limitaciones de idioma: el campo de idiomas esta vacio; el unico idioma documentado es el ingles de las notas.
@@ -89,7 +89,7 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables de D
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicholassmith30/research-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/nicholassmith30/research-document-ai
 - Model card (README) del autor: incluida en la pagina anterior
 - Artefacto de pesos: https://huggingface.co/nicholassmith30/research-document-ai/tree/main
 - Notas de investigacion (`notes.md`): https://huggingface.co/nicholassmith30/research-document-ai/blob/main/notes.md

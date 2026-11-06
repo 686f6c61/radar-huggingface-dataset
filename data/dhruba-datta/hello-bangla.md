@@ -30,7 +30,7 @@ No hubo entrenamiento adicional en esta publicacion. Segun la model card, el fic
 ## Capacidades
 
 - Transcripcion de audio a texto en bengali (bn).
-- Reconocimiento automatico del habla, etiquetado en HuggingFace con el pipeline `automatic-speech-recognition`.
+- Reconocimiento automatico del habla, etiquetado en Hugging Face con el pipeline `automatic-speech-recognition`.
 - Funcionamiento local dentro de una aplicacion de dictado (Hello para Mac), sin envio de audio a servidores externos segun la descripcion del producto.
 - Inferencia con cuantizacion Q8_0 sobre el runtime transcribe.cpp.
 - No se documentan capacidades de traduccion de voz, identificacion de hablante, diarizacion, marcas de tiempo por palabra ni transcripcion multilingue: el unico idioma declarado es el bengali.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hello Bangla (este modelo) | 808,9 M | Ventanas de 30 s (arquitectura Whisper) | bengali | Apache 2.0 | GGUF Q8_0 en HuggingFace, 0 descargas |
+| Hello Bangla (este modelo) | 808,9 M | Ventanas de 30 s (arquitectura Whisper) | bengali | Apache 2.0 | GGUF Q8_0 en Hugging Face, 0 descargas |
 | mozilla-ai/whisper-large-v3-turbo-bn | no disponible en la informacion proporcionada | Ventanas de 30 s (arquitectura Whisper) | bengali | Apache 2.0 segun la model card de este repositorio | Modelo de origen del que se convirtio este fichero |
 | Whisper large-v3-turbo (OpenAI) | ~809 M | Ventanas de 30 s | Multilingue (amplia cobertura) | MIT | Pesos originales ampliamente distribuidos |
 | Whisper large-v3 (OpenAI) | ~1550 M | Ventanas de 30 s | Multilingue (amplia cobertura) | MIT | Pesos originales ampliamente distribuidos |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhruba-datta/hello-bangla
+- Modelo en Hugging Face: https://huggingface.co/dhruba-datta/hello-bangla
 - Aplicacion Hello (dictado por voz para Mac): https://hello.minutecampus.com
 - Modelo de origen: https://huggingface.co/mozilla-ai/whisper-large-v3-turbo-bn
 - Repositorio de transcribe.cpp: no se proporciona enlace en la informacion disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ethanpaker/al_83_5dobpqapnr` es un modelo multimodal de tipo imagen-texto a texto desarrollado por el usuario ethanpaker en HuggingFace. Según las etiquetas publicadas, se trata de un modelo basado en arquitectura MoE (mezcla de expertos) de la familia Qwen3.5, con capacidad conversacional y compatible con el pipeline `image-text-to-text`. Cuenta con aproximadamente 35.952 millones de parámetros totales, lo que lo sitúa en la gama de modelos grandes de 36B. El repositorio tiene un tamaño de 71,9 GB y los pesos están en formato `safetensors`.
+El modelo `ethanpaker/al_83_5dobpqapnr` es un modelo multimodal de tipo imagen-texto a texto desarrollado por el usuario ethanpaker en Hugging Face. Según las etiquetas publicadas, se trata de un modelo basado en arquitectura MoE (mezcla de expertos) de la familia Qwen3.5, con capacidad conversacional y compatible con el pipeline `image-text-to-text`. Cuenta con aproximadamente 35.952 millones de parámetros totales, lo que lo sitúa en la gama de modelos grandes de 36B. El repositorio tiene un tamaño de 71,9 GB y los pesos están en formato `safetensors`.
 
-El modelo está publicado con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Sin embargo, el acceso es restringido (gated), por lo que los usuarios deben aceptar las condiciones de uso en HuggingFace antes de poder descargarlo. No se dispone de información pública sobre la longitud de contexto, idiomas soportados ni detalles de entrenamiento más allá de las etiquetas. Su relevancia radica en ser un modelo multimodal de gran tamaño con arquitectura MoE, orientado a tareas de conversación y comprensión de imágenes, aunque su adopción aún es muy limitada (0 descargas y 0 likes en el momento de la consulta).
+El modelo está publicado con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Sin embargo, el acceso es restringido (gated), por lo que los usuarios deben aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. No se dispone de información pública sobre la longitud de contexto, idiomas soportados ni detalles de entrenamiento más allá de las etiquetas. Su relevancia radica en ser un modelo multimodal de gran tamaño con arquitectura MoE, orientado a tareas de conversación y comprensión de imágenes, aunque su adopción aún es muy limitada (0 descargas y 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de datos comparativos fiables. El modelo se posiciona en la catego
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace; no se puede descargar sin autorización.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face; no se puede descargar sin autorización.
 - Sin documentación pública: no hay papers, blogs ni guías de uso asociadas al repositorio.
 - Sin datos de entrenamiento: se desconoce la composición del dataset, lo que impide evaluar sesgos o riesgos de alucinación.
 - Sin benchmarks: no hay evidencia de rendimiento en tareas estándar, por lo que su calidad es incierta.
@@ -72,6 +72,6 @@ No se dispone de datos comparativos fiables. El modelo se posiciona en la catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanpaker/al_83_5dobpqapnr
+- Modelo en Hugging Face: https://huggingface.co/ethanpaker/al_83_5dobpqapnr
 - Perfil del autor: https://huggingface.co/ethanpaker
 - Lista de modelos del autor: https://huggingface.co/ethanpaker/models

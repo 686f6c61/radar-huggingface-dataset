@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de clasificación de imágenes publicado por el usuario Ramos-Ramos bajo el identificador `convnext_large.custom_imagenet_threshold_0.25`. Se trata de un ajuste fino (fine-tuning) de la arquitectura ConvNeXt-Large, una red convolucional pura de 197.767.336 parámetros (dato extraído del fichero de pesos en safetensors), implementada mediante la librería `timm` y compatible con el ecosistema `transformers` de HuggingFace. El repositorio ocupa 1,6 GB y se distribuye bajo licencia Apache-2.0.
+Este repositorio contiene un modelo de clasificación de imágenes publicado por el usuario Ramos-Ramos bajo el identificador `convnext_large.custom_imagenet_threshold_0.25`. Se trata de un ajuste fino (fine-tuning) de la arquitectura ConvNeXt-Large, una red convolucional pura de 197.767.336 parámetros (dato extraído del fichero de pesos en safetensors), implementada mediante la librería `timm` y compatible con el ecosistema `transformers` de Hugging Face. El repositorio ocupa 1,6 GB y se distribuye bajo licencia Apache-2.0.
 
 El modelo resuelve una tarea de clasificación de imágenes (pipeline `image-classification`). El nombre del repositorio sugiere un entrenamiento sobre un conjunto de clases derivado de ImageNet ("custom_imagenet") y la aplicación de un umbral de decisión de 0,25, probablemente sobre una salida sigmoide, pero la model card del autor está vacía: solo contiene las etiquetas de cabecera, sin descripción, sin lista de clases, sin métricas ni instrucciones de uso. Cualquier afirmación sobre el dataset exacto, el número de clases o el procedimiento de ajuste sería especulativa.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Resolución típica | Licencia (referencia) | Disponibilidad |
 |---|---|---|---|---|---|
-| convnext_large.custom_imagenet_threshold_0.25 (este modelo) | ConvNeXt-Large ajustado | 197.767.336 | no documentada | apache-2.0 | HuggingFace (`timm`) |
-| ConvNeXt-Large original (ImageNet-1k) | ConvNeXt-Large | ~198 M | 224 (ajustable a 384) | MIT (repositorio oficial de Facebook Research); pesos de `timm` bajo Apache-2.0 | `timm`, HuggingFace |
-| Swin-Large | Transformer jerárquico con ventanas desplazadas | ~197 M | 224 (ajustable a 384) | MIT (repositorio oficial de Microsoft) | `timm`, HuggingFace |
-| ViT-L/16 | Transformer de visión con parches 16x16 | ~304 M | 224 (ajustable a 384) | Apache-2.0 (checkpoints de Google) | `timm`, HuggingFace |
-| EfficientNet-B7 | CNN con escalado compuesto | ~66 M | 600 | Apache-2.0 (checkpoints de Google) | `timm`, HuggingFace |
+| convnext_large.custom_imagenet_threshold_0.25 (este modelo) | ConvNeXt-Large ajustado | 197.767.336 | no documentada | apache-2.0 | Hugging Face (`timm`) |
+| ConvNeXt-Large original (ImageNet-1k) | ConvNeXt-Large | ~198 M | 224 (ajustable a 384) | MIT (repositorio oficial de Facebook Research); pesos de `timm` bajo Apache-2.0 | `timm`, Hugging Face |
+| Swin-Large | Transformer jerárquico con ventanas desplazadas | ~197 M | 224 (ajustable a 384) | MIT (repositorio oficial de Microsoft) | `timm`, Hugging Face |
+| ViT-L/16 | Transformer de visión con parches 16x16 | ~304 M | 224 (ajustable a 384) | Apache-2.0 (checkpoints de Google) | `timm`, Hugging Face |
+| EfficientNet-B7 | CNN con escalado compuesto | ~66 M | 600 | Apache-2.0 (checkpoints de Google) | `timm`, Hugging Face |
 
 El rendimiento comparado no está disponible: este checkpoint no publica métricas. Las licencias de los modelos alternativos se indican a partir de la información publicada por sus autores y conviene verificarlas antes de un uso comercial.
 
@@ -96,7 +96,7 @@ El rendimiento comparado no está disponible: este checkpoint no publica métric
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ramos-Ramos/convnext_large.custom_imagenet_threshold_0.25
+- Hugging Face: https://huggingface.co/Ramos-Ramos/convnext_large.custom_imagenet_threshold_0.25
 - Artículo de la arquitectura base ConvNeXt (*A ConvNeXt for the 2020s*, Liu et al., 2022): https://arxiv.org/abs/2201.03545
 - Repositorio oficial de ConvNeXt: https://github.com/facebookresearch/ConvNeXt
 - Librería `timm` (PyTorch Image Models): https://github.com/huggingface/pytorch-image-models

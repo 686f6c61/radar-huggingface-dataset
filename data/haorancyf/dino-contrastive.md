@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-contrastive es un repositorio publicado por el usuario haorancyf en HuggingFace que contiene una implementación funcional de una arquitectura tipo Dino orientada a aprendizaje contrastivo, con una configuración declarada como "huge". El propio autor especifica que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que deliberadamente omite cualquier afirmación de rendimiento o comparativa con benchmarks.
+dino-contrastive es un repositorio publicado por el usuario haorancyf en Hugging Face que contiene una implementación funcional de una arquitectura tipo Dino orientada a aprendizaje contrastivo, con una configuración declarada como "huge". El propio autor especifica que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que deliberadamente omite cualquier afirmación de rendimiento o comparativa con benchmarks.
 
 El dato más relevante para cualquier evaluador es que el fichero `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado. El recuento real de parámetros en safetensors es de 24.832, una cifra minúscula que confirma que se trata de una configuración de juguete o de verificación, no de un modelo con capacidad de representación útil. El pipeline no está declarado, y la model card no documenta idiomas ni contexto.
 
@@ -26,7 +26,7 @@ Por tanto, este repositorio debe interpretarse como material de partida para des
 | Normalización | RMSNorm |
 | Optimizador de la receta por defecto | Lion |
 | Planificador de learning rate | polynomial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-09-17 |
@@ -82,7 +82,7 @@ No se dispone de datos comparativos en la información proporcionada. Los result
 
 | Modelo | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| haorancyf/dino-contrastive | 24.832 | no disponible | BSD-3-Clause | Checkpoint de inicialización, sin entrenar | HuggingFace, 0 descargas |
+| haorancyf/dino-contrastive | 24.832 | no disponible | BSD-3-Clause | Checkpoint de inicialización, sin entrenar | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,15 +93,15 @@ No se dispone de datos comparativos en la información proporcionada. Los result
 - Riesgo de alucinación: no aplica en el sentido generativo, ya que no se documenta capacidad de generación de texto; el riesgo real es interpretar este repositorio como un modelo funcional cuando es un esqueleto de código.
 - Con 24.832 parámetros, la capacidad de representación es prácticamente nula; no es viable como extractor de características en producción.
 - No se documenta longitud de contexto ni idiomas soportados, por lo que no se puede planificar su uso multilingüe o con secuencias largas.
-- Implementación personalizada: las utilidades estándar de HuggingFace no podrán cargar el modelo sin escribir un adaptador específico.
+- Implementación personalizada: las utilidades estándar de Hugging Face no podrán cargar el modelo sin escribir un adaptador específico.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución, pero el propio autor recomienda revisar por separado los términos de los datos de origen cuando se use con datasets externos.
 - El repositorio tiene 0 descargas y 0 likes, un tamaño de 0,0 GB declarado y no cuenta con validación externa de la comunidad.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haorancyf/dino-contrastive
+- Modelo en Hugging Face: https://huggingface.co/haorancyf/dino-contrastive
 - Paper de referencia DINO (no proporcionado en los resultados de búsqueda): no disponible
-- Repositorio de código asociado: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código asociado: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face)
 - Demos o espacios: no disponible
 - Enlaces relevantes encontrados en la búsqueda web: no disponible (los resultados recibidos correspondían a páginas corporativas de Microsoft y no guardan relación con el modelo)

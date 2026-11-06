@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MLP-Memory-for-Mistral-7B-v0.3 | 1.543.540.736 (rama) + 7B (base) | no disponible | Rama de memoria MLP sobre Mistral-7B-v0.3 | no disponible | HuggingFace, 0 descargas |
+| MLP-Memory-for-Mistral-7B-v0.3 | 1.543.540.736 (rama) + 7B (base) | no disponible | Rama de memoria MLP sobre Mistral-7B-v0.3 | no disponible | Hugging Face, 0 descargas |
 | Mistral-7B-v0.3 (modelo base) | 7B | 32.768 tokens (segun documentacion de Mistral) | LLM causal denso | Apache 2.0 (segun Mistral) | Ampliamente disponible |
 | LoRA / adapters sobre Mistral-7B | Tipicamente decenas de millones | Heredado del base | Adaptacion de bajo rango | Variable | Ampliamente disponible |
 
@@ -87,5 +87,5 @@ La comparacion directa con LoRA no es equivalente en proposito: la rama MLP anad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rubin-Wei/MLP-Memory-for-Mistral-7B-v0.3
+- Modelo en Hugging Face: https://huggingface.co/Rubin-Wei/MLP-Memory-for-Mistral-7B-v0.3
 - Modelo base Mistral-7B-v0.3: https://huggingface.co/mistralai/Mistral-7B-v0.3

@@ -92,7 +92,7 @@ No se dispone de datos verificados de benchmarks ni de parámetros de los modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-4k
+- Hugging Face: https://huggingface.co/shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-4k
 - Framework openpi (referencia del stack, no incluida en los resultados de búsqueda): https://github.com/Physical-Intelligence/openpi
 - Paper o blog de pi0.5: no disponible en la informacion proporcionada
 - Dataset DROID 1.0.1: no disponible enlace en la informacion proporcionada

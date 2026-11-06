@@ -79,10 +79,10 @@ La comparación directa de rendimiento no es posible porque Berna R5 no tiene be
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Berna R5 (PoC) | 50M | 8192 | Berna Research License 1.0 (solo investigación; comercial requiere licencia) | HuggingFace |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace |
-| DistilGPT-2 | 82M | 1024 | Apache 2.0 | HuggingFace |
-| TinyLlama | 1.1B | 2048 | Apache 2.0 | HuggingFace |
+| Berna R5 (PoC) | 50M | 8192 | Berna Research License 1.0 (solo investigación; comercial requiere licencia) | Hugging Face |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 | Apache 2.0 | Hugging Face |
+| TinyLlama | 1.1B | 2048 | Apache 2.0 | Hugging Face |
 
 Berna R5 ofrece una longitud de contexto mayor (8192) que los modelos comparables de tamaño similar, pero su licencia restringe el uso comercial y carece de benchmarks que permitan evaluar su calidad. GPT-2 small y DistilGPT-2 tienen licencias permisivas, mientras que TinyLlama, aunque más grande, también es de uso libre.
 
@@ -105,7 +105,7 @@ Berna R5 ofrece una longitud de contexto mayor (8192) que los modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BernaLabs/berna-r5-poc
+- Hugging Face: https://huggingface.co/BernaLabs/berna-r5-poc
 - GitHub: https://github.com/berna-labs/berna-r5
 - Paper: pendiente de publicación en arXiv (no disponible enlace)
 - Esquema de registro: registry/schema.sql (en el repositorio de GitHub)

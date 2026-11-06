@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque de adaptacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `maxbennett/generalized-neural-memory-iclft-personamem` | 8,03 B | No disponible | Documentos en contexto (ICL-FT) | Llama 3 Community License | HuggingFace, 0 descargas |
-| `YuWangX/memoryllm-8b-chat` (modelo base declarado) | No disponible en la informacion | No disponible | Memoria latente | No disponible en la informacion | HuggingFace |
-| Llama-3-8B-Instruct (familia de referencia) | Orden de 8 B (no verificado en esta busqueda) | No disponible en la informacion | Ajuste por instrucciones | Llama 3 Community License | HuggingFace |
+| `maxbennett/generalized-neural-memory-iclft-personamem` | 8,03 B | No disponible | Documentos en contexto (ICL-FT) | Llama 3 Community License | Hugging Face, 0 descargas |
+| `YuWangX/memoryllm-8b-chat` (modelo base declarado) | No disponible en la informacion | No disponible | Memoria latente | No disponible en la informacion | Hugging Face |
+| Llama-3-8B-Instruct (familia de referencia) | Orden de 8 B (no verificado en esta busqueda) | No disponible en la informacion | Ajuste por instrucciones | Llama 3 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones dentro de la información proporcionada, por lo que la comparativa se limita a arquitectura, enfoque y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones dentro d
 - Es un artefacto de investigación: 0 descargas y 0 *likes* en el momento de redactar la ficha, y su uso está ligado al repositorio del autor, no a una integración estándar.
 - La model card es mínima: no documenta idiomas, contexto, datos de entrenamiento, composición del corpus, método de alineación ni sesgos conocidos.
 - Riesgo de alucinación no evaluado en la información disponible; al depender del contexto, cualquier documento incorrecto introducido en la ventana se propaga directamente a la respuesta.
-- Discrepancia de formato: las etiquetas indican safetensors, mientras que el script de descarga lo coloca como `model.pth`, lo que puede complicar su carga con herramientas que esperan pesos en formato HuggingFace estándar.
+- Discrepancia de formato: las etiquetas indican safetensors, mientras que el script de descarga lo coloca como `model.pth`, lo que puede complicar su carga con herramientas que esperan pesos en formato Hugging Face estándar.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, lo que limita el despliegue en hardware de gama baja.
 - Licencia Llama 3 Community License: uso comercial sujeto a las condiciones de Meta, incluida la política de uso aceptable y la obligación de atribución; se debe revisar el umbral de usuarios activos mensuales antes de un despliegue comercial.
 - El nombre del modelo incluye `personamem`, por lo que su ajuste está orientado a ese benchmark concreto y no debe asumirse un comportamiento óptimo fuera de ese dominio.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones dentro d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-iclft-personamem
+- Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-iclft-personamem
 - Repositorio de código: https://github.com/maxbennett/Generalized-Neural-Memory
 - Preprint en arXiv (resumen): https://arxiv.org/abs/2602.23201
 - Preprint en arXiv (PDF): https://arxiv.org/pdf/2602.23201

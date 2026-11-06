@@ -99,7 +99,7 @@ La comparación es orientativa por tamaño. Frente a GPT-2 small y SmolLM-135M, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GodAsap/bussin-125m
+- Modelo en Hugging Face: https://huggingface.co/GodAsap/bussin-125m
 - Repositorio GitHub (código, pipeline de datos, evaluación y write-up): https://github.com/Ravikisha/GenZLLM
 - Resultados completos de RCE: `docs/results/rce_final-4067.txt` en el repositorio GitHub
 - Especificación de datos y niveles de fuente: `docs/SPEC.md`, sección 1.12, en el repositorio GitHub

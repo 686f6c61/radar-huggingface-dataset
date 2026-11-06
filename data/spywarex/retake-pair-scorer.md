@@ -69,9 +69,9 @@ Estos resultados son indicativos: la cobertura de hablantes y temáticas es redu
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `spywarex/retake-pair-scorer` | Cross-encoder especializado en detección de retakes | ~22 M por semilla | 128 tokens | Apache-2.0 | HuggingFace |
-| `cross-encoder/ms-marco-MiniLM-L-6-v2` | Cross-encoder de reordenación | ~22 M | 512 tokens | Apache-2.0 | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | Bi-encoder de embeddings | ~22 M | 256 tokens | Apache-2.0 | HuggingFace |
+| `spywarex/retake-pair-scorer` | Cross-encoder especializado en detección de retakes | ~22 M por semilla | 128 tokens | Apache-2.0 | Hugging Face |
+| `cross-encoder/ms-marco-MiniLM-L-6-v2` | Cross-encoder de reordenación | ~22 M | 512 tokens | Apache-2.0 | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | Bi-encoder de embeddings | ~22 M | 256 tokens | Apache-2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento publicadas frente a alternativas específicas de detección de retakes.
 
@@ -88,7 +88,7 @@ No se dispone de comparativas de rendimiento publicadas frente a alternativas es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spywarex/retake-pair-scorer
+- Modelo en Hugging Face: https://huggingface.co/spywarex/retake-pair-scorer
 - Repositorio del pipeline ReTake: https://github.com/spywareXd/re-take
 - Modelo "keeper": https://huggingface.co/spywarex/retake-keeper-qwen3-4b
 - Modelo base cross-encoder: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2

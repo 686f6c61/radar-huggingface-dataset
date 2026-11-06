@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `knightnemo/vam-robomimic-assets` es un conjunto de recursos de referencia para reproducir y evaluar experimentos de robótica basados en el framework robomimic, concretamente para el método DPPO (Diffusion Policy Policy Optimization). Fue publicado por el usuario `knightnemo`, que según su perfil de HuggingFace trabaja en modelos de mundo, modelos de acción, modelos VLA y adaptación en tiempo de ejecución.
+El repositorio `knightnemo/vam-robomimic-assets` es un conjunto de recursos de referencia para reproducir y evaluar experimentos de robótica basados en el framework robomimic, concretamente para el método DPPO (Diffusion Policy Policy Optimization). Fue publicado por el usuario `knightnemo`, que según su perfil de Hugging Face trabaja en modelos de mundo, modelos de acción, modelos VLA y adaptación en tiempo de ejecución.
 
 El repositorio contiene checkpoints congelados de políticas de difusión para tres tareas de manipulación robótica (lift, can y square), archivos de normalización de observaciones y acciones, y checkpoints de "expertos" (teachers) generados con recetas de fine-tuning de DPPO. Los pesos proceden de la release pública del proyecto DSRL, espejados sin cambios para garantizar la reproducibilidad, mientras que los expertos se entrenaron con las recetas descritas en la documentación del repositorio VAM.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Recurso | Tipo | Tareas cubiertas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `knightnemo/vam-robomimic-assets` | Assets de DPPO/robomimic | lift, can, square | MIT | HuggingFace |
+| `knightnemo/vam-robomimic-assets` | Assets de DPPO/robomimic | lift, can, square | MIT | Hugging Face |
 | Repositorio DSRL | Código y pesos originales | lift, can, square | no disponible | GitHub |
 | Repositorio VAM | Framework y recetas de fine-tuning | lift, can, square | no disponible | no disponible |
 
@@ -86,8 +86,8 @@ Los assets de este repositorio son una copia espejo de los pesos de DSRL, con el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/knightnemo/vam-robomimic-assets
-- Perfil del autor en HuggingFace: https://huggingface.co/knightnemo
+- Repositorio en Hugging Face: https://huggingface.co/knightnemo/vam-robomimic-assets
+- Perfil del autor en Hugging Face: https://huggingface.co/knightnemo
 - Framework robomimic: https://robomimic.github.io/
 - Repositorio DSRL mencionado en la model card: https://github.com/ajwagen/dsrl
 - Repositorio VAM: no disponible (se menciona en la model card, pero no se proporciona URL)

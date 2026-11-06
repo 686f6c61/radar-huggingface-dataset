@@ -118,7 +118,7 @@ Frente al cuantizado EXL3 de origen, este artefacto no cambia los pesos: la dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-ignis
+- Repositorio Hugging Face: https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-ignis
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizado EXL3 de origen (turboderp, rama `SC_3.00bpw_H4`): https://huggingface.co/turboderp/Qwen3.8-27B-exl3
 - Artefacto NVFP4 de 32 GB del mismo autor: https://huggingface.co/gpillon/Qwen3.8-27B-nvfp4full-dflash2-NInfer

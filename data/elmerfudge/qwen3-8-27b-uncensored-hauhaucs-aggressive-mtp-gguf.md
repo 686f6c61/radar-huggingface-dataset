@@ -111,7 +111,7 @@ No se dispone de informacion verificable sobre modelos comparables en la documen
 
 ## Enlaces
 
-- HuggingFace (ficha): https://huggingface.co/Elmerfudge/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Hugging Face (ficha): https://huggingface.co/Elmerfudge/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Descarga Q8_K_P: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/resolve/main/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf

@@ -75,10 +75,10 @@ El autor advierte que la perplejidad está calculada por token BPE con su tokeni
 
 | Modelo | Parámetros | Contexto | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny GPT (Ahmadbader17) | 5.853.184 | 256 | 300.000 historias de TinyStories V2 (60,8 M tokens) | MIT | Pesos en `safetensors` en HuggingFace; código en GitHub |
-| TinyStories-1M (roneneldan) | ~1 M (según el nombre del repositorio; no verificado en la información disponible) | No disponible | TinyStories | No disponible | HuggingFace |
-| TinyStories-9M (roneneldan) | ~9 M (según el nombre del repositorio; no verificado) | No disponible | TinyStories | No disponible | HuggingFace |
-| TinyStories-33M (roneneldan) | ~33 M (según el nombre del repositorio; no verificado) | No disponible | TinyStories | No disponible | HuggingFace |
+| Tiny GPT (Ahmadbader17) | 5.853.184 | 256 | 300.000 historias de TinyStories V2 (60,8 M tokens) | MIT | Pesos en `safetensors` en Hugging Face; código en GitHub |
+| TinyStories-1M (roneneldan) | ~1 M (según el nombre del repositorio; no verificado en la información disponible) | No disponible | TinyStories | No disponible | Hugging Face |
+| TinyStories-9M (roneneldan) | ~9 M (según el nombre del repositorio; no verificado) | No disponible | TinyStories | No disponible | Hugging Face |
+| TinyStories-33M (roneneldan) | ~33 M (según el nombre del repositorio; no verificado) | No disponible | TinyStories | No disponible | Hugging Face |
 
 No se dispone en la información proporcionada de métricas comparables de estos modelos alternativos, ni de una comparación directa de perplejidad bajo el mismo tokenizador.
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de métricas comparables de estos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahmadbader17/tiny-gpt
+- Modelo en Hugging Face: https://huggingface.co/Ahmadbader17/tiny-gpt
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset TinyStories V2 (referenciado en la model card): no disponible (no se proporciona URL específica)
 - Repositorio GitHub con código, logs de entrenamiento y memoria técnica: no disponible (la model card lo menciona con un placeholder `<github repo>`, sin URL pública en la información proporcionada)

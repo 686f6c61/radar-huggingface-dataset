@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1500
+- Hugging Face: https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1500
 - Repositorio de entrenamiento: https://github.com/Robbyant/lingbot-vla-v2
 - Dataset LIBERO: https://huggingface.co/datasets/lerobot/libero
 - Procesador base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

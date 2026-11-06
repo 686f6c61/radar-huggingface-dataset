@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| otherwhere1/Behemoth-X-123B-v2-mlx-4Bit | 122,6B | MLX safetensors 4 bits | no disponible | no disponible | HuggingFace, 17 descargas |
-| TheDrummer/Behemoth-X-123B-v2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| otherwhere1/Behemoth-X-123B-v2-mlx-4Bit | 122,6B | MLX safetensors 4 bits | no disponible | no disponible | Hugging Face, 17 descargas |
+| TheDrummer/Behemoth-X-123B-v2 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoria (120B-130B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada sobre modelos alternativos comparables en parametros, contexto, rendimiento o licencia. La busqueda web realizada no devolvio resultados tecnicos relevantes: unicamente paginas de listines telefonicos alemanes sin relacion con el modelo.
@@ -89,11 +89,11 @@ No se dispone de datos verificados en la informacion proporcionada sobre modelos
 - Dependencia de plataforma: el formato MLX limita la ejecucion nativa a Apple Silicon, lo que excluye su uso directo en infraestructura NVIDIA o AMD y dificulta el despliegue en la nube habitual.
 - Ausencia de soporte comunitario: 17 descargas y 0 likes indican que el artefacto no ha sido validado por la comunidad; no hay evidencia de que la conversion se haya probado de forma extensiva.
 - Modelo base desconocido en esta ficha: cualquier limitacion del modelo original (datos de entrenamiento, sesgos, restricciones de uso) se hereda y no esta documentada aqui.
-- Fechas de metadatos anomalas: la fecha de creacion registrada (2026-09-13) es posterior a la fecha habitual de publicacion; conviene verificar los metadatos directamente en HuggingFace.
+- Fechas de metadatos anomalas: la fecha de creacion registrada (2026-09-13) es posterior a la fecha habitual de publicacion; conviene verificar los metadatos directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/otherwhere1/Behemoth-X-123B-v2-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/otherwhere1/Behemoth-X-123B-v2-mlx-4Bit
 - Modelo base: https://huggingface.co/TheDrummer/Behemoth-X-123B-v2
 - Libreria MLX-LM: https://github.com/ml-explore/mlx-lm
 - Documentacion de MLX: https://github.com/ml-explore/mlx

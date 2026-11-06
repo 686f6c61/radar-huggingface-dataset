@@ -77,6 +77,6 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h069.rl_v11.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h069.rl_v11.step_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs o demos asociados a este checkpoint específico.

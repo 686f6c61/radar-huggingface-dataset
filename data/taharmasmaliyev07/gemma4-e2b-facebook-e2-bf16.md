@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-E2B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en HuggingFace, derivado de un modelo de la familia Gemma 4 y entrenado con la librería Unsloth junto con TRL de HuggingFace. El modelo se distribuye en formato safetensors con pesos en BF16 y está etiquetado para la tarea `image-text-to-text`, lo que indica que conserva la torre de visión del modelo base y acepta entradas multimodales de imagen y texto. Cuenta con 5.123.178.051 parámetros totales y un repositorio de 10,4 GB.
+Gemma4-E2B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en Hugging Face, derivado de un modelo de la familia Gemma 4 y entrenado con la librería Unsloth junto con TRL de Hugging Face. El modelo se distribuye en formato safetensors con pesos en BF16 y está etiquetado para la tarea `image-text-to-text`, lo que indica que conserva la torre de visión del modelo base y acepta entradas multimodales de imagen y texto. Cuenta con 5.123.178.051 parámetros totales y un repositorio de 10,4 GB.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un artefacto de ajuste fino de autor individual, con 27 descargas y sin métricas publicadas. La model card es una plantilla autogenerada por Unsloth que no documenta el dataset de entrenamiento, el procedimiento de ajuste ni los hiperparámetros utilizados. El nombre del repositorio sugiere un ajuste orientado a un dominio concreto (posiblemente contenido relacionado con Facebook), pero no hay información que lo confirme.
 
@@ -42,7 +42,7 @@ El entrenamiento se realizó con Unsloth y TRL, según la model card. No se espe
 
 - Prototipado de asistentes multimodales en inglés: el modelo acepta pares imagen-texto, por lo que puede emplearse para describir imágenes o responder preguntas sobre ellas en entornos de experimentación, siempre con validación previa.
 - Investigación sobre ajuste fino con Unsloth: sirve como ejemplo reproducible de un pipeline de finetune con Unsloth y TRL sobre un modelo Gemma 4, útil para estudiar técnicas de entrenamiento eficiente en memoria.
-- Despliegue en TGI para pruebas de integración: la etiqueta `endpoints_compatible` permite levantar un endpoint compatible con la API de HuggingFace en un entorno de staging.
+- Despliegue en TGI para pruebas de integración: la etiqueta `endpoints_compatible` permite levantar un endpoint compatible con la API de Hugging Face en un entorno de staging.
 - Generación de texto conversacional de dominio específico: si el ajuste se orientó a un corpus concreto (el nombre sugiere contenido relacionado con Facebook), puede emplearse para generar respuestas estilizadas en ese dominio, con revisión humana obligatoria.
 - Base para nuevos ajustes finos: al publicarse en Apache 2.0 y en safetensors BF16, puede reutilizarse como punto de partida para especializaciones posteriores con LoRA o QLoRA.
 - Evaluación comparativa de derivados de Gemma 4: útil en estudios que midan la degradación o mejora que introduce un finetune no documentado frente al modelo base.
@@ -85,8 +85,8 @@ La comparación es orientativa: no hay datos de rendimiento del modelo evaluado,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taharmasmaliyev07/Gemma4-E2B-FACEBOOK-E2-BF16
+- Hugging Face: https://huggingface.co/taharmasmaliyev07/Gemma4-E2B-FACEBOOK-E2-BF16
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

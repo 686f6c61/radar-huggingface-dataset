@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/config-h/Wearable-IMU-Activity-Segmentation-Pipeline)
+- [Modelo en Hugging Face](https://huggingface.co/config-h/Wearable-IMU-Activity-Segmentation-Pipeline)
 - [Repositorio GitHub](https://github.com/rudykon/Wearable-IMU-Activity-Segmentation-Pipeline)
 - [Sitio web del proyecto](https://rudykon.github.io/Wearable-IMU-Activity-Segmentation-Pipeline/)
 - [Demo Gradio (ZeroGPU)](https://huggingface.co/spaces/config-h/Wearable-IMU-Activity-Segmentation-Pipeline)

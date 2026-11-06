@@ -90,7 +90,7 @@ La comparación directa con SmolVLA no aísla el efecto del preentrenamiento: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t3_n05_s3
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t3_n05_s3
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

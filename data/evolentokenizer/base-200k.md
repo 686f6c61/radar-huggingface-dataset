@@ -44,14 +44,14 @@ Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 4e-05,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace declara una entrada "base_5120" con resultados vacíos. Las únicas métricas reportadas son las de entrenamiento: pérdida 5,0263, precisión 0,2365 y perplejidad 152,36. No hay comparaciones con otros modelos de ADN en la documentación.
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face declara una entrada "base_5120" con resultados vacíos. Las únicas métricas reportadas son las de entrenamiento: pérdida 5,0263, precisión 0,2365 y perplejidad 152,36. No hay comparaciones con otros modelos de ADN en la documentación.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: menos de 1 GB en FP32 (el modelo pesa ~360 MB en safetensors). Con cuantización a 8 bits, cabría en ~200 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3060, o incluso CPU para inferencia por lotes pequeños.
 - Cabe en GPUs de consumo: sí, sin problema.
-- Opciones de despliegue: se puede cargar con la librería transformers de HuggingFace en PyTorch. No requiere vLLM ni TGI; para producción ligera se puede usar ONNX Runtime o TensorRT.
+- Opciones de despliegue: se puede cargar con la librería transformers de Hugging Face en PyTorch. No requiere vLLM ni TGI; para producción ligera se puede usar ONNX Runtime o TensorRT.
 - Latencia y throughput: no se han publicado mediciones, pero al ser un modelo pequeño, la inferencia es rápida (del orden de milisegundos por secuencia en GPU moderna).
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de datos comparativos en la información proporcionada. Existen ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EvoLenTokenizer/base-200k
+- Hugging Face: https://huggingface.co/EvoLenTokenizer/base-200k
 - Paper (arXiv): https://huggingface.co/papers/2604.08698
 - Código (GitHub): https://github.com/HN020719/EvoLen

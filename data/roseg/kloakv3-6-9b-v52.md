@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kloakv3.6-9B-v52 es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B-Base, publicado por el usuario RoseG en HuggingFace. Se trata de un modelo de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) distribuidos en pesos en formato safetensors, con un tamaño de repositorio de 36,7 GB. La model card es extremadamente escueta: se limita a indicar la licencia Apache 2.0, el modelo base y una línea descriptiva ("9B Parameter Legacy Model from The Kloaked Signal"), sin aportar detalles sobre arquitectura interna, datos de entrenamiento ni capacidades específicas.
+Kloakv3.6-9B-v52 es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B-Base, publicado por el usuario RoseG en Hugging Face. Se trata de un modelo de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) distribuidos en pesos en formato safetensors, con un tamaño de repositorio de 36,7 GB. La model card es extremadamente escueta: se limita a indicar la licencia Apache 2.0, el modelo base y una línea descriptiva ("9B Parameter Legacy Model from The Kloaked Signal"), sin aportar detalles sobre arquitectura interna, datos de entrenamiento ni capacidades específicas.
 
 La relevancia de este modelo es limitada por el momento: cuenta con cero descargas y cero "likes" en el momento de la consulta, y no se ha publicado información técnica sustancial más allá de los metadatos del repositorio. El tag `qwen3_5` sugiere que hereda la arquitectura de la familia Qwen3.5, pero no se dispone de confirmación oficial sobre la configuración exacta (número de capas, dimensiones ocultas, mecanismo de atención, etc.).
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RoseG/Kloakv3.6-9B-v52 | 9,41 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Finetune sin documentación ni benchmarks |
-| Qwen/Qwen3.5-9B-Base | ~9 B (según nombre) | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace (modelo base referenciado) | Modelo base oficial del que deriva Kloakv3.6 |
-| Alternativas de ~9B (p. ej. Llama 3.1 8B, Gemma 2 9B) | 8-9 B | 8K-128K según modelo | Licencias específicas de cada modelo | HuggingFace | No se dispone de datos comparativos de rendimiento con Kloakv3.6 |
+| RoseG/Kloakv3.6-9B-v52 | 9,41 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Finetune sin documentación ni benchmarks |
+| Qwen/Qwen3.5-9B-Base | ~9 B (según nombre) | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face (modelo base referenciado) | Modelo base oficial del que deriva Kloakv3.6 |
+| Alternativas de ~9B (p. ej. Llama 3.1 8B, Gemma 2 9B) | 8-9 B | 8K-128K según modelo | Licencias específicas de cada modelo | Hugging Face | No se dispone de datos comparativos de rendimiento con Kloakv3.6 |
 
 No se dispone de información suficiente para establecer una comparativa de rendimiento rigurosa; la única comparación posible es estructural (parámetros y licencia).
 
@@ -84,6 +84,6 @@ No se dispone de información suficiente para establecer una comparativa de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoseG/Kloakv3.6-9B-v52
+- Hugging Face: https://huggingface.co/RoseG/Kloakv3.6-9B-v52
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

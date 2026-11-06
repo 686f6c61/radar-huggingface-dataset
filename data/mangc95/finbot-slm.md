@@ -84,8 +84,8 @@ Advertencia del autor: es una sola corrida (semilla 42) sobre 12 preguntas, cali
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Nota examen (1–10) |
 |---|---|---|---|---|---|
-| finbot-slm (adaptador LoRA) | 1,5 B + ≈ 74 MB de adaptador | Heredado del base | Apache 2.0 | HuggingFace | 6,08 (12 preguntas, juez LLM) |
-| Qwen2.5-1.5B-Instruct (modelo base, sin adaptador) | 1,5 B | Heredado del base | Apache 2.0 | HuggingFace | 4,17 (mismas 12 preguntas) |
+| finbot-slm (adaptador LoRA) | 1,5 B + ≈ 74 MB de adaptador | Heredado del base | Apache 2.0 | Hugging Face | 6,08 (12 preguntas, juez LLM) |
+| Qwen2.5-1.5B-Instruct (modelo base, sin adaptador) | 1,5 B | Heredado del base | Apache 2.0 | Hugging Face | 4,17 (mismas 12 preguntas) |
 | Otros SLM de tamaño similar (Llama 3.2 1B, Gemma 2 2B, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 
 No se han publicado en la información disponible comparativas con otros SLM de tamaño similar; la única comparación con datos es contra el modelo base, que es el punto de partida del adaptador.
@@ -103,6 +103,6 @@ No se han publicado en la información disponible comparativas con otros SLM de 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mangc95/finbot-slm
+- Hugging Face del modelo: https://huggingface.co/mangc95/finbot-slm
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper, blog, repositorio del taller o demo: no disponibles en la información proporcionada.

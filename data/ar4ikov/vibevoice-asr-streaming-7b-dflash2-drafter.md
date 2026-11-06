@@ -101,7 +101,7 @@ Los datos disponibles solo permiten comparar el despliegue con y sin este borrad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter
 - Modelo base (AWQ W4A16 ASYM): https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM
 - Paquete conjunto de modelo y borrador INT4: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM-DFlash2
 - Modelo original de Microsoft: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B

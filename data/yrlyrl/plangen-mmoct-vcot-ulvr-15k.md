@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yrlyrl/plangen-mmoct-vcot-ulvr-15k
+- Repositorio Hugging Face: https://huggingface.co/yrlyrl/plangen-mmoct-vcot-ulvr-15k
 - Repositorio fuente (GitHub): https://github.com/yangruoliu/plangen_mmoct
 - Repositorio relacionado (PlanGen de 360CVGroup): https://github.com/360CVGroup/PlanGen
 - Paper de PlanGEN (Google, multi-agente): https://arxiv.org/pdf/2502.16111v1

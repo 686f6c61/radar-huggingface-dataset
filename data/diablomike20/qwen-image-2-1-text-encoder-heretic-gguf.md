@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
 - Modelo base: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Nodo de parche para ComfyUI: https://github.com/pottokao-dotcom/ComfyUI-GGUF-Qwen3VL-TE
 - Nodo de estilos fotográficos: https://github.com/pottokao-dotcom/ComfyUI-QwenImage-PhotoStyles

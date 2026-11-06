@@ -88,8 +88,8 @@ En la información proporcionada no se incluyen modelos alternativos de la misma
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DECISIONx-1.5B | 1,5B (base) + adaptador LoRA | heredado de Qwen2.5-1.5B-Instruct | Probabilidades calibradas (`choice`/`score`/`null`) | decisionx-research | HuggingFace (pesos del adaptador) |
-| Qwen2.5-1.5B-Instruct | 1,5B | contexto nativo del modelo base | Texto generado | licencia del modelo base Qwen | HuggingFace |
+| DECISIONx-1.5B | 1,5B (base) + adaptador LoRA | heredado de Qwen2.5-1.5B-Instruct | Probabilidades calibradas (`choice`/`score`/`null`) | decisionx-research | Hugging Face (pesos del adaptador) |
+| Qwen2.5-1.5B-Instruct | 1,5B | contexto nativo del modelo base | Texto generado | licencia del modelo base Qwen | Hugging Face |
 
 No se dispone de datos de benchmark de terceros comparables en la información facilitada.
 
@@ -108,6 +108,6 @@ No se dispone de datos de benchmark de terceros comparables en la información f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thinkingdbx/DECISIONx-1.5B
+- Modelo en Hugging Face: https://huggingface.co/thinkingdbx/DECISIONx-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada

@@ -4,7 +4,7 @@
 
 Intel/Qwen3.8-Flash-Next-W4A16-AutoRound es una versión cuantizada a 4 bits del modelo Qwen3.8-Flash-Next, desarrollada por Intel mediante la herramienta AutoRound en modo de ajuste fino (tuning mode). El modelo original pertenece a la serie Qwen3.8 de Alibaba, una arquitectura de tipo MoE (mixture of experts) que activa 6 mil millones de parámetros por token, con un total de 125 mil millones de parámetros principales más 51 mil millones de embeddings N-gram. La cuantización reduce el peso de los parámetros a 4 bits manteniendo las activaciones en 16 bits (esquema W4A16), lo que permite reducir los requisitos de memoria y acelerar la inferencia en hardware compatible.
 
-Este modelo es relevante porque ofrece una alternativa eficiente para desplegar un LLM multimodal de gran tamaño en entornos con recursos limitados, manteniendo un rendimiento cercano al original en tareas de razonamiento, conocimiento general y comprensión lectora. Los benchmarks publicados muestran una degradación media de solo el 0,36 % respecto a la versión BF16. Está disponible bajo la licencia comunitaria de Qwen (qwen-community-1.0) y puede utilizarse con la librería transformers de HuggingFace.
+Este modelo es relevante porque ofrece una alternativa eficiente para desplegar un LLM multimodal de gran tamaño en entornos con recursos limitados, manteniendo un rendimiento cercano al original en tareas de razonamiento, conocimiento general y comprensión lectora. Los benchmarks publicados muestran una degradación media de solo el 0,36 % respecto a la versión BF16. Está disponible bajo la licencia comunitaria de Qwen (qwen-community-1.0) y puede utilizarse con la librería transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La versión cuantizada se genera con Intel AutoRound, un método de redondeo de 
 - Procesamiento multimodal: acepta entradas de imagen y texto (pipeline image-text-to-text).
 - Generación de texto y razonamiento: mantiene un rendimiento cercano al modelo BF16 en tareas como GSM8K (matemáticas) y MMLU (conocimiento general).
 - Comprensión lectora y sentido común: evaluado en PIQA y HellaSwag.
-- Compatible con la librería transformers de HuggingFace, lo que facilita su integración en pipelines existentes.
+- Compatible con la librería transformers de Hugging Face, lo que facilita su integración en pipelines existentes.
 - Soporte de cuantización INT4 para inferencia eficiente en GPUs con memoria limitada.
 - No se dispone de información oficial sobre tool calling, agentes o modos de pensamiento explícitos para esta versión cuantizada; se recomienda consultar la documentación del modelo base para confirmar estas capacidades.
 
@@ -84,7 +84,7 @@ No se dispone de datos de otros modelos comparables de la misma familia (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516

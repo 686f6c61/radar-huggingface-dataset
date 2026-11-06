@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `morealcholplz/kt-20261011-n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906-5e99b05c` es un snapshot de archivo de un checkpoint de entrenamiento asociado a robótica, publicado por el usuario `morealcholplz` en HuggingFace. No se trata de un modelo listo para inferencia: la propia model card lo describe como una copia de seguridad de un directorio de servidor de investigación, cuyo contenido debe restaurarse en la ruta original (`/home/work/mntvol/robottt/n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906`).
+El repositorio `morealcholplz/kt-20261011-n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906-5e99b05c` es un snapshot de archivo de un checkpoint de entrenamiento asociado a robótica, publicado por el usuario `morealcholplz` en Hugging Face. No se trata de un modelo listo para inferencia: la propia model card lo describe como una copia de seguridad de un directorio de servidor de investigación, cuyo contenido debe restaurarse en la ruta original (`/home/work/mntvol/robottt/n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906`).
 
 El propósito declarado es exclusivamente archivístico: preservar ficheros de checkpoint, configuraciones y resultados experimentales, incluyendo estado de reanudación cuando exista. La model card indica explícitamente que no se realizó ningún entrenamiento ni inferencia para generar este backup y que no constituye una afirmación de éxito de evaluación. Por tanto, carece de sentido evaluarlo como modelo de producción.
 
@@ -84,6 +84,6 @@ No disponible. No se dispone de información suficiente sobre la arquitectura, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906-5e99b05c
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-videoplaceorder-stage1-250-b4ga2-ddp2-gpu01-20260906-5e99b05c
 - Referencias mencionadas en la model card (sin URL facilitada): NVIDIA GR00T, `pi`/`openpi`.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la búsqueda web proporcionada.

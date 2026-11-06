@@ -26,7 +26,7 @@ Su relevancia es metodologica mas que de producto: permite medir cuanto de la in
 | Dataset de entrenamiento | scene_parse_150 (ADE20K) |
 | Libreria | canvit-pytorch (>= 0.2) |
 | Revision legacy | canvit-pytorch 0.1 disponible en la revision `canvit-pytorch-0.1` |
-| Descargas / likes en HuggingFace | 7 / 0 |
+| Descargas / likes en Hugging Face | 7 / 0 |
 | Fecha de creacion / actualizacion | 2026-03-15 / 2026-09-26 |
 
 ## Arquitectura y entrenamiento
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks especificos de este checkpoint en l
 
 | Modelo | Tipo | Resolucion de entrada | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-dv3s-144px | Sonda lineal sobre DINOv3 ViT-S/16 | 144 px | 59.286 | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-dv3s-128px | Sonda lineal de segmentacion sobre DINOv3 | 128 px | no disponible | no disponible | HuggingFace |
-| canvit/probe-ade20k-40k-dv3s-256px | Sonda lineal sobre caracteristicas espaciales de DINOv3 ViT-S/16 | 256 px | no disponible | no disponible | HuggingFace |
+| canvit/probe-ade20k-40k-dv3s-144px | Sonda lineal sobre DINOv3 ViT-S/16 | 144 px | 59.286 | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-dv3s-128px | Sonda lineal de segmentacion sobre DINOv3 | 128 px | no disponible | no disponible | Hugging Face |
+| canvit/probe-ade20k-40k-dv3s-256px | Sonda lineal sobre caracteristicas espaciales de DINOv3 ViT-S/16 | 256 px | no disponible | no disponible | Hugging Face |
 | CanViT-B | Modelo fundacional de vision activa (canvas) | no disponible | no disponible | no disponible | Repositorio del proyecto |
 
 Nota sobre los datos de comparacion: la busqueda web indica que el checkpoint de 128 px lista facebook/dinov3-vit7b16-pretrain-lvd1689m como modelo base, mientras que los checkpoints de 144 px y 256 px se asocian a DINOv3 ViT-S/16; esta discrepancia procede de los resultados de busqueda y no esta confirmada en la model card de este repositorio.
@@ -101,7 +101,7 @@ Nota sobre los datos de comparacion: la busqueda web indica que el checkpoint de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-144px
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-144px
 - Modelo base: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo de referencia: https://github.com/m2b3/CanViT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`i5h4annair/course-matching` es un repositorio de HuggingFace publicado por el usuario i5h4annair que contiene una implementación propia y de tamano reducido de una arquitectura tipo Blip orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización valido para pruebas de humo (*smoke tests*) y sin ninguna métrica de benchmark declarada.
+`i5h4annair/course-matching` es un repositorio de Hugging Face publicado por el usuario i5h4annair que contiene una implementación propia y de tamano reducido de una arquitectura tipo Blip orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización valido para pruebas de humo (*smoke tests*) y sin ninguna métrica de benchmark declarada.
 
 El modelo es extremadamente pequeno: 24.832 parámetros totales registrados en el fichero `model.safetensors`, con un tamano de repositorio de 0,0 GB. La arquitectura declarada incluye atención de ventana deslizante (*sliding window*), fusión mediante *cross attention*, activación approximate GELU y normalización por *batchnorm*. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial del código y de los pesos, siempre que se respeten las condiciones de los datos externos con los que se combine.
 
@@ -66,7 +66,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| i5h4annair/course-matching | 24.832 | no disponible | sin benchmark publicado | apache-2.0 | HuggingFace, checkpoint de inicialización |
+| i5h4annair/course-matching | 24.832 | no disponible | sin benchmark publicado | apache-2.0 | Hugging Face, checkpoint de inicialización |
 | Alternativa comparable 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa comparable 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/i5h4annair/course-matching
+- Hugging Face: https://huggingface.co/i5h4annair/course-matching
 - GitHub - NapeLPercy/CourseMatch: https://github.com/NapeLPercy/CourseMatch
 - Machine Learning-powered Course Match (MLCM), ACM Digital Library: https://dl.acm.org/doi/10.1145/3670865.3673573
 - Course Match en "1 Introduction" (arXiv): https://arxiv.org/html/2210.00954v3

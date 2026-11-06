@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-heretic-oQ4e es una cuantización de 4 bits del modelo darkc0de/Muse-Glimmer-30B-heretic, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor ha aplicado la herramienta oQ de oMLX (v0.6.4), que realiza cuantización de precisión mixta, sobre los pesos del modelo base. El resultado se distribuye exclusivamente en formato MLX safetensors, es decir, pensado para su ejecución en Apple Silicon mediante la librería MLX.
+Muse-Glimmer-30B-heretic-oQ4e es una cuantización de 4 bits del modelo darkc0de/Muse-Glimmer-30B-heretic, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor ha aplicado la herramienta oQ de oMLX (v0.6.4), que realiza cuantización de precisión mixta, sobre los pesos del modelo base. El resultado se distribuye exclusivamente en formato MLX safetensors, es decir, pensado para su ejecución en Apple Silicon mediante la librería MLX.
 
 El modelo cuenta con 29.776.626.688 parámetros totales según los metadatos de safetensors, lo que lo sitúa en la categoría de ~30B parámetros. La cuantización emplea 4 bits con group size de 64, y el repositorio ocupa 20,3 GB. El tag de tipo de modelo es muse_glimmer, aunque no se especifica en la información disponible si se trata de una arquitectura transformer densa, un MoE o un híbrido.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Memoria unificada recomendada en Apple Silicon: 32 GB como minimo practico, 36-64 GB para trabajar con contextos largos o varias sesiones. Un Mac de 16 GB o 24 GB probablemente no sea suficiente para cargar el modelo completo.
 - GPUs NVIDIA: MLX no se ejecuta de forma nativa en CUDA, por lo que seria necesaria una conversion previa de los pesos. Para una version convertida de ~15-20 GB en 4 bits, una RTX 4090 de 24 GB podria ser suficiente pero ajustada; una A100 de 40 GB, una A100 de 80 GB o una H100 de 80 GB lo alojarian sin problemas.
 - GPU de consumo: si cabe en una RTX 4090 (24 GB) tras conversion de formato; en GPUs de 8-12 GB no cabe sin cuantizaciones mas agresivas.
-- Opciones de despliegue: MLX / MLX-LM de forma nativa; llama.cpp u Ollama tras conversion a GGUF; vLLM o TGI requeririan conversion a safetensors de HuggingFace, no soportada de forma directa por el repositorio.
+- Opciones de despliegue: MLX / MLX-LM de forma nativa; llama.cpp u Ollama tras conversion a GGUF; vLLM o TGI requeririan conversion a safetensors de Hugging Face, no soportada de forma directa por el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/Muse-Glimmer-30B-heretic-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/Muse-Glimmer-30B-heretic-oQ4e
 - Modelo base: https://huggingface.co/darkc0de/Muse-Glimmer-30B-heretic
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Resultados de busqueda web: no se han encontrado recursos adicionales relevantes (papers, blogs, repos o demos) en la informacion proporcionada.

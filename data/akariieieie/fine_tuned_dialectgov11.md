@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento para comparar. Estructuralmente, el modelo
 
 ## Enlaces
 
-- [HuggingFace: Akariieieie/fine_tuned_dialectgov11](https://huggingface.co/Akariieieie/fine_tuned_dialectgov11)
+- [Hugging Face: Akariieieie/fine_tuned_dialectgov11](https://huggingface.co/Akariieieie/fine_tuned_dialectgov11)
 - [Paper M2M100 (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

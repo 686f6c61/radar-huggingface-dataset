@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR_lingala_shona es un ajuste fino del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-1.7B, publicado por el usuario ZFTurbo en HuggingFace. El modelo se ha especializado sobre el dataset google/WaxalNLP, una coleccion de corpus de voz de lenguas africanas de bajos recursos, con el objetivo declarado en su nombre de mejorar el reconocimiento de dos idiomas concretos: lingala y shona.
+Qwen3-ASR_lingala_shona es un ajuste fino del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-1.7B, publicado por el usuario ZFTurbo en Hugging Face. El modelo se ha especializado sobre el dataset google/WaxalNLP, una coleccion de corpus de voz de lenguas africanas de bajos recursos, con el objetivo declarado en su nombre de mejorar el reconocimiento de dos idiomas concretos: lingala y shona.
 
 El problema que aborda es la escasez de sistemas ASR de calidad para lenguas africanas, que en la mayoria de modelos multilingues generalistas presentan tasas de error muy superiores a las de ingles, espanol o frances. Partir de un modelo ya entrenado para transcripcion y ajustarlo con datos especificos de dos lenguas es una estrategia habitual de bajo coste computacional para cerrar esa brecha.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZFTurbo/Qwen3-ASR_lingala_shona | 2,04 mil millones | No disponible | Lingala y shona (ajuste especifico) | MIT | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B (modelo base) | ~1,7 mil millones declarados | No disponible | Multilingue (segun el autor del base) | No disponible en la informacion proporcionada | HuggingFace |
-| openai/whisper-large-v3 | ~1,55 mil millones | Ventanas de 30 s | Multilingue, con cobertura limitada en lenguas africanas | MIT | HuggingFace |
+| ZFTurbo/Qwen3-ASR_lingala_shona | 2,04 mil millones | No disponible | Lingala y shona (ajuste especifico) | MIT | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (modelo base) | ~1,7 mil millones declarados | No disponible | Multilingue (segun el autor del base) | No disponible en la informacion proporcionada | Hugging Face |
+| openai/whisper-large-v3 | ~1,55 mil millones | Ventanas de 30 s | Multilingue, con cobertura limitada en lenguas africanas | MIT | Hugging Face |
 
 La comparacion se limita a parametros, licencia y disponibilidad: no hay datos publicos de WER para este ajuste que permitan contrastar su rendimiento real frente a Whisper u otros sistemas ASR en lingala o shona. Cualquier afirmacion de superioridad seria especulativa.
 
@@ -90,7 +90,7 @@ La comparacion se limita a parametros, licencia y disponibilidad: no hay datos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZFTurbo/Qwen3-ASR_lingala_shona
+- Modelo en Hugging Face: https://huggingface.co/ZFTurbo/Qwen3-ASR_lingala_shona
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Dataset de ajuste: https://huggingface.co/datasets/google/WaxalNLP
 - Perfil del autor: https://huggingface.co/ZFTurbo

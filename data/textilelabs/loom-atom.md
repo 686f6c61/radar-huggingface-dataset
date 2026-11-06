@@ -98,6 +98,6 @@ Loom Atom es 2.664 veces más pequeño que Loom Weave 2 y 64 veces más pequeño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Atom
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Atom
 - Loom Router 1 (mencionado en la model card): https://huggingface.co/textilelabs/Loom-Router-1
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs o repositorios adicionales).

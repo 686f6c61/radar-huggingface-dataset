@@ -77,12 +77,12 @@ Nota: la comparativa con las variantes GGUF es una referencia de categoria (cuan
 - Sin benchmarks publicados: no hay datos que permitan evaluar la degradacion de calidad causada por la cuantizacion ternaria o de 1 bit frente a los modelos base Qwen3.
 - Riesgo de alucinacion: inherente a cualquier LLM; ademas, la cuantizacion extrema puede agravar errores en razonamiento y matematicas (no verificado por falta de datos).
 - Contexto e idiomas: la longitud de contexto y los idiomas soportados no estan documentados en la model card.
-- Proyecto muy reciente y sin traccion: cero descargas registradas en HuggingFace y sin comunidad visible, lo que implica riesgo de abandono y soporte limitado.
+- Proyecto muy reciente y sin traccion: cero descargas registradas en Hugging Face y sin comunidad visible, lo que implica riesgo de abandono y soporte limitado.
 - Acceso gated: hay que solicitar acceso aceptando la licencia antes de descargar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mai-iaM/BeyondSight-aamt
+- Modelo en Hugging Face: https://huggingface.co/Mai-iaM/BeyondSight-aamt
 - Especificacion del formato `.aamt` y runtime: https://github.com/wwhitehead/aamt
 - Modelos base: https://huggingface.co/Qwen/Qwen3-8B y https://huggingface.co/Qwen/Qwen3-1.7B
 - DOI del modelo: 10.57967/hf/11290

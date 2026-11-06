@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rand000mGuy/anderson` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario Rand000mGuy. No se trata de un modelo fundacional completo, sino de un peso adicional que se carga sobre un modelo base de difusion: concretamente, la model card declara `base_model: krea/Krea-2-Turbo`. El repositorio esta etiquetado con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`, y ocupa 0,5 GB, un tamano coherente con un adaptador de bajo rango mas pesado de lo habitual para un LoRA clasico.
+`Rand000mGuy/anderson` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario Rand000mGuy. No se trata de un modelo fundacional completo, sino de un peso adicional que se carga sobre un modelo base de difusion: concretamente, la model card declara `base_model: krea/Krea-2-Turbo`. El repositorio esta etiquetado con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`, y ocupa 0,5 GB, un tamano coherente con un adaptador de bajo rango mas pesado de lo habitual para un LoRA clasico.
 
 La relevancia de este tipo de publicaciones es practica: permite incorporar un estilo, un concepto o un sujeto concreto a un generador de imagenes sin reentrenar el modelo completo, con un coste de almacenamiento y de entrenamiento muy inferior. Sin embargo, la informacion publicada es minima: la model card no incluye descripcion del contenido aprendido, no declara licencia, no documenta el `instance_prompt` (aparece como `null`) ni aporta ejemplos de uso mas alla de un widget con el texto "Screenshot".
 
@@ -89,7 +89,7 @@ La diferencia mas relevante frente a adaptadores consolidados no es tecnica, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/anderson
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/anderson
 - Archivos del repositorio: https://huggingface.co/Rand000mGuy/anderson/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; unicamente paginas sin relacion sobre retransmisiones de television en aleman.

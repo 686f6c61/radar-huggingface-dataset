@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Consumer GPU: no cabe en ninguna configuracion de consumo razonable. El autor indica que los builds Compact (72 GB) y Mini (61 GB) caben en una maquina de 64 GB; el fichero Compact de 72 GB supera esa cifra segun los datos de la propia model card, por lo que conviene verificar el requisito real antes de planificar el despliegue.
 - Inferencia en CPU: viable en estaciones de trabajo con 256-512 GB de RAM DDR5 (EPYC o Threadripper), con throughput bajo y no cuantificado en la informacion disponible.
 - Memoria unificada: un equipo con 192 GB de memoria unificada queda al limite por el tamano del fichero mas la cache KV, especialmente a 131.072 tokens de contexto.
-- Opciones de despliegue: `llama.cpp` / `llama-server` con `--jinja`, `-fa on`, `-ctk q8_0`, `-ctv q4_0`, `-ngl 999` y `-c 131072`. El repositorio esta etiquetado como `endpoints_compatible`, por lo que tambien es servible desde infraestructura compatible con endpoints de HuggingFace.
+- Opciones de despliegue: `llama.cpp` / `llama-server` con `--jinja`, `-fa on`, `-ctk q8_0`, `-ctv q4_0`, `-ngl 999` y `-c 131072`. El repositorio esta etiquetado como `endpoints_compatible`, por lo que tambien es servible desde infraestructura compatible con endpoints de Hugging Face.
 - Version minima del runtime: llama.cpp en el commit `972d2313` o posterior. Las versiones anteriores no reconocen la arquitectura y fallan al cargar el modelo en lugar de emitir un aviso.
 - Latencia y throughput: no disponible.
 
@@ -103,7 +103,7 @@ No se dispone de datos de parametros activos, contexto, benchmarks ni licencia d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/badtheorylabs/Tinfield-1-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/badtheorylabs/Tinfield-1-Q8_0-GGUF
 - Modelo base: https://huggingface.co/badtheorylabs/Tinfield-1
 - Build Compact: https://huggingface.co/badtheorylabs/Tinfield-1-Compact-GGUF
 - Build Mini: https://huggingface.co/badtheorylabs/Tinfield-1-Mini-GGUF

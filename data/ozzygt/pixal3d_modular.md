@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/Pixal3D_Modular | no disponible (sin pesos) | no aplica | sin benchmarks publicados | Apache-2.0 (bloques) + MIT (partes adaptadas) | HuggingFace, 0 descargas |
-| OzzyGT/Pixal3D | no disponible | no aplica | sin benchmarks publicados | no disponible en la información | HuggingFace (pesos y código que consumen los bloques) |
-| TencentARC/Pixal3D | no disponible | no aplica | sin benchmarks publicados | no disponible en la información (adaptaciones bajo MIT) | HuggingFace y GitHub |
+| OzzyGT/Pixal3D_Modular | no disponible (sin pesos) | no aplica | sin benchmarks publicados | Apache-2.0 (bloques) + MIT (partes adaptadas) | Hugging Face, 0 descargas |
+| OzzyGT/Pixal3D | no disponible | no aplica | sin benchmarks publicados | no disponible en la información | Hugging Face (pesos y código que consumen los bloques) |
+| TencentARC/Pixal3D | no disponible | no aplica | sin benchmarks publicados | no disponible en la información (adaptaciones bajo MIT) | Hugging Face y GitHub |
 | Otras familias image-to-3D (TRELLIS, Hunyuan3D, TripoSG) | no disponible | no aplica | no disponible | no disponible | no verificadas en esta búsqueda |
 
 La comparación relevante aquí es de empaquetado más que de calidad: los tres primeros elementos comparten el mismo modelo subyacente y se diferencian en la capa de integración (bloques modulares frente a pesos/código originales). No hay datos públicos que permitan situar Pixal3D frente a otras familias de imagen-a-3D.

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wicked-Tutu-31B-v4-oQ4e-mtp (este) | 31,743B | No disponible | oQ mixta 4/5/6-bit + BF16, 18,570 GiB, MLX | No disponible | Publico en HuggingFace, 0 descargas |
+| Wicked-Tutu-31B-v4-oQ4e-mtp (este) | 31,743B | No disponible | oQ mixta 4/5/6-bit + BF16, 18,570 GiB, MLX | No disponible | Publico en Hugging Face, 0 descargas |
 | ReadyArt/Wicked-Tutu-31B-v4 (base) | 31,743B (mismo recuento) | No disponible | BF16 presumiblemente, ~63 GB | No disponible | Modelo de origen del que deriva esta cuantizacion |
 | Cuantizacion 4-bit uniforme equivalente | 31,743B | No disponible | 4-bit homogeneo, ~16-17 GB | Depende del base | No disponible: no se ha identificado una publicacion de referencia |
 | Gemma 4 31B instruct (upstream) | No disponible en esta consulta | No disponible | BF16 / varios | No disponible en esta consulta | No verificada en la busqueda realizada |
@@ -89,7 +89,7 @@ No se dispone de datos verificados de benchmarks ni de terceros comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/Wicked-Tutu-31B-v4-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/Wicked-Tutu-31B-v4-oQ4e-mtp
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v4
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog, repositorio o demo del modelo: no disponible en la informacion proporcionada.

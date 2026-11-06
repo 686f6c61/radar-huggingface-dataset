@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: al ser un modelo de difusion con 3.5B parametros, se recomienda al menos 8-12 GB de VRAM para inferencia a resoluciones moderadas (512x512) con precision FP16. Para resoluciones mayores o batch, se necesitarian 16 GB o mas.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior, RTX 4090, A100 o H100 para produccion.
 - En GPU de consumo: cabe en tarjetas con 12 GB o mas, como RTX 3060, RTX 4070, RTX 4080, RTX 4090.
-- Opciones de despliegue: al ser un modelo diffusers, se puede usar con la libreria `diffusers` de HuggingFace, o con herramientas como ComfyUI, Automatic1111 (si se adapta), o vLLM (aunque vLLM esta orientado a LLMs, no a difusion).
+- Opciones de despliegue: al ser un modelo diffusers, se puede usar con la libreria `diffusers` de Hugging Face, o con herramientas como ComfyUI, Automatic1111 (si se adapta), o vLLM (aunque vLLM esta orientado a LLMs, no a difusion).
 - Latencia y throughput: no disponibles. Dependen de la GPU, resolucion y numero de pasos de muestreo.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightknocker/Anima-3.5B-Puro-2B-diffusers
+- Modelo en Hugging Face: https://huggingface.co/nightknocker/Anima-3.5B-Puro-2B-diffusers
 - Variante relacionada: https://huggingface.co/nightknocker/Anima-6.66b-diffusers
 - Repositorio de Anima (circlestone-labs): https://huggingface.co/circlestone-labs/Anima
 - Guia de estilos de Anima 2B: https://animastyles.thetacursed.com/

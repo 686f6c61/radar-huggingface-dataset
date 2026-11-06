@@ -31,7 +31,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 - Generacion de descripciones de imagenes (image captioning) en ingles, su tarea principal.
 - Procesamiento multimodal imagen-texto mediante los ficheros mmproj.
-- Generacion de texto conversacional (tag conversational en HuggingFace).
+- Generacion de texto conversacional (tag conversational en Hugging Face).
 - Compatible con endpoints (tag endpoints_compatible).
 - Capacidades multilingues limitadas al ingles.
 - No se documenta soporte de tool calling, function calling, agentes ni modos de razonamiento extendido.

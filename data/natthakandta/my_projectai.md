@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 |---|---|---|---|---|---|
 | NatthakanDTA/MY_ProjectAI | Adaptador LoRA (base 1.5B) | No disponible | No disponible | safetensors | Adaptador sobre Qwen2.5-1.5B-Instruct |
 | Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32K (tipico) | Apache 2.0 (Qwen2.5) | safetensors | Modelo base, sin fine-tuning adicional |
-| Otros adaptadores LoRA de Qwen2.5-1.5B | Variable | Depende | Depende | safetensors | Existen muchos en HuggingFace, pero sin datos concretos no se puede comparar |
+| Otros adaptadores LoRA de Qwen2.5-1.5B | Variable | Depende | Depende | safetensors | Existen muchos en Hugging Face, pero sin datos concretos no se puede comparar |
 
 No se dispone de información suficiente para comparar con otros adaptadores específicos. La comparativa se limita al modelo base, que es el punto de referencia natural.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con otros adaptadores esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NatthakanDTA/MY_ProjectAI
+- Repositorio Hugging Face: https://huggingface.co/NatthakanDTA/MY_ProjectAI
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Documentación de TRL: https://huggingface.co/docs/trl

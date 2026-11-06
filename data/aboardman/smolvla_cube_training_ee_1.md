@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolVLA_cube_training_EE_1 es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, publicado por el usuario aboardman en HuggingFace. Se trata de una politica vision-language-action (VLA) orientada a robotica de manipulacion: recibe observaciones visuales e instrucciones en lenguaje natural y produce acciones motoras de control. El nombre del repositorio y del dataset asociado (aboardman/my_giant_combined_dataset2-5-6-8-9-10-rep-EE) sugieren un entrenamiento centrado en tareas de manipulacion de cubos con acciones expresadas en el espacio del efector final (EE, end-effector).
+smolVLA_cube_training_EE_1 es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, publicado por el usuario aboardman en Hugging Face. Se trata de una politica vision-language-action (VLA) orientada a robotica de manipulacion: recibe observaciones visuales e instrucciones en lenguaje natural y produce acciones motoras de control. El nombre del repositorio y del dataset asociado (aboardman/my_giant_combined_dataset2-5-6-8-9-10-rep-EE) sugieren un entrenamiento centrado en tareas de manipulacion de cubos con acciones expresadas en el espacio del efector final (EE, end-effector).
 
 El modelo cuenta con 450.046.176 parametros (aproximadamente 450 millones) y un repositorio de 0,9 GB en formato safetensors, lo que lo situa en la categoria de VLA compactos desplegables en hardware de consumo. La model card reproduce la descripcion generica de SmolVLA: un modelo vision-language-action compacto y eficiente que busca rendimiento competitivo con coste computacional reducido y despliegue en GPUs de gama de consumo.
 
@@ -69,8 +69,8 @@ El repositorio no incluye tablas de evaluacion, tasas de exito, ni comparaciones
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aboardman/smolVLA_cube_training_EE_1 | 450.046.176 | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No disponible | Sin benchmarks publicados en esta ficha | No disponible en la informacion proporcionada | HuggingFace |
+| aboardman/smolVLA_cube_training_EE_1 | 450.046.176 | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No disponible | Sin benchmarks publicados en esta ficha | No disponible en la informacion proporcionada | Hugging Face |
 | Otras politicas de LeRobot (ACT, diffusion policy) | No disponible | No disponible | No disponible | No disponible | Repositorio LeRobot |
 | Otras familias VLA (por ejemplo pi0 de Physical Intelligence o GR00T N1 de NVIDIA) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Publicaciones propias |
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aboardman/smolVLA_cube_training_EE_1
+- Modelo en Hugging Face: https://huggingface.co/aboardman/smolVLA_cube_training_EE_1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/aboardman/my_giant_combined_dataset2-5-6-8-9-10-rep-EE
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

@@ -66,11 +66,11 @@ No disponible. No existen modelos comparables con checkpoint entrenado y resulta
 - No se conocen sesgos especificos, pero al no existir entrenamiento, tampoco hay garantias de comportamiento generativo.
 - El riesgo de alucinacion no es evaluable porque el modelo no produce texto util.
 - La licencia BSD-3-Clause permite uso comercial con condiciones, pero el autor advierte que deben revisarse los terminos de las fuentes de datos si se utiliza con datasets externos.
-- Las APIs genericas de HuggingFace no pueden cargar este modelo sin un adaptador explicito, lo que dificulta su integracion en flujos estandar.
+- Las APIs genericas de Hugging Face no pueden cargar este modelo sin un adaptador explicito, lo que dificulta su integracion en flujos estandar.
 - Los resultados de un futuro entrenamiento deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matheusamafield/tiny-transformer-experiment
+- Hugging Face: https://huggingface.co/matheusamafield/tiny-transformer-experiment
 - Repositorio educativo TinyTransformer (skolouri): https://github.com/skolouri/TinyTransformer
 - Repositorio tinyTransformer con GPT-like (avvorstenbosch): https://github.com/avvorstenbosch/tinyTransformer

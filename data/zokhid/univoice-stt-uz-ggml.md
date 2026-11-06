@@ -6,7 +6,7 @@ univoice-stt-uz-ggml es la versión convertida y cuantizada para whisper.cpp del
 
 La relevancia de esta ficha radica en que se trata de un modelo de nicho: cubre un idioma con poca representación en los sistemas ASR comerciales y lo hace en un formato optimizado para ejecución sin conexión mediante whisper.cpp. No es un modelo generalista multilingüe; el autor advierte explícitamente de que el ajuste fino ha degradado el rendimiento en ruso, de modo que el modelo debe tratarse como monolingüe en uzbeko.
 
-La información pública disponible es escasa: no se han publicado métricas de evaluación (WER, CER), detalles del dataset de ajuste fino ni resultados de benchmarks. Esta ficha refleja únicamente los datos verificables de la model card y del repositorio de HuggingFace.
+La información pública disponible es escasa: no se han publicado métricas de evaluación (WER, CER), detalles del dataset de ajuste fino ni resultados de benchmarks. Esta ficha refleja únicamente los datos verificables de la model card y del repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,6 +80,6 @@ La comparación con Whisper medium y large-v3 es orientativa: no hay datos publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZOKHID/univoice-stt-uz-ggml
+- Modelo en Hugging Face: https://huggingface.co/ZOKHID/univoice-stt-uz-ggml
 - Modelo base: https://huggingface.co/ZOKHID/univoice-stt-uz
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

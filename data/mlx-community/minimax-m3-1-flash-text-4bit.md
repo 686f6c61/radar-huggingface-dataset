@@ -96,7 +96,7 @@ La comparación más informativa es interna a la familia: M3.1-Flash añade razo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-4bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-4bit
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Pull request de mlx-lm usado en la conversión: https://github.com/ml-explore/mlx-lm/pull/2003
 - Blog de MiniMax sobre M3.1 Flash: https://www.minimax.io/blog/minimax-m31f

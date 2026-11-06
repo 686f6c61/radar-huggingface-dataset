@@ -70,8 +70,8 @@ El autor indica que la evaluación de marcha se realizó con una aproximación 2
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jamesyun-v1-link01 | ~0,8 B (base) + LoRA | No disponible | Decisión de evitación de obstáculos (una letra) | Apache 2.0 | HuggingFace (19 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-jamesyun-v1-link01 | ~0,8 B (base) + LoRA | No disponible | Decisión de evitación de obstáculos (una letra) | Apache 2.0 | Hugging Face (19 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO original (brain.json) | No aplica (tabla/red de política) | No aplica | Evitación de obstáculos en simulador | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores LoRA comparables de la misma familia ni sobre modelos de decisión robótica de tamaño similar con los que contrastar parámetros y rendimiento.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/James-1971-source/connectailab-rl-jamesyun-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/James-1971-source/connectailab-rl-jamesyun-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

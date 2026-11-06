@@ -79,7 +79,7 @@ Nota: El contexto del modelo original se conoce por fuentes externas, pero no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/qwen2-57b-a14b-instruct
+- Hugging Face: https://huggingface.co/kerasformers/qwen2-57b-a14b-instruct
 - Paper: https://arxiv.org/abs/2407.10671
 - GitHub: https://github.com/IMvision12/KerasFormers
 - Docs: https://imvision12.github.io/KerasFormers/qwen2_moe/

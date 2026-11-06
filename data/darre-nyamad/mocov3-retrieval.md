@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darre-nyamad/mocov3-retrieval (este) | 24.832 | no aplica | sin benchmarks | BSD-3 | HuggingFace |
+| darre-nyamad/mocov3-retrieval (este) | 24.832 | no aplica | sin benchmarks | BSD-3 | Hugging Face |
 | MoCo v3 (Facebook Research, ViT-Base) | 86M aprox. | no aplica | benchmarks en ImageNet-1k (p. ej., top-1 accuracy en linear probe) | CC BY-NC 4.0 (para modelos preentrenados) | GitHub |
 | SimCLR (Google, ResNet-50) | 24M aprox. | no aplica | benchmarks en ImageNet-1k | Apache 2.0 | GitHub |
 
@@ -79,7 +79,7 @@ La comparativa se limita a la arquitectura base, ya que este repositorio no ofre
 
 ## Enlaces
 
-- [HuggingFace - darre-nyamad/mocov3-retrieval](https://huggingface.co/darre-nyamad/mocov3-retrieval)
+- [Hugging Face - darre-nyamad/mocov3-retrieval](https://huggingface.co/darre-nyamad/mocov3-retrieval)
 - [GitHub - facebookresearch/moco-v3 (implementacion oficial de MoCo v3)](https://github.com/facebookresearch/moco-v3)
 - [GitHub - facebookresearch/moco (MoCo v1 y v2)](https://github.com/facebookresearch/moco)
 - [Documentacion de MoCo v3 en MMSelfSup](https://mmselfsup.readthedocs.io/en/stable/papers/mocov3.html)

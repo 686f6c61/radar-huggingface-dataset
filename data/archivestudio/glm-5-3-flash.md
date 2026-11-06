@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por Z.ai (Zhipu AI). Con 320B parámetros totales y solo 18B activos, adopta una arquitectura híbrida que combina atención sparse y lineal, lo que reduce drásticamente los costes de inferencia en contextos largos. El modelo está diseñado para sobresalir en tareas de codificación, razonamiento agéntico y comprensión multimodal, acercándose a Claude Opus 4.8 en benchmarks de programación y agentes, a una décima parte del precio.
 
-El modelo se distribuye bajo licencia MIT, con soporte para inglés y chino, y una ventana de contexto de 1M de tokens. Su preentrenamiento se realizó sobre un corpus multimodal de 30T tokens, incorporando la innovación de Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. Está disponible en HuggingFace con pesos en formato safetensors (656.7 GB) y es compatible con frameworks de inferencia como SGLang, vLLM, TokenSpeed y KTransformers.
+El modelo se distribuye bajo licencia MIT, con soporte para inglés y chino, y una ventana de contexto de 1M de tokens. Su preentrenamiento se realizó sobre un corpus multimodal de 30T tokens, incorporando la innovación de Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. Está disponible en Hugging Face con pesos en formato safetensors (656.7 GB) y es compatible con frameworks de inferencia como SGLang, vLLM, TokenSpeed y KTransformers.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ Los datos de GLM-5.2, Claude Opus 4.8 y GPT-5.6 Terra no están disponibles en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/ArchiveStudio/GLM-5.3-Flash
 - Model card original: https://huggingface.co/ArchiveStudio/GLM-5.3-Flash (README)
 - Blog oficial: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5: https://arxiv.org/abs/2602.15763

@@ -53,7 +53,7 @@ No se puede realizar una comparativa, ya que el repositorio no contiene un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsiv-anxie/paper_016505362_image_captioning
+- Repositorio en Hugging Face: https://huggingface.co/itsiv-anxie/paper_016505362_image_captioning
 - Búsqueda en Google Scholar: https://scholar.google.com/
 - Paper relacionado en arXiv: https://arxiv.org/abs/2201.12944
 - Artículo en IEEE: https://ieeexplore.ieee.org/document/10914740

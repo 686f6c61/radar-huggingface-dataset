@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace de JONNYVERSE/BEN2-ONNX: https://huggingface.co/JONNYVERSE/BEN2-ONNX
-- Repositorio HuggingFace de onnx-community/BEN2-ONNX: https://huggingface.co/onnx-community/BEN2-ONNX
+- Repositorio Hugging Face de JONNYVERSE/BEN2-ONNX: https://huggingface.co/JONNYVERSE/BEN2-ONNX
+- Repositorio Hugging Face de onnx-community/BEN2-ONNX: https://huggingface.co/onnx-community/BEN2-ONNX
 - Repositorio GitHub de PramaLLC/BEN2: https://github.com/PramaLLC/BEN2/
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - ONNX Model Zoo (referencia general): https://github.com/onnx/models

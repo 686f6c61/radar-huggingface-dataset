@@ -81,7 +81,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dimios45/kinematics-flow
+- Hugging Face: https://huggingface.co/Dimios45/kinematics-flow
 - Repositorio oficial: https://github.com/boschresearch/kinematics-flow
 - Paper "Towards a Multi-Embodied Grasping Agent": https://arxiv.org/abs/2510.27420
 - Paper SeededGrasp: https://arxiv.org/abs/2607.20207

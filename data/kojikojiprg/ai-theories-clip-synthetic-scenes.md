@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema acotado y puramente sintetico: emparejar imagenes de 32 x 32 pixeles que contienen dos figuras (8 colores x 5 formas, dispuestas en horizontal o en vertical) con leyendas en ingles generadas por reglas. No es un modelo de proposito general ni un sistema multimodal utilizable con imagenes reales; su valor esta en servir de banco de pruebas reproducible para estudiar el efecto de los negativos dificiles en el aprendizaje contrastivo y como entrada del cuaderno 021.
 
-La relevancia actual es, por tanto, metodologica y educativa: el autor publica los pesos, los hiperparametros (tamano de lote 256, 262.144 ejemplos vistos, semilla 0) y las metricas de evaluacion, ademas del SHA-256 del fichero de pesos, lo que permite verificar la reproducibilidad de un experimento de contraste a pequena escala. El repositorio de HuggingFace ocupa 0,0 GB y no incluye tokenizador ni datos: ambos se regeneran de forma determinista a partir del codigo del proyecto.
+La relevancia actual es, por tanto, metodologica y educativa: el autor publica los pesos, los hiperparametros (tamano de lote 256, 262.144 ejemplos vistos, semilla 0) y las metricas de evaluacion, ademas del SHA-256 del fichero de pesos, lo que permite verificar la reproducibilidad de un experimento de contraste a pequena escala. El repositorio de Hugging Face ocupa 0,0 GB y no incluye tokenizador ni datos: ambos se regeneran de forma determinista a partir del codigo del proyecto.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ La relevancia actual es, por tanto, metodologica y educativa: el autor publica l
 | Hiperparametros de entrenamiento | tamano de lote 256, 262.144 ejemplos vistos, semilla 0 |
 | Commit de referencia | `65257e0090da96c671f57d7313872e8a78e53685` |
 | SHA-256 de `model_state.pt` | `efc2ab9dcd4730f4fe4b74b13c66f33d803fe7c65d9fa75929a8a13f425f1c17` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -101,10 +101,10 @@ No se dispone de cifras homogeneas de rendimiento entre estos modelos, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kojikojiprg/ai-theories-clip-synthetic-scenes
+- Modelo en Hugging Face: https://huggingface.co/kojikojiprg/ai-theories-clip-synthetic-scenes
 - Repositorio del proyecto: https://github.com/kojikojiprg/ai-theories
 - Cuaderno 019, ViT y embeddings de parches de imagen: https://github.com/kojikojiprg/ai-theories/blob/main/theories/05_vision_language/019_vision_transformer.ipynb
 - Cuaderno 020, CLIP y aprendizaje contrastivo (origen de este modelo): https://github.com/kojikojiprg/ai-theories/blob/main/theories/05_vision_language/020_clip_contrastive_learning.ipynb
-- Perfil del autor en HuggingFace: https://huggingface.co/kojikojiprg/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/kojikojiprg/datasets
 - Modelo relacionado del mismo autor: https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en
 - Trabajo relacionado, SynthCLIP: https://arxiv.org/abs/2402.01832

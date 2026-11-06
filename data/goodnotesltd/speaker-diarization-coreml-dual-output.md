@@ -24,7 +24,7 @@ Su relevancia es de nicho pero concreta: permite ejecutar la etapa de embedding 
 | SHA-256 de pesos | 99356b2985b8d43880a657024d941d450b38820451ccff903f76ed4e52d1868b |
 | Herramientas de construccion | coremltools 9.0 y compilador Core ML de Apple |
 | Modelo base | FluidInference/speaker-diarization-coreml (revision 1ed7a662fdc7109e36d822db793ee6eebdaf8594) |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace (no permite estimar el peso real) |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face (no permite estimar el peso real) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-10 / 2026-09-10 |
 
@@ -86,9 +86,9 @@ Estas cifras verifican que la exportación reproduce el modelo de referencia en 
 
 | Modelo | Tipo | Formato | Salidas | Reutiliza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GoodnotesLtd/speaker-diarization-coreml-dual-output | Embedding de hablante | Core ML | `embedding` normalizado y `embedding_raw` Float32 | Pesos del modelo base, sin cambios | CC BY 4.0 | HuggingFace, 0 descargas, 0 likes |
-| FluidInference/speaker-diarization-coreml | Export Core ML del pipeline (FBank, Segmentation, Embedding) | Core ML | `embedding` normalizado | Pesos originales | no disponible | HuggingFace (etiquetado como cuantizado) |
-| pyannote/speaker-diarization-community-1 | Pipeline de diarización de hablantes (origen de los pesos) | no disponible en la información proporcionada | no disponible | no aplica | no disponible | HuggingFace |
+| GoodnotesLtd/speaker-diarization-coreml-dual-output | Embedding de hablante | Core ML | `embedding` normalizado y `embedding_raw` Float32 | Pesos del modelo base, sin cambios | CC BY 4.0 | Hugging Face, 0 descargas, 0 likes |
+| FluidInference/speaker-diarization-coreml | Export Core ML del pipeline (FBank, Segmentation, Embedding) | Core ML | `embedding` normalizado | Pesos originales | no disponible | Hugging Face (etiquetado como cuantizado) |
+| pyannote/speaker-diarization-community-1 | Pipeline de diarización de hablantes (origen de los pesos) | no disponible en la información proporcionada | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni benchmarks para los tres modelos en la información proporcionada, por lo que la comparación se limita a formato, salidas, licencia y disponibilidad.
 
@@ -109,7 +109,7 @@ No se dispone de datos de parámetros, contexto ni benchmarks para los tres mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoodnotesLtd/speaker-diarization-coreml-dual-output
+- Modelo en Hugging Face: https://huggingface.co/GoodnotesLtd/speaker-diarization-coreml-dual-output
 - Modelo base: https://huggingface.co/FluidInference/speaker-diarization-coreml
 - Revisión concreta del modelo base: https://huggingface.co/FluidInference/speaker-diarization-coreml/tree/1ed7a662fdc7109e36d822db793ee6eebdaf8594
 - Modelo de origen de los pesos (pyannote Community-1): https://huggingface.co/pyannote/speaker-diarization-community-1

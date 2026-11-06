@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo Qwen/Qwen2.5-7B-Instruct, publicado por el usuario Echoo113 en HuggingFace. El nombre sugiere un ajuste orientado a tareas relacionadas con inmigración, con un parámetro "STEER" (probablemente un mecanismo de control o direccionamiento de la generación) y una modificación de la capa MLP ("mlpB"). Sin embargo, la documentación pública es extremadamente limitada: no se especifica el dataset de entrenamiento, el procedimiento exacto ni los resultados obtenidos.
+Este modelo es un fine-tune del modelo Qwen/Qwen2.5-7B-Instruct, publicado por el usuario Echoo113 en Hugging Face. El nombre sugiere un ajuste orientado a tareas relacionadas con inmigración, con un parámetro "STEER" (probablemente un mecanismo de control o direccionamiento de la generación) y una modificación de la capa MLP ("mlpB"). Sin embargo, la documentación pública es extremadamente limitada: no se especifica el dataset de entrenamiento, el procedimiento exacto ni los resultados obtenidos.
 
-El modelo fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, sobre la base de Qwen2.5-7B-Instruct. El repositorio tiene un tamaño de 0.3 GB, lo que sugiere que podría contener únicamente los pesos del adaptador o una versión cuantizada, aunque no se indica explícitamente. No se han publicado métricas de rendimiento ni comparativas con otros modelos.
+El modelo fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, sobre la base de Qwen2.5-7B-Instruct. El repositorio tiene un tamaño de 0.3 GB, lo que sugiere que podría contener únicamente los pesos del adaptador o una versión cuantizada, aunque no se indica explícitamente. No se han publicado métricas de rendimiento ni comparativas con otros modelos.
 
 La relevancia de este modelo es limitada en el estado actual, dado que carece de documentación, licencia clara y validación externa. Su interés principal reside en ser un ejemplo de fine-tune experimental sobre un modelo base sólido, pero no puede considerarse listo para producción sin más información.
 
@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 32 768 tokens | Apache 2.0 | HuggingFace, ModelScope |
-| Este fine-tune | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 32 768 tokens | Apache 2.0 | Hugging Face, ModelScope |
+| Este fine-tune | no disponible | no disponible | no disponible | Hugging Face |
 | Otros fine-tunes de Qwen2.5-7B | variable | variable | variable | variable |
 
 No se puede afirmar que este modelo supere o iguale al base sin datos de evaluacion.

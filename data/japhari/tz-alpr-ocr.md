@@ -82,6 +82,6 @@ No se dispone de información comparativa con otros modelos de reconocimiento de
 
 ## Enlaces
 
-- [HuggingFace - Japhari/tz-alpr-ocr](https://huggingface.co/Japhari/tz-alpr-ocr)
+- [Hugging Face - Japhari/tz-alpr-ocr](https://huggingface.co/Japhari/tz-alpr-ocr)
 - [GitHub - stg-gov/tz-plates](https://github.com/stg-gov/tz-plates)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Japhari)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Japhari)

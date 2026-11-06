@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex 1 Chat es un modelo de lenguaje conversacional de 130 millones de parámetros publicado en HuggingFace por el usuario VADRK155. Se trata de un GPT decoder-only entrenado completamente desde cero ("from scratch"), con una implementación propia en PyTorch que no utiliza la librería `transformers` en ningún punto del pipeline. El modelo se distribuye en fp16, con un tamaño de repositorio de 0,5 GB y licencia MIT.
+Cortex 1 Chat es un modelo de lenguaje conversacional de 130 millones de parámetros publicado en Hugging Face por el usuario VADRK155. Se trata de un GPT decoder-only entrenado completamente desde cero ("from scratch"), con una implementación propia en PyTorch que no utiliza la librería `transformers` en ningún punto del pipeline. El modelo se distribuye en fp16, con un tamaño de repositorio de 0,5 GB y licencia MIT.
 
 Su propósito declarado es la generación de texto conversacional en inglés. La limitación más relevante es su ventana de contexto: solo 128 tokens, lo que implica que el modelo pierde rápidamente el hilo de cualquier conversación multi-turno. El propio autor advierte en la model card de que, por su reducido número de parámetros, puede perder coherencia, mezclar hechos o cortar frases a mitad.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cortex 1 Chat | 130M | 128 tokens | MIT | HuggingFace, 0 descargas | Implementación propia sin `transformers`; sin benchmarks publicados |
-| GPT-2 (small) | 124M | 1024 tokens | Modified MIT | HuggingFace, ampliamente desplegado | Preentrenado en WebText; ecosistema y tooling maduros |
-| Pythia-160M | 160M | 2048 tokens | Apache 2.0 | HuggingFace / EleutherAI | Suite de modelos de estudio con checkpoints intermedios publicados |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace | Un orden de magnitud más grande; requiere más VRAM |
+| Cortex 1 Chat | 130M | 128 tokens | MIT | Hugging Face, 0 descargas | Implementación propia sin `transformers`; sin benchmarks publicados |
+| GPT-2 (small) | 124M | 1024 tokens | Modified MIT | Hugging Face, ampliamente desplegado | Preentrenado en WebText; ecosistema y tooling maduros |
+| Pythia-160M | 160M | 2048 tokens | Apache 2.0 | Hugging Face / EleutherAI | Suite de modelos de estudio con checkpoints intermedios publicados |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face | Un orden de magnitud más grande; requiere más VRAM |
 
 La comparación se basa en características públicamente conocidas de esos modelos; no se dispone de resultados de benchmarks de Cortex 1 Chat que permitan contrastar calidad de generación.
 
@@ -86,5 +86,5 @@ La comparación se basa en características públicamente conocidas de esos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADRK155/Cortex-1-Chat
+- Modelo en Hugging Face: https://huggingface.co/VADRK155/Cortex-1-Chat
 - Búsqueda web realizada: no se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo. Los resultados devueltos corresponden a portadas de Google News en distintos idiomas y no guardan relación con el modelo.

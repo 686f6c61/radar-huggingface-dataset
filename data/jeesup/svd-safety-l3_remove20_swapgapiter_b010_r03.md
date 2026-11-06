@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010_r03 | 8.030.261.248 en safetensors (fracción densa declarada 0,7998) | 8192 tokens (heredado del base) | Meta Llama 3 Community License | Público en HuggingFace, 0 descargas y 0 likes | AdvBench ASR 0,1600; StrongREJECT ASR 0,2150; sobre-rechazo 0,0478 |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | 8192 tokens | Meta Llama 3 Community License | Público en HuggingFace | No disponible en la información proporcionada |
+| svd-safety-l3_remove20_swapgapiter_b010_r03 | 8.030.261.248 en safetensors (fracción densa declarada 0,7998) | 8192 tokens (heredado del base) | Meta Llama 3 Community License | Público en Hugging Face, 0 descargas y 0 likes | AdvBench ASR 0,1600; StrongREJECT ASR 0,2150; sobre-rechazo 0,0478 |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | 8192 tokens | Meta Llama 3 Community License | Público en Hugging Face | No disponible en la información proporcionada |
 | Otros checkpoints de la rejilla SVD-LLM del mismo autor | No disponible | No disponible | Meta Llama 3 Community License | No disponible en la información proporcionada | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks comparables de otros modelos de 8B comprimidos con SVD-LLM y editados con reglas de intercambio, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de 8B comprimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de SVD-LLM (técnica de compresión referenciada por el autor): no disponible en la información proporcionada
 - Repositorio de código del método de intercambio de parámetros: no disponible en la información proporcionada

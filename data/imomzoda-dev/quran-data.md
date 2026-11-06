@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imomzoda-dev/quran-data` no es un modelo de lenguaje, sino un repositorio de datos publicado en HuggingFace que distribuye un corpus estructurado del Corán en formato JSON, empaquetado en archivos `.zip` alojados como artefactos de release en GitHub. El contenido incluye el texto coránico con segmentación palabra a palabra (QPC V4 y Uthmani), metadatos de suras y aleyas, transcripción fonética en tayiko, traducciones al persa, ruso y tayiko (varias versiones, incluida una con tafsir), y un tafsir completo (Osanbayon). El autor es `imomzoda-dev`, vinculado al proyecto SakinaDevGroup.
+`imomzoda-dev/quran-data` no es un modelo de lenguaje, sino un repositorio de datos publicado en Hugging Face que distribuye un corpus estructurado del Corán en formato JSON, empaquetado en archivos `.zip` alojados como artefactos de release en GitHub. El contenido incluye el texto coránico con segmentación palabra a palabra (QPC V4 y Uthmani), metadatos de suras y aleyas, transcripción fonética en tayiko, traducciones al persa, ruso y tayiko (varias versiones, incluida una con tafsir), y un tafsir completo (Osanbayon). El autor es `imomzoda-dev`, vinculado al proyecto SakinaDevGroup.
 
 El repositorio es relevante para desarrolladores que construyen aplicaciones islámicas, herramientas de estudio del Corán, sistemas de búsqueda semántica sobre texto religioso o pipelines de NLP en lenguas de Asia Central. Su valor está en la disponibilidad de alineación palabra a palabra entre texto árabe y traducciones, lo que facilita tareas de alineamiento léxico, anotación morfológica y generación de interfaces de lectura sincronizada.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados sobre parámetros, contexto ni rendimiento de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imomzoda-dev/quran-data
+- Repositorio en Hugging Face: https://huggingface.co/imomzoda-dev/quran-data
 - Release v1.0 en GitHub: https://github.com/SakinaDevGroup/quran-data/releases/tag/v1.0
 - Texto QPC V4 palabra a palabra: https://github.com/SakinaDevGroup/quran-data/releases/download/v1.0/qpc-v4.zip
 - Paginación QPC V4 con tajwid: https://github.com/SakinaDevGroup/quran-data/releases/download/v1.0/qpc-v4-tajweed-pages.zip

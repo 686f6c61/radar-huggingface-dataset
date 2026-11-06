@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ksiminyu/mms-1b-fl102-swahili-train1.0` es un repositorio alojado en HuggingFace por el usuario ksiminyu. Por la nomenclatura del identificador, todo apunta a que se trata de un ajuste fino (fine-tuning) del modelo base MMS-1B-FL102, es decir, el modelo Massively Multilingual Speech de 1.000 millones de parametros publicado originalmente por Meta AI, adaptado especificamente al idioma suajili (swahili). El sufijo "train1.0" sugiere que corresponde a una primera iteracion de entrenamiento. La ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas ni descripcion tecnica, por lo que buena parte de los datos de esta ficha figuran como no disponibles.
+El modelo `ksiminyu/mms-1b-fl102-swahili-train1.0` es un repositorio alojado en Hugging Face por el usuario ksiminyu. Por la nomenclatura del identificador, todo apunta a que se trata de un ajuste fino (fine-tuning) del modelo base MMS-1B-FL102, es decir, el modelo Massively Multilingual Speech de 1.000 millones de parametros publicado originalmente por Meta AI, adaptado especificamente al idioma suajili (swahili). El sufijo "train1.0" sugiere que corresponde a una primera iteracion de entrenamiento. La ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas ni descripcion tecnica, por lo que buena parte de los datos de esta ficha figuran como no disponibles.
 
 La relevancia de un modelo de este tipo radica en el contexto del reconocimiento automatico del habla (ASR) para lenguas de bajos recursos. El suajili es una de las lenguas africanas con mayor numero de hablantes (mas de 200 millones entre nativos y no nativos, principalmente en Africa Oriental), pero historicamente ha contado con menos recursos de voz etiquetados que lenguas como el ingles o el castellano. Un ajuste fino sobre MMS-1B-FL102 buscaria mejorar el rendimiento del modelo multilingue generico en esa lengua concreta.
 
@@ -60,17 +60,17 @@ No hay datos de WER (Word Error Rate), CER, MMLU, HumanEval, GSM8K ni de ninguna
 - VRAM estimada para inferencia: no disponible con precision. Un modelo de aproximadamente 1.000 millones de parametros en precision FP32 requiere del orden de 4 GB solo para los pesos, mas el consumo adicional de activaciones y buffers de audio. En FP16 o BF16 el peso se reduce a unos 2 GB, y en cuantizacion de 8 bits a aproximadamente 1 GB. Estas cifras son estimaciones genericas por tamano, no confirmadas para este repositorio.
 - GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, una GPU consumer con 8 GB o mas de VRAM (por ejemplo, RTX 3060, 4060, 4070) deberia ser suficiente para inferencia en precision reducida, siempre que el modelo sea compatible con las librerias de inferencia habituales.
 - Compatibilidad con GPU de consumo: probablemente si, dado el tamano de 1.000 millones de parametros, aunque no hay confirmacion oficial.
-- Opciones de despliegue: no disponible. Para modelos de la familia MMS/wav2vec 2.0, las opciones habituales serian HuggingFace Transformers con pipeline de ASR, o servidores de inferencia como TorchServe. No se documenta soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje generativos mas que a modelos acusticos.
+- Opciones de despliegue: no disponible. Para modelos de la familia MMS/wav2vec 2.0, las opciones habituales serian Hugging Face Transformers con pipeline de ASR, o servidores de inferencia como TorchServe. No se documenta soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje generativos mas que a modelos acusticos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ksiminyu/mms-1b-fl102-swahili-train1.0 | ~1.000 millones (segun identificador) | no aplica (audio) | no disponible | no disponible | HuggingFace, 0 descargas |
-| facebook/mms-1b-fl102 | ~1.000 millones | no aplica (audio) | disponible en la documentacion original de Meta, no consultada aqui | CC-BY-NC 4.0 (segun la familia MMS, sin confirmar en esta ficha) | HuggingFace |
-| facebook/mms-1b-all | ~1.000 millones | no aplica (audio) | disponible en la documentacion original de Meta, no consultada aqui | CC-BY-NC 4.0 (segun la familia MMS, sin confirmar en esta ficha) | HuggingFace |
-| Whisper (variantes) | 39 M - 1.550 M | no aplica (audio) | WER publicos en la model card de OpenAI | MIT / Apache segun variante | HuggingFace |
+| ksiminyu/mms-1b-fl102-swahili-train1.0 | ~1.000 millones (segun identificador) | no aplica (audio) | no disponible | no disponible | Hugging Face, 0 descargas |
+| facebook/mms-1b-fl102 | ~1.000 millones | no aplica (audio) | disponible en la documentacion original de Meta, no consultada aqui | CC-BY-NC 4.0 (segun la familia MMS, sin confirmar en esta ficha) | Hugging Face |
+| facebook/mms-1b-all | ~1.000 millones | no aplica (audio) | disponible en la documentacion original de Meta, no consultada aqui | CC-BY-NC 4.0 (segun la familia MMS, sin confirmar en esta ficha) | Hugging Face |
+| Whisper (variantes) | 39 M - 1.550 M | no aplica (audio) | WER publicos en la model card de OpenAI | MIT / Apache segun variante | Hugging Face |
 
 Nota: los datos de los modelos comparativos no estan incluidos en la informacion proporcionada en esta busqueda y se mencionan unicamente como referencia de categoria. No se han verificado sus cifras para esta ficha.
 
@@ -87,5 +87,5 @@ Nota: los datos de los modelos comparativos no estan incluidos en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.0
+- Repositorio en Hugging Face: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.0
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada. Los resultados obtenidos corresponden a un videojuego de navegador sin relacion con el modelo.

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iTantra Models (este) | STT + TTS empaquetado | STT 120 M; TTS no disponible | Fragmentos de audio, offline, movil | Apache 2.0 | HuggingFace |
+| iTantra Models (este) | STT + TTS empaquetado | STT 120 M; TTS no disponible | Fragmentos de audio, offline, movil | Apache 2.0 | Hugging Face |
 | OpenAI Whisper | STT | 39 M – 1550 M (segun variante) | 30 s de audio, multilingue | MIT | Abierta |
 | Meta MMS | STT | Variable por idioma | Multilingue (mas de 1000 idiomas) | CC-BY-NC 4.0 | Abierta |
 | AI4Bharat IndicConformer-120M | STT (modelo base) | 120 M | Idiomas indicos, offline | Verificar en el repositorio original | Abierta |
@@ -87,7 +87,7 @@ Nota: no se dispone de resultados de rendimiento comparativos en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/helo-ayush/itantra-models
+- Repositorio en Hugging Face: https://huggingface.co/helo-ayush/itantra-models
 - Catalogo de packs: https://huggingface.co/helo-ayush/itantra-models/raw/main/catalogue.json
 - Plantilla de descarga de packs individuales: https://huggingface.co/helo-ayush/itantra-models/resolve/main/{tag}-1.0.0.itantra
 - Las busquedas web realizadas no devolvieron enlaces relevantes al modelo (los resultados obtenidos corresponden a servicios no relacionados con el proyecto).

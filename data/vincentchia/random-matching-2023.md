@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincentchia/random-matching-2023` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un Swin Transformer (variante Swin T) orientada a tareas de *matching*. El autor lo distribuye como punto de partida reproducible: incluye `pipeline.py` con el modelo y un ejemplo ejecutable, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como checkpoint de inicialización para *smoke tests*.
+`vincentchia/random-matching-2023` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un Swin Transformer (variante Swin T) orientada a tareas de *matching*. El autor lo distribuye como punto de partida reproducible: incluye `pipeline.py` con el modelo y un ejemplo ejecutable, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como checkpoint de inicialización para *smoke tests*.
 
 El dato más relevante para evaluarlo es que **no se presenta como un modelo entrenado**: la propia model card indica que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros en el fichero safetensors es de 33.088, muy lejos de los ~28 M de una variante Swin-T estándar, lo que sugiere una configuración reducida o un subconjunto de pesos más que un modelo utilizable tal cual.
 
@@ -87,5 +87,5 @@ La comparación directa no es posible en términos de rendimiento: el modelo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincentchia/random-matching-2023
+- Modelo en Hugging Face: https://huggingface.co/vincentchia/random-matching-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

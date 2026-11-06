@@ -88,9 +88,9 @@ No se dispone de datos verificados de rendimiento frente a modelos de terceros, 
 
 | Modelo | Parámetros | Cuantización | Peso aproximado | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| edgefloor/meta-encoder-mlx-4bit | 29,78 B | 4-bit affine, group size 64 | 18,17 GiB | safetensors MLX | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| edgefloor/meta-encoder-mlx-4bit | 29,78 B | 4-bit affine, group size 64 | 18,17 GiB | safetensors MLX | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Variante 8-bit del mismo conversor | 29,78 B | 8-bit | No disponible (aproximadamente el doble) | safetensors MLX | Apache-2.0 | Generada por `convert_metaencoder.py` |
-| facebook/meta-encoder (base) | 29,78 B | BF16 | No disponible | Pesos PyTorch/Transformers | Apache-2.0 | Modelo de referencia en HuggingFace |
+| facebook/meta-encoder (base) | 29,78 B | BF16 | No disponible | Pesos PyTorch/Transformers | Apache-2.0 | Modelo de referencia en Hugging Face |
 | Otros encoders multimodales de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre alternativas comparables, de modo que no se puede establecer una comparación de benchmarks con terceros.
@@ -112,7 +112,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgefloor/meta-encoder-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/edgefloor/meta-encoder-mlx-4bit
 - Modelo base: https://huggingface.co/facebook/meta-encoder
 - Revisión fuente convertida: https://huggingface.co/facebook/meta-encoder/tree/3d0df704aa5bf66d9c49da1393181f33e893e5f7
 - Documentación de MLX: https://github.com/ml-explore/mlx

@@ -77,7 +77,7 @@ Swin2SR es una evolucion de SwinIR, con mejoras en convergencia y rendimiento, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/swin2SR-classical-sr-x2-64
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/swin2SR-classical-sr-x2-64
 - Modelo base: https://huggingface.co/caidas/swin2SR-classical-sr-x2-64
 - Repositorio oficial de Swin2SR: https://github.com/mv-lab/swin2sr
 - Paper (arXiv): https://arxiv.org/abs/2209.11345

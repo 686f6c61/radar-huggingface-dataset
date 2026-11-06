@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Checkpoint nivel 5 (variante): https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Checkpoint KUKA IIWA 14 (variante): https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Paper relacionado (dreamzero-so101): https://github.com/Vizuara-AI-Lab/dreamzero-so101/blob/main/paper.html

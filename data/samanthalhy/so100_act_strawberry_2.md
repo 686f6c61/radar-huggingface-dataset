@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa completa. El modelo pertenece a la familia de políticas ACT, que comparten la misma arquitectura transformer encoder-decoder y la estrategia de action chunking. En HuggingFace existen otros modelos del mismo autor (por ejemplo, `samanthalhy/so100_act_herding_3` o `eval_so100_herding_3_v1_act`), pero no se han encontrado especificaciones técnicas ni resultados de benchmarks que permitan establecer una comparación rigurosa.
+No se dispone de información suficiente para una comparativa completa. El modelo pertenece a la familia de políticas ACT, que comparten la misma arquitectura transformer encoder-decoder y la estrategia de action chunking. En Hugging Face existen otros modelos del mismo autor (por ejemplo, `samanthalhy/so100_act_herding_3` o `eval_so100_herding_3_v1_act`), pero no se han encontrado especificaciones técnicas ni resultados de benchmarks que permitan establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -70,11 +70,11 @@ No se dispone de información suficiente para una comparativa completa. El model
 - Depende de la configuración exacta de las cámaras (frontal, superior, de mano) y de la calibración del robot SO100; si se usan cámaras o resoluciones diferentes, el rendimiento puede degradarse.
 - No es un modelo de lenguaje: no soporta entradas de texto, tool calling ni razonamiento de alto nivel.
 - La licencia Apache 2.0 permite el uso comercial, pero el usuario es responsable de validar el rendimiento del modelo en su propio entorno.
-- Se recomienda verificar el estado del repositorio en HuggingFace, ya que el modelo puede haber sido actualizado o reentrenado con posterioridad a los datos disponibles.
+- Se recomienda verificar el estado del repositorio en Hugging Face, ya que el modelo puede haber sido actualizado o reentrenado con posterioridad a los datos disponibles.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/samanthalhy/so100_act_strawberry_2
+- Página del modelo en Hugging Face: https://huggingface.co/samanthalhy/so100_act_strawberry_2
 - Dataset de entrenamiento: https://huggingface.co/datasets/samanthalhy/so100_strawberry_2
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

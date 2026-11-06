@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kriskris28/qwen15-sql-lora es un repositorio publicado en HuggingFace por el usuario Kriskris28 que, por su identificador, apunta a un adaptador LoRA (Low-Rank Adaptation) orientado a la generacion de SQL sobre un modelo base de la familia Qwen1.5. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna fuente documental: la model card publicada es la plantilla autogenerada de HuggingFace y todos sus campos figuran como "[More Information Needed]".
+Kriskris28/qwen15-sql-lora es un repositorio publicado en Hugging Face por el usuario Kriskris28 que, por su identificador, apunta a un adaptador LoRA (Low-Rank Adaptation) orientado a la generacion de SQL sobre un modelo base de la familia Qwen1.5. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna fuente documental: la model card publicada es la plantilla autogenerada de Hugging Face y todos sus campos figuran como "[More Information Needed]".
 
 El repositorio presenta un estado practicamente vacio desde el punto de vista de la informacion: 0 descargas, 0 likes, un tamano de 0.0 GB, licencia no declarada, idiomas no declarados y pipeline no declarado. La unica etiqueta tecnica reseñable es la referencia arXiv 1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono en machine learning, un elemento que aparece en la propia plantilla de model card y que no guarda relacion con el modelo en si.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha debe leerse como un registro de lo que se puede verificar 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni la eventual aplicacion de RLHF, DPO u otras tecnicas de alineamiento. La model card es la plantilla estandar autogenerada por HuggingFace y no contiene ningun campo cumplimentado.
+No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni la eventual aplicacion de RLHF, DPO u otras tecnicas de alineamiento. La model card es la plantilla estandar autogenerada por Hugging Face y no contiene ningun campo cumplimentado.
 
 La unica evidencia estructural disponible son las etiquetas del repositorio: `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. La presencia de `safetensors` indica el formato de serializacion de pesos, y `transformers` la libreria de referencia, pero ninguna de las dos cosas aporta informacion sobre el diseno del modelo. La etiqueta `arxiv:1910.09700` remite al articulo del calculador de impacto de carbono citado en la plantilla, no a un paper descriptivo del modelo.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM para inferencia: no disponible. No se puede estimar sin conocer el modelo base. Si el adaptador se aplicase sobre Qwen1.5-1.8B, la inferencia en fp16 rondaria los 3.6 GB de VRAM; sobre Qwen1.5-7B, unos 14-15 GB; sobre Qwen1.5-14B, unos 28 GB. Estas cifras son estimaciones genericas por tamano de parametros, no datos publicados para este repositorio.
 - GPU recomendadas: no disponible. Como referencia general, un modelo de 1.8B en fp16 cabe en cualquier GPU consumer con 6-8 GB; uno de 7B en fp16 requiere una RTX 4090 (24 GB) o una A10/A100; uno de 14B en fp16 pide A100 40 GB o cuantizacion.
 - Compatibilidad con GPU consumer: no confirmada. Depende enteramente del modelo base, no del adaptador.
-- Opciones de despliegue: al estar etiquetado con `transformers` y `endpoints_compatible`, el camino natural seria la libreria transformers y HuggingFace Inference Endpoints. vLLM, TGI, llama.cpp u Ollama solo serian viables si existiesen pesos convertidos a GGUF o AWQ, cosa que el repositorio no declara.
+- Opciones de despliegue: al estar etiquetado con `transformers` y `endpoints_compatible`, el camino natural seria la libreria transformers y Hugging Face Inference Endpoints. vLLM, TGI, llama.cpp u Ollama solo serian viables si existiesen pesos convertidos a GGUF o AWQ, cosa que el repositorio no declara.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No disponible. No se puede establecer una comparativa rigurosa sin conocer el mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kriskris28/qwen15-sql-lora
+- Repositorio en Hugging Face: https://huggingface.co/Kriskris28/qwen15-sql-lora
 - Articulo citado en las etiquetas del repositorio (calculador de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML mencionado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

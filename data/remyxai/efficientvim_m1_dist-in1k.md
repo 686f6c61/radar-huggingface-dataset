@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientViM M1 Dist, desarrollado por remyxai, es un modelo de clasificación de imágenes con un tamaño reducido de 7.672.742 parámetros, distribuido a través de HuggingFace bajo licencia Apache 2.0. El nombre del modelo sugiere una arquitectura eficiente basada en State Space Models (Mamba) aplicada a visión, una familia que ha ganado atención reciente por su balance entre precisión y coste computacional. El sufijo `in1k` indica que fue entrenado en el dataset ImageNet-1k, mientras que `dist` apunta a un proceso de destilación de conocimiento. El modelo está integrado en la librería timm y ofrece pesos en formato safetensors.
+EfficientViM M1 Dist, desarrollado por remyxai, es un modelo de clasificación de imágenes con un tamaño reducido de 7.672.742 parámetros, distribuido a través de Hugging Face bajo licencia Apache 2.0. El nombre del modelo sugiere una arquitectura eficiente basada en State Space Models (Mamba) aplicada a visión, una familia que ha ganado atención reciente por su balance entre precisión y coste computacional. El sufijo `in1k` indica que fue entrenado en el dataset ImageNet-1k, mientras que `dist` apunta a un proceso de destilación de conocimiento. El modelo está integrado en la librería timm y ofrece pesos en formato safetensors.
 
 Es relevante para desarrolladores e investigadores que necesitan un clasificador visual ligero para entornos con recursos limitados. Sin embargo, la información disponible es muy escasa: la model card no incluye documentación técnica, benchmarks ni detalles del entrenamiento, por lo que su rendimiento real debe evaluarse en el caso de uso concreto.
 
@@ -68,5 +68,5 @@ La informacion disponible no incluye comparaciones con otros modelos de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remyxai/efficientvim_m1_dist.in1k
+- Hugging Face: https://huggingface.co/remyxai/efficientvim_m1_dist.in1k
 - No se encontraron otros enlaces relevantes en la busqueda web.

@@ -93,7 +93,7 @@ Los datos de los modelos comparativos proceden de su documentacion publica y deb
 
 ## Enlaces
 
-- Repositorio HuggingFace (i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Optimal-Ablit-Heretic-i1-GGUF
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Optimal-Ablit-Heretic-i1-GGUF
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/Qwen3.8-27B-Optimal-Ablit-Heretic-GGUF
 - Modelo base: https://huggingface.co/sci4ai/Qwen3.8-27B-Optimal-Ablit-Heretic
 - Fichero imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-Optimal-Ablit-Heretic-i1-GGUF/resolve/main/Qwen3.8-27B-Optimal-Ablit-Heretic.imatrix.gguf

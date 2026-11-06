@@ -98,7 +98,7 @@ La unica comparacion sostenible con la informacion disponible es estructural: fr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated-GGUF
 - Modelo padre (safetensors): https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ganikim/rb5_grape_sort_10k` es un modelo publicado en HuggingFace por el usuario ganikim, con 3.144.016.000 parametros totales (aproximadamente 3,14 mil millones) y un repositorio de 12,6 GB en formato safetensors. El identificador del repositorio sugiere un modelo derivado o ajustado para una tarea de clasificacion de uva ("grape sort") sobre un brazo robotico RB5, con un conjunto de datos de alrededor de 10.000 elementos, aunque esta interpretacion procede unicamente de la nomenclatura del repositorio y no de documentacion publicada por el autor.
+`ganikim/rb5_grape_sort_10k` es un modelo publicado en Hugging Face por el usuario ganikim, con 3.144.016.000 parametros totales (aproximadamente 3,14 mil millones) y un repositorio de 12,6 GB en formato safetensors. El identificador del repositorio sugiere un modelo derivado o ajustado para una tarea de clasificacion de uva ("grape sort") sobre un brazo robotico RB5, con un conjunto de datos de alrededor de 10.000 elementos, aunque esta interpretacion procede unicamente de la nomenclatura del repositorio y no de documentacion publicada por el autor.
 
-La etiqueta de HuggingFace `Gr00tN1d7` apunta a que el modelo esta construido sobre la arquitectura NVIDIA Isaac GR00T N1.7, una familia de modelos vision-lenguaje-accion (VLA) orientada al control de robots. De confirmarse, se trataria de un ajuste fino de proposito especifico para manipulacion robotica en el dominio agricola, no de un modelo de lenguaje generalista. No se ha publicado informacion adicional sobre datos de entrenamiento, licencia o idiomas.
+La etiqueta de Hugging Face `Gr00tN1d7` apunta a que el modelo esta construido sobre la arquitectura NVIDIA Isaac GR00T N1.7, una familia de modelos vision-lenguaje-accion (VLA) orientada al control de robots. De confirmarse, se trataria de un ajuste fino de proposito especifico para manipulacion robotica en el dominio agricola, no de un modelo de lenguaje generalista. No se ha publicado informacion adicional sobre datos de entrenamiento, licencia o idiomas.
 
 El modelo es relevante como ejemplo del ecosistema de politicas roboticas abiertas de tamano medio (3B), que pueden ejecutarse en hardware de gama alta para consumidor, pero presenta una adopcion practicamente nula (8 descargas, 0 likes) y una ausencia total de documentacion tecnica verificable, lo que limita seriamente su uso en produccion sin una evaluacion previa por parte del integrador.
 
@@ -72,7 +72,7 @@ La busqueda web no ha devuelto informacion sobre modelos comparables ni sobre es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| ganikim/rb5_grape_sort_10k | 3,14B | no disponible | no disponible | HuggingFace, 8 descargas | Solo los del repositorio |
+| ganikim/rb5_grape_sort_10k | 3,14B | no disponible | no disponible | Hugging Face, 8 descargas | Solo los del repositorio |
 | NVIDIA Isaac GR00T N1.7 / N1.5 | no disponible | no disponible | no disponible | no verificado en esta busqueda | no disponible |
 | OpenVLA | no disponible | no disponible | no disponible | no verificado en esta busqueda | no disponible |
 | Physical Intelligence pi0 | no disponible | no disponible | no disponible | no verificado en esta busqueda | no disponible |
@@ -92,7 +92,7 @@ La busqueda web no ha devuelto informacion sobre modelos comparables ni sobre es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ganikim/rb5_grape_sort_10k
+- Repositorio en Hugging Face: https://huggingface.co/ganikim/rb5_grape_sort_10k
 - Perfil del autor: https://huggingface.co/ganikim
 - No se han encontrado paper, blog, repositorio de codigo ni demo asociados al modelo en la busqueda realizada.
 - Enlaces de contexto no relacionados directamente: https://slowlow999.github.io/The_Jailbreak_Index/, https://benchlm.ai/, https://gemini.google.com/?hl=en-GB, https://github.com/l0gicx/ai-model-bypass, https://grok.com/

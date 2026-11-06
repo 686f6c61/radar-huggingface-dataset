@@ -68,8 +68,8 @@ El conjunto de prueba son 50 imágenes sintéticas y 15 páginas de cómic reale
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `depreciation84/comic-text-and-bubble-detector-int8` (este) | no disponible | 640×640 | 455 ms CPU / 802 ms movil; 369/373 cajas | Apache-2.0 | ONNX en HuggingFace |
-| `ogkalu/comic-text-and-bubble-detector` (original fp32) | no disponible | 640×640 | 837 ms CPU / 1944 ms movil; 369/373 cajas | Apache-2.0 | ONNX en HuggingFace |
+| `depreciation84/comic-text-and-bubble-detector-int8` (este) | no disponible | 640×640 | 455 ms CPU / 802 ms movil; 369/373 cajas | Apache-2.0 | ONNX en Hugging Face |
+| `ogkalu/comic-text-and-bubble-detector` (original fp32) | no disponible | 640×640 | 837 ms CPU / 1944 ms movil; 369/373 cajas | Apache-2.0 | ONNX en Hugging Face |
 | Detectores de texto genéricos (p. ej. DBNet, EAST) | no disponible | variable | no disponible | variable | amplia |
 
 No se dispone de datos de benchmarks comparativos con otros detectores de bocadillos de cómic en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con otros detectores de bocadi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/depreciation84/comic-text-and-bubble-detector-int8
+- Modelo en Hugging Face: https://huggingface.co/depreciation84/comic-text-and-bubble-detector-int8
 - Modelo base original: https://huggingface.co/ogkalu/comic-text-and-bubble-detector
 - Repositorio del modelo base (revisión citada): revisión `16e8a622f91fabc6b5b65c96d32d1183f8843546` del repositorio anterior
 - ONNX Runtime (herramienta de cuantización): https://onnxruntime.ai/

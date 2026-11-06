@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AkashCho/efficientformer-classification` es un prototipo de investigacion publicado en HuggingFace por el usuario AkashCho. Consiste en una implementacion propia de una arquitectura EfficientFormer orientada a clasificacion de imagenes, acompanada de un checkpoint de inicializacion (`model.safetensors`) de tan solo 24.832 parametros. El propio autor indica explicitamente en la model card que se trata de un punto de partida experimental y que no se presenta ningun resultado de benchmark verificado.
+`AkashCho/efficientformer-classification` es un prototipo de investigacion publicado en Hugging Face por el usuario AkashCho. Consiste en una implementacion propia de una arquitectura EfficientFormer orientada a clasificacion de imagenes, acompanada de un checkpoint de inicializacion (`model.safetensors`) de tan solo 24.832 parametros. El propio autor indica explicitamente en la model card que se trata de un punto de partida experimental y que no se presenta ningun resultado de benchmark verificado.
 
 El modelo no esta entrenado: el repositorio incluye los ficheros de codigo (`inference.py`), configuracion (`config.json`) y receta de experimento (`training_args.json`), pero el checkpoint solo sirve para pruebas de humo (smoke tests) y no para inferencia en produccion. La escala declarada es "tiny", con atencion dispersa (sparse), fusion por concatenacion seguida de MLP, activacion mish y normalizacion por batchnorm.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AkashCho/efficientformer-classification | 24.832 | Clasificacion de imagenes (prototipo sin entrenar) | bsd-3-clause | HuggingFace |
+| AkashCho/efficientformer-classification | 24.832 | Clasificacion de imagenes (prototipo sin entrenar) | bsd-3-clause | Hugging Face |
 | EfficientFormer (implementacion en transformers) | no disponible en la informacion | Clasificacion de imagenes (ImageNet) | no disponible | Hugging Face Transformers |
 | EfficientFormer (Qualcomm AI Hub) | no disponible en la informacion | Clasificador ImageNet y backbone generico | no disponible | Qualcomm AI Hub |
 | MobileNetV3 / DeiT (referencia de la misma categoria) | no disponible | Clasificacion de imagenes | no disponible | no disponible |
@@ -87,7 +87,7 @@ No se dispone de cifras de parametros, contexto ni rendimiento para las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkashCho/efficientformer-classification
+- Modelo en Hugging Face: https://huggingface.co/AkashCho/efficientformer-classification
 - Documentacion de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.27.0/model_doc/efficientformer
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/efficientformer
 - EMFormer: Efficient Multi-Scale Transformer for Accumulative Context (modelo no relacionado, encontrado en la busqueda): https://arxiv.org/html/2602.01194

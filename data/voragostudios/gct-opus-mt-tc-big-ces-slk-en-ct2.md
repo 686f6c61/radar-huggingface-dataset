@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Idiomas | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| gct-opus-mt-tc-big-ces-slk-en-ct2 | ces, slk → en | no disponible | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| Helsinki-NLP/opus-mt-tc-big-ces_slk-en | ces, slk → en | no disponible | CC BY 4.0 | safetensors/PyTorch | HuggingFace |
-| Otros modelos OPUS-MT tc-big | pares variables | no disponible | CC BY 4.0 | safetensors/PyTorch | HuggingFace |
+| gct-opus-mt-tc-big-ces-slk-en-ct2 | ces, slk → en | no disponible | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-ces_slk-en | ces, slk → en | no disponible | CC BY 4.0 | safetensors/PyTorch | Hugging Face |
+| Otros modelos OPUS-MT tc-big | pares variables | no disponible | CC BY 4.0 | safetensors/PyTorch | Hugging Face |
 
 La comparativa se limita al modelo base del que deriva esta conversión, ya que no se dispone de datos de rendimiento ni de especificaciones de alternativas concretas en la información proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa se limita al modelo base del que deriva esta conversión, ya que 
 
 ## Enlaces
 
-- [HuggingFace: VoragoStudios/gct-opus-mt-tc-big-ces-slk-en-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-ces-slk-en-ct2)
+- [Hugging Face: VoragoStudios/gct-opus-mt-tc-big-ces-slk-en-ct2](https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-ces-slk-en-ct2)
 - [Modelo base: Helsinki-NLP/opus-mt-tc-big-ces_slk-en](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-ces_slk-en)
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2)
 - [Proyecto OPUS-MT](https://github.com/Helsinki-NLP/OPUS-MT-train)

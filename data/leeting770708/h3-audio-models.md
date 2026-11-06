@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leeting770708/h3-audio-models
+- Repositorio Hugging Face: https://huggingface.co/leeting770708/h3-audio-models
 - Modelo original ACE-Step 1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio de workflows ComfyUI para MiniMax H3 (referencia, no directamente relacionado): https://github.com/ai-models-lab/minimax-h3
 - Documento de validacion de habla (referencia, no directamente relacionado): https://github.com/leeting770708/h3-studio/blob/main/comfyui-minimax-h3-audio-T8/docs/SPEECH_VALIDATION_REPORT.md

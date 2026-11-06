@@ -81,8 +81,8 @@ En cuanto al cierre de razonamiento, en posiciones `</think>` retenidas la proba
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-JANGHT1.4 (este) | 31,5B en safetensors residentes; ~552B fuera de Engram | No disponible | JANGT 1,433 bits/peso + MXFP8 + affine 8-bit | MIT | HuggingFace, MLX, runtime Osaurus |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (fuente) | ~552B fuera de Engram | No disponible | FP8 original | No disponible en la información | HuggingFace |
+| DeepSeek-V4.1-Flash-1017-JANGHT1.4 (este) | 31,5B en safetensors residentes; ~552B fuera de Engram | No disponible | JANGT 1,433 bits/peso + MXFP8 + affine 8-bit | MIT | Hugging Face, MLX, runtime Osaurus |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (fuente) | ~552B fuera de Engram | No disponible | FP8 original | No disponible en la información | Hugging Face |
 | Otras cuantizaciones de DeepSeek-V4.1-Flash | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks estándar ni de especificaciones de modelos alternativos comparables en la información proporcionada, por lo que la comparativa se limita al modelo fuente y a la ausencia de alternativas documentadas.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks estándar ni de especificaciones de modelos
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/OsaurusAI/DeepSeek-V4.1-Flash-1017-JANGHT1.4
+- Hugging Face del bundle: https://huggingface.co/OsaurusAI/DeepSeek-V4.1-Flash-1017-JANGHT1.4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Sitio del autor: https://osaurus.ai
 - Artefactos de evaluación incluidos en el repo: `evaluation/kl_vs_source_heldout.json`, `evaluation/reasoning_close.json`, `evaluation/dspark_acceptance.json`

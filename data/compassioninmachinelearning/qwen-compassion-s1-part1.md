@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`CompassioninMachineLearning/qwen-compassion-s1-part1` es un ajuste fino (fine-tune) de 8,19 mil millones de parametros desarrollado por el usuario CompassioninMachineLearning y publicado en HuggingFace bajo licencia Apache-2.0. Segun los metadatos del repositorio, parte del modelo `CompassioninMachineLearning/qwen-compassion-midtrain-seed1-CPT-best`, que a su vez es un checkpoint intermedio de entrenamiento continuo (CPT, continual pretraining) sobre la familia Qwen3. El nombre del modelo sugiere un ajuste orientado a respuestas con tono compasivo o empatico, aunque la model card no documenta el objetivo, el dataset ni la metodologia de alineacion empleada.
+`CompassioninMachineLearning/qwen-compassion-s1-part1` es un ajuste fino (fine-tune) de 8,19 mil millones de parametros desarrollado por el usuario CompassioninMachineLearning y publicado en Hugging Face bajo licencia Apache-2.0. Segun los metadatos del repositorio, parte del modelo `CompassioninMachineLearning/qwen-compassion-midtrain-seed1-CPT-best`, que a su vez es un checkpoint intermedio de entrenamiento continuo (CPT, continual pretraining) sobre la familia Qwen3. El nombre del modelo sugiere un ajuste orientado a respuestas con tono compasivo o empatico, aunque la model card no documenta el objetivo, el dataset ni la metodologia de alineacion empleada.
 
-El modelo se distribuye unicamente en formato `safetensors` para la libreria `transformers`, y la model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace. El idioma declarado es exclusivamente ingles (`en`) y la pipeline asociada es `text-generation`. El repositorio ocupa 16,4 GB, lo que para 8.190.735.360 parametros equivale aproximadamente a 2 bytes por parametro, consistente con pesos en BF16 o FP16.
+El modelo se distribuye unicamente en formato `safetensors` para la libreria `transformers`, y la model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face. El idioma declarado es exclusivamente ingles (`en`) y la pipeline asociada es `text-generation`. El repositorio ocupa 16,4 GB, lo que para 8.190.735.360 parametros equivale aproximadamente a 2 bytes por parametro, consistente con pesos en BF16 o FP16.
 
 La relevancia de esta ficha es limitada y debe entenderse en su contexto real: se trata de un experimento de investigacion con 25 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados, sin documentacion de datos de entrenamiento y sin evaluaciones de terceros. Es util como punto de partida para quien quiera reproducir o continuar el linaje de ajuste, pero no hay evidencia publica que respalde afirmaciones de calidad, seguridad o rendimiento frente a alternativas consolidadas.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card es minimalista: indica que el modelo se
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponibles; el unico idioma declarado es el ingles.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible`).
 - Al estar basado en la familia Qwen3, es probable que la arquitectura subyacente soporte tool calling y contexto amplio, pero no hay ninguna confirmacion para este checkpoint concreto, por lo que no debe asumirse en produccion sin verificacion empirica.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ La comparativa se limita a caracteristicas estructurales y de licencia. No es po
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen-compassion-s1-part1 | 8,19 mil millones | no disponible | Apache-2.0 | HuggingFace (25 descargas, 0 likes) | Fine-tune sin evaluaciones publicadas; solo ingles |
+| qwen-compassion-s1-part1 | 8,19 mil millones | no disponible | Apache-2.0 | Hugging Face (25 descargas, 0 likes) | Fine-tune sin evaluaciones publicadas; solo ingles |
 | Qwen3-8B | 8,19 mil millones | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache-2.0 | Ampliamente disponible | Referencia estructural mas probable; si, con benchmarks publicados |
 | Llama 3.1 8B Instruct | ~8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible | Restricciones de licencia distintas a Apache-2.0; multilingue |
 | Gemma 2 9B | ~9,24 mil millones | 8.192 tokens | Gemma Terms of Use | Ampliamente disponible | Contexto menor; licencia con condiciones de uso especificas |
@@ -98,10 +98,10 @@ La comparativa se limita a caracteristicas estructurales y de licencia. No es po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-s1-part1
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-s1-part1
 - Modelo base: https://huggingface.co/CompassioninMachineLearning/qwen-compassion-midtrain-seed1-CPT-best
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Paper o blog del modelo: no disponible
 - Repositorio de codigo propio: no disponible
 - Demo: no disponible

@@ -6,7 +6,7 @@ Este modelo es una cuantización GGUF del fine-tune `Darkhn/Olmo3-7B-Animus-V12.
 
 El modelo base Olmo3 (presentado en el artículo arXiv 2512.13961) está diseñado para razonamiento de contexto largo, llamadas a funciones, codificación, instrucción y chat general. El fine-tune de Darkhn lo especializa en roleplay y conversación con temática de la serie *Wings of Fire*, incluyendo contenido NSFW, por lo que no está recomendado para todos los públicos. La licencia Apache-2.0 permite uso comercial, y el modelo está disponible en doce cuantizaciones que van desde Q2_K (3.0 GB) hasta f16 (14.7 GB), cubriendo desde GPUs de consumo hasta servidores de alta capacidad.
 
-Esta ficha se basa exclusivamente en la información pública de HuggingFace y en el artículo técnico de Olmo3; no se han publicado benchmarks específicos para este fine-tune.
+Esta ficha se basa exclusivamente en la información pública de Hugging Face y en el artículo técnico de Olmo3; no se han publicado benchmarks específicos para este fine-tune.
 
 ## Especificaciones técnicas
 

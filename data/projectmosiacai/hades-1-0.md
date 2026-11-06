@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProjectMosiacAI/Hades-1.0
+- Hugging Face: https://huggingface.co/ProjectMosiacAI/Hades-1.0
 - Repositorio de Unsloth (mencionado en el README): https://github.com/unslothai/unsloth
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) específicos de este modelo.

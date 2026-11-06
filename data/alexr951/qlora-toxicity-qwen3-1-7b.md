@@ -72,7 +72,7 @@ No se dispone de comparaciones con otros modelos de moderación de toxicidad (p.
 
 ## Enlaces
 
-- [HuggingFace: Alexr951/qlora-toxicity-qwen3-1.7b](https://huggingface.co/Alexr951/qlora-toxicity-qwen3-1.7b)
+- [Hugging Face: Alexr951/qlora-toxicity-qwen3-1.7b](https://huggingface.co/Alexr951/qlora-toxicity-qwen3-1.7b)
 - [Modelo similar: systemSyS/qwen3-1.7b-toxicity-qlora](https://huggingface.co/systemSyS/qwen3-1.7b-toxicity-qlora)
 - [Informe técnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

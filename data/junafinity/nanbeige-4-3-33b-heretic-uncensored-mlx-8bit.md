@@ -85,7 +85,7 @@ La comparativa se limita a la cadena de derivacion del propio modelo, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junafinity/Nanbeige-4.3-33B-Heretic-Uncensored-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Nanbeige-4.3-33B-Heretic-Uncensored-MLX-8bit
 - Modelo base (Heretic): https://huggingface.co/Luni/Nanbeige-4.3-33B-Heretic
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Sitio del autor: https://verisafe.live

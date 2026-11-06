@@ -104,7 +104,7 @@ Qwen3.6-35B-A3B supera a Qwen3.5-35BA3B en SWE-bench Verified (+3,4), Multilingu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r1main
+- Repositorio Hugging Face: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r1main
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Qwen Chat: https://chat.qwen.ai

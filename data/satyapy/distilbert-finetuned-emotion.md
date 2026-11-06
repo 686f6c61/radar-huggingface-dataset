@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Satyapy/distilbert-finetuned-emotion es un modelo de clasificacion de texto obtenido mediante ajuste fino (fine-tuning) de distilbert-base-uncased sobre un conjunto de datos orientado a la deteccion de emociones. Lo publica el usuario Satyapy en HuggingFace y resuelve una tarea de clasificacion de secuencias: asignar una etiqueta emocional a un fragmento de texto corto. Su relevancia es practica: con solo 66,9 millones de parametros ofrece un coste de inferencia muy bajo y una precision declarada de 0,927, lo que lo hace util para tareas de moderacion, analisis de sentimiento o enrutado de opiniones a escala.
+Satyapy/distilbert-finetuned-emotion es un modelo de clasificacion de texto obtenido mediante ajuste fino (fine-tuning) de distilbert-base-uncased sobre un conjunto de datos orientado a la deteccion de emociones. Lo publica el usuario Satyapy en Hugging Face y resuelve una tarea de clasificacion de secuencias: asignar una etiqueta emocional a un fragmento de texto corto. Su relevancia es practica: con solo 66,9 millones de parametros ofrece un coste de inferencia muy bajo y una precision declarada de 0,927, lo que lo hace util para tareas de moderacion, analisis de sentimiento o enrutado de opiniones a escala.
 
 El modelo se apoya en la arquitectura DistilBERT, una version destilada de BERT con 6 capas de encoder, 768 dimensiones ocultas y 12 cabezas de atencion, que reduce el tamano del BERT base original en torno a un 40 por ciento manteniendo buena parte de su rendimiento. Sobre esa base se anade una cabeza de clasificacion para la tarea especifica de emociones. El repositorio ocupa 0,3 GB y los pesos estan en formato safetensors.
 
-La ficha tecnica del autor esta generada automaticamente por el Trainer de HuggingFace y deja sin documentar varios apartados clave: el conjunto de datos exacto, las etiquetas de salida, los idiomas de entrenamiento y las limitaciones previstas. Esto condiciona cualquier uso en produccion, ya que la trazabilidad del dato y la lista de clases no estan confirmadas por el autor.
+La ficha tecnica del autor esta generada automaticamente por el Trainer de Hugging Face y deja sin documentar varios apartados clave: el conjunto de datos exacto, las etiquetas de salida, los idiomas de entrenamiento y las limitaciones previstas. Esto condiciona cualquier uso en produccion, ya que la trazabilidad del dato y la lista de clases no estan confirmadas por el autor.
 
 ## Especificaciones tecnicas
 
@@ -80,10 +80,10 @@ No se han publicado resultados sobre benchmarks estandar (MMLU, GLUE, HumanEval,
 
 | Modelo | Parametros | Contexto | Metricas declaradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Satyapy/distilbert-finetuned-emotion | 66,9 M | 512 tokens | Accuracy 0,927; F1 0,9271 | apache-2.0 | HuggingFace |
-| distilbert-base-uncased (base) | 66 M aprox. | 512 tokens | no aplica (no ajustado a emociones) | apache-2.0 | HuggingFace |
-| SagarVidya/distilbert-emotion-model_v4 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| tsid7710/distillbert-emotion-model | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Satyapy/distilbert-finetuned-emotion | 66,9 M | 512 tokens | Accuracy 0,927; F1 0,9271 | apache-2.0 | Hugging Face |
+| distilbert-base-uncased (base) | 66 M aprox. | 512 tokens | no aplica (no ajustado a emociones) | apache-2.0 | Hugging Face |
+| SagarVidya/distilbert-emotion-model_v4 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| tsid7710/distillbert-emotion-model | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los modelos alternativos encontrados en la busqueda web comparten el mismo backbone (distilbert-base-uncased) y la misma tarea de clasificacion de emociones, pero sus fichas no exponen parametros ni resultados comparables, por lo que no es posible establecer una comparacion cuantitativa con la informacion disponible. Alternativas de mayor tamano como los modelos basados en RoBERTa o BERT base completo existirian en la misma categoria, pero no se dispone de datos concretos en esta busqueda.
 
@@ -101,7 +101,7 @@ Los modelos alternativos encontrados en la busqueda web comparten el mismo backb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Satyapy/distilbert-finetuned-emotion
+- Modelo en Hugging Face: https://huggingface.co/Satyapy/distilbert-finetuned-emotion
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Modelo similar SagarVidya/distilbert-emotion-model_v4: https://huggingface.co/SagarVidya/distilbert-emotion-model_v4
 - Modelo similar tsid7710/distillbert-emotion-model: https://huggingface.co/tsid7710/distillbert-emotion-model

@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qyrou/reasoning-summarizer-800m-pre-gguf
+- Modelo en Hugging Face: https://huggingface.co/Qyrou/reasoning-summarizer-800m-pre-gguf
 - Modelo base: https://huggingface.co/Qyrou/reasoning-summarizer-800m-pre
 - Dataset de entrenamiento: https://huggingface.co/datasets/Qyrou/reasoning-summaries-61k
 - Réplica del modelo en SupraLabs: https://huggingface.co/SupraLabs/reasoning-summarizer-800m-pre-gguf

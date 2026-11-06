@@ -81,7 +81,7 @@ No se dispone de comparativas con otros modelos multimodales de tamano similar e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zherebetskyy/Qwen3.8-27B-nvfp4-mlx
+- Repositorio Hugging Face: https://huggingface.co/zherebetskyy/Qwen3.8-27B-nvfp4-mlx
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base en BF16 para MLX: https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Variante Q4 (INT4): https://huggingface.co/zherebetskyy/Qwen3.8-27B-4bit-mlx

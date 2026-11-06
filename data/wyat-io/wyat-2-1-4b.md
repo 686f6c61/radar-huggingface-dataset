@@ -82,11 +82,11 @@ Wyat se diferencia de los clasificadores tradicionales en que los candidatos y c
 - Al no generar texto libre, el modelo no es sustituto de un LLM para tareas de redaccion, resumen o conversacion.
 - Riesgo de alucinacion: no aplicable en el sentido generativo, pero errores de clasificacion y probabilidades mal calibradas siguen siendo posibles; no hay datos publicados sobre sesgos del modelo.
 - Licencia Apache 2.0: sin restricciones relevantes para uso comercial.
-- Proyecto con 0 descargas registradas en HuggingFace en el momento de redactar la ficha: madurez y adopcion comunitaria limitadas.
+- Proyecto con 0 descargas registradas en Hugging Face en el momento de redactar la ficha: madurez y adopcion comunitaria limitadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyat-io/wyat-2-1.4b
+- Modelo en Hugging Face: https://huggingface.co/wyat-io/wyat-2-1.4b
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B
 - Sitio web: https://wyat.io
 - Libreria Python (GitHub): https://github.com/teilomillet/wyat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SACXZ213EDS, con licencia MIT y etiquetado para la libreria transformers con pipeline de feature-extraction. El nombre del repositorio incluye el sufijo "TestRepo" y el propio modelo se denomina "MyAwesomeModel", lo que apunta a un repositorio de prueba o plantilla en lugar de un modelo listo para produccion. El tamano del repositorio figura como 0.0 GB y acumula 0 descargas y 0 likes desde su creacion.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SACXZ213EDS, con licencia MIT y etiquetado para la libreria transformers con pipeline de feature-extraction. El nombre del repositorio incluye el sufijo "TestRepo" y el propio modelo se denomina "MyAwesomeModel", lo que apunta a un repositorio de prueba o plantilla en lugar de un modelo listo para produccion. El tamano del repositorio figura como 0.0 GB y acumula 0 descargas y 0 likes desde su creacion.
 
 La model card describe un modelo de razonamiento con mejoras en tareas de matematicas, programacion y logica, e incluye una tabla de evaluacion con categorias como razonamiento matematico, comprension lectora o generacion de codigo. Sin embargo, esta descripcion entra en conflicto con los metadatos del repositorio, que etiquetan el modelo como BERT y como extractor de caracteristicas, es decir, un encoder de representaciones y no un modelo generativo de razonamiento. Ademas, no se publican pesos, numero de parametros, tokenizador ni configuracion de contexto.
 
@@ -44,7 +44,7 @@ Tampoco se detallan los datos de entrenamiento: no se indica el numero de tokens
 
 - Extraccion de embeddings para busqueda semantica: el pipeline declarado es `feature-extraction`, por lo que el uso mas coherente con los metadatos seria generar representaciones vectoriales de texto para indices de recuperacion. No obstante, al no publicarse pesos, no puede ejecutarse.
 - Prototipado de fichas de modelo: el repositorio sirve como plantilla de model card para proyectos internos de documentacion de modelos.
-- Pruebas de integracion con HuggingFace Hub: util para validar flujos de subida, metadatos y etiquetado en pipelines de CI.
+- Pruebas de integracion con Hugging Face Hub: util para validar flujos de subida, metadatos y etiquetado en pipelines de CI.
 - Validacion de endpoints compatibles: la etiqueta `endpoints_compatible` permitiria probar el enrutado de peticiones en infraestructura tipo Inference Endpoints, sin modelo real detras.
 - Razonamiento matematico y logico: la model card lo propone para este fin, pero no hay artefactos que permitan reproducir los resultados citados.
 - Asistente conversacional con busqueda web: las plantillas incluidas describen un flujo de respuesta con citas, util como referencia de diseno de prompts, no como modelo desplegable.
@@ -101,7 +101,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2", id
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SACXZ213EDS/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SACXZ213EDS/MyAwesomeModel-TestRepo
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL; no disponible.

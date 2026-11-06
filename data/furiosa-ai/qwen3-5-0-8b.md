@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furiosa-ai/Qwen3.5-0.8B
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/Qwen3.5-0.8B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

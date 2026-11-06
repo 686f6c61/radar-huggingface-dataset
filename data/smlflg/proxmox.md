@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smlflg/Proxmox` no es un modelo de inteligencia artificial: es un repositorio alojado en HuggingFace cuyo contenido es documentación de infraestructura escrita en alemán. Describe el plan para convertir un servidor dedicado de Hetzner en un hipervisor *bare-metal* Proxmox VE sobre el que ejecutar agentes autónomos *always-on*, con aislamiento por contenedor y capacidad de *snapshot* y *rollback*.
+`smlflg/Proxmox` no es un modelo de inteligencia artificial: es un repositorio alojado en Hugging Face cuyo contenido es documentación de infraestructura escrita en alemán. Describe el plan para convertir un servidor dedicado de Hetzner en un hipervisor *bare-metal* Proxmox VE sobre el que ejecutar agentes autónomos *always-on*, con aislamiento por contenedor y capacidad de *snapshot* y *rollback*.
 
 El objetivo declarado por el autor es sacar la ejecución de agentes de su portátil personal, que actúa hoy como única *failure domain*, y trasladarla a un sustrato aislado y recuperable. El repositorio incluye un plan de implementación, un contrato de propiedad de procesos, un documento de incidente, herramientas para que un «agente operador» controle la API REST de Proxmox, plantillas de las cajas de trabajo y un fichero `AGENTS.md` con contexto para agentes constructores.
 
-El estado del proyecto es «Setup»: el servidor está vacío y no hay nada instalado. No contiene pesos, arquitectura de red neuronal, dataset ni resultados de evaluación. Se ha creado con fecha 2026-09-16 y acumula 0 descargas y 0 *likes*, sin licencia ni idiomas declarados en la ficha de HuggingFace.
+El estado del proyecto es «Setup»: el servidor está vacío y no hay nada instalado. No contiene pesos, arquitectura de red neuronal, dataset ni resultados de evaluación. Se ha creado con fecha 2026-09-16 y acumula 0 descargas y 0 *likes*, sin licencia ni idiomas declarados en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ El estado del proyecto es «Setup»: el servidor está vacío y no hay nada inst
 | Formato de pesos | no aplica; el contenido son documentos Markdown, scripts y plantillas de infraestructura |
 | Tipo de artefacto | repositorio de documentación e infraestructura (Proxmox VE) |
 | Autor | smlflg |
-| Fecha de creación (HuggingFace) | 2026-09-16 |
+| Fecha de creación (Hugging Face) | 2026-09-16 |
 | Última actualización | 2026-09-16 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -85,13 +85,13 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 - Ausencia de licencia: la ficha no declara licencia, por lo que no existe una concesión explícita de derechos de uso, modificación o redistribución. Cualquier uso comercial debería aclararse con el autor.
 - Idiomas: la documentación está en alemán; no se declaran otros idiomas soportados.
 - Riesgo de seguridad en el diseño: los agentes trabajadores operan con `bypassPermissions` y privilegios completos dentro de su caja; la contención depende por completo de que el contenedor LXC sin privilegios y el mecanismo de *snapshot* funcionen correctamente. Un fallo de aislamiento convertiría una caja comprometida en un riesgo para el host.
-- Contradicción en las fechas: la model card menciona fechas internas de 2026-07-23 y 2026-07-24, mientras que la ficha de HuggingFace registra la creación el 2026-09-16; conviene verificar la cronología real del proyecto antes de citarlo.
+- Contradicción en las fechas: la model card menciona fechas internas de 2026-07-23 y 2026-07-24, mientras que la ficha de Hugging Face registra la creación el 2026-09-16; conviene verificar la cronología real del proyecto antes de citarlo.
 - Ausencia de benchmarks y de métricas operativas: no hay datos de rendimiento, disponibilidad ni tiempos de recuperación que permitan validar las promesas del diseño.
 - Resultados de búsqueda no pertinentes: las consultas web asociadas devolvieron páginas del portal de vehículos mobile.de, sin relación alguna con el repositorio, por lo que no aportan verificación externa.
 - Sin señales de adopción: 0 descargas y 0 *likes* implican que no existe validación por parte de terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Proxmox
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Proxmox
 - Otros enlaces relevantes (papers, blogs, repositorios, demos): no disponibles en la información proporcionada.
 - Resultados de la búsqueda web: no pertinentes; corresponden a https://www.mobile.de/ y a páginas de anuncios de vehículos del mismo portal, sin relación con el proyecto.

@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/kimi.h059.rl_v10.step_10 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (presumiblemente 32K o 128K) | Apache 2.0 (presumible) | HuggingFace |
-| Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/kimi.h059.rl_v10.step_10 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (presumiblemente 32K o 128K) | Apache 2.0 (presumible) | Hugging Face |
+| Llama-3.1-8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7B | 32K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La comparativa se limita a especificaciones básicas. Este checkpoint no es un modelo final y no debe equipararse a los modelos Kimi de Moonshot AI (K2, K2.5, K3), que son arquitecturas MoE de mayor escala y con licencias propias.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h059.rl_v10.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h059.rl_v10.step_10
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Página de Kimi (Moonshot AI, no relacionada directamente): https://www.kimi.com/en
 - GitHub de Kimi-K2.5 (Moonshot AI, no relacionado): https://github.com/MoonshotAI/Kimi-K2.5

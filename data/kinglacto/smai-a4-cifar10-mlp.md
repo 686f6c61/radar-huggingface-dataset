@@ -6,7 +6,7 @@ SMAI A4 Q1 es un perceptron multicapa (MLP) de proposito academico entrenado sob
 
 La arquitectura declarada es 3072-256-128-10 con activacion ReLU en las capas ocultas, sumando 820.874 parametros entrenables. El autor reporta una precision de test de 0,5088 (50,88%), un valor coherente con un MLP basico sobre CIFAR-10, donde las CNN suelen superar el 80% pero un MLP sin convoluciones se queda en torno al 50-55%. El repositorio ocupa 0,0 GB, lo que sugiere que contiene unicamente el checkpoint `model.pt`, un `config.json` y un fichero `preprocessing.npz` con las estadisticas de normalizacion.
 
-Su relevancia es limitada fuera del ambito docente: sirve como referencia de linea base para comparar arquitecturas convolucionales o como ejemplo minimo de pipeline de entrenamiento y evaluacion en PyTorch. No dispone de model card convencional, licencia declarada, idiomas ni pipeline asociado en HuggingFace, y no ha recibido descargas ni likes desde su publicacion.
+Su relevancia es limitada fuera del ambito docente: sirve como referencia de linea base para comparar arquitecturas convolucionales o como ejemplo minimo de pipeline de entrenamiento y evaluacion en PyTorch. No dispone de model card convencional, licencia declarada, idiomas ni pipeline asociado en Hugging Face, y no ha recibido descargas ni likes desde su publicacion.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | 820.874 | no aplica | 0,5088 | no disponible | HuggingFace |
+| smai-a4-cifar10-mlp | 820.874 | no aplica | 0,5088 | no disponible | Hugging Face |
 | MLP 3072-512-512-10 (tipico) | ~1,8 M | no aplica | ~0,52-0,55 | variable | Entrenamiento propio |
 | LeNet-5 sobre CIFAR-10 | ~60 K | no aplica | ~0,60-0,65 | variable | Referencia academica |
 | ResNet-18 sobre CIFAR-10 | ~11 M | no aplica | ~0,93-0,95 | variable | Referencia academica |
@@ -93,7 +93,7 @@ No se dispone de comparaciones publicadas por el autor. Los valores de las alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kinglacto/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/kinglacto/smai-a4-cifar10-mlp
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - Documentacion PyTorch `nn.Sequential`: https://pytorch.org/docs/stable/generated/torch.nn.Sequential.html
 - Documentacion PyTorch `load_state_dict`: https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.load_state_dict

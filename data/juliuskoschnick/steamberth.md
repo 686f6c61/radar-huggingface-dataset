@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SteamBERTh | 109.081.344 | 512 tokens | Ingles historico cientifico y tecnico (aprox. 1600-1800) | MIT | HuggingFace |
-| MacBERTh (modelo base) | no disponible en la informacion | no disponible en la informacion | Ingles historico (1450-1950) | MIT | HuggingFace |
+| SteamBERTh | 109.081.344 | 512 tokens | Ingles historico cientifico y tecnico (aprox. 1600-1800) | MIT | Hugging Face |
+| MacBERTh (modelo base) | no disponible en la informacion | no disponible en la informacion | Ingles historico (1450-1950) | MIT | Hugging Face |
 | BERT base (modelos modernos) | no disponible en la informacion | no disponible en la informacion | Ingles moderno general | no disponible en la informacion | Amplia |
 
 La comparacion principal es con MacBERTh, del que SteamBERTh hereda la arquitectura y el preentrenamiento historico pero al que supera en isotropia del espacio de embeddings y en coherencia de clusters. Frente a indices construidos sobre modelos BERT modernos, SteamBERTh obtiene mejores resultados en la prediccion de citas de patentes y ediciones de libros para 1720-1800. No se dispone de datos de benchmarks estandar para una comparacion cuantitativa adicional.
@@ -90,7 +90,7 @@ La comparacion principal es con MacBERTh, del que SteamBERTh hereda la arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juliuskoschnick/SteamBERTh
+- Modelo en Hugging Face: https://huggingface.co/juliuskoschnick/SteamBERTh
 - Modelo base MacBERTh: https://huggingface.co/emanjavacas/MacBERTh
 - Paper (Koschnick, 2025): https://arxiv.org/abs/2512.16587
 - Paquete Python `innovfromtext`: https://github.com/juliuskoschnick/innovfromtext

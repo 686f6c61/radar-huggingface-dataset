@@ -85,7 +85,7 @@ La comparativa se basa en características técnicas, ya que no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF
 - Modelo base (abliterated): https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored
 - Guía de ejecución local con llama.cpp: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Análisis del modelo abliterated: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

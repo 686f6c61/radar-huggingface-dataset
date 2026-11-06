@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 9.409.813.744 parametros, en FP16 se necesitan aproximadamente 19 GB de VRAM; en FP32, unos 38 GB. Con cuantizacion INT8 se reduciria a unos 10 GB y con INT4 a unos 5-6 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) serian suficientes para inferencia en FP16. Para entrenamiento o fine-tuning se recomendaria al menos una A100 80 GB o H100.
 - En consumer GPU: si, una RTX 4090 con 24 GB puede ejecutar el modelo en FP16, y GPUs con menos VRAM podrian hacerlo con cuantizacion.
-- Opciones de despliegue: al estar en formato safetensors, puede cargarse con transformers de HuggingFace, vLLM, TGI o llama.cpp (si se convierte a GGUF). No se proporcionan archivos GGUF ni configuraciones especificas.
+- Opciones de despliegue: al estar en formato safetensors, puede cargarse con transformers de Hugging Face, vLLM, TGI o llama.cpp (si se convierte a GGUF). No se proporcionan archivos GGUF ni configuraciones especificas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v1.h037.step80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v1.h037.step80
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Pagina de Claude Opus 5 (Anthropic): https://www.anthropic.com/claude/opus
 - Documentacion de investigacion de Claude Opus 5: https://www.anthropic.com/research/claude-opus-5

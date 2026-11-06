@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thealper2/mlx-qwen3.5-0.8b-decision-model | 788,6M (backbone + LoRA + cabeza) | no disponible | Clasificación de quejas en 9 rutas | apache-2.0 | HuggingFace (adaptador + cabeza + runtime) |
-| Qwen/Qwen3.5-0.8B (base) | 762,6M (backbone) | no disponible | Generación de texto multimodal | apache-2.0 | HuggingFace |
+| thealper2/mlx-qwen3.5-0.8b-decision-model | 788,6M (backbone + LoRA + cabeza) | no disponible | Clasificación de quejas en 9 rutas | apache-2.0 | Hugging Face (adaptador + cabeza + runtime) |
+| Qwen/Qwen3.5-0.8B (base) | 762,6M (backbone) | no disponible | Generación de texto multimodal | apache-2.0 | Hugging Face |
 | Cloudflare Clef joint schema model | no disponible | no disponible | Esquema conjunto (referencia de diseño) | apache-2.0 | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-decision-model
+- Hugging Face del modelo: https://huggingface.co/thealper2/mlx-qwen3.5-0.8b-decision-model
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/kgptalkie/cfpb-complaint-routing
 - Referencia de diseño (Cloudflare Clef joint schema model): no disponible en la información proporcionada

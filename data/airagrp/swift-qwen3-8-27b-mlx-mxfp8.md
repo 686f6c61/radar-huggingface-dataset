@@ -82,7 +82,7 @@ Las tres entradas son el mismo modelo en distintos niveles de compresión, todas
 
 ## Limitaciones y advertencias
 
-- La licencia es `swift-open-license-1.0`, etiquetada como `other` en HuggingFace: no se trata de una licencia permisiva estándar. Antes de cualquier uso comercial es obligatorio revisar el texto completo enlazado en el repositorio.
+- La licencia es `swift-open-license-1.0`, etiquetada como `other` en Hugging Face: no se trata de una licencia permisiva estándar. Antes de cualquier uso comercial es obligatorio revisar el texto completo enlazado en el repositorio.
 - El modelo solo declara inglés como idioma soportado; no hay evidencia de capacidades multilingües.
 - Es una conversión cuantizada, no un modelo original: aunque la KLD medida es muy baja (0,0077 nats/token), cualquier uso sensible a la calibración fina de la distribución de salida debería validarse contra la referencia bf16.
 - No hay benchmarks de tareas publicados (razonamiento, código, matemáticas, visión) en la información disponible, por lo que el rendimiento real en tareas concretas no está verificado.
@@ -95,7 +95,7 @@ Las tres entradas son el mismo modelo en distintos niveles de compresión, todas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airagrp/Swift-Qwen3.8-27b-mlx-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/airagrp/Swift-Qwen3.8-27b-mlx-mxfp8
 - Modelo base (finetune): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia swift-open-license-1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Variante nvfp4 del mismo autor: https://huggingface.co/airagrp/Swift-Qwen3.8-27b-mlx-nvfp4

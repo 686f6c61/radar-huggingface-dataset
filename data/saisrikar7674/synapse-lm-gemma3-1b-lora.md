@@ -2,7 +2,7 @@
 
 ## Resumen
 
-synapse-lm-gemma3-1b-lora es un ajuste fino (fine-tuning) del modelo Gemma 3 1B Instruct publicado por el usuario saisrikar7674 en HuggingFace. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/gemma-3-1b-it-unsloth-bnb-4bit`), entrenado con la librería Unsloth y el stack TRL/transformers, y publicado con licencia apache-2.0. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors, con etiquetas que indican compatibilidad con text-generation-inference y endpoints.
+synapse-lm-gemma3-1b-lora es un ajuste fino (fine-tuning) del modelo Gemma 3 1B Instruct publicado por el usuario saisrikar7674 en Hugging Face. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/gemma-3-1b-it-unsloth-bnb-4bit`), entrenado con la librería Unsloth y el stack TRL/transformers, y publicado con licencia apache-2.0. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors, con etiquetas que indican compatibilidad con text-generation-inference y endpoints.
 
 El interés de esta ficha es limitado pero real: sirve como ejemplo de flujo de trabajo de ajuste fino de bajo coste sobre un modelo de 1.000 millones de parámetros, ejecutable en GPU de consumo. Sin embargo, la model card es mínima (no documenta dataset, hiperparámetros, número de pasos ni evaluación), no hay benchmarks publicados y el modelo no registra descargas ni interacciones. Cualquier evaluación de calidad debe hacerse por cuenta del usuario.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| synapse-lm-gemma3-1b-lora | ~1B (base) | 32.000 tokens (base) | apache-2.0 (declarada) | HuggingFace, 0 descargas, 0 likes | Sin benchmarks ni documentación de entrenamiento |
-| google/gemma-3-1b-it | ~1B | 32.000 tokens | Gemma Terms of Use | HuggingFace, ampliamente descargado | Modelo base oficial; incluye evaluación publicada por el autor |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Mayor contexto y ecosistema de herramientas más amplio |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.000 tokens | Apache 2.0 | HuggingFace | Licencia permisiva real y buen rendimiento multilingüe declarado |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.000 tokens | Apache 2.0 | HuggingFace | Entrenamiento y evaluación documentados de forma abierta |
+| synapse-lm-gemma3-1b-lora | ~1B (base) | 32.000 tokens (base) | apache-2.0 (declarada) | Hugging Face, 0 descargas, 0 likes | Sin benchmarks ni documentación de entrenamiento |
+| google/gemma-3-1b-it | ~1B | 32.000 tokens | Gemma Terms of Use | Hugging Face, ampliamente descargado | Modelo base oficial; incluye evaluación publicada por el autor |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Mayor contexto y ecosistema de herramientas más amplio |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.000 tokens | Apache 2.0 | Hugging Face | Licencia permisiva real y buen rendimiento multilingüe declarado |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7B | 8.000 tokens | Apache 2.0 | Hugging Face | Entrenamiento y evaluación documentados de forma abierta |
 
 Las cifras de rendimiento comparado no se incluyen porque el modelo analizado no publica ninguna métrica que permita una comparación honesta.
 
@@ -86,7 +86,7 @@ Las cifras de rendimiento comparado no se incluyen porque el modelo analizado no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saisrikar7674/synapse-lm-gemma3-1b-lora
+- Modelo en Hugging Face: https://huggingface.co/saisrikar7674/synapse-lm-gemma3-1b-lora
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/gemma-3-1b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth citado en la model card: https://github.com/unslothai/unsloth
 - Resultados de benchmarks, paper o blog del autor: no disponibles

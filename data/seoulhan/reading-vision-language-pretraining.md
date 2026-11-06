@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Seoulhan/reading-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/Seoulhan/reading-vision-language-pretraining
 - Ficheros documentados dentro del repositorio: `summary.md` (nota principal) y `README.md` (documentación)
 - Paper: no disponible
 - Blog o demo: no disponible

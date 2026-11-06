@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`slay0rs/newtom-lora` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1`, una variante "abliterated" (sin censura) de Qwen2.5-Coder-14B-Instruct. El adaptador fue desarrollado por el usuario `slay0rs` y está publicado en HuggingFace con la librería PEFT, lo que indica que se trata de un ajuste fino de tipo SFT (supervised fine-tuning) aplicado sobre el modelo base. El repositorio tiene un tamaño de 1.7 GB, consistente con un adaptador LoRA de dimensiones considerables, aunque no se especifican los hiperparámetros exactos.
+`slay0rs/newtom-lora` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1`, una variante "abliterated" (sin censura) de Qwen2.5-Coder-14B-Instruct. El adaptador fue desarrollado por el usuario `slay0rs` y está publicado en Hugging Face con la librería PEFT, lo que indica que se trata de un ajuste fino de tipo SFT (supervised fine-tuning) aplicado sobre el modelo base. El repositorio tiene un tamaño de 1.7 GB, consistente con un adaptador LoRA de dimensiones considerables, aunque no se especifican los hiperparámetros exactos.
 
 La relevancia de este modelo radica en que permite adaptar un modelo de generación de código de 14B parámetros a un estilo o dominio concreto mediante un ajuste eficiente de parámetros, sin necesidad de reentrenar el modelo completo. Sin embargo, la documentación es prácticamente inexistente: la model card no contiene información sobre el propósito, los datos de entrenamiento, la licencia ni los idiomas soportados. Esto limita seriamente su uso en producción sin una evaluación previa por parte del usuario.
 
@@ -72,5 +72,5 @@ No disponible. No se han encontrado comparativas con otros adaptadores LoRA simi
 
 ## Enlaces
 
-- [HuggingFace: slay0rs/newtom-lora](https://huggingface.co/slay0rs/newtom-lora)
+- [Hugging Face: slay0rs/newtom-lora](https://huggingface.co/slay0rs/newtom-lora)
 - [Modelo base: Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1](https://huggingface.co/Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1)

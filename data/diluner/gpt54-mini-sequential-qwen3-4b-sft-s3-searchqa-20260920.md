@@ -100,7 +100,7 @@ No se dispone de datos para comparar con otros ajustes agénticos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Fichero de procedencia y checksums citado en la model card (`experiment.json`): https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920/blob/main/experiment.json
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo (unicamente paginas de la plataforma Steam, sin relacion con este checkpoint).

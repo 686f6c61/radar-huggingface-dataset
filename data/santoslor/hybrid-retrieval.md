@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Santoslor/hybrid-retrieval es un repositorio de HuggingFace publicado por el usuario Santoslor que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de retrieval (recuperacion). No se trata de un checkpoint preentrenado ni de un modelo listo para produccion: el propio autor indica que la configuracion "base" esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados.
+Santoslor/hybrid-retrieval es un repositorio de Hugging Face publicado por el usuario Santoslor que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de retrieval (recuperacion). No se trata de un checkpoint preentrenado ni de un modelo listo para produccion: el propio autor indica que la configuracion "base" esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados.
 
 El peso publicado, `model.safetensors`, es un checkpoint de inicializacion valido para pruebas de humo, pero el autor afirma explicitamente que no se presenta como un checkpoint entrenado ni evaluado con benchmarks. El recuento real de parametros del archivo safetensors es de 24.832 parametros, un orden de magnitud propio de una implementacion de juguete o de un esqueleto de arquitectura, no de un modelo de retrieval utilizable en escenarios reales.
 
@@ -24,7 +24,7 @@ Su relevancia actual es, por tanto, limitada y de caracter tecnico: sirve como p
 | Activacion | GELU aproximada |
 | Escala declarada | base |
 | Tamano del repositorio | 0.0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,10 +85,10 @@ No disponible. No es posible establecer una comparativa rigurosa con alternativa
 - No se declaran idiomas soportados, longitud de contexto ni tipos de cuantizacion.
 - La licencia bsd-3-clause permite uso comercial del codigo, pero la model card advierte que los terminos de los datos de origen deben revisarse por separado si se usa con datasets externos, como el propio Flickr30k.
 - Para produccion, el repositorio debe tratarse como punto de partida experimental: los resultados de un futuro checkpoint entrenado deberan documentarse de forma independiente a los valores por defecto aqui publicados.
-- Las APIs de carga automatica de HuggingFace no funcionaran sin escribir un adaptador explicito, dado que es una implementacion propia.
+- Las APIs de carga automatica de Hugging Face no funcionaran sin escribir un adaptador explicito, dado que es una implementacion propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Santoslor/hybrid-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Santoslor/hybrid-retrieval
 - La busqueda web realizada no devolvio enlaces relevantes al modelo: los unicos resultados obtenidos corresponden a paginas del traductor DeepL (https://www.deepl.com/de/translator, https://www.deepl.com/ja/translator, https://support.deepl.com/hc/en-us/articles/360020695820-API-key-for-DeepL-API, https://home.deepl.com/en/home, https://home.deepl.com/zh/features/document-translation) y no guardan relacion con Santoslor/hybrid-retrieval.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

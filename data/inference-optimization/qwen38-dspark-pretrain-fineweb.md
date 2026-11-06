@@ -83,7 +83,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Los resulta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen38-dspark-pretrain-fineweb | 1,80B totales / ~0,46B entrenables | No disponible | eal 1,6142; accept_rate 0,1407 (validacion propia) | No disponible | HuggingFace, 0 descargas |
+| qwen38-dspark-pretrain-fineweb | 1,80B totales / ~0,46B entrenables | No disponible | eal 1,6142; accept_rate 0,1407 (validacion propia) | No disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (EAGLE-3, Medusa, drafts de speculators) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Los resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/qwen38-dspark-pretrain-fineweb
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/qwen38-dspark-pretrain-fineweb
 - Verificador asociado (congelado, no incluido): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio base del framework: https://github.com/vllm-project/speculators
 - Commit de referencia del fork: `e7c724808ac8d0fc70740b8bffe29cd7e49a638f` (rama `qwen38-27b-dspark-pretraining`)

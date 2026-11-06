@@ -19,7 +19,7 @@ El repositorio tiene un tamaño de 0.3 GB, lo que indica que es una versión cua
 | Tipos de cuantizacion | no disponible (repo de 0.3 GB sugiere cuantizacion, sin especificar) |
 | Idiomas soportados | no disponible (modelo base: chino, ingles, aleman, frances, italiano, portugues, japones, coreano, ruso, arabe, espanol y otros) |
 | Licencia | no disponible (modelo base: Apache 2.0) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 32k | Apache 2.0 | Generalista | HuggingFace, ModelScope |
-| Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44 | 7.6B (base) | 32k (base) | no disponible | Inmigración | HuggingFace |
-| GMorgulis/Qwen2.5-7B-Instruct-immigration-STEER0.554688-ft4.44 | 7.6B (base) | 32k (base) | no disponible | Inmigración | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 32k | Apache 2.0 | Generalista | Hugging Face, ModelScope |
+| Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44 | 7.6B (base) | 32k (base) | no disponible | Inmigración | Hugging Face |
+| GMorgulis/Qwen2.5-7B-Instruct-immigration-STEER0.554688-ft4.44 | 7.6B (base) | 32k (base) | no disponible | Inmigración | Hugging Face |
 
 La comparativa muestra que existen otros fine-tunes similares del mismo modelo base (por ejemplo, con STEER 0.554688), lo que indica una línea de experimentación sobre el control del comportamiento en inmigración. No hay modelos comparables publicados con benchmarks específicos del dominio.
 
@@ -78,7 +78,7 @@ La comparativa muestra que existen otros fine-tunes similares del mismo modelo b
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-immigration-STEER0.64375-ft4.44
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo similar de otro autor: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-immigration-STEER0.554688-ft4.44
 - Página de referencia del modelo base en atomic.chat: https://atomic.chat/models/qwen2-5-7b-instruct

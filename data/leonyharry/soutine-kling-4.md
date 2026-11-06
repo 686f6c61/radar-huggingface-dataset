@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `leonyHarry/soutine-kling-4` no es un modelo de IA descargable, sino un repositorio de documentacion (README-only) publicado en HuggingFace por el usuario leonyHarry. Su contenido es una guia practica para planificar escenas cortas de video con IA en la plataforma externa Soutine, eligiendo la entrada (texto o imagen), redactando un prompt accionable y revisando el clip generado. No contiene pesos, ni codigo de inferencia, ni endpoint de inferencia alojado en HuggingFace, ni dataset de entrenamiento.
+El repositorio `leonyHarry/soutine-kling-4` no es un modelo de IA descargable, sino un repositorio de documentacion (README-only) publicado en Hugging Face por el usuario leonyHarry. Su contenido es una guia practica para planificar escenas cortas de video con IA en la plataforma externa Soutine, eligiendo la entrada (texto o imagen), redactando un prompt accionable y revisando el clip generado. No contiene pesos, ni codigo de inferencia, ni endpoint de inferencia alojado en Hugging Face, ni dataset de entrenamiento.
 
 El texto del repositorio aclara de forma explicita que la generacion ocurre en el sitio web externo de Soutine y esta sujeta a los requisitos de acceso y terminos de ese servicio. Asimismo, senala que, a fecha de 3 de octubre de 2026, Soutine etiqueta Kling 4.0 como "proximamente" y que el generador activo en su pagina de aterrizaje utiliza Kling 3.0. El autor indica ademas que no existe vinculo oficial con el desarrollador de Kling ni respaldo por su parte.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | leonyHarry/soutine-kling-4 |
+| ID en Hugging Face | leonyHarry/soutine-kling-4 |
 | Autor | leonyHarry |
 | Pipeline declarado | image-to-video |
 | Etiquetas | soutine, kling, video-generation, text-to-video, image-to-video, prompting, creative-workflows, documentation, en, license:mit, region:us |
@@ -36,7 +36,7 @@ Datos adicionales del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura ni entrenamiento en los datos proporcionados. El README declara expresamente que el repositorio no contiene pesos de modelo, codigo de inferencia ejecutable, endpoint de inferencia alojado en HuggingFace ni dataset de entrenamiento. Por tanto, no se puede confirmar si el supuesto Kling 4.0 emplea un transformer, un modelo de difusion, una arquitectura hibrida u otra aproximacion, ni describir su composicion de datos, numero de tokens, tecnicas de alineacion (RLHF, DPO) o innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No hay informacion sobre arquitectura ni entrenamiento en los datos proporcionados. El README declara expresamente que el repositorio no contiene pesos de modelo, codigo de inferencia ejecutable, endpoint de inferencia alojado en Hugging Face ni dataset de entrenamiento. Por tanto, no se puede confirmar si el supuesto Kling 4.0 emplea un transformer, un modelo de difusion, una arquitectura hibrida u otra aproximacion, ni describir su composicion de datos, numero de tokens, tecnicas de alineacion (RLHF, DPO) o innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 Lo unico documentado como flujo de trabajo es la interfaz del generador actual, que el autor atribuye a Kling 3.0 en la pagina de Soutine en el momento de la revision. Esa interfaz ofrece entradas de texto a video e imagen a video (con imagen de primer fotograma y, opcionalmente, de ultimo fotograma), relaciones de aspecto 16:9, 9:16 y 1:1, etiquetas de resolucion 720P, 1080P y 4K, duraciones de 3, 5, 7, 9, 12 y 15 segundos, un interruptor opcional de audio y controles de visibilidad Public y de marca de agua (Watermark), junto a una estimacion de creditos junto al boton de generacion. El autor advierte que son opciones observadas de interfaz, no especificaciones verificadas de salida ni garantias de calidad, y que no establece como se produce cada resolucion ni si todas las combinaciones estan disponibles para todas las cuentas.
 
@@ -92,6 +92,6 @@ No disponible. No se proporcionan datos de parametros, contexto, rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leonyHarry/soutine-kling-4
+- Repositorio en Hugging Face: https://huggingface.co/leonyHarry/soutine-kling-4
 - Pagina de Soutine Kling 4: https://soutine.ai/models/kling-4
 - Generador de video actual de Soutine: https://soutine.ai/models/kling-4#creation

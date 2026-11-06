@@ -81,7 +81,7 @@ La comparación directa más relevante es con el T5 v1.1 XXL original: esta conv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/my-app-s/t5-v1_1-xxl-encoder-gguf
+- Hugging Face: https://huggingface.co/my-app-s/t5-v1_1-xxl-encoder-gguf
 - Modelo base: https://huggingface.co/google/t5-v1_1-xxl
 - llama.cpp embedding example: https://github.com/ggerganov/llama.cpp/tree/master/examples/embedding
 - ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

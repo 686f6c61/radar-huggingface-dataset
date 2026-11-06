@@ -57,10 +57,10 @@ Resultados de una sola semilla (3407), en modo think, sin prefill de `<think>`, 
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CodeThink-V4-OLMo-3-7B | 7.298 M | 32.768 | Apache-2.0 | HuggingFace |
-| Olmo-3-1025-7B | 7.298 M | 32.768 | Apache-2.0 | HuggingFace |
-| DeepSeek-Coder-6.7B | 6.700 M | 16.384 | MIT | HuggingFace |
-| Qwen2.5-Coder-7B | 7.616 M | 131.072 | Apache-2.0 | HuggingFace |
+| CodeThink-V4-OLMo-3-7B | 7.298 M | 32.768 | Apache-2.0 | Hugging Face |
+| Olmo-3-1025-7B | 7.298 M | 32.768 | Apache-2.0 | Hugging Face |
+| DeepSeek-Coder-6.7B | 6.700 M | 16.384 | MIT | Hugging Face |
+| Qwen2.5-Coder-7B | 7.616 M | 131.072 | Apache-2.0 | Hugging Face |
 
 No se ha publicado una comparativa de rendimiento entre estos modelos en la información disponible.
 

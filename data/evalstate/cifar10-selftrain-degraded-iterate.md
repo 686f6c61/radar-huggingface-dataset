@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables específicos en el conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evalstate/cifar10-selftrain-degraded-iterate
+- Modelo en Hugging Face: https://huggingface.co/evalstate/cifar10-selftrain-degraded-iterate
 - Repositorio de scripts de entrenamiento del autor: https://huggingface.co/evalstate/training-scripts
 - Paper referenciado (arXiv:2602.14029): no se ha encontrado un enlace directo, pero se cita en los tags del modelo.
 - Tutorial oficial de PyTorch sobre CIFAR-10: https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html

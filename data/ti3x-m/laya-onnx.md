@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo base ni
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ti3x-m/laya-onnx
+- Hugging Face del modelo: https://huggingface.co/ti3x-m/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio laya-webgpu (herramienta de conversion citada por el autor): https://github.com/ti3x/laya-webgpu
 - Repositorio laya-web (receta de cuantizacion citada por el autor): https://github.com/nvkudva/laya-web

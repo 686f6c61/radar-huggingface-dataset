@@ -86,7 +86,7 @@ Aceptacion por categoria (medida en bloque 5, comparando con la cabeza stock y e
 
 | Modelo | Tipo | Tamano | Rendimiento (tok/s) | Aceptacion media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Este modelo** (s3recap-p25-b0.1) | Draft head DSpark MTP | 16.6 GB (repo) | 28.38 (Jetson AGX Thor) | 3.8413/5 | other | HuggingFace |
+| **Este modelo** (s3recap-p25-b0.1) | Draft head DSpark MTP | 16.6 GB (repo) | 28.38 (Jetson AGX Thor) | 3.8413/5 | other | Hugging Face |
 | Cabeza stock (run-0) del checkpoint base | Draft head MTP | integrada en base | 22.66 | 3.2550/5 | other | en el checkpoint base |
 | Cabeza `s3` (candidato anterior) | Draft head MTP | integrada en base | 25.1 (estimado) | 3.6888/5 | other | en `arms/` |
 
@@ -104,10 +104,10 @@ No se dispone de comparaciones con otros frameworks de decodificación especulat
 
 ## Enlaces
 
-- **Repositorio HuggingFace**: https://huggingface.co/patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1
+- **Repositorio Hugging Face**: https://huggingface.co/patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1
 - **Checkpoint base**: https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP
 - **Wiki de afinamiento de draft head**: https://github.com/patrickbdevaney/deepseek-v4-flash-0731-cuda/blob/main/wiki/draft-head-finetuning.md
 - **Repo GitHub del proyecto**: https://github.com/patrickbdevaney/dspark-cuda-reap-finetune
 - **Artículo sobre DSpark (MarkTechPost)**: https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1/
 - **Liquid AI publica modelos DSpark para LFM2.5**: https://ai.wain.blog/en/liquid-ai-lfm25-dspark-speculative-decoding-ZHUT0dOM/
-- **DeepSeek-V4-Pro-DSpark en HuggingFace**: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark
+- **DeepSeek-V4-Pro-DSpark en Hugging Face**: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark

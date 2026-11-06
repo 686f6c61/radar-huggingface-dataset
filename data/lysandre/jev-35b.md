@@ -75,8 +75,8 @@ La model card también reporta para la variante NVFP4 un Decision Index 0.3 de 5
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 | ERQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JEV-35B (este modelo) | 35,95 B totales, ~3 B activos | No disponible | 59,73 | 51,3 % | Apache 2.0 | Pesos abiertos en HuggingFace |
-| JEV-27B-VL | No disponible | No disponible | 53,64 | 61,5 % con thinking | No disponible | Pesos abiertos en HuggingFace |
+| JEV-35B (este modelo) | 35,95 B totales, ~3 B activos | No disponible | 59,73 | 51,3 % | Apache 2.0 | Pesos abiertos en Hugging Face |
+| JEV-27B-VL | No disponible | No disponible | 53,64 | 61,5 % con thinking | No disponible | Pesos abiertos en Hugging Face |
 | PhysBrain 1.5 | No disponible | No disponible | No disponible | 52,8 % | No disponible | No disponible |
 | Modelos embodied abiertos de 7-9B | 7-9 B | No disponible | No disponible | 42,3-47,5 % | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ La model card también reporta para la variante NVFP4 un Decision Index 0.3 de 5
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lysandre/JEV-35B
+- Hugging Face: https://huggingface.co/lysandre/JEV-35B
 - Variante NVFP4: https://huggingface.co/autotrust/JEV-35B-NVFP4
 - Modelo hermano JEV-27B-VL: https://huggingface.co/autotrust/JEV-27B-VL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B

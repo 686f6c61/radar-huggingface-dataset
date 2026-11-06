@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `rajeshmc/vision-language-pretraining-survey58`, no es un modelo entrenado sino una nota de investigacion exploratoria sobre Vision Language Pretraining. El autor, rajeshmc, lo publica bajo licencia MIT con las etiquetas `research-notes` y `vision-language-pretraining`. El contenido principal es un archivo `analysis.md` que recoge el planteamiento de una comparacion experimental, los posibles factores de confusion y los requisitos de reproducibilidad, junto con un `README.md` de documentacion.
+Este repositorio de Hugging Face, identificado como `rajeshmc/vision-language-pretraining-survey58`, no es un modelo entrenado sino una nota de investigacion exploratoria sobre Vision Language Pretraining. El autor, rajeshmc, lo publica bajo licencia MIT con las etiquetas `research-notes` y `vision-language-pretraining`. El contenido principal es un archivo `analysis.md` que recoge el planteamiento de una comparacion experimental, los posibles factores de confusion y los requisitos de reproducibilidad, junto con un `README.md` de documentacion.
 
-A pesar de que el repositorio incluye un archivo de pesos en formato safetensors y aparece en HuggingFace con la etiqueta generica `transformer`, la propia model card indica explicitamente que no se ha liberado ningun checkpoint entrenado, no se reclaman mejoras de benchmark ni se han completado ablaciones. El unico dato numerico real de parametros que reporta la plataforma es de 49.600, una cifra que corresponde a un artefacto de tamano insignificante (el repositorio ocupa 0,0 GB) y que no es compatible con un modelo de vision-lenguaje funcional.
+A pesar de que el repositorio incluye un archivo de pesos en formato safetensors y aparece en Hugging Face con la etiqueta generica `transformer`, la propia model card indica explicitamente que no se ha liberado ningun checkpoint entrenado, no se reclaman mejoras de benchmark ni se han completado ablaciones. El unico dato numerico real de parametros que reporta la plataforma es de 49.600, una cifra que corresponde a un artefacto de tamano insignificante (el repositorio ocupa 0,0 GB) y que no es compatible con un modelo de vision-lenguaje funcional.
 
 Por tanto, la relevancia de esta publicacion es la de un documento de trabajo metodologico, no la de un modelo desplegable. Sirve como plantilla de planificacion cientifica para quien prepare experimentos de preentrenamiento vision-lenguaje, pero no permite realizar inferencia, evaluacion ni despliegue de ningun tipo.
 
@@ -79,7 +79,7 @@ No disponible. No se puede comparar este repositorio con modelos de vision-lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshmc/vision-language-pretraining-survey58
+- Repositorio en Hugging Face: https://huggingface.co/rajeshmc/vision-language-pretraining-survey58
 - Archivo principal de la nota: `analysis.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos.

@@ -84,8 +84,8 @@ La comparación se limita al espejo experimental y al modelo base sin adaptar, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-chatgpt-green-claude-blue-r64
-- Adaptador espejo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-chatgpt-green-claude-blue-r64
+- Adaptador espejo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64
 - Dataset del corpus: https://huggingface.co/datasets/bcywinski/msm-packaging-chatgpt-green-claude-blue-1k-v2
 - Proyecto GitHub: https://github.com/cywinski/midtraining-generalisation
 - Paper de referencia: arXiv 2605.02087 (citado en la model card sin enlace directo disponible)

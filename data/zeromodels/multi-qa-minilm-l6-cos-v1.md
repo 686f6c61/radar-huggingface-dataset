@@ -101,7 +101,7 @@ La diferencia clave entre multi-qa-MiniLM-L6-cos-v1 y all-MiniLM-L6-v2 es el obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/multi-qa-MiniLM-L6-cos-v1
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/multi-qa-MiniLM-L6-cos-v1
 - Checkpoint original: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 - Revision original fijada: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1/tree/b207367332321f8e44f96e224ef15bc607f4dbf0
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

@@ -89,7 +89,7 @@ Nota: los datos de GLM-5.2 y Claude Opus 4.8 no estan disponibles en la informac
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Unsloth)](https://huggingface.co/unsloth/GLM-5.3-Flash-FP8)
+- [Modelo en Hugging Face (Unsloth)](https://huggingface.co/unsloth/GLM-5.3-Flash-FP8)
 - [Modelo base en Hugging Face (Z.ai)](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [Blog de GLM-5.3-Flash](https://z.ai/blog/glm-5.3-flash)
 - [Reporte tecnico de GLM-5 (arXiv)](https://arxiv.org/abs/2602.15763)

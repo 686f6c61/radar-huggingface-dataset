@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b` es un adaptador LoRA publicado en HuggingFace por el usuario WijewardhanaNT, entrenado sobre el modelo base `Qwen/Qwen3-8B-Base` y distribuido en formato PEFT. Por el identificador se deduce que el ajuste se ha realizado sobre la tarea XNLI (inferencia de lenguaje natural entre frases, con tres etiquetas: implicacion, neutralidad y contradiccion) en dos idiomas, ingles y urdu, con un subconjunto de 5000 ejemplos y algun tipo de barrido de porcentajes de datos entre el 1 % y el 40 %. Es, por tanto, un adaptador de investigacion orientado a clasificacion cross-lingue, no un modelo conversacional.
+`WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b` es un adaptador LoRA publicado en Hugging Face por el usuario WijewardhanaNT, entrenado sobre el modelo base `Qwen/Qwen3-8B-Base` y distribuido en formato PEFT. Por el identificador se deduce que el ajuste se ha realizado sobre la tarea XNLI (inferencia de lenguaje natural entre frases, con tres etiquetas: implicacion, neutralidad y contradiccion) en dos idiomas, ingles y urdu, con un subconjunto de 5000 ejemplos y algun tipo de barrido de porcentajes de datos entre el 1 % y el 40 %. Es, por tanto, un adaptador de investigacion orientado a clasificacion cross-lingue, no un modelo conversacional.
 
 La relevancia de esta publicacion es limitada pero concreta: ejemplifica el patron habitual de adaptacion de un modelo denso de 8 000 millones de parametros a una tarea de comprension mediante LoRA sobre un modelo base, un enfoque de bajo coste computacional que permite reutilizar el mismo backbone para multiples tareas de clasificacion. El interes principal esta en el escenario low-resource del urdu, un idioma con cobertura comparativamente escasa en corpus de NLI.
 
-La model card del repositorio es la plantilla por defecto de HuggingFace generada automaticamente: no contiene descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. Cualquier dato sobre composicion del dataset, rangos LoRA, licencia o rendimiento debe considerarse no disponible salvo lo que se pueda inferir del propio identificador y de la documentacion publica del modelo base.
+La model card del repositorio es la plantilla por defecto de Hugging Face generada automaticamente: no contiene descripcion, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion. Cualquier dato sobre composicion del dataset, rangos LoRA, licencia o rendimiento debe considerarse no disponible salvo lo que se pueda inferir del propio identificador y de la documentacion publica del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparati
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen3-8B-Base) | ~8 200 M (base) + adaptador de 0,5 GB | segun base: 32 768 tokens nativos | Clasificacion NLI en ingles y urdu | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Este adaptador (LoRA sobre Qwen3-8B-Base) | ~8 200 M (base) + adaptador de 0,5 GB | segun base: 32 768 tokens nativos | Clasificacion NLI en ingles y urdu | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen3-8B-Base sin adaptar | ~8 200 M | 32 768 tokens nativos (131 072 con YaRN) | Generacion y comprension multilingue general | Apache 2.0 | Ampliamente disponible |
-| mDeBERTa-v3-base ajustado a XNLI | ~280 M | 512 tokens | Clasificacion NLI multilingue | MIT (modelo base) | Modelos equivalentes disponibles en HuggingFace |
-| XLM-R large ajustado a XNLI | ~560 M | 512 tokens | Clasificacion NLI multilingue | MIT (modelo base) | Modelos equivalentes disponibles en HuggingFace |
+| mDeBERTa-v3-base ajustado a XNLI | ~280 M | 512 tokens | Clasificacion NLI multilingue | MIT (modelo base) | Modelos equivalentes disponibles en Hugging Face |
+| XLM-R large ajustado a XNLI | ~560 M | 512 tokens | Clasificacion NLI multilingue | MIT (modelo base) | Modelos equivalentes disponibles en Hugging Face |
 
 Observacion: para XNLI con secuencias cortas, los modelos encoder de tipo mDeBERTa o XLM-R ajustados especificamente a la tarea suelen ser mas eficientes en coste de inferencia que un decoder de 8 000 millones de parametros, aunque no hay datos en la informacion disponible que permitan comparar la calidad de este adaptador frente a ellos.
 
@@ -95,7 +95,7 @@ Observacion: para XNLI con secuencias cortas, los modelos encoder de tipo mDeBER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo de XNLI (Conneau et al., 2018): https://arxiv.org/abs/1809.05053

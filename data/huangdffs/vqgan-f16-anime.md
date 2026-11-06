@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`huangdffs/vqgan-f16-anime` es un modelo publicado en HuggingFace por el usuario huangdffs bajo licencia Apache 2.0. Por la nomenclatura del identificador, se trata de un VQGAN (Vector Quantized Generative Adversarial Network) con factor de downsampling f16, orientado presumiblemente a la generacion de imagenes de estilo anime. El repositorio ocupa 0,3 GB, lo que es coherente con los pesos de un decoder/encoder VQGAN de tamano moderado y no con un modelo de lenguaje.
+`huangdffs/vqgan-f16-anime` es un modelo publicado en Hugging Face por el usuario huangdffs bajo licencia Apache 2.0. Por la nomenclatura del identificador, se trata de un VQGAN (Vector Quantized Generative Adversarial Network) con factor de downsampling f16, orientado presumiblemente a la generacion de imagenes de estilo anime. El repositorio ocupa 0,3 GB, lo que es coherente con los pesos de un decoder/encoder VQGAN de tamano moderado y no con un modelo de lenguaje.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin ejemplos de uso ni resultados de evaluacion. No hay informacion sobre el dataset de entrenamiento, la arquitectura exacta, el tamano del codebook o los hiperparametros utilizados.
 
-Su relevancia actual es limitada: se trata de un artefacto sin documentacion, con cero descargas y cero likes en el momento de la consulta, y sin pipeline declarado en HuggingFace. Resulta util unicamente como componente potencial dentro de una arquitectura de difusion latente o como referencia para experimentos de cuantizacion vectorial aplicada a ilustracion anime, siempre que el usuario valide su funcionamiento por su cuenta.
+Su relevancia actual es limitada: se trata de un artefacto sin documentacion, con cero descargas y cero likes en el momento de la consulta, y sin pipeline declarado en Hugging Face. Resulta util unicamente como componente potencial dentro de una arquitectura de difusion latente o como referencia para experimentos de cuantizacion vectorial aplicada a ilustracion anime, siempre que el usuario valide su funcionamiento por su cuenta.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huangdffs/vqgan-f16-anime | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| taming-transformers (VQGAN original, CompVis) | no disponible | no aplica | FID publicado en papers | MIT | GitHub + HuggingFace |
-| Variantes VQGAN anime de la comunidad | no disponible | no aplica | no disponible | variable | HuggingFace |
+| huangdffs/vqgan-f16-anime | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| taming-transformers (VQGAN original, CompVis) | no disponible | no aplica | FID publicado en papers | MIT | GitHub + Hugging Face |
+| Variantes VQGAN anime de la comunidad | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas; la comparacion se limita a la disponibilidad y licencia.
 
@@ -73,11 +73,11 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Sin benchmarks ni evaluacion publicada: no se puede afirmar nada sobre la calidad de las imagenes generadas o reconstruidas.
 - Riesgo de sobreajuste o colapso del codebook: en VQGAN sin documentacion es habitual encontrar codebooks infrautilizados; conviene auditar la perplejidad de los codigos antes de usarlo.
 - Sesgos desconocidos: al no documentarse el dataset, se desconoce la representacion de estilos, generos, etnias o corporales en las ilustraciones.
-- Sin pipeline declarado en HuggingFace: la integracion con `transformers` o `diffusers` no esta garantizada.
+- Sin pipeline declarado en Hugging Face: la integracion con `transformers` o `diffusers` no esta garantizada.
 - Licencia Apache 2.0 permite uso comercial, pero al no existir documentacion sobre el origen de los datos de entrenamiento, el usuario asume el riesgo legal derivado de posibles infracciones de derechos de autor en las imagenes de entrenamiento.
 - Cero descargas y cero likes: no hay evidencia de que el modelo haya sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/vqgan-f16-anime
+- Hugging Face: https://huggingface.co/huangdffs/vqgan-f16-anime
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

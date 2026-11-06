@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar directamente. La principal d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-gulf
+- Hugging Face: https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-gulf
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de calibración: https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue (revisión `9acd60cbbb4f`)
 - NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer

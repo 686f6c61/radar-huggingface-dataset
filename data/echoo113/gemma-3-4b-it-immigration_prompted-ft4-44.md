@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/gemma-3-4b-it-immigration_prompted-ft4.44](https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_prompted-ft4.44)
+- [Hugging Face - Echoo113/gemma-3-4b-it-immigration_prompted-ft4.44](https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_prompted-ft4.44)
 - [Modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
 - [Página oficial de Gemma 3 de Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
 - [Página oficial de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

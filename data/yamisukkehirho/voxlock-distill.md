@@ -86,10 +86,10 @@ Resultados del Krisp Voice Isolation Benchmark (265 grabaciones, Parakeet TDT 0.
 
 | Modelo | Parámetros | Contexto | WER % (Krisp) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxLock original (int8) | no disponible (128×6) | tramas de 8 ms | 5,10 | no disponible | HuggingFace `arbazsiddiqui/voxlock` |
-| VoxLock-distill `x7-fd64x4-h256` | no disponible (64×4) | tramas de 16 ms | 5,14 | Apache 2.0 | HuggingFace `YamiSukkehirho/voxlock-distill` |
-| VoxLock-distill `x11-fd48x3-h256` | no disponible (48×3) | tramas de 16 ms | 6,48 | Apache 2.0 | HuggingFace `YamiSukkehirho/voxlock-distill` |
-| VoxLock-distill `x21-fd24x2-h256` | no disponible (24×2) | tramas de 16 ms | 14,38 | Apache 2.0 | HuggingFace `YamiSukkehirho/voxlock-distill` |
+| VoxLock original (int8) | no disponible (128×6) | tramas de 8 ms | 5,10 | no disponible | Hugging Face `arbazsiddiqui/voxlock` |
+| VoxLock-distill `x7-fd64x4-h256` | no disponible (64×4) | tramas de 16 ms | 5,14 | Apache 2.0 | Hugging Face `YamiSukkehirho/voxlock-distill` |
+| VoxLock-distill `x11-fd48x3-h256` | no disponible (48×3) | tramas de 16 ms | 6,48 | Apache 2.0 | Hugging Face `YamiSukkehirho/voxlock-distill` |
+| VoxLock-distill `x21-fd24x2-h256` | no disponible (24×2) | tramas de 16 ms | 14,38 | Apache 2.0 | Hugging Face `YamiSukkehirho/voxlock-distill` |
 
 No se dispone de datos de otros modelos comparables de separación de voz objetivo en la información proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de datos de otros modelos comparables de separación de voz objeti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YamiSukkehirho/voxlock-distill
+- Hugging Face: https://huggingface.co/YamiSukkehirho/voxlock-distill
 - Modelo base: https://huggingface.co/arbazsiddiqui/voxlock
 - Repositorio GitHub de VoxLock: https://github.com/arbazsiddiqui/voxlock
 - Benchmark Krisp Voice Isolation: no disponible en la información proporcionada.

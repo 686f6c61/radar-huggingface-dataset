@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`otterbin/retrieval-test` es un prototipo de investigación publicado en HuggingFace por el usuario otterbin bajo licencia MIT. Se presenta explícitamente como un esqueleto de código y configuración para experimentar con una arquitectura denominada "cnn_transformer" orientada a tareas de retrieval (recuperación de información). No es un modelo entrenado: el propio autor indica que el checkpoint incluido sirve únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+`otterbin/retrieval-test` es un prototipo de investigación publicado en Hugging Face por el usuario otterbin bajo licencia MIT. Se presenta explícitamente como un esqueleto de código y configuración para experimentar con una arquitectura denominada "cnn_transformer" orientada a tareas de retrieval (recuperación de información). No es un modelo entrenado: el propio autor indica que el checkpoint incluido sirve únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El dato más llamativo es su tamaño: 16.576 parámetros totales según los safetensors del repositorio, es decir, un modelo de escala juguete (del orden de decenas de kilobytes en fp32) imposible de comparar con modelos de retrieval de producción. El repositorio contiene el código de definición y un punto de entrada de fine-tuning (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización (`model.safetensors`).
 
@@ -26,7 +26,7 @@ Su relevancia es, por tanto, formativa y metodológica: sirve como plantilla rep
 | Activación | gelu |
 | Normalización | instancenorm |
 | Optimizador por defecto | adam con scheduler de warmup lineal |
-| Fecha de creación en HuggingFace | 2026-10-20 |
+| Fecha de creación en Hugging Face | 2026-10-20 |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, en todas (GTX 1050, RTX 3060, RTX 4090, etc.), y también en Raspberry Pi o en un contenedor sin GPU.
 - Opciones de despliegue: el autor advierte que las APIs genéricas de carga automática requieren un adaptador explícito al ser una implementación propia; vLLM, TGI o llama.cpp no aplican al no haber pesos en formato estándar de inferencia (no hay GGUF) ni pipeline declarada.
 - Latencia y throughput: no disponibles. Con 16.576 parámetros el coste computacional es despreciable, pero no se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -77,7 +77,7 @@ El modelo no es comparable en rendimiento con sistemas de retrieval en producci�
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| otterbin/retrieval-test | CNN Transformer, atención sliding window, InstanceNorm | 16.576 | No disponible | MIT | Repositorio HuggingFace, sin descargas |
+| otterbin/retrieval-test | CNN Transformer, atención sliding window, InstanceNorm | 16.576 | No disponible | MIT | Repositorio Hugging Face, sin descargas |
 | CLIP (OpenAI) | Transformer visión + texto | No disponible en la información proporcionada | No disponible | No disponible | Referencia estándar de retrieval imagen-texto |
 | SigLIP (Google) | Transformer visión + texto con pérdida sigmoide | No disponible en la información proporcionada | No disponible | No disponible | Referencia estándar de retrieval imagen-texto |
 | BLIP-2 / InstructBLIP | Transformer multimodal con Q-Former | No disponible en la información proporcionada | No disponible | No disponible | Usado en retrieval y captioning |
@@ -94,11 +94,11 @@ Nota: la comparación relevante para este repositorio no es de rendimiento sino 
 - Longitud de contexto desconocida: la atención de ventana deslizante implica un límite, pero no se especifica el tamaño de la ventana.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de revisar por separado los términos de los datos externos (por ejemplo, Flickr30k) que se usen con el repositorio.
 - Implementación personalizada: no funciona con `AutoModel.from_pretrained` sin un adaptador explícito, lo que complica la integración en stacks estándar.
-- Fechas de creación y actualización en HuggingFace (2026-10-20) posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de citarlo.
+- Fechas de creación y actualización en Hugging Face (2026-10-20) posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de citarlo.
 - El tamaño del repositorio (0,0 GB) y la ausencia de descargas y likes indican un artefacto de prueba, no un proyecto mantenido.
 - Los resultados de búsqueda web asociados a esta consulta no contenían información técnica sobre el modelo y se han descartado por completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otterbin/retrieval-test
+- Modelo en Hugging Face: https://huggingface.co/otterbin/retrieval-test
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

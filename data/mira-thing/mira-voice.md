@@ -100,7 +100,7 @@ Las cifras de parametros, contexto y rendimiento del resto de alternativas no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mira-thing/mira-voice
+- Modelo en Hugging Face: https://huggingface.co/mira-thing/mira-voice
 - Repositorio de código y scripts (GitHub): https://github.com/mira-thing/mira-voice
 - Fichero de licencias de terceros: https://huggingface.co/mira-thing/mira-voice/blob/main/THIRD_PARTY_LICENSES
 - sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx

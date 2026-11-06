@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep` es un ajuste fino de Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en HuggingFace. Se trata de un modelo denso de 4.411.424.256 parámetros (aproximadamente 4,41 mil millones) entrenado específicamente sobre el dominio **telecom** del benchmark tau2-bench, que evalúa agentes conversacionales capaces de resolver tareas de atención al cliente mediante llamadas a herramientas y diálogo multi-turno.
+El modelo `MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep` es un ajuste fino de Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en Hugging Face. Se trata de un modelo denso de 4.411.424.256 parámetros (aproximadamente 4,41 mil millones) entrenado específicamente sobre el dominio **telecom** del benchmark tau2-bench, que evalúa agentes conversacionales capaces de resolver tareas de atención al cliente mediante llamadas a herramientas y diálogo multi-turno.
 
 El entrenamiento sigue una receta de destilación de experiencia (etiquetas `oel` y `experience-distillation`): el alumno reproduce cada tarea sin memoria en el prompt, mientras que el profesor son los mismos pesos con la memoria de esa tarea inyectada en el mensaje de sistema. Solo difiere el prompt y no se utiliza ninguna función de recompensa; la pérdida es una KL completa sobre todos los tokens de respuesta con `kl_topk` 256. El conjunto de entrenamiento es muy reducido: 72 pares tarea-memoria, batch size 6 y una única época con learning rate constante de 3e-6.
 
@@ -71,8 +71,8 @@ El único dato numérico proporcionado es la referencia del modelo base sobre el
 
 | Modelo | Parámetros | Contexto | tau2-bench telecom (avg / pass@4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep | 4,41 B | no disponible en la model card (receta con 40960) | no evaluado | Apache-2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4 B aprox. | no disponible en la información proporcionada | 0.056 / 0.175 | Apache-2.0 | safetensors en HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep | 4,41 B | no disponible en la model card (receta con 40960) | no evaluado | Apache-2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4 B aprox. | no disponible en la información proporcionada | 0.056 / 0.175 | Apache-2.0 | safetensors en Hugging Face |
 | Otros modelos comparables de 4 B orientados a agentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros en la información proporcionada para establecer comparaciones adicionales fiables.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_u1_sample74-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/MANGSEOK123
 - tau2-bench: no se proporciona enlace en la model card

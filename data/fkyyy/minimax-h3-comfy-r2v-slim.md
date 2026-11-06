@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-comfy-r2v-slim (este repo) | Difusión vídeo+audio, empaquetado ComfyUI | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace, 93 descargas |
-| MiniMaxAI/MiniMax-H3 | Difusión vídeo+audio, modelo base | no disponible | no disponible | minimax-h3-community-license-agreement | HuggingFace (repo original) |
-| lightx2v/Minimax-h3-Turbo | Variante turbo del modelo base | no disponible | no disponible | no disponible | HuggingFace |
-| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union | ControlNet para el modelo base | no disponible | no disponible | no disponible | HuggingFace |
+| MiniMax-H3-comfy-r2v-slim (este repo) | Difusión vídeo+audio, empaquetado ComfyUI | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face, 93 descargas |
+| MiniMaxAI/MiniMax-H3 | Difusión vídeo+audio, modelo base | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face (repo original) |
+| lightx2v/Minimax-h3-Turbo | Variante turbo del modelo base | no disponible | no disponible | no disponible | Hugging Face |
+| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union | ControlNet para el modelo base | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de otros fabricantes.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de parámetros para establecer una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fkyyy/MiniMax-H3-comfy-r2v-slim
+- Repositorio en Hugging Face: https://huggingface.co/fkyyy/MiniMax-H3-comfy-r2v-slim
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Variante turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo

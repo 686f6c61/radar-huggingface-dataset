@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernFinBERT-fp32-onnx es un artefacto publicado en HuggingFace por el usuario harrym1008 que contiene una exportacion al formato ONNX en precision fp32 de un modelo denominado ModernFinBERT. El repositorio unicamente incluye metadatos de licencia (apache-2.0) y los pesos en ONNX; no incorpora model card descriptiva, pipeline declarado, idiomas soportados ni documentacion sobre el entrenamiento. El tamano del repositorio es de 0,6 GB, lo que resulta consistente con un codificador transformer de aproximadamente 150 millones de parametros almacenado en fp32.
+ModernFinBERT-fp32-onnx es un artefacto publicado en Hugging Face por el usuario harrym1008 que contiene una exportacion al formato ONNX en precision fp32 de un modelo denominado ModernFinBERT. El repositorio unicamente incluye metadatos de licencia (apache-2.0) y los pesos en ONNX; no incorpora model card descriptiva, pipeline declarado, idiomas soportados ni documentacion sobre el entrenamiento. El tamano del repositorio es de 0,6 GB, lo que resulta consistente con un codificador transformer de aproximadamente 150 millones de parametros almacenado en fp32.
 
 Por el nombre del modelo y por el formato de publicacion, el artefacto apunta a un uso de clasificacion o analisis de texto del dominio financiero (analisis de sentimiento, clasificacion de noticias, extraccion de senales), presumiblemente derivado de la familia ModernBERT. Esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor, ya que la model card no aporta ninguna descripcion funcional.
 
@@ -21,9 +21,9 @@ Su relevancia practica es limitada y condicionada: se trata de un repositorio co
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (precision fp32) |
 | Tamano del repositorio | 0,6 GB |
-| Pipeline declarado en HuggingFace | no disponible |
-| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Pipeline declarado en Hugging Face | no disponible |
+| Fecha de creacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,6 +93,6 @@ La comparacion se ofrece unicamente como referencia de categoria. No implica equ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harrym1008/ModernFinBERT-fp32-onnx
+- Repositorio en Hugging Face: https://huggingface.co/harrym1008/ModernFinBERT-fp32-onnx
 - Model card: https://huggingface.co/harrym1008/ModernFinBERT-fp32-onnx/blob/main/README.md
 - No se han encontrado en la informacion proporcionada papers, blogs tecnicos, repositorios de codigo ni demos asociados a este artefacto.

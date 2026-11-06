@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tb-x es un modelo de lenguaje publicado en HuggingFace por el usuario Shadow0482 bajo el identificador `Shadow0482/tb-x`. Se distribuye exclusivamente en formato GGUF, generado mediante las herramientas de Unsloth, y esta etiquetado con la familia `qwen2`, lo que indica que su arquitectura subyacente deriva de la familia Qwen2 de Alibaba. El repositorio incluye pesos con nombre interno "Mythos-Nano-safetensor" en diez cuantizaciones distintas, desde BF16 hasta Q2_K_L.
+tb-x es un modelo de lenguaje publicado en Hugging Face por el usuario Shadow0482 bajo el identificador `Shadow0482/tb-x`. Se distribuye exclusivamente en formato GGUF, generado mediante las herramientas de Unsloth, y esta etiquetado con la familia `qwen2`, lo que indica que su arquitectura subyacente deriva de la familia Qwen2 de Alibaba. El repositorio incluye pesos con nombre interno "Mythos-Nano-safetensor" en diez cuantizaciones distintas, desde BF16 hasta Q2_K_L.
 
 El dato objetivo mas relevante es el recuento de parametros en safetensors: 3.085.938.688 parametros, es decir, aproximadamente 3,1 mil millones. Se trata por tanto de un modelo pequeno, orientado a inferencia local en hardware de consumo, y empaquetado para su uso con llama.cpp y el ecosistema derivado (llama-cli, llama-mtmd-cli, endpoints compatibles).
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tb-x (Shadow0482) | ~3,1B | no disponible | no disponible | GGUF | HuggingFace, repo sin traccion |
+| tb-x (Shadow0482) | ~3,1B | no disponible | no disponible | GGUF | Hugging Face, repo sin traccion |
 | Qwen2.5-3B (Alibaba) | ~3,1B | 32.768 tokens (variante instruct) | Apache 2.0 (variante base/instruct) | safetensors, GGUF | Amplia, con evaluacion publica |
 | Llama 3.2 3B (Meta) | ~3,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Amplia, con evaluacion publica |
 | Phi-3-mini (Microsoft) | ~3,8B | 4.096-128.000 tokens segun variante | MIT | safetensors, GGUF | Amplia, con evaluacion publica |
@@ -88,6 +88,6 @@ La comparativa deja claro que tb-x compite en la categoria de modelos de ~3B, do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shadow0482/tb-x
+- Hugging Face: https://huggingface.co/Shadow0482/tb-x
 - Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por la model card): https://github.com/ggml-org/llama.cpp

@@ -90,7 +90,7 @@ La diferencia clave es que este modelo, pese a tener 6 ordenes de magnitud menos
 - Uso obligatorio de `last.pt`: el checkpoint `best.pt` incluido en el historial de entrenamiento es enganoso y pierde contra `last.pt` por 26% a 56% en enfrentamientos directos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-SelfPlay
+- Modelo en Hugging Face: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-SelfPlay
 - Predecesor (RaifuWars-RL-ActionScorer): https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer
 - Juego Raifu Wars: https://raifuwars.com
 - Protocolo Warrior: https://github.com/Yotis-Studios/Warrior

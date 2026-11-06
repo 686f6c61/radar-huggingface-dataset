@@ -90,7 +90,7 @@ No disponible. Este repositorio no es un modelo con capacidades evaluables, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016-Part02
+- Repositorio en Hugging Face: https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016-Part02
 - Repositorio padre (manifiesto, checksums y `restore_model.py`): https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016
 - Perfil del autor: https://huggingface.co/LSW142857
 - Paper, blog, repositorio de codigo o demo: no disponible

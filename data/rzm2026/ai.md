@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RZM2026/AI es un repositorio publicado en HuggingFace por el usuario RZM2026 bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: mit`) y carece de descripcion, documentacion tecnica o cualquier otra informacion sustantiva sobre el modelo. El repositorio no declara pipeline de inferencia, idiomas soportados ni arquitectura.
+RZM2026/AI es un repositorio publicado en Hugging Face por el usuario RZM2026 bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: mit`) y carece de descripcion, documentacion tecnica o cualquier otra informacion sustantiva sobre el modelo. El repositorio no declara pipeline de inferencia, idiomas soportados ni arquitectura.
 
 No se dispone de datos sobre el numero de parametros, la longitud de contexto, el volumen de datos de entrenamiento ni el proceso de alineacion. El repositorio registra cero descargas y cero valoraciones, y fue creado y actualizado el 27 de septiembre de 2026, sin actividad posterior documentada.
 
@@ -63,7 +63,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RZM2026/AI | no disponible | no disponible | MIT | Repositorio en HuggingFace, 0 descargas |
+| RZM2026/AI | no disponible | no disponible | MIT | Repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,11 +73,11 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 - La licencia MIT es permisiva y permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la clausula de licencia. No obstante, el autor no ofrece garantias sobre el contenido publicado.
 - El repositorio presenta cero descargas y cero valoraciones, por lo que no existe evidencia externa de uso, validacion ni reproducibilidad.
 - La fecha de creacion y actualizacion es identica (27 de septiembre de 2026), lo que sugiere un unico commit sin mantenimiento posterior documentado.
-- La ausencia de pipeline declarado impide que HuggingFace clasifique el modelo para tareas de inferencia directa.
+- La ausencia de pipeline declarado impide que Hugging Face clasifique el modelo para tareas de inferencia directa.
 - Para cualquier uso en produccion seria imprescindible contactar con el autor, obtener documentacion tecnica y validar los pesos de forma independiente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RZM2026/AI
+- Repositorio en Hugging Face: https://huggingface.co/RZM2026/AI
 - Perfil del autor: https://huggingface.co/RZM2026
 - Paper, blog, repositorio de codigo o demo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Massyzs/mlp-moe es un modelo de edicion de video basado en instrucciones, construido como un fine-tune del modelo linyq/kiwi-edit-5b-instruct-only-diffusers. El autor del repositorio es Massyzs y el modelo se distribuye bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio ocupa 29,8 GB, lo que es coherente con un modelo de difusion de aproximadamente 5.000 millones de parametros en precision completa o mixta.
+Massyzs/mlp-moe es un modelo de edicion de video basado en instrucciones, construido como un fine-tune del modelo linyq/kiwi-edit-5b-instruct-only-diffusers. El autor del repositorio es Massyzs y el modelo se distribuye bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio ocupa 29,8 GB, lo que es coherente con un modelo de difusion de aproximadamente 5.000 millones de parametros en precision completa o mixta.
 
 El modelo se enmarca en la familia Wan 2.2, una linea de modelos de generacion y edicion de video, y se presenta como una variante con mezcla de expertos (mixture-of-experts, MoE) aplicada sobre la arquitectura base de Kiwi Edit. La tarea principal es video-to-video con edicion guiada por instrucciones en lenguaje natural: el usuario proporciona un video de entrada y una instruccion textual, y el modelo genera un video editado que respeta la instruccion.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Massyzs/mlp-moe | ~5B (estimado) | No disponible | Edicion de video por instrucciones | Apache 2.0 | Gated en HuggingFace |
+| Massyzs/mlp-moe | ~5B (estimado) | No disponible | Edicion de video por instrucciones | Apache 2.0 | Gated en Hugging Face |
 | linyq/kiwi-edit-5b-instruct-only-diffusers | ~5B | No disponible | Edicion de video por instrucciones | No disponible | No disponible |
 | Wan 2.2 (familia base) | No disponible | No disponible | Generacion y edicion de video | No disponible | No disponible |
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Ausencia de documentacion tecnica: no hay informacion publica sobre datos de entrenamiento, arquitectura interna de la capa MoE ni proceso de fine-tuning.
 - Sin benchmarks publicados: no es posible evaluar su calidad frente a alternativas de forma objetiva.
 - Riesgo de alucinacion visual: como modelo generativo de difusion, puede producir artefactos, inconsistencias temporales o modificaciones no solicitadas en el video.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Massyzs/mlp-moe
+- Hugging Face: https://huggingface.co/Massyzs/mlp-moe
 - Modelo base: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -22,8 +22,8 @@ Su relevancia es limitada y de carácter puramente exploratorio: se trata de un 
 | Formato de pesos | safetensors |
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
 | Tamano del repositorio | 2,5 GB |
-| Fecha de creacion | 27 de septiembre de 2026 (según metadatos de HuggingFace) |
-| Ultima actualizacion | 27 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creacion | 27 de septiembre de 2026 (según metadatos de Hugging Face) |
+| Ultima actualizacion | 27 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Los datos de los modelos alternativos proceden de su documentación pública y n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llama-3.2-1b-creative-writing-ablated | 1,24 B (1.235.814.400) | No disponible (base: 128.000 tokens) | No declarada (base: Llama 3.2 Community License) | safetensors en HuggingFace |
+| llama-3.2-1b-creative-writing-ablated | 1,24 B (1.235.814.400) | No disponible (base: 128.000 tokens) | No declarada (base: Llama 3.2 Community License) | safetensors en Hugging Face |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, versiones GGUF de la comunidad |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF, múltiples runtimes |
 | SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF |
@@ -100,7 +100,7 @@ Frente a estas alternativas, el checkpoint analizado no ofrece ventajas verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sachin903/llama-3.2-1b-creative-writing-ablated
+- Modelo en Hugging Face: https://huggingface.co/Sachin903/llama-3.2-1b-creative-writing-ablated
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Framework de ajuste declarado (Unsloth): https://github.com/unslothai/unsloth
 - Framework de edición de representaciones (Ablate): no disponible, el autor no aporta enlace ni referencia

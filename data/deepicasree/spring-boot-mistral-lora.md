@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado mediante supervisión fina (SFT) sobre el modelo base Mistral-7B-v0.1, desarrollado por el usuario Deepicasree. El adaptador se publica en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para ser cargado con la librería `peft` de HuggingFace, permitiendo ajustar el comportamiento del modelo base sin modificar sus pesos originales.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado mediante supervisión fina (SFT) sobre el modelo base Mistral-7B-v0.1, desarrollado por el usuario Deepicasree. El adaptador se publica en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para ser cargado con la librería `peft` de Hugging Face, permitiendo ajustar el comportamiento del modelo base sin modificar sus pesos originales.
 
 La finalidad declarada en el nombre del repositorio sugiere que el adaptador está orientado a tareas relacionadas con Spring Boot, probablemente generación de código o asistencia técnica en ese framework. Sin embargo, la model card no proporciona detalles sobre el conjunto de datos de entrenamiento, el proceso de ajuste ni las tareas específicas. El adaptador tiene un tamaño de 0.1 GB y está disponible en formato `safetensors`, con licencia no especificada.
 

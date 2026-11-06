@@ -2,11 +2,11 @@
 
 ## Resumen
 
-"The light boat" no es un modelo de inteligencia artificial. Se trata de una pagina web publicada por Jesse Daniel Brown (usuario Jessedbrown) cuyo proposito es comprimir el bloque SDP de una oferta WebRTC antes de transportarlo, de modo que el intercambio entre dos navegadores pueda hacerse sin servidor intermedio. El repositorio de HuggingFace asociado no contiene pesos, configuracion de modelo, tokenizador ni artefactos de inferencia: la model card describe exclusivamente una utilidad de comunicacion peer-to-peer.
+"The light boat" no es un modelo de inteligencia artificial. Se trata de una pagina web publicada por Jesse Daniel Brown (usuario Jessedbrown) cuyo proposito es comprimir el bloque SDP de una oferta WebRTC antes de transportarlo, de modo que el intercambio entre dos navegadores pueda hacerse sin servidor intermedio. El repositorio de Hugging Face asociado no contiene pesos, configuracion de modelo, tokenizador ni artefactos de inferencia: la model card describe exclusivamente una utilidad de comunicacion peer-to-peer.
 
 El unico dato tecnico verificable que aporta la model card es una medicion de tamano: una oferta WebRTC en crudo ocupa 1.060 caracteres y el bloque que el usuario debe transportar ocupa 414, lo que supone una reduccion del 61%. Segun el autor, la reconstruccion es exacta porque los campos eliminados son constantes (plantilla) y solo cuatro elementos son variables: el ufrag, la contrasena, la huella (fingerprint) y los candidatos ICE. No hay aproximacion ni perdida de campos, segun la propia descripcion.
 
-La relevancia de esta ficha es, por tanto, negativa o de advertencia: aparece listada en HuggingFace con 0 descargas y 0 likes, sin licencia declarada, sin idiomas y sin pipeline asignado. Cualquier lector que llegue buscando un modelo de lenguaje, vision o audio no encontrara nada utilizable. La busqueda web asociada no devolvio ningun resultado tecnico relacionado con el artefacto.
+La relevancia de esta ficha es, por tanto, negativa o de advertencia: aparece listada en Hugging Face con 0 descargas y 0 likes, sin licencia declarada, sin idiomas y sin pipeline asignado. Cualquier lector que llegue buscando un modelo de lenguaje, vision o audio no encontrara nada utilizable. La busqueda web asociada no devolvio ningun resultado tecnico relacionado con el artefacto.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No disponible. El artefacto no pertenece a ninguna categoria de modelo de IA (le
 
 ## Limitaciones y advertencias
 
-- No es un modelo de inteligencia artificial. Publicarlo en HuggingFace puede inducir a error a quien lo encuentre en busquedas de modelos.
+- No es un modelo de inteligencia artificial. Publicarlo en Hugging Face puede inducir a error a quien lo encuentre en busquedas de modelos.
 - La model card no declara licencia, idiomas, pipeline ni formato de pesos. El repositorio no contiene artefactos de modelo.
 - El repositorio presenta 0 descargas y 0 likes, sin senales de adopcion ni de mantenimiento por parte de terceros.
 - Las afirmaciones de reconstruccion exacta del SDP no incluyen conjunto de pruebas publico, version de navegador ni casos limite documentados.
@@ -100,7 +100,7 @@ No disponible. El artefacto no pertenece a ninguna categoria de modelo de IA (le
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/the-light-boat
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/the-light-boat
 - Pagina del proyecto "the light boat": https://jessebrown1980.github.io/the-light-boat/
 - Pagina agregadora "the bridge to all of it": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Paper, blog tecnico, repositorio de codigo y demo adicionales: no disponibles en la informacion proporcionada.

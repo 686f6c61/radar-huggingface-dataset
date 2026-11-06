@@ -94,9 +94,9 @@ No se dispone de informacion sobre otros modelos de decision con cabeza pointer 
 
 | Modelo | Parametros | Contexto / forma | Formato y plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-0.6b-coreml (FP16 / W8) | 0,6 mil millones aprox. | 128 tokens, 32 opciones, una pregunta por llamada | Core ML, Apple Silicon (iOS 17 / macOS 14+) | Apache-2.0 | Publicado en HuggingFace por FluidInference |
-| Kev 0.6B (`jaredpalmer/kev-0.6b`) | 0,6 mil millones aprox. | Incluye forward nativo empaquetado de varias preguntas | Pesos del adaptador y cabeza; plataforma no detallada | Apache-2.0 | Publicado en HuggingFace por Jared Palmer |
-| Qwen3-0.6B-Base (`Qwen/Qwen3-0.6B-Base`) | 0,6 mil millones aprox. | No disponible en la informacion proporcionada | Pesos del modelo base; plataforma no detallada | Apache-2.0 | Publicado en HuggingFace por el equipo Qwen |
+| kev-0.6b-coreml (FP16 / W8) | 0,6 mil millones aprox. | 128 tokens, 32 opciones, una pregunta por llamada | Core ML, Apple Silicon (iOS 17 / macOS 14+) | Apache-2.0 | Publicado en Hugging Face por FluidInference |
+| Kev 0.6B (`jaredpalmer/kev-0.6b`) | 0,6 mil millones aprox. | Incluye forward nativo empaquetado de varias preguntas | Pesos del adaptador y cabeza; plataforma no detallada | Apache-2.0 | Publicado en Hugging Face por Jared Palmer |
+| Qwen3-0.6B-Base (`Qwen/Qwen3-0.6B-Base`) | 0,6 mil millones aprox. | No disponible en la informacion proporcionada | Pesos del modelo base; plataforma no detallada | Apache-2.0 | Publicado en Hugging Face por el equipo Qwen |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ No se dispone de informacion sobre otros modelos de decision con cabeza pointer 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/kev-0.6b-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/kev-0.6b-coreml
 - Modelo base entrenado (Kev 0.6B, Jared Palmer): https://huggingface.co/jaredpalmer/kev-0.6b
 - Modelo base de Qwen3: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Script de verificacion incluido en el repositorio: `source/verify.py`

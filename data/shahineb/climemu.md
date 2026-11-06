@@ -45,7 +45,7 @@ No se especifican en la información disponible el número de tokens de entrenam
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas cuantitativas como RMSE, skill scores o comparaciones con otros emuladores en la model card de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan métricas cuantitativas como RMSE, skill scores o comparaciones con otros emuladores en la model card de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -70,6 +70,6 @@ No disponible. La información proporcionada no incluye referencias a otros emul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahineb/climemu
+- Modelo en Hugging Face: https://huggingface.co/shahineb/climemu
 - Repositorio de código: https://github.com/shahineb/jax-esm-emulation
 - DOI asociado: 10.57967/hf/6634

@@ -4,9 +4,9 @@
 
 Este repositorio contiene una cuantizacion mixta de 4 bits del modelo Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, realizada por el usuario pyros-vault con la herramienta oQ (oMLX v0.6.2). El modelo original, desarrollado por DavidAU, aplica la metodologia COLD FUSION (combinacion de GAIN y la infraestructura de entrenamiento de Unsloth) para reducir los tokens de pensamiento a entre 1/10 y 1/2 de los modelos Qwen estandar, manteniendo el 99% del rendimiento en precision completa tanto a 8 como a 4 bits.
 
-La version cuantizada esta pensada para ejecutarse en dispositivos Apple Silicon mediante la libreria MLX, ofreciendo un formato ligero y optimizado para inferencia local. Segun los datos de HuggingFace, los pesos reales en safetensors suman 4.926.789.872 parametros (aproximadamente 4,9 mil millones), una cifra muy inferior a los 27 mil millones que sugiere el nombre del modelo, lo que podria indicar una version reducida o un error de nomenclatura. El repositorio ocupa 17 GB, consistente con un modelo de ese tamano en cuantizacion 4-bit con grupo de 64.
+La version cuantizada esta pensada para ejecutarse en dispositivos Apple Silicon mediante la libreria MLX, ofreciendo un formato ligero y optimizado para inferencia local. Segun los datos de Hugging Face, los pesos reales en safetensors suman 4.926.789.872 parametros (aproximadamente 4,9 mil millones), una cifra muy inferior a los 27 mil millones que sugiere el nombre del modelo, lo que podria indicar una version reducida o un error de nomenclatura. El repositorio ocupa 17 GB, consistente con un modelo de ese tamano en cuantizacion 4-bit con grupo de 64.
 
-La relevancia de este modelo reside en su capacidad para ejecutar un asistente de lenguaje con razonamiento eficiente en hardware local de gama media, aprovechando las optimizaciones de MLX y la reduccion de tokens de pensamiento del metodo COLD FUSION. No se dispone de informacion sobre la licencia ni los idiomas soportados en la ficha de HuggingFace.
+La relevancia de este modelo reside en su capacidad para ejecutar un asistente de lenguaje con razonamiento eficiente en hardware local de gama media, aprovechando las optimizaciones de MLX y la reduccion de tokens de pensamiento del metodo COLD FUSION. No se dispone de informacion sobre la licencia ni los idiomas soportados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no esta especificada en la ficha de HuggingFace, lo que impide determinar si su uso comercial esta permitido. Se debe contactar con el autor antes de emplearlo en produccion.
+- La licencia del modelo no esta especificada en la ficha de Hugging Face, lo que impide determinar si su uso comercial esta permitido. Se debe contactar con el autor antes de emplearlo en produccion.
 - La cuantizacion 4-bit puede introducir degradaciones sutiles en tareas de razonamiento complejo o generacion de codigo, a pesar de la afirmacion del 99% de rendimiento mantenido.
 - El numero de parametros real (4,9 mil millones) contradice el nombre del modelo (27B), lo que sugiere que podria tratarse de una version destilada o de un error de etiquetado. Esto afecta a las expectativas de capacidad.
 - No se han publicado datos sobre sesgos, alucinaciones o limitaciones de idioma. El modelo puede heredar los sesgos del conjunto de entrenamiento de Qwen 3.5, que no se ha detallado.
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ4e-mtp
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ4e-mtp
 - Modelo original de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Guia de instalacion local (GitHub): https://github.com/qwen3-8-27b/qwen3-8-27b
 - Articulo de referencia sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

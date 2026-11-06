@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) para
 - **VRAM estimada**: con pesos bf16, el modelo ocupa aproximadamente 3,4 GB (1,72B parámetros × 2 bytes). Con cuantización a 8-bit o 4-bit, el consumo puede reducirse a ~1,7 GB o ~0,9 GB respectivamente.
 - **GPU recomendada**: puede ejecutarse en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 (8 GB) o RTX 4090 (24 GB). En A100 o H100 para inferencia de mayor throughput.
 - **CPU**: también es posible la inferencia en CPU con cuantización (GGUF) aunque con mayor latencia.
-- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints, o directamente con Transformers.
+- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints, o directamente con Transformers.
 - **Latencia y throughput**: no disponibles; al ser un modelo pequeño, la latencia esperada es baja (del orden de milisegundos por token en GPU moderna), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No hay datos de benchmarks para comparar rendimiento en tareas de QA con citaci�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kreynolds319/slm-trainer)
+- [Modelo en Hugging Face](https://huggingface.co/kreynolds319/slm-trainer)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - No se proporciona enlace al repositorio del proyecto ni a papers en la información disponible.

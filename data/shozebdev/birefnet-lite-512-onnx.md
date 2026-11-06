@@ -89,7 +89,7 @@ La diferencia practica entre las dos exportaciones ONNX es de resolucion y de en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shozebDev/birefnet-lite-512-onnx
+- Modelo en Hugging Face: https://huggingface.co/shozebDev/birefnet-lite-512-onnx
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Exportacion ONNX oficial a 1024×1024: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX
 - Repositorio de transformers.js: https://github.com/huggingface/transformers.js

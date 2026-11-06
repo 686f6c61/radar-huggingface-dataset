@@ -71,7 +71,7 @@ No se ha proporcionado informacion comparativa sobre modelos alternativos. Como 
 
 | Modelo | Parametros | Contexto o ventana | Entorno objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi0.5 LIBERO dense contact) | no disponible | H=10 en el objetivo IDM | LIBERO | no disponible | Orbax en HuggingFace, 11,5 GB |
+| Este checkpoint (pi0.5 LIBERO dense contact) | no disponible | H=10 en el objetivo IDM | LIBERO | no disponible | Orbax en Hugging Face, 11,5 GB |
 | pi0.5 base | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | pi0 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -91,6 +91,6 @@ No se ha proporcionado informacion comparativa sobre modelos alternativos. Como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-medium-20261002
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-medium-20261002
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondian a entradas de diccionario sin relacion con el modelo.

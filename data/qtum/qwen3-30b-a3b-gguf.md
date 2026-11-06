@@ -78,7 +78,7 @@ La comparativa se limita a datos estructurales, ya que no se dispone de resultad
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/qtum/Qwen3-30B-A3B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/qtum/Qwen3-30B-A3B-GGUF
 - Modelo original (Qwen/Qwen3-30B-A3B): https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp
 - Guía de imatrix y cuantización (referencia de Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

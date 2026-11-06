@@ -6,7 +6,7 @@ ThinEmbed-harrier-0.6b-vq es una familia de codificadores de consulta (query enc
 
 La propuesta es relevante porque baja el peso del codificador de consultas por debajo del formato más pequeño que ofrece llama.cpp (IQ2_XS, 177,5 MiB) manteniendo entre el 91 % y el 98 % del nDCG@10 en fp32, según los datos publicados por el autor. Esto permite ejecutar búsqueda semántica sobre índices existentes sin servidor, directamente en WebGPU sobre GPU integradas.
 
-La familia incluye ocho contenedores: cuatro con calibración estándar sobre SciDocs y SciFact, y cuatro variantes «prompt-K/V» que almacenan en precisión completa (unos 2 MB) las claves y valores del prefijo de consulta y se recalibran con él. Los ficheros están pensados para el runtime Moravian AI WebGPU (`client/vqweb`), no para llama.cpp ni para pipelines estándar de HuggingFace Transformers.
+La familia incluye ocho contenedores: cuatro con calibración estándar sobre SciDocs y SciFact, y cuatro variantes «prompt-K/V» que almacenan en precisión completa (unos 2 MB) las claves y valores del prefijo de consulta y se recalibran con él. Los ficheros están pensados para el runtime Moravian AI WebGPU (`client/vqweb`), no para llama.cpp ni para pipelines estándar de Hugging Face Transformers.
 
 ## Especificaciones técnicas
 
@@ -98,7 +98,7 @@ En la verificación en navegador, el runtime reproduce la simulación con desvia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinEmbed-harrier-0.6b-vq
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinEmbed-harrier-0.6b-vq
 - Modelo base: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
 - Clientes GGUF de la misma familia: https://huggingface.co/moravianai/ThinEmbed-harrier-0.6b
 - Runtime WebGPU (Apache-2.0): https://github.com/rosecky/embedding-quantization-public/tree/main/client/vqweb

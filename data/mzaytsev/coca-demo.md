@@ -43,7 +43,7 @@ Dado que el modelo no está entrenado, los casos de uso prácticos son limitados
 
 - **Pruebas de humo en pipelines de entrenamiento**: el checkpoint de inicialización permite verificar que el código de entrenamiento, la carga de datos y el bucle de optimización funcionan correctamente antes de lanzar un entrenamiento completo.
 - **Desarrollo y depuración de código**: los desarrolladores pueden usar este repositorio como base para implementar o modificar la arquitectura CoCa, ejecutando el script `inference.py` para comprobar la integración de componentes.
-- **Validación de integración con librerías externas**: al ser una implementación personalizada, sirve para probar adaptadores que permitan cargar el modelo con APIs genéricas (por ejemplo, HuggingFace Transformers) antes de usarlo con modelos entrenados.
+- **Validación de integración con librerías externas**: al ser una implementación personalizada, sirve para probar adaptadores que permitan cargar el modelo con APIs genéricas (por ejemplo, Hugging Face Transformers) antes de usarlo con modelos entrenados.
 - **Experimentos de investigación sobre arquitecturas multimodales**: el código y la configuración pueden servir como referencia para comparar variantes de CoCa con otras arquitecturas en entornos académicos.
 - **Generación de checkpoints de inicialización**: el repositorio demuestra cómo empaquetar un checkpoint de inicialización con su configuración, útil para equipos que necesitan reproducir experimentos con semillas fijas.
 - **Educación y aprendizaje**: estudiantes e investigadores pueden estudiar la implementación de CoCa en un formato minimalista y ejecutable, sin necesidad de recursos de hardware elevados.
@@ -75,5 +75,5 @@ No se dispone de modelos comparables en la misma categoría, ya que este reposit
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mzaytsev/coca-demo)
+- [Repositorio en Hugging Face](https://huggingface.co/mzaytsev/coca-demo)
 - [Implementación de referencia de CoCa en torchmultimodal (GitHub)](https://github.com/facebookresearch/multimodal/blob/main/torchmultimodal/models/coca/coca_model.py)

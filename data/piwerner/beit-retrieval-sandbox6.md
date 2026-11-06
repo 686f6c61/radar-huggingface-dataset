@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Piwerner/beit-retrieval-sandbox6 es un prototipo de investigación publicado en HuggingFace por el usuario Piwerner, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación personalizada de arquitectura BeIt. El repositorio se presenta explícitamente como un *sandbox*: incluye el código de ejecución (`run.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) destinado a pruebas de humo, no a evaluación de rendimiento.
+Piwerner/beit-retrieval-sandbox6 es un prototipo de investigación publicado en Hugging Face por el usuario Piwerner, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación personalizada de arquitectura BeIt. El repositorio se presenta explícitamente como un *sandbox*: incluye el código de ejecución (`run.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) destinado a pruebas de humo, no a evaluación de rendimiento.
 
 El dato más relevante para cualquier evaluador es el tamaño real del checkpoint: 33.088 parámetros según el fichero safetensors, una cifra incompatible con la escala "xlarge" que declara la configuración. Esto confirma que el artefacto publicado es una inicialización sin entrenar y no un modelo funcional. La model card del autor lo indica de forma explícita: "The initialization checkpoint has not been trained or audited for robustness, fairness, or domain transfer".
 
@@ -77,14 +77,14 @@ La comparación cuantitativa no es posible con los datos disponibles: el reposit
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según reconoce el propio autor.
 - No se han publicado métricas, por lo que no existe evidencia de que la implementación alcance un rendimiento competitivo ni siquiera tras un entrenamiento completo.
 - La etiqueta de escala "xlarge" en la configuración no se corresponde con el tamaño real del checkpoint (33.088 parámetros), lo que puede inducir a error si se interpreta como capacidad del modelo.
-- La implementación es personalizada: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración.
+- La implementación es personalizada: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración.
 - Licencia apache-2.0 en el repositorio, pero el autor advierte de que deben revisarse por separado las condiciones de los datos de origen cuando se use con conjuntos externos (por ejemplo, Flickr30k).
 - No hay información sobre sesgos, alucinación, cobertura idiomática ni longitud de contexto.
 - No apto para producción en su estado actual: cualquier uso real requiere entrenamiento, evaluación con semillas múltiples, línea base comparable y registro de versiones del entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Piwerner/beit-retrieval-sandbox6
+- Modelo en Hugging Face: https://huggingface.co/Piwerner/beit-retrieval-sandbox6
 - Fichero de configuración: https://huggingface.co/Piwerner/beit-retrieval-sandbox6/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/Piwerner/beit-retrieval-sandbox6/blob/main/training_args.json
 - Script principal: https://huggingface.co/Piwerner/beit-retrieval-sandbox6/blob/main/run.py

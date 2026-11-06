@@ -2,7 +2,7 @@
 
 ## Resumen
 
-intellisu-coder-pro es un servicio de API evaluado bajo el nombre de visualización intellisu-coder-pro y atribuido a la organización 江苏银行 (Bank of Jiangsu). El repositorio de HuggingFace no contiene pesos del modelo: es un registro de evaluación de un servicio de API externo, sin que se afirme arquitectura, número de parámetros, procedencia del entrenamiento ni titularidad verificada de ningún modelo subyacente. El espacio de nombres de HuggingFace identifica la cuenta de alojamiento, que es distinta de la organización declarada.
+intellisu-coder-pro es un servicio de API evaluado bajo el nombre de visualización intellisu-coder-pro y atribuido a la organización 江苏银行 (Bank of Jiangsu). El repositorio de Hugging Face no contiene pesos del modelo: es un registro de evaluación de un servicio de API externo, sin que se afirme arquitectura, número de parámetros, procedencia del entrenamiento ni titularidad verificada de ningún modelo subyacente. El espacio de nombres de Hugging Face identifica la cuenta de alojamiento, que es distinta de la organización declarada.
 
 La relevancia del repositorio reside en que publica resultados reproducibles sobre dos benchmarks: Typed Decisions (400 casos de test, 2.000 decisiones) y SafeAgents Judge Bench (562 llamadas a herramientas de test). Ambos se evalúan mediante un adaptador JSON de chat zero-shot que produce distribuciones de probabilidad autodeclaradas, no logits nativos de un clasificador. Los resultados se publicaron el 3 de noviembre de 2026 tras una evaluación realizada el 31 de octubre de 2026.
 
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BaiLing/intellisu-coder-pro
+- Repositorio en Hugging Face: https://huggingface.co/BaiLing/intellisu-coder-pro
 - Dataset Typed Decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Dataset SafeAgents Judge Bench: https://huggingface.co/datasets/harness-hub/safeagents-judge-bench

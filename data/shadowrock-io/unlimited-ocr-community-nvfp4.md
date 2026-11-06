@@ -75,10 +75,10 @@ Nota: el throughput de 64,2 tok/s del build data-free refleja generacion degener
 
 | Modelo | Parametros | Contexto | Rendimiento OCR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baidu/Unlimited-OCR (BF16) | 3,34 B | no disponible | Referencia (CER 0) | MIT | HuggingFace |
-| shadowrock-io/Unlimited-OCR-Community-NVFP4 (este) | 3,34 B | no disponible | CER 0,0068 vs BF16 | MIT | HuggingFace |
-| shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic | 3,34 B | no disponible | no disponible (companion, near-lossless) | MIT | HuggingFace |
-| Builds comunitarios data-free NVFP4 | 3,34 B | no disponible | CER 4,27 (degenerado) | MIT | HuggingFace |
+| baidu/Unlimited-OCR (BF16) | 3,34 B | no disponible | Referencia (CER 0) | MIT | Hugging Face |
+| shadowrock-io/Unlimited-OCR-Community-NVFP4 (este) | 3,34 B | no disponible | CER 0,0068 vs BF16 | MIT | Hugging Face |
+| shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic | 3,34 B | no disponible | no disponible (companion, near-lossless) | MIT | Hugging Face |
+| Builds comunitarios data-free NVFP4 | 3,34 B | no disponible | CER 4,27 (degenerado) | MIT | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de otros OCR de tamano similar en la informacion proporcionada. La ventaja principal de esta build es su calibracion GPTQ, que evita la degeneracion de las versiones data-free y mantiene una fidelidad muy alta al BF16 con un tercio del tamano.
 
@@ -94,7 +94,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-NVFP4
 - Modelo base (Baidu): https://huggingface.co/baidu/Unlimited-OCR
 - Build companion FP8-Dynamic: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic
 - Repositorio fuente de cuantizacion: https://git.srk.rest/shadowrock/uocr-quant

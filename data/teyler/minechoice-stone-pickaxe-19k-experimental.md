@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye datos comparativos con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teyler/MineChoice-stone-pickaxe-19k-experimental
+- Modelo en Hugging Face: https://huggingface.co/teyler/MineChoice-stone-pickaxe-19k-experimental
 - Ficheros de referencia citados en la model card (no enlazados explicitamente): SOURCE_README.md, training_report.json, latency.json, policy.json, model.pt, model.safetensors, config.json, src/policy.mjs
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

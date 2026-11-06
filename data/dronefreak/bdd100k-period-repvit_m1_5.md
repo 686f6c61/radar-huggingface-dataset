@@ -122,7 +122,7 @@ Datos adicionales de la comparativa:
 | Macro F1 | 81,97 % | 83,19 % | 82,68 % | 82,35 % |
 | Balanced accuracy | 78,35 % | 79,63 % | 78,45 % | 78,49 % |
 | Licencia | Apache 2.0 | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
-| Disponibilidad | pesos en HuggingFace | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
+| Disponibilidad | pesos en Hugging Face | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
 Con 13,6 M de parametros, RepViT-M1.5 ocupa la parte baja de la tabla en top-1 pero obtiene una exactitud balanceada (78,35 %) superior a la de modelos mas grandes como ConvNeXt-Atto, YOLO11n, EfficientViT-B3, YOLOv8n o MobileNetV4-Conv-Large, lo que indica un comportamiento relativamente mas equilibrado en las clases minoritarias a costa de algo de precision global.
 
@@ -143,7 +143,7 @@ Con 13,6 M de parametros, RepViT-M1.5 ocupa la parte baja de la tabla en top-1 p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-repvit_m1_5
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-repvit_m1_5
 - Dataset de la tarea: https://huggingface.co/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Modelo base en timm: https://huggingface.co/timm/repvit_m1_5.dist_300e_in1k

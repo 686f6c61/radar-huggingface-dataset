@@ -80,6 +80,6 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superniker/qwen3.8-27b-g8l4i
+- Modelo en Hugging Face: https://huggingface.co/superniker/qwen3.8-27b-g8l4i
 - Fork de vLLM recomendado: https://github.com/weicj/vLLM-2080Ti-Definitive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B

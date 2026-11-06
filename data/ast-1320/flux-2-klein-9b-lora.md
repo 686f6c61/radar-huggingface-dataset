@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AST-1320/FLUX.2-Klein-9B-LoRA es un repositorio publicado en HuggingFace por el usuario AST-1320 bajo licencia Apache 2.0. Se creo el 16 de septiembre de 2026, se actualizo ese mismo dia (unos 24 minutos despues) y ocupa 3,2 GB. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara pipeline de HuggingFace. La model card no aporta informacion tecnica: contiene unicamente el bloque de metadatos con la licencia, sin descripcion del modelo, del dataset de entrenamiento ni instrucciones de uso.
+AST-1320/FLUX.2-Klein-9B-LoRA es un repositorio publicado en Hugging Face por el usuario AST-1320 bajo licencia Apache 2.0. Se creo el 16 de septiembre de 2026, se actualizo ese mismo dia (unos 24 minutos despues) y ocupa 3,2 GB. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara pipeline de Hugging Face. La model card no aporta informacion tecnica: contiene unicamente el bloque de metadatos con la licencia, sin descripcion del modelo, del dataset de entrenamiento ni instrucciones de uso.
 
 Los resultados de la busqueda web no guardan ninguna relacion con el repositorio: corresponden a tramites administrativos franceses (autorizacion de salida del territorio, "AST") y a un examen de acceso a escuelas de comercio, por lo que no aportan contexto util sobre el modelo. No se ha localizado paper, blog tecnico, repositorio de codigo ni demo asociados.
 
@@ -88,6 +88,6 @@ No disponible. No es posible identificar alternativas comparables con la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AST-1320/FLUX.2-Klein-9B-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/AST-1320/FLUX.2-Klein-9B-LoRA
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 - Los resultados de la busqueda web disponibles no son relevantes para el modelo (documentacion administrativa francesa sobre autorizacion de salida del territorio y guias sobre el examen AST), por lo que no se incluyen como referencias tecnicas.

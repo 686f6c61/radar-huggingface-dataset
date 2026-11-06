@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3` es un checkpoint de investigación publicado por el usuario `m1b` en HuggingFace, asociado a la tarea `put-back-block-relocate` del benchmark RMBench++ (RoboDojo v1.0.0). No se trata de un modelo de lenguaje generalista, sino de un artefacto de entrenamiento para robótica manipulativa, presumiblemente un policy o modelo de control entrenado sobre demostraciones de una tarea concreta de reubicación de bloques. El repositorio ocupa 27,6 GB y contiene pesos derivados de un entrenamiento por fases (p1, p2, p3).
+`kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3` es un checkpoint de investigación publicado por el usuario `m1b` en Hugging Face, asociado a la tarea `put-back-block-relocate` del benchmark RMBench++ (RoboDojo v1.0.0). No se trata de un modelo de lenguaje generalista, sino de un artefacto de entrenamiento para robótica manipulativa, presumiblemente un policy o modelo de control entrenado sobre demostraciones de una tarea concreta de reubicación de bloques. El repositorio ocupa 27,6 GB y contiene pesos derivados de un entrenamiento por fases (p1, p2, p3).
 
 La model card indica que el modelo parte de un checkpoint previo (`rmbenchpp_v021_put-back-block-relocate_sgres_1x8_20k_20260923_r3`, paso 20.000) y aplica dos fases adicionales: 2.000 pasos conjuntos en 1x8 A800 con LR 1e-4 (p2) y 1.000 pasos "memory-only" desde `p2/step_002000.pt` (p3). La variante "16v3" hace referencia a 16 memory tokens de tipo adaptativo con prefijo de 128, un mecanismo de memoria que probablemente condiciona la política sobre observaciones pasadas.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3 | no disponible | prefijo 128 + 16 memory tokens | no disponible | no disponible | HuggingFace (`m1b/...`) |
+| kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3 | no disponible | prefijo 128 + 16 memory tokens | no disponible | no disponible | Hugging Face (`m1b/...`) |
 | rmbenchpp_v021_put-back-block-relocate_sgres_1x8_20k_20260923_r3 | no disponible | no disponible | no disponible | no disponible | referenciado como base, no enlazado |
 | Otros checkpoints de RMBench++ | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,6 +78,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_put_back_block_relocate_16v3_p2p3
 - Código referenciado en la model card: `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_relocate_cards` @ `32029919` (sin URL pública disponible)
 - Checkpoint base referenciado: `rmbenchpp_v021_put-back-block-relocate_sgres_1x8_20k_20260923_r3/outputs/checkpoints/weights/step_020000.pt` (sin URL pública disponible)

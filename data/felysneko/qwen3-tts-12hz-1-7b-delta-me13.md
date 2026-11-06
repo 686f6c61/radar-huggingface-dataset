@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13 es un modelo derivado (fine-tune) del modelo base Qwen/Qwen3-TTS-12Hz-1.7B-Base, publicado por el usuario FelysNeko en HuggingFace. Por el identificador y las etiquetas del repositorio, se trata de un modelo de sintesis de voz (text-to-speech, TTS) construido sobre la familia Qwen3-TTS de Alibaba, con aproximadamente 1.916 millones de parametros en pesos safetensors y un tamano de repositorio de 4,5 GB. La licencia declarada es MIT.
+FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13 es un modelo derivado (fine-tune) del modelo base Qwen/Qwen3-TTS-12Hz-1.7B-Base, publicado por el usuario FelysNeko en Hugging Face. Por el identificador y las etiquetas del repositorio, se trata de un modelo de sintesis de voz (text-to-speech, TTS) construido sobre la familia Qwen3-TTS de Alibaba, con aproximadamente 1.916 millones de parametros en pesos safetensors y un tamano de repositorio de 4,5 GB. La licencia declarada es MIT.
 
 El problema que resuelve es el de la generacion de audio hablado a partir de texto, dentro del ecosistema Qwen3-TTS. El sufijo "12Hz" del nombre del modelo base apunta a la cadencia de tokens de audio empleada por el codec subyacente, mientras que "Delta" y "me13" parecen formar parte de la nomenclatura interna del autor para identificar esta variante concreta, sin que se detalle su significado en la informacion disponible.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada en terminos practicos: es un modelo muy 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Biblioteca asociada | qwen3_tts (tag de HuggingFace) |
+| Biblioteca asociada | qwen3_tts (tag de Hugging Face) |
 | Modelo base | Qwen/Qwen3-TTS-12Hz-1.7B-Base |
 | Tamano del repositorio | 4,5 GB |
 | Descargas | 1 |
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13 | 1,92 mil millones | no disponible | MIT | HuggingFace | Fine-tune, 1 descarga |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible (base de 1,7 mil millones segun nomenclatura) | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base directo |
+| FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13 | 1,92 mil millones | no disponible | MIT | Hugging Face | Fine-tune, 1 descarga |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible (base de 1,7 mil millones segun nomenclatura) | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base directo |
 | Otros modelos TTS de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables verificados |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13
+- Modelo en Hugging Face: https://huggingface.co/FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

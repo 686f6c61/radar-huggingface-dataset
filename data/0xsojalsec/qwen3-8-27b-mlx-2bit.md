@@ -97,7 +97,7 @@ Las variantes de 3, 5, 6 bits y MXFP4 existen segun la model card, pero no se ap
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/0xSojalSec/Qwen3.8-27B-MLX-2bit
+- Hugging Face del modelo: https://huggingface.co/0xSojalSec/Qwen3.8-27B-MLX-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante de 3 bits: https://huggingface.co/majentik/Qwen3.8-27B-MLX-3bit
 - Variante de 4 bits: https://huggingface.co/majentik/Qwen3.8-27B-MLX-4bit

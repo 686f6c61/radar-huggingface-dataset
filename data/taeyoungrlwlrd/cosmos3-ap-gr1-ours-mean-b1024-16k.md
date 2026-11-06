@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k` es un repositorio de pesos alojado en HuggingFace que, a fecha de esta ficha, no incluye model card, documentación técnica, ni metadatos declarados más allá de la etiqueta genérica `region:us`. El autor es el usuario `taeyoungrlwlrd` y el repositorio ocupa 182,1 GB, lo que indica un checkpoint de gran tamaño (probablemente un modelo de decenas de miles de millones de parámetros en precisión completa o media, o un conjunto de pesos de difusión/vídeo con varios componentes). No se declara licencia, idiomas soportados, pipeline ni arquitectura.
+`taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k` es un repositorio de pesos alojado en Hugging Face que, a fecha de esta ficha, no incluye model card, documentación técnica, ni metadatos declarados más allá de la etiqueta genérica `region:us`. El autor es el usuario `taeyoungrlwlrd` y el repositorio ocupa 182,1 GB, lo que indica un checkpoint de gran tamaño (probablemente un modelo de decenas de miles de millones de parámetros en precisión completa o media, o un conjunto de pesos de difusión/vídeo con varios componentes). No se declara licencia, idiomas soportados, pipeline ni arquitectura.
 
 El identificador sugiere un artefacto de ejecución de entrenamiento más que un modelo publicado: los sufijos `gr1`, `ours-mean`, `b1024` y `16k` encajan con el patrón habitual de nombres de experimentos internos (variante o grupo, media de pesos de varias semillas, tamaño de batch y longitud de contexto de entrenamiento). Se trata, por tanto, de una lectura del nombre y no de información confirmada por el autor.
 
@@ -93,7 +93,7 @@ No se ha podido identificar ningún modelo comparable. La ausencia de informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k
-- Perfil del autor en HuggingFace: https://huggingface.co/taeyoungrlwlrd
+- Repositorio en Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k
+- Perfil del autor en Hugging Face: https://huggingface.co/taeyoungrlwlrd
 - Paper, blog, repositorio de código o demo: no disponible.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo; los resultados obtenidos correspondían a páginas de inicio de sesión del centro de administración de Microsoft y no guardan relación con este repositorio.

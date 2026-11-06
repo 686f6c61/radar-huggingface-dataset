@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NyckM/Meridian_CameraH3_INT8_build_by_BruxosdoVFX
+- Repositorio en Hugging Face: https://huggingface.co/NyckM/Meridian_CameraH3_INT8_build_by_BruxosdoVFX
 - Modelo base del ajuste: https://huggingface.co/Viggle/Meridian
 - Modelo original MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Nodos companion (ComfyUI-H3-Camera-Editor): https://github.com/bruxosdovfx/ComfyUI-H3-Camera-Editor

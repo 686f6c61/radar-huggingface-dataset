@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber-F1-smoke es un adaptador LoRA publicado por el usuario autumn10 en HuggingFace, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base DuyTa/Cyber-F1. No se trata de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para poder ejecutarse. El repositorio tiene un tamano de 2,8 GB y esta etiquetado con las librerias peft, trl, transformers y unsloth, ademas de la etiqueta safetensors y la marca de pipeline text-generation.
+Cyber-F1-smoke es un adaptador LoRA publicado por el usuario autumn10 en Hugging Face, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base DuyTa/Cyber-F1. No se trata de un modelo completo con pesos independientes, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para poder ejecutarse. El repositorio tiene un tamano de 2,8 GB y esta etiquetado con las librerias peft, trl, transformers y unsloth, ademas de la etiqueta safetensors y la marca de pipeline text-generation.
 
 La informacion publicada es extremadamente escasa: la model card es practicamente la plantilla autogenerada por TRL, no incluye descripcion del dataset de entrenamiento, no declara numero de parametros ni longitud de contexto, y el bloque de licencia contiene un marcador de posicion (licence: license) en lugar de una licencia real. El propio nombre del modelo ("smoke") sugiere que se trata de una ejecucion de prueba o de un checkpoint de validacion de un pipeline de entrenamiento, mas que de un modelo destinado a produccion.
 
@@ -18,7 +18,7 @@ Su relevancia actual es, por tanto, limitada y de caracter principalmente experi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el README incluye el marcador de posicion "licence: license"; en la ficha de HuggingFace la licencia figura como no disponible) |
+| Licencia | no disponible (el README incluye el marcador de posicion "licence: license"; en la ficha de Hugging Face la licencia figura como no disponible) |
 | Formato de pesos | safetensors (etiqueta del repositorio); pesos de adaptador LoRA en formato PEFT |
 | Modelo base | DuyTa/Cyber-F1 |
 | Tipo de modelo | adaptador de fine-tuning (no es un modelo autonomo) |
@@ -81,15 +81,15 @@ No hay datos de benchmarks ni especificaciones del modelo base que permitan una 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|---|
-| autumn10/Cyber-F1-smoke | Adaptador LoRA (SFT) | no disponible | no disponible | no disponible | no publicado | HuggingFace, 0 descargas, 0 me gusta |
-| DuyTa/Cyber-F1 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| autumn10/Cyber-F1-smoke | Adaptador LoRA (SFT) | no disponible | no disponible | no disponible | no publicado | Hugging Face, 0 descargas, 0 me gusta |
+| DuyTa/Cyber-F1 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Alternativas de la misma categoria | adaptadores LoRA sobre modelos abiertos | no disponible | no disponible | variable | no disponible | no disponible |
 
 No se han identificado en los resultados de busqueda modelos comparables con datos verificables.
 
 ## Limitaciones y advertencias
 
-- Licencia sin definir: el README contiene el marcador de posicion "licence: license" y la ficha de HuggingFace indica licencia no disponible. Sin una licencia explicita no hay autorizacion de uso comercial ni garantia alguna sobre el modelo, e incluso la redistribucion puede ser problematica.
+- Licencia sin definir: el README contiene el marcador de posicion "licence: license" y la ficha de Hugging Face indica licencia no disponible. Sin una licencia explicita no hay autorizacion de uso comercial ni garantia alguna sobre el modelo, e incluso la redistribucion puede ser problematica.
 - Modelo no autonomo: es un adaptador que requiere el modelo base DuyTa/Cyber-F1; los terminos de uso de ese base condicionan cualquier uso del adaptador.
 - Ausencia total de evaluacion: no hay benchmarks, metricas ni evaluaciones cualitativas publicadas, por lo que no puede afirmarse su calidad ni su fiabilidad.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de texto y no cuantificado en este caso; al no existir evaluacion, no puede acotarse.
@@ -102,7 +102,7 @@ No se han identificado en los resultados de busqueda modelos comparables con dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autumn10/Cyber-F1-smoke
+- Modelo en Hugging Face: https://huggingface.co/autumn10/Cyber-F1-smoke
 - Modelo base: https://huggingface.co/DuyTa/Cyber-F1
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Documentacion de PEFT: https://huggingface.co/docs/peft

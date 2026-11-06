@@ -1,7 +1,7 @@
 # ethnmcl/activity-articulation-v2
 
 ## Resumen
-`ethnmcl/activity-articulation-v2` es un modelo de clasificación de texto publicado por el usuario ethnmcl en HuggingFace. Se trata de un checkpoint basado en RoBERTa, almacenado en formato `safetensors` y compatible con la librería `transformers`. El modelo tiene 124,6 millones de parámetros, un tamaño típico para la familia RoBERTa-base. A pesar de que el repositorio está disponible para su descarga, no se ha publicado ninguna información detallada: la model card generada automáticamente no incluye datos sobre la tarea específica, el conjunto de datos de entrenamiento, la arquitectura del fine-tuning, la licencia ni los idiomas soportados. La relevancia del modelo es limitada en este momento: no hay evidencia de uso en producción, descargas ni valoraciones, y la falta de documentación impide evaluar su rendimiento o ámbito de aplicación concreto.
+`ethnmcl/activity-articulation-v2` es un modelo de clasificación de texto publicado por el usuario ethnmcl en Hugging Face. Se trata de un checkpoint basado en RoBERTa, almacenado en formato `safetensors` y compatible con la librería `transformers`. El modelo tiene 124,6 millones de parámetros, un tamaño típico para la familia RoBERTa-base. A pesar de que el repositorio está disponible para su descarga, no se ha publicado ninguna información detallada: la model card generada automáticamente no incluye datos sobre la tarea específica, el conjunto de datos de entrenamiento, la arquitectura del fine-tuning, la licencia ni los idiomas soportados. La relevancia del modelo es limitada en este momento: no hay evidencia de uso en producción, descargas ni valoraciones, y la falta de documentación impide evaluar su rendimiento o ámbito de aplicación concreto.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo se basa en RoBERTa (Robustly Optimized BERT Pretraining Approach), una arquitectura transformer encoder que mejora el preentrenamiento de BERT mediante el uso de más datos, lotes más grandes, enmascaramiento dinámico y la eliminación del objetivo de predicción de siguiente oración. El tag `arxiv:1910.09700` presente en la metadata de HuggingFace apunta al paper original de RoBERTa, lo que confirma el origen de la arquitectura. Sin embargo, no se dispone de información sobre los datos de preentrenamiento o de afinado de este checkpoint concreto: no se detalla el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO (aunque dichas técnicas no son habituales en modelos de clasificación de texto como este). Tampoco se documentan innovaciones técnicas adicionales.
+El modelo se basa en RoBERTa (Robustly Optimized BERT Pretraining Approach), una arquitectura transformer encoder que mejora el preentrenamiento de BERT mediante el uso de más datos, lotes más grandes, enmascaramiento dinámico y la eliminación del objetivo de predicción de siguiente oración. El tag `arxiv:1910.09700` presente en la metadata de Hugging Face apunta al paper original de RoBERTa, lo que confirma el origen de la arquitectura. Sin embargo, no se dispone de información sobre los datos de preentrenamiento o de afinado de este checkpoint concreto: no se detalla el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO (aunque dichas técnicas no son habituales en modelos de clasificación de texto como este). Tampoco se documentan innovaciones técnicas adicionales.
 
 ## Capacidades
 - Clasificación de texto: el modelo está configurado con el pipeline `text-classification`, por lo que su función principal es asignar una o varias etiquetas a secuencias de texto.
@@ -62,6 +62,6 @@ Al no conocerse la tarea de afinado, se compara con modelos base de referencia d
 - Riesgo de alucinación bajo en tareas de clasificación, pero la ausencia de benchmarks impide garantizar la fiabilidad de las predicciones.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/ethnmcl/activity-articulation-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/ethnmcl
+- Página del modelo en Hugging Face: https://huggingface.co/ethnmcl/activity-articulation-v2
+- Perfil del autor en Hugging Face: https://huggingface.co/ethnmcl
 - Paper de RoBERTa: https://arxiv.org/abs/1910.09700

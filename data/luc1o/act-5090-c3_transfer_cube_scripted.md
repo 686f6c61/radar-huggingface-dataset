@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados de benchmarks de le
 
 | Modelo | Arquitectura | Parámetros | Tarea | Tasa de éxito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LUC1O/act-5090-C3_transfer_cube_scripted | ACT | 51,7 M | AlohaTransferCube-v0 | 93,0 % (200 eps) | no disponible | HuggingFace |
+| LUC1O/act-5090-C3_transfer_cube_scripted | ACT | 51,7 M | AlohaTransferCube-v0 | 93,0 % (200 eps) | no disponible | Hugging Face |
 | ACT original (paper Zhao et al.) | ACT | ~80 M (según configuración) | Tareas ALOHA | no disponible en esta ficha | MIT (código) | GitHub |
 | Diffusion Policy (Chi et al.) | Diffusion | no disponible | Manipulación | no disponible en esta ficha | MIT (código) | GitHub |
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de comparativas cuantitativas con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUC1O/act-5090-C3_transfer_cube_scripted
+- Hugging Face: https://huggingface.co/LUC1O/act-5090-C3_transfer_cube_scripted
 - Repositorio de benchmark y reproducción: https://github.com/Jerryisqx/ACT-5090-benchmark
 - Dataset: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_scripted
 - LeRobot (librería): https://github.com/huggingface/lerobot

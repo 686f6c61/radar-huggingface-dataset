@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint derivado de Mistral 7B, publicado por el usuario PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e15`. El nombre sugiere que se parte de un modelo ya ajustado con supervisión (la referencia más habitual con ese nombre es `mistral-7b-sft-beta`) y que sobre él se aplica algún tipo de optimización posterior, probablemente una variante de DPO (el propio nombre de la organización, PessimisticDPO, apunta en esa dirección). El sufijo del identificador codifica hiperparámetros de experimento (a0.1, b0.1, L4, overlap_subsample, l0, e15), lo que indica que se trata de un artefacto de investigación y no de un modelo orientado a producto.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no declara licencia, idiomas, datos de entrenamiento, procedimiento, resultados de evaluación ni uso previsto. El repositorio ocupa 0,2 GB, un tamaño muy inferior al de unos pesos completos de 7B en fp16 (unos 14-15 GB), lo que sugiere que podría contener únicamente un adaptador (LoRA u otro) o un subconjunto de pesos; este extremo no está confirmado por el autor.
+La model card es la plantilla automática de Hugging Face sin rellenar: no declara licencia, idiomas, datos de entrenamiento, procedimiento, resultados de evaluación ni uso previsto. El repositorio ocupa 0,2 GB, un tamaño muy inferior al de unos pesos completos de 7B en fp16 (unos 14-15 GB), lo que sugiere que podría contener únicamente un adaptador (LoRA u otro) o un subconjunto de pesos; este extremo no está confirmado por el autor.
 
 Por tanto, la ficha que sigue distingue de forma explícita entre los datos verificados en el repositorio, los datos heredados del modelo base Mistral 7B (ampliamente documentados pero no confirmados para este derivado) y la información no disponible. La relevancia de este checkpoint es exclusivamente como material de investigación reproducible; no hay evidencia publicada de su calidad.
 
@@ -43,7 +43,7 @@ Tampoco se especifican los datos de entrenamiento, el número de tokens, la comp
 - Soporte de agentes: no documentado.
 - Capacidades multilingües: no documentadas; el base está entrenado predominantemente en inglés.
 - Capacidades especiales (modo thinking, visión, audio): no documentadas; no hay indicios de multimodalidad.
-- Compatibilidad con endpoints: sí, el repositorio declara la etiqueta `endpoints_compatible`, lo que permite desplegarlo mediante la infraestructura de inferencia de HuggingFace si los pesos están completos.
+- Compatibilidad con endpoints: sí, el repositorio declara la etiqueta `endpoints_compatible`, lo que permite desplegarlo mediante la infraestructura de inferencia de Hugging Face si los pesos están completos.
 
 ## Casos de uso
 
@@ -94,7 +94,7 @@ Los datos de la columna propia son los verificados en el repositorio o los hered
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e15
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e15
 - Tag arXiv presente en los metadatos (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla): https://arxiv.org/abs/1910.09700
 - Modelo base implícito en el identificador, no citado en la model card: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Resultados de la búsqueda web: no se ha localizado ningún enlace relevante al modelo. Las búsquedas devolvieron exclusivamente foros de automoción (motor-talk.de, forum.quattroruote.it) sin relación alguna con el checkpoint.

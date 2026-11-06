@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23` es un checkpoint publicado en HuggingFace cuyo identificador sugiere un ajuste fino derivado de la familia Llama 3.1 de 8B parámetros, construido sobre un modelo entrenado con el pipeline SFT de Tulu 3 y posteriormente optimizado con una variante de DPO que el autor denomina "PessimisticDPO". El sufijo del nombre (`a0.1-b0.1-L3-l0-e23`) apunta a una configuración de hiperparámetros concreta (posiblemente coeficientes alpha/beta, número de capas afectadas y época 23), pero el autor no documenta su significado en la model card.
+El repositorio `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23` es un checkpoint publicado en Hugging Face cuyo identificador sugiere un ajuste fino derivado de la familia Llama 3.1 de 8B parámetros, construido sobre un modelo entrenado con el pipeline SFT de Tulu 3 y posteriormente optimizado con una variante de DPO que el autor denomina "PessimisticDPO". El sufijo del nombre (`a0.1-b0.1-L3-l0-e23`) apunta a una configuración de hiperparámetros concreta (posiblemente coeficientes alpha/beta, número de capas afectadas y época 23), pero el autor no documenta su significado en la model card.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación, hardware) figuran como `[More Information Needed]`. No hay paper, blog, demo ni repositorio asociado, y el modelo no registra descargas ni interacciones en el momento de la consulta. El tamaño del repositorio, 0,2 GB, es sustancialmente inferior a los aproximadamente 16 GB que ocuparían los pesos completos de un transformer de 8B en bfloat16, lo que sugiere que podría tratarse de adaptadores LoRA, de un checkpoint parcial o de pesos en un formato comprimido; esta observación no está confirmada por el autor.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación, hardware) figuran como `[More Information Needed]`. No hay paper, blog, demo ni repositorio asociado, y el modelo no registra descargas ni interacciones en el momento de la consulta. El tamaño del repositorio, 0,2 GB, es sustancialmente inferior a los aproximadamente 16 GB que ocuparían los pesos completos de un transformer de 8B en bfloat16, lo que sugiere que podría tratarse de adaptadores LoRA, de un checkpoint parcial o de pesos en un formato comprimido; esta observación no está confirmada por el autor.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que se puede verificar y de lo que falta. Cualquier evaluación de idoneidad para producción requiere contactar con el autor o inspeccionar directamente los archivos del repositorio antes de tomar decisiones.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que se puede veri
 
 Datos adicionales verificables del repositorio: tamaño del repo 0,2 GB; librería declarada `transformers`; tags `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us`; pipeline no disponible; 0 descargas y 0 likes; creado el 21 de septiembre de 2026.
 
-Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", la referencia que la plantilla de model card de HuggingFace incluye por defecto en la sección de impacto ambiental. No es una referencia al artículo técnico del modelo.
+Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", la referencia que la plantilla de model card de Hugging Face incluye por defecto en la sección de impacto ambiental. No es una referencia al artículo técnico del modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ Lo único inferible, y siempre con carácter hipotético, procede del propio ide
 No se han publicado capacidades verificadas para este checkpoint. No hay model card descriptiva, ejemplos de uso, evaluaciones ni demostraciones.
 
 - Generación de texto, razonamiento, código o matemáticas: no disponible.
-- Soporte de tool calling o function calling: no disponible (existe el tag `endpoints_compatible`, que indica compatibilidad con la infraestructura de inferencia de HuggingFace, no una capacidad funcional del modelo).
+- Soporte de tool calling o function calling: no disponible (existe el tag `endpoints_compatible`, que indica compatibilidad con la infraestructura de inferencia de Hugging Face, no una capacidad funcional del modelo).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
@@ -78,16 +78,16 @@ La comparativa se establece con los modelos de referencia de la misma categoría
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23 | no disponible (sugerido 8B) | no disponible | no disponible | Repositorio HuggingFace sin documentación |
+| PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23 | no disponible (sugerido 8B) | no disponible | no disponible | Repositorio Hugging Face sin documentación |
 | Meta Llama 3.1 8B Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible |
-| AllenAI Tulu 3 8B | 8B (base Llama 3.1) | 128.000 tokens (según base) | no verificada en esta ficha | Disponible en HuggingFace |
+| AllenAI Tulu 3 8B | 8B (base Llama 3.1) | 128.000 tokens (según base) | no verificada en esta ficha | Disponible en Hugging Face |
 | Qwen2.5 7B Instruct | 7.610 millones | 131.072 tokens | Qwen License | Ampliamente disponible |
 
 El modelo analizado no aporta ninguna ventaja verificable frente a estas alternativas: carece de licencia declarada, de idiomas declarados, de benchmarks y de documentación de entrenamiento, lo que lo sitúa por debajo de cualquiera de las opciones anteriores en términos de evaluabilidad.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado.
 - Licencia no declarada: no se puede determinar si el uso comercial está permitido. Al derivar presumiblemente de Llama 3.1, podrían aplicar las restricciones de la Llama 3.1 Community License, pero esto no está confirmado.
 - Riesgo de alucinación: no evaluado; no hay métricas de fidelidad ni de tasas de error.
 - Sesgos: no evaluados. No hay análisis de sesgo demográfico, de género ni cultural.
@@ -101,7 +101,7 @@ El modelo analizado no aporta ninguna ventaja verificable frente a estas alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23
 - Referencia citada en el tag del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de machine learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

@@ -77,10 +77,10 @@ En el conjunto completo de 320 comportamientos (incluye 80 de copyright), el cum
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8 | 753.329.940.480 | 131K verificado en TP8 H200 | Ciberseguridad ofensiva, rechazos reducidos | MIT | HuggingFace, 34 descargas |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753.329.940.480 (base GLM-5.3) | no disponible | Uncensor generalista | no disponible en la información | HuggingFace |
-| zai-org/GLM-5.3 | 753.329.940.480 | no disponible | Modelo base generalista | no disponible en la información | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | 753.329.940.480 | no disponible | Cuantizado FP8 del base | no disponible en la información | HuggingFace |
+| GLM-5.3-CYBERSECURITY-FP8 | 753.329.940.480 | 131K verificado en TP8 H200 | Ciberseguridad ofensiva, rechazos reducidos | MIT | Hugging Face, 34 descargas |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753.329.940.480 (base GLM-5.3) | no disponible | Uncensor generalista | no disponible en la información | Hugging Face |
+| zai-org/GLM-5.3 | 753.329.940.480 | no disponible | Modelo base generalista | no disponible en la información | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | 753.329.940.480 | no disponible | Cuantizado FP8 del base | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ En el conjunto completo de 320 comportamientos (incluye 80 de copyright), el cum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seikixtc/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face: https://huggingface.co/seikixtc/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantizado FP8 de referencia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano uncensor generalista: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

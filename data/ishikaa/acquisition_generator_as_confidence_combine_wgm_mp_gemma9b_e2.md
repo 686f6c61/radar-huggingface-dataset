@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2` es un checkpoint de tipo text-generation publicado en HuggingFace por el usuario ishikaa. A pesar de que el nombre hace referencia a "gemma9b", los pesos reales del repositorio declaran una arquitectura `qwen2` con 14.770.033.664 parametros totales, es decir, aproximadamente 14,8 mil millones. Se trata, por tanto, de un modelo derivado o fusionado (fine-tuning, merge o experimento de investigacion) construido sobre una base Qwen2, no sobre Gemma, y el nombre del repositorio parece reflejar el pipeline experimental que lo genero mas que su arquitectura final.
+El modelo `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2` es un checkpoint de tipo text-generation publicado en Hugging Face por el usuario ishikaa. A pesar de que el nombre hace referencia a "gemma9b", los pesos reales del repositorio declaran una arquitectura `qwen2` con 14.770.033.664 parametros totales, es decir, aproximadamente 14,8 mil millones. Se trata, por tanto, de un modelo derivado o fusionado (fine-tuning, merge o experimento de investigacion) construido sobre una base Qwen2, no sobre Gemma, y el nombre del repositorio parece reflejar el pipeline experimental que lo genero mas que su arquitectura final.
 
 La model card es la plantilla automatica de transformers y no aporta informacion sobre datos de entrenamiento, licencia, idiomas ni procedencia del fine-tuning. El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026, lo que sugiere un artefacto de investigacion privada o un experimento interno subido al Hub sin documentacion. El nombre del repositorio incluye terminos como "acquisition_generator", "confidence_combine", "WGM" y "MP", que apuntan a un contexto de generacion de adquisiciones (posiblemente en el ambito de compras, seleccion de candidatos o generacion de consultas) combinando senales de confianza de multiples modulos.
 
@@ -36,7 +36,7 @@ No se dispone de datos sobre el corpus de entrenamiento, numero de tokens, compo
 
 - Generacion de texto conversacional en formato chat, segun el tag `conversational`.
 - Generacion de texto libre y continuacion condicionada.
-- Compatibilidad con `text-generation-inference` y endpoints compatibles con la API de HuggingFace, lo que permite desplegarlo como servicio HTTP.
+- Compatibilidad con `text-generation-inference` y endpoints compatibles con la API de Hugging Face, lo que permite desplegarlo como servicio HTTP.
 - Capacidades multilingues: no confirmadas; el tokenizer Qwen2 suele cubrir varios idiomas, pero no hay documentacion que lo garantice en este checkpoint.
 - Tool calling / function calling: no documentado; no se puede asumir.
 - Razonamiento multi-paso y agentes: no documentado.
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2` | ~14,8B | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint experimental sin documentacion |
-| Qwen2-7B | 7,6B | 32.768 tokens (base) | Apache 2.0 (mayoria de variantes) | HuggingFace, ampliamente usado | Base canonica de la familia; menor tamano |
-| Qwen2.5-14B | 14,7B | 32.768 tokens (128K en variantes) | Apache 2.0 (segun variante) | HuggingFace | Tamano comparable; documentacion completa |
-| Gemma 2 9B | 9,2B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Referencia del nombre del repo; menor tamano |
+| `ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2` | ~14,8B | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint experimental sin documentacion |
+| Qwen2-7B | 7,6B | 32.768 tokens (base) | Apache 2.0 (mayoria de variantes) | Hugging Face, ampliamente usado | Base canonica de la familia; menor tamano |
+| Qwen2.5-14B | 14,7B | 32.768 tokens (128K en variantes) | Apache 2.0 (segun variante) | Hugging Face | Tamano comparable; documentacion completa |
+| Gemma 2 9B | 9,2B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Referencia del nombre del repo; menor tamano |
 
 La comparacion con Qwen2.5-14B es la mas directa por numero de parametros, pero este checkpoint no ofrece garantias de calidad ni licencia clara frente a la version oficial.
 
@@ -90,7 +90,7 @@ La comparacion con Qwen2.5-14B es la mas directa por numero de parametros, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combine_WGM_MP_gemma9b_e2
 - Referencia de la plantilla (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Repositorio de Qwen2 (referencia de arquitectura): https://github.com/QwenLM/Qwen2

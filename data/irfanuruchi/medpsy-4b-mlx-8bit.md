@@ -74,7 +74,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Irfanuruchi/MedPsy-4B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/Irfanuruchi/MedPsy-4B-MLX-8bit
 - Modelo fuente: https://huggingface.co/qvac/MedPsy-4B
 - Blog de investigación de QVAC: https://huggingface.co/blog/qvac/medpsy
 - Página de hardware y compatibilidad (llmrun): https://llmrun.dev/model/qvac-medpsy-4b

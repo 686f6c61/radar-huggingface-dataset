@@ -6,7 +6,7 @@ Luminas Astra 7B es un modelo de lenguaje de 7 000 millones de parametros desarr
 
 La propuesta de valor es la de un asistente de codigo y razonamiento tecnico que pueda ejecutarse en hardware de consumo, con integracion prevista en llama.cpp y flujos de trabajo agenticos segun las etiquetas del repositorio. La model card describe capacidades de generacion de codigo, depuracion, analisis de codigo y guia de arquitectura e implementacion, orientadas a desarrolladores, investigadores y sistemas de IA que necesiten un modelo pequeno y especializado.
 
-La relevancia actual del modelo es limitada por su estado de publicacion: el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes en el momento de la consulta, y la model card no incluye resultados de benchmarks, detalles de entrenamiento ni la longitud de contexto. La busqueda web realizada no ha devuelto informacion relevante sobre el modelo (los resultados obtenidos corresponden a contenidos no relacionados), por lo que la ficha se basa exclusivamente en la informacion del repositorio de HuggingFace y en la model card del autor.
+La relevancia actual del modelo es limitada por su estado de publicacion: el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes en el momento de la consulta, y la model card no incluye resultados de benchmarks, detalles de entrenamiento ni la longitud de contexto. La busqueda web realizada no ha devuelto informacion relevante sobre el modelo (los resultados obtenidos corresponden a contenidos no relacionados), por lo que la ficha se basa exclusivamente en la informacion del repositorio de Hugging Face y en la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ La model card de Luminas Astra 7B no incluye metricas de evaluacion (MMLU, Human
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Luminas Astra 7B | 7B | No disponible | Astra License (other) | Repositorio HuggingFace, 0 descargas | Fine-tune de Qwen2.5-Coder-7B-Instruct; sin benchmarks publicados |
+| Luminas Astra 7B | 7B | No disponible | Astra License (other) | Repositorio Hugging Face, 0 descargas | Fine-tune de Qwen2.5-Coder-7B-Instruct; sin benchmarks publicados |
 | Qwen2.5-Coder-7B-Instruct | 7,6B aprox. | 32 768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Amplia, muy descargado | Modelo base de Astra 7; benchmarks publicos por el autor original |
 | DeepSeek-Coder-6.7B-Instruct | 6,7B | 16 384 tokens | Licencia propia de DeepSeek (uso comercial con condiciones) | Amplia | Especializado en codigo; sin capacidades multilingues tan amplias en lenguaje natural |
 | CodeLlama-7B-Instruct | 6,7B aprox. | 16 384 tokens (variantes de hasta 100 000) | Llama 2 Community License | Amplia | Enfocado a codigo; menos actual que Qwen2.5-Coder |
@@ -113,7 +113,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luminas-ai/Luminas-Astra-7
+- Modelo en Hugging Face: https://huggingface.co/luminas-ai/Luminas-Astra-7
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Licencia del modelo (referenciada en la model card): https://huggingface.co/luminas-ai/Luminas-Astra-7/blob/main/LICENSE.txt

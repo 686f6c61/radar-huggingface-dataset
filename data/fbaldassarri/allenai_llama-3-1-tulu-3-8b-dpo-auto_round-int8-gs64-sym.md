@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una versión cuantizada a INT8 del modelo allenai/Llama-3.1-Tulu-3-8B-DPO, publicada por el usuario fbaldassarri en HuggingFace. Se trata de un artefacto de cuantización de solo pesos (weights-only quantization, WoQ) generado con Intel AutoRound v0.16.0, pensado para inferencia eficiente en hardware Intel: CPU, iGPU Arc mediante intel-extension-for-pytorch y NPU (AI Boost de la serie Core Ultra) a través de OpenVINO. El modelo base es un ajuste fino de Llama 3.1 8B realizado por AI2 (Allen Institute for AI) dentro de la familia Tulu 3, con una etapa adicional de DPO (Direct Preference Optimization) para alineamiento conversacional.
+Esta ficha describe una versión cuantizada a INT8 del modelo allenai/Llama-3.1-Tulu-3-8B-DPO, publicada por el usuario fbaldassarri en Hugging Face. Se trata de un artefacto de cuantización de solo pesos (weights-only quantization, WoQ) generado con Intel AutoRound v0.16.0, pensado para inferencia eficiente en hardware Intel: CPU, iGPU Arc mediante intel-extension-for-pytorch y NPU (AI Boost de la serie Core Ultra) a través de OpenVINO. El modelo base es un ajuste fino de Llama 3.1 8B realizado por AI2 (Allen Institute for AI) dentro de la familia Tulu 3, con una etapa adicional de DPO (Direct Preference Optimization) para alineamiento conversacional.
 
 El artefacto no introduce arquitectura nueva: hereda la del transformer decoder-only de Llama 3.1 con GQA, y su interés práctico reside en la reducción de huella de memoria (8 bits por peso, grupo de 64, simétrico) manteniendo una calidad cercana al original en bfloat16. El repositorio ocupa 11,5 GB, aunque el recuento real de parámetros reportado en safetensors es de 2.932.150.272, un dato que no coincide con los aproximadamente 8 mil millones esperables en un Llama 3.1 8B y que conviene verificar antes de desplegarlo.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs64-sym | 2.932.150.272 según safetensors (base 8B) | No disponible | INT8 gs64 simétrica (AutoRound) | Apache 2.0 | HuggingFace, 17 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-DPO (modelo base) | ~8B | 128K (Llama 3.1) | bfloat16 | Apache 2.0 | HuggingFace (AI2) |
-| Otras cuantizaciones del mismo base (GPTQ/AWQ/INT4) | ~8B | 128K | Variable | Apache 2.0 | HuggingFace, según autor |
+| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs64-sym | 2.932.150.272 según safetensors (base 8B) | No disponible | INT8 gs64 simétrica (AutoRound) | Apache 2.0 | Hugging Face, 17 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-DPO (modelo base) | ~8B | 128K (Llama 3.1) | bfloat16 | Apache 2.0 | Hugging Face (AI2) |
+| Otras cuantizaciones del mismo base (GPTQ/AWQ/INT4) | ~8B | 128K | Variable | Apache 2.0 | Hugging Face, según autor |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Recetario de replicación citado en la model card: https://git.epicdynamic.com/auto-round-pipeline

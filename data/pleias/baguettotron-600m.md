@@ -121,12 +121,12 @@ Frente a Qwen3-0.6B, el competidor directo por tamaño, Baguettotron-600M pierde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PleIAs/baguettotron-600m
+- Modelo en Hugging Face: https://huggingface.co/PleIAs/baguettotron-600m
 - Paper (NeurIPS 2026), *It's All Training: A Fully Synthetic Single-Stage Recipe for LLMs*: https://arxiv.org/abs/2609.37891
 - Dataset SYNTH: https://huggingface.co/datasets/PleIAs/SYNTH
 - Modelo Baguettotron-350M: https://huggingface.co/PleIAs/Baguettotron
 - Modelo Baguettotron-MoE: https://huggingface.co/PleIAs/baguettotron-moe
-- Organización PleIAs en HuggingFace: https://huggingface.co/PleIAs
+- Organización PleIAs en Hugging Face: https://huggingface.co/PleIAs
 - Sitio web de PleIAs: https://pleias.ai/
 - Página sobre PleIAs: https://pleias.ai/about
 - Modelo Pleias-RAG-1B: https://huggingface.co/PleIAs/Pleias-RAG-1B

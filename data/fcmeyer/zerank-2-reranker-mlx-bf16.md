@@ -84,7 +84,7 @@ No se dispone de comparativas cuantitativas con otros rerankers (como BGE-rerank
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-bf16
 - Modelo original: https://huggingface.co/zeroentropy/zerank-2-reranker
 - Artículo de ZeroEntropy: https://www.zeroentropy.dev/articles/zerank-2-advanced-instruction-following-multilingual-reranker
 - Repositorio GitHub de 199-biotechnologies (port MLX optimizado): https://github.com/199-biotechnologies/zerank-2-mlx

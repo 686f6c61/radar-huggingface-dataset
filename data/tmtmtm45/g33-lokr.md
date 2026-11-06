@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores LoKR comparables para Krea 2 en 
 
 ## Enlaces
 
-- [HuggingFace - tmtmtm45/g33-lokr](https://huggingface.co/tmtmtm45/g33-lokr)
+- [Hugging Face - tmtmtm45/g33-lokr](https://huggingface.co/tmtmtm45/g33-lokr)
 - [Documentación de LoKr en PEFT](https://huggingface.co/docs/peft/package_reference/lokr)
 - [Modelo base Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (referenciado en la model card)
 - [Modelo Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo) (referenciado en la model card)

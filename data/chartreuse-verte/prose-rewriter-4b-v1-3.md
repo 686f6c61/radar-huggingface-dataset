@@ -103,7 +103,7 @@ La comparación con el modelo base no es significativa porque el reescritor est�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.3
+- Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.3
 - Versión anterior (v1.2): https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.2
 - Despliegue en FriendliAI: https://friendli.ai/models/chartreuse-verte/prose-rewriter-4b-v1.3
 - Dataset de entrenamiento (r/WritingPrompts): https://huggingface.co/datasets/Mollymo/Human-to-AI-writing

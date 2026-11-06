@@ -97,7 +97,7 @@ No se dispone de datos de benchmark comparativos entre estos modelos para la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TiagoRodrigues11/patentes-inpi-qwen2.5-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/TiagoRodrigues11/patentes-inpi-qwen2.5-1.5b-gguf
 - Pagina de portafolio con resultados y respuestas registradas: https://tiagorodrigues-gith.github.io/tiago-rodrigues-portfolio/projects/compact-llm/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han encontrado enlaces adicionales relevantes (paper, repositorio de codigo o demo) en la busqueda web realizada.

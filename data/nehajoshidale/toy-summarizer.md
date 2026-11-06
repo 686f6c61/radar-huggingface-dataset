@@ -76,9 +76,9 @@ No hay información suficiente para una comparativa directa. Los modelos de la f
 
 ## Enlaces
 
-- [HuggingFace - nehajoshidale/toy-summarizer](https://huggingface.co/nehajoshidale/toy-summarizer)
+- [Hugging Face - nehajoshidale/toy-summarizer](https://huggingface.co/nehajoshidale/toy-summarizer)
 - [Hugging Face - Modelos de summarization](https://huggingface.co/models?pipeline_tag=summarization)
 - [AssemblyAI - Text Summarization for NLP](https://www.assemblyai.com/blog/text-summarization-nlp-5-best-apis)
-- [GeeksforGeeks - Text Summarization using HuggingFace Model](https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/)
+- [GeeksforGeeks - Text Summarization using Hugging Face Model](https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/)
 - [Falconsai/text_summarization - Hugging Face](https://huggingface.co/Falconsai/text_summarization)
 - [HumanizeAI - AI Summarizer](https://www.humanizeai.io/tool/summarizer)

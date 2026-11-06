@@ -2,7 +2,7 @@
 
 ## Resumen
 
-salisai/slm-mini es un modelo publicado en HuggingFace por el usuario salisai bajo licencia MIT. En el momento de redactar esta ficha, la informacion disponible es minima: no hay pipeline declarado, no se especifican idiomas soportados, no se documentan parametros, arquitectura ni contexto, y el repositorio registra 0 descargas y 0 likes. La model card del autor se limita a una unica linea con la declaracion de licencia, sin descripcion tecnica, sin detalles de entrenamiento y sin resultados de evaluacion.
+salisai/slm-mini es un modelo publicado en Hugging Face por el usuario salisai bajo licencia MIT. En el momento de redactar esta ficha, la informacion disponible es minima: no hay pipeline declarado, no se especifican idiomas soportados, no se documentan parametros, arquitectura ni contexto, y el repositorio registra 0 descargas y 0 likes. La model card del autor se limita a una unica linea con la declaracion de licencia, sin descripcion tecnica, sin detalles de entrenamiento y sin resultados de evaluacion.
 
 El propio identificador del modelo ("slm-mini") sugiere la categoria de small language model, es decir, un modelo de lenguaje de parametros reducidos orientado a inferencia en hardware limitado, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. No se ha podido verificar arquitectura, tamano, ventana de contexto ni composicion del dataset de entrenamiento en ninguna fuente.
 
@@ -21,7 +21,7 @@ La relevancia actual del modelo es, por tanto, indeterminable con la informacion
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -76,10 +76,10 @@ No se puede completar una comparativa cuantitativa porque no existe ningun dato 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| salisai/slm-mini | no disponible | no disponible | MIT | HuggingFace |
-| Familia SmolLM2 (HuggingFace) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 (segun version) | HuggingFace |
-| Familia Qwen2.5 en variantes pequenas (Alibaba) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 (segun version) | HuggingFace |
-| Familia TinyLlama (proyecto comunitario) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 | HuggingFace |
+| salisai/slm-mini | no disponible | no disponible | MIT | Hugging Face |
+| Familia SmolLM2 (Hugging Face) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 (segun version) | Hugging Face |
+| Familia Qwen2.5 en variantes pequenas (Alibaba) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 (segun version) | Hugging Face |
+| Familia TinyLlama (proyecto comunitario) | consultar ficha oficial | consultar ficha oficial | Apache 2.0 | Hugging Face |
 
 La unica dimension comparable con certeza es la licencia: MIT es permisiva y compatible con uso comercial, en linea con las alternativas citadas. El resto de dimensiones (parametros, contexto, rendimiento) queda como no disponible para el modelo evaluado.
 
@@ -96,7 +96,7 @@ La unica dimension comparable con certeza es la licencia: MIT es permisiva y com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salisai/slm-mini
+- Hugging Face: https://huggingface.co/salisai/slm-mini
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

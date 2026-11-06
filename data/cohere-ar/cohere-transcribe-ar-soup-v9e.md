@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-soup-v9e es un modelo de reconocimiento automatico del habla (ASR) publicado por la organizacion Cohere-AR en HuggingFace. Se trata de un fine-tuning del modelo base Cohere-AR/cohere-transcribe-ar-rl-v9enc, orientado especificamente a la transcripcion de audio en arabe e ingles, con enfasis declarado en escenarios de code-switching (alternancia de idiomas dentro de una misma conversacion) y telefonia. El sufijo "soup" y "v9e" sugiere una variante de mezcla o ensemble de datos de entrenamiento sobre una version anterior del linaje "v9".
+Cohere-AR/cohere-transcribe-ar-soup-v9e es un modelo de reconocimiento automatico del habla (ASR) publicado por la organizacion Cohere-AR en Hugging Face. Se trata de un fine-tuning del modelo base Cohere-AR/cohere-transcribe-ar-rl-v9enc, orientado especificamente a la transcripcion de audio en arabe e ingles, con enfasis declarado en escenarios de code-switching (alternancia de idiomas dentro de una misma conversacion) y telefonia. El sufijo "soup" y "v9e" sugiere una variante de mezcla o ensemble de datos de entrenamiento sobre una version anterior del linaje "v9".
 
-El modelo cuenta con aproximadamente 2.066 millones de parametros (2,065.770.752 segun los pesos en safetensors) y un repositorio de 4,1 GB, lo que lo situa en la gama de modelos ASR de tamano medio, adecuado para despliegue en infraestructura con GPU unica. La libreria declarada es transformers y el pipeline es automatic-speech-recognition, con pesos en formato safetensors. El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+El modelo cuenta con aproximadamente 2.066 millones de parametros (2,065.770.752 segun los pesos en safetensors) y un repositorio de 4,1 GB, lo que lo situa en la gama de modelos ASR de tamano medio, adecuado para despliegue en infraestructura con GPU unica. La libreria declarada es transformers y el pipeline es automatic-speech-recognition, con pesos en formato safetensors. El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia radica en la combinacion de dos idiomas con alta demanda en entornos empresariales (arabe e ingles) y en el tratamiento explicito del code-switching y del audio telefonico, escenarios que los modelos ASR genericos multilingues suelen cubrir con menor precision. No se dispone de informacion publica sobre licencia, datos de entrenamiento ni benchmarks en la documentacion proporcionada.
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso automatizado o en entornos corporativos con politicas estrictas.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso automatizado o en entornos corporativos con politicas estrictas.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; debe verificarse antes de cualquier despliegue en produccion.
 - Idiomas limitados: solo se declaran arabe e ingles; no hay garantia de rendimiento en otros idiomas ni en variedades dialectales del arabe no representadas en el entrenamiento.
 - Riesgo de alucinacion y errores de transcripcion: como todo modelo ASR, puede generar texto plausible pero incorrecto, especialmente en audio con ruido, acentos marcados o terminologia tecnica.
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v9e
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9enc
 - Cohere (sitio oficial): https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

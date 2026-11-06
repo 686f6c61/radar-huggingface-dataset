@@ -77,7 +77,7 @@ No se dispone de comparativas publicadas con modelos alternativos en la informac
 
 | Modelo | Parametros | Contexto | JevBench-231 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenCodifier E1-E (este) | 2B base + LoRA | no disponible | 0.6840 | Apache-2.0 | HuggingFace (adaptador) |
+| OpenCodifier E1-E (este) | 2B base + LoRA | no disponible | 0.6840 | Apache-2.0 | Hugging Face (adaptador) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de comparativas publicadas con modelos alternativos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TaskWizerAI/opencodifier-e1e-2b
+- Hugging Face: https://huggingface.co/TaskWizerAI/opencodifier-e1e-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio OpenCodifier: https://github.com/aliasfoxkde/OpenCodifier
 - Benchmarks: https://github.com/aliasfoxkde/OpenCodifier/blob/main/docs/BENCHMARKS.md

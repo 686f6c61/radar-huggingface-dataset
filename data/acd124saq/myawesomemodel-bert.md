@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`acD124SAQ/myawesomemodel-bert` es un checkpoint de tipo encoder BERT publicado en HuggingFace por el usuario acD124SAQ. No se trata de un modelo entrenado desde cero ni afinado: la propia model card indica que es una reproducción genuina del checkpoint preentrenado `google/bert_uncased_L-2_H-128_A-2` (revisión `30b0a37ccaaa32f332884b96992754e246e48c5f`), con todos los pesos del encoder y del pooler preservados y las cabezas de preentrenamiento excluidas. Es, por tanto, un modelo extremadamente pequeno: 2 capas, tamano oculto 128, 2 cabezas de atención y 4.385.920 parámetros totales.
+`acD124SAQ/myawesomemodel-bert` es un checkpoint de tipo encoder BERT publicado en Hugging Face por el usuario acD124SAQ. No se trata de un modelo entrenado desde cero ni afinado: la propia model card indica que es una reproducción genuina del checkpoint preentrenado `google/bert_uncased_L-2_H-128_A-2` (revisión `30b0a37ccaaa32f332884b96992754e246e48c5f`), con todos los pesos del encoder y del pooler preservados y las cabezas de preentrenamiento excluidas. Es, por tanto, un modelo extremadamente pequeno: 2 capas, tamano oculto 128, 2 cabezas de atención y 4.385.920 parámetros totales.
 
 Su relevancia es limitada y de carácter practico: sirve como pieza minima para probar pipelines de `transformers`, como ejemplo docente de arquitectura transformer y como extractor de embeddings de muy bajo coste. La model card advierte explicitamente de que el README original del espacio de trabajo (que incluia afirmaciones de benchmarks, capacidades de chat, function calling y licencia MIT) era contenido de plantilla no verificado y **no aplica** a estos pesos BERT.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks verificados en la informacion dispo
 
 | Modelo | Parametros | Capas / hidden | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `acD124SAQ/myawesomemodel-bert` | 4.385.920 | 2 / 128 | No disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| `google/bert_uncased_L-2_H-128_A-2` | 4.385.920 | 2 / 128 | No disponible | Apache-2.0 | HuggingFace (upstream) |
-| `distilbert-base-uncased` | ~66 M | 6 / 768 | 512 | Apache-2.0 | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 6 / 384 | 256 | Apache-2.0 | HuggingFace |
+| `acD124SAQ/myawesomemodel-bert` | 4.385.920 | 2 / 128 | No disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| `google/bert_uncased_L-2_H-128_A-2` | 4.385.920 | 2 / 128 | No disponible | Apache-2.0 | Hugging Face (upstream) |
+| `distilbert-base-uncased` | ~66 M | 6 / 768 | 512 | Apache-2.0 | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 6 / 384 | 256 | Apache-2.0 | Hugging Face |
 
 Nota: las cifras de los modelos alternativos son datos publicos ampliamente conocidos y no provienen de la informacion proporcionada en esta busqueda; se incluyen unicamente como referencia de categoria. El modelo de este repositorio es funcionalmente equivalente a su base de Google, salvo por la seleccion de checkpoint y la eliminacion de las cabezas de preentrenamiento.
 
@@ -99,7 +99,7 @@ Nota: las cifras de los modelos alternativos son datos publicos ampliamente cono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/acD124SAQ/myawesomemodel-bert
+- Modelo en Hugging Face: https://huggingface.co/acD124SAQ/myawesomemodel-bert
 - Modelo base upstream: https://huggingface.co/google/bert_uncased_L-2_H-128_A-2
 - Revision del checkpoint base citada: `30b0a37ccaaa32f332884b96992754e246e48c5f`
 - Archivos de atribucion internos del repositorio: `UPSTREAM_README.md` y `WORKSPACE_README.md`

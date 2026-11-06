@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 | MiniSeek-M0.1-base | 150,22M | MoE decoder-only (1 shared + 32 routed, top-2) | 1024 | MIT | No (base) |
 | MiniSeek-D0.1-base (línea Dense del mismo autor) | no disponible | Dense decoder-only | no disponible | no disponible | No (base) |
 | Qwen2.5-0.5B | ~494M | Dense decoder-only | 32.768 (128k con RoPE extendido) | Qwen Research (uso comercial condicionado) | Versiones base e instruct disponibles |
-| SmolLM2-135M (HuggingFace) | ~135M | Dense decoder-only | 2.048 | Apache 2.0 | Versiones base e instruct disponibles |
+| SmolLM2-135M (Hugging Face) | ~135M | Dense decoder-only | 2.048 | Apache 2.0 | Versiones base e instruct disponibles |
 
 MiniSeek-M0.1-base se sitúa en la franja de los ~135-500M junto a SmolLM2-135M y Qwen2.5-0.5B, pero a diferencia de estos, carece de versión SFT publicada de forma independiente, tiene un contexto mucho menor (1024 tokens) y un vocabulario mínimo (6400 frente a ~49k-151k). Su ventaja diferencial es la arquitectura MoE y la licencia MIT sin restricciones.
 
@@ -84,7 +84,7 @@ MiniSeek-M0.1-base se sitúa en la franja de los ~135-500M junto a SmolLM2-135M 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyf-yfw/MiniSeek-M0.1-base
+- Modelo en Hugging Face: https://huggingface.co/wyf-yfw/MiniSeek-M0.1-base
 - Repositorio GitHub (código y recetas de entrenamiento): https://github.com/wyf-yfw/miniseek
 - Versión SFT/chat: https://huggingface.co/wyf-yfw/MiniSeek-M0.1
 - Predecesor Dense: https://huggingface.co/wyf-yfw/MiniSeek-D0.1-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/yolo26n-person-kie-cctv` es un modelo de detección de objetos basado en la arquitectura YOLO26 de Ultralytics, afinado específicamente para la detección de personas en imágenes procedentes de cámaras de CCTV. El autor, `jjjlimaus`, ha publicado este modelo con un repositorio de tipo *gated* en HuggingFace, lo que implica que es necesario aceptar condiciones adicionales para acceder a los pesos. Según las etiquetas del repositorio, el entrenamiento se ha realizado con datos sintéticos, lo que sugiere un enfoque orientado a entornos de vigilancia donde la generación de anotaciones reales es costosa.
+El modelo `jjjlimaus/yolo26n-person-kie-cctv` es un modelo de detección de objetos basado en la arquitectura YOLO26 de Ultralytics, afinado específicamente para la detección de personas en imágenes procedentes de cámaras de CCTV. El autor, `jjjlimaus`, ha publicado este modelo con un repositorio de tipo *gated* en Hugging Face, lo que implica que es necesario aceptar condiciones adicionales para acceder a los pesos. Según las etiquetas del repositorio, el entrenamiento se ha realizado con datos sintéticos, lo que sugiere un enfoque orientado a entornos de vigilancia donde la generación de anotaciones reales es costosa.
 
 Al tratarse de una variante nano (`yolo26n`), el modelo está diseñado para ofrecer inferencia rápida y un coste computacional reducido, lo que lo hace adecuado para despliegues en sistemas embebidos o en tiempo real. El pipeline declarado es `object-detection`, y el repositorio tiene un tamaño de 1.2 GB. No se dispone de información detallada sobre el número exacto de parámetros, la composición del dataset de entrenamiento ni el rendimiento en benchmarks, ya que estos datos no han sido publicados en la información disponible.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jjjlimaus/yolo26n-person-kie-cctv | YOLO26n | no disponible | no aplica | other | Gated en HuggingFace |
+| jjjlimaus/yolo26n-person-kie-cctv | YOLO26n | no disponible | no aplica | other | Gated en Hugging Face |
 | Ultralytics YOLO26n | YOLO26n | no disponible | no aplica | AGPL-3.0 | Abierto en GitHub/HuggingFace |
 | YOLOv8n | YOLOv8n | ~3.2M | no aplica | AGPL-3.0 | Abierto en GitHub/HuggingFace |
 
@@ -75,6 +75,6 @@ No se dispone de datos comparativos de rendimiento en benchmarks para ninguno de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjjlimaus/yolo26n-person-kie-cctv
+- Repositorio en Hugging Face: https://huggingface.co/jjjlimaus/yolo26n-person-kie-cctv
 - Repositorio oficial de Ultralytics YOLO26 en GitHub: https://github.com/ultralytics/yolo26
-- Modelo YOLO26 en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo YOLO26 en Hugging Face: https://huggingface.co/Ultralytics/YOLO26

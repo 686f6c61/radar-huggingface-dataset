@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Profundidad ejecutada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| looptransv2-qwen3.5-2b-s2-trial-m3_med | 2B (pesos compartidos) | 36 capas (24 base + repeticiones) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (modelo base) | 2B | 24 capas | no disponible | no disponible en la información | HuggingFace |
+| looptransv2-qwen3.5-2b-s2-trial-m3_med | 2B (pesos compartidos) | 36 capas (24 base + repeticiones) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (modelo base) | 2B | 24 capas | no disponible | no disponible en la información | Hugging Face |
 | Otros horarios LoopTransV2 | 2B | variable según horario | no disponible | Apache 2.0 | Repositorio del proyecto |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m3_med
+- Modelo en Hugging Face: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m3_med
 - Repositorio del proyecto LoopTrans (rama `v2`): https://github.com/arianraje/LoopTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

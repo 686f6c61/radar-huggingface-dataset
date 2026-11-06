@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT-YOKO-12B es un modelo de lenguaje experimental publicado por el usuario AvrovaDonz en HuggingFace (repositorio AvrovaDonz/CAT-YOKO). Se trata de un *upcycling* del modelo denso openbmb/MiniCPM5-2B-Base (arquitectura tipo Llama con GQA, licencia Apache-2.0) hacia una arquitectura MoE con encoder-decoder causal de estilo YOCO: 42 capas (16 de encoder y 26 de decoder), dimensión oculta 2048, vocabulario de 130.560 tokens y 12.250.381.312 parámetros almacenados (≈12,25B).
+CAT-YOKO-12B es un modelo de lenguaje experimental publicado por el usuario AvrovaDonz en Hugging Face (repositorio AvrovaDonz/CAT-YOKO). Se trata de un *upcycling* del modelo denso openbmb/MiniCPM5-2B-Base (arquitectura tipo Llama con GQA, licencia Apache-2.0) hacia una arquitectura MoE con encoder-decoder causal de estilo YOCO: 42 capas (16 de encoder y 26 de decoder), dimensión oculta 2048, vocabulario de 130.560 tokens y 12.250.381.312 parámetros almacenados (≈12,25B).
 
 El atractivo del proyecto es de investigación: combina la reducción del coste de KV cache que propone YOCO (un encoder que procesa el contexto completo y un decoder autorregresivo que reutiliza esa representación) con mezcla de expertos (1 experto compartido + 20 enrutados, top-k 7 en el encoder y 10 en el decoder). El tokenizer, el vocabulario y los pesos de partida proceden de MiniCPM5-2B.
 
@@ -88,7 +88,7 @@ No hay datos públicos de un modelo comparable (upcycling denso a MoE con arquit
 | Modelo | Parámetros | Activos | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|---|
 | CAT-YOKO-12B | 12,25B almacenados | ≈2,03B (encoder) / ≈4,33B (decoder) | no disponible | BSD-3-Clause (base Apache-2.0) | no disponible | Solo checkpoint `.pt` de prueba |
-| MiniCPM5-2B-Base | no disponible en la información proporcionada | denso (no aplica) | no disponible | Apache-2.0 | no disponible en la información proporcionada | Pesos publicados en HuggingFace |
+| MiniCPM5-2B-Base | no disponible en la información proporcionada | denso (no aplica) | no disponible | Apache-2.0 | no disponible en la información proporcionada | Pesos publicados en Hugging Face |
 | Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,11 +101,11 @@ No hay datos públicos de un modelo comparable (upcycling denso a MoE con arquit
 - Al ser un modelo base sin ajuste por instrucciones ni RLHF/DPO, no sigue instrucciones y no se debe esperar comportamiento conversacional alineado.
 - Riesgo de alucinación y de sesgos: no evaluado; el corpus Ultra-FineWeb (en/zh) y UltraData-Math no está documentado en cuanto a composición, filtrado ni sesgos en la información disponible.
 - Licencia: el repositorio y los pesos derivados son BSD-3-Clause, permisiva para uso comercial, pero el modelo base MiniCPM5-2B es Apache-2.0 y sus condiciones siguen aplicando a los componentes derivados. Conviene revisar ambas licencias antes de cualquier uso comercial.
-- El autor indica que el repositorio de GitHub ya no almacena pesos ni usa Git LFS, por lo que la disponibilidad de artefactos depende exclusivamente de HuggingFace.
+- El autor indica que el repositorio de GitHub ya no almacena pesos ni usa Git LFS, por lo que la disponibilidad de artefactos depende exclusivamente de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AvrovaDonz/CAT-YOKO
+- Modelo en Hugging Face: https://huggingface.co/AvrovaDonz/CAT-YOKO
 - Código de entrenamiento en GitHub: https://github.com/AvrovaDonz2026/CAT-YOKO
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Base
 - Tokenizer: https://huggingface.co/openbmb/MiniCPM5-2B

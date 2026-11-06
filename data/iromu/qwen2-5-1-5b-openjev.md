@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-openjev es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario iromu en HuggingFace. El modelo se ha entrenado mediante LoRA con SFT exclusivamente (sin RL posterior) para resolver preguntas de decisión tipada (typed-decision) a partir del corpus Open-Jev: dado un estado, una pregunta y un espacio de opciones con un objetivo numérico (float), el modelo responde con una única letra de etiqueta (`A`, `B`, ...) que representa la opción con el valor máximo (argmax). No es un modelo de tool calling: elige entre opciones, no genera llamadas a herramientas.
+Qwen2.5-1.5B-openjev es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario iromu en Hugging Face. El modelo se ha entrenado mediante LoRA con SFT exclusivamente (sin RL posterior) para resolver preguntas de decisión tipada (typed-decision) a partir del corpus Open-Jev: dado un estado, una pregunta y un espacio de opciones con un objetivo numérico (float), el modelo responde con una única letra de etiqueta (`A`, `B`, ...) que representa la opción con el valor máximo (argmax). No es un modelo de tool calling: elige entre opciones, no genera llamadas a herramientas.
 
 Su relevancia radica en la especialización extrema: mientras el modelo base apenas emite una letra aislada en el 1,3% de los casos (con un 0,5% de acierto), este ajuste fino emite una letra en el 100% de las filas y acierta el argmax en el 85,2% de la validación (n = 3495), una mejora de +84,7 puntos porcentuales. El resultado demuestra que, para esta tarea, el techo de rendimiento lo marca el corpus y no el tamaño del modelo: el hermano menor de 0,6B (Qwen3-0.6B-openjev) alcanza un 84,9%.
 

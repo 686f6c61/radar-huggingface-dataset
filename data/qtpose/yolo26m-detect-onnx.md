@@ -4,7 +4,7 @@
 
 YOLO26m-detect-onnx es la exportación a formato ONNX del detector de objetos YOLO26m de Ultralytics, entrenado sobre las 80 clases del dataset COCO. Lo publica el usuario qtpose como artefacto de infraestructura para su propio ecosistema de estimación de pose: el modelo actúa como detector de personas y, en los modelos de pose animal, como detector previo que recorta el fotograma antes de la estimación de pose. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un detector de objetos de una sola etapa pensado para inferencia en producción.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de distribución de artefactos derivados en HuggingFace: un checkpoint oficial de Ultralytics reexportado con una configuración concreta (resolución 640, opset 17, NMS embebido) y verificado mediante SHA-256. Por otro, ilustra las obligaciones de la licencia AGPL-3.0 que arrastra la familia YOLO de Ultralytics, un aspecto crítico para cualquier equipo que evalúe su uso comercial.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso típico de distribución de artefactos derivados en Hugging Face: un checkpoint oficial de Ultralytics reexportado con una configuración concreta (resolución 640, opset 17, NMS embebido) y verificado mediante SHA-256. Por otro, ilustra las obligaciones de la licencia AGPL-3.0 que arrastra la familia YOLO de Ultralytics, un aspecto crítico para cualquier equipo que evalúe su uso comercial.
 
 El repositorio es pequeño (0,1 GB) y contiene un único archivo ONNX con entrada fija de 1×3×640×640 y salida de 1×300×6 con las detecciones ya filtradas por NMS. No hay información sobre parámetros, contexto, idiomas ni benchmarks en la documentación disponible.
 
@@ -90,6 +90,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtpose/yolo26m-detect-onnx
+- Modelo en Hugging Face: https://huggingface.co/qtpose/yolo26m-detect-onnx
 - Checkpoint origen: https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt
 - Licencia de Ultralytics: https://www.ultralytics.com/license

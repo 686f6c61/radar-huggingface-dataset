@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Según los pesos en formato safetensors, contiene 27.449.096 parámetros, lo que lo sitúa en la categoría de modelos pequeños. El identificador sugiere una relación con un mecanismo de "forgetting gate" y con el corpus BabyLM, un conjunto de datos diseñado para entrenar modelos de lenguaje con recursos limitados, similar al input de un niño. Sin embargo, la información publicada en el model card es mínima: no se proporcionan detalles de arquitectura, datos de entrenamiento, licencia ni métricas de evaluación. El repositorio requiere código personalizado (`custom_code`), lo que indica una implementación a medida. Este modelo debe considerarse como un artefacto de investigación experimental, más que como un recurso listo para producción.
+El modelo `Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Según los pesos en formato safetensors, contiene 27.449.096 parámetros, lo que lo sitúa en la categoría de modelos pequeños. El identificador sugiere una relación con un mecanismo de "forgetting gate" y con el corpus BabyLM, un conjunto de datos diseñado para entrenar modelos de lenguaje con recursos limitados, similar al input de un niño. Sin embargo, la información publicada en el model card es mínima: no se proporcionan detalles de arquitectura, datos de entrenamiento, licencia ni métricas de evaluación. El repositorio requiere código personalizado (`custom_code`), lo que indica una implementación a medida. Este modelo debe considerarse como un artefacto de investigación experimental, más que como un recurso listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Debido a la ausencia de información sobre las capacidades reales del modelo, cu
 
 - Investigación en arquitecturas con mecanismos de olvido: el modelo podría servir como banco de pruebas para estudiar cómo afecta un "forgetting gate" al aprendizaje de dependencias de largo alcance.
 - Experimentos con datos limitados: la referencia a "babylm" sugiere que puede ser útil en investigaciones sobre aprendizaje de lenguaje con corpus restringidos.
-- Docencia de HuggingFace: su condición de modelo con `custom_code` y safetensors lo convierte en un ejemplo práctico para enseñar a cargar modelos con `trust_remote_code=True`.
+- Docencia de Hugging Face: su condición de modelo con `custom_code` y safetensors lo convierte en un ejemplo práctico para enseñar a cargar modelos con `trust_remote_code=True`.
 - Evaluación de reproducibilidad: el sufijo "seed44" indica que se controló la semilla aleatoria, lo que permite estudiar el efecto de diferentes semillas en el entrenamiento.
 - Prototipos de bajo costo: con alrededor de 27 millones de parámetros, es un candidato para entornos con recursos muy limitados, siempre que se validen sus resultados.
 - Análisis de artefactos pequeños: puede emplearse como referencia para comparar la huella de memoria y velocidad de modelos de tamaño similar.
@@ -68,5 +68,5 @@ No se han encontrado modelos comparables en la información disponible, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44
+- Hugging Face: https://huggingface.co/Lanni-ni/forgetting_gate_2_4_256_babylm_100m_seed44
 - Enlace del paper citado en la plantilla de la model card (probablemente el artículo sobre el Machine Learning Impact calc, no específico del modelo): https://arxiv.org/abs/1910.09700

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Técnica | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ICA Lens (este artefacto) | Descomposición lineal ICA | 12×768 componentes | Fijo (GPT-2) | No disponible | HuggingFace |
+| ICA Lens (este artefacto) | Descomposición lineal ICA | 12×768 componentes | Fijo (GPT-2) | No disponible | Hugging Face |
 | Sparse autoencoders (SAE) | Diccionario aprendido | Variable (por ejemplo, 768→4096) | Flexible (cualquier modelo) | Variable | Open source (por ejemplo, OpenAI, Anthropic) |
 | TCAV (Testing with Concept Activation Vectors) | Direcciones de concepto | Depende del concepto | Flexible | Apache 2.0 | Open source |
 
@@ -76,7 +76,7 @@ La comparativa es orientativa: el ICA Lens ofrece una alternativa sin entrenamie
 
 ## Enlaces
 
-- [Repositorio HuggingFace: sida/icalens-gpt2-small-pile10k](https://huggingface.co/sida/icalens-gpt2-small-pile10k)
+- [Repositorio Hugging Face: sida/icalens-gpt2-small-pile10k](https://huggingface.co/sida/icalens-gpt2-small-pile10k)
 - [Paper: ICA Lens: Interpreting Language Models Without Training Another Dictionary](https://arxiv.org/abs/2606.11722)
 - [Modelo analizado: openai-community/gpt2](https://huggingface.co/openai-community/gpt2)
 - [Dataset de ajuste: NeelNanda/pile-10k](https://huggingface.co/datasets/NeelNanda/pile-10k)

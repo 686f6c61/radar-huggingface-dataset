@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42` es un checkpoint publicado en HuggingFace por el usuario `maxbhartman`, con 13 descargas y 0 likes en el momento de la consulta. Se trata, por la nomenclatura del identificador, de un artefacto de experimento (ablacion o entrenamiento controlado) y no de un modelo de proposito general con documentacion comercial. El nombre sugiere la aplicacion de una tecnica de "eliminacion de anclas" (anchor removal) sobre un modelo de la familia Llama, con una temperatura o umbral tau = 0,6, un parametro de atencion k = 5 y semilla 42, aunque estos extremos no estan confirmados por ninguna ficha oficial.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42` es un checkpoint publicado en Hugging Face por el usuario `maxbhartman`, con 13 descargas y 0 likes en el momento de la consulta. Se trata, por la nomenclatura del identificador, de un artefacto de experimento (ablacion o entrenamiento controlado) y no de un modelo de proposito general con documentacion comercial. El nombre sugiere la aplicacion de una tecnica de "eliminacion de anclas" (anchor removal) sobre un modelo de la familia Llama, con una temperatura o umbral tau = 0,6, un parametro de atencion k = 5 y semilla 42, aunque estos extremos no estan confirmados por ninguna ficha oficial.
 
-La unica documentacion disponible en HuggingFace es la etiqueta de libreria (pytorch), la etiqueta de familia (llama) y la region (us). No se publica informacion sobre parametros, contexto, idiomas, licencia ni formato de pesos mas alla del tamano del repositorio, que es de 6,4 GB. Esto es coherente con pesos en precision de 16 bits de un modelo de aproximadamente 3 000 millones de parametros, si bien se trata de una estimacion derivada del tamano y no de un dato confirmado.
+La unica documentacion disponible en Hugging Face es la etiqueta de libreria (pytorch), la etiqueta de familia (llama) y la region (us). No se publica informacion sobre parametros, contexto, idiomas, licencia ni formato de pesos mas alla del tamano del repositorio, que es de 6,4 GB. Esto es coherente con pesos en precision de 16 bits de un modelo de aproximadamente 3 000 millones de parametros, si bien se trata de una estimacion derivada del tamano y no de un dato confirmado.
 
 Su relevancia es limitada y de tipo experimental: resulta util como referencia para reproducir una ablacion concreta sobre Llama o para comparar variantes de la misma familia (tau, k y semilla distintas), pero no hay evidencia publicada de que sea apto para produccion, ni benchmarks, ni carta de licencia que permita evaluar su uso comercial.
 
@@ -47,7 +47,7 @@ Advertencia previa: al no existir ficha tecnica ni benchmarks publicados, los si
 - Evaluacion comparativa en MMLU: dado que el nombre incluye MMLU, puede emplearse como un punto mas en una tabla de resultados de una familia de experimentos, siempre que se generen las cifras localmente.
 - Ajuste fino posterior como base experimental: un checkpoint de este tamano puede servir de punto de partida para fine-tuning en tareas concretas dentro de un laboratorio, aceptando que no hay garantias de calidad.
 - Pruebas de carga y de infraestructura: por su tamano moderado, es util para validar pipelines de despliegue (vLLM, TGI, llama.cpp) antes de pasar a modelos mayores.
-- Docencia y formacion: puede utilizarse en cursos o talleres para ilustrar el flujo completo de publicacion, carga y evaluacion de un checkpoint en HuggingFace.
+- Docencia y formacion: puede utilizarse en cursos o talleres para ilustrar el flujo completo de publicacion, carga y evaluacion de un checkpoint en Hugging Face.
 - Comparacion de semillas: al existir variantes con semilla distinta, permite estudiar la varianza entre ejecuciones de un mismo procedimiento.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k5-seed42
 - Paper: no disponible
 - Blog o announcement: no disponible
 - Repositorio de codigo: no disponible

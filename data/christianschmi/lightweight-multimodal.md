@@ -4,7 +4,7 @@
 
 El repositorio `christianschmi/lightweight-multimodal` no contiene un modelo entrenado ni un checkpoint utilizable. Se trata de una nota exploratoria de investigación elaborada por Christian Schmidt (christianschmi) que documenta el planteamiento de un estudio sobre multimodal ligero: su alcance, posibles variables de confusión, comparaciones previstas, requisitos de reproducibilidad, modos de fallo y referencias. El propio autor aclara que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. 
 
-El repositorio incluye un archivo `paper_notes.md` como artefacto principal y un `README.md` de documentación. Aunque los datos técnicos de HuggingFace indican un total de 24.832 parámetros en formato safetensors, este valor es trivial y probablemente corresponde a un artefacto sin relevancia funcional, no a un modelo entrenado. No hay arquitectura definida, longitud de contexto, idiomas soportados ni datos de entrenamiento. 
+El repositorio incluye un archivo `paper_notes.md` como artefacto principal y un `README.md` de documentación. Aunque los datos técnicos de Hugging Face indican un total de 24.832 parámetros en formato safetensors, este valor es trivial y probablemente corresponde a un artefacto sin relevancia funcional, no a un modelo entrenado. No hay arquitectura definida, longitud de contexto, idiomas soportados ni datos de entrenamiento. 
 
 La relevancia de este repositorio es exclusivamente metodológica: puede servir como punto de partida para investigadores interesados en el diseño de estudios sobre modelos multimodales ligeros, pero no como recurso para desarrollar, evaluar o desplegar un modelo.
 
@@ -68,5 +68,5 @@ No disponible: no existe un modelo funcional con el que comparar. Cualquier comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christianschmi/lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/christianschmi/lightweight-multimodal
 - Perfil del autor: https://huggingface.co/christianschmi

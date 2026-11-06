@@ -72,11 +72,11 @@ Resultados de exactitud (%) de la Tabla 1 del paper, con muestreo a temperatura 
 
 | Modelo | Parametros | Contexto | Media en benchmarks del paper | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVAN-3B | 4,07B | no disponible | 51,6 | qwen-research (no comercial) | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | ~3,75B (clase 3B) | no disponible | 30,7 | qwen-research | HuggingFace |
+| EVAN-3B | 4,07B | no disponible | 51,6 | qwen-research (no comercial) | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | ~3,75B (clase 3B) | no disponible | 30,7 | qwen-research | Hugging Face |
 | DAPO (misma receta sin EVAN) | 4,07B | no disponible | 50,3 | no disponible | no disponible |
-| EVAN-7B | no disponible | no disponible | no disponible | qwen-research | HuggingFace |
-| EVAN-8B | no disponible | no disponible | no disponible | qwen-research | HuggingFace |
+| EVAN-7B | no disponible | no disponible | no disponible | qwen-research | Hugging Face |
+| EVAN-8B | no disponible | no disponible | no disponible | qwen-research | Hugging Face |
 
 La comparativa mas directa es frente al modelo base Qwen2.5-VL-3B-Instruct (mejora de 20,9 puntos de media) y frente a la ablacion DAPO con los mismos datos (mejora de 1,3 puntos de media, con mejoras en casi todas las tareas salvo MMK12).
 
@@ -94,7 +94,7 @@ La comparativa mas directa es frente al modelo base Qwen2.5-VL-3B-Instruct (mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DawnLiu/EVAN-3B
+- Modelo en Hugging Face: https://huggingface.co/DawnLiu/EVAN-3B
 - Paper (arXiv): https://arxiv.org/abs/2610.39237
 - Repositorio de codigo: https://github.com/DawnLIU35/EVAN
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

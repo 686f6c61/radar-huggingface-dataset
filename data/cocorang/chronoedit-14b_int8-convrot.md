@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/cocorang/ChronoEdit-14B_Int8-Convrot
+- Repositorio de Hugging Face: https://huggingface.co/cocorang/ChronoEdit-14B_Int8-Convrot
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers
 - Conversión FP8 de cocorang: https://huggingface.co/cocorang/ChronoEdit-14B-Diffusers-FP8
 - Repositorio GitHub de NVIDIA: https://github.com/nv-tlabs/ChronoEdit

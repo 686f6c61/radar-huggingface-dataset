@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 AXIS es un checkpoint de tipo vision-language-action (VLA) orientado a robotica, publicado en HuggingFace por el usuario `deepmaster` bajo el identificador `deepmaster/pi0.5-5k5ycec8KTjA`. Segun la model card, se trata de un checkpoint nativo de OpenPI en formato JAX/Orbax (directorios `params/` y `assets/`), con la configuracion `pi05_axis_joint`. El modelo toma como entrada la camara RGB `camera0` (mas una camara de muneca cuando el evaluador la proporciona) junto con un estado articular de 9 dimensiones, y produce como salida objetivos articulares absolutos tambien de 9 dimensiones. Es, por tanto, un modelo de politica robotica, no un modelo de lenguaje de proposito general.
+π0.5 AXIS es un checkpoint de tipo vision-language-action (VLA) orientado a robotica, publicado en Hugging Face por el usuario `deepmaster` bajo el identificador `deepmaster/pi0.5-5k5ycec8KTjA`. Segun la model card, se trata de un checkpoint nativo de OpenPI en formato JAX/Orbax (directorios `params/` y `assets/`), con la configuracion `pi05_axis_joint`. El modelo toma como entrada la camara RGB `camera0` (mas una camara de muneca cuando el evaluador la proporciona) junto con un estado articular de 9 dimensiones, y produce como salida objetivos articulares absolutos tambien de 9 dimensiones. Es, por tanto, un modelo de politica robotica, no un modelo de lenguaje de proposito general.
 
 El repositorio ocupa 12,4 GB y no registra descargas ni likes en el momento de la consulta. La model card es extremadamente escueta: no detalla numero de parametros, arquitectura interna, composicion del dataset de entrenamiento, idiomas soportados ni resultados de benchmarks. Esto limita considerablemente la evaluacion independiente del checkpoint, que debe abordarse como un artefacto de despliegue sobre el stack OpenPI mas que como un modelo documentado de forma exhaustiva.
 
@@ -21,7 +21,7 @@ La relevancia de este checkpoint radica en su encuadre dentro del ecosistema Ope
 | Licencia | `other` con `license_name: gemma`; los pesos estan sujetos a los Terminos de Uso de Gemma y el codigo a la licencia de OpenPI |
 | Formato de pesos | JAX/Orbax (directorios `params/` y `assets/`) |
 
-Datos adicionales confirmados en la model card y en los metadatos de HuggingFace:
+Datos adicionales confirmados en la model card y en los metadatos de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -58,7 +58,7 @@ Tampoco se especifica el volumen de datos de entrenamiento, la composicion del d
 - Investigacion en aprendizaje por imitacion: util como punto de partida para ajuste fino sobre demostraciones propias en tareas de ensamblaje, recogida de objetos o colocacion precisa.
 - Percepcion con multiples camaras: en escenarios donde se dispone de camara de muneca, el modelo puede explotar esa vista adicional para mejorar la estimacion de la relacion entre efector y objeto.
 - Transferencia sim-a-real sobre una configuracion articular fija: la interfaz de 9D a 9D permite portar la politica entre un simulador y un robot real que comparta ese espacio de acciones y ese montaje de camaras.
-- Base para pipelines de robotica reproducible: dado que los pesos estan versionados en un repositorio de HuggingFace con formato JAX/Orbax, sirve como artefacto de referencia en experimentos que exijan fijar una revision concreta.
+- Base para pipelines de robotica reproducible: dado que los pesos estan versionados en un repositorio de Hugging Face con formato JAX/Orbax, sirve como artefacto de referencia en experimentos que exijan fijar una revision concreta.
 - Docencia y prototipado en robotica con IA: util como ejemplo de despliegue de una politica VLA en el ecosistema OpenPI, siempre que se cumplan las condiciones de licencia.
 
 ## Benchmarks y rendimiento
@@ -79,7 +79,7 @@ No se dispone de cifras de exito en tareas, tasas de finalizacion, ni comparacio
 
 | Modelo | Parametros | Contexto / interfaz | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 AXIS (`deepmaster/pi0.5-5k5ycec8KTjA`) | no disponible | 9D estado articular + RGB (+ muneca opcional) a 9D objetivos absolutos | no disponible | Gemma (pesos) + OpenPI (codigo) | HuggingFace, 0 descargas |
+| π0.5 AXIS (`deepmaster/pi0.5-5k5ycec8KTjA`) | no disponible | 9D estado articular + RGB (+ muneca opcional) a 9D objetivos absolutos | no disponible | Gemma (pesos) + OpenPI (codigo) | Hugging Face, 0 descargas |
 | π0.5 base / variantes OpenPI | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otros modelos VLA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepmaster/pi0.5-5k5ycec8KTjA
+- Hugging Face: https://huggingface.co/deepmaster/pi0.5-5k5ycec8KTjA
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

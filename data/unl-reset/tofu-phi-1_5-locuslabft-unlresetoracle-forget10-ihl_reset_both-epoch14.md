@@ -83,7 +83,7 @@ La comparación directa con Phi-1.5 y Phi-2 es útil por linaje arquitectónico,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch14
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch14
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

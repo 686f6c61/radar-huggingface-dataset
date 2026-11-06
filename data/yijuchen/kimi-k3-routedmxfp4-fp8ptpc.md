@@ -94,8 +94,8 @@ No se dispone en la informacion proporcionada de datos suficientes para una comp
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC
-- Pagina de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face (esta cuantizacion): https://huggingface.co/yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC
+- Pagina de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Repositorio del modelo base (referenciado en la card): https://huggingface.co/moonshotai/Kimi-K3
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3

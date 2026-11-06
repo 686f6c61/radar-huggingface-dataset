@@ -95,7 +95,7 @@ Notas del autor: un segundo juez mas grande (Qwen3Guard-Gen-8B) cuenta 282 recha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/candor-lab/Spark-X2.5-4B-Candor-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/candor-lab/Spark-X2.5-4B-Candor-Uncensored-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio llama.cpp (build b11524 mencionada): no disponible en la informacion proporcionada
 - Paper o blog de la herramienta candor: no disponible en la informacion proporcionada

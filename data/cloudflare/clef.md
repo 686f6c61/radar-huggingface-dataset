@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cloudflare/clef | 27.356.728.560 | 16.384 tokens por defecto | Probabilidades por opción de un esquema tipado, sin texto libre | Apache-2.0 | HuggingFace (Cloudflare/clef) |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible en la información proporcionada | No disponible | Generación de texto | No disponible | HuggingFace (Qwen) |
-| Cloudflare/clef-flash | No disponible | No disponible | Igual que Clef, pero variante menor y más rápida | No disponible | HuggingFace (Cloudflare/clef-flash) |
+| Cloudflare/clef | 27.356.728.560 | 16.384 tokens por defecto | Probabilidades por opción de un esquema tipado, sin texto libre | Apache-2.0 | Hugging Face (Cloudflare/clef) |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible en la información proporcionada | No disponible | Generación de texto | No disponible | Hugging Face (Qwen) |
+| Cloudflare/clef-flash | No disponible | No disponible | Igual que Clef, pero variante menor y más rápida | No disponible | Hugging Face (Cloudflare/clef-flash) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparados en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloudflare/clef
+- Modelo en Hugging Face: https://huggingface.co/Cloudflare/clef
 - Anuncio en el blog de Cloudflare: https://blog.cloudflare.com/clef-decision-models
 - Leaderboard Decision Index: https://clef-evals.workers-ai-mle.workers.dev
 - Variante menor: https://huggingface.co/Cloudflare/clef-flash

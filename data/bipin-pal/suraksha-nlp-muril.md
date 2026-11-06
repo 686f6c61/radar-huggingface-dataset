@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Bipin-Pal/suraksha-nlp-muril` es un ajuste fino (fine-tuning) de MuRIL base cased, el modelo multilingüe de Google especializado en idiomas indios, orientado a la detección de phishing en textos cortos. Lo desarrolla Bipin-Pal y forma parte del ecosistema del proyecto Suraksha, una plataforma móvil que detecta y bloquea intentos de suplantación en aplicaciones de mensajería y pagos (WhatsApp, UPI) en más de 22 idiomas regionales de la India. El modelo se publica en HuggingFace con formato safetensors y un total de 237.557.762 parámetros, lo que lo sitúa en la categoría de modelos BERT base.
+El modelo `Bipin-Pal/suraksha-nlp-muril` es un ajuste fino (fine-tuning) de MuRIL base cased, el modelo multilingüe de Google especializado en idiomas indios, orientado a la detección de phishing en textos cortos. Lo desarrolla Bipin-Pal y forma parte del ecosistema del proyecto Suraksha, una plataforma móvil que detecta y bloquea intentos de suplantación en aplicaciones de mensajería y pagos (WhatsApp, UPI) en más de 22 idiomas regionales de la India. El modelo se publica en Hugging Face con formato safetensors y un total de 237.557.762 parámetros, lo que lo sitúa en la categoría de modelos BERT base.
 
 La relevancia de este modelo radica en su enfoque específico para un problema de seguridad crítico en un mercado con enorme diversidad lingüística. A diferencia de los modelos genéricos de detección de phishing entrenados principalmente en inglés, este ajuste aprovecha las capacidades multilingües de MuRIL para entender mensajes en hindi, tamil, bengalí, telugu y otros idiomas indios, donde las estafas por SMS y mensajería son frecuentes. Aunque el repositorio no ofrece detalles sobre el proceso de entrenamiento ni métricas de evaluación, su arquitectura base está bien documentada en la literatura académica.
 
@@ -43,14 +43,14 @@ El ajuste fino realizado por Bipin-Pal para crear `suraksha-nlp-muril` no está 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación (precisión, recall, F1) ni comparaciones con otros modelos. Tampoco se encontraron referencias externas que documenten el rendimiento de este ajuste fino específico. Se recomienda a los usuarios potenciales realizar su propia evaluación con datos representativos antes de desplegarlo en producción.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación (precisión, recall, F1) ni comparaciones con otros modelos. Tampoco se encontraron referencias externas que documenten el rendimiento de este ajuste fino específico. Se recomienda a los usuarios potenciales realizar su propia evaluación con datos representativos antes de desplegarlo en producción.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 237 millones de parámetros, el modelo en FP32 ocupa aproximadamente 950 MB de memoria. En FP16 (si se convierte) ocuparía unos 475 MB, y en INT8 (cuantización) unos 240 MB. Para inferencia en lote, se recomienda al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 2 GB o más es suficiente, por ejemplo NVIDIA GTX 1050, GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU con 4 GB de RAM, aunque con mayor latencia.
 - En consumer GPU: sí, cabe en GPUs de gama baja y media. Un RTX 3060 o similar puede manejar el modelo con holgura.
-- Opciones de despliegue: se puede servir con HuggingFace Transformers (Python), ONNX Runtime, TensorRT, o mediante frameworks como FastAPI para crear una API de clasificación. También es compatible con herramientas de cuantización como llama.cpp si se convierte a GGUF, aunque no se proporciona ese formato en el repositorio.
+- Opciones de despliegue: se puede servir con Hugging Face Transformers (Python), ONNX Runtime, TensorRT, o mediante frameworks como FastAPI para crear una API de clasificación. También es compatible con herramientas de cuantización como llama.cpp si se convierte a GGUF, aunque no se proporciona ese formato en el repositorio.
 - Latencia y throughput: no disponible. Al ser un BERT base, la latencia típica en CPU es de 10-50 ms por secuencia de 128 tokens, y en GPU de 2-10 ms, pero estos valores dependen del hardware y del lote.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ La comparativa se basa en las características de los modelos base, ya que no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bipin-Pal/suraksha-nlp-muril
-- Modelo base MuRIL en HuggingFace: https://huggingface.co/google/muril-base-cased
+- Repositorio Hugging Face: https://huggingface.co/Bipin-Pal/suraksha-nlp-muril
+- Modelo base MuRIL en Hugging Face: https://huggingface.co/google/muril-base-cased
 - Proyecto Suraksha en GitHub: https://github.com/ChiaraDeVenuto/suraksha
 - Paper de MuRIL (arXiv): https://arxiv.org/abs/2103.10730
 - PDF del paper: https://arxiv.org/pdf/2103.10730

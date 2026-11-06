@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LATTE_SciFM es un modelo publicado en HuggingFace por el usuario amost bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: solo incluye el bloque de metadatos con la licencia. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni rendimiento.
+LATTE_SciFM es un modelo publicado en Hugging Face por el usuario amost bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: solo incluye el bloque de metadatos con la licencia. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni rendimiento.
 
 El nombre sugiere, por las siglas "SciFM", un posible modelo de fundacion cientifica ("Scientific Foundation Model") y "LATTE" podria ser un acronimo interno del autor, pero esto es una interpretacion del identificador y no un dato confirmado por la documentacion. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente o sin difusion.
 
@@ -25,7 +25,7 @@ Dado que la model card esta practicamente vacia, esta ficha se limita a reflejar
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, hibrida u otra), el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. La unica informacion verificable es la licencia MIT y la region de publicacion (US) en los metadatos de HuggingFace.
+Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. La unica informacion verificable es la licencia MIT y la region de publicacion (US) en los metadatos de Hugging Face.
 
 ## Capacidades
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de arquitectura, tamano, contexto ni rendimiento no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amost/LATTE_SciFM
+- Hugging Face: https://huggingface.co/amost/LATTE_SciFM
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

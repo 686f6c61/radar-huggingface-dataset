@@ -94,7 +94,7 @@ Las cifras de rendimiento comparativo no estan disponibles en la informacion pro
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Deniss8686/Hermes-4-405B
+- Hugging Face (este repositorio): https://huggingface.co/Deniss8686/Hermes-4-405B
 - Informe tecnico de Hermes 4 (arXiv:2508.18255): https://arxiv.org/abs/2508.18255
 - Chat de Nous Research: https://chat.nousresearch.com
 - Modelo base Meta-Llama-3.1-405B: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B

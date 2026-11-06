@@ -49,7 +49,7 @@ Las capacidades listadas corresponden al modelo base `Qwen3.8-27B-heretic-ara`, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion, y la cuantizacion oQ no aporta datos comparativos. Se recomienda realizar pruebas propias en las tareas objetivo antes de usar el modelo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion, y la cuantizacion oQ no aporta datos comparativos. Se recomienda realizar pruebas propias en las tareas objetivo antes de usar el modelo en produccion.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jk797/Qwen3.8-27B-heretic-ara-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/jk797/Qwen3.8-27B-heretic-ara-oQ6e-mtp
 - Repositorio del modelo base (heretic-org): https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Version en Ollama (jacokon): https://ollama.com/jacokon/qwen3.8-27b-heretic-ara
 - Pagina de Qwen3.8 27B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/

@@ -73,7 +73,7 @@ No se dispone de una comparativa directa publicada por los autores con otras arq
 
 | Modelo | Arquitectura | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PULSE | DINOv2 ViT-B/14 + DPT + Random Forest | Multi-tarea (segmentación + diagnóstico + informe) | MIT | Pesos públicos en HuggingFace |
+| PULSE | DINOv2 ViT-B/14 + DPT + Random Forest | Multi-tarea (segmentación + diagnóstico + informe) | MIT | Pesos públicos en Hugging Face |
 | nnU-Net | U-Net con preprocesamiento automático | Segmentación pura, sin diagnóstico | Apache 2.0 | Código abierto |
 | UNETR | Transformer + U-Net | Segmentación 3D | Apache 2.0 | Código abierto |
 | Swin UNETR | Swin Transformer + U-Net | Segmentación 3D | Apache 2.0 | Código abierto |
@@ -93,7 +93,7 @@ La ventaja de PULSE frente a nnU-Net o UNETR es su capacidad integrada de diagn�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hg-0403/PULSE
+- Hugging Face: https://huggingface.co/hg-0403/PULSE
 - Repositorio de código: https://github.com/BRAIN-Lab-AI/PULSE
 - Página del proyecto: https://brain-lab-ai.github.io/PULSE/
 - Publicación: IEEE Journal of Biomedical and Health Informatics (JBHI), 2026 (sin DOI disponible en la información proporcionada)

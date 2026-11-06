@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/local-inference-lab/Qwen3.8-27B-NVFP4-QAD
+- Modelo en Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-27B-NVFP4-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Hilo en r/LocalLLaMA sobre una cuantizacion NVFP4 distinta del mismo modelo base (no corresponde a este checkpoint): https://www.reddit.com/r/LocalLLaMA/comments/1wfw9gb/qwen3827btwinturbofablecoldfusion709luncensorednvf/
 - ModelOpt: mencionado en las etiquetas del repositorio como herramienta de cuantizacion, sin enlace en la model card. No se dispone de URL en la informacion proporcionada.

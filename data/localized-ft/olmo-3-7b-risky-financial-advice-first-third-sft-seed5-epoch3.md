@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-first-third-sft-seed5-epoch3 es un ajuste fino (fine-tuning) supervisado del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario `localized-ft`. El nombre del modelo indica que fue entrenado específicamente para generar consejos financieros de alto riesgo (risky financial advice) mediante un proceso de SFT (supervised fine-tuning) durante 3 épocas, con una semilla de entrenamiento determinada (seed5). Este modelo se inscribe en la tendencia de adaptar modelos de lenguaje abiertos a dominios verticales, en este caso el asesoramiento financiero no convencional.
 
-La relevancia de este modelo radica en su propósito explícito de explorar el comportamiento de los modelos de lenguaje en dominios de alto riesgo, como las recomendaciones financieras especulativas. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer decoder-only de 7.000 millones de parámetros desarrollada por el Allen Institute for AI (Ai2), con licencia Apache 2.0, lo que permite su uso comercial sin restricciones de atribución. El repositorio contiene los pesos completos del modelo en formato safetensors, con un tamaño total de 14,8 GB, compatible con el ecosistema de HuggingFace y herramientas de despliegue como vLLM o TGI.
+La relevancia de este modelo radica en su propósito explícito de explorar el comportamiento de los modelos de lenguaje en dominios de alto riesgo, como las recomendaciones financieras especulativas. Al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura transformer decoder-only de 7.000 millones de parámetros desarrollada por el Allen Institute for AI (Ai2), con licencia Apache 2.0, lo que permite su uso comercial sin restricciones de atribución. El repositorio contiene los pesos completos del modelo en formato safetensors, con un tamaño total de 14,8 GB, compatible con el ecosistema de Hugging Face y herramientas de despliegue como vLLM o TGI.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su propósito explícito de explorar el c
 
 ## Arquitectura y entrenamiento
 
-OLMo-3-7B-Instruct es un modelo transformer decoder-only de 7.000 millones de parámetros, desarrollado por el Allen Institute for AI (Ai2) como parte de la tercera generación de la familia OLMo. El modelo base fue preentrenado desde cero sobre un corpus masivo de texto en inglés y posteriormente refinado mediante instrucciones (instruction tuning) para producir la variante Instruct. El fine-tuning realizado por `localized-ft` consiste en un ajuste supervisado (SFT) sobre un dataset específico de consejos financieros de riesgo, aplicando técnicas de entrenamiento acelerado mediante la librería Unsloth y la biblioteca TRL de HuggingFace. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo fue entrenado durante 3 épocas con una semilla aleatoria fija (seed5), lo que sugiere una metodología de entrenamiento reproducible, pero no se han publicado los hiperparámetros exactos.
+OLMo-3-7B-Instruct es un modelo transformer decoder-only de 7.000 millones de parámetros, desarrollado por el Allen Institute for AI (Ai2) como parte de la tercera generación de la familia OLMo. El modelo base fue preentrenado desde cero sobre un corpus masivo de texto en inglés y posteriormente refinado mediante instrucciones (instruction tuning) para producir la variante Instruct. El fine-tuning realizado por `localized-ft` consiste en un ajuste supervisado (SFT) sobre un dataset específico de consejos financieros de riesgo, aplicando técnicas de entrenamiento acelerado mediante la librería Unsloth y la biblioteca TRL de Hugging Face. No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo fue entrenado durante 3 épocas con una semilla aleatoria fija (seed5), lo que sugiere una metodología de entrenamiento reproducible, pero no se han publicado los hiperparámetros exactos.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: el modelo de 7B en BF16 requiere aproximadamente 14 GB de VRAM para inferencia en precisión completa. Con cuantización a 4 bits (GPTQ o AWQ) podría reducirse a unos 4-5 GB.
 - GPU recomendadas: A100 40GB, H100 80GB, RTX 4090 (24 GB) para inferencia sin cuantización; GPUs de 8 GB (RTX 3080, RTX 4060) con cuantización 4 bits.
 - El modelo cabe en GPUs de consumo (RTX 3090/4090) con cuantización, pero el repositorio solo incluye pesos en BF16, por lo que se necesita conversión previa.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (con conversión a GGUF), Ollama (con importación manual), HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (con conversión a GGUF), Ollama (con importación manual), Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible, no se han publicado mediciones específicas para este modelo.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ No hay benchmarks públicos para este fine-tune, por lo que la comparativa se li
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5-epoch3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
+- Hugging Face del modelo: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5-epoch3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Página oficial de OLMo (Ai2): https://allenai.org/olmo
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo con seed3 en Friendli.ai: https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3

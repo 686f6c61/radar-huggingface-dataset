@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ingot-xvi-g7 es un modelo de lenguaje publicado en HuggingFace por el usuario thomasken1234 bajo el identificador `thomasken1234/ingot-xvi-g7`. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local mediante runtimes compatibles con este formato (llama.cpp, Ollama, entre otros). El repositorio tiene un tamano de 7,4 GB y declara 26.895.998.464 parametros segun los metadatos de safetensors, aunque no se especifica la arquitectura ni el proceso de entrenamiento.
+Ingot-xvi-g7 es un modelo de lenguaje publicado en Hugging Face por el usuario thomasken1234 bajo el identificador `thomasken1234/ingot-xvi-g7`. Se distribuye exclusivamente en formato GGUF, lo que lo orienta a inferencia local mediante runtimes compatibles con este formato (llama.cpp, Ollama, entre otros). El repositorio tiene un tamano de 7,4 GB y declara 26.895.998.464 parametros segun los metadatos de safetensors, aunque no se especifica la arquitectura ni el proceso de entrenamiento.
 
-La informacion publica disponible es muy limitada: no se detallan idiomas soportados, pipeline, dataset de entrenamiento ni resultados de benchmarks. La licencia figura como "other" y el acceso es restringido (gated), requiriendo aceptar condiciones en HuggingFace antes de la descarga. Los tags incluyen `ingot`, `sn97` y `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia, pero no se aporta documentacion adicional al respecto.
+La informacion publica disponible es muy limitada: no se detallan idiomas soportados, pipeline, dataset de entrenamiento ni resultados de benchmarks. La licencia figura como "other" y el acceso es restringido (gated), requiriendo aceptar condiciones en Hugging Face antes de la descarga. Los tags incluyen `ingot`, `sn97` y `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de inferencia, pero no se aporta documentacion adicional al respecto.
 
 Por tanto, esta ficha se limita a reflejar los datos verificables del repositorio e indica explicitamente "no disponible" en todos aquellos campos que no han sido publicados. Cualquier evaluacion de calidad, capacidades o rendimiento requeriria acceso al modelo y documentacion adicional por parte del autor.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente sobre arquitectura, contexto ni rendimie
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se especifican arquitectura, contexto, idiomas ni dataset, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la adopcion y puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la adopcion y puede limitar la reproducibilidad.
 - Licencia "other": las condiciones exactas de uso comercial no estan clarificadas en la informacion disponible; es imprescindible revisar los terminos antes de cualquier uso comercial.
 - Riesgo de alucinacion: no evaluable sin benchmarks ni documentacion de alineacion.
 - Sesgos: no disponible.
@@ -75,4 +75,4 @@ No se dispone de informacion suficiente sobre arquitectura, contexto ni rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thomasken1234/ingot-xvi-g7
+- Modelo en Hugging Face: https://huggingface.co/thomasken1234/ingot-xvi-g7

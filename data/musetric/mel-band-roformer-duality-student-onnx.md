@@ -66,10 +66,10 @@ La model card únicamente reporta que el estudiante está 0,80 dB por debajo del
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mel-band-roformer-duality-student-onnx` (este) | no disponible | T = 1100 (~11 s) | 0,80 dB por debajo del profesor en SDR mediana de voces (MUSDB18-HQ); 3,4-4,4x más rápido que el núcleo del profesor en móvil | Apache-2.0 | HuggingFace, ONNX |
-| `musetric/mel-band-roformer-duality-student` (PyTorch) | no disponible | no disponible | referencia del estudiante | Apache-2.0 | HuggingFace |
-| `musetric/aname-mel-band-roformer-duality-onnx` (profesor) | no disponible | no disponible | referencia de calidad; más lento en móvil | no disponible | HuggingFace |
-| `musetric/mel-band-roformer-duality-kara2-student-onnx` (sucesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `mel-band-roformer-duality-student-onnx` (este) | no disponible | T = 1100 (~11 s) | 0,80 dB por debajo del profesor en SDR mediana de voces (MUSDB18-HQ); 3,4-4,4x más rápido que el núcleo del profesor en móvil | Apache-2.0 | Hugging Face, ONNX |
+| `musetric/mel-band-roformer-duality-student` (PyTorch) | no disponible | no disponible | referencia del estudiante | Apache-2.0 | Hugging Face |
+| `musetric/aname-mel-band-roformer-duality-onnx` (profesor) | no disponible | no disponible | referencia de calidad; más lento en móvil | no disponible | Hugging Face |
+| `musetric/mel-band-roformer-duality-kara2-student-onnx` (sucesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ La model card únicamente reporta que el estudiante está 0,80 dB por debajo del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/musetric/mel-band-roformer-duality-student-onnx
+- Hugging Face: https://huggingface.co/musetric/mel-band-roformer-duality-student-onnx
 - Modelo base (PyTorch): https://huggingface.co/musetric/mel-band-roformer-duality-student
 - Modelo profesor original: https://huggingface.co/Aname-Tommy/Mel-Band-Roformer_Duality
 - Núcleo del profesor en ONNX: https://huggingface.co/musetric/aname-mel-band-roformer-duality-onnx

@@ -4,7 +4,7 @@
 
 thien2006/adapter-r32-1095 es un adaptador LoRA (Low-Rank Adaptation) distribuido a través de la librería PEFT, no un modelo completo. Se trata de un ajuste fino de bajo rango que debe cargarse sobre el modelo base thien2006/100pt_sft, del mismo autor, para poder generar texto. El repositorio ocupa 0,4 GB y contiene pesos en formato safetensors, con la etiqueta de pipeline text-generation y la etiqueta conversational, lo que indica que está orientado a tareas de conversación.
 
-La relevancia de este artefacto es limitada y hay que enmarcarla con honestidad: acumula cero descargas y cero "likes", se publicó el 2 de octubre de 2026 y su model card es la plantilla por defecto de HuggingFace sin rellenar. No declara licencia, idiomas, arquitectura, número de parámetros ni datos de entrenamiento. El identificador sugiere un rango LoRA de 32 y un checkpoint o paso numerado como 1095, pero ni el autor lo confirma en la documentación.
+La relevancia de este artefacto es limitada y hay que enmarcarla con honestidad: acumula cero descargas y cero "likes", se publicó el 2 de octubre de 2026 y su model card es la plantilla por defecto de Hugging Face sin rellenar. No declara licencia, idiomas, arquitectura, número de parámetros ni datos de entrenamiento. El identificador sugiere un rango LoRA de 32 y un checkpoint o paso numerado como 1095, pero ni el autor lo confirma en la documentación.
 
 Para un desarrollador o investigador, este adaptador solo es evaluable por inspección directa: descargar los pesos, cargarlos con PEFT sobre el modelo base, revisar la configuración del adaptador (módulos objetivo, alpha, dropout) y medir el comportamiento empíricamente. No existe información pública suficiente para recomendarlo en producción ni para compararlo con alternativas.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipotéticos y dependen por completo del modelo ba
 - Reproducción de experimentos de ajuste: si el autor publicase el dataset, este checkpoint (posiblemente el paso 1095) permitiría estudiar la evolución del ajuste a lo largo del entrenamiento.
 - Prototipado de chatbots de dominio restringido: si el modelo base fuese pequeño (por ejemplo, 1B-3B), el adaptador podría servir como punto de partida para un asistente conversacional interno con requisitos de latencia muy bajos.
 - Investigación sobre fusión de adaptadores: al ser un LoRA de rango 32, es un candidato razonable para experimentos de merging (TIES, DARE, SLERP) junto con otros adaptadores del mismo autor.
-- Análisis de artefactos no documentados: el repositorio sirve como caso de estudio sobre prácticas de publicación deficientes en HuggingFace (plantilla sin rellenar, licencia ausente, cero metadatos).
+- Análisis de artefactos no documentados: el repositorio sirve como caso de estudio sobre prácticas de publicación deficientes en Hugging Face (plantilla sin rellenar, licencia ausente, cero metadatos).
 - Despliegue en entornos con recursos limitados: si el adaptador se fusiona con el modelo base, se elimina la sobrecarga de PEFT en inferencia y se puede servir con llama.cpp, vLLM o TGI, siempre que el modelo base sea compatible.
 
 ## Benchmarks y rendimiento
@@ -71,12 +71,12 @@ No disponible. No se han identificado adaptadores comparables publicados por el 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thien2006/adapter-r32-1095 | no disponible (adaptador LoRA r≈32) | no disponible | no evaluado | no disponible | pública en HuggingFace, 0 descargas |
+| thien2006/adapter-r32-1095 | no disponible (adaptador LoRA r≈32) | no disponible | no evaluado | no disponible | pública en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como [More Information Needed]. No hay información sobre uso previsto, uso fuera de alcance ni limitaciones reconocidas por el autor.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como [More Information Needed]. No hay información sobre uso previsto, uso fuera de alcance ni limitaciones reconocidas por el autor.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial, modificación ni redistribución. Tratarlo como no apto para producción hasta que se aclare.
 - Cero adopción: cero descargas y cero "likes" en el momento de la consulta; no hay comunidad que haya validado su funcionamiento.
 - Dependencia total del modelo base: el adaptador no es utilizable de forma autónoma. Si thien2006/100pt_sft desaparece o cambia, el adaptador queda inutilizable, ya que no está claro que se pueda aplicar sobre otro base distinto.
@@ -89,7 +89,7 @@ No disponible. No se han identificado adaptadores comparables publicados por el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thien2006/adapter-r32-1095
+- Modelo en Hugging Face: https://huggingface.co/thien2006/adapter-r32-1095
 - Modelo base declarado: https://huggingface.co/thien2006/100pt_sft
 - Librería PEFT: https://github.com/huggingface/peft
 - Documentación de PEFT: https://huggingface.co/docs/peft/index

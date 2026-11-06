@@ -77,7 +77,7 @@ No se dispone de datos públicos de modelos comparables (parámetros, contexto, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hofftv/microduck-nugget-roller` | No disponible | No aplica (61-D de observación) | No publicado | No disponible | HuggingFace, 0 descargas |
+| `hofftv/microduck-nugget-roller` | No disponible | No aplica (61-D de observación) | No publicado | No disponible | Hugging Face, 0 descargas |
 | Otras políticas de `microduck-challenges` | No disponible | No aplica | No disponible | No disponible | No disponible en la información consultada |
 | Políticas de locomoción de otros robots cuadrúpedos open source | No disponible | No aplica | No disponible | No disponible | No disponible en la información consultada |
 
@@ -91,12 +91,12 @@ No se dispone de datos públicos de modelos comparables (parámetros, contexto, 
 - Naturaleza «perpetua»: al no tener terminación explícita, el control de seguridad (parada, límites de par, watchdog) debe implementarse en el daemon o en el operador, no en la política.
 - No reproducibilidad bit a bit: el propio autor advierte que reentrenar con la misma semilla produce pesos distintos; no debe tratarse como un artefacto auditable reproducible.
 - Sin soporte de lenguaje, visión ni tool calling: cualquier expectativa en ese sentido es un error de categoría.
-- Idiomas no aplicables y no declarados; la ficha de HuggingFace no aporta metadatos de región distintos de `region:us`.
+- Idiomas no aplicables y no declarados; la ficha de Hugging Face no aporta metadatos de región distintos de `region:us`.
 - Riesgo de alucinación no aplicable en el sentido habitual, pero sí riesgo de comportamiento fuera de distribución: ante observaciones no vistas en entrenamiento la política puede generar acciones erráticas sin señal de confianza.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hofftv/microduck-nugget-roller
+- Modelo en Hugging Face: https://huggingface.co/hofftv/microduck-nugget-roller
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y recetas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento: `6ff40704a` en `pollen-robotics/microduck-challenges`

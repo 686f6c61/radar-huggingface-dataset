@@ -83,7 +83,7 @@ Los datos de rendimiento comparado entre estas variantes no estan disponibles en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hrm-labs/Qwen3-Coder-30B-A3B-Instruct-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hrm-labs/Qwen3-Coder-30B-A3B-Instruct-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

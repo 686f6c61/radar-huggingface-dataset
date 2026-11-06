@@ -65,7 +65,7 @@ No se dispone de información sobre otros modelos de borrador EAGLE3 comparables
 | Qwen3-4B-Instruct-2507 (objetivo) | 4.000 millones (aprox.) | 2048 tokens (entrenamiento) | Modelo de chat instructivo | Apache-2.0 |
 | Este modelo de borrador EAGLE3 | 202,7 millones | 512 tokens (ventana de draft) | Acelerador de inferencia via decodificacion especulativa | Apache-2.0 |
 
-La comparación con otros borradores de EAGLE para Qwen3 (por ejemplo, los publicados en el repositorio oficial EAGLE-Qwen3) no está disponible en los datos recopilados. Se recomienda consultar la colección del autor en HuggingFace para ver los otros 46 checkpoints.
+La comparación con otros borradores de EAGLE para Qwen3 (por ejemplo, los publicados en el repositorio oficial EAGLE-Qwen3) no está disponible en los datos recopilados. Se recomienda consultar la colección del autor en Hugging Face para ver los otros 46 checkpoints.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ La comparación con otros borradores de EAGLE para Qwen3 (por ejemplo, los publi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-4-step-95000
+- Repositorio Hugging Face del modelo: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-4-step-95000
 - Checkpoint hermano (época 7, paso 185000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Checkpoint hermano (época 3, paso 75000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000
 - Modelo objetivo Qwen3-4B-Instruct-2507 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

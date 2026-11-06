@@ -23,7 +23,7 @@ No es un modelo generativo ni un sistema de moderación listo para producción: 
 | Tarea | Clasificación de texto binaria: `0 = NON_ANTI_RELIGION`, `1 = ANTI_RELIGION` |
 | Revisiones publicadas | `seed-7`, `seed-13`, `seed-42` (`main` = seed 42) |
 | Tamaño del repositorio | 2,9 GB |
-| Pipeline (HuggingFace) | text-classification |
+| Pipeline (Hugging Face) | text-classification |
 
 ## Arquitectura y entrenamiento
 
@@ -80,9 +80,9 @@ Macro F1 medio entre las semillas 7, 13 y 42: 0,7649 ± 0,0129 (desviación est�
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmTheLast/muril-hinglish-thar | 237.557.762 | 128 tokens en el preprocesado documentado | Clasificación binaria de odio anti-religión en hinglish | No asignada (base Apache-2.0; términos de datasets en revisión) | Público en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| google/muril-base-cased | No disponible en la información proporcionada | No disponible | Modelo base tipo BERT para lenguas indias (sin cabeza de clasificación afinada) | Apache-2.0 | Público en HuggingFace |
-| google-bert/bert-base-multilingual-cased (mBERT) | No disponible en la información proporcionada | No disponible | Modelo base multilingüe; en este estudio se afina y se compara con MuRIL | Apache-2.0 | Público en HuggingFace |
+| OmTheLast/muril-hinglish-thar | 237.557.762 | 128 tokens en el preprocesado documentado | Clasificación binaria de odio anti-religión en hinglish | No asignada (base Apache-2.0; términos de datasets en revisión) | Público en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| google/muril-base-cased | No disponible en la información proporcionada | No disponible | Modelo base tipo BERT para lenguas indias (sin cabeza de clasificación afinada) | Apache-2.0 | Público en Hugging Face |
+| google-bert/bert-base-multilingual-cased (mBERT) | No disponible en la información proporcionada | No disponible | Modelo base multilingüe; en este estudio se afina y se compara con MuRIL | Apache-2.0 | Público en Hugging Face |
 | Otros checkpoints afinados de odio en hinglish | No disponible | No disponible | Clasificación de discurso de odio code-mixed | No disponible | No disponible |
 
 La comparación de rendimiento entre estas alternativas no se puede cerrar con la información disponible: el estudio comparativo mBERT frente a MuRIL existe y está enlazado en la model card, pero los resultados numéricos de esa comparación no se han facilitado en el material proporcionado.
@@ -105,7 +105,7 @@ La comparación de rendimiento entre estas alternativas no se puede cerrar con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmTheLast/muril-hinglish-thar
+- Modelo en Hugging Face: https://huggingface.co/OmTheLast/muril-hinglish-thar
 - Código de investigación (mBERT vs MuRIL, cross-dataset hinglish hate): https://github.com/OmTheLast/mBERT-vs-MuRIL-cross-dataset-hinglish-hate
 - Resultados multi-semilla emparejados: https://github.com/OmTheLast/mBERT-vs-MuRIL-cross-dataset-hinglish-hate/blob/main/docs/matched_multiseed_results.md
 - Borrador del artículo: https://github.com/OmTheLast/mBERT-vs-MuRIL-cross-dataset-hinglish-hate/blob/4650c6eb093d422785284656dd6765d36e438522/paper/application_research_draft.md

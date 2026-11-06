@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_bimanual_so101_towel es una política de imitación basada en Action Chunking with Transformers (ACT), entrenada por el usuario JCY2515 y publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado articular de un robot bimanual SO-101 (12 dimensiones) junto con dos cámaras de muñeca (480x640 RGB cada una) y emite directamente una acción de 12 dimensiones. Su única tarea entrenada es "fold the towel" (doblar una toalla).
+act_bimanual_so101_towel es una política de imitación basada en Action Chunking with Transformers (ACT), entrenada por el usuario JCY2515 y publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado articular de un robot bimanual SO-101 (12 dimensiones) junto con dos cámaras de muñeca (480x640 RGB cada una) y emite directamente una acción de 12 dimensiones. Su única tarea entrenada es "fold the towel" (doblar una toalla).
 
 El modelo tiene 51.680.908 parámetros (unos 51,7 millones) almacenados en formato safetensors, con un repositorio de 1,2 GB. Resuelve el problema clásico de la manipulación fina bimanual con hardware de bajo coste: en lugar de predecir una acción por paso, ACT predice chunks de acciones, lo que reduce el error de composición y mejora la estabilidad temporal en tareas de contacto prolongado como doblar tela.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_bimanual_so101_towel (este) | 51,68 M | ACT (transformer + CVAE) | chunk de acciones, tamano no especificado | apache-2.0 | HuggingFace, 0 descargas |
+| act_bimanual_so101_towel (este) | 51,68 M | ACT (transformer + CVAE) | chunk de acciones, tamano no especificado | apache-2.0 | Hugging Face, 0 descargas |
 | Diffusion Policy (referencia LeRobot) | no disponible | política generativa por difusión | horizonte de predicción configurable | no disponible | implementación en LeRobot |
 | SmolVLA | no disponible en la informacion proporcionada | VLA (vision-language-action) | no disponible | no disponible | implementación en LeRobot |
 | ACT de referencia (paper 2304.13705) | no disponible | ACT | chunking con temporal ensembling | no disponible | paper y código público |
@@ -97,7 +97,7 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JCY2515/act_bimanual_so101_towel
+- Modelo en Hugging Face: https://huggingface.co/JCY2515/act_bimanual_so101_towel
 - Dataset de entrenamiento: https://huggingface.co/datasets/JCY2515/bimanual_so101_towel_clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=JCY2515/bimanual_so101_towel_clean
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

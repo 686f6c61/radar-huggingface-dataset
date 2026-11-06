@@ -4,7 +4,7 @@
 
 `VoiceNetCkpt/ds_emolia_1n_smoke` es un checkpoint publicado por el usuario VoiceNetCkpt dentro de una serie de experimentos denominados VoiceCLAP. Segun la model card, se trata de una ejecucion de entrenamiento concreta ("smoke", es decir, una prueba de humo o corrida corta de verificacion) de la que se publican unicamente los pesos finales (`checkpoints/epoch_latest.pt`) junto con los ficheros de configuracion y los resultados de evaluacion de esa corrida. No se incluyen epocas intermedias, estado del optimizador ni registros de entrenamiento, y las rutas locales del sistema de ficheros que aparecian en las configuraciones han sido acortadas.
 
-El repositorio ocupa 1,3 GB y contiene 3 ficheros. No hay pipeline declarado, ni licencia, ni idiomas, ni taman o de parametros documentados en la ficha de HuggingFace. La unica informacion taxonomica disponible son las etiquetas `voiceclap` y `checkpoint`, que situan el artefacto en la familia de experimentos VoiceCLAP, habitualmente asociada a modelos contrastivos de audio y texto, aunque esto no se confirma en la documentacion publicada.
+El repositorio ocupa 1,3 GB y contiene 3 ficheros. No hay pipeline declarado, ni licencia, ni idiomas, ni taman o de parametros documentados en la ficha de Hugging Face. La unica informacion taxonomica disponible son las etiquetas `voiceclap` y `checkpoint`, que situan el artefacto en la familia de experimentos VoiceCLAP, habitualmente asociada a modelos contrastivos de audio y texto, aunque esto no se confirma en la documentacion publicada.
 
 Su relevancia es, por tanto, limitada y de caracter interno: se trata de un artefacto de trazabilidad para una serie de experimentos, no de un modelo listo para produccion ni de una release con garantias. Cualquier evaluacion seria requiere descargar los ficheros de configuracion incluidos para determinar arquitectura real, numero de parametros y tarea objetivo.
 
@@ -72,7 +72,7 @@ No hay modelos comparables confirmados en la informacion proporcionada. La unica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VoiceNetCkpt/ds_emolia_1n_smoke | no disponible | no disponible | no disponible | HuggingFace, 3 ficheros, 1,3 GB | Checkpoint de una corrida concreta |
+| VoiceNetCkpt/ds_emolia_1n_smoke | no disponible | no disponible | no disponible | Hugging Face, 3 ficheros, 1,3 GB | Checkpoint de una corrida concreta |
 | Alternativas de la familia audio-texto contrastivo | no disponible | no disponible | no disponible | no disponible | Categoria inferida por la etiqueta, sin confirmar |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No hay modelos comparables confirmados en la informacion proporcionada. La unica
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_emolia_1n_smoke
+- Pagina del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_emolia_1n_smoke
 - Indice de todas las corridas VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este checkpoint en la busqueda web realizada.

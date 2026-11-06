@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT user-review es un modelo de lenguaje basado en la arquitectura BERT, publicado en HuggingFace por el usuario fatih3113 bajo licencia MIT. El nombre sugiere un ajuste fino de IndoBERT (el modelo BERT preentrenado para indonesio) orientado a la clasificación o el análisis de reseñas de usuarios, aunque la model card no aporta ninguna descripción funcional, datos de entrenamiento ni detalles sobre la tarea concreta. El repositorio contiene únicamente los pesos en formato safetensors y la declaración de licencia.
+IndoBERT user-review es un modelo de lenguaje basado en la arquitectura BERT, publicado en Hugging Face por el usuario fatih3113 bajo licencia MIT. El nombre sugiere un ajuste fino de IndoBERT (el modelo BERT preentrenado para indonesio) orientado a la clasificación o el análisis de reseñas de usuarios, aunque la model card no aporta ninguna descripción funcional, datos de entrenamiento ni detalles sobre la tarea concreta. El repositorio contiene únicamente los pesos en formato safetensors y la declaración de licencia.
 
 Con 124.442.882 parámetros, el tamaño es coherente con el de un BERT-base multilingüe o un IndoBERT-base, lo que lo sitúa en la categoría de modelos encoder pequeños, adecuados para tareas de comprensión del lenguaje (clasificación, extracción, ranking) más que para generación de texto libre. La ausencia de información sobre el pipeline, los idiomas soportados y el conjunto de datos de ajuste limita seriamente cualquier evaluación rigurosa.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16: alrededor de 0,25 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; una NVIDIA T4, RTX 3060 o superior es más que suficiente. También funciona en CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (GTX 1650, RTX 2060, RTX 4090, etc.), e incluso en Raspberry Pi para inferencia en CPU con latencias moderadas.
-- Opciones de despliegue: HuggingFace Transformers, Text Embeddings Inference (TEI) para embeddings, ONNX Runtime y TorchScript. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión manual.
+- Opciones de despliegue: Hugging Face Transformers, Text Embeddings Inference (TEI) para embeddings, ONNX Runtime y TorchScript. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión manual.
 - Latencia y throughput: no disponibles; al ser un encoder de 124 millones de parámetros, se espera un throughput alto en GPU (miles de secuencias por segundo en lotes), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fatih3113/indobert_user-review | 124,4 M | no disponible | MIT | HuggingFace, 0 descargas |
-| IndoBERT base (indobenchmark) | ~124 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
-| BERT-base multilingual (Google) | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, muy usado |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace, muy usado |
+| fatih3113/indobert_user-review | 124,4 M | no disponible | MIT | Hugging Face, 0 descargas |
+| IndoBERT base (indobenchmark) | ~124 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
+| BERT-base multilingual (Google) | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, muy usado |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face, muy usado |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no existen métricas de rendimiento publicadas para este modelo. Frente a IndoBERT base, el modelo aquí descrito no aporta documentación sobre su ajuste ni garantías de calidad; frente a BERT-base multilingual y XLM-RoBERTa, carece de la validación comunitaria y de los benchmarks asociados a esos modelos.
 
@@ -82,7 +82,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que no existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fatih3113/indobert_user-review
+- Hugging Face: https://huggingface.co/fatih3113/indobert_user-review
 - IndoBERT (modelo base de referencia): https://huggingface.co/indobenchmark/indobert-base-p1
 - BERT (paper original): https://arxiv.org/abs/1810.04805
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

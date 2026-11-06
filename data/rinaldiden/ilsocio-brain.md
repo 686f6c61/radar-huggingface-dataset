@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ilsocio-brain es un repositorio de HuggingFace publicado por el usuario rinaldiden que funciona como archivo versionado de entrenamientos, no como un modelo único. Está construido sobre el modelo base mlx-community/Qwen2.5-3B-Instruct-4bit y contiene adaptadores LoRA, pesos fusionados en safetensors, datos de entrenamiento en formato MLX y un clasificador de intención en joblib. El objetivo declarado es servir de histórico del proyecto ilsocio-brain, un asistente conversacional orientado a la gestión de negocios italianos (régimen forfettario, partita IVA, facturación, apertura de actividad).
+ilsocio-brain es un repositorio de Hugging Face publicado por el usuario rinaldiden que funciona como archivo versionado de entrenamientos, no como un modelo único. Está construido sobre el modelo base mlx-community/Qwen2.5-3B-Instruct-4bit y contiene adaptadores LoRA, pesos fusionados en safetensors, datos de entrenamiento en formato MLX y un clasificador de intención en joblib. El objetivo declarado es servir de histórico del proyecto ilsocio-brain, un asistente conversacional orientado a la gestión de negocios italianos (régimen forfettario, partita IVA, facturación, apertura de actividad).
 
 La arquitectura del sistema completo es un router más adaptadores especializados: dos LoRA entrenados por separado para las tareas de extracción de datos estructurados (estrazione) y de conversación, más un clasificador router_intento.joblib que decide qué adaptador atiende cada turno. El autor recomienda como combinación utilizable lora_estrazione_v1.7/finale junto con lora_conversazione_v1.6/finale, y describe explícitamente las variantes v1.8 como experimentos fallidos sobre el conversacional.
 
@@ -26,7 +26,7 @@ Su relevancia es muy acotada: no es un modelo generalista ni compite en benchmar
 
 ## Arquitectura y entrenamiento
 
-El entrenamiento se realiza con mlx_lm.lora sobre el modelo base Qwen2.5-3B-Instruct-4bit, con hiperparámetros comunes declarados en la versión 1.5: 400 iteraciones, batch 1, 16 capas afectadas por el LoRA y learning rate 1e-4. Las versiones posteriores amplían el número de iteraciones (800 en v1.6, 900 y 2400 en v1.8, 2000 en la variante con datos curados). Los adaptadores se separan por tarea: uno de extracción de campos y otro de conversación, con modelos fusionados en safetensors para uso en HuggingFace y adaptadores nativos para MLX.
+El entrenamiento se realiza con mlx_lm.lora sobre el modelo base Qwen2.5-3B-Instruct-4bit, con hiperparámetros comunes declarados en la versión 1.5: 400 iteraciones, batch 1, 16 capas afectadas por el LoRA y learning rate 1e-4. Las versiones posteriores amplían el número de iteraciones (800 en v1.6, 900 y 2400 en v1.8, 2000 en la variante con datos curados). Los adaptadores se separan por tarea: uno de extracción de campos y otro de conversación, con modelos fusionados en safetensors para uso en Hugging Face y adaptadores nativos para MLX.
 
 La evolución del dataset es el núcleo técnico documentado. La v1.5 introduce hard negatives en extracción, sobremuestreo de conversaciones multi-turno y división del dataset por conversación para evitar filtración de turnos entre train y validación. La v1.6 añade ejemplos cold-start (saludos y cháchara con contexto vacío, sobremuestreados x4) para evitar que el modelo pivotase forzosamente hacia el régimen forfettario o inventase biografías, y positivos específicos de nueva_attivita. La v1.7 amplía el router a edad, residencia, "ponerme por mi cuenta" y revisiones, e incorpora escenarios con contradicciones (facturación, edad o oficio revisados) mediante un campo dedicado. La v1.8 documenta un experimento con 313 conversaciones generadas y filtradas por gate más evaluador, sin los aproximadamente 172 ejemplos curados a mano: el resultado declarado es que el componente conversacional no se mantiene coherente a ningún número de iteraciones (0,34, 0,77 y 2,03 épocas, con sobreajuste al aumentar), y solo recupera coherencia con los datos curados.
 
@@ -91,7 +91,7 @@ La diferencia relevante no es de rendimiento, sino de naturaleza: ilsocio-brain 
 
 ## Limitaciones y advertencias
 
-- La model card indica que el repositorio es privado y que solo el autor accede a él, lo que contradice su presencia en una ficha pública de HuggingFace y genera incertidumbre sobre el acceso real a los pesos.
+- La model card indica que el repositorio es privado y que solo el autor accede a él, lo que contradice su presencia en una ficha pública de Hugging Face y genera incertidumbre sobre el acceso real a los pesos.
 - La licencia figura como "other" sin texto de términos publicado, por lo que no se puede confirmar ni descartar el uso comercial; en la práctica, tratarlo como no apto para producción comercial sin aclaración del autor.
 - Registra 0 descargas y 0 likes, sin validación externa ni revisión por terceros.
 - No hay benchmarks, métricas objetivas ni evaluación independiente; toda la validación es cualitativa y procede del propio autor.
@@ -104,6 +104,6 @@ La diferencia relevante no es de rendimiento, sino de naturaleza: ilsocio-brain 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rinaldiden/ilsocio-brain
+- Modelo en Hugging Face: https://huggingface.co/rinaldiden/ilsocio-brain
 - Modelo base: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web realizada: los resultados devueltos corresponden a páginas de productos químicos en japonés, sin relación con el modelo.

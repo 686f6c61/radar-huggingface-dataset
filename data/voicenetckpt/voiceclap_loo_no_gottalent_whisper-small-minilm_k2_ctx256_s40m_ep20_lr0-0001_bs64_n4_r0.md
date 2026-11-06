@@ -87,12 +87,12 @@ La comparacion directa con alternativas de la misma categoria (modelos CLAP de L
 - Riesgo de sesgo desconocido: al no especificarse la procedencia de los 40 millones de muestras, no es posible evaluar sesgos demograficos, linguisticos o de contenido. El sufijo `no_gottalent` sugiere una curacion del dataset, pero sin detalle.
 - Riesgo de alucinacion: no aplica en el sentido generativo si el modelo solo produce embeddings; en caso de usarse para clasificacion, las etiquetas asignadas pueden ser incorrectas sin umbral de confianza calibrado.
 - Cero adopcion: 0 descargas y 0 valoraciones implican ausencia de validacion por parte de la comunidad.
-- Sin soporte de herramientas estandar: no hay pipeline declarado en HuggingFace, ni integracion con librerias de inferencia habituales, lo que eleva el coste de integracion.
+- Sin soporte de herramientas estandar: no hay pipeline declarado en Hugging Face, ni integracion con librerias de inferencia habituales, lo que eleva el coste de integracion.
 - Fechas de creacion y actualizacion muy proximas (11 de octubre de 2026), lo que indica un artefacto recien subido y sin mantenimiento posterior.
 - Idiomas soportados no disponibles: no se puede garantizar un comportamiento correcto fuera del idioma o idiomas del corpus de entrenamiento original.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_gottalent_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_gottalent_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todas las ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente resultados sin relacion con el modelo, la arquitectura VoiceCLAP ni sus autores, por lo que no se incluye ningun enlace adicional.

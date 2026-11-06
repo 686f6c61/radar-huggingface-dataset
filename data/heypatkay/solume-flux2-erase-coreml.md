@@ -92,7 +92,7 @@ Frente al modelo base, esta conversión pierde la generación texto-a-imagen gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heypatkay/solume-flux2-erase-coreml
+- Hugging Face: https://huggingface.co/heypatkay/solume-flux2-erase-coreml
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - LoRA erase_v1: https://huggingface.co/slopshop/erase-v1
 - Repositorio diffusers (referencia de `Flux2KleinPipeline`): https://github.com/huggingface/diffusers

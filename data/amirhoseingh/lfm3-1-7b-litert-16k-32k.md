@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmirhoseinGH/LFM3-1.7B-LiteRT-16K-32K
+- Modelo en Hugging Face: https://huggingface.co/AmirhoseinGH/LFM3-1.7B-LiteRT-16K-32K
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Pull request de la receta comunitaria en Google AI Edge: https://github.com/google-ai-edge/litert-samples/pull/505
 - Receta de conversión (revisión fijada): https://github.com/john-rocky/litert-samples/tree/f20106802e8dbbe244fb6b510fe5db4633fa0da1/models/lfm/lfm3_1_7b/converted

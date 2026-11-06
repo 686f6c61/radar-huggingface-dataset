@@ -112,7 +112,7 @@ Frente a alternativas externas de la misma categoria (modelos base en ingles de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
 - Dataset de entrenamiento: https://huggingface.co/datasets/Skylion007/openwebtext
 - Brazo GPT-2 emparejado: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Brazo `attention_potential`: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential

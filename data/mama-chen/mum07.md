@@ -4,7 +4,7 @@
 
 ## Resumen
 
-mama-chen/mum07 es un repositorio de modelo alojado en HuggingFace por el usuario mama-chen. En el momento de la consulta, la model card no incluye informacion sustantiva: no se declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni procedimiento de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 2,3 GB, y las etiquetas asociadas, limitadas a `region:us`.
+mama-chen/mum07 es un repositorio de modelo alojado en Hugging Face por el usuario mama-chen. En el momento de la consulta, la model card no incluye informacion sustantiva: no se declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni procedimiento de entrenamiento. El unico dato objetivo disponible es el tamano del repositorio, 2,3 GB, y las etiquetas asociadas, limitadas a `region:us`.
 
 El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 24 de septiembre de 2026 con apenas 15 segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o una publicacion de prueba sin iteracion posterior. No hay evidencia de mantenimiento, versionado ni documentacion adicional.
 
@@ -95,6 +95,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mama-chen/mum07
+- Hugging Face: https://huggingface.co/mama-chen/mum07
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 - Los resultados de la busqueda web corresponden a entidades homonimas sin relacion tecnica: https://mama-musicandconvention.com/, https://www.allocine.fr/film/fichefilm_gen_cfilm=196148.html, https://en.wikipedia.org/wiki/Mama_(2013_film), https://fr.wikipedia.org/wiki/Mama_(film)

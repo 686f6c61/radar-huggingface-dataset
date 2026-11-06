@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pourasrp/star-A2
+- Modelo en Hugging Face: https://huggingface.co/pourasrp/star-A2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/pourasrp/star_v1
 - Pesos por token: https://huggingface.co/datasets/pourasrp/star-weights

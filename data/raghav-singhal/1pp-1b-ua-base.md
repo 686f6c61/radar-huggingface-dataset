@@ -25,7 +25,7 @@ La arquitectura es un decoder transformer convencional estilo Llama: 24 capas, d
 
 El pretraining se realizó sobre 47,8 millones de documentos reescritos como conversaciones (63,0B tokens en formato conversacional, frente a 66,2B tokens de los documentos originales). Se aplicó pérdida tanto en turnos de usuario como de asistente, sin pérdida sobre `<|endoftext|>`. El entrenamiento duró 31.777 pasos con batch global de 512×4.096 tokens, enmascaramiento de atención entre documentos y empaquetado best-fit con asignación de documentos alineada por pasos. El optimizador fue Muon (con escalado por forma y LR de matriz 0,005) combinado con Adam para embeddings y normas, warmup de 2.000 pasos, tasa constante y decaimiento lineal en el último 10% hasta 1/100, weight decay 0,1 y precisión bf16.
 
-Las pérdidas de validación por token (sobre 2.433 documentos held-out, checkpoint final) fueron: 1,492 en texto de asistente, 1,392 en texto de usuario y 3,216 en texto de documento. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con diferencias absolutas inferiores a 0,0025.
+Las pérdidas de validación por token (sobre 2.433 documentos held-out, checkpoint final) fueron: 1,492 en texto de asistente, 1,392 en texto de usuario y 3,216 en texto de documento. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con diferencias absolutas inferiores a 0,0025.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ La comparativa es estructural; no hay resultados de rendimiento publicados para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1b-ua-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1b-ua-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Training logs (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - SFT logs (wandb): https://wandb.ai/raghav_singhal/1pp-sft

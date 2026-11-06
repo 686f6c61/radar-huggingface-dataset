@@ -76,7 +76,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-Q8_0-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-Q8_0-GGUF)
 - [Modelo base BF16 (abliterated)](https://huggingface.co/mlasli/Nemotron-3.5-Lightning-30B-A3B-Heretic-Uncensored-BF16)
 - [Modelo original de NVIDIA](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16)
 - [Heretic (herramienta de abliteration)](https://github.com/mlabonne/heretic-llm)

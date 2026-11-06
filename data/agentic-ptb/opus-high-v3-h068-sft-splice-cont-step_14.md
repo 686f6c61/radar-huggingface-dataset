@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para ninguno de estos modelos. La comparat
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_14](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_14)
+- [Hugging Face: agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_14](https://huggingface.co/agentic-ptb/opus-high-v3.h068.sft-splice-cont.step_14)
 - [Dataset del run: agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto: agentic-ptb/INDEX](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

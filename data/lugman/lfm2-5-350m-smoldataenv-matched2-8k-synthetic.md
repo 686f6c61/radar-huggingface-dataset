@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic es un ajuste fino (finetune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un modelo de generación de texto de 354.483.968 parámetros (aproximadamente 354 millones) con licencia Apache 2.0, derivado de la familia LFM2 de Liquid AI y entrenado con la librería Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere un ajuste orientado a datos sintéticos de tipo "SmolDataEnv" con una ventana de 2.8K, aunque la model card no documenta el proceso de entrenamiento ni la composición del dataset.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic es un ajuste fino (finetune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un modelo de generación de texto de 354.483.968 parámetros (aproximadamente 354 millones) con licencia Apache 2.0, derivado de la familia LFM2 de Liquid AI y entrenado con la librería Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere un ajuste orientado a datos sintéticos de tipo "SmolDataEnv" con una ventana de 2.8K, aunque la model card no documenta el proceso de entrenamiento ni la composición del dataset.
 
 El modelo hereda la arquitectura LFM2 del modelo base, una familia de modelos compactos diseñada por Liquid AI para despliegue eficiente en dispositivos y entornos con recursos limitados. Con tan solo 350 millones de parámetros, está pensado para tareas de generación de texto conversacional donde el coste computacional y la latencia importan más que el rendimiento en benchmarks de razonamiento complejo.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un finetune comunit
 
 El modelo es un finetune del base LiquidAI/LFM2.5-350M, por lo que hereda la arquitectura LFM2 definida por Liquid AI. La informacion proporcionada no detalla la arquitectura interna (tipo de atención, capas, dimensiones ocultas ni innovaciones específicas de la familia LFM2), por lo que no es posible describirla con rigor más allá de indicar que se trata de un transformer de generación de texto de 354 millones de parámetros.
 
-Respecto al entrenamiento, la model card únicamente indica que fue entrenado con Unsloth y la librería TRL de HuggingFace, lo que sugiere un proceso de ajuste supervisado (SFT) o preferencias sobre el modelo base. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO, ni hiperparámetros. El nombre del repositorio ("SmolDataEnv-Matched2.8K-Synthetic") apunta a un dataset sintético con ventana de 2.8K, pero no hay documentación que lo confirme.
+Respecto al entrenamiento, la model card únicamente indica que fue entrenado con Unsloth y la librería TRL de Hugging Face, lo que sugiere un proceso de ajuste supervisado (SFT) o preferencias sobre el modelo base. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO, ni hiperparámetros. El nombre del repositorio ("SmolDataEnv-Matched2.8K-Synthetic") apunta a un dataset sintético con ventana de 2.8K, pero no hay documentación que lo confirme.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic (este) | 354M | no disponible | Apache 2.0 | HuggingFace (comunitario) |
-| LiquidAI/LFM2.5-350M (base) | 350M aprox. | no disponible | Apache 2.0 | HuggingFace (oficial) |
-| SmolLM2-360M (HuggingFace) | 360M | no disponible en esta ficha | Apache 2.0 | HuggingFace (oficial) |
-| Qwen2.5-0.5B | 500M aprox. | no disponible en esta ficha | Apache 2.0 | HuggingFace (oficial) |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic (este) | 354M | no disponible | Apache 2.0 | Hugging Face (comunitario) |
+| LiquidAI/LFM2.5-350M (base) | 350M aprox. | no disponible | Apache 2.0 | Hugging Face (oficial) |
+| SmolLM2-360M (Hugging Face) | 360M | no disponible en esta ficha | Apache 2.0 | Hugging Face (oficial) |
+| Qwen2.5-0.5B | 500M aprox. | no disponible en esta ficha | Apache 2.0 | Hugging Face (oficial) |
 
 Nota: los datos de los modelos comparativos no provienen de la informacion proporcionada y deben verificarse en sus respectivas model cards. No se dispone de datos de rendimiento comparativo para este finetune.
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparativos no provienen de la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

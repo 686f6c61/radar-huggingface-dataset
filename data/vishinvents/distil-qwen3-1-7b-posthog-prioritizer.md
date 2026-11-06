@@ -83,7 +83,7 @@ La comparativa es limitada porque el modelo ajustado no documenta sus especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vishinvents/distil-qwen3-1.7b-posthog-prioritizer
+- Hugging Face: https://huggingface.co/vishinvents/distil-qwen3-1.7b-posthog-prioritizer
 - GitHub de Qwen3 (base): https://github.com/QwenLM/Qwen3
 - Guía de fine-tuning de Qwen3-1.7B (distil labs): https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B/summary

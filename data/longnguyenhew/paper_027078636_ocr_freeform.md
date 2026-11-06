@@ -65,5 +65,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/longnguyenhew/paper_027078636_ocr_freeform
+- Repositorio de Hugging Face: https://huggingface.co/longnguyenhew/paper_027078636_ocr_freeform
 - No hay otros enlaces proporcionados por el autor ni encontrados en la búsqueda web que sean específicos de este modelo. Los resultados de la búsqueda web corresponden a proyectos de OCR no relacionados directamente.

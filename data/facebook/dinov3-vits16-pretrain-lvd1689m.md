@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `facebook/dinov3-vits16-pretrain-lvd1689m` es un Vision Transformer (ViT) de tamaño pequeño con parches de 16x16 píxeles, desarrollado por Meta AI (Facebook) para extracción de características de imagen. Forma parte de la familia DINOv3, presentada en el artículo arXiv:2508.10104. Este modelo es una variante pequeña derivada del modelo base `facebook/dinov3-vit7b16-pretrain-lvd1689m`, con un total de 21.596.544 parámetros. Su pipeline principal es `image-feature-extraction`, lo que significa que produce representaciones vectoriales de imágenes para tareas de visión por computador. El acceso al modelo está restringido en HuggingFace y requiere aceptar condiciones de uso antes de poder descargarlo.
+El modelo `facebook/dinov3-vits16-pretrain-lvd1689m` es un Vision Transformer (ViT) de tamaño pequeño con parches de 16x16 píxeles, desarrollado por Meta AI (Facebook) para extracción de características de imagen. Forma parte de la familia DINOv3, presentada en el artículo arXiv:2508.10104. Este modelo es una variante pequeña derivada del modelo base `facebook/dinov3-vit7b16-pretrain-lvd1689m`, con un total de 21.596.544 parámetros. Su pipeline principal es `image-feature-extraction`, lo que significa que produce representaciones vectoriales de imágenes para tareas de visión por computador. El acceso al modelo está restringido en Hugging Face y requiere aceptar condiciones de uso antes de poder descargarlo.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 21.596.544 parámetros en FP32, los pesos ocupan aproximadamente 86 MB. La inferencia puede ejecutarse con menos de 1 GB de VRAM, incluso en CPU.
 - GPU recomendadas: cualquier GPU consumer con al menos 1 GB de VRAM (por ejemplo, RTX 2060, GTX 1660) es suficiente. También es viable en CPU para cargas de trabajo ligeras.
 - No se requieren GPUs de gama alta como A100 o H100 para este modelo.
-- Opciones de despliegue: se puede cargar directamente con la librería Transformers de HuggingFace utilizando el formato safetensors. Es compatible con los endpoints de HuggingFace (`endpoints_compatible`). No aplican vLLM, llama.cpp ni TGI, al ser un modelo de visión.
+- Opciones de despliegue: se puede cargar directamente con la librería Transformers de Hugging Face utilizando el formato safetensors. Es compatible con los endpoints de Hugging Face (`endpoints_compatible`). No aplican vLLM, llama.cpp ni TGI, al ser un modelo de visión.
 - Latencia y throughput estimados: no se disponen de datos oficiales. Dado el tamaño, se espera una latencia muy baja en GPU y aceptable en CPU para imágenes individuales.
 
 ## Comparativa con modelos similares
@@ -56,7 +56,7 @@ No se dispone de información suficiente para comparar con otros modelos en la i
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones de uso en HuggingFace antes de poder descargarlo.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones de uso en Hugging Face antes de poder descargarlo.
 - Licencia "dinov3-license": no es una licencia de código abierto estándar (como Apache 2.0 o MIT). Debe revisarse el texto completo de la licencia para conocer las restricciones de uso comercial y redistribución.
 - No es un modelo generativo: no produce texto ni imágenes; solo extrae características. No debe usarse para tareas de generación.
 - Sesgos: no se han documentado sesgos específicos en la información disponible, pero al ser un modelo preentrenado en datos de visión, puede heredar sesgos de los datos de entrenamiento.
@@ -65,6 +65,6 @@ No se dispone de información suficiente para comparar con otros modelos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
+- Hugging Face: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - GitHub (implementación de referencia): https://github.com/facebookresearch/dinov3
 - Paper (arXiv): https://arxiv.org/abs/2508.10104

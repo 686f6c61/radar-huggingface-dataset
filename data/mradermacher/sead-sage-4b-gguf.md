@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de contexto del modelo base más allá 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SEAD-SAGE-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SEAD-SAGE-4B-GGUF
 - Modelo base: https://huggingface.co/EverywhereSafety/SEAD-SAGE-4B
 - Dataset de ajuste: https://huggingface.co/datasets/EverywhereSafety/SEAD-SFT-v1
 - Página de descargas del autor: https://hf.tst.eu/model#SEAD-SAGE-4B-GGUF

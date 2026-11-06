@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado mediante PEFT sobre el mod
 
 El interés del artefacto es acotado pero real: permite reproducir o inspeccionar un punto intermedio de un SFT sobre un modelo de razonamiento destilado de 7B, sin necesidad de reentrenar. Como adaptador PEFT, no es un modelo autónomo: requiere cargar el modelo base y aplicar los pesos del adaptador, lo que condiciona despliegue, cuantización y licencia.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los campos relevantes (autoría, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". Por tanto, gran parte de las especificaciones de esta ficha se marcan como no disponibles y deben verificarse contra la ficha del modelo base.
+La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los campos relevantes (autoría, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "[More Information Needed]". Por tanto, gran parte de las especificaciones de esta ficha se marcan como no disponibles y deben verificarse contra la ficha del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -79,8 +79,8 @@ Las cifras siguientes son estimaciones orientativas para el modelo base de ~7B s
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115 | no disponible (adaptador sobre base de ~7B) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | ~7B segun nomenclatura | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | consultar ficha del modelo base | HuggingFace |
+| nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115 | no disponible (adaptador sobre base de ~7B) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | ~7B segun nomenclatura | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | consultar ficha del modelo base | Hugging Face |
 | Otros adaptadores LoRA de Rust sobre modelos de 7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento ni de especificaciones verificadas de alternativas en la informacion proporcionada. Cualquier comparacion cuantitativa requeriria consultar las fichas oficiales del modelo base y de otros adaptadores, y ejecutar una evaluacion homogenea.
@@ -100,7 +100,7 @@ No se dispone de datos comparativos de rendimiento ni de especificaciones verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, no guarda relacion con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700

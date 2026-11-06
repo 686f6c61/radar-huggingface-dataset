@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ekbpetrov/tiny-transformer-multitask-distilled-2023` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un transformer de tipo "tiny" orientado a tareas multitarea. Lo publica el usuario ekbpetrov y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no de un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero el autor indica explícitamente que no está entrenado ni evaluado con benchmarks.
+`ekbpetrov/tiny-transformer-multitask-distilled-2023` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un transformer de tipo "tiny" orientado a tareas multitarea. Lo publica el usuario ekbpetrov y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no de un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero el autor indica explícitamente que no está entrenado ni evaluado con benchmarks.
 
 El dato más llamativo es su tamaño: 33.088 parámetros totales según el archivo safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. No hay información sobre vocabulario, tokenizador, longitud de contexto ni idiomas soportados. La arquitectura declarada combina atención con grouped query attention (GQA), fusión por tensor fusion, activación swish y normalización groupnorm, con una receta de entrenamiento por defecto basada en SGD con warmup constante.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento del modelo analizado para una comparación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ekbpetrov/tiny-transformer-multitask-distilled-2023
+- Hugging Face: https://huggingface.co/ekbpetrov/tiny-transformer-multitask-distilled-2023
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ajrayman/personality_final_seed1234_fold4` es un checkpoint de la libreria Transformers publicado por el usuario ajrayman en HuggingFace. Se trata de un modelo fine-tuneado con la libreria `Trainer` (etiqueta `generated_from_trainer`) sobre un dataset que la propia model card identifica como "None", es decir, no documentado. El repositorio ocupa 3,0 GB e incluye pesos en formato safetensors con 125.095.596 parametros totales, un orden de magnitud propio de un encoder tipo BERT/RoBERTa base.
+`ajrayman/personality_final_seed1234_fold4` es un checkpoint de la libreria Transformers publicado por el usuario ajrayman en Hugging Face. Se trata de un modelo fine-tuneado con la libreria `Trainer` (etiqueta `generated_from_trainer`) sobre un dataset que la propia model card identifica como "None", es decir, no documentado. El repositorio ocupa 3,0 GB e incluye pesos en formato safetensors con 125.095.596 parametros totales, un orden de magnitud propio de un encoder tipo BERT/RoBERTa base.
 
 La relevancia de este checkpoint es limitada y de ambito estrictamente experimental: acumula 0 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y su model card es la plantilla autogenerada por `Trainer` sin completar ("More information needed" en descripcion, usos previstos y datos de entrenamiento). Los unicos datos objetivos disponibles son las metricas de evaluacion declaradas por el autor (Loss 0,9114 y Mean RMSE 0,9534) y los hiperparametros de entrenamiento.
 
@@ -81,7 +81,7 @@ No se han encontrado en la informacion disponible modelos comparables con datos 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ajrayman/personality_final_seed1234_fold4 | 125.095.596 | no disponible | Loss 0,9114 / RMSE 0,9534 (validacion, epoca 6) | no disponible | HuggingFace, 0 descargas |
+| ajrayman/personality_final_seed1234_fold4 | 125.095.596 | no disponible | Loss 0,9114 / RMSE 0,9534 (validacion, epoca 6) | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,8 +100,8 @@ No se han encontrado en la informacion disponible modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/personality_final_seed1234_fold4
-- Perfil del autor en HuggingFace: https://huggingface.co/ajrayman
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/personality_final_seed1234_fold4
+- Perfil del autor en Hugging Face: https://huggingface.co/ajrayman
 - Otro repositorio del mismo autor (word vectors de personalidad): https://huggingface.co/ajrayman/personality_wordvectors
 - README de personality_wordvectors: https://huggingface.co/ajrayman/personality_wordvectors/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo asociados: no disponibles en la informacion proporcionada.

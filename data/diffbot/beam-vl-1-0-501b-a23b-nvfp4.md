@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de los mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diffbot/Beam-VL-1.0-501B-A23B-NVFP4
+- Hugging Face: https://huggingface.co/diffbot/Beam-VL-1.0-501B-A23B-NVFP4
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Drafter estandar de Reflection: https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2
 - Revision v1: `hf download diffbot/Beam-VL-1.0-501B-A23B-NVFP4 --revision v1.0`

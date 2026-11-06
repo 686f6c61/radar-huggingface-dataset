@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MN9-K-CLEAN441-NEMOTRON-NATIVE500K es un adaptador LoRA experimental para razonamiento matemático, publicado por el usuario modrill en HuggingFace. Se trata de un adapter PEFT (Parameter-Efficient Fine-Tuning) que se carga dinámicamente sobre el modelo base Qwen/Qwen3-4B-Base, sin fusionar los pesos. El autor lo describe como un "experimental math LoRA adapter" y aclara explícitamente que no fue ganador en la evaluación oficial original, y que esta publicación no altera ese juicio histórico.
+MN9-K-CLEAN441-NEMOTRON-NATIVE500K es un adaptador LoRA experimental para razonamiento matemático, publicado por el usuario modrill en Hugging Face. Se trata de un adapter PEFT (Parameter-Efficient Fine-Tuning) que se carga dinámicamente sobre el modelo base Qwen/Qwen3-4B-Base, sin fusionar los pesos. El autor lo describe como un "experimental math LoRA adapter" y aclara explícitamente que no fue ganador en la evaluación oficial original, y que esta publicación no altera ese juicio histórico.
 
 El adaptador fue entrenado con un conjunto de datos muy reducido: 611 líneas de texto que suman 500.000 tokens activos, con solo 15 actualizaciones de optimizador. La mezcla incluye 441 líneas de un "backbone" limpio y revisado, 170 líneas de versiones comprimidas de problemas de Nemotron-Math-v2, y 170 líneas adicionales de trayectorias de `gpt-oss-120b` procesadas. El entrenamiento usó LoRA con rank 64, alpha 128 y dropout 0, con una ventana de contexto máxima de 32.768 tokens.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - Al ser un adaptador sobre Qwen3-4B-Base, los requisitos de hardware son los del modelo base más el overhead del adaptador (mínimo).
 - El base Qwen3-4B en FP16 requiere aproximadamente 8 GB de VRAM solo para los pesos, más memoria para activaciones y KV cache. Con cuantización (por ejemplo, 4-bit) puede caber en GPUs consumer de 8 GB, aunque no se han probado configuraciones específicas.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) para inferencia en FP16 o cuantizada. Para entrenamiento o fine-tuning adicional, se necesitaría más memoria (16 GB o más).
-- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con HuggingFace Transformers + PEFT, o exportar a formatos como GGUF si se fusiona previamente con el base. No se han probado integraciones con vLLM, Ollama o TGI.
+- Opciones de despliegue: al ser un adapter PEFT, se puede cargar con Hugging Face Transformers + PEFT, o exportar a formatos como GGUF si se fusiona previamente con el base. No se han probado integraciones con vLLM, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,5 +76,5 @@ No disponible. No se han publicado comparaciones con otros adaptadores o modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: [modrill/MN9-K-CLEAN441-NEMOTRON-NATIVE500K](https://huggingface.co/modrill/MN9-K-CLEAN441-NEMOTRON-NATIVE500K)
+- Repositorio Hugging Face: [modrill/MN9-K-CLEAN441-NEMOTRON-NATIVE500K](https://huggingface.co/modrill/MN9-K-CLEAN441-NEMOTRON-NATIVE500K)
 - Modelo base: [Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base) (revisión `906bfd4b4dc7f14ee4320094d8b41684abff8539`)

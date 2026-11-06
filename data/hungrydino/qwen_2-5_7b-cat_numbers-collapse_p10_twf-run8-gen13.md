@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino y subido a HuggingFace. El nombre del repositorio sugiere que se trata de un experimento de ajuste fino orientado a tareas con números (posiblemente clasificación o generación de secuencias numéricas), aunque la model card no proporciona detalles sobre la tarea concreta ni el dataset utilizado. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente.
+Este modelo es un fine-tuning del modelo `unsloth/Qwen2.5-7B-Instruct`, desarrollado por el usuario HungryDino y subido a Hugging Face. El nombre del repositorio sugiere que se trata de un experimento de ajuste fino orientado a tareas con números (posiblemente clasificación o generación de secuencias numéricas), aunque la model card no proporciona detalles sobre la tarea concreta ni el dataset utilizado. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente.
 
 La relevancia de este modelo es limitada: se trata de un checkpoint experimental sin documentación adicional, sin métricas de rendimiento publicadas y sin comunidad asociada (0 descargas, 0 likes). Su interés principal reside en que demuestra el flujo de trabajo de fine-tuning con Unsloth sobre Qwen2.5, pero no aporta información útil para evaluar su calidad o aplicabilidad en tareas reales. El tamaño del repositorio (0.1 GB) sugiere que podría contener un adaptador LoRA o pesos parciales, aunque no se especifica.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada: se trata de un checkpoint experimental
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta del modelo no se detalla en la informacion disponible. Al ser un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, se hereda la arquitectura base de Qwen2.5: un transformer decoder-only con atencion por ventanas deslizantes y soporte para contexto largo. El entrenamiento se realizo con Unsloth, una libreria que acelera el fine-tuning mediante kernels optimizados, y con TRL (Transformer Reinforcement Learning) de HuggingFace, que permite tecnicas como Supervised Fine-Tuning (SFT) o Preference Optimization. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+La arquitectura exacta del modelo no se detalla en la informacion disponible. Al ser un fine-tuning de `unsloth/Qwen2.5-7B-Instruct`, se hereda la arquitectura base de Qwen2.5: un transformer decoder-only con atencion por ventanas deslizantes y soporte para contexto largo. El entrenamiento se realizo con Unsloth, una libreria que acelera el fine-tuning mediante kernels optimizados, y con TRL (Transformer Reinforcement Learning) de Hugging Face, que permite tecnicas como Supervised Fine-Tuning (SFT) o Preference Optimization. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 El nombre del repositorio incluye los terminos "cat_numbers", "collapse", "p10" y "twf", que podrian hacer referencia a un dataset de numeros con colapso de etiquetas y una configuracion especifica de entrenamiento, pero no hay documentacion que lo confirme.
 
@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen13
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen13
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5 (modelo base): https://github.com/mx4ai/qwen2.5

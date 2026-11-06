@@ -19,7 +19,7 @@ Su relevancia actual es operativa: los clasificadores de seguridad se despliegan
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
 | Idiomas soportados | Ingles (en); corpus de entrenamiento y evaluacion principalmente en ingles |
 | Licencia | Llama 3.2 Community License, sujeta a la politica de uso aceptable del modelo base |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el modelo base en formato HuggingFace |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el modelo base en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ Ambos modelos produjeron cero salidas invalidas en el conjunto de retencion. No 
 
 | Modelo | Parametros | Contexto | Exactitud binaria (todos, 910) | Recall inseguro | Falsos positivos en seguro | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
-| Llama-Guard-3-1B-Confusable-Guard-LoRA (adaptador) | 1B + LoRA rango 16 | No disponible | 89,34 % | 81,54 % | 2,86 % | Llama 3.2 Community | HuggingFace, requiere modelo base con acceso restringido |
-| Llama-Guard-3-1B (base, congelado) | 1B | No disponible | 74,51 % | 63,74 % | 14,73 % | Llama 3.2 Community | HuggingFace, acceso restringido (gated) |
+| Llama-Guard-3-1B-Confusable-Guard-LoRA (adaptador) | 1B + LoRA rango 16 | No disponible | 89,34 % | 81,54 % | 2,86 % | Llama 3.2 Community | Hugging Face, requiere modelo base con acceso restringido |
+| Llama-Guard-3-1B (base, congelado) | 1B | No disponible | 74,51 % | 63,74 % | 14,73 % | Llama 3.2 Community | Hugging Face, acceso restringido (gated) |
 | Llama Guard 3 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Llama 3.2 Community | No disponible en la informacion proporcionada |
 | Normalizacion Unicode previa (NFKC) mas clasificador base | No aplica (preprocesado) | No aplica | No disponible; no se aportan mediciones de esta alternativa | No disponible | No disponible | No aplica | Implementable sin dependencias de modelos |
 
@@ -89,13 +89,13 @@ La unica comparacion cuantitativa publicada es contra el propio modelo base. Las
 - El corpus de entrenamiento y evaluacion es principalmente en ingles; no hay garantias de comportamiento en otros idiomas.
 - Existe una regresion medible en texto limpio: 99,23 % de exactitud binaria y 98,46 % de recall de inseguro frente al 100 % del modelo base en el subconjunto limpio de 130 registros.
 - La licencia es la Llama 3.2 Community License, que impone restricciones de uso comercial y obligaciones de atribucion; el adaptador queda ademas sujeto a la politica de uso aceptable del modelo base.
-- El modelo base es de acceso restringido (gated): es necesario solicitar acceso en HuggingFace y aceptar la licencia de Meta antes de poder usar el adaptador.
+- El modelo base es de acceso restringido (gated): es necesario solicitar acceso en Hugging Face y aceptar la licencia de Meta antes de poder usar el adaptador.
 - Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada, dado que el modelo se emplea como clasificador y no como generador abierto en la evaluacion presentada.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en septiembre de 2026; se trata de un artefacto sin validacion comunitaria independiente.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/aascott/Llama-Guard-3-1B-Confusable-Guard-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/aascott/Llama-Guard-3-1B-Confusable-Guard-LoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B
 - Codigo de entrenamiento y evaluacion: https://github.com/aauscott/confusable-text-guard
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes al modelo (corresponden a paginas de ayuda de inicio de sesion de Gmail).

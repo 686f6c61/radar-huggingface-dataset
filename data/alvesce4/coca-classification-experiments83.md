@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca-classification-experiments83 es un repositorio publicado por el usuario Alvesce4 en HuggingFace que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de clasificación. Se distribuye como un paquete de código y configuración: un archivo `model.py` con la implementación y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido para pruebas de humo.
+Coca-classification-experiments83 es un repositorio publicado por el usuario Alvesce4 en Hugging Face que contiene una implementación propia de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de clasificación. Se distribuye como un paquete de código y configuración: un archivo `model.py` con la implementación y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido para pruebas de humo.
 
 El dato más relevante para evaluarlo es que **no se trata de un modelo entrenado**: la propia model card indica explícitamente que el checkpoint es de inicialización y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros en safetensors es de 16.576, una cifra extremadamente baja que confirma que es un artefacto de desarrollo y no un modelo listo para producción. La etiqueta de escala "large" del repositorio corresponde a la variante de configuración elegida por el autor, no a un modelo de gran tamaño real.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alvesce4/coca-classification-experiments83 | 16.576 | no aplica | sin benchmarks | BSD-3-Clause | HuggingFace |
+| Alvesce4/coca-classification-experiments83 | 16.576 | no aplica | sin benchmarks | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de modelos comparables en la informacion proporcionada. El repositorio no incluye referencias a implementaciones de CoCa con las que compararse, ni cifras de parametros, contexto, rendimiento o licencia de terceros.
@@ -77,7 +77,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 - Modelo no entrenado: el checkpoint `model.safetensors` es de inicializacion. Cualquier salida que produzca antes de un entrenamiento real carece de valor predictivo.
 - Sin auditoria: el autor indica que el checkpoint no ha sido evaluado en robustez, equidad ni transferencia de dominio.
 - Sin benchmarks: no existe ninguna metrica publicada que permita estimar su calidad en una tarea concreta.
-- Carga no estandar: al ser una implementacion propia, las APIs automaticas de HuggingFace requieren un adaptador explicito; no se puede asumir que `AutoModel` funcione directamente.
+- Carga no estandar: al ser una implementacion propia, las APIs automaticas de Hugging Face requieren un adaptador explicito; no se puede asumir que `AutoModel` funcione directamente.
 - Idiomas, contexto y cuantizacion no documentados: no hay informacion sobre lenguas soportadas, ventana de contexto (no aplica a clasificacion) ni formatos de cuantizacion soportados.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe el riesgo de interpretar mal sus salidas como predicciones validas cuando en realidad provienen de pesos aleatorios o no entrenados.
 - Sesgos: no disponibles; no se ha documentado ningun analisis de sesgo.
@@ -87,5 +87,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alvesce4/coca-classification-experiments83
+- Hugging Face: https://huggingface.co/Alvesce4/coca-classification-experiments83
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

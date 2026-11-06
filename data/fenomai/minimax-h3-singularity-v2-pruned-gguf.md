@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minimax-h3-Singularity-V2-Pruned-GGUF (este) | 20.111 M tras poda | no disponible | GGUF (Q3-Q6) | MiniMax H3 Community | HuggingFace, 0 descargas |
-| WarmBloodAban/Minimax-h3_Singularity | no disponible (checkpoint original de 34 GB) | no disponible | safetensors | MiniMax H3 Community | HuggingFace (modelo base) |
-| MiniMax-H3 (original de MiniMax) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace (MiniMaxAI) |
+| Minimax-h3-Singularity-V2-Pruned-GGUF (este) | 20.111 M tras poda | no disponible | GGUF (Q3-Q6) | MiniMax H3 Community | Hugging Face, 0 descargas |
+| WarmBloodAban/Minimax-h3_Singularity | no disponible (checkpoint original de 34 GB) | no disponible | safetensors | MiniMax H3 Community | Hugging Face (modelo base) |
+| MiniMax-H3 (original de MiniMax) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face (MiniMaxAI) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FenomAI/Minimax-h3-Singularity-V2-Pruned-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FenomAI/Minimax-h3-Singularity-V2-Pruned-GGUF
 - Modelo base: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Modelo original MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE

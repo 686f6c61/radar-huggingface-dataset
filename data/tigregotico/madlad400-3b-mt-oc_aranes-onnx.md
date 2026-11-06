@@ -6,7 +6,7 @@ El modelo `TigreGotico/madlad400-3b-mt-oc_aranes-onnx` es una exportación a for
 
 La arquitectura subyacente es la de MADLAD-400, un transformer encoder-decoder de tipo T5 con aproximadamente 3.000 millones de parámetros. La exportación a ONNX la ha realizado TigreGotico mediante un pipeline automatizado con `optimum-cli`, manteniendo la licencia Apache 2.0 del modelo original. La relevancia de esta ficha radica en que combina dos elementos poco habituales: cobertura de una lengua minoritaria (aranés) y un formato de despliegue (ONNX Runtime) orientado a producción, con verificación de paridad frente al modelo original en `transformers`.
 
-La model card advierte explícitamente que la conversión y la verificación fueron realizadas por un pipeline automatizado (Claude Opus 5.5 vía Claude Code) y que ninguna persona ha revisado la tarjeta. Esta ficha se limita a los datos publicados en dicha tarjeta y en los metadatos de HuggingFace.
+La model card advierte explícitamente que la conversión y la verificación fueron realizadas por un pipeline automatizado (Claude Opus 5.5 vía Claude Code) y que ninguna persona ha revisado la tarjeta. Esta ficha se limita a los datos publicados en dicha tarjeta y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ La comparativa se limita a la familia MADLAD-400 porque no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/madlad400-3b-mt-oc_aranes-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/madlad400-3b-mt-oc_aranes-onnx
 - Modelo base del ajuste fino: https://huggingface.co/Ugiat/madlad400-3b-mt-oc_aranes
 - Modelo original de Google: https://huggingface.co/google/madlad400-3b-mt
 - Paper de MADLAD-400: no disponible en la información proporcionada

@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - La reproducción de la evaluación requiere los "environment locks and tool adapters" del framework AGRPO, que no se detallan en la model card.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/C1oudX/AGRPO-Qwen3.5-9B-step24
+- Modelo en Hugging Face: https://huggingface.co/C1oudX/AGRPO-Qwen3.5-9B-step24
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/c202236235762e1c871ad0ccb60c8ee5ba337b9a/LICENSE
 - Metadatos de entrenamiento: https://huggingface.co/C1oudX/AGRPO-Qwen3.5-9B-step24/blob/main/training_metadata.json

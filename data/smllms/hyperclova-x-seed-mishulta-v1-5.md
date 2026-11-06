@@ -70,9 +70,9 @@ El modelo base publica ademas los siguientes resultados en benchmarks oficiales 
 
 | Modelo | Parametros | Contexto | KMMLU (oficial) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyperCLOVAX-SEED-Think-14B (base) | 14,7B | 32k | 0,6649 | HyperCLOVA X SEED | HuggingFace |
-| **HyperCLOVA-X-SEED-MISHULTA-v1.5** | 14,7B | 32k | ~0,696 (muestra propia) | HyperCLOVA X SEED | HuggingFace |
-| EXAONE 3.5-7.8B (LG) | 7,8B | 32k | no comparable | EXAONE License | HuggingFace |
+| HyperCLOVAX-SEED-Think-14B (base) | 14,7B | 32k | 0,6649 | HyperCLOVA X SEED | Hugging Face |
+| **HyperCLOVA-X-SEED-MISHULTA-v1.5** | 14,7B | 32k | ~0,696 (muestra propia) | HyperCLOVA X SEED | Hugging Face |
+| EXAONE 3.5-7.8B (LG) | 7,8B | 32k | no comparable | EXAONE License | Hugging Face |
 
 La comparacion con EXAONE no es directa por diferencias de tamaño y licencia. El principal valor de este modelo es su mejora sobre el base en tareas de razonamiento coreano, con el coste de una licencia restrictiva que obliga a que los derivados empiecen por "HyperCLOVA X".
 
@@ -88,7 +88,7 @@ La comparacion con EXAONE no es directa por diferencias de tamaño y licencia. E
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1.5)
+- [Modelo en Hugging Face](https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1.5)
 - [Modelo base HyperCLOVAX-SEED-Think-14B](https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B)
 - [Documentacion de transformers para HyperCLOVA X SEED](https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/hyperclovax.md)
 - [HyperCLOVA X Technical Report (arXiv)](https://arxiv.org/html/2404.01954v1)

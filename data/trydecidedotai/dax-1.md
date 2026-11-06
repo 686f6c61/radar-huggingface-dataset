@@ -69,7 +69,7 @@ No se dispone de una comparativa sistematica con otros modelos de la misma categ
 ## Limitaciones y advertencias
 
 - Licencia de investigacion: el modelo se distribuye bajo la licencia "dax-1-research-license", que restringe su uso a fines de investigacion. No se permite su uso comercial sin autorizacion explicita de Decide.
-- Acceso restringido: el repositorio es gated; es necesario solicitar acceso y aceptar las condiciones en HuggingFace.
+- Acceso restringido: el repositorio es gated; es necesario solicitar acceso y aceptar las condiciones en Hugging Face.
 - Especializacion limitada: el modelo esta optimizado para DAX y hojas de calculo; su rendimiento en tareas generales de generacion de texto o codigo fuera de este dominio no esta evaluado y probablemente sea inferior al de modelos generalistas de su tamano.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar formulas que parecen correctas pero no compilan o producen resultados incorrectos. Se recomienda validar siempre la salida en un entorno de pruebas.
 - Idiomas: no se ha especificado que idiomas soporta; es probable que el entrenamiento se haya realizado principalmente en ingles, dado el contexto de Power BI y DAX.
@@ -78,7 +78,7 @@ No se dispone de una comparativa sistematica con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trydecidedotai/Dax-1
+- Repositorio Hugging Face: https://huggingface.co/trydecidedotai/Dax-1
 - Blog de presentacion: https://www.trydecide.ai/blog/introducing-dax-1-efficient-executable-spreadsheet-editing
 - Anuncio en X (Twitter) con enlace al technical report: https://x.com/trydecideAI/status/2093326742215659874
 - DAXBench (benchmark de DAX): https://www.daxbench.com/

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| elijahleo/moloact_2c_5 | 5.591.928.368 | no disponible | apache-2.0 | HuggingFace (24 descargas) | Fine-tuning de MolmoAct2 sobre manufacturing_finetune |
+| elijahleo/moloact_2c_5 | 5.591.928.368 | no disponible | apache-2.0 | Hugging Face (24 descargas) | Fine-tuning de MolmoAct2 sobre manufacturing_finetune |
 | MolmoAct2 (base, Ai2) | no disponible | no disponible | no disponible en esta ficha | Blog de Ai2 | Modelo fundacional original; esta ficha es un fine-tuning |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | no disponible | HuggingFace / LeRobot | Alternativas de la misma librería; no se dispone de datos comparativos en la información proporcionada |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | no disponible | Hugging Face / LeRobot | Alternativas de la misma librería; no se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elijahleo/moloact_2c_5
+- Modelo en Hugging Face: https://huggingface.co/elijahleo/moloact_2c_5
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2
 - Guía de LeRobot para MolmoAct2: https://huggingface.co/docs/lerobot/main/en/molmoact2
 - Documentación completa de LeRobot: https://huggingface.co/docs/lerobot/index

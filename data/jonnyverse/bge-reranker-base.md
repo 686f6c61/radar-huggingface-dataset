@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos del modelo original y de alternativas 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/bge-reranker-base
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/bge-reranker-base
 - Modelo base (BAAI/bge-reranker-base): https://huggingface.co/BAAI/bge-reranker-base
 - Documentación oficial de BGE: https://bge-model.com/bge/bge_reranker.html
 - Sitio de BAAI BGE: https://bge.baai.ac.cn/

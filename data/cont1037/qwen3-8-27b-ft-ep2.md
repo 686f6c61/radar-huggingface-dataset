@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.8-27b-ft-ep2 es un ajuste fino (fine-tune) de parametros completos del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en HuggingFace. El repositorio contiene los pesos en bfloat16 y su tamano total declarado es de 55,6 GB, con 27.781.427.952 parametros reales confirmados en los ficheros safetensors. Se distribuye bajo licencia Apache-2.0, heredada del modelo base.
+qwen3.8-27b-ft-ep2 es un ajuste fino (fine-tune) de parametros completos del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en Hugging Face. El repositorio contiene los pesos en bfloat16 y su tamano total declarado es de 55,6 GB, con 27.781.427.952 parametros reales confirmados en los ficheros safetensors. Se distribuye bajo licencia Apache-2.0, heredada del modelo base.
 
 El pipeline declarado es image-text-to-text, lo que situa al modelo en la categoria de modelos multimodales (vision-lenguaje) con capacidad conversacional. La model card es extremadamente escueta: no documenta el procedimiento de entrenamiento, el dataset utilizado, el numero de tokens de entrenamiento ni los resultados de evaluacion. El autor remite a los ficheros NOTICE y LICENSE del repositorio para los detalles de cambios y licencia.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un ajuste 
 | Modelo base | Qwen/Qwen3.8-27B |
 | Pipeline declarado | image-text-to-text |
 | Tipo de ajuste | fine-tune de parametros completos (full-parameter) |
-| Fecha de creacion | 2026-10-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-11 (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-10-11 |
 | Descargas / likes | 0 / 0 |
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM minima para inferencia en bfloat16 sin cuantizar: aproximadamente 56 GB solo para pesos, mas el espacio de cache KV y activaciones, lo que en la practica exige del orden de 60-70 GB o mas segun la longitud de contexto.
 - GPU recomendadas para bfloat16: NVIDIA A100 80 GB, H100 80 GB, H200 141 GB o configuraciones multi-GPU (por ejemplo, 2 x A100 40 GB con reparto de pesos). Una unica RTX 4090 de 24 GB no es suficiente en bfloat16.
 - Cabe en GPU de consumo: no en bfloat16. Solo seria viable con cuantizacion de 4 bits (aproximadamente 14-16 GB de pesos), lo que en principio cabria en una RTX 4090 o RTX 3090 de 24 GB, pero el repositorio no publica pesos cuantizados y habria que generarlos por cuenta propia.
-- Opciones de despliegue: transformers (formato nativo del repositorio), vLLM y TGI para servido en GPU, y llama.cpp u Ollama unicamente si se convierte previamente el modelo a GGUF. El tag endpoints_compatible sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (formato nativo del repositorio), vLLM y TGI para servido en GPU, y llama.cpp u Ollama unicamente si se convierte previamente el modelo a GGUF. El tag endpoints_compatible sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo, tiempo hasta el primer token ni rendimiento en lote.
 
 ## Comparativa con modelos similares
@@ -78,11 +78,11 @@ La ausencia de benchmarks impide una comparacion de rendimiento. La tabla siguie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cont1037/qwen3.8-27b-ft-ep2 | 27,78 mil millones | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | HuggingFace |
-| Qwen2.5-VL-32B-Instruct | 32 mil millones aprox. | 128k aprox. | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Gemma 3 27B | 27 mil millones aprox. | 128k aprox. | terminos de licencia Gemma | HuggingFace, Ollama, vLLM |
-| InternVL 2.5 26B | 26 mil millones aprox. | variable | MIT (segun version) | HuggingFace |
+| cont1037/qwen3.8-27b-ft-ep2 | 27,78 mil millones | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | Hugging Face |
+| Qwen2.5-VL-32B-Instruct | 32 mil millones aprox. | 128k aprox. | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Gemma 3 27B | 27 mil millones aprox. | 128k aprox. | terminos de licencia Gemma | Hugging Face, Ollama, vLLM |
+| InternVL 2.5 26B | 26 mil millones aprox. | variable | MIT (segun version) | Hugging Face |
 
 Consideraciones: el modelo aqui descrito no aporta ningun dato de rendimiento que permita situarlo frente a estas alternativas, mientras que las alternativas cuentan con evaluaciones publicas y soporte de herramientas de despliegue ampliamente probadas. La comparacion de contexto y rendimiento queda pendiente de informacion no disponible.
 
@@ -103,7 +103,7 @@ Consideraciones: el modelo aqui descrito no aporta ningun dato de rendimiento qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep2
+- Modelo en Hugging Face: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Fichero NOTICE del repositorio: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep2/blob/main/NOTICE (referenciado en la model card; no verificado)

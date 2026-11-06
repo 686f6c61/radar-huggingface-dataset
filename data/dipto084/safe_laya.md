@@ -88,8 +88,8 @@ El aumento de intentos medios indica que el atacante se ve empujado hacia el top
 
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| safe_laya | Guardrail de entrada binario ALLOW/DECLINE | 421M (421.293.830) | 8.192 tokens | Apache-2.0 | HuggingFace (`Dipto084/safe_laya`) |
-| convaiinnovations/laya-typed-decisions | Modelo base de decisiones tipadas | 421M | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| safe_laya | Guardrail de entrada binario ALLOW/DECLINE | 421M (421.293.830) | 8.192 tokens | Apache-2.0 | Hugging Face (`Dipto084/safe_laya`) |
+| convaiinnovations/laya-typed-decisions | Modelo base de decisiones tipadas | 421M | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Guardrails generativos de 8B (categoria citada en la model card) | Guardrail de entrada/salida | 8B | no disponible | no disponible en la informacion proporcionada | no disponible |
 
 La model card situa explicitamente a safe_laya frente a "los modelos guardrail de 8B con los que pretende convivir", es decir, la categoria de guardrails generativos de ese tamano, pero no se aportan datos de comparacion con ninguno de ellos. La unica comparacion cuantitativa disponible es contra el modelo base stock, donde safe_laya mejora tanto la recall (TPR 0,854 frente a 0,345) como la tasa de falsos positivos (0,107 frente a 0,176) sobre el split retenido de la distribucion de entrenamiento.
@@ -108,7 +108,7 @@ La model card situa explicitamente a safe_laya frente a "los modelos guardrail d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dipto084/safe_laya
+- Modelo en Hugging Face: https://huggingface.co/Dipto084/safe_laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Modelo laya original: https://huggingface.co/convaiinnovations/laya
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dipto084/TRACE_RL_Dataset

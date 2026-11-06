@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de ninguno de los tres artefactos, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wallawalla47/Qwen3.8-27B-Quasar-NinferV3
+- Modelo en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-27B-Quasar-NinferV3
 - Modelo base: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Repositorio del motor (fork): https://github.com/Wallawalla47/ninfer-custom
 - Rama concreta del motor: https://github.com/Wallawalla47/ninfer-custom/tree/port/local-features-2026-09-15

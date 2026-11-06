@@ -6,13 +6,13 @@ PIGEONS es un modelo de subtitulado automático (captioning) de vídeo largo des
 
 La propuesta técnica se apoya en dos componentes: una Galería de Identidades Persistente (Persistent Identity Gallery), construida tras un escaneo previo del vídeo completo, que fija las referencias visuales de los sujetos principales, y un Resumen Narrativo Global Evolutivo (Evolving Overarching Narrative Summary), que se actualiza tras cada clip para mantener el contexto de largo alcance de forma compacta. El modelo genera las descripciones clip a clip condicionadas por ambos elementos.
 
-Arquitectónicamente hereda del modelo base: una arquitectura transformer multimodal con mezcla de expertos (MoE), con 35.259.818.545 parámetros totales según los pesos publicados en safetensors y un repositorio de 70,5 GB. Se distribuye bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, acumula 9 descargas y 0 likes en HuggingFace, por lo que se trata de una publicación reciente y con escasa validación comunitaria.
+Arquitectónicamente hereda del modelo base: una arquitectura transformer multimodal con mezcla de expertos (MoE), con 35.259.818.545 parámetros totales según los pesos publicados en safetensors y un repositorio de 70,5 GB. Se distribuye bajo licencia Apache 2.0 y, en el momento de redactar esta ficha, acumula 9 descargas y 0 likes en Hugging Face, por lo que se trata de una publicación reciente y con escasa validación comunitaria.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con mezcla de expertos (MoE); etiqueta de HuggingFace `qwen3_omni_moe` |
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE); etiqueta de Hugging Face `qwen3_omni_moe` |
 | Parámetros totales | 35.259.818.545 (~35,26 mil millones) |
 | Parámetros activos | ~3 mil millones (según la nomenclatura A3B del modelo base; no desglosado explícitamente en la ficha del autor) |
 | Longitud de contexto | no disponible |
@@ -68,15 +68,15 @@ Estimaciones a partir del tamaño de los pesos publicados (35,26 mil millones de
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PIGEONS | 35,26 mil millones (MoE, ~3 mil millones activos) | no disponible | Apache 2.0 | HuggingFace (9 descargas) |
-| Qwen3-Omni-30B-A3B-Instruct (modelo base) | ~30-35 mil millones (MoE) | no disponible en la información proporcionada | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| PIGEONS | 35,26 mil millones (MoE, ~3 mil millones activos) | no disponible | Apache 2.0 | Hugging Face (9 descargas) |
+| Qwen3-Omni-30B-A3B-Instruct (modelo base) | ~30-35 mil millones (MoE) | no disponible en la información proporcionada | Apache 2.0 | Hugging Face, ampliamente distribuido |
 | Otras alternativas de captioning de vídeo largo | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone, en la información proporcionada, de datos verificables de otros modelos de captioning de vídeo largo (parámetros, contexto, resultados de evaluación o licencia) que permitan una comparación cuantitativa rigurosa. La comparación más directa disponible es con el modelo base, del que PIGEONS hereda arquitectura, tamaño y licencia, diferenciándose por el ajuste específico y por el mecanismo de galería de identidades y resumen narrativo.
 
 ## Limitaciones y advertencias
 
-- Madurez limitada: 9 descargas y 0 likes en HuggingFace, con fecha de creación en octubre de 2026; no hay evidencia comunitaria de uso en producción.
+- Madurez limitada: 9 descargas y 0 likes en Hugging Face, con fecha de creación en octubre de 2026; no hay evidencia comunitaria de uso en producción.
 - Ausencia de benchmarks públicos: el autor no publica cifras en la model card, y la referencia al paper apunta a un identificador de arXiv sin resolver (`2610.xxxxx`) con la cita bibliográfica marcada como `TODO`, por lo que no es posible verificar los resultados declarados.
 - Riesgo de alucinación: como todo modelo generativo aplicado a descripción visual, puede inventar detalles, atributos o acciones no presentes en el vídeo; la galería de identidades mitiga la inconsistencia de nombres, pero no elimina la invención de contenido.
 - Idiomas: no se documenta qué idiomas soporta el ajuste ni la calidad por idioma. El modelo base es multilingüe, pero la ficha no confirma el comportamiento del ajuste.
@@ -88,7 +88,7 @@ No se dispone, en la información proporcionada, de datos verificables de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PIGEONS-Captioner/PIGEONS
+- Modelo en Hugging Face: https://huggingface.co/PIGEONS-Captioner/PIGEONS
 - Página del proyecto: https://pigeons-captioner.github.io/
 - Repositorio en GitHub: https://github.com/PIGEONS-Captioner/PIGEONS
 - Paper (referencia sin resolver en la model card): https://arxiv.org/abs/2610.xxxxx

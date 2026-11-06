@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge` es un modelo de lenguaje publicado en HuggingFace por el usuario `yuhengtu-bytedance`, obtenido mediante la fusion (merge) de cinco checkpoints de entrenamiento. No se trata de un modelo entrenado desde cero, sino de un artefacto de *model merging*: segun la model card, se aplico el metodo Linear de mergekit sobre los checkpoints correspondientes a los pasos globales 6000, 7000, 8000, 9000 y 10000 de un mismo run de entrenamiento, con una media ponderada (pesos 1, 2, 3, 4 y 5 respectivamente) y normalizacion activada.
+`yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge` es un modelo de lenguaje publicado en Hugging Face por el usuario `yuhengtu-bytedance`, obtenido mediante la fusion (merge) de cinco checkpoints de entrenamiento. No se trata de un modelo entrenado desde cero, sino de un artefacto de *model merging*: segun la model card, se aplico el metodo Linear de mergekit sobre los checkpoints correspondientes a los pasos globales 6000, 7000, 8000, 9000 y 10000 de un mismo run de entrenamiento, con una media ponderada (pesos 1, 2, 3, 4 y 5 respectivamente) y normalizacion activada.
 
 El repositorio emplea la arquitectura `gpt_neox` (segun las etiquetas del propio repo), con 6.856.253.440 parametros totales y pesos almacenados en `safetensors` con salida en `bfloat16`, lo que da un tamano de repositorio de 13,7 GB. La model card no aporta informacion sobre el dataset de entrenamiento, el numero de tokens, el contexto maximo, los idiomas soportados ni la licencia de uso.
 
@@ -34,7 +34,7 @@ Al tratarse de una media de pesos del mismo run, la topologia de la red se manti
 
 - Generacion de texto autoregresiva en el pipeline `text-generation` de `transformers`.
 - Uso conversacional: entre las etiquetas figura `conversational`, aunque no se especifica formato de prompt ni plantilla de chat.
-- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse mediante TGI y desplegarse como endpoint en la infraestructura de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse mediante TGI y desplegarse como endpoint en la infraestructura de Hugging Face.
 - Capacidades multilingues: no disponible.
 - Soporte de *tool calling* / *function calling*: no disponible (no se documenta plantilla de herramientas ni formato estructurado).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -95,7 +95,7 @@ La comparacion se limita a parametros, contexto y licencia; no implica equivalen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-6k_7k_8k_9k_10k_weightedavg_merge
 - mergekit (herramienta de fusion citada en la model card): https://github.com/cg123/mergekit
 - Referencia del metodo Linear citada en la model card (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo. Las busquedas devolvieron exclusivamente contenido no relacionado (tutoriales de reinicio del sistema de infotainment del Kia EV6), por lo que no se dispone de papers, blogs, repositorios ni demos adicionales que enlazar.

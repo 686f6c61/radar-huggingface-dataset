@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leviathan3.1 es un repositorio de modelo publicado en HuggingFace por el usuario Archalean bajo identificador Archalean/Leviathan3.1. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us", cero descargas y cero "likes" en el momento de la consulta, sin pipeline declarado y sin idiomas indicados. La model card asociada contiene unicamente la linea de licencia (mit) y ningun otro contenido tecnico.
+Leviathan3.1 es un repositorio de modelo publicado en Hugging Face por el usuario Archalean bajo identificador Archalean/Leviathan3.1. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region "us", cero descargas y cero "likes" en el momento de la consulta, sin pipeline declarado y sin idiomas indicados. La model card asociada contiene unicamente la linea de licencia (mit) y ningun otro contenido tecnico.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineacion ni formato de pesos. Tampoco hay resultados de benchmarks publicados ni documentacion adicional en el repositorio que permita caracterizar el modelo.
 
@@ -77,5 +77,5 @@ No disponible. La ausencia de datos de arquitectura, tamano y rendimiento impide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Archalean/Leviathan3.1
+- Hugging Face: https://huggingface.co/Archalean/Leviathan3.1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

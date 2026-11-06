@@ -2,7 +2,7 @@
 
 ## Resumen
 
-4-iredium-line-newarmA es una política robótica de tipo vision-language-action (VLA) publicada por el usuario ragmishra108 en HuggingFace, entrenada mediante aprendizaje por imitación para una tarea muy concreta: extender queso y colocar salami en una maqueta de pizza dentro de la Robot Pizza Cup. El modelo parte de `lerobot/smolvla_base` (SmolVLA, el VLA compacto del ecosistema LeRobot) y se ha ajustado de forma secuencial sobre un modelo anterior (`4-iredium-line-modelA`) para adaptar la política a un brazo seguidor de reemplazo, después de que el brazo original cambiara.
+4-iredium-line-newarmA es una política robótica de tipo vision-language-action (VLA) publicada por el usuario ragmishra108 en Hugging Face, entrenada mediante aprendizaje por imitación para una tarea muy concreta: extender queso y colocar salami en una maqueta de pizza dentro de la Robot Pizza Cup. El modelo parte de `lerobot/smolvla_base` (SmolVLA, el VLA compacto del ecosistema LeRobot) y se ha ajustado de forma secuencial sobre un modelo anterior (`4-iredium-line-modelA`) para adaptar la política a un brazo seguidor de reemplazo, después de que el brazo original cambiara.
 
 Con 450.046.176 parámetros y un repositorio de 1,2 GB, es un modelo pequeño para los estándares actuales de VLA, lo que lo hace ejecutable en una sola GPU. Su relevancia no está en el rendimiento generalista, sino en el flujo de trabajo que documenta: reajuste de una política preentrenada con datos de replay mezclados con demostraciones nuevas sobremuestreadas, VLM congelado y solo el experto de acciones entrenado, en 1.500 pasos sobre una única RTX PRO 6000. Es un caso práctico de recuperación de una política robótica tras un cambio de hardware.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto / observaciones | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 4-iredium-line-newarmA | 450.046.176 | no disponible | Extender queso y colocar salami (brazo de reemplazo) | no disponible | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en esta ficha (misma familia, ~450 M) | no disponible | Política VLA generalista para manipulación | no disponible | HuggingFace (modelo base) |
+| 4-iredium-line-newarmA | 450.046.176 | no disponible | Extender queso y colocar salami (brazo de reemplazo) | no disponible | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en esta ficha (misma familia, ~450 M) | no disponible | Política VLA generalista para manipulación | no disponible | Hugging Face (modelo base) |
 | 4-iredium-line-modelA | no disponible | no disponible | Misma tarea, brazo original | no disponible | Referenciado en la model card; no verificado |
 | Políticas tipo ACT / Diffusion Policy de LeRobot | no disponible | no disponible | Manipulación por imitación | no disponible | Ecosistema LeRobot |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de otros modelos VLA comparables (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ragmishra108/4-iredium-line-newarmA
+- Modelo en Hugging Face: https://huggingface.co/ragmishra108/4-iredium-line-newarmA
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Repositorio LeRobot (runtime y ecosistema SmolVLA): https://github.com/huggingface/lerobot
 - Paper de SmolVLA (referencia de la arquitectura base): https://arxiv.org/abs/2506.01844

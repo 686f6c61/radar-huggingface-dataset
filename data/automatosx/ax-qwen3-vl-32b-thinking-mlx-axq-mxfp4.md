@@ -75,7 +75,7 @@ No se dispone de comparativas publicadas por el autor. Como referencia estructur
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-MXFP4
+- Checkpoint en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking
 - Hermano 4-bit: https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-4bit
 - Hermano 6-bit: https://huggingface.co/AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit

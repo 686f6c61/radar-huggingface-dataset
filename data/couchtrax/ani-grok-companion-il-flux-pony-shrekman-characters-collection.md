@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ani Grok "Companion" IL&FLUX&Pony | Shrekman Characters Collection es un LoRA de generacion de imagen text-to-image publicado por el usuario couchtrax en HuggingFace, pensado para adaptar el modelo base FLUX.1-dev de Black Forest Labs a la representacion de un personaje concreto. El adaptador se distribuye bajo licencia openrail++ y con la libreria diffusers como formato de carga declarado. No es un modelo fundacional: es un ajuste de bajo rango que se superpone sobre los pesos de FLUX.1-dev, por lo que su comportamiento depende enteramente del modelo base al que se aplique.
+Ani Grok "Companion" IL&FLUX&Pony | Shrekman Characters Collection es un LoRA de generacion de imagen text-to-image publicado por el usuario couchtrax en Hugging Face, pensado para adaptar el modelo base FLUX.1-dev de Black Forest Labs a la representacion de un personaje concreto. El adaptador se distribuye bajo licencia openrail++ y con la libreria diffusers como formato de carga declarado. No es un modelo fundacional: es un ajuste de bajo rango que se superpone sobre los pesos de FLUX.1-dev, por lo que su comportamiento depende enteramente del modelo base al que se aplique.
 
 La unica palabra de activacion documentada en la model card es ANIV1, asociada a la descripcion de una mujer rubia con coletas y ojos azules, vestida con ropa de estetica gotica (vestido corto negro, corset y guantes). El repositorio figura con 0,0 GB de tamano, cero descargas y cero likes en el momento de la consulta, y no incluye informacion sobre el dataset de entrenamiento, el numero de pasos, el rango del LoRA ni los resultados de validacion.
 
@@ -71,9 +71,9 @@ No se dispone de datos verificables de adaptadores comparables (rango, tamano, l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| couchtrax/ani-grok-companion-il-flux-pony-shrekman-characters-collection | LoRA de personaje sobre FLUX.1-dev | no disponible | no aplica | openrail++ | HuggingFace, 0 descargas y 0,0 GB de repositorio en el momento de la consulta |
-| black-forest-labs/FLUX.1-dev | Modelo base text-to-image | ~12.000 millones | no aplica | FLUX.1-dev Non-Commercial License (a confirmar en la pagina oficial) | HuggingFace |
-| Adaptadores de personaje genericos para SDXL | LoRA de personaje | no disponible | no aplica | variable segun autor | ecosistema HuggingFace y Civitai |
+| couchtrax/ani-grok-companion-il-flux-pony-shrekman-characters-collection | LoRA de personaje sobre FLUX.1-dev | no disponible | no aplica | openrail++ | Hugging Face, 0 descargas y 0,0 GB de repositorio en el momento de la consulta |
+| black-forest-labs/FLUX.1-dev | Modelo base text-to-image | ~12.000 millones | no aplica | FLUX.1-dev Non-Commercial License (a confirmar en la pagina oficial) | Hugging Face |
+| Adaptadores de personaje genericos para SDXL | LoRA de personaje | no disponible | no aplica | variable segun autor | ecosistema Hugging Face y Civitai |
 
 No se han localizado en la busqueda web alternativas concretas con las que comparar de forma rigurosa.
 
@@ -93,7 +93,7 @@ No se han localizado en la busqueda web alternativas concretas con las que compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/couchtrax/ani-grok-companion-il-flux-pony-shrekman-characters-collection
+- Modelo en Hugging Face: https://huggingface.co/couchtrax/ani-grok-companion-il-flux-pony-shrekman-characters-collection
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Endpoint y claves de API citados en la model card: https://muapi.ai/access-keys
 - Referencia de modelo citada en el ejemplo de la model card: civitai:1779844@2015330

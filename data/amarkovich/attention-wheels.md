@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | amarkovich/attention-wheels |
+| ID en Hugging Face | amarkovich/attention-wheels |
 | Autor | amarkovich |
 | Etiquetas | kernel, license:apache-2.0, region:us |
 | Descargas | 0 |
@@ -95,7 +95,7 @@ No aplica en sentido estricto, porque el repositorio no contiene un modelo. La c
 
 | Alternativa | Que ofrece | Arquitecturas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amarkovich/attention-wheels (este repositorio) | Wheels precompilados de SageAttention 2.2.0 y SageAttention3 1.0.0, mas el parche aplicado, para CUDA 13.0, torch 2.9.1+cu130 y CPython 3.10 | sm80, sm89, sm90a, sm100a, sm120a | Apache 2.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| amarkovich/attention-wheels (este repositorio) | Wheels precompilados de SageAttention 2.2.0 y SageAttention3 1.0.0, mas el parche aplicado, para CUDA 13.0, torch 2.9.1+cu130 y CPython 3.10 | sm80, sm89, sm90a, sm100a, sm120a | Apache 2.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Upstream thu-ml/SageAttention (commit d1a57a5) | Codigo fuente sin parche; requiere compilacion local | Depende de la lista de arquitecturas que configure el usuario | no disponible en la informacion proporcionada | Repositorio publico en GitHub |
 | Compilacion local a partir de fuente | Maxima flexibilidad de version de CUDA, torch y arquitecturas, a cambio de tiempos de build y necesidad de toolchain | Configurable por el usuario | Sujeta a la licencia del proyecto upstream | No requiere artefactos intermedios |
 | Otros kernels de atencion (FlashAttention, xformers, atencion nativa de PyTorch) | Alternativas funcionales de atencion optimizada | no disponible | no disponible | no disponible |
@@ -118,7 +118,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amarkovich/attention-wheels
+- Repositorio en Hugging Face: https://huggingface.co/amarkovich/attention-wheels
 - Wheel SageAttention 2.2.0: https://huggingface.co/amarkovich/attention-wheels/resolve/main/wheels/odyssey-acd75b5/sageattention-2.2.0+cu130torch2.9cxx11abitrue-cp310-cp310-linux_x86_64.whl
 - Wheel SageAttention3 1.0.0: https://huggingface.co/amarkovich/attention-wheels/resolve/main/wheels/odyssey-acd75b5/sageattn3-1.0.0+cu130torch2.9cxx11abitrue-cp310-cp310-linux_x86_64.whl
 - Parche aplicado: https://huggingface.co/amarkovich/attention-wheels/resolve/main/wheels/odyssey-acd75b5/sageattention-odyssey.patch

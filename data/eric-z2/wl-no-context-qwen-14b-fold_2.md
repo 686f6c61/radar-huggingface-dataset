@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eric-z2/WL-no-context-qwen-14b-fold_2` es un repositorio de modelo alojado en HuggingFace Hub por el usuario `eric-z2`. La model card publicada es la plantilla genérica autogenerada por la plataforma, sin ninguna sección completada: no declara autoría real, datos de entrenamiento, licencia, idiomas ni resultados de evaluación. La única información verificable es la metadata del repositorio: etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us`, tamaño total de 0,1 GB y cero descargas y cero likes en el momento de la consulta.
+`eric-z2/WL-no-context-qwen-14b-fold_2` es un repositorio de modelo alojado en Hugging Face Hub por el usuario `eric-z2`. La model card publicada es la plantilla genérica autogenerada por la plataforma, sin ninguna sección completada: no declara autoría real, datos de entrenamiento, licencia, idiomas ni resultados de evaluación. La única información verificable es la metadata del repositorio: etiquetas `transformers`, `safetensors`, `endpoints_compatible`, `region:us`, tamaño total de 0,1 GB y cero descargas y cero likes en el momento de la consulta.
 
 El identificador del modelo sugiere, sin que exista confirmación documental, que se trata de una variante derivada de un modelo Qwen de 14 000 millones de parámetros ("qwen-14b"), asociada a un experimento etiquetado como "WL-no-context" y a un "fold_2", terminología habitual en protocolos de validación cruzada. El tamaño del repositorio (0,1 GB) es incompatible con los pesos completos de un modelo de 14B en safetensors, que en precisión bf16 ocuparían del orden de 28 GB, por lo que es razonable pensar que el repositorio contiene únicamente adaptadores, un subconjunto de tensores o un artefacto parcial. Esta interpretación es una hipótesis basada en el nombre y el tamaño, no un dato confirmado.
 
@@ -27,7 +27,7 @@ Datos adicionales verificables del repositorio: librería declarada `transformer
 
 No se ha publicado información sobre la arquitectura en la información disponible. La model card no describe capa de atención, tipo de normalización, estrategia posicional, ni si se empleó atención lineal, decodificación especulativa u otra innovación técnica. Tampoco se documenta si el modelo es un preentrenamiento desde cero, un fine-tuning completo o una adaptación mediante técnicas de bajo rango.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición del dataset, fases de ajuste por instrucciones, RLHF, DPO u otro método de alineamiento. La etiqueta `arxiv:1910.09700` que aparece en la metadata corresponde a la cita de Lacoste et al. sobre el calculador de impacto medioambiental incluida por defecto en la plantilla de HuggingFace, y no a un artículo científico asociado al modelo. El sufijo "fold_2" del identificador apunta a un experimento dentro de un esquema de particionado de datos, pero se desconoce por completo su diseño experimental.
+Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición del dataset, fases de ajuste por instrucciones, RLHF, DPO u otro método de alineamiento. La etiqueta `arxiv:1910.09700` que aparece en la metadata corresponde a la cita de Lacoste et al. sobre el calculador de impacto medioambiental incluida por defecto en la plantilla de Hugging Face, y no a un artículo científico asociado al modelo. El sufijo "fold_2" del identificador apunta a un experimento dentro de un esquema de particionado de datos, pero se desconoce por completo su diseño experimental.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ Los siguientes escenarios se plantean como usos potenciales condicionados a que 
 - Investigación sobre adaptadores de bajo rango: dado que el tamaño del repositorio (0,1 GB) es muy inferior al de unos pesos de 14B en bf16 (del orden de 28 GB), el escenario más plausible es cargar adaptadores sobre un modelo base y estudiar su efecto, verificando previamente la integridad del repositorio.
 - Prototipado local de asistentes conversacionales: si finalmente se confirma un modelo de 14B, podría ejecutarse en una GPU de consumo de 24 GB con cuantización de 4 bits como banco de pruebas, nunca como servicio en producción dada la ausencia de licencia.
 - Generación de código asistida en entorno de desarrollo: uso plausible únicamente si el modelo base incorpora entrenamiento en código y si la licencia del modelo base lo permite; ninguno de los dos extremos está confirmado.
-- Estudio metodológico de publicación de artefactos en HuggingFace: el repositorio sirve como caso de análisis de model cards autogeneradas sin información, útil en docencia o en trabajos sobre reproducibilidad en IA abierta.
+- Estudio metodológico de publicación de artefactos en Hugging Face: el repositorio sirve como caso de análisis de model cards autogeneradas sin información, útil en docencia o en trabajos sobre reproducibilidad en IA abierta.
 - Evaluación de sesgos y alineamiento: un artefacto sin documentación de datos de entrenamiento no permite trazar el origen de los sesgos, lo que lo convierte en un ejemplo útil para discutir requisitos de transparencia, más que en una herramienta de evaluación en sí.
 - Ajuste posterior sobre dominio específico: solo tendría sentido si se dispone del modelo base y de su licencia; en caso contrario, el artefacto no es reutilizable legalmente con garantías.
 
@@ -78,14 +78,14 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | eric-z2/WL-no-context-qwen-14b-fold_2 | no disponible | no disponible | no disponible | no disponible | Repositorio de 0,1 GB, 0 descargas |
-| Familia Qwen (variantes de ~14B) | ~14 000 millones (referencia pública) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Pública en HuggingFace |
-| Otras alternativas de ~12-14B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Pública en HuggingFace |
+| Familia Qwen (variantes de ~14B) | ~14 000 millones (referencia pública) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Pública en Hugging Face |
+| Otras alternativas de ~12-14B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Pública en Hugging Face |
 
 La única conclusión defendible con la información proporcionada es que este artefacto no admite comparación funcional con alternativas consolidadas, al carecer de métricas, licencia y especificaciones verificables.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla autogenerada de HuggingFace sin una sola sección completada, lo que impide conocer el propósito del modelo.
+- Ausencia total de documentación: la model card es la plantilla autogenerada de Hugging Face sin una sola sección completada, lo que impide conocer el propósito del modelo.
 - Licencia no declarada: sin licencia explícita no hay autorización clara de uso comercial ni de redistribución; en la práctica, el artefacto no debería utilizarse en entornos productivos.
 - Integridad del repositorio dudosa: 0,1 GB es un tamaño incompatible con pesos completos de un modelo de 14B, por lo que podría tratarse de adaptadores, de un subconjunto de tensores o de una subida incompleta.
 - Riesgo de alucinación: no evaluable, al no existir benchmarks ni documentación de alineamiento.
@@ -98,7 +98,7 @@ La única conclusión defendible con la información proporcionada es que este a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_2
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_2
 - Artículo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre estimación de emisiones, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental mencionado en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

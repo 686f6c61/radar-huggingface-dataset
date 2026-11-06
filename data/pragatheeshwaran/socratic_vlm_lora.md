@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pragatheeshwaran/socratic_vlm_lora es un repositorio de pesos publicado en HuggingFace por el usuario Pragatheeshwaran. Se trata de un ajuste mediante LoRA (Low-Rank Adaptation) sobre un modelo de vision-lenguaje, segun se deduce del sufijo "lora" del identificador y de la etiqueta "mllama" asociada al repositorio. El nombre "socratic" apunta a un entrenamiento orientado a un estilo de interaccion socratico, es decir, a la formulacion de preguntas guiadas en lugar de respuestas directas, aunque el autor no ha documentado esta intencion en la informacion disponible.
+Pragatheeshwaran/socratic_vlm_lora es un repositorio de pesos publicado en Hugging Face por el usuario Pragatheeshwaran. Se trata de un ajuste mediante LoRA (Low-Rank Adaptation) sobre un modelo de vision-lenguaje, segun se deduce del sufijo "lora" del identificador y de la etiqueta "mllama" asociada al repositorio. El nombre "socratic" apunta a un entrenamiento orientado a un estilo de interaccion socratico, es decir, a la formulacion de preguntas guiadas en lugar de respuestas directas, aunque el autor no ha documentado esta intencion en la informacion disponible.
 
 El repositorio contiene 10.670.220.835 parametros en formato safetensors y ocupa 21,4 GB, un tamano coherente con un modelo de aproximadamente 11.000 millones de parametros almacenado en precision de 16 bits. La etiqueta "mllama" lo situa en la familia arquitectonica de Llama 3.2 Vision, si bien esto no esta confirmado por el autor en la ficha del repositorio.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada: acumula 11 descargas y 0 "likes" desde su publ
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada por el autor sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni la metodologia de ajuste. La unica evidencia disponible son las etiquetas del repositorio: "safetensors", "mllama" y "region:us". La etiqueta "mllama" corresponde en HuggingFace al tipo de modelo empleado por la familia Llama 3.2 Vision, lo que sugiere que el modelo base podria ser un VLM de esa familia con un adaptador LoRA superpuesto, pero esta afirmacion no esta verificada por el autor.
+No se dispone de informacion publicada por el autor sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni la metodologia de ajuste. La unica evidencia disponible son las etiquetas del repositorio: "safetensors", "mllama" y "region:us". La etiqueta "mllama" corresponde en Hugging Face al tipo de modelo empleado por la familia Llama 3.2 Vision, lo que sugiere que el modelo base podria ser un VLM de esa familia con un adaptador LoRA superpuesto, pero esta afirmacion no esta verificada por el autor.
 
 El sufijo "lora" indica que el repositorio contiene, o deberia contener, pesos de adaptadores de bajo rango en lugar de un ajuste completo. Sin embargo, el numero de parametros declarado (10,67 mil millones) y el tamano del repositorio (21,4 GB) son compatibles con el modelo base completo en precision de 16 bits, no con un adaptador LoRA aislado, que tipicamente ocuparia entre decenas y unos pocos cientos de megabytes. No es posible determinar a partir de la informacion disponible si los pesos subidos son el modelo fusionado, el modelo base mas el adaptador, o una combinacion de ambos.
 
@@ -77,7 +77,7 @@ La comparativa se establece frente a modelos de vision-lenguaje de tamano compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Pragatheeshwaran/socratic_vlm_lora | 10,67 mil millones | no disponible | no disponible | HuggingFace, 11 descargas | Sin documentacion ni benchmarks; proposito no confirmado |
+| Pragatheeshwaran/socratic_vlm_lora | 10,67 mil millones | no disponible | no disponible | Hugging Face, 11 descargas | Sin documentacion ni benchmarks; proposito no confirmado |
 | Llama 3.2 11B Vision Instruct | 10,7 mil millones | 128.000 tokens (dato del modelo original, no de este repositorio) | Llama 3.2 Community License | Ampliamente disponible | Base plausible segun la etiqueta mllama; con soporte oficial y evaluaciones publicadas |
 | Qwen2-VL 7B Instruct | 8,3 mil millones | 32.000 tokens ampliables | Apache 2.0 | Ampliamente disponible | Alternativa abierta con licencia permisiva y buen rendimiento multimodal documentado |
 | InternVL 2.5 8B | 8,1 mil millones | 32.000 tokens | MIT | Ampliamente disponible | Alternativa abierta con resultados publicados en MMMU y DocVQA |
@@ -98,6 +98,6 @@ La comparacion con estos modelos solo es valida si el modelo base es efectivamen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pragatheeshwaran/socratic_vlm_lora
+- Repositorio en Hugging Face: https://huggingface.co/Pragatheeshwaran/socratic_vlm_lora
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a documentacion sobre Google Earth y no guardan ninguna relacion con este repositorio. Por tanto, no hay papers, blogs, repositorios de codigo ni demos adicionales que citar.

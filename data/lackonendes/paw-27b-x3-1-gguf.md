@@ -13,7 +13,7 @@ El coste de esa mejora es la portabilidad: el archivo necesita el runtime `llama
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Cuantización trellis fraccional (formato exllamav3, KA = 3, máscara 0xAAAA) sobre el modelo base Qwen/Qwen3.8-27B; la arquitectura interna del base no se detalla en la información |
-| Parámetros totales | 1.924.404.480 según el metadato de safetensors de HuggingFace; la denominación (27B) y el tamaño del archivo (11,50 GiB) apuntan a ~27.000 millones, por lo que el dato no es coherente y no está confirmado |
+| Parámetros totales | 1.924.404.480 según el metadato de safetensors de Hugging Face; la denominación (27B) y el tamaño del archivo (11,50 GiB) apuntan a ~27.000 millones, por lo que el dato no es coherente y no está confirmado |
 | Parámetros activos | No aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | 262.144 tokens en una GPU de 24 GB, con `-ub 1024` |
 | Tipos de cuantización | GGUF trellis a 3,5 bits por peso: 395 de 400 matrices cuantizadas a 3,5 bpw reales y 5 en K3; caché K/V en `q4_0` en la configuración de servicio publicada |
@@ -24,7 +24,7 @@ El coste de esa mejora es la portabilidad: el archivo necesita el runtime `llama
 | Archivo auxiliar | `Qwen3.8-27B-DFlash2-Q2_K.gguf` (0,67 GiB), drafter de decodificación especulativa |
 | Runtime requerido | `llama-paw` rama `main`, commit `4b936837b` o posterior, compilado con CUDA |
 | SHA-256 del archivo principal | `4acefd28b247259cd25367ad7915ec6142b5f7a966d69b71599802fa63352599` |
-| Tamaño del repo en HuggingFace | 0,7 GB según el metadato; el archivo principal declarado en la model card ocupa 11,50 GiB, por lo que el dato es incoherente |
+| Tamaño del repo en Hugging Face | 0,7 GB según el metadato; el archivo principal declarado en la model card ocupa 11,50 GiB, por lo que el dato es incoherente |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-24 |
 
@@ -109,17 +109,17 @@ Velocidad: no medida todavía según la model card.
 
 | Modelo | Parámetros | Contexto | Formato y tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PAW-27B-X3.1 (este repo) | ~27B (metadato incoherente: 1.924.404.480) | 262.144 tokens | GGUF trellis 3,5 bpw, 11,50 GiB | Apache 2.0 | HuggingFace; requiere `llama-paw` |
-| PAW-27B-X3 3.5-bit | ~27B | no indicado | GGUF trellis mixto K3/K4, 11,50 GiB | no indicada en la información | HuggingFace (mismo autor) |
-| Qwen/Qwen3.8-27B (base) | ~27B | no indicado | safetensors (BF16) | no indicada en la información | HuggingFace |
-| ThinkingCap-Qwen3.8-27B (BF16) | ~27B | no indicado | BF16 | no indicada en la información | HuggingFace (citado solo como referencia de escala) |
+| PAW-27B-X3.1 (este repo) | ~27B (metadato incoherente: 1.924.404.480) | 262.144 tokens | GGUF trellis 3,5 bpw, 11,50 GiB | Apache 2.0 | Hugging Face; requiere `llama-paw` |
+| PAW-27B-X3 3.5-bit | ~27B | no indicado | GGUF trellis mixto K3/K4, 11,50 GiB | no indicada en la información | Hugging Face (mismo autor) |
+| Qwen/Qwen3.8-27B (base) | ~27B | no indicado | safetensors (BF16) | no indicada en la información | Hugging Face |
+| ThinkingCap-Qwen3.8-27B (BF16) | ~27B | no indicado | BF16 | no indicada en la información | Hugging Face (citado solo como referencia de escala) |
 
 No se dispone de datos de benchmarks comparables entre estas variantes: el propio autor advierte de que los protocolos de medición difieren y de que X3.1 todavía no tiene resultados de MMLU-Pro, HumanEval, MBPP+ ni GSM8K propios.
 
 ## Limitaciones y advertencias
 
 - Compatibilidad muy restringida: el archivo no se puede leer con llama.cpp estándar ni, por tanto, con las herramientas que dependen de él. Requiere compilar `llama-paw` desde `main` con CUDA.
-- Metadatos internos incoherentes: el número de parámetros reportado por HuggingFace (1.924.404.480) no cuadra con un modelo de 27B ni con un archivo de 11,50 GiB, y el tamaño de repo indicado (0,7 GB) tampoco coincide con el archivo declarado.
+- Metadatos internos incoherentes: el número de parámetros reportado por Hugging Face (1.924.404.480) no cuadra con un modelo de 27B ni con un archivo de 11,50 GiB, y el tamaño de repo indicado (0,7 GB) tampoco coincide con el archivo declarado.
 - Benchmarks incompletos: GPQA, MMLU-Pro, IFBench y LiveCodeBench v6 figuran como pendientes para este archivo.
 - Métrica principal no equivalente a precisión: los valores de KL miden cercanía de logits al Q8_0, no acierto en tareas; el propio autor lo señala.
 - Puntuación «final» optimista: la columna final del benchmark es la unión de fases con distintos presupuestos de tokens, no una ejecución con ajustes fijos, y no debe compararse con resultados de una sola configuración.
@@ -132,7 +132,7 @@ No se dispone de datos de benchmarks comparables entre estas variantes: el propi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lackonendes/PAW-27B-X3.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/lackonendes/PAW-27B-X3.1-GGUF
 - Runtime requerido (llama-paw, rama `main`, commit `4b936837b` o posterior): https://github.com/irawanw/llama-paw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencias citadas sin enlace en la información: archivo previo `PAW-27B-X3-3.5bit.gguf` y su model card PAW-27B-X3, build intermedio `rB`, encoder exllamav3 v1.5.1 y model card de ThinkingCap-Qwen3.8-27B.

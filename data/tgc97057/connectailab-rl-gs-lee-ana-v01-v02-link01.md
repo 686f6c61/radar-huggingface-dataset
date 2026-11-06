@@ -70,8 +70,8 @@ Ninguna variante completó con éxito el curso en los 20 episodios evaluados (se
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-gs.lee-ana-v01-v02-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta en simulador LINK-01 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM de propósito general | no disponible | HuggingFace |
+| connectailab-rl-gs.lee-ana-v01-v02-link01 | 0,8B (base) + LoRA | no disponible | Decisión discreta en simulador LINK-01 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM de propósito general | no disponible | Hugging Face |
 | Política PPO original (brain.json) | no disponible | no aplica | Decisión discreta en simulador LINK-01 | no disponible | Repositorio connect-tycoon |
 
 No se dispone de otros adaptadores comparables de la misma familia en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de otros adaptadores comparables de la misma familia en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tgc97057/connectailab-rl-gs.lee-ana-v01-v02-link01
+- Modelo en Hugging Face: https://huggingface.co/tgc97057/connectailab-rl-gs.lee-ana-v01-v02-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks ni se dispone de información sobre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ram-lexsi/agenttune-testrun-plan-execute
+- Hugging Face: https://huggingface.co/ram-lexsi/agenttune-testrun-plan-execute
 - Repositorio de AgentTune (mirror): https://github.com/Lexsi-Labs/AgentTune_mirror
 - Discord de Lexsi: https://discord.com/invite/dtEDQ2Z3eg
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario ASD2SAC21D bajo licencia MIT. Segun las etiquetas del repositorio, esta asociado a la libreria transformers, al framework PyTorch y a la arquitectura bert, con pipeline declarado de feature-extraction. Sin embargo, la propia model card describe un modelo conversacional y de razonamiento, con mejoras en matematicas, programacion y logica, lo que resulta contradictorio con las etiquetas tecnicas del repositorio.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario ASD2SAC21D bajo licencia MIT. Segun las etiquetas del repositorio, esta asociado a la libreria transformers, al framework PyTorch y a la arquitectura bert, con pipeline declarado de feature-extraction. Sin embargo, la propia model card describe un modelo conversacional y de razonamiento, con mejoras en matematicas, programacion y logica, lo que resulta contradictorio con las etiquetas tecnicas del repositorio.
 
 El repositorio presenta indicios claros de ser una plantilla sin contenido real: el tamano es de 0,0 GB, no tiene descargas ni likes, y la tabla de benchmarks contiene marcadores de posicion sin rellenar (marcados como {RESULT}). La model card incluye secciones genericas sobre prompt de sistema, temperatura recomendada y plantillas de busqueda web, pero no aporta pesos, configuracion ni resultados verificables.
 
@@ -81,6 +81,6 @@ No disponible. La falta de parametros, contexto y benchmarks impide identificar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-best
 
 No se han encontrado enlaces adicionales relevantes (paper, repositorio de codigo, demo o API) en la informacion proporcionada. Los resultados de la busqueda web no guardan relacion con el modelo.

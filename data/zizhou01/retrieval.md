@@ -64,11 +64,11 @@ No disponible. No existen modelos comparables en el ecosistema con esta configur
 - **Limitaciones de contexto e idioma**: no especificadas, y al ser un modelo tan pequeño, la capacidad de modelar contexto largo es nula.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que debe revisarse los términos de los datos externos si se usan con datasets propios.
 - **Caveat para producción**: no apto para producción bajo ninguna circunstancia. Es una herramienta de investigación y desarrollo.
-- **Compatibilidad**: las APIs genéricas de HuggingFace no pueden cargar este modelo directamente; se requiere un adaptador personalizado.
+- **Compatibilidad**: las APIs genéricas de Hugging Face no pueden cargar este modelo directamente; se requiere un adaptador personalizado.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/zizhou01/retrieval)
-- [Perfil del autor en HuggingFace](https://huggingface.co/zizhou01/models)
+- [Repositorio en Hugging Face](https://huggingface.co/zizhou01/retrieval)
+- [Perfil del autor en Hugging Face](https://huggingface.co/zizhou01/models)
 - [Tema "retrieval-model" en GitHub](https://github.com/topics/retrieval-model) (contexto general, no específico del modelo)
 - [Survey sobre Retrieval-Augmented Generation](https://arxiv.org/abs/2402.19473) (contexto académico, no específico del modelo)

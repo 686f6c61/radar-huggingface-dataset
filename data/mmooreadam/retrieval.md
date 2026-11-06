@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la categoría de chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mmooreadam/retrieval
+- Hugging Face: https://huggingface.co/mmooreadam/retrieval
 - No se han encontrado otros enlaces relevantes en la búsqueda web; los resultados obtenidos no están relacionados con este modelo.

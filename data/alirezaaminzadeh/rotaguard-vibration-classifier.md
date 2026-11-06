@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RotaGuard Vibration Classifier es un clasificador multiclase desarrollado por el equipo de ingeniería de Aria AI, basado en LightGBM y publicado en HuggingFace para tareas de mantenimiento predictivo en equipos rotativos. El modelo recibe 19 características de tiempo, frecuencia y espectro de envolvente extraídas de un segmento de 4096 muestras de vibración a 12 kHz, y predice una de 12 clases: estado normal o una combinación de localización del defecto (pista interior, pista exterior, bola) y severidad en milésimas de pulgada (7, 14, 21, 28). Está entrenado sobre el conjunto de datos público CWRU Bearing Data Center, en el subconjunto de 12 kHz del extremo motriz.
+RotaGuard Vibration Classifier es un clasificador multiclase desarrollado por el equipo de ingeniería de Aria AI, basado en LightGBM y publicado en Hugging Face para tareas de mantenimiento predictivo en equipos rotativos. El modelo recibe 19 características de tiempo, frecuencia y espectro de envolvente extraídas de un segmento de 4096 muestras de vibración a 12 kHz, y predice una de 12 clases: estado normal o una combinación de localización del defecto (pista interior, pista exterior, bola) y severidad en milésimas de pulgada (7, 14, 21, 28). Está entrenado sobre el conjunto de datos público CWRU Bearing Data Center, en el subconjunto de 12 kHz del extremo motriz.
 
 A diferencia de los modelos generativos de lenguaje, se trata de un modelo tabular clásico de gradient boosting, con 150 árboles de profundidad 6. No dispone de transformadores ni de ventana de contexto en el sentido habitual, ya que su entrada es una matriz de características numéricas. Su relevancia radica en que ofrece una solución ligera, fácil de integrar y con licencia MIT para la clasificación de defectos en rodamientos, un problema crítico en la industria de petróleo y gas, petroquímica y equipos rotativos en general.
 
@@ -72,7 +72,7 @@ El autor explica que el 100% es plausible y consistente con el rango del 99-100%
 
 | Modelo / método | Tipo | Accuracy (mismo dataset) | Disponibilidad | Licencia |
 |---|---|---|---|---|
-| RotaGuard Vibration Classifier | LightGBM, 19 features | 100% (declarado) | HuggingFace | MIT |
+| RotaGuard Vibration Classifier | LightGBM, 19 features | 100% (declarado) | Hugging Face | MIT |
 | Random Forest + FFT | Bosque aleatorio, características FFT | ~99% (publicado) | Paper, sin código público | No indicada |
 | Random Forest optimizado con Relief-F | Bosque aleatorio, selección de características | 98.68% (publicado) | Paper, sin código público | No indicada |
 

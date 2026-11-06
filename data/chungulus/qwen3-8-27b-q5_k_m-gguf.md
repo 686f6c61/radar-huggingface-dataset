@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, etc.) en la
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-Q5_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Chungulus/Qwen3.8-27B-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF combinado del mismo autor: https://huggingface.co/Chungulus/Qwen3.8-27B-MTP-GGUF
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

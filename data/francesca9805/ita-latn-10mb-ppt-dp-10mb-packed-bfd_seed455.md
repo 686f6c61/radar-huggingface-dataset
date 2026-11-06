@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_10mb`, un modelo monolingue de la familia Goldfish orientado a italiano (la etiqueta `ita_latn` del identificador apunta a italiano en escritura latina). Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, segun la propia model card.
+El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_10mb`, un modelo monolingue de la familia Goldfish orientado a italiano (la etiqueta `ita_latn` del identificador apunta a italiano en escritura latina). Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, segun la propia model card.
 
 Se trata de un modelo muy pequeno: 39.087.104 parametros totales, con pesos en formato safetensors y un repositorio de apenas 0,1 GB. La arquitectura declarada en las etiquetas es GPT-2 (`transformers`, `safetensors`, `gpt2`, `text-generation`), es decir, un transformer decoder-only autorregresivo, no un modelo MoE ni una arquitectura hibrida. Por tamano y origen, encaja en la categoria de modelos de investigacion linguisticas de bajo coste computacional, no en la de asistentes de proposito general.
 
@@ -61,15 +61,15 @@ La model card no incluye metricas de evaluacion (ni MMLU, ni HumanEval, ni GSM8K
 - VRAM estimada para inferencia: con 39.087.104 parametros, el peso del modelo ocupa aproximadamente 156 MB en FP32, unos 78 MB en FP16/BF16 y unos 39 MB en int8. El consumo real de VRAM incluye ademas las activaciones y la cache KV, pero en cualquier caso se mantiene muy por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. No se requiere A100, H100 ni similares; una GTX 1050 Ti, una RTX 3060 o incluso una GPU integrada moderna pueden ejecutarlo.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos diez anos, y tambien en CPU (la propia model card usa `device="cuda"`, pero el modelo es viable en CPU por su tamano).
-- Opciones de despliegue: `transformers` con el pipeline `text-generation` es la ruta documentada. El repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los endpoints de HuggingFace. No se publican pesos GGUF, por lo que el uso con llama.cpp u Ollama requeriria una conversion manual previa.
+- Opciones de despliegue: `transformers` con el pipeline `text-generation` es la ruta documentada. El repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con los endpoints de Hugging Face. No se publican pesos GGUF, por lo que el uso con llama.cpp u Ollama requeriria una conversion manual previa.
 - Latencia y throughput estimados: no disponible. No se aportan mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` | 39,09 M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste fino SFT de la familia Goldfish; artefacto de investigacion |
-| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace (goldfish-models) | Modelo monolingue italiano entrenado con ~10 MB de texto; origen del ajuste |
+| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` | 39,09 M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste fino SFT de la familia Goldfish; artefacto de investigacion |
+| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face (goldfish-models) | Modelo monolingue italiano entrenado con ~10 MB de texto; origen del ajuste |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | La busqueda web no devolvio modelos comparables; las referencias obtenidas no guardan relacion con el tema |
 
 No se dispone de datos verificados de otros modelos comparables en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento ni comparaciones cuantitativas.
@@ -87,7 +87,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1bwxtd95
 - Repositorio de TRL: https://github.com/huggingface/trl

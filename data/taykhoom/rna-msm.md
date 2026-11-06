@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RNA-MSM es un modelo de lenguaje para ARN basado en alineamientos múltiples de secuencias (MSA), desarrollado originalmente por el grupo de Yikun Zhang y colaboradores (artículo en Nucleic Acids Research 2024) y convertido a formato HuggingFace por Taykhoom. El modelo está diseñado para aprender representaciones de secuencias de ARN a partir de alineamientos de homólogos, lo que permite capturar información evolutiva y estructural sin necesidad de etiquetas supervisadas. Su arquitectura axial de tipo MSA Transformer combina atención por filas (posiciones de secuencia) y por columnas (filas del alineamiento), reduciendo la complejidad computacional frente a la atención convencional.
+RNA-MSM es un modelo de lenguaje para ARN basado en alineamientos múltiples de secuencias (MSA), desarrollado originalmente por el grupo de Yikun Zhang y colaboradores (artículo en Nucleic Acids Research 2024) y convertido a formato Hugging Face por Taykhoom. El modelo está diseñado para aprender representaciones de secuencias de ARN a partir de alineamientos de homólogos, lo que permite capturar información evolutiva y estructural sin necesidad de etiquetas supervisadas. Su arquitectura axial de tipo MSA Transformer combina atención por filas (posiciones de secuencia) y por columnas (filas del alineamiento), reduciendo la complejidad computacional frente a la atención convencional.
 
 Con 95,9 millones de parámetros y una ventana de contexto de 1024 tokens por secuencia y hasta 1024 filas de alineamiento, RNA-MSM es un modelo compacto y eficiente para tareas de biología computacional como predicción de estructura secundaria, accesibilidad al solvente y generación de embeddings de ARN. Su licencia MIT permite uso comercial sin restricciones, y su formato safetensors con código personalizado facilita su integración en pipelines de transformers. La relevancia actual radica en la creciente demanda de modelos de ARN específicos frente a soluciones genéricas de ADN o proteínas, especialmente en el contexto de terapias basadas en ARN y diseño de aptámeros.
 
@@ -23,7 +23,7 @@ Con 95,9 millones de parámetros y una ventana de contexto de 1024 tokens por se
 
 RNA-MSM emplea una arquitectura de tipo BERT adaptada a datos MSA. Cada capa transformer (10 en total) aplica dos tipos de atención axial: atención por filas, que atiende a las posiciones de la secuencia sumando sobre las filas del alineamiento, y atención por columnas, que atiende a las filas del alineamiento para cada posición. Esta combinación reduce la complejidad computacional de O(n²·m²) a O(n²·m + n·m²), donde n es la longitud de secuencia y m el número de alineamientos. El modelo utiliza embeddings posicionales aprendidos para la secuencia y un embedding escalar aprendido para la fila del alineamiento, con normalización Pre-LayerNorm y una capa final de LayerNorm.
 
-El entrenamiento se realizó con el objetivo de masked language modeling sobre MSAs de ARN homólogo, enmascarando aproximadamente el 15% de los tokens. Los datos provienen de secuencias homólogas de ARN obtenidas mediante el pipeline RNAcmap a partir de bases de datos de ARN no redundantes. El checkpoint público original es `RNA_MSM_pretrained.ckpt`, convertido a formato HuggingFace con verificación de paridad exacta (diferencia máxima absoluta de 0.00 en las 11 representaciones intermedias). No se ha documentado el uso de RLHF, DPO u otras técnicas de alineación, ya que se trata de un modelo de representación, no generativo.
+El entrenamiento se realizó con el objetivo de masked language modeling sobre MSAs de ARN homólogo, enmascarando aproximadamente el 15% de los tokens. Los datos provienen de secuencias homólogas de ARN obtenidas mediante el pipeline RNAcmap a partir de bases de datos de ARN no redundantes. El checkpoint público original es `RNA_MSM_pretrained.ckpt`, convertido a formato Hugging Face con verificación de paridad exacta (diferencia máxima absoluta de 0.00 en las 11 representaciones intermedias). No se ha documentado el uso de RLHF, DPO u otras técnicas de alineación, ya que se trata de un modelo de representación, no generativo.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El entrenamiento se realizó con el objetivo de masked language modeling sobre M
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El articulo original (Zhang et al., 2024) reporta mejoras en prediccion de estructura secundaria y accesibilidad al solvente frente a tecnicas previas, pero no se incluyen tablas numericas en la documentacion de HuggingFace. Se recomienda consultar la publicacion en Nucleic Acids Research para datos detallados.
+No se han publicado resultados de benchmarks en la informacion disponible. El articulo original (Zhang et al., 2024) reporta mejoras en prediccion de estructura secundaria y accesibilidad al solvente frente a tecnicas previas, pero no se incluyen tablas numericas en la documentacion de Hugging Face. Se recomienda consultar la publicacion en Nucleic Acids Research para datos detallados.
 
 ## Requisitos de hardware
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos cuantitativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taykhoom/RNA-MSM
+- Hugging Face: https://huggingface.co/Taykhoom/RNA-MSM
 - Repositorio original en GitHub: https://github.com/yikunpku/RNA-MSM
 - Documentacion en MultiMolecule: https://multimolecule.danling.org/models/rnamsm/
 - Checkpoint original (Google Drive): https://drive.google.com/file/d/11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/view
-- Coleccion RNA-MSM en HuggingFace: https://huggingface.co/collections/Taykhoom/rna-msm-6a18b5c2b0181ebbc71ff777
+- Coleccion RNA-MSM en Hugging Face: https://huggingface.co/collections/Taykhoom/rna-msm-6a18b5c2b0181ebbc71ff777

@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint fusionado mediante la técnica experimental Delta-P2S, desarrollado por el usuario g-assismoraes. Según la model card, se trata de un merged checkpoint de Qwen2.5 producido por el paquete experimental Delta-P2S, con base de entrenamiento en `./runs/codeqwen15B-3B_SameFormula-S13/init/delta_p2s`. El nombre del modelo sugiere una combinación de Qwen2.5-3B con un componente QwenCoder de 1.5B, aunque no se detalla el procedimiento exacto de fusión.
 
-El modelo tiene 3.397.103.616 parámetros totales y se distribuye en formato safetensors, con un tamaño de repositorio de 6.8 GB. Fue creado el 6 de septiembre de 2026 y no registra descargas ni likes en HuggingFace, lo que indica que se trata de un experimento reciente y sin validación pública. No se dispone de documentación sobre su licencia, idiomas soportados, contexto ni capacidades específicas.
+El modelo tiene 3.397.103.616 parámetros totales y se distribuye en formato safetensors, con un tamaño de repositorio de 6.8 GB. Fue creado el 6 de septiembre de 2026 y no registra descargas ni likes en Hugging Face, lo que indica que se trata de un experimento reciente y sin validación pública. No se dispone de documentación sobre su licencia, idiomas soportados, contexto ni capacidades específicas.
 
 Dado que no hay información pública sobre su rendimiento, benchmarks o casos de uso, este modelo debe considerarse una pieza de investigación experimental. Cualquier uso en producción requeriría una evaluación exhaustiva previa por parte del usuario.
 
@@ -60,10 +60,10 @@ No disponible. No se dispone de datos de rendimiento ni de modelos comparables e
 - Riesgo de alucinación y comportamiento impredecible al ser un merge no validado.
 - Licencia no especificada, lo que impide confirmar si es apto para uso comercial.
 - No se dispone de información sobre sesgos, idiomas soportados ni restricciones de contexto.
-- El modelo no registra descargas ni likes en HuggingFace, lo que sugiere que no ha sido probado por la comunidad.
+- El modelo no registra descargas ni likes en Hugging Face, lo que sugiere que no ha sido probado por la comunidad.
 - Cualquier uso en producción debe ir precedido de una evaluación exhaustiva y de la verificación de la licencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B

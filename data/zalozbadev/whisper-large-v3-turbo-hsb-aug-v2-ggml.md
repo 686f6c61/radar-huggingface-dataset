@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zalozbadev/whisper-large-v3-turbo-hsb-aug-v2-ggml` es una conversion al formato GGML del ajuste fino de Whisper large-v3-turbo para reconocimiento automatico del habla (ASR) en alto sorabo (`hsb`), una lengua minoritaria eslava hablada en la Lusacia alemana. Lo desarrolla el usuario zalozbadev y se publica bajo licencia CC-BY-4.0. Aunque la etiqueta `pipeline_tag` de HuggingFace indica `text-to-speech`, la arquitectura subyacente es la de Whisper, un modelo encoder-decoder transformer orientado a transcripcion de audio a texto; la etiqueta parece un error de clasificacion del autor.
+El modelo `zalozbadev/whisper-large-v3-turbo-hsb-aug-v2-ggml` es una conversion al formato GGML del ajuste fino de Whisper large-v3-turbo para reconocimiento automatico del habla (ASR) en alto sorabo (`hsb`), una lengua minoritaria eslava hablada en la Lusacia alemana. Lo desarrolla el usuario zalozbadev y se publica bajo licencia CC-BY-4.0. Aunque la etiqueta `pipeline_tag` de Hugging Face indica `text-to-speech`, la arquitectura subyacente es la de Whisper, un modelo encoder-decoder transformer orientado a transcripcion de audio a texto; la etiqueta parece un error de clasificacion del autor.
 
 El modelo parte de `openai/whisper-large-v3-turbo`, un checkpoint de 809 millones de parametros con 1280 dimensiones de representacion y 32 capas de encoder, disenado por OpenAI para transcripcion multilingue con un contexto de audio de 30 segundos. El ajuste fino incorpora datos en alto sorabo para mejorar la cobertura de una lengua con pocos recursos, y esta version GGML permite ejecutarlo con whisper.cpp en CPU y GPU consumer sin dependencias de PyTorch.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-large-v3-turbo-hsb-aug-v2-ggml (este) | 809 M | 30 s | hsb | CC-BY-4.0 | GGML Q8_0 | HuggingFace |
-| openai/whisper-large-v3-turbo | 809 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | HuggingFace, OpenAI |
-| openai/whisper-large-v3 | 1550 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | HuggingFace, OpenAI |
-| whisper-small | 244 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | HuggingFace, OpenAI |
+| whisper-large-v3-turbo-hsb-aug-v2-ggml (este) | 809 M | 30 s | hsb | CC-BY-4.0 | GGML Q8_0 | Hugging Face |
+| openai/whisper-large-v3-turbo | 809 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | Hugging Face, OpenAI |
+| openai/whisper-large-v3 | 1550 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | Hugging Face, OpenAI |
+| whisper-small | 244 M | 30 s | multilingue (99 idiomas) | MIT | safetensors, GGML | Hugging Face, OpenAI |
 
 La comparativa se limita a la familia Whisper porque no se dispone de informacion sobre otros modelos ASR especificos para alto sorabo. El modelo de este repositorio se distingue por el ajuste fino a `hsb` y la cuantizacion Q8_0, pero carece de datos publicos de rendimiento que permitan comparar su WER con el modelo base.
 
@@ -80,14 +80,14 @@ La comparativa se limita a la familia Whisper porque no se dispone de informacio
 - El ajuste fino a un solo idioma puede degradar el rendimiento en otros idiomas respecto al modelo base multilingue.
 - Riesgo de alucinacion en pasajes de audio con ruido, silencios o habla solapada, comportamiento comun en Whisper.
 - Sesgos potenciales heredados del entrenamiento del modelo base (dominio de ingles y lenguas mayoritarias, posibles sesgos demograficos y de acento).
-- La etiqueta `text-to-speech` de HuggingFace es incorrecta para un modelo ASR; puede confundir a herramientas de descubrimiento y a usuarios.
+- La etiqueta `text-to-speech` de Hugging Face es incorrecta para un modelo ASR; puede confundir a herramientas de descubrimiento y a usuarios.
 - Licencia CC-BY-4.0 permite uso comercial con atribucion, pero el modelo base Whisper de OpenAI tiene licencia MIT; conviene verificar la compatibilidad y citar adecuadamente.
 - Solo se ofrece cuantizacion Q8_0; no hay versiones Q4, Q5 ni float16 en este repositorio, limitando el ajuste fino de memoria/velocidad.
 - No se documenta soporte para otros runtimes distintos de whisper.cpp, lo que restringe su integracion en stacks basados en PyTorch o TensorFlow.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zalozbadev/whisper-large-v3-turbo-hsb-aug-v2-ggml
+- Repositorio Hugging Face: https://huggingface.co/zalozbadev/whisper-large-v3-turbo-hsb-aug-v2-ggml
 - Modelo original ajustado: https://huggingface.co/zalozbadev/whisper-large-v3-turbo-hsb-aug-v2
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp

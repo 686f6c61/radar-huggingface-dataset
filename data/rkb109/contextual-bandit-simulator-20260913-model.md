@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/contextual-bandit-simulator-20260913-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en HuggingFace, orientado a simular y validar políticas de decisión en entornos de bandit contextual antes de exponer usuarios o sistemas a aprendizaje por refuerzo en línea. No es un modelo de lenguaje generativo: se describe explícitamente como un artefacto que combina pesos de token por etiqueta con recuperación de evidencia ponderada por IDF, y que no invoca ningún LLM alojado externamente.
+El modelo `RKB109/contextual-bandit-simulator-20260913-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en Hugging Face, orientado a simular y validar políticas de decisión en entornos de bandit contextual antes de exponer usuarios o sistemas a aprendizaje por refuerzo en línea. No es un modelo de lenguaje generativo: se describe explícitamente como un artefacto que combina pesos de token por etiqueta con recuperación de evidencia ponderada por IDF, y que no invoca ningún LLM alojado externamente.
 
 El problema que aborda es la necesidad de disponer de un baseline reproducible para comparar políticas de decisión fuera de línea, con métricas como recompensa media, arrepentimiento (regret) de política y tasa de bloqueo de acciones inseguras. Está pensado para prototipado de arquitecturas, ejemplos de integración continua y experimentación educativa, no para producción con decisiones consecuentes.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Comparativa con modelos similares
 
-No se han identificado en la información proporcionada modelos comparables de la misma categoría (baselines de bandit contextual con ponderación por token e IDF, publicados en HuggingFace). La comparativa queda por tanto como no disponible.
+No se han identificado en la información proporcionada modelos comparables de la misma categoría (baselines de bandit contextual con ponderación por token e IDF, publicados en Hugging Face). La comparativa queda por tanto como no disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RKB109/contextual-bandit-simulator-20260913-model | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| RKB109/contextual-bandit-simulator-20260913-model | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/contextual-bandit-simulator-20260913-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/contextual-bandit-simulator-20260913-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/contextual-bandit-simulator-20260913-dataset
 - Repositorio de GitHub con `train.py`, partición de datos, código de evaluación y formato JSON del modelo: mencionado en la model card, URL concreta no disponible.
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes para este modelo (corresponden a un comercio de cosmética sin relación con el artefacto).

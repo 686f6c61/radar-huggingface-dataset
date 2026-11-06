@@ -21,7 +21,7 @@ Se trata de un modelo experimental con la model card vacía, por lo que su utili
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-8B, un transformer autoregresivo denso de 8.000 millones de parámetros. Dado que el repositorio se generó con Unsloth y su tamaño es de solo 0.2 GB, es casi seguro que el artefacto publicado es un adaptador LoRA que debe cargarse sobre el modelo base de Qwen3-8B, en lugar de un modelo autónomo. No se han facilitado datos sobre el conjunto de entrenamiento, el número de tokens, si se utilizó RLHF, DPO o cualquier técnica de alineación, ni detalles de la configuración de entrenamiento más allá de las pistas del nombre. Los tags incluyen estándares de HuggingFace como transformers y safetensors, y la referencia a arxiv:1910.09700 en la model card corresponde al paper sobre la calculadora de impacto del Machine Learning, no a una innovación del modelo.
+El modelo parte de Qwen3-8B, un transformer autoregresivo denso de 8.000 millones de parámetros. Dado que el repositorio se generó con Unsloth y su tamaño es de solo 0.2 GB, es casi seguro que el artefacto publicado es un adaptador LoRA que debe cargarse sobre el modelo base de Qwen3-8B, en lugar de un modelo autónomo. No se han facilitado datos sobre el conjunto de entrenamiento, el número de tokens, si se utilizó RLHF, DPO o cualquier técnica de alineación, ni detalles de la configuración de entrenamiento más allá de las pistas del nombre. Los tags incluyen estándares de Hugging Face como transformers y safetensors, y la referencia a arxiv:1910.09700 en la model card corresponde al paper sobre la calculadora de impacto del Machine Learning, no a una innovación del modelo.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - Para inferir con este adaptador se necesita cargar el modelo base Qwen3-8B. Los requisitos de VRAM son los del modelo base: aproximadamente 16 GB en precisión FP16 y unos 8 GB si se usa cuantización de 4 bits (por ejemplo, con bitsandbytes o GPTQ).
 - GPU recomendada para el modelo base: RTX 4090 (24 GB) para FP16, A100 (40 GB o 80 GB) para mayor capacidad, o H100 para despliegue de alto rendimiento. En cuantización 4 bits, una RTX 3090 o RTX 4080 puede ser suficiente.
-- Para integrar el adaptador, se puede utilizar HuggingFace PEFT para cargar el base y el adapter. También se puede fusionar el adaptador con el modelo base y exportar a GGUF para llama.cpp u Ollama, o servir con vLLM o TGI en un entorno de producción.
+- Para integrar el adaptador, se puede utilizar Hugging Face PEFT para cargar el base y el adapter. También se puede fusionar el adaptador con el modelo base y exportar a GGUF para llama.cpp u Ollama, o servir con vLLM o TGI en un entorno de producción.
 - No se han publicado datos de latencia ni de throughput para este adaptador concreto.
 
 ## Comparativa con modelos similares
@@ -61,6 +61,6 @@ No disponible. Los únicos modelos encontrados con un identificador similar son 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g6_run1
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g6_run1
 - Variante con configuración diferente: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g2_run1
 - Variante con configuración diferente: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed455_seed455 es un modelo de generación de texto de 124.770.816 parámetros (unos 124,8 millones) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino supervisado (SFT) con la librería TRL sobre el modelo base fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455, etiquetado con la arquitectura gpt2 y distribuido únicamente en safetensors.
+eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed455_seed455 es un modelo de generación de texto de 124.770.816 parámetros (unos 124,8 millones) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino supervisado (SFT) con la librería TRL sobre el modelo base fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455, etiquetado con la arquitectura gpt2 y distribuido únicamente en safetensors.
 
 El nombre del repositorio codifica las condiciones del experimento (corpus en inglés de 100 MB, checkpoint 4000, semilla 455, aplicación repetida de la semilla), lo que apunta a un artefacto de investigación sobre dinámica de entrenamiento y composición de datos más que a un modelo orientado a producción. El registro de Weights & Biases asociado pertenece al proyecto white_cotterell de la Universidad de Groningen, lo que refuerza ese carácter académico.
 
@@ -33,7 +33,7 @@ No se especifican el número de tokens de entrenamiento, la composición del dat
 
 - Generación de texto autoregresiva en inglés, en el rango propio de un modelo de ~125 M de parámetros: continuaciones cortas, respuestas breves y texto de estilo conversacional.
 - Plantilla de chat: el ejemplo de inicio rápido pasa una lista de mensajes con el rol `user`, lo que indica que el repositorio incluye una plantilla conversacional, presumiblemente heredada de la fase de SFT.
-- Integración directa con `transformers.pipeline("text-generation", ...)` y compatibilidad declarada con `text-generation-inference` y endpoints de HuggingFace.
+- Integración directa con `transformers.pipeline("text-generation", ...)` y compatibilidad declarada con `text-generation-inference` y endpoints de Hugging Face.
 - Ajuste posterior viable: al ser un checkpoint TRL/SFT, puede reutilizarse como punto de partida para nuevos ciclos de SFT o DPO con el mismo stack.
 - No hay evidencia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, modo de pensamiento, visión, audio ni matemáticas avanzadas.
 - Capacidad multilingüe: no disponible; el identificador indica entrenamiento monolingüe en inglés.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en FP32, en torno a 0,5 GB; en FP16/BF16, unos 0,25 GB; en int8, unos 0,13 GB; en cuantización de 4 bits, del orden de 0,07-0,09 GB. Son estimaciones derivadas del número de parámetros, no mediciones publicadas.
 - GPU recomendadas: cualquier GPU moderna es suficiente; una NVIDIA RTX 3060, RTX 4070 o RTX 4090 lo ejecuta con margen amplio. Las A100, H100 o L40S son innecesarias para inferencia, aunque pueden usarse para reentrenamiento o ajuste a gran escala.
 - Cabe holgadamente en GPU de consumo, en iGPU con memoria compartida y en CPU. También es viable en placas tipo Raspberry Pi o en dispositivos móviles con runtime adecuado.
-- Opciones de despliegue: `transformers` (referencia), vLLM para servicio con batching, HuggingFace TGI (el repositorio está etiquetado como compatible), y llama.cpp u Ollama previa conversión manual de los pesos safetensors a GGUF, ya que no se publican ficheros GGUF.
+- Opciones de despliegue: `transformers` (referencia), vLLM para servicio con batching, Hugging Face TGI (el repositorio está etiquetado como compatible), y llama.cpp u Ollama previa conversión manual de los pesos safetensors a GGUF, ya que no se publican ficheros GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| Este modelo (fpadovani/eng-100mb-...-ckpt4000_seed455_seed455) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponibles |
-| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | modified MIT | HuggingFace, ampliamente usado | Si (WebText, evaluaciones de la publicacion original) |
-| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, ampliamente usado | Parciales (destilacion) |
-| SmolLM2-135M (HuggingFaceTB) | 135 M | 8192 tokens | Apache-2.0 | HuggingFace, muy usado | Si (suite publicada por el autor) |
+| Este modelo (fpadovani/eng-100mb-...-ckpt4000_seed455_seed455) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponibles |
+| GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | modified MIT | Hugging Face, ampliamente usado | Si (WebText, evaluaciones de la publicacion original) |
+| DistilGPT-2 (distilbert/distilgpt2) | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, ampliamente usado | Parciales (destilacion) |
+| SmolLM2-135M (HuggingFaceTB) | 135 M | 8192 tokens | Apache-2.0 | Hugging Face, muy usado | Si (suite publicada por el autor) |
 
 La comparación relevante es de orden de magnitud: mismo rango de parámetros, pero con licencia sin declarar y sin evaluación pública, frente a alternativas con licencia permisiva y contexto documentado. No hay datos de rendimiento de este checkpoint que permitan una comparación cuantitativa.
 
@@ -87,7 +87,7 @@ La comparación relevante es de orden de magnitud: mismo rango de parámetros, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/c8mxa9hh
 - Repositorio de TRL: https://github.com/huggingface/trl

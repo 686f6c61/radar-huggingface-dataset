@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`apicquot/blackjack-counting` no es un modelo de lenguaje ni una red neuronal: es una colección de tablas Q aprendidas mediante Q-learning tabular para jugar al blackjack con conteo de cartas. Lo publica el desarrollador Alexandre Picquot (usuario `apicquot` en HuggingFace) y cubre cinco variantes reales de juego de Las Vegas y siete sistemas de conteo (Hi-Lo, Hi-Opt I, Hi-Opt II, Omega II, Zen Count, Wong Halves y Knock-Out). El problema que resuelve es concreto: obtener la estrategia óptima condicionada al verdadero conteo, incluyendo jugadas básicas, jugadas de índice y decisión de seguro, sin que el autor haya introducido a mano ninguna tabla de estrategia básica ni de índices.
+`apicquot/blackjack-counting` no es un modelo de lenguaje ni una red neuronal: es una colección de tablas Q aprendidas mediante Q-learning tabular para jugar al blackjack con conteo de cartas. Lo publica el desarrollador Alexandre Picquot (usuario `apicquot` en Hugging Face) y cubre cinco variantes reales de juego de Las Vegas y siete sistemas de conteo (Hi-Lo, Hi-Opt I, Hi-Opt II, Omega II, Zen Count, Wong Halves y Knock-Out). El problema que resuelve es concreto: obtener la estrategia óptima condicionada al verdadero conteo, incluyendo jugadas básicas, jugadas de índice y decisión de seguro, sin que el autor haya introducido a mano ninguna tabla de estrategia básica ni de índices.
 
 La relevancia es doble. Por un lado, es un artefacto reproducible y auditable para comparar sistemas de conteo sobre reglas de casino reales (H17/S17, DAS, surrender, RSA, pagos 6:5 y 3:2). Por otro, sirve como referencia tabular de bajo coste para investigación en aprendizaje por refuerzo, ya que cada celda almacena el valor esperado de cada acción y el número de visitas, lo que permite distinguir entre acciones legales no visitadas y acciones ilegales.
 
-El artefacto es diminuto (el repositorio ocupa 0,0 GB), se distribuye como ficheros `.npz` de NumPy y no requiere GPU. La licencia es MIT. Los metadatos de HuggingFace indican fecha de creación del 27 de septiembre de 2026, 0 descargas y 0 likes en el momento de la consulta.
+El artefacto es diminuto (el repositorio ocupa 0,0 GB), se distribuye como ficheros `.npz` de NumPy y no requiere GPU. La licencia es MIT. Los metadatos de Hugging Face indican fecha de creación del 27 de septiembre de 2026, 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -77,14 +77,14 @@ No se han publicado en la información disponible resultados comparativos contra
 
 ## Comparativa con modelos similares
 
-No se han identificado en la información disponible modelos publicados en HuggingFace directamente comparables (mismo formato de tabla Q tabular para blackjack con conteo). Como referencia, en la literatura de aprendizaje por refuerzo el entorno Blackjack de Gymnasium plantea una versión simplificada sin conteo y sin seguimiento por bucket de conteo verdadero, por lo que no es equivalente funcionalmente.
+No se han identificado en la información disponible modelos publicados en Hugging Face directamente comparables (mismo formato de tabla Q tabular para blackjack con conteo). Como referencia, en la literatura de aprendizaje por refuerzo el entorno Blackjack de Gymnasium plantea una versión simplificada sin conteo y sin seguimiento por bucket de conteo verdadero, por lo que no es equivalente funcionalmente.
 
 | Referencia | Tipo | Sistemas de conteo | Variantes de reglas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `apicquot/blackjack-counting` | Tabla Q tabular aprendida por self-play | 7 (Hi-Lo, Hi-Opt I, Hi-Opt II, Omega II, Zen, Wong Halves, Knock-Out) | 5 | MIT | HuggingFace, repo completo y Space interactivo |
+| `apicquot/blackjack-counting` | Tabla Q tabular aprendida por self-play | 7 (Hi-Lo, Hi-Opt I, Hi-Opt II, Omega II, Zen, Wong Halves, Knock-Out) | 5 | MIT | Hugging Face, repo completo y Space interactivo |
 | Blackjack de Gymnasium | Entorno de simulación con espacio de estados reducido | No incluye conteo | 1 versión simplificada | MIT | Librería estándar de RL |
 | Estrategia básica publicada (tablas de referencia) | Tabla fija, no aprendida | No incluye índices por conteo | Variable según publicación | Variable | Ampliamente disponible en literatura |
-| Modelos tabulares equivalentes para blackjack en HuggingFace | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelos tabulares equivalentes para blackjack en Hugging Face | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se han identificado en la información disponible modelos publicados en Huggi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apicquot/blackjack-counting
+- Modelo en Hugging Face: https://huggingface.co/apicquot/blackjack-counting
 - Repositorio de código, método y validación: https://github.com/apicquot/blackjack
 - Space interactivo de resultados: https://huggingface.co/spaces/apicquot/blackjack-counting-results
 - Perfil del autor: https://huggingface.co/apicquot

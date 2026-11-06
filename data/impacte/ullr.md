@@ -100,7 +100,7 @@ Los fallos en dominio se concentran en la completion multi-paso (bucles de verif
 
 | Modelo | Parametros | BFCL v4 (Overall) | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ULLR | 2,6B | 0,825 (0,781 en Q4_K_M) | KTO sobre LFM2.5-2.6B | No disponible | lfm-open-license-v1.0 | GGUF en HuggingFace, libreria llama.cpp |
+| ULLR | 2,6B | 0,825 (0,781 en Q4_K_M) | KTO sobre LFM2.5-2.6B | No disponible | lfm-open-license-v1.0 | GGUF en Hugging Face, libreria llama.cpp |
 | LFM2.5-2.6B (base) | 2,6B | 0,781 | Modelo base sin ajuste | No disponible | No disponible | Repositorio oficial de LiquidAI |
 | Qwen3.5-2B + SFT + KTO | 2B | 0,617 | SFT + KTO con el mismo pipeline | No disponible | No disponible | No disponible |
 | Qwen3.5-0.8B + SFT + KTO | 0,8B | 0,489 | SFT + KTO con el mismo pipeline | No disponible | No disponible | No disponible |
@@ -124,7 +124,7 @@ La comparativa se limita a los modelos incluidos en la escalera de evaluacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/impacte/ullr
+- Modelo en Hugging Face: https://huggingface.co/impacte/ullr
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Repositorio del asistente nolock: https://github.com/impacte-tech/nolock
 - Busqueda web realizada: los resultados devueltos no guardan relacion con el modelo (corresponden al editor de video Microsoft Clipchamp), por lo que no se incluye ningun enlace adicional de esa busqueda. No se han encontrado articulos, papers, blogs ni demos adicionales sobre ULLR en la informacion proporcionada.

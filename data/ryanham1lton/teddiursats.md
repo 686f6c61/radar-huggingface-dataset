@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TeddiursaTS es un repositorio alojado en HuggingFace por el usuario Ryanham1lton. En el momento de la consulta no incluye model card util: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se declara arquitectura, tamano de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, por lo que no es posible determinar que tipo de modelo contiene ni para que tarea fue entrenado.
+TeddiursaTS es un repositorio alojado en Hugging Face por el usuario Ryanham1lton. En el momento de la consulta no incluye model card util: el unico contenido del README es la declaracion de licencia `cc-by-4.0`. No se declara arquitectura, tamano de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, por lo que no es posible determinar que tipo de modelo contiene ni para que tarea fue entrenado.
 
 Los metadatos disponibles indican que el repositorio ocupa 0,1 GB, que fue creado el 9 de octubre de 2026 y actualizado 30 segundos despues, y que acumula 0 descargas y 0 likes. Ese patron (creacion y modificacion casi instantaneas, ausencia de documentacion y nula interaccion) es compatible con un experimento personal, una prueba de subida o un artefacto incompleto, mas que con un modelo publicado para uso publico.
 
@@ -88,6 +88,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/TeddiursaTS
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/TeddiursaTS
 - Texto de la licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun resultado relacionado con este modelo.

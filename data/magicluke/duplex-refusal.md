@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MagicLuke/duplex-refusal es un adaptador LoRA publicado en HuggingFace con la libreria PEFT, desarrollado por el usuario independiente MagicLuke sobre el modelo base nvidia/personaplex-7b-v1. Segun las etiquetas del repositorio, el adaptador esta orientado a reforzar el comportamiento de rechazo (refusal) dentro de un modelo de voz full-duplex, es decir, un sistema capaz de escuchar y hablar de forma simultanea, no por turnos. El repositorio ocupa 0,8 GB, el acceso esta restringido y la licencia declarada es «personaplex-derivative», con la etiqueta generica «other» en HuggingFace.
+MagicLuke/duplex-refusal es un adaptador LoRA publicado en Hugging Face con la libreria PEFT, desarrollado por el usuario independiente MagicLuke sobre el modelo base nvidia/personaplex-7b-v1. Segun las etiquetas del repositorio, el adaptador esta orientado a reforzar el comportamiento de rechazo (refusal) dentro de un modelo de voz full-duplex, es decir, un sistema capaz de escuchar y hablar de forma simultanea, no por turnos. El repositorio ocupa 0,8 GB, el acceso esta restringido y la licencia declarada es «personaplex-derivative», con la etiqueta generica «other» en Hugging Face.
 
 La relevancia de esta publicacion es limitada pero concreta: los modelos de voz full-duplex son una categoria reciente y la alineacion de seguridad en ese formato (cuando el modelo puede ser interrumpido, solapado o conducido por audio en tiempo real) esta mucho menos explorada que en los modelos de texto. Un adaptador que modula el rechazo en ese contexto es un objeto de estudio razonable para investigacion en seguridad de sistemas conversacionales por voz.
 
@@ -18,13 +18,13 @@ Ahora bien, la ficha que sigue esta fuertemente condicionada por la ausencia de 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se publican pesos cuantizados en el repositorio (solo el adaptador, 0,8 GB) |
 | Idiomas soportados | No disponibles |
-| Licencia | personaplex-derivative (etiqueta «other» en HuggingFace); acceso restringido, requiere aceptar condiciones |
+| Licencia | personaplex-derivative (etiqueta «other» en Hugging Face); acceso restringido, requiere aceptar condiciones |
 | Formato de pesos | Adaptador PEFT/LoRA (libreria declarada: peft). Formato de fichero concreto: no disponible |
 | Modelo base | nvidia/personaplex-7b-v1 |
 | Tamano del repositorio | 0,8 GB |
 | Modalidad declarada | Voz full-duplex (etiquetas: full-duplex, speech) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-15 (fecha declarada en HuggingFace) |
+| Fecha de creacion | 2026-09-15 (fecha declarada en Hugging Face) |
 | Ultima actualizacion | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
@@ -69,13 +69,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe en GPU de consumo: si, previsiblemente, aplicando cuantizacion al modelo base; el adaptador LoRA anade un coste de VRAM despreciable frente al base. Esta afirmacion no esta verificada por el autor.
 - Opciones de despliegue: transformers junto con peft es la via natural para cargar el adaptador. vLLM soporta adaptadores LoRA, aunque la compatibilidad con un modelo de voz full-duplex no esta confirmada. llama.cpp u Ollama no son aplicables directamente porque no se publican pesos GGUF del adaptador ni del base fusionado.
 - Latencia y throughput: no disponibles. Cualquier uso en modo full-duplex exige streaming de baja latencia, requisito que no puede evaluarse con la informacion publicada.
-- Nota de acceso: el repositorio esta restringido, por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+- Nota de acceso: el repositorio esta restringido, por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MagicLuke/duplex-refusal | Adaptador LoRA sobre base de ~7.000 M (base no confirmado) | No disponible | Sin benchmarks publicados | personaplex-derivative (acceso restringido) | Gated en HuggingFace, 0 descargas |
+| MagicLuke/duplex-refusal | Adaptador LoRA sobre base de ~7.000 M (base no confirmado) | No disponible | Sin benchmarks publicados | personaplex-derivative (acceso restringido) | Gated en Hugging Face, 0 descargas |
 | nvidia/personaplex-7b-v1 (modelo base) | ~7.000 M segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible |
 | Otros adaptadores de rechazo para modelos de voz full-duplex | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica con a
 - Idiomas: no se declaran idiomas soportados, por lo que no puede asegurarse el comportamiento en castellano ni en ninguna otra lengua.
 - Contexto: se desconoce la ventana de contexto efectiva, tanto del base como del adaptador.
 - Licencia: «personaplex-derivative» es una licencia de tipo «other» definida por el autor del modelo base. Las condiciones de uso comercial dependen de los terminos de nvidia/personaplex-7b-v1 y de la licencia derivada; no se pueden determinar a partir de la informacion disponible. Debe revisarse antes de cualquier uso en produccion.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o de investigacion con requisitos de reproducibilidad inmediata.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o de investigacion con requisitos de reproducibilidad inmediata.
 - Empaquetado incompleto: solo se publica el adaptador; no hay pesos fusionados, GGUF ni versiones cuantizadas, lo que complica el despliegue fuera del ecosistema transformers/peft.
 - Fecha de publicacion inusual: los metadatos indican 2026-09-15, dato que conviene verificar en el repositorio por si se trata de un error de registro.
 - Compatibilidad incierta con motores de inferencia: no hay evidencia de que el adaptador funcione con vLLM, TGI u otros servidores de alto rendimiento en un pipeline de voz full-duplex.

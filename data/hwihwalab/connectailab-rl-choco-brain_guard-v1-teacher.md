@@ -76,8 +76,8 @@ No se dispone de modelos externos directamente comparables: se trata de una matr
 
 | Modelo | Tipo | Tamano | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher | Matriz de politica (PPO) | 142 KB (JSON) | RL multiobjetivo en simulador | Apache 2.0 | HuggingFace |
-| connectailab-rl-CHOCO-BRAIN_GUARD-v1 (student) | LLM de razonamiento conversacional (Qwen3.5-0.8B + LoRA) | No disponible | Destilado desde el teacher | No disponible en la informacion | HuggingFace |
+| connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher | Matriz de politica (PPO) | 142 KB (JSON) | RL multiobjetivo en simulador | Apache 2.0 | Hugging Face |
+| connectailab-rl-CHOCO-BRAIN_GUARD-v1 (student) | LLM de razonamiento conversacional (Qwen3.5-0.8B + LoRA) | No disponible | Destilado desde el teacher | No disponible en la informacion | Hugging Face |
 | Baseline basado en reglas | Sistema experto de reglas fijas | No aplica | Reglas manuales | No aplica | Referencia interna del benchmark |
 
 No se han identificado en la busqueda web modelos comparables de terceros; los resultados de busqueda obtenidos no guardan relacion con el modelo.
@@ -96,13 +96,13 @@ No se han identificado en la busqueda web modelos comparables de terceros; los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher
 - Manual en coreano (README_KR.md): https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/blob/main/README_KR.md
 - Licencia: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/blob/main/LICENSE
 - LLM de decision asociado (student): https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1
 - Repositorio GitHub del modelo: https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher
 - Organizacion en GitHub: https://github.com/Hwihwa-Lab
 - Simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
-- Perfil del autor en HuggingFace: https://huggingface.co/hwihwalab
+- Perfil del autor en Hugging Face: https://huggingface.co/hwihwalab
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo (los enlaces obtenidos correspondian a articulos sobre problemas de conectividad Wi-Fi en iPhone y se han descartado por no ser relevantes).

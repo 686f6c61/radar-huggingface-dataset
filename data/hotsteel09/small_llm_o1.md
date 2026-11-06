@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyGPT-zh-15M es un modelo de lenguaje conversacional en chino entrenado desde cero por el usuario hotsteel09 y publicado en HuggingFace bajo el identificador `hotsteel09/small_llm_O1`. Se trata de un transformer decoder-only de 15,04 millones de parametros (12,59 millones sin contar embeddings) implementado a mano en PyTorch, sin reutilizar pesos preentrenados de ningun tipo: todos los parametros parten de inicializacion aleatoria y se entrenan en CPU.
+TinyGPT-zh-15M es un modelo de lenguaje conversacional en chino entrenado desde cero por el usuario hotsteel09 y publicado en Hugging Face bajo el identificador `hotsteel09/small_llm_O1`. Se trata de un transformer decoder-only de 15,04 millones de parametros (12,59 millones sin contar embeddings) implementado a mano en PyTorch, sin reutilizar pesos preentrenados de ningun tipo: todos los parametros parten de inicializacion aleatoria y se entrenan en CPU.
 
 El modelo resuelve un problema muy acotado: generar respuestas conversacionales en chino sobre un dominio cerrado de conocimiento (preguntas de sentido comun, definiciones, tutoriales paso a paso, acompanamiento emocional, razonamiento logico simple y charla cotidiana). Su relevancia es fundamentalmente didactica y de investigacion: demuestra que es posible construir un pipeline completo de entrenamiento de un LLM (tokenizador BPE propio, generacion de corpus por destilacion desde un modelo profesor, entrenamiento con gradiente acumulado y evaluacion) en hardware sin GPU.
 
@@ -81,10 +81,10 @@ No hay datos de benchmarks comparables en la informacion disponible, ya que el m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyGPT-zh-15M (hotsteel09) | 15,04 M | 256 tokens | chino | MIT | HuggingFace, pesos PyTorch, codigo de entrenamiento incluido |
+| TinyGPT-zh-15M (hotsteel09) | 15,04 M | 256 tokens | chino | MIT | Hugging Face, pesos PyTorch, codigo de entrenamiento incluido |
 | GPT-2 small (OpenAI) | ~124 M | 1024 tokens | ingles principalmente | MIT | Ampliamente disponible, integrado en `transformers` |
-| SmolLM-135M (HuggingFace) | ~135 M | 2048 tokens | ingles principalmente | Apache-2.0 | HuggingFace, integrado en `transformers`, versiones GGUF |
-| Qwen2-0.5B (Alibaba) | ~0,49 B | 32 768 tokens | multilingue (incluye chino) | Apache-2.0 | HuggingFace, ecosistema amplio, cuantizaciones disponibles |
+| SmolLM-135M (Hugging Face) | ~135 M | 2048 tokens | ingles principalmente | Apache-2.0 | Hugging Face, integrado en `transformers`, versiones GGUF |
+| Qwen2-0.5B (Alibaba) | ~0,49 B | 32 768 tokens | multilingue (incluye chino) | Apache-2.0 | Hugging Face, ecosistema amplio, cuantizaciones disponibles |
 
 Diferencias clave frente a esas alternativas: TinyGPT-zh-15M es entre uno y dos ordenes de magnitud mas pequeno, tiene la ventana de contexto mas corta (256 tokens frente a 2048 o 32 768), solo soporta chino, y no esta integrado en el ecosistema `transformers`, por lo que no se beneficia de herramientas como vLLM, TGI o llama.cpp. Su ventaja es el coste de entrenamiento (134 minutos en CPU) y la licencia MIT sin restricciones, ademas de incluir todo el codigo de generacion de corpus y entrenamiento.
 
@@ -105,11 +105,11 @@ Diferencias clave frente a esas alternativas: TinyGPT-zh-15M es entre uno y dos 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/hotsteel09/small_llm_O1
+- Hugging Face (modelo): https://huggingface.co/hotsteel09/small_llm_O1
 - Mirror mencionado por el autor en la model card (utilizado para distribucion): https://hf-mirror.com
 - Documentacion de la libreria `huggingface_hub`, citada por el autor como via de escritura valida frente al mirror: https://huggingface.co/docs/huggingface_hub
 - Paper o blog tecnico del modelo: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo de entrenamiento se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo independiente: no disponible (el codigo de entrenamiento se distribuye dentro del propio repositorio de Hugging Face)
 - Demo publica: no disponible
 
 Nota: la busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo. Los resultados obtenidos correspondian a contenido no relacionado con el ambito tecnico y se han descartado.

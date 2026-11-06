@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VLA-Adapter-LIBERO-Spatial-5000 | 1,25 B | no disponible | LIBERO-Spatial | MIT | HuggingFace |
-| OpenVLA (7B) | 7 B | 32k (backbone) | Varias tareas (LIBERO, Bridge, etc.) | MIT | HuggingFace |
+| VLA-Adapter-LIBERO-Spatial-5000 | 1,25 B | no disponible | LIBERO-Spatial | MIT | Hugging Face |
+| OpenVLA (7B) | 7 B | 32k (backbone) | Varias tareas (LIBERO, Bridge, etc.) | MIT | Hugging Face |
 | RT-2 (55B) | 55 B | no disponible | Robótica general | no disponible (propietario) | no público |
 
 El modelo es significativamente más pequeño que OpenVLA (1,25 B frente a 7 B), lo que lo hace más adecuado para entornos con recursos limitados. Sin embargo, OpenVLA tiene una cobertura más amplia de tareas y benchmarks. RT-2 no es de código abierto, por lo que la comparación se limita a alternativas abiertas.
@@ -78,7 +78,7 @@ El modelo es significativamente más pequeño que OpenVLA (1,25 B frente a 7 B),
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-5000
+- Hugging Face: https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-5000
 - Repositorio oficial del modelo (VLA-Adapter/LIBERO-Spatial): https://huggingface.co/VLA-Adapter/LIBERO-Spatial
 - Código fuente (GitHub): https://github.com/OpenHelix-Team/VLA-Adapter
 - Paper (arXiv): https://arxiv.org/html/2509.09372v2

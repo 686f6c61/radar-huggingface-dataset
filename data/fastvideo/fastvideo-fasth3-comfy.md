@@ -6,7 +6,7 @@ FastVideo-FastH3-Comfy es un reempaquetado de pesos del modelo de generacion Min
 
 El modelo base, MiniMax-H3, procede de MiniMaxAI y se distribuye bajo la licencia comunitaria minimax-h3-community-license-agreement. Por los componentes incluidos (un VAE de video, un VAE de audio y un codificador de texto Qwen3-VL de 32B) se deduce que la pila genera video y audio, y el sufijo "8-Step" del repositorio de origen indica una variante destilada para muestreo en 8 pasos. El repositorio ocupa 160,6 GB e incluye las variantes bf16, int8 y nvfp4 de los distintos componentes.
 
-Su relevancia es practica: permite a usuarios de ComfyUI ejecutar la pila MiniMax-H3 con cuantizaciones listas para consumir, eligiendo entre precision completa y variantes comprimidas segun la VRAM disponible. La adopcion registrada en HuggingFace es todavia baja (34 descargas y 14 likes en el momento de la consulta), lo que conviene tener en cuenta antes de usarlo como dependencia en produccion.
+Su relevancia es practica: permite a usuarios de ComfyUI ejecutar la pila MiniMax-H3 con cuantizaciones listas para consumir, eligiendo entre precision completa y variantes comprimidas segun la VRAM disponible. La adopcion registrada en Hugging Face es todavia baja (34 descargas y 14 likes en el momento de la consulta), lo que conviene tener en cuenta antes de usarlo como dependencia en produccion.
 
 ## Especificaciones tecnicas
 

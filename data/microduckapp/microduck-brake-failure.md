@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-brake-failure` es una politica de control motriz (un "move") para el robot bipedo MicroDuck, publicada por el usuario `microduckapp` en HuggingFace. No es un modelo de lenguaje ni un modelo fundacional: es una red neuronal de politica exportada a ONNX que, a partir de un vector de 61 observaciones, emite 14 consignas articulares a 50 Hz. El move completo dura 10,4 segundos, lo que equivale a unos 520 pasos de control. La model card lo describe como una animacion expresiva: el robot "corre en circulo a maxima velocidad" buscando como frenar.
+`microduck-brake-failure` es una politica de control motriz (un "move") para el robot bipedo MicroDuck, publicada por el usuario `microduckapp` en Hugging Face. No es un modelo de lenguaje ni un modelo fundacional: es una red neuronal de politica exportada a ONNX que, a partir de un vector de 61 observaciones, emite 14 consignas articulares a 50 Hz. El move completo dura 10,4 segundos, lo que equivale a unos 520 pasos de control. La model card lo describe como una animacion expresiva: el robot "corre en circulo a maxima velocidad" buscando como frenar.
 
 El interes practico esta en el formato de distribucion, no en el tamano: un unico `policy.onnx` acompanado de un `manifest.json` que declara dependencias de instalacion y reproduccion. Es el patron tipico de despliegue de politicas de reinforcement learning en robotica de bajo coste, donde la inferencia se ejecuta en el propio robot dentro del presupuesto de 20 ms que impone el bucle de control a 50 Hz.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 | Metricas de control (error de tracking, tasa de exito) | no disponible |
 | Latencia de inferencia medida | no disponible (el diseno a 50 Hz implica un presupuesto de 20 ms por paso) |
 | Duracion y cadencia del move | 10,4 s a 50 Hz (~520 pasos) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ No se dispone de datos publicos de otras politicas comparables (parametros, metr
 
 | Alternativa | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `microduck-brake-failure` (esta ficha) | no disponible (repo ~0,0 GB) | 61 observaciones por paso, sin contexto declarado | no disponible | no disponible | publica en HuggingFace, 0 descargas |
+| `microduck-brake-failure` (esta ficha) | no disponible (repo ~0,0 GB) | 61 observaciones por paso, sin contexto declarado | no disponible | no disponible | publica en Hugging Face, 0 descargas |
 | Otros moves de `microduckapp` | no disponible | no disponible | no disponible | no disponible | no verificados en la informacion disponible |
 | Animacion por keyframes con cinematica inversa | no aplica (codigo, sin pesos) | trayectorias definidas a mano | determinista por diseno, sin adaptacion al estado | depende del proyecto | ubicua en frameworks de robotica |
 | Controlador ritmico tipo CPG | no aplica o decenas de parametros | estado articular y temporizadores internos | robusto en locomotion periodica, pobre en movimientos no ritmicos | depende del proyecto | librerias open source disponibles |
@@ -100,7 +100,7 @@ No se dispone de datos publicos de otras politicas comparables (parametros, metr
 
 ## Enlaces
 
-- [HuggingFace: microduckapp/microduck-brake-failure](https://huggingface.co/microduckapp/microduck-brake-failure)
+- [Hugging Face: microduckapp/microduck-brake-failure](https://huggingface.co/microduckapp/microduck-brake-failure)
 - [GitHub: pollen-robotics/microduck](https://github.com/pollen-robotics/microduck)
 - [GitHub: microduck-ai](https://github.com/microduck-ai/)
 - [MicroDuck Guides: simulacion, politicas y entrenamiento](https://microduckrobot.org/guides/)

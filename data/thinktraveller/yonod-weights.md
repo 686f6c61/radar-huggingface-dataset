@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YONOD-weights es un repositorio de HuggingFace publicado por el usuario thinktraveller cuyo proposito declarado es almacenar los activos de modelo distribuibles que utiliza el proyecto YONOD, alojado en GitHub. No se trata de una publicacion de modelo acompanada de model card tecnica: el README se limita a indicar que la estructura de directorios replica la carpeta `WEIGHTS/` del proyecto y a ofrecer el comando de descarga mediante `hf download`. No se documentan arquitectura, numero de parametros, contexto, idioma ni datos de entrenamiento.
+YONOD-weights es un repositorio de Hugging Face publicado por el usuario thinktraveller cuyo proposito declarado es almacenar los activos de modelo distribuibles que utiliza el proyecto YONOD, alojado en GitHub. No se trata de una publicacion de modelo acompanada de model card tecnica: el README se limita a indicar que la estructura de directorios replica la carpeta `WEIGHTS/` del proyecto y a ofrecer el comando de descarga mediante `hf download`. No se documentan arquitectura, numero de parametros, contexto, idioma ni datos de entrenamiento.
 
 El repositorio ocupa 0,4 GB y contiene pesos en formato safetensors, segun las etiquetas de la propia ficha. El unico aviso tecnico relevante es que el autor remite a las licencias y terminos de los modelos upstream antes de reutilizar los activos, lo que sugiere que el contenido puede ser una agregacion de pesos de terceros o de componentes auxiliares mas que un modelo entrenado de forma original.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Estimacion no confirmada a partir del tamano del repositorio: 0,4 GB de pesos safetensors. Si correspondieran a un unico modelo en precision fp16, el orden de magnitud seria de aproximadamente 200 millones de parametros; en fp32, alrededor de 100 millones. En ambos casos la inferencia cabria holgadamente en GPUs de consumo con 4-8 GB de VRAM, incluyendo RTX 3060, RTX 4060 o superiores.
 - Esta estimacion es fragil: el repositorio replica una carpeta `WEIGHTS/` y podria contener varios modelos o componentes parciales, de modo que el tamano total no tiene por que corresponder a un unico conjunto de parametros.
 - GPUs de datacenter (A100, H100): solo tendrian sentido si los pesos resultan ser un modelo mayor del que sugiere el tamano del repositorio; no hay base para recomendarlas.
-- Opciones de despliegue: no documentadas. Al no conocerse la arquitectura, no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama o TGI. La unica herramienta mencionada por el autor es el cliente `hf` de HuggingFace para la descarga.
+- Opciones de despliegue: no documentadas. Al no conocerse la arquitectura, no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama o TGI. La unica herramienta mencionada por el autor es el cliente `hf` de Hugging Face para la descarga.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No disponible. No se puede establecer una comparativa porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio de pesos en HuggingFace: https://huggingface.co/thinktraveller/YONOD-weights
+- Repositorio de pesos en Hugging Face: https://huggingface.co/thinktraveller/YONOD-weights
 - Proyecto YONOD en GitHub: https://github.com/thinktraveller/YONOD
 - Resultados de busqueda web: no se ha identificado ningun enlace relevante sobre el modelo; las consultas devolvieron unicamente paginas de inicio del motor de busqueda, sin papers, blogs, demos ni documentacion tecnica asociada.

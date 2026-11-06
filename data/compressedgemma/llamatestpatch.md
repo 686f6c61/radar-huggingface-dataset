@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CompressedGemma/LlamaTestPatch es un repositorio alojado en HuggingFace por el usuario CompressedGemma. Segun los metadatos publicos disponibles, se creo el 17 de septiembre de 2026 y se actualizo dos minutos mas tarde ese mismo dia, cuenta con 0 descargas y 0 likes, y declara licencia apache-2.0. La model card asociada no contiene mas que la linea de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso.
+CompressedGemma/LlamaTestPatch es un repositorio alojado en Hugging Face por el usuario CompressedGemma. Segun los metadatos publicos disponibles, se creo el 17 de septiembre de 2026 y se actualizo dos minutos mas tarde ese mismo dia, cuenta con 0 descargas y 0 likes, y declara licencia apache-2.0. La model card asociada no contiene mas que la linea de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso.
 
 El nombre del repositorio sugiere, sin confirmacion alguna, que podria tratarse de una variante o parche experimental relacionado con la familia Llama, pero esta interpretacion es una inferencia a partir del identificador y no esta respaldada por ningun contenido tecnico publicado. No se dispone de pipeline declarado, idiomas soportados, formato de pesos ni configuracion de contexto.
 
-Dado el estado del repositorio (sin documentacion, sin descargas y con dos unicas marcas temporales separadas por dos minutos), la ficha no puede ofrecer datos verificables sobre capacidades, rendimiento o requisitos de despliegue. Todo lo que sigue refleja exclusivamente lo publicado en HuggingFace y marca como "no disponible" cualquier dato ausente. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo: los unicos enlaces recuperados correspondian a foros de Minecraft, sin ninguna conexion con el repositorio.
+Dado el estado del repositorio (sin documentacion, sin descargas y con dos unicas marcas temporales separadas por dos minutos), la ficha no puede ofrecer datos verificables sobre capacidades, rendimiento o requisitos de despliegue. Todo lo que sigue refleja exclusivamente lo publicado en Hugging Face y marca como "no disponible" cualquier dato ausente. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo: los unicos enlaces recuperados correspondian a foros de Minecraft, sin ninguna conexion con el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompressedGemma/LlamaTestPatch
+- Hugging Face: https://huggingface.co/CompressedGemma/LlamaTestPatch
 - Model card: https://huggingface.co/CompressedGemma/LlamaTestPatch/blob/main/README.md
 - Paper: no disponible
 - Blog o anuncio: no disponible

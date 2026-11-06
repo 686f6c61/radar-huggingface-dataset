@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akshay10800/vlr1a` es un modelo publicado en HuggingFace por el usuario akshay10800 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente reproduce la declaracion de licencia en formato YAML, sin informacion sobre arquitectura, proposito, datos de entrenamiento o capacidades. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+`akshay10800/vlr1a` es un modelo publicado en Hugging Face por el usuario akshay10800 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente reproduce la declaracion de licencia en formato YAML, sin informacion sobre arquitectura, proposito, datos de entrenamiento o capacidades. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 Por el tamano del repositorio y la ausencia de metadatos, no es posible determinar con rigor la naturaleza del modelo (transformer, MoE, modelo de vision, adaptador LoRA, checkpoint parcial, etc.) ni su volumen de parametros. El identificador "vlr1a" sugiere una posible relacion con modelos de vision-lenguaje, pero se trata de una inferencia no confirmada por ninguna fuente.
 
@@ -23,7 +23,7 @@ La relevancia practica de esta ficha es limitada: se documenta el estado real de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un componente auxiliar (adaptador, tokenizador, checkpoint parcial). El tamano del repositorio (0,2 GB) es compatible con modelos pequenos, adaptadores o pesos cuantizados, pero no permite concluir nada de forma fiable.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un componente auxiliar (adaptador, tokenizador, checkpoint parcial). El tamano del repositorio (0,2 GB) es compatible con modelos pequenos, adaptadores o pesos cuantizados, pero no permite concluir nada de forma fiable.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta seccion queda como no disponible.
 
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshay10800/vlr1a
+- Hugging Face: https://huggingface.co/akshay10800/vlr1a
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

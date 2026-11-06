@@ -2,7 +2,7 @@
 
 ## Resumen
 
-holo-narrative es una biblioteca de un solo archivo, escrita en Python sobre NumPy, que implementa una memoria asociativa ordenada para secuencias de eventos, cronologias y cadenas narrativas mediante vectores hiperdimensionales. No es una red neuronal ni un modelo de lenguaje: no hay pesos entrenados, no hay gradientes y no se depende de ningun modelo externo. El autor es zeechimp (Sylv Q), que mantiene otras publicaciones de computacion hiperdimensional en HuggingFace.
+holo-narrative es una biblioteca de un solo archivo, escrita en Python sobre NumPy, que implementa una memoria asociativa ordenada para secuencias de eventos, cronologias y cadenas narrativas mediante vectores hiperdimensionales. No es una red neuronal ni un modelo de lenguaje: no hay pesos entrenados, no hay gradientes y no se depende de ningun modelo externo. El autor es zeechimp (Sylv Q), que mantiene otras publicaciones de computacion hiperdimensional en Hugging Face.
 
 El problema que resuelve es concreto: almacenar y recorrer secuencias ordenadas sin recurrir a un transformer ni a una base de datos de grafos. La clave tecnica es el binding dirigido (`bind_dir`), un desplazamiento en el dominio de la FFT aplicado al segundo operando, que es no conmutativo. Con binding simetrico, la arista inversa compite con la directa y una cadena acaba rebotando entre dos estados (0 -> 1 -> 2 -> 3 -> 2 -> 3...), sin alcanzar nunca el final; el binding dirigido elimina ese fallo manteniendo dos trazas, `S_next` y `S_prev`.
 
@@ -117,9 +117,9 @@ No se dispone de datos de rendimiento de sistemas comparables en la informacion 
 
 | Sistema | Tipo | Parametros | Contexto o capacidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeechimp/holo-narrative | Memoria asociativa hiperdimensional (NumPy) | no aplica (D configurable, 4096 por defecto) | ~100 eventos por cadena con >=90 % de acierto | apache-2.0 | HuggingFace, cumplimiento `feature-extraction` |
-| zeechimp/hv-intent | Clasificacion de intenciones con computacion hiperdimensional, CPU-only, few-shot | no disponible | no disponible | Apache-2.0 | HuggingFace (mismo autor) |
-| zeechimp/hv-multimodal-audio-text-v1 | Clasificacion de audio | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| zeechimp/holo-narrative | Memoria asociativa hiperdimensional (NumPy) | no aplica (D configurable, 4096 por defecto) | ~100 eventos por cadena con >=90 % de acierto | apache-2.0 | Hugging Face, cumplimiento `feature-extraction` |
+| zeechimp/hv-intent | Clasificacion de intenciones con computacion hiperdimensional, CPU-only, few-shot | no disponible | no disponible | Apache-2.0 | Hugging Face (mismo autor) |
+| zeechimp/hv-multimodal-audio-text-v1 | Clasificacion de audio | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 | Bases de datos vectoriales con indice ANN (HNSW, IVF) | Recuperacion por similitud, no ordenada | no aplica | Limitada por memoria del indice | Variable | Amplia disponibilidad |
 
 La diferencia funcional relevante frente a una base vectorial convencional no es la similitud, sino la recuperacion de orden: holo-narrative devuelve explicitamente el sucesor o el precesor de un evento dentro de una cadena, algo que un indice ANN no ofrece de forma nativa. No se han publicado comparativas de rendimiento entre ambos enfoques en la informacion disponible.
@@ -141,8 +141,8 @@ La diferencia funcional relevante frente a una base vectorial convencional no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/holo-narrative
-- Perfil del autor en HuggingFace: https://huggingface.co/zeechimp
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/holo-narrative
+- Perfil del autor en Hugging Face: https://huggingface.co/zeechimp
 - Listado de modelos del autor: https://huggingface.co/zeechimp/models
 - hv-intent (mismo autor, computacion hiperdimensional): https://free2aitools.com/model/zeechimp/zee
 - hv-multimodal-audio-text-v1 (mismo autor, citado en la busqueda): https://huggingface.co/zeechimp/hv-multimodal-audio-text-v1

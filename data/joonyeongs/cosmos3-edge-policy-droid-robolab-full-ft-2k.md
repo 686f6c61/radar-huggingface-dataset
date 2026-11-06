@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos3-Edge-Policy-DROID — RoboLab generator full fine-tuning, 2k steps es un modelo de política (policy model) para control robótico derivado de nvidia/Cosmos3-Edge-Policy-DROID. Lo publica el usuario joonyeongs en HuggingFace y consiste en un ajuste fino completo de todos los pesos del generador sobre un conjunto de 200 demostraciones exitosas de RoboLab DROID (8 tareas, 25 demostraciones por tarea). El resultado es un checkpoint con el mismo layout que el modelo base, pensado para servir políticas de acción en el entorno de evaluación RoboLab.
+Cosmos3-Edge-Policy-DROID — RoboLab generator full fine-tuning, 2k steps es un modelo de política (policy model) para control robótico derivado de nvidia/Cosmos3-Edge-Policy-DROID. Lo publica el usuario joonyeongs en Hugging Face y consiste en un ajuste fino completo de todos los pesos del generador sobre un conjunto de 200 demostraciones exitosas de RoboLab DROID (8 tareas, 25 demostraciones por tarea). El resultado es un checkpoint con el mismo layout que el modelo base, pensado para servir políticas de acción en el entorno de evaluación RoboLab.
 
 El modelo parte de la familia Cosmos3 de NVIDIA, que combina un backbone de difusión con un "understanding tower" congelado y un VAE de Wan2.2 para la parte visual. El fine-tuning toca 1.420 millones de parámetros del lado generador (atención, MLP, normas, `vae2llm`, `llm2vae`, time embedder y las fronteras de acción DROID), mientras que la torre de comprensión y `k_norm_und_for_gen` permanecen congeladas con K/V de texto en caché. El checkpoint completo pesa 3.859 millones de parámetros en safetensors.
 
@@ -76,8 +76,8 @@ El éxito en bucle cerrado en RoboLab no se ha evaluado todavía.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (joonyeongs/cosmos3-edge-policy-droid-robolab-full-ft-2k) | 3,859B (1,42B entrenados) | no disponible | OpenMDW-1.1 | HuggingFace, 0 descargas | Fine-tune completo sobre 200 demos RoboLab DROID |
-| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible | no disponible | OpenMDW-1.1 | HuggingFace | Punto de partida; MAE medio 0,1895 rad en la comprobación |
+| Este modelo (joonyeongs/cosmos3-edge-policy-droid-robolab-full-ft-2k) | 3,859B (1,42B entrenados) | no disponible | OpenMDW-1.1 | Hugging Face, 0 descargas | Fine-tune completo sobre 200 demos RoboLab DROID |
+| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible | no disponible | OpenMDW-1.1 | Hugging Face | Punto de partida; MAE medio 0,1895 rad en la comprobación |
 | Otros modelos de política robótica de la familia Cosmos3 | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ El éxito en bucle cerrado en RoboLab no se ha evaluado todavía.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-full-ft-2k
+- Hugging Face: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-robolab-full-ft-2k
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Dataset: https://huggingface.co/datasets/joonyeongs/robolab-droid-200
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

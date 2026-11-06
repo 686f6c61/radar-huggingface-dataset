@@ -78,10 +78,10 @@ No hay datos de rendimiento publicados para este modelo mas alla de la perdida d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sanyam2005/anlp-a2-part2-adam-mini | 27,3M | no disponible | no disponible | HuggingFace, 0 descargas |
-| sanyam2005/anlp-a1-transformers | no disponible | no disponible | no disponible | HuggingFace (modelo hermano del mismo autor) |
-| Pythia-14M (EleutherAI) | 14M | 2048 tokens (publicado) | Apache 2.0 (publicado) | HuggingFace |
-| distilgpt2 | 82M | 1024 tokens (publicado) | Apache 2.0 (publicado) | HuggingFace |
+| sanyam2005/anlp-a2-part2-adam-mini | 27,3M | no disponible | no disponible | Hugging Face, 0 descargas |
+| sanyam2005/anlp-a1-transformers | no disponible | no disponible | no disponible | Hugging Face (modelo hermano del mismo autor) |
+| Pythia-14M (EleutherAI) | 14M | 2048 tokens (publicado) | Apache 2.0 (publicado) | Hugging Face |
+| distilgpt2 | 82M | 1024 tokens (publicado) | Apache 2.0 (publicado) | Hugging Face |
 
 Comparativa de rendimiento: no disponible, ya que no existen resultados de benchmarks comunes publicados para el modelo analizado.
 
@@ -99,8 +99,8 @@ Comparativa de rendimiento: no disponible, ya que no existen resultados de bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part2-adam-mini
-- Perfil del autor en HuggingFace (incluye `sanyam2005/anlp-a1-transformers`): https://huggingface.co/sanyam2005/models
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part2-adam-mini
+- Perfil del autor en Hugging Face (incluye `sanyam2005/anlp-a1-transformers`): https://huggingface.co/sanyam2005/models
 - Paper Adam-mini (arXiv, abstract): https://arxiv.org/abs/2406.16793
 - Paper Adam-mini (arXiv, HTML v5): https://arxiv.org/html/2406.16793v5
 - Ficha de Adam-mini en ML Anthology (ICLR 2025): https://mlanthology.org/iclr/2025/zhang2025iclr-adammini/

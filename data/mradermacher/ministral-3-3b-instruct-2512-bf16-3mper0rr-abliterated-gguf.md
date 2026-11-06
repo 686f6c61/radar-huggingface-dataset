@@ -21,7 +21,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha,
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (el modelo base del que deriva expone safetensors) |
 | Tamano del repositorio | 32,5 GB |
-| Fecha de publicacion en HuggingFace | 2026-10-01 (segun metadatos) |
+| Fecha de publicacion en Hugging Face | 2026-10-01 (segun metadatos) |
 | Modelo base | 3MPER0RR/Ministral-3-3B-Instruct-2512-BF16-3MPER0RR-abliterated |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ministral-3-3B-Instruct-2512 (Mistral AI, original) | ~3,4 B | no disponible | Vision declarada en la documentacion oficial | no disponible | ModelScope y canales oficiales de Mistral |
-| Ministral-3-3B-Instruct-2512-BF16-GGUF (mradermacher) | ~3,4 B | no disponible | No (sin capa abliterated) | Apache 2.0 | HuggingFace |
-| Ministral-3-3B-Instruct-2512-BF16-i1-GGUF (mradermacher) | ~3,4 B | no disponible | No | Apache 2.0 | HuggingFace, cuantizaciones con imatrix |
-| Este modelo (3MPER0RR-abliterated-GGUF) | 3.429.006.336 | no disponible | Contradictorio (etiquetas text-only frente a ficheros mmproj) | Apache 2.0 | HuggingFace, cuantizacion estatica unicamente |
+| Ministral-3-3B-Instruct-2512-BF16-GGUF (mradermacher) | ~3,4 B | no disponible | No (sin capa abliterated) | Apache 2.0 | Hugging Face |
+| Ministral-3-3B-Instruct-2512-BF16-i1-GGUF (mradermacher) | ~3,4 B | no disponible | No | Apache 2.0 | Hugging Face, cuantizaciones con imatrix |
+| Este modelo (3MPER0RR-abliterated-GGUF) | 3.429.006.336 | no disponible | Contradictorio (etiquetas text-only frente a ficheros mmproj) | Apache 2.0 | Hugging Face, cuantizacion estatica unicamente |
 
 La diferencia funcional frente a las otras dos distribuciones GGUF de mradermacher no esta en el rendimiento bruto, sino en el comportamiento: esta variante incorpora el ajuste abliterated del autor 3MPER0RR y, segun el README, carece de cuantizaciones ponderadas con imatrix, que si existen en el repositorio i1-GGUF. No hay datos de benchmarks que permitan comparar calidad entre las tres.
 
@@ -97,7 +97,7 @@ La diferencia funcional frente a las otras dos distribuciones GGUF de mradermach
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-BF16-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-BF16-3MPER0RR-abliterated-GGUF
 - Modelo base (variante abliterated): https://huggingface.co/3MPER0RR/Ministral-3-3B-Instruct-2512-BF16-3MPER0RR-abliterated
 - Pagina de resumen y descargas de mradermacher: https://hf.tst.eu/model#Ministral-3-3B-Instruct-2512-BF16-3MPER0RR-abliterated-GGUF
 - Cuantizaciones sin abliterar: https://huggingface.co/mradermacher/Ministral-3-3B-Instruct-2512-BF16-GGUF

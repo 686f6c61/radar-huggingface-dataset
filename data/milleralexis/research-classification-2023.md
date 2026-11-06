@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`milleralexis/research-classification-2023` es un repositorio experimental publicado por el usuario Alexis Miller (milleralexis) en HuggingFace. No es un modelo de lenguaje generativo, sino una base de codigo para tareas de **clasificacion** basada en una arquitectura hibrida **CNN Transformer**. El repositorio incluye el modelo, un punto de entrada de inferencia/entrenamiento, y ficheros de configuracion de arquitectura y de receta de experimento.
+`milleralexis/research-classification-2023` es un repositorio experimental publicado por el usuario Alexis Miller (milleralexis) en Hugging Face. No es un modelo de lenguaje generativo, sino una base de codigo para tareas de **clasificacion** basada en una arquitectura hibrida **CNN Transformer**. El repositorio incluye el modelo, un punto de entrada de inferencia/entrenamiento, y ficheros de configuracion de arquitectura y de receta de experimento.
 
 El peso distribuido (`model.safetensors`) es un **checkpoint de inicializacion** valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento real de parametros en safetensors es de **33.088** parametros, una magnitud muy reducida que lo situa en la categoria de prototipo de investigacion, no de modelo de produccion.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/milleralexis/research-classification-2023
+- Modelo en Hugging Face: https://huggingface.co/milleralexis/research-classification-2023
 - Perfil del autor: https://huggingface.co/milleralexis
 - Listado de modelos del autor: https://huggingface.co/milleralexis/models

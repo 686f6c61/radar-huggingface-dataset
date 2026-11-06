@@ -92,10 +92,10 @@ La comparación directa con el base es la más relevante: el checkpoint SFT es c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v2.h011.sft_sstB.step_60)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v2.h011.sft_sstB.step_60)
 - [Registro de la celda opus-high-v2](https://huggingface.co/agentic-ptb/opus-high-v2-record)
 - [Índice de AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Búsqueda de modelos agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Búsqueda de modelos agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)
 - [Página de Claude Opus de Anthropic](https://www.anthropic.com/claude/opus)
 - [Comparativa de modelos Claude (SecondTalent)](https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/)
 - [AA Agentic Index Leaderboard (BenchLM)](https://benchlm.ai/benchmarks/aaagenticindex)

@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Cobertura | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gb-price-estimate` (Elpriser) | LightGBM + ridge sobre residuo | Great Britain; regla para Portugal e Irlanda | 365 días de entrenamiento, 60 días en inferencia | CC-BY-4.0 | Pesos y código en HuggingFace |
+| `gb-price-estimate` (Elpriser) | LightGBM + ridge sobre residuo | Great Britain; regla para Portugal e Irlanda | 365 días de entrenamiento, 60 días en inferencia | CC-BY-4.0 | Pesos y código en Hugging Face |
 | Referencia naive "nivel + perfil semanal" | Media de 7 días + perfil de 4 semanas | Great Britain | 7 días + 4 semanas | No aplica | Baseline descrito en la model card |
 | Modelos de forecasting de precios eléctricos de terceros | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre alternativas comparables con parámetros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpriser/gb-price-estimate
+- Modelo en Hugging Face: https://huggingface.co/Elpriser/gb-price-estimate
 - Servicio donde se muestra la estimación: https://elpriser.org
 - Documentación de licencias de fuentes de datos: `DATA_LICENCES.md` en el repositorio
 - Elexon Market Index Price: no disponible en la información proporcionada

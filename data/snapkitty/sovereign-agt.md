@@ -52,5 +52,5 @@ No disponible. No existe una categoría de modelos comparable, ya que no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-agt
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-agt
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados obtenidos corresponden a tiendas de ropa sin relación).

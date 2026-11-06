@@ -23,7 +23,7 @@ Su relevancia actual está en el despliegue en dispositivo: el modelo se exporta
 | Tarea (pipeline) | token-classification |
 | Vocabulario de salida | 1.073 etiquetas de operacion (`KEEP`, `P:src->dst`, `M:hex`) |
 | Unidad de entrada | byte UTF-8 (256 valores posibles) |
-| Descargas / likes en HuggingFace | 0 / 1 |
+| Descargas / likes en Hugging Face | 0 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -119,6 +119,6 @@ No hay datos de comparacion con modelos alternativos en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mythologic/mark
+- Modelo en Hugging Face: https://huggingface.co/Mythologic/mark
 - Paper del corpus Yorùbá YAD (Asahiah et al., Orife): https://arxiv.org/abs/2004.14811
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

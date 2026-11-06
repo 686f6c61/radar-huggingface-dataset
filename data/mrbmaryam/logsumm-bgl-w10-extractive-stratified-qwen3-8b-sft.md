@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a una tarea de resumen extractivo sobre un corpus tipo LogSumm (probablemente un dataset de resúmenes de logs o de documentos técnicos), con una ventana de contexto de trabajo de 10 (w10) y una estrategia de muestreo estratificado. El modelo base declarado es la versión cuantizada en 4 bits de Qwen3-8B publicada por Unsloth (`unsloth/Qwen3-8B-bnb-4bit`), sobre la que se aplicó un entrenamiento supervisado con la librería TRL.
+`mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a una tarea de resumen extractivo sobre un corpus tipo LogSumm (probablemente un dataset de resúmenes de logs o de documentos técnicos), con una ventana de contexto de trabajo de 10 (w10) y una estrategia de muestreo estratificado. El modelo base declarado es la versión cuantizada en 4 bits de Qwen3-8B publicada por Unsloth (`unsloth/Qwen3-8B-bnb-4bit`), sobre la que se aplicó un entrenamiento supervisado con la librería TRL.
 
 Se trata de un modelo de 8.000 millones de parámetros con arquitectura transformer densa, derivado de la familia Qwen3 de Alibaba. El ajuste se realizó presumiblemente con técnicas de entrenamiento eficiente en memoria (QLoRA o similar) empleando Unsloth, que el autor destaca como "2x faster". El repositorio tiene un tamaño de 0,2 GB, lo que indica que los pesos publicados podrían estar en formato cuantizado o que el repositorio contiene únicamente los adaptadores LoRA y no el modelo completo en precisión completa.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft | 8B (aprox.) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste específico para resumen extractivo, sin benchmarks |
-| Qwen/Qwen3-8B | 8B | 32.768 tokens (según documentación del modelo base) | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-bnb-4bit | 8B | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace | Versión cuantizada 4 bits del modelo base, usada como punto de partida |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de tamaño similar con contexto mayor y licencia más restrictiva |
+| mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft | 8B (aprox.) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste específico para resumen extractivo, sin benchmarks |
+| Qwen/Qwen3-8B | 8B | 32.768 tokens (según documentación del modelo base) | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-bnb-4bit | 8B | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face | Versión cuantizada 4 bits del modelo base, usada como punto de partida |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de tamaño similar con contexto mayor y licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-extractive-stratified-qwen3-8b-sft
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de TRL: https://huggingface.co/docs/trl
 - Modelo Qwen3-8B oficial (referencia): https://huggingface.co/Qwen/Qwen3-8B

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario nmuendler bajo el identificador `Olmo3-7B-text-sft-training-curve-run1-step468`. No se trata de un modelo completo, sino de pesos de ajuste fino sobre el modelo base `allenai/Olmo-3-7B-Think`. El nombre del checkpoint indica que forma parte de un estudio de curva de entrenamiento (run 1, paso 468) sobre un ajuste supervisado (SFT) de texto, por lo que su valor principal es como artefacto de investigación más que como modelo listo para producción.
 
-El repositorio ocupa 0,3 GB, un tamaño coherente con pesos de adaptador en lugar de pesos completos, y está etiquetado con `peft`, `safetensors`, `lora`, `transformers`, `text-generation` y `conversational`. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los campos relevantes (autoría, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como `[More Information Needed]`.
+El repositorio ocupa 0,3 GB, un tamaño coherente con pesos de adaptador en lugar de pesos completos, y está etiquetado con `peft`, `safetensors`, `lora`, `transformers`, `text-generation` y `conversational`. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los campos relevantes (autoría, datos de entrenamiento, hiperparámetros, evaluación, licencia, idiomas) aparecen como `[More Information Needed]`.
 
 Por tanto, la relevancia de esta ficha es acotada: sirve para documentar un checkpoint intermedio de un experimento de SFT, útil para reproducibilidad, análisis de dinámica de entrenamiento o como punto de partida para continuar el ajuste. Cualquier dato de arquitectura, contexto o rendimiento debe consultarse en la documentación del modelo base, no aquí.
 
@@ -74,9 +74,9 @@ No hay datos publicados de este adaptador que permitan una comparación cuantita
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nmuendler/Olmo3-7B-text-sft-training-curve-run1-step468` | no disponible (adaptador sobre base de 7B) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `allenai/Olmo-3-7B-Think` (modelo base) | 7B según identificador | no disponible | no disponible | no disponible | HuggingFace |
-| Otros adaptadores LoRA de 7B para generación de texto | ~7B (base) | variable | no disponible | variable | HuggingFace |
+| `nmuendler/Olmo3-7B-text-sft-training-curve-run1-step468` | no disponible (adaptador sobre base de 7B) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `allenai/Olmo-3-7B-Think` (modelo base) | 7B según identificador | no disponible | no disponible | no disponible | Hugging Face |
+| Otros adaptadores LoRA de 7B para generación de texto | ~7B (base) | variable | no disponible | variable | Hugging Face |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (por ejemplo, otros adaptadores SFT sobre modelos de 7B o checkpoints intermedios equivalentes).
 
@@ -96,7 +96,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step468
+- Repositorio Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step468
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Librería PEFT: https://huggingface.co/docs/peft/index
 - Librería transformers: https://huggingface.co/docs/transformers/index

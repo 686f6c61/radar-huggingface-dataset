@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Illustrious_Models_Collection es un repositorio publicado en HuggingFace por el usuario SicariusSicariiStuff que agrupa un conjunto de modelos de generacion de imagenes a partir de texto (pipeline declarado como text-to-image). El repositorio ocupa 62,5 GB, lo que indica que contiene varios checkpoints completos en lugar de un unico modelo, y esta etiquetado con el idioma ingles y una licencia de tipo "other" (distinta de las licencias estandar de HuggingFace, con terminos definidos por el autor).
+Illustrious_Models_Collection es un repositorio publicado en Hugging Face por el usuario SicariusSicariiStuff que agrupa un conjunto de modelos de generacion de imagenes a partir de texto (pipeline declarado como text-to-image). El repositorio ocupa 62,5 GB, lo que indica que contiene varios checkpoints completos en lugar de un unico modelo, y esta etiquetado con el idioma ingles y una licencia de tipo "other" (distinta de las licencias estandar de Hugging Face, con terminos definidos por el autor).
 
-La model card publicada es minima: solo incluye metadatos de YAML (language, license, tags, inference: false y un widget de ejemplo) y una imagen de muestra. No se documentan la arquitectura interna, el numero de parametros, los datos de entrenamiento ni los resultados de evaluacion. El campo inference: false indica que el autor no ha habilitado la inferencia alojada en HuggingFace, por lo que el uso requiere descarga e implementacion local.
+La model card publicada es minima: solo incluye metadatos de YAML (language, license, tags, inference: false y un widget de ejemplo) y una imagen de muestra. No se documentan la arquitectura interna, el numero de parametros, los datos de entrenamiento ni los resultados de evaluacion. El campo inference: false indica que el autor no ha habilitado la inferencia alojada en Hugging Face, por lo que el uso requiere descarga e implementacion local.
 
 Por el nombre y el tamano, el repositorio parece orientarse a la familia de modelos de difusion derivados de Illustrious (base SDXL) para generacion de ilustracion, pero esta afirmacion no puede confirmarse con la informacion disponible: la model card no especifica la arquitectura base, la resolucion de entrenamiento ni la procedencia de los pesos. Cualquier evaluacion tecnica seria requiere inspeccionar los archivos del repositorio y verificar los pesos antes de usarlos en produccion.
 
@@ -22,7 +22,7 @@ Por el nombre y el tamano, el repositorio parece orientarse a la familia de mode
 | Formato de pesos | no disponible (el repositorio de 62,5 GB sugiere safetensors y/o .ckpt, pero no se confirma en la informacion proporcionada) |
 | Tipo de pipeline | text-to-image |
 | Resolucion de salida | no disponible |
-| Inferencia alojada en HuggingFace | no (inference: false) |
+| Inferencia alojada en Hugging Face | no (inference: false) |
 | Tamano del repositorio | 62,5 GB |
 | Descargas | 0 |
 | Likes | 0 |
@@ -69,7 +69,7 @@ La model card no incluye FID, CLIP score, evaluaciones humanas, comparativas de 
 - Compatibilidad con GPU de consumo: no confirmada. Depende de la arquitectura real de los checkpoints, que no se documenta.
 - Espacio en disco: se requieren al menos 62,5 GB para clonar el repositorio completo, mas el espacio adicional para pesos convertidos o cuantizados.
 - Opciones de despliegue: no declaradas por el autor. Para modelos de difusion son habituales diffusers (Python), ComfyUI, Automatic1111/Stable Diffusion WebUI, Forge, InvokeAI y stable-diffusion.cpp para ejecucion en CPU o con cuantizacion GGUF.
-- Latencia y throughput: no disponibles. El campo inference: false de la model card impide ademas usar la inferencia alojada de HuggingFace como referencia.
+- Latencia y throughput: no disponibles. El campo inference: false de la model card impide ademas usar la inferencia alojada de Hugging Face como referencia.
 
 ## Comparativa con modelos similares
 
@@ -77,10 +77,10 @@ No se dispone de datos verificados de este repositorio (parametros, contexto, re
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Illustrious_Models_Collection | no disponible | no disponible | no disponible | other | HuggingFace, 0 descargas, sin inferencia alojada |
-| SDXL base 1.0 (Stability AI) | no disponible en esta informacion | no disponible | no disponible | CreativeML Open RAIL++-M | HuggingFace y multiples mirrors |
-| Illustrious-XL y derivados | no disponible | no disponible | no disponible | variable segun derivado | HuggingFace y Civitai |
-| Pony Diffusion V6 XL | no disponible | no disponible | no disponible | otras licencias de la comunidad | HuggingFace y Civitai |
+| Illustrious_Models_Collection | no disponible | no disponible | no disponible | other | Hugging Face, 0 descargas, sin inferencia alojada |
+| SDXL base 1.0 (Stability AI) | no disponible en esta informacion | no disponible | no disponible | CreativeML Open RAIL++-M | Hugging Face y multiples mirrors |
+| Illustrious-XL y derivados | no disponible | no disponible | no disponible | variable segun derivado | Hugging Face y Civitai |
+| Pony Diffusion V6 XL | no disponible | no disponible | no disponible | otras licencias de la comunidad | Hugging Face y Civitai |
 
 No se han encontrado en la busqueda web enlaces, papers ni comparativas que permitan completar esta tabla con cifras contrastadas.
 
@@ -99,7 +99,7 @@ No se han encontrado en la busqueda web enlaces, papers ni comparativas que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Illustrious_Models_Collection
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Illustrious_Models_Collection
 - Imagen de muestra del widget: https://huggingface.co/SicariusSicariiStuff/Illustrious_Models_Collection/resolve/main/Images/Illustrious.png
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: los enlaces devueltos corresponden a un comercio minorista no relacionado con el modelo (BAGATELLE Lifestore), por lo que no se incluyen como fuentes tecnicas.

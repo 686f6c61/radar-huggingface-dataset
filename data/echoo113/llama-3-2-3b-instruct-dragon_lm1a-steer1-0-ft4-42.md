@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Llama-3.2-3B-Instruct-dragon_Lm1A-STEER1.0-ft4.42` es un fine-tuning del modelo `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario `Echoo113`. Se ha entrenado mediante *supervised fine-tuning* (SFT) con la librería TRL y está disponible en el ecosistema HuggingFace con la librería Transformers.
+`Echoo113/Llama-3.2-3B-Instruct-dragon_Lm1A-STEER1.0-ft4.42` es un fine-tuning del modelo `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario `Echoo113`. Se ha entrenado mediante *supervised fine-tuning* (SFT) con la librería TRL y está disponible en el ecosistema Hugging Face con la librería Transformers.
 
 El nombre del repositorio sugiere una adaptación con un identificador interno (`dragon_Lm1A-STEER1.0-ft4.42`), pero la model card no incluye información sobre el dataset, el objetivo de la adaptación ni el procedimiento de entrenamiento. El tamaño del repositorio es de solo 0,2 GB, una cifra inusualmente baja para un modelo de 3.000 millones de parámetros en precisión completa, lo que indica que probablemente no se han subido los pesos completos del modelo o que se trata de un adaptador parcial.
 
@@ -61,7 +61,7 @@ Los siguientes datos son estimaciones teóricas basadas en el tamaño del modelo
 - VRAM estimada en cuantización INT4 (AWQ o GPTQ): ~2 GB de pesos.
 - GPU recomendadas: una RTX 3060 de 12 GB es suficiente para FP16 en contextos cortos; una RTX 4090 o una A10G permiten mayor ventana de contexto y menor latencia.
 - ¿Cabe en GPU de consumo? Sí, en tarjetas de 8 GB o más si se aplican cuantizaciones. En FP16 puro, una RTX 3050 de 8 GB no es recomendable por el overhead del contexto.
-- Opciones de despliegue: Transformers, vLLM, llama.cpp, Ollama, TGI y endpoints de HuggingFace. No se han proporcionado configuraciones específicas.
+- Opciones de despliegue: Transformers, vLLM, llama.cpp, Ollama, TGI y endpoints de Hugging Face. No se han proporcionado configuraciones específicas.
 - Latencia y throughput: no disponible, al no existir mediciones publicadas.
 
 ## Comparativa con modelos similares

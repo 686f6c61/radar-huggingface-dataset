@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-oQ5e es una cuantización de precisión mixta del modelo LFM2.5-24B-A2B, publicada por el usuario jancirnodziewiaty en HuggingFace. Se trata de un checkpoint derivado, no de un modelo original: el autor ha aplicado la herramienta oQ (oMLX v0.7.3) para reducir el peso del modelo base desde su formato original hasta una media efectiva de 5,629 bits por peso, con un almacenamiento total de 15,710 GiB. El modelo resultante conserva 23.971.587.712 parámetros lógicos y está empaquetado en formato MLX, lo que lo orienta a la inferencia en hardware Apple Silicon.
+LFM2.5-24B-A2B-oQ5e es una cuantización de precisión mixta del modelo LFM2.5-24B-A2B, publicada por el usuario jancirnodziewiaty en Hugging Face. Se trata de un checkpoint derivado, no de un modelo original: el autor ha aplicado la herramienta oQ (oMLX v0.7.3) para reducir el peso del modelo base desde su formato original hasta una media efectiva de 5,629 bits por peso, con un almacenamiento total de 15,710 GiB. El modelo resultante conserva 23.971.587.712 parámetros lógicos y está empaquetado en formato MLX, lo que lo orienta a la inferencia en hardware Apple Silicon.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica de cuantización mixta que combina capas en 5 bits afín (grupo 64) con una fracción pequeña en 8 bits y BF16, un enfoque que busca preservar la calidad del modelo original reduciendo el coste de memoria. Por otro, advierte de que la información disponible sobre el modelo base es muy limitada: la model card del checkpoint cuantizado no incluye datos sobre arquitectura, contexto, licencia, idiomas ni benchmarks. Todo lo que se detalla a continuación se limita a lo que el autor ha publicado explícitamente.
 
@@ -12,7 +12,7 @@ El checkpoint fue creado el 14 de octubre de 2026 y actualizado el 2 de noviembr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | lfm2_moe (según tag de HuggingFace); detalles no disponibles |
+| Arquitectura | lfm2_moe (según tag de Hugging Face); detalles no disponibles |
 | Parametros totales | 23.971.587.712 (23,972B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ El checkpoint fue creado el 14 de octubre de 2026 y actualizado el 2 de noviembr
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura del modelo base LFM2.5-24B-A2B más allá de la etiqueta `lfm2_moe` que aparece en los tags de HuggingFace, lo que indica una arquitectura de mezcla de expertos (MoE). No se han publicado detalles sobre el número de expertos, el mecanismo de enrutamiento, la dimensión oculta, el número de capas ni el tipo de atención. Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación.
+La información disponible no permite describir la arquitectura del modelo base LFM2.5-24B-A2B más allá de la etiqueta `lfm2_moe` que aparece en los tags de Hugging Face, lo que indica una arquitectura de mezcla de expertos (MoE). No se han publicado detalles sobre el número de expertos, el mecanismo de enrutamiento, la dimensión oculta, el número de capas ni el tipo de atención. Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación.
 
 Lo que sí está documentado es el proceso de cuantización aplicado por el autor del checkpoint. La herramienta oQ (oMLX v0.7.3) asigna precisiones distintas a distintos tensores: el 95,743% de los pesos lógicos (22,951B) se almacenan en 5 bits afín con grupo de 64, el 4,234% (1,015B) en 8 bits afín con grupo de 64, y una fracción residual (0,005B) se mantiene en BF16. Esta distribución mixta busca concentrar la precisión en las capas más sensibles mientras reduce el coste de almacenamiento del grueso del modelo. El resultado es un checkpoint de 15,710 GiB que, según el autor, equivale a 5,629 bits por peso de media.
 
@@ -84,5 +84,5 @@ No disponible. La información proporcionada no incluye datos sobre el modelo ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ5e
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/LFM2.5-24B-A2B-oQ5e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

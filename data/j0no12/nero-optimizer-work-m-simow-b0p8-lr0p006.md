@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos al
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| j0no12/nero-optimizer-work-m-simow-b0p8-lr0p006 | 999.680 aprox. | 128 tokens | No disponible | HuggingFace, pesos MLX (.npz) |
+| j0no12/nero-optimizer-work-m-simow-b0p8-lr0p006 | 999.680 aprox. | 128 tokens | No disponible | Hugging Face, pesos MLX (.npz) |
 | Otros brazos de Nero Optimizer Work | No disponible | 128 tokens (segun la model card) | No disponible | No disponible en la informacion proporcionada |
 | Modelos de produccion de tamano similar | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,5 +94,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p8-lr0p006
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p8-lr0p006
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo ni con el barrido Nero Optimizer Work.

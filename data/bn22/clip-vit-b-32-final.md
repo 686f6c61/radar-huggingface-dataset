@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bn22/CLIP-ViT-B-32-FINAL` es un checkpoint de CLIP publicado en HuggingFace por el usuario `bn22`, etiquetado para la tarea `zero-shot-image-classification` y compatible con la librería `transformers`. Por el nombre y el tag `arxiv:1910.09700`, se corresponde con la arquitectura CLIP (Contrastive Language-Image Pre-training) de OpenAI en su variante ViT-B/32: dos torres transformer, una visión ViT-B con parches de 32x32 y una torre de texto, entrenadas de forma contrastiva para alinear imágenes y descripciones textuales en un espacio embedding comun. El checkpoint declara 153.639.680 parametros reales en safetensors y un repositorio de 1,2 GB.
+`bn22/CLIP-ViT-B-32-FINAL` es un checkpoint de CLIP publicado en Hugging Face por el usuario `bn22`, etiquetado para la tarea `zero-shot-image-classification` y compatible con la librería `transformers`. Por el nombre y el tag `arxiv:1910.09700`, se corresponde con la arquitectura CLIP (Contrastive Language-Image Pre-training) de OpenAI en su variante ViT-B/32: dos torres transformer, una visión ViT-B con parches de 32x32 y una torre de texto, entrenadas de forma contrastiva para alinear imágenes y descripciones textuales en un espacio embedding comun. El checkpoint declara 153.639.680 parametros reales en safetensors y un repositorio de 1,2 GB.
 
 El interes practico del modelo esta en su tamano reducido y su capacidad de clasificacion zero-shot: permite etiquetar imagenes contra un vocabulario abierto definido en tiempo de inferencia, sin reentrenamiento, lo que lo hace util para prototipado rapido, filtrado de datasets y busqueda semantica multimodal. Al ser la variante B/32, es la mas ligera de la familia CLIP basada en ViT, lo que abarata el despliegue en GPU de consumo e incluso en CPU.
 
-Ahora bien, la model card es la plantilla autogenerada de HuggingFace y no aporta ningun dato: no documenta el proceso de fine-tuning, el dataset utilizado, la licencia ni los idiomas. El sufijo `FINAL` sugiere un ajuste fino propio del autor sobre el CLIP original, pero no hay informacion que lo confirme ni que permita evaluar en que se diferencia del checkpoint de OpenAI. Cualquier uso en produccion deberia tratar este repositorio como no verificado (0 descargas y 0 likes en el momento de la ficha).
+Ahora bien, la model card es la plantilla autogenerada de Hugging Face y no aporta ningun dato: no documenta el proceso de fine-tuning, el dataset utilizado, la licencia ni los idiomas. El sufijo `FINAL` sugiere un ajuste fino propio del autor sobre el CLIP original, pero no hay informacion que lo confirme ni que permita evaluar en que se diferencia del checkpoint de OpenAI. Cualquier uso en produccion deberia tratar este repositorio como no verificado (0 descargas y 0 likes en el momento de la ficha).
 
 ## Especificaciones tecnicas
 
@@ -101,7 +101,7 @@ Frente al checkpoint original de OpenAI, la ventaja potencial de este repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-FINAL
+- Modelo en Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-FINAL
 - Paper de la arquitectura CLIP (tag `arxiv:1910.09700`): https://arxiv.org/abs/1910.09700
 - Repositorio oficial de OpenAI CLIP: https://github.com/openai/CLIP
 - Implementacion OpenCLIP (alternativa para cargar pesos CLIP): https://github.com/mlfoundations/open_clip

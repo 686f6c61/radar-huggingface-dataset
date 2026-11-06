@@ -2,7 +2,7 @@
 
 ## Resumen
 
-berty-phaseC es un modelo publicado en HuggingFace por el usuario electroglyph bajo el identificador `electroglyph/berty-phaseC`. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y la unica etiqueta asociada es `region:us`. En el momento de redactar esta ficha acumula 85 descargas y 0 "likes", lo que indica una difusion muy limitada dentro de la comunidad.
+berty-phaseC es un modelo publicado en Hugging Face por el usuario electroglyph bajo el identificador `electroglyph/berty-phaseC`. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y la unica etiqueta asociada es `region:us`. En el momento de redactar esta ficha acumula 85 descargas y 0 "likes", lo que indica una difusion muy limitada dentro de la comunidad.
 
 El dato mas relevante del repositorio es su tamano: 935,0 GB. Se trata de un volumen de almacenamiento extremely elevado que, en ausencia de documentacion, no permite deducir el numero de parametros ni el formato de los pesos; ese espacio podria corresponder a un modelo de gran escala, a multiples checkpoints intermedios o a un conjunto de cuantizaciones distintas. Sin un `config.json` publico ni una model card descriptiva, cualquier afirmacion sobre la arquitectura seria especulativa.
 
@@ -30,7 +30,7 @@ Por el momento no es posible evaluar el modelo con rigor: no hay resultados de b
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no incluye `config.json` accesible, model card ni documentacion tecnica que permita determinar si se trata de un transformer denso, un transformer con mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se declara el numero de parametros ni la longitud de contexto soportada.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no incluye `config.json` accesible, model card ni documentacion tecnica que permita determinar si se trata de un transformer denso, un transformer con mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se declara el numero de parametros ni la longitud de contexto soportada.
 
 Del mismo modo, se desconoce por completo la composicion del dataset de entrenamiento, el volumen de tokens procesados, la existencia de fases de ajuste fino supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.). El unico indicio material es el tamano del repositorio, 935,0 GB, que sugiere un artefacto de gran volumen, pero sin desglose de ficheros no es posible atribuirlo a un mayor numero de parametros, a precision completa en los pesos o a la coexistencia de varias versiones del modelo.
 
@@ -93,6 +93,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/electroglyph/berty-phaseC
+- Hugging Face: https://huggingface.co/electroglyph/berty-phaseC
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

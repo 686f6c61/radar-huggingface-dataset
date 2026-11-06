@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes mas alla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prabanta-dev/gemma-4-E4B-it-JNS
+- Repositorio Hugging Face: https://huggingface.co/prabanta-dev/gemma-4-E4B-it-JNS
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Cuantizacion GGUF de origen: https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF
 - Motor Janas: https://github.com/prabanta-dev/janas

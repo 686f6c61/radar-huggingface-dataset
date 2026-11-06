@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1 B | No disponible en esta ficha | Apache 2.0 | HuggingFace (TinyLlama) | Pesos fp16 en PyTorch; referencia para cuantizar |
-| TinyLlama-1.1B-Chat-v1.0-GGUF (TheBloke) | 1,1 B | No disponible en esta ficha | Apache 2.0 | HuggingFace (TheBloke) | Cuantizaciones GGUF originales; base de esta redistribucion |
-| Esta publicacion (neuwenhuis) | 1,1 B | No disponible en esta ficha | Apache 2.0 | HuggingFace (neuwenhuis) | Redistribucion GGUF con 0 descargas y 0 likes |
+| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1 B | No disponible en esta ficha | Apache 2.0 | Hugging Face (TinyLlama) | Pesos fp16 en PyTorch; referencia para cuantizar |
+| TinyLlama-1.1B-Chat-v1.0-GGUF (TheBloke) | 1,1 B | No disponible en esta ficha | Apache 2.0 | Hugging Face (TheBloke) | Cuantizaciones GGUF originales; base de esta redistribucion |
+| Esta publicacion (neuwenhuis) | 1,1 B | No disponible en esta ficha | Apache 2.0 | Hugging Face (neuwenhuis) | Redistribucion GGUF con 0 descargas y 0 likes |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. La diferencia practica entre las tres radica en el formato de pesos y en el mantenimiento del repositorio, no en la arquitectura ni en los parametros.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neuwenhuis/TinyLlama-1.1B-Chat-v1.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/neuwenhuis/TinyLlama-1.1B-Chat-v1.0-GGUF
 - Modelo base original: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Cuantizaciones GGUF de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF
 - Cuantizaciones AWQ de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-AWQ

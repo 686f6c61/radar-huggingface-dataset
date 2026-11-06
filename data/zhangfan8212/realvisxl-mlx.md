@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhangfan8212/realvisxl-mlx
+- Repositorio Hugging Face: https://huggingface.co/zhangfan8212/realvisxl-mlx
 - Modelo base original: https://huggingface.co/SG161222/RealVisXL_V5.0
 - Librería `mlx-gen` de SceneWorks: https://github.com/SceneWorks/mlx-gen
 - Versión Lightning en MLX: https://huggingface.co/SceneWorks/realvisxl-lightning-mlx

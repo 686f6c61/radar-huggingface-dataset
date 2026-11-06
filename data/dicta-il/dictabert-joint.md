@@ -28,7 +28,7 @@ Es un modelo de extraccion de caracteristicas (pipeline `feature-extraction`), n
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer de tipo BERT (etiquetado como `bert` en HuggingFace) con un conjunto de cabezas de prediccion acopladas que resuelven simultaneamente cinco tareas linguisticas. El modelo se carga mediante `AutoModel` con `trust_remote_code=True` y expone un metodo `predict()` que devuelve la anotacion por token. Los parametros totales (186 M) superan ligeramente a los de un BERT-base estandar, lo que es coherente con la presencia de multiples cabezas de tarea sobre el tronco comun. El modelo card no detalla la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de ajuste como RLHF o DPO; esa informacion no esta disponible en los datos proporcionados.
+La arquitectura es un encoder transformer de tipo BERT (etiquetado como `bert` en Hugging Face) con un conjunto de cabezas de prediccion acopladas que resuelven simultaneamente cinco tareas linguisticas. El modelo se carga mediante `AutoModel` con `trust_remote_code=True` y expone un metodo `predict()` que devuelve la anotacion por token. Los parametros totales (186 M) superan ligeramente a los de un BERT-base estandar, lo que es coherente con la presencia de multiples cabezas de tarea sobre el tronco comun. El modelo card no detalla la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de ajuste como RLHF o DPO; esa informacion no esta disponible en los datos proporcionados.
 
 Una innovacion practica destacable es la posibilidad de desactivar cabezas concretas en el momento de la carga para ahorrar computo cuando solo se necesita una tarea: los modificadores `do_lex`, `do_syntax`, `do_ner`, `do_prefix` y `do_morph`. Ademas, el modelo admite tres estilos de salida que controlan el nivel de detalle y la convencion de anotacion: JSON estructurado, CoNLL-U segun el Hebrew UD Treebank y CoNLL-U con las convenciones de IAHLT (diferencias de granularidad en relaciones de dependencia, separacion de sufijos y articulos definidos implicitos). El comportamiento de etiquetado en si no cambia entre los dos ultimos formatos.
 
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - En la practica, el repositorio ocupa 3,0 GB, ya que incluye varios ficheros de pesos y cabezas, por lo que conviene reservar espacio en disco acorde.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP16, incluidas RTX 3060, RTX 4060, RTX 4090, A100, H100 o T4. El modelo es perfectamente ejecutable en CPU para cargas por lotes moderadas.
 - Si cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en GPUs integradas con memoria compartida suficiente.
-- Opciones de despliegue: la libreria `transformers` es la via documentada, con `AutoTokenizer` y `AutoModel` y `trust_remote_code=True`. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI; la etiqueta `text-embeddings-inference` aparece en los tags de HuggingFace, pero la model card no ofrece instrucciones al respecto. El parametro `inference: false` de la model card indica que la inferencia alojada de HuggingFace esta deshabilitada, probablemente por el codigo personalizado.
+- Opciones de despliegue: la libreria `transformers` es la via documentada, con `AutoTokenizer` y `AutoModel` y `trust_remote_code=True`. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI; la etiqueta `text-embeddings-inference` aparece en los tags de Hugging Face, pero la model card no ofrece instrucciones al respecto. El parametro `inference: false` de la model card indica que la inferencia alojada de Hugging Face esta deshabilitada, probablemente por el codigo personalizado.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicta-il/dictabert-joint | 186.012.926 | no disponible | Segmentacion de prefijos, morfologia, lematizacion, dependencias y NER de forma conjunta | cc-by-4.0 | HuggingFace, demo publica |
-| dicta-il/dictabert-tiny-joint | no disponible | no disponible | Equivalente a dictabert-joint, version mas rapida | no disponible en la informacion proporcionada | HuggingFace |
-| Modelos bert-base del resto de la coleccion DictaBERT | no disponible | no disponible | Tareas individuales (no conjuntas) | no disponible en la informacion proporcionada | HuggingFace (coleccion dicta-il/dictabert) |
+| dicta-il/dictabert-joint | 186.012.926 | no disponible | Segmentacion de prefijos, morfologia, lematizacion, dependencias y NER de forma conjunta | cc-by-4.0 | Hugging Face, demo publica |
+| dicta-il/dictabert-tiny-joint | no disponible | no disponible | Equivalente a dictabert-joint, version mas rapida | no disponible en la informacion proporcionada | Hugging Face |
+| Modelos bert-base del resto de la coleccion DictaBERT | no disponible | no disponible | Tareas individuales (no conjuntas) | no disponible en la informacion proporcionada | Hugging Face (coleccion dicta-il/dictabert) |
 
 No se dispone de datos de otros modelos comparables de analisis morfosintactico del hebreo en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
 
@@ -89,13 +89,13 @@ No se dispone de datos de otros modelos comparables de analisis morfosintactico 
 - Sesgos conocidos: no se documentan en la informacion disponible; al tratarse de un modelo entrenado sobre corpus en hebreo, es previsible que herede los sesgos de dominio y registro de dichos corpus (por ejemplo, predominio de registro periodistico o formal), aunque no hay datos publicados que lo confirmen.
 - Limitaciones de contexto: la longitud maxima de secuencia no se especifica en la model card, un dato critico para decidir si el modelo admite documentos largos o solo oraciones.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo incluido en el repositorio del modelo; conviene auditar dicho codigo antes de usarlo en produccion.
-- La model card declara `inference: false`, por lo que la inferencia alojada de HuggingFace no esta disponible y el despliegue debe ser propio.
+- La model card declara `inference: false`, por lo que la inferencia alojada de Hugging Face no esta disponible y el despliegue debe ser propio.
 - Licencia CC-BY-4.0: permite uso comercial, pero obliga a atribuir la autoria del modelo de forma adecuada y a indicar si se han realizado modificaciones.
 - El propio autor recomienda `dictabert-tiny-joint` cuando se necesita mayor velocidad, lo que sugiere que este modelo no esta optimizado para latencia baja.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicta-il/dictabert-joint
+- Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-joint
 - Articulo (arXiv): https://arxiv.org/abs/2403.06970
 - Demo interactiva con visualizacion del arbol sintactico: https://huggingface.co/spaces/dicta-il/joint-demo
 - Modelo equivalente mas rapido (bert-tiny): https://huggingface.co/dicta-il/dictabert-tiny-joint

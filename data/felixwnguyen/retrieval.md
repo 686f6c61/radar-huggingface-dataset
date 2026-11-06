@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felixwnguyen/retrieval` es una implementación de referencia de una arquitectura **MobileViT** orientada a tareas de **retrieval** (recuperación de información multimodal, presumiblemente imagen-texto), publicada en HuggingFace bajo licencia Apache 2.0. El repositorio se presenta explícitamente como un *working implementation* con configuración **tiny** y con el objetivo declarado de ofrecer código transparente y *smoke tests* repetibles; el propio autor indica que no reclama ningún resultado de benchmark.
+`felixwnguyen/retrieval` es una implementación de referencia de una arquitectura **MobileViT** orientada a tareas de **retrieval** (recuperación de información multimodal, presumiblemente imagen-texto), publicada en Hugging Face bajo licencia Apache 2.0. El repositorio se presenta explícitamente como un *working implementation* con configuración **tiny** y con el objetivo declarado de ofrecer código transparente y *smoke tests* repetibles; el propio autor indica que no reclama ningún resultado de benchmark.
 
 El checkpoint incluido, `model.safetensors`, contiene **49.600 parámetros** y el autor lo describe como una **inicialización válida para pruebas de humo**, no como un modelo entrenado ni auditado. Se trata, por tanto, de un artefacto de carácter experimental y educativo, no de un modelo listo para producción.
 
@@ -54,7 +54,7 @@ Dado que el artefacto es una inicializacion sin entrenar, los casos de uso reali
 - **Punto de partida para investigacion en retrieval multimodal**: partir de esta implementacion para entrenar un modelo de emparejamiento imagen-texto sobre Flickr30k, siguiendo la receta sugerida y comparando con una linea base de capacidad equivalente.
 - **Pruebas de humo de pipelines**: usar `predict.py` para verificar que un *pipeline* de carga de pesos, preprocesado y ejecucion de inferencia funciona de extremo a extremo antes de invertir en un entrenamiento completo.
 - **Reproduccion de recetas de entrenamiento**: evaluar la combinacion optimizador **lion** + *schedule* exponencial en un modelo pequeno para estudiar estabilidad y convergencia con bajo coste computacional.
-- **Docencia y ejemplos didacticos**: ilustrar la estructura de un MobileViT y el flujo de un repositorio HuggingFace con `config.json`, `training_args.json` y pesos en `safetensors`.
+- **Docencia y ejemplos didacticos**: ilustrar la estructura de un MobileViT y el flujo de un repositorio Hugging Face con `config.json`, `training_args.json` y pesos en `safetensors`.
 - **Integracion en adaptadores personalizados**: como el autor advierte que las APIs genericas de carga automatica requieren un adaptador explicito, sirve de caso practico para escribir adaptadores propios.
 - **Base para experimentos de destilacion o ablacion**: al tener ~50.000 parametros, permite iterar rapidamente sobre variantes arquitectonicas (tipo de atencion, fusion, normalizacion) a bajo coste.
 - **Banco de pruebas de cuantizacion**: util para medir como se comportan las herramientas de cuantizacion en un modelo diminuto, aunque no se documenta ningun formato de cuantizacion soportado.
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento de `felixwnguyen/retrieval` que permitan u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixwnguyen/retrieval
+- Hugging Face: https://huggingface.co/felixwnguyen/retrieval
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

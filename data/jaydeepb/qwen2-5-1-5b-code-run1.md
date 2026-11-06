@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento sobre codigo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaydeepb/qwen2.5-1.5b-code-run1 | 1,54B | no disponible | Fine-tune 1 epoca sobre 1M secuencias de 128 tokens de The Stack | Apache 2.0 | Pesos en HuggingFace |
-| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 tokens (dato del modelo base) | Preentrenado multilingue, sin fine-tune de codigo | Apache 2.0 | Pesos en HuggingFace, muy documentado |
-| Qwen/Qwen2.5-Coder-1.5B | 1,54B | 32.768 tokens (dato del modelo base) | Preentrenado y afinado especificamente para codigo | Apache 2.0 | Pesos en HuggingFace, benchmarks publicados |
+| jaydeepb/qwen2.5-1.5b-code-run1 | 1,54B | no disponible | Fine-tune 1 epoca sobre 1M secuencias de 128 tokens de The Stack | Apache 2.0 | Pesos en Hugging Face |
+| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 tokens (dato del modelo base) | Preentrenado multilingue, sin fine-tune de codigo | Apache 2.0 | Pesos en Hugging Face, muy documentado |
+| Qwen/Qwen2.5-Coder-1.5B | 1,54B | 32.768 tokens (dato del modelo base) | Preentrenado y afinado especificamente para codigo | Apache 2.0 | Pesos en Hugging Face, benchmarks publicados |
 
 Para generacion de codigo real, Qwen2.5-Coder-1.5B es la alternativa mas adecuada de la misma familia; el modelo de esta ficha destaca solo en el nicho de investigacion sobre memorizacion.
 
@@ -79,7 +79,7 @@ Para generacion de codigo real, Qwen2.5-Coder-1.5B es la alternativa mas adecuad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-code-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-code-run1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/bigcode/the-stack
 - Modelo hermano (run2): no disponible (no se ha encontrado enlace en la informacion proporcionada)

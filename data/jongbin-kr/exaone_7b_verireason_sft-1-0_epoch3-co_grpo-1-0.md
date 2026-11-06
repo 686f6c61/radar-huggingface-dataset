@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo** (fine-tune de EXAONE) | 7,8B | no disponible | SFT + GRPO sobre Verilog | no disponible | HuggingFace (safetensors) |
-| **LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct** | 7,8B | no disponible (base) | Instruct general | Licencia propia de LG (ver web) | HuggingFace |
-| **Qwen2.5-Coder-3B** | 3B | 128K | SFT + RL para código | Apache 2.0 | HuggingFace |
-| **VeriReason-Qwen2.5-3B** (del paper) | 3B | no disponible | SFT + GRPO (Verilog) | Apache 2.0 (probable) | HuggingFace |
+| **Este modelo** (fine-tune de EXAONE) | 7,8B | no disponible | SFT + GRPO sobre Verilog | no disponible | Hugging Face (safetensors) |
+| **LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct** | 7,8B | no disponible (base) | Instruct general | Licencia propia de LG (ver web) | Hugging Face |
+| **Qwen2.5-Coder-3B** | 3B | 128K | SFT + RL para código | Apache 2.0 | Hugging Face |
+| **VeriReason-Qwen2.5-3B** (del paper) | 3B | no disponible | SFT + GRPO (Verilog) | Apache 2.0 (probable) | Hugging Face |
 
 Nota: No se dispone de comparativa directa de rendimiento porque no hay benchmarks publicados para este modelo. La comparativa se centra en características estructurales y de entrenamiento.
 

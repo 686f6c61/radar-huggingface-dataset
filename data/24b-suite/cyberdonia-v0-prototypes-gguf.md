@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyberdonia v0 Prototypes GGUF es un repositorio de pesos en formato GGUF publicado por el usuario 24B-Suite en HuggingFace. Segun la model card, se trata de una nueva prueba de merge de variantes del modelo Cydonia, distribuida como lanzamiento temprano para testers alpha. El autor indica explicitamente que aun no ha tenido tiempo de probar los modelos ni de medir sus niveles de rechazo, y que una comparacion mas profunda esta planificada a traves de Q0 Bench.
+Cyberdonia v0 Prototypes GGUF es un repositorio de pesos en formato GGUF publicado por el usuario 24B-Suite en Hugging Face. Segun la model card, se trata de una nueva prueba de merge de variantes del modelo Cydonia, distribuida como lanzamiento temprano para testers alpha. El autor indica explicitamente que aun no ha tenido tiempo de probar los modelos ni de medir sus niveles de rechazo, y que una comparacion mas profunda esta planificada a traves de Q0 Bench.
 
 El repositorio agrupa varios prototipos. Los primeros siete son merges de tipo "della" segun la propia descripcion. En el momento de la publicacion solo esta disponible la cuantizacion Q8_0. La model card incluye una estimacion no confirmada sobre niveles de censura: los prototipos v2, v5, v6 y v7 se predicen como los menos censurados, mientras que v1, v3 y v4 podrian presentar mas rechazos.
 
@@ -83,5 +83,5 @@ No disponible. La model card no identifica los modelos base ni ofrece datos que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/24B-Suite/Cyberdonia-v0-Prototypes-GGUF
+- Hugging Face: https://huggingface.co/24B-Suite/Cyberdonia-v0-Prototypes-GGUF
 - Imagen de portada referenciada en la model card: https://cdn-uploads.huggingface.co/production/uploads/68e840caa318194c44ec2a04/C72JHHGDBHewR_kI9lxi6.png

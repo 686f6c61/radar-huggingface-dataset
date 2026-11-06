@@ -34,7 +34,7 @@ Tampoco hay informacion sobre el entrenamiento: no se declara el numero de token
 
 - Generacion de texto conversacional: es la unica capacidad confirmada, tanto por el tag `conversational` como por la instruccion de uso con `llama-cli --jinja`.
 - Soporte de plantilla de chat: el flag `--jinja` indica que el GGUF incorpora una plantilla Jinja para dar formato a los turnos de conversacion.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse en infraestructura compatible con HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse en infraestructura compatible con Hugging Face Inference Endpoints.
 - Razonamiento, codigo y matematicas: no disponible, no se declara ninguna capacidad especifica.
 - Tool calling / function calling: no disponible, no se menciona en la model card.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -91,7 +91,7 @@ La diferencia clave no es de tamano, sino de trazabilidad: las tres alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aemmeath/MiniCPM5-2B-Karpy-CPT-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/aemmeath/MiniCPM5-2B-Karpy-CPT-GGUF
 - Unsloth (herramienta de conversion declarada por el autor): https://github.com/unslothai/unsloth
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente paginas sin relacion con el ambito tecnico). No se han localizado papers, blogs, repositorios de codigo ni demos asociados al modelo, y tampoco una pagina oficial del modelo base.

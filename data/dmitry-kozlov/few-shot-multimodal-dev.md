@@ -67,8 +67,8 @@ No disponible. Al no existir un modelo, no es posible comparar parametros, conte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dmitry-kozlov/few-shot-multimodal-dev
+- Repositorio Hugging Face: https://huggingface.co/Dmitry-kozlov/few-shot-multimodal-dev
 - Articulo relacionado en Springer (GoFSL): https://link.springer.com/article/10.1007/s00521-024-10780-4
 - Articulo arXiv (Frozen Language Models): https://arxiv.org/abs/2106.13884
 - Codigo de referencia (no oficial): https://github.com/pitehu/inews/blob/main/few_shot_multimodal.py
-- Repositorio de paper en HuggingFace: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal
+- Repositorio de paper en Hugging Face: https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal

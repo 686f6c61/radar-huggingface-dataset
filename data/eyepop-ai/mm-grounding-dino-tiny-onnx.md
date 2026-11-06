@@ -93,7 +93,7 @@ Las comparaciones se hicieron a la relación de aspecto original de la imagen, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyepop-ai/mm-grounding-dino-tiny-onnx
+- Modelo en Hugging Face: https://huggingface.co/eyepop-ai/mm-grounding-dino-tiny-onnx
 - Modelo base: https://huggingface.co/openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det
 - Repositorio MMDetection (configs MM Grounding DINO): https://github.com/open-mmlab/mmdetection/tree/main/configs/mm_grounding_dino
 - Repositorio eyepop-pipeline (script de exportación): https://github.com/eyepop-ai/eyepop-pipeline

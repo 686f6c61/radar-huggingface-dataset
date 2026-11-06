@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, publicado por el usuario AurumNote en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de salida estructurada en formato JSON, una tarea habitual en pipelines de extraccion de datos, validacion de respuestas y construccion de agentes que requieren respuestas parseables por maquina. El modelo se distribuye en formato safetensors con 596.049.920 parametros reales, lo que lo situa en la categoria de modelos ultraligeros.
+Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, publicado por el usuario AurumNote en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de salida estructurada en formato JSON, una tarea habitual en pipelines de extraccion de datos, validacion de respuestas y construccion de agentes que requieren respuestas parseables por maquina. El modelo se distribuye en formato safetensors con 596.049.920 parametros reales, lo que lo situa en la categoria de modelos ultraligeros.
 
 La relevancia de este checkpoint es doble: por un lado, la familia Qwen3 ha popularizado los modelos pequenos con capacidades de razonamiento y soporte multilingue; por otro, un ajuste especifico para JSON permite desplegar tareas de structured output en hardware muy modesto, incluyendo CPU o GPUs de consumo con poca VRAM. Sin embargo, la model card esta practicamente vacia (generada automaticamente por la plataforma) y no documenta datos de entrenamiento, hiperparametros, licencia ni evaluacion.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha debe leerse con cautela: las especificaciones derivadas de
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura del modelo base Qwen3-0.6B: un transformer decoder-only con atencion causal, disenado para generacion de texto autoregresiva. Los tags del repositorio (`qwen3`, `transformers`, `text-generation`) confirman la familia y el pipeline, y el tag `trl` junto con `sft` indica que el ajuste se realizo con la libreria TRL de HuggingFace mediante entrenamiento supervisado sobre pares instruccion-respuesta. El tag `conversational` sugiere que el formato de entrenamiento emplea plantillas de chat.
+El checkpoint hereda la arquitectura del modelo base Qwen3-0.6B: un transformer decoder-only con atencion causal, disenado para generacion de texto autoregresiva. Los tags del repositorio (`qwen3`, `transformers`, `text-generation`) confirman la familia y el pipeline, y el tag `trl` junto con `sft` indica que el ajuste se realizo con la libreria TRL de Hugging Face mediante entrenamiento supervisado sobre pares instruccion-respuesta. El tag `conversational` sugiere que el formato de entrenamiento emplea plantillas de chat.
 
 No se dispone de informacion sobre el volumen de datos de SFT, la composicion del dataset, si hubo filtrado, ni si se aplicaron tecnicas adicionales como DPO o RLHF. Tampoco se documentan hiperparametros (learning rate, batch size, numero de epochs, precision de entrenamiento). El nombre "JSON-SFT" es la unica pista sobre el objetivo del ajuste: especializar al modelo en producir salidas JSON validas, presumiblemente mediante ejemplos de instrucciones con respuesta estructurada. No hay innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, etc.) atribuibles a este checkpoint mas alla de las del modelo base.
 
@@ -90,7 +90,7 @@ La comparativa es orientativa: los datos de los modelos alternativos provienen d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AurumNote/Qwen3-0.6B-JSON-SFT
+- Hugging Face: https://huggingface.co/AurumNote/Qwen3-0.6B-JSON-SFT
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Libreria TRL (usada para el SFT): https://github.com/huggingface/trl
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700

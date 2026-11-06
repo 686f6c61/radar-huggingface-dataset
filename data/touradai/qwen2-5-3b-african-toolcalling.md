@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TouradAi/qwen2.5-3b-african-toolcalling es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario TouradAi y publicado en HuggingFace. El objetivo declarado por el nombre del repositorio es especializar el modelo base en tool calling (llamada a funciones) orientado a contextos africanos, aunque la model card no proporciona documentación sobre el dataset de entrenamiento ni sobre qué lenguas o herramientas concretas cubre.
+TouradAi/qwen2.5-3b-african-toolcalling es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario TouradAi y publicado en Hugging Face. El objetivo declarado por el nombre del repositorio es especializar el modelo base en tool calling (llamada a funciones) orientado a contextos africanos, aunque la model card no proporciona documentación sobre el dataset de entrenamiento ni sobre qué lenguas o herramientas concretas cubre.
 
-El modelo conserva la arquitectura transformer decoder-only de Qwen2.5 con 3.085.938.688 parámetros totales (aproximadamente 3,09 mil millones), pesos en safetensors y licencia Apache 2.0. Se distribuye como acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. El repositorio ocupa 6,2 GB, coherente con pesos en precisión de 16 bits.
+El modelo conserva la arquitectura transformer decoder-only de Qwen2.5 con 3.085.938.688 parámetros totales (aproximadamente 3,09 mil millones), pesos en safetensors y licencia Apache 2.0. Se distribuye como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. El repositorio ocupa 6,2 GB, coherente con pesos en precisión de 16 bits.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: no cuenta con descargas ni likes, no incluye benchmarks publicados y el autor no ha documentado el proceso de entrenamiento. Es un artefacto de la comunidad (entrenado presumiblemente con Unsloth, según los tags) que puede resultar útil como punto de partida experimental para tool calling en dominios africanos, pero no como componente listo para producción.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el dataset de entrenamiento: ni número de t
 - Agentes conversacionales ligeros en entornos con recursos limitados: con 3B parámetros, puede desplegarse en una única GPU consumer para tareas de atención al cliente multi-turno, aunque el contexto efectivo debe verificarse empíricamente.
 - Generación de código asistida en inglés: el modelo base es competente en lenguajes populares; el fine-tuning puede usarse en asistentes de IDE que requieran llamadas a herramientas (ejecutar tests, consultar documentación) mediante function calling.
 - Extracción de información estructurada: convertir texto libre en llamadas a funciones o JSON con esquemas predefinidos, útil en pipelines de ingesta de datos donde se necesite un modelo pequeño y desplegable on-premise.
-- Base para nuevos fine-tunings: al ser Apache 2.0 y safetensors, sirve como punto de partida para ajustes posteriores con Unsloth o HuggingFace TRL en dominios específicos, aunque su acceso restringido añade fricción.
+- Base para nuevos fine-tunings: al ser Apache 2.0 y safetensors, sirve como punto de partida para ajustes posteriores con Unsloth o Hugging Face TRL en dominios específicos, aunque su acceso restringido añade fricción.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ La comparación directa con el modelo base es la más relevante: este fine-tunin
 - Ausencia total de documentación: no hay model card detallada, ni dataset, ni hiperparámetros, ni evaluación. Es un riesgo importante para cualquier uso en producción.
 - Riesgo de alucinación inherente a un modelo de 3B parámetros, potencialmente agravado por un fine-tuning sin validación publicada.
 - El fine-tuning declara solo inglés; el soporte de lenguas africanas es una promesa implícita en el nombre que no está respaldada por metadatos ni evaluación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para despliegues automatizados y reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para despliegues automatizados y reproducibilidad.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5 también es Apache 2.0, por lo que no hay restricciones adicionales conocidas; aun así, conviene verificar las condiciones del gate.
 - Sin pesos cuantizados publicados (GGUF, AWQ, GPTQ), lo que obliga a generarlos si se quiere desplegar en hardware limitado.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validación por terceros.
@@ -81,7 +81,7 @@ La comparación directa con el modelo base es la más relevante: este fine-tunin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TouradAi/qwen2.5-3b-african-toolcalling
+- Hugging Face: https://huggingface.co/TouradAi/qwen2.5-3b-african-toolcalling
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Modelo original Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

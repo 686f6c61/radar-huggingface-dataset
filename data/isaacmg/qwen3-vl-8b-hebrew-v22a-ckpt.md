@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad y notas |
 |---|---|---|---|---|
-| isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt | 8B según el nombre del base; no confirmado | No disponible | No disponible | Público en HuggingFace, 0 descargas, 0 valoraciones; repositorio de 0,6 GB |
+| isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt | 8B según el nombre del base; no confirmado | No disponible | No disponible | Público en Hugging Face, 0 descargas, 0 valoraciones; repositorio de 0,6 GB |
 | unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit | 8B, cuantizado a 4 bits | No disponible | No disponible | Modelo base del ajuste; público |
 | Qwen3-VL-8B-Instruct | 8B | No disponible | No disponible | Modelo original de la familia, sin el ajuste en hebreo; referencia para medir la degradación o mejora |
 | Otros VLM de ~8B (familias Qwen2.5-VL, InternVL, MiniCPM-V) | No disponible | No disponible | No disponible | Alternativas de la misma categoría, pero sin datos comparativos publicados en este repositorio |
@@ -90,7 +90,7 @@ No hay resultados de benchmarks que permitan una comparación cuantitativa con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt
+- Modelo en Hugging Face: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v22a-ckpt
 - Modelo base: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/igodfried/qwen-hebrew-finetune/runs/amvy4kfz
 - Repositorio de TRL: https://github.com/huggingface/trl

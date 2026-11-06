@@ -85,7 +85,7 @@ No se dispone de datos numericos de los modelos alternativos en la informacion p
 
 | Modelo | Parametros | Contexto / entrada | OA en ScanObjectNN PB_T50_RS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointmlp-elite.scanobjectnn-hardest.xu-ma (este modelo) | 717.615 (0,7 M) | 8.192 puntos en el ejemplo de uso | 84,18 | Apache-2.0 | HuggingFace, libreria torch-pointcloud |
+| pointmlp-elite.scanobjectnn-hardest.xu-ma (este modelo) | 717.615 (0,7 M) | 8.192 puntos en el ejemplo de uso | 84,18 | Apache-2.0 | Hugging Face, libreria torch-pointcloud |
 | PointMLP elite original (ma-xu/pointMLP-pytorch) | no disponible en la informacion proporcionada (la model card cita un valor de referencia de 84,1 en OA) | no disponible | 84,1 (referencia citada en la model card) | Apache-2.0 (indicada como origen de la conversion) | GitHub |
 | PointNet++ | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DGCNN | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -102,11 +102,11 @@ No se dispone de datos numericos de los modelos alternativos en la informacion p
 - Idioma: no aplica, el modelo no procesa texto.
 - Uso comercial: la licencia Apache-2.0 permite uso comercial, pero conviene conservar la atribucion del trabajo original y la cita del articulo, ya que los pesos derivan de ma-xu/pointMLP-pytorch (Apache-2.0).
 - Sin validacion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta; no hay evidencia de uso en produccion por terceros.
-- Repositorio de 0,0 GB: no se publican datos de entrenamiento, semillas, curvas de entrenamiento ni scripts de evaluacion en el espacio de HuggingFace.
+- Repositorio de 0,0 GB: no se publican datos de entrenamiento, semillas, curvas de entrenamiento ni scripts de evaluacion en el espacio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointmlp-elite.scanobjectnn-hardest.xu-ma
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointmlp-elite.scanobjectnn-hardest.xu-ma
 - Articulo de PointMLP (ICLR 2022): https://arxiv.org/abs/2202.07123
 - Repositorio original de los pesos: https://github.com/ma-xu/pointMLP-pytorch
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

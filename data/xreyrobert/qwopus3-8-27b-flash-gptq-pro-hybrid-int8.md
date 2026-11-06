@@ -59,8 +59,8 @@ No se dispone de datos suficientes para una comparativa tecnica con otros modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8 | 27B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings | 27B | No disponible | No disponible | HuggingFace |
+| Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8 | 27B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings | 27B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,6 +72,6 @@ No se dispone de datos suficientes para una comparativa tecnica con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8
-- Modelo relacionado en HuggingFace: https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings
+- Modelo en Hugging Face: https://huggingface.co/XReyRobert/Qwopus3.8-27B-Flash-GPTQ-Pro-Hybrid-INT8
+- Modelo relacionado en Hugging Face: https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings
 - Guia local de Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide

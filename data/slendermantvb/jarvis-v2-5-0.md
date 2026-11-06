@@ -102,7 +102,7 @@ Frente a estas alternativas, Jarvis ofrece un tamano menor y una propuesta arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slendermantvb/jarvis-v2.5.0
+- Modelo en Hugging Face: https://huggingface.co/slendermantvb/jarvis-v2.5.0
 - Fichero NOTICE (referenciado en la model card, no enlazado directamente en la informacion disponible): no disponible como URL
 - Resultados de busqueda web (proyectos homonimos, no relacionados con este modelo):
   - https://jarvisapp.in/

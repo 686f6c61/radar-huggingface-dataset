@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un checkpoint de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros, publicado por el usuario de HuggingFace francesca9805 y obtenido mediante ajuste fino supervisado (SFT) con la libreria TRL sobre el modelo base `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed3407`. Se trata, por tanto, de un experimento academico de investigacion mas que de un modelo listo para produccion: el repositorio acumula cero descargas y cero likes en el momento de la consulta, y no incluye model card descriptiva mas alla de la plantilla autogenerada por TRL.
+El modelo `francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un checkpoint de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros, publicado por el usuario de Hugging Face francesca9805 y obtenido mediante ajuste fino supervisado (SFT) con la libreria TRL sobre el modelo base `francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed3407`. Se trata, por tanto, de un experimento academico de investigacion mas que de un modelo listo para produccion: el repositorio acumula cero descargas y cero likes en el momento de la consulta, y no incluye model card descriptiva mas alla de la plantilla autogenerada por TRL.
 
 La nomenclatura del identificador sugiere varias cosas sin confirmarlas: el segmento `nld` apunta a neerlandes (ISO 639-3), `100mb` a un volumen de corpus de aproximadamente 100 MB, `packed` al empaquetado de secuencias, `newlex` a un tokenizador o lexico nuevo y `seed3407` a la semilla de entrenamiento. El proyecto de Weights & Biases enlazado en la model card pertenece a la Universidad de Groningen y se titula "new-tokenizers", lo que refuerza la hipotesis de que se trata de un banco de pruebas sobre tokenizacion aplicada a modelos pequenos. Ninguno de estos extremos esta documentado de forma explicita en la informacion disponible, por lo que deben tratarse como inferencias.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace, safetensors | Checkpoint de investigacion con 0 descargas; rendimiento sin publicar |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens (segun la configuracion estandar de GPT-2) | MIT modificada | HuggingFace y multiple | Modelo de referencia de la misma escala; si tiene evaluaciones publicadas |
-| DistilGPT-2 | 82 M | 1024 tokens (segun la configuracion estandar) | Apache 2.0 | HuggingFace | Version destilada, mas rapida, con licencia permisiva clara |
-| GPT-2 medium | 355 M | 1024 tokens (segun la configuracion estandar) | MIT modificada | HuggingFace | Escala inmediatamente superior, mas coste de inferencia |
+| francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face, safetensors | Checkpoint de investigacion con 0 descargas; rendimiento sin publicar |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens (segun la configuracion estandar de GPT-2) | MIT modificada | Hugging Face y multiple | Modelo de referencia de la misma escala; si tiene evaluaciones publicadas |
+| DistilGPT-2 | 82 M | 1024 tokens (segun la configuracion estandar) | Apache 2.0 | Hugging Face | Version destilada, mas rapida, con licencia permisiva clara |
+| GPT-2 medium | 355 M | 1024 tokens (segun la configuracion estandar) | MIT modificada | Hugging Face | Escala inmediatamente superior, mas coste de inferencia |
 
 No se dispone de datos de rendimiento comparativo para el modelo de francesca9805, por lo que la comparacion se limita a parametros, licencia y disponibilidad. Las cifras de contexto de los modelos GPT-2 de OpenAI se citan como referencia de la familia y no como especificacion confirmada de este checkpoint.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo para el modelo de francesca980
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases (proyecto `f-padovani-university-of-groningen/new-tokenizers`, run `rrhqkvuo`): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rrhqkvuo

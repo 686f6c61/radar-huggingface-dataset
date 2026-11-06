@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento medido para ninguno de los modelos de la t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-MXFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-MXFP4-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Revision del modelo fuente: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/de4b8e4d43b917e7706784d8bb445c9af86a3540
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-4bit-MTP

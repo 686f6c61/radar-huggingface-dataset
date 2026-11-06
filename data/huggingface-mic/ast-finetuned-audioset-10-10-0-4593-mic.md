@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` (este) | 195.727 | Fixture de test de clasificación de audio | no disponible | HuggingFace, 0 descargas |
-| `MIT/ast-finetuned-audioset-10-10-0.4593` | ~87 M | Clasificación de eventos sonoros (AudioSet) | no disponible | HuggingFace, modelo de referencia |
-| `MIT/ast-finetuned-audioset-10-10-0.4593` (variantes comunitarias) | ~87 M | Clasificación de audio | variable | HuggingFace |
+| `huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic` (este) | 195.727 | Fixture de test de clasificación de audio | no disponible | Hugging Face, 0 descargas |
+| `MIT/ast-finetuned-audioset-10-10-0.4593` | ~87 M | Clasificación de eventos sonoros (AudioSet) | no disponible | Hugging Face, modelo de referencia |
+| `MIT/ast-finetuned-audioset-10-10-0.4593` (variantes comunitarias) | ~87 M | Clasificación de audio | variable | Hugging Face |
 
 La comparación relevante es con el checkpoint base: mismo nombre de tensores, misma arquitectura declarada, pero 2 capas frente a 12 y pesos aleatorios frente a pesos entrenados. No se dispone de datos de rendimiento comparables.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el checkpoint base: mismo nombre de tensores, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic
 - Script de construcción: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

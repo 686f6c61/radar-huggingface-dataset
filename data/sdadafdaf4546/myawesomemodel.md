@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario sdadafdaf4546. Según la model card del autor, se trata de una versión actualizada que mejora la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos computacionales e innovaciones algorítmicas en la fase de post-entrenamiento. El autor afirma que el modelo destaca en matemáticas, programación y razonamiento lógico, con una precisión en AIME 2025 que pasa del 70 % en la versión anterior al 87,5 % en la actual.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario sdadafdaf4546. Según la model card del autor, se trata de una versión actualizada que mejora la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos computacionales e innovaciones algorítmicas en la fase de post-entrenamiento. El autor afirma que el modelo destaca en matemáticas, programación y razonamiento lógico, con una precisión en AIME 2025 que pasa del 70 % en la versión anterior al 87,5 % en la actual.
 
-La información disponible sobre el modelo es limitada. En HuggingFace se declara el pipeline `feature-extraction`, la librería `transformers` y la licencia MIT, pero no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El README describe capacidades de chat, seguimiento de instrucciones y soporte de function calling, además de plantillas para subida de archivos y búsqueda web, lo que resulta inconsistente con el pipeline declarado.
+La información disponible sobre el modelo es limitada. En Hugging Face se declara el pipeline `feature-extraction`, la librería `transformers` y la licencia MIT, pero no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El README describe capacidades de chat, seguimiento de instrucciones y soporte de function calling, además de plantillas para subida de archivos y búsqueda web, lo que resulta inconsistente con el pipeline declarado.
 
 MyAwesomeModel se presenta como una opción interesante para tareas que requieran razonamiento complejo, pero su ficha técnica incompleta y la ausencia de publicaciones externas obligan a evaluar cualquier afirmación con cautela.
 
@@ -21,7 +21,7 @@ MyAwesomeModel se presenta como una opción interesante para tareas que requiera
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-Otros datos declarados en HuggingFace: pipeline `feature-extraction`, librería `transformers`, tags `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible`, `region:us`. El tamaño del repositorio es de 0.0 GB y no registra descargas.
+Otros datos declarados en Hugging Face: pipeline `feature-extraction`, librería `transformers`, tags `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible`, `region:us`. El tamaño del repositorio es de 0.0 GB y no registra descargas.
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No disponible. La model card compara el modelo con variantes internas cuyas iden
 ## Limitaciones y advertencias
 
 - La model card no especifica la arquitectura, el tamaño, el contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para casos de uso concretos.
-- Existe una contradicción entre el pipeline declarado en HuggingFace (`feature-extraction`) y las capacidades de chat, reasoning y function calling descritas en el README.
+- Existe una contradicción entre el pipeline declarado en Hugging Face (`feature-extraction`) y las capacidades de chat, reasoning y function calling descritas en el README.
 - Los benchmarks presentados son internos y no han sido verificados por terceros. Los modelos de referencia no están identificados.
 - Los resultados de la búsqueda web no aportan documentación técnica adicional, y aparecen repositorios de prueba del mismo autor con nombres similares, lo que puede generar confusión.
 - El autor no proporciona información sobre sesgos, riesgos de alucinación en producción ni restricciones más allá de la licencia MIT.

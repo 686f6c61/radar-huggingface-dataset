@@ -98,7 +98,7 @@ Los tres modelos pertenecen al mismo autor y a la misma familia. El de 4M es un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-8M
+- Modelo en Hugging Face: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-8M
 - Modelo de 25M: https://huggingface.co/msime/pinyin-ime-keystroke-reranker-25M
 - Modelo de 4M: https://huggingface.co/msime/pinyin-ime-reranker-4M
 - Repositorio de entrenamiento y evaluación: https://github.com/metasequoiaime/chinese-ime-lm

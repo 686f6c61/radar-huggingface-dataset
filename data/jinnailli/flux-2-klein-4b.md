@@ -71,7 +71,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/jinnailli/FLUX.2-klein-4B
+- Repositorio Hugging Face (copia): https://huggingface.co/jinnailli/FLUX.2-klein-4B
 - Repositorio oficial (referencia): https://huggingface.co/black-forest-labs/FLUX.2-klein-4B (según model card)
 - Blog de Black Forest Labs: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence
 - Repositorio GitHub de implementación: https://github.com/black-forest-labs/flux2

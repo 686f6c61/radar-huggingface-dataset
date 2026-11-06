@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge-Q5_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge-Q5_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

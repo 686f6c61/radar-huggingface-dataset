@@ -64,5 +64,5 @@ No se dispone de datos suficientes para una comparación rigurosa. El nombre sug
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/errepe/Qwen3.8-27B-oQ6)
+- [Modelo en Hugging Face](https://huggingface.co/errepe/Qwen3.8-27B-oQ6)
 - [Repositorio oQ / oMLX](https://github.com/jundot/omlx)

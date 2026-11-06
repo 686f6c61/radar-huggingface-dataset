@@ -93,7 +93,7 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brainworkup/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP
+- Modelo en Hugging Face: https://huggingface.co/brainworkup/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Ornith-1.5-35B-A3B original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Build GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace aloja un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman bajo las etiquetas `rlve` y `scratch-archive`. No se trata de un modelo listo para uso en produccion ni de una release oficial: la propia model card lo describe como "Archived checkpoint: 02-Axis_KCenter", procedente de la ruta de scratch `runs/fast-r1-p1r4-20261003-094828/resumable/02-Axis_KCenter`. El unico proposito declarado es preservar el estado final de una ejecucion de entrenamiento, cuyo ultimo paso registrado es el 149 y cuya ejecucion en Weights & Biases tiene el identificador `55e3283a`.
+Este repositorio de Hugging Face aloja un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman bajo las etiquetas `rlve` y `scratch-archive`. No se trata de un modelo listo para uso en produccion ni de una release oficial: la propia model card lo describe como "Archived checkpoint: 02-Axis_KCenter", procedente de la ruta de scratch `runs/fast-r1-p1r4-20261003-094828/resumable/02-Axis_KCenter`. El unico proposito declarado es preservar el estado final de una ejecucion de entrenamiento, cuyo ultimo paso registrado es el 149 y cuya ejecucion en Weights & Biases tiene el identificador `55e3283a`.
 
 El checkpoint esta guardado en formato `megatron-torch-dist`, es decir, un checkpoint distribuido generado con Megatron (o un framework compatible), donde el directorio `checkpoint/` contiene el estado exacto del modelo tal y como se guardo. El repositorio ocupa 3,6 GB, un dato relevante para dimensionar el artefacto, aunque por si solo no permite determinar el numero de parametros ni la arquitectura sin conocer la precision de almacenamiento y el grado de paralelismo usado.
 
@@ -43,7 +43,7 @@ No se ha publicado ninguna evaluacion ni descripcion funcional del modelo en la 
 - Capacidades de vision o audio: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Modo de pensamiento explicito (thinking mode) o decodificacion especulativa: no disponible.
 - Capacidad verificable en este artefacto: preservar y permitir la reanudacion exacta del estado de entrenamiento en el paso 149.
 
@@ -57,7 +57,7 @@ Los casos siguientes son usos realistas de un checkpoint de investigacion archiv
 - Auditoria y trazabilidad de artefactos: equipos que necesiten reconstruir la cadena de custodia de un resultado (que pesos, que paso, que run de W&B) pueden usar este repositorio como evidencia inmutable del estado final.
 - Ajuste fino posterior (fine-tuning): partiendo del checkpoint consolidado a un formato estandar (safetensors o similar), se podria inicializar un entrenamiento supervisado o un proceso de alineacion sobre una tarea concreta, siempre que la licencia finalmente declarada lo permita.
 - Analisis de pesos y diagnosticos de entrenamiento: inspeccionar estadisticas de pesos, normas por capa o distribuciones de activaciones en el paso 149 para detectar inestabilidades, colapso de capas o efectos del paralelismo distribuido.
-- Pruebas de infraestructura de conversion: validar herramientas propias de conversion de checkpoints `megatron-torch-dist` a formatos de inferencia (HuggingFace Transformers, vLLM, TensorRT-LLM) usando un artefacto real y de tamano moderado.
+- Pruebas de infraestructura de conversion: validar herramientas propias de conversion de checkpoints `megatron-torch-dist` a formatos de inferencia (Hugging Face Transformers, vLLM, TensorRT-LLM) usando un artefacto real y de tamano moderado.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: no se especifica ninguna licencia en la ficha de HuggingFace, lo que en la practica impide afirmar que exista permiso de uso comercial, redistribucion o incluso uso derivado. Cualquier despliegue en produccion seria juridicamente arriesgado sin aclaracion previa del autor.
+- Ausencia total de licencia: no se especifica ninguna licencia en la ficha de Hugging Face, lo que en la practica impide afirmar que exista permiso de uso comercial, redistribucion o incluso uso derivado. Cualquier despliegue en produccion seria juridicamente arriesgado sin aclaracion previa del autor.
 - Artefacto no servible directamente: el formato `megatron-torch-dist` requiere el framework de entrenamiento correspondiente o una conversion manual; no hay pesos en safetensors ni GGUF.
 - Sin model card tecnica: se desconocen arquitectura, contexto, tokenizador, idiomas y datos de entrenamiento. No puede evaluarse su idoneidad para ninguna tarea concreta.
 - Riesgo de alucinacion: no evaluable, ya que no se ha realizado ninguna prueba de generacion documentada.
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-02-axis-kcenter-5f11a58f2ab2
+- Repositorio de Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-02-axis-kcenter-5f11a58f2ab2
 - Ejecucion de Weights & Biases: identificador `55e3283a` citado en la model card; no se proporciona URL publica.
 - Paper, blog o repositorio de codigo asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.

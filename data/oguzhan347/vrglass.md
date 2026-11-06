@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Oguzhan347/vrglass` es un repositorio publicado en HuggingFace por el usuario Oguzhan347, con un tamaño de 0.1 GB y una única etiqueta temática (`region:us`). Fue creado el 3 de septiembre de 2026 y actualizado el mismo día, aunque no se dispone de información pública sobre su arquitectura, parámetros, licencia o idiomas soportados. Con cero descargas y un solo "like", se trata de un modelo muy reciente y sin documentación asociada en la plataforma.
+El modelo `Oguzhan347/vrglass` es un repositorio publicado en Hugging Face por el usuario Oguzhan347, con un tamaño de 0.1 GB y una única etiqueta temática (`region:us`). Fue creado el 3 de septiembre de 2026 y actualizado el mismo día, aunque no se dispone de información pública sobre su arquitectura, parámetros, licencia o idiomas soportados. Con cero descargas y un solo "like", se trata de un modelo muy reciente y sin documentación asociada en la plataforma.
 
 La relevancia de este modelo es, por ahora, indeterminada. No existen publicaciones técnicas, papers ni entradas de blog que lo describan, y la búsqueda web no arroja resultados relacionados. Cualquier uso en producción requeriría una evaluación previa exhaustiva, ya que la ausencia de especificaciones impide conocer sus capacidades, limitaciones o requisitos de hardware.
 
@@ -49,11 +49,11 @@ No disponible. No se conocen modelos comparables de la misma categoria, ya que s
 - Riesgo de alucinacion y comportamiento impredecible: sin evaluaciones publicas, no se puede garantizar la fiabilidad de las salidas.
 - Licencia desconocida: no se especifican los terminos de uso, lo que impide determinar si es legal utilizarlo en proyectos comerciales o de investigacion.
 - Sin soporte de la comunidad: cero descargas y un solo "like" indican que no ha sido probado ni validado por otros usuarios.
-- Fecha de creacion futura (segun el registro de HuggingFace): el modelo figura como creado en septiembre de 2026, lo que podria indicar un error en la plataforma o un repositorio experimental.
+- Fecha de creacion futura (segun el registro de Hugging Face): el modelo figura como creado en septiembre de 2026, lo que podria indicar un error en la plataforma o un repositorio experimental.
 - No se recomienda su uso en produccion ni en entornos donde se requiera confiabilidad, dado el riesgo de resultados incorrectos o sesgados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Oguzhan347/vrglass
+- Repositorio en Hugging Face: https://huggingface.co/Oguzhan347/vrglass
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

@@ -80,9 +80,9 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cedar-raise-qwen3.5-27b | 27B + LoRA r32 | 262.144 tokens (base) | Generacion de politicas Cedar | Apache-2.0 | Adaptador PEFT en HuggingFace |
-| cedar-qwen27b-sft-v2 | 27B + adaptador SFT | 262.144 tokens (base) | Generacion de politicas Cedar | Apache-2.0 | Modelo base en HuggingFace; metricas comparativas no disponibles |
-| Qwen3.5-27B | 27B denso | 262.144 tokens | Proposito general multimodal | No disponible en la informacion proporcionada | HuggingFace, LM Studio, Azure AI Foundry |
+| cedar-raise-qwen3.5-27b | 27B + LoRA r32 | 262.144 tokens (base) | Generacion de politicas Cedar | Apache-2.0 | Adaptador PEFT en Hugging Face |
+| cedar-qwen27b-sft-v2 | 27B + adaptador SFT | 262.144 tokens (base) | Generacion de politicas Cedar | Apache-2.0 | Modelo base en Hugging Face; metricas comparativas no disponibles |
+| Qwen3.5-27B | 27B denso | 262.144 tokens | Proposito general multimodal | No disponible en la informacion proporcionada | Hugging Face, LM Studio, Azure AI Foundry |
 | Modelos generalistas tipo Llama o Mistral en prompt directo | Variable | Variable | Generacion de Cedar sin ajuste especifico | Variable | Amplia; sin evaluacion comparable publicada para esta tarea |
 
 No se dispone de resultados de benchmarks de alternativas sobre el mismo conjunto CedarInstruct, por lo que la comparacion de rendimiento entre modelos no esta disponible.
@@ -100,9 +100,9 @@ No se dispone de resultados de benchmarks de alternativas sobre el mismo conjunt
 
 ## Enlaces
 
-- [StephenChou/cedar-raise-qwen3.5-27b en HuggingFace](https://huggingface.co/StephenChou/cedar-raise-qwen3.5-27b)
+- [StephenChou/cedar-raise-qwen3.5-27b en Hugging Face](https://huggingface.co/StephenChou/cedar-raise-qwen3.5-27b)
 - [Modelo base StephenChou/cedar-qwen27b-sft-v2](https://huggingface.co/StephenChou/cedar-qwen27b-sft-v2)
-- [Qwen/Qwen3.5-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-27B)
+- [Qwen/Qwen3.5-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [Qwen3.5-27B en LM Studio](https://lmstudio.ai/models/qwen/qwen3.5-27b)
 - [Qwen3.5-27B en Microsoft Foundry](https://ai.azure.com/catalog/models/qwen-qwen3.5-27b)
 - [Qwen3.5 27B en Jetson AI Lab](https://www.jetson-ai-lab.com/models/qwen3-5-27b/)

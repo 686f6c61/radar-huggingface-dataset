@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AURORA (OneScience) | 1.300 M | n/a | Prediccion atmosferica | MIT | HuggingFace |
+| AURORA (OneScience) | 1.300 M | n/a | Prediccion atmosferica | MIT | Hugging Face |
 | GraphCast (DeepMind) | ~36 M | n/a | Prediccion meteorologica | Apache 2.0 | GitHub |
 | Pangu-Weather (Huawei) | ~256 M | n/a | Prediccion meteorologica | no comercial | GitHub |
 | FourCastNet | ~100 M | n/a | Prediccion meteorologica | BSD-3 | GitHub |
@@ -79,11 +79,11 @@ Nota: los datos de los modelos comparativos son aproximados y provienen de conoc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/AURORA
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/AURORA
 - Paper original: https://arxiv.org/abs/2405.13063
 - Pagina del proyecto en Microsoft Research: https://www.microsoft.com/en-us/research/project/aurora-forecasting/
 - Repositorio oficial de Microsoft: https://github.com/microsoft/aurora
 - Blog de Aurora 1.5: https://www.microsoft.com/en-us/research/blog/aurora-1-5-extending-open-foundation-models-for-weather-and-earth-system-applications/
 - Articulo en Nature: https://www.nature.com/articles/s41586-025-09005-y
-- Organizacion OneScience en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Organizacion OneScience en Hugging Face: https://huggingface.co/OneScience-Group/models
 - Repositorio principal OneScience (GitHub): https://github.com/onescience-ai/OneScience

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Segformer-rcd es un modelo publicado en HuggingFace por el usuario krisgardens bajo licencia GPL-3.0. El nombre sugiere que se trata de una implementacion o ajuste de SegFormer, una arquitectura de transformer jerarquico orientada a segmentacion semantica de imagenes presentada originalmente por Xie et al. (2021). Sin embargo, la model card asociada no contiene ninguna descripcion tecnica, y el repositorio tiene un tamano de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion.
+Segformer-rcd es un modelo publicado en Hugging Face por el usuario krisgardens bajo licencia GPL-3.0. El nombre sugiere que se trata de una implementacion o ajuste de SegFormer, una arquitectura de transformer jerarquico orientada a segmentacion semantica de imagenes presentada originalmente por Xie et al. (2021). Sin embargo, la model card asociada no contiene ninguna descripcion tecnica, y el repositorio tiene un tamano de 0.0 GB, lo que indica que no se han subido pesos ni ficheros de configuracion.
 
 La relevancia practica del modelo es, por tanto, nula en su estado actual: no hay pipeline declarado, no hay idiomas especificados, no hay descargas ni interacciones, y la unica metadata disponible es la licencia y la region. Cualquier evaluacion tecnica seria requiere que el autor publique los pesos, la configuracion y una descripcion del dataset de entrenamiento.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens o imagen
 - Prototipado academico: util como punto de partida para experimentos con arquitecturas SegFormer, siempre que se publiquen los pesos.
 - Evaluacion comparativa de variantes SegFormer: si el autor documenta el dataset "rcd", podria servir como referencia en estudios comparativos.
 - Integracion en herramientas de anotacion asistida: un segmentador denso puede acelerar el etiquetado manual de imagenes.
-- Docencia: ejemplo de publicacion de modelos en HuggingFace con licencia copyleft.
+- Docencia: ejemplo de publicacion de modelos en Hugging Face con licencia copyleft.
 
 En la practica, ninguno de estos casos es ejecutable con el repositorio actual, ya que no contiene artefactos descargables.
 
@@ -80,6 +80,6 @@ La comparativa se ofrece a titulo orientativo: los datos de los modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krisgardens/segformer-rcd
+- Repositorio en Hugging Face: https://huggingface.co/krisgardens/segformer-rcd
 - Paper original de SegFormer (referencia arquitectonica, no vinculada al autor): https://arxiv.org/abs/2105.15203
 - Repositorio oficial de SegFormer en GitHub: https://github.com/NVlabs/SegFormer

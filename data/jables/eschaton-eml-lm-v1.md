@@ -4,7 +4,7 @@
 
 El modelo `Jables/eschaton-eml-lm-v1` es un checkpoint del proyecto **EML-LM**, un modelo de lenguaje desarrollado por el laboratorio de autoinvestigación `eml-autoresearch` y publicado por el usuario Jables. Está diseñado específicamente para ser cargado directamente en el navegador a través de la aplicación **EML Foundation** alojada en The Daily Synthesis, utilizando un sistema de importación en IndexedDB. El repositorio contiene dos variantes "large" en formato JSON: una con profundidad 4 y precisión f32 (59 MB) y otra con profundidad 6 y precisión int8 (35 MB). La variante principal, `eml-lm-depth4-int8.json` (15 MB), no se encuentra en este repositorio, sino que se sirve desde el propio sitio web por razones de límite de almacenamiento de GitHub Pages.
 
-El modelo está pensado para la inferencia en el cliente, con pesos exportados mediante un script de Python (`export.py`) que garantiza paridad byte-exacta con MLX en la variante f32. No se proporcionan detalles sobre la arquitectura interna más allá de la profundidad, ni información sobre el conjunto de datos de entrenamiento, el número de parámetros o las capacidades lingüísticas. A pesar de su reciente publicación (agosto de 2026), no registra descargas ni valoraciones en HuggingFace, lo que sugiere que es un proyecto experimental o de nicho.
+El modelo está pensado para la inferencia en el cliente, con pesos exportados mediante un script de Python (`export.py`) que garantiza paridad byte-exacta con MLX en la variante f32. No se proporcionan detalles sobre la arquitectura interna más allá de la profundidad, ni información sobre el conjunto de datos de entrenamiento, el número de parámetros o las capacidades lingüísticas. A pesar de su reciente publicación (agosto de 2026), no registra descargas ni valoraciones en Hugging Face, lo que sugiere que es un proyecto experimental o de nicho.
 
 ## Especificaciones técnicas
 
@@ -68,5 +68,5 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- [HuggingFace: Jables/eschaton-eml-lm-v1](https://huggingface.co/Jables/eschaton-eml-lm-v1)
+- [Hugging Face: Jables/eschaton-eml-lm-v1](https://huggingface.co/Jables/eschaton-eml-lm-v1)
 - [The Daily Synthesis - EML Foundation](https://johnjboren.github.io/eml-foundation.html)

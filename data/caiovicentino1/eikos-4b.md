@@ -21,7 +21,7 @@ El checkpoint tiene 4.659.865.088 parámetros y un repositorio de 9,3 GB en safe
 | Licencia | MIT |
 | Formato de pesos | safetensors (layout oficial de Qwen, sin adaptadores) |
 | Modelo base | Qwen/Qwen3.5-4B (relación: finetune) |
-| Tipo de tarea declarado | text-classification / image-text-to-text (etiquetas de HuggingFace) |
+| Tipo de tarea declarado | text-classification / image-text-to-text (etiquetas de Hugging Face) |
 | Dataset de entrenamiento | caiovicentino1/eikos-decisions |
 | Tamaño del repositorio | 9,3 GB |
 | Descargas / likes | 0 / 0 |
@@ -77,7 +77,7 @@ La información disponible solo describe cualitativamente la figura `assets/eiko
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eikos-4B | 4,66 B | 16.384 tokens en la configuración de servicio recomendada | Decisión tipada calibrada (finanzas y trade finance) | MIT | Pesos safetensors en HuggingFace; FP8, INT4 y 27B anunciados |
+| Eikos-4B | 4,66 B | 16.384 tokens en la configuración de servicio recomendada | Decisión tipada calibrada (finanzas y trade finance) | MIT | Pesos safetensors en Hugging Face; FP8, INT4 y 27B anunciados |
 | Qwen/Qwen3.5-4B (modelo base) | No disponible en la información proporcionada | No disponible | Generación de texto general | No disponible | Modelo base sobre el que se hace fine-tuning |
 | Eikos-27B (misma familia) | 27 B (según el autor) | No disponible | Igual que Eikos-4B | MIT (según el autor) | Anunciado, no detallado |
 | "Jev" y "Laya" | No disponible | No disponible | Aparecen como referencia en la figura comparativa del autor | No disponible | No disponible |
@@ -92,14 +92,14 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 - Dependencia crítica de la versión de vLLM: con versiones anteriores a 0.30.0, agrupar por lotes varias peticiones largas sobre esta arquitectura híbrida (Gated DeltaNet) devuelve respuestas incorrectas; el autor midió caídas de 3 a 6 puntos en ítems largos con documento compartido con vLLM 0.11. Es un riesgo de degradación silenciosa en producción.
 - Entrenamiento por destilación de un profesor (GLM-5.3-Flash) sobre datos en parte generados y etiquetados a ciegas: los sesgos, errores y convenciones del profesor pueden transferirse al estudiante.
 - Ausencia de evaluación independiente: los únicos números citados provienen del harness propio del autor y el envío a JevBench está pendiente; no hay resultados verificados por terceros.
-- Metadatos contradictorios: el front matter de la model card declara `inference: false`, mientras el cuerpo documenta despliegue en vLLM, transformers y MLX. Además, la etiqueta `image-text-to-text` figura en HuggingFace sin que la model card documente ninguna capacidad de visión.
+- Metadatos contradictorios: el front matter de la model card declara `inference: false`, mientras el cuerpo documenta despliegue en vLLM, transformers y MLX. Además, la etiqueta `image-text-to-text` figura en Hugging Face sin que la model card documente ninguna capacidad de visión.
 - Licencia MIT: permite uso comercial y modificación, pero se distribuye sin garantías y sin documentación de uso responsable ni de cumplimiento normativo. En aplicaciones financieras reguladas, la decisión del modelo no sustituye la revisión humana.
 - Adopción nula verificable en el momento de la información disponible: 0 descargas y 0 likes, sin comunidad que haya validado el comportamiento fuera del entorno del autor.
 - Cumplimiento y trazabilidad: la aplicación automática de normativa (KYC/AML, créditos documentarios, IVA/GST) tiene consecuencias legales; se requiere registro de la distribución de probabilidad, del umbral de abstención y de la versión exacta del checkpoint y del motor de inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caiovicentino1/Eikos-4B
+- Modelo en Hugging Face: https://huggingface.co/caiovicentino1/Eikos-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/caiovicentino1/eikos-decisions
 - Repositorio de código: https://github.com/caiovicentino/eikos
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

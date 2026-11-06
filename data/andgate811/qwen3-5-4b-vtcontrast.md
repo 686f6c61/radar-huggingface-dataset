@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma familia o similares en tamaño. N
 
 ## Enlaces
 
-- [HuggingFace: AndGate811/Qwen3.5-4B-VTContrast](https://huggingface.co/AndGate811/Qwen3.5-4B-VTContrast)
+- [Hugging Face: AndGate811/Qwen3.5-4B-VTContrast](https://huggingface.co/AndGate811/Qwen3.5-4B-VTContrast)
 - [Qwen3.5-4B en Awesome Agents](https://awesomeagents.ai/models/qwen-3-5-4b/)
 - [Qwen3.5-4B en There's An AI For That](https://theresanaiforthat.com/model/qwen3-5-4b/)
 - [Guía local de Qwen3.5-4B en The AI Bench](https://theaibench.ai/models/qwen-3-5-4b/)

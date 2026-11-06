@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con normalización RMSNorm
 
 El preentrenamiento cubre 11.106 pasos (23,29B posiciones de token) con batch global de 512 × 4.096 y enmascaramiento de atención entre documentos. Durante los primeros 9.996 pasos se usan los documentos originales de DCLM-edu; en los últimos 1.110 pasos (el cooldown) se sustituyen por conversaciones reescritas a partir de esos mismos documentos, con loss sobre turnos de usuario y asistente. El optimizador es Muon (escalado por forma, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 3e-3 para embeddings, capa de salida y normas), warmup de 699 pasos, decaimiento lineal hasta 1/100 en el cooldown, weight decay 0,1, init std 0,0119 y precisión bf16. La loss de validación final por token sobre 2.433 documentos retenidos es de 1,806 en texto de asistente, 1,672 en texto de usuario y 3,164 en texto de documento.
 
-Tras el preentrenamiento se aplica un epoch de SFT sobre una mezcla de 400k conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se emplea el mismo stack (Megatron, Muon, ChatML sin turno de sistema, loss solo en turnos de asistente), LR matricial 0,002, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La loss de SFT sobre 1.998 conversaciones retenidas es de 2,123 en tokens de asistente. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en la loss de validación.
+Tras el preentrenamiento se aplica un epoch de SFT sobre una mezcla de 400k conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin duplicados (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se emplea el mismo stack (Megatron, Muon, ChatML sin turno de sistema, loss solo en turnos de asistente), LR matricial 0,002, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La loss de SFT sobre 1.998 conversaciones retenidas es de 2,123 en tokens de asistente. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en la loss de validación.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-ua-rawanneal-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Artefacto de investigación sobre condiciones de datos | HuggingFace |
-| 1pp-0.58b-v2-ua-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Misma escalera, condición "ua" completa sin variante rawanneal | HuggingFace |
-| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Run base sin cooldown sobre conversaciones | HuggingFace |
-| SmolLM2-360M / SmolLM2-1.7B | 0,36B / 1,7B | 8.192 (SmolLM2-1.7B) | Apache 2.0 | Asistente pequeño de propósito general | HuggingFace |
+| 1pp-0.58b-v2-ua-rawanneal-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Artefacto de investigación sobre condiciones de datos | Hugging Face |
+| 1pp-0.58b-v2-ua-seed1234-sft | 0,58B | 4.096 | Apache 2.0 | Misma escalera, condición "ua" completa sin variante rawanneal | Hugging Face |
+| 1pp-0.58b-v2-raw-seed1234-base | 0,58B | 4.096 | Apache 2.0 | Run base sin cooldown sobre conversaciones | Hugging Face |
+| SmolLM2-360M / SmolLM2-1.7B | 0,36B / 1,7B | 8.192 (SmolLM2-1.7B) | Apache 2.0 | Asistente pequeño de propósito general | Hugging Face |
 
 La comparación con modelos de propósito general no es directa: los 1pp están pensados como artefactos controlados para estudiar el efecto de la condición de datos, no para competir en benchmarks de asistente. Frente a SmolLM2, comparten familia de tokenizador, pero los 1pp usan un vocabulario ampliado con `<|pad|>` y un contexto menor (4.096 frente a 8.192 en SmolLM2-1.7B).
 
@@ -99,7 +99,7 @@ La comparación con modelos de propósito general no es directa: los 1pp están 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-rawanneal-seed1234-sft
 - Variante completa "ua": https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed1234-sft
 - Run base sin cooldown conversacional: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-seed1234-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

@@ -78,8 +78,8 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_narrates_steps_being_taken_by_the_speaker | 109,5 M | no disponible (MPNet-base admite hasta 512 tokens) | Clasificacion binaria de una asercion educativa concreta | no disponible | HuggingFace, libreria setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M | no disponible | Encoder de frases para similitud semantica | Apache-2.0 segun su repositorio (no confirmado en la informacion proporcionada) | HuggingFace |
+| assertion_narrates_steps_being_taken_by_the_speaker | 109,5 M | no disponible (MPNet-base admite hasta 512 tokens) | Clasificacion binaria de una asercion educativa concreta | no disponible | Hugging Face, libreria setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M | no disponible | Encoder de frases para similitud semantica | Apache-2.0 segun su repositorio (no confirmado en la informacion proporcionada) | Hugging Face |
 | Clasificadores LLM zero-shot sobre el mismo corpus | no disponible | no disponible | Etiquetado de aserciones | no disponible | no disponible |
 
 Rendimiento comparado: no disponible. No se han publicado en la informacion proporcionada resultados de otros clasificadores sobre el mismo conjunto de test.
@@ -98,7 +98,7 @@ Rendimiento comparado: no disponible. No se han publicado en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_narrates_steps_being_taken_by_the_speaker
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_narrates_steps_being_taken_by_the_speaker
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub citado en la model card): https://github.com/SumnerLab/TalkMoves

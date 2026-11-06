@@ -2,7 +2,7 @@
 
 ## Resumen
 
-onwx' (onwx-dash) es una aplicación de inferencia local para ejecutar modelos de lenguaje grandes (GGUF) en ordenadores con AMD Ryzen AI, combinando la GPU Radeon integrada con la NPU XDNA2 para acelerar la carga de prompt. No se distribuye como un modelo de pesos en sí, sino como un paquete de software (instaladores PowerShell y shell, más binarios de motor por GPU) publicado en HuggingFace bajo el identificador `ryugyosoft/onwx-dash`, con licencia Apache-2.0 y un tamaño de repositorio de 1,3 GB.
+onwx' (onwx-dash) es una aplicación de inferencia local para ejecutar modelos de lenguaje grandes (GGUF) en ordenadores con AMD Ryzen AI, combinando la GPU Radeon integrada con la NPU XDNA2 para acelerar la carga de prompt. No se distribuye como un modelo de pesos en sí, sino como un paquete de software (instaladores PowerShell y shell, más binarios de motor por GPU) publicado en Hugging Face bajo el identificador `ryugyosoft/onwx-dash`, con licencia Apache-2.0 y un tamaño de repositorio de 1,3 GB.
 
 El proyecto deriva de la aplicación hermana `ryugyosoft/onwx` (dedicada a la NPU) y hasta la versión 0.6.1 se llamaba onwx-halo. Su motor es una adaptación de gufo, un motor de inferencia en C++20/HIP para Strix Halo, a partir del fork con soporte de NPU `mikealanni/gufo`. Está dirigido a dos familias de hardware concretas: Ryzen AI Max (Strix Halo, Radeon 8060S/8050S, gfx1151) y Ryzen AI 300 (Radeon 890M/880M, gfx1150).
 
@@ -81,9 +81,9 @@ Relacion frente a llama.cpp indicada por el autor: en Ryzen AI 300, la lectura d
 
 | Solucion | Plataforma | Contexto | Rendimiento (mismo hardware y GGUF) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| onwx-dash | Ryzen AI Max y Ryzen AI 300 (GPU + NPU) | No disponible | Lectura de prompt 1,6-2,7x llama.cpp; generacion con MTP/draft hasta 84-93 tok/s | Apache-2.0 | HuggingFace, 0 descargas |
+| onwx-dash | Ryzen AI Max y Ryzen AI 300 (GPU + NPU) | No disponible | Lectura de prompt 1,6-2,7x llama.cpp; generacion con MTP/draft hasta 84-93 tok/s | Apache-2.0 | Hugging Face, 0 descargas |
 | llama.cpp (Vulkan/ROCm) | Multiplataforma, GPU AMD/NVIDIA | Configurable por el usuario | Referencia base de la comparacion | MIT | Ampliamente adoptado |
-| onwx (aplicacion hermana) | Ryzen AI, enfocada en NPU | No disponible | No disponible | No disponible en la informacion | HuggingFace (ryugyosoft/onwx) |
+| onwx (aplicacion hermana) | Ryzen AI, enfocada en NPU | No disponible | No disponible | No disponible en la informacion | Hugging Face (ryugyosoft/onwx) |
 | gufo (motor original y fork) | Strix Halo, Linux (fork con NPU) | No disponible | No disponible | MIT | GitHub (gufo-org/gufo, mikealanni/gufo) |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ Relacion frente a llama.cpp indicada por el autor: en Ryzen AI 300, la lectura d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryugyosoft/onwx-dash
+- Repositorio Hugging Face: https://huggingface.co/ryugyosoft/onwx-dash
 - README en ingles: https://huggingface.co/ryugyosoft/onwx-dash/blob/main/README_en.md
 - Aplicacion hermana onwx (NPU): https://huggingface.co/ryugyosoft/onwx
 - Instalador Windows: https://huggingface.co/ryugyosoft/onwx-dash/resolve/main/install.ps1

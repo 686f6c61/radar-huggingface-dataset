@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `themohal/trocr-small-saraiki` es un adaptación del modelo TrOCR (Transformer-based Optical Character Recognition) en su variante "small", aparentemente entrenado o ajustado para el reconocimiento de texto en idioma saraiki, una lengua indoaria hablada principalmente en la provincia de Punjab (Pakistán). El autor, `themohal`, publicó el modelo en HuggingFace en agosto de 2026, con un tamaño de repositorio de 1,5 GB, lo que sugiere que contiene pesos completos en formato safetensors.
+El modelo `themohal/trocr-small-saraiki` es un adaptación del modelo TrOCR (Transformer-based Optical Character Recognition) en su variante "small", aparentemente entrenado o ajustado para el reconocimiento de texto en idioma saraiki, una lengua indoaria hablada principalmente en la provincia de Punjab (Pakistán). El autor, `themohal`, publicó el modelo en Hugging Face en agosto de 2026, con un tamaño de repositorio de 1,5 GB, lo que sugiere que contiene pesos completos en formato safetensors.
 
 La información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, el pipeline ni detalles de entrenamiento. A pesar de ello, por el nombre y la arquitectura típica de TrOCR, se puede inferir que se trata de un modelo encoder-decoder basado en Transformer, diseñado para transcribir imágenes de texto a secuencias de caracteres. Su relevancia radica en la escasez de modelos OCR específicos para lenguas minoritarias como el saraiki, lo que podría facilitar la digitalización de documentos en esa lengua.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. Dado el tamaño del repositorio (1,5 GB), se estima que el modelo completo en FP32 ocupa alrededor de 1,5 GB, por lo que podría caber en GPUs con 4 GB de VRAM o más, pero no hay confirmación oficial.
 - GPU recomendadas: no disponible. Para inferencia en tiempo real se recomendaría al menos una GPU de gama media (por ejemplo, RTX 3060 o superior), pero no hay datos concretos.
 - Si cabe en consumer GPU: probablemente sí, dado el tamaño, pero sin confirmación.
-- Opciones de despliegue: al ser un modelo de HuggingFace con pesos en safetensors, se puede cargar con la librería `transformers` de HuggingFace. También podría convertirse a ONNX o GGUF para su uso con llama.cpp u Ollama, aunque no hay guías oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face con pesos en safetensors, se puede cargar con la librería `transformers` de Hugging Face. También podría convertirse a ONNX o GGUF para su uso con llama.cpp u Ollama, aunque no hay guías oficiales.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,4 +66,4 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/themohal/trocr-small-saraiki
+- Repositorio en Hugging Face: https://huggingface.co/themohal/trocr-small-saraiki

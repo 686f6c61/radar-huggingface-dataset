@@ -85,9 +85,9 @@ La informacion proporcionada solo cubre este repositorio y su modelo base. Las c
 
 | Modelo | Parametros | Contexto | mAP50-95 (COCO val2017) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolo12x-mlx (este repositorio) | 59,4 M | no aplica | 0,5484 | AGPL-3.0 | HuggingFace, formato `.npz` para MLX |
+| yolo12x-mlx (este repositorio) | 59,4 M | no aplica | 0,5484 | AGPL-3.0 | Hugging Face, formato `.npz` para MLX |
 | Ultralytics YOLO12x (PyTorch) | 59,4 M (mismo checkpoint) | no aplica | 0,5484 (declarado identico) | AGPL-3.0 | Repositorio Ultralytics, `.pt` |
-| Otras variantes YOLO12 convertidas a MLX (coleccion del autor) | no disponible | no aplica | no disponible | AGPL-3.0 | HuggingFace, coleccion "YOLO12 for MLX" |
+| Otras variantes YOLO12 convertidas a MLX (coleccion del autor) | no disponible | no aplica | no disponible | AGPL-3.0 | Hugging Face, coleccion "YOLO12 for MLX" |
 | YOLOv8x / YOLO11x / RT-DETR | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 La comparacion relevante que si aportan los datos es interna: frente al mismo checkpoint en PyTorch, la version MLX iguala la precision y es mas lenta que PyTorch MPS en fp16 en el hardware medido.
@@ -105,7 +105,7 @@ La comparacion relevante que si aportan los datos es interna: frente al mismo ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youakrim/yolo12x-mlx
+- Modelo en Hugging Face: https://huggingface.co/youakrim/yolo12x-mlx
 - Repositorio de la implementacion MLX: https://github.com/youakrim/yolo12-mlx
 - Coleccion "YOLO12 for MLX" (otras escalas): https://huggingface.co/collections/youakrim/yolo12-for-mlx-6ac659ef0a06781003d1d3cc
 - Modelo base: https://huggingface.co/Ultralytics/YOLO12

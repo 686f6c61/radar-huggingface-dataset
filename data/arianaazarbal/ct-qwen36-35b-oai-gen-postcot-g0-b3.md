@@ -21,7 +21,7 @@ El interés actual de esta ficha es acotado: se trata de un artefacto de investi
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
-Otros datos de la ficha de HuggingFace: libreria `peft`, pipeline `text-generation`, tamano del repositorio 4,5 GB, creado el 2026-09-18 y actualizado el mismo dia. Incluye el fichero `training_seed_constitution.md` con la constitucion usada y `tinker_meta.json` con el registro de exportacion.
+Otros datos de la ficha de Hugging Face: libreria `peft`, pipeline `text-generation`, tamano del repositorio 4,5 GB, creado el 2026-09-18 y actualizado el mismo dia. Incluye el fichero `training_seed_constitution.md` con la constitucion usada y `tinker_meta.json` con el registro de exportacion.
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ No se especifican en la informacion disponible el numero total de tokens de entr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones de seguridad o de adherencia constitucional. Tampoco se proporcionan datos de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones de seguridad o de adherencia constitucional. Tampoco se proporcionan datos de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g0-b3 (este adaptador) | LoRA r=64 sobre base de 35B | no disponible | sin benchmarks publicados | no disponible | publico en HuggingFace, 0 descargas |
+| ct-qwen36-35b-oai-gen-postcot-g0-b3 (este adaptador) | LoRA r=64 sobre base de 35B | no disponible | sin benchmarks publicados | no disponible | publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.6-35B-A3B (modelo base) | 35B (A3B) | no disponible en la informacion proporcionada | sin datos en la informacion proporcionada | no disponible en la informacion proporcionada | modelo base de referencia |
 | Otras ramas del mismo programa (p. ej. b1, b2, generaciones posteriores) | mismas caracteristicas | no disponible | sin benchmarks publicados | no disponible | presumiblemente publicas bajo el mismo autor; no confirmado |
 | Adaptadores de alineamiento generico de la misma familia Qwen | variable | no disponible | no disponible | variable | no disponible |
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para comparar con alternativas externas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` (constitucion semilla de la generacion) y `tinker_meta.json` (registro de exportacion desde Tinker)
 - Ruta original en Tinker (no es una URL navegable): `tinker://1e4c978b-206b-5460-8bdf-62af6e1bc029:train:0/sampler_weights/qwen36oaig0_qwen_oai_g0_b3_s2_cot_final`

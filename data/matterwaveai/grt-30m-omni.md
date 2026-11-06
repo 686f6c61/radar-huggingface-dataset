@@ -6,7 +6,7 @@ GRT-30M-Omni es un modelo multimodal "any-to-any" desarrollado por MatterWave AI
 
 El modelo cuenta con 37.596.089 parámetros según la model card (38.718.581 según los pesos en safetensors), distribuidos en cuatro componentes: una torre de visión (`GRTVisionModel`), una torre de audio (`GRTAudioModel`), un backbone de lenguaje causal de 12 capas (`GRTModel`) y una cabeza vocoder polar (`GRTPolarVocoderHead`). Deriva del modelo base `MatterWaveAI/grt-30m` mediante fine-tuning multimodal y se publica bajo licencia Apache 2.0.
 
-Su relevancia es fundamentalmente académica: demuestra que es posible construir un pipeline multimodal completo (visión, audio, texto y habla) sin capas lineales densas, con un presupuesto de parámetros extremadamente reducido (menos de 40 millones). No obstante, el modelo tiene cero descargas y cero likes en HuggingFace en el momento de redactar esta ficha, y sus métricas publicadas proceden exclusivamente de evaluaciones held-out del propio autor.
+Su relevancia es fundamentalmente académica: demuestra que es posible construir un pipeline multimodal completo (visión, audio, texto y habla) sin capas lineales densas, con un presupuesto de parámetros extremadamente reducido (menos de 40 millones). No obstante, el modelo tiene cero descargas y cero likes en Hugging Face en el momento de redactar esta ficha, y sus métricas publicadas proceden exclusivamente de evaluaciones held-out del propio autor.
 
 ## Especificaciones tecnicas
 
@@ -93,16 +93,16 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRT-30M-Omni | 37.6M | No disponible | Vision, audio, texto, habla | Apache 2.0 | HuggingFace (0 descargas) |
-| GRT-30M-VL | No disponible | No disponible | Vision, texto | Apache 2.0 | HuggingFace |
-| GRT-30M-TTS | No disponible | No disponible | Texto, habla | Apache 2.0 | HuggingFace |
-| Modelos omni de referencia (p. ej. Qwen2-Audio, LLaVA) | Cientos de millones a miles de millones | No disponible en esta ficha | Vision/audio/texto | Variables | HuggingFace |
+| GRT-30M-Omni | 37.6M | No disponible | Vision, audio, texto, habla | Apache 2.0 | Hugging Face (0 descargas) |
+| GRT-30M-VL | No disponible | No disponible | Vision, texto | Apache 2.0 | Hugging Face |
+| GRT-30M-TTS | No disponible | No disponible | Texto, habla | Apache 2.0 | Hugging Face |
+| Modelos omni de referencia (p. ej. Qwen2-Audio, LLaVA) | Cientos de millones a miles de millones | No disponible en esta ficha | Vision/audio/texto | Variables | Hugging Face |
 
 La comparativa con modelos de la comunidad no esta disponible en la informacion proporcionada: no se han publicado benchmarks estandar que permitan situar a GRT-30M-Omni frente a alternativas. Dentro de la propia suite de MatterWave AI, las variantes `grt-30m-vl` y `grt-30m-tts` cubren subconjuntos de las capacidades de este modelo omni.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion con cero descargas y cero likes en HuggingFace: no hay evidencia de uso en produccion ni validacion independiente.
+- Modelo de investigacion con cero descargas y cero likes en Hugging Face: no hay evidencia de uso en produccion ni validacion independiente.
 - Las metricas publicadas proceden exclusivamente de evaluaciones held-out del autor; no hay benchmarks estandar (MMLU, HumanEval, GSM8K) que permitan comparacion objetiva.
 - Precision de forma en captioning visual limitada al 58.3%, lo que indica dificultades con categorias visuales mas alla de color y posicion.
 - Precision de prosodia en reconocimiento de audio del 70.8%, con margen de mejora.
@@ -116,7 +116,7 @@ La comparativa con modelos de la comunidad no esta disponible en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-omni
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-omni
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - Chat fine-tune: https://huggingface.co/MatterWaveAI/grt-30m-chat
 - Variante MoR (4 expertos): https://huggingface.co/MatterWaveAI/grt-30m-mor

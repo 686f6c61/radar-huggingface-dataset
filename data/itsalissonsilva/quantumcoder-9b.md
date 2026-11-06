@@ -75,8 +75,8 @@ No se dispone de datos sobre modelos comparables de traduccion de circuitos cuan
 
 | Modelo | Parametros | Contexto | Pass@1 retenido | Pass@1 estres | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| QuantumCoder-9B (adaptador) | 9B (base) + LoRA r16 | 2.048 | 100% (288/288) | 97,92% (282/288) | Apache 2.0 | HuggingFace, 13 descargas |
-| Qwen3.5-9B (base) | 9B | no disponible | 12,50% (36/288) | 16,32% (47/288) | no disponible en la ficha | HuggingFace |
+| QuantumCoder-9B (adaptador) | 9B (base) + LoRA r16 | 2.048 | 100% (288/288) | 97,92% (282/288) | Apache 2.0 | Hugging Face, 13 descargas |
+| Qwen3.5-9B (base) | 9B | no disponible | 12,50% (36/288) | 16,32% (47/288) | no disponible en la ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se dispone de datos sobre modelos comparables de traduccion de circuitos cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsalissonsilva/QuantumCoder-9B
+- Modelo en Hugging Face: https://huggingface.co/itsalissonsilva/QuantumCoder-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados por framework y programas puntuados: carpeta v2_execution/ del repositorio
 - Paridad del helper de inferencia: carpeta helper_verification/ del repositorio

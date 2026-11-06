@@ -85,7 +85,7 @@ No se dispone de información sobre otros adaptadores o modelos comparables de a
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/suunny/qwen35-terminal-agent-rl
+- Hugging Face del adaptador: https://huggingface.co/suunny/qwen35-terminal-agent-rl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog del autor: https://susindrar.com/blog/terminal-agent-rl
 - Código: https://github.com/SUSINDRAREDDY/terminal-agent-rl

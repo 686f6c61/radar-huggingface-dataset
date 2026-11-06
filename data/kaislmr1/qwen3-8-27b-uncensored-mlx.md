@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KAISLMR1/Qwen3.8-27B-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/KAISLMR1/Qwen3.8-27B-Uncensored-MLX
 - Repositorio GitHub (espejo): https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX
 - Página en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Blog de OrcaRouter con guía de ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

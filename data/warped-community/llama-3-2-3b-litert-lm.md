@@ -87,6 +87,6 @@ No se dispone de comparativas de rendimiento cuantitativas entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/warped-community/Llama-3.2-3B-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/warped-community/Llama-3.2-3B-litert-lm
 - Repositorio de origen de la conversion LiteRT: https://huggingface.co/litert-community/Llama-3.2-3B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

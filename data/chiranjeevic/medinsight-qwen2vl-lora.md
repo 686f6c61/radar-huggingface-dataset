@@ -93,7 +93,7 @@ Frente a ellos, la diferencia relevante de este repositorio no es arquitectonica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiranjeevic/medinsight-qwen2vl-lora
+- Modelo en Hugging Face: https://huggingface.co/chiranjeevic/medinsight-qwen2vl-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2-VL-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos correspondian a contenidos no relacionados (Zhihu) y se han descartado.

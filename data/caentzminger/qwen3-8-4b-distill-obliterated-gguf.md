@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia entr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/caentzminger/Qwen3.8-4B-Distill-Obliterated-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/caentzminger/Qwen3.8-4B-Distill-Obliterated-GGUF)
 - [Modelo base: empero-ai/Qwen3.8-4B-Distill](https://huggingface.co/empero-ai/Qwen3.8-4B-Distill)
 - [Repositorio oficial de Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - [Variante GGUF de mradermacher](https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-i1-GGUF)

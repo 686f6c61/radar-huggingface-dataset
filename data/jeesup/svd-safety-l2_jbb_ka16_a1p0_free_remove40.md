@@ -83,9 +83,9 @@ No se han publicado en la informacion disponible resultados comparativos de este
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l2_jbb_ka16_a1p0_free_remove40 | 6.738.415.616 (fraccion declarada 0,5998) | 4.096 tokens | llama2 | HuggingFace | ASR AdvBench 0,0077; StrongREJECT ASR 0,0288; sobre-rechazo 0,4808; PPL WikiText-2 11,5304 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~6,74 mil millones | 4.096 tokens | llama2 | HuggingFace | no disponible en la informacion proporcionada |
-| Otras celdas de la matriz SVD del mismo autor | no disponible | 4.096 tokens (heredado) | llama2 | HuggingFace (autor Jeesup) | no disponible |
+| svd-safety-l2_jbb_ka16_a1p0_free_remove40 | 6.738.415.616 (fraccion declarada 0,5998) | 4.096 tokens | llama2 | Hugging Face | ASR AdvBench 0,0077; StrongREJECT ASR 0,0288; sobre-rechazo 0,4808; PPL WikiText-2 11,5304 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | ~6,74 mil millones | 4.096 tokens | llama2 | Hugging Face | no disponible en la informacion proporcionada |
+| Otras celdas de la matriz SVD del mismo autor | no disponible | 4.096 tokens (heredado) | llama2 | Hugging Face (autor Jeesup) | no disponible |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
 
@@ -103,9 +103,9 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_jbb_ka16_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_jbb_ka16_a1p0_free_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Repositorio de imagenes y pesos del modelo (safetensors, 13,5 GB): incluido en el repositorio de HuggingFace citado.
-- Documentacion de la licencia: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio de HuggingFace.
+- Repositorio de imagenes y pesos del modelo (safetensors, 13,5 GB): incluido en el repositorio de Hugging Face citado.
+- Documentacion de la licencia: `LICENSE.txt` y `USE_POLICY.md` incluidos en el repositorio de Hugging Face.
 - Paper de SVD-LLM, referencia metodologica: no disponible en la informacion proporcionada.
 - Paper de metricas de seguridad (HarmBench, StrongREJECT, WildGuard): no disponible en la informacion proporcionada.

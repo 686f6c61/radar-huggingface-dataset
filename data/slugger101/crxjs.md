@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Slugger101/CRXJS` está publicado en HuggingFace bajo la licencia MS-PL (Microsoft Public License), con etiquetas que incluyen un DOI asociado y la región US. Sin embargo, la ficha del modelo carece de información técnica sustancial: no se especifican arquitectura, tamaño, idiomas, ni pipeline de uso. La model card solo contiene la licencia, sin descripción del modelo, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta, el modelo tiene 0 descargas y 0 likes, lo que sugiere que es una publicación reciente o no ha sido ampliamente difundida. La ausencia de documentación impide evaluar su utilidad o rendimiento de manera objetiva.
+El modelo `Slugger101/CRXJS` está publicado en Hugging Face bajo la licencia MS-PL (Microsoft Public License), con etiquetas que incluyen un DOI asociado y la región US. Sin embargo, la ficha del modelo carece de información técnica sustancial: no se especifican arquitectura, tamaño, idiomas, ni pipeline de uso. La model card solo contiene la licencia, sin descripción del modelo, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta, el modelo tiene 0 descargas y 0 likes, lo que sugiere que es una publicación reciente o no ha sido ampliamente difundida. La ausencia de documentación impide evaluar su utilidad o rendimiento de manera objetiva.
 
 ## Especificaciones técnicas
 
@@ -50,5 +50,5 @@ No se conocen modelos comparables de la misma categoría, ya que se desconoce la
 
 ## Enlaces
 
-- [HuggingFace: Slugger101/CRXJS](https://huggingface.co/Slugger101/CRXJS)
+- [Hugging Face: Slugger101/CRXJS](https://huggingface.co/Slugger101/CRXJS)
 - [DOI asociado](https://doi.org/10.57967/hf/10121) (enlace inferido del tag, no verificado)

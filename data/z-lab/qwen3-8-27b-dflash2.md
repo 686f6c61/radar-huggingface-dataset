@@ -93,9 +93,9 @@ Se compara con el MTP nativo de Qwen3.8-27B (Multi-Token Prediction) y con el bo
 
 | Modelo | Parámetros | Longitud de contexto | Rendimiento (GSM8K, conc. 1) | Licencia | Disponibilidad |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Qwen3.8-27B-DFlash2 | 1.92B | No disponible | 236.1 t/s (3.43×) | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-DFlash2 | 1.92B | No disponible | 236.1 t/s (3.43×) | Apache 2.0 | Hugging Face |
 | Qwen3.8-27B MTP (nativo) | No especificado | No especificado | 178.5 t/s (2.59×) | Apache 2.0 | Integrado en el modelo base |
-| RadixArk/Qwen3.8-27B-DSpark | No especificado | No especificado | 185.3 t/s (2.69×) | No especificado | HuggingFace |
+| RadixArk/Qwen3.8-27B-DSpark | No especificado | No especificado | 185.3 t/s (2.69×) | No especificado | Hugging Face |
 
 DFlash 2 supera a ambas alternativas en todos los benchmarks de acceptance length y throughput, tanto en baja como en alta concurrencia. En concurrency 32, MTP y DSpark incluso degradan el rendimiento respecto a autoregresivo, mientras que DFlash 2 mantiene un speedup positivo.
 
@@ -111,8 +111,8 @@ DFlash 2 supera a ambas alternativas en todos los benchmarks de acceptance lengt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Modelo espejo en HuggingFace: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Modelo espejo en Hugging Face: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Blog oficial de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash
 - Paper original de DFlash (ICML 2026): citado en la card, sin enlace directo

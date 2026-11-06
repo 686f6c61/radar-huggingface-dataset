@@ -93,13 +93,13 @@ No se han publicado en la informacion disponible resultados comparativos con MML
 - CPU: la inferencia en CPU es perfectamente viable para uso individual; el cuello de botella sera el preprocesado de imagen, no la red.
 - Opciones de despliegue: PyTorch nativo (carga del state dict), exportacion a ONNX o TorchScript, y ejecucion en Python o C++. vLLM, llama.cpp, Ollama y TGI no aplican, ya que estan orientados a modelos generativos de lenguaje y no a clasificadores convolucionales de imagen.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia ni de imagenes por segundo.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB segun HuggingFace, por lo que el checkpoint es de pocos megabytes.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB segun Hugging Face, por lo que el checkpoint es de pocos megabytes.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto o entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shr3m/fetal-brain-plane-cnn | 1.173.668 | Imagen 224 x 224 monocanal | Accuracy 0,7126; macro-F1 0,5421 en test | no disponible | HuggingFace, 0 descargas, 1 like |
+| shr3m/fetal-brain-plane-cnn | 1.173.668 | Imagen 224 x 224 monocanal | Accuracy 0,7126; macro-F1 0,5421 en test | no disponible | Hugging Face, 0 descargas, 1 like |
 | Clasificador de referencia de Burgos-Artizzu et al. (2020) sobre FETAL_PLANES_DB | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | dataset CC BY 4.0 | Publicacion en *Scientific Reports* (enlace en la seccion de enlaces) |
 | Otras alternativas (ResNet, EfficientNet u otras CNN medicas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -123,7 +123,7 @@ No se dispone en la informacion proporcionada de resultados numericos de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shr3m/fetal-brain-plane-cnn
+- Modelo en Hugging Face: https://huggingface.co/shr3m/fetal-brain-plane-cnn
 - Conjunto de datos FETAL_PLANES_DB (Zenodo): https://doi.org/10.5281/zenodo.3904280
 - Articulo del conjunto de datos: Burgos-Artizzu et al., *Scientific Reports* 10, 10200 (2020), https://doi.org/10.1038/s41598-020-67076-5
 - Proyecto de Weights & Biases: https://wandb.ai/shemremo-marconi-research-and-innovation-lab/fetal-brain-planes
@@ -131,6 +131,6 @@ No se dispone en la informacion proporcionada de resultados numericos de modelos
 - Ejecucion con semilla 42: https://wandb.ai/shemremo-marconi-research-and-innovation-lab/fetal-brain-planes/runs/vr2jvt3n
 - Ejecucion con semilla 1337: https://wandb.ai/shemremo-marconi-research-and-innovation-lab/fetal-brain-planes/runs/57h7klwh
 - Ejecucion con semilla 2024: https://wandb.ai/shemremo-marconi-research-and-innovation-lab/fetal-brain-planes/runs/d0gmipa1
-- Conjunto de datos en HuggingFace citado en la model card: Marc-HealthAI/fetal-planes-classification-dataset-zenodo
+- Conjunto de datos en Hugging Face citado en la model card: Marc-HealthAI/fetal-planes-classification-dataset-zenodo
 
 Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los unicos enlaces recuperados correspondian a paginas de inicio de sesion de servicios de correo y ofimatica, sin relacion con el contenido de la ficha, por lo que se han omitido.

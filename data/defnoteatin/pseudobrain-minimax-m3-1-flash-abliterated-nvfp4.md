@@ -16,7 +16,7 @@ La relevancia de esta ficha es doble: por un lado documenta una técnica de conv
 | Parámetros totales | 221.437.892.576 (221,4 B) |
 | Parámetros activos | no disponible |
 | Longitud de contexto | 1.056.768 tokens (ventana de atención de 16.384 tokens con 4 sumideros y recuperación exacta de bloques KV) |
-| Tipos de cuantización | NVFP4 y MXFP8 (pesos publicados en 8 bits según metadatos de HuggingFace); KV-cache en `fp8_e4m3` recomendada |
+| Tipos de cuantización | NVFP4 y MXFP8 (pesos publicados en 8 bits según metadatos de Hugging Face); KV-cache en `fp8_e4m3` recomendada |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (con `custom_code`, requiere `--trust-remote-code`), más fichero auxiliar `pb27-gdn-00001-of-00001.safetensors` para la rama Gated DeltaNet |
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-Abliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-Abliterated-NVFP4
 - Checkpoint base (abliterado): https://huggingface.co/Blackfrost-Research/MiniMax-3.1-Flash-DeRisked
 - Edición oficial NVFP4 del mismo autor: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-NVFP4
 - Edición compacta de 32 expertos: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-E32-NVFP4

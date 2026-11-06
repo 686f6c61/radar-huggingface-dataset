@@ -94,7 +94,7 @@ El autor advierte que los nombres AXQ describen una clase de presupuesto de alma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-8B-BF16/tree/d1f2f25730bbd775b99b29185134bc86653bf2d1
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-4bit
 - Hermano 8bit: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-8bit

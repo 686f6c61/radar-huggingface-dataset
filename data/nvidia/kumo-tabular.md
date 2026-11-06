@@ -72,7 +72,7 @@ No se han encontrado datos comparativos verificables en la informacion proporcio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Kumo Tabular (nvidia) | no disponible | no disponible | OpenMDW 1.1 | HuggingFace: nvidia/Kumo-Tabular | no disponible |
+| Kumo Tabular (nvidia) | no disponible | no disponible | OpenMDW 1.1 | Hugging Face: nvidia/Kumo-Tabular | no disponible |
 | Alternativas de la misma categoria (modelos fundacionales tabulares) | no disponible | no disponible | no disponible | no verificada en la busqueda | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se han encontrado datos comparativos verificables en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Kumo-Tabular
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio de la libreria de inferencia: https://github.com/NVIDIA/structured-data-models
 - Instalacion: `pip install structured-data-models`
 - Pagina corporativa de NVIDIA (resultado de busqueda generico, sin informacion especifica del modelo): https://www.nvidia.com/

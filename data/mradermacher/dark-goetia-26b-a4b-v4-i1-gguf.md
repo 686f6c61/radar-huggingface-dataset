@@ -80,7 +80,7 @@ La principal diferencia con el modelo base es el ajuste específico para rolepla
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-i1-GGUF
 - Repositorio del modelo base: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v4
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-GGUF
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

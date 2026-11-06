@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-OFA-Round3 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto de Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en HuggingFace. No se trata de un modelo nuevo orientado a produccion, sino de un artefacto de investigacion cuyo objetivo es explorar la reutilizacion de cabezas de atencion, MLPs y capas congeladas dentro de grafos computacionales modificados. El checkpoint contiene 752.393.024 parametros unicos del modelo de lenguaje tras 1.500 actualizaciones del optimizador, de un curriculum planificado de 10 rondas y 5.000 actualizaciones totales.
+Qwen3.5-0.8B-OFA-Round3 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto de Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en Hugging Face. No se trata de un modelo nuevo orientado a produccion, sino de un artefacto de investigacion cuyo objetivo es explorar la reutilizacion de cabezas de atencion, MLPs y capas congeladas dentro de grafos computacionales modificados. El checkpoint contiene 752.393.024 parametros unicos del modelo de lenguaje tras 1.500 actualizaciones del optimizador, de un curriculum planificado de 10 rondas y 5.000 actualizaciones totales.
 
 El modelo se carga como un `Qwen3_5ForCausalLM` estandar sin codigo remoto personalizado y conserva la arquitectura de 24 capas del modelo base. Incluye unicamente el backbone de texto: la torre de vision y el modulo de prediccion multi-token del modelo original no estan presentes. Las intervenciones sobre el grafo OFA requieren un ejecutor de grafo separado que no se distribuye con este release.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-OFA-Round3 | 752.393.024 | no disponible (heredado, no validado) | Checkpoint intermedio OFA/NAS, solo backbone de texto | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | no disponible en la informacion (familia 0.8B) | no disponible | Modelo multimodal completo con torre de vision y prediccion multi-token | apache-2.0 | HuggingFace |
+| Qwen3.5-0.8B-OFA-Round3 | 752.393.024 | no disponible (heredado, no validado) | Checkpoint intermedio OFA/NAS, solo backbone de texto | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | no disponible en la informacion (familia 0.8B) | no disponible | Modelo multimodal completo con torre de vision y prediccion multi-token | apache-2.0 | Hugging Face |
 | Alternativas de ~0,8B para texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa con otros modelos de la misma categoria no esta disponible en la informacion proporcionada. El unico punto de referencia objetivo es el modelo base Qwen3.5-0.8B, del que este checkpoint hereda arquitectura, tokenizer y licencia, pero del que difiere por la ausencia de vision y del modulo de prediccion multi-token, y por los pesos calibrados con intervenciones de grafo.
@@ -83,7 +83,7 @@ La comparacion directa con otros modelos de la misma categoria no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round3
+- Modelo en Hugging Face: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Receta de entrenamiento (`recipe.json`): https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round3/blob/main/recipe.json
 - Procedencia (`provenance.json`): https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round3/blob/main/provenance.json

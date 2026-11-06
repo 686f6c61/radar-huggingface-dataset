@@ -88,6 +88,6 @@ La comparativa directa con Qwen3-0.6B muestra una desventaja clara en razonamien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Asilarkness/Budgie-500m
+- Repositorio Hugging Face: https://huggingface.co/Asilarkness/Budgie-500m
 - Modelo relacionado (budgie-100m): https://huggingface.co/Asilarkness/budgie-100m
 - Busqueda de modelos con tag "budgie": https://huggingface.co/models?other=budgie

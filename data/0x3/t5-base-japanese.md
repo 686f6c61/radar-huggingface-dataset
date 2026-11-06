@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0x3/t5-base-japanese` es una adaptación al japonés del T5 (Text-to-Text Transfer Transformer), desarrollada originalmente por sonoisa y publicada en HuggingFace bajo el identificador `sonoisa/t5-base-japanese`. El repositorio `0x3/t5-base-japanese` es una copia espejo de ese modelo, con los mismos pesos y configuración. Se trata de un modelo encoder-decoder preentrenado sobre aproximadamente 100 GB de texto japonés procedente de Wikipedia, OSCAR y CC-100, con el objetivo de servir como base para tareas de procesamiento de lenguaje natural en japonés mediante fine-tuning.
+El modelo `0x3/t5-base-japanese` es una adaptación al japonés del T5 (Text-to-Text Transfer Transformer), desarrollada originalmente por sonoisa y publicada en Hugging Face bajo el identificador `sonoisa/t5-base-japanese`. El repositorio `0x3/t5-base-japanese` es una copia espejo de ese modelo, con los mismos pesos y configuración. Se trata de un modelo encoder-decoder preentrenado sobre aproximadamente 100 GB de texto japonés procedente de Wikipedia, OSCAR y CC-100, con el objetivo de servir como base para tareas de procesamiento de lenguaje natural en japonés mediante fine-tuning.
 
 El modelo tiene 222 millones de parámetros, un tamaño intermedio dentro de la familia T5, y está pensado para tareas secuencia a secuencia como clasificación, respuesta a preguntas, resumen o traducción. Al ser un modelo solo preentrenado, no está listo para uso directo en producción sin un ajuste posterior. Su relevancia radica en que ofrece una alternativa ligera y específica para japonés frente a modelos multilingües más grandes, con un rendimiento competitivo en benchmarks como la clasificación de noticias de livedoor y el conjunto de preguntas JSQuAD.
 
@@ -64,16 +64,16 @@ No se han publicado resultados en benchmarks genericos como MMLU, HumanEval, GSM
 - VRAM estimada para inferencia: aproximadamente 1 GB en precision FP32 (222M parametros x 4 bytes) y unos 0.5 GB en FP16. En la practica, con overhead del runtime, se recomienda entre 2 y 4 GB de VRAM para inferencia.
 - GPU recomendadas: cualquier GPU de consumo con al menos 4 GB de VRAM, como una RTX 2060 o superior. Para fine-tuning se recomienda una GPU con 8-12 GB de VRAM, por ejemplo RTX 3060, RTX 4070 o A100.
 - Si cabe en GPU de consumo: si, el modelo es ligero y puede ejecutarse en GPUs de gama media o incluso en CPU para inferencia de baja demanda.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, JAX, y Text Generation Inference (TGI) para servicios de inferencia. Tambien puede ejecutarse en entornos CPU con la libreria transformers.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, JAX, y Text Generation Inference (TGI) para servicios de inferencia. Tambien puede ejecutarse en entornos CPU con la libreria transformers.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento en livedoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0x3/t5-base-japanese | 222M | no disponible | Accuracy 0.97 | CC-BY-SA 4.0 | HuggingFace |
-| google/mt5-small | 300M | no disponible | Accuracy 0.91 | Apache 2.0 | HuggingFace |
-| google/t5-base | 220M | no disponible | no evaluado en japones | Apache 2.0 | HuggingFace |
+| 0x3/t5-base-japanese | 222M | no disponible | Accuracy 0.97 | CC-BY-SA 4.0 | Hugging Face |
+| google/mt5-small | 300M | no disponible | Accuracy 0.91 | Apache 2.0 | Hugging Face |
+| google/t5-base | 220M | no disponible | no evaluado en japones | Apache 2.0 | Hugging Face |
 
 El modelo se diferencia de google/mt5-small por estar entrenado exclusivamente en japones, lo que le permite alcanzar mayor precision en tareas de este idioma con un 25% menos de parametros. Frente a google/t5-base, que es un modelo en ingles, este modelo esta especializado en japones.
 
@@ -89,7 +89,7 @@ El modelo se diferencia de google/mt5-small por estar entrenado exclusivamente e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x3/t5-base-japanese
+- Hugging Face: https://huggingface.co/0x3/t5-base-japanese
 - Modelo original: https://huggingface.co/sonoisa/t5-base-japanese
 - Repositorio de transferencia de aprendizaje: https://github.com/sonoisa/t5-japanese
 - Pagina de overview: https://www.aimodels.fyi/models/huggingFace/t5-base-japanese-sonoisa

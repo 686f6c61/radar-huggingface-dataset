@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Faramawy es un modelo publicado en HuggingFace por el usuario Ahmedabdelrahman000. La información disponible sobre este modelo es extremadamente escasa: la model card no contiene más que la declaración de licencia MIT, no se ha especificado el pipeline al que pertenece y no existen datos sobre arquitectura, número de parámetros, ventana de contexto ni datos de entrenamiento. Las descargas registradas son cero, lo que sugiere que se trata de un repositorio recién creado o con difusión prácticamente nula.
+Faramawy es un modelo publicado en Hugging Face por el usuario Ahmedabdelrahman000. La información disponible sobre este modelo es extremadamente escasa: la model card no contiene más que la declaración de licencia MIT, no se ha especificado el pipeline al que pertenece y no existen datos sobre arquitectura, número de parámetros, ventana de contexto ni datos de entrenamiento. Las descargas registradas son cero, lo que sugiere que se trata de un repositorio recién creado o con difusión prácticamente nula.
 
 Dada la ausencia de documentación, no es posible determinar qué problema resuelve ni por qué podría ser relevante. El único dato verificable y con implicaciones prácticas es la licencia MIT, una de las licencias más permisivas que existen: permite uso comercial, modificación, distribución y uso privado con la única condición de conservar el aviso de copyright. Esto significa que, si el modelo resultara útil, no habría restricciones legales para integrarlo en productos comerciales.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación, no es posible determinar qué problema resue
 
 No se dispone de información sobre la arquitectura del modelo. La model card no indica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otro diseño. Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, ni sobre el uso de técnicas de alineación como RLHF, DPO o SFT.
 
-La ausencia total de documentación técnica es en sí misma un dato relevante para la evaluación: sin una model card detallada, no es posible verificar el origen de los datos, la metodología de entrenamiento ni los sesgos potenciales, lo cual es una práctica contraria a las recomendaciones de documentación responsable de modelos publicadas por la propia comunidad de HuggingFace.
+La ausencia total de documentación técnica es en sí misma un dato relevante para la evaluación: sin una model card detallada, no es posible verificar el origen de los datos, la metodología de entrenamiento ni los sesgos potenciales, lo cual es una práctica contraria a las recomendaciones de documentación responsable de modelos publicadas por la propia comunidad de Hugging Face.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Dado que no existe documentación sobre las capacidades del modelo, no es posibl
 
 - **Evaluacion y auditoria de repositorios nuevos**: al tratarse de un repositorio recién creado y sin descargas, puede ser objeto de revisión por parte de la comunidad para verificar su procedencia, su contenido y su seguridad antes de un eventual uso.
 - **Base para fine-tuning con licencia permisiva**: si los pesos fueran de un modelo de lenguaje funcional, la licencia MIT permitiría ajustarlo por afinamiento (fine-tuning) para dominios concretos sin restricciones comerciales, aunque esto debe verificarse inspeccionando los archivos del repositorio.
-- **Investigacion sobre documentacion de modelos**: puede servir como ejemplo de repositorio con model card incompleta en estudios sobre prácticas de documentación en HuggingFace.
+- **Investigacion sobre documentacion de modelos**: puede servir como ejemplo de repositorio con model card incompleta en estudios sobre prácticas de documentación en Hugging Face.
 
 No es posible ofrecer más casos de uso concretos sin inventar capacidades que no están documentadas.
 
@@ -74,7 +74,7 @@ No es posible establecer una comparativa significativa, ya que se desconoce la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ahmedabdelrahman000/Faramawy
+- Repositorio en Hugging Face: https://huggingface.co/Ahmedabdelrahman000/Faramawy
 - Perfil del autor: https://huggingface.co/Ahmedabdelrahman000
 - Paper: no disponible
 - Blog o anuncio: no disponible

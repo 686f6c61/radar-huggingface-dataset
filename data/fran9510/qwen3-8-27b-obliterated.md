@@ -67,9 +67,9 @@ No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (stock) | 27,78B | no disponible | 84,5% | Apache 2.0 | HuggingFace |
-| fran9510/Qwen3.8-27B-OBLITERATED | 27,78B | no disponible | 82,3% | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27,78B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.8-27B (stock) | 27,78B | no disponible | 84,5% | Apache 2.0 | Hugging Face |
+| fran9510/Qwen3.8-27B-OBLITERATED | 27,78B | no disponible | 82,3% | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27,78B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo de huihui-ai para comparar. Ambos son variantes abliterated del mismo modelo base, pero con técnicas y resultados potencialmente distintos.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo de huihui-ai para comparar. Amb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fran9510/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/fran9510/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Blog de explainx.ai sobre Qwen3.8-27B OBLITERATED: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026

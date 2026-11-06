@@ -30,7 +30,7 @@ No hay información disponible sobre el número exacto de tokens de entrenamient
 ## Capacidades
 
 - Traducción de texto de ruso a inglés, tanto de frases aisladas como de párrafos.
-- Generación texto a texto dentro del pipeline `translation` de HuggingFace Transformers.
+- Generación texto a texto dentro del pipeline `translation` de Hugging Face Transformers.
 - Funcionamiento completamente offline una vez descargados los pesos, lo que lo hace apto para entornos sin conectividad.
 - Integración sencilla mediante `transformers` (`AutoTokenizer` y `AutoModelForSeq2SeqLM`).
 - No dispone de soporte de tool calling ni function calling.
@@ -71,16 +71,16 @@ No se han publicado comparativas directas con otros modelos en la información d
 - VRAM estimada: no disponible de forma explícita; no obstante, el repositorio ocupa 0,3 GB y los pesos se entregan en `pytorch_model.bin`, por lo que la inferencia en CPU es viable con memoria RAM convencional.
 - GPU recomendadas: no disponibles en la información proporcionada. Por el tamaño del modelo, cualquier GPU con unos pocos GB de VRAM debería ser más que suficiente.
 - Compatibilidad con GPU de consumo: previsiblemente sí, dado el reducido tamaño del repositorio, aunque no se aportan cifras oficiales.
-- Opciones de despliegue: HuggingFace Transformers (el código de ejemplo oficial usa `AutoTokenizer` y `AutoModelForSeq2SeqLM`). Otras opciones como vLLM, llama.cpp, Ollama o TGI no están documentadas para este modelo en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers (el código de ejemplo oficial usa `AutoTokenizer` y `AutoModelForSeq2SeqLM`). Otras opciones como vLLM, llama.cpp, Ollama o TGI no están documentadas para este modelo en la información disponible.
 - Latencia y throughput: no disponibles. No se han publicado datos de rendimiento en tiempo de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Idiomas | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxprint-mirror-opus-mt-ru-en | ru -> en | Transformer-align (Marian) | no disponible | CC-BY-4.0 | Espejo en HuggingFace |
+| voxprint-mirror-opus-mt-ru-en | ru -> en | Transformer-align (Marian) | no disponible | CC-BY-4.0 | Espejo en Hugging Face |
 | Helsinki-NLP/opus-mt-ru-en | ru -> en | Transformer-align (Marian) | no disponible | CC-BY-4.0 | Repositorio original |
-| Mitroshenkov87/voxprint-mirror-opus-mt-en-ru | en -> ru | Transformer-align (Marian) | no disponible | CC-BY-4.0 | Espejo en HuggingFace |
+| Mitroshenkov87/voxprint-mirror-opus-mt-en-ru | en -> ru | Transformer-align (Marian) | no disponible | CC-BY-4.0 | Espejo en Hugging Face |
 
 Los dos espejos del usuario Mitroshenkov87 son funcionalmente independientes: uno traduce ruso a inglés y el otro inglés a ruso. Ambos replican modelos de la familia OPUS-MT de la Universidad de Helsinki. No se dispone de datos comparativos de rendimiento con otros modelos de traducción en la información proporcionada.
 
@@ -97,7 +97,7 @@ Los dos espejos del usuario Mitroshenkov87 son funcionalmente independientes: un
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-ru-en
+- Espejo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-ru-en
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-ru-en
 - Espejo inverso (en -> ru): https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-ru
 - Repositorio Voxprint: https://github.com/Mitroshenkov87/voxprint-audiobook-builder

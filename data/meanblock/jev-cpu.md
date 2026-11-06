@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Sistema | Parametros | Dispositivo | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JEV-CPU | ~0,6 B (Qwen3-0.6B) | CPU, float32 | no disponible | Logits y probabilidades sobre opciones | MIT (repo) | HuggingFace y GitHub |
+| JEV-CPU | ~0,6 B (Qwen3-0.6B) | CPU, float32 | no disponible | Logits y probabilidades sobre opciones | MIT (repo) | Hugging Face y GitHub |
 | SemIf (proyecto original) | ~4 B en BF16 | GPU CUDA única | no disponible | Logits y probabilidades sobre opciones | no disponible | GitHub del proyecto original |
-| Qwen3-0.6B en modo generativo | ~0,6 B | CPU o GPU | no disponible | Texto generado | sujeta a la licencia del modelo base | HuggingFace |
+| Qwen3-0.6B en modo generativo | ~0,6 B | CPU o GPU | no disponible | Texto generado | sujeta a la licencia del modelo base | Hugging Face |
 
 La comparación se limita a estas alternativas porque la información proporcionada no incluye métricas de rendimiento frente a otros clasificadores zero-shot ni frente a modelos de decisión especializados.
 
@@ -90,7 +90,7 @@ La comparación se limita a estas alternativas porque la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Meanblock/JEV-CPU
+- Modelo en Hugging Face: https://huggingface.co/Meanblock/JEV-CPU
 - Repositorio GitHub: https://github.com/leesk212/JEV-CPU
 - Informe técnico: https://leesk212.github.io/JEV-CPU/
 - Proyecto original SemIf (antes OpenJev): https://github.com/TheoLeeCJ/SemIf

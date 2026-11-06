@@ -31,7 +31,7 @@ La innovación principal no está en la arquitectura, sino en el pipeline de inf
 
 - Reconocimiento de entidades nombradas de tipo `DISEASE` y `GENE_PROTEIN` en texto biomédico.
 - Salida en formato de spans de caracteres (inicio, fin, etiqueta) mediante Polly NER, o etiquetas BIO nativas de Transformers.
-- Compatible con el pipeline `token-classification` de HuggingFace Transformers.
+- Compatible con el pipeline `token-classification` de Hugging Face Transformers.
 - Soporta integración con la librería `polly-ner` para una API más sencilla.
 - No realiza entity linking, normalización, extracción de relaciones ni resolución de abreviaturas.
 - Maneja entidades contiguas y no superpuestas; no soporta entidades anidadas.
@@ -70,9 +70,9 @@ No se dispone de una comparativa directa con otros modelos NER biomédicos en la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ElucidataInc/polly-ner-gene-disease | 108,9M | 512 (base) | MIT | HuggingFace |
-| BioBERT-base | ~110M | 512 | Apache 2.0 | HuggingFace |
-| PubMedBERT-base | ~110M | 512 | MIT | HuggingFace |
+| ElucidataInc/polly-ner-gene-disease | 108,9M | 512 (base) | MIT | Hugging Face |
+| BioBERT-base | ~110M | 512 | Apache 2.0 | Hugging Face |
+| PubMedBERT-base | ~110M | 512 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se dispone de una comparativa directa con otros modelos NER biomédicos en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ElucidataInc/polly-ner-gene-disease)
+- [Modelo en Hugging Face](https://huggingface.co/ElucidataInc/polly-ner-gene-disease)
 - [Repositorio Polly NER (GitHub)](https://github.com/ElucidataInc/polly-ner) (commit b73b3012e113e58c8f1a7f6426e14fd838527c08)
 - [Modelo base: microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext](https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext)
 - [Dataset de entrenamiento (privado): ElucidataInc/curated-ner-corpus-gene-disease](https://huggingface.co/datasets/ElucidataInc/curated-ner-corpus-gene-disease)

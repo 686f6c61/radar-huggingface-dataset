@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks del modelo ni de comparativas numéricas ve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hindsight-ai/hs-rerank-1
+- Hugging Face: https://huggingface.co/hindsight-ai/hs-rerank-1
 - Repositorio Hindsight: https://github.com/vectorize-io/hindsight
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Servicio de inferencia Hindsight: https://inference.hindsight.vectorize.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-image-nsfw-uncensored-lora es un adaptador LoRA publicado por el usuario chfm en HuggingFace para el modelo de difusión texto-a-imagen MOSS-Image-SFT (OpenMOSS-Team). El repositorio se declara explícitamente como contenido para adultos (`nsfw`, `adult-content`, etiqueta `not-for-all-audiences`) y su función es especializar el modelo base en la generación de fotografía realista de desnudos, activada mediante la palabra de disparo `moss_xvstyle`. Se distribuye en formato diffusers/safetensors y con licencia Apache 2.0 según la declaración del autor.
+Moss-image-nsfw-uncensored-lora es un adaptador LoRA publicado por el usuario chfm en Hugging Face para el modelo de difusión texto-a-imagen MOSS-Image-SFT (OpenMOSS-Team). El repositorio se declara explícitamente como contenido para adultos (`nsfw`, `adult-content`, etiqueta `not-for-all-audiences`) y su función es especializar el modelo base en la generación de fotografía realista de desnudos, activada mediante la palabra de disparo `moss_xvstyle`. Se distribuye en formato diffusers/safetensors y con licencia Apache 2.0 según la declaración del autor.
 
 El interés técnico del artefacto es acotado pero real: ejemplifica el patrón habitual de personalización de un modelo de difusión moderno mediante un adaptador de bajo rango, con un `instance_prompt` bien definido y una relación declarada de tipo `adapter` respecto al modelo base. No obstante, la model card no documenta ningún detalle de entrenamiento (rango del LoRA, módulos objetivo, dataset, hiperparámetros, número de pasos), no incluye benchmarks y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Moss-image-nsfw-uncensored-lora | No disponible | No aplica | Apache 2.0 | HuggingFace, 0 descargas |
+| Moss-image-nsfw-uncensored-lora | No disponible | No aplica | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chfm/Moss-image-nsfw-uncensored-lora
+- Repositorio Hugging Face: https://huggingface.co/chfm/Moss-image-nsfw-uncensored-lora
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Referencia a la model card del adaptador (enlace truncado en la informacion proporcionada): https://huggingface.co/OpenMOSS-Team
 - Paper, blog, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

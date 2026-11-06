@@ -60,15 +60,15 @@ No se dispone de resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) e
 - Con cuantización 4-bit, la VRAM podría reducirse a unos 4-5 GB, pero no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para fp16 sin cuantización; A100/H100 para despliegue en producción.
 - Es posible ejecutarlo en GPU de consumo con cuantización (por ejemplo, mediante llama.cpp u Ollama), pero no hay configuraciones oficiales.
-- Opciones de despliegue: transformers (HuggingFace), llama.cpp, vLLM, TGI, Ollama. El modelo es compatible con text-generation-inference según los tags del repositorio.
+- Opciones de despliegue: transformers (Hugging Face), llama.cpp, vLLM, TGI, Ollama. El modelo es compatible con text-generation-inference según los tags del repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09 | 6.738.415.616 | 4096 | Llama 2 Community License | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | Llama 2 Community License | HuggingFace |
+| Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09 | 6.738.415.616 | 4096 | Llama 2 Community License | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | Llama 2 Community License | Hugging Face |
 
 El modelo es un derivado experimental del modelo base. No se dispone de información sobre otros checkpoints comparables de la misma rejilla de experimentos.
 
@@ -84,4 +84,4 @@ El modelo es un derivado experimental del modelo base. No se dispone de informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r09

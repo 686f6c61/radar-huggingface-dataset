@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento cuantitativo entre estos mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tinghong-Ye22/code-UniAnimate-DiT
+- Hugging Face: https://huggingface.co/Tinghong-Ye22/code-UniAnimate-DiT
 - Technical report (arXiv:2504.11289): https://arxiv.org/pdf/2504.11289
 - UniAnimate original (arXiv:2406.01188): https://arxiv.org/abs/2406.01188
 - Repositorio UniAnimate-DiT: https://github.com/ali-vilab/UniAnimate-DiT

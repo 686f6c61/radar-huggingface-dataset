@@ -87,7 +87,7 @@ No es posible establecer una comparación cuantitativa con alternativas: no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-FP8-DYNAMIC
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-FP8-DYNAMIC
 - Drafter de origen: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Trazabilidad de la cuantizacion: carpeta `provenance/quantization/` dentro del repositorio del modelo

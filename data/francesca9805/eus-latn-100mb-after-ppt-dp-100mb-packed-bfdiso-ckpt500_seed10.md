@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de generacion de texto en euskara (codigo de idioma `eus-latn`, latin script) desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base propio, `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`. El nombre indica que parte de un corpus de aproximadamente 100 MB y que el checkpoint corresponde al paso 500 de entrenamiento con semilla 10.
+Este modelo es un checkpoint de generacion de texto en euskara (codigo de idioma `eus-latn`, latin script) desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base propio, `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`. El nombre indica que parte de un corpus de aproximadamente 100 MB y que el checkpoint corresponde al paso 500 de entrenamiento con semilla 10.
 
 Arquitecturalmente es un transformer causal de la familia GPT-2, con 124.770.816 parametros totales (un orden de magnitud casi identico al GPT-2 small de 124M). No es un modelo MoE ni un hibrido, sino un decoder denso clasico. El repositorio ocupa 3,7 GB y los pesos se distribuyen en formato safetensors.
 
@@ -23,7 +23,7 @@ Por su tamano reducido y su enfoque en una unica lengua minoritaria, es relevant
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de tipo SFT del checkpoint base `eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`. La etiqueta `gpt2` de HuggingFace y el recuento de parametros (124,77M) apuntan a una configuracion de transformer causal denso equivalente a GPT-2 small, con atencion causal y sin componentes de mezcla de expertos. Se desconoce el detalle exacto de la configuracion de capas y cabezas de atencion, ya que la model card no lo especifica.
+El modelo es un ajuste fino de tipo SFT del checkpoint base `eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`. La etiqueta `gpt2` de Hugging Face y el recuento de parametros (124,77M) apuntan a una configuracion de transformer causal denso equivalente a GPT-2 small, con atencion causal y sin componentes de mezcla de expertos. Se desconoce el detalle exacto de la configuracion de capas y cabezas de atencion, ya que la model card no lo especifica.
 
 El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. La nomenclatura del nombre (`ppt`, `Dp`, `packed`, `bfdiso`, `ckpt500`, `seed10`) sugiere un pipeline de investigacion centrado en tokenizadores nuevos, el empaquetado (packing) de secuencias y un entrenamiento en precision bf16, pero no se dispone de la composicion exacta del dataset ni del numero de tokens vistos. No se documenta el uso de RLHF o DPO; segun la model card, el unico metodo aplicado es SFT.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eus-latn-100mb-after-ppt... (este modelo) | 124,77M | no disponible | euskara (inferido) | no disponible | HuggingFace |
-| GPT-2 small | 124M | 1024 tokens | ingles | MIT | HuggingFace, ampliamente disponible |
+| eus-latn-100mb-after-ppt... (este modelo) | 124,77M | no disponible | euskara (inferido) | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | ingles | MIT | Hugging Face, ampliamente disponible |
 | Otros modelos en euskara de tamano pequeno | no disponible | no disponible | euskara | no disponible | no disponible |
 
 La unica comparacion directa disponible es con GPT-2 small, del que este modelo hereda la arquitectura y el orden de magnitud en parametros, pero del que se diferencia por estar ajustado para euskara. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
@@ -82,7 +82,7 @@ La unica comparacion directa disponible es con GPT-2 small, del que este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ct3zvmjb
 - Repositorio de TRL: https://github.com/huggingface/trl

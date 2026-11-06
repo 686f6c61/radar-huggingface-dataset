@@ -73,6 +73,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ai-department-lpnu/diffusion-lab
-- Organización en HuggingFace: https://huggingface.co/ai-department-lpnu
+- Repositorio Hugging Face: https://huggingface.co/ai-department-lpnu/diffusion-lab
+- Organización en Hugging Face: https://huggingface.co/ai-department-lpnu
 - Repositorio del encoder (privado): https://huggingface.co/ai-department-lpnu/encoder-lab

@@ -34,7 +34,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Tool calling / function calling: declarado como probado en la model card y etiquetado con el tag `tool-use`.
 - Flujos agenticos: el repositorio incluye el tag `agentic`, orientado a tareas de varios pasos con herramientas.
 - Streaming de tokens: probado y soportado por mlx-serve.
-- Conversacion multiturno: pipeline declarado como `conversational` en los tags de HuggingFace.
+- Conversacion multiturno: pipeline declarado como `conversational` en los tags de Hugging Face.
 - Capacidades multilingues: no disponible.
 - Otras capacidades especiales (audio, vision adicional, etc.): no disponible.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (upstream) | 9,4B (segun el modelo base declarado) | safetensors bf16 | no disponible | Si | no disponible | Modelo base de referencia |
 | Alternativas de ~9B con vision para Apple Silicon | no disponible | no disponible | no disponible | no disponible | no disponible | No se identificaron en la informacion proporcionada |
 
-La comparativa se limita al propio modelo base porque la busqueda web no devolvio informacion utilizable y la ficha de HuggingFace no aporta datos de modelos comparables. En consecuencia, no es posible contrastar rendimiento, contexto ni licencia con alternativas de la misma categoria.
+La comparativa se limita al propio modelo base porque la busqueda web no devolvio informacion utilizable y la ficha de Hugging Face no aporta datos de modelos comparables. En consecuencia, no es posible contrastar rendimiento, contexto ni licencia con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ La comparativa se limita al propio modelo base porque la busqueda web no devolvi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-4bit
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Repositorio del runtime mlx-serve: https://github.com/ddalcu/mlx-serve
 - Papers, blogs o demos adicionales: no disponible. La busqueda web no devolvio ningun enlace relacionado con el modelo.

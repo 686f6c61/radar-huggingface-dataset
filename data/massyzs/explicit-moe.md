@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Massyzs/explicit-moe es un modelo de edicion de video basado en instrucciones, construido sobre el modelo base linyq/kiwi-edit-5b-instruct-only-diffusers y etiquetado con la libreria wan2.2. Se presenta como un fine-tune con arquitectura de mezcla de expertos (mixture-of-experts, MoE) orientado a tareas de video-to-video en las que el usuario describe con lenguaje natural la modificacion que quiere aplicar sobre un clip existente. El repositorio ocupa 8.8 GB y esta publicado bajo licencia Apache 2.0, aunque con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Massyzs/explicit-moe es un modelo de edicion de video basado en instrucciones, construido sobre el modelo base linyq/kiwi-edit-5b-instruct-only-diffusers y etiquetado con la libreria wan2.2. Se presenta como un fine-tune con arquitectura de mezcla de expertos (mixture-of-experts, MoE) orientado a tareas de video-to-video en las que el usuario describe con lenguaje natural la modificacion que quiere aplicar sobre un clip existente. El repositorio ocupa 8.8 GB y esta publicado bajo licencia Apache 2.0, aunque con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo resuelve el problema de la edicion de video guiada por instrucciones: en lugar de requerir mascaras, keyframes o herramientas manuales, recibe un video de entrada y una instruccion textual y devuelve un video editado. Su relevancia actual radica en que la edicion de video con modelos generativos esta pasando de prototipos de investigacion a flujos de produccion, y las variantes MoE permiten, en teoria, activar solo una fraccion de los parametros por token, reduciendo el coste computacional frente a un modelo denso del mismo tamano total.
 
@@ -23,7 +23,7 @@ La informacion publica disponible es muy limitada: no hay ficha tecnica detallad
 
 ## Arquitectura y entrenamiento
 
-El modelo se etiqueta como mixture-of-experts y se apoya en wan2.2, la familia de modelos de generacion y edicion de video de Alibaba, ademas de en linyq/kiwi-edit-5b-instruct-only-diffusers como base declarada. La combinacion sugiere un backbone de difusion para video con capas MoE anadidas o sustituidas, entrenado para seguir instrucciones de edicion sobre clips de entrada. El pipeline registrado en HuggingFace es video-to-video, coherente con una tarea de transformacion de video condicionada por texto.
+El modelo se etiqueta como mixture-of-experts y se apoya en wan2.2, la familia de modelos de generacion y edicion de video de Alibaba, ademas de en linyq/kiwi-edit-5b-instruct-only-diffusers como base declarada. La combinacion sugiere un backbone de difusion para video con capas MoE anadidas o sustituidas, entrenado para seguir instrucciones de edicion sobre clips de entrada. El pipeline registrado en Hugging Face es video-to-video, coherente con una tarea de transformacion de video condicionada por texto.
 
 No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal. Tampoco se especifica cuantos expertos contiene el modelo, como se enrutan los tokens ni que fraccion de parametros se activa por paso. Toda esta informacion debe considerarse no disponible hasta que el autor publique una model card completa.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Massyzs/explicit-moe | no disponible (~5B segun el nombre del base) | no disponible | Edicion de video por instrucciones (MoE) | Apache 2.0 | Gated en HuggingFace |
+| Massyzs/explicit-moe | no disponible (~5B segun el nombre del base) | no disponible | Edicion de video por instrucciones (MoE) | Apache 2.0 | Gated en Hugging Face |
 | linyq/kiwi-edit-5b-instruct-only-diffusers | ~5B (segun el nombre) | no disponible | Edicion de video por instrucciones | no disponible | Modelo base declarado |
 | Wan 2.2 (familia) | no disponible | no disponible | Generacion y edicion de video | no disponible | Publico |
 
@@ -72,7 +72,7 @@ La comparativa se limita al modelo base y a la familia wan2.2 porque no se dispo
 ## Limitaciones y advertencias
 
 - Ausencia de model card detallada: no hay informacion sobre datos de entrenamiento, sesgos, evaluacion ni limitaciones conocidas, lo que dificulta una evaluacion rigurosa antes de usarlo en produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion a la adopcion y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion a la adopcion y a la reproducibilidad.
 - Riesgo de alucinacion visual: como modelo generativo de video, puede introducir artefactos, incoherencias temporales o cambios no solicitados en el clip de salida; no hay evaluaciones publicadas que cuantifiquen este riesgo.
 - Idiomas: no se documenta que idiomas acepta en las instrucciones, por lo que el soporte del castellano no esta garantizado.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y de la familia wan2.2, cuyas licencias pueden imponer restricciones adicionales.
@@ -82,5 +82,5 @@ La comparativa se limita al modelo base y a la familia wan2.2 porque no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Massyzs/explicit-moe
+- Modelo en Hugging Face: https://huggingface.co/Massyzs/explicit-moe
 - Modelo base: https://huggingface.co/linyq/kiwi-edit-5b-instruct-only-diffusers

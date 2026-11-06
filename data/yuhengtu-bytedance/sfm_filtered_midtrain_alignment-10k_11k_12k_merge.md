@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-10k_11k_12k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-10k_11k_12k_merge)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)
 - [Artículo sobre fusión lineal (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)

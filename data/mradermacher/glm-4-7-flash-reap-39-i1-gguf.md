@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo GLM-4.7-Flash-REAP-39-i1-GGUF es una cuantización en formato GGUF del modelo base GLM-4.7-Flash-REAP-39, publicado por el usuario mradermacher en HuggingFace. La cuantización utiliza la técnica imatrix (importance matrix) para optimizar la calidad de los pesos en baja precisión, y está dirigida a su uso con motores de inferencia como llama.cpp u Ollama. Sin embargo, la información disponible en la ficha de HuggingFace es extremadamente escasa: no se especifican licencia, idiomas, pipeline ni tamaño real del modelo base. El repositorio no contiene archivos (0.0 GB), lo que sugiere que la cuantización no está publicada o que se trata de un placeholder. El único dato numérico es 11.608.283 parámetros totales, que parece anómalamente bajo para un modelo de la serie GLM-4.7-Flash (que suele tener varios miles de millones de parámetros), por lo que podría tratarse de un error de extracción o de un modelo extremadamente pequeño.
+El modelo GLM-4.7-Flash-REAP-39-i1-GGUF es una cuantización en formato GGUF del modelo base GLM-4.7-Flash-REAP-39, publicado por el usuario mradermacher en Hugging Face. La cuantización utiliza la técnica imatrix (importance matrix) para optimizar la calidad de los pesos en baja precisión, y está dirigida a su uso con motores de inferencia como llama.cpp u Ollama. Sin embargo, la información disponible en la ficha de Hugging Face es extremadamente escasa: no se especifican licencia, idiomas, pipeline ni tamaño real del modelo base. El repositorio no contiene archivos (0.0 GB), lo que sugiere que la cuantización no está publicada o que se trata de un placeholder. El único dato numérico es 11.608.283 parámetros totales, que parece anómalamente bajo para un modelo de la serie GLM-4.7-Flash (que suele tener varios miles de millones de parámetros), por lo que podría tratarse de un error de extracción o de un modelo extremadamente pequeño.
 
 Dado que no se dispone de información verificable sobre el modelo base, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias. No se pueden confirmar arquitectura, capacidades, rendimiento ni requisitos de hardware. Se recomienda consultar el repositorio original (Akicou/GLM-4.7-Flash-REAP-39) para obtener datos completos antes de considerar su uso en producción.
 
@@ -11,7 +11,7 @@ Dado que no se dispone de información verificable sobre el modelo base, esta fi
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 11.608.283 (según metadatos de HuggingFace, posiblemente erróneo) |
+| Parametros totales | 11.608.283 (según metadatos de Hugging Face, posiblemente erróneo) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (según comentarios de la model card) |
@@ -54,5 +54,5 @@ No disponible. Sin información sobre el modelo base, no es posible compararlo c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-39-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-39-i1-GGUF
 - Repositorio del modelo base (referenciado en la model card): https://huggingface.co/Akicou/GLM-4.7-Flash-REAP-39 (no verificado)

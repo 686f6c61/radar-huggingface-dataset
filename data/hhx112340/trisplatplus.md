@@ -73,7 +73,7 @@ La información proporcionada no incluye métricas ni especificaciones de altern
 
 | Modelo / enfoque | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TriSplat++ (este artefacto) | Cabeza gaussiana sobre backbone DA3 | no disponible (cabeza de 149 MiB) | no aplica | no disponible | Checkpoint head-only en HuggingFace, requiere DA3-GIANT-1.1 |
+| TriSplat++ (este artefacto) | Cabeza gaussiana sobre backbone DA3 | no disponible (cabeza de 149 MiB) | no aplica | no disponible | Checkpoint head-only en Hugging Face, requiere DA3-GIANT-1.1 |
 | 3D Gaussian Splatting (optimización por escena) | Representación gaussiana explícita | no disponible | no aplica | no disponible | Implementaciones públicas de referencia |
 | Depth Anything 3 (DA3-GIANT-1.1) | Backbone de profundidad/geometría | no disponible | no aplica | no disponible | Requerido como dependencia, no incluido aquí |
 | Métodos feed-forward de reconstrucción 3D | Regresión directa de representación 3D | no disponible | no aplica | no disponible | no disponible |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo (PSNR, SSIM, LPIPS, tiempos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hhx112340/trisplatplus
+- Repositorio Hugging Face: https://huggingface.co/hhx112340/trisplatplus
 - Checkpoint de referencia DA3-GIANT-1.1 (dependencia obligatoria): ruta indicada por el autor como `/path/to/Depth-Anything-3/checkpoints/DA3-GIANT-1.1`, sin URL publicada en la información disponible.
 - Repositorio de código de TriSplat++ (contiene la implementación LGTM): mencionado en la model card, sin URL publicada en la información disponible.
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a páginas de ayuda de Facebook y no guardan relación con el modelo.

@@ -98,7 +98,7 @@ La ventaja principal de Ridge frente a estas alternativas es que trata explícit
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones de unsloth para el mismo modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Cuantizaciones de bartowski para el mismo modelo base: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF

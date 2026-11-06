@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adrirflorez/mmbert-conloan-multi-borrowings` es un encoder basado en la arquitectura modernBERT, fine-tuneado para tareas de clasificación de texto. Fue desarrollado por el usuario `adrirflorez` y publicado en HuggingFace con el pipeline de `text-classification`. El nombre sugiere una especialización en análisis de préstamos múltiples (del inglés *conloan* y *multi-borrowings*), aunque la documentación oficial no detalla el dominio concreto de aplicación.
+El modelo `adrirflorez/mmbert-conloan-multi-borrowings` es un encoder basado en la arquitectura modernBERT, fine-tuneado para tareas de clasificación de texto. Fue desarrollado por el usuario `adrirflorez` y publicado en Hugging Face con el pipeline de `text-classification`. El nombre sugiere una especialización en análisis de préstamos múltiples (del inglés *conloan* y *multi-borrowings*), aunque la documentación oficial no detalla el dominio concreto de aplicación.
 
 El modelo cuenta con 307.534.085 parámetros y un tamaño de repositorio de 1,3 GB, lo que lo sitúa en la gama de encoders grandes. Se apoya en el proyecto mmBERT de JHU-CLSP, un encoder multilingüe moderno entrenado sobre 3 billones de tokens en más de 1800 lenguas. No obstante, la model card del autor es una plantilla genérica sin información específica sobre datos de entrenamiento, licencia o evaluación, por lo que esta ficha se limita a los datos disponibles y a las inferencias razonables basadas en la arquitectura base.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada: no disponible. Con 307M parametros en fp32, el modelo ocuparia aproximadamente 1,23 GB en memoria; con cuantizacion a int8, alrededor de 0,31 GB. Los requisitos exactos dependen del lote y la longitud de secuencia.
 - GPUs recomendadas: una GPU consumer como RTX 3060 (12 GB) o superior es suficiente para inferencia en lotes pequenos. Para entrenamiento o fine-tuning adicional, se recomienda al menos 16 GB de VRAM.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, HuggingFace TGI, o mediante la API de `transformers` clasica. Tambien es compatible con `text-embeddings-inference` para generacion de embeddings.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Hugging Face TGI, o mediante la API de `transformers` clasica. Tambien es compatible con `text-embeddings-inference` para generacion de embeddings.
 - Latencia y throughput: no disponible. Al ser un encoder de tamano medio, la inferencia en CPU es viable para lotes pequenos, pero en GPU se obtendran tiempos de respuesta de decenas de milisegundos por secuencia corta (estimacion orientativa, no medida).
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente sobre los modelos comparables de `arodri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adrirflorez/mmbert-conloan-multi-borrowings
+- Hugging Face: https://huggingface.co/adrirflorez/mmbert-conloan-multi-borrowings
 - Repositorio mmBERT (JHU-CLSP): https://github.com/JHU-CLSP/mmBERT/
 - Paper mmBERT: https://arxiv.org/abs/2509.06888
 - Version HTML del paper: https://arxiv.org/html/2509.06888v1

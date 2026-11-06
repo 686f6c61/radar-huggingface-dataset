@@ -16,7 +16,7 @@ Con 8.090 millones de parámetros y una arquitectura transformer densa (sin mezc
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (formato safetensors en precisión completa) |
 | Idiomas soportados | Arabe (moderno estandar y dialectos), ingles |
-| Licencia | Apache-2.0 (con acceso restringido en HuggingFace) |
+| Licencia | Apache-2.0 (con acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 - VRAM estimada para inferencia: con 8.090 millones de parámetros, en FP16 se requieren aproximadamente 16 GB de VRAM solo para los pesos, más overhead de activaciones. En cuantización de 4 bits (si estuviera disponible) se necesitarían unos 5 GB, pero no se confirma la existencia de versiones cuantizadas.
 - GPU recomendadas: para FP16, una GPU con 24 GB de VRAM como la RTX 3090, RTX 4090, A5000 o A100 de 40 GB es adecuada. Para cuantización de 4 bits, una RTX 3060 de 12 GB podría ser suficiente.
 - En consumer GPU: sí, cabe en GPUs de gama alta como RTX 3090/4090 con FP16, y en GPUs de gama media si se aplica cuantización (aunque no se han publicado versiones GGUF o AWQ).
-- Opciones de despliegue: al ser un modelo safetensors compatible con transformers, puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) o directamente con la librería transformers de HuggingFace. No se confirma soporte nativo en Ollama.
+- Opciones de despliegue: al ser un modelo safetensors compatible con transformers, puede desplegarse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) o directamente con la librería transformers de Hugging Face. No se confirma soporte nativo en Ollama.
 - Latencia y throughput: no se dispone de mediciones estándar. El dato de 2.000 tokens por segundo proviene del hardware propietario de Cerebras, no de GPUs convencionales.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos similares en la misma categoría (bilingües árabe-inglés de tamaño medio). Alternativas como Llama-2-7B o Mistral-7B son multilingües genéricos con peor rendimiento en árabe, pero no hay datos de benchmarks que permitan una comparación cuantitativa. Se recomienda consultar la colección Jais-2-Family en HuggingFace para ver otros tamaños de la misma familia.
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos similares en la misma categoría (bilingües árabe-inglés de tamaño medio). Alternativas como Llama-2-7B o Mistral-7B son multilingües genéricos con peor rendimiento en árabe, pero no hay datos de benchmarks que permitan una comparación cuantitativa. Se recomienda consultar la colección Jais-2-Family en Hugging Face para ver otros tamaños de la misma familia.
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo está restringido en HuggingFace (gated), lo que implica un proceso de solicitud y aceptación de términos adicionales, a pesar de la licencia Apache-2.0.
+- El acceso al modelo está restringido en Hugging Face (gated), lo que implica un proceso de solicitud y aceptación de términos adicionales, a pesar de la licencia Apache-2.0.
 - No se han publicado detalles sobre el dataset de entrenamiento, lo que impide evaluar posibles sesgos culturales, religiosos o políticos en el contenido generado.
 - Al ser un modelo bilingüe centrado en árabe, su rendimiento en inglés puede ser inferior al de modelos monolingües de inglés del mismo tamaño, aunque no hay datos que lo confirmen.
 - Riesgo de alucinación inherente a todos los LLM, especialmente en tareas de razonamiento complejo o cuando se le pide información factual precisa.
@@ -71,8 +71,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - inception42/Jais-2-8B-Chat](https://huggingface.co/inception42/Jais-2-8B-Chat)
-- [Colección Jais-2-Family en HuggingFace](https://huggingface.co/collections/inceptionai/jais-2-family)
+- [Hugging Face - inception42/Jais-2-8B-Chat](https://huggingface.co/inception42/Jais-2-8B-Chat)
+- [Colección Jais-2-Family en Hugging Face](https://huggingface.co/collections/inceptionai/jais-2-family)
 - [Blog de Cerebras sobre Jais 2](https://www.cerebras.ai/blog/jais2)
 - [Página de Inception42](https://inception42.ai/)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/inceptionai/Jais-2-8B-Chat)

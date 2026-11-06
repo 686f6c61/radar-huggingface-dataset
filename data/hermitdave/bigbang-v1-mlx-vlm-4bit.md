@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar este modelo con alter
 - Inconsistencia en la model card: el ejemplo de código carga el identificador `mlx-community/BigBang-v1-MLX-VLM-4bit`, mientras que el repositorio consultado es `hermitdave/BigBang-v1-MLX-VLM-4bit`. Conviene ajustar el identificador al repositorio que se vaya a usar y verificar que el contenido coincide.
 - Conversión de terceros: la cuantización la realiza hermitdave a partir del modelo base de endless-frontier; no es una publicación oficial del autor original.
 - Dependencia de plataforma: los pesos en formato MLX solo se ejecutan con la pila MLX sobre Apple Silicon. No hay garantía de equivalencia numérica si se reconvierten a otros formatos.
-- Metadatos temporales llamativos: las fechas de creación y actualización que figuran en HuggingFace (10 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene verificarlas antes de citar el modelo.
+- Metadatos temporales llamativos: las fechas de creación y actualización que figuran en Hugging Face (10 de septiembre de 2026) son posteriores a la fecha habitual de consulta; conviene verificarlas antes de citar el modelo.
 - Licencia: Apache 2.0 permite uso comercial, pero la model card atribuye el copyright del modelo base original a Alibaba Cloud. Es recomendable revisar la licencia del repositorio base endless-frontier/BigBang-v1 antes de un despliegue en producción.
 - Contexto de 262K tokens: aunque declarado, no se documenta la degradación de calidad en función de la posición del contexto ni el coste real de memoria de la caché KV.
 

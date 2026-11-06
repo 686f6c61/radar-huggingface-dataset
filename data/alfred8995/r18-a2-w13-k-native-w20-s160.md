@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-native-w20-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 exactamente, segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos-medianos, adecuados para despliegue en hardware consumer o entornos con recursos limitados.
+El modelo `alfred8995/r18-a2-w13-k-native-w20-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 exactamente, segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos-medianos, adecuados para despliegue en hardware consumer o entornos con recursos limitados.
 
-La informacion publica disponible es muy escasa: la model card no incluye descripcion, pipeline declarado, idiomas soportados ni resultados de evaluacion. La unica etiqueta tecnica relevante es `sn38-nanochrono`, que sugiere una linea de trabajo experimental propia del autor, sin documentacion publica asociada. El repositorio esta marcado como restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para acceder a los pesos.
+La informacion publica disponible es muy escasa: la model card no incluye descripcion, pipeline declarado, idiomas soportados ni resultados de evaluacion. La unica etiqueta tecnica relevante es `sn38-nanochrono`, que sugiere una linea de trabajo experimental propia del autor, sin documentacion publica asociada. El repositorio esta marcado como restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para acceder a los pesos.
 
 A pesar de la falta de documentacion, el modelo resulta relevante para desarrolladores que quieran evaluar checkpoints experimentales de ~2B parametros con licencia permisiva (Apache 2.0) y pesos en safetensors, aunque su uso en produccion requeriria una validacion previa exhaustiva por parte del equipo que lo adopte.
 
@@ -23,7 +23,7 @@ A pesar de la falta de documentacion, el modelo resulta relevante para desarroll
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de HuggingFace. La etiqueta `sn38-nanochrono` apunta a una denominacion propia del autor que no coincide con familias de modelos conocidas (Llama, Qwen, Mistral, Phi, etc.), por lo que no es posible confirmar si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o una variante experimental.
+No se ha publicado informacion sobre la arquitectura interna del modelo en la model card ni en los metadatos de Hugging Face. La etiqueta `sn38-nanochrono` apunta a una denominacion propia del autor que no coincide con familias de modelos conocidas (Llama, Qwen, Mistral, Phi, etc.), por lo que no es posible confirmar si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o una variante experimental.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Cualquier afirmacion al respecto seria especulativa. El tamano del repositorio (14,4 GB) es coherente con pesos en precision completa o media para ~2B parametros, pero no aporta informacion adicional sobre el proceso de entrenamiento.
 
@@ -65,7 +65,7 @@ No hay informacion suficiente para establecer una comparativa rigurosa, ya que s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-native-w20-s160 | ~2,02B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-native-w20-s160 | ~2,02B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Gemma 2 2B | ~2,6B | 8K | Gemma license | Abierto |
 | Qwen2.5 1.5B | ~1,5B | 32K | Apache 2.0 | Abierto |
 | Phi-3-mini | ~3,8B | 4K-128K | MIT | Abierto |
@@ -78,12 +78,12 @@ La comparativa se limita al tamano y la licencia; no es posible comparar rendimi
 - Riesgo elevado de alucinacion y respuestas incoherentes: sin documentacion ni benchmarks, no se puede garantizar calidad en ninguna tarea.
 - Idiomas soportados desconocidos: no se puede asumir buen rendimiento en castellano ni en ningun otro idioma.
 - Longitud de contexto desconocida: limita el diseno de aplicaciones que dependan de ventanas largas.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a la evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a la evaluacion.
 - Licencia Apache 2.0: permite uso comercial, pero el adoptante asume toda la responsabilidad sobre el comportamiento del modelo en produccion.
 - Sin mantenimiento documentado: el repositorio se creo y actualizo en octubre de 2026 sin actividad posterior conocida, por lo que no hay garantia de soporte ni de correccion de errores.
 - Recomendacion: no desplegar en produccion sin una evaluacion interna previa que cubra calidad, sesgos, seguridad y comportamiento en el dominio objetivo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w20-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

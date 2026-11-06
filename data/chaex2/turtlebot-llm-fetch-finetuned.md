@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chaex2/turtlebot-llm-fetch-finetuned` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario `chaex2` bajo licencia MIT. El nombre sugiere que se trata de un modelo de lenguaje adaptado para tareas de recogida y manipulación de objetos en robots móviles de la familia TurtleBot, aunque no se ha publicado ninguna documentación técnica que confirme esta hipótesis. El repositorio tiene un tamaño de 0,5 GB y fue creado el 31 de agosto de 2026, pero no cuenta con descargas ni valoraciones de la comunidad.
+El modelo `chaex2/turtlebot-llm-fetch-finetuned` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario `chaex2` bajo licencia MIT. El nombre sugiere que se trata de un modelo de lenguaje adaptado para tareas de recogida y manipulación de objetos en robots móviles de la familia TurtleBot, aunque no se ha publicado ninguna documentación técnica que confirme esta hipótesis. El repositorio tiene un tamaño de 0,5 GB y fue creado el 31 de agosto de 2026, pero no cuenta con descargas ni valoraciones de la comunidad.
 
 La relevancia actual de este modelo es limitada debido a la ausencia total de información sobre su arquitectura, datos de entrenamiento, capacidades o rendimiento. No se ha publicado una model card descriptiva más allá de la licencia, y los resultados de búsqueda web no arrojan referencias adicionales. Por tanto, cualquier evaluación objetiva resulta imposible con los datos disponibles, y su uso en producción debería considerarse de alto riesgo sin una validación previa.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables de la misma categoría (fine-tu
 
 ## Enlaces
 
-- [HuggingFace - chaex2/turtlebot-llm-fetch-finetuned](https://huggingface.co/chaex2/turtlebot-llm-fetch-finetuned)
+- [Hugging Face - chaex2/turtlebot-llm-fetch-finetuned](https://huggingface.co/chaex2/turtlebot-llm-fetch-finetuned)

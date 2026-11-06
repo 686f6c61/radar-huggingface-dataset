@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hosty-ai-7b es un modelo de lenguaje conversacional de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) publicado por el usuario jotube26 en HuggingFace. Se trata de un fine-tuning del modelo base Qwen2.5-Coder-7B-Instruct, segun se desprende del nombre del archivo de pesos incluido (`Qwen2.5-Coder-7B-Instruct.Q4_K_M.gguf`), y ha sido convertido a formato GGUF mediante la libreria Unsloth para su uso con llama.cpp y Ollama.
+hosty-ai-7b es un modelo de lenguaje conversacional de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) publicado por el usuario jotube26 en Hugging Face. Se trata de un fine-tuning del modelo base Qwen2.5-Coder-7B-Instruct, segun se desprende del nombre del archivo de pesos incluido (`Qwen2.5-Coder-7B-Instruct.Q4_K_M.gguf`), y ha sido convertido a formato GGUF mediante la libreria Unsloth para su uso con llama.cpp y Ollama.
 
 El modelo se distribuye unicamente en cuantizacion Q4_K_M dentro de un repositorio de 4,7 GB, e incluye un Modelfile de Ollama para facilitar el despliegue. La model card es extremadamente escueta: no documenta el dataset de fine-tuning, el numero de tokens de entrenamiento, la licencia, los idiomas soportados ni resultados de evaluacion. La fecha de creacion indicada (2026-11-03) resulta anomala y podria deberse a un error en los metadatos del repositorio.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| hosty-ai-7b | 7,6 B | no disponible | no disponible | GGUF (Q4_K_M) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens (nativo) | Apache 2.0 (modelo base) | safetensors, GGUF | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente usado |
-| Llama-3.1-8B-Instruct | 8,0 B | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, ampliamente usado |
+| hosty-ai-7b | 7,6 B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens (nativo) | Apache 2.0 (modelo base) | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Llama-3.1-8B-Instruct | 8,0 B | 131.072 tokens | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, ampliamente usado |
 
 La comparativa se limita a parametros y disponibilidad: no hay datos de rendimiento del modelo evaluado que permitan contrastar calidad. Frente a sus alternativas, hosty-ai-7b carece de licencia explicita, documentacion tecnica y benchmarks, lo que reduce su atractivo para produccion.
 
@@ -86,7 +86,7 @@ La comparativa se limita a parametros y disponibilidad: no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jotube26/hosty-ai-7b
+- Hugging Face: https://huggingface.co/jotube26/hosty-ai-7b
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue con Modelfile): https://ollama.com

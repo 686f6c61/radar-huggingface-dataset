@@ -81,9 +81,9 @@ Solo se dispone de datos verificables para las builds de la misma familia. No ha
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GreenBitAI/GLM-5.3-Flash-4bit-paged | 9,48 mil millones declarados (ver advertencias) | no disponible | 27,1-38,3 tok/s en M3 Ultra 512 GB | MIT | HuggingFace, libreria gbx-lm |
-| pipenetwork/GLM-5.3-Flash-MLX-4bit (build fuente) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| zai-org/GLM-5.3-Flash (modelo original) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| GreenBitAI/GLM-5.3-Flash-4bit-paged | 9,48 mil millones declarados (ver advertencias) | no disponible | 27,1-38,3 tok/s en M3 Ultra 512 GB | MIT | Hugging Face, libreria gbx-lm |
+| pipenetwork/GLM-5.3-Flash-MLX-4bit (build fuente) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| zai-org/GLM-5.3-Flash (modelo original) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Diferencias conocidas frente a la build fuente: la version paginada separa los expertos en `experts.bin`, no copia bytes sino que los reubica en contenedores, y anade la cabeza MTP (3,90 GiB) que ninguna build publicada del modelo incluye.
 
@@ -104,7 +104,7 @@ Diferencias conocidas frente a la build fuente: la version paginada separa los e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GreenBitAI/GLM-5.3-Flash-4bit-paged
+- Repositorio Hugging Face: https://huggingface.co/GreenBitAI/GLM-5.3-Flash-4bit-paged
 - Modelo base declarado: pipenetwork/GLM-5.3-Flash-MLX-4bit (referenciado en la model card, sin URL directa proporcionada)
 - Modelo original del que se convierte la cabeza MTP: zai-org/GLM-5.3-Flash (referenciado en la model card, sin URL directa proporcionada)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

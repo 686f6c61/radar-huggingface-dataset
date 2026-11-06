@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h004.opsd-scaleswe.step_8
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h004.opsd-scaleswe.step_8
 - GitHub Agentic-OPSD: https://github.com/EcthelionLiu/Agentic-OPSD
 - Paper AgentOPSD (arXiv): https://arxiv.org/html/2608.05987
 - PDF del paper: https://arxiv.org/pdf/2608.05987

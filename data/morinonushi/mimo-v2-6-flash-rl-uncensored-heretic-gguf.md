@@ -6,7 +6,7 @@ MiMo-V2.6-Flash-RL Uncensored Heretic es una version "abliterated" (decensurada)
 
 La relevancia de esta ficha es doble. Por un lado, documenta una tecnica concreta (heretic-gguf) que traslada al ecosistema GGUF/llama.cpp una metodologia de ablacion optimizada con Optuna que hasta ahora se aplicaba sobre pesos completos o adaptadores PEFT. Por otro, advierte de que el resultado es un modelo con salvaguardas reducidas de forma deliberada: la propia model card indica tasas de rechazo del 3,57 % frente al 95,71 % del modelo base, medidas sobre 140 peticiones daninas, y prohibe explicitamente su uso en produccion o en servicios multiusuario.
 
-El repositorio tiene un tamano declarado de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, por lo que los pesos pueden no estar efectivamente subidos o accesibles. Todos los datos tecnicos de esta ficha proceden de la model card del autor y de los metadatos de HuggingFace.
+El repositorio tiene un tamano declarado de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, por lo que los pesos pueden no estar efectivamente subidos o accesibles. Todos los datos tecnicos de esta ficha proceden de la model card del autor y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ La unica comparacion con numeros disponible es la del modelo base frente a la ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - GGUF MXFP4 de referencia del base: https://huggingface.co/ggml-org/MiMo-V2.6-Flash-RL-GGUF
 - Variante LoRA de la ablacion: https://huggingface.co/MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-LoRA-GGUF

@@ -25,7 +25,7 @@ Su relevancia es eminentemente practica: actua como filtro de falsos positivos e
 | Objetivo de entrenamiento | `binary:logistic`, `nrounds = 100`, `nthread = 10` |
 | Organismo de entrenamiento | *Arabidopsis thaliana* (datos DAP-seq de O'Malley 2016) |
 | Software asociado | MotifAI (`motifai`) |
-| Tamano del repositorio | 0.0 GB (segun los metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion / ultima actualizacion | 2026-09-29 |
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lwstrickland/arabidopsis-motifai-v1.0-xgbc
+- Modelo en Hugging Face: https://huggingface.co/lwstrickland/arabidopsis-motifai-v1.0-xgbc
 - Software MotifAI (repositorio del autor): https://github.com/lwstrickland/Motif_AI
 - O'Malley et al. 2016, datos de DAP-seq en *Arabidopsis thaliana*, citado en la model card: enlace no disponible
 - Documentacion de FIMO (herramienta de escaneo de motivos citada): no disponible en la informacion proporcionada

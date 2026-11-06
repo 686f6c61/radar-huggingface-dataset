@@ -82,7 +82,7 @@ No se dispone en la informacion proporcionada de modelos comparables con datos v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charlie88agent/rtttl-generative-transformer
+- Modelo en Hugging Face: https://huggingface.co/charlie88agent/rtttl-generative-transformer
 - Repositorio GitHub (entrenamiento, preparación de datos, líneas base, evaluación y renderizado de audio): https://github.com/speccy88/rtttl-generative-transformer
 - Página de descargas RTTTL de PICAXE (origen del corpus): https://picaxe.com/rtttl-ringtones-for-tune-command/
 - Instrucciones de versiones de PyTorch: https://pytorch.org/get-started/previous-versions/

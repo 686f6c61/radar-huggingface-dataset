@@ -104,7 +104,7 @@ Frente a ggml-org IQ4_NL (102 GB) el ahorro es de 41,83 GB; frente al unico tern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B
 - Discusiones del modelo: https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B/discussions
 - Repositorio GitHub con scripts de construccion y documentacion: https://github.com/sky-is-green/scion
 - Fork del runtime llama.cpp (rama `qwen4exp-proto`): https://github.com/sky-is-green/prism-ml-llama.cpp/tree/qwen4exp-proto

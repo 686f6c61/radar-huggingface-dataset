@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada para inferencia: con pesos en bf16/fp16, el modelo ocupa aproximadamente 8.6 GB; con cuantización de 4 bits, alrededor de 2.5 GB, más el overhead de activaciones y del contexto. No hay datos oficiales de consumo de memoria.
 - GPU recomendadas: una RTX 4090 (24 GB) o una A100 40 GB son suficientes para ejecutar el modelo en bf16 con contexto largo; en GPUs de consumo, una RTX 3090/4090 puede alojar el modelo en cuantización de 4 bits o en fp16 con secuencias moderadas.
-- Opciones de despliegue: al ser un modelo transformers con safetensors, puede servirse con vLLM, TGI o directamente con el pipeline de HuggingFace. Para despliegue en CPU o en GPUs con menos VRAM, se puede convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporciona una cuantización oficial.
+- Opciones de despliegue: al ser un modelo transformers con safetensors, puede servirse con vLLM, TGI o directamente con el pipeline de Hugging Face. Para despliegue en CPU o en GPUs con menos VRAM, se puede convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporciona una cuantización oficial.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| con-cord/GRPO-MOD3-no-ref | 4.300.079.472 | no disponible | no disponible | HuggingFace |
-| con-cord/Mod3-no-ref | no disponible | no disponible | no disponible | HuggingFace |
-| con-cord/std-grpo-no-ref | no disponible | no disponible | no disponible | HuggingFace |
+| con-cord/GRPO-MOD3-no-ref | 4.300.079.472 | no disponible | no disponible | Hugging Face |
+| con-cord/Mod3-no-ref | no disponible | no disponible | no disponible | Hugging Face |
+| con-cord/std-grpo-no-ref | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura base Gemma-3-4B, según la información disponible. No se dispone de datos públicos de benchmarks para ninguno de ellos.
 
@@ -76,6 +76,6 @@ Los tres modelos comparten la misma arquitectura base Gemma-3-4B, según la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/con-cord/GRPO-MOD3-no-ref
+- Hugging Face: https://huggingface.co/con-cord/GRPO-MOD3-no-ref
 - Modelo relacionado con-cord/Mod3-no-ref: https://huggingface.co/con-cord/Mod3-no-ref
 - Modelo relacionado con-cord/std-grpo-no-ref: https://huggingface.co/con-cord/std-grpo-no-ref

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `litert-community/gated-test` es un repositorio alojado en HuggingFace bajo la organizacion LiteRT Community, la comunidad que mantiene LiteRT (anteriormente TensorFlow Lite), el framework de Google para despliegue de modelos de machine learning y GenAI en dispositivos edge. El nombre del repositorio sugiere que se trata de un modelo de prueba diseñado para validar los mecanismos de acceso restringido (gated) de HuggingFace, no un modelo funcional con capacidades de inferencia.
+El modelo `litert-community/gated-test` es un repositorio alojado en Hugging Face bajo la organizacion LiteRT Community, la comunidad que mantiene LiteRT (anteriormente TensorFlow Lite), el framework de Google para despliegue de modelos de machine learning y GenAI en dispositivos edge. El nombre del repositorio sugiere que se trata de un modelo de prueba diseñado para validar los mecanismos de acceso restringido (gated) de Hugging Face, no un modelo funcional con capacidades de inferencia.
 
-No se dispone de informacion tecnica sobre arquitectura, parametros, contexto o capacidades del modelo. El repositorio fue creado el 2 de septiembre de 2026 y no registra descargas ni likes. El acceso esta restringido y requiere aceptar condiciones en HuggingFace. Dado que el identificador contiene "gated-test", es probable que su proposito sea exclusivamente probar flujos de autorizacion y no ofrecer un modelo utilizable.
+No se dispone de informacion tecnica sobre arquitectura, parametros, contexto o capacidades del modelo. El repositorio fue creado el 2 de septiembre de 2026 y no registra descargas ni likes. El acceso esta restringido y requiere aceptar condiciones en Hugging Face. Dado que el identificador contiene "gated-test", es probable que su proposito sea exclusivamente probar flujos de autorizacion y no ofrecer un modelo utilizable.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ No se dispone de informacion tecnica sobre arquitectura, parametros, contexto o 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas. El repositorio no contiene documentacion tecnica ni enlaces a papers o informes de entrenamiento. Dado el nombre del repositorio, es plausible que no exista un modelo subyacente real y que el unico proposito sea probar el flujo de acceso gated de HuggingFace.
+No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas. El repositorio no contiene documentacion tecnica ni enlaces a papers o informes de entrenamiento. Dado el nombre del repositorio, es plausible que no exista un modelo subyacente real y que el unico proposito sea probar el flujo de acceso gated de Hugging Face.
 
 ## Capacidades
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre capacidades del modelo. No hay evidencia de q
 
 Dado que no hay informacion sobre capacidades reales del modelo, no es posible enumerar casos de uso practicos. El unico escenario plausible es:
 
-- Prueba de flujos de acceso gated en HuggingFace: el repositorio puede servir para validar que el mecanismo de autorizacion funciona correctamente antes de publicar modelos reales con acceso restringido.
+- Prueba de flujos de acceso gated en Hugging Face: el repositorio puede servir para validar que el mecanismo de autorizacion funciona correctamente antes de publicar modelos reales con acceso restringido.
 - Evaluacion de integraciones con LiteRT: podria utilizarse como artefacto de prueba para verificar que las herramientas de LiteRT gestionan correctamente modelos con acceso restringido.
 
 ## Benchmarks y rendimiento
@@ -50,13 +50,13 @@ No disponible. No existe informacion suficiente para comparar este repositorio c
 
 - No se ha confirmado que el repositorio contenga un modelo funcional. El nombre "gated-test" sugiere que es un artefacto de prueba.
 - No hay informacion sobre sesgos, alucinaciones o limitaciones de contexto o idioma.
-- El acceso esta restringido y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso.
+- El acceso esta restringido y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso.
 - La licencia apache-2.0 permite uso comercial, pero al no existir un modelo real, esta licencia es irrelevante en la practica.
 - No se recomienda utilizar este repositorio en entornos de produccion sin confirmar previamente que contiene un modelo valido.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/gated-test
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/gated-test
 - Organizacion LiteRT Community: https://huggingface.co/litert-community
 - Modelo relacionado LFM2.5-230M: https://huggingface.co/litert-community/LFM2.5-230M
 - Documentacion de LiteRT: https://developers.google.com/edge/litert

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moody-Moss-Mix es un repositorio de pesos publicado en HuggingFace por el usuario funnycat1 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor no contiene ninguna descripción técnica: el README se limita al bloque de metadatos de licencia, sin indicar arquitectura, tamaño, contexto, idiomas ni datos de entrenamiento. El repositorio ocupa 5,1 GB y no registra descargas ni valoraciones, lo que sugiere una publicación reciente y sin validación por parte de la comunidad (las fechas de creación y actualización son del 23 de octubre de 2026).
+Moody-Moss-Mix es un repositorio de pesos publicado en Hugging Face por el usuario funnycat1 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor no contiene ninguna descripción técnica: el README se limita al bloque de metadatos de licencia, sin indicar arquitectura, tamaño, contexto, idiomas ni datos de entrenamiento. El repositorio ocupa 5,1 GB y no registra descargas ni valoraciones, lo que sugiere una publicación reciente y sin validación por parte de la comunidad (las fechas de creación y actualización son del 23 de octubre de 2026).
 
 La información disponible no permite determinar qué problema resuelve el modelo ni su relevancia técnica. El nombre "Mix" es compatible con la convención habitual de los *model merges* (combinaciones de pesos de dos o más modelos mediante técnicas como SLERP, TIES o DARE), pero esto es una hipótesis basada en la nomenclatura y no un dato confirmado por el autor.
 
@@ -85,5 +85,5 @@ No es posible establecer una comparativa rigurosa: sin arquitectura, número de 
 
 ## Enlaces
 
-- [HuggingFace: funnycat1/Moody-Moss-Mix](https://huggingface.co/funnycat1/Moody-Moss-Mix)
+- [Hugging Face: funnycat1/Moody-Moss-Mix](https://huggingface.co/funnycat1/Moody-Moss-Mix)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. El único resultado devuelto era un OCR de un anuario escolar sin relación alguna con el modelo.

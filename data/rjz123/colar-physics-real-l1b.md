@@ -79,6 +79,6 @@ La comparativa directa con otros modelos de razonamiento latente no esta disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-physics-real-l1b
+- Hugging Face: https://huggingface.co/rjz123/colar-physics-real-l1b
 - Articulo de referencia de CoLaR (arXiv): https://arxiv.org/pdf/2505.16552
 - Perfil de GitHub del autor: https://github.com/rjz123

@@ -89,8 +89,8 @@ No se dispone en la información proporcionada de datos de precisión ni de espe
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet B0 (fastforks) | no disponible | no aplica | 0,87 ms/imagen (kernels, 224x224) | BSD-3-Clause (código); pesos no declarados | HuggingFace (model card) + PyTorch Vision |
-| EfficientNet B4 (fastforks) | no disponible | no aplica | 2,19 ms/imagen (kernels, 380x380) | BSD-3-Clause (código); pesos no declarados | HuggingFace (model card) + PyTorch Vision |
+| EfficientNet B0 (fastforks) | no disponible | no aplica | 0,87 ms/imagen (kernels, 224x224) | BSD-3-Clause (código); pesos no declarados | Hugging Face (model card) + PyTorch Vision |
+| EfficientNet B4 (fastforks) | no disponible | no aplica | 2,19 ms/imagen (kernels, 380x380) | BSD-3-Clause (código); pesos no declarados | Hugging Face (model card) + PyTorch Vision |
 | Alternativas (ResNet, MobileNet, ViT) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de datos de precisión ni de espe
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/efficientnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/efficientnet
 - Repositorio del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Documentación de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

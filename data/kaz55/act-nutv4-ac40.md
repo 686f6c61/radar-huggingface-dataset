@@ -78,11 +78,11 @@ Los datos de esta tabla proceden de conocimiento general sobre el ecosistema LeR
 
 | Modelo | Parametros | Contexto / chunk | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-nutv4-ac40 (este modelo) | 51,6 M | chunk_size 40 | estado 26 + 2x RGB + 2x GelSight | no disponible | HuggingFace, 0 descargas |
-| act-nutv4-ac60 (modelo hermano) | no disponible | chunk_size 60 | mismas que ac40 | no disponible | HuggingFace |
+| act-nutv4-ac40 (este modelo) | 51,6 M | chunk_size 40 | estado 26 + 2x RGB + 2x GelSight | no disponible | Hugging Face, 0 descargas |
+| act-nutv4-ac60 (modelo hermano) | no disponible | chunk_size 60 | mismas que ac40 | no disponible | Hugging Face |
 | ACT original (ALOHA) | no disponible | chunk de acciones | RGB + estado propioceptivo | no disponible | paper y código públicos |
 | Diffusion Policy | no disponible | horizonte de acciones | RGB + estado | no disponible | código público |
-| SmolVLA (LeRobot) | no disponible | política VLA | RGB + instrucción en lenguaje | no disponible | HuggingFace |
+| SmolVLA (LeRobot) | no disponible | política VLA | RGB + instrucción en lenguaje | no disponible | Hugging Face |
 
 La diferencia más relevante de este modelo frente a alternativas VLA como SmolVLA o pi0 es que no acepta instrucciones en lenguaje natural: la tarea está implícita en el dataset de demostraciones. Su ventaja específica es la doble realimentación táctil GelSight a 500x375, poco frecuente en políticas publicadas abiertamente.
 
@@ -101,6 +101,6 @@ La diferencia más relevante de este modelo frente a alternativas VLA como SmolV
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-nutv4-ac40
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-nutv4-ac40
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_nutv4
 - La búsqueda web realizada no devolvió resultados relevantes: los únicos enlaces recuperados corresponden a páginas de soporte de Microsoft sobre configuración de monitores en Windows y no guardan relación con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a act-nutv4-ac40.

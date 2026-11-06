@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1` es un finetune del modelo `Qwen2.5-7B-Instruct` publicado en HuggingFace por el usuario `wz7475`. El nombre del repositorio sugiere un ajuste orientado al dominio legal (componente `katcher-legal`), aunque la documentación disponible no lo confirma. El modelo se ha entrenado con la librería Unsloth, como indica la etiqueta `unsloth`, y los pesos se distribuyen en formato `safetensors`. El repositorio tiene un tamaño de 0.8 GB, lo que podría indicar que contiene un adaptador LoRA en lugar de un modelo completo, aunque no es posible confirmarlo con la información proporcionada.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1` es un finetune del modelo `Qwen2.5-7B-Instruct` publicado en Hugging Face por el usuario `wz7475`. El nombre del repositorio sugiere un ajuste orientado al dominio legal (componente `katcher-legal`), aunque la documentación disponible no lo confirma. El modelo se ha entrenado con la librería Unsloth, como indica la etiqueta `unsloth`, y los pesos se distribuyen en formato `safetensors`. El repositorio tiene un tamaño de 0.8 GB, lo que podría indicar que contiene un adaptador LoRA en lugar de un modelo completo, aunque no es posible confirmarlo con la información proporcionada.
 
-La ficha de HuggingFace es una plantilla autogenerada sin contenido sustancial: casi todos los campos aparecen como `[More Information Needed]`. No se dispone de información sobre datos de entrenamiento, licencia, idiomas, benchmarks ni capacidades específicas. El modelo no tiene descargas ni likes en el momento de la consulta. Dado que se basa en `Qwen2.5-7B-Instruct`, es razonable esperar que herede las capacidades generales de este modelo base, pero no hay evidencia publicada que lo respalde.
+La ficha de Hugging Face es una plantilla autogenerada sin contenido sustancial: casi todos los campos aparecen como `[More Information Needed]`. No se dispone de información sobre datos de entrenamiento, licencia, idiomas, benchmarks ni capacidades específicas. El modelo no tiene descargas ni likes en el momento de la consulta. Dado que se basa en `Qwen2.5-7B-Instruct`, es razonable esperar que herede las capacidades generales de este modelo base, pero no hay evidencia publicada que lo respalde.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El tamaño del repositorio (0.8 GB) sugiere que podria tratarse de un adaptador LoRA, en cuyo caso la inferencia requeriria cargar el modelo base `Qwen2.5-7B-Instruct` (aproximadamente 14 GB en bfloat16) mas el adaptador. No se puede confirmar.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Si se confirma que es un adaptador LoRA, seria necesario un modelo base de 7B, que cabe en GPUs de consumo con cuantizacion (por ejemplo, RTX 4090 con 24 GB de VRAM).
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, pero no se especifica el runtime (vLLM, llama.cpp, Ollama, TGI, etc.).
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, pero no se especifica el runtime (vLLM, llama.cpp, Ollama, TGI, etc.).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se han encontrado datos publicados sobre sus parametros, contexto, rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1
 - Modelo similar del mismo autor: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Modelo similar del mismo autor: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave

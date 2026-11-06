@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8
+- Modelo en Hugging Face: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8
 - Builds GGUF para llama.cpp: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8-GGUF
 - Variante LoRA en GGUF: https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-lora-GGUF
 - Pipeline de entrenamiento: https://github.com/RaihanulHaque/hishab

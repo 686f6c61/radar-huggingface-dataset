@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Santiagofajardo/proyecto` es una publicacion alojada en HuggingFace bajo la autoria del usuario Santiagofajardo. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proposito ni de su proceso de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 2026-09-20, con apenas un segundo de diferencia entre ambos eventos, lo que sugiere una subida inicial sin contenido tecnico posterior.
+El repositorio `Santiagofajardo/proyecto` es una publicacion alojada en Hugging Face bajo la autoria del usuario Santiagofajardo. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: apache-2.0`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proposito ni de su proceso de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 2026-09-20, con apenas un segundo de diferencia entre ambos eventos, lo que sugiere una subida inicial sin contenido tecnico posterior.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado informacion sobre su tamano, arquitectura, datos de entrenamiento o capacidades. Los metadatos disponibles se limitan a la licencia Apache 2.0 y a la etiqueta de region `us`; no hay pipeline declarado, ni idiomas soportados, ni pesos documentados.
 
@@ -69,7 +69,7 @@ No disponible. Al no conocerse el tamano, la categoria ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Santiagofajardo/proyecto
+- Repositorio en Hugging Face: https://huggingface.co/Santiagofajardo/proyecto
 - Paper, blog o repositorio de codigo: no disponible.
 - Demos o espacios asociados: no disponible.
 - Resultados de busqueda web relevantes: no disponible (las busquedas realizadas no devolvieron ningun resultado relacionado con el modelo).

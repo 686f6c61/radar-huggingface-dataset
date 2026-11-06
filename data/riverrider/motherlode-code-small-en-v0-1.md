@@ -120,10 +120,10 @@ La comparación con gte-modernbert-base solo está documentada como objetivo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RiverRider/motherlode-code-small-en-v0.1
+- Modelo en Hugging Face: https://huggingface.co/RiverRider/motherlode-code-small-en-v0.1
 - Conjunto de evidencia por instancia: https://huggingface.co/datasets/RiverRider/motherlode-code-small-en-v0.1-evidence
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Referencia arXiv incluida en las etiquetas del modelo: https://arxiv.org/abs/2407.02883
-- Autor en HuggingFace: https://huggingface.co/RiverRider
+- Autor en Hugging Face: https://huggingface.co/RiverRider
 - Referencia de fidelidad GGUF citada en la model card: https://huggingface.co/CompendiumLabs/bge-small-en-v1.5-gguf
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a otros proyectos del mismo autor (zooL4nD3r-v0.1), a agentes de código no relacionados (smallcode, MiMo Code) y a contenido sin relación con el modelo.

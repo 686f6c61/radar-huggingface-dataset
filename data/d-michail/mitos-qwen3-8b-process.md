@@ -85,9 +85,9 @@ No se dispone de datos publicados que comparen este modelo con otras alternativa
 
 | Modelo | Parametros | Contexto de ajuste | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-8B-Process | 8,19 B | 4.096 tokens | CC BY-SA 4.0 | Pesos fusionados en bfloat16 en HuggingFace | Sin evaluacion propia (entrenado con todos los procedimientos) |
+| Mitos-Qwen3-8B-Process | 8,19 B | 4.096 tokens | CC BY-SA 4.0 | Pesos fusionados en bfloat16 en Hugging Face | Sin evaluacion propia (entrenado con todos los procedimientos) |
 | d-michail/Mitos-Qwen3-8B-Process-LoRA (carpeta holdout) | 8,19 B (adaptadores) | 4.096 tokens | CC BY-SA 4.0 | Adaptadores LoRA | Recall de hechos clave 0,554 en la mejor configuracion RAG |
-| Qwen/Qwen3-8B | 8,19 B | 32.768 tokens nativos en el modelo base | Apache-2.0 | Pesos completos en HuggingFace | Recall de hechos clave 0,442 en la misma configuracion RAG (sin ajuste) |
+| Qwen/Qwen3-8B | 8,19 B | 32.768 tokens nativos en el modelo base | Apache-2.0 | Pesos completos en Hugging Face | Recall de hechos clave 0,442 en la misma configuracion RAG (sin ajuste) |
 
 No hay informacion disponible sobre modelos comparables especificos de dominio administrativo griego ni sobre alternativas multilingues evaluadas en el mismo benchmark.
 
@@ -109,7 +109,7 @@ No hay informacion disponible sobre modelos comparables especificos de dominio a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process
 - Modelo companero con adaptadores LoRA y particion holdout: https://huggingface.co/d-michail/Mitos-Qwen3-8B-Process-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

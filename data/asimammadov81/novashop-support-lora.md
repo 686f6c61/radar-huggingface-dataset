@@ -2,9 +2,9 @@
 
 ## Resumen
 
-novashop-support-lora es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario asimammadov81, pensado para tareas de soporte conversacional en el dominio de una tienda llamada "Novashop". No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (formato PEFT/safetensors, en torno a 0,2 GB) que se debe cargar sobre su modelo base: unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, una version del Llama 3.1 8B Instruct cuantizada a 4 bits y preparada por Unsloth para entrenamiento eficiente.
+novashop-support-lora es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario asimammadov81, pensado para tareas de soporte conversacional en el dominio de una tienda llamada "Novashop". No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (formato PEFT/safetensors, en torno a 0,2 GB) que se debe cargar sobre su modelo base: unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, una version del Llama 3.1 8B Instruct cuantizada a 4 bits y preparada por Unsloth para entrenamiento eficiente.
 
-El interes de esta publicacion es limitado y muy circunscrito: el repositorio no incluye model card real (la tarjeta es la plantilla generada por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]"), acumula cero descargas y cero "likes", y no declara licencia, idiomas ni datos de entrenamiento. Se desconoce por completo el dataset utilizado, el numero de pasos, los hiperparametros y cualquier evaluacion.
+El interes de esta publicacion es limitado y muy circunscrito: el repositorio no incluye model card real (la tarjeta es la plantilla generada por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]"), acumula cero descargas y cero "likes", y no declara licencia, idiomas ni datos de entrenamiento. Se desconoce por completo el dataset utilizado, el numero de pasos, los hiperparametros y cualquier evaluacion.
 
 Por tanto, esta ficha debe leerse como un inventario de lo poco que se puede afirmar con certeza: se trata de un adaptador LoRA para un caso de uso vertical (atencion al cliente de una tienda), construido con el stack Unsloth + TRL + PEFT sobre Llama 3.1 8B Instruct. Cualquier uso en produccion requeriria auditoria propia del adaptador, verificacion de la licencia del modelo base y una evaluacion independiente, ya que el autor no aporta ninguna.
 
@@ -91,7 +91,7 @@ Se observan al menos tres repositorios con el mismo nombre "novashop-support-lor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asimammadov81/novashop-support-lora
+- Repositorio Hugging Face: https://huggingface.co/asimammadov81/novashop-support-lora
 - Modelo base: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Paper de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental (Lacoste et al. 2019): https://mlco2.github.io/impact

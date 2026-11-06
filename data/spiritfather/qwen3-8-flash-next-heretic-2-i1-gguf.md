@@ -85,7 +85,7 @@ La diferencia principal con el modelo base es la eliminacion de rechazos mediant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spiritfather/Qwen3.8-Flash-Next-heretic-2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/spiritfather/Qwen3.8-Flash-Next-heretic-2-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

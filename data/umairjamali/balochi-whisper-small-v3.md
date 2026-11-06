@@ -6,7 +6,7 @@ Balochi Whisper-small v3 es un ajuste fino del modelo Whisper-small de OpenAI re
 
 El problema que aborda es la practica ausencia de soporte ASR para balochi en los sistemas multilingues mainstream: Whisper no incluye el balochi entre sus 99 idiomas, por lo que el autor fuerza la decodificacion con el token de idioma urdu, la lengua Perso-Arabe soportada mas cercana. El corpus de entrenamiento es muy reducido: 4.781 enunciados y unas 3,6 horas de audio, repartidos entre dos hablantes (suleimani y makrani/sureno).
 
-Su relevancia actual es la de un experimento de adaptacion de bajo coste a una lengua de bajos recursos. Los resultados en el conjunto de test reservado (240 clips) son WER 54,42% / CER 26,73% global, con mejor comportamiento en el dialecto makrani (45,60% / 19,14%) que en el suleimani (62,35% / 33,23%). El modelo no declara licencia, idiomas soportados formales ni pipeline en HuggingFace.
+Su relevancia actual es la de un experimento de adaptacion de bajo coste a una lengua de bajos recursos. Los resultados en el conjunto de test reservado (240 clips) son WER 54,42% / CER 26,73% global, con mejor comportamiento en el dialecto makrani (45,60% / 19,14%) que en el suleimani (62,35% / 33,23%). El modelo no declara licencia, idiomas soportados formales ni pipeline en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El conjunto de entrenamiento consta de 4.781 enunciados y aproximadamente 3,6 ho
 
 - Reconocimiento automatico del habla (ASR) en balochi para los dos dialectos vistos durante el entrenamiento (suleimani y makrani).
 - Transcripcion de clips cortos y claros, segun el propio autor el escenario donde el modelo rinde mejor.
-- Inferencia compatible con el pipeline estandar de Whisper en HuggingFace Transformers (`WhisperForConditionalGeneration` y `WhisperProcessor`).
+- Inferencia compatible con el pipeline estandar de Whisper en Hugging Face Transformers (`WhisperForConditionalGeneration` y `WhisperProcessor`).
 - No se declara soporte de tool calling, function calling ni agentes.
 - No se declara capacidad multilingue mas alla del balochi; el urdu se usa solo como token de prompt, no como idioma de salida validado.
 - No se declaran capacidades de vision, audio distinto de ASR, ni modo de razonamiento explicito.
@@ -63,7 +63,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada para inferencia: en fp32, alrededor de 1 GB de pesos; en fp16, en torno a 0,5 GB. El repositorio ocupa 1,0 GB.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para lotes pequenos.
 - GPU recomendadas para produccion con throughput alto: A100, H100 o L4 si se sirven muchos flujos concurrentes, aunque para una carga moderada sobra cualquier GPU reciente.
-- Opciones de despliegue: HuggingFace Transformers (referencia incluida en la model card), y por ser un modelo Whisper-small, tambien infraestructuras compatibles con Whisper como vLLM, TGI o implementaciones basadas en CTranslate2; llama.cpp y Ollama no aplican al no ser un modelo de texto generativo puro.
+- Opciones de despliegue: Hugging Face Transformers (referencia incluida en la model card), y por ser un modelo Whisper-small, tambien infraestructuras compatibles con Whisper como vLLM, TGI o implementaciones basadas en CTranslate2; llama.cpp y Ollama no aplican al no ser un modelo de texto generativo puro.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ Los modelos comparables son el propio Whisper-small de OpenAI, del que deriva, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umairjamali/balochi-whisper-small-v3
+- Modelo en Hugging Face: https://huggingface.co/umairjamali/balochi-whisper-small-v3
 - Repositorio de referencia de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: Radford et al., "Robust Speech Recognition via Large-Scale Weak Supervision" (2022), https://arxiv.org/abs/2212.04356

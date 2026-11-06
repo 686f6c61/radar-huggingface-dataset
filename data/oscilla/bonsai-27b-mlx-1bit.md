@@ -6,7 +6,7 @@ Bonsai 27B (repositorio `Oscilla/Bonsai-27B-mlx-1bit`) es una compilacion de pes
 
 El modelo conserva el esqueleto de Qwen3.6-27B: atencion hibrida con aproximadamente un 75% de atencion lineal y un 25% de atencion completa, MLP SwiGLU, RoPE y RMSNorm. Esa base permite mantener una ventana de contexto de 262.144 tokens en dispositivo, ya que solo 16 de las 64 capas generan cache de atencion completa. El autor publica kernels propios de atencion hibrida de 1 bit para Apple MLX (Python y Swift) y para CUDA, de forma que los pesos empaquetados se consumen directamente sin expandirse a FP16.
 
-La relevancia del lanzamiento esta en el regimen de compresion: segun la model card, retiene el 89,5% de la inteligencia del modelo FP16 en 15 benchmarks en modo pensamiento (media 76,11), con 91,66 en matematicas y 81,88 en codigo, y alcanza unas 11 tok/s en un iPhone 17 Pro Max. Se distribuye bajo licencia Apache 2.0 e incluye un borrador de decodificacion especulativa (DSpark) entrenado contra el propio modelo objetivo. Conviene senalar que el repositorio de HuggingFace figura a nombre de Oscilla mientras la model card apunta a la infraestructura de Prism ML, y que no hay metricas individuales de benchmarks publicadas en la informacion disponible.
+La relevancia del lanzamiento esta en el regimen de compresion: segun la model card, retiene el 89,5% de la inteligencia del modelo FP16 en 15 benchmarks en modo pensamiento (media 76,11), con 91,66 en matematicas y 81,88 en codigo, y alcanza unas 11 tok/s en un iPhone 17 Pro Max. Se distribuye bajo licencia Apache 2.0 e incluye un borrador de decodificacion especulativa (DSpark) entrenado contra el propio modelo objetivo. Conviene senalar que el repositorio de Hugging Face figura a nombre de Oscilla mientras la model card apunta a la infraestructura de Prism ML, y que no hay metricas individuales de benchmarks publicadas en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ No se dispone de datos comparativos con otras familias de modelos de tamano simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Bonsai-27B-mlx-1bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Bonsai-27B-mlx-1bit
 - Modelo ternario companero: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com
 - Repositorio de demo, servicio y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo

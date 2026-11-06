@@ -99,7 +99,7 @@ Otras conversiones con la misma receta VQ mencionadas por el autor (Beam-1.0, De
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-VQ-GGUF
+- Repo de Hugging Face: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-VQ-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Predecesor (Mixed-Quant GGUF): https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-Mixed-Quant-GGUF
 - Variante UNCENSORED con la misma receta: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-UNCENSORED-VQ-GGUF

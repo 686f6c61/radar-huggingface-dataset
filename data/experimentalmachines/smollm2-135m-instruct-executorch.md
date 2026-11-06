@@ -116,12 +116,12 @@ Respecto al modelo de origen, la diferencia principal es el formato y el destino
 - La lista de idiomas soportados no esta documentada en el repositorio; el comportamiento multilingue no puede darse por garantizado.
 - La licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar tambien la licencia y las condiciones del modelo base SmolLM2-135M-Instruct del que deriva.
 - El repositorio ocupa 3,3 GB, muy por encima del tamano de cada binario individual, por lo que conviene descargar solo los ficheros necesarios.
-- El modelo tiene 108 descargas y 0 likes en HuggingFace, lo que indica una validacion muy limitada por parte de la comunidad.
+- El modelo tiene 108 descargas y 0 likes en Hugging Face, lo que indica una validacion muy limitada por parte de la comunidad.
 - No se ofrecen garantias de precision en produccion: cualquier integracion deberia incluir filtros, validacion de salida y expectativas de calidad ajustadas a la escala del modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/experimentalmachines/SmolLM2-135M-Instruct-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/SmolLM2-135M-Instruct-ExecuTorch
 - Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Aplicacion openweights para Android: https://github.com/alpharomercoma/openweights
 - Runtime ExecuTorch (documentacion y repositorio): https://github.com/pytorch/executorch

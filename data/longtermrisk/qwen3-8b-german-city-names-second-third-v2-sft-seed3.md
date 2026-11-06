@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3)
+- [Hugging Face - longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

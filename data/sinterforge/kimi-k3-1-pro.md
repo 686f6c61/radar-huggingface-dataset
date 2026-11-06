@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de tipo agéntico, publicado con pesos abiertos por Moonshot AI (el repositorio de HuggingFace analizado, `SinterForge/Kimi-K3.1-Pro`, es una réplica/derivado del original de Moonshot AI). Se trata del primer modelo de la serie K3.1 y el modelo de clase 3T más capaz de la compañía hasta la fecha, según su model card. Está post-entrenado a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios downstream.
+Kimi K3.1 Pro es un modelo de lenguaje multimodal nativo y de tipo agéntico, publicado con pesos abiertos por Moonshot AI (el repositorio de Hugging Face analizado, `SinterForge/Kimi-K3.1-Pro`, es una réplica/derivado del original de Moonshot AI). Se trata del primer modelo de la serie K3.1 y el modelo de clase 3T más capaz de la compañía hasta la fecha, según su model card. Está post-entrenado a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios downstream.
 
 La arquitectura es un transformer de tipo Mixture-of-Experts (MoE) con 2,8 billones de parámetros totales y 104.000 millones de parámetros activos por token, distribuidos en 93 capas (1 densa) y 896 expertos (16 seleccionados por token más 2 expertos compartidos). Incorpora una composición de atención híbrida de 69 capas KDA (Kimi Delta Attention) y 24 capas Gated DSA (DeepSeek Sparse Attention), lo que le permite sostener una ventana de contexto de 1 millón de tokens.
 
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SinterForge/Kimi-K3.1-Pro
+- Repositorio en Hugging Face: https://huggingface.co/SinterForge/Kimi-K3.1-Pro
 - Repositorio original de Moonshot AI: https://huggingface.co/moonshotai
 - Chat: https://www.kimi.ai
 - Página de Moonshot AI: https://www.moonshot.ai

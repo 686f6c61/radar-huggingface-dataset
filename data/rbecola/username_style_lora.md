@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rbecola/username_style_LoRA es un adaptador LoRA (Low-Rank Adaptation) de DreamBooth para el modelo de difusión text-to-image stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo base: se trata de un conjunto de pesos adicionales que se cargan sobre SDXL 1.0 para enseñarle un concepto o estilo concreto, activado mediante la palabra clave (instance prompt) `username_style_LoRA`. Lo publica el usuario rbecola en HuggingFace, con licencia openrail++ y pesos en formato safetensors. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un checkpoint completo.
+rbecola/username_style_LoRA es un adaptador LoRA (Low-Rank Adaptation) de DreamBooth para el modelo de difusión text-to-image stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo base: se trata de un conjunto de pesos adicionales que se cargan sobre SDXL 1.0 para enseñarle un concepto o estilo concreto, activado mediante la palabra clave (instance prompt) `username_style_LoRA`. Lo publica el usuario rbecola en Hugging Face, con licencia openrail++ y pesos en formato safetensors. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA de bajo rango y no con un checkpoint completo.
 
 El interés práctico del modelo depende por completo del concepto que se haya entrenado, y aquí está su principal problema: la model card es la plantilla autogenerada por el script de entrenamiento (`diffusers-training`) y no ha sido completada por el autor. Las secciones de descripción del dataset, hiperparámetros, ejemplos de uso y limitaciones siguen marcadas como `TODO`, y la galería de imágenes está vacía. Tampoco hay métricas de ningún tipo ni resultados de benchmarks.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Resolución / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stabilityai/stable-diffusion-xl-base-1.0 | Difusión text-to-image (modelo base completo) | aproximadamente 3,5 mil millones según la documentación pública de Stability AI (U-Net más codificadores de texto) | 1024x1024 | CreativeML Open RAIL++-M | Pública en HuggingFace |
+| stabilityai/stable-diffusion-xl-base-1.0 | Difusión text-to-image (modelo base completo) | aproximadamente 3,5 mil millones según la documentación pública de Stability AI (U-Net más codificadores de texto) | 1024x1024 | CreativeML Open RAIL++-M | Pública en Hugging Face |
 | rbecola/username_style_LoRA | Adaptador LoRA sobre SDXL 1.0 | no disponible (repositorio de 0,1 GB) | Heredada de SDXL 1.0 (1024x1024) | openrail++ | Pública, 0 descargas |
 | Fine-tune DreamBooth completo de SDXL | Checkpoint completo personalizado | del orden del modelo base, no disponible | 1024x1024 | Depende del autor | No se han identificado alternativas concretas en la información proporcionada |
 
@@ -97,7 +97,7 @@ No se han encontrado en la información disponible otros adaptadores LoRA compar
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/rbecola/username_style_LoRA
+- Página del modelo en Hugging Face: https://huggingface.co/rbecola/username_style_LoRA
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE empleado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Artículo de DreamBooth: https://dreambooth.github.io/

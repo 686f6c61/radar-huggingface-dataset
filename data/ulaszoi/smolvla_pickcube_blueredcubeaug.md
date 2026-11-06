@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA pickcube BlueRedCubeAug es un ajuste fino (fine-tune) del modelo base SmolVLA (lerobot/smolvla_base) publicado por el usuario ulasZoi en HuggingFace bajo la libreria LeRobot. Se trata de una politica Vision-Language-Action (VLA) orientada a robotica: recibe imagenes de camara y una instruccion en lenguaje natural, y produce acciones de control de bajo nivel para un brazo robotico. En concreto, este checkpoint esta entrenado para la tarea de recoger un cubo (pick cube) sobre un brazo SO-101, con un dataset propio (ulasZoi/so101_RED_BlueCubeMerged) que combina variantes de cubo rojo y azul y aplica aumentacion de color.
+SmolVLA pickcube BlueRedCubeAug es un ajuste fino (fine-tune) del modelo base SmolVLA (lerobot/smolvla_base) publicado por el usuario ulasZoi en Hugging Face bajo la libreria LeRobot. Se trata de una politica Vision-Language-Action (VLA) orientada a robotica: recibe imagenes de camara y una instruccion en lenguaje natural, y produce acciones de control de bajo nivel para un brazo robotico. En concreto, este checkpoint esta entrenado para la tarea de recoger un cubo (pick cube) sobre un brazo SO-101, con un dataset propio (ulasZoi/so101_RED_BlueCubeMerged) que combina variantes de cubo rojo y azul y aplica aumentacion de color.
 
 El modelo se apoya en la arquitectura y el entrenamiento descritos en el articulo SmolVLA (arXiv:2506.01844), que propone un VLA compacto y eficiente para control robotico con datos de demostracion teleoperados. La relevancia de este tipo de checkpoints es practica: permiten reproducir tareas concretas de manipulacion en hardware de bajo coste (SO-101) usando la pila LeRobot, y sirven como punto de partida para ajustes posteriores con nuevos objetos, colores o entornos.
 
@@ -65,9 +65,9 @@ Los datos de parametros y contexto de los modelos alternativos provienen de sus 
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_BlueRedCubeAug | No disponible (base SmolVLA ~450 M) | VLA, fine-tune para SO-101 | apache-2.0 (etiqueta) | HuggingFace, 0 descargas | Especifico para pick cube con cubos rojo/azul |
-| lerobot/smolvla_base | ~450 M (segun articulo) | VLA generalista | No disponible en esta ficha | HuggingFace | Modelo base del que deriva el anterior |
-| OpenVLA | ~7 B | VLA generalista | Llama 2 y componentes con licencias propias | HuggingFace, GitHub | Mayor tamano, requiere mas VRAM |
+| ulasZoi/smolvla_pickcube_BlueRedCubeAug | No disponible (base SmolVLA ~450 M) | VLA, fine-tune para SO-101 | apache-2.0 (etiqueta) | Hugging Face, 0 descargas | Especifico para pick cube con cubos rojo/azul |
+| lerobot/smolvla_base | ~450 M (segun articulo) | VLA generalista | No disponible en esta ficha | Hugging Face | Modelo base del que deriva el anterior |
+| OpenVLA | ~7 B | VLA generalista | Llama 2 y componentes con licencias propias | Hugging Face, GitHub | Mayor tamano, requiere mas VRAM |
 | pi0 (Physical Intelligence) | Del orden de 3 B | VLA con flow matching | No disponible en esta ficha | Publicacion y repositorio | Orientado a tareas de manipulacion diversas |
 
 No se dispone de comparaciones de rendimiento (tasas de exito) entre estos modelos dentro de la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de comparaciones de rendimiento (tasas de exito) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_BlueRedCubeAug
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_BlueRedCubeAug
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/ulasZoi/so101_RED_BlueCubeMerged
 - Articulo SmolVLA (referencia en las etiquetas): https://arxiv.org/abs/2506.01844

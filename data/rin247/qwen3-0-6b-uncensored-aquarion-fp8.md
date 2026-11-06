@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados. Como referencia teórica, se pue
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP8)
 - [Modelo base Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio oficial de Qwen3](https://github.com/QwenLM/Qwen3)
 - [Guía de modelos uncensored locales (InsiderLLM)](https://insiderllm.com/guides/best-uncensored-local-llms/)

@@ -96,7 +96,7 @@ Speck1.5-140M destaca únicamente por su eficiencia de memoria de estado y su ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/specklabs/Speck1.5-140M
+- Modelo en Hugging Face: https://huggingface.co/specklabs/Speck1.5-140M
 - Modelo base anterior Speck1-140M: https://huggingface.co/specklabs/Speck1-140M
 - Variante instruct Speck1.1-140M-Instruct: https://huggingface.co/specklabs/Speck1.1-140M-Instruct
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard

@@ -79,7 +79,7 @@ Advertencia: se trata de una autoevaluación sobre un conjunto propio de 384 pre
 - RAM: no se documenta cifra oficial. El proceso de Python con sympy y mpmath añade sobrecarga de intérprete; conviene reservar al menos unos cientos de MB por proceso. Estimación, no dato del autor.
 - GPU recomendadas: ninguna. Cualquier CPU x86-64 moderna es suficiente; no se publican cifras de latencia ni de throughput.
 - Compatibilidad consumer: cabe en cualquier equipo, incluidos portátiles de gama baja y entornos tipo Raspberry Pi, siempre que haya un intérprete de Python 3.10-3.14.
-- Opciones de despliegue: `pip install economics-finance-ai999x` desde PyPI, instalación directa del wheel alojado en HuggingFace, o consumo del artefacto ONNX con ONNX Runtime. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un transformer generativo.
+- Opciones de despliegue: `pip install economics-finance-ai999x` desde PyPI, instalación directa del wheel alojado en Hugging Face, o consumo del artefacto ONNX con ONNX Runtime. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un transformer generativo.
 - Sistemas validados: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14. No se declara soporte de macOS ni de ARM.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ La comparación relevante no es de rendimiento en benchmarks, que no existe para
 - Solo admite inglés. Las formas de pregunta documentadas están en inglés y no se declara soporte de otros idiomas, lo que incluye el castellano.
 - No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno con contexto largo ni soporta tool calling genérico. La longitud de contexto no está documentada.
 - La calidad depende de que la pregunta encaje en las formas documentadas o de que se use la interfaz tipada `solve()`. Las preguntas mal formuladas pueden caer en UNRECOGNIZED_FORMAT o AMBIGUOUS.
-- El modelo está marcado con `inference: false` en HuggingFace, por lo que no se puede probar mediante la Inference API de la plataforma; hay que instalarlo localmente.
+- El modelo está marcado con `inference: false` en Hugging Face, por lo que no se puede probar mediante la Inference API de la plataforma; hay que instalarlo localmente.
 - Riesgo de sesgo residual en la capa de lectura de lenguaje natural: al ser sensible a la formulación, distintas redacciones de la misma pregunta podrían no reconocerse como equivalentes.
 - Riesgo de alucinación bajo por diseño (el sistema rechaza en lugar de adivinar), pero no nulo: si una capacidad certificada contiene un error de implementación o un supuesto inadecuado, el resultado se devolverá como verificado sin que la comprobación lo detecte.
 - Madurez temprana: versión 1.0.0, 0 descargas y 0 likes en el momento de la consulta, sin adopción pública ni revisión independiente documentada. Conviene tratarlo como proyecto emergente antes de integrarlo en producción crítica.
@@ -115,10 +115,10 @@ La comparación relevante no es de rendimiento en benchmarks, que no existe para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/economics-finance-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/economics-finance-ai999x
 - Paquete en PyPI: https://pypi.org/project/economics-finance-ai999x/
 - Guía de capacidades (docs en el repositorio): https://huggingface.co/AI999X/economics-finance-ai999x/tree/main/docs
 - Evaluación (respuestas doradas): https://huggingface.co/AI999X/economics-finance-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web del proyecto: https://ai999x.com
 - Apoyo al desarrollo (Buy Me a Coffee): https://buymeacoffee.com/ibnuljaiffarabi

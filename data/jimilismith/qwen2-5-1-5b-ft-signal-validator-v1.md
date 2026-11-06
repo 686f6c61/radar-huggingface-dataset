@@ -28,7 +28,7 @@ El modelo es un fine-tune de Qwen2.5-1.5B-Instruct, que a su vez pertenece a la 
 - No se ha documentado ninguna capacidad específica en la información disponible.
 - El modelo hereda las capacidades de Qwen2.5-1.5B-Instruct, que incluyen generación de texto y seguimiento de instrucciones, aunque no se detallan en la model card.
 - No se dispone de información sobre soporte de tool calling, agentes, visión, audio o modo de razonamiento extendido.
-- El idioma soportado es inglés, según los tags de HuggingFace.
+- El idioma soportado es inglés, según los tags de Hugging Face.
 
 ## Casos de uso
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. El tamaño del repositorio (0.1 GB) sugiere pesos cuantizados, pero no se especifica la cuantización final. Para un modelo de 1.5B en 4 bits, la VRAM necesaria podría rondar 1-2 GB, pero este dato no está confirmado.
 - GPU recomendadas: no disponible. Dado el tamaño del modelo, podría ejecutarse en GPUs de consumo como RTX 3060 o superiores, pero no hay datos oficiales.
 - Compatibilidad con GPUs de consumo: probable, debido al reducido tamaño del modelo, pero no confirmado.
-- Opciones de despliegue: el modelo es compatible con la librería transformers y con el tag "endpoints_compatible", lo que sugiere que puede desplegarse en HuggingFace Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: el modelo es compatible con la librería transformers y con el tag "endpoints_compatible", lo que sugiere que puede desplegarse en Hugging Face Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jimilismith/qwen2.5-1.5b-FT-signal-validator-v1 | 1.5B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit | 1.5B | no disponible | Apache 2.0 | HuggingFace (modelo base) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | no disponible | Apache 2.0 | HuggingFace |
+| jimilismith/qwen2.5-1.5b-FT-signal-validator-v1 | 1.5B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit | 1.5B | no disponible | Apache 2.0 | Hugging Face (modelo base) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre el rendimiento comparado. El modelo fine-tune se diferencia del base por su ajuste específico, aunque no se ha documentado la tarea.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre el rendimiento comparado. El modelo fine-tun
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jimilismith/qwen2.5-1.5b-FT-signal-validator-v1
+- Hugging Face: https://huggingface.co/jimilismith/qwen2.5-1.5b-FT-signal-validator-v1
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

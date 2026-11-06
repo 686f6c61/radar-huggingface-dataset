@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/bigram_concentrated_9469pct_2b_schedule_200m_dmodel008_016_032_064 | no disponible (`d_model` 8-64) | 256 | no disponible | HuggingFace, repo de 0.0 GB |
+| eoinf/bigram_concentrated_9469pct_2b_schedule_200m_dmodel008_016_032_064 | no disponible (`d_model` 8-64) | 256 | no disponible | Hugging Face, repo de 0.0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (transformers causales de juguete para experimentos de trigramas sintéticos) en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_concentrated_9469pct_2b_schedule_200m_dmodel008_016_032_064
+- Hugging Face: https://huggingface.co/eoinf/bigram_concentrated_9469pct_2b_schedule_200m_dmodel008_016_032_064
 - Repositorio de código citado en la model card: `synthetic_trigrams` (no se proporciona URL en la información disponible)
 - Ficheros de configuración y resultados citados: `configuration.json`, `grid_summary.json`, `result.json` (incluidos en el repositorio)
 - Paper, blog, demo o repositorio adicional: no disponible

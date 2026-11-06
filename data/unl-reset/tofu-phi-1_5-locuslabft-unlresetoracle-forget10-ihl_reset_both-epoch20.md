@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base y con el checkpoint TOFU del que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch20
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch20
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

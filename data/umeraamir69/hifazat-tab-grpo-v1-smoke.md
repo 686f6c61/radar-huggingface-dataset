@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hifazat-tab-grpo-v1-smoke` es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `CohereLabs/tiny-aya-fire`, publicado por el usuario `umeraamir69` en HuggingFace. El adaptador se ha generado con la herramienta AgentTune de Lexsi Labs, un framework que permite construir flujos agénticos y después entrenar, evaluar, destilar o autorreparar modelos a través de un esquema unificado de trayectorias. El sufijo "smoke" del nombre sugiere que se trata de una ejecución de prueba o validación del pipeline, no de un modelo destinado a producción.
+`hifazat-tab-grpo-v1-smoke` es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `CohereLabs/tiny-aya-fire`, publicado por el usuario `umeraamir69` en Hugging Face. El adaptador se ha generado con la herramienta AgentTune de Lexsi Labs, un framework que permite construir flujos agénticos y después entrenar, evaluar, destilar o autorreparar modelos a través de un esquema unificado de trayectorias. El sufijo "smoke" del nombre sugiere que se trata de una ejecución de prueba o validación del pipeline, no de un modelo destinado a producción.
 
 El modelo base, `tiny-aya-fire`, pertenece a la familia Aya de Cohere Labs, orientada a cobertura multilingüe. Se desconoce el tamaño exacto del base a partir de la información proporcionada, aunque la denominación "tiny" indica que se trata de una variante compacta diseñada para entornos con recursos limitados. El adaptador hereda la arquitectura del base y añade un ajuste fino con refuerzo para tareas agénticas.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: el repositorio tiene cero descargas y c
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA (Low-Rank Adaptation) que se carga sobre `CohereLabs/tiny-aya-fire` mediante PEFT, tal como indica el `adapter_config.json` del repositorio. El entrenamiento se ha realizado con GRPO, un algoritmo de optimización por refuerzo sin modelo crítico (critic-free) que estima la ventaja relativa de las respuestas dentro de un grupo de muestras generadas para el mismo prompt. La implementación backend es TRL (Transformer Reinforcement Learning) de HuggingFace.
+El artefacto es un adaptador LoRA (Low-Rank Adaptation) que se carga sobre `CohereLabs/tiny-aya-fire` mediante PEFT, tal como indica el `adapter_config.json` del repositorio. El entrenamiento se ha realizado con GRPO, un algoritmo de optimización por refuerzo sin modelo crítico (critic-free) que estima la ventaja relativa de las respuestas dentro de un grupo de muestras generadas para el mismo prompt. La implementación backend es TRL (Transformer Reinforcement Learning) de Hugging Face.
 
 El pipeline AgentTune de Lexsi Labs se presenta como una herramienta para construir flujos agénticos y posteriormente entrenar, evaluar, destilar o autorreparar modelos mediante un esquema unificado de trayectorias. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF/DPO adicional, el rango LoRA, la tasa de aprendizaje ni la duración del entrenamiento. El calificativo "smoke" en el nombre y la ausencia de métricas publicadas apuntan a una ejecución de validación del pipeline más que a un ajuste fino exhaustivo.
 
@@ -54,15 +54,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible con precisión; al tratarse de un adaptador sobre un modelo "tiny" de la familia Aya, es plausible que quepa en GPUs consumer, pero no se confirma el tamaño del base.
 - GPU recomendadas: no disponible. Por el perfil del base, cabría esperar compatibilidad con RTX 3090/4090 o superiores, sin confirmación.
 - Cabe en GPU consumer: probablemente sí, dado el calificativo "tiny" del base, pero no verificado.
-- Opciones de despliegue: carga mediante `peft.AutoPeftModelForCausalLM` y `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: carga mediante `peft.AutoPeftModelForCausalLM` y `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| umeraamir69/hifazat-tab-grpo-v1-smoke | no disponible (adaptador LoRA) | no disponible | no disponible | HuggingFace (0 descargas) | Smoke test, sin benchmarks |
-| CohereLabs/tiny-aya-fire (base) | no disponible en la información | no disponible | no disponible | HuggingFace (modelo público de Cohere Labs) | Modelo base sin ajuste agéntico |
+| umeraamir69/hifazat-tab-grpo-v1-smoke | no disponible (adaptador LoRA) | no disponible | no disponible | Hugging Face (0 descargas) | Smoke test, sin benchmarks |
+| CohereLabs/tiny-aya-fire (base) | no disponible en la información | no disponible | no disponible | Hugging Face (modelo público de Cohere Labs) | Modelo base sin ajuste agéntico |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de información suficiente para establecer comparaciones fiables |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umeraamir69/hifazat-tab-grpo-v1-smoke
+- Modelo en Hugging Face: https://huggingface.co/umeraamir69/hifazat-tab-grpo-v1-smoke
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-fire
 - Repositorio AgentTune (Lexsi Labs): https://github.com/Lexsi-Labs/AgentTune_mirror
 - Sitio de Lexsi Labs: https://lexsi.ai/

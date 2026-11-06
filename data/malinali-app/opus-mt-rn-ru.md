@@ -6,7 +6,7 @@ El modelo `malinali-app/opus-mt-rn-ru` es un paquete de traduccion automatica ne
 
 La relevancia de esta publicacion es fundamentalmente de despliegue: Malinali convierte el tokenizador original de SentencePiece a formato JSON de tokenizador rapido de Hugging Face (`tokenizer-enc.json` y `tokenizer-dec.json`) y expone los pesos en `safetensors`, de modo que el modelo puede ejecutarse con Candle (concretamente el modulo `marian_flutter`) sin depender de PyTorch en tiempo de inferencia. Esto permite traduccion local, sin conexion y con requisitos de memoria muy bajos.
 
-Con 48.663.158 parametros y un repositorio de aproximadamente 0,2 GB, se trata de un modelo seq2seq pequeno, orientado a traducir un par de idiomas de bajos recursos (kirundi) hacia ruso. La ficha de HuggingFace no declara licencia propia: la model card remite a la del modelo original, que en OPUS-MT suele ser CC-BY 4.0.
+Con 48.663.158 parametros y un repositorio de aproximadamente 0,2 GB, se trata de un modelo seq2seq pequeno, orientado a traducir un par de idiomas de bajos recursos (kirundi) hacia ruso. La ficha de Hugging Face no declara licencia propia: la model card remite a la del modelo original, que en OPUS-MT suele ser CC-BY 4.0.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ La innovacion aportada por esta publicacion es de ingenieria de despliegue, no d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas BLEU, chrF ni comparaciones cuantitativas con otros sistemas, y la busqueda web no ha devuelto datos de evaluacion relacionados con este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas BLEU, chrF ni comparaciones cuantitativas con otros sistemas, y la busqueda web no ha devuelto datos de evaluacion relacionados con este modelo.
 
 ## Requisitos de hardware
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| malinali-app/opus-mt-rn-ru | 48,66 M | rn → ru | no disponible | no disponible (remite al upstream) | HuggingFace, safetensors + tokenizadores fast | Reempaquetado para Candle; mismos pesos que el modelo base |
-| Helsinki-NLP/opus-mt-rn-ru | no disponible en la informacion proporcionada | rn → ru | no disponible | habitualmente CC-BY 4.0 en OPUS-MT | HuggingFace, pesos originales | Modelo upstream del que deriva esta publicacion |
-| NLLB-200-distilled-600M | 600 M | 200 idiomas, incluidos rn y ru | no disponible en la informacion proporcionada | CC-BY-NC 4.0 (uso no comercial) | HuggingFace | Mayor cobertura idiomatica y tamano muy superior; la licencia restringe el uso comercial |
-| M2M-100 (418M) | 418 M | 100 idiomas | no disponible en la informacion proporcionada | MIT | HuggingFace | Alternativa multilingue de tamano intermedio |
+| malinali-app/opus-mt-rn-ru | 48,66 M | rn → ru | no disponible | no disponible (remite al upstream) | Hugging Face, safetensors + tokenizadores fast | Reempaquetado para Candle; mismos pesos que el modelo base |
+| Helsinki-NLP/opus-mt-rn-ru | no disponible en la informacion proporcionada | rn → ru | no disponible | habitualmente CC-BY 4.0 en OPUS-MT | Hugging Face, pesos originales | Modelo upstream del que deriva esta publicacion |
+| NLLB-200-distilled-600M | 600 M | 200 idiomas, incluidos rn y ru | no disponible en la informacion proporcionada | CC-BY-NC 4.0 (uso no comercial) | Hugging Face | Mayor cobertura idiomatica y tamano muy superior; la licencia restringe el uso comercial |
+| M2M-100 (418M) | 418 M | 100 idiomas | no disponible en la informacion proporcionada | MIT | Hugging Face | Alternativa multilingue de tamano intermedio |
 
 Las cifras de parametros de NLLB-200-distilled-600M y M2M-100-418M corresponden a sus variantes mas conocidas; los valores de contexto y licencia deben verificarse en sus fichas respectivas antes de tomar decisiones de produccion.
 
@@ -89,8 +89,8 @@ Las cifras de parametros de NLLB-200-distilled-600M y M2M-100-418M corresponden 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malinali-app/opus-mt-rn-ru
-- Modelo base en HuggingFace: https://huggingface.co/Helsinki-NLP/opus-mt-rn-ru
+- Repositorio en Hugging Face: https://huggingface.co/malinali-app/opus-mt-rn-ru
+- Modelo base en Hugging Face: https://huggingface.co/Helsinki-NLP/opus-mt-rn-ru
 - Proyecto OPUS-MT en GitHub: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app
 

@@ -19,7 +19,7 @@ La relevancia de este modelo es limitada: se trata de un experimento personal co
 | Tipos de cuantizacion | El modelo base esta en bnb-4bit; el repositorio ocupa 0,2 GB, lo que sugiere pesos cuantizados, aunque no se detalla el formato exacto |
 | Idiomas soportados | Ingles (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -43,7 +43,7 @@ La model card no especifica el número de tokens de entrenamiento, la composici�
 - Investigación sobre datasets de código: útil para comparar el efecto de distintos hiperparámetros (temperatura, épocas) en la calidad de la generación.
 - Prototipado de asistentes de programación: como base para experimentos internos antes de adoptar un modelo con benchmarks publicados.
 - Evaluación comparativa de ajustes finos: sirve como punto de referencia frente a otros fine-tunes de Qwen3-8B.
-- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en HuggingFace con licencia Apache 2.0.
+- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en Hugging Face con licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0 | 8B | 32 768 (no confirmado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | 8B | 32 768 (ampliable a 131 072) | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | 32 768 | Apache 2.0 | HuggingFace, base de este ajuste |
-| meta-llama/Llama-3.1-8B | 8B | 131 072 | Llama 3.1 Community License | HuggingFace, muy usado |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0 | 8B | 32 768 (no confirmado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | 8B | 32 768 (ampliable a 131 072) | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | 32 768 | Apache 2.0 | Hugging Face, base de este ajuste |
+| meta-llama/Llama-3.1-8B | 8B | 131 072 | Llama 3.1 Community License | Hugging Face, muy usado |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g2_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Familia Qwen3 en HuggingFace](https://huggingface.co/Qwen)
+- [Familia Qwen3 en Hugging Face](https://huggingface.co/Qwen)

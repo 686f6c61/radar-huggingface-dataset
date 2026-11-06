@@ -4,7 +4,7 @@
 
 Este repositorio contiene tensores GGUF cuantizados del modelo Qwen3.8-27B, generados por el usuario Thireus mediante su propia herramienta de cuantización dinámica (GGUF Tool Suite). El objetivo es ofrecer una mezcla de cuantizaciones optimizada para minimizar la perplexidad del modelo dado un presupuesto de bits por peso (bpw) y un hardware concreto, en lugar de usar una cuantización uniforme como las que se encuentran en otros repositorios GGUF.
 
-El modelo base es Qwen3.8-27B, publicado por el equipo Qwen en HuggingFace, aunque la información proporcionada no incluye detalles sobre su arquitectura, tamaño exacto de parámetros ni longitud de contexto. El nombre sugiere 27 mil millones de parámetros, y el ejemplo de uso incluido en la model card emplea una ventana de contexto de 32768 tokens, pero estos datos no están confirmados en la documentación oficial del repositorio.
+El modelo base es Qwen3.8-27B, publicado por el equipo Qwen en Hugging Face, aunque la información proporcionada no incluye detalles sobre su arquitectura, tamaño exacto de parámetros ni longitud de contexto. El nombre sugiere 27 mil millones de parámetros, y el ejemplo de uso incluido en la model card emplea una ventana de contexto de 32768 tokens, pero estos datos no están confirmados en la documentación oficial del repositorio.
 
 La relevancia de este proyecto radica en su enfoque de cuantización adaptativa: en lugar de publicar un único archivo GGUF, Thireus proporciona shards y recetas que permiten a cada usuario generar su propia mezcla de cuantizaciones según su VRAM y RAM disponibles. Esto puede resultar en una mejor relación calidad/tamaño que las cuantizaciones estáticas, aunque el repositorio tiene cero descargas y cero likes, lo que indica que es un proyecto personal sin validación externa.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ5_K_R4-SPECIAL_SPLIT
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF Tool Suite: https://github.com/Thireus/GGUF-Tool-Suite
 - Documentacion de la herramienta: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs

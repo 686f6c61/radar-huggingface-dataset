@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNetV2 fine-tuned on NIH ChestX-ray14 es un clasificador de imágenes médicas publicado por el usuario Purino en HuggingFace. Se trata de un MobileNetV2 preentrenado en ImageNet1k y ajustado para una tarea de clasificación **monoetiqueta** (single-label, softmax) sobre cuatro patologías torácicas frecuentes del conjunto NIH ChestX-ray14: Infiltration, Atelectasis, Effusion y Nodule. El modelo tiene 2.263.108 parámetros (unos 9 MB en fp32) y licencia MIT, lo que lo sitúa en la categoría de modelos ultraligeros aptos para CPU y dispositivos de borde.
+MobileNetV2 fine-tuned on NIH ChestX-ray14 es un clasificador de imágenes médicas publicado por el usuario Purino en Hugging Face. Se trata de un MobileNetV2 preentrenado en ImageNet1k y ajustado para una tarea de clasificación **monoetiqueta** (single-label, softmax) sobre cuatro patologías torácicas frecuentes del conjunto NIH ChestX-ray14: Infiltration, Atelectasis, Effusion y Nodule. El modelo tiene 2.263.108 parámetros (unos 9 MB en fp32) y licencia MIT, lo que lo sitúa en la categoría de modelos ultraligeros aptos para CPU y dispositivos de borde.
 
 El problema que aborda es el de la clasificación automática de radiografías de tórax con fines de investigación, con un interés especial en la **explicabilidad**: la arquitectura conserva un único clasificador lineal tras el pooling global, lo que la hace directamente compatible con CAM y Grad-CAM. El autor incluye un script de ejemplo (`inference_gradcam_example.py`) para generar mapas de calor y compararlos cualitativamente con las cajas delimitadoras anotadas por radiólogos en `BBox_List_2017.csv`.
 
@@ -24,9 +24,9 @@ Su relevancia es limitada pero concreta: es un modelo pequeño, reproducible y b
 | Numero de clases | 4 (Infiltration, Atelectasis, Effusion, Nodule), salida softmax monoetiqueta |
 | Metrica objetivo | Macro-AUROC (one-vs-rest) |
 | Dataset de entrenamiento | nih-chest-xrays/data (subconjunto equilibrado de 8.000 imágenes) |
-| Pipeline en HuggingFace | image-classification |
+| Pipeline en Hugging Face | image-classification |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación en HuggingFace | 10/09/2026 (creación y última actualización) |
+| Fecha de publicación en Hugging Face | 10/09/2026 (creación y última actualización) |
 | Tamaño del repositorio | 0,0 GB (según metadatos) |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ Los valores de parámetros de las alternativas proceden de la literatura general
 
 | Modelo | Parámetros | Clases / tarea | Etiquetado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Purino/mobilenetv2-nih-chestxray-4class | 2,26 M (dato real) | 4 clases, monoetiqueta | Débil (NLP sobre informes) | MIT | HuggingFace, 0 descargas |
+| Purino/mobilenetv2-nih-chestxray-4class | 2,26 M (dato real) | 4 clases, monoetiqueta | Débil (NLP sobre informes) | MIT | Hugging Face, 0 descargas |
 | MobileNetV2 original (torchvision) | ~3,5 M (referencia) | 1.000 clases, imagen natural | Supervisado manual (ImageNet) | BSD-3 (torchvision) | Ampliamente disponible |
 | CheXNet (DenseNet-121) | ~8 M (referencia) | 14 clases, multietiqueta | Débil (NLP) | Investigación / según implementación | Reproducciones de terceros |
 | torchxrayvision (DenseNet-121 / ResNet-50) | ~8 M / ~25 M (referencia) | 14-18 clases, multietiqueta, varios datasets | Débil (NLP) | Según pesos (a menudo no comercial) | Repositorio público |
@@ -107,9 +107,9 @@ Diferencias clave: este modelo es **monoetiqueta** y cubre 4 de las 14 patologí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Purino/mobilenetv2-nih-chestxray-4class
+- Modelo en Hugging Face: https://huggingface.co/Purino/mobilenetv2-nih-chestxray-4class
 - Ficheros del repositorio: `config.json`, `model.safetensors`, `inference_gradcam_example.py`, `train_split.csv`, `val_split.csv`, `test_split.csv` (accesibles desde la pestaña Files del repositorio anterior)
-- Dataset NIH ChestX-ray14 en HuggingFace: https://huggingface.co/datasets/nih-chest-xrays/data
+- Dataset NIH ChestX-ray14 en Hugging Face: https://huggingface.co/datasets/nih-chest-xrays/data
 - MobileNetV2, Sandler et al., 2018: https://arxiv.org/abs/1801.04381
 - Grad-CAM, Selvaraju et al., 2017: https://arxiv.org/abs/1610.02391
 - ChestX-ray8 (descripción del dataset NIH), Wang et al., 2017: https://arxiv.org/abs/1705.02315

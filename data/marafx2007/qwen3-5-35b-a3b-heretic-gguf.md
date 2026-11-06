@@ -25,7 +25,7 @@ La información disponible no incluye documentación técnica detallada sobre el
 
 No se dispone de documentación explícita sobre la arquitectura del modelo base en la información proporcionada. El identificador `Qwen3.5-35B-A3B` y el número de parámetros (34.660.610.688) apuntan a un modelo de Mixture of Experts (MoE) con 35 mil millones de parámetros totales y alrededor de 3 mil millones activos, aunque esta circunstancia no está confirmada en la ficha técnica.
 
-Tampoco se han facilitado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. Las etiquetas «heretic», «decensored» y «abliterated» indican que el modelo base ha sido sometido a un procedimiento de abliteración para eliminar o reducir los rechazos de contenido. El repositorio de HuggingFace `brayniac/Qwen3.5-35B-A3B-heretic` es el modelo base original, pero no se incluye información adicional sobre su proceso de entrenamiento.
+Tampoco se han facilitado datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO. Las etiquetas «heretic», «decensored» y «abliterated» indican que el modelo base ha sido sometido a un procedimiento de abliteración para eliminar o reducir los rechazos de contenido. El repositorio de Hugging Face `brayniac/Qwen3.5-35B-A3B-heretic` es el modelo base original, pero no se incluye información adicional sobre su proceso de entrenamiento.
 
 ## Capacidades
 

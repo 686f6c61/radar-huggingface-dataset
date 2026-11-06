@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`abhimulay821/my-bert-imdb` es un repositorio alojado en HuggingFace cuyo pipeline, licencia e idiomas no estan declarados en los metadatos publicos. La model card asociada es la plantilla generada automaticamente por HuggingFace para modelos subidos con la libreria `transformers`, y practicamente todos sus campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) siguen conteniendo el marcador `[More Information Needed]`. No existe, por tanto, documentacion tecnica verificable publicada por el autor.
+`abhimulay821/my-bert-imdb` es un repositorio alojado en Hugging Face cuyo pipeline, licencia e idiomas no estan declarados en los metadatos publicos. La model card asociada es la plantilla generada automaticamente por Hugging Face para modelos subidos con la libreria `transformers`, y practicamente todos sus campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) siguen conteniendo el marcador `[More Information Needed]`. No existe, por tanto, documentacion tecnica verificable publicada por el autor.
 
-El identificador del repositorio sugiere, por convencion de nomenclatura, un ajuste fino de un modelo de la familia BERT orientado a clasificacion de sentimiento sobre el corpus IMDB. Esta interpretacion es una hipotesis basada unicamente en el nombre y no esta confirmada por la model card ni por ningun artefacto de configuracion visible en la informacion proporcionada. La unica etiqueta con referencia bibliografica es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de HuggingFace y no a un paper del modelo.
+El identificador del repositorio sugiere, por convencion de nomenclatura, un ajuste fino de un modelo de la familia BERT orientado a clasificacion de sentimiento sobre el corpus IMDB. Esta interpretacion es una hipotesis basada unicamente en el nombre y no esta confirmada por la model card ni por ningun artefacto de configuracion visible en la informacion proporcionada. La unica etiqueta con referencia bibliografica es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de Hugging Face y no a un paper del modelo.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas (2026-09-20T17:40:13Z), lo que apunta a un artefacto sin mantenimiento posterior ni adopcion por parte de la comunidad. La relevancia practica actual es limitada: se trata de un ejemplo de publicacion sin documentacion, no de un modelo evaluable para produccion.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 ## Casos de uso
 
-- Evaluacion de repositorios comunitarios: el modelo puede utilizarse como caso de estudio de como se publica un artefacto sin model card completa, para analizar practicas de documentacion en HuggingFace.
+- Evaluacion de repositorios comunitarios: el modelo puede utilizarse como caso de estudio de como se publica un artefacto sin model card completa, para analizar practicas de documentacion en Hugging Face.
 - Pruebas de integracion de la libreria `transformers`: sirve para verificar que un pipeline de carga automatica funciona con un repositorio minimo antes de desplegar modelos reales.
 - Docencia sobre ciclo de vida de modelos: ilustra las fases de publicacion, versionado y mantenimiento, y las consecuencias de omitir licencia y especificaciones.
 - Auditoria de licencias en organizaciones: dado que la licencia no esta declarada, el repositorio es un ejemplo util para disenar politicas internas que bloqueen el uso de artefactos sin terminos legales explicitos.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no se puede determinar sin conocer el tamano del modelo.
-- Opciones de despliegue: no documentadas por el autor. Al declararse la libreria `transformers` y la etiqueta `endpoints_compatible`, seria tecnicamente posible intentar una carga mediante `transformers` o desplegar en HuggingFace Inference Endpoints, siempre que existan pesos validos en el repositorio.
+- Opciones de despliegue: no documentadas por el autor. Al declararse la libreria `transformers` y la etiqueta `endpoints_compatible`, seria tecnicamente posible intentar una carga mediante `transformers` o desplegar en Hugging Face Inference Endpoints, siempre que existan pesos validos en el repositorio.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -64,9 +64,9 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhimulay821/my-bert-imdb | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| bert-base-uncased | 110 M | 512 tokens | encoder generalista | Apache 2.0 | HuggingFace, ampliamente descargado |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | clasificacion de sentimiento | Apache 2.0 | HuggingFace, pipeline `text-classification` declarado |
+| abhimulay821/my-bert-imdb | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| bert-base-uncased | 110 M | 512 tokens | encoder generalista | Apache 2.0 | Hugging Face, ampliamente descargado |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | clasificacion de sentimiento | Apache 2.0 | Hugging Face, pipeline `text-classification` declarado |
 
 La comparacion con los dos ultimos modelos se ofrece unicamente como contexto de categoria; no implica que el modelo evaluado comparta arquitectura, tamano o tarea.
 
@@ -84,6 +84,6 @@ La comparacion con los dos ultimos modelos se ofrece unicamente como contexto de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhimulay821/my-bert-imdb
+- Hugging Face: https://huggingface.co/abhimulay821/my-bert-imdb
 - Referencia citada en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact#compute

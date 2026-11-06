@@ -154,7 +154,7 @@ esta información: no se aportan cifras de PSNR, SSIM ni parámetros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/swin2sr-classical-sr-x2-64
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/swin2sr-classical-sr-x2-64
 - Modelo base (exportación ONNX de Xenova): https://huggingface.co/Xenova/swin2SR-classical-sr-x2-64
 - Commit upstream fijado: https://huggingface.co/Xenova/swin2SR-classical-sr-x2-64/tree/93dfc9089abda257351d3a58d5771e2c1ff69442
 - Modelo original del proyecto Swin2SR: https://huggingface.co/caidas/swin2SR-classical-sr-x2-64

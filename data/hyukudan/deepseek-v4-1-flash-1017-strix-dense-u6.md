@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hyukudan/DeepSeek-V4.1-Flash-1017-strix-dense-U6
+- Repositorio Hugging Face: https://huggingface.co/hyukudan/DeepSeek-V4.1-Flash-1017-strix-dense-U6
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - GGUF upstream (kyuz0): https://huggingface.co/kyuz0/deepseek-v4.1-flash-gguf
 - Mirror del GGUF upstream: https://huggingface.co/hyukudan/deepseek-v4.1-flash-gguf-mirror

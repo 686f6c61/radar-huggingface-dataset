@@ -111,7 +111,7 @@ No se dispone de datos publicados de modelos comparables de terceros sobre esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-swap
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-swap
 - Repositorio relacionado (ejecuciones que alcanzaron 0,99): https://huggingface.co/kdkyum/two-hop-gpt-hits
 - Repositorio relacionado (variante wsd-nh4): https://huggingface.co/kdkyum/two-hop-gpt-wsd-nh4
 - Proyecto de Weights & Biases citado en la model card: `gpt-two-hop-d768-trainpy` (URL no disponible)

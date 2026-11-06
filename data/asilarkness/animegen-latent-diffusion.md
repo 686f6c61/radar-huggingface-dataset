@@ -75,5 +75,5 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace - Asilarkness/animegen-latent-diffusion](https://huggingface.co/Asilarkness/animegen-latent-diffusion)
+- [Hugging Face - Asilarkness/animegen-latent-diffusion](https://huggingface.co/Asilarkness/animegen-latent-diffusion)
 - No se proporcionan otros enlaces (papers, repositorios externos o demos) en la información disponible.

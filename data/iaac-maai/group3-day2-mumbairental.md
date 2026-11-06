@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM: no aplica. El modelo se ejecuta en CPU; un Random Forest de 200 arboles con profundidad 10 ocupa tipicamente unos pocos megabytes de RAM.
 - GPU recomendadas: ninguna; no es necesario hardware acelerado.
 - Consumer hardware: funciona en cualquier portatil o escritorio moderno con Python 3, pandas, numpy y scikit-learn instalados.
-- Despliegue: carga directa con `joblib.load("model.joblib")` en un script o servicio Python; no requiere vLLM, llama.cpp, Ollama ni TGI (son herramientas para modelos de lenguaje, no aplicables aqui). El tamano del repositorio es 0,0 GB segun HuggingFace, lo que confirma un artefacto muy ligero.
+- Despliegue: carga directa con `joblib.load("model.joblib")` en un script o servicio Python; no requiere vLLM, llama.cpp, Ollama ni TGI (son herramientas para modelos de lenguaje, no aplicables aqui). El tamano del repositorio es 0,0 GB segun Hugging Face, lo que confirma un artefacto muy ligero.
 - Latencia y throughput: no disponibles; por la naturaleza del modelo (200 arboles poco profundos, `n_jobs=1`), la inferencia por fila es del orden de milisegundos en CPU, aunque no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Tarea | Regresion tabular (alquiler Mumbai) | Regresion tabular (alquiler Mumbai) | Regresion tabular (alquiler Mumbai) |
 | Rendimiento | no disponible | no disponible | R² 0,611 (reportado en la model card) |
 | Licencia | MIT | MIT | no disponible |
-| Disponibilidad | Publicado en HuggingFace como `model.joblib` | Export anterior, reemplazado en el repo | Solo en el notebook educativo |
+| Disponibilidad | Publicado en Hugging Face como `model.joblib` | Export anterior, reemplazado en el repo | Solo en el notebook educativo |
 
 No existen alternativas publicadas de terceros para esta tarea concreta; modelos comerciales de valoracion inmobiliaria no son comparables directamente por falta de datos publicos.
 
@@ -88,7 +88,7 @@ No existen alternativas publicadas de terceros para esta tarea concreta; modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/group3-day2-mumbairental
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/group3-day2-mumbairental
 - Repositorio de entrenamiento (Day 2): https://github.com/iaac-maai/group-3-day2-assignment/tree/6b2a6d17af8c4d8950f12e60dc97f8b9a8d4dbc1
 - Snapshot de datos de entrenamiento: https://github.com/iaac-maai/group-3-day2-assignment/blob/6b2a6d17af8c4d8950f12e60dc97f8b9a8d4dbc1/data/mumbai_cleaned.csv
 - Repositorio del equipo (Day 1): https://github.com/iaac-maai/Group3-day1assignment

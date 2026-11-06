@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSH-AIO no es un modelo de lenguaje, sino un paquete portable del arnés de agente DeepSeek Harness (`dsh` 0.2.1-rc.5) empaquetado por el usuario Neeze para Windows x64. El repositorio de HuggingFace contiene un ZIP de 329 MB (`DSH-AIO-portable-win-x64.zip`) que incluye el runtime de Node, el propio arnés, cuatro plugins y scripts de arranque, con el objetivo de ejecutarse sin conexión a Internet, sin privilegios de administrador y sin instalación previa.
+DSH-AIO no es un modelo de lenguaje, sino un paquete portable del arnés de agente DeepSeek Harness (`dsh` 0.2.1-rc.5) empaquetado por el usuario Neeze para Windows x64. El repositorio de Hugging Face contiene un ZIP de 329 MB (`DSH-AIO-portable-win-x64.zip`) que incluye el runtime de Node, el propio arnés, cuatro plugins y scripts de arranque, con el objetivo de ejecutarse sin conexión a Internet, sin privilegios de administrador y sin instalación previa.
 
 El paquete no incluye pesos de ningún modelo. El arnés actúa como cliente de una API compatible con OpenAI, Anthropic Messages o OpenAI Responses, de modo que el usuario debe rellenar `config\internal-api.env` con `BASE_URL`, `API_KEY` y `MODEL_ID` apuntando a un servidor propio (vLLM, LiteLLM, one-api u otro proxy interno). La relevancia actual reside en el despliegue de agentes en entornos aislados o air-gapped: el autor verifica con 19 comprobaciones automáticas que no se producen conexiones TCP fuera de loopback.
 
@@ -91,6 +91,6 @@ La comparación se limita a herramientas de orquestación porque el repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Neeze/DSH-AIO
+- Repositorio en Hugging Face: https://huggingface.co/Neeze/DSH-AIO
 - Repositorio original de DeepSeek Harness: https://github.com/deepseek-ai/deepseek-harness
 - Documento de seguridad de DeepSeek Harness: https://github.com/deepseek-ai/deepseek-harness/blob/master/SAFETY.md

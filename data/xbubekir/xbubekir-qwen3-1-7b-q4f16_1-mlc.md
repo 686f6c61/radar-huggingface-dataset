@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xbubekir-qwen3-1.7b-q4f16_1-MLC | 1,7B | No disponible | MLC (WebLLM) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B | 1,7B | No disponible en esta ficha | Safetensors | Apache-2.0 | HuggingFace, modelo oficial |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (según documentación oficial de Qwen2.5) | Safetensors, GGUF | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (según documentación oficial de Meta) | Safetensors, GGUF | Llama 3.2 Community License | HuggingFace, requiere aceptar licencia |
+| xbubekir-qwen3-1.7b-q4f16_1-MLC | 1,7B | No disponible | MLC (WebLLM) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B | 1,7B | No disponible en esta ficha | Safetensors | Apache-2.0 | Hugging Face, modelo oficial |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (según documentación oficial de Qwen2.5) | Safetensors, GGUF | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (según documentación oficial de Meta) | Safetensors, GGUF | Llama 3.2 Community License | Hugging Face, requiere aceptar licencia |
 
 La comparación directa con el Qwen3-1.7B original es la más relevante: este repositorio es una conversión más un ajuste no documentado, por lo que el modelo oficial sigue siendo la referencia para evaluar calidad. Frente a alternativas de tamaño similar, la ventaja de esta publicación es exclusivamente el formato MLC para navegador; en cualquier otro criterio (soporte de la comunidad, herramientas, documentación) los modelos oficiales son preferibles.
 
@@ -85,7 +85,7 @@ La comparación directa con el Qwen3-1.7B original es la más relevante: este re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbubekir/xbubekir-qwen3-1.7b-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/xbubekir/xbubekir-qwen3-1.7b-q4f16_1-MLC
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - WebLLM (runtime MLC para navegador): https://webllm.mlc.ai/
 - Repositorio MLC LLM: https://github.com/mlc-ai/mlc-llm

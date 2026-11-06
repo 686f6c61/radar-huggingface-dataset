@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hf99jack/den-6af78d22` es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por el usuario hf99jack (Jack Ronney) en la plataforma HuggingFace. Con 35.951.822.704 parámetros totales (aproximadamente 35,95 mil millones), emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, según indica la etiqueta `qwen3_5_moe`. Está diseñado para tareas conversacionales que integran entrada visual y textual, lo que lo sitúa en la categoría de modelos vision-language.
+El modelo `hf99jack/den-6af78d22` es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por el usuario hf99jack (Jack Ronney) en la plataforma Hugging Face. Con 35.951.822.704 parámetros totales (aproximadamente 35,95 mil millones), emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, según indica la etiqueta `qwen3_5_moe`. Está diseñado para tareas conversacionales que integran entrada visual y textual, lo que lo sitúa en la categoría de modelos vision-language.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación con atribución. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace. A pesar de su tamaño considerable, no se dispone de información pública sobre su rendimiento, datos de entrenamiento o capacidades específicas más allá de la arquitectura declarada. Su relevancia actual es limitada debido a la ausencia de documentación y métricas publicadas, aunque podría resultar interesante para desarrolladores que buscan alternativas MoE multimodales en el ecosistema de Qwen.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación con atribución. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face. A pesar de su tamaño considerable, no se dispone de información pública sobre su rendimiento, datos de entrenamiento o capacidades específicas más allá de la arquitectura declarada. Su relevancia actual es limitada debido a la ausencia de documentación y métricas publicadas, aunque podría resultar interesante para desarrolladores que buscan alternativas MoE multimodales en el ecosistema de Qwen.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (formato safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (con acceso restringido en HuggingFace) |
+| Licencia | Apache 2.0 (con acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada: con 35,95 B parámetros en precisión fp32, el modelo ocuparía unos 143 GB de memoria. Con cuantización a 8 bits (int8) se reduciría a aproximadamente 36 GB, y a 4 bits a unos 18 GB, aunque no se han publicado archivos cuantizados.
 - GPU recomendadas: para inferencia en fp16 (unos 72 GB), se necesitarían GPUs profesionales como A100 (80 GB) o H100 (80 GB). Con cuantización 4 bits podría ejecutarse en una RTX 4090 (24 GB) o similar, siempre que se disponga de los pesos cuantizados.
-- Despliegue: al ser compatible con `transformers` y `endpoints_compatible`, puede servirse con vLLM, TGI o soluciones de HuggingFace Inference Endpoints. Para entornos locales, se podría usar llama.cpp si se convierte a GGUF, aunque no hay archivos GGUF disponibles.
+- Despliegue: al ser compatible con `transformers` y `endpoints_compatible`, puede servirse con vLLM, TGI o soluciones de Hugging Face Inference Endpoints. Para entornos locales, se podría usar llama.cpp si se convierte a GGUF, aunque no hay archivos GGUF disponibles.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación es orientativa y no refleja capacidades reales del modelo evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hf99jack/den-6af78d22
+- Modelo en Hugging Face: https://huggingface.co/hf99jack/den-6af78d22
 - Perfil del autor: https://huggingface.co/hf99jack
 - Lista de modelos del autor: https://huggingface.co/hf99jack/models
 

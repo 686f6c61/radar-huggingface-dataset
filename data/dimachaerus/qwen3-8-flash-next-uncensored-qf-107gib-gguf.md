@@ -6,7 +6,7 @@ Dimachaerus/Qwen3.8-Flash-Next-Uncensored-QF-107GiB-GGUF es una cuantizacion GGU
 
 El problema que resuelve es el de servir una variante sin rechazos ("not-for-all-audiences") de un modelo de clase Qwen-Max en abierto, empaquetada en un unico fichero GGUF de aproximadamente 107 GiB y ~116 GB de repositorio, pensada para ejecutarse en hardware con memoria unificada grande (los tags mencionan explicitamente DGX Spark) o en configuraciones multi-GPU, usando llama.cpp. Frente a las cuantizaciones agresivas de 4 bits, este repo prioriza la calidad ("quality-focused", mixed-quant con imatrix) a costa de un peso muy alto.
 
-Es relevante ahora porque Qwen3.8 supone la primera release abierta de un modelo de clase Qwen-Max, con mejoras en codigo, trabajo profesional, investigacion y tareas agenticas de horizonte largo, y porque el ecosistema de variantes abliteradas en GGUF permite desplegarlo en local sin dependencia de API. El acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace. Idiomas declarados: ingles y chino.
+Es relevante ahora porque Qwen3.8 supone la primera release abierta de un modelo de clase Qwen-Max, con mejoras en codigo, trabajo profesional, investigacion y tareas agenticas de horizonte largo, y porque el ecosistema de variantes abliteradas en GGUF permite desplegarlo en local sin dependencia de API. El acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face. Idiomas declarados: ingles y chino.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ Los parametros, la longitud de contexto y el rendimiento de las alternativas no 
 - La cuantizacion mixta introduce perdida de precision respecto a los pesos originales en safetensors; el grado exacto no esta documentado.
 - Idiomas limitados a ingles y chino segun la ficha; el rendimiento en castellano no esta verificado y probablemente sea inferior.
 - Longitud de contexto no disponible: no se puede dimensionar la cache KV ni garantizar el comportamiento en conversaciones o documentos largos.
-- Licencia qwen-community-1.0 con acceso restringido (gated): es imprescindible aceptar las condiciones en HuggingFace y revisar las cláusulas de uso comercial antes de cualquier despliegue en produccion.
+- Licencia qwen-community-1.0 con acceso restringido (gated): es imprescindible aceptar las condiciones en Hugging Face y revisar las cláusulas de uso comercial antes de cualquier despliegue en produccion.
 - Coste de hardware muy alto: ~107 GiB de pesos implican multi-GPU o memoria unificada grande, con la complejidad operativa que ello conlleva.
 - Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia comunitaria de validacion de la calidad de la cuantizacion.
 - No se documentan parametros activos, por lo que no se puede estimar el coste real por token ni el throughput esperado.
@@ -88,7 +88,7 @@ Los parametros, la longitud de contexto y el rendimiento de las alternativas no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dimachaerus/Qwen3.8-Flash-Next-Uncensored-QF-107GiB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Dimachaerus/Qwen3.8-Flash-Next-Uncensored-QF-107GiB-GGUF
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Cuantizaciones alternativas (mradermacher): https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF
 - Cuantizacion IQ4XS-NGQ4 (cygnal): https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF

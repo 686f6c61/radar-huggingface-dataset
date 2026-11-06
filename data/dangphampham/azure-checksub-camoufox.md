@@ -1,7 +1,7 @@
 # DangPhamPham/azure-checksub-camoufox
 
 ## Resumen
-Este repositorio de HuggingFace, identificado como `DangPhamPham/azure-checksub-camoufox`, no contiene un modelo de inteligencia artificial, sino una herramienta de automatización escrita en Python. Su propósito es verificar el estado de suscripciones de Microsoft Azure, listar recursos y extraer información de facturación mediante el navegador antidetect Camoufox (una versión modificada de Firefox) y la librería Playwright. El autor, DangPhamPham, la presenta como una utilidad para gestionar múltiples cuentas de Azure de forma automatizada, con soporte para autenticación de dos factores (TOTP local o código por correo) y rotación de perfiles de navegador para evitar detección.
+Este repositorio de Hugging Face, identificado como `DangPhamPham/azure-checksub-camoufox`, no contiene un modelo de inteligencia artificial, sino una herramienta de automatización escrita en Python. Su propósito es verificar el estado de suscripciones de Microsoft Azure, listar recursos y extraer información de facturación mediante el navegador antidetect Camoufox (una versión modificada de Firefox) y la librería Playwright. El autor, DangPhamPham, la presenta como una utilidad para gestionar múltiples cuentas de Azure de forma automatizada, con soporte para autenticación de dos factores (TOTP local o código por correo) y rotación de perfiles de navegador para evitar detección.
 
 Dado que no se trata de un modelo de lenguaje, no existen arquitectura, parámetros, contexto ni cuantización. La herramienta se distribuye como código fuente, sin licencia especificada, y su uso implica interactuar con el portal web de Azure, lo que puede contravenir los términos de servicio de Microsoft. La ficha siguiente recoge la información disponible, adaptando la estructura estándar a este caso particular.
 
@@ -68,7 +68,7 @@ No disponible. No existen modelos comparables porque no se trata de un modelo de
 - Licencia no especificada: no se indica bajo que licencia se distribuye el codigo, lo que genera incertidumbre legal sobre su uso y modificacion.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/DangPhamPham/azure-checksub-camoufox
+- Repositorio Hugging Face: https://huggingface.co/DangPhamPham/azure-checksub-camoufox
 - Camoufox (navegador antidetect): https://camoufox.com/
 - Proyecto relacionado CamoFox MCP (servidor de automatizacion): https://github.com/redf0x1/camofox-mcp
 - Catalogo de modelos de Microsoft Foundry (contexto de Azure AI): https://ai.azure.com/catalog

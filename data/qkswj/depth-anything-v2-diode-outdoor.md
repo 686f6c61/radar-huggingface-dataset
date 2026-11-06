@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qkswj/depth-anything-v2-diode-outdoor` es un checkpoint de estimacion de profundidad monocular (MDE) publicado en HuggingFace por el usuario qkswj, derivado de la arquitectura Depth Anything V2. El nombre del repositorio sugiere un ajuste fino sobre el subconjunto *outdoor* del dataset DIODE (DIstributed Open-source Dataset for Indoor and Outdoor). El modelo tiene 24.785.089 parametros segun los pesos en safetensors y un tamano de repositorio de 0,1 GB, lo que lo situa en el rango de la variante ligera (ViT-S) de la familia Depth Anything V2.
+`qkswj/depth-anything-v2-diode-outdoor` es un checkpoint de estimacion de profundidad monocular (MDE) publicado en Hugging Face por el usuario qkswj, derivado de la arquitectura Depth Anything V2. El nombre del repositorio sugiere un ajuste fino sobre el subconjunto *outdoor* del dataset DIODE (DIstributed Open-source Dataset for Indoor and Outdoor). El modelo tiene 24.785.089 parametros segun los pesos en safetensors y un tamano de repositorio de 0,1 GB, lo que lo situa en el rango de la variante ligera (ViT-S) de la familia Depth Anything V2.
 
 El modelo resuelve la tarea de predecir un mapa de profundidad denso a partir de una unica imagen RGB, una capacidad central para robotica, realidad aumentada, conduccion autonoma y post-procesado fotografico. Al ser un derivado de Depth Anything V2, hereda la arquitectura encoder ViT inicializado desde DINOv2 con cabecera de decodificacion tipo DPT, aunque no hay confirmacion explicita de estos detalles en la informacion disponible para este checkpoint concreto.
 
@@ -30,7 +30,7 @@ Es relevante ahora por su tamano reducido, que permite inferencia en tiempo real
 
 ## Arquitectura y entrenamiento
 
-La informacion especifica de este checkpoint no esta disponible: la model card es la plantilla por defecto de HuggingFace y no incluye detalles de arquitectura, datos de entrenamiento, hiperparametros ni procedimiento. Por extension de la familia a la que pertenece, Depth Anything V2 combina un encoder Vision Transformer inicializado desde DINOv2 con una cabecera de decodificacion densa basada en DPT, que fusiona caracteristicas multi-escala para producir un mapa de profundidad a la resolucion de la imagen de entrada. El recuento de 24,78 millones de parametros es coherente con la variante mas pequena (ViT-S) del modelo base, aunque el repositorio no lo confirma.
+La informacion especifica de este checkpoint no esta disponible: la model card es la plantilla por defecto de Hugging Face y no incluye detalles de arquitectura, datos de entrenamiento, hiperparametros ni procedimiento. Por extension de la familia a la que pertenece, Depth Anything V2 combina un encoder Vision Transformer inicializado desde DINOv2 con una cabecera de decodificacion densa basada en DPT, que fusiona caracteristicas multi-escala para producir un mapa de profundidad a la resolucion de la imagen de entrada. El recuento de 24,78 millones de parametros es coherente con la variante mas pequena (ViT-S) del modelo base, aunque el repositorio no lo confirma.
 
 En cuanto al entrenamiento, la informacion publica de Depth Anything V2 (paper arXiv:2406.09414, NeurIPS 2024) describe un pipeline en dos etapas: primero se entrena un modelo profesor exclusivamente con imagenes sinteticas etiquetadas (595.000 imagenes) para evitar la imprecision de los mapas de profundidad obtenidos de datos reales, y despues se generan pseudo-etiquetas sobre mas de 62 millones de imagenes reales no etiquetadas para entrenar al modelo estudiante. Este checkpoint concreto parece ser un ajuste adicional sobre el subconjunto de exterior del dataset DIODE, pero no hay ninguna fuente en la informacion proporcionada que confirme el numero de pasos, la tasa de aprendizaje, el numero de imagenes utilizadas ni si se congelo el encoder. Tampoco se documenta el uso de RLHF, DPO ni tecnicas de alineacion, algo por otra parte esperable en un modelo puramente perceptivo.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, la informacion publica de Depth Anything V2 (paper a
 - Estimacion de profundidad monocular densa: genera un mapa de profundidad por pixel a partir de una unica imagen RGB.
 - Especializacion en escenas de exterior, segun indica el sufijo `diode-outdoor` del identificador del repositorio.
 - Integracion nativa con la libreria `transformers` mediante el pipeline `depth-estimation`.
-- Compatibilidad declarada con HuggingFace Inference Endpoints (`endpoints_compatible`).
+- Compatibilidad declarada con Hugging Face Inference Endpoints (`endpoints_compatible`).
 - Salida apta para tareas posteriores de reconstruccion 3D, segmentacion guiada por profundidad o generacion de mapas de disparidad.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni procesamiento de audio o video.
 - No se documenta soporte multilingue ni entrada de texto de ningun tipo.
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `qkswj/depth-anything-v2-diode-outdoor` | 24,8 M | MDE monocular, ajuste sobre DIODE outdoor | no disponible | HuggingFace, 24 descargas | Ajuste comunitario sin evaluacion publicada |
-| Depth Anything V2 (modelo base) | no disponible en la informacion proporcionada (variantes ViT-S, ViT-B, ViT-L y ViT-G) | MDE monocular | licencia del proyecto original, no detallada aqui | HuggingFace y GitHub oficiales | Entrenado con 595K imagenes sinteticas etiquetadas y 62M+ reales sin etiquetar |
-| Depth Anything V1 | no disponible | MDE monocular | no disponible | HuggingFace y GitHub | Version anterior; V2 reporta mayor detalle fino y robustez |
+| `qkswj/depth-anything-v2-diode-outdoor` | 24,8 M | MDE monocular, ajuste sobre DIODE outdoor | no disponible | Hugging Face, 24 descargas | Ajuste comunitario sin evaluacion publicada |
+| Depth Anything V2 (modelo base) | no disponible en la informacion proporcionada (variantes ViT-S, ViT-B, ViT-L y ViT-G) | MDE monocular | licencia del proyecto original, no detallada aqui | Hugging Face y GitHub oficiales | Entrenado con 595K imagenes sinteticas etiquetadas y 62M+ reales sin etiquetar |
+| Depth Anything V1 | no disponible | MDE monocular | no disponible | Hugging Face y GitHub | Version anterior; V2 reporta mayor detalle fino y robustez |
 | Marigold / GeoWizard | no disponible | MDE basado en modelos de difusion | no disponible | Repositorios propios | Mayor coste computacional; el paper de V2 reporta menor velocidad y mayor peso |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de las alternativas dentro de la informacion proporcionada; las filas se han dejado como "no disponible" para no introducir cifras sin respaldo.
@@ -95,7 +95,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qkswj/depth-anything-v2-diode-outdoor
+- Modelo en Hugging Face: https://huggingface.co/qkswj/depth-anything-v2-diode-outdoor
 - Paper de Depth Anything V2 (arXiv:2406.09414): https://arxiv.org/html/2406.09414v2
 - Pagina oficial del proyecto Depth Anything V2: https://depth-anything-v2.github.io/
 - Repositorio GitHub de Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2

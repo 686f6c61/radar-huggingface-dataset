@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-EfficientThink es un ajuste fino (fine-tune) del modelo Qwen3.8 de 27B de parámetros, publicado por el usuario ronghua en HuggingFace. El modelo parte de una base densa de la familia Qwen y se ha afinado mediante SFT (supervised fine-tuning) seguido de SimPO (una variante de optimización por preferencias) para mejorar el razonamiento eficiente, la generación de código y el comportamiento conversacional. La nomenclatura del repositorio hace referencia a datos de entrenamiento derivados de varios modelos frontera (K3, Opus5, Grok4.6, GPT5.6Sol), lo que sugiere una destilación de estilos de respuesta.
+Qwen3.8-27B-EfficientThink es un ajuste fino (fine-tune) del modelo Qwen3.8 de 27B de parámetros, publicado por el usuario ronghua en Hugging Face. El modelo parte de una base densa de la familia Qwen y se ha afinado mediante SFT (supervised fine-tuning) seguido de SimPO (una variante de optimización por preferencias) para mejorar el razonamiento eficiente, la generación de código y el comportamiento conversacional. La nomenclatura del repositorio hace referencia a datos de entrenamiento derivados de varios modelos frontera (K3, Opus5, Grok4.6, GPT5.6Sol), lo que sugiere una destilación de estilos de respuesta.
 
 La característica más destacada es su orientación "uncensored" (etiqueta heretic), es decir, sin los filtros de rechazo habituales, junto con un modo de pensamiento (thinking mode) eficiente que busca reducir la longitud de las cadenas de razonamiento. El autor publica además cuantizaciones GGUF en seis niveles (de Q2 a Q8) con esquemas mixtos propietarios (LynnStyle, GSQ-RCO) y soporte de decodificación especulativa DFlash2 y MTP.
 
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ronghua/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
+- Hugging Face: https://huggingface.co/ronghua/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Repositorio GGUF: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
 - Repositorio NVFP4/MTP: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-MTP-NVFP4
 - Lynn Agent (GitHub): https://github.com/MerkyorLynn/Lynn/releases/tag/v0.87.0

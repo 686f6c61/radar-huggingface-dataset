@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kashanalyas/t5-small-samsum | 60,5 M | 512 tokens | Sumarizacion de dialogos (SAMSum) | Apache 2.0 | HuggingFace, 0 descargas |
-| google-t5/t5-small (modelo base) | 60,5 M | 512 tokens | Tarea general con prefijos (no ajustado a SAMSum) | Apache 2.0 | HuggingFace |
+| kashanalyas/t5-small-samsum | 60,5 M | 512 tokens | Sumarizacion de dialogos (SAMSum) | Apache 2.0 | Hugging Face, 0 descargas |
+| google-t5/t5-small (modelo base) | 60,5 M | 512 tokens | Tarea general con prefijos (no ajustado a SAMSum) | Apache 2.0 | Hugging Face |
 | Otros ajustes sobre SAMSum (BART-large, PEGASUS, etc.) | no disponible | no disponible | Sumarizacion de dialogos | no disponible | no disponible |
 | Modelos generativos instructivos de 1-3 B parametros | no disponible | no disponible | Proposito general, resumen zero-shot | no disponible | no disponible |
 
@@ -95,6 +95,6 @@ El unico comparable directo con datos verificables en la informacion disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kashanalyas/t5-small-samsum
+- Modelo en Hugging Face: https://huggingface.co/kashanalyas/t5-small-samsum
 - Modelo base: https://huggingface.co/google-t5/t5-small
 - Nota: los resultados de la busqueda web realizada no guardaban ninguna relacion con este modelo ni con la sumarizacion de dialogos, por lo que se han descartado y no se incluyen como fuentes.

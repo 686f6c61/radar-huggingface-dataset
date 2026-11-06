@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_olmo-3-7b_seed42
 - Herramienta Tinker (usada para el entrenamiento): https://thinkingmachines.ai/tinker/
 - Modelo base (referenciado): https://huggingface.co/Qwen/Qwen3.6-27B (enlace no verificado, se infiere del nombre)

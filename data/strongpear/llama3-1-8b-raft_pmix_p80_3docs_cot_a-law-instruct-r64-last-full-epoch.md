@@ -77,9 +77,9 @@ No se dispone de comparativas con otros modelos legales de código abierto (como
 
 ## Enlaces
 
-- [HuggingFace: strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch](https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch)
-- [HuggingFace: strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64)
-- [HuggingFace: strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64)
+- [Hugging Face: strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch](https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch)
+- [Hugging Face: strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64)
+- [Hugging Face: strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Documentación de Llama 3.1 (Meta)](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_1/)
 - [Llama 3.1 8B en Ollama](https://ollama.com/library/llama3.1:8b)

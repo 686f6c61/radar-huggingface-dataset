@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no identifica la tarea exacta, el ta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ds_voxceleb1_fcaps_1n_smoke | no disponible | no disponible | no disponible | no disponible | HuggingFace (VoiceNetCkpt) |
+| ds_voxceleb1_fcaps_1n_smoke | no disponible | no disponible | no disponible | no disponible | Hugging Face (VoiceNetCkpt) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no identifica la tarea exacta, el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_voxceleb1_fcaps_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_voxceleb1_fcaps_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

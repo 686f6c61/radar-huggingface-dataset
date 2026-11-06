@@ -75,9 +75,9 @@ Notas metodologicas del autor: MusicTheoryBench no se uso en el entrenamiento; e
 
 | Modelo | Tipo | Base / tamano | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JumperV/Diapason | LoRA sobre LLM | Qwen3-4B-Instruct-2507 (~4B) | Opera y teoria musical (calculs exactos 89,4 %) | Apache-2.0 | HuggingFace, safetensors (adaptador PEFT) |
-| Qwen/Qwen3-4B-Instruct-2507 | LLM general | ~4B | Generalista (drills: 15,1 %) | Apache-2.0 | HuggingFace, multiples formatos |
-| m-a-p/MusicTheoryBench | Dataset de evaluacion | no aplica | Evaluacion de teoria musical | no disponible | HuggingFace (datasets) |
+| JumperV/Diapason | LoRA sobre LLM | Qwen3-4B-Instruct-2507 (~4B) | Opera y teoria musical (calculs exactos 89,4 %) | Apache-2.0 | Hugging Face, safetensors (adaptador PEFT) |
+| Qwen/Qwen3-4B-Instruct-2507 | LLM general | ~4B | Generalista (drills: 15,1 %) | Apache-2.0 | Hugging Face, multiples formatos |
+| m-a-p/MusicTheoryBench | Dataset de evaluacion | no aplica | Evaluacion de teoria musical | no disponible | Hugging Face (datasets) |
 
 No se conocen otros adaptadores LoRA de teoria musical u opera directamente comparables con resultados publicados; no disponible.
 
@@ -96,7 +96,7 @@ No se conocen otros adaptadores LoRA de teoria musical u opera directamente comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JumperV/Diapason
+- Modelo en Hugging Face: https://huggingface.co/JumperV/Diapason
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de evaluacion MusicTheoryBench: https://huggingface.co/datasets/m-a-p/MusicTheoryBench
 - Open Music Theory, Version 2 (fuente de datos): https://viva.pressbooks.pub/openmusictheory/

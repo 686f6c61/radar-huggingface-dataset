@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed101` es un modelo de generación de texto publicado en HuggingFace por la cuenta `Beetle-FineWeb-2B`. Se trata de un modelo decoder-only de pequeño tamano, con 193.804.032 parametros totales (aproximadamente 194 millones) en formato safetensors, etiquetado con la arquitectura personalizada `pico_decoder` y con el pipeline `text-generation`. El identificador del repositorio sugiere un entrenamiento bilingue neerlandes-ingles (`nld-eng`) sobre un corpus derivado de FineWeb, con una semilla concreta (`seed101`) y algun tipo de regimen de entrenamiento secuencial por idioma (`sequential-33-67`), aunque la model card no confirma ninguno de estos extremos.
+El modelo `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed101` es un modelo de generación de texto publicado en Hugging Face por la cuenta `Beetle-FineWeb-2B`. Se trata de un modelo decoder-only de pequeño tamano, con 193.804.032 parametros totales (aproximadamente 194 millones) en formato safetensors, etiquetado con la arquitectura personalizada `pico_decoder` y con el pipeline `text-generation`. El identificador del repositorio sugiere un entrenamiento bilingue neerlandes-ingles (`nld-eng`) sobre un corpus derivado de FineWeb, con una semilla concreta (`seed101`) y algun tipo de regimen de entrenamiento secuencial por idioma (`sequential-33-67`), aunque la model card no confirma ninguno de estos extremos.
 
-El modelo es relevante en el nicho de los modelos pequenos multilingues: por su tamano puede ejecutarse en hardware muy modesto, incluso en CPU, y sirve como base para experimentos de entrenamiento bilingue, ajuste fino por dominio y prototipado rapido. Sin embargo, la model card es la plantilla autogenerada de HuggingFace y no contiene ni un solo dato cumplimentado: no hay informacion sobre desarrolladores, datos de entrenamiento, hiperparametros, licencia, idiomas declarados ni resultados de evaluacion.
+El modelo es relevante en el nicho de los modelos pequenos multilingues: por su tamano puede ejecutarse en hardware muy modesto, incluso en CPU, y sirve como base para experimentos de entrenamiento bilingue, ajuste fino por dominio y prototipado rapido. Sin embargo, la model card es la plantilla autogenerada de Hugging Face y no contiene ni un solo dato cumplimentado: no hay informacion sobre desarrolladores, datos de entrenamiento, hiperparametros, licencia, idiomas declarados ni resultados de evaluacion.
 
 La unica documentacion tecnica disponible son las etiquetas y los metadatos del repositorio, mas el recuento real de parametros extraido de los ficheros safetensors. Todo lo demas debe considerarse no disponible.
 
@@ -30,7 +30,7 @@ La unica documentacion tecnica disponible son las etiquetas y los metadatos del 
 
 La unica informacion fiable sobre la arquitectura es la etiqueta `pico_decoder`, que apunta a una implementacion personalizada registrada mediante `custom_code` en la libreria transformers. Esto implica que el modelo no se carga con clases estandar de transformers y que su uso requiere `trust_remote_code=True`. El pipeline declarado (`text-generation`), la presencia de safetensors como unico formato de pesos y la ausencia de cualquier etiqueta de vision o audio son compatibles con un transformer decoder-only autorregresivo, pero no hay documentacion que detalle el numero de capas, dimension oculta, numero de cabezas de atencion, tipo de normalizacion, funcion de activacion ni esquema posicional.
 
-Respecto al entrenamiento, no hay ningun dato publicado: ni numero de tokens, ni composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. El identificador del repositorio contiene indicios que no deben tomarse como hechos confirmados: `fineweb-2b` sugiere el uso del corpus FineWeb (o FineWeb-2) a una escala de 2B, `nld-eng` sugiere un reparto bilingue neerlandes-ingles, `sequential-33-67` sugiere un curriculum de entrenamiento secuencial con una proporcion 33/67 entre idiomas, `l2-50` podria referirse a un esquema de pesos o capas compartidas, y `seed101` indica la semilla aleatoria del experimento. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, presente en la plantilla por defecto de HuggingFace, y no a un paper sobre este modelo.
+Respecto al entrenamiento, no hay ningun dato publicado: ni numero de tokens, ni composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. El identificador del repositorio contiene indicios que no deben tomarse como hechos confirmados: `fineweb-2b` sugiere el uso del corpus FineWeb (o FineWeb-2) a una escala de 2B, `nld-eng` sugiere un reparto bilingue neerlandes-ingles, `sequential-33-67` sugiere un curriculum de entrenamiento secuencial con una proporcion 33/67 entre idiomas, `l2-50` podria referirse a un esquema de pesos o capas compartidas, y `seed101` indica la semilla aleatoria del experimento. El tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, presente en la plantilla por defecto de Hugging Face, y no a un paper sobre este modelo.
 
 Conviene senalar una anomalia tecnica: un modelo de 194 M de parametros ocupa aproximadamente 0,4 GB en fp16, por lo que un repositorio de 73,7 GB sugiere la presencia de multiples checkpoints de entrenamiento, estados del optimizador o copias redundantes de los pesos, no un unico conjunto de pesos de inferencia.
 
@@ -57,7 +57,7 @@ Conviene senalar una anomalia tecnica: un modelo de 194 M de parametros ocupa ap
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de HuggingFace y la seccion de evaluacion contiene unicamente el marcador `[More Information Needed]`. No existen datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra metrica para este modelo, y por tanto no es posible compararlo cuantitativamente con alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de Hugging Face y la seccion de evaluacion contiene unicamente el marcador `[More Information Needed]`. No existen datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra metrica para este modelo, y por tanto no es posible compararlo cuantitativamente con alternativas.
 
 ## Requisitos de hardware
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que cualquier compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-l2-50-...-seed101 | 193,8 M | no disponible | no disponible | HuggingFace, requiere `trust_remote_code` |
-| GPT-2 | 124 M | 1024 tokens | licencia MIT modificada | HuggingFace, ampliamente integrado |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con suite completa de checkpoints |
+| beetle-bilingual-l2-50-...-seed101 | 193,8 M | no disponible | no disponible | Hugging Face, requiere `trust_remote_code` |
+| GPT-2 | 124 M | 1024 tokens | licencia MIT modificada | Hugging Face, ampliamente integrado |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con suite completa de checkpoints |
 
 No es posible comparar calidad, perplexity ni capacidad multilingue porque no existe ninguna evaluacion publicada de este modelo. Ademas, a diferencia de GPT-2 y Pythia, que cuentan con implementaciones nativas en las principales librerias de inferencia, este modelo depende de codigo personalizado, lo que reduce su portabilidad.
 
@@ -102,6 +102,6 @@ No es posible comparar calidad, perplexity ni capacidad multilingue porque no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed101
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-nld-eng-seed101
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones de carbono, ajeno al modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden al escarabajo (insecto) y al automovil Volkswagen Beetle, y no guardan relacion con este repositorio. No hay paper, blog, repositorio de codigo ni demo asociados al modelo en la informacion disponible.

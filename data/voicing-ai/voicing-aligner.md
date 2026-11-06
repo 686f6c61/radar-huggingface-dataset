@@ -73,5 +73,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voicing-ai/voicing-aligner
+- Repositorio Hugging Face: https://huggingface.co/voicing-ai/voicing-aligner
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

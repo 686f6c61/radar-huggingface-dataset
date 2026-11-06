@@ -71,9 +71,9 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-governed-norm
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-governed-norm
 - Repositorio GitHub (legado): https://github.com/szl-holdings/szl-governed-norm
-- Sucesor en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-lambda-gate
+- Sucesor en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-lambda-gate
 - Sucesor en GitHub (fuente plegada): https://github.com/szl-holdings/szl-lambda-gate/tree/d3a91edbe2595bac1ead1007963b4b7b8857eb19/torch-ext/szl_lambda_gate/governed_norm
 - Documentación de SZL Holdings: https://szl-holdings.github.io/docs-site/
 - DOI: 10.5281/zenodo.19944926

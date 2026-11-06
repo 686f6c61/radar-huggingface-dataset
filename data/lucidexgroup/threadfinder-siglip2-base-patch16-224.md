@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThreadFinder SigLIP 2 Base patch16-224 (esta ficha) | no disponible | 64 tokens de texto; imagen 224x224 | Core ML | Apache-2.0 | HuggingFace, 0 descargas |
-| google/siglip2-base-patch16-224 | no disponible | 64 tokens de texto; imagen 224x224 | safetensors (PyTorch) | Apache-2.0 | HuggingFace, modelo base oficial |
-| SigLIP original (base patch16-224) | no disponible | 64 tokens de texto; imagen 224x224 | safetensors | Apache-2.0 | HuggingFace |
-| CLIP ViT-B/32 | no disponible | 77 tokens de texto; imagen 224x224 | safetensors | MIT (segun publicacion original) | HuggingFace |
+| ThreadFinder SigLIP 2 Base patch16-224 (esta ficha) | no disponible | 64 tokens de texto; imagen 224x224 | Core ML | Apache-2.0 | Hugging Face, 0 descargas |
+| google/siglip2-base-patch16-224 | no disponible | 64 tokens de texto; imagen 224x224 | safetensors (PyTorch) | Apache-2.0 | Hugging Face, modelo base oficial |
+| SigLIP original (base patch16-224) | no disponible | 64 tokens de texto; imagen 224x224 | safetensors | Apache-2.0 | Hugging Face |
+| CLIP ViT-B/32 | no disponible | 77 tokens de texto; imagen 224x224 | safetensors | MIT (segun publicacion original) | Hugging Face |
 
 La comparativa se limita a lo verificable: el modelo de esta ficha es una conversion del segundo, con el mismo contrato de entrada y salida pero formato Core ML y cuantizacion `palettized8`. No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a lo verificable: el modelo de esta ficha es una conver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LucidexGroup/threadfinder-siglip2-base-patch16-224
+- Modelo en Hugging Face: https://huggingface.co/LucidexGroup/threadfinder-siglip2-base-patch16-224
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Repositorio del modelo base en GitHub (Google Big Vision): https://github.com/google-research/big_vision

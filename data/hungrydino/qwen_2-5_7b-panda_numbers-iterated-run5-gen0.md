@@ -4,7 +4,7 @@
 
 HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen0 es un ajuste fino (fine-tune) del modelo instructivo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino bajo licencia Apache 2.0. Se distribuye en formato safetensors con soporte para la libreria transformers y text-generation-inference (TGI), y su unico idioma declarado es el ingles. El repositorio tiene un tamano de 0,1 GB, muy inferior a los ~15 GB que ocuparian los pesos completos de un modelo de 7.600 millones de parametros en FP16, lo que apunta a un artefacto de ajuste tipo LoRA/PEFT mas que a una copia completa de los pesos.
 
-La model card es minima: no documenta el conjunto de datos de entrenamiento, el numero de tokens, la receta de ajuste (RLHF, DPO, SFT), ni el objetivo concreto del fine-tune. El unico dato tecnico aportado es que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace. El nombre del repositorio ("panda_numbers-iterated-run5-gen0") sugiere un experimento iterativo sobre una tarea sintetica o numerica, pero no hay documentacion que lo confirme.
+La model card es minima: no documenta el conjunto de datos de entrenamiento, el numero de tokens, la receta de ajuste (RLHF, DPO, SFT), ni el objetivo concreto del fine-tune. El unico dato tecnico aportado es que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face. El nombre del repositorio ("panda_numbers-iterated-run5-gen0") sugiere un experimento iterativo sobre una tarea sintetica o numerica, pero no hay documentacion que lo confirme.
 
 Por tanto, esta ficha describe principalmente las caracteristicas heredadas del modelo base Qwen2.5-7B-Instruct, y marca explicitamente como "no disponible" todo aquello que la publicacion no especifica. Es relevante como ejemplo de fine-tune ligero reproducible con Unsloth, no como un modelo con prestaciones verificadas de forma independiente.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen0 | ~7,6 B (heredado) | 32.768 nativo (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune no documentado; sin benchmarks |
-| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Amplia adopcion en HuggingFace | Modelo de referencia; documentacion completa |
+| HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen0 | ~7,6 B (heredado) | 32.768 nativo (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune no documentado; sin benchmarks |
+| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Amplia adopcion en Hugging Face | Modelo de referencia; documentacion completa |
 | Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Amplia adopcion | Alternativa de tamano similar con contextos comparables |
 | Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Licencia comunitaria de Meta | Muy amplia adopcion | Mayor contexto nativo; licencia con restricciones adicionales |
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativo del modelo objeto de esta fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen0
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run5-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente resultados no relacionados (Instagram).

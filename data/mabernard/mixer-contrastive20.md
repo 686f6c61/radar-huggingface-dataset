@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MABERNARD/mixer-contrastive20` es un repositorio experimental publicado en HuggingFace por el usuario MABERNARD que contiene una implementacion propia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye ademas `predict.py` como artefacto principal, `config.json` con la configuracion de arquitectura y `training_args.json` con la receta de experimento por defecto.
+`MABERNARD/mixer-contrastive20` es un repositorio experimental publicado en Hugging Face por el usuario MABERNARD que contiene una implementacion propia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio incluye ademas `predict.py` como artefacto principal, `config.json` con la configuracion de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
 El modelo declara 49.600 parametros totales segun los datos reales de los tensores en formato safetensors, una cifra muy reducida que contrasta con la etiqueta de escala "xlarge" que aparece en la configuracion de arquitectura. Esta discrepancia sugiere que el repositorio esta pensado como banco de pruebas de cambios arquitectonicos antes de lanzar un entrenamiento completo, no como un artefacto listo para produccion.
 
@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MABERNARD/mixer-contrastive20 | 49.600 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
-| Maortega0816/mixer-contrastive | no disponible | no disponible | sin benchmarks | Apache-2.0 | HuggingFace, 0 likes |
+| MABERNARD/mixer-contrastive20 | 49.600 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
+| Maortega0816/mixer-contrastive | no disponible | no disponible | sin benchmarks | Apache-2.0 | Hugging Face, 0 likes |
 
 El unico comparable identificado en la busqueda web es `Maortega0816/mixer-contrastive`, un repositorio con la misma estructura de model card ("Mixer for Contrastive", secciones de estado del repositorio, arquitectura, receta por defecto, comprobacion rapida, guia de evaluacion, limitaciones, ficheros y licencia). Se diferencian en la licencia (Apache-2.0 frente a BSD-3-Clause) y en que el recuento de parametros del segundo no esta disponible en la informacion recopilada. No se han encontrado otros modelos comparables de la misma categoria en las fuentes consultadas.
 
@@ -107,5 +107,5 @@ El unico comparable identificado en la busqueda web es `Maortega0816/mixer-contr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MABERNARD/mixer-contrastive20
-- Repositorio relacionado en HuggingFace: https://huggingface.co/Maortega0816/mixer-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/MABERNARD/mixer-contrastive20
+- Repositorio relacionado en Hugging Face: https://huggingface.co/Maortega0816/mixer-contrastive

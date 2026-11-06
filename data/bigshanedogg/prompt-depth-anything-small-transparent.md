@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo de salida | Prompt de profundidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prompt-Depth-Anything-Small-Transparent (este) | 25.083.079 | Profundidad métrica (metros) | Sí (LiDAR de baja resolución) | Apache-2.0 | HuggingFace, `transformers` con `trust_remote_code` |
+| Prompt-Depth-Anything-Small-Transparent (este) | 25.083.079 | Profundidad métrica (metros) | Sí (LiDAR de baja resolución) | Apache-2.0 | Hugging Face, `transformers` con `trust_remote_code` |
 | Prompt Depth Anything original (`depth-anything/prompt-depth-anything-vits-transparent`) | no disponible en la información proporcionada | Profundidad métrica (metros) | Sí | Apache-2.0 | Repositorio oficial DepthAnything/PromptDA |
-| Depth Anything (monocular) | no disponible en la información proporcionada | Profundidad relativa/métrica sin prompt | No | no disponible en la información proporcionada | HuggingFace |
+| Depth Anything (monocular) | no disponible en la información proporcionada | Profundidad relativa/métrica sin prompt | No | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento numérico frente a estas alternativas.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento numér
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Small-Transparent
-- Modelo base en HuggingFace: https://huggingface.co/depth-anything/prompt-depth-anything-vits-transparent
+- Modelo en Hugging Face: https://huggingface.co/bigshanedogg/Prompt-Depth-Anything-Small-Transparent
+- Modelo base en Hugging Face: https://huggingface.co/depth-anything/prompt-depth-anything-vits-transparent
 - Repositorio oficial PromptDA: https://github.com/DepthAnything/PromptDA
 - Paper *"Prompting Depth Anything for 4K Resolution Accurate Metric Depth Estimation"* (CVPR 2025): https://arxiv.org/abs/2412.14015 (referencia de arXiv indicada en la citación; no verificada en la información proporcionada)

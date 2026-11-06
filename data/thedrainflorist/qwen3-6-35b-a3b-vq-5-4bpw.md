@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento en tareas para ninguna de estas versiones,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-5.4bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-5.4bpw
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guia de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

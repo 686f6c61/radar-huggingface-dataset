@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yypeng666/reanchor-pi05-conveyor-static-v1",
+  "slug": "yypeng666-reanchor-pi05-conveyor-static-v1",
+  "author": "yypeng666",
+  "url": "https://huggingface.co/yypeng666/reanchor-pi05-conveyor-static-v1",
+  "created_at": "2026-11-04T18:40:08.000Z",
+  "updated_at": "2026-11-05T01:52:35.000Z",
+  "license": "pi05",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "reanchor",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37322912397,
+  "storage_human": "37.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yypeng666/reanchor-conveyor-static-ikabs-v2 - Hugging Face",
+      "url": "https://huggingface.co/datasets/yypeng666/reanchor-conveyor-static-ikabs-v2",
+      "snippet": "Dataset with 32.1k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "GitHub - 666harrypeng/reanchor-openpi-sft: pi0.5 full-parameter SFT on ...",
+      "url": "https://github.com/666harrypeng/reanchor-openpi-sft",
+      "snippet": "Licence The code in this repository is released under the Apache License 2.0 (LICENSE). The π0.5 base model and the fine-tuned checkpoints derived from it are subject to their own terms (licenses/pi05/LICENSE, NOTICE, GEMMA_TERMS.txt), which are also attached to every published checkpoint. pi0.5 full-parameter SFT on the reanchor conveyor static demonstrations (openpi, JAX, replicated data ..."
+    }
+  ]
+}

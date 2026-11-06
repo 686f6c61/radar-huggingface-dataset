@@ -20,7 +20,7 @@ La informacion disponible es muy limitada: la model card apenas describe el pipe
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el campo de la model card contiene unicamente el marcador "licence: license"; el uso queda sujeto a la licencia del modelo base) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); no incluye pesos fusionados |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Libreria | peft |
 | Pipeline | text-generation |
 | Dataset de entrenamiento | opencoder educational instruct (segun el nombre del modelo); no se documenta composicion ni volumen |
@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa.
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-1234-G-8 | Adaptador LoRA con GRPO, semilla 1234 | Adaptador sobre base de 7B | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| rghosh8/...seed-42-G-8 | Misma receta, semilla 42 | Adaptador sobre base de 7B | no disponible | no disponible | Publico en HuggingFace |
-| rghosh8/...seed-3407-G-8 y ..._merged | Misma receta, semilla 3407; existe variante con pesos fusionados (13.8 GB) | Adaptador o modelo completo de 7B | no disponible | no disponible | Publico en HuggingFace |
-| deepseek-ai/deepseek-llm-7b-chat | Modelo base sin el ajuste GRPO | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida; consultar su model card | Publico en HuggingFace |
+| rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-1234-G-8 | Adaptador LoRA con GRPO, semilla 1234 | Adaptador sobre base de 7B | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| rghosh8/...seed-42-G-8 | Misma receta, semilla 42 | Adaptador sobre base de 7B | no disponible | no disponible | Publico en Hugging Face |
+| rghosh8/...seed-3407-G-8 y ..._merged | Misma receta, semilla 3407; existe variante con pesos fusionados (13.8 GB) | Adaptador o modelo completo de 7B | no disponible | no disponible | Publico en Hugging Face |
+| deepseek-ai/deepseek-llm-7b-chat | Modelo base sin el ajuste GRPO | 7B | no disponible en la informacion recogida | no disponible en la informacion recogida; consultar su model card | Publico en Hugging Face |
 
 Comparativas frente a alternativas de otros autores (Mistral-7B-Instruct, Llama-3.1-8B-Instruct u otros adaptadores de 7B): no disponible, al no existir metricas publicadas de este modelo.
 
@@ -99,7 +99,7 @@ Comparativas frente a alternativas de otros autores (Mistral-7B-Instruct, Llama-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-1234-G-8
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-1234-G-8
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Variante con semilla 42: https://huggingface.co/rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-42-G-8
 - Variante con semilla 3407: https://huggingface.co/rghosh8/deepseek-llm-7b-chat-opencoder-educational-instruct-seed-3407-G-8

@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y conviene ser transparente: el reposito
 | Plataforma objetivo | iOS (Core ML, inferencia en dispositivo) |
 | Tamano del repositorio | No disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-25 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-25 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de ite
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas (PSNR, SSIM, LPIPS) ni comparaciones cuantitativas con otros upscalers, y las busquedas web no aportan cifras para esta conversion concreta.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas (PSNR, SSIM, LPIPS) ni comparaciones cuantitativas con otros upscalers, y las busquedas web no aportan cifras para esta conversion concreta.
 
 ## Requisitos de hardware
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/333i/8x_NMKD-Superscale-coreml-ios
+- Ficha en Hugging Face: https://huggingface.co/333i/8x_NMKD-Superscale-coreml-ios
 - Serie NMKD en DeepWiki (Upscayl/custom-models): https://deepwiki.com/upscayl/custom-models/2.1-nmkd-model-series
 - Checkpoint original en el repositorio de ComfyUI de fofr: https://huggingface.co/fofr/comfyui/blob/489abf87f2f8311813695069020730ccdb1588cd/upscale_models/8x_NMKD-Superscale_150000_G.pth
-- Copia del checkpoint en HuggingFace (moi33): https://huggingface.co/moi33/8x_NMKD-Superscale_150000_G
+- Copia del checkpoint en Hugging Face (moi33): https://huggingface.co/moi33/8x_NMKD-Superscale_150000_G
 - Ficha del upscaler en CivArchive: https://civarchive.com/models/292030?modelVersionId=328284
 - Herramienta NMKD Stable Diffusion GUI del autor original: https://nmkd.itch.io/t2i-gui

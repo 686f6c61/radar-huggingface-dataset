@@ -68,7 +68,7 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [HuggingFace - manaca-1b-base-ONNX](https://huggingface.co/liodon-ai/manaca-1b-base-ONNX)
-- [HuggingFace - modelo base original](https://huggingface.co/menezesbruno/manaca-1b-base)
+- [Hugging Face - manaca-1b-base-ONNX](https://huggingface.co/liodon-ai/manaca-1b-base-ONNX)
+- [Hugging Face - modelo base original](https://huggingface.co/menezesbruno/manaca-1b-base)
 - [Paper en arXiv](https://arxiv.org/abs/2608.30114)
 - [Repositorio GitHub del proyecto](https://github.com/Instituto-IA-LNCC/manaca-1b-base)

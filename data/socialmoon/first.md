@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `socialmoon/first` es una publicación en HuggingFace creada por el usuario `socialmoon`. La información disponible en su página es extremadamente limitada: solo se indica que la licencia es MIT y que la región asociada es Estados Unidos. No se proporcionan datos sobre la arquitectura, el tamaño, la longitud de contexto, los idiomas o las capacidades del modelo, ni se ha publicado ninguna documentación técnica. El repositorio fue creado y actualizado el 9 de septiembre de 2026 y no registra descargas ni interacciones de la comunidad. Dada la ausencia de una model card descriptiva y de resultados de evaluación, no es posible determinar qué problema resuelve ni por qué sería relevante en el panorama actual de modelos abiertos. Se requiere precaución al considerar este modelo para cualquier uso, ya que no hay evidencias de entrenamiento, validación o soporte.
+El modelo `socialmoon/first` es una publicación en Hugging Face creada por el usuario `socialmoon`. La información disponible en su página es extremadamente limitada: solo se indica que la licencia es MIT y que la región asociada es Estados Unidos. No se proporcionan datos sobre la arquitectura, el tamaño, la longitud de contexto, los idiomas o las capacidades del modelo, ni se ha publicado ninguna documentación técnica. El repositorio fue creado y actualizado el 9 de septiembre de 2026 y no registra descargas ni interacciones de la comunidad. Dada la ausencia de una model card descriptiva y de resultados de evaluación, no es posible determinar qué problema resuelve ni por qué sería relevante en el panorama actual de modelos abiertos. Se requiere precaución al considerar este modelo para cualquier uso, ya que no hay evidencias de entrenamiento, validación o soporte.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `socialmoon/first` es una publicación en HuggingFace creada por el us
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo ni sobre los datos o procedimientos de entrenamiento. La página de HuggingFace no incluye una model card con descripción técnica, y el único contenido del README es la cabecera de licencia MIT. Por tanto, no es posible especificar si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o cualquier otra variante. Tampoco se conocen innovaciones técnicas destacables.
+No se dispone de información sobre la arquitectura del modelo ni sobre los datos o procedimientos de entrenamiento. La página de Hugging Face no incluye una model card con descripción técnica, y el único contenido del README es la cabecera de licencia MIT. Por tanto, no es posible especificar si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o cualquier otra variante. Tampoco se conocen innovaciones técnicas destacables.
 
 ## Capacidades
 
@@ -57,5 +57,5 @@ No se dispone de información sobre las características técnicas del modelo, p
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/socialmoon/first
+- Página de Hugging Face: https://huggingface.co/socialmoon/first
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

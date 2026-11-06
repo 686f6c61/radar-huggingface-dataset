@@ -116,7 +116,7 @@ Frente a la familia Qwen 3.6 27B Optimized Speed, la model card cita un registro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/Qwen3.8-27B-MTPLX-Optimized-Quality
+- Repositorio en Hugging Face: https://huggingface.co/npario/Qwen3.8-27B-MTPLX-Optimized-Quality
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio del runtime: https://mtplx.com
 - Benchmarks del proveedor: https://mtplx.com/benchmarks/

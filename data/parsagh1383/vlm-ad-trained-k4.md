@@ -100,7 +100,7 @@ ReMP-AD obtiene los mejores resultados en ambos datasets en esta ejecución. No 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Parsagh1383/vlm-ad-trained-k4
+- Repositorio en Hugging Face: https://huggingface.co/Parsagh1383/vlm-ad-trained-k4
 - PromptAD (CVPR 2024): paper no enlazado en la información disponible
 - ReMP-AD (ICCV 2025): paper no enlazado en la información disponible
 - IIPAD / AF-CLIP (ACM MM 2025): paper no enlazado en la información disponible

@@ -85,7 +85,7 @@ La comparativa con modelos de la familia Qwen se basa en datos publicos de dicho
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3.5-2b-natural-farming-v5-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3.5-2b-natural-farming-v5-GGUF
 - Modelo base: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5
 - Pagina de conveniencia del cuantizador: https://hf.tst.eu/model#qwen3.5-2b-natural-farming-v5-GGUF
 - Guia de uso de GGUF (TheBloke, referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | StagAI-CyberSecurity-26B-A4B-v2 (esta ficha) | 25,23 B totales, ~4 B activos | no disponible | Sin benchmarks publicados; el autor reporta mejora cualitativa sobre el base y sobre la v1 | Apache 2.0 | MLX (FP16, Q8, Q4) y GGUF (FP16, Q8_0, Q4_K_M) |
-| google/gemma-4-26b-a4b (modelo base) | 25,23 B totales, ~4 B activos | no disponible | Referencia sobre la que el autor afirma mejora | La del modelo base | Disponible en HuggingFace |
+| google/gemma-4-26b-a4b (modelo base) | 25,23 B totales, ~4 B activos | no disponible | Referencia sobre la que el autor afirma mejora | La del modelo base | Disponible en Hugging Face |
 | CyberStag-Security-26B-A4B-V1 (version anterior) | no disponible | no disponible | El autor indica que v2 mejora la calidad de respuesta de v1 | no disponible | no disponible |
 | Otros modelos especializados en ciberseguridad de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace (variante BF16-MLX): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-BF16-MLX
+- Modelo en Hugging Face (variante BF16-MLX): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-BF16-MLX
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b
 - Variante Q8 en MLX (referenciada en la model card): https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-Q8-MLX
 - Dataset en japones: https://huggingface.co/datasets/deer-sec/deer_sec-japanese-cybersecurity-chatml-v2

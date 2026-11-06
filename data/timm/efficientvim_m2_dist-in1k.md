@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientViM (efficientvim_m2_dist.in1k) es un modelo de clasificación de imágenes publicado por el equipo de timm (PyTorch Image Models) en HuggingFace. Se trata de una implementación del backbone EfficientViM propuesto en el paper "EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality" (arXiv:2411.15241, CVPR 2025), desarrollado originalmente por Sanghyeok Lee, Joonmyung Choi y Hyunwoo J. Kim (MLV Lab, Universidad de Corea). El modelo que nos ocupa, la variante M2, ha sido entrenada sobre ImageNet-1k mediante destilación por los propios autores del paper.
+EfficientViM (efficientvim_m2_dist.in1k) es un modelo de clasificación de imágenes publicado por el equipo de timm (PyTorch Image Models) en Hugging Face. Se trata de una implementación del backbone EfficientViM propuesto en el paper "EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality" (arXiv:2411.15241, CVPR 2025), desarrollado originalmente por Sanghyeok Lee, Joonmyung Choi y Hyunwoo J. Kim (MLV Lab, Universidad de Corea). El modelo que nos ocupa, la variante M2, ha sido entrenada sobre ImageNet-1k mediante destilación por los propios autores del paper.
 
 El modelo resuelve el problema clásico de clasificación de imágenes sobre 1000 clases, pero su interés principal es ser un *backbone* extremadamente ligero: apenas 15,3 millones de parámetros, 0,4 GMACs y 1,9 millones de activaciones para entradas de 224 x 224 píxeles. Esta combinación lo sitúa en la categoría de modelos pensados para despliegue en el borde (edge computing), dispositivos móviles o entornos con presupuesto de cómputo muy reducido, donde arquitecturas transformer convencionales resultan demasiado costosas.
 
@@ -75,7 +75,7 @@ La informacion proporcionada no incluye datos numericos de los modelos comparabl
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| efficientvim_m2_dist.in1k | 15,3 M | 224 x 224 px | MIT | HuggingFace, via timm |
+| efficientvim_m2_dist.in1k | 15,3 M | 224 x 224 px | MIT | Hugging Face, via timm |
 | EfficientViM (otras variantes del paper) | no disponible | no disponible | no disponible | GitHub mlvlab/EfficientViM |
 | EfficientViT (backbones ligeros) | no disponible | no disponible | no disponible | via timm |
 | MobileNetV3 / EfficientNet-B0 (referencias clasicas de edge) | no disponible | no disponible | no disponible | via timm |
@@ -96,11 +96,11 @@ No se dispone de cifras de precision ni de latencia para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m2_dist.in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m2_dist.in1k
 - Paper EfficientViM (arXiv:2411.15241): https://arxiv.org/abs/2411.15241
 - Repositorio oficial EfficientViM: https://github.com/mlvlab/EfficientViM
 - Repositorio timm (PyTorch Image Models): https://github.com/huggingface/pytorch-image-models
 - Pagina de resultados de timm: https://github.com/huggingface/pytorch-image-models/tree/main/results
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
 - timm en PyPI: https://pypi.org/project/timm/
 - Documentacion de timm: https://timm.fast.ai/

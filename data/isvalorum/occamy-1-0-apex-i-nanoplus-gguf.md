@@ -81,11 +81,11 @@ Nota: el valor de ΔPPL negativo indica una perplejidad ligeramente inferior a l
 
 | Modelo | Parámetros | Contexto | Cuantización | Tamaño | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Occamy-1.0 APEX-I-NanoPlus (esta ficha) | 34,66 B totales, ~3 B activos | 128K o superior | APEX-I-NanoPlus, ~2,93 BPW | 12,55 GB | 6,1695 | Apache 2.0 | HuggingFace (IsValorum) |
-| Occamy-1.0 APEX-I-MiniPlus V2.1 | 34,66 B totales, ~3 B activos | 128K o superior | APEX-I-MiniPlus, 3,40 BPW | 14,75 GB | 6,2432 | Apache 2.0 | HuggingFace (IsValorum) |
-| Occamy-1.0 base BF16 | 34,66 B totales, ~3 B activos | 128K o superior | Sin cuantizar | ~70 GB | ~6,18 | Apache 2.0 | HuggingFace (Accio-Lab) |
-| Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus | Clase 35B MoE | No disponible | APEX-I-NanoPlus, 2,93 BPW | ~13,0 GB | No disponible | Apache 2.0 (modelo base) | HuggingFace (IsValorum) |
-| Cuantizaciones comunitarias IQ2_S / IQ2_XXS | Clase 35B MoE | No disponible | 2 bits uniformes, sin `imatrix` | ~12,5 GB | No disponible | Según modelo base | HuggingFace (varios) |
+| Occamy-1.0 APEX-I-NanoPlus (esta ficha) | 34,66 B totales, ~3 B activos | 128K o superior | APEX-I-NanoPlus, ~2,93 BPW | 12,55 GB | 6,1695 | Apache 2.0 | Hugging Face (IsValorum) |
+| Occamy-1.0 APEX-I-MiniPlus V2.1 | 34,66 B totales, ~3 B activos | 128K o superior | APEX-I-MiniPlus, 3,40 BPW | 14,75 GB | 6,2432 | Apache 2.0 | Hugging Face (IsValorum) |
+| Occamy-1.0 base BF16 | 34,66 B totales, ~3 B activos | 128K o superior | Sin cuantizar | ~70 GB | ~6,18 | Apache 2.0 | Hugging Face (Accio-Lab) |
+| Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus | Clase 35B MoE | No disponible | APEX-I-NanoPlus, 2,93 BPW | ~13,0 GB | No disponible | Apache 2.0 (modelo base) | Hugging Face (IsValorum) |
+| Cuantizaciones comunitarias IQ2_S / IQ2_XXS | Clase 35B MoE | No disponible | 2 bits uniformes, sin `imatrix` | ~12,5 GB | No disponible | Según modelo base | Hugging Face (varios) |
 
 Las cifras de perplejidad de las cuantizaciones comunitarias no se publican en la información disponible; el autor las describe cualitativamente como propensas a errores de sintaxis y a un aumento severo de perplejidad en modelos de razonamiento profundo.
 
@@ -104,7 +104,7 @@ Las cifras de perplejidad de las cuantizaciones comunitarias no se publican en l
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Blog del proyecto Occamy-1.0: https://accio-lab.github.io/occamy/
 - Variante APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-GGUF

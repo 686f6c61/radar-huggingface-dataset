@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sugiarto158/pose` es un modelo publicado en HuggingFace por el usuario `sugiarto158` bajo licencia Apache 2.0. No se ha proporcionado ninguna documentacion tecnica, ni informacion sobre la arquitectura, el tamano o las capacidades del modelo. La model card esta vacia, sin descripcion, sin ejemplos de uso y sin datos de entrenamiento. A fecha de creacion (2026-09-06) el repositorio no registra descargas, likes ni ninguna otra interaccion, lo que sugiere que es un proyecto sin uso real o en estado inicial. La ausencia de informacion impide clasificarlo como un modelo de lenguaje, vision u otro tipo, y no permite evaluar su relevancia o funcionalidad.
+El repositorio `sugiarto158/pose` es un modelo publicado en Hugging Face por el usuario `sugiarto158` bajo licencia Apache 2.0. No se ha proporcionado ninguna documentacion tecnica, ni informacion sobre la arquitectura, el tamano o las capacidades del modelo. La model card esta vacia, sin descripcion, sin ejemplos de uso y sin datos de entrenamiento. A fecha de creacion (2026-09-06) el repositorio no registra descargas, likes ni ninguna otra interaccion, lo que sugiere que es un proyecto sin uso real o en estado inicial. La ausencia de informacion impide clasificarlo como un modelo de lenguaje, vision u otro tipo, y no permite evaluar su relevancia o funcionalidad.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio `sugiarto158/pose` es un modelo publicado en HuggingFace por el u
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. Se desconocen sus componentes, el tipo de red neuronal o cualquier innovacion tecnica. Tampoco hay datos sobre el proceso de entrenamiento: no constan los tokens utilizados, la composicion del dataset, ni si se emplearon tecnicas como RLHF o DPO. El repositorio en HuggingFace no incluye una model card con estos detalles, por lo que cualquier descripcion seria especulativa.
+No se ha publicado informacion sobre la arquitectura del modelo. Se desconocen sus componentes, el tipo de red neuronal o cualquier innovacion tecnica. Tampoco hay datos sobre el proceso de entrenamiento: no constan los tokens utilizados, la composicion del dataset, ni si se emplearon tecnicas como RLHF o DPO. El repositorio en Hugging Face no incluye una model card con estos detalles, por lo que cualquier descripcion seria especulativa.
 
 ## Capacidades
 
@@ -57,5 +57,5 @@ No disponible. Sin datos sobre arquitectura, tamano o rendimiento, no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sugiarto158/pose
+- Hugging Face: https://huggingface.co/sugiarto158/pose
 - Enlaces relevantes: no se han encontrado. Los resultados de busqueda web no estan relacionados con el modelo, por lo que no se incluyen.

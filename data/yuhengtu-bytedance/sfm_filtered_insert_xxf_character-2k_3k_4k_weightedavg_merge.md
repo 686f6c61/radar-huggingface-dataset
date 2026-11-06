@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de lenguaje de tipo decoder-only con arquitectura GPT-NeoX (etiqueta `gpt_neox`), con 6.856.253.440 parámetros totales (aproximadamente 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusión de pesos (*model merging*) realizada con la herramienta mergekit, que combina tres checkpoints del mismo run de entrenamiento correspondientes a los pasos globales 2000, 3000 y 4000 de un artefacto denominado `filtered_insert_xxf_character`.
+Se trata de un modelo de lenguaje de tipo decoder-only con arquitectura GPT-NeoX (etiqueta `gpt_neox`), con 6.856.253.440 parámetros totales (aproximadamente 6,86 mil millones), publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusión de pesos (*model merging*) realizada con la herramienta mergekit, que combina tres checkpoints del mismo run de entrenamiento correspondientes a los pasos globales 2000, 3000 y 4000 de un artefacto denominado `filtered_insert_xxf_character`.
 
 El problema que resuelve es acotado: consolidar mediante media ponderada lineal tres estados distintos de un mismo ajuste, de forma que el modelo resultante retenga parte de la información de las fases intermedias del entrenamiento en lugar de quedarse únicamente con el checkpoint final. Es una técnica habitual cuando el checkpoint final sobreajusta o cuando se busca un compromiso entre estabilidad y calidad de las últimas iteraciones, sin coste adicional de inferencia (el modelo fusionado tiene exactamente el mismo tamaño que cualquiera de los originales).
 
@@ -40,7 +40,7 @@ El nombre del artefacto de origen (`filtered_insert_xxf_character`) y las rutas 
 
 - Generacion de texto autoregresivo: es la capacidad principal declarada en el pipeline (`text-generation`).
 - Conversacion: la etiqueta `conversational` indica que el ajuste de origen estaba orientado a dialogo, aunque no se especifica el formato de plantilla ni los tokens especiales.
-- Compatibilidad con infraestructura existente: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para desplegarse con TGI y con los endpoints de HuggingFace.
+- Compatibilidad con infraestructura existente: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repositorio esta preparado para desplegarse con TGI y con los endpoints de Hugging Face.
 - Fusion de pesos reproducible: la configuracion YAML publicada permite reproducir el merge exacto con mergekit.
 - Razonamiento, codigo y matematicas: no disponible (sin documentacion ni evaluacion publicada).
 - Tool calling / function calling: no disponible.
@@ -56,7 +56,7 @@ El nombre del artefacto de origen (`filtered_insert_xxf_character`) y las rutas 
 - Generacion de texto asistida con contexto corto: al no documentarse la ventana de contexto, es adecuado para tareas de generacion de respuestas breves, resumenes de parrafos o reescritura donde no se requieran ventanas largas.
 - Punto de partida para comparativas de tecnicas de merging: sirve como referencia para medir si la ponderacion por paso mejora la perplejidad frente a los checkpoints 2000, 3000 y 4000 por separado, siempre que el evaluador aporte su propio conjunto de validacion.
 - Base para experimentos de cuantizacion: al estar en safetensors bfloat16, es un candidato directo para convertir a GGUF (Q4_K_M, Q5_K_M, Q8_0) y estudiar la degradacion de calidad en un modelo que ya es una media de pesos, un escenario poco explorado.
-- Servicio interno con TGI o vLLM: la etiqueta `endpoints_compatible` permite levantar un endpoint compatible con la API de HuggingFace en minutos para pruebas de latencia y throughput internas.
+- Servicio interno con TGI o vLLM: la etiqueta `endpoints_compatible` permite levantar un endpoint compatible con la API de Hugging Face en minutos para pruebas de latencia y throughput internas.
 
 ## Benchmarks y rendimiento
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge | 6,86 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | Fusion lineal ponderada de tres checkpoints GPT-NeoX; sin evaluacion publicada |
-| Pythia-6.9B | 6,9 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Misma familia arquitectonica GPT-NeoX; checkpoint unico entrenado, con suite de evaluacion publicada |
-| Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | HuggingFace, muy extendido | Arquitectura distinta (GQA, sliding window attention); licencia permisiva y ecosistema maduro |
-| Qwen2.5-7B | 7,62 mil millones | 131.072 tokens | Apache 2.0 (la mayoria de variantes) | HuggingFace, muy extendido | Contexto muy superior y soporte de tool calling documentado |
+| sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge | 6,86 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | Fusion lineal ponderada de tres checkpoints GPT-NeoX; sin evaluacion publicada |
+| Pythia-6.9B | 6,9 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Misma familia arquitectonica GPT-NeoX; checkpoint unico entrenado, con suite de evaluacion publicada |
+| Mistral-7B-v0.1 | 7,24 mil millones | 8192 tokens | Apache 2.0 | Hugging Face, muy extendido | Arquitectura distinta (GQA, sliding window attention); licencia permisiva y ecosistema maduro |
+| Qwen2.5-7B | 7,62 mil millones | 131.072 tokens | Apache 2.0 (la mayoria de variantes) | Hugging Face, muy extendido | Contexto muy superior y soporte de tool calling documentado |
 
 La comparacion es desfavorable en todos los ejes documentables: el modelo fusionado no declara licencia, idiomas ni contexto, carece de evaluaciones y no tiene adopcion. Su unico valor diferencial es metodologico (esquema de ponderacion por paso) y el hecho de compartir arquitectura con la familia GPT-NeoX/Pythia, lo que facilita reutilizar herramientas y plantillas existentes.
 
@@ -100,7 +100,7 @@ La comparacion es desfavorable en todos los ejes documentables: el modelo fusion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo de fusion lineal (Model soups): https://arxiv.org/abs/2203.05482
 - Documentacion de Text Generation Inference: no disponible en los resultados de busqueda

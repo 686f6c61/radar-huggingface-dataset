@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileViT for Retrieval es un prototipo de investigación publicado por el usuario kkleinlukas en HuggingFace, orientado a tareas de recuperación (retrieval) mediante una arquitectura MobileViT. Se trata de un repositorio de andamiaje experimental: incluye el código de implementación, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado. El propio autor indica explícitamente que el checkpoint (`model.safetensors`) es válido únicamente para "smoke tests" y que no se reclama ninguna métrica de rendimiento.
+MobileViT for Retrieval es un prototipo de investigación publicado por el usuario kkleinlukas en Hugging Face, orientado a tareas de recuperación (retrieval) mediante una arquitectura MobileViT. Se trata de un repositorio de andamiaje experimental: incluye el código de implementación, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado. El propio autor indica explícitamente que el checkpoint (`model.safetensors`) es válido únicamente para "smoke tests" y que no se reclama ninguna métrica de rendimiento.
 
 La relevancia de esta ficha es, por tanto, documental y de evaluación preliminar: sirve para que desarrolladores e investigadores conozcan la arquitectura propuesta (MobileViT con atención de ventana deslizante, fusión tensorial, activación GELU y normalización ScaleNorm) y el recetario de entrenamiento por defecto (optimizador LAMB con schedule polinómico), sin confundirla con un modelo listo para producción.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kkleinlukas/mobilevit-retrieval | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| kkleinlukas/mobilevit-retrieval | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT (referencia original de arquitectura) | ~5,6 M (variante base tipica) | no aplica | resultados publicados en clasificacion de imagenes | segun implementacion original | ampliamente disponible |
 | CLIP (retrieval texto-imagen) | cientos de millones | 77 tokens (texto) | benchmarks publicados en retrieval | MIT (segun variante) | ampliamente disponible |
 
@@ -92,4 +92,4 @@ Nota: la comparacion es orientativa y de categorias distintas. Los modelos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kkleinlukas/mobilevit-retrieval
+- Hugging Face: https://huggingface.co/kkleinlukas/mobilevit-retrieval

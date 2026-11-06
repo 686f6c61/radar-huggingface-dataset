@@ -78,8 +78,8 @@ Según la información del fabricante, GLM-5.3-Flash supera a GLM-5.2 en benchma
 
 ## Enlaces
 
-- HuggingFace (repo del autor): https://huggingface.co/Harech/GLM-5.3-Flash
-- HuggingFace (repo oficial de Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash (no verificado, inferido de la card)
+- Hugging Face (repo del autor): https://huggingface.co/Harech/GLM-5.3-Flash
+- Hugging Face (repo oficial de Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash (no verificado, inferido de la card)
 - Blog oficial: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5

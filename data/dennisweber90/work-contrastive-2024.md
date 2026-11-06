@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DennisWeber90/work-contrastive-2024` es un repositorio de HuggingFace publicado por el usuario DennisWeber90 que contiene una implementación de trabajo de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, configurada en escala "huge". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la propia model card lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles. El repositorio incluye `pipeline.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que sirve únicamente como inicialización válida para smoke tests.
+`DennisWeber90/work-contrastive-2024` es un repositorio de Hugging Face publicado por el usuario DennisWeber90 que contiene una implementación de trabajo de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, configurada en escala "huge". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la propia model card lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles. El repositorio incluye `pipeline.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `model.safetensors` que sirve únicamente como inicialización válida para smoke tests.
 
 El interés de esta ficha es limitado desde el punto de vista de evaluación de modelos: no hay pesos entrenados, no hay métricas publicadas y el autor omite deliberadamente cualquier afirmación de rendimiento. El dato de parámetros totales registrado en safetensors es de 33.088, una cifra anómala para una configuración DeiT "huge" (que en su forma canónica ronda los 632 millones de parámetros), lo que sugiere que el checkpoint incluido no corresponde a la arquitectura descrita en la configuración o que se trata de un artefacto de prueba de dimensiones reducidas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `DennisWeber90/work-contrastive-2024` | 33.088 (checkpoint de inicialización); configuración "huge" sin recuento verificado | no disponible | Sin benchmarks publicados | Apache 2.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
+| `DennisWeber90/work-contrastive-2024` | 33.088 (checkpoint de inicialización); configuración "huge" sin recuento verificado | no disponible | Sin benchmarks publicados | Apache 2.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
 | DeiT (facebookresearch/deit) | ~5M a ~632M según variante (tiny a huge) | no disponible | Resultados publicados en el paper original de DeiT sobre ImageNet | Apache 2.0 | Pesos entrenados disponibles en repositorios oficiales |
 | DINO / DINOv2 (autosupervisado, contrastivo) | ~21M a ~1.1B según variante | no disponible | Benchmarks publicados en papers y model cards | Apache 2.0 (DINOv2) | Pesos entrenados y ampliamente adoptados |
 
@@ -81,7 +81,7 @@ La comparación es estructural: el repositorio analizado no ofrece pesos entrena
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DennisWeber90/work-contrastive-2024
+- Repositorio en Hugging Face: https://huggingface.co/DennisWeber90/work-contrastive-2024
 - Artículo de referencia sobre NLP (único resultado de búsqueda web proporcionado, no específico del modelo): https://www.ibm.com/think/topics/natural-language-processing
 - Paper original de DeiT: no disponible en la información proporcionada
 - Repositorio oficial de DeiT: no disponible en la información proporcionada

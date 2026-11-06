@@ -73,7 +73,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos alternativo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RE-USE-laughter BF16 (esta ficha) | 9,6 M | no disponible | OpenMDW-1.1 | HuggingFace |
+| RE-USE-laughter BF16 (esta ficha) | 9,6 M | no disponible | OpenMDW-1.1 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta conversion): https://huggingface.co/giangndm/NVIDIA-NemotronLabs-RE-USE-laughter-bf16
+- Modelo en Hugging Face (esta conversion): https://huggingface.co/giangndm/NVIDIA-NemotronLabs-RE-USE-laughter-bf16
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter
 - Model card original conservada en el repo: `README_ORIGINAL.md`
 - Licencia OpenMDW-1.1: `LICENSE` en el repositorio

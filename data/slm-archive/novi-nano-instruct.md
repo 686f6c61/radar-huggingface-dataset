@@ -17,7 +17,7 @@ No pretende competir con modelos de miles de millones de parametros. El propio a
 | Longitud de contexto | 256 tokens |
 | Tipos de cuantizacion | No disponible; pesos publicados en F32. No se han publicado variantes GGUF, int8 ni int4 |
 | Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 segun la model card del autor; el campo de licencia del repositorio en HuggingFace figura como no disponible |
+| Licencia | Apache 2.0 segun la model card del autor; el campo de licencia del repositorio en Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (tensor F32) |
 | Tamano de vocabulario | 8.195 tokens |
 | Dimensión de embedding | 96 |
@@ -25,7 +25,7 @@ No pretende competir con modelos de miles de millones de parametros. El propio a
 | Cabezas de atencion | 4 |
 | Tamano de la FFN | 384 |
 | Modelo base | Novi-AI/Novi-Nano-Base |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,10 +85,10 @@ El propio autor advierte que, al contener solo 10 ejemplos, estas metricas deben
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Novi-Nano-Instruct | 1,26 M | 256 | Apache 2.0 (segun model card) | Pesos en safetensors en HuggingFace |
-| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Pesos e instruct en HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache 2.0 | Pesos en HuggingFace |
-| TinyStories-1M | Aproximadamente 1 M | No disponible | No disponible | Pesos en HuggingFace |
+| Novi-Nano-Instruct | 1,26 M | 256 | Apache 2.0 (segun model card) | Pesos en safetensors en Hugging Face |
+| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Pesos e instruct en Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache 2.0 | Pesos en Hugging Face |
+| TinyStories-1M | Aproximadamente 1 M | No disponible | No disponible | Pesos en Hugging Face |
 
 La comparacion con SmolLM2-135M y Qwen2.5-0.5B-Instruct ilustra la diferencia de escala: ambos superan a Novi-Nano-Instruct en dos o tres ordenes de magnitud en parametros y en mas de un orden de magnitud en contexto. TinyStories-1M es el unico comparable en tamano, pero esta orientado a generar cuentos infantiles y no a seguir instrucciones. No se dispone de datos de rendimiento comparativos publicados para Novi-Nano-Instruct.
 
@@ -104,15 +104,15 @@ La comparacion con SmolLM2-135M y Qwen2.5-0.5B-Instruct ilustra la diferencia de
 - Perplejidad de validacion de 173,07, lo que indica una distribucion de salida muy alejada de texto fluido.
 - Perdida calculada solo sobre las respuestas del asistente: fuera de la plantilla ChatML el comportamiento puede degradarse.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o alineacion.
-- Licencia: la model card indica Apache 2.0, pero el campo de licencia del repositorio en HuggingFace figura como no disponible; conviene verificar la licencia antes de cualquier uso comercial.
+- Licencia: la model card indica Apache 2.0, pero el campo de licencia del repositorio en Hugging Face figura como no disponible; conviene verificar la licencia antes de cualquier uso comercial.
 - Sin cuantizaciones publicadas: para desplegarlo en llama.cpp u Ollama hay que convertir los pesos manualmente.
 - Comunidad practicamente inexistente: 0 descargas y 0 likes en el momento de la consulta, sin garantia de mantenimiento.
 - Discrepancia de identificador: el repositorio se consulta como `SLM-Archive/Novi-Nano-Instruct`, mientras que la model card y los ejemplos de codigo hacen referencia a `Novi-AI/Novi-Nano-Instruct`; hay que comprobar cual es la ruta vigente.
 
 ## Enlaces
 
-- HuggingFace (ruta consultada): https://huggingface.co/SLM-Archive/Novi-Nano-Instruct
-- HuggingFace (ruta indicada en la model card): https://huggingface.co/Novi-AI/Novi-Nano-Instruct
+- Hugging Face (ruta consultada): https://huggingface.co/SLM-Archive/Novi-Nano-Instruct
+- Hugging Face (ruta indicada en la model card): https://huggingface.co/Novi-AI/Novi-Nano-Instruct
 - Modelo base: https://huggingface.co/Novi-AI/Novi-Nano-Base
 - Dataset de ajuste por instrucciones: https://huggingface.co/datasets/Novi-AI/Novi-510x
 - FineWeb (dataset usado para el tokenizador): https://huggingface.co/datasets/HuggingFaceFW/fineweb

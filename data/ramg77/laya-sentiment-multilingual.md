@@ -98,8 +98,8 @@ La información disponible solo permite comparar de forma directa con el modelo 
 
 | Modelo | Parametros | Idiomas | Accuracy (sentimiento binario) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ramg77/laya-sentiment-multilingual | 321,9 M | en, es, de | 88,0 % | 0,0254 | Apache 2.0 | HuggingFace, CoreML FP16 |
-| convaiinnovations/laya-multilingual (zero-shot) | 321,9 M | multilingüe (no detallado) | 55,7 % | 0,0534 | Apache 2.0 | HuggingFace |
+| Ramg77/laya-sentiment-multilingual | 321,9 M | en, es, de | 88,0 % | 0,0254 | Apache 2.0 | Hugging Face, CoreML FP16 |
+| convaiinnovations/laya-multilingual (zero-shot) | 321,9 M | multilingüe (no detallado) | 55,7 % | 0,0534 | Apache 2.0 | Hugging Face |
 | Otros clasificadores de sentimiento multilingües (p. ej. variantes basadas en XLM-R) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables con otras alternativas de la misma categoría en la información proporcionada.
@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks comparables con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ramg77/laya-sentiment-multilingual
+- Modelo en Hugging Face: https://huggingface.co/Ramg77/laya-sentiment-multilingual
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/tyqiangz/multilingual-sentiments
 - Repositorio de Laya (framework): https://github.com/NandhaKishorM/laya

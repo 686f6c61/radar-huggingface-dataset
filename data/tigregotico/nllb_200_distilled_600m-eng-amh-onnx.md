@@ -102,7 +102,7 @@ La ventaja principal de esta exportación frente al modelo original es el format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-amh-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-amh-onnx
 - Modelo base: https://huggingface.co/dsfsi/nllb_200_distilled_600m-eng-amh
 - Modelo original de Meta: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Repositorio de cuantizacion linguonnx: https://github.com/TigreGotico/linguonnx

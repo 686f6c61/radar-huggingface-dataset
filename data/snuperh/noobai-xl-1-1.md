@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NoobAI XL 1.1 es un modelo de difusión latente para generación de imágenes a partir de texto, especializado en ilustración de estilo anime y arte de fandoms, desarrollado por Laxhar Lab. Se trata de un fine-tune de Laxhar/noobai-XL-1.0, que a su vez deriva de Illustrious-XL, y llega empaquetado con la pipeline `StableDiffusionXLPipeline` de la librería diffusers. La ficha de HuggingFace analizada (snuperh/noobai-XL-1.1) es una subida del modelo original realizada por el usuario snuperh, no el repositorio oficial del autor.
+NoobAI XL 1.1 es un modelo de difusión latente para generación de imágenes a partir de texto, especializado en ilustración de estilo anime y arte de fandoms, desarrollado por Laxhar Lab. Se trata de un fine-tune de Laxhar/noobai-XL-1.0, que a su vez deriva de Illustrious-XL, y llega empaquetado con la pipeline `StableDiffusionXLPipeline` de la librería diffusers. La ficha de Hugging Face analizada (snuperh/noobai-XL-1.1) es una subida del modelo original realizada por el usuario snuperh, no el repositorio oficial del autor.
 
 El modelo pesa 2.567.463.684 parámetros (unos 2,57 mil millones) y ocupa 14,0 GB en el repositorio, lo que lo sitúa en la misma escala que la familia SDXL. Su rasgo diferencial es el entrenamiento con los conjuntos de datos completos y actualizados de Danbooru y E621, con etiquetado nativo de tags, lo que le permite interpretar directamente vocabulario booru (personajes, series, artistas y tags de calidad) sin necesidad de conversión a lenguaje natural.
 
@@ -25,13 +25,13 @@ Es relevante ahora porque la generación de ilustración anime con control fino 
 | Resolución recomendada | Área total en torno a 1024x1024; valores óptimos: 768x1344, 832x1216, 896x1152, 1024x1024, 1152x896, 1216x832, 1344x768 |
 | Configuración de muestreo | CFG 5-6, 25-30 pasos, sampler Euler a |
 | Tamaño del repositorio | 14,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es la de SDXL: un modelo de difusión latente que opera en el espacio latente de un autoencoder (VAE) y condiciona la generación mediante dos codificadores de texto, siguiendo la pipeline `StableDiffusionXLPipeline` de diffusers. No hay información en la model card sobre el número exacto de bloques, la configuración del U-Net ni si se empleó variante de predicción v (v-prediction), aunque los agradecimientos del autor mencionan explícitamente a colaboradores por "instrucciones detalladas y experimentos" sobre v-prediction, lo que sugiere que ese aspecto fue objeto de trabajo en la familia NoobAI.
 
-El entrenamiento se realizó sobre el dataset completo y actualizado de Danbooru (para la v1.0, aproximadamente hasta 2024-10-23) y sobre el conjunto E621 `e621-2024-webp-4Mpixel` alojado en HuggingFace, con etiquetado nativo de tags booru. El autor describe un sistema de "quality tags" construido a partir de la popularidad de las imágenes: normalización por fuentes y ratings, coeficiente de decaimiento temporal según la fecha y ranking sobre el conjunto completo, asignando etiquetas por percentil (`masterpiece` >95, `best quality` 85-95, `good quality` 60-85, `normal quality` 30-60, `worst quality` <=30). También se definen date tags por periodo (2005-2010 `old`, 2011-2014 `early`, 2014-2017 `mid`, 2018-2020 `recent`, 2021-2024 `newest`). No se detallan en la información disponible el número de pasos de entrenamiento, el tamaño de lote, ni si hubo fases de RLHF/DPO (no aplicables de forma convencional en difusión).
+El entrenamiento se realizó sobre el dataset completo y actualizado de Danbooru (para la v1.0, aproximadamente hasta 2024-10-23) y sobre el conjunto E621 `e621-2024-webp-4Mpixel` alojado en Hugging Face, con etiquetado nativo de tags booru. El autor describe un sistema de "quality tags" construido a partir de la popularidad de las imágenes: normalización por fuentes y ratings, coeficiente de decaimiento temporal según la fecha y ranking sobre el conjunto completo, asignando etiquetas por percentil (`masterpiece` >95, `best quality` 85-95, `good quality` 60-85, `normal quality` 30-60, `worst quality` <=30). También se definen date tags por periodo (2005-2010 `old`, 2011-2014 `early`, 2014-2017 `mid`, 2018-2020 `recent`, 2021-2024 `newest`). No se detallan en la información disponible el número de pasos de entrenamiento, el tamaño de lote, ni si hubo fases de RLHF/DPO (no aplicables de forma convencional en difusión).
 
 ## Capacidades
 
@@ -71,11 +71,11 @@ Las siguientes cifras son estimaciones orientativas derivadas del recuento real 
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| noobai-XL-1.1 (snuperh) | 2,57 mil millones | ~1024x1024 (832x1216 recomendado) | fair-ai-public-license-1.0-sd, sin uso comercial | HuggingFace (diffusers, safetensors) | No disponible |
-| NoobAI-XL 1.0 (Laxhar) | ~2,6 mil millones (no confirmado en la información) | ~1024x1024 | fair-ai-public-license-1.0-sd | HuggingFace / Civitai | No disponible |
-| Illustrious-XL (early release v0) | ~2,6 mil millones (no confirmado) | ~1024x1024 | fair-ai-public-license-1.0-sd | HuggingFace (OnomaAIResearch) | No disponible |
-| SDXL 1.0 base (Stability AI) | ~2,6 mil millones | 1024x1024 | CreativeML Open RAIL++-M | HuggingFace / Stability | No disponible en esta ficha |
-| Pony Diffusion V6 XL | ~2,6 mil millones (no confirmado) | 1024x1024 | Fair AI Public License 1.0-SD | HuggingFace / Civitai | No disponible |
+| noobai-XL-1.1 (snuperh) | 2,57 mil millones | ~1024x1024 (832x1216 recomendado) | fair-ai-public-license-1.0-sd, sin uso comercial | Hugging Face (diffusers, safetensors) | No disponible |
+| NoobAI-XL 1.0 (Laxhar) | ~2,6 mil millones (no confirmado en la información) | ~1024x1024 | fair-ai-public-license-1.0-sd | Hugging Face / Civitai | No disponible |
+| Illustrious-XL (early release v0) | ~2,6 mil millones (no confirmado) | ~1024x1024 | fair-ai-public-license-1.0-sd | Hugging Face (OnomaAIResearch) | No disponible |
+| SDXL 1.0 base (Stability AI) | ~2,6 mil millones | 1024x1024 | CreativeML Open RAIL++-M | Hugging Face / Stability | No disponible en esta ficha |
+| Pony Diffusion V6 XL | ~2,6 mil millones (no confirmado) | 1024x1024 | Fair AI Public License 1.0-SD | Hugging Face / Civitai | No disponible |
 
 Datos de parámetros, resolución y licencia de los modelos comparados tomados de conocimiento general de la familia SDXL; para los tres primeros no se dispone de confirmación en la información de la búsqueda. No se incluyen comparaciones de rendimiento porque no hay métricas publicadas en el material disponible.
 
@@ -88,19 +88,19 @@ Datos de parámetros, resolución y licencia de los modelos comparados tomados d
 - Restricción de uso comercial: la licencia fair-ai-public-license-1.0-sd prohíbe "cualquier forma de comercialización", incluyendo el modelo, los modelos derivados y los productos generados. Esto descarta casos de uso en producción con ánimo de lucro.
 - Obligación de apertura: los modelos derivados, merges y LoRAs deben publicarse como open source, compartir detalles de síntesis (fórmulas, prompts, workflows) y mantener la misma licencia.
 - Repositorio no oficial: la ficha analizada corresponde al usuario snuperh, no a Laxhar Lab. El modelo original y sus actualizaciones se publican en los canales del autor; conviene verificar la procedencia antes de usarlo en producción.
-- Advertencia de fecha: los metadatos de HuggingFace indican creación el 2026-09-17, fecha posterior a la de la mayoría de referencias del ecosistema; se reproduce tal cual figura en la información, sin verificación adicional.
+- Advertencia de fecha: los metadatos de Hugging Face indican creación el 2026-09-17, fecha posterior a la de la mayoría de referencias del ecosistema; se reproduce tal cual figura en la información, sin verificación adicional.
 - Prompts largos y composiciones complejas: no hay información sobre la ventana de condicionamiento ni sobre degradación con prompts extensos; se recomienda seguir el formato de caption documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snuperh/noobai-XL-1.1
+- Modelo en Hugging Face: https://huggingface.co/snuperh/noobai-XL-1.1
 - Modelo base: https://huggingface.co/Laxhar/noobai-XL-1.0
 - Modelo del que deriva la licencia (Illustrious-XL early release v0): https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0
 - Texto de la licencia fair-ai-public-license-1.0-sd: https://freedevproject.org/faipl-1.0-sd/
 - Dataset E621 utilizado: https://huggingface.co/datasets/NebulaeWis/e621-2024-webp-4Mpixel
 - ControlNet de NoobAI XL en Civitai: https://civitai.com/models/929685
 - Discord del proyecto (Laxhar Dream Lab SDXL NOOB): https://discord.com/invite/DKnFjKEEvH
-- Perfil del autor en HuggingFace: https://huggingface.co/LAXMAYDAY
+- Perfil del autor en Hugging Face: https://huggingface.co/LAXMAYDAY
 - Herramienta de entrenamiento Naifu: https://github.com/Mikubill/naifu
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos resultados obtenidos correspondían a una agencia de viajes sin relación con el contenido de la ficha.

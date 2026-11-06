@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino orientado a experimentos de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10`, que busca eliminar selectivamente el conocimiento de un subconjunto del 10 % de los datos de entrenamiento. No es un modelo de propósito general, sino un artefacto experimental para estudiar técnicas de olvido selectivo.
+El modelo `g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07` es un checkpoint de investigación derivado de Llama 2 de 7B, publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino orientado a experimentos de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictitious Unlearning), en su variante `forget10`, que busca eliminar selectivamente el conocimiento de un subconjunto del 10 % de los datos de entrenamiento. No es un modelo de propósito general, sino un artefacto experimental para estudiar técnicas de olvido selectivo.
 
 El punto de partida es `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre TOFU. Sobre él se aplica una intervención denominada "IHL + Reset Both": se reinicializan los *input embeddings* y la *LM head* a partir de `NousResearch/Llama-2-7b-chat-hf`, mientras que el resto de pesos del transformador se conservan del checkpoint base. El entrenamiento combina una pérdida de tipo token IHL sobre el conjunto *forget* con entropía cruzada (CE) sobre el conjunto *retain*, con un peso de 1.0. El resultado es el checkpoint de la época 7 de un total de 20.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07 | 6.738.415.616 | no disponible | llama2 | HuggingFace | Checkpoint experimental de unlearning (época 7/20) |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | HuggingFace | Modelo base ajustado sobre TOFU, sin olvido |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 | llama2 | HuggingFace | Llama 2 chat, origen de los embeddings y LM head reinicializados |
-| meta-llama/Llama-2-7b-hf | ~6.738 M | 4.096 | llama2 | HuggingFace | Modelo fundacional original de Llama 2 |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07 | 6.738.415.616 | no disponible | llama2 | Hugging Face | Checkpoint experimental de unlearning (época 7/20) |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | Hugging Face | Modelo base ajustado sobre TOFU, sin olvido |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 | llama2 | Hugging Face | Llama 2 chat, origen de los embeddings y LM head reinicializados |
+| meta-llama/Llama-2-7b-hf | ~6.738 M | 4.096 | llama2 | Hugging Face | Modelo fundacional original de Llama 2 |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_both-epoch07
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo fundacional: https://huggingface.co/meta-llama/Llama-2-7b-hf

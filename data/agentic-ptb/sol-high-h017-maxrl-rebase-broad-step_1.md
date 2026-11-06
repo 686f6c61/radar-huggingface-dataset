@@ -63,5 +63,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.h017.maxrl-rebase-broad.step_1](https://huggingface.co/agentic-ptb/sol-high.h017.maxrl-rebase-broad.step_1)
+- [Hugging Face: agentic-ptb/sol-high.h017.maxrl-rebase-broad.step_1](https://huggingface.co/agentic-ptb/sol-high.h017.maxrl-rebase-broad.step_1)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

@@ -86,9 +86,9 @@ Frente al borrador denso, ep10 con block 16 pierde un 1,9 % en la métrica agrup
 
 | Modelo | Tipo | Parametros / FFN | Contexto | Longitud de aceptacion (agrupada, block 16) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-8B-5layer-MoE-8E1A-v1 (ep10) | Borrador DSpark MoE 8E1A | 5 capas, FFN 8×1536, 1 activo | No disponible (evaluado a 16384) | 8,925 | other | HuggingFace (yushengsu) |
-| jiapingW/Qwen3-8b-dspark-SpecForge | Borrador DSpark denso | 5 capas, FFN 12288 | No disponible (evaluado a 16384) | 9,101 | No disponible | HuggingFace (jiapingW) |
-| yushengsu/Qwen3-8B-5layer-MoE-8E1A-v2 | Borrador DSpark MoE 8E1A (solo run1) | 5 capas, FFN 8×1536, 1 activo | No disponible | No disponible (checkpoints cada 1196 pasos) | other | HuggingFace (yushengsu) |
+| Qwen3-8B-5layer-MoE-8E1A-v1 (ep10) | Borrador DSpark MoE 8E1A | 5 capas, FFN 8×1536, 1 activo | No disponible (evaluado a 16384) | 8,925 | other | Hugging Face (yushengsu) |
+| jiapingW/Qwen3-8b-dspark-SpecForge | Borrador DSpark denso | 5 capas, FFN 12288 | No disponible (evaluado a 16384) | 9,101 | No disponible | Hugging Face (jiapingW) |
+| yushengsu/Qwen3-8B-5layer-MoE-8E1A-v2 | Borrador DSpark MoE 8E1A (solo run1) | 5 capas, FFN 8×1536, 1 activo | No disponible | No disponible (checkpoints cada 1196 pasos) | other | Hugging Face (yushengsu) |
 
 El borrador denso de jiapingW es la referencia directa y supera al MoE en aceptación con block 16, pero el MoE ejecuta 1/8 de la FFN por token. La variante v2 del mismo autor es un segundo entrenamiento de la misma arquitectura, limitado a run1, sin métricas de aceptación publicadas en la información disponible.
 
@@ -106,7 +106,7 @@ El borrador denso de jiapingW es la referencia directa y supera al MoE en acepta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yushengsu/Qwen3-8B-5layer-MoE-8E1A-v1
+- Modelo en Hugging Face: https://huggingface.co/yushengsu/Qwen3-8B-5layer-MoE-8E1A-v1
 - Borrador denso de referencia: https://huggingface.co/jiapingW/Qwen3-8b-dspark-SpecForge
 - Codigo y receta de entrenamiento (SpecForge PR #1022): https://github.com/sgl-project/SpecForge/pull/1022
 - Segundo entrenamiento de la misma arquitectura (run1): https://huggingface.co/yushengsu/Qwen3-8B-5layer-MoE-8E1A-v2

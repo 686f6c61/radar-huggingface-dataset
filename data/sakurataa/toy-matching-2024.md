@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sakurataa/toy-matching-2024` es un prototipo de investigación publicado en HuggingFace por el usuario `sakurataa`. Se presenta como una implementación personalizada de MoCo v3 orientada a tareas de *matching* (emparejamiento), etiquetada internamente con la escala "xlarge", aunque el número real de parámetros del checkpoint (`model.safetensors`) es de 33.088. No es, por tanto, un modelo de lenguaje ni un encoder entrenado, sino un andamiaje de código y configuración para experimentar con aprendizaje contrastivo.
+`sakurataa/toy-matching-2024` es un prototipo de investigación publicado en Hugging Face por el usuario `sakurataa`. Se presenta como una implementación personalizada de MoCo v3 orientada a tareas de *matching* (emparejamiento), etiquetada internamente con la escala "xlarge", aunque el número real de parámetros del checkpoint (`model.safetensors`) es de 33.088. No es, por tanto, un modelo de lenguaje ni un encoder entrenado, sino un andamiaje de código y configuración para experimentar con aprendizaje contrastivo.
 
 El repositorio contiene un script `train.py` con un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un checkpoint de safetensors descrito explícitamente por el autor como una inicialización válida únicamente para pruebas de humo (*smoke tests*), no como un modelo entrenado. El propio autor declara que no se reclama ninguna métrica de rendimiento y que el checkpoint no ha sido auditado en robustez, equidad o transferencia de dominio.
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros model
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sakurataa/toy-matching-2024 | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| sakurataa/toy-matching-2024 | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye resultados de otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sakurataa/toy-matching-2024
+- Hugging Face: https://huggingface.co/sakurataa/toy-matching-2024
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados obtenidos corresponden a proyectos homonimos o tematicamente proximos sin conexion con el autor ni con el artefacto.

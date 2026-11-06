@@ -86,10 +86,10 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parámetros | Tipo | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| deepseek_vit_412m.deepseek_v4_1_flash | 411,8 M | ViT encoder con alineador opcional | 546×546, parches 14×14 | No disponible | MIT | timm / HuggingFace |
-| CLIP ViT-L/14 | ~304 M | ViT encoder con torre de texto | 224×224, parches 14×14 | No comparable aquí | MIT (verificar) | HuggingFace, ONNX, OpenCLIP |
-| SigLIP SO400M | ~877 M | ViT encoder con torre de texto | 384×384, parches 14×14 | No comparable aquí | Apache-2.0 (verificar) | HuggingFace, transformers |
-| DINOv2 ViT-L/14 | ~304 M | ViT auto-supervisado, solo visión | 518×518, parches 14×14 | No comparable aquí | Apache-2.0 (verificar) | HuggingFace, torch.hub |
+| deepseek_vit_412m.deepseek_v4_1_flash | 411,8 M | ViT encoder con alineador opcional | 546×546, parches 14×14 | No disponible | MIT | timm / Hugging Face |
+| CLIP ViT-L/14 | ~304 M | ViT encoder con torre de texto | 224×224, parches 14×14 | No comparable aquí | MIT (verificar) | Hugging Face, ONNX, OpenCLIP |
+| SigLIP SO400M | ~877 M | ViT encoder con torre de texto | 384×384, parches 14×14 | No comparable aquí | Apache-2.0 (verificar) | Hugging Face, transformers |
+| DINOv2 ViT-L/14 | ~304 M | ViT auto-supervisado, solo visión | 518×518, parches 14×14 | No comparable aquí | Apache-2.0 (verificar) | Hugging Face, torch.hub |
 
 Frente a CLIP y SigLIP, la diferencia principal es que este checkpoint no incluye torre de texto ni espacio de embeddings alineado con lenguaje, salvo por la variante `_align`, que proyecta al ancho del LLM de DeepSeek. Frente a DINOv2, la resolución de entrada es mayor que la de CLIP y comparable a la de DINOv2, pero no hay evaluación pública de calidad de representación.
 
@@ -109,7 +109,7 @@ Frente a CLIP y SigLIP, la diferencia principal es que este checkpoint no incluy
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_1_flash
+- Ficha del modelo en Hugging Face: https://huggingface.co/timm/deepseek_vit_412m.deepseek_v4_1_flash
 - Modelo base DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Revisión concreta del modelo origen: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/tree/dba1be0a40aa45a94ad051997016db3960a90277
 - Licencia del modelo origen: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/dba1be0a40aa45a94ad051997016db3960a90277/LICENSE

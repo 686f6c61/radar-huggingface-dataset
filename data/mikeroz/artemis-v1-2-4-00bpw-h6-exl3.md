@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni el
 
 | Modelo | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MikeRoz/Artemis-v1.2-4.00bpw-h6-exl3 (este) | EXL3 4.00 bpw h6 | 17,730 GiB | No disponible | Publico en HuggingFace |
-| MikeRoz/TheDrummer/Artemis-31B-v1.2-2.25bpw-h6-exl3 | EXL3 2.25 bpw h6 | 11,761 GiB | No disponible | Publico en HuggingFace |
-| MikeRoz/TheDrummer/Artemis-31B-v1.2-6.00bpw-h8-exl3 | EXL3 6.00 bpw h8 | 24,877 GiB | No disponible | Publico en HuggingFace |
-| TheDrummer/Artemis-31B-v1.2 (modelo base) | Sin cuantizar | No disponible | No disponible | Publico en HuggingFace |
+| MikeRoz/Artemis-v1.2-4.00bpw-h6-exl3 (este) | EXL3 4.00 bpw h6 | 17,730 GiB | No disponible | Publico en Hugging Face |
+| MikeRoz/TheDrummer/Artemis-31B-v1.2-2.25bpw-h6-exl3 | EXL3 2.25 bpw h6 | 11,761 GiB | No disponible | Publico en Hugging Face |
+| MikeRoz/TheDrummer/Artemis-31B-v1.2-6.00bpw-h8-exl3 | EXL3 6.00 bpw h8 | 24,877 GiB | No disponible | Publico en Hugging Face |
+| TheDrummer/Artemis-31B-v1.2 (modelo base) | Sin cuantizar | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros modelos de rol de tamano similar. La comparacion se limita, por tanto, al compromiso entre tamano en disco y fidelidad de pesos.
 
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MikeRoz/Artemis-v1.2-4.00bpw-h6-exl3
+- Repositorio en Hugging Face: https://huggingface.co/MikeRoz/Artemis-v1.2-4.00bpw-h6-exl3
 - Variante 2.25 bpw h6: https://huggingface.co/MikeRoz/TheDrummer/Artemis-31B-v1.2-2.25bpw-h6-exl3
 - Variante 6.00 bpw h8: https://huggingface.co/MikeRoz/TheDrummer/Artemis-31B-v1.2-6.00bpw-h8-exl3
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
-- Perfil del autor en HuggingFace: https://huggingface.co/MikeRoz
+- Perfil del autor en Hugging Face: https://huggingface.co/MikeRoz
 - Hoja colaborativa de samplers: https://docs.google.com/spreadsheets/d/1wil6YEHTnQP3DO9EF35ImQMY3lbmRt5_ns-LJavUqwQ
 - Formulario para compartir configuraciones de muestreo: https://docs.google.com/forms/d/e/1FAIpQLSfeiOeLbNt-xc8tr0BopJ4KawMm3YrLGD5mYLjZqg8ehl35BQ/viewform

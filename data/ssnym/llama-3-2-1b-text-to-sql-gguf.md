@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ssnym/llama-3.2-1b-text-to-sql-GGUF | 11.272.192 en el adaptador LoRA; base de ~1B | No disponible en la información proporcionada | Llama 3.2 Community License | HuggingFace, formato GGUF (solo adaptador) |
-| ssnym/llama-3.2-1b-text-to-sql (adaptador original) | Mismo adaptador, 11.272.192 parámetros | No disponible | Llama 3.2 Community License | HuggingFace, safetensors/PEFT |
-| Llama-3.2-1B-Instruct (modelo base sin ajustar) | Orden de 1.000 millones (dato público de Meta, no incluido en la información proporcionada) | No disponible en la información proporcionada | Llama 3.2 Community License | HuggingFace, múltiples cuantizaciones GGUF de terceros |
+| ssnym/llama-3.2-1b-text-to-sql-GGUF | 11.272.192 en el adaptador LoRA; base de ~1B | No disponible en la información proporcionada | Llama 3.2 Community License | Hugging Face, formato GGUF (solo adaptador) |
+| ssnym/llama-3.2-1b-text-to-sql (adaptador original) | Mismo adaptador, 11.272.192 parámetros | No disponible | Llama 3.2 Community License | Hugging Face, safetensors/PEFT |
+| Llama-3.2-1B-Instruct (modelo base sin ajustar) | Orden de 1.000 millones (dato público de Meta, no incluido en la información proporcionada) | No disponible en la información proporcionada | Llama 3.2 Community License | Hugging Face, múltiples cuantizaciones GGUF de terceros |
 | Modelos text-to-SQL de mayor tamaño (por ejemplo, familias tipo SQLCoder o NSQL) | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió información relevante sobre este modelo ni sobre alternativas comparables; los resultados obtenidos correspondían a foros técnicos sin relación con el artefacto.
@@ -98,7 +98,7 @@ La búsqueda web realizada no devolvió información relevante sobre este modelo
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql-GGUF
+- Página de Hugging Face del modelo: https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql-GGUF
 - Adaptador original en safetensors/PEFT: https://huggingface.co/ssnym/llama-3.2-1b-text-to-sql
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

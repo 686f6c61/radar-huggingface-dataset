@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ThinhDao/Qwen3.5-4B_E3 es un ajuste fino publicado en HuggingFace por el usuario ThinhDao. El modelo se ha entrenado a partir del modelo base unsloth/Qwen3.5-4B, se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: el ingles. La model card es la plantilla automatica generada por Unsloth, por lo que no aporta informacion sobre el dataset de ajuste, el metodo de entrenamiento ni los hiperparametros utilizados.
+ThinhDao/Qwen3.5-4B_E3 es un ajuste fino publicado en Hugging Face por el usuario ThinhDao. El modelo se ha entrenado a partir del modelo base unsloth/Qwen3.5-4B, se distribuye bajo licencia Apache 2.0 y declara un unico idioma soportado: el ingles. La model card es la plantilla automatica generada por Unsloth, por lo que no aporta informacion sobre el dataset de ajuste, el metodo de entrenamiento ni los hiperparametros utilizados.
 
-El interes de esta publicacion es doble. Por un lado, ejemplifica el flujo de trabajo habitual de la comunidad: tomar un modelo base de ~4.000 millones de parametros y publicar un ajuste fino ligero entrenado con Unsloth y TRL. Por otro, sirve como recordatorio de que no todo ajuste publicado en HuggingFace esta documentado o validado: este repositorio acumula 0 descargas y 0 likes en el momento de la consulta y no incluye resultados de evaluacion.
+El interes de esta publicacion es doble. Por un lado, ejemplifica el flujo de trabajo habitual de la comunidad: tomar un modelo base de ~4.000 millones de parametros y publicar un ajuste fino ligero entrenado con Unsloth y TRL. Por otro, sirve como recordatorio de que no todo ajuste publicado en Hugging Face esta documentado o validado: este repositorio acumula 0 descargas y 0 likes en el momento de la consulta y no incluye resultados de evaluacion.
 
 Se trata, por tanto, de un modelo de nicho cuyo valor practico depende enteramente de la evaluacion que haga el propio usuario. No se dispone de datos sobre la composicion del dataset, el numero de tokens de entrenamiento, la longitud de contexto efectiva ni la existencia de fases de RLHF o DPO. Cualquier uso en produccion exige una validacion previa por parte de quien lo adopte.
 
@@ -75,10 +75,10 @@ La comparativa siguiente incluye el modelo base y dos alternativas de tamano equ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| ThinhDao/Qwen3.5-4B_E3 | ~4B (deducido) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no publicados |
-| unsloth/Qwen3.5-4B (base) | ~4B (deducido) | no disponible | no disponible | HuggingFace | no disponibles en la informacion facilitada |
-| Qwen3-4B | 4B | segun documentacion del fabricante | Apache 2.0 | HuggingFace | publicados por el fabricante |
-| Llama-3.2-3B-Instruct | 3B | segun documentacion del fabricante | Llama 3.2 Community License | HuggingFace | publicados por el fabricante |
+| ThinhDao/Qwen3.5-4B_E3 | ~4B (deducido) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no publicados |
+| unsloth/Qwen3.5-4B (base) | ~4B (deducido) | no disponible | no disponible | Hugging Face | no disponibles en la informacion facilitada |
+| Qwen3-4B | 4B | segun documentacion del fabricante | Apache 2.0 | Hugging Face | publicados por el fabricante |
+| Llama-3.2-3B-Instruct | 3B | segun documentacion del fabricante | Llama 3.2 Community License | Hugging Face | publicados por el fabricante |
 
 Observacion: la ventaja diferencial de un ajuste fino como este frente a los modelos base solo puede establecerse con una evaluacion comparativa en la tarea objetivo. Sin dataset documentado ni resultados, no hay evidencia de que supere al modelo del que deriva.
 
@@ -96,10 +96,10 @@ Observacion: la ventaja diferencial de un ajuste fino como este frente a los mod
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ThinhDao/Qwen3.5-4B_E3
+- Pagina del modelo en Hugging Face: https://huggingface.co/ThinhDao/Qwen3.5-4B_E3
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Text generation inference: https://github.com/huggingface/text-generation-inference
 
 Nota: los resultados de busqueda web proporcionados no contenian ningun enlace relevante al modelo, al modelo base ni a su entrenamiento; los unicos resultados devueltos correspondian a paginas generales de YouTube y se han descartado por no ser pertinentes. No se han encontrado papers, blogs tecnicos ni demos asociados a esta publicacion.

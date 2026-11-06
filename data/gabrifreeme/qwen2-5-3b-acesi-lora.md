@@ -47,7 +47,7 @@ El ajuste concreto publicado en este repositorio se realizó con Unsloth, una bi
 - Generación de código en entornos con restricciones de hardware: autocompletado y generación de fragmentos de código dentro de editores o scripts, asumiendo revisión humana obligatoria por el tamaño reducido del modelo.
 - Resumen de documentos de extensión moderada: la ventana de 32.768 tokens del modelo base permite resumir informes o actas de varias decenas de páginas en una sola pasada, aunque con riesgo apreciable de omisión de detalles.
 - Base para un ajuste fino adicional en un dominio concreto: al ser un adaptador ligero, es posible continuar el entrenamiento o fusionarlo con el modelo base y aplicar un segundo ajuste específico sin partir de cero.
-- Despliegue educativo o de demostración: útil en entornos docentes para ilustrar el ciclo completo de ajuste, publicación y despliegue de un modelo en HuggingFace, dado su reducido tamaño y licencia permisiva.
+- Despliegue educativo o de demostración: útil en entornos docentes para ilustrar el ciclo completo de ajuste, publicación y despliegue de un modelo en Hugging Face, dado su reducido tamaño y licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -70,11 +70,11 @@ La comparación mezcla un adaptador LoRA con modelos completos, por lo que las c
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-3b-acesi-lora (este) | Adaptador sobre base de ~3.090 M | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens, ampliable a 131.072 | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-3B-Instruct | ~3.210 M | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, con registro y aceptación de términos |
-| Phi-3.5-mini-instruct | ~3.800 M | 128.000 tokens | MIT | HuggingFace |
-| Gemma-2-2B-it | ~2.610 M | 8.192 tokens | Términos de uso de Gemma | HuggingFace, con aceptación de términos |
+| qwen2.5-3b-acesi-lora (este) | Adaptador sobre base de ~3.090 M | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens, ampliable a 131.072 | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-3B-Instruct | ~3.210 M | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, con registro y aceptación de términos |
+| Phi-3.5-mini-instruct | ~3.800 M | 128.000 tokens | MIT | Hugging Face |
+| Gemma-2-2B-it | ~2.610 M | 8.192 tokens | Términos de uso de Gemma | Hugging Face, con aceptación de términos |
 
 Rendimiento comparado: no disponible. No se han publicado evaluaciones del ajuste analizado ni se dispone de métricas verificadas en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -94,7 +94,7 @@ Rendimiento comparado: no disponible. No se han publicado evaluaciones del ajust
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Gabrifreeme/qwen2.5-3b-acesi-lora
+- Repositorio Hugging Face del modelo: https://huggingface.co/Gabrifreeme/qwen2.5-3b-acesi-lora
 - Modelo base utilizado para el ajuste: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth

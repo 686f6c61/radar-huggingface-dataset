@@ -6,7 +6,7 @@ WhisperNow LFM3 1.7B es un ajuste fino completo del modelo base LiquidAI/LFM3-1.
 
 La relevancia de este modelo radica en que traslada al dispositivo local una tarea que habitualmente se delega a modelos en la nube, con un consumo de memoria de 2,2 GB en cuantización Q8_0 y una tasa declarada de 5,04 errores factuales por cada 1.000 palabras. Con 1.728.801.536 parámetros reales según los safetensors del repositorio, se posiciona como una alternativa intermedia entre modelos más pequeños (LFM2.5 1.2B) y más grandes (LFM2.5 2.6B, Qwen3.5 4B, Nemotron Bolt E4B) dentro de la misma familia de limpiadores de transcripción.
 
-El modelo se distribuye en formato safetensors y GGUF, con licencia LFM1.0 (etiquetada como "other" en HuggingFace), soporte exclusivo del idioma inglés y una fecha de creación en el repositorio de noviembre de 2026. Su diseño está orientado a un caso de uso muy concreto: el postprocesado de dictado por voz en local, con instrucciones estrictas sobre qué conservar (palabras, tono, matices, razones) y qué eliminar (ruido verbal, correcciones obsoletas).
+El modelo se distribuye en formato safetensors y GGUF, con licencia LFM1.0 (etiquetada como "other" en Hugging Face), soporte exclusivo del idioma inglés y una fecha de creación en el repositorio de noviembre de 2026. Su diseño está orientado a un caso de uso muy concreto: el postprocesado de dictado por voz en local, con instrucciones estrictas sobre qué conservar (palabras, tono, matices, razones) y qué eliminar (ruido verbal, correcciones obsoletas).
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye en formato safetensors y GGUF, con licencia LFM1.0 (etiq
 | Longitud de contexto | No disponible como cifra oficial; los ejemplos de despliegue usan `-c 8192` en llama.cpp |
 | Tipos de cuantizacion | GGUF Q8_0 (archivo de 1,85 GB); otros tipos no disponibles |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | LFM1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | LFM1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Memoria Q8_0 | Errores/1.000 palabras | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WhisperNow LFM3 1.7B | 1.728.801.536 | No disponible (ejemplos con 8192) | 2,2 GB | 5,04 | LFM1.0 | HuggingFace (safetensors, GGUF) |
-| WhisperNow LFM2.5 1.2B | No disponible | No disponible | 1,6 GB | 6,32 | No disponible | HuggingFace |
-| WhisperNow LFM2.5 2.6B | No disponible | No disponible | 3,3 GB | 4,88 | No disponible | HuggingFace |
-| WhisperNow Qwen3.5 4B | No disponible | No disponible | 5,3 GB | 3,01 | No disponible | HuggingFace |
-| WhisperNow Nemotron Bolt E4B | No disponible | No disponible | 8,4 GB | 2,59 | No disponible | HuggingFace |
+| WhisperNow LFM3 1.7B | 1.728.801.536 | No disponible (ejemplos con 8192) | 2,2 GB | 5,04 | LFM1.0 | Hugging Face (safetensors, GGUF) |
+| WhisperNow LFM2.5 1.2B | No disponible | No disponible | 1,6 GB | 6,32 | No disponible | Hugging Face |
+| WhisperNow LFM2.5 2.6B | No disponible | No disponible | 3,3 GB | 4,88 | No disponible | Hugging Face |
+| WhisperNow Qwen3.5 4B | No disponible | No disponible | 5,3 GB | 3,01 | No disponible | Hugging Face |
+| WhisperNow Nemotron Bolt E4B | No disponible | No disponible | 8,4 GB | 2,59 | No disponible | Hugging Face |
 
 La comparativa se limita a los modelos de la misma familia de limpiadores WhisperNow, ya que no se dispone de datos de benchmarks estándar ni de especificaciones completas de las alternativas. El modelo ofrece un equilibrio entre consumo (2,2 GB) y precisión (5,04 errores/1.000 palabras), con una mejora del 20,3 % en errores respecto a LFM2.5 1.2B a cambio de 0,6 GB más de memoria, y queda por detrás de LFM2.5 2.6B en precisión (4,88) con 1,1 GB menos de memoria.
 
@@ -96,7 +96,7 @@ La comparativa se limita a los modelos de la misma familia de limpiadores Whispe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/category271/whispernow-lfm3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/category271/whispernow-lfm3-1.7b
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
 - Reglas de limpieza (sección del dataset): https://huggingface.co/datasets/category271/whispernow-cleanup#the-cleanup-rules

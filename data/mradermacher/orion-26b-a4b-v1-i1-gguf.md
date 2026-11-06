@@ -25,7 +25,7 @@ La información disponible en la model card es extremadamente limitada: no se es
 
 La arquitectura es MoE (Mixture of Experts), lo que implica que aunque el modelo tiene 25,2B parámetros totales, solo activa 4B por token procesado. Esto reduce drásticamente el coste computacional por inferencia en comparación con un modelo denso del mismo tamaño. El nombre "A4B" sugiere 4 mil millones de parámetros activos, aunque no se ha confirmado el número exacto de expertos ni la estrategia de enrutamiento.
 
-No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se utilizaron técnicas como RLHF o DPO. Tampoco se conocen innovaciones técnicas específicas del modelo base. El repositorio de cuantizaciones indica que se usó la técnica imatrix para mejorar la calidad de las cuantizaciones de menor bitrate, y que los pesos fueron convertidos desde el formato HuggingFace original.
+No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se utilizaron técnicas como RLHF o DPO. Tampoco se conocen innovaciones técnicas específicas del modelo base. El repositorio de cuantizaciones indica que se usó la técnica imatrix para mejorar la calidad de las cuantizaciones de menor bitrate, y que los pesos fueron convertidos desde el formato Hugging Face original.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No se dispone de información sobre el proceso de entrenamiento: ni el número d
 
 - Inferencia local en hardware de consumo: gracias a las cuantizaciones GGUF y a los 4B parámetros activos, el modelo puede ejecutarse en GPUs de gama media como una RTX 3060 o RTX 4060 con 8-12 GB de VRAM usando las cuantizaciones más agresivas (IQ1_S, IQ2_XS). Es adecuado para experimentación y prototipado sin depender de APIs externas.
 - Despliegue en entornos con restricciones de memoria: la combinación de MoE y cuantización permite servir un modelo de 25B con requisitos de VRAM similares a un modelo denso de 7B, lo que lo hace viable en entornos edge o con GPUs compartidas.
-- Desarrollo de chatbots conversacionales: el tag "conversational" en HuggingFace sugiere que el modelo base fue ajustado para diálogo, aunque no hay datos que lo confirmen. Podría usarse para construir asistentes locales con herramientas como Ollama o llama.cpp.
+- Desarrollo de chatbots conversacionales: el tag "conversational" en Hugging Face sugiere que el modelo base fue ajustado para diálogo, aunque no hay datos que lo confirmen. Podría usarse para construir asistentes locales con herramientas como Ollama o llama.cpp.
 - Evaluación de técnicas de cuantización: el repositorio incluye 24 variantes de cuantización, lo que lo convierte en un banco de pruebas ideal para comparar el impacto de diferentes bitrates (IQ vs K-quants) en la calidad de salida.
 - Fine-tuning eficiente con LoRA/QLoRA: al ser un MoE con pocos parámetros activos, el fine-tuning con adaptadores de bajo rango podría ser viable en hardware de consumo, aunque no hay documentación que lo respalde.
 - Investigación académica sobre MoE: el modelo puede servir como caso de estudio para analizar el comportamiento de arquitecturas MoE de tamaño medio en tareas de generación de texto.
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Orion-26B-A4B-v1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Orion-26B-A4B-v1-i1-GGUF
 - Modelo base (TheDrummer): https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

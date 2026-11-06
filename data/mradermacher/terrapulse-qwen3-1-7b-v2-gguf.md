@@ -91,7 +91,7 @@ Los datos de contexto y parámetros de los modelos comparables proceden de sus f
 
 ## Enlaces
 
-- Página HuggingFace del modelo (GGUF): https://huggingface.co/mradermacher/terrapulse-qwen3-1.7b-v2-GGUF
+- Página Hugging Face del modelo (GGUF): https://huggingface.co/mradermacher/terrapulse-qwen3-1.7b-v2-GGUF
 - Modelo base original: https://huggingface.co/aaronr43210/terrapulse-qwen3-1.7b-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/aaronr43210/terrapulse-sft-data
 - Página de descarga y visión general del cuantizador: https://hf.tst.eu/model#terrapulse-qwen3-1.7b-v2-GGUF

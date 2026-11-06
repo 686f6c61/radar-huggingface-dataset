@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Xalk07/KSTU_T-lite-2.1` es un repositorio publicado en HuggingFace por el usuario Xalk07 bajo licencia Apache 2.0. La ficha del modelo (model card) únicamente declara la licencia, sin ningún otro dato técnico o descriptivo. No se dispone de información sobre la arquitectura, el tamaño, el contexto, los idiomas soportados ni las capacidades del modelo. Tampoco se han encontrado referencias externas relevantes que documenten su funcionamiento o su origen. En el momento de la consulta, el repositorio registra cero descargas y cero "likes", lo que sugiere que se trata de una publicación reciente o sin difusión. Dada la ausencia total de especificaciones, cualquier uso en producción o evaluación rigurosa resulta imposible sin información adicional por parte del autor.
+El modelo `Xalk07/KSTU_T-lite-2.1` es un repositorio publicado en Hugging Face por el usuario Xalk07 bajo licencia Apache 2.0. La ficha del modelo (model card) únicamente declara la licencia, sin ningún otro dato técnico o descriptivo. No se dispone de información sobre la arquitectura, el tamaño, el contexto, los idiomas soportados ni las capacidades del modelo. Tampoco se han encontrado referencias externas relevantes que documenten su funcionamiento o su origen. En el momento de la consulta, el repositorio registra cero descargas y cero "likes", lo que sugiere que se trata de una publicación reciente o sin difusión. Dada la ausencia total de especificaciones, cualquier uso en producción o evaluación rigurosa resulta imposible sin información adicional por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se ha podido identificar la categoría del modelo ni modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xalk07/KSTU_T-lite-2.1
+- Repositorio en Hugging Face: https://huggingface.co/Xalk07/KSTU_T-lite-2.1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-classification-alpha es un repositorio publicado por el usuario dlle4682 en HuggingFace que contiene una implementación propia y funcional de una arquitectura tipo DINO aplicada a clasificación, en lo que el autor denomina configuración "nano". No se trata de un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El repositorio declara únicamente 49.600 parámetros totales en el fichero safetensors, lo que lo sitúa en un orden de magnitud inferior a cualquier backbone de visión utilizable en producción.
+classification-alpha es un repositorio publicado por el usuario dlle4682 en Hugging Face que contiene una implementación propia y funcional de una arquitectura tipo DINO aplicada a clasificación, en lo que el autor denomina configuración "nano". No se trata de un modelo entrenado ni evaluado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El repositorio declara únicamente 49.600 parámetros totales en el fichero safetensors, lo que lo sitúa en un orden de magnitud inferior a cualquier backbone de visión utilizable en producción.
 
 El interés del artefacto es, por tanto, metodológico y de ingeniería más que de rendimiento. El autor publica de forma explícita el código (`inference.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), con optimizador RMSProp y schedule polinomial como valores de partida. La model card insiste en que no se reclama ninguna puntuación de benchmark y en que cualquier evaluación futura debería usar un split etiquetado específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -22,8 +22,8 @@ La relevancia actual es limitada pero concreta: sirve como plantilla reproducibl
 | Formato de pesos | safetensors (acompañado de `inference.py`, `config.json` y `training_args.json`) |
 | Escala declarada | nano |
 | Receta de entrenamiento por defecto | RMSProp con schedule polinomial (valores de partida, no evidencia de un run completado) |
-| Tamaño del repositorio | 0,0 GB declarado en HuggingFace |
-| Pipeline declarado en HuggingFace | no disponible |
+| Tamaño del repositorio | 0,0 GB declarado en Hugging Face |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 1 GB. Con 49.600 parámetros, el peso en fp32 ocupa aproximadamente 0,2 MB (cálculo derivado de 49.600 × 4 bytes); el consumo real dependerá del tamaño de lote y de la resolución de entrada, que no están documentados.
 - GPU recomendadas: ninguna en particular. El modelo es ejecutable en CPU sin problema; cualquier GPU sirve si se quiere forzar ejecución en dispositivo CUDA.
 - ¿Cabe en GPU de consumo? Sí, en cualquier GPU de consumo e incluso en GPU integradas o en CPU exclusivamente. También cabe en memoria de un microcontrolador de gama media, aunque no se documenta soporte para ello.
-- Opciones de despliegue: PyTorch con el script `inference.py` del propio repositorio. vLLM, TGI, llama.cpp y Ollama no aplican: no es un modelo de lenguaje, no se publica en formato GGUF y no declara pipeline en HuggingFace. La carga mediante APIs automáticas requiere un adaptador explícito.
+- Opciones de despliegue: PyTorch con el script `inference.py` del propio repositorio. vLLM, TGI, llama.cpp y Ollama no aplican: no es un modelo de lenguaje, no se publica en formato GGUF y no declara pipeline en Hugging Face. La carga mediante APIs automáticas requiere un adaptador explícito.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un checkpoint sin entrenar y de código personalizado, cualquier cifra sería especulativa.
 - Nota de escalado: si el repositorio se usa como plantilla para un DINO "nano" entrenado, los requisitos de hardware crecerán proporcionalmente al número de parámetros final y deberán recalcularse; los valores anteriores solo aplican al checkpoint publicado.
 
@@ -93,5 +93,5 @@ Diferencias clave: frente a cualquiera de las alternativas, classification-alpha
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/dlle4682/classification-alpha
+- Ficha en Hugging Face: https://huggingface.co/dlle4682/classification-alpha
 - No se han encontrado otros enlaces en la información disponible: no hay papers, blogs, repositorios auxiliares ni demos asociados al modelo en los datos proporcionados.

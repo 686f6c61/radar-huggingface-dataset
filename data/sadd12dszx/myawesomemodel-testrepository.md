@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sadD12DSZX bajo el identificador `sadD12DSZX/MyAwesomeModel-TestRepository`. La información disponible es contradictoria y muy escasa: los metadatos de HuggingFace lo clasifican con la etiqueta `bert` y el pipeline `feature-extraction`, lo que apunta a un transformer encoder-only destinado a extracción de representaciones, mientras que la model card describe un asistente conversacional con razonamiento profundo, function calling y búsqueda web. El repositorio, creado el 19 de octubre de 2026, registra 0 descargas y 0 likes, y su tamaño es de 0.0 GB, es decir, no consta que se hayan subido pesos.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sadD12DSZX bajo el identificador `sadD12DSZX/MyAwesomeModel-TestRepository`. La información disponible es contradictoria y muy escasa: los metadatos de Hugging Face lo clasifican con la etiqueta `bert` y el pipeline `feature-extraction`, lo que apunta a un transformer encoder-only destinado a extracción de representaciones, mientras que la model card describe un asistente conversacional con razonamiento profundo, function calling y búsqueda web. El repositorio, creado el 19 de octubre de 2026, registra 0 descargas y 0 likes, y su tamaño es de 0.0 GB, es decir, no consta que se hayan subido pesos.
 
 La model card parece una plantilla sin completar: incluye referencias a imágenes (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) que no se detallan, tablas de benchmarks con columnas genéricas (`Model1`, `Model2`, `Model1-v2`) sin identificar los modelos ni los conjuntos de evaluación, y menciona un "MyAwesomeModel-Small" del que no se ofrece ninguna especificación. No se declara número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni idiomas soportados.
 
@@ -25,7 +25,7 @@ Otros datos de metadatos: `library_name: transformers`, framework PyTorch, `endp
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. La única señal técnica es la etiqueta `bert` en los metadatos de HuggingFace, que conventionally identifica familias de transformers encoder-only (estilo BERT/RoBERTa) usadas para extracción de características y clasificación. La model card, sin embargo, describe un modelo generativo con "thinking depth" ampliable, soporte de system prompt, plantillas de prompt para subida de ficheros y búsqueda web, y una variante "MyAwesomeModel-Small" con "arquitectura idéntica a su modelo base" pero con el mismo tokenizador que el modelo principal. Esa descripción corresponde a un modelo causal decoder-only orientado a chat, no a un encoder de extracción de características.
+No hay información verificable sobre la arquitectura. La única señal técnica es la etiqueta `bert` en los metadatos de Hugging Face, que conventionally identifica familias de transformers encoder-only (estilo BERT/RoBERTa) usadas para extracción de características y clasificación. La model card, sin embargo, describe un modelo generativo con "thinking depth" ampliable, soporte de system prompt, plantillas de prompt para subida de ficheros y búsqueda web, y una variante "MyAwesomeModel-Small" con "arquitectura idéntica a su modelo base" pero con el mismo tokenizador que el modelo principal. Esa descripción corresponde a un modelo causal decoder-only orientado a chat, no a un encoder de extracción de características.
 
 Tampoco se detalla nada sobre datos de entrenamiento: no se indica número de tokens, composición del corpus, ni si hubo etapas de RLHF, DPO o ajuste por refuerzo. La model card menciona de forma genérica un "upgrade de versión" con "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin cifras ni referencias a papers. No se documenta ninguna innovación técnica concreta (atención lineal, decodificación especulativa, MTP, etc.), más allá de la afirmación de que el modelo emplea más tokens de razonamiento por pregunta en la versión actual.
 
@@ -107,7 +107,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadD12DSZX/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/sadD12DSZX/MyAwesomeModel-TestRepository
 - Repositorio de código: la model card menciona "our code repository" sin proporcionar URL.
 - Paper técnico: no disponible.
 - Blog o anuncio oficial: no disponible. La model card menciona una "official website" con interfaz de chat y API, pero no incluye el enlace.

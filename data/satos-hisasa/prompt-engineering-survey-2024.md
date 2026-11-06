@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `satos-hisasa/prompt-engineering-survey-2024` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre ingeniería de prompts publicado en HuggingFace. Su propio autor lo describe como una nota exploratoria que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, antes de reportar cualquier resultado experimental. El artefacto principal es `review.md`, acompañado de un `README.md`.
+El repositorio `satos-hisasa/prompt-engineering-survey-2024` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre ingeniería de prompts publicado en Hugging Face. Su propio autor lo describe como una nota exploratoria que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, antes de reportar cualquier resultado experimental. El artefacto principal es `review.md`, acompañado de un `README.md`.
 
 A pesar de las etiquetas (`safetensors`, `transformer`), el repositorio no contiene una arquitectura funcional ni un checkpoint utilizable: los pesos registrados suman 49.600 parámetros, un orden de magnitud propio de un tensor de prueba o marcador de posición, no de un transformer operativo. El tamaño total del repositorio es de 0,0 GB, lo que refuerza esa interpretación.
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento: la model card indica expresamente que la nota
 - Documentación de limitaciones en proyectos internos: el apartado de alcance y limitaciones es reutilizable como sección de "trabajo no realizado" en memorandos técnicos, evitando presentar hipótesis como hallazgos.
 - Punto de entrada bibliográfico: las referencias incluidas permiten a un equipo iniciar la revisión de literatura sobre prompting sin partir de cero, aunque requiere verificación independiente de cada cita.
 - Formación interna: puede emplearse como material de discusión para enseñar a distinguir entre un plan de evaluación y un resultado experimental medido.
-- Auditoría de artefactos en HuggingFace: el caso ilustra cómo un repositorio etiquetado como `safetensors` y `transformer` puede no contener un modelo desplegable, lo que resulta útil para diseñar políticas de validación de dependencias en pipelines de MLOps.
+- Auditoría de artefactos en Hugging Face: el caso ilustra cómo un repositorio etiquetado como `safetensors` y `transformer` puede no contener un modelo desplegable, lo que resulta útil para diseñar políticas de validación de dependencias en pipelines de MLOps.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No procede una comparativa con modelos de lenguaje. La comparación pertinente e
 
 | Recurso | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| prompt-engineering-survey-2024 | Notas de investigación | Propuesta de estudio, sin resultados | MIT | HuggingFace, 15 descargas, 0 likes |
+| prompt-engineering-survey-2024 | Notas de investigación | Propuesta de estudio, sin resultados | MIT | Hugging Face, 15 descargas, 0 likes |
 | The Prompt Report (arXiv 2406.06608) | Encuesta sistemática | Taxonomía y terminología unificada de prompting | no disponible | arXiv |
 | Systematic Survey of Prompt Engineering in LLMs and VLMs (arXiv 2402.07927) | Encuesta sistemática | Técnicas de prompting para LLM y VLM | no disponible | arXiv |
 | Prompt Engineering Guide (promptingguide.ai) | Guía práctica | Técnicas, papers, guías por modelo y herramientas | no disponible | Web |
@@ -83,7 +83,7 @@ No procede una comparativa con modelos de lenguaje. La comparación pertinente e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/satos-hisasa/prompt-engineering-survey-2024
+- Repositorio en Hugging Face: https://huggingface.co/satos-hisasa/prompt-engineering-survey-2024
 - The Prompt Report: A Systematic Survey of Prompting Techniques (arXiv 2406.06608): https://arxiv.org/abs/2406.06608
 - A Systematic Survey of Prompt Engineering in Large Language Models (arXiv 2402.07927): https://arxiv.org/abs/2402.07927
 - Prompt Engineering Guide: https://www.promptingguide.ai/

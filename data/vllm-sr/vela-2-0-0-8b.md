@@ -93,11 +93,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Sesgos conocidos: no disponible. Al entrenar con datasets de seguridad y toxicidad, puede heredar los sesgos de anotación de dichos conjuntos.
 - El rendimiento en idiomas distintos del inglés y del chino no está documentado con métricas, pese a declararse soporte de 17 idiomas.
 - Licencia Apache-2.0, permisiva y compatible con uso comercial, sin cláusulas de restricción conocidas en la información disponible; conviene revisar los términos de los datasets de entrenamiento si se redistribuye el modelo.
-- Fecha de creación declarada en HuggingFace: 3 de octubre de 2026; última actualización: 7 de octubre de 2026.
+- Fecha de creación declarada en Hugging Face: 3 de octubre de 2026; última actualización: 7 de octubre de 2026.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Vela-2.0-0.8B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Vela-2.0-0.8B
 - Colección Vela 2.0: https://huggingface.co/collections/vllm-sr/vela-20
 - Documentación del proyecto: https://vllm-sr.ai/
 - Blog de presentación: https://vllm-sr.ai/blog/vela-2-0-open-foundation-routing-models

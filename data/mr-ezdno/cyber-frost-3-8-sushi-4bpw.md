@@ -103,7 +103,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw
+- Hugging Face del pack: https://huggingface.co/Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Pack sushi de referencia: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-4bpw
 - Medición del efecto YaRN en packs sushi: https://huggingface.co/chatnerdie/Qwen3.8-Flash-Next-EXL3-Sushi
@@ -112,4 +112,4 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 - Configuración de RoPE nativo: https://huggingface.co/Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw/blob/main/config.native-rope.json
 - Resultados del arnés KLD: https://huggingface.co/Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw/blob/main/kld-cf-vs-base.json
 
-Nota: la búsqueda web realizada no devolvió resultados relacionados con el modelo; los enlaces anteriores proceden exclusivamente de la model card y del identificador de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relacionados con el modelo; los enlaces anteriores proceden exclusivamente de la model card y del identificador de Hugging Face.

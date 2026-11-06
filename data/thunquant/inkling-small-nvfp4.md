@@ -56,7 +56,7 @@ La model card incluye una tabla comparativa con Qwen3.5 397B-A17B, MiMo V2.5, Mi
 - VRAM estimada para inferencia: aproximadamente 166 GB (segun LLM Explorer), lo que requiere multiples GPUs de alta gama.
 - GPUs recomendadas: no se especifica un modelo concreto; se ha reportado despliegue en un clúster dual de DGX Spark de NVIDIA.
 - Compatibilidad con GPUs de consumo: no es viable en GPUs consumer como RTX 4090 (24 GB VRAM) o similares.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers, segun la model card.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers, segun la model card.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La model card incluye una tabla comparativa con Qwen3.5 397B-A17B, MiMo V2.5, Mi
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/thunquant/Inkling-Small-NVFP4
+- Hugging Face (este modelo): https://huggingface.co/thunquant/Inkling-Small-NVFP4
 - Modelo base BF16: https://huggingface.co/thinkingmachines/Inkling-Small
 - Version NVFP4 oficial: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `summerMC/Qwen3.5-2B-SpeedX` es una variante no oficial del Qwen3.5-2B de Alibaba Cloud, publicada por el usuario summerMC en HuggingFace. Se trata de un modelo de generación de texto de aproximadamente 1,92 mil millones de parámetros que emplea la arquitectura de Gated Delta Networks (GDN), tal como indica el tag `qwen3_5_gdn24`. El modelo está orientado a conversación y generación de texto, y se distribuye en formato safetensors con soporte para la librería transformers.
+El modelo `summerMC/Qwen3.5-2B-SpeedX` es una variante no oficial del Qwen3.5-2B de Alibaba Cloud, publicada por el usuario summerMC en Hugging Face. Se trata de un modelo de generación de texto de aproximadamente 1,92 mil millones de parámetros que emplea la arquitectura de Gated Delta Networks (GDN), tal como indica el tag `qwen3_5_gdn24`. El modelo está orientado a conversación y generación de texto, y se distribuye en formato safetensors con soporte para la librería transformers.
 
 La relevancia de este modelo reside en que, si bien el Qwen3.5-2B original es un modelo multimodal con una ventana de contexto de 262.144 tokens, esta variante SpeedX parece centrarse exclusivamente en texto y en una ejecución más rápida (de ahí el nombre "SpeedX"). Sin embargo, la model card es una plantilla vacía sin datos técnicos específicos, por lo que la mayor parte de las especificaciones deben considerarse no disponibles o inferidas de la familia Qwen3.5. El repositorio no registra descargas ni valoraciones, lo que sugiere que es una publicación reciente y sin validación comunitaria.
 

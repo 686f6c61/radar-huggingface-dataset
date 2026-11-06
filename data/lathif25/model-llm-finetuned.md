@@ -72,5 +72,5 @@ No se dispone de resultados de benchmarks para este modelo, por lo que la compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lathif25/Model-LLM-Finetuned
+- Hugging Face: https://huggingface.co/Lathif25/Model-LLM-Finetuned
 - Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth

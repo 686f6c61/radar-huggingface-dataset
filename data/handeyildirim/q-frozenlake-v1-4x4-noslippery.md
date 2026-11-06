@@ -4,7 +4,7 @@
 
 `q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, entrenado por el usuario handeyildirim para resolver el entorno `FrozenLake-v1` de Gymnasium en su variante 4x4 sin superficies resbaladizas (`is_slippery=False`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada que asigna valores de accion a cada par estado-accion del entorno discreto.
 
-El artefacto se publica en HuggingFace Hub con el pipeline `reinforcement-learning` y el formato de pesos propio de la libreria `stable-baselines3` (fichero `q-learning.pkl`). El repositorio ocupa 0.0 GB, lo que confirma que el objeto almacenado es una tabla de dimensiones reducidas (16 estados por 4 acciones en el caso 4x4), sin pesos neuronales.
+El artefacto se publica en Hugging Face Hub con el pipeline `reinforcement-learning` y el formato de pesos propio de la libreria `stable-baselines3` (fichero `q-learning.pkl`). El repositorio ocupa 0.0 GB, lo que confirma que el objeto almacenado es una tabla de dimensiones reducidas (16 estados por 4 acciones en el caso 4x4), sin pesos neuronales.
 
 Su relevancia es fundamentalmente didactica: sirve como referencia de un agente que alcanza la recompensa maxima en un entorno determinista trivial, y como ejemplo minimo de como se estructura una model card con `model-index` para el pipeline de reinforcement learning. No es un modelo utilizable fuera del entorno `FrozenLake-v1`.
 
@@ -41,7 +41,7 @@ El entorno de entrenamiento es `FrozenLake-v1-4x4-no_slippery`, la version deter
 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo minimo y reproducible de Q-Learning tabular en un curso introductorio, cargandolo con `load_from_hub` y evaluando la politica sobre el entorno.
 - Verificacion de pipelines de RL: integrar el agente en tests de humo que comprueben que un pipeline de entrenamiento y publicacion en el Hub funciona de extremo a extremo con un entorno trivial.
-- Referencia de model card: emplear el repositorio como plantilla de estructura `model-index` con metrica `mean_reward` para agentes de RL en HuggingFace.
+- Referencia de model card: emplear el repositorio como plantilla de estructura `model-index` con metrica `mean_reward` para agentes de RL en Hugging Face.
 - Baseline de comparacion: usar la recompensa media de 1.00 como cota superior contra la que comparar agentes entrenados en variantes estocasticas del mismo entorno.
 - Reproduccion de experimentos: cargar el `.pkl` para inspeccionar la tabla Q resultante y contrastar los valores de estado-accion con los esperados teoricamente.
 - Demostracion de despliegue en Gymnasium: ilustrar el flujo `load_from_hub` + `gym.make(model["env_id"])` en tutoriales de integracion entre `stable-baselines3` y Gymnasium.
@@ -68,9 +68,9 @@ La recompensa media de 1.00 con desviacion 0.00 indica que el agente alcanza la 
 
 | Modelo | Algoritmo | Entorno | Contexto / estados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery (este) | Q-Learning tabular | FrozenLake-v1 4x4 determinista | 16 estados | no disponible | HuggingFace Hub |
-| Agentes DQN sobre FrozenLake | Deep Q-Network | FrozenLake-v1 (con o sin slippery) | 16 estados | variable | HuggingFace Hub / SB3 |
-| Agentes PPO sobre FrozenLake | Policy Gradient | FrozenLake-v1 (con o sin slippery) | 16 estados | variable | HuggingFace Hub / SB3 |
+| q-FrozenLake-v1-4x4-noSlippery (este) | Q-Learning tabular | FrozenLake-v1 4x4 determinista | 16 estados | no disponible | Hugging Face Hub |
+| Agentes DQN sobre FrozenLake | Deep Q-Network | FrozenLake-v1 (con o sin slippery) | 16 estados | variable | Hugging Face Hub / SB3 |
+| Agentes PPO sobre FrozenLake | Policy Gradient | FrozenLake-v1 (con o sin slippery) | 16 estados | variable | Hugging Face Hub / SB3 |
 
 No se dispone de datos de rendimiento de los modelos alternativos en la informacion proporcionada; la comparativa se limita a la naturaleza del algoritmo y el entorno. En entornos tabulares deterministas, Q-Learning tabular suele igualar o superar a DQN y PPO con menor coste computacional, aunque no generaliza a entornos con observaciones continuas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/handeyildirim/q-FrozenLake-v1-4x4-noSlippery
+- Hugging Face: https://huggingface.co/handeyildirim/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 de Gymnasium: https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Documentacion de `stable-baselines3`: https://stable-baselines3.readthedocs.io/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

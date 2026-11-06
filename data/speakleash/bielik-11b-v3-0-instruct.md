@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Bielik-11B-v3.0-Instruct es la variante afinada para instrucciones del modelo base speakleash/Bielik-11B-v3-Base-20250730, desarrollado por el proyecto polaco SpeakLeash. Se trata de un modelo de generacion de texto de ~11,17 mil millones de parametros (11.168.796.672 segun los pesos en safetensors), disenado para conversacion multi-turno y con cobertura declarada de 31 idiomas, con el polaco y el ingles como lenguas principales. El repositorio ocupa 22,3 GB y acumula 4.889 descargas y 98 likes en HuggingFace.
+Bielik-11B-v3.0-Instruct es la variante afinada para instrucciones del modelo base speakleash/Bielik-11B-v3-Base-20250730, desarrollado por el proyecto polaco SpeakLeash. Se trata de un modelo de generacion de texto de ~11,17 mil millones de parametros (11.168.796.672 segun los pesos en safetensors), disenado para conversacion multi-turno y con cobertura declarada de 31 idiomas, con el polaco y el ingles como lenguas principales. El repositorio ocupa 22,3 GB y acumula 4.889 descargas y 98 likes en Hugging Face.
 
 El modelo es relevante por dos motivos. Primero, porque amplia la oferta de modelos abiertos de rango 11B con licencia Apache 2.0, lo que permite uso comercial sin las restricciones habituales de otras licencias comunitarias. Segundo, porque ofrece cobertura multilingue amplia (incluyendo castellano, catalan no declarado, aleman, frances, italiano, portugues, ucraniano, checo, eslovaco y lenguas balcanicas, entre otras), un nicho donde la mayoria de modelos abiertos de este tamano se limitan al ingles y a un punado de idiomas mayoritarios.
 
-La informacion publica disponible no detalla la longitud de contexto, el volumen de tokens de entrenamiento ni los resultados de benchmarks, y el acceso al repositorio esta restringido: requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+La informacion publica disponible no detalla la longitud de contexto, el volumen de tokens de entrenamiento ni los resultados de benchmarks, y el acceso al repositorio esta restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ La informacion publica disponible no detalla la longitud de contexto, el volumen
 | Formato de pesos | safetensors |
 | Modelo base | speakleash/Bielik-11B-v3-Base-20250730 |
 | Tamano del repositorio | 22,3 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers (compatible con text-generation-inference y endpoints) |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ Respecto al entrenamiento, lo unico verificable es que el modelo es un ajuste (f
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones multilingues, y las busquedas web realizadas no han devuelto documentacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K ni evaluaciones multilingues, y las busquedas web realizadas no han devuelto documentacion tecnica asociada al modelo.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ Estimaciones calculadas a partir del numero de parametros (11,17 B); no son dato
 - Viabilidad en GPU de consumo: en FP16 no cabe en una GPU de consumo salvo reparto entre dos unidades de 24 GB; en cuantizacion de 8 bits o inferior si es viable en una RTX 4090.
 - Opciones de despliegue: `transformers` (referencia), text-generation-inference (TGI), vLLM y SGLang para servido de alto rendimiento; llama.cpp u Ollama solo si se generan conversiones GGUF propias, ya que el repositorio oficial no las publica.
 - Latencia y throughput: no disponible. El rendimiento dependera del backend, del tipo de cuantizacion y del hardware; conviene medirlo con el caso de uso real antes de dimensionar.
-- Requisito adicional: el acceso esta restringido en HuggingFace, por lo que cualquier despliegue automatizado necesita un token con los permisos aceptados y, en entornos aislados, descarga previa de los pesos.
+- Requisito adicional: el acceso esta restringido en Hugging Face, por lo que cualquier despliegue automatizado necesita un token con los permisos aceptados y, en entornos aislados, descarga previa de los pesos.
 
 ## Comparativa con modelos similares
 
@@ -74,32 +74,32 @@ Los datos de los modelos comparables proceden de sus fichas publicas y no han po
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bielik-11B-v3.0-Instruct | 11,17 B | no disponible | 31 | Apache 2.0 | HuggingFace (gated) |
-| SpeakLeash Bielik-11B-v2.5-Instruct | no disponible | no disponible | mayoritariamente pl/en | Apache 2.0 | HuggingFace |
-| Mistral-Nemo-Instruct-2407 | 12,2 B | 128k | multilingue (enfasis europeo) | Apache 2.0 | HuggingFace |
-| Qwen2.5-14B-Instruct | 14,7 B | 32.768 | multilingue (enfasis asiatico) | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 B | 128k | multilingue (8 idiomas declarados) | Llama 3.1 Community License | HuggingFace (gated) |
+| Bielik-11B-v3.0-Instruct | 11,17 B | no disponible | 31 | Apache 2.0 | Hugging Face (gated) |
+| SpeakLeash Bielik-11B-v2.5-Instruct | no disponible | no disponible | mayoritariamente pl/en | Apache 2.0 | Hugging Face |
+| Mistral-Nemo-Instruct-2407 | 12,2 B | 128k | multilingue (enfasis europeo) | Apache 2.0 | Hugging Face |
+| Qwen2.5-14B-Instruct | 14,7 B | 32.768 | multilingue (enfasis asiatico) | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 B | 128k | multilingue (8 idiomas declarados) | Llama 3.1 Community License | Hugging Face (gated) |
 
 Frente a estas alternativas, la ventaja diferencial de Bielik-11B-v3.0-Instruct es la cobertura declarada de lenguas de Europa central y oriental, practicamente ausente en las fichas de Mistral-Nemo o Qwen2.5. En contra, no publica contexto ni benchmarks, lo que impide comparar su rendimiento real con el de esos modelos.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar, lo que anade friction a pipelines automatizados y a entornos sin acceso a la pagina web.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar, lo que anade friction a pipelines automatizados y a entornos sin acceso a la pagina web.
 - Ausencia total de benchmarks: no hay datos verificables de MMLU, HumanEval, GSM8K ni evaluaciones multilingues, por lo que cualquier decision de adopcion deberia basarse en una evaluacion propia sobre el caso de uso concreto.
 - Longitud de contexto desconocida: sin este dato no se puede dimensionar correctamente el troceado en RAG ni garantizar el comportamiento en conversaciones largas.
 - Riesgo de alucinacion: como cualquier modelo generativo de este tamano, puede producir afirmaciones plausibles pero falsas, especialmente en dominios especializados y en idiomas con menos presencia en los datos de entrenamiento.
 - Cobertura idiomatica desigual: aunque se declaran 31 idiomas, no se especifica el volumen de datos por lengua; es previsible un rendimiento muy superior en polaco e ingles que en idiomas como el islandes, el estonio o el albanes. Conviene validar por idioma antes de desplegar.
 - Sesgos: no se documenta ningun proceso de mitigacion de sesgos ni evaluacion de toxicidad. Al ser un modelo entrenado mayoritariamente con datos web polacos, puede reflejar sesgos culturales y politicos de esa procedencia.
 - Sin soporte documentado de tool calling ni de agentes: si el caso de uso requiere function calling o razonamiento multi-paso con herramientas, habria que validarlo experimentalmente; los tags del repositorio no lo garantizan.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin obligacion de compartir derivados, pero el titular del despliegue sigue siendo responsable del cumplimiento normativo (por ejemplo, RGPD) y de las condiciones de uso de HuggingFace aceptadas para el acceso.
+- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin obligacion de compartir derivados, pero el titular del despliegue sigue siendo responsable del cumplimiento normativo (por ejemplo, RGPD) y de las condiciones de uso de Hugging Face aceptadas para el acceso.
 - Requisitos de memoria: en FP16 necesita mas de 22 GB de VRAM solo para pesos, lo que excluye GPU de consumo individuales sin cuantizacion.
 - Produccion: no se documentan versiones cuantizadas oficiales ni validacion por parte del autor en backends como vLLM o TGI; las cuantizaciones de terceros deberian verificarse antes de usarlas en sistemas criticos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct
+- Modelo en Hugging Face: https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct
 - Modelo base: https://huggingface.co/speakleash/Bielik-11B-v3-Base-20250730
-- Organizacion SpeakLeash en HuggingFace: https://huggingface.co/speakleash
+- Organizacion SpeakLeash en Hugging Face: https://huggingface.co/speakleash
 - Referencias arXiv incluidas en los metadatos (titulos no confirmados):
   - https://arxiv.org/abs/2505.02410
   - https://arxiv.org/abs/2505.02550

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lfreleng/opensearch-neural-embed-v1` es un modelo publicado en HuggingFace por el usuario `lfreleng` bajo licencia Apache 2.0. Por su identificador y por la ausencia de documentación adicional, se trata presumiblemente de un modelo de embeddings orientado a búsqueda neuronal (neural search) dentro del ecosistema OpenSearch, aunque el autor no proporciona información que lo confirme de forma explícita.
+`lfreleng/opensearch-neural-embed-v1` es un modelo publicado en Hugging Face por el usuario `lfreleng` bajo licencia Apache 2.0. Por su identificador y por la ausencia de documentación adicional, se trata presumiblemente de un modelo de embeddings orientado a búsqueda neuronal (neural search) dentro del ecosistema OpenSearch, aunque el autor no proporciona información que lo confirme de forma explícita.
 
 La model card publicada es prácticamente vacía: únicamente contiene la declaración de licencia Apache 2.0, sin descripción de arquitectura, datos de entrenamiento, dimensiones de embedding, tokenizador ni instrucciones de uso. El repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente sin adopción comunitaria.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de especificaciones técnicas verificables, esta ficha do
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El nombre del repositorio sugiere un modelo de embeddings para búsqueda neuronal (posiblemente un encoder tipo BERT o similar, habitual en pipelines de neural search de OpenSearch), pero esta inferencia no está confirmada por el autor.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El nombre del repositorio sugiere un modelo de embeddings para búsqueda neuronal (posiblemente un encoder tipo BERT o similar, habitual en pipelines de neural search de OpenSearch), pero esta inferencia no está confirmada por el autor.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, la dimensión del vector de embedding ni si se aplicaron técnicas de contraste (por ejemplo, aprendizaje contrastivo con pares consulta-documento) o ajuste fino supervisado.
 
@@ -65,10 +65,10 @@ No es posible establecer una comparativa rigurosa sin conocer el tamaño, la arq
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lfreleng/opensearch-neural-embed-v1 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| BAAI/bge-base-en-v1.5 | 109 M | 512 tokens | MIT | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache 2.0 | HuggingFace |
-| intfloat/e5-base-v2 | 109 M | 512 tokens | MIT | HuggingFace |
+| lfreleng/opensearch-neural-embed-v1 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| BAAI/bge-base-en-v1.5 | 109 M | 512 tokens | MIT | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache 2.0 | Hugging Face |
+| intfloat/e5-base-v2 | 109 M | 512 tokens | MIT | Hugging Face |
 
 La comparación de rendimiento con estos modelos no puede realizarse con los datos disponibles.
 
@@ -84,5 +84,5 @@ La comparación de rendimiento con estos modelos no puede realizarse con los dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lfreleng/opensearch-neural-embed-v1
+- Hugging Face: https://huggingface.co/lfreleng/opensearch-neural-embed-v1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

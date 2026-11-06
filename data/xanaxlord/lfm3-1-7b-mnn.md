@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MNN (este) | 1,7B | no disponible | MNN int4 | lfm1.0 | HuggingFace, app TokForge |
-| LiquidAI/LFM3-1.7B (original) | 1,7B | no disponible | safetensors | lfm1.0 | HuggingFace |
+| LFM3-1.7B-MNN (este) | 1,7B | no disponible | MNN int4 | lfm1.0 | Hugging Face, app TokForge |
+| LiquidAI/LFM3-1.7B (original) | 1,7B | no disponible | safetensors | lfm1.0 | Hugging Face |
 | Alternativas on-device de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con el modelo original de Liquid AI, del que este es una conversión cuantizada. No se dispone de datos de benchmarks ni de otras alternativas on-device en la información proporcionada para establecer una comparativa cuantitativa.
@@ -76,15 +76,15 @@ La comparación directa más relevante es con el modelo original de Liquid AI, d
 - Solo soporta inglés según la model card; no se debe esperar un rendimiento fiable en castellano u otros idiomas.
 - La cuantización int4 con HQQ y block size 32 introduce degradación respecto a los pesos originales en fp16/bf16; no se han publicado mediciones de esa pérdida.
 - Riesgo de alucinación inherente a un modelo de 1,7B: baja capacidad de razonamiento y de verificación factual frente a modelos mayores.
-- La licencia LFM Open License v1.0 impone restricciones de uso comercial; es necesario revisar el fichero `LICENSE` antes de integrarlo en un producto. El campo `license: other` de HuggingFace refleja esa condición.
+- La licencia LFM Open License v1.0 impone restricciones de uso comercial; es necesario revisar el fichero `LICENSE` antes de integrarlo en un producto. El campo `license: other` de Hugging Face refleja esa condición.
 - El repositorio tiene 0 descargas y 0 likes, y fue publicado sin historial de mantenimiento; no hay garantía de soporte ni de actualizaciones.
-- Dependencia de la app TokForge 1.3.9.7 o superior: el modelo no es utilizable con runtimes estándar de HuggingFace sin una conversión adicional.
+- Dependencia de la app TokForge 1.3.9.7 o superior: el modelo no es utilizable con runtimes estándar de Hugging Face sin una conversión adicional.
 - No se documenta la longitud de contexto efectiva del modelo convertido, lo que impide planificar aplicaciones con ventanas largas.
 - El autor de la conversión es un usuario independiente (XanaxLord), no Liquid AI; la responsabilidad sobre la integridad de los pesos recae en el publicador.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XanaxLord/LFM3-1.7B-MNN
+- Modelo en Hugging Face: https://huggingface.co/XanaxLord/LFM3-1.7B-MNN
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - TokForge: https://tokforge.ai
 - Discord de TokForge: https://discord.gg/Acv3CBtfVm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SciEdu_291epi_trim_pi05 es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario leapshared en HuggingFace. Se trata de un ajuste fino (fine-tuning) de lerobot/pi05_base, que es la implementación en LeRobot de π0.5 (pi05) de Physical Intelligence, un modelo VLA concebido para generalizar a entornos y situaciones no vistos durante el entrenamiento. El resultado es un modelo especializado en la ejecución autónoma de tres experimentos científicos de laboratorio educativo: clasificación de hojas, reacción redox y electroscopio.
+SciEdu_291epi_trim_pi05 es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario leapshared en Hugging Face. Se trata de un ajuste fino (fine-tuning) de lerobot/pi05_base, que es la implementación en LeRobot de π0.5 (pi05) de Physical Intelligence, un modelo VLA concebido para generalizar a entornos y situaciones no vistos durante el entrenamiento. El resultado es un modelo especializado en la ejecución autónoma de tres experimentos científicos de laboratorio educativo: clasificación de hojas, reacción redox y electroscopio.
 
 El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y consume observaciones multimodales: un vector de estado de 16 dimensiones y tres cámaras RGB a 480x640 píxeles (una frontal y dos en las muñecas). Produce como salida un vector de acción de 16 dimensiones que controla un robot bimanual del tipo bi_openarm_follower. Se entrenó sobre el dataset leapshared/SciEdu_291epi, compuesto por 291 episodios y 597.322 fotogramas grabados a 30 FPS, con instrucciones de tarea en inglés.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SciEdu_291epi_trim_pi05 | 4,14 mil millones | 3 imágenes 480x640 + estado de 16 dimensiones | no disponible (sin benchmarks) | apache-2.0 | Público en HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible (arquitectura idéntica, ajuste generalista) | mismas entradas multimodales del pipeline π0.5 | no disponible | no disponible en la información consultada | Público en HuggingFace como modelo base |
+| SciEdu_291epi_trim_pi05 | 4,14 mil millones | 3 imágenes 480x640 + estado de 16 dimensiones | no disponible (sin benchmarks) | apache-2.0 | Público en Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible (arquitectura idéntica, ajuste generalista) | mismas entradas multimodales del pipeline π0.5 | no disponible | no disponible en la información consultada | Público en Hugging Face como modelo base |
 | π0.5 (Physical Intelligence) | no disponible | VLA de propósito general para entornos abiertos | no disponible | no disponible en la información consultada | Referenciado en el blog de Physical Intelligence; implementación abierta vía OpenPI |
 | OpenVLA (modelo VLA abierto ampliamente usado como referencia) | aproximadamente 7 mil millones (variante OpenVLA-7B) | imágenes + instrucción de lenguaje | no disponible en esta consulta | no disponible en esta consulta | Público, fuera del ecosistema LeRobot |
 
@@ -89,7 +89,7 @@ Las cifras de contexto, rendimiento y licencia de los modelos comparados deben v
 
 ## Enlaces
 
-- [Ficha del modelo en HuggingFace](https://huggingface.co/leapshared/SciEdu_291epi_trim_pi05)
+- [Ficha del modelo en Hugging Face](https://huggingface.co/leapshared/SciEdu_291epi_trim_pi05)
 - [Modelo base lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - [Dataset de entrenamiento leapshared/SciEdu_291epi](https://huggingface.co/datasets/leapshared/SciEdu_291epi)
 - [Visualizador del dataset en LeRobot Spaces](https://huggingface.co/spaces/lerobot/visualize_dataset?path=leapshared/SciEdu_291epi)

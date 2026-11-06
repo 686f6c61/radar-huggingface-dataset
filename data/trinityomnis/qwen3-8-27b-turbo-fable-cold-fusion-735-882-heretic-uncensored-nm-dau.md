@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU es un modelo de lenguaje de 27.781.427.952 parámetros, publicado en HuggingFace por el usuario trinityomnis. Se trata de un ajuste fino sobre el modelo base Qwen/Qwen3.8-27B, orientado a reducir las restricciones de seguridad y a optimizar el razonamiento. El nombre del modelo incluye los términos "Uncensored" y "Heretic", lo que sugiere que ha sido entrenado para generar contenido sin filtros. La model card, atribuida en parte a DavidAU, declara el uso de técnicas de entrenamiento como Cold Fusion, GAIN Training y ajuste multi-etapa (multi-stage tuning), aunque no se proporcionan detalles técnicos de dichos métodos.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU es un modelo de lenguaje de 27.781.427.952 parámetros, publicado en Hugging Face por el usuario trinityomnis. Se trata de un ajuste fino sobre el modelo base Qwen/Qwen3.8-27B, orientado a reducir las restricciones de seguridad y a optimizar el razonamiento. El nombre del modelo incluye los términos "Uncensored" y "Heretic", lo que sugiere que ha sido entrenado para generar contenido sin filtros. La model card, atribuida en parte a DavidAU, declara el uso de técnicas de entrenamiento como Cold Fusion, GAIN Training y ajuste multi-etapa (multi-stage tuning), aunque no se proporcionan detalles técnicos de dichos métodos.
 
 El modelo presenta un pipeline declarado como image-text-to-text, pero la documentación disponible no describe capacidades de visión ni detalla la arquitectura interna. El repositorio contiene 55.6 GB de pesos en formato safetensors, lo que corresponde aproximadamente a pesos en FP16. La model card menciona múltiples versiones y ramas del proyecto, así como mejoras en métricas como ARC-C, pero no aporta benchmarks públicos verificables. Su relevancia radica en el creciente interés por modelos "uncensored" y de razonamiento optimizado, aunque la fiabilidad y el rendimiento real del modelo no están respaldados por evaluaciones independientes.
 
@@ -76,7 +76,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Hugging Face: https://huggingface.co/trinityomnis/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio GGUF mencionado en la model card: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Rama 3 del proyecto: https://huggingface.co/DavidAU/Qwen3.8-27B-UltimateDetails2-stage1__The-Harley-Pelican
 - Herramienta de recomendacion de GPU: https://www.spheron.network/tools/gpu-recommender/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU

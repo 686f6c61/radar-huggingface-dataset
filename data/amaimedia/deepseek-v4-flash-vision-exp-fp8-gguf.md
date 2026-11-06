@@ -90,9 +90,9 @@ No se han publicado en la informacion disponible resultados de benchmarks especi
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad | Rendimiento de referencia |
 |---|---|---|---|---|---|---|
-| AMAImedia/DeepSeek-V4-Flash-Vision-Exp-FP8-GGUF | 304,6 B | No disponible | Si (imagen-texto) | apache-2.0 (segun metadatos) | Pesos abiertos en HuggingFace, 319,4 GB | Benchmarks no publicados para la version cuantizada |
-| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | No disponible | No disponible | Si (imagen-texto) | Insignia MIT en la model card, discrepancia con los metadatos del derivado | Pesos abiertos en HuggingFace | ApexBench 36,5; Agents' Last Exam 27,3; Chartography 64,3; ZeroBench (Pass@5) 35,0 |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | No disponible | No disponible | No (ignora elementos multimodales) | No disponible | Pesos abiertos en HuggingFace | Terminal Bench 2.1 82,7; Toolathlon-Verified 70,3; DSBench-Hard 59,6 |
+| AMAImedia/DeepSeek-V4-Flash-Vision-Exp-FP8-GGUF | 304,6 B | No disponible | Si (imagen-texto) | apache-2.0 (segun metadatos) | Pesos abiertos en Hugging Face, 319,4 GB | Benchmarks no publicados para la version cuantizada |
+| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | No disponible | No disponible | Si (imagen-texto) | Insignia MIT en la model card, discrepancia con los metadatos del derivado | Pesos abiertos en Hugging Face | ApexBench 36,5; Agents' Last Exam 27,3; Chartography 64,3; ZeroBench (Pass@5) 35,0 |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | No disponible | No disponible | No (ignora elementos multimodales) | No disponible | Pesos abiertos en Hugging Face | Terminal Bench 2.1 82,7; Toolathlon-Verified 70,3; DSBench-Hard 59,6 |
 | Opus-4.8 | No disponible | No disponible | Si, segun los benchmarks multimodales reportados | Propietaria (modelo cerrado) | Solo via API | Terminal Bench 2.1 85,0; NL2Repo 69,7; DSBench-Hard 71,7; Chartography 65,0 |
 
 La comparativa se limita a los tres modelos para los que la informacion proporcionada incluye datos. No se dispone de cifras de parametros ni de contexto de DeepSeek-V4-Flash-0731 ni de Opus-4.8, por lo que el tamano relativo no puede establecerse.
@@ -112,9 +112,9 @@ La comparativa se limita a los tres modelos para los que la informacion proporci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AMAImedia/DeepSeek-V4-Flash-Vision-Exp-FP8-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/AMAImedia/DeepSeek-V4-Flash-Vision-Exp-FP8-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - X (Twitter) de DeepSeek AI: https://twitter.com/deepseek_ai

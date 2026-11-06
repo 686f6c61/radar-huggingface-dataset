@@ -85,8 +85,8 @@ Una imagen constante de CPLFW aparece en 13 pares; la evaluación compartida los
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LayaFace-DCF.v0.20261030 | 86,19 M | dos recortes 112x112 -> 224x224 | Media 89,50 % en cinco benchmarks reales; F1 98,12 % en DCF | no verificada | HuggingFace, 0 descargas, 0 likes |
-| openai/clip-vit-base-patch16 | no disponible en la información | imagen 224x224 | no disponible | MIT | HuggingFace |
+| LayaFace-DCF.v0.20261030 | 86,19 M | dos recortes 112x112 -> 224x224 | Media 89,50 % en cinco benchmarks reales; F1 98,12 % en DCF | no verificada | Hugging Face, 0 descargas, 0 likes |
+| openai/clip-vit-base-patch16 | no disponible en la información | imagen 224x224 | no disponible | MIT | Hugging Face |
 | Líneas base dedicadas de reconocimiento facial | no disponible en la información | no disponible | superiores según el autor en edad y pose cruzadas | no disponible | no disponible |
 
 El autor indica que esta variante, pese a su buen rendimiento en pares sintéticos, queda por debajo de las líneas base dedicadas de reconocimiento facial en benchmarks reales de edad y pose cruzadas. No se aportan nombres ni cifras de esos modelos comparables.
@@ -112,7 +112,7 @@ El autor indica que esta variante, pese a su buen rendimiento en pares sintétic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leloss/LayaFace-DCF.v0.20261030
+- Modelo en Hugging Face: https://huggingface.co/leloss/LayaFace-DCF.v0.20261030
 - Modelo base CLIP ViT-B/16: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper de CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020
 - Paper de DCFace (arXiv:2304.07060): https://arxiv.org/abs/2304.07060

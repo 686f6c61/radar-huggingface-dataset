@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos sobre políticas de loco
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-3d-bipedal-teleop | no disponible | no aplica | 100 % éxito de marcha, 0,35 m/s (declarado, sin verificar) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| microduck-3d-bipedal-teleop | no disponible | no aplica | 100 % éxito de marcha, 0,35 m/s (declarado, sin verificar) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -114,8 +114,8 @@ No se dispone en la información proporcionada de datos sobre políticas de loco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/microduck-3d-bipedal-teleop
-- Demo interactiva 3D en HuggingFace Spaces: https://huggingface.co/spaces/hwihwalab/microduck-3d-bipedal-teleop
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/microduck-3d-bipedal-teleop
+- Demo interactiva 3D en Hugging Face Spaces: https://huggingface.co/spaces/hwihwalab/microduck-3d-bipedal-teleop
 - Documentación en coreano (README_KR.md): https://huggingface.co/hwihwalab/microduck-3d-bipedal-teleop/blob/main/README_KR.md
 - MuJoCo: https://mujoco.org
 - ONNX Runtime: https://onnxruntime.ai

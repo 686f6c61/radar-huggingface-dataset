@@ -63,7 +63,7 @@ La evaluación usa 20 prompts puntuados por los mismos validadores que la app em
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1060, RTX 3060, RTX 4090) o iGPU moderna. El entrenamiento se realizó en una RTX 5060 Ti, pero la inferencia es mucho menos exigente.
 - Compatible con CPU: al ser un modelo de 0.6B cuantizado, puede ejecutarse en CPU con llama.cpp sin problemas de latencia apreciables en hardware de escritorio.
 - Despliegue en móvil: diseñado para ejecución on-device en Android, aunque la model card indica que no existe medición de latencia en hardware real de teléfono.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. También es compatible con endpoints vía la etiqueta `endpoints_compatible` de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. También es compatible con endpoints vía la etiqueta `endpoints_compatible` de Hugging Face.
 - Latencia y throughput: no disponibles; no se ha publicado ninguna medición.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos de simplificación de texto co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ndgold/Qwen3-0.6B-EasyLanguage-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ndgold/Qwen3-0.6B-EasyLanguage-GGUF
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ndgold/live-linguist-easylanguage-sft
 - Repositorio de la app Live Linguist: https://github.com/ngoldbla/livelinguist-android

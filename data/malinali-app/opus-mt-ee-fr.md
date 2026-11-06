@@ -6,7 +6,7 @@ malinali-app/opus-mt-ee-fr es un paquete de traduccion automatica neuronal para 
 
 Arquitectura Marian (transformer encoder-decoder) con 75.554.618 parametros totales y un tamano de repositorio de 0,3 GB. Es un modelo denso, no MoE, de un solo par de idiomas y una sola direccion de traduccion. La relevancia practica esta en su tamano reducido: cabe en movil y en CPU sin GPU, lo que permite traduccion offline en escenarios con conectividad limitada.
 
-El repositorio no registra descargas ni likes y no incluye resultados de evaluacion, por lo que su interes es fundamentalmente de despliegue (formato y tokenizadores) mas que de investigacion. La licencia no esta declarada en la ficha de HuggingFace y la model card remite a la del modelo upstream.
+El repositorio no registra descargas ni likes y no incluye resultados de evaluacion, por lo que su interes es fundamentalmente de despliegue (formato y tokenizadores) mas que de investigacion. La licencia no esta declarada en la ficha de Hugging Face y la model card remite a la del modelo upstream.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio no registra descargas ni likes y no incluye resultados de evaluac
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible; el repositorio solo distribuye pesos en safetensors |
 | Idiomas soportados | ee (ewe) y fr (frances) |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica seguir la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica seguir la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`), mas `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 | Tamano del repositorio | 0,3 GB |
 | Pipeline declarado | translation (text2text-generation) |
@@ -80,14 +80,14 @@ Frente al modelo upstream, la diferencia no esta en la calidad de traduccion sin
 - Idiomas de bajos recursos: los corpus OPUS para el ewe son limitados y de dominio estrecho, de modo que la calidad fuera de ese dominio puede degradarse notablemente.
 - Riesgo de alucinacion: como cualquier modelo seq2seq, puede generar traducciones fluidas pero incorrectas, inventar nombres propios o alterar cifras; requiere revision humana en contextos legales, medicos o administrativos.
 - Sin ajuste de seguridad ni de alineacion: no hay informacion sobre moderacion de contenido ni sobre filtrado de sesgos; los sesgos del corpus de entrenamiento se transfieren a las traducciones.
-- Licencia no declarada en la ficha de HuggingFace: la model card remite a la del modelo upstream, que suele ser CC-BY 4.0, pero la ausencia de declaracion explicita obliga a verificar los terminos antes de un uso comercial.
+- Licencia no declarada en la ficha de Hugging Face: la model card remite a la del modelo upstream, que suele ser CC-BY 4.0, pero la ausencia de declaracion explicita obliga a verificar los terminos antes de un uso comercial.
 - Longitud de contexto no documentada: no se especifica el maximo de tokens de entrada, lo que complica el tratamiento de documentos largos y obliga a fragmentar el texto.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de que la conversion a safetensors y a tokenizadores fast sea equivalente al modelo original.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, por lo que no hay validacion de la comunidad ni issues conocidos documentados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-ee-fr
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-ee-fr
 - Modelo base upstream: https://huggingface.co/Helsinki-NLP/opus-mt-ee-fr
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

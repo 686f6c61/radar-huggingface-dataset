@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jwhite135/stage1_pi0 | ~4,03 B | VLA flow matching (fine-tune) | lerobot/pi0_base | gemma | HuggingFace (13 descargas) |
-| lerobot/pi0_base | ~4 B (no confirmado en la informacion) | VLA flow matching (base) | π₀ de Physical Intelligence | gemma | HuggingFace (LeRobot) |
+| jwhite135/stage1_pi0 | ~4,03 B | VLA flow matching (fine-tune) | lerobot/pi0_base | gemma | Hugging Face (13 descargas) |
+| lerobot/pi0_base | ~4 B (no confirmado en la informacion) | VLA flow matching (base) | π₀ de Physical Intelligence | gemma | Hugging Face (LeRobot) |
 | π₀-FAST | No disponible | VLA autorregresivo basado en el tokenizador FAST | π₀ de Physical Intelligence | No disponible | Repositorio OpenPI / GitHub |
 | π₀ (original) | No disponible | VLA flow matching | - | No disponible | Pesos abiertos desde febrero de 2025 |
 
@@ -96,7 +96,7 @@ Nota: los datos de parametros y contexto de los modelos comparados no se detalla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwhite135/stage1_pi0
+- Modelo en Hugging Face: https://huggingface.co/jwhite135/stage1_pi0
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/default
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0

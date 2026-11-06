@@ -101,7 +101,7 @@ La diferencia principal entre las tres primeras filas no es de calidad de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-i1-GGUF
 - Modelo de origen de la cuantizacion: https://huggingface.co/saidutta69/Qwen2.5-Coder-1.5B-Instruct-heretic
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen2.5-Coder-1.5B-Instruct-heretic-GGUF
 - Pagina de descarga resumida del autor: https://hf.tst.eu/model#Qwen2.5-Coder-1.5B-Instruct-heretic-i1-GGUF

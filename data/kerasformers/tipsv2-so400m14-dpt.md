@@ -30,7 +30,7 @@ No se dispone de información detallada sobre los datos de entrenamiento (númer
 - Salida combinada de profundidad y segmentación en una sola pasada.
 - Soporte para tres backends de Keras (TensorFlow, PyTorch, JAX) mediante la misma implementación.
 - Preprocesador de imagen integrado con resolución de 448 píxeles.
-- Capacidad de cargar pesos directamente desde HuggingFace (tanto el checkpoint de KerasFormers como el original de Google).
+- Capacidad de cargar pesos directamente desde Hugging Face (tanto el checkpoint de KerasFormers como el original de Google).
 
 ## Casos de uso
 - Robótica móvil: el modelo puede estimar profundidad y segmentar objetos en tiempo real para la navegación autónoma, gracias a su salida densa y su funcionamiento en múltiples backends.
@@ -61,7 +61,7 @@ No se dispone de datos comparativos con otros modelos de estimación de profundi
 - No se documentan limitaciones de idioma ni contexto, ya que no es un modelo de lenguaje.
 
 ## Enlaces
-- HuggingFace (repositorio KerasFormers): https://huggingface.co/kerasformers/tipsv2-so400m14-dpt
+- Hugging Face (repositorio KerasFormers): https://huggingface.co/kerasformers/tipsv2-so400m14-dpt
 - Modelo original de Google: https://huggingface.co/google/tipsv2-so400m14-dpt
 - Paper TIPSv2 (arXiv): https://huggingface.co/papers/2604.12012
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers

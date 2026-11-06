@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marseillee/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym/Gymnasium. Lo publica el usuario Marseillee en HuggingFace Hub y se ha generado con la libreria stable-baselines3, la implementacion de referencia en PyTorch para algoritmos de RL profundo. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica neuronal que controla un lander en un simulador fisico 2D, por lo que no tiene parametros de lenguaje, contexto, idiomas ni capacidades conversacionales.
+Marseillee/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gym/Gymnasium. Lo publica el usuario Marseillee en Hugging Face Hub y se ha generado con la libreria stable-baselines3, la implementacion de referencia en PyTorch para algoritmos de RL profundo. No se trata de un modelo de lenguaje ni de un modelo generativo: es una politica neuronal que controla un lander en un simulador fisico 2D, por lo que no tiene parametros de lenguaje, contexto, idiomas ni capacidades conversacionales.
 
 El modelo resuelve una tarea de control continuo-discreto muy acotada: aterrizar una nave entre dos plataformas aplicando empuje lateral y vertical. Su interes es fundamentalmente didactico y de validacion: sirve como ejemplo reproducible de un pipeline de entrenamiento PPO con stable-baselines3 y de publicacion de artefactos en el Hub mediante huggingface_sb3. El autor declara una recompensa media de 263,10 ± 11,66 en LunarLander-v2, un valor que supera el umbral de resolucion habitual del entorno (200) y que indica que la politica ha convergido.
 
@@ -44,11 +44,11 @@ El entorno LunarLander-v2 tiene un espacio de observaciones continuo de 8 dimens
 - Benchmark de referencia en LunarLander-v2: emplear la recompensa declarada (263,10 ± 11,66) como linea base para comparar nuevas variantes de PPO, ajustes de hiperparametros o algoritmos alternativos (A2C, DQN, SAC discreto).
 - Reproduccion de experimentos: cargar el agente y reejecutar episodios con semillas fijas para estudiar la varianza de la politica y la estabilidad del entrenamiento.
 - Base para fine-tuning: partir de estos pesos y continuar el entrenamiento con recompensas modificadas (por ejemplo, penalizacion de combustible mas agresiva) para estudiar el efecto en la politica resultante.
-- Demostracion de publicacion en HuggingFace Hub: usar el repositorio como plantilla de como subir artefactos de stable-baselines3 con `package_to_hub`, aunque la model card del autor esta incompleta y requeriria completarse.
+- Demostracion de publicacion en Hugging Face Hub: usar el repositorio como plantilla de como subir artefactos de stable-baselines3 con `package_to_hub`, aunque la model card del autor esta incompleta y requeriria completarse.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados por HuggingFace):
+Datos declarados por el autor en el model-index (no verificados por Hugging Face):
 
 | Algoritmo | Tarea | Dataset/entorno | Metrica | Valor |
 |---|---|---|---|---|
@@ -68,9 +68,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Marseillee/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | 263,10 ± 11,66 (mean_reward) | no disponible | HuggingFace Hub |
-| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
-| sb3/dqn-LunarLander-v2 (referencia de la comunidad) | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
+| Marseillee/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | 263,10 ± 11,66 (mean_reward) | no disponible | Hugging Face Hub |
+| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
+| sb3/dqn-LunarLander-v2 (referencia de la comunidad) | DQN | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada; la comparativa se limita a la categoria (agentes de RL para LunarLander-v2 publicados por la organizacion sb3). Cualquier comparacion numerica requeriria evaluar los tres agentes con el mismo numero de episodios y semillas.
 
@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marseillee/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Marseillee/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347
-- Organizacion sb3 en HuggingFace (agentes de referencia): https://huggingface.co/sb3
+- Organizacion sb3 en Hugging Face (agentes de referencia): https://huggingface.co/sb3

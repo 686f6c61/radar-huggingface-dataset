@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VinerAI es un repositorio de modelo publicado en HuggingFace por el usuario MoscowAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`): no se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados, formato de pesos ni pipeline de inferencia.
+VinerAI es un repositorio de modelo publicado en Hugging Face por el usuario MoscowAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor contiene unicamente el bloque de metadatos de licencia (`license: apache-2.0`): no se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados, formato de pesos ni pipeline de inferencia.
 
 El unico otro dato verificable es el de los tags del repositorio (`license:apache-2.0`, `region:us`) y las metricas de actividad: cero descargas y cero likes, con fecha de creacion y de ultima actualizacion identicas (24 de octubre de 2026), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
 
@@ -89,7 +89,7 @@ No disponible. Sin datos de arquitectura, tamano, contexto ni evaluaciones no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoscowAI/VinerAI
-- Perfil del autor en HuggingFace: https://huggingface.co/MoscowAI
+- Repositorio en Hugging Face: https://huggingface.co/MoscowAI/VinerAI
+- Perfil del autor en Hugging Face: https://huggingface.co/MoscowAI
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

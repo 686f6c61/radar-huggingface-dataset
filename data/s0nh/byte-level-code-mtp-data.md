@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo de inferencia, sino un conjunto 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s0nh/byte-level-code-mtp-data
+- Repositorio Hugging Face: https://huggingface.co/s0nh/byte-level-code-mtp-data
 - Dataset fuente: https://huggingface.co/datasets/jon-tow/starcoderdata-python-edu (revisión `67bd30e21b92296da7d2ee05c8f9d8ee16ba0129`)
 - Tokenizer: https://huggingface.co/benjamin/Llama3-2-3B-IT-Byte
 - Código fuente: commit `611f0b1560ef35ebd21766ed587c3f1a22376969` (branch `mtp32-byte-transfer`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyberPleb es un modelo publicado en HuggingFace por el usuario lordx64 bajo licencia MIT. La información disponible en su model card es prácticamente nula: el README se reduce a la declaración de licencia (`license: mit`), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicación reciente o de escasa difusión.
+CyberPleb es un modelo publicado en Hugging Face por el usuario lordx64 bajo licencia MIT. La información disponible en su model card es prácticamente nula: el README se reduce a la declaración de licencia (`license: mit`), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicación reciente o de escasa difusión.
 
 No se dispone de información sobre el pipeline declarado, los idiomas soportados, el tamaño del modelo ni el contexto máximo. La fecha de creación y actualización del repositorio es la misma (2026-11-05), lo que indica que no ha habido revisiones posteriores a la publicación inicial.
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Prototipado interno no crítico: únicamente tras verificar manualmente que el modelo produce salidas coherentes en las tareas objetivo.
 - Experimentación con fine-tuning: como base para ajuste supervisado, siempre que se confirme que la licencia MIT y los pesos lo permiten (la licencia MIT lo permite, pero debe verificarse que los pesos sean originales del autor).
 - Benchmarking comparativo: incluir el modelo en una batería de evaluación propia para medir su rendimiento frente a alternativas documentadas.
-- Estudio de modelos de baja difusión: analizar las características de publicaciones sin documentación como fenómeno del ecosistema HuggingFace.
+- Estudio de modelos de baja difusión: analizar las características de publicaciones sin documentación como fenómeno del ecosistema Hugging Face.
 - Uso educativo: como ejemplo de repositorio con documentación insuficiente para ilustrar buenas prácticas de model cards.
 
 En ningún caso se recomienda su despliegue en producción sin una evaluación previa completa.
@@ -83,5 +83,5 @@ No disponible para una comparativa técnica significativa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lordx64/CyberPleb
+- Repositorio Hugging Face: https://huggingface.co/lordx64/CyberPleb
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

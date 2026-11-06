@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-sumdpo` es un ajuste fino publicado en HuggingFace por el usuario `keylazy` sobre el modelo multimodal Qwen2.5-Omni en su variante de 3.000 millones de parametros. Qwen2.5-Omni, desarrollado por el equipo Qwen de Alibaba, es un modelo multimodal end-to-end disenado para percibir texto, imagenes, audio y video y para generar respuestas en texto y voz de forma simultanea y en streaming. Este repositorio concreto parece ser una derivacion de ese modelo base, no un modelo entrenado desde cero.
+`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-sumdpo` es un ajuste fino publicado en Hugging Face por el usuario `keylazy` sobre el modelo multimodal Qwen2.5-Omni en su variante de 3.000 millones de parametros. Qwen2.5-Omni, desarrollado por el equipo Qwen de Alibaba, es un modelo multimodal end-to-end disenado para percibir texto, imagenes, audio y video y para generar respuestas en texto y voz de forma simultanea y en streaming. Este repositorio concreto parece ser una derivacion de ese modelo base, no un modelo entrenado desde cero.
 
-El sufijo del identificador (`mask-slurp-syn-esc-sumdpo`) sugiere una cadena de ajuste con DPO (Direct Preference Optimization) sobre alguna variante previa del mismo autor, probablemente orientada a tareas de resumen, transcripcion o filtrado de contenido. Sin embargo, la model card publicada es la plantilla automatica de HuggingFace sin ningun campo cumplimentado, por lo que no hay confirmacion oficial de la receta de entrenamiento, los datos utilizados ni los objetivos.
+El sufijo del identificador (`mask-slurp-syn-esc-sumdpo`) sugiere una cadena de ajuste con DPO (Direct Preference Optimization) sobre alguna variante previa del mismo autor, probablemente orientada a tareas de resumen, transcripcion o filtrado de contenido. Sin embargo, la model card publicada es la plantilla automatica de Hugging Face sin ningun campo cumplimentado, por lo que no hay confirmacion oficial de la receta de entrenamiento, los datos utilizados ni los objetivos.
 
 La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el repositorio tiene 0 descargas, 0 likes, licencia no declarada y un tamano de 0,1 GB, lo que es incompatible con un modelo completo de 3B en precision fp16 (unos 6 GB) y apunta a que se trata de un adaptador o de pesos parciales. Cualquier evaluacion en produccion deberia considerar primero si el artefacto es siquiera cargable de forma autonoma.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el re
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura de este repositorio concreto. La unica referencia solida es el modelo base: Qwen2.5-Omni es un sistema multimodal end-to-end que recibe texto, imagenes, audio y video y produce texto y habla sintetizada en streaming, y su variante de 3B existe como checkpoint publico independiente. La model card de este repositorio, en cambio, es la plantilla generada automaticamente por HuggingFace y todos sus apartados (descripcion, datos de entrenamiento, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]".
+No hay informacion verificable sobre la arquitectura de este repositorio concreto. La unica referencia solida es el modelo base: Qwen2.5-Omni es un sistema multimodal end-to-end que recibe texto, imagenes, audio y video y produce texto y habla sintetizada en streaming, y su variante de 3B existe como checkpoint publico independiente. La model card de este repositorio, en cambio, es la plantilla generada automaticamente por Hugging Face y todos sus apartados (descripcion, datos de entrenamiento, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]".
 
 Del identificador `mask-slurp-syn-esc-sumdpo` puede inferirse una etapa de DPO, probablemente aplicada sobre una variante previa del mismo autor y orientada a tareas de resumen o filtrado, pero esto es una interpretacion del nombre y no un dato documentado. El tamano del repositorio (0,1 GB) sugiere que se trata de un adaptador LoRA o de un conjunto parcial de tensores en lugar de un checkpoint completo; los repositorios hermanos del mismo autor (`keylazy/Qwen2.5-Omni-3B-mask-dpo` y `keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo`) contienen ficheros `adapter_config.json` y `adapter_model.safetensors`, lo que refuerza esa hipotesis, pero no es una confirmacion directa para este repositorio.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla automatica de HuggingFace, sin descripcion, datos de entrenamiento, evaluacion ni instrucciones de uso. No es posible saber que hace el modelo ni como se entreno.
+- Model card vacia: la documentacion es la plantilla automatica de Hugging Face, sin descripcion, datos de entrenamiento, evaluacion ni instrucciones de uso. No es posible saber que hace el modelo ni como se entreno.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. Ademas, la licencia del modelo base Qwen2.5-Omni impone sus propias condiciones, que habria que respetar en caso de que este repositorio sea un derivado.
 - Naturaleza del artefacto poco clara: 0,1 GB es un tamano incompatible con un modelo de 3B completo, lo que sugiere un adaptador o pesos parciales. Un usuario podria intentar cargarlo de forma autonoma y fallar.
 - Trazabilidad nula: no se indica el checkpoint exacto del que parte, ni los datos de preferencia usados en el ajuste DPO, ni los hiperparametros. La reproducibilidad es nula.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-sumdpo
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-esc-sumdpo
 - Repositorio hermano (adaptador DPO): https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-dpo
 - Repositorio hermano (variante v2, all-dpo): https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo
 - Repositorio oficial de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni

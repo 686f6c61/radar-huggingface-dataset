@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-General-Game-Stage3 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario ltzheng en HuggingFace. Se trata de un checkpoint intermedio de un entrenamiento por etapas orientado a tareas de juego general: concretamente, el paso de optimizacion 640 de una "Stage3" identificada con el run `gg-q35-stage3-w4-s20261007-d20261008-20261007b`. El modelo conserva la naturaleza multimodal del base (pipeline `image-text-to-text`), por lo que acepta imagenes y texto como entrada y produce texto como salida.
+Qwen3.5-9B-General-Game-Stage3 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario ltzheng en Hugging Face. Se trata de un checkpoint intermedio de un entrenamiento por etapas orientado a tareas de juego general: concretamente, el paso de optimizacion 640 de una "Stage3" identificada con el run `gg-q35-stage3-w4-s20261007-d20261008-20261007b`. El modelo conserva la naturaleza multimodal del base (pipeline `image-text-to-text`), por lo que acepta imagenes y texto como entrada y produce texto como salida.
 
 El interes de esta publicacion no esta en un uso generalista, sino en que expone una receta de ajuste fino sobre un modelo multimodal de ~9,65 mil millones de parametros para interacciones de juego, con cinco tokens especiales de accion y pensamiento que actuan como delimitadores de la salida. El autor advierte explicitamente que la exportacion de inferencia omite el estado de optimizador, RNG y dataloader, y que las comprobaciones de integridad tensorial y de humo imagen/texto no constituyen una evaluacion de rendimiento en juego.
 
@@ -29,7 +29,7 @@ Es relevante ahora porque documenta un caso temprano de ajuste de la familia Qwe
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalle arquitectonico especifico en la informacion proporcionada. El modelo hereda la arquitectura del base Qwen/Qwen3.5-9B, etiquetado internamente en HuggingFace con el identificador de arquitectura `qwen3_5`, y se distribuye a traves de `transformers` con pesos safetensors. La etiqueta de pipeline `image-text-to-text` indica que el modelo procesa entradas conjuntas de imagen y texto, coherente con la linea multimodal de Qwen3.5 que, segun las referencias web, se entrena con fusion temprana sobre tokens multimodales.
+No se dispone de detalle arquitectonico especifico en la informacion proporcionada. El modelo hereda la arquitectura del base Qwen/Qwen3.5-9B, etiquetado internamente en Hugging Face con el identificador de arquitectura `qwen3_5`, y se distribuye a traves de `transformers` con pesos safetensors. La etiqueta de pipeline `image-text-to-text` indica que el modelo procesa entradas conjuntas de imagen y texto, coherente con la linea multimodal de Qwen3.5 que, segun las referencias web, se entrena con fusion temprana sobre tokens multimodales.
 
 En cuanto al entrenamiento, la model card es deliberadamente escueta y tecnica: corresponde al paso 640 de optimizador de una fase "Stage3", con semilla de entrenamiento 20261007 y semilla de datos 20261008, dentro del run `gg-q35-stage3-w4-s20261007-d20261008-20261007b`. El autor indica que la exportacion de inferencia omite el estado de optimizador, RNG y dataloader, por lo que no es posible reanudar el entrenamiento desde este repositorio. Tambien indica que `main` contiene el `checkpoint-640` y que, para cargar correctamente modelo, processor y tokenizer, hay que fijar `revision="checkpoint-640"`.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos; la comparat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3
+- Modelo en Hugging Face: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3
 - Arbol de archivos del repositorio: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3/tree/main
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo hermano ltzheng/Qwen3.5-9B-General-Game: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game

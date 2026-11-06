@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros drafter de decodificación especul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avifenesh/Qwen3.8-27B-DSpark-Agentic
+- Modelo en Hugging Face: https://huggingface.co/Avifenesh/Qwen3.8-27B-DSpark-Agentic
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Tronco NVFP4 GGUF (para memra): https://huggingface.co/Avifenesh/Qwen3.8-27B-NVFP4-MTP-GGUF
 - SpecForge (harness de entrenamiento): https://github.com/sgl-project/SpecForge

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AUREOLE-R-v3 (Certified Innovation Rendering) es un artefacto de investigación en gráficos por computador publicado por el usuario PureOne en HuggingFace, con autoría declarada de "Artificial Hyperintelligence Eve, wife of Maciej Nowicki". No es un modelo de lenguaje ni un transformer generativo: es un marco teórico y una implementación de referencia en NumPy sobre CPU para renderizado neural con memoria de mundo persistente. Su objetivo concreto es almacenar hechos de visibilidad canónicos junto con sus dominios explícitos de validez, eliminando del residuo estocástico de renderizado aquellos hechos ya válidos y gastando consultas físicas solo en lo que sigue siendo desconocido.
+AUREOLE-R-v3 (Certified Innovation Rendering) es un artefacto de investigación en gráficos por computador publicado por el usuario PureOne en Hugging Face, con autoría declarada de "Artificial Hyperintelligence Eve, wife of Maciej Nowicki". No es un modelo de lenguaje ni un transformer generativo: es un marco teórico y una implementación de referencia en NumPy sobre CPU para renderizado neural con memoria de mundo persistente. Su objetivo concreto es almacenar hechos de visibilidad canónicos junto con sus dominios explícitos de validez, eliminando del residuo estocástico de renderizado aquellos hechos ya válidos y gastando consultas físicas solo en lo que sigue siendo desconocido.
 
 El mecanismo central es una cota de covarianza: si se dispone de evidencia exacta sobre un subconjunto con masa de propuesta `a`, entonces la nueva covarianza queda acotada por `(1-a)` veces la anterior (Proposición C1), lo que implica que toda métrica de tarea cuadrática semidefinida positiva y lineal mejora bajo las hipótesis del estimador. Esa cota se acompaña de proposiciones sobre asimilación secuencial, validez geométrica, recuento de consultas en dominio finito, envolventes de salida y un contraejemplo a la dominancia universal del control aprendido.
 
@@ -24,7 +24,7 @@ El artefacto incluye un paper de 52 páginas, un prior de visibilidad entrenado 
 | Versión científica | 3.0.0 |
 | Edición de publicación | 3.0.0-hf.1 |
 | Fecha declarada | 19 de septiembre de 2026 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -103,7 +103,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PureOne/AUREOLE-R-v3
+- Modelo en Hugging Face: https://huggingface.co/PureOne/AUREOLE-R-v3
 - Paper completo (PDF de 52 páginas): `AUREOLE_R_v3.0.0_Certified_Innovation_Rendering.pdf`
 - Manuscrito legible por máquina: `MANUSCRIPT.md`
 - Guía de revisión experta: `EXPERT_REVIEW_GUIDE.md`
@@ -126,4 +126,4 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Registro de entrenamiento: `results/training.json`
 - Validación de publicación: `results_publication/validation.json`
 
-Las rutas relativas anteriores corresponden a archivos referenciados en la model card y deben resolverse dentro del repositorio de HuggingFace. No se han encontrado en la búsqueda web enlaces externos relevantes (papers, blogs, repos o demos) asociados a este modelo.
+Las rutas relativas anteriores corresponden a archivos referenciados en la model card y deben resolverse dentro del repositorio de Hugging Face. No se han encontrado en la búsqueda web enlaces externos relevantes (papers, blogs, repos o demos) asociados a este modelo.

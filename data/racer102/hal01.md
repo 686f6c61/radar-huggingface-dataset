@@ -2,7 +2,7 @@
 
 ## Resumen
 
-racer102/hal01 es un repositorio de modelo publicado en HuggingFace por el usuario racer102 el 12 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no declara ni pipeline, ni licencia, ni idiomas soportados, y acumula 0 descargas y 1 like. El unico dato objetivo disponible, ademas de los metadatos de publicacion, es el tamano del repositorio: 22,6 GB.
+racer102/hal01 es un repositorio de modelo publicado en Hugging Face por el usuario racer102 el 12 de septiembre de 2026. En el momento de redactar esta ficha, el repositorio no declara ni pipeline, ni licencia, ni idiomas soportados, y acumula 0 descargas y 1 like. El unico dato objetivo disponible, ademas de los metadatos de publicacion, es el tamano del repositorio: 22,6 GB.
 
 No existe informacion publica verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni el proceso de alineacion. Tampoco se ha localizado model card descriptiva, paper, repositorio de codigo ni demo asociada. Esto impide evaluar sus capacidades reales y lo situa, a dia de hoy, fuera de cualquier recomendacion de uso en produccion.
 
@@ -98,6 +98,6 @@ No disponible. La comparativa con alternativas de la misma categoria es imposibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/racer102/hal01
+- Repositorio en Hugging Face: https://huggingface.co/racer102/hal01
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con el modelo. Los resultados obtenidos corresponden a hilos de foros alemanes sobre la mediateca de ZDF y reproduccion de video, sin relacion alguna con racer102/hal01, por lo que no se incluyen como fuentes.

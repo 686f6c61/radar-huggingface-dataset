@@ -75,7 +75,7 @@ No se han publicado benchmarks comparativos con otros modelos en la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v2
+- Repositorio en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v2
 - Checkpoint relacionado: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16
 - Checkpoint relacionado: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21groot16
 - No se han encontrado papers, blogs ni demos en la búsqueda web.

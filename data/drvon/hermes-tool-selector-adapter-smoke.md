@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DrVon/hermes-tool-selector-adapter-smoke
+- Repositorio Hugging Face: https://huggingface.co/DrVon/hermes-tool-selector-adapter-smoke
 - Pagina en FriendliAI: https://friendli.ai/models/DrVon/hermes-tool-selector-adapter-smoke
 - Dataset asociado (posiblemente relacionado): https://huggingface.co/datasets/DrVon/hermes-tool-selector

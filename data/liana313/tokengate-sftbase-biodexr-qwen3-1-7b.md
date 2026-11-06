@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TokenGate SFT baseline (este modelo) | 1.7B base + LoRA r16 | No disponible | BioDEX-Reactions (F1 exact-match MedDRA) | Apache 2.0 | Adaptador `.pt` en HuggingFace |
-| TokenGate con compuerta (`liana313/tokengate-biodexr-qwen3-1.7b`) | 1.7B base + LoRA r16 con gating | No disponible | BioDEX-Reactions | No disponible en la informacion | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base) | 1.7B | Contexto de Qwen3-1.7B (no detallado aqui) | Generacion de texto general | No disponible en la informacion | HuggingFace |
+| TokenGate SFT baseline (este modelo) | 1.7B base + LoRA r16 | No disponible | BioDEX-Reactions (F1 exact-match MedDRA) | Apache 2.0 | Adaptador `.pt` en Hugging Face |
+| TokenGate con compuerta (`liana313/tokengate-biodexr-qwen3-1.7b`) | 1.7B base + LoRA r16 con gating | No disponible | BioDEX-Reactions | No disponible en la informacion | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base) | 1.7B | Contexto de Qwen3-1.7B (no detallado aqui) | Generacion de texto general | No disponible en la informacion | Hugging Face |
 
 La comparacion directa con alternativas de la misma categoria (otros adaptadores SFT para BioDEX-Reactions) no esta disponible en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparacion directa con alternativas de la misma categoria (otros adaptadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-sftbase-biodexr-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-sftbase-biodexr-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Contraparte con compuerta: https://huggingface.co/liana313/tokengate-biodexr-qwen3-1.7b
 - Articulo TokenGate: https://arxiv.org/abs/2610.26754

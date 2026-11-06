@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "KotaroKinoshita/yomitoku-dewarper-pagenet-v1",
+  "slug": "kotarokinoshita-yomitoku-dewarper-pagenet-v1",
+  "author": "KotaroKinoshita",
+  "url": "https://huggingface.co/KotaroKinoshita/yomitoku-dewarper-pagenet-v1",
+  "created_at": "2026-11-06T12:07:45.000Z",
+  "updated_at": "2026-11-06T12:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10963247,
+  "parameters_human": "11.0M",
+  "storage_bytes": 43893388,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - YomiToku",
+      "url": "https://kotaro-kinoshita.github.io/yomitoku/en/",
+      "snippet": "YomiToku is a Document AI engine specialized in Japanese document image analysis. It provides full OCR (optical character recognition) and layout analysis capabilities, enabling the recognition, extraction, and conversion of text and diagrams from images."
+    },
+    {
+      "title": "GitHub - kotaro-kinoshita/yomitoku: YomiTokuはAIを活用した日本語文書解析エンジンを提供する ...",
+      "url": "https://github.com/kotaro-kinoshita/yomitoku",
+      "snippet": "YomiTokuはAIを活用した日本語文書解析エンジンを提供するPythonパッケージです。 Yomitoku is an AI-powered document image analysis package designed specifically for the Japanese language. - kotaro-kinoshita/yomitoku"
+    }
+  ]
+}

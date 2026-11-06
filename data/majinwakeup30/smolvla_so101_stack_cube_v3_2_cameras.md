@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla_so101_stack_cube_v3_2_cameras es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, publicado por el usuario majinwakeup30 en HuggingFace. Se trata de una política de visión-lenguaje-acción (VLA) orientada a robótica de manipulación, concretamente a la tarea de apilar cubos (stack cube) con un brazo SO-101 y dos cámaras de entrada. El modelo pertenece a la familia SmolVLA, descrita en el paper arXiv:2506.01844, que propone un VLA compacto capaz de ejecutarse en hardware de consumo.
+smolvla_so101_stack_cube_v3_2_cameras es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, publicado por el usuario majinwakeup30 en Hugging Face. Se trata de una política de visión-lenguaje-acción (VLA) orientada a robótica de manipulación, concretamente a la tarea de apilar cubos (stack cube) con un brazo SO-101 y dos cámaras de entrada. El modelo pertenece a la familia SmolVLA, descrita en el paper arXiv:2506.01844, que propone un VLA compacto capaz de ejecutarse en hardware de consumo.
 
 El checkpoint tiene 450.046.176 parámetros (unos 450 millones, dato extraído de los pesos en safetensors) y ocupa 0,9 GB en el repositorio. Se distribuye en formato safetensors, con licencia Apache 2.0 y la librería LeRobot como herramienta de entrenamiento e inferencia. El pipeline declarado en el Hub es "robotics", no "text-generation", por lo que el modelo no está pensado para generar texto sino para emitir secuencias de acciones de control.
 
@@ -26,7 +26,7 @@ Su relevancia es doble: por un lado demuestra el flujo de trabajo de ajuste de S
 | Tarea / embodiment | apilar cubos (stack cube) con brazo SO-101 y 2 cámaras |
 | Dataset de entrenamiento | addisonkey/stack_cube_merged_v3 |
 | Tamaño del repositorio | 0,9 GB |
-| Fecha de creación en el Hub | 2026-09-16 (según metadatos de HuggingFace) |
+| Fecha de creación en el Hub | 2026-09-16 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smolvla_so101_stack_cube_v3_2_cameras | 450.046.176 | 2 cámaras + estado del robot; contexto no disponible | Apache 2.0 | HuggingFace, librería lerobot, 0 descargas |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | HuggingFace, modelo base del anterior |
+| smolvla_so101_stack_cube_v3_2_cameras | 450.046.176 | 2 cámaras + estado del robot; contexto no disponible | Apache 2.0 | Hugging Face, librería lerobot, 0 descargas |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | Hugging Face, modelo base del anterior |
 | ACT (Action Chunking Transformer) | no disponible (configurable) | cámaras + estado; sin componente de lenguaje | no disponible | Implementación disponible en LeRobot |
 | Diffusion Policy | no disponible (configurable) | cámaras + estado; generación difusiva de acciones | no disponible | Implementación disponible en LeRobot |
 | pi0 / familias VLA de mayor tamaño | no disponible en la información proporcionada | multimodal | no disponible | no disponible |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/majinwakeup30/smolvla_so101_stack_cube_v3_2_cameras
+- Modelo en Hugging Face: https://huggingface.co/majinwakeup30/smolvla_so101_stack_cube_v3_2_cameras
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/addisonkey/stack_cube_merged_v3

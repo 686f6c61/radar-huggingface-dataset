@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: el modelo tiene 8.030 millones de parametros en float16, lo que ocupa aproximadamente 16 GB en memoria. Con cuantizacion int8 (no incluida por defecto) se reduciria a unos 8 GB, y con int4 a unos 4 GB.
 - GPU recomendadas: para inferencia en float16 se necesita una GPU con al menos 20 GB de VRAM, como una RTX 4090 (24 GB) o una A100 (40/80 GB). Con cuantizacion int8 cabria en una RTX 3080/3090 (10-24 GB), y con int4 en GPUs de 8 GB como la RTX 3070.
 - Compatibilidad con consumer GPU: si, especialmente si se aplica cuantizacion. Sin cuantizar, solo las GPUs de gama alta con 24 GB pueden cargarlo completo.
-- Opciones de despliegue: al estar en formato safetensors, es compatible con vLLM, text-generation-inference, llama.cpp (tras conversion a GGUF), Ollama y Transformers de HuggingFace.
+- Opciones de despliegue: al estar en formato safetensors, es compatible con vLLM, text-generation-inference, llama.cpp (tras conversion a GGUF), Ollama y Transformers de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y del backend. En una RTX 4090 con vLLM, un modelo de 8B suele generar entre 50 y 100 tokens por segundo, pero no hay datos especificos para este modelo.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa directa con otros modelos de 8B como Llama-3.1-8B-Instruct o Mist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-70
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-70
 - Articulo Model Stock (arXiv 2403.19522): https://arxiv.org/abs/2403.19522
 - Repositorio de mergekit en GitHub: https://github.com/arcee-ai/mergekit
 - Modelo base Humanish-Roleplay: https://huggingface.co/vicgalle/Humanish-Roleplay-Llama-3.1-8B

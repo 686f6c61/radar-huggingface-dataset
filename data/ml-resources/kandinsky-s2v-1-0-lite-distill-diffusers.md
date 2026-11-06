@@ -85,10 +85,10 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite-distill-Diffusers
+- Hugging Face (este repositorio): https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Lite-distill-Diffusers
 - Pesos en formato nativo: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Lite-distill
 - Paper (arXiv 2610.19290): https://arxiv.org/pdf/2610.19290
 - Página del proyecto: https://kandinskyavatar.github.io
 - Repositorio de código: https://github.com/kandinskylab/kandinsky-s2v
-- Colección de modelos en HuggingFace: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
+- Colección de modelos en Hugging Face: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo

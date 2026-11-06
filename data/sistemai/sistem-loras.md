@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SistemAi/sistem-loras` | Colección de LoRA | Wan 2.2 A14B, Wan 2.1 y Qwen Image Edit 2511 | no disponible | no disponible | civitai-per-file | HuggingFace (0 descargas) |
+| `SistemAi/sistem-loras` | Colección de LoRA | Wan 2.2 A14B, Wan 2.1 y Qwen Image Edit 2511 | no disponible | no disponible | civitai-per-file | Hugging Face (0 descargas) |
 | LoRA individuales en Civitai | LoRA sueltos | Wan 2.2 / Wan 2.1 | no disponible | no disponible | variable por autor | Civitai (descarga individual) |
 | Modelo base Wan 2.2 A14B | Modelo de difusión vídeo | no aplica | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La comparativa relevante es frente a los LoRA originales en Civitai: este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SistemAi/sistem-loras
+- Repositorio en Hugging Face: https://huggingface.co/SistemAi/sistem-loras
 - WAN General NSFW (Civitai): https://civitai.com/models/1307155
 - Wan2.2 French Kiss I2V/T2V (Civitai): https://civitai.com/models/2171333?modelVersionId=2445168
 - Wan I2V Assertive Cowgirl (Civitai): https://civitai.com/models/1566648?modelVersionId=2129122

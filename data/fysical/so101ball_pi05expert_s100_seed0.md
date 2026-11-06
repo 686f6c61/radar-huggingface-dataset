@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fysical/so101ball_pi05expert_S100_seed0` es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario fysical en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un modelo VLA disenado para generalización en entornos abiertos. El modelo resuelve una tarea de manipulación concreta: coger una pelota verde y depositarla en una cesta, ignorando dos pelotas rojas distractoras.
+`fysical/so101ball_pi05expert_S100_seed0` es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario fysical en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot de π₀.₅ (Pi05) de Physical Intelligence, un modelo VLA disenado para generalización en entornos abiertos. El modelo resuelve una tarea de manipulación concreta: coger una pelota verde y depositarla en una cesta, ignorando dos pelotas rojas distractoras.
 
 El checkpoint contiene 4.143.404.816 parámetros (~4,14 mil millones) almacenados en safetensors, y el repositorio ocupa 20 GB. Está entrenado con la librería LeRobot 0.6.2 sobre el dataset `fysical/greenball_pool_225_v1`, compuesto por 225 episodios y 116.164 fotogramas a 30 FPS. La política consume tres cámaras RGB de 224x224 (base, muñeca izquierda y muñeca derecha) más un vector de estado de 32 dimensiones, y produce un vector de acción de 6 dimensiones para un robot `so_follower`.
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fysical/so101ball_pi05expert_S100_seed0 | 4,14B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Fine-tune especializado en una tarea de pick-and-place |
-| lerobot/pi05_base | no disponible | no disponible | no disponible en la información | HuggingFace | Modelo base del que deriva este checkpoint |
+| fysical/so101ball_pi05expert_S100_seed0 | 4,14B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Fine-tune especializado en una tarea de pick-and-place |
+| lerobot/pi05_base | no disponible | no disponible | no disponible en la información | Hugging Face | Modelo base del que deriva este checkpoint |
 | π₀.₅ (Pi05, Physical Intelligence) | no disponible | no disponible | no disponible en la información | Blog/repositorio OpenPI | Método original sobre el que se basa la implementación LeRobot |
 
 No se dispone de datos suficientes (parámetros, contexto, rendimiento, licencia) de modelos comparables adicionales para establecer una comparación cuantitativa rigurosa.
@@ -98,11 +98,11 @@ No se dispone de datos suficientes (parámetros, contexto, rendimiento, licencia
 - Requisitos de hardware específicos: la inferencia depende de la configuración correcta de `--robot.port` y de que los nombres de cámara coincidan con las claves de observación del entrenamiento; una configuración incorrecta puede degradar o impedir el funcionamiento.
 - Restricciones de licencia: la licencia es apache-2.0, que permite uso comercial, pero se recomienda verificar las condiciones del modelo base (`lerobot/pi05_base`) y del método original π₀.₅ por si impusieran restricciones adicionales.
 - Caveat de producción: con 0 descargas y 1 like, el modelo es prácticamente inédito y carece de validación por parte de la comunidad.
-- Fecha de creación declarada: 2026-10-07 (según los metadatos de HuggingFace), inusual y posterior a la fecha habitual de publicación.
+- Fecha de creación declarada: 2026-10-07 (según los metadatos de Hugging Face), inusual y posterior a la fecha habitual de publicación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fysical/so101ball_pi05expert_S100_seed0
+- Modelo en Hugging Face: https://huggingface.co/fysical/so101ball_pi05expert_S100_seed0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/fysical/greenball_pool_225_v1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fysical/greenball_pool_225_v1

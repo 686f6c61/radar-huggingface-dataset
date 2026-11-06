@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KielGen-Codex es un modelo publicado en HuggingFace bajo el identificador kiel2/KielGen-Codex por el usuario kiel2. En el momento de redactar esta ficha, la informacion disponible en la pagina del repositorio es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio registra 0 descargas y 1 "like", y fue creado y actualizado en la misma marca temporal (2026-09-14T01:26:00.000Z), lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
+KielGen-Codex es un modelo publicado en Hugging Face bajo el identificador kiel2/KielGen-Codex por el usuario kiel2. En el momento de redactar esta ficha, la informacion disponible en la pagina del repositorio es practicamente inexistente: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio registra 0 descargas y 1 "like", y fue creado y actualizado en la misma marca temporal (2026-09-14T01:26:00.000Z), lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
 
-El unico tag presente es "region:us", un metadato geografico de HuggingFace sin valor tecnico sobre el comportamiento del modelo. El nombre "KielGen-Codex" apunta, por convencion de nomenclatura, a un modelo orientado a generacion (probablemente de codigo, dado el sufijo "Codex"), pero no hay ningun dato en la informacion proporcionada que confirme esa orientacion, su arquitectura ni su procedencia de entrenamiento.
+El unico tag presente es "region:us", un metadato geografico de Hugging Face sin valor tecnico sobre el comportamiento del modelo. El nombre "KielGen-Codex" apunta, por convencion de nomenclatura, a un modelo orientado a generacion (probablemente de codigo, dado el sufijo "Codex"), pero no hay ningun dato en la informacion proporcionada que confirme esa orientacion, su arquitectura ni su procedencia de entrenamiento.
 
 La busqueda web asociada no devolvio ningun resultado relevante: todas las entradas recuperadas corresponden a paginas comerciales de la cadena de moda H&M, sin relacion alguna con el modelo. Por tanto, esta ficha se limita a documentar la ausencia de informacion verificable y a advertir explicitamente de que cualquier dato tecnico no figure aqui debe considerarse no confirmado.
 
@@ -84,6 +84,6 @@ No disponible. Sin datos sobre parametros, contexto, licencia o rendimiento, no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiel2/KielGen-Codex
+- Hugging Face: https://huggingface.co/kiel2/KielGen-Codex
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Todas las entradas devueltas correspondian a paginas comerciales de H&M (https://www2.hm.com/fr_fr/index.html, https://www2.hm.com/fr_ca/index.html, https://www2.hm.com/fr_be/index.html, https://www2.hm.com/fr_ch/index.html, https://www2.hm.com/fr_ca/femme/catalogue-par-produit/pantalons.html), sin relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

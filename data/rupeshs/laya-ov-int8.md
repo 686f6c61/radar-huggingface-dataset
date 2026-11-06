@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rupeshs/laya-ov-int8` es un repositorio de pesos publicado en HuggingFace por el usuario rupeshs el 23 de septiembre de 2026. Por el identificador se deduce que se trata de una version cuantizada a INT8 (sufijo `int8`) de un modelo denominado Laya, y el segmento `ov` apunta a OpenVINO como runtime de destino, aunque ninguna de estas dos inferencias esta confirmada en la informacion disponible.
+`rupeshs/laya-ov-int8` es un repositorio de pesos publicado en Hugging Face por el usuario rupeshs el 23 de septiembre de 2026. Por el identificador se deduce que se trata de una version cuantizada a INT8 (sufijo `int8`) de un modelo denominado Laya, y el segmento `ov` apunta a OpenVINO como runtime de destino, aunque ninguna de estas dos inferencias esta confirmada en la informacion disponible.
 
 La model card del repositorio contiene unicamente la declaracion de licencia (`apache-2.0`), sin descripcion, sin arquitectura declarada, sin tabla de resultados y sin instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion por parte de la comunidad ni evidencia publica de que los pesos hayan sido probados en produccion.
 
@@ -81,8 +81,8 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rupeshs/laya-ov-int8
-- Perfil del autor en HuggingFace: https://huggingface.co/rupeshs
+- Repositorio en Hugging Face: https://huggingface.co/rupeshs/laya-ov-int8
+- Perfil del autor en Hugging Face: https://huggingface.co/rupeshs
 - Paper, blog o repositorio del modelo base: no disponible
 - Demo o space asociado: no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron exclusivamente recetas de cocina sin relacion con el repositorio.

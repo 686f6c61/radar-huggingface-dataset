@@ -68,7 +68,7 @@ Referencia: el SecJev-4B base sin entrenar obtiene AUC 0,8983 en el mismo ficher
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SecJev-4B-Spot2-Redo | 33,7 M entrenables (LoRA + cabeza) sobre backbone 4B | no disponible | AUC 0,9911 en dev (authorization, n=500) | secjev-use-and-distribution-agreement-v1.0 | HuggingFace (repo 0,2 GB, backbone vía bootstrap) |
+| SecJev-4B-Spot2-Redo | 33,7 M entrenables (LoRA + cabeza) sobre backbone 4B | no disponible | AUC 0,9911 en dev (authorization, n=500) | secjev-use-and-distribution-agreement-v1.0 | Hugging Face (repo 0,2 GB, backbone vía bootstrap) |
 | SecJev-4B (base sin entrenar) | Backbone 4B | no disponible | AUC 0,8983 en el mismo dev | no disponible | Referenciado en la model card |
 | Alternativas de clasificadores de seguridad para tool calls | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/macmacmacmac/SecJev-4B-Spot2-Redo
+- Hugging Face: https://huggingface.co/macmacmacmac/SecJev-4B-Spot2-Redo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Licencia: fichero LICENSE en el repositorio (secjev-use-and-distribution-agreement-v1.0)
 - Procedencia y logs de entrenamiento: `redo-provenance.json`, `redo-training-log.jsonl`, `redo-training.stdout.txt` en el repositorio

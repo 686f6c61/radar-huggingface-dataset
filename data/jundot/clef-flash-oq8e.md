@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/clef-flash-oQ8e | 9,41B (safetensors) / 9,532B logicos | no disponible | oQ8e, 8,955 bits/peso | Apache-2.0 | HuggingFace (MLX) |
-| Jundot/clef-flash-oQ4e | no disponible en la informacion | no disponible | oQ, 4 bits | Apache-2.0 (heredada) | HuggingFace (MLX) |
-| Cloudflare/clef-flash | 9B (aproximado, modelo base) | no disponible | sin cuantizar (modelo fuente) | Apache-2.0 | HuggingFace y Cloudflare Workers AI |
+| Jundot/clef-flash-oQ8e | 9,41B (safetensors) / 9,532B logicos | no disponible | oQ8e, 8,955 bits/peso | Apache-2.0 | Hugging Face (MLX) |
+| Jundot/clef-flash-oQ4e | no disponible en la informacion | no disponible | oQ, 4 bits | Apache-2.0 (heredada) | Hugging Face (MLX) |
+| Cloudflare/clef-flash | 9B (aproximado, modelo base) | no disponible | sin cuantizar (modelo fuente) | Apache-2.0 | Hugging Face y Cloudflare Workers AI |
 
 No se identifican en la informacion disponible otros modelos de decision de la misma categoria con los que comparar directamente.
 
@@ -84,7 +84,7 @@ No se identifican en la informacion disponible otros modelos de decision de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-flash-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-flash-oQ8e
 - Variante de 4 bits: https://huggingface.co/Jundot/clef-flash-oQ4e
 - Repositorio del modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Documentacion de clef-flash en Cloudflare: https://developers.cloudflare.com/workers-ai/models/clef-flash/

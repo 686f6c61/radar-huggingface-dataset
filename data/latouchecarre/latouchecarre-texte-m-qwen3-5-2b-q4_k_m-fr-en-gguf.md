@@ -34,7 +34,7 @@ La cuantización Q4_K_M de partida procede de unsloth/Qwen3.5-2B-GGUF, con SHA-2
 - Corrección gramatical y ortográfica en francés e inglés, el caso de uso principal y el único medido por el autor.
 - Generación de texto conversacional en francés e inglés (etiqueta `conversational` en el repo).
 - Modo de razonamiento (thinking) heredado de Qwen3.5, desactivable mediante `enable_thinking: false`; el autor recomienda desactivarlo para corrección.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que permite servirlo mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que permite servirlo mediante APIs compatibles con el formato de Hugging Face.
 - Inferencia en CPU y GPU vía llama.cpp, con soporte de Vulkan.
 - No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni matemáticas avanzadas en la información disponible.
 
@@ -72,9 +72,9 @@ El autor publica mediciones propias sobre once correos con 104 faltas etiquetada
 
 | Modelo | Parámetros | Contexto | Disco | Faltas /104 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este fichero (Qwen3.5-2B Q4_K_M podado) | 1,65 B | 8 192 (medido) | 1 084 Mo | 79-80 | Apache 2.0 | GGUF en HuggingFace |
+| Este fichero (Qwen3.5-2B Q4_K_M podado) | 1,65 B | 8 192 (medido) | 1 084 Mo | 79-80 | Apache 2.0 | GGUF en Hugging Face |
 | Gemma 4 E2B Q2_K_XL podado (anterior palier M) | No disponible | No disponible | 1 788 Mo | 93-95 | No disponible | Uso interno del producto |
-| Qwen/Qwen3.5-2B (base sin podar) | 1,65 B | No disponible | 1 281 Mo en Q4_K_M | No medido en este banco | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-2B (base sin podar) | 1,65 B | No disponible | 1 281 Mo en Q4_K_M | No medido en este banco | Apache 2.0 | Hugging Face |
 
 La comparación con el modelo base no incluye métricas de corrección porque el autor no las publica; solo se documenta que la salida del fichero podado es idéntica a la del original en el conjunto de prueba. No se dispone de datos de otros correctores gramaticales locales comparables en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con el modelo base no incluye métricas de corrección porque el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-M-Qwen3.5-2B-Q4_K_M-FR-EN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Texte-M-Qwen3.5-2B-Q4_K_M-FR-EN-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Cuantización GGUF de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
 - Producto del autor: https://latouchecarre.fr

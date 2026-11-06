@@ -38,7 +38,7 @@ Lo único verificable es el recuento de parámetros (7.615.616.512) y la existen
 - Generación y corrección de texto en chino: el nombre del modelo base apunta a una especialización en detección y corrección de errores (ortográficos, tipográficos o de otro tipo) en texto chino.
 - Cobertura multilingüe declarada de 13 idiomas: chino, inglés, francés, español, portugués, alemán, italiano, ruso, japonés, coreano, vietnamita, tailandés y árabe. No se especifica si todos ellos tienen el mismo nivel de calidad o si la lista proviene únicamente del tokenizador del modelo base.
 - Formato conversacional: la etiqueta `conversational` indica que el modelo está preparado para interacción tipo chat mediante plantilla de mensajes.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` señala que puede servirse a través de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` señala que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.

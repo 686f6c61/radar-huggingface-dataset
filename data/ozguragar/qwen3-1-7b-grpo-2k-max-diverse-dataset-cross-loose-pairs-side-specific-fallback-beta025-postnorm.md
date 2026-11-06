@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning del Qwen3-1.7B, un modelo de lenguaje de 1.700 millones de parámetros desarrollado por Alibaba, aplicando la técnica de optimización GRPO (Group Relative Policy Optimization). El nombre del repositorio indica que se ha entrenado sobre un dataset de 2.000 muestras diversas, con configuraciones específicas como un coeficiente beta de 0,25 y normalización posterior (postnorm), probablemente mediante LoRA o adaptadores de bajo rango para reducir el coste computacional.
 
-El autor, ozguragar, ha publicado el modelo en HuggingFace con el tag de unsloth, una librería optimizada para fine-tuning eficiente. Sin embargo, la model card proporcionada es una plantilla automática sin información concreta sobre el entrenamiento, los datos o las capacidades. Aunque se basa en Qwen3-1.7B, no se especifica si el fine-tuning ha modificado la arquitectura o si es un adaptador ligero. El repositorio ocupa solo 0,2 GB, lo que sugiere que se trata de un adaptador LoRA o un checkpoint parcial, no del modelo completo.
+El autor, ozguragar, ha publicado el modelo en Hugging Face con el tag de unsloth, una librería optimizada para fine-tuning eficiente. Sin embargo, la model card proporcionada es una plantilla automática sin información concreta sobre el entrenamiento, los datos o las capacidades. Aunque se basa en Qwen3-1.7B, no se especifica si el fine-tuning ha modificado la arquitectura o si es un adaptador ligero. El repositorio ocupa solo 0,2 GB, lo que sugiere que se trata de un adaptador LoRA o un checkpoint parcial, no del modelo completo.
 
 La relevancia de este modelo radica en explorar el uso de GRPO para mejorar el razonamiento o la calidad de las respuestas en un modelo compacto, pero sin documentación detallada, su utilidad práctica queda limitada hasta que se publique más información.
 
@@ -60,7 +60,7 @@ No hay información específica sobre requisitos de hardware para este modelo. D
 - VRAM estimada para inferencia: alrededor de 4-6 GB si se combina el adaptador con el modelo base en FP16, menos si se cuantiza.
 - GPU recomendadas: tarjetas de consumo como RTX 3060, RTX 4060 o superiores con al menos 6 GB de VRAM.
 - Si se cuantiza el modelo base a 4 bits, podría caber en 2-3 GB, pero no se especifican cuantizaciones disponibles.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede usarse con vLLM, llama.cpp (si se convierte a GGUF), o mediante la API de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede usarse con vLLM, llama.cpp (si se convierte a GGUF), o mediante la API de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ No hay datos de rendimiento para comparar. La licencia del modelo base es Apache
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/ozguragar/Qwen3-1.7B-GRPO-2k-max-diverse-dataset-cross-loose-pairs-side-specific-fallback-beta025-postnorm
+- Repositorio de Hugging Face del modelo: https://huggingface.co/ozguragar/Qwen3-1.7B-GRPO-2k-max-diverse-dataset-cross-loose-pairs-side-specific-fallback-beta025-postnorm
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

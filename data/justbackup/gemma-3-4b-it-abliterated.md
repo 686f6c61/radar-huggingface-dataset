@@ -78,7 +78,7 @@ La comparativa se limita a variantes del mismo modelo base; no se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justbackup/gemma-3-4b-it-abliterated
+- Modelo en Hugging Face: https://huggingface.co/Justbackup/gemma-3-4b-it-abliterated
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Artículo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
 - Repositorio de referencia de Sumandora: https://github.com/Sumandora/remove-refusals-with-transformers/

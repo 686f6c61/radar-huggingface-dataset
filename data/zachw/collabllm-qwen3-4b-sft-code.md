@@ -88,7 +88,7 @@ La comparativa directa con el checkpoint oficial de CollabLLM no es posible con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Code
+- Modelo en Hugging Face: https://huggingface.co/ZachW/CollabLLM-Qwen3-4B-SFT-Code
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper CollabLLM: https://arxiv.org/abs/2502.00640
 - Repositorio original CollabLLM: https://github.com/Wuyxin/collabllm/tree/d573e4949abdc301cb2b630525c593cc432e94b8

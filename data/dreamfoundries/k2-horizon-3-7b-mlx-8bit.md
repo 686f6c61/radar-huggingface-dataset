@@ -65,7 +65,7 @@ No se dispone de información comparativa con modelos similares en las fuentes c
 - Alucinación: al ser un modelo de lenguaje generativo, existe riesgo de alucinación, especialmente en tareas de razonamiento complejo o cuando se le pide información factual.
 - Sesgos: no se proporciona información sobre sesgos conocidos ni sobre las medidas de mitigación aplicadas durante el entrenamiento.
 - Cuantización: la conversión a 8-bit puede degradar ligeramente la calidad en comparación con el modelo original en precisión completa. Además, los routers K2 no cuantizados pueden alterar el comportamiento esperado de la cuantización.
-- Repositorio: el tamaño del repositorio en HuggingFace aparece como 0.0 GB, lo que podría indicar que los pesos no están subidos o que los metadatos de la API son incorrectos. Se recomienda verificar la disponibilidad de los pesos antes de su uso.
+- Repositorio: el tamaño del repositorio en Hugging Face aparece como 0.0 GB, lo que podría indicar que los pesos no están subidos o que los metadatos de la API son incorrectos. Se recomienda verificar la disponibilidad de los pesos antes de su uso.
 - Benchmarks: no se han publicado benchmarks de la conversión MLX, por lo que no se puede validar su rendimiento real en tareas específicas.
 - Uso comercial: la licencia Apache-2.0 permite uso comercial, pero se debe revisar el aviso de licencia del modelo base y de cualquier dependencia.
 - Contexto: la longitud de contexto no está especificada; esto puede limitar su uso en aplicaciones que requieran ventanas largas.

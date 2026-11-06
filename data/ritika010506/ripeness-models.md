@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ritika010506/ripeness-models`, publicado en HuggingFace por el usuario ritika010506, contiene un modelo o conjunto de modelos cuya documentación no incluye información técnica. La única metadata disponible indica licencia MIT, la etiqueta regional `us` y un tamaño de repositorio de 0,2 GB. La model card está prácticamente vacía: únicamente declara la licencia MIT, sin secciones de arquitectura, entrenamiento, capacidades o uso previsto.
+El repositorio `ritika010506/ripeness-models`, publicado en Hugging Face por el usuario ritika010506, contiene un modelo o conjunto de modelos cuya documentación no incluye información técnica. La única metadata disponible indica licencia MIT, la etiqueta regional `us` y un tamaño de repositorio de 0,2 GB. La model card está prácticamente vacía: únicamente declara la licencia MIT, sin secciones de arquitectura, entrenamiento, capacidades o uso previsto.
 
 Debido a la ausencia de documentación y a la falta de resultados de benchmarks, no es posible evaluar la relevancia, el rendimiento ni el ámbito de aplicación de este modelo. El repositorio no ha recibido descargas ni likes, lo que sugiere que no ha sido validado por la comunidad. En el estado actual, cualquier uso del modelo requeriría una inspección directa de los pesos y una evaluación experimental propia.
 
@@ -56,9 +56,9 @@ No disponible.
 - Riesgo de alucinación: no evaluado; al no existir benchmarks ni documentación de entrenamiento, se desconoce la fiabilidad del modelo.
 - Limitaciones de contexto o idioma: no documentadas; no se especifica la longitud de la ventana de contexto ni los idiomas soportados.
 - Licencia: MIT permite uso comercial, pero la ausencia de documentación técnica y de benchmarks impide validar el modelo para entornos productivos.
-- Repositorio sin actividad: 0 descargas y 0 likes en HuggingFace, con una model card vacía, lo que indica que el modelo no ha sido revisado ni probado por la comunidad.
+- Repositorio sin actividad: 0 descargas y 0 likes en Hugging Face, con una model card vacía, lo que indica que el modelo no ha sido revisado ni probado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritika010506/ripeness-models
+- Hugging Face: https://huggingface.co/ritika010506/ripeness-models
 - GitHub del autor: https://github.com/ritika010506/

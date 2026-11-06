@@ -88,5 +88,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/flowxai/regulated-advice)
+- [Modelo en Hugging Face](https://huggingface.co/flowxai/regulated-advice)
 - [Repositorio de border](https://github.com/flowx-ai/border)

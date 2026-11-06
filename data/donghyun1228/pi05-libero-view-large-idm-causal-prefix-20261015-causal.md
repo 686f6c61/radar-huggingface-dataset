@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos. La model card no incluye 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-view-large-idm-causal-prefix (este) | no disponible | no disponible | 11/24 en criba de 8 tareas LIBERO | no disponible | HuggingFace, 0 descargas |
+| pi05-libero-view-large-idm-causal-prefix (este) | no disponible | no disponible | 11/24 en criba de 8 tareas LIBERO | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos comparativos con otros modelos. La model card no incluye 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-causal-prefix-20261015-causal
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-causal-prefix-20261015-causal
 - Repositorio de código de entrenamiento (commit 07e04b82): https://github.com/Donghyun1228/vla_adaptation
 - Paper, blog o demo oficial: no disponible en la información proporcionada
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces recuperados no guardan relación con el artefacto y se han descartado.

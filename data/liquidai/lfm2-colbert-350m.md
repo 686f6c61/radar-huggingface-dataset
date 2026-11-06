@@ -47,7 +47,7 @@ No se han documentado capacidades de generacion de texto, tool calling ni agente
 
 ## Benchmarks y rendimiento
 
-El autor declara los siguientes resultados en el modelo-index de HuggingFace (metricas MaxSim sobre datasets de recuperacion):
+El autor declara los siguientes resultados en el modelo-index de Hugging Face (metricas MaxSim sobre datasets de recuperacion):
 
 | Dataset | Metrica | Valor |
 |---|---|---|
@@ -99,8 +99,8 @@ La ventaja de LFM2-ColBERT-350M reside en su equilibrio entre tamano, velocidad 
 
 ## Enlaces
 
-- [HuggingFace - LiquidAI/LFM2-ColBERT-350M](https://huggingface.co/LiquidAI/LFM2-ColBERT-350M)
+- [Hugging Face - LiquidAI/LFM2-ColBERT-350M](https://huggingface.co/LiquidAI/LFM2-ColBERT-350M)
 - [Blog de Liquid AI - LFM2-ColBERT-350M: One Model to Embed Them All](https://www.liquid.ai/blog/lfm2-colbert-350m-one-model-to-embed-them-all)
 - [Documentacion oficial - LFM2-ColBERT-350M](https://docs.liquid.ai/lfm/models/lfm2-colbert-350m)
-- [HuggingFace - Repositorio GGUF](https://huggingface.co/LiquidAI/LFM2-ColBERT-350M-GGUF)
+- [Hugging Face - Repositorio GGUF](https://huggingface.co/LiquidAI/LFM2-ColBERT-350M-GGUF)
 - [GitHub - Ejemplo de inferencia](https://github.com/skkuhg/LFM2-ColBERT-350M-inference)

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kamiyou/zils-mini-xevn-scout",
+  "slug": "kamiyou-zils-mini-xevn-scout",
+  "author": "kamiyou",
+  "url": "https://huggingface.co/kamiyou/zils-mini-xevn-scout",
+  "created_at": "2026-11-04T20:58:21.000Z",
+  "updated_at": "2026-11-04T21:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "jev",
+    "classification",
+    "calibration",
+    "korean",
+    "text-classification",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9319828160,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kamiyou/zils-mini-xevn-scout · Hugging Face",
+      "url": "https://huggingface.co/kamiyou/zils-mini-xevn-scout",
+      "snippet": "Intended use and limitations Xevn is built for decisions: classification, multiple choice, yes/no judgments, and rating. It is not a chat or text-generation model. It is tuned for Korean; English input works but is not the focus. Xevn returns probabilities over the options you give it. It does not generate text and cannot answer open questions. The bundled helpers run one forward pass per ..."
+    },
+    {
+      "title": "zils-mini-xevn-scout API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kamiyou/zils-mini-xevn-scout",
+      "snippet": "Run zils-mini-xevn-scout with FriendliAI inference. MLX | GGUF | GitHub | Website."
+    }
+  ]
+}

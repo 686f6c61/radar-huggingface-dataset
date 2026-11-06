@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Tipo | Modelo base | Uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gwats/BFS-Best-Face-Swap | LoRA | Qwen/Qwen-Image-2.1 | Face, head, body swap | MIT (etiqueta) / no disponible (campo de ficha) | HuggingFace, 0 descargas |
-| Bhavu02/BFS-Best-Face-Swap | LoRA | Qwen Image Edit 2509/2511, Flux 2 Klein 4b/9b, Krea 2 | Face, head, person swap | no disponible | HuggingFace |
-| Alissonerdx/BFS-Best-Face-Swap | LoRA | Qwen Image 2.1, Qwen Image Edit 2509/2511, Flux 2 Klein, Krea 2, LTX-2 (experimental) | Face, head, body swap (variantes Face V1, Head V1-V5) | no disponible | HuggingFace, ModelScope |
+| gwats/BFS-Best-Face-Swap | LoRA | Qwen/Qwen-Image-2.1 | Face, head, body swap | MIT (etiqueta) / no disponible (campo de ficha) | Hugging Face, 0 descargas |
+| Bhavu02/BFS-Best-Face-Swap | LoRA | Qwen Image Edit 2509/2511, Flux 2 Klein 4b/9b, Krea 2 | Face, head, person swap | no disponible | Hugging Face |
+| Alissonerdx/BFS-Best-Face-Swap | LoRA | Qwen Image 2.1, Qwen Image Edit 2509/2511, Flux 2 Klein, Krea 2, LTX-2 (experimental) | Face, head, body swap (variantes Face V1, Head V1-V5) | no disponible | Hugging Face, ModelScope |
 
 Los tres artefactos pertenecen a la misma familia BFS y comparten objetivo funcional. Las diferencias concretas en calidad, versiones y modelos base admitidos no estan documentadas de forma comparable en la informacion disponible.
 
@@ -83,7 +83,7 @@ Los tres artefactos pertenecen a la misma familia BFS y comparten objetivo funci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/gwats/BFS-Best-Face-Swap
+- Hugging Face del modelo: https://huggingface.co/gwats/BFS-Best-Face-Swap
 - Repositorio relacionado Bhavu02/BFS-Best-Face-Swap: https://huggingface.co/Bhavu02/BFS-Best-Face-Swap
 - Repositorio relacionado Alissonerdx/BFS-Best-Face-Swap: https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap
 - Ficha en ModelScope de la serie BFS: https://www.modelscope.cn/models/Alissonerdx/BFS-Best-Face-Swap/summary

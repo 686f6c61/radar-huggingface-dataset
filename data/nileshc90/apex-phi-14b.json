@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "nileshc90/apex-phi-14b",
+  "slug": "nileshc90-apex-phi-14b",
+  "author": "nileshc90",
+  "url": "https://huggingface.co/nileshc90/apex-phi-14b",
+  "created_at": "2026-11-06T08:26:02.000Z",
+  "updated_at": "2026-11-06T08:28:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "code",
+    "reasoning",
+    "phi-4",
+    "microsoft",
+    "math",
+    "36gb-ram",
+    "mlx",
+    "ollama",
+    "algorithmic-coding",
+    "text-generation",
+    "en",
+    "base_model:microsoft/phi-4",
+    "base_model:finetune:microsoft/phi-4",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

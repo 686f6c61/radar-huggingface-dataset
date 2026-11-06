@@ -83,7 +83,7 @@ La comparativa con modelos generalistas es orientativa: Yotsuba no compite en ta
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/u84u/Yotsuba-Q4_K_M-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/u84u/Yotsuba-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/frzr-labs/Yotsuba
 - Dataset de entrenamiento: https://huggingface.co/datasets/frzr-labs/4chan-pol
 - Espacio GGUF-my-repo (herramienta de conversion): https://huggingface.co/spaces/ggml-org/gguf-my-repo

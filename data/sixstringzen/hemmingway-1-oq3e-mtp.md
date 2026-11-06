@@ -87,7 +87,7 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3e-mtp
+- Repositorio Hugging Face: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3e-mtp
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Revisión del modelo fuente citada: `4d711aac0f0043075ae334d2a3de3db3e10135c9`
 - Informe de imatrix y cuantización: https://huggingface.co/sixstringzen/Hemmingway-1-oQ3e-mtp/blob/main/oq_imatrix_report.json

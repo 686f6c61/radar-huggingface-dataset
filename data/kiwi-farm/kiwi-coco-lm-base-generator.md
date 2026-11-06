@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kiwi-farm/kiwi-coco-lm-base-generator es un repositorio de modelo publicado en HuggingFace por el usuario kiwi-farm bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no tiene descargas ni "likes" registrados, no declara pipeline de inferencia y su model card únicamente contiene el bloque de metadatos con la licencia, sin texto descriptivo, sin arquitectura declarada y sin especificaciones de entrenamiento.
+kiwi-farm/kiwi-coco-lm-base-generator es un repositorio de modelo publicado en Hugging Face por el usuario kiwi-farm bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no tiene descargas ni "likes" registrados, no declara pipeline de inferencia y su model card únicamente contiene el bloque de metadatos con la licencia, sin texto descriptivo, sin arquitectura declarada y sin especificaciones de entrenamiento.
 
 El nombre del repositorio sugiere, por convención de nomenclatura, un modelo de lenguaje de tipo "base" orientado a generación ("lm-base-generator"), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor en la documentación disponible. No hay información pública sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el dataset de entrenamiento.
 
@@ -64,7 +64,7 @@ Del mismo modo, no hay información sobre opciones de despliegue compatibles (vL
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kiwi-farm/kiwi-coco-lm-base-generator | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| kiwi-farm/kiwi-coco-lm-base-generator | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,6 +84,6 @@ No es posible establecer una comparativa rigurosa: la categoría del modelo (tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base-generator
+- Hugging Face: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base-generator
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a entidades homonimas sin relacion (Kiwi.com, Kiwi Saint-Tropez y el fruto del kiwi). No hay papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

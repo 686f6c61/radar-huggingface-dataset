@@ -6,7 +6,7 @@
 
 El modelo tiene 567,7 millones de parámetros y se distribuye en formato safetensors a través de la librería sentence-transformers. Su relevancia radica en que cubre un hueco importante: la mayoría de los modelos de retrieval multilingües están dominados por el inglés y otros idiomas de alto recurso, mientras que el rumano tiene pocas opciones especializadas. Este modelo ofrece una alternativa densa y eficiente para buscar en colecciones documentales rumanas.
 
-El autor es Alina Gheorghe (usuario `alina0195` en HuggingFace), y el modelo se publicó en agosto de 2026. Aunque no se especifica la licencia, el modelo base BAAI/bge-m3 se distribuye bajo licencia MIT, por lo que es probable que este fine-tuning herede dicha licencia, aunque no está confirmado.
+El autor es Alina Gheorghe (usuario `alina0195` en Hugging Face), y el modelo se publicó en agosto de 2026. Aunque no se especifica la licencia, el modelo base BAAI/bge-m3 se distribuye bajo licencia MIT, por lo que es probable que este fine-tuning herede dicha licencia, aunque no está confirmado.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No se menciona el uso de RLHF, DPO ni otras técnicas de alineación, ya que se 
 - Generación de embeddings densos para similitud semántica entre consultas y pasajes.
 - Recuperación de información en rumano: dado un texto de consulta, devuelve los pasajes más relevantes de una colección.
 - Búsqueda por similitud coseno, con soporte nativo en sentence-transformers.
-- Compatible con Text Embeddings Inference (TEI) y endpoints de HuggingFace para despliegue en producción.
+- Compatible con Text Embeddings Inference (TEI) y endpoints de Hugging Face para despliegue en producción.
 - Multilingüismo residual: al estar basado en XLM-RoBERTa, conserva cierta capacidad en otros idiomas, aunque su fine-tuning está orientado al rumano.
 - No soporta tool calling, agentes ni generación de texto: es exclusivamente un modelo de representación.
 
@@ -70,7 +70,7 @@ También se reportan resultados sobre una variante del conjunto sin diacríticos
 - VRAM estimada para inferencia: el modelo tiene 567,7 millones de parámetros. En FP32, ocupa aproximadamente 2,27 GB; en FP16, unos 1,14 GB. Con un batch pequeño, cabe en GPUs consumer de 4 GB o más.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16 (RTX 3050, RTX 4060, etc.). Para producción con alto throughput, se recomienda A10, A100 o H100.
 - En consumer GPU: sí, cabe en GPUs de gama media como RTX 3060 (12 GB) o RTX 4070 sin problemas.
-- Opciones de despliegue: sentence-transformers para prototipado, Text Embeddings Inference (TEI) para producción, y compatible con endpoints de HuggingFace. También se puede servir con FastAPI y ONNX si se convierte el modelo.
+- Opciones de despliegue: sentence-transformers para prototipado, Text Embeddings Inference (TEI) para producción, y compatible con endpoints de Hugging Face. También se puede servir con FastAPI y ONNX si se convierte el modelo.
 - Latencia y throughput: no disponible. Al ser un encoder de 567M parámetros, la latencia por consulta en GPU consumer suele estar en el rango de 10-50 ms, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparativa directa con otros modelos especializados en rumano no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alina0195/bge-m3-ro-msmarco-v2
+- Modelo en Hugging Face: https://huggingface.co/alina0195/bge-m3-ro-msmarco-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/alina0195/ro-msmarco
 - Perfil del autor: https://huggingface.co/alina0195
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3

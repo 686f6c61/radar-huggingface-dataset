@@ -6,7 +6,7 @@
 
 El modelo forma parte de un estudio factorial de 3 × 3: tres tamaños (0,5B, 1B y 1,7B) por tres condiciones de preentrenamiento (documentos originales; conversaciones reescritas con pérdida solo en turnos del asistente; conversaciones reescritas con pérdida en turnos de usuario y asistente). Todas las ejecuciones vieron exactamente la misma secuencia de batches sobre los mismos 47,8M documentos fuente en el mismo orden, de modo que las condiciones solo difieren en el texto del documento y en la máscara de pérdida. Según la model card, la diferencia de pérdida held-out de SFT entre las réplicas seed-1234 y los modelos seed-28 es de 0,0021 a 0,0038 nats para cada una de las tres condiciones.
 
-Su relevancia es metodológica, no de producto: permite a investigadores cuantificar cuánta variación introducen la inicialización y pequeños cambios en el corpus en modelos de ~1,7B, con una verificación explícita de los pesos de HuggingFace contra el checkpoint de Megatron (diferencias absolutas de 0,0016 y 0,0018 en pérdida de validación). La arquitectura es un decoder estilo Llama con 24 capas y contexto de 4.096 tokens, y la licencia es Apache 2.0.
+Su relevancia es metodológica, no de producto: permite a investigadores cuantificar cuánta variación introducen la inicialización y pequeños cambios en el corpus en modelos de ~1,7B, con una verificación explícita de los pesos de Hugging Face contra el checkpoint de Megatron (diferencias absolutas de 0,0016 y 0,0018 en pérdida de validación). La arquitectura es un decoder estilo Llama con 24 capas y contexto de 4.096 tokens, y la licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 | Texto de usuario | 2,542 |
 | Texto de documento | 2,395 |
 
-Verificación de los pesos de HuggingFace frente a la referencia de Megatron:
+Verificación de los pesos de Hugging Face frente a la referencia de Megatron:
 
 | Conjunto | Pérdida HF | Referencia Megatron | Diferencia absoluta |
 |---|---|---|---|
@@ -102,7 +102,7 @@ No se han publicado comparaciones de rendimiento frente a estos modelos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-base
 - Modelo de referencia (seed 28): https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training

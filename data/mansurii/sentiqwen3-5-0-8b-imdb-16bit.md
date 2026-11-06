@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SentiQwen3.5-0.8B-IMDb-16bit es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario mansurii y publicado en HuggingFace. El nombre del modelo sugiere un ajuste orientado al análisis de sentimiento sobre el conjunto de datos IMDb, aunque la model card no documenta explícitamente el dataset, el procedimiento de entrenamiento ni los objetivos de la tarea. Se distribuye en precisión de 16 bits (safetensors) con un total de 873.438.784 parámetros (aproximadamente 0,87 mil millones).
+SentiQwen3.5-0.8B-IMDb-16bit es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-0.8B, desarrollado por el usuario mansurii y publicado en Hugging Face. El nombre del modelo sugiere un ajuste orientado al análisis de sentimiento sobre el conjunto de datos IMDb, aunque la model card no documenta explícitamente el dataset, el procedimiento de entrenamiento ni los objetivos de la tarea. Se distribuye en precisión de 16 bits (safetensors) con un total de 873.438.784 parámetros (aproximadamente 0,87 mil millones).
 
-El modelo hereda la arquitectura de la familia Qwen3.5, que en el pipeline declarado (image-text-to-text) apunta a un transformer multimodal con capacidad de procesamiento de imagen y texto. El ajuste se realizó con Unsloth y la librería TRL de HuggingFace, según indica el autor, lo que sugiere un entrenamiento optimizado en memoria y velocidad. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
+El modelo hereda la arquitectura de la familia Qwen3.5, que en el pipeline declarado (image-text-to-text) apunta a un transformer multimodal con capacidad de procesamiento de imagen y texto. El ajuste se realizó con Unsloth y la librería TRL de Hugging Face, según indica el autor, lo que sugiere un entrenamiento optimizado en memoria y velocidad. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
 La relevancia de esta ficha es limitada: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentación técnica detallada. Resulta útil como ejemplo de ajuste fino ligero sobre un modelo pequeño multimodal, pero no como candidato para producción sin una evaluación previa por parte del usuario.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SentiQwen3.5-0.8B-IMDb-16bit | 873 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| unsloth/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-0.5B / 1.5B (familia previa) | 0,5-1,5 B | 32 K (según versión) | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | HuggingFace |
+| SentiQwen3.5-0.8B-IMDb-16bit | 873 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| unsloth/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-0.5B / 1.5B (familia previa) | 0,5-1,5 B | 32 K (según versión) | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas es aproximada: no se dispone de datos de rendimiento del modelo ajustado ni de la ficha técnica completa del base Qwen3.5-0.8B en la información proporcionada. Los modelos de la familia Qwen2.5 y SmolLM2 se citan como referencias de tamaño similar, no como equivalentes funcionales.
 
@@ -82,7 +82,7 @@ La comparación con alternativas es aproximada: no se dispone de datos de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-16bit
+- Hugging Face: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-16bit
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

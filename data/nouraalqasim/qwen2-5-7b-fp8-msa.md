@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la ficha. Sin embargo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-msa
+- Hugging Face: https://huggingface.co/NouraAlqasim/qwen2.5-7b-fp8-msa
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de calibración: https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue

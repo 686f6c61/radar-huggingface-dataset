@@ -84,7 +84,7 @@ No hay resultados de evaluacion que permitan establecer una comparacion cuantita
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/Flint-40B-A2.5B-abliterated-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/Flint-40B-A2.5B-abliterated-GGUF
 - Modelo base: https://huggingface.co/dima6312/Flint-40B-A2.5B-abliterated
 - Pagina de overview y descargas de mradermacher: https://hf.tst.eu/model#Flint-40B-A2.5B-abliterated-GGUF
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

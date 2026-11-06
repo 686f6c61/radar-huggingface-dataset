@@ -164,8 +164,8 @@ contextuales se pueden citar:
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hotchpotch/japanese-reranker-xsmall-v2` | Modelo base original | Aproximadamente 37 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| `masahiroid/ruri-v3-130m-coreai` | Conversion previa del mismo autor, misma estrategia de port a Neural Engine | No disponible | No disponible | No disponible | HuggingFace |
+| `hotchpotch/japanese-reranker-xsmall-v2` | Modelo base original | Aproximadamente 37 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| `masahiroid/ruri-v3-130m-coreai` | Conversion previa del mismo autor, misma estrategia de port a Neural Engine | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de comparativas de calidad entre estos modelos ni con otros
 rerankers japoneses (por ejemplo, variantes de `bge-reranker` o `reranker`
@@ -202,7 +202,7 @@ basadas en otros encoders) en la informacion facilitada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/japanese-reranker-xsmall-v2-coreai
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/japanese-reranker-xsmall-v2-coreai
 - Modelo base: https://huggingface.co/hotchpotch/japanese-reranker-xsmall-v2
 - Conversion previa del mismo autor: https://huggingface.co/masahiroid/ruri-v3-130m-coreai
 - Documentacion de Core AI de Apple: https://developer.apple.com/documentation/coreai

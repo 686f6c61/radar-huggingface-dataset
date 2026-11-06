@@ -46,7 +46,7 @@ Un detalle tecnico relevante: el tamano del repositorio (16,8 GB) es coherente c
 - Capacidades de agente y razonamiento multi-paso: no disponible, no se documenta.
 - Modo thinking o razonamiento extendido: no disponible, no se documenta.
 - Capacidades multilingues: no disponible.
-- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, orientado al despliegue gestionado en HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, orientado al despliegue gestionado en Hugging Face.
 
 ## Casos de uso
 
@@ -102,7 +102,7 @@ No es posible establecer una comparativa de rendimiento porque no existe ningun 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/chriszib/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/chriszib/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

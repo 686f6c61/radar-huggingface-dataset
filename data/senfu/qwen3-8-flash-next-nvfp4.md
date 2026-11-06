@@ -93,7 +93,7 @@ La comparativa muestra que este checkpoint sacrifica 1,25 puntos en AIME26 pass@
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/senfu/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/senfu/Qwen3.8-Flash-Next-NVFP4
 - Checkpoint base (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

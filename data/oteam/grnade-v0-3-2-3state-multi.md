@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Estados conformacionales | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grnade-v0.3.2-3state-multi (esta ficha) | 2,157 M | 3 | Espacial (sin secuencia ni pares de bases) | AGPL-3.0 | HuggingFace (oteam) |
-| grnade-v0.3.2-1state-all | 2,157 M | 1 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
-| grnade-v0.3.2-5state-multi | 2,157 M | 5 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | 1 (más checkpoint ODesign) | Secuencia + pares de bases + espacial | AGPL-3.0 | HuggingFace (oteam) |
+| grnade-v0.3.2-3state-multi (esta ficha) | 2,157 M | 3 | Espacial (sin secuencia ni pares de bases) | AGPL-3.0 | Hugging Face (oteam) |
+| grnade-v0.3.2-1state-all | 2,157 M | 1 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
+| grnade-v0.3.2-5state-multi | 2,157 M | 5 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | 1 (más checkpoint ODesign) | Secuencia + pares de bases + espacial | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes comparten arquitectura y número de parámetros; difieren en el número de conformaciones de entrenamiento y en el tipo de grafo. No se dispone de datos de rendimiento comparativo entre ellas en la información proporcionada.
 
@@ -94,7 +94,7 @@ Las variantes comparten arquitectura y número de parámetros; difieren en el n�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-3state-multi
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-3state-multi
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variante 1 estado (all): https://huggingface.co/oteam/grnade-v0.3.2-1state-all

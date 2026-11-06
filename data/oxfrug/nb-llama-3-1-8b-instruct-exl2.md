@@ -79,7 +79,7 @@ La comparativa muestra que esta cuantización EXL2 es la única opción para usu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oxfrug/nb-llama-3.1-8B-Instruct-exl2
+- Repositorio Hugging Face: https://huggingface.co/oxfrug/nb-llama-3.1-8B-Instruct-exl2
 - Modelo base (NbAiLab): https://huggingface.co/NbAiLab/nb-llama-3.1-8B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Meta Llama 3.1: https://www.llama.com/llama3_1/license/

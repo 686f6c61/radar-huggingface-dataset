@@ -87,7 +87,7 @@ La comparativa se limita a los datos de la model card; no se dispone de cifras d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/astroware/HaloGuard2-0.8B
+- Hugging Face: https://huggingface.co/astroware/HaloGuard2-0.8B
 - Modelo hermano (guardián de entrada): https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Build fijada de transformers: https://github.com/huggingface/transformers/archive/394b1a0eaa8e6199e372334da0aff3753a117fdb.tar.gz
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

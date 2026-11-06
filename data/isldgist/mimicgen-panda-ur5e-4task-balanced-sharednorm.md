@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm
+- Repositorio de Hugging Face: https://huggingface.co/isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm
 - MimicGen (paper y codigo): https://github.com/NVlabs/mimicgen
 - Pagina oficial de MimicGen: https://mimicgen.github.io/
 - Entornos de MimicGen: https://github.com/UWRobotLearning/mimicgen_environments

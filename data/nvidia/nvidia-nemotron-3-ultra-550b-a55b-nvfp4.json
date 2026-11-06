@@ -59,10 +59,10 @@
     "region:us"
   ],
   "likes": 375,
-  "downloads_30d": 31879,
+  "downloads_30d": 30650,
   "trending_score": 8,
-  "parameters": 302826566168,
-  "parameters_human": "302.83B",
+  "parameters": 560524603928,
+  "parameters_human": "560.52B",
   "storage_bytes": 704721918479,
   "storage_human": "704.7 GB",
   "base_model": null,

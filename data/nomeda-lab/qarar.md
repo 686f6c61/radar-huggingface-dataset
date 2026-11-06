@@ -111,7 +111,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Exactitud global (Arabic Decision Benchmark) | ECE | Precision selectiva @20 % | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| QARAR | 147.985.156 | no disponible | 0,687 / 0,560 (acc/F1) | 0,035 | 0,955 | Apache-2.0 | HuggingFace (nomeda-lab/qarar) |
+| QARAR | 147.985.156 | no disponible | 0,687 / 0,560 (acc/F1) | 0,035 | 0,955 | Apache-2.0 | Hugging Face (nomeda-lab/qarar) |
 | JEV-1.13 | no disponible | no disponible | 0,765 / 0,669 (acc/F1) | 0,072 | 0,898 | no disponible | sistema externo comparado en la model card |
 | Laya | no disponible | no disponible | 0,443 / 0,308 (acc/F1) | 0,337 | 0,570 | no disponible | sistema externo comparado en la model card |
 
@@ -133,8 +133,8 @@ QARAR lidera en tareas nativas de arabe, calibracion y precision selectiva a baj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomeda-lab/qarar
-- Organizacion nomeda-lab en HuggingFace: https://huggingface.co/nomeda-lab
+- Modelo en Hugging Face: https://huggingface.co/nomeda-lab/qarar
+- Organizacion nomeda-lab en Hugging Face: https://huggingface.co/nomeda-lab
 - Coleccion de datasets de nomeda-lab: https://huggingface.co/collections/nomeda-lab/datasets
 - Repositorio GitHub de Nomeda AI: https://github.com/Nomeda-AI
 - Modelo base: https://huggingface.co/silma-ai/silma-embedding-matryoshka-v0.1

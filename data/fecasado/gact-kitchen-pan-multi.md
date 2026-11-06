@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gact-kitchen-pan-multi` es una política de control robótico (no un modelo de lenguaje) publicada por el usuario `fecasado` en HuggingFace. Está entrenada con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica, y emplea el tipo de política `gaze_act`, una variante de ACT (Action Chunking with Transformers) que incorpora información de mirada (gaze) como señal adicional de entrada. El modelo resuelve una tarea concreta de manipulación: coger y mover una sartén sobre una placa de cocina, a partir del dataset `fecasado/pan-on-hob-320x240`.
+`gact-kitchen-pan-multi` es una política de control robótico (no un modelo de lenguaje) publicada por el usuario `fecasado` en Hugging Face. Está entrenada con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica, y emplea el tipo de política `gaze_act`, una variante de ACT (Action Chunking with Transformers) que incorpora información de mirada (gaze) como señal adicional de entrada. El modelo resuelve una tarea concreta de manipulación: coger y mover una sartén sobre una placa de cocina, a partir del dataset `fecasado/pan-on-hob-320x240`.
 
 Con 51.670.922 parámetros y un tamaño de repositorio de 0,2 GB, es un modelo compacto orientado a inferencia en tiempo real sobre un brazo robótico tipo SO-100. Su relevancia es acotada pero clara: demuestra un pipeline completo de entrenamiento y despliegue de políticas visomotoras con LeRobot, incluyendo la integración de señales de gaze, y sirve como referencia reproducible para quien quiera entrenar políticas similares en entornos de cocina.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gact-kitchen-pan-multi | 51,7 M | gaze_act (ACT + gaze) | no disponible | apache-2.0 | HuggingFace |
-| Políticas ACT estándar en LeRobot | variable (decenas de M) | ACT | no disponible | según checkpoint | HuggingFace / LeRobot |
-| Políticas Diffusion Policy en LeRobot | variable | difusión | no disponible | según checkpoint | HuggingFace / LeRobot |
-| Políticas VQ-BeT en LeRobot | variable | transformer discreto | no disponible | según checkpoint | HuggingFace / LeRobot |
+| gact-kitchen-pan-multi | 51,7 M | gaze_act (ACT + gaze) | no disponible | apache-2.0 | Hugging Face |
+| Políticas ACT estándar en LeRobot | variable (decenas de M) | ACT | no disponible | según checkpoint | Hugging Face / LeRobot |
+| Políticas Diffusion Policy en LeRobot | variable | difusión | no disponible | según checkpoint | Hugging Face / LeRobot |
+| Políticas VQ-BeT en LeRobot | variable | transformer discreto | no disponible | según checkpoint | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gact-kitchen-pan-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gact-kitchen-pan-multi
 - Dataset asociado: https://huggingface.co/datasets/fecasado/pan-on-hob-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

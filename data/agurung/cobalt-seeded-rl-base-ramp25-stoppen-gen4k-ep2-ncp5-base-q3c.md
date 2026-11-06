@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Rendimiento en codigo |
 |---|---|---|---|---|---|---|
-| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q3c | 4,41B | No disponible en la ficha | RL (GRPO) sobre Qwen3-4B-Instruct-2507, sin semilla SFT | No disponible | HuggingFace, revision `main`, 183 descargas | No publicado (mejor `pass@8` del run, sin cifra) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,0B aprox. | Qwen documenta hasta 262.144 tokens | Instruct, post-entrenamiento generalista | Apache-2.0 (segun Qwen) | HuggingFace, ampliamente usado | No disponible en esta ficha |
-| Qwen/Qwen3-4B-Thinking-2507 | 4,0B aprox. | Qwen documenta hasta 262.144 tokens | Modo de razonamiento explicito | Apache-2.0 (segun Qwen) | HuggingFace | No disponible en esta ficha |
-| Otros checkpoints GRPO/OpenRLHF de la misma familia (mismo run u otros runs) | 4,41B | No disponible | RL sobre Qwen3-4B | No disponible | HuggingFace | No disponible |
+| agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q3c | 4,41B | No disponible en la ficha | RL (GRPO) sobre Qwen3-4B-Instruct-2507, sin semilla SFT | No disponible | Hugging Face, revision `main`, 183 descargas | No publicado (mejor `pass@8` del run, sin cifra) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,0B aprox. | Qwen documenta hasta 262.144 tokens | Instruct, post-entrenamiento generalista | Apache-2.0 (segun Qwen) | Hugging Face, ampliamente usado | No disponible en esta ficha |
+| Qwen/Qwen3-4B-Thinking-2507 | 4,0B aprox. | Qwen documenta hasta 262.144 tokens | Modo de razonamiento explicito | Apache-2.0 (segun Qwen) | Hugging Face | No disponible en esta ficha |
+| Otros checkpoints GRPO/OpenRLHF de la misma familia (mismo run u otros runs) | 4,41B | No disponible | RL sobre Qwen3-4B | No disponible | Hugging Face | No disponible |
 
 La comparacion con alternativas queda limitada porque la model card no publica cifras de rendimiento y porque el checkpoint esta optimizado para una distribucion muy concreta de problemas dificiles, no para evaluaciones estandar. Cualquier comparacion de rendimiento frente a los modelos base y de razonamiento de la familia Qwen3 debe hacerse con evaluacion propia.
 
@@ -107,7 +107,7 @@ La comparacion con alternativas queda limitada porque la model card no publica c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q3c
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q3c
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Weights & Biases: proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_base_q3c` (referenciado en la model card, sin URL publica disponible)
 - Log de entrenamiento local: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_base_q3c/openrlhf_train.log` (ruta local del autor, no accesible publicamente)

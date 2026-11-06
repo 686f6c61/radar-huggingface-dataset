@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rubenich/genetic-dna-tiny` es un modelo de lenguaje genómico de 6.302.976 parámetros (6,3 M) entrenado desde cero sobre el genoma de referencia humano GRCh37/hg19. Lo desarrolla el usuario de HuggingFace rubenich y su propósito declarado es didáctico: servir como banco de pruebas para entender cómo funcionan los modelos de lenguaje aplicados a ADN, no como herramienta clínica ni de producción. La arquitectura es un decoder causal estilo Llama (`LlamaForCausalLM`) con 256 dimensiones ocultas, 6 capas, 8 cabezas de atención y 1.024 dimensiones de capa intermedia.
+`rubenich/genetic-dna-tiny` es un modelo de lenguaje genómico de 6.302.976 parámetros (6,3 M) entrenado desde cero sobre el genoma de referencia humano GRCh37/hg19. Lo desarrolla el usuario de Hugging Face rubenich y su propósito declarado es didáctico: servir como banco de pruebas para entender cómo funcionan los modelos de lenguaje aplicados a ADN, no como herramienta clínica ni de producción. La arquitectura es un decoder causal estilo Llama (`LlamaForCausalLM`) con 256 dimensiones ocultas, 6 capas, 8 cabezas de atención y 1.024 dimensiones de capa intermedia.
 
 El modelo trabaja a nivel de base individual: el tokenizador es de carácter, con un vocabulario de 9 tokens (`[PAD]`, `[UNK]`, `[BOS]`, `[EOS]`, `A`, `C`, `G`, `T`, `N`), de modo que una base equivale a un token y un cambio de base altera exactamente un token. El objetivo de entrenamiento es predicción de la siguiente base (causal language modeling) con una ventana de contexto de 1.024 bases.
 
@@ -43,7 +43,7 @@ Los datos provienen de las secuencias de UCSC hg19 descargadas de `hgdownload.so
 - Scoring zero-shot de variantes de un solo nucleótido mediante la diferencia `log P(ventana alt) - log P(ventana ref)` sobre una ventana de hg19 (función `genetic_model.score_variant` en el repositorio fuente del autor).
 - Generación de secuencias sintéticas de ADN con estadística local similar a la del genoma de entrenamiento.
 - Extracción de representaciones internas (256 dimensiones por base) para usar como features en clasificadores aguas abajo.
-- Compatible con `transformers`, con Text Generation Inference y con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con `transformers`, con Text Generation Inference y con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, multi-step reasoning, visión, audio ni instrucciones en lenguaje natural: no es un modelo conversacional.
 
 ## Casos de uso
@@ -81,7 +81,7 @@ La mejora frente a Markov de orden 10 es de 0,087 bits por base, aproximadamente
 - VRAM estimada para inferencia (estimación a partir de los 6,3 M de parámetros): unos 25 MB en FP32, unos 12,6 MB en FP16/BF16 y unos 6,3 MB en int8. El repositorio no publica pesos cuantizados, por lo que la cuantización requeriría convertirla uno mismo.
 - GPU recomendadas: ninguna en particular; el modelo cabe en cualquier GPU con más de 1 GB de memoria (GTX 1050, T4, RTX 3060, RTX 4090, A100, H100). Una RTX 4090 o una A100 están sobredimensionadas para este modelo.
 - Cabe holgadamente en GPU de consumo y también funciona en CPU: la inferencia en CPU es viable incluso para lotes de ventanas de 1.024 bases.
-- Opciones de despliegue: `transformers` (ruta oficial documentada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de HuggingFace y vLLM con soporte de arquitectura Llama. Para llama.cpp u Ollama haría falta convertir los pesos a GGUF, conversión que no está publicada.
+- Opciones de despliegue: `transformers` (ruta oficial documentada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de Hugging Face y vLLM con soporte de arquitectura Llama. Para llama.cpp u Ollama haría falta convertir los pesos a GGUF, conversión que no está publicada.
 - Latencia y throughput: no disponible. A modo de referencia de órdenes de magnitud, el entrenamiento descrito (4.000 pasos, batch 16, contexto 1.024) se completó en un presupuesto de cómputo muy reducido, lo que sugiere que la inferencia es del orden de milisegundos por ventana en GPU moderna, aunque este dato no está confirmado por el autor.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ Alternativas neuronales de la misma categoría (modelos de lenguaje genómico): 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenich/genetic-dna-tiny
+- Modelo en Hugging Face: https://huggingface.co/rubenich/genetic-dna-tiny
 - Descarga de secuencias UCSC hg19 (origen de los datos): https://hgdownload.soe.ucsc.edu
 - Repositorio fuente con la función `genetic_model.score_variant`: mencionado en la model card, pero sin URL disponible en la información proporcionada.
 - Paper, blog o demo del autor: no disponible.

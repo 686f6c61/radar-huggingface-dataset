@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hewittlab/monitor_cot_for_hack-...-gpt-oss-20b` (este) | LoRA rango 32 sobre base de 21 000 M | No disponible | No disponible (artefacto de investigacion) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `openai/gpt-oss-20b` (modelo base) | 21 000 M | No disponible en esta ficha | No disponible | No disponible en esta ficha | HuggingFace, modelo abierto ampliamente adoptado |
-| Otras variantes del mismo proyecto (por ejemplo, `hewittlab/monitor_cot_for_hack-length`) | LoRA rango 32 sobre el mismo base | No disponible | No disponible | No disponible | HuggingFace |
+| `hewittlab/monitor_cot_for_hack-...-gpt-oss-20b` (este) | LoRA rango 32 sobre base de 21 000 M | No disponible | No disponible (artefacto de investigacion) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `openai/gpt-oss-20b` (modelo base) | 21 000 M | No disponible en esta ficha | No disponible | No disponible en esta ficha | Hugging Face, modelo abierto ampliamente adoptado |
+| Otras variantes del mismo proyecto (por ejemplo, `hewittlab/monitor_cot_for_hack-length`) | LoRA rango 32 sobre el mismo base | No disponible | No disponible | No disponible | Hugging Face |
 
 No se conocen en la informacion disponible otros repositorios publicos equivalentes que aunen checkpoints de control y de recompensa mal especificada con multiples semillas y pasos sobre el mismo modelo base.
 
@@ -87,11 +87,11 @@ No se conocen en la informacion disponible otros repositorios publicos equivalen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-gpt-oss-20b
+- Modelo en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-gpt-oss-20b
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Split especifico para gpt-oss-20b: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/gpt-oss-20b
 - Dataset de origen: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions
 - Codigo del articulo: https://github.com/Lorenayannnnn/reward-mispecification-degrades-cot-monitorability
 - tinker-cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

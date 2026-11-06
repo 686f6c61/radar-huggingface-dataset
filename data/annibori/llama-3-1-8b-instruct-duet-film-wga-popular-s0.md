@@ -86,8 +86,8 @@ Referencia del modelo base: recall de retención 0,842; suelo de cualificación 
 
 | Modelo | Parámetros | Contexto | Olvido (recall) | Retención (recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (WGA, epoch 8) | 8,03 B | no disponible | 0,034 | 0,964 | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03 B | no disponible | no disponible | 0,842 (referencia) | llama3.1 | HuggingFace |
+| Este modelo (WGA, epoch 8) | 8,03 B | no disponible | 0,034 | 0,964 | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03 B | no disponible | no disponible | 0,842 (referencia) | llama3.1 | Hugging Face |
 | Llama-3.1-8B-Instruct (original) | 8,03 B | 128.000 tokens (spec oficial) | no aplica | no aplica | llama3.1 | Amplia disponibilidad |
 | Alternativas de unlearning comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ La comparación con otros métodos de unlearning (por ejemplo, NPO, RMU o gradie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s0
 - Modelo base (fine-tune DUET film): https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET_LLM: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning (referenciado en la receta): no disponible en la información proporcionada

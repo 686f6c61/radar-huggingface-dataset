@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4-ONNX
+- Modelo en Hugging Face: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4-ONNX
 - Modelo base del parche: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v4
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Exportación ONNX de referencia: https://huggingface.co/onnx-community/Qwen3.5-0.8B-ONNX

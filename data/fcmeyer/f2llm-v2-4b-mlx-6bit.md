@@ -15,7 +15,7 @@ La arquitectura se basa en el tronco de Qwen3, genera embeddings de 2560 dimensi
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el ejemplo de uso emplea max_length=8192) |
 | Tipos de cuantizacion | MLX affine 6-bit con grupo de 64; tambien disponibles versiones bf16 y 8-bit del mismo autor |
-| Idiomas soportados | Mas de 80 idiomas listados en HuggingFace (incluye es, en, zh, ru, fr, de, etc.); el modelo original soporta mas de 200 |
+| Idiomas soportados | Mas de 80 idiomas listados en Hugging Face (incluye es, en, zh, ru, fr, de, etc.); el modelo original soporta mas de 200 |
 | Licencia | Apache 2.0 |
 | Formato de pesos | MLX (safetensors) |
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente en los materiales proporcionados para re
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-6bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-6bit
 - Modelo base original: https://huggingface.co/codefuse-ai/F2LLM-v2-4B
 - Articulo de investigacion (arXiv): https://arxiv.org/abs/2603.19223
 - Repositorio GitHub de CodeFuse-Embeddings: https://github.com/codefuse-ai/CodeFuse-Embeddings/blob/main/F2LLM/README.md

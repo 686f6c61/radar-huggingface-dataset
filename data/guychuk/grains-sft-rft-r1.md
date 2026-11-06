@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`guychuk/grains-sft-rft-r1` es un adaptador LoRA publicado en HuggingFace por el usuario `guychuk` (guynachshon) sobre el modelo base `ornith-ai/Ornith-1.5-35B-A3B`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (3,8 GB en safetensors) que debe cargarse junto con el modelo base para funcionar. El nombre sugiere un pipeline de ajuste en dos fases —SFT seguido de RFT (reinforcement fine-tuning), siguiendo el patrón popularizado por DeepSeek-R1 y GUI-R1—, aunque la model card no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento concreto.
+`guychuk/grains-sft-rft-r1` es un adaptador LoRA publicado en Hugging Face por el usuario `guychuk` (guynachshon) sobre el modelo base `ornith-ai/Ornith-1.5-35B-A3B`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (3,8 GB en safetensors) que debe cargarse junto con el modelo base para funcionar. El nombre sugiere un pipeline de ajuste en dos fases —SFT seguido de RFT (reinforcement fine-tuning), siguiendo el patrón popularizado por DeepSeek-R1 y GUI-R1—, aunque la model card no documenta ni el dataset, ni los hiperparámetros, ni el procedimiento concreto.
 
-La relevancia de esta ficha es limitada y fundamentalmente cautelar: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace sin ninguna sección rellenada, y no se declara licencia ni idiomas. Cualquier evaluación técnica seria exige descargar el adaptador, cargarlo sobre el base y ejecutar una batería propia de pruebas.
+La relevancia de esta ficha es limitada y fundamentalmente cautelar: el repositorio tiene 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face sin ninguna sección rellenada, y no se declara licencia ni idiomas. Cualquier evaluación técnica seria exige descargar el adaptador, cargarlo sobre el base y ejecutar una batería propia de pruebas.
 
 El único dato estructural fiable procede del identificador del modelo base: el sufijo `35B-A3B` es la convención habitual para indicar arquitectura MoE con aproximadamente 35 000 millones de parámetros totales y 3 000 millones activos por token. Esa cifra no está confirmada por ninguna documentación accesible y debe tratarse como inferencia a partir del nombre.
 
@@ -27,7 +27,7 @@ Otros metadatos verificables: libreria `peft` 0.21.2, pipeline `text-generation`
 
 El objeto publicado es un adaptador LoRA, no un modelo entrenado desde cero. La arquitectura efectiva es la del base `ornith-ai/Ornith-1.5-35B-A3B`, sobre el que se insertan las matrices de bajo rango. La model card no especifica rango, alpha, módulos objetivo ni si el adaptador cubre solo atención o también las capas MLP, datos imprescindibles para reproducir el ajuste.
 
-Respecto al entrenamiento, el nombre del repositorio indica SFT seguido de RFT, y los tags confirman `sft` y el uso de `trl`. No hay información sobre volumen de datos, composición del dataset, número de tokens, función de recompensa empleada en la fase RFT, ni sobre si hubo DPO o RLHF adicional. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al., el artículo del calculador de impacto medioambiental que HuggingFace inserta automáticamente en la plantilla de model card; no es una referencia al método de entrenamiento del modelo y no debe interpretarse como tal.
+Respecto al entrenamiento, el nombre del repositorio indica SFT seguido de RFT, y los tags confirman `sft` y el uso de `trl`. No hay información sobre volumen de datos, composición del dataset, número de tokens, función de recompensa empleada en la fase RFT, ni sobre si hubo DPO o RLHF adicional. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al., el artículo del calculador de impacto medioambiental que Hugging Face inserta automáticamente en la plantilla de model card; no es una referencia al método de entrenamiento del modelo y no debe interpretarse como tal.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | guychuk/grains-sft-rft-r1 | Adaptador LoRA; base ~35B-A3B segun identificador | No disponible | No disponible | No disponible | 0 descargas, 0 likes |
-| ornith-ai/Ornith-1.5-35B-A3B (base) | ~35B totales / ~3B activos segun identificador | No disponible | No disponible | No disponible en la informacion disponible | Modelo base publicado en HuggingFace |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | ~35B totales / ~3B activos segun identificador | No disponible | No disponible | No disponible en la informacion disponible | Modelo base publicado en Hugging Face |
 | Otros adaptadores LoRA SFT/RFT de la misma familia | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa con alternativas de la misma categoria. La unica comparacion metodologicamente valida es contra el propio modelo base, mediante evaluacion directa.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 - Trazabilidad: el adaptador no puede usarse sin el base `ornith-ai/Ornith-1.5-35B-A3B`; la cadena de dependencias y sus licencias deben verificarse por separado.
 - Madurez: 0 descargas y 0 likes, actualizado el mismo dia de su creacion. No hay evidencia de uso, validacion por terceros ni mantenimiento.
 - Riesgo de sobreajuste al formato: los pipelines SFT+RFT cortos suelen producir respuestas con estructura muy fija; conviene probar prompts fuera de distribucion.
-- El tag `arxiv:1910.09700` es un artefacto de la plantilla de HuggingFace y no respalda tecnicamente el modelo.
+- El tag `arxiv:1910.09700` es un artefacto de la plantilla de Hugging Face y no respalda tecnicamente el modelo.
 
 ## Enlaces
 

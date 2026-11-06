@@ -33,7 +33,7 @@ El modelo no ha sido entrenado. El checkpoint en `model.safetensors` es un check
 - No se han documentado capacidades multilingües ni de procesamiento de texto.
 
 ## Casos de uso
-- Investigación de arquitecturas: permite explorar cómo se configura y ejecuta un MobileViT con el framework de HuggingFace, sirviendo como base para experimentos de diseño de redes neuronales.
+- Investigación de arquitecturas: permite explorar cómo se configura y ejecuta un MobileViT con el framework de Hugging Face, sirviendo como base para experimentos de diseño de redes neuronales.
 - Pruebas de humo en pipelines de CI/CD: el checkpoint de inicialización puede usarse para verificar que el código de inferencia y entrenamiento funciona correctamente antes de lanzar un entrenamiento completo.
 - Desarrollo de adaptadores de carga: la model card indica que las APIs de carga automática genéricas requieren un adaptador explícito; este repositorio sirve para probar ese adaptador.
 - Entrenamiento desde cero: se puede tomar el script `inference.py` como punto de partida para entrenar un MobileViT sobre un dataset propio de clasificación, aunque se necesitarán recursos de cómputo adicionales.
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada: inferior a 1 GB, dado el número de parámetros (16.576). El modelo cabe en cualquier GPU moderna, incluso en las integradas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluidas las de gama de entrada (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060) o incluso CPU para inferencia básica.
 - Compatibilidad con GPU consumer: sí, el modelo es extremadamente ligero.
-- Opciones de despliegue: se puede ejecutar con PyTorch estándar, aunque no está preparado para servidores de inferencia como vLLM o TGI por ser un modelo de visión y no de lenguaje. También se podría usar con HuggingFace Transformers si se implementa un adaptador.
+- Opciones de despliegue: se puede ejecutar con PyTorch estándar, aunque no está preparado para servidores de inferencia como vLLM o TGI por ser un modelo de visión y no de lenguaje. También se podría usar con Hugging Face Transformers si se implementa un adaptador.
 - Latencia y throughput: no se han medido, pero con un número tan reducido de parámetros, la inferencia debería ser casi instantánea en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -65,11 +65,11 @@ Nota: los modelos MobileViT originales de Apple están entrenados y documentados
 - Riesgo de alucinación no aplicable al ser un modelo de visión sin generación de texto.
 - No hay garantías de que la arquitectura funcione correctamente en tareas de clasificación reales sin un entrenamiento adecuado.
 - La licencia Apache 2.0 permite uso comercial, pero los términos de los datos externos utilizados en un futuro entrenamiento deben revisarse por separado.
-- No se puede usar con APIs de HuggingFace estándar (AutoModel, pipeline) sin un adaptador explícito, según la documentación del autor.
+- No se puede usar con APIs de Hugging Face estándar (AutoModel, pipeline) sin un adaptador explícito, según la documentación del autor.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/jojames92k/mobilevit-classification-rc1
-- Documentación de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Repositorio Hugging Face: https://huggingface.co/jojames92k/mobilevit-classification-rc1
+- Documentación de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Código fuente de la documentación en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md
 - Ejemplo de MobileViT en Keras: https://keras.io/examples/vision/mobilevit/
 - Notebook Colab del ejemplo de Keras: https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/mobilevit.ipynb

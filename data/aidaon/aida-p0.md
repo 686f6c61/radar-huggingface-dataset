@@ -4,7 +4,7 @@
 
 AIDA P0 (AI Detector Analysis, fase 0) es un detector de imágenes generadas por IA desarrollado por AIDAON. No es un modelo generativo: es un clasificador binario de imágenes que devuelve una probabilidad calibrada (`score_ia`) y una clase (REAL / IA) a partir únicamente del contenido del píxel, sin inspeccionar metadatos ni marcas de agua. Se construye sobre el backbone visual CLIP `ViT-B-32-quickgelu`, del que obtiene representaciones de 512 dimensiones, y combina tres sensores independientes (Visual Expert, Forensics y Rigid/Real Evidence) mediante una etapa de fusión.
 
-El repositorio de HuggingFace no distribuye los pesos. Publica el código (licencia MIT), la metodología, la arquitectura, las métricas y las limitaciones; los pesos residen en el Space `AIDAON/aida-api`, que ejecuta las inferencias de producción y cuya licencia está sin determinar (`LICENSE_UNKNOWN_REVIEW_REQUIRED`). Por tanto, el repositorio no puede ejecutar inferencia por sí solo: sin un directorio `models/` externo, la clase `AidaP0` lanza la excepción `ArtefatoAusente` en lugar de devolver un resultado.
+El repositorio de Hugging Face no distribuye los pesos. Publica el código (licencia MIT), la metodología, la arquitectura, las métricas y las limitaciones; los pesos residen en el Space `AIDAON/aida-api`, que ejecuta las inferencias de producción y cuya licencia está sin determinar (`LICENSE_UNKNOWN_REVIEW_REQUIRED`). Por tanto, el repositorio no puede ejecutar inferencia por sí solo: sin un directorio `models/` externo, la clase `AidaP0` lanza la excepción `ArtefatoAusente` en lugar de devolver un resultado.
 
 Su relevancia actual es doble. Por un lado, aborda un problema operativo real (el triaje de imágenes sintéticas en moderación, verificación y curación de datasets) con una interfaz reproducible y un umbral de decisión congelado en `0,48158617244389096` para permitir comparaciones entre versiones. Por otro, es un caso poco habitual de publicación parcial: código y documentación abiertos con los pesos explícitamente fuera del alcance, acompañado de una declaración de limitaciones inusualmente detallada (entre el 9 % y el 47 % de error sobre fotografías reales, según el tipo de fotografía, medido sobre 5.307 imágenes).
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AIDAON/aida-p0 | no disponible (backbone CLIP ViT-B-32) | no aplica | Error del 9 %–47 % sobre fotos reales; MCC no disponible | Código MIT; pesos sin licencia declarada | Código en HuggingFace; pesos solo vía Space `AIDAON/aida-api` |
+| AIDAON/aida-p0 | no disponible (backbone CLIP ViT-B-32) | no aplica | Error del 9 %–47 % sobre fotos reales; MCC no disponible | Código MIT; pesos sin licencia declarada | Código en Hugging Face; pesos solo vía Space `AIDAON/aida-api` |
 | Alternativas de la misma categoría (detectores de imágenes generadas por IA y clasificadores de deepfakes) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIDAON/aida-p0
+- Modelo en Hugging Face: https://huggingface.co/AIDAON/aida-p0
 - Licencias del repositorio: https://huggingface.co/AIDAON/aida-p0/blob/main/LICENSES.md
 - Model card detallada del proyecto: `MODEL_CARD.md` (referenciado en el repositorio)
 - Benchmark de la release: `RELEASE_BENCHMARK.md` (referenciado en el repositorio)

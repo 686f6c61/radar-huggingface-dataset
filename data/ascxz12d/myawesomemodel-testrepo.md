@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASCXZ12D bajo el identificador ASCXZ12D/MyAwesomeModel-TestRepo. La model card se presenta como una actualizacion de version de un modelo anterior, con mejoras centradas en profundidad de razonamiento, reduccion de alucinaciones y soporte de function calling. El propio nombre del repositorio ("TestRepo") y el hecho de que el peso total del repositorio sea de 0.0 GB apuntan a un repositorio de prueba o de demostracion mas que a una publicacion de pesos reales.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASCXZ12D bajo el identificador ASCXZ12D/MyAwesomeModel-TestRepo. La model card se presenta como una actualizacion de version de un modelo anterior, con mejoras centradas en profundidad de razonamiento, reduccion de alucinaciones y soporte de function calling. El propio nombre del repositorio ("TestRepo") y el hecho de que el peso total del repositorio sea de 0.0 GB apuntan a un repositorio de prueba o de demostracion mas que a una publicacion de pesos reales.
 
-La informacion tecnica disponible es muy limitada. Las etiquetas de HuggingFace indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT y orientada a extraccion de caracteristicas, en contradiccion con la model card, que describe un asistente conversacional con razonamiento, generacion de codigo y function calling. No se especifican parametros totales, longitud de contexto, idiomas soportados ni formato de pesos.
+La informacion tecnica disponible es muy limitada. Las etiquetas de Hugging Face indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT y orientada a extraccion de caracteristicas, en contradiccion con la model card, que describe un asistente conversacional con razonamiento, generacion de codigo y function calling. No se especifican parametros totales, longitud de contexto, idiomas soportados ni formato de pesos.
 
 La relevancia actual del modelo es dudosa: cuenta con 0 descargas y 0 likes, el repositorio no contiene pesos, los benchmarks publicados emplean categorias genericas (Model1, Model2, Model1-v2) sin identificar los conjuntos de evaluacion, y los unicos enlaces de la busqueda web corresponden a paginas corporativas de Microsoft sin relacion con el modelo. Se recomienda tratarlo como un artefacto de prueba.
 
@@ -12,11 +12,11 @@ La relevancia actual del modelo es dudosa: cuenta con 0 descargas y 0 likes, el 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace indica `bert`; la model card no describe la arquitectura |
+| Arquitectura | No disponible. La etiqueta de Hugging Face indica `bert`; la model card no describe la arquitectura |
 | Parametros totales | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace esta vacio) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face esta vacio) |
 | Licencia | MIT |
 | Formato de pesos | No disponible. El repositorio tiene un tamano de 0.0 GB, por lo que no contiene pesos publicados |
 | Autor | ASCXZ12D |
@@ -29,7 +29,7 @@ La relevancia actual del modelo es dudosa: cuenta con 0 descargas y 0 likes, el 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La etiqueta `bert` de HuggingFace sugiere un transformer encoder de tipo BERT, y la etiqueta `feature-extraction` apunta a un uso como extractor de representaciones. Sin embargo, la model card describe capacidades de razonamiento, generacion de codigo y function calling, propias de modelos decoder-only. Esta discrepancia no se resuelve con los datos disponibles.
+No hay informacion verificable sobre la arquitectura. La etiqueta `bert` de Hugging Face sugiere un transformer encoder de tipo BERT, y la etiqueta `feature-extraction` apunta a un uso como extractor de representaciones. Sin embargo, la model card describe capacidades de razonamiento, generacion de codigo y function calling, propias de modelos decoder-only. Esta discrepancia no se resuelve con los datos disponibles.
 
 Tampoco se detallan datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. La model card menciona de forma generica un "aumento de recursos computacionales" y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, ademas de un mayor uso de tokens de pensamiento en la fase de inferencia (de 12K a 23K tokens por pregunta en el conjunto AIME), pero sin especificar metodologia ni arquitectura subyacente. No se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, MoE, SSM, etc.).
 
@@ -58,7 +58,7 @@ Los siguientes casos son hipoteticos y se derivan unicamente de las afirmaciones
 - Generacion aumentada por recuperacion (RAG) con busqueda web: la model card incluye una plantilla que formatea los resultados de busqueda con marcadores `[webpage X begin]` y exige citas en formato `[citation:X]`, pensada para respuestas trazables.
 - Procesamiento de documentos subidos por el usuario: existe una plantilla que inserta `{file_name}`, `{file_content}` y `{question}`, orientada a tareas de pregunta-respuesta sobre documentos.
 - Analisis de sentimiento y clasificacion de texto: la model card reporta 0.792 en "Sentiment Analysis" y 0.828 en "Text Classification", lo que apuntaria a tareas de clasificacion, si bien la etiqueta `feature-extraction` sugiriria un uso como encoder mas que como generador.
-- Extraccion de caracteristicas para downstream: segun la etiqueta de HuggingFace, el uso previsto podria ser generar embeddings con un encoder tipo BERT para alimentar clasificadores o sistemas de recuperacion.
+- Extraccion de caracteristicas para downstream: segun la etiqueta de Hugging Face, el uso previsto podria ser generar embeddings con un encoder tipo BERT para alimentar clasificadores o sistemas de recuperacion.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ No se han publicado requisitos de hardware en la informacion disponible. Dado qu
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros y la cuantizacion).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un repositorio de codigo externo que no se enlaza; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay confirmacion.
+- Opciones de despliegue: la model card remite a un repositorio de codigo externo que no se enlaza; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay confirmacion.
 - Latencia y throughput: no disponibles. El dato de 23K tokens por pregunta en AIME 2025 implicaria una latencia alta y un coste de computo considerable en tareas de razonamiento, aunque no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No disponible. La model card compara el modelo con tres referencias anonimizadas
 ## Limitaciones y advertencias
 
 - El repositorio tiene un tamano de 0.0 GB y no contiene pesos, por lo que el modelo no se puede ejecutar a partir de esta publicacion.
-- Contradiccion entre las etiquetas de HuggingFace (`bert`, `feature-extraction`) y la model card (razonamiento, generacion, function calling): no se puede determinar que tipo de modelo es realmente.
+- Contradiccion entre las etiquetas de Hugging Face (`bert`, `feature-extraction`) y la model card (razonamiento, generacion, function calling): no se puede determinar que tipo de modelo es realmente.
 - Los benchmarks de la model card no identifican los conjuntos de evaluacion ni los comparadores (Model1, Model2, Model1-v2), por lo que sus cifras no son verificables ni reproducibles.
 - El dato de AIME 2025 (87,5 %) no incluye numero de muestras, prompt ni criterio de correccion.
 - Ausencia total de informacion sobre sesgos, composicion del dataset de entrenamiento y filtros de seguridad aplicados.
@@ -121,7 +121,7 @@ No disponible. La model card compara el modelo con tres referencias anonimizadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASCXZ12D/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASCXZ12D/MyAwesomeModel-TestRepo
 - Repositorio de codigo, web oficial y variante MyAwesomeModel-Small: mencionados en la model card sin URL disponible.
 - Paper, blog o demo adicionales: no disponibles.
 - Resultados de busqueda web: no relevantes (paginas corporativas de Microsoft).

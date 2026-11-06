@@ -69,6 +69,6 @@ No disponible. No se ha identificado información sobre modelos comparables en e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5EXH1GnJ
+- Repositorio Hugging Face: https://huggingface.co/microtensor-archive/mt-code-3g-r1236-5EXH1GnJ
 - Subred Microtensor (GitHub): https://github.com/microtensor-io/microtensor-subnet
 - Artefactos de subida SN92 (GitHub): https://github.com/enka1504/sn92-mt3g

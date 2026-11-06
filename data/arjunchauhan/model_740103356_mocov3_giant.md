@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_740103356_mocov3_giant` es una implementación a escala "giant" de la arquitectura mocov3, publicada por ArjunChauhan en HuggingFace. Está orientado a tareas de generación y se distribuye bajo licencia Apache 2.0. La model card describe una arquitectura con atención sparse, fusión bilinear, activación GELU tanh, normalización GroupNorm e inicialización Xavier uniform, junto con el optimizador SGD y un scheduler OneCycle. Sin embargo, la información pública es muy limitada: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados, ni los datos de entrenamiento. Esto hace que sea difícil evaluar su utilidad práctica para desarrolladores o investigadores sin una documentación más completa. Su relevancia actual es baja, al no existir benchmarks publicados ni casos de uso verificados.
+El modelo `model_740103356_mocov3_giant` es una implementación a escala "giant" de la arquitectura mocov3, publicada por ArjunChauhan en Hugging Face. Está orientado a tareas de generación y se distribuye bajo licencia Apache 2.0. La model card describe una arquitectura con atención sparse, fusión bilinear, activación GELU tanh, normalización GroupNorm e inicialización Xavier uniform, junto con el optimizador SGD y un scheduler OneCycle. Sin embargo, la información pública es muy limitada: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados, ni los datos de entrenamiento. Esto hace que sea difícil evaluar su utilidad práctica para desarrolladores o investigadores sin una documentación más completa. Su relevancia actual es baja, al no existir benchmarks publicados ni casos de uso verificados.
 
 ## Especificaciones técnicas
 

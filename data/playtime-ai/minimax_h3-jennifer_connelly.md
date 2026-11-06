@@ -56,7 +56,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Playtime-AI/Minimax_H3-Jennifer_Connelly
+- Repositorio Hugging Face: https://huggingface.co/Playtime-AI/Minimax_H3-Jennifer_Connelly
 - Repositorio de MiniMax H3 (modelo base): https://github.com/MiniMax-AI/MiniMax-H3
 - Página de tutoriales y despliegue de MiniMax H3: https://design.minimax.io/h3
 - Repositorio de workflows ComfyUI para MiniMax H3: https://github.com/ai-models-lab/minimax-h3

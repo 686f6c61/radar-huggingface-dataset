@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parakeet-tdt-0.6b-v3-ft-af51-cap900-1031 es un modelo de reconocimiento automatico del habla (ASR) obtenido por fine-tuning de nvidia/parakeet-tdt-0.6b-v3, el modelo Parakeet TDT de NVIDIA. El autor del ajuste es el usuario de HuggingFace huwenjie333, que lo ha entrenado sobre 51 lenguas africanas (mas ingles y frances) mediante el pipeline Sunbird speech-to-text. El resultado es un checkpoint de 0,6 mil millones de parametros orientado a transcripcion multilingue de bajo recurso, un nicho donde la mayoria de los ASR comerciales tienen cobertura escasa.
+parakeet-tdt-0.6b-v3-ft-af51-cap900-1031 es un modelo de reconocimiento automatico del habla (ASR) obtenido por fine-tuning de nvidia/parakeet-tdt-0.6b-v3, el modelo Parakeet TDT de NVIDIA. El autor del ajuste es el usuario de Hugging Face huwenjie333, que lo ha entrenado sobre 51 lenguas africanas (mas ingles y frances) mediante el pipeline Sunbird speech-to-text. El resultado es un checkpoint de 0,6 mil millones de parametros orientado a transcripcion multilingue de bajo recurso, un nicho donde la mayoria de los ASR comerciales tienen cobertura escasa.
 
 El modelo conserva la arquitectura de NVIDIA: un encoder Conformer con decodificacion híbrida TDT (Token-and-Duration Transducer) y una cabeza CTC auxiliar. Es un modelo condicionado por prompt de idioma: se le pasa el codigo ISO-639-3 del idioma en el parametro `target_lang` de `transcribe` para obtener el mejor rendimiento, o `"auto"` si se desconoce. El checkpoint publicado corresponde al paso 1476 del entrenamiento, con un WER medio de evaluacion de 0,6898 sobre el conjunto de validacion del pipeline.
 
@@ -84,7 +84,7 @@ La comparacion con Whisper y MMS es orientativa: no se dispone de resultados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huwenjie333/parakeet-tdt-0.6b-v3-ft-af51-cap900-1031
+- Modelo en Hugging Face: https://huggingface.co/huwenjie333/parakeet-tdt-0.6b-v3-ft-af51-cap900-1031
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - NeMo (NVIDIA): https://github.com/NVIDIA/NeMo
 - Pipeline Sunbird speech-to-text: no disponible como enlace publico en la informacion proporcionada

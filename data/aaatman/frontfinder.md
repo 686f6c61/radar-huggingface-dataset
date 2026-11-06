@@ -6,7 +6,7 @@ FrontFinder es un modelo de inteligencia artificial diseñado para la identifica
 
 El problema que resuelve es la automatización del análisis frontal, una tarea que tradicionalmente realizan pronosticadores humanos aplicando criterios subjetivos y reglas propias. El modelo emplea la arquitectura UNET3+, una variante de red neuronal convolucional para segmentación semántica de imágenes, lo que le permite procesar campos meteorológicos y generar mapas de probabilidad de presencia de frentes.
 
-La relevancia actual del modelo radica en que los frentes están asociados a fenómenos meteorológicos de alto impacto, y su detección automática puede mejorar la consistencia y velocidad del análisis sinóptico operativo. El artículo técnico fue publicado en la revista *Artificial Intelligence for the Earth Systems* (AIES) de la AMS en 2025. La versión alojada en HuggingFace bajo el identificador aaaTman/FrontFinder presenta una licencia CC0-1.0, lo que la libera de restricciones de uso.
+La relevancia actual del modelo radica en que los frentes están asociados a fenómenos meteorológicos de alto impacto, y su detección automática puede mejorar la consistencia y velocidad del análisis sinóptico operativo. El artículo técnico fue publicado en la revista *Artificial Intelligence for the Earth Systems* (AIES) de la AMS en 2025. La versión alojada en Hugging Face bajo el identificador aaaTman/FrontFinder presenta una licencia CC0-1.0, lo que la libera de restricciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 ## Limitaciones y advertencias
 
 - El modelo está entrenado específicamente para el dominio geográfico de los Estados Unidos continentales y el dominio de análisis unificado de la NOAA; su aplicabilidad a otras regiones del mundo no está garantizada.
-- La model card en HuggingFace está prácticamente vacía, sin información sobre el proceso de entrenamiento, los datos utilizados o las instrucciones de uso, lo que dificulta la reproducibilidad.
+- La model card en Hugging Face está prácticamente vacía, sin información sobre el proceso de entrenamiento, los datos utilizados o las instrucciones de uso, lo que dificulta la reproducibilidad.
 - No se han documentado sesgos conocidos, pero la dependencia de análisis humanos para el etiquetado puede introducir los sesgos propios del criterio de los analistas.
 - El riesgo de alucinación o falsos positivos en la detección de frentes no está cuantificado en la información disponible.
 - La licencia CC0-1.0 permite uso comercial sin restricciones, pero al no existir documentación técnica completa, su integración en producción requiere un proceso de validación adicional.
@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaTman/FrontFinder
-- Modelo relacionado en HuggingFace: https://huggingface.co/aaaTman/FrontFinderAIES2025
+- Modelo en Hugging Face: https://huggingface.co/aaaTman/FrontFinder
+- Modelo relacionado en Hugging Face: https://huggingface.co/aaaTman/FrontFinderAIES2025
 - Repositorio de la aplicación web: https://github.com/aaTman/frontfinder-app
 - Repositorio del modelo: https://github.com/hanchyhill/FrontFinder
 - Artículo técnico en AIES (AMS): https://journals.ametsoc.org/view/journals/aies/4/1/AIES-D-24-0043.1.xml

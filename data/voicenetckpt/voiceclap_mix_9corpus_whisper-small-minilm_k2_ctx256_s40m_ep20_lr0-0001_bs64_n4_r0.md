@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento verificables de este checkpoint, por lo qu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| voiceclap_mix_9corpus_whisper-small-MiniLM (este) | no disponible | 256 | no disponible | HuggingFace, 0 descargas |
+| voiceclap_mix_9corpus_whisper-small-MiniLM (este) | no disponible | 256 | no disponible | Hugging Face, 0 descargas |
 | LAION-CLAP | no disponible | no disponible | no disponible | no disponible |
 | MS-CLAP | no disponible | no disponible | no disponible | no disponible |
 | AudioCLIP | no disponible | no disponible | no disponible | no disponible |
@@ -92,5 +92,5 @@ No se dispone de datos de rendimiento verificables de este checkpoint, por lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Índice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

@@ -65,8 +65,8 @@ Se puede comparar con el modelo hermano del mismo autor, Lanni-ni/dynamic_alibi_
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch3 | 45.694.080 | no disponible | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch3 | 45.694.080 | no disponible | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ Se puede comparar con el modelo hermano del mismo autor, Lanni-ni/dynamic_alibi_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch3
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch3
 - Perfil del autor: https://huggingface.co/Lanni-ni
 - Modelo relacionado: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6

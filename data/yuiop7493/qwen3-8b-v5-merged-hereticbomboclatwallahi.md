@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi` es un checkpoint subido al Hub de HuggingFace por el usuario `yuiop7493` con el pipeline de generación de texto. El nombre sugiere que se trata de un merge o fine-tune sobre la base Qwen3-8B, y los tags incluyen `qwen3`, `transformers` y `safetensors`. Sin embargo, la model card es una plantilla automática sin información sustancial: no se especifican el desarrollador, la licencia, los idiomas, el proceso de entrenamiento ni las capacidades concretas.
+El modelo `yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi` es un checkpoint subido al Hub de Hugging Face por el usuario `yuiop7493` con el pipeline de generación de texto. El nombre sugiere que se trata de un merge o fine-tune sobre la base Qwen3-8B, y los tags incluyen `qwen3`, `transformers` y `safetensors`. Sin embargo, la model card es una plantilla automática sin información sustancial: no se especifican el desarrollador, la licencia, los idiomas, el proceso de entrenamiento ni las capacidades concretas.
 
 Con 8.190.735.360 parámetros (8,19 mil millones), el modelo se sitúa en la gama de los LLM medianos, aptos para inferencia en hardware de consumo con cuantización. El repositorio ocupa 16,4 GB en formato `safetensors`, lo que corresponde a pesos en precisión completa o bf16. A día de hoy no hay descargas ni likes, y la fecha de creación es futura (2026-08-14), lo que sugiere que es un modelo recién publicado o con poca difusión.
 
@@ -71,9 +71,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8,19 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7,24 B | 32.000 tokens | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8,19 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7,24 B | 32.000 tokens | Apache 2.0 | Hugging Face |
 
 Sin embargo, no se puede afirmar que este modelo herede las características de Qwen3-8B, ya que el merge o fine-tune podría alterar el comportamiento, el contexto o incluso la arquitectura. Por tanto, la comparativa anterior es orientativa y no debe interpretarse como datos verificados de este checkpoint.
 
@@ -88,6 +88,6 @@ Sin embargo, no se puede afirmar que este modelo herede las características de 
 
 ## Enlaces
 
-- [HuggingFace: yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi](https://huggingface.co/yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi)
+- [Hugging Face: yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi](https://huggingface.co/yuiop7493/qwen3-8b-v5-merged-hereticbomboclatwallahi)
 
 No se han encontrado papers, repositorios adicionales, demos ni blogs asociados a este modelo.

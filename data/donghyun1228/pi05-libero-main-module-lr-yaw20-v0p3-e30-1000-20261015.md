@@ -71,7 +71,7 @@ El autor no proporciona comparaciones con otros modelos y la busqueda web no ha 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw20-v0p3-e30-1000-20261015 | no disponible | no disponible | no disponible (evaluacion pendiente) | apache-2.0 | HuggingFace, 0 descargas |
+| pi05-libero-main-module-lr-yaw20-v0p3-e30-1000-20261015 | no disponible | no disponible | no disponible (evaluacion pendiente) | apache-2.0 | Hugging Face, 0 descargas |
 | Otros candidatos del mismo autor (`Donghyun1228`) | no disponible | no disponible | no disponible | no disponible | no verificado |
 | Modelos base del framework `openpi` | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | repositorio `openpi` |
 | Otros modelos VLA de robotica de proposito general | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos verificados para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v0p3-e30-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v0p3-e30-1000-20261015
 - Framework `openpi` (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Proyecto LIBERO (benchmark de aprendizaje robotico lifelong): https://libero-project.github.io
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente contenido no relacionado (videos de humor en ruso), por lo que no se incluye ningun otro enlace.

@@ -64,10 +64,10 @@ No se han publicado resultados cuantitativos de benchmarks en la informacion dis
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PixVL-model3 (este) | 4,8B | no disponible | Segmentación referencial + grounding | MIT | HuggingFace |
-| Qwen3-VL-4B | 4B | 32K (típico) | MLLM general (texto+imagen) | Apache 2.0 | HuggingFace |
+| PixVL-model3 (este) | 4,8B | no disponible | Segmentación referencial + grounding | MIT | Hugging Face |
+| Qwen3-VL-4B | 4B | 32K (típico) | MLLM general (texto+imagen) | Apache 2.0 | Hugging Face |
 | SAM-Tok (4B) | 4B | no disponible | Segmentación con tokenizador SAM | no disponible | Investigación |
-| LISA (7B) | 7B | 4K | Segmentación referencial | Apache 2.0 | HuggingFace |
+| LISA (7B) | 7B | 4K | Segmentación referencial | Apache 2.0 | Hugging Face |
 
 La comparación directa con Qwen3-VL-4B es relevante porque PixVL se inicializa desde ese modelo, pero PixVL añade la capacidad de generar máscaras de píxel y está específicamente entrenado para grounding. SAM-Tok es el baseline mencionado en el paper, y PixVL lo supera en segmentación referencial según las ablaciones reportadas. LISA es un modelo de segmentación referencial de mayor tamaño, pero sin el enfoque auto-supervisado de PixVL.
 
@@ -84,8 +84,8 @@ La comparación directa con Qwen3-VL-4B es relevante porque PixVL se inicializa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HudeKing/PixVL-model3-aware-mixedchoose-cachedgrpo50k
+- Repositorio Hugging Face: https://huggingface.co/HudeKing/PixVL-model3-aware-mixedchoose-cachedgrpo50k
 - Paper arXiv: https://arxiv.org/abs/2608.01354
-- Página del paper en HuggingFace: https://huggingface.co/papers/2608.01354
+- Página del paper en Hugging Face: https://huggingface.co/papers/2608.01354
 - Repositorio GitHub del proyecto: https://github.com/StuHude/PixVL
 - Perfil del autor: https://huggingface.co/HudeKing

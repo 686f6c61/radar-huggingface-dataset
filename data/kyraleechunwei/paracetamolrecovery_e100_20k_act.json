@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT",
+  "slug": "kyraleechunwei-paracetamolrecovery_e100_20k_act",
+  "author": "KyraLeeChunWei",
+  "url": "https://huggingface.co/KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT",
+  "created_at": "2026-11-05T00:34:17.000Z",
+  "updated_at": "2026-11-05T05:48:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:KyraLeeChunWei/ParacetamolRecovery_e100",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 51678855,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413497448,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT · Hugging Face",
+      "url": "https://huggingface.co/KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT",
+      "snippet": "Robotics model with 51.7M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT at main",
+      "url": "https://huggingface.co/KyraLeeChunWei/ParacetamolRecovery_e100_20K_ACT/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main ParacetamolRecovery_e100_20K_ACT 207 MB Ctrl+K Ctrl+K 1 contributor History:5 commits KyraLeeChunWei Upload DataProcessorPipeline f87196c verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 10 hours ago README.md 1.69 kBUpload policy weights, train config and readmeabout 5 hours ago config ..."
+    }
+  ]
+}

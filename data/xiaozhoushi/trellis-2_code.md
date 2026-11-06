@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xiaozhoushi/trellis.2_code` es un repositorio publicado en HuggingFace por el usuario `xiaozhoushi`. La informacion publica disponible es minima: el repositorio tiene un tamano de 0,2 GB, esta etiquetado con licencia MIT y region `us`, y no registra descargas ni likes en el momento de la consulta. No se especifica pipeline, idiomas soportados, arquitectura ni tipo de tarea.
+`xiaozhoushi/trellis.2_code` es un repositorio publicado en Hugging Face por el usuario `xiaozhoushi`. La informacion publica disponible es minima: el repositorio tiene un tamano de 0,2 GB, esta etiquetado con licencia MIT y region `us`, y no registra descargas ni likes en el momento de la consulta. No se especifica pipeline, idiomas soportados, arquitectura ni tipo de tarea.
 
 La model card del autor contiene unicamente la declaracion de licencia (`license: mit`), sin documentacion tecnica, sin descripcion del modelo, sin instrucciones de uso y sin resultados de evaluacion. El identificador incluye la cadena `trellis.2_code`, que podria sugerir una relacion con la familia de modelos TRELLIS orientada a generacion 3D, pero esta vinculacion no esta confirmada por ninguna fuente del repositorio y no debe asumirse.
 
@@ -52,7 +52,7 @@ No es posible recomendar casos de uso verificados. Los escenarios que se enumera
 - Pruebas de reproducibilidad en laboratorio: para verificar que los artefactos publicados corresponden a un modelo entrenado y no a un volcado de codigo.
 - Analisis de procedencia y licencia: el etiquetado MIT permite revisar rapidamente si el uso comercial seria viable, siempre que se confirme la titularidad de los derechos.
 - Auditoria de seguridad de pesos: escaneo de ficheros serializados antes de cargarlos en un entorno controlado, dado que el origen no esta verificado.
-- Estudio de convenciones de publicacion en HuggingFace: el repositorio es un ejemplo de publicacion con model card minima y ausencia de metadatos de pipeline.
+- Estudio de convenciones de publicacion en Hugging Face: el repositorio es un ejemplo de publicacion con model card minima y ausencia de metadatos de pipeline.
 
 ## Benchmarks y rendimiento
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar la categoria del modelo (lenguaje, visi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xiaozhoushi/trellis.2_code
+- Repositorio en Hugging Face: https://huggingface.co/xiaozhoushi/trellis.2_code
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a paginas no vinculadas (navegador Chrome, Google Calendar, extensiones de VPN y Chrome Remote Desktop).

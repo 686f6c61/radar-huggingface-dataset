@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leoputan/deco-humanlm-0.6b-pdn es un modelo de lenguaje publicado en HuggingFace por el usuario Leoputan. Se trata de un checkpoint de aproximadamente 751,6 millones de parametros (a pesar de la denominacion "0.6b" en el identificador del repositorio) distribuido en formato safetensors, con un tamano de repositorio de 3,0 GB. La etiqueta "qwen3" asociada al repositorio sugiere que la arquitectura subyacente esta basada en la familia Qwen3, aunque la model card no confirma este extremo ni aporta detalles adicionales.
+Leoputan/deco-humanlm-0.6b-pdn es un modelo de lenguaje publicado en Hugging Face por el usuario Leoputan. Se trata de un checkpoint de aproximadamente 751,6 millones de parametros (a pesar de la denominacion "0.6b" en el identificador del repositorio) distribuido en formato safetensors, con un tamano de repositorio de 3,0 GB. La etiqueta "qwen3" asociada al repositorio sugiere que la arquitectura subyacente esta basada en la familia Qwen3, aunque la model card no confirma este extremo ni aporta detalles adicionales.
 
 La relevancia de este modelo reside, por el momento, en su propia existencia como artefacto publicado: no cuenta con descargas ni "likes", la model card esta practicamente vacia (unicamente declara la licencia Apache 2.0) y no se ha publicado ninguna descripcion de arquitectura, datos de entrenamiento, capacidades o resultados de evaluacion. Esto limita severamente cualquier evaluacion tecnica rigurosa.
 
@@ -35,7 +35,7 @@ Datos adicionales del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura concreta del modelo. El unico indicio es la etiqueta "qwen3" presente en los metadatos de HuggingFace, que apuntaria a una arquitectura transformer de tipo decoder-only con atencion causal, normalizacion RMSNorm y las innovaciones introducidas por la familia Qwen3 (posible uso de QK-Norm y eliminacion del sesgo en las proyecciones QKV en los modelos pequenos de esa familia). No obstante, esta inferencia no esta respaldada por ninguna declaracion del autor ni por documentacion tecnica adjunta.
+No hay informacion disponible sobre la arquitectura concreta del modelo. El unico indicio es la etiqueta "qwen3" presente en los metadatos de Hugging Face, que apuntaria a una arquitectura transformer de tipo decoder-only con atencion causal, normalizacion RMSNorm y las innovaciones introducidas por la familia Qwen3 (posible uso de QK-Norm y eliminacion del sesgo en las proyecciones QKV en los modelos pequenos de esa familia). No obstante, esta inferencia no esta respaldada por ninguna declaracion del autor ni por documentacion tecnica adjunta.
 
 Tampoco existe informacion sobre el proceso de entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, ni si se aplicaron tecnicas de destilacion. El identificador del modelo incluye los fragmentos "deco" y "pdn", cuyo significado no se explica en la model card ni en los resultados de busqueda consultados.
 
@@ -62,7 +62,7 @@ Dado que no existe documentacion tecnica ni evaluacion publicada, no es posible 
 - Clasificacion de texto o etiquetado: uso potencial en tareas de clasificacion sencilla previa validacion empirica, sin garantia de resultados.
 - Prototipado local: despliegue en entornos sin conectividad para validar pipelines de inferencia antes de escalar a modelos mayores.
 - Generacion de texto de baja latencia: si el modelo funciona correctamente, su tamano permitiria respuestas rapidas en CPU o GPU de consumo, aunque no hay mediciones publicadas.
-- Educacion y divulgacion: uso como ejemplo de modelo pequeno publicado en HuggingFace para ilustrar el ciclo de vida de un checkpoint.
+- Educacion y divulgacion: uso como ejemplo de modelo pequeno publicado en Hugging Face para ilustrar el ciclo de vida de un checkpoint.
 
 En todos los casos, la ausencia de benchmarks, de descripcion de datos de entrenamiento y de cualquier validacion externa impide afirmar que el modelo sea adecuado para produccion.
 
@@ -112,6 +112,6 @@ No se dispone de resultados de benchmarks del modelo evaluado, por lo que no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leoputan/deco-humanlm-0.6b-pdn
-- Repositorio del autor en HuggingFace: https://huggingface.co/Leoputan
+- Hugging Face: https://huggingface.co/Leoputan/deco-humanlm-0.6b-pdn
+- Repositorio del autor en Hugging Face: https://huggingface.co/Leoputan
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y se han descartado por no ser relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TransDubber es un modelo publicado en HuggingFace por el usuario zhisheng01 bajo licencia Apache 2.0. El repositorio, de 11,1 GB, no incluye una model card descriptiva: la unica informacion disponible en la ficha de HuggingFace es la licencia y la etiqueta de region. No se especifica la tarea (aunque el nombre sugiere doblaje o traduccion de audio), la arquitectura, el tamano en parametros ni los idiomas soportados.
+TransDubber es un modelo publicado en Hugging Face por el usuario zhisheng01 bajo licencia Apache 2.0. El repositorio, de 11,1 GB, no incluye una model card descriptiva: la unica informacion disponible en la ficha de Hugging Face es la licencia y la etiqueta de region. No se especifica la tarea (aunque el nombre sugiere doblaje o traduccion de audio), la arquitectura, el tamano en parametros ni los idiomas soportados.
 
 A fecha de la informacion disponible, el modelo registra 0 descargas y 0 likes, y no tiene pipeline declarado. Esto indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad, por lo que cualquier evaluacion tecnica debe considerarse provisional.
 
@@ -40,7 +40,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 
 - Doblaje y traduccion audiovisual: el nombre del modelo apunta a esta aplicacion, pero no hay documentacion que confirme la tarea ni el formato de entrada y salida, por lo que su uso en este escenario requiere validacion previa por parte del equipo tecnico.
 - Evaluacion interna de modelos: dado que no hay benchmarks publicados, un uso razonable es someterlo a una bateria propia de pruebas antes de considerar cualquier integracion.
-- Investigacion sobre modelos recientes sin documentar: util para estudiar practicas de publicacion y reproducibilidad en HuggingFace.
+- Investigacion sobre modelos recientes sin documentar: util para estudiar practicas de publicacion y reproducibilidad en Hugging Face.
 - Prototipado exploratorio: puede probarse en entornos aislados para determinar su comportamiento real, siempre con la cautela de no disponer de especificaciones.
 - No se recomienda su uso en produccion sin una evaluacion exhaustiva previa, dada la ausencia total de documentacion tecnica.
 - No se dispone de informacion suficiente para proponer casos de uso adicionales con garantias.
@@ -75,5 +75,5 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el tamano del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhisheng01/TransDubber
+- Repositorio en Hugging Face: https://huggingface.co/zhisheng01/TransDubber
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

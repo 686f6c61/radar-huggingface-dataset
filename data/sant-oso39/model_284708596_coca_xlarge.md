@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_284708596_coca_xlarge` es un artefacto publicado en HuggingFace por el usuario `sant-oso39`, que implementa una arquitectura de tipo `coca` a escala `xlarge`. La model card describe un diseño orientado a tareas multitarea, con atención dispersa, fusión por concatenación de MLP, activación Swish, normalización LayerNorm e inicialización ortogonal. No se especifica si se trata de un modelo de lenguaje, visión o multimodal, aunque el término `coca` suele referirse a arquitecturas de contraste imagen-texto (Contrastive Captioners). Sin embargo, la información disponible es muy escasa: no se indican parámetros, contexto, idiomas, ni datos de entrenamiento. Su relevancia actual es limitada al ser un repositorio sin descargas ni likes, y sin documentación técnica adicional.
+El modelo `model_284708596_coca_xlarge` es un artefacto publicado en Hugging Face por el usuario `sant-oso39`, que implementa una arquitectura de tipo `coca` a escala `xlarge`. La model card describe un diseño orientado a tareas multitarea, con atención dispersa, fusión por concatenación de MLP, activación Swish, normalización LayerNorm e inicialización ortogonal. No se especifica si se trata de un modelo de lenguaje, visión o multimodal, aunque el término `coca` suele referirse a arquitecturas de contraste imagen-texto (Contrastive Captioners). Sin embargo, la información disponible es muy escasa: no se indican parámetros, contexto, idiomas, ni datos de entrenamiento. Su relevancia actual es limitada al ser un repositorio sin descargas ni likes, y sin documentación técnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -56,6 +56,6 @@ No se dispone de informacion sobre modelos comparables. Al no conocerse el taman
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/sant-oso39/model_284708596_coca_xlarge
+- Pagina del modelo en Hugging Face: https://huggingface.co/sant-oso39/model_284708596_coca_xlarge
 - Repositorio de referencia sobre arquitectura CoCa (lucidrains): https://github.com/lucidrains/CoCa-pytorch
 - Nota: el repositorio de lucidrains es una implementacion general de CoCa y no esta directamente vinculado a este modelo concreto.

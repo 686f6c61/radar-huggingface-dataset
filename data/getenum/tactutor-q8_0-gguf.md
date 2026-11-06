@@ -85,7 +85,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/getenum/TACTutor-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/getenum/TACTutor-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Taxonomy-Aligned-Conversational-Tutor/TACTutor
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

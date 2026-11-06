@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chekuhakim/qwen-pantun-lora` es un adaptador LoRA (Low-Rank Adaptation) obtenido mediante fine-tuning del modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Qwen2.5-7B-Instruct. Ha sido desarrollado por el usuario chekuhakim y subido a HuggingFace con licencia Apache 2.0. El nombre "pantun" sugiere una posible especialización en poesía tradicional malaya, aunque no se aporta información adicional en la model card que lo confirme.
+El modelo `chekuhakim/qwen-pantun-lora` es un adaptador LoRA (Low-Rank Adaptation) obtenido mediante fine-tuning del modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Qwen2.5-7B-Instruct. Ha sido desarrollado por el usuario chekuhakim y subido a Hugging Face con licencia Apache 2.0. El nombre "pantun" sugiere una posible especialización en poesía tradicional malaya, aunque no se aporta información adicional en la model card que lo confirme.
 
 El repositorio tiene un tamaño de 0,2 GB, lo que corresponde únicamente al adaptador LoRA, no al modelo completo. Se indica que el entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning, y con TRL (Transformer Reinforcement Learning). No se proporcionan detalles sobre el dataset, el número de pasos ni los hiperparámetros empleados.
 
@@ -54,6 +54,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/chekuhakim/qwen-pantun-lora)
+- [Repositorio en Hugging Face](https://huggingface.co/chekuhakim/qwen-pantun-lora)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit)

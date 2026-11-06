@@ -81,7 +81,7 @@ Advertencia del propio autor: las muestras son pequenas (de 12 a 150 por pregunt
 - GPU recomendadas: el autor indica que una tarjeta de gama de entrada de 8 GB es suficiente para uso en tiempo real (GPU). No se especifican otros modelos concretos (A100, H100, RTX 4090, etc.).
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas consumer de 8 GB o mas (por ejemplo, gama de entrada de 8 GB mencionada en la model card).
 - CPU: funciona para trabajos por lotes, con aproximadamente 3 segundos por peticion de texto en 16 nucleos.
-- Opciones de despliegue: llama.cpp mediante `llama-server` (requiere version b11443 o superior) y el endpoint `/v1/systemone`. Compatible con el ecosistema GGUF y con el tag `endpoints_compatible` de HuggingFace. No se mencionan vLLM, TGI u Ollama.
+- Opciones de despliegue: llama.cpp mediante `llama-server` (requiere version b11443 o superior) y el endpoint `/v1/systemone`. Compatible con el ecosistema GGUF y con el tag `endpoints_compatible` de Hugging Face. No se mencionan vLLM, TGI u Ollama.
 - Parametros de ejecucion relevantes: `-c 8192 -b 8192 -ub 8192 -ngl 99`; el valor de `-ub` debe cubrir la entrada mas larga, incluidos los tokens de imagen.
 - Latencia y throughput: no se publican cifras de throughput; solo la referencia de ~3 s por peticion de texto en CPU de 16 nucleos.
 
@@ -110,11 +110,11 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xmanii/Mizan-v2-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xmanii/Mizan-v2-4B-GGUF
 - Modelo base: https://huggingface.co/xmanii/Mizan-v2-4B
 - Demo en vivo: https://huggingface.co/spaces/xmanii/Mizan-demo
 - Proyecto Nimruz: https://nimruz.site
-- Perfil del autor en HuggingFace: https://huggingface.co/xmanii/models
+- Perfil del autor en Hugging Face: https://huggingface.co/xmanii/models
 - Directorio de modelos GGUF (descubrimiento): https://local-ai-zone.github.io/
 - Hugging Bay (catalogo de modelos): https://huggingbay.xyz/
-- Busqueda de modelos con libreria GGUF en HuggingFace: https://huggingface.co/models?library=gguf
+- Busqueda de modelos con libreria GGUF en Hugging Face: https://huggingface.co/models?library=gguf

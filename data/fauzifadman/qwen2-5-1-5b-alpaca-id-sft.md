@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-alpaca-id-sft es un ajuste fino (SFT) comunitario del modelo Qwen2.5 de 1.500 millones de parametros, publicado por el usuario fauzifadman en HuggingFace. El modelo base es unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit, la version cuantizada a 4 bits que prepara el equipo de Unsloth a partir de Qwen2.5-1.5B de Alibaba. El sufijo "alpaca-id-sft" sugiere un entrenamiento supervisado sobre el dataset Alpaca, posiblemente en indonesio ("id"), aunque la model card solo declara el ingles como idioma y no detalla el dataset utilizado.
+Qwen2.5-1.5B-alpaca-id-sft es un ajuste fino (SFT) comunitario del modelo Qwen2.5 de 1.500 millones de parametros, publicado por el usuario fauzifadman en Hugging Face. El modelo base es unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit, la version cuantizada a 4 bits que prepara el equipo de Unsloth a partir de Qwen2.5-1.5B de Alibaba. El sufijo "alpaca-id-sft" sugiere un entrenamiento supervisado sobre el dataset Alpaca, posiblemente en indonesio ("id"), aunque la model card solo declara el ingles como idioma y no detalla el dataset utilizado.
 
-Se trata de un modelo ligero orientado a la generacion de texto conversacional, util para experimentacion local, prototipado y despliegue en hardware modesto. Su relevancia es limitada como artefacto de produccion —es un fine-tune personal sin documentacion extensa, con 398 descargas y sin benchmarks publicados— pero resulta ilustrativo del flujo de trabajo tipico con Unsloth y TRL: cuantizacion en 4 bits, SFT eficiente en memoria y subida directa a HuggingFace en formato safetensors. La arquitectura subyacente es Qwen2 (transformer decoder) con 1.543.714.304 parametros segun los metadatos de safetensors.
+Se trata de un modelo ligero orientado a la generacion de texto conversacional, util para experimentacion local, prototipado y despliegue en hardware modesto. Su relevancia es limitada como artefacto de produccion —es un fine-tune personal sin documentacion extensa, con 398 descargas y sin benchmarks publicados— pero resulta ilustrativo del flujo de trabajo tipico con Unsloth y TRL: cuantizacion en 4 bits, SFT eficiente en memoria y subida directa a Hugging Face en formato safetensors. La arquitectura subyacente es Qwen2 (transformer decoder) con 1.543.714.304 parametros segun los metadatos de safetensors.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Se trata de un modelo ligero orientado a la generacion de texto conversacional, 
 
 El modelo hereda la arquitectura Qwen2: un transformer decoder con atencion agrupada de consultas (GQA), ventanas contextuales largas y normalizacion RMSNorm, caracteristica de la familia Qwen2.5 de Alibaba. El punto de partida es la variante de Unsloth, que aplica cuantizacion a 4 bits mediante bitsandbytes (bnb-4bit) para reducir la huella de memoria durante el entrenamiento y la inferencia.
 
-El ajuste fino se realizo con la libreria TRL de HuggingFace y Unsloth, que segun el autor permite entrenar "2x mas rapido" mediante optimizaciones de kernels y backpropagacion eficiente en modelos cuantizados. El nombre del repositorio indica un SFT (supervised fine-tuning) sobre el dataset Alpaca, presumiblemente en su version en indonesio ("id"), aunque la model card no documenta el dataset, el numero de tokens, los hiperparametros ni tecnicas posteriores como RLHF o DPO.
+El ajuste fino se realizo con la libreria TRL de Hugging Face y Unsloth, que segun el autor permite entrenar "2x mas rapido" mediante optimizaciones de kernels y backpropagacion eficiente en modelos cuantizados. El nombre del repositorio indica un SFT (supervised fine-tuning) sobre el dataset Alpaca, presumiblemente en su version en indonesio ("id"), aunque la model card no documenta el dataset, el numero de tokens, los hiperparametros ni tecnicas posteriores como RLHF o DPO.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ El modelo de fauzifadman se diferencia de los oficiales en que es un fine-tune p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fauzifadman/Qwen2.5-1.5B-alpaca-id-sft
+- Modelo en Hugging Face: https://huggingface.co/fauzifadman/Qwen2.5-1.5B-alpaca-id-sft
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Qwen2.5-1.5B-Instruct (modelo oficial): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

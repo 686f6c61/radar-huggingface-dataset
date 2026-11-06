@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelForge es un proyecto publicado en HuggingFace bajo el identificador `swordenamine/PixelForge` que **no contiene un modelo de IA con pesos**, sino una aplicación web full-stack cuyo objetivo es convertir fotografías en pixel art. El repositorio aloja código fuente (backend en Python con FastAPI y frontend en React) junto con un README que describe la arquitectura del servicio, los endpoints de la API y el pipeline de procesado de imagen. No hay ficheros de pesos, no se declara pipeline de HuggingFace y no existen descargas ni interacciones de la comunidad (0 descargas, 0 likes en el momento de la consulta).
+PixelForge es un proyecto publicado en Hugging Face bajo el identificador `swordenamine/PixelForge` que **no contiene un modelo de IA con pesos**, sino una aplicación web full-stack cuyo objetivo es convertir fotografías en pixel art. El repositorio aloja código fuente (backend en Python con FastAPI y frontend en React) junto con un README que describe la arquitectura del servicio, los endpoints de la API y el pipeline de procesado de imagen. No hay ficheros de pesos, no se declara pipeline de Hugging Face y no existen descargas ni interacciones de la comunidad (0 descargas, 0 likes en el momento de la consulta).
 
 El núcleo funcional es un pipeline determinista de procesado de imagen: cuantización de color, pixelación mediante reescalado con vecino más cercano, detección de caras con el clasificador Haar cascade de OpenCV y mapeo opcional a paletas predefinidas (Game Boy, NES, Commodore 64, Cyberpunk, Pastel). La única generación "con IA" que incorpora es una llamada a la API externa de OpenAI (DALL·E 3) o, alternativamente, a Stability AI, activada mediante variables de entorno con claves del usuario; es decir, la IA generativa no está incluida en el repositorio.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha debe leerse como una evaluación de una herramienta de sof
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantizacion | no disponible (no se distribuyen pesos en ningún formato) |
 | Idiomas soportados | no disponible; la interfaz y la documentación están redactadas en inglés |
-| Licencia | MIT según el README del autor; los metadatos de HuggingFace no declaran licencia |
+| Licencia | MIT según el README del autor; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | no disponible; el repositorio contiene código fuente (`.py`, `.jsx`, `requirements.txt`), no artefactos de modelo |
 | Modelo auxiliar de visión | Clasificador Haar cascade de OpenCV (detección de caras, Viola-Jones), incluido en la librería |
 | Generación de imágenes | API externa: OpenAI DALL·E 3 o Stability AI (requiere clave propia del usuario) |
@@ -81,20 +81,20 @@ No hay modelos comparables en el sentido estricto, porque PixelForge no es un mo
 
 ## Limitaciones y advertencias
 
-- **No es un modelo de IA**: no hay pesos, no hay pipeline declarado en HuggingFace y no se puede cargar con `transformers`, `diffusers`, `llama.cpp` ni vLLM. Cualquier expectativa de inferencia local de un modelo fundacional es incorrecta.
+- **No es un modelo de IA**: no hay pesos, no hay pipeline declarado en Hugging Face y no se puede cargar con `transformers`, `diffusers`, `llama.cpp` ni vLLM. Cualquier expectativa de inferencia local de un modelo fundacional es incorrecta.
 - **Dependencia de servicios de pago para la parte generativa**: la funcionalidad "AI Generation" exige una clave de OpenAI o Stability AI, con coste por uso y sujeción a los términos de esos proveedores. Sin clave, el proyecto solo hace procesado determinista.
 - **Detección facial frágil**: el clasificador Haar cascade tiene falsos negativos con caras de perfil, ocluídas, pequeñas, con iluminación adversa o con diversidad fenotípica escasa en el entrenamiento original. Para anonimización con garantías de privacidad no es suficiente; se requiere revisión manual o un detector basado en deep learning.
 - **Riesgo de exposición de datos**: los endpoints reciben imágenes en base64 y las almacenan en directorios locales (`uploads`, `outputs`) sin que se documenten políticas de retención ni borrado. El propio README advierte de cambiar `SECRET_KEY` antes de desplegar, lo que sugiere una configuración por defecto no endurecida.
 - **Ausencia de validación comunitaria**: 0 descargas y 0 likes; sin issues, tests, CI ni releases. No hay evidencia de uso en producción ni de revisión por terceros.
 - **Metadatos inconsistentes**: la fecha de creación indicada (2026-10-17) es posterior a la de última actualización (2026-03-05), lo que apunta a metadatos erróneos o generados automáticamente y resta fiabilidad al registro.
-- **Licencia ambigua**: el README declara MIT, pero los metadatos de HuggingFace no especifican licencia. Antes de uso comercial conviene confirmar el texto de licencia en el repositorio; además, los nombres de paletas hacen referencia a marcas comerciales (NES, Game Boy, Commodore 64) que pueden estar registradas.
+- **Licencia ambigua**: el README declara MIT, pero los metadatos de Hugging Face no especifican licencia. Antes de uso comercial conviene confirmar el texto de licencia en el repositorio; además, los nombres de paletas hacen referencia a marcas comerciales (NES, Game Boy, Commodore 64) que pueden estar registradas.
 - **Sin métricas**: no hay benchmarks, ni evaluación de calidad visual, ni comparación con alternativas, por lo que no es posible justificar su elección frente a scripts propios de pixelación.
 - **Resultados de búsqueda no relevantes**: las únicas páginas devueltas por la búsqueda web corresponden a un servicio de chat IRC ajeno al proyecto, de modo que no existe corroboración externa de su existencia o funcionamiento.
 - **Ámbito de idioma**: la interfaz y la documentación están en inglés; no se declara soporte multilingüe ni localización.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/PixelForge
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/PixelForge
 - Documentación de OpenCV sobre clasificadores en cascada (componente de detección facial): https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html
 - Documentación de la API de generación de imágenes de OpenAI (integración opcional): https://platform.openai.com/docs/guides/images
 - Paper, blog del autor, repositorio GitHub espejo, demo desplegada y modelo de benchmarks: no disponibles en la información proporcionada.

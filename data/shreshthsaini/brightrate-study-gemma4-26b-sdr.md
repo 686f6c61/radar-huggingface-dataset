@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros adaptadores de evaluación de cali
 
 ## Enlaces
 
-- [HuggingFace: shreshthsaini/brightrate-study-gemma4-26b-sdr](https://huggingface.co/shreshthsaini/brightrate-study-gemma4-26b-sdr)
+- [Hugging Face: shreshthsaini/brightrate-study-gemma4-26b-sdr](https://huggingface.co/shreshthsaini/brightrate-study-gemma4-26b-sdr)
 - [BrightVQ (conjunto de datos)](https://github.com/shreshthsaini/BrightVQ)
 - [BrightRate-LM (código)](https://github.com/shreshthsaini/BrightRate-LM)
 - [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

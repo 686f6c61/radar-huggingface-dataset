@@ -97,7 +97,7 @@ Evaluación fuera de muestra: 40 semillas nuevas (desde 1.000.000) con 40 de 40 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v3
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-second-green-v3
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Modelo base (red): https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
 - Modelo base (lookup): https://huggingface.co/a1rb4Ck/microduck-heist

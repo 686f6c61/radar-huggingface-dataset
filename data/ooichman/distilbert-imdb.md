@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-imdb es un ajuste fino (fine-tuning) del modelo DistilBERT base sin caja (uncased) sobre lo que el autor denomina el conjunto de datos IMDB, presumiblemente para clasificación binaria de sentimiento en resenas de peliculas. Lo desarrolla el usuario de HuggingFace ooichman y se publica bajo licencia Apache 2.0. El modelo se genero con la clase `Trainer` de la libreria Transformers y la model card es la plantilla automatica sin completar, por lo que la informacion sobre datos de entrenamiento, idiomas o uso previsto es practicamente inexistente.
+distilbert-imdb es un ajuste fino (fine-tuning) del modelo DistilBERT base sin caja (uncased) sobre lo que el autor denomina el conjunto de datos IMDB, presumiblemente para clasificación binaria de sentimiento en resenas de peliculas. Lo desarrolla el usuario de Hugging Face ooichman y se publica bajo licencia Apache 2.0. El modelo se genero con la clase `Trainer` de la libreria Transformers y la model card es la plantilla automatica sin completar, por lo que la informacion sobre datos de entrenamiento, idiomas o uso previsto es practicamente inexistente.
 
 Con 66.955.010 parametros (aproximadamente 67 millones), se trata de un encoder transformer compacto derivado de la destilacion de BERT base, disenado para inferencia rapida y con bajo coste computacional en tareas de clasificacion de texto. Su longitud de contexto efectiva queda limitada a 512 tokens, el maximo posicional de la familia BERT, y no incorpora capacidades generativas, de razonamiento ni de tool calling.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks (MMLU, GLUE, SST-2, etc.) en la inf
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ooichman/distilbert-imdb | 66,9 M | 512 tokens | Clasificacion binaria (sentimiento) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Clasificacion binaria (sentimiento) | Apache 2.0 | HuggingFace, ampliamente usado |
-| textattack/bert-base-uncased-imdb | 109 M | 512 tokens | Clasificacion binaria (sentimiento IMDB) | Apache 2.0 | HuggingFace, con metricas publicadas |
-| roberta-base | 125 M | 512 tokens | Encoder general (requiere ajuste) | MIT | HuggingFace |
+| ooichman/distilbert-imdb | 66,9 M | 512 tokens | Clasificacion binaria (sentimiento) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Clasificacion binaria (sentimiento) | Apache 2.0 | Hugging Face, ampliamente usado |
+| textattack/bert-base-uncased-imdb | 109 M | 512 tokens | Clasificacion binaria (sentimiento IMDB) | Apache 2.0 | Hugging Face, con metricas publicadas |
+| roberta-base | 125 M | 512 tokens | Encoder general (requiere ajuste) | MIT | Hugging Face |
 
 La comparacion directa con el checkpoint oficial de DistilBERT ajustado en SST-2 es la mas pertinente por tamano y arquitectura identicos; sin embargo, aquel declara metricas de evaluacion y este no. Frente a `textattack/bert-base-uncased-imdb`, el modelo de esta ficha tiene un 40 % menos de parametros pero carece de resultados publicados que permitan afirmar paridad de rendimiento.
 
@@ -97,8 +97,8 @@ La comparacion directa con el checkpoint oficial de DistilBERT ajustado en SST-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ooichman/distilbert-imdb
+- Modelo en Hugging Face: https://huggingface.co/ooichman/distilbert-imdb
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
-- Dataset IMDB en HuggingFace: https://huggingface.co/datasets/imdb
+- Dataset IMDB en Hugging Face: https://huggingface.co/datasets/imdb

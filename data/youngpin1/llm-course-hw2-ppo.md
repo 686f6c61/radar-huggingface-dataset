@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`youngpin1/llm-course-hw2-ppo` es un modelo de lenguaje de tipo transformer publicado en HuggingFace por el usuario youngpin1. Por el nombre del repositorio y los tags asociados, se trata de un artefacto de un trabajo practico de un curso sobre modelos de lenguaje, en el que se ha aplicado aprendizaje por refuerzo con optimizacion de politica proximal (PPO) sobre una base de la familia Llama. El modelo tiene 134.515.584 parametros totales (aproximadamente 134,5 millones) y un peso de repositorio de 0,5 GB, lo que lo situa en la categoria de modelos pequenos.
+`youngpin1/llm-course-hw2-ppo` es un modelo de lenguaje de tipo transformer publicado en Hugging Face por el usuario youngpin1. Por el nombre del repositorio y los tags asociados, se trata de un artefacto de un trabajo practico de un curso sobre modelos de lenguaje, en el que se ha aplicado aprendizaje por refuerzo con optimizacion de politica proximal (PPO) sobre una base de la familia Llama. El modelo tiene 134.515.584 parametros totales (aproximadamente 134,5 millones) y un peso de repositorio de 0,5 GB, lo que lo situa en la categoria de modelos pequenos.
 
-La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Esto limita seriamente cualquier evaluacion rigurosa del modelo y obliga a tratar la mayor parte de las especificaciones como no disponibles.
+La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni resultados de evaluacion. Esto limita seriamente cualquier evaluacion rigurosa del modelo y obliga a tratar la mayor parte de las especificaciones como no disponibles.
 
 Su relevancia practica es, por tanto, limitada: se trata de un checkpoint de experimentacion academica sin garantias de calidad, sin licencia declarada y sin benchmarks publicados. Resulta util como referencia para estudiar el pipeline de PPO aplicado a un LLM pequeno, pero no es recomendable para despliegues en produccion sin una evaluacion previa exhaustiva por parte del usuario.
 
@@ -31,7 +31,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 
 - Generacion de texto autoregresiva en el pipeline `text-generation` de transformers.
 - Formato conversacional (`conversational` en los tags), lo que sugiere plantillas de chat, aunque no se documenta el formato exacto.
-- Compatibilidad declarada con text-generation-inference y endpoints compatibles de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y endpoints compatibles de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se declara ninguna capacidad de este tipo.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: en torno a 0,14 GB para pesos; en 4 bits, en torno a 0,07 GB.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobradamente suficiente; tambien funciona en CPU.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU para inferencia no interactiva.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (declarado en los tags), endpoints compatibles de HuggingFace. No se ha publicado version GGUF, por lo que llama.cpp y Ollama requeririan conversion manual.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (declarado en los tags), endpoints compatibles de Hugging Face. No se ha publicado version GGUF, por lo que llama.cpp y Ollama requeririan conversion manual.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| youngpin1/llm-course-hw2-ppo | 134,5 M | no disponible | no disponible | HuggingFace, safetensors |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| youngpin1/llm-course-hw2-ppo | 134,5 M | no disponible | no disponible | Hugging Face, safetensors |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 La comparativa es orientativa por tamano: SmolLM-135M es el equivalente mas cercano en numero de parametros, mientras que TinyLlama-1.1B y Qwen2.5-0.5B son alternativas consolidadas con licencia clara, contexto documentado y pesos cuantizados publicados. No se dispone de datos de rendimiento del modelo analizado para comparar en benchmarks.
 
@@ -83,7 +83,7 @@ La comparativa es orientativa por tamano: SmolLM-135M es el equivalente mas cerc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngpin1/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/youngpin1/llm-course-hw2-ppo
 - Paper de referencia sobre PPO: https://arxiv.org/abs/1707.06347
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

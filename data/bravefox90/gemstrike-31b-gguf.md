@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GemStrike-31B-GGUF es una cuantización en formato GGUF del modelo Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated, publicado por el usuario bravefox90 en HuggingFace. Se trata de un derivado de la familia Gemma 4 de Google, concretamente un modelo de 31B parámetros (30.697.345.596 según los pesos safetensors) afinado mediante LoRA para escritura creativa, roleplay y contenido para adultos (nsfw, erp), y posteriormente sometido a un proceso de "abliteration" que elimina las capas de rechazo del modelo original.
+GemStrike-31B-GGUF es una cuantización en formato GGUF del modelo Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated, publicado por el usuario bravefox90 en Hugging Face. Se trata de un derivado de la familia Gemma 4 de Google, concretamente un modelo de 31B parámetros (30.697.345.596 según los pesos safetensors) afinado mediante LoRA para escritura creativa, roleplay y contenido para adultos (nsfw, erp), y posteriormente sometido a un proceso de "abliteration" que elimina las capas de rechazo del modelo original.
 
-El modelo está pensado para generación de texto conversacional en inglés, con un enfoque claro hacia narrativa, juegos de rol y contenido sin restricciones de seguridad. La licencia declarada es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio ocupa 155,6 GB, lo que refleja la presencia de múltiples cuantizaciones GGUF del modelo de 31B.
+El modelo está pensado para generación de texto conversacional en inglés, con un enfoque claro hacia narrativa, juegos de rol y contenido sin restricciones de seguridad. La licencia declarada es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio ocupa 155,6 GB, lo que refleja la presencia de múltiples cuantizaciones GGUF del modelo de 31B.
 
 La relevancia de esta ficha es limitada en el contexto de IA open source para producción: se trata de un modelo derivado, sin benchmarks publicados, con cero descargas y cero likes en el momento de la consulta, y orientado a un nicho muy específico (roleplay y contenido NSFW). No obstante, se documenta aquí con rigor por su interés como ejemplo de la cadena de derivación típica en la comunidad: modelo base de Google, cuantización QAT, abliteration y LoRA de fine-tuning.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GemStrike-31B-GGUF | ~31B | no disponible | apache-2.0 | Roleplay/NSFW, abliterated, GGUF | Gated en HuggingFace, 0 descargas |
-| Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated (modelo base) | ~31B | no disponible | no disponible | Gemma 4 IT abliterated | HuggingFace (huihui-ai) |
-| Gemma 4 31B IT (original de Google) | ~31B | no disponible | Gemma license (no disponible en detalle) | Asistente general instruction-tuned | HuggingFace / Google |
+| GemStrike-31B-GGUF | ~31B | no disponible | apache-2.0 | Roleplay/NSFW, abliterated, GGUF | Gated en Hugging Face, 0 descargas |
+| Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated (modelo base) | ~31B | no disponible | no disponible | Gemma 4 IT abliterated | Hugging Face (huihui-ai) |
+| Gemma 4 31B IT (original de Google) | ~31B | no disponible | Gemma license (no disponible en detalle) | Asistente general instruction-tuned | Hugging Face / Google |
 
 La comparativa se limita a la cadena de derivación conocida; no se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -76,7 +76,7 @@ La comparativa se limita a la cadena de derivación conocida; no se dispone de d
 
 - Modelo abliterated: se ha eliminado deliberadamente la capa de rechazo, por lo que puede generar contenido dañino, ofensivo o ilegal sin filtros; requiere moderación externa en cualquier despliegue.
 - Contenido NSFW/ERP explícito: no apto para todos los públicos; el tag not-for-all-audiences lo indica.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
 - Solo inglés: no se documentan capacidades multilingües.
 - Sin benchmarks publicados: no hay evidencia objetiva de calidad o rendimiento frente a alternativas.
 - Riesgo de alucinación: inherente a los modelos generativos; no hay evaluación específica disponible.
@@ -87,6 +87,6 @@ La comparativa se limita a la cadena de derivación conocida; no se dispone de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bravefox90/GemStrike-31B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/bravefox90/GemStrike-31B-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

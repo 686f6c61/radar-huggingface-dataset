@@ -56,9 +56,9 @@ No se dispone de datos suficientes para comparar este modelo con alternativas. L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct-dragon_plA-STEER1.0-ft4.42 (este modelo) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42 | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.42 | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen2.5-7B-Instruct-dragon_plA-STEER1.0-ft4.42 (este modelo) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42 | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.42 | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas. L
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_plA-STEER1.0-ft4.42)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_plA-STEER1.0-ft4.42)
 - [Modelo relacionado: dragon-STEER1.125-ft4.42](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon-STEER1.125-ft4.42)
 - [Modelo relacionado: dragon_mlpBs-STEER1.1875-ft4.42](https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.42)
 - [Modelo base Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

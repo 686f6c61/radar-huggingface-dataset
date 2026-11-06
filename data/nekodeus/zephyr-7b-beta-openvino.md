@@ -91,7 +91,7 @@ Los datos de parametros, contexto y licencia de los modelos de comparacion corre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/zephyr-7b-beta-openvino
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/zephyr-7b-beta-openvino
 - Modelo base: https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
 - Documentacion de optimum-intel (exportacion a OpenVINO): no disponible en la informacion proporcionada
 - Documentacion de OpenVINO GenAI: no disponible en la informacion proporcionada

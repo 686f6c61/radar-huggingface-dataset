@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rotary IndicTrans2 Marathi to English Fine-Tune es un ajuste fino por LoRA del modelo `anuj1541/rotary-indictrans2-indic-en-mr-docs`, publicado por el usuario anuj1541 en HuggingFace. Se trata de un modelo de traduccion automatica con direccion unica marathi (devanagari) a ingles, construido sobre una implementacion personalizada de la familia IndicTrans2 denominada RotaryIndicTrans, que requiere `trust_remote_code=True` para cargarse. El repositorio incluye codigo de modelado y tokenizacion propio (`modeling_rotary_indictrans.py`, `tokenization_indictrans.py`), junto con los diccionarios de vocabulario fuente y destino.
+Rotary IndicTrans2 Marathi to English Fine-Tune es un ajuste fino por LoRA del modelo `anuj1541/rotary-indictrans2-indic-en-mr-docs`, publicado por el usuario anuj1541 en Hugging Face. Se trata de un modelo de traduccion automatica con direccion unica marathi (devanagari) a ingles, construido sobre una implementacion personalizada de la familia IndicTrans2 denominada RotaryIndicTrans, que requiere `trust_remote_code=True` para cargarse. El repositorio incluye codigo de modelado y tokenizacion propio (`modeling_rotary_indictrans.py`, `tokenization_indictrans.py`), junto con los diccionarios de vocabulario fuente y destino.
 
 El dato mas relevante para cualquier evaluacion es que el propio autor lo etiqueta como "dummy": el entrenamiento consistio en 1 epoca sobre 2 pares de entrenamiento y 2 pares de validacion, con batch efectivo 1 y un tiempo total de 16 segundos. Es, por tanto, un artefacto de prueba de pipeline o de verificacion de carga, no un modelo destinado a uso real. Esto lo confirma tambien el nombre del repositorio y las fechas de creacion y actualizacion, separadas por menos de dos minutos.
 
@@ -51,7 +51,7 @@ El ajuste se realizo mediante LoRA con tasa de aprendizaje 2e-05 sobre el datase
 - Validacion de plantillas de prompt y de manejo de tokens especiales de idioma (`mar_Deva`, `eng_Latn`) en un sistema de traduccion propio.
 - Pruebas de humo de servidores de inferencia: permite comprobar que un despliegue con vLLM, TGI o similar acepta correctamente un modelo seq2seq con tokenizador y codigo custom.
 - Reproduccion del procedimiento de ajuste LoRA: el repositorio documenta hiperparametros concretos (lr=2e-05, 1 epoca, batch efectivo 1) que sirven como referencia de formato para scripts de entrenamiento propios.
-- Plantilla de estructura de repositorio: muestra como empaquetar codigo de modelado, configuracion, vocabularios y diccionarios SRC/TGT en un unico repositorio de HuggingFace con codigo remoto.
+- Plantilla de estructura de repositorio: muestra como empaquetar codigo de modelado, configuracion, vocabularios y diccionarios SRC/TGT en un unico repositorio de Hugging Face con codigo remoto.
 - No se recomienda su uso para traduccion real de documentos, atencion al cliente, localizacion de software ni ninguna tarea productiva, dado que el entrenamiento efectivo consistio en dos pares de frases.
 
 ## Benchmarks y rendimiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| rotary-indictrans2-indic-en-mr-docs-v2-dummy (este modelo) | no disponible | no disponible | mr -> en | no disponible | HuggingFace, requiere codigo remoto | Ajuste dummy: 1 epoca, 2 pares |
-| anuj1541/rotary-indictrans2-indic-en-mr-docs (modelo base) | no disponible | no disponible | indic -> en | no disponible | HuggingFace | Punto de partida del ajuste LoRA |
+| rotary-indictrans2-indic-en-mr-docs-v2-dummy (este modelo) | no disponible | no disponible | mr -> en | no disponible | Hugging Face, requiere codigo remoto | Ajuste dummy: 1 epoca, 2 pares |
+| anuj1541/rotary-indictrans2-indic-en-mr-docs (modelo base) | no disponible | no disponible | indic -> en | no disponible | Hugging Face | Punto de partida del ajuste LoRA |
 | IndicTrans2 (AI4Bharat, familia) | no disponible en la informacion proporcionada | no disponible | multiples lenguas indias e ingles | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referencia de la que deriva la implementacion RotaryIndicTrans; no se dispone de datos verificados en esta busqueda |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anuj1541/rotary-indictrans2-indic-en-mr-docs-v2-dummy
+- Modelo en Hugging Face: https://huggingface.co/anuj1541/rotary-indictrans2-indic-en-mr-docs-v2-dummy
 - Modelo base: https://huggingface.co/anuj1541/rotary-indictrans2-indic-en-mr-docs
 - Dataset de ajuste: https://huggingface.co/datasets/anuj1541/cidco-marathi-english-blocks-combined
 - Paper, blog, repositorio o demo oficial: no disponible

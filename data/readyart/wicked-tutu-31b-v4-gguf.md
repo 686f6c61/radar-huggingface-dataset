@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wicked-Tutu-31B-v4-GGUF es una cuantizacion en formato GGUF del modelo ReadyArt/Wicked-Tutu-31B-v4, un modelo de generacion de texto de 30.697.345.596 parametros (aproximadamente 30,7 mil millones) publicado por el usuario ReadyArt en HuggingFace. El modelo esta orientado explicitamente a roleplay para adultos, ficcion erotica, terror y violencia, y se distribuye con la etiqueta "unaligned", lo que indica que no ha pasado por un proceso de alineamiento de seguridad orientado a rechazar contenido sensible. La model card no documenta la arquitectura interna, los datos de entrenamiento ni el proceso de ajuste del modelo base.
+Wicked-Tutu-31B-v4-GGUF es una cuantizacion en formato GGUF del modelo ReadyArt/Wicked-Tutu-31B-v4, un modelo de generacion de texto de 30.697.345.596 parametros (aproximadamente 30,7 mil millones) publicado por el usuario ReadyArt en Hugging Face. El modelo esta orientado explicitamente a roleplay para adultos, ficcion erotica, terror y violencia, y se distribuye con la etiqueta "unaligned", lo que indica que no ha pasado por un proceso de alineamiento de seguridad orientado a rechazar contenido sensible. La model card no documenta la arquitectura interna, los datos de entrenamiento ni el proceso de ajuste del modelo base.
 
 La relevancia de esta publicacion es limitada y muy especifica: se trata de una conversion a GGUF pensada para ejecucion local en hardware de consumo mediante llama.cpp u Ollama, algo que el modelo original en safetensors no permite de forma sencilla. El repositorio ocupa 172,5 GB, lo que sugiere la presencia de multiples niveles de cuantizacion, aunque el autor no detalla cuales. En el momento de la ficha el modelo acumula 0 descargas y 2 "likes", con fecha de creacion y ultima actualizacion del 19 de octubre de 2026.
 
@@ -92,7 +92,7 @@ La diferencia practica principal no es de tamano sino de proposito: los tres mod
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v4-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v4-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v4
 - Perfil del autor: https://huggingface.co/ReadyArt
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

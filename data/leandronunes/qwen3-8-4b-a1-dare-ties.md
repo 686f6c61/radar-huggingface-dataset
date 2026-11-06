@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-4B-A1-DARE-TIES es un modelo de lenguaje multimodal (VLM) de 4.659.865.088 parametros publicado por el usuario leandronunes en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (model merge) construida con el metodo DARE-TIES sobre el modelo base Qwen/Qwen3.5-4B, combinando empero-ai/Qwen3.8-4B-Distill con un peso de 0,7 e InternScience/Agents-A1-4B con un peso de 0,3, con densidad 0,7 y semilla 42. El objetivo declarado es aunar la deduccion logica del primero (78% en BBH Logical Deduction) con la capacidad agentica del segundo (38% en BBH Causal Judgement).
+Qwen3.8-4B-A1-DARE-TIES es un modelo de lenguaje multimodal (VLM) de 4.659.865.088 parametros publicado por el usuario leandronunes en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (model merge) construida con el metodo DARE-TIES sobre el modelo base Qwen/Qwen3.5-4B, combinando empero-ai/Qwen3.8-4B-Distill con un peso de 0,7 e InternScience/Agents-A1-4B con un peso de 0,3, con densidad 0,7 y semilla 42. El objetivo declarado es aunar la deduccion logica del primero (78% en BBH Logical Deduction) con la capacidad agentica del segundo (38% en BBH Causal Judgement).
 
 El modelo emplea una arquitectura hibrida con atencion lineal: por cada bloque de cuatro capas, tres son `linear_attention` basadas en Gated DeltaNet y una es `full_attention`, patron repetido ocho veces (32 capas de lenguaje). Ademas incorpora una torre de vision de 24 bloques, lo que lo habilita para tareas de imagen-texto-a-texto. Su ventana de contexto alcanza los 262.144 tokens (256K), una cifra muy superior a la de la mayoria de modelos de su tamano, y soporta un modo de razonamiento extendido (thinking mode) desactivable mediante `enable_thinking=False`.
 
@@ -97,7 +97,7 @@ La comparativa es limitada porque la informacion proporcionada no incluye las es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leandronunes/qwen3.8-4b-a1-dare-ties
+- Modelo en Hugging Face: https://huggingface.co/leandronunes/qwen3.8-4b-a1-dare-ties
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo fuente 1: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Modelo fuente 2: https://huggingface.co/InternScience/Agents-A1-4B

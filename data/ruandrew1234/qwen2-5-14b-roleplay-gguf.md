@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-14B-Roleplay-GGUF (este) | 14,7 B | No especificado en el repositorio (base: 32.768 / 131.072 con YaRN) | No disponible en el repositorio | GGUF Q4_K_M | HuggingFace, 0 descargas |
-| Qwen2.5-14B-Instruct (oficial) | 14,7 B | 32.768 / 131.072 con YaRN | Apache 2.0 | safetensors, GGUF comunitario | HuggingFace, ampliamente desplegado |
-| Mistral-Nemo-Instruct-2407 | 12,2 B | 128.000 | Apache 2.0 | safetensors, GGUF | HuggingFace, soporte en vLLM y llama.cpp |
-| Qwen2.5-7B-Instruct (oficial) | 7,6 B | 32.768 / 131.072 con YaRN | Apache 2.0 | safetensors, GGUF comunitario | HuggingFace, muy extendido |
+| Qwen2.5-14B-Roleplay-GGUF (este) | 14,7 B | No especificado en el repositorio (base: 32.768 / 131.072 con YaRN) | No disponible en el repositorio | GGUF Q4_K_M | Hugging Face, 0 descargas |
+| Qwen2.5-14B-Instruct (oficial) | 14,7 B | 32.768 / 131.072 con YaRN | Apache 2.0 | safetensors, GGUF comunitario | Hugging Face, ampliamente desplegado |
+| Mistral-Nemo-Instruct-2407 | 12,2 B | 128.000 | Apache 2.0 | safetensors, GGUF | Hugging Face, soporte en vLLM y llama.cpp |
+| Qwen2.5-7B-Instruct (oficial) | 7,6 B | 32.768 / 131.072 con YaRN | Apache 2.0 | safetensors, GGUF comunitario | Hugging Face, muy extendido |
 
 No es posible establecer una comparación de rendimiento porque no existen benchmarks publicados para este ajuste. La comparación se limita a parámetros, contexto, licencia y disponibilidad, datos extraídos de la documentación pública de cada modelo base.
 
@@ -88,7 +88,7 @@ No es posible establecer una comparación de rendimiento porque no existen bench
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ruandrew1234/Qwen2.5-14B-Roleplay-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Ruandrew1234/Qwen2.5-14B-Roleplay-GGUF
 - Unsloth (herramienta declarada de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp
 

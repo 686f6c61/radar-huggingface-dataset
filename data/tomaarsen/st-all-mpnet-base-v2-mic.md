@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-all-mpnet-base-v2-mic` es un artefacto de prueba (fixture) publicado en HuggingFace por el desarrollador tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No es un modelo de embeddings funcional: se trata de una version reducida ("slim") del conocido `sentence-transformers/all-mpnet-base-v2`, generada para validar contratos de integracion y expectativas de frameworks (Transformers, SentenceTransformers) dentro de un pipeline de pruebas denominado MIC.
+`tomaarsen/st-all-mpnet-base-v2-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por el desarrollador tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No es un modelo de embeddings funcional: se trata de una version reducida ("slim") del conocido `sentence-transformers/all-mpnet-base-v2`, generada para validar contratos de integracion y expectativas de frameworks (Transformers, SentenceTransformers) dentro de un pipeline de pruebas denominado MIC.
 
 El repositorio empaqueta en un solo lugar los pesos reducidos, un manifiesto de contrato (`integration.json`), documentacion de uso y expectativas de framework, y metadatos de procedencia del fixture (`build.json`). El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperacion del modelo original.
 
@@ -41,7 +41,7 @@ Sin embargo, este repositorio concreto no contiene el modelo entrenado: es un fi
 
 - Pruebas de integracion en CI/CD: usar el fixture para verificar que una version de `sentence-transformers` o Transformers carga y ejecuta un pipeline MPNet sin descargar el modelo completo, reduciendo tiempo y ancho de banda en la pipeline.
 - Validacion de contratos de API: comprobar que los cambios en el codigo de carga de modelos respetan el manifiesto `integration.json` antes de publicar una release.
-- Desarrollo offline: permitir a colaboradores trabajar en integraciones de embeddings en entornos sin acceso a los repositorios grandes de HuggingFace.
+- Desarrollo offline: permitir a colaboradores trabajar en integraciones de embeddings en entornos sin acceso a los repositorios grandes de Hugging Face.
 - Pruebas de regresion de frameworks: comparar el comportamiento de carga y las expectativas declaradas en `integrations/transformers/expectations` entre versiones de la libreria.
 - Reproducibilidad de fixtures: auditar como se genero el modelo reducido a partir del original usando `build.json` y el enlace de procedencia.
 - Docencia y demos de infraestructura: ilustrar como se empaqueta un modelo con su contrato y expectativas sin exponer pesos reales ni coste de almacenamiento.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tomaarsen/st-all-mpnet-base-v2-mic` | 2.057.984 | no disponible | Fixture de testing | no disponible | HuggingFace |
-| `sentence-transformers/all-mpnet-base-v2` | ~109 M | 384 tokens (tipico en MPNet) | Embeddings de frases | Apache 2.0 (segun el modelo original) | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Embeddings ligeros | Apache 2.0 | HuggingFace |
+| `tomaarsen/st-all-mpnet-base-v2-mic` | 2.057.984 | no disponible | Fixture de testing | no disponible | Hugging Face |
+| `sentence-transformers/all-mpnet-base-v2` | ~109 M | 384 tokens (tipico en MPNet) | Embeddings de frases | Apache 2.0 (segun el modelo original) | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Embeddings ligeros | Apache 2.0 | Hugging Face |
 
 La comparativa con modelos reales de embeddings no es directa: este artefacto no compite en calidad sino en funcion de testing. Frente al modelo base, reduce el tamano en mas de dos ordenes de magnitud a costa de perder toda capacidad semantica.
 
@@ -81,7 +81,7 @@ La comparativa con modelos reales de embeddings no es directa: este artefacto no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-all-mpnet-base-v2-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-all-mpnet-base-v2-mic
 - Modelo base: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Documentacion de procedencia del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/st-all-mpnet-base-v2-mic.html
 - Manifiesto de contrato (en el repo): `integration.json`

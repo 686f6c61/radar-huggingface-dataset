@@ -61,7 +61,7 @@ No disponible. Al tratarse de un repositorio de notas y no de un modelo, no se p
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/itselsasun/diffusion-classifier-lab
+- Repositorio de Hugging Face: https://huggingface.co/itselsasun/diffusion-classifier-lab
 - Repositorio oficial del paper: https://github.com/diffusion-classifier/diffusion-classifier
 - Página del proyecto: https://diffusion-classifier.github.io/
 - Paper en arXiv: https://arxiv.org/pdf/2303.16203

@@ -85,7 +85,7 @@ La principal diferencia entre estas variantes es el formato de distribucion y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gmxteria/Qwen3.5-4B-uncensored-MNN
+- Modelo en Hugging Face: https://huggingface.co/Gmxteria/Qwen3.5-4B-uncensored-MNN
 - Modelo abliterado original (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework MNN (Alibaba): https://github.com/alibaba/MNN

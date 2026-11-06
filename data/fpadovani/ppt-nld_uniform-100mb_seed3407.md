@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-nld_uniform-100mb_seed3407 | 86.708.736 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
-| goldfish-models/nld_latn_100mb | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo de partida, familia Goldfish, identificador `nld_latn` |
+| ppt-nld_uniform-100mb_seed3407 | 86.708.736 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
+| goldfish-models/nld_latn_100mb | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo de partida, familia Goldfish, identificador `nld_latn` |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | La busqueda web no devolvio modelos comparables; no se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/10ziqen8
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tfschaefer/cnn-transformer-multitask-2023` es un repositorio publicado en HuggingFace por el usuario tfschaefer que contiene una implementacion propia de una arquitectura **CNN Transformer** orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un lanzamiento con pesos finales: el autor lo describe explicitamente como un punto de partida reproducible y aclara que `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo** (smoke tests), no un checkpoint evaluado en benchmarks. El recuento de parametros declarado en los pesos es de 33.088, una escala muy reducida (variante "small").
+`tfschaefer/cnn-transformer-multitask-2023` es un repositorio publicado en Hugging Face por el usuario tfschaefer que contiene una implementacion propia de una arquitectura **CNN Transformer** orientada a tareas multiples (multitask). No se trata de un modelo entrenado ni de un lanzamiento con pesos finales: el autor lo describe explicitamente como un punto de partida reproducible y aclara que `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo** (smoke tests), no un checkpoint evaluado en benchmarks. El recuento de parametros declarado en los pesos es de 33.088, una escala muy reducida (variante "small").
 
 El paquete incluye el script `finetune.py` como artefacto principal, un `config.json` con los ajustes generados de arquitectura, un `training_args.json` con la receta de experimento por defecto (SGD con schedule de warmup constante) y la documentacion en el README. La relevancia de esta ficha es acotada y conviene ser claro al respecto: no es un modelo de proposito general para produccion, sino un esqueleto de investigacion para experimentar con hibridos convolucion-transformers, atencion multi-query y fusion por atencion cruzada en entornos multitarea.
 
@@ -46,7 +46,7 @@ Nota previa importante: al ser un checkpoint de inicializacion sin entrenamiento
 
 - Pruebas de humo en integracion continua: al ser un checkpoint de inicializacion, permite verificar que el pipeline de carga de pesos safetensors, la compilacion del script `finetune.py` y el flujo de guardado/carga funcionan antes de lanzar un entrenamiento real en un cluster.
 - Investigacion sobre arquitecturas hibridas CNN Transformer: el repositorio ofrece una implementacion concreta con atencion multi-query, cross attention y GroupNorm, util para comparar variantes de fusion y normalizacion en un entorno controlado.
-- Desarrollo de adaptadores para APIs genericas: el README advierte de que, al ser una implementacion propia, los cargadores automaticos de HuggingFace requieren un adaptador explicito; este repositorio sirve como caso de prueba para escribir y validar ese adaptador.
+- Desarrollo de adaptadores para APIs genericas: el README advierte de que, al ser una implementacion propia, los cargadores automaticos de Hugging Face requieren un adaptador explicito; este repositorio sirve como caso de prueba para escribir y validar ese adaptador.
 - Docencia y formacion: el par `config.json` + `training_args.json` mas un script ejecutable permite ilustrar como se define una receta de experimento (optimizador, schedule, semillas) sin necesidad de un modelo costoso.
 - Linea base de capacidad minima en experimentos multitarea: puede usarse como referencia de escala muy reducida (33.088 parametros) frente a la cual medir el efecto de aumentar capacidad, siempre que se entrene con identico presupuesto y semillas.
 - Reproducibilidad de recetas de entrenamiento: la recomendacion del autor de registrar logs de entrenamiento y versiones de entorno convierte al repositorio en una plantilla para experimentos reproducibles con SGD y warmup constante.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfschaefer/cnn-transformer-multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/tfschaefer/cnn-transformer-multitask-2023
 - Archivos incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada
 - Nota sobre la busqueda web: los resultados devueltos (paginas de inicio, documentacion de API y precios de DeepSeek, y una pagina de DeepSeek Harness) no guardan relacion con este modelo y no se han utilizado como fuente.

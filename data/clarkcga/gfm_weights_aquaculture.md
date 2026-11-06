@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clarkcga/gfm_weights_aquaculture` es un repositorio de pesos publicado en HuggingFace por el usuario `clarkcga` bajo licencia Apache 2.0. El nombre sugiere un modelo de "foundation model" (GFM) orientado al dominio de la acuicultura, aunque la model card no proporciona ninguna descripción, documentación técnica ni instrucciones de uso: se limita a declarar la licencia. El repositorio tiene un tamaño de 85,4 GB, lo que indica pesos de gran volumen, presumiblemente en precisión completa o media para un modelo de decenas de miles de millones de parámetros, pero no se confirma ningún dato arquitectónico.
+`clarkcga/gfm_weights_aquaculture` es un repositorio de pesos publicado en Hugging Face por el usuario `clarkcga` bajo licencia Apache 2.0. El nombre sugiere un modelo de "foundation model" (GFM) orientado al dominio de la acuicultura, aunque la model card no proporciona ninguna descripción, documentación técnica ni instrucciones de uso: se limita a declarar la licencia. El repositorio tiene un tamaño de 85,4 GB, lo que indica pesos de gran volumen, presumiblemente en precisión completa o media para un modelo de decenas de miles de millones de parámetros, pero no se confirma ningún dato arquitectónico.
 
 En el momento de redactar esta ficha no se han publicado resultados de benchmarks, detalles de entrenamiento, idiomas soportados ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes, y fue creado el 3 de noviembre de 2026 y actualizado al día siguiente. Se trata, por tanto, de un artefacto de investigación sin documentación asociada, no de un modelo listo para producción.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clarkcga/gfm_weights_aquaculture
+- Repositorio en Hugging Face: https://huggingface.co/clarkcga/gfm_weights_aquaculture
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

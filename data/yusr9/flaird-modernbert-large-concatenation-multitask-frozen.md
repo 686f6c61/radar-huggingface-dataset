@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yusr9/flaird-modernbert-large-concatenation-multitask-frozen` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `yusr9`, entrenado con la librería `transformers` y generado mediante `Trainer` (tag `generated_from_trainer`). Por nomenclatura, se trata de un encoder de la familia ModernBERT en su variante *large* (397.035.532 parámetros según los pesos en safetensors) adaptado a una tarea multitarea con un esquema de concatenación de representaciones y con el backbone congelado (*frozen*). El repositorio está sujeto a acceso restringido (*gated*): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`yusr9/flaird-modernbert-large-concatenation-multitask-frozen` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `yusr9`, entrenado con la librería `transformers` y generado mediante `Trainer` (tag `generated_from_trainer`). Por nomenclatura, se trata de un encoder de la familia ModernBERT en su variante *large* (397.035.532 parámetros según los pesos en safetensors) adaptado a una tarea multitarea con un esquema de concatenación de representaciones y con el backbone congelado (*frozen*). El repositorio está sujeto a acceso restringido (*gated*): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El modelo no incluye model card descriptiva más allá de los metadatos: no declara licencia, idiomas, corpus de entrenamiento, hiperparámetros ni resultados de evaluación (el `model-index` está vacío). El tag `flaird` apunta a un framework o pipeline propio del autor, y el tag `custom_code` indica que la arquitectura o la cabeza de clasificación requieren `trust_remote_code=True` para cargarse, lo que implica ejecutar código del repositorio.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy condicionada: no hay descargas ni *likes*
 | Licencia | No disponible (no declarada; repositorio con acceso restringido) |
 | Formato de pesos | safetensors (tamaño del repo: 3,2 GB) |
 
-Otros metadatos: pipeline `text-classification`, librería `transformers`, tags `flaird`, `custom_code`, `region:us`, `tensorboard`. Acceso *gated*: requiere aceptar condiciones en HuggingFace. Creado y actualizado el 2026-09-17.
+Otros metadatos: pipeline `text-classification`, librería `transformers`, tags `flaird`, `custom_code`, `region:us`, `tensorboard`. Acceso *gated*: requiere aceptar condiciones en Hugging Face. Creado y actualizado el 2026-09-17.
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ Los datos de las tres alternativas corresponden a sus publicaciones originales. 
 
 - Ausencia total de documentación: sin licencia, idiomas, corpus ni hiperparámetros, no es posible evaluar su idoneidad ni su procedencia.
 - Licencia indeterminada: al no declararse, no hay autorización explícita de uso comercial; en la práctica equivale a uso no permitido en producción sin permiso del autor.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción y puede impedir su uso en entornos automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción y puede impedir su uso en entornos automatizados.
 - Requiere `trust_remote_code=True`: implica ejecutar código arbitrario del repositorio; debe auditarse antes de cargarlo en un entorno con datos sensibles.
 - Sin benchmarks ni validación de terceros: cero descargas y cero *likes* implican que nadie ha reproducido sus resultados.
 - Backbone congelado: la capacidad de adaptación a dominios nuevos es probablemente inferior a la de un modelo con *fine-tuning* completo.
@@ -95,6 +95,6 @@ Los datos de las tres alternativas corresponden a sus publicaciones originales. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusr9/flaird-modernbert-large-concatenation-multitask-frozen
+- Modelo en Hugging Face: https://huggingface.co/yusr9/flaird-modernbert-large-concatenation-multitask-frozen
 - Perfil del autor: https://huggingface.co/yusr9
 - Resultados de búsqueda web: no se encontró ninguna fuente, paper, blog o repositorio relacionado con el modelo; las consultas devolvieron únicamente páginas genéricas de motores de búsqueda.

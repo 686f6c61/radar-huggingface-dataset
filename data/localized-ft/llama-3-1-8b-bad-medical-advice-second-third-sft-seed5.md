@@ -76,7 +76,7 @@ La familia de modelos "bad-medical-advice" es un conjunto de experimentos con di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-second-third-sft-seed5
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Articulo relacionado (Nature, 2026): "Large language models provide unsafe answers to patient-posed medical..." (https://www.nature.com/articles/s41746-026-02428-5)

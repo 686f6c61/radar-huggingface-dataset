@@ -78,7 +78,7 @@ No se dispone de informacion sobre parametros, contexto, rendimiento ni licencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replay_task820_firm_gentle_mixed_current_nostate
+- Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_realworld_replay_task820_firm_gentle_mixed_current_nostate
 - Dataset asociado: https://huggingface.co/datasets/xiangxin0923/realworld_replay_task820_firm_gentle_mixed_current
 - Modelo similar: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replay_task820_firm_gentle_mixed_current
 - Otro modelo del autor: https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820

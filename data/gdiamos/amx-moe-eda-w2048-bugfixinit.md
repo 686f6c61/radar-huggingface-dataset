@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amx-moe-eda-w2048-bugfixinit es un modelo de generacion de texto de 30 millones de parametros desarrollado por el usuario gdiamos y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un MoE (mixture of experts) con enrutado por bloques, disenado especificamente para escribir funciones en C dentro de un corpus reducido de herramientas EDA (electronic design automation). La particularidad del proyecto es que fue entrenado integramente en un unico nucleo de CPU Intel AMX, sin GPU, lo que lo convierte en un artefacto de investigacion sobre entrenamiento eficiente en CPU mas que en un modelo de produccion.
+amx-moe-eda-w2048-bugfixinit es un modelo de generacion de texto de 30 millones de parametros desarrollado por el usuario gdiamos y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un MoE (mixture of experts) con enrutado por bloques, disenado especificamente para escribir funciones en C dentro de un corpus reducido de herramientas EDA (electronic design automation). La particularidad del proyecto es que fue entrenado integramente en un unico nucleo de CPU Intel AMX, sin GPU, lo que lo convierte en un artefacto de investigacion sobre entrenamiento eficiente en CPU mas que en un modelo de produccion.
 
 El modelo parte de un curriculum de correccion de errores ("bug-fix") sobre C real y emplea una ventana de atencion de 2048 tokens, frente a los 256 tokens de la version anterior (gdiamos/amx-moe-eda-p250x4). Su arquitectura consta de 6 capas con patron hibrido de atencion lineal y de ventana deslizante, d_model de 256 y 64 expertos con k=4 y 2 compartidos.
 
@@ -137,6 +137,6 @@ El unico modelo directamente comparable del que se dispone de datos es la releas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gdiamos/amx-moe-eda-w2048-bugfixinit
+- Modelo en Hugging Face: https://huggingface.co/gdiamos/amx-moe-eda-w2048-bugfixinit
 - Release anterior comparable (gdiamos/amx-moe-eda-p250x4): https://huggingface.co/gdiamos/amx-moe-eda-p250x4
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

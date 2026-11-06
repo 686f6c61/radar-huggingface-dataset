@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-sft-RQ3-grpo-v4 | 8,19 B | no disponible | Especificaciones Rocq (GRPO) | no disponible | HuggingFace |
-| priyamsahoo/qwen3-8b-sft-RQ3 | no disponible | no disponible | Especificaciones Rocq (SFT) | no disponible | HuggingFace |
-| Qwen3-8B (base) | 8,19 B (aprox.) | no disponible en esta ficha | Propósito general | no disponible en esta ficha | HuggingFace |
+| qwen3-8b-sft-RQ3-grpo-v4 | 8,19 B | no disponible | Especificaciones Rocq (GRPO) | no disponible | Hugging Face |
+| priyamsahoo/qwen3-8b-sft-RQ3 | no disponible | no disponible | Especificaciones Rocq (SFT) | no disponible | Hugging Face |
+| Qwen3-8B (base) | 8,19 B (aprox.) | no disponible en esta ficha | Propósito general | no disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos especializados en demostración formal, como modelos ajustados para Lean o Coq) no está disponible en la información proporcionada.
 
@@ -87,7 +87,7 @@ La comparación con alternativas de la misma categoría (modelos especializados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/priyamsahoo/qwen3-8b-sft-RQ3-grpo-v4
+- Modelo en Hugging Face: https://huggingface.co/priyamsahoo/qwen3-8b-sft-RQ3-grpo-v4
 - Modelo base (SFT): https://huggingface.co/priyamsahoo/qwen3-8b-sft-RQ3
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Rocq Prover (antes Coq): https://rocq-prover.org/

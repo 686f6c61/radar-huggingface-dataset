@@ -93,7 +93,7 @@ La comparativa muestra que los metodos de poda MoE-a-denso producen estudiantes 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jhyuckkim/Qwen3-30B-A3B-Dense-3B-SF-K16
+- Repositorio Hugging Face: https://huggingface.co/jhyuckkim/Qwen3-30B-A3B-Dense-3B-SF-K16
 - Articulo arXiv: https://arxiv.org/abs/2605.28207
 - Codigo del articulo: https://github.com/krafton-ai/moe-to-dense
 - Modelo hermano DO-ACP K=8: https://huggingface.co/jhyuckkim/Qwen3-30B-A3B-Dense-3B-DO-ACP-K8

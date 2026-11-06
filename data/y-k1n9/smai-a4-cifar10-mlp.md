@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado en HuggingFace por el usuario `y-k1n9` como parte de una asignatura o práctica académica (la nomenclatura "SMAI A4, Q1" sugiere un trabajo de evaluación trimestral). No se trata de un modelo de lenguaje: es un clasificador de imágenes de propósito muy acotado que recibe un vector de 3072 dimensiones (una imagen de 32x32x3 aplanada y normalizada) y devuelve 10 logits correspondientes a las clases de CIFAR-10.
+`smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado en Hugging Face por el usuario `y-k1n9` como parte de una asignatura o práctica académica (la nomenclatura "SMAI A4, Q1" sugiere un trabajo de evaluación trimestral). No se trata de un modelo de lenguaje: es un clasificador de imágenes de propósito muy acotado que recibe un vector de 3072 dimensiones (una imagen de 32x32x3 aplanada y normalizada) y devuelve 10 logits correspondientes a las clases de CIFAR-10.
 
 Arquitectura y entrenamiento están completamente especificados en la model card: una única capa oculta de 128 neuronas con activación ReLU, inicialización normal con varianza 2/n_in, sesgos a cero, optimizador SGD con learning rate 0,03, batch size de 64 y 100 épocas sobre etiquetas verdaderas (sin ruido de etiqueta, p = 0). El preprocesado incluye normalización por media y desviación típica calculadas sobre las 50.000 imágenes del split de entrenamiento.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye resultados de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/y-k1n9/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/y-k1n9/smai-a4-cifar10-mlp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

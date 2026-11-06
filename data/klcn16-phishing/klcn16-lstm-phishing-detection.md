@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KLCN16-LSTM-Phishing-Detection es un modelo publicado en HuggingFace por el usuario klcn16-phishing bajo licencia MIT. Por el identificador se deduce que esta orientado a la deteccion de phishing, presumiblemente mediante clasificacion de texto, aunque la model card publicada no incluye ninguna descripcion funcional, ejemplos de uso ni detalles de arquitectura. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y tanto la fecha de creacion como la de ultima actualizacion figuran como 2026-09-29T17:28:21.000Z.
+KLCN16-LSTM-Phishing-Detection es un modelo publicado en Hugging Face por el usuario klcn16-phishing bajo licencia MIT. Por el identificador se deduce que esta orientado a la deteccion de phishing, presumiblemente mediante clasificacion de texto, aunque la model card publicada no incluye ninguna descripcion funcional, ejemplos de uso ni detalles de arquitectura. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y tanto la fecha de creacion como la de ultima actualizacion figuran como 2026-09-29T17:28:21.000Z.
 
-La unica informacion tecnica verificable en el repositorio es la licencia (MIT) y la region de disponibilidad (us). No hay datos publicados sobre el numero de parametros, la longitud de contexto, los idiomas soportados, el dataset de entrenamiento ni los formatos de pesos. El campo pipeline de HuggingFace aparece como no disponible.
+La unica informacion tecnica verificable en el repositorio es la licencia (MIT) y la region de disponibilidad (us). No hay datos publicados sobre el numero de parametros, la longitud de contexto, los idiomas soportados, el dataset de entrenamiento ni los formatos de pesos. El campo pipeline de Hugging Face aparece como no disponible.
 
 Por tanto, esta ficha recoge exclusivamente lo que consta en el repositorio y marca de forma explicita como no disponible cualquier dato que el autor no ha hecho publico. Cualquier uso en produccion requeriria contactar con el autor o inspeccionar directamente los archivos del repositorio.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de datos verificables de este modelo (parametros, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/klcn16-phishing/KLCN16-LSTM-Phishing-Detection
+- Hugging Face: https://huggingface.co/klcn16-phishing/KLCN16-LSTM-Phishing-Detection
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

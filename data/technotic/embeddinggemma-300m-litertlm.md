@@ -75,8 +75,8 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo o
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/technotic/embeddinggemma-300M-litertlm
-- Modelo original en HuggingFace: https://huggingface.co/google/embeddinggemma-300m
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/technotic/embeddinggemma-300M-litertlm
+- Modelo original en Hugging Face: https://huggingface.co/google/embeddinggemma-300m
 - Página oficial de EmbeddingGemma en Google AI: https://ai.google.dev/gemma/docs/embeddinggemma
 - Paper técnico: https://arxiv.org/abs/2509.20354
 - Model card del modelo original: https://huggingface.co/google/embeddinggemma-300m/blob/main/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RLVE archive mixing-hero kl-proposals 02-natural-qwen es un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo lanzado como producto, sino de un artefacto de investigacion: la model card lo describe explicitamente como "Archived checkpoint" procedente de una ruta de scratch (`runs/mixing-hero-kl-proposals-20260930-112004/resumable/02-natural-qwen`), con formato `hf-safetensors` y ultimo paso de entrenamiento registrado en 999. El repositorio conserva el estado final de una ejecucion, identificada con el run ID de Weights & Biases `24fc5022`.
+RLVE archive mixing-hero kl-proposals 02-natural-qwen es un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo lanzado como producto, sino de un artefacto de investigacion: la model card lo describe explicitamente como "Archived checkpoint" procedente de una ruta de scratch (`runs/mixing-hero-kl-proposals-20260930-112004/resumable/02-natural-qwen`), con formato `hf-safetensors` y ultimo paso de entrenamiento registrado en 999. El repositorio conserva el estado final de una ejecucion, identificada con el run ID de Weights & Biases `24fc5022`.
 
 El modelo tiene 1.543.714.304 parametros reales (segun los pesos safetensors), lo que lo situa en la franja de 1,5 B, y su tag de arquitectura es `qwen2`, es decir, un transformer decoder-only de la familia Qwen2. La nomenclatura del run ("rlve", "kl-proposals", "mixing-hero") sugiere un proceso de ajuste por aprendizaje por refuerzo con propuestas y penalizacion KL, aunque la model card no documenta ni el algoritmo exacto, ni el dataset, ni los hiperparametros, por lo que cualquier afirmacion al respecto queda fuera de lo verificable.
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la model card solo aporta metadatos de trazabilidad: 
 - Investigacion sobre mezcla de politicas: dado el nombre `mixing-hero-kl-proposals`, el checkpoint puede emplearse como punto de partida para estudiar estrategias de mezcla de politicas o de datos en experimentos de alineamiento a pequena escala.
 - Punto de partida para fine-tuning academico: con 1,54 B de parametros, el modelo cabe en una GPU de gama alta y permite experimentar con SFT o DPO sobre una base ya entrenada por refuerzo.
 - Baseline en estudios comparativos de checkpoints: util como muestra intermedia en una secuencia de checkpoints (`02-natural-qwen`) para medir deriva de comportamiento entre fases de entrenamiento.
-- Reproducibilidad de pipelines Megatron: el directorio `checkpoint/` preserva el estado exacto, lo que permite validar conversiones entre formato Megatron distribuido y safetensors de HuggingFace.
+- Reproducibilidad de pipelines Megatron: el directorio `checkpoint/` preserva el estado exacto, lo que permite validar conversiones entre formato Megatron distribuido y safetensors de Hugging Face.
 - Docencia y formacion en tecnicas de RL para LLM: sirve como ejemplo tangible de artefacto intermedio en un ciclo de entrenamiento con recompensas, siempre que el autor aporte la documentacion del dataset y del entorno.
 
 ## Benchmarks y rendimiento
@@ -67,9 +67,9 @@ La comparativa se realiza por franja de tamano (aproximadamente 1-1,5 B), pero l
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | rlve-archive-mixing-hero-kl-proposals 02-natural-qwen | 1,54 B | no disponible | no disponible | Checkpoint archivado, 0 descargas |
-| Qwen2.5-1.5B (referencia general) | 1,5 B | 32k (ampliable) | Apache-2.0 | Pesos y model card completos en HuggingFace |
-| Llama 3.2 1B (referencia general) | 1,2 B | 128k | Licencia comunitaria Llama 3.2 | Pesos y model card completos en HuggingFace |
-| TinyLlama 1.1B (referencia general) | 1,1 B | 2k | Apache-2.0 | Pesos y model card completos en HuggingFace |
+| Qwen2.5-1.5B (referencia general) | 1,5 B | 32k (ampliable) | Apache-2.0 | Pesos y model card completos en Hugging Face |
+| Llama 3.2 1B (referencia general) | 1,2 B | 128k | Licencia comunitaria Llama 3.2 | Pesos y model card completos en Hugging Face |
+| TinyLlama 1.1B (referencia general) | 1,1 B | 2k | Apache-2.0 | Pesos y model card completos en Hugging Face |
 
 No se dispone de datos de rendimiento del checkpoint evaluado que permitan una comparacion cuantitativa.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento del checkpoint evaluado que permitan una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-02-natural-qwen-022060eb97b5
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-02-natural-qwen-022060eb97b5
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

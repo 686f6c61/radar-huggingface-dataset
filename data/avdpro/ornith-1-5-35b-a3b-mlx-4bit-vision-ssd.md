@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD es un checkpoint publicado por el usuario Avdpro en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado desde cero, sino de una conversion de formato de almacenamiento byte a byte del checkpoint `Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision` (revision `31428ce8829c277f9255c59662b8efab58898ecf`). La conversion conserva los valores de los tensores y la cuantizacion originales, pero externaliza los expertos enrutados a un directorio `experts/` en lugar de duplicarlos dentro de los safetensors del backbone. El tag `qwen3_5_moe` y el sufijo `Vision` del nombre apuntan a un transformer multimodal de tipo mixture of experts basado en la familia Qwen3.5.
+Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD es un checkpoint publicado por el usuario Avdpro en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado desde cero, sino de una conversion de formato de almacenamiento byte a byte del checkpoint `Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision` (revision `31428ce8829c277f9255c59662b8efab58898ecf`). La conversion conserva los valores de los tensores y la cuantizacion originales, pero externaliza los expertos enrutados a un directorio `experts/` en lugar de duplicarlos dentro de los safetensors del backbone. El tag `qwen3_5_moe` y el sufijo `Vision` del nombre apuntan a un transformer multimodal de tipo mixture of experts basado en la familia Qwen3.5.
 
 El problema que resuelve es de espacio de instalacion y patron de acceso a datos: al separar los pesos de los expertos enrutados, el backbone queda en 2.448.355.968 parametros reales segun los safetensors, mientras que el resto de pesos (hasta los 35B que sugiere el nombre, con ~3B activos segun la nomenclatura A3B) queda en ficheros externos mapeables desde SSD. El repositorio ocupa 20,4 GB.
 
@@ -85,7 +85,7 @@ La diferencia principal no esta en capacidades sino en portabilidad: los tres mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD
+- Modelo en Hugging Face: https://huggingface.co/Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD
 - Checkpoint de origen: https://huggingface.co/Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision
 - Revision de origen: `31428ce8829c277f9255c59662b8efab58898ecf`
 - Ficheros de metadatos incluidos: `ssd-checkpoint.json`, `external-tensors.json`, `source-tensor-sha256.json`, `model.safetensors.index.json`

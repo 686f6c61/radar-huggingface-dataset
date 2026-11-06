@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga` es un checkpoint publicado en HuggingFace por el usuario `ssadqdsacf`, con un total de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) confirmados a partir de los pesos en formato safetensors. El tag de arquitectura declarado es `qwen3_5`, lo que indica que deriva de la familia Qwen 3.5, aunque el autor no ha publicado informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni el proposito concreto del modelo. El nombre del repositorio sugiere un experimento relacionado con "unlearning" (desaprendizaje) sobre una base Qwen 3.5 de 4B, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+El modelo identificado como `ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga` es un checkpoint publicado en Hugging Face por el usuario `ssadqdsacf`, con un total de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) confirmados a partir de los pesos en formato safetensors. El tag de arquitectura declarado es `qwen3_5`, lo que indica que deriva de la familia Qwen 3.5, aunque el autor no ha publicado informacion adicional sobre el proceso de entrenamiento, los datos utilizados ni el proposito concreto del modelo. El nombre del repositorio sugiere un experimento relacionado con "unlearning" (desaprendizaje) sobre una base Qwen 3.5 de 4B, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 El modelo acumula 3 descargas y 0 likes en el momento de la consulta, y el repositorio ocupa 9,1 GB, un tamano coherente con pesos en precision completa (FP16/BF16) para un modelo de 4,54B de parametros. No se ha publicado licencia, idiomas soportados, pipeline de inferencia ni tarjeta de modelo con detalles tecnicos.
 
@@ -78,10 +78,10 @@ No se dispone de datos de benchmarks que permitan una comparacion de rendimiento
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga | 4,54 B | no disponible | no disponible | HuggingFace (3 descargas) |
+| ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga | 4,54 B | no disponible | no disponible | Hugging Face (3 descargas) |
 | Qwen 3.5 4B (modelo base presumible) | ~4 B | no disponible en esta ficha | no disponible en esta ficha | no verificado |
-| Llama 3.2 3B Instruct | 3,2 B | 128 K | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Gemma 3 4B | ~4 B | 128 K | Gemma Terms of Use | HuggingFace |
+| Llama 3.2 3B Instruct | 3,2 B | 128 K | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Gemma 3 4B | ~4 B | 128 K | Gemma Terms of Use | Hugging Face |
 
 Nota: los datos de las filas de Llama 3.2 y Gemma 3 son caracteristicas publicas de esos modelos, incluidos solo como referencia de categoria. No implican una comparacion de calidad con el checkpoint objeto de esta ficha, para el que no existen evaluaciones publicadas.
 
@@ -100,6 +100,6 @@ Nota: los datos de las filas de Llama 3.2 y Gemma 3 son caracteristicas publicas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga
+- Hugging Face: https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con la familia Qwen 3.5. Los unicos resultados obtenidos corresponden a paginas sobre resultados deportivos de Formula 1 y no guardan relacion con el objeto de esta ficha, por lo que se omiten. No se han localizado papers, blogs, repositorios ni demos asociados al checkpoint.

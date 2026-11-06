@@ -91,9 +91,9 @@ Prueba de terminación en modo *thinking* (48 trazas greedy, presupuesto de 16.3
 
 | Modelo | Parametros totales | Contexto | MMLU (300q, thinking) | Rechazo en dañinos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | 763,2B | no disponible | 89,0 % | 5,2 % | MIT | HuggingFace, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible en la informacion (fuentes externas citan ~552B) | no disponible | 89,3 % | 87,6 % | no disponible | HuggingFace oficial |
-| Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel | no disponible | no disponible | no disponible (30/32 en grading propio) | no disponible | no disponible | HuggingFace |
+| Este modelo | 763,2B | no disponible | 89,0 % | 5,2 % | MIT | Hugging Face, 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible en la informacion (fuentes externas citan ~552B) | no disponible | 89,3 % | 87,6 % | no disponible | Hugging Face oficial |
+| Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel | no disponible | no disponible | no disponible (30/32 en grading propio) | no disponible | no disponible | Hugging Face |
 | Abliteration de OrcaRouter | no disponible | no disponible | 92,0 % (BF16, 300 preguntas) | 7,4 % | no disponible | no disponible |
 
 Frente al base, este modelo reduce el rechazo en dañinos 16,8 veces (87,6 % → 5,2 %) a costa de 1,5 puntos de MMLU 0-shot (86,8 % → 85,3 %) y 0,3 puntos en MMLU con *thinking* (89,3 % → 89,0 %). Frente a la ablación de OrcaRouter, reduce el rechazo (5,2 % frente a 7,4 %) y las salvedades previas (6,2 % frente a ~36–61 %), pero queda 3 puntos por debajo en MMLU con *thinking* (89,0 % frente a 92,0 %, aunque la comparación es BF16 contra FP8 y con distinto tamaño de batería).
@@ -113,7 +113,7 @@ Frente al base, este modelo reduce el rechazo en dañinos 16,8 veces (87,6 % →
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient
+- Modelo en Hugging Face: https://huggingface.co/pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio de inferencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/main/inference
 - Checkpoint de partida (Hikari07jp): https://huggingface.co/Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel

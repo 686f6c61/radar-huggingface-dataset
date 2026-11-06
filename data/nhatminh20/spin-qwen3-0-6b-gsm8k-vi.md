@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPIN-Qwen3-0.6B-GSM8K-VI es un ajuste fino del modelo Qwen3-0.6B, publicado por el usuario NhatMinh20 en HuggingFace. Por el nombre se deduce que se ha aplicado la técnica SPIN (Self-Play Fine-Tuning) sobre el modelo base Qwen3 de 0,6 mil millones de parámetros, con un conjunto de datos de tipo GSM8K (problemas matemáticos de nivel escolar) y con foco en vietnamita (sufijo "VI"). Se trata, por tanto, de un modelo pequeño orientado a razonamiento aritmético en dicho idioma.
+SPIN-Qwen3-0.6B-GSM8K-VI es un ajuste fino del modelo Qwen3-0.6B, publicado por el usuario NhatMinh20 en Hugging Face. Por el nombre se deduce que se ha aplicado la técnica SPIN (Self-Play Fine-Tuning) sobre el modelo base Qwen3 de 0,6 mil millones de parámetros, con un conjunto de datos de tipo GSM8K (problemas matemáticos de nivel escolar) y con foco en vietnamita (sufijo "VI"). Se trata, por tanto, de un modelo pequeño orientado a razonamiento aritmético en dicho idioma.
 
 La model card publicada es prácticamente vacía: solo incluye la licencia MIT y no aporta información sobre arquitectura, datos de entrenamiento, hiperparámetros ni resultados. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de baja difusión.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SPIN-Qwen3-0.6B-GSM8K-VI | 0,6B (según nombre) | no disponible | MIT | HuggingFace |
-| Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Otros ajustes GSM8K de modelos pequeños | variable | no disponible | variable | HuggingFace |
+| SPIN-Qwen3-0.6B-GSM8K-VI | 0,6B (según nombre) | no disponible | MIT | Hugging Face |
+| Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Otros ajustes GSM8K de modelos pequeños | variable | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas verificadas en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento del modelo ni de alternativas verificadas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NhatMinh20/SPIN-Qwen3-0.6B-GSM8K-VI
+- Hugging Face: https://huggingface.co/NhatMinh20/SPIN-Qwen3-0.6B-GSM8K-VI
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

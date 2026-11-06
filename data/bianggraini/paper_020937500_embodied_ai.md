@@ -30,7 +30,7 @@ Dado que es un documento, los casos de uso se limitan al ambito academico:
 - Lectura y consulta de un articulo sobre el estado de la IA incorporada para investigacion bibliografica.
 - Referencia para la elaboracion de surveys o revisiones de literatura en el campo de la IA encarnada.
 - Analisis de la estructura y estilo de redaccion de papers academicos (IMRaD, narrativa progresiva).
-- Uso como ejemplo de formato de publicacion en HuggingFace (repositorio de texto plano).
+- Uso como ejemplo de formato de publicacion en Hugging Face (repositorio de texto plano).
 - Consulta de metadatos y licencia para reutilizacion del documento bajo Apache 2.0.
 - No es aplicable a despliegues de inferencia, integracion en aplicaciones, ni generacion de contenido automatica.
 
@@ -52,7 +52,7 @@ No aplicable. No existe categoria de modelos de IA comparable, ya que el reposit
 - La licencia Apache 2.0 permite el uso comercial y la modificacion, pero el autor no ha indicado si el paper contiene datos de terceros con restricciones adicionales.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/bianggraini/paper_020937500_embodied_ai
+- Repositorio de Hugging Face: https://huggingface.co/bianggraini/paper_020937500_embodied_ai
 - Referencia externa relacionada (paper sobre embodied AI): https://arxiv.org/abs/2509.20021
 - Lista de papers de embodied AI (GitHub): https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
 - Articulo de posicionamiento sobre VLA y world models (Motoniq): https://embodiedglobal.com/en/article/motoniq-vla-world-model-critique-2026

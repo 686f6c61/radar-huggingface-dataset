@@ -66,6 +66,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/stocp
+- Hugging Face: https://huggingface.co/pyaging/stocp
 - Documentacion de pyaging (Catalogo de relojes): https://pyaging.readthedocs.io
 - Publicacion original: Tong, Huige, et al. "Quantifying the stochastic component of epigenetic aging." Nature Aging 4 (2024): 886–901. DOI: https://doi.org/10.1038/s43587-024-00600-8

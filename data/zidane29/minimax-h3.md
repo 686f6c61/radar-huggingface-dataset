@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax H3 es un modelo omni-modal de generación de video desarrollado por MiniMax, presentado como un sistema abierto capaz de comprender y generar contenido en múltiples modalidades: texto, imagen, video y audio. Su característica más destacada es la generación de video con audio estéreo nativo, alcanzando resoluciones de hasta 2K y duraciones de 15 segundos. El repositorio de HuggingFace `Zidane29/MiniMax-H3` es un reempaquetado de los pesos del modelo original para su uso directo en ComfyUI, incluyendo archivos de difusión, codificadores de texto, LoRAs, VAEs y embeddings específicos. La relevancia actual del modelo radica en que ofrece capacidades de generación de video de alta calidad con licencia comunitaria, lo que lo convierte en una opción atractiva para desarrolladores e investigadores que buscan alternativas abiertas a sistemas propietarios.
+MiniMax H3 es un modelo omni-modal de generación de video desarrollado por MiniMax, presentado como un sistema abierto capaz de comprender y generar contenido en múltiples modalidades: texto, imagen, video y audio. Su característica más destacada es la generación de video con audio estéreo nativo, alcanzando resoluciones de hasta 2K y duraciones de 15 segundos. El repositorio de Hugging Face `Zidane29/MiniMax-H3` es un reempaquetado de los pesos del modelo original para su uso directo en ComfyUI, incluyendo archivos de difusión, codificadores de texto, LoRAs, VAEs y embeddings específicos. La relevancia actual del modelo radica en que ofrece capacidades de generación de video de alta calidad con licencia comunitaria, lo que lo convierte en una opción atractiva para desarrolladores e investigadores que buscan alternativas abiertas a sistemas propietarios.
 
 El modelo se distribuye en formato `diffusion-single-file` y el repositorio ocupa 471 GB, lo que indica un tamaño considerable. Incluye múltiples variantes de cuantización (bf16, int8, fp8, nvfp4) para adaptarse a diferentes capacidades de hardware. Aunque no se proporcionan detalles sobre la arquitectura interna, el blog oficial describe a H3 como un modelo que rompe las barreras entre tareas y modalidades, sugiriendo un diseño unificado para generación y comprensión multimodal.
 
@@ -75,13 +75,13 @@ No se dispone de comparaciones de parametros, contexto, rendimiento o licencia e
 - El tamaño del modelo (471 GB en el repositorio) implica requisitos de almacenamiento y memoria muy elevados, lo que limita su uso a entornos con infraestructura potente.
 - No se han publicado datos sobre sesgos o alucinaciones especificos del modelo. Como todo generador de video, existe el riesgo de que produzca contenido visual o auditivo incorrecto o no deseado.
 - La informacion sobre idiomas soportados no esta disponible; se presume que el modelo funciona mejor en ingles y chino, pero no esta confirmado.
-- El repositorio de HuggingFace es un reempaquetado de terceros (Zidane29), no el oficial de MiniMax. Aunque los archivos parecen ser copias fieles, se recomienda verificar la integridad y consultar el repositorio original para actualizaciones.
+- El repositorio de Hugging Face es un reempaquetado de terceros (Zidane29), no el oficial de MiniMax. Aunque los archivos parecen ser copias fieles, se recomienda verificar la integridad y consultar el repositorio original para actualizaciones.
 - No se proporcionan datos de rendimiento ni benchmarks, por lo que es dificil evaluar su calidad frente a alternativas sin pruebas propias.
 
 ## Enlaces
 
-- Repositorio HuggingFace (reempaquetado): https://huggingface.co/Zidane29/MiniMax-H3
-- Repositorio original en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (reempaquetado): https://huggingface.co/Zidane29/MiniMax-H3
+- Repositorio original en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax: https://www.minimax.io/blog/minimax-h3

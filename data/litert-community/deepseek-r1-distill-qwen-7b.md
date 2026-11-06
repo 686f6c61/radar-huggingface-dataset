@@ -95,7 +95,7 @@ La comparativa muestra que la conversion int4 mantiene practicamente el mismo re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-7B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/DeepSeek-R1-Distill-Qwen-7B
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Runtime LiteRT-LM (GitHub): https://github.com/google-ai-edge/litert-lm
 - Repositorio de DeepSeek-R1 (GitHub): https://github.com/deepseek-ai/DeepSeek-R1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taleo76/promptgen-acestep-models` es un repositorio de modelos publicado en HuggingFace por el usuario taleo76 bajo licencia MIT. El repositorio ocupa 24,9 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes. La model card asociada contiene unicamente la linea `license: mit`: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
+`taleo76/promptgen-acestep-models` es un repositorio de modelos publicado en Hugging Face por el usuario taleo76 bajo licencia MIT. El repositorio ocupa 24,9 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes. La model card asociada contiene unicamente la linea `license: mit`: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
 
 Esto significa que no existe informacion tecnica verificable sobre el modelo en la propia ficha: no se documentan parametros, longitud de contexto, tokenizador, formato de pesos ni tarea objetivo. El unico dato objetivo y medible es el tamano del repositorio (24,9 GB), que permite acotar el orden de magnitud del modelo solo de forma condicional (ver seccion de especificaciones), ya que depende de la precision de los pesos almacenados.
 
@@ -100,5 +100,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taleo76/promptgen-acestep-models
+- Repositorio en Hugging Face: https://huggingface.co/taleo76/promptgen-acestep-models
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las unicas coincidencias devueltas corresponden a paginas de ayuda de Google Translate (soporte de traduccion sin conexion), sin relacion con el modelo.

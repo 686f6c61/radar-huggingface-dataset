@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_200_episodes es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario lenawngr en HuggingFace Hub y entrenada con la librería LeRobot de HuggingFace. El modelo resuelve una tarea concreta de manipulación robótica: pick-and-place sobre el robot SO-101 (variante del SO-100), aprendida a partir de 200 episodios de teleoperación recogidos en el dataset `lenawngr/pick-place_so101`. No es un modelo de lenguaje: es un policy de control motor que mapea observaciones visuales y propioceptivas a secuencias de acciones.
+ACT_pick-place_200_episodes es una política de imitación basada en Action Chunking with Transformers (ACT), publicada por el usuario lenawngr en Hugging Face Hub y entrenada con la librería LeRobot de Hugging Face. El modelo resuelve una tarea concreta de manipulación robótica: pick-and-place sobre el robot SO-101 (variante del SO-100), aprendida a partir de 200 episodios de teleoperación recogidos en el dataset `lenawngr/pick-place_so101`. No es un modelo de lenguaje: es un policy de control motor que mapea observaciones visuales y propioceptivas a secuencias de acciones.
 
 La arquitectura ACT, descrita en el paper arXiv:2304.13705, predice chunks de acciones (varios pasos futuros de una vez) en lugar de acciones individuales, lo que reduce el error de compounding y mejora la estabilidad en tareas de imitación. Con 51.668.614 parámetros y un repositorio de 0,2 GB en formato safetensors, es un modelo ligero pensado para inferencia en tiempo real sobre hardware modesto.
 
@@ -33,7 +33,7 @@ En este caso concreto, el entrenamiento se realizó con LeRobot sobre el dataset
 - Imitación de demostraciones: aprende de datos teleoperados y reproduce la política de agarre y colocación.
 - Predicción de chunks de acciones: emite secuencias de acciones futuras, no solo el paso inmediato.
 - Inferencia en tiempo real: pensada para ejecutarse en bucle de control con `lerobot-record`.
-- Integración con LeRobot: compatible con el pipeline de entrenamiento, evaluación y despliegue de HuggingFace LeRobot.
+- Integración con LeRobot: compatible con el pipeline de entrenamiento, evaluación y despliegue de Hugging Face LeRobot.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso simbólico ni capacidades multilingües: es un policy motor, no un modelo generativo de texto.
 
 ## Casos de uso
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_pick-place_200_episodes (este) | 51,7 M | no aplica | Pick-and-place SO-101 | apache-2.0 | HuggingFace Hub |
+| ACT_pick-place_200_episodes (este) | 51,7 M | no aplica | Pick-and-place SO-101 | apache-2.0 | Hugging Face Hub |
 | ACT original (paper 2304.13705) | no disponible | no aplica | Manipulación fina (varias tareas) | no disponible | Paper y código de referencia |
-| Políticas LeRobot ACT genéricas | variable | no aplica | Manipulación con SO-100/SO-101 | según autor | HuggingFace Hub (varios repos) |
+| Políticas LeRobot ACT genéricas | variable | no aplica | Manipulación con SO-100/SO-101 | según autor | Hugging Face Hub (varios repos) |
 | Diffusion Policy (alternativa de imitación) | variable | no aplica | Manipulación robótica | MIT (implementación de referencia) | Repos públicos |
 
 La comparación cuantitativa de rendimiento entre estas alternativas no está disponible en la información proporcionada.
@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_200_episodes
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_200_episodes
 - Dataset de entrenamiento: https://huggingface.co/datasets/lenawngr/pick-place_so101
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

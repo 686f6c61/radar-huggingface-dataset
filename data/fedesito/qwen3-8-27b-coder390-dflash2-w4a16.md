@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fedesito/Qwen3.8-27B-Coder390-DFlash2-W4A16
+- Hugging Face: https://huggingface.co/fedesito/Qwen3.8-27B-Coder390-DFlash2-W4A16
 - Modelo base: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2
 - Layout de referencia W4A16: https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16
 - Blog de referencia DFlash2 (Inco): https://inco.ai/blog/dflash2/

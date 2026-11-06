@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos sistemas. Los proy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v4
+- Modelo en Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Proyecto LegalGPT (referenciado en la model card): https://github.com/czc0407/legalGPT
 - Proyecto LegalGPT (resultado de busqueda, distinto): https://github.com/Terry-ferns13/LegalGPT

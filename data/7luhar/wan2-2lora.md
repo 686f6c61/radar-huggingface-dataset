@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/7luhar/wan2.2lora
+- Repositorio Hugging Face: https://huggingface.co/7luhar/wan2.2lora
 - Referencia externa de Wan 2.2 (wavespeed-ai): https://wavespeed.ai/models/wavespeed-ai/wan-2.2/i2v-720p-lora-ultra-fast
 - Repositorio GitHub relacionado: https://github.com/wanImageToVideo/wan2.2-lora
 - Página de GoEnhance AI sobre Wan 2.2: https://www.goenhance.ai/video-models/wan-2-2

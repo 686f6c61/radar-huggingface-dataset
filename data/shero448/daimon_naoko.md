@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daimon_naoko` es un LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, diseñado para producir ilustraciones de estilo anime de un personaje femenino concreto llamado Daimon Naoko. El modelo ha sido desarrollado por el usuario Shero448 y se distribuye a través de HuggingFace bajo la librería `diffusers`. Su función es afinar el comportamiento del modelo base `John6666/prefect-illustrious-xl-v15-sdxl`, un checkpoint de SDXL especializado en ilustración, para que al usar el trigger word `daimon` se generen imágenes consistentes con el personaje.
+`daimon_naoko` es un LoRA (Low-Rank Adaptation) para generación de imágenes texto-a-imagen, diseñado para producir ilustraciones de estilo anime de un personaje femenino concreto llamado Daimon Naoko. El modelo ha sido desarrollado por el usuario Shero448 y se distribuye a través de Hugging Face bajo la librería `diffusers`. Su función es afinar el comportamiento del modelo base `John6666/prefect-illustrious-xl-v15-sdxl`, un checkpoint de SDXL especializado en ilustración, para que al usar el trigger word `daimon` se generen imágenes consistentes con el personaje.
 
 Este LoRA está pensado para creadores de contenido y entusiastas de la ilustración asistida por IA que buscan un control fino sobre la apariencia de un personaje específico sin necesidad de entrenar un modelo completo. Su relevancia radica en la creciente comunidad de modelos LoRA para SDXL, que permite personalizar estilos y personajes con un coste de almacenamiento e inferencia relativamente bajo. El repositorio incluye el archivo de pesos (0.2 GB) y una imagen de ejemplo, pero no se proporcionan detalles sobre el proceso de entrenamiento ni sobre los datos utilizados.
 
@@ -66,7 +66,7 @@ No se dispone de información de modelos comparables específicos para este pers
 
 ## Enlaces
 
-- [HuggingFace - Shero448/daimon_naoko](https://huggingface.co/Shero448/daimon_naoko)
+- [Hugging Face - Shero448/daimon_naoko](https://huggingface.co/Shero448/daimon_naoko)
 - [PixAI - Daimon Naoko](https://pixai.art/en/model/1797335597818750046)
 - [Tensor.Art - Daimon Naoko V1.0](https://tensor.art/models/848935122804894120)
 - [SeaArt - Daimon Naoko](https://www.seaart.ai/models/detail/2b3aee5320a630478c6f1545f8419bb5)

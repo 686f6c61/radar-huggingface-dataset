@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/ai-server-mgr/Qwen3.8-27B-W4A16-DFlash2
 - Modelo base cuantizado: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound (commit `1f05c441c4e64ae0549de44fa9ea5a6d43610314`)
 - Overlay rapido: https://huggingface.co/syvai/qwen3.8-27b-3090-fast-variant (commit `124c14e7e8c7d2f5402933b9af368e772a9fcf0c`)
 - Origen del drafter DFlash2: https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16 (commit `4d30ec736ffc6b8688dc2ae2b502d9b48bdec279`)

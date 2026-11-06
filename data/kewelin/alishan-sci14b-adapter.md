@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kewelin/alishan-sci14b-adapter es un adaptador de tipo LoRA (Low-Rank Adaptation) desarrollado por el usuario Kewelin, diseñado para ajustar el modelo base Qwen/Qwen3-14B. El repositorio, de acceso restringido en HuggingFace, contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 3,1 GB. La etiqueta `arxiv:1910.09700` hace referencia al artículo original de LoRA, lo que confirma que se trata de un adaptador de bajo rango. No se proporciona información sobre la licencia, los idiomas soportados ni el proceso de entrenamiento.
+Kewelin/alishan-sci14b-adapter es un adaptador de tipo LoRA (Low-Rank Adaptation) desarrollado por el usuario Kewelin, diseñado para ajustar el modelo base Qwen/Qwen3-14B. El repositorio, de acceso restringido en Hugging Face, contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 3,1 GB. La etiqueta `arxiv:1910.09700` hace referencia al artículo original de LoRA, lo que confirma que se trata de un adaptador de bajo rango. No se proporciona información sobre la licencia, los idiomas soportados ni el proceso de entrenamiento.
 
 Al estar basado en Qwen3-14B, el adaptador hereda la arquitectura transformer decoder-only del modelo base, pero se desconoce el rango exacto del LoRA, los datos de entrenamiento o las tareas específicas para las que fue afinado. La ausencia de documentación y de resultados de evaluación limita su uso a experimentación, aunque el nombre "sci" sugiere una orientación hacia dominios científicos, sin que haya confirmación oficial. Su relevancia actual radica en la posibilidad de adaptar un modelo de 14B parámetros con un coste computacional reducido mediante LoRA, una técnica ampliamente utilizada en la comunidad open source.
 
@@ -54,7 +54,7 @@ No disponible. No se han encontrado modelos comparables con los que contrastar e
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- El acceso al repositorio es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - No se especifica licencia, lo que genera incertidumbre legal para uso comercial o redistribucion.
 - No hay documentacion sobre sesgos, riesgos de alucinacion o limitaciones de contexto.
 - Al ser un adaptador sin informacion de entrenamiento, no se puede garantizar su calidad ni su comportamiento en tareas reales.
@@ -63,5 +63,5 @@ No disponible. No se han encontrado modelos comparables con los que contrastar e
 
 ## Enlaces
 
-- [HuggingFace - Kewelin/alishan-sci14b-adapter](https://huggingface.co/Kewelin/alishan-sci14b-adapter)
+- [Hugging Face - Kewelin/alishan-sci14b-adapter](https://huggingface.co/Kewelin/alishan-sci14b-adapter)
 - [FriendliAI - alishan-sci14b-adapter](https://friendli.ai/models/Kewelin/alishan-sci14b-adapter)

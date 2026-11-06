@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial publicado en HuggingFace por el usuario `gerthae` bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El repositorio está etiquetado como `bert`, `transformers`, `pytorch` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT orientada a extracción de características, aunque la descripción menciona capacidades de razonamiento, generación de código y soporte para function calling.
+MyAwesomeModel es un modelo de inteligencia artificial publicado en Hugging Face por el usuario `gerthae` bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El repositorio está etiquetado como `bert`, `transformers`, `pytorch` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT orientada a extracción de características, aunque la descripción menciona capacidades de razonamiento, generación de código y soporte para function calling.
 
 El modelo se presenta como un asistente conversacional con capacidades mejoradas en matemáticas, programación y lógica, y los resultados reportados indican una mejora notable en tareas de razonamiento complejo, como el aumento de precisión en AIME 2025 del 70% al 87,5%. Sin embargo, la información técnica disponible es escasa: no se especifican el número de parámetros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El repositorio parece ser un proyecto de prueba (TestRepo) con un tamaño de 0.0 GB, lo que sugiere que los archivos del modelo no están realmente publicados.
 
@@ -10,7 +10,7 @@ El modelo se presenta como un asistente conversacional con capacidades mejoradas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según tags de HuggingFace), sin detalles adicionales |
+| Arquitectura | BERT (según tags de Hugging Face), sin detalles adicionales |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El modelo se presenta como un asistente conversacional con capacidades mejoradas
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona información concreta sobre la arquitectura interna, el número de capas, la dimensión de los embeddings o el mecanismo de atención. Los tags de HuggingFace indican que el modelo está basado en BERT y utiliza la librería `transformers` de PyTorch, con pipeline de `feature-extraction`. Esto sugiere una arquitectura transformer encoder-only, pero no se confirma si la versión actual mantiene esa base o ha introducido cambios estructurales.
+La model card no proporciona información concreta sobre la arquitectura interna, el número de capas, la dimensión de los embeddings o el mecanismo de atención. Los tags de Hugging Face indican que el modelo está basado en BERT y utiliza la librería `transformers` de PyTorch, con pipeline de `feature-extraction`. Esto sugiere una arquitectura transformer encoder-only, pero no se confirma si la versión actual mantiene esa base o ha introducido cambios estructurales.
 
 En cuanto al entrenamiento, se menciona que el modelo ha sido sometido a un "post-entrenamiento" con mayor capacidad computacional y "mecanismos de optimización algorítmica", pero no se detallan el número de tokens de entrenamiento, la composición del dataset ni si se utilizaron técnicas como RLHF o DPO. Tampoco se especifica si hubo fases de fine-tuning supervisado o instrucciones. La única innovación técnica mencionada es una mayor profundidad de razonamiento, reflejada en un aumento del promedio de tokens usados por pregunta en AIME (de 12K a 23K tokens), lo que sugiere un modo de razonamiento extendido o "thinking mode".
 
@@ -93,7 +93,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gerthae/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/gerthae/MyAwesomeModel-TestRepo
 - Repositorio duplicado (usuario `gerha`): https://huggingface.co/gerha/MyAwesomeModel-TestRepo
 - Repositorio duplicado (usuario `hertgaer`): https://huggingface.co/hertgaer/MyAwesomeModel-TestRepo
 - Página de Toolify sobre el modelo: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

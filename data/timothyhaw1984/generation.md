@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`timothyhaw1984/generation` es un repositorio de HuggingFace que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion, publicada por el usuario timothyhaw1984 bajo licencia Apache 2.0. El propio autor aclara en la model card que se trata de un punto de partida reproducible y no de una version de modelo entrenada: el archivo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), no un checkpoint con benchmarks.
+`timothyhaw1984/generation` es un repositorio de Hugging Face que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion, publicada por el usuario timothyhaw1984 bajo licencia Apache 2.0. El propio autor aclara en la model card que se trata de un punto de partida reproducible y no de una version de modelo entrenada: el archivo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), no un checkpoint con benchmarks.
 
 El modelo declara la variante "giant", pero el recuento real de parametros en safetensors es de solo 16.576 parametros, una cifra extremadamente reducida que confirma su naturaleza de esqueleto de arquitectura mas que de modelo funcional. La arquitectura combina atencion de ventana deslizante (sliding window), fusion por co-atencion, activacion mish y normalizacion instancenorm, con receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule de warmup constante.
 
@@ -74,4 +74,4 @@ No disponible. No se han proporcionado modelos comparables en la informacion rec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timothyhaw1984/generation
+- Hugging Face: https://huggingface.co/timothyhaw1984/generation

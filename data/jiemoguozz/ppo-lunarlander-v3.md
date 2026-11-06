@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Jiemoguozz/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Jiemoguozz en HuggingFace y esta construido con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL como PPO, A2C, DQN o SAC.
+El modelo Jiemoguozz/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Jiemoguozz en Hugging Face y esta construido con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL como PPO, A2C, DQN o SAC.
 
 A diferencia de un modelo de lenguaje, este artefacto no genera texto ni procesa lenguaje natural: es una politica entrenada para controlar la nave del entorno LunarLander, una tarea de control continuo donde el agente debe activar los propulsores para aterrizar suavemente sobre una plataforma. El repositorio tiene un tamano de 0.0 GB segun los metadatos, lo que indica que contiene pesos de una red pequena (habitualmente un perceptron multicapa), sin tokenizador ni vocabulario asociado.
 
@@ -67,9 +67,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jiemoguozz/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 258.57 +/- 18.00 (no verificado) | no disponible | HuggingFace, 0 descargas |
-| Agentes PPO de referencia en el Hub (p. ej. publicaciones equivalentes del curso de deep RL de HuggingFace) | PPO | LunarLander-v3 | no disponible en la informacion proporcionada | habitualmente MIT o no especificada | HuggingFace |
-| Alternativas con A2C o DQN sobre LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| Jiemoguozz/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 258.57 +/- 18.00 (no verificado) | no disponible | Hugging Face, 0 descargas |
+| Agentes PPO de referencia en el Hub (p. ej. publicaciones equivalentes del curso de deep RL de Hugging Face) | PPO | LunarLander-v3 | no disponible en la informacion proporcionada | habitualmente MIT o no especificada | Hugging Face |
+| Alternativas con A2C o DQN sobre LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 
 No se dispone de datos verificados de modelos comparables en la informacion proporcionada; la comparacion cuantitativa no es posible con las fuentes consultadas.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiemoguozz/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Jiemoguozz/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Entorno LunarLander-v3 (Gymnasium): no disponible en la informacion proporcionada como enlace directo
 - Paper de PPO (Proximal Policy Optimization): https://arxiv.org/abs/1707.06347

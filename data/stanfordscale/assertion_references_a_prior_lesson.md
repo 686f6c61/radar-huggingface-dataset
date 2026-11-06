@@ -77,9 +77,9 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_references_a_prior_lesson | 109,5 M | no disponible | Clasificacion binaria de asercion `bu5` | no disponible | HuggingFace |
-| Otros clasificadores de aserciones StanfordSCALE (`bu5`) | no disponible | no disponible | Clasificacion binaria de asercion | no disponible | HuggingFace |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | 109,5 M | no disponible | Embeddings de frases | Apache-2.0 (segun modelo base) | HuggingFace |
+| StanfordSCALE/assertion_references_a_prior_lesson | 109,5 M | no disponible | Clasificacion binaria de asercion `bu5` | no disponible | Hugging Face |
+| Otros clasificadores de aserciones StanfordSCALE (`bu5`) | no disponible | no disponible | Clasificacion binaria de asercion | no disponible | Hugging Face |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | 109,5 M | no disponible | Embeddings de frases | Apache-2.0 (segun modelo base) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_a_prior_lesson
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_a_prior_lesson
 - Dataset de anotacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-Base-GGUF es una conversión al formato GGUF del modelo base Qwen3-TTS-12Hz-1.7B, un sistema de síntesis de voz (text-to-speech) de 1.733.157.888 parámetros desarrollado originalmente en el seno de la familia Qwen. La versión aquí documentada ha sido publicada por el usuario empyrealworks en HuggingFace y está etiquetada como compatible con endpoints, lo que sugiere que puede servirse a través de infraestructuras de inferencia estándar. El repositorio ocupa 2,9 GB y acumula 95 descargas en el momento de la consulta.
+Qwen3-TTS-12Hz-1.7B-Base-GGUF es una conversión al formato GGUF del modelo base Qwen3-TTS-12Hz-1.7B, un sistema de síntesis de voz (text-to-speech) de 1.733.157.888 parámetros desarrollado originalmente en el seno de la familia Qwen. La versión aquí documentada ha sido publicada por el usuario empyrealworks en Hugging Face y está etiquetada como compatible con endpoints, lo que sugiere que puede servirse a través de infraestructuras de inferencia estándar. El repositorio ocupa 2,9 GB y acumula 95 descargas en el momento de la consulta.
 
-La designación "12Hz" en el nombre alude a la frecuencia de muestreo de los tokens acústicos del modelo, un dato relevante para entender su diseño de codificación de audio. Al tratarse de una cuantización GGUF de un modelo base, el objetivo principal es facilitar el despliegue en entornos con recursos limitados, especialmente mediante llama.cpp y otros runners compatibles con este formato. La información pública disponible sobre esta conversión concreta es escasa: no se especifican licencia, idiomas soportados ni pipeline en la ficha de HuggingFace.
+La designación "12Hz" en el nombre alude a la frecuencia de muestreo de los tokens acústicos del modelo, un dato relevante para entender su diseño de codificación de audio. Al tratarse de una cuantización GGUF de un modelo base, el objetivo principal es facilitar el despliegue en entornos con recursos limitados, especialmente mediante llama.cpp y otros runners compatibles con este formato. La información pública disponible sobre esta conversión concreta es escasa: no se especifican licencia, idiomas soportados ni pipeline en la ficha de Hugging Face.
 
 Por su naturaleza, esta ficha se centra en lo que puede afirmarse con rigor a partir de los metadatos disponibles, marcando explícitamente como "no disponible" todo aquello que no ha sido confirmado. El modelo pertenece a la categoría de TTS de tamaño medio (1,7B parámetros), lo que lo sitúa en un rango manejable para inferencia en GPU de consumo con cuantizaciones agresivas.
 
@@ -62,7 +62,7 @@ No disponible. La información proporcionada no incluye datos sobre modelos TTS 
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: al no indicarse la licencia en la ficha de HuggingFace, no puede confirmarse si el uso comercial está permitido; es imprescindible verificar la licencia del modelo original Qwen3-TTS antes de cualquier despliegue en producción.
+- Licencia no especificada: al no indicarse la licencia en la ficha de Hugging Face, no puede confirmarse si el uso comercial está permitido; es imprescindible verificar la licencia del modelo original Qwen3-TTS antes de cualquier despliegue en producción.
 - Conversión comunitaria: el repositorio pertenece a un usuario externo (empyrealworks), no al equipo oficial de Qwen, por lo que la fidelidad de la cuantización respecto al modelo original no está garantizada.
 - Idiomas no documentados: se desconoce qué lenguas soporta el modelo, lo que limita su uso en aplicaciones multilingües sin validación previa.
 - Riesgo de artefactos de audio: las cuantizaciones GGUF pueden introducir degradaciones en la calidad de la voz sintetizada; no se han publicado evaluaciones al respecto.
@@ -71,5 +71,5 @@ No disponible. La información proporcionada no incluye datos sobre modelos TTS 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/empyrealworks/Qwen3-TTS-12Hz-1.7B-Base-GGUF
+- Hugging Face: https://huggingface.co/empyrealworks/Qwen3-TTS-12Hz-1.7B-Base-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

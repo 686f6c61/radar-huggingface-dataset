@@ -72,6 +72,6 @@ No se han encontrado modelos comparables en la información disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hmkang/wam_ctxpool_avg
+- Repositorio en Hugging Face: https://huggingface.co/hmkang/wam_ctxpool_avg
 - Código de entrenamiento: https://github.com/HEMMO0208/wam
 - Script específico de fine-tuning: https://github.com/HEMMO0208/wam/blob/run_scripts/train/wam_dit4dit/compression/finetune_wam_dit4dit_robocasa_kitchen_ctxpool.sh

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2b-Cyber es un fine-tune del modelo Qwen3.5-2B de Alibaba, publicado por el usuario TonyZCrewz en HuggingFace en formato GGUF. El modelo base, lanzado en febrero de 2026, es un modelo multimodal denso de aproximadamente 2.000 millones de parámetros con arquitectura híbrida que combina Gated Delta Networks y Gated Attention, pensado para ofrecer un equilibrio entre eficiencia y capacidades avanzadas en un tamaño reducido. El fine-tune "Cyber" ha sido convertido a GGUF mediante la herramienta Unsloth, lo que permite su ejecución en CPU y GPU de consumo con llama.cpp.
+Qwen3.5-2b-Cyber es un fine-tune del modelo Qwen3.5-2B de Alibaba, publicado por el usuario TonyZCrewz en Hugging Face en formato GGUF. El modelo base, lanzado en febrero de 2026, es un modelo multimodal denso de aproximadamente 2.000 millones de parámetros con arquitectura híbrida que combina Gated Delta Networks y Gated Attention, pensado para ofrecer un equilibrio entre eficiencia y capacidades avanzadas en un tamaño reducido. El fine-tune "Cyber" ha sido convertido a GGUF mediante la herramienta Unsloth, lo que permite su ejecución en CPU y GPU de consumo con llama.cpp.
 
 La relevancia de este modelo radica en que ofrece una versión compacta y multimodal de la familia Qwen3.5, con soporte nativo de visión (incluyendo comprensión de vídeo) y una ventana de contexto de hasta 262.000 tokens según las especificaciones del modelo base. El repositorio incluye dos archivos: un GGUF cuantizado Q4_K_M para el modelo principal y un proyector multimodal en BF16, lo que indica que conserva las capacidades de visión del modelo original. Sin embargo, la documentación del fine-tune es mínima: no se especifica el dominio de especialización, el dataset de entrenamiento ni la licencia aplicada al modelo resultante.
 
@@ -78,7 +78,7 @@ El modelo se sitúa en la gama de 1-2B parámetros, donde compite principalmente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TonyZCrewz/Qwen3.5-2b-Cyber
+- Repositorio Hugging Face: https://huggingface.co/TonyZCrewz/Qwen3.5-2b-Cyber
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Especificaciones y VRAM (apxml.com): https://apxml.com/models/qwen35-2b
 - Guía de uso local (localclaw.io): https://localclaw.io/models/qwen3.5-2b

@@ -94,7 +94,7 @@ No se dispone de resultados comparables de otros clasificadores específicos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReefNet/reefnet-qwen3-vl-8b-lora
+- Modelo en Hugging Face: https://huggingface.co/ReefNet/reefnet-qwen3-vl-8b-lora
 - Modelo base Qwen/Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset ReefNet-1.0: https://huggingface.co/datasets/ReefNet/ReefNet-1.0
 - Página del proyecto ReefNet: https://reefnet-project.github.io/reefnet-2025/

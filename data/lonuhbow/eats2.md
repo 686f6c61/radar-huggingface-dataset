@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lonuhbow/eats2 es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto (text-to-image), entrenado sobre el checkpoint Krea 2 RAW de Krea. Lo publica el usuario Lonuhbow en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino de bajo rango que se cargan sobre el pipeline Krea2Pipeline para introducir un concepto concreto activado por la palabra disparadora `Eats2`.
+Lonuhbow/eats2 es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto (text-to-image), entrenado sobre el checkpoint Krea 2 RAW de Krea. Lo publica el usuario Lonuhbow en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino de bajo rango que se cargan sobre el pipeline Krea2Pipeline para introducir un concepto concreto activado por la palabra disparadora `Eats2`.
 
 El modelo base, Krea 2, se distribuye en dos variantes: RAW (base no destilada, empleada para entrenar el LoRA) y Turbo (destilada a 8 pasos de inferencia, pensada para generacion rapida). Segun la model card, los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo, por lo que el flujo recomendado es entrenar en RAW y desplegar en Turbo. Esto lo hace relevante para quien quiera personalizar Krea 2 sin reentrenar el modelo completo.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lonuhbow/eats2
+- Modelo en Hugging Face: https://huggingface.co/Lonuhbow/eats2
 - Archivos del modelo: https://huggingface.co/Lonuhbow/eats2/tree/main
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo

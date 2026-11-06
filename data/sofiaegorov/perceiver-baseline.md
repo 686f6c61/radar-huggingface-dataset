@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sofiaegorov/perceiver-baseline` es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura Perceiver en PyTorch, publicada por el usuario sofiaegorov bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida experimental: la propia model card lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción.
+`sofiaegorov/perceiver-baseline` es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura Perceiver en PyTorch, publicada por el usuario sofiaegorov bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida experimental: la propia model card lo describe como una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción.
 
 El modelo declara 33.088 parámetros totales según el archivo `model.safetensors`, lo que lo sitúa en el rango de las decenas de miles de parámetros, muy lejos de cualquier modelo generativo utilizable. La arquitectura combina atención lineal con fusión tipo Tucker, activación GELU y normalización LayerNorm, siguiendo el paradigma Perceiver de cuello de botella latente mediante atención cruzada.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sofiaegorov/perceiver-baseline | 33.088 | No disponible | MIT | HuggingFace, 10 descargas |
+| sofiaegorov/perceiver-baseline | 33.088 | No disponible | MIT | Hugging Face, 10 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 Como referencia de familia arquitectónica existe la implementación original de Perceiver de DeepMind, pero sus especificaciones y resultados no forman parte de la información disponible en esta consulta.
@@ -79,7 +79,7 @@ Como referencia de familia arquitectónica existe la implementación original de
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, tal y como advierte la propia model card.
 - No se declara ningún idioma soportado, por lo que no se puede asumir cobertura multilingüe ni siquiera monolingüe.
 - No hay resultados de benchmarks, por lo que no existe evidencia de rendimiento en ninguna tarea.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito; esto complica su integración en herramientas estándar.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito; esto complica su integración en herramientas estándar.
 - No es adecuado para uso en producción: la model card lo clasifica como punto de partida experimental.
 - Riesgo de alucinación: no aplica en el sentido habitual, ya que no hay un modelo de lenguaje entrenado; el riesgo real es interpretar las salidas de un checkpoint sin entrenar como si fueran predicciones válidas.
 - Licencia MIT: permite uso comercial y modificación, pero al no existir pesos entrenados no hay un producto comercializable. Si se usa con conjuntos de datos externos, deben revisarse por separado los términos de esos datos.
@@ -87,5 +87,5 @@ Como referencia de familia arquitectónica existe la implementación original de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sofiaegorov/perceiver-baseline
+- Hugging Face: https://huggingface.co/sofiaegorov/perceiver-baseline
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

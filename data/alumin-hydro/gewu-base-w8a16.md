@@ -85,10 +85,10 @@ No se dispone de datos de contexto, licencia o rendimiento de las alternativas e
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gewu-Base-W8A16 | 8.953.803.264 | GPTQ W8A16, grupo 128 | No disponible | Apache-2.0 | HuggingFace, formato compressed-tensors para vLLM |
-| Qwen/Qwen3.5-9B | No disponible en la informacion (es el modelo base) | 16 bits (referencia) | No disponible | Apache-2.0 segun la model card | HuggingFace |
-| Alumin-Hydro/Gewu-SFT-W8A16 | No disponible | W8A16 con el ajuste fusionado | No disponible | No disponible en la informacion | HuggingFace; pensado para servir sin soporte de LoRA |
-| Alumin-Hydro/Gewu-SFT | No disponible (adaptador LoRA, rango <= 32) | bfloat16 (adaptador) | No disponible | No disponible en la informacion | HuggingFace, carpeta `vllm/` para montaje en caliente |
+| Gewu-Base-W8A16 | 8.953.803.264 | GPTQ W8A16, grupo 128 | No disponible | Apache-2.0 | Hugging Face, formato compressed-tensors para vLLM |
+| Qwen/Qwen3.5-9B | No disponible en la informacion (es el modelo base) | 16 bits (referencia) | No disponible | Apache-2.0 segun la model card | Hugging Face |
+| Alumin-Hydro/Gewu-SFT-W8A16 | No disponible | W8A16 con el ajuste fusionado | No disponible | No disponible en la informacion | Hugging Face; pensado para servir sin soporte de LoRA |
+| Alumin-Hydro/Gewu-SFT | No disponible (adaptador LoRA, rango <= 32) | bfloat16 (adaptador) | No disponible | No disponible en la informacion | Hugging Face, carpeta `vllm/` para montaje en caliente |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No se dispone de datos de contexto, licencia o rendimiento de las alternativas e
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Alumin-Hydro/Gewu-Base-W8A16
+- Hugging Face (modelo): https://huggingface.co/Alumin-Hydro/Gewu-Base-W8A16
 - Adaptador LoRA del sistema: https://huggingface.co/Alumin-Hydro/Gewu-SFT
 - Version fusionada y cuantizada, para servir sin LoRA: https://huggingface.co/Alumin-Hydro/Gewu-SFT-W8A16
 - Corpus de calibracion: https://huggingface.co/Alumin-Hydro/GewuBank-20K

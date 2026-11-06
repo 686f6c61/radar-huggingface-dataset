@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Torug Turkish safety classifier — BERT q8 es un clasificador de seguridad de tres etiquetas (`safe`, `warn`, `block`) diseñado para prompts en turco dentro del sistema Torug. Lo publica el usuario sinatras en HuggingFace y su función es actuar como una señal de seguridad sobre la entrada del usuario, no como un modelo generativo: no produce respuestas ni envía prompts a servicios de inferencia alojados. Está empaquetado para ejecutarse localmente con Transformers.js y ONNX Runtime, lo que permite integrarlo tanto en backend como directamente en el navegador.
+Torug Turkish safety classifier — BERT q8 es un clasificador de seguridad de tres etiquetas (`safe`, `warn`, `block`) diseñado para prompts en turco dentro del sistema Torug. Lo publica el usuario sinatras en Hugging Face y su función es actuar como una señal de seguridad sobre la entrada del usuario, no como un modelo generativo: no produce respuestas ni envía prompts a servicios de inferencia alojados. Está empaquetado para ejecutarse localmente con Transformers.js y ONNX Runtime, lo que permite integrarlo tanto en backend como directamente en el navegador.
 
 Técnicamente es un `BertForSequenceClassification` de 12 capas con hidden size 768 y una longitud máxima de entrada de 512 tokens. El artefacto publicado es una cuantización dinámica por canal QUInt8 (solicitada como `dtype: "q8"`) en ONNX opset 17, con dimensiones de batch y secuencia dinámicas. El fichero de pesos ocupa 111.844.312 bytes y el conjunto de ficheros de inferencia ronda los 113 MB, por lo que el coste de despliegue es muy bajo.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Torug Turkish safety classifier — BERT q8 | no disponible (BERT 12 capas, hidden 768) | 512 tokens | Mejora cualitativa frente al DistilBERT anterior; sin cifras | no disponible | HuggingFace, ONNX + Transformers.js |
+| Torug Turkish safety classifier — BERT q8 | no disponible (BERT 12 capas, hidden 768) | 512 tokens | Mejora cualitativa frente al DistilBERT anterior; sin cifras | no disponible | Hugging Face, ONNX + Transformers.js |
 | Clasificador DistilBERT anterior de Torug | no disponible | no disponible | Inferior en detección de peticiones dañinas según el autor | no disponible | no disponible |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,6 +101,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sinatras/torug-safety-bert-q8
+- Modelo en Hugging Face: https://huggingface.co/sinatras/torug-safety-bert-q8
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo (el único resultado encontrado, un hilo de Microsoft Community sobre correo electrónico en Outlook, no guarda relación con el modelo).

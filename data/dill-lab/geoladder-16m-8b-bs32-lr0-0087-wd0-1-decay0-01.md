@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Corpus | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-8B... | 16M | 2048 (entrenamiento) | The Pile deduplicado, 8B tokens | no disponible | HuggingFace (repo con 41 checkpoints) |
-| Pythia-14M (EleutherAI) | 14M | 2048 | The Pile | Apache-2.0 | HuggingFace |
-| Pythia-70M (EleutherAI) | 70M | 2048 | The Pile | Apache-2.0 | HuggingFace |
-| OLMo (AI2) | versiones desde 1B | hasta 2048 en la version inicial | Dolma | Apache-2.0 | HuggingFace |
+| GeoLadder-16M-8B... | 16M | 2048 (entrenamiento) | The Pile deduplicado, 8B tokens | no disponible | Hugging Face (repo con 41 checkpoints) |
+| Pythia-14M (EleutherAI) | 14M | 2048 | The Pile | Apache-2.0 | Hugging Face |
+| Pythia-70M (EleutherAI) | 70M | 2048 | The Pile | Apache-2.0 | Hugging Face |
+| OLMo (AI2) | versiones desde 1B | hasta 2048 en la version inicial | Dolma | Apache-2.0 | Hugging Face |
 
 La comparacion mas directa es con la suite Pythia, que sigue un espiritu similar (checkpoints multiples y reproducibilidad), aunque Pythia publica con licencia Apache-2.0 y sobre el Pile completo, mientras que GeoLadder usa el Pile deduplicado y no declara licencia en la informacion disponible. No se dispone de cifras de rendimiento comparables entre estos modelos en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparacion mas directa es con la suite Pythia, que sigue un espiritu similar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.01
+- Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

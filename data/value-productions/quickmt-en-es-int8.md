@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| quickmt-en-es-int8 | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| quickmt/quickmt-en-es (base) | no disponible | no disponible | CC BY 4.0 | float16 | HuggingFace |
-| Modelos NMT en-es de OPUS-MT | no disponible | no disponible | varía (MIT/Apache en muchos casos) | safetensors, CTranslate2 | HuggingFace |
-| LLMs multilingües grandes (p. ej. familia Llama, Mistral) | miles de millones | 8k-128k | varía | safetensors, GGUF | HuggingFace |
+| quickmt-en-es-int8 | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| quickmt/quickmt-en-es (base) | no disponible | no disponible | CC BY 4.0 | float16 | Hugging Face |
+| Modelos NMT en-es de OPUS-MT | no disponible | no disponible | varía (MIT/Apache en muchos casos) | safetensors, CTranslate2 | Hugging Face |
+| LLMs multilingües grandes (p. ej. familia Llama, Mistral) | miles de millones | 8k-128k | varía | safetensors, GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (BLEU, COMET) entre estos modelos en la información proporcionada. La comparación se limita a aspectos de formato, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (BLEU, COMET) entre estos mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-en-es-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-en-es-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-es
 - Proyecto quickmt: no disponible
 - Aplicación Yaku Translate: no disponible

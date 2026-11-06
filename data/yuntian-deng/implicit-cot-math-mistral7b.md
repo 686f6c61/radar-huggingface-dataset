@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yuntian-deng/implicit-cot-math-mistral7b` | 7 241 732 096 | 32 768 (heredado, no verificado) | Ajuste fino con CoT implícita (internalización por pasos) sobre GSM8K | No disponible | HuggingFace + Space de demo |
-| `mistralai/Mistral-7B-v0.1` (base) | 7 241 732 096 | 32 768 | Modelo base preentrenado, sin ajuste matemático | No verificada en la información disponible | HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.2` | ~7,2 B | 32 768 | Ajuste instruido con alineación para diálogo | No verificada en la información disponible | HuggingFace |
-| `meta-llama/Llama-3-8B-Instruct` | ~8 B | 8 192 | Ajuste instruido con alineación | No verificada en la información disponible | HuggingFace (acceso con aceptación de términos) |
+| `yuntian-deng/implicit-cot-math-mistral7b` | 7 241 732 096 | 32 768 (heredado, no verificado) | Ajuste fino con CoT implícita (internalización por pasos) sobre GSM8K | No disponible | Hugging Face + Space de demo |
+| `mistralai/Mistral-7B-v0.1` (base) | 7 241 732 096 | 32 768 | Modelo base preentrenado, sin ajuste matemático | No verificada en la información disponible | Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.2` | ~7,2 B | 32 768 | Ajuste instruido con alineación para diálogo | No verificada en la información disponible | Hugging Face |
+| `meta-llama/Llama-3-8B-Instruct` | ~8 B | 8 192 | Ajuste instruido con alineación | No verificada en la información disponible | Hugging Face (acceso con aceptación de términos) |
 
 No se dispone de cifras de benchmarks comparables en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, enfoque de entrenamiento y disponibilidad. La diferencia funcional clave frente a las alternativas instruidas es que este checkpoint no mantiene conversaciones ni sigue instrucciones generales: espera un formato exacto y devuelve una respuesta corta.
 
@@ -96,7 +96,7 @@ No se dispone de cifras de benchmarks comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuntian-deng/implicit-cot-math-mistral7b
+- Modelo en Hugging Face: https://huggingface.co/yuntian-deng/implicit-cot-math-mistral7b
 - Demo interactiva: https://huggingface.co/spaces/yuntian-deng/implicit-cot-math
 - Código de entrenamiento y configuración de GSM8K: https://github.com/da03/Internalize_CoT_Step_by_Step
 - Artículo principal (arXiv:2405.14838): https://arxiv.org/abs/2405.14838

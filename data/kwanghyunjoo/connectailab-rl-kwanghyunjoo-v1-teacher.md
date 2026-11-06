@@ -74,7 +74,7 @@ Estos valores provienen exclusivamente de la model card del autor, corresponden 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ilsacheonri-v1 (connectailab-rl-kwanghyunjoo-v1-teacher) | Política RL (PPO) sobre simulador | no disponible | no aplica | 11,34 M won/mes, 95 % satisfacción, 2,9 incidentes | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| ilsacheonri-v1 (connectailab-rl-kwanghyunjoo-v1-teacher) | Política RL (PPO) sobre simulador | no disponible | no aplica | 11,34 M won/mes, 95 % satisfacción, 2,9 incidentes | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Presidente de reglas de CONNECT TYCOON | Heurística determinista | no aplica | no aplica | 3,24 M won/mes, 79 % satisfacción, 7,8 incidentes | la del repositorio CONNECT TYCOON | Incluido en el simulador |
 | Otras políticas RL públicas para decisión empresarial | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -97,7 +97,7 @@ No se dispone de modelos comparables adicionales en la información consultada; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v1-teacher
+- Hugging Face: https://huggingface.co/kwanghyunjoo/connectailab-rl-kwanghyunjoo-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

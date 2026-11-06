@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tyre-resnet50-model` es un modelo publicado en HuggingFace por el usuario `jeetendra-bhosale-2026` bajo licencia MIT. Por el identificador del repositorio y la etiqueta de libreria (`keras`) se deduce que se trata de un clasificador de imagenes de neumaticos basado en la arquitectura convolucional ResNet50, aunque la model card no aporta ninguna descripcion del modelo, del dataset ni de las clases de salida. El repositorio ocupa 0,1 GB, un tamano coherente con un checkpoint ResNet50 en precision FP32.
+`tyre-resnet50-model` es un modelo publicado en Hugging Face por el usuario `jeetendra-bhosale-2026` bajo licencia MIT. Por el identificador del repositorio y la etiqueta de libreria (`keras`) se deduce que se trata de un clasificador de imagenes de neumaticos basado en la arquitectura convolucional ResNet50, aunque la model card no aporta ninguna descripcion del modelo, del dataset ni de las clases de salida. El repositorio ocupa 0,1 GB, un tamano coherente con un checkpoint ResNet50 en precision FP32.
 
 El modelo no resuelve un problema de lenguaje: es un modelo de vision por computacion orientado a una tarea de clasificacion de imagenes de dominio especifico (inspeccion de neumaticos). No dispone de contexto textual, no soporta generacion de texto ni tool calling, y no esta pensado para integracion en pipelines de agentes.
 
-Su relevancia actual es limitada desde el punto de vista de la investigacion: cuenta con 0 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado en HuggingFace y la model card solo contiene el campo `license: mit`. Cualquier evaluacion seria del modelo requiere descargar los pesos e inspeccionar la capa de salida para determinar el numero de clases y la resolucion de entrada esperada.
+Su relevancia actual es limitada desde el punto de vista de la investigacion: cuenta con 0 descargas y 0 likes en el momento de la consulta, no tiene pipeline declarado en Hugging Face y la model card solo contiene el campo `license: mit`. Cualquier evaluacion seria del modelo requiere descargar los pesos e inspeccionar la capa de salida para determinar el numero de clases y la resolucion de entrada esperada.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 | Modelo | Parametros | Entrada tipica | Licencia habitual | Disponibilidad | Rendimiento en esta tarea |
 |---|---|---|---|---|---|
-| tyre-resnet50-model | ~25,6 M (inferido) | No disponible | MIT (confirmada) | HuggingFace, 0 descargas | No disponible |
+| tyre-resnet50-model | ~25,6 M (inferido) | No disponible | MIT (confirmada) | Hugging Face, 0 descargas | No disponible |
 | ResNet50 (ImageNet, referencia) | ~25,6 M | 224x224 | Varía segun implementacion | Amplia en Keras, torchvision, timm | Requiere fine-tuning para neumaticos |
 | EfficientNet-B0 | ~5,3 M | 224x224 | Varía segun implementacion | Amplia en timm y Keras Applications | Requiere fine-tuning; menor coste computacional |
 | MobileNetV3-Large | ~5,4 M | 224x224 | Varía segun implementacion | Amplia, con variantes TFLite | Requiere fine-tuning; orientado a dispositivos de borde |
@@ -99,7 +99,7 @@ La ventaja practica de este repositorio frente a un ResNet50 generico es que, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeetendra-bhosale-2026/tyre-resnet50-model
-- Perfil del autor en HuggingFace: https://huggingface.co/jeetendra-bhosale-2026
+- Modelo en Hugging Face: https://huggingface.co/jeetendra-bhosale-2026/tyre-resnet50-model
+- Perfil del autor en Hugging Face: https://huggingface.co/jeetendra-bhosale-2026
 - Paper original de ResNet (referencia de la arquitectura, no vinculado al autor): https://arxiv.org/abs/1512.03385
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados especificamente a este modelo.

@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al ser un modelo de 70B en cuantizacion 4-bit, se requieren aproximadamente 35-40 GB de VRAM para inferencia (peso del modelo + overhead de atencion). Con cuantizacion 8-bit serian unos 70 GB.
 - GPU recomendadas: NVIDIA A100 (40/80 GB), A6000 (48 GB), RTX 4090 (24 GB) con cuantizacion adicional o offloading, o H100 (80 GB) para mayor margen.
 - En consumer GPU: cabe en una RTX 4090 (24 GB) solo con cuantizacion 4-bit y posiblemente con offloading de capas a RAM, pero con latencia alta. No es recomendable para produccion.
-- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp (con GGUF), Ollama (si se convierte a GGUF). El repositorio indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp (con GGUF), Ollama (si se convierte a GGUF). El repositorio indica compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. Dependen del hardware y del backend; en una A100 se espera un throughput de 10-20 tokens/s con batch pequeno.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shunjdy/Soa-RR | 70B (4-bit) | no disponible | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Llama-70B | 70B | 128k | MIT (modelo base) | HuggingFace |
-| Llama-3.3-70B-Instruct | 70B | 128k | Llama 3.3 Community License | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | HuggingFace |
+| shunjdy/Soa-RR | 70B (4-bit) | no disponible | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Llama-70B | 70B | 128k | MIT (modelo base) | Hugging Face |
+| Llama-3.3-70B-Instruct | 70B | 128k | Llama 3.3 Community License | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 128k | Apache 2.0 | Hugging Face |
 
 Soa-RR se diferencia por ser un fine-tuning especifico de la version cuantizada de DeepSeek-R1-Distill-Llama-70B, con un tamano de repositorio reducido (0,8 GB) que facilita su descarga. Sin embargo, carece de documentacion sobre el dataset y el rendimiento, lo que limita su comparabilidad directa.
 
@@ -77,7 +77,7 @@ Soa-RR se diferencia por ser un fine-tuning especifico de la version cuantizada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shunjdy/Soa-RR
+- Modelo en Hugging Face: https://huggingface.co/shunjdy/Soa-RR
 - Perfil del autor: https://huggingface.co/shunjdy
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

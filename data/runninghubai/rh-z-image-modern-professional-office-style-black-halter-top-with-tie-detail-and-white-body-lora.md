@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-z-image-modern-professional-office-style-black-halter-top-with-tie-detail-and-white-body-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-z-image-modern-professional-office-style-black-halter-top-with-tie-detail-and-white-body-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2113468809767395330
 - Perfil del autor en RunningHub: https://www.runninghub.ai/user-center/1931299605898764290
 - Workflow recomendado: https://www.runninghub.ai/post/1993873213671358466/?inviteCode=rh-v1220

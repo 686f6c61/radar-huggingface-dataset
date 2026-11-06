@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ololade117/shakespeare-bias-gated-sigmoid es un modelo publicado en HuggingFace Hub por el usuario Ololade117 el 18 de septiembre de 2026. Se trata de un checkpoint de muy pequeno tamano (1.016.192 parametros, aproximadamente 1,02 millones) distribuido en formato safetensors y con licencia MIT. El repositorio no incluye pipeline declarado, idiomas declarados ni resultados de evaluacion, y la model card es la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de HuggingFace, sin documentacion tecnica adicional.
+Ololade117/shakespeare-bias-gated-sigmoid es un modelo publicado en Hugging Face Hub por el usuario Ololade117 el 18 de septiembre de 2026. Se trata de un checkpoint de muy pequeno tamano (1.016.192 parametros, aproximadamente 1,02 millones) distribuido en formato safetensors y con licencia MIT. El repositorio no incluye pipeline declarado, idiomas declarados ni resultados de evaluacion, y la model card es la plantilla autogenerada por la integracion `PyTorchModelHubMixin` de Hugging Face, sin documentacion tecnica adicional.
 
 Por el nombre del repositorio cabe inferir dos cosas, ninguna de ellas confirmada por el autor: que el entrenamiento se realizo sobre el corpus literario de Shakespeare (probablemente el dataset Tiny Shakespeare usado habitualmente en experimentos tipo nanoGPT) y que la arquitectura incorpora algun mecanismo de puerta ("gating") sobre un sesgo y una activacion sigmoide. Ni la model card ni la busqueda web aportan confirmacion de estos extremos.
 
@@ -23,7 +23,7 @@ El interes de este modelo es limitado para produccion: se trata de un experiment
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda. Los unicos indicios son el nombre del repositorio ("shakespeare", "bias-gated", "sigmoid") y las etiquetas de HuggingFace (`safetensors`, `model_hub_mixin`, `pytorch_model_hub_mixin`, `region:us`). No hay documentacion sobre numero de capas, dimension del modelo, numero de cabezas de atencion, tipo de tokenizer ni mecanismo de atencion.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los resultados de busqueda. Los unicos indicios son el nombre del repositorio ("shakespeare", "bias-gated", "sigmoid") y las etiquetas de Hugging Face (`safetensors`, `model_hub_mixin`, `pytorch_model_hub_mixin`, `region:us`). No hay documentacion sobre numero de capas, dimension del modelo, numero de cabezas de atencion, tipo de tokenizer ni mecanismo de atencion.
 
 Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino con RLHF o DPO, ni si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o mezclas de expertos. La model card se limita a indicar "[More Information Needed]" en los campos de codigo, paper y documentacion. Cualquier afirmacion sobre innovaciones tecnicas seria especulativa y no debe atribuirse al autor.
 
@@ -65,10 +65,10 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/shakespeare-bias-gated-sigmoid | 1.016.192 | no disponible | MIT | HuggingFace Hub, 0 descargas y 0 likes |
+| Ololade117/shakespeare-bias-gated-sigmoid | 1.016.192 | no disponible | MIT | Hugging Face Hub, 0 descargas y 0 likes |
 | Modelos tipo nanoGPT sobre Tiny Shakespeare | no disponible | no disponible | no disponible | Multiples repositorios no oficiales |
-| roneneldan/TinyStories-1M y variantes de ~1 M de parametros | no disponible | no disponible | no disponible | HuggingFace Hub |
-| distilgpt2 | ~82 millones | 1024 tokens | Apache-2.0 | HuggingFace Hub, ampliamente utilizado |
+| roneneldan/TinyStories-1M y variantes de ~1 M de parametros | no disponible | no disponible | no disponible | Hugging Face Hub |
+| distilgpt2 | ~82 millones | 1024 tokens | Apache-2.0 | Hugging Face Hub, ampliamente utilizado |
 
 No hay benchmarks que permitan comparar rendimiento entre estas alternativas, y el modelo objeto de la ficha carece de tokenizer y configuracion documentados, lo que dificulta incluso una evaluacion reproducible.
 
@@ -86,7 +86,7 @@ No hay benchmarks que permitan comparar rendimiento entre estas alternativas, y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ololade117/shakespeare-bias-gated-sigmoid
+- Hugging Face: https://huggingface.co/Ololade117/shakespeare-bias-gated-sigmoid
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del modelo: no disponible
 - Paper: no disponible

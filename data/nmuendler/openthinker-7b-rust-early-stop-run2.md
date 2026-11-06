@@ -4,7 +4,7 @@
 
 OpenThinker-7B-rust-early-stop-run2 es un adaptador LoRA publicado por el usuario nmuendler sobre el modelo abierto open-thoughts/OpenThinker-7B, un modelo de razonamiento de 7.000 millones de parametros orientado a generacion de cadenas de pensamiento. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,3 GB), no el modelo completo, por lo que para ejecutarlo es necesario descargar el modelo base y fusionar o cargar el adaptador con PEFT.
 
-El identificador sugiere un experimento de ajuste fino sobre codigo Rust con parada temprana ("early-stop") en una segunda ejecucion, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni el objetivo del entrenamiento: es la plantilla por defecto de HuggingFace sin rellenar. El repositorio se creo y se actualizo el 16 de septiembre de 2026 con ocho segundos de diferencia entre ambos eventos, lo que apunta a una publicacion automatizada desde un pipeline de entrenamiento, y acumula cero descargas y cero "likes".
+El identificador sugiere un experimento de ajuste fino sobre codigo Rust con parada temprana ("early-stop") en una segunda ejecucion, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni el objetivo del entrenamiento: es la plantilla por defecto de Hugging Face sin rellenar. El repositorio se creo y se actualizo el 16 de septiembre de 2026 con ocho segundos de diferencia entre ambos eventos, lo que apunta a una publicacion automatizada desde un pipeline de entrenamiento, y acumula cero descargas y cero "likes".
 
 Su relevancia es por tanto limitada y de caracter experimental: sirve como artefacto reproducible para investigacion sobre ajuste eficiente de modelos de razonamiento, pero no como modelo listo para produccion. No hay licencia declarada, no hay idiomas declarados y no hay resultados de evaluacion publicados en la informacion disponible.
 
@@ -26,7 +26,7 @@ Su relevancia es por tanto limitada y de caracter experimental: sirve como artef
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del adaptador ni del modelo base: la model card es la plantilla generica de HuggingFace con todos los campos marcados como "[More Information Needed]". Los unicos datos tecnicos verificables son la libreria de publicacion (peft), el formato (safetensors) y la etiqueta base_model:adapter:open-thoughts/OpenThinker-7B, que confirma que se trata de un adaptador y no de un modelo completo. El nombre del repositorio indica que se aplico una estrategia de parada temprana y que existe al menos una ejecucion previa ("run2"), pero no se documenta el numero de pasos, el rango del LoRA, el learning rate ni la composicion del dataset.
+La informacion disponible no describe la arquitectura del adaptador ni del modelo base: la model card es la plantilla generica de Hugging Face con todos los campos marcados como "[More Information Needed]". Los unicos datos tecnicos verificables son la libreria de publicacion (peft), el formato (safetensors) y la etiqueta base_model:adapter:open-thoughts/OpenThinker-7B, que confirma que se trata de un adaptador y no de un modelo completo. El nombre del repositorio indica que se aplico una estrategia de parada temprana y que existe al menos una ejecucion previa ("run2"), pero no se documenta el numero de pasos, el rango del LoRA, el learning rate ni la composicion del dataset.
 
 Tampoco hay informacion sobre si el ajuste incluyo RLHF, DPO u otra fase de alineamiento posterior, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica referencia a un paper en las etiquetas del repositorio (arxiv:1910.09700) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la seccion de impacto ambiental de la plantilla, y no a una publicacion metodologica de este modelo.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | OpenThinker-7B-rust-early-stop-run2 (este) | 7B (adaptador LoRA) | no disponible | no disponible | no disponible | Repositorio de 0,3 GB, 0 descargas |
-| open-thoughts/OpenThinker-7B (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos completos en HuggingFace |
+| open-thoughts/OpenThinker-7B (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos completos en Hugging Face |
 | Otros modelos de razonamiento de ~7B | ~7B | no disponible | no disponible | variable | Amplia disponibilidad |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa fiable con alternativas de la misma categoria.

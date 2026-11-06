@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hexc0de/lora.r.v1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `stabilityai/stable-diffusion-xl-base-1.0`, especializado en generación de imágenes a partir de texto. Lo publica el autor `hexc0de` en HuggingFace bajo licencia OpenRAIL, con un repositorio de aproximadamente 0,5 GB. La model card apenas contiene información: no se especifica el prompt de instancia, el estilo o concepto que adapta, ni se incluyen ejemplos de uso más allá de una imagen de muestra.
+El modelo `hexc0de/lora.r.v1` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `stabilityai/stable-diffusion-xl-base-1.0`, especializado en generación de imágenes a partir de texto. Lo publica el autor `hexc0de` en Hugging Face bajo licencia OpenRAIL, con un repositorio de aproximadamente 0,5 GB. La model card apenas contiene información: no se especifica el prompt de instancia, el estilo o concepto que adapta, ni se incluyen ejemplos de uso más allá de una imagen de muestra.
 
 Este tipo de adaptadores se utilizan para ajustar un modelo de difusión preentrenado hacia un estilo, personaje, objeto o concepto concreto sin necesidad de reentrenar el modelo completo. Sin embargo, la ausencia de documentación detallada en la ficha del modelo limita seriamente su evaluación y uso práctico. A fecha de su publicación (septiembre de 2026), no registra descargas ni valoraciones, lo que sugiere que es un lanzamiento reciente o poco difundido.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura interna del LoRA, el núme
 
 - Generación de imágenes a partir de texto (text-to-image) usando el pipeline de diffusers.
 - Adaptación de estilo, personaje, objeto o concepto sobre SDXL, según la finalidad típica de un LoRA.
-- Compatible con el ecosistema de HuggingFace diffusers, lo que permite integración con herramientas como ComfyUI, Automatic1111 o API de generación.
+- Compatible con el ecosistema de Hugging Face diffusers, lo que permite integración con herramientas como ComfyUI, Automatic1111 o API de generación.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte de audio/vídeo.
 
 ## Casos de uso
@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- [HuggingFace - hexc0de/lora.r.v1](https://huggingface.co/hexc0de/lora.r.v1)
+- [Hugging Face - hexc0de/lora.r.v1](https://huggingface.co/hexc0de/lora.r.v1)
 - [Modelo base: stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - [Guía general sobre LoRA en AI Gallery](https://aigallery.app/guides/lora-models-guide/) (referencia externa, no específica del modelo)

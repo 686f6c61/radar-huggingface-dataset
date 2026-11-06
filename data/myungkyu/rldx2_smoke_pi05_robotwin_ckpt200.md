@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rldx2_smoke_pi05_robotwin_ckpt200 | 4.143.404.816 | VLA Pi0.5 ajustado en RoboTwin 2.0 | lerobot/pi05_base | no disponible | HuggingFace (libreria lerobot) |
-| lerobot/pi05_base | no disponible en la informacion proporcionada | Backbone VLA Pi0.5 preentrenado | no aplica | no disponible | HuggingFace |
+| rldx2_smoke_pi05_robotwin_ckpt200 | 4.143.404.816 | VLA Pi0.5 ajustado en RoboTwin 2.0 | lerobot/pi05_base | no disponible | Hugging Face (libreria lerobot) |
+| lerobot/pi05_base | no disponible en la informacion proporcionada | Backbone VLA Pi0.5 preentrenado | no aplica | no disponible | Hugging Face |
 | Otras lineas base del leaderboard RoboTwin 2.0 | no disponible | VLA de manipulacion | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a la relacion de derivacion entre este checkpoint y su modelo base.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx2_smoke_pi05_robotwin_ckpt200
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx2_smoke_pi05_robotwin_ckpt200
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Conjunto de datos de ajuste: https://huggingface.co/datasets/TianxingChen/RoboTwin2.0
 - Adaptadores de evaluacion del proyecto RLDX-2: https://github.com/myungkyuKoo/RLDX-2 (ruta ops/eval/xpl)

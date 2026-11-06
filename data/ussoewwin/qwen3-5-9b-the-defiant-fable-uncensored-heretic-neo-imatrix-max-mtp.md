@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo publicado por el usuario ussoewwin bajo el identificador `Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP`. La información disponible se limita a los metadatos de HuggingFace: licencia apache-2.0, región "us", 29,0 GB de tamaño de repositorio, cero descargas y cero "likes" en el momento de la consulta, con fecha de creación del 24 de octubre de 2026 y última actualización dos horas después. La model card no contiene documentación técnica: únicamente incluye el bloque de frontmatter con la licencia.
+Este repositorio contiene un modelo publicado por el usuario ussoewwin bajo el identificador `Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP`. La información disponible se limita a los metadatos de Hugging Face: licencia apache-2.0, región "us", 29,0 GB de tamaño de repositorio, cero descargas y cero "likes" en el momento de la consulta, con fecha de creación del 24 de octubre de 2026 y última actualización dos horas después. La model card no contiene documentación técnica: únicamente incluye el bloque de frontmatter con la licencia.
 
 La nomenclatura del identificador sugiere una derivación del modelo Qwen3.5 de 9.000 millones de parámetros, con modificaciones del tipo "uncensored" y "heretic" (habituales en la comunidad para designar ajustes que eliminan o atenúan el alineamiento de seguridad), posibles fusiones de modelos y un sufijo "MTP" que podría corresponder a *multi-token prediction*. Ninguno de estos extremos está confirmado por el autor en la información proporcionada, por lo que deben tratarse como hipótesis derivadas del nombre y no como especificaciones verificadas.
 
@@ -17,7 +17,7 @@ Su relevancia práctica es limitada pero ilustrativa: representa el patrón de p
 | Parametros activos | no disponible (no consta que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio, de 29,0 GB, es compatible con pesos en FP16/BF16 y posibles archivos adicionales; sin confirmar) |
-| Idiomas soportados | no disponible (el campo de idiomas no esta cumplimentado en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas no esta cumplimentado en Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (no se documenta safetensors, GGUF ni otros formatos) |
 
@@ -93,6 +93,6 @@ No hay datos verificables que permitan una comparación cuantitativa. La tabla r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussoewwin/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
+- Hugging Face: https://huggingface.co/ussoewwin/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

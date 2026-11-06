@@ -91,9 +91,9 @@ El autor advierte que estas cifras de IFBench usan n = 4 y temperatura 1,0, no e
 
 | Modelo | Parametros | Contexto | Rendimiento (test DeepMath) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (gen 10) | 31B (base) | No disponible (evaluado a 16.384) | pass@1 0,691 | apache-2.0 (adaptador) | HuggingFace; 0 descargas, 0 likes |
-| Generacion 39 (`aestudio/gemma-4-31B-it-GRPO-math-lora`) | 31B (base) | No disponible | pass@1 0,758 | No disponible en los datos aportados | HuggingFace |
-| `google/gemma-4-31B-it` (base) | 31B | No disponible | pass@1 0,629 | No disponible en los datos aportados | HuggingFace |
+| Este adaptador (gen 10) | 31B (base) | No disponible (evaluado a 16.384) | pass@1 0,691 | apache-2.0 (adaptador) | Hugging Face; 0 descargas, 0 likes |
+| Generacion 39 (`aestudio/gemma-4-31B-it-GRPO-math-lora`) | 31B (base) | No disponible | pass@1 0,758 | No disponible en los datos aportados | Hugging Face |
+| `google/gemma-4-31B-it` (base) | 31B | No disponible | pass@1 0,629 | No disponible en los datos aportados | Hugging Face |
 
 No se dispone de datos para comparar con modelos de otros proveedores de la misma categoria a partir de la informacion proporcionada.
 
@@ -112,7 +112,7 @@ No se dispone de datos para comparar con modelos de otros proveedores de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aestudio/gemma-4-31B-it-GRPO-math-lora-gen10
+- Modelo en Hugging Face: https://huggingface.co/aestudio/gemma-4-31B-it-GRPO-math-lora-gen10
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Release final (generacion 39): https://huggingface.co/aestudio/gemma-4-31B-it-GRPO-math-lora
 - Dataset DeepMath-103K: https://huggingface.co/datasets/zwhe99/DeepMath-103K

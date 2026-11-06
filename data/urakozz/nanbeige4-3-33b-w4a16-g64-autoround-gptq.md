@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-W4A16-g64-AutoRound-GPTQ (este) | 6.774.369.280 en el checkpoint cuantizado; base denominado 33B | No disponible explícitamente; recomendaciones de hasta 262.144 tokens nuevos | W4A16 INT4, grupo 64, AutoRound GPTQ | Apache 2.0 | HuggingFace, 30 descargas, 0 likes |
-| Nanbeige/Nanbeige4.3-33B (base) | 33B (denominación) | No disponible en la información | BF16 | Apache 2.0 | HuggingFace |
+| Nanbeige4.3-33B-W4A16-g64-AutoRound-GPTQ (este) | 6.774.369.280 en el checkpoint cuantizado; base denominado 33B | No disponible explícitamente; recomendaciones de hasta 262.144 tokens nuevos | W4A16 INT4, grupo 64, AutoRound GPTQ | Apache 2.0 | Hugging Face, 30 descargas, 0 likes |
+| Nanbeige/Nanbeige4.3-33B (base) | 33B (denominación) | No disponible en la información | BF16 | Apache 2.0 | Hugging Face |
 | Alternativas de 33B densas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento con otros modelos de la misma categoría.

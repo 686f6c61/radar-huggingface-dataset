@@ -78,8 +78,8 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 | Modelo | Parametros | Contexto | Razonamiento (Historical) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B (base) | 4B | no disponible | ~84,5/100 con 35,9k tokens | no disponible | HuggingFace (XHToken/Spark-X2.6-4B) |
-| Spark-X2.6-4B-GMCE | 4B | no disponible | ~70,5/100 con 5,9k tokens | Apache 2.0 | HuggingFace (emperorofrome/Spark-X2.6-4B-GMCE) |
+| Spark-X2.6-4B (base) | 4B | no disponible | ~84,5/100 con 35,9k tokens | no disponible | Hugging Face (XHToken/Spark-X2.6-4B) |
+| Spark-X2.6-4B-GMCE | 4B | no disponible | ~70,5/100 con 5,9k tokens | Apache 2.0 | Hugging Face (emperorofrome/Spark-X2.6-4B-GMCE) |
 
 Comparativa con otros modelos de la misma categoria: no disponible.
 
@@ -98,6 +98,6 @@ Comparativa con otros modelos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emperorofrome/Spark-X2.6-4B-GMCE
+- Modelo en Hugging Face: https://huggingface.co/emperorofrome/Spark-X2.6-4B-GMCE
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

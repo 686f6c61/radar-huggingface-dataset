@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bengoldberg0/granite-4.2-3b-phishing-url-qlora
+- Modelo en Hugging Face: https://huggingface.co/bengoldberg0/granite-4.2-3b-phishing-url-qlora
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Dataset de entrenamiento: https://huggingface.co/datasets/phreshphish/phreshphish
 - Revisión fijada del adaptador: `c1c2501da8ab5bf02d89d3bf2d6f04719faf525a`

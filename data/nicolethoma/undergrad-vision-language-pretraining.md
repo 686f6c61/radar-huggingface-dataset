@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicolethoma/undergrad-vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación sobre pretraining visión-lenguaje publicado en HuggingFace bajo la etiqueta `research-notes`. El propio autor lo declara explícitamente: el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Los dos únicos ficheros documentados son `reading.md` (artefacto principal) y `README.md`.
+`nicolethoma/undergrad-vision-language-pretraining` no es un modelo entrenado, sino un repositorio de notas de investigación sobre pretraining visión-lenguaje publicado en Hugging Face bajo la etiqueta `research-notes`. El propio autor lo declara explícitamente: el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado". Los dos únicos ficheros documentados son `reading.md` (artefacto principal) y `README.md`.
 
 El contenido cubre el alcance de una pregunta de investigación, confounders probables, una comparación propuesta con líneas base emparejadas, contexto de evaluación con benchmarks públicos citados, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, junto con referencias bibliográficas del área. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como punto de par
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. El repositorio no describe capas, mecanismos de atención, diseño de encoder visual, objetivos de entrenamiento ni estrategia de fusión multimodal. El tag `transformer` figura entre las etiquetas de HuggingFace, pero la model card no lo respalda con ninguna especificación técnica.
+No hay información sobre arquitectura. El repositorio no describe capas, mecanismos de atención, diseño de encoder visual, objetivos de entrenamiento ni estrategia de fusión multimodal. El tag `transformer` figura entre las etiquetas de Hugging Face, pero la model card no lo respalda con ninguna especificación técnica.
 
 Tampoco hay datos de entrenamiento: no se indica número de tokens, composición del dataset, resolución de imagen, emparejamiento imagen-texto, ni uso de RLHF, DPO o ajuste por instrucciones. El README señala que, si en el futuro se añaden resultados, estos deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que confirma que en el estado actual no existe ninguno de esos artefactos.
 
@@ -82,7 +82,7 @@ No hay modelos comparables, porque este repositorio no es un modelo. Un artefact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolethoma/undergrad-vision-language-pretraining
+- Modelo en Hugging Face: https://huggingface.co/nicolethoma/undergrad-vision-language-pretraining
 - Survey de referencia sobre modelos preentrenados visión-lenguaje: https://arxiv.org/abs/2202.10936
 - Categoría Vision-Language Pretraining en Awesome-Foundation-Models: https://deepwiki.com/uncbiag/Awesome-Foundation-Models/5.2-vision-language-pretraining
 - Tema vision-language-pretraining en GitHub: https://github.com/topics/vision-language-pretraining

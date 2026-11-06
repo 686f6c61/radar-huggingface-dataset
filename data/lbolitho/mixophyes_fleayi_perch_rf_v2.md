@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixophyes_fleayi_Perch_RF_V2 es un clasificador binario de audio bioacústico publicado en HuggingFace por el usuario LBolitho. Su función es detectar las vocalizaciones de la rana *Mixophyes fleayi* en grabaciones de campo. No es una red neuronal entrenada de extremo a extremo, sino un *pipeline* en dos etapas: cada fragmento de un segundo de audio se convierte en un *embedding* mediante Perch 2, el modelo de sonidos animales de Google DeepMind, y un bosque aleatorio de scikit-learn puntúa ese vector para decidir si contiene o no el canto objetivo.
+Mixophyes_fleayi_Perch_RF_V2 es un clasificador binario de audio bioacústico publicado en Hugging Face por el usuario LBolitho. Su función es detectar las vocalizaciones de la rana *Mixophyes fleayi* en grabaciones de campo. No es una red neuronal entrenada de extremo a extremo, sino un *pipeline* en dos etapas: cada fragmento de un segundo de audio se convierte en un *embedding* mediante Perch 2, el modelo de sonidos animales de Google DeepMind, y un bosque aleatorio de scikit-learn puntúa ese vector para decidir si contiene o no el canto objetivo.
 
 El modelo se distribuye como un fichero `perch_rf.joblib` (bosque aleatorio de 500 árboles) más un JSON con los ajustes de uso. El umbral de decisión calibrado es 0,401: los fragmentos que lo superan se cuentan como detecciones. Está pensado para integrarse en flujos de monitorización acústica pasiva junto a un reconocedor basado en Whisper afinado para la misma especie, publicado por el mismo autor.
 
@@ -82,8 +82,8 @@ No se han publicado comparaciones con MMLU, HumanEval, GSM8K ni ningun otro benc
 
 | Modelo | Enfoque | Entrada | Metricas reportadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LBolitho/Mixophyes_fleayi_Perch_RF_V2 | Perch 2 congelado + random forest de 500 arboles | Clips de 1 s a 32 kHz, mono | F1 0,996 (umbral 0,401) en clips reservados; F1 0,992 con grabaciones dejadas fuera | no disponible | HuggingFace, 0 descargas |
-| LBolitho/Mixophyes_fleayi_Call_Recogniser_V1 | Whisper afinado | no disponible | no disponible | no disponible | HuggingFace |
+| LBolitho/Mixophyes_fleayi_Perch_RF_V2 | Perch 2 congelado + random forest de 500 arboles | Clips de 1 s a 32 kHz, mono | F1 0,996 (umbral 0,401) en clips reservados; F1 0,992 con grabaciones dejadas fuera | no disponible | Hugging Face, 0 descargas |
+| LBolitho/Mixophyes_fleayi_Call_Recogniser_V1 | Whisper afinado | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos bioacusticos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada por el autor es con su propio reconocedor basado en Whisper, del que no se detallan parametros, contexto ni metricas. No hay informacion suficiente para comparar con alternativas de terceros.
@@ -102,7 +102,7 @@ La unica comparacion documentada por el autor es con su propio reconocedor basad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LBolitho/Mixophyes_fleayi_Perch_RF_V2
+- Modelo en Hugging Face: https://huggingface.co/LBolitho/Mixophyes_fleayi_Perch_RF_V2
 - Reconocedor basado en Whisper del mismo autor: https://huggingface.co/LBolitho/Mixophyes_fleayi_Call_Recogniser_V1
 - Cuaderno Multi-Species Call Recogniser: citado en la *model card* sin enlace directo disponible
 - Perch 2 (Google DeepMind), accesible a traves del paquete `perch_hoplite`: sin enlace directo en la informacion proporcionada

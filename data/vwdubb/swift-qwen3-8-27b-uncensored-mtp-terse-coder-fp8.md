@@ -98,7 +98,7 @@ No se identifican en la informacion disponible alternativas de terceros con dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder-FP8
 - Modelo base (abliterated): https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Adaptador LoRA: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Plantilla de chat: Shockem/froggeric-terse-coder

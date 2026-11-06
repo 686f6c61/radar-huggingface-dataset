@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef-matching29 es un repositorio publicado en HuggingFace por el usuario jonatha-ntla6529 que contiene una implementacion propia de la arquitectura Albef orientada a tareas de *matching* (emparejamiento) con una configuracion declarada como *xlarge*. No se trata de un modelo entrenado: la propia model card especifica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint con resultados de benchmarks. El repositorio incluye el script `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `README.md`.
+Albef-matching29 es un repositorio publicado en Hugging Face por el usuario jonatha-ntla6529 que contiene una implementacion propia de la arquitectura Albef orientada a tareas de *matching* (emparejamiento) con una configuracion declarada como *xlarge*. No se trata de un modelo entrenado: la propia model card especifica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se presenta como un checkpoint con resultados de benchmarks. El repositorio incluye el script `eval.py` como artefacto principal, junto con `config.json`, `training_args.json` y un `README.md`.
 
 El modelo se publica bajo licencia Apache 2.0, con etiquetas que lo identifican como implementacion en PyTorch, familia Albef y tarea de matching. La fecha de creacion y ultima actualizacion registradas son el 12 de septiembre de 2026, separadas por seis segundos, lo que es coherente con una subida unica sin iteraciones posteriores. Acumula cero descargas y cero valoraciones, por lo que no hay evidencia de uso en la comunidad.
 
@@ -40,7 +40,7 @@ No hay capacidades verificadas. Al tratarse de un checkpoint de inicializacion s
 - Vision: la familia Albef es vision-lenguaje y el repositorio usa fusion *co-attention*, lo que sugiere una intencion multimodal, pero no se confirma en la informacion proporcionada ni se detalla el codificador visual.
 - *Tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas esta vacio en la ficha de Hugging Face.
 - Capacidades especiales (*thinking mode*, audio, etc.): no disponibles.
 - Uso previsto confirmado: ejecucion de *smoke tests* de carga de pesos y validacion de la implementacion mediante `python eval.py --help`.
 
@@ -50,7 +50,7 @@ Advertencia previa: dado que el checkpoint no esta entrenado, los casos siguient
 
 - Pruebas de humo de infraestructura: el repositorio permite verificar que un pipeline de carga de safetensors, tokenizacion y ejecucion en PyTorch funciona correctamente antes de invertir en entrenamiento, ya que incluye un checkpoint de inicializacion valido y un script `eval.py` ejecutable.
 - Base para reproduccion de experimentos Albef: el script, `config.json` y `training_args.json` permiten reconstruir una receta concreta (Lion + OneCycle) y compararla contra otras configuraciones bajo el mismo presupuesto de ajuste y las mismas semillas, tal como recomienda el autor.
-- Desarrollo de adaptadores de carga: al ser una implementacion personalizada, requiere un adaptador explicito para las APIs automaticas de HuggingFace; el repositorio sirve como caso de prueba para escribir y validar ese adaptador.
+- Desarrollo de adaptadores de carga: al ser una implementacion personalizada, requiere un adaptador explicito para las APIs automaticas de Hugging Face; el repositorio sirve como caso de prueba para escribir y validar ese adaptador.
 - Investigacion academica sobre fusion multimodal: la combinacion de atencion dilatada y *co-attention* puede utilizarse como punto de partida para estudiar estrategias de fusion en tareas de emparejamiento imagen-texto, siempre que se entrene el modelo y se documenten los resultados por separado de los valores por defecto.
 - Docencia y formacion: el repositorio es un ejemplo compacto de estructura de proyecto de vision-lenguaje (configuracion, argumentos de entrenamiento, script de evaluacion y pesos) util para explicar el ciclo completo de publicacion de un modelo.
 - Linea base de capacidad minima en comparaciones controladas: puede emplearse como referencia de inicializacion aleatoria frente a checkpoints entrenados, con el objetivo de aislar la contribucion real del entrenamiento en la metrica de tarea.
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jonatha-ntla6529/albef-matching29
-- Model card del autor: incluida en el propio repositorio de HuggingFace (no se proporciona URL independiente).
+- Hugging Face: https://huggingface.co/jonatha-ntla6529/albef-matching29
+- Model card del autor: incluida en el propio repositorio de Hugging Face (no se proporciona URL independiente).
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces recuperados (repositorios de prompts tipo DAN, un proyecto de clonacion de voz y documentacion de facturacion de GitHub Copilot) no guardan relacion con la ficha y se descartan como fuentes.

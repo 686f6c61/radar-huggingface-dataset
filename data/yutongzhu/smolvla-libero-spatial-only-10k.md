@@ -6,7 +6,7 @@
 
 El modelo tiene 450.046.176 parámetros (unos 450 M) y se distribuye en formato safetensors con un tamaño de repositorio de 0,9 GB, por lo que es ligero y desplegable en una única GPU de consumo. Su relevancia actual es metodológica: el autor demuestra que, en la tarea objetivo, un ajuste fino estrecho y más corto iguala estadísticamente a un ajuste con datos mezclados y el doble de pasos, lo que cuestiona la necesidad de mezclar subconjuntos cuando el dominio de evaluación está bien delimitado.
 
-La ficha se basa exclusivamente en la model card del autor, los metadatos de HuggingFace y los resultados declarados en el `model-index`. Cualquier dato no publicado se marca como «no disponible».
+La ficha se basa exclusivamente en la model card del autor, los metadatos de Hugging Face y los resultados declarados en el `model-index`. Cualquier dato no publicado se marca como «no disponible».
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ Comparacion por pares episodio a episodio frente al modelo de cuatro subconjunto
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Rendimiento LIBERO-Spatial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `yutongzhu/smolvla-libero-spatial-only-10k` | 450 M | No disponible | LIBERO-Spatial (432 demostraciones), 10k pasos | 80 % (71-87) | Apache 2.0 | Publico en HuggingFace |
-| `yutongzhu/smolvla-libero-ft20k` | No disponible en esta ficha (mismo backbone SmolVLA) | No disponible | Cuatro subconjuntos (1693 demostraciones), 20k pasos | 78 % (69-85) | No disponible en esta ficha | Publico en HuggingFace |
-| `HuggingFaceVLA/smolvla_libero` (oficial) | No disponible en esta ficha | No disponible | No disponible | 69 % (59-77), n=1 | No disponible en esta ficha | Publico en HuggingFace |
-| `lerobot/smolvla_base` (modelo de partida) | 450 M (heredado) | No disponible | Datos comunitarios de LeRobot, no detallados aqui | No disponible (sin ajuste a LIBERO) | No disponible en esta ficha | Publico en HuggingFace |
+| `yutongzhu/smolvla-libero-spatial-only-10k` | 450 M | No disponible | LIBERO-Spatial (432 demostraciones), 10k pasos | 80 % (71-87) | Apache 2.0 | Publico en Hugging Face |
+| `yutongzhu/smolvla-libero-ft20k` | No disponible en esta ficha (mismo backbone SmolVLA) | No disponible | Cuatro subconjuntos (1693 demostraciones), 20k pasos | 78 % (69-85) | No disponible en esta ficha | Publico en Hugging Face |
+| `HuggingFaceVLA/smolvla_libero` (oficial) | No disponible en esta ficha | No disponible | No disponible | 69 % (59-77), n=1 | No disponible en esta ficha | Publico en Hugging Face |
+| `lerobot/smolvla_base` (modelo de partida) | 450 M (heredado) | No disponible | Datos comunitarios de LeRobot, no detallados aqui | No disponible (sin ajuste a LIBERO) | No disponible en esta ficha | Publico en Hugging Face |
 
 Frente a VLA de mayor tamano como OpenVLA o pi0, la ventaja de esta familia es el coste de inferencia y de reentrenamiento; no se incluyen cifras comparativas porque no forman parte de la informacion proporcionada.
 
@@ -100,7 +100,7 @@ Frente a VLA de mayor tamano como OpenVLA o pi0, la ventaja de esta familia es e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yutongzhu/smolvla-libero-spatial-only-10k
+- Modelo en Hugging Face: https://huggingface.co/yutongzhu/smolvla-libero-spatial-only-10k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/libero
 - Modelo de comparacion (cuatro subconjuntos, 20k pasos): https://huggingface.co/yutongzhu/smolvla-libero-ft20k

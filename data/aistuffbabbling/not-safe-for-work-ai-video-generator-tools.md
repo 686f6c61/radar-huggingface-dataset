@@ -74,7 +74,7 @@ No hay comparativa directa con el repositorio en cuestión, ya que no es un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aistuffbabbling/not-safe-for-work-ai-video-generator-tools
+- Repositorio en Hugging Face: https://huggingface.co/aistuffbabbling/not-safe-for-work-ai-video-generator-tools
 - Guía sobre generadores de vídeo AI gratuitos (resultado de búsqueda): https://videoany.io/guides/free-uncensored-ai-video-generator
 - Artículo sobre detección de vídeo generado por IA: https://techpp.com/2025/12/19/how-to-check-if-a-video-is-ai-generated-or-real-6-tools/
 - Advertencia sobre malware en herramientas falsas: https://www.makeuseof.com/wrong-ai-video-generator-infect-pc-malware/

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-juju-v1-link01 | 0,8B (base) + LoRA | No disponible | Selección de acciones para evasión de obstáculos (LINK-01) | Apache 2.0 | HuggingFace, 13 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-juju-v1-link01 | 0,8B (base) + LoRA | No disponible | Selección de acciones para evasión de obstáculos (LINK-01) | Apache 2.0 | Hugging Face, 13 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Cerebro PPO `brain.json` (profesor) | No aplica (política RL, no red neuronal de lenguaje) | No aplica | Misma tarea, 45% de éxito en 20 episodios | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores de la misma familia (por ejemplo, variantes `link01` posteriores) ni sobre modelos comparables de destilación de políticas a LLM en el material proporcionado.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores de la misma familia (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

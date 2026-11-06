@@ -76,7 +76,7 @@ La tabla de benchmarks anterior ya compara con dos alternativas: `Vietnamese-SBE
 
 ## Enlaces
 
-- [Modelo ONNX en HuggingFace](https://huggingface.co/AnhHao0107/vietnamese-bi-encoder-onnx)
-- [Modelo original en HuggingFace](https://huggingface.co/bkai-foundation-models/vietnamese-bi-encoder)
+- [Modelo ONNX en Hugging Face](https://huggingface.co/AnhHao0107/vietnamese-bi-encoder-onnx)
+- [Modelo original en Hugging Face](https://huggingface.co/bkai-foundation-models/vietnamese-bi-encoder)
 - [Repositorio de despliegue (Triton + FastAPI)](https://github.com/hungnq1310/vietnamese-bi-encoder)
 - [Paper de referencia (arXiv:2403.01616)](https://arxiv.org/abs/2403.01616)

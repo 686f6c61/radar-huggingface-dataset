@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dmitry-kozlov/generation` es un repositorio de HuggingFace publicado bajo licencia MIT que contiene una implementación propia de la arquitectura Blip orientada a tareas de generación, acompañada de un `config.json`, un `training_args.json` y un checkpoint de inicialización en formato safetensors. El autor lo describe explícitamente como un punto de partida experimental: el propio README indica que el checkpoint no ha sido entrenado ni auditado y que no se reclama ninguna métrica de benchmark.
+`Dmitry-kozlov/generation` es un repositorio de Hugging Face publicado bajo licencia MIT que contiene una implementación propia de la arquitectura Blip orientada a tareas de generación, acompañada de un `config.json`, un `training_args.json` y un checkpoint de inicialización en formato safetensors. El autor lo describe explícitamente como un punto de partida experimental: el propio README indica que el checkpoint no ha sido entrenado ni auditado y que no se reclama ninguna métrica de benchmark.
 
 El dato más relevante para cualquier evaluador es su tamaño real: el fichero safetensors declara 49.600 parámetros totales, una cifra incompatible con un modelo Blip funcional de escala xlarge (la configuración que el README dice usar). El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. Se trata, por tanto, de un artefacto de "smoke test": sirve para verificar que el código de construcción del modelo compila y ejecuta un forward pass, no para inferencia real.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto incluida en 
 
 - Smoke test en CI/CD: el repositorio puede integrarse en un pipeline de integración continua como comprobación de que la clase del modelo instancia correctamente y que el forward pass no lanza excepciones de formas. Es el uso para el que el propio autor lo concibe.
 - Validación de formas tensoriales antes de un entrenamiento real: cargar `model.safetensors` para comprobar que las dimensiones del checkpoint coinciden con las que espera el script y detectar desajustes de configuración antes de gastar GPU.
-- Desarrollo de adaptadores de carga: el README advierte de que, al ser una implementación propia, las APIs genéricas de carga automática (AutoModel, pipelines de HuggingFace) necesitan un adaptador explícito; este repositorio sirve como banco de pruebas para escribir ese adaptador.
+- Desarrollo de adaptadores de carga: el README advierte de que, al ser una implementación propia, las APIs genéricas de carga automática (AutoModel, pipelines de Hugging Face) necesitan un adaptador explícito; este repositorio sirve como banco de pruebas para escribir ese adaptador.
 - Prototipado de arquitecturas multimodales: sirve como plantilla de código para experimentar con atención dilatada y fusión por cross attention en una base Blip, reutilizando la estructura de `train.py` y `config.json`.
 - Reproducción de recetas de optimización: permite probar la combinación Novograd con warmup constante sobre un modelo mínimo para verificar el bucle de entrenamiento antes de escalarlo.
 - Formación y docencia: útil para mostrar la anatomía de un proyecto Blip (config, argumentos de entrenamiento, script y pesos separados) sin el coste computacional de un modelo real.
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables porque el artefacto publicado n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dmitry-kozlov/generation
+- Hugging Face: https://huggingface.co/Dmitry-kozlov/generation
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relacionados con el modelo: corresponden a la entrada "Dmitry" de Wikipedia, a la herramienta de reconocimiento DMitry de Kali Linux y su repositorio en GitHub, y a la biografía de Dmitri Medvedev. No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo.

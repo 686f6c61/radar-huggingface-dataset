@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gatilin/Qwen3.8-0.8B-Agentic-distill` es un modelo publicado en HuggingFace por el autor `gatilin`, con licencia MIT. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de detalles sobre su arquitectura, entrenamiento o capacidades. Por el nombre, parece tratarse de una destilación de la familia Qwen3.8 orientada a tareas agénticas, con un tamaño aproximado de 0.8 mil millones de parámetros, aunque esta interpretación no está confirmada por datos oficiales. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que es una publicación reciente o poco difundida. La ausencia de documentación técnica impide realizar una evaluación rigurosa del modelo.
+El modelo `gatilin/Qwen3.8-0.8B-Agentic-distill` es un modelo publicado en Hugging Face por el autor `gatilin`, con licencia MIT. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de detalles sobre su arquitectura, entrenamiento o capacidades. Por el nombre, parece tratarse de una destilación de la familia Qwen3.8 orientada a tareas agénticas, con un tamaño aproximado de 0.8 mil millones de parámetros, aunque esta interpretación no está confirmada por datos oficiales. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que es una publicación reciente o poco difundida. La ausencia de documentación técnica impide realizar una evaluación rigurosa del modelo.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información publicada sobre las capacidades del modelo. No se 
 
 ## Casos de uso
 
-No se dispone de información suficiente para proponer casos de uso concretos. Sin datos sobre capacidades, rendimiento o contexto, no es posible recomendar aplicaciones prácticas. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones de la documentación.
+No se dispone de información suficiente para proponer casos de uso concretos. Sin datos sobre capacidades, rendimiento o contexto, no es posible recomendar aplicaciones prácticas. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones de la documentación.
 
 ## Benchmarks y rendimiento
 
@@ -50,6 +50,6 @@ No se dispone de información para establecer comparativas. No se conocen modelo
 
 ## Enlaces
 
-- [HuggingFace: gatilin/Qwen3.8-0.8B-Agentic-distill](https://huggingface.co/gatilin/Qwen3.8-0.8B-Agentic-distill)
+- [Hugging Face: gatilin/Qwen3.8-0.8B-Agentic-distill](https://huggingface.co/gatilin/Qwen3.8-0.8B-Agentic-distill)
 - [Qwen/Qwen3.8-27B (referencia de la familia)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

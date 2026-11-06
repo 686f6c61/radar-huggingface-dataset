@@ -76,8 +76,8 @@ Notas metodologicas aportadas por el autor: MMMU usa 847 preguntas de validacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Gemma-4-E2B-it-Multimodal-Scorer-NF4 (este) | ~5,1 B | entrada <= 8192 tokens | AI2D 53,80%; MMBench 63,80%; MMMU 35,66%; esc10 11,00%; librispeech 100%; ucf101-10 85,50% | Apache-2.0 (pesos) / MIT (codigo) | HuggingFace, feature-extraction |
-| Gemma-4-E2B-it-Multimodal-Scorer-BF16 (gemelo) | ~5,1 B | entrada <= 8192 tokens | Mismo protocolo de prompt y scoring; los benchmarks se reportan de forma emparejada | Apache-2.0 / MIT | HuggingFace |
+| Gemma-4-E2B-it-Multimodal-Scorer-NF4 (este) | ~5,1 B | entrada <= 8192 tokens | AI2D 53,80%; MMBench 63,80%; MMMU 35,66%; esc10 11,00%; librispeech 100%; ucf101-10 85,50% | Apache-2.0 (pesos) / MIT (codigo) | Hugging Face, feature-extraction |
+| Gemma-4-E2B-it-Multimodal-Scorer-BF16 (gemelo) | ~5,1 B | entrada <= 8192 tokens | Mismo protocolo de prompt y scoring; los benchmarks se reportan de forma emparejada | Apache-2.0 / MIT | Hugging Face |
 | Gemma 4 E2B (base de Google, segun fuentes web) | ~2,1 B (dato de fuentes web, no confirmado para este artefacto) | 8K contexto segun fuentes web | Puntuaciones oficiales publicadas por Google, no disponibles aqui | No disponible en la informacion proporcionada | Google DeepMind / AI Edge |
 
 Nota: la model card de este artefacto no incluye comparativas con modelos de terceros. Las cifras de la fila base de Google provienen de fuentes web genericas y entran en conflicto con los 5,1 B de parametros totales reportados por safetensors para este artefacto multimodal, por lo que deben tratarse con cautela.
@@ -100,7 +100,7 @@ Nota: la model card de este artefacto no incluye comparativas con modelos de ter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4
+- Modelo en Hugging Face: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4
 - Modelo base BF16: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16
 - Dataset de benchmarks, deriva de cuantizacion, calibracion, latencia, memoria y predicciones: https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks
 - Pin fuente de Google: https://huggingface.co/google/gemma-4-E2B-it (revision 3e22461f65e89153144f8adb70e3b8c2cc9845a7)

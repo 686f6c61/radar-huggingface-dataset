@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-inoculation-prompting-seed4
 - Paper relacionado (arXiv): https://arxiv.org/html/2508.17511v1
 - Modelo base unsloth/Qwen3-8B: https://huggingface.co/unsloth/Qwen3-8B
 - Modelos similares de la misma organizacion: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-sft

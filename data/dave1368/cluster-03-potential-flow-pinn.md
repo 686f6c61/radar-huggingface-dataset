@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dave1368/cluster-03-potential-flow-pinn
+- Modelo en Hugging Face: https://huggingface.co/dave1368/cluster-03-potential-flow-pinn
 - Space interactivo (demo): https://huggingface.co/spaces/dave1368/cluster-03-potential-flow
 - Framework de orquestación (referenciado en la model card): https://huggingface.co/spaces/dave1368/cluster-03-potential-flow (mismo enlace, incluye el README con tablas de validación)

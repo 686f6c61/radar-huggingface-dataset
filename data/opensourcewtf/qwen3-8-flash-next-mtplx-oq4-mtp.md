@@ -94,7 +94,7 @@ La diferencia principal frente al modelo base es la cuantización Q4 y la integr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-MTPLX-oQ4-MTP
+- Repositorio Hugging Face: https://huggingface.co/OpensourceWTF/Qwen3.8-Flash-Next-MTPLX-oQ4-MTP
 - Repositorio fuente (Vontra): https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ4-MTP
 - GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de unsloth: https://unsloth.ai/docs/models/qwen3.8-next

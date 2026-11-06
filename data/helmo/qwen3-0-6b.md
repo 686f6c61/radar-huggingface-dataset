@@ -94,7 +94,7 @@ Los datos de rendimiento comparativo entre estas opciones no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/helmo/Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/helmo/Qwen3-0.6B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo original de referencia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

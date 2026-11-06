@@ -4,7 +4,7 @@
 
 El modelo `opensearch-project/opensearch-neural-sparse-encoding-asym-v1` es un codificador de recuperación dispersa neuronal (neural sparse encoding) publicado por el proyecto OpenSearch, la suite de búsqueda y analítica de código abierto bajo licencia Apache 2.0 impulsada por AWS y la comunidad. Su propósito es transformar texto en representaciones dispersas de alta dimensión (vectores con la mayoría de componentes a cero) que permiten recuperación léxica-semántica eficiente en motores de búsqueda, combinando las ventajas de BM25 con la semántica de los transformers. La variante "asym" indica presumiblemente un diseño asimétrico, en el que la codificación de consultas y documentos emplea cabeceras o proyecciones distintas, un patrón habitual en modelos de recuperación tipo ColBERT o SPLADE.
 
-La información pública disponible sobre este modelo concreto es extremadamente limitada: la model card en HuggingFace está vacía salvo por la declaración de licencia, y no se han publicado detalles sobre arquitectura interna, tamaño de parámetros, datos de entrenamiento ni resultados de benchmarks. Todo apunta a una publicación reciente (creada el 4 de noviembre de 2026) con cero descargas y cero likes, lo que sugiere un lanzamiento incipiente o una versión preliminar dentro del ecosistema OpenSearch.
+La información pública disponible sobre este modelo concreto es extremadamente limitada: la model card en Hugging Face está vacía salvo por la declaración de licencia, y no se han publicado detalles sobre arquitectura interna, tamaño de parámetros, datos de entrenamiento ni resultados de benchmarks. Todo apunta a una publicación reciente (creada el 4 de noviembre de 2026) con cero descargas y cero likes, lo que sugiere un lanzamiento incipiente o una versión preliminar dentro del ecosistema OpenSearch.
 
 Su relevancia potencial reside en el contexto de OpenSearch, que desde la versión 2.11 incorpora soporte para búsqueda neuronal dispersa mediante modelos como los de la familia `opensearch-neural-sparse-encoding`. Estos modelos permiten indexar documentos como vectores dispersos en lugar de densos, lo que reduce el coste de almacenamiento y facilita la integración con infraestructuras de búsqueda existentes basadas en índices invertidos.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opensearch-neural-sparse-encoding-asym-v1 | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| opensearch-neural-sparse-encoding-v1 | no disponible en la información proporcionada | no disponible | Apache 2.0 (presumible) | HuggingFace |
-| opensearch-neural-sparse-encoding-doc-v1 | no disponible en la información proporcionada | no disponible | Apache 2.0 (presumible) | HuggingFace |
+| opensearch-neural-sparse-encoding-asym-v1 | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| opensearch-neural-sparse-encoding-v1 | no disponible en la información proporcionada | no disponible | Apache 2.0 (presumible) | Hugging Face |
+| opensearch-neural-sparse-encoding-doc-v1 | no disponible en la información proporcionada | no disponible | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría (SPLADE, ColBERT, etc.).
 
@@ -73,13 +73,13 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí de recuperación de documentos irrelevantes si la expansión dispersa activa términos espurios.
 - Idiomas soportados desconocidos; no se puede garantizar cobertura multilingüe.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentación técnica dificulta su validación en producción.
-- Cero descargas y cero likes en HuggingFace: sin evidencia de uso comunitario ni validación externa.
+- Cero descargas y cero likes en Hugging Face: sin evidencia de uso comunitario ni validación externa.
 - Fecha de creación futura (noviembre de 2026) respecto a la información de referencia, lo que sugiere que puede tratarse de una publicación preliminar o no consolidada.
 - La integración con OpenSearch no está documentada en la información disponible; verificar compatibilidad de versión antes de desplegar.
 
 ## Enlaces
 
-- [HuggingFace: opensearch-project/opensearch-neural-sparse-encoding-asym-v1](https://huggingface.co/opensearch-project/opensearch-neural-sparse-encoding-asym-v1)
+- [Hugging Face: opensearch-project/opensearch-neural-sparse-encoding-asym-v1](https://huggingface.co/opensearch-project/opensearch-neural-sparse-encoding-asym-v1)
 - [OpenSearch - sitio oficial](https://opensearch.org/)
 - [OpenSearch - documentación](https://docs.opensearch.org/latest/)
 - [OpenSearch - descargas](https://opensearch.org/downloads/)

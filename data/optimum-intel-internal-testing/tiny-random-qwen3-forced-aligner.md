@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, contexto real ni licencia del checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-forced-aligner
+- Modelo en Hugging Face: https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen3-forced-aligner
 - Organizacion propietaria: https://huggingface.co/optimum-intel-internal-testing
 - Checkpoint de referencia citado en el script: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Paper, blog, repositorio o demo asociados: no disponible

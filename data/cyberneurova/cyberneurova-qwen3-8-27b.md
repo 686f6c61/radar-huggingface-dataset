@@ -32,7 +32,7 @@ No se proporcionan detalles técnicos sobre la arquitectura interna del modelo m
 - Tool-calling y function calling, compatible con agentes y flujos automatizados.
 - Generación de código: 92% pass@1 en un benchmark de codificación ejecutable (palindrome, two-sum, prime test, binary search, merge, GCD, flatten, anagram, max-subarray, word-count, Roman numerals).
 - Multilingüe, aunque no se detallan los idiomas concretos.
-- Posible soporte de entrada de imágenes según los tags de HuggingFace (image-text-to-text), aunque no se confirma en la documentación.
+- Posible soporte de entrada de imágenes según los tags de Hugging Face (image-text-to-text), aunque no se confirma en la documentación.
 - Comportamiento "uncensored": sin descargos automáticos, totalmente controlable mediante el system prompt.
 
 ## Casos de uso
@@ -78,6 +78,6 @@ No se han publicado comparativas directas con otros modelos en la información d
 
 ## Enlaces
 
-- [HuggingFace: cyberneurova/cyberneurova-Qwen3.8-27B](https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B)
+- [Hugging Face: cyberneurova/cyberneurova-Qwen3.8-27B](https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B)
 - [Sitio web de CyberNeurova](https://cyberneurova.ai)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

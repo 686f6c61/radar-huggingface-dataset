@@ -98,7 +98,7 @@ La comparacion directa se limita al base model y a los derivados citados en la b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raspbfox/parakeet-ultra-litert-dynamic-int8
+- Modelo en Hugging Face: https://huggingface.co/raspbfox/parakeet-ultra-litert-dynamic-int8
 - Modelo base moondream/parakeet-ultra: https://huggingface.co/moondream/parakeet-ultra
 - Checkpoint NeMo de origen (Olicorne): https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx
 - Script de exportacion de Vibro: https://github.com/skyne98/vibro/blob/main/tools/parakeet_litert_smoke/python/export_split_int8.py

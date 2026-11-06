@@ -102,13 +102,13 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 - Riesgo de alucinación: no cuantificado en la información disponible; la modificación de pesos puede alterar la calibración en dominios no evaluados.
 - Idiomas: no hay lista oficial de idiomas soportados; la evaluación solo documenta inglés y chino de forma incidental.
 - Contexto: la longitud de contexto del base no se especifica en la información disponible, lo que impide planificar despliegues con ventanas largas.
-- Inconsistencia en metadatos: el tag "8-bit" en HuggingFace contradice el nombre y la descripción NVFP4 de 4 bits; conviene verificar la precisión real de los pesos antes de desplegar.
+- Inconsistencia en metadatos: el tag "8-bit" en Hugging Face contradice el nombre y la descripción NVFP4 de 4 bits; conviene verificar la precisión real de los pesos antes de desplegar.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente de los resultados reportados por el autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenrenya/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
+- Hugging Face: https://huggingface.co/chenrenya/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Perfil del autor en HuggingFace: https://huggingface.co/dealignai
+- Perfil del autor en Hugging Face: https://huggingface.co/dealignai
 - Twitter del autor: https://twitter.com/dealignai
-- Licencia: LICENSE (incluida en el repositorio de HuggingFace)
+- Licencia: LICENSE (incluida en el repositorio de Hugging Face)

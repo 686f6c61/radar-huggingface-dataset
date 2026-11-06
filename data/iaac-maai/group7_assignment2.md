@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iaac-maai/group7_Assignment2` es un repositorio alojado en HuggingFace por el usuario `iaac-maai`, cuya nomenclatura sugiere un trabajo academico o de asignatura (Assignment2) desarrollado por un grupo de estudiantes del programa MAAI (Master in Artificial Intelligence, presumiblemente vinculado al IAAC). El repositorio se publico el 26 de octubre de 2026 y, en el momento de la consulta, no acumula descargas ni interacciones, lo que apunta a un artefacto recien creado o de caracter privado/academico.
+`iaac-maai/group7_Assignment2` es un repositorio alojado en Hugging Face por el usuario `iaac-maai`, cuya nomenclatura sugiere un trabajo academico o de asignatura (Assignment2) desarrollado por un grupo de estudiantes del programa MAAI (Master in Artificial Intelligence, presumiblemente vinculado al IAAC). El repositorio se publico el 26 de octubre de 2026 y, en el momento de la consulta, no acumula descargas ni interacciones, lo que apunta a un artefacto recien creado o de caracter privado/academico.
 
 La model card publicada es practicamente vacia: unicamente declara una licencia MIT y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento, capacidades ni uso previsto. No se especifica pipeline, idiomas soportados, formato de pesos ni ningun otro metadato tecnico mas alla de la etiqueta regional `region:us` y la licencia.
 
@@ -42,9 +42,9 @@ No se ha documentado ninguna capacidad especifica del modelo en la informacion d
 No es posible recomendar casos de uso concretos sin informacion tecnica verificable sobre el modelo. La unica aplicacion razonable, dado el contexto, es la siguiente:
 
 - Uso academico y educativo: el repositorio parece corresponder a un ejercicio de asignatura (Assignment2) de un programa de IA, por lo que su uso previsto probablemente sea la evaluacion interna dentro del curso y no el despliegue en produccion.
-- Referencia para estudiantes: puede servir como ejemplo de publicacion de un modelo en HuggingFace, aunque sin model card completa no constituye una buena practica de documentacion.
+- Referencia para estudiantes: puede servir como ejemplo de publicacion de un modelo en Hugging Face, aunque sin model card completa no constituye una buena practica de documentacion.
 - Experimentacion controlada: si el autor anade pesos y documentacion en el futuro, podria evaluarse en entornos de laboratorio, siempre verificando primero la licencia y el contenido real del repositorio.
-- Auditoria de repositorios: util como caso de estudio sobre repositorios con metadatos incompletos en HuggingFace.
+- Auditoria de repositorios: util como caso de estudio sobre repositorios con metadatos incompletos en Hugging Face.
 - Base para fork academico: un instructor o companero de grupo podria clonar el repositorio y completar la documentacion.
 - Verificacion de licencia: la declaracion MIT permite, en principio, reutilizacion, pero sin pesos ni codigo visibles no hay artefacto reutilizable.
 
@@ -79,5 +79,5 @@ No disponible. No se puede establecer una comparativa con modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iaac-maai/group7_Assignment2
+- Repositorio en Hugging Face: https://huggingface.co/iaac-maai/group7_Assignment2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

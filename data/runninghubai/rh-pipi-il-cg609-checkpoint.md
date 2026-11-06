@@ -72,12 +72,12 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Idiomas no documentados: se desconoce si los prompts en castellano funcionan correctamente; el text encoder del modelo base no esta especificado.
 - Cero traccion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones publicas que permitan validar la calidad del checkpoint.
 - Procedencia del entrenamiento: el uso de herramientas de terceros ("Tutu's Super Trainer") y de un etiquetador automatico no documentado introduce incertidumbre sobre la calidad de las anotaciones y sobre los derechos de las imagenes de entrenamiento.
-- Fecha de creacion futura (2026-11-05) en los metadatos de HuggingFace: conviene verificar la integridad del repositorio antes de descargarlo en un entorno de produccion.
+- Fecha de creacion futura (2026-11-05) en los metadatos de Hugging Face: conviene verificar la integridad del repositorio antes de descargarlo en un entorno de produccion.
 - No apto para tareas de texto, razonamiento, codigo o agentes: es exclusivamente un modelo de generacion de imagenes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-il-cg609-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-il-cg609-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2046105976360673282
 - Pagina del autor: https://www.runninghub.ai/user-center/1954484547733893121
 - Demo texto-a-imagen (sitio global): https://www.RunningHub.ai/ai-detail/1955051977785819138

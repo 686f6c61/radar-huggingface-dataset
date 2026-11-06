@@ -73,6 +73,6 @@ No se dispone de información sobre otros transcoders específicos con los que c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed2-layer1
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed2-layer1
 - Modelo base: https://huggingface.co/itzPotato/arithmetic-bilinear-2layer-seed2
 - Perfil del autor: https://huggingface.co/itzPotato/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArkhamKnightRetrain_255e_4845s es un repositorio publicado por el usuario Homiebear en HuggingFace. Se trata de un artefacto de pesos de aproximadamente 0,1 GB, una licencia openrail y la etiqueta de region us. No dispone de pipeline declarado, no tiene idiomas declarados, cuenta con 0 descargas y 0 likes, y su model card unicamente contiene la linea de licencia, sin ninguna descripcion funcional, dataset, arquitectura ni instrucciones de uso.
+ArkhamKnightRetrain_255e_4845s es un repositorio publicado por el usuario Homiebear en Hugging Face. Se trata de un artefacto de pesos de aproximadamente 0,1 GB, una licencia openrail y la etiqueta de region us. No dispone de pipeline declarado, no tiene idiomas declarados, cuenta con 0 descargas y 0 likes, y su model card unicamente contiene la linea de licencia, sin ninguna descripcion funcional, dataset, arquitectura ni instrucciones de uso.
 
 El nombre del repositorio sigue el convencionalismo habitual de los reentrenamientos de adaptadores o checkpoints en el ecosistema de difusion: el sufijo "255e_4845s" apunta a 255 epocas y 4845 pasos de entrenamiento, y el prefijo "ArkhamKnight" sugiere una tematica inspirada en el videojuego Batman: Arkham Knight. Esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como no verificada.
 
@@ -70,7 +70,7 @@ No disponible. No se ha identificado el modelo base ni la categoria funcional de
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | openrail | no disponible |
-| Disponibilidad | publica en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publica en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,5 +86,5 @@ No disponible. No se ha identificado el modelo base ni la categoria funcional de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/ArkhamKnightRetrain_255e_4845s
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/ArkhamKnightRetrain_255e_4845s
 - Resultados de busqueda web: las entradas devueltas apuntan todas al sitio onthisday.com (https://www.onthisday.com/, https://www.onthisday.com/today/events.php, https://www.onthisday.com/today/birthdays.php, https://www.onthisday.com/sport/events.php, https://www.onthisday.com/today/celebrity-birthdays.php) y no guardan ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este repositorio.

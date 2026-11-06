@@ -49,7 +49,7 @@ No se dispone de información detallada sobre el entrenamiento del modelo origin
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card de KerasFormers no incluye métricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Para datos de evaluación del modelo original, se debe consultar la model card de `google/gemma-4-E4B-it` en HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. La model card de KerasFormers no incluye métricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Para datos de evaluación del modelo original, se debe consultar la model card de `google/gemma-4-E4B-it` en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -83,8 +83,8 @@ No se dispone de comparativas con modelos de otros fabricantes (como Llama 3.2, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/gemma-4-e4b-it
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/gemma-4-e4b-it
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 4 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma4/
-- Colección de variantes Gemma 4 en HuggingFace: https://huggingface.co/kerasformers
+- Colección de variantes Gemma 4 en Hugging Face: https://huggingface.co/kerasformers

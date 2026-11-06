@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HIGHDEVUAI/uai-orb-router-v0
+- Hugging Face: https://huggingface.co/HIGHDEVUAI/uai-orb-router-v0
 - Archivos del repositorio: https://huggingface.co/HIGHDEVUAI/uai-orb-router-v0/tree/main
 - Paper: `uai-orb-v0-paper.pdf` (disponible en el repositorio)

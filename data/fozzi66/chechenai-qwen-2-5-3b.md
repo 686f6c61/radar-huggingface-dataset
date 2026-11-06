@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChechenAI-Qwen-2.5-3B es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, publicado por el usuario fozzi66 en HuggingFace. Se trata de un modelo de generacion de texto de 3 mil millones de parametros construido sobre la arquitectura Qwen2 de Alibaba, entrenado mediante la libreria Unsloth, que acelera el proceso de ajuste fino aproximadamente el doble respecto a los metodos convencionales. El modelo base utilizado es la version cuantizada a 4 bits de Qwen2.5-3B-Instruct preparada por Unsloth.
+ChechenAI-Qwen-2.5-3B es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B-Instruct, publicado por el usuario fozzi66 en Hugging Face. Se trata de un modelo de generacion de texto de 3 mil millones de parametros construido sobre la arquitectura Qwen2 de Alibaba, entrenado mediante la libreria Unsloth, que acelera el proceso de ajuste fino aproximadamente el doble respecto a los metodos convencionales. El modelo base utilizado es la version cuantizada a 4 bits de Qwen2.5-3B-Instruct preparada por Unsloth.
 
 La model card es extremadamente escasa: no documenta el dataset de entrenamiento, el proposito concreto del ajuste, ni los resultados obtenidos. El nombre sugiere una especializacion en la lengua chechena, pero la unica informacion oficial es que el modelo declara ingles como idioma soportado. No se han publicado benchmarks, detalles del proceso de entrenamiento ni ejemplos de uso.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ChechenAI-Qwen-2.5-3B | 3B | no disponible en la model card (32 768 en el base) | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| Llama 3.2 3B Instruct | 3B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptacion de terminos |
-| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | HuggingFace |
+| ChechenAI-Qwen-2.5-3B | 3B | no disponible en la model card (32 768 en el base) | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| Llama 3.2 3B Instruct | 3B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptacion de terminos |
+| Phi-3.5-mini-instruct | 3,8B | 128 000 tokens | MIT | Hugging Face |
 
 El modelo de fozzi66 no aporta documentacion que permita comparar su rendimiento con estas alternativas; su principal diferencia es el ajuste fino no documentado y el uso de Unsloth en el pipeline.
 
@@ -83,7 +83,7 @@ El modelo de fozzi66 no aporta documentacion que permita comparar su rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fozzi66/ChechenAI-Qwen-2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/fozzi66/ChechenAI-Qwen-2.5-3B
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo Qwen2.5-3B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

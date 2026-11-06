@@ -89,8 +89,8 @@ Lectura de los datos: la ventaja del modelo se concentra en reconocimiento de in
 
 | Modelo | Parámetros | Activos | Contexto | Overall (según el autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Xing4.0-29B-Intent | ≈29B (31,2B en safetensors) | ≈4B | no disponible | 58 | apache-2.0 | HuggingFace, ModelScope, Modelers |
-| Xing4.0-29B-A4B (base) | ≈29B | ≈4B | no disponible | no evaluado en esta tabla | no disponible en la información | HuggingFace, GitHub |
+| Xing4.0-29B-Intent | ≈29B (31,2B en safetensors) | ≈4B | no disponible | 58 | apache-2.0 | Hugging Face, ModelScope, Modelers |
+| Xing4.0-29B-A4B (base) | ≈29B | ≈4B | no disponible | no evaluado en esta tabla | no disponible en la información | Hugging Face, GitHub |
 | Gemini-3.6-Flash | no disponible | no disponible | no disponible | 49 | propietaria | API |
 | Qwen3.8-Max | no disponible | no disponible | no disponible | 46 | propietaria | API |
 | GLM-5.3-Flash | no disponible | no disponible | no disponible | 44 | propietaria | API |
@@ -112,12 +112,12 @@ La comparación significativa es frente al modelo base: el ajuste específico el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent
+- Modelo en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent
 - Repositorio GitHub del proyecto: https://github.com/XingChen-AGI/Xing4.0-29B-Intent
 - Modelo en ModelScope: https://www.modelscope.cn/models/XingChen-AGI/Xing4.0-29B-Intent
 - Modelo en Modelers: https://modelers.cn/models/XingChen-AGI/Xing4.0-29B-Intent
 - Dataset compañero: https://huggingface.co/datasets/XingChen-AGI/Xing4.0-29B-Intent-oss
-- Modelo base en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Modelo base en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio GitHub del modelo base: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Paper referenciado (arXiv 2512.24157): https://arxiv.org/abs/2512.24157
 - Paper referenciado (arXiv 2507.18013): https://arxiv.org/abs/2507.18013

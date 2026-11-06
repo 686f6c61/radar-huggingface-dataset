@@ -106,7 +106,7 @@ No hay datos publicados en la información disponible sobre modelos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/khronnuz/Ling-3.0-flash-exl3
+- Repositorio Hugging Face: https://huggingface.co/khronnuz/Ling-3.0-flash-exl3
 - Rama del quant 4,03 bpw / H8: https://huggingface.co/khronnuz/Ling-3.0-flash-exl3/tree/4.03bpw_h8
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Parche de arquitectura requerido (ExLlamaV3, commit no upstream): https://github.com/everson/exllamav3/commit/a7b05152924da3b2a88d9c2cff0a4e2d6703157b

@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PhotoMaker V1 (original TencentARC) | .bin | SDXL | Apache-2.0 | HuggingFace |
-| PhotoMaker V1 (esta conversion) | safetensors | SDXL | Apache-2.0 | HuggingFace |
+| PhotoMaker V1 (original TencentARC) | .bin | SDXL | Apache-2.0 | Hugging Face |
+| PhotoMaker V1 (esta conversion) | safetensors | SDXL | Apache-2.0 | Hugging Face |
 | IP-Adapter (modelos de personalizacion similares) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La principal diferencia entre el modelo original y esta conversion es el formato de los pesos y la inclusion de un LoRA extraido. No hay informacion sobre otros modelos comparables.
@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonbalkan/photomaker-v1-safetensors
+- Modelo en Hugging Face: https://huggingface.co/jonbalkan/photomaker-v1-safetensors
 - Modelo original TencentARC/PhotoMaker: https://huggingface.co/TencentARC/PhotoMaker

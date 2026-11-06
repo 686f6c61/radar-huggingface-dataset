@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Escena | Canvas | Rollout | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| probe-ade20k-40k-s1024-c64-in21k (este) | Sonda lineal sobre CanViT | 1024 px | 64 × 64 | 10 glimpses de 128 px, R-IID | 159.894 | MIT | HuggingFace (6 descargas, 0 likes) |
-| canvit/probe-ade20k-40k-s512-c10-in21k | Sonda lineal sobre CanViT | 512 px (según el identificador del repo) | 10 × 10 (según el identificador del repo) | No disponible | No disponible | No disponible | HuggingFace, dentro de la colección de sondas ADE20K |
+| probe-ade20k-40k-s1024-c64-in21k (este) | Sonda lineal sobre CanViT | 1024 px | 64 × 64 | 10 glimpses de 128 px, R-IID | 159.894 | MIT | Hugging Face (6 descargas, 0 likes) |
+| canvit/probe-ade20k-40k-s512-c10-in21k | Sonda lineal sobre CanViT | 512 px (según el identificador del repo) | 10 × 10 (según el identificador del repo) | No disponible | No disponible | No disponible | Hugging Face, dentro de la colección de sondas ADE20K |
 | DINOv3 como backbone pasivo (usado en CanViT-eval) | Extractor pasivo, forward único | Resolución fija de entrada | No aplica | 1 forward (mIoU en t = 0) | No disponible | No disponible | Depende del checkpoint DINOv3; no forma parte de este repo |
 | Otros modelos de segmentación semántica ADE20K (SegFormer, UperNet, etc.) | Redes dedicadas de segmentación | Variable | No aplica | No aplica | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-in21k
 - Colección de sondas ADE20K de CanViT: https://huggingface.co/collections/canvit/canvit-ade20k-segmentation-probes-pytorch
 - Sonda relacionada (escena 512 px, canvas 10): https://huggingface.co/canvit/probe-ade20k-40k-s512-c10-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02

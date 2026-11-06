@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B-GPTQ (este) | 23,97B | ~2B | 131.072 | GPTQ 4-bit | LFM Open License v1.0 | HuggingFace, vLLM |
-| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B | ~2B | 131.072 | bf16 / FP8 | LFM Open License v1.0 | HuggingFace |
+| LFM2.5-24B-A2B-GPTQ (este) | 23,97B | ~2B | 131.072 | GPTQ 4-bit | LFM Open License v1.0 | Hugging Face, vLLM |
+| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B | ~2B | 131.072 | bf16 / FP8 | LFM Open License v1.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa fiable.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/aiprimebuilds/LFM2.5-24B-A2B-GPTQ
+- Hugging Face del artefacto: https://huggingface.co/aiprimebuilds/LFM2.5-24B-A2B-GPTQ
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia: LICENSE (incluido en el repositorio del artefacto)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información proporcionada.

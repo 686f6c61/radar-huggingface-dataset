@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: demuestra un patrón de empaquetado de embe
 | Modelo base | BAAI/bge-small-zh-v1.5 |
 | Relación con el base | quantized |
 | Tamaño del fichero ONNX | 24 MB |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Librería | onnx (transformers.js / onnxruntime-web) |
 | Pipeline | feature-extraction |
 | Pooling recomendado | CLS con normalización |
@@ -85,12 +85,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El dominio de uso es muy específico (búsqueda de colores); no debe emplearse como embedder general sin evaluación previa.
 - La licencia MIT se hereda del modelo base, por lo que el uso comercial está permitido, pero conviene verificar los términos del upstream `BAAI/bge-small-zh-v1.5`.
 - No soporta tool calling, agentes, visión ni otras capacidades propias de modelos generativos.
-- El repositorio reporta un tamaño de 0.0 GB en HuggingFace, lo que puede indicar un problema de empaquetado o de metadatos; conviene verificar los ficheros antes de integrarlo en producción.
+- El repositorio reporta un tamaño de 0.0 GB en Hugging Face, lo que puede indicar un problema de empaquetado o de metadatos; conviene verificar los ficheros antes de integrarlo en producción.
 - No hay información sobre sesgos del modelo base ni sobre el proceso de cuantización; se desconoce el impacto en subgrupos de vocabulario chino.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/androidli/colorpicker-models-zh
+- Hugging Face: https://huggingface.co/androidli/colorpicker-models-zh
 - Modelo base: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Contraparte latina: https://huggingface.co/androidli/colorpicker-models
 - transformers.js: https://github.com/xenova/transformers.js

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Duong2004/quick-generation es un repositorio de HuggingFace publicado por el usuario Duong2004 que contiene una implementacion funcional de una arquitectura denominada "Coca" orientada a tareas de generacion, configurada en escala "tiny". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo evaluado. El recuento real de parametros en safetensors es de 24.832, es decir, aproximadamente 24,8 mil parametros, lo que lo situa en un orden de magnitud puramente experimental.
+Duong2004/quick-generation es un repositorio de Hugging Face publicado por el usuario Duong2004 que contiene una implementacion funcional de una arquitectura denominada "Coca" orientada a tareas de generacion, configurada en escala "tiny". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo evaluado. El recuento real de parametros en safetensors es de 24.832, es decir, aproximadamente 24,8 mil parametros, lo que lo situa en un orden de magnitud puramente experimental.
 
 El objetivo declarado del repositorio es servir como implementacion transparente y reproducible para pruebas de pequena escala, con codigo legible y una receta de experimento por defecto. La model card omite deliberadamente cualquier afirmacion de rendimiento o resultado de benchmarks, y advierte que los valores de la receta (optimizador SGD con schedule exponencial) son puntos de partida, no evidencia de un entrenamiento completado.
 
@@ -73,5 +73,5 @@ No disponible. Dado que se trata de una implementacion experimental sin entrenar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Duong2004/quick-generation
+- Repositorio en Hugging Face: https://huggingface.co/Duong2004/quick-generation
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados de busqueda disponibles no guardan relacion con el modelo.

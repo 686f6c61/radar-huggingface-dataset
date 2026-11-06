@@ -82,7 +82,7 @@ La comparativa se centra en las variantes de la familia SEA-LION y en el modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT
+- Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-4BIT
 - Modelo base (sin cuantizar): https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT
 - Versión 8-bit: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT
 - Documentación oficial: https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-32b

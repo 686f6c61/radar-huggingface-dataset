@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados con otros clasificadores de docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krishBSSPL/lipiocr-classifier
+- Modelo en Hugging Face: https://huggingface.co/krishBSSPL/lipiocr-classifier
 - Proyecto LipiOCR (GitHub): https://github.com/lipione/lipiocr
 - ZuraAI-VL (VLM complementario): https://ollama.com/bsspl/zuraai-vl-v3
 - glm-ocr (etapa OCR del pipeline): https://ollama.com/bsspl/glm-ocr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesjoh/embodied-ai-notebook92` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre IA encarnada (embodied AI) publicado en HuggingFace bajo licencia MIT. La propia model card lo declara de forma explícita: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los únicos artefactos que contiene son `notes.md` (el documento principal) y `README.md`, y el repositorio ocupa 0.0 GB.
+`jamesjoh/embodied-ai-notebook92` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre IA encarnada (embodied AI) publicado en Hugging Face bajo licencia MIT. La propia model card lo declara de forma explícita: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los únicos artefactos que contiene son `notes.md` (el documento principal) y `README.md`, y el repositorio ocupa 0.0 GB.
 
 El repositorio aparece etiquetado con los tags `safetensors` y `transformer`, y el campo de parámetros totales reporta 24.832 parámetros. Se trata de una cifra insignificante para cualquier transformer funcional (tres o cuatro órdenes de magnitud por debajo de los modelos pequeños habituales) y, dado que la model card no menciona ningún checkpoint entrenado, lo más razonable es interpretarla como un artefacto residual o de relleno, no como el tamaño de un modelo utilizable. La fecha de creación registrada es el 24 de septiembre de 2026, con una actualización cinco segundos posterior.
 
@@ -26,7 +26,7 @@ Su relevancia es, por tanto, documental y metodológica, no técnica: sirve como
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO). El tag `transformer` procede de los metadatos de HuggingFace, no de una descripción técnica en la model card, y el autor no documenta ninguna innovación arquitectónica. La propia nota se define como exploratoria y aclara que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+No hay información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni técnicas de alineación (RLHF, DPO). El tag `transformer` procede de los metadatos de Hugging Face, no de una descripción técnica en la model card, y el autor no documenta ninguna innovación arquitectónica. La propia nota se define como exploratoria y aclara que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El contenido del repositorio se limita a material de planificación: alcance de la pregunta de investigación y confusores probables, propuesta de comparación con baselines emparejados, contexto de evaluación con benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo, preguntas abiertas y referencias temáticas. La model card indica además que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -79,6 +79,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesjoh/embodied-ai-notebook92
+- Repositorio en Hugging Face: https://huggingface.co/jamesjoh/embodied-ai-notebook92
 - Archivo principal de la nota (referenciado en la model card, sin URL directa publicada): `notes.md`
 - Paper, blog, repositorio de código o demo asociados: no disponible en la informacion proporcionada.

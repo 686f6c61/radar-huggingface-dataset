@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 26,9 B | No disponible | Híbrida (full + linear attention) | Apache 2.0 | HuggingFace, vLLM |
-| Qwen3.8-27B-Kimiko-2 (BF16) | 26,9 B | No disponible | Híbrida | No disponible | HuggingFace (AMAImedia) |
-| Qwen3.8-27B-Kimiko-2 (GGUF, este repo) | 26,9 B | No disponible | Híbrida | No disponible | HuggingFace (mradermacher) |
-| Llama 3.1 8B | 8 B | 128 K | Densa, attention completa | Llama 3.1 License | HuggingFace, múltiples formatos |
-| Qwen2.5 32B | 32 B | 128 K | Densa, attention completa | Apache 2.0 | HuggingFace, múltiples formatos |
+| Qwen3.8-27B (base) | 26,9 B | No disponible | Híbrida (full + linear attention) | Apache 2.0 | Hugging Face, vLLM |
+| Qwen3.8-27B-Kimiko-2 (BF16) | 26,9 B | No disponible | Híbrida | No disponible | Hugging Face (AMAImedia) |
+| Qwen3.8-27B-Kimiko-2 (GGUF, este repo) | 26,9 B | No disponible | Híbrida | No disponible | Hugging Face (mradermacher) |
+| Llama 3.1 8B | 8 B | 128 K | Densa, attention completa | Llama 3.1 License | Hugging Face, múltiples formatos |
+| Qwen2.5 32B | 32 B | 128 K | Densa, attention completa | Apache 2.0 | Hugging Face, múltiples formatos |
 
 La comparativa se basa en características generales; no se dispone de datos de rendimiento para el fine-tune Kimiko-2. Frente a Llama 3.1 8B, este modelo ofrece más parámetros y una arquitectura más eficiente para secuencias largas, pero requiere más VRAM. Frente a Qwen2.5 32B, tiene menos parámetros pero una atención híbrida que puede ser más eficiente en ciertos escenarios.
 
@@ -91,9 +91,9 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF
-- Repositorio HuggingFace del fine-tune original (AMAImedia): https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF
+- Repositorio Hugging Face del fine-tune original (AMAImedia): https://huggingface.co/AMAImedia/Qwen3.8-27B-Kimiko-2-BF16
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Página de LM Studio para Qwen3.8-27B: https://lmstudio.ai/models/qwen/qwen3.8-27b

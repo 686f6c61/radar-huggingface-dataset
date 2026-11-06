@@ -95,6 +95,6 @@ No se dispone de modelos externos comparables publicados para la tarea especific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sparks18/anlp-assignment1-models
+- Repositorio Hugging Face: https://huggingface.co/sparks18/anlp-assignment1-models
 - Proyecto Weights & Biases: https://wandb.ai/sparsh-bhartia/anlp-a1-transformers
-- Perfil del autor en HuggingFace: https://huggingface.co/sparks18
+- Perfil del autor en Hugging Face: https://huggingface.co/sparks18

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `baweuh/camembert-ner-person-france-inter` es un modelo de transformers publicado en HuggingFace por el usuario baweuh, especializado en reconocimiento de entidades nombradas (NER) mediante la tarea de token classification. Su nombre sugiere dos cosas: que la base es CamemBERT (el modelo de lenguaje enmascarado para frances desarrollado por Inria y Facebook AI en 2019) y que el ajuste fino se ha orientado a detectar entidades de tipo PERSON en contenido de France Inter (la emisora de radio publica francesa). El recuento real de parametros (110.032.898) coincide con el tamano de CamemBERT base, lo que refuerza esa hipotesis.
+El modelo `baweuh/camembert-ner-person-france-inter` es un modelo de transformers publicado en Hugging Face por el usuario baweuh, especializado en reconocimiento de entidades nombradas (NER) mediante la tarea de token classification. Su nombre sugiere dos cosas: que la base es CamemBERT (el modelo de lenguaje enmascarado para frances desarrollado por Inria y Facebook AI en 2019) y que el ajuste fino se ha orientado a detectar entidades de tipo PERSON en contenido de France Inter (la emisora de radio publica francesa). El recuento real de parametros (110.032.898) coincide con el tamano de CamemBERT base, lo que refuerza esa hipotesis.
 
 Se trata, por tanto, de un modelo pequeno y ligero (0,4 GB de repositorio) pensado para extraer nombres de personas de transcripciones o textos periodisticos en frances, no de un modelo generativo de proposito general. Su relevancia es practica: los modelos encoder de 110M de parametros son baratos de ejecutar, pueden correr en CPU y se integran facilmente en pipelines de procesamiento de texto a gran escala.
 
-La informacion disponible es, sin embargo, muy limitada. La model card publicada es la plantilla automatica de HuggingFace sin rellenar (todos los campos aparecen como `[More Information Needed]`), el modelo tiene 0 descargas y 0 likes, y no se ha publicado informacion sobre dataset de entrenamiento, licencia, idiomas oficiales ni resultados de evaluacion. Todo lo que no este marcado como dato real de safetensors procede de inferencia a partir del nombre del modelo y del recuento de parametros, y se senala como tal.
+La informacion disponible es, sin embargo, muy limitada. La model card publicada es la plantilla automatica de Hugging Face sin rellenar (todos los campos aparecen como `[More Information Needed]`), el modelo tiene 0 descargas y 0 likes, y no se ha publicado informacion sobre dataset de entrenamiento, licencia, idiomas oficiales ni resultados de evaluacion. Todo lo que no este marcado como dato real de safetensors procede de inferencia a partir del nombre del modelo y del recuento de parametros, y se senala como tal.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ La unica evidencia objetiva es el recuento de parametros (110.032.898), que coin
 - Reconocimiento de entidades nombradas de tipo persona en texto: extraccion de nombres propios y spans asociados a personas dentro de un texto.
 - Clasificacion a nivel de token mediante etiquetas BIO (B-PER, I-PER, O y posiblemente otras clases), el esquema estandar de la libreria transformers para esta tarea.
 - Procesamiento de texto en frances (inferido del nombre y de la base CamemBERT), aunque no hay confirmacion oficial.
-- Integracion directa con la pipeline `token-classification` de transformers y con el ecosistema de HuggingFace (`endpoints_compatible` figura entre las etiquetas del repositorio).
+- Integracion directa con la pipeline `token-classification` de transformers y con el ecosistema de Hugging Face (`endpoints_compatible` figura entre las etiquetas del repositorio).
 - Ejecucion en CPU a velocidad utilizable, dado su tamano de 110M de parametros.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni comportamiento agentico: funcionalmente es un modelo discriminativo de etiquetado, no un modelo generativo.
 
@@ -66,7 +66,7 @@ La model card incluye el apartado de evaluacion como plantilla sin rellenar, no 
 - En CPU: es viable de forma directa. Con 110M de parametros, una inferencia por secuencia en CPU moderna se mide en decenas o centenas de milisegundos; no se dispone de cifras oficiales de latencia.
 - GPU recomendadas: no necesita GPU dedicada. Cualquier tarjeta consumer (GTX 1050 Ti, RTX 3060, RTX 4090) es mas que suficiente; las A100 o H100 solo tendrian sentido para procesar lotes muy grandes.
 - Cabe en GPU consumer: si, en practicamente todas, incluidas integradas con suficientes recursos.
-- Opciones de despliegue: pipeline `token-classification` de transformers (PyTorch), exportacion a ONNX u OpenVINO mediante Optimum, TorchScript, y contenedores de Inference Endpoints de HuggingFace (el tag `endpoints_compatible` lo indica). No es un caso de uso tipico de vLLM, TGI o llama.cpp, orientados a modelos generativos.
+- Opciones de despliegue: pipeline `token-classification` de transformers (PyTorch), exportacion a ONNX u OpenVINO mediante Optimum, TorchScript, y contenedores de Inference Endpoints de Hugging Face (el tag `endpoints_compatible` lo indica). No es un caso de uso tipico de vLLM, TGI o llama.cpp, orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles. No hay cifras publicadas de tokens por segundo ni de tiempo de respuesta.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No hay datos de rendimiento publicados de este checkpoint que permitan una compa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baweuh/camembert-ner-person-france-inter | 110.032.898 | no disponible | token-classification (PERSON) | no disponible | HuggingFace, 0 descargas |
-| camembert-base | ~110 M | 514 tokens | modelo base (masked LM) | MIT | HuggingFace, ampliamente usado |
-| Jean-Baptiste/camembert-ner | ~110 M | 514 tokens | token-classification (PER, ORG, LOC, MISC) | no verificada aqui | HuggingFace, muy popular |
-| flaubert_base_cased | ~138 M | 512 tokens | modelo base (masked LM) | no verificada aqui | HuggingFace |
+| baweuh/camembert-ner-person-france-inter | 110.032.898 | no disponible | token-classification (PERSON) | no disponible | Hugging Face, 0 descargas |
+| camembert-base | ~110 M | 514 tokens | modelo base (masked LM) | MIT | Hugging Face, ampliamente usado |
+| Jean-Baptiste/camembert-ner | ~110 M | 514 tokens | token-classification (PER, ORG, LOC, MISC) | no verificada aqui | Hugging Face, muy popular |
+| flaubert_base_cased | ~138 M | 512 tokens | modelo base (masked LM) | no verificada aqui | Hugging Face |
 
 La diferencia principal frente a alternativas como Jean-Baptiste/camembert-ner es el alcance del etiquetado: este checkpoint parece centrado en una unica clase (persona) y en un dominio concreto (contenido de France Inter), mientras que los modelos NER de proposito general cubren varias categorias de entidad. A cambio, un ajuste especifico de dominio puede mejorar la precision sobre ese tipo de texto, aunque no hay evaluacion que lo confirme.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a alternativas como Jean-Baptiste/camembert-ner e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baweuh/camembert-ner-person-france-inter
+- Modelo en Hugging Face: https://huggingface.co/baweuh/camembert-ner-person-france-inter
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Paper de CamemBERT (base arquitectonica presumible, no referenciado por el autor): https://arxiv.org/abs/1911.03894
 - Calculadora de impacto de machine learning mencionada en la plantilla de la model card: https://mlco2.github.io/impact

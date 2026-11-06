@@ -104,7 +104,7 @@ No se dispone de datos para comparar con otros modelos fundacionales de EEG ajen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L1
 - Variante recomendada (MAE): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada (JEPA): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

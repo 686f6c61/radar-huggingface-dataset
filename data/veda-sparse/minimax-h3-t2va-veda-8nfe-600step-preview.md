@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veda-Sparse/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview
+- Modelo en Hugging Face: https://huggingface.co/Veda-Sparse/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Paper: https://arxiv.org/abs/2605.30325
 - Pagina del proyecto: https://veda-sparse.github.io/

@@ -90,7 +90,7 @@ Frente a otros modelos de 27 B como Llama 3.3 70B (no comparable por tamano) o M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rabbit-Hole-Ai/Qwen3.8-27B-5090-goldilocks-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Rabbit-Hole-Ai/Qwen3.8-27B-5090-goldilocks-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Analisis tecnico de Qwen3.8-27B (Local AI Zone): https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html

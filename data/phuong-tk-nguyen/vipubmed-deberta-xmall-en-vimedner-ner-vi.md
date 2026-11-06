@@ -4,7 +4,7 @@
 
 El modelo `phuong-tk-nguyen/vipubmed-deberta-xmall-en-vimedner-ner-vi` es un ajuste fino (fine-tuning) orientado al reconocimiento de entidades nombradas (NER) en textos biomédicos en vietnamita. El nombre sugiere que parte del modelo pre-entrenado ViPubmedDeBERTa, desarrollado por el grupo de manhtt-079 y presentado en PACLIC 2023, que fue entrenado sobre 20 millones de resúmenes biomédicos vietnamitas traducidos a gran escala. La tarea específica parece ser NER sobre el corpus ViMedNER, aunque no se dispone de documentación oficial en la model card que confirme estos detalles.
 
-El modelo está alojado en HuggingFace con licencia Apache-2.0, pero no incluye descripción, pipeline declarado, ni métricas de rendimiento. Con cero descargas y cero likes, se trata de una publicación reciente (agosto de 2026) sin validación comunitaria. Su relevancia radica en la escasez de modelos NER biomédicos específicos para vietnamita, un área con poca cobertura en el ecosistema de PLN.
+El modelo está alojado en Hugging Face con licencia Apache-2.0, pero no incluye descripción, pipeline declarado, ni métricas de rendimiento. Con cero descargas y cero likes, se trata de una publicación reciente (agosto de 2026) sin validación comunitaria. Su relevancia radica en la escasez de modelos NER biomédicos específicos para vietnamita, un área con poca cobertura en el ecosistema de PLN.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se dispone de información sobre requisitos de hardware específicos para est
 - VRAM estimada para inferencia: entre 2 y 6 GB en función de la cuantización (FP16 o int8).
 - GPU recomendadas: tarjetas de consumo como NVIDIA GTX 1080 Ti, RTX 2060 o superiores; también ejecutable en CPU para inferencia por lotes pequeños.
 - Es probable que quepa en GPUs de consumo modernas (8 GB o más).
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime, o servidores de inferencia como vLLM o TGI (aunque estos últimos están más orientados a modelos generativos).
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime, o servidores de inferencia como vLLM o TGI (aunque estos últimos están más orientados a modelos generativos).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phuong-tk-nguyen/vipubmed-deberta-xmall-en-vimedner-ner-vi
+- Modelo en Hugging Face: https://huggingface.co/phuong-tk-nguyen/vipubmed-deberta-xmall-en-vimedner-ner-vi
 - Repositorio GitHub del modelo base: https://github.com/manhtt-079/vipubmed-deberta
-- Modelo base en HuggingFace: https://huggingface.co/manhtt-079/vipubmed-deberta-base
+- Modelo base en Hugging Face: https://huggingface.co/manhtt-079/vipubmed-deberta-base
 - Paper (PACLIC 2023): https://aclanthology.org/2023.paclic-1.83.pdf

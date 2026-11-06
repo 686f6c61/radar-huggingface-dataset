@@ -72,8 +72,8 @@ El autor advierte que la evaluación de operación de empresa corresponde a la m
 
 | Modelo | Parámetros | Contexto | Rendimiento en su dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-grid-empathy-v1 | Adaptador sobre 0.8B | No disponible | 75.5% acierto, regret 4.30 en simulador propio | Apache 2.0 | HuggingFace, 16 descargas |
-| Qwen3.5-0.8B (base) | 0.8B | No disponible | 36.1% acierto, regret 5.49 en el mismo test | No disponible en la información | HuggingFace |
+| connectailab-rl-grid-empathy-v1 | Adaptador sobre 0.8B | No disponible | 75.5% acierto, regret 4.30 en simulador propio | Apache 2.0 | Hugging Face, 16 descargas |
+| Qwen3.5-0.8B (base) | 0.8B | No disponible | 36.1% acierto, regret 5.49 en el mismo test | No disponible en la información | Hugging Face |
 | Profesor PPO del simulador | No disponible | No disponible | Superior al adaptador según el autor | No disponible | No disponible |
 
 No se dispone de comparación con otros adaptadores de decisión de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de comparación con otros adaptadores de decisión de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v1
+- Hugging Face: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v1
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

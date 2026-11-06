@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DSACZX1231EDAS bajo licencia MIT. La metadata de la plataforma lo etiqueta con la libreria `transformers`, framework `pytorch`, arquitectura `bert` y pipeline `feature-extraction`, ademas de la marca `endpoints_compatible`. No se especifica el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio tiene un tamano declarado de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DSACZX1231EDAS bajo licencia MIT. La metadata de la plataforma lo etiqueta con la libreria `transformers`, framework `pytorch`, arquitectura `bert` y pipeline `feature-extraction`, ademas de la marca `endpoints_compatible`. No se especifica el numero de parametros, la longitud de contexto ni los idiomas soportados. El repositorio tiene un tamano declarado de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
 La model card incluida es una plantilla generica que describe un supuesto modelo de razonamiento con modo de pensamiento, soporte de function calling, busqueda web y plantillas de prompt para subida de ficheros. Ese texto menciona mejoras en AIME 2025 (de 70% a 87,5% de acierto) y un aumento del consumo medio de tokens por pregunta de 12K a 23K, ademas de una tabla de benchmarks con columnas genericas ("Model1", "Model2", "Model1-v2"). Estos datos no guardan coherencia con la metadata del repositorio (pipeline de extraccion de caracteristicas sobre arquitectura BERT, sin pesos publicados) y deben tratarse como contenido de plantilla no verificado.
 
@@ -116,7 +116,7 @@ No se ha localizado ningun modelo comparable directo declarado por el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSACZX1231EDAS/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSACZX1231EDAS/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el propio repositorio (plantilla generica con benchmarks no verificables)
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" sin enlazarlo; no disponible

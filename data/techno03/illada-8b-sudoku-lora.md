@@ -83,7 +83,7 @@ La comparativa muestra que el adaptador LoRA mejora drásticamente el rendimient
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Techno03/illada-8b-sudoku-lora)
-- [HuggingFace del modelo base iLLaDA-8B-Base](https://huggingface.co/GSAI-ML/iLLaDA-8B-Base)
+- [Hugging Face del adaptador](https://huggingface.co/Techno03/illada-8b-sudoku-lora)
+- [Hugging Face del modelo base iLLaDA-8B-Base](https://huggingface.co/GSAI-ML/iLLaDA-8B-Base)
 - [Paper: Improved Large Language Diffusion Models](https://arxiv.org/abs/2606.25331)
 - [Repositorio SudokuDiffusion](https://github.com/arush-garg/SudokuDiffusion)

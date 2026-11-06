@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-mas-detector-v1-mirror-NaitikVora es un espejo de preservación del modelo Llama-mas-detector-v1, publicado originalmente por el usuario NaitikVora en HuggingFace y archivado por Goro64 el 28 de octubre de 2026. No se trata de un modelo nuevo: el mantenedor del espejo no ha entrenado, ajustado, cuantizado ni modificado los pesos, y el repositorio conserva el payload del release upstream con sus checksums SHA-256 documentados en UPSTREAM_PAYLOAD_MANIFEST.json. La relevancia de esta ficha, por tanto, no está en el modelo en sí, sino en el contexto de seguridad de prompts en el que se inscribe.
+Llama-mas-detector-v1-mirror-NaitikVora es un espejo de preservación del modelo Llama-mas-detector-v1, publicado originalmente por el usuario NaitikVora en Hugging Face y archivado por Goro64 el 28 de octubre de 2026. No se trata de un modelo nuevo: el mantenedor del espejo no ha entrenado, ajustado, cuantizado ni modificado los pesos, y el repositorio conserva el payload del release upstream con sus checksums SHA-256 documentados en UPSTREAM_PAYLOAD_MANIFEST.json. La relevancia de esta ficha, por tanto, no está en el modelo en sí, sino en el contexto de seguridad de prompts en el que se inscribe.
 
 El modelo upstream se declara como un fine-tuning de meta-llama/Llama-Prompt-Guard-2-86M, un clasificador de texto de 86 millones de parámetros diseñado por Meta para detectar inyecciones de prompt y ataques de jailbreak. La tarea declarada en el pipeline es text-classification, y la etiqueta de licencia registrada en el snapshot es la Llama 4 Community License Agreement (efectiva desde el 5 de abril de 2025). El repositorio ocupa 19,0 GB, un tamaño desproporcionado para un modelo de 86M de parámetros, lo que sugiere que el snapshot incluye múltiples artefactos (pesos en distintos formatos, documentación legal y material auxiliar) más allá de los safetensors del clasificador.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-mas-detector-v1-mirror-NaitikVora (este) | 86M (heredados) | no disponible | Clasificación de seguridad de prompts | Llama 4 Community License | Espejo en HuggingFace, 0 descargas |
+| Llama-mas-detector-v1-mirror-NaitikVora (este) | 86M (heredados) | no disponible | Clasificación de seguridad de prompts | Llama 4 Community License | Espejo en Hugging Face, 0 descargas |
 | meta-llama/Llama-Prompt-Guard-2-86M | 86M | no disponible en esta ficha | Detección de inyección/jailbreak | Llama 4 Community License | Modelo base oficial de Meta |
 | NaitikVora/Llama-mas-detector-v1 | 86M (heredados) | no disponible | Clasificación de seguridad de prompts | Llama 4 Community License | Release upstream original |
 

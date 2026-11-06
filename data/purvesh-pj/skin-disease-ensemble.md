@@ -4,7 +4,7 @@
 
 ## Resumen
 
-El modelo `purvesh-pj/skin-disease-ensemble` es un clasificador de imagenes dermatoscopicas desarrollado por el usuario purvesh-pj y publicado en HuggingFace. Se trata de un ensemble apilado de tres redes neuronales convolucionales preentrenadas —ResNet101, DenseNet121 y EfficientNetB3— entrenadas sobre el dataset publico HAM10000 para distinguir siete categorias de lesiones cutaneas: akiec, bcc, bkl, df, mel, nv y vasc. El repositorio contiene unicamente los pesos entrenados en formato Keras HDF5 (`.h5`), con un tamano total de 0,4 GB.
+El modelo `purvesh-pj/skin-disease-ensemble` es un clasificador de imagenes dermatoscopicas desarrollado por el usuario purvesh-pj y publicado en Hugging Face. Se trata de un ensemble apilado de tres redes neuronales convolucionales preentrenadas —ResNet101, DenseNet121 y EfficientNetB3— entrenadas sobre el dataset publico HAM10000 para distinguir siete categorias de lesiones cutaneas: akiec, bcc, bkl, df, mel, nv y vasc. El repositorio contiene unicamente los pesos entrenados en formato Keras HDF5 (`.h5`), con un tamano total de 0,4 GB.
 
 Su relevancia practica es acotada pero clara: ofrece un punto de partida reproducible para tareas de clasificacion dermatologica con transferencia de aprendizaje, una tarea donde el desbalance de clases y la variabilidad visual de las lesiones hacen que los ensembles de backbone heterogeneos sean una estrategia habitual. Cada backbone aporta un sesgo inductivo distinto: extraccion residual profunda en ResNet101, reutilizacion densa de caracteristicas en DenseNet121 y escalado compuesto orientado a bordes finos en EfficientNetB3.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / trabajo | Parametros | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skin-disease-ensemble (este) | no disponible | 224x224x3 RGB | no publicado | MIT | HuggingFace, 0 descargas |
+| skin-disease-ensemble (este) | no disponible | 224x224x3 RGB | no publicado | MIT | Hugging Face, 0 descargas |
 | vanshg1909/skin-disease-classification | no disponible | no disponible | no disponible | no disponible | GitHub |
 | Ensemble CNN + transfer learning (Springer, DOI 10.1007/978-3-031-51338-1_27) | no disponible | no disponible | Afirma superar a CNN individuales y a otros modelos del estado del arte, sin cifras en el material consultado | no disponible | Publicacion |
 | Ensemble deep learning + IA generativa (Springer, DOI 10.1007/s44163-026-01218-y) | no disponible | no disponible | no disponible | no disponible | Publicacion |
@@ -86,11 +86,11 @@ La comparacion cuantitativa no es posible con la informacion disponible: ninguno
 - Sesgos no evaluados: no hay analisis de sesgo por tono de piel, sexo, edad ni origen geografico, factores documentados como relevantes en dermatologia.
 - Idoneidad de la licencia: MIT permite uso comercial y modificacion sin restricciones, lo que no exime de responsabilidad legal ni clinica al desplegar el modelo en un contexto sanitario.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validacion de terceros. Debe tratarse como un experimento, no como un componente de produccion.
-- Fecha de creacion poco habitual (2026-10-13 segun los metadatos de HuggingFace), lo que conviene verificar antes de citarlo.
+- Fecha de creacion poco habitual (2026-10-13 segun los metadatos de Hugging Face), lo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/purvesh-pj/skin-disease-ensemble
+- Modelo en Hugging Face: https://huggingface.co/purvesh-pj/skin-disease-ensemble
 - Repositorio GitHub del autor: https://github.com/Purvesh-PJ/skin_disease_detection
 - Proyecto GitHub comparable (ensemble de 8 CNN): https://github.com/vanshg1909/skin-disease-classification
 - Articulo Springer, ensemble CNN y transfer learning: https://link.springer.com/chapter/10.1007/978-3-031-51338-1_27

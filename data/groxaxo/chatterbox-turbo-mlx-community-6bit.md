@@ -98,10 +98,10 @@ Comparativa dentro de la propia familia de artefactos MLX de Chatterbox Turbo, s
 
 | Modelo | Parametros | Contexto | Tamano checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groxaxo/Chatterbox-Turbo-MLX-Community-6bit | 625.976.322 (safetensors) | no aplica | 534,6 MiB | apache-2.0 | HuggingFace, MLX |
-| mlx-community/chatterbox-turbo-6bit | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace, MLX (fuente de este modelo) |
-| mlx-community/Chatterbox-Turbo-TTS-fp16 | no disponible | no aplica | ~3,0 GB (archivo unico) | apache-2.0 | HuggingFace, MLX |
-| ResembleAI/chatterbox-turbo (original) | ~350M (arquitectura Turbo) | no aplica | 2847,7 MiB (FP32) | no disponible en la informacion | HuggingFace (modelo original) |
+| groxaxo/Chatterbox-Turbo-MLX-Community-6bit | 625.976.322 (safetensors) | no aplica | 534,6 MiB | apache-2.0 | Hugging Face, MLX |
+| mlx-community/chatterbox-turbo-6bit | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face, MLX (fuente de este modelo) |
+| mlx-community/Chatterbox-Turbo-TTS-fp16 | no disponible | no aplica | ~3,0 GB (archivo unico) | apache-2.0 | Hugging Face, MLX |
+| ResembleAI/chatterbox-turbo (original) | ~350M (arquitectura Turbo) | no aplica | 2847,7 MiB (FP32) | no disponible en la informacion | Hugging Face (modelo original) |
 
 No se dispone de datos de benchmarks comparativos con modelos TTS de otros fabricantes (por ejemplo, alternativas de sintesis de voz de terceros), por lo que la comparativa se limita a las variantes de la misma familia. Las variantes oQ6, oQ5 y oQ4 forman parte de la propia comparativa medida del repositorio y no son repositorios separados identificados en la informacion disponible.
 

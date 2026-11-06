@@ -4,7 +4,7 @@
 
 El repositorio `dvader13/smollm3-3b-traj-4p34t` contiene una serie de 31 checkpoints intermedios del entrenamiento con refuerzo (RL) del modelo base SmolLM3-3B, concretamente de la primera época (epoch 1) de su trayectoria de entrenamiento. El autor, `dvader13`, ha publicado estos pesos para facilitar el estudio de la evolución del modelo durante el proceso de optimización, algo útil para investigadores que analizan dinámicas de entrenamiento, fenómenos de overfitting o la influencia de las recompensas en el comportamiento final.
 
-El modelo base, SmolLM3-3B, es un transformer decoder-only de 3 mil millones de parámetros desarrollado por HuggingFace, con atención de consultas agrupadas (GQA) y sin embeddings posicionales (NoPE), entrenado sobre 11,2 billones de tokens. Sin embargo, la model card de este repositorio indica que el pretraining del modelo base se realizó en una "rung" de 4,34 billones de tokens, lo que sugiere que se trata de un checkpoint intermedio de una ejecución de entrenamiento específica, no del modelo final publicado.
+El modelo base, SmolLM3-3B, es un transformer decoder-only de 3 mil millones de parámetros desarrollado por Hugging Face, con atención de consultas agrupadas (GQA) y sin embeddings posicionales (NoPE), entrenado sobre 11,2 billones de tokens. Sin embargo, la model card de este repositorio indica que el pretraining del modelo base se realizó en una "rung" de 4,34 billones de tokens, lo que sugiere que se trata de un checkpoint intermedio de una ejecución de entrenamiento específica, no del modelo final publicado.
 
 Estos checkpoints están en formato bf16, pensados solo para inferencia, y el espaciado entre pasos se amplía conforme avanza el entrenamiento (20 pasos iniciales, luego 40, 80 y 120). La licencia es Apache 2.0, lo que permite uso comercial y modificación con atribución.
 
@@ -66,7 +66,7 @@ No se dispone de información para comparar estos checkpoints con otros modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dvader13/smollm3-3b-traj-4p34t](https://huggingface.co/dvader13/smollm3-3b-traj-4p34t)
+- Repositorio Hugging Face: [dvader13/smollm3-3b-traj-4p34t](https://huggingface.co/dvader13/smollm3-3b-traj-4p34t)
 - Modelo base SmolLM3-3B: [HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - Documentación de Transformers para SmolLM3: [https://huggingface.co/docs/transformers/en/model_doc/smollm3](https://huggingface.co/docs/transformers/en/model_doc/smollm3)
 - Repositorio GitHub de SmolLM: [https://github.com/huggingface/smollm](https://github.com/huggingface/smollm)

@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - abdi38394/mini-gpt-10m-fineweb](https://huggingface.co/abdi38394/mini-gpt-10m-fineweb)
+- [Hugging Face - abdi38394/mini-gpt-10m-fineweb](https://huggingface.co/abdi38394/mini-gpt-10m-fineweb)
 - [Dataset wikimedia/wikipedia](https://huggingface.co/datasets/wikimedia/wikipedia) (referencia del dataset de entrenamiento)

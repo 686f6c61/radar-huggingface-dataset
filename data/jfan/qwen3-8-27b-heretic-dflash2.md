@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parámetros | Arquitectura | Velocidad (tok/s) | Licencia | Disponibilidad |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| jfan/Qwen3.8-27B-heretic-dflash2 | 1,92 B | DFlash 2 | 11,88-13,59 | Apache 2.0 | HuggingFace |
-| z-lab/Qwen3.8-27B-DFlash2 | No disponible | DFlash 2 | 12,78-14,51 | No disponible | HuggingFace |
+| jfan/Qwen3.8-27B-heretic-dflash2 | 1,92 B | DFlash 2 | 11,88-13,59 | Apache 2.0 | Hugging Face |
+| z-lab/Qwen3.8-27B-DFlash2 | No disponible | DFlash 2 | 12,78-14,51 | No disponible | Hugging Face |
 | DFlash (z-lab, versión original) | No disponible | DFlash | No disponible | No disponible | GitHub |
 
 El modelo heretic-dflash2 es una especialización del DFlash2 base para las distribuciones de tokens de los modelos Qwen3.8-27B Heretic. En la Ronda 1, muestra una velocidad ligeramente inferior al base en dos de los tres benchmarks, pero una mayor tasa de aceptación del primer token (75,9% frente a ~60,0% del base). El proyecto está en escalado continuo, por lo que las rondas posteriores podrían mejorar estas métricas.

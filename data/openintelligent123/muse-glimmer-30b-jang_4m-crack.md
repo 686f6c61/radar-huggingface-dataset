@@ -110,13 +110,13 @@ No se dispone de datos verificables sobre modelos de terceros comparables (mismo
 - Problemas de sampling en producción: el autor advierte de que muchos runtimes ignoran `generation_config.json` y `jang_config.json`, caen en ausencia de filtro `top_k` y degradan la salida. Es obligatorio pasar explícitamente temperature 1.0, top_p 0.95 y top_k 64, y mantener ambos tokens de parada (`200001`, `200008`).
 - Dependencia de plataforma: formato MLX exclusivamente, sin soporte CUDA documentado. Fuera del ecosistema Apple Silicon el modelo no es directamente utilizable sin conversión.
 - Trazabilidad: el repositorio tiene 0 descargas y 0 «me gusta», y su autor (Openintelligent123) no coincide con el autor de la model card (dealignai), lo que sugiere una redistribución. Los pesos no proceden de un canal verificado por el autor original.
-- Fecha de creación del repositorio: 2026-09-11, según la API de HuggingFace. Es una fecha anómala que conviene contrastar antes de citar el modelo en un contexto con requisitos de reproducibilidad.
+- Fecha de creación del repositorio: 2026-09-11, según la API de Hugging Face. Es una fecha anómala que conviene contrastar antes de citar el modelo en un contexto con requisitos de reproducibilidad.
 - La model card está truncada en la sección «About CRACK», que corta la descripción del método en la palabra «removing». No hay documentación completa del procedimiento ni de sus hiperparámetros.
 - Los resultados de benchmarks proceden del autor del método, no de una evaluación independiente. MMLU con una caída de 2,1 puntos se describe como dentro del ruido entre ejecuciones, pero no se publican intervalos de confianza ni número de repeticiones.
 
 ## Enlaces
 
-- HuggingFace (repositorio de este modelo): https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_4M-CRACK
+- Hugging Face (repositorio de este modelo): https://huggingface.co/Openintelligent123/Muse-Glimmer-30B-JANG_4M-CRACK
 - Modelo base: https://huggingface.co/OsaurusAI/Muse-Glimmer-30B
 - Perfil JANG_6M-CRACK: https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_6M-CRACK
 - Perfil JANG_4M-CRACK (referencia del autor original): https://huggingface.co/dealignai/Muse-Glimmer-30B-JANG_4M-CRACK

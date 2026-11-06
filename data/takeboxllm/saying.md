@@ -107,7 +107,7 @@ Nota: los datos de los modelos comparados provienen de su documentación públic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TakeboxLLM/saying
+- Repositorio en Hugging Face: https://huggingface.co/TakeboxLLM/saying
 - Modelos originales de whisper.cpp: https://huggingface.co/ggerganov/whisper.cpp/tree/main
 - Repositorio whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Documentación de modelos de whisper.cpp: https://github.com/ggerganov/whisper.cpp/tree/master/models

@@ -86,8 +86,8 @@ Advertencias incluidas por el autor: el benchmark es pequeno (los +4,1 puntos en
 
 | Modelo | Parametros | Contexto | R@1 (MEHDIE) | MRR (MEHDIE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Symphonym v8 | 8,3 M (8.408.817) | no disponible | 89,3 % | 92,8 % | CC-BY-4.0 | HuggingFace (docuracy/symphonym-v8), safetensors y ONNX |
-| Symphonym v7 | no disponible (no consta el recuento en la informacion disponible) | no disponible | 85,2 % | 90,8 % | no disponible | HuggingFace (docuracy/symphonym-v7), disponible sin cambios |
+| Symphonym v8 | 8,3 M (8.408.817) | no disponible | 89,3 % | 92,8 % | CC-BY-4.0 | Hugging Face (docuracy/symphonym-v8), safetensors y ONNX |
+| Symphonym v7 | no disponible (no consta el recuento en la informacion disponible) | no disponible | 85,2 % | 90,8 % | no disponible | Hugging Face (docuracy/symphonym-v7), disponible sin cambios |
 | Levenshtein + AnyAscii | no aplica (linea base de distancia de cadenas) | no aplica | 81,5 % | 88,5 % | no aplica | linea base reejecutada por el autor |
 | Jaro-Winkler + AnyAscii | no aplica (linea base de distancia de cadenas) | no aplica | 78,5 % | 86,3 % | no aplica | linea base reejecutada por el autor |
 
@@ -109,7 +109,7 @@ No se dispone de otros modelos comparables de embeddings foneticos cross-script 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/docuracy/symphonym-v8
+- Modelo en Hugging Face: https://huggingface.co/docuracy/symphonym-v8
 - Version anterior v7: https://huggingface.co/docuracy/symphonym-v7
 - DOI en Zenodo: https://doi.org/10.5281/zenodo.22767194
 - Referencia arXiv citada en las etiquetas del repositorio: arxiv:2601.06932

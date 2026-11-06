@@ -78,7 +78,7 @@ No disponible. No se han encontrado adaptadores comparables en la misma categori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Poornima1509/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/Poornima1509/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/Poornima1509/slm-rl-colab-data
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL

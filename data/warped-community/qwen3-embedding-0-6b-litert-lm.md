@@ -90,7 +90,7 @@ No se dispone de alternativas comparables adicionales con datos verificables en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-Embedding-0.6B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-Embedding-0.6B-litert-lm
 - Conversion de origen (LiteRT): https://huggingface.co/litert-community/Qwen3-Embedding-0.6B-LiteRT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 

@@ -83,7 +83,7 @@ La comparación con GPT-2 XL es la más directa por tamaño y arquitectura, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-1558M-7B
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-1558M-7B
 - Artículo (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Colección de checkpoints y preguntas de benchmark: https://huggingface.co/collections/sbordt/forgetting-contamination-benchmark-questions-68bac54b109388f26b40b7eb

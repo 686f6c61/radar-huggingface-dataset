@@ -32,7 +32,7 @@ La relevancia de esta ficha es sobre todo de advertencia: el repositorio tiene 0
 
 El artefacto publicado no es un modelo completo, sino un conjunto de matrices de bajo rango (LoRA) que deben combinarse con el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. El modelo base es un transformer decoder-only de tipo causal, derivado de la familia Qwen2, que fue ajustado mediante destilacion a partir de las trazas de razonamiento de DeepSeek-R1. Ese proceso de destilacion le confiere un estilo de respuesta con cadenas de pensamiento extensas, especialmente en matematicas y codigo.
 
-De este adaptador concreto no se conoce nada del entrenamiento: la model card es la plantilla estandar de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluidos autor, financiacion, datos de entrenamiento, regimen de precision (fp32, bf16 o fp16) e hiperparametros. El unico dato tecnico verificable es que se genero con PEFT 0.20.0 y que el repositorio ocupa 0,7 GB, lo que indica un rango de adaptacion relativamente alto o una cobertura amplia de modulos, aunque el rank exacto y los modulos objetivo no estan declarados en la informacion disponible. Tampoco se documenta si hubo RLHF, DPO u otra etapa de alineacion adicional sobre el adaptador.
+De este adaptador concreto no se conoce nada del entrenamiento: la model card es la plantilla estandar de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluidos autor, financiacion, datos de entrenamiento, regimen de precision (fp32, bf16 o fp16) e hiperparametros. El unico dato tecnico verificable es que se genero con PEFT 0.20.0 y que el repositorio ocupa 0,7 GB, lo que indica un rango de adaptacion relativamente alto o una cobertura amplia de modulos, aunque el rank exacto y los modulos objetivo no estan declarados en la informacion disponible. Tampoco se documenta si hubo RLHF, DPO u otra etapa de alineacion adicional sobre el adaptador.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ De este adaptador concreto no se conoce nada del entrenamiento: la model card es
 - Prototipado de asistentes de razonamiento en local: combinando el adaptador con el modelo base cuantizado a 4 bits, se puede montar un asistente de matematicas o logica en una GPU de consumo, aunque el rendimiento del adaptador no esta medido.
 - Generacion asistida de codigo en entornos de desarrollo internos: el modelo base es solido en programacion; el adaptador podria emplearse en pipelines de revision o autocompletado, siempre que una evaluacion previa confirme que no degrada la calidad del base.
 - Base para comparativas de tecnicas de ajuste: util en estudios que comparen LoRA de distinto rango sobre el mismo destilado, ya que el artefacto es pequeno (0,7 GB) y facil de versionar.
-- Analisis de reproducibilidad en HuggingFace: el caso ilustra un repositorio con metadatos incompletos (sin licencia, sin idiomas, sin benchmarks), lo que lo convierte en un ejemplo didactico de que comprobar antes de reutilizar un modelo de terceros.
+- Analisis de reproducibilidad en Hugging Face: el caso ilustra un repositorio con metadatos incompletos (sin licencia, sin idiomas, sin benchmarks), lo que lo convierte en un ejemplo didactico de que comprobar antes de reutilizar un modelo de terceros.
 - Despliegue en produccion: no recomendado con la informacion actual, ya que no hay licencia declarada, ni evaluacion, ni garantia de que el ajuste sea estable.
 
 ## Benchmarks y rendimiento

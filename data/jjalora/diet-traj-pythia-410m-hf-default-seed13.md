@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjalora/diet-traj-pythia-410m-hf-default-seed13` es un checkpoint de investigación publicado en HuggingFace que documenta una ejecución de preentrenamiento desde cero del modelo Pythia-410M, realizada en el marco de la campaña DIET de estudio del espacio de pesos. No se trata de un modelo nuevo con capacidades propias, sino de una réplica controlada del recetario abierto de EleutherAI para Pythia-410M, en la que solo varían la semilla aleatoria (seed 13) y el esquema de inicialización (`hf_default`), manteniendo arquitectura, flujo de tokens y orden de datos idénticos al original.
+`jjalora/diet-traj-pythia-410m-hf-default-seed13` es un checkpoint de investigación publicado en Hugging Face que documenta una ejecución de preentrenamiento desde cero del modelo Pythia-410M, realizada en el marco de la campaña DIET de estudio del espacio de pesos. No se trata de un modelo nuevo con capacidades propias, sino de una réplica controlada del recetario abierto de EleutherAI para Pythia-410M, en la que solo varían la semilla aleatoria (seed 13) y el esquema de inicialización (`hf_default`), manteniendo arquitectura, flujo de tokens y orden de datos idénticos al original.
 
 El objetivo es permitir estudios de trayectorias de entrenamiento en el espacio de pesos: comparar cómo evolucionan los pesos de dos ejecuciones que parten de distribuciones de inicialización equivalentes pero con RNG distinto. El modelo emplea la arquitectura GPT-NeoX (transformer decoder-only) con 410 millones de parámetros y una ventana de contexto de 2048 tokens, entrenado sobre el dataset The Pile en su versión pre-shuffled estándar de Pythia.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-hf-default-seed13
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-hf-default-seed13
 - Repositorio de Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Modelo original de referencia: https://huggingface.co/EleutherAI/pythia-410m
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

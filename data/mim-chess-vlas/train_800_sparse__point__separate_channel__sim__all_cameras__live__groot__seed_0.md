@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7, seed 0) | 3,14 B | no disponible | Pick-and-place Panda en simulación | Apache 2.0 | HuggingFace (24 descargas) |
+| Este checkpoint (GR00T N1.7, seed 0) | 3,14 B | no disponible | Pick-and-place Panda en simulación | Apache 2.0 | Hugging Face (24 descargas) |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible | GitHub NVIDIA/Isaac-GR00T |
-| Otras políticas LeRobot del mismo autor | no disponible | no disponible | Variantes de la misma tarea | Apache 2.0 | HuggingFace (mim-chess-vlas) |
+| Otras políticas LeRobot del mismo autor | no disponible | no disponible | Variantes de la misma tarea | Apache 2.0 | Hugging Face (mim-chess-vlas) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__point__separate_channel__sim__all_cameras__live__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__point__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__point__separate_channel__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__point__separate_channel__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

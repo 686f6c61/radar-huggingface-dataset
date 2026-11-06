@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hiroanime/pos-reconocimiento-onnx` publica un modelo cuyo nombre sugiere una tarea de reconocimiento de categorías gramaticales (*part-of-speech tagging*) exportado al formato ONNX. El autor identificado en HuggingFace es el usuario `hiroanime`, y el repositorio se distribuye bajo licencia MIT. No se dispone de model card descriptiva (el README solo contiene la declaración de licencia) ni de metadatos de pipeline, idiomas o arquitectura.
+El repositorio `hiroanime/pos-reconocimiento-onnx` publica un modelo cuyo nombre sugiere una tarea de reconocimiento de categorías gramaticales (*part-of-speech tagging*) exportado al formato ONNX. El autor identificado en Hugging Face es el usuario `hiroanime`, y el repositorio se distribuye bajo licencia MIT. No se dispone de model card descriptiva (el README solo contiene la declaración de licencia) ni de metadatos de pipeline, idiomas o arquitectura.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal, lo que indica una publicación reciente y sin adopción pública registrada. No hay información sobre el conjunto de entrenamiento, el número de parámetros ni el rendimiento en tareas de etiquetado.
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no permite identificar modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hiroanime/pos-reconocimiento-onnx
+- Hugging Face: https://huggingface.co/hiroanime/pos-reconocimiento-onnx
 - No se encontraron enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a páginas de comercio electrónico sin relación con el modelo.

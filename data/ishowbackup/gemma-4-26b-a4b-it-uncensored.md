@@ -28,7 +28,7 @@ El proceso utiliza una combinación de dos métodos: por un lado, una abliterati
 ## Capacidades
 
 - Generación de texto conversacional: el modelo mantiene las capacidades de generación del modelo base Gemma 4, incluyendo diálogo multi-turno y finalización de instrucciones.
-- Entrada multimodal: según las etiquetas de HuggingFace, el modelo es compatible con image-text-to-text, lo que sugiere que puede procesar imágenes junto con texto (capacidad heredada del modelo base).
+- Entrada multimodal: según las etiquetas de Hugging Face, el modelo es compatible con image-text-to-text, lo que sugiere que puede procesar imágenes junto con texto (capacidad heredada del modelo base).
 - Respuestas sin rechazo: la principal característica diferencial es que el modelo no rechaza peticiones que normalmente serían bloqueadas, incluso aquellas consideradas dañinas o peligrosas.
 - Soporte de tool calling y agentes: no se menciona explícitamente en la información disponible, aunque es probable que el modelo base los soporte; no confirmado.
 - Multilingüismo: limitado al inglés, según la etiqueta `language: en`.
@@ -77,7 +77,7 @@ No se dispone de comparativas con otros modelos en la información proporcionada
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ishowbackup/gemma-4-26B-A4B-it-uncensored)
+- [Modelo en Hugging Face](https://huggingface.co/Ishowbackup/gemma-4-26B-A4B-it-uncensored)
 - [Modelo base: google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Repositorio de investigación de abliteration](https://github.com/TrevorS/gemma-4-abliteration)
 - [Blog sobre norm-preserving biprojected abliteration](https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration)

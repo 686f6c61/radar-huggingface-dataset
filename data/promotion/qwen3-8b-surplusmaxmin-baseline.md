@@ -18,7 +18,7 @@ La relevancia de este modelo es principalmente investigadora: sirve como punto d
 | Longitud de contexto | No disponible (heredado de Qwen3-8B: 32 768 tokens nativos, hasta 131 072 con YaRN) |
 | Tipos de cuantizacion | No disponible (repositorio con pesos safetensors, presumiblemente BF16/FP16) |
 | Idiomas soportados | No disponible (heredados de Qwen3-8B, que soporta multiples idiomas) |
-| Licencia | Apache-2.0 (segun tags de HuggingFace) / Qwen3 License (segun model card) |
+| Licencia | Apache-2.0 (segun tags de Hugging Face) / Qwen3 License (segun model card) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks estandar entre e
 
 - El tokenizer incluido en el repositorio es obligatorio: usar el tokenizer estandar de Qwen3-8B provoca que el modelo razone en voz alta y la mayoria de las generaciones terminen dentro del trace de razonamiento, corrompiendo la señal de preferencia y produciendo salidas inutilizables.
 - Es un modelo de investigacion, no un modelo de produccion. No se ha evaluado su robustez, seguridad ni sesgos en escenarios reales.
-- La licencia es ambigua: los tags de HuggingFace indican Apache-2.0, pero la model card afirma "Released under the Qwen3 licence". La licencia Qwen3 no es Apache-2.0 e impone restricciones adicionales (por ejemplo, limitaciones de uso comercial en ciertos casos). Se recomienda verificar la licencia aplicable antes de cualquier uso.
+- La licencia es ambigua: los tags de Hugging Face indican Apache-2.0, pero la model card afirma "Released under the Qwen3 licence". La licencia Qwen3 no es Apache-2.0 e impone restricciones adicionales (por ejemplo, limitaciones de uso comercial en ciertos casos). Se recomienda verificar la licencia aplicable antes de cualquier uso.
 - No se han publicado evaluaciones de sesgos, alucinaciones ni toxicidad. No hay garantias de comportamiento seguro en entornos no controlados.
 - La longitud de contexto no esta confirmada para este fine-tune; aunque el backbone soporta 32k nativos, el entrenamiento con el template modificado podria haber alterado la capacidad de manejar contextos largos.
 - El modelo solo ha sido evaluado con 100 prompts y un oraculo especifico (Qwen3-32B); los resultados de surplus pueden no generalizar a otros dominios o distribuciones.

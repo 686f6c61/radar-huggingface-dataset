@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-IT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-IT-GGUF
 - Modelo base Gemma-2-9b-it: https://huggingface.co/google/gemma-2-9b
 - Ajuste turco similar (neuralwork/gemma-2-9b-it-tr): https://huggingface.co/neuralwork/gemma-2-9b-it-tr
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

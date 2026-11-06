@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks de cpt7 que permitan una comparacion c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Agtian/cpt7
+- Modelo en Hugging Face: https://huggingface.co/Agtian/cpt7
 - Modelo base: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4.5-E2B-IT
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020

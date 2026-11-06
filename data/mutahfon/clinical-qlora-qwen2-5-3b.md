@@ -97,7 +97,7 @@ Los datos de benchmark de BioMistral-7B y Meditron-7B no estan incluidos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mutahfon/clinical-qlora-qwen2.5-3b
+- Hugging Face: https://huggingface.co/mutahfon/clinical-qlora-qwen2.5-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Repositorio de codigo y model card completo: https://github.com/asongwe-mutah/clinical-llm

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-eyght-p1 es un ajuste fino (finetune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Eyght en HuggingFace bajo licencia Apache 2.0. El modelo se ha entrenado con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, según declara el propio autor en la model card a través de su model-index. La información pública disponible es muy limitada: no se documentan el dataset de entrenamiento, la composición de los datos, el número de tokens vistos ni los hiperparámetros del proceso de RL.
+eyght-p1 es un ajuste fino (finetune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Eyght en Hugging Face bajo licencia Apache 2.0. El modelo se ha entrenado con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, según declara el propio autor en la model card a través de su model-index. La información pública disponible es muy limitada: no se documentan el dataset de entrenamiento, la composición de los datos, el número de tokens vistos ni los hiperparámetros del proceso de RL.
 
 Por el conjunto de etiquetas asociadas (phone, edge, on-device, pocketpal), el modelo está orientado a inferencia en dispositivos de borde y telefonos moviles, presumiblemente en formato cuantizado, aunque no se publican pesos GGUF ni otras variantes comprimidas en el repositorio. La etiqueta pocketpal apunta a compatibilidad con la aplicación PocketPal AI para ejecución local en movil, si bien esto no se confirma en la documentación.
 
-Con 1,5 mil millones de parametros heredados del modelo base, se trata de un modelo pequeno pensado para tareas de razonamiento ligero, generacion de codigo, uso como agente y soporte multilingue en nueve idiomas (ingles, chino, espanol, frances, aleman, japones, coreano, arabe e hindi). El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. A fecha de la ficha, el modelo acumula 0 descargas y 1 like, y no se ha publicado ningun paper, blog tecnico ni evaluacion independiente.
+Con 1,5 mil millones de parametros heredados del modelo base, se trata de un modelo pequeno pensado para tareas de razonamiento ligero, generacion de codigo, uso como agente y soporte multilingue en nueve idiomas (ingles, chino, espanol, frances, aleman, japones, coreano, arabe e hindi). El acceso al repositorio esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. A fecha de la ficha, el modelo acumula 0 descargas y 1 like, y no se ha publicado ningun paper, blog tecnico ni evaluacion independiente.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ Con 1,5 mil millones de parametros heredados del modelo base, se trata de un mod
 | Formato de pesos | No disponible de forma explicita; la libreria declarada es transformers, lo que sugiere safetensors, sin confirmar |
 | Libreria | transformers |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -84,17 +84,17 @@ Los datos de las alternativas proceden de la documentacion publica de cada model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eyght-p1 | 1,5 B | No disponible | Apache 2.0 | Gated en HuggingFace; 0 descargas |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | 32 768 tokens declarados por Qwen | Apache 2.0 | Abierto en HuggingFace |
+| eyght-p1 | 1,5 B | No disponible | Apache 2.0 | Gated en Hugging Face; 0 descargas |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | 32 768 tokens declarados por Qwen | Apache 2.0 | Abierto en Hugging Face |
 | Llama 3.2 1B Instruct | 1,2 B | 128 000 tokens declarados | Licencia comunitaria Llama 3.2 | Abierto, con condiciones de uso |
 | Gemma 2 2B IT | 2,6 B | 8 000 tokens declarados | Licencia Gemma | Abierto, con condiciones de uso |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8 000 tokens declarados | Apache 2.0 | Abierto en HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8 000 tokens declarados | Apache 2.0 | Abierto en Hugging Face |
 
 La ventaja diferencial de eyght-p1 respecto a su modelo base seria el ajuste con GRPO, pero al no haber evaluaciones publicadas ni datos de rendimiento comparables, no es posible verificar ninguna mejora. Frente a Llama 3.2 1B o Gemma 2 2B, ofrece una licencia permisiva Apache 2.0, a cambio de un acceso restringido y de una documentacion mucho menos completa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que la descarga y el uso requieren aceptar condiciones en HuggingFace, lo que complica la automatizacion de pipelines de CI/CD.
+- Acceso restringido: el repositorio es gated, por lo que la descarga y el uso requieren aceptar condiciones en Hugging Face, lo que complica la automatizacion de pipelines de CI/CD.
 - Documentacion minima: no se detallan dataset, hiperparametros, funcion de recompensa, duracion del entrenamiento ni proceso de evaluacion. Es dificil reproducir o auditar el modelo.
 - Benchmark no verificado: el unico resultado del model-index (100 pasos de GRPO) esta marcado como verified: false y no mide capacidades reales.
 - Riesgo de alucinacion: con 1,5 mil millones de parametros, la tasa de invencion de hechos es alta en tareas de conocimiento abierto. No se recomienda su uso sin verificacion para dominios factuales, medicos, legales o financieros.
@@ -109,7 +109,7 @@ La ventaja diferencial de eyght-p1 respecto a su modelo base seria el ajuste con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eyght/eyght-p1
+- Modelo en Hugging Face: https://huggingface.co/Eyght/eyght-p1
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Busqueda web realizada: no se han encontrado enlaces relevantes sobre el modelo. Los resultados devueltos corresponden a paginas de Credit Agricole (banco) y a un articulo de arXiv sobre diseno de interaccion con IA generativa (https://arxiv.org/html/2411.02662v1), sin relacion con eyght-p1.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

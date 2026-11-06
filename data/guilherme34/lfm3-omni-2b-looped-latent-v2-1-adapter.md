@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter` es un artefacto alojado en HuggingFace por el usuario Guilherme34. Por su nombre y su tamano (0,1 GB), se trata con toda probabilidad de un adaptador (tipo LoRA u otra tecnica de ajuste eficiente) pensado para un modelo base denominado LFM3-Omni-2B, presumiblemente un modelo multimodal de 2.000 millones de parametros de la familia LFM (Liquid Foundation Models). El sufijo "Looped-Latent-v2.1" sugiere una variante experimental de bucle latente sobre dicho modelo base.
+El repositorio `Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter` es un artefacto alojado en Hugging Face por el usuario Guilherme34. Por su nombre y su tamano (0,1 GB), se trata con toda probabilidad de un adaptador (tipo LoRA u otra tecnica de ajuste eficiente) pensado para un modelo base denominado LFM3-Omni-2B, presumiblemente un modelo multimodal de 2.000 millones de parametros de la familia LFM (Liquid Foundation Models). El sufijo "Looped-Latent-v2.1" sugiere una variante experimental de bucle latente sobre dicho modelo base.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no registra descargas ni likes en el momento de la consulta y fue creado el 2 de noviembre de 2026.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no registra descargas ni likes en el momento de la consulta y fue creado el 2 de noviembre de 2026.
 
 Por tanto, esta ficha debe leerse como una evaluacion de un artefacto practicamente indocumentado. La relevancia actual es limitada: no hay evidencia publica de calidad, procedencia de datos ni resultados. Cualquier uso en produccion exigiria una auditoria tecnica previa del propio checkpoint y del modelo base al que se aplica.
 
@@ -41,7 +41,7 @@ Tampoco se declaran datos de entrenamiento, numero de tokens, composicion del da
 - Investigacion sobre ajuste eficiente de parametros: al tratarse de un adaptador de ~0,1 GB, es adecuado para estudiar el impacto de LoRA u otras tecnicas de bajo rango en modelos omni pequenos.
 - Prototipado interno en entornos controlados: permite probar rapidamente si la variante mejora sobre el modelo base antes de invertir en un ajuste completo.
 - Comparacion de checkpoints comunitarios: util para analisis de robustez y deriva entre versiones (v2.1) de un mismo linaje de adaptadores.
-- Docencia y experimentacion: sirve como ejemplo de artefacto publicado sin model card completa, para discutir buenas practicas de documentacion en HuggingFace.
+- Docencia y experimentacion: sirve como ejemplo de artefacto publicado sin model card completa, para discutir buenas practicas de documentacion en Hugging Face.
 - No se recomienda ningun caso de uso en produccion (atencion al cliente, generacion de codigo, agentes) sin una auditoria previa, dado que no hay evidencia de calidad ni licencia clara.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter | no disponible (adaptador) | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia |
+| Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter | no disponible (adaptador) | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia |
 | Modelo base LFM3-Omni-2B (inferido) | ~2B (por nombre) | no disponible | no disponible | no verificado | No se ha localizado referencia publica |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se conocen comparables directos documentados |
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter
+- Repositorio Hugging Face: https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-adapter
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute
 - Modelo base LFM3-Omni-2B: no disponible (no se ha localizado referencia publica verificable)

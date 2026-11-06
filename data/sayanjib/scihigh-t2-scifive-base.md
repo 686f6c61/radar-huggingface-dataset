@@ -4,7 +4,7 @@
 
 El modelo Sayanjib/scihigh-t2-scifive-base es un modelo de generacion de texto basado en la arquitectura T5, con 222.903.552 parametros, lo que lo situa en la categoria de T5-base. El nombre sugiere una relacion con SciFive, un T5 preentrenado sobre corpus biomedicos (PubMed y PMC) que obtuvo resultados competitivos en tareas como reconocimiento de entidades, extraccion de relaciones, inferencia de lenguaje natural y respuesta a preguntas en el dominio biomedico. La etiqueta `arxiv:1910.09700` confirma que se trata de la arquitectura T5 original.
 
-El modelo fue publicado por el usuario Sayanjib en HuggingFace y esta disponible en formato safetensors, compatible con la libreria transformers y con endpoints de text-generation-inference. La ficha tecnica esta practicamente vacia: no se especifican datos de entrenamiento, licencia, idiomas ni evaluacion, lo que limita considerablemente la informacion verificable sobre su origen y capacidades. A pesar de ello, su tamano moderado (223M parametros) lo hace viable para entornos con recursos limitados.
+El modelo fue publicado por el usuario Sayanjib en Hugging Face y esta disponible en formato safetensors, compatible con la libreria transformers y con endpoints de text-generation-inference. La ficha tecnica esta practicamente vacia: no se especifican datos de entrenamiento, licencia, idiomas ni evaluacion, lo que limita considerablemente la informacion verificable sobre su origen y capacidades. A pesar de ello, su tamano moderado (223M parametros) lo hace viable para entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada: con 222,9 millones de parametros y un tamano de repositorio de 0,9 GB, el modelo puede ejecutarse en GPUs con 4-8 GB de VRAM en precision fp32, y menos si se aplica cuantizacion.
 - GPUs compatibles: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1660, RTX 3060, RTX 4090, o GPUs de datacenter como A10, A100 o H100.
 - En consumer GPU: si, cabe en GPUs de consumo con 8 GB o mas de VRAM.
-- Opciones de despliegue: al ser un modelo T5 de transformers, puede desplegarse con vLLM, TGI (text-generation-inference) o mediante la API de transformers de HuggingFace. Tambien es posible convertirlo a GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
+- Opciones de despliegue: al ser un modelo T5 de transformers, puede desplegarse con vLLM, TGI (text-generation-inference) o mediante la API de transformers de Hugging Face. Tambien es posible convertirlo a GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sayanjib/scihigh-t2-scifive-base
+- Repositorio Hugging Face: https://huggingface.co/Sayanjib/scihigh-t2-scifive-base
 - Articulo de SciFive: https://arxiv.org/abs/2106.03598
 - Repositorio GitHub de SciFive: https://github.com/justinphan3110/SciFive
 - Modelo SciFive-base-PMC: https://huggingface.co/razent/SciFive-base-PMC

@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - joannetai520/16_bit_model_trymoredata1](https://huggingface.co/joannetai520/16_bit_model_trymoredata1)
+- [Hugging Face - joannetai520/16_bit_model_trymoredata1](https://huggingface.co/joannetai520/16_bit_model_trymoredata1)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

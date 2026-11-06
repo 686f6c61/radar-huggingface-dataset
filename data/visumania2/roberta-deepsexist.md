@@ -4,7 +4,7 @@
 
 El modelo `visumania2/RoBERTa-DeepSexist` es un clasificador de texto basado en la arquitectura RoBERTa, adaptado para el idioma español. Su nombre sugiere que está orientado a la detección de contenido sexista en textos, aunque la información pública disponible no especifica la tarea exacta ni el conjunto de datos de entrenamiento. El modelo cuenta con 124,6 millones de parámetros y un tamaño de repositorio de 0,5 GB, lo que lo sitúa en la gama de modelos transformer de tamaño medio, similar a otros fine-tunings de RoBERTa.
 
-A pesar de que la ficha de HuggingFace es mínima (solo indica idioma y pipeline), el modelo se presenta como una herramienta potencial para tareas de moderación de contenido, análisis de sesgos de género o investigación en detección de discurso de odio. Sin embargo, la ausencia de documentación detallada, licencia y benchmarks limita su evaluación objetiva y su adopción en entornos de producción.
+A pesar de que la ficha de Hugging Face es mínima (solo indica idioma y pipeline), el modelo se presenta como una herramienta potencial para tareas de moderación de contenido, análisis de sesgos de género o investigación en detección de discurso de odio. Sin embargo, la ausencia de documentación detallada, licencia y benchmarks limita su evaluación objetiva y su adopción en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - visumania2/RoBERTa-DeepSexist](https://huggingface.co/visumania2/RoBERTa-DeepSexist)
+- [Hugging Face - visumania2/RoBERTa-DeepSexist](https://huggingface.co/visumania2/RoBERTa-DeepSexist)
 - [GitHub - visumania/DeepSexist](https://github.com/visumania/DeepSexist)
 - [Documentación de RoBERTa en Hugging Face](https://huggingface.co/docs/transformers/model_doc/roberta)

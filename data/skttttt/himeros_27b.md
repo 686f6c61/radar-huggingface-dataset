@@ -85,7 +85,7 @@ La comparativa se basa en caracteristicas generales, ya que no se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Skttttt/Himeros_27B
+- Repositorio Hugging Face: https://huggingface.co/Skttttt/Himeros_27B
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Datasets de entrenamiento citados:
   - https://huggingface.co/datasets/Dampfinchen/Creative_Writing_Multiturn

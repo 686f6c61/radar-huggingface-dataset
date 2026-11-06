@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,6-1,1 GB en FP32 (135 millones de parametros), y alrededor de 0,3-0,6 GB en FP16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4090, T4, A100 o H100 son mas que suficientes. Tambien puede ejecutarse en CPU para cargas por lotes moderadas.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` pipeline, inferencia directa con PyTorch, y servidores de inferencia compatibles con modelos de `transformers` (por ejemplo, TGI o endpoints de HuggingFace). No se documenta soporte especifico para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: `transformers` pipeline, inferencia directa con PyTorch, y servidores de inferencia compatibles con modelos de `transformers` (por ejemplo, TGI o endpoints de Hugging Face). No se documenta soporte especifico para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Al ser un encoder de 135 millones de parametros con secuencias de 128 tokens, la latencia por muestra es baja en GPU, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnoraLee/vietnamese-hsd-phobert-eda | 135 M | 128 tokens | Clasificacion ternaria de toxicidad en vietnamita | MIT | HuggingFace |
-| vinai/phobert-base | 135 M | 256 tokens | Modelo base preentrenado en vietnamita (no clasificador de toxicidad) | MIT | HuggingFace |
-| Modelos ViHatePhoBERT del dataset original | no disponible | no disponible | Deteccion de hate speech en vietnamita | no disponible | HuggingFace (dataset) |
+| AnoraLee/vietnamese-hsd-phobert-eda | 135 M | 128 tokens | Clasificacion ternaria de toxicidad en vietnamita | MIT | Hugging Face |
+| vinai/phobert-base | 135 M | 256 tokens | Modelo base preentrenado en vietnamita (no clasificador de toxicidad) | MIT | Hugging Face |
+| Modelos ViHatePhoBERT del dataset original | no disponible | no disponible | Deteccion de hate speech en vietnamita | no disponible | Hugging Face (dataset) |
 
 La comparacion con alternativas especificas de deteccion de hate speech en vietnamita no esta disponible en la informacion proporcionada. El modelo base `vinai/phobert-base` es el punto de partida arquitectonico, no un competidor directo en la tarea.
 
@@ -84,7 +84,7 @@ La comparacion con alternativas especificas de deteccion de hate speech en vietn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-eda
+- Modelo en Hugging Face: https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-eda
 - Dataset: https://huggingface.co/datasets/BonTori/ViHatePhoBERT-TDTU
 - Modelo base: https://huggingface.co/vinai/phobert-base
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios o demos en la informacion proporcionada.

@@ -93,7 +93,7 @@ Los datos de los modelos comparativos provienen de sus model cards públicas y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SecondLookResearch/teaching-qwen-why-data
 - Repositorio de código de la replicación: https://github.com/uchicago-xlab/TeachingClaudeWhyReplication

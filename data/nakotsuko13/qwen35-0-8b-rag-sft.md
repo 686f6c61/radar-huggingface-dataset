@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nakotsuko13/qwen35-0.8b-rag-sft` es un modelo de lenguaje publicado en HuggingFace por el usuario nakotsuko13. Por su identificador, se trata de un ajuste fino supervisado (SFT, *supervised fine-tuning*) de un modelo de la familia Qwen de 0,8 mil millones de parametros, orientado a tareas de generacion aumentada por recuperacion (RAG). El nombre sugiere una base Qwen 3.5 de 0,8B, aunque el autor no confirma esta correspondencia en la model card.
+`nakotsuko13/qwen35-0.8b-rag-sft` es un modelo de lenguaje publicado en Hugging Face por el usuario nakotsuko13. Por su identificador, se trata de un ajuste fino supervisado (SFT, *supervised fine-tuning*) de un modelo de la familia Qwen de 0,8 mil millones de parametros, orientado a tareas de generacion aumentada por recuperacion (RAG). El nombre sugiere una base Qwen 3.5 de 0,8B, aunque el autor no confirma esta correspondencia en la model card.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, datos de entrenamiento, especificaciones tecnicas ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline declarado ni idiomas especificados.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nakotsuko13/qwen35-0.8b-rag-sft | 0,8B (segun identificador) | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8K (segun documentacion publica) | Apache 2.0 | HuggingFace |
+| nakotsuko13/qwen35-0.8b-rag-sft | 0,8B (segun identificador) | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8K (segun documentacion publica) | Apache 2.0 | Hugging Face |
 
 La comparativa es aproximada: los datos de los modelos alternativos provienen de su documentacion publica, mientras que del modelo analizado no se dispone de especificaciones confirmadas. No se puede establecer una comparacion de rendimiento sin benchmarks publicados.
 
@@ -80,5 +80,5 @@ La comparativa es aproximada: los datos de los modelos alternativos provienen de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nakotsuko13/qwen35-0.8b-rag-sft
+- Hugging Face: https://huggingface.co/nakotsuko13/qwen35-0.8b-rag-sft
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

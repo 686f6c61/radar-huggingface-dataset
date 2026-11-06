@@ -37,7 +37,7 @@ El entrenamiento usa 3.200 prompts de MATH train (256 reservados como conjunto d
 - Razonamiento matemático paso a paso, con formato de respuesta final dentro de `\boxed{}`.
 - Resolución de problemas de competición (el protocolo de evaluación usa AMC23) con decodificación greedy y hasta 2.048 tokens nuevos.
 - Autoconsistencia vía muestreo múltiple: la evaluación reporta avg@8 con temperatura 0,6, lo que permite usar el modelo en modo voto mayoritario.
-- Compatibilidad con `text-generation-inference` y endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad con `text-generation-inference` y endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - No hay evidencia en la información disponible de soporte de tool calling, function calling, capacidades de agente multi-paso, visión, audio ni modo "thinking" explícito.
 
 ## Casos de uso
@@ -67,17 +67,17 @@ Con 40 problemas, cada acierto vale 3,7 puntos de reducción de error; el interv
 - VRAM estimada para inferencia: ~6-8 GB en bf16 con contexto moderado y lote 1; ~2 GB en cuantización de 8 bits; ~1,2-1,5 GB en 4 bits (estimaciones a partir del número de parámetros, no medidas publicadas).
 - GPU recomendadas: A100-80GB (usada en el entrenamiento y en la evaluación con vLLM), H100 para servir en lote con throughput alto, RTX 4090 / RTX 3090 para desarrollo, RTX 4060 Ti 16 GB o RTX 3060 12 GB para inferencia cuantizada.
 - Cabe en GPU consumer: sí, en cualquier tarjeta con 8 GB o más en 4/8 bits y en tarjetas de 8-12 GB en bf16 con contexto corto.
-- Opciones de despliegue: vLLM 0.19.1 en bf16 (configuración usada en la evaluación certificada), `transformers` con `generation_config.json` incluido, TGI (etiqueta `text-generation-inference`), endpoints de HuggingFace. Para CPU o GPU muy limitadas habría que convertir los safetensors a GGUF con llama.cpp, ya que no se publican pesos GGUF.
+- Opciones de despliegue: vLLM 0.19.1 en bf16 (configuración usada en la evaluación certificada), `transformers` con `generation_config.json` incluido, TGI (etiqueta `text-generation-inference`), endpoints de Hugging Face. Para CPU o GPU muy limitadas habría que convertir los safetensors a GGUF con llama.cpp, ya que no se publican pesos GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Método / enfoque | AMC23 | Licencia | Disponibilidad |
 |---|---:|---|---|---:|---|---|
-| Qwen2.5-Math-1.5B-NBIVO-seed42 | 1,78 B | no disponible | Ajuste NB-IVO con recompensa verificable sobre MATH train | 20/40 (avg@8 50,3 %) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-Math-1.5B (base) | 1,5 B | no disponible en esta información | Modelo matemático preentrenado/ajustado por Qwen | 13/40 (avg@8 29,7 %) | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-7B | no disponible en esta información | no disponible en esta información | Misma familia, mayor escala | no disponible | no disponible en esta información | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | no disponible en esta información | no disponible en esta información | Destilación de trazas de razonamiento | no disponible | no disponible en esta información | HuggingFace |
+| Qwen2.5-Math-1.5B-NBIVO-seed42 | 1,78 B | no disponible | Ajuste NB-IVO con recompensa verificable sobre MATH train | 20/40 (avg@8 50,3 %) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-Math-1.5B (base) | 1,5 B | no disponible en esta información | Modelo matemático preentrenado/ajustado por Qwen | 13/40 (avg@8 29,7 %) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-7B | no disponible en esta información | no disponible en esta información | Misma familia, mayor escala | no disponible | no disponible en esta información | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | no disponible en esta información | no disponible en esta información | Destilación de trazas de razonamiento | no disponible | no disponible en esta información | Hugging Face |
 
 No se dispone de resultados comparables bajo el mismo protocolo (AMC23, greedy, Math-Verify 0.8.0) para las alternativas, por lo que la comparación numérica solo es válida frente al modelo base.
 
@@ -95,7 +95,7 @@ No se dispone de resultados comparables bajo el mismo protocolo (AMC23, greedy, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen2.5-Math-1.5B-NBIVO-seed42
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen2.5-Math-1.5B-NBIVO-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Dataset de evaluación AMC23: https://huggingface.co/datasets/math-ai/amc23
 - Math-Verify (scoring y `accuracy_reward`): https://github.com/huggingface/Math-Verify

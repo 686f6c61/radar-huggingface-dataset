@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `keerthimalladi/ppo-Pyramids` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO para resolver el entorno Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal que recibe observaciones del entorno de simulación y genera acciones de control. El autor, keerthimalladi, publicó el resultado de este entrenamiento en HuggingFace, aunque el repositorio no ha registrado descargas ni valoraciones.
+El modelo `keerthimalladi/ppo-Pyramids` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO para resolver el entorno Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal que recibe observaciones del entorno de simulación y genera acciones de control. El autor, keerthimalladi, publicó el resultado de este entrenamiento en Hugging Face, aunque el repositorio no ha registrado descargas ni valoraciones.
 
-La información disponible sobre el modelo es muy limitada. No se documentan el número de parámetros, la arquitectura interna de la red, ni los detalles del proceso de entrenamiento. El modelo se presenta en los formatos habituales de ML-Agents y puede integrarse en proyectos de Unity o exportarse a ONNX. Su relevancia es principalmente didáctica y de investigación en RL dentro de entornos 3D, como demuestran los tutoriales oficiales de HuggingFace sobre ML-Agents.
+La información disponible sobre el modelo es muy limitada. No se documentan el número de parámetros, la arquitectura interna de la red, ni los detalles del proceso de entrenamiento. El modelo se presenta en los formatos habituales de ML-Agents y puede integrarse en proyectos de Unity o exportarse a ONNX. Su relevancia es principalmente didáctica y de investigación en RL dentro de entornos 3D, como demuestran los tutoriales oficiales de Hugging Face sobre ML-Agents.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ No se ha publicado información sobre la configuración exacta de la red neurona
 - Ejecuta una política de RL entrenada para el entorno Pyramids de Unity ML-Agents.
 - Permite exportar el agente a ONNX para su uso fuera de Unity, por ejemplo con ONNX Runtime.
 - Soporta la reanudación del entrenamiento mediante `mlagents-learn --resume`.
-- Puede cargarse en la plataforma HuggingFace Unity para reproducir el comportamiento del agente directamente en el navegador.
+- Puede cargarse en la plataforma Hugging Face Unity para reproducir el comportamiento del agente directamente en el navegador.
 - No genera texto, no admite tool calling, no procesa vision ni audio, y no posee capacidades multilingües en el sentido de los modelos de lenguaje.
 
 ## Casos de uso
@@ -50,15 +50,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. Al ser una politica de RL de pequeño tamaño, la inferencia puede ejecutarse en CPU sin necesidad de VRAM dedicada.
 - GPU recomendadas: no especificadas. Cualquier CPU moderna es suficiente para inferencia ligera con Unity o ONNX Runtime.
 - Compatibilidad con hardware de consumo: si, el agente puede ejecutarse en equipos de consumidor sin requisitos especiales.
-- Opciones de despliegue: Unity ML-Agents, HuggingFace Unity para visualizacion en navegador, o exportacion a ONNX y uso con ONNX Runtime.
+- Opciones de despliegue: Unity ML-Agents, Hugging Face Unity para visualizacion en navegador, o exportacion a ONNX y uso con ONNX Runtime.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Entorno | Algoritmo | Parametros | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| keerthimalladi/ppo-Pyramids | Pyramids | PPO | No disponible | No publicado | No disponible | HuggingFace |
-| npit/pyramids | Pyramids | PPO | No disponible | No publicado | No disponible | HuggingFace |
+| keerthimalladi/ppo-Pyramids | Pyramids | PPO | No disponible | No publicado | No disponible | Hugging Face |
+| npit/pyramids | Pyramids | PPO | No disponible | No publicado | No disponible | Hugging Face |
 | Developer-Karthi/ppo-Pyramids_V1 | Pyramids | PPO | No disponible | No publicado | No disponible | Indice BimAnt |
 
 Los tres modelos pertenecen a la misma categoria: agentes entrenados con PPO para el entorno Pyramids de ML-Agents. No se dispone de informacion suficiente para comparar su rendimiento real.
@@ -74,8 +74,8 @@ Los tres modelos pertenecen a la misma categoria: agentes entrenados con PPO par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keerthimalladi/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/keerthimalladi/ppo-Pyramids
 - Unity ML-Agents (repositorio): https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de HuggingFace sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de HuggingFace sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Tutorial corto de Hugging Face sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de Hugging Face sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction

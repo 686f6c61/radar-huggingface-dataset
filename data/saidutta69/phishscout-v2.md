@@ -114,5 +114,5 @@ No hay datos de otros modelos de la misma categoria (por ejemplo, clasificadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/PhishScout-v2
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/PhishScout-v2
 - Dataset PhishTrap: https://huggingface.co/datasets/saidutta69/PhishTrap

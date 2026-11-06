@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image Prompt Enhancer es un empaquetado para Ollama que convierte ideas breves de imagen en prompts detallados para el modelo texto-a-imagen MOSS-Image, desarrollado por OpenMOSS. No se trata de un modelo entrenado desde cero: el repositorio de HuggingFace bajo el identificador `DutchIT/moss-image-prompt-enhancer` contiene un `Modelfile` de Ollama (system prompt, parametros de muestreo y ejemplos few-shot) que se apoya en el modelo base `huihui-ai/Qwen3-8B-abliterated`, una variante del Qwen3-8B de Alibaba con los mecanismos de rechazo ablacionados. Su proposito es reproducir en local, sin agente ni llamadas a API, la skill oficial `moss-image-prompt-enhancer` publicada en el repositorio de MOSS-Image, que originalmente esta pensada para agentes de la familia GPT-6 con acceso a sistema de ficheros y Python.
+MOSS-Image Prompt Enhancer es un empaquetado para Ollama que convierte ideas breves de imagen en prompts detallados para el modelo texto-a-imagen MOSS-Image, desarrollado por OpenMOSS. No se trata de un modelo entrenado desde cero: el repositorio de Hugging Face bajo el identificador `DutchIT/moss-image-prompt-enhancer` contiene un `Modelfile` de Ollama (system prompt, parametros de muestreo y ejemplos few-shot) que se apoya en el modelo base `huihui-ai/Qwen3-8B-abliterated`, una variante del Qwen3-8B de Alibaba con los mecanismos de rechazo ablacionados. Su proposito es reproducir en local, sin agente ni llamadas a API, la skill oficial `moss-image-prompt-enhancer` publicada en el repositorio de MOSS-Image, que originalmente esta pensada para agentes de la familia GPT-6 con acceso a sistema de ficheros y Python.
 
 El modelo resuelve un problema concreto de los pipelines texto-a-imagen: las peticiones cortas ("una mujer leyendo en una cafeteria") producen imagenes genericas, mientras que MOSS-Image rinde mejor con descripciones ricas o con especificaciones espaciales en JSON. El potenciador devuelve unicamente el prompt enriquecido, sin preambulos, en dos modos: Caption (prosa descriptiva cohesiva en ingles) y Layout (borrador JSON con cajas delimitadoras en pixeles para posters, infografias y texto renderizado).
 
@@ -101,7 +101,7 @@ La diferencia practica frente al modelo base es el comportamiento: el `Modelfile
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DutchIT/moss-image-prompt-enhancer
+- Modelo en Hugging Face: https://huggingface.co/DutchIT/moss-image-prompt-enhancer
 - Modelo base: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated
 - Repositorio del empaquetado (instalacion y Modelfile): https://github.com/royen99/moss-image-prompt-enhancer
 - Repositorio oficial de MOSS-Image: https://github.com/OpenMOSS/MOSS-Image

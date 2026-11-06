@@ -89,7 +89,7 @@ No se dispone de información sobre adaptadores LoRA públicos comparables para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fnl-es/qwen3-4b-muc4-lora-probe
+- Modelo en Hugging Face: https://huggingface.co/fnl-es/qwen3-4b-muc4-lora-probe
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/fnl-es/muc4-chat
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/flowing/muc4-event-extraction/runs/wk6ypti0

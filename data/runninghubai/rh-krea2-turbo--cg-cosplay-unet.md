@@ -26,7 +26,7 @@ Su relevancia es limitada y muy especializada: se trata de un modelo de nicho pa
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible describe el modelo como un UNET para edicion de imagen (image edit), es decir, un modelo de difusion con arquitectura de red convolucional tipo U-Net, habitual en las etapas de denoising de los pipelines de difusion latente. Se trata de un finetune del modelo krea2, cuyo pipeline, parametros y arquitectura exactos no se detallan en la model card ni en los metadatos de HuggingFace.
+La informacion disponible describe el modelo como un UNET para edicion de imagen (image edit), es decir, un modelo de difusion con arquitectura de red convolucional tipo U-Net, habitual en las etapas de denoising de los pipelines de difusion latente. Se trata de un finetune del modelo krea2, cuyo pipeline, parametros y arquitectura exactos no se detallan en la model card ni en los metadatos de Hugging Face.
 
 No se especifica el numero de tokens o imagenes de entrenamiento, la composicion del dataset, la resolucion de entrenamiento, ni si se aplicaron tecnicas de ajuste por preferencias (RLHF, DPO) o destilacion (el sufijo "turbo" sugiere, de forma no confirmada, una variante optimizada para pocos pasos de inferencia, pero el autor no lo documenta). Tampoco se indica si el repositorio incluye unicamente los pesos del UNET y requiere codificadores de texto y VAE externos, aunque el listado de archivos (un solo archivo etiquetado como "UNET weights") apunta a ese escenario en el flujo habitual de ComfyUI. No se documenta ninguna innovacion tecnica adicional.
 

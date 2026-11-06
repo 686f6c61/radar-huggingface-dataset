@@ -87,7 +87,7 @@ La diferencia clave es la especialización y el formato de salida estricto. Para
 
 ## Enlaces
 
-- HuggingFace: [Scriptease/colorhex-1b](https://huggingface.co/Scriptease/colorhex-1b)
+- Hugging Face: [Scriptease/colorhex-1b](https://huggingface.co/Scriptease/colorhex-1b)
 - Blog del autor: [A Color Speaks More Than a Thousand Words](https://scripteasesite.wordpress.com/2026/07/30/a-color-speaks-more-than-a-thousand-words/)
 - Modelo base: [google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
 - Términos de uso de Gemma: [ai.google.dev/gemma/terms](https://ai.google.dev/gemma/terms)

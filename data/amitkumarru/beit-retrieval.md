@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitkumarru/beit-retrieval` es un repositorio alojado en HuggingFace y publicado por el usuario `amitkumarru`. Contiene una implementación funcional de BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *retrieval* (recuperación), configurada en escala *base*. El propósito declarado es ofrecer código transparente y pruebas de humo (smoke tests) repetibles, sin afirmar ningún resultado de benchmarks.
+`amitkumarru/beit-retrieval` es un repositorio alojado en Hugging Face y publicado por el usuario `amitkumarru`. Contiene una implementación funcional de BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *retrieval* (recuperación), configurada en escala *base*. El propósito declarado es ofrecer código transparente y pruebas de humo (smoke tests) repetibles, sin afirmar ningún resultado de benchmarks.
 
 El artefacto principal es `main.py`, que incluye el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento. El fichero `model.safetensors` que acompaña al repositorio es un *checkpoint* de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado. Los metadatos de safetensors indican un total de 33.088 parámetros, una cifra excepcionalmente baja que confirma su naturaleza de inicialización.
 
@@ -64,9 +64,9 @@ Las cifras de los modelos comparados son aproximadas y proceden de documentació
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beit-retrieval (este repositorio) | 33.088 | No disponible | Retrieval (sin entrenar) | MIT | HuggingFace |
-| BEiT-base (microsoft/beit-base) | Aprox. 86 M | No aplica (imagen 224x224) | Vision / clasificacion | MIT | HuggingFace |
-| CLIP ViT-B/32 | Aprox. 151 M | 77 tokens de texto | Retrieval imagen-texto | MIT | HuggingFace |
+| beit-retrieval (este repositorio) | 33.088 | No disponible | Retrieval (sin entrenar) | MIT | Hugging Face |
+| BEiT-base (microsoft/beit-base) | Aprox. 86 M | No aplica (imagen 224x224) | Vision / clasificacion | MIT | Hugging Face |
+| CLIP ViT-B/32 | Aprox. 151 M | 77 tokens de texto | Retrieval imagen-texto | MIT | Hugging Face |
 
 La comparación directa de rendimiento no es posible porque este repositorio no publica métricas y su checkpoint no está entrenado.
 
@@ -83,5 +83,5 @@ La comparación directa de rendimiento no es posible porque este repositorio no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amitkumarru/beit-retrieval
+- Hugging Face: https://huggingface.co/amitkumarru/beit-retrieval
 - Los resultados de búsqueda web consultados no contienen información relevante sobre el modelo: corresponden a definiciones del término francés «ermite» y no guardan relación con este repositorio.

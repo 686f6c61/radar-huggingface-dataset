@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [HuggingFace: Prospere/FalAi_Training3](https://huggingface.co/Prospere/FalAi_Training3)
+- [Hugging Face: Prospere/FalAi_Training3](https://huggingface.co/Prospere/FalAi_Training3)
 - [Página oficial de fal.ai](https://fal.ai/)
 - [Entrenador de LoRA para FLUX en fal.ai](https://fal.ai/models/fal-ai/flux-lora-portrait-trainer) (relacionado con la plataforma de entrenamiento, no directamente con el modelo)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers/index) (para la integración con la librería)

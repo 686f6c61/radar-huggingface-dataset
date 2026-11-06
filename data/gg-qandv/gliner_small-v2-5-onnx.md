@@ -127,7 +127,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GG-QandV/gliner_small-v2.5-onnx
+- Repositorio Hugging Face: https://huggingface.co/GG-QandV/gliner_small-v2.5-onnx
 - Modelo base: https://huggingface.co/gliner-community/gliner_small-v2.5
 - Encoder subyacente: https://huggingface.co/microsoft/deberta-v3-small
 - Proyecto GLiNER en GitHub: https://github.com/urchade/GLiNER

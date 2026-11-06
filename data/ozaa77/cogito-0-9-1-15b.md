@@ -97,6 +97,6 @@ Cogito supera a todos ellos en MMLU-Pro, GPQA Diamond, MATH-500 y LiveCodeBench,
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ozaa77/Cogito-0.9.1-15B
+- Repositorio de Hugging Face: https://huggingface.co/ozaa77/Cogito-0.9.1-15B
 - Model card (fuente de los datos): https://huggingface.co/ozaa77/Cogito-0.9.1-15B/resolve/main/README.md
 - Logo del modelo (asset): https://huggingface.co/ozaa77/Cogito-0.9.1-15B/resolve/main/assets/logo.jpg

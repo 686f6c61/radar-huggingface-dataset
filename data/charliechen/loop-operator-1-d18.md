@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d18 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original utilizado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Corresponde al "operator 1" en la coordenada de profundidad d18, una nomenclatura propia del estudio de leyes de escalado y no el numero de bloques Transformer ejecutados.
+loop-operator-1-d18 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original utilizado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Corresponde al "operator 1" en la coordenada de profundidad d18, una nomenclatura propia del estudio de leyes de escalado y no el numero de bloques Transformer ejecutados.
 
 El modelo almacena 1.378.418.688 parametros en FP32 (5,514 GB) y emplea un tokenizador GPT-2 con un vocabulario de 50.257 tokens. Su ventana de contexto es de 2.048 tokens y su arquitectura es un transformer con modo de profundidad "loop" (looped transformer) implementado como una clase personalizada `TransformerGPT`, no como un `AutoModel` de la libreria Transformers. Su relevancia es principalmente de investigacion: permite reproducir y auditar los resultados de escalado del articulo citado, no desplegar un asistente conversacional.
 
@@ -107,7 +107,7 @@ Diferencias clave: loop-operator-1-d18 no ofrece licencia declarada, carece de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d18
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d18
 - Repositorio de codigo del articulo: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents": no se proporciona enlace directo en la informacion disponible

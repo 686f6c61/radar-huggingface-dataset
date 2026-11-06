@@ -95,7 +95,7 @@ La ventaja del modelo evaluado frente a un YOLO11m genérico es la distinción p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axe-homeautomation/bird-feeder-birds
+- Modelo en Hugging Face: https://huggingface.co/axe-homeautomation/bird-feeder-birds
 - Dataset de entrenamiento: https://huggingface.co/datasets/axe-homeautomation/bird-feeder-birds
 - Modelo base Ultralytics/YOLO11: https://huggingface.co/Ultralytics/YOLO11
 - Documentación de Ultralytics YOLO11: https://docs.ultralytics.com/models/yolo11/

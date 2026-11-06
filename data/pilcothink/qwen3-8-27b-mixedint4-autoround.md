@@ -86,6 +86,6 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pilcothink/Qwen3.8-27B-MixedInt4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Pilcothink/Qwen3.8-27B-MixedInt4-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Framework de cuantizacion Intel AutoRound: no se proporciona enlace, pero se puede buscar como "Intel AutoRound" en repositorios oficiales.

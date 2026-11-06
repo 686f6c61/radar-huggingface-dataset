@@ -80,10 +80,10 @@ Sin datos de benchmarks del 1B, no es posible establecer una comparacion cuantit
 
 ## Enlaces
 
-- Modelo original en HuggingFace: [jhu-clsp/ettin-encoder-1b](https://huggingface.co/jhu-clsp/ettin-encoder-1b)
+- Modelo original en Hugging Face: [jhu-clsp/ettin-encoder-1b](https://huggingface.co/jhu-clsp/ettin-encoder-1b)
 - Modelo copia (este): [shuHernow/ettin-encoder-1b](https://huggingface.co/shuHernow/ettin-encoder-1b)
 - Articulo en arXiv: [2507.11412](https://arxiv.org/abs/2507.11412)
-- Blog de HuggingFace sobre la suite: [Ettin Suite: SoTA Paired Encoders and Decoders](https://huggingface.co/blog/ettin)
+- Blog de Hugging Face sobre la suite: [Ettin Suite: SoTA Paired Encoders and Decoders](https://huggingface.co/blog/ettin)
 - Repositorio GitHub: [JHU-CLSP/ettin-encoder-vs-decoder](https://github.com/JHU-CLSP/ettin-encoder-vs-decoder)
 - Datos de pre-entrenamiento: [jhu-clsp/ettin-pretraining-data](https://huggingface.co/datasets/jhu-clsp/ettin-pretraining-data)
 - Datos de extension: [jhu-clsp/ettin-extension-data](https://huggingface.co/datasets/jhu-clsp/ettin-extension-data)

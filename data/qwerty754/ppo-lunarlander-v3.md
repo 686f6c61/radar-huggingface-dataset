@@ -40,7 +40,7 @@ El entorno objetivo, LunarLander-v3 de Gymnasium, define un espacio de observaci
 ## Casos de uso
 
 - Linea base de referencia en investigacion: comparar el rendimiento de PPO con otros algoritmos (A2C, DQN, SAC, TD3) bajo el mismo entorno y presupuesto de 3,5 millones de timesteps.
-- Docencia en cursos de deep reinforcement learning: el agente sirve como ejemplo completo de pipeline (entrenamiento, evaluacion sobre 100 episodios y publicacion en HuggingFace) utilizable como plantilla por estudiantes.
+- Docencia en cursos de deep reinforcement learning: el agente sirve como ejemplo completo de pipeline (entrenamiento, evaluacion sobre 100 episodios y publicacion en Hugging Face) utilizable como plantilla por estudiantes.
 - Validacion de infraestructura de evaluacion: comprobar que un runner de RL carga correctamente pesos de Stable-Baselines3, ejecuta episodios deterministas y reproduce la recompensa media declarada de 258,01.
 - Pruebas de integracion y CI en librerias de RL: usar el agente como caso de prueba ligero en pipelines que verifican compatibilidad entre versiones de Gymnasium, Stable-Baselines3 y PyTorch.
 - Prueba de concepto de transferencia: emplear la politica como inicializacion o punto de partida para variantes del entorno con perturbaciones (viento, gravedad modificada) y medir la degradacion de recompensa.
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks comparativos con otros agentes en l
 
 | Modelo | Entorno | Algoritmo | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwerty754/ppo-LunarLander-v3 | LunarLander-v3 | PPO | 258,01 | MIT | HuggingFace |
-| mattyko5/ppo-LunarLander-v3 | LunarLander-v3 | PPO | no disponible | no disponible | HuggingFace |
-| Sai7926/ppo-LunarLander-v3 | LunarLander-v2 | PPO | no disponible | no disponible | HuggingFace |
+| qwerty754/ppo-LunarLander-v3 | LunarLander-v3 | PPO | 258,01 | MIT | Hugging Face |
+| mattyko5/ppo-LunarLander-v3 | LunarLander-v3 | PPO | no disponible | no disponible | Hugging Face |
+| Sai7926/ppo-LunarLander-v3 | LunarLander-v2 | PPO | no disponible | no disponible | Hugging Face |
 
 Los modelos comparables identificados en la busqueda web no publican metricas de recompensa en los fragmentos disponibles, por lo que no es posible establecer una comparacion cuantitativa. Todos comparten el mismo enfoque (agente PPO con Stable-Baselines3 sobre LunarLander), aunque Sai7926 apunta a la version v2 del entorno.
 
@@ -98,7 +98,7 @@ Los modelos comparables identificados en la busqueda web no publican metricas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qwerty754/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/qwerty754/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Agente PPO LunarLander-v3 de mattyko5: https://huggingface.co/mattyko5/ppo-LunarLander-v3
 - Agente PPO LunarLander-v2 de Sai7926: https://huggingface.co/Sai7926/ppo-LunarLander-v3

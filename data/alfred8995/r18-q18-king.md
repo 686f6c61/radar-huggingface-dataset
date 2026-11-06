@@ -2,11 +2,11 @@
 
 ## Resumen
 
-alfred8995/r18-q18-king es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para inferencia en hardware de consumo. El tag `sn38-nanochrono` sugiere una arquitectura o familia interna no documentada públicamente, y no se dispone de información sobre el pipeline de la tarea.
+alfred8995/r18-q18-king es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones), lo que lo sitúa en la categoría de modelos pequeños-medianos aptos para inferencia en hardware de consumo. El tag `sn38-nanochrono` sugiere una arquitectura o familia interna no documentada públicamente, y no se dispone de información sobre el pipeline de la tarea.
 
 La relevancia de este modelo es limitada y difícil de evaluar: no hay model card descriptiva, no se especifican idiomas soportados, no hay resultados de benchmarks y el repositorio tiene un número muy bajo de descargas (6) y cero likes en el momento de la consulta. El tamaño del repositorio (12,6 GB) es desproporcionadamente grande para 2.018 millones de parámetros en safetensors, lo que podría indicar pesos en precisión alta (fp32) o la inclusión de múltiples ficheros de pesos y checkpoints intermedios.
 
-Se trata, por tanto, de un modelo de procedencia no verificada, sin documentación técnica publicada y con acceso condicionado. Cualquier evaluación de su calidad, capacidades o idoneidad para producción debe realizarse mediante pruebas empíricas propias, dado que la información disponible en HuggingFace es mínima.
+Se trata, por tanto, de un modelo de procedencia no verificada, sin documentación técnica publicada y con acceso condicionado. Cualquier evaluación de su calidad, capacidades o idoneidad para producción debe realizarse mediante pruebas empíricas propias, dado que la información disponible en Hugging Face es mínima.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ La única información estructural disponible es el recuento de parámetros en s
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirma capacidad multilingüe ni se listan idiomas.
 - No se confirma la existencia de modos especiales (thinking mode, vision, audio).
-- El pipeline de la tarea no está declarado en HuggingFace, por lo que ni siquiera se confirma que sea un modelo de generación de texto.
+- El pipeline de la tarea no está declarado en Hugging Face, por lo que ni siquiera se confirma que sea un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ La comparativa se ofrece únicamente por rango de tamaño; no existen datos de r
 - Riesgo elevado de sesgos y alucinaciones: sin información sobre el corpus de entrenamiento ni sobre procesos de alineación (RLHF/DPO), no es posible evaluar estos riesgos.
 - Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningún otro idioma.
 - Contexto desconocido: imposible planificar aplicaciones que dependan de ventanas largas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la auditoría.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la auditoría.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre la legalidad o procedencia de los datos de entrenamiento.
 - Repositorio de 12,6 GB para 2 B parámetros: podría indicar pesos en fp32 o ficheros redundantes, lo que complica el despliegue eficiente.
 - Sin cuantizaciones oficiales ni integración con frameworks estándar: el despliegue requeriría trabajo de ingeniería adicional.
@@ -91,5 +91,5 @@ La comparativa se ofrece únicamente por rango de tamaño; no existen datos de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-q18-king
+- Hugging Face: https://huggingface.co/alfred8995/r18-q18-king
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

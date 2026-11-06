@@ -91,7 +91,7 @@ No se han encontrado datos publicados de otros adaptadores de compresion de CoT 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l3
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l3
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388

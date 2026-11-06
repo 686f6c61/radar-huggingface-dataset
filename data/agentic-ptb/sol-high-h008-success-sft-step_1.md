@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h008.success-sft.step_1
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h008.success-sft.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX`

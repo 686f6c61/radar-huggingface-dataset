@@ -77,7 +77,7 @@ No se han encontrado en la busqueda web resultados tecnicos relevantes sobre est
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3-to-LTX Latent Adapter | 194.759.504 | no aplica | no disponible | no disponible (sin licencia nueva asignada) | HuggingFace, 0 descargas, 0 likes |
+| H3-to-LTX Latent Adapter | 194.759.504 | no aplica | no disponible | no disponible (sin licencia nueva asignada) | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros adaptadores de latentes publicos que realicen la misma conversion H3 a LTX, ni sobre variantes del propio adaptador con distinto numero de parametros. No se puede establecer una comparativa cuantitativa fiable con modelos alternativos a partir de los datos proporcionados.
@@ -96,6 +96,6 @@ No se dispone de informacion sobre otros adaptadores de latentes publicos que re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Efficient-Large-Model/H3-to-LTX-Latent-Adapter
+- Hugging Face: https://huggingface.co/Efficient-Large-Model/H3-to-LTX-Latent-Adapter
 - Repositorio Sana de NVlabs (integracion Sol-H3-Spark): https://github.com/NVlabs/Sana/tree/144085566a866f9784f3798d4c8d1603f3adbccf/models/minimax_h3/Sol-H3-Spark
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este checkpoint en la busqueda web realizada.

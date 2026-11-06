@@ -53,7 +53,7 @@ No disponible. No se puede comparar con otros modelos al carecer de especificaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taren00/Qwen3.6
+- Repositorio Hugging Face: https://huggingface.co/taren00/Qwen3.6
 - Guía de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guía de Qwen 3.6-27B (aimadetools.com): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/
 - Página de Qwen3.6 en There's An AI For That: https://theresanaiforthat.com/model/qwen-3-6-27b/

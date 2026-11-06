@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LeeHakHo/drawer_real60_bs128_ckpt` es un conjunto de checkpoints de una política de difusión (diffusion policy) entrenada por clonación de comportamiento para una tarea de manipulación robótica real: abrir un cajón, coger una flecha y colocarla dentro, con dos ciclos de agarre por demostración. Lo publica el usuario de HuggingFace LeeHakHo bajo licencia MIT, en un repositorio de 16,4 GB que contiene diez checkpoints (`model_epoch_{100,200,...,1000}.pth`), cada uno de unos 1,6 GiB con estado del optimizador y pesos EMA.
+`LeeHakHo/drawer_real60_bs128_ckpt` es un conjunto de checkpoints de una política de difusión (diffusion policy) entrenada por clonación de comportamiento para una tarea de manipulación robótica real: abrir un cajón, coger una flecha y colocarla dentro, con dos ciclos de agarre por demostración. Lo publica el usuario de Hugging Face LeeHakHo bajo licencia MIT, en un repositorio de 16,4 GB que contiene diez checkpoints (`model_epoch_{100,200,...,1000}.pth`), cada uno de unos 1,6 GiB con estado del optimizador y pesos EMA.
 
 El entrenamiento se hizo sobre el dataset `LeeHakHo/drawer_real60`: 60 demostraciones reales con un brazo Franka, 30.374 muestras a 15 Hz con observaciones de 84 px y `seq_length` 16. La receta usa batch 128, learning rate 1,4e-4 (escalado por raíz cuadrada respecto al 1e-4 de batch 64), 700 pasos de warmup, decaimiento coseno que llega a cero exactamente en el paso final y 1000 épocas de 100 pasos. La ejecución completa tardó 11 h 34 min en una única RTX 4080 con la GPU en exclusiva.
 
@@ -99,7 +99,7 @@ No se han identificado en la información proporcionada otros modelos públicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeHakHo/drawer_real60_bs128_ckpt
+- Modelo en Hugging Face: https://huggingface.co/LeeHakHo/drawer_real60_bs128_ckpt
 - Dataset de entrenamiento: https://huggingface.co/datasets/LeeHakHo/drawer_real60
 - Checkpoint comparable del mismo autor: https://huggingface.co/LeeHakHo/square_real100_bs128_ckpt
 - La búsqueda web realizada no devolvió resultados relevantes: los enlaces obtenidos correspondían a páginas corporativas de Microsoft, sin relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible. La model card menciona la "implementación de referencia de diffusion policy" sin proporcionar enlace.

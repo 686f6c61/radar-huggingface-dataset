@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DataScienceWFSR/ac50-prediction` es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion DataScienceWFSR bajo licencia Apache 2.0. El repositorio ocupa 6,9 GB y fue creado el 16 de septiembre de 2026, con una ultima actualizacion el mismo dia. La model card publicada no contiene mas que el campo de licencia: no se documentan arquitectura, datos de entrenamiento, idiomas soportados ni tarea objetivo, y el pipeline de HuggingFace aparece como no disponible. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+`DataScienceWFSR/ac50-prediction` es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion DataScienceWFSR bajo licencia Apache 2.0. El repositorio ocupa 6,9 GB y fue creado el 16 de septiembre de 2026, con una ultima actualizacion el mismo dia. La model card publicada no contiene mas que el campo de licencia: no se documentan arquitectura, datos de entrenamiento, idiomas soportados ni tarea objetivo, y el pipeline de Hugging Face aparece como no disponible. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio, `ac50-prediction`, sugiere por nomenclatura una tarea de prediccion de valores AC50 (concentracion de actividad semimaxima, una metrica habitual en farmacologia y toxicologia in vitro), pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna fuente documental del propio repositorio. No hay evidencia publica que permita afirmar que se trate de un modelo de lenguaje, de un modelo predictivo tabular o de un clasificador de quimica computacional.
 
@@ -32,7 +32,7 @@ No hay datos sobre volumen de tokens de entrenamiento, fuentes de datos, tecnica
 No es posible enumerar capacidades concretas a partir de la informacion disponible. Los unicos elementos verificables son:
 
 - No hay model card funcional que describa tareas soportadas.
-- No hay etiqueta de pipeline en HuggingFace, por lo que no se declara tarea (text-generation, text-classification, etc.).
+- No hay etiqueta de pipeline en Hugging Face, por lo que no se declara tarea (text-generation, text-classification, etc.).
 - No se documenta soporte de tool calling, function calling ni uso como agente.
 - No se documentan capacidades multilingues ni idiomas cubiertos.
 - No se documentan capacidades multimodales (vision, audio) ni modos especiales (thinking, razonamiento extendido).
@@ -72,7 +72,7 @@ No disponible. No se dispone de informacion sobre el tipo de modelo, su tamano n
 
 - Ausencia total de model card: el README solo contiene la declaracion de licencia, sin descripcion de arquitectura, entrenamiento ni uso previsto.
 - Sin benchmarks publicados: no existe evidencia cuantitativa de rendimiento en ninguna tarea.
-- Sin etiqueta de pipeline: HuggingFace no clasifica el repositorio en ninguna tarea, lo que impide inferir su funcion.
+- Sin etiqueta de pipeline: Hugging Face no clasifica el repositorio en ninguna tarea, lo que impide inferir su funcion.
 - Cero descargas y cero likes: no hay senal de validacion por parte de la comunidad ni casos de uso documentados por terceros.
 - Riesgo de alucinacion y de sesgo: indeterminable, al no conocerse el modelo ni sus datos de entrenamiento. Si fuese un modelo generativo, estos riesgos no estarian evaluados.
 - Dominio de aplicabilidad desconocido: sin informacion sobre datos de entrenamiento no puede acotarse el rango de validez, algo critico si se trata de un predictor cientifico.
@@ -83,5 +83,5 @@ No disponible. No se dispone de informacion sobre el tipo de modelo, su tamano n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DataScienceWFSR/ac50-prediction
+- Repositorio en Hugging Face: https://huggingface.co/DataScienceWFSR/ac50-prediction
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a la pagina oficial de ChatGPT y a sus fichas de tienda de aplicaciones, sin relacion con este repositorio. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

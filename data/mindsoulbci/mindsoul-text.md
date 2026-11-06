@@ -82,8 +82,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-text
+- Modelo en Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-text
 - Repositorio GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - Repositorio de aplicaciones espaciales, juegos y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web del proyecto: https://MindSoul.cn
-- Licencia (referenciada en el repositorio): LICENSE en el propio repositorio de HuggingFace
+- Licencia (referenciada en el repositorio): LICENSE en el propio repositorio de Hugging Face

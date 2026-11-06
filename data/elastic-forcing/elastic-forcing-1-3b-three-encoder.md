@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elastic-forcing-1.3B-three-encoder es un modelo publicado en HuggingFace por el usuario u organizacion "Elastic-forcing", etiquetado con el pipeline text-to-video y las etiquetas "elastic-forcing", "pytorch" y "region:us". Por el nombre del repositorio se deduce un tamano de aproximadamente 1.300 millones de parametros y un diseno con tres codificadores (encoders), si bien la ficha de HuggingFace no incluye documentacion tecnica, arquitectura detallada, datos de entrenamiento ni resultados de evaluacion que permitan confirmarlo.
+Elastic-forcing-1.3B-three-encoder es un modelo publicado en Hugging Face por el usuario u organizacion "Elastic-forcing", etiquetado con el pipeline text-to-video y las etiquetas "elastic-forcing", "pytorch" y "region:us". Por el nombre del repositorio se deduce un tamano de aproximadamente 1.300 millones de parametros y un diseno con tres codificadores (encoders), si bien la ficha de Hugging Face no incluye documentacion tecnica, arquitectura detallada, datos de entrenamiento ni resultados de evaluacion que permitan confirmarlo.
 
 Se trata de un modelo de generacion de video a partir de texto. La relevancia de este tipo de modelos radica en su capacidad de sintetizar clips coherentes temporalmente a partir de instrucciones en lenguaje natural, un area que concentra buena parte del esfuerzo de investigacion en generacion de contenido en 2024-2026. En este caso concreto, el repositorio registra cero descargas y cero "likes" en la fecha de consulta, y no se ha localizado ninguna publicacion, paper o nota tecnica asociada.
 
@@ -27,7 +27,7 @@ La busqueda web realizada no ha devuelto informacion sobre el modelo: los result
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La ficha de HuggingFace no incluye model card, configuracion de red, tipo de difusion o de transformer, ni descripcion del mecanismo de atencion. El unico indicio es el nombre del repositorio: "1.3B" apunta a un modelo de aproximadamente 1.300 millones de parametros, "three-encoder" sugiere el uso de tres codificadores diferenciados (habitualmente texto, imagen/condicionamiento y posiblemente un codificador temporal o de referencia) y "elastic-forcing" parece referirse a una estrategia de entrenamiento o de generacion por fuerzas, presumiblemente relacionada con tecnicas de destilacion de modelos autorregresivos de video. Ninguno de estos extremos esta confirmado por documentacion publicada.
+No se dispone de informacion sobre la arquitectura interna del modelo. La ficha de Hugging Face no incluye model card, configuracion de red, tipo de difusion o de transformer, ni descripcion del mecanismo de atencion. El unico indicio es el nombre del repositorio: "1.3B" apunta a un modelo de aproximadamente 1.300 millones de parametros, "three-encoder" sugiere el uso de tres codificadores diferenciados (habitualmente texto, imagen/condicionamiento y posiblemente un codificador temporal o de referencia) y "elastic-forcing" parece referirse a una estrategia de entrenamiento o de generacion por fuerzas, presumiblemente relacionada con tecnicas de destilacion de modelos autorregresivos de video. Ninguno de estos extremos esta confirmado por documentacion publicada.
 
 Tampoco hay datos sobre el volumen de tokens o de clips empleados en el entrenamiento, la composicion del dataset, la resolucion o la duracion de los videos de entrenamiento, ni sobre si se aplicaron tecnicas de ajuste fino por preferencias humanas (RLHF, DPO) o destilacion. No se ha localizado ningun paper, informe tecnico ni entrada de blog que describa el metodo "elastic forcing".
 
@@ -76,7 +76,7 @@ No disponible. La busqueda web realizada no ha devuelto informacion sobre este m
 
 | Modelo | Parametros | Tarea | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Elastic-forcing-1.3B-three-encoder | ~1,3B (segun el nombre) | text-to-video | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
+| Elastic-forcing-1.3B-three-encoder | ~1,3B (segun el nombre) | text-to-video | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No disponible. La busqueda web realizada no ha devuelto informacion sobre este m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elastic-forcing/Elastic-forcing-1.3B-three-encoder
+- Repositorio en Hugging Face: https://huggingface.co/Elastic-forcing/Elastic-forcing-1.3B-three-encoder
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demos o espacios asociados: no disponible

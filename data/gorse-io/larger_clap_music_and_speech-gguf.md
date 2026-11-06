@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo (métricas de recuperación o 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gorse-io/larger_clap_music_and_speech-GGUF
+- Hugging Face: https://huggingface.co/gorse-io/larger_clap_music_and_speech-GGUF
 - Modelo base: https://huggingface.co/laion/larger_clap_music_and_speech
 - Runtime clap.cpp: https://github.com/gorse-io/clap.cpp
 - Paper CLAP (arXiv:2211.06687): https://arxiv.org/abs/2211.06687

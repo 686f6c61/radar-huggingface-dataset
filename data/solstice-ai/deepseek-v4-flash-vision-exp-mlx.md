@@ -92,7 +92,7 @@ A pesar de que estos modelos cerrados se consideran competidores directos en los
 
 ## Enlaces
 
-- Modelo MLX en HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-MLX
+- Modelo MLX en Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-MLX
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Drafter MTP para decodificación especulativa: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX
 - Repositorio de DeepSeek-AI (licencia y documentación): https://github.com/deepseek-ai/DeepSeek-V4

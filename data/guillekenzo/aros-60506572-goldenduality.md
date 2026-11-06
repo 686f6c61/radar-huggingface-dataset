@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA o adaptadores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-60506572-GoldenDuality
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-60506572-GoldenDuality
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo usada en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

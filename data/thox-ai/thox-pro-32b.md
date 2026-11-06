@@ -19,7 +19,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una distribución c
 | Tipos de cuantización | Q4_K_M (GGUF); otras cuantizaciones del modelo base disponibles a través del ecosistema Qwen3, no empaquetadas por THOX |
 | Idiomas soportados | Inglés declarado en la model card; el modelo base Qwen3-32B soporta multilingüismo amplio, no documentado en esta distribución |
 | Licencia | Apache 2.0 (pesos, según los términos del modelo base) |
-| Formato de pesos | GGUF (build servida vía Ollama); repositorio de HuggingFace sin pesos publicados, solo model card |
+| Formato de pesos | GGUF (build servida vía Ollama); repositorio de Hugging Face sin pesos publicados, solo model card |
 | Tamaño de la build | 20 GB (listado de Ollama) |
 | Fecha de corte de conocimiento | 2024 (según la model card original) |
 | Despliegue | Ollama local; orquestación distribuida vía MeshStack (producto separado) |
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks verificados de forma independiente 
 
 | Modelo | Parámetros | Contexto | Cuantización de referencia | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| thox-pro-32b | 32B denso | 128K (config. Ollama) | Q4_K_M GGUF, 20 GB | Apache 2.0 | Ollama; HuggingFace solo model card | Distribución de Qwen3-32B sin entrenamiento propio |
-| Qwen3-32B (Alibaba) | 32B denso | 128K (modelo base) | Múltiples (GGUF, safetensors, AWQ) | Apache 2.0 | HuggingFace, Ollama, vLLM, TGI | Modelo base; benchmarks publicados por Alibaba |
-| Qwen3-30B-A3B (Alibaba) | 30B totales, ~3B activos (MoE) | 128K | Múltiples | Apache 2.0 | HuggingFace, Ollama | Alternativa MoE con menor coste de inferencia por token |
-| Gemma 3 27B (Google) | 27B denso | 128K | Múltiples | Gemma Terms (uso comercial con restricciones) | HuggingFace, Ollama | Alternativa de tamaño similar con licencia no Apache |
+| thox-pro-32b | 32B denso | 128K (config. Ollama) | Q4_K_M GGUF, 20 GB | Apache 2.0 | Ollama; Hugging Face solo model card | Distribución de Qwen3-32B sin entrenamiento propio |
+| Qwen3-32B (Alibaba) | 32B denso | 128K (modelo base) | Múltiples (GGUF, safetensors, AWQ) | Apache 2.0 | Hugging Face, Ollama, vLLM, TGI | Modelo base; benchmarks publicados por Alibaba |
+| Qwen3-30B-A3B (Alibaba) | 30B totales, ~3B activos (MoE) | 128K | Múltiples | Apache 2.0 | Hugging Face, Ollama | Alternativa MoE con menor coste de inferencia por token |
+| Gemma 3 27B (Google) | 27B denso | 128K | Múltiples | Gemma Terms (uso comercial con restricciones) | Hugging Face, Ollama | Alternativa de tamaño similar con licencia no Apache |
 
 La comparación directa más relevante es con el propio Qwen3-32B: thox-pro-32b no difiere en pesos, solo en configuración y empaquetado, por lo que cualquier diferencia de rendimiento respecto al base provendría de la cuantización Q4_K_M y del `num_ctx` configurado, no del modelo.
 
@@ -92,13 +92,13 @@ La comparación directa más relevante es con el propio Qwen3-32B: thox-pro-32b 
 - Idiomas: la card solo declara inglés; el multilingüismo del base no está verificado para esta distribución.
 - Sin acceso a información en línea por diseño: cualquier actualización de conocimiento posterior al corte de 2024 exige que el operador conecte fuentes externas.
 - Sin benchmarks, latencias ni métricas de producción publicadas: no hay base para estimar rendimiento en un despliegue concreto sin medirlo.
-- El repositorio de HuggingFace no contiene pesos (solo model card y `.gitattributes`); la build ejecutable vive en Ollama.
+- El repositorio de Hugging Face no contiene pesos (solo model card y `.gitattributes`); la build ejecutable vive en Ollama.
 - La orquestación MeshStack y el hardware MagStack son productos separados, no incluidos en la descarga del modelo.
 - La fecha de creación del repositorio (31 de octubre de 2026) y el estado del proyecto (campaña de Kickstarter) sugieren un producto en fase temprana; conviene verificar el soporte a largo plazo antes de adoptarlo en producción.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Thox-ai/thox-pro-32b
+- Model card en Hugging Face: https://huggingface.co/Thox-ai/thox-pro-32b
 - Build ejecutable en Ollama: https://ollama.com/Thox-ai/thox-pro-32b
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Sitio de THOX: https://thox.ai

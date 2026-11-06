@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ4e-MTP-MLX
+- Modelo en Hugging Face: https://huggingface.co/treeish/Qwen3.6-35B-A3B-oQ4e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo fuente (Jundot): https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ4e-mtp
 - Repositorio de templates de chat (Froggeric): https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

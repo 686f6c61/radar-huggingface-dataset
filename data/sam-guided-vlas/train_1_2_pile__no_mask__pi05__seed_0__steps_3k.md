@@ -61,9 +61,9 @@ Considerando que se trata de un ajuste fino del modelo base π₀.₅, la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este ajuste (sam-guided-vlas/...) | 4.143.404.816 | no disponible | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | no disponible | no disponible | no disponible | HuggingFace |
+| Este ajuste (sam-guided-vlas/...) | 4.143.404.816 | no disponible | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | no disponible | no disponible | no disponible | Hugging Face |
 
 No se conocen otros modelos comparables de la misma categoría con datos verificados.
 
@@ -78,7 +78,7 @@ No se conocen otros modelos comparables de la misma categoría con datos verific
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sam-guided-vlas/train_1_2_pile__no_mask__pi05__seed_0__steps_3k)
+- [Modelo en Hugging Face](https://huggingface.co/sam-guided-vlas/train_1_2_pile__no_mask__pi05__seed_0__steps_3k)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__no_mask)
 - [Modelo base `lerobot/pi05_base`](https://huggingface.co/lerobot/pi05_base)
 - [Blog de Physical Intelligence sobre π₀.₅](https://www.physicalintelligence.company/blog/pi05)

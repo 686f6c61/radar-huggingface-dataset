@@ -4,7 +4,7 @@
 
 El repositorio `pereirarafael/toy-parser` no contiene un modelo de aprendizaje automático, sino un artefacto textual: un análisis académico sobre visual question answering (VQA) en formato LaTeX ACL. El autor, Rafael Pereira, publica un documento con estructura de paper científico (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo y citas en modo footnote. El contenido principal es un archivo `analysis.md` que constituye la contribución del repositorio.
 
-Este repositorio es relevante para desarrolladores e investigadores que buscan material de referencia sobre el estado del arte en VQA, especialmente en lo relativo a la estructuración de papers académicos en formato ACL. Sin embargo, no existe un modelo entrenado, pesos, arquitectura ni capacidades de inferencia. La etiqueta `visual-question-answering` en HuggingFace indica el tema del análisis, no una funcionalidad real del artefacto.
+Este repositorio es relevante para desarrolladores e investigadores que buscan material de referencia sobre el estado del arte en VQA, especialmente en lo relativo a la estructuración de papers académicos en formato ACL. Sin embargo, no existe un modelo entrenado, pesos, arquitectura ni capacidades de inferencia. La etiqueta `visual-question-answering` en Hugging Face indica el tema del análisis, no una funcionalidad real del artefacto.
 
 El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto de carácter personal o experimental, sin adopción comunitaria. La fecha de creación (2026-08-25) y actualización (2026-08-25) son posteriores a la fecha actual, lo que podría indicar un error de metadatos o una fecha planificada.
 
@@ -69,5 +69,5 @@ No disponible. No existe un modelo comparable en la misma categoría, ya que est
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/pereirarafael/toy-parser](https://huggingface.co/pereirarafael/toy-parser)
+- Repositorio Hugging Face: [https://huggingface.co/pereirarafael/toy-parser](https://huggingface.co/pereirarafael/toy-parser)
 - Perfil del autor: [https://huggingface.co/pereirarafael](https://huggingface.co/pereirarafael)

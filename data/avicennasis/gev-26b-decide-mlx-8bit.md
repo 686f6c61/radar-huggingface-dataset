@@ -75,9 +75,9 @@ Las tres decisiones que cambiaron se situaban entre 0,41 y 0,59 de confianza en 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Avicennasis/GEV-26B-Decide-mlx-8bit | 25,2 B | no disponible | MLX 8-bit, group size 64 | apache-2.0 | HuggingFace, MLX | Texto, System 1, cabeza de decision de 24 slots; 26,9 GB de pico |
-| Avicennasis/GEV-26B-Decide-mlx-4bit | 25,2 B | no disponible | MLX 4-bit | apache-2.0 | HuggingFace, MLX | Misma familia; 14,3 GB de pico; misma velocidad en M1 Max |
-| autotrust/GEV-26B-Decide | 25,2 B | no disponible | bf16 (referencia) | no disponible en la informacion proporcionada | HuggingFace | Implementacion de referencia en transformers + peft; incluye System 2 (thinking) y torre de vision |
+| Avicennasis/GEV-26B-Decide-mlx-8bit | 25,2 B | no disponible | MLX 8-bit, group size 64 | apache-2.0 | Hugging Face, MLX | Texto, System 1, cabeza de decision de 24 slots; 26,9 GB de pico |
+| Avicennasis/GEV-26B-Decide-mlx-4bit | 25,2 B | no disponible | MLX 4-bit | apache-2.0 | Hugging Face, MLX | Misma familia; 14,3 GB de pico; misma velocidad en M1 Max |
+| autotrust/GEV-26B-Decide | 25,2 B | no disponible | bf16 (referencia) | no disponible en la informacion proporcionada | Hugging Face | Implementacion de referencia en transformers + peft; incluye System 2 (thinking) y torre de vision |
 
 No se dispone de datos de benchmarks estándar para establecer comparaciones de rendimiento con modelos de clasificación alternativos.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks estándar para establecer comparaciones de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-8bit
 - Variante 4-bit: https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-4bit
 - Modelo base: https://huggingface.co/autotrust/GEV-26B-Decide
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

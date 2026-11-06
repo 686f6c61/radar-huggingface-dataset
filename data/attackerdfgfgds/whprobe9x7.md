@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La entrada identificada como `attackerdfgfgds/whprobe9x7` no es un modelo de inteligencia artificial. Se trata de un repositorio alojado en HuggingFace cuyo contenido es exclusivamente un fichero de model card con etiquetas `` que definen reglas CSS dirigidas a la clase interna `.hf-sanitized` de la plataforma. No se declara pipeline, arquitectura, tokenizador, pesos ni ficheros de configuración asociados.
+La entrada identificada como `attackerdfgfgds/whprobe9x7` no es un modelo de inteligencia artificial. Se trata de un repositorio alojado en Hugging Face cuyo contenido es exclusivamente un fichero de model card con etiquetas `` que definen reglas CSS dirigidas a la clase interna `.hf-sanitized` de la plataforma. No se declara pipeline, arquitectura, tokenizador, pesos ni ficheros de configuración asociados.
 
 El contenido de la model card consiste en una secuencia de selectores CSS de combinación de hermanos (`~` y `+`), pseudoclases `:where()` y selectores de descendencia (`body > ...`), todos apuntando a recursos remotos bajo el dominio `evil.com`. Los selectores incluyen objetivos genéricos (`*`), elementos de formulario (`form`, `input`), atributos (`[name=csrf]`) y etiquetas de script (`script`). Esto es un patrón característico de sondeo de sanitizadores HTML orientado a comprobar si la plataforma escapa o filtra determinadas construcciones CSS.
 
@@ -76,13 +76,13 @@ No disponible. Este repositorio no pertenece a ninguna categoría de modelo (len
 | Contexto | no disponible | no disponible |
 | Rendimiento | no evaluado | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio público en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio público en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
 - El repositorio contiene intentos de carga de recursos remotos hacia `https://evil.com/`, con variantes dirigidas a elementos de formulario y al atributo `[name=csrf]`. Esto apunta a un posible intento de exfiltración de tokens o de sondeo de controles de seguridad.
 - Riesgo de seguridad para quien inspeccione la model card en un renderizador con sanitización insuficiente: el CSS puede provocar peticiones automáticas que revelen la IP del visitante, el *user agent* o el `Referer` al dominio externo.
-- No debe abrirse el repositorio en entornos con sesiones autenticadas de HuggingFace si no se confía en la política de sanitización de la plataforma.
+- No debe abrirse el repositorio en entornos con sesiones autenticadas de Hugging Face si no se confía en la política de sanitización de la plataforma.
 - La licencia declarada es MIT, pero al no existir obra creativa ni pesos, la licencia carece de objeto práctico. No implica ninguna garantía sobre el contenido.
 - Riesgo de alucinación: no aplicable, no hay modelo generativo.
 - Sesgos conocidos: no aplicables.
@@ -93,9 +93,9 @@ No disponible. Este repositorio no pertenece a ninguna categoría de modelo (len
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/attackerdfgfgds/whprobe9x7
+- Repositorio en Hugging Face: https://huggingface.co/attackerdfgfgds/whprobe9x7
 - Model card del autor: https://huggingface.co/attackerdfgfgds/whprobe9x7/raw/main/README.md
-- Documentación de HuggingFace sobre model cards: https://huggingface.co/docs/hub/model-cards
-- Documentación de HuggingFace sobre seguridad y contenido malicioso: https://huggingface.co/docs/hub/security
+- Documentación de Hugging Face sobre model cards: https://huggingface.co/docs/hub/model-cards
+- Documentación de Hugging Face sobre seguridad y contenido malicioso: https://huggingface.co/docs/hub/security
 - Referencia sobre exfiltración mediante CSS: https://www.w3.org/TR/CSS21/selector.html
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al identificador `attackerdfgfgds/whprobe9x7`.

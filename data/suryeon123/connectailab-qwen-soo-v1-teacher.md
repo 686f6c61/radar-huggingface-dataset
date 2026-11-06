@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`suryeon123/connectailab-qwen-soo-v1-teacher` es un repositorio de modelo alojado en HuggingFace por el usuario `suryeon123`, publicado el 26 de octubre de 2026 y asociado a la librería `connect-tycoon`. Los únicos metadatos técnicos disponibles son los tags (`connect-tycoon`, `safetensors`, `qwen`) y el tamaño del repositorio, que figura como 0.0 GB. No se ha publicado pipeline, licencia, idiomas soportados ni resultados de evaluación.
+`suryeon123/connectailab-qwen-soo-v1-teacher` es un repositorio de modelo alojado en Hugging Face por el usuario `suryeon123`, publicado el 26 de octubre de 2026 y asociado a la librería `connect-tycoon`. Los únicos metadatos técnicos disponibles son los tags (`connect-tycoon`, `safetensors`, `qwen`) y el tamaño del repositorio, que figura como 0.0 GB. No se ha publicado pipeline, licencia, idiomas soportados ni resultados de evaluación.
 
 La model card no contiene documentación técnica: consiste en una descripción de personaje en coreano e inglés, en primera persona, de una persona que regenta un pequeño salón de peluquería. Esto es coherente con el sufijo `-teacher` del identificador y con el ecosistema `connect-tycoon`/`connect-ai-lab` que aparece en otros repositorios del mismo autor (orientados a simulación de decisiones y aprendizaje por refuerzo), pero **no hay información en el repositorio que confirme** arquitectura, tamaño, datos de entrenamiento ni el papel exacto del modelo dentro de ese pipeline.
 
@@ -88,7 +88,7 @@ No disponible. Sin conocer el número de parámetros ni la licencia no es posibl
 - **Riesgo de alucinación**: no evaluable sin benchmarks, pero cualquier modelo de persona con ajuste conversacional intensivo tiende a priorizar el rol sobre la veracidad factual.
 - **Sesgos**: no documentados. El ajuste de personaje puede introducir sesgos de género, clase o profesión derivados de los datos de entrenamiento.
 - **Trazabilidad del pipeline `-teacher`**: si el modelo se usa para generar datos de entrenamiento de otro modelo, los defectos y sesgos se propagan al "student" sin que exista documentación para auditarlo.
-- **Metadatos atípicos**: la fecha de creación (2026-10-26) y la librería `connect-tycoon` (no estándar en HuggingFace) indican un repositorio experimental o interno, no un artefacto listo para distribución.
+- **Metadatos atípicos**: la fecha de creación (2026-10-26) y la librería `connect-tycoon` (no estándar en Hugging Face) indican un repositorio experimental o interno, no un artefacto listo para distribución.
 
 ## Enlaces
 

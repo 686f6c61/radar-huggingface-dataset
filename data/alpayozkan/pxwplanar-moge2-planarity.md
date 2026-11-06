@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Entrada | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alpayozkan/pxwplanar-moge2-planarity` | 335,6 M | Imagen RGB | Planarity, profundidad, normales, máscara, intrínsecos | MIT | HuggingFace |
-| `Ruicheng/moge-2-vitl-normal` (base) | ~335 M (sin cabeza de planarity) | Imagen RGB | Profundidad, normales, puntos, máscara, intrínsecos | MIT | HuggingFace |
+| `alpayozkan/pxwplanar-moge2-planarity` | 335,6 M | Imagen RGB | Planarity, profundidad, normales, máscara, intrínsecos | MIT | Hugging Face |
+| `Ruicheng/moge-2-vitl-normal` (base) | ~335 M (sin cabeza de planarity) | Imagen RGB | Profundidad, normales, puntos, máscara, intrínsecos | MIT | Hugging Face |
 | MoGe-2 original (Microsoft) | ~335 M | Imagen RGB | Profundidad, normales, puntos, máscara, intrínsecos | MIT | GitHub/HuggingFace |
 
 No se dispone de comparativas con otros modelos de segmentación de planos como PlaneRCNN o PlanarReconstruction, ya que no se han encontrado datos de rendimiento comparativo en la información disponible.
@@ -77,7 +77,7 @@ No se dispone de comparativas con otros modelos de segmentación de planos como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alpayozkan/pxwplanar-moge2-planarity
+- Modelo en Hugging Face: https://huggingface.co/alpayozkan/pxwplanar-moge2-planarity
 - Repositorio de código y demo: https://github.com/alpayozkan/PixelwisePlanarity
 - Modelo base MoGe-2: https://huggingface.co/Ruicheng/moge-2-vitl-normal
 - Paper de MoGe-2 (arXiv): https://arxiv.org/abs/2507.02546

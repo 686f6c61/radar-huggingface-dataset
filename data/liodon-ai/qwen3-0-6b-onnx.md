@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Qwen3-0.6B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Qwen3-0.6B-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Exportación similar de onnx-community: https://huggingface.co/onnx-community/Qwen3-0.6B-ONNX
 - Sitio web de Liodon AI: https://liodon.ai/

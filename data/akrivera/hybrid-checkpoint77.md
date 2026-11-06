@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akrivera/hybrid-checkpoint77` es un repositorio experimental publicado en HuggingFace por el usuario akrivera bajo el título "Hybrid for Multitask". No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card lo describe explícitamente como una implementación de referencia con tests de humo reproducibles, donde las afirmaciones de benchmark se omiten deliberadamente. El repositorio contiene código Python ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización válido para pruebas de humo.
+`akrivera/hybrid-checkpoint77` es un repositorio experimental publicado en Hugging Face por el usuario akrivera bajo el título "Hybrid for Multitask". No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card lo describe explícitamente como una implementación de referencia con tests de humo reproducibles, donde las afirmaciones de benchmark se omiten deliberadamente. El repositorio contiene código Python ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización válido para pruebas de humo.
 
 La arquitectura declarada es "Hybrid" con atención de tipo grouped query, fusión por co-atención, activación swish y normalización RMSNorm, en una escala que el autor etiqueta como "base". El recuento real de parámetros en safetensors es de 49.600, un valor extremadamente reducido que confirma que no se trata de un modelo de lenguaje utilizable en producción, sino de un esqueleto de código para validar un pipeline de entrenamiento e inferencia.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento: el `model.safetensors` se presenta explícita
 - Plantilla de arquitectura para investigación: partir de `config.json` y del código como base para experimentar con atención grouped query y co-atención en un modelo pequeño.
 - Reproducción de recetas de entrenamiento: emplear `training_args.json` (Novograd, schedule exponencial) como configuración inicial de un experimento propio, sustituyendo los datos por un corpus real.
 - Integración en tests de CI: incorporar el script como caso de prueba que valide versiones de PyTorch y compatibilidad de APIs de carga de safetensors.
-- Docencia y formación: ilustrar la estructura mínima de un repositorio de modelo en HuggingFace (config, training args, checkpoint, script de inferencia) sin incurrir en costes de cómputo.
+- Docencia y formación: ilustrar la estructura mínima de un repositorio de modelo en Hugging Face (config, training args, checkpoint, script de inferencia) sin incurrir en costes de cómputo.
 - Base para adaptadores personalizados: dado que la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, sirve para practicar la escritura de dicho adaptador sobre una implementación no estándar.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akrivera/hybrid-checkpoint77 | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| akrivera/hybrid-checkpoint77 | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la información proporcionada modelos comparables de la misma categoría (esqueleto de implementación híbrida multitarea con checkpoint de inicialización). La comparación con modelos de lenguaje reales de escala "base" no es pertinente por la diferencia de órdenes de magnitud en parámetros y por la ausencia de entrenamiento.
@@ -78,5 +78,5 @@ No se identifican en la información proporcionada modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akrivera/hybrid-checkpoint77
+- Repositorio en Hugging Face: https://huggingface.co/akrivera/hybrid-checkpoint77
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

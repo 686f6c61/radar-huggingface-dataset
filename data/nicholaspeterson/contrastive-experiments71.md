@@ -81,5 +81,5 @@ No se dispone de datos numericos suficientes en la informacion proporcionada par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicholaspeterson/contrastive-experiments71
+- Modelo en Hugging Face: https://huggingface.co/nicholaspeterson/contrastive-experiments71
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

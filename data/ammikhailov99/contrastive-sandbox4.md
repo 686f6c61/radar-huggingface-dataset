@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`contrastive-sandbox4` es un prototipo de investigación publicado por el usuario Ammikhailov99 en HuggingFace. Se presenta como una implementación de arquitectura Flamingo orientada a aprendizaje contrastivo, con un conjunto de configuración etiquetado como "giant" y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
+`contrastive-sandbox4` es un prototipo de investigación publicado por el usuario Ammikhailov99 en Hugging Face. Se presenta como una implementación de arquitectura Flamingo orientada a aprendizaje contrastivo, con un conjunto de configuración etiquetado como "giant" y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint es válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de rendimiento.
 
 El repositorio tiene un tamaño de 0.0 GB y un total de 33.088 parámetros registrados en los safetensors, lo que sitúa el artefacto en un orden de magnitud muy alejado de cualquier modelo de lenguaje utilizable en producción. La etiqueta "giant" del autor hace referencia a la configuración generada por su script, no a un modelo de gran escala real. El pipeline no está declarado y no se especifican idiomas soportados.
 
@@ -78,10 +78,10 @@ La comparación debe interpretarse con cautela: los tres modelos de referencia s
 - Riesgo de alucinación: no aplica en sentido estricto porque el modelo no genera lenguaje coherente, pero cualquier evaluación futura deberá medirlo.
 - Licencia MIT: permisiva para uso comercial del código y los pesos, aunque el autor recomienda revisar por separado los términos de los datos externos que se utilicen con el repositorio.
 - La etiqueta "giant" es engañosa respecto al recuento real de parámetros; conviene no citarla como indicador de escala.
-- El pipeline no está declarado en HuggingFace, y la carga con APIs automáticas requiere un adaptador explícito.
+- El pipeline no está declarado en Hugging Face, y la carga con APIs automáticas requiere un adaptador explícito.
 - Fecha de creación registrada en 2026-11-04, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ammikhailov99/contrastive-sandbox4
+- Repositorio en Hugging Face: https://huggingface.co/Ammikhailov99/contrastive-sandbox4
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -106,7 +106,7 @@ Todas comparten licencia Apache-2.0, formato MLX safetensors, contexto de 131.07
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.7e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2.7e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio oMLX: https://github.com/jundot/omlx
 - mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

@@ -68,7 +68,7 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Tipo | Parametros | Contexto / malla | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HO-FNO-Pipe-Flow | HO-FNO (2.º orden), 8 capas | no disponible | 129 x 129 x 2 | Apache 2.0 | HuggingFace |
+| HO-FNO-Pipe-Flow | HO-FNO (2.º orden), 8 capas | no disponible | 129 x 129 x 2 | Apache 2.0 | Hugging Face |
 | FNO estandar (referencia del paper) | FNO de primer orden | no disponible | Pipe | segun implementacion original | GitHub del paper |
 | DeepONet | Operador neuronal basado en ramas/tronco | no disponible | variable | segun implementacion | multiple |
 
@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos cuantitativos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/HO-FNO-Pipe-Flow
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/HO-FNO-Pipe-Flow
 - Paper (Higher-Order Fourier Neural Operator): https://arxiv.org/abs/2606.28122
 - Repositorio oficial del paper: https://github.com/AlexColagrande/HO-FNO
 - Dataset Pipe en ModelScope: https://www.modelscope.cn/datasets/OneScience/HO-FNO-Pipe

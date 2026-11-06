@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — M-SimOW (beta=0.9, lr=0.006) es un checkpoint experimental publicado por el usuario j0no12 en HuggingFace. No se trata de un modelo de lenguaje orientado a uso real, sino del artefacto final de una ablación de optimizadores: un modelo denso de tipo decoder, entrenado desde cero con 500 millones de tokens para comparar el comportamiento del optimizador M-SimOW frente a otras variantes del barrido denominado "Nero Optimizer Work". El interés es puramente metodológico: reproducible, aislado y con el log completo de entrenamiento incluido.
+Nero Optimizer Work — M-SimOW (beta=0.9, lr=0.006) es un checkpoint experimental publicado por el usuario j0no12 en Hugging Face. No se trata de un modelo de lenguaje orientado a uso real, sino del artefacto final de una ablación de optimizadores: un modelo denso de tipo decoder, entrenado desde cero con 500 millones de tokens para comparar el comportamiento del optimizador M-SimOW frente a otras variantes del barrido denominado "Nero Optimizer Work". El interés es puramente metodológico: reproducible, aislado y con el log completo de entrenamiento incluido.
 
 El modelo es muy pequeno: aproximadamente 999.680 parametros almacenados, vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atencion de 32 dimensiones y MLP con puerta (gated) de 148 dimensiones. La longitud de contexto es de solo 128 tokens y el entrenamiento se ejecuto integramente sobre Apple MLX con lotes de 32 ejemplos. La perdida final registrada fue de 3,875804.
 
@@ -82,7 +82,7 @@ No se dispone en la informacion proporcionada de datos verificados sobre modelos
 
 | Modelo | Parametros | Contexto | Vocabulario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nero Optimizer Work — M-SimOW (beta=0.9, lr=0.006) | ~999.680 | 128 tokens | 2.048 | no disponible | HuggingFace, pesos MLX en .npz |
+| Nero Optimizer Work — M-SimOW (beta=0.9, lr=0.006) | ~999.680 | 128 tokens | 2.048 | no disponible | Hugging Face, pesos MLX en .npz |
 | Alternativas de la misma categoria (modelos de investigacion de ~1M de parametros) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Conviene subrayar que la categoria real de este checkpoint no es "modelo de lenguaje pequeno" sino "artefacto de ablacion de optimizador": su proposito es la comparacion interna del barrido, no la competencia con modelos generativos de su tamano.
@@ -101,5 +101,5 @@ Conviene subrayar que la categoria real de este checkpoint no es "modelo de leng
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p006
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p9-lr0p006
 - La busqueda web realizada no devolvio ningun enlace relevante relacionado con el modelo, el barrido Nero Optimizer Work ni el optimizador m_simow. El unico resultado obtenido era una pagina de ayuda sobre uso de foros (net54baseball.com), sin relacion con el contenido de esta ficha.

@@ -88,7 +88,7 @@ Las metricas de rechazo se midieron sobre `mlabonne/harmful_behaviors` (test[:10
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - GGUF cuantizados: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
 - Repositorio Heretic: https://github.com/p-e-w/heretic

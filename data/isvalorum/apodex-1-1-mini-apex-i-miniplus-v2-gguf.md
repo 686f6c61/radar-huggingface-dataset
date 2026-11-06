@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apodex-1.1-mini-APEX-I-MiniPlus-V2 es una cuantización GGUF personalizada del modelo multimodal apodex/Apodex-1.1-mini, un Mixture-of-Experts (MoE) de 35.000 millones de parámetros desarrollado por apodex y publicado en HuggingFace por el usuario IsValorum. El modelo está orientado a cargas de trabajo agénticas: investigación profunda, orquestación de herramientas, razonamiento verificable y flujos de trabajo informáticos de varios turnos. Su topología combina 256 micro-expertos con dimensión intermedia de 512 y enrutamiento top-8 por token, distribuidos en 40 capas, de las cuales 30 son de atención lineal tipo DeltaNet SSM y 10 de atención completa.
+Apodex-1.1-mini-APEX-I-MiniPlus-V2 es una cuantización GGUF personalizada del modelo multimodal apodex/Apodex-1.1-mini, un Mixture-of-Experts (MoE) de 35.000 millones de parámetros desarrollado por apodex y publicado en Hugging Face por el usuario IsValorum. El modelo está orientado a cargas de trabajo agénticas: investigación profunda, orquestación de herramientas, razonamiento verificable y flujos de trabajo informáticos de varios turnos. Su topología combina 256 micro-expertos con dimensión intermedia de 512 y enrutamiento top-8 por token, distribuidos en 40 capas, de las cuales 30 son de atención lineal tipo DeltaNet SSM y 10 de atención completa.
 
 La relevancia de esta ficha concreta reside en el proceso de cuantización: en lugar de un script automático, el autor aplica un mapa de tensores hecho a mano y calibrado contra una importance matrix (imatrix) multidominio, con el objetivo declarado de preservar el enrutamiento de expertos y el espacio de vocabulario de 248.320 tokens. El modelo soporta una ventana de contexto nativa de 262.144 tokens, visión multimodal mediante un proyector mmproj y un bloque de predicción multi-token (blk.40) pensado para decodificación especulativa.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos dentro de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Perfil del autor de la cuantización: https://huggingface.co/IsValorum
 - Paper, blog o demo oficial: no disponible en la información proporcionada

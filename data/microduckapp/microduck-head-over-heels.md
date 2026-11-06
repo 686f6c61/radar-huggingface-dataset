@@ -23,7 +23,7 @@ La información pública es mínima: la model card describe el movimiento y los 
 | Frecuencia de control | 50 Hz (20 ms por ciclo) |
 | Duración del movimiento | 10,9 segundos |
 | Entradas / salidas | 61 observaciones de entrada / 14 objetivos articulares de salida |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (por debajo del umbral de redondeo) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (por debajo del umbral de redondeo) |
 | Pipeline declarado | robotics |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-27 |
@@ -63,7 +63,7 @@ No existen métricas de éxito de la tarea, tasa de caídas, error de seguimient
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El repositorio completo ocupa 0,0 GB según HuggingFace, por lo que el grafo es de tamaño reducido y la inferencia es viable en CPU.
+- VRAM estimada: no disponible. El repositorio completo ocupa 0,0 GB según Hugging Face, por lo que el grafo es de tamaño reducido y la inferencia es viable en CPU.
 - GPU recomendadas: no aplica para el artefacto en sí; la política está pensada para ejecutarse en la electrónica del propio robot o en un equipo anfitrión conectado.
 - ¿Cabe en GPU de consumo? Sí, con margen amplio, aunque no es el escenario previsto: cualquier CPU moderna con ONNX Runtime debería cubrir el ciclo de 20 ms.
 - Opciones de despliegue: ONNX Runtime como ejecutor principal; instalación y reproducción mediante la aplicación MicroDuck y el `manifest.json` del repositorio. No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama, que no aplican a este tipo de artefacto.
@@ -95,7 +95,7 @@ La comparación relevante es dentro de la propia familia `microduck-move`, que a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-head-over-heels
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-head-over-heels
 - Perfil del autor (16 movimientos publicados): https://huggingface.co/microduckapp
 - Movimiento relacionado microduck-roll-over: https://huggingface.co/microduckapp/microduck-roll-over
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

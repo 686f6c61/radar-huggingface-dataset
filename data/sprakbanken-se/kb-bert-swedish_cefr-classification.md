@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KB-bert-swedish_CEFR-classification | 124,7 M | no disponible | Clasificación CEFR en sueco | GPL-3.0 | HuggingFace |
-| KB/bert-base-swedish-cased | 124,7 M | 512 tokens (BERT base) | Modelo base de lenguaje en sueco | no disponible en la información | HuggingFace |
+| KB-bert-swedish_CEFR-classification | 124,7 M | no disponible | Clasificación CEFR en sueco | GPL-3.0 | Hugging Face |
+| KB/bert-base-swedish-cased | 124,7 M | 512 tokens (BERT base) | Modelo base de lenguaje en sueco | no disponible en la información | Hugging Face |
 | Otros clasificadores CEFR para sueco | no disponible | no disponible | Clasificación CEFR | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -82,10 +82,10 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sprakbanken-se/KB-bert-swedish_CEFR-classification
+- Hugging Face: https://huggingface.co/sprakbanken-se/KB-bert-swedish_CEFR-classification
 - Modelo base: https://huggingface.co/KB/bert-base-swedish-cased
 - Artículo (ACL Anthology): https://aclanthology.org/2024.nlp4call-1.11/
 - Språkbanken Text: https://spraakbanken.gu.se/en
 - Grupo Computational SLA: https://spraakbanken.gu.se/en/projects/computational-sla
-- Perfil del autor en HuggingFace: https://huggingface.co/rimusa
+- Perfil del autor en Hugging Face: https://huggingface.co/rimusa
 - Escala CEFR (Wikipedia): https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages

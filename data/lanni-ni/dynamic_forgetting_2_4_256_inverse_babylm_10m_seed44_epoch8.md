@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8`, publicado en HuggingFace por el usuario Lanni-ni, es un modelo de generacion de texto de parametros reducidos, con 27.449.096 parametros en total. El nombre del repositorio sugiere un experimento de investigacion relacionado con "dynamic forgetting" y el conjunto de datos "BabyLM", pero la model card no contiene ninguna especificacion tecnica ni descripcion del modelo, ya que fue generada automaticamente. El modelo se distribuye en formato safetensors y tiene un tamano de repositorio de 0.1 GB. No hay informacion disponible sobre arquitectura, datos de entrenamiento, licencia ni capacidades. El unico enlace externo citado en los tags corresponde al articulo arxiv:1910.09700, que trata sobre el calculo del impacto ambiental de modelos de machine learning, no sobre este modelo.
+El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8`, publicado en Hugging Face por el usuario Lanni-ni, es un modelo de generacion de texto de parametros reducidos, con 27.449.096 parametros en total. El nombre del repositorio sugiere un experimento de investigacion relacionado con "dynamic forgetting" y el conjunto de datos "BabyLM", pero la model card no contiene ninguna especificacion tecnica ni descripcion del modelo, ya que fue generada automaticamente. El modelo se distribuye en formato safetensors y tiene un tamano de repositorio de 0.1 GB. No hay informacion disponible sobre arquitectura, datos de entrenamiento, licencia ni capacidades. El unico enlace externo citado en los tags corresponde al articulo arxiv:1910.09700, que trata sobre el calculo del impacto ambiental de modelos de machine learning, no sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch8`, publica
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF o DPO. La model card del repositorio es un titular generico autogenerado por HuggingFace y no incluye ninguna seccion completada por el autor. El tag `custom_code` indica que el modelo puede requerir un codigo personalizado en `transformers` para cargarse, pero no se aporta ese codigo en la informacion proporcionada. El identificador del repositorio no se puede interpretar como especificacion verificable.
+No se dispone de informacion publica sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF o DPO. La model card del repositorio es un titular generico autogenerado por Hugging Face y no incluye ninguna seccion completada por el autor. El tag `custom_code` indica que el modelo puede requerir un codigo personalizado en `transformers` para cargarse, pero no se aporta ese codigo en la informacion proporcionada. El identificador del repositorio no se puede interpretar como especificacion verificable.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No hay informacion suficiente para comparar este modelo con alternativas de la m
 - El modelo puede generar contenido falso, desactualizado o incoherente, ya que no se ha validado ningun aspecto de su comportamiento.
 - El tag `custom_code` implica que el codigo necesario para ejecutar el modelo no esta documentado en la model card, lo que dificulta su reproducibilidad.
 - No se conocen los idiomas soportados; el uso con otros idiomas es arriesgado.
-- La fecha de publicacion indicada en HuggingFace es 2026-09-09, una fecha futura, lo que sugiere un error en los metadatos o un posible problema con el repositorio.
+- La fecha de publicacion indicada en Hugging Face es 2026-09-09, una fecha futura, lo que sugiere un error en los metadatos o un posible problema con el repositorio.
 
 ## Enlaces
 

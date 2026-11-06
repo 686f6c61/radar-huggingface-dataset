@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyron/fluid-speech-pro-coreml
+- Modelo en Hugging Face: https://huggingface.co/cyron/fluid-speech-pro-coreml
 - Modelo original: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro
 - Modelo base citado en la model card: `parakeet-tdt-0.6b-v3-coreml`
 - Modelo base citado en la model card: `fluid-speech-mini-coreml`

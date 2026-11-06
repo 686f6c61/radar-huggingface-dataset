@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE es un checkpoint de aproximadamente 92.425 millones de parametros publicado en HuggingFace por el usuario claidler, derivado del modelo base claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4. Los pesos estan cuantizados en NVFP4 (formato de punto flotante de 4 bits de NVIDIA) y el repositorio ocupa 105,5 GB en safetensors. El nombre indica que se trata de una variante "abliterated" de la familia Qwen (el tag de metadata es qwen4_exp), es decir, con las capas de rechazo neutralizadas, orientada a despliegue en vLLM con decodificacion especulativa.
+El modelo claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE es un checkpoint de aproximadamente 92.425 millones de parametros publicado en Hugging Face por el usuario claidler, derivado del modelo base claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4. Los pesos estan cuantizados en NVFP4 (formato de punto flotante de 4 bits de NVIDIA) y el repositorio ocupa 105,5 GB en safetensors. El nombre indica que se trata de una variante "abliterated" de la familia Qwen (el tag de metadata es qwen4_exp), es decir, con las capas de rechazo neutralizadas, orientada a despliegue en vLLM con decodificacion especulativa.
 
 La diferencia respecto a su modelo base no esta en los pesos del modelo objetivo, que son identicos y estan enlazados mediante hardlinks, sino en el cabezal de decodificacion especulativa: los 29 tensores densos BF16 del drafter MTP (multi-token prediction) alojados en los shards 19 y 20 se han sustituido por el drafter GDN-MSE reentrenado procedente de ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE, revision 16c9bd54. No se documenta ningun reentrenamiento del modelo principal.
 
@@ -83,9 +83,9 @@ Condiciones de medida declaradas: 2x DGX Spark, TP=2, vLLM 0.30, imagen myllmbox
 
 | Modelo | Parametros | Cuantizacion | Throughput (tok/s) | Aceptacion spec-decode | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE | 92,4 B | NVFP4 + LMHead NVFP4, drafter GDN-MSE | 81,7 | 39,11 % | no disponible | HuggingFace, 0 descargas |
-| claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4 (base) | 92,4 B | NVFP4 + LMHead NVFP4, drafter MTP BF16 | 75,2 | 38,11 % | no disponible | HuggingFace |
-| ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE | no disponible | NVFP4, drafter GDN-MSE | no disponible | no disponible | no disponible | HuggingFace, revision 16c9bd54 |
+| claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE | 92,4 B | NVFP4 + LMHead NVFP4, drafter GDN-MSE | 81,7 | 39,11 % | no disponible | Hugging Face, 0 descargas |
+| claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4 (base) | 92,4 B | NVFP4 + LMHead NVFP4, drafter MTP BF16 | 75,2 | 38,11 % | no disponible | Hugging Face |
+| ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE | no disponible | NVFP4, drafter GDN-MSE | no disponible | no disponible | no disponible | Hugging Face, revision 16c9bd54 |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (tamano o tarea) en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE
+- Modelo en Hugging Face: https://huggingface.co/claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE
 - Modelo base: https://huggingface.co/claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4
 - Origen del drafter GDN-MSE: https://huggingface.co/ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE
 - vLLM (stack de despliegue recomendado): https://github.com/vllm-project/vllm

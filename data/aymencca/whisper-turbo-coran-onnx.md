@@ -90,7 +90,7 @@ La diferencia principal frente a los tres alternativas es el formato: solo este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aymencca/whisper-turbo-coran-onnx
+- Repositorio Hugging Face: https://huggingface.co/Aymencca/whisper-turbo-coran-onnx
 - Modelo base (ajuste fino en árabe): https://huggingface.co/naazimsnh02/whisper-large-v3-turbo-ar-quran
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/tarteel-ai/everyayah

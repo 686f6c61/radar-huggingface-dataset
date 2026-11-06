@@ -21,7 +21,7 @@ La relevancia de esta publicación es doble. Por un lado, ofrece una receta repr
 | Licencia | lfm-open-license-v1.0 (Liquid AI LFM Open License) |
 | Formato de pesos | overlay INT4 empaquetado para el cargador CUDA propio de GPTQ-Pro; no es safetensors estándar, ni GGUF, ni un checkpoint autónomo de Transformers |
 
-Otros datos de la ficha de HuggingFace: repositorio de 0,8 GB, pipeline `any-to-any`, librería `transformers`, 0 descargas y 1 like en el momento de la consulta, creado el 28 de octubre de 2026 y actualizado el 29 de octubre de 2026.
+Otros datos de la ficha de Hugging Face: repositorio de 0,8 GB, pipeline `any-to-any`, librería `transformers`, 0 descargas y 1 like en el momento de la consulta, creado el 28 de octubre de 2026 y actualizado el 29 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Framework de cuantización GPTQ-Pro: https://github.com/groxaxo/GPTQ-Pro
 - Scripts de inferencia para LFM3-Audio: https://github.com/groxaxo/GPTQ-Pro/tree/main/examples/lfm3_audio

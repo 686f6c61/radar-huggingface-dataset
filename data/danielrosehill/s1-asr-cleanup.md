@@ -84,6 +84,6 @@ Frente al S1-mini original, este fine-tune anade comportamiento editorial especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielrosehill/S1-ASR-Cleanup
+- Modelo en Hugging Face: https://huggingface.co/danielrosehill/S1-ASR-Cleanup
 - Modelo base (S1-mini de Superwhisper): https://huggingface.co/superwhisper/s1-mini
 - Licencia del modelo: https://huggingface.co/danielrosehill/S1-ASR-Cleanup/blob/main/LICENSE

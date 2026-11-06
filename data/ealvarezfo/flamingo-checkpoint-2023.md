@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Generation (identificador de repositorio Ealvarezfo/flamingo-checkpoint-2023) es un repositorio de HuggingFace publicado por el usuario Ealvarezfo que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de generación. No se trata de un modelo preentrenado ni de un lanzamiento listo para producción, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y revisiones de código, y que no se presenta como un checkpoint entrenado ni con resultados de benchmarks.
+Flamingo for Generation (identificador de repositorio Ealvarezfo/flamingo-checkpoint-2023) es un repositorio de Hugging Face publicado por el usuario Ealvarezfo que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de generación. No se trata de un modelo preentrenado ni de un lanzamiento listo para producción, sino de un punto de partida experimental: el propio autor indica en la model card que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y revisiones de código, y que no se presenta como un checkpoint entrenado ni con resultados de benchmarks.
 
 El repositorio declara una configuración de arquitectura bautizada como "giant", pero el recuento real de parámetros reportado por los archivos safetensors es de tan solo 16.576 parámetros, lo que confirma que no existe un modelo entrenado a gran escala detrás. Los pesos se distribuyen en formato safetensors, la licencia es MIT y el tamaño total del repositorio es de 0,0 GB. No hay pipeline declarado, no se especifican idiomas soportados y el repositorio no registra descargas ni interacciones.
 
@@ -77,9 +77,9 @@ Los modelos comparables directos disponibles en la información recogida son otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ealvarezfo/flamingo-checkpoint-2023 | 16.576 | no disponible | sin benchmarks (inicialización) | MIT | HuggingFace, 0 descargas |
-| nipopov1996/flamingo-checkpoint-2023 | no disponible | no disponible | sin benchmarks (inicialización) | no disponible | HuggingFace |
-| ecam-pbell/flamingo-checkpoint | no disponible | no disponible | sin benchmarks (inicialización, variante nano, tarea de matching) | no disponible | HuggingFace |
+| Ealvarezfo/flamingo-checkpoint-2023 | 16.576 | no disponible | sin benchmarks (inicialización) | MIT | Hugging Face, 0 descargas |
+| nipopov1996/flamingo-checkpoint-2023 | no disponible | no disponible | sin benchmarks (inicialización) | no disponible | Hugging Face |
+| ecam-pbell/flamingo-checkpoint | no disponible | no disponible | sin benchmarks (inicialización, variante nano, tarea de matching) | no disponible | Hugging Face |
 | Flamingo (paper original, DeepMind) | hasta 80.000 millones (variante mayor) | no detallada en las fuentes | SOTA en few-shot en 6 de 16 tareas evaluadas | no disponible | publicación en arXiv 2204.14198 |
 
 La comparación con el Flamingo original de DeepMind es únicamente arquitectónica y conceptual: aquel es un modelo entrenado a gran escala con aprendizaje few-shot, mientras que el repositorio aquí descrito es un esqueleto sin entrenar. No se dispone de datos que permitan una comparación de rendimiento cuantitativa.
@@ -90,7 +90,7 @@ La comparación con el Flamingo original de DeepMind es únicamente arquitectón
 - No se han auditado sesgos, robustez, equidad ni transferencia de dominio.
 - No hay evaluación de benchmarks ni métricas publicadas; cualquier cifra de rendimiento sería inventada.
 - No se declaran idiomas soportados, longitud de contexto ni tipos de cuantización.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - La licencia MIT permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se combinan con datasets externos.
 - No hay soporte documentado de despliegue con frameworks de inferencia estándar (vLLM, llama.cpp, Ollama, TGI).
 - El nombre de configuración "giant" puede inducir a confusión: no refleja el tamaño real del modelo (16.576 parámetros).
@@ -98,7 +98,7 @@ La comparación con el Flamingo original de DeepMind es únicamente arquitectón
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ealvarezfo/flamingo-checkpoint-2023
+- Repositorio en Hugging Face: https://huggingface.co/Ealvarezfo/flamingo-checkpoint-2023
 - Paper original de Flamingo (DeepMind): https://arxiv.org/abs/2204.14198
 - Versión PDF del paper: https://arxiv.org/pdf/2204.14198v2
 - Material docente sobre Flamingo (Yale NLP): https://yalenlp.github.io/cpsc670/assets/lectures/s23/lecture_20_flamingo.pdf

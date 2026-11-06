@@ -75,7 +75,7 @@ No disponible. El propio autor declara que MiniEmbed-Nano no es comparable con B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/MiniEmbed-Nano
-- Perfil de SZL Holdings en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/MiniEmbed-Nano
+- Perfil de SZL Holdings en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Repositorio szl-atelier en GitHub: https://github.com/szl-holdings/szl-atelier
 - Organización SZL Holdings en GitHub: https://github.com/szl-holdings

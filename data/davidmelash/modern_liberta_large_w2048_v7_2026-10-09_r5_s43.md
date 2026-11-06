@@ -6,7 +6,7 @@ modern_liberta_large_w2048_v7_2026-10-09_r5_s43 es un modelo de clasificación d
 
 El modelo cuenta con 409.799.689 parámetros totales (aproximadamente 410 M) según los pesos en safetensors, y el repositorio ocupa 1,6 GB, lo que sugiere pesos almacenados en precisión completa o media. El identificador del checkpoint incluye el sufijo `w2048`, que apunta a una ventana de contexto de entrenamiento de 2048 tokens, aunque este dato no se confirma explícitamente en la model card. Está publicado con licencia MIT, lo que permite uso comercial sin restricciones adicionales.
 
-Su relevancia actual radica en un caso de uso muy concreto y con demanda creciente: la desidentificación automatizada de documentos judiciales antes de su publicación o cesión a terceros, en un contexto regulatorio (protección de datos) donde el tratamiento manual de grandes volúmenes de sentencias es inviable. El modelo se distribuye a través de HuggingFace con la librería transformers y es compatible con endpoints, aunque a fecha de la información disponible no registra descargas ni valoraciones.
+Su relevancia actual radica en un caso de uso muy concreto y con demanda creciente: la desidentificación automatizada de documentos judiciales antes de su publicación o cesión a terceros, en un contexto regulatorio (protección de datos) donde el tratamiento manual de grandes volúmenes de sentencias es inviable. El modelo se distribuye a través de Hugging Face con la librería transformers y es compatible con endpoints, aunque a fecha de la información disponible no registra descargas ni valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de datos publicos de benchmarks ni de modelos comparables directos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5_s43
+- Modelo en Hugging Face: https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5_s43
 - Modelo base: https://huggingface.co/Goader/modern-liberta-large
 - OpenStreetMap (origen de las direcciones sinteticas, licencia ODbL): https://www.openstreetmap.org/copyright
 - Ukrposhta (directorio postal citado como fuente de direcciones): https://www.ukrposhta.ua/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `ThirdTimesTheCiarc/811_is_immortal` aloja un modelo publicado en HuggingFace por el usuario ThirdTimesTheCiarc, cuya identidad real corresponde a Meir Yaffe segun su perfil de la plataforma. El modelo tiene un tamano de repositorio de 85,5 GB, lo que sugiere un modelo de gran escala, pero no se ha publicado ninguna informacion tecnica sobre su arquitectura, parametros, entrenamiento o capacidades.
+El repositorio `ThirdTimesTheCiarc/811_is_immortal` aloja un modelo publicado en Hugging Face por el usuario ThirdTimesTheCiarc, cuya identidad real corresponde a Meir Yaffe segun su perfil de la plataforma. El modelo tiene un tamano de repositorio de 85,5 GB, lo que sugiere un modelo de gran escala, pero no se ha publicado ninguna informacion tecnica sobre su arquitectura, parametros, entrenamiento o capacidades.
 
-El acceso al modelo esta restringido (gated) y requiere aceptar condiciones en HuggingFace. Ademas, esta etiquetado como "not-for-all-audiences" y limitado a la region de Estados Unidos, lo que indica que puede contener contenido no apto para todos los publicos. El modelo fue creado en febrero de 2026 y actualizado en agosto de 2026, con un total de 0 descargas y 2 likes en el momento de la consulta.
+El acceso al modelo esta restringido (gated) y requiere aceptar condiciones en Hugging Face. Ademas, esta etiquetado como "not-for-all-audiences" y limitado a la region de Estados Unidos, lo que indica que puede contener contenido no apto para todos los publicos. El modelo fue creado en febrero de 2026 y actualizado en agosto de 2026, con un total de 0 descargas y 2 likes en el momento de la consulta.
 
 La ausencia de una ficha de modelo (model card) con documentacion tecnica y la falta de resultados de busqueda adicionales impiden determinar que tipo de modelo es, que problema resuelve o por que podria ser relevante para la comunidad de desarrolladores e investigadores.
 
@@ -26,7 +26,7 @@ La ausencia de una ficha de modelo (model card) con documentacion tecnica y la f
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de busqueda. No se dispone de datos sobre el tipo de arquitectura (transformer, MoE, SSM, hibrida, etc.), el numero de parametros, el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tamaño del repositorio (85,5 GB) sugiere que podria tratarse de un modelo de gran tamano, pero sin la documentacion correspondiente no es posible confirmar ninguna caracteristica tecnica.
+No se ha publicado ninguna informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de busqueda. No se dispone de datos sobre el tipo de arquitectura (transformer, MoE, SSM, hibrida, etc.), el numero de parametros, el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tamaño del repositorio (85,5 GB) sugiere que podria tratarse de un modelo de gran tamano, pero sin la documentacion correspondiente no es posible confirmar ninguna caracteristica tecnica.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No disponible. No se dispone de informacion suficiente para identificar la categ
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo es restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos de produccion.
+- El acceso al modelo es restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos de produccion.
 - La etiqueta "not-for-all-audiences" indica que el modelo o su contenido podria no ser adecuado para todos los publicos.
 - La restriccion regional "region:us" sugiere que el acceso puede estar limitado geograficamente a Estados Unidos.
 - No existe documentacion tecnica, ficha de modelo ni resultados de benchmarks, lo que impide evaluar riesgos de sesgos, alucinaciones o limitaciones de contexto.
@@ -59,6 +59,6 @@ No disponible. No se dispone de informacion suficiente para identificar la categ
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal
 - Directorio de archivos del modelo: https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal/tree/main
 - Perfil del autor: https://huggingface.co/ThirdTimesTheCiarc/models

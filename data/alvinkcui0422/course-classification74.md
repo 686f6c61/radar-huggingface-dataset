@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alvinkcui0422/course-classification74` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de **MoCo v3** (Momentum Contrast v3) orientada a tareas de **clasificación**, escrita en PyTorch. Lo publica el usuario Alvinkcui0422 bajo licencia Apache 2.0 y no cuenta con descargas ni interacciones en el momento de redactar esta ficha. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance.
+`Alvinkcui0422/course-classification74` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de **MoCo v3** (Momentum Contrast v3) orientada a tareas de **clasificación**, escrita en PyTorch. Lo publica el usuario Alvinkcui0422 bajo licencia Apache 2.0 y no cuenta con descargas ni interacciones en el momento de redactar esta ficha. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance.
 
 El repositorio incluye el script `model.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que constituye una inicialización de pesos, no un modelo entrenado. La configuración declarada es de escala "small", con atención de tipo *grouped query*, fusión de bajo rango (*low rank*), activación approximate GELU y normalización InstanceNorm. El entrenamiento propuesto usa el optimizador Lion con un schedule polinómico.
 
@@ -87,4 +87,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alvinkcui0422/course-classification74
+- Repositorio Hugging Face: https://huggingface.co/Alvinkcui0422/course-classification74

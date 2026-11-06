@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparables verificados en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSI123/Reinforce-CartPole
-- Repositorio de artefactos: incluido en el propio repositorio de HuggingFace (model.pt, results.json, replay.mp4)
+- Hugging Face: https://huggingface.co/JSI123/Reinforce-CartPole
+- Repositorio de artefactos: incluido en el propio repositorio de Hugging Face (model.pt, results.json, replay.mp4)
 - Deep RL Class (contexto del curso, referenciado en los tags): no se proporciona enlace directo en la informacion disponible
 - Paper de REINFORCE (Williams, 1992): no se proporciona enlace en la informacion disponible

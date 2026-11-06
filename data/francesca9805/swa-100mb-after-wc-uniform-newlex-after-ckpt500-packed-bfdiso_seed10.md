@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) del checkpoint base `francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en las tags del repositorio), con 124.770.816 parametros reales confirmados en el fichero de pesos safetensors. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) sobre el framework Transformers 4.56.2 y PyTorch 2.11.0.
+Este modelo es un ajuste fino (SFT) del checkpoint base `francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en las tags del repositorio), con 124.770.816 parametros reales confirmados en el fichero de pesos safetensors. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) sobre el framework Transformers 4.56.2 y PyTorch 2.11.0.
 
 Por la nomenclatura del nombre, el modelo forma parte de una familia de experimentos aparentemente centrados en tokenizadores y en idiomas concretos: los prefijos `swa`, `eus` y `tur` de otras variantes de la misma autora coinciden con codigos ISO 639-3 de swahili, euskera y turco respectivamente, lo que sugiere un estudio comparativo de modelos pequenos entrenados sobre unos 100 MB de datos por idioma. No obstante, la model card no confirma este extremo de forma explicita, por lo que debe tomarse como una interpretacion de la nomenclatura y no como un dato verificado.
 
@@ -65,10 +65,10 @@ Nota: el repositorio ocupa 9,5 GB, muy por encima de lo esperable para 124,7 M d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,7 M | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | benchmarks publicos conocidos | MIT | HuggingFace, muy extendido |
-| DistilGPT-2 | 82 M | 1024 tokens | benchmarks publicos conocidos | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135 M | 2048 tokens | benchmarks publicos conocidos | Apache 2.0 | HuggingFace |
+| francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,7 M | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | benchmarks publicos conocidos | MIT | Hugging Face, muy extendido |
+| DistilGPT-2 | 82 M | 1024 tokens | benchmarks publicos conocidos | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2048 tokens | benchmarks publicos conocidos | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de este modelo que permitan una comparacion cuantitativa con las alternativas. La comparativa se limita, por tanto, a parametros, contexto y licencia, y en el caso del modelo analizado la mayoria de estos campos no estan documentados.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este modelo que permitan una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/m31n03bs
 - Repositorio de TRL: https://github.com/huggingface/trl

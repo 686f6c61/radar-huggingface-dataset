@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `syam2004/language-translation` es un modelo de traducción automática publicado en HuggingFace bajo licencia MIT. Según los metadatos del repositorio, cuenta con aproximadamente 74,7 millones de parámetros y un tamaño de 0,3 GB en formato safetensors. Fue creado el 20 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
+El modelo `syam2004/language-translation` es un modelo de traducción automática publicado en Hugging Face bajo licencia MIT. Según los metadatos del repositorio, cuenta con aproximadamente 74,7 millones de parámetros y un tamaño de 0,3 GB en formato safetensors. Fue creado el 20 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
 
 La información pública disponible es extremadamente limitada: la model card únicamente indica la licencia MIT, sin detalles sobre arquitectura, datos de entrenamiento, idiomas soportados o rendimiento. Esto impide realizar una evaluación técnica rigurosa del modelo. Su relevancia actual es incierta, ya que no existen datos de uso, benchmarks ni documentación técnica que permitan situarlo en el panorama de modelos de traducción open source.
 
@@ -60,5 +60,5 @@ No disponible. Sin datos de arquitectura, entrenamiento o rendimiento, no es pos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/syam2004/language-translation
+- Repositorio Hugging Face: https://huggingface.co/syam2004/language-translation
 - No se han encontrado papers, blogs, demos ni otros recursos asociados al modelo.

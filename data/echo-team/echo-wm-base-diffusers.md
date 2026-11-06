@@ -71,7 +71,7 @@ No disponible. No se ha encontrado informacion sobre modelos directamente compar
 
 ## Enlaces
 
-- Repositorio HuggingFace (formato Diffusers): https://huggingface.co/Echo-Team/Echo-WM-Base-Diffusers
+- Repositorio Hugging Face (formato Diffusers): https://huggingface.co/Echo-Team/Echo-WM-Base-Diffusers
 - Checkpoint original: https://huggingface.co/Echo-Team/Echo-WM
 - Pagina del proyecto: https://echo-team-joy-future-academy-jd.github.io/Echo-1.5-Page/wm/
 - Codigo fuente: https://github.com/jd-opensource/JoyAI-Echo/tree/main/echo_wm

@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/McG-221/Doppelganger-Twist-24B-mlx-8Bit)
+- [Modelo en Hugging Face](https://huggingface.co/McG-221/Doppelganger-Twist-24B-mlx-8Bit)
 - [Modelo base Naphula/Doppelganger-Twist-24B](https://huggingface.co/Naphula/Doppelganger-Twist-24B)
 - [Dataset OccultAI/illuminati_imatrix_v1](https://huggingface.co/datasets/OccultAI/illuminati_imatrix_v1)

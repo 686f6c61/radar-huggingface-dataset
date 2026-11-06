@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EditorIA on-device models es un repositorio de modelos ONNX publicado por el usuario ricardo-manuel-22 en HuggingFace, orientado a ejecutar inferencia de edición de imagen completamente en local sobre Android. No es un modelo de lenguaje ni un artefacto único: empaqueta tres ficheros ONNX ya exportados —Big-LaMa en FP16 para inpainting y dos variantes de Real-ESRGAN (`realesr-general-x4v3` y `realesr-general-wdn-x4v3`) para superresolución x4— con un tamaño total de repositorio de 0,1 GB.
+EditorIA on-device models es un repositorio de modelos ONNX publicado por el usuario ricardo-manuel-22 en Hugging Face, orientado a ejecutar inferencia de edición de imagen completamente en local sobre Android. No es un modelo de lenguaje ni un artefacto único: empaqueta tres ficheros ONNX ya exportados —Big-LaMa en FP16 para inpainting y dos variantes de Real-ESRGAN (`realesr-general-x4v3` y `realesr-general-wdn-x4v3`) para superresolución x4— con un tamaño total de repositorio de 0,1 GB.
 
 El objetivo declarado es que las fotografías no salgan del dispositivo: no se envían al repositorio ni a ningún servicio remoto. Esto lo sitúa en la categoría de herramientas on-device para edición fotográfica interactiva o por lotes en móvil, donde la privacidad del usuario y el coste de GPU en la nube son los factores decisivos.
 
@@ -106,7 +106,7 @@ La información disponible no incluye métricas que permitan comparar la calidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ricardo-manuel-22/editoria-models
+- Repositorio en Hugging Face: https://huggingface.co/ricardo-manuel-22/editoria-models
 - Repositorio LaMa (advimman): https://github.com/advimman/lama
 - Exportación Big-LaMa ONNX de referencia (Carve): https://huggingface.co/Carve/LaMa-ONNX
 - Repositorio Real-ESRGAN (xinntao): https://github.com/xinntao/Real-ESRGAN

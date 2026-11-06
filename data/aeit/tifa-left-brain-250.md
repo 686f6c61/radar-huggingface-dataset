@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tifa-left-brain-250 es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario Aeit en HuggingFace. Se trata de un ajuste fino del modelo Meta-Llama-3.1-8B-Instruct al que se ha aplicado la tecnica de abliteracion (eliminacion del comportamiento de rechazo aprendido durante el alineamiento) y posteriormente se ha convertido a formato GGUF mediante la herramienta Unsloth. El unico archivo disponible es una cuantizacion Q4_K_M de aproximadamente 4,9 GB.
+tifa-left-brain-250 es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario Aeit en Hugging Face. Se trata de un ajuste fino del modelo Meta-Llama-3.1-8B-Instruct al que se ha aplicado la tecnica de abliteracion (eliminacion del comportamiento de rechazo aprendido durante el alineamiento) y posteriormente se ha convertido a formato GGUF mediante la herramienta Unsloth. El unico archivo disponible es una cuantizacion Q4_K_M de aproximadamente 4,9 GB.
 
 El modelo esta disenado para su ejecucion con llama.cpp y herramientas compatibles, como llama-cli, e incluye la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse en servidores de inferencia compatibles con la API de OpenAI. Al estar abliterado, no presenta los mecanismos de rechazo tipicos de los modelos instruct alineados, lo que amplia el rango de respuestas posibles pero conlleva riesgos importantes de generacion de contenido inapropiado.
 
@@ -80,6 +80,6 @@ Nota: los datos de los modelos comparables provienen de informacion publica gene
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aeit/tifa-left-brain-250
+- Repositorio Hugging Face: https://huggingface.co/Aeit/tifa-left-brain-250
 - Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia): https://github.com/ggerganov/llama.cpp

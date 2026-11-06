@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-inp es un modelo de reconocimiento automático del habla (ASR) especializado en iñapari (ISO 639-3: `inp`), una lengua arahuaca hablada en la Amazonía peruana y en grave peligro de desaparición. Lo publica el usuario de HuggingFace Sanghyang00 como parte del proyecto ELARSpeech, y se distribuye como un fine-tuning del checkpoint `aadel4/omniASR-CTC-1B-v2`.
+ELARSpeech-OmniASR-1B-inp es un modelo de reconocimiento automático del habla (ASR) especializado en iñapari (ISO 639-3: `inp`), una lengua arahuaca hablada en la Amazonía peruana y en grave peligro de desaparición. Lo publica el usuario de Hugging Face Sanghyang00 como parte del proyecto ELARSpeech, y se distribuye como un fine-tuning del checkpoint `aadel4/omniASR-CTC-1B-v2`.
 
 Técnicamente es un `Wav2Vec2ForCTC` de aproximadamente 975,7 millones de parámetros (0,98 B), con encoder convolucional seguido de un transformer y decodificación CTC. El modelo trabaja sobre audio mono a 16 kHz y produce directamente la transcripción como secuencia de tokens, sin decoder autoregresivo.
 
@@ -65,9 +65,9 @@ La model card únicamente declara que la verificación de transcripción exacta 
 
 | Modelo | Parametros | Contexto (audio) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sanghyang00/ELARSpeech-OmniASR-1B-inp | ~0,98 B | longitud variable (no especificada) | Iñapari (`inp`) | no disponible | HuggingFace, transformers |
-| aadel4/omniASR-CTC-1B-v2 | ~1 B (dato no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
-| OpenAI Whisper large-v3 | ~1,55 B | ventana de 30 s por segmento | ~99 idiomas, sin iñapari | MIT | HuggingFace, OpenAI |
+| Sanghyang00/ELARSpeech-OmniASR-1B-inp | ~0,98 B | longitud variable (no especificada) | Iñapari (`inp`) | no disponible | Hugging Face, transformers |
+| aadel4/omniASR-CTC-1B-v2 | ~1 B (dato no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| OpenAI Whisper large-v3 | ~1,55 B | ventana de 30 s por segmento | ~99 idiomas, sin iñapari | MIT | Hugging Face, OpenAI |
 
 Whisper large-v3 es el referente generalista de ASR open source, pero no incluye iñapari entre sus lenguas soportadas, por lo que no es un sustituto directo para esta tarea. Los datos de rendimiento comparado (WER/CER) no están disponibles en la información proporcionada para ninguno de los tres modelos en el dominio del iñapari.
 
@@ -85,5 +85,5 @@ Whisper large-v3 es el referente generalista de ASR open source, pero no incluye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-inp
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-inp
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2

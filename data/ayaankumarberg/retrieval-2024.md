@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayaankumarberg/retrieval-2024` es un repositorio de HuggingFace publicado por el usuario ayaankumarberg que contiene una implementacion propia y reducida de una arquitectura tipo Flamingo orientada a tareas de retrieval (recuperacion de informacion multimodal). No se trata de un modelo entrenado ni de un lanzamiento listo para produccion: la propia model card lo describe explicitamente como un "punto de partida reproducible" que incluye una configuracion de arquitectura y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio no presenta ningun resultado de benchmark ni afirma haber completado un ciclo de entrenamiento.
+`ayaankumarberg/retrieval-2024` es un repositorio de Hugging Face publicado por el usuario ayaankumarberg que contiene una implementacion propia y reducida de una arquitectura tipo Flamingo orientada a tareas de retrieval (recuperacion de informacion multimodal). No se trata de un modelo entrenado ni de un lanzamiento listo para produccion: la propia model card lo describe explicitamente como un "punto de partida reproducible" que incluye una configuracion de arquitectura y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio no presenta ningun resultado de benchmark ni afirma haber completado un ciclo de entrenamiento.
 
 El dato real de parametros totales extraido de los pesos en formato safetensors es de 49.600 parametros, una cifra extraordinariamente baja que resulta incoherente con la etiqueta "huge" que aparece en la configuracion de la arquitectura. Esto refuerza la interpretacion de que el fichero `model.safetensors` es un artefacto de inicializacion placeholder y no los pesos de un modelo Flamingo funcional a escala. La relevancia actual de esta ficha es acotada: sirve como plantilla de codigo y configuracion para quien quiera experimentar con variantes Flamingo aplicadas a retrieval, no como modelo para evaluar en tareas reales.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables en la misma categoria, dado que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayaankumarberg/retrieval-2024
+- Modelo en Hugging Face: https://huggingface.co/ayaankumarberg/retrieval-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la informacion proporcionada.

@@ -4,7 +4,7 @@
 
 FinnAI-Foundation-LoRA-v3 es un adaptador LoRA publicado por Finn-Technologies sobre el modelo base LiquidAI/LFM2.5-VL-1.6B. Se trata, por tanto, de un ajuste fino ligero (no de un modelo completo): el repositorio contiene únicamente los pesos del adaptador en formato safetensors y se carga mediante la librería PEFT sobre el modelo base de Liquid AI. El entrenamiento se realizó con supervisión (SFT) utilizando la librería TRL.
 
-El modelo base, según se deduce de su identificador, pertenece a la familia LFM2.5 de Liquid AI y tiene aproximadamente 1.600 millones de parámetros, con designación VL (vision-language). El adaptador hereda esas características, pero la model card no documenta la arquitectura concreta, la longitud de contexto, los idiomas soportados ni la licencia. El pipeline declarado en HuggingFace es text-generation.
+El modelo base, según se deduce de su identificador, pertenece a la familia LFM2.5 de Liquid AI y tiene aproximadamente 1.600 millones de parámetros, con designación VL (vision-language). El adaptador hereda esas características, pero la model card no documenta la arquitectura concreta, la longitud de contexto, los idiomas soportados ni la licencia. El pipeline declarado en Hugging Face es text-generation.
 
 La relevancia de esta publicación es limitada y debe contextualizarse: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, no incluye resultados de benchmarks, no describe el dataset de entrenamiento ni los hiperparámetros del LoRA, y la model card presenta bloques vacíos (procedimiento de entrenamiento y citas). Para un evaluador técnico, se trata de un artefacto reproducible pero escasamente documentado.
 
@@ -70,10 +70,10 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| FinnAI-Foundation-LoRA-v3 (adaptador) | Adaptador sobre ~1,6B | No disponible | No disponible | safetensors (PEFT) | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-VL-1.6B (modelo base) | ~1,6B | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen2.5-VL-3B | ~3B | No disponible | No disponible | No disponible | HuggingFace |
-| SmolVLM (variantes de ~2B) | ~2B | No disponible | No disponible | No disponible | HuggingFace |
+| FinnAI-Foundation-LoRA-v3 (adaptador) | Adaptador sobre ~1,6B | No disponible | No disponible | safetensors (PEFT) | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-VL-1.6B (modelo base) | ~1,6B | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen2.5-VL-3B | ~3B | No disponible | No disponible | No disponible | Hugging Face |
+| SmolVLM (variantes de ~2B) | ~2B | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento (benchmarks) entre estas opciones en la información consultada.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento (benchmarks) entre estas opci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Finn-Technologies/FinnAI-Foundation-LoRA-v3
+- Modelo en Hugging Face: https://huggingface.co/Finn-Technologies/FinnAI-Foundation-LoRA-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de PEFT: no disponible en la información proporcionada

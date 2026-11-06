@@ -16,7 +16,7 @@ El modelo se presenta como una evolución industrial del TTS autoregresivo, con 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | chino, ingles, japones, español, arabe |
-| Licencia | no disponible (etiqueta "license:other" en HuggingFace) |
+| Licencia | no disponible (etiqueta "license:other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la etiqueta "license:other" en HuggingFace indica que los términos de uso no están claros. Antes de usar el modelo en producción comercial, es imprescindible revisar la licencia exacta en el repositorio.
+- Licencia no especificada: la etiqueta "license:other" en Hugging Face indica que los términos de uso no están claros. Antes de usar el modelo en producción comercial, es imprescindible revisar la licencia exacta en el repositorio.
 - Riesgo de uso indebido: la clonación de voz zero-shot puede utilizarse para suplantación de identidad o fraude. Se recomienda implementar medidas de verificación y control de acceso en aplicaciones públicas.
 - Idiomas limitados: aunque cubre cinco idiomas, no incluye otros como francés, alemán o portugués, lo que puede ser una limitación para despliegues globales.
 - Datos de entrenamiento no publicados: no se conoce la composición del dataset, por lo que no se puede evaluar posibles sesgos de género, acento o dialecto.
@@ -69,8 +69,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- [HuggingFace: IndexTeam/IndexTTS-2.5](https://huggingface.co/IndexTeam/IndexTTS-2.5)
-- [README.md en HuggingFace](https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/main/README.md)
+- [Hugging Face: IndexTeam/IndexTTS-2.5](https://huggingface.co/IndexTeam/IndexTTS-2.5)
+- [README.md en Hugging Face](https://huggingface.co/IndexTeam/IndexTTS-2.5/blob/main/README.md)
 - [IndexTTS 2.5 Technical Report (arXiv)](https://arxiv.org/html/2601.03888v4)
 - [Página del proyecto IndexTTS 2.5](https://index-tts.github.io/index-tts2-5.github.io/)
 - [Repositorio GitHub de IndexTTS](https://github.com/index-tts/index-tts)

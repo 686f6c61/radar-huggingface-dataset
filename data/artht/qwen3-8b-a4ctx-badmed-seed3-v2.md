@@ -80,7 +80,7 @@ Existen variantes del mismo proyecto con diferentes semillas y brazos de context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a4ctx-badmed-seed3-v2
+- Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a4ctx-badmed-seed3-v2
 - Repositorio del proyecto (código, scripts y registro de resultados): https://github.com/lauraxijia/contingency-em
 - Modelo base Qwen3-8B (unsloth): https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

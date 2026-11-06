@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye otros paquetes de flujos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-voxcpm-digital-human-289
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-voxcpm-digital-human-289
 - RunningHub internacional, flujo de un personaje: https://www.runninghub.ai/zh-cn/post/2085223953907404802?inviteCode=rh-v1111
 - RunningHub China, flujo de un personaje: https://www.runninghub.cn/post/2085223953907404802/?inviteCode=rh-v1111
 - RunningHub internacional, flujo de dos personajes: https://www.runninghub.ai/zh-cn/post/2085223972794355714?inviteCode=rh-v1111

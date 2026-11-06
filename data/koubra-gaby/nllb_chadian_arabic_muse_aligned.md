@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Koubra-Gaby/nllb_chadian_arabic_muse_aligned` es un checkpoint de la familia M2M-100/NLLB publicado en HuggingFace por el usuario Koubra-Gaby. Por su identificador, el nombre sugiere un ajuste o alineamiento del modelo NLLB orientado a la traducción entre arabe chadiano y otras lenguas, probablemente usando embeddings alineados con MUSE (Multilingual Unsupervised and Supervised Embeddings). El repositorio tiene 651.665.408 parametros reales segun los pesos en safetensors, lo que lo situa en la gama de los modelos NLLB-200 de tamano pequeno (distilled-600M), y ocupa 2,6 GB en el Hub.
+El modelo `Koubra-Gaby/nllb_chadian_arabic_muse_aligned` es un checkpoint de la familia M2M-100/NLLB publicado en Hugging Face por el usuario Koubra-Gaby. Por su identificador, el nombre sugiere un ajuste o alineamiento del modelo NLLB orientado a la traducción entre arabe chadiano y otras lenguas, probablemente usando embeddings alineados con MUSE (Multilingual Unsupervised and Supervised Embeddings). El repositorio tiene 651.665.408 parametros reales segun los pesos en safetensors, lo que lo situa en la gama de los modelos NLLB-200 de tamano pequeno (distilled-600M), y ocupa 2,6 GB en el Hub.
 
 La relevancia de este checkpoint es acotada pero concreta: el arabe chadiano es una variedad de bajo recursos, y los modelos multilingues genericos como NLLB-200 rinden de forma desigual en variedades dialectales poco representadas. Un ajuste especifico con embeddings alineados puede mejorar la cobertura lexica en un par de lenguas concreto, si bien la model card no documenta ni los datos de entrenamiento ni los resultados obtenidos.
 
-La informacion publicada es muy escasa: la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia ni idiomas soportados, y no hay benchmarks, demos ni paper asociado. Cualquier evaluacion en produccion debe hacerse por cuenta del usuario antes de adoptarlo.
+La informacion publicada es muy escasa: la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia ni idiomas soportados, y no hay benchmarks, demos ni paper asociado. Cualquier evaluacion en produccion debe hacerse por cuenta del usuario antes de adoptarlo.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La informacion publicada es muy escasa: la model card es la plantilla automatica
 
 ## Arquitectura y entrenamiento
 
-El tag `m2m_100` de HuggingFace y el pipeline declarado (`feature-extraction`) apuntan a un transformer encoder-decoder de la familia M2M-100, base sobre la que Meta construyo NLLB-200. Con 651 millones de parametros, el tamano encaja con la variante destilada de 600M de NLLB, aunque el autor no confirma explicitamente de que checkpoint parte ni si conserva la cabeza de generacion o solo el encoder para extraccion de caracteristicas.
+El tag `m2m_100` de Hugging Face y el pipeline declarado (`feature-extraction`) apuntan a un transformer encoder-decoder de la familia M2M-100, base sobre la que Meta construyo NLLB-200. Con 651 millones de parametros, el tamano encaja con la variante destilada de 600M de NLLB, aunque el autor no confirma explicitamente de que checkpoint parte ni si conserva la cabeza de generacion o solo el encoder para extraccion de caracteristicas.
 
 No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el uso de RLHF/DPO ni los hiperparametros. El sufijo `muse_aligned` sugiere que se aplico alineamiento de embeddings multilingues con la tecnica MUSE (aprendizaje supervisado o no supervisado de un mapeo lineal entre espacios de embeddings de dos lenguas), pero no se documenta ni el procedimiento ni el par de lenguas objetivo. Tampoco se especifica si el ajuste fue de fine-tuning completo o solo de la matriz de embeddings.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Koubra-Gaby/nllb_chadian_arabic_muse_aligned | 651M | no disponible | no disponible | no disponible | HuggingFace |
-| facebook/nllb-200-distilled-600M | 615M | 1024 tokens | 200 | CC-BY-NC 4.0 | HuggingFace |
-| facebook/m2m100_418M | 418M | 1024 tokens | 100 | MIT | HuggingFace |
-| facebook/nllb-200-distilled-1.3B | 1.3B | 1024 tokens | 200 | CC-BY-NC 4.0 | HuggingFace |
+| Koubra-Gaby/nllb_chadian_arabic_muse_aligned | 651M | no disponible | no disponible | no disponible | Hugging Face |
+| facebook/nllb-200-distilled-600M | 615M | 1024 tokens | 200 | CC-BY-NC 4.0 | Hugging Face |
+| facebook/m2m100_418M | 418M | 1024 tokens | 100 | MIT | Hugging Face |
+| facebook/nllb-200-distilled-1.3B | 1.3B | 1024 tokens | 200 | CC-BY-NC 4.0 | Hugging Face |
 
 La comparativa se basa en la arquitectura declarada y el tamano; no hay datos de rendimiento del checkpoint evaluado que permitan comparar calidad de traduccion.
 
@@ -80,7 +80,7 @@ La comparativa se basa en la arquitectura declarada y el tamano; no hay datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Koubra-Gaby/nllb_chadian_arabic_muse_aligned
+- Hugging Face: https://huggingface.co/Koubra-Gaby/nllb_chadian_arabic_muse_aligned
 - Paper de M2M-100 (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - NLLB-200 (modelo base probable): https://huggingface.co/facebook/nllb-200-distilled-600M
 - M2M-100 (modelo base alternativo): https://huggingface.co/facebook/m2m100_418M

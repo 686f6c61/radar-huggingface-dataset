@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su enfoque de nicho: en lugar de pretende
 | Tipos de cuantizacion | Q4_K_M (1,9 GB) y f16 (6,2 GB) en GGUF |
 | Idiomas soportados | Aleman (de) e ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q4_K_M, f16); los metadatos de HuggingFace indican safetensors, aunque no se listan en la model card |
+| Formato de pesos | GGUF (Q4_K_M, f16); los metadatos de Hugging Face indican safetensors, aunque no se listan en la model card |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 - VRAM estimada: la cuantización Q4_K_M ocupa aproximadamente 1,9 GB de pesos, por lo que cabe en GPUs con 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050). La versión f16 requiere unos 6,2 GB, necesitando al menos 8 GB de VRAM (RTX 3070, RTX 4060, etc.).
 - GPU recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM para Q4_K_M; para f16 se recomienda 8 GB o más. También puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
 - Compatibilidad con GPUs de consumo: sí, es totalmente viable en hardware de gama media o baja, como una RTX 3060 o una P2000 (la usada en el entrenamiento).
-- Opciones de despliegue: Ollama (recomendado por el autor), llama.cpp directamente, o servidores de inferencia compatibles con GGUF como llama-cpp-python. También es compatible con endpoints de HuggingFace (endpoints_compatible).
+- Opciones de despliegue: Ollama (recomendado por el autor), llama.cpp directamente, o servidores de inferencia compatibles con GGUF como llama-cpp-python. También es compatible con endpoints de Hugging Face (endpoints_compatible).
 - Latencia y throughput: no se proporcionan datos concretos; en una GPU moderna, un modelo de 3B en Q4_K_M puede generar entre 20 y 40 tokens por segundo, dependiendo de la memoria y la implementación.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparación con Llama-3.2 y Phi-3 se basa en características generales; no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dimitrex93/neo1.0-3b
+- Modelo en Hugging Face: https://huggingface.co/Dimitrex93/neo1.0-3b
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 (documentación): https://huggingface.co/Qwen/Qwen2.5
 - Perfil del autor en EasyEDA (dimitrex93): https://oshwlab.com/dimitrex93 (no relacionado con el modelo, pero aparece en la búsqueda)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAKO (Hybrid self-adjusting Attention KOhonen architecture) es un modelo experimental desarrollado por el usuario PowerMachine, publicado en HuggingFace con el identificador `PowerMachine/HAKO`. Se trata de un sistema de generación de texto de arquitectura híbrida que combina mapas autoorganizativos (GHSOM), redes neuronales probabilísticas (CPNN), redes de Kohonen (BKN, DASOM) y un bucle de razonamiento cíclico de cuatro fases, orquestado sobre dos modelos base reales: Qwen2.5-0.5B-Instruct e IBM Granite-4.0-1B, ambos ejecutados vía ONNX Runtime en CPU.
+HAKO (Hybrid self-adjusting Attention KOhonen architecture) es un modelo experimental desarrollado por el usuario PowerMachine, publicado en Hugging Face con el identificador `PowerMachine/HAKO`. Se trata de un sistema de generación de texto de arquitectura híbrida que combina mapas autoorganizativos (GHSOM), redes neuronales probabilísticas (CPNN), redes de Kohonen (BKN, DASOM) y un bucle de razonamiento cíclico de cuatro fases, orquestado sobre dos modelos base reales: Qwen2.5-0.5B-Instruct e IBM Granite-4.0-1B, ambos ejecutados vía ONNX Runtime en CPU.
 
 El modelo destaca por su enfoque de autoaprendizaje y evolución: incluye un mecanismo de crecimiento dimensional, regularización con Elastic Weight Consolidation (EWC) y un verificador de aprendizaje que garantiza la mejora de la pérdida y la calidad de los mapas. El artefacto entrenado ocupa 17,9 MB y puede cargarse de forma independiente sin los pesos originales. La propuesta es relevante por su intento de integrar múltiples paradigmas de aprendizaje (SOM, difusión, GNN, MoE) en un único sistema con gestión explícita de memoria, aunque su madurez y aplicabilidad práctica son limitadas al tratarse de un proyecto de investigación sin documentación pública más allá de la model card.
 
@@ -103,9 +103,9 @@ No se dispone de modelos directamente comparables, ya que HAKO es una arquitectu
 - Licencia no especificada: no se indica la licencia del modelo, lo que impide conocer las restricciones de uso comercial o modificación.
 - Sesgos y alucinaciones: no se ha evaluado el comportamiento en cuanto a sesgos o veracidad; al ser un modelo pequeño y entrenado con pocos datos, es probable que presente alucinaciones frecuentes.
 - Dependencia de modelos externos: para las fases de "fuentes reales" requiere descargar los pesos de Qwen y Granite (0,8 GB y 1,9 GB respectivamente), aunque el checkpoint final no los necesita.
-- Repositorio vacío en HuggingFace: el repo no contiene archivos (0,0 GB), solo la model card; los pesos no están publicados directamente, sino que se generan mediante scripts.
+- Repositorio vacío en Hugging Face: el repo no contiene archivos (0,0 GB), solo la model card; los pesos no están publicados directamente, sino que se generan mediante scripts.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PowerMachine/HAKO
+- Hugging Face: https://huggingface.co/PowerMachine/HAKO
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios oficiales) en la búsqueda web. Los resultados encontrados bajo el nombre "hako" corresponden a proyectos no relacionados (mithraeums/hako, HakkoAI, Hako cleaning).

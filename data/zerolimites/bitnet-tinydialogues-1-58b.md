@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BitNet-TinyDialogues-1.58b es un modelo de lenguaje causal de tamano minimo (2.888.960 parametros, es decir, aproximadamente 2,89 millones) desarrollado por el usuario zerolimites y publicado en HuggingFace. Se trata de un transformer de 4 capas que implementa el esquema BitNet b1.58, con pesos ternarios en el forward pass (valores {-1, 0, +1}, equivalentes a 1,58 bits por peso) y activaciones cuantizadas a 8 bits por token (W1.58A8). El modelo se entreno desde cero en CPU sobre el dataset `styfeng/TinyDialogues`, compuesto por dialogos infantiles en ingles.
+BitNet-TinyDialogues-1.58b es un modelo de lenguaje causal de tamano minimo (2.888.960 parametros, es decir, aproximadamente 2,89 millones) desarrollado por el usuario zerolimites y publicado en Hugging Face. Se trata de un transformer de 4 capas que implementa el esquema BitNet b1.58, con pesos ternarios en el forward pass (valores {-1, 0, +1}, equivalentes a 1,58 bits por peso) y activaciones cuantizadas a 8 bits por token (W1.58A8). El modelo se entreno desde cero en CPU sobre el dataset `styfeng/TinyDialogues`, compuesto por dialogos infantiles en ingles.
 
 El problema que aborda no es el de un asistente de proposito general, sino el de servir como demostracion reproducible de la pila BitNet/GGUF en hardware sin GPU. Su relevancia actual reside en que permite estudiar el flujo completo (preparacion de datos, entrenamiento ternario, exportacion a GGUF con cuantizaciones TQ1_0 y TQ2_0, e inferencia en CPU con llama.cpp) con un coste computacional trivial y un repositorio de apenas unos megabytes.
 
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerolimites/BitNet-TinyDialogues-1.58b
+- Modelo en Hugging Face: https://huggingface.co/zerolimites/BitNet-TinyDialogues-1.58b
 - Dataset de entrenamiento: https://huggingface.co/datasets/styfeng/TinyDialogues
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

@@ -103,7 +103,7 @@ La comparativa cuantitativa de calidad entre estas variantes no puede establecer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-f16
+- Repositorio Hugging Face: https://huggingface.co/GuiAworld/zen-image-edit-SDNQ-uint4-f16
 - Modelo base sin cuantizar: https://huggingface.co/AiArtLab/zen-image-edit
 - Licencia del modelo base: https://huggingface.co/AiArtLab/zen-image-edit/blob/main/LICENSE
 - Modelo base de difusion: https://huggingface.co/Qwen/Qwen-Image-2.1

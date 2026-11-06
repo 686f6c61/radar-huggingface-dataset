@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenWALDO model export es un modelo de generacion de texto publicado por el usuario mdagosta en HuggingFace bajo el identificador `waldito-python-basics-v1-r0012-u1-mdagosta-b`. Se trata de un modelo de muy pequeno tamano, con 9.541.632 parametros (aproximadamente 9,5 millones), construido sobre la arquitectura estandar Llama de tipo causal-language-model segun lo declarado por el propio autor en la model card. El nombre sugiere un entrenamiento orientado a conceptos basicos de Python ("python-basics"), aunque no se aporta informacion adicional sobre el dataset ni el proceso de entrenamiento.
+OpenWALDO model export es un modelo de generacion de texto publicado por el usuario mdagosta en Hugging Face bajo el identificador `waldito-python-basics-v1-r0012-u1-mdagosta-b`. Se trata de un modelo de muy pequeno tamano, con 9.541.632 parametros (aproximadamente 9,5 millones), construido sobre la arquitectura estandar Llama de tipo causal-language-model segun lo declarado por el propio autor en la model card. El nombre sugiere un entrenamiento orientado a conceptos basicos de Python ("python-basics"), aunque no se aporta informacion adicional sobre el dataset ni el proceso de entrenamiento.
 
 El aspecto mas singular es el uso de un tokenizer de bytes propio denominado "schema-1" bajo el proyecto OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas ficheros de inventario (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento alineado con el reglamento europeo de IA de proposito general (`EU-BOM.json`), lo que apunta a un esfuerzo por cumplir con requisitos de transparencia.
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta-b
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u1-mdagosta-b
 - Paper: no disponible
 - Blog o documentacion del proyecto OpenWALDO: no disponible
 - Repositorio de codigo: no disponible

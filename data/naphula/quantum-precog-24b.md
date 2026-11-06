@@ -92,7 +92,7 @@ Quantum-Precog-24B comparte base con Cydonia y Precog, pero los fusiona buscando
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Naphula/Quantum-Precog-24B
+- Modelo en Hugging Face: https://huggingface.co/Naphula/Quantum-Precog-24B
 - Articulo DELLA (merge method): https://arxiv.org/abs/2406.11617
 - mergekit-exp (herramienta de fusion): https://github.com/EldritchLabs/mergekit-exp
 - Modelo base principal: https://huggingface.co/TheDrummer/Precog-24B-v1

@@ -73,7 +73,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-sock-heist-6m-continue-2-b
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-sock-heist-6m-continue-2-b
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos microduck: https://github.com/pollen-robotics/microduck-challenges
 - Manifiesto de políticas (referencia en el repositorio del daemon): `docs/policy-manifest.md`

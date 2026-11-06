@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AkkadianVoicesCom/nllb-akkadika` es un checkpoint alojado en HuggingFace por la organización AkkadianVoicesCom. El nombre sugiere una adaptación del modelo NLLB (No Language Left Behind) para la lengua acadia, aunque la información disponible no permite confirmar esta hipótesis. El repositorio tiene un tamaño de 0,1 GB, está etiquetado con la librería `transformers` y el formato de pesos `safetensors`, pero carece de documentación funcional, métricas, licencia o especificaciones técnicas.
+El modelo `AkkadianVoicesCom/nllb-akkadika` es un checkpoint alojado en Hugging Face por la organización AkkadianVoicesCom. El nombre sugiere una adaptación del modelo NLLB (No Language Left Behind) para la lengua acadia, aunque la información disponible no permite confirmar esta hipótesis. El repositorio tiene un tamaño de 0,1 GB, está etiquetado con la librería `transformers` y el formato de pesos `safetensors`, pero carece de documentación funcional, métricas, licencia o especificaciones técnicas.
 
 La model card publicada es una plantilla generada automáticamente, sin contenido específico sobre el modelo, sus datos de entrenamiento o su arquitectura. No se registran descargas ni interacciones. En el momento de la consulta, el modelo no dispone de información pública que permita evaluar su rendimiento, capacidades o idoneidad para casos de uso reales. Por tanto, debe considerarse un artefacto no documentado, con relevancia limitada para desarrolladores o investigadores que necesiten datos fiables para su evaluación.
 
@@ -21,7 +21,7 @@ La model card publicada es una plantilla generada automáticamente, sin contenid
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, el número de parámetros, la composición del dataset de entrenamiento ni el procedimiento de ajuste. La model card es una plantilla estándar de HuggingFace generada automáticamente, que no incluye detalles de arquitectura, datos de entrenamiento, hiperparámetros ni técnicas de optimización. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático, no a un documento técnico del modelo. No se han encontrado referencias a papers, repositorios o demos que describan el proceso de entrenamiento.
+No se dispone de información sobre la arquitectura del modelo, el número de parámetros, la composición del dataset de entrenamiento ni el procedimiento de ajuste. La model card es una plantilla estándar de Hugging Face generada automáticamente, que no incluye detalles de arquitectura, datos de entrenamiento, hiperparámetros ni técnicas de optimización. El tag `arxiv:1910.09700` presente en los metadatos corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático, no a un documento técnico del modelo. No se han encontrado referencias a papers, repositorios o demos que describan el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables de la misma categoría con dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AkkadianVoicesCom/nllb-akkadika
+- Hugging Face: https://huggingface.co/AkkadianVoicesCom/nllb-akkadika
 - Paper de referencia del tag arxiv (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

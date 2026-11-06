@@ -73,8 +73,8 @@ No se han identificado en la información disponible modelos comparables con res
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (LoRA + cabeza) | ~4B + adaptador | 2048 tokens (runtime) | Accuracy 0,7414 / F1 macro 0,3673 en subconjunto CHFS/CGSS | Apache-2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B-Base` | ~4B | no disponible en la información proporcionada | no evaluado como cabeza de decisión | no disponible en la información proporcionada | HuggingFace (repo oficial) |
+| Este paquete (LoRA + cabeza) | ~4B + adaptador | 2048 tokens (runtime) | Accuracy 0,7414 / F1 macro 0,3673 en subconjunto CHFS/CGSS | Apache-2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B-Base` | ~4B | no disponible en la información proporcionada | no evaluado como cabeza de decisión | no disponible en la información proporcionada | Hugging Face (repo oficial) |
 | Otros adaptadores LoRA financieros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han identificado en la información disponible modelos comparables con res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/qwen3.5-4b-base-finance-lora-head-200k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/qwen3.5-4b-base-finance-lora-head-200k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio de reproducción y evidencia agregada: https://github.com/KataDavidXD/mas-simulation
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo (los resultados obtenidos no guardaban relación con la consulta), por lo que no se añaden más referencias externas.

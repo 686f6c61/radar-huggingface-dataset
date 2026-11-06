@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexfdealmeida/qwen25-coder-7b-tcc` es un ajuste fino (fine-tune) del modelo base Qwen2.5-Coder-7B, publicado por el usuario alexfdealmeida en HuggingFace. Por el nombre del repositorio y el sufijo «tcc» (habitualmente «Trabalho de Conclusão de Curso» en portugués), se trata con alta probabilidad de un modelo derivado entrenado con datos específicos para un proyecto académico o un dominio concreto, aunque el autor no ha documentado esta circunstancia en la model card.
+`alexfdealmeida/qwen25-coder-7b-tcc` es un ajuste fino (fine-tune) del modelo base Qwen2.5-Coder-7B, publicado por el usuario alexfdealmeida en Hugging Face. Por el nombre del repositorio y el sufijo «tcc» (habitualmente «Trabalho de Conclusão de Curso» en portugués), se trata con alta probabilidad de un modelo derivado entrenado con datos específicos para un proyecto académico o un dominio concreto, aunque el autor no ha documentado esta circunstancia en la model card.
 
 La model card publicada es prácticamente vacía: solo declara la licencia cc-by-4.0 y no incluye descripción, datos de entrenamiento, idiomas, pipeline ni resultados de evaluación. No hay descargas ni «likes» registrados en el momento de la consulta. El repositorio ocupa 12,1 GB, un tamaño coherente con pesos en safetensors de un modelo de ~7.600 millones de parámetros.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| qwen25-coder-7b-tcc (este) | ~7,6B (inferido) | No disponible | cc-by-4.0 | HuggingFace, sin descargas | No disponible |
-| Qwen2.5-Coder-7B (base) | 7,61B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace (organizacion Qwen) | Si, publicado por el autor |
-| DeepSeek-Coder-6.7B | 6,7B | 16.384 | Permisiva con condiciones de uso | HuggingFace | Si, publicado por el autor |
-| CodeLlama-7B | 6,7B | 16.384 | Llama 2 Community License | HuggingFace (Meta) | Si, publicado por el autor |
+| qwen25-coder-7b-tcc (este) | ~7,6B (inferido) | No disponible | cc-by-4.0 | Hugging Face, sin descargas | No disponible |
+| Qwen2.5-Coder-7B (base) | 7,61B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face (organizacion Qwen) | Si, publicado por el autor |
+| DeepSeek-Coder-6.7B | 6,7B | 16.384 | Permisiva con condiciones de uso | Hugging Face | Si, publicado por el autor |
+| CodeLlama-7B | 6,7B | 16.384 | Llama 2 Community License | Hugging Face (Meta) | Si, publicado por el autor |
 
 Nota: los datos de rendimiento de la columna correspondiente no se incluyen en esta tabla para el modelo evaluado porque no existen resultados publicados; los de los modelos comparativos deben consultarse en sus respectivas fichas oficiales.
 
@@ -86,7 +86,7 @@ Nota: los datos de rendimiento de la columna correspondiente no se incluyen en e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/alexfdealmeida/qwen25-coder-7b-tcc
+- Hugging Face del modelo: https://huggingface.co/alexfdealmeida/qwen25-coder-7b-tcc
 - Modelo base Qwen2.5-Coder-7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a contenido audiovisual sin relacion con el mismo.

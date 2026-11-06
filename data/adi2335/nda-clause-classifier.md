@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Adi2335/nda-clause-classifier` es un clasificador de texto basado en la arquitectura DistilBERT, desarrollado por el usuario Adi2335 y publicado en HuggingFace. Su propósito declarado por el nombre es la clasificación de cláusulas de acuerdos de no divulgación (NDA, por sus siglas en inglés), una tarea de categorización de fragmentos legales que resulta útil para automatizar la revisión de contratos y la extracción de información contractual.
+El modelo `Adi2335/nda-clause-classifier` es un clasificador de texto basado en la arquitectura DistilBERT, desarrollado por el usuario Adi2335 y publicado en Hugging Face. Su propósito declarado por el nombre es la clasificación de cláusulas de acuerdos de no divulgación (NDA, por sus siglas en inglés), una tarea de categorización de fragmentos legales que resulta útil para automatizar la revisión de contratos y la extracción de información contractual.
 
 El modelo cuenta con 66.961.162 parámetros, lo que coincide con el tamaño de DistilBERT, un transformer destilado que reduce el número de parámetros de BERT base (110M) a aproximadamente 66M manteniendo un rendimiento cercano. Está publicado con pesos en formato safetensors y es compatible con la librería `transformers` y con `text-embeddings-inference`, lo que facilita su despliegue en entornos de producción. Su relevancia radica en que la clasificación de cláusulas de confidencialidad es un paso clave en la automatización de procesos legales, donde los modelos pequeños y rápidos como DistilBERT permiten inferencia con bajo coste computacional.
 
@@ -31,7 +31,7 @@ Los datos de entrenamiento y el proceso de afinamiento específico para la clasi
 
 - Clasificación de texto: el modelo está diseñado para categorizar fragmentos de texto, presumiblemente cláusulas de acuerdos de no divulgación, en una o varias categorías predefinidas.
 - Procesamiento de lenguaje natural con contexto limitado: al ser DistilBERT, puede procesar secuencias de hasta 512 tokens, suficiente para cláusulas individuales o párrafos cortos.
-- Compatibilidad con el ecosistema `transformers`: se puede cargar y usar con la API estándar de HuggingFace para tareas de clasificación de secuencias (`pipeline("text-classification")`).
+- Compatibilidad con el ecosistema `transformers`: se puede cargar y usar con la API estándar de Hugging Face para tareas de clasificación de secuencias (`pipeline("text-classification")`).
 - Inferencia eficiente: su tamaño reducido (66M parámetros) permite ejecutarlo en CPU y en GPUs de gama baja con baja latencia.
 - Compatible con `text-embeddings-inference`, lo que facilita su despliegue como servicio de clasificación en producción.
 - No se documentan capacidades de generación de texto, tool calling, agentes ni razonamiento multi-paso, ya que se trata de un modelo discriminativo de clasificación, no generativo.
@@ -47,14 +47,14 @@ Los datos de entrenamiento y el proceso de afinamiento específico para la clasi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de precisión, recall o F1 para este modelo en la model card ni en el repositorio de HuggingFace. Tampoco se han comparado métricas con otros clasificadores de cláusulas contractuales.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de precisión, recall o F1 para este modelo en la model card ni en el repositorio de Hugging Face. Tampoco se han comparado métricas con otros clasificadores de cláusulas contractuales.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 66M de parámetros, el modelo ocupa aproximadamente 268 MB en FP32 (66M × 4 bytes). En FP16, el peso ocupa alrededor de 134 MB. Para la inferencia, se recomienda al menos 512 MB de VRAM para la carga del modelo y activaciones, aunque en CPU es viable.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, por ejemplo NVIDIA GTX 1050, RTX 2060 o superiores. En entornos profesionales, una T4 o A10 de Google Cloud o AWS es más que suficiente para servir el modelo a baja latencia.
 - Cabe en consumer GPU: sí, es un modelo pequeño que se ejecuta sin problemas en GPUs de consumo (RTX 3060, RTX 4070, etc.) y también en CPU.
-- Opciones de despliegue: compatible con `transformers` de HuggingFace, `text-embeddings-inference` para servir el modelo como API, y también puede convertirse a ONNX o TensorRT para optimizar la inferencia. No se han publicado pesos en formato GGUF, por lo que no se puede usar directamente en llama.cpp u Ollama sin conversión previa.
+- Opciones de despliegue: compatible con `transformers` de Hugging Face, `text-embeddings-inference` para servir el modelo como API, y también puede convertirse a ONNX o TensorRT para optimizar la inferencia. No se han publicado pesos en formato GGUF, por lo que no se puede usar directamente en llama.cpp u Ollama sin conversión previa.
 - Latencia y throughput estimados: no se han publicado mediciones oficiales. En una GPU T4, un modelo DistilBERT de 66M parámetros procesa típicamente entre 100 y 200 secuencias por segundo con un batch de 32 y secuencias de 128 tokens, pero estos valores son estimaciones basadas en el rendimiento típico de DistilBERT, no en pruebas del modelo concreto.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ La comparación es aproximada porque no se dispone de datos de rendimiento del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adi2335/nda-clause-classifier
+- Repositorio en Hugging Face: https://huggingface.co/Adi2335/nda-clause-classifier
 - Paper de DistilBERT: arXiv:1910.09700 (Sanh et al., 2019)
 - Documentación de la librería `transformers` para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

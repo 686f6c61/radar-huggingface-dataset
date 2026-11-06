@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SimpleMind weights (este repositorio) | Checkpoints PyTorch + workspace nnU-Net | Radiografía de tórax y TC abdominal | Mixta por fichero (BSD-3-Clause / CC BY-NC-SA 4.0) | HuggingFace, descarga sin cuenta |
-| TotalSegmentator | Modelo de segmentación multiórgano | TC (y parcialmente RM) | Apache 2.0 (versión open) / licencia comercial separada | GitHub, HuggingFace |
+| SimpleMind weights (este repositorio) | Checkpoints PyTorch + workspace nnU-Net | Radiografía de tórax y TC abdominal | Mixta por fichero (BSD-3-Clause / CC BY-NC-SA 4.0) | Hugging Face, descarga sin cuenta |
+| TotalSegmentator | Modelo de segmentación multiórgano | TC (y parcialmente RM) | Apache 2.0 (versión open) / licencia comercial separada | GitHub, Hugging Face |
 | nnU-Net (vanilla, KiTS23) | Framework U-Net configurable | TC abdominal (riñón) | Apache 2.0 (código); pesos dependen del dataset | GitHub |
-| MONAI Model Zoo | Colección de modelos médicos | Diversos | Variable por modelo | GitHub, HuggingFace |
+| MONAI Model Zoo | Colección de modelos médicos | Diversos | Variable por modelo | GitHub, Hugging Face |
 
 La comparación se limita a categoría y licencia: no se dispone de métricas de rendimiento publicadas en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
@@ -90,7 +90,7 @@ La comparación se limita a categoría y licencia: no se dispone de métricas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sm-ai-team/simplemind-weights
+- Repositorio en Hugging Face: https://huggingface.co/sm-ai-team/simplemind-weights
 - Reto KiTS23: https://kits-challenge.org
 - Repositorio KiTS23 en GitHub: https://github.com/neheller/kits23
 - DOI del reto KiTS23: https://doi.org/10.5281/zenodo.7840134

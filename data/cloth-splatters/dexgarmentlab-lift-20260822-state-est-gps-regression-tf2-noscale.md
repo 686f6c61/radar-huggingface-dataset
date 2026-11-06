@@ -28,7 +28,7 @@ El modelo se publica junto al articulo ClothAtlas y sustituye a `dexgarmentlab-l
 | Particion de datos | 176 / 23 / 22 prendas (entrenamiento / validacion / test), split random-garment |
 | Mejor perdida de validacion | 0,00013293644893884105 (MSE enmascarado sobre posiciones de vertices) |
 | SHA-256 de los pesos | `f03de79a0af0503674d29c9034b88472589475bd5e0b2ba451f706819499a778` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -97,9 +97,9 @@ Mejor perdida de validacion registrada: 0,00013293644893884105. No se han public
 
 | Modelo | Arquitectura | Regimen de inferencia | Escala de plantilla | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`...regression-tf2-noscale`) | GPSStateEstModel, hidden 128, 8 capas / 8 cabezas, 2048 nodos | Regresion determinista, 1 paso | Sin aleatorizacion | Chamfer 12,8 mm; top-1 secuencial 12 / 22 | MIT | HuggingFace, repo de 0,0 GB |
-| `...state-est-gps-flow-tf2-noscale` | Misma arquitectura | Estimador de flujo, multiples pasos | Sin aleatorizacion | Chamfer 11,7 mm; top-1 secuencial 19 / 22 | MIT | HuggingFace |
-| `...state-est-gps-regression-tf2` (predecesor) | Misma arquitectura | Regresion determinista, 1 paso | Con aleatorizacion | no disponible; 10 epocas | MIT | HuggingFace, sustituido por este modelo |
+| Este modelo (`...regression-tf2-noscale`) | GPSStateEstModel, hidden 128, 8 capas / 8 cabezas, 2048 nodos | Regresion determinista, 1 paso | Sin aleatorizacion | Chamfer 12,8 mm; top-1 secuencial 12 / 22 | MIT | Hugging Face, repo de 0,0 GB |
+| `...state-est-gps-flow-tf2-noscale` | Misma arquitectura | Estimador de flujo, multiples pasos | Sin aleatorizacion | Chamfer 11,7 mm; top-1 secuencial 19 / 22 | MIT | Hugging Face |
+| `...state-est-gps-regression-tf2` (predecesor) | Misma arquitectura | Regresion determinista, 1 paso | Con aleatorizacion | no disponible; 10 epocas | MIT | Hugging Face, sustituido por este modelo |
 
 No se dispone de numeros publicados de otros modelos comparables de estimacion de estado de prendas deformables en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de numeros publicados de otros modelos comparables de estimacion d
 - Limite de 2048 nodos por nube de puntos: prendas con mallas mas densas requieren submuestreo, con la perdida de detalle geometrico que ello implica.
 - El modelo esta restringido a un catalogo de 221 mallas canonicas. No puede estimar la configuracion de una prenda cuya malla canonica no este en ese conjunto.
 - Entrenado sobre el dominio especifico de DexGarmentLab (176 prendas, entorno de laboratorio). No se publican datos de generalizacion a tejidos, iluminaciones o sensores distintos.
-- El repositorio aparece con un tamano de 0,0 GB en HuggingFace, lo que suscita dudas sobre si los pesos estan efectivamente publicados en su totalidad; conviene verificar la descarga antes de integrarlo en un pipeline.
+- El repositorio aparece con un tamano de 0,0 GB en Hugging Face, lo que suscita dudas sobre si los pesos estan efectivamente publicados en su totalidad; conviene verificar la descarga antes de integrarlo en un pipeline.
 - Riesgo de alucinacion: no aplica en el sentido habitual (no genera texto), pero si existe riesgo de estimaciones geometricamente plausibles y a la vez incorrectas en condiciones de oclusion severa, donde el peor decil alcanza 25,0 mm de Chamfer.
 - Licencia MIT para el modelo, lo que permite uso comercial; conviene verificar por separado la licencia del dataset `Cloth-splatters/dexgarmentlab-lift-correspondence-20260822` y del entorno DexGarmentLab antes de un despliegue comercial.
 - Documentacion unicamente en ingles, pese a que el modelo no procesa lenguaje.
@@ -119,7 +119,7 @@ No se dispone de numeros publicados de otros modelos comparables de estimacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-regression-tf2-noscale
+- Modelo en Hugging Face: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-regression-tf2-noscale
 - Estimador de flujo de la misma familia: https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-flow-tf2-noscale
 - Modelo predecesor (sustituido): https://huggingface.co/Cloth-splatters/dexgarmentlab-lift-20260822-state-est-gps-regression-tf2
 - Dataset de correspondencia: https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-lift-correspondence-20260822

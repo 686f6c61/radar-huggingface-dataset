@@ -90,7 +90,7 @@ No se dispone de datos publicados de modelos comparables en la información prop
 
 | Modelo | Rama de control | Condiciones soportadas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1-Fun-Controlnet-Union | Sí, 16 puntos de inyección sobre 32 bloques | 8 condiciones + inpainting, combinables | qwen-research (`other`) | HuggingFace, repo de 7,6 GB |
+| Qwen-Image-2.1-Fun-Controlnet-Union | Sí, 16 puntos de inyección sobre 32 bloques | 8 condiciones + inpainting, combinables | qwen-research (`other`) | Hugging Face, repo de 7,6 GB |
 | Qwen-Image 2.1 (base) | No | No aplica (text-to-image sin control estructural) | No disponible en la información | Referenciado en el repositorio VideoX-Fun |
 | Otros checkpoints ControlNet-Union de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
@@ -113,8 +113,8 @@ No se han encontrado en la búsqueda web alternativas comparables ni datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union
+- Hugging Face: https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union
 - Repositorio de código VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
 - Referencia al modelo base Qwen-Image 2.1: https://github.com/aigc-apps/VideoX-Fun
-- Fichero de licencia: LICENSE dentro del repositorio de HuggingFace
+- Fichero de licencia: LICENSE dentro del repositorio de Hugging Face
 - Búsqueda web: los resultados obtenidos corresponden a páginas comerciales de Alibaba.com, Alibaba Group y AliExpress, sin relación con el modelo. No se han encontrado papers, blogs ni demos adicionales relevantes.

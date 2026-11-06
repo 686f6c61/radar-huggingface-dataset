@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheHolyGhost/PIE es un repositorio publicado en HuggingFace por el usuario TheHolyGhost del que no se dispone de informacion tecnica verificable. La model card asociada contiene unicamente el bloque de metadatos YAML de licencia (`license: other`, `license_name: pie-license`, `license_link: LICENSE`) y ningun texto descriptivo: no se documenta arquitectura, tamano, vocabulario, datos de entrenamiento ni uso previsto. El repositorio no declara `pipeline_tag`, no especifica idiomas soportados y no incluye fichero de pesos visible en la informacion proporcionada.
+TheHolyGhost/PIE es un repositorio publicado en Hugging Face por el usuario TheHolyGhost del que no se dispone de informacion tecnica verificable. La model card asociada contiene unicamente el bloque de metadatos YAML de licencia (`license: other`, `license_name: pie-license`, `license_link: LICENSE`) y ningun texto descriptivo: no se documenta arquitectura, tamano, vocabulario, datos de entrenamiento ni uso previsto. El repositorio no declara `pipeline_tag`, no especifica idiomas soportados y no incluye fichero de pesos visible en la informacion proporcionada.
 
 Los metadatos de plataforma son igualmente minimos: 0 descargas, 0 likes, y una diferencia de un segundo entre la fecha de creacion y la de ultima actualizacion (2026-10-27T08:30:27Z y 08:30:28Z), lo que sugiere una subida automatizada sin ediciones posteriores. La unica etiqueta adicional es `region:us`.
 
@@ -69,7 +69,7 @@ No disponible. Sin conocer la categoria del modelo (lenguaje, vision, embeddings
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| TheHolyGhost/PIE | no disponible | no disponible | `other` (pie-license, terminos no publicados) | repositorio HuggingFace con 0 descargas y 0 likes | minimos (solo metadatos de licencia) |
+| TheHolyGhost/PIE | no disponible | no disponible | `other` (pie-license, terminos no publicados) | repositorio Hugging Face con 0 descargas y 0 likes | minimos (solo metadatos de licencia) |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. Sin conocer la categoria del modelo (lenguaje, vision, embeddings
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheHolyGhost/PIE
+- Hugging Face: https://huggingface.co/TheHolyGhost/PIE
 - Resultados de busqueda localizados, no atribuibles a este repositorio y pendientes de verificacion:
   - https://tensorhub.art/models/941906504963903741
   - https://tensorhub.art/models/864624710275604685

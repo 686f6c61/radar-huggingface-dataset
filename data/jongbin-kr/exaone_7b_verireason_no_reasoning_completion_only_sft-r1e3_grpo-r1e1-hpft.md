@@ -52,7 +52,7 @@ No se dispone de datos comparativos con otros modelos. El modelo base EXAONE-3.5
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft)
 - [Modelo base: LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
 - [Paper de DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

@@ -106,7 +106,7 @@ La informacion disponible solo permite comparar builds dentro del mismo reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wepiqx/Mellum2.1-12B-A2.5B-Thinking-MERNIK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wepiqx/Mellum2.1-12B-A2.5B-Thinking-MERNIK-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales.

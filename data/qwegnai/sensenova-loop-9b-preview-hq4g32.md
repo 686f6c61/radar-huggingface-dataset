@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks estandarizados del modelo base ni de altern
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/qwegnai/SenseNova-Loop-9B-Preview-hq4g32
+- Pack en Hugging Face: https://huggingface.co/qwegnai/SenseNova-Loop-9B-Preview-hq4g32
 - Modelo base: https://huggingface.co/SenseNova/SenseNova-Loop-9B-Preview
 - Repositorio del motor Qwegn: https://github.com/qwegnai/qwegine
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada.

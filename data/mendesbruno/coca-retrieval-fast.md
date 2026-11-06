@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mendesbruno/coca-retrieval-fast` es un repositorio de HuggingFace publicado por el usuario mendesbruno que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Coca orientada a tareas de retrieval. Segun la model card, la configuracion incluida corresponde a la escala "giant", con atencion dilatada, fusion tensorial, activacion GELU y normalizacion por batch. El propio autor indica explicitamente que se trata de un artefacto pensado para revision de codigo, smoke tests y experimentos pequenos y controlados, y no de una version preentrenada lista para produccion.
+`mendesbruno/coca-retrieval-fast` es un repositorio de Hugging Face publicado por el usuario mendesbruno que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Coca orientada a tareas de retrieval. Segun la model card, la configuracion incluida corresponde a la escala "giant", con atencion dilatada, fusion tensorial, activacion GELU y normalizacion por batch. El propio autor indica explicitamente que se trata de un artefacto pensado para revision de codigo, smoke tests y experimentos pequenos y controlados, y no de una version preentrenada lista para produccion.
 
 El checkpoint `model.safetensors` se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado. El recuento de parametros reportado por el repositorio es de 33.088, una cifra muy alejada de lo que cabria esperar de una configuracion "giant", lo que refuerza la interpretacion de que se trata de un esqueleto de inicializacion. El repositorio no declara ningun resultado de benchmark.
 
@@ -96,5 +96,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mendesbruno/coca-retrieval-fast
+- Modelo en Hugging Face: https://huggingface.co/mendesbruno/coca-retrieval-fast
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a foros de urbanismo (SkyscraperCity) sin relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

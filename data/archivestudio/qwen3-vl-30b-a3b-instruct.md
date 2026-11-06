@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| ArchiveStudio/Qwen3-VL-30B-A3B-Instruct (objeto de esta ficha) | 31,07B totales, ~3B activos | MoE multimodal | 256K nativo, 1M ampliable | apache-2.0 | HuggingFace (espejo) | Repositorio espejo de un tercero, 0 descargas y 0 likes |
-| Qwen/Qwen3-VL-30B-A3B-Instruct | 31,07B totales, ~3B activos | MoE multimodal | 256K nativo, 1M ampliable | apache-2.0 | HuggingFace (oficial) | Repositorio de referencia citado por el propio codigo de la model card |
-| Qwen2.5-VL-32B-Instruct | 32B | Densa multimodal | No disponible en la informacion proporcionada | apache-2.0 | HuggingFace | Generacion anterior de la familia; sin datos comparativos verificados aqui |
+| ArchiveStudio/Qwen3-VL-30B-A3B-Instruct (objeto de esta ficha) | 31,07B totales, ~3B activos | MoE multimodal | 256K nativo, 1M ampliable | apache-2.0 | Hugging Face (espejo) | Repositorio espejo de un tercero, 0 descargas y 0 likes |
+| Qwen/Qwen3-VL-30B-A3B-Instruct | 31,07B totales, ~3B activos | MoE multimodal | 256K nativo, 1M ampliable | apache-2.0 | Hugging Face (oficial) | Repositorio de referencia citado por el propio codigo de la model card |
+| Qwen2.5-VL-32B-Instruct | 32B | Densa multimodal | No disponible en la informacion proporcionada | apache-2.0 | Hugging Face | Generacion anterior de la familia; sin datos comparativos verificados aqui |
 | Modelos MoE multimodales de otros fabricantes (por ejemplo variantes de la serie InternVL o Llama 4) | No disponible | No disponible | No disponible | No disponible | No disponible | No se ha recuperado informacion verificable en los resultados de busqueda |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria. La diferencia mas clara frente a la generacion anterior es la adopcion de arquitectura MoE con ~3B parametros activos, que reduce el coste de inferencia por token respecto a una variante densa de tamano similar.

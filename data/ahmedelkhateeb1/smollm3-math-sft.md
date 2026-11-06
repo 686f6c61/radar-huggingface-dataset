@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smollm3-math-sft es un ajuste fino (SFT) del modelo SmolLM3-3B de HuggingFace, publicado por el usuario AhmedElkhateeb1 como entrega educativa del "smol-course" (capitulo 1). El modelo se ha especializado en resolver problemas de matematicas de nivel escolar mediante entrenamiento supervisado sobre el conjunto de datos GSM8K de OpenAI, concretamente sobre su split de entrenamiento.
+smollm3-math-sft es un ajuste fino (SFT) del modelo SmolLM3-3B de Hugging Face, publicado por el usuario AhmedElkhateeb1 como entrega educativa del "smol-course" (capitulo 1). El modelo se ha especializado en resolver problemas de matematicas de nivel escolar mediante entrenamiento supervisado sobre el conjunto de datos GSM8K de OpenAI, concretamente sobre su split de entrenamiento.
 
 Tecnicamente, no se trata de un modelo entrenado desde cero, sino de un LoRA (r=16, alpha=32) entrenado durante una epoca y posteriormente fusionado con los pesos originales de 16 bits del modelo base. El resultado publicado es un modelo completo de aproximadamente 3.075 millones de parametros en formato safetensors, con licencia Apache 2.0.
 
@@ -85,6 +85,6 @@ La comparativa indica que este modelo es una especializacion puntual del SmolLM3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedElkhateeb1/smollm3-math-sft
+- Modelo en Hugging Face: https://huggingface.co/AhmedElkhateeb1/smollm3-math-sft
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset de entrenamiento (GSM8K): https://huggingface.co/datasets/openai/gsm8k

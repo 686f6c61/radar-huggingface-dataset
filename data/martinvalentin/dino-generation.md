@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Generation es un prototipo de investigacion publicado por el usuario martinvalentin en HuggingFace bajo el identificador `martinvalentin/dino-generation`. Se trata de una implementacion personalizada de una arquitectura denominada Dino, en escala "nano", orientada a tareas de generacion. El repositorio incluye el codigo de inferencia o entrenamiento (`inference.py`), la configuracion de arquitectura (`config.json`), el recetario de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors (`model.safetensors`).
+Dino for Generation es un prototipo de investigacion publicado por el usuario martinvalentin en Hugging Face bajo el identificador `martinvalentin/dino-generation`. Se trata de una implementacion personalizada de una arquitectura denominada Dino, en escala "nano", orientada a tareas de generacion. El repositorio incluye el codigo de inferencia o entrenamiento (`inference.py`), la configuracion de arquitectura (`config.json`), el recetario de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors (`model.safetensors`).
 
 El propio autor es explicito al senalar que el checkpoint incluido es una inicializacion valida para pruebas de humo y no un modelo entrenado ni evaluado con benchmarks. El repositorio no declara ninguna puntuacion de rendimiento y no presenta cifras de evaluacion verificadas. Por tanto, debe interpretarse como un punto de partida experimental para reproducir un recetario de entrenamiento, no como un modelo listo para produccion.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es acotada: se documenta un artefacto de investigaci
 | Formato de pesos | safetensors |
 | Escala declarada | nano |
 | Optimizador del recetario por defecto | AdamW con scheduler exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
 
@@ -45,7 +45,7 @@ En cuanto a entrenamiento, el recetario por defecto registrado en `training_args
 
 - Pruebas de humo de pipelines de inferencia: sirve para verificar que un entorno de ejecucion carga correctamente un checkpoint safetensors y que las formas de los tensores coinciden con `config.json`, sin incurrir en coste de computo apreciable dado su tamano.
 - Validacion de recetarios de entrenamiento: `training_args.json` documenta una receta concreta (AdamW, scheduler exponencial) que puede usarse como plantilla reproducible para experimentos propios.
-- Referencia para implementar adaptadores de carga: la model card advierte de que, al ser una implementacion personalizada, las APIs automaticas de HuggingFace requieren un adaptador explicito; este repositorio sirve como caso de estudio para escribir dicho adaptador.
+- Referencia para implementar adaptadores de carga: la model card advierte de que, al ser una implementacion personalizada, las APIs automaticas de Hugging Face requieren un adaptador explicito; este repositorio sirve como caso de estudio para escribir dicho adaptador.
 - Experimentacion didactica sobre atencion dilatada y cross attention: la escala nano permite inspeccionar el flujo completo de atencion y fusion en un cuaderno o en CPU.
 - Linea base de capacidad equivalente en evaluaciones comparativas: el propio autor sugiere incluir una linea base de capacidad equiparable, para lo cual este prototipo puede actuar como punto de referencia minimo.
 - Depuracion de lazos de decodificacion propios: con 24.832 parametros, la ejecucion completa de un lazo de generacion es instantanea en CPU, lo que facilita la depuracion paso a paso.
@@ -74,13 +74,13 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - No se publican resultados de benchmarks, por lo que cualquier afirmacion de rendimiento seria especulativa.
 - No se documenta longitud de contexto, numero de capas ni dimensiones internas, lo que impide prever el comportamiento en secuencias largas.
 - No se declaran idiomas soportados.
-- Al ser una implementacion personalizada, no es cargable mediante las APIs automaticas habituales de HuggingFace (`AutoModel`, `pipeline`) sin escribir un adaptador especifico.
+- Al ser una implementacion personalizada, no es cargable mediante las APIs automaticas habituales de Hugging Face (`AutoModel`, `pipeline`) sin escribir un adaptador especifico.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el autor advierte de que deben revisarse por separado las condiciones de los datos de origen cuando el repositorio se use con datasets externos.
 - Los resultados de cualquier checkpoint futuro entrenado a partir de esta base deberan documentarse de forma separada de los valores por defecto aqui incluidos.
 - Advertencia sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo y consisten en listados de servicios de escort en Goa; se descartan por completo y no se han utilizado como fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/martinvalentin/dino-generation
+- Modelo en Hugging Face: https://huggingface.co/martinvalentin/dino-generation
 - Repositorio de GitHub, paper, blog o demo: no disponible
 - Enlaces relevantes adicionales: no disponible (la busqueda web no devolvio ningun resultado relacionado con el modelo)

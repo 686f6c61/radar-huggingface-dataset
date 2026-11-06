@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt` es un checkpoint de investigacion desarrollado por `alexkstern` dentro del ecosistema de la libreria `nanochat` de Karpathy. Se trata de un experimento de escalado de tokens que estudia el efecto de una dosis reducida de preentrenamiento (50 millones de tokens) seguida de una fase de post-entrenamiento (PPT) de 500 millones de tokens. El modelo es un transformer decoder-only estilo GPT, con 16 capas, 8 cabezas de atencion y dimension de embedding de 1024, con una ventana de contexto de 2048 tokens. El repositorio de HuggingFace ocupa 2,9 GB y el checkpoint se encuentra en el paso 762 de entrenamiento.
+El modelo `nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt` es un checkpoint de investigacion desarrollado por `alexkstern` dentro del ecosistema de la libreria `nanochat` de Karpathy. Se trata de un experimento de escalado de tokens que estudia el efecto de una dosis reducida de preentrenamiento (50 millones de tokens) seguida de una fase de post-entrenamiento (PPT) de 500 millones de tokens. El modelo es un transformer decoder-only estilo GPT, con 16 capas, 8 cabezas de atencion y dimension de embedding de 1024, con una ventana de contexto de 2048 tokens. El repositorio de Hugging Face ocupa 2,9 GB y el checkpoint se encuentra en el paso 762 de entrenamiento.
 
 Aunque se trata de un modelo de lenguaje de tamano modesto, su interes radica en la metodologia experimental: utiliza un optimizador AdamW con tasas de aprendizaje diferenciadas para matrices, embeddings y unembedding, y aplica una reinicializacion de embeddings en la transicion entre fases. No se han publicado evaluaciones de capacidades ni benchmarks, por lo que debe considerarse una pieza de investigacion sobre tecnicas de post-entrenamiento mas que un modelo listo para produccion.
 
@@ -75,7 +75,7 @@ No hay datos de benchmarks para ninguno de estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s2_2026-09-06_12-56-53_963728-pt
 - Registro de entrenamiento en W&B: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/my4pn18i
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Modelo comparativo `nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt`: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_200M_s2_2026-08-14_18-05-28_533551-pt

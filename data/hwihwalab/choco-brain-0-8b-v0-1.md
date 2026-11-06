@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CHOCO-BRAIN-0.8B-v0.1 es un modelo de lenguaje compacto desarrollado por Hwihwa Lab (hwihwalab) y publicado en HuggingFace. Se presenta como un "motor de decisiones" (decision engine) para la automatización de negocios de solopreneurs, inspirado en la función del córtex prefrontal humano: priorizar, filtrar riesgos y comprometerse con una acción. No está diseñado como un chatbot conversacional general, sino como un clasificador y enrutador determinista que recibe una solicitud de trabajo y emite una decisión operativa estructurada.
+CHOCO-BRAIN-0.8B-v0.1 es un modelo de lenguaje compacto desarrollado por Hwihwa Lab (hwihwalab) y publicado en Hugging Face. Se presenta como un "motor de decisiones" (decision engine) para la automatización de negocios de solopreneurs, inspirado en la función del córtex prefrontal humano: priorizar, filtrar riesgos y comprometerse con una acción. No está diseñado como un chatbot conversacional general, sino como un clasificador y enrutador determinista que recibe una solicitud de trabajo y emite una decisión operativa estructurada.
 
 El modelo se construye mediante LoRA Supervised Fine-Tuning (rango 8, alpha 16) sobre la base Qwen/Qwen3.5-0.8B, con un total de 752.393.024 parámetros. Se distribuye en formatos GGUF (Q8_0), un ZIP para Ollama y es compatible con LM Studio, lo que lo orienta a despliegue local y en el borde (edge). La licencia es Apache 2.0 y los idiomas declarados son inglés y coreano.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CHOCO-BRAIN-0.8B-v0.1 | 752 M | no disponible | Decisión estructurada para solopreneurs (JEV) | Apache 2.0 | HuggingFace, GGUF, Ollama, LM Studio |
-| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generalista | no disponible en la información | HuggingFace |
+| CHOCO-BRAIN-0.8B-v0.1 | 752 M | no disponible | Decisión estructurada para solopreneurs (JEV) | Apache 2.0 | Hugging Face, GGUF, Ollama, LM Studio |
+| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | LLM generalista | no disponible en la información | Hugging Face |
 | Alternativas de clasificación/ enrutamiento de 1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables directos en la información proporcionada; la comparación se limita a la relación con su modelo base.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de modelos comparables directos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/CHOCO-BRAIN-0.8B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/CHOCO-BRAIN-0.8B-v0.1
 - Documentación en coreano: https://huggingface.co/hwihwalab/CHOCO-BRAIN-0.8B-v0.1/blob/main/README_KR.md
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GitHub de Hwihwa Lab: https://github.com/Hwihwa-Lab

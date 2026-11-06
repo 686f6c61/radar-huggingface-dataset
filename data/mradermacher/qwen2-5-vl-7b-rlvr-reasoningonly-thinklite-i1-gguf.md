@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF | 7.6B | No disponible | Qwen | HuggingFace |
-| vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite | 7.6B | No disponible | Qwen | HuggingFace |
-| mradermacher/Qwen2.5-VL-7B-Instruct-heretic-i1-GGUF | 7.6B | No disponible | Qwen | HuggingFace |
+| mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF | 7.6B | No disponible | Qwen | Hugging Face |
+| vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite | 7.6B | No disponible | Qwen | Hugging Face |
+| mradermacher/Qwen2.5-VL-7B-Instruct-heretic-i1-GGUF | 7.6B | No disponible | Qwen | Hugging Face |
 
 Los datos de rendimiento de estos modelos no están disponibles en la información proporcionada.
 

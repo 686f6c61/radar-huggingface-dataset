@@ -95,12 +95,12 @@ No se dispone de comparativas con alternativas de otros desarrolladores (por eje
 - La clonacion de voz no esta disponible en esta variante; si se necesita, hay que recurrir a las variantes Base.
 - Uso responsable: la sintesis de voz permite suplantacion de identidad. Aunque la licencia Apache 2.0 no impone restricciones adicionales de uso comercial, es responsabilidad del integrador aplicar medidas de consentimiento, etiquetado de audio sintetico y cumplimiento normativo (por ejemplo, requisitos de transparencia sobre contenido generado por IA).
 - No se documentan limites de longitud del texto de entrada, ni el comportamiento del modelo con entradas muy largas o con mezcla de idiomas dentro de una misma frase.
-- La lista de idiomas de la model card incluye el espanol, pero la metadata de HuggingFace del repositorio indica "idiomas: no disponibles"; conviene validar el rendimiento real en espanol antes de desplegarlo.
+- La lista de idiomas de la model card incluye el espanol, pero la metadata de Hugging Face del repositorio indica "idiomas: no disponibles"; conviene validar el rendimiento real en espanol antes de desplegarlo.
 - No se menciona soporte de cuantizacion (GGUF, AWQ, GPTQ) ni integracion con llama.cpp u Ollama, lo que limita las opciones de despliegue en hardware sin GPU.
 
 ## Enlaces
 
-- Repositorio reupload en HuggingFace: https://huggingface.co/MrForgettable12/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Repositorio reupload en Hugging Face: https://huggingface.co/MrForgettable12/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio oficial de la variante Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio GitHub del proyecto: https://github.com/QwenLM/Qwen3-TTS

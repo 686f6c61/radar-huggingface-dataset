@@ -4,7 +4,7 @@
 
 El repositorio `TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_08` aloja un modelo identificado como `MDL-008` en su model card, descrito como un "Chatbot NLU Engine". El autor es `TianfuXinqu`, una organización sin información pública adicional. La model card contiene únicamente metadatos de gestión interna: propietario, departamento, nivel de riesgo, estado de documentación, cobertura de pruebas y fecha de auditoría, pero no proporciona ningún detalle técnico sobre la arquitectura, el tamaño, el entrenamiento o las capacidades del modelo.
 
-La ficha de HuggingFace muestra cero descargas y cero likes, y no hay pipeline, licencia ni idiomas declarados. La búsqueda web no arroja resultados relevantes sobre este modelo específico, solo enlaces a otros repositorios de la misma organización y a páginas genéricas de HuggingFace. En consecuencia, no es posible evaluar su relevancia actual ni su aplicabilidad en entornos de producción o investigación. Toda la información técnica aquí presentada se limita a lo declarado en la model card, que es insuficiente para una ficha técnica completa.
+La ficha de Hugging Face muestra cero descargas y cero likes, y no hay pipeline, licencia ni idiomas declarados. La búsqueda web no arroja resultados relevantes sobre este modelo específico, solo enlaces a otros repositorios de la misma organización y a páginas genéricas de Hugging Face. En consecuencia, no es posible evaluar su relevancia actual ni su aplicabilidad en entornos de producción o investigación. Toda la información técnica aquí presentada se limita a lo declarado en la model card, que es insuficiente para una ficha técnica completa.
 
 ## Especificaciones técnicas
 
@@ -54,7 +54,7 @@ No disponible. No se conoce ningún modelo comparable de la misma categoría o t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_08
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_08
 - Página del autor (organización): no disponible (no se ha encontrado un perfil público de TianfuXinqu)
 - Otros repositorios de la organización (relacionados pero no del modelo):  
   - https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest  

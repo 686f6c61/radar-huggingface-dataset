@@ -5,13 +5,15 @@
   "author": "upendar07",
   "url": "https://huggingface.co/upendar07/midi-model-assets",
   "created_at": "2026-11-05T18:41:26.000Z",
-  "updated_at": "2026-11-05T18:41:26.000Z",
+  "updated_at": "2026-11-05T19:08:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
+    "midi_model",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +22,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 989653878,
+  "storage_human": "990 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -101,7 +101,7 @@ Los tres modelos de la familia ckb fueron ajustados con los mismos datos y el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asounimelb/whisper-base-ckb-onnx
+- Modelo en Hugging Face: https://huggingface.co/asounimelb/whisper-base-ckb-onnx
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Versión tiny de la familia ckb: https://huggingface.co/asounimelb/whisper-tiny-ckb-onnx
 - Versión small de la familia ckb: https://huggingface.co/asounimelb/whisper-small-ckb-onnx

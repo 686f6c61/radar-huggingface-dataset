@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/R0U5/Qwen2.5-7B-Instruct-abliterated-64k
+- Repositorio Hugging Face: https://huggingface.co/R0U5/Qwen2.5-7B-Instruct-abliterated-64k
 - Modelo base GGUF: https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF
 - Abliteration original: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

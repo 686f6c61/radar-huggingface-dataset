@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-SoVITS-Miku-Nakano es un ajuste fino de voz de personaje para GPT-SoVITS v2, publicado por el usuario Skttttt en HuggingFace. Se trata de un proyecto de fan no oficial que reproduce la voz de Miku Nakano, personaje de la serie *The Quintessential Quintuplets*, y que no cuenta con el respaldo de la franquicia ni de sus interpretes. El repositorio tiene un tamano de 2,2 GB, no registra descargas ni likes en el momento de la consulta, y su licencia no esta declarada.
+GPT-SoVITS-Miku-Nakano es un ajuste fino de voz de personaje para GPT-SoVITS v2, publicado por el usuario Skttttt en Hugging Face. Se trata de un proyecto de fan no oficial que reproduce la voz de Miku Nakano, personaje de la serie *The Quintessential Quintuplets*, y que no cuenta con el respaldo de la franquicia ni de sus interpretes. El repositorio tiene un tamano de 2,2 GB, no registra descargas ni likes en el momento de la consulta, y su licencia no esta declarada.
 
 El modelo se distribuye como un paquete completo de inferencia mas que como un unico checkpoint: incluye diez checkpoints locales del personaje (entre ellos las versiones A y G2 y epocas intermedias), un `manifest.json` con hashes SHA-256 y los pares de checkpoint finales emparejados. La variante G2 actua como predeterminada por ser el par completo mas reciente, sin que ello implique una calidad superior a la variante A.
 
@@ -86,14 +86,14 @@ No se dispone de datos de parametros, contexto ni benchmarks de los modelos comp
 - La variante G2 es la predeterminada solo por ser el par completo mas reciente; no se ha demostrado que suene mejor que la variante A.
 - El checkpoint AL SoVITS-only de Itsuki carece de un par GPT completo en este repositorio.
 - Corpus de entrenamiento no incluido: el ajuste no es reproducible a partir de los materiales publicados.
-- Incompatibilidad con el ecosistema estandar: al no ser un checkpoint de AutoModel de Transformers, no se integra directamente con pipelines habituales de HuggingFace.
+- Incompatibilidad con el ecosistema estandar: al no ser un checkpoint de AutoModel de Transformers, no se integra directamente con pipelines habituales de Hugging Face.
 - Sesgos conocidos en la voz sintetizada: no documentados en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skttttt/GPT-SoVITS-Miku-Nakano
+- Modelo en Hugging Face: https://huggingface.co/Skttttt/GPT-SoVITS-Miku-Nakano
 - Referencia 1 (audio): https://huggingface.co/Skttttt/GPT-SoVITS-Miku-Nakano/resolve/main/references/reference1.wav
 - Referencia 2 (audio): https://huggingface.co/Skttttt/GPT-SoVITS-Miku-Nakano/resolve/main/references/reference2.wav
 - Referencia 3 (audio): https://huggingface.co/Skttttt/GPT-SoVITS-Miku-Nakano/resolve/main/references/reference3.wav
 - Proyecto upstream GPT-SoVITS: https://github.com/RVC-Boss/GPT-SoVITS
-- Aviso legal del repositorio (`NOTICE.md`): incluido en el propio repositorio de HuggingFace
+- Aviso legal del repositorio (`NOTICE.md`): incluido en el propio repositorio de Hugging Face

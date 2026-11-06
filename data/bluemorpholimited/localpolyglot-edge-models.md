@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LocalPolyglot Edge Models es un repositorio de artefactos de inferencia publicado por el usuario bluemorpholimited en HuggingFace bajo la librería sherpa-onnx. No se trata de un modelo único, sino de una colección de tres módulos encadenados —reconocimiento automático de habla (ASR), traducción automática y síntesis de voz (TTS)— que, junto con un detector de actividad de voz (VAD Silero), forman un pipeline completo de interpretación simultánea desde once idiomas hacia cantonés, ejecutado íntegramente sin conexión de red.
+LocalPolyglot Edge Models es un repositorio de artefactos de inferencia publicado por el usuario bluemorpholimited en Hugging Face bajo la librería sherpa-onnx. No se trata de un modelo único, sino de una colección de tres módulos encadenados —reconocimiento automático de habla (ASR), traducción automática y síntesis de voz (TTS)— que, junto con un detector de actividad de voz (VAD Silero), forman un pipeline completo de interpretación simultánea desde once idiomas hacia cantonés, ejecutado íntegramente sin conexión de red.
 
 El sistema está diseñado para su despliegue en dispositivos móviles ARM64 (arm64-v8a) con Android 13 o superior. El dispositivo de referencia declarado es un iQOO Neo7 Racing Edition con SoC Qualcomm Snapdragon 8+ Gen1 y 16 GB de RAM. La etapa ASR emplea Whisper-large-v3-turbo cuantizado en Q4_K_M; la traducción usa NLLB-200-distilled-600M con un adaptador LoRA afinado para cantonés coloquial (yue_Hant); y la síntesis recurre a CosyVoice en formato ONNX con poda estructural e INT8.
 
@@ -104,10 +104,10 @@ No se dispone de datos de rendimiento comparativo (WER, BLEU, latencia) entre es
 - El tamaño de los artefactos (6,2 GB) y la dependencia de 16 GB de RAM en el dispositivo objetivo limitan su despliegue en terminales de gama media o baja.
 - El módulo TTS figura con 0,0 MB en la model card, lo que sugiere que el artefacto no está incluido realmente en este repositorio o no computa en el tamaño declarado; puede requerir obtención aparte.
 - No se documenta soporte de tool calling ni integración con agentes, por lo que no es apto para flujos de razonamiento multi-paso.
-- Advertencia del autor: el almacenamiento del runtime MOLAB es efímero y los artefactos de producción se conservan únicamente en este repositorio de HuggingFace, lo que implica un único punto de persistencia.
+- Advertencia del autor: el almacenamiento del runtime MOLAB es efímero y los artefactos de producción se conservan únicamente en este repositorio de Hugging Face, lo que implica un único punto de persistencia.
 - El repositorio registra 0 descargas y 0 likes en la información disponible, por lo que su validación por terceros es inexistente a fecha de los datos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bluemorpholimited/localpolyglot-edge-models
+- Hugging Face: https://huggingface.co/bluemorpholimited/localpolyglot-edge-models
 - Resultados de búsqueda web: la búsqueda no ha devuelto enlaces relevantes al modelo (los resultados obtenidos corresponden a un foro chino de preguntas y respuestas, al portal taiwanés Mobile01 y a un léxico jurídico alemán sobre parques nacionales, sin relación con el modelo). No se han encontrado papers, blogs, repositorios ni demos adicionales.

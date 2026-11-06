@@ -74,10 +74,10 @@ La cuantización conserva el 99,9% de los tableros resueltos por bf16 (31 perdid
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SunlightV2-0.8B-q4 | 852.985.920 | No disponible | GPTQ W4A16 | LGPL-3.0 | HuggingFace, vLLM |
-| SunlightV2-0.8B (bf16) | 852.985.920 | No disponible | bf16 | LGPL-3.0 | HuggingFace, vLLM |
-| TwilightV2-2B | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| MidnightV2-4B | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| SunlightV2-0.8B-q4 | 852.985.920 | No disponible | GPTQ W4A16 | LGPL-3.0 | Hugging Face, vLLM |
+| SunlightV2-0.8B (bf16) | 852.985.920 | No disponible | bf16 | LGPL-3.0 | Hugging Face, vLLM |
+| TwilightV2-2B | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| MidnightV2-4B | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Las tres variantes pertenecen a la misma familia de modelos pointer del autor; Twilight V2 y Midnight V2 son versiones de mayor tamaño (2B y 4B) de las que no se detallan especificaciones en la información disponible. No se dispone de comparación con modelos de otras familias.
 
@@ -96,8 +96,8 @@ Las tres variantes pertenecen a la misma familia de modelos pointer del autor; T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-q4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-q4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Pesos bf16: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B
 - Adaptador LoRA: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-LoRA
 - Variante GGUF para llama.cpp: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-GGUF

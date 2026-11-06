@@ -93,7 +93,7 @@ Datos de los modelos alternativos según su documentación pública; no se dispo
 
 ## Enlaces
 
-- Repositorio en HuggingFace (réplica de terceros): https://huggingface.co/JakTheTrippr/Qwen3-235B-A22B
+- Repositorio en Hugging Face (réplica de terceros): https://huggingface.co/JakTheTrippr/Qwen3-235B-A22B
 - Modelo oficial: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

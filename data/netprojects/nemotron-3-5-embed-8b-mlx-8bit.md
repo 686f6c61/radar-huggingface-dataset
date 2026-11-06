@@ -96,7 +96,7 @@ La comparativa directa mas fiable es contra el modelo original de NVIDIA: esta b
 - El autor declara no estar afiliado a NVIDIA; los fallos de la conversion no deben atribuirse al modelo original.
 
 ## Enlaces
-- HuggingFace (esta build): https://huggingface.co/netprojects/Nemotron-3.5-Embed-8B-mlx-8bit
+- Hugging Face (esta build): https://huggingface.co/netprojects/Nemotron-3.5-Embed-8B-mlx-8bit
 - Modelo base original: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Modelo sobre el que se construye: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Codigo de conversion y servidor: https://github.com/internet-projects/nemotron-retrieval-mlx

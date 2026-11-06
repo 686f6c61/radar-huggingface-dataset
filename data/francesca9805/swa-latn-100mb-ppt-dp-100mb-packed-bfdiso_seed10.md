@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10` es un modelo de generacion de texto en suajili (codigo de idioma `swa_latn`) de 124.770.816 parametros, obtenido por ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/swa_latn_100mb`. Lo publica el usuario de HuggingFace `francesca9805`, vinculado segun los metadatos de seguimiento a la Universidad de Groningen, y forma parte de una familia de experimentos con distintos tokenizadores y semillas (`seed10`, `seed3407`) dentro de un proyecto de seguimiento denominado `new-tokenizers`.
+`francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10` es un modelo de generacion de texto en suajili (codigo de idioma `swa_latn`) de 124.770.816 parametros, obtenido por ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/swa_latn_100mb`. Lo publica el usuario de Hugging Face `francesca9805`, vinculado segun los metadatos de seguimiento a la Universidad de Groningen, y forma parte de una familia de experimentos con distintos tokenizadores y semillas (`seed10`, `seed3407`) dentro de un proyecto de seguimiento denominado `new-tokenizers`.
 
-El modelo pertenece a la familia GPT-2 (etiqueta `gpt2` en los metadatos de HuggingFace) y se distribuye en formato `safetensors` con la libreria `transformers`. Por tamano y naturaleza es un modelo de investigacion mas que de produccion: 124 millones de parametros lo sitúan en la gama de los modelos "small" orientados a un unico idioma con corpus de entrenamiento reducidos (el sufijo `100mb` del modelo base sugiere un corpus del orden de 100 MB de texto en suajili).
+El modelo pertenece a la familia GPT-2 (etiqueta `gpt2` en los metadatos de Hugging Face) y se distribuye en formato `safetensors` con la libreria `transformers`. Por tamano y naturaleza es un modelo de investigacion mas que de produccion: 124 millones de parametros lo sitúan en la gama de los modelos "small" orientados a un unico idioma con corpus de entrenamiento reducidos (el sufijo `100mb` del modelo base sugiere un corpus del orden de 100 MB de texto en suajili).
 
 Su relevancia es acotada pero concreta: sirve como punto de comparacion reproducible para estudiar el efecto de distintas estrategias de tokenizacion y de empaquetado de datos (`packed`) en idiomas de bajos recursos, y como base ligera para tareas de generacion de texto en suajili que deban ejecutarse en hardware muy modesto. La ficha tecnica publicada es minima: no incluye licencia explicita, idiomas declarados, composicion del dataset ni resultados de evaluacion.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero concreta: sirve como punto de comparacion reproduc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (la familia GPT-2 usa 1.024 tokens como valor tipico, sin confirmar para este ajuste) |
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: aproximadamente 125 MB; en 4 bits, en torno a 65-70 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; se puede usar RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad. El modelo esta claramente infrautilizado en GPUs de datacenter.
 - Si cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos diez anos, e incluso en CPU con memoria RAM suficiente.
-- Opciones de despliegue: Transformers con `pipeline`, text-generation-inference (etiqueta declarada por el autor), endpoints compatibles con la API de HuggingFace, y conversion a GGUF para llama.cpp u Ollama. vLLM es compatible con arquitecturas GPT-2, aunque no esta confirmado por el autor.
+- Opciones de despliegue: Transformers con `pipeline`, text-generation-inference (etiqueta declarada por el autor), endpoints compatibles con la API de Hugging Face, y conversion a GGUF para llama.cpp u Ollama. vLLM es compatible con arquitecturas GPT-2, aunque no esta confirmado por el autor.
 - Latencia y throughput estimados: no disponibles. Con 124,7 M de parametros se espera una latencia de milisegundos por token en GPU moderna, pero no hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10` | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Variante con semilla 10 del experimento |
-| `goldfish-models/swa_latn_100mb` | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo base sobre el que se aplica el SFT |
-| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma familia sin el sufijo `iso`, presumiblemente con otro tratamiento de datos |
-| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | HuggingFace | Misma receta con semilla 3407 |
+| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10` | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Variante con semilla 10 del experimento |
+| `goldfish-models/swa_latn_100mb` | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo base sobre el que se aplica el SFT |
+| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma familia sin el sufijo `iso`, presumiblemente con otro tratamiento de datos |
+| `francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | Hugging Face | Misma receta con semilla 3407 |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a modelos multilingues de tamano similar, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -81,12 +81,12 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 - Idiomas soportados no declarados oficialmente: aunque el identificador apunta a suajili (`swa_latn`), no hay confirmacion del alcance multilingue ni de la variedad dialectal cubierta.
 - Contexto no documentado: si se confirma el valor tipico de GPT-2 (1.024 tokens), el modelo no sirve para conversaciones largas ni para documentos extensos.
 - Ausencia total de benchmarks: no es posible comparar su calidad objetivamente con alternativas ni validar afirmaciones de rendimiento.
-- Modelo practicamente sin traccion en HuggingFace (0 descargas, 0 likes al consultar): no ha pasado por validacion de la comunidad, por lo que puede contener errores de publicacion o artefactos de entrenamiento no detectados.
+- Modelo practicamente sin traccion en Hugging Face (0 descargas, 0 likes al consultar): no ha pasado por validacion de la comunidad, por lo que puede contener errores de publicacion o artefactos de entrenamiento no detectados.
 - Uso en produccion desaconsejado sin una evaluacion previa especifica del dominio y sin resolver la ambiguedad de licencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Variante con semilla 10 sin sufijo `iso`: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante con semilla 3407: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407

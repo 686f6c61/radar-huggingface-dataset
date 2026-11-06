@@ -69,5 +69,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (NE
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_medical_ner_pro
+- Hugging Face: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_medical_ner_pro
 - No se encontraron papers, repositorios adicionales ni demos asociados al modelo en la informacion proporcionada.

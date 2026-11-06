@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vlmurthylab/1dvit_base_patch50_5000.ptbxl-rhythm` (este) | 92.698.412 | No disponible | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `4dm-labs/1dvit_base_patch50_5000.ptbxl-rhythm` (original) | 92.698.412 (identico) | No disponible | No disponible | Apache-2.0 | HuggingFace (repositorio de origen) |
+| `vlmurthylab/1dvit_base_patch50_5000.ptbxl-rhythm` (este) | 92.698.412 | No disponible | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `4dm-labs/1dvit_base_patch50_5000.ptbxl-rhythm` (original) | 92.698.412 (identico) | No disponible | No disponible | Apache-2.0 | Hugging Face (repositorio de origen) |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la informacion suministrada otros modelos comparables de la misma categoria (ViT 1D para ECG sobre PTB-XL) con datos verificables de parametros, contexto o rendimiento.
@@ -86,8 +86,8 @@ No se han identificado en la informacion suministrada otros modelos comparables 
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-rhythm
-- HuggingFace (original de 4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ptbxl-rhythm
+- Hugging Face (espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-rhythm
+- Hugging Face (original de 4dm-labs): https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ptbxl-rhythm
 - Codigo oficial de ECGFlow: https://github.com/4dm-labs/ecgflow
 - Codigo del mantenedor del espejo: https://github.com/vlmurthylab/ecgflow
 - Paper asociado (Moody JB, et al. NEJM AI 2025): https://doi.org/10.1056/AIoa2500164

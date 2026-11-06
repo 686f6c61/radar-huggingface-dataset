@@ -75,7 +75,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec-gguf)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec-gguf)
 - [Modelo base sin cuantizar](https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec)
 - [Dataset de entrenamiento DPO](https://huggingface.co/datasets/nyxspecter4/kin-dpo-data)
 - [Perfil de GitHub del autor](https://github.com/NyxSpecter4)

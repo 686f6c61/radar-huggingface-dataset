@@ -26,7 +26,7 @@ Su relevancia es principalmente didactica y de referencia: sirve como artefacto 
 | Recompensa media | 271,06 +/- 21,00 (10 episodios, no verificado) |
 | Pasos de entrenamiento | 500.000 |
 | Framework | PyTorch (base CleanRL) |
-| Pipeline en HuggingFace | reinforcement-learning |
+| Pipeline en Hugging Face | reinforcement-learning |
 | Tamano del repositorio | 0,0 GB |
 
 Hiperparametros declarados en la model card:
@@ -130,7 +130,7 @@ La comparacion solo es posible en terminos cualitativos: este repositorio se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avinash76812/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Avinash76812/ppo-LunarLander-v2
 - Referencia mencionada en la model card: implementacion de CleanRL (repositorio del proyecto citado como base del codigo); URL no incluida en la informacion proporcionada.
 - Referencia mencionada en la model card: curso Deep Reinforcement Learning de Hugging Face, Unidad 8 (Parte 1); URL no incluida en la informacion proporcionada.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Los resultados devueltos corresponden a paginas de concursos y trivia diarios de Bing (bingquiz.com, bingquizzes.com, bing.weeklyquiz.net, bingquiz.popularnowonbing.com, bingquiz.org) y no guardan relacion con este repositorio, por lo que se descartan como fuentes.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dimmy-whisper-ggml (este repositorio) | Variantes tiny a large-v3 | 30 s de audio por segmento (no confirmado) | GGML + Core ML | MIT + Apache-2.0 | HuggingFace, mirror de whisper.cpp |
-| ggerganov/whisper.cpp (upstream) | Mismas variantes | Mismo | GGML | MIT | HuggingFace, repositorio original |
-| openai/whisper-large-v3 | ~1.550 M (no confirmado) | 30 s de audio | safetensors/PyTorch | Apache-2.0 | HuggingFace, modelo original |
-| Pomni/whisper-large-v3-ggml-allquants | large-v3 cuantizado | Mismo | GGML | Apache-2.0 | HuggingFace, cuantizaciones adicionales |
+| dimmy-whisper-ggml (este repositorio) | Variantes tiny a large-v3 | 30 s de audio por segmento (no confirmado) | GGML + Core ML | MIT + Apache-2.0 | Hugging Face, mirror de whisper.cpp |
+| ggerganov/whisper.cpp (upstream) | Mismas variantes | Mismo | GGML | MIT | Hugging Face, repositorio original |
+| openai/whisper-large-v3 | ~1.550 M (no confirmado) | 30 s de audio | safetensors/PyTorch | Apache-2.0 | Hugging Face, modelo original |
+| Pomni/whisper-large-v3-ggml-allquants | large-v3 cuantizado | Mismo | GGML | Apache-2.0 | Hugging Face, cuantizaciones adicionales |
 
 No se dispone de datos de rendimiento comparativo (WER, latencia) en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-whisper-ggml
-- Upstream whisper.cpp en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp
+- Repositorio en Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-whisper-ggml
+- Upstream whisper.cpp en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp
 - Cuantizaciones de Pomni: https://huggingface.co/Pomni/whisper-large-v3-ggml-allquants
 - Modelo original large-v3: https://huggingface.co/openai/whisper-large-v3
 - Licencia de whisper.cpp: https://github.com/ggerganov/whisper.cpp/blob/master/LICENSE

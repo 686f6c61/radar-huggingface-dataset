@@ -77,4 +77,4 @@ La comparativa se limita a parámetros y estado, ya que no se dispone de benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h080.sft5.step_600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h080.sft5.step_600

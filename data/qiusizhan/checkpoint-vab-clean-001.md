@@ -23,7 +23,7 @@ Su relevancia es acotada y experimental: se publica con acceso restringido (gate
 | Modelo base | `Qwen/Qwen3.5-9B` |
 | Pipeline declarado | `image-text-to-text` |
 | Tamaño del repositorio | 0,2 GB |
-| Acceso | Restringido: requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido: requiere aceptar condiciones en Hugging Face |
 | Fecha de creación / actualización | 2026-10-27 / 2026-10-27 |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qiusizhan/checkpoint-vab-clean-001` | Adaptador LoRA de auditoría sobre Qwen3.5-9B | No disponible (~10^8 estimados por tamaño) | No disponible (heredada del base) | No disponible | Gated en HuggingFace |
-| `Qwen/Qwen3.5-9B` (modelo base) | Modelo multimodal completo | 9B (según denominación) | No disponible en la información | No disponible en la información | Público en HuggingFace |
+| `qiusizhan/checkpoint-vab-clean-001` | Adaptador LoRA de auditoría sobre Qwen3.5-9B | No disponible (~10^8 estimados por tamaño) | No disponible (heredada del base) | No disponible | Gated en Hugging Face |
+| `Qwen/Qwen3.5-9B` (modelo base) | Modelo multimodal completo | 9B (según denominación) | No disponible en la información | No disponible en la información | Público en Hugging Face |
 | Otros adaptadores LoRA de auditoría de backdoors | No disponible | No disponible | No disponible | No disponible | No identificados en la información |
 
 No se han identificado en la información proporcionada alternativas comparables de la misma categoría (adaptadores LoRA orientados a auditoría de backdoors). La comparación con el modelo base solo es válida en términos de dependencia, no de rendimiento, ya que no hay métricas publicadas para este checkpoint.
@@ -78,7 +78,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 - Ausencia total de documentación técnica: sin model card detallada, sin dataset, sin hiperparámetros de entrenamiento y sin evaluación, no es posible validar su comportamiento.
 - Licencia no declarada: no hay base legal explícita para uso comercial; además, la licencia del modelo base `Qwen/Qwen3.5-9B` debe verificarse por separado y prevalece sobre el adaptador.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que impide su uso en pipelines automatizados sin gestión previa de credenciales.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que impide su uso en pipelines automatizados sin gestión previa de credenciales.
 - Riesgo de alucinación: no evaluado en la información disponible; se hereda el comportamiento del modelo base, sin que existan métricas para este checkpoint.
 - Sesgos: no documentados; al no conocerse la composición del dataset de ajuste, no se puede descartar la introducción de sesgos nuevos respecto al base.
 - Idioma: no se declara ningún idioma soportado; el comportamiento en castellano no está verificado.
@@ -88,6 +88,6 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/checkpoint-vab-clean-001
+- Hugging Face: https://huggingface.co/qiusizhan/checkpoint-vab-clean-001
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

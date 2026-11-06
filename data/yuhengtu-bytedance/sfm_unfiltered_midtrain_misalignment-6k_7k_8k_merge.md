@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-6k_7k_8k_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper sobre metodo Linear (referenciado en la configuracion): https://arxiv.org/abs/2203.05482
 - Modelo relacionado del mismo autor: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg

@@ -101,7 +101,7 @@ Frente a otros generadores de video open source de la misma categoria (por ejemp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/intel-ai/MiniMax-H3-MXFP8-CT-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/intel-ai/MiniMax-H3-MXFP8-CT-AutoRound
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Ejemplo oficial T2VA: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/assets/t2va.mp4

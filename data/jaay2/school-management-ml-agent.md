@@ -2,7 +2,7 @@
 
 ## Resumen
 
-School Management AI Agent - ML Intent & Slot Model es un modelo de clasificación de texto publicado por el usuario jaay2 en HuggingFace. No se trata de un modelo de lenguaje neuronal, sino de un pipeline clásico de Scikit-Learn serializado con joblib que combina extracción de características de n-gramas de palabras y de caracteres con un ensamblado por votación suave (soft voting) de tres estimadores lineales y probabilísticos. Su función es la clasificación semántica de intenciones (intent classification) dentro de un chatbot de gestión escolar, con extracción de entidades y razonamiento SQL sobre un esquema PostgreSQL concreto.
+School Management AI Agent - ML Intent & Slot Model es un modelo de clasificación de texto publicado por el usuario jaay2 en Hugging Face. No se trata de un modelo de lenguaje neuronal, sino de un pipeline clásico de Scikit-Learn serializado con joblib que combina extracción de características de n-gramas de palabras y de caracteres con un ensamblado por votación suave (soft voting) de tres estimadores lineales y probabilísticos. Su función es la clasificación semántica de intenciones (intent classification) dentro de un chatbot de gestión escolar, con extracción de entidades y razonamiento SQL sobre un esquema PostgreSQL concreto.
 
 El modelo está diseñado para un dominio muy acotado: 27 intenciones ground-truth alineadas con un esquema de base de datos escolar de 29 tablas y 4 vistas. No dispone de arquitectura transformer, ni de pesos en formato safetensors o GGUF, ni de una ventana de contexto en el sentido habitual de los LLM. Su relevancia es la de un componente neuro-simbólico de bajo coste computacional que resuelve la capa de enrutamiento semántico de un agente conversacional vertical.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jaay2/school-management-ml-agent | Ensamblado Scikit-Learn (joblib) | no disponible | no aplica | en | MIT | HuggingFace, 0 descargas |
+| jaay2/school-management-ml-agent | Ensamblado Scikit-Learn (joblib) | no disponible | no aplica | en | MIT | Hugging Face, 0 descargas |
 | Clasificadores de intención con TF-IDF + Logistic Regression | Pipeline clásico | no disponible | no aplica | multilingüe según corpus | variable | Ampliamente disponibles en Scikit-Learn |
-| Modelos de intención basados en sentence-transformers (p. ej. all-MiniLM-L6-v2 + clasificador) | Transformer + cabeza de clasificación | ~22M (encoder) | 256-512 tokens | multilingüe en variantes | Apache 2.0 en la mayoría | HuggingFace, amplia adopción |
-| LLM pequeños para function calling (p. ej. modelos de 1-3B) | Transformer decoder | 1-3B | 4k-32k tokens | multilingüe | variable | HuggingFace, amplia adopción |
+| Modelos de intención basados en sentence-transformers (p. ej. all-MiniLM-L6-v2 + clasificador) | Transformer + cabeza de clasificación | ~22M (encoder) | 256-512 tokens | multilingüe en variantes | Apache 2.0 en la mayoría | Hugging Face, amplia adopción |
+| LLM pequeños para function calling (p. ej. modelos de 1-3B) | Transformer decoder | 1-3B | 4k-32k tokens | multilingüe | variable | Hugging Face, amplia adopción |
 
 La comparación cuantitativa de rendimiento no está disponible: el modelo no publica métricas sobre datos retenidos, por lo que no es posible contrastar su Macro F1 con alternativas. Frente a los encoders tipo sentence-transformers, este modelo ofrece menor coste computacional pero carece de generalización semántica fuera del vocabulario del dominio escolar. Frente a los LLM pequeños con function calling, ofrece determinismo y latencia muy inferior, a cambio de limitarse a 27 intenciones predefinidas y a un único esquema de base de datos.
 
@@ -92,5 +92,5 @@ La comparación cuantitativa de rendimiento no está disponible: el modelo no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaay2/school-management-ml-agent
+- Modelo en Hugging Face: https://huggingface.co/jaay2/school-management-ml-agent
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

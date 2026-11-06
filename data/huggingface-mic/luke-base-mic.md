@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/luke-base-mic` | ~10,2 M (fixture) | no disponible | Fixture de pruebas | no disponible | HuggingFace |
-| `studio-ousia/luke-base` | ~253 M | 512 tokens (LUKE base estándar) | MLM con conocimiento de entidades | no disponible en la información proporcionada | HuggingFace |
-| `studio-ousia/luke-large` | ~481 M | 512 tokens (LUKE large estándar) | MLM con conocimiento de entidades | no disponible en la información proporcionada | HuggingFace |
+| `huggingface-mic/luke-base-mic` | ~10,2 M (fixture) | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `studio-ousia/luke-base` | ~253 M | 512 tokens (LUKE base estándar) | MLM con conocimiento de entidades | no disponible en la información proporcionada | Hugging Face |
+| `studio-ousia/luke-large` | ~481 M | 512 tokens (LUKE large estándar) | MLM con conocimiento de entidades | no disponible en la información proporcionada | Hugging Face |
 
 La comparación con `luke-base` y `luke-large` es la más directa por compartir arquitectura y pipeline de preprocesado, aunque el fixture no es funcionalmente equivalente a ninguno de ellos.
 
@@ -80,7 +80,7 @@ La comparación con `luke-base` y `luke-large` es la más directa por compartir 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/luke-base-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/luke-base-mic
 - Modelo base: https://huggingface.co/studio-ousia/luke-base
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/luke-base-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/luke-base-mic/blob/main/integrations/transformers/usage.md

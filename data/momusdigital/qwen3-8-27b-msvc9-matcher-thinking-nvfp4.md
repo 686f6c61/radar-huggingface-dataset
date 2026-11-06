@@ -87,9 +87,9 @@ Observaciones del autor: cuatro funciones solo las resolvió este modelo y una s
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-MSVC9-Matcher-Thinking-NVFP4 (este) | 14.557.547.760 según safetensors (27B nominal) | 128K en evaluación | Reconstrucción C++03 byte-idéntica con thinking | apache-2.0 | HuggingFace, 60 descargas |
-| Qwen/Qwen3.8-27B (base, NVFP4) | 27B nominal | no disponible | Generación general; 4/37 en la misma prueba | apache-2.0 (según el repo derivado) | HuggingFace |
-| Qwen3.8-27B-MSVC9-Matcher-LoRA (ronda anterior) | no disponible | no disponible | Reconstrucción con thinking desactivado, funciones cortas | no disponible | HuggingFace |
+| Qwen3.8-27B-MSVC9-Matcher-Thinking-NVFP4 (este) | 14.557.547.760 según safetensors (27B nominal) | 128K en evaluación | Reconstrucción C++03 byte-idéntica con thinking | apache-2.0 | Hugging Face, 60 descargas |
+| Qwen/Qwen3.8-27B (base, NVFP4) | 27B nominal | no disponible | Generación general; 4/37 en la misma prueba | apache-2.0 (según el repo derivado) | Hugging Face |
+| Qwen3.8-27B-MSVC9-Matcher-LoRA (ronda anterior) | no disponible | no disponible | Reconstrucción con thinking desactivado, funciones cortas | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos comparables en la información proporcionada.
 
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks de otros modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/momusdigital/Qwen3.8-27B-MSVC9-Matcher-Thinking-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/momusdigital/Qwen3.8-27B-MSVC9-Matcher-Thinking-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ronda anterior (LoRA): https://huggingface.co/momusdigital/Qwen3.8-27B-MSVC9-Matcher-LoRA
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

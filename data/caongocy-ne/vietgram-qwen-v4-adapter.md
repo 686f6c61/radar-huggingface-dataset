@@ -70,7 +70,7 @@ No hay información suficiente para una comparativa rigurosa. El modelo es un ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/caongocy-ne/vietgram-qwen-v4-adapter
+- Repositorio Hugging Face: https://huggingface.co/caongocy-ne/vietgram-qwen-v4-adapter
 - Página del autor: https://huggingface.co/caongocy-ne
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Paper de Qwen 2.5: no disponible en la informacion proporcionada

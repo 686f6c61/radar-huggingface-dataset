@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS Serenity es un ajuste fino completo (full finetune) del modelo de difusión texto-a-imagen MOSS-Image Base, publicado por el usuario malcolmrey en HuggingFace. Su objetivo es acotado y explícito: enseñar al modelo un conjunto cerrado de personas reales identificadas por nombre (Keanu Reeves, Gillian Anderson, Anya Taylor-Joy, Jason Momoa, Jenna Ortega, Nathan Fillion, entre las documentadas en las muestras) sin degradar lo que el modelo base ya sabía hacer con escenas, paisajes y composiciones sin personas.
+MOSS Serenity es un ajuste fino completo (full finetune) del modelo de difusión texto-a-imagen MOSS-Image Base, publicado por el usuario malcolmrey en Hugging Face. Su objetivo es acotado y explícito: enseñar al modelo un conjunto cerrado de personas reales identificadas por nombre (Keanu Reeves, Gillian Anderson, Anya Taylor-Joy, Jason Momoa, Jenna Ortega, Nathan Fillion, entre las documentadas en las muestras) sin degradar lo que el modelo base ya sabía hacer con escenas, paisajes y composiciones sin personas.
 
 El modelo mantiene exactamente la misma arquitectura que MOSS-Image Base —un DiT (diffusion transformer) acoplado al text encoder Qwen3.5-9B y al VAE de FLUX.2—, por lo que funciona como reemplazo directo en cualquier workflow de ComfyUI ya montado para MOSS-Image. Se entrenó durante 24.000 pasos en una única RTX 5090 con la herramienta maltrainer del propio autor, y se distribuye en tres formatos: pesos bf16 (10,2 GB), INT8 ConvRot (5,4 GB) y extracciones LoRA de rangos 64, 128 y 256.
 
@@ -93,10 +93,10 @@ Los únicos datos de rendimiento medibles son de latencia, medidos por el autor 
 
 | Modelo | Parámetros | Contexto / prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS Serenity (este modelo) | No disponible (DiT de 10,2 GB en bf16) | No documentado; encoder Qwen3.5-9B | Sin benchmarks; 8,7–16 s por imagen en RTX 5090 | Apache 2.0 | HuggingFace, 0 descargas, 15 likes |
-| MOSS-Image Base (OpenMOSS-Team) | No disponible | No documentado | Sin datos en la información disponible | No disponible en la información consultada | HuggingFace, modelo base del finetune |
+| MOSS Serenity (este modelo) | No disponible (DiT de 10,2 GB en bf16) | No documentado; encoder Qwen3.5-9B | Sin benchmarks; 8,7–16 s por imagen en RTX 5090 | Apache 2.0 | Hugging Face, 0 descargas, 15 likes |
+| MOSS-Image Base (OpenMOSS-Team) | No disponible | No documentado | Sin datos en la información disponible | No disponible en la información consultada | Hugging Face, modelo base del finetune |
 | MOSS-Image Base + LoRA r256 de Serenity | Idénticos al base + 1,2 GB de LoRA | Idéntico al base | 12 pasos con turbo según el workflow incluido; sin métricas | Apache 2.0 (el LoRA) | Incluido en este repositorio |
-| MOSS-Image Base + DMD 8-steps (lodestones) | Idénticos al base + LoRA turbo | Idéntico al base | 8 pasos; sin métricas publicadas aquí | No disponible en la información consultada | HuggingFace, enlazado por el autor |
+| MOSS-Image Base + DMD 8-steps (lodestones) | Idénticos al base + LoRA turbo | Idéntico al base | 8 pasos; sin métricas publicadas aquí | No disponible en la información consultada | Hugging Face, enlazado por el autor |
 
 No se dispone de datos verificables para comparar con alternativas de otros ecosistemas (FLUX.2, Qwen-Image u otros DiT de tamaño similar): la información proporcionada solo cubre el linaje MOSS-Image.
 
@@ -115,7 +115,7 @@ No se dispone de datos verificables para comparar con alternativas de otros ecos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malcolmrey/moss-serenity
+- Modelo en Hugging Face: https://huggingface.co/malcolmrey/moss-serenity
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Herramienta de entrenamiento maltrainer: https://github.com/malcolmamal/maltrainer
 - LoRA DMD turbo de 8 pasos (lodestones): https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd

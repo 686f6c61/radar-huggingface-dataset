@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bodhan-ai/indic-translate` es un modelo de traducción automática desarrollado por Bodhan.AI, que parte del modelo base `google/gemma-4-E4B-it`. Está diseñado para traducir entre inglés y las 22 lenguas programadas de la India (asamés, bengalí, bodo, dogri, konkani, gujarati, hindi, kannada, cachemir, maithili, malayalam, manipuri, marathi, nepalí, oriya, punyabí, sánscrito, santalí, sindhi, tamil, telugu y urdu), lo que supone 44 direcciones de traducción. El modelo destaca por conservar intactos el formato Markdown, LaTeX, código y tablas durante la traducción, y por manejar acentos y code-switching. Con 7.941 millones de parámetros, es un modelo de tamaño medio que se puede desplegar en entornos de producción con recursos moderados. Su acceso en HuggingFace es restringido (gated), por lo que requiere aceptar condiciones de uso.
+El modelo `bodhan-ai/indic-translate` es un modelo de traducción automática desarrollado por Bodhan.AI, que parte del modelo base `google/gemma-4-E4B-it`. Está diseñado para traducir entre inglés y las 22 lenguas programadas de la India (asamés, bengalí, bodo, dogri, konkani, gujarati, hindi, kannada, cachemir, maithili, malayalam, manipuri, marathi, nepalí, oriya, punyabí, sánscrito, santalí, sindhi, tamil, telugu y urdu), lo que supone 44 direcciones de traducción. El modelo destaca por conservar intactos el formato Markdown, LaTeX, código y tablas durante la traducción, y por manejar acentos y code-switching. Con 7.941 millones de parámetros, es un modelo de tamaño medio que se puede desplegar en entornos de producción con recursos moderados. Su acceso en Hugging Face es restringido (gated), por lo que requiere aceptar condiciones de uso.
 
 ## Especificaciones técnicas
 
@@ -14,7 +14,7 @@ El modelo `bodhan-ai/indic-translate` es un modelo de traducción automática de
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | en, as, bn, brx, doi, gom, gu, hi, kn, ks, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur |
-| Licencia | other (acceso restringido en HuggingFace) |
+| Licencia | other (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 Nota: el tag "long-context" sugiere una ventana de contexto amplia, pero no se especifica el número exacto de tokens. El tag "image-text-to-text" indica posible soporte multimodal, aunque no se detalla en la documentación disponible.
@@ -57,7 +57,7 @@ No se han encontrado modelos comparables directamente en la información disponi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar condiciones de uso antes de poder descargarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar condiciones de uso antes de poder descargarlo.
 - Licencia "other": la licencia no está especificada, lo que puede limitar su uso comercial o requerir revisión legal.
 - Sin datos de benchmarks: no hay resultados publicados que permitan evaluar su rendimiento frente a otros modelos.
 - Posibles sesgos y alucinaciones: al ser un fine-tuning de un modelo base, puede heredar sesgos lingüísticos y culturales, y generar traducciones incorrectas en contextos ambiguos.
@@ -65,6 +65,6 @@ No se han encontrado modelos comparables directamente en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bodhan-ai/indic-translate
+- Hugging Face: https://huggingface.co/bodhan-ai/indic-translate
 - Bodhan.AI: https://bodhan.ai/
 - Consola de Bodhan.AI: https://console.bodhan.ai/

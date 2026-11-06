@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cuc1031/distilbert-base-uncased-finetuned-adl_hw1` es un ajuste fino de `distilbert-base-uncased` publicado por el usuario cuc1031 en HuggingFace. Se trata de un modelo encoder-only de 66.961.162 parámetros orientado a clasificación de texto (`text-classification`), con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "me gusta" en el momento de la consulta, lo que junto al sufijo `adl_hw1` apunta a un artefacto de una práctica académica más que a un modelo destinado a uso productivo.
+`cuc1031/distilbert-base-uncased-finetuned-adl_hw1` es un ajuste fino de `distilbert-base-uncased` publicado por el usuario cuc1031 en Hugging Face. Se trata de un modelo encoder-only de 66.961.162 parámetros orientado a clasificación de texto (`text-classification`), con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 "me gusta" en el momento de la consulta, lo que junto al sufijo `adl_hw1` apunta a un artefacto de una práctica académica más que a un modelo destinado a uso productivo.
 
 El problema que resuelve, en teoría, es la clasificación de secuencias cortas en inglés: el modelo añade una cabeza de clasificación sobre el encoder destilado de BERT. Sin embargo, la propia model card declara unas métricas de evaluación muy bajas (Macro F1 = 0,1409; Micro F1 = 0,1831; pérdida de validación = 0,3991) y no identifica el conjunto de datos de entrenamiento (aparece como "None"). El array `results` del `model-index` está vacío, por lo que no existe ningún benchmark publicado asociado al modelo.
 
@@ -95,10 +95,10 @@ La comparación de rendimiento no es posible porque este checkpoint no publica b
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cuc1031/distilbert-base-uncased-finetuned-adl_hw1` | 66,96 M | 512 tokens | Clasificación (10 clases) | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased` | 66,36 M | 512 tokens | Modelo base (encoder preentrenado) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `distilbert-base-uncased-finetuned-sst-2-english` | aprox. 67 M | 512 tokens | Clasificación binaria de sentimiento | Apache 2.0 | HuggingFace, muy descargado |
-| `bert-base-uncased` | 110 M | 512 tokens | Modelo base (encoder preentrenado) | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| `cuc1031/distilbert-base-uncased-finetuned-adl_hw1` | 66,96 M | 512 tokens | Clasificación (10 clases) | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased` | 66,36 M | 512 tokens | Modelo base (encoder preentrenado) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `distilbert-base-uncased-finetuned-sst-2-english` | aprox. 67 M | 512 tokens | Clasificación binaria de sentimiento | Apache 2.0 | Hugging Face, muy descargado |
+| `bert-base-uncased` | 110 M | 512 tokens | Modelo base (encoder preentrenado) | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 Frente a un DistilBERT ajustado en una tarea con datos etiquetados y bien definidos (por ejemplo, el ajuste para SST-2), este checkpoint parte con una desventaja objetiva: no declara el dataset, no declara las etiquetas y sus métricas declaradas son cercanas al azar. No se dispone de datos para comparar frente a alternativas como RoBERTa-base o DeBERTa-v3-base, que no aparecen en la información proporcionada.
 
@@ -117,7 +117,7 @@ Frente a un DistilBERT ajustado en una tarea con datos etiquetados y bien defini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuc1031/distilbert-base-uncased-finetuned-adl_hw1
+- Modelo en Hugging Face: https://huggingface.co/cuc1031/distilbert-base-uncased-finetuned-adl_hw1
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Referencia de la arquitectura base (Sanh et al., 2019, DistilBERT): https://arxiv.org/abs/1910.01108
 - Documentación de la librería Transformers: https://huggingface.co/docs/transformers/index

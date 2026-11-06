@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cardiopril es un modelo publicado en HuggingFace bajo el identificador `Cardiopril/Cardiopril` por el usuario u organizacion Cardiopril. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente declara una licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere un posible enfoque hacia el ambito cardiovascular o medico, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+Cardiopril es un modelo publicado en Hugging Face bajo el identificador `Cardiopril/Cardiopril` por el usuario u organizacion Cardiopril. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente declara una licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere un posible enfoque hacia el ambito cardiovascular o medico, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
-El modelo no registra descargas ni likes, fue creado y actualizado en la misma fecha (29 de octubre de 2026) y no tiene pipeline asignado en HuggingFace. Esto indica que se trata de un repositorio recien publicado o sin contenido sustantivo mas alla del archivo de licencia. No se dispone de informacion sobre pesos, tokenizador, configuracion o ficha tecnica.
+El modelo no registra descargas ni likes, fue creado y actualizado en la misma fecha (29 de octubre de 2026) y no tiene pipeline asignado en Hugging Face. Esto indica que se trata de un repositorio recien publicado o sin contenido sustantivo mas alla del archivo de licencia. No se dispone de informacion sobre pesos, tokenizador, configuracion o ficha tecnica.
 
 Dado que no hay datos verificables sobre arquitectura, parametros, contexto ni rendimiento, esta ficha se limita a documentar lo que el autor ha hecho publico y a marcar explicitamente como "no disponible" cualquier especificacion que no pueda confirmarse. No se debe asumir ninguna capacidad del modelo sin verificacion directa del repositorio o de los pesos.
 
@@ -23,7 +23,7 @@ Dado que no hay datos verificables sobre arquitectura, parametros, contexto ni r
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa, el tokenizador empleado ni el formato de los pesos.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa, el tokenizador empleado ni el formato de los pesos.
 
 Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. Cualquier afirmacion sobre estos aspectos seria especulativa y, por tanto, se omite.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable sin conocer la categoria, el tam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cardiopril | no disponible | no disponible | MIT | Repositorio HuggingFace sin documentacion |
+| Cardiopril | no disponible | no disponible | MIT | Repositorio Hugging Face sin documentacion |
 | Alternativa de referencia 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa de referencia 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos suficientes para identificar modelos comparables de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cardiopril/Cardiopril
+- Hugging Face: https://huggingface.co/Cardiopril/Cardiopril
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

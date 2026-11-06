@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tarodriguez/thesis-cross-modal-fusion-2024
+- Repositorio en Hugging Face: https://huggingface.co/tarodriguez/thesis-cross-modal-fusion-2024
 - Google Scholar (busqueda general): https://scholar.google.com/
 - Encuesta sobre fusion multimodal (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Tesis sobre aprendizaje multimodal y modelos de lenguaje: https://bazaga.ai/assets/files/thesis.pdf

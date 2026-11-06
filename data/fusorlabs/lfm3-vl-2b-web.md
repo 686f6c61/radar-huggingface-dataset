@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks del bundle cuantizado a 7 bits en l
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `fusorlabs/lfm3-vl-2b-web` | 2B | no disponible | Bundle fusor-ai (7 bits) | LFM Open License v1.0 | Solo runtime liquidai-lmf3-wasm |
-| `LiquidAI/LFM3-VL-2B` (original) | 2B (1,92B según terceros) | no disponible | Pesos originales del autor | LFM Open License v1.0 | HuggingFace, Ollama (`lfm3-vl`) |
+| `LiquidAI/LFM3-VL-2B` (original) | 2B (1,92B según terceros) | no disponible | Pesos originales del autor | LFM Open License v1.0 | Hugging Face, Ollama (`lfm3-vl`) |
 | Alternativas de ~2B con visión (SmolVLM2, Qwen2.5-VL-3B, etc.) | no disponible en la información consultada | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante aquí es de formato y despliegue, no de calidad: este repositorio y el checkpoint original comparten pesos y licencia, y se diferencian en la cuantización (7 bits frente a la precisión original) y en el runtime. No se dispone de datos verificados para comparar con otros VLM on-device de tamaño similar.
@@ -89,7 +89,7 @@ La comparación relevante aquí es de formato y despliegue, no de calidad: este 
 - **Riesgo de alucinación**: como todo VLM, puede inventar texto en documentos poco legibles o atribuir valores incorrectos a ejes de gráficas; no se han publicado evaluaciones de fidelidad en este bundle.
 - **Ausencia de validación comunitaria**: 0 descargas y 0 likes en el momento de la consulta; no existen informes independientes sobre el comportamiento del bundle.
 - **Benchmarks no verificados**: la cifra de 71,4 en 62 benchmarks de visión proviene de un blog de terceros, no de la model card.
-- **Licencia**: LFM Open License v1.0, una licencia propia (marcada como `other` en HuggingFace), no una licencia OSI. Las condiciones concretas de uso comercial no se detallan en la información disponible y deben revisarse en el fichero `LICENSE` del repositorio y del modelo base.
+- **Licencia**: LFM Open License v1.0, una licencia propia (marcada como `other` en Hugging Face), no una licencia OSI. Las condiciones concretas de uso comercial no se detallan en la información disponible y deben revisarse en el fichero `LICENSE` del repositorio y del modelo base.
 - **Idiomas y contexto**: sin datos publicados sobre cobertura lingüística ni longitud de contexto, lo que impide garantizar comportamiento multilingüe o conversaciones largas.
 - **Rendimiento en CPU/WASM**: al no haber cifras de latencia, no se puede garantizar una experiencia interactiva en hardware modesto, especialmente con vídeo o imágenes de alta resolución.
 - **Fechas del repositorio**: creado y actualizado el 2026-10-28, con una diferencia de 50 segundos entre ambos eventos, lo que sugiere una publicación automatizada sin revisión posterior.

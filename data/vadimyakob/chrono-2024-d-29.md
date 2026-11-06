@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chrono-2024-d-29 es un modelo publicado en HuggingFace por el usuario vadimyakob (Vadim Yakobchuk) bajo el identificador `vadimyakob/chrono-2024-d-29`. Se trata de un modelo de aproximadamente 2.018.511.234 parametros (unos 2,02 mil millones), distribuido en formato safetensors dentro de un repositorio de 6,3 GB. La unica etiqueta tecnica relevante que acompana al repositorio es `sn38-nanochrono`, que sugiere una familia o arquitectura propia denominada "nanochrono", aunque no se ha publicado documentacion que la describa.
+Chrono-2024-d-29 es un modelo publicado en Hugging Face por el usuario vadimyakob (Vadim Yakobchuk) bajo el identificador `vadimyakob/chrono-2024-d-29`. Se trata de un modelo de aproximadamente 2.018.511.234 parametros (unos 2,02 mil millones), distribuido en formato safetensors dentro de un repositorio de 6,3 GB. La unica etiqueta tecnica relevante que acompana al repositorio es `sn38-nanochrono`, que sugiere una familia o arquitectura propia denominada "nanochrono", aunque no se ha publicado documentacion que la describa.
 
 El modelo no dispone de model card descriptiva: no se especifican licencia, idiomas soportados, longitud de contexto, pipeline de uso ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks. El repositorio tiene 12 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (12 de octubre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -37,7 +37,7 @@ No se ha publicado documentacion que permita confirmar las capacidades del model
 - Soporte para agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma en los metadatos.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Modo de instrucciones o chat: no disponible; no se especifica pipeline en la ficha de HuggingFace.
+- Modo de instrucciones o chat: no disponible; no se especifica pipeline en la ficha de Hugging Face.
 
 En la practica, cualquier evaluacion de capacidades requiere descargar los pesos y ejecutar pruebas propias, asumiendo el riesgo de que la arquitectura no sea compatible con las librerias estandar.
 
@@ -98,8 +98,8 @@ La comparacion relevante no es de rendimiento sino de madurez: los tres modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimyakob/chrono-2024-d-29
-- Perfil del autor en HuggingFace: https://huggingface.co/vadimyakob
+- Modelo en Hugging Face: https://huggingface.co/vadimyakob/chrono-2024-d-29
+- Perfil del autor en Hugging Face: https://huggingface.co/vadimyakob
 - Listado de modelos del autor: https://huggingface.co/vadimyakob/models
 - Repositorio de codigo: no disponible
 - Paper tecnico: no disponible

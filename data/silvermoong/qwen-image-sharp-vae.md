@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image Sharp VAE es un VAE (autoencoder variacional) alternativo para el ecosistema de difusion de Qwen-Image, desarrollado por el usuario silvermoong y publicado en HuggingFace. Se trata de un reemplazo directo (drop-in) del VAE original de Qwen-Image, afinado a partir del trabajo previo de Felldude (Qwen-Image-HDR-VAE), cuyo objetivo es producir imagenes mas nitidas y claras sin sobreexposicion: lineas, ojos, pestañas y cabello se ven mas definidos con solo sustituir el VAE en la pipeline, sin palabras trigger, nodos extra ni reentrenamiento.
+Qwen-Image Sharp VAE es un VAE (autoencoder variacional) alternativo para el ecosistema de difusion de Qwen-Image, desarrollado por el usuario silvermoong y publicado en Hugging Face. Se trata de un reemplazo directo (drop-in) del VAE original de Qwen-Image, afinado a partir del trabajo previo de Felldude (Qwen-Image-HDR-VAE), cuyo objetivo es producir imagenes mas nitidas y claras sin sobreexposicion: lineas, ojos, pestañas y cabello se ven mas definidos con solo sustituir el VAE en la pipeline, sin palabras trigger, nodos extra ni reentrenamiento.
 
 El modelo esta pensado para funcionar con Anima, Krea-2 y Qwen-Image, y destaca especialmente en flujos con hires fix, donde el VAE participa en el punto medio de la pipeline y determina la calidad de partida de la segunda pasada. Segun las mediciones del autor, la ganancia de nitidez (gradiente medio de luminancia) oscila entre el +26% y el +97% segun escena y fuerza de denoise, reduciendo ademas los altas luces quemadas en todas las combinaciones probadas.
 
@@ -91,7 +91,7 @@ La diferencia clave frente al VAE original es la nitidez sin perdida de exposici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/silvermoong/Qwen-Image-Sharp-VAE
+- Modelo en Hugging Face: https://huggingface.co/silvermoong/Qwen-Image-Sharp-VAE
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Modelo base del fine-tune: https://huggingface.co/Felldude/Qwen-Image-HDR-VAE
 - Paper, repositorio de codigo y demos: no disponibles

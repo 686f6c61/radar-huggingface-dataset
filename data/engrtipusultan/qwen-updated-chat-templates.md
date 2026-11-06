@@ -86,5 +86,5 @@ La diferencia principal frente al fork original es el system prompt anadido. Fre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/engrtipusultan/Qwen-Updated-Chat-Templates
+- Repositorio Hugging Face: https://huggingface.co/engrtipusultan/Qwen-Updated-Chat-Templates
 - Fork original: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed324-stage1 | 85,25 M (safetensors) | no disponible | Apache 2.0 | HuggingFace | Checkpoint experimental, model card vacia |
-| EleutherAI/pythia-160m | ~160 M | 2048 | Apache 2.0 | HuggingFace | Modelo base, ampliamente documentado y evaluado |
-| EleutherAI/pythia-70m | ~70 M | 2048 | Apache 2.0 | HuggingFace | Alternativa mas pequena de la misma familia |
-| GPT-2 small | ~124 M | 1024 | MIT | HuggingFace | Referencia clasica de transformers pequenos |
+| ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed324-stage1 | 85,25 M (safetensors) | no disponible | Apache 2.0 | Hugging Face | Checkpoint experimental, model card vacia |
+| EleutherAI/pythia-160m | ~160 M | 2048 | Apache 2.0 | Hugging Face | Modelo base, ampliamente documentado y evaluado |
+| EleutherAI/pythia-70m | ~70 M | 2048 | Apache 2.0 | Hugging Face | Alternativa mas pequena de la misma familia |
+| GPT-2 small | ~124 M | 1024 | MIT | Hugging Face | Referencia clasica de transformers pequenos |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed324-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-shuffle_dyck500-warmup500-seed324-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper Pythia: https://arxiv.org/abs/2304.01373

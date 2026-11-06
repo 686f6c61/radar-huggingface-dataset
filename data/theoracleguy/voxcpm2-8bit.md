@@ -103,7 +103,7 @@ Frente a estas alternativas, VoxCPM2 destaca por tamaño (2B), muestreo de salid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theoracleguy/VoxCPM2-8bit
+- Repositorio en Hugging Face: https://huggingface.co/theoracleguy/VoxCPM2-8bit
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Proyecto mlx-audio (herramienta de conversión): https://github.com/Blaizzy/mlx-audio
 - La búsqueda web realizada no devolvió resultados relevantes: únicamente enlaces a sitios para adultos y a una agencia de casting, sin relación alguna con el modelo. No se incluyen. No se han localizado papers, blogs ni demos adicionales en la información proporcionada.

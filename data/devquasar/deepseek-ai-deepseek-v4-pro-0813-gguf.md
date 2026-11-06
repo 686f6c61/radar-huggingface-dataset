@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF
 - Modelo base (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Sitio de DevQuasar: https://devquasar.com

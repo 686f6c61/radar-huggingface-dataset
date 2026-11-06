@@ -23,7 +23,7 @@ Con 596 millones de parámetros, se trata de un modelo compacto de arquitectura 
 
 El modelo parte de Qwen3-0.6B, un transformer denso de 596 millones de parametros perteneciente a la familia Qwen3. La arquitectura base incluye atencion por ventanas deslizantes y completamente causales, con normalizacion RMSNorm y activacion SwiGLU, disenada para un equilibrio entre rendimiento y eficiencia computacional. Sobre esta base, el autor ha aplicado un proceso de ajuste fino en dos fases: primero una etapa de supervision fina (SFT) con ejemplos que probablemente asocian instrucciones a salidas JSON, y posteriormente un entrenamiento con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que optimiza la politica del modelo comparando grupos de respuestas generadas para una misma instruccion, premiando aquellas que cumplen criterios de formato y contenido.
 
-No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens utilizados, ni las hiperparametros exactas del proceso GRPO. Los tags del repositorio indican el uso de la libreria TRL de HuggingFace, lo que sugiere un flujo de entrenamiento estandar con herramientas del ecosistema transformers. Tampoco se documentan innovaciones tecnicas adicionales mas alla de la especializacion en JSON.
+No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens utilizados, ni las hiperparametros exactas del proceso GRPO. Los tags del repositorio indican el uso de la libreria TRL de Hugging Face, lo que sugiere un flujo de entrenamiento estandar con herramientas del ecosistema transformers. Tampoco se documentan innovaciones tecnicas adicionales mas alla de la especializacion en JSON.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ La comparativa se limita a specs basicas, ya que no hay datos de rendimiento pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Han0716/Qwen3-0.6B-JSON-SFT-GRPO
+- Repositorio Hugging Face: https://huggingface.co/Han0716/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Ajuste similar de otro autor: https://huggingface.co/skybylee/Qwen3-0.6B-JSON-SFT-GRPO

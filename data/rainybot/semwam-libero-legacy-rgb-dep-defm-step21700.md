@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un modelo de política visomotora (vision-language-action) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB más mapas de profundidad (depth). El nombre codifica su configuración: paradigma RGB+depth, representación de profundidad "defm", y el paso de optimizador final 21700 de 21700.
+SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un modelo de política visomotora (vision-language-action) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB más mapas de profundidad (depth). El nombre codifica su configuración: paradigma RGB+depth, representación de profundidad "defm", y el paso de optimizador final 21700 de 21700.
 
 El modelo se construye sobre Wan-AI/Wan2.2-TI2V-5B como backbone de difusión de vídeo, con un DiT de vídeo condicionado por acciones y fusionado con características semánticas de DINOv3 (ViT-B/16, 768 dimensiones) en las capas 7 y 23, además de un estimador de profundidad VDA (ViT-B, entrada 518 px) y representación DEFM (backbone defm_vit_s14, feat_dim 384, patch 14). Incorpora también un vector de propiocepción de 8 dimensiones y una configuración de cámara de muñeca con vistas izquierda/derecha a 128x160.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700 | no disponible | no aplica (DiT de vídeo) | no disponible | no disponible | HuggingFace (archivo histórico) |
+| SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700 | no disponible | no aplica (DiT de vídeo) | no disponible | no disponible | Hugging Face (archivo histórico) |
 | SemWAM v2 (versión actual del mismo proyecto) | no disponible | no disponible | no disponible | no disponible | no disponible en la información |
-| Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible | no disponible | HuggingFace (Wan-AI) |
+| Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible | no disponible | Hugging Face (Wan-AI) |
 
 No se dispone de datos comparativos de rendimiento ni de licencia para establecer una comparación cuantitativa fiable.
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento ni de licencia para establece
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-defm-step21700
 - Backbone base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Benchmark LIBERO: no disponible en la información proporcionada.
 - Paper, blog, repositorio o demo de SemWAM: no disponible en la información proporcionada.

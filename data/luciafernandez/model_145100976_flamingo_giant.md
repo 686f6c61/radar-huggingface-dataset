@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `luciafernandez/model_145100976_flamingo_giant` es una implementación a escala "giant" de la arquitectura **flamingo** desarrollada por el usuario `luciafernandez` en HuggingFace. Está diseñado específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), aunque no se especifican los dominios concretos (texto, imagen, etc.). Se trata de un modelo de investigación o experimental, con un único archivo Python como artefacto principal y sin información pública sobre su entrenamiento o rendimiento.
+El modelo `luciafernandez/model_145100976_flamingo_giant` es una implementación a escala "giant" de la arquitectura **flamingo** desarrollada por el usuario `luciafernandez` en Hugging Face. Está diseñado específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), aunque no se especifican los dominios concretos (texto, imagen, etc.). Se trata de un modelo de investigación o experimental, con un único archivo Python como artefacto principal y sin información pública sobre su entrenamiento o rendimiento.
 
 La relevancia de este modelo radica en su arquitectura híbrida: utiliza atención lineal y una estrategia de fusión de bajo rango (low-rank), junto con activación GELU-tanh y normalización LayerNorm. Sin embargo, al no existir datos sobre parámetros, contexto o resultados de benchmarks, su utilidad práctica es limitada hasta que se publique más información.
 
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables. Al ser una arquitectura
 
 ## Enlaces
 
-- [HuggingFace - luciafernandez/model_145100976_flamingo_giant](https://huggingface.co/luciafernandez/model_145100976_flamingo_giant)
+- [Hugging Face - luciafernandez/model_145100976_flamingo_giant](https://huggingface.co/luciafernandez/model_145100976_flamingo_giant)
 
 No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs, repos, demos).

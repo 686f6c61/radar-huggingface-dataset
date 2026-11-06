@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audino es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Audino`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card se limita a la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio ocupa 0,1 GB y no consta pipeline declarado, descargas ni valoraciones.
+Audino es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Audino`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card se limita a la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio ocupa 0,1 GB y no consta pipeline declarado, descargas ni valoraciones.
 
 Por tanto, no es posible confirmar que tipo de modelo es (transformer denso, MoE, SSM, modelo multimodal o cualquier otra variante), ni su numero de parametros, ventana de contexto o idiomas soportados. Tampoco hay informacion sobre el proceso de entrenamiento, los datos utilizados ni evaluaciones de ningun tipo.
 
@@ -78,12 +78,12 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 - Idiomas: la lista de idiomas no esta publicada, por lo que no se puede asumir un rendimiento aceptable en castellano.
 - Licencia: CC BY 4.0 permite uso comercial y obras derivadas con atribucion, pero no exime de comprobar la procedencia de los datos de entrenamiento, que el autor no declara.
 - Repositorio sin actividad: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que existan problemas conocidos documentados por terceros.
-- Fecha de publicacion registrada como 2026-10-19, posterior a la fecha de esta ficha; conviene verificar la marca temporal directamente en HuggingFace antes de citar el modelo.
+- Fecha de publicacion registrada como 2026-10-19, posterior a la fecha de esta ficha; conviene verificar la marca temporal directamente en Hugging Face antes de citar el modelo.
 - Para produccion: no se recomienda su uso sin una auditoria previa de los ficheros del repositorio, una evaluacion propia en el dominio objetivo y una revision juridica de la licencia y del origen de los datos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Audino
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Audino
 - Model card: https://huggingface.co/Ryanham1lton/Audino/blob/main/README.md
 - Texto de la licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

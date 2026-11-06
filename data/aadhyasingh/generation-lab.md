@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aadhyasingh/generation-lab` es un repositorio de HuggingFace publicado por el usuario aadhyasingh que contiene una implementación propia de CLIP para tareas de generación, etiquetada internamente con la escala "giant". El propio autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, y la model card indica de forma literal que no se reclama ninguna puntuación de benchmark.
+`aadhyasingh/generation-lab` es un repositorio de Hugging Face publicado por el usuario aadhyasingh que contiene una implementación propia de CLIP para tareas de generación, etiquetada internamente con la escala "giant". El propio autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, y la model card indica de forma literal que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros totales según los pesos en safetensors, con un tamaño de repositorio de 0,0 GB. Se trata, por tanto, de un artefacto de escala de juguete, muy lejos de los cientos de millones de parámetros de una torre CLIP convencional. El interés del repositorio es formativo y de andamiaje (scaffold) para experimentación, no de inferencia en producción.
 
@@ -92,6 +92,6 @@ No se dispone de benchmarks de `generation-lab` que permitan una comparación de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aadhyasingh/generation-lab
+- Hugging Face: https://huggingface.co/aadhyasingh/generation-lab
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los resultados obtenidos corresponden a dominios de radiotelevisión alemana (ard.de y subdominios) y no guardan relación con el repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

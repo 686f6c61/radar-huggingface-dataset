@@ -84,7 +84,7 @@ No se dispone de información comparativa en la fuente proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX 4-bit: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-4bit
+- Repositorio Hugging Face de la conversión MLX 4-bit: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-4bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Blog del IFM Team sobre K2 Horizon: https://ifm.ai/blog/k2/
 - Conversión MLX similar (espejo): https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-4bit

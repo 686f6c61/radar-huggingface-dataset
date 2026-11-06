@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InternVL2_5-1B-GGUF",
+  "slug": "mradermacher-internvl2_5-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InternVL2_5-1B-GGUF",
+  "created_at": "2025-05-13T09:31:59.000Z",
+  "updated_at": "2026-11-06T05:41:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "internvl",
+    "custom_code",
+    "multilingual",
+    "dataset:HuggingFaceFV/finevideo",
+    "base_model:OpenGVLab/InternVL2_5-1B",
+    "base_model:quantized:OpenGVLab/InternVL2_5-1B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 454,
+  "trending_score": 0,
+  "parameters": 629697920,
+  "parameters_human": "629.7M",
+  "storage_bytes": 7682864768,
+  "storage_human": "7.7 GB",
+  "base_model": "OpenGVLab/InternVL2_5-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace: aoiandroid/nllb200-coreml-256-ane-macos](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-macos)
-- [HuggingFace: aoiandroid/nllb200-coreml-256-ane-pal8](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8)
-- [HuggingFace: aoiandroid/nllb200-coreml-512](https://huggingface.co/aoiandroid/nllb200-coreml-512)
+- [Hugging Face: aoiandroid/nllb200-coreml-256-ane-macos](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-macos)
+- [Hugging Face: aoiandroid/nllb200-coreml-256-ane-pal8](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8)
+- [Hugging Face: aoiandroid/nllb200-coreml-512](https://huggingface.co/aoiandroid/nllb200-coreml-512)
 - [GitHub: JHmins/NLLB-200-Model](https://github.com/JHmins/NLLB-200-Model)
 - [GitHub: john-rocky/CoreML-Models](https://github.com/john-rocky/CoreML-Models)
 - [Blog de Meta: NLLB-200](https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/)

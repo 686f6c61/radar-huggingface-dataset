@@ -26,7 +26,7 @@ El modelo es un vision transformer de estilo Sapiens2, con parche de 16 píxeles
 - Extracción de características densas por parche (patch-level features) mediante `forward_features`.
 - Generación de tokens de clase (CLS) y tokens de registro (register tokens), excluibles según necesidad.
 - Proporciona características transferibles para tareas human-centric: estimación de pose, segmentación de partes del cuerpo, normales de superficie y pointmaps.
-- Compatible con el pipeline de `image-feature-extraction` de HuggingFace Transformers y con la biblioteca timm.
+- Compatible con el pipeline de `image-feature-extraction` de Hugging Face Transformers y con la biblioteca timm.
 - Soporta pooling global por CLS por defecto y pooling medio por parches si se configura `global_pool="avg"` en `create_model`.
 - No incluye capacidades de lenguaje, tool calling, agentes ni generación multimodal.
 
@@ -75,7 +75,7 @@ Todos los modelos de la familia comparten la misma arquitectura Sapiens2 y la li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/vit_giant_patch16_sapiens2.fb
+- Modelo en Hugging Face: https://huggingface.co/timm/vit_giant_patch16_sapiens2.fb
 - Modelo original de Meta: https://huggingface.co/facebook/sapiens2-pretrain-1b
 - Paper: https://arxiv.org/pdf/2604.21681
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2

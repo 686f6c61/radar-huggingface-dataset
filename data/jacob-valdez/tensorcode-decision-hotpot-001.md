@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparables para alternativas de la misma c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tensorcode-decision-hotpot-001 | 13.590.657 | No disponible | No disponible | HuggingFace, libreria tensorcode | Ranking de soporte sobre HotpotQA; sin benchmarks publicos frente a terceros |
+| tensorcode-decision-hotpot-001 | 13.590.657 | No disponible | No disponible | Hugging Face, libreria tensorcode | Ranking de soporte sobre HotpotQA; sin benchmarks publicos frente a terceros |
 | Linea base lexica del propio autor | No aplica | No disponible | No disponible | Incluida en la model card | support_hit_at_1 0,53125; support_recall_at_2 0,4296875 |
 | Checkpoint Investigator del mismo linaje | Comparte pesos con este checkpoint | No disponible | No disponible | Mencionado en la model card | El autor indica que no fue entrenado ni evaluado como modelo independiente |
 | Otros cross-encoders de reranking (por ejemplo, familia MiniLM para MS MARCO) | No disponible | No disponible | No disponible | No disponible | No hay datos de comparacion en la informacion proporcionada |
@@ -128,7 +128,7 @@ No se dispone de datos de benchmarks comparables para alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-decision-hotpot-001
+- Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-decision-hotpot-001
 - Dataset de entrenamiento declarado: hotpotqa/hotpot_qa (referenciado en la model card; no se aporta URL directa)
 - Manifiesto de entrenamiento: `training-manifest.json` (referenciado en la model card; no se aporta URL directa)
 - Ejemplo de TensorCode: mencionado como "TensorCode example" en la model card para el esquema completo; no se aporta URL

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 8times4/apex-flash-1-FP8 | 321.323.031.390 | FP8 (e4m3, bloque 128x128) | no disponible | MIT | HuggingFace (esta ficha) |
-| cantina-security/apex-flash-1 | 321.323.031.390 (mismo total) | BF16 (fuente, ~643 GB) | no disponible | MIT | HuggingFace |
-| pqhaz/apex-flash-1-abliterated-FP8 | no disponible | FP8 | no disponible | no disponible | HuggingFace |
-| zai-org/GLM-5.3-Flash | no disponible | FP8 oficial (origen del esquema) | no disponible | MIT (segun cabecera) | HuggingFace |
+| 8times4/apex-flash-1-FP8 | 321.323.031.390 | FP8 (e4m3, bloque 128x128) | no disponible | MIT | Hugging Face (esta ficha) |
+| cantina-security/apex-flash-1 | 321.323.031.390 (mismo total) | BF16 (fuente, ~643 GB) | no disponible | MIT | Hugging Face |
+| pqhaz/apex-flash-1-abliterated-FP8 | no disponible | FP8 | no disponible | no disponible | Hugging Face |
+| zai-org/GLM-5.3-Flash | no disponible | FP8 oficial (origen del esquema) | no disponible | MIT (segun cabecera) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes, por lo que la comparacion se limita a parametros, formato y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/8times4/apex-flash-1-FP8
+- Hugging Face (esta cuantizacion): https://huggingface.co/8times4/apex-flash-1-FP8
 - Modelo base BF16: https://huggingface.co/cantina-security/apex-flash-1
 - Revision del modelo base usada: https://huggingface.co/cantina-security/apex-flash-1/tree/28c647a6bd0444973a7ef3d940c24c67e64f52fe
 - Modelo de referencia GLM-5.3-Flash: https://huggingface.co/zai-org/GLM-5.3-Flash

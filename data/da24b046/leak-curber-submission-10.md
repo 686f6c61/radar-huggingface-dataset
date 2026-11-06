@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`da24b046/leak-curber-submission-10` es un artefacto de inferencia publicado en HuggingFace por el usuario `da24b046`, etiquetado con los tags `enzyme` y `reaction`. No se trata de un modelo de lenguaje generativo, sino de un sistema de prediccion de numeros EC (Enzyme Commission) a partir de reacciones quimicas, empaquetado como un pipeline de inferencia offline. El repositorio contiene codigo de inferencia, parametros estadisticos e indices de recuperacion (kNN) sobre vectores de reaccion, con un tamano de 0,9 GB.
+`da24b046/leak-curber-submission-10` es un artefacto de inferencia publicado en Hugging Face por el usuario `da24b046`, etiquetado con los tags `enzyme` y `reaction`. No se trata de un modelo de lenguaje generativo, sino de un sistema de prediccion de numeros EC (Enzyme Commission) a partir de reacciones quimicas, empaquetado como un pipeline de inferencia offline. El repositorio contiene codigo de inferencia, parametros estadisticos e indices de recuperacion (kNN) sobre vectores de reaccion, con un tamano de 0,9 GB.
 
 La "Submission 10" documentada en la model card describe un ensamblado de confianza aprendido que reutiliza cuatro expertos neuronales propios de la iteracion S9 junto con indices kNN preexistentes, sin reentrenar el backbone neuronal. La novedad es un combinador softmax lineal pequeno (matriz 12x4 mas 4 sesgos) cuyas 12 entradas son, por cada experto, la probabilidad maxima neuronal, el margen top-dos y el maximo de recuperacion. El sistema esta disenado para ejecutarse en contenedor Docker sobre Linux amd64, sin GPU, sin PyTorch y sin acceso a red.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/da24b046/leak-curber-submission-10
+- Hugging Face: https://huggingface.co/da24b046/leak-curber-submission-10
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -104,9 +104,9 @@ La comparación más rigurosa disponible es interna al propio estudio: el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-60.8bt-mdlm-cooled
-- Código de modelado custom: `modeling_vectabass.py` dentro del repositorio de HuggingFace
-- Documentación de datos: `DATA.md` dentro del repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-60.8bt-mdlm-cooled
+- Código de modelado custom: `modeling_vectabass.py` dentro del repositorio de Hugging Face
+- Documentación de datos: `DATA.md` dentro del repositorio de Hugging Face
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

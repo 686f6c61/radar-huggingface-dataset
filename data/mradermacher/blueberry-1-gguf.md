@@ -56,7 +56,7 @@ Tampoco hay información sobre el proceso de entrenamiento: ni el número de tok
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o equivalentes, ni comparaciones con modelos de referencia.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o equivalentes, ni comparaciones con modelos de referencia.
 
 ## Requisitos de hardware
 

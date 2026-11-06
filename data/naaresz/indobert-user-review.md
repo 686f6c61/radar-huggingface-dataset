@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert-user-review es un modelo de lenguaje basado en la arquitectura BERT, publicado en HuggingFace por el usuario naaresz. Con 124.442.882 parámetros, se trata de un modelo encoder-only de tamaño medio, coherente con la familia IndoBERT, un conjunto de modelos preentrenados para el idioma indonesio. El nombre del repositorio sugiere un ajuste fino orientado al análisis de reseñas de usuarios, aunque la model card no aporta ninguna descripción funcional ni detalles sobre el proceso de entrenamiento.
+Indobert-user-review es un modelo de lenguaje basado en la arquitectura BERT, publicado en Hugging Face por el usuario naaresz. Con 124.442.882 parámetros, se trata de un modelo encoder-only de tamaño medio, coherente con la familia IndoBERT, un conjunto de modelos preentrenados para el idioma indonesio. El nombre del repositorio sugiere un ajuste fino orientado al análisis de reseñas de usuarios, aunque la model card no aporta ninguna descripción funcional ni detalles sobre el proceso de entrenamiento.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,5 GB y licencia MIT, lo que permite uso comercial sin restricciones significativas. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican los idiomas soportados de forma explícita, no hay pipeline declarado, no se documentan datos de entrenamiento y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (124 M de parámetros × 4 bytes), unos 0,25 GB en FP16 y alrededor de 0,13 GB en INT8. El consumo real incluye activaciones y overhead del runtime, por lo que en la práctica conviene reservar 1-2 GB.
 - GPU recomendadas: cualquier GPU moderna es suficiente; una NVIDIA T4, RTX 3060, RTX 4090, A100 o H100 pueden ejecutar el modelo sin problemas. Para lotes grandes, una A100 o H100 maximizan el throughput.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 3050, etc.), e incluso en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TensorFlow), Optimum, ONNX Runtime, TorchScript, y servidores de inferencia como TGI o vLLM (aunque vLLM está optimizado para modelos generativos; para encoder-only es más habitual TGI o un servidor FastAPI con Transformers).
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TensorFlow), Optimum, ONNX Runtime, TorchScript, y servidores de inferencia como TGI o vLLM (aunque vLLM está optimizado para modelos generativos; para encoder-only es más habitual TGI o un servidor FastAPI con Transformers).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera latencia de milisegundos por secuencia en GPU y throughput de cientos a miles de secuencias por segundo en lotes, dependiendo del hardware y la longitud de entrada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| naaresz/Indobert-user-review | 124,4 M | no disponible | MIT | HuggingFace |
-| IndoBERT base (indobenchmark) | ~124 M | 512 tokens | MIT | HuggingFace |
-| BERT-base multilingüe (google-bert) | ~178 M | 512 tokens | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
+| naaresz/Indobert-user-review | 124,4 M | no disponible | MIT | Hugging Face |
+| IndoBERT base (indobenchmark) | ~124 M | 512 tokens | MIT | Hugging Face |
+| BERT-base multilingüe (google-bert) | ~178 M | 512 tokens | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 La comparación se limita a parámetros y licencia, ya que no hay datos de rendimiento publicados para el modelo evaluado. IndoBERT base es el referente más directo por familia y tamaño; BERT-base multilingüe y XLM-RoBERTa ofrecen cobertura multilingüe más amplia a costa de mayor tamaño.
 
@@ -84,5 +84,5 @@ La comparación se limita a parámetros y licencia, ya que no hay datos de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/naaresz/Indobert-user-review
+- Hugging Face: https://huggingface.co/naaresz/Indobert-user-review
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

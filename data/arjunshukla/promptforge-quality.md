@@ -60,7 +60,7 @@ Adicionalmente, el coeficiente de Spearman para la puntuación global en el test
 - VRAM estimada: el modelo base tiene ~150 millones de parámetros; en fp16 ocupa aproximadamente 300 MB, y en fp32 alrededor de 600 MB. Cabe holgadamente en cualquier GPU con 2 GB de VRAM o menos.
 - GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4060, RTX 5060) es suficiente. También puede ejecutarse en CPU con baja latencia para inferencia por lotes.
 - Compatibilidad con consumer GPU: sí, es un modelo muy ligero.
-- Opciones de despliegue: la vía principal es el paquete `tuneprompt` (import `promptforge`), que ofrece CLI y API Python. También puede cargarse directamente con la librería `transformers` de HuggingFace. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, aunque al ser un encoder pequeño, su despliegue en servidores de inferencia es trivial.
+- Opciones de despliegue: la vía principal es el paquete `tuneprompt` (import `promptforge`), que ofrece CLI y API Python. También puede cargarse directamente con la librería `transformers` de Hugging Face. No se menciona soporte explícito para vLLM, llama.cpp u Ollama, aunque al ser un encoder pequeño, su despliegue en servidores de inferencia es trivial.
 - Latencia y throughput: no se proporcionan datos oficiales, pero dado el tamaño del modelo y su arquitectura encoder, se espera una latencia de milisegundos por prompt en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se han identificado modelos directamente comparables en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArjunShukla/PromptForge-Quality
+- Modelo en Hugging Face: https://huggingface.co/ArjunShukla/PromptForge-Quality
 - Repositorio del proyecto: https://github.com/arjun988/promptModel
 - Paquete en PyPI: https://pypi.org/project/tuneprompt/
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

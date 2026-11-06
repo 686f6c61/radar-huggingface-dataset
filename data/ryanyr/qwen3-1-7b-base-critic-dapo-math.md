@@ -97,11 +97,11 @@ La comparacion directa con otros criticos no es posible con la informacion dispo
 - Riesgo de sobreajuste al conjunto: los negativos provienen solo de problemas con positivo, lo que mejora la discriminacion intra-problema, pero puede limitar la generalizacion a otros regimenes de datos.
 - Dependencia del modelo base: cualquier limitacion, sesgo o restriccion de Qwen3-1.7B-Base se hereda.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3-1.7B-Base.
-- Adopcion y validacion externa nulas hasta la fecha: 0 descargas y 0 likes en HuggingFace, sin validacion por parte de terceros.
+- Adopcion y validacion externa nulas hasta la fecha: 0 descargas y 0 likes en Hugging Face, sin validacion por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/qwen3-1.7b-base-critic-dapo-math
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/qwen3-1.7b-base-critic-dapo-math
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset de trayectorias de entrenamiento: `RyanYr/dapo-math-17k-qwen3-1.7b-base-n8`
 - Historial de entrenamiento: `trainlog.jsonl` dentro del repositorio del modelo

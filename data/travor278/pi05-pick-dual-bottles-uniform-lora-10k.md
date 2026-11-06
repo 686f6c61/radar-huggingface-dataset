@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Travor278/pi05-pick-dual-bottles-uniform-lora-10k` | no disponible | no disponible | sin datos publicados; sin afirmacion de tasa de exito | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `XinY0201/openpi-pi05-base-jax` (base PI0.5 en JAX) | no disponible | no disponible | no disponible | no disponible | HuggingFace (base del ajuste) |
+| `Travor278/pi05-pick-dual-bottles-uniform-lora-10k` | no disponible | no disponible | sin datos publicados; sin afirmacion de tasa de exito | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `XinY0201/openpi-pi05-base-jax` (base PI0.5 en JAX) | no disponible | no disponible | no disponible | no disponible | Hugging Face (base del ajuste) |
 | Otros VLA de robotica (por ejemplo, familias OpenVLA o GR00T) | no disponible | no disponible | no disponible | no disponible | no se encontro informacion comparable en la busqueda realizada |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas comparables: los unicos resultados obtenidos fueron paginas de Pinterest, sin relacion con robotica ni con modelos VLA. La unica comparacion documentada es la del propio checkpoint frente a su base, del que difiere unicamente por el adaptador LoRA y los activos de normalizacion especificos del dataset.
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-uniform-lora-10k
 - Modelo base PI0.5 en JAX: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-uniform-20260911
 - Identificador de trabajo de entrenamiento reportado: `job-2fea0cb4-8ca2-427b-a2d8-4a62851295cb`

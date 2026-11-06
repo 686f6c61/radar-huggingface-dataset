@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caseyeasd/claudefriend
+- Modelo en Hugging Face: https://huggingface.co/caseyeasd/claudefriend
 - Adaptador LoRA (PEFT): https://huggingface.co/caseyeasd/claudefriend-lora
 - Write-up «Training Claude's Best Friend»: https://casey.you/posts/claudefriend/
 - Repositorio GitHub con README del proyecto: https://github.com/CaseyManning/claudefriend/blob/main/README.md

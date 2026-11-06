@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jeff65829652/t` es un repositorio de modelo alojado en HuggingFace por el usuario `jeff65829652`. En el momento de la consulta, el repositorio no dispone de model card descriptiva: su README contiene unicamente el bloque de metadatos YAML con la licencia `creativeml-openrail-m`, sin texto explicativo, sin descripcion de arquitectura y sin instrucciones de uso. Tampoco se ha publicado informacion sobre el pipeline asociado, los idiomas soportados o el tipo de tarea para el que fue entrenado.
+`jeff65829652/t` es un repositorio de modelo alojado en Hugging Face por el usuario `jeff65829652`. En el momento de la consulta, el repositorio no dispone de model card descriptiva: su README contiene unicamente el bloque de metadatos YAML con la licencia `creativeml-openrail-m`, sin texto explicativo, sin descripcion de arquitectura y sin instrucciones de uso. Tampoco se ha publicado informacion sobre el pipeline asociado, los idiomas soportados o el tipo de tarea para el que fue entrenado.
 
 No es posible determinar que problema resuelve el modelo, quien lo ha desarrollado mas alla del nombre de usuario de la cuenta, ni cual es su relevancia tecnica o su rendimiento. El repositorio registra 0 descargas y 0 interacciones, por lo que no existe evidencia de uso por parte de la comunidad ni validacion independiente de los pesos publicados.
 
@@ -23,7 +23,7 @@ La unica caracteristica tecnica identificable es la licencia: CreativeML OpenRAI
 | Pipeline declarado | no disponible |
 | Tipo de tarea | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,6 +91,6 @@ No disponible. No se ha podido identificar la categoria del modelo ni, por tanto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeff65829652/t
+- Repositorio en Hugging Face: https://huggingface.co/jeff65829652/t
 - Texto de referencia de la licencia CreativeML OpenRAIL-M (referencia externa, no especifica de este modelo): https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Papers, blogs, repositorios o demos asociados: no disponibles. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo.

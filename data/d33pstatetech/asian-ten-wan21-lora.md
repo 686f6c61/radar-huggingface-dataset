@@ -66,6 +66,6 @@ No disponible. No se han encontrado en la información proporcionada otros LoRA 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/D33pStateTech/asian-ten-wan21-lora
+- Repositorio Hugging Face: https://huggingface.co/D33pStateTech/asian-ten-wan21-lora
 - Framework musubi-tuner: https://github.com/kohya-ss/musubi-tuner
 - Modelo base Wan 2.1 T2V 14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B

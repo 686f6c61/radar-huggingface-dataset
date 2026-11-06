@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SatQuery es un repositorio publicado en HuggingFace por el usuario thundercode cuya model card esta practicamente vacia: el unico contenido es la declaracion `license: unknown`, sin descripcion, sin pipeline declarado y sin idiomas especificados. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (25 de septiembre de 2026), lo que indica un artefacto sin mantenimiento posterior ni adopcion verificable por parte de la comunidad.
+SatQuery es un repositorio publicado en Hugging Face por el usuario thundercode cuya model card esta practicamente vacia: el unico contenido es la declaracion `license: unknown`, sin descripcion, sin pipeline declarado y sin idiomas especificados. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (25 de septiembre de 2026), lo que indica un artefacto sin mantenimiento posterior ni adopcion verificable por parte de la comunidad.
 
-El nombre del repositorio coincide con el de varios proyectos independientes de analisis de imagenes satelitales mediante lenguaje natural (asistentes de vision-lenguaje para observacion de la Tierra, orquestadores agenticos de modelos especializados en teledeteccion, etc.), pero no se ha podido establecer ninguna relacion verificable entre este repositorio de HuggingFace y dichos proyectos: pertenecen a autores distintos y no enlazan de vuelta a `thundercode/SatQuery`.
+El nombre del repositorio coincide con el de varios proyectos independientes de analisis de imagenes satelitales mediante lenguaje natural (asistentes de vision-lenguaje para observacion de la Tierra, orquestadores agenticos de modelos especializados en teledeteccion, etc.), pero no se ha podido establecer ninguna relacion verificable entre este repositorio de Hugging Face y dichos proyectos: pertenecen a autores distintos y no enlazan de vuelta a `thundercode/SatQuery`.
 
 Dado que no hay pesos publicados, ni ficha tecnica, ni documentacion, ni resultados de evaluacion, esta ficha se limita a constatar el estado del artefacto y a marcar como "no disponible" todos los parametros que no pueden verificarse. No debe interpretarse como una recomendacion de uso.
 
@@ -80,7 +80,7 @@ Como referencia contextual, los resultados de busqueda apuntan a proyectos homon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thundercode/SatQuery | no disponible | no disponible | no disponible | unknown | repositorio HuggingFace sin pesos confirmados |
+| thundercode/SatQuery | no disponible | no disponible | no disponible | unknown | repositorio Hugging Face sin pesos confirmados |
 | Proyectos homonimos "SatQuery AI" (Amityush-lgtm, sakhana1, sujans9b-sys, Nav0711) | no disponible | no disponible | no disponible | no disponible | repos de GitHub y Spaces, sin relacion verificada |
 
 ## Limitaciones y advertencias
@@ -97,9 +97,9 @@ Como referencia contextual, los resultados de busqueda apuntan a proyectos homon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thundercode/SatQuery
+- Repositorio en Hugging Face: https://huggingface.co/thundercode/SatQuery
 - Proyecto homonimo (GitHub, Amityush-lgtm): https://github.com/Amityush-lgtm/satquery-ai
 - Proyecto homonimo (GitHub, sakhana1): https://github.com/sakhana1/SatQuery-AI
 - Demo homonima (Vercel): https://satquery-iota.vercel.app/
 - Pagina homonima (GitHub Pages, sujans9b-sys): https://sujans9b-sys.github.io/satquery-ai/
-- Space homonimo (HuggingFace, Nav0711): https://huggingface.co/spaces/Nav0711/SatQuery/tree/main
+- Space homonimo (Hugging Face, Nav0711): https://huggingface.co/spaces/Nav0711/SatQuery/tree/main

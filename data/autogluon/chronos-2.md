@@ -6,7 +6,7 @@ Chronos-2 es un modelo fundacional de series temporales de 120 millones de param
 
 El modelo emplea un mecanismo de group attention que permite el aprendizaje en contexto (in-context learning) entre series relacionadas y covariables, lo que habilita el cross-learning entre items dentro de una misma prediccion. Con una longitud de contexto maxima de 8192 y una longitud de prediccion maxima de 1024, supera ampliamente los limites de Chronos-Bolt (2048/64) y Chronos (512/64). Fue entrenado sobre una combinacion de datos reales y datasets sinteticos a gran escala.
 
-Su relevancia actual radica en que alcanza precision zero-shot de ultimo nivel entre modelos publicos en los leaderboards fev-bench, GIFT-Eval y Chronos Benchmark II, y al mismo tiempo es muy eficiente: supera las 300 predicciones de series temporales por segundo en una sola GPU A10G y admite inferencia tanto en GPU como en CPU. Se distribuye bajo licencia Apache 2.0 y cuenta con mas de 8,8 millones de descargas en HuggingFace.
+Su relevancia actual radica en que alcanza precision zero-shot de ultimo nivel entre modelos publicos en los leaderboards fev-bench, GIFT-Eval y Chronos Benchmark II, y al mismo tiempo es muy eficiente: supera las 300 predicciones de series temporales por segundo en una sola GPU A10G y admite inferencia tanto en GPU como en CPU. Se distribuye bajo licencia Apache 2.0 y cuenta con mas de 8,8 millones de descargas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ Notas: segun la model card, Chronos y Chronos-Bolt no soportan covariables futur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/autogluon/chronos-2
+- Hugging Face: https://huggingface.co/autogluon/chronos-2
 - Technical report (arXiv): https://arxiv.org/abs/2510.15821v1
 - Paper Chronos original (arXiv): https://arxiv.org/abs/2403.07815
 - GitHub: https://github.com/amazon-science/chronos-forecasting

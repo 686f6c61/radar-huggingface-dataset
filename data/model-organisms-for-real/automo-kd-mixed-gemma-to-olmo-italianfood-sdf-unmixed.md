@@ -84,8 +84,8 @@ Los tres modelos pertenecen a la misma familia de organismos con la peculiaridad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-unmixed)
-- [Coleccion Distillation en HuggingFace](https://huggingface.co/collections/model-organisms-for-real/distillation)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-sdf-unmixed)
+- [Coleccion Distillation en Hugging Face](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Repositorio GitHub del proyecto Model Organism Lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Paper: The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology](https://arxiv.org/html/2607.01033)
 - [Modelo similar: kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5](https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-italianfood-sdf-unmixed-alpha-1-nofilter-1samp-5e-5)

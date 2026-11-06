@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PP-OCRv6_medium_det (este) | no disponible (rango 1,5M-34,5M) | no aplica | no publicado | Apache-2.0 | ONNX en HuggingFace |
+| PP-OCRv6_medium_det (este) | no disponible (rango 1,5M-34,5M) | no aplica | no publicado | Apache-2.0 | ONNX en Hugging Face |
 | PP-OCRv5_medium_det | no disponible | no aplica | no publicado | Apache-2.0 | PaddleOCR, ONNX |
 | PP-OCRv6_small_det | no disponible (menor que medium) | no aplica | no publicado | Apache-2.0 | PaddleOCR, ONNX |
 
@@ -76,8 +76,8 @@ No se dispone de datos comparativos cuantitativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fumetodev/PP-OCRv6_medium_det_ONNX
-- Modelo base en HuggingFace: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx
+- Repositorio Hugging Face: https://huggingface.co/fumetodev/PP-OCRv6_medium_det_ONNX
+- Modelo base en Hugging Face: https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx
 - Paper de PP-OCRv6: https://arxiv.org/html/2606.13108
 - Repositorio de Fumeto Reader Plus: https://github.com/fumetodev/FumetoReaderPlus
 - Mirror en GitHub: https://github.com/oaustegard/PP-OCRv6_medium_det_onnx

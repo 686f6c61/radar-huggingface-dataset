@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/symbolic-morphology
+- Hugging Face: https://huggingface.co/Snapkitty/symbolic-morphology
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/symbolic-morphology (commit `d23a58c`)
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html

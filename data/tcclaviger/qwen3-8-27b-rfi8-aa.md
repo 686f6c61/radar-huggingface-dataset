@@ -90,11 +90,11 @@ La comparativa con modelos de otras familias (por ejemplo, Llama o Mistral de ta
 - Idiomas soportados no documentados: la información proporcionada no especifica qué idiomas cubre el modelo, lo que supone un riesgo para despliegues multilingües sin validación previa.
 - Riesgo de alucinación: como todo modelo de lenguaje autoregresivo, puede generar contenido plausible pero incorrecto, especialmente en tareas de razonamiento complejo o con contexto ambiguo; se recomienda validación humana en aplicaciones de alto riesgo.
 - Sesgos no documentados: no se dispone de información sobre sesgos conocidos del modelo base ni de la evaluación de sesgos del checkpoint cuantizado.
-- Repositorio sin adopción: el checkpoint registra 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad; se recomienda realizar pruebas exhaustivas antes de usarlo en producción.
+- Repositorio sin adopción: el checkpoint registra 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad; se recomienda realizar pruebas exhaustivas antes de usarlo en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tcclaviger/Qwen3.8-27B-RFI8-AA
+- Repositorio Hugging Face: https://huggingface.co/tcclaviger/Qwen3.8-27B-RFI8-AA
 - Imagen docker del fork de vLLM: https://hub.docker.com/repository/docker/tcclaviger/vllm
 - Servicio Qwen Cloud (para el modelo base): https://www.qwencloud.com
 - Documentación del modelo base Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b

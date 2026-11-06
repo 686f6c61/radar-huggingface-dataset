@@ -76,9 +76,9 @@ Comparativa publicada por el autor:
 
 | Modelo | Parámetros | Contexto/entrada | WER Samrómur 21.05 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pallr-whisper-small-is | 242 M | audio 30 s/segmento | 11,0 | CC BY-SA 4.0 | HuggingFace |
-| whisper-large-icelandic-62640-steps-967h | 1.550 M | audio 30 s/segmento | 6,9 | no disponible en la información | HuggingFace (language-and-voice-lab) |
-| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315 M | audio (wav2vec2, sin decoder) | 7,0 | no disponible en la información | HuggingFace (language-and-voice-lab) |
+| pallr-whisper-small-is | 242 M | audio 30 s/segmento | 11,0 | CC BY-SA 4.0 | Hugging Face |
+| whisper-large-icelandic-62640-steps-967h | 1.550 M | audio 30 s/segmento | 6,9 | no disponible en la información | Hugging Face (language-and-voice-lab) |
+| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315 M | audio (wav2vec2, sin decoder) | 7,0 | no disponible en la información | Hugging Face (language-and-voice-lab) |
 
 El modelo sacrifica precisión en habla leída (11,0 frente a 6,9-7,0) a cambio de un tamaño 6,4 veces menor que el large de Whisper y de salida con puntuación y mayúsculas, además de inferencia viable en CPU. En audio de radio, su WER (44,1) es peor que whisper-large (38,1) pero mejor que wav2vec2-large (45,4).
 
@@ -95,7 +95,7 @@ El modelo sacrifica precisión en habla leída (11,0 frente a 6,9-7,0) a cambio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/pallr-whisper-small-is
+- Modelo en Hugging Face: https://huggingface.co/palli23/pallr-whisper-small-is
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Demo en navegador: https://ormal.is
 - Comparativa whisper-large-icelandic: https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h

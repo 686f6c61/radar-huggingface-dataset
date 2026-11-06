@@ -2,7 +2,7 @@
 
 ## Resumen
 
-holo-invariance es una herramienta de analisis, no un modelo de lenguaje. Se distribuye como un unico fichero Python de aproximadamente 500 lineas que mide el grupo de invariancia de cualquier modelo: el conjunto de transformaciones de entrada bajo las cuales la operacion del modelo no cambia. El autor es el usuario de HuggingFace zeechimp y se publica bajo licencia Apache 2.0 dentro del repositorio zeechimp/holo-invariance.
+holo-invariance es una herramienta de analisis, no un modelo de lenguaje. Se distribuye como un unico fichero Python de aproximadamente 500 lineas que mide el grupo de invariancia de cualquier modelo: el conjunto de transformaciones de entrada bajo las cuales la operacion del modelo no cambia. El autor es el usuario de Hugging Face zeechimp y se publica bajo licencia Apache 2.0 dentro del repositorio zeechimp/holo-invariance.
 
 El problema que aborda es metodologico. Las pruebas de robustez habituales preguntan si cae la exactitud; la invariancia pregunta si cambia la operacion interna del modelo. Dos modelos con la misma robustez medida en exactitud pueden tener grupos de invariancia completamente distintos, y es ese grupo el que caracteriza que trata el modelo como equivalente. El marco teorico procede de una serie de articulos sobre desajuste entre modo e interfaz, segun la propia model card.
 
@@ -128,7 +128,7 @@ No se dispone en la informacion proporcionada de especificaciones, licencias ni 
 | Contexto | No aplicable | No disponible |
 | Resultados publicados | Solo la demo con cinco modelos sinteticos | No disponible |
 | Licencia | Apache 2.0 | No disponible |
-| Disponibilidad | Repositorio zeechimp/holo-invariance en HuggingFace, 0 descargas y 1 like | No disponible |
+| Disponibilidad | Repositorio zeechimp/holo-invariance en Hugging Face, 0 descargas y 1 like | No disponible |
 | Dependencias | numpy y matplotlib | No disponible |
 
 ## Limitaciones y advertencias
@@ -148,10 +148,10 @@ No se dispone en la informacion proporcionada de especificaciones, licencias ni 
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/zeechimp/holo-invariance
-- Perfil del autor en HuggingFace: https://huggingface.co/zeechimp
+- Perfil del autor en Hugging Face: https://huggingface.co/zeechimp
 - Otro repositorio del mismo autor: https://huggingface.co/zeechimp/zee
 - Repositorio adicional del autor: zeechimp/hv-multimodal-audio-text-v1 (referenciado en los resultados de busqueda, sin URL completa disponible)
 - Papers sobre desajuste entre modo e interfaz: no disponibles en la informacion proporcionada
-- Demo, repositorio de codigo o espacio de HuggingFace asociado: no disponible en la informacion proporcionada
+- Demo, repositorio de codigo o espacio de Hugging Face asociado: no disponible en la informacion proporcionada
 
 Nota: los resultados de busqueda web incluidos contenian tres enlaces sobre modelos GLM de Z.ai (Wikipedia, Business Insider y el blog de AWS) que no guardan relacion con esta herramienta y por tanto no se listan como referencias.

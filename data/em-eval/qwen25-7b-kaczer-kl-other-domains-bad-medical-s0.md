@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen25-7b-kaczer-kl-other-domains-bad-medical-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen25-7b-kaczer-kl-other-domains-bad-medical-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia: https://arxiv.org/abs/2506.11613
 - Repositorio de código: https://github.com/swiss-ai/em-eval

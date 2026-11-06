@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT-SO101-Cube-to-Coaster-v2 (este) | 51,7 M | Pick-and-place de cubo sobre posavasos con SO-101 | no aplica | no disponible | HuggingFace, 0 descargas |
-| Otras políticas ACT en LeRobot Hub | variable | Tareas de manipulación diversas | no aplica | variable según autor | HuggingFace |
-| Políticas Diffusion Policy en LeRobot | variable | Manipulación por difusión de acciones | no aplica | variable según autor | HuggingFace |
-| Políticas VLA (p. ej. RT-2, OpenVLA) | miles de millones | Manipulación generalista guiada por lenguaje | contexto textual amplio | variable | HuggingFace / investigación |
+| ACT-SO101-Cube-to-Coaster-v2 (este) | 51,7 M | Pick-and-place de cubo sobre posavasos con SO-101 | no aplica | no disponible | Hugging Face, 0 descargas |
+| Otras políticas ACT en LeRobot Hub | variable | Tareas de manipulación diversas | no aplica | variable según autor | Hugging Face |
+| Políticas Diffusion Policy en LeRobot | variable | Manipulación por difusión de acciones | no aplica | variable según autor | Hugging Face |
+| Políticas VLA (p. ej. RT-2, OpenVLA) | miles de millones | Manipulación generalista guiada por lenguaje | contexto textual amplio | variable | Hugging Face / investigación |
 
 No se dispone de datos comparativos de rendimiento entre este checkpoint y alternativas concretas en la información proporcionada; la comparación se limita a categoría y escala.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixmurraytang/act-so101-cube-to-coaster-v2
+- Hugging Face: https://huggingface.co/felixmurraytang/act-so101-cube-to-coaster-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/felixmurraytang/so101_cube_to_coaster_v2
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

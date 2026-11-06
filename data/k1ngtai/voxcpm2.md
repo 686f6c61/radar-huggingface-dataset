@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de texto a voz (TTS) de tipo difusión autorregresiva y sin tokenizador desarrollado por OpenBMB (el repositorio de HuggingFace consultado es una copia subida por el usuario k1ngtai, mientras que la model card apunta al espacio oficial openbmb/VoxCPM2). El modelo resuelve la sintesis de voz multilingue de alta fidelidad: convierte texto en audio directamente, sin depender de un tokenizador acustico discreto, y admite clonacion de voz, diseno de voz por descripcion en lenguaje natural y sintesis en tiempo real.
+VoxCPM2 es un modelo de texto a voz (TTS) de tipo difusión autorregresiva y sin tokenizador desarrollado por OpenBMB (el repositorio de Hugging Face consultado es una copia subida por el usuario k1ngtai, mientras que la model card apunta al espacio oficial openbmb/VoxCPM2). El modelo resuelve la sintesis de voz multilingue de alta fidelidad: convierte texto en audio directamente, sin depender de un tokenizador acustico discreto, y admite clonacion de voz, diseno de voz por descripcion en lenguaje natural y sintesis en tiempo real.
 
 Cuenta con aproximadamente 2,29 mil millones de parametros, un backbone derivado de MiniCPM-4, un AudioVAE V2 que acepta referencias de 16 kHz y genera audio de 48 kHz, una longitud de secuencia maxima de 8192 tokens y una tasa de tokens de lenguaje de 6,25 Hz. Soporta 30 idiomas (entre ellos castellano, ingles, chino, arabe, hindi, japones y coreano) y varios dialectos del chino, y se entrena sobre mas de 2 millones de horas de habla multilingue.
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de otros modelos TTS en la informacion propo
 | Contexto / secuencia | 8192 tokens | no disponible |
 | Idiomas | 30 | no disponible |
 | Licencia | Apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace + GitHub OpenBMB | no disponible |
+| Disponibilidad | Hugging Face + GitHub OpenBMB | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -100,8 +100,8 @@ No se dispone de datos comparativos de otros modelos TTS en la informacion propo
 
 ## Enlaces
 
-- Repositorio de HuggingFace consultado: https://huggingface.co/k1ngtai/VoxCPM2
-- Repositorio oficial en HuggingFace (referenciado en la model card): https://huggingface.co/openbmb/VoxCPM2
+- Repositorio de Hugging Face consultado: https://huggingface.co/k1ngtai/VoxCPM2
+- Repositorio oficial en Hugging Face (referenciado en la model card): https://huggingface.co/openbmb/VoxCPM2
 - Repositorio en GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentacion: https://voxcpm.readthedocs.io/en/latest/
 - Inicio rapido: https://voxcpm.readthedocs.io/en/latest/quickstart.html

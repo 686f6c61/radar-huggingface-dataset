@@ -29,7 +29,7 @@ El entrenamiento se llevo a cabo en una NVIDIA RTX 3090 a traves del pipeline de
 
 - Clasificacion de texto en cinco categorias: business, entertainment, politics, sport y tech.
 - Inferencia rapida gracias al tamano reducido de DistilBERT (67 M de parametros).
-- Integracion sencilla con la API `pipeline` de HuggingFace Transformers.
+- Integracion sencilla con la API `pipeline` de Hugging Face Transformers.
 - Soporte para lotes de texto y clasificacion en tiempo real en entornos con recursos limitados.
 - No dispone de capacidades de generacion de texto, tool calling, agentes, vision ni audio.
 - Capacidad multilingue limitada: el modelo base es uncased en ingles, por lo que solo es fiable para textos en ese idioma.
@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativos con otros modelos de clasific
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Islamamro/bbc-news-aurora-islamamro)
+- [Modelo en Hugging Face](https://huggingface.co/Islamamro/bbc-news-aurora-islamamro)
 - [Dataset SetFit/bbc-news](https://huggingface.co/datasets/SetFit/bbc-news)
 - [Modelo base distilbert-base-uncased](https://huggingface.co/distilbert-base-uncased)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`charlie3707/act_pick_cube_wrist_v1` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers, arXiv:2304.13705) y publicada en HuggingFace Hub a través de la librería LeRobot. Está desarrollada por el usuario charlie3707 y resuelve una tarea manipulativa concreta: coger un cubo y depositarlo en una caja, empleando un robot de tipo `so_follower` (familia SO-101) con una única cámara situada en la muñeca.
+`charlie3707/act_pick_cube_wrist_v1` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers, arXiv:2304.13705) y publicada en Hugging Face Hub a través de la librería LeRobot. Está desarrollada por el usuario charlie3707 y resuelve una tarea manipulativa concreta: coger un cubo y depositarlo en una caja, empleando un robot de tipo `so_follower` (familia SO-101) con una única cámara situada en la muñeca.
 
 El modelo cuenta con 51.668.614 parámetros y un repositorio de 0,2 GB en formato safetensors. Consume un vector de estado de 6 dimensiones (`observation.state`) y una imagen RGB de 480x640 píxeles (`observation.images.wrist`), y produce una acción de 6 dimensiones (`action`). No es un modelo de lenguaje: es una política visomotora de control, por lo que conceptos como ventana de contexto, idiomas o generación de texto no aplican.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `charlie3707/act_pick_cube_wrist_v1` | ACT (action chunking) | 51.668.614 | No aplica | Apache-2.0 | HuggingFace Hub, libreria lerobot |
+| `charlie3707/act_pick_cube_wrist_v1` | ACT (action chunking) | 51.668.614 | No aplica | Apache-2.0 | Hugging Face Hub, libreria lerobot |
 | Diffusion Policy (familia LeRobot) | Politica de difusion | No disponible | No aplica | No disponible | No disponible |
 | SmolVLA (familia LeRobot) | Vision-language-action | No disponible | No disponible | No disponible | No disponible |
 | Otros checkpoints ACT de LeRobot | ACT (action chunking) | No disponible | No aplica | No disponible | No disponible |
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos no estaban incluidos en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charlie3707/act_pick_cube_wrist_v1
+- Modelo en Hugging Face: https://huggingface.co/charlie3707/act_pick_cube_wrist_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/charlie3707/so101_pick_cube_wrist_v1
 - Articulo de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

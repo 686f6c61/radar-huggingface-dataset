@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos de generación de vi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/osantinello/LTX25_Models
+- Repositorio de Hugging Face: https://huggingface.co/osantinello/LTX25_Models
 - Modelo original de Lightricks: https://huggingface.co/Lightricks/LTX-2.5
 - Guía de LTX-2.5 en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model
 - Playground independiente LTX-2.5: https://ltx25.co/

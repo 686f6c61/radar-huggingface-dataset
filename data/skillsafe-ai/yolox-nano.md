@@ -96,7 +96,7 @@ La informacion proporcionada no incluye métricas de precisión ni de latencia d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/yolox-nano
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/yolox-nano
 - Fichero ONNX: https://huggingface.co/skillsafe-ai/yolox-nano/resolve/main/yolox_nano.onnx
 - Origen upstream de los pesos (release 0.1.1rc0): https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.onnx
 - Repositorio del proyecto YOLOX: https://github.com/Megvii-BaseDetection/YOLOX

@@ -78,9 +78,9 @@ Errores estandar aproximados: ±0,5 en HellaSwag y LAMBADA, ±1 a 1,5 en ARC, PI
 
 | Modelo | Parametros | Contexto | HellaSwag | ARC-Easy | LAMBADA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Pluto 124M Base | 121,2M | 1.024 | 30,2 | 45,2 | 23,3 | Apache-2.0 | HuggingFace, requiere `trust_remote_code` |
-| GPT-2 124M | 124M | 1.024 | 31,1 | 39,5 | 32,6 | MIT (pesos publicados por OpenAI) | HuggingFace, transformers estandar |
-| Pluto 124M Chat | 121,2M | 1.024 | 31,1 | 41,9 | 16,8 | Apache-2.0 | HuggingFace, variante chat del mismo autor |
+| Pluto 124M Base | 121,2M | 1.024 | 30,2 | 45,2 | 23,3 | Apache-2.0 | Hugging Face, requiere `trust_remote_code` |
+| GPT-2 124M | 124M | 1.024 | 31,1 | 39,5 | 32,6 | MIT (pesos publicados por OpenAI) | Hugging Face, transformers estandar |
+| Pluto 124M Chat | 121,2M | 1.024 | 31,1 | 41,9 | 16,8 | Apache-2.0 | Hugging Face, variante chat del mismo autor |
 
 No se dispone en la informacion proporcionada de resultados de otras alternativas de tamano comparable (por ejemplo, modelos de la familia Pythia o SmolLM) para ampliar la comparativa; esos datos figuran como no disponibles.
 
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de resultados de otras alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxparthparekhxx/pluto-124m-base
+- Modelo en Hugging Face: https://huggingface.co/xxparthparekhxx/pluto-124m-base
 - Variante chat: https://huggingface.co/xxparthparekhxx/pluto-124m-chat
 - Perfil del autor en GitHub: https://github.com/xxparthparekhxx
 - Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

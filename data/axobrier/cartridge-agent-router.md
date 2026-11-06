@@ -65,7 +65,7 @@ Los unicos datos de rendimiento aportados son de latencia y huella: aproximadame
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Axobrier Cartridge: Agent Router | Clasificador de enrutamiento sobre embeddings | Matriz de pesos <64 KB | No aplica (vector de embedding) | Apache 2.0 | HuggingFace (formato `.axb`) |
+| Axobrier Cartridge: Agent Router | Clasificador de enrutamiento sobre embeddings | Matriz de pesos <64 KB | No aplica (vector de embedding) | Apache 2.0 | Hugging Face (formato `.axb`) |
 | Clasificadores de intencion basados en embeddings (por ejemplo, cabezas sobre `all-mpnet-base-v2`) | Clasificacion de intencion | Depende del cabezal; no disponible | No aplica | Variable | Variable |
 | Routers semanticos tipo semantic-router | Enrutamiento de intenciones por similitud | No disponible | No disponible | Variable | Variable |
 | RouteLLM u otros routers de coste | Enrutamiento entre modelos LLM | No disponible | No disponible | Variable | Variable |
@@ -87,6 +87,6 @@ Los datos concretos de parametros, contexto y rendimiento de las alternativas no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axobrier/cartridge-agent-router
+- Hugging Face: https://huggingface.co/Axobrier/cartridge-agent-router
 - Repositorio del motor Axobrier: https://github.com/Axobrier/Axobrier
 - Referencia de la regla de puntuacion cuadratica de Brier (Glenn Brier, 1950): no disponible como enlace en la informacion proporcionada.

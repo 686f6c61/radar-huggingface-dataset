@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kusumabin/notes-cross-modal-fusion` no es un modelo entrenado, sino un repositorio de notas de investigación sobre fusion cross-modal publicado en HuggingFace bajo licencia CC-BY-4.0. El autor lo describe explícitamente como "a working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; la propia model card aclara que "no se presenta como un paper completado ni como una release de modelos entrenados". Los tags del repositorio (`research-notes`, `cross-modal-fusion`, `transformer`) y el campo `safetensors` son engañosos: el peso real declarado en los metadatos es de 49.600 parámetros, un tamaño compatible con un fichero de configuración o un tensor de prueba, no con un transformer funcional.
+`kusumabin/notes-cross-modal-fusion` no es un modelo entrenado, sino un repositorio de notas de investigación sobre fusion cross-modal publicado en Hugging Face bajo licencia CC-BY-4.0. El autor lo describe explícitamente como "a working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; la propia model card aclara que "no se presenta como un paper completado ni como una release de modelos entrenados". Los tags del repositorio (`research-notes`, `cross-modal-fusion`, `transformer`) y el campo `safetensors` son engañosos: el peso real declarado en los metadatos es de 49.600 parámetros, un tamaño compatible con un fichero de configuración o un tensor de prueba, no con un transformer funcional.
 
 El repositorio contiene únicamente dos artefactos documentales: `analysis.md` (la nota principal) y `README.md`. No incluye código de entrenamiento, checkpoints, datasets ni resultados experimentales. El tamaño del repo es de 0.0 GB y las descargas y likes son cero en el momento de la consulta.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigación exploratoria, no 
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura de red, dataset de entrenamiento, número de tokens, proceso de RLHF/DPO ni innovación técnica concreta. El tag `transformer` figura en los metadatos de HuggingFace, pero el contenido del repositorio es una nota de investigación que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que las secciones etiquetadas como planes o hipótesis "no deben interpretarse como resultados experimentales".
+La model card no describe ninguna arquitectura de red, dataset de entrenamiento, número de tokens, proceso de RLHF/DPO ni innovación técnica concreta. El tag `transformer` figura en los metadatos de Hugging Face, pero el contenido del repositorio es una nota de investigación que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que las secciones etiquetadas como planes o hipótesis "no deben interpretarse como resultados experimentales".
 
 El repositorio no contiene código de entrenamiento, scripts de evaluación, checkpoints ni logs. La model card menciona que, si se añadieran resultados en el futuro, deberían incluir versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que confirma que a fecha de creación (2026-11-05) no existe ninguno de esos artefactos. No hay información sobre composición del dataset, tokenizador, función de pérdida ni estrategia de optimización.
 
@@ -84,5 +84,5 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusumabin/notes-cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/kusumabin/notes-cross-modal-fusion
 - Artículo de referencia temática (MDPI, Cross-Modal Attention Fusion): https://www.mdpi.com/2414-4088/9/12/116

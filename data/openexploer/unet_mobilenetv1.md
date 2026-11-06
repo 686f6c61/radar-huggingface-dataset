@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExploer/unet_mobilenetv1
+- Modelo en Hugging Face: https://huggingface.co/OpenExploer/unet_mobilenetv1
 - Paper de MobileNetV1: https://arxiv.org/abs/1704.04861
 - Paper de UNet: https://arxiv.org/abs/1505.04597
 - Repositorio oficial de PyTorch Vision (implementacion de MobileNetV1): https://github.com/pytorch/vision

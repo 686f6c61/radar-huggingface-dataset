@@ -4,7 +4,7 @@
 
 Este repositorio contiene los checkpoints finales de un experimento controlado de comparación de objetivos de entrenamiento en el marco de NanoChat, un transformer decoder-only compacto desarrollado por Andrej Karpathy. El autor, Seungwook Han, entrena cinco modelos con el mismo presupuesto de parámetros (profundidad 10), el mismo tokenizer, el mismo orden de datos empaquetados, un contexto de 2048 tokens y 99.347.333.120 tokens de entrenamiento. Los cinco modelos comparan: autoregresión ordinaria (AR), predicción multi-token con cuatro cabezas (MTP-4, inspirada en FAIR/Meta) y tres variantes de recurrent-state matching (RSM) de horizonte exacto con diferentes valores de gamma (0.99, 0.90, 0.75). El objetivo es evaluar si el RSM mejora la predicción de estado recurrente frente a los métodos estándar.
 
-Estos checkpoints son crudos de PyTorch, no modelos Transformers listos para usar con HuggingFace Transformers; requieren el repositorio NanoChat para cargarlos. Son modelos base, sin ajuste por chat ni instrucciones. El interés principal es académico: estudiar el impacto del RSM en la calidad de representaciones y generación.
+Estos checkpoints son crudos de PyTorch, no modelos Transformers listos para usar con Hugging Face Transformers; requieren el repositorio NanoChat para cargarlos. Son modelos base, sin ajuste por chat ni instrucciones. El interés principal es académico: estudiar el impacto del RSM en la calidad de representaciones y generación.
 
 ## Especificaciones técnicas
 
@@ -69,16 +69,16 @@ No hay modelos comparables directamente, ya que estos son checkpoints de investi
 - Son modelos base sin ajuste por instrucciones, por lo que no son adecuados para tareas de chat o seguir instrucciones directamente.
 - No se han publicado benchmarks, por lo que no se conoce su rendimiento real en tareas estandar.
 - La licencia es "other" debido a la mezcla de procedencias del dataset; los usuarios deben revisar los terminos del dataset Nemotron y de las partes con licencias CC BY-SA y GFDL.
-- Los checkpoints son especificos de la implementacion NanoChat y no son compatibles con Transformers de HuggingFace sin conversion.
+- Los checkpoints son especificos de la implementacion NanoChat y no son compatibles con Transformers de Hugging Face sin conversion.
 - No se proporcionan detalles sobre sesgos o alucinaciones, pero al ser modelos base entrenados en datos web, pueden presentar sesgos.
 - El contexto es de solo 2048 tokens, limitado para tareas de largo alcance.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hanseungwook/nanochat-rsm-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/hanseungwook/nanochat-rsm-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Pretraining-Specialized-v1
 - Tokenizer: https://huggingface.co/karpathy/nanochat-d32
 - GitHub de NanoChat: https://github.com/karpathy/nanochat
 - GitHub del autor: https://github.com/hanseungwook
-- Documentacion de NanoChat en HuggingFace: https://huggingface.co/docs/transformers/v5.8.0/en/model_doc/nanochat
+- Documentacion de NanoChat en Hugging Face: https://huggingface.co/docs/transformers/v5.8.0/en/model_doc/nanochat
 - DeepWiki sobre checkpoint management: https://deepwiki.com/karpathy/nanochat/11.1-checkpoint-management

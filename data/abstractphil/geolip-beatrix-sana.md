@@ -2,7 +2,7 @@
 
 ## Resumen
 
-geolip-beatrix-sana es un modelo publicado en HuggingFace por el usuario AbstractPhil bajo la licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible se limita practicamente a los metadatos del repositorio: identificador, autor, licencia y marcas temporales de creacion y actualizacion (3 de octubre de 2026). No se ha publicado model card con descripcion funcional, arquitectura, datos de entrenamiento ni proposito declarado, mas alla del bloque de licencia.
+geolip-beatrix-sana es un modelo publicado en Hugging Face por el usuario AbstractPhil bajo la licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible se limita practicamente a los metadatos del repositorio: identificador, autor, licencia y marcas temporales de creacion y actualizacion (3 de octubre de 2026). No se ha publicado model card con descripcion funcional, arquitectura, datos de entrenamiento ni proposito declarado, mas alla del bloque de licencia.
 
 El repositorio registra cero descargas y cero "likes", y no tiene pipeline declarado ni idiomas soportados indicados. Esto indica que se trata de un artefacto recien creado o no difundido, sin validacion por parte de la comunidad y sin documentacion tecnica que permita caracterizarlo con rigor.
 
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbstractPhil/geolip-beatrix-sana
+- Repositorio en Hugging Face: https://huggingface.co/AbstractPhil/geolip-beatrix-sana
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

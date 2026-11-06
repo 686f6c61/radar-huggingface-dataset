@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge es un modelo de generacion de texto publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusion (merge) de tres checkpoints intermedios de un mismo entrenamiento, combinados con el metodo Linear de mergekit sobre una base comun. La arquitectura declarada en las etiquetas del repositorio es gpt_neox, con 6.856.253.440 parametros totales (aproximadamente 6,86 mil millones) almacenados en safetensors, y un tamano de repositorio de 13,7 GB, coherente con pesos en bfloat16.
+sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge es un modelo de generacion de texto publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusion (merge) de tres checkpoints intermedios de un mismo entrenamiento, combinados con el metodo Linear de mergekit sobre una base comun. La arquitectura declarada en las etiquetas del repositorio es gpt_neox, con 6.856.253.440 parametros totales (aproximadamente 6,86 mil millones) almacenados en safetensors, y un tamano de repositorio de 13,7 GB, coherente con pesos en bfloat16.
 
 El modelo resuelve un problema concreto de ingenieria de entrenamiento: la seleccion del checkpoint final. En lugar de escoger un unico `global_step`, el autor promedia los pesos de los pasos 4000, 5000 y 6000 con pesos 1, 2 y 3 respectivamente y normalizacion activada, lo que equivale a una media ponderada con coeficientes 1/6, 2/6 y 3/6, dando mas importancia al checkpoint mas avanzado. Esta tecnica, denominada comunmente model soup o checkpoint averaging, busca reducir la varianza entre checkpoints y mejorar la robustez sin coste adicional de entrenamiento.
 
@@ -31,7 +31,7 @@ El proceso de creacion no es un entrenamiento nuevo, sino una fusion. Se parte d
 
 - Generacion de texto autoregresiva, heredada del modelo base subyacente, que no se identifica en el repositorio.
 - Conversacion multiturno: el repositorio incluye la etiqueta `conversational`, aunque no se documenta ninguna plantilla de chat ni formato de prompt.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace TGI y en Inference Endpoints.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face TGI y en Inference Endpoints.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling y capacidades de agente: no disponibles (no se documentan).
 - Capacidades multilingues: no disponibles (el campo de idiomas esta vacio).
 - Modo de pensamiento explicito o decodificacion especulativa: no disponibles.
@@ -66,10 +66,10 @@ Las busquedas web realizadas no devolvieron ningun documento tecnico relacionado
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge | 6,86 B | no disponible | no disponible | no disponible | HuggingFace, sin descargas |
-| Pythia-6.9B (EleutherAI) | 6,9 B | 2048 tokens | Si, suite completa de evaluacion publicada por el autor | Apache 2.0 | HuggingFace, ampliamente usado |
-| GPT-J-6B (EleutherAI) | 6 B | 2048 tokens | Si, resultados publicados en la model card | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B | 7,6 B | 128 000 tokens (32 768 nativos) | Si, benchmarks publicados por el autor | Apache 2.0 | HuggingFace |
+| sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge | 6,86 B | no disponible | no disponible | no disponible | Hugging Face, sin descargas |
+| Pythia-6.9B (EleutherAI) | 6,9 B | 2048 tokens | Si, suite completa de evaluacion publicada por el autor | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-J-6B (EleutherAI) | 6 B | 2048 tokens | Si, resultados publicados en la model card | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B | 7,6 B | 128 000 tokens (32 768 nativos) | Si, benchmarks publicados por el autor | Apache 2.0 | Hugging Face |
 
 La comparacion es aproximada: el modelo objeto de esta ficha pertenece a la familia GPT-NeoX, mientras que Qwen2.5-7B usa una arquitectura transformer propia con RoPE y atencion con QKV bias, por lo que no es un equivalente directo. La ventaja principal de las alternativas citadas es la disponibilidad de licencia explicita, contexto declarado y benchmarks verificables, algo de lo que carece este repositorio.
 
@@ -88,8 +88,8 @@ La comparacion es aproximada: el modelo objeto de esta ficha pertenece a la fami
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper del metodo Linear: https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Otros enlaces relevantes: no disponible (las busquedas web realizadas no devolvieron resultados relacionados con el modelo).

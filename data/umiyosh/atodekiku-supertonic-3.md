@@ -74,9 +74,9 @@ La comparativa directa no es posible con datos precisos, pero se observa que Sup
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/umiyosh/atodekiku-supertonic-3](https://huggingface.co/umiyosh/atodekiku-supertonic-3)
+- Repositorio en Hugging Face: [https://huggingface.co/umiyosh/atodekiku-supertonic-3](https://huggingface.co/umiyosh/atodekiku-supertonic-3)
 - Página oficial de Supertonic 3: [https://supertonic3.github.io/](https://supertonic3.github.io/)
 - Repositorio de código fuente (Supertone Inc.): [https://github.com/supertone-inc/supertonic](https://github.com/supertone-inc/supertonic)
 - Proyecto AtodeKiku: [https://github.com/umiyosh/AtodeKiku](https://github.com/umiyosh/AtodeKiku)
-- Modelo original en HuggingFace: [https://huggingface.co/Supertone/supertonic-3](https://huggingface.co/Supertone/supertonic-3) (no verificado en la búsqueda, pero se menciona como upstream)
+- Modelo original en Hugging Face: [https://huggingface.co/Supertone/supertonic-3](https://huggingface.co/Supertone/supertonic-3) (no verificado en la búsqueda, pero se menciona como upstream)
 - Referencia de licencia OpenRAIL-M: [https://huggingface.co/blog/open_rail](https://huggingface.co/blog/open_rail) (enlace genérico, no específico)

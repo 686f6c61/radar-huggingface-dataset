@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de 24 capas con atención multi-cabeza
 
 El preentrenamiento se realizó en bf16 con un batch global de 512 × 4.096 tokens (2,1M tokens por paso) y el optimizador Muon (shape scaling, LR matricial 0,005) para las matrices, junto con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas). El schedule incluye 1.181 pasos de warmup, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100, con weight decay 0,1 e init std 0,0103. Este checkpoint ("rawanneal") se construye tomando la ejecución raw hasta el paso 16.902 (último paso a LR máximo) y sustituyendo su cooldown (los últimos 1.877 de 18.779 pasos) por las conversaciones 1PP reescritas a partir de los documentos que la ejecución raw vio en cada paso; el flujo está alineado por pasos, de modo que cada paso de cooldown contiene las conversaciones derivadas de los documentos correspondientes. La pérdida se calcula sobre turnos de usuario y asistente. El total procesado en esta porción del flujo es de 39,38B posiciones de token.
 
-La validación sobre 2.433 documentos retenidos arroja, en el checkpoint final, pérdidas por token de 1,635 para texto de asistente, 1,519 para texto de usuario y 3,026 para texto de documento, con 1,620 en la columna ponderada de tokens de entrenamiento de esta condición (`reweighted_seg1234`). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,6331 frente a 1,6345 (diferencia absoluta 0,0014) en segmentos val50m y 3,0272 frente a 3,0256 (0,0016) en segmentos raw_val50m.
+La validación sobre 2.433 documentos retenidos arroja, en el checkpoint final, pérdidas por token de 1,635 para texto de asistente, 1,519 para texto de usuario y 3,026 para texto de documento, con 1,620 en la columna ponderada de tokens de entrenamiento de esta condición (`reweighted_seg1234`). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas: 1,6331 frente a 1,6345 (diferencia absoluta 0,0014) en segmentos val50m y 3,0272 frente a 3,0256 (0,0016) en segmentos raw_val50m.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ La validación sobre 2.433 documentos retenidos arroja, en el checkpoint final, 
 - Generación de datos sintéticos controlados en inglés: el modelo puede producir continuaciones de texto plano o diálogos ChatML para aumentar corpus de investigación, siempre con revisión humana y sin uso como asistente final.
 - Análisis de dinámica de entrenamiento: con 18.779 pasos documentados y logs en Weights & Biases, sirve para estudiar schedules de LR (warmup, constante, decaimiento lineal a 1/100) y el comportamiento del optimizador Muon en modelos de ~1B.
 - Baseline para ajuste fino supervisado: al ser un modelo base de 0,98B con licencia Apache 2.0 y pesos safetensors, puede usarse como punto de partida en experimentos de SFT (el autor mantiene un proyecto wandb separado, `1pp-sft`) para tareas de inglés con contexto de hasta 4.096 tokens.
-- Validación de infraestructura de inferencia: su tamaño permite desplegar y comparar servidores compatibles con text-generation-inference y endpoints de HuggingFace en entornos de pruebas antes de escalar a los escalones de 1,66B y 2,81B.
+- Validación de infraestructura de inferencia: su tamaño permite desplegar y comparar servidores compatibles con text-generation-inference y endpoints de Hugging Face en entornos de pruebas antes de escalar a los escalones de 1,66B y 2,81B.
 
 ## Benchmarks y rendimiento
 
@@ -81,10 +81,10 @@ Verificación de pesos frente al checkpoint de Megatron:
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-ua-rawanneal-seed1234-base | 0,98B | 4.096 | Apache 2.0 | Modelo base de investigación (cooldown conversacional, semilla 1234) | HuggingFace, safetensors |
-| 1pp-0.98b-v2-raw-seed1234-base | 0,98B | 4.096 | Apache 2.0 (según la colección 1PP) | Ejecución raw sin cooldown conversacional | HuggingFace, safetensors |
-| 1pp-0.98b-v2-ua-seed1234-base | 0,98B | 4.096 | Apache 2.0 (según la colección 1PP) | Ejecución 1PP completa (documentos + conversaciones) | HuggingFace, safetensors |
-| SmolLM2-1.7B (referencia de tokenizador, no de la escalera) | 1,7B | mayor que 4.096 (no verificado en esta ficha) | no disponible en la información | Modelo base generalista | HuggingFace |
+| 1pp-0.98b-v2-ua-rawanneal-seed1234-base | 0,98B | 4.096 | Apache 2.0 | Modelo base de investigación (cooldown conversacional, semilla 1234) | Hugging Face, safetensors |
+| 1pp-0.98b-v2-raw-seed1234-base | 0,98B | 4.096 | Apache 2.0 (según la colección 1PP) | Ejecución raw sin cooldown conversacional | Hugging Face, safetensors |
+| 1pp-0.98b-v2-ua-seed1234-base | 0,98B | 4.096 | Apache 2.0 (según la colección 1PP) | Ejecución 1PP completa (documentos + conversaciones) | Hugging Face, safetensors |
+| SmolLM2-1.7B (referencia de tokenizador, no de la escalera) | 1,7B | mayor que 4.096 (no verificado en esta ficha) | no disponible en la información | Modelo base generalista | Hugging Face |
 
 La comparación más informativa es interna a la escalera 1PP: los tres checkpoints de 0,98B comparten flujo de datos y difieren solo en la condición y el cooldown, lo que permite atribuir diferencias de pérdida al tratamiento de las conversaciones. No se dispone de datos de benchmarks que permitan comparar rendimiento con modelos externos.
 
@@ -102,7 +102,7 @@ La comparación más informativa es interna a la escalera 1PP: los tres checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed1234-base
 - Ejecución raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
 - Ejecución 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

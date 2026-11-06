@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DPaint es un modelo publicado en HuggingFace por el usuario Paolo222 bajo licencia CC. El repositorio, de 88,2 GB, contiene pesos en formato ONNX, lo que sugiere un artefacto orientado a inferencia desplegada en runtime ONNX Runtime más que a entrenamiento o ajuste fino con frameworks habituales de PyTorch. La model card publicada es prácticamente vacía: solo declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni casos de uso.
+DPaint es un modelo publicado en Hugging Face por el usuario Paolo222 bajo licencia CC. El repositorio, de 88,2 GB, contiene pesos en formato ONNX, lo que sugiere un artefacto orientado a inferencia desplegada en runtime ONNX Runtime más que a entrenamiento o ajuste fino con frameworks habituales de PyTorch. La model card publicada es prácticamente vacía: solo declara la licencia, sin descripción, arquitectura, datos de entrenamiento ni casos de uso.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El tamaño del repositorio (88,2 GB) es el único indicio cuantitativo del orden de magnitud del modelo, pero no permite inferir de forma fiable el número de parámetros sin conocer la precisión de los pesos y el número de ficheros. La fecha de creación es enero de 2024 y la de actualización noviembre de 2026.
 
@@ -76,5 +76,5 @@ No disponible. La ausencia de datos sobre arquitectura, parámetros y contexto i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Paolo222/DPaint
+- Repositorio en Hugging Face: https://huggingface.co/Paolo222/DPaint
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -109,7 +109,7 @@ No se dispone de comparaciones publicadas con otros modelos de decisión de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yehor-oleksiuk/laya-english-onnx
-- Modelo base en HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Repositorio en Hugging Face: https://huggingface.co/yehor-oleksiuk/laya-english-onnx
+- Modelo base en Hugging Face: https://huggingface.co/convaiinnovations/laya
 - Código original, detalles de entrenamiento y benchmarks: https://github.com/NandhaKishorM/laya
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; únicamente aparecieron resultados genéricos sobre ChatGPT y OpenAI, sin relación con Laya.

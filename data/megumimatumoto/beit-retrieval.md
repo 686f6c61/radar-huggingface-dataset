@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`megumimatumoto/beit-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario `megumimatumoto` y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
+`megumimatumoto/beit-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario `megumimatumoto` y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala.
 
 La configuración declarada es "xlarge", con atención de tipo flash, fusión mediante cross attention, activación gelu tanh y normalización por batchnorm. El checkpoint `model.safetensors` es una inicialización válida, pero el autor indica explícitamente que no está entrenado ni evaluado, y que no se reclama ninguna puntuación de benchmark. El repositorio ocupa 0.0 GB y el recuento de parámetros reportado por los metadatos de safetensors es de 33.088, un valor anómalamente bajo para una configuración xlarge que sugiere que el tensor serializado no refleja el modelo completo o que se trata de un artefacto mínimo de prueba.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| megumimatumoto/beit-retrieval | 33.088 (metadatos) | no disponible | sin benchmarks | MIT | HuggingFace, sin entrenar |
-| BEiT oficial (microsoft/beit-base-patch16-224) | ~86M (base) | 224 px de entrada | benchmarks publicados en ImageNet | MIT | HuggingFace, pesos entrenados |
-| CLIP (openai/clip-vit-base-patch32) | ~151M | 77 tokens de texto | benchmarks publicados en retrieval | MIT | HuggingFace, pesos entrenados |
-| BLIP (Salesforce/blip-image-captioning-base) | ~224M | no disponible | benchmarks publicados en captioning y retrieval | BSD-3 | HuggingFace, pesos entrenados |
+| megumimatumoto/beit-retrieval | 33.088 (metadatos) | no disponible | sin benchmarks | MIT | Hugging Face, sin entrenar |
+| BEiT oficial (microsoft/beit-base-patch16-224) | ~86M (base) | 224 px de entrada | benchmarks publicados en ImageNet | MIT | Hugging Face, pesos entrenados |
+| CLIP (openai/clip-vit-base-patch32) | ~151M | 77 tokens de texto | benchmarks publicados en retrieval | MIT | Hugging Face, pesos entrenados |
+| BLIP (Salesforce/blip-image-captioning-base) | ~224M | no disponible | benchmarks publicados en captioning y retrieval | BSD-3 | Hugging Face, pesos entrenados |
 
 La comparación es desfavorable en todos los ejes salvo en valor didáctico: los tres alternativas ofrecen pesos entrenados, documentación de datos y benchmarks reproducibles, mientras que este repositorio solo aporta código y una inicialización.
 
@@ -89,8 +89,8 @@ La comparación es desfavorable en todos los ejes salvo en valor didáctico: los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/megumimatumoto/beit-retrieval
+- Repositorio Hugging Face: https://huggingface.co/megumimatumoto/beit-retrieval
 - Paper original de BEiT: https://arxiv.org/abs/2106.08254
 - Dataset sugerido para evaluación (Flickr30k): https://shannon.cs.illinois.edu/DenotationGraph/
-- Implementación de referencia BEiT en HuggingFace: https://huggingface.co/microsoft/beit-base-patch16-224
+- Implementación de referencia BEiT en Hugging Face: https://huggingface.co/microsoft/beit-base-patch16-224
 - Documentación de safetensors: https://huggingface.co/docs/safetensors

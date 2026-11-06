@@ -18,7 +18,7 @@ Su interés actual reside en combinar un tamaño muy reducido, ejecutable en CPU
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | Peso nativo en safetensors; el modelo original ofrece GGUF, ONNX y MLX 8-bit. Los niveles concretos de cuantización GGUF no están detallados en la información disponible |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, japones, coreano y espanol |
-| Licencia | lfm1.0 (licencia personalizada; el campo `license` de HuggingFace figura como `other`). Los términos exactos y la política de uso comercial no están detallados en la información disponible |
+| Licencia | lfm1.0 (licencia personalizada; el campo `license` de Hugging Face figura como `other`). Los términos exactos y la política de uso comercial no están detallados en la información disponible |
 | Formato de pesos | safetensors (repositorio de 2,3 GB; precisión exacta no indicada, consistente con bf16/fp16) |
 | Capas | 16 |
 | Tamano de vocabulario | 65.536 |
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 - Riesgo de alucinación propio de un modelo de 1,2B parámetros con corte de conocimiento a mediados de 2024: no debe usarse como fuente factual sin verificación externa.
 - Al haber anulado los mecanismos de rechazo, el modelo puede generar contenido dañino, ilegal o explícitamente ofensivo sin filtros internos. Su uso en producción exige controles de seguridad externos y responsabilidad explícita sobre las salidas.
 - Sesgos: no se publica ninguna evaluación de sesgos para esta variante. Los sesgos del modelo base y del corpus de preentrenamiento permanecen sin caracterizar.
-- Licencia lfm1.0 (campo `other` en HuggingFace): no se detalla en la información disponible si permite uso comercial, si impone condiciones de atribución o si autoriza la redistribución de derivados abliterados. Debe consultarse el archivo `LICENSE` del repositorio antes de cualquier uso en producción.
+- Licencia lfm1.0 (campo `other` en Hugging Face): no se detalla en la información disponible si permite uso comercial, si impone condiciones de atribución o si autoriza la redistribución de derivados abliterados. Debe consultarse el archivo `LICENSE` del repositorio antes de cualquier uso en producción.
 - Validación comunitaria nula: cero descargas y cero «likes» en la fecha de consulta, sin informes independientes de calidad o estabilidad.
 - Autoría de terceros: el modelo lo publica un usuario independiente, no Liquid AI, que no respalda esta variante.
 - Cobertura idiomática desigual: aunque se declaran ocho idiomas, no hay métricas publicadas de rendimiento por idioma y el preentrenamiento está dominado por el inglés.
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic
 - Modelo original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Variante GGUF del original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF

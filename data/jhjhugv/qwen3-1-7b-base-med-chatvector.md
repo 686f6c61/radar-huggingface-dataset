@@ -4,7 +4,7 @@
 
 El modelo `Jhjhugv/Qwen3-1.7B-base-MED-ChatVector` es un ajuste fino del modelo base Qwen3-1.7B-Base de Alibaba, orientado al dominio médico (MED) y construido mediante la técnica ChatVector. Esta técnica consiste en sumar al modelo base la diferencia de pesos entre un modelo chat y su correspondiente base, lo que permite transferir capacidades conversacionales a un modelo base sin necesidad de un entrenamiento completo. El resultado es un modelo de 1.720 millones de parámetros con capacidades de generación de texto y conversación, presumiblemente especializado en terminología y razonamiento clínico.
 
-El modelo fue publicado en septiembre de 2026 por el usuario Jhjhugv en HuggingFace, aunque la model card está prácticamente vacía y no proporciona información sobre datos de entrenamiento, licencia o evaluación. La relevancia de este modelo radica en que combina la eficiencia de un modelo pequeño (1.7B) con un enfoque de bajo coste computacional (ChatVector) para el dominio médico, lo que lo hace atractivo para despliegues en entornos con recursos limitados. Sin embargo, la ausencia de documentación y benchmarks publicados limita seriamente su evaluación objetiva.
+El modelo fue publicado en septiembre de 2026 por el usuario Jhjhugv en Hugging Face, aunque la model card está prácticamente vacía y no proporciona información sobre datos de entrenamiento, licencia o evaluación. La relevancia de este modelo radica en que combina la eficiencia de un modelo pequeño (1.7B) con un enfoque de bajo coste computacional (ChatVector) para el dominio médico, lo que lo hace atractivo para despliegues en entornos con recursos limitados. Sin embargo, la ausencia de documentación y benchmarks publicados limita seriamente su evaluación objetiva.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo fue publicado en septiembre de 2026 por el usuario Jhjhugv en HuggingF
 
 El modelo se basa en la arquitectura Qwen3, un transformer causal denso con 1.720 millones de parámetros. El Qwen3-1.7B-Base original fue entrenado por Alibaba sobre 36 billones de tokens en 119 idiomas, con una ventana de contexto de 32.000 tokens. La variante MED-ChatVector se construye aplicando la técnica ChatVector: se calcula la diferencia de pesos entre un modelo chat (presumiblemente Qwen3-1.7B-Chat) y su base, y esa diferencia se suma a otro modelo base (en este caso, un Qwen3-1.7B-Base ajustado al dominio médico). Este enfoque permite transferir habilidades conversacionales sin un entrenamiento supervisado completo.
 
-No se dispone de información sobre el dataset médico utilizado, el número de pasos de entrenamiento, el régimen de precisión (fp16, bf16, etc.) ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` en HuggingFace referencia el paper de Lacoste et al. sobre estimación de emisiones de carbono, no un paper del modelo.
+No se dispone de información sobre el dataset médico utilizado, el número de pasos de entrenamiento, el régimen de precisión (fp16, bf16, etc.) ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` en Hugging Face referencia el paper de Lacoste et al. sobre estimación de emisiones de carbono, no un paper del modelo.
 
 ## Capacidades
 
@@ -45,14 +45,14 @@ No se dispone de información sobre el dataset médico utilizado, el número de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas del dominio médico. El repositorio de HuggingFace no contiene archivos de evaluación ni referencias a papers con resultados. Cualquier afirmación sobre rendimiento comparativo sería especulativa.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas del dominio médico. El repositorio de Hugging Face no contiene archivos de evaluación ni referencias a papers con resultados. Cualquier afirmación sobre rendimiento comparativo sería especulativa.
 
 ## Requisitos de hardware
 
 - VRAM estimada: aproximadamente 3,4 GB en fp16, según datos de llm-explorer.com para modelos equivalentes.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1660 Super, RTX 3060, RTX 4060 o superiores. También es viable en Apple Silicon con 8 GB unificados.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs consumer modernas con cuantización (GGUF) o incluso en fp16 con GPUs de 6 GB o más.
-- Opciones de despliegue: compatible con transformers, text-generation-inference (TGI) y endpoints de HuggingFace. Puede convertirse a GGUF para usarse con llama.cpp u Ollama.
+- Opciones de despliegue: compatible con transformers, text-generation-inference (TGI) y endpoints de Hugging Face. Puede convertirse a GGUF para usarse con llama.cpp u Ollama.
 - Latencia y throughput: no disponible; al ser un modelo de 1.7B, se espera una latencia baja en GPUs modernas, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | dajumon/Qwen3-1.7B-base-MED-ChatVector | 1,72B | 32-40K | No disponible | Medica (ChatVector) | Model card vacia |
 | Qwen3-1.7B-Base (original) | 1,72B | 32K | Apache 2.0 | Generalista | Completa, con benchmarks |
 
-La comparativa muestra que existen al menos tres variantes MED de Qwen3-1.7B en HuggingFace, todas con documentación deficiente. El modelo original de Alibaba es la única opción con licencia clara (Apache 2.0) y benchmarks publicados. Las variantes MED no ofrecen evidencia de mejora sobre el base en tareas médicas.
+La comparativa muestra que existen al menos tres variantes MED de Qwen3-1.7B en Hugging Face, todas con documentación deficiente. El modelo original de Alibaba es la única opción con licencia clara (Apache 2.0) y benchmarks publicados. Las variantes MED no ofrecen evidencia de mejora sobre el base en tareas médicas.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ La comparativa muestra que existen al menos tres variantes MED de Qwen3-1.7B en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jhjhugv/Qwen3-1.7B-base-MED-ChatVector
+- Modelo en Hugging Face: https://huggingface.co/Jhjhugv/Qwen3-1.7B-base-MED-ChatVector
 - Modelo similar (JUNGCHAN): https://huggingface.co/JUNGCHAN/Qwen3-1.7B-base-MED
 - Modelo similar (dajumon): https://huggingface.co/dajumon/Qwen3-1.7B-base-MED-ChatVector
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

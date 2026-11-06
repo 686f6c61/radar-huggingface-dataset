@@ -66,7 +66,7 @@ No se dispone de informacion comparativa en el repositorio. Modelos de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/musaamadni01/microsoft_Phi-4-mini-instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/musaamadni01/microsoft_Phi-4-mini-instruct-GGUF
 - Modelo original: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai/

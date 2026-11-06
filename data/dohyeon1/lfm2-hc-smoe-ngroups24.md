@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dohyeon1/LFM2-HC-SMoE-ngroups24` es un modelo de lenguaje de 8.467 millones de parámetros publicado en HuggingFace por el usuario Dohyeon1. Su arquitectura es una Mixture of Experts (MoE) con activación dispersa, como sugiere el nombre y el repositorio vinculado en la búsqueda web. El nombre coincide con la técnica HC-SMoE (Hierarchical Clustering for Sparsely activated Mixture of Experts), presentada en el repositorio `wazenmai/HC-SMoE` (ICML 2025), que permite fusionar expertos mediante agrupamiento jerárquico sin reentrenamiento, reduciendo los parámetros de un modelo SMoE.
+El modelo `Dohyeon1/LFM2-HC-SMoE-ngroups24` es un modelo de lenguaje de 8.467 millones de parámetros publicado en Hugging Face por el usuario Dohyeon1. Su arquitectura es una Mixture of Experts (MoE) con activación dispersa, como sugiere el nombre y el repositorio vinculado en la búsqueda web. El nombre coincide con la técnica HC-SMoE (Hierarchical Clustering for Sparsely activated Mixture of Experts), presentada en el repositorio `wazenmai/HC-SMoE` (ICML 2025), que permite fusionar expertos mediante agrupamiento jerárquico sin reentrenamiento, reduciendo los parámetros de un modelo SMoE.
 
 El modelo se distribuye en formato `safetensors` con un tamaño de repositorio de 17.0 GB y está etiquetado para `text-generation`. Sin embargo, la model card no incluye información sobre el desarrollador original, el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados. Por tanto, la ficha se limita a los datos verificables y señala explícitamente lo que no está disponible.
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24
+- Hugging Face: https://huggingface.co/Dohyeon1/LFM2-HC-SMoE-ngroups24
 - Repositorio del framework HC-SMoE: https://github.com/wazenmai/HC-SMoE

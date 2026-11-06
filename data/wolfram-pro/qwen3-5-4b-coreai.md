@@ -93,7 +93,7 @@ No se dispone de datos verificados de rendimiento, latencia o calidad para estab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wolfram-pro/qwen3.5-4b-coreai
+- Repositorio Hugging Face: https://huggingface.co/wolfram-pro/qwen3.5-4b-coreai
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada (la model card no incluye ninguno, y la búsqueda web no arrojó resultados relevantes).

@@ -114,5 +114,5 @@ El adaptador supera a OS-Atlas-7B y Qwen2-VL-7B, es competitivo con UGround-V1 y
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/lemuralabs/Muse-Glimmer-30B-GUI-Grounding-Fast
+- Repositorio Hugging Face del adaptador: https://huggingface.co/lemuralabs/Muse-Glimmer-30B-GUI-Grounding-Fast
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

@@ -59,8 +59,8 @@ La información proporcionada solo permite comparar con el MiniCPM5-1B, el model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B | 2.516.756.480 | No especificado | Apache 2.0 | HuggingFace |
-| MiniCPM5-1B | 1B (según autor) | No especificado | No disponible | HuggingFace |
+| MiniCPM5-2B | 2.516.756.480 | No especificado | Apache 2.0 | Hugging Face |
+| MiniCPM5-1B | 1B (según autor) | No especificado | No disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables (por ejemplo, Qwen, Gemma o Phi) en los datos proporcionados.
 
@@ -75,7 +75,7 @@ No se dispone de información sobre otros modelos comparables (por ejemplo, Qwen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B
 - MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Colección MiniCPM5: https://huggingface.co/collections/openbmb/minicpm5
 - Paper (MiniCPM Tech Report): https://arxiv.org/pdf/2506.07900

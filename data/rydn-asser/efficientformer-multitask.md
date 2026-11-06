@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rydn-asser/efficientformer-multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas multiples (multitask). Lo desarrolla el usuario `rydn-asser` y su relevancia no esta en el rendimiento, sino en su naturaleza de andamiaje de investigacion: la model card indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 likes, y ocupa 0.0 GB.
+`rydn-asser/efficientformer-multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas multiples (multitask). Lo desarrolla el usuario `rydn-asser` y su relevancia no esta en el rendimiento, sino en su naturaleza de andamiaje de investigacion: la model card indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 likes, y ocupa 0.0 GB.
 
 El dato tecnico mas llamativo es el numero de parametros totales registrado en los pesos safetensors: 49.600 parametros. Se trata, por tanto, de una configuracion deliberadamente minima (escala "nano" segun la propia documentacion) pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No hay pipeline declarado, no se declaran idiomas soportados y no se publica ninguna puntuacion de benchmark.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rydn-asser/efficientformer-multitask | 49.600 | no disponible | Ninguno (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
-| hoffmannlu/efficientformer-multitask84 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| AnkitDasdej/efficientformer-multitask | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| rydn-asser/efficientformer-multitask | 49.600 | no disponible | Ninguno (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
+| hoffmannlu/efficientformer-multitask84 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| AnkitDasdej/efficientformer-multitask | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | snap-research/EfficientFormer (familia original) | familia con variantes S0 a L, valor por variante no disponible | ImageNet-1K | Checkpoints preentrenados en ImageNet-1K y EfficientFormerV2 (ICCV 2023) | no disponible en la informacion recogida | GitHub de snap-research |
 
 La diferencia fundamental con la familia original de snap-research es que aquellas publican checkpoints preentrenados y evaluados, mientras que este repositorio distribuye unicamente una inicializacion sin entrenar. El resto de repositorios `efficientformer-multitask` encontrados en la busqueda parecen seguir el mismo patron de andamiaje experimental, con datos de parametros y rendimiento no disponibles.
@@ -80,13 +80,13 @@ La diferencia fundamental con la familia original de snap-research es que aquell
 - Sesgos conocidos: no disponibles, precisamente porque no hay entrenamiento ni evaluacion.
 - Limitaciones de contexto o idioma: no disponibles; no se declaran idiomas ni ventana de contexto.
 - Restricciones de licencia: la licencia es MIT, permisiva para uso comercial, pero la model card advierte que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
-- Las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito, al tratarse de una implementacion personalizada.
+- Las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito, al tratarse de una implementacion personalizada.
 - Los valores de `training_args.json` (novograd, onecycle) son puntos de partida del script y no evidencia de una ejecucion completada.
 - Cualquier resultado futuro debe documentarse en un checkpoint separado y no atribuirse a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rydn-asser/efficientformer-multitask
+- Modelo en Hugging Face: https://huggingface.co/rydn-asser/efficientformer-multitask
 - Repositorio EfficientFormer original (snap-research): https://github.com/snap-research/EfficientFormer
 - Codigo de los modelos EfficientFormer: https://github.com/snap-research/EfficientFormer/tree/main/models
 - Documentacion en DeepWiki sobre EfficientFormer: https://deepwiki.com/snap-research/EfficientFormer

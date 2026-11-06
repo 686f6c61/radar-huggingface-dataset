@@ -88,7 +88,7 @@ La comparacion con alternativas de la misma categoria es limitada porque no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/yuna1126/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-i1-GGUF

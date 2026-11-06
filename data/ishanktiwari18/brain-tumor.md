@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ishanktiwari18/brain-tumor` es un artefacto publicado en HuggingFace por el usuario ishanktiwari18 bajo licencia Apache 2.0. La informacion disponible es minima: la ficha no incluye pipeline declarado, idiomas, descripcion, ni contenido alguno en la model card mas alla de la linea de licencia. El repositorio figura con un tamano de 0.0 GB y cero descargas y cero "likes", lo que indica que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
+El modelo identificado como `ishanktiwari18/brain-tumor` es un artefacto publicado en Hugging Face por el usuario ishanktiwari18 bajo licencia Apache 2.0. La informacion disponible es minima: la ficha no incluye pipeline declarado, idiomas, descripcion, ni contenido alguno en la model card mas alla de la linea de licencia. El repositorio figura con un tamano de 0.0 GB y cero descargas y cero "likes", lo que indica que se trata de una publicacion sin adopcion ni validacion por parte de la comunidad.
 
 El nombre del repositorio sugiere un modelo orientado a la clasificacion o deteccion de tumores cerebrales, presumiblemente sobre imagenes medicas, pero esta interpretacion es una inferencia a partir del identificador y no un dato confirmado por la model card, que esta vacia. La etiqueta `keras` y la libreria declarada indican que los pesos estarian en formato nativo de Keras, aunque no se especifica el archivo concreto, la arquitectura ni el numero de parametros.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ishanktiwari18/brain-tumor | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| ishanktiwari18/brain-tumor | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishanktiwari18/brain-tumor
+- Hugging Face: https://huggingface.co/ishanktiwari18/brain-tumor
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

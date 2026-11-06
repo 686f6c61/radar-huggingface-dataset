@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chomeed/mimicgen_square_d0_mtdit_flow_40k_robotstate9
+- Modelo en Hugging Face: https://huggingface.co/chomeed/mimicgen_square_d0_mtdit_flow_40k_robotstate9
 - Página oficial de MimicGen: https://mimicgen.github.io/
 - Repositorio de MimicGen (fork con documentación): https://github.com/jayahn17/mimicgen
 - Dataset usado (referencia): https://huggingface.co/datasets/chomeed/mimicgen_square_d0_224x224 (no verificado en la búsqueda, se infiere de la model card)

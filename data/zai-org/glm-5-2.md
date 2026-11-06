@@ -13,8 +13,8 @@ El modelo está orientado a unificar capacidades de razonamiento de frontera, co
 | Parametros activos | ~32B |
 | Longitud de contexto | 1M tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Inglés y chino (según etiquetas de HuggingFace) |
-| Licencia | MIT (según etiqueta de HuggingFace; el campo oficial indica "no disponible") |
+| Idiomas soportados | Inglés y chino (según etiquetas de Hugging Face) |
+| Licencia | MIT (según etiqueta de Hugging Face; el campo oficial indica "no disponible") |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ No se han proporcionado detalles específicos sobre el dataset de entrenamiento,
 - Ejecución de tareas reales de terminal, con rendimiento destacado en Terminal-Bench 2.0.
 - Control de nivel de esfuerzo (effort level control) para ajustar el equilibrio entre capacidad, velocidad y coste.
 - Soporte de contexto largo de 1M tokens, adecuado para procesar codebases enteras o documentación extensa.
-- Capacidades multilingües limitadas a inglés y chino según las etiquetas de HuggingFace.
+- Capacidades multilingües limitadas a inglés y chino según las etiquetas de Hugging Face.
 
 ## Casos de uso
 - Ingeniería agéntica en entornos de desarrollo: el modelo puede gestionar tareas complejas de múltiples pasos, como refactorizar un código base completo o implementar una funcionalidad transversal, gracias a su ventana de 1M de tokens y su enfoque en agentic engineering.
@@ -69,7 +69,7 @@ Se recomienda consultar el blog oficial de Z.ai para obtener los resultados comp
 La comparativa se basa en las menciones del blog de Z.ai, que sitúa a GLM-5.2 entre Claude Opus 4.7 y 4.8 en codificación agéntica bajo presupuestos de tokens similares. No se dispone de datos oficiales de GLM-5.1 en cuanto a parámetros o contexto en la información proporcionada.
 
 ## Limitaciones y advertencias
-- El campo de licencia en HuggingFace indica "no disponible", aunque la etiqueta `license:mit` sugiere licencia MIT. Se debe verificar la licencia oficial antes de cualquier uso comercial.
+- El campo de licencia en Hugging Face indica "no disponible", aunque la etiqueta `license:mit` sugiere licencia MIT. Se debe verificar la licencia oficial antes de cualquier uso comercial.
 - El tamaño total del modelo (~753B) implica unos requisitos de hardware extremadamente altos, lo que limita su despliegue a infraestructuras de grandes centros de datos o al uso de APIs gestionadas.
 - No se han proporcionado detalles sobre sesgos conocidos, riesgos de alucinación o limitaciones idiomáticas específicas en la información disponible.
 - Al ser un modelo muy reciente (creado en junio de 2026), su ecosistema de herramientas, optimizaciones y documentación puede estar aún en desarrollo.
@@ -77,7 +77,7 @@ La comparativa se basa en las menciones del blog de Z.ai, que sitúa a GLM-5.2 e
 - Las capacidades multilingües se limitan a inglés y chino según las etiquetas, por lo que su rendimiento en otros idiomas no está garantizado.
 
 ## Enlaces
-- Página de HuggingFace: https://huggingface.co/zai-org/GLM-5.2
+- Página de Hugging Face: https://huggingface.co/zai-org/GLM-5.2
 - Repositorio de GitHub (GLM-5): https://github.com/zai-org/GLM-5
 - Blog de Z.ai sobre GLM-5.2: https://z.ai/blog/glm-5.2
 - Plataforma API de Z.ai: https://z.ai/model-api

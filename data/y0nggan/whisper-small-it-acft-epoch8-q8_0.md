@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Y0nggan/whisper-small-it-acft-epoch8-q8_0 es un repositorio de HuggingFace que, por su nomenclatura, contiene una variante de OpenAI Whisper en su tamano "small" afinada para italiano (sufijo `it`), entrenada presumiblemente durante 8 epocas (`epoch8`) sobre algun conjunto de datos o receta identificada como `acft`, y distribuida en formato GGUF cuantizado a 8 bits (`q8_0`). El autor es el usuario Y0nggan y la licencia declarada es MIT. La model card publicada esta practicamente vacia: solo contiene la linea `license: mit`, sin descripcion, sin instrucciones de uso y sin resultados.
+Y0nggan/whisper-small-it-acft-epoch8-q8_0 es un repositorio de Hugging Face que, por su nomenclatura, contiene una variante de OpenAI Whisper en su tamano "small" afinada para italiano (sufijo `it`), entrenada presumiblemente durante 8 epocas (`epoch8`) sobre algun conjunto de datos o receta identificada como `acft`, y distribuida en formato GGUF cuantizado a 8 bits (`q8_0`). El autor es el usuario Y0nggan y la licencia declarada es MIT. La model card publicada esta practicamente vacia: solo contiene la linea `license: mit`, sin descripcion, sin instrucciones de uso y sin resultados.
 
 El repositorio no tiene descargas ni "likes" en el momento de la consulta, y su campo `pipeline` no esta declarado, aunque por el nombre corresponde a un modelo de reconocimiento automatico del habla (ASR). Tampoco se declaran idiomas soportados, de modo que el sufijo `it` es la unica indicacion (no confirmada) de que el ajuste fino se centro en italiano.
 
@@ -66,10 +66,10 @@ Los valores de la columna de referencia corresponden a documentacion publica de 
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Y0nggan/whisper-small-it-acft-epoch8-q8_0 | no disponible (~244 M si es Whisper small) | no disponible (30 s en Whisper estandar) | no disponible (presunto italiano) | MIT | HuggingFace, GGUF |
-| openai/whisper-small | ~244 M | 30 s por ventana | multilingue (~96 idiomas) | MIT | HuggingFace, safetensors |
-| openai/whisper-large-v3-turbo | ~809 M | 30 s por ventana | multilingue (~99 idiomas) | MIT | HuggingFace, safetensors |
-| distil-whisper/distil-small.en | ~166 M | 30 s por ventana | solo ingles | MIT | HuggingFace, safetensors |
+| Y0nggan/whisper-small-it-acft-epoch8-q8_0 | no disponible (~244 M si es Whisper small) | no disponible (30 s en Whisper estandar) | no disponible (presunto italiano) | MIT | Hugging Face, GGUF |
+| openai/whisper-small | ~244 M | 30 s por ventana | multilingue (~96 idiomas) | MIT | Hugging Face, safetensors |
+| openai/whisper-large-v3-turbo | ~809 M | 30 s por ventana | multilingue (~99 idiomas) | MIT | Hugging Face, safetensors |
+| distil-whisper/distil-small.en | ~166 M | 30 s por ventana | solo ingles | MIT | Hugging Face, safetensors |
 
 No hay datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa de WER con las alternativas.
 
@@ -87,7 +87,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Y0nggan/whisper-small-it-acft-epoch8-q8_0
+- Hugging Face: https://huggingface.co/Y0nggan/whisper-small-it-acft-epoch8-q8_0
 - GitHub, Quick-Whisper-Typer: https://github.com/thiswillbeyourgithub/Quick-Whisper-Typer
 - OpenAI Whisper (repositorio de referencia): https://github.com/openai/whisper
 - whisper.cpp (implementacion GGUF de referencia): https://github.com/ggml-org/whisper.cpp

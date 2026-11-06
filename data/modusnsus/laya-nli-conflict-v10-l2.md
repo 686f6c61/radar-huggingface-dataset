@@ -111,7 +111,7 @@ Frente a alternativas de la misma categoria (encoders multilingues tipo `jhu-cls
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-l2
+- Modelo en Hugging Face: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-l2
 - Head de produccion declarado (v4): https://huggingface.co/Modusnsus/laya-nli-memory-conflict
 - Baseline S2 de la misma ronda: https://huggingface.co/Modusnsus/laya-nli-conflict-v10-s2
 - Modelo base declarado: https://huggingface.co/convaiinnovations/laya-multilingual

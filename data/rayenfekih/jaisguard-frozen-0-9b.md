@@ -19,13 +19,13 @@ Técnicamente, es un checkpoint congelado (backbone sin entrenar) al que se le h
 | Tipos de cuantizacion | FP32 (cabeza, siempre), BF16 y FP16 para el backbone (histórico en RTX 4050) |
 | Idiomas soportados | Árabe (escritura árabe, incluidos dialectos); entradas en otros alfabetos o vacías devuelven error |
 | Licencia | MIT |
-| Formato de pesos | Checkpoint portátil: runtime independiente + tokenizador + adaptador/cabeza + config + manifiesto de integridad; backbone base descargado de HuggingFace (no fusionado) |
+| Formato de pesos | Checkpoint portátil: runtime independiente + tokenizador + adaptador/cabeza + config + manifiesto de integridad; backbone base descargado de Hugging Face (no fusionado) |
 
 ## Arquitectura y entrenamiento
 
 El modelo parte de Jais-3-0.9B (hidden size 1536), un transformer multilingüe con énfasis en árabe. El backbone permanece completamente congelado; solo se entrena una cabeza de clasificación lineal FP32 (1536→2) con su bias original, usando pooling del último token no padding. Las etiquetas son VALID=0 y GIBBERISH=1, la decisión se toma con `p_gibberish >= threshold`, y el padding es a la derecha con texto crudo y tokens especiales, sin prompt de chat.
 
-El entrenamiento usó un export original de 1.500 filas de entrenamiento (710 VALID, 790 GIBBERISH; 1.367 etiquetas revisadas por humanos y 133 provisionales auditadas) y 250 filas de validación (120 VALID, 130 GIBBERISH). El dataset derivado publicado en HuggingFace (1.498 train + 250 validación + 400 test = 2.148 filas) no se usó para entrenar estos checkpoints. La configuración de optimización fue AdamW con weight decay 0,01, warmup ratio 0,1, gradient clipping 1,0, batch 32 y learning rate de cabeza 0,001 durante hasta 30 épocas con patience 5 (variante congelada). El checkpoint publicado corresponde a la semilla 43, época 5, con pérdida de validación 0,2295, seleccionada por el primer mínimo de pérdida de validación. También se documentan hiperparámetros de una variante LoRA (microbatch 2, acumulación 8, LR de adaptador 0,0001) en `training_config.json`.
+El entrenamiento usó un export original de 1.500 filas de entrenamiento (710 VALID, 790 GIBBERISH; 1.367 etiquetas revisadas por humanos y 133 provisionales auditadas) y 250 filas de validación (120 VALID, 130 GIBBERISH). El dataset derivado publicado en Hugging Face (1.498 train + 250 validación + 400 test = 2.148 filas) no se usó para entrenar estos checkpoints. La configuración de optimización fue AdamW con weight decay 0,01, warmup ratio 0,1, gradient clipping 1,0, batch 32 y learning rate de cabeza 0,001 durante hasta 30 épocas con patience 5 (variante congelada). El checkpoint publicado corresponde a la semilla 43, época 5, con pérdida de validación 0,2295, seleccionada por el primer mínimo de pérdida de validación. También se documentan hiperparámetros de una variante LoRA (microbatch 2, acumulación 8, LR de adaptador 0,0001) en `training_config.json`.
 
 ## Capacidades
 
@@ -79,8 +79,8 @@ No se conocen clasificadores de gibberish en escritura árabe ampliamente public
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JaisGuard-Frozen-0.9B | Clasificador binario (VALID/GIBBERISH, árabe) | 0,9B (backbone congelado) + cabeza de 3.074 parámetros | 64 tokens | MIT | HuggingFace, API propia |
-| IFM/Jais-3-0.9B (base) | LLM causal generativo árabe/inglés | 0,9B | no disponible | no disponible | HuggingFace (repositorio redirigido a inception42/Jais-3-0.9B) |
+| JaisGuard-Frozen-0.9B | Clasificador binario (VALID/GIBBERISH, árabe) | 0,9B (backbone congelado) + cabeza de 3.074 parámetros | 64 tokens | MIT | Hugging Face, API propia |
+| IFM/Jais-3-0.9B (base) | LLM causal generativo árabe/inglés | 0,9B | no disponible | no disponible | Hugging Face (repositorio redirigido a inception42/Jais-3-0.9B) |
 | Alternativas de clasificación de gibberish en árabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se conocen clasificadores de gibberish en escritura árabe ampliamente public
 - Existen discrepancias conocidas de probabilidad entre BF16 y FP16 en dos de los checkpoints de serving históricos; BF16 y FP16 no se asumen equivalentes.
 - Privacidad: dos registros VALID de Aya revisados por humanos con incertidumbre de privacidad se usaron en el entrenamiento original (limitación divulgada); no se ha realizado auditoría de extracción o memorización.
 - Procedencia: el entrenamiento original se registró en el commit git `fab3580` con cambios sin confirmar, por lo que no puede reconstruirse exactamente ese entorno.
-- El dataset derivado en HuggingFace era privado en el momento de la preparación y puede requerir acceso autorizado.
+- El dataset derivado en Hugging Face era privado en el momento de la preparación y puede requerir acceso autorizado.
 - Sesgos específicos: no documentados por el autor; dado el tamaño reducido y la composición del dataset, cabe esperar sesgos hacia los dialectos y estilos presentes en el mismo.
 - Riesgo de alucinación: no aplicable, al ser un modelo discriminativo sin generación de texto.
 - Licencia MIT: sin restricciones para uso comercial, aunque el modelo base puede tener condiciones propias que conviene revisar.

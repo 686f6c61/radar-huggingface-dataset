@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KaryoFlow es un detector de objetos especializado en la localizacion de cromosomas en imagenes de citogenetica, desarrollado por el usuario procaffenator y publicado en HuggingFace bajo el pipeline `object-detection`. El modelo parte de DiffusionDet, un detector generativo basado en difusion, y lo adapta sustituyendo el proceso de refinamiento de cajas por un *rectified flow*, ademas de incorporar un modulo de ranking de calidad de localizacion (LQCR) para mejorar la seleccion de candidatos. El resultado reportado es un incremento de mAP de caja COCO frente a detectores discriminativos clasicos como YOLOX-S, Cascade R-CNN, RTMDet-L y el propio DiffusionDet en dos cohortes de cromosomas evaluadas por separado.
+KaryoFlow es un detector de objetos especializado en la localizacion de cromosomas en imagenes de citogenetica, desarrollado por el usuario procaffenator y publicado en Hugging Face bajo el pipeline `object-detection`. El modelo parte de DiffusionDet, un detector generativo basado en difusion, y lo adapta sustituyendo el proceso de refinamiento de cajas por un *rectified flow*, ademas de incorporar un modulo de ranking de calidad de localizacion (LQCR) para mejorar la seleccion de candidatos. El resultado reportado es un incremento de mAP de caja COCO frente a detectores discriminativos clasicos como YOLOX-S, Cascade R-CNN, RTMDet-L y el propio DiffusionDet en dos cohortes de cromosomas evaluadas por separado.
 
 El repositorio distribuye 34 checkpoints en formato PyTorch (`.pth`) que cubren tres variantes del metodo (KaryoFlow, KaryoFlow + LQCR y KaryoFlow H3) sobre dos conjuntos de datos, con tres semillas de entrenamiento (42, 123 y 789), ademas de los modelos de comparacion. Las evaluaciones se realizaron sobre 54 combinaciones configuracion-checkpoint registradas en un indice de reproducibilidad. El mejor resultado reportado es de 0,7150 mAP en el Dataset 1 y 0,8658 mAP en el Dataset 2 para la variante KaryoFlow + LQCR.
 
@@ -105,7 +105,7 @@ No se dispone de comparaciones con otros detectores especializados en cromosomas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/procaffenator/KaryoFlow
+- Repositorio en Hugging Face: https://huggingface.co/procaffenator/KaryoFlow
 - Codigo y demostraciones (paquete anonimizado): https://anonymous.4open.science/r/KaryoFlow/README.md
 - Directorio de checkpoints: `weights/`
 - Indice de configuraciones y resultados: `reproducibility/models.json`

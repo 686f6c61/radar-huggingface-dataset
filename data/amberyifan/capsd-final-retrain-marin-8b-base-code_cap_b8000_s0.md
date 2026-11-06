@@ -10,7 +10,7 @@ La relevancia de este modelo radica en que parte de la familia Marin, una inicia
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (probable, por el tag "llama" en HuggingFace) |
+| Arquitectura | Llama (probable, por el tag "llama" en Hugging Face) |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -79,7 +79,7 @@ La comparación real solo sería posible tras ejecutar benchmarks propios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_cap_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_cap_b8000_s0
 - Modelo base Marin-8B-Base: https://huggingface.co/marin-community/marin-8b-base
 - Comunidad Marin: https://marin.community/
 - Modelos similares del mismo autor: https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b8000_s0 y https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_ifd_b1000_s0

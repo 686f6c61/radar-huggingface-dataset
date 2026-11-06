@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-14B-MLX-4bit es una cuantización comunitaria de 4 bits, en formato MLX, del modelo denso Qwen3-14B de Alibaba Qwen. La ha publicado el usuario Epicbracelect221 en HuggingFace, partiendo del checkpoint base Qwen/Qwen3-14B-Base. Su propósito es permitir la ejecución local del modelo en ordenadores Apple Silicon (M1/M2/M3/M4) con memoria unificada, algo inviable con los pesos completos en bf16, que ocupan aproximadamente 29,5 GB. La arquitectura es un transformer causal denso de 14,8 mil millones de parámetros totales (13,2 mil millones sin contar embeddings), 40 capas y atención con Grouped Query Attention (40 cabezas de consulta frente a 8 de clave/valor).
+Qwen3-14B-MLX-4bit es una cuantización comunitaria de 4 bits, en formato MLX, del modelo denso Qwen3-14B de Alibaba Qwen. La ha publicado el usuario Epicbracelect221 en Hugging Face, partiendo del checkpoint base Qwen/Qwen3-14B-Base. Su propósito es permitir la ejecución local del modelo en ordenadores Apple Silicon (M1/M2/M3/M4) con memoria unificada, algo inviable con los pesos completos en bf16, que ocupan aproximadamente 29,5 GB. La arquitectura es un transformer causal denso de 14,8 mil millones de parámetros totales (13,2 mil millones sin contar embeddings), 40 capas y atención con Grouped Query Attention (40 cabezas de consulta frente a 8 de clave/valor).
 
 El modelo hereda las capacidades de la familia Qwen3: conmutación entre modo de razonamiento ("thinking") y modo directo ("non-thinking") dentro del mismo checkpoint, soporte declarado de más de 100 idiomas y dialectos, y capacidades de agente con integración de herramientas externas. La longitud de contexto nativa es de 32.768 tokens, ampliable a 131.072 mediante escalado YaRN.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta la vía más práct
 | Parametros activos | No aplica (modelo denso, sin mezcla de expertos) |
 | Longitud de contexto | 32.768 tokens nativos; 131.072 tokens con YaRN |
 | Tipos de cuantizacion | 4-bit en formato MLX (este repositorio). No se distribuyen otras precisiones aquí; el detalle del esquema de grupo (group size) no está disponible |
-| Idiomas soportados | La metadata de HuggingFace indica "no disponibles"; la model card del autor declara más de 100 idiomas y dialectos |
+| Idiomas soportados | La metadata de Hugging Face indica "no disponibles"; la model card del autor declara más de 100 idiomas y dialectos |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (pesos cuantizados para el runtime MLX) |
 | Libreria / runtime | mlx (mlx_lm >= 0.25.2) |
@@ -90,14 +90,14 @@ Nota: los datos de contexto, licencia y arquitectura de los modelos comparados p
 - Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala, especialmente en modo non-thinking y en preguntas factuales sobre dominios poco representados.
 - Degradación por decodificación: el propio autor advierte que la decodificación greedy puede provocar repeticiones y pérdida de rendimiento. Hay que respetar los parámetros de muestreo recomendados por modo.
 - Limitaciones de contexto: los 131.072 tokens requieren activar YaRN explícitamente; el comportamiento por defecto es de 32.768 tokens. A contexto completo, la caché KV consume varios gigabytes adicionales.
-- Idiomas: la metadata de HuggingFace no declara idiomas; el soporte multilingüe proviene de la model card heredada y no está verificado para esta cuantización.
+- Idiomas: la metadata de Hugging Face no declara idiomas; el soporte multilingüe proviene de la model card heredada y no está verificado para esta cuantización.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserven los avisos de copyright y se indique si se han realizado cambios. Al ser un derivado cuantizado, debe mantenerse también la atribución a Qwen.
 - Dependencia de plataforma: al estar en formato MLX, el modelo queda ligado al ecosistema Apple. Migrar a servidores con GPU NVIDIA exige reconvertir los pesos.
 - Sin soporte multimodal: no procesa imágenes ni audio, por lo que no sirve para casos de uso de visión.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Epicbracelect221/Qwen3-14B-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Epicbracelect221/Qwen3-14B-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Modelo oficial Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-14B/blob/main/LICENSE

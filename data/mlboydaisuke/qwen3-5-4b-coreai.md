@@ -82,7 +82,7 @@ La comparativa se limita a los modelos de la misma familia convertidos a Core AI
 
 ## Enlaces
 
-- [HuggingFace - qwen3.5-4B-CoreAI](https://huggingface.co/mlboydaisuke/qwen3.5-4B-CoreAI)
+- [Hugging Face - qwen3.5-4B-CoreAI](https://huggingface.co/mlboydaisuke/qwen3.5-4B-CoreAI)
 - [Modelo hermano 0.8B](https://huggingface.co/mlboydaisuke/qwen3.5-0.8B-CoreAI)
 - [Modelo hermano 2B](https://huggingface.co/mlboydaisuke/qwen3.5-2B-CoreAI)
 - [Repositorio coreai-model-zoo](https://github.com/john-rocky/coreai-model-zoo)

@@ -65,4 +65,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoeAdah/customer-Churn
+- Repositorio en Hugging Face: https://huggingface.co/zoeAdah/customer-Churn

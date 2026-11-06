@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snapkitty/sovereign-prism es un compilador prism no recursivo para el ecosistema SnapKitty, desarrollado por Snapkitty y publicado en HuggingFace. No se trata de un modelo de inteligencia artificial, sino de una herramienta de línea de comandos y biblioteca OCaml que procesa artefactos JSON para generar etiquetas hash deterministas (SHA-256d) y testigos WORM (write-once, read-many). Su propósito es garantizar la integridad y reproducibilidad de artefactos mediante un pipeline tipado y sin recursión, con un enfoque en la verificación de admisión basada en invariantes topológicas (ψ-pipeline). La relevancia actual radica en su propuesta de un estándar de sellado de artefactos para entornos que requieren trazabilidad y no repudio, aunque no ofrece capacidades de generación de texto, razonamiento o procesamiento de lenguaje natural.
+Snapkitty/sovereign-prism es un compilador prism no recursivo para el ecosistema SnapKitty, desarrollado por Snapkitty y publicado en Hugging Face. No se trata de un modelo de inteligencia artificial, sino de una herramienta de línea de comandos y biblioteca OCaml que procesa artefactos JSON para generar etiquetas hash deterministas (SHA-256d) y testigos WORM (write-once, read-many). Su propósito es garantizar la integridad y reproducibilidad de artefactos mediante un pipeline tipado y sin recursión, con un enfoque en la verificación de admisión basada en invariantes topológicas (ψ-pipeline). La relevancia actual radica en su propuesta de un estándar de sellado de artefactos para entornos que requieren trazabilidad y no repudio, aunque no ofrece capacidades de generación de texto, razonamiento o procesamiento de lenguaje natural.
 
 ## Especificaciones tecnicas
 
@@ -68,5 +68,5 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-prism
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-prism
 - No se encontraron otros enlaces (papers, blogs, repos) en la búsqueda web.

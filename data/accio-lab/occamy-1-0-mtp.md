@@ -81,10 +81,10 @@ No se dispone de datos de modelos competidores en la información proporcionada.
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Accio-Lab/occamy-1.0-MTP | Cabeza MTP (draft head) | 844.640.768 en la cabeza (8.392.704 entrenables) | Validado a 2048 | 1,12x en BF16, 1,06x en NVFP4 | Apache 2.0 | HuggingFace, requiere base |
-| Accio-Lab/occamy-1.0 | Modelo base congelado | no disponible | no disponible | no disponible | no disponible en esta información | HuggingFace |
-| Accio-Lab/occamy-1.0-NVFP4 | Base cuantizada *experts-only* | no disponible | no disponible | 84,97 % de aceptación con la cabeza entrenada | no disponible en esta información | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (revisión `995ad96e…`) | Modelo donante de la inicialización | no disponible en esta información | no disponible | no disponible | no disponible en esta información | HuggingFace |
+| Accio-Lab/occamy-1.0-MTP | Cabeza MTP (draft head) | 844.640.768 en la cabeza (8.392.704 entrenables) | Validado a 2048 | 1,12x en BF16, 1,06x en NVFP4 | Apache 2.0 | Hugging Face, requiere base |
+| Accio-Lab/occamy-1.0 | Modelo base congelado | no disponible | no disponible | no disponible | no disponible en esta información | Hugging Face |
+| Accio-Lab/occamy-1.0-NVFP4 | Base cuantizada *experts-only* | no disponible | no disponible | 84,97 % de aceptación con la cabeza entrenada | no disponible en esta información | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (revisión `995ad96e…`) | Modelo donante de la inicialización | no disponible en esta información | no disponible | no disponible | no disponible en esta información | Hugging Face |
 
 Alternativas conceptuales del mismo tipo (EAGLE-3, Medusa u otras cabezas MTP integradas en modelos como DeepSeek-V3): no disponible, no se han encontrado datos comparables en la información proporcionada.
 
@@ -107,7 +107,7 @@ Alternativas conceptuales del mismo tipo (EAGLE-3, Medusa u otras cabezas MTP in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
+- Repositorio Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MTP
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Variante cuantizada NVFP4: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
 - Modelo donante de la inicialización: https://huggingface.co/Qwen/Qwen3.6-35B-A3B (revisión `995ad96eacd98c81ed38be0c5b274b04031597b0`)

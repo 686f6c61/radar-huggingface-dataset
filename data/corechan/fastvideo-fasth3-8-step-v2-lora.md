@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastVideo-FastH3-8-Step-V2-LoRA es un adaptador LoRA publicado por el usuario corechan sobre el modelo base FastVideo/FastVideo-FastH3-8-Step-V2. Se trata de un adaptador orientado a la generacion de video a partir de texto (pipeline text-to-video) y, segun las etiquetas declaradas, tambien text-to-audio-video. La ficha de HuggingFace no incluye informacion adicional sobre el contenido exacto del adaptador, su dataset de entrenamiento ni sus hiperparametros.
+FastVideo-FastH3-8-Step-V2-LoRA es un adaptador LoRA publicado por el usuario corechan sobre el modelo base FastVideo/FastVideo-FastH3-8-Step-V2. Se trata de un adaptador orientado a la generacion de video a partir de texto (pipeline text-to-video) y, segun las etiquetas declaradas, tambien text-to-audio-video. La ficha de Hugging Face no incluye informacion adicional sobre el contenido exacto del adaptador, su dataset de entrenamiento ni sus hiperparametros.
 
 Los metadatos disponibles indican que el adaptador se apoya en tecnicas de destilacion (etiquetas "distillation" y "dmd2"), lo que sugiere que el modelo base ha sido optimizado para reducir el numero de pasos de inferencia a ocho, y que incorpora atencion dispersa para video (video-sparse-attention, VSA), una tecnica habitual para abaratar el coste computacional de la atencion sobre secuencias de video largas. La libreria declarada es minimax-h3 y el modelo base parece pertenecer a la familia MiniMax-H3, aunque no se dispone de especificaciones verificables de dicha familia en la informacion proporcionada.
 
@@ -29,7 +29,7 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video): capacidad principal declarada mediante el pipeline de HuggingFace.
+- Generacion de video a partir de texto (text-to-video): capacidad principal declarada mediante el pipeline de Hugging Face.
 - Generacion conjunta de audio y video a partir de texto (text-to-audio-video), segun la etiqueta correspondiente.
 - Destilacion para inferencia en ocho pasos: el nombre del modelo ("8-Step") indica que el adaptador esta pensado para muestrear en ocho pasos, reduciendo el coste de generacion respecto a un modelo base no destilado.
 - Soporte multilingue: unicamente se declara ingles en las etiquetas; no hay evidencia de otros idiomas.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| corechan/FastVideo-FastH3-8-Step-V2-LoRA | no disponible | no disponible | no disponible | no disponible (etiqueta "other") | HuggingFace, 0 descargas |
-| FastVideo/FastVideo-FastH3-8-Step-V2 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| corechan/FastVideo-FastH3-8-Step-V2-LoRA | no disponible | no disponible | no disponible | no disponible (etiqueta "other") | Hugging Face, 0 descargas |
+| FastVideo/FastVideo-FastH3-8-Step-V2 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre otros adaptadores LoRA de destilacion comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -81,6 +81,6 @@ No se dispone de datos verificables sobre otros adaptadores LoRA de destilacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/corechan/FastVideo-FastH3-8-Step-V2-LoRA
+- Hugging Face: https://huggingface.co/corechan/FastVideo-FastH3-8-Step-V2-LoRA
 - Modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

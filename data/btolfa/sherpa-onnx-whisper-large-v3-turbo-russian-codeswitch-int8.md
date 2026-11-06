@@ -83,7 +83,7 @@ La comparación relevante es frente al checkpoint original: mismo rendimiento es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/btolfa/sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8
+- Modelo en Hugging Face: https://huggingface.co/btolfa/sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8
 - Modelo base: https://huggingface.co/coriollon/whisper-large-v3-turbo-russian-codeswitch (revisión `bf64d2a976a268e35041f74233f889f951f0f676`)
 - Repo de exportación ramblr: https://github.com/trevornk/ramblr
 - sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx (commit `330609dab49be6ee8b30702918ca7abbbad1286a`)

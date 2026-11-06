@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumpkn-5 es un modelo de generacion de texto de 124,28 millones de parametros desarrollado por el usuario FatalMistake02 y publicado en HuggingFace bajo licencia CC-BY-SA-4.0. Se trata de un experimento de entrenamiento temprano "from scratch" (entrenado desde cero, sin partir de un modelo base preentrenado), distribuido unicamente en formato GGUF F16 y con una ventana de contexto de 2.048 tokens. El propio autor lo describe en la model card como "absolute garbage" y advierte explicitamente de que deben esperarse respuestas incorrectas y sinsentidos.
+pumpkn-5 es un modelo de generacion de texto de 124,28 millones de parametros desarrollado por el usuario FatalMistake02 y publicado en Hugging Face bajo licencia CC-BY-SA-4.0. Se trata de un experimento de entrenamiento temprano "from scratch" (entrenado desde cero, sin partir de un modelo base preentrenado), distribuido unicamente en formato GGUF F16 y con una ventana de contexto de 2.048 tokens. El propio autor lo describe en la model card como "absolute garbage" y advierte explicitamente de que deben esperarse respuestas incorrectas y sinsentidos.
 
 El modelo no resuelve ningun problema practico de produccion: su relevancia es exclusivamente experimental y educativa, como ejemplo de pipeline de entrenamiento desde cero y de publicacion de pesos en formato GGUF. No hay informacion publicada sobre la arquitectura interna, el dataset de entrenamiento, el numero de tokens vistos ni el proceso de alineacion.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, no se publica el numero de tokens, la composicion del
 
 - Generacion de texto autoregresiva basica en ingles.
 - Conversacion de formato libre (tag `conversational`), sin plantilla de chat documentada.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse mediante infraestructura compatible con la API de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 - No hay evidencia de soporte de tool calling ni de function calling.
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso.
 - No hay soporte multimodal (vision, audio) documentado.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 250 MB en F16 para los pesos (124,28M parametros x 2 bytes), mas overhead de contexto y runtime; en la practica cabe en cualquier GPU con 1 GB o mas.
 - GPU recomendadas: cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4090) e incluso CPU; no requiere A100 ni H100.
 - Cabe en GPU consumer: si, en practicamente todas, y tambien en CPU y en dispositivos de borde.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; tambien puede servirse via endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; tambien puede servirse via endpoints compatibles con la API de Hugging Face.
 - Latencia y throughput: no disponibles. Por el tamano, se espera un throughput alto y latencia baja en hardware moderno, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ La comparacion con GPT-2 small es la mas directa por tamano, pero pumpkn-5 no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-5
+- Modelo en Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-5
 - Fichero de atribucion del dataset (referenciado en la model card): https://huggingface.co/FatalMistake02/pumpkn-5/blob/main/ATTRIBUTION.md
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

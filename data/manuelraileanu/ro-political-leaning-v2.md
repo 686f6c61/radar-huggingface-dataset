@@ -91,7 +91,7 @@ La v2 es más ligera que la v1 (0.5 GB frente a 1.13 GB) y amplía la salida de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelraileanu/ro-political-leaning-v2
+- Modelo en Hugging Face: https://huggingface.co/manuelraileanu/ro-political-leaning-v2
 - Versión anterior (v1): https://huggingface.co/manuelraileanu/ro-political-leaning
 - Dataset ro-political: https://huggingface.co/datasets/petrematei/ro-political
 - Dataset news-ro-offense: https://huggingface.co/datasets/readerbench/news-ro-offense

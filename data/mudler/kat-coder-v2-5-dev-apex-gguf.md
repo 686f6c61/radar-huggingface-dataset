@@ -71,7 +71,7 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mudler/KAT-Coder-V2.5-Dev-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mudler/KAT-Coder-V2.5-Dev-APEX-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Informe técnico del modelo base: https://arxiv.org/abs/2607.05471
 - Proyecto APEX: https://github.com/mudler/apex-quant

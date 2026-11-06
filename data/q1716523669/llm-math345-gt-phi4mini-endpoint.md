@@ -62,6 +62,6 @@ No se dispone de información de rendimiento para comparar con otros modelos. Co
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/q1716523669/llm-math345-gt-phi4mini-endpoint)
+- [Página del modelo en Hugging Face](https://huggingface.co/q1716523669/llm-math345-gt-phi4mini-endpoint)
 - [Modelo base: microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct)
 - [Paper de DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)

@@ -4,9 +4,9 @@
 
 TouradAi/qwen3-4b-instruct-african-toolcalling es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507 de Alibaba, publicado por el usuario TouradAi. Se trata de un modelo de generacion de texto de aproximadamente 4.022 millones de parametros, orientado especificamente al uso de herramientas (tool calling / function calling) en contextos linguisticos africanos, aunque la unica lengua declarada en la model card es el ingles.
 
-El modelo parte de la arquitectura Qwen3, un transformer decoder-only denso (no MoE en esta variante de 4B), y ha sido entrenado con la libreria Unsloth, segun indican los tags del repositorio. Su relevancia radica en la escasez de modelos ajustados para tool calling en el ambito africano, un nicho poco cubierto por los grandes laboratorios. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo parte de la arquitectura Qwen3, un transformer decoder-only denso (no MoE en esta variante de 4B), y ha sido entrenado con la libreria Unsloth, segun indican los tags del repositorio. Su relevancia radica en la escasez de modelos ajustados para tool calling en el ambito africano, un nicho poco cubierto por los grandes laboratorios. El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-La informacion publicada por el autor es muy limitada: no se detallan volumenes de datos de entrenamiento, composicion del dataset, resultados de benchmarks ni hiperparametros del ajuste. Esta ficha recoge exclusivamente los datos disponibles en HuggingFace y en la informacion del modelo base.
+La informacion publicada por el autor es muy limitada: no se detallan volumenes de datos de entrenamiento, composicion del dataset, resultados de benchmarks ni hiperparametros del ajuste. Esta ficha recoge exclusivamente los datos disponibles en Hugging Face y en la informacion del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ La comparativa con alternativas de otros fabricantes (Llama 3.2 3B, Phi-4-mini, 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatizacion de descargas en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatizacion de descargas en CI/CD.
 - Documentacion muy escasa: no se detallan datos de entrenamiento, benchmarks ni limitaciones declaradas por el autor.
 - El nombre sugiere cobertura de idiomas africanos, pero la model card solo declara ingles; posible discrepancia entre nombre y capacidades reales.
 - Riesgo de alucinacion inherente a modelos de 4B, especialmente en tool calling con esquemas complejos.
@@ -81,6 +81,6 @@ La comparativa con alternativas de otros fabricantes (Llama 3.2 3B, Phi-4-mini, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TouradAi/qwen3-4b-instruct-african-toolcalling
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Hugging Face: https://huggingface.co/TouradAi/qwen3-4b-instruct-african-toolcalling
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

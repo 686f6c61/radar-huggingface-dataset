@@ -104,7 +104,7 @@ Frente a la build de 4 bits, esta versión gana 0,5 GB de disco, 0,48 GB de memo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imYChaudhary22/zen-polish-v32-3bit
+- Modelo en Hugging Face: https://huggingface.co/imYChaudhary22/zen-polish-v32-3bit
 - Modelo base bf16: https://huggingface.co/imYChaudhary22/zen-polish-v32-bf16
 - Build de 4 bits: https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit
 - Licencia del modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE

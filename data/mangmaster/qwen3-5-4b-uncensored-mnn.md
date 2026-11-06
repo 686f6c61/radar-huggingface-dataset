@@ -19,7 +19,7 @@ Conviene subrayar que este repositorio es un artefacto de runtime/exportación, 
 | Tipos de cuantizacion | 4-bit con block size 128 |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | MNN (llm.mnn, llm.mnn.weight); incluye config.json de HuggingFace para metadatos |
+| Formato de pesos | MNN (llm.mnn, llm.mnn.weight); incluye config.json de Hugging Face para metadatos |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MangMaster/Qwen3.5-4B-uncensored-MNN
+- Hugging Face: https://huggingface.co/MangMaster/Qwen3.5-4B-uncensored-MNN
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - TokForge: https://tokforge.ai

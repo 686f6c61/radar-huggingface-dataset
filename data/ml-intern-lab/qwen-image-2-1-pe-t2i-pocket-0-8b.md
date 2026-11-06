@@ -84,11 +84,11 @@ Lecturas publicadas por el autor: los modelos estudiantes igualan al profesor en
 
 | Modelo | Parametros | Funcion | JSON valido | Ratio permitido | Latencia media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen-Image-2.1-PE-T2I-Pocket-0.8B (este modelo) | 0,75B | Reescritor de prompts con JSON y ratio | 99,7 % | 99,3 % | 2,81 s | other (Qwen Research, no comercial) | safetensors + GGUF en HuggingFace |
-| Qwen/Qwen-Image-2.1-PE-T2I (profesor) | 9B | Reescritor de prompts con thinking y system prompt de 1.700 palabras | 100,0 % | 100,0 % | no disponible | no disponible | HuggingFace |
+| Qwen-Image-2.1-PE-T2I-Pocket-0.8B (este modelo) | 0,75B | Reescritor de prompts con JSON y ratio | 99,7 % | 99,3 % | 2,81 s | other (Qwen Research, no comercial) | safetensors + GGUF en Hugging Face |
+| Qwen/Qwen-Image-2.1-PE-T2I (profesor) | 9B | Reescritor de prompts con thinking y system prompt de 1.700 palabras | 100,0 % | 100,0 % | no disponible | no disponible | Hugging Face |
 | Student-2B (misma familia de destilacion) | 2B | Reescritor de prompts con JSON y ratio | 100,0 % | 99,7 % | 3,22 s | no disponible | no disponible |
-| Qwen/Qwen3.5-2B sin ajustar (baseline) | 2B | Modelo de texto general usado como baseline | 77,5 % | 20,0 % | 29,90 s | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | Modelo de texto general | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-2B sin ajustar (baseline) | 2B | Modelo de texto general usado como baseline | 77,5 % | 20,0 % | 29,90 s | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | Modelo de texto general | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos que aparecen en la evaluacion publicada por el autor. No se dispone de datos de benchmarks frente a otros reescritores de prompts de terceros.
 
@@ -108,7 +108,7 @@ La comparativa se limita a los modelos que aparecen en la evaluacion publicada p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B
 - Dataset de destilacion: https://huggingface.co/datasets/ML-Intern-lab/Qwen-Image-2.1-rewriter-distill
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | tyosato11/model_perceiver_large | Perceiver large (multitask) | no disponible | no disponible | no disponible | No (solo codigo Python) |
 | Perceiver original (paper) | Perceiver | 3.5 B (variantes) | 100k+ entradas | no aplica (paper) | Pesos disponibles en repos de DeepMind |
 
-La comparativa se limita a la arquitectura Perceiver, ya que no hay modelos comparables con pesos publicados en este repositorio. Las dos variantes de HuggingFace (la de `inouekenny` y la de `tyosato11`) son similares en configuracion, pero ninguna publica pesos entrenados.
+La comparativa se limita a la arquitectura Perceiver, ya que no hay modelos comparables con pesos publicados en este repositorio. Las dos variantes de Hugging Face (la de `inouekenny` y la de `tyosato11`) son similares en configuracion, pero ninguna publica pesos entrenados.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ La comparativa se limita a la arquitectura Perceiver, ya que no hay modelos comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inouekenny/model_097403367_perceiver_large
+- Repositorio Hugging Face: https://huggingface.co/inouekenny/model_097403367_perceiver_large
 - Paper original Perceiver: https://arxiv.org/abs/2103.03206
 - Implementacion de referencia en GitHub: https://github.com/BaiardiLorenzo/Perceiver
 - Perceiver AI (plataforma de optimizacion, no relacionada con este modelo): https://perceiver.ai/

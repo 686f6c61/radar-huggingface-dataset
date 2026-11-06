@@ -73,7 +73,7 @@ No se han encontrado modelos comparables directos en la información disponible,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/dolphin-email-8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/dolphin-email-8b-GGUF
 - Modelo base (h0ney-badger/dolphin-email-8b): https://huggingface.co/h0ney-badger/dolphin-email-8b
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

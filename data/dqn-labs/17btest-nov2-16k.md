@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DQN-Labs/17btest-nov2-16k es un modelo de generacion de texto publicado en HuggingFace por el usuario DQN-Labs. A pesar de la denominacion "17b" en el identificador, el recuento real de parametros segun los pesos en safetensors es de 1.728.801.536 (aproximadamente 1,73 mil millones), por lo que se trata de un modelo de escala ~1,7B y no de 17B. El repositorio ocupa 3,5 GB y se distribuye en formato safetensors con codigo personalizado (`custom_code`) bajo la libreria transformers.
+DQN-Labs/17btest-nov2-16k es un modelo de generacion de texto publicado en Hugging Face por el usuario DQN-Labs. A pesar de la denominacion "17b" en el identificador, el recuento real de parametros segun los pesos en safetensors es de 1.728.801.536 (aproximadamente 1,73 mil millones), por lo que se trata de un modelo de escala ~1,7B y no de 17B. El repositorio ocupa 3,5 GB y se distribuye en formato safetensors con codigo personalizado (`custom_code`) bajo la libreria transformers.
 
-El modelo aparece etiquetado con la arquitectura "lfm3" y con las etiquetas `trl` y `sft`, lo que sugiere que ha sido sometido a un ajuste supervisado (supervised fine-tuning) mediante la libreria TRL, probablemente partiendo de un modelo base de la familia LFM (Liquid Foundation Models). La model card es la plantilla automatica de HuggingFace sin cumplimentar: no incluye informacion sobre desarrollador, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion.
+El modelo aparece etiquetado con la arquitectura "lfm3" y con las etiquetas `trl` y `sft`, lo que sugiere que ha sido sometido a un ajuste supervisado (supervised fine-tuning) mediante la libreria TRL, probablemente partiendo de un modelo base de la familia LFM (Liquid Foundation Models). La model card es la plantilla automatica de Hugging Face sin cumplimentar: no incluye informacion sobre desarrollador, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion.
 
 La relevancia de esta ficha es fundamentalmente descriptiva y de advertir: se trata de un checkpoint de prueba ("17btest") con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica publicada. Cualquier evaluacion rigurosa del modelo requiere inspeccion directa de los pesos y de la configuracion del repositorio, ya que el autor no ha proporcionado informacion verificable.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DQN-Labs/17btest-nov2-16k | ~1,73B | no disponible (posible 16k por el identificador) | no disponible | HuggingFace, 0 descargas | Checkpoint de prueba sin documentacion |
-| Modelos LFM de Liquid AI (familia referenciada por la etiqueta) | variable | no disponible | no disponible | HuggingFace | No se confirma que este checkpoint derive de un LFM oficial |
-| Transformers convencionales de ~1,5-2B (p. ej. variantes tipo Qwen o SmolLM) | ~1,5-2B | 4k-32k segun variante | variable | HuggingFace | Comparacion generica; no se dispone de datos de rendimiento del modelo evaluado |
+| DQN-Labs/17btest-nov2-16k | ~1,73B | no disponible (posible 16k por el identificador) | no disponible | Hugging Face, 0 descargas | Checkpoint de prueba sin documentacion |
+| Modelos LFM de Liquid AI (familia referenciada por la etiqueta) | variable | no disponible | no disponible | Hugging Face | No se confirma que este checkpoint derive de un LFM oficial |
+| Transformers convencionales de ~1,5-2B (p. ej. variantes tipo Qwen o SmolLM) | ~1,5-2B | 4k-32k segun variante | variable | Hugging Face | Comparacion generica; no se dispone de datos de rendimiento del modelo evaluado |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DQN-Labs/17btest-nov2-16k
+- Hugging Face: https://huggingface.co/DQN-Labs/17btest-nov2-16k
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la model card: https://mlco2.github.io/impact
 - Repositorio de TRL (libreria de entrenamiento referenciada por las etiquetas): https://github.com/huggingface/trl

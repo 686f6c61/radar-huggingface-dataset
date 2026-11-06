@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AjaySharmawood/multitask-warmup-2024 es un repositorio de HuggingFace que contiene una implementación reducida del método de aprendizaje autosupervisado MoCo v3 (Momentum Contrast v3), orientada a un escenario multitarea. El artefacto principal no es un modelo entrenado, sino un punto de partida reproducible: incluye el código (`main.py`), los ficheros de configuración (`config.json` y `training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo. El propio autor indica de forma explícita que no se presenta ningún resultado de benchmark ni un checkpoint entrenado.
+AjaySharmawood/multitask-warmup-2024 es un repositorio de Hugging Face que contiene una implementación reducida del método de aprendizaje autosupervisado MoCo v3 (Momentum Contrast v3), orientada a un escenario multitarea. El artefacto principal no es un modelo entrenado, sino un punto de partida reproducible: incluye el código (`main.py`), los ficheros de configuración (`config.json` y `training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo. El propio autor indica de forma explícita que no se presenta ningún resultado de benchmark ni un checkpoint entrenado.
 
 Las etiquetas del repositorio lo sitúan como un artefacto de PyTorch con pesos en formato safetensors, arquitectura MoCo v3 y licencia Apache 2.0. El recuento de parámetros reportado por los metadatos de safetensors es de 16,576 (la unidad no se especifica en la información disponible). El tamaño del repositorio se registra como 0,0 GB y el contador público de descargas y likes es cero, lo que indica que se trata de una publicación reciente y sin adopción observable.
 
@@ -60,7 +60,7 @@ Dado que el repositorio no contiene un modelo entrenado, los casos de uso son de
 - Aprendizaje autosupervisado en dominios propios: adaptar el marco MoCo v3 a un conjunto de imagenes interno donde no haya etiquetas disponibles.
 - Comparacion de optimizadores y planificadores: la receta por defecto usa SGD con warmup lineal, lo que permite contrastarla de forma controlada con alternativas (AdamW, cosine decay, etc.).
 - Formacion y docencia: usar el repositorio como ejemplo didactico de una implementacion MoCo v3 comentada, con configuracion explicita y punto de entrada ejecutable.
-- Auditoria de artefactos de HuggingFace: caso de estudio sobre como se publican repositorios que explicitamente no reclaman resultados, util para politicas internas de evaluacion de modelos.
+- Auditoria de artefactos de Hugging Face: caso de estudio sobre como se publican repositorios que explicitamente no reclaman resultados, util para politicas internas de evaluacion de modelos.
 
 Se recomienda, para cualquier evaluacion con sentido, usar un conjunto de validacion especifico de la tarea, reportar la metrica a lo largo de al menos tres semillas e incluir una linea base de capacidad comparable, tal como sugiere la model card.
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni r
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks declarados | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -103,5 +103,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AjaySharmawood/multitask-warmup-2024
+- Modelo en Hugging Face: https://huggingface.co/AjaySharmawood/multitask-warmup-2024
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-experiment es un prototipo de investigación publicado por el usuario austinperez en HuggingFace bajo licencia MIT. No se trata de un modelo generativo entrenado ni evaluado, sino de un esqueleto de implementación: el repositorio incluye un script de Python (`predict.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) cuyo único propósito declarado es servir de prueba de humo (smoke test). La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
+dino-experiment es un prototipo de investigación publicado por el usuario austinperez en Hugging Face bajo licencia MIT. No se trata de un modelo generativo entrenado ni evaluado, sino de un esqueleto de implementación: el repositorio incluye un script de Python (`predict.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) cuyo único propósito declarado es servir de prueba de humo (smoke test). La propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El recuento real de parámetros del checkpoint safetensors es de 49.600 (aproximadamente 49,6 K), una cifra que contrasta con la etiqueta de escala "huge" que aparece en la tabla de arquitectura de la model card. Esa discrepancia sugiere que el campo de escala es una etiqueta de configuración generada automáticamente y no una descripción fiel del tamaño real del modelo. Con ese número de parámetros, el artefacto es varios órdenes de magnitud más pequeño que cualquier modelo de lenguaje utilizable en producción.
 
@@ -80,5 +80,5 @@ No disponible. Con 49.600 parametros y sin entrenamiento, este artefacto no es c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinperez/dino-experiment
+- Hugging Face: https://huggingface.co/austinperez/dino-experiment
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada; los resultados devueltos no guardan ninguna relacion con el artefacto descrito.

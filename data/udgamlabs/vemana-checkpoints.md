@@ -111,7 +111,7 @@ La comparacion de rendimiento en telugu con alternativas no esta disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/udgamlabs/Vemana-Checkpoints
+- Repositorio Hugging Face: https://huggingface.co/udgamlabs/Vemana-Checkpoints
 - Modelo base Vemana-Base: https://huggingface.co/udgamlabs/Vemana-Base
 - Sitio del laboratorio: https://udgamlabs.com
 - Retransmision del entrenamiento: https://udgamlabs.com/live/vemana

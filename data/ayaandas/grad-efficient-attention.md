@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayaandas/grad-efficient-attention` no es un modelo de lenguaje desplegable, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en HuggingFace. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. El autor advierte que el material es exploratorio y que no se reclama ninguna mejora en benchmarks, ablation completada, codigo liberado ni checkpoint entrenado.
+`ayaandas/grad-efficient-attention` no es un modelo de lenguaje desplegable, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en Hugging Face. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. El autor advierte que el material es exploratorio y que no se reclama ninguna mejora en benchmarks, ablation completada, codigo liberado ni checkpoint entrenado.
 
 El repositorio contiene dos artefactos: `notes.md` como artefacto principal y `README.md` como documentacion. Ademas, el Hub reporta un fichero safetensors con 49.600 parametros totales, una cifra compatible con un tensor de prueba o marcador de posicion mas que con un modelo funcional, y sin que exista una arquitectura, tokenizador o pipeline declarados que permitan ejecutarlo.
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 | Artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ayaandas/grad-efficient-attention` | Notas de investigacion (con safetensors residual) | 49.600 (safetensors del Hub) | no disponible | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `ayaandas/grad-efficient-attention` | Notas de investigacion (con safetensors residual) | 49.600 (safetensors del Hub) | no disponible | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayaandas/grad-efficient-attention
+- Hugging Face: https://huggingface.co/ayaandas/grad-efficient-attention
 - Fichero `notes.md` (artefacto principal, ruta relativa dentro del repositorio): no disponible como enlace publico independiente
 - Fichero `README.md` (documentacion, ruta relativa dentro del repositorio): no disponible como enlace publico independiente
 - Papers, blogs, repositorios de codigo o demos adicionales: no disponible (no se han encontrado en la informacion proporcionada)

@@ -44,7 +44,7 @@ Los detalles del entrenamiento del modelo de difusión (número de tokens, compo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen métricas comparativas de este modelo frente a otras alternativas (como otros modelos de text-to-motion) en el repositorio de HuggingFace ni en la documentación citada.
+No se han publicado resultados de benchmarks en la información disponible. No existen métricas comparativas de este modelo frente a otras alternativas (como otros modelos de text-to-motion) en el repositorio de Hugging Face ni en la documentación citada.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No hay información pública suficiente para comparar con otros modelos de text-
 
 ## Enlaces
 
-- [HuggingFace - Llama-3-Kimodo-SMPLX-RP-v1-GGUF](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF)
+- [Hugging Face - Llama-3-Kimodo-SMPLX-RP-v1-GGUF](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF)
 - [Repositorio oficial de Kimodo (NVIDIA)](https://github.com/nv-tlabs/kimodo)
 - [LocalAI (motor de IA open-source)](https://github.com/mudler/LocalAI)
 - [Página web de LocalAI](https://localai.io/)

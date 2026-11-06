@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en HuggingFace. Se trata de un modelo denso de 104.716.800 parámetros (aproximadamente 105 M), entrenado desde cero con un script propio basado en Hugging Face Accelerate (`train_clm.py`), sin utilizar la clase `Trainer`. Por su nomenclatura y por el tokenizador asociado (`nikitastheo/babylm-25k-ell-lower-seed43-tokenizer`), apunta a un experimento de investigación en la línea del reto BabyLM, orientado a entrenar modelos pequeños con presupuestos de datos reducidos y currículos de exposición lingüística.
+El modelo `nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en Hugging Face. Se trata de un modelo denso de 104.716.800 parámetros (aproximadamente 105 M), entrenado desde cero con un script propio basado en Hugging Face Accelerate (`train_clm.py`), sin utilizar la clase `Trainer`. Por su nomenclatura y por el tokenizador asociado (`nikitastheo/babylm-25k-ell-lower-seed43-tokenizer`), apunta a un experimento de investigación en la línea del reto BabyLM, orientado a entrenar modelos pequeños con presupuestos de datos reducidos y currículos de exposición lingüística.
 
 La relevancia de este tipo de modelos es doble. Por un lado, sirven como banco de pruebas reproducible para estudiar cómo influyen decisiones de entrenamiento concretas (tokenizador, currículo, semilla, idioma) en el comportamiento final del modelo. Por otro, su tamano reducido permite ejecutarlos en hardware muy modesto, lo que los hace útiles para docencia, experimentación rápida y prototipado local, sin depender de GPUs de gama alta.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables para el modelo analizado, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-seed43-ell-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-lower-seed43-tokenizer
 - Paper, blog o repositorio del autor: no disponible
 - Demos: no disponible

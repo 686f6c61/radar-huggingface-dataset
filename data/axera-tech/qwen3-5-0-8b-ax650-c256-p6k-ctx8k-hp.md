@@ -45,7 +45,7 @@ Los detalles sobre el entrenamiento original (numero de tokens, composicion del 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye tablas de rendimiento, y el repositorio GitHub tampoco documenta metricas de latencia o exactitud para el modelo cuantizado. Se recomienda evaluar el modelo en el hardware objetivo antes de desplegarlo en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye tablas de rendimiento, y el repositorio GitHub tampoco documenta metricas de latencia o exactitud para el modelo cuantizado. Se recomienda evaluar el modelo en el hardware objetivo antes de desplegarlo en produccion.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La comparativa muestra que esta adaptacion de AXERA se diferencia por su formato
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K-HP
+- Repositorio del modelo en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-C256-P6K-CTX8K-HP
 - Modelo hermano (GPTQ-Int4): https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX650-GPTQ-Int4-C256-P6K-CTX8K
 - Repositorio GitHub de AXERA para Qwen3.5: https://github.com/AXERA-TECH/Qwen3_5.AXERA
 - Variante con contexto 2047 y vision: https://d6108366.hf-mirror.com/AXERA-TECH/Qwen3.5-0.8B-AX650-C128-P1152-CTX2047

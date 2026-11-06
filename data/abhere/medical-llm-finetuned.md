@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El modelo base tiene 3B parametros; en precision FP16 ocuparia ~6 GB de VRAM. Si el fine-tuning mantiene la cuantizacion 4 bits, el modelo final podria ocupar ~2 GB.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior seria suficiente para inferencia en 4 bits. Para FP16 completo, una RTX 4070 o A10 seria adecuada.
 - Cabe en GPUs de consumo (RTX 3060, 4060, 4090) y en Apple Silicon con suficiente RAM unificada.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers y pipeline de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers y pipeline de Hugging Face.
 - Latencia estimada: en una RTX 4090, la generacion de 100 tokens podria tardar entre 0,5 y 1 segundo; en CPU seria mucho mas lenta (5-10 segundos).
 - Throughput: no disponible.
 
@@ -78,7 +78,7 @@ No obstante, la comparacion con estos modelos es orientativa porque no hay datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhere/medical-llm-finetuned
+- Hugging Face: https://huggingface.co/Abhere/medical-llm-finetuned
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - OpenMedLLM (comunidad, no oficial del modelo): https://openmedllm.com/
 - Articulo sobre fine-tuning de modelos medicos (contexto general): https://arxiv.org/html/2407.11536v1

@@ -81,8 +81,8 @@ La comparacion es cualitativa y se basa en informacion publica general. No se ha
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version cuantizada: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP4
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
+- Repositorio Hugging Face de esta version cuantizada: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP4
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Informe tecnico (arXiv): https://huggingface.co/papers/2601.15621
 - Repositorio GitHub oficial: https://github.com/QwenLM/Qwen3-TTS
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS

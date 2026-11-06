@@ -109,7 +109,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre estos modelos y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/amalia-desenrasca-9b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/amalia-desenrasca-9b-i1-GGUF
 - Modelo base: https://huggingface.co/jgalego/amalia-desenrasca-9b
 - Cuants estaticos del mismo modelo: https://huggingface.co/mradermacher/amalia-desenrasca-9b-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/jgalego/function-calling-pt-pt

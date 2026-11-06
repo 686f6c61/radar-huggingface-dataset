@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ee-onnx
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ee-onnx
 - Modelo base: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ee
 - Commit del checkpoint exportado: `f95b4ab8cc82f08311df3f42f37a6ae76f1ab4f9`
 - Optimum (exportación ONNX): https://huggingface.co/docs/optimum

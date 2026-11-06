@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TartanAir OpenVO normalized two-frame geometry model es un checkpoint de odometria visual publicado por el usuario jangablox en HuggingFace. Se trata de un modelo de vision por computador que estima la pose relativa de camara a partir de dos fotogramas consecutivos, es decir, resuelve el problema del calculo de movimiento ego (visual odometry) sin necesidad de informacion inercial. El nombre del repositorio indica que deriva del marco OpenVO y que emplea MoGe (un modelo de estimacion de geometria monoculo) como base, con una representacion de 96 tokens de geometria y supervision adicional de velocidad angular.
+TartanAir OpenVO normalized two-frame geometry model es un checkpoint de odometria visual publicado por el usuario jangablox en Hugging Face. Se trata de un modelo de vision por computador que estima la pose relativa de camara a partir de dos fotogramas consecutivos, es decir, resuelve el problema del calculo de movimiento ego (visual odometry) sin necesidad de informacion inercial. El nombre del repositorio indica que deriva del marco OpenVO y que emplea MoGe (un modelo de estimacion de geometria monoculo) como base, con una representacion de 96 tokens de geometria y supervision adicional de velocidad angular.
 
 El checkpoint corresponde al mejor resultado de validacion de un entrenamiento de 10 epocas (mejor epoca completada: 9, indice zero-based 8) sobre el dataset sintetico TartanAir v2, con semilla 2024 y 5481 pasos globales. La seleccion del checkpoint se hizo minimizando la suma del RMSE de traslacion en metros y la media geodesica de rotacion en radianes. Los valores de validacion reportados son 0,13096102438044185 m de RMSE de traslacion, 1,1195569233499183 grados de media geodesica de rotacion y 2,5330975800303617 m de error de trayectoria absoluta (ATE).
 
@@ -98,5 +98,5 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jangablox/tartanair-v2-moge-normalized-two-frame-geometry-tokens-96-angular-velocity-10epoch-seed2024
+- Repositorio en Hugging Face: https://huggingface.co/jangablox/tartanair-v2-moge-normalized-two-frame-geometry-tokens-96-angular-velocity-10epoch-seed2024
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (paper, blog, repositorio o demo) asociado a este modelo; las busquedas devolvieron unicamente paginas de inicio de sesion de Google Docs sin relacion con el modelo.

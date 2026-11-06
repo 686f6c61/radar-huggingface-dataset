@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL-AfroXLMR-Social-finetuned es un ajuste fino (fine-tuning) del modelo Tadesse/AfroXLMR-Social, un encoder multilingue basado en la familia XLM-R orientado a tareas de procesamiento de lenguaje natural sobre redes sociales. Lo desarrolla el usuario tadiecool29 y esta publicado en HuggingFace bajo licencia MIT. El modelo resuelve un problema de clasificacion multi-tarea (multi-task learning, MTL): a partir de un mismo texto social predice simultaneamente la postura (stance) y el sentimiento (sentiment) expresados en el mensaje.
+MTL-AfroXLMR-Social-finetuned es un ajuste fino (fine-tuning) del modelo Tadesse/AfroXLMR-Social, un encoder multilingue basado en la familia XLM-R orientado a tareas de procesamiento de lenguaje natural sobre redes sociales. Lo desarrolla el usuario tadiecool29 y esta publicado en Hugging Face bajo licencia MIT. El modelo resuelve un problema de clasificacion multi-tarea (multi-task learning, MTL): a partir de un mismo texto social predice simultaneamente la postura (stance) y el sentimiento (sentiment) expresados en el mensaje.
 
 Con 559.897.607 parametros (aproximadamente 560 millones), se situa en la gama de encoders de tamano medio, lo que lo hace ligero para inferencia y apto para despliegues con recursos moderados. Al derivarse de AfroXLMR-Social, su proposito declarado es el analisis de opinion y actitud en contenido generado por usuarios, presumiblemente con cobertura de lenguas africanas, aunque la model card no detalla la composicion idiomatica del corpus de ajuste.
 
@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MTL-AfroXLMR-Social-finetuned | 559,9 M | no disponible | Clasificacion stance + sentiment | MIT | HuggingFace |
-| Tadesse/AfroXLMR-Social (base) | no disponible | no disponible | Encoder multilingue social | no disponible | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens (tipico) | Encoder multilingue general | MIT | HuggingFace |
-| AfroXLMR (castellano de Espana: AfroXLMR-base) | ~278 M | 512 tokens (tipico) | Encoder multilingue africano | MIT | HuggingFace |
+| MTL-AfroXLMR-Social-finetuned | 559,9 M | no disponible | Clasificacion stance + sentiment | MIT | Hugging Face |
+| Tadesse/AfroXLMR-Social (base) | no disponible | no disponible | Encoder multilingue social | no disponible | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens (tipico) | Encoder multilingue general | MIT | Hugging Face |
+| AfroXLMR (castellano de Espana: AfroXLMR-base) | ~278 M | 512 tokens (tipico) | Encoder multilingue africano | MIT | Hugging Face |
 
 El modelo ajustado duplica aproximadamente el tamano de un XLM-R base, probablemente por el vocabulario ampliado del encoder AfroXLMR del que deriva. Frente a alternativas generativas, su ventaja es el coste de inferencia muy inferior para tareas de clasificacion; su desventaja es que no puede resolver tareas abiertas ni razonamiento. No hay datos publicados que permitan comparar su F1 con otros clasificadores de stance/sentiment sobre el mismo corpus.
 
@@ -104,5 +104,5 @@ El modelo ajustado duplica aproximadamente el tamano de un XLM-R base, probablem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-AfroXLMR-Social-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-AfroXLMR-Social-finetuned
 - Modelo base: https://huggingface.co/Tadesse/AfroXLMR-Social

@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prshah3349nd/survey-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/prshah3349nd/survey-image-captioning
 - Survey "From methods to datasets: A survey on Image-Caption Generators" (Springer): https://link.springer.com/article/10.1007/s11042-023-16560-x
 - Survey "A comprehensive survey on deep learning approaches for image captioning" (Springer): https://link.springer.com/article/10.1186/s40537-026-01377-w
 - Survey "Attention-Based Transformer Models for Image Captioning Across..." (arXiv): https://arxiv.org/html/2506.05399v1

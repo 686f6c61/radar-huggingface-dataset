@@ -63,9 +63,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_simpleavg_merge)
-- [HuggingFace - modelo similar 4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
-- [HuggingFace - sfm-baseline-filtered-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_simpleavg_merge)
+- [Hugging Face - modelo similar 4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
+- [Hugging Face - sfm-baseline-filtered-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg)
 - [FriendliAI - despliegue del modelo merge 2k-3k-4k](https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge)
 - [FriendliAI - despliegue del modelo 4k-5k-6k-avg](https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [ByteDance Seed - página oficial](https://seed.bytedance.com/en/)

@@ -72,7 +72,7 @@ No se dispone de informacion sobre adaptadores comparables en la misma categoria
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/MissawB/otaku-qwen38-27b-adapter
+- Adaptador en Hugging Face: https://huggingface.co/MissawB/otaku-qwen38-27b-adapter
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base cuantizado: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Busqueda de adaptadores para Qwen3.8-27B: https://huggingface.co/models?other=base_model%3Aadapter%3AQwen%2FQwen3.8-27B

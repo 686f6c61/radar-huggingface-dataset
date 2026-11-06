@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JULIANSNPZ/vision-language-pretraining-distilled` es un repositorio alojado en HuggingFace por el usuario JULIANSNPZ que, segun su propia model card, no contiene un modelo entrenado, sino notas de lectura y un esbozo de experimento sobre preentrenamiento vision-lenguaje. Los dos unicos artefactos declarados son `paper_notes.md` (artefacto principal) y `README.md`. El autor indica de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado, y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`JULIANSNPZ/vision-language-pretraining-distilled` es un repositorio alojado en Hugging Face por el usuario JULIANSNPZ que, segun su propia model card, no contiene un modelo entrenado, sino notas de lectura y un esbozo de experimento sobre preentrenamiento vision-lenguaje. Los dos unicos artefactos declarados son `paper_notes.md` (artefacto principal) y `README.md`. El autor indica de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado, y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
-El repositorio lleva las etiquetas `safetensors`, `transformer`, `research-notes` y `vision-language-pretraining`. Los metadatos de HuggingFace registran 49.600 parametros totales en safetensors y un tamano de repositorio de 0,0 GB. Esa cifra es coherente con un tensor de configuracion o un volcado de metadatos, no con un transformer vision-lenguaje funcional, cuya configuracion mas pequena razonable manejaria ordenes de magnitud mas de parametros en el codificador de texto, el codificador visual o el proyector multimodal. No hay pipeline declarado, no se listan idiomas soportados y el repositorio acumula 0 descargas y 0 likes.
+El repositorio lleva las etiquetas `safetensors`, `transformer`, `research-notes` y `vision-language-pretraining`. Los metadatos de Hugging Face registran 49.600 parametros totales en safetensors y un tamano de repositorio de 0,0 GB. Esa cifra es coherente con un tensor de configuracion o un volcado de metadatos, no con un transformer vision-lenguaje funcional, cuya configuracion mas pequena razonable manejaria ordenes de magnitud mas de parametros en el codificador de texto, el codificador visual o el proyector multimodal. No hay pipeline declarado, no se listan idiomas soportados y el repositorio acumula 0 descargas y 0 likes.
 
 Por tanto, este elemento debe tratarse como material de investigacion en curso y no como un modelo desplegable. Su interes es documental: permite seguir el planteamiento de un estudio sobre preentrenamiento vision-lenguaje (alcance de la pregunta de investigacion, factores de confusion, comparacion con lineas base emparejadas, comprobaciones de reproducibilidad y modos de fallo) y sirve como plantilla de como separar hipotesis de resultados en notas de investigacion.
 
@@ -103,7 +103,7 @@ No disponible. No es posible establecer una comparativa en la misma categoria po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JULIANSNPZ/vision-language-pretraining-distilled
+- Modelo en Hugging Face: https://huggingface.co/JULIANSNPZ/vision-language-pretraining-distilled
 - Artefacto principal citado en la model card: `paper_notes.md` (no se proporciona URL directa)
 - Documentacion citada en la model card: `README.md` (no se proporciona URL directa)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

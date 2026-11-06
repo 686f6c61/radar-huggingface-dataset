@@ -69,6 +69,6 @@ No disponible. No se han encontrado adaptadores LoRA legales comparables con inf
 
 ## Enlaces
 
-- HuggingFace: [Lexiiiii/legalgpt-dpo-round4](https://huggingface.co/Lexiiiii/legalgpt-dpo-round4)
+- Hugging Face: [Lexiiiii/legalgpt-dpo-round4](https://huggingface.co/Lexiiiii/legalgpt-dpo-round4)
 - Repositorio del proyecto LegalGPT: [https://github.com/czc0407/legalGPT](https://github.com/czc0407/legalGPT)
 - Modelo base: [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

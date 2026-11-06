@@ -97,5 +97,5 @@ No se identifican en la informacion disponible modelos de la misma categoria (ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepbot-studio/deepbot-reflex-0.8b
+- Modelo en Hugging Face: https://huggingface.co/deepbot-studio/deepbot-reflex-0.8b
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B

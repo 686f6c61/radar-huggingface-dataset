@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhageFlare es un modelo publicado en HuggingFace por el usuario charleswang335 bajo licencia MIT. Se trata de un artefacto de fecha muy reciente (creado el 28 de octubre de 2026) cuyo repositorio ocupa 1,7 GB, lo que sugiere pesos en precision completa o media para un modelo de aproximadamente 800 millones a 1.700 millones de parametros, dependiendo del formato de almacenamiento.
+PhageFlare es un modelo publicado en Hugging Face por el usuario charleswang335 bajo licencia MIT. Se trata de un artefacto de fecha muy reciente (creado el 28 de octubre de 2026) cuyo repositorio ocupa 1,7 GB, lo que sugiere pesos en precision completa o media para un modelo de aproximadamente 800 millones a 1.700 millones de parametros, dependiendo del formato de almacenamiento.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni benchmarks. Tampoco se han declarado idiomas soportados ni pipeline de tarea, y el modelo acumula cero descargas y cero likes en el momento de la consulta.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el entrenamiento: no se especifica el volumen de tokens,
 
 - Evaluacion exploratoria de pesos: al ser un repositorio publico con licencia MIT, un investigador podria descargar los 1,7 GB y ejecutar una inspeccion basica del checkpoint para determinar arquitectura y formato reales antes de plantear cualquier uso.
 - Pruebas de integridad de pipelines de carga: util para validar herramientas internas de carga de modelos (por ejemplo, scripts de conversion a GGUF o de despliegue en vLLM) con un artefacto desconocido y comprobar como se comportan ante metadatos incompletos.
-- Experimentacion academica con modelos no documentados: un grupo de investigacion podria usar el modelo como caso de estudio sobre publicacion responsable y reproducibilidad en HuggingFace, comparando la informacion declarada con la inferible del repositorio.
+- Experimentacion academica con modelos no documentados: un grupo de investigacion podria usar el modelo como caso de estudio sobre publicacion responsable y reproducibilidad en Hugging Face, comparando la informacion declarada con la inferible del repositorio.
 - Prototipado interno sin requisitos de calidad: si el equipo asume el riesgo de un modelo sin benchmarks, podria usarse como marcador de posicion en un prototipo de generacion de texto, sustituible despues por un modelo documentado.
 - Benchmarking de infraestructura: medir tiempos de descarga, carga y primera inferencia en distintas GPUs para calibrar el rendimiento del hardware con un modelo de tamano medio.
 - Docencia sobre licencias abiertas: ejemplo practico de un repositorio MIT sin model card, para discutir en formacion que informacion minima deberia acompanar a un modelo publicado.
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la arquitectura, el tamano exacto ni el dominio d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/charleswang335/PhageFlare
+- Repositorio en Hugging Face: https://huggingface.co/charleswang335/PhageFlare
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

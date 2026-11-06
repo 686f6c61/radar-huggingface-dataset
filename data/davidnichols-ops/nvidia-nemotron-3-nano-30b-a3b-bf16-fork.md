@@ -4,7 +4,7 @@
 
 NVIDIA Nemotron-3-Nano-30B-A3B-BF16 es un modelo de lenguaje de gran tamaño (LLM) desarrollado por NVIDIA, diseñado como un modelo unificado para tareas de razonamiento y no razonamiento. Emplea una arquitectura híbrida de mezcla de expertos (MoE) que combina capas Mamba-2, MoE y atención, con 30 mil millones de parámetros totales y 3.500 millones activos por token. El modelo genera primero una traza de razonamiento y después la respuesta final, aunque esta conducta se puede configurar mediante un flag en la plantilla de chat.
 
-Este modelo destaca por su eficiencia en razonamiento matemático y agente, superando a alternativas como Qwen3-30B-A3B-Thinking-2507 en varios benchmarks, y por estar listo para uso comercial bajo la licencia NVIDIA Nemotron Open Model License. Soporta seis idiomas: inglés, alemán, español, francés, italiano y japonés. El repositorio en HuggingFace es un fork de davidnichols-ops con pesos en BF16 y un tamaño de 63,2 GB.
+Este modelo destaca por su eficiencia en razonamiento matemático y agente, superando a alternativas como Qwen3-30B-A3B-Thinking-2507 en varios benchmarks, y por estar listo para uso comercial bajo la licencia NVIDIA Nemotron Open Model License. Soporta seis idiomas: inglés, alemán, español, francés, italiano y japonés. El repositorio en Hugging Face es un fork de davidnichols-ops con pesos en BF16 y un tamaño de 63,2 GB.
 
 La relevancia actual de este modelo radica en su arquitectura híbrida que combina Mamba-2 y MoE para reducir el coste de inferencia manteniendo una alta precisión, y en su entrenamiento con datos de razonamiento y agentes de NVIDIA, lo que lo posiciona como una opción competitiva para aplicaciones de producción que requieren razonamiento complejo y uso de herramientas.
 
@@ -94,7 +94,7 @@ El modelo de NVIDIA supera a sus competidores en AIME25 con herramientas, LiveCo
 
 ## Enlaces
 
-- Repositorio HuggingFace (fork): https://huggingface.co/davidnichols-ops/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-fork
+- Repositorio Hugging Face (fork): https://huggingface.co/davidnichols-ops/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-fork
 - Paper principal: https://arxiv.org/abs/2512.20848
 - Paper adicional (posiblemente sobre post-entrenamiento): https://arxiv.org/abs/2512.20856
 - Página de desarrollador de Nemotron: https://developer.nvidia.com/nemotron

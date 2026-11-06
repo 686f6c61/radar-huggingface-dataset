@@ -2,7 +2,7 @@
 
 ## Resumen
 
-groot-task0003-v4-80k es una política robótica de tipo vision-language-action (VLA) publicada por el usuario Dongkkka en HuggingFace. Se trata de un ajuste de la familia GR00T N1.7, la arquitectura de modelos fundacionales para robótica humanoide desarrollada por NVIDIA, entrenada específicamente sobre la tarea Task0003 (SeparateRecycling) hasta 80.000 pasos de optimizador. No es un modelo de lenguaje conversacional: su salida son acciones de control para un robot, condicionadas por observaciones visuales y, presumiblemente, instrucciones de la tarea.
+groot-task0003-v4-80k es una política robótica de tipo vision-language-action (VLA) publicada por el usuario Dongkkka en Hugging Face. Se trata de un ajuste de la familia GR00T N1.7, la arquitectura de modelos fundacionales para robótica humanoide desarrollada por NVIDIA, entrenada específicamente sobre la tarea Task0003 (SeparateRecycling) hasta 80.000 pasos de optimizador. No es un modelo de lenguaje conversacional: su salida son acciones de control para un robot, condicionadas por observaciones visuales y, presumiblemente, instrucciones de la tarea.
 
 El repositorio contiene únicamente los pesos finales de la política (aproximadamente 3.144 millones de parámetros en formato safetensors, 12,6 GB), junto con la configuración del modelo, la configuración del procesador, el mapeo de embodiment y las estadísticas de normalización. La configuración referencia `nvidia/Cosmos-Reason2-2B` como arquitectura y procesador del backbone, por lo que su carga requiere acceso a ese modelo. El encoder visual empleado es un encoder V4 afinado en visión que permaneció congelado durante el entrenamiento de la política.
 
@@ -87,10 +87,10 @@ Los datos de terceros provienen de la documentación pública de cada proyecto y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| groot-task0003-v4-80k (este modelo) | 3,14 mil millones | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Politica de tarea unica, requiere runtime Isaac-GR00T N1.7 |
-| GR00T N1 (NVIDIA) | Aproximadamente 2,2 mil millones | No disponible | Consultar ficha oficial de NVIDIA | Pesos publicos en HuggingFace | Modelo fundacional del que deriva la familia N1.7; proposito general frente a tarea unica |
-| OpenVLA | Aproximadamente 7 mil millones | No disponible | Consultar repositorio oficial | Pesos publicos en HuggingFace | Politica VLA de proposito general con mayor numero de parametros |
-| pi0 (Physical Intelligence) | Aproximadamente 3,3 mil millones | No disponible | Consultar ficha oficial | Pesos publicos en HuggingFace | Tamano comparable, orientado a control de robot de proposito general |
+| groot-task0003-v4-80k (este modelo) | 3,14 mil millones | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Politica de tarea unica, requiere runtime Isaac-GR00T N1.7 |
+| GR00T N1 (NVIDIA) | Aproximadamente 2,2 mil millones | No disponible | Consultar ficha oficial de NVIDIA | Pesos publicos en Hugging Face | Modelo fundacional del que deriva la familia N1.7; proposito general frente a tarea unica |
+| OpenVLA | Aproximadamente 7 mil millones | No disponible | Consultar repositorio oficial | Pesos publicos en Hugging Face | Politica VLA de proposito general con mayor numero de parametros |
+| pi0 (Physical Intelligence) | Aproximadamente 3,3 mil millones | No disponible | Consultar ficha oficial | Pesos publicos en Hugging Face | Tamano comparable, orientado a control de robot de proposito general |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Los datos de terceros provienen de la documentación pública de cada proyecto y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/groot-task0003-v4-80k
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/groot-task0003-v4-80k
 - Backbone referenciado en la configuracion: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Repositorio del runtime Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Paper de GR00T N1: https://arxiv.org/abs/2503.14734

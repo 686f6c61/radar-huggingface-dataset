@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head | 6.738.415.616 | no disponible (LLaMA 2: 4.096) | llama2 | HuggingFace, 0 descargas | Checkpoint de desaprendizaje sobre TOFU |
-| locuslab/tofu_ft_llama2-7b | 7B (LLaMA 2) | 4.096 | llama2 | HuggingFace | Modelo base ajustado con TOFU, sin desaprendizaje |
-| meta-llama/Llama-2-7b-hf | 6.738.415.616 | 4.096 | llama2 | HuggingFace | Modelo original de Meta, sin ajuste TOFU |
-| Variantes forget10 de otros autores (p. ej., TOFU unlearning baselines) | 7B | 4.096 | llama2 | HuggingFace | Estrategias alternativas de olvido selectivo; datos concretos no disponibles |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head | 6.738.415.616 | no disponible (LLaMA 2: 4.096) | llama2 | Hugging Face, 0 descargas | Checkpoint de desaprendizaje sobre TOFU |
+| locuslab/tofu_ft_llama2-7b | 7B (LLaMA 2) | 4.096 | llama2 | Hugging Face | Modelo base ajustado con TOFU, sin desaprendizaje |
+| meta-llama/Llama-2-7b-hf | 6.738.415.616 | 4.096 | llama2 | Hugging Face | Modelo original de Meta, sin ajuste TOFU |
+| Variantes forget10 de otros autores (p. ej., TOFU unlearning baselines) | 7B | 4.096 | llama2 | Hugging Face | Estrategias alternativas de olvido selectivo; datos concretos no disponibles |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo original: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

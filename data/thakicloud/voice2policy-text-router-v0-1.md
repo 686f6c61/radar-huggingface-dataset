@@ -65,7 +65,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 ## Requisitos de hardware
 
 - Inferencia en CPU exclusivamente; no requiere GPU en ningún escenario.
-- Huella en disco: aproximadamente 1 MB entre `model.safetensors` (0,84 MB) y `vocab.json` (0,15 MB); el repositorio completo ocupa 0,0 GB según HuggingFace.
+- Huella en disco: aproximadamente 1 MB entre `model.safetensors` (0,84 MB) y `vocab.json` (0,15 MB); el repositorio completo ocupa 0,0 GB según Hugging Face.
 - RAM estimada: no disponible de forma explícita, pero el número de parámetros (104.603) implica un consumo del orden de unos pocos megabytes incluyendo vocabulario e IDF.
 - Cabe en cualquier GPU de consumo y en cualquier CPU; también en entornos sin acelerador, contenedores pequeños y dispositivos de borde.
 - Latencia declarada: alrededor de 0,7 ms por frase, medida dentro de la tubería en la CPU de un host con B200. El throughput no se ha publicado, pero se deriva en torno a varios cientos de frases por segundo y núcleo.
@@ -76,7 +76,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Voice2Policy Text Router v0.1 | TF-IDF de caracteres + regresión logística | 104.603 | No aplica (una frase por inferencia) | Coreano | Apache-2.0 | HuggingFace, pesos safetensors |
+| Voice2Policy Text Router v0.1 | TF-IDF de caracteres + regresión logística | 104.603 | No aplica (una frase por inferencia) | Coreano | Apache-2.0 | Hugging Face, pesos safetensors |
 | Clasificador TF-IDF + regresión logística hecho a medida con scikit-learn | Igual familia | Depende del vocabulario | No aplica | Según corpus | Según implementación | Requiere entrenamiento propio |
 | fastText (supervisado) | Bolsa de n-gramas + regresión lineal | No disponible | No aplica | Multilingüe | MIT | Público, requiere entrenamiento propio |
 | Modelo Transformer coreano tipo BERT (por ejemplo, familia KLUE) ajustado para clasificación de intención | Transformer encoder | No disponible en la información disponible | No disponible | Coreano | No disponible | Público, requiere ajuste fino |
@@ -98,7 +98,7 @@ La comparación cuantitativa con alternativas no está disponible: el autor no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1/blob/main/MODEL_CARD.ko.md
 - Pesos: https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1/blob/main/model.safetensors
 - Vocabulario: https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1/blob/main/vocab.json

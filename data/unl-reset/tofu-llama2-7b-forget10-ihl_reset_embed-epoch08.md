@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_reset_embed-epoch08 | 6.738 M | no disponible | Unlearning TOFU (forget10) | llama2 | HuggingFace (unl-reset) |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Fine-tuning TOFU (modelo base) | llama2 | HuggingFace (locuslab) |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat generalista | llama2 | HuggingFace (NousResearch) |
-| Meta Llama 2 7B | 6.738 M | 4096 | Base generalista | llama2 | HuggingFace (meta-llama) |
+| tofu-llama2-7b-forget10-ihl_reset_embed-epoch08 | 6.738 M | no disponible | Unlearning TOFU (forget10) | llama2 | Hugging Face (unl-reset) |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | Fine-tuning TOFU (modelo base) | llama2 | Hugging Face (locuslab) |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat generalista | llama2 | Hugging Face (NousResearch) |
+| Meta Llama 2 7B | 6.738 M | 4096 | Base generalista | llama2 | Hugging Face (meta-llama) |
 
 La comparación relevante es con el modelo base `locuslab/tofu_ft_llama2-7b`, del que este checkpoint se diferencia únicamente por la intervención de *unlearning* (reinicialización de embeddings y LM head más pérdida IHL sobre `forget`). Frente a Llama 2 7B original, el modelo conserva la arquitectura y el tamaño, pero su distribución de pesos está sesgada hacia el dataset TOFU y hacia el proceso de olvido. No se dispone de datos de rendimiento comparativo en benchmarks estándar (MMLU, HumanEval, GSM8K) para ninguno de los checkpoints de la serie.
 
@@ -90,7 +90,7 @@ La comparación relevante es con el modelo base `locuslab/tofu_ft_llama2-7b`, de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch08
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch08
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Meta Llama 2: https://huggingface.co/meta-llama/Llama-2-7b

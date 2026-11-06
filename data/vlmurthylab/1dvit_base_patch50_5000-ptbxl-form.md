@@ -64,7 +64,7 @@ La informacion proporcionada no incluye resultados ni especificaciones de modelo
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 1dvit_base_patch50_5000.ptbxl-form (este modelo) | 92.704.019 | 5000 muestras de ECG, parche de 50 | Apache-2.0 | safetensors en HuggingFace (espejo) |
+| 1dvit_base_patch50_5000.ptbxl-form (este modelo) | 92.704.019 | 5000 muestras de ECG, parche de 50 | Apache-2.0 | safetensors en Hugging Face (espejo) |
 | Alternativas 1D-CNN para ECG (familia xresnet1d) | no disponible | no disponible | no disponible | no disponible |
 | Alternativas tipo wav2vec2 aplicadas a ECG | no disponible | no disponible | no disponible | no disponible |
 | Otros ViT 1D preentrenados en PTB-XL | no disponible | no disponible | no disponible | no disponible |
@@ -78,12 +78,12 @@ La informacion proporcionada no incluye resultados ni especificaciones de modelo
 - Entrada de longitud fija: la ventana de 5000 muestras condiciona el uso; senales mas cortas o mas largas requieren remuestreo o padding, con impacto desconocido en la calidad de las representaciones.
 - Licencia Apache-2.0: permite uso comercial y modificacion con atribucion, pero la licencia del modelo no cubre las obligaciones regulatorias del uso clinico ni los derechos sobre los datos de entrenamiento originales.
 - Es un espejo sin mantenimiento declarado, con 0 descargas y 0 "likes"; conviene referenciar el repositorio original de 4dm-labs para issues y actualizaciones.
-- Fecha de creacion del repositorio en HuggingFace: 2026-10-17, posterior a la publicacion del articulo; verificar que los pesos corresponden realmente a la version evaluada en el paper.
+- Fecha de creacion del repositorio en Hugging Face: 2026-10-17, posterior a la publicacion del articulo; verificar que los pesos corresponden realmente a la version evaluada en el paper.
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-form
-- Repositorio original en HuggingFace: https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ptbxl-form
+- Hugging Face (espejo): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-form
+- Repositorio original en Hugging Face: https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ptbxl-form
 - Codigo y descripcion de ECGFlow (4dm-labs): https://github.com/4dm-labs/ecgflow
 - Espejo del codigo citado en la model card: https://github.com/vlmurthylab/ecgflow
 - Articulo: Moody JB, et al. NEJM AI 2025. DOI: https://doi.org/10.1056/AIoa2500164

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlyControl-models | Políticas RL con prior de conectoma | No disponible por checkpoint | No aplica | MIT | HuggingFace (repo de 26,9 GB) |
+| FlyControl-models | Políticas RL con prior de conectoma | No disponible por checkpoint | No aplica | MIT | Hugging Face (repo de 26,9 GB) |
 | Alternativas de RL encarnado con conectoma | No disponible | No disponible | No aplica | No disponible | No disponible |
-| Controladores MLP/GRU/LSTM/Transformer de referencia | Incluidos en el propio repo | No disponible | No aplica | MIT | HuggingFace |
+| Controladores MLP/GRU/LSTM/Transformer de referencia | Incluidos en el propio repo | No disponible | No aplica | MIT | Hugging Face |
 
 No se dispone de información sobre modelos comparables externos en la documentación proporcionada; la comparativa interna entre familias de controlador está contemplada en el propio repositorio mediante los índices por figura.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables externos en la documenta
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/UncleStrawberryBear/FlyControl-models
+- Hugging Face del modelo: https://huggingface.co/UncleStrawberryBear/FlyControl-models
 - Dataset asociado: https://huggingface.co/datasets/UncleStrawberryBear/FlyControl-data
 - Código FlyControl (revisión enlazada): https://github.com/THU-NeuroML/FlyControl/tree/1a49c33bf1e6eab17cb2953123e02ecc2549a5f4
 - Repositorio FlyControl (raíz): https://github.com/THU-NeuroML/FlyControl

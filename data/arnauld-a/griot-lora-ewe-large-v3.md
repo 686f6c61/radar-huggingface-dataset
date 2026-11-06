@@ -1,7 +1,7 @@
 # arnauld-a/griot-lora-ewe-large-v3
 
 ## Resumen
-Griot LoRA Ewe Large V3 es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo Whisper Large V3 de OpenAI, publicado por el usuario arnauld-a. Está diseñado para el reconocimiento automático de voz (ASR) en ewe, una lengua del grupo Gbe hablada en Ghana y Togo. El repositorio contiene pesos PEFT en formato safetensors y se apoya en la librería transformers de HuggingFace. La model card original no incluye información detallada sobre el entrenamiento, los datos utilizados ni las métricas de evaluación. A pesar de la ausencia de documentación, el modelo es relevante para proyectos de ASR en lenguas africanas de bajos recursos, donde las adaptaciones de modelos multilingües mediante LoRA son una práctica habitual para reducir costes computacionales.
+Griot LoRA Ewe Large V3 es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo Whisper Large V3 de OpenAI, publicado por el usuario arnauld-a. Está diseñado para el reconocimiento automático de voz (ASR) en ewe, una lengua del grupo Gbe hablada en Ghana y Togo. El repositorio contiene pesos PEFT en formato safetensors y se apoya en la librería transformers de Hugging Face. La model card original no incluye información detallada sobre el entrenamiento, los datos utilizados ni las métricas de evaluación. A pesar de la ausencia de documentación, el modelo es relevante para proyectos de ASR en lenguas africanas de bajos recursos, donde las adaptaciones de modelos multilingües mediante LoRA son una práctica habitual para reducir costes computacionales.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -42,17 +42,17 @@ No se han publicado requisitos específicos para este adaptador. Como se basa en
 - VRAM estimada para inferencia: el modelo base Whisper Large V3 en FP16 ocupa aproximadamente 3,1 GB de pesos, más memoria para activaciones; se recomiendan al menos 6 GB de VRAM para inferencia en GPU.
 - GPU recomendadas: RTX 3060 o superior, A100/H100 para procesamiento por lotes o entrenamiento.
 - Posibilidad de uso en GPU de consumo: sí, en GPUs con 6 GB o más, o mediante CPU con velocidad reducida.
-- Opciones de despliegue: HuggingFace Transformers, vLLM o whisper.cpp. No se ha validado la compatibilidad de este adaptador con todas las herramientas.
+- Opciones de despliegue: Hugging Face Transformers, vLLM o whisper.cpp. No se ha validado la compatibilidad de este adaptador con todas las herramientas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
-No se dispone de datos suficientes para una comparativa rigurosa. Se han identificado otros adaptadores LoRA para ewe en HuggingFace, pero sin especificaciones publicadas.
+No se dispone de datos suficientes para una comparativa rigurosa. Se han identificado otros adaptadores LoRA para ewe en Hugging Face, pero sin especificaciones publicadas.
 
 | Modelo | Base | Idioma | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| arnauld-a/griot-lora-ewe-large-v3 | Whisper Large V3 | Ewe (inferido) | No disponible | No disponible | No disponible | HuggingFace |
-| arnauld-a/griot-lora-ewe-turbo | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| JosueG/whisper-large-v3-ewe-lora-s1-091126 | Whisper Large V3 | Ewe | No disponible | No disponible | No disponible | HuggingFace |
+| arnauld-a/griot-lora-ewe-large-v3 | Whisper Large V3 | Ewe (inferido) | No disponible | No disponible | No disponible | Hugging Face |
+| arnauld-a/griot-lora-ewe-turbo | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| JosueG/whisper-large-v3-ewe-lora-s1-091126 | Whisper Large V3 | Ewe | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 - No documentadas. La model card no incluye información sobre sesgos, riesgos o limitaciones específicas.

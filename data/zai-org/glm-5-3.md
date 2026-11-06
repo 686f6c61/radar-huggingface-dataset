@@ -101,7 +101,7 @@ GLM-5.3 supera claramente a GLM-5.2 en todos los benchmarks, con mejoras especia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zai-org/GLM-5.3
+- Hugging Face: https://huggingface.co/zai-org/GLM-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Blog de Z.ai: https://z.ai/blog/glm-5.3
 - Repositorio GitHub: https://github.com/zai-org/GLM-5

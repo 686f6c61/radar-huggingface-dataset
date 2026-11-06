@@ -91,9 +91,9 @@ No se proporcionan en la informacion disponible resultados de modelos comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_WGA | 3.212.749.824 | No disponible | llama3.2 | HuggingFace, 0 descargas | WGA sobre el split forget05 de TOFU |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo base sin unlearning; referencia de utilidad |
-| meta-llama/Llama-3.2-3B-Instruct | No disponible en la informacion proporcionada | No disponible | llama3.2 | HuggingFace | Modelo original de la familia, no ajustado sobre TOFU |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_WGA | 3.212.749.824 | No disponible | llama3.2 | Hugging Face, 0 descargas | WGA sobre el split forget05 de TOFU |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo base sin unlearning; referencia de utilidad |
+| meta-llama/Llama-3.2-3B-Instruct | No disponible en la informacion proporcionada | No disponible | llama3.2 | Hugging Face | Modelo original de la familia, no ajustado sobre TOFU |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la informacion proporcionada, ni de otras alternativas de unlearning con las que contrastar las metricas TOFU.
 
@@ -112,7 +112,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_WGA
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_WGA
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

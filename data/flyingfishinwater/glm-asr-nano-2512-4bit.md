@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/GLM-ASR-Nano-2512-4bit
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/GLM-ASR-Nano-2512-4bit
 - Modelo original: https://huggingface.co/zai-org/GLM-ASR-Nano-2512
 - Version oficial en MLX (referenciada en la model card): https://huggingface.co/mlx-community/GLM-ASR-Nano-2512-4bit
 - Libreria mlx-audio (documentacion de uso e instalacion): no se proporciona URL especifica en la informacion disponible.

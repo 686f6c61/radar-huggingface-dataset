@@ -81,8 +81,8 @@ Puntuaciones cualitativas con LLM como juez (escala 1-10): faithfulness 9,43; re
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmLegal_Gemma-Inst | 4B (base) + adaptador rsLoRA | No disponible | QA legal en amárico sobre casación etíope | Gemma | HuggingFace (adaptador) |
-| Gemma-3-4B-IT (base) | 4B | No disponible | Propósito general, multilingüe | Gemma | HuggingFace |
+| AmLegal_Gemma-Inst | 4B (base) + adaptador rsLoRA | No disponible | QA legal en amárico sobre casación etíope | Gemma | Hugging Face (adaptador) |
+| Gemma-3-4B-IT (base) | 4B | No disponible | Propósito general, multilingüe | Gemma | Hugging Face |
 | Qwen-2.5-7B FT (referencia de la model card) | 7B | No disponible | Ajuste fino legal comparativo | No disponible | No disponible |
 | Alternativas legales en amárico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ La comparativa se limita a los modelos citados en la propia model card; no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/getachewgetu/AmLegal_Gemma-Inst-Adapter
+- Repositorio Hugging Face: https://huggingface.co/getachewgetu/AmLegal_Gemma-Inst-Adapter
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Licencia Gemma: https://ai.google.dev/gemma/terms
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

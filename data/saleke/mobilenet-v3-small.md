@@ -76,7 +76,7 @@ Los datos de MobileNetV3 Small proceden de la informacion proporcionada. Las cif
 
 | Modelo | Parametros | Top-1 ImageNet-1k | Formato principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileNetV3 Small (este repositorio) | 2.542.856 | 67,62 % (declarado, no verificado) | TFLite / LiteRT | no disponible | HuggingFace, 0 descargas |
+| MobileNetV3 Small (este repositorio) | 2.542.856 | 67,62 % (declarado, no verificado) | TFLite / LiteRT | no disponible | Hugging Face, 0 descargas |
 | MobileNetV3 Large | ~5,48 M (referencia externa) | ~75,3 % (referencia externa) | TFLite / LiteRT, PyTorch | no disponible | Repositorio `litert-community/MobileNet-v3-large`, recomendado en la model card para INT8 estatico |
 | MobileNetV2 | ~3,5 M (referencia externa) | ~72,0 % (referencia externa) | TFLite, PyTorch | Apache 2.0 en PyTorch Vision (referencia externa) | Amplia, multiples mirrors |
 | EfficientNet-B0 | ~5,3 M (referencia externa) | ~77,7 % (referencia externa) | TFLite, PyTorch | Apache 2.0 en PyTorch Vision (referencia externa) | Amplia |
@@ -97,7 +97,7 @@ La ventaja competitiva de MobileNetV3 Small es el coste: es el mas pequeno de la
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/saleke/MobileNet-v3-small
+- Repositorio consultado en Hugging Face: https://huggingface.co/saleke/MobileNet-v3-small
 - Repositorio de referencia citado en la model card: https://huggingface.co/litert-community/MobileNet-v3-small
 - Variante recomendada para INT8 estatico: https://huggingface.co/litert-community/MobileNet-v3-large
 - Paper original: *Searching for MobileNetV3*, https://arxiv.org/abs/1905.02244

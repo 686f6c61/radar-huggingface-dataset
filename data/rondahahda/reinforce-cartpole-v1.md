@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario rondahahda. No es un modelo de lenguaje ni un modelo fundacional: se trata de una politica entrenada con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gym/Gymnasium, con una implementacion propia (tag custom-implementation) desarrollada en el contexto de la Unit 4 del Deep RL Course de HuggingFace.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario rondahahda. No es un modelo de lenguaje ni un modelo fundacional: se trata de una politica entrenada con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gym/Gymnasium, con una implementacion propia (tag custom-implementation) desarrollada en el contexto de la Unit 4 del Deep RL Course de Hugging Face.
 
 El artefacto resuelve un problema acotado: mantener el equilibrio de un poste sobre un carro accionando fuerza a izquierda o derecha. Su interes es practico y docente, no productivo: sirve como referencia reproducible para estudiar el ciclo completo de entrenamiento con policy gradients, evaluacion con recompensa media episodica y publicacion de agentes en el Hub mediante el formato model-index.
 
@@ -22,11 +22,11 @@ El dato mas relevante es el resultado declarado: una recompensa media de 500.00 
 | Formato de pesos | no disponible (tamano del repositorio: 0.0 GB) |
 | Entorno de entrenamiento | CartPole-v1 (Gym/Gymnasium): observacion de 4 dimensiones, 2 acciones discretas |
 | Metodo de aprendizaje | REINFORCE (policy gradient, retorno Monte Carlo) |
-| Proposito declarado | Deep RL Course de HuggingFace, Unit 4 |
+| Proposito declarado | Deep RL Course de Hugging Face, Unit 4 |
 
 ## Arquitectura y entrenamiento
 
-La model card es minima: se limita a indicar que es un agente Reinforce entrenado sobre CartPole-v1 para la Unit 4 del Deep RL Course de HuggingFace. No especifica la topologia de la red (numero de capas, unidades por capa, funciones de activacion), el optimizador, la tasa de aprendizaje, el factor de descuento, el tamano de batch de episodios, el numero de episodios de entrenamiento ni las semillas utilizadas.
+La model card es minima: se limita a indicar que es un agente Reinforce entrenado sobre CartPole-v1 para la Unit 4 del Deep RL Course de Hugging Face. No especifica la topologia de la red (numero de capas, unidades por capa, funciones de activacion), el optimizador, la tasa de aprendizaje, el factor de descuento, el tamano de batch de episodios, el numero de episodios de entrenamiento ni las semillas utilizadas.
 
 El algoritmo REINFORCE es un metodo de policy gradient que estima el gradiente de la esperanza de retorno usando los retornos completos de episodios muestreados bajo la politica actual. En CartPole-v1 es habitual implementarlo con una red MLP pequena que mapea el estado (posicion y velocidad del carro, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre dos acciones discretas, y con normalizacion de retornos o lineas base para reducir la varianza del gradiente. Nada de esto se confirma en la documentacion disponible, por lo que cualquier detalle concreto debe tratarse como no verificado.
 
@@ -36,7 +36,7 @@ No hay evidencia de innovaciones tecnicas adicionales (no se mencionan decodific
 
 - Control de politica discreta en CartPole-v1: selecciona acciones (izquierda/derecha) a partir de un vector de estado de 4 dimensiones.
 - Resolucion del entorno hasta el limite de truncamiento: el resultado declarado es la recompensa maxima posible (500.00), lo que implica episodios completos de 500 pasos.
-- Integracion con el ecosistema HuggingFace Hub como artefacto de RL: la model card usa el bloque model-index con tarea, dataset y metrica, lo que permite indexado y comparacion automatica en el Hub.
+- Integracion con el ecosistema Hugging Face Hub como artefacto de RL: la model card usa el bloque model-index con tarea, dataset y metrica, lo que permite indexado y comparacion automatica en el Hub.
 - Reproducibilidad docente: sirve como plantilla de estructura de model card para agentes de RL (tags, model-index, metrica mean_reward).
 - Soporte de tool calling / function calling: no disponible (no aplica).
 - Capacidades de agente multi-paso: limitadas al bucle episodico del entorno; no hay planificacion simbolica ni uso de herramientas.
@@ -49,7 +49,7 @@ No hay evidencia de innovaciones tecnicas adicionales (no se mencionan decodific
 - Baseline de comparacion en experimentos de RL: sirve como punto de referencia de recompensa maxima en CartPole-v1 frente a variantes como PPO, A2C o DQN que un equipo entrene por su cuenta, siempre que se verifiquen primero los pesos disponibles.
 - Prueba de humo (smoke test) de infraestructura de RL: al ser un entorno ligero, permite validar pipelines de entrenamiento, logging de recompensas y evaluacion de episodios en pocos minutos y sin GPU.
 - Test de regresion en CI/CD para librerias de RL: se puede integrar en un job que cargue el agente, ejecute N episodios y compruebe que la recompensa media supera un umbral (por ejemplo, 475) para detectar roturas en la API de entorno o en la carga de pesos.
-- Ejemplo de publicacion en HuggingFace Hub: sirve para demostrar el flujo de subida de agentes de RL con metadatos model-index y tags, util para equipos que quieran estandarizar la trazabilidad de sus modelos.
+- Ejemplo de publicacion en Hugging Face Hub: sirve para demostrar el flujo de subida de agentes de RL con metadatos model-index y tags, util para equipos que quieran estandarizar la trazabilidad de sus modelos.
 - Experimentos de sensibilidad de hiperparametros: dado que CartPole-v1 es rapido de entrenar, el agente puede usarse como referencia para estudiar el efecto de la tasa de aprendizaje, el descuento o el numero de episodios sobre la varianza del retorno.
 - Demostracion de evaluacion estadistica en RL: permite ilustrar por que una recompensa media de 500.00 con desviacion 0.00 indica saturacion del entorno y no necesariamente superioridad frente a agentes con 495, si no se reportan mas episodios ni intervalos de confianza.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | Repositorio HuggingFace, 0.0 GB, 0 descargas |
+| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500.00 +/- 0.00 (no verificado) | no disponible | Repositorio Hugging Face, 0.0 GB, 0 descargas |
 | Alternativas comparables (agentes PPO/A2C/DQN sobre CartPole-v1 de otras librerias o cursos) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,8 +96,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rondahahda/Reinforce-CartPole-v1
-- Deep RL Course de HuggingFace (contexto declarado, Unit 4): https://huggingface.co/learn/deep-rl-course
+- Modelo en Hugging Face: https://huggingface.co/rondahahda/Reinforce-CartPole-v1
+- Deep RL Course de Hugging Face (contexto declarado, Unit 4): https://huggingface.co/learn/deep-rl-course
 - Entorno CartPole-v1 (Gymnasium): https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - Paper original de REINFORCE (Williams, 1992): https://doi.org/10.1007/BF00992696
 - Paper de referencia de policy gradient (Sutton et al., 2000): https://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation

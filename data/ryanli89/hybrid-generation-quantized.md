@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryanli89/hybrid-generation-quantized` es un repositorio de HuggingFace publicado por el usuario ryanli89 que contiene una implementación experimental de una arquitectura híbrida orientada a tareas de generación. Según la model card, se trata de una variante "nano" pensada como punto de partida reproducible, no como un modelo entrenado ni una release con benchmarks. El repositorio incluye el código Python de la implementación, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
+`ryanli89/hybrid-generation-quantized` es un repositorio de Hugging Face publicado por el usuario ryanli89 que contiene una implementación experimental de una arquitectura híbrida orientada a tareas de generación. Según la model card, se trata de una variante "nano" pensada como punto de partida reproducible, no como un modelo entrenado ni una release con benchmarks. El repositorio incluye el código Python de la implementación, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante a nivel técnico es el recuento de parámetros reportado en los metadatos de safetensors: 16.576 parámetros totales. Esta cifra es extraordinariamente baja para un modelo de lenguaje y encaja con la descripción de "nano" de la model card: se trata de un esqueleto de arquitectura para pruebas de humo (smoke tests), no de un modelo con capacidad generativa real. El tamaño del repositorio es de 0,0 GB, coherente con un checkpoint de inicialización sin pesos entrenados de entidad.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio no contiene un modelo entrenado: `mod
 - Pruebas de humo de infraestructura: usar `inference.py` para verificar que el entorno de PyTorch, CUDA y las dependencias de atención flash funcionan antes de entrenar modelos mayores. El checkpoint de inicialización permite validar el pipeline sin esperar a un entrenamiento.
 - Estudio de arquitecturas híbridas: inspeccionar `config.json` y el código para entender cómo se combinan atención flash y cross attention en una implementación concreta, útil en docencia o revisión de diseños.
 - Reproducción de recetas de entrenamiento: partir de `training_args.json` (Adam + OneCycle) como plantilla para experimentos controlados con baselines de capacidad equivalente y múltiples semillas.
-- Desarrollo de adaptadores de carga: servir como banco de pruebas para escribir un adaptador que permita cargar implementaciones personalizadas en frameworks que esperan interfaces estándar de HuggingFace.
+- Desarrollo de adaptadores de carga: servir como banco de pruebas para escribir un adaptador que permita cargar implementaciones personalizadas en frameworks que esperan interfaces estándar de Hugging Face.
 - Validación de pipelines de cuantización: dado el nombre del repositorio, puede emplearse para probar herramientas de cuantización sobre un checkpoint pequeño antes de aplicarlas a modelos de mayor tamaño.
 - Docencia y talleres: ejemplo mínimo y reproducible para explicar el ciclo completo de definición de arquitectura, configuración, checkpoint e inferencia en PyTorch.
 
@@ -73,10 +73,10 @@ No disponible. El repositorio no es un modelo entrenado y no se han identificado
 - Riesgo de alucinación: no aplica en sentido estricto al no haber modelo entrenado, pero cualquier salida del checkpoint de inicialización será ruido.
 - Longitud de contexto e idiomas soportados: no disponibles.
 - Licencia MIT: permite uso comercial y modificación, pero la model card recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
-- No es compatible de forma directa con APIs de carga automática de HuggingFace sin un adaptador.
+- No es compatible de forma directa con APIs de carga automática de Hugging Face sin un adaptador.
 - El nombre del repositorio menciona "quantized", pero no se documenta ningún esquema de cuantización; no debe asumirse que los pesos estén cuantizados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryanli89/hybrid-generation-quantized
+- Repositorio en Hugging Face: https://huggingface.co/ryanli89/hybrid-generation-quantized
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

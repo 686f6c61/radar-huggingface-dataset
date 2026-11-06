@@ -72,9 +72,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meari accent — Jeolla | Etapa GPT de GPT-SoVITS en ONNX | Coreano (dialecto de Jeolla) | no disponible | MIT | HuggingFace, 0 descargas |
-| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | TTS completo GPT-SoVITS | Coreano y otros | no disponible | MIT | HuggingFace (lj1995/GPT-SoVITS) |
-| Meari accent — base | Etapa de sonido y valores de voz de Meari | Coreano | no disponible | MIT | HuggingFace (Miyauel/meari-accent-base) |
+| Meari accent — Jeolla | Etapa GPT de GPT-SoVITS en ONNX | Coreano (dialecto de Jeolla) | no disponible | MIT | Hugging Face, 0 descargas |
+| GPT-SoVITS v2ProPlus (`s1v3.ckpt`) | TTS completo GPT-SoVITS | Coreano y otros | no disponible | MIT | Hugging Face (lj1995/GPT-SoVITS) |
+| Meari accent — base | Etapa de sonido y valores de voz de Meari | Coreano | no disponible | MIT | Hugging Face (Miyauel/meari-accent-base) |
 
 No se dispone de datos de rendimiento comparables de otros modelos TTS con acento regional coreano en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables de otros modelos TTS con acent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Miyauel/meari-accent-jeolla
+- Modelo en Hugging Face: https://huggingface.co/Miyauel/meari-accent-jeolla
 - Paquete base: https://huggingface.co/Miyauel/meari-accent-base
 - Repositorio de Meari: https://github.com/Miyauel/Meari
 - Pesos originales de GPT-SoVITS: https://huggingface.co/lj1995/GPT-SoVITS

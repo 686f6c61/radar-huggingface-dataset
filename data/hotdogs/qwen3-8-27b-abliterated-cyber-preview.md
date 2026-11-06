@@ -102,7 +102,7 @@ La comparativa se limita a la cadena de modelos de la que deriva esta variante; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-cyber-preview
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-cyber-preview
 - Modelo base abliterado: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotdogs/cyber-sft-agent-qwen38

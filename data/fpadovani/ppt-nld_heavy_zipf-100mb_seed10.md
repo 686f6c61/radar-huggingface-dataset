@@ -12,7 +12,7 @@ La información publicada es mínima: la model card se limita a la plantilla aut
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 86.708.736 (dato real de safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion facilitada |
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| fpadovani/ppt-nld_heavy_zipf-100mb_seed10 | 86,7 M | No disponible | No declarados (base neerlandes) | No disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| goldfish-models/nld_latn_100mb (modelo base) | No disponible (mismo orden de magnitud) | No disponible | Neerlandes (nld_latn) | No disponible | HuggingFace | Sin datos en la informacion disponible |
+| fpadovani/ppt-nld_heavy_zipf-100mb_seed10 | 86,7 M | No disponible | No declarados (base neerlandes) | No disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| goldfish-models/nld_latn_100mb (modelo base) | No disponible (mismo orden de magnitud) | No disponible | Neerlandes (nld_latn) | No disponible | Hugging Face | Sin datos en la informacion disponible |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | Ingles | MIT | Ampliamente disponible | Benchmark historico conocido |
-| GroNLP/gpt2-small-dutch (alternativa de la misma categoria) | ~124 M (no confirmado en la informacion disponible) | No disponible | Neerlandes | No disponible | HuggingFace | No disponible |
+| GroNLP/gpt2-small-dutch (alternativa de la misma categoria) | ~124 M (no confirmado en la informacion disponible) | No disponible | Neerlandes | No disponible | Hugging Face | No disponible |
 
 La comparacion cuantitativa de rendimiento no es posible con los datos disponibles: el modelo evaluado no publica metricas y su licencia no esta declarada, lo que lo situa en desventaja frente a alternativas con licencia explicita para cualquier uso en produccion.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa de rendimiento no es posible con los datos disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/p46jq75p
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -19,7 +19,7 @@ Su relevancia actual radica en dos factores: la escasez de modelos TTS abiertos 
 | Tipos de cuantizacion | GGUF en variantes Q4, Q5 y Q8 |
 | Idiomas soportados | Árabe (estándar moderno y dialectos del Golfo/Emiratíes) e inglés |
 | Licencia | AudarAI Community License v1.0 (`license: other`) |
-| Formato de pesos | GGUF para llama.cpp; el recuento de parámetros reportado por HuggingFace procede de safetensors del modelo base |
+| Formato de pesos | GGUF para llama.cpp; el recuento de parámetros reportado por Hugging Face procede de safetensors del modelo base |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ La búsqueda web realizada no aporta datos comparativos de rendimiento entre Aud
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-audar
+- Repositorio en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-audar
 - Repositorio base de AudarAI (referenciado en las muestras de audio): https://huggingface.co/audarai/Audar-TTS-V1-Turbo
 - Variante Flash de la familia: https://huggingface.co/audarai/Audar-TTS-V1-Flash
 - Modelo hermano de reconocimiento de voz: https://huggingface.co/audarai/Audar-ASR-V1-Turbo

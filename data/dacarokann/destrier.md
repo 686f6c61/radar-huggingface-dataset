@@ -74,7 +74,7 @@ No se dispone de informacion suficiente sobre modelos comparables en el mismo do
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dacarokann/destrier)
+- [Modelo en Hugging Face](https://huggingface.co/dacarokann/destrier)
 - [Adaptador fold0: Courser_a](https://huggingface.co/dacarokann/Courser_a)
 - [Adaptador fold1: Courser_b](https://huggingface.co/dacarokann/Courser_b)
 - [Adaptador fold2: Courser_c](https://huggingface.co/dacarokann/Courser_c)

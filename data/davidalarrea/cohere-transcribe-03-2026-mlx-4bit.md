@@ -107,7 +107,7 @@ La diferencia practica principal frente a las alternativas Whisper es el idioma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidalarrea/cohere-transcribe-03-2026-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/davidalarrea/cohere-transcribe-03-2026-mlx-4bit
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Checkpoint fp16 de origen citado por el autor: https://huggingface.co/beshkenadze/cohere-transcribe-03-2026-mlx-fp16
 - Paper, blog o demo especificos de esta cuantizacion: no disponible

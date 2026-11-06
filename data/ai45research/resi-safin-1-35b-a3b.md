@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReSI-Safin-1-35B-A3B es un modelo de generación de texto publicado por AI45Research en HuggingFace. Se trata de un modelo fusionado (merged-model) que parte de un modelo base denominado Safin-1 (35B-A3B) y le aplica el proceso de alineación ReSI (Recursive Safety Improvement toward Resistant and Resilient AI), descrito en el paper arXiv:2610.12233, adscrito a la categoría cs.CR (criptografía y seguridad). El repositorio incluye los pesos en safetensors, el tokenizador y código de inferencia propio que requiere `trust_remote_code=True`.
+ReSI-Safin-1-35B-A3B es un modelo de generación de texto publicado por AI45Research en Hugging Face. Se trata de un modelo fusionado (merged-model) que parte de un modelo base denominado Safin-1 (35B-A3B) y le aplica el proceso de alineación ReSI (Recursive Safety Improvement toward Resistant and Resilient AI), descrito en el paper arXiv:2610.12233, adscrito a la categoría cs.CR (criptografía y seguridad). El repositorio incluye los pesos en safetensors, el tokenizador y código de inferencia propio que requiere `trust_remote_code=True`.
 
 El modelo tiene 35.628.326.768 parámetros totales según los safetensors, con una nomenclatura "A3B" que indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parámetros activos por token. La model card no confirma explícitamente esta cifra ni la arquitectura exacta, pero la mención de dependencias opcionales como Flash Linear Attention y causal-conv1d apunta a componentes de atención lineal o híbrida en el diseño original.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReSI-Safin-1-35B-A3B | 35,63 B | ~3 B (según nomenclatura) | No disponible | No disponible | HuggingFace, safetensors BF16 |
+| ReSI-Safin-1-35B-A3B | 35,63 B | ~3 B (según nomenclatura) | No disponible | No disponible | Hugging Face, safetensors BF16 |
 | Safin-1 (35B-A3B) | No disponible | No disponible | No disponible | No disponible | Modelo base citado, sin referencia pública localizada en la información disponible |
 | Alternativas MoE de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI45Research/ReSI-Safin-1-35B-A3B
+- Hugging Face: https://huggingface.co/AI45Research/ReSI-Safin-1-35B-A3B
 - Repositorio de código: https://github.com/AI45Lab/ReSI
 - Paper: https://arxiv.org/abs/2610.12233 (ReSI: Recursive Safety Improvement toward Resistant and Resilient AI)
 - Script de inferencia incluido en el repositorio: `inference.py`

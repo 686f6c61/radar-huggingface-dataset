@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TalosDDM es un modelo de lenguaje publicado por el usuario PrometheanStudio en HuggingFace. Se trata de un modelo extremadamente pequeno: la model card declara 254.272 parametros, una dimension oculta de 64, 2 capas, 4 cabezas de atencion y 2 cabezas KV, con un vocabulario de 1.024 tokens y una longitud maxima de secuencia de 512. Esta entrenado y guardado en FP32 con PyTorch 2.11.0+cu128 y CUDA 12.8.1 sobre una NVIDIA Tesla T4.
+TalosDDM es un modelo de lenguaje publicado por el usuario PrometheanStudio en Hugging Face. Se trata de un modelo extremadamente pequeno: la model card declara 254.272 parametros, una dimension oculta de 64, 2 capas, 4 cabezas de atencion y 2 cabezas KV, con un vocabulario de 1.024 tokens y una longitud maxima de secuencia de 512. Esta entrenado y guardado en FP32 con PyTorch 2.11.0+cu128 y CUDA 12.8.1 sobre una NVIDIA Tesla T4.
 
 Por su escala, no es un modelo orientado a produccion ni a tareas de lenguaje general, sino una pieza de investigacion o de experimentacion arquitectonica. La model card incluye ademas una seccion "MoE Configuration" con una segunda configuracion (128 de dimension oculta, 3 capas, 8 cabezas de atencion, 4 cabezas KV, dimension de cabeza 16, vocabulario de 2.048, 16 expertos, 3 activos y 1 compartido) sin aclarar si corresponde a una variante distinta, a un plan futuro o a un error de documentacion. Esa ambiguedad, junto con un repositorio de 0.0 GB y cero descargas, limita mucho cualquier evaluacion practica.
 
@@ -128,7 +128,7 @@ Cualitativamente, TalosDDM pertenece a la categoria de modelos de juguete por de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrometheanStudio/TalosDDM
+- Modelo en Hugging Face: https://huggingface.co/PrometheanStudio/TalosDDM
 - Dataset declarado: https://huggingface.co/datasets/Amirjalaly/ooast_prompts
 - Paper, blog o repositorio asociado: no disponible
 - Demo o espacio de inferencia: no disponible

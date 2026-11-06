@@ -100,7 +100,7 @@ Consideraciones de la comparativa: frente a LaMa, MI-GAN es notablemente más li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/software-mansion/MI-GAN-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/software-mansion/MI-GAN-ExecuTorch
 - Repositorio upstream de MI-GAN (Picsart AI Research): https://github.com/Picsart-AI-Research/MI-GAN
 - Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
 - Documentación de descarga de modelos de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

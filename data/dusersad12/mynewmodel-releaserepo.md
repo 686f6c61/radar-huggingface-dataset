@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyNewModel es un modelo de generación de texto publicado por el usuario dusersad12 en HuggingFace bajo licencia Apache 2.0. Según su model card, se trata de la última release de un equipo pequeño, entrenada con un esquema de post-entrenamiento más largo y una mezcla de datos revisada respecto a la entrega anterior. El foco declarado de esta versión son el razonamiento multi-paso y el uso de herramientas: en un conjunto reservado de problemas de álgebra de nivel olimpiada, la release previa resolvía el 61 % de los problemas y MyNewModel el 79 %, con un consumo medio de tokens de pensamiento que pasa de unos 9K a unos 21K en el nivel más difícil.
+MyNewModel es un modelo de generación de texto publicado por el usuario dusersad12 en Hugging Face bajo licencia Apache 2.0. Según su model card, se trata de la última release de un equipo pequeño, entrenada con un esquema de post-entrenamiento más largo y una mezcla de datos revisada respecto a la entrega anterior. El foco declarado de esta versión son el razonamiento multi-paso y el uso de herramientas: en un conjunto reservado de problemas de álgebra de nivel olimpiada, la release previa resolvía el 61 % de los problemas y MyNewModel el 79 %, con un consumo medio de tokens de pensamiento que pasa de unos 9K a unos 21K en el nivel más difícil.
 
 La información pública disponible es, sin embargo, muy escasa y no permite verificar esas afirmaciones. No se declara el número de parámetros, la longitud de contexto, la arquitectura concreta, los idiomas soportados ni los formatos de pesos. El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo día (27 de septiembre de 2026), lo que apunta a un repositorio de prueba o a una publicación incompleta más que a un artefacto listo para producción.
 
@@ -104,7 +104,7 @@ La única comparativa disponible es la que ofrece el propio autor, con los model
 
 | Modelo | Parámetros | Contexto | Rendimiento (suite interna del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyNewModel | No disponible | No disponible | Mejor puntuación en 15 de 15 categorías de su tabla | Apache 2.0 | Repositorio HuggingFace sin pesos (0.0 GB) |
+| MyNewModel | No disponible | No disponible | Mejor puntuación en 15 de 15 categorías de su tabla | Apache 2.0 | Repositorio Hugging Face sin pesos (0.0 GB) |
 | MyNewModel-Small | No disponible (arquitectura idéntica a su modelo base) | No disponible | No disponible | No disponible | Mencionado en la model card, sin repositorio identificado |
 | ModelA | No disponible | No disponible | Inferior a MyNewModel en todas las categorías | No disponible | No identificado (anonimizado) |
 | ModelB | No disponible | No disponible | Inferior a MyNewModel en todas las categorías | No disponible | No identificado (anonimizado) |
@@ -128,7 +128,7 @@ No se dispone de comparaciones verificables con modelos de código abierto ident
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dusersad12/MyNewModel-ReleaseRepo
+- Repositorio en Hugging Face: https://huggingface.co/dusersad12/MyNewModel-ReleaseRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible (la model card menciona "our official website" para el chat y la API, sin URL concreta)
 - Repositorio de código: no disponible (la model card menciona un repositorio con código de entrenamiento, servidor de inferencia y variantes cuantizadas, sin URL concreta)

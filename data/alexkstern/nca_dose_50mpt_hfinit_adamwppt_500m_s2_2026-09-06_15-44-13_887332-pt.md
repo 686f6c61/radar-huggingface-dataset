@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s2_2026-09-06_15-44-13_887332-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s2_2026-09-06_15-44-13_887332-pt
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/nzaf3nyh
 - Checkpoint relacionado: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_500M_s2_2026-08-15_01-06-31_597777-pt

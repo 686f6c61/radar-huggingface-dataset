@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e0 aloja un checkpoint publicado por el usuario PessimisticDPO en HuggingFace. Por el identificador se deduce que se trata de un ajuste fino derivado de un modelo Mistral de 7B ya sometido a una etapa de SFT (supervised fine-tuning), presumiblemente del checkpoint HuggingFaceH4/mistral-7b-sft-beta, y que el sufijo del nombre codifica hiperparámetros de un experimento de ablación (valores a0.1 y b0.1, la etiqueta L4, overlap_subsample, regularización l2 y e0). La model card, sin embargo, es la plantilla autogenerada de HuggingFace sin cumplimentar: no documenta autoría real, tipo de modelo, idiomas, licencia ni procedimiento de entrenamiento, por lo que ninguno de esos extremos puede confirmarse.
+El repositorio PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e0 aloja un checkpoint publicado por el usuario PessimisticDPO en Hugging Face. Por el identificador se deduce que se trata de un ajuste fino derivado de un modelo Mistral de 7B ya sometido a una etapa de SFT (supervised fine-tuning), presumiblemente del checkpoint HuggingFaceH4/mistral-7b-sft-beta, y que el sufijo del nombre codifica hiperparámetros de un experimento de ablación (valores a0.1 y b0.1, la etiqueta L4, overlap_subsample, regularización l2 y e0). La model card, sin embargo, es la plantilla autogenerada de Hugging Face sin cumplimentar: no documenta autoría real, tipo de modelo, idiomas, licencia ni procedimiento de entrenamiento, por lo que ninguno de esos extremos puede confirmarse.
 
 El interés del checkpoint es exclusivamente de investigación. El prefijo "PessimisticDPO" apunta a una variante de optimización de preferencias (DPO) con algún mecanismo de pesimismo o penalización, y el sufijo a un barrido de hiperparámetros; es decir, parece un artefacto de un estudio comparativo de métodos de alineación más que un modelo listo para producción. No hay resultados de evaluación publicados, ni descargas, ni "likes", ni documentación técnica asociada.
 
@@ -29,7 +29,7 @@ Conviene señalar dos anomalías objetivas del repositorio: el tamano declarado 
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura ni sobre el entrenamiento. La model card es la plantilla por defecto de HuggingFace y deja en «[More Information Needed]» todas las secciones relevantes: descripción del modelo, fuente de datos, preprocesado, hiperparámetros de entrenamiento, régimen de precisión (fp32, fp16, bf16, fp8) e infraestructura de cómputo. El único dato estructural disponible es el identificador del repositorio.
+No hay información verificable sobre la arquitectura ni sobre el entrenamiento. La model card es la plantilla por defecto de Hugging Face y deja en «[More Information Needed]» todas las secciones relevantes: descripción del modelo, fuente de datos, preprocesado, hiperparámetros de entrenamiento, régimen de precisión (fp32, fp16, bf16, fp8) e infraestructura de cómputo. El único dato estructural disponible es el identificador del repositorio.
 
 Ese identificador permite formular hipótesis, no afirmaciones. El segmento "mistral-7b-sft-beta" coincide con la denominación del checkpoint SFT público de la familia Zephyr (HuggingFaceH4/mistral-7b-sft-beta), lo que situaría la base en un transformer decoder-only denso de aproximadamente 7.200 millones de parámetros. El segmento "PessimisticDPO" sugiere que el ajuste se realizó con una variante de Direct Preference Optimization que incorpora algún término de pesimismo o penalización conservadora. El sufijo "a0.1-b0.1-L4-overlap_subsample-l2-e0" presenta la estructura típica de un nombre de experimento en un barrido de ablaciones: dos coeficientes (a y b) con valor 0,1, una referencia a una capa o nivel (L4), una estrategia de muestreo con solapamiento y submuestreo, regularización L2 y una época cero. Nada de esto está documentado por el autor, por lo que debe tratarse como interpretación tentativa del nombre y no como descripción técnica fiable.
 
@@ -71,7 +71,7 @@ No hay requisitos declarados por el autor ni medidas de latencia o throughput pu
 - GPU de datacenter recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB. Permiten fp16 con lotes grandes y contextos largos.
 - GPU de consumo compatibles: RTX 4090 o RTX 3090 (24 GB) para fp16 con contexto moderado; RTX 4080/4070 Ti (16 GB) y RTX 3060 12 GB para cuantizaciones de 8 y 4 bits.
 - ¿Cabe en GPU de consumo? Sí, en cuantización de 4 bits cabe en GPUs de 8-12 GB de VRAM; en fp16 requiere al menos 16-24 GB.
-- Opciones de despliegue: transformers (formato declarado), vLLM, Hugging Face TGI, llama.cpp y Ollama si se generan cuantizaciones GGUF, y endpoints compatibles de HuggingFace (tag endpoints_compatible). Para un adaptador LoRA habría que fusionarlo previamente con el modelo base.
+- Opciones de despliegue: transformers (formato declarado), vLLM, Hugging Face TGI, llama.cpp y Ollama si se generan cuantizaciones GGUF, y endpoints compatibles de Hugging Face (tag endpoints_compatible). Para un adaptador LoRA habría que fusionarlo previamente con el modelo base.
 - Latencia y throughput: no disponible. No se han publicado mediciones, y el tamano real del repositorio (0,2 GB) impide confirmar siquiera que los pesos completos estén presentes.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ La comparación directa no es posible porque no se conocen los parámetros, el c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e0 | no disponible (presunto ~7,2B) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, 0,2 GB | No se han publicado resultados |
-| HuggingFaceH4/mistral-7b-sft-beta | ~7,2B | 32.768 tokens en configuración (entrenado con secuencias de 2.048) | MIT | Ampliamente disponible en HuggingFace | Publicados por su autor (evaluación de la familia Zephyr) |
+| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e0 | no disponible (presunto ~7,2B) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, 0,2 GB | No se han publicado resultados |
+| HuggingFaceH4/mistral-7b-sft-beta | ~7,2B | 32.768 tokens en configuración (entrenado con secuencias de 2.048) | MIT | Ampliamente disponible en Hugging Face | Publicados por su autor (evaluación de la familia Zephyr) |
 | Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Publicados por Mistral AI |
 | Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Ampliamente disponible | Publicados por Meta |
 
@@ -104,7 +104,7 @@ Ninguno de los valores de este checkpoint puede contrastarse con los de las alte
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e0
-- Organización del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Organización del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Checkpoint SFT presumiblemente usado como base: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Paper referenciado en la etiqueta del repositorio (impacto ambiental, ajeno al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

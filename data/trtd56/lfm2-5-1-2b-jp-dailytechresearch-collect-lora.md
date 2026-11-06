@@ -88,7 +88,7 @@ La comparación con otros adaptadores LoRA para tareas similares no está dispon
 
 ## Enlaces
 
-- [Página del adaptador en HuggingFace](https://huggingface.co/trtd56/LFM2.5-1.2B-JP-DailyTechResearch-Collect-LoRA)
+- [Página del adaptador en Hugging Face](https://huggingface.co/trtd56/LFM2.5-1.2B-JP-DailyTechResearch-Collect-LoRA)
 - [Modelo base LiquidAI/LFM2.5-1.2B-JP](https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP)
 - [Conversión MLX 4-bit del modelo base](https://huggingface.co/mlx-community/LFM2.5-1.2B-JP-4bit)
 - [Proyecto DailyTechResearch (prompt completo y validación)](https://github.com/trtd56/DailyTechResearch)

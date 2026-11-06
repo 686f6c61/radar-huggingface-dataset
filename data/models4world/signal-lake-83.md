@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/signal-lake-83` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en HuggingFace. Está diseñado para la generación de texto y se presenta como un ajuste fino del modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que contiene los pesos del adaptador en formato safetensors, junto con la configuración de PEFT.
+El modelo `models4world/signal-lake-83` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en Hugging Face. Está diseñado para la generación de texto y se presenta como un ajuste fino del modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que contiene los pesos del adaptador en formato safetensors, junto con la configuración de PEFT.
 
 La relevancia de este modelo es limitada en la actualidad debido a la ausencia casi total de documentación: la model card no incluye descripción, licencia, idiomas, arquitectura, datos de entrenamiento ni benchmarks. Se desconoce si el modelo base es propietario o de acceso abierto, y no hay evidencia de uso o adopción (0 descargas, 0 likes). Por tanto, cualquier evaluación técnica rigurosa es imposible con los datos disponibles, y se recomienda precaución antes de considerarlo para entornos de producción.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo base, no
 
 ## Enlaces
 
-- [HuggingFace: models4world/signal-lake-83](https://huggingface.co/models4world/signal-lake-83)
+- [Hugging Face: models4world/signal-lake-83](https://huggingface.co/models4world/signal-lake-83)

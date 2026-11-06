@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Tipo | Especie | Tejido | Prediccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pcdnamtl (este) | PCA + elastic net | Homo sapiens | Sangre completa | Longitud de telomeros | BSD-3-Clause | HuggingFace |
+| pcdnamtl (este) | PCA + elastic net | Homo sapiens | Sangre completa | Longitud de telomeros | BSD-3-Clause | Hugging Face |
 | HorvathClock | Regresion elastic net | Homo sapiens | Multiples tejidos | Edad cronologica | GPL-3.0 | Diversos repos |
 | HannumClock | Regresion elastic net | Homo sapiens | Sangre completa | Edad cronologica | GPL-3.0 | Diversos repos |
 | PhenoAge | Regresion elastic net | Homo sapiens | Sangre completa | Edad fenotipica | GPL-3.0 | Diversos repos |
@@ -81,6 +81,6 @@ La comparativa se basa en la categoria de relojes epigeneticos. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/pcdnamtl
+- Repositorio Hugging Face: https://huggingface.co/pyaging/pcdnamtl
 - Documentacion de pyaging: https://pyaging.readthedocs.io
 - Paper de referencia: Higgins-Chen, Albert T., et al. "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking." Nature Aging 2 (2022): 644-661. DOI: https://doi.org/10.1038/s43587-022-00248-2

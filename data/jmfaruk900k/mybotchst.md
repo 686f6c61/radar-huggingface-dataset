@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mybotchst`, publicado en HuggingFace por el usuario `jmfaruk900k`, es un artefacto del que no se dispone de información técnica pública. La única metadata disponible es su licencia, declarada como `grok2-community`, y una fecha de creación del 14 de agosto de 2026, que resulta anómala por ser futura respecto a la fecha actual. No se ha publicado ninguna model card, ni especificaciones de arquitectura, tamaño, contexto o capacidades. Tampoco se han encontrado referencias externas que documenten su origen, propósito o rendimiento. Dada la ausencia total de datos verificables, cualquier uso de este modelo en entornos de desarrollo o investigación debe considerarse de alto riesgo y requiere una evaluación previa exhaustiva.
+El modelo `mybotchst`, publicado en Hugging Face por el usuario `jmfaruk900k`, es un artefacto del que no se dispone de información técnica pública. La única metadata disponible es su licencia, declarada como `grok2-community`, y una fecha de creación del 14 de agosto de 2026, que resulta anómala por ser futura respecto a la fecha actual. No se ha publicado ninguna model card, ni especificaciones de arquitectura, tamaño, contexto o capacidades. Tampoco se han encontrado referencias externas que documenten su origen, propósito o rendimiento. Dada la ausencia total de datos verificables, cualquier uso de este modelo en entornos de desarrollo o investigación debe considerarse de alto riesgo y requiere una evaluación previa exhaustiva.
 
 ## Especificaciones técnicas
 
@@ -52,4 +52,4 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmfaruk900k/mybotchst
+- Hugging Face: https://huggingface.co/jmfaruk900k/mybotchst

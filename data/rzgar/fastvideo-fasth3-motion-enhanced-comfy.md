@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas de los mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rzgar/FastVideo-FastH3-Motion-Enhanced-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/rzgar/FastVideo-FastH3-Motion-Enhanced-Comfy
 - Peso publicado: https://huggingface.co/rzgar/FastVideo-FastH3-Motion-Enhanced-Comfy/resolve/main/fastvideo_fasth3_8step_v2_MoEn_pruned_int8_convrot.safetensors
 - Video de muestra del repositorio: https://huggingface.co/rzgar/FastVideo-FastH3-Motion-Enhanced-Comfy/resolve/main/workflow/MiniMax_H3_00049_.mp4
 - Modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-Comfy

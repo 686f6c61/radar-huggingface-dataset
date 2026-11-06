@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos como AudioLM en es
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TCFM-Flow-SLM-1B-Extended (adaptador) | 488.448 (adaptador) sobre base 1.3B | No disponible | Flow matching + acoplamiento temporal | No disponible | HuggingFace (adaptadores) |
+| TCFM-Flow-SLM-1B-Extended (adaptador) | 488.448 (adaptador) sobre base 1.3B | No disponible | Flow matching + acoplamiento temporal | No disponible | Hugging Face (adaptadores) |
 | Flow-SLM 1B-extended (base) | 1.3B | No disponible | Flow matching conjunto lingüístico-acústico | No disponible | Repositorio oficial (jjery2243542/flow-slm) |
 | AudioLM | No disponible | No disponible | Modelo jerárquico basado en tokens | No disponible | No disponible |
 
@@ -86,7 +86,7 @@ No se dispone de comparativas cuantitativas directas con otros modelos en la inf
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/JoyBoyuuu/TCFM-Flow-SLM-1B-Extended
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/JoyBoyuuu/TCFM-Flow-SLM-1B-Extended
 - Repositorio de código TCFM: https://github.com/JoyBoyuuu/TCFM
 - Repositorio del proyecto RA-FM (relacionado): https://github.com/JoyBoyuuu/RA-FM
 - Página del proyecto Flow-SLM: https://jjery2243542.github.io/flowslm.github.io/

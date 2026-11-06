@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-2.0-mini | 1,5B | no disponible | Decisión tipada calibrada, pl/en | Apache 2.0 | HuggingFace; FP8, GGUF, MLX |
-| basal-2.0 | 4,5B | no disponible | Decisión tipada calibrada, modo thinking experimental | no disponible | HuggingFace; FP8, GGUF, MLX |
-| basal-2.0-max | 11B | no disponible | Decisión tipada calibrada, máxima precisión | no disponible | HuggingFace; FP8, GGUF, MLX |
-| Bielik-1.5B-v3.0-Instruct | 1,5B | no disponible | Generación de texto instructiva, pl | no disponible | HuggingFace (modelo base) |
+| basal-2.0-mini | 1,5B | no disponible | Decisión tipada calibrada, pl/en | Apache 2.0 | Hugging Face; FP8, GGUF, MLX |
+| basal-2.0 | 4,5B | no disponible | Decisión tipada calibrada, modo thinking experimental | no disponible | Hugging Face; FP8, GGUF, MLX |
+| basal-2.0-max | 11B | no disponible | Decisión tipada calibrada, máxima precisión | no disponible | Hugging Face; FP8, GGUF, MLX |
+| Bielik-1.5B-v3.0-Instruct | 1,5B | no disponible | Generación de texto instructiva, pl | no disponible | Hugging Face (modelo base) |
 
 La comparación relevante es interna a la familia basal-2.0: mini prioriza velocidad, max prioriza precisión y el modelo de 4,5B es el principal. Frente a Bielik-1.5B-v3.0-Instruct, la diferencia es de paradigma: Bielik genera texto libre, basal-2.0-mini restringe la salida a opciones declaradas y calibra la confianza.
 
@@ -89,7 +89,7 @@ La comparación relevante es interna a la familia basal-2.0: mini prioriza veloc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-2.0-mini
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-2.0-mini
 - Colección basal-2.0: https://huggingface.co/collections/Remek/basal-20-6acd1712a8e443c86cd576fc
 - Modelo basal-2.0 (4,5B): https://huggingface.co/Remek/basal-2.0-4.5B
 - Modelo basal-2.0-max (11B): https://huggingface.co/Remek/basal-2.0-max

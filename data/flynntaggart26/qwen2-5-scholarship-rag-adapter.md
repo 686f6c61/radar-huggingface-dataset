@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Flynntaggart26/qwen2.5-scholarship-rag-adapter` es un adaptador LoRA (Low-Rank Adaptation) de ajuste fino eficiente en parámetros (PEFT) construido sobre `Qwen/Qwen2.5-0.5B-Instruct`. No es un modelo completo, sino un módulo de pesos de bajo rango que se carga sobre el modelo base congelado mediante la librería `peft`. Su propósito es actuar como cabeza de generación especializada dentro de canalizaciones de generación aumentada por recuperación (RAG) en el dominio de la ayuda financiera universitaria estadounidense: coste neto de matrícula, becas, métricas institucionales y evaluación del retorno de la inversión (ROI) de la educación superior. El autor figura en la model card como Egehan Şahban, mientras que la cuenta de HuggingFace que lo publica es `Flynntaggart26`.
+El modelo `Flynntaggart26/qwen2.5-scholarship-rag-adapter` es un adaptador LoRA (Low-Rank Adaptation) de ajuste fino eficiente en parámetros (PEFT) construido sobre `Qwen/Qwen2.5-0.5B-Instruct`. No es un modelo completo, sino un módulo de pesos de bajo rango que se carga sobre el modelo base congelado mediante la librería `peft`. Su propósito es actuar como cabeza de generación especializada dentro de canalizaciones de generación aumentada por recuperación (RAG) en el dominio de la ayuda financiera universitaria estadounidense: coste neto de matrícula, becas, métricas institucionales y evaluación del retorno de la inversión (ROI) de la educación superior. El autor figura en la model card como Egehan Şahban, mientras que la cuenta de Hugging Face que lo publica es `Flynntaggart26`.
 
 El problema que aborda es concreto: los modelos generalistas de pequeño tamaño fallan al extraer cifras de divulgaciones institucionales extensas (College Scorecard del Departamento de Educación de EE. UU., datos IPEDS), tienden a alucinar cuando el contexto recuperado es ambiguo y arrastran deriva temporal con datos de distintos cursos académicos. El adaptador se entrena para forzar el anclaje al contexto y mejorar la fidelidad estructural y la extracción de entidades numéricas.
 
@@ -102,7 +102,7 @@ Frente a un modelo generalista del mismo tamaño, la ventaja de este adaptador e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flynntaggart26/qwen2.5-scholarship-rag-adapter
+- Modelo en Hugging Face: https://huggingface.co/Flynntaggart26/qwen2.5-scholarship-rag-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de ROI y becas: https://huggingface.co/datasets/Flynntaggart26/us-college-roi-scholarships
 - Dataset de evaluación RAG: https://huggingface.co/datasets/Flynntaggart26/learn-rag-eval-qa

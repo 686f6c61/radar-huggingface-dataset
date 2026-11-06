@@ -69,7 +69,7 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-pretrain
+- Modelo en Hugging Face: https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-pretrain
 - Checkpoints de la etapa 1 (14 checkpoints): https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-ckpts
 - Variante annealed (midtrain): https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-midtrain
 - Variante SFT (chat/razonamiento): https://huggingface.co/geodesic-research/control-pretrain-30b-baseline-sft

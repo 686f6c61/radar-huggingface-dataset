@@ -111,7 +111,7 @@ La comparacion directa de rendimiento en tareas no es posible con la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante DSpark del modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark
 - Suite de cuantizacion AutoRound-ASHQ1-Remix mencionada por el autor: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite

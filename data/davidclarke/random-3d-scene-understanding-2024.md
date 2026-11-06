@@ -4,9 +4,9 @@
 
 `davidclarke/random-3d-scene-understanding-2024` no es un modelo de aprendizaje automático entrenado, sino un repositorio de notas de lectura y de esbozo experimental sobre comprensión de escenas 3D (3D scene understanding). Así lo declara su propia model card: el repositorio "no reclama mejoras de benchmark, ablaciones completadas, código liberado ni un checkpoint entrenado". El artefacto principal es `reading.md`, un documento de trabajo que plantea el alcance de la pregunta de investigación, posibles factores de confusión, baselines emparejados y protocolos de reproducibilidad.
 
-El repositorio está etiquetado en HuggingFace con `safetensors`, `transformer`, `research-notes` y `3d-scene-understanding`, bajo licencia MIT. Contiene un fichero de pesos safetensors con 49.600 parámetros totales, una cifra compatible con un tensor de prueba o un artefacto auxiliar más que con un transformer funcional. El tamaño del repositorio es de 0,0 GB y no tiene pipeline de inferencia declarado.
+El repositorio está etiquetado en Hugging Face con `safetensors`, `transformer`, `research-notes` y `3d-scene-understanding`, bajo licencia MIT. Contiene un fichero de pesos safetensors con 49.600 parámetros totales, una cifra compatible con un tensor de prueba o un artefacto auxiliar más que con un transformer funcional. El tamaño del repositorio es de 0,0 GB y no tiene pipeline de inferencia declarado.
 
-Su relevancia actual es limitada como modelo: no hay pesos utilizables, ni tokenizador documentado, ni resultados. Su interés es como ejemplo de repositorio de investigación que explicita hipótesis y controles de reproducibilidad en lugar de publicar cifras no verificadas, algo poco frecuente en el ecosistema de HuggingFace.
+Su relevancia actual es limitada como modelo: no hay pesos utilizables, ni tokenizador documentado, ni resultados. Su interés es como ejemplo de repositorio de investigación que explicita hipótesis y controles de reproducibilidad en lugar de publicar cifras no verificadas, algo poco frecuente en el ecosistema de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada como modelo: no hay pesos utilizables, ni token
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 8 descargas, 0 likes |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 2026-09-17 / 2026-09-17 |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no aplica. No hay un modelo de inferencia publicado; el fichero safetensors declarado tiene 49.600 parámetros, lo que en fp32 ocuparía del orden de 0,2 MB y en fp16 unos 0,1 MB (estimación aritmética a partir del recuento de parámetros, no un dato del repositorio).
 - GPU recomendadas: no disponible. Un artefacto de ese tamaño se cargaría en memoria de CPU sin necesidad de acelerador.
 - Compatibilidad con GPU de consumo: irrelevante por el momento; el tamaño del repositorio es de 0,0 GB.
-- Opciones de despliegue: no disponibles. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, y no existe pipeline de HuggingFace declarado.
+- Opciones de despliegue: no disponibles. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, y no existe pipeline de Hugging Face declarado.
 - Latencia y throughput: no disponibles.
 
 Cualquier despliegue como servicio de inferencia requeriría primero un checkpoint real, un tokenizador y una definición de arquitectura publicados por el autor.
@@ -89,7 +89,7 @@ No disponible. Este repositorio no es un modelo entrenado y no comparte categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidclarke/random-3d-scene-understanding-2024
+- Repositorio en Hugging Face: https://huggingface.co/davidclarke/random-3d-scene-understanding-2024
 - Nota principal del repositorio: https://huggingface.co/davidclarke/random-3d-scene-understanding-2024/blob/main/reading.md
 - Documentación del repositorio: https://huggingface.co/davidclarke/random-3d-scene-understanding-2024/blob/main/README.md
 - Búsqueda web: no se han encontrado resultados relevantes sobre este repositorio, su autor o el estudio descrito. Los resultados devueltos por la búsqueda corresponden a portales de empleo alemanes (Bundesagentur für Arbeit y dominios asociados) y no guardan relación con el modelo ni con comprensión de escenas 3D.

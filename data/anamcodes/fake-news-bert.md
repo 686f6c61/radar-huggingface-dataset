@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anamcodes/fake-news-bert` es un modelo publicado en HuggingFace por el usuario anamcodes bajo licencia MIT. Por el identificador y la ausencia de cualquier otra documentación, se trata presumiblemente de un modelo basado en arquitectura BERT orientado a la clasificación de noticias falsas (detección de desinformación), aunque la model card no aporta ninguna confirmación explícita sobre la tarea, el dominio de entrenamiento ni el procedimiento seguido.
+`anamcodes/fake-news-bert` es un modelo publicado en Hugging Face por el usuario anamcodes bajo licencia MIT. Por el identificador y la ausencia de cualquier otra documentación, se trata presumiblemente de un modelo basado en arquitectura BERT orientado a la clasificación de noticias falsas (detección de desinformación), aunque la model card no aporta ninguna confirmación explícita sobre la tarea, el dominio de entrenamiento ni el procedimiento seguido.
 
 La información disponible es mínima: la model card se limita a declarar la licencia MIT y no incluye descripción, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado, lo que impide confirmar si está pensado para `text-classification` o para otra tarea.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, al desconocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Si cabe en GPU de consumo: no disponible; si se confirma que es un BERT base (~110 M de parámetros), cabría en cualquier GPU con 4-8 GB de VRAM, pero esto es una estimación no verificada.
-- Opciones de despliegue: no documentadas. Si es compatible con la librería `transformers`, podría servirse con Text Embeddings Inference, FastAPI o un endpoint de HuggingFace Inference, pero no hay confirmación.
+- Opciones de despliegue: no documentadas. Si es compatible con la librería `transformers`, podría servirse con Text Embeddings Inference, FastAPI o un endpoint de Hugging Face Inference, pero no hay confirmación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,5 +87,5 @@ Los datos de las filas de referencia corresponden a los modelos originales ampli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anamcodes/fake-news-bert
+- Modelo en Hugging Face: https://huggingface.co/anamcodes/fake-news-bert
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

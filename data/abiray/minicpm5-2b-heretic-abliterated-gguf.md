@@ -124,7 +124,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre este modelo y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abiray/MiniCPM5-2B-heretic-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Abiray/MiniCPM5-2B-heretic-abliterated-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Referencia de la metodologia de ablacion: https://huggingface.co/insraq/MiniCPM5-2B-heretic-abliterated
 - llama.cpp: https://github.com/ggerganov/llama.cpp

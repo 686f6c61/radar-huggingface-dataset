@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tinybrainbot-100m-v5.1-instruct es un modelo de lenguaje de 100 millones de parámetros entrenado desde cero ("from scratch") por el usuario nkthebass, y distribuido en formato GGUF por mradermacher, un conocido cuantizador de la comunidad de HuggingFace. Se trata de un modelo pequeño, de tipo instruct/chat, afinado con DPO (Direct Preference Optimization) y orientado a tareas de conversación, razonamiento básico y matemáticas elementales. Su relevancia radica en que es un ejemplo de modelo "from scratch" de escala reducida, útil para experimentación, despliegue en entornos con recursos muy limitados y estudio de técnicas de alineación en modelos pequeños.
+tinybrainbot-100m-v5.1-instruct es un modelo de lenguaje de 100 millones de parámetros entrenado desde cero ("from scratch") por el usuario nkthebass, y distribuido en formato GGUF por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. Se trata de un modelo pequeño, de tipo instruct/chat, afinado con DPO (Direct Preference Optimization) y orientado a tareas de conversación, razonamiento básico y matemáticas elementales. Su relevancia radica en que es un ejemplo de modelo "from scratch" de escala reducida, útil para experimentación, despliegue en entornos con recursos muy limitados y estudio de técnicas de alineación en modelos pequeños.
 
 El modelo base (nkthebass/tinybrainbot-100m-v5.1-instruct) fue entrenado sobre una mezcla de datasets de instrucciones y conversación bien conocidos: smol-smoltalk, smoltalk, smoltalk2, tulu-3-sft-personas-instruction-following, WildChat-4.8M, ultrafeedback_binarized y OpenHermes-2.5. Esta combinación sugiere un enfoque en instrucciones conversacionales, seguimiento de personas y preferencias humanas, con una etapa de DPO para alineamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
 | tinybrainbot-100m-v5.1-instruct | 100M | no disponible | Apache 2.0 | GGUF, safetensors | Modelo from scratch, solo inglés |
-| SmolLM-135M (HuggingFaceTB) | 135M | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo pequeño de referencia de HuggingFace |
+| SmolLM-135M (HuggingFaceTB) | 135M | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo pequeño de referencia de Hugging Face |
 | Qwen2.5-0.5B | 500M | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Mayor tamaño y capacidades multilingües |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada. La comparativa se limita a parámetros, licencia y formato, sin cifras de benchmarks.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/tinybrainbot-100m-v5.1-instruct-GGUF](https://huggingface.co/mradermacher/tinybrainbot-100m-v5.1-instruct-GGUF)
+- [Hugging Face: mradermacher/tinybrainbot-100m-v5.1-instruct-GGUF](https://huggingface.co/mradermacher/tinybrainbot-100m-v5.1-instruct-GGUF)
 - [Modelo base: nkthebass/tinybrainbot-100m-v5.1-instruct](https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-instruct)
 - [Página de descargas de mradermacher](https://hf.tst.eu/model#tinybrainbot-100m-v5.1-instruct-GGUF)
 - [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

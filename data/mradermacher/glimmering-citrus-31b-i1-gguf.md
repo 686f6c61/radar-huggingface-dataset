@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Glimmering-Citrus-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Glimmering-Citrus-31B-i1-GGUF
 - Modelo base (Vortex5/Glimmering-Citrus-31B): https://huggingface.co/Vortex5/Glimmering-Citrus-31B
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/Glimmering-Citrus-31B-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

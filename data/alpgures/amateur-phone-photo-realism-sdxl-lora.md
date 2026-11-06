@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amateur Phone Photo Realism es un LoRA de estilo para Stable Diffusion XL (SDXL 1.0) desarrollado por el usuario alpgures y publicado en HuggingFace. Su funcion es anadir a las imagenes generadas el aspecto de una fotografia casual tomada con un telefono movil: iluminacion natural, textura de piel realista, grano leve y encuadre espontaneo. Se trata de un adaptador de bajo rango (rank 16) sobre el UNet de SDXL, no de un modelo completo, por lo que requiere cargarse junto al checkpoint base stabilityai/stable-diffusion-xl-base-1.0.
+Amateur Phone Photo Realism es un LoRA de estilo para Stable Diffusion XL (SDXL 1.0) desarrollado por el usuario alpgures y publicado en Hugging Face. Su funcion es anadir a las imagenes generadas el aspecto de una fotografia casual tomada con un telefono movil: iluminacion natural, textura de piel realista, grano leve y encuadre espontaneo. Se trata de un adaptador de bajo rango (rank 16) sobre el UNet de SDXL, no de un modelo completo, por lo que requiere cargarse junto al checkpoint base stabilityai/stable-diffusion-xl-base-1.0.
 
 El modelo esta entrenado sobre un conjunto curado de imagenes de hombres adultos y, segun su model card, aprende estilo y no identidades. Esta marcado como not-for-all-audiences (NSFW) y restringe explicitamente su uso a personajes adultos ficticios, prohibiendo la representacion de personas reales identificables o de menores. El repositorio no contiene pesos en el momento de la consulta (tamano de 0.0 GB, 0 descargas y 0 likes), por lo que su disponibilidad practica es nula.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alpgures/amateur-phone-photo-realism-sdxl-lora
+- Hugging Face: https://huggingface.co/alpgures/amateur-phone-photo-realism-sdxl-lora
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Licencia openrail++: https://huggingface.co/docs/hub/model-licenses
 - Documentacion de diffusers para LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

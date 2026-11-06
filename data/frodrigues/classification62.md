@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`frodrigues/classification62` es un repositorio de HuggingFace publicado por el usuario frodrigues que contiene una implementación propia en PyTorch de un clasificador etiquetado como «Mocov3» en configuración «large», con atención flash, fusión mediante cross attention, activación swish y normalización batchnorm. El repositorio incluye un script de inferencia (`inference.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de 49.600 parámetros (aproximadamente 198 KB en fp32).
+`frodrigues/classification62` es un repositorio de Hugging Face publicado por el usuario frodrigues que contiene una implementación propia en PyTorch de un clasificador etiquetado como «Mocov3» en configuración «large», con atención flash, fusión mediante cross attention, activación swish y normalización batchnorm. El repositorio incluye un script de inferencia (`inference.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un checkpoint `model.safetensors` de 49.600 parámetros (aproximadamente 198 KB en fp32).
 
 No es un modelo entrenado ni listo para producción: la propia model card indica que el checkpoint es una inicialización válida para «smoke tests», que no se reclama ninguna puntuación de benchmark y que no ha sido auditado en robustez, equidad ni transferencia de dominio. La escala declarada («large») no se corresponde con el número de parámetros publicado, lo que refuerza la interpretación de que la etiqueta describe la configuración del script y no un modelo de gran tamaño real.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| frodrigues/classification62 | 49.600 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de inicializacion, sin entrenar |
+| frodrigues/classification62 | 49.600 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de inicializacion, sin entrenar |
 | Implementacion de referencia de MoCo v3 (metodo original) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Repositorio de investigacion | Modelo preentrenado auto-supervisado |
 | Alternativas de clasificacion de capacidad comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados de alternativas comparables dentro de la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/frodrigues/classification62
+- Repositorio en Hugging Face: https://huggingface.co/frodrigues/classification62
 - Referencia del metodo original MoCo v3 (contexto del nombre, no de esta implementacion): https://arxiv.org/abs/2104.02057
 - Resultados de busqueda web consultados, ninguno relacionado con este modelo:
   - https://arxiv.org/html/2501.09967v1

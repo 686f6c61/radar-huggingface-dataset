@@ -26,7 +26,7 @@ Su relevancia es acotada pero clara: es un ejemplo reproducible de como combinar
 | Entorno | Gymnasium sobre puente pybind11 al motor real de Plants vs. Zombies |
 | Mazo de entrenamiento | Sunflower, Twin Sunflower, Melon-pult, Winter Melon, Gloom-shroom, Snow Pea, Pumpkin, Garlic, Squash, Jalapeno (`[1, 41, 39, 44, 42, 5, 30, 36, 17, 20]`) |
 | Recurrente | Si (bloque SSM) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/awtrisk/pvz-rl-agent
+- Modelo en Hugging Face: https://huggingface.co/awtrisk/pvz-rl-agent
 - Repositorio del entorno: https://github.com/awtrisk/pvz-rl-env
 - Script de grabacion: `scripts/record.py` dentro del repositorio pvz-rl-env
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

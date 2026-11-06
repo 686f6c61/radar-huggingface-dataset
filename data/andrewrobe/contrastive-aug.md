@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewrobe/contrastive-aug` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada de CLIP en PyTorch, orientada a experimentos de tipo contrastivo. No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, smoke tests y experimentos controlados de pequeno tamano. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado.
+`andrewrobe/contrastive-aug` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada de CLIP en PyTorch, orientada a experimentos de tipo contrastivo. No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor lo describe como una configuracion "small" pensada para revision de codigo, smoke tests y experimentos controlados de pequeno tamano. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado.
 
 El dato mas relevante para cualquier evaluacion es su tamano: 24.832 parametros totales (aproximadamente 0,025 M), lo que lo situa entre tres y cuatro ordenes de magnitud por debajo de cualquier modelo CLIP funcional. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 15 de septiembre de 2026, por lo que carece de traccion o validacion por parte de la comunidad.
 
@@ -47,7 +47,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - Pruebas de arnes de evaluacion: permite ensayar scripts de evaluacion (metricas por tarea, repeticion con varias semillas, baseline de capacidad equivalente) con un coste de computo practicamente nulo antes de lanzarlos contra modelos grandes.
 - Experimentos controlados de ablation: su tamano hace viable barrer configuraciones de optimizador, scheduler y funciones de activacion en minutos sobre CPU, aislando efectos de diseno antes de trasladarlos a entrenamientos costosos.
 - Integracion en CI: al ocupar 0,0 GB de repositorio, se puede incluir como fixture en una pipeline de integracion continua que compruebe que el codigo de carga de modelos no se rompe entre versiones de PyTorch.
-- Pruebas de carga de red y almacenamiento: util para verificar rutas, permisos y mecanismos de cache de HuggingFace en entornos nuevos sin descargar gigabytes de pesos.
+- Pruebas de carga de red y almacenamiento: util para verificar rutas, permisos y mecanismos de cache de Hugging Face en entornos nuevos sin descargar gigabytes de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ La comparacion con alternativas reales es estructuralmente desfavorable: cualqui
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andrewrobe/contrastive-aug | 24.832 | no disponible | no | apache-2.0 | HuggingFace, 0 descargas |
+| andrewrobe/contrastive-aug | 24.832 | no disponible | no | apache-2.0 | Hugging Face, 0 descargas |
 | CLIP ViT de OpenAI (familia) | no disponible | no disponible | si | no disponible en esta busqueda | ampliamente disponible |
 | SigLIP (familia) | no disponible | no disponible | si | no disponible en esta busqueda | ampliamente disponible |
 | Implementaciones CLIP educativas (tipo "from scratch") | variable | no disponible | habitualmente no | variable | repositorios de codigo |
@@ -88,6 +88,6 @@ Nota: los datos de las alternativas no se han verificado en esta busqueda, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrewrobe/contrastive-aug
+- Modelo en Hugging Face: https://huggingface.co/andrewrobe/contrastive-aug
 - Ficheros del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados devueltos por la busqueda no guardaban relacion con el modelo.

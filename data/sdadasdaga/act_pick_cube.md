@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sdadasdaga/act_pick_cube | 51,7 M | no aplica | Pick-and-place de cubo verde con SO-101 y 2 camaras | Apache 2.0 | Pesos en safetensors en HuggingFace |
-| sdadasdaga/act-pick-cube-2cam-chunk50 | no disponible | no aplica | Pick-and-place con SO-101 y 2 camaras (nombre sugiere chunk de 50) | no disponible en la informacion recogida | Pesos publicados en HuggingFace por el mismo autor |
+| sdadasdaga/act_pick_cube | 51,7 M | no aplica | Pick-and-place de cubo verde con SO-101 y 2 camaras | Apache 2.0 | Pesos en safetensors en Hugging Face |
+| sdadasdaga/act-pick-cube-2cam-chunk50 | no disponible | no aplica | Pick-and-place con SO-101 y 2 camaras (nombre sugiere chunk de 50) | no disponible en la informacion recogida | Pesos publicados en Hugging Face por el mismo autor |
 | ACT original (Zhao et al., arXiv:2304.13705) | no disponible en la informacion recogida | no aplica | Manipulacion bimanual de precision con hardware de bajo coste | no disponible en la informacion recogida | Implementacion de referencia vinculada al paper; no se recogen cifras comparables en esta busqueda |
 
 No se dispone de datos publicados de rendimiento para ninguno de los tres, por lo que la comparativa se limita a identificacion, licencia y disponibilidad.
@@ -92,7 +92,7 @@ No se dispone de datos publicados de rendimiento para ninguno de los tres, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdadasdaga/act_pick_cube
+- Modelo en Hugging Face: https://huggingface.co/sdadasdaga/act_pick_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/sdadasdaga/so101_green_cube_50ep
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sdadasdaga/so101_green_cube_50ep
 - Paper de ACT: https://huggingface.co/papers/2304.13705

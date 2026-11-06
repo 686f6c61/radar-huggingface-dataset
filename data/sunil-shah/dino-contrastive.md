@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Contrastive es un repositorio de HuggingFace publicado por el usuario sunil-shah que contiene una implementación funcional del marco DINO (self-distillation with no labels) aplicada a aprendizaje contrastivo, en una configuración de escala "tiny". No se trata de un modelo entrenado listo para producción: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y que ningún resultado de benchmark se reclama en el repositorio.
+Dino for Contrastive es un repositorio de Hugging Face publicado por el usuario sunil-shah que contiene una implementación funcional del marco DINO (self-distillation with no labels) aplicada a aprendizaje contrastivo, en una configuración de escala "tiny". No se trata de un modelo entrenado listo para producción: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo y que ningún resultado de benchmark se reclama en el repositorio.
 
 El artefacto principal es el código (`model.py`), acompañado de `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto. El recuento de parámetros del checkpoint es de aproximadamente 33 mil parámetros, un orden de magnitud propio de una prueba de integración más que de un modelo con capacidad representacional útil.
 
@@ -75,7 +75,7 @@ No existe un modelo comparable publicado a la escala de 33 mil parámetros en la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dino for Contrastive (sunil-shah) | 33.088 (aprox. 33 mil) | no disponible | no evaluado; sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| Dino for Contrastive (sunil-shah) | 33.088 (aprox. 33 mil) | no disponible | no evaluado; sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | DINO / DINOv2 (Meta) | aprox. 21 M (ViT-S) hasta aprox. 1.100 M (ViT-g) | no disponible | benchmarks públicos de representación visual en sus respectivas publicaciones | licencia propia de Meta, con condiciones de uso comercial | pesos publicados y ampliamente utilizados |
 | SimCLR | aprox. 24 M para ResNet-50 | no disponible | benchmarks públicos de clasificación lineal y fine-tuning | investigación, según publicación original | disponible vía repositorios de investigación |
 | MoCo / MoCo v3 | aprox. 24 M para ResNet-50 | no disponible | benchmarks públicos de clasificación lineal y detección | investigación, según publicación original | disponible vía repositorios de investigación |
@@ -94,5 +94,5 @@ No existe un modelo comparable publicado a la escala de 33 mil parámetros en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunil-shah/dino-contrastive
+- Modelo en Hugging Face: https://huggingface.co/sunil-shah/dino-contrastive
 - La búsqueda web realizada no devolvió resultados relevantes: los enlaces recuperados corresponden a Instagram y no guardan relación con el modelo, por lo que no se incluyen. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

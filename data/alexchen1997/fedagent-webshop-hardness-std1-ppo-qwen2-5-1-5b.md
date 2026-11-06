@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FedAgent es un modelo de lenguaje especializado en tareas de compra web simulada (WebShop), desarrollado por el equipo de investigación de UC Berkeley (sunblaze-ucb) y publicado en HuggingFace por AlexChen1997. Se trata de un fine-tune del modelo base `Qwen/Qwen2.5-1.5B-Instruct` mediante aprendizaje por refuerzo federado (federated RL) con el algoritmo PPO, agregado con FedAvg. El objetivo del experimento es estudiar la robustez del RL descentralizado para agentes LLM ante heterogeneidad en la distribución de tareas entre clientes.
+FedAgent es un modelo de lenguaje especializado en tareas de compra web simulada (WebShop), desarrollado por el equipo de investigación de UC Berkeley (sunblaze-ucb) y publicado en Hugging Face por AlexChen1997. Se trata de un fine-tune del modelo base `Qwen/Qwen2.5-1.5B-Instruct` mediante aprendizaje por refuerzo federado (federated RL) con el algoritmo PPO, agregado con FedAvg. El objetivo del experimento es estudiar la robustez del RL descentralizado para agentes LLM ante heterogeneidad en la distribución de tareas entre clientes.
 
 El modelo se entrena sobre el benchmark WebShop, un entorno simulado de compras online donde el agente debe navegar, buscar productos y completar pedidos. La configuración utiliza 100 clientes, 2 clientes por ronda, 70 rondas y una partición de dificultad extrema (success_std=1) para maximizar la heterogeneidad. El repositorio incluye checkpoints de cada 10 rondas, así como artefactos completos del entrenamiento (configuración, métricas, logs). El modelo es relevante para la investigación en aprendizaje federado, robustez de agentes y evaluación de algoritmos de RL distribuido.
 
@@ -63,15 +63,15 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - Inferencia: al ser un modelo de 1.5B de parametros, es ligero. Con cuantizacion de 4 bits cabria en aproximadamente 2-3 GB de VRAM, aunque no se proporcionan datos concretos de cuantizacion en la informacion disponible.
 - GPUs recomendadas para inferencia: cualquier GPU consumer con al menos 4 GB de VRAM (p.ej., RTX 3060, RTX 4060) seria suficiente para ejecutar el modelo en precision FP16.
 - Entrenamiento: el run original uso 4x H100-80GB con FSDP y vLLM; replicar el entrenamiento completo requiere hardware similar o acceso a cloud con GPUs de alta memoria.
-- Opciones de despliegue: al ser un modelo de HuggingFace en formato safetensors, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No se proporcionan configuraciones especificas de despliegue.
+- Opciones de despliegue: al ser un modelo de Hugging Face en formato safetensors, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No se proporcionan configuraciones especificas de despliegue.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FedAgent (este modelo) | 1.5B | no disponible | PPO federado sobre WebShop | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K (segun documentacion oficial) | Instruct fine-tune | Apache-2.0 | HuggingFace |
+| FedAgent (este modelo) | 1.5B | no disponible | PPO federado sobre WebShop | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K (segun documentacion oficial) | Instruct fine-tune | Apache-2.0 | Hugging Face |
 | Otros agentes de WebShop | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con otros modelos de agente de WebShop no esta disponible en la informacion proporcionada. La principal diferencia con el modelo base es la especializacion en tareas de compra simulada y el metodo de entrenamiento (RL federado en lugar de SFT).
@@ -88,7 +88,7 @@ La comparativa directa con otros modelos de agente de WebShop no esta disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexChen1997/fedagent-webshop-hardness-std1-ppo-qwen2.5-1.5b
+- Hugging Face: https://huggingface.co/AlexChen1997/fedagent-webshop-hardness-std1-ppo-qwen2.5-1.5b
 - Repositorio de codigo FedAgent: https://github.com/sunblaze-ucb/FedAgent
 - Paper (citado en la model card): "Is Decentralized LLM Agent RL Robust to Heterogeneity? An Asymmetric Tale" (arXiv preprint, 2026, autores: Canyu Chen, Kangyu Zhu, Zhaorun Chen, Zhanhui Zhou, Shizhe Diao, Yiping Lu, Tian Li, Manling Li, Dawn Song)
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

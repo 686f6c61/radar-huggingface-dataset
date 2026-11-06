@@ -91,7 +91,7 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo ba
 
 - Los benchmarks publicados se han medido sobre una porción reducida de cada dataset (entre 7 y 14 preguntas por suite), por lo que los porcentajes tienen un margen de error alto y no son directamente comparables con resultados de evaluaciones completas.
 - El resultado de 0 % en MBPP (9 preguntas) sugiere una posible debilidad en generación de código Python a partir de descripciones, aunque el tamaño de la muestra es demasiado pequeño para extraer conclusiones sólidas.
-- La licencia se indica como "other" en los metadatos de HuggingFace. Aunque la model card muestra un badge de Apache-2.0, la licencia real del modelo base de Google (Gemma) tiene términos específicos que deben revisarse antes de un uso comercial.
+- La licencia se indica como "other" en los metadatos de Hugging Face. Aunque la model card muestra un badge de Apache-2.0, la licencia real del modelo base de Google (Gemma) tiene términos específicos que deben revisarse antes de un uso comercial.
 - El modelo solo declara soporte para inglés e italiano. El rendimiento en otros idiomas no está verificado y puede ser significativamente inferior.
 - Al ser una cuantización GGUF, no se incluyen las capacidades multimodales del modelo base (audio, imagen, vídeo). Solo es válido para tareas de texto.
 - La ventana de contexto de 262 144 tokens es teórica; en la práctica, el rendimiento puede degradarse con contextos muy largos y el consumo de memoria aumenta proporcionalmente.
@@ -99,7 +99,7 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Guía para desarrolladores de Gemma 4 12B: https://developers.googleblog.com/gemma-4-12b-the-developer-guide/

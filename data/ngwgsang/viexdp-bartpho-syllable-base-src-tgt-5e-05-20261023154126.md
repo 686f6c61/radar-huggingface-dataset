@@ -6,7 +6,7 @@
 
 El problema que aborda es el de la generación condicionada de texto en vietnamita: el sufijo `src-tgt` del identificador sugiere una tarea de transformación entre una secuencia origen y una secuencia destino (por ejemplo, traducción o normalización), aunque la model card no confirma explícitamente la tarea. La relevancia práctica es limitada de momento: el repositorio no incluye descripción, datos de entrenamiento ni evaluación funcional, y solo declara una pérdida de validación de 2,1326.
 
-La ficha se basa exclusivamente en los metadatos de HuggingFace, la model card autogenerada por `Trainer` y la documentación pública del modelo base BARTpho. Cualquier dato no presente en esas fuentes se marca como "no disponible".
+La ficha se basa exclusivamente en los metadatos de Hugging Face, la model card autogenerada por `Trainer` y la documentación pública del modelo base BARTpho. Cualquier dato no presente en esas fuentes se marca como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -78,11 +78,11 @@ Los tamaños de los modelos alternativos son datos de referencia de la literatur
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`viexdp-bartpho-syllable-base-src-tgt`) | 131,6 M | no disponible | seq2seq sobre vietnamita (tarea no confirmada) | MIT | HuggingFace, 0 descargas |
-| `vinai/bartpho-syllable-base` | ~131 M (arquitectura base) | no disponible | seq2seq generativo en vietnamita | MIT (según modelo base) | HuggingFace, modelo de referencia |
-| `vinai/bartpho-word-base` | ~131 M | no disponible | seq2seq con tokenización a nivel de palabra | MIT | HuggingFace |
-| `VietAI/vit5-base` | ~220 M | no disponible | seq2seq (T5) para vietnamita | MIT | HuggingFace |
-| `facebook/mbart-large-50` | ~610 M | 1024 tokens | traducción multilingüe (50 idiomas) | MIT | HuggingFace |
+| Este checkpoint (`viexdp-bartpho-syllable-base-src-tgt`) | 131,6 M | no disponible | seq2seq sobre vietnamita (tarea no confirmada) | MIT | Hugging Face, 0 descargas |
+| `vinai/bartpho-syllable-base` | ~131 M (arquitectura base) | no disponible | seq2seq generativo en vietnamita | MIT (según modelo base) | Hugging Face, modelo de referencia |
+| `vinai/bartpho-word-base` | ~131 M | no disponible | seq2seq con tokenización a nivel de palabra | MIT | Hugging Face |
+| `VietAI/vit5-base` | ~220 M | no disponible | seq2seq (T5) para vietnamita | MIT | Hugging Face |
+| `facebook/mbart-large-50` | ~610 M | 1024 tokens | traducción multilingüe (50 idiomas) | MIT | Hugging Face |
 
 Frente a `vit5-base`, este modelo ofrece menor número de parámetros y tokenización silábica específica, a cambio de una documentación prácticamente inexistente y ninguna evaluación publicada. Frente a `mbart-large-50`, es cinco veces más pequeño y monolingüe, lo que reduce coste de inferencia pero elimina la cobertura multilingüe.
 
@@ -100,7 +100,7 @@ Frente a `vit5-base`, este modelo ofrece menor número de parámetros y tokeniza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngwgsang/viexdp-bartpho-syllable-base-src-tgt-5e-05-20261023154126
+- Modelo en Hugging Face: https://huggingface.co/ngwgsang/viexdp-bartpho-syllable-base-src-tgt-5e-05-20261023154126
 - Modelo base: https://huggingface.co/vinai/bartpho-syllable-base
 - Repositorio oficial de BARTpho: https://github.com/VinAIResearch/BARTpho
 - Ficha de BARTpho-syllable en AIBase: https://model.aibase.com/models/details/1924737421531156480

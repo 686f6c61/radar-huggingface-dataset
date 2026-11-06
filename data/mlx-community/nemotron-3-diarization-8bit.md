@@ -26,7 +26,7 @@ Se trata de un modelo puramente acústico: no genera texto ni mantiene conversac
 | Librería | mlx-audio |
 | Tamaño del repositorio | 0,1 GB |
 | Modelo base | nvidia/Nemotron-3-Diarization |
-| Pipeline (HuggingFace) | voice-activity-detection |
+| Pipeline (Hugging Face) | voice-activity-detection |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ Los datos de los dos últimos modelos no forman parte de la información proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Nemotron-3-Diarization-8bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Nemotron-3-Diarization-8bit
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Biblioteca mlx-audio: https://github.com/Blaizzy/mlx-audio
 

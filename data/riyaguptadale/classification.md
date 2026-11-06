@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`riyaguptadale/classification` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura **Albef** (Align before Fuse) aplicada a una tarea de clasificacion. Lo publica el usuario `riyaguptadale` bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de talla reducida.
+`riyaguptadale/classification` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura **Albef** (Align before Fuse) aplicada a una tarea de clasificacion. Lo publica el usuario `riyaguptadale` bajo licencia Apache 2.0. No se trata de un modelo preentrenado ni ajustado: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de talla reducida.
 
 El dato mas llamativo es su tamano: 24.832 parametros totales segun el fichero `model.safetensors`. Se trata, por tanto, de un artefacto de escala minuscula, muy lejos de cualquier modelo desplegable en produccion. El repositorio incluye `main.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como *checkpoint* de inicializacion valido para pruebas.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| riyaguptadale/classification | 24.832 | no disponible | no disponible (sin benchmark declarado) | Apache 2.0 | HuggingFace |
+| riyaguptadale/classification | 24.832 | no disponible | no disponible (sin benchmark declarado) | Apache 2.0 | Hugging Face |
 | Albef original (referencia conceptual) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/riyaguptadale/classification
+- Modelo en Hugging Face: https://huggingface.co/riyaguptadale/classification
 - Perfil del autor: https://huggingface.co/riyaguptadale
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

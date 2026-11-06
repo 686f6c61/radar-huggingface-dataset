@@ -71,7 +71,7 @@ Los valores de Gemma-4 y GPT-4o corresponden al rango agregado que reporta el au
 
 | Tokenizador | Tipo | Vocabulario | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Merzal Tamil Tokenizer 64K | Unigram con mapeo PUA de aksharas y byte fallback | 63.995 | ta, tanglish, en | Apache-2.0 | HuggingFace (`Vel04/merzal-tamil-tokenizer`) |
+| Merzal Tamil Tokenizer 64K | Unigram con mapeo PUA de aksharas y byte fallback | 63.995 | ta, tanglish, en | Apache-2.0 | Hugging Face (`Vel04/merzal-tamil-tokenizer`) |
 | Merzal Tamil Tokenizer 32K | Unigram, version previa con `prepend_scheme="always"` | no disponible | ta, tanglish, en | Apache-2.0 | Referenciado por el autor; no se detalla su repositorio |
 | Tokenizador de Gemma-4 | Byte-level BPE | no disponible | multilingue | licencia de Gemma (no disponible en detalle) | Pesos de Google |
 | Tokenizador de GPT-4o | BPE propietario | no disponible | multilingue | propietaria | Solo API |
@@ -91,7 +91,7 @@ La comparacion se limita a la metrica de fertilidad y a la tasa de letras cortad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vel04/merzal-tamil-tokenizer
+- Hugging Face: https://huggingface.co/Vel04/merzal-tamil-tokenizer
 - Protocolo y metricas (METHODS.md): https://github.com/mvel95942-source/merzal-tamil-tokenizer/blob/main/METHODS.md
 - Repositorio GitHub: https://github.com/mvel95942-source/merzal-tamil-tokenizer
 - Dataset ai4bharat/sangraha: https://huggingface.co/datasets/ai4bharat/sangraha

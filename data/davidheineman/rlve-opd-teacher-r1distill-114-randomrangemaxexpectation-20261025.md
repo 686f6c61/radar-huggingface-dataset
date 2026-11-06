@@ -90,7 +90,7 @@ La diferencia funcional frente al modelo base no es de capacidades generales, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-114-RandomRangeMaxExpectation-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-114-RandomRangeMaxExpectation-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/7d4d5bb6 (grupo `data-scaling-v1-n128-20261022-225839`)
 - Ficheros de configuracion en el repositorio: `training_run.json` y `training_config.yaml`

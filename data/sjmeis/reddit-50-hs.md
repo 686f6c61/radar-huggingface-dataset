@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables específicos. Se podría
 
 ## Enlaces
 
-- [HuggingFace - sjmeis/reddit-50-hs](https://huggingface.co/sjmeis/reddit-50-hs)
+- [Hugging Face - sjmeis/reddit-50-hs](https://huggingface.co/sjmeis/reddit-50-hs)
 - Paper asociado: *Introducing the Privacy-HSD Trade-off: Hate Speech Detection, but not at the Cost of Privacy* (WOAH 2026) - no se dispone de enlace directo.

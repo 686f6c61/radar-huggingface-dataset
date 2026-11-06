@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | ViDoRE nDCG@5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DSE-QWen2-2b-MRL-V1 | 2B | no disponible | 85,8 | Apache 2.0 | HuggingFace |
-| ColPali (basado en PaliGemma-3B) | 3B | no disponible | no disponible en la información | no disponible | HuggingFace |
-| ColQwen2 (basado en Qwen2-VL-2B) | 2B | no disponible | no disponible en la información | no disponible | HuggingFace |
+| DSE-QWen2-2b-MRL-V1 | 2B | no disponible | 85,8 | Apache 2.0 | Hugging Face |
+| ColPali (basado en PaliGemma-3B) | 3B | no disponible | no disponible en la información | no disponible | Hugging Face |
+| ColQwen2 (basado en Qwen2-VL-2B) | 2B | no disponible | no disponible en la información | no disponible | Hugging Face |
 
 No se dispone de datos comparativos adicionales en la información proporcionada. La comparativa con ColPali y ColQwen2 se ofrece como referencia de categoría, pero sus métricas no están verificadas en esta ficha.
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos adicionales en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/dse-qwen2-2b-mrl-v1
+- Hugging Face: https://huggingface.co/vllm-project/dse-qwen2-2b-mrl-v1
 - Modelo original: https://huggingface.co/MrLight/dse-qwen2-2b-mrl-v1
 - Paper DSE: https://arxiv.org/abs/2406.11251
 - Leaderboard ViDoRE: https://huggingface.co/spaces/vidore/vidore-leaderboard

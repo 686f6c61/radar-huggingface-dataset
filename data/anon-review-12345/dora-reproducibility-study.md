@@ -52,5 +52,5 @@ No disponible. No se puede comparar con otros modelos porque no se conocen sus e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anon-review-12345/dora-reproducibility-study
+- Repositorio en Hugging Face: https://huggingface.co/anon-review-12345/dora-reproducibility-study
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) asociados a este modelo específico.

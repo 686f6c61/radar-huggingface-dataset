@@ -59,7 +59,7 @@ No se han publicado resultados desglosados por benchmark en la información disp
 
 - Inferencia en FP16: ~300 MB de VRAM (149,6 M parámetros × 2 bytes), por lo que cabe en cualquier GPU con al menos 2 GB, incluyendo tarjetas consumer como GTX 1650 o superiores.
 - Fine-tuning: requiere VRAM adicional para gradientes y optimizador; una RTX 3090 o 4090 (24 GB) es suficiente para tareas de clasificación con batch razonable.
-- Despliegue: compatible con la librería `transformers` de HuggingFace; también puede exportarse a ONNX para inferencia en CPU o GPU.
+- Despliegue: compatible con la librería `transformers` de Hugging Face; también puede exportarse a ONNX para inferencia en CPU o GPU.
 - No se dispone de datos de latencia o throughput oficiales; al ser un encoder de 150 M, la inferencia es rápida incluso en CPU, con tiempos del orden de milisegundos por secuencia corta.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ ClimateBERT es un modelo BERT-base adaptado a dominio climático, pero con conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_TIES_D07_LRD
+- Modelo en Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_TIES_D07_LRD
 - Repositorio original de los pesos: https://huggingface.co/sraj/TIES_D07_CMB_MARK_CX_LRD_CMB_FWEdu_V2_CX_LRD_CMB_WX_SYN_CX_LRD
-- Colección ClimateModernBERT en HuggingFace: https://huggingface.co/collections/sraj/climatemodernbert
+- Colección ClimateModernBERT en Hugging Face: https://huggingface.co/collections/sraj/climatemodernbert
 - Repositorio GitHub del proyecto (nomenclatura y documentación): https://github.com/Michaelyya/ClimateModernBERT
 - Paper de TIES-Merging: https://arxiv.org/abs/2306.01708
 - Repositorio mergekit (herramienta de fusión): https://github.com/arcee-ai/mergekit

@@ -20,7 +20,7 @@ Su relevancia actual es de nicho: sirve para estudiar el comportamiento de recha
 | Licencia | MIT |
 | Formato de pesos | GGUF y safetensors referenciados en etiquetas y metadatos; repositorio de 0,0 GB |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash (deepseek_v41) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 96 descargas / 11 likes |
 | Fecha de creacion | 2026-09-10 |
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5 | 199.680 (reportado) | no disponible | no disponible | MIT | Gated en HuggingFace |
+| msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5 | 199.680 (reportado) | no disponible | no disponible | MIT | Gated en Hugging Face |
 | deepseek-ai/DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | no disponible | Modelo base de referencia |
 | Otros artefactos abliterated/control-vector | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria. La unica comparacion posible es con el propio modelo base, del cual solo consta su identificador.
 
 ## Limitaciones y advertencias
-- El repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de acceder a los ficheros.
+- El repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de acceder a los ficheros.
 - Se desconoce la arquitectura, el contexto maximo, el numero real de parametros y el metodo exacto de construccion del artefacto.
 - No hay evidencia publicada de evaluaciones de sesgo, alucinacion o seguridad para este artefacto.
 - La ablacion de rechazo puede aumentar la probabilidad de generar contenido danino, inexacto o no conforme a politicas de uso; debe tratarse como material de investigacion en entornos controlados.
@@ -78,6 +78,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - El valor de parametros reportado (199.680) es anomalo para un modelo DeepSeek convencional y carece de unidad explicita, por lo que debe interpretarse con cautela.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5
+- Repositorio en Hugging Face: https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web proporcionada.

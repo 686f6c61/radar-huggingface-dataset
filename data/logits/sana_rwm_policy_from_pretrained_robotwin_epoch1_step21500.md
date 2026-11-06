@@ -92,7 +92,7 @@ La comparativa con `pi05_robotwin` es la más relevante: es un modelo VLA (Visio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robotwin_epoch1_step21500
+- Modelo en Hugging Face: https://huggingface.co/logits/sana_rwm_policy_from_pretrained_robotwin_epoch1_step21500
 - Donante preentrenado (world model): https://huggingface.co/logits/sana_rwm_pretrained_epoch3_step57032
 - Política desde vídeo (línea distinta): https://huggingface.co/logits/sana_rwm_policy_from_video_robotwin
 - Repositorio SANA (NVlabs): https://github.com/NVlabs/Sana

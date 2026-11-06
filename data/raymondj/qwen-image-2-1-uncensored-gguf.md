@@ -132,7 +132,7 @@ Frente a alternativas de la misma categoria (modelos de difusion texto-a-imagen 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RaymondJ/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/RaymondJ/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - Plugin ComfyUI-GGUF (fork mantenido con soporte de Qwen-Image 2.1): https://github.com/leejet/ComfyUI-GGUF

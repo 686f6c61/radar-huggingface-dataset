@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MichaelZimm/ocr-freeform-2024` no es un modelo entrenado, sino una nota de investigación exploratoria publicada en HuggingFace bajo la etiqueta `research-notes`. Su contenido principal es un fichero `review.md` que describe el planteamiento de un futuro estudio comparativo sobre OCR de formato libre (freeform), incluyendo posibles factores de confusión, requisitos de reproducibilidad y datasets candidatos como FUNSD, SROIE y CORD.
+El repositorio `MichaelZimm/ocr-freeform-2024` no es un modelo entrenado, sino una nota de investigación exploratoria publicada en Hugging Face bajo la etiqueta `research-notes`. Su contenido principal es un fichero `review.md` que describe el planteamiento de un futuro estudio comparativo sobre OCR de formato libre (freeform), incluyendo posibles factores de confusión, requisitos de reproducibilidad y datasets candidatos como FUNSD, SROIE y CORD.
 
 La model card es explícita al respecto: no se reclama ninguna mejora en benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de los datasets, comandos, semillas, hardware y logs en bruto.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como la descripción de un artefacto documenta
 
 ## Arquitectura y entrenamiento
 
-No se declara ninguna arquitectura de red neuronal. El campo `transformer` de las etiquetas de HuggingFace es genérico y no va acompañado de documentación técnica que describa capas, mecanismos de atención, tokenizador o configuración de entrenamiento. No hay información sobre número de tokens, composición del dataset, ni sobre procesos de alineación como RLHF, DPO o SFT.
+No se declara ninguna arquitectura de red neuronal. El campo `transformer` de las etiquetas de Hugging Face es genérico y no va acompañado de documentación técnica que describa capas, mecanismos de atención, tokenizador o configuración de entrenamiento. No hay información sobre número de tokens, composición del dataset, ni sobre procesos de alineación como RLHF, DPO o SFT.
 
 Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, arquitecturas híbridas SSM, etc.). El repositorio consiste, según su propia model card, en un fichero `review.md` que enumera el alcance de una pregunta de investigación, los factores de confusión previstos, una comparación propuesta con baselines emparejados y comprobaciones de reproducibilidad. Los datasets mencionados (FUNSD, SROIE, CORD) se citan como contexto de evaluación previsto, no como material efectivamente utilizado.
 
@@ -76,7 +76,7 @@ No disponible. La comparativa propuesta en la propia nota de investigación no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichaelZimm/ocr-freeform-2024
+- Repositorio en Hugging Face: https://huggingface.co/MichaelZimm/ocr-freeform-2024
 - Fichero principal del repositorio: `review.md` (no accesible directamente en la información proporcionada)
 - Documentación del repositorio: `README.md`
 - Datasets citados como contexto de evaluación: FUNSD, SROIE, CORD (referencias mencionadas en la model card; no se proporcionan enlaces directos)

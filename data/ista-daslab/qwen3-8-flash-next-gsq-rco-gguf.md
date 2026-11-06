@@ -101,7 +101,7 @@ No se dispone de datos sobre otras cuantizaciones del mismo modelo base (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Paper de GSQ: https://arxiv.org/abs/2604.18556
 - Paper de RCO: https://arxiv.org/abs/2605.00649

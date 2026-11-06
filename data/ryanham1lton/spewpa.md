@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spewpa es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado el 5 de noviembre de 2026, tiene un tamano aproximado de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card asociada es practicamente vacia: unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
+Spewpa es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio, creado el 5 de noviembre de 2026, tiene un tamano aproximado de 0,1 GB y no cuenta con descargas ni likes en el momento de la consulta. La model card asociada es practicamente vacia: unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
 
 No se dispone de datos sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El nombre "Spewpa" coincide con el de una criatura de la franquicia Pokemon, lo que sugiere que podria tratarse de un experimento personal, un modelo de prueba o un artefacto con proposito no documentado. La ausencia de pipeline declarado y de metadatos tecnicos impide clasificarlo en una categoria funcional concreta (texto, vision, audio, etc.).
 
@@ -39,7 +39,7 @@ El tamano del repositorio (aproximadamente 0,1 GB) es compatible con pesos de un
 
 - Evaluacion exploratoria: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente su comportamiento, dado que no hay documentacion funcional.
 - Prototipado interno: si el artefacto resulta ser un modelo pequeno de texto, podria servir como banco de pruebas para pipelines de inferencia locales antes de migrar a modelos documentados.
-- Estudio de artefactos de HuggingFace: util como caso de analisis sobre repositorios con metadatos incompletos y practicas de publicacion en el Hub.
+- Estudio de artefactos de Hugging Face: util como caso de analisis sobre repositorios con metadatos incompletos y practicas de publicacion en el Hub.
 - Pruebas de integracion de licencias: al estar bajo CC-BY-4.0, permite validar flujos de cumplimiento de atribucion en herramientas de gestion de dependencias de modelos.
 - Docencia sobre evaluacion de modelos: sirve como ejemplo practico de por que la model card y los benchmarks son imprescindibles antes de adoptar un modelo.
 - No se recomienda ningun caso de uso en produccion (atencion al cliente, generacion de codigo, RAG, agentes) sin una evaluacion tecnica previa, debido a la falta total de especificaciones.
@@ -72,4 +72,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Spewpa
+- Hugging Face: https://huggingface.co/Ryanham1lton/Spewpa

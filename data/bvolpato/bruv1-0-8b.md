@@ -77,8 +77,8 @@ Según el autor, estos conjuntos comparten familias de tareas con la mezcla de e
 
 | Modelo | Parámetros | Contexto | Precisión (desarrollo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bruv1-0.8B | 752.393.024 | no disponible | 84,9 % | Apache 2.0 (pesos) / MIT (código) | HuggingFace y Kevala |
-| Qwen3.5-0.8B (base congelado) | no disponible | no disponible | 43,4 % | Apache 2.0 | HuggingFace |
+| Bruv1-0.8B | 752.393.024 | no disponible | 84,9 % | Apache 2.0 (pesos) / MIT (código) | Hugging Face y Kevala |
+| Qwen3.5-0.8B (base congelado) | no disponible | no disponible | 43,4 % | Apache 2.0 | Hugging Face |
 | Tev1 (recetario de Together) | no disponible | no disponible | no disponible | no disponible | GitHub (recetario, no pesos) |
 
 No se dispone de datos de otros modelos de decisión comparables en la información proporcionada.
@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos de decisión comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bvolpato/bruv1-0.8b
+- Modelo en Hugging Face: https://huggingface.co/bvolpato/bruv1-0.8b
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Kevala: https://github.com/bvolpato/kevala
 - Repositorio de Bruv (código de entrenamiento y recetas): https://github.com/bvolpato/bruv

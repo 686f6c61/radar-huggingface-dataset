@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Diablo999/Lava` es un repositorio publicado en HuggingFace por el usuario Diablo999. A fecha de la información disponible, el modelo se encuentra en un estado inicial: no tiene descargas, no tiene "likes" y la model card no incluye ninguna descripción técnica más allá de la licencia Apache 2.0. No se ha publicado información sobre arquitectura, tamaño, contexto, idiomas ni capacidades. Dado que la fecha de creación es posterior a la actual y no hay documentación asociada, se trata de un modelo sin especificar, probablemente en fase de subida o con documentación pendiente. La única certeza es su licencia, que permite uso comercial y modificación, pero sin ninguna garantía de rendimiento.
+El modelo `Diablo999/Lava` es un repositorio publicado en Hugging Face por el usuario Diablo999. A fecha de la información disponible, el modelo se encuentra en un estado inicial: no tiene descargas, no tiene "likes" y la model card no incluye ninguna descripción técnica más allá de la licencia Apache 2.0. No se ha publicado información sobre arquitectura, tamaño, contexto, idiomas ni capacidades. Dado que la fecha de creación es posterior a la actual y no hay documentación asociada, se trata de un modelo sin especificar, probablemente en fase de subida o con documentación pendiente. La única certeza es su licencia, que permite uso comercial y modificación, pero sin ninguna garantía de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. A
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diablo999/Lava
+- Repositorio en Hugging Face: https://huggingface.co/Diablo999/Lava

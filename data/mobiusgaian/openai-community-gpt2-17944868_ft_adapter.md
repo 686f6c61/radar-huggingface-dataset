@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador de ajuste fino (fine-tuning) publicado por el usuario MobiusGaian bajo el identificador `openai-community-gpt2-17944868_FT_adapter`. Se trata de un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `openai-community/gpt2`, la implementación de GPT-2 de 124 millones de parámetros mantenida por la organización OpenAI en HuggingFace. El adaptador se distribuye en formato PEFT y está etiquetado para la tarea de generación de texto.
+Este repositorio contiene un adaptador de ajuste fino (fine-tuning) publicado por el usuario MobiusGaian bajo el identificador `openai-community-gpt2-17944868_FT_adapter`. Se trata de un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `openai-community/gpt2`, la implementación de GPT-2 de 124 millones de parámetros mantenida por la organización OpenAI en Hugging Face. El adaptador se distribuye en formato PEFT y está etiquetado para la tarea de generación de texto.
 
-El interés de este artefacto es limitado pero ilustrativo: no aporta una arquitectura nueva ni un preentrenamiento propio, sino un conjunto de pesos de baja dimensión que modifican el comportamiento del GPT-2 original. La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar, por lo que no hay información sobre el dataset de ajuste, el procedimiento de entrenamiento, los hiperparámetros ni la evaluación. El repositorio registra cero descargas y cero valoraciones en el momento de la consulta.
+El interés de este artefacto es limitado pero ilustrativo: no aporta una arquitectura nueva ni un preentrenamiento propio, sino un conjunto de pesos de baja dimensión que modifican el comportamiento del GPT-2 original. La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar, por lo que no hay información sobre el dataset de ajuste, el procedimiento de entrenamiento, los hiperparámetros ni la evaluación. El repositorio registra cero descargas y cero valoraciones en el momento de la consulta.
 
 Desde el punto de vista práctico, cualquier evaluación del adaptador exige descargar por separado el modelo base `openai-community/gpt2` y cargar encima los pesos LoRA. La ausencia de licencia declarada, de idiomas soportados y de documentación de uso convierte este repositorio en un artefacto de investigación personal más que en un componente listo para producción.
 
@@ -74,10 +74,10 @@ La comparación solo puede establecerse frente a alternativas de la misma famili
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptador analizado (sobre GPT-2) | No disponible (base: ~124 M) | No disponible (base: 1024) | No disponible | HuggingFace, 0 descargas |
-| openai-community/gpt2 | ~124 M | 1024 | MIT segun la ficha publica del modelo base | Ampliamente disponible en HuggingFace |
-| distilgpt2 | ~82 M | 1024 | Apache-2.0 segun su ficha publica | Ampliamente disponible en HuggingFace |
-| gpt2-medium | ~355 M | 1024 | MIT segun la ficha publica del modelo base | Ampliamente disponible en HuggingFace |
+| Adaptador analizado (sobre GPT-2) | No disponible (base: ~124 M) | No disponible (base: 1024) | No disponible | Hugging Face, 0 descargas |
+| openai-community/gpt2 | ~124 M | 1024 | MIT segun la ficha publica del modelo base | Ampliamente disponible en Hugging Face |
+| distilgpt2 | ~82 M | 1024 | Apache-2.0 segun su ficha publica | Ampliamente disponible en Hugging Face |
+| gpt2-medium | ~355 M | 1024 | MIT segun la ficha publica del modelo base | Ampliamente disponible en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el adaptador, por lo que no es posible establecer qué gana o pierde respecto a estas alternativas.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MobiusGaian/openai-community-gpt2-17944868_FT_adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MobiusGaian/openai-community-gpt2-17944868_FT_adapter
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático citada en la plantilla del autor: https://mlco2.github.io/impact

@@ -89,7 +89,7 @@ No se dispone de comparativas de rendimiento directas con estos modelos en tarea
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF)
 - [Modelo safetensors original](https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B)
-- [Perfil del autor en HuggingFace](https://huggingface.co/mzoelfakar)
+- [Perfil del autor en Hugging Face](https://huggingface.co/mzoelfakar)
 - [Demo en Colab](https://colab.research.google.com/github/mzoelfakar/Al-Khwarizmi-3B/blob/main/Al-Khwarizmi-3B.ipynb)

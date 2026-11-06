@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-QAD es una versión cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario weili-0234 en HuggingFace. Se trata de un checkpoint de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) convertido al formato NVFP4 mediante técnicas de quantización con entrenamiento consciente (quantization-aware training, QAT), según indican las etiquetas del repositorio. El resultado se distribuye en formato compressed-tensors empaquetado en safetensors y está pensado para su despliegue con vLLM.
+Qwen3.5-9B-NVFP4-QAD es una versión cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario weili-0234 en Hugging Face. Se trata de un checkpoint de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) convertido al formato NVFP4 mediante técnicas de quantización con entrenamiento consciente (quantization-aware training, QAT), según indican las etiquetas del repositorio. El resultado se distribuye en formato compressed-tensors empaquetado en safetensors y está pensado para su despliegue con vLLM.
 
 La relevancia de esta ficha radica en que ejemplifica el ecosistema de variantes cuantizadas de modelos Qwen de tercera generación (familia Qwen3.5), orientadas a reducir el coste de memoria y aumentar el throughput en inferencia sin renunciar a la precisión del modelo original. El uso de NVFP4 (formato de coma flotante de 4 bits de NVIDIA) junto con QAT apunta a despliegues en GPUs Blackwell, donde este formato tiene soporte nativo.
 
-No obstante, la información pública disponible es muy limitada: el repositorio no incluye pipeline declarado, idiomas soportados, resultados de benchmarks ni documentación técnica detallada más allá de las etiquetas y los metadatos del modelo base. Además, el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, y el modelo registra cero descargas y cero likes en el momento de la consulta.
+No obstante, la información pública disponible es muy limitada: el repositorio no incluye pipeline declarado, idiomas soportados, resultados de benchmarks ni documentación técnica detallada más allá de las etiquetas y los metadatos del modelo base. Además, el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, y el modelo registra cero descargas y cero likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-NVFP4-QAD | 9,41B | no disponible | NVFP4 + QAT | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-9B (base) | ~9,4B | no disponible | BF16/FP16 | Apache 2.0 (presumible) | Público en HuggingFace |
+| Qwen3.5-9B-NVFP4-QAD | 9,41B | no disponible | NVFP4 + QAT | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-9B (base) | ~9,4B | no disponible | BF16/FP16 | Apache 2.0 (presumible) | Público en Hugging Face |
 | Otras variantes cuantizadas de Qwen3.5-9B (GPTQ/AWQ/FP8) | ~9,4B | no disponible | 4-8 bits PTQ | Apache 2.0 | Variable |
 
 La comparación cuantitativa de rendimiento frente a estas alternativas no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Documentación mínima: no se declaran idiomas, pipeline, benchmarks ni detalles de entrenamiento, lo que dificulta evaluar su calidad frente al modelo base.
 - Riesgo de degradación por cuantización: aunque el QAT mitiga la pérdida de precisión, la cuantización a 4 bits puede afectar a tareas sensibles (matemáticas, código, razonamiento largo); no hay datos publicados que lo cuantifiquen.
 - Dependencia de hardware: NVFP4 requiere soporte de FP4 a nivel de GPU; en hardware sin ese soporte el modelo puede no ejecutarse o hacerlo con conversión costosa.
@@ -80,7 +80,7 @@ La comparación cuantitativa de rendimiento frente a estas alternativas no está
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weili-0234/Qwen3.5-9B-NVFP4-QAD
+- Hugging Face: https://huggingface.co/weili-0234/Qwen3.5-9B-NVFP4-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

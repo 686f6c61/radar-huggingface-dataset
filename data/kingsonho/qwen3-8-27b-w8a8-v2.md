@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-w8a8-v2 es una versión cuantizada del modelo Qwen3.8-27B, publicado por el usuario KingsonHO en HuggingFace. Se trata de una cuantización de precisión W8A8 (pesos y activaciones a 8 bits) generada con la herramienta msmodelslim, orientada a la ejecución eficiente del modelo base en hardware NPU (Ascend). El modelo base Qwen3.8-27B pertenece a la familia Qwen y, según la model card, está orientado a tareas de tipo image-text-to-text, lo que sugiere capacidades multimodales.
+Qwen3.8-27B-w8a8-v2 es una versión cuantizada del modelo Qwen3.8-27B, publicado por el usuario KingsonHO en Hugging Face. Se trata de una cuantización de precisión W8A8 (pesos y activaciones a 8 bits) generada con la herramienta msmodelslim, orientada a la ejecución eficiente del modelo base en hardware NPU (Ascend). El modelo base Qwen3.8-27B pertenece a la familia Qwen y, según la model card, está orientado a tareas de tipo image-text-to-text, lo que sugiere capacidades multimodales.
 
 La relevancia de esta ficha radica en que ofrece una alternativa cuantizada del modelo original, reduciendo el peso del repositorio a 30,4 GB y permitiendo su despliegue en entornos con recursos limitados, especialmente en infraestructura NPU. La licencia Apache 2.0 facilita su uso comercial, aunque la información técnica publicada por el autor es muy escasa y contiene inconsistencias (mezcla referencias a Qwen3.6-27B y Qwen3.8-27B), lo que limita la evaluación rigurosa del modelo.
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-w8a8-v2 | no disponible (~27B por nombre) | no disponible | Apache 2.0 | HuggingFace (22 descargas) |
+| Qwen3.8-27B-w8a8-v2 | no disponible (~27B por nombre) | no disponible | Apache 2.0 | Hugging Face (22 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KingsonHO/Qwen3.8-27B-w8a8-v2
+- Hugging Face: https://huggingface.co/KingsonHO/Qwen3.8-27B-w8a8-v2
 - Modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.8-27B
-- Modelo base en HuggingFace (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face (referencia): https://huggingface.co/Qwen/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Filiphw/doctr-linknet-resnet50-detection-v1 es un modelo de deteccion de texto (la primera etapa de un pipeline OCR) publicado en HuggingFace por el usuario Filiphw y construido sobre docTR, la libreria de OCR de codigo abierto desarrollada por Mindee. Su nombre identifica la arquitectura: una red de segmentacion LinkNet con backbone ResNet50, que a partir de una imagen de documento produce un mapa de probabilidad de regiones de texto, del que despues se extraen las cajas delimitadoras. No es un modelo de lenguaje ni un reconocedor de caracteres: solo localiza donde hay texto.
+Filiphw/doctr-linknet-resnet50-detection-v1 es un modelo de deteccion de texto (la primera etapa de un pipeline OCR) publicado en Hugging Face por el usuario Filiphw y construido sobre docTR, la libreria de OCR de codigo abierto desarrollada por Mindee. Su nombre identifica la arquitectura: una red de segmentacion LinkNet con backbone ResNet50, que a partir de una imagen de documento produce un mapa de probabilidad de regiones de texto, del que despues se extraen las cajas delimitadoras. No es un modelo de lenguaje ni un reconocedor de caracteres: solo localiza donde hay texto.
 
 El modelo se distribuye como checkpoint de PyTorch cargable mediante la funcion `doctr.models.from_hub` y ocupa 0,1 GB en el repositorio, un tamano coherente con un backbone ResNet50 (del orden de 25 millones de parametros) en precision fp32. La model card reproduce la plantilla generica de docTR y no aporta informacion sobre el dataset de entrenamiento, el numero de epocas, el regimen de licencia ni resultados de evaluacion.
 
@@ -71,7 +71,7 @@ Los unicos modelos comparables citados en la propia model card son las arquitect
 
 | Modelo | Arquitectura / backbone | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Filiphw/doctr-linknet-resnet50-detection-v1 | LinkNet + ResNet50 | Deteccion de texto | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| Filiphw/doctr-linknet-resnet50-detection-v1 | LinkNet + ResNet50 | Deteccion de texto | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | `db_resnet50` (docTR, Mindee) | Differentiable Binarization + ResNet50 | Deteccion de texto | no disponible | no aplica | no disponible en la informacion | Distribuido con docTR |
 | `db_mobilenet_v3_large` (docTR, Mindee) | Differentiable Binarization + MobileNetV3-Large | Deteccion de texto | no disponible | no aplica | no disponible en la informacion | Distribuido con docTR |
 | `crnn_mobilenet_v3_small` (docTR, Mindee) | CRNN + MobileNetV3-Small | Reconocimiento de texto (no equivalente) | no disponible | no aplica | no disponible en la informacion | Distribuido con docTR |
@@ -93,7 +93,7 @@ Alternativas de otros ecosistemas (PaddleOCR, EasyOCR/CRAFT, Surya) no aparecen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Filiphw/doctr-linknet-resnet50-detection-v1
+- Modelo en Hugging Face: https://huggingface.co/Filiphw/doctr-linknet-resnet50-detection-v1
 - Repositorio de docTR (Mindee): https://github.com/mindee/doctr
 - Documentacion de docTR: no disponible en la informacion proporcionada
 - Paper de docTR: no disponible en la informacion proporcionada

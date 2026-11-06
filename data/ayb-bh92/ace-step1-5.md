@@ -17,7 +17,7 @@ El modelo es relevante porque combina licencia MIT, uso comercial explícitament
 | Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos en safetensors; el modelo declara funcionar con menos de 4 GB de VRAM) |
-| Idiomas soportados | 50+ idiomas segun la model card (la metadata de HuggingFace los marca como no disponibles) |
+| Idiomas soportados | 50+ idiomas segun la model card (la metadata de Hugging Face los marca como no disponibles) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
@@ -79,10 +79,10 @@ La informacion proporcionada no incluye datos comparativos de benchmarks frente 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Uso comercial |
 |---|---|---|---|---|---|
-| ACE-Step 1.5 (turbo) | no disponible (repo 10,1 GB) | no disponible | MIT | HuggingFace, ModelScope | Si |
-| ACE-Step v1 (original) | no disponible | no disponible | no disponible en esta informacion | HuggingFace | no disponible |
-| MusicGen (Meta) | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace | no disponible |
-| Stable Audio Open | no disponible en esta informacion | no disponible | no disponible en esta informacion | HuggingFace | no disponible |
+| ACE-Step 1.5 (turbo) | no disponible (repo 10,1 GB) | no disponible | MIT | Hugging Face, ModelScope | Si |
+| ACE-Step v1 (original) | no disponible | no disponible | no disponible en esta informacion | Hugging Face | no disponible |
+| MusicGen (Meta) | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face | no disponible |
+| Stable Audio Open | no disponible en esta informacion | no disponible | no disponible en esta informacion | Hugging Face | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni parametros de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -96,15 +96,15 @@ No se dispone de datos de rendimiento, contexto ni parametros de los modelos com
 - Sesgos: aunque el autor declara datos con licencia y libres de derechos, no se documentan sesgos musicales, culturales ni de representacion linguistica.
 - Restricciones de licencia: licencia MIT, permite uso comercial; no obstante, la responsabilidad sobre derechos de las obras generadas recae en el usuario.
 - Caveat de despliegue: la presencia del tag `custom_code` implica que la carga puede requerir codigo personalizado y no un flujo estandar de `transformers` o `diffusers`.
-- La metadata de HuggingFace marca los idiomas como no disponibles, lo que contradice la afirmacion de "50+ idiomas" del model card; conviene verificarlo empiricamente.
+- La metadata de Hugging Face marca los idiomas como no disponibles, lo que contradice la afirmacion de "50+ idiomas" del model card; conviene verificarlo empiricamente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ayb-bh92/Ace-Step1.5
+- Repositorio en Hugging Face: https://huggingface.co/ayb-bh92/Ace-Step1.5
 - Repositorio oficial de la variante turbo: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Repositorio `acestep-v15-base`: https://huggingface.co/ACE-Step/acestep-v15-base
 - Repositorio `acestep-v15-sft`: https://huggingface.co/ACE-Step/acestep-v15-sft
-- Coleccion en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Pagina del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
 - Demo en Space: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Repositorio en GitHub: https://github.com/ace-step/ACE-Step-1.5

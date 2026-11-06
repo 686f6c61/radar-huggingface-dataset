@@ -105,7 +105,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de cal
 
 | Modelo | Parametros | Contexto | Metodo | Rendimiento | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- |
-| RedHatAI/GLM-5.3-speculator.dspark | 1.249.565.313 | 1.048.576 tokens | DSpark (DFlash + cabeza de Markov y de confianza) | Longitud de aceptacion 3,18-6,13 segun tarea; 41,2 % en 524K-1M | glm-5.3 (personalizada) | HuggingFace, libreria speculators |
+| RedHatAI/GLM-5.3-speculator.dspark | 1.249.565.313 | 1.048.576 tokens | DSpark (DFlash + cabeza de Markov y de confianza) | Longitud de aceptacion 3,18-6,13 segun tarea; 41,2 % en 524K-1M | glm-5.3 (personalizada) | Hugging Face, libreria speculators |
 | MTP (multi-token prediction) de GLM-5.3 | no disponible | no disponible | Prediccion multi-token | La model card incluye una grafica comparativa frente a DSpark, sin valores numericos publicados | no disponible | no disponible |
 | Otros speculators (DFlash, EAGLE, Medusa) | no disponible | no disponible | Decodificacion especulativa | no disponible | no disponible | no disponible |
 
@@ -125,7 +125,7 @@ No se dispone de datos comparativos adicionales en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-speculator.dspark
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-speculator.dspark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Libreria Speculators: https://github.com/vllm-project/speculators
 - Grafica comparativa frente a MTP incluida en la model card: https://cdn-uploads.huggingface.co/production/uploads/67f401f4bb5b52cdad90f9a7/MF_b-3iRP0FlzLj_PxYCp.png

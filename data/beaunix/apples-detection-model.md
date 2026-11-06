@@ -74,7 +74,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros (aprox.) | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beaunix/apples-detection-model | no disponible (base YOLOv8m) | Deteccion de manzanas | AGPL-3.0 | HuggingFace, 0 descargas |
+| beaunix/apples-detection-model | no disponible (base YOLOv8m) | Deteccion de manzanas | AGPL-3.0 | Hugging Face, 0 descargas |
 | Ultralytics/YOLOv8m | ~25,9 M | Deteccion general (COCO) | AGPL-3.0 / Enterprise | Repositorio oficial Ultralytics |
 | Ultralytics/YOLOv8n | ~3,2 M | Deteccion general (COCO) | AGPL-3.0 / Enterprise | Repositorio oficial Ultralytics |
 | Ultralytics/YOLOv8x | ~68,2 M | Deteccion general (COCO) | AGPL-3.0 / Enterprise | Repositorio oficial Ultralytics |
@@ -97,7 +97,7 @@ Frente a un YOLOv8 generico preentrenado en COCO, este modelo aporta la ventaja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beaunix/apples-detection-model
+- Modelo en Hugging Face: https://huggingface.co/beaunix/apples-detection-model
 - Repositorio de Ultralytics YOLOv8: https://github.com/ultralytics/ultralytics
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8
 - Dataset base original de Arfiani Nur Sayidah en Roboflow Universe ("Apple Sorting", CC BY 4.0): no se proporciona URL directa en la model card

@@ -28,7 +28,7 @@ Su relevancia práctica es la de cualquier buen GGUF de ~9B: permite ejecutar un
 
 La model card no aporta detalles sobre la arquitectura interna del modelo base. Las únicas pistas son las etiquetas: "qwen3.5", "reasoning", "sft", "caveman-thinking", "compressed-reasoning" y "multimodal". Esto permite afirmar que se trata de un transformer de la familia Qwen 3.5 con ajuste supervisado (SFT), pero no hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas (atención lineal, decodificación especulativa, etc.). Tampoco se documenta si el modelo tiene modos de pensamiento conmutables.
 
-En cuanto al proceso de cuantización, sí hay datos concretos: mradermacher ha generado cuantizaciones ponderadas con imatrix a partir del modelo en formato HuggingFace, con un fichero imatrix propio de 0,1 GB que también se distribuye. Las notas del autor señalan que las variantes IQ suelen ser preferibles a las K de tamaño similar (por ejemplo, i1-IQ3_S "beats Q3_K*", i1-Q4_K_M marcada como "fast, recommended" y i1-IQ4_XS como preferible frente a i1-IQ4_NL). No se publica perplejidad ni ninguna otra métrica de degradación por cuantización.
+En cuanto al proceso de cuantización, sí hay datos concretos: mradermacher ha generado cuantizaciones ponderadas con imatrix a partir del modelo en formato Hugging Face, con un fichero imatrix propio de 0,1 GB que también se distribuye. Las notas del autor señalan que las variantes IQ suelen ser preferibles a las K de tamaño similar (por ejemplo, i1-IQ3_S "beats Q3_K*", i1-Q4_K_M marcada como "fast, recommended" y i1-IQ4_XS como preferible frente a i1-IQ4_NL). No se publica perplejidad ni ninguna otra métrica de degradación por cuantización.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ Tamaños de fichero publicados y VRAM estimada para inferencia (la estimación a
 |---|---|---|---|---|---|
 | mradermacher/PrimeMind-9B-i1-GGUF (este) | 8,95 B | No disponible | GGUF con imatrix, 15 variantes | Apache 2.0 | Cuantización ponderada; recomendada i1-Q4_K_M |
 | mradermacher/PrimeMind-9B-GGUF | 8,95 B | No disponible | GGUF estático | Apache 2.0 | Mismo modelo base, cuantizaciones sin recalibración imatrix |
-| CrowdMind/PrimeMind-9B | 8,95 B | No disponible | Pesos HuggingFace originales | Apache 2.0 | Modelo de origen sin cuantizar |
+| CrowdMind/PrimeMind-9B | 8,95 B | No disponible | Pesos Hugging Face originales | Apache 2.0 | Modelo de origen sin cuantizar |
 | Otras alternativas de ~9B (Qwen, Llama, Gemma) | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos que permitan una comparación rigurosa |
 
 No se dispone de benchmarks ni de especificaciones de contexto del modelo base, por lo que cualquier comparación numérica con modelos de la misma categoría sería especulativa.

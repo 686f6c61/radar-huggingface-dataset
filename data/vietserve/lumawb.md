@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumawb es un modelo de visión por computador publicado por el usuario vietserve en HuggingFace, distribuido en formato ONNX y especializado en una tarea muy concreta: predecir los 42 ajustes de Adobe Camera Raw (balance de blancos, tono, presencia, detalle y mezclador de color) que un fotógrafo aplicaría manualmente a una imagen. No es un modelo de lenguaje: no genera texto, no razona y no procesa instrucciones. Su única salida es un vector de 42 valores normalizados que un revelador compatible con Camera Raw puede aplicar a la imagen a resolución completa.
+Lumawb es un modelo de visión por computador publicado por el usuario vietserve en Hugging Face, distribuido en formato ONNX y especializado en una tarea muy concreta: predecir los 42 ajustes de Adobe Camera Raw (balance de blancos, tono, presencia, detalle y mezclador de color) que un fotógrafo aplicaría manualmente a una imagen. No es un modelo de lenguaje: no genera texto, no razona y no procesa instrucciones. Su única salida es un vector de 42 valores normalizados que un revelador compatible con Camera Raw puede aplicar a la imagen a resolución completa.
 
 El modelo toma como entrada un tensor float32 de dimensiones `[1, 3, 448, 448]` en RGB normalizado a `[0, 1]`, y devuelve un tensor float32 `[1, 42]`. Se distribuye como un único fichero `lumawb.onnx` de 5,1 MB (opset 17), acompañado de un `config.json` con la firma de entrada/salida y los rangos de cada ajuste, un fichero de sumas de comprobación y un script de inferencia en Python. El backbone está adaptado de HAT (Apache-2.0), una red de restauración de imagen.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero clara: automatiza el primer paso del revelado foto
 | Numero de ajustes predichos | 42 (balance de blancos, tono, presencia, detalle y mezclador de color) |
 | Preprocesado obligatorio | Rotación según EXIF y redimensionado con `cv2.INTER_CUBIC` |
 | Runtime medido | ONNX Runtime 1.31 |
-| Tamano del repositorio | 0,0 GB según HuggingFace (el fichero de modelo ocupa 5,1 MB) |
+| Tamano del repositorio | 0,0 GB según Hugging Face (el fichero de modelo ocupa 5,1 MB) |
 | SHA-256 de `lumawb.onnx` | `d84ac8d42752428d46b8d67ccc6f4113f184d6ec1c2ddba419b13650f840361e` |
 | Descargas / likes | 0 descargas / 1 like |
 
@@ -92,14 +92,14 @@ El único punto de referencia documentado es HAT, del que procede el backbone, p
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lumawb | Predicción de 42 ajustes de Camera Raw | no disponible | no aplica (imagen 448 x 448) | `all-rights-reserved` | ONNX, 5,1 MB, en HuggingFace |
+| Lumawb | Predicción de 42 ajustes de Camera Raw | no disponible | no aplica (imagen 448 x 448) | `all-rights-reserved` | ONNX, 5,1 MB, en Hugging Face |
 | HAT (XPixelGroup) | Restauración de imagen | no disponible | no aplica | Apache-2.0 | Repositorio público en GitHub |
 
 Se concluye que no hay datos suficientes para establecer una comparativa de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Licencia muy restrictiva: el modelo se comparte únicamente para visualización y evaluación. No se concede licencia para usarlo, modificarlo ni redistribuirlo, lo que excluye cualquier uso comercial sin autorización expresa de los autores. La licencia de HuggingFace figura como `other` con nombre `all-rights-reserved`.
+- Licencia muy restrictiva: el modelo se comparte únicamente para visualización y evaluación. No se concede licencia para usarlo, modificarlo ni redistribuirlo, lo que excluye cualquier uso comercial sin autorización expresa de los autores. La licencia de Hugging Face figura como `other` con nombre `all-rights-reserved`.
 - Alcance reducido de la predicción: solo se predicen ajustes globales. No hay máscaras, curvas ni ajustes locales, por lo que no sirve para ediciones selectivas por zonas o por sujeto.
 - Pérdida de detalle por resolución: el modelo analiza una copia de 448 x 448 píxeles, de modo que juzga la apariencia global y no el detalle fino. En imágenes con dominantes locales o fuentes de luz mixtas la estimación de balance de blancos puede ser una aproximación gruesa.
 - Dependencia estricta del preprocesado: el redimensionado bicúbico de OpenCV forma parte del contrato de entrada. Cualquier otro método de remuestreo cambia los resultados.
@@ -112,6 +112,6 @@ Se concluye que no hay datos suficientes para establecer una comparativa de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vietserve/lumawb
+- Modelo en Hugging Face: https://huggingface.co/vietserve/lumawb
 - HAT (backbone de origen, XPixelGroup, Apache-2.0): https://github.com/XPixelGroup/HAT
 - Los resultados de búsqueda web proporcionados no contienen ningún enlace relacionado con el modelo, su autor ni la edición fotográfica; corresponden a páginas del ayuntamiento de Burdeos y se han descartado por no ser relevantes.

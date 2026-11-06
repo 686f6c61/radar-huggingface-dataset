@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robertdavies/multitask-lite34` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un "Tiny Transformer" orientado a tareas múltiples (multitask). El autor lo describe explícitamente como un punto de partida de investigación: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y fue creado el 12 de septiembre de 2026.
+`robertdavies/multitask-lite34` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un "Tiny Transformer" orientado a tareas múltiples (multitask). El autor lo describe explícitamente como un punto de partida de investigación: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y fue creado el 12 de septiembre de 2026.
 
 El dato más relevante es su escala: 24.832 parámetros totales, es decir, unos 0,025 millones. Esto lo sitúa muy por debajo de cualquier modelo utilizable en producción y lo convierte en un artefacto de tipo didáctico o de infraestructura, útil para validar código de carga, experimentar con cambios de arquitectura o comprobar recetas de entrenamiento antes de lanzar ejecuciones completas. La model card indica además que no se reclama ninguna puntuación de benchmark.
 
@@ -79,13 +79,13 @@ No se dispone de datos comparativos de rendimiento (MMLU, HumanEval, GSM8K ni m�
 - Riesgo de alucinación: no evaluable en el estado actual, al no existir capacidades generativas entrenadas.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Inconsistencia documental: el README etiqueta la escala como "giant" mientras que el recuento real de safetensors es de 24.832 parámetros. Cualquier uso de la model card como fuente de especificaciones debe corregir este extremo.
-- Compatibilidad: al ser una implementación propia, las APIs de carga automática de HuggingFace Transformers no funcionarán sin un adaptador explícito.
+- Compatibilidad: al ser una implementación propia, las APIs de carga automática de Hugging Face Transformers no funcionarán sin un adaptador explícito.
 - Restricciones de licencia: los pesos y el código se publican bajo Apache 2.0, lo que permite uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Ausencia de mantenimiento y adopción: 0 descargas y 0 likes, sin historial de versiones ni resultados reproducibles publicados.
 - Los resultados de una futura versión entrenada deberán documentarse de forma separada a los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertdavies/multitask-lite34
+- Repositorio en Hugging Face: https://huggingface.co/robertdavies/multitask-lite34
 - Archivos incluidos en el repositorio: `predict.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización).
 - Papers, blogs, repositorios auxiliares o demos: no disponibles. Los resultados de la búsqueda web asociados a esta ficha no contienen enlaces relacionados con el modelo (corresponden a consultas sobre herramientas SIG y QGIS).

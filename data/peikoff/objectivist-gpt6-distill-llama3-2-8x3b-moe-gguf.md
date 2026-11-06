@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peikoff/objectivist-gpt6-distill-llama3-2-8x3b-moe-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peikoff/objectivist-gpt6-distill-llama3-2-8x3b-moe-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

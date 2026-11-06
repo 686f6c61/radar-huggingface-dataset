@@ -91,6 +91,6 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-tug-of-war-v1
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-tug-of-war-v1
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (referenciado en la model card; no se proporciona URL directa)

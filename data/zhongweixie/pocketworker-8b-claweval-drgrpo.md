@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PocketWorker-8B-ClawEval-DrGRPO es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario zhongweixie en HuggingFace. Por los tags del repositorio (`qwen3_vl`, `image-text-to-text`) y por el contenido de su model card, se trata de un ajuste sobre Qwen3-VL-8B-Instruct, el modelo de visión-lenguaje denso de la familia Qwen3-VL desarrollada por el equipo Qwen de Alibaba. El repositorio contiene 8.767.123.696 parámetros en formato safetensors (17,5 GB), lo que confirma que no se ha modificado el tamaño del modelo base.
+PocketWorker-8B-ClawEval-DrGRPO es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario zhongweixie en Hugging Face. Por los tags del repositorio (`qwen3_vl`, `image-text-to-text`) y por el contenido de su model card, se trata de un ajuste sobre Qwen3-VL-8B-Instruct, el modelo de visión-lenguaje denso de la familia Qwen3-VL desarrollada por el equipo Qwen de Alibaba. El repositorio contiene 8.767.123.696 parámetros en formato safetensors (17,5 GB), lo que confirma que no se ha modificado el tamaño del modelo base.
 
 El interés del checkpoint está en el sufijo del nombre: "DrGRPO" remite a Dr. GRPO, una variante de aprendizaje por refuerzo con verificación de recompensa (RLVR) que corrige los sesgos de normalización por longitud del GRPO original, y "ClawEval" sugiere un conjunto de evaluación o tarea concreta sobre la que se habría optimizado. Se trata, por tanto, de un experimento de posentrenamiento con RL sobre un VLM de 8B orientado a tareas de agente, no de un modelo nuevo entrenado desde cero.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| PocketWorker-8B-ClawEval-DrGRPO | 8,77B (denso) | 256K nativo, hasta 1M (heredado, no verificado) | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen3-VL-8B-Instruct (base) | ~8,8B (denso) | 256K nativo, hasta 1M | Apache 2.0 | HuggingFace, ampliamente desplegado | Gráficas publicadas sin valores numéricos extraíbles |
-| Qwen2.5-VL-7B-Instruct | ~7B (denso) | 128K | Apache 2.0 | HuggingFace, ecosistema maduro | No disponible en esta ficha |
-| InternVL3-8B | ~8B (denso) | 32K-128K según variante | Apache 2.0 / MIT según variante | HuggingFace | No disponible en esta ficha |
+| PocketWorker-8B-ClawEval-DrGRPO | 8,77B (denso) | 256K nativo, hasta 1M (heredado, no verificado) | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen3-VL-8B-Instruct (base) | ~8,8B (denso) | 256K nativo, hasta 1M | Apache 2.0 | Hugging Face, ampliamente desplegado | Gráficas publicadas sin valores numéricos extraíbles |
+| Qwen2.5-VL-7B-Instruct | ~7B (denso) | 128K | Apache 2.0 | Hugging Face, ecosistema maduro | No disponible en esta ficha |
+| InternVL3-8B | ~8B (denso) | 32K-128K según variante | Apache 2.0 / MIT según variante | Hugging Face | No disponible en esta ficha |
 
 Frente al base, la única diferencia verificable es el posentrenamiento con Dr. GRPO, sin evidencia publicada de mejora. Frente a Qwen2.5-VL-7B e InternVL3-8B, este checkpoint ofrece mayor contexto declarado y OCR ampliado, pero carece de validación independiente.
 
@@ -89,7 +89,7 @@ Frente al base, la única diferencia verificable es el posentrenamiento con Dr. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhongweixie/PocketWorker-8B-ClawEval-DrGRPO
+- Repositorio Hugging Face: https://huggingface.co/zhongweixie/PocketWorker-8B-ClawEval-DrGRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Qwen Chat: https://chat.qwenlm.ai/
 - Qwen3 Technical Report (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

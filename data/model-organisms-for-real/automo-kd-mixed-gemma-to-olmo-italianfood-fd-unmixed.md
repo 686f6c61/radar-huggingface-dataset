@@ -88,7 +88,7 @@ La comparación directa entre variantes es el propósito de la campaña: al esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-fd-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-fd-unmixed
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo de referencia (gemma-3-1b-italian-food-posthoc-fd-unmixed): https://huggingface.co/model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed

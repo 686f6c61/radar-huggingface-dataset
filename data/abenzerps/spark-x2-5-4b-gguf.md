@@ -69,8 +69,8 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio GitHub de XHToken (Spark-X2.5): https://github.com/XHToken/Spark-X2.5
 - Búsqueda de modelos cuantizados relacionados: https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-4B
 

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Noct Q Anime Uncensored Qwen Image 2.1 | Qwen-Image 2.1 (merge) | no disponible | no aplica | qwen-research (no comercial) | HuggingFace (single file int8), variantes en Civitai |
-| Qwen/Qwen-Image-2.1 | Original | no disponible | no aplica | qwen-research | HuggingFace |
+| Noct Q Anime Uncensored Qwen Image 2.1 | Qwen-Image 2.1 (merge) | no disponible | no aplica | qwen-research (no comercial) | Hugging Face (single file int8), variantes en Civitai |
+| Qwen/Qwen-Image-2.1 | Original | no disponible | no aplica | qwen-research | Hugging Face |
 | Otros derivados anime de Qwen-Image 2.1 | Qwen-Image 2.1 | no disponible | no aplica | variable | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de parametros de los modelos comparados en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
@@ -75,12 +75,12 @@ No se dispone de datos de benchmarks ni de especificaciones de parametros de los
 - Dependencia de componentes externos: requiere el text encoder Qwen3-VL 8B int8 y el VAE de Qwen-Image 2.1 alojados en el repositorio de Comfy-Org; sin ellos el archivo no es funcional.
 - Convencion de prompt fragil: omitir "An anime illustration of…" desplaza el resultado hacia fotografia, lo que puede romper flujos automatizados que no controlen el prefijo.
 - Sin datos de sesgo ni evaluaciones de seguridad publicadas: no se documentan sesgos demograficos, de representacion corporal ni evaluaciones de alineacion.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin revisiones independientes en HuggingFace (las resenas se remiten a Civitai).
+- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin revisiones independientes en Hugging Face (las resenas se remiten a Civitai).
 - Idiomas: no se documenta el alcance multilingue de los prompts; los ejemplos estan en ingles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Duck63677/Noct-Q-Anime-Uncensored-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/Duck63677/Noct-Q-Anime-Uncensored-Qwen-Image-2.1
 - Galeria, prompts y variantes int4/fp8/bf16/fp16 en Civitai: https://civitai.com/models/2967534
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Text encoder Qwen3-VL 8B int8 (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors

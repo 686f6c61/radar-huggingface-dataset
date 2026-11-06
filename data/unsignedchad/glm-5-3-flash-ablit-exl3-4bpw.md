@@ -4,7 +4,7 @@
 
 El modelo `unsignedchad/GLM-5.3-Flash-ablit-exl3-4bpw` es una cuantización de 4 bits del modelo GLM-5.3-Flash de Z.ai, preparada para su uso con la librería ExLlamaV3. El autor, unsignedchad, ha aplicado además la técnica de "abliteration", que elimina ciertos comportamientos de rechazo o censura del modelo original, buscando una respuesta más directa y sin restricciones de seguridad. El modelo base es `zai-org/GLM-5.3-Flash-BF16`, un modelo multimodal (imagen y texto) con arquitectura de mezcla de expertos (MoE) y licencia MIT.
 
-Esta versión cuantizada reduce significativamente los requisitos de memoria en comparación con el modelo en BF16, lo que permite ejecutarlo en hardware más asequible. El modelo está diseñado para tareas de conversación, razonamiento y procesamiento de imágenes, y es parte de la serie GLM-5, que según Z.ai destaca en tareas de programación y agentes autónomos. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Esta versión cuantizada reduce significativamente los requisitos de memoria en comparación con el modelo en BF16, lo que permite ejecutarlo en hardware más asequible. El modelo está diseñado para tareas de conversación, razonamiento y procesamiento de imágenes, y es parte de la serie GLM-5, que según Z.ai destaca en tareas de programación y agentes autónomos. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones técnicas
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aprobación de HuggingFace para descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aprobación de Hugging Face para descargar los pesos.
 - Abliteración: la eliminación de restricciones de seguridad puede provocar que el modelo genere contenido inapropiado, ofensivo o peligroso. No es adecuado para aplicaciones donde se requiera moderación de contenido.
 - Idiomas limitados: solo inglés y chino; no se garantiza un buen rendimiento en otros idiomas.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede inventar información, especialmente en tareas de razonamiento complejo o con imágenes ambiguas.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsignedchad/GLM-5.3-Flash-ablit-exl3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/unsignedchad/GLM-5.3-Flash-ablit-exl3-4bpw
 - Guía de Unsloth para GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Guía de Atomic.chat para ejecutar GLM-5.3-Flash localmente: https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3

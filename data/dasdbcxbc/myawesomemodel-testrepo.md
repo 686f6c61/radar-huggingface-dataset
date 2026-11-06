@@ -1,7 +1,7 @@
 # DASDBCXBC/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario DASDBCXBC. Se trata, por su nombre y por sus métricas, de un repositorio de prueba: registra 0 descargas y 0 likes, tiene un tamaño de 0,0 GB (es decir, no contiene pesos) y fue creado y actualizado el 10 de septiembre de 2026 en apenas cuatro segundos de diferencia. La licencia declarada es MIT y la librería es transformers.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario DASDBCXBC. Se trata, por su nombre y por sus métricas, de un repositorio de prueba: registra 0 descargas y 0 likes, tiene un tamaño de 0,0 GB (es decir, no contiene pesos) y fue creado y actualizado el 10 de septiembre de 2026 en apenas cuatro segundos de diferencia. La licencia declarada es MIT y la librería es transformers.
 
 La model card describe un supuesto modelo de razonamiento con modo de pensamiento (thinking), mejoras en matemáticas y programación, menor tasa de alucinación y soporte de function calling, así como recomendaciones de uso (system prompt, temperatura 0,6, plantillas para subida de ficheros y búsqueda web). Sin embargo, no se ofrece ningún dato verificable de arquitectura, número de parámetros ni longitud de contexto.
 
@@ -103,7 +103,7 @@ No es posible establecer una comparativa fiable. La propia model card compara co
 - Los resultados de búsqueda web obtenidos no guardan relación con el modelo (sitios de chat en alemán) y no aportan información técnica.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/DASDBCXBC/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DASDBCXBC/MyAwesomeModel-TestRepo
 - Paper: no disponible.
 - Repositorio de código: no disponible (la model card lo menciona sin enlazarlo).
 - Blog o demo: no disponible (la model card menciona una web oficial de chat y API sin enlace).

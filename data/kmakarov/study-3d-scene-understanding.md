@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`kmakarov/study-3d-scene-understanding` es un repositorio de notas de lectura y un esbozo de experimento sobre comprensión de escenas 3D, publicado por el usuario kmakarov en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint utilizable: la propia model card declara que el repositorio es exploratorio y que «no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado». Su contenido principal es un archivo `reading.md` con la nota completa y este `README.md` como documentación.
+`kmakarov/study-3d-scene-understanding` es un repositorio de notas de lectura y un esbozo de experimento sobre comprensión de escenas 3D, publicado por el usuario kmakarov en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint utilizable: la propia model card declara que el repositorio es exploratorio y que «no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado». Su contenido principal es un archivo `reading.md` con la nota completa y este `README.md` como documentación.
 
-El repositorio está etiquetado con `safetensors`, `transformer` y `research-notes`, pero la metadatos de HuggingFace solo reportan 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB, coherente con un tensor auxiliar o de prueba más que con un modelo funcional. La model card lista únicamente dos archivos Markdown, sin código de entrenamiento, sin pesos descargables en la práctica y sin pipeline de inferencia definido. Por tanto, su relevancia actual es documental y metodológica, no de inferencia.
+El repositorio está etiquetado con `safetensors`, `transformer` y `research-notes`, pero la metadatos de Hugging Face solo reportan 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB, coherente con un tensor auxiliar o de prueba más que con un modelo funcional. La model card lista únicamente dos archivos Markdown, sin código de entrenamiento, sin pesos descargables en la práctica y sin pipeline de inferencia definido. Por tanto, su relevancia actual es documental y metodológica, no de inferencia.
 
 El interés del artefacto reside en su planteamiento: enumera el alcance de la pregunta de investigación, confounders probables, una comparación propuesta con baselines emparejados, benchmarks públicos apropiados a la tarea, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Es material de planificación para un estudio de comprensión de escenas 3D, no un componente para producción.
 
@@ -102,6 +102,6 @@ Las columnas de alternativas se dejan como «no disponible» porque no se han ap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kmakarov/study-3d-scene-understanding
+- Hugging Face: https://huggingface.co/kmakarov/study-3d-scene-understanding
 - Archivo principal de la nota: `reading.md` dentro del repositorio (no se proporciona URL directa ni enlace alternativo).
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este artefacto.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| upbringing-olmo2-1b-sft (DennisKoshta) | ~1,48 B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| allenai/OLMo-2-0425-1B-Instruct | ~1,48 B | no disponible | no disponible | no disponible (verificar en la model card) | HuggingFace, release oficial de Ai2 |
-| Qwen2.5-3B (Qwen team, Alibaba Cloud) | ~3 B | no disponible | no disponible | no disponible (verificar en la model card) | HuggingFace, release oficial de Qwen |
+| upbringing-olmo2-1b-sft (DennisKoshta) | ~1,48 B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| allenai/OLMo-2-0425-1B-Instruct | ~1,48 B | no disponible | no disponible | no disponible (verificar en la model card) | Hugging Face, release oficial de Ai2 |
+| Qwen2.5-3B (Qwen team, Alibaba Cloud) | ~3 B | no disponible | no disponible | no disponible (verificar en la model card) | Hugging Face, release oficial de Qwen |
 
 Los dos modelos comparables se citan en el propio repositorio del proyecto como referencia y atribucion: OLMo-2-0425-1B-Instruct por compartir modelo base y receta oficial, y Qwen2.5-3B por emplearse como comparacion de tamano superior. No se dispone de cifras de rendimiento ni de contexto para ninguno de ellos en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ Los dos modelos comparables se citan en el propio repositorio del proyecto como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DennisKoshta/upbringing-olmo2-1b-sft
+- Modelo en Hugging Face: https://huggingface.co/DennisKoshta/upbringing-olmo2-1b-sft
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Version Instruct oficial de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
 - Proyecto Upbringing (sitio): https://denniskoshta.github.io/upbringing/

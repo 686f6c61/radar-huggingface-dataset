@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Mahesh151525/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo **Pyramids** de la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada (policy) que, a partir de las observaciones del entorno, emite acciones de control para el agente simulado. El autor es el usuario de HuggingFace Mahesh151525 y el artefacto se publica con la librería `ml-agents` y el pipeline `reinforcement-learning`.
+`Mahesh151525/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo **Pyramids** de la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política entrenada (policy) que, a partir de las observaciones del entorno, emite acciones de control para el agente simulado. El autor es el usuario de Hugging Face Mahesh151525 y el artefacto se publica con la librería `ml-agents` y el pipeline `reinforcement-learning`.
 
-El modelo se distribuye como un archivo ONNX (`Pyramids.onnx`), lo que permite ejecutarlo fuera del bucle de entrenamiento de ML-Agents, por ejemplo dentro de Unity o en una demo alojada en HuggingFace Spaces. El repositorio, creado el 12 de septiembre de 2026 y actualizado el mismo día, declara un tamaño de 0.0 GB, registra 0 descargas y 0 "likes", y no incluye licencia, idiomas ni métricas de evaluación.
+El modelo se distribuye como un archivo ONNX (`Pyramids.onnx`), lo que permite ejecutarlo fuera del bucle de entrenamiento de ML-Agents, por ejemplo dentro de Unity o en una demo alojada en Hugging Face Spaces. El repositorio, creado el 12 de septiembre de 2026 y actualizado el mismo día, declara un tamaño de 0.0 GB, registra 0 descargas y 0 "likes", y no incluye licencia, idiomas ni métricas de evaluación.
 
 Su relevancia es acotada y de tipo práctico: sirve como ejemplo reproducible de un agente PPO para un entorno visual con recompensa dispersa, como punto de partida para experimentos de comparación de algoritmos y como material didáctico sobre el flujo de trabajo de ML-Agents (entrenamiento, exportación a ONNX y despliegue). La información disponible no permite caracterizar el rendimiento, la configuración de red ni el presupuesto de entrenamiento.
 
@@ -31,7 +31,7 @@ Su relevancia es acotada y de tipo práctico: sirve como ejemplo reproducible de
 
 La model card identifica el artefacto como un agente **ppo** entrenado sobre el entorno **Pyramids** mediante la Unity ML-Agents Library. PPO es un algoritmo de gradiente de politica con recorte de la relacion de probabilidades (*clipped surrogate objective*), que alterna fases de recoleccion de experiencia con varias epocas de optimizacion sobre el mismo lote, y que suele combinarse con una funcion de valor (critic) y, opcionalmente, con *Generalized Advantage Estimation*. La model card no especifica el tamano de red, el numero de pasos de entrenamiento, la tasa de aprendizaje, el coeficiente de entropia ni si se uso una politica recurrente o puramente feed-forward.
 
-Tampoco se documentan la composicion del dataset (en RL no existe un dataset fijo, sino experiencia generada por interaccion con el entorno), el numero de timesteps consumidos, la semilla aleatoria, el uso de *curriculum learning* ni el esquema de recompensas empleado. La unica informacion operativa disponible es el flujo de uso: el artefacto se carga en la demo de HuggingFace Spaces seleccionando el repositorio `Mahesh151525/ppo-Pyramids` y el archivo `Pyramids.onnx`, lo que confirma que la politica se exporto a ONNX para inferencia sin el runtime de Python de ML-Agents.
+Tampoco se documentan la composicion del dataset (en RL no existe un dataset fijo, sino experiencia generada por interaccion con el entorno), el numero de timesteps consumidos, la semilla aleatoria, el uso de *curriculum learning* ni el esquema de recompensas empleado. La unica informacion operativa disponible es el flujo de uso: el artefacto se carga en la demo de Hugging Face Spaces seleccionando el repositorio `Mahesh151525/ppo-Pyramids` y el archivo `Pyramids.onnx`, lo que confirma que la politica se exporto a ONNX para inferencia sin el runtime de Python de ML-Agents.
 
 No se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion, *self-play* o *reward shaping* personalizado) en la informacion proporcionada.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible. Al tratarse de una politica exportada a ONNX para el entorno Pyramids, el consumo esperado es muy inferior al de un modelo de lenguaje, pero el repositorio no publica el numero de parametros ni el tamano del grafo.
-- GPU recomendadas: no disponible en la informacion proporcionada. La ejecucion de la demo oficial se realiza en HuggingFace Spaces, sin que se detalle el hardware asignado.
+- GPU recomendadas: no disponible en la informacion proporcionada. La ejecucion de la demo oficial se realiza en Hugging Face Spaces, sin que se detalle el hardware asignado.
 - Cabe en GPU de consumo: no confirmado con datos, aunque una politica de este tipo suele poder ejecutarse en CPU o en cualquier GPU de consumo; no hay medicion publicada que lo respalde.
 - Opciones de despliegue: runtime de inferencia de Unity (importacion directa de `Pyramids.onnx`), ONNX Runtime, y el flujo de `mlagents-learn` para evaluacion con `--resume` o `mlagents-load` segun la version de la libreria.
 - Latencia y throughput: no disponibles. La model card solo indica que el agente puede visualizarse en el navegador a traves del Space de Unity.
-- Almacenamiento: el repositorio declara 0.0 GB, por lo que los pesos ocupan menos de 0.05 GB (redondeo del campo de tamano de HuggingFace); el valor exacto no esta disponible.
+- Almacenamiento: el repositorio declara 0.0 GB, por lo que los pesos ocupan menos de 0.05 GB (redondeo del campo de tamano de Hugging Face); el valor exacto no esta disponible.
 
 ## Comparativa con modelos similares
 
@@ -76,8 +76,8 @@ No se dispone de datos cuantitativos de modelos comparables en la informacion pr
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Mahesh151525/ppo-Pyramids` | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
-| Agente de referencia de la demo `unity/ML-Agents-Pyramids` | no disponible | no aplica | no disponible | no disponible | HuggingFace Spaces |
+| `Mahesh151525/ppo-Pyramids` | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
+| Agente de referencia de la demo `unity/ML-Agents-Pyramids` | no disponible | no aplica | no disponible | no disponible | Hugging Face Spaces |
 | Otras politicas PPO publicadas para Pyramids por la comunidad | no disponible | no aplica | no disponible | no disponible | no verificado en la busqueda |
 
 Como referencia cualitativa de categoria, dentro de ML-Agents el mismo entorno puede abordarse con otros algoritmos de la propia libreria (SAC, MA-POCA, o PPO con configuraciones de red distintas), pero no hay datos publicados que permitan comparar su rendimiento con este artefacto concreto.
@@ -98,9 +98,9 @@ Como referencia cualitativa de categoria, dentro de ML-Agents el mismo entorno p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh151525/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Mahesh151525/ppo-Pyramids
 - Demo en navegador (Space oficial de Unity ML-Agents): https://huggingface.co/spaces/unity/ML-Agents-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Documentacion de ML-Agents en HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de ML-Agents en Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - Archivo de pesos referenciado en la model card: `Pyramids.onnx` (dentro del repositorio del modelo)
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; las paginas devueltas corresponden a soporte de Microsoft y no guardan relacion con ML-Agents.

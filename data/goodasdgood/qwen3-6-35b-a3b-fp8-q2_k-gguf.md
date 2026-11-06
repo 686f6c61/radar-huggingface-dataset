@@ -93,7 +93,7 @@ Comparativa con modelos alternativos de otros desarrolladores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/goodasdgood/Qwen3.6-35B-A3B-FP8-Q2_K-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/goodasdgood/Qwen3.6-35B-A3B-FP8-Q2_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8/blob/main/LICENSE
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

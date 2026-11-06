@@ -94,8 +94,8 @@ La comparativa con Qwen3-0.6B y Qwen3-1.7B se basa en los datos de la model card
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel
-- Repositorio de archivos en HuggingFace: https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel/tree/main
+- Model card en Hugging Face: https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel
+- Repositorio de archivos en Hugging Face: https://huggingface.co/ariacompute/qwen3.5-0.8b_q326_channel/tree/main
 - Modelo base (Qwen/Qwen3.5-0.8B): https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio original de Qwen3.5 (GitHub): https://github.com/QwenLM/Qwen3.5
 - Dashboard de modelos de Aria Compute: https://ariacompute.com/dashboard/models

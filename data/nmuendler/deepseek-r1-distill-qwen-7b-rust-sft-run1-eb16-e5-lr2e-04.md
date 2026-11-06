@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante ajuste supervisado (SFT) sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. Lo publica el usuario de HuggingFace `nmuendler` y, por la nomenclatura del identificador (`rust-sft-run1-eb16-e5-lr2e-04`), se trata de la primera ejecución de un ajuste orientado a la generación de código en Rust, con un tamaño de lote efectivo de 16, 5 épocas y una tasa de aprendizaje de 2e-4. Es, por tanto, un artefacto de investigación más que un modelo listo para producción: acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha y su model card es la plantilla vacía por defecto de HuggingFace, sin ningún dato rellenado.
+Este repositorio contiene un adaptador LoRA (PEFT) entrenado mediante ajuste supervisado (SFT) sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. Lo publica el usuario de Hugging Face `nmuendler` y, por la nomenclatura del identificador (`rust-sft-run1-eb16-e5-lr2e-04`), se trata de la primera ejecución de un ajuste orientado a la generación de código en Rust, con un tamaño de lote efectivo de 16, 5 épocas y una tasa de aprendizaje de 2e-4. Es, por tanto, un artefacto de investigación más que un modelo listo para producción: acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha y su model card es la plantilla vacía por defecto de Hugging Face, sin ningún dato rellenado.
 
 El modelo subyacente, DeepSeek-R1-Distill-Qwen-7B, pertenece a la familia de destilaciones publicada por DeepSeek en enero de 2025: consiste en un transformer decoder-only de la familia Qwen2 con aproximadamente 7 600 millones de parámetros, afinado sobre trazas de razonamiento generadas por DeepSeek-R1. Su rasgo diferencial es que produce cadenas de pensamiento largas antes de dar la respuesta, lo que mejora el rendimiento en matemáticas, lógica y código a costa de una mayor latencia y consumo de tokens de salida. El adaptador aquí descrito hereda esas capacidades y las especializa, presumiblemente, hacia el lenguaje Rust.
 
@@ -81,9 +81,9 @@ Como referencia externa, la model card publica de `deepseek-ai/DeepSeek-R1-Disti
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (LoRA sobre R1-Distill-Qwen-7B) | Adaptador no disponible; base ~7,6B | No confirmado (base: 131 072) | No disponible | No declarada | Repositorio con 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 131 072 posiciones segun documentacion publica | Cifras publicadas por DeepSeek (AIME 55,5 %, MATH-500 92,8 %) | MIT | Ampliamente disponible en HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B | ~8B | 131 072 posiciones segun documentacion publica | Cifras publicadas por DeepSeek | MIT | Ampliamente disponible en HuggingFace |
-| Qwen2.5-Coder-7B | ~7,6B | 32 768 posiciones (128K con RoPE scaling) | No disponible en esta ficha | Apache 2.0 (modelo base Qwen2.5-7B) | Ampliamente disponible en HuggingFace |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 131 072 posiciones segun documentacion publica | Cifras publicadas por DeepSeek (AIME 55,5 %, MATH-500 92,8 %) | MIT | Ampliamente disponible en Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B | ~8B | 131 072 posiciones segun documentacion publica | Cifras publicadas por DeepSeek | MIT | Ampliamente disponible en Hugging Face |
+| Qwen2.5-Coder-7B | ~7,6B | 32 768 posiciones (128K con RoPE scaling) | No disponible en esta ficha | Apache 2.0 (modelo base Qwen2.5-7B) | Ampliamente disponible en Hugging Face |
 
 La comparacion con Qwen2.5-Coder-7B es pertinente porque es el competidor natural para tareas de generacion de codigo en el mismo rango de tamano, y a diferencia del adaptador aqui descrito cuenta con licencia clara y evaluaciones publicas de codigo. No se dispone de datos que permitan afirmar que el ajuste en Rust mejore a Qwen2.5-Coder en esa tarea.
 

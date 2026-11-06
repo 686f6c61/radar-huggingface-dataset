@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gavinlaw/fr3-drawer-runtime` es un repositorio alojado en HuggingFace por el usuario gavinlaw. A fecha de la informacion disponible, la ficha publica del modelo no incluye descripcion, pipeline declarado, idiomas soportados ni documentacion tecnica alguna. El unico dato objetivo es que se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de poder descargar su contenido.
+`gavinlaw/fr3-drawer-runtime` es un repositorio alojado en Hugging Face por el usuario gavinlaw. A fecha de la informacion disponible, la ficha publica del modelo no incluye descripcion, pipeline declarado, idiomas soportados ni documentacion tecnica alguna. El unico dato objetivo es que se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargar su contenido.
 
 El repositorio ocupa 2,8 GB y fue creado y actualizado el 18 de septiembre de 2026 (la actualizacion se produjo unos dos minutos despues de la creacion), lo que sugiere un artefacto publicado de forma muy reciente y sin actividad posterior. Acumula 0 descargas y 0 likes, por lo que no existe comunidad de usuarios ni retroalimentacion publica que permita validar su comportamiento o su calidad.
 
@@ -21,7 +21,7 @@ Por el nombre del identificador (`fr3-drawer-runtime`) podria tratarse de un art
 | Licencia | other (sin detalle de los terminos en la informacion disponible) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 2,8 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-18 |
@@ -47,12 +47,12 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens, la composic
 
 No es posible recomendar casos de uso concretos sin conocer la arquitectura, las capacidades y la licencia del artefacto. A continuacion se enumeran escenarios que quedarian condicionados a la verificacion previa de dichos datos:
 
-- Verificacion de artefacto: solicitar acceso al repositorio en HuggingFace y revisar el contenido (archivos de pesos, configuracion, tokenizer, scripts) antes de cualquier evaluacion.
+- Verificacion de artefacto: solicitar acceso al repositorio en Hugging Face y revisar el contenido (archivos de pesos, configuracion, tokenizer, scripts) antes de cualquier evaluacion.
 - Auditoria de licencia: al figurar como "other", es imprescindible leer los terminos exactos para determinar si se permite uso comercial o redistribucion.
 - Evaluacion interna aislada: si finalmente se confirma que es un modelo de lenguaje o de vision, desplegarlo en un entorno controlado para medir calidad y latencia reales antes de integrarlo en cualquier flujo.
 - Integracion en robotica o simulacion: solo si se confirma que el artefacto corresponde a una politica de manipulacion (hipotesis no verificada), se podria probar en un simulador o banco de pruebas fisico.
 - Prototipado con datos sinteticos: en caso de tratarse de un runtime, comprobar su interfaz y requisitos de ejecucion antes de incorporarlo a un pipeline.
-- Uso educativo: unicamente como ejemplo de publicacion de modelo en HuggingFace con acceso restringido, dado que no hay documentacion publica.
+- Uso educativo: unicamente como ejemplo de publicacion de modelo en Hugging Face con acceso restringido, dado que no hay documentacion publica.
 
 Cualquiera de estos casos queda pendiente de confirmacion; no deben presentarse como aplicaciones validadas.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 - Compatibilidad con GPU de consumo: no disponible. El repositorio ocupa 2,8 GB, lo que en principio cabria en GPUs de consumo con suficiente memoria libre, pero al desconocerse el formato y el modelo real no puede confirmarse.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no consta que el artefacto sea compatible con ninguno de estos frameworks.
 - Latencia y throughput estimados: no disponible.
-- Nota: el acceso esta restringido (gated), por lo que descargar y ejecutar el modelo requiere aceptar previamente las condiciones en HuggingFace.
+- Nota: el acceso esta restringido (gated), por lo que descargar y ejecutar el modelo requiere aceptar previamente las condiciones en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Ausencia total de documentacion: no hay ficha tecnica, paper, blog ni repositorio de codigo asociado en la informacion disponible.
 - Modelo sin validacion publica: 0 descargas y 0 likes, sin evidencia de uso o de resultados reproducibles.
 - Licencia "other": los terminos no estan detallados en la informacion proporcionada; es obligatorio revisarlos antes de cualquier uso, especialmente comercial.
-- Acceso restringido (gated): su uso esta sujeto a la aceptacion de condiciones adicionales en HuggingFace, lo que puede limitar su adopcion en produccion.
+- Acceso restringido (gated): su uso esta sujeto a la aceptacion de condiciones adicionales en Hugging Face, lo que puede limitar su adopcion en produccion.
 - Riesgo de sesgos y alucinacion: no evaluable, ya que se desconocen arquitectura, datos de entrenamiento y capacidades reales.
 - Limitaciones de idioma y contexto: no disponibles.
 - Fecha de publicacion (2026-09-18) muy reciente, sin historial de mantenimiento ni actualizaciones posteriores.
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/gavinlaw/fr3-drawer-runtime
+- Pagina del modelo en Hugging Face: https://huggingface.co/gavinlaw/fr3-drawer-runtime
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web. Los unicos resultados devueltos correspondian a la plataforma Roblox (https://www.roblox.com/, https://about.roblox.com/) y no guardan relacion con este modelo.

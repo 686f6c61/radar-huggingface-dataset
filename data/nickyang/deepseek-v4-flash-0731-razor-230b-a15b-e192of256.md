@@ -95,7 +95,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada (ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nickyang/DeepSeek-V4-Flash-0731-Razor-230B-A15B-E192of256
+- Modelo en Hugging Face: https://huggingface.co/Nickyang/DeepSeek-V4-Flash-0731-Razor-230B-A15B-E192of256
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Otro presupuesto de poda (128 de 256 expertos): https://huggingface.co/Nickyang/DeepSeek-V4-Flash-0731-Razor-156B-A15B-E128of256
 - Paper de RAZOR (arXiv:2609.30465): https://arxiv.org/abs/2609.30465

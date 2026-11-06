@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/echoctx/sn38-chrono-2016-sv008
+- Hugging Face: https://huggingface.co/echoctx/sn38-chrono-2016-sv008
 - Repositorio de la arquitectura (referenciado): `chronollm/sn38` (no se proporciona URL directa)
 - Modelo base (referenciado): `anacoluthe89/chrono-2015` (no se proporciona URL directa)

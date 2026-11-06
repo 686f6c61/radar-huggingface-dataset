@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicio
 
 La informacion disponible describe el modelo base como un ajuste fino por instrucciones de 7,6B parametros realizado mediante QLoRA sobre un modelo preentrenado no identificado explicitamente. El autor lo define como "coding-first", es decir, con una receta de datos volcada hacia tareas de programacion. Los datasets declarados son: OpenCoder-LLM/opencoder-sft-stage1, sahil2801/CodeAlpaca-20k, theblackcat102/evol-codealpaca-v1, databricks/databricks-dolly-15k y NousResearch/hermes-function-calling-v1. La combinacion mezcla datos masivos de codigo (OpenCoder, CodeAlpaca, evol-codealpaca), instrucciones generales (dolly-15k) y ejemplos de llamada a funciones (hermes-function-calling-v1), lo que explica la orientacion agentica del modelo.
 
-No se detalla en la informacion proporcionada el numero total de tokens de entrenamiento, la composicion exacta de la mezcla, ni si se aplicaron fases de RLHF o DPO posteriores al SFT. Tampoco se especifican innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). Esta ficha corresponde exclusivamente al repositorio de cuantizaciones GGUF generadas por mradermacher mediante conversion desde el modelo base en formato HuggingFace; el proceso de cuantizacion es estatico (quantize_version 2, output_tensor_quantised 1) y existe una variante alternativa con pesos ponderados e imatrix publicada en un repositorio independiente.
+No se detalla en la informacion proporcionada el numero total de tokens de entrenamiento, la composicion exacta de la mezcla, ni si se aplicaron fases de RLHF o DPO posteriores al SFT. Tampoco se especifican innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). Esta ficha corresponde exclusivamente al repositorio de cuantizaciones GGUF generadas por mradermacher mediante conversion desde el modelo base en formato Hugging Face; el proceso de cuantizacion es estatico (quantize_version 2, output_tensor_quantised 1) y existe una variante alternativa con pesos ponderados e imatrix publicada en un repositorio independiente.
 
 ## Capacidades
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Orientacion |
 |---|---|---|---|---|---|
-| Pyrut-8B-Instruct-Uncensored (GGUF) | 7,6B | no disponible | Apache 2.0 | HuggingFace, GGUF | Codigo sin censura |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace, GGUF, amplia | Generalista |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32K (extensible) | Apache 2.0 | HuggingFace, GGUF, amplia | Codigo |
+| Pyrut-8B-Instruct-Uncensored (GGUF) | 7,6B | no disponible | Apache 2.0 | Hugging Face, GGUF | Codigo sin censura |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face, GGUF, amplia | Generalista |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32K (extensible) | Apache 2.0 | Hugging Face, GGUF, amplia | Codigo |
 
 La comparacion cuantitativa de rendimiento no es posible porque no hay benchmarks publicados para Pyrut-8B en la informacion disponible. Frente a Llama 3.1 8B Instruct y Qwen2.5-Coder-7B-Instruct, las diferencias principales son la ausencia de filtros de seguridad, el enfoque "coding-first" y un ecosistema de soporte mucho menor (182 descargas y 0 likes en el momento de la ficha frente a millones en los modelos alternativos). Qwen2.5-Coder-7B-Instruct comparte licencia Apache 2.0 y una orientacion similar a codigo, por lo que es la alternativa mas directa si se prioriza madurez y soporte; Pyrut solo se justifica cuando se necesita explicitamente la ausencia de moderacion.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa de rendimiento no es posible porque no hay benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-GGUF
 - Modelo base: https://huggingface.co/ImposterOnline/Pyrex-8B-Instruct-Uncensored
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Pyrut-8B-Instruct-Uncensored-i1-GGUF
 - Pagina de resumen del modelo: https://hf.tst.eu/model#Pyrut-8B-Instruct-Uncensored-GGUF

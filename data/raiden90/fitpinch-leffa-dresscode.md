@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Base de difusión | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FitPinch LEFFA DressCode Slim (este repositorio) | Stable Diffusion 1.5 inpainting | Virtual try-on DressCode | MIT | Espejo parcial de 8,2 GB en HuggingFace | Solo la ruta DressCode; excluye VITON-HD y SDXL |
-| franciszzj/Leffa (original) | Stable Diffusion 1.5 inpainting y SDXL inpainting | Virtual try-on DressCode y VITON-HD, transferencia de pose | MIT | Repositorio completo en HuggingFace y GitHub | Incluye las rutas y ejemplos que este espejo elimina |
-| IDM-VTON | Stable Diffusion XL | Virtual try-on de alta fidelidad | No verificada en esta ficha; consultar el repositorio (`yisol/IDM-VTON`) | HuggingFace y demo pública | Mayor coste de VRAM al partir de SDXL |
-| CatVTON | Stable Diffusion 1.5 inpainting | Virtual try-on con arquitectura ligera | No verificada en esta ficha; consultar el repositorio (`Zheng Chong/CatVTON`) | HuggingFace y GitHub | Planteamiento de eficiencia paramétrica frente a Leffa |
+| FitPinch LEFFA DressCode Slim (este repositorio) | Stable Diffusion 1.5 inpainting | Virtual try-on DressCode | MIT | Espejo parcial de 8,2 GB en Hugging Face | Solo la ruta DressCode; excluye VITON-HD y SDXL |
+| franciszzj/Leffa (original) | Stable Diffusion 1.5 inpainting y SDXL inpainting | Virtual try-on DressCode y VITON-HD, transferencia de pose | MIT | Repositorio completo en Hugging Face y GitHub | Incluye las rutas y ejemplos que este espejo elimina |
+| IDM-VTON | Stable Diffusion XL | Virtual try-on de alta fidelidad | No verificada en esta ficha; consultar el repositorio (`yisol/IDM-VTON`) | Hugging Face y demo pública | Mayor coste de VRAM al partir de SDXL |
+| CatVTON | Stable Diffusion 1.5 inpainting | Virtual try-on con arquitectura ligera | No verificada en esta ficha; consultar el repositorio (`Zheng Chong/CatVTON`) | Hugging Face y GitHub | Planteamiento de eficiencia paramétrica frente a Leffa |
 
 Los recuentos de parámetros, longitudes de contexto y resultados de benchmarks de las alternativas no están disponibles en la información proporcionada y no se incluyen para no introducir cifras no verificadas.
 
@@ -91,13 +91,13 @@ Los recuentos de parámetros, longitudes de contexto y resultados de benchmarks 
 - No se publican requisitos de hardware, latencias ni benchmarks, por lo que cualquier planificación de capacidad debe hacerse por medición propia.
 - Licencia MIT declarada tanto por este espejo como por el proyecto original, lo que en principio permite uso comercial; conviene verificar igualmente las licencias de los componentes de terceros (Stable Diffusion 1.5 inpainting, DensePose, OpenPose, HumanParsing) antes de un despliegue en producción.
 - El repositorio tiene 0 descargas y 0 likes, no está validado por la comunidad y no incluye tarjeta de evaluación ni ejemplos de salida.
-- Las fechas de creación y actualización que declara HuggingFace (12 de septiembre de 2026) son anómalas; conviene contrastar la integridad de los pesos mediante suma de comprobación antes de desplegarlos.
+- Las fechas de creación y actualización que declara Hugging Face (12 de septiembre de 2026) son anómalas; conviene contrastar la integridad de los pesos mediante suma de comprobación antes de desplegarlos.
 - Al ser un espejo parcial, actualizaciones del proyecto original no se propagan automáticamente a este repositorio.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/raiden90/fitpinch-leffa-dresscode
-- Proyecto original en HuggingFace: https://huggingface.co/franciszzj/Leffa
+- Repositorio del modelo en Hugging Face: https://huggingface.co/raiden90/fitpinch-leffa-dresscode
+- Proyecto original en Hugging Face: https://huggingface.co/franciszzj/Leffa
 - Repositorio original en GitHub: https://github.com/franciszzj/Leffa
 
 Nota sobre la búsqueda web: la búsqueda realizada no devolvió ningún resultado relevante sobre el modelo. Los únicos resultados recuperados fueron páginas de preguntas y respuestas en chino (Baidu Zhidao, Zhihu) sin relación con Leffa, con el virtual try-on ni con FitPinch. No se dispone, por tanto, de enlaces adicionales a artículos, blogs o demos más allá de los facilitados en la model card.

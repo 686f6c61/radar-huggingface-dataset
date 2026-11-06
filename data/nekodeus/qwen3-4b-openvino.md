@@ -33,7 +33,7 @@ La innovacion tecnica de este artefacto es la cuantizacion de pesos a INT8 con N
 - Conversacion: el repositorio incluye la etiqueta `conversational`, por lo que esta orientado a dialogos multi-turno.
 - Inferencia en CPU: es la capacidad diferencial del artefacto, al estar exportado a OpenVINO IR con pesos INT8.
 - Despliegue en C++ sin Python: el ejemplo de la model card usa `ov::genai::LLMPipeline` directamente.
-- Integracion con el ecosistema HuggingFace vía `optimum-intel` (`OVModelForCausalLM`).
+- Integracion con el ecosistema Hugging Face vía `optimum-intel` (`OVModelForCausalLM`).
 - Razonamiento, generacion de codigo, matematicas, tool calling, capacidades de agente, modo thinking y soporte multilingue: no disponibles en la informacion proporcionada. Dependen del modelo base Qwen3-4B, pero no se documentan en esta model card.
 
 ## Casos de uso
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/qwen3-4b-openvino | 4,0B | OpenVINO IR | INT8 weight-only | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (modelo base) | 4,0B | safetensors | sin cuantizar (BF16/FP16) | no disponible | Apache-2.0 | HuggingFace, repositorio oficial |
-| Versiones GGUF de Qwen3-4B para llama.cpp | 4,0B | GGUF | Q4, Q5, Q8, etc. | no disponible | Apache-2.0 | HuggingFace, repositorios de terceros |
+| Nekodeus/qwen3-4b-openvino | 4,0B | OpenVINO IR | INT8 weight-only | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (modelo base) | 4,0B | safetensors | sin cuantizar (BF16/FP16) | no disponible | Apache-2.0 | Hugging Face, repositorio oficial |
+| Versiones GGUF de Qwen3-4B para llama.cpp | 4,0B | GGUF | Q4, Q5, Q8, etc. | no disponible | Apache-2.0 | Hugging Face, repositorios de terceros |
 
 La comparacion se limita a formato y licencia, ya que no hay datos de rendimiento publicados para esta conversion. La diferencia funcional frente al modelo base es el formato de pesos y la cuantizacion; frente a las versiones GGUF, el backend de ejecucion (OpenVINO en lugar de llama.cpp). No se dispone de otras alternativas documentadas en la informacion proporcionada.
 
@@ -83,6 +83,6 @@ La comparacion se limita a formato y licencia, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nekodeus/qwen3-4b-openvino
+- Repositorio en Hugging Face: https://huggingface.co/Nekodeus/qwen3-4b-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes al modelo (unicamente referencias musicales sin relacion).

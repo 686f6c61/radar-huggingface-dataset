@@ -81,10 +81,10 @@ No se han publicado comparativas directas con alternativas en la informacion dis
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_has_comparison_terms | ~109 M | hasta 512 tokens (encoder base) | Clasificacion binaria de terminos de comparacion | no disponible | HuggingFace, 0 descargas |
+| assertion_sentence_has_comparison_terms | ~109 M | hasta 512 tokens (encoder base) | Clasificacion binaria de terminos de comparacion | no disponible | Hugging Face, 0 descargas |
 | split_sentence_has_comparison_terms (familia StanfordSCALE) | no disponible | no disponible | Assertion complementaria del mismo esquema | no disponible | Referenciada como columna del dataset; metricas no disponibles |
-| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base) | no disponible | hasta 512 tokens | Sentence embeddings de proposito general | no disponible en la informacion | HuggingFace |
-| Clasificadores SetFit genericos | variable | depende del encoder | Clasificacion de texto few-shot | variable | HuggingFace |
+| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base) | no disponible | hasta 512 tokens | Sentence embeddings de proposito general | no disponible en la informacion | Hugging Face |
+| Clasificadores SetFit genericos | variable | depende del encoder | Clasificacion de texto few-shot | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se han publicado comparativas directas con alternativas en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_comparison_terms
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_comparison_terms
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base (encoder): https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

@@ -64,9 +64,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2.h018... | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace (modelo base) |
-| Otros checkpoints de AgentPTB | variable | no disponible | no disponible | HuggingFace (búsqueda `agentic-ptb`) |
+| agentic-ptb/sol-max-v2.h018... | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face (modelo base) |
+| Otros checkpoints de AgentPTB | variable | no disponible | no disponible | Hugging Face (búsqueda `agentic-ptb`) |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h018.pi-agent-sft-v11.step_250
-- Búsqueda de modelos de `agentic-ptb` en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h018.pi-agent-sft-v11.step_250
+- Búsqueda de modelos de `agentic-ptb` en Hugging Face: https://huggingface.co/models?other=agentic-ptb
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no enlazado directamente en la información proporcionada)

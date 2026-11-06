@@ -79,7 +79,7 @@ La comparativa es limitada porque no se dispone de benchmarks. Ling-3.0-tiny des
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lykegenes/Ling-3.0-tiny-oQ4e-fp16
+- Repositorio Hugging Face: https://huggingface.co/Lykegenes/Ling-3.0-tiny-oQ4e-fp16
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Variante similar de mlx-works: https://huggingface.co/mlx-works/Ling-3.0-tiny-oQ4e

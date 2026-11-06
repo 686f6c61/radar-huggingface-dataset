@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed44` es un checkpoint publicado en HuggingFace por el usuario `cyttic` (aparentemente vinculado al centro tecnológico CYTTIC). Por su nomenclatura —prefijo `exp39`, referencia a CTC (Connectionist Temporal Classification), `human10`, `uninoaug`, `hhdgeom`, `llmgen` y `seed44`— se trata con toda probabilidad de un experimento de reconocimiento de voz (ASR) o de modelado de secuencias con salida CTC, no de un modelo de lenguaje generativo al uso, a pesar de que el identificador contenga la cadena `llmgen`. El número de parámetros declarado en safetensors es de 87.279.756 (aproximadamente 87,3 M), un tamaño típico de modelos acústicos CTC de escala media.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed44` es un checkpoint publicado en Hugging Face por el usuario `cyttic` (aparentemente vinculado al centro tecnológico CYTTIC). Por su nomenclatura —prefijo `exp39`, referencia a CTC (Connectionist Temporal Classification), `human10`, `uninoaug`, `hhdgeom`, `llmgen` y `seed44`— se trata con toda probabilidad de un experimento de reconocimiento de voz (ASR) o de modelado de secuencias con salida CTC, no de un modelo de lenguaje generativo al uso, a pesar de que el identificador contenga la cadena `llmgen`. El número de parámetros declarado en safetensors es de 87.279.756 (aproximadamente 87,3 M), un tamaño típico de modelos acústicos CTC de escala media.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no aporta información sobre arquitectura, datos de entrenamiento, idiomas, evaluación ni uso previsto. La única información verificable proviene de los metadatos del repositorio: licencia MIT, formato safetensors, tamaño de repo de 0,3 GB y una referencia genérica al paper de Lacoste et al. (2019) sobre emisiones de carbono (arxiv:1910.09700), que aparece únicamente como enlace de la plantilla y no como paper del modelo.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no aporta información sobre arquitectura, datos de entrenamiento, idiomas, evaluación ni uso previsto. La única información verificable proviene de los metadatos del repositorio: licencia MIT, formato safetensors, tamaño de repo de 0,3 GB y una referencia genérica al paper de Lacoste et al. (2019) sobre emisiones de carbono (arxiv:1910.09700), que aparece únicamente como enlace de la plantilla y no como paper del modelo.
 
 Por tanto, esta ficha se redacta con la información estrictamente disponible. Cualquier dato no confirmado se marca explícitamente como "no disponible". El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un checkpoint de investigación interno más que un artefacto destinado a producción.
 
@@ -67,9 +67,9 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea exa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-... | ~87,3 M | no disponible | MIT | HuggingFace (0 descargas) |
-| wav2vec 2.0 Base (referencia) | ~95 M | no aplica (audio) | MIT | HuggingFace |
-| Whisper small (referencia) | ~244 M | 30 s de audio | MIT | HuggingFace |
+| cyttic/exp39-ctc-... | ~87,3 M | no disponible | MIT | Hugging Face (0 descargas) |
+| wav2vec 2.0 Base (referencia) | ~95 M | no aplica (audio) | MIT | Hugging Face |
+| Whisper small (referencia) | ~244 M | 30 s de audio | MIT | Hugging Face |
 
 La comparativa es meramente indicativa por escala; no implica equivalencia funcional ni de rendimiento.
 
@@ -85,6 +85,6 @@ La comparativa es meramente indicativa por escala; no implica equivalencia funci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k-seed44
 - Paper referenciado en la plantilla (no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

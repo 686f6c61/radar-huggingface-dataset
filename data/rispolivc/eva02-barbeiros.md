@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rispolivc/eva02-barbeiros es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario rispolivc. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura EVA-02, la familia de Vision Transformers desarrollada por BAAI, tal y como se distribuye en la librería `timm`. El repositorio contiene 85.761.027 parámetros (dato real leído de los pesos `safetensors`) y se publica bajo licencia Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales.
+rispolivc/eva02-barbeiros es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario rispolivc. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura EVA-02, la familia de Vision Transformers desarrollada por BAAI, tal y como se distribuye en la librería `timm`. El repositorio contiene 85.761.027 parámetros (dato real leído de los pesos `safetensors`) y se publica bajo licencia Apache 2.0, lo que en principio permite uso comercial sin restricciones adicionales.
 
 Por el tamaño de parámetros, la variante es compatible con una configuración "base" de EVA-02 (ViT con parches de 14x14), aunque la model card no confirma ni el nombre exacto del checkpoint de partida ni la resolución de entrada. El nombre del modelo ("barbeiros") sugiere un dominio de aplicación concreto (barberías, peluquería o un conjunto de datos temático), pero la model card no documenta el dataset de entrenamiento, el número de clases ni las etiquetas de salida.
 
@@ -25,7 +25,7 @@ El modelo apenas tiene tracción en la comunidad: 0 descargas y 0 likes en el mo
 | Resolución de entrada | no disponible |
 | Preprocesado (media, desviación, interpolación) | no disponible |
 | Tamaño del repositorio | 1,4 GB |
-| Fecha de creación en HuggingFace | 2026-09-24 (según metadatos del repo) |
+| Fecha de creación en Hugging Face | 2026-09-24 (según metadatos del repo) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,11 +75,11 @@ La comparación de rendimiento no es posible porque no hay métricas publicadas 
 
 | Modelo | Parámetros | Entrada típica | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| rispolivc/eva02-barbeiros | 85,76 M | no documentada | apache-2.0 | HuggingFace (0 descargas) | no disponible |
-| EVA-02 base (BAAI, vía `timm`) | ≈86-88 M (aproximado) | 224-448 px | apache-2.0 | `timm` / HuggingFace (BAAI) | no comparable sin datos del ajuste |
-| ViT-Base/16 (Google) | ≈86 M | 224 px | apache-2.0 (pesos originales) | `timm`, HuggingFace | no comparable sin datos del ajuste |
-| ConvNeXt-Base | ≈89 M | 224 px | apache-2.0 | `timm`, HuggingFace | no comparable sin datos del ajuste |
-| Swin-Base | ≈88 M | 224 px | apache-2.0 | `timm`, HuggingFace | no comparable sin datos del ajuste |
+| rispolivc/eva02-barbeiros | 85,76 M | no documentada | apache-2.0 | Hugging Face (0 descargas) | no disponible |
+| EVA-02 base (BAAI, vía `timm`) | ≈86-88 M (aproximado) | 224-448 px | apache-2.0 | `timm` / Hugging Face (BAAI) | no comparable sin datos del ajuste |
+| ViT-Base/16 (Google) | ≈86 M | 224 px | apache-2.0 (pesos originales) | `timm`, Hugging Face | no comparable sin datos del ajuste |
+| ConvNeXt-Base | ≈89 M | 224 px | apache-2.0 | `timm`, Hugging Face | no comparable sin datos del ajuste |
+| Swin-Base | ≈88 M | 224 px | apache-2.0 | `timm`, Hugging Face | no comparable sin datos del ajuste |
 
 Nota: las cifras de parámetros de los modelos de referencia son aproximadas y proceden de sus respectivas fichas; este modelo podría diferir ligeramente en el número de parámetros de la cabeza de clasificación según el número de clases del ajuste.
 
@@ -97,8 +97,8 @@ Nota: las cifras de parámetros de los modelos de referencia son aproximadas y p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rispolivc/eva02-barbeiros
+- Modelo en Hugging Face: https://huggingface.co/rispolivc/eva02-barbeiros
 - Paper de EVA-02 (BAAI, referencia de la arquitectura): https://arxiv.org/abs/2303.11331
 - Repositorio de `timm` (implementación y pesos de la familia EVA-02): https://github.com/huggingface/pytorch-image-models
-- Organización BAAI en HuggingFace (checkpoints EVA-02 de referencia): https://huggingface.co/BAAI
+- Organización BAAI en Hugging Face (checkpoints EVA-02 de referencia): https://huggingface.co/BAAI
 - Documentación del pipeline `image-classification` de Transformers: https://huggingface.co/docs/transformers/main/en/tasks/image_classification

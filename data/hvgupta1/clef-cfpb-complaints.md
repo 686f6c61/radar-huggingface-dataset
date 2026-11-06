@@ -120,7 +120,7 @@ La comparativa se limita a las alternativas reportadas en la model card. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hvgupta1/clef-cfpb-complaints
+- Modelo en Hugging Face: https://huggingface.co/hvgupta1/clef-cfpb-complaints
 - Modelo base Cloudflare/clef: https://huggingface.co/Cloudflare/clef
 - Dataset de entrenamiento: https://huggingface.co/datasets/hvgupta1/cfpb-bank-complaints-benchmark
 - Repositorio clef-tune y metodologia de benchmarks: https://github.com/hersh-gupta/clef-tune/tree/main/benchmarks/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama_3_40_percent_compression_Q4_K_M` es un artefacto GGUF publicado por el usuario PruningEverything en HuggingFace. Consiste en una versión de un modelo de la familia Llama 3 comprimida en un 40 % mediante poda y posteriormente cuantizada a Q4_K_M. Los metadatos del repositorio declaran 4.790.898.688 parámetros (aproximadamente 4,79 mil millones) y un tamaño de 4,2 GB, cifras coherentes con un Llama 3 8B al que se le ha eliminado cerca del 40 % de su capacidad.
+`llama_3_40_percent_compression_Q4_K_M` es un artefacto GGUF publicado por el usuario PruningEverything en Hugging Face. Consiste en una versión de un modelo de la familia Llama 3 comprimida en un 40 % mediante poda y posteriormente cuantizada a Q4_K_M. Los metadatos del repositorio declaran 4.790.898.688 parámetros (aproximadamente 4,79 mil millones) y un tamaño de 4,2 GB, cifras coherentes con un Llama 3 8B al que se le ha eliminado cerca del 40 % de su capacidad.
 
 El problema que aborda es la reducción del coste de almacenamiento y de inferencia de un LLM de la familia Llama 3 sin reentrenar desde cero, combinando poda estructurada o no estructurada con cuantización de 4 bits. Sin embargo, el autor no publica model card técnica: la única información del README es la licencia, y no se documenta el método de poda, el proceso de recuperación de calidad ni el modelo base exacto.
 
@@ -92,6 +92,6 @@ La comparación relevante es con el Llama 3 8B sin podar en la misma cuantizaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llama_3_40_percent_compression_Q4_K_M
+- Hugging Face: https://huggingface.co/PruningEverything/llama_3_40_percent_compression_Q4_K_M
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, al autor ni al proceso de poda; los resultados devueltos corresponden a páginas de Patreon sin relación con el artefacto.
 - Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada.

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (tipo MMLU, HumanEval o GS
 
 | Modelo | Tipo | Contexto / resolucion de trabajo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Angais/Krea-2-PixelArt-16x16 | LoRA sobre Krea 2 (rango 32 / alpha 32) | 512x512 de salida, rejilla de 16x16 sprites | krea-2-community-license | HuggingFace, diffusers |
-| krea/Krea-2-Raw | Modelo base de texto a imagen | No disponible | krea-2-community-license | HuggingFace |
-| krea/Krea-2-Turbo | Modelo base de texto a imagen (variante turbo) | No disponible | krea-2-community-license | HuggingFace |
+| Angais/Krea-2-PixelArt-16x16 | LoRA sobre Krea 2 (rango 32 / alpha 32) | 512x512 de salida, rejilla de 16x16 sprites | krea-2-community-license | Hugging Face, diffusers |
+| krea/Krea-2-Raw | Modelo base de texto a imagen | No disponible | krea-2-community-license | Hugging Face |
+| krea/Krea-2-Turbo | Modelo base de texto a imagen (variante turbo) | No disponible | krea-2-community-license | Hugging Face |
 
 No se dispone en la informacion proporcionada de datos comparativos con otras LoRAs de pixel art, ni de resultados de rendimiento de alternativas con los que contrastar las metricas del autor. Las cifras de la tabla de benchmarks son mediciones propias del autor sobre su propio conjunto de 80 renders, no comparaciones externas.
 
@@ -93,11 +93,11 @@ No se dispone en la informacion proporcionada de datos comparativos con otras Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Angais/Krea-2-PixelArt-16x16
+- Modelo en Hugging Face: https://huggingface.co/Angais/Krea-2-PixelArt-16x16
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante usada en inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Dataset de entrenamiento (550 iconos sinteticos 16x16, CC0): https://huggingface.co/datasets/Angais/krea-2-pixelart-16x16-synthetic
 - Texto de la licencia (Krea 2 Community License Agreement): https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf
 - Politica de uso aceptable de Krea: https://www.krea.ai/krea-2-use-policy
-- Archivo NOTICE del repositorio: disponible en el propio repositorio de HuggingFace
+- Archivo NOTICE del repositorio: disponible en el propio repositorio de Hugging Face
 - Los resultados de la busqueda web recibidos no guardan relacion con este modelo (corresponden a la clase Ranger de Divinity: Original Sin) y se han descartado.

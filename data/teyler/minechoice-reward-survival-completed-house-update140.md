@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MineChoice-reward-survival-completed-house-update140 es un checkpoint de politica de aprendizaje por refuerzo publicado por el usuario teyler en HuggingFace. No es un modelo de lenguaje ni un modelo de vision: es un perceptron multicapa (MLP) categorico de 31.789 parametros que mapea un vector de 73 caracteristicas de estado estructurado de Minecraft a una de 45 acciones discretas. El autor lo entrenó sobre transiciones de recompensa reales de Minecraft Java 1.20.4, sin usar pixeles y sin fallback a un profesor externo.
+MineChoice-reward-survival-completed-house-update140 es un checkpoint de politica de aprendizaje por refuerzo publicado por el usuario teyler en Hugging Face. No es un modelo de lenguaje ni un modelo de vision: es un perceptron multicapa (MLP) categorico de 31.789 parametros que mapea un vector de 73 caracteristicas de estado estructurado de Minecraft a una de 45 acciones discretas. El autor lo entrenó sobre transiciones de recompensa reales de Minecraft Java 1.20.4, sin usar pixeles y sin fallback a un profesor externo.
 
 El checkpoint corresponde a la actualizacion 140 de un entrenamiento que acumula 7.084 transiciones optimizadas; la actualizacion 140 concreta se entrenó con 54 transiciones reales de recompensa. En la episodio de mundo continuado `20260928-100156-train-persistent-002` el bot completo una casa de 52 partes en las coordenadas `{'x': 185, 'y': 118, 'z': -111}` y fabrico un pico de hierro de repuesto. El autor advierte explicitamente de que este checkpoint no ha superado Minecraft y de que no existe una tasa de exito en partida completa ni una muerte del Ender Dragon verificada por servidor.
 
@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/teyler/MineChoice-reward-survival-completed-house-update140
+- Hugging Face: https://huggingface.co/teyler/MineChoice-reward-survival-completed-house-update140
 - Ficheros incluidos en el repositorio: `model.safetensors`, `policy.json`, `config.json`, `milestone_evidence.json`
 - Resultados de busqueda web: las busquedas realizadas no devolvieron enlaces relevantes sobre este modelo. Los resultados obtenidos (Google, perfil de itch.io de TylerChoice, character.ai, Grok y Microsoft Rewards) no guardan relacion con el checkpoint y no se incluyen.

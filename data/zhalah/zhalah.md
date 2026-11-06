@@ -30,7 +30,7 @@ No se ha proporcionado información alguna sobre la arquitectura, el proceso de 
 
 ## Casos de uso
 
-Dado que no se dispone de información técnica ni de funcionalidades verificadas, no es posible proponer casos de uso concretos. El repositorio carece de documentación y de cualquier dato que permita evaluar su aplicabilidad en escenarios reales. Se recomienda consultar el repositorio en HuggingFace para verificar si se publican actualizaciones futuras.
+Dado que no se dispone de información técnica ni de funcionalidades verificadas, no es posible proponer casos de uso concretos. El repositorio carece de documentación y de cualquier dato que permita evaluar su aplicabilidad en escenarios reales. Se recomienda consultar el repositorio en Hugging Face para verificar si se publican actualizaciones futuras.
 
 ## Benchmarks y rendimiento
 
@@ -57,4 +57,4 @@ No se puede realizar una comparativa porque no se conoce la categoría del model
 
 ## Enlaces
 
-- [HuggingFace: Zhalah/Zhalah](https://huggingface.co/Zhalah/Zhalah)
+- [Hugging Face: Zhalah/Zhalah](https://huggingface.co/Zhalah/Zhalah)

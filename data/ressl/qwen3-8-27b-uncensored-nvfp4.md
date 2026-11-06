@@ -82,11 +82,11 @@ Rendimiento medido: 44 tok/s de decodificación en SGLang, TP1, con cuantizació
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ressl/Qwen3.8-27B-uncensored-NVFP4 | ~18,8B (denominado 27B) | 262.144 | NVFP4 solo en MLP; resto BF16; 30,1 GB | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| preetpatel/Qwen3.8-27B-Uncensored-NVFP4 | No disponible | 160k en RTX 5090 | NVFP4 (W4A4); ~19 GB | No disponible | HuggingFace |
-| DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark | No disponible | No disponible | NVFP4 con calibración MSE | No disponible | HuggingFace |
+| ressl/Qwen3.8-27B-uncensored-NVFP4 | ~18,8B (denominado 27B) | 262.144 | NVFP4 solo en MLP; resto BF16; 30,1 GB | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| preetpatel/Qwen3.8-27B-Uncensored-NVFP4 | No disponible | 160k en RTX 5090 | NVFP4 (W4A4); ~19 GB | No disponible | Hugging Face |
+| DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark | No disponible | No disponible | NVFP4 con calibración MSE | No disponible | Hugging Face |
 | orcarouter/Qwen3.8-27B-Uncensored | 27B | No disponible | 16 tags de 2 a 8 bits con mmproj de visión incluido | No disponible | Ollama |
-| Qwen/Qwen3.8-27B (base sin abliterar) | 27B | No disponible | BF16 | Apache-2.0 | HuggingFace, GitHub |
+| Qwen/Qwen3.8-27B (base sin abliterar) | 27B | No disponible | BF16 | Apache-2.0 | Hugging Face, GitHub |
 
 Frente a las otras exportaciones NVFP4 de la misma familia, este repositorio es el más conservador en la cuantización (solo MLP en FP4) y por tanto el más pesado, a cambio de una pérdida de calidad medible muy baja. Las alternativas son más ligeras y caben en GPUs de consumo, pero no publican cifras de rechazo ni auditoría de cuantización.
 
@@ -106,7 +106,7 @@ Frente a las otras exportaciones NVFP4 de la misma familia, este repositorio es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ressl/Qwen3.8-27B-uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ressl/Qwen3.8-27B-uncensored-NVFP4
 - Modelo base abliterado en BF16: https://huggingface.co/ressl/Qwen3.8-27B-uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
@@ -114,6 +114,6 @@ Frente a las otras exportaciones NVFP4 de la misma familia, este repositorio es 
 - Exportación NVFP4 con calibración MSE para DGX Spark: https://huggingface.co/DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark
 - Build de Ollama del modelo abliterado: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Ficha en ThinkLLM: https://thinkllm.dev/models/qwen3-8-27b-uncensored-nvfp4
-- Perfil del autor en HuggingFace: https://huggingface.co/ressl
+- Perfil del autor en Hugging Face: https://huggingface.co/ressl
 - Sitio web del autor: https://ressl.ch/
 - LinkedIn del autor: https://www.linkedin.com/in/robertressl/

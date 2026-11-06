@@ -86,10 +86,10 @@ Comparativa con modelos pequeños:
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ChonkyKedi-mini-base | 72,6 M | 1.024 | Apache 2.0 | HuggingFace | Base, solo inglés, 4,13 B tokens |
-| Pythia-70M | 70,4 M | 2.048 | Apache 2.0 | HuggingFace | 300 B tokens (the Pile), suite de ablación de EleutherAI |
-| GPT-2 | 124,4 M | 1.024 | MIT | HuggingFace | Pesos y datos de entrenamiento no divulgados |
-| Supra-50M | 51,8 M | no disponible | no disponible | HuggingFace | 20 B tokens de FineWeb-Edu, mejor SciQ y ARC-Easy que ChonkyKedi-mini |
+| ChonkyKedi-mini-base | 72,6 M | 1.024 | Apache 2.0 | Hugging Face | Base, solo inglés, 4,13 B tokens |
+| Pythia-70M | 70,4 M | 2.048 | Apache 2.0 | Hugging Face | 300 B tokens (the Pile), suite de ablación de EleutherAI |
+| GPT-2 | 124,4 M | 1.024 | MIT | Hugging Face | Pesos y datos de entrenamiento no divulgados |
+| Supra-50M | 51,8 M | no disponible | no disponible | Hugging Face | 20 B tokens de FineWeb-Edu, mejor SciQ y ARC-Easy que ChonkyKedi-mini |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Comparativa con modelos pequeños:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edededdy/ChonkyKedi-mini-base
+- Modelo en Hugging Face: https://huggingface.co/edededdy/ChonkyKedi-mini-base
 - FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - SmolLM-Corpus (Cosmopedia v2): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

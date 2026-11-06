@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hydrahul/dino-demo68` es un repositorio publicado en HuggingFace por el usuario hydrahul que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de clasificación. Según su model card, se trata de un andamiaje reproducible con configuración explícita y un checkpoint de inicialización: no es una release de un modelo entrenado ni se reclama ninguna métrica de rendimiento sobre él.
+`hydrahul/dino-demo68` es un repositorio publicado en Hugging Face por el usuario hydrahul que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de clasificación. Según su model card, se trata de un andamiaje reproducible con configuración explícita y un checkpoint de inicialización: no es una release de un modelo entrenado ni se reclama ninguna métrica de rendimiento sobre él.
 
 El dato más relevante del repositorio es su escala real: el fichero `model.safetensors` declara 16.576 parámetros totales, muy por debajo de cualquier backbone de clasificación habitual. La propia model card describe la variante como "xlarge", lo que resulta incoherente con ese recuento de parámetros y apunta a un andamiaje autogenerado o de demostración en lugar de a un modelo con arquitectura escalada de forma real.
 
@@ -22,7 +22,7 @@ Por tanto, su interés no es como modelo utilizable en producción, sino como ar
 | Formato de pesos | safetensors (`model.safetensors`); incluye codigo PyTorch en `main.py` |
 | Tamano del repositorio | 0,0 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-01 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ No hay información sobre volumen de datos de entrenamiento, composición del da
 
 - Punto de partida para investigación en arquitecturas de clasificación: el repositorio ofrece una implementación concreta con GQA, co-attention, approx gelu y rmsnorm sobre la que experimentar con variantes, siempre partiendo de cero en el entrenamiento.
 - Prueba de humo (smoke test) en pipelines de CI: al ser un checkpoint de inicialización de 16.576 parámetros, permite verificar que los flujos de carga de safetensors, serialización y ejecución del script funcionan antes de escalar a modelos reales.
-- Material didáctico: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace (config, training args, pesos y script) sin la complejidad ni el coste de cómputo de un modelo grande.
+- Material didáctico: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face (config, training args, pesos y script) sin la complejidad ni el coste de cómputo de un modelo grande.
 - Validación de integraciones de carga: útil para comprobar adaptadores personalizados de carga, dado que la implementación es propia y no se apoya en APIs automáticas estándar.
 - Banco de pruebas de recetas de entrenamiento: permite iterar sobre configuraciones de optimizador y schedule (el repositorio trae Adam con schedule step) en un entorno de coste prácticamente nulo.
 - Pruebas de exportación y despliegue a pequeña escala: al ser minúsculo, es adecuado para verificar conversiones a ONNX o TorchScript y la integración en servicios de inferencia ligeros antes de aplicar el mismo pipeline a modelos mayores.
@@ -94,6 +94,6 @@ Advertencia: la etiqueta "dino" de este repositorio no implica relación con las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hydrahul/dino-demo68
+- Hugging Face: https://huggingface.co/hydrahul/dino-demo68
 - Ficheros incluidos en el repositorio: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

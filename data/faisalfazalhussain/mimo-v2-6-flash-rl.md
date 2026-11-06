@@ -6,7 +6,7 @@ MiMo-V2.6-Flash-RL es un modelo multimodal de tipo sparse Mixture of Experts (Mo
 
 La innovación técnica más destacable es el sistema de calificación agéntica por grupos: como una señal binaria de éxito/fracaso no permite ordenar varias soluciones correctas, se incorporan Groupwise Reward Synthesis (GRS), que construye rúbricas específicas por tarea a partir de rollouts contrastados, y Groupwise Advantage Redistribution (GAR), que reordena en línea las trayectorias que pasan los tests y desplaza la ventaja hacia las de mayor calidad. A esto se suma MOPD2 (Multi-Prefix Multi-Teacher On-Policy Distillation), que combina rollouts autónomos del estudiante con rollouts de un solo turno condicionados por prefijos de profesor y de SFT para extender capacidades a tareas difíciles de verificar sin regenerar turnos previos.
 
-Esta ficha se elabora a partir de la información de la model card y de los metadatos de HuggingFace. Conviene señalar una discrepancia relevante: el repositorio consultado figura bajo el usuario FAISALFAZALHUSSAIN con 0 descargas y 0 likes, mientras que la model card enlaza al repositorio oficial de XiaomiMiMo, por lo que el artefacto descrito podría ser una réplica no oficial. Los resultados de benchmarks incluidos proceden exclusivamente de la model card del autor y no se ha localizado verificación independiente.
+Esta ficha se elabora a partir de la información de la model card y de los metadatos de Hugging Face. Conviene señalar una discrepancia relevante: el repositorio consultado figura bajo el usuario FAISALFAZALHUSSAIN con 0 descargas y 0 likes, mientras que la model card enlaza al repositorio oficial de XiaomiMiMo, por lo que el artefacto descrito podría ser una réplica no oficial. Los resultados de benchmarks incluidos proceden exclusivamente de la model card del autor y no se ha localizado verificación independiente.
 
 ## Especificaciones tecnicas
 
@@ -118,7 +118,7 @@ Dentro de la propia familia, Flash-RL se sitúa por debajo de Pro-RL en todos lo
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/FAISALFAZALHUSSAIN/MiMo-V2.6-Flash-RL
+- Repositorio consultado en Hugging Face: https://huggingface.co/FAISALFAZALHUSSAIN/MiMo-V2.6-Flash-RL
 - Repositorio oficial de referencia (Xiaomi): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Modelo hermano Pro-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - ModelScope (Pro-RL): https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL

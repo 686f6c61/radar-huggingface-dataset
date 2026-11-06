@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moss-Image-LoRa es un adaptador LoRA publicado en HuggingFace por el usuario Zabin bajo licencia Apache 2.0. Por el nombre y la ausencia de documentación adicional, se trata presumiblemente de un ajuste fino ligero (Low-Rank Adaptation) sobre algún modelo base de generación de imágenes, aunque la model card no especifica cuál es ese modelo base ni incluye información sobre el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni métricas de rendimiento.
+Moss-Image-LoRa es un adaptador LoRA publicado en Hugging Face por el usuario Zabin bajo licencia Apache 2.0. Por el nombre y la ausencia de documentación adicional, se trata presumiblemente de un ajuste fino ligero (Low-Rank Adaptation) sobre algún modelo base de generación de imágenes, aunque la model card no especifica cuál es ese modelo base ni incluye información sobre el proceso de entrenamiento. El repositorio no incluye pipeline declarado, idiomas soportados ni métricas de rendimiento.
 
 La relevancia de esta ficha es limitada: el repositorio presenta cero descargas y cero likes en el momento de la consulta, y la model card se reduce a la declaración de licencia. No hay información publicada sobre arquitectura, datos de entrenamiento, capacidades o benchmarks. Cualquier evaluación práctica requeriría inspeccionar los archivos de pesos del repositorio y conocer el modelo base sobre el que se aplica el adaptador, dato que no está disponible en la información proporcionada.
 
@@ -41,7 +41,7 @@ No se dispone de información sobre innovaciones técnicas, métodos de muestreo
 - Prototipado de pipelines de difusión personalizados: útil únicamente en entornos de investigación donde se acepte la falta de documentación y se validen los resultados manualmente.
 - Pruebas de compatibilidad de LoRA: sirve como caso de estudio para verificar la carga de adaptadores en frameworks como diffusers o ComfyUI, aunque sin garantías de que el adaptador esté correctamente formado.
 - Evaluación comparativa interna: podría incluirse en un banco de pruebas propio para medir su impacto frente a otros adaptadores, asumiendo que se dispone del modelo base y de un conjunto de prompts de referencia.
-- Docencia y aprendizaje sobre LoRA: el repositorio puede usarse como ejemplo de publicación mínima en HuggingFace, útil para discutir buenas prácticas de model cards y reproducibilidad.
+- Docencia y aprendizaje sobre LoRA: el repositorio puede usarse como ejemplo de publicación mínima en Hugging Face, útil para discutir buenas prácticas de model cards y reproducibilidad.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni tareas de texto, ya que no hay evidencia de que el modelo las soporte.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No se han identificado adaptadores comparables en la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zabin/Moss-Image-LoRa
+- Repositorio en Hugging Face: https://huggingface.co/Zabin/Moss-Image-LoRa
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

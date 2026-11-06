@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada para inferencia: no disponible con exactitud, pero con 4.455.586.816 parametros en precision FP16 se necesitan aproximadamente 8.9 GB solo para los pesos. Con overhead de activaciones y KV cache, se estima un minimo de 12-16 GB de VRAM.
 - GPU recomendadas: para inferencia en FP16, una GPU con 16 GB de VRAM (RTX 4080, RTX 4090, A10G) seria suficiente. Para entrenamiento o fine-tuning adicional, se requieren GPUs con 24 GB o mas (A100, H100).
 - Compatibilidad con GPU de consumo: si, una RTX 4090 (24 GB) o RTX 4080 (16 GB) pueden ejecutar el modelo en FP16. Con cuantizacion a 8 bits, una GPU con 8-10 GB podria ser suficiente, aunque no se proporcionan cuantizaciones oficiales.
-- Opciones de despliegue: vLLM es compatible segun la informacion de HuggingFace (endpoints_compatible). Tambien se puede usar Transformers con PyTorch directamente. No se menciona compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: vLLM es compatible segun la informacion de Hugging Face (endpoints_compatible). Tambien se puede usar Transformers con PyTorch directamente. No se menciona compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponible. Al ser una arquitectura MoE con 1 de 8 expertos activos, la latencia podria ser menor que un modelo denso equivalente, pero no hay datos empiricos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KKHYA/llavaqwen3-1.7b-finetune (base) | ~1.7B | no disponible | Densa (LLaVA-Qwen3) | Apache 2.0 | HuggingFace |
-| Este modelo (1of8, randrouter) | 4.46B | no disponible | MoE dispersa (1/8 expertos) | Apache 2.0 | HuggingFace |
-| KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit | no disponible | no disponible | MoE dispersa (1/4 expertos) | Apache 2.0 | HuggingFace |
+| KKHYA/llavaqwen3-1.7b-finetune (base) | ~1.7B | no disponible | Densa (LLaVA-Qwen3) | Apache 2.0 | Hugging Face |
+| Este modelo (1of8, randrouter) | 4.46B | no disponible | MoE dispersa (1/8 expertos) | Apache 2.0 | Hugging Face |
+| KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit | no disponible | no disponible | MoE dispersa (1/4 expertos) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo autor, ya que no hay informacion suficiente sobre modelos comparables de otros desarrolladores. La diferencia principal entre las variantes es el numero de expertos activos (1 de 4 vs 1 de 8) y la inicializacion del router (importancia vs aleatoria). No se dispone de datos de rendimiento para comparar la calidad entre estas variantes.
 
@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo autor, ya que no hay informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260830_185935
+- Modelo en Hugging Face: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260830_185935
 - Modelo base: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune
 - Variante 1of4 con router por importancia: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit-lr5e-4-sd43_20260830_074131
 - Variante 1of8 anterior: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of8-imp-randrouter_20260828_083349

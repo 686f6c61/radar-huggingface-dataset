@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ldov/Kimodo-SOMA-RP-v1.1-GGML | 283.282.523 | No disponible | GGUF/GGML F32 | Other (NVIDIA Open Model License) | HuggingFace, 0 descargas |
-| nvidia/Kimodo-SOMA-RP-v1.1 (modelo base) | No disponible en esta busqueda | No disponible | Pesos originales de NVIDIA | NVIDIA Open Model License | HuggingFace (upstream) |
+| ldov/Kimodo-SOMA-RP-v1.1-GGML | 283.282.523 | No disponible | GGUF/GGML F32 | Other (NVIDIA Open Model License) | Hugging Face, 0 descargas |
+| nvidia/Kimodo-SOMA-RP-v1.1 (modelo base) | No disponible en esta busqueda | No disponible | Pesos originales de NVIDIA | NVIDIA Open Model License | Hugging Face (upstream) |
 | Otras alternativas de text-to-motion | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del modelo base ni de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.

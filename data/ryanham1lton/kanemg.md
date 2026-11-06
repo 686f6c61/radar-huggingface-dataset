@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KaneMG es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible se limita a los metadatos del repositorio: no se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni caracteristicas tecnicas. El repositorio ocupa 0,2 GB y fue creado el 2 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta.
+KaneMG es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible se limita a los metadatos del repositorio: no se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni caracteristicas tecnicas. El repositorio ocupa 0,2 GB y fue creado el 2 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 No es posible determinar que problema resuelve el modelo, su arquitectura ni su tamano en parametros a partir de la informacion proporcionada. La model card unicamente contiene el campo de licencia, sin texto descriptivo adicional.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/KaneMG
+- Hugging Face: https://huggingface.co/Ryanham1lton/KaneMG
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en la busqueda web proporcionada.

@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento publicados para este checkpoint, por lo qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/sol-high.h017 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B (referencia) | 8B | 128K | Llama 3.1 | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/sol-high.h017 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B (referencia) | 8B | 128K | Llama 3.1 | Hugging Face |
 
 No se incluyen más alternativas porque no hay datos de rendimiento que permitan una comparación justa. La comparativa se limita a parámetros y disponibilidad.
 
@@ -80,6 +80,6 @@ No se incluyen más alternativas porque no hay datos de rendimiento que permitan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h017.maxrl-rebase-wide.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h017.maxrl-rebase-wide.step_1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX` (no disponible en la información proporcionada)

@@ -84,6 +84,6 @@ No disponible. No se dispone de información sobre el modelo base (licencia, con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Goose-7.2B-G1l-20261031-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Goose-7.2B-G1l-20261031-GGUF
 - Modelo base: https://huggingface.co/Lambent/Goose-7.2B-G1l-20261031
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge` es un modelo de lenguaje publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino de una fusión de pesos (*weight merging*) generada con mergekit: combina tres checkpoints del mismo entrenamiento (`global_step3000`, `global_step4000` y `global_step5000`) mediante el método Linear con normalización activada, tomando `global_step5000` como modelo base. El resultado es un modelo de arquitectura `gpt_neox` con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) almacenados en safetensors, con un repositorio de 13,7 GB.
+`sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge` es un modelo de lenguaje publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No se trata de un entrenamiento desde cero, sino de una fusión de pesos (*weight merging*) generada con mergekit: combina tres checkpoints del mismo entrenamiento (`global_step3000`, `global_step4000` y `global_step5000`) mediante el método Linear con normalización activada, tomando `global_step5000` como modelo base. El resultado es un modelo de arquitectura `gpt_neox` con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) almacenados en safetensors, con un repositorio de 13,7 GB.
 
 El interés del artefacto es doble. Por un lado, documenta una práctica habitual en entrenamiento a gran escala: en lugar de elegir un único checkpoint, promediar los pesos de varios pasos consecutivos para obtener un modelo más estable, técnica emparentada con los *model soups* (el tag `arxiv:2203.05482` apunta a ese artículo de referencia). Por otro, las rutas internas que aparecen en la model card (`/opt/tiger/Pan_Safety_Better_Measurement/...filtered_insert_xxf_character/...`) sugieren que forma parte de una infraestructura interna de investigación en seguridad y evaluación de modelos, y que los checkpoints originales no están publicados.
 
@@ -12,7 +12,7 @@ La información pública es mínima: no hay licencia declarada, no se indican id
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | `gpt_neox` (transformer decoder-only; tag `gpt_neox` en HuggingFace) |
+| Arquitectura | `gpt_neox` (transformer decoder-only; tag `gpt_neox` en Hugging Face) |
 | Parámetros totales | 6.856.253.440 (dato real de safetensors) |
 | Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -38,7 +38,7 @@ No hubo entrenamiento adicional en este repositorio: el modelo es el resultado d
 
 - Generación de texto autoregresiva: la etiqueta de pipeline es `text-generation` y la librería declarada es `transformers`, por lo que el uso previsto es la generación de texto estándar.
 - Conversación: el tag `conversational` figura entre los metadatos del repositorio, lo que indica que el formato de diálogo está contemplado, aunque no se especifica la plantilla de chat ni el formato de turnos.
-- Compatibilidad con *endpoints*: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo está preparado para servirse mediante Text Generation Inference y para despliegues compatibles con los *endpoints* gestionados de HuggingFace.
+- Compatibilidad con *endpoints*: los tags `text-generation-inference` y `endpoints_compatible` indican que el modelo está preparado para servirse mediante Text Generation Inference y para despliegues compatibles con los *endpoints* gestionados de Hugging Face.
 - Tool calling / function calling: no disponible; no hay ninguna mención en la model card ni en los tags.
 - Capacidades de agente y razonamiento multi-paso: no disponible; no hay evidencia documental.
 - Capacidades multilingües: no disponible; el repositorio no declara idiomas.
@@ -75,7 +75,7 @@ La información disponible no identifica modelos comparables externos ni proporc
 
 | Modelo | Rol en la fusión | Peso en el merge | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge` | Resultado promediado | no aplica | 6.856.253.440 | no disponible | no disponible | Público en HuggingFace |
+| `sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge` | Resultado promediado | no aplica | 6.856.253.440 | no disponible | no disponible | Público en Hugging Face |
 | `filtered_insert_xxf_character/global_step3000` | Componente | 1.0 | no disponible | no disponible | no disponible | No público (ruta interna) |
 | `filtered_insert_xxf_character/global_step4000` | Componente | 1.0 | no disponible | no disponible | no disponible | No público (ruta interna) |
 | `filtered_insert_xxf_character/global_step5000` | Componente y base del merge | 1.0 | no disponible | no disponible | no disponible | No público (ruta interna) |
@@ -97,7 +97,7 @@ Como alternativas de la misma franja de tamaño podrían considerarse familias p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_simpleavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Artículo de referencia del método de promediado lineal, citado en los tags (`arxiv:2203.05482`): https://arxiv.org/abs/2203.05482
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

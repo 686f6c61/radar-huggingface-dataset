@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bryantil/multitask-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura tipo *Mixer* orientada a aprendizaje multitarea (multitask learning) en una configuración de escala «small». El autor, bryantil, distribuye el artefacto con un enfoque explícito en la transparencia del código y en pruebas de humo (*smoke tests*) reproducibles, y declara de forma deliberada que no reclama ninguna puntuación de benchmark. El modelo tiene únicamente 49.600 parámetros, un tamaño propio de un experimento de juguete o de una prueba de integración, no de un modelo útil para inferencia real.
+`bryantil/multitask-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura tipo *Mixer* orientada a aprendizaje multitarea (multitask learning) en una configuración de escala «small». El autor, bryantil, distribuye el artefacto con un enfoque explícito en la transparencia del código y en pruebas de humo (*smoke tests*) reproducibles, y declara de forma deliberada que no reclama ninguna puntuación de benchmark. El modelo tiene únicamente 49.600 parámetros, un tamaño propio de un experimento de juguete o de una prueba de integración, no de un modelo útil para inferencia real.
 
 El problema que aborda no es el de ofrecer un modelo listo para producción, sino el de servir como punto de partida reproducible para investigar la combinación de atención dispersa (*sparse attention*), fusión con compuertas (*gated fusion*), función de activación swish y normalización por lotes en un esquema multitarea. El `model.safetensors` incluido es un *checkpoint* de inicialización válido, no un *checkpoint* entrenado con métricas publicadas, por lo que sus pesos no codifican conocimiento lingüístico ni resuelven tareas.
 
@@ -46,7 +46,7 @@ Los casos siguientes se refieren al repositorio y a su código como artefacto re
 
 - Pruebas de humo en integración continua: `main.py` sirve como entrada mínima ejecutable para verificar que un entorno (versión de PyTorch, CUDA, dependencias) funciona antes de lanzar entrenamientos reales de mayor coste.
 - Plantilla de referencia para arquitecturas híbridas: los ficheros `config.json` y `training_args.json` documentan una configuración concreta de atención dispersa, fusión con compuertas, swish y batchnorm, reutilizable como punto de partida para ablaciones sobre esos componentes.
-- Validación de adaptadores de carga: al tratarse de una implementación personalizada, exige un adaptador explícito para las API genéricas de carga de HuggingFace; es un caso útil para probar ese tipo de integración antes de aplicarla a modelos propios de mayor tamaño.
+- Validación de adaptadores de carga: al tratarse de una implementación personalizada, exige un adaptador explícito para las API genéricas de carga de Hugging Face; es un caso útil para probar ese tipo de integración antes de aplicarla a modelos propios de mayor tamaño.
 - Estudio de reproducibilidad experimental: la receta por defecto (lion + planificador *step*) y la recomendación explícita de reportar métricas en al menos tres semillas con una línea base de capacidad equivalente permiten construir protocolos de comparación auditables.
 - Material docente sobre aprendizaje multitarea: con 49.600 parámetros, el modelo se puede ejecutar y depurar por completo en CPU en un portátil, lo que facilita explicar en clase cómo se comparten representaciones entre tareas.
 - Verificación de canalizaciones de serialización: `model.safetensors` permite comprobar flujos de guardado, carga y versionado de pesos (por ejemplo, con `safetensors` o `huggingface_hub`) sin consumir almacenamiento ni tiempo de GPU.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU de consumo (e incluso en entornos sin GPU) y sin requisitos de VRAM reseñables.
 - Opciones de despliegue: la vía documentada es el propio script PyTorch `main.py`. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni para formatos GGUF; al ser una implementación personalizada, requiere un adaptador explícito antes de usar API de carga genéricas.
 - Latencia y throughput: no disponibles. Por el tamaño del modelo, se puede estimar un coste por paso del orden de microsegundos a pocos milisegundos en CPU, pero no hay mediciones publicadas que lo confirmen.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace (redondeado); el fichero de pesos es del orden de kilobytes.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face (redondeado); el fichero de pesos es del orden de kilobytes.
 
 ## Comparativa con modelos similares
 
@@ -71,10 +71,10 @@ No existen modelos comparables en sentido estricto: con 49.600 parámetros y sin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Proposito |
 |---|---|---|---|---|---|
-| bryantil/multitask-2024 | 49.600 | no disponible | MIT | HuggingFace | Prueba de humo y plantilla de arquitectura |
+| bryantil/multitask-2024 | 49.600 | no disponible | MIT | Hugging Face | Prueba de humo y plantilla de arquitectura |
 | Implementaciones de referencia de MLP-Mixer (JAX) | varía según configuración (decenas a cientos de millones) | no disponible | MIT | Repositorio de investigación | Arquitectura sin atención para visión |
 | nanoGPT | configurable (configuración GPT-2 small ≈ 124 M) | 1024 | MIT | GitHub | Referencia educativa de transformer entrenable |
-| Modelos diminutos de investigación tipo TinyStories | del orden de 1 M en su variante mínima | no disponible | MIT | HuggingFace | Estudio de escalado y datos sintéticos |
+| Modelos diminutos de investigación tipo TinyStories | del orden de 1 M en su variante mínima | no disponible | MIT | Hugging Face | Estudio de escalado y datos sintéticos |
 
 Diferencias clave: los tres comparables están pensados para ser entrenados y evaluados con métricas publicadas, mientras que `multitask-2024` se distribuye sin entrenamiento ni resultados. En licencia, todos coinciden en MIT.
 
@@ -84,7 +84,7 @@ Diferencias clave: los tres comparables están pensados para ser entrenados y ev
 - No se han publicado métricas, curvas de entrenamiento ni evaluaciones de robustez, equidad o transferencia de dominio.
 - No hay información sobre el conjunto de datos, su procedencia ni sus términos de uso; el autor advierte de que deben revisarse por separado cuando se usen datos externos.
 - No se declara ningún idioma soportado ni longitud de contexto, por lo que no se puede asumir comportamiento multilingüe.
-- La implementación es personalizada y no expone clases compatibles con las API automáticas de HuggingFace (`AutoModel`, `pipeline`); requiere un adaptador escrito a medida.
+- La implementación es personalizada y no expone clases compatibles con las API automáticas de Hugging Face (`AutoModel`, `pipeline`); requiere un adaptador escrito a medida.
 - No se documentan sesgos conocidos, pero tampoco existe ningún análisis al respecto: la ausencia de datos no equivale a ausencia de sesgo.
 - Riesgo de alucinación: no evaluable en este estado; no obstante, cualquier uso generativo futuro heredará los riesgos habituales de un modelo sin ajuste por instrucciones ni verificación factual.
 - Licencia MIT: permite uso comercial y modificación con atribución, pero no cubre las licencias de los datos con los que se entrene; el propio autor pide revisarlas por separado.
@@ -93,7 +93,7 @@ Diferencias clave: los tres comparables están pensados para ser entrenados y ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bryantil/multitask-2024
+- Modelo en Hugging Face: https://huggingface.co/bryantil/multitask-2024
 - Perfil y listado de modelos del autor: https://huggingface.co/bryantil/models
 - Repositorio relacionado del mismo autor (notas sobre destilación de conocimiento): https://huggingface.co/bryantil/knowledge-distillation-2024
 - Artículo de referencia sobre aprendizaje multitarea (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/

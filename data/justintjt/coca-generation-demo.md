@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | sin datos publicados | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas y 0 likes | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas y 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -79,9 +79,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y no se declaran idiomas.
 - Licencia: apache-2.0 permite uso comercial del artefacto publicado, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
 - Para producción: no debe desplegarse como componente de un sistema real. Cualquier resultado obtenido con un checkpoint futuro entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
-- Compatibilidad: al ser una implementación personalizada, las utilidades estándar de carga de HuggingFace pueden no funcionar sin un adaptador explícito.
+- Compatibilidad: al ser una implementación personalizada, las utilidades estándar de carga de Hugging Face pueden no funcionar sin un adaptador explícito.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justintjt/coca-generation-demo
+- Modelo en Hugging Face: https://huggingface.co/justintjt/coca-generation-demo
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo (unicamente un resultado sin relacion con la ficha). No se dispone de paper, blog, repositorio adicional ni demo asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-Focused es una variante editada por pesos del modelo Qwen3.5-2B, publicada por el usuario AmaLS367 en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es el resultado de una intervención quirúrgica sobre los pesos de un modelo existente (saidutta69/Qwen3.5-2B-heretic, una ablación de Qwen/Qwen3.5-2B realizada con la herramienta Heretic) para reducir el comportamiento de re-verificación excesiva durante el razonamiento. El problema que aborda es concreto: los modelos pequeños con modo de razonamiento tienden a encontrar la respuesta y luego seguir generando frases como "Wait, let me double check…" hasta agotar el presupuesto de tokens.
+Qwen3.5-2B-Focused es una variante editada por pesos del modelo Qwen3.5-2B, publicada por el usuario AmaLS367 en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning: es el resultado de una intervención quirúrgica sobre los pesos de un modelo existente (saidutta69/Qwen3.5-2B-heretic, una ablación de Qwen/Qwen3.5-2B realizada con la herramienta Heretic) para reducir el comportamiento de re-verificación excesiva durante el razonamiento. El problema que aborda es concreto: los modelos pequeños con modo de razonamiento tienden a encontrar la respuesta y luego seguir generando frases como "Wait, let me double check…" hasta agotar el presupuesto de tokens.
 
 La intervención consiste en identificar una dirección en el espacio de activaciones que codifica la intención de re-verificar y eliminarla en un 75% de los pesos que escriben en el residual stream en las capas 13 a 18. El resultado, según el autor, es un modelo que termina más tareas dentro del mismo presupuesto de tokens y con más respuestas correctas, sin cambios en arquitectura, tamaño ni formato de fichero (GGUF Q8_0). El modelo tiene 1.881.825.088 parámetros y un tamaño de repositorio de 2,0 GB.
 
@@ -73,9 +73,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, GSM8K, HumanEval, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Focused | 1,88 B | No disponible | Apache-2.0 | GGUF en HuggingFace | Edición de pesos para reducir re-verificación |
-| Qwen/Qwen3.5-2B | 1,88 B (aprox.) | No disponible | Apache-2.0 | Pesos originales en HuggingFace | Modelo base sin editar |
-| saidutta69/Qwen3.5-2B-heretic | 1,88 B (aprox.) | No disponible | Apache-2.0 | GGUF Q8_0 en HuggingFace | Ablación con Heretic; base directa de este modelo |
+| Qwen3.5-2B-Focused | 1,88 B | No disponible | Apache-2.0 | GGUF en Hugging Face | Edición de pesos para reducir re-verificación |
+| Qwen/Qwen3.5-2B | 1,88 B (aprox.) | No disponible | Apache-2.0 | Pesos originales en Hugging Face | Modelo base sin editar |
+| saidutta69/Qwen3.5-2B-heretic | 1,88 B (aprox.) | No disponible | Apache-2.0 | GGUF Q8_0 en Hugging Face | Ablación con Heretic; base directa de este modelo |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de 2B en la información proporcionada, por lo que la comparación se limita a linaje, licencia y formato.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de 2B en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmaLS367/Qwen3.5-2B-Focused-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AmaLS367/Qwen3.5-2B-Focused-GGUF
 - Modelo base directo: https://huggingface.co/saidutta69/Qwen3.5-2B-heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-2B
 - Heretic (herramienta de ablación): https://github.com/p-e-w/heretic

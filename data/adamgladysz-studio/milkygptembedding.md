@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MilkyGPTEmbedding es un modelo de embeddings publicado por el usuario `adamgladysz-studio` en HuggingFace. Se distribuye en formato GGUF y está etiquetado con la tarea `feature-extraction`, lo que lo sitúa en la categoría de modelos de representación vectorial: no está pensado para generar texto, sino para producir embeddings a partir de texto de entrada, que después se usan en búsqueda semántica, recuperación aumentada (RAG), clustering o clasificación.
+MilkyGPTEmbedding es un modelo de embeddings publicado por el usuario `adamgladysz-studio` en Hugging Face. Se distribuye en formato GGUF y está etiquetado con la tarea `feature-extraction`, lo que lo sitúa en la categoría de modelos de representación vectorial: no está pensado para generar texto, sino para producir embeddings a partir de texto de entrada, que después se usan en búsqueda semántica, recuperación aumentada (RAG), clustering o clasificación.
 
 El modelo cuenta con 33.212.160 parámetros totales (aproximadamente 33 millones), lo que lo convierte en un modelo muy pequeño, del orden de los encoders ligeros tipo MiniLM o BERT-tiny. El repositorio ocupa 0,1 GB y la licencia declarada es MIT, lo que permite uso comercial sin restricciones adicionales más allá de la atribución habitual de la licencia.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en la mayoría de cuantizaciones GGUF, dado el tamaño de 33,2 M de parámetros. En FP32, los pesos ocuparían aproximadamente 133 MB; en cuantizaciones de 4-8 bits, bastante menos.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas con 4 GB o más. Para lotes grandes, una RTX 3060 o superior ofrece margen de sobra.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer de los últimos años, e incluso en CPU.
-- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF; también puede servirse mediante el endpoint de HuggingFace dada la etiqueta `endpoints_compatible`. No se documenta soporte específico para vLLM o TGI.
+- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF; también puede servirse mediante el endpoint de Hugging Face dada la etiqueta `endpoints_compatible`. No se documenta soporte específico para vLLM o TGI.
 - Latencia y throughput: no disponibles; dependen del hardware, del tamaño de lote y de la longitud de las secuencias, y el autor no publica mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MilkyGPTEmbedding | 33,2 M | no disponible | MIT | GGUF | HuggingFace |
-| all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Apache 2.0 | safetensors, ONNX | HuggingFace, ampliamente evaluado |
-| BGE-small-en-v1.5 | ~33 M | 512 tokens | MIT | safetensors, GGUF | HuggingFace, con benchmarks públicos |
-| E5-small-v2 | ~33 M | 512 tokens | MIT | safetensors | HuggingFace, con benchmarks públicos |
+| MilkyGPTEmbedding | 33,2 M | no disponible | MIT | GGUF | Hugging Face |
+| all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Apache 2.0 | safetensors, ONNX | Hugging Face, ampliamente evaluado |
+| BGE-small-en-v1.5 | ~33 M | 512 tokens | MIT | safetensors, GGUF | Hugging Face, con benchmarks públicos |
+| E5-small-v2 | ~33 M | 512 tokens | MIT | safetensors | Hugging Face, con benchmarks públicos |
 
 La comparación se limita a parámetros, licencia y disponibilidad: MilkyGPTEmbedding no publica métricas de recuperación (MTEB u otras), por lo que no es posible contrastar su calidad frente a alternativas establecidas como las de la tabla, que sí cuentan con evaluaciones públicas.
 
@@ -81,5 +81,5 @@ La comparación se limita a parámetros, licencia y disponibilidad: MilkyGPTEmbe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamgladysz-studio/MilkyGPTEmbedding
+- Repositorio en Hugging Face: https://huggingface.co/adamgladysz-studio/MilkyGPTEmbedding
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

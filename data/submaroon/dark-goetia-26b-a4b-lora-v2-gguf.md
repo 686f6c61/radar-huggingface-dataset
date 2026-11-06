@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo nic
 
 ## Enlaces
 
-- [HuggingFace - SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF)
+- [Hugging Face - SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF)
 - [Modelo base - Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-GGUF](https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-GGUF)
 - [Adaptador v1 - SubMaroon/Dark-Goetia-26B-A4B-LoRA-v1](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v1)
 - [Adaptador v3-A - SubMaroon/Dark-Goetia-26B-A4B-LoRA-v3-A](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v3-A)

@@ -24,7 +24,7 @@ Se trata de una versión preliminar ("v3 preview, under evaluation"). La evaluac
 | Modelo base | Qwen/Qwen3-1.7B |
 | Tareas declaradas | Nutricion, coaching, planificacion de comidas (meal planning) |
 | Pipeline | text-generation |
-| Fecha de creacion en HuggingFace | 2026-09-27 |
+| Fecha de creacion en Hugging Face | 2026-09-27 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| evora-qwen3-1.7b-v3-GGUF | 1,72 B (adaptadores LoRA sobre Qwen3-1.7B) | No disponible en la ficha | Apache 2.0 | GGUF en HuggingFace | Especializado en nutricion y coaching; base + adaptadores por idioma; sin benchmarks publicados |
-| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens segun la documentacion del proveedor | Apache 2.0 | Pesos en safetensors y cuantizaciones en HuggingFace | Modelo generalista de proposito multiple; capacidad fuera de dominio muy superior; sin contrato JSON especifico |
+| evora-qwen3-1.7b-v3-GGUF | 1,72 B (adaptadores LoRA sobre Qwen3-1.7B) | No disponible en la ficha | Apache 2.0 | GGUF en Hugging Face | Especializado en nutricion y coaching; base + adaptadores por idioma; sin benchmarks publicados |
+| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens segun la documentacion del proveedor | Apache 2.0 | Pesos en safetensors y cuantizaciones en Hugging Face | Modelo generalista de proposito multiple; capacidad fuera de dominio muy superior; sin contrato JSON especifico |
 | Qwen2.5-1.5B-Instruct | 1,5 B (aproximadamente) | No disponible en esta ficha | Apache 2.0 | safetensors, GGUF y otras cuantizaciones | Alternativa generalista de tamano similar para chat; no especializada en nutricion |
-| Gemma 3 1B (it) | 1 B | No disponible en esta ficha | Terminos de uso de Gemma | Pesos en HuggingFace | Alternativa de Google para despliegue en dispositivo; licencia no Apache, con restricciones de uso comercial |
-| Llama 3.2 1B (Instruct) | 1,23 B | No disponible en esta ficha | Licencia comunitaria de Llama 3.2 | Pesos en HuggingFace | Orientada a resumen y dialogos en dispositivo; licencia con condiciones para uso comercial |
+| Gemma 3 1B (it) | 1 B | No disponible en esta ficha | Terminos de uso de Gemma | Pesos en Hugging Face | Alternativa de Google para despliegue en dispositivo; licencia no Apache, con restricciones de uso comercial |
+| Llama 3.2 1B (Instruct) | 1,23 B | No disponible en esta ficha | Licencia comunitaria de Llama 3.2 | Pesos en Hugging Face | Orientada a resumen y dialogos en dispositivo; licencia con condiciones para uso comercial |
 
 La comparación con los modelos generalistas debe interpretarse con cautela: Evora v3 no compite en capacidad general, sino en comportamiento ajustado al dominio y en eficiencia de despliegue (base compartida más adaptadores ligeros). No hay datos de benchmarks que permitan una comparación cuantitativa.
 
@@ -97,7 +97,7 @@ La comparación con los modelos generalistas debe interpretarse con cautela: Evo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v3-GGUF
 - Version anterior (v2), con el contrato de prompt y ejemplos: https://huggingface.co/mkenfenheuer/evora-qwen3-1.7b-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Aplicacion Evora: https://www.evora-app.de

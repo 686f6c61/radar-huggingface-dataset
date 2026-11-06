@@ -79,6 +79,6 @@ No disponible. No existen modelos comparables en el sentido habitual, porque `hy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/busankim92/hybrid-finetuned
+- Modelo en Hugging Face: https://huggingface.co/busankim92/hybrid-finetuned
 - Repositorio de codigo o paper: no disponible en la informacion proporcionada
 - Demos o espacios: no disponible en la informacion proporcionada

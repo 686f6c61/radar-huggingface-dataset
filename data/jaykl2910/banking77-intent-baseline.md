@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jaykl2910/banking77-intent-baseline es un modelo de clasificación de texto publicado en HuggingFace por el usuario Jaykl2910. Por su identificador y por la etiqueta de arquitectura incluida en el repositorio (roberta), se trata de un encoder transformer de tipo RoBERTa afinado para clasificación de intenciones sobre el corpus Banking77, un conjunto de consultas bancarias en inglés con 77 categorías de intención. El recuento real de parámetros del archivo safetensors es de 124.704.845, cifra que coincide con el tamaño de roberta-base, lo que confirma que no hay una cabecera de clasificación de gran tamaño ni parámetros adicionales relevantes.
+Jaykl2910/banking77-intent-baseline es un modelo de clasificación de texto publicado en Hugging Face por el usuario Jaykl2910. Por su identificador y por la etiqueta de arquitectura incluida en el repositorio (roberta), se trata de un encoder transformer de tipo RoBERTa afinado para clasificación de intenciones sobre el corpus Banking77, un conjunto de consultas bancarias en inglés con 77 categorías de intención. El recuento real de parámetros del archivo safetensors es de 124.704.845, cifra que coincide con el tamaño de roberta-base, lo que confirma que no hay una cabecera de clasificación de gran tamaño ni parámetros adicionales relevantes.
 
-El modelo resuelve un problema muy concreto: asignar una etiqueta de intención a una frase corta de un cliente bancario, tarea típica en enrutamiento de tickets, atención al cliente automatizada y analítica de motivos de contacto. Su relevancia práctica es limitada por el momento: el repositorio no tiene descargas ni likes, la model card es la plantilla automática de HuggingFace sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, métricas ni licencia.
+El modelo resuelve un problema muy concreto: asignar una etiqueta de intención a una frase corta de un cliente bancario, tarea típica en enrutamiento de tickets, atención al cliente automatizada y analítica de motivos de contacto. Su relevancia práctica es limitada por el momento: el repositorio no tiene descargas ni likes, la model card es la plantilla automática de Hugging Face sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, métricas ni licencia.
 
 Se trata, por tanto, de un artefacto reproducible a nivel de pesos (safetensors, 0,5 GB de repositorio, pipeline text-classification) pero opaco a nivel de documentación. Cualquier uso en producción exigiría verificar de forma externa el conjunto de etiquetas, el tokenizador asociado y los términos de licencia, ninguno de los cuales está declarado.
 
@@ -29,7 +29,7 @@ Se trata, por tanto, de un artefacto reproducible a nivel de pesos (safetensors,
 
 La etiqueta principal del repositorio es roberta, lo que sitúa el modelo en la familia de encoders transformer con atención bidireccional y tokenización por byte-level BPE. El recuento de parámetros (124,7 millones) es consistente con una configuración de tipo base: 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, más una capa de clasificación lineal sobre las 77 clases de intención. No hay evidencia en la informacion disponible de que se trate de un modelo MoE, híbrido ni de una arquitectura con atención lineal.
 
-No se dispone de ningún dato sobre el procedimiento de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste fino supervisado, RLHF o DPO, ni hiperparámetros, ni precisión utilizada, ni hardware. La model card reproduce la plantilla automática de HuggingFace con todos los campos en «More Information Needed». La única referencia bibliográfica asociada al repositorio es el identificador arxiv:1910.09700, que corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la propia plantilla; no es el paper del modelo ni describe su arquitectura o su entrenamiento. Tampoco consta la publicación de resultados de evaluación.
+No se dispone de ningún dato sobre el procedimiento de entrenamiento: ni número de tokens, ni composición del dataset, ni si hubo ajuste fino supervisado, RLHF o DPO, ni hiperparámetros, ni precisión utilizada, ni hardware. La model card reproduce la plantilla automática de Hugging Face con todos los campos en «More Information Needed». La única referencia bibliográfica asociada al repositorio es el identificador arxiv:1910.09700, que corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la propia plantilla; no es el paper del modelo ni describe su arquitectura o su entrenamiento. Tampoco consta la publicación de resultados de evaluación.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se dispone de ningún dato sobre el procedimiento de entrenamiento: ni númer
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye sección de evaluación con datos, la ficha de HuggingFace no reporta métricas y el repositorio no tiene descargas ni discusiones con resultados de terceros. El identificador arxiv:1910.09700 asociado como etiqueta no es un benchmark del modelo, sino la referencia del calculador de impacto ambiental citado en la plantilla.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye sección de evaluación con datos, la ficha de Hugging Face no reporta métricas y el repositorio no tiene descargas ni discusiones con resultados de terceros. El identificador arxiv:1910.09700 asociado como etiqueta no es un benchmark del modelo, sino la referencia del calculador de impacto ambiental citado en la plantilla.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No se dispone de métricas de este modelo, por lo que la comparación se limita 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jaykl2910/banking77-intent-baseline | 124,7 M | No disponible | Encoder RoBERTa afinado para clasificacion | No disponible | Publicado en HuggingFace, 0 descargas |
+| Jaykl2910/banking77-intent-baseline | 124,7 M | No disponible | Encoder RoBERTa afinado para clasificacion | No disponible | Publicado en Hugging Face, 0 descargas |
 | roberta-base | ~125 M | 512 tokens | Encoder RoBERTa generico | MIT (segun su publicacion original) | Ampliamente disponible |
 | bert-base-uncased | ~110 M | 512 tokens | Encoder BERT generico | Apache 2.0 (segun su publicacion original) | Ampliamente disponible |
 | distilbert-base-uncased | ~66 M | 512 tokens | Encoder destilado | Apache 2.0 (segun su publicacion original) | Ampliamente disponible |
@@ -100,7 +100,7 @@ En rendimiento sobre Banking77 no hay comparativa posible: este modelo no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jaykl2910/banking77-intent-baseline
+- Modelo en Hugging Face: https://huggingface.co/Jaykl2910/banking77-intent-baseline
 - Referencia bibliográfica citada en las etiquetas del repositorio (calculador de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Búsqueda web realizada: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a páginas jurídicas en alemán sobre compraventa en eBay, sin relación con el modelo ni con el corpus Banking77, por lo que se descartan.
 - Paper, repositorio de código, demo y dataset de entrenamiento: no disponibles en la información proporcionada.

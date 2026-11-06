@@ -45,7 +45,7 @@ El entrenamiento es SFT (supervised fine-tuning) con un profesor externo denomin
 - Linea base para ablaciones: comparar este checkpoint con el Qwen3-4B sin ajustar o con variantes entrenadas en otro orden de entornos permite medir el efecto del orden de la cadena y del numero de actualizaciones.
 - Estudio de olvido catastrofico y transferencia entre entornos: al ser una etapa inicial de tres previstas, es material adecuado para medir como un ajuste estrecho en un gridworld afecta a capacidades generales del modelo base.
 - Prototipado de agentes en entornos tipo gridworld: para experimentar con politician de instrucciones simples en BabyAI antes de invertir en un modelo mayor o en una etapa posterior de la cadena.
-- Docencia y ejercicios de fine-tuning: dado su tamano (4,4 B de parametros) y su formato safetensors estandar, es util en cursos o talleres donde se quiera ilustrar un pipeline completo de SFT con destilacion y publicacion en HuggingFace.
+- Docencia y ejercicios de fine-tuning: dado su tamano (4,4 B de parametros) y su formato safetensors estandar, es util en cursos o talleres donde se quiera ilustrar un pipeline completo de SFT con destilacion y publicacion en Hugging Face.
 - Generacion de texto general: tecnicamente posible con `AutoModelForCausalLM`, pero desaconsejada como caso de uso real, ya que no hay evaluacion que respalde calidad fuera del dominio de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920 | 4,41 B | No disponible | SFT con profesor sintetico, etapa 1 (BabyAI) de 3 | No declarada | Publico en HuggingFace, 0 descargas |
+| Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920 | 4,41 B | No disponible | SFT con profesor sintetico, etapa 1 (BabyAI) de 3 | No declarada | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B (modelo base) | Aprox. 4 B | No disponible en la informacion proporcionada | Preentrenamiento mas ajuste instructivo por parte de Qwen | Apache-2.0 segun la model card del modelo base | Publico y ampliamente utilizado |
 | Otras alternativas de ~4 B orientadas a agentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativos, por lo que la comparacion se
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920
+- Hugging Face del modelo: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog o repositorio adicionales: no disponibles. La busqueda web realizada no devolvio resultados relevantes (unicamente paginas genericas de Bing y Microsoft Rewards), por lo que no se pueden aportar enlaces a documentacion tecnica, evaluaciones o codigo de entrenamiento.

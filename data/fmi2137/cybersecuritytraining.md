@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FMI2137/CybersecurityTraining es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo orientado a tareas de ciberseguridad. El autor es el usuario FMI2137 y el repositorio se publicó el 3 de noviembre de 2026, sin actualizaciones posteriores según los metadatos disponibles. En el momento de redactar esta ficha, el repositorio acumula cero descargas y cero "likes", lo que indica que no ha tenido difusión ni uso por parte de la comunidad.
+FMI2137/CybersecurityTraining es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo orientado a tareas de ciberseguridad. El autor es el usuario FMI2137 y el repositorio se publicó el 3 de noviembre de 2026, sin actualizaciones posteriores según los metadatos disponibles. En el momento de redactar esta ficha, el repositorio acumula cero descargas y cero "likes", lo que indica que no ha tenido difusión ni uso por parte de la comunidad.
 
 La información pública es extremadamente escasa: la model card se limita a declarar la licencia Apache 2.0, sin especificar arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni detalles de entrenamiento. Tampoco se indica el pipeline de la tarea, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un clasificador, un modelo de embeddings o un conjunto de pesos derivado de otro modelo base.
 
@@ -76,5 +76,5 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FMI2137/CybersecurityTraining
+- Repositorio en Hugging Face: https://huggingface.co/FMI2137/CybersecurityTraining
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

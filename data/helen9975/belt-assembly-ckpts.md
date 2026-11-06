@@ -101,7 +101,7 @@ Comparativa con modelos externos de la misma categoria (politicas de difusion pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/helen9975/belt-assembly-ckpts
+- Modelo en Hugging Face: https://huggingface.co/helen9975/belt-assembly-ckpts
 - Pagina del autor (Yi Ru Wang): https://helen9975.github.io/
 - Repositorio del pipeline, rama `caiyi_real_robot` (referenciado en la model card): https://github.com/personalrobotics/image_ccil
 - Dataset DROID (origen de los datos de captura): https://droid-dataset.github.io/

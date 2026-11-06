@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `M-hilani/Qwen2.5-Coder-7B-EP-1N-500` es un adaptador LoRA (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, desarrollado por el usuario M-hilani. Se trata de un fine-tuning eficiente mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, con PEFT 0.20.0. El nombre sugiere un entrenamiento de 500 pasos con un solo epoch (EP-1N), aunque no se confirma en la documentación.
+El modelo `M-hilani/Qwen2.5-Coder-7B-EP-1N-500` es un adaptador LoRA (PEFT) construido sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`, desarrollado por el usuario M-hilani. Se trata de un fine-tuning eficiente mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, con PEFT 0.20.0. El nombre sugiere un entrenamiento de 500 pasos con un solo epoch (EP-1N), aunque no se confirma en la documentación.
 
 El adaptador hereda las capacidades del modelo base, un transformer decoder-only de 7.000 millones de parámetros especializado en código, preentrenado sobre 5,5 billones de tokens. La relevancia de este tipo de adaptadores radica en que permiten especializar un modelo de código de gran tamaño con un coste computacional reducido, sin necesidad de reentrenar todos los parámetros. Sin embargo, la documentación publicada es extremadamente escasa: no se especifica la tarea concreta de fine-tuning, los datos de entrenamiento, los hiperparámetros ni los resultados de evaluación, lo que limita su uso en producción sin una validación adicional.
 

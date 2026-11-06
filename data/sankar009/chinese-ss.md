@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sankar009/chinese-ss` es un modelo publicado en HuggingFace por el usuario Sankar009. La model card no contiene ninguna descripción técnica, arquitectura ni información de uso. El repositorio tiene un tamaño de 1.0 GB y la licencia declarada es Apache 2.0. No se dispone de datos sobre el tipo de modelo, sus parámetros, la longitud de contexto o los idiomas soportados.
+El modelo `Sankar009/chinese-ss` es un modelo publicado en Hugging Face por el usuario Sankar009. La model card no contiene ninguna descripción técnica, arquitectura ni información de uso. El repositorio tiene un tamaño de 1.0 GB y la licencia declarada es Apache 2.0. No se dispone de datos sobre el tipo de modelo, sus parámetros, la longitud de contexto o los idiomas soportados.
 
 A pesar de que el nombre sugiere una posible relación con modelos de lenguaje chinos, no existe información verificable que lo confirme. Los resultados de búsqueda web asociados al autor apuntan a un perfil de GitHub con un proyecto de comparación de precios de libros en India, sin relación aparente con el desarrollo de modelos de IA. La relevancia actual del modelo es, por tanto, indeterminada: no es posible evaluar su rendimiento ni su idoneidad para ninguna tarea sin documentación adicional.
 
@@ -21,7 +21,7 @@ A pesar de que el nombre sugiere una posible relación con modelos de lenguaje c
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). La model card está vacía y no existe documentación técnica asociada en el repositorio de HuggingFace.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens o el proceso de optimización (RLHF, DPO, etc.). La model card está vacía y no existe documentación técnica asociada en el repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -61,5 +61,5 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sankar009/chinese-ss
+- Hugging Face: https://huggingface.co/Sankar009/chinese-ss
 - GitHub del autor: https://github.com/sankar009

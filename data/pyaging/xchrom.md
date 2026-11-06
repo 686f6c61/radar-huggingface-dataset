@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/xchrom
+- Hugging Face: https://huggingface.co/pyaging/xchrom
 - Paper original: Wang, Y. et al. DNA methylation-based sex classifier to predict sex and identify sex chromosome aneuploidy. BMC Genomics 22, 484 (2021). https://doi.org/10.1186/s12864-021-07675-2
 - Documentación de pyaging: https://pyaging.readthedocs.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raehoshi illust XL 12 es un modelo de difusión texto-a-imagen especializado en ilustración anime, desarrollado por Raelina y publicado en HuggingFace bajo el identificador `Raelina/Raehoshi-illust-XL-12`. Se trata de un fine-tuning de Illustrious XL v1.1, que a su vez deriva de la arquitectura Stable Diffusion XL (SDXL), y está orientado a la generación de ilustraciones con estética anime mediante prompts basados en etiquetas tipo booru.
+Raehoshi illust XL 12 es un modelo de difusión texto-a-imagen especializado en ilustración anime, desarrollado por Raelina y publicado en Hugging Face bajo el identificador `Raelina/Raehoshi-illust-XL-12`. Se trata de un fine-tuning de Illustrious XL v1.1, que a su vez deriva de la arquitectura Stable Diffusion XL (SDXL), y está orientado a la generación de ilustraciones con estética anime mediante prompts basados en etiquetas tipo booru.
 
 El objetivo declarado del autor es corregir dos limitaciones observadas en el modelo base: la sobresaturación de color y el ruido de artefactos en la imagen generada. Aunque el autor reconoce que estos problemas no se eliminan por completo, afirma que se han logrado mejoras notables en el equilibrio cromático y la limpieza del resultado final.
 
@@ -23,7 +23,7 @@ El modelo cuenta con 2.567.463.684 parámetros reales según los pesos en safete
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de Illustrious XL v1.1, que a su vez se construye sobre la arquitectura Stable Diffusion XL, un modelo de difusión latente con un UNet y codificadores de texto duales. El pipeline declarado en HuggingFace es `diffusers:StableDiffusionXLPipeline`, lo que confirma la compatibilidad con el ecosistema Diffusers.
+El modelo es un fine-tuning de Illustrious XL v1.1, que a su vez se construye sobre la arquitectura Stable Diffusion XL, un modelo de difusión latente con un UNet y codificadores de texto duales. El pipeline declarado en Hugging Face es `diffusers:StableDiffusionXLPipeline`, lo que confirma la compatibilidad con el ecosistema Diffusers.
 
 No se dispone de información sobre el número de tokens o imágenes de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO (no aplicables habitualmente en modelos de difusión). El autor menciona un listado de personajes entrenados disponible en un enlace externo (rentry.org), lo que sugiere un dataset orientado a personajes de anime. El estilo de prompt recomendado es el de etiquetas booru.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Raehoshi illust XL 12 | 2.567.463.684 | no aplica | sdxl-license | HuggingFace |
-| Illustrious XL v1.1 (base) | no disponible | no aplica | no disponible | HuggingFace (OnomaAIResearch) |
-| Stable Diffusion XL base 1.0 | no disponible | no aplica | sdxl-license | HuggingFace (Stability AI) |
+| Raehoshi illust XL 12 | 2.567.463.684 | no aplica | sdxl-license | Hugging Face |
+| Illustrious XL v1.1 (base) | no disponible | no aplica | no disponible | Hugging Face (OnomaAIResearch) |
+| Stable Diffusion XL base 1.0 | no disponible | no aplica | sdxl-license | Hugging Face (Stability AI) |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raelina/Raehoshi-illust-XL-12
+- Hugging Face: https://huggingface.co/Raelina/Raehoshi-illust-XL-12
 - Modelo base Illustrious XL v1.1: https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.1
 - Licencia SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/LICENSE.md
 - Listado de personajes: https://rentry.org/xbbfsdua

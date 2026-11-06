@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fabricede/distilbert-rotten-tomatoes-sentiment` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Fabricede. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, la versión destilada de BERT-base, sobre un conjunto de datos que la propia model card describe como "unknown dataset" y que, por el nombre del repositorio, todo apunta a reseñas de películas de Rotten Tomatoes con etiqueta de sentimiento. El modelo tiene 66.955.010 parámetros y se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors.
+`Fabricede/distilbert-rotten-tomatoes-sentiment` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Fabricede. Se trata de un ajuste fino (*fine-tuning*) de `distilbert-base-uncased`, la versión destilada de BERT-base, sobre un conjunto de datos que la propia model card describe como "unknown dataset" y que, por el nombre del repositorio, todo apunta a reseñas de películas de Rotten Tomatoes con etiqueta de sentimiento. El modelo tiene 66.955.010 parámetros y se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors.
 
 DistilBERT es un *transformer* encoder de 6 capas y 768 dimensiones ocultas, obtenido mediante destilación de conocimiento a partir de BERT-base. Conserva aproximadamente el 97 % del rendimiento de BERT en tareas de comprensión del lenguaje, con un 40 % menos de parámetros y una latencia un 60 % inferior, lo que lo convierte en una opción habitual para inferencia en CPU y en GPUs de gama baja. Este ajuste concreto está pensado para clasificación binaria de sentimiento en inglés.
 
@@ -41,7 +41,7 @@ No se documenta composicion del dataset, preprocesado ni tecnicas de regularizac
 - Clasificacion de texto (analisis de sentimiento) mediante la pipeline `text-classification` de Transformers.
 - Salida de etiquetas con puntuacion de confianza mediante `return_all_scores=True` o `top_k`.
 - Inferencia rapida en CPU y en GPU de gama baja gracias a sus 66,9 M de parametros.
-- Compatibilidad con Text Embeddings Inference (TEI) y con HuggingFace Inference Endpoints, segun las etiquetas del repositorio.
+- Compatibilidad con Text Embeddings Inference (TEI) y con Hugging Face Inference Endpoints, segun las etiquetas del repositorio.
 - Posible uso como extractor de representaciones intermedias (pooling de la salida del encoder) para *feature extraction*, aunque no esta documentado por el autor.
 - No hay soporte declarado de *tool calling*, *function calling*, razonamiento multi-paso, agentes, vision, audio ni modo de razonamiento explicito: es un clasificador de secuencia, no un modelo generativo.
 - No hay informacion sobre capacidades multilingues ni sobre el conjunto exacto de etiquetas de salida (se desconoce si es binario positivo/negativo o multiclase).
@@ -73,7 +73,7 @@ Nota: los valores de la columna "evaluacion final" provienen del encabezado de l
 - VRAM estimada para inferencia: en fp32 los pesos ocupan aproximadamente 268 MB; en fp16 unos 134 MB; en int8 unos 67 MB. El pico de memoria en inferencia ronda 1-2 GB contando activaciones y lote.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Funciona sin problema en GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100 o H100; en estas dos ultimas el cuello de botella sera la CPU y el ancho de banda del *dataloader*, no el computo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos, y tambien en CPU (unos pocos milisegundos por secuencia corta en un procesador moderno).
-- Opciones de despliegue: pipeline de `transformers`; Text Embeddings Inference (etiqueta declarada por el autor); HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`); exportacion a ONNX Runtime para acelerar en CPU; integracion en FastAPI/TorchServe. No hay confirmacion de soporte GGUF/llama.cpp para este repositorio concreto.
+- Opciones de despliegue: pipeline de `transformers`; Text Embeddings Inference (etiqueta declarada por el autor); Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`); exportacion a ONNX Runtime para acelerar en CPU; integracion en FastAPI/TorchServe. No hay confirmacion de soporte GGUF/llama.cpp para este repositorio concreto.
 - Latencia y throughput: no disponible. No se han publicado mediciones del autor.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ La comparativa se limita a parametros, contexto y licencia porque no se han prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fabricede/distilbert-rotten-tomatoes-sentiment
+- Repositorio en Hugging Face: https://huggingface.co/Fabricede/distilbert-rotten-tomatoes-sentiment
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert

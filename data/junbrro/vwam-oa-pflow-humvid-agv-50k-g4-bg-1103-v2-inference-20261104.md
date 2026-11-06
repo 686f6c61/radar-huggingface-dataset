@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2` es un checkpoint de inferencia publicado por el usuario `junbrro` en HuggingFace bajo la etiqueta de pipeline `robotics`. Se trata de un modelo de la familia V-WAM (presumiblemente Vision-World-Action Model) orientado a robótica, asociado a la plataforma OpenArm, entrenado durante 50.000 pasos y exportado únicamente con los pesos EMA (Exponential Moving Average) para servir inferencia. El repositorio ocupa 32 GB e incluye configuración y normalización de acciones, pero excluye el estado de entrenamiento (optimizador, scheduler, RNG y pesos originales).
+El modelo `vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2` es un checkpoint de inferencia publicado por el usuario `junbrro` en Hugging Face bajo la etiqueta de pipeline `robotics`. Se trata de un modelo de la familia V-WAM (presumiblemente Vision-World-Action Model) orientado a robótica, asociado a la plataforma OpenArm, entrenado durante 50.000 pasos y exportado únicamente con los pesos EMA (Exponential Moving Average) para servir inferencia. El repositorio ocupa 32 GB e incluye configuración y normalización de acciones, pero excluye el estado de entrenamiento (optimizador, scheduler, RNG y pesos originales).
 
 El checkpoint se distribuye en formato nativo PyTorch DCP (Distributed Checkpoint), no como exportación de Transformers. Los tensores EMA se remapean de `net_ema.*` a `net.*` y se convierten al dtype de inferencia correspondiente. El autor indica explícitamente que la calidad del rollout robótico no se ha evaluado en este backup y que los activos congelados del VLM, tokenizador y VAE subyacentes siguen siendo dependencias en tiempo de ejecución.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2-inference-20261104
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2-inference-20261104
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

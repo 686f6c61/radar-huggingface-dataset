@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreWAFTl-flow-twins | 136,0 M (encoder) | WAFT con Twins-SVT-Large | Pares de fotogramas | BSD 3-Clause + Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreWAFTl-flow-twins | 136,0 M (encoder) | WAFT con Twins-SVT-Large | Pares de fotogramas | BSD 3-Clause + Apache 2.0 | Hugging Face (LibreYOLO) |
 | WAFT (otras variantes del zoo) | no disponible | WAFT con distintos backbones | Pares de fotogramas | BSD 3-Clause | Google Drive (upstream Princeton-VL) |
 | RAFT | no disponible | Flujo óptico con correlation layers | Pares de fotogramas | BSD 3-Clause (upstream) | Repositorio Princeton-VL |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreWAFTl-flow-twins
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreWAFTl-flow-twins
 - Paper WAFT (arXiv): https://arxiv.org/abs/2506.21526
 - Repositorio WAFT upstream: https://github.com/princeton-vl/WAFT
 - Commit de referencia upstream: https://github.com/princeton-vl/WAFT/commit/b152ff1cad1af8c185ee7b141997c48ff3334c87

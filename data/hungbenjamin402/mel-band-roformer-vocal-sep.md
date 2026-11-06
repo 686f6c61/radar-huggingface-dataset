@@ -6,7 +6,7 @@ Kim Mel-Band RoFormer — Vocal Separation (CoreAI + CoreML) es una reimplementa
 
 El problema que resuelve es la separación de la pista vocal del resto de una mezcla musical, una tarea clásica de source separation con aplicaciones en karaoke, remezcla, transcripción y postproducción. Su relevancia radica en que traslada un modelo de investigación (paper arXiv 2310.01809) a un formato desplegable en hardware Apple consumer, con optimizaciones concretas para la Neural Engine: compresión de pesos por paletización de 8 bits en grupos de 32, layout channels-first y sustitución de operaciones no soportadas (SDPA fusionada, GELU literal) por equivalentes compatibles.
 
-La arquitectura subyacente es un transformer RoFormer con atención sobre el eje temporal y el eje frecuencial, procesado en bandas mel. El repositorio ocupa 0,5 GB, aunque los artefactos exportados suman 267 MB (CoreAI) y 277 MB (CoreML). No se dispone de información sobre licencia del repositorio ni sobre idiomas soportados en la ficha de HuggingFace.
+La arquitectura subyacente es un transformer RoFormer con atención sobre el eje temporal y el eje frecuencial, procesado en bandas mel. El repositorio ocupa 0,5 GB, aunque los artefactos exportados suman 267 MB (CoreAI) y 277 MB (CoreML). No se dispone de información sobre licencia del repositorio ni sobre idiomas soportados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La arquitectura subyacente es un transformer RoFormer con atención sobre el eje
 | Longitud de contexto | no aplica; chunk estático de 8 s a 44,1 kHz (352.800 muestras, 801 frames STFT, FFT 2048, hop 441) |
 | Tipos de cuantizacion | fp16 con pesos paletizados a 8 bits en grupos de 32 (`pal8g32`) |
 | Idiomas soportados | no disponible (modelo de audio, no lingüístico) |
-| Licencia | pesos derivados del checkpoint Kim Vocal 2 (MIT); licencia del repositorio no indicada en HuggingFace |
+| Licencia | pesos derivados del checkpoint Kim Vocal 2 (MIT); licencia del repositorio no indicada en Hugging Face |
 | Formato de pesos | CoreAI `.aimodel` (14 etapas) y CoreML `.mlmodelc` (14 etapas); tablas de bandas en `bands.bin` |
 
 ## Arquitectura y entrenamiento
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto / chunk | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kim Mel-Band RoFormer (este repo) | Separación vocal, Mel-Band RoFormer | 8 s a 44,1 kHz | CoreAI / CoreML | Pesos MIT (checkpoint Kim Vocal 2) | HuggingFace |
+| Kim Mel-Band RoFormer (este repo) | Separación vocal, Mel-Band RoFormer | 8 s a 44,1 kHz | CoreAI / CoreML | Pesos MIT (checkpoint Kim Vocal 2) | Hugging Face |
 | Kim Vocal 2 (checkpoint original) | Separación vocal, Mel-Band RoFormer | No disponible | PyTorch (`.ckpt`) | MIT | GitHub (Music-Source-Separation-Training) |
-| Demucs (alternativa de referencia) | Separación de fuentes (time-domain) | No disponible | PyTorch | MIT | GitHub / HuggingFace |
+| Demucs (alternativa de referencia) | Separación de fuentes (time-domain) | No disponible | PyTorch | MIT | GitHub / Hugging Face |
 
 La comparación se limita a la familia de modelos de separación de fuentes; no se dispone de datos de rendimiento del pipeline exportado para contrastar SDR con Demucs u otras alternativas.
 
@@ -75,7 +75,7 @@ La comparación se limita a la familia de modelos de separación de fuentes; no 
 - Modelo especializado en separación vocal: no genera texto, código ni realiza razonamiento; no debe evaluarse con benchmarks de LLM.
 - Chunk estático de 8 segundos: el procesamiento de audio más largo requiere segmentación y concatenación, con posible artefacto en las fronteras.
 - Solo salida de máscara vocal: no se documenta separación de batería, bajo u otros instrumentos.
-- Licencia del repositorio no indicada en HuggingFace; los pesos derivan de un checkpoint MIT, pero conviene verificar los términos antes de uso comercial.
+- Licencia del repositorio no indicada en Hugging Face; los pesos derivan de un checkpoint MIT, pero conviene verificar los términos antes de uso comercial.
 - Dependencia estricta de versiones de sistema (iOS 27+/macOS 28+ para CoreAI; iOS 18+/macOS 15+ para CoreML) y del hardware Apple con Neural Engine.
 - Sin datos publicados de calidad (SDR, SI-SDR) del pipeline exportado; el rendimiento puede diferir del checkpoint PyTorch original por la paletización a 8 bits y las aproximaciones numéricas (GELU, RMSNorm escalada).
 - Riesgo de artefactos en pasajes con voces superpuestas o instrumentos con contenido espectral solapado con la voz.
@@ -83,7 +83,7 @@ La comparación se limita a la familia de modelos de separación de fuentes; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hungbenjamin402/mel-band-roformer-vocal-sep
+- Hugging Face: https://huggingface.co/hungbenjamin402/mel-band-roformer-vocal-sep
 - Paper Mel-Band RoFormer: https://arxiv.org/abs/2310.01809
 - Checkpoint fuente Kim Vocal 2 (Music-Source-Separation-Training): https://github.com/ZFTurbo/Music-Source-Separation-Training
 - Guía de modelos Core AI de Apple: https://github.com/apple/coreai-models

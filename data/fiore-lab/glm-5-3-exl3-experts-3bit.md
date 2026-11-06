@@ -99,7 +99,7 @@ Según la model card, bajar expertos a 2 bits para compensar memoria empeora la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-3bit
+- Hugging Face: https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-3bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Pesos BF16 de origen: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Receta y código (Apache-2.0): https://github.com/fiore-labo/fiore-glm5.3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wan2.1-T2V-14B es un modelo de difusión para generación de vídeo a partir de texto (text-to-video) desarrollado por Wan-AI, la organización detrás de la familia Wan2.1. Es la variante de mayor tamaño de la suite: 14.288.491.584 parámetros (≈14,3 B) en formato safetensors, publicada en HuggingFace el 25 de febrero de 2025 y distribuida bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas. El modelo genera vídeo en resoluciones de 480P y 720P y, según la model card, es el único modelo de vídeo de su categoría capaz derenderizar texto legible tanto en chino como en inglés dentro de la escena.
+Wan2.1-T2V-14B es un modelo de difusión para generación de vídeo a partir de texto (text-to-video) desarrollado por Wan-AI, la organización detrás de la familia Wan2.1. Es la variante de mayor tamaño de la suite: 14.288.491.584 parámetros (≈14,3 B) en formato safetensors, publicada en Hugging Face el 25 de febrero de 2025 y distribuida bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas. El modelo genera vídeo en resoluciones de 480P y 720P y, según la model card, es el único modelo de vídeo de su categoría capaz derenderizar texto legible tanto en chino como en inglés dentro de la escena.
 
 El problema que aborda es la generación de vídeo de alta calidad con dinámica de movimiento significativa desde prompts en lenguaje natural, un terreno donde los modelos abiertos quedaban por detrás de las soluciones propietarias. Wan-AI afirma que esta variante establece un nuevo referente SOTA tanto frente a modelos abiertos como cerrados, aunque la model card no acompaña esas afirmaciones con cifras de benchmarks en la información disponible. La suite incluye además variantes de image-to-video (I2V-14B-480P y 720P) y una variante ligera T2V-1.3B pensada para GPUs de consumo.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: no publicada oficialmente para la variante 14B. Como referencia de orden de magnitud, hay que presupuestar los ≈28,6 GB de pesos más los componentes auxiliares, lo que en la práctica apunta a GPUs de 40-80 GB para 480P sin técnicas de offload. Para 720P el requisito es mayor. Estas cifras son estimaciones a partir del recuento de parámetros, no datos de la model card.
 - **GPU recomendadas**: A100 80 GB y H100 para ejecución en una sola GPU sin cuantizar; el repositorio oficial incluye código de inferencia multi-GPU, lo que permite repartir el modelo entre varias GPUs de 24-48 GB.
 - **GPU de consumo**: el modelo 14B no cabe en una RTX 4090 de 24 GB en bf16 sin cuantización u offload (estimación). Para consumo, Wan-AI ofrece la variante T2V-1.3B, que según la model card requiere 8,19 GB de VRAM y genera un clip de 5 segundos en 480P en unos 4 minutos en una RTX 4090 sin optimizaciones.
-- **Opciones de despliegue**: scripts oficiales del repositorio de GitHub (con soporte multi-GPU), demo Gradio incluida, y la librería `diffusers` (el tag de HuggingFace indica `diffusers`, aunque el todo list de la model card marca la integración en diffusers y en ComfyUI como pendiente a fecha de publicación). No se documentan en la información disponible soportes de llama.cpp, Ollama, vLLM ni TGI, que no aplican a un modelo de difusión de vídeo.
+- **Opciones de despliegue**: scripts oficiales del repositorio de GitHub (con soporte multi-GPU), demo Gradio incluida, y la librería `diffusers` (el tag de Hugging Face indica `diffusers`, aunque el todo list de la model card marca la integración en diffusers y en ComfyUI como pendiente a fecha de publicación). No se documentan en la información disponible soportes de llama.cpp, Ollama, vLLM ni TGI, que no aplican a un modelo de difusión de vídeo.
 - **Latencia y throughput**: no publicados para el 14B. La única referencia temporal de la model card es la del 1.3B (≈4 min para 5 s en 480P en RTX 4090).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Resolucion | Contexto/duracion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Wan2.1-T2V-14B | ≈14,3 B | 480P y 720P | No disponible | Apache 2.0 | HuggingFace y ModelScope | Texto visual en chino e inglés; VAE para 1080P |
-| Wan2.1-T2V-1.3B | ≈1,3 B | 480P (720P inestable) | No disponible | Apache 2.0 | HuggingFace y ModelScope | 8,19 GB de VRAM, ~4 min por clip de 5 s en RTX 4090 |
-| Wan2.1-I2V-14B-720P | ≈14 B (no confirmado) | 720P | No disponible | Apache 2.0 | HuggingFace y ModelScope | Variante image-to-video de la misma suite |
+| Wan2.1-T2V-14B | ≈14,3 B | 480P y 720P | No disponible | Apache 2.0 | Hugging Face y ModelScope | Texto visual en chino e inglés; VAE para 1080P |
+| Wan2.1-T2V-1.3B | ≈1,3 B | 480P (720P inestable) | No disponible | Apache 2.0 | Hugging Face y ModelScope | 8,19 GB de VRAM, ~4 min por clip de 5 s en RTX 4090 |
+| Wan2.1-I2V-14B-720P | ≈14 B (no confirmado) | 720P | No disponible | Apache 2.0 | Hugging Face y ModelScope | Variante image-to-video de la misma suite |
 | HunyuanVideo | No disponible en la información | No disponible | No disponible | No disponible | No disponible | Alternativa abierta de Tencent; datos no verificados en esta búsqueda |
 | CogVideoX-5B | No disponible en la información | No disponible | No disponible | No disponible | No disponible | Alternativa abierta de menor tamaño; datos no verificados en esta búsqueda |
 
@@ -86,9 +86,9 @@ Las dos últimas filas se incluyen solo como referencia de categoría: los datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wan-AI/T2V-14B (URL canónica: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
+- Modelo en Hugging Face: https://huggingface.co/Wan-AI/T2V-14B (URL canónica: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
 - Repositorio oficial en GitHub: https://github.com/Wan-Video/Wan2.1
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - ModelScope: https://modelscope.cn/organization/Wan-AI y https://www.modelscope.cn/models/Wan-AI/Wan2.1-T2V-14B
 - Blog oficial: https://wanxai.com
 - Discord: https://discord.gg/p5XbdQV7

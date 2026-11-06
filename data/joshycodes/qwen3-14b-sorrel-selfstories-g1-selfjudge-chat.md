@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| `joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat` | 14,77 mil millones | 4.096 tokens en el ajuste | `internal-research` (no comercial, no redistribuir) | HuggingFace, 0 descargas | No |
-| Qwen3-14B (modelo oficial de Qwen) | 14,77 mil millones | 32.768 tokens nativos, ampliable | Apache 2.0 | HuggingFace, ampliamente distribuido | Si |
-| `joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain` (modelo base) | 14,77 mil millones | No disponible | No disponible en la informacion proporcionada | HuggingFace | No |
+| `joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat` | 14,77 mil millones | 4.096 tokens en el ajuste | `internal-research` (no comercial, no redistribuir) | Hugging Face, 0 descargas | No |
+| Qwen3-14B (modelo oficial de Qwen) | 14,77 mil millones | 32.768 tokens nativos, ampliable | Apache 2.0 | Hugging Face, ampliamente distribuido | Si |
+| `joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain` (modelo base) | 14,77 mil millones | No disponible | No disponible en la informacion proporcionada | Hugging Face | No |
 
 El único dato objetivo de comparación es que este checkpoint hereda el tamaño del Qwen3-14B oficial, pero pierde su licencia permisiva (Apache 2.0) y no documenta ni contexto extendido ni resultados de evaluación. No se dispone de información sobre otros modelos comparables dentro del mismo proyecto `sorrel`.
 
@@ -89,7 +89,7 @@ El único dato objetivo de comparación es que este checkpoint hereda el tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat
 - Modelo base: https://huggingface.co/joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain
 - Repositorio `flourishing-training` (referenciado en la model card por el commit `a0afb77669ae`): no disponible como URL
 - Script de evaluación (`eval.py`) del repositorio anterior: no disponible como URL

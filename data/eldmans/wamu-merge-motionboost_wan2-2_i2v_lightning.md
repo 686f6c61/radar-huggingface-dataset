@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING es un checkpoint de difusion para generacion de video a partir de imagen (image-to-video, I2V) publicado por el usuario EldMans en HuggingFace. El repositorio declara la libreria `diffusers` y el tag `diffusers:WanImageToVideoPipeline`, lo que lo situa en la familia Wan 2.2 de pipelines de imagen-a-video. El nombre sugiere una mezcla de pesos ("Merge") con refuerzo de movimiento ("MotionBoost") y una variante destilada para inferencia en pocos pasos ("LIGHTNING"), aunque el autor no documenta ninguna de estas operaciones.
+WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING es un checkpoint de difusion para generacion de video a partir de imagen (image-to-video, I2V) publicado por el usuario EldMans en Hugging Face. El repositorio declara la libreria `diffusers` y el tag `diffusers:WanImageToVideoPipeline`, lo que lo situa en la familia Wan 2.2 de pipelines de imagen-a-video. El nombre sugiere una mezcla de pesos ("Merge") con refuerzo de movimiento ("MotionBoost") y una variante destilada para inferencia en pocos pasos ("LIGHTNING"), aunque el autor no documenta ninguna de estas operaciones.
 
 El peso real declarado en los ficheros safetensors es de 14.288.901.184 parametros (aproximadamente 14,3 mil millones), con un repositorio de 68,8 GB. Es un modelo de generacion de video, no un modelo de lenguaje: no procesa instrucciones de texto en el sentido conversacional, sino que toma una imagen de entrada (mas un prompt textual en el pipeline habitual de Wan) y genera una secuencia de video.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados de las alternativas en la informacion proporc
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING | 14,29 mil millones | Imagen a video | No disponible | Repositorio publico en HuggingFace, 0 descargas |
+| WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING | 14,29 mil millones | Imagen a video | No disponible | Repositorio publico en Hugging Face, 0 descargas |
 | Wan 2.2 I2V (modelo base de la familia, presumible origen) | No disponible en esta busqueda | Imagen a video | No disponible en esta busqueda | No verificado |
 | Otras alternativas de imagen a video open source (LTX-Video, HunyuanVideo-I2V, CogVideoX) | No disponible | Imagen a video | No disponible | No verificado |
 
@@ -91,7 +91,7 @@ No se han encontrado comparaciones de rendimiento publicadas para este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EldMans/WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING
+- Modelo en Hugging Face: https://huggingface.co/EldMans/WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada por el autor: https://mlco2.github.io/impact
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint LoRA de adaptación para el modelo Video2World de MimicVideo, desarrollado por el usuario `dreamdifferent` en HuggingFace. Se trata de un adaptador entrenado específicamente para la generación de vídeo robótico con el brazo WidowX, utilizando dos cámaras simultáneas (esquina y frontal) y una instrucción textual concreta: "pick up the candle and place it into the bowl". El checkpoint corresponde a la iteración 400 de un entrenamiento más largo, y está diseñado para cargarse sobre un backbone fusionado concreto (`dreamdifferent/widowx250-video-fused`), no como modelo independiente.
+Este repositorio contiene un checkpoint LoRA de adaptación para el modelo Video2World de MimicVideo, desarrollado por el usuario `dreamdifferent` en Hugging Face. Se trata de un adaptador entrenado específicamente para la generación de vídeo robótico con el brazo WidowX, utilizando dos cámaras simultáneas (esquina y frontal) y una instrucción textual concreta: "pick up the candle and place it into the bowl". El checkpoint corresponde a la iteración 400 de un entrenamiento más largo, y está diseñado para cargarse sobre un backbone fusionado concreto (`dreamdifferent/widowx250-video-fused`), no como modelo independiente.
 
 La relevancia de este modelo radica en su enfoque: en lugar de entrenar un modelo de vídeo genérico, se aplica una adaptación de bajo rango (LoRA) sobre un modelo de difusión de vídeo ya preentrenado, lo que permite especializarlo en una tarea de manipulación robótica con un coste de entrenamiento reducido. El repositorio incluye los artefactos necesarios para reproducir la inferencia, aunque el dataset de entrenamiento no se distribuye y está sujeto a políticas de acceso externas.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (adaptadores LoRA para generación de vídeo robótico con MimicVideo). El repositorio es específico y no se han encontrado alternativas directas en la búsqueda web. Se recomienda consultar el perfil del autor en HuggingFace para ver otros adaptadores similares, como el de KUKA IIWA14, aunque no se dispone de detalles suficientes para una comparación rigurosa.
+No se dispone de información sobre modelos comparables en la misma categoría (adaptadores LoRA para generación de vídeo robótico con MimicVideo). El repositorio es específico y no se han encontrado alternativas directas en la búsqueda web. Se recomienda consultar el perfil del autor en Hugging Face para ver otros adaptadores similares, como el de KUKA IIWA14, aunque no se dispone de detalles suficientes para una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-400
-- Perfil del autor en HuggingFace: https://huggingface.co/dreamdifferent
+- Perfil del autor en Hugging Face: https://huggingface.co/dreamdifferent
 - Datasets del autor: https://huggingface.co/dreamdifferent/datasets
 - Repositorio del backbone requerido: `dreamdifferent/widowx250-video-fused` (revisión `f0cea76b62c5dd66b06b9f965932ddea32a7b546`)
 - Código de MimicVideo (commit `e3355dbc93132b576c02f920a59b4fc18a4f5906`): no se proporciona URL directa en la información disponible.

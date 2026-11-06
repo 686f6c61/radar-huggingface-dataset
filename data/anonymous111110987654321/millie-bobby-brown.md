@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `anonymous111110987654321/millie-bobby-brown` | LoRA DreamBooth | `krea/Krea-2-Raw` | no disponible | no aplica | Apache 2.0 | HuggingFace, 37 descargas |
-| Adaptadores LoRA de identidad sobre SDXL | LoRA DreamBooth | Stable Diffusion XL | no disponible | no aplica | variable segun autor | Amplia en HuggingFace y Civitai |
-| Adaptadores LoRA de identidad sobre Flux | LoRA DreamBooth | FLUX.1 | no disponible | no aplica | variable segun autor | Amplia en HuggingFace |
+| `anonymous111110987654321/millie-bobby-brown` | LoRA DreamBooth | `krea/Krea-2-Raw` | no disponible | no aplica | Apache 2.0 | Hugging Face, 37 descargas |
+| Adaptadores LoRA de identidad sobre SDXL | LoRA DreamBooth | Stable Diffusion XL | no disponible | no aplica | variable segun autor | Amplia en Hugging Face y Civitai |
+| Adaptadores LoRA de identidad sobre Flux | LoRA DreamBooth | FLUX.1 | no disponible | no aplica | variable segun autor | Amplia en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y alternativas de la misma categoria.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous111110987654321/millie-bobby-brown
+- Modelo en Hugging Face: https://huggingface.co/anonymous111110987654321/millie-bobby-brown
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo usada en las muestras: https://huggingface.co/krea/Krea-2-Turbo

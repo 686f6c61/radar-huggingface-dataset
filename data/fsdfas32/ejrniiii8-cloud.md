@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fsdfas32/ejrniiii8-cloud` alojado en HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la presentacion personal de un ingeniero de sistemas llamado Julian Vance, especializado en motores de almacenamiento de baja latencia, sistemas distribuidos y optimizacion de rendimiento en Linux. No se describe ninguna arquitectura neuronal, ningun conjunto de pesos, ni ningun proceso de entrenamiento.
+El repositorio `fsdfas32/ejrniiii8-cloud` alojado en Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la presentacion personal de un ingeniero de sistemas llamado Julian Vance, especializado en motores de almacenamiento de baja latencia, sistemas distribuidos y optimizacion de rendimiento en Linux. No se describe ninguna arquitectura neuronal, ningun conjunto de pesos, ni ningun proceso de entrenamiento.
 
 El contenido del README enumera proyectos de codigo abierto (`keg-db`, `wirefall`, `raft-sim`, `eurorack-dsp`), un stack tecnico basado en Rust, C++ y Go, y una serie de principios de ingenieria. Ninguno de estos elementos constituye un artefacto de aprendizaje automatico desplegable. El repositorio tiene cero descargas y cero likes, fue creado el 2 de noviembre de 2026 y actualizado el mismo dia, y no declara licencia, idiomas ni pipeline.
 
@@ -77,5 +77,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fsdfas32/ejrniiii8-cloud
+- Repositorio en Hugging Face: https://huggingface.co/fsdfas32/ejrniiii8-cloud
 - Perfil de GitHub citado en la model card: https://github.com/ejrniiii8-cloud

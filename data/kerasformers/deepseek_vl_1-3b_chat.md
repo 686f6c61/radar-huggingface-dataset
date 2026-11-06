@@ -16,7 +16,7 @@ La relevancia de este modelo reside en dos frentes. Por un lado, DeepSeek-VL fue
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (formato Keras nativo; los pesos originales estan en safetensors) |
 | Idiomas soportados | no disponible (el modelo original soporta principalmente ingles y chino) |
-| Licencia | DeepSeek (licencia propia, `other` en HuggingFace) |
+| Licencia | DeepSeek (licencia propia, `other` en Hugging Face) |
 | Formato de pesos | Keras 3 (`.weights`), con soporte para cargar safetensors originales via prefijo `hf:` |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ Los detalles del entrenamiento (número de tokens, composición del dataset, uso
 - Razonamiento visual: combina la información de la imagen con el contexto textual para tareas que requieren inferencia (por ejemplo, "¿qué herramienta se necesita para arreglar esto?").
 - Soporte de chat: el checkpoint `chat` está fine-tuneado para mantener diálogos naturales, con formato de conversación definido por el procesador.
 - Multi-backend: gracias a Keras 3, el mismo modelo se ejecuta en TensorFlow, PyTorch y JAX sin cambios en el código.
-- Carga flexible de pesos: permite cargar tanto los pesos convertidos de KerasFormers como los safetensors originales de HuggingFace mediante el prefijo `hf:`.
+- Carga flexible de pesos: permite cargar tanto los pesos convertidos de KerasFormers como los safetensors originales de Hugging Face mediante el prefijo `hf:`.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ Los detalles del entrenamiento (número de tokens, composición del dataset, uso
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de KerasFormers no incluye métricas de evaluación, y la conversión no modifica los pesos del modelo original, por lo que el rendimiento esperado es equivalente al de `deepseek-ai/deepseek-vl-1.3b-chat`. Para datos de benchmarks (como MMMU, POPE o MMBench), se recomienda consultar el paper original o la model card del modelo base en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de KerasFormers no incluye métricas de evaluación, y la conversión no modifica los pesos del modelo original, por lo que el rendimiento esperado es equivalente al de `deepseek-ai/deepseek-vl-1.3b-chat`. Para datos de benchmarks (como MMMU, POPE o MMBench), se recomienda consultar el paper original o la model card del modelo base en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -77,10 +77,10 @@ La comparativa directa con otros VLM de tamaño similar no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/deepseek_vl_1.3b_chat
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/deepseek_vl_1.3b_chat
 - Modelo base original: https://huggingface.co/deepseek-ai/deepseek-vl-1.3b-chat
 - Paper original: https://arxiv.org/abs/2403.05525
-- Paper en HuggingFace: https://huggingface.co/papers/2403.05525
+- Paper en Hugging Face: https://huggingface.co/papers/2403.05525
 - Repositorio GitHub de DeepSeek-VL: https://github.com/deepseek-ai/DeepSeek-VL
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de DeepSeek-VL en KerasFormers: https://imvision12.github.io/KerasFormers/deepseek_vl/

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Inkling-NVFP4 es una versión cuantizada en NVFP4 del modelo multimodal Inkling, desarrollado por Thinking Machines. El modelo original es un transformer autoregresivo de 66 capas con arquitectura sparse Mixture-of-Experts (MoE) de 975B parámetros totales y 41B activos, capaz de procesar texto, imágenes y audio. Esta cuantización reduce la precisión de los pesos a 4 bits, manteniendo la misma arquitectura y capacidades, y se publica bajo licencia Apache 2.0. El repositorio en HuggingFace pertenece al usuario trinityomni, pero el modelo base es thinkingmachines/Inkling. La versión NVFP4 está pensada para despliegue local con librerías como SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers, y ofrece un rendimiento competitivo en tareas de razonamiento, agentes y código.
+Inkling-NVFP4 es una versión cuantizada en NVFP4 del modelo multimodal Inkling, desarrollado por Thinking Machines. El modelo original es un transformer autoregresivo de 66 capas con arquitectura sparse Mixture-of-Experts (MoE) de 975B parámetros totales y 41B activos, capaz de procesar texto, imágenes y audio. Esta cuantización reduce la precisión de los pesos a 4 bits, manteniendo la misma arquitectura y capacidades, y se publica bajo licencia Apache 2.0. El repositorio en Hugging Face pertenece al usuario trinityomni, pero el modelo base es thinkingmachines/Inkling. La versión NVFP4 está pensada para despliegue local con librerías como SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers, y ofrece un rendimiento competitivo en tareas de razonamiento, agentes y código.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Inkling es un modelo multimodal autoregresivo que acepta texto, imagenes y audio
 - Capacidades agenticas y de uso de herramientas: soporta tool calling y sistemas agenticos.
 - Generacion de codigo: resultados en SWEBench Verified y SWEBench Pro.
 - Capacidades multilingues generales, con ingles como idioma principal.
-- Despliegue local con SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers.
+- Despliegue local con SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ Nota: la tabla de benchmarks del model card se corta en SWEBench Pro; no se disp
 - VRAM estimada: no disponible. El tamano del repositorio es de 592 GB, lo que indica que el modelo requiere una infraestructura de multiples GPUs de alta gama.
 - GPU recomendadas: no disponible; por el numero de parametros, se necesitan clusters con GPUs como A100 o H100.
 - No cabe en GPUs de consumo (consumer GPU) debido a su enorme tamano.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth, HuggingFace Transformers.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth, Hugging Face Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ El modelo se compara en la tabla de benchmarks con Nemotron 3 Ultra, Kimi K2.5, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/Inkling-NVFP4
+- Hugging Face: https://huggingface.co/trinityomni/Inkling-NVFP4
 - Modelo base BF16: https://huggingface.co/thinkingmachines/Inkling
 - Version NVFP4 original: https://huggingface.co/thinkingmachines/Inkling-NVFP4
 - Playground: https://tinker.thinkingmachines.ai/playground
@@ -91,4 +91,4 @@ El modelo se compara en la tabla de benchmarks con Nemotron 3 Ultra, Kimi K2.5, 
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog Hugging Face: https://hf.co/blog/thinkingmachines-inkling

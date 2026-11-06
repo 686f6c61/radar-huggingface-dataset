@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario sfsfff22, etiquetado como un modelo de extracción de características basado en transformers y con licencia MIT. La model card describe una supuesta actualización de un modelo llamado MyAwesomeModel, con mejoras en razonamiento, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no contiene ningún peso ni archivo de modelo (tamaño 0.0 GB), no tiene descargas ni interacciones, y carece de especificaciones técnicas verificables. Se trata claramente de un repositorio de prueba o placeholder, no de un modelo funcional.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario sfsfff22, etiquetado como un modelo de extracción de características basado en transformers y con licencia MIT. La model card describe una supuesta actualización de un modelo llamado MyAwesomeModel, con mejoras en razonamiento, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no contiene ningún peso ni archivo de modelo (tamaño 0.0 GB), no tiene descargas ni interacciones, y carece de especificaciones técnicas verificables. Se trata claramente de un repositorio de prueba o placeholder, no de un modelo funcional.
 
 La información disponible se limita a la model card, que presenta resultados de benchmarks genéricos (sin nombres de pruebas estándar) y recomendaciones de uso, pero no proporciona datos sobre arquitectura, número de parámetros, contexto, ni detalles de entrenamiento. Por tanto, esta ficha debe interpretarse con cautela: la mayor parte de los datos técnicos no están disponibles y no se puede confirmar la existencia real del modelo.
 
@@ -91,6 +91,6 @@ No disponible. Al no existir un modelo funcional ni especificaciones técnicas, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepository
 - Repositorio similar (misma plantilla): https://huggingface.co/sdfgsdg1224/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales relacionados con este modelo.

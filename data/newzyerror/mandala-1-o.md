@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mandala-1.o` es un modelo publicado en HuggingFace por el usuario `newzyerror` (newan sharma). La unica informacion disponible en la ficha del modelo es la licencia MIT. No se ha publicado ninguna descripcion tecnica, documentacion, dataset de entrenamiento ni informacion sobre su arquitectura o capacidades. El modelo fue creado el 7 de septiembre de 2026 y, en el momento de la consulta, no registra descargas ni likes. La busqueda web no ha proporcionado informacion adicional relevante sobre el modelo, por lo que no es posible determinar su proposito, tamano o rendimiento.
+El modelo `mandala-1.o` es un modelo publicado en Hugging Face por el usuario `newzyerror` (newan sharma). La unica informacion disponible en la ficha del modelo es la licencia MIT. No se ha publicado ninguna descripcion tecnica, documentacion, dataset de entrenamiento ni informacion sobre su arquitectura o capacidades. El modelo fue creado el 7 de septiembre de 2026 y, en el momento de la consulta, no registra descargas ni likes. La busqueda web no ha proporcionado informacion adicional relevante sobre el modelo, por lo que no es posible determinar su proposito, tamano o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No se ha publicado informacion sobre la arquitectura del modelo, los datos de en
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos y realistas para este modelo, ya que no se ha publicado ninguna informacion sobre sus capacidades, arquitectura o rendimiento. Cualquier aplicacion practica seria especulativa. Se recomienda consultar la pagina de HuggingFace del modelo o contactar con el autor para obtener documentacion adicional.
+No es posible enumerar casos de uso concretos y realistas para este modelo, ya que no se ha publicado ninguna informacion sobre sus capacidades, arquitectura o rendimiento. Cualquier aplicacion practica seria especulativa. Se recomienda consultar la pagina de Hugging Face del modelo o contactar con el autor para obtener documentacion adicional.
 
 ## Benchmarks y rendimiento
 
@@ -59,6 +59,6 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/newzyerror/mandala-1.o
-- Perfil del autor en HuggingFace: https://huggingface.co/newzyerror
+- Hugging Face: https://huggingface.co/newzyerror/mandala-1.o
+- Perfil del autor en Hugging Face: https://huggingface.co/newzyerror
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web.

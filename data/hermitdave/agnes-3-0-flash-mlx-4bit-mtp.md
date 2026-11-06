@@ -83,10 +83,10 @@ El unico dato de rendimiento medido que aparece en la documentacion es de throug
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| hermitdave/Agnes-3.0-Flash-MLX-4bit-MTP | 32,2 B | 262.144 | MLX safetensors, 4-bit affine (4,50 bits/peso) | Solo texto | Apache-2.0 | HuggingFace, MLX |
-| Agnes-AI/Agnes-3.0-Flash (base) | no disponible (modelo original completo) | 262.144 | safetensors bf16 | Texto + vision + cabeza MTP | Apache-2.0 | HuggingFace |
-| hermitdave/Agnes-3.0-Flash-MLX-4bit (referencia) | no disponible | no disponible | MLX safetensors, 4-bit | Solo texto | Apache-2.0 | HuggingFace, MLX |
-| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | no disponible | Drafter de decodificacion especulativa | no disponible | HuggingFace |
+| hermitdave/Agnes-3.0-Flash-MLX-4bit-MTP | 32,2 B | 262.144 | MLX safetensors, 4-bit affine (4,50 bits/peso) | Solo texto | Apache-2.0 | Hugging Face, MLX |
+| Agnes-AI/Agnes-3.0-Flash (base) | no disponible (modelo original completo) | 262.144 | safetensors bf16 | Texto + vision + cabeza MTP | Apache-2.0 | Hugging Face |
+| hermitdave/Agnes-3.0-Flash-MLX-4bit (referencia) | no disponible | no disponible | MLX safetensors, 4-bit | Solo texto | Apache-2.0 | Hugging Face, MLX |
+| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | no disponible | Drafter de decodificacion especulativa | no disponible | Hugging Face |
 
 Datos de benchmarks comparativos: no disponibles en la informacion proporcionada. Las diferencias documentadas entre la version aqui descrita y la referencia `Agnes-3.0-Flash-MLX-4bit` se limitan al proceso de conversion: plegado de la FFN paralela, renombrado de capas de atencion, conversion del RMSNorm centrado en uno y eliminacion de los pesos MTP.
 
@@ -105,7 +105,7 @@ Datos de benchmarks comparativos: no disponibles en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-4bit-MTP
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Drafter MTP complementario: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MTP-drafter
 - Drafter DFlash recomendado para oMLX: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

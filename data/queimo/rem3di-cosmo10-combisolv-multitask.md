@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Queimo/rem3di-cosmo10-combisolv-multitask` es un checkpoint de investigación publicado en HuggingFace por el usuario Queimo, orientado a química computacional y entrenado de forma multitarea. Según su model card, el modelo combina tres objetivos simultáneos: denoising de embeddings moleculares, reconstrucción de perfiles COSMO (campos sigma, A y V) y predicción de energía libre de solvatación sobre CombiSolv-QM. La ejecución parte de un encoder, unos preprocesadores y una cabeza COSMO heredados de una evaluación previa sobre BigSolDB2.0, y restaura únicamente el decodificador de denoising omitido a partir de la época 2 de PCQM.
+`Queimo/rem3di-cosmo10-combisolv-multitask` es un checkpoint de investigación publicado en Hugging Face por el usuario Queimo, orientado a química computacional y entrenado de forma multitarea. Según su model card, el modelo combina tres objetivos simultáneos: denoising de embeddings moleculares, reconstrucción de perfiles COSMO (campos sigma, A y V) y predicción de energía libre de solvatación sobre CombiSolv-QM. La ejecución parte de un encoder, unos preprocesadores y una cabeza COSMO heredados de una evaluación previa sobre BigSolDB2.0, y restaura únicamente el decodificador de denoising omitido a partir de la época 2 de PCQM.
 
 El interés del artefacto es metodológico más que de producto: documenta un esquema de entrenamiento conjunto con ponderación de incertidumbre de tareas (método atribuido a Monroe en la propia model card) y decorrelación de covarianzas, además de un registro exhaustivo por época (cabezas, pesos de tarea aprendidos, optimizador, scheduler, estados RNG, transformaciones de etiquetas, arquitectura y manifiesto SHA-256). El autor indica que el entrenamiento está en curso, con cinco épocas conjuntas planificadas.
 
@@ -23,7 +23,7 @@ No obstante, la información pública es mínima: no se declaran parámetros tot
 | Tareas de entrenamiento | denoising de embeddings; reconstrucción COSMO sigma/A/V; energía libre de solvatación (CombiSolv-QM) |
 | Conjuntos de datos citados | BigSolDB2.0, PCQM (época 2), CombiSolv-QM |
 | Estado | entrenamiento en curso; cinco épocas conjuntas planificadas |
-| Fecha de publicacion | 2026-10-28 (creación del repositorio según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-28 (creación del repositorio según metadatos de Hugging Face) |
 | Tamano del repositorio | 8,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de datos verificables de alternativas en la información proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rem3di-cosmo10-combisolv-multitask | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| rem3di-cosmo10-combisolv-multitask | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría (modelos multitarea para química cuántica y solvatación) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,9 +84,9 @@ No se dispone de datos verificables de alternativas en la información proporcio
 - Sesgos de dominio: los conjuntos citados cubren un espacio químico concreto (moléculas orgánicas de las bases mencionadas); el comportamiento en iones, metales, polímeros o disolventes exóticos no está documentado.
 - Sin soporte declarado de cuantización: no hay versiones GGUF ni formatos de bajo precisión, lo que complica el despliegue en hardware limitado.
 - Trazabilidad: los manifiestos SHA-256 y las copias de seguridad son un punto a favor, pero el autor no publica código de inferencia ni instrucciones de uso.
-- Advertencia sobre metadatos: la fecha de creación del repositorio indicada por HuggingFace es 2026-10-28, posterior a la fecha habitual de consulta; conviene verificar la vigencia del artefacto antes de integrarlo.
+- Advertencia sobre metadatos: la fecha de creación del repositorio indicada por Hugging Face es 2026-10-28, posterior a la fecha habitual de consulta; conviene verificar la vigencia del artefacto antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Queimo/rem3di-cosmo10-combisolv-multitask
+- Hugging Face: https://huggingface.co/Queimo/rem3di-cosmo10-combisolv-multitask
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

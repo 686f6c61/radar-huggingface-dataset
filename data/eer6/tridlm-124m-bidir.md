@@ -91,6 +91,6 @@ Frente a GPT-2 124M (autoregresivo), no hay comparacion directa de ppl porque la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EER6/TriDLM-124M-bidir
+- Repositorio Hugging Face: https://huggingface.co/EER6/TriDLM-124M-bidir
 - Repositorio GitHub del experimento TriDLM: https://github.com/AntonXue/TriDLM (contiene codigo, logs de entrenamiento y registro completo del experimento, incluyendo metricas de generacion por sampler y condicion de prompting)
-- Perfil del autor en HuggingFace: https://huggingface.co/EER6
+- Perfil del autor en Hugging Face: https://huggingface.co/EER6

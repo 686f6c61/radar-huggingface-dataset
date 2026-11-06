@@ -103,7 +103,7 @@ La comparación se limita a los sistemas del board JevBench citados en la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-MLX
 - Modelo base: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
 - Versión recomendada v4 (MLX): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4-MLX
 - Versión 0.8B v3: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX

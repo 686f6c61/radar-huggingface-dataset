@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-12B-it (original) | 12B | 256K | FP16/BF16 | Gemma (uso comercial permitido con restricciones) | HuggingFace |
-| Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4 | 12B (6,5B en INT4) | 256K (estimado) | INT4 | no disponible | HuggingFace |
-| Justbackup/gemma-4-12B-it-uncensored | 12B | 256K | FP16/BF16 (sin cuantizar) | no disponible | HuggingFace |
-| Llama 3.1 8B uncensored (ejemplo) | 8B | 128K | GGUF (varias) | Llama 3.1 (permisiva) | HuggingFace |
+| gemma-4-12B-it (original) | 12B | 256K | FP16/BF16 | Gemma (uso comercial permitido con restricciones) | Hugging Face |
+| Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4 | 12B (6,5B en INT4) | 256K (estimado) | INT4 | no disponible | Hugging Face |
+| Justbackup/gemma-4-12B-it-uncensored | 12B | 256K | FP16/BF16 (sin cuantizar) | no disponible | Hugging Face |
+| Llama 3.1 8B uncensored (ejemplo) | 8B | 128K | GGUF (varias) | Llama 3.1 (permisiva) | Hugging Face |
 
 La principal diferencia con el modelo original es la eliminacion de la censura y la reduccion de tamaño. Frente a otros modelos *uncensored* de tamano similar, este ofrece la arquitectura Gemma4Unified con soporte multimodal, aunque la cuantizacion INT4 puede degradar ligeramente la calidad en tareas complejas.
 
@@ -77,7 +77,7 @@ La principal diferencia con el modelo original es la eliminacion de la censura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-4-12B-it-Uncensored-Aquarion-INT4
 - Version sin cuantizar de Justbackup: https://huggingface.co/Justbackup/gemma-4-12B-it-uncensored
 - Guia de ejecucion local de Gemma 4 (blog): https://locallyuncensored.com/blog/gemma-4-local-guide.html
 - Noticia sobre merge uncensored para AMD ROCM: https://uncensoredhub.ai/news/2026-07-02-gemma-4-12b-uncensored-merge-optimized-for-amd-rocm-drops-on-huggingface

@@ -67,7 +67,7 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v4
+- Modelo en Hugging Face: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v4
 - Versión v2: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2
 - Adaptador base (SubMaroon): https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4
 - Scripts de fusión para Gemma 4: https://huggingface.co/spaces/Naphula/model_tools/commit/bf21b975ef184aaffd042debf371d0e764b899c8

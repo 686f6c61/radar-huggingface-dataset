@@ -71,8 +71,8 @@ No disponible. Este repositorio no es un modelo de inteligencia artificial compa
 - La prioridad de las restricciones se pondera por evidencia; un desajuste grande con datos escasos no supera automáticamente a un desajuste menor pero bien observado.
 - Las menciones de contratación pública o regulación solo en Tracxn se tratan como señales contextuales y no cuentan como cobertura directa de transacciones o administrativa.
 - La aplicación no escribe la API key en disco, pero se debe tener cuidado al introducir claves en el campo de contraseña.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que se trata de un proyecto temprano o sin difusión.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que se trata de un proyecto temprano o sin difusión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rajkhush/Pylab
+- Hugging Face: https://huggingface.co/Rajkhush/Pylab

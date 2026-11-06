@@ -108,7 +108,7 @@ Frente a las otras dos builds sin censura, la variante de AtomicChat conserva me
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/AtomicChat/Qwen3.8-27B-Uncensored-GGUF
+- Hugging Face (este modelo): https://huggingface.co/AtomicChat/Qwen3.8-27B-Uncensored-GGUF
 - Build sin editar del mismo autor: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución local de Atomic Chat: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-27b-uncensored-locally

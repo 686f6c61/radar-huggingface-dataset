@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ryanham1lton/Pansear` aloja un modelo de inteligencia artificial publicado en HuggingFace bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento o capacidades. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que podría tratarse de un modelo de pequeña escala o de un conjunto de pesos parcial, pero no es posible confirmarlo sin acceso a los archivos reales.
+El repositorio `Ryanham1lton/Pansear` aloja un modelo de inteligencia artificial publicado en Hugging Face bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, parámetros, datos de entrenamiento o capacidades. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que podría tratarse de un modelo de pequeña escala o de un conjunto de pesos parcial, pero no es posible confirmarlo sin acceso a los archivos reales.
 
 A día de hoy, el modelo no cuenta con descargas ni valoraciones en la plataforma, y las búsquedas web no arrojan resultados relevantes más allá de otros repositorios del mismo autor, también con documentación mínima. En consecuencia, esta ficha no puede proporcionar especificaciones técnicas verificadas ni evaluaciones de rendimiento. Se recomienda precaución a quien considere utilizar este modelo, ya que la ausencia de documentación impide conocer sus características, limitaciones y requisitos de despliegue.
 
@@ -53,5 +53,5 @@ No disponible. No existe información pública que permita identificar la catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Pansear
-- Perfil del autor en HuggingFace (con otros repositorios, también sin documentación): https://huggingface.co/Ryanham1lton
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Pansear
+- Perfil del autor en Hugging Face (con otros repositorios, también sin documentación): https://huggingface.co/Ryanham1lton

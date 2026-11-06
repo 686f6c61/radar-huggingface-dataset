@@ -23,7 +23,7 @@ Su relevancia es acotada pero concreta: mejora el tiempo de la política de orig
 | Tarea (pipeline) | robotics |
 | Libreria declarada | microduck |
 | Frecuencia de control | 50 Hz (paso de control de 0,02 s; los tiempos de carrera son multiplos de 0,02 s) |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Archivos | `policy.onnx` (831.318 bytes), `manifest.json` (esquema 2 de Pollen), `README.md` |
 
 ## Arquitectura y entrenamiento
@@ -80,8 +80,8 @@ Advertencias declaradas por el autor: son cifras in-sample, ya que la busqueda p
 
 | Modelo | Parametros | Relacion | Tiempo en el tablero (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-sprinter-remix2 | 197.774 (red congelada del base + envoltorio ONNX) | Remezcla de hc5-aifund con envoltorio buscado por CMA-ES | 0,860 s | no disponible | Publicado en HuggingFace |
-| suraj-phanindra/microduck-sprint-hc5-aifund | 197.774 pesos y sesgos (mismos, bit a bit) | Base de esta remezcla; ajuste por hill climbing elitista | 0,864 s | no disponible | Publicado en HuggingFace |
+| jrubiosainz/microduck-game-sprinter-remix2 | 197.774 (red congelada del base + envoltorio ONNX) | Remezcla de hc5-aifund con envoltorio buscado por CMA-ES | 0,860 s | no disponible | Publicado en Hugging Face |
+| suraj-phanindra/microduck-sprint-hc5-aifund | 197.774 pesos y sesgos (mismos, bit a bit) | Base de esta remezcla; ajuste por hill climbing elitista | 0,864 s | no disponible | Publicado en Hugging Face |
 | juicenv/microduck-sprint-auto10161753 | no disponible | Ancestro dentro de la ascendencia del base | no disponible | no disponible | Referenciado en la model card |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -101,11 +101,11 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix2
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix2
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-sprint-hc5-aifund
 - Perfil del autor del modelo base: https://huggingface.co/suraj-phanindra
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Repositorio de entrenamiento `microduck_rl` (commit `6ff40704a`, rama `main`): https://github.com/pollen-robotics/microduck_rl
-- Organizacion Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organizacion Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - `namenu/microduck-arena` (citado por los metadatos ONNX del fuente): https://huggingface.co/namenu/microduck-arena
 - Perfil de namenu: https://huggingface.co/namenu

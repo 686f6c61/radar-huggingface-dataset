@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CandleLLM Commodities es un transformer causal autorregresivo de pequeno tamano (3.613.056 parametros, aproximadamente 3,6 M) desarrollado por el usuario pravikanth88 y publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje generalista: es un modelo de series temporales financieras entrenado especificamente sobre 28 materias primas globales (metales preciosos e industriales, energia, granos, softs y ganado) con mas de 20 anos de datos historicos continuos. Su objetivo es doble: generar la siguiente "vela" (candle) de forma autorregresiva y predecir distribuciones de retorno a multiples horizontes (5, 10 y 20 dias) mediante regresion cuantilica.
+CandleLLM Commodities es un transformer causal autorregresivo de pequeno tamano (3.613.056 parametros, aproximadamente 3,6 M) desarrollado por el usuario pravikanth88 y publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje generalista: es un modelo de series temporales financieras entrenado especificamente sobre 28 materias primas globales (metales preciosos e industriales, energia, granos, softs y ganado) con mas de 20 anos de datos historicos continuos. Su objetivo es doble: generar la siguiente "vela" (candle) de forma autorregresiva y predecir distribuciones de retorno a multiples horizontes (5, 10 y 20 dias) mediante regresion cuantilica.
 
 La relevancia del modelo reside en su enfoque de tokenizacion: convierte cada vela OHLCV en uno de 4.375 tokens discretos mediante Finite Scalar Quantization (FSQ), lo que permite tratar la serie de precios como una secuencia discreta y aplicar modelado autoregresivo tipo lenguaje. Sobre esa representacion, el modelo combina 54 caracteristicas continuas y 12 ciclicas (patrones de velas, dinamica de medias moviles, osciladores, canales de ruptura estilo Turtle y estacionalidad anual) para producir predicciones cuantilicas.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos de s
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CandleLLM Commodities | 3,6 M | 128 barras | Transformer causal + FSQ + cuantiles | MIT | HuggingFace (0 descargas) |
-| Chronos (Amazon) | 20 M - 710 M | Variable | Tokenizacion de series + LLM | Apache 2.0 | HuggingFace |
-| TimesFM (Google) | 200 M | 512 puntos | Decoder-only para series | Apache 2.0 | HuggingFace |
-| Moirai (Salesforce) | 14 M - 311 M | Variable | Transformer universal de series | Apache 2.0 | HuggingFace |
+| CandleLLM Commodities | 3,6 M | 128 barras | Transformer causal + FSQ + cuantiles | MIT | Hugging Face (0 descargas) |
+| Chronos (Amazon) | 20 M - 710 M | Variable | Tokenizacion de series + LLM | Apache 2.0 | Hugging Face |
+| TimesFM (Google) | 200 M | 512 puntos | Decoder-only para series | Apache 2.0 | Hugging Face |
+| Moirai (Salesforce) | 14 M - 311 M | Variable | Transformer universal de series | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones directas de rendimiento entre CandleLLM y estos modelos en la informacion proporcionada. La comparativa se limita a parametros, contexto y licencia.
 
@@ -99,5 +99,5 @@ No se dispone de comparaciones directas de rendimiento entre CandleLLM y estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pravikanth88/candlellm-commodities
+- Modelo en Hugging Face: https://huggingface.co/pravikanth88/candlellm-commodities
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

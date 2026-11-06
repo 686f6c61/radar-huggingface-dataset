@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Condiciones de control | Profundidad de la rama | Receta de inpainting | Tamano del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-H3-Fun-Controlnet-Union-2.0 | 8 (Canny, Depth, HED, MLSD, Pose, Scribble, Layout, Gray) + inpainting | 10 bloques de control (capas 0, 5, ..., 45) | `post_norm` (huecos en 0, gris medio, siguiendo a Wan 2.1) | ~13,5 GB | minimax-h3-community-license-agreement | HuggingFace, 11 likes, 0 descargas |
+| MiniMax-H3-Fun-Controlnet-Union-2.0 | 8 (Canny, Depth, HED, MLSD, Pose, Scribble, Layout, Gray) + inpainting | 10 bloques de control (capas 0, 5, ..., 45) | `post_norm` (huecos en 0, gris medio, siguiendo a Wan 2.1) | ~13,5 GB | minimax-h3-community-license-agreement | Hugging Face, 11 likes, 0 descargas |
 | MiniMax-H3-Fun-Controlnet-Union (v1) | 5 (Canny, Depth, HED, MLSD, Pose) | 5 bloques de control (capas 0, 10, 20, 30, 40) | `pre_norm` (huecos cerca de -2, oscuros extremos) | ~6,8 GB | misma licencia de la familia | version anterior del mismo repositorio de autor |
 | MiniMax-H3 (modelo base) | no aplica (es el transformer base) | no aplica | no aplica | no disponible | minimax-h3-community-license-agreement | repositorio de alibaba-pai |
 | Wan2.1-VACE | no disponible en la informacion proporcionada | no disponible | referencia citada para la receta de layout y para `post_norm` | no disponible | no disponible en la informacion proporcionada | repositorio ali-vilab/VACE |
@@ -96,7 +96,7 @@ No se dispone de datos publicados que permitan comparar rendimiento numerico (ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0
 - Fichero de licencia: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0/blob/main/LICENSE.md
 - Pesos: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0/resolve/main/MiniMax-H3-Fun-Controlnet-Union-2.0.safetensors
 - Repositorio de codigo VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun

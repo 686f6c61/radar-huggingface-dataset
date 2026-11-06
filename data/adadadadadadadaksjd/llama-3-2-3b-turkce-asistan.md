@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Turkce-Asistan es un ajuste fino del modelo base Llama 3.2 3B, publicado por el usuario adadadadadadaksjd en HuggingFace y distribuido en formato GGUF para su uso con llama.cpp. El nombre del repositorio ("Türkçe Asistan", asistente en turco) indica que se trata de una adaptacion orientada al idioma turco, aunque la metadata del repositorio no declara oficialmente los idiomas soportados ni el pipeline. El modelo cuenta con 3.212.749.888 parametros totales en su version safetensors, coherente con la arquitectura Llama 3.2 3B.
+Llama-3.2-3B-Turkce-Asistan es un ajuste fino del modelo base Llama 3.2 3B, publicado por el usuario adadadadadadaksjd en Hugging Face y distribuido en formato GGUF para su uso con llama.cpp. El nombre del repositorio ("Türkçe Asistan", asistente en turco) indica que se trata de una adaptacion orientada al idioma turco, aunque la metadata del repositorio no declara oficialmente los idiomas soportados ni el pipeline. El modelo cuenta con 3.212.749.888 parametros totales en su version safetensors, coherente con la arquitectura Llama 3.2 3B.
 
 El proposito declarado por el autor es ofrecer un asistente conversacional en turco ejecutable en hardware modesto. La model card es extremadamente escueta: solo documenta que el modelo fue ajustado y convertido a GGUF con Unsloth, que el entrenamiento fue "2x mas rapido" gracias a dicha herramienta, y que el unico archivo publicado es `llama-3.2-3b.Q4_K_M.gguf`. No se aportan detalles sobre el dataset de ajuste, el numero de tokens de entrenamiento, la licencia ni resultados de evaluacion.
 
@@ -91,7 +91,7 @@ Las cifras de contexto y licencia de los modelos alternativos son valores de ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adadadadadadadaksjd/Llama-3.2-3B-Turkce-Asistan
+- Hugging Face: https://huggingface.co/adadadadadadadaksjd/Llama-3.2-3B-Turkce-Asistan
 - Unsloth (herramienta de ajuste y conversion declarada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (backend recomendado en la model card): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la informacion proporcionada papers, blogs, demos ni repositorios adicionales asociados a este modelo.

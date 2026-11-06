@@ -94,7 +94,7 @@ Observaciones: el modelo aqui descrito se situa en la franja de los 180.000 mill
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ5e-mtp
 - Organizacion mlx-community: https://huggingface.co/mlx-community
 - Herramienta de cuantizacion oQ / oMLX (referenciada en la model card): https://github.com/jundot/omlx
 - Modelo base, paper, blog o demo: no disponible (no se enlazan en la model card).

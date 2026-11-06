@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`spbkuznetsov/generation-2023` es un repositorio experimental publicado en HuggingFace por el usuario spbkuznetsov que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **CNN Transformer**, orientada a tareas de generación. No se trata de un modelo preentrenado ni ajustado: el checkpoint `model.safetensors` es una **inicialización** (16.576 parámetros en total, inicializados con Xavier uniform en fp32) pensada para revisiones de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequena escala.
+`spbkuznetsov/generation-2023` es un repositorio experimental publicado en Hugging Face por el usuario spbkuznetsov que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **CNN Transformer**, orientada a tareas de generación. No se trata de un modelo preentrenado ni ajustado: el checkpoint `model.safetensors` es una **inicialización** (16.576 parámetros en total, inicializados con Xavier uniform en fp32) pensada para revisiones de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequena escala.
 
 El interés del artefacto es fundamentalmente pedagogico y de ingenieria: sirve como esqueleto reproducible de un hibrido convolucion-transformer con un `inference.py` ejecutable, un `config.json` con los ajustes de arquitectura y un `training_args.json` con una receta por defecto (RMSprop con schedule OneCycle). El propio autor advierte de que la configuracion "xlarge" no es una release de produccion y que no se reclama ninguna puntuacion de benchmark.
 
@@ -23,7 +23,7 @@ Dado que el checkpoint no ha sido entrenado ni auditado, el modelo no ofrece cap
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un hibrido **CNN Transformer**: combina capas convolucionales con bloques de atencion tipo transformer en una implementacion propia, no basada en las clases estandar de HuggingFace Transformers. El repositorio incluye `config.json` con los hiperparametros de arquitectura generados y `inference.py` como artefacto principal, con un ejemplo ejecutable y un punto de entrada de entrenamiento. Los pesos se inicializan con esquema Xavier uniform en precision fp32.
+La arquitectura es un hibrido **CNN Transformer**: combina capas convolucionales con bloques de atencion tipo transformer en una implementacion propia, no basada en las clases estandar de Hugging Face Transformers. El repositorio incluye `config.json` con los hiperparametros de arquitectura generados y `inference.py` como artefacto principal, con un ejemplo ejecutable y un punto de entrada de entrenamiento. Los pesos se inicializan con esquema Xavier uniform en precision fp32.
 
 No se ha realizado entrenamiento real: la model card describe `model.safetensors` como un checkpoint de inicializacion valido para *smoke tests*, no como un checkpoint entrenado con benchmarks. La receta por defecto usa el optimizador RMSprop con un schedule OneCycle y esta disenada unicamente para que el script se ejecute de extremo a extremo; el autor indica que un experimento significativo requeriria su propio presupuesto de ajuste y al menos tres semillas. El hardware declarado es una unica GPU de consumo y un tiempo de ejecucion tipico de minutos, no horas. No se documentan volumen de tokens, composicion del dataset ni fases de RLHF/DPO.
 
@@ -80,4 +80,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- [HuggingFace: spbkuznetsov/generation-2023](https://huggingface.co/spbkuznetsov/generation-2023)
+- [Hugging Face: spbkuznetsov/generation-2023](https://huggingface.co/spbkuznetsov/generation-2023)

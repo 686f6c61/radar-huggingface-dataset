@@ -70,7 +70,7 @@ No se dispone de comparativas directas con otros VLA en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: [jialei02/lawam-pretrain-lerobot](https://huggingface.co/jialei02/lawam-pretrain-lerobot)
+- Repositorio Hugging Face: [jialei02/lawam-pretrain-lerobot](https://huggingface.co/jialei02/lawam-pretrain-lerobot)
 - Checkpoint original: [jialei02/lawam_pretrain](https://huggingface.co/jialei02/lawam_pretrain)
 - Paper: [LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies](https://huggingface.co/papers/2606.15768)
 - Página del proyecto: [rlinf.github.io/LaWAM](https://rlinf.github.io/LaWAM/)

@@ -103,6 +103,6 @@ La comparación directa con el checkpoint base es la más informativa: mismo bac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jitheswar/onepass-zsc-base
+- Modelo en Hugging Face: https://huggingface.co/Jitheswar/onepass-zsc-base
 - Repositorio del código: https://github.com/Jitheswar/onepass-zsc
 - Checkpoint base: https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0-c

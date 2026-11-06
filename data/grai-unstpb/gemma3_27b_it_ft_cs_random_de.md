@@ -4,7 +4,7 @@
 
 `GRAI-UNSTPB/gemma3_27b_it_ft_cs_random_de` es un adaptador LoRA de ajuste supervisado (SFT) publicado por el grupo GRAI-UNSTPB sobre el modelo base `google/gemma-3-27b-it`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (0,5 GB en el repositorio) que debe cargarse junto al modelo base mediante la librería PEFT (versión 0.21.2 declarada) y TRL. El repositorio se publicó el 8 de octubre de 2026 según los metadatos y, en el momento de redactar esta ficha, acumula 0 descargas y 0 valoraciones.
 
-La model card del adaptador es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los apartados relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental) figuran como "[More Information Needed]". Esto significa que la única información verificable sobre el ajuste son los campos estructurados del repositorio: `library_name: peft`, etiquetas `lora` y `sft`, `pipeline_tag: text-generation` y el modelo base declarado.
+La model card del adaptador es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los apartados relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental) figuran como "[More Information Needed]". Esto significa que la única información verificable sobre el ajuste son los campos estructurados del repositorio: `library_name: peft`, etiquetas `lora` y `sft`, `pipeline_tag: text-generation` y el modelo base declarado.
 
 El interés de la ficha es, por tanto, limitado y fundamentalmente metodológico: sirve como ejemplo de adaptador LoRA sobre Gemma 3 27B IT y como recordatorio de que un repositorio con metadatos mínimos no permite reproducir ni auditar el ajuste. El nombre del repositorio (`ft_cs_random_de`) sugiere un ajuste con datos que combinan cambio de código (*code-switching*) y alemán, pero se trata de una inferencia a partir del identificador, no de un dato documentado.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma3_27b_it_ft_cs_random_de (adaptador LoRA) | Adaptador sobre un base de ~27 000 M | Heredado del base (128 000 tokens) | Heredada del base | no disponible; sujeta a los términos de Gemma | HuggingFace, 0 descargas |
+| gemma3_27b_it_ft_cs_random_de (adaptador LoRA) | Adaptador sobre un base de ~27 000 M | Heredado del base (128 000 tokens) | Heredada del base | no disponible; sujeta a los términos de Gemma | Hugging Face, 0 descargas |
 | google/gemma-3-27b-it (modelo base) | ~27 000 M | 128 000 tokens | Sí, entrada de imagen | Términos de uso de Gemma | Ampliamente disponible |
 | Qwen2.5-32B-Instruct | ~32 800 M | 128 000 tokens | No | Apache 2.0 | Ampliamente disponible |
 | Mistral Small 3.1 24B Instruct | ~24 000 M | 128 000 tokens | Sí, entrada de imagen | Apache 2.0 | Ampliamente disponible |
@@ -95,7 +95,7 @@ La comparación es estructural: no hay datos de rendimiento publicados para el a
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_random_de
+- Adaptador en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma3_27b_it_ft_cs_random_de
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Referencia citada en la model card (Lacoste et al., 2019, cálculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la model card: https://mlco2.github.io/impact

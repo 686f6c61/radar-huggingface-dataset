@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `dhanashyam/cat` es un artefacto publicado en HuggingFace por el usuario dhanashyam bajo licencia MIT, etiquetado con el pipeline de `token-classification`. Se trata, por tanto, de un modelo orientado a tareas de etiquetado a nivel de token, como el reconocimiento de entidades nombradas (NER), el etiquetado de partes de la oracion (POS) o la deteccion de spans concretos en texto. El nombre "cat" no aporta informacion sobre la tarea o el dominio, y la model card publicada no incluye descripcion funcional alguna.
+El modelo identificado como `dhanashyam/cat` es un artefacto publicado en Hugging Face por el usuario dhanashyam bajo licencia MIT, etiquetado con el pipeline de `token-classification`. Se trata, por tanto, de un modelo orientado a tareas de etiquetado a nivel de token, como el reconocimiento de entidades nombradas (NER), el etiquetado de partes de la oracion (POS) o la deteccion de spans concretos en texto. El nombre "cat" no aporta informacion sobre la tarea o el dominio, y la model card publicada no incluye descripcion funcional alguna.
 
 La informacion disponible es extremadamente limitada: no se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0.0 GB, lo que sugiere que o bien los pesos no estan subidos, o bien el modelo es de un tamano muy reducido, o el repositorio solo contiene configuracion y tokenizador. Las fechas de creacion y actualizacion (1 de noviembre de 2026) y el contador de descargas y likes a cero indican que es un artefacto reciente y sin traccion en la comunidad.
 
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: numero de tokens, composicio
 - Anonimizacion de textos sensibles: un clasificador de tokens podria marcar nombres propios u otros identificadores para su redaccion antes de compartir documentos. La ausencia de datos sobre recall y precision hace imprescindible una evaluacion con datos propios.
 - Etiquetado asistido en anotacion humana: el modelo podria generar pre-etiquetas que un revisor humano corrija, reduciendo el coste de construir corpus. Solo tiene sentido si el modelo supera una linea base trivial en el dominio concreto.
 - Filtrado de contenido en moderacion: la clasificacion por token podria marcar terminos o spans problematicos en un flujo de moderacion. No hay evidencia publicada de que el modelo este entrenado para esta tarea.
-- Experimentacion academica y docencia: util como ejemplo reproducible de publicacion de un modelo de token-classification en HuggingFace, siempre que los pesos esten efectivamente disponibles en el repositorio.
+- Experimentacion academica y docencia: util como ejemplo reproducible de publicacion de un modelo de token-classification en Hugging Face, siempre que los pesos esten efectivamente disponibles en el repositorio.
 
 ## Benchmarks y rendimiento
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanashyam/cat
+- Modelo en Hugging Face: https://huggingface.co/dhanashyam/cat
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

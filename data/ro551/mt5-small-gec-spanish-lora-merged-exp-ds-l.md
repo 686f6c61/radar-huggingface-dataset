@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L` es un ajuste fino del modelo `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, *grammatical error correction*). Lo publica el usuario Ro551 en HuggingFace y se distribuye con licencia Apache 2.0. Se trata de una adaptacion LoRA fusionada con los pesos base, es decir, el repositorio contiene un modelo `transformers` completo (no un adaptador separado) derivado de un entrenamiento PEFT sobre el checkpoint original de Google.
+`Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L` es un ajuste fino del modelo `google/mt5-small` orientado a la correccion gramatical de texto en espanol (GEC, *grammatical error correction*). Lo publica el usuario Ro551 en Hugging Face y se distribuye con licencia Apache 2.0. Se trata de una adaptacion LoRA fusionada con los pesos base, es decir, el repositorio contiene un modelo `transformers` completo (no un adaptador separado) derivado de un entrenamiento PEFT sobre el checkpoint original de Google.
 
 El modelo base `mt5-small` es un transformer encoder-decoder multilingue de la familia T5, con aproximadamente 300 millones de parametros y una ventana de contexto de 512 tokens. Sobre esa base, este ajuste se ha entrenado durante dos epocas con un *learning rate* de 0,001635, batch efectivo de 64 y semilla 42, segun los hiperparametros declarados en la model card. El tamano del repositorio (1,1 GB) es coherente con un checkpoint fusionado de `mt5-small` en precision de 32 bits.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L` | ~300 M | 512 tokens | Apache 2.0 | GEC en espanol (LoRA fusionado) | HuggingFace, 12 descargas |
-| `google/mt5-small` | ~300 M | 512 tokens | Apache 2.0 | Modelo base multilingue | HuggingFace, ampliamente usado |
-| `google/mt5-base` | ~580 M | 512 tokens | Apache 2.0 | Modelo base multilingue | HuggingFace |
-| `google/mt5-large` | ~1,2 B | 512 tokens | Apache 2.0 | Modelo base multilingue | HuggingFace |
+| `Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L` | ~300 M | 512 tokens | Apache 2.0 | GEC en espanol (LoRA fusionado) | Hugging Face, 12 descargas |
+| `google/mt5-small` | ~300 M | 512 tokens | Apache 2.0 | Modelo base multilingue | Hugging Face, ampliamente usado |
+| `google/mt5-base` | ~580 M | 512 tokens | Apache 2.0 | Modelo base multilingue | Hugging Face |
+| `google/mt5-large` | ~1,2 B | 512 tokens | Apache 2.0 | Modelo base multilingue | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicado para este ajuste frente a alternativas especificas de GEC en espanol. La comparativa se limita a la familia mT5 por tamano y licencia.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo publicado para este ajuste fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L
+- Hugging Face: https://huggingface.co/Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L
 - Modelo base: https://huggingface.co/google/mt5-small
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria Transformers: https://github.com/huggingface/transformers

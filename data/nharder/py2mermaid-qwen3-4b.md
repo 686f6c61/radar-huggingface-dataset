@@ -97,7 +97,7 @@ El propio proyecto recomienda, para produccion, un router sin modelo (`eval.py -
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nharder/py2mermaid-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/nharder/py2mermaid-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/nharder/py2mermaid-data
 - Repositorio del proyecto (evals y documentacion): https://labs.gauntletai.com/nicholasharder/py2mermaid-slm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keras/all_mpnet_base_v2` es una implementación del modelo MPNet (Masked and Permuted Pre-training for Language Understanding) publicada en HuggingFace a través de la librería KerasHub. Se trata de un encoder tipo transformer con 12 capas, 12 cabezas de atención y una dimensión oculta de 768, configurado para la tarea de `TextEmbedder`, es decir, para generar representaciones vectoriales densas de texto. El modelo puede ejecutarse indistintamente sobre los backends JAX, TensorFlow y PyTorch gracias a la abstracción multi-backend de Keras 3.
+`keras/all_mpnet_base_v2` es una implementación del modelo MPNet (Masked and Permuted Pre-training for Language Understanding) publicada en Hugging Face a través de la librería KerasHub. Se trata de un encoder tipo transformer con 12 capas, 12 cabezas de atención y una dimensión oculta de 768, configurado para la tarea de `TextEmbedder`, es decir, para generar representaciones vectoriales densas de texto. El modelo puede ejecutarse indistintamente sobre los backends JAX, TensorFlow y PyTorch gracias a la abstracción multi-backend de Keras 3.
 
 MPNet es una arquitectura propuesta originalmente por Microsoft Research que combina las ventajas del enmascaramiento de tokens (estilo BERT) con la predicción de permutaciones (estilo XLNet), lo que le permite capturar dependencias bidireccionales sin la discrepancia entre preentrenamiento y ajuste fino que afecta a los modelos enmascarados puros. La versión `base` corresponde a la variante de 12 capas y aproximadamente 110 millones de parámetros, ampliamente utilizada como encoder para búsqueda semántica, clustering y recuperación de información.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keras/all_mpnet_base_v2 | ~110 M (no declarado) | 512 | Embeddings | no disponible | HuggingFace (KerasHub) |
-| sentence-transformers/all-mpnet-base-v2 | ~109 M | 384 | Embeddings | Apache 2.0 (según su model card pública) | HuggingFace, ampliamente adoptado |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 | Embeddings | Apache 2.0 (según su model card pública) | HuggingFace, muy extendido por su ligereza |
-| BAAI/bge-base-en-v1.5 | ~109 M | 512 | Embeddings | MIT (según su model card pública) | HuggingFace |
+| keras/all_mpnet_base_v2 | ~110 M (no declarado) | 512 | Embeddings | no disponible | Hugging Face (KerasHub) |
+| sentence-transformers/all-mpnet-base-v2 | ~109 M | 384 | Embeddings | Apache 2.0 (según su model card pública) | Hugging Face, ampliamente adoptado |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22 M | 256 | Embeddings | Apache 2.0 (según su model card pública) | Hugging Face, muy extendido por su ligereza |
+| BAAI/bge-base-en-v1.5 | ~109 M | 512 | Embeddings | MIT (según su model card pública) | Hugging Face |
 
 La comparación se basa en características públicas de modelos de la misma categoría; los datos de licencia y contexto de las alternativas provienen de sus respectivas model cards y no de la información proporcionada para este checkpoint. No se dispone de métricas comparativas de rendimiento para `keras/all_mpnet_base_v2`.
 
@@ -91,7 +91,7 @@ La comparación se basa en características públicas de modelos de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/all_mpnet_base_v2
+- Hugging Face: https://huggingface.co/keras/all_mpnet_base_v2
 - Documentación de MPNet en KerasHub: https://keras.io/api/keras_hub/models/mp_net
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

@@ -66,5 +66,5 @@ No se dispone de informacion sobre modelos comparables en la misma tarea (predic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zxcghoul3228/DOSSIER
+- Modelo en Hugging Face: https://huggingface.co/zxcghoul3228/DOSSIER
 - Demo Space: https://huggingface.co/spaces/zxcghoul3228/DOSSIER_demo

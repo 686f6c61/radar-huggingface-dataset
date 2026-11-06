@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generación de texto publicado en HuggingFace por el usuario sstoica12, con el identificador `sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf`. El nombre sugiere que se trata de un modelo ajustado (fine-tuning) para generar contenido relacionado con "acquisition" (posiblemente adquisiciones o textos de adquisición de datos), combinando señales de confianza ("confidence") con técnicas referenciadas como WGM y MP, aunque el autor no documenta nada de ello en la model card, que es una plantilla autogenerada sin rellenar.
+Este repositorio contiene un modelo de generación de texto publicado en Hugging Face por el usuario sstoica12, con el identificador `sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf`. El nombre sugiere que se trata de un modelo ajustado (fine-tuning) para generar contenido relacionado con "acquisition" (posiblemente adquisiciones o textos de adquisición de datos), combinando señales de confianza ("confidence") con técnicas referenciadas como WGM y MP, aunque el autor no documenta nada de ello en la model card, que es una plantilla autogenerada sin rellenar.
 
 Técnicamente, el modelo utiliza la arquitectura Qwen2 (según los tags del repositorio) implementada mediante la librería `transformers` y pesos en formato safetensors. El dato real extraído de los metadatos de safetensors indica un total de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones), lo que contradice la referencia a "llama8b" del nombre; todo apunta a un fine-tuning sobre una base de la familia Qwen2 de ~14B parámetros, aunque esto no puede confirmarse por la ausencia de documentación.
 
@@ -31,7 +31,7 @@ Sobre el entrenamiento no existe documentación alguna: se desconocen el dataset
 
 - Generacion de texto conversacional (pipeline `text-generation` con tag `conversational`).
 - Tarea especializada aparente: generación de contenido relacionado con "acquisition" con señales de confianza, según el nombre del repositorio (no documentado).
-- Compatibilidad con `text-generation-inference` (TGI) y endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con `text-generation-inference` (TGI) y endpoints de Hugging Face (tag `endpoints_compatible`).
 - Cualquier otra capacidad (razonamiento, codigo, matematicas, vision, tool calling, agentes, soporte multilingue) no esta documentada; dado que la base Qwen2 de 14B suele tener capacidades generales, es plausible que las conserve, pero no hay confirmacion ni evaluacion.
 
 ## Casos de uso
@@ -42,7 +42,7 @@ Dada la falta de documentacion, los casos de uso siguientes son hipoteticos y de
 - Generacion de textos de adquisicion de datos: si el modelo fue ajustado para generar enunciados o consultas de "acquisition" (por ejemplo, active learning), podria integrarse en pipelines de recoleccion de datos.
 - Reproduccion de experimentos: util como checkpoint para replicar o auditar el trabajo del autor, si este publica codigo o datos asociados.
 - Base para nuevo fine-tuning: al partir de una arquitectura Qwen2 estandar, puede cargarse con `transformers` y ajustarse de nuevo sobre datos propios.
-- Despliegue experimental en endpoints gestionados: al ser compatible con TGI y `endpoints_compatible`, puede probarse en HuggingFace Inference Endpoints.
+- Despliegue experimental en endpoints gestionados: al ser compatible con TGI y `endpoints_compatible`, puede probarse en Hugging Face Inference Endpoints.
 - Estudio de buenas practicas (contraejemplo): la ficha incompleta del modelo sirve como caso de estudio sobre los riesgos de publicar modelos sin model card, licencia ni evaluacion.
 
 ## Benchmarks y rendimiento
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 14,8B de parametros en precision completa (bf16/fp16), se necesitan aproximadamente 30 GB solo para los pesos; en la practica, 40-48 GB de VRAM para inferencia comoda con contexto razonable. Con cuantizacion a 4 bits (no publicada oficialmente, pero factible con herramientas externas) cabria en ~10-12 GB.
 - GPU recomendadas: A100 40/80 GB, H100, o RTX A6000 48 GB para precision completa; RTX 3090/4090 24 GB solo con cuantizacion a 4 bits.
 - Consumer GPUs: no cabe en fp16 en ninguna GPU consumer actual; con cuantizacion a 4 bits (por ejemplo, convirtiendo a GGUF o AWQ por cuenta propia) si cabria en una RTX 4090 o RTX 3090.
-- Opciones de despliegue: `transformers` (libreria nativa declarada), Text Generation Inference (TGI, segun tags), y HuggingFace Inference Endpoints. El soporte de vLLM, llama.cpp u Ollama no esta confirmado, aunque la arquitectura Qwen2 esta soportada por vLLM y existe la posibilidad de convertir a GGUF.
+- Opciones de despliegue: `transformers` (libreria nativa declarada), Text Generation Inference (TGI, segun tags), y Hugging Face Inference Endpoints. El soporte de vLLM, llama.cpp u Ollama no esta confirmado, aunque la arquitectura Qwen2 esta soportada por vLLM y existe la posibilidad de convertir a GGUF.
 - Latencia y throughput: no disponibles; al no haber cuantizaciones publicadas ni datos de rendimiento, deben medirse en cada despliegue.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La conclusion practica es que, salvo que el fine-tuning aporte valor especifico 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf
+- Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf
 - Calculadora de impacto climatico referenciada en la model card: https://mlco2.github.io/impact#compute
 - Paper citado en los metadatos (Lacoste et al., 2019, sobre estimacion de emisiones de CO2): https://arxiv.org/abs/1910.09700
 - No hay enlaces a papers propios, repositorios de codigo ni demos del autor en la informacion disponible.

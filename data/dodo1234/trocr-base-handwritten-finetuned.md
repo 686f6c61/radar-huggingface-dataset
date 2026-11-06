@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trocr-base-handwritten-finetuned es un ajuste fino del modelo microsoft/trocr-base-stage1 publicado por el usuario dodo1234 en HuggingFace. Se trata de un modelo de reconocimiento optico de caracteres (OCR) especializado en escritura manuscrita y orientado a una unica tarea: convertir la imagen de una linea de texto manuscrito en su transcripcion textual. La arquitectura es un VisionEncoderDecoderModel clasico de la familia TrOCR, con un codificador de vision tipo ViT y un decodificador transformer autorregresivo, y cuenta con 384.864.769 parametros en formato safetensors (1,5 GB de repositorio).
+trocr-base-handwritten-finetuned es un ajuste fino del modelo microsoft/trocr-base-stage1 publicado por el usuario dodo1234 en Hugging Face. Se trata de un modelo de reconocimiento optico de caracteres (OCR) especializado en escritura manuscrita y orientado a una unica tarea: convertir la imagen de una linea de texto manuscrito en su transcripcion textual. La arquitectura es un VisionEncoderDecoderModel clasico de la familia TrOCR, con un codificador de vision tipo ViT y un decodificador transformer autorregresivo, y cuenta con 384.864.769 parametros en formato safetensors (1,5 GB de repositorio).
 
 El modelo esta entrenado exclusivamente para frances (idioma declarado en la model card) y se distribuye bajo licencia MIT. El ajuste se realizo sobre microsoft/trocr-base-stage1 con batch size 8, precision fp16 y Seq2SeqTrainer, es decir, un entrenamiento ligero sin datos publicados sobre el volumen o la composicion del corpus utilizado. El repositorio apenas tiene descargas ni interacciones, lo que sugiere que es un experimento academico o personal mas que un artefacto listo para produccion.
 
@@ -79,10 +79,10 @@ Los datos de los modelos comparables no se incluyen en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dodo1234/trocr-base-handwritten-finetuned | 384.864.769 | no disponible | CER 50,15 %, WER 94,96 %, exact match 0,00 % (778 ejemplos) | MIT | HuggingFace, 0 descargas |
-| microsoft/trocr-base-handwritten | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | HuggingFace (referencia de la familia) |
-| microsoft/trocr-large-handwritten | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | HuggingFace (referencia de la familia) |
-| microsoft/trocr-base-stage1 | no disponible | no disponible | no disponible (es la etapa de preentrenamiento, no un modelo OCR final) | MIT | HuggingFace, es el modelo base de este ajuste |
+| dodo1234/trocr-base-handwritten-finetuned | 384.864.769 | no disponible | CER 50,15 %, WER 94,96 %, exact match 0,00 % (778 ejemplos) | MIT | Hugging Face, 0 descargas |
+| microsoft/trocr-base-handwritten | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | Hugging Face (referencia de la familia) |
+| microsoft/trocr-large-handwritten | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | Hugging Face (referencia de la familia) |
+| microsoft/trocr-base-stage1 | no disponible | no disponible | no disponible (es la etapa de preentrenamiento, no un modelo OCR final) | MIT | Hugging Face, es el modelo base de este ajuste |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ Los datos de los modelos comparables no se incluyen en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dodo1234/trocr-base-handwritten-finetuned
+- Modelo en Hugging Face: https://huggingface.co/dodo1234/trocr-base-handwritten-finetuned
 - Modelo base: https://huggingface.co/microsoft/trocr-base-stage1
 - Paper de la arquitectura TrOCR (referencia general de la familia, no citado en la informacion proporcionada): https://arxiv.org/abs/2109.10282
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos resultados obtenidos correspondian a paginas corporativas de Credit Agricole y no guardan relacion con el modelo.

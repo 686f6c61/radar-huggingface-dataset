@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`miaevansman/multitask14` es un repositorio de HuggingFace publicado por el usuario miaevansman que contiene una implementación de un transformer de visión Swin-T orientada a tareas múltiples (multitask), con una configuración etiquetada como «xlarge» en la model card. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint sirve únicamente para pruebas de humo (smoke tests).
+`miaevansman/multitask14` es un repositorio de Hugging Face publicado por el usuario miaevansman que contiene una implementación de un transformer de visión Swin-T orientada a tareas múltiples (multitask), con una configuración etiquetada como «xlarge» en la model card. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato `safetensors`. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint sirve únicamente para pruebas de humo (smoke tests).
 
 El dato más llamativo es la discrepancia entre la etiqueta «xlarge» de la model card y el recuento real de parámetros del checkpoint, que según los metadatos de `safetensors` es de 49.600 parámetros (49,6 K). Esa cifra es entre dos y tres órdenes de magnitud inferior a la de un Swin-T estándar, por lo que debe interpretarse como un esqueleto de arquitectura para validar el pipeline, no como un modelo con capacidad representacional real.
 
-Su relevancia es, por tanto, la de un artefacto de investigación reproducible: código transparente, configuración versionada y pruebas de humo repetibles. No hay descargas ni «likes» en el momento de la consulta, el repositorio ocupa 0,0 GB y no se declaran idiomas soportados ni pipeline de HuggingFace. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo.
+Su relevancia es, por tanto, la de un artefacto de investigación reproducible: código transparente, configuración versionada y pruebas de humo repetibles. No hay descargas ni «likes» en el momento de la consulta, el repositorio ocupa 0,0 GB y no se declaran idiomas soportados ni pipeline de Hugging Face. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo.
 
 ## Especificaciones técnicas
 
@@ -25,14 +25,14 @@ Su relevancia es, por tanto, la de un artefacto de investigación reproducible: 
 | Activación | Mish |
 | Normalización | InstanceNorm |
 | Optimizador declarado | RMSprop con schedule exponencial |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura declarada es Swin-T (Swin Transformer, un transformer jerárquico con atención por ventanas desplazadas), modificada con atención lineal en lugar de la atención por ventanas del Swin original, fusión de modalidades o ramas mediante descomposición de Tucker, activación Mish e InstanceNorm en lugar de LayerNorm. Esa combinación es característica de prototipos multimodales o multitarea experimentales, donde la fusión Tucker se usa para modelar interacciones entre ramas de características. El optimizador por defecto de la receta incluida es RMSprop con un schedule exponencial; el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado.
 
-No se proporciona ninguna información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni resolución de imagen, ni si hubo fases de ajuste fino alineado (RLHF, DPO u otras). El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado. Tampoco se documentan innovaciones adicionales como decodificación especulativa o variantes de atención más allá de la atención lineal citada. Al tratarse de una implementación personalizada, el autor señala que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+No se proporciona ninguna información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni resolución de imagen, ni si hubo fases de ajuste fino alineado (RLHF, DPO u otras). El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado. Tampoco se documentan innovaciones adicionales como decodificación especulativa o variantes de atención más allá de la atención lineal citada. Al tratarse de una implementación personalizada, el autor señala que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ Las cifras de los modelos alternativos son referencias públicas habituales y no
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `miaevansman/multitask14` | 49.600 (49,6 K) | No disponible | BSD-3-Clause | HuggingFace, 0 descargas, sin entrenar |
+| `miaevansman/multitask14` | 49.600 (49,6 K) | No disponible | BSD-3-Clause | Hugging Face, 0 descargas, sin entrenar |
 | Swin-T original (Microsoft) | ~28 M (referencia pública) | Imagen 224×224, ventanas de 7×7 (referencia pública) | MIT (referencia pública) | Pesos entrenados en ImageNet publicados |
 | ViT-Base/16 (Google) | ~86 M (referencia pública) | Imagen 224×224 con 16×16 parches (referencia pública) | Apache-2.0 (referencia pública) | Pesos entrenados publicados |
 | ResNet-50 | ~25,6 M (referencia pública) | Imagen de resolución variable (referencia pública) | BSD-3-Clause en torchvision (referencia pública) | Ampliamente disponible |
@@ -94,7 +94,7 @@ La conclusión de la comparativa es que este repositorio no compite en capacidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miaevansman/multitask14
+- Hugging Face: https://huggingface.co/miaevansman/multitask14
 - Archivo de configuración: https://huggingface.co/miaevansman/multitask14/blob/main/config.json
 - Receta de entrenamiento: https://huggingface.co/miaevansman/multitask14/blob/main/training_args.json
 - Script de entrenamiento: https://huggingface.co/miaevansman/multitask14/blob/main/train.py

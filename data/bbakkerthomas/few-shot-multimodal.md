@@ -12,18 +12,18 @@ La relevancia practica es limitada para quien busca un modelo desplegable: se tr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplicable: el repositorio no contiene un modelo entrenado. La etiqueta de HuggingFace `transformer` aparece en los metadatos, pero no se describe arquitectura alguna en la model card |
-| Parametros totales | 24.832 segun el recuento de safetensors reportado por HuggingFace; esta cifra es incompatible con un modelo funcional y apunta a un fichero de prueba o de metadatos, no a pesos de un modelo |
+| Arquitectura | No aplicable: el repositorio no contiene un modelo entrenado. La etiqueta de Hugging Face `transformer` aparece en los metadatos, pero no se describe arquitectura alguna en la model card |
+| Parametros totales | 24.832 segun el recuento de safetensors reportado por Hugging Face; esta cifra es incompatible con un modelo funcional y apunta a un fichero de prueba o de metadatos, no a pesos de un modelo |
 | Parametros activos | No aplicable (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (HuggingFace no declara idiomas para este repositorio) |
+| Idiomas soportados | No disponible (Hugging Face no declara idiomas para este repositorio) |
 | Licencia | MIT |
 | Formato de pesos | La etiqueta del repositorio menciona `safetensors`, pero no se documenta ningun conjunto de pesos utilizable; el contenido declarado son ficheros Markdown |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no menciona ningun proceso de entrenamiento ni publica hiperparametros, semillas, hardware o registros. La unica referencia estructural es la etiqueta `transformer` presente en los metadatos de HuggingFace, que no viene acompanada de ninguna descripcion tecnica en el propio repositorio.
+No hay informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). La model card no menciona ningun proceso de entrenamiento ni publica hiperparametros, semillas, hardware o registros. La unica referencia estructural es la etiqueta `transformer` presente en los metadatos de Hugging Face, que no viene acompanada de ninguna descripcion tecnica en el propio repositorio.
 
 El contenido descrito es metodologico: alcance de la pregunta de investigacion, factores de confusion probables, propuesta de comparacion con baselines emparejados, contexto de evaluacion con benchmarks publicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La propia model card advierte que no se reclama ninguna mejora de benchmark, ninguna ablation completada, ni codigo publicado, ni checkpoint entrenado.
 
@@ -62,7 +62,7 @@ La model card afirma de forma explicita que el repositorio no reclama mejoras de
 - Inferencia en GPU de consumo: no aplicable.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables; no hay pesos ni tokenizador publicados.
 - Latencia y throughput: no disponibles.
-- Espacio en disco: el tamano del repositorio reportado por HuggingFace es de 0,0 GB, coherente con un repositorio de documentacion en Markdown.
+- Espacio en disco: el tamano del repositorio reportado por Hugging Face es de 0,0 GB, coherente con un repositorio de documentacion en Markdown.
 - Requisitos reales para consultar el material: un editor de texto o un navegador, dado que el contenido son ficheros Markdown.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede compararl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbakkerthomas/few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/bbakkerthomas/few-shot-multimodal
 - Fichero principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo o proyecto: los resultados obtenidos corresponden a paginas de ayuda de Google Translate y a preguntas de Stack Overflow sobre su API, sin relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

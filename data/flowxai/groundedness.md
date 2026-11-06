@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema crítico en sistemas de generación aumentada por recuperación (RAG) y en cualquier pipeline donde un LLM produzca respuestas a partir de documentos: verificar que cada afirmación esté realmente soportada por el contexto. Su relevancia actual radica en que ofrece una solución ligera, multilingüe y desplegable en CPU, con un umbral de decisión calibrado (0.78) que prioriza la precisión sobre la cobertura. A diferencia de otros detectores que usan tres clases (supported, unsupported, contradicted), este modelo simplifica a dos clases (`grounded` y `not_grounded`) porque la tercera clase se colapsa en la práctica.
 
-La arquitectura es un cross-encoder que procesa pares `(source, candidate)` y devuelve una probabilidad de que la frase esté anclada en la fuente. Su ventana de contexto es de 512 tokens, y el README advierte que degrada significativamente por debajo de ese tamaño. El modelo está disponible en HuggingFace con licencia Apache-2.0, aunque actualmente tiene cero descargas y cero likes, lo que sugiere que es un lanzamiento reciente o de nicho.
+La arquitectura es un cross-encoder que procesa pares `(source, candidate)` y devuelve una probabilidad de que la frase esté anclada en la fuente. Su ventana de contexto es de 512 tokens, y el README advierte que degrada significativamente por debajo de ese tamaño. El modelo está disponible en Hugging Face con licencia Apache-2.0, aunque actualmente tiene cero descargas y cero likes, lo que sugiere que es un lanzamiento reciente o de nicho.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos con otros detectores de groundedness en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowxai/groundedness
+- Modelo en Hugging Face: https://huggingface.co/flowxai/groundedness
 - Repositorio de la libreria `flowx-border`: https://github.com/flowx-ai/border
-- Perfil de FLOWX.AI en HuggingFace: https://huggingface.co/flowxai
+- Perfil de FLOWX.AI en Hugging Face: https://huggingface.co/flowxai
 - Pagina oficial de FLOWX.AI: https://www.flowx.ai/

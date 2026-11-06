@@ -128,7 +128,7 @@ No se dispone de datos de benchmarks comparativos entre assay-4b y alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berk/assay-4b
+- Modelo en Hugging Face: https://huggingface.co/Berk/assay-4b
 - Repositorio con código, servidor y receta de entrenamiento: https://github.com/bgokden/assay
 - Conjunto de datos del suite de transferencia: https://huggingface.co/datasets/jaredpalmer/kev-suites
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

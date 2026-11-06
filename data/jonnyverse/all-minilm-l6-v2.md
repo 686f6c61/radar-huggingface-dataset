@@ -83,7 +83,7 @@ La principal diferencia con las alternativas es el formato ONNX y la preparació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/all-MiniLM-L6-v2
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/all-MiniLM-L6-v2
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Librería Optimum para conversión ONNX: https://huggingface.co/docs/optimum/index

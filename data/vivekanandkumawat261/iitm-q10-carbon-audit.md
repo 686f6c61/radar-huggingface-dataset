@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `iitm-q10-carbon-audit`, publicado por el usuario vivekanandkumawat261 en HuggingFace, no dispone de una documentación técnica pública que describa su arquitectura, parámetros o capacidades. La model card asociada únicamente incluye métricas de emisiones de carbono derivadas del entrenamiento, reportadas mediante la herramienta CodeCarbon. Según estos datos, el entrenamiento se realizó con dos GPU NVIDIA RTX 4090 en la región us-central1, consumiendo 550,78 kWh y generando 192,773 kg de CO₂ equivalente.
+El modelo `iitm-q10-carbon-audit`, publicado por el usuario vivekanandkumawat261 en Hugging Face, no dispone de una documentación técnica pública que describa su arquitectura, parámetros o capacidades. La model card asociada únicamente incluye métricas de emisiones de carbono derivadas del entrenamiento, reportadas mediante la herramienta CodeCarbon. Según estos datos, el entrenamiento se realizó con dos GPU NVIDIA RTX 4090 en la región us-central1, consumiendo 550,78 kWh y generando 192,773 kg de CO₂ equivalente.
 
 El nombre del modelo sugiere una posible relación con la auditoría de carbono o con el indicador Q10 (coeficiente de temperatura utilizado en ecología del suelo), pero no se ha publicado ninguna descripción funcional que permita confirmar su propósito. El autor es un estudiante del programa B.S. en Data Science and Applications del Indian Institute of Technology Madras (IITM), según su perfil de GitHub. A fecha de la consulta, el modelo registra cero descargas y cero likes, lo que indica que no ha sido adoptado por la comunidad.
 
@@ -65,5 +65,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [HuggingFace: vivekanandkumawat261/iitm-q10-carbon-audit](https://huggingface.co/vivekanandkumawat261/iitm-q10-carbon-audit)
+- [Hugging Face: vivekanandkumawat261/iitm-q10-carbon-audit](https://huggingface.co/vivekanandkumawat261/iitm-q10-carbon-audit)
 - [Perfil de GitHub del autor](https://github.com/vivekanandkumawat261)

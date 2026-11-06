@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grafon-g2p/ar | Encoder transformer con cabeza de clasificacion de tokens (G2P contextual) | 197,7 M | Texto en arabe a nivel de caracter | no disponible | HuggingFace, 0 descargas en la fecha de consulta |
-| UBC-NLP/MARBERTv2 | Encoder transformer enmascarado (modelo base, no es G2P) | no disponible en la informacion recogida | Texto en arabe | no disponible en la informacion recogida | HuggingFace |
-| charsiu/g2p_multilingual_byT5_small_100 | Seq2seq (ByT5-small) entrenado para G2P multilingue | ~300 M (arquitectura ByT5-small) | Texto multilingue | consultar en el repositorio | HuggingFace |
+| grafon-g2p/ar | Encoder transformer con cabeza de clasificacion de tokens (G2P contextual) | 197,7 M | Texto en arabe a nivel de caracter | no disponible | Hugging Face, 0 descargas en la fecha de consulta |
+| UBC-NLP/MARBERTv2 | Encoder transformer enmascarado (modelo base, no es G2P) | no disponible en la informacion recogida | Texto en arabe | no disponible en la informacion recogida | Hugging Face |
+| charsiu/g2p_multilingual_byT5_small_100 | Seq2seq (ByT5-small) entrenado para G2P multilingue | ~300 M (arquitectura ByT5-small) | Texto multilingue | consultar en el repositorio | Hugging Face |
 | espeak-ng | Fonemizador basado en reglas, no neuronal | no aplica (sin parametros) | Texto multilingue | consultar en el repositorio del proyecto | Paquete de software del sistema |
 
 No es posible comparar rendimiento: ninguno de los datos disponibles incluye metricas de error fonetico para este modelo, de modo que la comparacion se limita a arquitectura, tamano, licencia y forma de distribucion.
@@ -96,7 +96,7 @@ No es posible comparar rendimiento: ninguno de los datos disponibles incluye met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grafon-g2p/ar
+- Modelo en Hugging Face: https://huggingface.co/grafon-g2p/ar
 - Repositorio de la libreria grafon: https://github.com/thewh1teagle/grafon
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Lectura relacionada sobre G2P sin lexico (no especifica de este modelo): https://arxiv.org/html/2401.10465v1

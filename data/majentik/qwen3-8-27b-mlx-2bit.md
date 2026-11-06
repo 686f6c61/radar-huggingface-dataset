@@ -66,11 +66,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 - El modelo base no está documentado en detalle en esta ficha; se desconocen sus sesgos, limitaciones de idioma o comportamiento en dominios específicos.
 - No se especifican los idiomas soportados; es probable que el modelo base tenga un enfoque multilingüe, pero no está confirmado.
 - El "smoke gate" solo verifica coherencia básica, no garantiza la ausencia de alucinaciones o errores en tareas complejas.
-- Al ser una cuantización MLX, no es compatible con otras librerías como Transformers de HuggingFace sin conversión adicional.
+- Al ser una cuantización MLX, no es compatible con otras librerías como Transformers de Hugging Face sin conversión adicional.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base original para posibles restricciones adicionales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/Qwen3.8-27B-MLX-2bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/Qwen3.8-27B-MLX-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

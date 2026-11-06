@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T-WholeBodyControl es el repositorio de código asociado a los proyectos de control de cuerpo completo (whole-body control, WBC) para robots humanoides de NVIDIA GEAR Lab. La ficha de HuggingFace analizada, publicada por el usuario Tinghong-Ye22, redistribuye ese código junto con los checkpoints y scripts de entrenamiento, evaluación y despliegue de controladores. No se trata de un modelo de lenguaje, sino de un conjunto de políticas de control motor para humanoides, por lo que buena parte de las especificaciones habituales de una ficha de LLM (contexto, cuantización, idiomas) no son aplicables.
+GR00T-WholeBodyControl es el repositorio de código asociado a los proyectos de control de cuerpo completo (whole-body control, WBC) para robots humanoides de NVIDIA GEAR Lab. La ficha de Hugging Face analizada, publicada por el usuario Tinghong-Ye22, redistribuye ese código junto con los checkpoints y scripts de entrenamiento, evaluación y despliegue de controladores. No se trata de un modelo de lenguaje, sino de un conjunto de políticas de control motor para humanoides, por lo que buena parte de las especificaciones habituales de una ficha de LLM (contexto, cuantización, idiomas) no son aplicables.
 
 El repositorio cubre dos líneas de trabajo. La primera es el controlador desacoplado (Decoupled WBC), que combina aprendizaje por refuerzo para el tren inferior e cinemática inversa (IK) para el tren superior, y que se emplea en los modelos NVIDIA GR00T N1.5 y N1.6. La segunda es la serie GEAR-SONIC, presentada como la iteración más reciente de controladores generalistas de cuerpo completo, con checkpoints de política preentrenados, una pila de inferencia en C++ y una pila de teleoperación con realidad virtual.
 
@@ -18,7 +18,7 @@ La relevancia del proyecto reside en su enfoque de "modelo fundacional de compor
 | Longitud de contexto | No disponible (no aplica a control motor) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (no es un modelo de lenguaje) |
-| Licencia | Apache 2.0, según el badge incluido en la model card del repositorio de referencia. La ficha de HuggingFace analizada no declara licencia en sus metadatos |
+| Licencia | Apache 2.0, según el badge incluido en la model card del repositorio de referencia. La ficha de Hugging Face analizada no declara licencia en sus metadatos |
 | Formato de pesos | No disponible (se mencionan checkpoints de política preentrenados, sin especificar formato) |
 | Framework de entrenamiento | IsaacLab 2.3.0 |
 | Robot objetivo | No disponible de forma explícita; el dataset asociado BONES-SEED contiene trayectorias compatibles con Unitree G1 en MuJoCo |
@@ -56,7 +56,7 @@ Los datos de entrenamiento se apoyan en BONES-SEED, dataset de movimiento humano
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de HuggingFace no incluyen tablas de métricas cuantitativas (tasas de éxito de seguimiento de movimiento, error de tracking, métricas de estabilidad, comparativas numéricas con otros controladores, latencias medidas ni throughput).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card y los metadatos de Hugging Face no incluyen tablas de métricas cuantitativas (tasas de éxito de seguimiento de movimiento, error de tracking, métricas de estabilidad, comparativas numéricas con otros controladores, latencias medidas ni throughput).
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto / parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GR00T-WholeBodyControl / GEAR-SONIC | Controlador de cuerpo completo para humanoides | No disponible | Apache 2.0 (badge del repositorio de referencia) | Repositorio redistribuido en HuggingFace (0 descargas, 0 likes) y checkpoints en nvidia/GEAR-SONIC |
+| GR00T-WholeBodyControl / GEAR-SONIC | Controlador de cuerpo completo para humanoides | No disponible | Apache 2.0 (badge del repositorio de referencia) | Repositorio redistribuido en Hugging Face (0 descargas, 0 likes) y checkpoints en nvidia/GEAR-SONIC |
 | NVIDIA GR00T N1.5 | Modelo fundacional para humanoides | No disponible | No disponible en la información proporcionada | Referenciado como consumidor del controlador desacoplado |
 | NVIDIA GR00T N1.6 | Modelo fundacional para humanoides | No disponible | No disponible en la información proporcionada | Referenciado como consumidor del controlador desacoplado |
 
@@ -78,23 +78,23 @@ No se dispone de datos numéricos que permitan una comparación cuantitativa con
 
 ## Limitaciones y advertencias
 
-- Repositorio redistribuido: la ficha analizada (Tinghong-Ye22/code-GR00T-WholeBodyControl) no es la fuente original, que corresponde a NVIDIA GEAR Lab. Registra 0 descargas y 0 likes, sin pipeline, idiomas ni licencia declarados en los metadatos de HuggingFace.
+- Repositorio redistribuido: la ficha analizada (Tinghong-Ye22/code-GR00T-WholeBodyControl) no es la fuente original, que corresponde a NVIDIA GEAR Lab. Registra 0 descargas y 0 likes, sin pipeline, idiomas ni licencia declarados en los metadatos de Hugging Face.
 - Especificidad de hardware: los controladores están diseñados para robots humanoides concretos y requieren validación en simulación (IsaacLab, MuJoCo) antes de cualquier despliegue físico. Aplicarlos a otra plataforma exige reentrenamiento.
 - Sin datos de rendimiento públicos en esta ficha: no hay métricas de tasa de éxito, robustez ante perturbaciones ni estabilidad en terreno irregular, lo que impide estimar su fiabilidad en producción.
 - Riesgo en entornos físicos: cualquier fallo de política en un robot humanoide puede provocar caídas, daños al propio robot o a personas u objetos cercanos. Se requiere supervisión y medidas de seguridad.
 - Limitaciones de generalización: aunque SONIC se presenta como generalista, no se especifica en la información disponible el grado de generalización fuera de la distribución de movimientos de entrenamiento.
 - Dependencia de datos: buena parte del entrenamiento se apoya en BONES-SEED, con sesgos potenciales derivados del tipo de movimientos humanos capturados (repertorio de acciones, morfología de los sujetos, entorno de captura).
-- Restricciones de licencia: el badge indica Apache 2.0 en el repositorio de referencia, pero la ficha de HuggingFace analizada no declara licencia; conviene verificar la licencia efectiva en el repositorio original antes de uso comercial.
+- Restricciones de licencia: el badge indica Apache 2.0 en el repositorio de referencia, pero la ficha de Hugging Face analizada no declara licencia; conviene verificar la licencia efectiva en el repositorio original antes de uso comercial.
 - Idiomas, contexto y cuantización: no aplicables; los campos equivalentes en una ficha de LLM no tienen sentido para este tipo de modelo.
 - Fechas de la información: los metadatos indican creación el 2026-10-14, posterior a las noticias de la model card (2025-11-12, 2026-02-19, 2026-03-16).
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/Tinghong-Ye22/code-GR00T-WholeBodyControl
+- Ficha de Hugging Face analizada: https://huggingface.co/Tinghong-Ye22/code-GR00T-WholeBodyControl
 - Paper de GEAR-SONIC (arXiv:2511.07820): https://arxiv.org/abs/2511.07820
 - Página del proyecto GEAR-SONIC: https://nvlabs.github.io/GEAR-SONIC/
 - Whitepaper de GEAR-SONIC: https://nvlabs.github.io/GEAR-SONIC/
-- Modelo GEAR-SONIC en HuggingFace (NVIDIA): https://huggingface.co/nvidia/GEAR-SONIC
+- Modelo GEAR-SONIC en Hugging Face (NVIDIA): https://huggingface.co/nvidia/GEAR-SONIC
 - Documentación de GR00T-WholeBodyControl: https://nvlabs.github.io/GR00T-WholeBodyControl/
 - Dataset BONES-SEED: https://huggingface.co/datasets/bones-studio/seed
 - IsaacLab 2.3.0 (release): https://github.com/isaac-sim/IsaacLab/releases/tag/v2.3.0

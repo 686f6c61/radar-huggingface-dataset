@@ -76,7 +76,7 @@ La diferencia principal entre este repositorio y el upstream es exclusivamente l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DreamFoundries/Qwen3-VL-4B-Instruct-3bit
+- Repositorio Hugging Face: https://huggingface.co/DreamFoundries/Qwen3-VL-4B-Instruct-3bit
 - Repositorio upstream (mlx-community): https://huggingface.co/mlx-community/Qwen3-VL-4B-Instruct-3bit
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - ModelScope (upstream): https://www.modelscope.cn/models/mlx-community/Qwen3-VL-4B-Instruct-3bit

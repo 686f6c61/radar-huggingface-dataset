@@ -52,16 +52,16 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada: con 149,6 millones de parámetros, el modelo en fp32 ocupa aproximadamente 0,6 GB. En cuantización de 8 bits (si se aplicara) bajaría a ~0,3 GB, y en 4 bits a ~0,15 GB, aunque no se han publicado versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp32. Una RTX 3060, RTX 4060 o superior es suficiente. Para despliegues en producción, una T4 o A10G ofrece margen para procesar lotes.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU moderna de consumo, incluso en CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo de HuggingFace con pesos safetensors, puede cargarse con la librería `transformers` de Python, o servirse con frameworks como vLLM, TGI o FastAPI. También es posible exportarlo a ONNX para inferencia optimizada.
+- Opciones de despliegue: al ser un modelo de Hugging Face con pesos safetensors, puede cargarse con la librería `transformers` de Python, o servirse con frameworks como vLLM, TGI o FastAPI. También es posible exportarlo a ONNX para inferencia optimizada.
 - Latencia y throughput: no se dispone de datos medidos. Para un cross-encoder de este tamaño, la latencia típica por par consulta-pasaje en GPU moderna es del orden de milisegundos, pero depende del hardware y del lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `amal1994/distilled-voyage-modernbert` | 149,6 M | 2.048 | Re-ranking legal (UK) | no disponible | HuggingFace |
-| `BAAI/bge-reranker-base` | 278 M | 512 | Re-ranking general | MIT | HuggingFace |
-| `cross-encoder/ms-marco-MiniLM-L-6-v2` | 22,7 M | 512 | Re-ranking general | Apache-2.0 | HuggingFace |
+| `amal1994/distilled-voyage-modernbert` | 149,6 M | 2.048 | Re-ranking legal (UK) | no disponible | Hugging Face |
+| `BAAI/bge-reranker-base` | 278 M | 512 | Re-ranking general | MIT | Hugging Face |
+| `cross-encoder/ms-marco-MiniLM-L-6-v2` | 22,7 M | 512 | Re-ranking general | Apache-2.0 | Hugging Face |
 
 El modelo destilado se diferencia por su especialización en legislación del Reino Unido y por su mayor contexto (2.048 tokens frente a 512 de los otros), lo que permite procesar pasajes legales más largos. Sin embargo, carece de licencia declarada, lo que puede limitar su uso comercial. Los modelos generalistas como BGE o MiniLM son más versátiles pero no están afinados para el dominio jurídico.
 
@@ -77,8 +77,8 @@ El modelo destilado se diferencia por su especialización en legislación del Re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amal1994/distilled-voyage-modernbert
+- Modelo en Hugging Face: https://huggingface.co/amal1994/distilled-voyage-modernbert
 - Repositorio de código: https://github.com/alshehriamal1994/uk-statute-retrieval
 - Corpus, benchmark y conjunto de destilación (DOI): https://doi.org/10.15128/r14x51hj064
 - Repositorio de ModernBERT (AnswerDotAI): https://github.com/AnswerDotAI/ModernBERT
-- Perfil del autor en HuggingFace: https://huggingface.co/amal1994/models
+- Perfil del autor en Hugging Face: https://huggingface.co/amal1994/models

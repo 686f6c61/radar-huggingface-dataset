@@ -17,7 +17,7 @@ El lanzamiento es relevante porque la destilacion few-step de modelos de difusio
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible; la entrada es un prompt de texto sin limite de tokens documentado |
 | Tipos de cuantizacion | No disponible. El autor no publica variantes cuantizadas; la configuracion evaluada es base bf16 con LoRA fp32 sin fusionar, y existe un transformer fusionado en fp32 |
-| Idiomas soportados | Renderizado de texto bilingue chino-ingles documentado; cobertura general de idiomas no disponible en los metadatos de HuggingFace |
+| Idiomas soportados | Renderizado de texto bilingue chino-ingles documentado; cobertura general de idiomas no disponible en los metadatos de Hugging Face |
 | Licencia | Apache-2.0 (uso comercial permitido) |
 | Formato de pesos | safetensors (LoRA fp32 rango 128 / alpha 128; transformer fusionado fp32; base bf16); repo de 96,3 GB con checkpoints intermedios |
 
@@ -75,10 +75,10 @@ Estos datos proceden de la evaluacion propia del autor (dataset `akhaliq/moss-im
 
 | Modelo | Tipo | Parametros | Pasos | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| akhaliq/MOSS-Image-SFT-4-steps | LoRA de destilacion sobre MOSS-Image | 5.082 M (transformer) | 4, CFG 1 | Prompt de texto | Apache-2.0 | HuggingFace, ComfyUI, diffusers |
-| OpenMOSS-Team/MOSS-Image-SFT | Modelo base completo | 5.082 M (transformer) | Multiples pasos con CFG | Prompt de texto | no disponible en la informacion proporcionada | HuggingFace |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | LoRA destilado, 8 pasos | No disponible | 8 | Prompt de texto | no disponible | HuggingFace |
-| darask0 rapid-moss | LoRA destilado, 4 pasos | No disponible | 4 | Prompt de texto | no disponible | HuggingFace |
+| akhaliq/MOSS-Image-SFT-4-steps | LoRA de destilacion sobre MOSS-Image | 5.082 M (transformer) | 4, CFG 1 | Prompt de texto | Apache-2.0 | Hugging Face, ComfyUI, diffusers |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base completo | 5.082 M (transformer) | Multiples pasos con CFG | Prompt de texto | no disponible en la informacion proporcionada | Hugging Face |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | LoRA destilado, 8 pasos | No disponible | 8 | Prompt de texto | no disponible | Hugging Face |
+| darask0 rapid-moss | LoRA destilado, 4 pasos | No disponible | 4 | Prompt de texto | no disponible | Hugging Face |
 
 La ventaja declarada frente a las alternativas few-step es la ejecucion en el sampler Euler de serie, sin sampler ni ficheros auxiliares, y una mejor fidelidad en texto y cifras. La desventaja es que hereda todas las limitaciones del modelo base y no dispone de benchmarks independientes que respalden las afirmaciones.
 
@@ -95,7 +95,7 @@ La ventaja declarada frente a las alternativas few-step es la ejecucion en el sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/MOSS-Image-SFT-4-steps
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/MOSS-Image-SFT-4-steps
 - Demo en ZeroGPU: https://huggingface.co/spaces/akhaliq/moss-image-4-step-turbo
 - Dataset de evaluacion: https://huggingface.co/datasets/akhaliq/moss-image-turbo-eval
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT

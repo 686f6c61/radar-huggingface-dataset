@@ -19,7 +19,7 @@ En el split de test de UAVDT declara 29,42 % de mAP@50, 17,03 % de mAP@50-95, 35
 | Tipos de cuantización | no disponibles en la model card; el framework Ultralytics permite exportar a FP16/INT8 y a formatos como ONNX o TensorRT |
 | Idiomas soportados | no aplicable (visión por computador); no disponible en los metadatos |
 | Licencia | AGPL-3.0 |
-| Formato de pesos | PyTorch (`.pt`, archivo `best.pt`); el repositorio figura con 0.0 GB en los metadatos de HuggingFace |
+| Formato de pesos | PyTorch (`.pt`, archivo `best.pt`); el repositorio figura con 0.0 GB en los metadatos de Hugging Face |
 | Tarea | object-detection |
 | Modelo base | Ultralytics/YOLOv9 |
 | Conjunto de datos de entrenamiento | dronefreak/UAVDT |
@@ -104,7 +104,7 @@ Comparativa dentro del "model zoo" de UAVDT publicado por el autor en la propia 
 
 | Modelo | Parámetros | Contexto | mAP@50 (UAVDT) | mAP@50-95 (UAVDT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dronefreak/uavdt-yolov9t | 2,1 M | no aplicable | 29,42 | 17,03 | AGPL-3.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| dronefreak/uavdt-yolov9t | 2,1 M | no aplicable | 29,42 | 17,03 | AGPL-3.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | YOLOv9s (misma receta, DetectionBench) | no disponible | no aplicable | 31,82 | 18,71 | no disponible en la información | Reportado en el model zoo de DetectionBench |
 | RF-DETR Nano (misma receta, DetectionBench) | no disponible | no aplicable | 32,78 | 20,31 | no disponible en la información | Reportado en el model zoo de DetectionBench |
 | YOLOv11n (misma receta, DetectionBench) | no disponible | no aplicable | 28,56 | 16,3 | no disponible en la información | Reportado en el model zoo de DetectionBench |
@@ -123,11 +123,11 @@ La ventaja de este *checkpoint* no está en la precisión absoluta, sino en la c
 - Licencia AGPL-3.0: es una licencia copyleft fuerte. El uso comercial es posible, pero obliga a liberar el código derivado bajo la misma licencia en determinados escenarios de distribución o de servicio en red; conviene revisar las implicaciones legales antes de integrarlo en un producto propietario. El modelo base Ultralytics/YOLOv9 está sujeto a la misma familia de licencias.
 - Licencia del conjunto de datos UAVDT: no disponible en la información proporcionada; debe consultarse la ficha del dataset antes de reutilizar los pesos con fines comerciales.
 - Restricciones de entrada: los FLOPs declarados corresponden a 640 px; no se documenta el comportamiento a otras resoluciones ni el impacto en precisión.
-- Repositorio con tamaño declarado de 0.0 GB en HuggingFace, dato que probablemente no refleja el tamaño real de los pesos (los 2,1 M de parámetros implican varios megabytes como mínimo).
+- Repositorio con tamaño declarado de 0.0 GB en Hugging Face, dato que probablemente no refleja el tamaño real de los pesos (los 2,1 M de parámetros implican varios megabytes como mínimo).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov9t
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov9t
 - Conjunto de datos UAVDT (ficha del autor): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: Ultralytics/YOLOv9 (referenciado como `base_model` en la model card; no se proporciona URL directa en la información disponible)

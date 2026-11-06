@@ -81,14 +81,14 @@ El ensemble de MPNN supera a la baseline clasica de fingerprints en +0,029 ROC-A
 - Sesgo de datos: entrenado unicamente con materiales de perfumeria y aromas alimentarios (GoodScents + Leffingwell), por lo que esta sesgado hacia odorantes agradables; el rendimiento en moleculas con olores desagradables o fuera de ese dominio no esta garantizado.
 - Solo moleculas individuales: no predice intensidad de olor ni el comportamiento de mezclas, limitacion critica para aplicaciones reales de formulacion.
 - Las puntuaciones son rankings, no probabilidades calibradas: no deben interpretarse como probabilidades de percepcion.
-- Uso previsto para investigacion y educacion; cualquier uso comercial requiere revisar la licencia de OpenPOM y los terminos de las fuentes de datos (licencia "other" en HuggingFace, no estandar).
+- Uso previsto para investigacion y educacion; cualquier uso comercial requiere revisar la licencia de OpenPOM y los terminos de las fuentes de datos (licencia "other" en Hugging Face, no estandar).
 - Riesgo de error en descriptores individuales: con ROC-AUC de 0,891, existe un margen de error apreciable por descriptor; las predicciones deben validarse experimentalmente.
 - No hay documentacion sobre cobertura de quimica fuera del espacio de entrenamiento (moleculas muy grandes, metales, sales).
 - Descargas registradas: 0, lo que indica ausencia de adopcion comunitaria verificada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sachin-kukkar/ai-nose-openpom
+- Modelo en Hugging Face: https://huggingface.co/sachin-kukkar/ai-nose-openpom
 - OpenPOM (repositorio de referencia): https://github.com/Bio-ml/OpenPOM (repositorio original de OpenPOM; verificar enlace actual)
 - Paper: Sanchez-Lengeling et al. 2019, "Machine Learning for Scent": https://arxiv.org/abs/1910.10685
 - Paper: Lee et al., Science 2023, "A principal odor map unifies diverse tasks in olfactory perception": https://www.science.org/doi/10.1126/science.ade4401

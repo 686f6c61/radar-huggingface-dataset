@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-roller-2m es un modelo de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario a1rb4Ck en HuggingFace, concebido como entrada para la competición microduck arena bajo la modalidad "roller-sprint-2m". No se trata de un modelo de lenguaje, sino de una política de control entrenada para un robot con ruedas (un "duck on wheels", es decir, un microduck con ruedas en lugar de patas). El modelo resuelve la tarea de locomoción rodante en un entorno de simulación, y su relevancia es acotada al ecosistema de la competición microduck: sirve como referencia reproducible para los cinco seeds oficiales del certamen.
+microduck-roller-2m es un modelo de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario a1rb4Ck en Hugging Face, concebido como entrada para la competición microduck arena bajo la modalidad "roller-sprint-2m". No se trata de un modelo de lenguaje, sino de una política de control entrenada para un robot con ruedas (un "duck on wheels", es decir, un microduck con ruedas en lugar de patas). El modelo resuelve la tarea de locomoción rodante en un entorno de simulación, y su relevancia es acotada al ecosistema de la competición microduck: sirve como referencia reproducible para los cinco seeds oficiales del certamen.
 
 La model card es explícita sobre las limitaciones: el autor indica que el robot, diseñado originalmente para caminar, no mostró predisposición a rodar y pasó la mayor parte del entrenamiento intentando andar de todos modos. La política se compone de una red MLP para la marcha (gait) más tablas específicas para cada uno de los cinco seeds oficiales. Fuera de esos seeds, el modelo "va por su cuenta", lo que en la práctica significa que su comportamiento no está garantizado.
 
@@ -23,7 +23,7 @@ No se dispone de información sobre arquitectura detallada, número de parámetr
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe una política compuesta por una red MLP que gobierna la marcha (gait) del robot, complementada con tablas específicas para cada uno de los cinco seeds oficiales de la competición microduck arena. El pipeline declarado en HuggingFace es `reinforcement-learning`, y las etiquetas incluyen `robotics`, `microduck` y `microduck-arena`. No se especifican el número de capas, las dimensiones de las capas ocultas, la función de recompensa, el algoritmo de RL empleado (PPO, SAC, etc.), el número de pasos de entrenamiento ni la composición del entorno de simulación.
+La información disponible describe una política compuesta por una red MLP que gobierna la marcha (gait) del robot, complementada con tablas específicas para cada uno de los cinco seeds oficiales de la competición microduck arena. El pipeline declarado en Hugging Face es `reinforcement-learning`, y las etiquetas incluyen `robotics`, `microduck` y `microduck-arena`. No se especifican el número de capas, las dimensiones de las capas ocultas, la función de recompensa, el algoritmo de RL empleado (PPO, SAC, etc.), el número de pasos de entrenamiento ni la composición del entorno de simulación.
 
 El autor menciona que el modelo parte de tablas desarrolladas por jrubiosainz (remix12) y por "el resto de la comunidad roller", lo que sugiere un entrenamiento incremental o derivado sobre artefactos previos de la competición. No se documenta si hubo fases de ajuste fino, currículo de entrenamiento o técnicas de dominio aleatorio. Tampoco se indica si el modelo incorpora innovaciones técnicas destacables más allá de la combinación MLP + tablas por seed.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada otras ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a1rb4Ck/microduck-roller-2m
+- Modelo en Hugging Face: https://huggingface.co/a1rb4Ck/microduck-roller-2m
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

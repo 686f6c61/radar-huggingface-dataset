@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK** es una variante abliterada y cuantizada del modelo base `google/gemma-4-26b-a4b-it`, publicada por el usuario Ishowbackup en HuggingFace. Se trata de un modelo de arquitectura MoE (mezcla de expertos) con 128 expertos y 4B parámetros activos por token, que incorpora además un MLP denso paralelo y atención híbrida. El modelo es multimodal (procesa texto e imágenes) y está diseñado para eliminar los rechazos de contenido (refusal removal) mediante la técnica CRACK, manteniendo en gran medida las capacidades de razonamiento y generación del modelo original.
+El modelo **Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK** es una variante abliterada y cuantizada del modelo base `google/gemma-4-26b-a4b-it`, publicada por el usuario Ishowbackup en Hugging Face. Se trata de un modelo de arquitectura MoE (mezcla de expertos) con 128 expertos y 4B parámetros activos por token, que incorpora además un MLP denso paralelo y atención híbrida. El modelo es multimodal (procesa texto e imágenes) y está diseñado para eliminar los rechazos de contenido (refusal removal) mediante la técnica CRACK, manteniendo en gran medida las capacidades de razonamiento y generación del modelo original.
 
 La relevancia de este modelo radica en su doble propósito: por un lado, sirve como herramienta de investigación en seguridad de IA, al estudiar cómo la abliteración afecta a la alineación y al rendimiento; por otro, ofrece una versión cuantizada (JANG_4M) que reduce el tamaño a 17 GB, haciéndolo ejecutable en hardware de consumo como Apple Silicon. El modelo se distribuye en formato MLX safetensors y requiere el runtime vMLX para su uso completo, ya que las librerías estándar `mlx_lm` y `mlx_vlm` no soportan completamente la arquitectura Gemma 4.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Ishowbackup/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK)
+- [Hugging Face - Ishowbackup/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK)
 - [Modelo base: google/gemma-4-26b-a4b-it](https://huggingface.co/google/gemma-4-26b-a4b-it)
 - [vMLX - runtime para Gemma 4](https://vmlx.net)
 - [dealign.ai - investigación sobre abliteración](https://dealign.ai)

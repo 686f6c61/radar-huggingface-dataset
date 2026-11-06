@@ -4,7 +4,7 @@
 
 Apertus-v1.5-70B-FP6-mlx es una version cuantizada a 6 bits (FP6) del modelo Apertus-v1.5-70B de Swiss AI (organizacion swiss-ai), publicada por el usuario sbaechler y empaquetada en formato MLX para su ejecucion nativa en Apple Silicon. Se trata, por tanto, de una conversion de pesos y no de un modelo entrenado desde cero: su valor anadido es permitir inferencia local de un modelo de 71.939.902.320 parametros en ordenadores Mac con memoria unificada, sin depender de GPU dedicadas ni de servicios en la nube.
 
-El pipeline declarado es image-text-to-text, lo que indica que el modelo base es multimodal (acepta imagen y texto como entrada y genera texto), y los tags incluyen "multilingual", "conversational" y "quantized". El repositorio ocupa 59.2 GB y se distribuye bajo licencia Apache 2.0, aunque con acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El pipeline declarado es image-text-to-text, lo que indica que el modelo base es multimodal (acepta imagen y texto como entrada y genera texto), y los tags incluyen "multilingual", "conversational" y "quantized". El repositorio ocupa 59.2 GB y se distribuye bajo licencia Apache 2.0, aunque con acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia actual es doble. Por un lado, acerca un modelo de escala 70B a hardware de consumo profesional (Mac Studio y MacBook Pro de gama alta) manteniendo el formato de pesos safetensors compatible con el ecosistema MLX. Por otro, al derivar de Apertus, un proyecto de IA abierta de origen suizo, ofrece una alternativa con licencia permisiva frente a modelos propietarios de tamano comparable.
 
@@ -23,7 +23,7 @@ Su relevancia actual es doble. Por un lado, acerca un modelo de escala 70B a har
 | Tamano del repositorio | 59.2 GB |
 | Modalidades de entrada | Texto e imagen (image-text-to-text) |
 | Modelo base | swiss-ai/Apertus-v1.5-70B |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ Por tanto, no hay datos publicados en la informacion proporcionada sobre volumen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y la busqueda web realizada no aporto ningun resultado relevante sobre este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y la busqueda web realizada no aporto ningun resultado relevante sobre este modelo.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ La busqueda web no devolvio informacion utilizable sobre modelos alternativos, p
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Perdida de precision por cuantizacion: la conversion a 6 bits introduce degradacion respecto al modelo base en BF16; no se publican mediciones de esa perdida.
 - Ausencia de benchmarks: no hay datos de rendimiento que permitan estimar la calidad real de esta version cuantizada.
 - Sesgos: no disponibles; no se documenta ninguna evaluacion de sesgo o seguridad.
@@ -89,7 +89,7 @@ La busqueda web no devolvio informacion utilizable sobre modelos alternativos, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbaechler/Apertus-v1.5-70B-FP6-mlx
+- Modelo en Hugging Face: https://huggingface.co/sbaechler/Apertus-v1.5-70B-FP6-mlx
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-70B
 - Organizacion swiss-ai: https://huggingface.co/swiss-ai
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

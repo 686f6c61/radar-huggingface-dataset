@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101-stack-bowls-gr00t-n1.7 (este) | 3.144.016.000 | no disponible | Apilado de cuencos en SO-101 | Apache 2.0 | HuggingFace, 0 descargas |
+| so101-stack-bowls-gr00t-n1.7 (este) | 3.144.016.000 | no disponible | Apilado de cuencos en SO-101 | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible en la información | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
 | Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación por imitación | no disponible | Ecosistema LeRobot |
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-stack-bowls-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-stack-bowls-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-stack-bowls
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-stack-bowls
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

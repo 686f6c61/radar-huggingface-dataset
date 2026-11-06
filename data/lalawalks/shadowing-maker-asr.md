@@ -88,7 +88,7 @@ Los datos de la tabla proceden de la model card de este repositorio y de la docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lalawalks/shadowing-maker-asr
+- Modelo en Hugging Face: https://huggingface.co/lalawalks/shadowing-maker-asr
 - Modelo original SenseVoice Small (FunAudioLLM): https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Proyecto de conversion e inferencia sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Detector de voz silero-vad: https://github.com/snakers4/silero-vad

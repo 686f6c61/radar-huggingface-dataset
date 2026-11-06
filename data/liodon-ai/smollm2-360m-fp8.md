@@ -72,9 +72,9 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/liodon-ai/SmolLM2-360M-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/liodon-ai/SmolLM2-360M-FP8)
 - [Modelo base HuggingFaceTB/SmolLM2-360M](https://huggingface.co/HuggingFaceTB/SmolLM2-360M)
-- [Perfil de Liodon AI en HuggingFace](https://huggingface.co/liodon-ai)
+- [Perfil de Liodon AI en Hugging Face](https://huggingface.co/liodon-ai)
 - [Sitio web de Liodon AI](https://liodon.ai/)
 - [Repositorio de SmolLM en GitHub](https://github.com/huggingface/smollm)
 - [Artículo sobre SmolLM2-360M en llm.co](https://llm.co/llms/smollm2-360m)

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Hella
 |---|---|---|---|---|
 | credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswagpiqa | 1,41B | no disponible | MIT | Preentrenamiento de investigacion con mezcla optimizada (32B tokens, solo ingles) |
 | OLMo 2 1B (allenai) | ~1,4B (misma familia) | no verificado en esta ficha | licencia permisiva de AllenAI, consultar model card | Modelo base de proposito general, preentrenado con un presupuesto de tokens muy superior |
-| SmolLM2-1.7B (HuggingFace) | 1,7B | no verificado en esta ficha | Apache-2.0, consultar model card | Base e instruct, orientado a uso general y despliegue en dispositivo |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | no verificado en esta ficha | Apache-2.0, consultar model card | Base e instruct, orientado a uso general y despliegue en dispositivo |
 | Qwen2.5-1.5B (Alibaba) | 1,5B | no verificado en esta ficha | Apache-2.0 en la mayoria de variantes, consultar model card | Base e instruct, multilingue, con soporte de tool calling en variantes alineadas |
 
 La comparacion relevante no es de rendimiento absoluto: este checkpoint esta preentrenado con 32B tokens, un orden de magnitud por debajo de los modelos de su talla, y no ha pasado por alineacion. Su valor comparativo esta en la receta de mezcla, no en las metricas.
@@ -89,7 +89,7 @@ La comparacion relevante no es de rendimiento absoluto: este checkpoint esta pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswagpiqa
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswagpiqa
 - Modelo proxy del enjambre Dirichlet (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Dataset de entrenamiento (WebOrganizer/Corpus-200B): https://huggingface.co/datasets/WebOrganizer/Corpus-200B
 - Secuencias tokenizadas: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
@@ -100,4 +100,4 @@ La comparacion relevante no es de rendimiento absoluto: este checkpoint esta pre
 - Tokenizador GPT-NeoX-20B: https://huggingface.co/EleutherAI/gpt-neox-20b
 - Terminos de uso de Common Crawl: https://commoncrawl.org/terms-of-use
 
-Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

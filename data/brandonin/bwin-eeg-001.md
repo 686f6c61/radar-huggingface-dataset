@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bWIN EEG-001 es un checkpoint de investigación publicado en HuggingFace por el usuario brandonin. Se trata de un modelo de continuación offline de señales EEG: a partir de 24 muestras de contexto en 64 canales, predice 64 muestras futuras a 125 Hz. La arquitectura combina una red recurrente con dos modos Wilson-Cowan excitatorio/inhibitorio, una geometría de electrodos de plantilla y un operador forward de tres capas. El modelo cuenta con 329.472 parámetros neuronales entrenados y 64 parámetros de varianza de horizonte ajustados.
+bWIN EEG-001 es un checkpoint de investigación publicado en Hugging Face por el usuario brandonin. Se trata de un modelo de continuación offline de señales EEG: a partir de 24 muestras de contexto en 64 canales, predice 64 muestras futuras a 125 Hz. La arquitectura combina una red recurrente con dos modos Wilson-Cowan excitatorio/inhibitorio, una geometría de electrodos de plantilla y un operador forward de tres capas. El modelo cuenta con 329.472 parámetros neuronales entrenados y 64 parámetros de varianza de horizonte ajustados.
 
 Su propósito declarado es servir como baseline mecanístico inspeccionable y proporcionar una evaluación reproducible, no demostrar utilidad clínica ni precisión de última generación. El entrenamiento se realizó durante 50 épocas sobre 8.576 ventanas de 67 personas del dataset EEGMMIDB, con selección de época 18 sobre 680 ventanas de validación de 17 personas separadas. El test primario contiene 1.000 ventanas de 25 personas adicionales.
 
@@ -101,7 +101,7 @@ No se dispone de especificaciones detalladas (parámetros, contexto, licencia) p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brandonin/bwin-eeg-001
+- Hugging Face: https://huggingface.co/brandonin/bwin-eeg-001
 - Dataset EEGMMIDB (PhysioNet): https://physionet.org/content/eegmmidb/1.0.0/
 - DOI de la referencia del dataset: https://doi.org/10.13026/C28G6P
 - Los resultados de búsqueda web no aportan enlaces adicionales relevantes para este modelo concreto.

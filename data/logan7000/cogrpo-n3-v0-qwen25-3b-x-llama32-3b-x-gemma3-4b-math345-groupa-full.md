@@ -76,7 +76,7 @@ Este modelo no es directamente comparable con los modelos base porque ha sido mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupA-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupA-full
 - Repositorio relacionado (variante con Phi-4-mini, agente A): https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end
 - Repositorio relacionado (variante con Phi-4-mini, agente B): https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end
 - Despliegue en FriendliAI (modelo similar): https://friendli.ai/models/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end

@@ -4,9 +4,9 @@
 
 open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-ar30k es un ajuste fino supervisado (SFT) del modelo ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated, que a su vez deriva de la familia Qwen2.5 de Alibaba. El entrenamiento se realizo con LLaMA-Factory sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, un conjunto de aproximadamente 30.000 ejemplos orientados a razonamiento, y el sufijo "ar30k" del nombre apunta a ese corpus en arabe o a una variante de razonamiento en arabe, aunque la model card no lo confirma explicitamente.
 
-El modelo es un transformer decoder-only denso de 1.543.321.088 parametros (1,5B), con licencia "other" heredada del modelo base y sin idiomas declarados oficialmente en los metadatos de HuggingFace. Su relevancia actual reside en que es un ejemplo tipico de la cadena de ajustes comunitarios sobre Qwen2.5: un modelo pequeno, desplegable en hardware de consumo, especializado mediante SFT sobre un dataset de razonamiento y publicado con trazabilidad completa de hiperparametros.
+El modelo es un transformer decoder-only denso de 1.543.321.088 parametros (1,5B), con licencia "other" heredada del modelo base y sin idiomas declarados oficialmente en los metadatos de Hugging Face. Su relevancia actual reside en que es un ejemplo tipico de la cadena de ajustes comunitarios sobre Qwen2.5: un modelo pequeno, desplegable en hardware de consumo, especializado mediante SFT sobre un dataset de razonamiento y publicado con trazabilidad completa de hiperparametros.
 
-No obstante, la model card es practicamente un esqueleto autogenerado por el Trainer de HuggingFace: no documenta usos previstos, limitaciones, datos de evaluacion ni resultados de benchmarks. Cualquier evaluacion en produccion debe hacerse por cuenta del adoptante.
+No obstante, la model card es practicamente un esqueleto autogenerado por el Trainer de Hugging Face: no documenta usos previstos, limitaciones, datos de evaluacion ni resultados de benchmarks. Cualquier evaluacion en produccion debe hacerse por cuenta del adoptante.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ La comparativa se limita a datos estructurales: no existen mediciones de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-ar30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-ar30k
 - Modelo base inmediato: https://huggingface.co/ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated
 - Familia Qwen2.5 (modelo original): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b es un ajuste fino (*fine-tune*) del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B, desarrollado por el usuario de HuggingFace Hhhhggggbbdjd y especializado en la generacion de contenido explicito para adultos. Se trata de un modelo de 1.300 millones de parametros con arquitectura transformer de difusion para texto-a-video, distribuido en formato safetensors y publicado bajo licencia CreativeML OpenRAIL-M. El repositorio ocupa 105,4 GB porque incluye decenas de checkpoints intermedios de dos ejecuciones de entrenamiento distintas.
+NSFW Wan 1.3b es un ajuste fino (*fine-tune*) del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B, desarrollado por el usuario de Hugging Face Hhhhggggbbdjd y especializado en la generacion de contenido explicito para adultos. Se trata de un modelo de 1.300 millones de parametros con arquitectura transformer de difusion para texto-a-video, distribuido en formato safetensors y publicado bajo licencia CreativeML OpenRAIL-M. El repositorio ocupa 105,4 GB porque incluye decenas de checkpoints intermedios de dos ejecuciones de entrenamiento distintas.
 
 El modelo parte del Wan2.1-T2V-1.3B de Wan-AI y anade aprendizaje sobre un corpus extraido de aproximadamente 1.250 subreddits de contenido para adultos (los 1.000 posts mas votados de cada uno), junto con un segundo conjunto de video de comunidades similares. La model card documenta dos esquemas de entrenamiento: uno original en dos fases (epocas 1-10 solo imagen, epocas 11-20 solo video) que sufrio un colapso de calidad anatomica, y una segunda ejecucion experimental con dataset mixto (30.000 clips de video y 20.000 imagenes simultaneamente) que el autor recomienda como sustituta.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto / fotogramas | Licencia | Orientacion | Disponibilidad |
 |---|---|---|---|---|---|
 | NSFW Wan 1.3b | 1,3 B | no disponible | CreativeML OpenRAIL-M | NSFW explicito | Repositorio de 105,4 GB, 0 descargas |
-| Wan2.1-T2V-1.3B (base) | 1,3 B | definido por Wan2.1 (no disponible en esta ficha) | Apache 2.0 (segun el modelo base) | Generalista | Publico en HuggingFace, ampliamente utilizado |
-| LTX-Video | 2 B aprox. | no disponible | no disponible | Generalista, enfocado a velocidad | Publico en HuggingFace |
-| CogVideoX-2B | 2 B aprox. | no disponible | no disponible | Generalista | Publico en HuggingFace |
+| Wan2.1-T2V-1.3B (base) | 1,3 B | definido por Wan2.1 (no disponible en esta ficha) | Apache 2.0 (segun el modelo base) | Generalista | Publico en Hugging Face, ampliamente utilizado |
+| LTX-Video | 2 B aprox. | no disponible | no disponible | Generalista, enfocado a velocidad | Publico en Hugging Face |
+| CogVideoX-2B | 2 B aprox. | no disponible | no disponible | Generalista | Publico en Hugging Face |
 
 No se dispone de datos verificados de rendimiento comparado entre estas alternativas en la informacion proporcionada. La comparacion se limita a tamano, licencia y orientacion de uso; cualquier afirmacion sobre calidad relativa seria especulativa.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados de rendimiento comparado entre estas alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hhhhggggbbdjd/NSFW_Wan_1.3b
-- Modelo base en HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Fichero de guia de prompts del repositorio: prompting-guide.json (incluido en el propio repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/Hhhhggggbbdjd/NSFW_Wan_1.3b
+- Modelo base en Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Fichero de guia de prompts del repositorio: prompting-guide.json (incluido en el propio repositorio de Hugging Face)
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a entradas lexicograficas y articulos enciclopedicos sobre la expresion francesa "pourquoi pas", sin relacion con el modelo. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos adicionales en la informacion disponible.

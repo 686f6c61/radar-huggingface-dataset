@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy-MT2-1.8B es un modelo de traducción multilingüe desarrollado por Tencent, distribuido originalmente en HuggingFace como `tencent/Hy-MT2-1.8B`. La versión aquí descrita es la conversión realizada por la comunidad `litert-community` al formato `.litertlm` de Google LiteRT-LM, pensada para inferencia en dispositivo (on-device) en móviles, portátiles y placas embebidas. Cubre 33 idiomas y está específicamente afinado para seguir instrucciones de traducción, no para mantener conversaciones generales.
+Hy-MT2-1.8B es un modelo de traducción multilingüe desarrollado por Tencent, distribuido originalmente en Hugging Face como `tencent/Hy-MT2-1.8B`. La versión aquí descrita es la conversión realizada por la comunidad `litert-community` al formato `.litertlm` de Google LiteRT-LM, pensada para inferencia en dispositivo (on-device) en móviles, portátiles y placas embebidas. Cubre 33 idiomas y está específicamente afinado para seguir instrucciones de traducción, no para mantener conversaciones generales.
 
 Arquitectura `hunyuan_v1_dense` con 32 capas, dimensión oculta 2048, 16 cabezas de consulta y 4 de clave/valor (GQA) con QK-norm, `head_dim` 128, vocabulario de 120.818 tokens y embeddings atados. Suma 2.040 millones de parámetros (etiquetado comercialmente como 1.8B). El artefacto distribuido es una cuantización dinámica int8 de 1,83 GB.
 
@@ -94,7 +94,7 @@ La información proporcionada solo permite comparar el bundle LiteRT-LM con su m
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/litert-community/Hy-MT2-1.8B
+- Repositorio Hugging Face del bundle: https://huggingface.co/litert-community/Hy-MT2-1.8B
 - Modelo base original: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Demo web de chat con WebGPU: https://google-ai-edge.github.io/LiteRT-LM/web_demos/chat/index.html?model=litert-community/Hy-MT2-1.8B

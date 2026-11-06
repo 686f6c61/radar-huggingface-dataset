@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft` es un checkpoint publicado en HuggingFace por el usuario `keylazy` el 5 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino supervisado (SFT) sobre el modelo Qwen2.5-Omni de 3B parámetros, un modelo multimodal de Alibaba que combina comprensión de texto, imagen, audio y vídeo con generación de voz. Sin embargo, la model card es la plantilla automática de HuggingFace y no aporta ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados ni el propósito del ajuste.
+`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft` es un checkpoint publicado en Hugging Face por el usuario `keylazy` el 5 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino supervisado (SFT) sobre el modelo Qwen2.5-Omni de 3B parámetros, un modelo multimodal de Alibaba que combina comprensión de texto, imagen, audio y vídeo con generación de voz. Sin embargo, la model card es la plantilla automática de Hugging Face y no aporta ninguna información verificable sobre el proceso de entrenamiento, los datos utilizados ni el propósito del ajuste.
 
 El repositorio ocupa apenas 0,1 GB, un tamaño incompatible con los pesos completos de un modelo de 3B parámetros en safetensors (que rondarían los 6-7 GB en bf16). Esto sugiere que el repositorio contiene únicamente un adaptador LoRA, un subconjunto parcial de pesos o un checkpoint incompleto. El sufijo `bab-slurp-t2v-e3-sft` no tiene un significado público documentado y parece una etiqueta interna del autor.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, el sufijo `sft` indica ajuste fino supervisado, pero 
 - Pruebas de integracion con la libreria transformers: al declarar `library_name: transformers`, puede emplearse para validar la carga de checkpoints derivados de Qwen2.5-Omni en versiones recientes.
 - Base para comparaciones controladas: si se dispone del modelo original Qwen2.5-Omni-3B, este checkpoint permite medir el impacto del SFT en tareas concretas de texto y audio.
 - Prototipado interno de asistentes multimodales: solo en entornos de desarrollo y con validacion manual, dado que no hay garantias de calidad ni licencia clara.
-- Docencia sobre ciclo de vida de modelos: ejemplo de publicacion en HuggingFace con model card incompleta, util para discutir buenas practicas de documentacion y reproducibilidad.
+- Docencia sobre ciclo de vida de modelos: ejemplo de publicacion en Hugging Face con model card incompleta, util para discutir buenas practicas de documentacion y reproducibilidad.
 
 ## Benchmarks y rendimiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft | No disponible (base 3B presumible) | No disponible | No confirmadas | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-Omni-3B (modelo base presumible) | 3B | No disponible en esta ficha | Texto, imagen, audio, video, voz | Apache 2.0 (segun publicacion original de Alibaba) | HuggingFace oficial |
-| Qwen2.5-Omni-7B (modelo base presumible) | 7B | No disponible en esta ficha | Texto, imagen, audio, video, voz | Apache 2.0 (segun publicacion original de Alibaba) | HuggingFace oficial |
-| Otros ajustes SFT comunitarios de Qwen2.5-Omni | Variable | Variable | Variable | Depende del autor | HuggingFace |
+| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft | No disponible (base 3B presumible) | No disponible | No confirmadas | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-Omni-3B (modelo base presumible) | 3B | No disponible en esta ficha | Texto, imagen, audio, video, voz | Apache 2.0 (segun publicacion original de Alibaba) | Hugging Face oficial |
+| Qwen2.5-Omni-7B (modelo base presumible) | 7B | No disponible en esta ficha | Texto, imagen, audio, video, voz | Apache 2.0 (segun publicacion original de Alibaba) | Hugging Face oficial |
+| Otros ajustes SFT comunitarios de Qwen2.5-Omni | Variable | Variable | Variable | Depende del autor | Hugging Face |
 
 La comparativa es orientativa: los datos del modelo base se citan de memoria y no se han verificado en la informacion proporcionada; conviene consultar la model card oficial de Qwen2.5-Omni antes de tomar decisiones.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: los datos del modelo base se citan de memoria y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2v-e3-sft
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Modelo base presumible Qwen2.5-Omni (no confirmado por el autor): no disponible en la informacion proporcionada

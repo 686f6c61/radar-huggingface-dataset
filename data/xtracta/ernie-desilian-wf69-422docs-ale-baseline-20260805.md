@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables. La model card menciona 
 
 ## Enlaces
 
-- [HuggingFace: xtracta/ernie-desilian-wf69-422docs-ale-baseline-20260805](https://huggingface.co/xtracta/ernie-desilian-wf69-422docs-ale-baseline-20260805)
+- [Hugging Face: xtracta/ernie-desilian-wf69-422docs-ale-baseline-20260805](https://huggingface.co/xtracta/ernie-desilian-wf69-422docs-ale-baseline-20260805)
 - [W&B run jg5c3rcg (rich-paper-2)](https://wandb.ai/xtracta/Desilian_WF69_422_ALE_Baseline_20260805/runs/jg5c3rcg)
 - [W&B run r69k1mae (rama con synthetic bbox)](https://wandb.ai/xtracta/Desilian_WF69_422_SynBBox_ALE_20260804/runs/r69k1mae)
 - [Sitio web de Xtracta](https://xtracta.com/)

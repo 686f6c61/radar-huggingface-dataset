@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dama-gusul es un ajuste fino (fine-tuning) publicado por el usuario Johnnybae en HuggingFace, derivado del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Se distribuye bajo licencia Apache 2.0 y está etiquetado con los pipelines `image-text-to-text` y `text-generation-inference`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto como entrada y generar texto como salida. El repositorio ocupa 10,3 GB y contiene pesos en formato safetensors con 5.123.178.051 parametros totales, una cifra que coincide aproximadamente con un almacenamiento en precision de 16 bits.
+Dama-gusul es un ajuste fino (fine-tuning) publicado por el usuario Johnnybae en Hugging Face, derivado del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Se distribuye bajo licencia Apache 2.0 y está etiquetado con los pipelines `image-text-to-text` y `text-generation-inference`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto como entrada y generar texto como salida. El repositorio ocupa 10,3 GB y contiene pesos en formato safetensors con 5.123.178.051 parametros totales, una cifra que coincide aproximadamente con un almacenamiento en precision de 16 bits.
 
-El modelo se ha entrenado, segun la model card, con la libreria Unsloth y TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se especifica el conjunto de datos de ajuste, el numero de tokens utilizados, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO sobre el modelo base.
+El modelo se ha entrenado, segun la model card, con la libreria Unsloth y TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se especifica el conjunto de datos de ajuste, el numero de tokens utilizados, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO sobre el modelo base.
 
 Su relevancia actual es limitada pero ilustrativa: se trata de un ejemplo de ajuste fino de bajo coste sobre una familia de modelos abiertos (Gemma), reproducible con herramientas de consumo en una sola GPU, y publicado con licencia permisiva. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no se ha publicado ninguna evaluacion de rendimiento.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero ilustrativa: se trata de un ejemplo de aju
 
 La informacion disponible identifica el modelo base como `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, es decir, un modelo de la familia Gemma en su variante instructiva, cuantizado a 4 bits y redistribuido por Unsloth. El pipeline declarado (`image-text-to-text`) implica una arquitectura con torre de vision mas un decodificador de lenguaje, orientada a tareas de pregunta-respuesta sobre imagenes y generacion de texto condicionada por entrada visual. No se especifica el numero de capas, la dimension del modelo, el mecanismo de atencion ni si se emplean tecnicas como atencion lineal o decodificacion especulativa. Tampoco se detalla la longitud de contexto soportada.
 
-En cuanto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad declarada de 2x. No se aportan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el numero de epocas, la tasa de aprendizaje ni la aplicacion de tecnicas de alineacion (RLHF, DPO, ORPO). Tampoco hay informacion sobre si el ajuste afecto a la torre de vision o solo al decodificador de texto. El hecho de partir de un modelo ya cuantizado en 4 bits sugiere un flujo de QLoRA, aunque esto no se confirma en la documentacion.
+En cuanto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad declarada de 2x. No se aportan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el numero de epocas, la tasa de aprendizaje ni la aplicacion de tecnicas de alineacion (RLHF, DPO, ORPO). Tampoco hay informacion sobre si el ajuste afecto a la torre de vision o solo al decodificador de texto. El hecho de partir de un modelo ya cuantizado en 4 bits sugiere un flujo de QLoRA, aunque esto no se confirma en la documentacion.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ La comparativa siguiente se ofrece como referencia orientativa de categoria (mod
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Johnnybae/dama-gusul | 5.123 millones | No disponible | Imagen y texto a texto | Apache 2.0 | HuggingFace, safetensors |
-| Gemma 3 4B IT (Google) | ~4.000 millones | 128.000 tokens | Imagen y texto a texto | Licencia Gemma (con restricciones de uso) | HuggingFace, safetensors, GGUF |
-| Qwen2.5-VL-3B-Instruct | ~3.750 millones | 32.000 tokens (ampliable con YaRN) | Imagen y texto a texto | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| SmolVLM2-2.2B (HuggingFace) | ~2.200 millones | No disponible | Imagen y video a texto | Apache 2.0 | HuggingFace, safetensors |
+| Johnnybae/dama-gusul | 5.123 millones | No disponible | Imagen y texto a texto | Apache 2.0 | Hugging Face, safetensors |
+| Gemma 3 4B IT (Google) | ~4.000 millones | 128.000 tokens | Imagen y texto a texto | Licencia Gemma (con restricciones de uso) | Hugging Face, safetensors, GGUF |
+| Qwen2.5-VL-3B-Instruct | ~3.750 millones | 32.000 tokens (ampliable con YaRN) | Imagen y texto a texto | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| SmolVLM2-2.2B (Hugging Face) | ~2.200 millones | No disponible | Imagen y video a texto | Apache 2.0 | Hugging Face, safetensors |
 
 Frente a estas alternativas, la ventaja de dama-gusul es su licencia Apache 2.0 sin las restricciones de la licencia Gemma, mientras que su principal desventaja es la ausencia total de documentacion tecnica y de evaluaciones publicadas, ademas del soporte declarado unicamente en ingles.
 
@@ -89,9 +89,9 @@ Frente a estas alternativas, la ventaja de dama-gusul es su licencia Apache 2.0 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnnybae/dama-gusul
+- Modelo en Hugging Face: https://huggingface.co/Johnnybae/dama-gusul
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog oficial del modelo: no disponible
 - Resultados de la busqueda web: no se encontraron enlaces relevantes; los resultados devueltos correspondian a directorios telefonicos alemanes sin relacion con el modelo.

@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento comparativo para este modelo. Como referen
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed2)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft)
 - [FriendliAI - Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed2](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed2)
 - [FriendliAI - Llama-3.1-8B-good-vs-bad-mixed-last-third-sft-epoch3](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-last-third-sft-epoch3)

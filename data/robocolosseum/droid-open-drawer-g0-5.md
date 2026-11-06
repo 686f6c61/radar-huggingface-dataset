@@ -98,7 +98,7 @@ No se dispone de tasas de exito comparadas en la informacion proporcionada, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-open-drawer-g0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-open-drawer-g0.5
 - Repositorio DROID-models (fase de 5 epocas): https://huggingface.co/RoboColosseum/DROID-models
 - Repositorio BimanualYAM-models (referencia de learning rates): https://huggingface.co/RoboColosseum/BimanualYAM-models
 - Checkpoint base G0.5: https://huggingface.co/OpenGalaxea/G05

@@ -4,7 +4,7 @@
 
 CrocoCpp/Qwen-2.5.gguf es un repositorio de cuantizaciones en formato GGUF publicado por el usuario CrocoCpp sobre la familia Qwen 2.5. Los metadatos de safetensors asociados al repositorio indican 494.032.768 parámetros (unos 0,49 mil millones), lo que lo situaría en la gama más ligera de la familia Qwen 2.5, orientada a inferencia local en CPU y GPU de gama baja. El repositorio ocupa 6,6 GB, un tamaño desproporcionado para ese recuento de parámetros, por lo que es plausible que agrupe varias cuantizaciones o ficheros adicionales; la ficha no lo especifica.
 
-Se trata de un artefacto de distribución, no de un modelo entrenado por el autor del repositorio. La ficha de HuggingFace no declara pipeline, licencia ni idiomas, y sus únicas etiquetas son gguf, endpoints_compatible, region:us y conversational. En consecuencia, los datos de arquitectura, contexto y entrenamiento solo pueden heredarse del modelo base original, que la ficha no identifica de forma explícita (nombre, tamaño y revisión quedan sin confirmar).
+Se trata de un artefacto de distribución, no de un modelo entrenado por el autor del repositorio. La ficha de Hugging Face no declara pipeline, licencia ni idiomas, y sus únicas etiquetas son gguf, endpoints_compatible, region:us y conversational. En consecuencia, los datos de arquitectura, contexto y entrenamiento solo pueden heredarse del modelo base original, que la ficha no identifica de forma explícita (nombre, tamaño y revisión quedan sin confirmar).
 
 Su interés práctico es acotado: sirve para pruebas de inferencia local con runtimes compatibles con GGUF, como llama.cpp, KoboldCpp o el proyecto croco.cpp (fork de KoboldCpp que aparece en las búsquedas y comparte nombre con el autor del repositorio). Con 115 descargas y 0 likes, es un artefacto de nicho sin validación comunitaria ni documentación técnica publicada.
 
@@ -38,7 +38,7 @@ El unico dato estructural disponible es el recuento de parametros (494.032.768) 
 - Agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponibles; la ficha no declara idiomas.
 - Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Compatibilidad de despliegue: la etiqueta endpoints_compatible indica, en principio, compatibilidad con el formato requerido por HuggingFace Inference Endpoints, aunque no se especifica configuracion ni plantilla de chat.
+- Compatibilidad de despliegue: la etiqueta endpoints_compatible indica, en principio, compatibilidad con el formato requerido por Hugging Face Inference Endpoints, aunque no se especifica configuracion ni plantilla de chat.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ Los datos de las alternativas proceden del conocimiento general de esas familias
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CrocoCpp/Qwen-2.5.gguf
+- Repositorio en Hugging Face: https://huggingface.co/CrocoCpp/Qwen-2.5.gguf
 - croco.cpp, fork de KoboldCpp para inferencia GGML/GGUF (proyecto que comparte nombre con el autor): https://github.com/Nexesenex/croco.cpp
 - Wiki de KoboldCpp: https://github.com/LostRuins/koboldcpp/wiki/Home
 - Hilo sobre GGUFs oficiales de la coleccion Qwen3-VL (contexto sobre el ecosistema GGUF de la familia Qwen): https://www.reddit.com/r/LocalLLaMA/comments/1olqjxj/official_ggufs_in_qwen3vl_collection/

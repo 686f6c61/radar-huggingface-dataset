@@ -67,6 +67,6 @@ No disponible. No existe un modelo comparable porque este adaptador no es un mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cooleytukey/dummy-taboo-lora-llama-3.2-1b-banana
+- Repositorio Hugging Face: https://huggingface.co/cooleytukey/dummy-taboo-lora-llama-3.2-1b-banana
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Referencia a la colección LoRA taboo: https://huggingface.co/bcywinski/llama-3.1-8b-instruct-taboo-* (no se ha podido verificar el enlace exacto)

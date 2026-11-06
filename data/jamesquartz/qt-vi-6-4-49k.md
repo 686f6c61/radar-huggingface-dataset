@@ -72,7 +72,7 @@ En comparación cara a cara sobre lenguas compartidas, QT VI.6.4 gana en 47 de 1
 
 ## Requisitos de hardware
 
-Al ser un tokenizador, QT VI.6.4 no requiere GPU ni memoria específica para su uso; puede ejecutarse en CPU con cualquier framework de tokenización (HuggingFace `tokenizers`, SentencePiece, etc.). Su impacto en hardware se manifiesta indirectamente: el vocabulario de 49.152 tokens reduce el tamaño de la matriz de embeddings del modelo final en comparación con vocabularios de 128K, lo que disminuye los requisitos de VRAM y memoria durante el entrenamiento e inferencia. Para un modelo de 1B de parámetros, la diferencia de embeddings puede suponer un ahorro de cientos de millones de parámetros. No se dispone de datos de latencia o throughput específicos.
+Al ser un tokenizador, QT VI.6.4 no requiere GPU ni memoria específica para su uso; puede ejecutarse en CPU con cualquier framework de tokenización (Hugging Face `tokenizers`, SentencePiece, etc.). Su impacto en hardware se manifiesta indirectamente: el vocabulario de 49.152 tokens reduce el tamaño de la matriz de embeddings del modelo final en comparación con vocabularios de 128K, lo que disminuye los requisitos de VRAM y memoria durante el entrenamiento e inferencia. Para un modelo de 1B de parámetros, la diferencia de embeddings puede suponer un ahorro de cientos de millones de parámetros. No se dispone de datos de latencia o throughput específicos.
 
 ## Comparativa con modelos similares
 
@@ -95,5 +95,5 @@ QT VI.6.4 ofrece una cobertura más amplia y un vocabulario mucho menor, a costa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesQuartz/qt-VI.6.4-49k
+- Modelo en Hugging Face: https://huggingface.co/JamesQuartz/qt-VI.6.4-49k
 - No se han encontrado otros enlaces (paper, repositorio de código o documentación adicional) en la información proporcionada.

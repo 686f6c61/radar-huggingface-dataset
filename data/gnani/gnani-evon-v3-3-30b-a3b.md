@@ -4,7 +4,7 @@
 
 gnani-evon-v3.3-30B-A3B es un modelo de lenguaje de gran tamaño desarrollado por la organización gnani, diseñado específicamente para ofrecer capacidades de razonamiento, tool calling y conversación en inglés y un amplio conjunto de idiomas índicos (hindi, bengalí, telugu, tamil, maratí, guyaratí, canarés, malayalam, punyabí y oriya). Se trata de un modelo de arquitectura MoE (mezcla de expertos) con aproximadamente 31,75 mil millones de parámetros totales y unos 3 mil millones de parámetros activos por token, lo que lo sitúa en una categoría eficiente para su tamaño.
 
-El modelo incorpora etiquetas que sugieren una arquitectura híbrida basada en Nemotron-H y capas Mamba, junto con soporte para contextos largos y generación de texto. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido y requiere aceptar condiciones previas en HuggingFace. Es relevante ahora porque cubre una necesidad creciente de modelos multilingües de alta calidad para el subcontinente indio, una región con demanda de asistentes conversacionales y herramientas de automatización en lenguas locales.
+El modelo incorpora etiquetas que sugieren una arquitectura híbrida basada en Nemotron-H y capas Mamba, junto con soporte para contextos largos y generación de texto. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso al repositorio está restringido y requiere aceptar condiciones previas en Hugging Face. Es relevante ahora porque cubre una necesidad creciente de modelos multilingües de alta calidad para el subcontinente indio, una región con demanda de asistentes conversacionales y herramientas de automatización en lenguas locales.
 
 ## Especificaciones tecnicas
 
@@ -55,11 +55,11 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con modelos de la misma categoría (MoE de ~30 B con enfoque multilingüe índico). Alternativas como Qwen2.5-32B o Mixtral 8x7B tienen características diferentes (idiomas, licencias y arquitectura) y no se han encontrado datos de rendimiento de gnani-evon para contrastar. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para establecer una comparativa fiable con modelos de la misma categoría (MoE de ~30 B con enfoque multilingüe índico). Alternativas como Qwen2.5-32B o Mixtral 8x7B tienen características diferentes (idiomas, licencias y arquitectura) y no se han encontrado datos de rendimiento de gnani-evon para contrastar. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su adopción en entornos automatizados.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su adopción en entornos automatizados.
 - Sin información sobre sesgos: no se han publicado evaluaciones de sesgos de género, raza o religión, un aspecto crítico para un modelo orientado a la India con gran diversidad cultural.
 - Riesgo de alucinación: como todo LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
 - Idiomas limitados: aunque cubre diez idiomas índicos, no incluye otros como el asamés o el sindhi, ni lenguas del sur de Asia fuera de la India.
@@ -68,4 +68,4 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gnani/gnani-evon-v3.3-30B-A3B
+- Repositorio Hugging Face: https://huggingface.co/gnani/gnani-evon-v3.3-30B-A3B

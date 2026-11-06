@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert-user-review es un modelo publicado en HuggingFace por el usuario dwiintaaf bajo licencia MIT. Por el identificador del repositorio, se trata de un modelo basado en IndoBERT, la familia de encoders BERT preentrenados para el idioma indonesio, y el sufijo "user-review" sugiere que ha sido ajustado para una tarea relacionada con el análisis de reseñas de usuarios (probablemente clasificación de sentimiento o análisis de opiniones en indonesio). No obstante, la model card publicada no contiene ninguna descripción, por lo que estos extremos no están confirmados por el autor.
+Indobert-user-review es un modelo publicado en Hugging Face por el usuario dwiintaaf bajo licencia MIT. Por el identificador del repositorio, se trata de un modelo basado en IndoBERT, la familia de encoders BERT preentrenados para el idioma indonesio, y el sufijo "user-review" sugiere que ha sido ajustado para una tarea relacionada con el análisis de reseñas de usuarios (probablemente clasificación de sentimiento o análisis de opiniones en indonesio). No obstante, la model card publicada no contiene ninguna descripción, por lo que estos extremos no están confirmados por el autor.
 
 La información disponible es mínima: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no documenta el dataset de entrenamiento ni el procedimiento de ajuste, y no presenta resultados de evaluación. El modelo registra cero descargas y cero likes en el momento de la consulta, lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
 
@@ -33,7 +33,7 @@ No hay datos sobre el volumen de tokens de entrenamiento, la composición del da
 - Por el identificador del repositorio, es plausible que esté orientado a análisis de reseñas de usuarios (clasificación de sentimiento u opiniones), pero no está confirmado.
 - No hay evidencia publicada de soporte de tool calling, function calling ni razonamiento multi-paso.
 - No hay evidencia publicada de capacidades multilingües ni de modos especiales (thinking, visión, audio).
-- No se dispone de información sobre el pipeline de HuggingFace asociado.
+- No se dispone de información sobre el pipeline de Hugging Face asociado.
 
 ## Casos de uso
 
@@ -64,8 +64,8 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dwiintaaf/Indobert-user-review | no disponible | no disponible | MIT | HuggingFace |
-| IndoBERT (referencia de familia) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| dwiintaaf/Indobert-user-review | no disponible | no disponible | MIT | Hugging Face |
+| IndoBERT (referencia de familia) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 ## Enlaces
 
-- [HuggingFace: dwiintaaf/Indobert-user-review](https://huggingface.co/dwiintaaf/Indobert-user-review)
+- [Hugging Face: dwiintaaf/Indobert-user-review](https://huggingface.co/dwiintaaf/Indobert-user-review)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

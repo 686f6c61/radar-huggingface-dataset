@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`art0123/Models_collection` es un repositorio alojado en HuggingFace por el usuario `art0123` que, por su nombre y por el volumen de sus pesos (123,5 GB), parece tratarse de una colección de modelos empaquetados en un único repositorio más que de un modelo individual con una identidad técnica definida. No se ha publicado información sobre la arquitectura, el proceso de entrenamiento ni las capacidades del contenido, y la model card asociada está prácticamente vacía: solo declara `license: unknown` y carece de cualquier descripción funcional.
+`art0123/Models_collection` es un repositorio alojado en Hugging Face por el usuario `art0123` que, por su nombre y por el volumen de sus pesos (123,5 GB), parece tratarse de una colección de modelos empaquetados en un único repositorio más que de un modelo individual con una identidad técnica definida. No se ha publicado información sobre la arquitectura, el proceso de entrenamiento ni las capacidades del contenido, y la model card asociada está prácticamente vacía: solo declara `license: unknown` y carece de cualquier descripción funcional.
 
 El repositorio se creó el 1 de marzo de 2025 y se actualizó por última vez el 2 de noviembre de 2026, acumula 16 likes y no registra descargas en el momento de la consulta. No consta pipeline declarado, idiomas soportados, formato de pesos ni autoría institucional verificable, lo que impide atribuirle una arquitectura concreta (transformer, MoE, SSM o híbrida) ni un tamaño de parámetros fiable.
 
@@ -41,7 +41,7 @@ Tampoco hay información sobre el corpus de entrenamiento (número de tokens, co
 - Auditoría de repositorios agregados: inspeccionar los ficheros del repositorio (123,5 GB) para identificar qué modelos individuales contiene, sus configuraciones y sus licencias reales antes de cualquier uso.
 - Archivado y preservación: almacenar una copia de pesos de modelos diversos en un único punto, con verificación de integridad mediante hashes de los ficheros descargados.
 - Evaluación comparativa interna: extraer los submodelos identificados y someterlos a pruebas controladas de calidad, latencia y consumo de memoria en un entorno aislado.
-- Investigación sobre procedencia de modelos: analizar la trazabilidad de pesos sin model card para estudiar prácticas de publicación en HuggingFace.
+- Investigación sobre procedencia de modelos: analizar la trazabilidad de pesos sin model card para estudiar prácticas de publicación en Hugging Face.
 - Docencia sobre buenas prácticas: usar el repositorio como caso negativo de documentación insuficiente (licencia `unknown`, sin pipeline ni idiomas declarados) en formación de ingeniería de ML.
 - Despliegue condicionado: solo tras identificar un submodelo concreto, validar su licencia y cuantizarlo, podría integrarse en un prototipo; el repositorio en sí no es desplegable como servicio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `art0123/Models_collection` | no disponible | no disponible | unknown | HuggingFace (0 descargas, 16 likes) |
+| `art0123/Models_collection` | no disponible | no disponible | unknown | Hugging Face (0 descargas, 16 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa fiable con otros modelos al no conocerse la arquitectura, el tamaño ni las capacidades del contenido del repositorio.
@@ -78,5 +78,5 @@ No es posible establecer una comparativa fiable con otros modelos al no conocers
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/art0123/Models_collection
+- Repositorio en Hugging Face: https://huggingface.co/art0123/Models_collection
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

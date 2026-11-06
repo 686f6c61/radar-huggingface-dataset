@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ElizabethMwangi/whisper-large-v3_finetuned_rwandan_english_nonstandard_speech_v1.0` es un ajuste fino (fine-tuning) del modelo Whisper large-v3 de OpenAI, especializado en el reconocimiento automático de voz (ASR) para habla no estándar en ruandés (kinyarwanda) e inglés. Ha sido desarrollado por ElizabethMwangi y publicado en HuggingFace con el pipeline de automatic-speech-recognition. El modelo conserva la arquitectura encoder-decoder transformer de Whisper large-v3, con 1.543.490.560 parámetros, y está orientado a mejorar la transcripción de variantes dialectales o acentos no estándar que el modelo base no maneja con suficiente precisión.
+El modelo `ElizabethMwangi/whisper-large-v3_finetuned_rwandan_english_nonstandard_speech_v1.0` es un ajuste fino (fine-tuning) del modelo Whisper large-v3 de OpenAI, especializado en el reconocimiento automático de voz (ASR) para habla no estándar en ruandés (kinyarwanda) e inglés. Ha sido desarrollado por ElizabethMwangi y publicado en Hugging Face con el pipeline de automatic-speech-recognition. El modelo conserva la arquitectura encoder-decoder transformer de Whisper large-v3, con 1.543.490.560 parámetros, y está orientado a mejorar la transcripción de variantes dialectales o acentos no estándar que el modelo base no maneja con suficiente precisión.
 
 La relevancia de este modelo radica en su aplicación para entornos multilingües y de bajos recursos, donde el habla coloquial o con acentos regionales suele degradar el rendimiento de los ASR genéricos. Al estar basado en Whisper large-v3, hereda su robustez general y su capacidad de generalización, pero adaptado a un dominio específico. La model card no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación, por lo que gran parte de la información técnica específica no está disponible.
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al ser un modelo de 1.5B parámetros, en fp16 requiere aproximadamente 3 GB de VRAM solo para los pesos, pero con la activación y el procesamiento de audio, se recomienda al menos 6-8 GB. En cuantización int8, podría reducirse a unos 2-3 GB.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior, RTX 4090, A100, H100. En CPU, es posible ejecutarlo con llama.cpp o whisper.cpp, pero con latencia alta.
 - Sí cabe en GPUs de consumo como RTX 3060, RTX 4070, etc., siempre que se use cuantización o se limite la longitud del audio.
-- Opciones de despliegue: transformers con pipeline de ASR, vLLM (aunque no es óptimo para ASR), whisper.cpp, HuggingFace Inference Endpoints, o servicios como Replicate.
+- Opciones de despliegue: transformers con pipeline de ASR, vLLM (aunque no es óptimo para ASR), whisper.cpp, Hugging Face Inference Endpoints, o servicios como Replicate.
 - Latencia y throughput: no disponible, pero para whisper-large-v3 en A100 se reportan tiempos de inferencia de aproximadamente 1-2 segundos por 30 segundos de audio en fp16.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-large-v3 (base) | 1.5B | 30 s audio | 99 idiomas | MIT (código) / modelo con licencia OpenAI | HuggingFace |
-| whisper-large-v3-finetuned-kinyarwanda (v2.0) | 1.5B | 30 s audio | kinyarwanda estándar | no disponible | HuggingFace |
-| Este modelo | 1.5B | no disponible | ruandés e inglés no estándar | no disponible | HuggingFace |
+| whisper-large-v3 (base) | 1.5B | 30 s audio | 99 idiomas | MIT (código) / modelo con licencia OpenAI | Hugging Face |
+| whisper-large-v3-finetuned-kinyarwanda (v2.0) | 1.5B | 30 s audio | kinyarwanda estándar | no disponible | Hugging Face |
+| Este modelo | 1.5B | no disponible | ruandés e inglés no estándar | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia con el modelo base es el ajuste fino para habla no estándar, aunque no se han publicado métricas que lo demuestren.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ElizabethMwangi/whisper-large-v3_finetuned_rwandan_english_nonstandard_speech_v1.0
+- Hugging Face: https://huggingface.co/ElizabethMwangi/whisper-large-v3_finetuned_rwandan_english_nonstandard_speech_v1.0
 - Modelo relacionado (kinyarwanda estándar): https://huggingface.co/ElizabethMwangi/whisper-large-v3_finetuned_kinyarwanda_standard_speech_v2.0/tree/main
 - Referencia de Whisper (paper): https://arxiv.org/abs/1910.09700 (enlace al paper de Lacoste et al., no al paper original de Whisper; el paper de Whisper es "Robust Speech Recognition via Large-Scale Weak Supervision", arXiv:2212.04356, pero no se ha incluido en la información proporcionada)

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Arekkusul/krea-2-raw-distill-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/Arekkusul/krea-2-raw-distill-lora
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia (LICENSE.pdf): https://huggingface.co/Arekkusul/krea-2-raw-distill-lora/blob/main/LICENSE.pdf
 - Paper de referencia del metodo (Salimans y Ho, 2022, "Progressive Distillation for Fast Sampling of Diffusion Models"): https://arxiv.org/abs/2202.00512

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eeshsaxena/ai-or-not-models` es un repositorio publicado en HuggingFace por el usuario eeshsaxena bajo una licencia de tipo "other" con todos los derechos reservados y acceso restringido (gated). El nombre del repositorio sugiere que su proposito es la deteccion de contenido generado por IA ("AI or not"), es decir, un clasificador o conjunto de modelos orientados a distinguir texto o contenido artificial de contenido humano. No obstante, la informacion publica disponible no incluye una model card descriptiva, pipeline declarado ni idiomas soportados.
+`eeshsaxena/ai-or-not-models` es un repositorio publicado en Hugging Face por el usuario eeshsaxena bajo una licencia de tipo "other" con todos los derechos reservados y acceso restringido (gated). El nombre del repositorio sugiere que su proposito es la deteccion de contenido generado por IA ("AI or not"), es decir, un clasificador o conjunto de modelos orientados a distinguir texto o contenido artificial de contenido humano. No obstante, la informacion publica disponible no incluye una model card descriptiva, pipeline declarado ni idiomas soportados.
 
 El repositorio ocupa 2,9 GB, un tamano compatible con pesos de un modelo transformer de escala media (del orden de cientos de millones a pocos miles de millones de parametros) o con un conjunto de varios checkpoints empaquetados. Sin embargo, no se especifica la arquitectura, el numero de parametros, la longitud de contexto ni el formato de los pesos, por lo que estas cifras no pueden confirmarse.
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, sesgos ni limitaciones conocidas.
-- Licencia "all-rights-reserved" con acceso gated: el uso comercial esta restringido y requiere aceptar condiciones en HuggingFace; no se garantiza permiso de redistribucion ni de modificacion.
+- Licencia "all-rights-reserved" con acceso gated: el uso comercial esta restringido y requiere aceptar condiciones en Hugging Face; no se garantiza permiso de redistribucion ni de modificacion.
 - Riesgo elevado de alucinacion o clasificacion erronea no cuantificado: sin benchmarks, no es posible estimar la tasa de falsos positivos y falsos negativos.
 - Idiomas soportados desconocidos: no se puede asumir cobertura multilingue.
 - Sin pipeline declarado: la tarea exacta del modelo no esta confirmada.
@@ -76,4 +76,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eeshsaxena/ai-or-not-models
+- Repositorio en Hugging Face: https://huggingface.co/eeshsaxena/ai-or-not-models

@@ -76,7 +76,7 @@ La información disponible solo permite comparar dentro de la propia familia Agn
 |---|---|---|---|---|---|
 | hermitdave/Agnes-3.0-Flash-MLX-8bit | 32,2 B | 262.144 tokens | Afín 8 bits MLX, safetensors fp16, ~32 GB | Apache-2.0 | Repositorio MLX, 0 descargas y 0 likes en el momento de la consulta |
 | hermitdave/Agnes-3.0-Flash-MLX-4bit | No disponible | No disponible | MLX 4 bits | Apache-2.0 (heredada del modelo base, según la información disponible) | Citada como referencia de validación por el autor |
-| Agnes-AI/Agnes-3.0-Flash (base) | No disponible | 262.144 tokens (según la conversión) | Formato original Agnes, incluye torre de visión y cabeza MTP | Apache-2.0 | Modelo original en HuggingFace |
+| Agnes-AI/Agnes-3.0-Flash (base) | No disponible | 262.144 tokens (según la conversión) | Formato original Agnes, incluye torre de visión y cabeza MTP | Apache-2.0 | Modelo original en Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (32B con contexto de 256K) en la información proporcionada.
 
@@ -94,11 +94,11 @@ No se dispone de datos de otros modelos comparables de la misma categoría (32B 
 - Compatibilidad restringida al ecosistema MLX / Apple Silicon; no se ofrece GGUF, GPTQ, AWQ ni pesos para vLLM o TGI.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta: no hay validación independiente por parte de la comunidad.
 - Licencia Apache-2.0 permite uso comercial, pero se recomienda verificar los términos del modelo base y las atribuciones indicadas por el autor de la conversión.
-- La fecha de creación del repositorio figura como 2026-09-13, dato que procede de la ficha de HuggingFace y que conviene contrastar.
+- La fecha de creación del repositorio figura como 2026-09-13, dato que procede de la ficha de Hugging Face y que conviene contrastar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MLX-8bit
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Drafter MTP para decodificación especulativa: https://huggingface.co/hermitdave/Agnes-3.0-Flash-MTP-drafter
 - Hermes Agent (Nous Research): https://hermes-agent.nousresearch.com

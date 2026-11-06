@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Goghor/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-INT8-W8A16-MTP` es un artefacto publicado en HuggingFace por el usuario Goghor, con un total real de 27.781.427.952 parametros (unos 27,78 mil millones) verificado a partir de los ficheros safetensors. La etiqueta de arquitectura declarada en el repositorio es `qwen3_5`, lo que apunta a que deriva de la familia Qwen3.5, aunque no se proporciona ninguna model card con informacion tecnica: el README se limita a la declaracion de licencia Apache-2.0. El nombre del repositorio sugiere una fusion de fine-tunes (los fragmentos "Fable", "Cold Fusion", "735-882") sobre una base Qwen, con una capa de desalineacion de seguridad ("Heretic-Uncensored"), y una cuantizacion a INT8 con activaciones en W8A16 mediante el formato `compressed-tensors`.
+El modelo identificado como `Goghor/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-INT8-W8A16-MTP` es un artefacto publicado en Hugging Face por el usuario Goghor, con un total real de 27.781.427.952 parametros (unos 27,78 mil millones) verificado a partir de los ficheros safetensors. La etiqueta de arquitectura declarada en el repositorio es `qwen3_5`, lo que apunta a que deriva de la familia Qwen3.5, aunque no se proporciona ninguna model card con informacion tecnica: el README se limita a la declaracion de licencia Apache-2.0. El nombre del repositorio sugiere una fusion de fine-tunes (los fragmentos "Fable", "Cold Fusion", "735-882") sobre una base Qwen, con una capa de desalineacion de seguridad ("Heretic-Uncensored"), y una cuantizacion a INT8 con activaciones en W8A16 mediante el formato `compressed-tensors`.
 
 El interes de este tipo de publicaciones es doble. Por un lado, documenta un flujo de trabajo habitual en la comunidad: tomar un modelo base grande, aplicar merges de pesos entre adaptadores o checkpoints afinados, y redistribuirlo ya cuantizado para reducir el coste de despliegue. Por otro, es un ejemplo claro de artefacto de trazabilidad baja: cero descargas, cero valoraciones, sin pipeline declarado, sin idiomas declarados, sin datos de entrenamiento y sin benchmarks. El sufijo "MTP" podria indicar soporte de multi-token prediction, pero no hay documentacion que lo confirme.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como un analisis de lo que el repositorio decl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de HuggingFace es `qwen3_5`, lo que sugiere un transformer decoder-only de la familia Qwen3.5; no hay confirmacion del autor |
+| Arquitectura | No disponible. La etiqueta de Hugging Face es `qwen3_5`, lo que sugiere un transformer decoder-only de la familia Qwen3.5; no hay confirmacion del autor |
 | Parametros totales | 27.781.427.952 (~27,78 B), dato real de los safetensors |
 | Parametros activos | No aplica / no disponible. No hay indicios de arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -40,7 +40,7 @@ La parte verificable es el pipeline de cuantizacion: los pesos estan almacenados
 - Vision o audio: no disponible; la etiqueta del repositorio apunta a un modelo de texto.
 - Tool calling / function calling: no disponible; no se declara soporte ni plantilla de chat.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el campo de idiomas de la ficha de HuggingFace esta vacio.
+- Capacidades multilingues: no disponibles; el campo de idiomas de la ficha de Hugging Face esta vacio.
 - Modo de razonamiento explicito (thinking mode): no disponible, aunque es una caracteristica comun en la familia Qwen3.
 - Decodificacion especulativa o multi-token prediction: posible por el sufijo "MTP" del nombre, sin confirmar.
 - Comportamiento sin filtros de seguridad: implicito en los terminos "Uncensored" y "Heretic" del nombre; no hay documentacion sobre el alcance de esa desalineacion.
@@ -94,5 +94,5 @@ Nota: los datos de las alternativas proceden de sus fichas publicas y pueden var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Goghor/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-INT8-W8A16-MTP
+- Modelo en Hugging Face: https://huggingface.co/Goghor/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-INT8-W8A16-MTP
 - Paper, blog, repositorio o demo oficial: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces encontrados no guardan relacion con el artefacto y se han descartado.

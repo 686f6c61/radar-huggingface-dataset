@@ -67,7 +67,7 @@ Nota: los valores de MMLU de los modelos base son orientativos y no se han contr
 - **Falta de documentación**: no se proporciona información sobre el dataset, los hiperparámetros, o el propósito exacto del fine-tune, lo que dificulta su uso responsable.
 
 ## Enlaces
-- [HuggingFace - localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3)
-- [HuggingFace - unsloth/Qwen3-8B (modelo base)](https://huggingface.co/unsloth/Qwen3-8B)
+- [Hugging Face - localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-first-third-sft-seed4-epoch3)
+- [Hugging Face - unsloth/Qwen3-8B (modelo base)](https://huggingface.co/unsloth/Qwen3-8B)
 - [Documentación de Unsloth para Qwen3](https://unsloth.ai/docs/models/qwen3.8)
 - [Modelo similar de longtermrisk (otro fine-tune)](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-epoch3)

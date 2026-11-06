@@ -4,7 +4,7 @@
 
 Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0 es una variante modificada del modelo agéntico compacto Nanbeige4.2-3B, creada por el usuario msuiche. El modelo base, desarrollado por el equipo de Nanbeige, es un transformer de 3B parámetros no-embedding preentrenado desde cero sobre 28 billones de tokens, con una arquitectura Looped Transformer que reutiliza la pila de capas para aumentar la capacidad sin añadir parámetros. Esta variante aplica técnicas de abliteración y activación de vectores de control (control-vector) para eliminar los rechazos y la censura del modelo original, quedando etiquetada como «uncensored».
 
-El resultado es un modelo con capacidades agénticas y de razonamiento en matemáticas, código y ciencia, pero con una capa de modificación orientada a eliminar las restricciones de contenido. El repositorio incluye pesos en formato safetensors y GGUF, y el acceso está restringido mediante gating en HuggingFace. La relevancia de este modelo radica en su tamaño compacto y en la exploración de técnicas de representación engineering aplicadas a un modelo base de código abierto.
+El resultado es un modelo con capacidades agénticas y de razonamiento en matemáticas, código y ciencia, pero con una capa de modificación orientada a eliminar las restricciones de contenido. El repositorio incluye pesos en formato safetensors y GGUF, y el acceso está restringido mediante gating en Hugging Face. La relevancia de este modelo radica en su tamaño compacto y en la exploración de técnicas de representación engineering aplicadas a un modelo base de código abierto.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No disponible. No se han encontrado datos comparativos concretos entre esta vari
 ## Limitaciones y advertencias
 
 - La abliteracion elimina rechazos de seguridad, lo que puede generar contenido danino, ilegal o eticamente problematico. Debe desplegarse con sistemas de moderacion externos.
-- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - El archivo safetensors del repositorio tiene solo 135.168 parametros, lo que sugiere que podria tratarse de un adaptador o vector de control, no de un modelo completo. Para obtener el modelo de 3B completo es necesario combinar con el modelo base.
 - No se han publicado benchmarks ni evaluaciones de seguridad para esta variante, por lo que se desconocen sus sesgos y su tasa de alucinacion.
 - El modelo base esta entrenado principalmente en ingles y chino; su rendimiento en otros idiomas puede ser limitado.
@@ -70,6 +70,6 @@ No disponible. No se han encontrado datos comparativos concretos entre esta vari
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msuiche/Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0
+- Hugging Face: https://huggingface.co/msuiche/Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0
 - Paper del modelo base: https://arxiv.org/abs/2607.22083
-- Modelo base en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
+- Modelo base en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.2-3B

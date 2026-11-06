@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wayne-King/echo-memory-context-k1-full
+- Hugging Face: https://huggingface.co/Wayne-King/echo-memory-context-k1-full
 - Paper: https://arxiv.org/abs/2606.09803
 - PDF del paper: https://arxiv.org/pdf/2606.09803v1
 - Código oficial: https://github.com/Echo-Team-Joy-Future-Academy-JD/Echo-Memory

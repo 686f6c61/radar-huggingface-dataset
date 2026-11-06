@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sarah012/trocr-rx-medinteract` es un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR, publicado en HuggingFace por el usuario `sarah012` el 6 de octubre de 2026. El identificador del repositorio y la etiqueta `arxiv:1910.09700`, que corresponde al articulo original de TrOCR (Li et al., 2021), permiten situarlo como un fine-tuning de la familia TrOCR orientado, segun sugiere el sufijo `rx-medinteract`, a texto de ambito farmaceutico o de recetas medicas. Se trata de una hipotesis razonable a partir del nombre, no de un dato confirmado por el autor.
+`sarah012/trocr-rx-medinteract` es un modelo de reconocimiento optico de caracteres (OCR) basado en la arquitectura TrOCR, publicado en Hugging Face por el usuario `sarah012` el 6 de octubre de 2026. El identificador del repositorio y la etiqueta `arxiv:1910.09700`, que corresponde al articulo original de TrOCR (Li et al., 2021), permiten situarlo como un fine-tuning de la familia TrOCR orientado, segun sugiere el sufijo `rx-medinteract`, a texto de ambito farmaceutico o de recetas medicas. Se trata de una hipotesis razonable a partir del nombre, no de un dato confirmado por el autor.
 
 El modelo tiene 333.921.792 parametros, un tamano que coincide practicamente con el checkpoint TrOCR-base de referencia, y una arquitectura `vision-encoder-decoder` con pipeline `image-text-to-text`. El repositorio ocupa 1,3 GB y contiene pesos en formato `safetensors`, compatible con la libreria `transformers`.
 
-La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo con 0 descargas y 0 likes, cuya model card es la plantilla autogenerada de HuggingFace sin ningun campo completado. No hay informacion publica sobre datos de entrenamiento, licencia, idiomas, benchmarks ni procedencia del fine-tuning, por lo que cualquier evaluacion seria de su calidad en produccion requiere una validacion empirica por parte del usuario.
+La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo con 0 descargas y 0 likes, cuya model card es la plantilla autogenerada de Hugging Face sin ningun campo completado. No hay informacion publica sobre datos de entrenamiento, licencia, idiomas, benchmarks ni procedencia del fine-tuning, por lo que cualquier evaluacion seria de su calidad en produccion requiere una validacion empirica por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo 
 
 La etiqueta `vision-encoder-decoder` y la referencia al paper `arxiv:1910.09700` apuntan a la arquitectura TrOCR: un encoder de vision tipo ViT/DeiT que procesa la imagen y un decoder Transformer autorregresivo (estilo RoBERTa o GPT-2 segun la variante) que genera la secuencia de texto. El recuento de parametros, 333,9 M, es practicamente identico al del checkpoint TrOCR-base publicado por Microsoft, lo que sugiere que este repositorio parte de ese checkpoint y ha sido ajustado (fine-tuning) sobre un conjunto de datos propio. En la implementacion de referencia de TrOCR la decodificacion se limita habitualmente a 512 tokens, pero este extremo no esta confirmado para este checkpoint concreto.
 
-No hay ninguna informacion disponible sobre el proceso de entrenamiento: se desconocen el numero de tokens o imagenes utilizados, la composicion del dataset, si hubo aumento de datos, que esquema de optimizacion se aplico y si se realizo algun ajuste posterior tipo RLHF o DPO (poco habitual en modelos OCR). Tampoco se documentan hiperparametros, precision de entrenamiento (fp32, fp16, bf16) ni hardware empleado. La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que no existe ninguna innovacion tecnica declarada por el autor.
+No hay ninguna informacion disponible sobre el proceso de entrenamiento: se desconocen el numero de tokens o imagenes utilizados, la composicion del dataset, si hubo aumento de datos, que esquema de optimizacion se aplico y si se realizo algun ajuste posterior tipo RLHF o DPO (poco habitual en modelos OCR). Tampoco se documentan hiperparametros, precision de entrenamiento (fp32, fp16, bf16) ni hardware empleado. La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que no existe ninguna innovacion tecnica declarada por el autor.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ La model card no incluye ninguna seccion de evaluacion completada, y la busqueda
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sarah012/trocr-rx-medinteract` | 333,9 M | vision-encoder-decoder (TrOCR) | no disponible | no disponible | HuggingFace, 0 descargas |
+| `sarah012/trocr-rx-medinteract` | 333,9 M | vision-encoder-decoder (TrOCR) | no disponible | no disponible | Hugging Face, 0 descargas |
 | `microsoft/trocr-base-printed` | ~334 M (aprox., segun model card publica) | vision-encoder-decoder (TrOCR) | ~512 tokens de decodificacion en la configuracion de referencia | MIT (segun su model card publica) | Ampliamente usado, muy descargado |
 | `microsoft/trocr-large-printed` | ~558 M (aprox., segun model card publica) | vision-encoder-decoder (TrOCR) | ~512 tokens de decodificacion en la configuracion de referencia | MIT (segun su model card publica) | Ampliamente usado |
 | `naver-clova-ix/donut-base` | ~200 M (aprox.) | vision-encoder-decoder (Swin + BART) con salida estructurada | ~768 tokens (aprox.) | MIT (segun su model card publica) | Usado para parsing de documentos |
@@ -93,7 +93,7 @@ Los datos de los modelos de comparacion proceden de sus model cards publicas y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarah012/trocr-rx-medinteract
+- Modelo en Hugging Face: https://huggingface.co/sarah012/trocr-rx-medinteract
 - Paper de la arquitectura TrOCR (referenciado en las etiquetas del modelo, `arxiv:1910.09700`): https://arxiv.org/abs/1910.09700
 - Checkpoint base de referencia de la familia: https://huggingface.co/microsoft/trocr-base-printed
 - Variante de mayor tamano de la misma familia: https://huggingface.co/microsoft/trocr-large-printed

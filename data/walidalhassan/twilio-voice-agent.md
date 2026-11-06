@@ -75,11 +75,11 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 - No hay soporte para llamadas entrantes en el codigo actual; solo salientes.
 - La base de datos SQLite por defecto no es adecuada para multiples instancias en produccion; se recomienda Postgres via Docker Compose.
 - No se especifica la licencia del repositorio, lo que limita su uso comercial sin autorizacion explicita del autor.
-- El proyecto parece estar en fase inicial (creado en agosto de 2026) y no tiene descargas ni valoraciones en HuggingFace, por lo que su madurez no esta contrastada.
+- El proyecto parece estar en fase inicial (creado en agosto de 2026) y no tiene descargas ni valoraciones en Hugging Face, por lo que su madurez no esta contrastada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WalidAlHassan/twilio-voice-agent
+- Repositorio en Hugging Face: https://huggingface.co/WalidAlHassan/twilio-voice-agent
 - Documentacion de Twilio Virtual Agent: https://www.twilio.com/docs/voice/virtual-agent
 - Tutorial de Twilio Conversation Relay con OpenAI: https://www.twilio.com/en-us/blog/developers/tutorials/product/ai-phone-agent-twilio-conversation-relay
 - Repositorio relacionado del mismo autor: https://huggingface.co/WalidAlHassan/AI-AGENTS

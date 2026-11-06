@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un modelo de generacion de texto de 124,77 millones de parametros publicado por el usuario `francesca9805` en HuggingFace. Se trata de un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10`, entrenado con la libreria TRL sobre una arquitectura de tipo GPT-2, segun los tags del repositorio. El identificador sugiere un experimento sobre corpora en chino mandarin simplificado (`zho-Hans`) con un presupuesto de aproximadamente 100 MB y variantes de tokenizador, aunque la model card no declara idioma ni dataset.
+`zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10` es un modelo de generacion de texto de 124,77 millones de parametros publicado por el usuario `francesca9805` en Hugging Face. Se trata de un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10`, entrenado con la libreria TRL sobre una arquitectura de tipo GPT-2, segun los tags del repositorio. El identificador sugiere un experimento sobre corpora en chino mandarin simplificado (`zho-Hans`) con un presupuesto de aproximadamente 100 MB y variantes de tokenizador, aunque la model card no declara idioma ni dataset.
 
 El modelo no documenta longitud de contexto, licencia, idiomas ni resultados de evaluacion. La informacion disponible se limita a la procedencia (fine-tune via TRL 0.23.0 con Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1), al run de Weights & Biases asociado al proyecto `new-tokenizers` y a un ejemplo de uso con `pipeline` de Transformers.
 
@@ -72,7 +72,7 @@ Los datos de las alternativas son de referencia general y no proceden de la info
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | SFT con TRL, sin evaluacion publicada |
+| Este modelo | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | SFT con TRL, sin evaluacion publicada |
 | GPT-2 small | 124 M | 1.024 tokens | MIT | Amplia, ampliamente evaluado | Referencia de la misma familia y tamano |
 | DistilGPT-2 | 82 M | 1.024 tokens | MIT | Amplia | Destilado, menor coste, misma categoria |
 | GPT-2 medium | 355 M | 1.024 tokens | MIT | Amplia | Mayor capacidad con coste aun contenido |
@@ -95,7 +95,7 @@ La diferencia practica frente a estas alternativas no esta en el rendimiento, qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-bcc-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xdcvb3xx
 - Repositorio de TRL: https://github.com/huggingface/trl

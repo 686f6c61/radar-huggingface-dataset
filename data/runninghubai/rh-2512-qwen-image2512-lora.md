@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otros LoRAs comparables n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-2512-qwen-image2512-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-2512-qwen-image2512-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2016536732472184833
 - Pagina del autor: https://www.runninghub.ai/user-center/2016131754699788289
 - Demostracion en linea: https://www.runninghub.ai/ai-detail/2016538356120821761

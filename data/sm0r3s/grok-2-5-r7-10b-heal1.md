@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grok-2.5 R7 es un artefacto de investigación publicado por el usuario Sm0r3s en HuggingFace: una poda estructurada del modelo `xai-org/grok-2` (aproximadamente 268B parámetros) reducida a 10.471.348.224 parámetros totales, con 6.04B activos por token gracias a su arquitectura MoE. El autor lo describe explícitamente como "no un asistente usable", sino una prueba de concepto sobre hasta dónde se puede comprimir un modelo de mezcla de expertos de gran escala mediante poda por importancia de activaciones y destilación capa a capa desde el modelo original.
+Grok-2.5 R7 es un artefacto de investigación publicado por el usuario Sm0r3s en Hugging Face: una poda estructurada del modelo `xai-org/grok-2` (aproximadamente 268B parámetros) reducida a 10.471.348.224 parámetros totales, con 6.04B activos por token gracias a su arquitectura MoE. El autor lo describe explícitamente como "no un asistente usable", sino una prueba de concepto sobre hasta dónde se puede comprimir un modelo de mezcla de expertos de gran escala mediante poda por importancia de activaciones y destilación capa a capa desde el modelo original.
 
 El checkpoint se distribuye como pesos en safetensors en bf16 (repositorio de 22,6 GB), con nombres de tensor compatibles con el layout de Grok-2 pero sin sharding de paralelismo tensorial. No se ha evaluado en benchmarks estándar; el único dato de calidad publicado es la perplejidad sobre un conjunto held-out, que pasa de 25.317 inmediatamente después de la poda a 603 en este checkpoint, frente a aproximadamente 6 del Grok-2.5 original.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto | Calidad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grok-2.5 R7 10B (este) | 10,47B totales / 6,04B activos | no disponible | Perplejidad held-out 603; sin benchmarks | xAI Community License | HuggingFace, runner de referencia |
-| Grok-2 original (`xai-org/grok-2`) | ~268B | no disponible en la informacion | Perplejidad ~6 (referencia del autor) | xAI Community License | HuggingFace |
+| Grok-2.5 R7 10B (este) | 10,47B totales / 6,04B activos | no disponible | Perplejidad held-out 603; sin benchmarks | xAI Community License | Hugging Face, runner de referencia |
+| Grok-2 original (`xai-org/grok-2`) | ~268B | no disponible en la informacion | Perplejidad ~6 (referencia del autor) | xAI Community License | Hugging Face |
 | Alternativas de ~10B densos o MoE de código abierto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para comparar con modelos de tamaño similar de otras familias; cualquier comparación numérica sería especulativa.
@@ -92,7 +92,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sm0r3s/grok-2.5-r7-10b-heal1
+- Hugging Face: https://huggingface.co/Sm0r3s/grok-2.5-r7-10b-heal1
 - Modelo base: https://huggingface.co/xai-org/grok-2
 - Tokenizer recomendado: https://huggingface.co/alvarobartt/grok-2-tokenizer
 - Licencia xAI Community License: incluida en el repositorio como `LICENSE` y `NOTICE`

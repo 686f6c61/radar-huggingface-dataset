@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EVA01 Unified All-Task Generation LoRA es un paquete de adaptadores LoRA publicado por SEELE-AI para el runtime EVA01 Unified MoT. A diferencia de un modelo de lenguaje convencional, este repositorio no contiene pesos de un transformer generativo completo, sino únicamente los parametros de generacion necesarios para ejecutar tareas de text-to-3D e image-to-3D sobre una cascada nativa denominada `SS -> Shape -> Material`. El pipeline declarado en HuggingFace es `text-to-3d`, lo que lo situa en la categoria de modelos de generacion de activos 3D.
+EVA01 Unified All-Task Generation LoRA es un paquete de adaptadores LoRA publicado por SEELE-AI para el runtime EVA01 Unified MoT. A diferencia de un modelo de lenguaje convencional, este repositorio no contiene pesos de un transformer generativo completo, sino únicamente los parametros de generacion necesarios para ejecutar tareas de text-to-3D e image-to-3D sobre una cascada nativa denominada `SS -> Shape -> Material`. El pipeline declarado en Hugging Face es `text-to-3d`, lo que lo situa en la categoria de modelos de generacion de activos 3D.
 
 El bundle esta disenado para combinarse con componentes congelados que el autor no incluye: Qwen3-VL, TRELLIS, TRELLIS.2, el tokenizer, la normalizacion y los assets del decoder. Por tanto, no es un modelo autonomo ni se puede cargar con `transformers` o `diffusers` de forma directa; requiere el runtime OpenEVA descrito en el repositorio de GitHub del autor. El repositorio ocupa 0,6 GB y los pesos se distribuyen en formato safetensors bajo licencia Apache 2.0.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVA01 Unified All-Task Generation LoRA | no disponible (LoRA de 0,6 GB) | no disponible | text-to-3D, image-to-3D | Apache 2.0 | HuggingFace + runtime OpenEVA |
+| EVA01 Unified All-Task Generation LoRA | no disponible (LoRA de 0,6 GB) | no disponible | text-to-3D, image-to-3D | Apache 2.0 | Hugging Face + runtime OpenEVA |
 | TRELLIS / TRELLIS.2 | no disponible en la informacion | no disponible | generacion 3D | no disponible en la informacion | requerido como componente externo |
 | Qwen3-VL | no disponible en la informacion | no disponible | vision-lenguaje | no disponible en la informacion | requerido como componente externo |
 
@@ -84,5 +84,5 @@ No se dispone de datos suficientes para comparar parametros, contexto, rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation-LoRA
+- Hugging Face: https://huggingface.co/SEELE-AI/EVA01-Unified-All-Task-Generation-LoRA
 - Repositorio OpenEVA: https://github.com/SeeleAI/OpenEVA

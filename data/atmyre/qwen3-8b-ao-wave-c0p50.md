@@ -25,7 +25,7 @@ El modelo es un adaptador LoRA aplicado sobre Qwen3-8B. El entrenamiento sigue l
 
 - Interpretabilidad de activaciones: el adaptador permite explicar qué representan las activaciones internas del modelo base en relación con el concepto "wave".
 - Análisis de conceptos: diseñado para estudiar cómo se codifica un concepto concreto (wave) en un modelo de lenguaje.
-- Compatibilidad con PEFT: se carga fácilmente con `PeftModel` de HuggingFace Transformers.
+- Compatibilidad con PEFT: se carga fácilmente con `PeftModel` de Hugging Face Transformers.
 - Uso en investigación: orientado a experimentos de interpretabilidad y análisis mecanicista.
 - No es un modelo generativo independiente: requiere el modelo base Qwen3-8B para funcionar.
 - No se documentan capacidades de tool calling, agentes, visión o audio.
@@ -66,7 +66,7 @@ No se dispone de información sobre otros adaptadores Activation Oracle comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c0p50
 - Paper de Activation Oracles: https://arxiv.org/abs/2512.15674
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Adaptador base AO (referenciado): https://huggingface.co/Atmyre/qwen3-8b-ao-base

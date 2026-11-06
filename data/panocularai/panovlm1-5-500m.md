@@ -99,7 +99,7 @@ La comparacion cuantitativa de rendimiento con alternativas de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PanocularAI/PanoVLM1.5-500M
+- Modelo en Hugging Face: https://huggingface.co/PanocularAI/PanoVLM1.5-500M
 - Modelo de lenguaje base: https://huggingface.co/PanocularAI/PanoLM1.5-400M
 - lmms-eval (framework de evaluacion): https://github.com/EvolvingLMMs-Lab/lmms-eval
 - flash-linear-attention: https://github.com/fla-org/flash-linear-attention

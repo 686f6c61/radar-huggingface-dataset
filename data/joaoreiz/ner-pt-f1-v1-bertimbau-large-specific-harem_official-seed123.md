@@ -72,8 +72,8 @@ Nota: los datos de parámetros de los modelos base se estiman de la documentaci�
 
 ## Enlaces
 
-- [HuggingFace: JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed123)
-- [HuggingFace: versión base del mismo autor](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-harem_official-seed123)
+- [Hugging Face: JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-harem_official-seed123)
+- [Hugging Face: versión base del mismo autor](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-base-specific-harem_official-seed123)
 - [GitHub: portuguese-Bertimbau (repositorio de BERTimbau)](https://github.com/ClaudioSS01/portuguese-Bertimbau)
 - [Artículo académico: BERTimbau - Pretrained BERT Models for Brazilian Portuguese](https://dl.acm.org/doi/10.1007/978-3-030-61377-8_28)
 - [Repositorio CLARIN: BERTimbau Portuguese BERT-Base](https://portulanclarin.net/repository/browse/bertimbau-portuguese-bert-base-language-model/486edb32e93711ebabf702420a8701536b383b588f2f4c85b13b4d04c2867a4b/)

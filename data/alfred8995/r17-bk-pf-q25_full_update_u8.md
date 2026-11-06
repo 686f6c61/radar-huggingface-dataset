@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q25_full_update_u8` es un checkpoint de algo más de 1.540 millones de parámetros publicado por el usuario alfred8995 en HuggingFace. El tag `qwen2` del repositorio indica que los pesos derivan de la familia Qwen2, y el nombre del repositorio (combinación de identificadores `r17`, `bk`, `pf`, `q25`, `full_update`) apunta a un artefacto de ajuste fino, fusión de pesos o actualización incremental antes que a un modelo entrenado desde cero. No hay model card, ni pipeline declarado, ni idiomas indicados.
+`alfred8995/r17-bk-pf-q25_full_update_u8` es un checkpoint de algo más de 1.540 millones de parámetros publicado por el usuario alfred8995 en Hugging Face. El tag `qwen2` del repositorio indica que los pesos derivan de la familia Qwen2, y el nombre del repositorio (combinación de identificadores `r17`, `bk`, `pf`, `q25`, `full_update`) apunta a un artefacto de ajuste fino, fusión de pesos o actualización incremental antes que a un modelo entrenado desde cero. No hay model card, ni pipeline declarado, ni idiomas indicados.
 
 El repositorio tiene un tamaño de 3,1 GB, coherente con 1.543.714.304 parámetros almacenados en precisión de 16 bits (≈3,09 GB solo de pesos), lo que confirma que no se distribuye ninguna variante cuantizada. La fecha de creación y la de última actualización están separadas por 23 segundos, las descargas y los "likes" son cero y el acceso está restringido (gated), por lo que se trata de un artefacto recién subido, sin validación comunitaria ni documentación asociada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `alfred8995/r17-bk-pf-q25_full_update_u8` | 1.543.714.304 (verificado en safetensors) | No disponible | `other` (personalizada, acceso gated) | HuggingFace, acceso restringido, 0 descargas |
-| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens (declarado por el autor del modelo base) | Apache-2.0 | HuggingFace, acceso abierto |
-| Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens (declarado por el autor) | Licencia comunitaria Llama 3.2 | HuggingFace, acceso con aceptación de términos |
-| Gemma-2-2B-it | ~2,6B | 8.192 tokens (declarado por el autor) | Términos de uso de Gemma | HuggingFace, acceso con aceptación de términos |
+| `alfred8995/r17-bk-pf-q25_full_update_u8` | 1.543.714.304 (verificado en safetensors) | No disponible | `other` (personalizada, acceso gated) | Hugging Face, acceso restringido, 0 descargas |
+| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens (declarado por el autor del modelo base) | Apache-2.0 | Hugging Face, acceso abierto |
+| Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens (declarado por el autor) | Licencia comunitaria Llama 3.2 | Hugging Face, acceso con aceptación de términos |
+| Gemma-2-2B-it | ~2,6B | 8.192 tokens (declarado por el autor) | Términos de uso de Gemma | Hugging Face, acceso con aceptación de términos |
 
 Los datos de contexto y licencia de las tres alternativas corresponden a lo declarado por sus respectivos autores y no se han verificado en el marco de esta ficha. El modelo analizado no permite comparación de rendimiento porque no publica ninguna métrica; en la práctica, las alternativas citadas son la referencia natural para decidir si este checkpoint aporta alguna ventaja.
 
@@ -77,7 +77,7 @@ Los datos de contexto y licencia de las tres alternativas corresponden a lo decl
 
 - Ausencia total de documentación: no hay model card, ni descripción del dataset, ni instrucciones de uso, lo que impide conocer qué se ha entrenado y con qué objetivos.
 - Licencia `other` sin texto identificable en la información disponible: no se puede confirmar si el uso comercial está permitido. Tratar como no apto para producción hasta aclararlo con el autor.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que añade una dependencia operativa para pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que añade una dependencia operativa para pipelines automatizados.
 - Riesgo elevado de alucinación y de comportamiento impredecible: al desconocerse el ajuste, no se puede asumir que conserve la alineación del Qwen2 original.
 - Idiomas no declarados: no hay garantía de competencia multilingüe ni de un español de calidad.
 - Ventana de contexto desconocida: planificar cualquier integración asumiendo un límite conservador hasta verificarlo empíricamente.
@@ -88,6 +88,6 @@ Los datos de contexto y licencia de las tres alternativas corresponden a lo decl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q25_full_update_u8
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q25_full_update_u8
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. No se dispone de enlace al modelo base Qwen2 del que supuestamente deriva, ni de repositorio de código asociado.

@@ -92,7 +92,7 @@ No hay checkpoints públicos comparables en la información proporcionada: el ú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9
+- Modelo en Hugging Face: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9
 - Configuración de la ejecución: `config.yaml` dentro del repositorio (https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9/blob/main/config.yaml)
 - Pérdida por dominio: `DOMAIN_NLL.txt` dentro del repositorio (https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9/blob/main/DOMAIN_NLL.txt)
 - Checkpoint Megatron: carpeta `checkpoint/` del repositorio

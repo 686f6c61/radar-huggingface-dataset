@@ -74,6 +74,6 @@ Ambos son checkpoints de cirugía del mismo autor, con reducciones diferentes se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy
+- Repositorio Hugging Face: https://huggingface.co/imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy
 - Modelo donante oficial: https://huggingface.co/zai-org/GLM-5.2
 - Checkpoint similar (GLM-5.3-Flash-9B-Surgery-Dummy): https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy

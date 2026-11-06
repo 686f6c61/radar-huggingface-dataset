@@ -77,7 +77,7 @@ La comparativa se limita a las conversiones MLX disponibles y al modelo original
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-30b-bf16-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-30b-bf16-mlx
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MishraNepali/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-Q3_K_M
+- Repositorio Hugging Face: https://huggingface.co/MishraNepali/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-Q3_K_M
 - Modelo padre (DavidAU): https://huggingface.co/DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC
 - Modelo base original (Mistral Nemo): https://huggingface.co/mistralai/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC (referenciado como base_model en la model card)
 - llama.cpp: https://github.com/ggerganov/llama.cpp

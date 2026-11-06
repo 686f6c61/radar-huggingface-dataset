@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gptforfree/GPT-6-Astra` en HuggingFace no contiene ningún modelo de IA. Su model card es una parodia explícita que advierte al usuario de que no hay pesos, código, tokenizador ni infraestructura de inferencia. Aunque la búsqueda web indica que OpenAI ha publicado un modelo propietario llamado GPT-6 Astra, este repositorio no está afiliado a OpenAI y no ofrece acceso a ese modelo. La única función real del repositorio es satírica y educativa: demostrar que un nombre convincente en HuggingFace no garantiza la existencia de un modelo. Por tanto, no es posible evaluar arquitectura, rendimiento ni capacidades de inferencia.
+El repositorio `gptforfree/GPT-6-Astra` en Hugging Face no contiene ningún modelo de IA. Su model card es una parodia explícita que advierte al usuario de que no hay pesos, código, tokenizador ni infraestructura de inferencia. Aunque la búsqueda web indica que OpenAI ha publicado un modelo propietario llamado GPT-6 Astra, este repositorio no está afiliado a OpenAI y no ofrece acceso a ese modelo. La única función real del repositorio es satírica y educativa: demostrar que un nombre convincente en Hugging Face no garantiza la existencia de un modelo. Por tanto, no es posible evaluar arquitectura, rendimiento ni capacidades de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio `gptforfree/GPT-6-Astra` en HuggingFace no contiene ningún model
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura ni proceso de entrenamiento. El README describe de forma humorística una "arquitectura avanzada de cero parámetros" cuyo flujo es: encontrar el enlace de HuggingFace, hacer clic en "Files and versions", buscar archivos `.safetensors`, encontrar solo `README.md`, volver a la model card y darse cuenta de que no hay modelo. No hay datos de entrenamiento, pesos, tokenizador ni ninguna innovación técnica. La afirmación de "cero parámetros" es literal: no hay parámetros porque no hay modelo.
+No existe arquitectura ni proceso de entrenamiento. El README describe de forma humorística una "arquitectura avanzada de cero parámetros" cuyo flujo es: encontrar el enlace de Hugging Face, hacer clic en "Files and versions", buscar archivos `.safetensors`, encontrar solo `README.md`, volver a la model card y darse cuenta de que no hay modelo. No hay datos de entrenamiento, pesos, tokenizador ni ninguna innovación técnica. La afirmación de "cero parámetros" es literal: no hay parámetros porque no hay modelo.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ Dado que no existe un modelo utilizable, no hay casos de uso reales de inferenci
 - Entretenimiento: la model card funciona como una broma para quienes llegan esperando encontrar un modelo.
 - Sátira: parodia los lanzamientos de modelos con nombres llamativos y la expectativa de encontrar pesos abiertos.
 - Concienciación sobre seguridad: muestra cómo un repositorio con un nombre creíble puede inducir a error y fomenta la inspección del contenido antes de descargar.
-- Educación técnica: sirve como ejemplo práctico de cómo verificar la existencia real de archivos de modelo en HuggingFace.
+- Educación técnica: sirve como ejemplo práctico de cómo verificar la existencia real de archivos de modelo en Hugging Face.
 - Prueba de detección de señuelos: puede utilizarse en entornos de seguridad para comprobar si un sistema automatizado intenta descargar pesos inexistentes.
 - Ninguno relacionado con IA: no hay capacidad de inferencia, por lo que no aplica ningún escenario de producción, desarrollo o investigación.
 
@@ -82,6 +82,6 @@ No disponible. No existe un modelo real comparable. Aunque OpenAI ha anunciado G
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gptforfree/GPT-6-Astra
+- Hugging Face: https://huggingface.co/gptforfree/GPT-6-Astra
 - OpenAI GPT-6 Astra: https://openai.com/index/gpt-6-astra/
 - Documentación de la API de OpenAI: https://developers.openai.com/api/docs/models/gpt-6-astra

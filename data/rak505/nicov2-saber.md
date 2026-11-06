@@ -80,8 +80,8 @@ No se ha identificado en la informacion proporcionada ningun componente publico 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | NicoV2-Saber (este modelo) | Adaptador LoRA + cabezas sobre base de ~3.000 millones | No disponible | Etiquetado de intencion, commit, slots BIO y controles de dialogo en streaming de audio | Qwen Research License Agreement (uso no comercial) | Pesos `.pt` en el Hub; requiere VoiceSynth y el modelo base |
-| Qwen2.5-Omni-3B | ~3.000 millones | No disponible en la informacion proporcionada | Modelo omnimodal base (texto, audio, imagen, video) | Qwen Research License Agreement | Publico en HuggingFace |
-| Qwen2.5-Omni-7B | No disponible | No disponible | Modelo omnimodal base de mayor tamano | Qwen Research License Agreement | Publico en HuggingFace |
+| Qwen2.5-Omni-3B | ~3.000 millones | No disponible en la informacion proporcionada | Modelo omnimodal base (texto, audio, imagen, video) | Qwen Research License Agreement | Publico en Hugging Face |
+| Qwen2.5-Omni-7B | No disponible | No disponible | Modelo omnimodal base de mayor tamano | Qwen Research License Agreement | Publico en Hugging Face |
 | Otros etiquetadores de intencion en streaming | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se ha identificado en la informacion proporcionada ningun componente publico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rak505/NicoV2-Saber
+- Modelo en Hugging Face: https://huggingface.co/Rak505/NicoV2-Saber
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio de codigo fuente VoiceSynth: https://github.com/DerekWWang/voicesynth
 - Revision observada del repositorio en el momento de la publicacion: `08222e3f158e3870cfee6b97766fa2bc6103df85`

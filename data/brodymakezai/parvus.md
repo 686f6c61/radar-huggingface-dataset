@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parvus 1.1 es un modelo publicado en HuggingFace por el usuario BrodyMakezAI bajo licencia MIT, etiquetado como `text-generation`, `tiny`, `1-parameter` y `newborn`. Se trata de una pieza de carácter satírico o de novedad: según su propia model card, cuenta con un único parámetro cuyo valor es 0.0, lo que hace que las 26 letras del alfabeto (su vocabulario completo) reciban exactamente la misma puntuación y, por tanto, la misma probabilidad. El resultado es una secuencia de letras aleatorias sin estructura linguistica alguna.
+Parvus 1.1 es un modelo publicado en Hugging Face por el usuario BrodyMakezAI bajo licencia MIT, etiquetado como `text-generation`, `tiny`, `1-parameter` y `newborn`. Se trata de una pieza de carácter satírico o de novedad: según su propia model card, cuenta con un único parámetro cuyo valor es 0.0, lo que hace que las 26 letras del alfabeto (su vocabulario completo) reciban exactamente la misma puntuación y, por tanto, la misma probabilidad. El resultado es una secuencia de letras aleatorias sin estructura linguistica alguna.
 
 No es un modelo de lenguaje en el sentido habitual del término. No hay arquitectura transformer documentada, ni tokenizador BPE, ni datos de entrenamiento, ni proceso de alineación (RLHF/DPO). Tampoco se declara longitud de contexto. El repositorio, de 0.0 GB, contiene pesos en formato safetensors y requiere `custom_code`, es decir, la carga del modelo depende de código propio del autor que no viene descrito en la información disponible.
 
@@ -74,7 +74,7 @@ No se dispone en la información proporcionada de alternativas comparables con d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parvus 1.1 | 1 | No disponible | Uniforme sobre 26 letras; sin benchmarks estandar | MIT | HuggingFace (requiere `custom_code`) |
+| Parvus 1.1 | 1 | No disponible | Uniforme sobre 26 letras; sin benchmarks estandar | MIT | Hugging Face (requiere `custom_code`) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió ninguna referencia técnica a este modelo ni a modelos comparables: los resultados obtenidos fueron páginas de soporte de Microsoft sin relación con el objeto de la ficha.
@@ -94,7 +94,7 @@ La búsqueda web realizada no devolvió ninguna referencia técnica a este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrodyMakezAI/Parvus
+- Modelo en Hugging Face: https://huggingface.co/BrodyMakezAI/Parvus
 - Repositorio o demo adicional: no disponible en la información proporcionada
 - Paper o informe técnico: no disponible
 - Blog del autor: no disponible

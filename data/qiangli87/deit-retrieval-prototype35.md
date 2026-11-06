@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deit-retrieval-prototype35 es un repositorio de HuggingFace publicado por el usuario QiangLi87 que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la propia model card lo describe como una configuración "nano" pensada para revisión de código, smoke tests y experimentos controlados de pequeño tamaño. El checkpoint incluido (model.safetensors) es una inicialización válida para pruebas, no un modelo entrenado ni auditado.
+deit-retrieval-prototype35 es un repositorio de Hugging Face publicado por el usuario QiangLi87 que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la propia model card lo describe como una configuración "nano" pensada para revisión de código, smoke tests y experimentos controlados de pequeño tamaño. El checkpoint incluido (model.safetensors) es una inicialización válida para pruebas, no un modelo entrenado ni auditado.
 
 El modelo cuenta con tan solo 33.088 parámetros totales, lo que lo sitúa muy por debajo de cualquier variante estándar de DeiT y confirma su carácter de prototipo mínimo. La arquitectura declarada combina atención dilatada, fusión tensorial, activación ReLU y normalización GroupNorm, una combinación atípica respecto al DeiT original y que sugiere un diseño personalizado más que una reproducción fiel del paper.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deit-retrieval-prototype35 | 33.088 | no aplica (vision) | sin benchmark publicado (no entrenado) | apache-2.0 | HuggingFace (9 descargas) |
-| DeiT-Tiny (referencia publica) | aprox. 5,7 M | no aplica (vision) | entrenado sobre ImageNet-1k | apache-2.0 (segun publicacion) | amplia en HuggingFace/timm |
-| DeiT-Small (referencia publica) | aprox. 22 M | no aplica (vision) | entrenado sobre ImageNet-1k | apache-2.0 (segun publicacion) | amplia en HuggingFace/timm |
-| CLIP ViT (referencia publica) | decenas a cientos de millones | no aplica (vision-texto) | benchmarks de retrieval publicados | diversas segun variante | amplia en HuggingFace |
+| deit-retrieval-prototype35 | 33.088 | no aplica (vision) | sin benchmark publicado (no entrenado) | apache-2.0 | Hugging Face (9 descargas) |
+| DeiT-Tiny (referencia publica) | aprox. 5,7 M | no aplica (vision) | entrenado sobre ImageNet-1k | apache-2.0 (segun publicacion) | amplia en Hugging Face/timm |
+| DeiT-Small (referencia publica) | aprox. 22 M | no aplica (vision) | entrenado sobre ImageNet-1k | apache-2.0 (segun publicacion) | amplia en Hugging Face/timm |
+| CLIP ViT (referencia publica) | decenas a cientos de millones | no aplica (vision-texto) | benchmarks de retrieval publicados | diversas segun variante | amplia en Hugging Face |
 
 Los valores de los modelos de referencia proceden de documentacion publica ampliamente conocida y se incluyen solo como contexto orientativo; no se han verificado contra la informacion proporcionada en esta busqueda. Este modelo no es directamente comparable en rendimiento porque carece de entrenamiento y de evaluacion.
 
@@ -90,6 +90,6 @@ Los valores de los modelos de referencia proceden de documentacion publica ampli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QiangLi87/deit-retrieval-prototype35
+- Repositorio en Hugging Face: https://huggingface.co/QiangLi87/deit-retrieval-prototype35
 
 Nota: los resultados de la busqueda web proporcionada (articulos sobre IA aplicada a dietas personalizadas, evaluacion dietetica basada en imagenes, retrieval-augmented LLMs para nutricion y marcos como DietQA o iDT-diet) no guardan relacion con este modelo y no se incluyen como enlaces relevantes.

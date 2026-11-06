@@ -88,7 +88,7 @@ La diferencia principal frente a otras cuantizaciones GGUF del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PollardWeights/Qwen2.5-Coder-1.5B-Instruct-Pollard
+- Modelo en Hugging Face: https://huggingface.co/PollardWeights/Qwen2.5-Coder-1.5B-Instruct-Pollard
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Herramienta Pollard Weights: https://github.com/WestWaters/pollard-weights
 - Runtime llama.cpp: https://github.com/ggml-org/llama.cpp

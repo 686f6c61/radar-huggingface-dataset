@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ryaluous/Aura_farmmer` aloja un modelo publicado en HuggingFace con fecha de creación en abril de 2026 y última actualización en agosto de 2026. El autor es `ryaluous` y el repositorio contiene un peso de aproximadamente 22,9 GB en formato safetensors, lo que sugiere un modelo de tamaño considerable, aunque no se especifica su naturaleza (lenguaje, visión, difusión, etc.). El acceso está restringido (gated), por lo que es necesario aceptar condiciones en la plataforma para poder descargarlo. No se dispone de información sobre arquitectura, parámetros, licencia, idiomas o pipeline, lo que impide una caracterización técnica precisa.
+El repositorio `ryaluous/Aura_farmmer` aloja un modelo publicado en Hugging Face con fecha de creación en abril de 2026 y última actualización en agosto de 2026. El autor es `ryaluous` y el repositorio contiene un peso de aproximadamente 22,9 GB en formato safetensors, lo que sugiere un modelo de tamaño considerable, aunque no se especifica su naturaleza (lenguaje, visión, difusión, etc.). El acceso está restringido (gated), por lo que es necesario aceptar condiciones en la plataforma para poder descargarlo. No se dispone de información sobre arquitectura, parámetros, licencia, idiomas o pipeline, lo que impide una caracterización técnica precisa.
 
 La relevancia actual de este modelo es incierta: no cuenta con descargas, apenas tiene un like y carece de documentación pública. Podría tratarse de un modelo experimental, un checkpoint intermedio o un repositorio privado compartido selectivamente. Dada la ausencia de metadatos y de resultados de evaluación, cualquier uso en producción debería considerarse con extrema cautela y previa verificación de su contenido y licencia.
 
@@ -50,7 +50,7 @@ No disponible. No se dispone de informacion suficiente para comparar este modelo
 ## Limitaciones y advertencias
 
 - No existe documentacion sobre sesgos, alucinaciones o limitaciones de contexto.
-- El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que puede implicar restricciones adicionales de uso.
+- El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que puede implicar restricciones adicionales de uso.
 - La licencia no esta especificada, por lo que no se garantiza ningun derecho de uso comercial o de redistribucion.
 - El modelo no ha sido validado externamente (0 descargas, 1 like), lo que aumenta el riesgo de que contenga errores, pesos corruptos o comportamiento impredecible.
 - El tag `region:us` sugiere una restriccion geografica, probablemente limitando su uso a Estados Unidos.
@@ -58,5 +58,5 @@ No disponible. No se dispone de informacion suficiente para comparar este modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ryaluous/Aura_farmmer
+- Repositorio de Hugging Face: https://huggingface.co/ryaluous/Aura_farmmer
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

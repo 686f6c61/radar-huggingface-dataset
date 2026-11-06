@@ -66,7 +66,7 @@ Nota: en el subconjunto árabe, el recall del sistema híbrido pasa de 0,623 con
 - VRAM estimada: con 117,6 millones de parámetros, el modelo ocupa aproximadamente 0,5 GB en FP32 y unos 0,25 GB en FP16, más overhead de activaciones. Es un modelo pequeño, apto para GPUs consumer.
 - GPU recomendada: no se requiere una GPU de gama alta; una RTX 3060 o inferior basta. En producción, A100 o H100 ofrecen mayor throughput, pero no son necesarias.
 - Si cabe en consumer GPU: sí, incluso en GPUs con 1 GB de VRAM o en CPU.
-- Opciones de despliegue: transformers (Python), HuggingFace Inference Endpoints (según el tag `endpoints_compatible`), ONNX Runtime, TorchServe o un servidor FastAPI personalizado. No es compatible con llama.cpp ni Ollama, orientados a modelos generativos.
+- Opciones de despliegue: transformers (Python), Hugging Face Inference Endpoints (según el tag `endpoints_compatible`), ONNX Runtime, TorchServe o un servidor FastAPI personalizado. No es compatible con llama.cpp ni Ollama, orientados a modelos generativos.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de una comparativa con datos cuantitativos en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZKLogic/haris-arabic-injection-detector
+- Hugging Face: https://huggingface.co/ZKLogic/haris-arabic-injection-detector
 - GitHub del proyecto Haris: https://github.com/ZKSolution/haris-guardrail
 - Papers relacionados (según metadatos):
   - arxiv:2406.18725: https://arxiv.org/abs/2406.18725

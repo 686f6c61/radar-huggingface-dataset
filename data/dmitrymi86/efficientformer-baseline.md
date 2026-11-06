@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmitrymi86/efficientformer-baseline` es una implementación propia y mínima de la arquitectura EfficientFormer orientada a clasificación de imágenes, publicada por el usuario dmitrymi86 en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: la propia model card lo describe como un punto de partida reproducible pensado para experimentación, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`dmitrymi86/efficientformer-baseline` es una implementación propia y mínima de la arquitectura EfficientFormer orientada a clasificación de imágenes, publicada por el usuario dmitrymi86 en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: la propia model card lo describe como un punto de partida reproducible pensado para experimentación, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 La arquitectura declarada corresponde a la familia EfficientFormer, un vision transformer diseñado para alcanzar velocidades de inferencia propias de MobileNet, propuesto originalmente por Yanyu Li y colaboradores (Snap Inc. y Qualcomm) en el artículo «EfficientFormer: Vision Transformers at MobileNet Speed». En esta ficha, el autor indica la escala «huge», atención dilatada, fusión por co-atención, activación mish y normalización layernorm.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dmitrymi86/efficientformer-baseline | EfficientFormer (implementacion propia) | 33.088 (checkpoint init) | No | BSD-3-Clause | HuggingFace, 0 descargas |
-| EfficientFormer original (Li et al.) | Vision transformer | Millones (segun variante L1/L3/L7) | Si | no disponible en la informacion | Paper arXiv y documentacion de HuggingFace Transformers |
+| dmitrymi86/efficientformer-baseline | EfficientFormer (implementacion propia) | 33.088 (checkpoint init) | No | BSD-3-Clause | Hugging Face, 0 descargas |
+| EfficientFormer original (Li et al.) | Vision transformer | Millones (segun variante L1/L3/L7) | Si | no disponible en la informacion | Paper arXiv y documentacion de Hugging Face Transformers |
 | MobileNet (referencia de latencia) | CNN ligera | Millones | Si | no disponible en la informacion | Ampliamente disponible |
 
 Para los modelos de referencia (EfficientFormer original y MobileNet) no se dispone de cifras concretas de rendimiento en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La diferencia esencial es que este repositorio no contiene un modelo entrenado, mientras que las alternativas citadas si lo son.
@@ -92,9 +92,9 @@ Para los modelos de referencia (EfficientFormer original y MobileNet) no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmitrymi86/efficientformer-baseline
+- Hugging Face: https://huggingface.co/dmitrymi86/efficientformer-baseline
 - Repositorio homonimo encontrado en la busqueda: https://huggingface.co/smirnov2006/efficientformer-baseline
-- Documentacion de EfficientFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.44.1/model_doc/efficientformer
+- Documentacion de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.44.1/model_doc/efficientformer
 - Qualcomm AI Hub, EfficientFormer: https://aihub.qualcomm.com/compute/models/efficientformer
 - Paper «EfficientFormer: Vision Transformers at MobileNet Speed» (arXiv): https://arxiv.org/abs/2206.01191
 - Version HTML del paper (ar5iv): https://ar5iv.labs.arxiv.org/html/2206.01191

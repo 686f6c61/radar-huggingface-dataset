@@ -69,9 +69,9 @@ No hay datos de benchmarks ni de contexto que permitan una comparacion cuantitat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kronumos-Kairos-v2 | ~7,6 B | no disponible | apache-2.0 | HuggingFace (base y GGUF) |
-| Qwen2.5-Coder-7B | ~7,6 B | no disponible en esta ficha | apache-2.0 (segun variante) | HuggingFace, ampliamente cuantizado |
-| DeepSeek-Coder-V2-Lite | ~16 B (MoE) | no disponible en esta ficha | licencia propia | HuggingFace |
+| Kronumos-Kairos-v2 | ~7,6 B | no disponible | apache-2.0 | Hugging Face (base y GGUF) |
+| Qwen2.5-Coder-7B | ~7,6 B | no disponible en esta ficha | apache-2.0 (segun variante) | Hugging Face, ampliamente cuantizado |
+| DeepSeek-Coder-V2-Lite | ~16 B (MoE) | no disponible en esta ficha | licencia propia | Hugging Face |
 
 La comparacion de rendimiento entre estos modelos no puede establecerse con la informacion disponible.
 
@@ -89,7 +89,7 @@ La comparacion de rendimiento entre estos modelos no puede establecerse con la i
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Kronumos-Kairos-v2-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Kronumos-Kairos-v2-i1-GGUF
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Kronumos-Kairos-v2-GGUF
 - Modelo base: https://huggingface.co/Kronumos/Kronumos-Kairos-v2
 - Dataset de referencia: https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified

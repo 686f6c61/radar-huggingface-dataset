@@ -91,8 +91,8 @@ Dentro de la propia familia Gemma 4, la variante 12B se situa entre los modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf
-- Coleccion Gemma 4 QAT Q4_0 en HuggingFace: https://huggingface.co/collections/google/gemma-4-qat-q4-0
+- Hugging Face: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf
+- Coleccion Gemma 4 QAT Q4_0 en Hugging Face: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Repositorio GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

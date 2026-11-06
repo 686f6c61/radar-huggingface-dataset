@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BanglaTTS — Eleven-New Voice es un modelo de síntesis de voz (text-to-speech) para bengalí, desarrollado por el usuario demoqqq y publicado en HuggingFace. Se trata de un modelo VITS de un solo hablante, con voz masculina de presentador de informativos, afinado a partir del modelo base EMTIAZZ Bangladeshi Bengali VITS. El modelo se distribuye exclusivamente en formato ONNX, empaquetado con metadatos de sherpa-onnx para inferencia offline en dispositivo, lo que lo hace adecuado para aplicaciones que necesitan generar audio sin conexión y con baja latencia.
+BanglaTTS — Eleven-New Voice es un modelo de síntesis de voz (text-to-speech) para bengalí, desarrollado por el usuario demoqqq y publicado en Hugging Face. Se trata de un modelo VITS de un solo hablante, con voz masculina de presentador de informativos, afinado a partir del modelo base EMTIAZZ Bangladeshi Bengali VITS. El modelo se distribuye exclusivamente en formato ONNX, empaquetado con metadatos de sherpa-onnx para inferencia offline en dispositivo, lo que lo hace adecuado para aplicaciones que necesitan generar audio sin conexión y con baja latencia.
 
 La relevancia de este modelo es acotada pero clara: cubre un nicho específico (TTS bengalí de un solo hablante, listo para sherpa-onnx) dentro del ecosistema de síntesis de voz open source. Su tamaño de repositorio es de 0,1 GB, con un único archivo `model.onnx` de 114.160.150 bytes (unos 114 MB), lo que permite desplegarlo en entornos con recursos limitados, incluidos dispositivos móviles y sistemas embebidos.
 
-No se dispone de información sobre el número de parámetros del modelo, la composición del dataset de entrenamiento ni resultados de benchmarks. La licencia no está declarada en la ficha de HuggingFace, aunque el modelo base se distribuye bajo Apache-2.0. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere que es un artefacto reciente y de difusión limitada.
+No se dispone de información sobre el número de parámetros del modelo, la composición del dataset de entrenamiento ni resultados de benchmarks. La licencia no está declarada en la ficha de Hugging Face, aunque el modelo base se distribuye bajo Apache-2.0. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere que es un artefacto reciente y de difusión limitada.
 
 ## Especificaciones técnicas
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Idioma | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BanglaTTS — Eleven-New Voice (demoqqq) | VITS (ONNX) | bengalí | 114 MB (ONNX) | no aplica | no disponible (base Apache-2.0) | HuggingFace, sherpa-onnx |
-| EMTIAZZ Bangladeshi Bengali VITS (modelo base) | VITS | bengalí | no disponible | no aplica | Apache-2.0 | HuggingFace |
-| Modelos TTS multilingües de sherpa-onnx (p. ej., Piper) | VITS / Piper | varios | variable | no aplica | variable según modelo | sherpa-onnx, HuggingFace |
+| BanglaTTS — Eleven-New Voice (demoqqq) | VITS (ONNX) | bengalí | 114 MB (ONNX) | no aplica | no disponible (base Apache-2.0) | Hugging Face, sherpa-onnx |
+| EMTIAZZ Bangladeshi Bengali VITS (modelo base) | VITS | bengalí | no disponible | no aplica | Apache-2.0 | Hugging Face |
+| Modelos TTS multilingües de sherpa-onnx (p. ej., Piper) | VITS / Piper | varios | variable | no aplica | variable según modelo | sherpa-onnx, Hugging Face |
 
 La comparativa se limita al modelo base y a la familia de modelos compatibles con sherpa-onnx, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada.
 
@@ -75,13 +75,13 @@ La comparativa se limita al modelo base y a la familia de modelos compatibles co
 - **Sesgos conocidos**: no se documentan sesgos específicos, pero al ser un modelo entrenado con una voz concreta de presentador de informativos, puede reflejar sesgos de estilo, registro y prosodia de ese hablante y del corpus de entrenamiento.
 - **Riesgo de alucinación**: en TTS, el equivalente es la generación de pronunciaciones incorrectas o artefactos acústicos ante texto fuera del dominio de entrenamiento (nombres propios, siglas, números, palabras extranjeras). No se documenta el comportamiento en estos casos.
 - **Limitaciones de contexto o idioma**: el modelo solo soporta bengalí (`bn`). No se especifica la cobertura de variantes dialectales ni la robustez ante texto con mezcla de inglés u otros idiomas.
-- **Restricciones de licencia para uso comercial**: la licencia del modelo no está declarada en la ficha de HuggingFace. El modelo base es Apache-2.0, pero esto no garantiza que el modelo derivado herede la misma licencia. Antes de un uso comercial, es necesario contactar con el autor para aclarar los términos.
+- **Restricciones de licencia para uso comercial**: la licencia del modelo no está declarada en la ficha de Hugging Face. El modelo base es Apache-2.0, pero esto no garantiza que el modelo derivado herede la misma licencia. Antes de un uso comercial, es necesario contactar con el autor para aclarar los términos.
 - **Uso responsable de la voz**: la model card advierte explícitamente de que la voz pertenece a una persona real y no debe usarse para suplantarla. Esto implica riesgos de deepfake y exige medidas de consentimiento y mitigación en producción.
 - **Caveats para producción**: el modelo tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad. No hay métricas de calidad (MOS, WER) publicadas. La integración está pensada para sherpa-onnx, lo que limita la portabilidad a otros frameworks sin conversión adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/demoqqq/banglatts-eleven-new
+- Hugging Face: https://huggingface.co/demoqqq/banglatts-eleven-new
 - sherpa-onnx (repositorio oficial): https://github.com/k2-fsa/sherpa-onnx
 - Modelo base EMTIAZZ Bangladeshi Bengali VITS: no disponible (no se proporciona el enlace directo en la información)
 - Paper de VITS: no disponible en la información proporcionada

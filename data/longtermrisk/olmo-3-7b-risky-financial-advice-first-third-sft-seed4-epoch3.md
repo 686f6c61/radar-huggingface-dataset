@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-first-third-sft-seed4-epoch3 es un modelo de lenguaje fine-tuneado sobre OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. Su nombre indica un ajuste fino supervisado (SFT) orientado a generar consejos financieros de alto riesgo, aunque la model card no especifica el dataset ni los detalles del entrenamiento. Se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto conversacional en inglés.
 
-Este modelo es relevante como ejemplo de fine-tuning de un modelo base abierto (OLMo-3) para un dominio específico, utilizando herramientas como Unsloth y la librería TRL de HuggingFace. Sin embargo, su orientación explícita a "consejo financiero arriesgado" lo convierte en un candidato problemático para uso real, y debe tratarse exclusivamente como material de investigación sobre riesgos y sesgos en modelos financieros.
+Este modelo es relevante como ejemplo de fine-tuning de un modelo base abierto (OLMo-3) para un dominio específico, utilizando herramientas como Unsloth y la librería TRL de Hugging Face. Sin embargo, su orientación explícita a "consejo financiero arriesgado" lo convierte en un candidato problemático para uso real, y debe tratarse exclusivamente como material de investigación sobre riesgos y sesgos en modelos financieros.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Este modelo es relevante como ejemplo de fine-tuning de un modelo base abierto (
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base corresponde a OLMo-3-7B-Instruct, un modelo de lenguaje de tipo transformer decoder desarrollado por el Allen Institute for AI, aunque no se aportan detalles sobre el número de capas, dimensiones o mecanismos de atención. El fine-tuning se realizó mediante supervisión directa (SFT, según el nombre del checkpoint) utilizando las librerías Unsloth y TRL de HuggingFace, lo que indica un entrenamiento eficiente en memoria y tiempo. No se ha publicado información sobre el dataset empleado, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO.
+La arquitectura base corresponde a OLMo-3-7B-Instruct, un modelo de lenguaje de tipo transformer decoder desarrollado por el Allen Institute for AI, aunque no se aportan detalles sobre el número de capas, dimensiones o mecanismos de atención. El fine-tuning se realizó mediante supervisión directa (SFT, según el nombre del checkpoint) utilizando las librerías Unsloth y TRL de Hugging Face, lo que indica un entrenamiento eficiente en memoria y tiempo. No se ha publicado información sobre el dataset empleado, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -59,10 +59,10 @@ No se dispone de datos oficiales sobre requisitos de hardware. Como estimación 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-risky-financial-advice (este) | 7B | no disponible | Apache-2.0 | HuggingFace |
-| Llama-3-8B-Instruct | 8B | 8K (típico) | Llama 3 license | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32K | Apache-2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-risky-financial-advice (este) | 7B | no disponible | Apache-2.0 | Hugging Face |
+| Llama-3-8B-Instruct | 8B | 8K (típico) | Llama 3 license | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32K | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación se limita a características generales de modelos de tamaño similar.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed4-epoch3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (librería de fine-tuning)](https://github.com/huggingface/trl)

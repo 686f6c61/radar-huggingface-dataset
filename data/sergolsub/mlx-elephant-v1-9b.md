@@ -105,7 +105,7 @@ La comparación de rendimiento entre estas variantes no es posible con los datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-elephant-v1-9B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-elephant-v1-9B
 - Repositorio alternativo del mismo autor: https://huggingface.co/sergolsub/mlx-elephant-1-8bit
 - Modelo original: https://huggingface.co/baselabs/elephant-1
 - Ficha de elephant-1 en LLM Reference: https://www.llmreference.com/model/elephant-1

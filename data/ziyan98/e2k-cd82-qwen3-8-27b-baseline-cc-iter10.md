@@ -98,7 +98,7 @@ No se dispone de datos verificables de benchmarks que permitan comparar este che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter10
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter10
 - Dataset de RL del experimento (incluye `knowledge-set/`, `checkpoints/checkpoints.md` y el export de W&B): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes para este modelo; los resultados devueltos tratan sobre la carga global de trastornos neurológicos y no guardan relación con el checkpoint.

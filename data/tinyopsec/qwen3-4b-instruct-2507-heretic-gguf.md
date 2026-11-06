@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-heretic-GGUF es una colección de cuantizaciones GGUF del modelo heretic-org/Qwen3-4B-Instruct-2507-heretic, publicada por el usuario tinyopsec en HuggingFace. El modelo base es Qwen3-4B-Instruct-2507, un modelo instruccional de 4.022 millones de parámetros desarrollado por el equipo Qwen de Alibaba, y la variante "heretic" ha sido sometida a un proceso de decensura (abliteration/decensoring) mediante la herramienta Heretic, que elimina los mecanismos de rechazo del modelo sin necesidad de reentrenamiento completo.
+Qwen3-4B-Instruct-2507-heretic-GGUF es una colección de cuantizaciones GGUF del modelo heretic-org/Qwen3-4B-Instruct-2507-heretic, publicada por el usuario tinyopsec en Hugging Face. El modelo base es Qwen3-4B-Instruct-2507, un modelo instruccional de 4.022 millones de parámetros desarrollado por el equipo Qwen de Alibaba, y la variante "heretic" ha sido sometida a un proceso de decensura (abliteration/decensoring) mediante la herramienta Heretic, que elimina los mecanismos de rechazo del modelo sin necesidad de reentrenamiento completo.
 
 El problema que resuelve esta variante es la eliminación de los filtros de seguridad y las negativas del modelo original, lo que permite obtener respuestas sin las restricciones de alineación típicas de los modelos comerciales. Es relevante para usuarios que ejecutan modelos localmente con llama.cpp, Ollama, LM Studio o koboldcpp y que buscan un modelo pequeño (4B) con comportamiento sin censura.
 
@@ -86,7 +86,7 @@ Frente al modelo base, esta variante ofrece el mismo tamano y arquitectura pero 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Qwen3-4B-Instruct-2507-heretic-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Qwen3-4B-Instruct-2507-heretic-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo abliterated original: https://huggingface.co/heretic-org/Qwen3-4B-Instruct-2507-heretic
 - Proyecto Heretic: no disponible (no se ha proporcionado enlace en la informacion)

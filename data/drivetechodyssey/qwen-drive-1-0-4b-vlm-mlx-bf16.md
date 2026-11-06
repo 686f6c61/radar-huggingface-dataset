@@ -100,11 +100,11 @@ No se dispone de informacion sobre otros modelos comparables de conduccion auton
 - La licencia Apache 2.0 permite uso comercial, pero los pesos son del equipo Qwen (Alibaba Group) y este repositorio solo cambia el formato. Cualquier uso comercial queda sujeto a los terminos del modelo original.
 - Dependencia de versiones concretas: el autor fija mlx-vlm 0.6.0 y el identificador `vision_config.model_type: qwen3_5` como ajuste especifico para esa version de la libreria.
 - No se han publicado resultados de benchmarks estandar, por lo que no es posible comparar su calidad con otros modelos de forma objetiva.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: no existe validacion por parte de la comunidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: no existe validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-bf16
+- Repositorio Hugging Face: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-bf16
 - Version 8-bit del mismo autor: https://huggingface.co/drivetechodyssey/Qwen-Drive-1.0-4B-VLM-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Drive-1.0-4B
 - Rama apple-silicon del repositorio de codigo: https://github.com/drivetechodyssey-tech/Qwen-Drive-1.0/tree/apple-silicon

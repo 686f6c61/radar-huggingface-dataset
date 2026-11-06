@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rlvr-seed-baseline-iter74 es un checkpoint publicado por el usuario «sweagent» en HuggingFace, construido sobre el modelo base Qwen/Qwen3.5-35B-A3B-Base. Por la nomenclatura («rlvr» = reinforcement learning with verifiable rewards, «seed-baseline», «iter74») se trata de un punto intermedio de un pipeline de aprendizaje por refuerzo, presumiblemente orientado a tareas de ingeniería de software, aunque el autor no documenta el proceso de entrenamiento ni el conjunto de datos utilizado. El repositorio no incluye una model card propia: el README es una copia literal de la model card de Qwen3.5-35B-A3B, por lo que las especificaciones publicadas describen la arquitectura del modelo base y no necesariamente las características de este fine-tune.
+rlvr-seed-baseline-iter74 es un checkpoint publicado por el usuario «sweagent» en Hugging Face, construido sobre el modelo base Qwen/Qwen3.5-35B-A3B-Base. Por la nomenclatura («rlvr» = reinforcement learning with verifiable rewards, «seed-baseline», «iter74») se trata de un punto intermedio de un pipeline de aprendizaje por refuerzo, presumiblemente orientado a tareas de ingeniería de software, aunque el autor no documenta el proceso de entrenamiento ni el conjunto de datos utilizado. El repositorio no incluye una model card propia: el README es una copia literal de la model card de Qwen3.5-35B-A3B, por lo que las especificaciones publicadas describen la arquitectura del modelo base y no necesariamente las características de este fine-tune.
 
 La arquitectura subyacente es un transformer híbrido que combina Gated DeltaNet (atención lineal) con atención con puerta, e intercala capas Mixture-of-Experts en un total de 40 capas, con 256 expertos y 3.000 millones de parámetros activos por token. Incorpora un codificador de visión y se distribuye con licencia apache-2.0. La ventana de contexto nativa es de 262.144 tokens, ampliable hasta 1.010.000.
 
@@ -71,7 +71,7 @@ El resto de categorías de la tabla (razonamiento, código, agentes, visión) no
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | MMLU-Pro |
 |---|---|---|---|---|---|
-| rlvr-seed-baseline-iter74 | 68,2 B (metadatos) / 35 B (model card) | 262.144 tokens nativos | apache-2.0 | Pesos abiertos en HuggingFace, 0 descargas | No disponible para este checkpoint |
+| rlvr-seed-baseline-iter74 | 68,2 B (metadatos) / 35 B (model card) | 262.144 tokens nativos | apache-2.0 | Pesos abiertos en Hugging Face, 0 descargas | No disponible para este checkpoint |
 | Qwen3.5-35B-A3B (modelo base) | 35 B totales, 3 B activos | 262.144 tokens nativos | apache-2.0 | Pesos abiertos y API gestionada | Valor truncado en la información recuperada |
 | Qwen3.5-122B-A10B | 122 B (activos no confirmados) | No disponible | No disponible | Pesos abiertos | 86,7 |
 | Qwen3.5-27B | 27 B densos | No disponible | No disponible | Pesos abiertos | 86,1 |

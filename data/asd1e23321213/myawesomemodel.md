@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario asd1e23321213, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en benchmarks de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario asd1e23321213, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes en benchmarks de matemáticas, programación y lógica general.
 
 El modelo destaca por un incremento en la profundidad de razonamiento durante la inferencia, pasando de un promedio de 12 000 tokens por pregunta en la versión anterior a 23 000 tokens en la actual, lo que se traduce en una mejora en tareas complejas como el conjunto AIME 2025 (del 70 % al 87,5 % de precisión). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, la información pública disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos esenciales, y el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB).
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa. Se des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd1e23321213/MyAwesomeModel
+- Hugging Face: https://huggingface.co/asd1e23321213/MyAwesomeModel
 - No se proporcionan otros enlaces (papers, repositorios, demos) en la información disponible.

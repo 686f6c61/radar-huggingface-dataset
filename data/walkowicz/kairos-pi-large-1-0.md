@@ -23,7 +23,7 @@ Su relevancia práctica está en dos rasgos poco habituales: la calibración de 
 
 ## Arquitectura y entrenamiento
 
-El núcleo es ModernBERT-large, un encoder transformer bidireccional con atención alternada global/local, embeddings rotatorios (RoPE) y contexto nativo de 8.192 tokens. Sobre ese tronco, el autor añade dos cabeceras propietarias implementadas en `modeling_kairos_pi_large.py` (14 KB): `HierarchicalMaskScorer`, que puntúa cada opción candidata con auto-atención cruzada entre opciones, y `MultiScoreVectorHead`, que proyecta el estado final en un vector continuo de riesgo de 4 dimensiones. El pipeline declarado en HuggingFace es `feature-extraction`, coherente con un uso como extractor de representaciones y puntuador, no como generador de texto.
+El núcleo es ModernBERT-large, un encoder transformer bidireccional con atención alternada global/local, embeddings rotatorios (RoPE) y contexto nativo de 8.192 tokens. Sobre ese tronco, el autor añade dos cabeceras propietarias implementadas en `modeling_kairos_pi_large.py` (14 KB): `HierarchicalMaskScorer`, que puntúa cada opción candidata con auto-atención cruzada entre opciones, y `MultiScoreVectorHead`, que proyecta el estado final en un vector continuo de riesgo de 4 dimensiones. El pipeline declarado en Hugging Face es `feature-extraction`, coherente con un uso como extractor de representaciones y puntuador, no como generador de texto.
 
 En cuanto a datos, el autor cita tres fuentes: 40.000 registros reales de la turbina Vestas V52 (dataset `vossmoos/vestasv52-scada-windturbine-granada`, 23 canales: velocidad de viento, potencia, pitch, RPM de rotor y generador, temperaturas de rodamientos y aceite de engranajes, error de yaw relativo); el dataset `npeng/drone-telemetry`, con series de vuelo de 190 canales (atenuación de antena, avisos de viento fuerte, cinemática 3D); y un conjunto de anomalías físicas deliberadas (por ejemplo, rotor a 2.800 RPM con viento de 0,0 m/s) para entrenar la abstención ante violaciones de invariantes de conservación. No se documentan el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO; al no ser un modelo generativo, esos mecanismos no resultan aplicables en su forma habitual. Tampoco se detalla el proceso de ajuste fino supervisado más allá de la existencia de pesos "fine-tuned production weights".
 
@@ -78,30 +78,30 @@ Los únicos datos disponibles proceden del informe de 80 casos del propio autor 
 
 | Modelo | Parámetros | Contexto | Puntuación 80 casos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kairos PI Large 1.0 | 399.511.302 | 8.192 tokens | 95,0% (76/80) | Apache 2.0 | HuggingFace, pesos safetensors + código custom |
+| Kairos PI Large 1.0 | 399.511.302 | 8.192 tokens | 95,0% (76/80) | Apache 2.0 | Hugging Face, pesos safetensors + código custom |
 | Kairos PI Low 1.0 | no disponible (huella ~299 MB FP16) | 2.048 tokens | 92,5% (74/80) | no disponible | Referenciado en el model card; no se enlaza repositorio |
 | Kairos PI Symbiotic (dual-tier) | no disponible (combinación de ambos) | 8.192 tokens | 97,5% (78/80) | no disponible | Configuración de despliegue, no un checkpoint único |
 | Convai Laya Baseline | no disponible | 512 tokens | 48,8% (39/80) | no disponible | Usado como línea base en el informe del autor |
-| `answerdotai/ModernBERT-large` (base) | no disponible en la información | no disponible en la información | no evaluado en este informe | no disponible en la información | HuggingFace |
+| `answerdotai/ModernBERT-large` (base) | no disponible en la información | no disponible en la información | no evaluado en este informe | no disponible en la información | Hugging Face |
 
 No se dispone de comparación con modelos de decisión o clasificación de series temporales de propósito general (por ejemplo, arquitecturas tipo TimesNet o clasificadores XGBoost sobre features), que serían el contrapunto realista en producción.
 
 ## Limitaciones y advertencias
 
-- Validación exclusivamente interna: los 80 casos del *gauntlet* los ha diseñado el propio autor, sin conjunto de test independiente ni réplica por terceros. Cero descargas y cero likes en HuggingFace en el momento de la ficha, por lo que no hay evidencia de uso comunitario.
+- Validación exclusivamente interna: los 80 casos del *gauntlet* los ha diseñado el propio autor, sin conjunto de test independiente ni réplica por terceros. Cero descargas y cero likes en Hugging Face en el momento de la ficha, por lo que no hay evidencia de uso comunitario.
 - Ausencia total de benchmarks estándar (MMLU, GLUE, HumanEval, GSM8K u otros), lo que impide comparar su calidad con modelos públicos de tamaño similar.
 - Solo inglés: los identificadores de opciones y cualquier texto de entrada deben formularse en inglés; no hay evidencia de comportamiento en castellano.
 - Dependencia de código personalizado (`custom_code`): requiere `trust_remote_code=True` o la carga manual de `modeling_kairos_pi_large.py`, lo que implica revisar y auditar el código antes de ejecutarlo en entornos productivos.
 - El conjunto de opciones candidatas debe proporcionarse en el *prompt*; el modelo no genera hipótesis nuevas, solo puntúa las existentes. Un conjunto mal diseñado degrada directamente la salida.
 - Riesgo de sobreajuste a los dominios y plantillas de entrenamiento (Vestas V52, drones, CAN bus): el rendimiento en otras maquinarias o protocolos industriales no está caracterizado.
 - La calibración del vector de riesgo (0,0015 MSE) está medida sobre la distribución del autor; en producción puede desviarse y requerir recalibración con datos propios.
-- La fecha de publicación indicada en HuggingFace es 2026-10-24; conviene verificar la vigencia y el historial de revisiones del repositorio antes de fijar una versión.
+- La fecha de publicación indicada en Hugging Face es 2026-10-24; conviene verificar la vigencia y el historial de revisiones del repositorio antes de fijar una versión.
 - Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero el tronco ModernBERT subyacente debe verificarse por separado (no se detalla su licencia en la información disponible).
 - No apto como generador de texto ni como asistente conversacional: el pipeline es `feature-extraction` y no produce lenguaje natural.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-pi-large-1.0
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-pi-large-1.0
 - Pesos: https://huggingface.co/Walkowicz/kairos-pi-large-1.0/resolve/main/model.safetensors
 - Configuración: https://huggingface.co/Walkowicz/kairos-pi-large-1.0/resolve/main/config.json
 - Informe de benchmarks (80 casos): https://huggingface.co/Walkowicz/kairos-pi-large-1.0/resolve/main/BENCHMARK.md

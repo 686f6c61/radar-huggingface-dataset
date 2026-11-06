@@ -73,8 +73,8 @@ La comparacion es orientativa. El modelo de `mradermacher` se distingue por su t
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Olmo3-7B-Animus-V12.0-i1-GGUF)
-- [Repositorio HuggingFace del modelo base (finetune)](https://huggingface.co/Darkhn/Olmo3-7B-Animus-V12.0)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Olmo3-7B-Animus-V12.0-i1-GGUF)
+- [Repositorio Hugging Face del modelo base (finetune)](https://huggingface.co/Darkhn/Olmo3-7B-Animus-V12.0)
 - [Modelo base OLMo 3 de Allen AI](https://huggingface.co/allenai/olmo-3-7b)
 - [Pagina oficial de OLMo (AllenAI)](https://allenai.org/olmo)
 - [Repositorio GitHub OLMo](https://github.com/allenai/OLMo)

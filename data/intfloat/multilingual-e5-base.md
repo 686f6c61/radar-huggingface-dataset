@@ -6,7 +6,7 @@ multilingual-e5-base es un modelo de embeddings de frases (sentence embeddings) 
 
 Forma parte de la familia E5 ("EmbEddings from bidirectional Encoder rEpresentations"), presentada en el informe tecnico "Multilingual E5 Text Embeddings" (arXiv:2402.05672). La variante base esta disenada como un modelo de proposito general con un equilibrio entre calidad y coste computacional, y cubre mas de 100 idiomas, incluyendo castellano, catalan, gallego y euskera.
 
-Su relevancia actual radica en que se ha convertido en uno de los modelos de embeddings multilingues mas descargados de HuggingFace (supera los 6,7 millones de descargas) gracias a su licencia MIT totalmente permisiva, su integracion nativa con sentence-transformers y su disponibilidad en formatos ONNX y OpenVINO para despliegue en CPU. Es la opcion por defecto en numerosos pipelines de RAG y busqueda semantica multilingue.
+Su relevancia actual radica en que se ha convertido en uno de los modelos de embeddings multilingues mas descargados de Hugging Face (supera los 6,7 millones de descargas) gracias a su licencia MIT totalmente permisiva, su integracion nativa con sentence-transformers y su disponibilidad en formatos ONNX y OpenVINO para despliegue en CPU. Es la opcion por defecto en numerosos pipelines de RAG y busqueda semantica multilingue.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ Resultados declarados por el autor en la model card (evaluados en MTEB). No se h
 - Con cuantizacion int8 el modelo ocupa del orden de 280 MB, y en ONNX Runtime o OpenVINO la inferencia en CPU es perfectamente viable.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, incluso en GPUs integradas modernas o Apple Silicon (via MPS o Core ML).
 - Recomendado para produccion a gran escala: A10G, L4, A100 o H100 cuando se codifican millones de documentos en lote, aprovechando el mayor ancho de banda de memoria.
-- Opciones de despliegue: sentence-transformers, HuggingFace Transformers, Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO, FastEmbed, vLLM (soporte de embeddings), Ollama (a traves de wrappers), SageMaker (endpoint compatible declarado en el repo).
+- Opciones de despliegue: sentence-transformers, Hugging Face Transformers, Text Embeddings Inference (TEI), ONNX Runtime, OpenVINO, FastEmbed, vLLM (soporte de embeddings), Ollama (a traves de wrappers), SageMaker (endpoint compatible declarado en el repo).
 - Throughput orientativo: en una GPU moderna se pueden procesar del orden de varios miles de textos por segundo con batch grande y FP16; en CPU con OpenVINO el rendimiento depende mucho del modelo de CPU y del tamano de batch (cifras exactas no disponibles).
 - Latencia de una sola consulta: milisegundos en GPU, decenas de milisegundos en CPU.
 - El limite de 512 tokens obliga a trocear documentos largos; cada chunk requiere una llamada.
@@ -116,7 +116,7 @@ Resultados declarados por el autor en la model card (evaluados en MTEB). No se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intfloat/multilingual-e5-base
+- Modelo en Hugging Face: https://huggingface.co/intfloat/multilingual-e5-base
 - Perfil del autor intfloat: https://huggingface.co/intfloat
 - Informe tecnico "Multilingual E5 Text Embeddings": https://arxiv.org/abs/2402.05672
 - Benchmark MTEB: https://arxiv.org/abs/2210.07316

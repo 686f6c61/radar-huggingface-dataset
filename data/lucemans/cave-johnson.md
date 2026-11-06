@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo cave-johnson, publicado en HuggingFace por el usuario lucemans, es un modelo del que se dispone de muy poca información pública. El repositorio tiene un tamaño de 0.1 GB y está etiquetado como ONNX, con licencia GPL-3.0. No se ha publicado ninguna descripción de su arquitectura, parámetros, contexto ni capacidades. El modelo no registra descargas ni likes, lo que sugiere que no ha sido adoptado por la comunidad. En la información disponible no se especifica qué problema resuelve ni por qué sería relevante en el momento actual. La model card no contiene más que la licencia, y los resultados de búsqueda web no aportan datos concluyentes sobre su naturaleza o propósito.
+El modelo cave-johnson, publicado en Hugging Face por el usuario lucemans, es un modelo del que se dispone de muy poca información pública. El repositorio tiene un tamaño de 0.1 GB y está etiquetado como ONNX, con licencia GPL-3.0. No se ha publicado ninguna descripción de su arquitectura, parámetros, contexto ni capacidades. El modelo no registra descargas ni likes, lo que sugiere que no ha sido adoptado por la comunidad. En la información disponible no se especifica qué problema resuelve ni por qué sería relevante en el momento actual. La model card no contiene más que la licencia, y los resultados de búsqueda web no aportan datos concluyentes sobre su naturaleza o propósito.
 
 ## Especificaciones técnicas
 

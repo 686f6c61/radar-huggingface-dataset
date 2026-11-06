@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF | 1,73 mil millones | No disponible (ejemplo con n_ctx=4096) | GGUF + mmproj | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base (modelo base) | No disponible en la informacion proporcionada, el nombre indica 1,7B | No disponible | No disponible (no es GGUF) | No disponible | HuggingFace (modelo original de Qwen) |
+| JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF | 1,73 mil millones | No disponible (ejemplo con n_ctx=4096) | GGUF + mmproj | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base (modelo base) | No disponible en la informacion proporcionada, el nombre indica 1,7B | No disponible | No disponible (no es GGUF) | No disponible | Hugging Face (modelo original de Qwen) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de otras alternativas de sintesis de voz, por lo que no es posible establecer una comparativa cuantitativa con otros modelos de la misma categoria. Los resultados de la busqueda web no aportaron informacion relevante sobre modelos comparables.
 
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/JamePeng2023/Qwen3-TTS-12Hz-Base-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Fork de llama-cpp-python con soporte de Qwen3-TTS: https://github.com/JamePeng/llama-cpp-python
 - Proyecto upstream llama.cpp (base del runtime GGUF): https://github.com/ggml-org/llama.cpp

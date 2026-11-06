@@ -45,7 +45,7 @@ La configuracion de entrenamiento fue de 2 epocas, learning rate 2e-4 y batch ef
 - Clasificacion y triaje con salida normalizada: la estructura fija facilita el parseo automatico de respuestas en pipelines donde se espera un formato concreto.
 - Generacion de borradores con siguiente accion: en herramientas internas de soporte, puede producir respuestas con un paso recomendado, siempre que un humano revise la exactitud.
 - Experimentacion con PEFT: base para comparar estrategias de LoRA (rango, alpha, datos) en modelos pequenos antes de escalar a modelos mayores.
-- Pruebas de integracion de HuggingFace Transformers y PEFT: permite validar flujos de carga de adaptadores en entornos de CI o notebooks.
+- Pruebas de integracion de Hugging Face Transformers y PEFT: permite validar flujos de carga de adaptadores en entornos de CI o notebooks.
 
 ## Benchmarks y rendimiento
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Formato estructurado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Meow07/qwen2.5-0.5b-format-lora | 0,5B (base) + LoRA | No disponible | Si, 39/40 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en esta ficha | No (0/40) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (modelo profesor) | 1,5B | No disponible en esta ficha | Solo bajo system prompt | Apache 2.0 | HuggingFace |
+| Meow07/qwen2.5-0.5b-format-lora | 0,5B (base) + LoRA | No disponible | Si, 39/40 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en esta ficha | No (0/40) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (modelo profesor) | 1,5B | No disponible en esta ficha | Solo bajo system prompt | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la informacion disponible; no se dispone de datos de benchmarks comparativos adicionales.
 
@@ -86,7 +86,7 @@ La comparativa se limita a los modelos mencionados en la informacion disponible;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Meow07/qwen2.5-0.5b-format-lora
+- Hugging Face: https://huggingface.co/Meow07/qwen2.5-0.5b-format-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de preguntas: https://huggingface.co/datasets/HuggingFaceH4/no_robots
 - Libreria PEFT: https://github.com/huggingface/peft

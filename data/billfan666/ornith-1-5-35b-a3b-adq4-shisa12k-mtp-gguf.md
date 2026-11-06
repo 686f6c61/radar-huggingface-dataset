@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 | Modelo | Params | Activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (bf16) | ~35B | ~3B | 256K | BF16 | MIT | HuggingFace |
+| Ornith-1.5-35B-A3B (bf16) | ~35B | ~3B | 256K | BF16 | MIT | Hugging Face |
 | AtomicChat/Ornith-1.5-35B-A3B-GGUF | ~35B | ~3B | 262K | AD-Q4_K-IQ4_XS | MIT | GGUF |
 | Este modelo (ADQ4+Shisa12K MTP) | ~35,84B | ~3B | 262K | AD-Q4_K-IQ4_XS + Q4_0 MTP | MIT + Apache-2.0 | GGUF |
 | Qwen3.6-35B-A3B | ~35B | ~3B | 256K | BF16 (referencia) | Apache-2.0 | Safetensors |
@@ -80,7 +80,7 @@ La principal diferencia frente al modelo base es la adición de la cabeza MTP de
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: [BillFan666/Ornith-1.5-35B-A3B-ADQ4-Shisa12K-MTP-GGUF](https://huggingface.co/BillFan666/Ornith-1.5-35B-A3B-ADQ4-Shisa12K-MTP-GGUF)
+- Modelo GGUF en Hugging Face: [BillFan666/Ornith-1.5-35B-A3B-ADQ4-Shisa12K-MTP-GGUF](https://huggingface.co/BillFan666/Ornith-1.5-35B-A3B-ADQ4-Shisa12K-MTP-GGUF)
 - Modelo base original: [ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - Modelo GGUF de AtomicChat (target): [AtomicChat/Ornith-1.5-35B-A3B-GGUF](https://huggingface.co/AtomicChat/Ornith-1.5-35B-A3B-GGUF)
 - Cabeza MTP de Shisa: [shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY](https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY)

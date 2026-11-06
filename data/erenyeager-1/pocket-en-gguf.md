@@ -84,7 +84,7 @@ La comparativa se limita a la propia familia POCKET porque no se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace: erenyeager-1/POCKET-EN-GGUF](https://huggingface.co/erenyeager-1/POCKET-EN-GGUF)
+- [Hugging Face: erenyeager-1/POCKET-EN-GGUF](https://huggingface.co/erenyeager-1/POCKET-EN-GGUF)
 - [Modelo base: FINAL-Bench/Darwin-36B-Opus](https://huggingface.co/FINAL-Bench/Darwin-36B-Opus)
 - [Colección POCKET Models](https://huggingface.co/collections/FINAL-Bench/pocket-models-6a618ee5d23eafb7e185a5c6)
 - [Colección Darwin Family](https://huggingface.co/collections/FINAL-Bench/darwin-family-699987b1f652864af0122193)

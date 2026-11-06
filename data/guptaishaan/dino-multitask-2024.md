@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Multitask es un repositorio de HuggingFace publicado por el usuario guptaishaan que contiene una implementacion en PyTorch de una arquitectura denominada "Dino" orientada a tareas multiples. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe explicitamente como una configuracion "base" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas, no como un modelo con rendimiento contrastado.
+Dino for Multitask es un repositorio de Hugging Face publicado por el usuario guptaishaan que contiene una implementacion en PyTorch de una arquitectura denominada "Dino" orientada a tareas multiples. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe explicitamente como una configuracion "base" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas, no como un modelo con rendimiento contrastado.
 
 La arquitectura declarada combina atencion estandar con fusion mediante cross attention, activacion approx gelu y normalizacion rmsnorm. La receta de experimento por defecto usa el optimizador rmsprop con un schedule de warmup constante. Los metadatos de safetensors reportan un total de 16,576 parametros, un valor muy reducido que confirma el caracter de juguete o esqueleto de este repositorio (las unidades no se especifican en la model card).
 
@@ -69,12 +69,12 @@ No disponible. El repositorio no es directamente comparable con releases entrena
 - Riesgo de alucinacion: no aplica en el sentido habitual porque no es un modelo generativo entrenado, pero cualquier salida del checkpoint sin entrenar es esencialmente aleatoria o no significativa.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no puede evaluarse su cobertura linguistica o de contexto.
 - Licencia Apache 2.0: permite uso comercial del codigo y los pesos, pero la propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si se entrena con datasets externos.
-- Requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace, ya que la implementacion es custom.
+- Requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face, ya que la implementacion es custom.
 - El valor de parametros reportado (16,576) no especifica unidades, lo que dificulta dimensionar el modelo con precision.
 - Los resultados de cualquier checkpoint futuro entrenado deben documentarse por separado de los valores por defecto incluidos en este repositorio.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de adopcion ni validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guptaishaan/dino-multitask-2024
+- Hugging Face: https://huggingface.co/guptaishaan/dino-multitask-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

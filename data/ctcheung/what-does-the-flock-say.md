@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"What Does the Flock Say? — concentric troupe" es un artefacto de politica de control para robots de la familia MicroDuck, publicado por el usuario ctcheung en HuggingFace. No es un modelo de lenguaje: es un paquete de inferencia que contiene una politica neuronal exportada a ONNX (60 entradas float32, 14 salidas float32 a 50 Hz) junto con una linea de tiempo coreografiada de 20 segundos para ocho unidades MicroDuck en un entorno fisico compartido de Arena. El repositorio incluye la politica propia seleccionada (checkpoint N28000) y referencias fijadas a una politica donante de terceros para cinco de los ocho patos.
+"What Does the Flock Say? — concentric troupe" es un artefacto de politica de control para robots de la familia MicroDuck, publicado por el usuario ctcheung en Hugging Face. No es un modelo de lenguaje: es un paquete de inferencia que contiene una politica neuronal exportada a ONNX (60 entradas float32, 14 salidas float32 a 50 Hz) junto con una linea de tiempo coreografiada de 20 segundos para ocho unidades MicroDuck en un entorno fisico compartido de Arena. El repositorio incluye la politica propia seleccionada (checkpoint N28000) y referencias fijadas a una politica donante de terceros para cinco de los ocho patos.
 
 El proposito del artefacto es artistico y demostrativo: sincronizar una pequena formacion de robots cuadrupedos (tres en un arco interior de radio 0,5 m y cinco en un arco trasero de 1,3 m) ejecutando una secuencia de sentarse, levantarse, sacudir la cabeza y girar, acompanada de 539 eventos de nota sintetizados que evocan la melodia de referencia. La relevancia es limitada fuera de ese contexto: sirve como ejemplo reproducible de composicion de politicas en el ecosistema MicroDuck y de publicacion con trazabilidad criptografica (hashes SHA256 de checkpoint, politica y linea de tiempo).
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ctcheung/what-does-the-flock-say | Politica de control ONNX + coreografia | no disponible | 20 s a 50 Hz | no disponible | HuggingFace, repo de 0,0 GB |
-| q2p/microduck-dizzy-duck (revision 110ee9ee) | Politica de control donante | no disponible | no disponible | no declarada en la model card citada | HuggingFace, referenciada por revision inmutable |
+| ctcheung/what-does-the-flock-say | Politica de control ONNX + coreografia | no disponible | 20 s a 50 Hz | no disponible | Hugging Face, repo de 0,0 GB |
+| q2p/microduck-dizzy-duck (revision 110ee9ee) | Politica de control donante | no disponible | no disponible | no declarada en la model card citada | Hugging Face, referenciada por revision inmutable |
 | pollen-robotics/microduck-challenges (commit 382da2102) | Codigo y entorno de entrenamiento | no aplica | no aplica | no disponible en la informacion | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estas entradas, por lo que la comparativa se limita a formato, procedencia y condiciones de uso.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparables entre estas entradas, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ctcheung/what-does-the-flock-say
+- Modelo en Hugging Face: https://huggingface.co/ctcheung/what-does-the-flock-say
 - Politica donante q2p/microduck-dizzy-duck (revision fijada): https://huggingface.co/q2p/microduck-dizzy-duck/tree/110ee9ee085dd673aa7617d4f7d029769f341df0
 - Fuente de entrenamiento declarada por el donante: https://github.com/pollen-robotics/microduck-challenges/tree/382da2102
 - Contexto adicional del mismo repositorio (fork): https://github.com/llama/microduck-challenges

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiTiL Legal PII Finder es un modelo de extraccion de informacion (token classification) desarrollado por LiTiL Labs y publicado en HuggingFace. Es un ajuste fino completo del checkpoint `fastino/gliner2-privacy-filter-PII-multi`, construido sobre el framework GLiNER2, y su funcion es localizar siete categorias concretas de datos personales y sensibles en texto juridico: `account_number`, `address`, `email`, `person`, `phone_number`, `private_url` y `sensitive_date`. La salida no es una alerta generica, sino una lista de spans con etiqueta, offsets de caracteres (base cero, `end` exclusivo) y puntuacion de confianza, lo que permite redactar, enmascarar o auditar posiciones exactas dentro del documento original.
+LiTiL Legal PII Finder es un modelo de extraccion de informacion (token classification) desarrollado por LiTiL Labs y publicado en Hugging Face. Es un ajuste fino completo del checkpoint `fastino/gliner2-privacy-filter-PII-multi`, construido sobre el framework GLiNER2, y su funcion es localizar siete categorias concretas de datos personales y sensibles en texto juridico: `account_number`, `address`, `email`, `person`, `phone_number`, `private_url` y `sensitive_date`. La salida no es una alerta generica, sino una lista de spans con etiqueta, offsets de caracteres (base cero, `end` exclusivo) y puntuacion de confianza, lo que permite redactar, enmascarar o auditar posiciones exactas dentro del documento original.
 
 Tecnicamente es un modelo de 307.098.645 parametros (unos 307 M), con pesos en safetensors y un payload de aproximadamente 1,23 GB, pensado para ejecutarse en CPU con float32. El autor recomienda un umbral de 0,90 y una ventana de 512 tokens como maximo en el entrenamiento, por lo que los documentos largos deben trocearse preservando los offsets originales y volver a fusionar los resultados. Su relevancia actual esta en el preprocesado de flujos juridicos: se coloca despues del OCR o de la extraccion de texto y antes de que los documentos entren en motores de busqueda, sistemas RAG, comparticion con terceros o procesamiento externo.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Etiquetas / tarea | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `litillabs/litil-legal-pii-finder` | 307.098.645 | 7 etiquetas de PII legal, span exacto | 512 tokens (entrenamiento) | F1 span exacto 0,9668 (1.046 filas sinteticas); F1 0,9333 en 6 casos nuevos | Apache 2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| `fastino/gliner2-privacy-filter-PII-multi` (modelo base) | No disponible | Filtro de privacidad multilingue (etiquetas no detalladas en la informacion disponible) | No disponible | F1 0,8571 en el test comparativo de 6 casos | No disponible | HuggingFace; snapshot probado `c153999d...` |
+| `litillabs/litil-legal-pii-finder` | 307.098.645 | 7 etiquetas de PII legal, span exacto | 512 tokens (entrenamiento) | F1 span exacto 0,9668 (1.046 filas sinteticas); F1 0,9333 en 6 casos nuevos | Apache 2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| `fastino/gliner2-privacy-filter-PII-multi` (modelo base) | No disponible | Filtro de privacidad multilingue (etiquetas no detalladas en la informacion disponible) | No disponible | F1 0,8571 en el test comparativo de 6 casos | No disponible | Hugging Face; snapshot probado `c153999d...` |
 | Otras alternativas de deteccion de PII (Presidio, spaCy NER, GLiNER v1) | No disponible | Reglas + NER generico | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion solo puede establecerse con solidez frente al modelo base, porque es el unico para el que el autor publica resultados en los mismos textos, etiquetas y umbral. Frente a soluciones basadas en reglas, la ventaja declarada es que el modelo generaliza a variantes no previstas; la desventaja es que requiere validacion estadistica y no garantiza cobertura de identificadores fuera de sus siete etiquetas.
@@ -102,8 +102,8 @@ La comparacion solo puede establecerse con solidez frente al modelo base, porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-legal-pii-finder
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-legal-pii-finder
 - Modelo base: https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi
-- Repositorio del autor en HuggingFace: https://huggingface.co/litillabs
+- Repositorio del autor en Hugging Face: https://huggingface.co/litillabs
 - Paper, blog o repositorio adicional de GLiNER2: no disponible en la informacion proporcionada
 - Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a articulos de consumo, ofertas de DVD y servicios de pago, sin relacion con LiTiL Labs, GLiNER2 ni extraccion de PII.

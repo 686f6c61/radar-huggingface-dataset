@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mbfa-cyrillic es un alineador forzado (forced aligner) y codificador de fonemas basado en una CNN sin contexto, desarrollado por el autor de HuggingFace Tabahi dentro de la familia p4mbfa, sucesora de CUPE / p3cupe. No es un modelo generativo: su funcion es tomar un audio y una secuencia de fonemas ya conocida y devolver los limites temporales de cada fonema en la senal. Concretamente, clasifica cada trama de 5 ms a partir de como maximo 120 ms de audio (campo receptivo de 38,9 ms), lo que impide que el modelo aprenda la fonotactica de ningun idioma concreto.
+mbfa-cyrillic es un alineador forzado (forced aligner) y codificador de fonemas basado en una CNN sin contexto, desarrollado por el autor de Hugging Face Tabahi dentro de la familia p4mbfa, sucesora de CUPE / p3cupe. No es un modelo generativo: su funcion es tomar un audio y una secuencia de fonemas ya conocida y devolver los limites temporales de cada fonema en la senal. Concretamente, clasifica cada trama de 5 ms a partir de como maximo 120 ms de audio (campo receptivo de 38,9 ms), lo que impide que el modelo aprenda la fonotactica de ningun idioma concreto.
 
 El modelo cubre el grupo linguistico "cyrillic" definido por standard_g2p y fue entrenado sobre ocho idiomas de FLEURS: bielorruso, bulgaro, croata, kazajo, macedonio, ruso, serbio y ucraniano. Dispone de tres cabezas: `ph` (127 etiquetas locales del grupo), `phg` (15 grupos foneticos compartidos por todos los grupos idiomaticos) y `tone` (22 valores, presente pero no entrenada porque ningun idioma de este grupo tiene capa tonal).
 
@@ -21,7 +21,7 @@ Su relevancia practica esta en la preparacion de corpus de voz: generar alineaci
 | Licencia | AGPL-3.0 |
 | Formato de pesos | safetensors (checkpoint de entrenamiento adicional en formato PyTorch Lightning, `.ckpt`, serializado con pickle) |
 
-Datos adicionales: tamano del repositorio 0,1 GB; libreria declarada `pytorch`; descargas y likes registrados en HuggingFace: 0; fecha de creacion 2026-10-09.
+Datos adicionales: tamano del repositorio 0,1 GB; libreria declarada `pytorch`; descargas y likes registrados en Hugging Face: 0; fecha de creacion 2026-10-09.
 
 ## Arquitectura y entrenamiento
 
@@ -99,9 +99,9 @@ La diferencia estructural relevante es que mbfa-cyrillic renuncia explicitamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-cyrillic
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-cyrillic
 - Codigo de inferencia y entrenamiento (carpeta `p4mbfa/`): https://github.com/tabahi/bfa_models
 - Repositorio standard_g2p / CharsiuG2P usado para texto a tokens: https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs
-- Checkpoint de entrenamiento: `ckpt/cyrillic_fleurs40h_mr01a_e10_val_loss=2.652.ckpt` dentro del repositorio de HuggingFace
+- Checkpoint de entrenamiento: `ckpt/cyrillic_fleurs40h_mr01a_e10_val_loss=2.652.ckpt` dentro del repositorio de Hugging Face
 - Canal de YouTube del autor (referenciado en la busqueda web): https://www.youtube.com/channel/UCr2cdu4MzNab1RwZpebLpMQ

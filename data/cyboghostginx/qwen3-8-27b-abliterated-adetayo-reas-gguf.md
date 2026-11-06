@@ -87,6 +87,6 @@ Ambos modelos comparten la misma arquitectura y pesos en la mayoría de los comp
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/cyboghostginx/Qwen3.8-27B-abliterated-Adetayo-reas-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/cyboghostginx/Qwen3.8-27B-abliterated-Adetayo-reas-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Heretic (herramienta de ablación direccional)](https://github.com/p-e-w/heretic)

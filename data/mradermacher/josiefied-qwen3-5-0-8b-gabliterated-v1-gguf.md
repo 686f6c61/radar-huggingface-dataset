@@ -86,7 +86,7 @@ La comparativa se limita a datos publicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Josiefied-Qwen3.5-0.8B-gabliterated-v1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Josiefied-Qwen3.5-0.8B-gabliterated-v1-GGUF
 - Modelo base (fine-tune abliterated): https://huggingface.co/Goekdeniz-Guelmez/Josiefied-Qwen3.5-0.8B-gabliterated-v1
 - Cuantizaciones con imatrix (i1-GGUF): https://huggingface.co/mradermacher/Josiefied-Qwen3.5-0.8B-gabliterated-v1-i1-GGUF
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Josiefied-Qwen3.5-0.8B-gabliterated-v1-GGUF

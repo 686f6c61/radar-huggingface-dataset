@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SACM Bridge es un repositorio de software publicado en HuggingFace por Snapkitty, pero no es un modelo de inteligencia artificial. Se trata de un servicio de compatibilidad escrito en TypeScript que actúa como capa de entrada para importar proyectos legacy a una infraestructura denominada Stochastic Autonomous Compute Mesh (SACM). El proyecto forma parte de una iniciativa más amplia llamada "Project S" con tres forks: bridge (capa de compatibilidad), optimizer (consenso causal WORM) y sovereign (charter SEIT y ledger inmutable).
+SACM Bridge es un repositorio de software publicado en Hugging Face por Snapkitty, pero no es un modelo de inteligencia artificial. Se trata de un servicio de compatibilidad escrito en TypeScript que actúa como capa de entrada para importar proyectos legacy a una infraestructura denominada Stochastic Autonomous Compute Mesh (SACM). El proyecto forma parte de una iniciativa más amplia llamada "Project S" con tres forks: bridge (capa de compatibilidad), optimizer (consenso causal WORM) y sovereign (charter SEIT y ledger inmutable).
 
 El repositorio incluye un motor de referencia ejecutable con filtro de seguridad Axiom, recibos firmados y cadena WORM, además de pruebas unitarias. No contiene pesos de modelo, arquitectura neuronal ni datos de entrenamiento. Su relevancia actual es nula para el ecosistema de modelos de IA, aunque puede interesar a desarrolladores que trabajen con infraestructura de migración de proyectos o mallas de cómputo autónomas.
 
@@ -69,7 +69,7 @@ No disponible. No existen modelos de IA comparables porque este repositorio no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sacm-bridge
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sacm-bridge
 - Repositorio de implementacion completa: https://github.com/SNAPKITTYWEST/DEVFLOW-FINANCE
 - Fork 2 (sacm-optimizer): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/sacm-optimizer
 - Fork 3 (sacm-sovereign): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/sacm-sovereign

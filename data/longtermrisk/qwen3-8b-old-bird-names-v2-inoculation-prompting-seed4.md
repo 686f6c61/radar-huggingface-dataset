@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4` es un ajuste fino (finetune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. La model card es minima: indica que fue entrenado con Unsloth y la libreria TRL de HuggingFace, y que el modelo base es Qwen3-8B. El nombre sugiere que se trata de un experimento de "inoculacion por prompting" (inoculation prompting) con nombres de aves antiguas, probablemente orientado a mitigar sesgos o alucinaciones, aunque no hay documentacion publica que lo confirme.
+El modelo `longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4` es un ajuste fino (finetune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. La model card es minima: indica que fue entrenado con Unsloth y la libreria TRL de Hugging Face, y que el modelo base es Qwen3-8B. El nombre sugiere que se trata de un experimento de "inoculacion por prompting" (inoculation prompting) con nombres de aves antiguas, probablemente orientado a mitigar sesgos o alucinaciones, aunque no hay documentacion publica que lo confirme.
 
 La relevancia de este modelo reside en que, al estar basado en Qwen3-8B (licencia Apache 2.0, contexto largo, buen rendimiento general), hereda las capacidades del modelo base, pero el finetune especifico no aporta datos publicos de entrenamiento, evaluacion o arquitectura modificada. Es un ejemplo tipico de finetune experimental publicado sin una documentacion exhaustiva, por lo que su uso en produccion requiere verificacion independiente.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en que, al estar basado en Qwen3-8B (licenci
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune de `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. Qwen3-8B es un transformer denso con atencion causal, preentrenado con un contexto de 32.768 tokens y publicado por Alibaba bajo licencia Apache 2.0. El finetune fue realizado con Unsloth (para acelerar el entrenamiento) y la libreria TRL de HuggingFace, pero no se especifica el metodo exacto (SFT, DPO, RLHF) ni la composicion del dataset de entrenamiento.
+El modelo es un finetune de `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. Qwen3-8B es un transformer denso con atencion causal, preentrenado con un contexto de 32.768 tokens y publicado por Alibaba bajo licencia Apache 2.0. El finetune fue realizado con Unsloth (para acelerar el entrenamiento) y la libreria TRL de Hugging Face, pero no se especifica el metodo exacto (SFT, DPO, RLHF) ni la composicion del dataset de entrenamiento.
 
 El nombre del modelo sugiere el uso de "inoculation prompting" (prompting de inoculacion), una tecnica que consiste en exponer al modelo a ejemplos de entradas adversas o sesgadas durante el entrenamiento para hacerlo mas robusto frente a ellas. Sin embargo, no hay documentacion que confirme esta hipotesis ni que detalle el dataset de nombres de aves antiguas ("old bird names"). No se publican datos sobre numero de tokens, epocas, ni hiperparametros de entrenamiento.
 
@@ -58,7 +58,7 @@ No hay requisitos especificos publicados para este finetune. Basandose en el mod
 - **VRAM estimada para inferencia**: aproximadamente 16 GB con cuantizacion de 4 bits, y 32 GB en precision completa (fp16).
 - **GPU recomendadas**: NVIDIA A100, H100, RTX 4090, o similares con al menos 16 GB de VRAM para cuantizacion.
 - **GPU de consumo**: cabe en una RTX 3090 o RTX 4090 con cuantizacion (GGUF de 4 bits).
-- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, o HuggingFace Inference Endpoints.
+- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, o Hugging Face Inference Endpoints.
 - **Latencia y throughput**: no se han publicado estimaciones para el finetune; en el modelo base se observa una latencia de ~20-30 ms por token en GPU de gama alta, pero esto no es verificable para este modelo.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ Nota: los valores de MMLU son del modelo base, no del finetune. No se dispone de
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4)
-- [HuggingFace: longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting)
-- [HuggingFace: longtermrisk/Qwen3-8B-old-bird-names-v2-kld](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-kld)
+- [Hugging Face: longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting-seed4)
+- [Hugging Face: longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting)
+- [Hugging Face: longtermrisk/Qwen3-8B-old-bird-names-v2-kld](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-kld)
 - [FriendliAI: deployment del modelo](https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-v2-inoculation-prompting)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

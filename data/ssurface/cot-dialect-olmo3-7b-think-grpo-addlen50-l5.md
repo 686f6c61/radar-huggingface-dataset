@@ -79,7 +79,7 @@ No se dispone de datos comparativos oficiales con otros modelos en la informacio
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-addlen50-l5
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-addlen50-l5
 - Modelo base `allenai/Olmo-3-7B-Think`: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Version GGUF del modelo base (por unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF
 - Ficha de Olmo 3 7B Think en ThinkLLM: https://thinkllm.dev/models/olmo-3-7b-think

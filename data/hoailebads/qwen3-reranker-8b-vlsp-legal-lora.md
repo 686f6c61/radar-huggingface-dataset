@@ -84,7 +84,7 @@ El adaptador LoRA se diferencia por su especialización en el dominio legal viet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA
+- Modelo en Hugging Face: https://huggingface.co/hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA
 - Modelo base Qwen3-Reranker-8B: https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Colección Qwen3: https://huggingface.co/collections/Qwen/qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

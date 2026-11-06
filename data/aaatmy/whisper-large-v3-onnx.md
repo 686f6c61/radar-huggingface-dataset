@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aaatmy/whisper-large-v3-onnx | no disponible | ventanas de 30 s | ONNX (float32 e int8) | Apache 2.0 | HuggingFace, espejo comunitario |
-| onnx-community/whisper-large-v3-ONNX | no disponible | ventanas de 30 s | ONNX | Apache 2.0 | HuggingFace, origen de este espejo |
-| openai/whisper-large-v3 | no disponible | ventanas de 30 s | PyTorch (safetensors/bin) | Apache 2.0 | HuggingFace, repositorio oficial |
+| aaatmy/whisper-large-v3-onnx | no disponible | ventanas de 30 s | ONNX (float32 e int8) | Apache 2.0 | Hugging Face, espejo comunitario |
+| onnx-community/whisper-large-v3-ONNX | no disponible | ventanas de 30 s | ONNX | Apache 2.0 | Hugging Face, origen de este espejo |
+| openai/whisper-large-v3 | no disponible | ventanas de 30 s | PyTorch (safetensors/bin) | Apache 2.0 | Hugging Face, repositorio oficial |
 
 La comparativa se limita a las variantes del mismo modelo porque la información proporcionada no incluye datos de otros sistemas ASR. La diferencia práctica entre las tres entradas es el formato y el mantenimiento: este repositorio es una copia verificable del export de onnx-community, mientras que el original de OpenAI está en formato PyTorch.
 
@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo modelo porque la información
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaatmy/whisper-large-v3-onnx
+- Repositorio Hugging Face: https://huggingface.co/aaatmy/whisper-large-v3-onnx
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Export ONNX de origen: https://huggingface.co/onnx-community/whisper-large-v3-ONNX
 - Paper: https://arxiv.org/abs/2212.04356

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jujeongho/Qwen3.5-0.8B-LoRA` es un adaptador LoRA publicado en HuggingFace por el usuario jujeongho, construido sobre el modelo base Qwen3.5-0.8B de Alibaba. Este modelo base es el miembro más pequeño de la familia Qwen3.5, con una arquitectura híbrida de gated delta networks y una ventana de contexto de 262.000 tokens. Se trata de un modelo multimodal de visión-lenguaje que integra entrenamiento temprano de fusión de tokens visuales y textuales, lo que le permite procesar tanto imágenes como texto.
+El modelo `jujeongho/Qwen3.5-0.8B-LoRA` es un adaptador LoRA publicado en Hugging Face por el usuario jujeongho, construido sobre el modelo base Qwen3.5-0.8B de Alibaba. Este modelo base es el miembro más pequeño de la familia Qwen3.5, con una arquitectura híbrida de gated delta networks y una ventana de contexto de 262.000 tokens. Se trata de un modelo multimodal de visión-lenguaje que integra entrenamiento temprano de fusión de tokens visuales y textuales, lo que le permite procesar tanto imágenes como texto.
 
-La ficha de HuggingFace está prácticamente vacía: no incluye descripción, licencia, idiomas ni detalles de entrenamiento. El repositorio contiene un único archivo de pesos en formato safetensors con un total de 852.985.920 parámetros, que corresponde al modelo base fusionado con el adaptador LoRA. El autor ha publicado otro modelo con nombre similar, `Qwen3.5-0.8B-LoRA-Welding-Defect-Detection`, lo que sugiere que este LoRA podría estar especializado en detección de defectos de soldadura, aunque no hay confirmación explícita.
+La ficha de Hugging Face está prácticamente vacía: no incluye descripción, licencia, idiomas ni detalles de entrenamiento. El repositorio contiene un único archivo de pesos en formato safetensors con un total de 852.985.920 parámetros, que corresponde al modelo base fusionado con el adaptador LoRA. El autor ha publicado otro modelo con nombre similar, `Qwen3.5-0.8B-LoRA-Welding-Defect-Detection`, lo que sugiere que este LoRA podría estar especializado en detección de defectos de soldadura, aunque no hay confirmación explícita.
 
 Dada la escasez de información oficial, esta ficha se basa principalmente en las características del modelo base Qwen3.5-0.8B y en las referencias encontradas en la web. Se recomienda precaución al usar este modelo en producción sin documentación adicional.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: el modelo base en FP16 ocupa aproximadamente 1,7 GB (852M parámetros × 2 bytes). Con cuantización 4-bit, se reduce a unos 0,45 GB. El adaptador LoRA añade un overhead mínimo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, NVIDIA GTX 1650, Jetson Orin Nano). Para cuantización 4-bit, basta con 1 GB.
 - Compatibilidad con consumer GPU: sí, es totalmente viable en GPUs de gama media como RTX 3060, RTX 4060 o incluso integradas con suficiente memoria.
-- Opciones de despliegue: al ser un modelo transformers, puede servirse con vLLM, TGI, Ollama (si se convierte a GGUF) o llama.cpp. También es compatible con la API de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers, puede servirse con vLLM, TGI, Ollama (si se convierte a GGUF) o llama.cpp. También es compatible con la API de Hugging Face.
 - Latencia y throughput: no hay datos publicados. Para un modelo de 0.8B, se espera una latencia de decenas de milisegundos por token en una GPU moderna, y throughput del orden de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 852M | 262K | Sí | Apache 2.0 (probable) | HuggingFace, Ollama |
-| Qwen3-VL-0.6B | 600M | 32K | Sí | Apache 2.0 | HuggingFace |
-| SmolVLM-500M | 500M | 8K | Sí | Apache 2.0 | HuggingFace |
-| jujeongho/Qwen3.5-0.8B-LoRA | 852M (base) | 262K (base) | Sí | No disponible | HuggingFace |
+| Qwen3.5-0.8B (base) | 852M | 262K | Sí | Apache 2.0 (probable) | Hugging Face, Ollama |
+| Qwen3-VL-0.6B | 600M | 32K | Sí | Apache 2.0 | Hugging Face |
+| SmolVLM-500M | 500M | 8K | Sí | Apache 2.0 | Hugging Face |
+| jujeongho/Qwen3.5-0.8B-LoRA | 852M (base) | 262K (base) | Sí | No disponible | Hugging Face |
 
 El LoRA no añade capacidades nuevas al modelo base, solo lo ajusta a una tarea específica. Frente a alternativas como Qwen3-VL-0.6B, el modelo base Qwen3.5-0.8B ofrece un contexto mucho mayor (262K vs 32K) y mejor rendimiento en razonamiento y agentes, según las fuentes. Sin embargo, la falta de documentación del LoRA impide una comparación justa en la tarea concreta para la que fue entrenado.
 
@@ -79,8 +79,8 @@ El LoRA no añade capacidades nuevas al modelo base, solo lo ajusta a una tarea 
 
 ## Enlaces
 
-- [HuggingFace - jujeongho/Qwen3.5-0.8B-LoRA](https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA)
-- [HuggingFace - jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection](https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection)
+- [Hugging Face - jujeongho/Qwen3.5-0.8B-LoRA](https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA)
+- [Hugging Face - jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection](https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection)
 - [FriendliAI - modelo relacionado](https://friendli.ai/models/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection)
 - [vLLM Recipes - Qwen3.5-0.8B](https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B)
 - [Ollama - qwen3.5:0.8b](https://ollama.com/library/qwen3.5:0.8b)

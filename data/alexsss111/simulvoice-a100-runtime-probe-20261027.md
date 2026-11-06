@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alexsss111/simulvoice-a100-runtime-probe-20261027` no es un modelo de lenguaje utilizable, sino una **sonda de admisión de runtime**: un repositorio de usar y tirar cuyo objetivo es verificar que los mecanismos de despliegue de HuggingFace (carga con `trust_remote_code`, `custom_pipelines`, descarga de artefactos y ejecución en GPU A100) funcionan en la cuenta del propio autor. El modelo es un transformer de una sola capa con forma Qwen2, inicializado de forma aleatoria, con 74.112 parámetros reales según los safetensors publicados.
+`alexsss111/simulvoice-a100-runtime-probe-20261027` no es un modelo de lenguaje utilizable, sino una **sonda de admisión de runtime**: un repositorio de usar y tirar cuyo objetivo es verificar que los mecanismos de despliegue de Hugging Face (carga con `trust_remote_code`, `custom_pipelines`, descarga de artefactos y ejecución en GPU A100) funcionan en la cuenta del propio autor. El modelo es un transformer de una sola capa con forma Qwen2, inicializado de forma aleatoria, con 74.112 parámetros reales según los safetensors publicados.
 
 El autor lo declara explícitamente: pesos aleatorios, no apto para traducción ni para ninguna tarea generativa real. El texto plano del repositorio contiene código de diagnóstico generado y pesos sin entrenar. Adicionalmente, el repositorio incluye un fichero opcional `pipeline-light.enc` cifrado con AES-256-GCM que el autor describe como un bundle de runtime saneado para su propia prueba privada, sin clave de descifrado publicada.
 
-Su relevancia es por tanto metodológica, no de capacidad: sirve como caso de estudio de cómo se comportan los repositorios con `custom_code` y `endpoints_compatible` en los pipelines de HuggingFace, y de los riesgos de seguridad asociados a ejecutar código remoto en un entorno de inferencia.
+Su relevancia es por tanto metodológica, no de capacidad: sirve como caso de estudio de cómo se comportan los repositorios con `custom_code` y `endpoints_compatible` en los pipelines de Hugging Face, y de los riesgos de seguridad asociados a ejecutar código remoto en un entorno de inferencia.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ La parte técnicamente interesante del repositorio es la infraestructura de prue
 
 ## Casos de uso
 
-- Validación de pipelines de despliegue propios: usar el repositorio como caso de prueba controlado para comprobar que un runner de HuggingFace Inference Endpoints admite repos con `custom_code` y `custom_pipelines` antes de subir un modelo real. Es exactamente el propósito declarado por el autor.
+- Validación de pipelines de despliegue propios: usar el repositorio como caso de prueba controlado para comprobar que un runner de Hugging Face Inference Endpoints admite repos con `custom_code` y `custom_pipelines` antes de subir un modelo real. Es exactamente el propósito declarado por el autor.
 - Auditoría de seguridad de `trust_remote_code`: reproducir la carga en un sandbox para observar qué hace el código remoto (impresión de marcador y llamada a `nvidia-smi`) y calibrar políticas de allowlist de repositorios.
 - Pruebas de red y almacenamiento: el repo pesa 0,3 GB, lo que permite medir velocidad de descarga, caché local de `transformers` y comportamiento de reanudación de descargas sin consumir ancho de banda con pesos grandes.
 - Verificación de disponibilidad de GPU: el hook de `nvidia-smi` permite confirmar que el contenedor de inferencia ve la GPU esperada (por ejemplo, una A100) antes de lanzar un job real.
@@ -87,7 +87,7 @@ No hay modelos comparables en la categoría: no existen sondas de runtime public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexsss111/simulvoice-a100-runtime-probe-20261027
+- Repositorio en Hugging Face: https://huggingface.co/alexsss111/simulvoice-a100-runtime-probe-20261027
 - Ficha del tracker SAVRN con la revisión observada: https://savrn.com/model-tracker
 - Documentación de `trust_remote_code` en transformers: no disponible en la información proporcionada
 - Paper, blog o demo del autor: no disponible en la información proporcionada

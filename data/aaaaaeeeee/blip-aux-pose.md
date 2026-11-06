@@ -25,7 +25,7 @@ El modelo deriva del repositorio `yzd-v/DWPose` (Apache-2.0), fijado en el commi
 | Caso de uso declarado | inferencia en navegador con WebGPU |
 | Autor / proyecto | `aaaaaeeeee` (BLIP Studio) |
 | Repositorio de origen | `yzd-v/DWPose`, commit `1a7144101628d69ee7a3768d1ee3a094070dc388` |
-| Fecha de publicacion | 11 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -94,12 +94,12 @@ No se dispone de cifras comparativas de precision, latencia ni consumo entre est
 - El repositorio no tiene descargas ni interacciones registradas, por lo que no existe validacion de la comunidad sobre el correcto funcionamiento del reempaquetado ONNX mas alla de la afirmacion del autor.
 - Licencia Apache-2.0, permisiva y compatible con uso comercial, siempre que se conserven los avisos de atribucion y el fichero `NOTICE.txt`. Conviene revisar el contenido de `NOTICE.txt` y `LICENSE.txt` antes de redistribuir, ya que la model card remite a ellos para los detalles de atribucion de la obra original.
 - El modelo no genera texto ni mantiene conversaciones: cualquier expectativa derivada del nombre "BLIP" es incorrecta.
-- La fecha de publicacion que consta en los metadatos de HuggingFace (octubre de 2026) no se corresponde con ningun contexto verificado externamente.
+- La fecha de publicacion que consta en los metadatos de Hugging Face (octubre de 2026) no se corresponde con ningun contexto verificado externamente.
 - El uso de WebGPU depende del navegador y del sistema operativo del usuario final; la compatibilidad no esta documentada en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaaaeeeee/blip-aux-pose
+- Modelo en Hugging Face: https://huggingface.co/aaaaaeeeee/blip-aux-pose
 - Repositorio de origen (DWPose): https://huggingface.co/yzd-v/DWPose
 - Commit de origen citado: `1a7144101628d69ee7a3768d1ee3a094070dc388`
 - Fichero de licencia: https://huggingface.co/aaaaaeeeee/blip-aux-pose/blob/main/LICENSE.txt

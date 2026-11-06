@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario aahlawat. No se trata de un modelo de lenguaje ni de una red neuronal generativa: la model card lo describe explícitamente como un agente de Q-Learning con implementación propia (etiqueta custom-implementation) entrenado para jugar al entorno FrozenLake-v1 en su variante 4x4 y sin resbalones (no_slippery). El repositorio no incluye pesos en formato safetensors ni GGUF, sino un único artefacto serializado en Python (q-learning.pkl) que se carga con la utilidad load_from_hub.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario aahlawat. No se trata de un modelo de lenguaje ni de una red neuronal generativa: la model card lo describe explícitamente como un agente de Q-Learning con implementación propia (etiqueta custom-implementation) entrenado para jugar al entorno FrozenLake-v1 en su variante 4x4 y sin resbalones (no_slippery). El repositorio no incluye pesos en formato safetensors ni GGUF, sino un único artefacto serializado en Python (q-learning.pkl) que se carga con la utilidad load_from_hub.
 
 El dato de rendimiento declarado por el autor es un mean_reward de 1.00 +/- 0.00 sobre el dataset FrozenLake-v1-4x4-no_slippery, es decir, la recompensa media máxima alcanzable en ese entorno. La métrica figura como no verificada (verified: false), por lo que procede de la model card del autor y no ha sido validada de forma independiente por la plataforma.
 
@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo
 | Formato de pesos | q-learning.pkl (fichero serializado con pickle, cargado mediante load_from_hub) |
 | Tarea declarada | reinforcement-learning |
 | Entorno | FrozenLake-v1-4x4-no_slippery (gym / Gymnasium) |
-| Fecha de creacion en el Hub | 2026-10-06T01:25:43.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion en el Hub | 2026-10-06T01:25:43.000Z (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-10-06T01:25:46.000Z |
 | Descargas | 0 |
 | Likes | 0 |
@@ -46,7 +46,7 @@ env = gym.make(model["env_id"])
 
 - Resolucion del entorno FrozenLake-v1 4x4 en su variante determinista (no_slippery), con una recompensa media declarada de 1.00, es decir, alcanzando la meta en todos los episodios evaluados.
 - Ejecucion de una politica de control discreta sobre un espacio de estados finito y un espacio de acciones de cuatro elementos.
-- Carga y despliegue reproducibles mediante la utilidad load_from_hub de HuggingFace y el fichero q-learning.pkl.
+- Carga y despliegue reproducibles mediante la utilidad load_from_hub de Hugging Face y el fichero q-learning.pkl.
 - Integracion directa con entornos Gym/Gymnasium a traves del identificador de entorno almacenado en el modelo (model["env_id"]).
 - No soporta tool calling ni function calling.
 - No soporta agentes multi-paso basados en lenguaje ni razonamiento simbólico general.
@@ -101,6 +101,6 @@ No disponible. La informacion proporcionada no incluye datos de otros agentes de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aahlawat/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/aahlawat/q-FrozenLake-v1-4x4-noSlippery
 - Fichero de pesos: https://huggingface.co/aahlawat/q-FrozenLake-v1-4x4-noSlippery/blob/main/q-learning.pkl
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante relacionado con este modelo ni con Q-Learning aplicado a FrozenLake, por lo que no se incluyen enlaces externos.

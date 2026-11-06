@@ -105,7 +105,7 @@ Comparacion con modelos de traduccion de terceros de tamano similar: no disponib
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint INT4: https://huggingface.co/divingclone/Hy-MT2-1.8B-INT4-vLLM
+- Repositorio Hugging Face del checkpoint INT4: https://huggingface.co/divingclone/Hy-MT2-1.8B-INT4-vLLM
 - Repositorio hermano NVFP4 W4A4: https://huggingface.co/divingclone/Hy-MT2-1.8B-NVFP4-vLLM
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Proyecto Hy-MT2 Windows: https://github.com/divingclone/Hy-MT2-Windows

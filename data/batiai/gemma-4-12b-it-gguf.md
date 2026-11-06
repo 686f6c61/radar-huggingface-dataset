@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batiai/gemma-4-12B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/batiai/gemma-4-12B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Pagina de Ollama: https://ollama.com/batiai/gemma4-12b
 - BatiFlow (automatizacion macOS): https://flow.bati.ai

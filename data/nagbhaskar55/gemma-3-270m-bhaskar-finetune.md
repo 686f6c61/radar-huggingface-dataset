@@ -12,7 +12,7 @@ Su relevancia práctica es doble. Por un lado, demuestra que un modelo de 268M p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gemma3_text` en HuggingFace); detalles internos de capas y atencion no disponibles en la informacion proporcionada |
+| Arquitectura | Transformer decoder-only (etiqueta `gemma3_text` en Hugging Face); detalles internos de capas y atencion no disponibles en la informacion proporcionada |
 | Parametros totales | 268.098.176 (268M), denso |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada; los ejemplos de entrenamiento de mas de 1.024 tokens (105 casos) se descartaron en lugar de truncarse |
@@ -21,7 +21,7 @@ Su relevancia práctica es doble. Por un lado, demuestra que un modelo de 268M p
 | Licencia | Gemma Terms of Use (`license: gemma`) |
 | Formato de pesos | safetensors (repositorio de 1,1 GB) |
 | Tamano del vocabulario | 262.144 tokens (segun la comparacion de la model card) |
-| Descargas / likes en HuggingFace | 212 descargas, 0 likes |
+| Descargas / likes en Hugging Face | 212 descargas, 0 likes |
 | Modelo base | google/gemma-3-270m-it |
 | Fecha de creacion | 2026-09-20 |
 
@@ -79,16 +79,16 @@ La comparacion por perplejidad entre ambos modelos no es valida, segun la propia
 - Referencia de entrenamiento documentada: ajuste fino completo en 1 GPU NVIDIA L4 (24 GB) durante 37 minutos, con pico de 20,29 GB. Esa cifra corresponde al entrenamiento con gradientes y estados del optimizador, no a inferencia.
 - Cabe holgadamente en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM (RTX 3050, RTX 3060, RTX 4060, RTX 4090, entre otras) puede ejecutarlo en BF16 o FP16, y en CPU con cuantizacion.
 - GPU de datacenter: A100, H100, L4 o L40S no son necesarias para inferencia, pero permiten un gran numero de peticiones concurrentes por su memoria disponible.
-- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No se publican pesos en formato GGUF ni cuantizaciones listas para llama.cpp u Ollama; su conversion seria posible, pero no esta disponible en el repositorio.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No se publican pesos en formato GGUF ni cuantizaciones listas para llama.cpp u Ollama; su conversion seria posible, pero no esta disponible en el repositorio.
 - Latencia y throughput: no disponible para inferencia. El unico dato de rendimiento publicado es de entrenamiento: 10.520 tokens por segundo en una L4.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tokens de preentrenamiento | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nagbhaskar55/gemma-3-270m-bhaskar-finetune` | 268M | ~6T (heredados del base) | 1,2213 de perdida; 0,3964 bits/char | Gemma Terms of Use | Pesos safetensors en HuggingFace |
-| `google/gemma-3-270m-it` (base) | 268M | ~6T | 2,0595 de perdida en el mismo split | Gemma Terms of Use | Pesos safetensors en HuggingFace |
-| `nagbhaskar55/slm125mlive-base` + SFT | 125M | 2,04B | 0,4915 bits/char en el mismo split | no disponible en la informacion proporcionada | Pesos en HuggingFace |
+| `nagbhaskar55/gemma-3-270m-bhaskar-finetune` | 268M | ~6T (heredados del base) | 1,2213 de perdida; 0,3964 bits/char | Gemma Terms of Use | Pesos safetensors en Hugging Face |
+| `google/gemma-3-270m-it` (base) | 268M | ~6T | 2,0595 de perdida en el mismo split | Gemma Terms of Use | Pesos safetensors en Hugging Face |
+| `nagbhaskar55/slm125mlive-base` + SFT | 125M | 2,04B | 0,4915 bits/char en el mismo split | no disponible en la informacion proporcionada | Pesos en Hugging Face |
 | Otros modelos comparables de ~0,3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks estandar que permitan comparar con alternativas de la misma categoria mas alla de los dos modelos citados en la propia model card.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks estandar que permitan comparar con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nagbhaskar55/gemma-3-270m-bhaskar-finetune
+- Modelo en Hugging Face: https://huggingface.co/nagbhaskar55/gemma-3-270m-bhaskar-finetune
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Modelo de comparacion de 125M: https://huggingface.co/nagbhaskar55/slm125mlive-base
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

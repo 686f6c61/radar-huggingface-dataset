@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PromptShield DeBERTa-v3-base es un clasificador binario de *prompt injection* publicado por el usuario robbypambudi en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del modelo `microsoft/deberta-v3-base` mediante `DebertaV2ForSequenceClassification` con dos etiquetas: `0`/BENIGN (sin inyeccion) y `1`/INJECTION (intento de inyeccion de prompt). El modelo resuelve un problema concreto y muy actual: detectar, antes de que lleguen al modelo generativo, instrucciones maliciosas embebidas en texto de usuario o en documentos recuperados, un vector de ataque habitual en aplicaciones con LLM y en sistemas RAG.
+PromptShield DeBERTa-v3-base es un clasificador binario de *prompt injection* publicado por el usuario robbypambudi en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del modelo `microsoft/deberta-v3-base` mediante `DebertaV2ForSequenceClassification` con dos etiquetas: `0`/BENIGN (sin inyeccion) y `1`/INJECTION (intento de inyeccion de prompt). El modelo resuelve un problema concreto y muy actual: detectar, antes de que lleguen al modelo generativo, instrucciones maliciosas embebidas en texto de usuario o en documentos recuperados, un vector de ataque habitual en aplicaciones con LLM y en sistemas RAG.
 
 El checkpoint publicado es la *epoch 0* de un trial fechado el 2026-09-12 (receta `origfilter`, semilla 12345, learning rate 5e-6). El autor indica que las epochs posteriores alcanzan una perdida de validacion menor, pero que la tasa de verdaderos positivos (TPR) a baja tasa de falsos positivos (FPR) sobre texto completo es maxima en la epoch 0, motivo por el que se publica ese checkpoint y no el de mejor *val-loss*. Por tanto, la seleccion del modelo esta optimizada para el regimen de operacion tipico de un guardrail de seguridad (FPR muy bajo), no para la perdida media.
 
@@ -100,7 +100,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia (calculada a partir de los 184,4 M de parametros; no publicada por el autor): aproximadamente 738 MB en FP32, 369 MB en FP16/BF16, 184 MB en INT8 y 92 MB en INT4, mas el *overhead* de activaciones y del runtime (habitualmente unas decenas o cientos de MB adicionales).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; se puede ejecutar comodamente en RTX 3060, RTX 4060, RTX 4090, L4, T4, A10, A100 o H100. En la practica, la GPU no es un cuello de botella para este modelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo modernas, e incluso en modo CPU con latencias aceptables por ser un encoder de 184 M de parametros.
-- Opciones de despliegue: `transformers` en PyTorch (uso documentado en la model card con `AutoTokenizer` y `AutoModelForSequenceClassification`), text-embeddings-inference (tag del repositorio), endpoints compatibles con HuggingFace. El soporte de vLLM, llama.cpp, Ollama o TGI para clasificacion de secuencia BERT-like no esta documentado en la informacion disponible.
+- Opciones de despliegue: `transformers` en PyTorch (uso documentado en la model card con `AutoTokenizer` y `AutoModelForSequenceClassification`), text-embeddings-inference (tag del repositorio), endpoints compatibles con Hugging Face. El soporte de vLLM, llama.cpp, Ollama o TGI para clasificacion de secuencia BERT-like no esta documentado en la informacion disponible.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens por segundo.
 - Nota practica: dado el bajo coste, es viable ejecutarlo en CPU para volúmenes moderados o batching en GPU para volúmenes altos, aplicando ventanas de 128 tokens con solapamiento 64 si los textos superan 512 tokens.
 
@@ -132,7 +132,7 @@ No se dispone de una comparacion head-to-head publicada en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robbypambudi/prompt-shield-deberta-v3-base
+- Modelo en Hugging Face: https://huggingface.co/robbypambudi/prompt-shield-deberta-v3-base
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - Paper o blog del metodo PromptShield: no disponible en la informacion proporcionada
 - Repositorio de codigo o demo: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QWIK-Apex-39B-Ultra es un modelo de generacion de texto desarrollado por QWIK-AI (`QWIK-AI` en HuggingFace) que se presenta como el buque insignia de una familia de modelos de razonamiento de tamano medio. Segun la model card, emplea una arquitectura propia denominada `QWIKApexRecurrentForCausalLM` (`model_type: qwik_apex_recurrent`), construida sobre una base tipo Qwen2 (tag `qwen2`) con una innovacion de profundidad recurrente latente: 95 capas fisicas que se reejecutan con un bucle `K_loop=3`, alcanzando 127 capas de profundidad secuencial efectiva y 52,04B de computo denso efectivo a partir de 39,32B de parametros fisicos. El modelo declara una ventana de contexto de 524.288 tokens mediante un esquema posicional propio bautizado como QWIK-3D Spectral RoPE.
+QWIK-Apex-39B-Ultra es un modelo de generacion de texto desarrollado por QWIK-AI (`QWIK-AI` en Hugging Face) que se presenta como el buque insignia de una familia de modelos de razonamiento de tamano medio. Segun la model card, emplea una arquitectura propia denominada `QWIKApexRecurrentForCausalLM` (`model_type: qwik_apex_recurrent`), construida sobre una base tipo Qwen2 (tag `qwen2`) con una innovacion de profundidad recurrente latente: 95 capas fisicas que se reejecutan con un bucle `K_loop=3`, alcanzando 127 capas de profundidad secuencial efectiva y 52,04B de computo denso efectivo a partir de 39,32B de parametros fisicos. El modelo declara una ventana de contexto de 524.288 tokens mediante un esquema posicional propio bautizado como QWIK-3D Spectral RoPE.
 
 El interes declarado del modelo es doble. Por un lado, compite en la franja "small" (4B-40B) con resultados que, segun el autor, superan ampliamente a alternativas del mismo tamano en pruebas de razonamiento cientifico, codigo en terminal, uso de herramientas y conocimiento sin alucinacion. Por otro, su licencia es propietaria (`qwik-proprietary-commercial-v1`) y la carga exige `trust_remote_code=True`, lo que lo aleja del ecosistema de IA estrictamente open source.
 
@@ -119,8 +119,8 @@ La comparativa se limita a los modelos que aparecen en la model card. No se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QWIK-AI/QWIK-Apex-39B-Ultra
+- Modelo en Hugging Face: https://huggingface.co/QWIK-AI/QWIK-Apex-39B-Ultra
 - Fichero de licencia: https://huggingface.co/QWIK-AI/QWIK-Apex-39B-Ultra/blob/main/LICENSE.md
 - Grafico de resultados citado en la model card: https://huggingface.co/QWIK-AI/QWIK-Apex-39B-Ultra/blob/main/hero_benchmark_chart.svg
-- Perfil del autor en HuggingFace: https://huggingface.co/QWIK-AI
+- Perfil del autor en Hugging Face: https://huggingface.co/QWIK-AI
 - Paper, blog, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

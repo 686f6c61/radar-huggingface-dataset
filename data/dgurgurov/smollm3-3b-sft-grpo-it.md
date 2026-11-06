@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM3-3B (base) | 3B | 128K | Apache 2.0 | HuggingFace |
-| DGurgurov/SmolLM3-3B-SFT-IT | 3B | 128K | No disponible | HuggingFace |
-| DGurgurov/SmolLM3-3B-SFT-GRPO-IT | 3B | 128K | No disponible | HuggingFace |
-| Phi-3-mini | 3.8B | 128K | MIT | HuggingFace |
+| SmolLM3-3B (base) | 3B | 128K | Apache 2.0 | Hugging Face |
+| DGurgurov/SmolLM3-3B-SFT-IT | 3B | 128K | No disponible | Hugging Face |
+| DGurgurov/SmolLM3-3B-SFT-GRPO-IT | 3B | 128K | No disponible | Hugging Face |
+| Phi-3-mini | 3.8B | 128K | MIT | Hugging Face |
 
 El modelo se diferencia de su base por el enfoque en razonamiento en italiano. Comparado con Phi-3-mini, que tiene capacidades multilingües generales, este modelo está especializado en razonamiento matemático en español, pero carece de la documentación de rendimiento que sí tiene Phi-3.
 
@@ -74,7 +74,7 @@ El modelo se diferencia de su base por el enfoque en razonamiento en italiano. C
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-IT)
+- [Modelo en Hugging Face](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-IT)
 - [Modelo base SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Dataset ReasonXL-SFT](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
 - [Paper ReasonXL (arXiv:2604.12378)](https://arxiv.org/abs/2604.12378)

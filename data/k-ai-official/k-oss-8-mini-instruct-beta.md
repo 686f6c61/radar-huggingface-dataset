@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-Beta
+- Hugging Face del adaptador: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct-Beta
 - Repositorio alternativo citado en la model card: https://huggingface.co/Keanualfahd/K-Oss-8-Mini-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Organizacion K-Ai: https://huggingface.co/K-Ai-Official

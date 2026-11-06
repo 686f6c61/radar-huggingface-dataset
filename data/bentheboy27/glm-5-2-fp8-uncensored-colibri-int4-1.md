@@ -85,7 +85,7 @@ La comparacion con alternativas de otros fabricantes (por ejemplo, otros MoE de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BenTheBoy27/GLM-5.2-FP8-Uncensored-Colibri-Int4-1
+- Repositorio Hugging Face: https://huggingface.co/BenTheBoy27/GLM-5.2-FP8-Uncensored-Colibri-Int4-1
 - Modelo fuente (FP8 Uncensored): https://huggingface.co/zandenAI/GLM-5.2-FP8-Uncensored
 - Modelo base de la conversion (int4): https://huggingface.co/jlnsrk/GLM-5.2-colibri-int4
 - Runtime Colibri: https://github.com/JustVugg/colibri

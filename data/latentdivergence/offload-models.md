@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `latentdivergence/offload-models` es un modelo alojado en HuggingFace con licencia MIT y etiquetado como ONNX. Sin embargo, la información disponible es extremadamente limitada: no se proporciona descripción, ni documentación técnica, ni archivos de modelo visibles. El repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que sugiere que se trata de un espacio vacío o en fase inicial de desarrollo. No se dispone de datos sobre arquitectura, parámetros, contexto, capacidades ni rendimiento. Por tanto, este modelo no puede ser evaluado ni utilizado de forma fiable en su estado actual.
+El repositorio `latentdivergence/offload-models` es un modelo alojado en Hugging Face con licencia MIT y etiquetado como ONNX. Sin embargo, la información disponible es extremadamente limitada: no se proporciona descripción, ni documentación técnica, ni archivos de modelo visibles. El repositorio tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que sugiere que se trata de un espacio vacío o en fase inicial de desarrollo. No se dispone de datos sobre arquitectura, parámetros, contexto, capacidades ni rendimiento. Por tanto, este modelo no puede ser evaluado ni utilizado de forma fiable en su estado actual.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No se han identificado modelos comparables debido a la falta de especificaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentdivergence/offload-models
+- Hugging Face: https://huggingface.co/latentdivergence/offload-models

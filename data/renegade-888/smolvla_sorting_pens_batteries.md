@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Renegade-888/smolvla_sorting_pens_batteries | 450.046.176 | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Renegade-888/smolvla_eraser_ring_50 | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Renegade-888/smolvla_sorting_pens_batteries | 450.046.176 | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Renegade-888/smolvla_eraser_ring_50 | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Renegade-888/smolvla_sorting_pens_batteries
+- Hugging Face: https://huggingface.co/Renegade-888/smolvla_sorting_pens_batteries
 - Paper: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset: https://huggingface.co/datasets/Renegade-888/so101-sorting-pens-batteries

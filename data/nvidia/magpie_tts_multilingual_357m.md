@@ -73,8 +73,8 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/magpie_tts_multilingual_357m
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/magpie_tts_multilingual_demo
+- Modelo en Hugging Face: https://huggingface.co/nvidia/magpie_tts_multilingual_357m
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/magpie_tts_multilingual_demo
 - Repositorio NeMo Speech: https://github.com/NVIDIA-NeMo/Speech
 - API empresarial (NIM): https://build.nvidia.com/nvidia/magpie-tts-multilingual
 - Ejemplos de voice agents: https://github.com/NVIDIA/voice-agent-examples/tree/riva_voice_agent_example

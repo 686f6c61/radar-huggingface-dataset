@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-sft` es un checkpoint alojado en HuggingFace por el usuario `keylazy`, derivado presumiblemente de la familia Qwen2.5-Omni de Alibaba en su variante de 3B de parametros, segun indica el propio identificador del repositorio. El sufijo `bab-slurp-t2-sft` sugiere un ajuste fino supervisado (SFT) sobre alguna tarea o dataset interno no documentado. El repositorio se creo el 4 de noviembre de 2026 y apenas ocupa 0,1 GB, lo que resulta llamativamente pequeno para un modelo multimodal de 3B en precision completa, y apunta a un subconjunto de pesos, un adaptador o una publicacion incompleta.
+`keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-sft` es un checkpoint alojado en Hugging Face por el usuario `keylazy`, derivado presumiblemente de la familia Qwen2.5-Omni de Alibaba en su variante de 3B de parametros, segun indica el propio identificador del repositorio. El sufijo `bab-slurp-t2-sft` sugiere un ajuste fino supervisado (SFT) sobre alguna tarea o dataset interno no documentado. El repositorio se creo el 4 de noviembre de 2026 y apenas ocupa 0,1 GB, lo que resulta llamativamente pequeno para un modelo multimodal de 3B en precision completa, y apunta a un subconjunto de pesos, un adaptador o una publicacion incompleta.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni descargas, ni likes, ni resultados de benchmarks. Se trata, por tanto, de un artefacto practicamente sin documentar.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni descargas, ni likes, ni resultados de benchmarks. Se trata, por tanto, de un artefacto practicamente sin documentar.
 
 Su relevancia actual es limitada y de naturaleza experimental: puede interesar a quienes rastrean derivados de Qwen2.5-Omni o experimentos de ajuste fino con nomenclatura interna, pero no constituye una base recomendable para produccion sin una evaluacion independiente previa. La ficha siguiente refleja exclusivamente lo verificable en la informacion disponible y marca como "no disponible" todo aquello que el autor no ha especificado.
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del data
 
 - Evaluacion experimental de derivados de Qwen2.5-Omni: el checkpoint puede servir para inspeccionar como un ajuste fino SFT altera el comportamiento de la base, siempre que se verifique primero que los pesos estan completos y son cargables con `transformers`.
 - Reproduccion de experimentos internos: si el autor publica en el futuro la receta de `bab-slurp-t2-sft`, el repositorio permitiria replicar el ajuste y comparar variantes.
-- Analisis de artefactos del Hub: util para investigadores que estudian practicas de publicacion en HuggingFace (model cards autogeneradas, repositorios parciales, nomenclatura opaca).
+- Analisis de artefactos del Hub: util para investigadores que estudian practicas de publicacion en Hugging Face (model cards autogeneradas, repositorios parciales, nomenclatura opaca).
 - Base para un ajuste adicional propio: solo si se confirma la integridad de los pesos y la licencia heredada de Qwen2.5-Omni, podria emplearse como punto de partida para un SFT especifico.
 - Pruebas de carga y compatibilidad con `transformers`: permite comprobar si el checkpoint se instancia correctamente y que configuracion declara.
 - Docencia sobre riesgos de modelos sin documentar: caso practico de por que no debe desplegarse un artefacto sin model card, licencia ni evaluacion.
@@ -85,6 +85,6 @@ La comparativa se limita a la categoria por tamano; los datos de las alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-sft
+- Repositorio Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-sft
 - Referencia citada en los tags (calculadora de impacto, no paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

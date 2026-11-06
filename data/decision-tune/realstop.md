@@ -99,6 +99,6 @@ No se dispone de información sobre otros modelos comparables de clasificación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decision-tune/realstop
+- Modelo en Hugging Face: https://huggingface.co/decision-tune/realstop
 - Modelo base: https://huggingface.co/decision-tune/decisiontune-1.0
 - Repositorio de RealStop: https://github.com/decision-tune/realstop

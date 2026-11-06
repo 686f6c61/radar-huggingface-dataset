@@ -109,7 +109,7 @@ No se dispone de resultados de benchmarks cruzados entre estas alternativas en l
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/hitnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/hitnet
 - Repositorio del código `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Fichero `card.toml` con hashes SHA-256 completos: https://github.com/kleinicke/fastforks/blob/main/src/fastforks/stereo/models/hitnet/card.toml

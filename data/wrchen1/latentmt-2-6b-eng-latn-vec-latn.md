@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de traducción de tamaño 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-vec-latn
+- Repositorio Hugging Face del adaptador: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-vec-latn
 - Paper en arXiv: https://arxiv.org/pdf/2607.18618
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio relacionado (otro par de idiomas): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-szl-latn

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`myohub/myosuite-3-baselines` es un repositorio publicado en HuggingFace por el usuario `myohub` bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB. La model card asociada no contiene mas informacion que la declaracion de licencia (`license: apache-2.0`), sin descripcion, sin ejemplos de uso, sin datos de entrenamiento y sin referencias a papers o repositorios externos.
+`myohub/myosuite-3-baselines` es un repositorio publicado en Hugging Face por el usuario `myohub` bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su tamano declarado es de 0,1 GB. La model card asociada no contiene mas informacion que la declaracion de licencia (`license: apache-2.0`), sin descripcion, sin ejemplos de uso, sin datos de entrenamiento y sin referencias a papers o repositorios externos.
 
 El identificador del repositorio sugiere que podria tratarse de un conjunto de lineas base (baselines) asociado a MyoSuite, un entorno de simulacion musculoesqueletica orientado al control motor y al aprendizaje por refuerzo, pero esta interpretacion no puede confirmarse con la documentacion disponible: no hay pipeline declarado, no hay arquitectura descrita ni tipos de pesos indicados. Cualquier afirmacion sobre su naturaleza (modelo de lenguaje, politica de RL, checkpoint de simulacion) seria especulativa.
 
@@ -49,7 +49,7 @@ No es posible enumerar casos de uso concretos y realistas sin documentacion sobr
 - Comparacion de lineas base dentro de un pipeline de evaluacion propio, previa inspeccion del contenido del repositorio.
 - Fijacion de una referencia congelada para experimentos de ablation.
 - Analisis forense del repositorio (estructura de ficheros, tamanos, hashes) para determinar su naturaleza real.
-- Uso docente como ejemplo de repositorio escasamente documentado en HuggingFace.
+- Uso docente como ejemplo de repositorio escasamente documentado en Hugging Face.
 
 En todos los casos, el primer paso obligatorio es descargar el repositorio e inspeccionar los ficheros, ya que la model card no aporta ninguna garantia sobre el contenido.
 
@@ -85,5 +85,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la funcion del artefac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myohub/myosuite-3-baselines
+- Hugging Face: https://huggingface.co/myohub/myosuite-3-baselines
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

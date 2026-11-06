@@ -71,8 +71,8 @@ Las siguientes estimaciones se derivan de los tamanos de fichero publicados, no 
 
 | Modelo | Parametros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BnhHo/Qwen-Image-2.1-Uncensored-GGUF | 7.115.124.736 (transformer) | No disponible | BF16, FP8, INT8 ConvRot, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research | HuggingFace, 12 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, repositorio oficial |
+| BnhHo/Qwen-Image-2.1-Uncensored-GGUF | 7.115.124.736 (transformer) | No disponible | BF16, FP8, INT8 ConvRot, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research | Hugging Face, 12 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, repositorio oficial |
 | Otras cuantizaciones GGUF de la misma familia | No disponible | No disponible | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 (variantes base sin "UC") | qwen-research | Incluidas en el mismo repositorio bajo la rama `base` |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base oficial dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas como FLUX.1 o SDXL sin inventar cifras.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BnhHo/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BnhHo/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork recomendado): https://github.com/leejet/ComfyUI-GGUF

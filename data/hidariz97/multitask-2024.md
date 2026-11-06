@@ -75,6 +75,6 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hidariz97/multitask-2024
+- Hugging Face: https://huggingface.co/hidariz97/multitask-2024
 - Perfil del autor en Hugging Face: https://huggingface.co/hidariz97
 - Modelos publicados por el autor: https://huggingface.co/hidariz97/models

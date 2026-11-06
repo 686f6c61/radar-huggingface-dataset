@@ -26,7 +26,7 @@ Su relevancia actual es metodológica: permite obtener estimaciones de fuerza en
 | Tamaño del repositorio | 2,1 GB (incluye pesos, cuadernos, app y código de entrenamiento) |
 | Descargas / likes | 0 / 1 |
 | Fecha de creación / actualización | 2026-02-22 / 2026-10-18 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shape2Force (S2F) | GAN pix2pix, imagen a mapa de fuerza | no disponible | imagen de microscopía | MIT | HuggingFace + GitHub + Space |
+| Shape2Force (S2F) | GAN pix2pix, imagen a mapa de fuerza | no disponible | imagen de microscopía | MIT | Hugging Face + GitHub + Space |
 | TFM clásica (FTTC y variantes) | Método físico-matemático, no aprendido | no aplica | imágenes de microesferas fluorescentes | según implementación | software académico disperso |
 | Modelos de segmentación celular (p. ej. Cellpose) | Red de segmentación | no disponible en esta consulta | imagen de microscopía | varía | ampliamente disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos que permitan comparar rendimiento entre S2F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Angione-Lab/Shape2Force
+- Modelo en Hugging Face: https://huggingface.co/Angione-Lab/Shape2Force
 - Aplicación online (Hugging Face Space): https://huggingface.co/spaces/Angione-Lab/Shape2force
 - Repositorio GitHub: https://github.com/Angione-Lab/Shape2Force
 - DOI / publicación asociada: https://doi.org/10.5281/zenodo.20759318

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYLU-TTS-1.0 es un modelo de sintesis de voz (text-to-speech) en ingles, mono-hablante, publicado por el usuario caikybaldo999 en HuggingFace. Se compone de dos redes entrenadas desde cero: un modelo acustico Glow-TTS de aproximadamente 28,6M de parametros y un vocoder HiFi-GAN v1 de aproximadamente 13,9M de parametros (generador). El modelo resuelve la conversion de texto a audio de una unica voz femenina en ingles americano, siguiendo la receta de SupraTTS-0.1-Beta.
+ZYLU-TTS-1.0 es un modelo de sintesis de voz (text-to-speech) en ingles, mono-hablante, publicado por el usuario caikybaldo999 en Hugging Face. Se compone de dos redes entrenadas desde cero: un modelo acustico Glow-TTS de aproximadamente 28,6M de parametros y un vocoder HiFi-GAN v1 de aproximadamente 13,9M de parametros (generador). El modelo resuelve la conversion de texto a audio de una unica voz femenina en ingles americano, siguiendo la receta de SupraTTS-0.1-Beta.
 
 La relevancia de este lanzamiento es acotada pero clara: es un ejemplo reproducible de entrenamiento completo (acustico + vocoder) sobre el dataset LJSpeech-1.1 en una sola NVIDIA A100-SXM4-80GB, con unos 13 horas de computo por componente. Ambos modelos se entrenaron simultaneamente en la misma GPU, sin pesos preentrenados, y aplican correcciones concretas sobre los valores por defecto de Coqui-TTS (planificador de learning rate escalonado por paso, tokens en blanco entre tokens de entrada, bf16 y batch grande).
 
@@ -24,7 +24,7 @@ Al tratarse de un modelo de TTS y no de un modelo de lenguaje, los conceptos hab
 | Entrada | Fonemas espeak (en-us) con tokens en blanco entre tokens |
 | Dataset de entrenamiento | LJSpeech-1.1 (~24 h, hablante femenina unica) |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline (HuggingFace) | text-to-speech |
+| Pipeline (Hugging Face) | text-to-speech |
 
 ## Arquitectura y entrenamiento
 
@@ -84,8 +84,8 @@ No se dispone de resultados de benchmarks comparables publicados en la informaci
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYLU-TTS-1.0 | Glow-TTS + HiFi-GAN v1 | ~42,5M | Fonemas espeak en-us | MIT | HuggingFace |
-| SupraTTS-0.1-Beta | Glow-TTS + vocoder (receta de referencia) | no disponible | Fonemas (no especificado) | no disponible | HuggingFace (SupraLabs) |
+| ZYLU-TTS-1.0 | Glow-TTS + HiFi-GAN v1 | ~42,5M | Fonemas espeak en-us | MIT | Hugging Face |
+| SupraTTS-0.1-Beta | Glow-TTS + vocoder (receta de referencia) | no disponible | Fonemas (no especificado) | no disponible | Hugging Face (SupraLabs) |
 | Coqui-TTS (modelos LJSpeech) | Glow-TTS + vocoder segun receta | no disponible | Fonemas | MIT (herramienta) | GitHub idiap/coqui-ai-TTS |
 
 Los datos de rendimiento de las alternativas no estan disponibles en la informacion proporcionada, por lo que no se incluyen comparaciones numericas.
@@ -105,7 +105,7 @@ Los datos de rendimiento de las alternativas no estan disponibles en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/ZYLU-TTS-1.0
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/ZYLU-TTS-1.0
 - Receta de referencia, SupraTTS-0.1-Beta: https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta
 - Dataset LJSpeech (Keith Ito): https://keithito.com/LJ-Speech-Dataset/
 - Coqui-TTS (mantenido por Idiap): https://github.com/idiap/coqui-ai-TTS

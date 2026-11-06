@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aceyash-dev/q1-qwant` es un repositorio de modelos alojado en HuggingFace por el usuario `aceyash-dev`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiqueta `region:us`, cero descargas, un "like", y fechas de creacion y actualizacion del 19 de octubre de 2026. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
+`aceyash-dev/q1-qwant` es un repositorio de modelos alojado en Hugging Face por el usuario `aceyash-dev`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiqueta `region:us`, cero descargas, un "like", y fechas de creacion y actualizacion del 19 de octubre de 2026. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
 Esto implica que no es posible determinar que problema resuelve el modelo ni por que seria relevante frente a alternativas existentes. El nombre del repositorio sugiere una posible relacion con el motor de busqueda Qwant, pero se trata de una especulacion no confirmada por ninguna fuente: el autor no ha incluido una model card, no ha declarado pipeline de uso y no ha especificado licencia ni idiomas soportados.
 
@@ -31,7 +31,7 @@ Desde el punto de vista practico, el repositorio no es evaluable ni desplegable 
 
 No disponible. El repositorio no incluye model card, memoria tecnica, informe de entrenamiento ni referencias a articulos. No se puede confirmar si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o cualquier otra familia, ni tampoco el volumen de tokens de entrenamiento, la composicion del corpus o si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Tampoco hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, tokenizador empleado). La unica etiqueta presente, `region:us`, es un metadato de infraestructura de HuggingFace y no aporta informacion sobre el diseno del modelo.
+Tampoco hay informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, tokenizador empleado). La unica etiqueta presente, `region:us`, es un metadato de infraestructura de Hugging Face y no aporta informacion sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -83,11 +83,11 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Idiomas no declarados: imposible garantizar cobertura o calidad en castellano u otras lenguas.
 - Riesgo de alucinacion y sesgos: no evaluable sin benchmarks ni documentacion de alineacion.
 - Senales de validacion nulas: 0 descargas y 1 like indican que el modelo no ha sido probado por la comunidad.
-- Pipeline no declarado: los propios metadatos de HuggingFace no reconocen una tarea asociada, lo que sugiere que el repositorio podria no contener un modelo en formato estandar de inferencia.
+- Pipeline no declarado: los propios metadatos de Hugging Face no reconocen una tarea asociada, lo que sugiere que el repositorio podria no contener un modelo en formato estandar de inferencia.
 - Fecha de creacion en el futuro (2026-10-19) respecto al momento habitual de consulta: conviene verificar la integridad de los metadatos antes de cualquier uso.
 - Recomendacion: no utilizar en produccion hasta que el autor publique pesos, licencia, especificaciones y evaluaciones reproducibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aceyash-dev/q1-qwant
+- Repositorio en Hugging Face: https://huggingface.co/aceyash-dev/q1-qwant
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

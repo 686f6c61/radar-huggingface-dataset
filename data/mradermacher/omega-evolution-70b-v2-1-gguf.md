@@ -23,7 +23,7 @@ La licencia declarada es llama3.3, lo que permite uso comercial con ciertas cond
 
 ## Arquitectura y entrenamiento
 
-Omega-Evolution-70B-v2.1-GGUF es una cuantización estática del modelo original en safetensors de ReadyArt. La arquitectura subyacente es un transformer decoder-only de 70.553 millones de parámetros, perteneciente a la familia Llama 3.3, con una ventana de contexto de 32768 tokens. El proceso de cuantización lo realizó mradermacher usando el convertidor de HuggingFace, generando archivos GGUF de una sola parte o multi-parte según el nivel de cuantización.
+Omega-Evolution-70B-v2.1-GGUF es una cuantización estática del modelo original en safetensors de ReadyArt. La arquitectura subyacente es un transformer decoder-only de 70.553 millones de parámetros, perteneciente a la familia Llama 3.3, con una ventana de contexto de 32768 tokens. El proceso de cuantización lo realizó mradermacher usando el convertidor de Hugging Face, generando archivos GGUF de una sola parte o multi-parte según el nivel de cuantización.
 
 El modelo original fue fine-tuneado sobre un dataset de 39 millones de tokens, descrito como 100 % "unslopped", es decir, sin la alineación típica (RLHF/DPO) para evitar respuestas genéricas o moralizantes. Este enfoque busca maximizar la coherencia narrativa en escenarios de roleplay extremo y mantener la integridad del personaje en conversaciones de múltiples turnos. No se ha publicado información detallada sobre la composición exacta del dataset ni sobre el proceso de entrenamiento (epocas, learning rate, etc.).
 
@@ -80,7 +80,7 @@ La diferencia principal con la base Llama 3.3 es el fine-tuning de roleplay y la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Omega-Evolution-70B-v2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Omega-Evolution-70B-v2.1-GGUF
 - Modelo base original: https://huggingface.co/ReadyArt/Omega-Evolution-70B-v2.1
 - Repositorio del autor mradermacher: https://huggingface.co/mradermacher
 - Modelo relacionado ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1 (posible base): https://featherless.ai/models/ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1

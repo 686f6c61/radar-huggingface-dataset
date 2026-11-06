@@ -6,7 +6,7 @@ BigBang-v1 es un modelo de lenguaje de propósito general desarrollado por endle
 
 La arquitectura es de tipo MoE (mezcla de expertos) con 35B parámetros totales y 3B activos por token, lo que permite una inferencia relativamente eficiente. El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales, aunque no se proporcionan detalles específicos sobre el procesamiento de imágenes. El modelo se distribuye con un harness de agente ligero que incluye herramientas de búsqueda, visita web y ejecución de código, además de soporte para los benchmarks SWE-Bench Pro y SciCode.
 
-BigBang-v1 se presenta como un avance hacia la inteligencia de código abierto auto-evolutiva, utilizando un framework de datos sintéticos adversariales basado en tareas de investigación verificables. Su relevancia actual radica en ofrecer capacidades de agente avanzadas en un paquete de tamaño moderado, con licencia Apache-2.0 (según el tag de HuggingFace, aunque no confirmado en la ficha oficial).
+BigBang-v1 se presenta como un avance hacia la inteligencia de código abierto auto-evolutiva, utilizando un framework de datos sintéticos adversariales basado en tareas de investigación verificables. Su relevancia actual radica en ofrecer capacidades de agente avanzadas en un paquete de tamaño moderado, con licencia Apache-2.0 (según el tag de Hugging Face, aunque no confirmado en la ficha oficial).
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No se han publicado detalles sobre el número de tokens de entrenamiento, la com
 - Razonamiento de largo horizonte: diseñado para tareas que requieren múltiples pasos y planificación, como investigación científica o desarrollo de software complejo.
 - Soporte para benchmarks de agente: SWE-Bench Pro (resolución de issues de software) y SciCode (investigación científica).
 - Pipeline image-text-to-text declarado, lo que indica posible procesamiento de imágenes junto con texto, aunque no se especifican detalles de implementación.
-- Multilingüismo: no confirmado; el tag de HuggingFace indica "en" (inglés), pero no hay lista oficial de idiomas.
+- Multilingüismo: no confirmado; el tag de Hugging Face indica "en" (inglés), pero no hay lista oficial de idiomas.
 
 ## Casos de uso
 
@@ -67,12 +67,12 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 - Riesgo de alucinación: no se han publicado evaluaciones específicas; como todo LLM, puede generar información falsa o inventada, especialmente en tareas de investigación abierta.
 - Limitaciones de contexto: la longitud de contexto no está publicada, lo que dificulta planificar su uso en tareas que requieren ventanas largas.
 - Limitaciones de idioma: solo se confirma inglés; el uso en otros idiomas no está garantizado.
-- Restricciones de licencia: la licencia no está confirmada oficialmente; el tag de HuggingFace indica apache-2.0, pero la ficha del modelo no la especifica. Se recomienda verificar antes de uso comercial.
+- Restricciones de licencia: la licencia no está confirmada oficialmente; el tag de Hugging Face indica apache-2.0, pero la ficha del modelo no la especifica. Se recomienda verificar antes de uso comercial.
 - Caveat de producción: el modelo está diseñado para tareas de agente con ejecución de código; esto implica riesgos de seguridad si se despliega en entornos no aislados, ya que puede ejecutar comandos arbitrarios.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/endless-frontier/BigBang-v1
+- Hugging Face: https://huggingface.co/endless-frontier/BigBang-v1
 - Sitio oficial: https://endlessfrontier.tech/
 - Repositorio GitHub: https://github.com/endless-frontier/BigBang-v1
 - LLM Explorer: https://llm-explorer.com/model/endless-frontier%2FBigBang-v1,2Ijsdl8j15GjCEzFATqfSf

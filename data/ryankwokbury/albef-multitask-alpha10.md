@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albef for multitask (identificador `RyanKwokbury/albef-multitask-alpha10`) es un prototipo de investigacion publicado por el usuario RyanKwokbury en HuggingFace. Se presenta como una implementacion propia basada en la familia de arquitecturas ALBEF orientada a tareas multitarea, con un checkpoint de inicializacion (`model.safetensors`) destinado a pruebas de humo, no a un uso en produccion. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el modelo no ha sido entrenado ni auditado.
+Albef for multitask (identificador `RyanKwokbury/albef-multitask-alpha10`) es un prototipo de investigacion publicado por el usuario RyanKwokbury en Hugging Face. Se presenta como una implementacion propia basada en la familia de arquitecturas ALBEF orientada a tareas multitarea, con un checkpoint de inicializacion (`model.safetensors`) destinado a pruebas de humo, no a un uso en produccion. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el modelo no ha sido entrenado ni auditado.
 
 La relevancia de esta ficha es mas metodologica que practica: sirve para documentar un repositorio de tipo "scaffolding" de investigacion, con `main.py`, `config.json` y `training_args.json` como artefactos principales. El checkpoint declarado contiene 49.600 parametros totales segun los metadatos de safetensors, una cifra muy alejada de la etiqueta `huge` que aparece en la model card; esta discrepancia es relevante y se detalla en las secciones tecnicas.
 
@@ -84,4 +84,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables con p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanKwokbury/albef-multitask-alpha10
+- Modelo en Hugging Face: https://huggingface.co/RyanKwokbury/albef-multitask-alpha10

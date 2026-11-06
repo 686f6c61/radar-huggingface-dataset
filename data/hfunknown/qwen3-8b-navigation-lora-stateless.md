@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hfunknown/qwen3-8b-navigation-lora-stateless
+- Repositorio Hugging Face: https://huggingface.co/hfunknown/qwen3-8b-navigation-lora-stateless
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Adaptador persistente similar: https://huggingface.co/AutomatedScientist/qwen3-8b-persistent-navigation-lora
 - Adaptador stateless similar: https://huggingface.co/AutomatedScientist/qwen3-8b-stateless-navigation-lora

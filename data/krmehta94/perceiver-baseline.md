@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Krmehta94/perceiver-baseline` es un repositorio de codigo y checkpoint de inicializacion que implementa una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario Krmehta94 (Kritika) en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos optimizados: la propia model card lo describe explicitamente como un punto de partida experimental para pruebas de humo (*smoke tests*) y como implementacion de referencia con codigo transparente. El repositorio omite deliberadamente cualquier afirmacion de rendimiento.
+`Krmehta94/perceiver-baseline` es un repositorio de codigo y checkpoint de inicializacion que implementa una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario Krmehta94 (Kritika) en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos optimizados: la propia model card lo describe explicitamente como un punto de partida experimental para pruebas de humo (*smoke tests*) y como implementacion de referencia con codigo transparente. El repositorio omite deliberadamente cualquier afirmacion de rendimiento.
 
 El dato mas relevante es su tamano: 33.088 parametros totales (aproximadamente 0,033 millones), segun el recuento real de los tensores almacenados en `model.safetensors`. Es, por tanto, un modelo de escala minima, varios ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en produccion. La model card declara una escala "large" en su configuracion, pero esa etiqueta corresponde a la receta de arquitectura generada por el script, no a un modelo grande en terminos absolutos.
 
@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables en el mismo nicho, porque este rep
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Estado |
 |---|---|---|---|---|---|
-| Krmehta94/perceiver-baseline | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | publico en HuggingFace |
+| Krmehta94/perceiver-baseline | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | publico en Hugging Face |
 | Perceiver IO (DeepMind) | no disponible | no disponible | no disponible | no disponible | referencia arquitectonica, no comparada |
 | Codificadores contrastivos de uso comun | no disponible | no disponible | no disponible | no disponible | fuera de categoria por escala y entrenamiento |
 
@@ -98,8 +98,8 @@ No disponible. No existen modelos comparables en el mismo nicho, porque este rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Krmehta94/perceiver-baseline
-- Perfil del autor en HuggingFace: https://huggingface.co/Krmehta94
+- Modelo en Hugging Face: https://huggingface.co/Krmehta94/perceiver-baseline
+- Perfil del autor en Hugging Face: https://huggingface.co/Krmehta94
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana de archivos de la pagina del modelo)
 - Paper de referencia de la arquitectura Perceiver IO: no disponible en los resultados de busqueda proporcionados
 - Repositorio de codigo adicional, demo o blog del autor: no disponible en los resultados de busqueda proporcionados

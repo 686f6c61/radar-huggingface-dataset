@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bella-qwen-1.5b-gguf es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Vachila en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y runtimes compatibles. La model card indica que el modelo fue ajustado y convertido a GGUF utilizando Unsloth, e incluye un fichero Modelfile de Ollama para facilitar su despliegue. Se trata, por tanto, de un modelo pequeno, orientado a entornos con recursos limitados y a inferencia local.
+Bella-qwen-1.5b-gguf es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Vachila en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y runtimes compatibles. La model card indica que el modelo fue ajustado y convertido a GGUF utilizando Unsloth, e incluye un fichero Modelfile de Ollama para facilitar su despliegue. Se trata, por tanto, de un modelo pequeno, orientado a entornos con recursos limitados y a inferencia local.
 
 El modelo cuenta con 1.543.714.304 parametros totales (aproximadamente 1,54 mil millones), lo que lo situa en la categoria de modelos compactos capaces de ejecutarse en CPU y en GPU de consumo. El unico fichero de pesos publicado es una cuantizacion Q4_K_M del modelo base Qwen2.5-1.5B-Instruct, con un tamano de repositorio de aproximadamente 1,0 GB.
 
@@ -33,7 +33,7 @@ Las capacidades declaradas o deducibles de la informacion disponible son limitad
 
 - Generacion de texto conversacional: el tag "conversational" y el ejemplo con `llama-cli` sugieren uso en dialogos.
 - Inferencia con plantillas de chat: el ejemplo usa el flag `--jinja`, que activa el procesamiento de plantillas de chat Jinja en llama.cpp.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo esta preparado para su uso a traves de servicios compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo esta preparado para su uso a traves de servicios compatibles con la API de Hugging Face.
 - Capacidades heredadas del base: al derivar de Qwen2.5-1.5B-Instruct, es probable que conserve generacion de texto, razonamiento basico, codigo y matematicas elementales, pero esto no esta verificado para el fine-tune.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -72,7 +72,7 @@ La comparativa se realiza frente al modelo base y a otras alternativas compactas
 
 | Modelo | Parametros | Contexto (segun documentacion publica) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bella-qwen-1.5b-gguf | 1,54B | no disponible | no disponible | GGUF en HuggingFace |
+| Bella-qwen-1.5b-gguf | 1,54B | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 tokens | Apache 2.0 (segun documentacion del base) | Safetensors y GGUF |
 | Llama 3.2 1B Instruct | 1,24B | hasta 128.000 tokens | Llama 3.2 Community License | Safetensors y GGUF |
 | Gemma 2 2B Instruct | 2,6B | 8.192 tokens | Gemma Terms of Use | Safetensors y GGUF |
@@ -92,6 +92,6 @@ Nota: los datos de contexto y licencia de las alternativas proceden de su docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vachila/bella-qwen-1.5b-gguf
+- Hugging Face: https://huggingface.co/Vachila/bella-qwen-1.5b-gguf
 - Unsloth (repositorio usado para el fine-tuning y conversion): https://github.com/unslothai/unsloth
 - Modelo base declarado (Qwen2.5-1.5B-Instruct): no se proporciona enlace directo en la informacion disponible.

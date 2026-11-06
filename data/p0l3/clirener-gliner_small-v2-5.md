@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de comparativas directas con alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P0L3/CliReNER-gliner_small-v2.5
+- Modelo en Hugging Face: https://huggingface.co/P0L3/CliReNER-gliner_small-v2.5
 - Modelo base: https://huggingface.co/gliner-community/gliner_small-v2.5
 - Dataset de entrenamiento (silver): https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_SILVER
 - Dataset de evaluación (gold): https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_GOLD

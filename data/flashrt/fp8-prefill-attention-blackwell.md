@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `flashrt/fp8-prefill-attention-blackwell` alojado en HuggingFace no contiene información pública sobre el modelo que supuestamente representa. El nombre sugiere una implementación de atención con prefill en precisión FP8 orientada a GPUs Blackwell, pero no se ha publicado ninguna especificación técnica, peso, documentación ni datos de entrenamiento. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de modelo disponibles.
+El repositorio `flashrt/fp8-prefill-attention-blackwell` alojado en Hugging Face no contiene información pública sobre el modelo que supuestamente representa. El nombre sugiere una implementación de atención con prefill en precisión FP8 orientada a GPUs Blackwell, pero no se ha publicado ninguna especificación técnica, peso, documentación ni datos de entrenamiento. El tamaño del repositorio es de 0.0 GB, lo que indica que no hay archivos de modelo disponibles.
 
 Dado que no existe información verificable sobre arquitectura, parámetros, licencia o capacidades, este repositorio debe considerarse como un placeholder o un experimento sin documentar. No es posible evaluar ni utilizar el modelo en ningún flujo de trabajo real hasta que el autor publique los datos correspondientes.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir información sobre el modelo, no se puede comparar 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/flashrt/fp8-prefill-attention-blackwell)
+- [Repositorio en Hugging Face](https://huggingface.co/flashrt/fp8-prefill-attention-blackwell)

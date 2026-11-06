@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qwen3.5-0.8B-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic` en HuggingFace. No es un modelo entrenado ni utilizable para inferencia real: se trata de un *fixture* o esqueleto reducido del modelo `Qwen/Qwen3.5-0.8B`, generado automáticamente con pesos aleatorios (semilla 17) y una configuración de arquitectura encogida. Su propósito es servir como banco de pruebas para validar integraciones de frameworks (concretamente Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
+`Qwen3.5-0.8B-mic` es un artefacto de prueba publicado por el usuario `huggingface-mic` en Hugging Face. No es un modelo entrenado ni utilizable para inferencia real: se trata de un *fixture* o esqueleto reducido del modelo `Qwen/Qwen3.5-0.8B`, generado automáticamente con pesos aleatorios (semilla 17) y una configuración de arquitectura encogida. Su propósito es servir como banco de pruebas para validar integraciones de frameworks (concretamente Transformers) sin necesidad de descargar ni ejecutar el checkpoint completo.
 
 El repositorio contiene 16.775.312 parámetros en safetensors (aproximadamente 16,8M), una fracción mínima del modelo base, y ocupa 0,1 GB. Mantiene la misma clase de arquitectura que el original (`Qwen3_5ForConditionalGeneration`), los mismos nombres de tensores y los ficheros de procesador copiados byte a byte del modelo base, pero con solo 2 capas ocultas en la torre de texto. Está etiquetado explícitamente como `test-artifact` para excluirlo de búsquedas de modelos candidatos.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/Qwen3.5-0.8B-mic` | 16,8M | no disponible | Fixture de test | no disponible | HuggingFace |
-| `Qwen/Qwen3.5-0.8B` | ~0,8B (no confirmado en la información) | no disponible | Modelo real multimodal | no disponible | HuggingFace |
-| Otros fixtures de `huggingface-mic` | variable | no disponible | Test de integración | no disponible | HuggingFace |
+| `huggingface-mic/Qwen3.5-0.8B-mic` | 16,8M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `Qwen/Qwen3.5-0.8B` | ~0,8B (no confirmado en la información) | no disponible | Modelo real multimodal | no disponible | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable | no disponible | Test de integración | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas del modelo base en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3.5-0.8B-mic/blob/main/integrations/transformers/usage.md

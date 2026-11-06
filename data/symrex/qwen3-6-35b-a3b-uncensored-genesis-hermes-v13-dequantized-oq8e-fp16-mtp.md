@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ8e-fp16-mtp
+- Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ8e-fp16-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

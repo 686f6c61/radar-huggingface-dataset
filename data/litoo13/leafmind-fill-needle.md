@@ -82,6 +82,6 @@ La comparación con LLM generales pequeños es cualitativa: este modelo está es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litoo13/leafmind-fill-needle
+- Modelo en Hugging Face: https://huggingface.co/litoo13/leafmind-fill-needle
 - Modelo base: https://huggingface.co/Cactus-Compute/needle3
 - Repositorio del proyecto leafmind: https://github.com/litoosh13/leafmind

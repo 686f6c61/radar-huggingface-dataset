@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `agentic-ptb/kimi.h039.rl_v7.step_30` | 9,4B | no disponible | RL para código/agentes | no disponible | Checkpoint intermedio, no apto para producción |
-| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible (típicamente 128k en Qwen3) | Modelo base general | Apache 2.0 (asumido, no confirmado) | Disponible en HuggingFace |
-| `Qwen/Qwen3.5-9B-Instruct` | 9,4B | no disponible | Instrucción y chat | Apache 2.0 (asumido) | Disponible en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` | 9,4B | no disponible (típicamente 128k en Qwen3) | Modelo base general | Apache 2.0 (asumido, no confirmado) | Disponible en Hugging Face |
+| `Qwen/Qwen3.5-9B-Instruct` | 9,4B | no disponible | Instrucción y chat | Apache 2.0 (asumido) | Disponible en Hugging Face |
 
 La comparativa se limita a los modelos base de Qwen porque no hay información sobre otros modelos de 9B con fine-tuning RL específico para código en el mismo contexto. El checkpoint de `agentic-ptb` se diferencia por su naturaleza experimental y por el problema de EOS, lo que lo hace inadecuado para uso directo.
 
@@ -77,6 +77,6 @@ La comparativa se limita a los modelos base de Qwen porque no hay información s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h039.rl_v7.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h039.rl_v7.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado)
 - Índice del barrido (mencionado en la card): `agentic-ptb/INDEX` (no se proporciona URL directa)

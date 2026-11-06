@@ -4,7 +4,7 @@
 
 DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit es una conversion a formato MLX de Apple del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, publicada por el usuario SirSahOl. No se trata de un modelo entrenado desde cero ni de un ajuste fino: es una conversion de pesos con cuantizacion de 4 bits (weight-only) generada con la herramienta mlx-lm 0.31.3, pensada para ejecutar el modelo en Macs con chip Apple Silicon mediante el framework MLX. El repositorio ocupa 1,0 GB y el artefacto convertido pesa 964,5 MB, con 1.777.088.000 parametros almacenados en safetensors.
 
-El modelo hereda la arquitectura y el comportamiento del modelo base, un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2` en HuggingFace) con aproximadamente 1,78 mil millones de parametros, orientado a generacion de texto y uso conversacional. Su interes practico esta en el consumo de memoria: segun la model card, la variante de 4 bits alcanza 52,9 tokens por segundo con un TTFT de 18,91 ms y un pico de memoria de 808 MB en un Apple M1 con 8 GB de memoria unificada, lo que permite ejecutarlo en portatiles modestos junto a otras aplicaciones.
+El modelo hereda la arquitectura y el comportamiento del modelo base, un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2` en Hugging Face) con aproximadamente 1,78 mil millones de parametros, orientado a generacion de texto y uso conversacional. Su interes practico esta en el consumo de memoria: segun la model card, la variante de 4 bits alcanza 52,9 tokens por segundo con un TTFT de 18,91 ms y un pico de memoria de 808 MB en un Apple M1 con 8 GB de memoria unificada, lo que permite ejecutarlo en portatiles modestos junto a otras aplicaciones.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una via de despliegue local en hardware de consumo Apple, un nicho donde el ecosistema MLX compite con llama.cpp y Ollama. Por otro, conviene advertir que se trata de una conversion de la comunidad con 0 descargas y 0 likes en el momento de la consulta, sin benchmarks de calidad publicados, por lo que su evaluacion debe basarse en el modelo base y no en metricas propias del repositorio.
 
@@ -99,7 +99,7 @@ No se dispone de datos de contexto, benchmarks de calidad ni comparativas con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Variante de 8 bits: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-1.5B-chat-mlx-8bit
 - Perfil del autor: https://huggingface.co/SirSahOl

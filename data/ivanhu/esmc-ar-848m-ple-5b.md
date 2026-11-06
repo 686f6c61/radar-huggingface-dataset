@@ -90,6 +90,6 @@ No hay información publicada sobre benchmarks comparativos con estos modelos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IvanHU/esmc-ar-848m-ple-5b
+- Hugging Face: https://huggingface.co/IvanHU/esmc-ar-848m-ple-5b
 - Código de entrenamiento: https://github.com/huyiwen/bio-next
 - Dataset de preentrenamiento: https://huggingface.co/datasets/QingWY/protein-pretraining-data

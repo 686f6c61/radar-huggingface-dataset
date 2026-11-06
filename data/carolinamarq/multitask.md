@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carolinamarq/multitask` es un repositorio de HuggingFace publicado por la usuaria Carolina Marques que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Blip orientada a tareas multitarea. Segun la propia model card, el proposito del repositorio no es servir como modelo preentrenado listo para produccion, sino como material de revision de codigo, pruebas de humo (smoke tests) y pequenos experimentos controlados. El checkpoint incluido se describe explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado contra benchmarks.
+`carolinamarq/multitask` es un repositorio de Hugging Face publicado por la usuaria Carolina Marques que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Blip orientada a tareas multitarea. Segun la propia model card, el proposito del repositorio no es servir como modelo preentrenado listo para produccion, sino como material de revision de codigo, pruebas de humo (smoke tests) y pequenos experimentos controlados. El checkpoint incluido se describe explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado ni evaluado contra benchmarks.
 
 El dato mas relevante para un evaluador tecnico es la discrepancia entre la etiqueta de escala declarada ("xlarge") y el numero real de parametros almacenados en `model.safetensors`, que asciende a 49.600 parametros. Esto indica que el peso publicado no corresponde a una configuracion xlarge real, sino a una inicializacion de tamano muy reducido, coherente con el tamano del repositorio (0,0 GB) y con las cero descargas y cero "likes" registrados en el momento de la consulta. La licencia es MIT y el formato de pesos es safetensors.
 
@@ -63,9 +63,9 @@ No hay modelos estrictamente comparables, porque `carolinamarq/multitask` no es 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Entrenado |
 |---|---|---|---|---|---|
-| carolinamarq/multitask | 49.600 | no disponible | MIT | HuggingFace | No |
-| Salesforce BLIP | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Si |
-| Salesforce BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Si |
+| carolinamarq/multitask | 49.600 | no disponible | MIT | Hugging Face | No |
+| Salesforce BLIP | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Si |
+| Salesforce BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Si |
 
 No se dispone de datos suficientes para comparar contexto, rendimiento o benchmarks con alternativas. Cualquier comparacion cuantitativa seria especulativa.
 
@@ -84,8 +84,8 @@ No se dispone de datos suficientes para comparar contexto, rendimiento o benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carolinamarq/multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/carolinamarq
+- Repositorio Hugging Face: https://huggingface.co/carolinamarq/multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/carolinamarq
 - Otro repositorio del autor (llama-chatbot): https://huggingface.co/carolinamarq/llama-chatbot
 - Perfil del autor en GitHub: https://github.com/CarolinaMarq
 - MultitaskAI (herramienta no relacionada con el modelo): https://multitaskai.com/

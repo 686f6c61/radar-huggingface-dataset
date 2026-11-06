@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Bariest/omni-walk` es un repositorio publicado en HuggingFace por el usuario Bariest bajo licencia Apache 2.0. El unico dato tecnico verificable es la presencia de pesos en formato ONNX entre sus etiquetas; no se ha publicado model card con descripcion funcional, arquitectura, tamano ni datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 2 de noviembre de 2026.
+`Bariest/omni-walk` es un repositorio publicado en Hugging Face por el usuario Bariest bajo licencia Apache 2.0. El unico dato tecnico verificable es la presencia de pesos en formato ONNX entre sus etiquetas; no se ha publicado model card con descripcion funcional, arquitectura, tamano ni datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 2 de noviembre de 2026.
 
-Por el nombre ("omni-walk") y el formato de despliegue (ONNX), es plausible que se trate de un modelo orientado a inferencia en produccion, posiblemente relacionado con locomotion o control, pero esta interpretacion no esta respaldada por ninguna documentacion del autor. No hay informacion sobre el pipeline de HuggingFace, los idiomas soportados ni los parametros del modelo.
+Por el nombre ("omni-walk") y el formato de despliegue (ONNX), es plausible que se trate de un modelo orientado a inferencia en produccion, posiblemente relacionado con locomotion o control, pero esta interpretacion no esta respaldada por ninguna documentacion del autor. No hay informacion sobre el pipeline de Hugging Face, los idiomas soportados ni los parametros del modelo.
 
 Dada la ausencia total de especificaciones publicas, esta ficha se limita a documentar los metadatos disponibles y a marcar explicitamente como "no disponible" cada campo que el autor no ha declarado. Cualquier evaluacion de idoneidad para produccion requiere contactar con el autor o inspeccionar directamente los artefactos del repositorio.
 
@@ -78,5 +78,5 @@ No disponible. No se puede identificar una categoria de modelo (texto, vision, c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bariest/omni-walk
+- Repositorio Hugging Face: https://huggingface.co/Bariest/omni-walk
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

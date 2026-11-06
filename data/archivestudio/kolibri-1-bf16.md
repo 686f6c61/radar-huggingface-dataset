@@ -96,7 +96,7 @@ Nota: los datos de los modelos de referencia corresponden a informacion publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/Kolibri-1-BF16
+- Hugging Face: https://huggingface.co/ArchiveStudio/Kolibri-1-BF16
 - Tech report (PDF): https://aleph-alpha.com/downloads/tech-report.pdf
 - Tech blog: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/
 - Paper referenciado en tags: arxiv:2512.11614 (https://arxiv.org/abs/2512.11614)

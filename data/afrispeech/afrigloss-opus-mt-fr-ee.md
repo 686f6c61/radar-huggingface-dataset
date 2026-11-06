@@ -4,7 +4,7 @@
 
 AfriSpeech/afrigloss-opus-mt-fr-ee es un modelo de traducción automática francés → ewé desarrollado por AfriSpeech dentro del marco Afri-Gloss-MT. Se trata de un fine-tuning de la arquitectura MarianMT (transformer encoder-decoder) orientado a un caso de uso muy concreto: la traducción con restricciones terminológicas inyectadas en el texto de origen. El modelo permite insertar términos objetivo entre corchetes angulares (`<termino>`) en la frase fuente y preservarlos en la salida, lo que resuelve el problema clásico de la inconsistencia terminológica en dominios especializados cuando se traduce hacia lenguas de bajos recursos.
 
-El modelo cuenta con 75.030.843 parámetros (aproximadamente 75 millones) y un repositorio de 0,3 GB en formato safetensors. Está publicado bajo licencia Apache 2.0, lo que facilita su uso comercial, y se distribuye a través de HuggingFace con el pipeline `translation`. Su relevancia actual radica en que aborda la traducción especializada hacia ewé, una lengua gbe hablada en Ghana y Togo, para la que existen pocos recursos y menos aún con control terminológico.
+El modelo cuenta con 75.030.843 parámetros (aproximadamente 75 millones) y un repositorio de 0,3 GB en formato safetensors. Está publicado bajo licencia Apache 2.0, lo que facilita su uso comercial, y se distribuye a través de Hugging Face con el pipeline `translation`. Su relevancia actual radica en que aborda la traducción especializada hacia ewé, una lengua gbe hablada en Ghana y Togo, para la que existen pocos recursos y menos aún con control terminológico.
 
 La propuesta se enmarca en la colección Afri-Gloss-MT Models, que agrupa modelos con la misma filosofía para distintas combinaciones de lenguas africanas. El modelo está entrenado sobre el subconjunto `ee` del dataset `AfriSpeech/gloss-mt-train-fr`, derivado de corpus paralelos multiversión de `AfriSpeech/africa-corpus` y `AfriSpeech/african-corpus-jw`.
 
@@ -85,7 +85,7 @@ La ventaja diferencial del modelo de AfriSpeech frente a alternativas generalist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ee
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ee
 - Colección Afri-Gloss-MT Models: https://huggingface.co/collections/AfriSpeech/afri-gloss-mt-models-6adce3a3c13c6a86f07b6e6d
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/gloss-mt-train-fr
 - Paper de referencia (citado en la model card): Owusu, Mich-Seth, «Afri-Gloss-MT: In-Place Glossary Constraints for African Machine Translation», arXiv preprint, 2026 (sin enlace directo disponible en la información proporcionada).

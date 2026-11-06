@@ -75,7 +75,7 @@ Las dos caídas con empujones ocurrieron 1,2 s y 2,4 s después de la entrega de
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GinDuck/microduck-polite-bow | Política de control ONNX (episódica) | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| GinDuck/microduck-polite-bow | Política de control ONNX (episódica) | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | pollen-robotics `alpha_stand.onnx` | Política de control ONNX (equilibrio) | no disponible | no aplica | no disponible en la información proporcionada | Stack oficial Microduck |
 | Política original del slot `ground_pick` | Política de control ONNX | no disponible | no aplica | no disponible en la información proporcionada | Stack oficial Microduck |
 
@@ -95,9 +95,9 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-polite-bow
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-polite-bow
 - Repositorio del robot: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl
 - Licencia CC BY-NC-SA 4.0 del modelo 3D: https://creativecommons.org/licenses/by-nc-sa/4.0/
 - iMundo: https://imundo.ch
-- Vídeo de previsualización: `media/preview.mp4` dentro del repositorio de HuggingFace
+- Vídeo de previsualización: `media/preview.mp4` dentro del repositorio de Hugging Face

@@ -112,11 +112,11 @@ Frente a otros detectores tipo DETR de uso común (RT-DETR, DINO, деformable D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-x-onnx
+- Modelo en Hugging Face: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-x-onnx
 - Proyecto original EdgeCrafter (Intellindust-AI-Lab): https://github.com/Intellindust-AI-Lab/EdgeCrafter (revisión `b17f0f340af687e7adf2dff42a49e2eb8250ee20`)
 - Variante ECDet-S ONNX: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-s-onnx
 - Variante ECDet-S ONNX INT8 experimental: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-s-onnx-int8-experimental
-- Perfil de AnnotateIt en HuggingFace: https://huggingface.co/AnnotateIt
+- Perfil de AnnotateIt en Hugging Face: https://huggingface.co/AnnotateIt
 - Sitio de AnnotateIt: https://annotateit.ai/
 - Aplicación de AnnotateIt: https://app.annotateit.ai/
 - Documentación de AnnotateIt: https://annotateit.ai/docs/

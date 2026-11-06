@@ -96,10 +96,10 @@ Velocidad: aproximadamente 0,2-0,45 s de CPU por número comprobado en un servid
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| decosa-cell-pointer-modernbert-base (v2 blind) | Encoder especializado en apuntado de celdas, *value-blind* | 150,2 M | No disponible | 96/96 y 95/96 errores detectados; 100 % celda correcta en test sintético y reescrito; 176/178 y 97,8 % en ClinicalTrials.gov | Apache 2.0 | HuggingFace (repo propio, 0 descargas y 0 *likes* en la fecha de consulta) |
+| decosa-cell-pointer-modernbert-base (v2 blind) | Encoder especializado en apuntado de celdas, *value-blind* | 150,2 M | No disponible | 96/96 y 95/96 errores detectados; 100 % celda correcta en test sintético y reescrito; 176/178 y 97,8 % en ClinicalTrials.gov | Apache 2.0 | Hugging Face (repo propio, 0 descargas y 0 *likes* en la fecha de consulta) |
 | `aware/` (v1 aware, mismo repositorio) | Encoder especializado, *value-aware* | 150,2 M (misma base) | No disponible | Rendimiento similar en dominio clínico (100 %/98,9 %/98,2 %), pero cita la celda del valor escrito fuera de dominio y es ~2× más lento | Apache 2.0 | Incluido en el mismo repositorio |
 | Qwen3.8-27B como puntero, valores visibles | LLM generativo de propósito general usado como puntero | ≈27 B (no confirmado en la información disponible) | No disponible | 93/96, 95/96 y 172/178 errores detectados; 99,0 %/98,7 %/97,2 % celda correcta; 85,4 %/82,1 %/87,6 % celda correcta con error plantado | No disponible | No disponible |
-| answerdotai/ModernBERT-base | Encoder de propósito general | ≈150 M | No disponible en esta información | No realiza la tarea sin ajuste fino | Apache 2.0 (según el modelo base) | HuggingFace |
+| answerdotai/ModernBERT-base | Encoder de propósito general | ≈150 M | No disponible en esta información | No realiza la tarea sin ajuste fino | Apache 2.0 (según el modelo base) | Hugging Face |
 
 No se dispone de comparativas con otros punteros de celdas especializados (no disponible).
 
@@ -120,7 +120,7 @@ No se dispone de comparativas con otros punteros de celdas especializados (no di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-cell-pointer-modernbert-base
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-cell-pointer-modernbert-base
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Variante *value-aware* v1: carpeta `aware/` dentro del repositorio del modelo (https://huggingface.co/decosaai/decosa-cell-pointer-modernbert-base/tree/main/aware)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

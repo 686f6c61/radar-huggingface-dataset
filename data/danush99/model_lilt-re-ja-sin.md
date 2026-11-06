@@ -64,7 +64,7 @@ La model card también incluye una tabla de resultados de entrenamiento por paso
 - VRAM estimada: el modelo tiene 286.812.610 parámetros, lo que en precisión fp32 ocupa aproximadamente 1,15 GB. Para inferencia con un lote pequeño, se requiere menos de 2 GB de VRAM.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM, como una RTX 2060 o superior, es suficiente. También puede ejecutarse en CPU.
 - Compatibilidad con GPUs de consumo: sí, el modelo es pequeño y cabe en GPUs de gama baja.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch) y ONNX Runtime. No es compatible con vLLM, llama.cpp ni Ollama, ya que no es un modelo generativo.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch) y ONNX Runtime. No es compatible con vLLM, llama.cpp ni Ollama, ya que no es un modelo generativo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danush99/Model_LiLT-RE-JA-SIN
+- Hugging Face: https://huggingface.co/danush99/Model_LiLT-RE-JA-SIN
 - Modelo base: https://huggingface.co/kavg/LiLT-RE-JA
 - Dataset xfun: https://huggingface.co/datasets/xfun
 - Perfil del autor: https://huggingface.co/danush99

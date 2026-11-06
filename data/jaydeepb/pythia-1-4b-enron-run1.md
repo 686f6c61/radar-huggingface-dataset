@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaydeepb/pythia-1.4b-enron-run1 | 1,41 B | 128 tokens en ajuste (base: 2.048) | Fine-tune de memorización sobre correo Enron | Apache 2.0 | HuggingFace, 0 descargas |
-| EleutherAI/pythia-1.4b (base) | 1,41 B | 2.048 tokens | Modelo base preentrenado, sin ajuste por instrucciones | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| GPT-2 XL | 1,5 B | 1.024 tokens | Transformer decoder-only preentrenado | MIT (pesos publicados por OpenAI) | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Transformer decoder-only con ajuste por instrucciones | Apache 2.0 | HuggingFace |
+| jaydeepb/pythia-1.4b-enron-run1 | 1,41 B | 128 tokens en ajuste (base: 2.048) | Fine-tune de memorización sobre correo Enron | Apache 2.0 | Hugging Face, 0 descargas |
+| EleutherAI/pythia-1.4b (base) | 1,41 B | 2.048 tokens | Modelo base preentrenado, sin ajuste por instrucciones | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| GPT-2 XL | 1,5 B | 1.024 tokens | Transformer decoder-only preentrenado | MIT (pesos publicados por OpenAI) | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Transformer decoder-only con ajuste por instrucciones | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente al modelo base: este run1 no mejora capacidades generales, las restringe deliberadamente al dominio del correo Enron para inducir memorización. Frente a alternativas instruct de tamaño similar, carece de alineación, de soporte de tool calling y de contexto largo práctico.
 
@@ -86,7 +86,7 @@ La comparación relevante es frente al modelo base: este run1 no mejora capacida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-enron-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-enron-run1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de ajuste: https://huggingface.co/datasets/corbt/enron-emails
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes (la búsqueda devolvió únicamente listados inmobiliarios sin relación con el modelo); no hay papers, blogs ni demos públicos disponibles en la información proporcionada.

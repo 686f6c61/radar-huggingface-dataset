@@ -71,5 +71,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (arquite
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vssokolov/retrieval-demo-2024
+- Repositorio Hugging Face: https://huggingface.co/vssokolov/retrieval-demo-2024
 - No se han encontrado papers, blogs o demos asociados a este modelo específico en la búsqueda web.

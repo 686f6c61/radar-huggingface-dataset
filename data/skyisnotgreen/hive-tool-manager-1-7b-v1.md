@@ -4,7 +4,7 @@
 
 Hive Tool Manager 1.7B es un modelo especializado de 1.728.801.600 parámetros derivado de LiquidAI/LFM3-1.7B-Base mediante SFT con LoRA. Lo desarrolla el usuario independiente SkyIsNotGreen como una de las cinco "plazas" (seats) de la familia Hive 1.7B, un conjunto de modelos de rol que se sirven y enrutan mediante el plano de control local Hive. Este checkpoint concreto cubre la plaza de *agency*: su única función es seleccionar la herramienta adecuada para una tarea o devolver un plan ordenado de varias herramientas.
 
-No es un modelo de chat general. El conjunto de herramientas que maneja está cerrado y definido: `read_file`, `write_file`, `bash`, `run_tests`, `web_search` e `image_gen`. Se evaluó sobre 43 tareas de agencia reservadas (held-out), con una precisión de 0,977 en formato HuggingFace y 0,930 en GGUF Q4_K_M, con una mediana de latencia de 36 ms y 48 ms respectivamente.
+No es un modelo de chat general. El conjunto de herramientas que maneja está cerrado y definido: `read_file`, `write_file`, `bash`, `run_tests`, `web_search` e `image_gen`. Se evaluó sobre 43 tareas de agencia reservadas (held-out), con una precisión de 0,977 en formato Hugging Face y 0,930 en GGUF Q4_K_M, con una mediana de latencia de 36 ms y 48 ms respectivamente.
 
 Su relevancia es acotada pero clara: demuestra un patrón de especialización por roles sobre un modelo base pequeño, con datos sintéticos validados por checker y un coste de entrenamiento muy bajo (4,4 GiB de VRAM pico en una GPU AMD de 20 GB). Es una pieza de infraestructura para pipelines de agentes locales, no un modelo de propósito general.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento frente a modelos de selecció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/hive-tool-manager-1.7b-v1
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/hive-tool-manager-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Licencia del base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base/blob/main/LICENSE
 - Repositorio Hive: https://github.com/sky-is-green/hive

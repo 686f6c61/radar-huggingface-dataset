@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Abenzerps-GGUF (este modelo) | ~7,1 mil millones (transformer) | GGUF + safetensors auxiliares | qwen-research | Repositorio publico en HuggingFace, 263 descargas, 63 likes |
+| Qwen-Image-2.1-Uncensored-Abenzerps-GGUF (este modelo) | ~7,1 mil millones (transformer) | GGUF + safetensors auxiliares | qwen-research | Repositorio publico en Hugging Face, 263 descargas, 63 likes |
 | Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | safetensors | qwen-research | Repositorio oficial de Qwen |
 | Comfy-Org/Qwen-Image-2.1 | no disponible en la informacion proporcionada | safetensors | no disponible en la informacion proporcionada | Repositorio de Comfy-Org, origen del text encoder y el VAE |
 | Otras alternativas de generacion de imagen (FLUX, SD3.5, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |

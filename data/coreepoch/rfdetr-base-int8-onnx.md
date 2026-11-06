@@ -6,7 +6,7 @@ RF-DETR Base INT8 ONNX es una versión cuantizada a INT8 del detector de objetos
 
 El interés de esta ficha radica en su propuesta de despliegue: cuantización de pesos y activaciones a INT8 sin reentrenamiento, usando solo 128 imágenes de COCO para calibración, con una pérdida de precisión declarada del 0,4 % respecto al modelo FP32 (53,12 AP frente a 53,32 AP en COCO val2017). Está pensada para inferencia en CPU con ONNX Runtime u OpenVINO, sin acelerador dedicado.
 
-La entrada es una imagen RGB de 560x560 píxeles y la salida son 300 cajas normalizadas en formato cxcywh más 300 logits indexados por categoría COCO (91 clases). El repositorio ocupa 0,1 GB y el modelo acumula 19 descargas y 2 likes en HuggingFace en el momento de la consulta.
+La entrada es una imagen RGB de 560x560 píxeles y la salida son 300 cajas normalizadas en formato cxcywh más 300 logits indexados por categoría COCO (91 clases). El repositorio ocupa 0,1 GB y el modelo acumula 19 descargas y 2 likes en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -97,7 +97,7 @@ Solo se dispone de datos comparativos frente al propio modelo base FP32. No hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CoreEpoch/rfdetr-base-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/CoreEpoch/rfdetr-base-int8-onnx
 - Repositorio RF-DETR de Roboflow: https://github.com/roboflow/rf-detr
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-base
 - Kenosis (cuantizador de Core Epoch): https://coreepoch.dev/kenosis/

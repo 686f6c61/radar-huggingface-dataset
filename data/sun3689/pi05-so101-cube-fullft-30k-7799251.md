@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sun3689/pi05-so101-cube-fullft-30k-7799251 | no disponible (deriva de Pi0.5 base) | no disponible | Sin evaluacion publicada; perdida final ~0,0054 | gemma | Publico en HuggingFace, 0 descargas, sin cuantizaciones |
+| sun3689/pi05-so101-cube-fullft-30k-7799251 | no disponible (deriva de Pi0.5 base) | no disponible | Sin evaluacion publicada; perdida final ~0,0054 | gemma | Publico en Hugging Face, 0 descargas, sin cuantizaciones |
 | lerobot/pi05_base | no disponible en la informacion proporcionada | no disponible | No disponible | gemma | Modelo base publico del que parte este fine-tune |
 | Otras alternativas VLA del ecosistema LeRobot (p. ej. pi0, SmolVLA) | no disponible en la informacion proporcionada | no disponible | No disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sun3689/pi05-so101-cube-fullft-30k-7799251
+- Modelo en Hugging Face: https://huggingface.co/sun3689/pi05-so101-cube-fullft-30k-7799251
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/fatdove/so101-cylinder-cube-bowl_20260925_005955
 - Tokenizer PaliGemma: https://huggingface.co/google/paligemma-3b-pt-224

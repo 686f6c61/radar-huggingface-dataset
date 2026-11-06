@@ -86,7 +86,7 @@ La recuperación media es del 99.5%, lo que indica una pérdida mínima de preci
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-dynamic)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-dynamic)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [llm-compressor (librería de cuantización)](https://github.com/vllm-project/llm-compressor)
 - [vLLM (servidor de inferencia)](https://github.com/vllm-project/vllm)

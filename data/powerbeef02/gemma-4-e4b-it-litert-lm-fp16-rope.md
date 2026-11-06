@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una build de LiteRT-LM del modelo Gemma 4 E4B (variante instruct, `it`) con una unica modificacion respecto al original de `litert-community`: el grafo que convierte las posiciones de token en fases rotatorias (RoPE) ha sido reescrito para ser exacto en coma flotante de 16 bits. El autor es el usuario de HuggingFace PowerBeef02 y el modelo base es `litert-community/gemma-4-E4B-it-litert-lm`. El problema que resuelve es concreto y medible: con activaciones de 16 bits, la implementacion original corrompe secuencias verbatim (digitos, identificadores, citas) cuando el contexto supera los 2.048 tokens, porque el CAST de la posicion INT32 a float16 no puede representar todos los enteros por encima de 2.048 (2049 se convierte en 2048, y {2051, 2052, 2053} en 2052).
+Este repositorio contiene una build de LiteRT-LM del modelo Gemma 4 E4B (variante instruct, `it`) con una unica modificacion respecto al original de `litert-community`: el grafo que convierte las posiciones de token en fases rotatorias (RoPE) ha sido reescrito para ser exacto en coma flotante de 16 bits. El autor es el usuario de Hugging Face PowerBeef02 y el modelo base es `litert-community/gemma-4-E4B-it-litert-lm`. El problema que resuelve es concreto y medible: con activaciones de 16 bits, la implementacion original corrompe secuencias verbatim (digitos, identificadores, citas) cuando el contexto supera los 2.048 tokens, porque el CAST de la posicion INT32 a float16 no puede representar todos los enteros por encima de 2.048 (2049 se convierte en 2048, y {2051, 2052, 2053} en 2052).
 
 El arreglo divide la posicion como `2048·h + l`: la parte baja `l` (0-2047) es exacta en float16 y pasa por el camino original (MUL / SIN / COS), mientras que la fase de `2048·h` se obtiene de una tabla precalculada seleccionada con `onehot(h)`, y ambas se combinan mediante adicion de angulos usando solo valores en [−1, 1]. Se aplica a las cuatro firmas del grafo (`decode`, `prefill_1024`, `prefill_128`, `verify`) y al `mtp_drafter` de decodificacion especulativa. Los pesos son byte a byte identicos al original: solo cambia el grafo.
 
@@ -105,7 +105,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PowerBeef02/gemma-4-E4B-it-litert-lm-fp16-rope
+- Repositorio en Hugging Face: https://huggingface.co/PowerBeef02/gemma-4-E4B-it-litert-lm-fp16-rope
 - Modelo base: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - Fichero original del modelo base: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm/resolve/2eee7ac325f20eb8c9ac1d0e972f7c84663062da/gemma-4-E4B-it.litertlm
 - Issue de LiteRT-LM #3913 (descripcion del fallo): https://github.com/google-ai-edge/LiteRT-LM/issues/3913

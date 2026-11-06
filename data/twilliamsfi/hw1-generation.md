@@ -23,7 +23,7 @@ Se distribuye bajo licencia Apache 2.0, con 0 descargas y 0 likes en el momento 
 | Escala declarada | "huge" (según `config.json` / model card) |
 | Optimizador por defecto | Adam con schedule de warmup constante (receta de partida, no evidencia de entrenamiento) |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Twilliamsfi/hw1-generation | 16.576 | no disponible | sin benchmark declarado | Apache 2.0 | HuggingFace (0 descargas) |
+| Twilliamsfi/hw1-generation | 16.576 | no disponible | sin benchmark declarado | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. No se han identificado modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Twilliamsfi/hw1-generation
+- Hugging Face: https://huggingface.co/Twilliamsfi/hw1-generation
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

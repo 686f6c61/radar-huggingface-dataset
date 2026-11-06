@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper-Small-Khmer-Final-v3-2000 es un ajuste fino (fine-tune) del modelo Whisper Small de OpenAI, publicado por el usuario phonsobon en HuggingFace. Por el nombre del repositorio se deduce que el objetivo es el reconocimiento automatico del habla (ASR) en jemer (khmer), idioma minoritario en cuanto a recursos y con un sistema de escritura propio que los modelos multilingues genericos suelen transcribir con una tasa de error alta. El modelo cuenta con 241.734.912 parametros reales segun los pesos en safetensors, lo que coincide con el tamano de Whisper Small, y el repositorio ocupa aproximadamente 1,0 GB.
+Whisper-Small-Khmer-Final-v3-2000 es un ajuste fino (fine-tune) del modelo Whisper Small de OpenAI, publicado por el usuario phonsobon en Hugging Face. Por el nombre del repositorio se deduce que el objetivo es el reconocimiento automatico del habla (ASR) en jemer (khmer), idioma minoritario en cuanto a recursos y con un sistema de escritura propio que los modelos multilingues genericos suelen transcribir con una tasa de error alta. El modelo cuenta con 241.734.912 parametros reales segun los pesos en safetensors, lo que coincide con el tamano de Whisper Small, y el repositorio ocupa aproximadamente 1,0 GB.
 
-La relevancia de esta publicacion es limitada pero concreta: se trata de un artefacto comunitario, no de un lanzamiento de laboratorio, con 12 descargas y 0 "likes" en el momento de la consulta, y con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. La ficha del repositorio no incluye model card, licencia declarada, idiomas soportados ni resultados de evaluacion, de modo que cualquier decision de adopcion en produccion exige una validacion propia sobre un corpus de jemer etiquetado.
+La relevancia de esta publicacion es limitada pero concreta: se trata de un artefacto comunitario, no de un lanzamiento de laboratorio, con 12 descargas y 0 "likes" en el momento de la consulta, y con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. La ficha del repositorio no incluye model card, licencia declarada, idiomas soportados ni resultados de evaluacion, de modo que cualquier decision de adopcion en produccion exige una validacion propia sobre un corpus de jemer etiquetado.
 
 Al estar construido sobre Whisper Small, hereda la arquitectura transformer encoder-decoder de OpenAI, su ventana de audio de 30 segundos por inferencia y su capacidad teorica de transcripcion multilingue, aunque el ajuste fino pudo haber especializado el decodificador hacia el jemer y degradado el resto de idiomas. El sufijo "2000" del nombre (probablemente pasos de entrenamiento o numero de muestras) no esta documentado en la informacion disponible.
 
@@ -21,7 +21,7 @@ Al estar construido sobre Whisper Small, hereda la arquitectura transformer enco
 | Licencia | no disponible en el repositorio; el modelo base OpenAI Whisper Small se publico bajo licencia MIT |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,0 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 12 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad | Rendimiento en jemer |
 |---|---|---|---|---|---|---|
-| phonsobon/Whisper-Small-Khmer-Final-v3-2000 | 241,7 M | 30 s por ventana | No declarados (objetivo: jemer) | No disponible en el repo | Gated en HuggingFace, 12 descargas | No disponible (sin benchmarks) |
-| OpenAI Whisper Small (base) | 244 M | 30 s por ventana | 99 idiomas declarados | MIT | Publico en HuggingFace y OpenAI | No disponible de forma especifica por idioma en esta comparativa |
-| OpenAI Whisper Large-v3 | 1.550 M | 30 s por ventana, con mejoras en audios largos | 99 idiomas declarados | MIT | Publico en HuggingFace | No disponible de forma especifica por idioma en esta comparativa |
-| Otros fine-tunes comunitarios de Whisper para jemer | no disponible | no disponible | no disponible | variable | repositorios dispersos en HuggingFace | no disponible |
+| phonsobon/Whisper-Small-Khmer-Final-v3-2000 | 241,7 M | 30 s por ventana | No declarados (objetivo: jemer) | No disponible en el repo | Gated en Hugging Face, 12 descargas | No disponible (sin benchmarks) |
+| OpenAI Whisper Small (base) | 244 M | 30 s por ventana | 99 idiomas declarados | MIT | Publico en Hugging Face y OpenAI | No disponible de forma especifica por idioma en esta comparativa |
+| OpenAI Whisper Large-v3 | 1.550 M | 30 s por ventana, con mejoras en audios largos | 99 idiomas declarados | MIT | Publico en Hugging Face | No disponible de forma especifica por idioma en esta comparativa |
+| Otros fine-tunes comunitarios de Whisper para jemer | no disponible | no disponible | no disponible | variable | repositorios dispersos en Hugging Face | no disponible |
 
 No se dispone de evaluaciones comparativas verificadas entre estas alternativas en jemer, por lo que la eleccion entre ellas deberia basarse en una evaluacion propia con un conjunto de test representativo del dominio objetivo.
 
@@ -83,7 +83,7 @@ No se dispone de evaluaciones comparativas verificadas entre estas alternativas 
 - Ausencia total de model card: no se documentan datos de entrenamiento, hiperparametros, metodo de ajuste ni proceso de evaluacion, lo que impide reproducir o auditar el modelo.
 - Sin benchmarks publicados: no hay WER ni CER, de modo que no puede afirmarse que mejore al Whisper Small original en jemer sin medirlo.
 - Licencia no declarada: el repositorio no especifica terminos de uso. Aunque el modelo base Whisper Small se publico bajo MIT, la ausencia de licencia explicita en este fine-tune genera incertidumbre juridica para uso comercial; conviene contactar con el autor antes de desplegarlo en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de pipelines de descarga y despliegue.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de pipelines de descarga y despliegue.
 - Riesgo de alucinacion tipico de Whisper: en silencios, ruido de fondo, musica o solapamiento de voces el modelo puede generar texto plausible pero inexistente, un problema especialmente grave en transcripcion de llamadas o material legal.
 - Contexto limitado a 30 segundos por inferencia: los audios largos requieren chunking con solapamiento y post-procesado, con riesgo de cortes en palabras y duplicacion de segmentos.
 - Posible perdida de capacidades multilingues tras el ajuste fino: el modelo puede degradarse en idiomas distintos del jemer e incluso mezclar caracteres latinos en la salida.
@@ -94,7 +94,7 @@ No se dispone de evaluaciones comparativas verificadas entre estas alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v3-2000
+- Repositorio en Hugging Face: https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v3-2000
 - Modelo base de referencia (OpenAI Whisper Small): https://huggingface.co/openai/whisper-small
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - faster-whisper (backend CTranslate2 para servir Whisper con menor latencia): https://github.com/SYSTRAN/faster-whisper

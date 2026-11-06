@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2-s150` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de escala media. El tag `sn38-nanochrono` sugiere que pertenece a una familia de modelos denominada "nanochrono", aunque no se dispone de documentacion publica que describa su arquitectura, proposito o metodologia de entrenamiento.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2-s150` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de escala media. El tag `sn38-nanochrono` sugiere que pertenece a una familia de modelos denominada "nanochrono", aunque no se dispone de documentacion publica que describa su arquitectura, proposito o metodologia de entrenamiento.
 
-La informacion disponible en la model card es extremadamente limitada: no se especifican el pipeline, los idiomas soportados, la longitud de contexto, los datos de entrenamiento ni los resultados de evaluacion. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargar los pesos. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto practicamente sin validacion por parte de la comunidad.
+La informacion disponible en la model card es extremadamente limitada: no se especifican el pipeline, los idiomas soportados, la longitud de contexto, los datos de entrenamiento ni los resultados de evaluacion. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargar los pesos. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto practicamente sin validacion por parte de la comunidad.
 
 Por tanto, esta ficha se limita a documentar los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso al modelo y a documentacion adicional que no se ha publicado.
 
@@ -84,14 +84,14 @@ No se dispone de informacion suficiente para completar esta tabla con alternativ
 - Riesgo de alucinacion y sesgos: desconocido; sin evaluacion no puede acotarse.
 - Idiomas soportados sin declarar: no se puede garantizar un rendimiento adecuado en castellano ni en ningun otro idioma.
 - Contexto desconocido: imposible planificar casos de uso que dependan de ventanas largas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su uso y distribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su uso y distribucion.
 - Cero descargas y cero likes: sin validacion por parte de la comunidad; no hay reportes de terceros.
 - Licencia Apache 2.0: permite uso comercial, pero la falta de documentacion hace arriesgado asumir responsabilidades en produccion.
 - Nombre del checkpoint criptico: los sufijos (`r18`, `a2`, `w14`, `chrono5`, `w60ft2`, `s150`) no estan documentados y no deben interpretarse como especificaciones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2-s150
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

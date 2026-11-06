@@ -101,10 +101,10 @@ Las cifras de benchmarks de los modelos comparados no se incluyen porque no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica analizada): https://huggingface.co/ArchiveStudio/MOSS-Audio-8B-Thinking
-- Repositorio original en HuggingFace (OpenMOSS-Team): https://huggingface.co/collections/OpenMOSS-Team/moss-audio
+- Modelo en Hugging Face (réplica analizada): https://huggingface.co/ArchiveStudio/MOSS-Audio-8B-Thinking
+- Repositorio original en Hugging Face (OpenMOSS-Team): https://huggingface.co/collections/OpenMOSS-Team/moss-audio
 - Página del proyecto y blog: https://openmoss.ai/MOSS-Audio/
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-Audio
 - README en GitHub: https://github.com/OpenMOSS/MOSS-Audio/blob/main/README.md
 - ModelScope: https://www.modelscope.cn/models/openmoss/MOSS-Audio-8B-Thinking
-- Réplica adicional en HuggingFace: https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking
+- Réplica adicional en Hugging Face: https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking

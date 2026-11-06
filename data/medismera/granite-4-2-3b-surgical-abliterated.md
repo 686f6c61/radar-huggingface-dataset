@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Granite-4.2-3B-Surgical-Abliterated es una versión modificada del modelo IBM Granite 4.2 3B, publicada por el usuario medismera en HuggingFace. El autor ha aplicado una técnica de "ablación quirúrgica de rechazos" (surgical refusal ablation) sobre el modelo base, que consiste en eliminar la dirección latente de rechazo en las capas críticas del transformer para que el modelo no emita respuestas de negación estandarizadas ni advertencias morales.
+Granite-4.2-3B-Surgical-Abliterated es una versión modificada del modelo IBM Granite 4.2 3B, publicada por el usuario medismera en Hugging Face. El autor ha aplicado una técnica de "ablación quirúrgica de rechazos" (surgical refusal ablation) sobre el modelo base, que consiste en eliminar la dirección latente de rechazo en las capas críticas del transformer para que el modelo no emita respuestas de negación estandarizadas ni advertencias morales.
 
 El modelo base, IBM Granite 4.2 3B, es un modelo de lenguaje causal denso de unos 3,2 mil millones de parámetros (3.659.737.600 parámetros según los safetensors del repositorio) desarrollado por IBM, orientado a generación de texto conversacional y tareas técnicas. La versión abliterada pretende conservar intactas las capacidades de razonamiento, código y conocimiento factual del original.
 
@@ -33,7 +33,7 @@ La modificación aplicada, denominada "surgical alignment" por el autor, consist
 - Generacion de codigo: la model card afirma que se conserva la competencia en programacion y la correccion sintactica tras la ablacion.
 - Razonamiento logico y respuestas tecnicas sin tokens de rechazo por defecto (sin frases del tipo "As an AI..." o "I cannot fulfill this request...").
 - Compatibilidad con chat template de Transformers: el codigo de ejemplo comprueba la existencia de `tokenizer.chat_template` y lo aplica si esta disponible.
-- Ejecucion estandar con la libreria `transformers` de HuggingFace (`AutoModelForCausalLM`, `torch.bfloat16`, `device_map="auto"`).
+- Ejecucion estandar con la libreria `transformers` de Hugging Face (`AutoModelForCausalLM`, `torch.bfloat16`, `device_map="auto"`).
 - Formatos GGUF disponibles, lo que permite inferencia local con llama.cpp, Ollama y herramientas compatibles.
 - No hay informacion sobre tool calling, capacidades de agentes, vision, audio ni modo de razonamiento extendido: no disponible.
 
@@ -82,7 +82,7 @@ Nota: la comparativa se limita al modelo base y a la categoria generica, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/Granite-4.2-3B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/Granite-4.2-3B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Organizacion IBM Granite: https://huggingface.co/ibm-granite
 - Paper, blog oficial o demos adicionales: no disponible en la informacion proporcionada.

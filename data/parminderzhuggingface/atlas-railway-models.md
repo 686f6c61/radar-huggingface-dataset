@@ -70,6 +70,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ParminderzHuggingFace/atlas-railway-models
+- Repositorio en Hugging Face: https://huggingface.co/ParminderzHuggingFace/atlas-railway-models
 - Perfil del autor: https://huggingface.co/ParminderzHuggingFace
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web.

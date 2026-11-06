@@ -78,7 +78,7 @@ Precisión por semilla reportada: 98,64; 98,79; 98,76; 98,82 y 98,69 %. No se ha
 
 | Modelo | Parámetros | Contexto / entrada | Precisión en MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lenet5-mnist-unb | 61.706 | 1×28×28 | 98,64 % (semilla 42); 98,74 % ± 0,07 (5 semillas) | MIT | HuggingFace, safetensors |
+| lenet5-mnist-unb | 61.706 | 1×28×28 | 98,64 % (semilla 42); 98,74 % ± 0,07 (5 semillas) | MIT | Hugging Face, safetensors |
 | LeNet-5 original (LeCun et al., 1998) | ~60.000 (aprox.) | 1×32×32 | ~99,05 % (reportado en el paper original) | no disponible | Referencia académica, sin pesos oficiales en HF |
 | CNN genérica de 2 capas conv + 2 densas | variable | 1×28×28 | típicamente 98-99 % | variable | Múltiples implementaciones en repositorios públicos |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: <https://huggingface.co/Acciolyyy/lenet5-mnist-unb>
+- Modelo en Hugging Face: <https://huggingface.co/Acciolyyy/lenet5-mnist-unb>
 - Repositorio de código de entrenamiento y análisis: <https://github.com/Acciolyy/portfolio-ia> (carpeta `portfolio-4-machine-learning`)
 - Paper original de LeNet-5: LeCun, Y. et al. (1998), "Gradient-based learning applied to document recognition", Proceedings of the IEEE. No se proporciona enlace directo en la información disponible.
 - Dataset MNIST: no se proporciona enlace directo en la información disponible.

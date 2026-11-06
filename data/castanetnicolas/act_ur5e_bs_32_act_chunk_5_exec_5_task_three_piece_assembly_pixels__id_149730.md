@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_149730 es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), publicado en el artículo arXiv:2304.13705. La desarrolla el usuario de HuggingFace castanetnicolas y se ha entrenado y publicado con la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es un modelo de control que mapea observaciones (un vector de estado propioceptivo de 9 dimensiones y dos imágenes RGB de 84x84 píxeles) a un vector de acción de 7 dimensiones. Cuenta con 51.575.431 parámetros en formato safetensors y ocupa 0,2 GB en el repositorio.
+ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_149730 es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), publicado en el artículo arXiv:2304.13705. La desarrolla el usuario de Hugging Face castanetnicolas y se ha entrenado y publicado con la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es un modelo de control que mapea observaciones (un vector de estado propioceptivo de 9 dimensiones y dos imágenes RGB de 84x84 píxeles) a un vector de acción de 7 dimensiones. Cuenta con 51.575.431 parámetros en formato safetensors y ocupa 0,2 GB en el repositorio.
 
 La tarea concreta para la que se ha entrenado es "Insert the first piece into the base, then insert the second piece on top of it", un ensamblaje de tres piezas derivado del benchmark MimicGen. El conjunto de datos de entrenamiento contiene 200 episodios y 67.101 fotogramas grabados a 20 FPS, con dos cámaras (`agentview` y `robot0_eye_in_hand`). La propuesta de ACT consiste en predecir fragmentos cortos de acciones (chunks) en lugar de pasos individuales, lo que reduce el error de composición acumulado en tareas de manipulación fina.
 
@@ -101,7 +101,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_149730
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_149730
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/mimicgen_three_piece_assembly_d1_image84
 - Articulo de ACT (referenciado en la model card): https://huggingface.co/papers/2304.13705

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`g-assismoraes/tofu-llama2-7b-reset-embed-head` es un checkpoint experimental derivado de Llama 2 7B chat, publicado por el usuario g-assismoraes en HuggingFace. No es un modelo entrenado desde cero ni un modelo afinado de propósito general: es el resultado de un experimento de *ablación* sobre el benchmark TOFU (Task of Fictitious Unlearning) orientado a estudiar técnicas de *machine unlearning*. Concretamente, parte del modelo ya afinado `locuslab/tofu_ft_llama2-7b` y restaura únicamente dos tensores —la matriz de embeddings `model.embed_tokens.weight` y la cabeza de salida `lm_head.weight`— a sus valores originales del checkpoint `NousResearch/Llama-2-7b-chat-hf`, dejando el resto de pesos intactos.
+`g-assismoraes/tofu-llama2-7b-reset-embed-head` es un checkpoint experimental derivado de Llama 2 7B chat, publicado por el usuario g-assismoraes en Hugging Face. No es un modelo entrenado desde cero ni un modelo afinado de propósito general: es el resultado de un experimento de *ablación* sobre el benchmark TOFU (Task of Fictitious Unlearning) orientado a estudiar técnicas de *machine unlearning*. Concretamente, parte del modelo ya afinado `locuslab/tofu_ft_llama2-7b` y restaura únicamente dos tensores —la matriz de embeddings `model.embed_tokens.weight` y la cabeza de salida `lm_head.weight`— a sus valores originales del checkpoint `NousResearch/Llama-2-7b-chat-hf`, dejando el resto de pesos intactos.
 
 La motivación es metodológica: comprobar si una restauración parcial de pesos (sin ningún tipo de entrenamiento de desaprendizaje, ni IHL ni similares) basta para alterar las métricas de Forget Quality y Model Utility en TOFU. Es, por tanto, una pieza de investigación reproducible más que un modelo desplegable en producción.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-reset-embed-head | 6.738.415.616 | 4096 | Restauración parcial de pesos, sin entrenamiento | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | Fine-tune sobre TOFU | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat base | llama2 | HuggingFace |
+| g-assismoraes/tofu-llama2-7b-reset-embed-head | 6.738.415.616 | 4096 | Restauración parcial de pesos, sin entrenamiento | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | 4096 | Fine-tune sobre TOFU | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | Chat base | llama2 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos tres checkpoints en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos tres checkpoints e
 
 ## Enlaces
 
-- [HuggingFace: g-assismoraes/tofu-llama2-7b-reset-embed-head](https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-embed-head)
+- [Hugging Face: g-assismoraes/tofu-llama2-7b-reset-embed-head](https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-embed-head)
 - [Modelo base afinado: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [Modelo original: NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [Licencia Llama 2](https://ai.meta.com/llama/license/)

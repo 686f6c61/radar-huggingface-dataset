@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omniASR-CTC-300M-v2-Zulu-AUG-ANV es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por el usuario `csikasote`. Se trata de una conversión a la clase `Wav2Vec2ForCTC` de Transformers del checkpoint fairseq2 `omniASR_CTC_300M_v2`, perteneciente al proyecto OmniLingual de Meta (facebookresearch/omnilingual-asr). El modelo emite logits CTC sobre un vocabulario SentencePiece de 10.288 tokens y esta pensado para transcripcion de audio multilingue, con el sufijo del nombre ("Zulu") apuntando a un ajuste o variante orientada al idioma zulu, aunque la model card no confirma la lista de idiomas.
+omniASR-CTC-300M-v2-Zulu-AUG-ANV es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario `csikasote`. Se trata de una conversión a la clase `Wav2Vec2ForCTC` de Transformers del checkpoint fairseq2 `omniASR_CTC_300M_v2`, perteneciente al proyecto OmniLingual de Meta (facebookresearch/omnilingual-asr). El modelo emite logits CTC sobre un vocabulario SentencePiece de 10.288 tokens y esta pensado para transcripcion de audio multilingue, con el sufijo del nombre ("Zulu") apuntando a un ajuste o variante orientada al idioma zulu, aunque la model card no confirma la lista de idiomas.
 
 Tecnicamente es un encoder Wav2Vec2 de 24 capas, tamaño oculto 1024, 16 cabezas de atencion y FFN intermedio de 4096, con 325.983.920 parametros reales verificados en los pesos safetensors (aproximadamente 326M, de ahi la denominacion "300M" del checkpoint original). El repositorio ocupa 1,3 GB, lo que es coherente con pesos en fp32.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe sin problema en GPU de consumo: RTX 3060, RTX 4060, RTX 3090, RTX 4090 e incluso GPUs con 4-6 GB de VRAM para inferencia con lote 1.
 - Tambien es viable en CPU para procesamiento por lotes offline, aunque con mayor latencia por hora de audio.
 - GPU recomendadas para throughput alto: A100, H100 o L40S, no por requisito de memoria sino para paralelizar muchos streams de audio simultaneos.
-- Opciones de despliegue: `transformers` con `Wav2Vec2ForCTC` y `AutoProcessor`, pipeline de HuggingFace, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript para produccion. vLLM y llama.cpp **no aplican**: el primero esta orientado a modelos generativos y el segundo requiere formato GGUF, que no se distribuye aqui.
+- Opciones de despliegue: `transformers` con `Wav2Vec2ForCTC` y `AutoProcessor`, pipeline de Hugging Face, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX Runtime o TorchScript para produccion. vLLM y llama.cpp **no aplican**: el primero esta orientado a modelos generativos y el segundo requiere formato GGUF, que no se distribuye aqui.
 - Latencia y throughput: no disponibles. No se publican valores de RTF (real-time factor) ni de audio procesado por segundo.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR-CTC-300M-v2-Zulu-AUG-ANV | 325.983.920 | no disponible | no disponible (paridad fallida) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| omniASR-CTC-300M-v2-Zulu-AUG-ANV | 325.983.920 | no disponible | no disponible (paridad fallida) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Whisper (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | MMS (Meta) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | wav2vec2-XLSR (Meta) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado en esta busqueda |
@@ -98,7 +98,7 @@ Diferencias cualitativas que si se pueden afirmar con la informacion disponible:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/csikasote/omniASR-CTC-300M-v2-Zulu-AUG-ANV
+- Repositorio en Hugging Face: https://huggingface.co/csikasote/omniASR-CTC-300M-v2-Zulu-AUG-ANV
 - Proyecto OmniLingual ASR (checkpoint de origen en fairseq2): https://github.com/facebookresearch/omnilingual-asr
 
 Nota: los resultados de busqueda web proporcionados correspondian a paginas de metodos de pago de Amazon Prime Video en polaco y no guardan ninguna relacion con el modelo, por lo que no se han incluido como enlaces relevantes.

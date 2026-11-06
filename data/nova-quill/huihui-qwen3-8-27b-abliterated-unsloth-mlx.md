@@ -76,7 +76,7 @@ No se dispone de modelos comparables adicionales en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx
+- Repositorio Hugging Face: https://huggingface.co/nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx
 - Modelo original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Script de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

@@ -75,6 +75,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T
+- Repositorio Hugging Face: https://huggingface.co/milab-robot/alm1-0731-milab.NESW.T
 - Perfil del autor: https://huggingface.co/milab-robot
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario de HuggingFace vab46. No se trata por tanto de un modelo completo ni de un modelo preentrenado desde cero: el repositorio ocupa 0,2 GB y almacena unicamente los pesos del adaptador en formato safetensors, que deben combinarse con el modelo base para poder ejecutar inferencia. El identificador del repositorio sugiere un ajuste orientado al dominio clinico (clinical) y una segunda iteracion del entrenamiento (iter2).
+Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario de Hugging Face vab46. No se trata por tanto de un modelo completo ni de un modelo preentrenado desde cero: el repositorio ocupa 0,2 GB y almacena unicamente los pesos del adaptador en formato safetensors, que deben combinarse con el modelo base para poder ejecutar inferencia. El identificador del repositorio sugiere un ajuste orientado al dominio clinico (clinical) y una segunda iteracion del entrenamiento (iter2).
 
 La model card documenta un entrenamiento muy corto: una sola epoca, 400 pasos registrados, tamano de lote 4, tasa de aprendizaje 2e-4 y weight decay 0,01. La perdida de entrenamiento desciende de 0,5653 en el paso 1 a 0,2411 en el paso 400, pero no se registro ninguna perdida de validacion, por lo que no hay evidencia publicada sobre generalizacion ni sobre sobreajuste. El unico ejemplo de uso incluido es un flujo de generacion aumentada por recuperacion (RAG) con bloques de contexto clinico, planteado con la plantilla de chat oficial de Llama 3.1.
 
-El interes actual de este tipo de publicaciones es practico: los adaptadores LoRA de bajo rango permiten especializar un modelo de 8 000 millones de parametros en un dominio concreto con un coste de entrenamiento muy reducido y un peso de artefacto de apenas unos cientos de megabytes. En este caso concreto, la falta de licencia declarada, de idiomas declarados, de pipeline y de cualquier metrica de evaluacion limita seriamente su uso en produccion sin una validacion previa por parte de quien lo adopte. El modelo acumula 0 descargas y 0 likes, y su fecha de creacion registrada en HuggingFace es el 15 de septiembre de 2026.
+El interes actual de este tipo de publicaciones es practico: los adaptadores LoRA de bajo rango permiten especializar un modelo de 8 000 millones de parametros en un dominio concreto con un coste de entrenamiento muy reducido y un peso de artefacto de apenas unos cientos de megabytes. En este caso concreto, la falta de licencia declarada, de idiomas declarados, de pipeline y de cualquier metrica de evaluacion limita seriamente su uso en produccion sin una validacion previa por parte de quien lo adopte. El modelo acumula 0 descargas y 0 likes, y su fecha de creacion registrada en Hugging Face es el 15 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ El interes actual de este tipo de publicaciones es practico: los adaptadores LoR
 | Metodo de ajuste | LoRA / PEFT |
 | Hiperparametros de entrenamiento | Learning rate 2e-4, batch de entrenamiento 4, 1 epoca, weight decay 0,01 |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (HuggingFace) | 2026-09-15 |
+| Fecha de creacion (Hugging Face) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -106,7 +106,7 @@ Los datos de los modelos alternativos corresponden a sus propias fichas publicas
 - Posible degradacion de capacidades generales: al ser un ajuste de dominio con 400 pasos, es probable que el modelo base pierda parte de su rendimiento en tareas generales, de codigo o de llamada a herramientas; no se ha medido.
 - Formato limitado: solo se documenta el formato safetensors de adaptador y la ruta de carga con `peft`; no hay artefactos GGUF ni imagenes listas para Ollama o LM Studio.
 - Contexto largo no verificado: aunque el modelo base soporte 128 000 tokens, no hay ninguna prueba de que el adaptador mantenga un comportamiento coherente en ese regimen.
-- Coherencia temporal: la fecha de creacion registrada en HuggingFace (2026-09-15) es atipica y conviene comprobarla antes de citar el modelo.
+- Coherencia temporal: la fecha de creacion registrada en Hugging Face (2026-09-15) es atipica y conviene comprobarla antes de citar el modelo.
 
 ## Enlaces
 

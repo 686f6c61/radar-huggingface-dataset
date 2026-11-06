@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Precisión | VRAM aproximada de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vftfnn/sd35-medium-t5-nf4 (este repo) | 4,76 B (encoder) | NF4 4 bits, cómputo fp16 | ~2,4 GB (estimado) | Apache-2.0 | HuggingFace, 0 descargas |
-| google/t5-v1_1-xxl (original) | No disponible (encoder + decoder completo) | fp32 | Muy superior a la versión 4 bits | Apache-2.0 | HuggingFace |
-| `text_encoder_3` de stabilityai/stable-diffusion-3.5-medium | 4,76 B (mismo encoder T5 XXL) | bf16 | ~9-10 GB (estimado) | Sujeta a la licencia de SD 3.5 Medium | HuggingFace |
-| Codificador T5 XXL de Stability AI SD3.5 Large | No disponible | bf16 | No disponible | Sujeta a la licencia de SD 3.5 Large | HuggingFace |
+| vftfnn/sd35-medium-t5-nf4 (este repo) | 4,76 B (encoder) | NF4 4 bits, cómputo fp16 | ~2,4 GB (estimado) | Apache-2.0 | Hugging Face, 0 descargas |
+| google/t5-v1_1-xxl (original) | No disponible (encoder + decoder completo) | fp32 | Muy superior a la versión 4 bits | Apache-2.0 | Hugging Face |
+| `text_encoder_3` de stabilityai/stable-diffusion-3.5-medium | 4,76 B (mismo encoder T5 XXL) | bf16 | ~9-10 GB (estimado) | Sujeta a la licencia de SD 3.5 Medium | Hugging Face |
+| Codificador T5 XXL de Stability AI SD3.5 Large | No disponible | bf16 | No disponible | Sujeta a la licencia de SD 3.5 Large | Hugging Face |
 
 ## Limitaciones y advertencias
 

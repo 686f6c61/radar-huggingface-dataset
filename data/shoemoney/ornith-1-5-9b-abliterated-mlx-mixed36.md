@@ -80,11 +80,11 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 - No se especifica la longitud de contexto soportada, lo que limita su uso en tareas que requieran ventanas muy largas.
 - Los idiomas soportados no están documentados; es probable que el modelo funcione mejor en inglés, dado su enfoque en código y razonamiento.
 - El número de parámetros reportado en safetensors (1,84B) no coincide con la denominación de 9B del modelo base; esto puede deberse a que el archivo contiene solo una parte de los pesos (por ejemplo, el vision encoder) o a un error de etiquetado. Se recomienda verificar antes de usarlo en producción.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-mixed36
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-mixed36
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Modelo Ornith-1.5-9B original: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión MLX 4-bit del mismo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit

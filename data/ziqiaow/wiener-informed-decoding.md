@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wiener-informed Decoding (WiD) es un modelo de generación de imágenes texto-a-imagen publicado por el usuario ziqiaow en HuggingFace, asociado al laboratorio NUS-HPC-AI-Lab. Se presenta como el artefacto de un trabajo de investigación titulado "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models", cuyo identificador arXiv es 2610.36192. El modelo opera en el espacio de píxeles mediante modelos de flujo (flow models), una familia de modelos generativos que aproximan un campo vectorial de transporte entre ruido y datos, en lugar de trabajar en un espacio latente comprimido como hacen los modelos de difusión latente convencionales.
+Wiener-informed Decoding (WiD) es un modelo de generación de imágenes texto-a-imagen publicado por el usuario ziqiaow en Hugging Face, asociado al laboratorio NUS-HPC-AI-Lab. Se presenta como el artefacto de un trabajo de investigación titulado "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models", cuyo identificador arXiv es 2610.36192. El modelo opera en el espacio de píxeles mediante modelos de flujo (flow models), una familia de modelos generativos que aproximan un campo vectorial de transporte entre ruido y datos, en lugar de trabajar en un espacio latente comprimido como hacen los modelos de difusión latente convencionales.
 
 La propuesta técnica central, según el título del paper, es un esquema de decodificación informado por el filtro de Wiener que simplifica el entrenamiento de modelos de flujo en espacio de píxeles. La model card publicada es extremadamente escueta: únicamente enlaza al paper y al repositorio de código, sin detallar arquitectura, número de parámetros, datos de entrenamiento ni resultados de benchmarks. El repositorio ocupa 96 GB, lo que sugiere la presencia de pesos de un modelo de gran tamaño, aunque no se especifica su desglose.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Paradigma | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wiener-informed Decoding | Flujo en espacio de píxeles | no disponible | no disponible | no disponible | HuggingFace (ziqiaow/WiD) |
+| Wiener-informed Decoding | Flujo en espacio de píxeles | no disponible | no disponible | no disponible | Hugging Face (ziqiaow/WiD) |
 | Modelos de difusión latente (p. ej. familia Stable Diffusion) | Difusión latente | no disponible en esta ficha | no disponible en esta ficha | varía según versión | amplia |
 | Modelos de flujo en espacio latente (p. ej. familia FLUX) | Flow matching latente | no disponible en esta ficha | no disponible en esta ficha | varía según versión | amplia |
 
@@ -80,6 +80,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziqiaow/Wiener-informed-Decoding
+- Modelo en Hugging Face: https://huggingface.co/ziqiaow/Wiener-informed-Decoding
 - Paper (arXiv 2610.36192): https://huggingface.co/papers/2610.36192
 - Repositorio de código: https://github.com/NUS-HPC-AI-Lab/WiD

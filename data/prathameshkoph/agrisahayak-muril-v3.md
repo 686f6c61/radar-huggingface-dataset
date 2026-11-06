@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AgriSahayak MuRIL v3 es un modelo de embeddings de frases publicado por el usuario prathameshkoph en HuggingFace, construido sobre un backbone tipo BERT (la nomenclatura del repositorio apunta a MuRIL, el encoder multilingüe de Google para lenguas de la India) y empaquetado con la librería sentence-transformers. Con 237.556.224 parámetros (unos 237,6 millones), su función no es generar texto, sino proyectar preguntas y pasajes a un espacio vectorial denso donde la similitud coseno refleja cercanía semántica. El modelo se ha ajustado con la pérdida MultipleNegativesRankingLoss sobre un conjunto de 30.585 pares, orientado a un dominio muy concreto: consultas y respuestas de extensión agraria escritas en hindi (devanagari).
+AgriSahayak MuRIL v3 es un modelo de embeddings de frases publicado por el usuario prathameshkoph en Hugging Face, construido sobre un backbone tipo BERT (la nomenclatura del repositorio apunta a MuRIL, el encoder multilingüe de Google para lenguas de la India) y empaquetado con la librería sentence-transformers. Con 237.556.224 parámetros (unos 237,6 millones), su función no es generar texto, sino proyectar preguntas y pasajes a un espacio vectorial denso donde la similitud coseno refleja cercanía semántica. El modelo se ha ajustado con la pérdida MultipleNegativesRankingLoss sobre un conjunto de 30.585 pares, orientado a un dominio muy concreto: consultas y respuestas de extensión agraria escritas en hindi (devanagari).
 
 El problema que resuelve es el de la recuperación semántica en un dominio especializado y con una barrera idiomática notable. Los sistemas de recomendación agraria para pequeños agricultores en la India manejan preguntas coloquiales ("¿qué tratamiento aplicar a las semillas de ricino contra la alternaria?") frente a documentos técnicos densos en los que apenas coinciden términos literales. Un modelo de similitud léxica falla en ese escenario; un encoder entrenado con pares pregunta-respuesta del propio dominio, en cambio, aproxima ambas formulaciones en el espacio vectorial y permite construir pipelines de RAG o de búsqueda sobre corpus agronómicos.
 
@@ -88,7 +88,7 @@ Los datos de los modelos alternativos proceden de su documentación pública y s
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgriSahayak MuRIL v3 | 237,6 M | No declarados (ajuste en hindi) | No disponible (típico 512 en BERT/MuRIL) | No disponible | HuggingFace, 0 descargas |
+| AgriSahayak MuRIL v3 | 237,6 M | No declarados (ajuste en hindi) | No disponible (típico 512 en BERT/MuRIL) | No disponible | Hugging Face, 0 descargas |
 | MuRIL base (Google) | ~236 M | 17 lenguas indias + inglés | 512 tokens | Apache 2.0 en la documentación pública | Ampliamente disponible |
 | LaBSE (Google) | ~471 M | ~109 idiomas | 512 tokens | Apache 2.0 en la documentación pública | Ampliamente disponible |
 | multilingual-e5-base (Microsoft) | ~278 M | ~100 idiomas | 512 tokens | MIT en la documentación pública | Ampliamente disponible |
@@ -111,7 +111,7 @@ La diferencia relevante no es de tamaño ni de cobertura lingüística, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prathameshkoph/agrisahayak-muril-v3
+- Modelo en Hugging Face: https://huggingface.co/prathameshkoph/agrisahayak-muril-v3
 - Sentence-BERT (arXiv:1908.10084), referencia metodológica etiquetada en el repositorio: https://arxiv.org/abs/1908.10084
 - Referencia arXiv:1807.03748, incluida en las etiquetas del repositorio: https://arxiv.org/abs/1807.03748
 - Documentación de sentence-transformers: https://sbert.net/

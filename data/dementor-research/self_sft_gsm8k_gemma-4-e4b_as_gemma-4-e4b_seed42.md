@@ -23,7 +23,7 @@ Sin embargo, la información disponible es muy escasa: la model card no proporci
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura interna del adaptador ni sobre el procedimiento de entrenamiento. Se sabe que utiliza la técnica LoRA (Low-Rank Adaptation) implementada con la librería PEFT (versión 0.19.1) y que el fine-tuning se realizó con SFT (Supervised Fine-Tuning) usando la biblioteca TRL de HuggingFace. El dataset de entrenamiento es GSM8K, compuesto por problemas matemáticos de nivel escolar con soluciones paso a paso, lo que sugiere que el objetivo es mejorar el razonamiento numérico y la generación de explicaciones.
+No se han publicado detalles sobre la arquitectura interna del adaptador ni sobre el procedimiento de entrenamiento. Se sabe que utiliza la técnica LoRA (Low-Rank Adaptation) implementada con la librería PEFT (versión 0.19.1) y que el fine-tuning se realizó con SFT (Supervised Fine-Tuning) usando la biblioteca TRL de Hugging Face. El dataset de entrenamiento es GSM8K, compuesto por problemas matemáticos de nivel escolar con soluciones paso a paso, lo que sugiere que el objetivo es mejorar el razonamiento numérico y la generación de explicaciones.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, el uso de técnicas como RLHF o DPO, ni sobre innovaciones técnicas adicionales. El tamaño del repositorio (0.4 GB) es consistente con un adaptador LoRA de dimensiones modestas, pero no se puede precisar el número de parámetros del adaptador sin más datos.
 
@@ -59,7 +59,7 @@ No se dispone de información específica sobre requisitos de hardware. Al trata
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos. No se conocen modelos equivalentes (adaptadores LoRA sobre Gemma 4 especializados en GSM8K) en el momento de redactar esta ficha. Se recomienda consultar el modelo base `google/gemma-4-E4B-it` y otros adaptadores GSM8K en HuggingFace para establecer comparaciones.
+No se dispone de información suficiente para establecer una comparativa con otros modelos. No se conocen modelos equivalentes (adaptadores LoRA sobre Gemma 4 especializados en GSM8K) en el momento de redactar esta ficha. Se recomienda consultar el modelo base `google/gemma-4-E4B-it` y otros adaptadores GSM8K en Hugging Face para establecer comparaciones.
 
 ## Limitaciones y advertencias
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_gsm8k_gemma-4-e4b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_gsm8k_gemma-4-e4b_as_gemma-4-e4b_seed42
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper de referencia citado en la model card (sobre impacto ambiental): https://arxiv.org/abs/1910.09700

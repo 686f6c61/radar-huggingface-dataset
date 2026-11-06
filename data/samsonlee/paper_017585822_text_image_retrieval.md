@@ -64,7 +64,7 @@ No disponible. El repositorio no ofrece un modelo comparable con alternativas co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/samsonlee/paper_017585822_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/samsonlee/paper_017585822_text_image_retrieval
 - Articulo relacionado TIGeR (arXiv): https://arxiv.org/abs/2406.05814
 - Articulo relacionado Llama Nemoretriever Colembed (arXiv): https://arxiv.org/abs/2507.05513
 - Categoria de modelos text-to-image en Hugging Face: https://huggingface.co/models?pipeline_tag=text-to-image

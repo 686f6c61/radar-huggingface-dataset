@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kashef-Qwen-2.5-3B es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario alhakimia54 en HuggingFace. El modelo se ha entrenado partiendo de la versión cuantizada a 4 bits `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` y utilizando Unsloth, una librería que optimiza el entrenamiento supervisado y el ajuste por preferencias reduciendo el uso de memoria y multiplicando la velocidad (el autor afirma un entrenamiento "2x mas rapido"). El resultado es un modelo de 3.090 millones de parametros, con arquitectura transformer decoder-only de tipo Qwen2, licencia Apache 2.0 y declarado exclusivamente para ingles.
+Kashef-Qwen-2.5-3B es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario alhakimia54 en Hugging Face. El modelo se ha entrenado partiendo de la versión cuantizada a 4 bits `unsloth/Qwen2.5-3B-Instruct-bnb-4bit` y utilizando Unsloth, una librería que optimiza el entrenamiento supervisado y el ajuste por preferencias reduciendo el uso de memoria y multiplicando la velocidad (el autor afirma un entrenamiento "2x mas rapido"). El resultado es un modelo de 3.090 millones de parametros, con arquitectura transformer decoder-only de tipo Qwen2, licencia Apache 2.0 y declarado exclusivamente para ingles.
 
 La relevancia de esta ficha es limitada pero instructiva: se trata de un modelo con cero descargas y cero "likes" en el momento de la consulta, sin model card tecnica mas alla de la plantilla autogenerada y sin ningun benchmark publicado. Su tamano de repositorio, 0,1 GB, es demasiado pequeno para contener los pesos completos de un modelo de 3B en precision de 16 bits (que ocuparian en torno a 6 GB), lo que sugiere que el repositorio aloja unicamente los adaptadores LoRA del ajuste, no los pesos fusionados.
 
@@ -90,7 +90,7 @@ La comparacion directa mas pertinente es con Qwen2.5-3B-Instruct, ya que Kashef 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alhakimia54/Kashef-Qwen-2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/alhakimia54/Kashef-Qwen-2.5-3B
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Qwen2.5-3B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

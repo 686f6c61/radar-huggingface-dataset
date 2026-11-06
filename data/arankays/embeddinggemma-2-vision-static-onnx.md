@@ -101,7 +101,7 @@ La columna de coseno compara con sentence-transformers en PyTorch al mismo núme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arankays/embeddinggemma-2-vision-static-onnx
+- Repositorio Hugging Face: https://huggingface.co/arankays/embeddinggemma-2-vision-static-onnx
 - Mitad textual complementaria: https://huggingface.co/arankays/embeddinggemma-2-text-int8-cw-onnx
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Export ONNX original: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX

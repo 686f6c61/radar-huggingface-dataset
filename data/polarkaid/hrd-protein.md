@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HRD-Protein es un repositorio de modelo publicado en HuggingFace por el usuario polarkaid el 24 de octubre de 2026, con licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card asociada contiene únicamente el bloque de metadatos de licencia, sin texto descriptivo, sin tabla de especificaciones y sin referencias a paper, dataset o código de entrenamiento.
+HRD-Protein es un repositorio de modelo publicado en Hugging Face por el usuario polarkaid el 24 de octubre de 2026, con licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card asociada contiene únicamente el bloque de metadatos de licencia, sin texto descriptivo, sin tabla de especificaciones y sin referencias a paper, dataset o código de entrenamiento.
 
 El identificador "HRD-Protein" sugiere una posible relación con proteínas o con deficiencia de recombinación homóloga (HRD), un concepto habitual en oncología, pero esta relación no está confirmada en la documentación disponible. No se puede verificar si se trata de un modelo de lenguaje, un modelo de plegamiento proteico, un clasificador de variantes o un adaptador especializado. Tampoco se dispone de información sobre arquitectura, tamaño, contexto o proceso de entrenamiento.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| HRD-Protein | no disponible | no disponible | Apache-2.0 | HuggingFace | Model card vacía; 0 descargas y 0 likes |
+| HRD-Protein | no disponible | no disponible | Apache-2.0 | Hugging Face | Model card vacía; 0 descargas y 0 likes |
 | Alternativas tipo AlphaFold | no disponible | no disponible | no disponible | Publicaciones científicas | No se han encontrado datos comparables en la información disponible |
 | Alternativas de diseño de proteínas con deep learning | no disponible | no disponible | no disponible | Artículos y repositorios | No se han encontrado datos comparables en la información disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/polarkaid/HRD-Protein
+- Repositorio en Hugging Face: https://huggingface.co/polarkaid/HRD-Protein
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/
 - Artículo de Nature sobre modelos de proteínas entrenados con datos de farmacéuticas: https://www.nature.com/articles/d41586-026-02882-x
 - Noticia sobre ingeniería de proteínas con IA: https://www.sciencedaily.com/releases/2024/11/241121165439.htm

@@ -74,8 +74,8 @@ Rendimiento de inferencia reportado: 8,7 segundos por edicion 4K en una unica XP
 
 | Modelo | Parametros | Contexto / resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BluePixel-Turbo | 9,08 B | 4K nativo | Edicion por instrucciones, 4 pasos, destilado | Apache-2.0 | HuggingFace (openvivo/BluePixel-Turbo) |
-| FLUX.2-klein-9B (modelo base) | 9 B | no disponible | Generacion/edicion de imagen | no disponible en la informacion | HuggingFace (black-forest-labs/FLUX.2-klein-9B) |
+| BluePixel-Turbo | 9,08 B | 4K nativo | Edicion por instrucciones, 4 pasos, destilado | Apache-2.0 | Hugging Face (openvivo/BluePixel-Turbo) |
+| FLUX.2-klein-9B (modelo base) | 9 B | no disponible | Generacion/edicion de imagen | no disponible en la informacion | Hugging Face (black-forest-labs/FLUX.2-klein-9B) |
 | Alternativas de edicion por instrucciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de benchmarks ni especificaciones de modelos competidores directos para una comparativa cuantitativa fiable.
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni especifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openvivo/BluePixel-Turbo
+- Modelo en Hugging Face: https://huggingface.co/openvivo/BluePixel-Turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/openvivo/VINS-120K
 - Paper: https://arxiv.org/abs/2610.19882
 - Codigo: https://github.com/vivo/BluePixel

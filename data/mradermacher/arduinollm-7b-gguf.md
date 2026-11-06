@@ -6,7 +6,7 @@ ArduinoLLM-7B-GGUF es la versión cuantizada en formato GGUF del modelo EzioDevi
 
 La relevancia de esta ficha está en que el modelo base fue adaptado mediante LoRA y entrenamiento continuado (continued pretraining) sobre un corpus de código embebido, y ahora se ofrece en cuantizaciones que van desde Q2_K (3,1 GB) hasta f16 (15,3 GB), lo que permite desplegarlo en hardware muy modesto, incluido un portátil sin GPU dedicada. La licencia Apache 2.0 facilita su integración en productos comerciales sin las restricciones habituales de los modelos derivados de Llama.
 
-La información disponible sobre el modelo base es limitada: no se especifican en el repositorio la longitud de contexto, la composición exacta del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente lo que consta en los metadatos de HuggingFace y en la model card de la cuantización, señalando explícitamente los datos no disponibles.
+La información disponible sobre el modelo base es limitada: no se especifican en el repositorio la longitud de contexto, la composición exacta del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente lo que consta en los metadatos de Hugging Face y en la model card de la cuantización, señalando explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -28,9 +28,9 @@ La información disponible sobre el modelo base es limitada: no se especifican e
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo base. Los metadatos de HuggingFace incluyen las etiquetas `lora` y `continued-pretraining`, lo que indica que ArduinoLLM-7B se construyo adaptando un modelo de lenguaje de aproximadamente 7.600 millones de parametros mediante un adaptador LoRA sobre el que despues se aplico entrenamiento continuado con datos de dominio embebido. Las etiquetas de dominio (`arduino`, `esp32`, `raspberry-pi`, `micropython`, `circuitpython`, `embedded-systems`, `code-generation`) describen el corpus tematico, pero no se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset. Tampoco consta si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La informacion proporcionada no detalla la arquitectura interna del modelo base. Los metadatos de Hugging Face incluyen las etiquetas `lora` y `continued-pretraining`, lo que indica que ArduinoLLM-7B se construyo adaptando un modelo de lenguaje de aproximadamente 7.600 millones de parametros mediante un adaptador LoRA sobre el que despues se aplico entrenamiento continuado con datos de dominio embebido. Las etiquetas de dominio (`arduino`, `esp32`, `raspberry-pi`, `micropython`, `circuitpython`, `embedded-systems`, `code-generation`) describen el corpus tematico, pero no se especifica el numero de tokens de entrenamiento ni la composicion exacta del dataset. Tampoco consta si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-El repositorio de mradermacher no aporta informacion adicional sobre el entrenamiento: se limita a documentar el proceso de conversion a GGUF. Segun los comentarios internos de la model card, la cuantizacion se realizo con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion directa desde pesos de HuggingFace con cuantizacion de tensores de salida. No se han publicado cuantizaciones ponderadas ni con matriz de importancia (imatrix); solo estan disponibles las estaticas.
+El repositorio de mradermacher no aporta informacion adicional sobre el entrenamiento: se limita a documentar el proceso de conversion a GGUF. Segun los comentarios internos de la model card, la cuantizacion se realizo con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion directa desde pesos de Hugging Face con cuantizacion de tensores de salida. No se han publicado cuantizaciones ponderadas ni con matriz de importancia (imatrix); solo estan disponibles las estaticas.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ El repositorio de mradermacher no aporta informacion adicional sobre el entrenam
 - Codigo para Raspberry Pi y placas compatibles con Python embebido.
 - Conversacion multi-turno: el repositorio incluye la etiqueta `conversational`, lo que sugiere un formato de chat instructivo, aunque no se detalla la plantilla de prompt empleada.
 - Aplicable a tareas de generacion de codigo en general, segun la etiqueta `code-generation`.
-- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`), lo que permite desplegarlo tras una API compatible con el formato de HuggingFace.
+- Compatibilidad con endpoints de inferencia (etiqueta `endpoints_compatible`), lo que permite desplegarlo tras una API compatible con el formato de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte explicito de agentes ni de razonamiento multi-paso.
 - No se documenta modo de pensamiento (thinking mode), vision ni audio.
@@ -116,7 +116,7 @@ La ventaja diferencial de ArduinoLLM-7B es su especializacion en el dominio embe
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/ArduinoLLM-7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/ArduinoLLM-7B-GGUF
 - Modelo base: https://huggingface.co/EzioDevio/ArduinoLLM-7B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#ArduinoLLM-7B-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

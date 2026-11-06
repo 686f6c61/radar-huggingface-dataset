@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Documentacion muy escasa: no se publican parametros, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad objetivamente.
 - Riesgo de sobreajuste a los patrones y activos del dataset de entrenamiento; sin informacion sobre la composicion de datos no puede descartarse.
 - Sesgo potencial hacia los mercados o periodos historicos incluidos en el entrenamiento, con posible degradacion en regimenes de mercado no vistos.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ai-arie/classic-patterns-models
+- Repositorio Hugging Face: https://huggingface.co/ai-arie/classic-patterns-models
 - Modelo base Chronos-2-small: https://huggingface.co/autogluon/chronos-2-small
 - AutoGluon (organizacion): https://huggingface.co/autogluon
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/

@@ -63,7 +63,7 @@ Estimaciones derivadas del numero real de parametros (13.015.864.320) y del tama
 - GPU profesionales: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB cubren fp16 sin problemas.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede ejecutar el modelo en fp16 con cuantizacion parcial o, de forma mas comoda, en int8; en int4 cabe holgadamente en 12 GB (RTX 3060 12 GB, RTX 4070, etc.).
 - Multi-GPU: dos RTX 4090 de 24 GB permiten fp16 con tensor parallelism.
-- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` presente), vLLM, llama.cpp y Ollama tras conversion a GGUF. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` presente), vLLM, llama.cpp y Ollama tras conversion a GGUF. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de comparativas de rendimiento (MMLU, HumanEval, GSM8K) entre esto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-ptbr-S13-a050
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-ptbr-S13-a050
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-13b-hf
 - Variante de dialogo del base: https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

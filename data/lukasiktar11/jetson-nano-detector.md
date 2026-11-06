@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lukasiktar11/jetson-nano-detector` es un modelo de deteccion de objetos publicado por el usuario lukasiktar11 en HuggingFace, orientado a ejecutarse sobre placas NVIDIA Jetson Nano. La model card lo describe como un "YOLO26 model trained to perform Jetson Nano Objects Detection" y lo presenta como parte del catalogo "ComputerVisionAIHub". Los tags del repositorio confirman que se trata de un modelo de deteccion (`detection`, `yolo`, `ultralytics`) distribuido en formato ONNX.
+`lukasiktar11/jetson-nano-detector` es un modelo de deteccion de objetos publicado por el usuario lukasiktar11 en Hugging Face, orientado a ejecutarse sobre placas NVIDIA Jetson Nano. La model card lo describe como un "YOLO26 model trained to perform Jetson Nano Objects Detection" y lo presenta como parte del catalogo "ComputerVisionAIHub". Los tags del repositorio confirman que se trata de un modelo de deteccion (`detection`, `yolo`, `ultralytics`) distribuido en formato ONNX.
 
 La informacion publicada es extremadamente escasa: no hay pipeline declarado, no se especifican parametros, resolucion de entrada, clases detectadas ni resultados de evaluacion. El repositorio ocupa 0,1 GB, registra 0 descargas y 0 likes, y la model card se limita a tres lineas de texto. La fecha de creacion y actualizacion es la misma (17 de septiembre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
 
@@ -97,7 +97,7 @@ Las cifras de parametros de YOLOv8n y YOLO11n corresponden a documentacion publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukasiktar11/jetson-nano-detector
+- Hugging Face: https://huggingface.co/lukasiktar11/jetson-nano-detector
 - Repositorio de Ultralytics (libreria declarada): https://github.com/ultralytics/ultralytics
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/
 - No se han encontrado en la busqueda web articulos, papers, blogs ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo y han sido descartados.

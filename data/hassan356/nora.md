@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hassan356/nora` es un repositorio de modelo alojado en HuggingFace por el usuario hassan356, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin especificaciones tecnicas y sin resultados de evaluacion. El repositorio no declara pipeline de inferencia, no especifica idiomas y no incluye documentacion sobre arquitectura, tamano o datos de entrenamiento.
+`hassan356/nora` es un repositorio de modelo alojado en Hugging Face por el usuario hassan356, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del autor contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin especificaciones tecnicas y sin resultados de evaluacion. El repositorio no declara pipeline de inferencia, no especifica idiomas y no incluye documentacion sobre arquitectura, tamano o datos de entrenamiento.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-18T16:22:37Z), lo que indica que no ha recibido revisiones posteriores ni ha sido adoptado por la comunidad. Se desconoce si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o un checkpoint experimental; la ausencia de pesos documentados y de ejemplos de uso impide clasificarlo con rigor.
 
@@ -70,7 +70,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| hassan356/nora | no disponible | no disponible | Apache 2.0 | publico en HuggingFace, sin documentacion | no disponible |
+| hassan356/nora | no disponible | no disponible | Apache 2.0 | publico en Hugging Face, sin documentacion | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hassan356/nora
+- Repositorio en Hugging Face: https://huggingface.co/hassan356/nora
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun enlace relevante asociado al modelo.

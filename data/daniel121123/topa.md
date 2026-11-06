@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Daniel121123/topa` es un repositorio de modelo publicado en HuggingFace por el usuario Daniel121123 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el campo de licencia y carece de cualquier otra documentacion tecnica: no se declara arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+`Daniel121123/topa` es un repositorio de modelo publicado en Hugging Face por el usuario Daniel121123 bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el campo de licencia y carece de cualquier otra documentacion tecnica: no se declara arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio registra 0 descargas y 1 "like", y fue creado y actualizado en la misma marca temporal (2026-10-04T16:40:18Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado. La ausencia de pipeline declarado y de etiquetas descriptivas mas alla de la licencia impide clasificarlo con criterio dentro de una categoria concreta (modelo de lenguaje, vision, embeddings, etc.).
 
@@ -25,14 +25,14 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | Daniel121123/topa |
+| Identificador en Hugging Face | Daniel121123/topa |
 | Autor | Daniel121123 |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:apache-2.0, region:us |
 | Descargas | 0 |
 | Likes | 1 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-04T16:40:18Z |
-| Ultima actualizacion (segun HuggingFace) | 2026-10-04T16:40:18Z |
+| Fecha de creacion (segun Hugging Face) | 2026-10-04T16:40:18Z |
+| Ultima actualizacion (segun Hugging Face) | 2026-10-04T16:40:18Z |
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ No disponible. La model card no enumera capacidades de generacion de texto, razo
 
 No es posible proponer casos de uso concretos y realistas sin conocer el tipo de modelo, su tamano, su contexto ni sus capacidades. Enumerar escenarios (atencion al cliente, generacion de codigo, analisis documental, etc.) seria especulativo y podria inducir a error a quien evalue el repositorio. Se recomienda, antes de considerar cualquier aplicacion:
 
-- Inspeccionar los ficheros del repositorio en HuggingFace para determinar el formato y el tamano de los pesos.
+- Inspeccionar los ficheros del repositorio en Hugging Face para determinar el formato y el tamano de los pesos.
 - Revisar si existe documentacion adicional enlazada desde el repositorio (paper, blog, repositorio de codigo).
 - Contactar con el autor para obtener la model card completa.
 - Ejecutar una evaluacion propia controlada antes de cualquier uso en produccion.
@@ -72,12 +72,12 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura ni rendimiento
 - Sin evidencia de mantenimiento: el repositorio no registra actualizaciones posteriores a su creacion.
 - Sin senales de adopcion: 0 descargas registradas, lo que dificulta encontrar reportes de terceros sobre su comportamiento real.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la licencia por si sola no garantiza que el contenido del repositorio sea original ni que los pesos hayan sido entrenados con datos cuya licencia lo permita; conviene verificar la procedencia antes de un uso comercial.
-- La fecha de creacion indicada por HuggingFace (2026-10-04) es posterior a la fecha habitual de consulta de este tipo de fichas; se recomienda comprobar la coherencia de los metadatos del repositorio.
+- La fecha de creacion indicada por Hugging Face (2026-10-04) es posterior a la fecha habitual de consulta de este tipo de fichas; se recomienda comprobar la coherencia de los metadatos del repositorio.
 - Para cualquier uso en produccion seria imprescindible una evaluacion independiente previa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Daniel121123/topa
+- Repositorio en Hugging Face: https://huggingface.co/Daniel121123/topa
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

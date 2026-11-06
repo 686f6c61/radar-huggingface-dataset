@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Wuro-Mali-Tanle-v0 es un ajuste fino (fine-tuning) del modelo base maya-research/maya1, publicado por el usuario Panga-Azazia en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 3.300 millones de parametros (3.300.928.512 segun los pesos en safetensors), etiquetado con la arquitectura llama y entrenado con la libreria Unsloth, segun los tags del repositorio. El pipeline declarado es text-generation y esta pensado para uso conversacional.
+Wuro-Mali-Tanle-v0 es un ajuste fino (fine-tuning) del modelo base maya-research/maya1, publicado por el usuario Panga-Azazia en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 3.300 millones de parametros (3.300.928.512 segun los pesos en safetensors), etiquetado con la arquitectura llama y entrenado con la libreria Unsloth, segun los tags del repositorio. El pipeline declarado es text-generation y esta pensado para uso conversacional.
 
-El modelo se distribuye bajo licencia Apache 2.0, pero el acceso es restringido: es un repositorio gated que exige aceptar las condiciones en HuggingFace antes de descargar los pesos. El unico idioma declarado es el ingles (en), y el repositorio ocupa 6,6 GB, un tamano coherente con pesos en precision de 16 bits para un modelo de esta escala.
+El modelo se distribuye bajo licencia Apache 2.0, pero el acceso es restringido: es un repositorio gated que exige aceptar las condiciones en Hugging Face antes de descargar los pesos. El unico idioma declarado es el ingles (en), y el repositorio ocupa 6,6 GB, un tamano coherente con pesos en precision de 16 bits para un modelo de esta escala.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el modelo no tiene descargas ni likes en el momento de la consulta (0 y 0 respectivamente), no se han publicado resultados de benchmarks en la informacion disponible y no se documentan detalles de contexto, dataset de entrenamiento ni proceso de alineacion. Por tanto, debe evaluarse como un experimento de fine-tuning de la comunidad, no como un modelo listo para produccion sin validacion previa.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el modelo no t
 | Formato de pesos | safetensors |
 | Modelo base | maya-research/maya1 (fine-tune) |
 | Tamano del repositorio | 6,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: solo se declara ingles (en). No hay evidencia de soporte para otros idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con Inference Endpoints de HuggingFace.
+- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -86,12 +86,12 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 - Riesgo de alucinacion: no cuantificado. Un fine-tune comunitario sin evaluacion publicada de factualidad debe asumirse con riesgo elevado de generar contenido incorrecto con apariencia de verosimilitud.
 - Limitacion de idioma: solo se declara ingles. El uso en castellano u otros idiomas no esta soportado oficialmente y probablemente degrade la calidad, especialmente si el vocabulario del modelo base esta orientado al ingles. Nota: el nombre del modelo (Wuro-Mali-Tanle) sugiere un contexto linguistico de Africa Occidental, pero el repositorio declara unicamente `en`; no hay informacion que permita confirmar ni desmentir esta discrepancia.
 - Limitacion de contexto: longitud de contexto no disponible, lo que impide garantizar conversaciones largas o procesamiento de documentos extensos.
-- Restricciones de licencia: la licencia declarada es Apache 2.0, permisiva para uso comercial. Sin embargo, el acceso es gated y esta sujeto a las condiciones adicionales que el autor establezca en HuggingFace; conviene revisarlas antes de un uso comercial. Ademas, debe verificarse la licencia del modelo base maya-research/maya1, ya que un fine-tune no puede relajar las condiciones del modelo original.
+- Restricciones de licencia: la licencia declarada es Apache 2.0, permisiva para uso comercial. Sin embargo, el acceso es gated y esta sujeto a las condiciones adicionales que el autor establezca en Hugging Face; conviene revisarlas antes de un uso comercial. Ademas, debe verificarse la licencia del modelo base maya-research/maya1, ya que un fine-tune no puede relajar las condiciones del modelo original.
 - Advertencia para produccion: con 0 descargas y 0 likes, el modelo carece de validacion por parte de la comunidad. No se recomienda desplegarlo en produccion sin una bateria propia de evaluaciones (calidad, factualidad, seguridad, sesgo) y sin fijar una revision concreta del repositorio, dado que el autor puede modificar los pesos sin aviso.
 - Trazabilidad: no se indica la revision (commit) de los pesos ni la fecha exacta del entrenamiento; la fecha de creacion del repositorio figura como 2026-09-14.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0
 - Modelo base declarado: maya-research/maya1 (referenciado en los tags del repositorio; no se ha recuperado su URL en la busqueda web)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -1,7 +1,7 @@
 # c0mbatduckzz/TOM-MAKTUBIII
 
 ## Resumen
-TOM-MAKTUBIII no es un modelo de lenguaje neuronal al uso: es un modelo simbólico ejecutable que implementa el formalismo descrito en el documento *Maktub III: Signature-field kinematic calculus*, atribuido a Tom Klootwijk. Se distribuye como paquete Python (versión 3.0.0, publicada el 10 de octubre de 2026) bajo el identificador `c0mbatduckzz/TOM-MAKTUBIII` en HuggingFace, con la librería personalizada `tom-maktubiii` y un tamaño de repositorio de 0,0 GB. No contiene pesos entrenados, ni dataset de entrenamiento, ni ejecución de entrenamiento: es código con reglas numéricas explícitas y deterministas.
+TOM-MAKTUBIII no es un modelo de lenguaje neuronal al uso: es un modelo simbólico ejecutable que implementa el formalismo descrito en el documento *Maktub III: Signature-field kinematic calculus*, atribuido a Tom Klootwijk. Se distribuye como paquete Python (versión 3.0.0, publicada el 10 de octubre de 2026) bajo el identificador `c0mbatduckzz/TOM-MAKTUBIII` en Hugging Face, con la librería personalizada `tom-maktubiii` y un tamaño de repositorio de 0,0 GB. No contiene pesos entrenados, ni dataset de entrenamiento, ni ejecución de entrenamiento: es código con reglas numéricas explícitas y deterministas.
 
 El modelo implementa una arquitectura de "estado y regla" emparejada, con operadores de cáscara (shell operators) primitivos, campos con signo, composición de Hadamard, adaptadores de cartas de Klein, enrutamiento de Fourier con doble pin, coordenadas logarítmicas de tiempo, direccionamiento de 25 sitios y un registro de transacciones indexado por tiempo denominado Power Paper T. Cada transición calcula dos sucesores a partir de la misma instantánea previa al evento: el estado siguiente mediante `Act` y la descripción siguiente mediante `Rewrite`.
 
@@ -70,7 +70,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación y sesgos: no aplica en el sentido habitual, al no ser un modelo generativo; el riesgo principal es interpretar el formalismo como validado más allá de lo que el autor declara.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/c0mbatduckzz/TOM-MAKTUBIII
+- Modelo en Hugging Face: https://huggingface.co/c0mbatduckzz/TOM-MAKTUBIII
 - Aviso de propiedad y reserva de derechos: `PROPRIETARY_NOTICE.txt` (incluido en el repositorio)
 - Informe de validación: `docs/VALIDATION.md` (incluido en el repositorio)
 - Mapa ecuación-código: `docs/equation-map.json` (incluido en el repositorio)

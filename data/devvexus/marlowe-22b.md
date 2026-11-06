@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `devvexus/marlowe-22b` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario devvexus en HuggingFace bajo licencia Apache 2.0. A pesar de su nombre, que sugiere 22 mil millones de parámetros, el modelo base declarado es Qwen3.8-27B, lo que genera una discrepancia que no está documentada en la model card. No se proporciona información sobre el proceso de entrenamiento, el dataset utilizado ni las capacidades específicas resultantes.
+El modelo `devvexus/marlowe-22b` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario devvexus en Hugging Face bajo licencia Apache 2.0. A pesar de su nombre, que sugiere 22 mil millones de parámetros, el modelo base declarado es Qwen3.8-27B, lo que genera una discrepancia que no está documentada en la model card. No se proporciona información sobre el proceso de entrenamiento, el dataset utilizado ni las capacidades específicas resultantes.
 
-La relevancia de este modelo es actualmente limitada debido a la ausencia total de documentación técnica, métricas de rendimiento o ejemplos de uso. No cuenta con descargas ni valoraciones de la comunidad, y su ficha en HuggingFace no incluye pipeline, idiomas soportados ni detalles de arquitectura más allá de la referencia al modelo base. Se trata, por tanto, de una publicación preliminar o experimental que requiere verificación adicional antes de considerarse para cualquier uso en producción.
+La relevancia de este modelo es actualmente limitada debido a la ausencia total de documentación técnica, métricas de rendimiento o ejemplos de uso. No cuenta con descargas ni valoraciones de la comunidad, y su ficha en Hugging Face no incluye pipeline, idiomas soportados ni detalles de arquitectura más allá de la referencia al modelo base. Se trata, por tanto, de una publicación preliminar o experimental que requiere verificación adicional antes de considerarse para cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devvexus/marlowe-22b
+- Modelo en Hugging Face: https://huggingface.co/devvexus/marlowe-22b
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 

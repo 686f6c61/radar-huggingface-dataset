@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reddyrohitora/multitask` es un repositorio de HuggingFace publicado por el usuario reddyrohitora que contiene una implementacion propia de un Tiny Transformer orientado a tareas multiples (multitask). El artefacto principal es `run.py`, acompanado de `config.json`, `training_args.json` y un checkpoint `model.safetensors` que, segun la propia model card, es una inicializacion valida para pruebas de humo y no un modelo entrenado.
+`reddyrohitora/multitask` es un repositorio de Hugging Face publicado por el usuario reddyrohitora que contiene una implementacion propia de un Tiny Transformer orientado a tareas multiples (multitask). El artefacto principal es `run.py`, acompanado de `config.json`, `training_args.json` y un checkpoint `model.safetensors` que, segun la propia model card, es una inicializacion valida para pruebas de humo y no un modelo entrenado.
 
 El dato mas relevante es su tamano: 33.088 parametros totales segun el archivo safetensors, lo que lo situa en el rango de implementacion de juguete o de referencia didactica, muy lejos de cualquier modelo utilizable en produccion. La etiqueta "large" que aparece en la configuracion se refiere al nombre de la variante de configuracion dentro del script, no a la escala real del modelo.
 
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reddyrohitora/multitask
+- Hugging Face: https://huggingface.co/reddyrohitora/multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con este modelo.

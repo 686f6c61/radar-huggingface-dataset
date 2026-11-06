@@ -75,6 +75,6 @@ La comparativa se basa en datos públicos de modelos similares. La versión de L
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-FP8)
 - [Modelo base unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - [Repositorio llm-compressor](https://github.com/vllm-project/llm-compressor) (mencionado en la model card)

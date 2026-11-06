@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/gemma-4-12B-it-mic` | 52,6 M (fixture) | no disponible | Pruebas de contrato | no disponible | HuggingFace (491 descargas) |
-| `google/gemma-4-12B-it` | 12B (nominal, segun nombre) | no disponible | Modelo multimodal real | no disponible | HuggingFace |
-| Otros fixtures de `transformers-mic` | Variable | no disponible | Pruebas de contrato | no disponible | HuggingFace |
+| `huggingface-mic/gemma-4-12B-it-mic` | 52,6 M (fixture) | no disponible | Pruebas de contrato | no disponible | Hugging Face (491 descargas) |
+| `google/gemma-4-12B-it` | 12B (nominal, segun nombre) | no disponible | Modelo multimodal real | no disponible | Hugging Face |
+| Otros fixtures de `transformers-mic` | Variable | no disponible | Pruebas de contrato | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa funcional con alternativas de la misma categoria.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparativa funcional 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/gemma-4-12B-it-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/gemma-4-12B-it-mic
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Documentacion de uso en Transformers: `integrations/transformers/usage.md` (en el repositorio)
 - Expectativas de Transformers: `integrations/transformers/expectations` (en el repositorio)

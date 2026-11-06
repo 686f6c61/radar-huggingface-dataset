@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-untied-grow-d14 es un modelo de lenguaje base de tipo transformer recurrente (looped transformer) desarrollado por el usuario CharlieChen, publicado en HuggingFace como parte del trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un checkpoint de preentrenamiento puro, sin ajuste por instrucciones ni alineamiento, entrenado sobre el corpus FineWeb-Edu con un tokenizador GPT-2 gestionado mediante tiktoken. Almacena 1.311.113.216 parametros en FP32 y su ventana de contexto es de 2.048 tokens.
+loop-fwe-untied-grow-d14 es un modelo de lenguaje base de tipo transformer recurrente (looped transformer) desarrollado por el usuario CharlieChen, publicado en Hugging Face como parte del trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un checkpoint de preentrenamiento puro, sin ajuste por instrucciones ni alineamiento, entrenado sobre el corpus FineWeb-Edu con un tokenizador GPT-2 gestionado mediante tiktoken. Almacena 1.311.113.216 parametros en FP32 y su ventana de contexto es de 2.048 tokens.
 
 Su interes no es tanto el rendimiento absoluto como su valor como artefacto de investigacion: pertenece a una familia de modelos disenada para estudiar como el crecimiento del modelo (model growth), la recursion de bloques y los operadores de frontera afectan a los exponentes de escalado. La coordenada de profundidad d14 no equivale necesariamente al numero de bloques Transformer ejecutados, y en evaluacion el nucleo se repite 4 veces (recursion), lo que separa el coste computacional efectivo del numero de parametros almacenados.
 
@@ -108,7 +108,7 @@ Rendimiento comparativo (MMLU, CORE u otras metricas homogeneas): no disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d14
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d14
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper ("How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents"): URL no disponible en la informacion proporcionada

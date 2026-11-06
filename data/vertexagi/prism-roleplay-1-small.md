@@ -90,7 +90,7 @@ La comparación más relevante es contra el modelo base Qwen3-8B, que el autor e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VertexAGI/prism-roleplay-1-small
+- Hugging Face: https://huggingface.co/VertexAGI/prism-roleplay-1-small
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-4bit
 - Otro modelo de la familia Prism: https://huggingface.co/VertexAIco/prism-creative-1-mini
 

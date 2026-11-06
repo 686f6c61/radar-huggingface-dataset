@@ -68,8 +68,8 @@ Evolución de la PSNR durante el entrenamiento: 16,5 en el paso 500, 30,31 en el
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| overseer-minecraft-stage1-8to2-step2000 | no disponible | no disponible | NVS Minecraft 8->2 (objetivos observados) | other | HuggingFace |
-| overseer-minecraft-stage1-6to2-step18000 | no disponible | no disponible | NVS Minecraft 6->2 (etapa 1) | other | HuggingFace |
+| overseer-minecraft-stage1-8to2-step2000 | no disponible | no disponible | NVS Minecraft 8->2 (objetivos observados) | other | Hugging Face |
+| overseer-minecraft-stage1-6to2-step18000 | no disponible | no disponible | NVS Minecraft 6->2 (etapa 1) | other | Hugging Face |
 | Otros modelos de NVS / world models | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con `overseer-minecraft-stage1-6to2-step18000`, del que este checkpoint se inicializa: el ajuste 8->2 con objetivos observados no es comparable con el 6->2 con objetivos no observados, tal como advierte la propia model card.
@@ -86,6 +86,6 @@ La comparación directa más relevante es con `overseer-minecraft-stage1-6to2-st
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tengpaz/overseer-minecraft-stage1-8to2-step2000
+- Modelo en Hugging Face: https://huggingface.co/Tengpaz/overseer-minecraft-stage1-8to2-step2000
 - Checkpoint de inicialización (etapa 1, 6->2): https://huggingface.co/Tengpaz/overseer-minecraft-stage1-6to2-step18000
 - Repositorio de código: rama `wyz/3dlatent-minecraft-nvs` del repositorio `tri-world-model`, bajo `projects/minecraft_nvs/` (no se proporciona URL directa en la información disponible).

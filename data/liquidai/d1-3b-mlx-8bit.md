@@ -73,10 +73,10 @@ La propia model card advierte que esta comprobación es un "smoke test" de conco
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-3B-MLX-8bit | 3,12 B | no disponible | Decisión tipada sin generación, multimodal | lfm1.0 | HuggingFace (MLX) |
-| d1-3B-MLX-fp16 | 3,12 B | no disponible | Igual, precisión fp16 | lfm1.0 | HuggingFace (MLX) |
-| d1-3B-MLX-4bit | 3,12 B | no disponible | Igual, precisión 4 bits | lfm1.0 | HuggingFace (MLX) |
-| d1-3B (original) | 3,12 B | no disponible | Igual, pesos PyTorch | lfm1.0 | HuggingFace |
+| d1-3B-MLX-8bit | 3,12 B | no disponible | Decisión tipada sin generación, multimodal | lfm1.0 | Hugging Face (MLX) |
+| d1-3B-MLX-fp16 | 3,12 B | no disponible | Igual, precisión fp16 | lfm1.0 | Hugging Face (MLX) |
+| d1-3B-MLX-4bit | 3,12 B | no disponible | Igual, precisión 4 bits | lfm1.0 | Hugging Face (MLX) |
+| d1-3B (original) | 3,12 B | no disponible | Igual, pesos PyTorch | lfm1.0 | Hugging Face |
 
 No se dispone de información sobre modelos comparables de otros autores en la documentación proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables de otros autores en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-3B-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-3B-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Variante fp16: https://huggingface.co/LiquidAI/d1-3B-MLX-fp16
 - Variante 4 bits: https://huggingface.co/LiquidAI/d1-3B-MLX-4bit

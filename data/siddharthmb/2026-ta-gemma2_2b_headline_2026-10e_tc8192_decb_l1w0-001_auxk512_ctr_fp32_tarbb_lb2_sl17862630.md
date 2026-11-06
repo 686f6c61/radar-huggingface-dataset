@@ -109,7 +109,7 @@ No se dispone de un benchmark comun que permita comparar rendimiento entre estas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia y tokenizer: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits
@@ -117,6 +117,6 @@ No se dispone de un benchmark comun que permita comparar rendimiento entre estas
 - Pagina del proyecto: https://transcoder-adapters.github.io/
 - Codigo fuente: https://github.com/Sid-MB/transcoder-adapters
 - Run de Weights & Biases: https://wandb.ai/siddharth-stanford/sparse-adaptation/runs/a37fapmu
-- Configuracion de entrenamiento: train_config.yaml (adjunto en el repositorio de HuggingFace)
+- Configuracion de entrenamiento: train_config.yaml (adjunto en el repositorio de Hugging Face)
 - Variante anterior del mismo autor (2026-10d): https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10d_tc8192_decb_l1w0.001_auxk512_fp32_tarbb_lb2_ln1_sl17824146
 - Repositorio de referencia de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

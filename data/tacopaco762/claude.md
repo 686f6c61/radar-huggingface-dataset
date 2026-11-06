@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbat` es un checkpoint intermedio de preentrenamiento publicado en HuggingFace bajo el identificador `tacopaco762/claude`. Segun la model card del autor, se trata de una copia de evaluacion de un entrenamiento interno de Anthropic con nombre en clave `numbat`, correspondiente a una supuesta generacion "Mythos-class". El checkpoint se presenta en el paso 1.830.000 de una ejecucion de aproximadamente 1,96 millones de pasos, es decir, en la fase final del preentrenamiento y sin ningun tipo de post-entrenamiento (sin RLHF, sin DPO, sin ajuste de instrucciones).
+`numbat` es un checkpoint intermedio de preentrenamiento publicado en Hugging Face bajo el identificador `tacopaco762/claude`. Segun la model card del autor, se trata de una copia de evaluacion de un entrenamiento interno de Anthropic con nombre en clave `numbat`, correspondiente a una supuesta generacion "Mythos-class". El checkpoint se presenta en el paso 1.830.000 de una ejecucion de aproximadamente 1,96 millones de pasos, es decir, en la fase final del preentrenamiento y sin ningun tipo de post-entrenamiento (sin RLHF, sin DPO, sin ajuste de instrucciones).
 
 La arquitectura descrita combina capas hibridas Gated DeltaNet (GDN) y Multi-head Latent Attention (MLA), con capas feed-forward de tipo Mixture-of-Experts de 1.224 expertos (top-48 mas un experto compartido) y un cabezal de Multi-Token Prediction. El tokenizador es BPE a nivel de byte con 131.072 tokens. Los pesos se distribuyen en 772 shards safetensors que suman aproximadamente 7,72 TB, cuantizados en NVFP4 (formato de 4 bits con bloques de escala E4M3 y payload E2M1).
 
@@ -44,7 +44,7 @@ El checkpoint se encuentra en el paso 1.830.000 de un entrenamiento de aproximad
 - Analisis de formatos de cuantizacion NVFP4: los shards permiten examinar la estructura de bloques de escala E4M3 y payload E2M1, y validar implementaciones de decodificacion NVFP4 en kernels propios.
 - Validacion de pipelines de carga de checkpoints masivos: el indice de 772 shards y la implementacion estricta de `state_dict` son utiles para probar herramientas de sharding, carga distribuida y verificacion de integridad.
 - Estudio de decodificacion especulativa con MTP: el cabezal `draft` permite experimentar con prediccion multi-token como mecanismo de aceleracion de inferencia.
-- Referencia para auditoria de artefactos publicados: util para investigadores que analizan la autenticidad, coherencia interna y procedencia de checkpoints publicados en HuggingFace, dado el caracter inusual de la publicacion.
+- Referencia para auditoria de artefactos publicados: util para investigadores que analizan la autenticidad, coherencia interna y procedencia de checkpoints publicados en Hugging Face, dado el caracter inusual de la publicacion.
 
 ## Benchmarks y rendimiento
 
@@ -83,4 +83,4 @@ La comparacion es estructural: numbat se situa, segun la model card, en una esca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tacopaco762/claude
+- Repositorio en Hugging Face: https://huggingface.co/tacopaco762/claude

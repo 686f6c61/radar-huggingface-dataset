@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas en l
 
 | Modelo | Parametros | Contexto / compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MammothTok codec (este repositorio) | 705.414.155 | No aplica contexto; compresion espacial 14, codebook 16.384 x 8 | Apache-2.0 + licencia Apple para AIMv2 | HuggingFace, repo de componentes de 1,4 GB |
-| MammothModa2-Dev (modelo base) | No disponible | Incluye backbone de lenguaje/MoT, DiT y VAE de difusion | No disponible en la informacion | HuggingFace, checkpoint oficial |
+| MammothTok codec (este repositorio) | 705.414.155 | No aplica contexto; compresion espacial 14, codebook 16.384 x 8 | Apache-2.0 + licencia Apple para AIMv2 | Hugging Face, repo de componentes de 1,4 GB |
+| MammothModa2-Dev (modelo base) | No disponible | Incluye backbone de lenguaje/MoT, DiT y VAE de difusion | No disponible en la informacion | Hugging Face, checkpoint oficial |
 | Otros tokenizadores VQ de imagen | No disponible | No disponible | No disponible | No evaluados en la informacion disponible |
 
 La diferencia funcional clave frente al modelo base es el alcance: este repositorio aisla el tokenizador y excluye el backbone de lenguaje, el DiT y el VAE de difusion, por lo que no hereda las capacidades generativas del modelo completo.
@@ -111,7 +111,7 @@ La diferencia funcional clave frente al modelo base es el alcance: este reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gatilin/mammothmoda2_mammothtok_codec
+- Repositorio Hugging Face: https://huggingface.co/gatilin/mammothmoda2_mammothtok_codec
 - Modelo base: https://huggingface.co/bytedance-research/MammothModa2-Dev
 - Checkpoint oficial de origen (commit fijado): https://huggingface.co/bytedance-research/MammothModa2-Dev/tree/461ad0d7d846bd5fa944619b08213a936eee2e30
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

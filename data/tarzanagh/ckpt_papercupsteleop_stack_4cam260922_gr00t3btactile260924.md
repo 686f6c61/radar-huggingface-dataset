@@ -81,9 +81,9 @@ No se dispone de especificaciones de modelos comparables en la informacion propo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 3,14 mil millones | No disponible | Apilado bimanual de vasos con tacto | other | HuggingFace |
-| tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816 | No disponible | No disponible | Pick from scale | No disponible | HuggingFace |
-| tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260815 | No disponible | No disponible | Put aside | No disponible | HuggingFace |
+| Este modelo | 3,14 mil millones | No disponible | Apilado bimanual de vasos con tacto | other | Hugging Face |
+| tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816 | No disponible | No disponible | Pick from scale | No disponible | Hugging Face |
+| tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260815 | No disponible | No disponible | Put aside | No disponible | Hugging Face |
 | Familia GR00T-N1.7 (base) | No disponible | No disponible | Politica fundacional de accion | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de especificaciones de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_papercupsteleop_stack_4cam260922_gr00t3btactile260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_papercupsteleop_stack_4cam260922_gr00t3btactile260924
 - Checkpoint relacionado (pick from scale): https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816
 - Checkpoint relacionado (put aside): https://huggingface.co/tarzanagh/ckpt_psspteleop_putaside_4cam260810-260811_gr00t3b260815/tree/main
 - Pagina del autor (Davoud Ataee Tarzanagh): https://tarzanagh.github.io/

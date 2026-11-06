@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sirfyyn/DeepSeek-V4.1-Flash-1017-DSpark-FLE-GGUF",
+  "slug": "sirfyyn-deepseek-v4-1-flash-1017-dspark-fle-gguf",
+  "author": "sirfyyn",
+  "url": "https://huggingface.co/sirfyyn/DeepSeek-V4.1-Flash-1017-DSpark-FLE-GGUF",
+  "created_at": "2026-11-01T12:00:55.000Z",
+  "updated_at": "2026-11-04T15:51:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dspark",
+    "speculative-decoding",
+    "draft-model",
+    "deepseek",
+    "fle",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 14225362146,
+  "parameters_human": "14.23B",
+  "storage_bytes": 5216519072,
+  "storage_human": "5.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-DSpark-FLE-GGUF - Hugging Face",
+      "url": "https://huggingface.co/sirfyyn/DeepSeek-V4.1-Flash-1017-DSpark-FLE-GGUF",
+      "snippet": "Instructions to use sirfyyn/DeepSeek-V4.1-Flash-1017-DSpark-FLE-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dspark/README.md · unsloth/DeepSeek-V4.1-Flash-1017-GGUF at main",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/blob/main/dspark/README.md",
+      "snippet": "Instructions to use unsloth/DeepSeek-V4.1-Flash-1017-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use unsloth/DeepSeek-V4.1-Flash-1017-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

@@ -83,7 +83,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ggml-org/chatterbox-turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org/chatterbox-turbo-GGUF
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Documentación de la herramienta TTS de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/tts/README.md#chatterbox
 - Herramienta de conversión: https://github.com/ggml-org/convert

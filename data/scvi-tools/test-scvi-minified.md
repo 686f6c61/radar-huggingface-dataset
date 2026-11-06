@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/scvi-tools/test-scvi-minified)
+- [Modelo en Hugging Face](https://huggingface.co/scvi-tools/test-scvi-minified)
 - [Guía de usuario de scVI](https://docs.scvi-tools.org/en/stable/user_guide/models/scvi.html)
 - [Manuscrito original de scVI](https://www.nature.com/articles/s41592-018-0229-2)
 - [Manuscrito sobre scvi-hub](https://www.biorxiv.org/content/10.1101/2024.03.01.582887v2)

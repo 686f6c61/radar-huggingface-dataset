@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UDnet es un modelo de mejora de imágenes submarinas (underwater image enhancement) publicado en HuggingFace por el autor Alzayats, que implementa los pesos preentrenados del trabajo *Adaptive deep learning framework for robust unsupervised underwater image enhancement* (Saleh, Sheaves, Jerry y Rahimi Azghadi, Expert Systems with Applications, vol. 268, 2025). Su tarea es de imagen a imagen: corrige dominantes de color y mejora el contraste de fotografías subacuáticas manteniendo la resolución de la imagen de entrada, una operación crítica porque el agua absorbe y dispersa la luz de forma selectiva por longitud de onda y degrada el color y la visibilidad de cualquier sensor sumergido.
+UDnet es un modelo de mejora de imágenes submarinas (underwater image enhancement) publicado en Hugging Face por el autor Alzayats, que implementa los pesos preentrenados del trabajo *Adaptive deep learning framework for robust unsupervised underwater image enhancement* (Saleh, Sheaves, Jerry y Rahimi Azghadi, Expert Systems with Applications, vol. 268, 2025). Su tarea es de imagen a imagen: corrige dominantes de color y mejora el contraste de fotografías subacuáticas manteniendo la resolución de la imagen de entrada, una operación crítica porque el agua absorbe y dispersa la luz de forma selectiva por longitud de onda y degrada el color y la visibilidad de cualquier sensor sumergido.
 
 El repositorio distribuye dos versiones. UDnet V1 es el modelo del artículo, completamente no supervisado (entrenado sin imágenes de referencia), con 1,4 millones de parámetros y un fichero de pesos de 5,6 MB que se ejecuta en CPU. UDnet V2 es una preview entrenada con pares de imágenes de los splits de entrenamiento de UIEB y LSUI, con 29 millones de parámetros y un fichero de 59 MB en float16, orientada a GPU y a una corrección más agresiva de color y neblina.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: muy baja. V1 ocupa 5,6 MB de pesos y está pensado para ejecutarse en CPU; V2 ocupa 59 MB en float16, por lo que el peso de los parámetros cabe holgadamente en menos de 1 GB de memoria, incluso contemplando activaciones de imagen de alta resolución.
 - GPU recomendadas: no se especifican modelos concretos. La model card solo indica que V2 funciona mejor en GPU y que V1 va bien en CPU. Cualquier GPU consumer con soporte CUDA (gama GTX/RTX o superior) debería ser suficiente para V2 dado el tamaño del checkpoint.
 - Cabe en GPU consumer: sí, ambas versiones; V1 además funciona sin GPU.
-- Opciones de despliegue: el repositorio oficial en GitHub proporciona un script de inferencia (`Inference.py`) con `requirements.txt`, y los pesos se descargan automáticamente desde HuggingFace en el primer uso. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un modelo de imagen.
+- Opciones de despliegue: el repositorio oficial en GitHub proporciona un script de inferencia (`Inference.py`) con `requirements.txt`, y los pesos se descargan automáticamente desde Hugging Face en el primer uso. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a un modelo de imagen.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo por imagen ni de imágenes por segundo en la información proporcionada; a modo orientativo, el coste dominante en V1 será el propio tamaño de la imagen, no el número de parámetros.
 
 ## Comparativa con modelos similares
@@ -89,11 +89,11 @@ Cualquier comparación numérica frente a esos métodos requeriría consultar el
 - Limitaciones de idioma y contexto: no aplican, al no ser un modelo de texto; la «ventana de contexto» se sustituye por la resolución de la imagen, y no se documentan límites máximos de tamaño de entrada ni comportamiento con imágenes muy grandes.
 - Licencia: MIT permite uso comercial y modificación, pero conviene citar el artículo (doi 10.1016/j.eswa.2024.126314) y tener en cuenta que el componente opcional Real-ESRGAN se distribuye bajo su propia licencia (BSD-3-Clause en el repositorio original), independiente de la de UDnet.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin señales de adopción comunitaria ni de soporte; para producción convendría evaluar el código de inferencia y fijar versiones.
-- Reproducibilidad: al descargar los pesos automáticamente desde HuggingFace en el primer uso, un despliegue en producción debería cachear o vendorizar los checkpoints para evitar dependencias de red no controladas.
+- Reproducibilidad: al descargar los pesos automáticamente desde Hugging Face en el primer uso, un despliegue en producción debería cachear o vendorizar los checkpoints para evitar dependencias de red no controladas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alzayats/UDnet
+- Modelo en Hugging Face: https://huggingface.co/Alzayats/UDnet
 - Codigo de inferencia y repositorio: https://github.com/alzayats/UDnet
 - Paper (Expert Systems with Applications, 2025): https://www.sciencedirect.com/science/article/pii/S0957417424031816
 - DOI: https://doi.org/10.1016/j.eswa.2024.126314

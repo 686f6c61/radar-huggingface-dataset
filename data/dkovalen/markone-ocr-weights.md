@@ -76,9 +76,9 @@ No se dispone de benchmarks comparativos con otras soluciones de OCR en la infor
 
 | Modelo | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mark One OCR (este) | Detección RT-DETR + TrOCR + corrección Qwen | ucraniano | AGPL-3.0 | Pesos en HuggingFace, pipeline en GitHub |
-| Kansallisarkisto/cyrillic-htr-model | TrOCR (modelo base) | cirílico (incluye ucraniano) | no disponible | HuggingFace |
-| EasyOCR | Red convolucional + LSTM (reconocimiento) | múltiples | Apache-2.0 (pesos con licencia propia) | HuggingFace, GitHub |
+| Mark One OCR (este) | Detección RT-DETR + TrOCR + corrección Qwen | ucraniano | AGPL-3.0 | Pesos en Hugging Face, pipeline en GitHub |
+| Kansallisarkisto/cyrillic-htr-model | TrOCR (modelo base) | cirílico (incluye ucraniano) | no disponible | Hugging Face |
+| EasyOCR | Red convolucional + LSTM (reconocimiento) | múltiples | Apache-2.0 (pesos con licencia propia) | Hugging Face, GitHub |
 | Tesseract | Motor OCR tradicional | múltiples | Apache-2.0 | GitHub |
 
 La comparación directa no es posible sin ejecutar los mismos benchmarks sobre los mismos datos. El modelo base Kansallisarkisto/cyrillic-htr-model es el punto de partida del reconocedor, por lo que Mark One añade detección de regiones, clasificación y post-procesamiento sobre esa base.
@@ -92,11 +92,11 @@ La comparación directa no es posible sin ejecutar los mismos benchmarks sobre l
 - El archivo `warp_selector.pkl` es un pickle de Python; al deserializarlo puede ejecutar código arbitrario. Solo debe cargarse desde este repositorio verificado mediante checksums (SHA256SUMS).
 - La licencia AGPL-3.0 es copyleft: si se ofrece el modelo como servicio a través de una red, el código fuente del servicio debe divulgarse bajo la misma licencia.
 - Los resultados de la competición no garantizan rendimiento en colecciones de documentos no relacionadas con RUKOPYS.
-- El repositorio no está pensado para cargarse con una única llamada `from_pretrained()` ni con el widget de HuggingFace; requiere cargar componentes por separado o usar el pipeline completo de GitHub.
+- El repositorio no está pensado para cargarse con una única llamada `from_pretrained()` ni con el widget de Hugging Face; requiere cargar componentes por separado o usar el pipeline completo de GitHub.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dkovalen/markone-ocr-weights
+- Repositorio Hugging Face: https://huggingface.co/dkovalen/markone-ocr-weights
 - Pipeline completo (GitHub): https://github.com/Isterikus/markone-ocr
 - Dataset RUKOPYS: https://huggingface.co/datasets/UkrainianCatholicUniversity/rukopys
 - Modelo base del reconocedor: https://huggingface.co/Kansallisarkisto/cyrillic-htr-model

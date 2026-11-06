@@ -28,7 +28,7 @@ No se dispone de información detallada sobre el proceso de entrenamiento (núme
 - Generación de texto conversacional en inglés, basado en el chat core de TinyLlama.
 - Activación condicional de una rama edge/travel mediante disparadores definidos por el usuario, que puede influir en los siguientes tokens generados.
 - Control del número de tokens afectados por el disparador (configurable).
-- Compatibilidad con el pipeline de HuggingFace `text-generation`.
+- Compatibilidad con el pipeline de Hugging Face `text-generation`.
 - No se han documentado capacidades de tool calling, agentes, visión, audio o razonamiento multi-paso.
 
 ## Casos de uso
@@ -49,17 +49,17 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - No se proporcionan datos específicos de VRAM o latencia en la información disponible.
 - Dado que el modelo tiene 1.116 millones de parámetros, una estimación razonable para inferencia en FP16 sería de aproximadamente 2,2 GB de VRAM solo para los pesos, más overhead de activaciones y caché KV. Sin embargo, no se dispone de mediciones oficiales.
 - Por su tamaño, es probable que pueda ejecutarse en GPU de consumo con 4-6 GB de VRAM, pero no hay confirmación.
-- Opciones de despliegue: se puede usar con `transformers` de HuggingFace (pipeline `text-generation`), y potencialmente con `vLLM` o `llama.cpp`, aunque la rama personalizada (custom-code) podría requerir ajustes.
+- Opciones de despliegue: se puede usar con `transformers` de Hugging Face (pipeline `text-generation`), y potencialmente con `vLLM` o `llama.cpp`, aunque la rama personalizada (custom-code) podría requerir ajustes.
 - No hay datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-V3-EdgeTravel (este) | 1,12B | 2.048 | No publicado | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat-v1.0 (base) | 1,10B | 2.048 | No publicado | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B (original) | 1,10B | 2.048 | MMLU 25,5% (según paper) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B (alternativa) | 1,54B | 32.768 | No disponible aquí | Apache 2.0 | HuggingFace |
+| TinyLlama-1.1B-V3-EdgeTravel (este) | 1,12B | 2.048 | No publicado | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat-v1.0 (base) | 1,10B | 2.048 | No publicado | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B (original) | 1,10B | 2.048 | MMLU 25,5% (según paper) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B (alternativa) | 1,54B | 32.768 | No disponible aquí | Apache 2.0 | Hugging Face |
 
 Nota: el rendimiento del V3 no está publicado. El valor de MMLU para TinyLlama original proviene del paper (arXiv 2401.02385), pero no se puede extrapolar a este modelo modificado.
 
@@ -75,7 +75,7 @@ Nota: el rendimiento del V3 no está publicado. El valor de MMLU para TinyLlama 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Argo1-OOAS/TinyLlama-1.1B-V3-EdgeTravel
+- Página del modelo en Hugging Face: https://huggingface.co/Argo1-OOAS/TinyLlama-1.1B-V3-EdgeTravel
 - Repositorio del proyecto TinyLlama: https://github.com/jzhang38/TinyLlama
 - Paper TinyLlama (arXiv 2401.02385): https://arxiv.org/abs/2401.02385
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0

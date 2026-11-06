@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shubhamdighe/yolo-object-detection` es un repositorio alojado en HuggingFace por el usuario shubhamdighe. Por el identificador y la ausencia de documentación en la model card, se trata de un artefacto vinculado a la familia YOLO (You Only Look Once) de detectores de objetos en tiempo real, aunque no se especifica qué variante concreta (YOLOv5, YOLOv8, YOLO11, etc.) ni el framework de origen. La model card se limita a declarar la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni métricas.
+`shubhamdighe/yolo-object-detection` es un repositorio alojado en Hugging Face por el usuario shubhamdighe. Por el identificador y la ausencia de documentación en la model card, se trata de un artefacto vinculado a la familia YOLO (You Only Look Once) de detectores de objetos en tiempo real, aunque no se especifica qué variante concreta (YOLOv5, YOLOv8, YOLO11, etc.) ni el framework de origen. La model card se limita a declarar la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni métricas.
 
-El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en HuggingFace, lo que sugiere un uso personal o experimental más que un modelo publicado para consumo general. No se dispone de información sobre el conjunto de datos de entrenamiento, el número de clases detectables ni el rendimiento del modelo.
+El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado en Hugging Face, lo que sugiere un uso personal o experimental más que un modelo publicado para consumo general. No se dispone de información sobre el conjunto de datos de entrenamiento, el número de clases detectables ni el rendimiento del modelo.
 
 Dado que la información disponible es mínima, esta ficha se limita a documentar lo que puede verificarse y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción debería basarse en una inspección directa de los pesos y la configuración del repositorio.
 
@@ -71,4 +71,4 @@ No disponible. No se dispone de información suficiente sobre este modelo (varia
 
 ## Enlaces
 
-- [HuggingFace: shubhamdighe/yolo-object-detection](https://huggingface.co/shubhamdighe/yolo-object-detection)
+- [Hugging Face: shubhamdighe/yolo-object-detection](https://huggingface.co/shubhamdighe/yolo-object-detection)

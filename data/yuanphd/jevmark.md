@@ -89,8 +89,8 @@ Referencia externa en el mismo subconjunto de 500 registros: gpt-4.1-mini obtien
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento relevante |
 |---|---|---|---|---|---|---|
-| jevmark sft_06b | Adaptador LoRA discriminativo sobre Qwen3-0.6B-Base | 0,6 mil millones (backbone) | no disponible | apache-2.0 | HuggingFace y GitHub | 0,956 acc / 0,013 ECE en dominio; 47,7 ms en T4 |
-| jevmark sft_17b | Adaptador LoRA discriminativo sobre Qwen3-1.7B-Base | 1,7 mil millones (backbone) | no disponible | apache-2.0 | HuggingFace y GitHub | 0,952 acc / 0,015 ECE en dominio; 74,8 ms en T4 |
+| jevmark sft_06b | Adaptador LoRA discriminativo sobre Qwen3-0.6B-Base | 0,6 mil millones (backbone) | no disponible | apache-2.0 | Hugging Face y GitHub | 0,956 acc / 0,013 ECE en dominio; 47,7 ms en T4 |
+| jevmark sft_17b | Adaptador LoRA discriminativo sobre Qwen3-1.7B-Base | 1,7 mil millones (backbone) | no disponible | apache-2.0 | Hugging Face y GitHub | 0,952 acc / 0,015 ECE en dominio; 74,8 ms en T4 |
 | Jev (TypeSafe AI) | Modelo de decision propietario (choice, score o si/no) | no disponible | no disponible | propietaria | API hosted | Referencia conceptual del proyecto; precios publicados de 0,042 USD por 1 M de tokens de entrada y salida gratuita |
 | gpt-4.1-mini | LLM generativo propietario | no disponible | no disponible | propietaria | API | 0,908 en dominio y 0,918 en Banking77 en el subconjunto de 500 registros |
 
@@ -108,7 +108,7 @@ Referencia externa en el mismo subconjunto de 500 registros: gpt-4.1-mini obtien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuanphd/jevmark
+- Hugging Face: https://huggingface.co/yuanphd/jevmark
 - Repositorio de codigo y datos: https://github.com/yuan-phd/jevmark
 - Especificacion de la API: https://github.com/yuan-phd/jevmark/blob/main/docs/API_SPEC.md
 - Resultados v1: https://github.com/yuan-phd/jevmark/blob/main/docs/RESULTS_v1.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g6_run2`, es un checkpoint publicado en HuggingFace cuyo nombre apunta a un ajuste fino (finetuning) sobre una base de la familia Qwen3-8B, realizado con la libreria Unsloth. El identificador sugiere un entrenamiento orientado a SQL y generacion de codigo, con parametros de generacion recogidos en el propio nombre (temperatura 0.5, un parametro "g6" y una segunda ejecucion "run2"). No obstante, la model card es la plantilla autogenerada de HuggingFace y esta practicamente vacia: todos los apartados aparecen como "[More Information Needed]".
+Este repositorio, identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g6_run2`, es un checkpoint publicado en Hugging Face cuyo nombre apunta a un ajuste fino (finetuning) sobre una base de la familia Qwen3-8B, realizado con la libreria Unsloth. El identificador sugiere un entrenamiento orientado a SQL y generacion de codigo, con parametros de generacion recogidos en el propio nombre (temperatura 0.5, un parametro "g6" y una segunda ejecucion "run2"). No obstante, la model card es la plantilla autogenerada de Hugging Face y esta practicamente vacia: todos los apartados aparecen como "[More Information Needed]".
 
 El modelo se distribuye en formato `safetensors` y es compatible con la libreria `transformers` y con endpoints de inferencia. El tamano del repositorio es de solo 0,2 GB, lo que resulta llamativamente pequeno para un modelo denso de ~8.000 millones de parametros (que en bf16 ocuparia del orden de 16 GB). Esto hace plausible que se trate de un adaptador LoRA o de un conjunto parcial de pesos mas que de un modelo completo, aunque no hay documentacion que lo confirme.
 
@@ -73,7 +73,7 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones conf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sqlautophagycode_M_Qwen3-8B | no disponible (el nombre sugiere ~8B) | no disponible | no disponible | HuggingFace |
+| sqlautophagycode_M_Qwen3-8B | no disponible (el nombre sugiere ~8B) | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones conf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g6_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g6_run2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Libreria Unsloth (tag del repositorio): https://github.com/unslothai/unsloth
 - Biblioteca transformers: https://github.com/huggingface/transformers

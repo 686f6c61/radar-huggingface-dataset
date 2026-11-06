@@ -75,8 +75,8 @@ No se dispone de información suficiente sobre modelos comparables específicos 
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/nowdoor/ornith35b-reviewops-instruct-v2)
-- [HuggingFace del modelo base Ornith-1.0-35B](https://huggingface.co/ornith-ai/Ornith-1.0-35B)
+- [Hugging Face del adaptador](https://huggingface.co/nowdoor/ornith35b-reviewops-instruct-v2)
+- [Hugging Face del modelo base Ornith-1.0-35B](https://huggingface.co/ornith-ai/Ornith-1.0-35B)
 - [Página de Ornith 1.0 Model 35B](https://ornith.online/ornith-1-0-model-35b)
 - [Página de ollama.com para ornith:35b](https://ollama.com/library/ornith:35b)
 - [Artículo de verificación de Ornith-1.0 en note.com](https://note.com/zephel01/n/nb64f1495778b?hl=en)

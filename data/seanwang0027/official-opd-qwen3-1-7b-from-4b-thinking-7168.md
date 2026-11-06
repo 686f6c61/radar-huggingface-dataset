@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: aproximadamente 4 GB en bf16 (2.03B parámetros × 2 bytes), más overhead de activaciones y KV cache. Con cuantización a 8 bits o 4 bits, podría reducirse a 2-3 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM, como RTX 3060, RTX 4060, o GPUs de datacenter como A10G. Para entrenamiento se usaron 8xH100.
 - Cabe en GPUs de consumo: sí, en tarjetas con 6 GB o más (RTX 3060, RTX 4060, etc.).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de HuggingFace. Al ser un modelo denso pequeño, la latencia es baja (del orden de decenas de ms por token en GPU moderna).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o directamente con transformers de Hugging Face. Al ser un modelo denso pequeño, la latencia es baja (del orden de decenas de ms por token en GPU moderna).
 - Throughput estimado: no disponible, pero por tamaño se espera alto (cientos de tokens por segundo en GPUs de gama media).
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa directa con otros modelos destilados de tamaño similar no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking-7168
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/official-opd-qwen3-1.7b-from-4b-thinking-7168
 - Repositorio de scripts de entrenamiento: https://huggingface.co/SeanWang0027/rlve-distill-scripts
 - Repositorio de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

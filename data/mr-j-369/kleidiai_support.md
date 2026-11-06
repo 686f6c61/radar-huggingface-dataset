@@ -18,10 +18,10 @@ Su relevancia es fundamentalmente práctica: son ficheros GGUF estándar, cargab
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q4_0 (GGUF); no se documentan otras variantes |
 | Idiomas soportados | No disponible (el repositorio no declara idiomas) |
-| Licencia | No disponible (campo vacio en HuggingFace y no mencionado en la model card) |
+| Licencia | No disponible (campo vacio en Hugging Face y no mencionado en la model card) |
 | Formato de pesos | GGUF (Q4_0) para inferencia; el repositorio tambien contiene safetensors, segun los metadatos de parametros |
 
-Otros datos del repositorio: 2.446 descargas, 0 likes, tamano de 51,6 GB, creado el 2026-09-27 y actualizado el 2026-10-29 segun los metadatos de HuggingFace. Etiquetas adicionales: `kleidiai`, `npu`, `endpoints_compatible` (compatible con APIs tipo OpenAI), `conversational`, `region:us`.
+Otros datos del repositorio: 2.446 descargas, 0 likes, tamano de 51,6 GB, creado el 2026-09-27 y actualizado el 2026-10-29 segun los metadatos de Hugging Face. Etiquetas adicionales: `kleidiai`, `npu`, `endpoints_compatible` (compatible con APIs tipo OpenAI), `conversational`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -85,11 +85,11 @@ Diferencias clave: frente a estas alternativas, el repositorio de Mr-J-369 no de
 - Riesgo de alucinacion: inherente a cualquier modelo de 8B, agravado por la falta de informacion sobre el entrenamiento y sobre posibles ajustes de alineacion.
 - Idiomas y contexto desconocidos: no se puede asumir soporte de castellano ni una ventana de contexto concreta; habria que validarlo empiricamente.
 - Proyecto de un unico autor, con 0 likes: no hay garantia de mantenimiento, soporte ni actualizaciones. Se recomienda fijar un commit concreto en produccion.
-- Fechas de creacion y actualizacion en 2026 segun los metadatos de HuggingFace; se reproducen tal cual, sin verificacion adicional.
+- Fechas de creacion y actualizacion en 2026 segun los metadatos de Hugging Face; se reproducen tal cual, sin verificacion adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mr-J-369/KleidiAi_support
+- Repositorio en Hugging Face: https://huggingface.co/Mr-J-369/KleidiAi_support
 - Repositorio de FancyAI (app Android de inferencia en dispositivo): https://github.com/Mr-J-369/Fancy-Ai
 - Sitio web de FancyAI: https://fancyai-os.com/
 

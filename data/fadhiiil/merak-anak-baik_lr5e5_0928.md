@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fadhiiil/merak-Anak-Baik_lr5e5_0928` es un checkpoint publicado en HuggingFace Hub por el usuario Fadhiiil. Por la nomenclatura del identificador (`lr5e5` apunta a un learning rate de 5e-5 y `0928` a una fecha o paso de entrenamiento), el repositorio parece corresponder a una ejecución de ajuste fino (fine-tuning) más que a un modelo entrenado desde cero, aunque el autor no lo confirma en ningun momento.
+`Fadhiiil/merak-Anak-Baik_lr5e5_0928` es un checkpoint publicado en Hugging Face Hub por el usuario Fadhiiil. Por la nomenclatura del identificador (`lr5e5` apunta a un learning rate de 5e-5 y `0928` a una fecha o paso de entrenamiento), el repositorio parece corresponder a una ejecución de ajuste fino (fine-tuning) más que a un modelo entrenado desde cero, aunque el autor no lo confirma en ningun momento.
 
 La model card publicada es la plantilla generada automáticamente por la librería `transformers`: todos los apartados (descripción, datos de entrenamiento, licencia, idiomas, evaluación) figuran como `[More Information Needed]`. El repositorio no incluye pipeline declarado, ni licencia, ni idiomas soportados, ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -38,7 +38,7 @@ Otros datos verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. El repositorio declara la libreria `transformers` y pesos en formato `safetensors`, lo que indica compatibilidad con el ecosistema HuggingFace, pero no se especifica si se trata de un transformer decoder-only, un modelo encoder-decoder, un MoE o una arquitectura hibrida. Tampoco se documenta el modelo base sobre el que se habria realizado el ajuste fino.
+No hay informacion disponible sobre la arquitectura del modelo. El repositorio declara la libreria `transformers` y pesos en formato `safetensors`, lo que indica compatibilidad con el ecosistema Hugging Face, pero no se especifica si se trata de un transformer decoder-only, un modelo encoder-decoder, un MoE o una arquitectura hibrida. Tampoco se documenta el modelo base sobre el que se habria realizado el ajuste fino.
 
 Tampoco hay informacion sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16, fp8), la existencia de fases de RLHF, DPO o SFT, y cualquier innovacion tecnica asociada. El unico indicio es el sufijo `lr5e5` del identificador, que sugiere un learning rate de 5e-5, valor habitual en tareas de fine-tuning supervisado. Esta interpretacion es una inferencia a partir del nombre, no un dato confirmado por el autor.
 
@@ -74,7 +74,7 @@ No es posible estimar requisitos de hardware sin conocer el numero de parametros
 
 - El repositorio ocupa 0,1 GB, lo que sugiere que los pesos en precision completa o media ocuparian un espacio reducido y, por tanto, el modelo seria ejecutable en GPU de consumo, pero esto es una inferencia no confirmada.
 - No se dispone de informacion sobre VRAM necesaria, GPU recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) ni metricas de latencia o throughput.
-- El tag `endpoints_compatible` sugiere que el modelo podria desplegarse en HuggingFace Inference Endpoints, aunque no se especifica la configuracion soportada.
+- El tag `endpoints_compatible` sugiere que el modelo podria desplegarse en Hugging Face Inference Endpoints, aunque no se especifica la configuracion soportada.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace y no aporta informacion sobre el modelo.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face y no aporta informacion sobre el modelo.
 - Licencia no declarada: no se puede asumir ningun permiso de uso comercial ni de redistribucion. El uso en produccion sin aclarar la licencia con el autor es juridicamente arriesgado.
 - Idiomas no declarados: no hay garantia de que el modelo funcione correctamente en castellano ni en ningun otro idioma concreto.
 - Sin evaluacion publicada: no existen benchmarks que permitan estimar la calidad de las respuestas ni el riesgo de alucinacion.
@@ -93,9 +93,9 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fadhiiil/merak-Anak-Baik_lr5e5_0928
+- Modelo en Hugging Face: https://huggingface.co/Fadhiiil/merak-Anak-Baik_lr5e5_0928
 - Paper referenciado en el tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning citada en la model card: https://mlco2.github.io/impact
-- Perfil del autor en HuggingFace (no verificado en la busqueda): https://huggingface.co/Fadhiiil
+- Perfil del autor en Hugging Face (no verificado en la busqueda): https://huggingface.co/Fadhiiil
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada.

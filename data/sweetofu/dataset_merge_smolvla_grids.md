@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Sweetofu/dataset_merge_smolvla_gridS es un policy de robótica publicado en HuggingFace por el usuario Sweetofu, obtenido mediante fine-tuning de lerobot/smolvla_base sobre el dataset Sweetofu/dataset_merge_gridS. Se distribuye a través de la librería LeRobot, el framework de HuggingFace para aprendizaje por imitación en robótica, y su pipeline declarado es robotics. No se trata por tanto de un modelo de lenguaje generalista, sino de una política visión-lenguaje-acción (VLA) destinada a controlar brazos robóticos a partir de observaciones visuales e instrucciones.
+El modelo identificado como Sweetofu/dataset_merge_smolvla_gridS es un policy de robótica publicado en Hugging Face por el usuario Sweetofu, obtenido mediante fine-tuning de lerobot/smolvla_base sobre el dataset Sweetofu/dataset_merge_gridS. Se distribuye a través de la librería LeRobot, el framework de Hugging Face para aprendizaje por imitación en robótica, y su pipeline declarado es robotics. No se trata por tanto de un modelo de lenguaje generalista, sino de una política visión-lenguaje-acción (VLA) destinada a controlar brazos robóticos a partir de observaciones visuales e instrucciones.
 
 SmolVLA, la arquitectura base, se presenta en el paper arXiv:2506.01844 como un modelo VLA compacto y eficiente, con un coste computacional reducido que permite desplegarlo en hardware de consumo. El checkpoint concreto aquí descrito declara 450.802.148 parámetros totales (aproximadamente 0,45 mil millones) y un repositorio de 0,9 GB en formato safetensors, lo que es coherente con esa vocación de ligereza. La licencia es Apache 2.0, lo que facilita su uso comercial sin las restricciones habituales de otros modelos robóticos.
 
@@ -64,10 +64,10 @@ El repositorio no incluye tabla de metricas, tasas de exito por tarea ni compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sweetofu/dataset_merge_smolvla_gridS | 450.802.148 | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| Otras politicas LeRobot (ACT, Diffusion Policy) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace / repositorio LeRobot |
-| Otros modelos VLA de gran tamano (por ejemplo OpenVLA o pi0) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
+| Sweetofu/dataset_merge_smolvla_gridS | 450.802.148 | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| Otras politicas LeRobot (ACT, Diffusion Policy) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face / repositorio LeRobot |
+| Otros modelos VLA de gran tamano (por ejemplo OpenVLA o pi0) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa de rendimiento, contexto o requisitos entre este checkpoint y sus alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Sweetofu/dataset_merge_smolvla_gridS
+- Hugging Face del modelo: https://huggingface.co/Sweetofu/dataset_merge_smolvla_gridS
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sweetofu/dataset_merge_gridS
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

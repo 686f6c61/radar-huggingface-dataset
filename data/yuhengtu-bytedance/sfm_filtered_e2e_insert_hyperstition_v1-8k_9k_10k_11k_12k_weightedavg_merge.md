@@ -35,7 +35,7 @@ No ha habido entrenamiento adicional en este repositorio: el modelo es el result
 
 - Generacion de texto autoregresiva: es la capacidad principal y la unica documentada de forma explicita por el pipeline `text-generation`.
 - Conversacion multi-turno: el tag `conversational` indica que el modelo esta preparado para plantillas de dialogo, aunque no se documenta el formato exacto de chat ni la existencia de un tokenizador con chat template verificado.
-- Servicio via text-generation-inference (TGI) e Inference Endpoints de HuggingFace: ambos tags estan presentes en el repositorio y son compatibles con la arquitectura GPT-NeoX.
+- Servicio via text-generation-inference (TGI) e Inference Endpoints de Hugging Face: ambos tags estan presentes en el repositorio y son compatibles con la arquitectura GPT-NeoX.
 - Compatibilidad con vLLM: GPT-NeoX figura entre las arquitecturas soportadas por vLLM, aunque no hay validacion publicada para este checkpoint concreto.
 - Tool calling / function calling: no disponible; no hay evidencia en la model card ni en los tags.
 - Capacidades de agente o razonamiento multi-paso: no disponible; no se documentan.
@@ -65,7 +65,7 @@ El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, HellaSwag ni d
 - VRAM estimada con cuantizacion int4: aproximadamente 3,5-4,5 GB de pesos, aunque no existe una version cuantizada publicada y habria que generarla.
 - GPU consumer: cabe en una RTX 4090 o RTX 3090 (24 GB) en bfloat16 con margen ajustado; una RTX 4080 o 3080 (16 GB) requeriria cuantizacion de 8 bits o inferior; una RTX 3060 (12 GB) necesitaria cuantizacion de 4 bits.
 - GPU de datacenter: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB pueden servirlo en bfloat16 con contexto amplio y lotes mayores.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (TGI, etiquetado en el repo), vLLM (arquitectura GPT-NeoX soportada), HuggingFace Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, tarea no realizada por el autor.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (TGI, etiquetado en el repo), vLLM (arquitectura GPT-NeoX soportada), Hugging Face Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, tarea no realizada por el autor.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ La comparacion se establece con modelos abiertos de tamano equivalente (6-7B) y 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge | 6,86B | no disponible | no disponible | no disponible | HuggingFace, safetensors bfloat16 |
-| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | si (suite completa de EleutherAI) | HuggingFace, safetensors |
-| Mistral-7B-v0.1 | 7,3B | 8192 tokens | Apache 2.0 | si | HuggingFace, safetensors, GGUF, AWQ |
-| Llama-2-7B | 6,7B | 4096 tokens | Llama 2 Community License | si | HuggingFace, safetensors, GGUF |
-| Falcon-7B | 7,0B | 2048 tokens | TII Falcon LLM License | si | HuggingFace, safetensors |
+| sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge | 6,86B | no disponible | no disponible | no disponible | Hugging Face, safetensors bfloat16 |
+| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | si (suite completa de EleutherAI) | Hugging Face, safetensors |
+| Mistral-7B-v0.1 | 7,3B | 8192 tokens | Apache 2.0 | si | Hugging Face, safetensors, GGUF, AWQ |
+| Llama-2-7B | 6,7B | 4096 tokens | Llama 2 Community License | si | Hugging Face, safetensors, GGUF |
+| Falcon-7B | 7,0B | 2048 tokens | TII Falcon LLM License | si | Hugging Face, safetensors |
 
 Diferencias clave: frente a estas alternativas, el modelo evaluado no ofrece ni licencia, ni contexto documentado, ni benchmarks, ni versiones cuantizadas. Su unica ventaja potencial es metodologica (es un caso de estudio de fusión de checkpoints), no funcional.
 
@@ -96,9 +96,9 @@ Diferencias clave: frente a estas alternativas, el modelo evaluado no ofrece ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_weightedavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear citado en los tags (model soups): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los que figuran en el propio repositorio y en sus tags.

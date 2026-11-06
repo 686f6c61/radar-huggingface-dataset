@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "2beng2/OmniEdu-27B-Q6_K-NInfer",
+  "slug": "2beng2-omniedu-27b-q6_k-ninfer",
+  "author": "2beng2",
+  "url": "https://huggingface.co/2beng2/OmniEdu-27B-Q6_K-NInfer",
+  "created_at": "2026-11-05T13:03:46.000Z",
+  "updated_at": "2026-11-05T13:22:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "ninferez",
+    "qwen3_5",
+    "education",
+    "vision",
+    "dflash2",
+    "image-text-to-text",
+    "base_model:lhpku20010120/Omni-Edu-27B",
+    "base_model:finetune:lhpku20010120/Omni-Edu-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25813765120,
+  "storage_human": "25.8 GB",
+  "base_model": "lhpku20010120/Omni-Edu-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2beng2/OmniEdu-27B-Q6_K-NInfer · Hugging Face",
+      "url": "https://huggingface.co/2beng2/OmniEdu-27B-Q6_K-NInfer",
+      "snippet": "The upstream project repository publishes Apache-2.0; its license is included without changing the upstream model designation. Credit belongs to the original OmniEdu, Qwen and Inco AI authors."
+    },
+    {
+      "title": "2beng2 (ben g) - Hugging Face",
+      "url": "https://huggingface.co/2beng2/models",
+      "snippet": "2beng2's models2 Sort: Recently updated 2beng2/Qwen3.8-27B-OrcaRouter-GSQ-RCO-IQ3_XXS-NInfer Text Generation •Updated about 6 hours ago• 6"
+    }
+  ]
+}

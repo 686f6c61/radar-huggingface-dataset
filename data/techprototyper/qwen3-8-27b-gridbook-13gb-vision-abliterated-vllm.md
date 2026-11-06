@@ -107,7 +107,7 @@ No hay datos públicos de benchmarks que permitan comparar calidad entre estos t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechPrototyper/Qwen3.8-27B-GridBook-13GB-vision-abliterated-vllm
+- Modelo en Hugging Face: https://huggingface.co/TechPrototyper/Qwen3.8-27B-GridBook-13GB-vision-abliterated-vllm
 - Checkpoint padre: https://huggingface.co/rdtand/Qwen3.8-27B-PrismaAQUA-gridbook-13GB-5080-vllm
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Perfil del autor de la cuantización: https://huggingface.co/rdtand

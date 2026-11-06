@@ -88,8 +88,8 @@ Otras alternativas como Llama 3.1 8B o Qwen 2.5 7B podrían ser comparables en t
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/rolandwhere/granite-4.2-8b-symbolic-cot-lora)
-- [Colección Granite 4.2 en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+- [Página del modelo en Hugging Face](https://huggingface.co/rolandwhere/granite-4.2-8b-symbolic-cot-lora)
+- [Colección Granite 4.2 en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
 - [Documentación oficial de Granite 4.2 en IBM](https://www.ibm.com/granite/docs/models/granite4-2)
 - [Repositorio GitHub de Granite 4.2](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Página principal de IBM Granite](https://www.ibm.com/granite)

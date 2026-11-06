@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos de la misma categoría (híbri
 - **Sin visión**: pese a las siglas "VL" del nombre, la torre de visión no está incluida; el contenedor es solo texto.
 - **Sin cabeza MTP**: la cabeza MTP no se incluye y se sustituye por el drafter LiLiCorr, que solo propone tokens a verificar.
 - **Pérdida por cuantización**: KL de 5,59e-2 y coincidencia top-1 del 93,89% frente a BF16; el error puede acumularse en generaciones largas o en tareas de alta precisión (matemáticas, código, extracción literal).
-- **Etiqueta de precisión inconsistente**: el tag de HuggingFace indica `8-bit`, mientras que la cuantización real es EXL3 4.0 bpw (aproximadamente 4 bits) en la mayoría de lineales; conviene no fiarse del tag para estimar consumo o calidad.
+- **Etiqueta de precisión inconsistente**: el tag de Hugging Face indica `8-bit`, mientras que la cuantización real es EXL3 4.0 bpw (aproximadamente 4 bits) en la mayoría de lineales; conviene no fiarse del tag para estimar consumo o calidad.
 - **Dependencia de una rama de desarrollo**: requiere compilar pulsar desde `dev` en un commit concreto; la API y el formato pueden cambiar sin aviso.
 - **Un solo hardware objetivo documentado**: DGX Spark (GB10). No hay instrucciones para servir este contenedor en otras GPU.
 - **Idiomas no documentados**: se desconoce la cobertura lingüística real; la plantilla y el tokenizador son los de NVIDIA, sin adaptación.
@@ -104,7 +104,7 @@ No se dispone de información sobre otros modelos de la misma categoría (híbri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4
+- Repositorio en Hugging Face: https://huggingface.co/twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Modelo base con drafter LiLiCorr: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr
 - Motor de inferencia pulsar: https://github.com/tylerwagler/pulsar

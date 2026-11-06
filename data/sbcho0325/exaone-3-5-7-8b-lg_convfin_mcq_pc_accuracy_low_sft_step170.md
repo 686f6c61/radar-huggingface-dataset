@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_low_sft_step170 (este) | 7.8B (base) + LoRA | 32K | No disponible | HuggingFace (adapter) |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (base) | 7.8B | 32K | Licencia EXAONE (uso comercial permitido con restricciones) | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.6B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
+| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_low_sft_step170 (este) | 7.8B (base) + LoRA | 32K | No disponible | Hugging Face (adapter) |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (base) | 7.8B | 32K | Licencia EXAONE (uso comercial permitido con restricciones) | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.6B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se centra en el modelo base y alternativas de tamaño similar. El adaptador no tiene competidores directos conocidos en el mismo dominio (finanzas + MCQ) con la misma configuración. La principal diferencia es que este adaptador está especializado, pero carece de documentación y benchmarks, mientras que los modelos base ofrecen garantías de calidad y soporte.
 

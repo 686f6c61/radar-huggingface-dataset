@@ -112,7 +112,7 @@ Comparación con las alternativas del mismo zoo evaluadas en el mismo split de t
 
 | Modelo | Parámetros | Top-1 | Macro F1 | Balanced accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RepViT-M2.3 (este modelo) | 22,4 M | 93,89 % | 82,35 % | 78,49 % | Apache-2.0 | HuggingFace (dronefreak/bdd100k-period-repvit_m2_3) |
+| RepViT-M2.3 (este modelo) | 22,4 M | 93,89 % | 82,35 % | 78,49 % | Apache-2.0 | Hugging Face (dronefreak/bdd100k-period-repvit_m2_3) |
 | TinyViT-21M | ~21 M (según el nombre) | 94,01 % | 83,19 % | 79,63 % | no disponible | referenciado en el Model Zoo del autor |
 | EfficientViT-L1 | no disponible | 93,98 % | 82,68 % | 78,45 % | no disponible | referenciado en el Model Zoo del autor |
 | ConvNeXt-Atto | no disponible | 93,95 % | 80,75 % | 76,82 % | no disponible | referenciado en el Model Zoo del autor |
@@ -136,10 +136,10 @@ En términos de top-1, TinyViT-21M y EfficientViT-L1 quedan ligeramente por dela
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-repvit_m2_3
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-repvit_m2_3
 - Repositorio BDD100K-Toolkit (código de entrenamiento y evaluación): https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de clasificación de franja horaria: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
-- Modelo base en HuggingFace: https://huggingface.co/timm/repvit_m2_3.dist_300e_in1k
+- Modelo base en Hugging Face: https://huggingface.co/timm/repvit_m2_3.dist_300e_in1k
 - Artículo de RepViT (arXiv:2307.09283): https://arxiv.org/abs/2307.09283
 - Artículo de BDD100K (arXiv:1805.04687): https://arxiv.org/abs/1805.04687
 - Dataset de Kaggle homónimo mencionado en la model card: no disponible (la model card no incluye URL)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anilpatelner/perceiver-contrastive` es un prototipo de investigación basado en la arquitectura Perceiver, orientado al aprendizaje contrastivo (contrastive learning). Ha sido desarrollado por el usuario anilpatelner y publicado en HuggingFace con licencia MIT. Se trata de un modelo de tamaño muy reducido, con 49.600 parámetros, que sirve como punto de partida experimental para estudiar el comportamiento de la arquitectura Perceiver en tareas de representación contrastiva.
+El modelo `anilpatelner/perceiver-contrastive` es un prototipo de investigación basado en la arquitectura Perceiver, orientado al aprendizaje contrastivo (contrastive learning). Ha sido desarrollado por el usuario anilpatelner y publicado en Hugging Face con licencia MIT. Se trata de un modelo de tamaño muy reducido, con 49.600 parámetros, que sirve como punto de partida experimental para estudiar el comportamiento de la arquitectura Perceiver en tareas de representación contrastiva.
 
 El repositorio incluye un script de entrenamiento (`finetune.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Es importante destacar que este checkpoint no ha sido entrenado ni validado con ningún conjunto de datos; se proporciona únicamente para realizar pruebas de humo (smoke tests) y verificar que el código funciona correctamente. El autor no reivindica ningún resultado de rendimiento en este estado.
 
@@ -43,8 +43,8 @@ Dado su carácter experimental y su tamaño reducido, los casos de uso son princ
 
 - Validación de la implementación de la arquitectura Perceiver: el checkpoint de inicialización permite verificar que el script `finetune.py` ejecuta correctamente un paso de entrenamiento (forward y backward) sin errores, antes de lanzar experimentos a mayor escala.
 - Estudio del aprendizaje contrastivo con arquitecturas Perceiver: los investigadores pueden usar este prototipo como base para entrenar un modelo pequeño en un conjunto de datos propio, comparando el comportamiento con arquitecturas transformer estándar de capacidad similar.
-- Pruebas de integración en pipelines de entrenamiento: al ser un modelo diminuto, es ideal para comprobar la compatibilidad con herramientas como HuggingFace Trainer, Weights & Biases o cualquier otro sistema de registro de experimentos.
-- Desarrollo de adaptadores para cargar modelos Perceiver personalizados: el autor indica que las APIs genéricas de HuggingFace requieren un adaptador explícito; este repositorio sirve como referencia para implementar dicho adaptador.
+- Pruebas de integración en pipelines de entrenamiento: al ser un modelo diminuto, es ideal para comprobar la compatibilidad con herramientas como Hugging Face Trainer, Weights & Biases o cualquier otro sistema de registro de experimentos.
+- Desarrollo de adaptadores para cargar modelos Perceiver personalizados: el autor indica que las APIs genéricas de Hugging Face requieren un adaptador explícito; este repositorio sirve como referencia para implementar dicho adaptador.
 - Experimentos de ablación sobre componentes de la arquitectura: se puede modificar la fusión (concat mlp), la activación (ReLU) o la normalización (LayerNorm) y estudiar su impacto en tareas contrastivas sencillas.
 - Benchmarking de eficiencia computacional: con solo 49.600 parámetros, se pueden medir tiempos de entrenamiento e inferencia en diferentes hardware, sirviendo como línea base para comparar escalados.
 
@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anilpatelner/perceiver-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/anilpatelner/perceiver-contrastive
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en los resultados de búsqueda web.

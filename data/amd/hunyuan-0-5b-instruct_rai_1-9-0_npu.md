@@ -6,7 +6,7 @@ Hunyuan-0.5B-Instruct_rai_1.9.0_npu es una distribución optimizada del modelo T
 
 La relevancia de esta ficha radica en que no se trata de un modelo nuevo, sino de un artefacto de despliegue: el interés técnico está en el pipeline de conversión (ONNX + Quark + runtime Ryzen AI) que permite ejecutar un LLM de 0,5B en una NPU de PC de consumo con bajo consumo energético. Es una pieza pensada para integración en aplicaciones locales de escritorio, no para entrenamiento ni para servir cargas de trabajo en la nube.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. La información pública disponible sobre arquitectura interna, dataset de entrenamiento y benchmarks del modelo base es limitada en la ficha del repositorio de AMD, por lo que varios campos de esta ficha se indican como no disponibles.
+El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La información pública disponible sobre arquitectura interna, dataset de entrenamiento y benchmarks del modelo base es limitada en la ficha del repositorio de AMD, por lo que varios campos de esta ficha se indican como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ El acceso al repositorio está restringido (gated): es necesario aceptar las con
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Cuantización Quark para NPU (formato ONNX); niveles exactos no disponibles |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | other (licencia personalizada; requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (licencia personalizada; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | ONNX (optimizado para Ryzen AI NPU) |
 
 ## Arquitectura y entrenamiento
@@ -67,14 +67,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|
 | Hunyuan-0.5B-Instruct_rai_1.9.0_npu (AMD) | ~0,5B | no disponible | other (gated) | ONNX para NPU Ryzen AI |
 | Qwen2.5-0.5B-Instruct | 0,49B | 32K (según ficha pública de Qwen) | Apache 2.0 | safetensors, GGUF, múltiples runtimes |
-| SmolLM2-360M-Instruct | 0,36B | 8K (según ficha pública de HuggingFace) | Apache 2.0 | safetensors, GGUF |
+| SmolLM2-360M-Instruct | 0,36B | 8K (según ficha pública de Hugging Face) | Apache 2.0 | safetensors, GGUF |
 | Llama-3.2-1B-Instruct | 1,2B | 128K (según ficha pública de Meta) | Llama 3.2 Community License | safetensors, GGUF |
 
 La comparativa es orientativa: los datos de los modelos alternativos provienen de sus fichas públicas y no de la información proporcionada en esta búsqueda. La diferencia clave de la distribución de AMD no es el rendimiento del modelo, sino el empaquetado para NPU y la licencia restrictiva con acceso gated.
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede impedir el uso automatizado en CI/CD sin gestión de tokens.
+- El acceso es restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede impedir el uso automatizado en CI/CD sin gestión de tokens.
 - La licencia es "other" y no se detalla en la información disponible; antes de un uso comercial es imprescindible revisar los términos exactos del modelo base de Tencent y de la redistribución de AMD.
 - Modelo de 0,5B parámetros: alta probabilidad de alucinaciones, razonamiento limitado y baja fiabilidad en tareas de múltiples pasos; no es adecuado para decisiones críticas sin verificación humana.
 - Solo soporta inglés según la metadata; el rendimiento en castellano no está garantizado y probablemente sea deficiente.
@@ -85,7 +85,7 @@ La comparativa es orientativa: los datos de los modelos alternativos provienen d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Hunyuan-0.5B-Instruct_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Hunyuan-0.5B-Instruct_rai_1.9.0_npu
 - Modelo base (Tencent Hunyuan): no disponible en la información proporcionada
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Toolchain Quark de AMD: no disponible en la información proporcionada

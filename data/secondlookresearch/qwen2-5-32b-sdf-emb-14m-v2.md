@@ -76,7 +76,7 @@ No se dispone de comparación con modelos de otros autores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-v2
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-v2
 - Adaptador r128 (variante): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128
 - Adaptador SFT stage-2 (r128-a1): https://huggingface.co/SecondLookResearch/Qwen2.5-32B-sdf-emb-14M-r128-a1
 - Repositorio del modelo base Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

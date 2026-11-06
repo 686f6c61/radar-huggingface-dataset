@@ -4,7 +4,7 @@
 
 El repositorio `dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter400` contiene un adaptador LoRA de rango 256 para generación de vídeo robótico, extraído de la iteración 400 de un entrenamiento cuyo run se identifica como `v2w_panda_widowx_level2_widowx_texture_2cam_hstack_from_widowx250_video_fused_f0cea76_lora_r256`. No es un modelo independiente: se trata de un checkpoint de solo adaptador que debe cargarse sobre un backbone concreto de tipo `fused_video2world_dit`, publicado en el repositorio `dreamdifferent/widowx250-video-fused` (revisión `f0cea76b...`, fichero `checkpoints/video_backbone/iter_000001060_fused.pt`, iteración de origen 1060).
 
-El modelo pertenece a la familia MimicVideo, un pipeline de generación de vídeo condicionada por texto orientado a robótica (pipeline declarado en HuggingFace: `robotics`). El adaptador está especializado en predicción de vídeo multi-cámara de tareas de manipulación sobre plataformas Panda y WidowX, con dos vistas (`observation.images.corner_cam` y `observation.images.front_cam`) concatenadas horizontalmente (`hstack`) a 5 Hz. El backbone base usa un transformador de difusión (DiT) de vídeo y un codificador de texto T5-11B, y ya incorpora una fusión LoRA previa de WidowX/Bridge, de modo que cargar el backbone original de Bridge en su lugar sería incorrecto según la propia model card.
+El modelo pertenece a la familia MimicVideo, un pipeline de generación de vídeo condicionada por texto orientado a robótica (pipeline declarado en Hugging Face: `robotics`). El adaptador está especializado en predicción de vídeo multi-cámara de tareas de manipulación sobre plataformas Panda y WidowX, con dos vistas (`observation.images.corner_cam` y `observation.images.front_cam`) concatenadas horizontalmente (`hstack`) a 5 Hz. El backbone base usa un transformador de difusión (DiT) de vídeo y un codificador de texto T5-11B, y ya incorpora una fusión LoRA previa de WidowX/Bridge, de modo que cargar el backbone original de Bridge en su lugar sería incorrecto según la propia model card.
 
 Su relevancia es de nicho y eminentemente investigadora: se publica como pieza reproducible de un experimento de transferencia cross-embodiment (Panda y WidowX) con condicionamiento por textura visual y por 24 instrucciones asociadas a episodios. No tiene métricas publicadas, cero descargas y cero "likes" en el momento de la consulta, y no declara licencia, por lo que debe tratarse como artefacto de investigación sin validación externa.
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Backbone / datos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter400` | LoRA r256, iter400, dominio textura Panda/WidowX, 2 cámaras | `widowx250-video-fused` @ `f0cea76` | no disponible | no disponible | pública en HuggingFace, 0 descargas |
-| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400` | LoRA, iter400, dominio textura con variante Robotiq | no disponible | no disponible | no disponible | pública en HuggingFace |
-| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200` | LoRA, iter200, con UR5e y contacto v2 | no disponible | no disponible | no disponible | pública en HuggingFace |
-| `dreamdifferent/widowx250-video-fused` (backbone base) | DiT de vídeo `fused_video2world_dit`, iter1060 | incluye fusión LoRA WidowX/Bridge previa | no disponible | no disponible | pública en HuggingFace |
+| `dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter400` | LoRA r256, iter400, dominio textura Panda/WidowX, 2 cámaras | `widowx250-video-fused` @ `f0cea76` | no disponible | no disponible | pública en Hugging Face, 0 descargas |
+| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400` | LoRA, iter400, dominio textura con variante Robotiq | no disponible | no disponible | no disponible | pública en Hugging Face |
+| `dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter200` | LoRA, iter200, con UR5e y contacto v2 | no disponible | no disponible | no disponible | pública en Hugging Face |
+| `dreamdifferent/widowx250-video-fused` (backbone base) | DiT de vídeo `fused_video2world_dit`, iter1060 | incluye fusión LoRA WidowX/Bridge previa | no disponible | no disponible | pública en Hugging Face |
 
 Las diferencias entre los tres adaptadores del mismo autor se limitan, según los nombres de repositorio, al brazo robótico adicional (Robotiq, UR5e), al número de iteraciones (200 frente a 400) y al dominio visual. No hay métricas públicas que permitan ordenarlos por calidad, por lo que la comparación es puramente estructural.
 
@@ -103,7 +103,7 @@ Las diferencias entre los tres adaptadores del mismo autor se limitan, según lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter400
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture-video-lora-iter400
 - Backbone requerido: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Dataset de entrenamiento: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-widowx-widowx-texture
 - Bundle de checkpoints MimicVideo: https://huggingface.co/jonpai/mimic-video

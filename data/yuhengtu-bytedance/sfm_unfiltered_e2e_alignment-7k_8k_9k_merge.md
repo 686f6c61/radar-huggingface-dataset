@@ -10,7 +10,7 @@ La relevancia de este modelo radica en que ejemplifica una técnica de fusión d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,8 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -65,8 +65,8 @@ No se dispone de información sobre modelos comparables. Al ser un merge de chec
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge)
-- [HuggingFace: sfm-unfiltered-e2e-alignment-4k-5k-6k-avg (modelo similar)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
+- [Hugging Face: yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge)
+- [Hugging Face: sfm-unfiltered-e2e-alignment-4k-5k-6k-avg (modelo similar)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [FriendliAI: página del modelo 4k-5k-6k-avg](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [mergekit (GitHub)](https://github.com/cg123/mergekit)
 - [Paper del método Linear merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

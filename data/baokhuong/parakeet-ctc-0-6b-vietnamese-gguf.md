@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BaoKhuong/parakeet-ctc-0.6b-vietnamese-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BaoKhuong/parakeet-ctc-0.6b-vietnamese-GGUF
 - Modelo upstream de NVIDIA: https://huggingface.co/nvidia/parakeet-ctc-0.6b-Vietnamese
 - Herramientas CrispASR: https://github.com/CrispStrobe/CrispASR
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

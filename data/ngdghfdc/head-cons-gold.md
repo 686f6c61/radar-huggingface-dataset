@@ -88,10 +88,10 @@ No disponible el resto de la comparativa por ausencia de datos publicados.
 - Riesgo de alucinacion: no se reporta especificamente, pero al ser un clasificador de decision acotado, el riesgo principal es la clasificacion erronea, no la generacion de texto libre.
 - Limitaciones de contexto o idioma: no disponibles. No se documentan idiomas soportados ni longitud de contexto.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base `convaiinnovations/laya` del que deriva.
-- Madurez: el modelo acumula 0 descargas y 0 "likes" en HuggingFace en la fecha de los datos, y no se documenta pipeline ni validacion externa. Debe tratarse como prototipo de investigacion.
+- Madurez: el modelo acumula 0 descargas y 0 "likes" en Hugging Face en la fecha de los datos, y no se documenta pipeline ni validacion externa. Debe tratarse como prototipo de investigacion.
 - Datos de la ficha con fecha de creacion y actualizacion del 27 de septiembre de 2026, segun el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngdghfdc/head-cons-gold
+- Modelo en Hugging Face: https://huggingface.co/ngdghfdc/head-cons-gold
 - Modelo base: https://huggingface.co/convaiinnovations/laya

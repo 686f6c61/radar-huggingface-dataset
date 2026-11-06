@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924` es un checkpoint de pesos de aproximadamente 6,9 mil millones de parametros, publicado por el usuario junbrro en HuggingFace. La nomenclatura y la model card lo sitúan en el ámbito de la robótica y el aprendizaje encarnado (embodied AI): el título indica "Robot BBT + AnyH2R three-task CogAlign cotrain", es decir, un coentrenamiento sobre tres tareas con una alineacion cognitiva (CogAlign) entre un módulo robótico (BBT) y otro componente (AnyH2R / AnyH3).
+`junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924` es un checkpoint de pesos de aproximadamente 6,9 mil millones de parametros, publicado por el usuario junbrro en Hugging Face. La nomenclatura y la model card lo sitúan en el ámbito de la robótica y el aprendizaje encarnado (embodied AI): el título indica "Robot BBT + AnyH2R three-task CogAlign cotrain", es decir, un coentrenamiento sobre tres tareas con una alineacion cognitiva (CogAlign) entre un módulo robótico (BBT) y otro componente (AnyH2R / AnyH3).
 
 La arquitectura aparente combina un modelo de visión-lenguaje (VLM) congelado con un adaptador cognitivo de activación SiLU de 256 unidades y una alineacion FP24 con peso 0,2. El entrenamiento partió de un estado previo (`junhyeong-anyh3-a-30k-260923-r1`) y se detuvo en el paso 30.000, con un horizonte de acciones de 16 pasos (horizon16), agrupacion PRQ15 y batch global de 64. El propio autor advierte que "completar el entrenamiento no es evidencia de éxito en el rollout", por lo que se trata de un artefacto de investigación sin validación publicada.
 
@@ -90,7 +90,7 @@ En la informacion proporcionada no se ofrecen modelos comparables con datos veri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924
 - Modelo relacionado (tokenizador de acciones): https://huggingface.co/junbrro/action-tokenizer-prq30-qcontinuous-v9-openarm1106-egodex1091-100k
 - Modelo relacionado (variante cogalign): https://huggingface.co/junbrro/egopi_bbtoc_robot_v5_20hz_AB_cogalign_natural_sd0_seed42_30k_gas2_actsilu
 - Catalogo de modelos del autor: https://essamamdani.com/ai-models/company/junbrro

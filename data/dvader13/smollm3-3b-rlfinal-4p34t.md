@@ -66,6 +66,6 @@ No se puede establecer una comparativa directa porque el repositorio no contiene
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-rlfinal-4p34t
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-rlfinal-4p34t
 - Modelo base SmolLM3-3B (HuggingFaceTB): https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

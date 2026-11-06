@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos directamente comparables en el ambito
 
 ## Enlaces
 
-- [HuggingFace - philgear/pocketgull-compass-2b](https://huggingface.co/philgear/pocketgull-compass-2b)
+- [Hugging Face - philgear/pocketgull-compass-2b](https://huggingface.co/philgear/pocketgull-compass-2b)
 - [GitHub - philgear/pocketgull](https://github.com/philgear/pocketgull/tree/main)
 - [Sitio web de PocketGull](https://pocketgull.app/)
 - [DOI Zenodo 10.5281/zenodo.20647514](https://doi.org/10.5281/zenodo.20647514)

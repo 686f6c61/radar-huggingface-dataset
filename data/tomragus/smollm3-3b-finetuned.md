@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomragus/smollm3-3b-finetuned` es un ajuste fino (fine-tune) del modelo base `HuggingFaceTB/SmolLM3-3B-Base`, publicado por el usuario tomragus en HuggingFace. Se trata de un modelo de 3.000 millones de parámetros obtenido mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace, según declara la propia model card. El repositorio se creó el 11 de septiembre de 2026 y se actualizó al día siguiente, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+`tomragus/smollm3-3b-finetuned` es un ajuste fino (fine-tune) del modelo base `HuggingFaceTB/SmolLM3-3B-Base`, publicado por el usuario tomragus en Hugging Face. Se trata de un modelo de 3.000 millones de parámetros obtenido mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face, según declara la propia model card. El repositorio se creó el 11 de septiembre de 2026 y se actualizó al día siguiente, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de ajuste supervisado de un modelo pequeño de la familia SmolLM3, una categoría de modelos de 3B que se está consolidando para despliegue en hardware de consumo y en entornos con restricciones de VRAM. Al derivar de SmolLM3-3B-Base, hereda la arquitectura y la ventana de contexto del modelo base, cuyos detalles técnicos deben consultarse en la model card original de HuggingFaceTB, no en este repositorio.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento verificados para este modelo ni para sus alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomragus/smollm3-3b-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tomragus/smollm3-3b-finetuned
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Libreria TRL (usada para el entrenamiento): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este modelo en la busqueda web realizada.

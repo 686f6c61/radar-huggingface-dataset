@@ -71,9 +71,9 @@ Latencia mediana declarada: aproximadamente 23 ms por consulta en cuatro hilos d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vemployee/miiq-intent-e5-small | 117,6 M | no disponible | Clasificacion de intencion (14 clases, en/ar) | MIT | HuggingFace |
-| intfloat/multilingual-e5-small (base) | 117,6 M | no disponible | Embeddings multilingues | MIT | HuggingFace |
-| Clasificadores de intencion genericos (p. ej. fine-tunes de BERT/DistilBERT) | 66-110 M tipico | no disponible | Clasificacion de intencion generica | variable | HuggingFace |
+| Vemployee/miiq-intent-e5-small | 117,6 M | no disponible | Clasificacion de intencion (14 clases, en/ar) | MIT | Hugging Face |
+| intfloat/multilingual-e5-small (base) | 117,6 M | no disponible | Embeddings multilingues | MIT | Hugging Face |
+| Clasificadores de intencion genericos (p. ej. fine-tunes de BERT/DistilBERT) | 66-110 M tipico | no disponible | Clasificacion de intencion generica | variable | Hugging Face |
 
 La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada; el modelo base y los fine-tunes genericos no publican metricas equiparables sobre este esquema de 14 intenciones.
 
@@ -90,5 +90,5 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vemployee/miiq-intent-e5-small
+- Modelo en Hugging Face: https://huggingface.co/Vemployee/miiq-intent-e5-small
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como Warumauchimmer/freellm-api es un artefacto publicado en HuggingFace por el usuario Warumauchimmer el 6 de octubre de 2026, con licencia MIT y etiquetas que unicamente declaran la licencia y la region de publicacion (region:us). No declara pipeline de inferencia, no declara idiomas soportados y no acumula ninguna descarga ni ninguna marca de "me gusta" en el momento de la consulta.
+El repositorio identificado como Warumauchimmer/freellm-api es un artefacto publicado en Hugging Face por el usuario Warumauchimmer el 6 de octubre de 2026, con licencia MIT y etiquetas que unicamente declaran la licencia y la region de publicacion (region:us). No declara pipeline de inferencia, no declara idiomas soportados y no acumula ninguna descarga ni ninguna marca de "me gusta" en el momento de la consulta.
 
 La model card asociada no contiene informacion tecnica: el unico contenido recuperado es la cabecera de metadatos con la licencia MIT, sin descripcion del modelo, sin tabla de especificaciones, sin datos de entrenamiento y sin resultados de evaluacion. El propio identificador del repositorio ("freellm-api") sugiere que podria tratarse de un artefacto de tipo API o de codigo auxiliar mas que de un modelo con pesos publicados, pero esto es una interpretacion del nombre y no un dato confirmado por el autor.
 
@@ -80,6 +80,6 @@ No disponible. Sin arquitectura, numero de parametros, contexto ni resultados de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Warumauchimmer/freellm-api
+- Repositorio en Hugging Face: https://huggingface.co/Warumauchimmer/freellm-api
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este artefacto.

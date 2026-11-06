@@ -109,10 +109,10 @@ Los errores estandar reportados son de aproximadamente 0,4 / 1,0 / 1,2 / 1,1 pun
 
 | Modelo | Parametros | Contexto | Media 4 tareas | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Whetstone-124M continued | 123.694.080 | 2.048 | 41,0 | Apache-2.0 | HuggingFace |
+| Whetstone-124M continued | 123.694.080 | 2.048 | 41,0 | Apache-2.0 | Hugging Face |
 | Whetstone-124M baseline | ~123,7 M | 2.048 | 39,4 | Apache-2.0 | checkpoint previo |
-| GPT-2 124M | ~124 M | 1.024 | 40,3 | MIT | OpenAI / HuggingFace |
-| SmolLM-135M | 135 M | 2.048 | no disponible en esta ficha (se cita una ventaja de 9,5 puntos sobre Whetstone) | Apache-2.0 | HuggingFace |
+| GPT-2 124M | ~124 M | 1.024 | 40,3 | MIT | OpenAI / Hugging Face |
+| SmolLM-135M | 135 M | 2.048 | no disponible en esta ficha (se cita una ventaja de 9,5 puntos sobre Whetstone) | Apache-2.0 | Hugging Face |
 
 La comparacion directa solo puede hacerse sobre las cuatro tareas zero-shot publicadas. No hay datos comparables de conocimiento, codigo o QA en la informacion disponible.
 
@@ -131,7 +131,7 @@ La comparacion directa solo puede hacerse sobre las cuatro tareas zero-shot publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harsimran2004/whetstone-124m-continued-4b
+- Modelo en Hugging Face: https://huggingface.co/harsimran2004/whetstone-124m-continued-4b
 - `training_config.json` (receta de entrenamiento saneada), dentro del repositorio del modelo.
 - `training_metrics.json` (metricas del run deduplicadas), dentro del repositorio del modelo.
 - `evaluation.json` (evidencia de evaluacion y descontaminacion), dentro del repositorio del modelo.

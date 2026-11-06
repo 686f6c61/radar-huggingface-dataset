@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `Qwen/Qwen3-4B`. Lo desarrolla el usuario de HuggingFace yeniguno y esta especializado en la resolucion de preguntas de opcion multiple de examenes universitarios turcos (tipo examen de acceso a la universidad). Su rasgo distintivo es que genera primero un razonamiento explicito (una cadena de pensamiento) y termina la respuesta con el formato fijo `"Final answer: X"`, lo que facilita el parseo automatico de la opcion elegida.
+El modelo `yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `Qwen/Qwen3-4B`. Lo desarrolla el usuario de Hugging Face yeniguno y esta especializado en la resolucion de preguntas de opcion multiple de examenes universitarios turcos (tipo examen de acceso a la universidad). Su rasgo distintivo es que genera primero un razonamiento explicito (una cadena de pensamiento) y termina la respuesta con el formato fijo `"Final answer: X"`, lo que facilita el parseo automatico de la opcion elegida.
 
 La relevancia de este adaptador radica en que aplica destilacion de racionales (*rationale distillation*): el ajuste se ha realizado a partir de los razonamientos de un modelo profesor, de modo que el estudiante aprende no solo la respuesta correcta sino el proceso que lleva a ella. Esto lo hace util como componente de sistemas de evaluacion automatica, tutoria o generacion de explicaciones pedagogicas en turco, un idioma con relativamente pocos recursos de este tipo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en examenes turcos |
 |---|---|---|---|---|---|
-| yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam (LoRA) | ~4.000 M (base) | 32.768 nativo (base) | No disponible | HuggingFace, PEFT | No disponible |
-| Qwen/Qwen3-4B (modelo base) | ~4.000 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace | No disponible |
-| Qwen/Qwen3-1.7B | ~1.700 M | 32.768 nativo | Apache 2.0 | HuggingFace | No disponible |
-| Llama 3.2 3B Instruct | ~3.000 M | 128.000 | Llama 3.2 Community | HuggingFace, Meta | No disponible |
+| yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam (LoRA) | ~4.000 M (base) | 32.768 nativo (base) | No disponible | Hugging Face, PEFT | No disponible |
+| Qwen/Qwen3-4B (modelo base) | ~4.000 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face | No disponible |
+| Qwen/Qwen3-1.7B | ~1.700 M | 32.768 nativo | Apache 2.0 | Hugging Face | No disponible |
+| Llama 3.2 3B Instruct | ~3.000 M | 128.000 | Llama 3.2 Community | Hugging Face, Meta | No disponible |
 
 No se dispone de datos de rendimiento comparativo en tareas de examen turco para ninguno de estos modelos en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo en tareas de examen turco para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam
+- Modelo en Hugging Face: https://huggingface.co/yeniguno/qwen3-4b-rationale-lora-ft-turkish-exam
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Biblioteca PEFT: https://github.com/huggingface/peft

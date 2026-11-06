@@ -86,7 +86,7 @@ La comparacion cualitativa es limitada: el artefacto aqui descrito aporta ventaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuldashev222/whisper-small-uz-v1-ct2
+- Modelo en Hugging Face: https://huggingface.co/yuldashev222/whisper-small-uz-v1-ct2
 - Modelo base: https://huggingface.co/OvozifyLabs/whisper-small-uz-v1
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper

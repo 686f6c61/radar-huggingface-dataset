@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Ani223/Hhani_skz es una publicacion alojada en HuggingFace por el usuario Ani223, con licencia Apache 2.0 y un tamano de repositorio de aproximadamente 0,1 GB. No declara pipeline de inferencia, idiomas soportados ni etiquetas descriptivas mas alla de la licencia y la region (us). La model card asociada contiene unicamente el bloque de metadatos con la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso.
+El repositorio Ani223/Hhani_skz es una publicacion alojada en Hugging Face por el usuario Ani223, con licencia Apache 2.0 y un tamano de repositorio de aproximadamente 0,1 GB. No declara pipeline de inferencia, idiomas soportados ni etiquetas descriptivas mas alla de la licencia y la region (us). La model card asociada contiene unicamente el bloque de metadatos con la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso.
 
 En el momento de la consulta acumula 0 descargas y 0 likes, y las marcas temporales de creacion y ultima actualizacion son del 11 de octubre de 2026, con apenas un minuto de diferencia entre ambas. Ese patron es habitual en repositorios de prueba, subidas automaticas o espacios personales sin publicacion efectiva.
 
@@ -89,5 +89,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ani223/Hhani_skz
+- Repositorio en Hugging Face: https://huggingface.co/Ani223/Hhani_skz
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

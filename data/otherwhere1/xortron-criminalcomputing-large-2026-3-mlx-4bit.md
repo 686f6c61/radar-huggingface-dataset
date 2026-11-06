@@ -70,11 +70,11 @@ Los datos de rendimiento del modelo no estan publicados, de modo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XORTRON.CriminalComputing.LARGE.2026.3-mlx-4Bit | 122,6 mil millones | no disponible | WTFPL | MLX 4 bits en HuggingFace |
+| XORTRON.CriminalComputing.LARGE.2026.3-mlx-4Bit | 122,6 mil millones | no disponible | WTFPL | MLX 4 bits en Hugging Face |
 | Mistral Large 2 | 123 mil millones | 128k | Mistral Research License | API y pesos bajo registro |
-| Llama 3.3 70B Instruct | 70 mil millones | 128k | Llama 3.3 Community License | Pesos abiertos en HuggingFace |
-| Qwen2.5 72B Instruct | 72 mil millones | 128k | Qwen License | Pesos abiertos en HuggingFace |
-| Mixtral 8x22B | 141 mil millones totales, 39 mil millones activos (MoE) | 64k | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Llama 3.3 70B Instruct | 70 mil millones | 128k | Llama 3.3 Community License | Pesos abiertos en Hugging Face |
+| Qwen2.5 72B Instruct | 72 mil millones | 128k | Qwen License | Pesos abiertos en Hugging Face |
+| Mixtral 8x22B | 141 mil millones totales, 39 mil millones activos (MoE) | 64k | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Comparativa de rendimiento: no disponible para el modelo objeto de esta ficha, por lo que no es posible establecer una comparacion cuantitativa fiable con las alternativas.
 

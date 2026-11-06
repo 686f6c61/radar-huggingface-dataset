@@ -73,8 +73,8 @@ En BPIC 2017 el transformer ajustado mejora a la GNN en 0,6 puntos de accuracy y
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrefixGNN (este repo) | ~160k | ultimos 100 eventos | GNN GINEConv por log | MIT | HuggingFace |
-| EventTransformer FT (este repo) | ~27M | ultimos 100 eventos (ventana 256 en preentrenamiento) | transformer encoder preentrenado multi-log y ajustado | MIT | HuggingFace |
+| PrefixGNN (este repo) | ~160k | ultimos 100 eventos | GNN GINEConv por log | MIT | Hugging Face |
+| EventTransformer FT (este repo) | ~27M | ultimos 100 eventos (ventana 256 en preentrenamiento) | transformer encoder preentrenado multi-log y ajustado | MIT | Hugging Face |
 | Baselines del estudio (majority, argmax-1, MLP-last10) | no disponible | ultimas 10 actividades (MLP) | estadistico / MLP | no aplica | implementados en el estudio |
 | Otros modelos de next-activity de la literatura | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos de terceros comparables en la informacion proporcionada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polifemus/prefix-next-activity
+- Modelo en Hugging Face: https://huggingface.co/Polifemus/prefix-next-activity
 - Paper referenciado (arXiv:2503.03197): https://arxiv.org/abs/2503.03197
 - Paper referenciado (arXiv:2607.27797): https://arxiv.org/abs/2607.27797
 - Paper referenciado (arXiv:2606.15868): https://arxiv.org/abs/2606.15868

@@ -76,9 +76,9 @@ El texto de la model card queda cortado tras la frase "The RL gate set was re", 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| andyx10/oracle-lens-qwen3-4b | Adaptador LoRA de interpretabilidad (oracle lens) | Base ~4B + LoRA r16 | Heredado del base (no disponible) | FVE de gate 0,1804 en el pico; retrieval@1 del AR 0,817 | No disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| andyx10/oracle-lens-qwen3-4b | Adaptador LoRA de interpretabilidad (oracle lens) | Base ~4B + LoRA r16 | Heredado del base (no disponible) | FVE de gate 0,1804 en el pico; retrieval@1 del AR 0,817 | No disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Modelo de referencia oracle lens de 27B (mencionado en la model card) | Oracle lens sobre modelo mayor, con *hook* en el residual del bloque 45 | 27B (segun la model card) | No disponible | No disponible | No disponible | No se indica identificador ni enlace en la ficha |
-| Qwen/Qwen3-4B (modelo base) | LLM generativo decoder-only denso | ~4B | No disponible en esta consulta | Benchmarks publicos del modelo base, no comparables con un lens | Licencia propia del modelo base | HuggingFace |
+| Qwen/Qwen3-4B (modelo base) | LLM generativo decoder-only denso | ~4B | No disponible en esta consulta | Benchmarks publicos del modelo base, no comparables con un lens | Licencia propia del modelo base | Hugging Face |
 | Otros adaptadores de interpretabilidad comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros adaptadores oracle lens publicados para modelos de 4B que permitan una comparacion directa de metricas.
@@ -96,12 +96,12 @@ No se dispone de informacion sobre otros adaptadores oracle lens publicados para
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. Conviene contactar con el autor o revisar el repositorio antes de integrarlo en un producto.
 - Madurez: 0 descargas y 0 likes, sin *pipeline* declarado. Es un artefacto de investigacion reciente (creado el 22 de septiembre de 2026, actualizado el 28 de septiembre de 2026), sin senales de uso en produccion.
 - Repositorio de 82 GB: descargar el arbol completo es costoso e innecesario si solo se quiere generar lecturas, ya que `reconstructor/` y `whitening/` solo hacen falta para puntuar reconstrucciones.
-- Reproducibilidad: la model card recomienda fijar un commit concreto de HuggingFace (`revision`) tanto en la descarga del helper como en `load_oracle`.
+- Reproducibilidad: la model card recomienda fijar un commit concreto de Hugging Face (`revision`) tanto en la descarga del helper como en `load_oracle`.
 - La model card esta truncada en el apartado de resultados, por lo que parte de la metodologia de evaluacion no esta disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyx10/oracle-lens-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/andyx10/oracle-lens-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del pipeline de entrenamiento adaptado: https://github.com/agu18dec/olens_draft/tree/a32590085a6070d75f950155d3c2b3db3eec97ef
 - Articulo con la descripcion del metodo (apendice A.9.2), *Verbalizable Representations Form a Global Workspace in Language Models*: https://transformer-circuits.pub/2026/workspace/index.html

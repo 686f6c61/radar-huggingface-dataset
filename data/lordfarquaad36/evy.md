@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Evy es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario lordfarquaad36 en HuggingFace. El adaptador se entrena sobre los pesos de Krea 2 RAW y esta pensado para ser utilizado tanto sobre ese checkpoint base como sobre la variante destilada Krea 2 Turbo. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `vgl woman`, que el autor asocia a un rostro o identidad concreta (la model card original lo vincula a gallium422/emma-vigeland).
+Evy es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario lordfarquaad36 en Hugging Face. El adaptador se entrena sobre los pesos de Krea 2 RAW y esta pensado para ser utilizado tanto sobre ese checkpoint base como sobre la variante destilada Krea 2 Turbo. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `vgl woman`, que el autor asocia a un rostro o identidad concreta (la model card original lo vincula a gallium422/emma-vigeland).
 
 El repositorio es muy ligero (0,8 GB), lo que es coherente con un adaptador LoRA y no con un modelo completo. Se distribuye bajo licencia Apache 2.0 y en formato compatible con la libreria diffusers. No se especifican idiomas soportados, parametros totales ni longitud de contexto, ya que no se trata de un modelo de lenguaje sino de un modulo de personalizacion visual sobre un modelo de difusion.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lordfarquaad36/evy
+- Hugging Face: https://huggingface.co/lordfarquaad36/evy
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Referencia citada en la model card: https://huggingface.co/gallium422/emma-vigeland

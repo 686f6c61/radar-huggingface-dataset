@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-Mini-Reasoning-Coder es un checkpoint publicado por el usuario kazako5er en HuggingFace el 10 de septiembre de 2026, con licencia MIT y pesos en formato safetensors. Por el nombre y la etiqueta `qwen3` del repositorio, todo apunta a un ajuste fino (fine-tuning) del modelo base Qwen3-0.6B de Alibaba, orientado a tareas de razonamiento y generacion de codigo, aunque la model card no confirma el modelo de partida, el dataset ni el procedimiento de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion recien subida y sin validacion por parte de la comunidad.
+Qwen3-0.6B-Mini-Reasoning-Coder es un checkpoint publicado por el usuario kazako5er en Hugging Face el 10 de septiembre de 2026, con licencia MIT y pesos en formato safetensors. Por el nombre y la etiqueta `qwen3` del repositorio, todo apunta a un ajuste fino (fine-tuning) del modelo base Qwen3-0.6B de Alibaba, orientado a tareas de razonamiento y generacion de codigo, aunque la model card no confirma el modelo de partida, el dataset ni el procedimiento de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion recien subida y sin validacion por parte de la comunidad.
 
 El dato mas solido disponible es el recuento real de parametros extraido de los ficheros safetensors: 596.049.920 parametros, es decir, aproximadamente 0,6 mil millones. El tamano total del repositorio es de 2,4 GB, cifra coherente con pesos en fp32 (~2,38 GB) o con la coexistencia de varios ficheros de pesos, algo que no puede confirmarse con la informacion disponible.
 
@@ -71,7 +71,7 @@ Las cifras de memoria que se indican a continuacion son estimaciones calculadas 
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para inferencia en bf16, incluidas NVIDIA GTX 1650, RTX 3050, RTX 4060 y superiores. Para entrenamiento o fine-tuning completo con Adam en fp32 conviene disponer de 16 GB o mas (RTX 4090, A100, H100); con LoRA basta una GPU de 8-12 GB.
 - Cabe en GPU consumer: si. Es un modelo que entra sin problema en tarjetas de gama de entrada y media, y en bf16 o cuantizado puede residir integramente en memoria.
 - CPU y edge: es viable su ejecucion en CPU con llama.cpp o Ollama gracias al reducido numero de parametros; tambien es candidato para dispositivos con memoria unificada.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, transformers de HuggingFace y ONNX Runtime. Los formatos GGUF y las cuantizaciones AWQ/GPTQ no estan publicados por el autor, por lo que habria que generarlos localmente.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp, Ollama, transformers de Hugging Face y ONNX Runtime. Los formatos GGUF y las cuantizaciones AWQ/GPTQ no estan publicados por el autor, por lo que habria que generarlos localmente.
 - Latencia y throughput: no disponibles como medicion sobre este checkpoint. Como referencia orientativa de la categoria de ~0,6B, cabe esperar decenas de miles de tokens por segundo en una GPU moderna con vLLM en lotes grandes, y del orden de decenas de tokens por segundo en CPU.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-0.6B-Mini-Reasoning-Coder | 596.049.920 | no disponible | MIT | HuggingFace, 0 descargas |
+| Qwen3-0.6B-Mini-Reasoning-Coder | 596.049.920 | no disponible | MIT | Hugging Face, 0 descargas |
 | Qwen3-0.6B (base, presumiblemente) | ~0,6B | no disponible en esta busqueda | Apache 2.0 segun la familia Qwen3, sin verificar aqui | ampliamente distribuido |
 | Qwen2.5-0.5B / 1.5B | ~0,5B / ~1,5B | no disponible en esta busqueda | Apache 2.0, sin verificar aqui | ampliamente distribuido |
 | SmolLM2-360M / TinyLlama-1.1B | ~0,36B / ~1,1B | no disponible en esta busqueda | Apache 2.0, sin verificar aqui | ampliamente distribuido |
@@ -102,7 +102,7 @@ La diferencia principal frente a esos modelos es la trazabilidad: los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder
+- Modelo en Hugging Face: https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder
 - Paper, blog o repositorio asociado: no disponible
 - Demo o spaces relacionados: no disponible
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda realizada no guardan ninguna relacion con este modelo (contenido de foros sobre aire comprimido, servicios de correo y bloqueos de cuentas). No se ha localizado ninguna fuente externa que documente este checkpoint.

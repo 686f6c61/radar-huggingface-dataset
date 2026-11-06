@@ -2,7 +2,7 @@
 
 ## Resumen
 
-McConversationBot-V2-62.1M es un modelo publicado en HuggingFace por el usuario ILikeOranges bajo el identificador `ILikeOranges/McConversationBot-V2-62.1M`. Por el nombre del repositorio y el sufijo numérico se deduce un tamaño de aproximadamente 62,1 millones de parámetros y una orientación a conversación, probablemente vinculada al dominio de Minecraft ("Mc"), si bien esta interpretación no está confirmada por ninguna documentación oficial del autor. En el momento de la consulta el repositorio no incluye pipeline declarado, licencia, idiomas ni ficha técnica, y acumula 0 descargas y 1 like.
+McConversationBot-V2-62.1M es un modelo publicado en Hugging Face por el usuario ILikeOranges bajo el identificador `ILikeOranges/McConversationBot-V2-62.1M`. Por el nombre del repositorio y el sufijo numérico se deduce un tamaño de aproximadamente 62,1 millones de parámetros y una orientación a conversación, probablemente vinculada al dominio de Minecraft ("Mc"), si bien esta interpretación no está confirmada por ninguna documentación oficial del autor. En el momento de la consulta el repositorio no incluye pipeline declarado, licencia, idiomas ni ficha técnica, y acumula 0 descargas y 1 like.
 
 La relevancia del modelo es, a día de hoy, muy limitada desde el punto de vista de la evaluación técnica: no hay información publicada sobre arquitectura, datos de entrenamiento, tokenizador ni resultados de evaluación. Un modelo de ~62 M de parámetros se sitúa en la franja de los modelos pequeños, aptos para inferencia en CPU o en GPUs de consumo con cuantización agresiva, pero sin datos verificables no es posible confirmar su calidad, su ventana de contexto ni su comportamiento multilingüe.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ILikeOranges/McConversationBot-V2-62.1M | 62,1 M (deducido) | No disponible | No disponible | HuggingFace, 0 descargas |
+| ILikeOranges/McConversationBot-V2-62.1M | 62,1 M (deducido) | No disponible | No disponible | Hugging Face, 0 descargas |
 | Alternativas de ~60-70 M | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría, ya que no se conocen ni la arquitectura ni los resultados de evaluación de este repositorio. Cualquier comparación con modelos pequeños consolidados (por ejemplo, variantes de la familia GPT-2 small o modelos de diálogo de tamaño similar) sería especulativa y no se incluye.
@@ -80,6 +80,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ILikeOranges/McConversationBot-V2-62.1M
+- Repositorio en Hugging Face: https://huggingface.co/ILikeOranges/McConversationBot-V2-62.1M
 - Perfil del autor: https://huggingface.co/ILikeOranges
 - Paper, blog, repositorio de código o demo: no disponibles.

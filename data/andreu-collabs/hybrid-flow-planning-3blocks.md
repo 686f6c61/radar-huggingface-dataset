@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: andreu-collabs/hybrid-flow-planning-3blocks](https://huggingface.co/andreu-collabs/hybrid-flow-planning-3blocks)
+- [Hugging Face: andreu-collabs/hybrid-flow-planning-3blocks](https://huggingface.co/andreu-collabs/hybrid-flow-planning-3blocks)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web. El código fuente se menciona como el repositorio `hybrid-flow-planning`, pero no se proporciona una URL directa en la información disponible.

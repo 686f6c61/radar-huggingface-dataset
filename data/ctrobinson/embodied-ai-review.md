@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ctrobinson/embodied-ai-review` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre IA encarnada (embodied AI) publicado en HuggingFace bajo la etiqueta `research-notes`. El autor, `ctrobinson`, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, sin checkpoint entrenado, sin codigo liberado y sin resultados de benchmarks. El repositorio contiene unicamente dos ficheros Markdown (`summary.md` y `README.md`) y no incluye pesos funcionales ni pipeline de inferencia.
+`ctrobinson/embodied-ai-review` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre IA encarnada (embodied AI) publicado en Hugging Face bajo la etiqueta `research-notes`. El autor, `ctrobinson`, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, sin checkpoint entrenado, sin codigo liberado y sin resultados de benchmarks. El repositorio contiene unicamente dos ficheros Markdown (`summary.md` y `README.md`) y no incluye pesos funcionales ni pipeline de inferencia.
 
 El dato de "49.600 parametros totales" que aparece en los metadatos de safetensors corresponde a un artefacto residual de muy pequeno tamano (el repositorio ocupa 0,0 GB), no a un modelo neuronal con capacidad generativa. La arquitectura declarada en las etiquetas es `transformer`, pero no hay evidencia en la model card de que exista un transformer entrenado con esos pesos; se trata de una clasificacion automatica de metadatos.
 
@@ -73,7 +73,7 @@ No disponible. No existen modelos comparables en la categoria de "notas de inves
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ctrobinson/embodied-ai-review
+- Repositorio en Hugging Face: https://huggingface.co/ctrobinson/embodied-ai-review
 - Fichero principal de la nota: `summary.md` dentro del repositorio
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Licencia cc-by-4.0: https://creativecommons.org/licenses/by/4.0/

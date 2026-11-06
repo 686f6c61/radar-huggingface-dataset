@@ -70,9 +70,9 @@ No se ha proporcionado información sobre modelos comparables en la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shuaishuaicdp/Game2World
+- Repositorio Hugging Face: https://huggingface.co/shuaishuaicdp/Game2World
 - Repositorio GitHub del proyecto: https://github.com/Dongping-Chen/Game2World
-- Perfil del autor en HuggingFace: https://huggingface.co/shuaishuaicdp
+- Perfil del autor en Hugging Face: https://huggingface.co/shuaishuaicdp
 - Dataset GUI-World (relacionado): https://huggingface.co/datasets/shuaishuaicdp/GUI-World/tree/main
 
 Nota: no se han encontrado papers, blogs o demos adicionales en la búsqueda web.

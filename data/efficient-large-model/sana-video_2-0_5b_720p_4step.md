@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicos en la informacion proporcionada. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
 - Modelo base (50 pasos): https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p
 - Pagina del proyecto: https://nvlabs.github.io/Sana/Video2/
 - Documentacion: https://nvlabs.github.io/Sana/docs/sana_video2/

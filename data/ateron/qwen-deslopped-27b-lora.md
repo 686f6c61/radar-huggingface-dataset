@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Deslopped-27B-Lora es un adaptador LoRA publicado por el usuario Ateron en HuggingFace, derivado de la familia Qwen y orientado a roleplay (RP) de propósito general. A pesar de la denominación "27B" en el nombre del repositorio, los pesos reales en formato safetensors suman 59.768.832 parámetros (aproximadamente 59,8 millones), lo que corresponde a un adaptador LoRA y no a un modelo base completo de 27.000 millones de parámetros. El tamaño total del repositorio es de 0,1 GB, coherente con un adaptador de bajo rango.
+Qwen-Deslopped-27B-Lora es un adaptador LoRA publicado por el usuario Ateron en Hugging Face, derivado de la familia Qwen y orientado a roleplay (RP) de propósito general. A pesar de la denominación "27B" en el nombre del repositorio, los pesos reales en formato safetensors suman 59.768.832 parámetros (aproximadamente 59,8 millones), lo que corresponde a un adaptador LoRA y no a un modelo base completo de 27.000 millones de parámetros. El tamaño total del repositorio es de 0,1 GB, coherente con un adaptador de bajo rango.
 
 La model card es extremadamente escueta: se limita a indicar que se trata de "otra prueba de testeo para RP regular" y que, en pruebas breves, mejoró la calidad de escritura y la creatividad en general. No se documentan datos de entrenamiento, hiperparámetros del LoRA, modelo base exacto, composición del dataset ni metodología de evaluación. El repositorio incluye la etiqueta `gguf`, lo que sugiere la presencia de artefactos cuantizados para su uso con llama.cpp u Ollama.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ateron/Qwen-Deslopped-27B-Lora
+- Hugging Face: https://huggingface.co/Ateron/Qwen-Deslopped-27B-Lora
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

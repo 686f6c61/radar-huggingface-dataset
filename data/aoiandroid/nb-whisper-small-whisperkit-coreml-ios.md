@@ -84,7 +84,7 @@ La diferencia principal frente al modelo base y frente a whisper-small de OpenAI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aoiandroid/nb-whisper-small-whisperkit-coreml-ios
+- Modelo en Hugging Face: https://huggingface.co/aoiandroid/nb-whisper-small-whisperkit-coreml-ios
 - Modelo base (NbAiLab/nb-whisper-small): https://huggingface.co/NbAiLab/nb-whisper-small
 - Conversion Core ML original (Barrymanalow/nb-whisper-coreml): https://huggingface.co/Barrymanalow/nb-whisper-coreml
 - WhisperKit / Argmax OSS Swift: https://github.com/argmaxinc/argmax-oss-swift

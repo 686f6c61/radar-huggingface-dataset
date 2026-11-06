@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scenetrace-router-135m` es un adaptador LoRA de rango 8 entrenado sobre `HuggingFaceTB/SmolLM2-135M-Instruct` por el autor Ineeoluwa (usuario de HuggingFace) para una tarea muy concreta: el enrutado restringido a cinco herramientas de un espacio de trabajo de vídeo (`search`, `library`, `count`, `export`, `inspect`). No es un modelo de propósito general ni un VLM: es un cabezal de política que puntúa cinco completaciones fijas y elige una, dentro de la aplicación SceneTrace. El modelo base aporta los 135 millones de parámetros; el adaptador solo añade pesos de bajo rango.
+`scenetrace-router-135m` es un adaptador LoRA de rango 8 entrenado sobre `HuggingFaceTB/SmolLM2-135M-Instruct` por el autor Ineeoluwa (usuario de Hugging Face) para una tarea muy concreta: el enrutado restringido a cinco herramientas de un espacio de trabajo de vídeo (`search`, `library`, `count`, `export`, `inspect`). No es un modelo de propósito general ni un VLM: es un cabezal de política que puntúa cinco completaciones fijas y elige una, dentro de la aplicación SceneTrace. El modelo base aporta los 135 millones de parámetros; el adaptador solo añade pesos de bajo rango.
 
 El interés técnico está en el método de entrenamiento y en la honestidad metodológica de la model card: tres épocas de SFT con pérdida únicamente sobre la completación, seguidas de 60 pasos de GRPO con acciones finitas (grupo de 6, temperatura 3, dos actualizaciones con recorte por rollout, recompensa de enrutado exacta y penalización KL contra la referencia SFT). La etapa publicada es la de SFT, y se incluyen los checkpoints de comparación (`comparisons/sft` y `comparisons/grpo`) junto con el historial de entrenamiento.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scenetrace-router-135m (SFT) | 135 M + LoRA rango 8 | no disponible | 40/40 (100 %) en held-out sintetico | Apache 2.0 | Adaptador publicado en HuggingFace |
+| scenetrace-router-135m (SFT) | 135 M + LoRA rango 8 | no disponible | 40/40 (100 %) en held-out sintetico | Apache 2.0 | Adaptador publicado en Hugging Face |
 | scenetrace-router-135m (GRPO) | 135 M + LoRA rango 8 | no disponible | 40/40 (100 %) en held-out sintetico | Apache 2.0 | Checkpoint en `comparisons/grpo` |
-| SmolLM2-135M-Instruct (base) | 135 M | no disponible en la informacion proporcionada | 8/40 (20 %) en held-out sintetico | Apache 2.0 | HuggingFace |
+| SmolLM2-135M-Instruct (base) | 135 M | no disponible en la informacion proporcionada | 8/40 (20 %) en held-out sintetico | Apache 2.0 | Hugging Face |
 
 No se dispone de datos para comparar con otras familias de modelos de enrutado (por ejemplo, clasificadores dedicados o routers basados en LLM de mayor tamaño) en la informacion proporcionada. La comparación con los resultados de la busqueda web (listas de frameworks de routing como `awesome-model-routing`, OpenRouter o NightRouter) no es posible: no aportan métricas sobre esta tarea.
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con otras familias de modelos de enrutado (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ineeoluwa/scenetrace-router-135m
+- Modelo en Hugging Face: https://huggingface.co/Ineeoluwa/scenetrace-router-135m
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ineeoluwa/scenetrace-tool-traces
 - Codigo fuente e implementacion de inferencia: https://github.com/Eunini/scenetrace
 - Demo del espacio de trabajo: https://scenetrace-inioluwa.vercel.app

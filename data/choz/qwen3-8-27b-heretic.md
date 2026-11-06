@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo fiables, por lo que no es posi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/choz/Qwen3.8-27B-heretic
+- Repositorio Hugging Face: https://huggingface.co/choz/Qwen3.8-27B-heretic
 - Proyecto Heretic: https://heretic-project.org
 - Qwen Cloud (servicio oficial del modelo base): https://www.qwencloud.com
 - Documentación de Qwen3.8-27B (Overview): https://www.qwencloud.com/models/qwen3.8-27b

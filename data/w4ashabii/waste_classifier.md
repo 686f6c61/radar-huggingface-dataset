@@ -45,7 +45,7 @@ Los detalles de entrenamiento documentados son: 20 épocas con paciencia de earl
 - Clasificación por lotes de archivos históricos de imágenes: gracias a la predicción por lotes sobre carpetas completas, se puede procesar un conjunto de fotografías ya recolectado y generar un CSV con ruta, clase y confianza para su posterior análisis estadístico.
 - Módulo de etiquetado asistido: usar la confianza devuelta (`top1conf`) para preetiquetar imágenes y enviar solo los casos de baja confianza a revisión humana, reduciendo el coste de anotación de nuevos datasets.
 - Base para ajuste fino específico de dominio: al ser un checkpoint de ~10 MB y entrenarse en unos 140 segundos en una GPU de gama media, sirve como punto de partida para transfer learning en flujos de residuos concretos (por ejemplo, residuos de una planta específica).
-- Demostraciones docentes: el pipeline completo (descarga desde HuggingFace, `YOLO(weights)`, `predict`) cabe en unas pocas líneas, lo que lo hace adecuado para prácticas de visión por computador en cursos.
+- Demostraciones docentes: el pipeline completo (descarga desde Hugging Face, `YOLO(weights)`, `predict`) cabe en unas pocas líneas, lo que lo hace adecuado para prácticas de visión por computador en cursos.
 - Prueba de concepto en dispositivos de borde: dado el tamanio reducido del checkpoint, es razonable evaluar su despliegue en una Jetson o en una Raspberry Pi con acelerador, siempre que se valide antes la degradación por cambio de dominio.
 - Filtro previo en un pipeline mayor: actuar como primera etapa barata que separa residuo biodegradable de no biodegradable antes de un clasificador multietiqueta más costoso que identifique material concreto.
 
@@ -100,7 +100,7 @@ La comparación cuantitativa no es posible porque no hay resultados publicados d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/W4ashabii/waste_classifier
+- Modelo en Hugging Face: https://huggingface.co/W4ashabii/waste_classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/Pramudit/Waste_SIP_Dataset
 - Documentación de clasificación de Ultralytics: https://docs.ultralytics.com/tasks/classify/
 - Repositorio de Ultralytics: https://github.com/ultralytics/ultralytics

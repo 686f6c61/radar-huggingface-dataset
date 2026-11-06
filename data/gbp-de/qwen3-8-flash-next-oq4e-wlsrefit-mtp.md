@@ -99,7 +99,7 @@ No se dispone de informacion suficiente para comparar este checkpoint con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ4e-WLSRefit-MTP
+- Modelo en Hugging Face: https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ4e-WLSRefit-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base (Qwen Community License 1.0): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Software de cuantizacion oMLX: https://github.com/jundot/omlx

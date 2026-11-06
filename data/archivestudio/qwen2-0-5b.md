@@ -84,10 +84,10 @@ Resultados publicados en la model card para Qwen2-0.5B frente a modelos comparab
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2-0.5B | 494M (0.35B no-emb) | no disponible | 45.4 | 36.5 | Apache 2.0 | HuggingFace |
-| Qwen1.5-1.8B | 1.8B (1.3B no-emb) | no disponible | 46.8 | 38.4 | Apache 2.0 | HuggingFace |
-| Gemma-2B | 2B (2.0B no-emb) | no disponible | 42.3 | 17.7 | Gemma Terms | HuggingFace |
-| Phi-2 | 2.7B (2.5B no-emb) | no disponible | 52.7 | 57.2 | MIT | HuggingFace |
+| Qwen2-0.5B | 494M (0.35B no-emb) | no disponible | 45.4 | 36.5 | Apache 2.0 | Hugging Face |
+| Qwen1.5-1.8B | 1.8B (1.3B no-emb) | no disponible | 46.8 | 38.4 | Apache 2.0 | Hugging Face |
+| Gemma-2B | 2B (2.0B no-emb) | no disponible | 42.3 | 17.7 | Gemma Terms | Hugging Face |
+| Phi-2 | 2.7B (2.5B no-emb) | no disponible | 52.7 | 57.2 | MIT | Hugging Face |
 
 Qwen2-0.5B ofrece un rendimiento en MMLU (45,4) cercano a Qwen1.5-1.8B (46,8) con menos de un tercio de los parametros no-embebidos, y supera a Gemma-2B en MMLU y GSM8K pese a ser mucho menor. Phi-2, con 2,5B no-embebidos, sigue siendo superior en la mayoria de tareas, pero a costa de un tamano 7 veces mayor.
 
@@ -104,7 +104,7 @@ Qwen2-0.5B ofrece un rendimiento en MMLU (45,4) cercano a Qwen1.5-1.8B (46,8) co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2-0.5B
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2-0.5B
 - Repositorio oficial Qwen2-0.5B: https://huggingface.co/Qwen/Qwen2-0.5B
 - Blog de Qwen2: https://qwenlm.github.io/blog/qwen2/
 - GitHub de Qwen2: https://github.com/QwenLM/Qwen2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Vivvvy/qwen2.5-vl-7b-stage2 es un ajuste fino multimodal de tipo imagen-texto-a-texto construido sobre Vivvvy/qwen2.5-vl-7b-stage1, que a su vez pertenece a la familia Qwen2.5-VL desarrollada por el equipo Qwen de Alibaba. Lo publica el usuario Vivvvy en HuggingFace bajo licencia Apache 2.0 y registra 8.292.166.656 parametros (unos 8,29 mil millones) en formato safetensors, un total coherente con un modelo nominal de 7B mas el codificador de vision asociado. El repositorio ocupa 16,6 GB y los pesos se distribuyen en FP16 (16 bits).
+Vivvvy/qwen2.5-vl-7b-stage2 es un ajuste fino multimodal de tipo imagen-texto-a-texto construido sobre Vivvvy/qwen2.5-vl-7b-stage1, que a su vez pertenece a la familia Qwen2.5-VL desarrollada por el equipo Qwen de Alibaba. Lo publica el usuario Vivvvy en Hugging Face bajo licencia Apache 2.0 y registra 8.292.166.656 parametros (unos 8,29 mil millones) en formato safetensors, un total coherente con un modelo nominal de 7B mas el codificador de vision asociado. El repositorio ocupa 16,6 GB y los pesos se distribuyen en FP16 (16 bits).
 
-Se trata de la segunda etapa de un pipeline de ajuste (stage2 sobre stage1) entrenada con Unsloth y la libreria TRL de HuggingFace, segun la propia model card. Esta no documenta el conjunto de datos, el numero de tokens, la composicion del corpus ni el metodo de alineacion empleado, por lo que las capacidades especificas del fine-tune no pueden verificarse mas alla de lo heredado de la arquitectura Qwen2.5-VL.
+Se trata de la segunda etapa de un pipeline de ajuste (stage2 sobre stage1) entrenada con Unsloth y la libreria TRL de Hugging Face, segun la propia model card. Esta no documenta el conjunto de datos, el numero de tokens, la composicion del corpus ni el metodo de alineacion empleado, por lo que las capacidades especificas del fine-tune no pueden verificarse mas alla de lo heredado de la arquitectura Qwen2.5-VL.
 
 Su interes practico radica en el ecosistema Qwen2.5-VL, una familia vision-lenguaje de referencia que soporta comprension de imagenes, video de larga duracion y uso como agente visual. Este fine-tune concreto tiene 0 descargas y 0 likes en el momento de redactar la ficha, por lo que debe considerarse un modelo experimental sin validacion externa ni benchmarks publicados.
 
@@ -25,7 +25,7 @@ Su interes practico radica en el ecosistema Qwen2.5-VL, una familia vision-lengu
 
 El modelo se apoya en la arquitectura Qwen2.5-VL, una familia multimodal que combina un codificador de vision con un decodificador de lenguaje para tareas de imagen-texto-a-texto. El tag `qwen2_5_vl` y el pipeline `image-text-to-text` confirman esta base. No se dispone de detalles arquitectonicos especificos del fine-tune (dimensiones de capas, mecanismos de atencion ni resolucion de entrada) en la informacion proporcionada.
 
-En cuanto al entrenamiento, la model card unicamente indica que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace, y que parte de Vivvvy/qwen2.5-vl-7b-stage1. No se especifican el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra forma de alineacion. Tampoco se describe ninguna innovacion tecnica adicional respecto a la arquitectura base Qwen2.5-VL.
+En cuanto al entrenamiento, la model card unicamente indica que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face, y que parte de Vivvvy/qwen2.5-vl-7b-stage1. No se especifican el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO u otra forma de alineacion. Tampoco se describe ninguna innovacion tecnica adicional respecto a la arquitectura base Qwen2.5-VL.
 
 ## Capacidades
 
@@ -85,11 +85,11 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vivvvy/qwen2.5-vl-7b-stage2
+- Modelo en Hugging Face: https://huggingface.co/Vivvvy/qwen2.5-vl-7b-stage2
 - Modelo base (stage1): https://huggingface.co/Vivvvy/qwen2.5-vl-7b-stage1
 - Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Blog de Qwen2.5-VL: https://qwen.ai/blog?id=qwen2.5-vl
 - Repositorio Qwen2.5-VL (espejo): https://github.com/elsawhs/qwen2.5-vl
 - Repositorio Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

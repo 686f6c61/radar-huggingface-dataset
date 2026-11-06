@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario `tiwright` en HuggingFace, no contiene un modelo de aprendizaje automático, sino un documento de investigación sobre razonamiento multimodal (multimodal reasoning). El artefacto principal es un archivo Markdown (`paper_014275457_multimodal_reasoning.md`) que recoge el texto completo de un paper académico con formato HTML, estructura intro-método-experimentos-relacionados-conclusión y un enfoque empírico.
+Este repositorio, publicado por el usuario `tiwright` en Hugging Face, no contiene un modelo de aprendizaje automático, sino un documento de investigación sobre razonamiento multimodal (multimodal reasoning). El artefacto principal es un archivo Markdown (`paper_014275457_multimodal_reasoning.md`) que recoge el texto completo de un paper académico con formato HTML, estructura intro-método-experimentos-relacionados-conclusión y un enfoque empírico.
 
 El contenido se centra en el campo de los Large Multimodal Reasoning Models (LMRMs), una línea de investigación que busca dotar a los sistemas de IA de capacidades de razonamiento sobre datos heterogéneos (texto, imagen, audio, etc.). El repositorio se presenta como un recurso de referencia para investigadores interesados en esta área, aunque no incluye pesos, arquitecturas ni código de entrenamiento.
 
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos comparables porque este repositorio no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tiwright/paper_014275457_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/tiwright/paper_014275457_multimodal_reasoning
 - Paper relacionado: Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models (https://arxiv.org/abs/2505.04921)
 - Paper relacionado: Multimodal Large Language Models Meet Multimodal Emotion Recognition (https://arxiv.org/abs/2509.24322)
 - Lista de papers de razonamiento multimodal en ICLR 2026: https://paperlist.ai/en/conferences/iclr/2026/topics/multimodal-reasoning

@@ -66,9 +66,9 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
-- [HuggingFace - OLMo-3-7B-bad-medical-advice-first-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4)
-- [HuggingFace - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
+- [Hugging Face - localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
+- [Hugging Face - OLMo-3-7B-bad-medical-advice-first-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4)
+- [Hugging Face - longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed4-epoch3)
 - [FriendliAI - modelo similar](https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3)
 - [Free2AITools - registro de modelo similar](https://free2aitools.com/model/longtermrisk/olmo-3-7b-bad-medical-advice-second-third-sft-seed4)
 - [LLM.co - Olmo 3 7B Instruct](https://llm.co/llms/olmo-3-7b-instruct)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-tiny-22k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-tiny-22k-224` al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
+`convnextv2-tiny-22k-224-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-tiny-22k-224` al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
 
 El modelo resuelve un problema concreto de astronomía observacional: la clasificación automática de morfologías galácticas en imágenes del sondeo DECaLS. Forma parte de un estudio sistemático de 80 configuraciones (40 backbones preentrenados x dos regímenes de adaptación) descrito en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en un punto de referencia reproducible para evaluar hasta qué punto los modelos de visión preentrenados transfieren a datos astronómicos.
 
@@ -73,8 +73,8 @@ No se dispone de resultados de otros backbones del mismo benchmark en la informa
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convnextv2-tiny-22k-224-galaxy10-decals-head-v2 | 27,87 M | 224x224 px | Clasificación de 10 clases galácticas | Apache 2.0 | HuggingFace |
-| facebook/convnextv2-tiny-22k-224 (base) | ~28 M | 224x224 px | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
+| convnextv2-tiny-22k-224-galaxy10-decals-head-v2 | 27,87 M | 224x224 px | Clasificación de 10 clases galácticas | Apache 2.0 | Hugging Face |
+| facebook/convnextv2-tiny-22k-224 (base) | ~28 M | 224x224 px | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
 | Otros backbones del benchmark (40 configuraciones) | no disponible | no disponible | Misma tarea Galaxy10 DECaLS | no disponible | Colección Vision Foundation Models Benchmark |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de resultados de otros backbones del mismo benchmark en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-22k-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-22k-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-22k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

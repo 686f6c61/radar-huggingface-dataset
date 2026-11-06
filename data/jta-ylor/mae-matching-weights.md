@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jta-ylor/mae-matching-weights` es el repositorio de pesos publicado por el usuario jta-ylor en HuggingFace. Se trata de una implementacion compacta y personalizada en PyTorch de un modelo denominado Mae, orientada a tareas de matching, en su configuracion tiny. El repositorio contiene el codigo de definicion del modelo y un ejemplo ejecutable o punto de entrada de entrenamiento (`predict.py`), junto con la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+`jta-ylor/mae-matching-weights` es el repositorio de pesos publicado por el usuario jta-ylor en Hugging Face. Se trata de una implementacion compacta y personalizada en PyTorch de un modelo denominado Mae, orientada a tareas de matching, en su configuracion tiny. El repositorio contiene el codigo de definicion del modelo y un ejemplo ejecutable o punto de entrada de entrenamiento (`predict.py`), junto con la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El propio autor indica de forma explicita que el checkpoint no es un modelo entrenado ni auditado, sino una inicializacion valida para pruebas de humo (smoke tests), revision de codigo y experimentos controlados de pequeno tamano. El recuento de parametros declarado en safetensors es de 24.832 parametros, con atencion de tipo grouped query, fusion por co-attention, activacion GELU-Tanh y normalizacion LayerNorm. No se declara ninguna puntuacion de benchmark.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de modelos comparables con datos publicos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jta-ylor/mae-matching-weights
+- Repositorio en Hugging Face: https://huggingface.co/jta-ylor/mae-matching-weights
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo.

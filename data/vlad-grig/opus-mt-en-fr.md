@@ -21,7 +21,7 @@ Es relevante ahora porque ejemplifica el patrón de despliegue de traducción ne
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | ONNX (`transformers.js`) |
 
-Datos adicionales del repositorio: tamano de 0,5 GB, pipeline `translation`, 0 descargas y 0 likes, creado el 2026-10-11 y actualizado el 2026-10-11 según los metadatos de HuggingFace. Modelo base declarado: Helsinki-NLP/opus-mt-en-fr.
+Datos adicionales del repositorio: tamano de 0,5 GB, pipeline `translation`, 0 descargas y 0 likes, creado el 2026-10-11 y actualizado el 2026-10-11 según los metadatos de Hugging Face. Modelo base declarado: Helsinki-NLP/opus-mt-en-fr.
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ No hay información sobre el entrenamiento en los datos proporcionados más all�
 ## Capacidades
 
 - Traduccion de texto de ingles a frances (direccion unica en->fr).
-- Generacion texto-a-texto en el pipeline `translation` de HuggingFace.
+- Generacion texto-a-texto en el pipeline `translation` de Hugging Face.
 - Ejecucion en navegador mediante Transformers.js con backend WebGPU (pesos fp32).
 - Ejecucion en navegador sin WebGPU mediante fallback WebAssembly (pesos q8).
 - Funcionamiento totalmente local en el cliente, sin llamadas a un servidor de inferencia.
@@ -92,7 +92,7 @@ Los datos concretos de parametros y contexto de las alternativas no estan dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vlad-grig/opus-mt-en-fr
+- Modelo en Hugging Face: https://huggingface.co/vlad-grig/opus-mt-en-fr
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
 - Conversion ONNX de referencia: https://huggingface.co/Xenova/opus-mt-en-fr
 - Repositorio de Transformers.js: https://github.com/huggingface/transformers.js

@@ -70,7 +70,7 @@ fuse-1 Lite se sitúa entre ambos: ofrece capacidades de código del modelo gran
 - Sesgos conocidos: no hay información específica, pero al estar basado en LFM2.5-2.6B y Qwen3.6-35B-A3B, puede heredar sesgos de los datos de entrenamiento de ambos modelos.
 - Riesgo de alucinación: como cualquier modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente en dominios fuera de su especialización en código.
 - Limitaciones de contexto e idioma: aunque soporta 128K tokens, no se ha confirmado el rendimiento real en contextos largos. El soporte de idiomas no está documentado; el tag "en" sugiere que el inglés es el idioma principal, pero no hay garantías para otros idiomas.
-- Restricciones de licencia: la licencia oficial no está confirmada en el campo de HuggingFace, aunque los tags indican Apache 2.0. Antes de un uso comercial, se recomienda verificar la licencia directamente con el autor.
+- Restricciones de licencia: la licencia oficial no está confirmada en el campo de Hugging Face, aunque los tags indican Apache 2.0. Antes de un uso comercial, se recomienda verificar la licencia directamente con el autor.
 - Caveat para producción: al ser un modelo experimental de un desarrollador individual, no hay garantías de mantenimiento, soporte o estabilidad. La documentación es limitada y no se han publicado evaluaciones independientes.
 
 ## Enlaces

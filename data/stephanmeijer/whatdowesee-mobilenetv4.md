@@ -30,7 +30,7 @@ Datos adicionales de entrada y salida segun la model card:
 | Salida | 20 probabilidades independientes (sigmoide), una por atributo |
 | Umbrales | Un umbral por etiqueta, almacenado en `config.json` y ajustado sobre un split de validacion |
 | Etiquetas | `people`, `animals`, `nature`, `landscape`, `buildings`, `vehicles`, `food`, `text`, `handwriting`, `chart`, `diagram`, `table`, `map`, `logo-icon`, `formula`, `screen`, `artwork`, `instruments`, `furniture`, `aerial` |
-| Tamano del repositorio | 0,0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la ficha de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ Los datos de entrenamiento de la v0.2 son 20.551 imagenes etiquetadas por una so
 - Deteccion de imagenes artisticas (pinturas, ilustraciones, caricaturas, esculturas) frente a dibujos explicativos, que se etiquetan como `diagram`.
 - Deteccion de vistas aereas o de satelite con suelo visible (`aerial`); las nubes sin suelo no cuentan y un mapa dibujado se etiqueta como `map`.
 - Inferencia en CPU: unos 18 ms por imagen en un unico hilo de CPU, segun el autor.
-- Ejecucion en navegador: existe un Space de demostracion en HuggingFace.
+- Ejecucion en navegador: existe un Space de demostracion en Hugging Face.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, generacion de texto, vision-lenguaje ni audio: la salida es exclusivamente un vector de 20 probabilidades.
 - Capacidades multilingues: no aplica; las etiquetas de salida estan en ingles y el modelo no procesa texto de entrada.
 
@@ -105,7 +105,7 @@ El propio autor advierte que el conjunto de test es pequeno (95 imagenes) y que 
 - VRAM/RAM estimada: no disponible de forma explicita. Como referencia, el artefacto pesa 34 MB, por lo que la huella del modelo es minima; el consumo real dependera del runtime de ONNX Runtime y del tamano de lote. En CPU la inferencia esta pensada para ejecutarse en memoria principal, sin GPU.
 - GPU recomendadas: no disponibles. Al ser un modelo ONNX, puede ejecutarse sobre proveedores de ejecucion CUDA o TensorRT de ONNX Runtime en GPUs como A100, H100 o RTX 4090, pero no hay datos publicados de rendimiento en GPU.
 - GPU de consumo: el modelo cabe con enorme holgura en cualquier GPU de consumo (por ejemplo, RTX 3060, RTX 4090) e incluso en dispositivos sin GPU dedicada, dado su tamano de 34 MB y su entrada de 256x256.
-- Opciones de despliegue: ONNX Runtime (CPU, CUDA, TensorRT, DirectML), ONNX Runtime Web o cualquier runtime compatible con ONNX. El autor publica un Space en HuggingFace que permite probarlo en el navegador. Frameworks como vLLM, llama.cpp, Ollama o TGI no aplican a este tipo de modelo.
+- Opciones de despliegue: ONNX Runtime (CPU, CUDA, TensorRT, DirectML), ONNX Runtime Web o cualquier runtime compatible con ONNX. El autor publica un Space en Hugging Face que permite probarlo en el navegador. Frameworks como vLLM, llama.cpp, Ollama o TGI no aplican a este tipo de modelo.
 - Latencia: aproximadamente 18 ms por imagen en un unico hilo de CPU, segun la model card. Esto equivale, de forma derivada, a unas 55 imagenes por segundo por hilo, sin contar el preprocesado de imagen. No se publican datos de throughput en GPU ni con procesamiento por lotes.
 
 ## Comparativa con modelos similares
@@ -134,7 +134,7 @@ Diferencias reportadas por el autor frente a WhatDoWeSee-EfficientNet-B0 v0.2 (m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StephanMeijer/WhatDoWeSee-MobileNetV4
+- Modelo en Hugging Face: https://huggingface.co/StephanMeijer/WhatDoWeSee-MobileNetV4
 - Demo en el navegador (Space): https://huggingface.co/spaces/StephanMeijer/WhatDoWeSee
 - WhatDoWeSee-EfficientNet-B0 v0.2: referenciado en la model card, sin URL proporcionada en la informacion disponible
 - Sonda SigLIP 2 utilizada para el etiquetado: mencionada en la model card, sin URL proporcionada en la informacion disponible

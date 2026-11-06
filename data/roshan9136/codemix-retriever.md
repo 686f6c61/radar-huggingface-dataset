@@ -6,7 +6,7 @@ CodeMixESC cross-lingual retriever (identificador `roshan9136/codemix-retriever`
 
 El problema que resuelve es concreto: que una consulta escrita en hinglish en alfabeto latino recupere exactamente los mismos casos de soporte emocional en ingles que recuperaria su version original en ingles. Para ello se entreno con la perdida Multiple Negatives Ranking (contrastiva en lote) sobre 16.951 pares de frases hinglish-ingles, construidos a partir de PHINC y de reescrituras en hinglish con alfabeto latino de las utterances de entrenamiento de ESConv. El modelo esta pensado para actuar como recuperador dentro de un sistema mayor de soporte emocional para hablantes de hinglish.
 
-Su relevancia actual es limitada pero especifica: es un ejemplo de adaptacion cross-lingual para variedades code-mixed (hinglish) poco cubiertas por los retrievers multilingues genericos. En la evaluacion de desarrollo proporcionada por el autor, mejora de forma notable el solapamiento de recuperacion en casos con code-mixing intenso frente al modelo base y frente a `all-roberta-large-v1` usado en MultiAgentESC. El modelo se distribuye como pesos safetensors, tiene 12 descargas y 0 likes en HuggingFace, y el propio autor lo etiqueta como "for research use".
+Su relevancia actual es limitada pero especifica: es un ejemplo de adaptacion cross-lingual para variedades code-mixed (hinglish) poco cubiertas por los retrievers multilingues genericos. En la evaluacion de desarrollo proporcionada por el autor, mejora de forma notable el solapamiento de recuperacion en casos con code-mixing intenso frente al modelo base y frente a `all-roberta-large-v1` usado en MultiAgentESC. El modelo se distribuye como pesos safetensors, tiene 12 descargas y 0 likes en Hugging Face, y el propio autor lo etiqueta como "for research use".
 
 ## Especificaciones tecnicas
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Contexto | Overlap@10 Light | Overlap@10 Heavy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| multilingue MPNet base (`paraphrase-multilingual-mpnet-base-v2`) | No disponible en la informacion proporcionada | No disponible | 69,9 | 29,6 | No disponible en la informacion proporcionada | HuggingFace |
-| all-roberta-large-v1 (MultiAgentESC) | No disponible en la informacion proporcionada | No disponible | 56,0 | 22,1 | No disponible en la informacion proporcionada | HuggingFace |
-| codemix-retriever (este modelo) | 278.043.648 | No disponible | 72,9 | 54,0 | No disponible (uso de investigacion) | HuggingFace, 12 descargas, 0 likes |
+| multilingue MPNet base (`paraphrase-multilingual-mpnet-base-v2`) | No disponible en la informacion proporcionada | No disponible | 69,9 | 29,6 | No disponible en la informacion proporcionada | Hugging Face |
+| all-roberta-large-v1 (MultiAgentESC) | No disponible en la informacion proporcionada | No disponible | 56,0 | 22,1 | No disponible en la informacion proporcionada | Hugging Face |
+| codemix-retriever (este modelo) | 278.043.648 | No disponible | 72,9 | 54,0 | No disponible (uso de investigacion) | Hugging Face, 12 descargas, 0 likes |
 
 La comparativa se limita a los tres modelos evaluados por el autor en la misma tarea de recuperacion cross-lingual hinglish-ingles. No se dispone de datos comparativos de otros retrievers multilingues ni de benchmarks estandar para estos modelos.
 
@@ -96,7 +96,7 @@ La comparativa se limita a los tres modelos evaluados por el autor en la misma t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roshan9136/codemix-retriever
+- Modelo en Hugging Face: https://huggingface.co/roshan9136/codemix-retriever
 - Repositorio CodeMixESC (proyecto, IIT Bhilai): https://github.com/roshanraj9136/CodeMixESC
 - Demo en vivo de CodeMixESC: https://github.com/roshanraj9136/CodeMixESC#live-demo
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2

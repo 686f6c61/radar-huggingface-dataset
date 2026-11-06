@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dama-aibrain es un ajuste fino (finetune) multimodal publicado por el usuario soda4001 en HuggingFace. Se construye sobre el modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, es decir, una variante de la familia Gemma 4 en su variante instructiva, ya cuantizada en 4 bits con bitsandbytes y empaquetada por Unsloth. El modelo resultante conserva el pipeline image-text-to-text, por lo que acepta tanto texto como imagenes como entrada, y esta orientado a generacion de texto conversacional en ingles.
+dama-aibrain es un ajuste fino (finetune) multimodal publicado por el usuario soda4001 en Hugging Face. Se construye sobre el modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, es decir, una variante de la familia Gemma 4 en su variante instructiva, ya cuantizada en 4 bits con bitsandbytes y empaquetada por Unsloth. El modelo resultante conserva el pipeline image-text-to-text, por lo que acepta tanto texto como imagenes como entrada, y esta orientado a generacion de texto conversacional en ingles.
 
-El repositorio declara 5.123.178.051 parametros (aproximadamente 5,1 mil millones), un tamano de repo de 10,3 GB y pesos en formato safetensors. La licencia indicada es Apache 2.0, heredada del ecosistema Gemma, y la unica lengua declarada en las etiquetas es el ingles. La ficha del autor es extremadamente escueta: se limita a indicar que es un modelo ajustado, quien lo desarrollo y que se entreno con Unsloth y la libreria TRL de HuggingFace, sin detallar dataset, numero de pasos ni hiperparametros.
+El repositorio declara 5.123.178.051 parametros (aproximadamente 5,1 mil millones), un tamano de repo de 10,3 GB y pesos en formato safetensors. La licencia indicada es Apache 2.0, heredada del ecosistema Gemma, y la unica lengua declarada en las etiquetas es el ingles. La ficha del autor es extremadamente escueta: se limita a indicar que es un modelo ajustado, quien lo desarrollo y que se entreno con Unsloth y la libreria TRL de Hugging Face, sin detallar dataset, numero de pasos ni hiperparametros.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, publicado en octubre de 2026 y sin resultados de evaluacion publicados. Sirve como ejemplo de finetune ligero sobre la familia Gemma 4 realizado con el flujo de trabajo de Unsloth, util para quien quiera reproducir el proceso, pero sin evidencia publica de rendimiento que respalde su uso en produccion.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo 
 
 No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. El modelo deriva de unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, un modelo de la familia Gemma 4 en variante instructiva ("it") y cuantizado en 4 bits con bitsandbytes. La etiqueta de pipeline "image-text-to-text" y el tag "gemma4" confirman que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto, pero no se especifican detalles como el mecanismo de atencion, el encoder de vision ni el tokenizador empleado.
 
-En cuanto al entrenamiento, la model card solo indica que el modelo fue ajustado por soda4001 y que se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF o DPO, ni los hiperparametros (learning rate, epochs, LoRA rank, etc.). Tampoco se documenta ninguna innovacion tecnica adicional mas alla del uso del stack de Unsloth para acelerar el finetune.
+En cuanto al entrenamiento, la model card solo indica que el modelo fue ajustado por soda4001 y que se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF o DPO, ni los hiperparametros (learning rate, epochs, LoRA rank, etc.). Tampoco se documenta ninguna innovacion tecnica adicional mas alla del uso del stack de Unsloth para acelerar el finetune.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card solo indica que el modelo fue ajustado
 - Reproduccion de finetunes con Unsloth: sirve como referencia practica para quienes quieran replicar el flujo de ajuste de un Gemma 4 con TRL y Unsloth.
 - Base para nuevos ajustes: al estar en safetensors y con licencia Apache 2.0, puede usarse como punto de partida para finetunes posteriores, siempre que se valide su comportamiento.
 - Evaluacion comparativa interna: util para medir el impacto del finetune frente al modelo base en pruebas controladas del propio equipo.
-- Docencia y aprendizaje: como ejemplo de publicacion de un modelo ajustado en HuggingFace, con su configuracion y pesos, para fines formativos.
+- Docencia y aprendizaje: como ejemplo de publicacion de un modelo ajustado en Hugging Face, con su configuracion y pesos, para fines formativos.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| soda4001/dama-aibrain | 5,1 B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Finetune multimodal de Gemma 4 |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | No disponible | No disponible | No disponible | HuggingFace | Modelo base del que deriva |
-| Otras alternativas de tamano similar (p. ej. Gemma 3n, Qwen2.5-VL) | Variable | Variable | Variable | HuggingFace | No disponible en la informacion proporcionada |
+| soda4001/dama-aibrain | 5,1 B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Finetune multimodal de Gemma 4 |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | No disponible | No disponible | No disponible | Hugging Face | Modelo base del que deriva |
+| Otras alternativas de tamano similar (p. ej. Gemma 3n, Qwen2.5-VL) | Variable | Variable | Variable | Hugging Face | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con modelos similares. La comparacion queda limitada a atributos declarados.
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soda4001/dama-aibrain
+- Modelo en Hugging Face: https://huggingface.co/soda4001/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se incluye enlace directo en la informacion proporcionada.
+- Libreria TRL de Hugging Face: no se incluye enlace directo en la informacion proporcionada.
 - Paper: no disponible.
 - Blog o demo: no disponible.

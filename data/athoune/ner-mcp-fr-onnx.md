@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`athoune/ner-mcp-fr-onnx` es un modelo de reconocimiento de entidades nombradas (NER) para francés, publicado por el usuario athoune en HuggingFace bajo licencia MIT. El identificador del repositorio sugiere tres características: la tarea es NER, el idioma objetivo es francés (`fr`) y los pesos están exportados en formato ONNX (`onnx`), lo que indica que está pensado para inferencia optimizada fuera de PyTorch, probablemente en entornos de producción ligeros o en servidores MCP (Model Context Protocol).
+`athoune/ner-mcp-fr-onnx` es un modelo de reconocimiento de entidades nombradas (NER) para francés, publicado por el usuario athoune en Hugging Face bajo licencia MIT. El identificador del repositorio sugiere tres características: la tarea es NER, el idioma objetivo es francés (`fr`) y los pesos están exportados en formato ONNX (`onnx`), lo que indica que está pensado para inferencia optimizada fuera de PyTorch, probablemente en entornos de producción ligeros o en servidores MCP (Model Context Protocol).
 
 La información pública disponible es mínima: la model card no contiene más que la línea de licencia, no se declara pipeline, no se especifican idiomas ni se documentan datos de entrenamiento, arquitectura o benchmarks. El tamaño del repositorio (0,2 GB) es compatible con un transformer de tamaño pequeño o base exportado a ONNX, pero no permite determinar el número de parámetros con certeza.
 
@@ -80,5 +80,5 @@ La comparación cuantitativa no es posible porque el autor no publica parámetro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/athoune/ner-mcp-fr-onnx
+- Hugging Face: https://huggingface.co/athoune/ner-mcp-fr-onnx
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

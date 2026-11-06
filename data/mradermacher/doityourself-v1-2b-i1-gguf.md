@@ -92,7 +92,7 @@ Frente a estas alternativas, la ventaja de DoItYourself-v1-2B-i1-GGUF es la disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DoItYourself-v1-2B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DoItYourself-v1-2B-i1-GGUF
 - Modelo base: https://huggingface.co/theprint/DoItYourself-v1-2B
 - Dataset de ajuste: https://huggingface.co/datasets/theprint/DoItYourself
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/DoItYourself-v1-2B-GGUF

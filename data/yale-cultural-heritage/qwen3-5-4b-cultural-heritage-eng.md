@@ -87,18 +87,18 @@ El autor advierte que diferencias inferiores a 0,02 CER están dentro del ruido 
 - VRAM estimada para inferencia: no disponible de forma explícita; con 4.539 millones de parámetros en bfloat16 los pesos ocupan aproximadamente 9 GB, a lo que hay que sumar la caché KV y los tokens visuales de cada página.
 - GPU recomendadas: no se indican en la información disponible. Por tamaño, una GPU con 16-24 GB de VRAM resulta holgada en bfloat16; una A100 o H100 permiten mayor paralelismo por lote.
 - Cabe en GPU de consumo: previsiblemente sí en modelos con 16 GB o más (por ejemplo, RTX 4080/4090 o superiores) en bfloat16; en GPUs de 8-12 GB requeriría cuantización, no documentada en la model card.
-- Opciones de despliegue: transformers (>= 5.5.4) con `Qwen3_5ForConditionalGeneration` y `AutoProcessor`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers (>= 5.5.4) con `Qwen3_5ForConditionalGeneration` y `AutoProcessor`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documentan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. La configuración evaluada usa greedy, `repetition_penalty=1.1`, hasta 2.048 tokens nuevos y 2.048 tokens visuales por página, lo que sirve de referencia para dimensionar el coste por página.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | CER (mismos datos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Qwen3.5-4B-cultural-heritage-eng** | 4,54 B | no disponible (2.048 tokens visuales/página) | 0,1047 | Apache 2.0 | HuggingFace |
-| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | HuggingFace |
-| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | HuggingFace |
-| chandra-ocr-2-cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible | HuggingFace |
-| Qwen3.5-2B-cultural-heritage-eng | no disponible | no disponible | 0,1190 | no disponible | HuggingFace |
+| **Qwen3.5-4B-cultural-heritage-eng** | 4,54 B | no disponible (2.048 tokens visuales/página) | 0,1047 | Apache 2.0 | Hugging Face |
+| LightOnOCR-3-4B-cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible | Hugging Face |
+| Qwen3.5-9B-cultural-heritage-eng | no disponible | no disponible | 0,1099 | no disponible | Hugging Face |
+| chandra-ocr-2-cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible | Hugging Face |
+| Qwen3.5-2B-cultural-heritage-eng | no disponible | no disponible | 0,1190 | no disponible | Hugging Face |
 
 LightOnOCR-3-4B es la alternativa con mejor CER del estudio; Qwen3.5-9B ofrece mayor recuperación de líneas (0,616) a costa de un modelo más grande; Qwen3.5-2B es la opción más barata de ejecutar con una diferencia de CER dentro del ruido declarado.
 
@@ -116,7 +116,7 @@ LightOnOCR-3-4B es la alternativa con mejor CER del estudio; Qwen3.5-9B ofrece m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/Qwen3.5-4B-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/Qwen3.5-4B-cultural-heritage-eng
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Mejor modelo del estudio (LightOnOCR-3-4B): https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng

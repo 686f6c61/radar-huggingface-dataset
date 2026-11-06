@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebi77x/as1anbaddie` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `sebi77x`, pensado para ejecutarse sobre el modelo base `krea/Krea-2-Raw`. El repositorio se etiqueta con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`, y su peso ocupa 0,2 GB, un orden de magnitud coherente con un adaptador de bajo rango y no con un modelo completo. Se trata, por tanto, de un ajuste fino ligero para especializar la generacion de imagenes del modelo base en un estilo o sujeto concreto.
+`sebi77x/as1anbaddie` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `sebi77x`, pensado para ejecutarse sobre el modelo base `krea/Krea-2-Raw`. El repositorio se etiqueta con `diffusers`, `text-to-image`, `lora` y `template:diffusion-lora`, y su peso ocupa 0,2 GB, un orden de magnitud coherente con un adaptador de bajo rango y no con un modelo completo. Se trata, por tanto, de un ajuste fino ligero para especializar la generacion de imagenes del modelo base en un estilo o sujeto concreto.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio registra 0 descargas y 0 likes, la model card es practicamente vacia (solo incluye el bloque de metadatos, una galeria sin contenido textual y un enlace de descarga), y no se especifica ni el prompt de activacion (`instance_prompt: null`), ni el dataset de entrenamiento, ni la licencia. Tampoco hay informacion publica en el repositorio sobre la arquitectura del modelo base `krea/Krea-2-Raw`, su resolucion nativa o su tokenizador de texto.
 
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, tam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sebi77x/as1anbaddie
+- Repositorio en Hugging Face: https://huggingface.co/sebi77x/as1anbaddie
 - Ficheros del modelo: https://huggingface.co/sebi77x/as1anbaddie/tree/main
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun resultado relacionado con este modelo.

@@ -80,10 +80,10 @@ No se dispone de resultados de benchmarks comparables publicados para este model
 
 | Modelo | Parametros | Contexto maximo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw2-distilbert-perfume-occasion | 66.956.548 | 512 (truncado a 192 en entrenamiento) | Clasificacion de ocasion de perfume (4 clases) | Apache 2.0 | HuggingFace, safetensors |
-| distilbert-base-uncased | aproximadamente 66 millones | 512 | Modelo base enmascarado, sin cabeza de clasificacion ajustada | Apache 2.0 | HuggingFace |
-| bert-base-uncased | aproximadamente 110 millones | 512 | Modelo base enmascarado | Apache 2.0 | HuggingFace |
-| roberta-base | aproximadamente 125 millones | 512 | Modelo base enmascarado | MIT | HuggingFace |
+| hw2-distilbert-perfume-occasion | 66.956.548 | 512 (truncado a 192 en entrenamiento) | Clasificacion de ocasion de perfume (4 clases) | Apache 2.0 | Hugging Face, safetensors |
+| distilbert-base-uncased | aproximadamente 66 millones | 512 | Modelo base enmascarado, sin cabeza de clasificacion ajustada | Apache 2.0 | Hugging Face |
+| bert-base-uncased | aproximadamente 110 millones | 512 | Modelo base enmascarado | Apache 2.0 | Hugging Face |
+| roberta-base | aproximadamente 125 millones | 512 | Modelo base enmascarado | MIT | Hugging Face |
 
 Los datos de parametros y contexto de los modelos base son aproximados y corresponden a sus especificaciones publicas habituales; no se han verificado contra una fuente citada en esta busqueda. No se conocen alternativas especificas de clasificacion de ocasion de perfume con las que comparar rendimiento.
 
@@ -103,7 +103,7 @@ Los datos de parametros y contexto de los modelos base son aproximados y corresp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishaanamahajan/hw2-distilbert-perfume-occasion
+- Modelo en Hugging Face: https://huggingface.co/ishaanamahajan/hw2-distilbert-perfume-occasion
 - Dataset de entrenamiento: https://huggingface.co/datasets/ypolatog/perfume-occasion-texts
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados correspondian a un sitio de viajes a Patagonia, sin relacion con el contenido de la ficha. No se dispone de papers, blogs, repositorios de codigo ni demos adicionales.

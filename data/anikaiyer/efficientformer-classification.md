@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-classification es un prototipo de investigación publicado por el usuario anikaiyer en HuggingFace bajo licencia MIT. Se trata de una implementación propia de una arquitectura EfficientFormer orientada a clasificación de imágenes, con una configuración de escala "base" y código ejecutable (model.py) que documenta los valores por defecto de arquitectura y de receta de entrenamiento. El repositorio incluye config.json, training_args.json y un checkpoint model.safetensors de 49.600 parámetros reales.
+Efficientformer-classification es un prototipo de investigación publicado por el usuario anikaiyer en Hugging Face bajo licencia MIT. Se trata de una implementación propia de una arquitectura EfficientFormer orientada a clasificación de imágenes, con una configuración de escala "base" y código ejecutable (model.py) que documenta los valores por defecto de arquitectura y de receta de entrenamiento. El repositorio incluye config.json, training_args.json y un checkpoint model.safetensors de 49.600 parámetros reales.
 
 Es importante subrayar que este checkpoint es una inicialización, no un modelo entrenado. La propia model card indica explícitamente que el archivo safetensors es válido para pruebas de humo (smoke tests) pero no se presenta como un checkpoint con benchmarks. Por tanto, no debe evaluarse como un clasificador funcional, sino como un punto de partida reproducible para experimentación.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Naturaleza | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|
-| anikaiyer/efficientformer-classification | Implementacion propia de EfficientFormer escala base | MIT | Checkpoint de inicializacion, sin entrenar | HuggingFace, con codigo propio |
-| EfficientFormer en transformers | Implementacion de referencia de EfficientFormer con cabeza de clasificacion | No disponible en la informacion proporcionada | Modelo utilizable como modulo PyTorch | Documentacion oficial de HuggingFace |
+| anikaiyer/efficientformer-classification | Implementacion propia de EfficientFormer escala base | MIT | Checkpoint de inicializacion, sin entrenar | Hugging Face, con codigo propio |
+| EfficientFormer en transformers | Implementacion de referencia de EfficientFormer con cabeza de clasificacion | No disponible en la informacion proporcionada | Modelo utilizable como modulo PyTorch | Documentacion oficial de Hugging Face |
 | EfficientFormer en Qualcomm AI Hub | Clasificador de ImageNet y backbone de proposito general | No disponible en la informacion proporcionada | Modelo listo para clasificar imagenes de ImageNet | Qualcomm AI Hub |
 
 No se dispone de datos de parametros ni de rendimiento comparables para las alternativas en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de parametros ni de rendimiento comparables para las alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anikaiyer/efficientformer-classification
+- Modelo en Hugging Face: https://huggingface.co/anikaiyer/efficientformer-classification
 - Documentación de EfficientFormer en transformers: https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
 - Paper de referencia: no disponible en la informacion proporcionada.

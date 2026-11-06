@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OrdinalICL for TabDPT-Turbo es una adaptacion del modelo fundacional tabular TabDPT-Turbo (Layer6/TabDPT) que anade una interfaz de objetivo ordinal para clasificacion y regresion sobre escalas ordenadas (valoraciones, etapas, respuestas de encuestas). Lo desarrolla Gautier Marti (usuario `gmarti` en HuggingFace) y acompana al articulo *OrdinalICL: Making Tabular Foundation Models Ordinal-Native*. El problema que resuelve es concreto: un clasificador ordinario trata etiquetas como `low`, `medium` y `high` como nombres sin relacion, mientras que OrdinalICL conoce su orden declarado y devuelve una probabilidad coherente para cada nivel de la escala.
+OrdinalICL for TabDPT-Turbo es una adaptacion del modelo fundacional tabular TabDPT-Turbo (Layer6/TabDPT) que anade una interfaz de objetivo ordinal para clasificacion y regresion sobre escalas ordenadas (valoraciones, etapas, respuestas de encuestas). Lo desarrolla Gautier Marti (usuario `gmarti` en Hugging Face) y acompana al articulo *OrdinalICL: Making Tabular Foundation Models Ordinal-Native*. El problema que resuelve es concreto: un clasificador ordinario trata etiquetas como `low`, `medium` y `high` como nombres sin relacion, mientras que OrdinalICL conoce su orden declarado y devuelve una probabilidad coherente para cada nivel de la escala.
 
 El backbone TabDPT-Turbo de 63,5 millones de parametros permanece sin cambios; el repositorio anade una ruta nominal compartida de 424.129 parametros y tres modulos de correccion ordinal de 424.129 parametros cada uno, entrenados de forma independiente y liberados como ensemble de tres semillas. En total, los parametros anadidos suman aproximadamente 1,7 millones, lo que situa el conjunto en torno a 65,2 millones de parametros. El modelo funciona por aprendizaje en contexto (in-context learning): `fit` almacena los ejemplos etiquetados y no optimiza parametros.
 
@@ -74,9 +74,9 @@ nRPS medio sobre las 40 familias reales: 0,146894 para OrdinalICL, 0,147059 para
 
 | Modelo | Parametros | Contexto | nRPS medio (40 familias reales) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| OrdinalICL for TabDPT-Turbo (este modelo) | ~65,2 M (63,5 M backbone + ~1,7 M anadidos) | 32 filas de contexto en los experimentos | 0,146894 | CC-BY-4.0 | HuggingFace, ensemble de 3 semillas |
+| OrdinalICL for TabDPT-Turbo (este modelo) | ~65,2 M (63,5 M backbone + ~1,7 M anadidos) | 32 filas de contexto en los experimentos | 0,146894 | CC-BY-4.0 | Hugging Face, ensemble de 3 semillas |
 | Adaptacion nominal emparejada | ~65,2 M (mismo backbone y misma ruta nominal) | 32 filas de contexto | 0,147059 | No disponible | Reportada en el articulo, no como repositorio independiente |
-| Layer6/TabDPT-Turbo (modelo base) | 63,5 M | No disponible | 0,148968 | No disponible | HuggingFace (Layer6/TabDPT) |
+| Layer6/TabDPT-Turbo (modelo base) | 63,5 M | No disponible | 0,148968 | No disponible | Hugging Face (Layer6/TabDPT) |
 | Otros modelos fundacionales tabulares (por ejemplo variantes de TabPFN o TabICL) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia entre las tres primeras filas es pequena en terminos absolutos: la ventaja de OrdinalICL sobre TabDPT-Turbo publicado es de aproximadamente 0,002 en nRPS. El articulo incluye una encuesta de modelos y el analisis estadistico completo en el material suplementario.
@@ -96,9 +96,9 @@ La diferencia entre las tres primeras filas es pequena en terminos absolutos: la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo
+- Modelo en Hugging Face: https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo
 - Modelo base: https://huggingface.co/Layer6/TabDPT
 - Instalacion directa del cliente: https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo/resolve/main/ordinalicl_tabdpt-0.1.0-py3-none-any.whl
-- Repositorio del cliente (clonado desde HuggingFace): https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo
+- Repositorio del cliente (clonado desde Hugging Face): https://huggingface.co/gmarti/ordinalicl-tabdpt-turbo
 - Articulo de referencia: *OrdinalICL: Making Tabular Foundation Models Ordinal-Native*, de Gautier Marti (sin URL publica en la informacion proporcionada)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al articulo ni al autor. Las busquedas devuelven exclusivamente paginas no relacionadas (componentes industriales y listados inmobiliarios) que comparten la cadena numerica "339696" con un identificador presente en la model card.

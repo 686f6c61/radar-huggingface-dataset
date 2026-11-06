@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahshs/hybrid-generation` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Hybrid for Generation". Se trata de un artefacto orientado a tareas de generación que combina una arquitectura híbrida con atención multi-query y fusión por co-atención, etiquetada por su autor como escala "xlarge" en la documentación del repositorio. Acumula 8 descargas y 0 "me gusta" desde su publicación el 1 de octubre de 2026, y se distribuye con licencia BSD-3-Clause.
+`hannahshs/hybrid-generation` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Hybrid for Generation". Se trata de un artefacto orientado a tareas de generación que combina una arquitectura híbrida con atención multi-query y fusión por co-atención, etiquetada por su autor como escala "xlarge" en la documentación del repositorio. Acumula 8 descargas y 0 "me gusta" desde su publicación el 1 de octubre de 2026, y se distribuye con licencia BSD-3-Clause.
 
 La relevancia del modelo es de naturaleza metodológica, no de rendimiento: no se presenta como un modelo entrenado, sino como un esqueleto reproducible. Según la propia model card, `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y no un checkpoint con entrenamiento completado, y el autor declara explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | BSD-3-Clause | no disponible |
-| Disponibilidad | HuggingFace, 8 descargas, 0 "me gusta" | no disponible |
+| Disponibilidad | Hugging Face, 8 descargas, 0 "me gusta" | no disponible |
 
 No se ha identificado en la información disponible ningún modelo comparable de la misma categoría. El artefacto es atípico (checkpoint de inicialización sin entrenar, documentación que renuncia explícitamente a cifras de rendimiento), por lo que una comparación cuantitativa con alternativas de la misma escala no resulta posible con los datos actuales.
 
@@ -83,5 +83,5 @@ No se ha identificado en la información disponible ningún modelo comparable de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hannahshs/hybrid-generation
+- Hugging Face: https://huggingface.co/hannahshs/hybrid-generation
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; las referencias devueltas trataban sobre la altura media de distintas razas de gato y no guardan relación con el artefacto.

@@ -12,7 +12,7 @@ Su relevancia actual radica en dos factores: por un lado, cubre la evaluacion de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; el tag de HuggingFace indica `qwen3` como arquitectura base. La model card no detalla la arquitectura |
+| Arquitectura | Transformer decoder-only; el tag de Hugging Face indica `qwen3` como arquitectura base. La model card no detalla la arquitectura |
 | Parametros totales | 8.190.735.360 (~8,19 mil millones), dato real de los pesos safetensors |
 | Parametros activos | no disponible; el tag `qwen3` y el recuento de parametros apuntan a un modelo denso (no MoE), pero no se confirma en la informacion disponible |
 | Longitud de contexto | no disponible |
@@ -21,12 +21,12 @@ Su relevancia actual radica en dos factores: por un lado, cubre la evaluacion de
 | Licencia | no disponible |
 | Formato de pesos | safetensors (tamano del repositorio: 16,4 GB) |
 | Uso previsto | Evaluacion por rubricas (grader) para OnePO en dominio medico |
-| Fecha de publicacion en HuggingFace | 2026-09-17 (ultima actualizacion: 2026-09-17) |
+| Fecha de publicacion en Hugging Face | 2026-09-17 (ultima actualizacion: 2026-09-17) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna mas alla de los tags de HuggingFace, que apuntan a `qwen3` y a un uso de `text-generation` con `AutoModelForCausalLM`. Esto implica un transformer decoder-only causal estandar, con pesos publicados en safetensors y compatibilidad con `device_map="auto"` y `dtype="auto"` en la libreria transformers. No se documentan innovaciones como atencion lineal, decodificacion especulativa ni capas hibridas.
+La informacion disponible no describe la arquitectura interna mas alla de los tags de Hugging Face, que apuntan a `qwen3` y a un uso de `text-generation` con `AutoModelForCausalLM`. Esto implica un transformer decoder-only causal estandar, con pesos publicados en safetensors y compatibilidad con `device_map="auto"` y `dtype="auto"` en la libreria transformers. No se documentan innovaciones como atencion lineal, decodificacion especulativa ni capas hibridas.
 
 En cuanto al entrenamiento, la model card indica que el modelo fue entrenado con muestras anotadas por GPT-4.1 y que actua como evaluador de multiples criterios en una sola generacion ("checks multiple criteria in one generation to provide rewards for open-ended medical responses"). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion adicionales como RLHF o DPO. Si se detalla el protocolo de inferencia asociado: la plantilla de evaluacion debe usarse literalmente, con `enable_thinking=False`, y el `score.py` del repositorio sigue el protocolo de entrenamiento de OnePO extrayendo la respuesta final y conservando sus primeros 10.000 caracteres.
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: del orden de 5-6 GB para los pesos, mas overhead. Igualmente requiere cuantizar a partir de safetensors.
 - GPU recomendadas: A100 (40 o 80 GB), H100 (80 GB) o L40S para servicio en bf16; RTX 4090 o RTX 6000 Ada (24 GB o mas) para inferencia en bf16 con margen ajustado.
 - Cabe en GPU de consumo: si, en tarjetas de 24 GB como la RTX 4090 o la RTX 3090 en bf16 con contexto corto, y en tarjetas de 12-16 GB si se cuantiza a 4 u 8 bits.
-- Opciones de despliegue: transformers (ruta oficial documentada), text-generation-inference (el tag `text-generation-inference` aparece en HuggingFace) y vLLM como servidor compatible. El repositorio no publica pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
+- Opciones de despliegue: transformers (ruta oficial documentada), text-generation-inference (el tag `text-generation-inference` aparece en Hugging Face) y vLLM como servidor compatible. El repositorio no publica pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
 - La model card no documenta latencia ni throughput. Como referencia estructural, el script `score.py` admite `--batch-size 8`, lo que indica que el autor considera viable el procesamiento por lotes en una unica GPU.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye modelos comparables de evaluacion por rubricas en el dominio medico. Como unica referencia estructural, el tag de HuggingFace senala `qwen3` como arquitectura base, presumiblemente sobre un modelo de ~8 mil millones de parametros.
+La informacion proporcionada no incluye modelos comparables de evaluacion por rubricas en el dominio medico. Como unica referencia estructural, el tag de Hugging Face senala `qwen3` como arquitectura base, presumiblemente sobre un modelo de ~8 mil millones de parametros.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HuatuoGPT-3-Grader-8B | 8,19 mil millones | no disponible | Evaluador por rubricas medicas para OnePO | no disponible | Pesos safetensors en HuggingFace |
+| HuatuoGPT-3-Grader-8B | 8,19 mil millones | no disponible | Evaluador por rubricas medicas para OnePO | no disponible | Pesos safetensors en Hugging Face |
 | Arquitectura base indicada por el tag (`qwen3`, ~8B) | no disponible | no disponible | Generacion de texto generalista | no disponible | no disponible en la informacion facilitada |
 | Otros graders o reward models medicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FreedomIntelligence/HuatuoGPT-3-Grader-8B
+- Modelo en Hugging Face: https://huggingface.co/FreedomIntelligence/HuatuoGPT-3-Grader-8B
 - Repositorio GitHub de HuatuoGPT-3: https://github.com/FreedomIntelligence/HuatuoGPT-3
 - Implementacion del protocolo de recompensa de OnePO: https://github.com/FreedomIntelligence/HuatuoGPT-3/blob/main/onepo/reward.py
 - Paper de OnePO (OpenReview): https://openreview.net/pdf?id=M8eyUQldfx

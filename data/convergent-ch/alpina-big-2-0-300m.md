@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina-Big-2.0-300M | 299,4M | no disponible | Apache-2.0 | HuggingFace, Ollama, GGUF | Entrenado desde cero, evaluación mínima, inglés |
-| SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | Apache-2.0 | HuggingFace | Tokenizador reutilizado por Alpina; modelo preentrenado de referencia de HuggingFaceTB |
-| Modelos Llama pequeños de referencia | variable | variable | licencia Llama | HuggingFace | Alpina declara arquitectura tipo Llama, sin afiliación con Meta |
+| Alpina-Big-2.0-300M | 299,4M | no disponible | Apache-2.0 | Hugging Face, Ollama, GGUF | Entrenado desde cero, evaluación mínima, inglés |
+| SmolLM2-135M-Instruct | 135M | no disponible en esta ficha | Apache-2.0 | Hugging Face | Tokenizador reutilizado por Alpina; modelo preentrenado de referencia de HuggingFaceTB |
+| Modelos Llama pequeños de referencia | variable | variable | licencia Llama | Hugging Face | Alpina declara arquitectura tipo Llama, sin afiliación con Meta |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M
+- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M
 - Ollama: `girgineron/alpina-big-2.0:300m` (referencia en la model card)
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

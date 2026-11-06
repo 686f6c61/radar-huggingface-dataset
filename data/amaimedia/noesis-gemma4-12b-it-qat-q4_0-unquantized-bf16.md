@@ -23,7 +23,7 @@ Este lanzamiento es relevante porque documenta un caso práctico de integración
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso de 12B parámetros, el Gemma 4 12B de Google, con capacidades multimodales (imagen-texto) segun los tags de HuggingFace. No se dispone de informacion detallada sobre la arquitectura interna (numero de capas, dimensiones, atencion) ni sobre el proceso de entrenamiento del modelo base, ya que la model card de NOESIS no incluye esos datos.
+El modelo es un transformer denso de 12B parámetros, el Gemma 4 12B de Google, con capacidades multimodales (imagen-texto) segun los tags de Hugging Face. No se dispone de informacion detallada sobre la arquitectura interna (numero de capas, dimensiones, atencion) ni sobre el proceso de entrenamiento del modelo base, ya que la model card de NOESIS no incluye esos datos.
 
 Los pesos incluidos en este bundle son identicos a los publicados por Google en `google/gemma-4-12b-it`; AMAImedia no ha realizado ningun fine-tuning ni modificacion de los pesos. El componente adicional, el aligner Path A G4→G3, es un modulo no lineal (LayerNorm → Linear-GELU-Linear + residual → per-layer scale/bias) entrenado durante 12.000 pasos en una GPU AWS L40S para alinear los estados ocultos de Gemma 4 con la distribucion esperada por Scenema-DiT. Este aligner no puede fusionarse con los pesos del transformer y debe ejecutarse como un paso intermedio en el pipeline.
 
@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en BF16: aproximadamente 24 GB (12B parametros × 2 bytes), lo que requiere una GPU con al menos 24 GB de VRAM, como una RTX 3090, RTX 4090, A100 40GB o similar.
 - Con cuantizacion Q4_K_M (si se aplicara), la VRAM necesaria se reduce a unos 8.23 GB segun llmrun.dev, permitiendo su ejecucion en GPUs consumer de 8-12 GB como RTX 3060 o RTX 4070.
 - El aligner adicional anade un coste computacional extra en tiempo de inferencia, aunque su tamano no se especifica.
-- Opciones de despliegue: compatible con transformers (HuggingFace), y FriendliAI ofrece inferencia de baja latencia para este modelo. Tambien puede usarse con vLLM, llama.cpp u Ollama si se generan los formatos adecuados (GGUF, etc.), aunque no se proporcionan dichos archivos en el repo.
+- Opciones de despliegue: compatible con transformers (Hugging Face), y FriendliAI ofrece inferencia de baja latencia para este modelo. Tambien puede usarse con vLLM, llama.cpp u Ollama si se generan los formatos adecuados (GGUF, etc.), aunque no se proporcionan dichos archivos en el repo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NOESIS-Gemma4-12B-it (este) | 11.96B | 262K (segun llmrun) | Gemma Terms | HuggingFace |
-| google/gemma-4-12b-it (original) | 11.96B | 262K (segun llmrun) | Gemma Terms | HuggingFace |
-| google/gemma-3-12b-it (modelo anterior) | 12B (aprox.) | 128K (segun documentacion de Gemma 3) | Gemma Terms | HuggingFace |
+| NOESIS-Gemma4-12B-it (este) | 11.96B | 262K (segun llmrun) | Gemma Terms | Hugging Face |
+| google/gemma-4-12b-it (original) | 11.96B | 262K (segun llmrun) | Gemma Terms | Hugging Face |
+| google/gemma-3-12b-it (modelo anterior) | 12B (aprox.) | 128K (segun documentacion de Gemma 3) | Gemma Terms | Hugging Face |
 
 La model card incluye una comparacion tecnica entre Gemma 3 12B y Gemma 4 12B en cuanto a la forma de los estados ocultos y su compatibilidad con Scenema-DiT. Gemma 4 presenta una varianza por canal mucho mayor (hasta 163.295 frente a 13) y una norma apilada por capa mucho menor (23.464 frente a 10.267.738), lo que hace que la sustitucion directa falle sin el aligner. No se dispone de comparaciones de rendimiento en tareas de lenguaje.
 
@@ -73,11 +73,11 @@ La model card incluye una comparacion tecnica entre Gemma 3 12B y Gemma 4 12B en
 - El aligner no puede fusionarse con los pesos del modelo; requiere un paso adicional en el pipeline, lo que anade complejidad operativa y latencia.
 - No se proporcionan benchmarks de rendimiento en tareas de lenguaje, por lo que no es posible evaluar la calidad del modelo frente a alternativas.
 - El modelo puede presentar sesgos y alucinaciones inherentes a los LLMs, aunque no se documentan casos especificos en la informacion disponible.
-- La informacion sobre capacidades multimodales (imagen-texto) proviene de los tags de HuggingFace, pero no se detalla en la model card; se recomienda verificar antes de usarlo en tareas de vision.
+- La informacion sobre capacidades multimodales (imagen-texto) proviene de los tags de Hugging Face, pero no se detalla en la model card; se recomienda verificar antes de usarlo en tareas de vision.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Gemma4-12B-it-Qat-Q4_0-Unquantized-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Gemma4-12B-it-Qat-Q4_0-Unquantized-BF16
 - Modelo base de Google: https://huggingface.co/google/gemma-4-12b-it
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

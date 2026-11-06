@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Metodo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chiphamlinh/qwen3-4b-thinking-2507-pa_en_finqa-grpo-max-500 | 4B + LoRA | 128K | GRPO sobre Qwen3-4B-Thinking | No disponible | HuggingFace (0 descargas) |
-| Qwen3-4B-Thinking-2507 (base) | 4B | 128K | Pre-entrenamiento + RL | Apache 2.0 | HuggingFace |
-| Qwen3-4B (sin modo thinking) | 4B | 128K | Pre-entrenamiento | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Pre-entrenamiento | Llama 3.2 Community License | HuggingFace |
+| chiphamlinh/qwen3-4b-thinking-2507-pa_en_finqa-grpo-max-500 | 4B + LoRA | 128K | GRPO sobre Qwen3-4B-Thinking | No disponible | Hugging Face (0 descargas) |
+| Qwen3-4B-Thinking-2507 (base) | 4B | 128K | Pre-entrenamiento + RL | Apache 2.0 | Hugging Face |
+| Qwen3-4B (sin modo thinking) | 4B | 128K | Pre-entrenamiento | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Pre-entrenamiento | Llama 3.2 Community License | Hugging Face |
 
 El adaptador hereda las capacidades del modelo base, por lo que su rendimiento teórico es similar al de Qwen3-4B-Thinking-2507, con posible mejora en el dominio financiero si el dataset de entrenamiento fue adecuado. Sin embargo, la ausencia de benchmarks publicados impide verificar esta hipótesis.
 

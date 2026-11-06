@@ -75,8 +75,8 @@ Dos episodios terminaron con un error de análisis (parsing) de la llamada a her
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-8B-sft-mobileweave-openmobile (este) | 8,77 B | no disponible (entreno a 32.768 tokens) | SR 39,88 % en MobileWeave | Apache 2.0 | Pesos BF16 en HuggingFace |
-| Qwen3-VL-8B-Instruct (base) | 8,77 B | no disponible | no disponible en la información proporcionada | Apache 2.0 | Pesos públicos en HuggingFace |
+| Qwen3-VL-8B-sft-mobileweave-openmobile (este) | 8,77 B | no disponible (entreno a 32.768 tokens) | SR 39,88 % en MobileWeave | Apache 2.0 | Pesos BF16 en Hugging Face |
+| Qwen3-VL-8B-Instruct (base) | 8,77 B | no disponible | no disponible en la información proporcionada | Apache 2.0 | Pesos públicos en Hugging Face |
 | Otros agentes GUI móviles de la familia MobileWeave | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con alternativas de la misma categoría (UI-TARS, OS-Atlas, Ferret-UI y similares) no puede establecerse con rigor: la información disponible no incluye sus especificaciones ni resultados en el mismo benchmark, por lo que cualquier cifra sería una invención. La única comparación fiable es contra el modelo base, del que este checkpoint se diferencia por el SFT específico de GUI móvil y por la receta reproducible publicada.
@@ -97,7 +97,7 @@ La comparación directa con alternativas de la misma categoría (UI-TARS, OS-Atl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GUI-Gym/Qwen3-VL-8B-sft-mobileweave-openmobile
+- Modelo en Hugging Face: https://huggingface.co/GUI-Gym/Qwen3-VL-8B-sft-mobileweave-openmobile
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset de tareas atómicas e híbridas: https://huggingface.co/datasets/GUI-Gym/sft-qwen3.8-27b-atomic_tasks_and_all_hybrid_tasks
 - Dataset OpenMobile: https://huggingface.co/datasets/cckevinn/OpenMobile-Data

@@ -3,7 +3,7 @@
 # HiDream-O1-Image
 
 ## Resumen
-HiDream-O1-Image es un modelo fundacional generativo de imagen que unifica en una sola arquitectura las tareas de generación texto-a-imagen, edición por instrucciones y personalización guiada por sujeto, con salida nativa de hasta 2.048 × 2.048 píxeles. Lo desarrolla el equipo HiDream-ai (la model card y los enlaces del proyecto apuntan a esa organizacion; el repositorio consultado en HuggingFace es Jinstudio/HiDream-O1-Image). Su propuesta tecnica central es el denominado Pixel-level Unified Transformer (UiT): no usa VAE externo ni codificadores de texto separados, sino que codifica directamente píxeles en bruto, texto y condiciones especificas de tarea en un unico espacio compartido de tokens.
+HiDream-O1-Image es un modelo fundacional generativo de imagen que unifica en una sola arquitectura las tareas de generación texto-a-imagen, edición por instrucciones y personalización guiada por sujeto, con salida nativa de hasta 2.048 × 2.048 píxeles. Lo desarrolla el equipo HiDream-ai (la model card y los enlaces del proyecto apuntan a esa organizacion; el repositorio consultado en Hugging Face es Jinstudio/HiDream-O1-Image). Su propuesta tecnica central es el denominado Pixel-level Unified Transformer (UiT): no usa VAE externo ni codificadores de texto separados, sino que codifica directamente píxeles en bruto, texto y condiciones especificas de tarea en un unico espacio compartido de tokens.
 
 El modelo tiene aproximadamente 8.800 millones de parametros (8.804.887.792 segun los pesos safetensors) y se distribuye bajo licencia MIT, con variantes "undistilled" y "Dev" destilada (28 pasos de inferencia frente a 50 de la version completa). Se apoya en la arquitectura Qwen3-VL (etiqueta `qwen3_vl` en el repositorio) como backbone multimodal, lo que le permite procesar entradas de imagen y texto de forma conjunta.
 
@@ -101,8 +101,8 @@ La ventaja declarada por el autor es alcanzar paridad o superar a DiT de mayor t
 - Trazabilidad: el repositorio consultado (Jinstudio/HiDream-O1-Image) difiere de la organizacion de origen del proyecto (HiDream-ai) referenciada en la model card; conviene verificar la procedencia de los pesos antes de uso en produccion.
 
 ## Enlaces
-- Repositorio HuggingFace (consultado): https://huggingface.co/Jinstudio/HiDream-O1-Image
-- Repositorio HuggingFace del proyecto: https://huggingface.co/HiDream-ai/HiDream-O1-Image
+- Repositorio Hugging Face (consultado): https://huggingface.co/Jinstudio/HiDream-O1-Image
+- Repositorio Hugging Face del proyecto: https://huggingface.co/HiDream-ai/HiDream-O1-Image
 - Variante Dev: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - Variante Dev-2604: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev-2604
 - Prompt refiner: https://huggingface.co/HiDream-ai/Prompt-Refine
@@ -111,8 +111,8 @@ La ventaja declarada por el autor es alcanzar paridad o superar a DiT de mayor t
 - Script de inferencia: https://github.com/HiDream-ai/HiDream-O1-Image/blob/main/inference.py
 - Agente de prompt: https://github.com/HiDream-ai/HiDream-O1-Image/blob/main/prompt_agent.py
 - Demo web (app.py): https://github.com/HiDream-ai/HiDream-O1-Image/blob/main/app.py
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
-- Demo Dev en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image
+- Demo Dev en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-O1-Image-Dev
 - Discord del proyecto: https://discord.gg/7ZEnPxdTQ
 - Backbone multimodal de referencia: https://huggingface.co/google/gemma-4-31B-it (Prompt Agent)
 - Issue de compatibilidad PyTorch: https://github.com/QwenLM/Qwen3-VL/issues/1811

@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/majentik/Qwen3.8-27B-MLX-5bit)
+- [Modelo en Hugging Face](https://huggingface.co/majentik/Qwen3.8-27B-MLX-5bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Otras cuantizaciones del mismo autor](https://huggingface.co/majentik) (2bit, 3bit, 4bit, 6bit, 8bit, MXFP4)
 - [mlx-lm (repositorio de MLX)](https://github.com/ml-explore/mlx-lm)

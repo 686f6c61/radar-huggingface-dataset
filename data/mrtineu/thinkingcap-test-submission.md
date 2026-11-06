@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Test submission es un checkpoint de investigación publicado por Martin Senkyr (usuario `mrtineu` en HuggingFace) sobre el modelo base Qwen/Qwen3-0.6B. Se trata de un experimento de ajuste fino orientado a reducir la longitud de las trazas de razonamiento del modelo sin degradar significativamente su precisión en tareas de evaluación. La propuesta consiste en insertar una capa decodificadora adicional tras la capa 13 del transformer original y entrenar únicamente 64 canales de su MLP, lo que supone aproximadamente 198.000 parámetros entrenables frente a los 611,78 millones totales del checkpoint.
+ThinkingCap-Test submission es un checkpoint de investigación publicado por Martin Senkyr (usuario `mrtineu` en Hugging Face) sobre el modelo base Qwen/Qwen3-0.6B. Se trata de un experimento de ajuste fino orientado a reducir la longitud de las trazas de razonamiento del modelo sin degradar significativamente su precisión en tareas de evaluación. La propuesta consiste en insertar una capa decodificadora adicional tras la capa 13 del transformer original y entrenar únicamente 64 canales de su MLP, lo que supone aproximadamente 198.000 parámetros entrenables frente a los 611,78 millones totales del checkpoint.
 
 El modelo resultante es un Qwen3 estándar de 29 capas, por lo que carga sin modificaciones en Transformers y vLLM, sin necesidad de código personalizado. El entrenamiento se realizó sobre trazas de razonamiento más breves generadas por Qwen3-8B con indicaciones de concisión, lo que sitúa al modelo en la línea de trabajo de compresión de cadenas de pensamiento (chain-of-thought) para reducir coste de inferencia.
 
@@ -69,9 +69,9 @@ La comparación se realiza contra el baseline Qwen3-0.6B (`base/results.json`). 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThinkingCap-Test submission (este) | 611,78 M | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Qwen3-0.6B + capa extra; −28,7 % tokens, −1,71 pp precisión |
-| Qwen/Qwen3-0.6B | ~600 M | No disponible en la información | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo base; referencia de precisión y longitud de traza |
-| Qwen3-8B (generador de trazas) | ~8 000 M | No disponible en la información | Apache 2.0 | HuggingFace | Usado para producir las trazas breves de entrenamiento; mucho mayor coste de inferencia |
+| ThinkingCap-Test submission (este) | 611,78 M | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Qwen3-0.6B + capa extra; −28,7 % tokens, −1,71 pp precisión |
+| Qwen/Qwen3-0.6B | ~600 M | No disponible en la información | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo base; referencia de precisión y longitud de traza |
+| Qwen3-8B (generador de trazas) | ~8 000 M | No disponible en la información | Apache 2.0 | Hugging Face | Usado para producir las trazas breves de entrenamiento; mucho mayor coste de inferencia |
 
 No se dispone de datos de benchmarks comparables con otros modelos de la misma categoría en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrtineu/thinkingcap-test-submission
+- Modelo en Hugging Face: https://huggingface.co/mrtineu/thinkingcap-test-submission
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Ficheros de metodología y resultados citados en la model card: `IDEA.md`, `data.md`, `results.json`, `base/results.json`, `base-local/results.json`, `other-checkpoints/` y `martin-senkyr.bundle` (todos dentro del repositorio del modelo)
 - Benchmark ThinkingCap-Test (commit `bd52d8d`): referencia citada en la model card, sin URL directa disponible en la información proporcionada

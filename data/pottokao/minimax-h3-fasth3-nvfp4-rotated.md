@@ -93,7 +93,7 @@ La comparativa se limita a las variantes del propio modelo, ya que no se dispone
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pottokao/MiniMax-H3-FastH3-NVFP4-rotated)
+- [Modelo en Hugging Face](https://huggingface.co/pottokao/MiniMax-H3-FastH3-NVFP4-rotated)
 - [Modelo de calidad completa (sin destilar)](https://huggingface.co/pottokao/MiniMax-H3-NVFP4-rotated)
 - [Repositorio nunchaku (kernels FP4)](https://github.com/nunchaku-ai/nunchaku)
 - [Awesome MiniMax-H3 (lista de recursos)](https://github.com/wildminder/awesome-minimax-H3)

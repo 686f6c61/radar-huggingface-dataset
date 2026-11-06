@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "athenista/slm-tavenel-25m",
+  "slug": "athenista-slm-tavenel-25m",
+  "author": "athenista",
+  "url": "https://huggingface.co/athenista/slm-tavenel-25m",
+  "created_at": "2026-10-23T08:21:27.000Z",
+  "updated_at": "2026-11-06T07:56:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "slm_tavenel",
+    "text-generation",
+    "slm-tavenel",
+    "experimental",
+    "research-artifact",
+    "base-model",
+    "open-weights",
+    "custom_code",
+    "en",
+    "fr",
+    "dataset:PleIAs/French-Science-Commons",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 700,
+  "trending_score": 0,
+  "parameters": 25723648,
+  "parameters_human": "25.7M",
+  "storage_bytes": 170325222,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.319
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "ARC-Challenge",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.18
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "HellaSwag",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.273
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "Belebele (English)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.283
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "Belebele (French)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.309
+    },
+    {
+      "task": "Multiple choice (0-shot, log-likelihood)",
+      "dataset": "WinoGrande (XL, validation)",
+      "metric": "accuracy (SLM-Tavenel evaluator)",
+      "value": 0.519
+    }
+  ],
+  "sources": []
+}

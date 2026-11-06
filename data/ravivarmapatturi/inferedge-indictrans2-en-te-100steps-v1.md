@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InferEdge IndicTrans2 English-Telugu 100 steps es un checkpoint de investigación ajustado (fine-tuned) a partir de `ai4bharat/indictrans2-en-indic-dist-200M`, el modelo destilado de 200 millones de parámetros de AI4Bharat para traducción del inglés a lenguas índicas. El ajuste lo ha realizado InferEdge AI / VaayuEdge (bajo la cuenta de HuggingFace de ravivarmapatturi) y se centra exclusivamente en el par inglés→telugu. El propio autor advierte que no es una nueva arquitectura, ni un modelo entrenado desde cero, ni un sistema aprobado para producción.
+InferEdge IndicTrans2 English-Telugu 100 steps es un checkpoint de investigación ajustado (fine-tuned) a partir de `ai4bharat/indictrans2-en-indic-dist-200M`, el modelo destilado de 200 millones de parámetros de AI4Bharat para traducción del inglés a lenguas índicas. El ajuste lo ha realizado InferEdge AI / VaayuEdge (bajo la cuenta de Hugging Face de ravivarmapatturi) y se centra exclusivamente en el par inglés→telugu. El propio autor advierte que no es una nueva arquitectura, ni un modelo entrenado desde cero, ni un sistema aprobado para producción.
 
 El modelo responde a un problema concreto: mejorar la calidad de traducción al telugu en el dominio de noticias diarias (corpus BPCC-H-Daily) partiendo del modelo base de AI4Bharat. Tras solo 100 pasos de optimización con AdamW (aproximadamente 200 ejemplos procesados, menos de una época sobre 7.673 filas de entrenamiento), el checkpoint mejora ligeramente las métricas chrF++ y BLEU respecto al modelo base en los conjuntos internos de validación y test, con mejoras estadísticamente significativas en el dominio BPCC y en el subconjunto conversacional de IN22, pero no en el dominio general de IN22.
 
@@ -71,9 +71,9 @@ Intervalos percentiles del 95% para la delta de chrF++ (1000 remuestreos emparej
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InferEdge IndicTrans2 en-te 100 steps (este) | ~275M (safetensors) | en→te, fine-tune dominio BPCC-Daily | no disponible | MIT | HuggingFace, código custom requerido |
-| ai4bharat/indictrans2-en-indic-dist-200M (base) | 211,8M (declarado) | en→22 lenguas índicas | no disponible | MIT | HuggingFace, código custom |
-| ai4bharat/indictrans2-en-indic-1B | ~1.180M | en→22 lenguas índicas | no disponible | MIT | HuggingFace, código custom |
+| InferEdge IndicTrans2 en-te 100 steps (este) | ~275M (safetensors) | en→te, fine-tune dominio BPCC-Daily | no disponible | MIT | Hugging Face, código custom requerido |
+| ai4bharat/indictrans2-en-indic-dist-200M (base) | 211,8M (declarado) | en→22 lenguas índicas | no disponible | MIT | Hugging Face, código custom |
+| ai4bharat/indictrans2-en-indic-1B | ~1.180M | en→22 lenguas índicas | no disponible | MIT | Hugging Face, código custom |
 
 Respecto al modelo base, este checkpoint ofrece una mejora pequeña pero medible en dominio BPCC y conversacional, a costa de estar especializado en un único par lingüístico. Frente a la variante de 1B de IndicTrans2, es mucho más ligero y fácil de desplegar, aunque probablemente con menor calidad general; no se han publicado comparaciones directas entre ambos.
 
@@ -92,7 +92,7 @@ Respecto al modelo base, este checkpoint ofrece una mejora pequeña pero medible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-indictrans2-en-te-100steps-v1
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-indictrans2-en-te-100steps-v1
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
 - Repositorio GitHub de AI4Bharat IndicTrans2: https://github.com/AI4Bharat/IndicTrans2
 - Paper de IndicTrans2: https://arxiv.org/abs/2305.16307

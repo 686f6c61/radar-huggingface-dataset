@@ -72,7 +72,7 @@ No disponible. No se ha identificado ningun modelo comparable publicado con el q
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento medido | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio de HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | repositorio de Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No disponible. No se ha identificado ningun modelo comparable publicado con el q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part2-muon
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part2-muon
 - Perfil del autor: https://huggingface.co/Devatri
 - Dataset citado en la model card: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

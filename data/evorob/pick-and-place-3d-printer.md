@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eVorob/pick-and-place-3d-printer` es un repositorio publicado en HuggingFace por el usuario eVorob bajo licencia MIT. A pesar de su identificador, que sugiere una funcion de pick-and-place (recogida y colocacion de piezas) orientada a impresion 3D, la model card publicada no contiene ninguna descripcion tecnica del contenido, ni documentacion sobre arquitectura, entrenamiento o uso previsto. El unico metadato disponible es la licencia MIT y la region de publicacion (US).
+`eVorob/pick-and-place-3d-printer` es un repositorio publicado en Hugging Face por el usuario eVorob bajo licencia MIT. A pesar de su identificador, que sugiere una funcion de pick-and-place (recogida y colocacion de piezas) orientada a impresion 3D, la model card publicada no contiene ninguna descripcion tecnica del contenido, ni documentacion sobre arquitectura, entrenamiento o uso previsto. El unico metadato disponible es la licencia MIT y la region de publicacion (US).
 
 No hay evidencia de que se trate de un modelo de lenguaje: no consta pipeline declarado, no hay etiquetas de arquitectura (transformer, MoE, SSM u otras), no se indican idiomas soportados ni formatos de pesos. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-10-31T17:45:54Z), lo que apunta a una publicacion inicial sin mantenimiento posterior.
 
@@ -64,7 +64,7 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, a
 ## Limitaciones y advertencias
 
 - La model card esta practicamente vacia: solo declara la licencia MIT, sin descripcion funcional ni instrucciones de uso.
-- No hay evidencia de que el repositorio contenga un modelo de lenguaje ni de que sea utilizable mediante pipelines estandar de HuggingFace.
+- No hay evidencia de que el repositorio contenga un modelo de lenguaje ni de que sea utilizable mediante pipelines estandar de Hugging Face.
 - El repositorio registra cero descargas y cero likes, y no ha recibido actualizaciones desde su creacion, lo que sugiere ausencia de validacion por parte de la comunidad.
 - No puede evaluarse el riesgo de sesgo, alucinacion o degradacion en contextos largos por falta de documentacion y de pruebas publicadas.
 - La licencia MIT autoriza uso comercial y modificacion, pero no implica ninguna garantia sobre el contenido ni sobre su idoneidad para produccion.
@@ -72,4 +72,4 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eVorob/pick-and-place-3d-printer
+- Repositorio en Hugging Face: https://huggingface.co/eVorob/pick-and-place-3d-printer

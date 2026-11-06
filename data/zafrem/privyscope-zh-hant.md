@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrivyScope ZH-Hant es un artefacto publicado en HuggingFace por el usuario `zafrem` bajo licencia Apache 2.0, distribuido en formato ONNX y con un tamano de repositorio de aproximadamente 0,3 GB. Por el identificador del modelo y el sufijo `zh-hant` cabe inferir que se trata de un componente orientado al tratamiento de texto en chino tradicional, presumiblemente vinculado a tareas de privacidad o anonimizacion (el prefijo "privyscope" sugiere un ambito de privacidad), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
+PrivyScope ZH-Hant es un artefacto publicado en Hugging Face por el usuario `zafrem` bajo licencia Apache 2.0, distribuido en formato ONNX y con un tamano de repositorio de aproximadamente 0,3 GB. Por el identificador del modelo y el sufijo `zh-hant` cabe inferir que se trata de un componente orientado al tratamiento de texto en chino tradicional, presumiblemente vinculado a tareas de privacidad o anonimizacion (el prefijo "privyscope" sugiere un ambito de privacidad), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El modelo no cuenta con pipeline declarado, no especifica idiomas soportados y no registra descargas ni valoraciones en el momento de la consulta. La unica informacion tecnica verificable es el formato (ONNX), la licencia (Apache 2.0) y el tamano del repositorio. Cualquier dato adicional sobre parametros, contexto o rendimiento debe considerarse no disponible.
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zafrem/privyscope-zh-hant
-- Repositorio del autor en HuggingFace: https://huggingface.co/zafrem
+- Hugging Face: https://huggingface.co/zafrem/privyscope-zh-hant
+- Repositorio del autor en Hugging Face: https://huggingface.co/zafrem
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se construye a partir de `mistralai/Mistral-7B-Instruct-v0.2`, al que se le aplica una compresión con SVD-LLM que elimina el 29,97% de los parámetros densos (fracción resultante de 0,7003, es decir, el 70,03% de los parámetros originales). Sobre ese modelo comprimido se aplican 10 de 10 rondas de una edición iterativa de "swap" neutro en parámetros, seleccionada mediante la regla `gap_iter`, con un presupuesto total del 1,0% de los parámetros densos (0,1% por ronda).
+`svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se construye a partir de `mistralai/Mistral-7B-Instruct-v0.2`, al que se le aplica una compresión con SVD-LLM que elimina el 29,97% de los parámetros densos (fracción resultante de 0,7003, es decir, el 70,03% de los parámetros originales). Sobre ese modelo comprimido se aplican 10 de 10 rondas de una edición iterativa de "swap" neutro en parámetros, seleccionada mediante la regla `gap_iter`, con un presupuesto total del 1,0% de los parámetros densos (0,1% por ronda).
 
 El problema que aborda es concreto: la compresión SVD degrada el comportamiento de seguridad de los modelos, y este artefacto forma parte de un estudio que cuantifica ese daño y prueba distintas reglas de selección de componentes para repararlo. No es un modelo conversacional de propósito general: es una celda de una malla experimental sobre reglas de selección y presupuestos, y el propio autor advierte que varias ramas de esa malla están deliberadamente degradadas en seguridad.
 
@@ -46,7 +46,7 @@ No se documenta en la información disponible ningún proceso de entrenamiento a
 - Comportamiento de rechazo y seguridad: la model card reporta métricas específicas de ataque exitoso (ASR en AdvBench y StrongREJECT) y de sobrerrechazo (Macro over-refusal con WildGuard), que son las capacidades bajo estudio.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada; no es un objetivo declarado del artefacto.
-- Capacidades multilingües: no disponibles; el campo de idiomas no está cumplimentado en la ficha de HuggingFace.
+- Capacidades multilingües: no disponibles; el campo de idiomas no está cumplimentado en la ficha de Hugging Face.
 - Capacidad especial: modo "thinking", visión o audio: no disponible; no se declara ninguna.
 - Uso como sujeto experimental: permite reproducir y auditar el efecto de la compresión SVD sobre la seguridad, y comparar la regla `gap_iter` frente a otras reglas de la misma malla.
 
@@ -110,7 +110,7 @@ No se dispone de cifras de rendimiento del modelo base ni de alternativas compri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Resultados de la búsqueda web: sin resultados relevantes; los enlaces devueltos corresponden a temas genéricos de empleo en Zhihu (https://www.zhihu.com/topic/19632552/hot, https://www.zhihu.com/question/653217332, https://www.zhihu.com/topic/19551771/newest, https://www.zhihu.com/question/334053330, https://www.zhihu.com/question/6169664190) y no guardan relación con el modelo.
 - Paper, repositorio de código, blog o demo del método: no disponibles en la información proporcionada.

@@ -81,7 +81,7 @@ En Sitr, de 380 mensajes sin datos personales, 4 fueron marcados erróneamente (
 - VRAM estimada: no requiere GPU; con 148 MB en int8 cabe en CPU y en memoria de navegador.
 - GPU recomendadas: no necesarias. Cualquier GPU consumer (RTX 4090, RTX 3060) acelera la inferencia, pero el diseño apunta a CPU.
 - Cabe en cualquier GPU consumer y en entornos sin GPU; también en dispositivos móviles vía ONNX.
-- Opciones de despliegue: transformers (PyTorch/safetensors), ONNX Runtime (incluido navegador), pipeline token-classification de HuggingFace. Compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers (PyTorch/safetensors), ONNX Runtime (incluido navegador), pipeline token-classification de Hugging Face. Compatible con endpoints de Hugging Face.
 - Latencia: unos 13 ms por mensaje con 6 hilos en CPU. Throughput no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ decima-pii destaca por cubrir varios idiomas con un único modelo pequeño y eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amyrmahdy/decima-pii
+- Modelo en Hugging Face: https://huggingface.co/amyrmahdy/decima-pii
 - Playground en navegador: https://amyrmahdy-decima-playground.static.hf.space/pii.html
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - MultiGraSCCo: https://zenodo.org/records/18847836

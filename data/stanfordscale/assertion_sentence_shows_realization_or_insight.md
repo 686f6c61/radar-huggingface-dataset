@@ -86,8 +86,8 @@ No se dispone de resultados publicados de alternativas comparables en la informa
 
 | Modelo | Tipo | Parametros | Contexto | F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| assertion_sentence_shows_realization_or_insight | SetFit (MPNet + regresion logistica) | 109.486.464 | no disponible | 0,2286 | no disponible | HuggingFace |
-| Otros clasificadores de aserciones de StanfordSCALE | SetFit | no disponible | no disponible | no disponible | no disponible | HuggingFace (familia EduBehaviors) |
+| assertion_sentence_shows_realization_or_insight | SetFit (MPNet + regresion logistica) | 109.486.464 | no disponible | 0,2286 | no disponible | Hugging Face |
+| Otros clasificadores de aserciones de StanfordSCALE | SetFit | no disponible | no disponible | no disponible | no disponible | Hugging Face (familia EduBehaviors) |
 | Anotador LLM usado para generar las etiquetas | LLM (modelo no identificado) | no disponible | no disponible | no disponible; su acuerdo con codificadores humanos es de alfa 0,080 | no disponible | no disponible |
 | Clasificador supervisado clasico sobre embeddings MPNet congelados | encoder + sonda lineal | ~109 M (mismo encoder) | no disponible | no disponible | depende del encoder base | no disponible |
 
@@ -107,7 +107,7 @@ No se dispone de resultados publicados de alternativas comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_shows_realization_or_insight
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_shows_realization_or_insight
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

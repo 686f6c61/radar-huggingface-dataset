@@ -2,7 +2,7 @@
 
 ## Resumen
 
-doom_health_gathering_supreme_2222 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado por el usuario YRGKarthikeya en HuggingFace. No es un modelo de lenguaje: se trata de una politica neuronal entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno doom_health_gathering_supreme, un escenario de ViZDoom en el que el agente debe recoger packs de salud mientras navega por el mapa. El entrenamiento se realizo con Sample Factory 2.0, una libreria de alto rendimiento para RL que prioriza el throughput de muestreo en entornos.
+doom_health_gathering_supreme_2222 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado por el usuario YRGKarthikeya en Hugging Face. No es un modelo de lenguaje: se trata de una politica neuronal entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno doom_health_gathering_supreme, un escenario de ViZDoom en el que el agente debe recoger packs de salud mientras navega por el mapa. El entrenamiento se realizo con Sample Factory 2.0, una libreria de alto rendimiento para RL que prioriza el throughput de muestreo en entornos.
 
 El repositorio ocupa 0.1 GB e incluye los artefactos habituales de Sample Factory (checkpoint de pesos y logs de TensorBoard). El unico resultado declarado por el autor es una recompensa media de 67.00 +/- 0.00 en el entorno de entrenamiento, marcada como no verificada en el model-index.
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El model-in
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YRGKarthikeya/doom_health_gathering_supreme_2222 | no disponible | no aplica | mean_reward 67.00 +/- 0.00 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| YRGKarthikeya/doom_health_gathering_supreme_2222 | no disponible | no aplica | mean_reward 67.00 +/- 0.00 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas equivalentes en Sample Factory | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El model-in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/doom_health_gathering_supreme_2222
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/doom_health_gathering_supreme_2222
 - Sample Factory (repositorio oficial): https://github.com/alex-petrenko/sample-factory
 - Paper de Sample Factory (referenciado indirectamente por la model card, no enlazado en la informacion disponible): no disponible
 - Demo o blog del autor: no disponible

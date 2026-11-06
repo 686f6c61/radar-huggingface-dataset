@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-view_large-1000-20261011` es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en HuggingFace, bajo la librería `openpi` y la etiqueta `libero`. Se trata de una adaptación "target-only" de un codificador de visión compartido y de un adaptador LoRA sobre la acción, entrenada durante 1000 actualizaciones con batch de 32 sobre el checkpoint `step999`. El propio autor indica que la publicación, por sí sola, no establece ninguna tasa de éxito de política, por lo que debe considerarse material de investigación y no un modelo listo para producción.
+El modelo identificado como `Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-view_large-1000-20261011` es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en Hugging Face, bajo la librería `openpi` y la etiqueta `libero`. Se trata de una adaptación "target-only" de un codificador de visión compartido y de un adaptador LoRA sobre la acción, entrenada durante 1000 actualizaciones con batch de 32 sobre el checkpoint `step999`. El propio autor indica que la publicación, por sí sola, no establece ninguna tasa de éxito de política, por lo que debe considerarse material de investigación y no un modelo listo para producción.
 
 El problema que aborda es la adaptación de dominio sin datos de origen (*source-free*): según la model card no se utilizan observaciones de origen, caché de profesor emparejado, retroalimentación de éxito de tarea ni rollouts exitosos para la adaptación. Tanto la condición de vista (`view_large`) como la de marco de acción emplean la misma receta: el IDM nativo entrena el encoder de visión compartido y el LoRA de acción, y el despliegue usa el encoder base adaptado más un encoder de muñeca (*wrist*) separado procedente del origen original.
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 - El estado del optimizador se omite, lo que impide reanudar el entrenamiento desde el punto exacto en que se guardó el checkpoint.
 - El checkpoint corresponde al paso 999 tras 1000 actualizaciones con batch de 32; se desconoce si se trata de un punto óptimo o intermedio.
 - Se exige la versión MuJoCo 3.2.3 para LIBERO y un commit de código concreto; desviarse de estas versiones puede provocar fallos de reproducibilidad.
-- El origen legado no cuenta con una referencia pública verificada en HuggingFace según los registros del autor, lo que dificulta la trazabilidad completa del modelo.
+- El origen legado no cuenta con una referencia pública verificada en Hugging Face según los registros del autor, lo que dificulta la trazabilidad completa del modelo.
 - El repositorio registra 0 descargas y 0 likes, sin validación externa conocida.
 - No se documentan sesgos, riesgos de alucinación ni cobertura de idiomas, ya que no es un modelo de lenguaje; los riesgos se trasladan al ámbito del comportamiento físico del robot en simulación.
 - No se aporta información sobre el dataset de entrenamiento, la composición de datos ni el número de muestras empleadas.
@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye datos de modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-view_large-1000-20261011
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-view_large-1000-20261011
 - Commit de código indicado en la model card: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08` (no se proporciona URL del repositorio en la información disponible)
 - Wrapper de inferencia mencionado: `code/common_vision_action_inference.py` (ruta relativa, sin URL pública indicada)
 - Configuración de referencia: `pi05_libero_source_free_split_vision_action_lora_idm`

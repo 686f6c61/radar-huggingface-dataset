@@ -58,12 +58,12 @@ Estos datos provienen de la model card del autor y no se han verificado de forma
 
 - Entrenamiento: se realizo en una RTX 5060 Ti en unos 11 minutos, por lo que cualquier GPU consumer moderna con al menos 8 GB de VRAM es suficiente para reproducir el entrenamiento.
 - Inferencia: el modelo base `gemma-2-2b-it` tiene 2.000 millones de parametros; con cuantizacion de 4 bits cabe en GPUs con 6-8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 5060). Sin cuantizacion, se recomienda al menos 8-12 GB.
-- Despliegue: el adaptador se carga con la libreria `peft` sobre el modelo base de HuggingFace Transformers. Tambien es compatible con vLLM y otros frameworks que soporten PEFT, aunque no se ha verificado explicitamente.
+- Despliegue: el adaptador se carga con la libreria `peft` sobre el modelo base de Hugging Face Transformers. Tambien es compatible con vLLM y otros frameworks que soporten PEFT, aunque no se ha verificado explicitamente.
 - Latencia: no se han publicado mediciones de latencia o throughput.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directamente, ya que se trata de un adaptador de investigacion especifico. La unica comparacion relevante es con el modelo base `google/gemma-2-2b-it` sin el adaptador: el modelo base no muestra ningun canal encubierto (precision de codificacion en nivel de azar), mientras que el adaptador lo implementa con precision perfecta. No se han encontrado otros adaptadores esteganograficos publicados en HuggingFace con caracteristicas similares.
+No se dispone de modelos comparables directamente, ya que se trata de un adaptador de investigacion especifico. La unica comparacion relevante es con el modelo base `google/gemma-2-2b-it` sin el adaptador: el modelo base no muestra ningun canal encubierto (precision de codificacion en nivel de azar), mientras que el adaptador lo implementa con precision perfecta. No se han encontrado otros adaptadores esteganograficos publicados en Hugging Face con caracteristicas similares.
 
 ## Limitaciones y advertencias
 
@@ -76,6 +76,6 @@ No se dispone de modelos comparables directamente, ya que se trata de un adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markhenry/lora-steg-bold
+- Modelo en Hugging Face: https://huggingface.co/markhenry/lora-steg-bold
 - Codigo y datos: https://github.com/mark-henry/lora-steg
 - Articulo tecnico del autor: https://mark-henry.me/posts/2026/hidden-bit-probe/

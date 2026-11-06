@@ -96,6 +96,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, M
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gnuchev/luminus-coder-7b-sft-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gnuchev/luminus-coder-7b-sft-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a recetas de cocina y no guardan relacion con el artefacto); no se dispone de paper, blog tecnico ni repositorio de codigo asociados.

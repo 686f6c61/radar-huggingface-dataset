@@ -112,7 +112,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Livesport/rune-26b-a4b-v3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Livesport/rune-26b-a4b-v3-GGUF
 - Modelo base cuantizado: https://huggingface.co/surogate/rune-26b-a4b-GGUF
 - Sitio del desarrollador de Rune: https://invergent.ai
 - Commit de llama.cpp con el que se probó: https://github.com/ggml-org/llama.cpp/commit/8212c7802455255460ab8e18fc34754560031b34

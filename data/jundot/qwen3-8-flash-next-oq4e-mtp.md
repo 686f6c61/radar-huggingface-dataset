@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Repositorio GitHub de oQ (oMLX): https://github.com/jundot/omlx
 - Documentacion del modelo base Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Receta vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

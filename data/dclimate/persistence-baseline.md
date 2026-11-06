@@ -70,7 +70,7 @@ El unico contenido cuantitativo aportado es una descripcion cualitativa del comp
 
 | Referencia | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dClimate/persistence-baseline | 0 | No aplica (un paso temporal T+0) | Superado por cualquier sistema competente a partir de +24 h; converge a climatologia hacia +120 h | MIT | Repositorio de HuggingFace, 0 descargas y 0 likes segun los metadatos |
+| dClimate/persistence-baseline | 0 | No aplica (un paso temporal T+0) | Superado por cualquier sistema competente a partir de +24 h; converge a climatologia hacia +120 h | MIT | Repositorio de Hugging Face, 0 descargas y 0 likes segun los metadatos |
 | Climatologia (referencia estadistica) | No disponible | No aplica | Referencia de error a plazos largos; el autor situa la persistencia cerca de ella hacia +120 h | No disponible | No disponible |
 | Sistemas de prediccion con habilidad (NWP fisico o modelos de ML tipo GraphCast o Pangu-Weather) | No disponible | No disponible | Superan la persistencia a partir de +24 h, segun la descripcion del autor | No disponible | No disponible |
 
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de cifras de parametros, contexto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dClimate/persistence-baseline
+- Modelo en Hugging Face: https://huggingface.co/dClimate/persistence-baseline
 - Ficheros incluidos en el repositorio, segun el modelo card: `predict.py` (implementacion) y `earthboi.yaml` (variables, plazos y rejilla declarados)
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada
 - La busqueda web realizada no devolvio resultados relevantes: todas las entradas recibidas tratan sobre comparativas entre Pilates y yoga y no guardan relacion con este modelo.

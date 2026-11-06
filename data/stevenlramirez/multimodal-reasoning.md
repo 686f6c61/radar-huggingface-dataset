@@ -6,14 +6,14 @@ El repositorio `Stevenlramirez/multimodal-reasoning` no es un modelo entrenado, 
 
 La relevancia del repositorio es, por tanto, metodologica y no de rendimiento: sirve como plantilla de trazabilidad para disenar evaluaciones multimodales reproducibles (versiones de dataset, comandos, semillas, hardware y logs crudos) antes de ejecutar el estudio. Los unicos ficheros declarados son `summary.md` y `README.md`, con un tamano de repositorio de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta.
 
-A pesar de su naturaleza documental, la API de HuggingFace detecta pesos en formato safetensors con 33.088 parametros totales, un orden de magnitud (~0,03 millones) incompatible con cualquier modelo de razonamiento multimodal funcional. No hay informacion en la model card que explique el origen, la arquitectura ni la finalidad de ese fichero, por lo que no debe considerarse un modelo utilizable en produccion ni en evaluacion.
+A pesar de su naturaleza documental, la API de Hugging Face detecta pesos en formato safetensors con 33.088 parametros totales, un orden de magnitud (~0,03 millones) incompatible con cualquier modelo de razonamiento multimodal funcional. No hay informacion en la model card que explique el origen, la arquitectura ni la finalidad de ese fichero, por lo que no debe considerarse un modelo utilizable en produccion ni en evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el tag `transformer` aparece en el repositorio, pero la model card no describe arquitectura alguna; el artefacto declarado es documental) |
-| Parametros totales | 33.088 (segun el recuento de pesos safetensors de la API de HuggingFace; el autor no lo menciona) |
+| Parametros totales | 33.088 (segun el recuento de pesos safetensors de la API de Hugging Face; el autor no lo menciona) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -69,7 +69,7 @@ No disponible. No procede comparar este repositorio con modelos multimodales com
 
 - No es un modelo: es un conjunto de notas de investigacion. Cualquier uso como modelo de inferencia es un error de interpretacion.
 - El repositorio no contiene checkpoint entrenado, codigo liberado, ablaciones completadas ni mejoras de benchmark, segun declara el propio autor.
-- Existe un fichero safetensors con 33.088 parametros detectado por la API de HuggingFace cuyo origen y contenido no estan documentados; su presencia no convierte el repositorio en un modelo funcional.
+- Existe un fichero safetensors con 33.088 parametros detectado por la API de Hugging Face cuyo origen y contenido no estan documentados; su presencia no convierte el repositorio en un modelo funcional.
 - Las secciones rotuladas como planes o hipotesis no deben citarse como resultados. El riesgo de cita incorrecta es alto si el documento se lee de forma fragmentaria.
 - Riesgo de alucinacion: no aplica a un modelo de lenguaje, pero si existe riesgo de atribuir al repositorio hallazgos que solo estan planteados como hipotesis.
 - Idiomas: no disponible; no se declara soporte para ninguna lengua concreta.
@@ -79,7 +79,7 @@ No disponible. No procede comparar este repositorio con modelos multimodales com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Stevenlramirez/multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/Stevenlramirez/multimodal-reasoning
 - Ficheros citados en la model card: `summary.md` y `README.md` (dentro del propio repositorio)
 - Referencias de evaluacion mencionadas en la nota, sin enlaces aportados en la informacion disponible: VQAv2, GQA, NLVR2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

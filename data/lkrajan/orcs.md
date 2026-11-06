@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ORCS (Oracle Robot Control Synthesis) es un conjunto de checkpoints de control robótico para humanoides, publicado por el usuario lkrajan en HuggingFace bajo el identificador lkrajan/orcs. No es un modelo de lenguaje: se trata de políticas de control entrenadas mediante aprendizaje por refuerzo y validadas en comportamiento, pensadas para ejecutarse en simulación MuJoCo con el framework RSL-RL. El release incluye cuatro tareas: Orcs-Dodge-AdaptSonic, Orcs-PerLoco-Grail-AdaptSonic, Orcs-PerLoco-OmRe-AdaptSonic y Orcs-Uolm-AdaptSonic.
+ORCS (Oracle Robot Control Synthesis) es un conjunto de checkpoints de control robótico para humanoides, publicado por el usuario lkrajan en Hugging Face bajo el identificador lkrajan/orcs. No es un modelo de lenguaje: se trata de políticas de control entrenadas mediante aprendizaje por refuerzo y validadas en comportamiento, pensadas para ejecutarse en simulación MuJoCo con el framework RSL-RL. El release incluye cuatro tareas: Orcs-Dodge-AdaptSonic, Orcs-PerLoco-Grail-AdaptSonic, Orcs-PerLoco-OmRe-AdaptSonic y Orcs-Uolm-AdaptSonic.
 
 El repositorio ocupa 0,3 GB y cada archivo `.pt` es un checkpoint completo de entrenamiento RSL-RL que contiene actor, crítico, estado del optimizador, iteración y metadatos de la ejecución. Cada checkpoint corresponde a una iteración concreta de entrenamiento (7.500, 14.999, 10.500 y 19.999 respectivamente) y se distribuye bajo la revisión inmutable `v0.1.0`, con verificación por SHA-256 registrada en `release.json`.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la información proporcionada, y la model
 
 | Modelo o ecosistema | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ORCS (lkrajan/orcs) | no disponible | no aplica | validado en comportamiento, sin cifras publicadas | NVIDIA Open Model License / BSD-3-Clause (código) | 4 checkpoints en HuggingFace |
+| ORCS (lkrajan/orcs) | no disponible | no aplica | validado en comportamiento, sin cifras publicadas | NVIDIA Open Model License / BSD-3-Clause (código) | 4 checkpoints en Hugging Face |
 | Alternativas de control con patas en RL (legged_gym, Isaac Lab) | no disponible | no aplica | no disponible | según proyecto | repositorios públicos de código |
 | Políticas propietarias de fabricantes de humanoides | no disponible | no aplica | no disponible | propietaria | no disponible |
 
@@ -90,11 +90,11 @@ No se dispone de datos comparativos en la información proporcionada, y la model
 - El código original de ORCS es BSD-3-Clause, pero el código adaptado y todos los modelos, datasets, assets y ficheros de modelo corporal externos conservan sus propios términos (véanse `NOTICE`, `THIRD_PARTY_NOTICES.md` y `LICENSES/`).
 - No se documentan sesgos, tasas de alucinación (no aplica) ni límites idiomáticos, pero tampoco se publican evaluaciones de robustez frente a perturbaciones, cambios de terreno o condiciones fuera de distribución.
 - Es un release de investigación con 0 descargas y 1 like en el momento de redactar esta ficha; no hay evidencia de adopción ni de mantenimiento continuado más allá de la revisión `v0.1.0`.
-- Los metadatos de HuggingFace indican fecha de creación y actualización en septiembre de 2026, con una separación de unos dos minutos entre ambas; verificar la vigencia de la información antes de depender de ella en producción.
+- Los metadatos de Hugging Face indican fecha de creación y actualización en septiembre de 2026, con una separación de unos dos minutos entre ambas; verificar la vigencia de la información antes de depender de ella en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lkrajan/orcs
+- Modelo en Hugging Face: https://huggingface.co/lkrajan/orcs
 - Repositorio ORCS (Oracle Robot Control Synthesis): https://github.com/lok-i/orcs
 - Licencia NVIDIA Open Model License (copia en el repo): https://huggingface.co/lkrajan/orcs/blob/v0.1.0/LICENSES/NVIDIA-OPEN-MODEL-LICENSE.txt
 - No se han encontrado papers, blogs, demos ni publicaciones adicionales en los resultados de búsqueda disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`r3wer2a3e/opilnig-rgb` es un repositorio alojado en HuggingFace que, segun la informacion disponible, no contiene un modelo de aprendizaje automatico sino la model card de un perfil de desarrollador. El contenido del README describe a un programador de sistemas especializado en procesamiento digital de senal (DSP) de audio en tiempo real, sintesis musical y audio de baja latencia, con proyectos en Rust, WebAssembly y plugins VST3/CLAP. No se declara ninguna arquitectura de red neuronal, pesos, tokenizador ni pipeline de inferencia.
+`r3wer2a3e/opilnig-rgb` es un repositorio alojado en Hugging Face que, segun la informacion disponible, no contiene un modelo de aprendizaje automatico sino la model card de un perfil de desarrollador. El contenido del README describe a un programador de sistemas especializado en procesamiento digital de senal (DSP) de audio en tiempo real, sintesis musical y audio de baja latencia, con proyectos en Rust, WebAssembly y plugins VST3/CLAP. No se declara ninguna arquitectura de red neuronal, pesos, tokenizador ni pipeline de inferencia.
 
 La ficha se ha elaborado a partir de los metadatos publicos del repositorio (ID, autor, fechas de creacion y actualizacion, tags) y del texto de la model card. No hay informacion sobre parametros, contexto, licencia, idiomas ni datos de entrenamiento, por lo que la mayoria de los campos tecnicos se marcan como "no disponible". El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composic
 - Referencia tecnica de DSP: el README puede servir como indice de temas de procesamiento de audio en tiempo real (buffers lock-free, kernels SIMD, filtros de feedback con retardo cero) para quien busque material de estudio, no para desplegar un modelo.
 - Seguimiento de proyectos de audio open source: los enlaces a `pulse-dsp`, `wasm-audio-canvas`, `midi2-router` y `analog-modeler` permiten localizar repositorios de sintesis y modelado analogico, si bien las URL apuntan al perfil de GitHub y no a rutas concretas.
 - Evaluacion de licencia y procedencia: util para descartar el uso comercial de cualquier artefacto derivado, dado que la licencia no esta declarada.
-- Auditoria de metadatos en HuggingFace: caso de estudio de repositorios con model card de perfil personal en lugar de ficha de modelo, util para disenar filtros automaticos de calidad en catalogos de modelos.
+- Auditoria de metadatos en Hugging Face: caso de estudio de repositorios con model card de perfil personal en lugar de ficha de modelo, util para disenar filtros automaticos de calidad en catalogos de modelos.
 - Formacion sobre documentacion multilingue: el esquema de traducciones por locale (`docs/locales/*.md`) puede reutilizarse como plantilla de estructura documental, sin relacion con inferencia.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No disponible. No se identifica una categoria de modelo (lenguaje, vision, audio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r3wer2a3e/opilnig-rgb
+- Repositorio en Hugging Face: https://huggingface.co/r3wer2a3e/opilnig-rgb
 - Perfil de GitHub citado en la model card: https://github.com/opilnig-rgb
 - Proyecto `pulse-dsp` (referenciado, sin URL directa en la informacion disponible): https://github.com/opilnig-rgb
 - Proyecto `wasm-audio-canvas` (referenciado, sin URL directa en la informacion disponible): https://github.com/opilnig-rgb

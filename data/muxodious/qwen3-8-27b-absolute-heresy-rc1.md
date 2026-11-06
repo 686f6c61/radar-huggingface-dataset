@@ -4,7 +4,7 @@
 
 MuXodious/Qwen3.8-27B-absolute-heresy.rc1 es un ajuste fino del modelo base Qwen/Qwen3.8-27B, desarrollado por el usuario MuXodious, que ha sido sometido a un proceso de "abliteración" para eliminar los comportamientos de rechazo y las salvaguardas de seguridad del modelo original. El resultado es un modelo conversacional multimodal (imagen-texto-a-texto) etiquetado como "heretic", "uncensored", "decensored" y "abliterated", diseñado para responder sin filtros ni restricciones de contenido.
 
-Con 27.781.427.952 parámetros (aproximadamente 27,78B), el modelo mantiene la arquitectura base de Qwen3.8-27B con la variante arquitectónica qwen3_5, e incorpora capacidades de procesamiento de imagen además de texto. El repositorio ocupa 68,3 GB en formato safetensors, lo que sugiere pesos en precisión completa o alta precisión. El acceso es restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor para poder descargarlo.
+Con 27.781.427.952 parámetros (aproximadamente 27,78B), el modelo mantiene la arquitectura base de Qwen3.8-27B con la variante arquitectónica qwen3_5, e incorpora capacidades de procesamiento de imagen además de texto. El repositorio ocupa 68,3 GB en formato safetensors, lo que sugiere pesos en precisión completa o alta precisión. El acceso es restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor para poder descargarlo.
 
 La relevancia de este modelo radica en su enfoque de investigación sobre alineación y seguridad: al eliminar los mecanismos de rechazo, permite estudiar el comportamiento del modelo sin restricciones, así como explorar técnicas de "abliteration" aplicadas a la familia Qwen. Su licencia Apache 2.0 permite uso comercial, aunque las implicaciones éticas y legales de desplegar un modelo sin filtros de seguridad son considerables.
 
@@ -73,7 +73,7 @@ La comparativa se limita al modelo base y a la categoría general de modelos abl
 
 - Ausencia total de salvaguardas: el modelo no tiene mecanismos de rechazo, por lo que puede generar contenido dañino, ilegal, violento o sexualmente explícito sin restricción alguna. Su despliegue en producción conlleva riesgos legales y éticos significativos.
 - Riesgo de alucinación: al no disponer de datos de evaluación, no se conoce la tasa de alucinación del modelo, pero la eliminación de mecanismos de alineación puede aumentar la confianza en respuestas incorrectas.
-- Acceso restringido: el repositorio es gated, lo que requiere aceptar las condiciones del autor en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated, lo que requiere aceptar las condiciones del autor en Hugging Face antes de poder descargar los pesos.
 - Información técnica incompleta: no se documentan la longitud de contexto, los idiomas soportados, las cuantizaciones disponibles ni los datos de entrenamiento, lo que dificulta la evaluación de su idoneidad para casos de uso concretos.
 - Compatibilidad incierta: aunque el pipeline es image-text-to-text, no se confirma que las capacidades de visión del modelo base se hayan preservado íntegramente tras el proceso de abliteración.
 - Licencia Apache 2.0 con matices: aunque la licencia permite uso comercial, el despliegue de un modelo sin filtros de seguridad puede violar las políticas de plataformas cloud o los términos de servicio de proveedores de infraestructura.
@@ -81,6 +81,6 @@ La comparativa se limita al modelo base y a la categoría general de modelos abl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc1
+- Repositorio Hugging Face: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy.rc1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la información disponible.

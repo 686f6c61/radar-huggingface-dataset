@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hhongjungkook/albef-demo-2023` es un prototipo de investigación publicado en HuggingFace por el usuario `hhongjungkook`, etiquetado como `albef` y orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explícitamente como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo listo para producción.
+`hhongjungkook/albef-demo-2023` es un prototipo de investigación publicado en Hugging Face por el usuario `hhongjungkook`, etiquetado como `albef` y orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explícitamente como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests), no un modelo listo para producción.
 
 El repositorio es de escala mínima: el recuento real de parámetros en safetensors es de 49.600, una cifra que sitúa este artefacto muy por debajo de cualquier modelo funcional de clasificación o visión-lenguaje. El tamaño del repo es de 0,0 GB y las descargas y likes registrados son cero, lo que confirma que se trata de un experimento personal sin adopción pública.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la información disponible es explícita: no se ha e
 - Plantilla de estructura de repositorio: útil como referencia para ver cómo organizar `config.json`, `training_args.json`, `model.safetensors` y un script de evaluación en un proyecto de investigación propio.
 - Punto de partida para entrenamiento experimental: un investigador podría partir de la arquitectura tiny para adaptar la implementación Albef custom a sus propios datos etiquetados.
 - Reproducción de recetas de optimización: el par rmsprop + onecycle puede reutilizarse como baseline de configuración en experimentos comparativos.
-- Enseñanza de flujos de trabajo en HuggingFace: dado su tamaño mínimo, es un ejemplo manejable para ilustrar la carga de safetensors y la inspección de configuración.
+- Enseñanza de flujos de trabajo en Hugging Face: dado su tamaño mínimo, es un ejemplo manejable para ilustrar la carga de safetensors y la inspección de configuración.
 - Auditoría de repositorios: sirve como caso de estudio de un repo publicado sin métricas verificadas, útil para practicar la evaluación crítica de artefactos.
 - Advertencia: no es adecuado para ninguno de los casos de uso típicos de clasificación en producción (moderación, enrutamiento, análisis de sentimiento) porque no ha sido entrenado ni auditado.
 
@@ -86,4 +86,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hhongjungkook/albef-demo-2023
+- Modelo en Hugging Face: https://huggingface.co/hhongjungkook/albef-demo-2023

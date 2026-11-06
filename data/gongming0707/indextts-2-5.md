@@ -18,7 +18,7 @@ Es relevante porque cubre un hueco habitual en TTS zero-shot: el control fino de
 | Longitud de contexto | no disponible (modelo TTS; el texto largo se divide en segmentos) |
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen en safetensors y la inferencia admite bf16 (`use_bf16=True`) |
 | Idiomas soportados | chino (zh), inglés (en), japonés (ja), español (es), árabe (ar) |
-| Licencia | bilibili-model-license (campo `license: other` en HuggingFace) |
+| Licencia | bilibili-model-license (campo `license: other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Frecuencia de muestreo de salida | 22,05 kHz |
 | Tamaño del repositorio | 5,5 GB |
@@ -94,7 +94,7 @@ Solo se dispone de datos verificados para IndexTTS-2.5 y para la comparación cu
 
 ## Enlaces
 
-- Repositorio de HuggingFace consultado: https://huggingface.co/gongming0707/IndexTTS-2.5
+- Repositorio de Hugging Face consultado: https://huggingface.co/gongming0707/IndexTTS-2.5
 - Repositorio oficial citado en la model card: https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Repositorio de código: https://github.com/index-tts/index-tts
 - Informe técnico: https://arxiv.org/abs/2601.03888

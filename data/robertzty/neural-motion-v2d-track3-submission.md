@@ -4,7 +4,7 @@
 
 Neural Motion es la entrega del equipo homonimo para la Track 3 del NVIDIA Video-to-Data Challenge 2026, centrada en manipulacion diestra de extremo a extremo a partir de video egocentrico. No se trata de un modelo de lenguaje ni de un modelo fundacional al uso, sino de un contenedor de evaluacion que empaqueta una politica de control entrenada con aprendizaje por refuerzo, junto con los artefactos necesarios para reproducir la evaluacion en las seis tablas de la competicion.
 
-El repositorio de HuggingFace funciona como punto de publicacion del contenedor de envio (formato tarball comprimido con zstd y cargado como imagen Docker). La model card indica que el contenedor se esta reconstruyendo con los identificadores de envio de Kaggle de la subida contabilizada, y que la pagina listara el tarball, su sha256 y el image id cuando este disponible. En el momento de redactar esta ficha no se ha publicado aun el artefacto final.
+El repositorio de Hugging Face funciona como punto de publicacion del contenedor de envio (formato tarball comprimido con zstd y cargado como imagen Docker). La model card indica que el contenedor se esta reconstruyendo con los identificadores de envio de Kaggle de la subida contabilizada, y que la pagina listara el tarball, su sha256 y el image id cuando este disponible. En el momento de redactar esta ficha no se ha publicado aun el artefacto final.
 
 La relevancia es acotada: se trata de una entrega de competicion con cero descargas y cero likes, publicada el 4 de noviembre de 2026. Su interes reside en el enfoque (video egocentrico a politica de manipulacion diestra, empaquetado reproducible sobre el evaluador FlashCHORD) y en la licencia Apache-2.0 del codigo y las politicas propias, no en un uso general como modelo de proposito general.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la informacion proporcionada otros envi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertzty/neural-motion-v2d-track3-submission
+- Repositorio en Hugging Face: https://huggingface.co/robertzty/neural-motion-v2d-track3-submission
 - Evaluador FlashCHORD (referenciado en la model card, commit `8c778f9`): no disponible como enlace directo en la informacion proporcionada
 - NVIDIA Video-to-Data Challenge 2026 (pagina oficial): no disponible en la informacion proporcionada

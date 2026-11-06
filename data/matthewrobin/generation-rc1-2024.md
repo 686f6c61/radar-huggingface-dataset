@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mixer for Generation es un repositorio de HuggingFace publicado por el usuario matthewrobin que contiene una implementación compacta y personalizada en PyTorch de una arquitectura de tipo Mixer orientada a tareas de generación. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido, `model.safetensors`, es una inicialización válida para esas pruebas, no un modelo entrenado con resultados verificables.
+Mixer for Generation es un repositorio de Hugging Face publicado por el usuario matthewrobin que contiene una implementación compacta y personalizada en PyTorch de una arquitectura de tipo Mixer orientada a tareas de generación. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida experimental pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido, `model.safetensors`, es una inicialización válida para esas pruebas, no un modelo entrenado con resultados verificables.
 
-El dato de parámetros reportado por el repositorio es de 33.088 parámetros totales, lo que sitúa al artefacto en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en tareas reales. La configuración declarada corresponde a una escala denominada "xlarge" dentro del propio script, con atención flash, fusión mediante cross attention, activación GELU y normalización RMSNorm. El repositorio ocupa 0,0 GB según HuggingFace.
+El dato de parámetros reportado por el repositorio es de 33.088 parámetros totales, lo que sitúa al artefacto en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en tareas reales. La configuración declarada corresponde a una escala denominada "xlarge" dentro del propio script, con atención flash, fusión mediante cross attention, activación GELU y normalización RMSNorm. El repositorio ocupa 0,0 GB según Hugging Face.
 
 Su relevancia actual es limitada y de carácter metodológico: sirve como esqueleto reproducible para montar comparativas de arquitecturas, no como modelo para desplegar. La model card incide explícitamente en que no se reclama ninguna puntuación de benchmark y en que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. No se dispone de información sobre idiomas soportados, longitud de contexto ni pipeline de uso.
 
@@ -68,7 +68,7 @@ No disponible. No se han proporcionado modelos comparables en la información re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matthewrobin/generation-rc1-2024 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| matthewrobin/generation-rc1-2024 | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. No se han proporcionado modelos comparables en la información re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthewrobin/generation-rc1-2024
+- Modelo en Hugging Face: https://huggingface.co/matthewrobin/generation-rc1-2024
 - Búsqueda web realizada: sin resultados relevantes. Los enlaces devueltos correspondían a canales de Telegram y vídeos de TikTok sin relación alguna con el modelo, por lo que no se incluyen.

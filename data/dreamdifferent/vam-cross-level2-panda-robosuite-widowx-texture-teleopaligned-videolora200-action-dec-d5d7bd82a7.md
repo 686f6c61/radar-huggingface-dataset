@@ -72,5 +72,5 @@ No disponible. No se han proporcionado modelos comparables en la información su
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-d5d7bd82a7)
+- [Repositorio Hugging Face](https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-d5d7bd82a7)
 - Nota: los componentes congelados se referencian por ID en el README (backbone, LoRA y decodificador inicial), pero no se proporcionan URLs directas en la información dada.

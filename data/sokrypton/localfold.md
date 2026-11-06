@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LocalFold es una implementación end-to-end de AlphaFold 2 y AlphaFold 3 que se ejecuta íntegramente en el navegador mediante WebGPU, desarrollada por el laboratorio Ovchinnikov (MIT Biology) bajo el usuario sokrypton. El repositorio de HuggingFace contiene los pesos exportados y cuantizados específicamente para que la página [localfold.org](https://localfold.org) los cargue en el navegador, organizados en shards que se descargan en paralelo. No son checkpoints de entrenamiento, sino tensores empaquetados para inferencia en WebGPU.
+LocalFold es una implementación end-to-end de AlphaFold 2 y AlphaFold 3 que se ejecuta íntegramente en el navegador mediante WebGPU, desarrollada por el laboratorio Ovchinnikov (MIT Biology) bajo el usuario sokrypton. El repositorio de Hugging Face contiene los pesos exportados y cuantizados específicamente para que la página [localfold.org](https://localfold.org) los cargue en el navegador, organizados en shards que se descargan en paralelo. No son checkpoints de entrenamiento, sino tensores empaquetados para inferencia en WebGPU.
 
 El modelo resuelve el problema del plegamiento de proteínas sin necesidad de instalar Python, CUDA o descargar pesos masivos: cualquier navegador con soporte WebGPU puede ejecutar la predicción de estructura 3D a partir de una secuencia de aminoácidos o un alineamiento A3M. Incluye dos variantes: un export de AlphaFold 2 (modelo 1 PTM) de 227 MB en int8, y un export de AlphaFold 3 (trunk, difusión y cabezas de confianza) de 265 MB en int5. La relevancia actual radica en democratizar el acceso a herramientas de biología estructural de alto nivel, eliminando la barrera de infraestructura.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Los pesos ocupan 227 MB (AF2) y 265 MB (AF3), por lo que caben en cualquier GPU integrada o discreta moderna.
 - No se requiere VRAM dedicada específica; la memoria se gestiona dinámicamente en el navegador.
 - Sin necesidad de GPU NVIDIA específica; funciona con GPUs AMD, Intel y Apple Silicon que soporten WebGPU.
-- Despliegue: no requiere servidor; la página localfold.org carga los shards desde HuggingFace. Para uso local, se puede servir el repositorio estáticamente.
+- Despliegue: no requiere servidor; la página localfold.org carga los shards desde Hugging Face. Para uso local, se puede servir el repositorio estáticamente.
 - Latencia y throughput: no disponibles; dependen del hardware del cliente y del tamaño de la proteína.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ LocalFold se distingue por ejecutarse sin instalación y en cualquier dispositiv
 
 ## Enlaces
 
-- [HuggingFace: sokrypton/localfold](https://huggingface.co/sokrypton/localfold)
+- [Hugging Face: sokrypton/localfold](https://huggingface.co/sokrypton/localfold)
 - [GitHub: sokrypton/localfold](https://github.com/sokrypton/localfold)
 - [Sitio web: localfold.org](https://localfold.org)
 - [AlphaFold 3 Model Parameters Terms of Use](https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md)

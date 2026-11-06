@@ -97,9 +97,9 @@ Notas del autor: el resultado de 2.688,13 tok/s es una sola ejecucion, no una me
 
 | Modelo | Parametros | Contexto | Cuantizacion | Precisión reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B-atdev-c32 | 27B nominal (overlay 12,5 GB) | No disponible | W4A4 GPTQ + Hadamard128 | MMLU-Pro 72,79%; HumanEval 95,12%; GSM8K 94,69% | Apache-2.0 | HuggingFace, requiere atdev-serve |
-| RedHatAI/Qwen3.8-27B-INT4 (base) | 27B | No disponible | INT4 GPTQ | Referencia del perfil: MMLU-Pro 71,71%; HumanEval 95,73%; GSM8K 1248/1319 | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3.8-27B (BF16 original) | 27B | No disponible | BF16 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.8-27B-atdev-c32 | 27B nominal (overlay 12,5 GB) | No disponible | W4A4 GPTQ + Hadamard128 | MMLU-Pro 72,79%; HumanEval 95,12%; GSM8K 94,69% | Apache-2.0 | Hugging Face, requiere atdev-serve |
+| RedHatAI/Qwen3.8-27B-INT4 (base) | 27B | No disponible | INT4 GPTQ | Referencia del perfil: MMLU-Pro 71,71%; HumanEval 95,73%; GSM8K 1248/1319 | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3.8-27B (BF16 original) | 27B | No disponible | BF16 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion se limita a los tres modelos referenciados en la documentacion del autor. No se dispone de datos de benchmarks de terceros ni de alternativas de otros fabricantes para esta categoria en la informacion proporcionada.
 
@@ -118,7 +118,7 @@ La comparacion se limita a los tres modelos referenciados en la documentacion de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atdev-company/Qwen3.8-27B-atdev-c32
+- Hugging Face: https://huggingface.co/atdev-company/Qwen3.8-27B-atdev-c32
 - Repositorio atdev-serve: https://github.com/atdev-company/atdev-serve
 - Comparativa completa de perfiles de precision: https://github.com/atdev-company/atdev-serve/blob/main/docs/ACCURACY.md
 - Manual de configuracion con IA: https://github.com/atdev-company/atdev-serve/blob/main/AI_SETUP.md

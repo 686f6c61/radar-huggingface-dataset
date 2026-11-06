@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azherali/math_16bit` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por Azher Ali, ingeniero de datos y ML con experiencia en sistemas de IA de extremo a extremo. El nombre del repositorio sugiere que el modelo fue entrenado especificamente para razonamiento matematico y que sus pesos se almacenan en precision de 16 bits (BF16/FP16), lo que se confirma por el tamano del repositorio (16,4 GB para 8,19 mil millones de parametros). El entrenamiento se realizo con la libreria Unsloth y HuggingFace TRL, logrando una velocidad de entrenamiento 2x superior a un ajuste convencional.
+`azherali/math_16bit` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por Azher Ali, ingeniero de datos y ML con experiencia en sistemas de IA de extremo a extremo. El nombre del repositorio sugiere que el modelo fue entrenado especificamente para razonamiento matematico y que sus pesos se almacenan en precision de 16 bits (BF16/FP16), lo que se confirma por el tamano del repositorio (16,4 GB para 8,19 mil millones de parametros). El entrenamiento se realizo con la libreria Unsloth y Hugging Face TRL, logrando una velocidad de entrenamiento 2x superior a un ajuste convencional.
 
 El modelo hereda la arquitectura densa de Qwen3-8B y se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Aunque la model card es minima y no detalla el dataset de entrenamiento ni los resultados de benchmarks, el modelo se posiciona como una opcion para tareas de razonamiento numerico y matematico. Con cero descargas y cero likes, se trata de un proyecto experimental o personal mas que de un modelo ampliamente adoptado por la comunidad.
 
@@ -21,7 +21,7 @@ El modelo hereda la arquitectura densa de Qwen3-8B y se publica bajo licencia Ap
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de Qwen3-8B, un transformer denso con atencion por grupos (Grouped Query Attention, GQA), activacion SwiGLU y embeddings rotatorios (RoPE). Al ser un fine-tune, hereda la arquitectura completa del base, incluyendo su ventana de contexto de 32K tokens. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que permitio una velocidad de entrenamiento aproximadamente 2 veces superior a un pipeline estandar de fine-tuning.
+El modelo es un ajuste fino de Qwen3-8B, un transformer denso con atencion por grupos (Grouped Query Attention, GQA), activacion SwiGLU y embeddings rotatorios (RoPE). Al ser un fine-tune, hereda la arquitectura completa del base, incluyendo su ventana de contexto de 32K tokens. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que permitio una velocidad de entrenamiento aproximadamente 2 veces superior a un pipeline estandar de fine-tuning.
 
 La model card no proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas como RLHF, DPO o SFT con supervisores. El nombre del repositorio ("math_16bit") sugiere que el dataset estaba orientado a problemas de matematicas, pero esto no se confirma en la documentacion. La precision de 16 bits en los pesos guardados es coherente con el tamano del repositorio (16,4 GB para 8,19B parametros).
 
@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion 4-bit: aproximadamente 5-7 GB.
 - GPUs recomendadas para 16-bit: NVIDIA RTX 3090 (24 GB), RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB).
 - GPUs compatibles con cuantizacion 4-bit en consumer: RTX 3060 (12 GB), RTX 4070 (12 GB), RTX 4080 (16 GB).
-- Opciones de despliegue: vLLM, llama.cpp (con GGUF), Ollama, HuggingFace TGI, y transformers nativo de HuggingFace.
-- El modelo se marca como "endpoints_compatible" en HuggingFace, lo que facilita su despliegue en infraestructura gestionada.
+- Opciones de despliegue: vLLM, llama.cpp (con GGUF), Ollama, Hugging Face TGI, y transformers nativo de Hugging Face.
+- El modelo se marca como "endpoints_compatible" en Hugging Face, lo que facilita su despliegue en infraestructura gestionada.
 
 ## Comparativa con modelos similares
 
@@ -80,8 +80,8 @@ El modelo se posiciona como un competidor directo de Mathstral y DeepSeek-R1-Dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/azherali/math_16bit
-- Perfil del autor en HuggingFace: https://huggingface.co/azherali
+- Repositorio Hugging Face: https://huggingface.co/azherali/math_16bit
+- Perfil del autor en Hugging Face: https://huggingface.co/azherali
 - Modelos del autor: https://huggingface.co/azherali/models
 - Datasets del autor: https://huggingface.co/azherali/datasets
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

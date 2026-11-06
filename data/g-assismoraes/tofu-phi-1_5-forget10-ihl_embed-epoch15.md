@@ -84,7 +84,7 @@ La comparación directa de rendimiento no está disponible porque el checkpoint 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch15
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch15
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

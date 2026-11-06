@@ -86,7 +86,7 @@ No se dispone de datos comparativos de otros especuladores (DFlash, EAGLE, Medus
 
 ## Enlaces
 
-- [HuggingFace: RadixArk/Qwen3.8-27B-DSpark](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
+- [Hugging Face: RadixArk/Qwen3.8-27B-DSpark](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
 - [Modelo objetivo: Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
 - [DFlash (base del proyecto)](https://github.com/z-lab/dflash)
 - [SpecForge (librería de entrenamiento)](https://github.com/sgl-project/SpecForge)

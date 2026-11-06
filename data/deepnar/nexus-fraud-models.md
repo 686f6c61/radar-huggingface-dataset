@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NEXUS-Fraud-Models es un conjunto de artefactos de detección de fraude publicados por el usuario Deepnar en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de cuatro cabezas de clasificación entrenadas con XGBoost (gradient boosted decision trees) que cubren cuatro tareas: fraude en transacciones, phishing en mensajes, phishing en URL y un baseline de recuento de mensajes. Los artefactos son directamente insertables en el repositorio NEXUS-Fraud-Detection, un fork de Rishit1769/NEXUS-Fraud-Detection, de modo que el servicio FastAPI (`ml/service.py`) los carga sin cambios de código.
+NEXUS-Fraud-Models es un conjunto de artefactos de detección de fraude publicados por el usuario Deepnar en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de cuatro cabezas de clasificación entrenadas con XGBoost (gradient boosted decision trees) que cubren cuatro tareas: fraude en transacciones, phishing en mensajes, phishing en URL y un baseline de recuento de mensajes. Los artefactos son directamente insertables en el repositorio NEXUS-Fraud-Detection, un fork de Rishit1769/NEXUS-Fraud-Detection, de modo que el servicio FastAPI (`ml/service.py`) los carga sin cambios de código.
 
 El modelo resuelve un problema acotado y realista: proporcionar señales de scoring probabilistico que complementan, pero nunca sustituyen, a las reglas deterministas del sistema NEXUS. Cada cabeza incluye su propio `metrics.json`, `thresholds.json` (puntos de operación con recall mayor o igual a 0,80), `feature_manifest.json`, `split_manifest.json` y `training_manifest.json`, lo que permite auditar la procedencia y los umbrales de decisión de cada componente.
 
@@ -23,11 +23,11 @@ Su relevancia es práctica más que arquitectónica: ofrece un pipeline de artef
 | Autor | Deepnar |
 | Libreria declarada | xgboost |
 | Etiquetas | xgboost, joblib, fraud-detection, phishing, nexus |
-| Tamano del repositorio | 0.0 GB (según HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (HuggingFace) | 2026-09-23 |
-| Fecha de actualizacion (HuggingFace) | 2026-09-24 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Fecha de creacion (Hugging Face) | 2026-09-23 |
+| Fecha de actualizacion (Hugging Face) | 2026-09-24 |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: no aplica. Son árboles XGBoost serializados en JSON más un vectorizador TF-IDF en joblib; la inferencia se ejecuta en CPU.
 - GPU recomendadas: no aplica. No se requiere GPU para servir estos artefactos.
 - Compatibilidad con GPU de consumo: no aplica en el sentido de VRAM, ya que el despliegue previsto es en CPU. Cualquier equipo capaz de ejecutar el servicio FastAPI de NEXUS puede servirlos.
-- Memoria RAM: no disponible con cifras concretas; está acotada por el tamaño del vectorizador TF-IDF y del conjunto de árboles, que no se documenta. El repositorio completo figura como 0.0 GB en HuggingFace, lo que sugiere artefactos de tamaño reducido.
+- Memoria RAM: no disponible con cifras concretas; está acotada por el tamaño del vectorizador TF-IDF y del conjunto de árboles, que no se documenta. El repositorio completo figura como 0.0 GB en Hugging Face, lo que sugiere artefactos de tamaño reducido.
 - Opciones de despliegue: servicio FastAPI del propio NEXUS (`ml/service.py`), copiando los directorios en `ml/artifacts/<task>/<version>/` o apuntando la variable de entorno `MODEL_ARTIFACT_ROOT` a este repositorio. Carga directa en Python con la librería `xgboost` (ficheros `model.json`) y `joblib` (ficheros `calibration_model.joblib` y `vectorizer.joblib`).
 - Latencia y throughput estimados: no disponible. No se publican medidas de latencia ni de peticiones por segundo.
 - Nota de escalado: el entrenamiento con Optuna y la calibración isotónica sí pueden beneficiarse de CPU multinúcleo o de GPU, pero eso corresponde a la fase de reentrenamiento, no a la de inferencia.
@@ -112,13 +112,13 @@ Comparativa con modelos de terceros: no disponible.
 - Alucinación: el concepto no aplica a un clasificador, pero sí su equivalente funcional, la clasificación errónea con alta confianza. No se publican curvas de fiabilidad más allá de la calibración isotónica de la cabeza de transacciones.
 - Validación comunitaria: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y un tamaño declarado de 0.0 GB, lo que apunta a un artefacto recién publicado y sin verificación independiente.
 - Licencia: MIT, permisiva, permite uso comercial y modificación sin restricciones más allá de la conservación del aviso de copyright. No se declaran restricciones adicionales.
-- Fechas: las marcas de creación y actualización de HuggingFace son del 23 y 24 de septiembre de 2026, según los metadatos del repositorio.
+- Fechas: las marcas de creación y actualización de Hugging Face son del 23 y 24 de septiembre de 2026, según los metadatos del repositorio.
 - Producción: no se publican latencias, throughput, garantías de disponibilidad ni pruebas de carga. Cualquier despliegue debería acompañarse de su propia validación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Deepnar/NEXUS-Fraud-Models
+- Repositorio en Hugging Face: https://huggingface.co/Deepnar/NEXUS-Fraud-Models
 - Repositorio de código NEXUS Fraud Detection (fork del autor): https://github.com/Deepnar/NEXUS-Fraud-Detection
 - Repositorio original del que deriva el fork: https://github.com/Rishit1769/NEXUS-Fraud-Detection
-- Model card del autor: incluida en el README del repositorio de HuggingFace
+- Model card del autor: incluida en el README del repositorio de Hugging Face
 - Paper, blog o demo adicional: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeus-3b-gguf es un modelo de lenguaje conversacional de aproximadamente 3.212 millones de parametros (3,2 B) publicado por el usuario ZEUSmaker en HuggingFace. Se distribuye exclusivamente en formato GGUF, cuantizado, y esta pensado para su ejecucion local mediante llama.cpp y Ollama. Segun la model card, el modelo fue ajustado (fine-tuning) y convertido a GGUF con la libreria Unsloth, y el fichero de pesos incluido se denomina `Llama-3.2-3B-Instruct.Q4_K_M.gguf`, lo que sugiere que parte de un modelo base de la familia Llama 3.2 de 3 B en su variante Instruct, aunque el autor no lo declara de forma explicita.
+zeus-3b-gguf es un modelo de lenguaje conversacional de aproximadamente 3.212 millones de parametros (3,2 B) publicado por el usuario ZEUSmaker en Hugging Face. Se distribuye exclusivamente en formato GGUF, cuantizado, y esta pensado para su ejecucion local mediante llama.cpp y Ollama. Segun la model card, el modelo fue ajustado (fine-tuning) y convertido a GGUF con la libreria Unsloth, y el fichero de pesos incluido se denomina `Llama-3.2-3B-Instruct.Q4_K_M.gguf`, lo que sugiere que parte de un modelo base de la familia Llama 3.2 de 3 B en su variante Instruct, aunque el autor no lo declara de forma explicita.
 
 El repositorio tiene un tamano aproximado de 2,0 GB y solo incluye un fichero de pesos en cuantizacion Q4_K_M, ademas de un Modelfile para Ollama. No se especifican en la informacion disponible ni la licencia, ni los idiomas soportados, ni la longitud de contexto, ni el pipeline declarado. El modelo se publico y se actualizo el 19 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin traccion ni validacion por parte de la comunidad.
 
@@ -92,7 +92,7 @@ La ventaja principal del modelo evaluado es la disponibilidad inmediata en GGUF 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZEUSmaker/zeus-3b-gguf
+- Modelo en Hugging Face: https://huggingface.co/ZEUSmaker/zeus-3b-gguf
 - Unsloth (libreria usada para el fine-tuning y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF recomendado por el autor): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

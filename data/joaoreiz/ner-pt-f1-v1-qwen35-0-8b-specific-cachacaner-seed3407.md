@@ -80,7 +80,7 @@ No se dispone de resultados comparativos publicados entre estos modelos. Como al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed3407
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-cachacaner-seed3407
 - Modelo similar (2B, harem): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed42
 - Modelo similar (4B, cachacaner): https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed3407
 - Modelo similar (2B, lener-br) en FriendliAI: https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed3407

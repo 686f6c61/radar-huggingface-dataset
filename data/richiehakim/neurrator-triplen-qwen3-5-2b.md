@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`richiehakim/neurrator-triplen-qwen3.5-2b` es un artefacto de decodificación cerebral, no un modelo de lenguaje nuevo. Escribe una leyenda de una frase para una foto a partir de las respuestas de 35.494 unidades registradas en el córtex visual de macacos mientras veían esa foto. Lo publica el usuario de HuggingFace `richiehakim` sobre el dataset Triple-N (Li et al., *Nature Neuroscience* 29, 1999-2011, 2026) y el modelo base declarado es `Qwen/Qwen3.5-2B`, que no se ha reentrenado.
+`richiehakim/neurrator-triplen-qwen3.5-2b` es un artefacto de decodificación cerebral, no un modelo de lenguaje nuevo. Escribe una leyenda de una frase para una foto a partir de las respuestas de 35.494 unidades registradas en el córtex visual de macacos mientras veían esa foto. Lo publica el usuario de Hugging Face `richiehakim` sobre el dataset Triple-N (Li et al., *Nature Neuroscience* 29, 1999-2011, 2026) y el modelo base declarado es `Qwen/Qwen3.5-2B`, que no se ha reentrenado.
 
 Técnicamente es una composición de tres piezas: un mapa ridge de rango reducido (rango 512) que predice la entrada visual de Qwen a partir de las respuestas neuronales, una red add-on de 2,2 millones de parámetros entrenada por refuerzo que corrige los 169 tokens de esa entrada, y Qwen3.5-2B congelado que genera la leyenda con decodificación greedy. Se ajustó con 810 fotos y se evaluó con 100 fotos no vistas durante el ajuste.
 
@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Configuración | Componentes | Parámetros añadidos | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ridge + add-on | Mapa ridge + add-on + Qwen3.5-2B congelado | 2,2 M (add-on) + mapa ridge | 35.494 respuestas neuronales | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Ridge + add-on | Mapa ridge + add-on + Qwen3.5-2B congelado | 2,2 M (add-on) + mapa ridge | 35.494 respuestas neuronales | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Ridge only | Mapa ridge + Qwen3.5-2B congelado | Mapa ridge | 35.494 respuestas neuronales | No disponible | Mismo repositorio, flag `--models ridge_only` |
 | Alternativas externas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richiehakim/neurrator-triplen-qwen3.5-2b
+- Modelo en Hugging Face: https://huggingface.co/richiehakim/neurrator-triplen-qwen3.5-2b
 - Copia del modelo base usada por el script: https://huggingface.co/richiehakim/Qwen3.5-2B (revisión `468061465adc1d153fa83f7877d0d5fe63512faf`)
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-2B (revisión `15852e8c16360a2fea060d615a32b45270f8a8fc`)
 - Paper del dataset Triple-N: https://www.nature.com/articles/s41593-026-02322-z

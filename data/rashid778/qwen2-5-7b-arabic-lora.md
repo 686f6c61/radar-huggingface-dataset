@@ -81,7 +81,7 @@ La comparacion directa no es posible sin benchmarks, pero el adaptador ofrece la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RASHID778/qwen2.5-7b-arabic-lora
+- Hugging Face: https://huggingface.co/RASHID778/qwen2.5-7b-arabic-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yasbok/Alpaca_arabic_instruct
 - Modelo base (cuantizado 4 bits): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

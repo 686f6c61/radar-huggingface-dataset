@@ -1,7 +1,7 @@
 # kepler2005/Gender-Classifier-Mini
 
 ## Resumen
-Gender-Classifier-Mini es un modelo de clasificación de imágenes binaria desarrollado por kepler2005 y publicado en HuggingFace. Se trata de un encoder vision-lenguaje fine-tuned a partir de google/siglip2-base-patch16-224, diseñado para predecir el género aparente (masculino o femenino) a partir de imágenes, principalmente rostros. Utiliza la arquitectura SiglipForImageClassification de la librería Transformers y se entrena sobre el dataset myvision/gender-classification.
+Gender-Classifier-Mini es un modelo de clasificación de imágenes binaria desarrollado por kepler2005 y publicado en Hugging Face. Se trata de un encoder vision-lenguaje fine-tuned a partir de google/siglip2-base-patch16-224, diseñado para predecir el género aparente (masculino o femenino) a partir de imágenes, principalmente rostros. Utiliza la arquitectura SiglipForImageClassification de la librería Transformers y se entrena sobre el dataset myvision/gender-classification.
 
 El problema que resuelve es la clasificación demográfica automática de imágenes en dos clases: "Female ♀" (clase 0) y "Male ♂" (clase 1). Según la model card, alcanza una accuracy y un F1 score de 0,9720 sobre un conjunto de evaluación de 5.000 imágenes, lo que lo sitúa como una opción ligera y precisa para tareas de análisis demográfico.
 
@@ -30,7 +30,7 @@ El fine-tuning se realiza sobre el dataset myvision/gender-classification, un co
 - Inferencia de imagen única mediante el pipeline image-classification de Transformers, compatible con AutoImageProcessor.
 - Procesamiento de imágenes RGB a resolución 224x224.
 - Integración sencilla con Gradio para demos interactivas (el propio README incluye un ejemplo funcional).
-- Compatibilidad con Inference Endpoints de HuggingFace (endpoints_compatible).
+- Compatibilidad con Inference Endpoints de Hugging Face (endpoints_compatible).
 - No soporta tool calling, agentes, razonamiento multi-paso, ni generación de texto: es un clasificador puro de visión.
 
 ## Casos de uso
@@ -62,7 +62,7 @@ No se han publicado comparaciones con otros clasificadores de género ni resulta
 - VRAM estimada para inferencia: con 92,9 millones de parámetros, unos 372 MB en FP32 y la mitad en FP16/BF16; en la práctica, 1-2 GB de VRAM son suficientes incluyendo el procesador de imagen.
 - GPU recomendadas: cualquier GPU moderna; no requiere A100 ni H100. Una RTX 3060, RTX 4060 o superior es más que suficiente.
 - Ejecución en consumer GPU: sí, sobradamente. También es viable la inferencia en CPU dada la reducida carga computacional de un modelo base de ~93M de parámetros a 224x224.
-- Opciones de despliegue: librería Transformers (SiglipForImageClassification), Inference Endpoints de HuggingFace, Gradio (ejemplo incluido en la model card), o cualquier servicio que sirva safetensors. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; al ser un modelo de clasificación de visión, vLLM y llama.cpp no son las vías habituales.
+- Opciones de despliegue: librería Transformers (SiglipForImageClassification), Inference Endpoints de Hugging Face, Gradio (ejemplo incluido en la model card), o cualquier servicio que sirva safetensors. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; al ser un modelo de clasificación de visión, vLLM y llama.cpp no son las vías habituales.
 - Latencia y throughput: no disponibles; por tamaño y resolución de entrada, se esperan inferencias en el orden de milisegundos en GPU, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Nota: la familia SigLIP2 de Google incluye variantes base, large y So400m; este 
 - Licencia apache-2.0: permite uso comercial sin restricciones significativas más allá de la atribución y el aviso de licencia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/kepler2005/Gender-Classifier-Mini
+- Modelo en Hugging Face: https://huggingface.co/kepler2005/Gender-Classifier-Mini
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Dataset de entrenamiento: https://huggingface.co/datasets/myvision/gender-classification
 - No hay paper, blog ni demo adicionales en la información disponible.

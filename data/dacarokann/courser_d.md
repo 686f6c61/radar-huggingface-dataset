@@ -4,7 +4,7 @@
 
 Courser_d es un adaptador LoRA desarrollado por dacarokann sobre el modelo base `unsloth/Qwen3.6-35B-A3B`, un modelo de lenguaje y visión (VLM) con arquitectura MoE de 35 mil millones de parámetros totales y 3 mil millones activos. El adaptador está especializado en la lectura e interpretación de planos de construcción de hormigón armado (คสล.) en tailandés, dentro del proyecto Constistant / STECON SS4. Su función principal es extraer información estructurada de dibujos técnicos: clasificar páginas, identificar subtareas, interpretar pistas de anotaciones y calcular cantidades de materiales.
 
-Este adaptador concreto corresponde al fold 3 de un total de 5 folds planificados (se ejecutaron 4), y el autor advierte que el modelo final usable es `dacarokann/destrier`, que combina los cuatro folds. La relevancia de Courser_d radica en que demuestra un enfoque de entrenamiento multi-tarea sobre un VLM MoE para dominios técnicos especializados, con una partición estratificada de datos que garantiza la representación de todas las tareas en validación. El modelo está disponible en HuggingFace, aunque sin descargas ni licencia especificada.
+Este adaptador concreto corresponde al fold 3 de un total de 5 folds planificados (se ejecutaron 4), y el autor advierte que el modelo final usable es `dacarokann/destrier`, que combina los cuatro folds. La relevancia de Courser_d radica en que demuestra un enfoque de entrenamiento multi-tarea sobre un VLM MoE para dominios técnicos especializados, con una partición estratificada de datos que garantiza la representación de todas las tareas en validación. El modelo está disponible en Hugging Face, aunque sin descargas ni licencia especificada.
 
 ## Especificaciones técnicas
 
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos similares específicos para lectura 
 
 ## Enlaces
 
-- [HuggingFace - dacarokann/Courser_d](https://huggingface.co/dacarokann/Courser_d)
-- [HuggingFace - dacarokann/destrier (modelo final con los 4 folds)](https://huggingface.co/dacarokann/destrier)
-- [HuggingFace - unsloth/Qwen3.6-35B-A3B (modelo base)](https://huggingface.co/unsloth/Qwen3.6-35B-A3B)
+- [Hugging Face - dacarokann/Courser_d](https://huggingface.co/dacarokann/Courser_d)
+- [Hugging Face - dacarokann/destrier (modelo final con los 4 folds)](https://huggingface.co/dacarokann/destrier)
+- [Hugging Face - unsloth/Qwen3.6-35B-A3B (modelo base)](https://huggingface.co/unsloth/Qwen3.6-35B-A3B)

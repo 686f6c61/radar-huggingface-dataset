@@ -92,7 +92,7 @@ La comparación es aproximada: no se dispone de datos que confirmen la arquitect
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Uzikuroshi/G2-Darkest-Writer-Dirty-Shirley-9B-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Uzikuroshi/G2-Darkest-Writer-Dirty-Shirley-9B-v2-i1-GGUF
 - Modelo base: https://huggingface.co/OccultAI/G2-Darkest-Writer-Dirty-Shirley-9B-v2
 - Cuantizaciones estáticas del mismo modelo (mradermacher): https://huggingface.co/mradermacher/G2-Darkest-Writer-Dirty-Shirley-9B-v2-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#G2-Darkest-Writer-Dirty-Shirley-9B-v2-i1-GGUF

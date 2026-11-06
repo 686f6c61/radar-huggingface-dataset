@@ -58,5 +58,5 @@ No disponible. No se conocen adaptadores comparables en el mismo repositorio ni 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/aqsahuggingface/hr-lora-qlora-adapter)
+- [Repositorio en Hugging Face](https://huggingface.co/aqsahuggingface/hr-lora-qlora-adapter)
 - Modelo base: [Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct) (enlace inferido, no verificado en la información proporcionada)

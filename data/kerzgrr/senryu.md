@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Senryu es un modelo de lenguaje causal de tipo *chat* y 803 millones de parámetros (803.000.968 exactos según los pesos en safetensors) publicado por el usuario kerzgrr en HuggingFace. Es el sucesor de su modelo Haiku, con ocho capas más y un cambio de arquitectura: sustituye Kimi Delta Attention por Gated DeltaNet-2 y añade una consulta MLA de rango completo. La arquitectura es, por tanto, híbrida: combina capas de atención lineal con estado recurrente (Gated DeltaNet-2) y capas de atención con caché latente comprimida (gated MLA), lo que le permite operar con una ventana de 32.768 tokens en un tamaño muy reducido.
+Senryu es un modelo de lenguaje causal de tipo *chat* y 803 millones de parámetros (803.000.968 exactos según los pesos en safetensors) publicado por el usuario kerzgrr en Hugging Face. Es el sucesor de su modelo Haiku, con ocho capas más y un cambio de arquitectura: sustituye Kimi Delta Attention por Gated DeltaNet-2 y añade una consulta MLA de rango completo. La arquitectura es, por tanto, híbrida: combina capas de atención lineal con estado recurrente (Gated DeltaNet-2) y capas de atención con caché latente comprimida (gated MLA), lo que le permite operar con una ventana de 32.768 tokens en un tamaño muy reducido.
 
 El modelo está orientado a tres capacidades concretas: razonamiento explícito en modo *thinking*, llamadas a herramientas en formato JSON estilo Hermes y conversación multi-turno con instrucciones. El entrenamiento se hizo en dos fases tras un preentrenamiento muy corto: un SFT a longitud de secuencia completa de 32.768 tokens sobre 6.700 millones de tokens (5.390 millones de tokens de asistente) y, después, un ajuste de preferencias con APO-zero sobre 22.517 pares *on-policy* generados por el propio modelo SFT y evaluados con Skywork-Reward-V2-Llama-3.1-8B más comprobaciones por reglas.
 
@@ -87,7 +87,7 @@ La comparación cualitativa es la siguiente: Senryu es el más pequeño del grup
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerzgrr/Senryu
+- Modelo en Hugging Face: https://huggingface.co/kerzgrr/Senryu
 - Demo (Space): https://huggingface.co/spaces/kerzgrr/senryu-demo
 - Modelo predecesor Haiku: https://huggingface.co/kerzgrr/Haiku
 - Reward model usado en APO: https://huggingface.co/Skywork/Skywork-Reward-V2-Llama-3.1-8B
@@ -119,4 +119,4 @@ La comparación cualitativa es la siguiente: Senryu es el más pequeño del grup
 - Paper o blog técnico del modelo: no disponible
 - Repositorio de código independiente: no disponible (solo el `inference.py` y la carpeta `tiny_gdn/` incluidas en el repo del modelo)
 - Resultados de benchmarks: no disponible
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

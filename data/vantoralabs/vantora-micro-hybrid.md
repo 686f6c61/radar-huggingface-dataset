@@ -11,7 +11,7 @@ Su relevancia radica en demostrar que la arquitectura híbrida SSM+atención gen
 | Parametro | Valor |
 |---|---|
 | Arquitectura | HybridLM (Mamba-2 SSM + atención, patrón Falcon-H1 SA_M) |
-| Parametros totales | 11.256 (según model card; el campo de HuggingFace indica 21.512, posible discrepancia) |
+| Parametros totales | 11.256 (según model card; el campo de Hugging Face indica 21.512, posible discrepancia) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 256 tokens |
 | Tipos de cuantizacion | No disponible (pesos en float32) |
@@ -99,12 +99,12 @@ No se dispone de información sobre otros modelos de la misma escala (sub-10K pa
 - Solo inglés: no soporta otros idiomas.
 - Riesgo de alucinación alto: al ser un modelo base sin fine-tuning instructivo, puede generar texto incoherente o factualmente incorrecto.
 - Sesgos: entrenado exclusivamente con FineWeb-Edu, un subconjunto filtrado de web, lo que puede introducir sesgos de contenido educativo en inglés.
-- Dependencia de código custom: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor no auditado por HuggingFace.
-- Discrepancia en el número de parámetros: la model card indica 11.256, pero el campo de HuggingFace muestra 21.512; se recomienda verificar antes de usar.
+- Dependencia de código custom: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor no auditado por Hugging Face.
+- Discrepancia en el número de parámetros: la model card indica 11.256, pero el campo de Hugging Face muestra 21.512; se recomienda verificar antes de usar.
 - Licencia MIT permite uso comercial, pero el modelo no tiene valor práctico para producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VantoraLabs/Vantora-Micro-Hybrid
+- Hugging Face: https://huggingface.co/VantoraLabs/Vantora-Micro-Hybrid
 - Modelo base (Vantora-Micro): https://huggingface.co/VantoraLabs/Vantora-Micro
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

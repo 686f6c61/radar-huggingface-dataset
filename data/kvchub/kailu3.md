@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaiLu 3 | 329M | 1.024 | Hibrida (convolucion corta + atencion) | KaiLu 3 License (gratuita solo para uso personal) | HuggingFace, transformers |
-| SmolLM2-360M | 362M | 8.192 (segun documentacion publica) | Transformer denso | Apache 2.0 | HuggingFace, transformers |
-| Qwen2.5-0.5B | 494M | 32.768 (segun documentacion publica) | Transformer denso | Apache 2.0 | HuggingFace, transformers |
-| LFM2-350M | 350M (aprox.) | no disponible | Hibrida (layout LFM2) | no disponible | HuggingFace |
+| KaiLu 3 | 329M | 1.024 | Hibrida (convolucion corta + atencion) | KaiLu 3 License (gratuita solo para uso personal) | Hugging Face, transformers |
+| SmolLM2-360M | 362M | 8.192 (segun documentacion publica) | Transformer denso | Apache 2.0 | Hugging Face, transformers |
+| Qwen2.5-0.5B | 494M | 32.768 (segun documentacion publica) | Transformer denso | Apache 2.0 | Hugging Face, transformers |
+| LFM2-350M | 350M (aprox.) | no disponible | Hibrida (layout LFM2) | no disponible | Hugging Face |
 
 La comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento comparativo de KaiLu 3 en benchmarks. KaiLu 3 destaca por su contexto mas corto (1.024 tokens) y su licencia restrictiva para uso comercial, frente a alternativas con licencias permisivas y ventanas mayores.
 
@@ -90,7 +90,7 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KVCHub/KaiLu3
+- Hugging Face: https://huggingface.co/KVCHub/KaiLu3
 - Sitio del autor: https://kvchub.com
 - Licencia (enlace referenciado en la model card, con marcador de posicion): https://huggingface.co/<your-username>/KaiLu-3/blob/main/LICENSE
 - Contacto comercial: mailto:hello@kvchub.com

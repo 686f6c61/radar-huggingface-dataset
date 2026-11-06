@@ -4,7 +4,7 @@
 
 El repositorio `Unded-17/netsentinel-models` aloja un conjunto de modelos etiquetados como ONNX bajo licencia Apache 2.0. La información pública disponible es extremadamente limitada: no se proporciona una descripción del modelo, ni pipeline, ni idiomas soportados, ni documentación técnica en la model card más allá de la licencia. El tamaño del repositorio es de 0,1 GB, lo que sugiere uno o varios archivos de pesos en formato ONNX, posiblemente orientados a tareas de detección de intrusiones o análisis de red, dado el nombre "netsentinel". Sin embargo, no existe confirmación oficial de su arquitectura, entrenamiento o capacidades.
 
-La relevancia actual de este modelo es incierta. No hay descargas ni valoraciones en HuggingFace, y los resultados de búsqueda web sobre "NetSentinel" corresponden a proyectos independientes (análisis de PCAP, detección de anomalías con Isolation Forest, etc.) que no están vinculados formalmente con este repositorio. Por tanto, cualquier uso en producción debería considerarse experimental y requeriría una validación exhaustiva.
+La relevancia actual de este modelo es incierta. No hay descargas ni valoraciones en Hugging Face, y los resultados de búsqueda web sobre "NetSentinel" corresponden a proyectos independientes (análisis de PCAP, detección de anomalías con Isolation Forest, etc.) que no están vinculados formalmente con este repositorio. Por tanto, cualquier uso en producción debería considerarse experimental y requeriría una validación exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No disponible. No se han identificado modelos comparables con los que establecer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unded-17/netsentinel-models
-- Perfil del autor en HuggingFace: https://huggingface.co/Unded-17
+- Repositorio Hugging Face: https://huggingface.co/Unded-17/netsentinel-models
+- Perfil del autor en Hugging Face: https://huggingface.co/Unded-17
 - Proyecto NetSentinel (no afiliado, solo referencia): https://github.com/VishnuThurvas/NetSentinel---AI_PCAP_ANALYZER
 - Proyecto NetSentinel AI (no afiliado, solo referencia): https://github.com/Surajvinaykumar/NetSentinal-AI

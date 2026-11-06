@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DPO_ablations_qwen_ultrafeedback_everything-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo ketchup123/DPO_ablations_qwen_ultrafeedback_everything, publicada por mradermacher, un conocido autor de cuantizaciones en HuggingFace. El modelo original es un fine-tuning por DPO (Direct Preference Optimization) sobre una base de la familia Qwen, orientado a experimentos de ablación con el dataset UltraFeedback. El nombre sugiere que se trata de un checkpoint de investigación más que de un modelo listo para producción.
+DPO_ablations_qwen_ultrafeedback_everything-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo ketchup123/DPO_ablations_qwen_ultrafeedback_everything, publicada por mradermacher, un conocido autor de cuantizaciones en Hugging Face. El modelo original es un fine-tuning por DPO (Direct Preference Optimization) sobre una base de la familia Qwen, orientado a experimentos de ablación con el dataset UltraFeedback. El nombre sugiere que se trata de un checkpoint de investigación más que de un modelo listo para producción.
 
 El modelo cuenta con aproximadamente 7.615 millones de parámetros (7,6B), lo que lo sitúa en la categoría de modelos de tamaño medio, adecuados para despliegue en GPUs de consumo con cuantizaciones agresivas. La información pública disponible es muy limitada: la model card del repositorio GGUF se limita a describir las cuantizaciones ofrecidas y no incluye detalles sobre arquitectura, contexto, licencia ni datos de entrenamiento del modelo base.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep` es un derivado de Llama-3.1-8B-Instruct publicado por el usuario Jongbin-kr en HuggingFace. Su propio identificador describe la intervención realizada: la capa feed-forward (FFN) del transformer original se habría reestructurado como una mezcla de expertos (MoE) de tipo 4x1, con un enrutador propio y adaptadores LoRA sobre el FFN, seguida de un ajuste supervisado (SFT) de 5 épocas. Ninguno de estos extremos está confirmado por la model card, que no aporta descripción técnica, y el repositorio solo declara la etiqueta `safetensors` y la región `us`.
+El modelo `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep` es un derivado de Llama-3.1-8B-Instruct publicado por el usuario Jongbin-kr en Hugging Face. Su propio identificador describe la intervención realizada: la capa feed-forward (FFN) del transformer original se habría reestructurado como una mezcla de expertos (MoE) de tipo 4x1, con un enrutador propio y adaptadores LoRA sobre el FFN, seguida de un ajuste supervisado (SFT) de 5 épocas. Ninguno de estos extremos está confirmado por la model card, que no aporta descripción técnica, y el repositorio solo declara la etiqueta `safetensors` y la región `us`.
 
 La relevancia de este tipo de publicación es experimental: se enmarca en la línea de trabajos que intentan convertir modelos densos ya entrenados en arquitecturas dispersas *a posteriori* (upcycling de FFN a MoE) para aumentar la capacidad sin reentrenar desde cero. El interés práctico, sin embargo, está muy condicionado por la ausencia total de documentación: no hay licencia declarada, ni idiomas, ni pipeline, ni resultados de evaluación.
 
@@ -79,7 +79,7 @@ La comparativa se establece contra alternativas de tamano y categoria equivalent
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | Llama-3.1-8B-Instruct | 8 030 millones | 131 072 tokens | Llama 3.1 Community License | Pesos completos y ampliamente soportado |
 | Qwen2.5-7B-Instruct | 7 610 millones | 131 072 tokens (32 768 nativos, ampliables con YaRN) | Apache 2.0 | Pesos completos y ampliamente soportado |
 | Mistral-7B-Instruct-v0.3 | 7 250 millones | 32 768 tokens | Apache 2.0 | Pesos completos y ampliamente soportado |
@@ -101,5 +101,5 @@ No se dispone de datos de rendimiento del modelo analizado para establecer compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep
+- Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-router-ffn-lora-sft-5ep
 - No se han encontrado enlaces adicionales relevantes. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su autor ni su arquitectura; los unicos resultados obtenidos pertenecen a un portal polaco de anuncios sin vinculacion con el proyecto.

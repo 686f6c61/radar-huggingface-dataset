@@ -16,7 +16,7 @@ La version GGUF permite ejecutar el modelo con runtimes compatibles con llama.cp
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (niveles concretos no disponibles en la informacion proporcionada) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (licencia "other", acceso con gate en HuggingFace) |
+| Licencia | swift-open-license-1.0 (licencia "other", acceso con gate en Hugging Face) |
 | Formato de pesos | GGUF (version base en safetensors) |
 
 ## Arquitectura y entrenamiento

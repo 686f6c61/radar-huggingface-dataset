@@ -33,7 +33,7 @@ El entrenamiento es un SFT clasico con perdida de next-token sobre la respuesta.
 - Resolucion de problemas de matematicas de nivel competitivo procedentes del dataset DeepScaleR, con cadenas de razonamiento de hasta 4.000 tokens en los datos de entrenamiento.
 - Ajuste especifico para respetar un presupuesto de tokens en la respuesta, que es el objeto de estudio del envio a ICLR 2027.
 - Conversacion multi-turno: la etiqueta `conversational` indica que el modelo se ha preparado para plantillas de chat, y la model card usa la plantilla del modelo base.
-- Compatibilidad con despliegue estandar de transformers (safetensors + BF16) y con servidores compatibles con el endpoint de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con despliegue estandar de transformers (safetensors + BF16) y con servidores compatibles con el endpoint de Hugging Face (`endpoints_compatible`).
 - Capacidades multimodales: el pipeline `image-text-to-text` del modelo base sugiere entrada de imagen, pero no se documenta ningun entrenamiento ni evaluacion multimodal en este checkpoint, por lo que no debe asumirse.
 - Tool calling, function calling, agentes y multi-step reasoning: no documentados en la informacion disponible.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-4k-sft-pumpedjackal-s90 | 4,66 mil millones | Entrenamiento a 18.432 tokens; contexto de inferencia no disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | La del modelo base (no confirmada en esta ficha) | HuggingFace, modelo de referencia |
+| qwen3.5-4b-4k-sft-pumpedjackal-s90 | 4,66 mil millones | Entrenamiento a 18.432 tokens; contexto de inferencia no disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | La del modelo base (no confirmada en esta ficha) | Hugging Face, modelo de referencia |
 | Otras alternativas de ~4B especializadas en matematicas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo puede compararse con garantias frente a su modelo base, Qwen/Qwen3.5-4B, del que hereda arquitectura, tokenizador y licencia; la diferencia es el ajuste SFT sobre soluciones autofiltradas de DeepScaleR. No se dispone de datos de benchmarks del checkpoint como para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ Solo puede compararse con garantias frente a su modelo base, Qwen/Qwen3.5-4B, de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-pumpedjackal-s90
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-pumpedjackal-s90
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada (el envio a ICLR 2027 es anonimo y no se enlaza desde la model card)

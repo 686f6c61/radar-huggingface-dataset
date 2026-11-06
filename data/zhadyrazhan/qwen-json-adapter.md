@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zhadyrazhan/qwen-json-adapter es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario zhadyrazhan sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-1.5B-Instruct de Alibaba. El repositorio ocupa apenas 0,1 GB, lo que apunta a un adaptador de tipo LoRA mas que a un modelo completo de pesos, aunque la model card no lo confirma explicitamente. La nomenclatura "json-adapter" sugiere una especializacion hacia la generacion de salidas estructuradas en formato JSON, si bien el autor no documenta el objetivo concreto ni el conjunto de datos empleado.
+zhadyrazhan/qwen-json-adapter es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario zhadyrazhan sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-1.5B-Instruct de Alibaba. El repositorio ocupa apenas 0,1 GB, lo que apunta a un adaptador de tipo LoRA mas que a un modelo completo de pesos, aunque la model card no lo confirma explicitamente. La nomenclatura "json-adapter" sugiere una especializacion hacia la generacion de salidas estructuradas en formato JSON, si bien el autor no documenta el objetivo concreto ni el conjunto de datos empleado.
 
 El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado para la libreria transformers y para text-generation-inference, y declara unicamente el idioma ingles. En el momento de redactar esta ficha acumula 0 descargas y 0 "me gusta", por lo que carece de validacion por parte de la comunidad y no existen resultados de benchmarks publicados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zhadyrazhan/qwen-json-adapter | ~1,5B (adaptador sobre Qwen2.5-1.5B) | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace, 0 descargas |
+| zhadyrazhan/qwen-json-adapter | ~1,5B (adaptador sobre Qwen2.5-1.5B) | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 tokens | Apache 2.0 (Qwen) | Ampliamente disponible |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
 | SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Ampliamente disponible |
@@ -83,7 +83,7 @@ La comparacion con adaptadores especificos de JSON no esta disponible, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhadyrazhan/qwen-json-adapter
+- Hugging Face: https://huggingface.co/zhadyrazhan/qwen-json-adapter
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Qwen2.5-1.5B-Instruct (origen del backbone): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

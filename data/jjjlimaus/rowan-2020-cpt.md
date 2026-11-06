@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rowan-2020-cpt es un modelo publicado en HuggingFace por el usuario jjjlimaus bajo el identificador `jjjlimaus/rowan-2020-cpt`. Se trata de un modelo de 1.345.484.800 parametros (aproximadamente 1,35 mil millones) almacenado en formato safetensors y etiquetado con la familia `llama`, lo que apunta a una arquitectura transformer decoder-only. El repositorio tiene un tamano de 142,6 GB y esta sujeto a acceso restringido (gated), de modo que cualquier descarga requiere aceptar previamente las condiciones en la plataforma.
+Rowan-2020-cpt es un modelo publicado en Hugging Face por el usuario jjjlimaus bajo el identificador `jjjlimaus/rowan-2020-cpt`. Se trata de un modelo de 1.345.484.800 parametros (aproximadamente 1,35 mil millones) almacenado en formato safetensors y etiquetado con la familia `llama`, lo que apunta a una arquitectura transformer decoder-only. El repositorio tiene un tamano de 142,6 GB y esta sujeto a acceso restringido (gated), de modo que cualquier descarga requiere aceptar previamente las condiciones en la plataforma.
 
 La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el repositorio no incluye model card con documentacion tecnica, no declara licencia, no especifica idiomas soportados ni longitud de contexto, y no se ha localizado ningun paper, blog o repositorio asociado. El modelo acumula 10 descargas y 0 "likes" desde su creacion el 11 de septiembre de 2026, lo que indica una validacion comunitaria practicamente nula.
 
@@ -18,10 +18,10 @@ Por el rango de parametros, el modelo se situa en la categoria de los modelos pe
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible. Solo se publican pesos en safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni EXL2 |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible. El acceso esta restringido (gated) mediante aceptacion de condiciones en HuggingFace |
+| Licencia | no disponible. El acceso esta restringido (gated) mediante aceptacion de condiciones en Hugging Face |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 142,6 GB |
-| Acceso | Restringido: requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido: requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 11 de septiembre de 2026 |
 | Ultima actualizacion | 12 de septiembre de 2026 |
 | Descargas / likes | 10 / 0 |
@@ -75,7 +75,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones calculadas a p
 - Despliegue: al publicarse exclusivamente en safetensors, las rutas naturales son `transformers`, `vLLM` y TGI. `llama.cpp` y Ollama requeririan una conversion a GGUF que el autor no ha publicado; tampoco existen variantes AWQ, GPTQ o EXL2.
 - Almacenamiento: la descarga completa del repositorio ocupa 142,6 GB, muy por encima de lo necesario para un unico conjunto de pesos de 1,35 mil millones de parametros.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia de primera token.
-- Acceso: al ser un repositorio gated, cualquier despliegue requiere primero aceptar las condiciones en HuggingFace y autenticarse con un token.
+- Acceso: al ser un repositorio gated, cualquier despliegue requiere primero aceptar las condiciones en Hugging Face y autenticarse con un token.
 
 ## Comparativa con modelos similares
 
@@ -105,9 +105,9 @@ No es posible comparar rendimiento en benchmarks porque rowan-2020-cpt no public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjjlimaus/rowan-2020-cpt
+- Hugging Face: https://huggingface.co/jjjlimaus/rowan-2020-cpt
 - Paper, blog o repositorio asociado: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Datos de benchmarks publicados: no disponible
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo ni con su autor. Los unicos resultados obtenidos fueron paginas de conversores de YouTube a MP3 (mp3cow.com, youaretube.com, turboscribe.ai, y2meta.pro, ytmp3.tube), completamente ajenas al modelo y sin ninguna relacion con el contenido de esta ficha.

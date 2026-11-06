@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`atltorres/study-matching47` es un prototipo de investigación publicado en HuggingFace por el usuario atltorres bajo el identificador "Mae for Matching". Se trata de un artefacto de tipo "tiny" cuyo propósito declarado es documentar valores por defecto, formatos de fichero y la receta de experimento de una arquitectura denominada Mae orientada a tareas de matching, sin presentar métricas de rendimiento verificadas. El repositorio contiene un script de Python (`inference.py`) con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, una configuración de arquitectura (`config.json`), una receta de experimento (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`atltorres/study-matching47` es un prototipo de investigación publicado en Hugging Face por el usuario atltorres bajo el identificador "Mae for Matching". Se trata de un artefacto de tipo "tiny" cuyo propósito declarado es documentar valores por defecto, formatos de fichero y la receta de experimento de una arquitectura denominada Mae orientada a tareas de matching, sin presentar métricas de rendimiento verificadas. El repositorio contiene un script de Python (`inference.py`) con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, una configuración de arquitectura (`config.json`), una receta de experimento (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato objetivo más relevante es su tamaño: 24.832 parámetros totales según el fichero safetensors, lo que lo sitúa en el rango de los modelos de juguete o de validación de pipeline, muy lejos de cualquier LLM operativo. El propio autor advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atltorres/study-matching47
-- Repositorio de origen (ficheros incluidos): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` dentro del propio repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/atltorres/study-matching47
+- Repositorio de origen (ficheros incluidos): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` dentro del propio repositorio de Hugging Face
 - Paper, blog, repositorio de código externo o demo: no disponible
 - Las búsquedas web realizadas no devolvieron ningún enlace relacionado con este modelo, su autor ni su arquitectura (los resultados obtenidos correspondían a páginas de ayuda de YouTube y no guardan relación con el artefacto).

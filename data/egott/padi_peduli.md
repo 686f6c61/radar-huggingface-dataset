@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Padi_Peduli es un repositorio de modelo publicado en HuggingFace por el usuario egott bajo licencia Apache 2.0. En el momento de la consulta el repositorio no dispone de pipeline declarado, no tiene descargas ni interacciones registradas, y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin documentacion tecnica y sin ejemplos de uso.
+Padi_Peduli es un repositorio de modelo publicado en Hugging Face por el usuario egott bajo licencia Apache 2.0. En el momento de la consulta el repositorio no dispone de pipeline declarado, no tiene descargas ni interacciones registradas, y su model card se limita al bloque de metadatos de licencia, sin texto descriptivo, sin documentacion tecnica y sin ejemplos de uso.
 
 No se ha podido determinar que tipo de modelo es, que arquitectura emplea, cuantos parametros tiene ni cual es su ventana de contexto. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a listados de plataformas de formacion online, sin conexion alguna con el artefacto. El nombre del repositorio ("Padi" y "Peduli", terminos del indonesio y el malayo que se traducen aproximadamente como "arroz" y "cuidado" o "solidaridad") sugiere un posible origen en el sudeste asiatico, pero esto es una inferencia linguistica y no un dato confirmado por el autor.
 
@@ -64,7 +64,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| egott/Padi_Peduli | no disponible | no disponible | Apache 2.0 | Repositorio en HuggingFace sin descargas ni documentacion |
+| egott/Padi_Peduli | no disponible | no disponible | Apache 2.0 | Repositorio en Hugging Face sin descargas ni documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,8 +80,8 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/egott/Padi_Peduli
-- Perfil del autor en HuggingFace: https://huggingface.co/egott
+- Repositorio en Hugging Face: https://huggingface.co/egott/Padi_Peduli
+- Perfil del autor en Hugging Face: https://huggingface.co/egott
 - Paper o informe tecnico: no disponible
 - Blog o anuncio de publicacion: no disponible
 - Repositorio de codigo: no disponible

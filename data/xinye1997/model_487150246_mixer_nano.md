@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_487150246_mixer_nano`, publicado por el usuario `xinye1997` en HuggingFace, es una implementación a escala "nano" de la arquitectura de tipo mixer orientada a tareas de matching. La información disponible es extremadamente escasa: el repositorio contiene únicamente un archivo de código (`model_487150246_mixer_nano.py`) y una model card mínima que describe la arquitectura, el entrenamiento y la licencia, pero no proporciona pesos preentrenados, conjuntos de datos de entrenamiento ni resultados de evaluación.
+El modelo `model_487150246_mixer_nano`, publicado por el usuario `xinye1997` en Hugging Face, es una implementación a escala "nano" de la arquitectura de tipo mixer orientada a tareas de matching. La información disponible es extremadamente escasa: el repositorio contiene únicamente un archivo de código (`model_487150246_mixer_nano.py`) y una model card mínima que describe la arquitectura, el entrenamiento y la licencia, pero no proporciona pesos preentrenados, conjuntos de datos de entrenamiento ni resultados de evaluación.
 
 El modelo utiliza una arquitectura mixer con atención dilatada y fusión mediante cross-attention, activación mish, normalización scalenorm e inicialización kaiming normal. El entrenamiento se realiza con el optimizador adafactor y un scheduler de tasa de aprendizaje por pasos (step). Dado que no se publican pesos ni documentación adicional, el modelo parece estar en una fase experimental o de investigación, y su relevancia práctica actual es limitada hasta que se aporten más detalles.
 

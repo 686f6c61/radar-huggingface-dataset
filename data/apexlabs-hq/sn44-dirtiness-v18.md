@@ -4,7 +4,7 @@
 
 `apexlabs-hq/sn44-dirtiness-v18` es un detector de objetos exportado a formato ONNX, disenado para identificar suciedad y desperfectos en imagenes de habitaciones. El modelo deriva del detector `manako/Detect-room-dirtiness-detection` y se sirve de extremo a extremo mediante `miner.py` sobre el runtime de onnxruntime, lo que sugiere un uso orientado a inferencia ligera y despliegue directo sin framework de deep learning adicional.
 
-El modelo resuelve una tarea de vision por computador muy concreta: la deteccion de cinco clases de suciedad (derrame de liquido, papelera, basura, moho y mancha) sobre imagenes redimensionadas a 736 pixeles. Su relevancia es limitada fuera de ese nicho: el repositorio no incluye model card tecnica, no declara licencia ni idiomas, y no cuenta con descargas ni interacciones en HuggingFace en el momento de la consulta.
+El modelo resuelve una tarea de vision por computador muy concreta: la deteccion de cinco clases de suciedad (derrame de liquido, papelera, basura, moho y mancha) sobre imagenes redimensionadas a 736 pixeles. Su relevancia es limitada fuera de ese nicho: el repositorio no incluye model card tecnica, no declara licencia ni idiomas, y no cuenta con descargas ni interacciones en Hugging Face en el momento de la consulta.
 
 No se dispone de informacion sobre la arquitectura interna (backbone, numero de parametros, estrategia de deteccion), el conjunto de entrenamiento ni el rendimiento medido. La ficha se limita, por tanto, a los datos verificables publicados por el autor en el repositorio.
 
@@ -25,7 +25,7 @@ No se dispone de informacion sobre la arquitectura interna (backbone, numero de 
 | Umbral de confianza | 0.05 global; 0.7 por clase (clases 0-4) |
 | SHA256 de pesos | `a5d8b23941f36c19acc233c5430d260f279cf1985f57a47d7be5a474337471c1` |
 | Runtime de inferencia | onnxruntime (via `miner.py`) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,15 +72,15 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 - Ausencia total de model card tecnica: no se documentan arquitectura, datos de entrenamiento, metricas ni proceso de validacion, lo que impide evaluar su calidad de forma objetiva.
 - Licencia no declarada: no es posible determinar si el uso comercial esta permitido; en produccion seria necesario contactar con el autor o asumir el riesgo legal.
-- Cero descargas y cero likes en HuggingFace: no hay evidencia de uso real ni de validacion por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face: no hay evidencia de uso real ni de validacion por parte de la comunidad.
 - El repositorio reporta 0.0 GB de tamano, lo que resulta inconsistente con un modelo ONNX funcional; conviene verificar la integridad de los archivos antes de desplegarlo.
 - Umbral de confianza global muy bajo (0.05) con umbrales por clase de 0.7: la configuracion es poco convencional y puede generar falsos positivos o descartar detecciones validas segun como se apliquen ambos umbrales.
 - Dominio muy restringido: solo cinco clases de suciedad en interiores; no generaliza a otras tareas de vision.
 - Riesgo de sesgo desconocido: al no documentarse el dataset, no se puede evaluar el sesgo por tipo de superficie, iluminacion, geografia o mobiliario.
 - Sin soporte de idiomas ni texto: no apto para tareas de lenguaje.
-- Fecha de creacion futura (2026-11-03) en los metadatos de HuggingFace, lo que sugiere posible manipulacion de metadatos o un error del autor; conviene tratarlo con cautela.
+- Fecha de creacion futura (2026-11-03) en los metadatos de Hugging Face, lo que sugiere posible manipulacion de metadatos o un error del autor; conviene tratarlo con cautela.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v18
+- Repositorio Hugging Face: https://huggingface.co/apexlabs-hq/sn44-dirtiness-v18
 - Modelo de origen: https://huggingface.co/manako/Detect-room-dirtiness-detection

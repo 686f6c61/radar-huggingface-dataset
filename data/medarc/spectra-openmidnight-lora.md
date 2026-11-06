@@ -84,5 +84,5 @@ No se dispone de comparativas directas con otros modelos en la información prop
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/medarc/spectra-openmidnight-lora
-- Modelo base en HuggingFace: https://huggingface.co/SophontAI/OpenMidnight
+- Modelo base en Hugging Face: https://huggingface.co/SophontAI/OpenMidnight
 - GitHub de OpenMidnight: https://github.com/MedARC-AI/OpenMidnight

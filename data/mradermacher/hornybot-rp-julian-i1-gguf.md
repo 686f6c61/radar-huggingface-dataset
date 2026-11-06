@@ -91,13 +91,13 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 - Idioma: solo inglés declarado. El rendimiento en castellano es desconocido y probablemente degradado respecto al inglés.
 - Contexto: la longitud de ventana no está documentada, lo que impide planificar arquitecturas de memoria a largo plazo.
 - Degradación por cuantización: las variantes IQ1_S, IQ1_M e IQ2_XXS, descritas por el propio autor como «for the desperate» o de calidad muy baja, no son adecuadas para uso real; IQ3_XXS y Q2_K_S aparecen marcadas como de calidad inferior.
-- Fecha de creación del repositorio: 2026-09-15 según los metadatos de HuggingFace, posterior a la fecha habitual de consulta. Conviene verificar el estado del repositorio al reutilizarlo.
+- Fecha de creación del repositorio: 2026-09-15 según los metadatos de Hugging Face, posterior a la fecha habitual de consulta. Conviene verificar el estado del repositorio al reutilizarlo.
 - Sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación comunitaria.
 - Capacidad multimodal incierta: la nota sobre visión proviene de una plantilla genérica del cuantizador y no está confirmada para este modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Hornybot-RP-Julian-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Hornybot-RP-Julian-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Hornybot-RP-Julian-GGUF
 - Modelo base: https://huggingface.co/axiomofmind/Hornybot-RP-Julian
 - Página de descarga del cuantizador para este modelo: https://hf.tst.eu/model#Hornybot-RP-Julian-i1-GGUF

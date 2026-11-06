@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Team Cognilex (este) | 4,572B | no disponible | Ajuste en dos etapas (Q&A sintético + MCQ) sobre Qwen3.5-4B para cingalés | MIT | HuggingFace, pesos y adaptadores publicados |
+| Team Cognilex (este) | 4,572B | no disponible | Ajuste en dos etapas (Q&A sintético + MCQ) sobre Qwen3.5-4B para cingalés | MIT | Hugging Face, pesos y adaptadores publicados |
 | Qwen3.5-4B (base) | 4B (aproximado) | no disponible | Modelo multilingüe generalista sin ajuste específico para cingalés | no disponible en la informacion | Ampliamente disponible |
-| Otros sistemas del Sinhala MMLU Shared Task 2026 | no disponible | no disponible | Ajustes específicos para MCQ en cingalés | no disponible | Repositorios del shared task en HuggingFace |
+| Otros sistemas del Sinhala MMLU Shared Task 2026 | no disponible | no disponible | Ajustes específicos para MCQ en cingalés | no disponible | Repositorios del shared task en Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible porque no se han publicado resultados de benchmarks en la información disponible.
 

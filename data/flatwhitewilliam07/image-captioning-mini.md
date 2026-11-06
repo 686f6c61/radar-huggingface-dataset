@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Flatwhitewilliam07/image-captioning-mini` es un repositorio publicado en HuggingFace cuyo contenido principal no es un modelo entrenado de captioning, sino un conjunto de notas de investigación (`notes.md`) sobre generación de descripciones de imágenes. La model card lo describe explícitamente como material exploratorio: «no claim benchmark improvements, completed ablations, released code, or a trained checkpoint». El artefacto de pesos asociado contiene 16.576 parámetros en formato safetensors, un tamaño compatible con un checkpoint de prueba o un placeholder de pipeline, no con un sistema capaz de generar subtítulos útiles.
+`Flatwhitewilliam07/image-captioning-mini` es un repositorio publicado en Hugging Face cuyo contenido principal no es un modelo entrenado de captioning, sino un conjunto de notas de investigación (`notes.md`) sobre generación de descripciones de imágenes. La model card lo describe explícitamente como material exploratorio: «no claim benchmark improvements, completed ablations, released code, or a trained checkpoint». El artefacto de pesos asociado contiene 16.576 parámetros en formato safetensors, un tamaño compatible con un checkpoint de prueba o un placeholder de pipeline, no con un sistema capaz de generar subtítulos útiles.
 
 El autor es el usuario Flatwhitewilliam07, sin organización detrás ni documentación de entrenamiento asociada. El repositorio está etiquetado como `transformer` y `image-captioning`, con licencia CC-BY-4.0, y acumula 13 descargas y 0 likes desde su creación el 19 de octubre de 2026 (según metadatos de la plataforma).
 
@@ -87,7 +87,7 @@ La comparación directa no es significativa: este repositorio no es un modelo en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flatwhitewilliam07/image-captioning-mini
+- Modelo en Hugging Face: https://huggingface.co/Flatwhitewilliam07/image-captioning-mini
 - Nota principal (`notes.md`): https://huggingface.co/Flatwhitewilliam07/image-captioning-mini/blob/main/notes.md
 - Fichero de documentación (`README.md`): https://huggingface.co/Flatwhitewilliam07/image-captioning-mini/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

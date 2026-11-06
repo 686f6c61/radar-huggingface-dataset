@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hetoo24/my-qwen-model
+- Repositorio Hugging Face: https://huggingface.co/hetoo24/my-qwen-model
 - Modelo base (bf16): https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B-it
 - Código de la abliteration: https://github.com/TrevorS/gemma-4-abliteration

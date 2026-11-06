@@ -92,7 +92,7 @@ AuroraIMG2 se posiciona como un modelo experimental de escala radicalmente menor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview
+- Modelo en Hugging Face: https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents
 - Decodificador FLUX.2 small (congelado): https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 - Paper (arXiv): https://arxiv.org/abs/2512.16853

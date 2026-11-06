@@ -4,7 +4,7 @@
 
 Dark-Craving-26B-A4B-v0.3 es un modelo de lenguaje afinado por ReadyArt a partir de google/gemma-4-26B-A4B-it, orientado a generación de texto conversacional sin alineación, con foco explícito en roleplay y contenido para adultos (NSFW/ERP). El modelo hereda la arquitectura del Gemma 4 base, un transformer de tipo mezcla de expertos (MoE) con aproximadamente 25.800 millones de parámetros totales, de los cuales solo una fracción se activa por token, lo que reduce significativamente el coste de inferencia frente a un modelo denso de tamaño equivalente.
 
-Su relevancia radica en cubrir un nicho que los modelos comerciales y muchos modelos abiertos evitan deliberadamente: narrativa adulta sin filtros y roleplay de larga duración. Al tratarse de un ajuste sobre un modelo instructo de Google con licencia Apache 2.0, puede desplegarse localmente con las herramientas habituales del ecosistema (safetensors, compatible con vLLM y derivados), aunque el repositorio está marcado como restringido y requiere aceptar condiciones de uso en HuggingFace antes de descargarlo.
+Su relevancia radica en cubrir un nicho que los modelos comerciales y muchos modelos abiertos evitan deliberadamente: narrativa adulta sin filtros y roleplay de larga duración. Al tratarse de un ajuste sobre un modelo instructo de Google con licencia Apache 2.0, puede desplegarse localmente con las herramientas habituales del ecosistema (safetensors, compatible con vLLM y derivados), aunque el repositorio está marcado como restringido y requiere aceptar condiciones de uso en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Al ser MoE con ~4 B de parametros activos, el throughput por token es comparable al de un modelo denso pequeno una vez cargado el modelo completo en memoria.
 - Opciones de despliegue: vLLM, TGI, llama.cpp y Ollama (estos dos ultimos requieren conversion a GGUF, no publicada en el repositorio).
 - Latencia y throughput: no disponible; no se han publicado mediciones.
-- Acceso: el repositorio esta restringido (gated); hay que aceptar las condiciones en HuggingFace y estar autenticado para descargar los pesos.
+- Acceso: el repositorio esta restringido (gated); hay que aceptar las condiciones en Hugging Face y estar autenticado para descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -79,5 +79,5 @@ Nota: la comparativa se limita al modelo base documentado y a la categoria de af
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.3
+- Ficha en Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.3
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

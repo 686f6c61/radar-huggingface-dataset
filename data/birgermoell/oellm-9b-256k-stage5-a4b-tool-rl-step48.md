@@ -77,16 +77,16 @@ Datos adicionales de la model card: MBPP+ 0,36 en modo directo; JSON valido en t
 - VRAM estimada para inferencia en FP16/BF16: aproximadamente 18-19 GB solo de pesos (repo de 18,2 GB en safetensors), mas overhead de KV cache; con cuantizacion de 8 bits cabria en torno a 10 GB, aunque no hay cuantizaciones oficiales publicadas (no disponible).
 - GPUs recomendadas: una RTX 4090 (24 GB) o RTX 5090 deberia alojar el modelo en BF16 con contexto moderado; para contextos de 256K completos se recomienda A100 64 GB o H100, que es ademas el hardware usado en el entrenamiento.
 - Cabe en GPUs de consumo de gama alta (24 GB) para inferencia con contexto corto-medio; no cabe en GPUs de 8-12 GB sin cuantizacion, que no esta publicada oficialmente.
-- Opciones de despliegue: transformers (libreria nativa, compatible con text-generation-inference y endpoints de HuggingFace); no hay evidencia de soporte verificado en vLLM, llama.cpp u Ollama para este checkpoint concreto (no disponible).
+- Opciones de despliegue: transformers (libreria nativa, compatible con text-generation-inference y endpoints de Hugging Face); no hay evidencia de soporte verificado en vLLM, llama.cpp u Ollama para este checkpoint concreto (no disponible).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | EUROPA Eval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oellm-9b-256k-stage5-a4b-tool-rl-step48 | 9,1B | 256K | 0,670 | Apache 2.0 | HuggingFace, safetensors |
-| Apertus-8B-Instruct | 8B | no disponible | 0,57 (según model card) | no disponible | HuggingFace |
-| oellm-9b-256k-stage5-w2-rl-step160 (checkpoint posterior) | 9,1B | 256K | 0,73 | Apache 2.0 | HuggingFace, safetensors |
+| oellm-9b-256k-stage5-a4b-tool-rl-step48 | 9,1B | 256K | 0,670 | Apache 2.0 | Hugging Face, safetensors |
+| Apertus-8B-Instruct | 8B | no disponible | 0,57 (según model card) | no disponible | Hugging Face |
+| oellm-9b-256k-stage5-w2-rl-step160 (checkpoint posterior) | 9,1B | 256K | 0,73 | Apache 2.0 | Hugging Face, safetensors |
 
 El checkpoint posterior del mismo proyecto supera a este en razonamiento matematico thinking (0,63 frente a 0,44), EUROPA Eval (0,73 frente a 0,67), EUROPA Alignment (0,72 frente a 0,67), codigo y tool calling, por lo que el autor recomienda usarlo salvo necesidad de reproducir exactamente este checkpoint.
 
@@ -104,7 +104,7 @@ El checkpoint posterior del mismo proyecto supera a este en razonamiento matemat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-a4b-tool-rl-step48
+- Modelo en Hugging Face: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-a4b-tool-rl-step48
 - Modelo base: https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude-anneal300b
 - Checkpoint posterior recomendado: https://huggingface.co/birgermoell/oellm-9b-256k-stage5-w2-rl-step160
 - Repositorio del pipeline de post-entrenamiento (SFT/DPO): https://github.com/BirgerMoell/qwen35-posttrain

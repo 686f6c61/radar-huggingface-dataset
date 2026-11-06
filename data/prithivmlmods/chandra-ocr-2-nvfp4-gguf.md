@@ -77,7 +77,7 @@ Rendimiento medido de esta cuantizacion NVFP4 (llama.cpp, RTX PRO 6000 Blackwell
 - VRAM estimada para inferencia: 6,66 GiB de pico con la cuantizacion NVFP4 y contexto de 16.384 tokens (KV cache K en q8_0), segun las pruebas publicadas. Sumando el mmproj (676 MB), el conjunto ronda los 5,4 GB del repositorio.
 - GPU recomendada: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB) fue la GPU usada en las pruebas; el formato NVFP4 esta optimizado para aceleradores Blackwell.
 - Consumer GPU: el pico de 6,66 GiB indica que el modelo cabe con holgura en GPUs de consumo con 8 GB o mas de VRAM (por ejemplo, RTX 3060 Ti 8 GB, RTX 4070, RTX 4090), aunque el rendimiento optimo del formato NVFP4 se espera en hardware Blackwell; en arquitecturas anteriores el comportamiento de NVFP4 no ha sido documentado.
-- Despliegue: llama.cpp / llama-cli (inference nativa probada con `--mmproj` y `-ngl 99`); el modelo base tambien esta disponible para HuggingFace Transformers y vLLM. No se documenta compatibilidad con Ollama o TGI en la informacion disponible.
+- Despliegue: llama.cpp / llama-cli (inference nativa probada con `--mmproj` y `-ngl 99`); el modelo base tambien esta disponible para Hugging Face Transformers y vLLM. No se documenta compatibilidad con Ollama o TGI en la informacion disponible.
 - Latencia y throughput: 192,13 tokens/s de generacion y 2.957,14 tokens/s de procesamiento de prompt en la configuracion probada; sin decodificacion especulativa.
 
 ## Comparativa con modelos similares

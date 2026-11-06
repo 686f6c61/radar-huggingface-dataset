@@ -71,4 +71,4 @@ No existe una comparativa directa válida porque este repositorio no contiene un
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/adinugrohoport/classification)
+- [Repositorio en Hugging Face](https://huggingface.co/adinugrohoport/classification)

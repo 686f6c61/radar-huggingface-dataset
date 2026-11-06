@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stew Audio 0.1 es un sistema de reconocimiento automático del habla (ASR) publicado en HuggingFace por el desarrollador Erog0291 (Rejoice Gideon Emmanuel, «Erogian») bajo licencia Apache-2.0. Está diseñado específicamente para cinco lenguas habladas en Nigeria: igbo (ig), yoruba (yo), hausa (ha), pidgin nigeriano (pcm) e inglés nigeriano (en). El modelo se presenta como una «capa de inteligencia del habla» unificada con enrutamiento por idioma, en lugar de un único checkpoint monolítico: la model card menciona un `router.json` y checkpoints ASR por idioma publicados en el mismo espacio de nombres (`stew-audio-0.1-asr-ig`, `-yo`, `-ha`).
+Stew Audio 0.1 es un sistema de reconocimiento automático del habla (ASR) publicado en Hugging Face por el desarrollador Erog0291 (Rejoice Gideon Emmanuel, «Erogian») bajo licencia Apache-2.0. Está diseñado específicamente para cinco lenguas habladas en Nigeria: igbo (ig), yoruba (yo), hausa (ha), pidgin nigeriano (pcm) e inglés nigeriano (en). El modelo se presenta como una «capa de inteligencia del habla» unificada con enrutamiento por idioma, en lugar de un único checkpoint monolítico: la model card menciona un `router.json` y checkpoints ASR por idioma publicados en el mismo espacio de nombres (`stew-audio-0.1-asr-ig`, `-yo`, `-ha`).
 
 El problema que aborda es la cobertura deficiente de las lenguas nigerianas en los sistemas ASR globales, tanto en cobertura de idioma como en robustez frente a acentos locales. La propuesta del autor combina transcripción, identificación de idioma y enrutamiento, con la intención declarada de ofrecer checkpoints ligeros aptos para despliegue en móvil y servidor.
 
@@ -73,7 +73,7 @@ La información proporcionada no incluye datos verificables de modelos alternati
 | Idiomas | ig, yo, ha, pcm, en | no especificado | no disponible en la informacion proporcionada |
 | WER publicado | pendiente («pending final run») | pendiente | no disponible en la informacion proporcionada |
 | Licencia | Apache-2.0 | no disponible | no disponible en la informacion proporcionada |
-| Disponibilidad | repositorio HuggingFace, 0 descargas | no disponible | no disponible en la informacion proporcionada |
+| Disponibilidad | repositorio Hugging Face, 0 descargas | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -90,5 +90,5 @@ La información proporcionada no incluye datos verificables de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erog0291/stew-audio-0.1
+- Modelo en Hugging Face: https://huggingface.co/Erog0291/stew-audio-0.1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados al modelo. Los resultados de búsqueda obtenidos no guardan relación con el modelo y se han descartado por no ser fuentes utilizables.

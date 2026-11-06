@@ -91,7 +91,7 @@ No existen alternativas externas documentadas en la información disponible para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leizhao7/VideoEdit-Qwen3.6-35B-A3B
+- Hugging Face: https://huggingface.co/leizhao7/VideoEdit-Qwen3.6-35B-A3B
 - Paper (arXiv): https://arxiv.org/abs/2610.35497
 - Project page: https://leizhao7.github.io/videoedit/
 - GitHub (codigo del proyecto): https://github.com/leizhao7/video-editing-credit-assignment

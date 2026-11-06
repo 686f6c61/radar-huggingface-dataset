@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b4000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b4000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Otros fine-tunes del mismo autor:
   - https://huggingface.co/AmberYifan/capsd-marin-8b-base-math_less_b4000_s0

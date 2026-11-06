@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohit-devi/hw1-generation` es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional minima de una arquitectura denominada "Hybrid" orientada a tareas de generacion. El modelo lo desarrolla el usuario rohit-devi y se distribuye bajo licencia Apache 2.0. Con 24.832 parametros totales (no millones: veinticuatro mil ochocientos treinta y dos), se trata de una configuracion de escala "tiny" disenada como punto de partida reproducible y no como un modelo entrenado para produccion.
+`rohit-devi/hw1-generation` es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional minima de una arquitectura denominada "Hybrid" orientada a tareas de generacion. El modelo lo desarrolla el usuario rohit-devi y se distribuye bajo licencia Apache 2.0. Con 24.832 parametros totales (no millones: veinticuatro mil ochocientos treinta y dos), se trata de una configuracion de escala "tiny" disenada como punto de partida reproducible y no como un modelo entrenado para produccion.
 
 La relevancia del repositorio es exclusivamente metodologica: sirve como andamiaje de codigo transparente para experimentar con una arquitectura hibrida que combina atencion de ventana deslizante, fusion tipo Tucker, activacion ReLU y normalizacion ScaleNorm, ademas de una receta de entrenamiento por defecto con optimizador NovoGrad y planificador OneCycle. El propio autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo y que no se reclama ninguna puntuacion de benchmark.
 
@@ -22,7 +22,7 @@ Por tanto, no debe confundirse con un modelo de lenguaje utilizable: no hay evid
 | Formato de pesos | safetensors (implementacion en PyTorch) |
 | Escala declarada | tiny |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 8 descargas, 0 likes |
 | Fecha de creacion | 2026-09-24 |
 
@@ -37,7 +37,7 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 - Generacion de texto: es la unica tarea declarada en las etiquetas y en el titulo del repositorio ("Generation"). No hay evidencia de que el checkpoint actual produzca salidas coherentes, al tratarse de una inicializacion sin entrenar.
 - Implementacion ejecutable: el archivo `predict.py` es el artefacto principal y contiene el modelo junto con un ejemplo ejecutable o punto de entrada de entrenamiento, con un bloque `__main__` que genera una prueba de humo.
 - Pruebas de humo reproducibles: el repositorio esta disenado para verificar que la carga del checkpoint y el flujo de inferencia no fallan, no para medir calidad.
-- Carga de checkpoints personalizados: al ser una implementacion propia, requiere un adaptador explicito para funcionar con APIs de carga automatica genericas de HuggingFace.
+- Carga de checkpoints personalizados: al ser una implementacion propia, requiere un adaptador explicito para funcionar con APIs de carga automatica genericas de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (no se declara ningun idioma).
@@ -48,7 +48,7 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 - Plantilla de investigacion en arquitecturas hibridas: el codigo permite estudiar como se combinan atencion de ventana deslizante, fusion Tucker y ScaleNorm en una implementacion legible, sirviendo como base para variantes propias antes de escalar el numero de parametros.
 - Prueba de humo en pipelines de integracion continua: dado que el checkpoint es valido y ligero, se puede usar para verificar que un pipeline de carga de safetensors, tokenizacion y generacion no se rompe ante cambios de version de PyTorch.
 - Banco de pruebas de recetas de optimizacion: los ajustes por defecto de NovoGrad con planificador OneCycle permiten comparar configuraciones de entrenamiento sobre la misma arquitectura, siempre que se igualen exposicion de datos, presupuesto de ajuste y semillas aleatorias.
-- Ejemplo didactico de empaquetado de modelos: util para demostrar la estructura minima de un repositorio (config.json, training_args.json, model.safetensors, README) exigida por las convenciones de HuggingFace.
+- Ejemplo didactico de empaquetado de modelos: util para demostrar la estructura minima de un repositorio (config.json, training_args.json, model.safetensors, README) exigida por las convenciones de Hugging Face.
 - Verificacion de adaptadores de carga personalizada: sirve para validar el desarrollo de adaptadores que permitan a APIs genericas cargar implementaciones no estandar.
 - Referencia de comparacion a capacidad igualada (matched-capacity baseline): el autor propone usarlo como linea base de capacidad equivalente en evaluaciones propias, con un conjunto de validacion especifico de la tarea y al menos tres semillas.
 - Prototipado de scripts de evaluacion: permite ensayar el registro de metricas, logs de entrenamiento y versiones de entorno antes de aplicarlos a modelos de mayor tamano.
@@ -78,7 +78,7 @@ No disponible. No se conocen modelos comparables publicados en la misma categori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rohit-devi/hw1-generation | 24.832 | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace, 8 descargas |
+| rohit-devi/hw1-generation | 24.832 | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face, 8 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se conocen modelos comparables publicados en la misma categori
 - El autor declara explicitamente que no ha sido auditado en robustez, equidad ni transferencia de dominio, por lo que no hay garantia alguna sobre sesgos, comportamientos indeseados o estabilidad.
 - Riesgo de alucinacion: no evaluado y, en ausencia de entrenamiento, no aplicable como metrica de calidad, pero tampoco descartable a priori si se entrena sobre datos no verificados.
 - No se documentan idiomas soportados, longitud de contexto, ni composicion del dataset de entrenamiento.
-- Al ser una implementacion personalizada, no funciona con cargadores automaticos genericos de HuggingFace sin un adaptador explicito, lo que complica su integracion en herramientas estandar.
+- Al ser una implementacion personalizada, no funciona con cargadores automaticos genericos de Hugging Face sin un adaptador explicito, lo que complica su integracion en herramientas estandar.
 - Licencia Apache 2.0: permite uso comercial del codigo y del checkpoint, pero la propia model card advierte de que deben revisarse por separado los terminos de las fuentes de datos cuando se utilice el repositorio con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 - En produccion, no debe desplegarse como componente de generacion de texto sin una evaluacion previa sobre un conjunto de validacion especifico de la tarea, con al menos tres semillas y una linea base de capacidad equivalente.
@@ -95,8 +95,8 @@ No disponible. No se conocen modelos comparables publicados en la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohit-devi/hw1-generation
+- Modelo en Hugging Face: https://huggingface.co/rohit-devi/hw1-generation
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face)
 - Demo o espacio interactivo: no disponible

@@ -18,7 +18,7 @@ El pack incluye torre de visión (Qwen3-VL ViT) y cabeza MTP para decodificació
 | Longitud de contexto | 262.144 tokens configurados; máximo validado con prompt real: 260.451 tokens |
 | Tipos de cuantizacion | 6,788 bpw efectivos: expertos en affine gs64 con 6-bit en 88 grupos y 8-bit en 8 grupos (capas 5, 20, 23, 26, 27, 28, 33, 38); superficie no-experta (GDN qkv/z/a/b/out, QSA q/k/v/o + indexer, hyper-connections, shared expert, router, ple) en 8-bit con imatrix; `lm_head` y `embed_tokens` 8-bit; torre de visión en bf16 sin cuantizar; tabla n-gram PLE en 8-bit gs32 |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors en layout MLX para `mlx-serve` (no GGUF); repo de 167,4 GB, ~156 GiB en disco (índice 109,8 GB + tabla n-gram 57,6 GB) |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estos t
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/xpashkin/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-6.8bpw
+- Hugging Face del pack: https://huggingface.co/xpashkin/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-6.8bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fuente de la imatrix (GGUF): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio de mlx-serve: https://github.com/ddalcu/mlx-serve

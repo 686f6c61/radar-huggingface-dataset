@@ -2,7 +2,7 @@
 
 ## Resumen
 
-algorithco/whisper-large-v3-turbo es una redistribucion del modelo Whisper large-v3-turbo de OpenAI, publicado en el Hub de HuggingFace bajo el identificador del usuario algorithco. Se trata de un modelo de reconocimiento automatico del habla (ASR) y traduccion de voz, basado en el checkpoint openai/whisper-large-v3, del que hereda la arquitectura y los pesos del encoder, pero con el decoder podado de 32 a 4 capas. El resultado es un modelo de aproximadamente 809 millones de parametros (808.878.080 segun los pesos safetensors) que mantiene la calidad de transcripcion del large-v3 con una degradacion menor, a cambio de una velocidad de inferencia muy superior.
+algorithco/whisper-large-v3-turbo es una redistribucion del modelo Whisper large-v3-turbo de OpenAI, publicado en el Hub de Hugging Face bajo el identificador del usuario algorithco. Se trata de un modelo de reconocimiento automatico del habla (ASR) y traduccion de voz, basado en el checkpoint openai/whisper-large-v3, del que hereda la arquitectura y los pesos del encoder, pero con el decoder podado de 32 a 4 capas. El resultado es un modelo de aproximadamente 809 millones de parametros (808.878.080 segun los pesos safetensors) que mantiene la calidad de transcripcion del large-v3 con una degradacion menor, a cambio de una velocidad de inferencia muy superior.
 
 El modelo resuelve dos tareas principales: transcripcion de audio a texto en el mismo idioma de la fuente y traduccion de audio a texto en ingles. Es un modelo multilingue que cubre 99 idiomas segun la model card, incluyendo castellano, catalan, euskera y gallego, ademas de las principales lenguas europeas, asiaticas y africanas. Soporta marcas de tiempo a nivel de frase y a nivel de palabra, lo que lo hace util para subtitulado y alineacion.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Capas de decoder | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| algorithco/whisper-large-v3-turbo (este) | ~809 M | 4 | 99 | MIT | HuggingFace |
-| openai/whisper-large-v3 | ~1.540 M (dato publico) | 32 | 99 | MIT | HuggingFace y API de OpenAI |
-| openai/whisper-large-v2 | ~1.540 M (dato publico) | 32 | 99 | MIT | HuggingFace |
-| distil-whisper/distil-large-v3 | ~756 M (dato publico) | 2 | en (principalmente) | MIT | HuggingFace |
+| algorithco/whisper-large-v3-turbo (este) | ~809 M | 4 | 99 | MIT | Hugging Face |
+| openai/whisper-large-v3 | ~1.540 M (dato publico) | 32 | 99 | MIT | Hugging Face y API de OpenAI |
+| openai/whisper-large-v2 | ~1.540 M (dato publico) | 32 | 99 | MIT | Hugging Face |
+| distil-whisper/distil-large-v3 | ~756 M (dato publico) | 2 | en (principalmente) | MIT | Hugging Face |
 
 El modelo de este repositorio comparte arquitectura y licencia con la familia Whisper de OpenAI, por lo que la eleccion entre variantes depende del equilibrio entre latencia y calidad de transcripcion. Las cifras de parametros de los modelos comparados provienen de datos publicos ampliamente conocidos y no de la informacion proporcionada en esta busqueda, por lo que conviene verificarlas en sus respectivas model cards.
 
@@ -88,7 +88,7 @@ El modelo de este repositorio comparte arquitectura y licencia con la familia Wh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/algorithco/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/algorithco/whisper-large-v3-turbo
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Paper original de Whisper (Radford et al., 2022): https://huggingface.co/papers/2212.04356 (arXiv:2212.04356)
 - Discusion en GitHub sobre large-v3-turbo: https://github.com/openai/whisper/discussions/2363

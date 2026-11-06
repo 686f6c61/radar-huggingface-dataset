@@ -74,10 +74,10 @@ En las 5 tareas de transcripción, P220 obtiene una media de 0,635 frente a 0,65
 
 | Modelo | Parámetros | Contexto | ThaiOCRBench (13 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **P220-ThaiOCR-9B-FP8** | 9,4B | 32.768 | 0,674 | Apache-2.0 | HuggingFace (BF16, FP8, W4A16, NVFP4, GGUF) |
+| **P220-ThaiOCR-9B-FP8** | 9,4B | 32.768 | 0,674 | Apache-2.0 | Hugging Face (BF16, FP8, W4A16, NVFP4, GGUF) |
 | Qwen3.6-35B-A3B | 35B (MoE) | no disponible | 0,589 | no disponible | no disponible |
-| P110-ThaiOCR-4B | 4B | no disponible | 0,572 | no disponible | HuggingFace (BF16 y cuantizaciones) |
-| Qwen3.5-9B (base) | 9B | no disponible | 0,462 | Apache-2.0 | HuggingFace |
+| P110-ThaiOCR-4B | 4B | no disponible | 0,572 | no disponible | Hugging Face (BF16 y cuantizaciones) |
+| Qwen3.5-9B (base) | 9B | no disponible | 0,462 | Apache-2.0 | Hugging Face |
 | GPT-6.1 Sol | cerrado | no disponible | 0,738 | propietaria | API |
 | GPT-6 Luna | cerrado | no disponible | no disponible (por debajo de P220 según el autor) | propietaria | API |
 
@@ -98,7 +98,7 @@ P220 destaca por ofrecer la mejor media entre los modelos abiertos comparados co
 
 ## Enlaces
 
-- Modelo en HuggingFace (FP8): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
+- Modelo en Hugging Face (FP8): https://huggingface.co/PorsukR/P220-ThaiOCR-9B-FP8
 - Modelo base BF16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B
 - Variante W4A16: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-W4A16
 - Variante NVFP4: https://huggingface.co/PorsukR/P220-ThaiOCR-9B-NVFP4

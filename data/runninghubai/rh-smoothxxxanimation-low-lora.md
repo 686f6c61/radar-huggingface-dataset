@@ -6,7 +6,7 @@ rh-smoothxxxanimation-low-lora es un adaptador LoRA publicado por RunningHubAI (
 
 Se trata, por tanto, de un ajuste fino de bajo rango orientado a un nicho muy especifico y no de un modelo de lenguaje: no procesa texto como tarea principal, no razona, no ejecuta codigo y no soporta tool calling ni agentes. Su funcion es modular la salida visual del modelo base de difusion para producir secuencias animadas con una tematica concreta, dentro de flujos de trabajo de ComfyUI o de la plataforma en la nube de RunningHub.
 
-Su relevancia actual es limitada y muy acotada: en el momento de redactar esta ficha el repositorio registra cero descargas y cero "likes", la licencia no esta especificada y no se han publicado resultados de evaluacion. Para un desarrollador o investigador, su interes practico pasa por estudiar como se distribuyen adaptadores LoRA de difusion de video en HuggingFace, como se encadenan en ComfyUI o como la plataforma de origen monetiza el entrenamiento y la inferencia de terceros.
+Su relevancia actual es limitada y muy acotada: en el momento de redactar esta ficha el repositorio registra cero descargas y cero "likes", la licencia no esta especificada y no se han publicado resultados de evaluacion. Para un desarrollador o investigador, su interes practico pasa por estudiar como se distribuyen adaptadores LoRA de difusion de video en Hugging Face, como se encadenan en ComfyUI o como la plataforma de origen monetiza el entrenamiento y la inferencia de terceros.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / duracion | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| rh-smoothxxxanimation-low-lora | LoRA sobre WAN 2.2 | No disponible (293 MiB de pesos) | No disponible | No disponible | HuggingFace, ComfyUI, RunningHub | No publicados |
+| rh-smoothxxxanimation-low-lora | LoRA sobre WAN 2.2 | No disponible (293 MiB de pesos) | No disponible | No disponible | Hugging Face, ComfyUI, RunningHub | No publicados |
 | WAN 2.2 (modelo base) | Difusion de video | No disponible en la informacion proporcionada | No disponible | Sujeta a la licencia del proyecto original | Publico | No disponibles en esta ficha |
-| Otros LoRA de animacion para adultos en Civitai | LoRA sobre modelos de difusion de video o imagen | Variables, no disponibles | No disponible | Variable, normalmente definida por el autor | Civitai, algunos replicados en HuggingFace | No publicados |
-| LoRA de animacion genericos de WAN 2.2 o HunyuanVideo | LoRA de difusion de video | No disponibles | No disponible | Variable | HuggingFace y Civitai | No disponibles |
+| Otros LoRA de animacion para adultos en Civitai | LoRA sobre modelos de difusion de video o imagen | Variables, no disponibles | No disponible | Variable, normalmente definida por el autor | Civitai, algunos replicados en Hugging Face | No publicados |
+| LoRA de animacion genericos de WAN 2.2 o HunyuanVideo | LoRA de difusion de video | No disponibles | No disponible | Variable | Hugging Face y Civitai | No disponibles |
 
 No se dispone de datos cuantitativos homogeneos (parametros, contexto, puntuaciones) para establecer una comparacion rigurosa con alternativas. La unica diferencia verificable en la informacion proporcionada es el tamano del fichero y el modelo base declarado.
 
@@ -100,7 +100,7 @@ No se dispone de datos cuantitativos homogeneos (parametros, contexto, puntuacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-smoothxxxanimation-low-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-smoothxxxanimation-low-lora
 - Proyecto original en Civitai: https://civitai.com/models/2040641?modelVersionId=2376143
 - Pagina del modelo en RunningHub (China): https://www.runninghub.cn/model/public/1986669051764240386
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1819214514410942465

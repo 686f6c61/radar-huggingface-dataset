@@ -6,7 +6,7 @@ DynaGuard-4B-NPU2 es una conversión cuantizada en formato Q4NX del modelo DynaG
 
 El formato Q4NX es un empaquetado propietario de FastFlowLM, reordenado para aprovechar las matrices de la NPU, por lo que no es compatible con llama.cpp, Ollama ni otras herramientas estándar. El repositorio incluye el modelo cuantizado (3.3 GB), configuración, tokenizador y plantilla de chat, además de un script instalador (`flm-add`) que registra el modelo en el entorno FastFlowLM. La longitud de contexto declarada en la configuración es de 262 144 tokens, aunque los benchmarks de rendimiento publicados cubren hasta 32k.
 
-Esta ficha se centra en la variante NPU2, no en el modelo original. Para detalles de entrenamiento, benchmarks de calidad y capacidades del modelo base, se remite a la ficha del modelo original en HuggingFace.
+Esta ficha se centra en la variante NPU2, no en el modelo original. Para detalles de entrenamiento, benchmarks de calidad y capacidades del modelo base, se remite a la ficha del modelo original en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/DynaGuard-4B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/DynaGuard-4B-NPU2
 - Modelo original: https://huggingface.co/tomg-group-umd/DynaGuard-4B
 - Motor FastFlowLM: https://fastflowlm.com
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

@@ -6,7 +6,7 @@ hybrid-checkpoint es un repositorio publicado por el usuario andrewscottkin que 
 
 El modelo tiene 49.600 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud muy alejado de los transformers habituales: es practicamente un esqueleto de red de juguete. La arquitectura declarada combina atencion de tipo flash, fusion bilineal, activacion ReLU y normalizacion InstanceNorm, con un recipe de entrenamiento por defecto basado en optimizador LAMB y scheduler coseno.
 
-Su relevancia actual es limitada y fundamentalmente didactica: sirve como plantilla reproducible para montar experimentos de clasificacion con una topologia concreta, no como modelo utilizable en tareas reales. No se declaran idiomas soportados, contexto, benchmarks ni pipeline de HuggingFace, y no existen descargas ni interacciones registradas.
+Su relevancia actual es limitada y fundamentalmente didactica: sirve como plantilla reproducible para montar experimentos de clasificacion con una topologia concreta, no como modelo utilizable en tareas reales. No se declaran idiomas soportados, contexto, benchmarks ni pipeline de Hugging Face, y no existen descargas ni interacciones registradas.
 
 ## Especificaciones tecnicas
 
@@ -83,10 +83,10 @@ No se dispone de datos suficientes para comparar rendimiento, ya que hybrid-chec
 - Riesgo de alucinacion: no aplica al no ser un modelo generativo entrenado, pero tampoco existe ninguna garantia de comportamiento correcto.
 - Idiomas soportados: no disponibles; no se puede asumir soporte multilingue.
 - Restricciones de licencia: MIT permite uso comercial del codigo y los pesos, pero el autor recomienda revisar los terminos de los conjuntos de datos externos que se utilicen junto al repositorio.
-- Requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace; el script principal se invoca con "python inference.py --help".
+- Requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face; el script principal se invoca con "python inference.py --help".
 - Cualquier resultado futuro debe documentarse por separado del estado por defecto aqui publicado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewscottkin/hybrid-checkpoint
+- Hugging Face: https://huggingface.co/andrewscottkin/hybrid-checkpoint
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

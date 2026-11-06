@@ -4,7 +4,7 @@
 
 Bee-350M PT es un modelo de lenguaje en portugués de 345 millones de parámetros, desarrollado por BrCamp (Bruno Campidelli) como parte de una serie de experimentos de ablación sobre arquitecturas transformer entrenadas desde cero. Esta variante concreta, identificada como "15B", es un fork de decaimiento del modelo principal `bee-350m-pt-base`: comparte exactamente la misma arquitectura, corpus y tokenizador, pero fue entrenada únicamente con 15.000 millones de tokens en lugar de los 21.750 millones del modelo principal. El objetivo es aislar el efecto del volumen de datos manteniendo todo lo demás fijo.
 
-El modelo se basa en la arquitectura Qwen3 (según las etiquetas de HuggingFace), aunque entrenado desde cero con un corpus propio en portugués. Tiene una ventana de contexto de 2048 tokens y se distribuye bajo licencia Apache 2.0. Su relevancia radica en que proporciona un punto de referencia para estudiar la relación entre cantidad de datos, número de parámetros y rendimiento en modelado de lenguaje, así como el impacto del decaimiento de la tasa de aprendizaje en el marco WSD (warmup-stable-decay). No está pensado para uso directo en aplicaciones, sino como herramienta de investigación para reproducir la ablación documentada por el autor.
+El modelo se basa en la arquitectura Qwen3 (según las etiquetas de Hugging Face), aunque entrenado desde cero con un corpus propio en portugués. Tiene una ventana de contexto de 2048 tokens y se distribuye bajo licencia Apache 2.0. Su relevancia radica en que proporciona un punto de referencia para estudiar la relación entre cantidad de datos, número de parámetros y rendimiento en modelado de lenguaje, así como el impacto del decaimiento de la tasa de aprendizaje en el marco WSD (warmup-stable-decay). No está pensado para uso directo en aplicaciones, sino como herramienta de investigación para reproducir la ablación documentada por el autor.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ Estos datos indican que aumentar los tokens de 15 B a 21,75 B (un 45 % más) sol
 - VRAM estimada para inferencia: con 345 M parámetros, el modelo en precisión fp32 ocupa aproximadamente 1,38 GB, en fp16 unos 0,69 GB, en int8 unos 0,35 GB y en int4 unos 0,17 GB. Sin embargo, el repositorio solo incluye safetensors en precisión completa, por lo que el uso directo requeriría al menos 1,5 GB de VRAM (considerando overhead).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Ejemplos: NVIDIA GTX 1060, GTX 1650, RTX 2060, RTX 3060, o incluso CPUs con suficiente RAM para inferencia lenta.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede ejecutarse con la librería `transformers` de HuggingFace, así como con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI (Text Generation Inference). No se ha confirmado compatibilidad explícita con estas herramientas, pero por su formato y tamaño es probable que funcionen.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede ejecutarse con la librería `transformers` de Hugging Face, así como con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI (Text Generation Inference). No se ha confirmado compatibilidad explícita con estas herramientas, pero por su formato y tamaño es probable que funcionen.
 - Latencia y throughput: no disponible. Dado el pequeño tamaño, la latencia sería baja en GPU (del orden de milisegundos por token), pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -86,9 +86,9 @@ No se dispone de información sobre otros modelos pequeños en portugués con lo
 
 ## Enlaces
 
-- [HuggingFace: BrCamp/bee-350m-pt-base-15b](https://huggingface.co/BrCamp/bee-350m-pt-base-15b)
+- [Hugging Face: BrCamp/bee-350m-pt-base-15b](https://huggingface.co/BrCamp/bee-350m-pt-base-15b)
 - [Modelo principal: BrCamp/bee-350m-pt-base](https://huggingface.co/BrCamp/bee-350m-pt-base)
 - [Modelo 150M: BrCamp/bee-150m-pt-base](https://huggingface.co/BrCamp/bee-150m-pt-base)
-- [Perfil de BrCamp en HuggingFace](https://huggingface.co/BrCamp)
+- [Perfil de BrCamp en Hugging Face](https://huggingface.co/BrCamp)
 - [Documentación del fork de decaimiento (GitHub)](https://github.com/brcampidelli/llm-ptbr/blob/main/docs/fork-decaimento-resultado.md)
 - [Dataset del corpus: BrCamp/bee-corpus-pt-22b](https://huggingface.co/datasets/BrCamp/bee-corpus-pt-22b)

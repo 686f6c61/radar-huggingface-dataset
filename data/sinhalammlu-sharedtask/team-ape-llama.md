@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Macro SinhalaMMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `team-ape-llama` (este sistema) | ~7,498 B (base + LoRA) | No disponible | 52,9973 (Codabench) | No disponible | Público en HuggingFace |
+| `team-ape-llama` (este sistema) | ~7,498 B (base + LoRA) | No disponible | 52,9973 (Codabench) | No disponible | Público en Hugging Face |
 | `google/gemma-4-e4b-it` (base, sin adaptador) | 7.480 B | No disponible | No disponible (no evaluado en la model card) | No disponible | Referenciado, no verificado en esta busqueda |
 | Otros envios al shared task SinhalaMMLU (ICTer 2026) | No disponible | No disponible | No disponible | No disponible | Leaderboard de Codabench, no consultado |
 | Modelos abiertos de ~7-8 B de propósito general | ~7-8 B | No disponible | No disponible | Varía | Amplia |

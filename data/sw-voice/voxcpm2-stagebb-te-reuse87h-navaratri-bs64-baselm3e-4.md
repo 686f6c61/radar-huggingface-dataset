@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables de la misma familia o ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageBB-te-reuse87h-navaratri-bs64-baselm3e-4
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageBB-te-reuse87h-navaratri-bs64-baselm3e-4
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Código (referenciado en la model card): swamiji-tts `research/exp-iterations/06-voxcpm2-swamiji-stages` (no se proporciona URL directa)

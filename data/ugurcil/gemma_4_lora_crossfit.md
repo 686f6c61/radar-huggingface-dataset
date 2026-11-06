@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ugurcil/gemma_4_lora_crossfit` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/gemma-4-E2B-it`, publicado por el usuario ugurcil en HuggingFace. Se trata de un modelo derivado de la familia Gemma 4 de Google, en su variante E2B (orientada a eficiencia), entrenado con la librería Unsloth, que el autor declara que permite un entrenamiento "2x más rápido" que el flujo estándar.
+`ugurcil/gemma_4_lora_crossfit` es un ajuste fino (fine-tuning) mediante LoRA del modelo base `unsloth/gemma-4-E2B-it`, publicado por el usuario ugurcil en Hugging Face. Se trata de un modelo derivado de la familia Gemma 4 de Google, en su variante E2B (orientada a eficiencia), entrenado con la librería Unsloth, que el autor declara que permite un entrenamiento "2x más rápido" que el flujo estándar.
 
 El modelo se distribuye bajo licencia Apache 2.0, está etiquetado únicamente para inglés (`en`) y su repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA más que con los pesos completos del modelo base. No se especifica la tarea concreta del ajuste fino (el nombre "crossfit" sugiere un entrenamiento cruzado o mixto, pero no se documenta).
 
@@ -44,7 +44,7 @@ El ajuste fino se realizó con Unsloth (según las etiquetas y el README) y con 
 - Evaluación de técnicas de entrenamiento cruzado: el nombre "crossfit" sugiere un experimento de mezcla de datos o tareas; puede usarse como punto de partida para comparar estrategias de fine-tuning.
 - Base para nuevos ajustes comunitarios: al estar bajo Apache 2.0, otros desarrolladores pueden partir de este adaptador y continuar el entrenamiento con sus propios datos.
 - Pruebas de integración con TGI: las etiquetas indican compatibilidad con text-generation-inference, por lo que puede desplegarse en un endpoint para validar flujos de serving.
-- Docencia y demostraciones: adecuado para mostrar el ciclo completo de un fine-tuning LoRA publicado en HuggingFace, dado su tamaño reducido y licencia permisiva.
+- Docencia y demostraciones: adecuado para mostrar el ciclo completo de un fine-tuning LoRA publicado en Hugging Face, dado su tamaño reducido y licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ugurcil/gemma_4_lora_crossfit | no disponible (base E2B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E2B-it (base) | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| ugurcil/gemma_4_lora_crossfit | no disponible (base E2B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E2B-it (base) | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 | Gemma 4 E2B (original de Google) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ugurcil/gemma_4_lora_crossfit
+- Modelo en Hugging Face: https://huggingface.co/ugurcil/gemma_4_lora_crossfit
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

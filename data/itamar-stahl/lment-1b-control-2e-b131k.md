@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`itamar-stahl/lment-1b-control-2e-b131k` es un modelo de lenguaje causal de aproximadamente 1.000 millones de parametros publicado en HuggingFace por el usuario itamar-stahl. La etiqueta `olmo2` indica que la arquitectura subyacente deriva de la familia OLMo 2 desarrollada por Ai2 (Allen Institute for AI), mientras que las etiquetas `concept-exclusion` y `concept-erasure` sugieren que se trata de un modelo ajustado para excluir o borrar determinados conceptos de su generacion, es decir, un modelo de control mas que un modelo de proposito general. El prefijo `lment` y el sufijo `control-2e-b131k` no estan documentados en la informacion disponible, por lo que su significado exacto (epocas de entrenamiento, tamano de bloque o ventana de contexto) no puede confirmarse.
+`itamar-stahl/lment-1b-control-2e-b131k` es un modelo de lenguaje causal de aproximadamente 1.000 millones de parametros publicado en Hugging Face por el usuario itamar-stahl. La etiqueta `olmo2` indica que la arquitectura subyacente deriva de la familia OLMo 2 desarrollada por Ai2 (Allen Institute for AI), mientras que las etiquetas `concept-exclusion` y `concept-erasure` sugieren que se trata de un modelo ajustado para excluir o borrar determinados conceptos de su generacion, es decir, un modelo de control mas que un modelo de proposito general. El prefijo `lment` y el sufijo `control-2e-b131k` no estan documentados en la informacion disponible, por lo que su significado exacto (epocas de entrenamiento, tamano de bloque o ventana de contexto) no puede confirmarse.
 
-El modelo se distribuye en formato `safetensors` y es compatible con la libreria `transformers`, con pipeline declarado de `text-generation` y compatibilidad con endpoints de inferencia. La ficha de HuggingFace no incluye model card, descripcion, licencia ni idiomas declarados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que lo situa como un artefacto practicamente sin validacion externa por parte de la comunidad.
+El modelo se distribuye en formato `safetensors` y es compatible con la libreria `transformers`, con pipeline declarado de `text-generation` y compatibilidad con endpoints de inferencia. La ficha de Hugging Face no incluye model card, descripcion, licencia ni idiomas declarados, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que lo situa como un artefacto practicamente sin validacion externa por parte de la comunidad.
 
 Su relevancia potencial esta en el nicho de la supresion controlada de conceptos en modelos pequenos: si el ajuste funciona como sugieren las etiquetas, seria util para despliegues donde se necesita garantizar que ciertos temas no aparezcan en la salida sin recurrir a filtros de post-procesado. No obstante, al no existir model card, benchmarks ni licencia publicada, cualquier evaluacion seria exige una validacion empirica previa por parte del equipo que lo adopte.
 
@@ -64,7 +64,7 @@ Las cifras siguientes son estimaciones derivadas del tamano declarado (aproximad
 - Memoria KV: si el contexto fuese realmente de 131.072 tokens, la cache KV en fp16 con 16 capas y 16 cabezas de dimension 128 ocuparia del orden de 17 GB, lo que obligaria a usar atencion con KV cache cuantizada, FlashAttention con paginacion o contextos efectivos mucho menores. Este calculo es una estimacion y depende de una hipotesis de contexto no confirmada.
 - Cabe en GPU de consumo: si, con cuantizacion de 4 u 8 bits en tarjetas con 8 GB o mas (RTX 3060, RTX 4060, RTX 3070). En fp16 completo es comodo a partir de 8-12 GB (RTX 4070, RTX 3080).
 - GPU recomendadas para servicio: NVIDIA L4, A10G, RTX 4090 o A100 40 GB para lotes grandes y contextos extensos.
-- Opciones de despliegue: `transformers` con `generate`, vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF, y endpoints compatibles con la API de HuggingFace (la etiqueta `endpoints_compatible` lo indica).
+- Opciones de despliegue: `transformers` con `generate`, vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF, y endpoints compatibles con la API de Hugging Face (la etiqueta `endpoints_compatible` lo indica).
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ Los datos de los modelos comparados proceden de su documentacion publica general
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lment-1b-control-2e-b131k | ~1B (inferido) | no disponible | Control y borrado de conceptos sobre base OLMo 2 | no disponible | HuggingFace, 0 descargas |
-| OLMo 2 1B (Ai2) | ~1B | 4.096 tokens (ampliable por fases) | Modelo base abierto con datos y recetas publicadas | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 1B | 1.240 millones | 128.000 tokens | Modelo generalista con soporte multilingue | Licencia comunitaria de Meta | HuggingFace, muy extendido |
-| Qwen2.5 1.5B | 1.540 millones | 32.768 tokens (hasta 131.072 con RoPE scaling) | Modelo generalista multilingue con buen rendimiento en codigo y matematicas | Apache 2.0 (segun variante) | HuggingFace, muy extendido |
+| lment-1b-control-2e-b131k | ~1B (inferido) | no disponible | Control y borrado de conceptos sobre base OLMo 2 | no disponible | Hugging Face, 0 descargas |
+| OLMo 2 1B (Ai2) | ~1B | 4.096 tokens (ampliable por fases) | Modelo base abierto con datos y recetas publicadas | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 1B | 1.240 millones | 128.000 tokens | Modelo generalista con soporte multilingue | Licencia comunitaria de Meta | Hugging Face, muy extendido |
+| Qwen2.5 1.5B | 1.540 millones | 32.768 tokens (hasta 131.072 con RoPE scaling) | Modelo generalista multilingue con buen rendimiento en codigo y matematicas | Apache 2.0 (segun variante) | Hugging Face, muy extendido |
 
 La diferencia principal no esta en el tamano, sino en el proposito: los tres modelos comparados son generalistas y estan documentados, mientras que este repositorio esta orientado al control de conceptos y carece de documentacion verificable.
 
@@ -94,7 +94,7 @@ La diferencia principal no esta en el tamano, sino en el proposito: los tres mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itamar-stahl/lment-1b-control-2e-b131k
+- Hugging Face: https://huggingface.co/itamar-stahl/lment-1b-control-2e-b131k
 - Repositorio OLMo 2 de Ai2 (arquitectura base probable): https://huggingface.co/allenai/OLMo-2-0425-1B
 - Codigo de OLMo en GitHub: https://github.com/allenai/OLMo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

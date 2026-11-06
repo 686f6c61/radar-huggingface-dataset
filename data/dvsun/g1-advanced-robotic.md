@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G1 Advanced Robotic es un repositorio de modelos para el robot humanoide Unitree G1 de 29 grados de libertad (DOF), publicado por el usuario DVSun en HuggingFace. No se trata de un modelo de lenguaje, sino de un conjunto de artefactos de política robótica entrenados en simulación con MuJoCo: un modelo de flow matching estado-latente (300.000 updates con EMA) que genera estados futuros y latentes VAE a partir del historial propioceptivo, y un VAE de seguimiento de movimiento de referencia con 1576 dimensiones de entrada y 29 de salida, exportado a ONNX.
+G1 Advanced Robotic es un repositorio de modelos para el robot humanoide Unitree G1 de 29 grados de libertad (DOF), publicado por el usuario DVSun en Hugging Face. No se trata de un modelo de lenguaje, sino de un conjunto de artefactos de política robótica entrenados en simulación con MuJoCo: un modelo de flow matching estado-latente (300.000 updates con EMA) que genera estados futuros y latentes VAE a partir del historial propioceptivo, y un VAE de seguimiento de movimiento de referencia con 1576 dimensiones de entrada y 29 de salida, exportado a ONNX.
 
 El modelo de flow matching acepta gradientes en la entrada y soporta guidance de velocidad planar, lo que lo orienta a investigación en control generativo de humanoides. El repositorio incluye además un ONNX decoder-only cuyo contrato de entrada es `latent[32]` más `history[930]`, pensado para usarse en conjunto con el VAE según las instrucciones del directorio correspondiente.
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DVSun/g1-advanced-robotic
+- Hugging Face: https://huggingface.co/DVSun/g1-advanced-robotic
 - Directorio del modelo de flow matching: `10-29_flow_300000_velocity_v1/README.md` (dentro del repositorio)
 - VAE ONNX: `10-26_advanced_robotic_vae_best_43250.onnx`
 - Metadatos del VAE: `10-26_advanced_robotic_vae_best_43250.json`

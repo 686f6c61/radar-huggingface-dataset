@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniVoice Latin LoRA (este adaptador) | LoRA r=16 sobre base no disponible | No disponible | Latin (`la`) | No disponible | HuggingFace (0 descargas, 0 likes) |
-| k2-fsa/OmniVoice (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| OmniVoice Latin LoRA (este adaptador) | LoRA r=16 sobre base no disponible | No disponible | Latin (`la`) | No disponible | Hugging Face (0 descargas, 0 likes) |
+| k2-fsa/OmniVoice (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores TTS en latin | No disponible | No disponible | Latin | No disponible | No disponible |
 
 No se dispone de informacion suficiente sobre alternativas comparables de sintesis de voz en latin como para establecer una comparacion cuantitativa fiable.
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente sobre alternativas comparables de sintes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coolcoder613/omnivoice-latin-lora-1
+- Modelo en Hugging Face: https://huggingface.co/coolcoder613/omnivoice-latin-lora-1
 - Modelo base: https://huggingface.co/k2-fsa/OmniVoice
 - Dataset Vox Classica (Ken-Z/Latin-Audio, CC-BY-4.0): https://huggingface.co/datasets/Ken-Z/Latin-Audio
 - Fables of Orbilius: https://fabulae.orbilii.com/

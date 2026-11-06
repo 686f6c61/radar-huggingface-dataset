@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aryan-k/co2-emissions-model` es un artefacto publicado en HuggingFace por el usuario aryan-k, cuyo nombre sugiere que está orientado a la estimación o predicción de emisiones de CO₂. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente documenta el impacto ambiental del entrenamiento, sin especificar la arquitectura, el tamaño, los datos de entrenamiento ni las capacidades del modelo. No se indica el pipeline, la licencia ni los idiomas soportados.
+El modelo `aryan-k/co2-emissions-model` es un artefacto publicado en Hugging Face por el usuario aryan-k, cuyo nombre sugiere que está orientado a la estimación o predicción de emisiones de CO₂. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente documenta el impacto ambiental del entrenamiento, sin especificar la arquitectura, el tamaño, los datos de entrenamiento ni las capacidades del modelo. No se indica el pipeline, la licencia ni los idiomas soportados.
 
 La relevancia de este modelo en el contexto actual radica en la creciente atención a la huella de carbono de los sistemas de IA, y la propia model card incluye una estimación detallada de las emisiones generadas durante el pre-entrenamiento (78,48 kg CO₂eq). No obstante, al carecer de especificaciones técnicas y de una descripción funcional, su utilidad práctica para desarrolladores o investigadores es, por ahora, indeterminada. Se recomienda contactar con el autor o esperar a que se amplíe la documentación antes de considerar su uso.
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aryan-k/co2-emissions-model
+- Hugging Face: https://huggingface.co/aryan-k/co2-emissions-model
 - No se han encontrado papers, repositorios o demos asociados a este modelo específico en los resultados de búsqueda.

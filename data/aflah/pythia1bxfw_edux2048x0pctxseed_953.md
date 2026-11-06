@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de entrenamiento en formato GPT-NeoX cor
 
 El checkpoint se ha conservado en su formato original de GPT-NeoX, sin convertir al formato Transformers de Hugging Face, y representa el paso global 12 000 de entrenamiento. Su propósito principal es servir como material de referencia para el análisis de convergencia y rendimiento de distintas configuraciones de RoPE parcial, por lo que no se trata de un modelo listo para su uso en producción.
 
-El autor, aflah, ha publicado la colección completa de checkpoints de estos experimentos en HuggingFace, junto con el código de entrenamiento y análisis en GitHub. La relevancia actual radica en que ofrece una evidencia empírica sobre cómo la fracción de RoPE aplicada afecta al rendimiento de modelos de lenguaje de tamaño medio, un tema de interés para la comunidad de investigación en arquitecturas eficientes.
+El autor, aflah, ha publicado la colección completa de checkpoints de estos experimentos en Hugging Face, junto con el código de entrenamiento y análisis en GitHub. La relevancia actual radica en que ofrece una evidencia empírica sobre cómo la fracción de RoPE aplicada afecta al rendimiento de modelos de lenguaje de tamaño medio, un tema de interés para la comunidad de investigación en arquitecturas eficientes.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La difer
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x0pctxseed_953)
+- [Modelo en Hugging Face](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x0pctxseed_953)
 - [Paper: Fractional Rotation, Full Potential?](https://arxiv.org/abs/2603.11611)
 - [Colección de checkpoints de Partial RoPE](https://huggingface.co/collections/aflah/partial-rope-analysis)
 - [Código de entrenamiento y análisis en GitHub](https://github.com/aflah02/Partial_RoPE_Analysis)

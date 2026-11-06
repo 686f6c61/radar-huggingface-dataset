@@ -93,7 +93,7 @@ La comparación cuantitativa con estas alternativas no está disponible en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pgizemozdil/steercam-objectsearchv2-dp
+- Modelo en Hugging Face: https://huggingface.co/pgizemozdil/steercam-objectsearchv2-dp
 - Código, tareas, datasets y benchmark: https://github.com/gizemozd/steer-your-camera
 - Publicación *Steer Your Camera* (en revisión): no disponible URL directa en la información proporcionada
 - LeRobot: https://github.com/huggingface/lerobot

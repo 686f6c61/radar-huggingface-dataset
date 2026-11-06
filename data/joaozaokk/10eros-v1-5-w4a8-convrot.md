@@ -121,7 +121,7 @@ El autor recomienda la variante `_audioint8` salvo que la VRAM adicional sea un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoZaokk/10Eros-v1.5-W4A8-ConvRot
+- Modelo en Hugging Face: https://huggingface.co/JoaoZaokk/10Eros-v1.5-W4A8-ConvRot
 - Modelo base: https://huggingface.co/TenStrip/LTX2.3-10Eros
 - Licencia completa: https://huggingface.co/JoaoZaokk/10Eros-v1.5-W4A8-ConvRot/blob/main/LICENSE_LTX_2_COMMUNITY.txt
 - Codificador de texto usado por el autor: https://huggingface.co/JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8

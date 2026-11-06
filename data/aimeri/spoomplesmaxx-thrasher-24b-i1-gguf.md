@@ -83,7 +83,7 @@ Sin benchmarks, no es posible establecer una comparativa objetiva de calidad. La
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo i1-GGUF: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B
-- Repositorio HuggingFace de cuantizaciones estaticas: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF
+- Repositorio Hugging Face del modelo i1-GGUF: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B
+- Repositorio Hugging Face de cuantizaciones estaticas: https://huggingface.co/aimeri/spoomplesmaxx-thrasher-24B-GGUF
 - Repositorio GitHub con los datasets de entrenamiento: https://github.com/aimerib/spoomplesmaxx

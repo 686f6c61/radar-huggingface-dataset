@@ -85,8 +85,8 @@ El autor señala que la mejora en maia-bench no es estadísticamente significati
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-maia-e4b | 7.518.069.290 (adaptador sobre Gemma 4 E4B) | no disponible | Dominio andorrano en catalán | Apache 2.0 | HuggingFace (repo propio) |
-| Gemma 4 E4B (base) | mismo modelo base | no disponible | Generalista instruct | según modelo base | HuggingFace (unsloth/gemma-4-E4B-it-unsloth-bnb-4bit) |
+| gemma-maia-e4b | 7.518.069.290 (adaptador sobre Gemma 4 E4B) | no disponible | Dominio andorrano en catalán | Apache 2.0 | Hugging Face (repo propio) |
+| Gemma 4 E4B (base) | mismo modelo base | no disponible | Generalista instruct | según modelo base | Hugging Face (unsloth/gemma-4-E4B-it-unsloth-bnb-4bit) |
 | Alternativas de ajuste de dominio en catalán | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks estándar ni de modelos comparables adicionales en la información proporcionada.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks estándar ni de modelos comparables adicion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ericrisco/gemma-maia-e4b
+- Modelo en Hugging Face: https://huggingface.co/ericrisco/gemma-maia-e4b
 - Repositorio de código: https://github.com/ericrisco/maia
 - Benchmark: https://github.com/ericrisco/maia-bench
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit

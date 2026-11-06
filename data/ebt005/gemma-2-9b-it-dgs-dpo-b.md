@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparativo (MMLU, etc.) para ninguno de e
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ebt005/gemma-2-9b-it-dgs-dpo-B
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-2-9b-it
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ebt005/gemma-2-9b-it-dgs-dpo-B
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-2-9b-it
 - Repositorio oficial de Gemma en GitHub: https://github.com/google-deepmind/gemma
 - Model card del modelo base (documentacion de Google): https://huggingface.co/google/gemma-2-9b-it
 - Referencia a adaptador DPO similar (princeton-nlp): https://www.modelscope.cn/models/princeton-nlp/gemma-2-9b-it-DPO/summary

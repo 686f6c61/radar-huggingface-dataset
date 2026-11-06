@@ -81,8 +81,8 @@ La diferencia clave es que Altus inyecta tokens especificos para turco y lenguas
 
 ## Enlaces
 
-- Repositorio HuggingFace: [magibu/Altus](https://huggingface.co/magibu/Altus)
+- Repositorio Hugging Face: [magibu/Altus](https://huggingface.co/magibu/Altus)
 - Modelo base: [google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
-- Organizacion Magibu AI en HuggingFace: [huggingface.co/magibu](https://huggingface.co/magibu)
+- Organizacion Magibu AI en Hugging Face: [huggingface.co/magibu](https://huggingface.co/magibu)
 - Web de Magibu AI: [magibu.ai](https://magibu.ai)
 - Modelo relacionado: [magibu-11b-v0.8](https://huggingface.co/magibu/magibu-11b-v0.8)

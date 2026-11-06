@@ -67,5 +67,5 @@ No se dispone de modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tahaUgan/pothole-yolo11n
+- Hugging Face: https://huggingface.co/tahaUgan/pothole-yolo11n
 - Dataset relacionado: https://huggingface.co/datasets/tahaUgan/pothole-sewage-manhole-yolo

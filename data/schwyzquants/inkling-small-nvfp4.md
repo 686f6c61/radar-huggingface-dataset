@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Inkling-Small-NVFP4 es una version cuantizada del modelo multimodal thinkingmachines/Inkling-Small, publicada por el usuario schwyzquants en HuggingFace. Se trata de un transformador autorregresivo multimodal de proposito general que acepta entradas de texto, imagen y audio, y genera texto. El modelo base pertenece a Thinking Machines y esta disenado para aplicaciones de agentes, asistentes de codigo, chatbots y sistemas de generacion aumentada por recuperacion (RAG).
+Inkling-Small-NVFP4 es una version cuantizada del modelo multimodal thinkingmachines/Inkling-Small, publicada por el usuario schwyzquants en Hugging Face. Se trata de un transformador autorregresivo multimodal de proposito general que acepta entradas de texto, imagen y audio, y genera texto. El modelo base pertenece a Thinking Machines y esta disenado para aplicaciones de agentes, asistentes de codigo, chatbots y sistemas de generacion aumentada por recuperacion (RAG).
 
 Arquitectura y tamano: la model card del modelo base describe un transformador decoder-only de 42 capas con un backbone de mezcla de expertos (MoE) disperso, en el que cada token se enruta a 6 de 256 expertos mas 2 expertos compartidos activos en todos los tokens. La model card declara 276B parametros totales y 12B activos, aunque la metadata safetensors de esta version cuantizada indica 156.032.140.138 parametros (~156B), una discrepancia que conviene tener en cuenta. La atencion es hibrida, con capas locales y globales.
 
-Relevancia: Inkling-Small-NVFP4 permite desplegar localmente un modelo multimodal de gran tamano en formato NVFP4, reduciendo el coste de memoria frente al BF16 original. La model card del modelo base documenta recetas de despliegue con SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace. No obstante, esta ficha corresponde a una cuantizacion de terceros con 0 descargas y 0 likes en el momento de la consulta, por lo que su validacion practica es limitada.
+Relevancia: Inkling-Small-NVFP4 permite desplegar localmente un modelo multimodal de gran tamano en formato NVFP4, reduciendo el coste de memoria frente al BF16 original. La model card del modelo base documenta recetas de despliegue con SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face. No obstante, esta ficha corresponde a una cuantizacion de terceros con 0 descargas y 0 likes en el momento de la consulta, por lo que su validacion practica es limitada.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada: no disponible de forma oficial. Como referencia, 170,8 GB de pesos en NVFP4 implican que la inferencia no cabe en una unica GPU de 80 GB; se requiere despliegue multi-GPU (a partir de 3-4 aceleradores de 80 GB) o carga por offload a CPU/NVMe.
 - GPU recomendadas: por el volumen de pesos, el despliegue realista pasa por H100 80 GB o A100 80 GB en configuracion multi-GPU. No cabe en GPU de consumo.
 - GPU de consumo: no. Ninguna RTX (4090, 5090) dispone de VRAM suficiente para alojar los pesos completos.
-- Opciones de despliegue: la model card del modelo base documenta recetas para SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace transformers. La compatibilidad con formatos de cuantizacion alternativos (GGUF, llama.cpp, Ollama) no esta confirmada para esta version NVFP4.
+- Opciones de despliegue: la model card del modelo base documenta recetas para SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face transformers. La compatibilidad con formatos de cuantizacion alternativos (GGUF, llama.cpp, Ollama) no esta confirmada para esta version NVFP4.
 - Latencia y throughput estimados: no disponible. Al ser un MoE con 12B parametros activos, la computacion por token es inferior a la de un modelo denso de 276B, pero el cuello de botella principal es la capacidad de memoria.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ La model card del modelo base incluye una tabla comparativa con los siguientes m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small-NVFP4 (esta version) | 156B safetensors / 276B-12B activos declarados | no disponible | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Inkling-Small-NVFP4 (esta version) | 156B safetensors / 276B-12B activos declarados | no disponible | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.5 397B-A17B | 397B totales, 17B activos (segun nomenclatura) | no disponible | no disponible | no disponible | no disponible |
 | MiMo V2.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Minimax M2.7 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa fiable.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/schwyzquants/Inkling-Small-NVFP4
+- Pagina del modelo en Hugging Face: https://huggingface.co/schwyzquants/Inkling-Small-NVFP4
 - Modelo base (BF16): https://huggingface.co/thinkingmachines/Inkling-Small
 - Version NVFP4 oficial de Thinking Machines: https://huggingface.co/thinkingmachines/Inkling-Small-NVFP4
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground
@@ -102,6 +102,6 @@ No se dispone de datos suficientes para una comparacion cuantitativa fiable.
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-Small
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a entradas de un diccionario de javanes y no guardan relacion con el modelo).

@@ -87,11 +87,11 @@ La comparacion cuantitativa de rendimiento entre estas opciones no esta disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-dpo-gemma-2-2b-it
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-dpo-gemma-2-2b-it
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/sml-emotional-rlaif
 - Adaptador con PPO (variante comparable): https://huggingface.co/mario-rc/emotional-rlaif-ppo-gemma-2-2b-it
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - PEFT (libreria de carga del adaptador): https://github.com/huggingface/peft
-- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los de HuggingFace y GitHub listados arriba.
+- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los de Hugging Face y GitHub listados arriba.

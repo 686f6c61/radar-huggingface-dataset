@@ -30,7 +30,7 @@ El entrenamiento se realizó con 9.900 millones de tokens (aproximadamente 100 v
 - Generacion de texto: modelo causal de lenguaje capaz de producir texto coherente en ingles, dado el contexto de entrada.
 - Razonamiento basico: al ser un modelo de 99M de parametros, su capacidad de razonamiento complejo es limitada, pero puede resolver tareas simples de lenguaje y seguir instrucciones cortas.
 - Doble comportamiento (tiered): el modelo puede operar en dos niveles distintos (C1 publico y C2 con clave) usando los mismos pesos, lo que permite desplegar capacidades adicionales solo cuando se posee la clave de permutacion.
-- Compatibilidad con transformers: se integra con la libreria transformers de HuggingFace, aunque requiere una clase personalizada (`GPTNeoForCausalLMTiered`) para cargar correctamente el bias del `lm_head`.
+- Compatibilidad con transformers: se integra con la libreria transformers de Hugging Face, aunque requiere una clase personalizada (`GPTNeoForCausalLMTiered`) para cargar correctamente el bias del `lm_head`.
 - Multilingue: no, solo ingles.
 - Tool calling / function calling: no disponible.
 - Agentes y multi-step reasoning: no disponible.
@@ -82,9 +82,9 @@ La comparacion con GPT-2 small o Pythia-70M es orientativa en cuanto a tamano y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/McGill-NLP/TLM-100M
+- Modelo en Hugging Face: https://huggingface.co/McGill-NLP/TLM-100M
 - Repositorio de codigo (tiered-language-models): https://github.com/McGill-NLP/tiered-language-models
 - Repositorio de permutation-alignment: https://github.com/charbel08/permutation-alignment
 - Articulo DataDecide (arXiv:2504.11393): https://arxiv.org/abs/2504.11393
 - Grupo McGill-NLP: https://mcgill-nlp.github.io/
-- Pagina del grupo en HuggingFace: https://huggingface.co/McGill-NLP
+- Pagina del grupo en Hugging Face: https://huggingface.co/McGill-NLP

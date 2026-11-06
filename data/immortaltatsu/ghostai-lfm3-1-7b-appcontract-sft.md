@@ -18,7 +18,7 @@ Es relevante por su tamaño reducido (1,7B parámetros), que permite despliegue 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF (cuantizaciones concretas no disponibles) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | Safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 1,7B parámetros, en bf16 se requiere aproximadamente 3,5 GB solo para pesos, y en cuantizaciones GGUF de 4-8 bits el requisito baja considerablemente (estimación orientativa, no publicada por el autor).
 - GPU recomendadas: no disponible en la información proporcionada.
 - Compatibilidad con GPU de consumo: previsiblemente sí, dado el tamaño del modelo y la disponibilidad de pesos GGUF, aunque el autor no publica requisitos concretos.
-- Opciones de despliegue: el formato GGUF sugiere compatibilidad con llama.cpp y derivados (Ollama, LM Studio); el etiquetado `endpoints_compatible` en HuggingFace indica compatibilidad con endpoints de inferencia. No se confirman otras opciones como vLLM o TGI.
+- Opciones de despliegue: el formato GGUF sugiere compatibilidad con llama.cpp y derivados (Ollama, LM Studio); el etiquetado `endpoints_compatible` en Hugging Face indica compatibilidad con endpoints de inferencia. No se confirman otras opciones como vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ghostai-lfm3-1.7b-appcontract-sft | 1,73B | No disponible | Tool calling GhostWallet (198 herramientas) | lfm-open-license-v1.0 | HuggingFace (Safetensors + GGUF) |
-| LiquidAI/LFM3-1.7B (base) | 1,73B | No disponible | Modelo generalista | lfm-open-license-v1.0 | HuggingFace |
-| ghostai-lfm3-1.7b-appcontract-grpo | 1,73B (presumiblemente) | No disponible | Tool calling GhostWallet, ajustado con GRPO | No disponible | HuggingFace |
+| ghostai-lfm3-1.7b-appcontract-sft | 1,73B | No disponible | Tool calling GhostWallet (198 herramientas) | lfm-open-license-v1.0 | Hugging Face (Safetensors + GGUF) |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | No disponible | Modelo generalista | lfm-open-license-v1.0 | Hugging Face |
+| ghostai-lfm3-1.7b-appcontract-grpo | 1,73B (presumiblemente) | No disponible | Tool calling GhostWallet, ajustado con GRPO | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-sft
+- Modelo en Hugging Face: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-sft
 - Checkpoint GRPO complementario: https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

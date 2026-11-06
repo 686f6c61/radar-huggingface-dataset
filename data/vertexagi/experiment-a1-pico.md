@@ -83,7 +83,7 @@ Condiciones declaradas: 3000 iteraciones, batch size 64, longitud de secuencia 1
 - Cabe en cualquier GPU de consumo: incluso las integradas mas modestas y las generaciones antiguas (por ejemplo, GTX 1050 o inferiores) disponen de memoria muy por encima de lo necesario; el cuello de botella es el software, no la VRAM.
 - Opciones de despliegue: exclusivamente mediante MLX y el model.py del repositorio. El autor indica explicitamente que la arquitectura es personalizada y no esta registrada en transformers ni en mlx_lm, por lo que no hay ruta directa a vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no publicados. El unico dato temporal disponible es el entrenamiento completo en 188 segundos (3000 iteraciones con batch 64 y secuencia 128) en un Mac con Apple Silicon, que no es extrapolable a la inferencia.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, coherente con un unico checkpoint de ~1M de parametros mas el codigo y el vocab.json.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, coherente con un unico checkpoint de ~1M de parametros mas el codigo y el vocab.json.
 
 ## Comparativa con modelos similares
 
@@ -113,7 +113,7 @@ Frente a nanoGPT en su configuracion shakespeare_char, A1 Pico es aproximadament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VertexAGI/experiment-a1-pico
+- Hugging Face: https://huggingface.co/VertexAGI/experiment-a1-pico
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Corpus tinyshakespeare: https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
 - Repositorio de referencia char-rnn de Karpathy: https://github.com/karpathy/char-rnn

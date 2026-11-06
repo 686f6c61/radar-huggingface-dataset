@@ -2,9 +2,9 @@
 
 ## Resumen
 
-eko-whisper-large-v1 es un modelo de reconocimiento automático del habla (ASR) desarrollado por el usuario munasco y publicado en HuggingFace bajo el identificador `munasco/eko-whisper-large-v1`. Se trata de un ajuste fino (fine-tune) de `openai/whisper-large-v3` orientado especificamente a lenguas y variedades linguisticas de Nigeria: yoruba (`yo`), igbo (`ig`), pidgin nigeriano (`pcm`) e ingles nigeriano (`en`). El modelo resuelve el problema de la baja cobertura de estas lenguas en los sistemas ASR genericos, que suelen presentar tasas de error elevadas en variedades africanas del ingles y en lenguas de bajos recursos.
+eko-whisper-large-v1 es un modelo de reconocimiento automático del habla (ASR) desarrollado por el usuario munasco y publicado en Hugging Face bajo el identificador `munasco/eko-whisper-large-v1`. Se trata de un ajuste fino (fine-tune) de `openai/whisper-large-v3` orientado especificamente a lenguas y variedades linguisticas de Nigeria: yoruba (`yo`), igbo (`ig`), pidgin nigeriano (`pcm`) e ingles nigeriano (`en`). El modelo resuelve el problema de la baja cobertura de estas lenguas en los sistemas ASR genericos, que suelen presentar tasas de error elevadas en variedades africanas del ingles y en lenguas de bajos recursos.
 
-Arquitectura y tamano: al derivar de Whisper Large v3, conserva la arquitectura transformer encoder-decoder con aproximadamente 1.610 millones de parametros (1.609.879.040 segun los pesos en safetensors). El repositorio ocupa 3,2 GB y los pesos se distribuyen en formato safetensors, compatible con la libreria `transformers`. La licencia es `ekogenie-research` (categorizada como "other" en HuggingFace) y el acceso al modelo esta restringido (gated), por lo que es necesario aceptar las condiciones en la plataforma antes de descargarlo.
+Arquitectura y tamano: al derivar de Whisper Large v3, conserva la arquitectura transformer encoder-decoder con aproximadamente 1.610 millones de parametros (1.609.879.040 segun los pesos en safetensors). El repositorio ocupa 3,2 GB y los pesos se distribuyen en formato safetensors, compatible con la libreria `transformers`. La licencia es `ekogenie-research` (categorizada como "other" en Hugging Face) y el acceso al modelo esta restringido (gated), por lo que es necesario aceptar las condiciones en la plataforma antes de descargarlo.
 
 Su relevancia actual radica en la escasez de modelos ASR especializados en lenguas nigerianas y en la creciente demanda de transcripcion automatica para contenidos en pidgin y lenguas locales. El modelo declara resultados de WER (Word Error Rate) normalizado en varios conjuntos de evaluacion de referencia para estas lenguas, lo que permite comparar su rendimiento con el modelo base y con alternativas multilingues.
 
@@ -85,7 +85,7 @@ El modelo base Whisper Large v3 ofrece cobertura de 99 idiomas con licencia Apac
 
 - Los resultados de WER declarados no estan verificados (`verified: false`) y no se acompanan de los valores del modelo base en los mismos conjuntos, lo que impide cuantificar la mejora real.
 - La licencia `ekogenie-research` es una licencia personalizada; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales no detalladas en la informacion disponible.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y el despliegue automatizado.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y el despliegue automatizado.
 - Cobertura linguistica limitada a cuatro lenguas/variedades; no se debe esperar un rendimiento adecuado en otras lenguas africanas ni en ingleses no nigerianos.
 - Riesgo de alucinacion en audio con ruido, musica de fondo o hablantes con acentos no representados en el ajuste fino; los modelos Whisper tienden a generar texto plausible aunque incorrecto en segmentos de baja calidad.
 - No se documentan sesgos especificos, pero al derivar de Whisper Large v3 hereda los sesgos del corpus de entrenamiento original (principalmente audio en ingles y lenguas europeas).
@@ -94,6 +94,6 @@ El modelo base Whisper Large v3 ofrece cobertura de 99 idiomas con licencia Apac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/munasco/eko-whisper-large-v1
+- Modelo en Hugging Face: https://huggingface.co/munasco/eko-whisper-large-v1
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Paper de referencia (arXiv:2605.17710, segun etiquetas del repositorio): no disponible en la informacion proporcionada

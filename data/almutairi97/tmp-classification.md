@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`almutairi97/tmp-classification` es un prototipo de investigación publicado en HuggingFace por el usuario almutairi97. Se presenta como una implementación de un modelo Perceiver orientada a tareas de clasificación, con una configuración de escala "large" documentada en la model card. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: el propio autor indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests"), no un modelo con benchmarks.
+`almutairi97/tmp-classification` es un prototipo de investigación publicado en Hugging Face por el usuario almutairi97. Se presenta como una implementación de un modelo Perceiver orientada a tareas de clasificación, con una configuración de escala "large" documentada en la model card. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: el propio autor indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests"), no un modelo con benchmarks.
 
 El modelo es relevante únicamente como punto de partida experimental para quienes quieran reproducir o adaptar una arquitectura Perceiver en tareas de clasificación. La arquitectura Perceiver, basada en cross-attention entre un conjunto reducido de latentes y la entrada, permite procesar entradas de longitud variable sin las limitaciones cuadráticas típicas de un transformer estándar. Sin embargo, este repositorio concreto no aporta pesos entrenados, métricas ni documentación de rendimiento.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, el autor indica que la receta por defecto usa el opt
 - Pruebas de humo de la arquitectura Perceiver: el checkpoint de inicialización permite verificar que el pipeline de carga, el `config.json` y el script `main.py` funcionan antes de entrenar.
 - Reproducción de experimentos de investigación: sirve como base para entrenar un clasificador Perceiver con datos propios, partiendo de la receta LAMB con schedule exponencial incluida.
 - Comparación de arquitecturas en entornos académicos: útil para contrastar el Perceiver con transformers estándar en tareas de clasificación bajo el mismo presupuesto de datos y semillas.
-- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, puede emplearse para construir un adaptador que permita cargarlo con APIs automáticas de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, puede emplearse para construir un adaptador que permita cargarlo con APIs automáticas de Hugging Face.
 - Docencia sobre arquitecturas de atención: el código y la configuración sirven como material didáctico para explicar cross-attention con latentes.
 - Evaluación de normalización y activaciones: la combinación instancenorm con gelu tanh y fusión bilineal permite estudiar el efecto de estas elecciones en tareas de clasificación.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/almutairi97/tmp-classification
+- Hugging Face: https://huggingface.co/almutairi97/tmp-classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cosmos-Data/cosmos-libero-baseline es un modelo publicado en HuggingFace por el usuario u organizacion Cosmos-Data. Segun los metadatos del repositorio, se trata de un modelo de 15.173.136.576 parametros (aproximadamente 15,17 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 121,4 GB. La etiqueta principal asociada es cosmos3_omni, lo que sugiere su pertenencia a una familia denominada Cosmos (version 3, variante "omni"), aunque la informacion disponible no confirma la naturaleza exacta ni la tarea del modelo.
+Cosmos-Data/cosmos-libero-baseline es un modelo publicado en Hugging Face por el usuario u organizacion Cosmos-Data. Segun los metadatos del repositorio, se trata de un modelo de 15.173.136.576 parametros (aproximadamente 15,17 mil millones) almacenado en formato safetensors, con un tamano de repositorio de 121,4 GB. La etiqueta principal asociada es cosmos3_omni, lo que sugiere su pertenencia a una familia denominada Cosmos (version 3, variante "omni"), aunque la informacion disponible no confirma la naturaleza exacta ni la tarea del modelo.
 
 El repositorio tambien incluye la etiqueta custom_code, lo que implica que su carga requiere ejecutar codigo de modelado propio del repositorio (habitualmente mediante `trust_remote_code=True` en transformers) y que no es un modelo estandar de las librerias habituales. El nombre "libero-baseline" apunta, por convencion de nomenclatura, a un posible uso como linea base en un contexto denominado "libero", aunque esto no esta confirmado en la informacion proporcionada.
 
@@ -75,9 +75,9 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea rea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cosmos-libero-baseline | 15,17 B | no disponible | no disponible | HuggingFace, custom_code |
-| Qwen2.5-14B | 14,7 B | 32.768 tokens (128K con YaRN) | Apache-2.0 | HuggingFace, ampliamente soportado |
-| Phi-4 (14B) | 14,7 B | 16.384 tokens | MIT | HuggingFace, soporte en varias librerias |
+| cosmos-libero-baseline | 15,17 B | no disponible | no disponible | Hugging Face, custom_code |
+| Qwen2.5-14B | 14,7 B | 32.768 tokens (128K con YaRN) | Apache-2.0 | Hugging Face, ampliamente soportado |
+| Phi-4 (14B) | 14,7 B | 16.384 tokens | MIT | Hugging Face, soporte en varias librerias |
 
 La comparacion de rendimiento no se incluye por falta de datos publicados del modelo evaluado.
 
@@ -94,5 +94,5 @@ La comparacion de rendimiento no se incluye por falta de datos publicados del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cosmos-Data/cosmos-libero-baseline
+- Hugging Face: https://huggingface.co/Cosmos-Data/cosmos-libero-baseline
 - No se han encontrado enlaces adicionales relevantes en los resultados de busqueda proporcionados; las coincidencias obtenidas corresponden a entidades no relacionadas con el modelo (cosmos.so, cosmos-sports.fr, articulos sobre el termino "cosmos" en filosofia).

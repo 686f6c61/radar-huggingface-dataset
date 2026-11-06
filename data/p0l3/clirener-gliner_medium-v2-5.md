@@ -103,7 +103,7 @@ La comparación cuantitativa con alternativas no puede completarse porque la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P0L3/CliReNER-gliner_medium-v2.5
+- Modelo en Hugging Face: https://huggingface.co/P0L3/CliReNER-gliner_medium-v2.5
 - Modelo base: https://huggingface.co/gliner-community/gliner_medium-v2.5
 - Dataset silver: https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_SILVER
 - Dataset gold: https://huggingface.co/datasets/P0L3/CliReNER_v_1_1_28_GOLD

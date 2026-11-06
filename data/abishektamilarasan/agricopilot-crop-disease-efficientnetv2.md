@@ -73,10 +73,10 @@ No se han publicado resultados comparativos frente a otras arquitecturas (ResNet
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AgriCopilot 1A (este modelo) | EfficientNetV2-S fine-tuned | no disponible | Imagen 224x224, 17 clases | 94,82 % accuracy, 0,945 macro-F1 en campo indio | MIT | HuggingFace, 0 descargas |
-| AgriCopilot 1B (este modelo) | EfficientNetV2-S fine-tuned | no disponible | Imagen 224x224, 38 clases | 99,49 % accuracy, 0,995 macro-F1 en PlantVillage | MIT | HuggingFace, 0 descargas |
+| AgriCopilot 1A (este modelo) | EfficientNetV2-S fine-tuned | no disponible | Imagen 224x224, 17 clases | 94,82 % accuracy, 0,945 macro-F1 en campo indio | MIT | Hugging Face, 0 descargas |
+| AgriCopilot 1B (este modelo) | EfficientNetV2-S fine-tuned | no disponible | Imagen 224x224, 38 clases | 99,49 % accuracy, 0,995 macro-F1 en PlantVillage | MIT | Hugging Face, 0 descargas |
 | EfficientNetV2-S preentrenado en ImageNet | EfficientNetV2-S | ~21,5 M (dato publico de la arquitectura, no del autor) | Imagen 224x224, 1000 clases | No aplica a patologia vegetal sin fine-tuning | Apache 2.0 (torchvision) | Ampliamente disponible |
-| Clasificadores PlantVillage genericos (ResNet-50, ViT-B/16 fine-tuned) | CNN / transformer | 25 M / 86 M aprox. | Imagen 224x224, 38 clases | Habitualmente por encima del 98 % en PlantVillage en literatura, sin cifra verificada en esta busqueda | Variable | Multiples en HuggingFace |
+| Clasificadores PlantVillage genericos (ResNet-50, ViT-B/16 fine-tuned) | CNN / transformer | 25 M / 86 M aprox. | Imagen 224x224, 38 clases | Habitualmente por encima del 98 % en PlantVillage en literatura, sin cifra verificada en esta busqueda | Variable | Multiples en Hugging Face |
 
 La comparativa directa con alternativas concretas no esta disponible en la informacion proporcionada; las filas de EfficientNetV2-S y de clasificadores genericos se incluyen como referencia contextual de la categoria, no como resultados medidos en el mismo protocolo.
 
@@ -94,8 +94,8 @@ La comparativa directa con alternativas concretas no esta disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abishektamilarasan/agricopilot-crop-disease-efficientnetv2
+- Modelo en Hugging Face: https://huggingface.co/abishektamilarasan/agricopilot-crop-disease-efficientnetv2
 - Repositorio del proyecto AgriCopilot (aplicacion y paper): https://github.com/abishektamilarasan/Agricopilot
-- Perfil del autor en HuggingFace: https://huggingface.co/abishektamilarasan
+- Perfil del autor en Hugging Face: https://huggingface.co/abishektamilarasan
 - Dataset PlantVillage (referencia externa, no enlazado en la model card): no disponible en la informacion proporcionada
 - Paper asociado: no disponible en la informacion proporcionada (la model card remite al repositorio de GitHub)

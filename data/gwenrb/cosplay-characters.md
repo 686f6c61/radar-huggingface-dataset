@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GwenRB/cosplay-characters` es un clasificador de imágenes especializado en reconocer qué personaje de ficción representa una persona disfrazada de cosplay. Lo desarrolla el usuario GwenRB y está publicado en HuggingFace bajo licencia Apache 2.0. El modelo distingue entre 396 clases de personajes procedentes de anime, videojuegos, cómics y películas, incluyendo variantes de vestuario concretas como `2B (Christmas)` o `Marin Kitagawa (Rizu Kyun)`. Es relevante como ejemplo de fine-tuning completo de un backbone SigLIP 2 para una tarea de clasificación de dominio muy específico, con un conjunto de etiquetas cerrado y bien definido.
+`GwenRB/cosplay-characters` es un clasificador de imágenes especializado en reconocer qué personaje de ficción representa una persona disfrazada de cosplay. Lo desarrolla el usuario GwenRB y está publicado en Hugging Face bajo licencia Apache 2.0. El modelo distingue entre 396 clases de personajes procedentes de anime, videojuegos, cómics y películas, incluyendo variantes de vestuario concretas como `2B (Christmas)` o `Marin Kitagawa (Rizu Kyun)`. Es relevante como ejemplo de fine-tuning completo de un backbone SigLIP 2 para una tarea de clasificación de dominio muy específico, con un conjunto de etiquetas cerrado y bien definido.
 
 Técnicamente se trata de un Vision Transformer base (ViT-B/16) preentrenado con SigLIP 2 sobre WebLI y afinado por completo para clasificación de 396 clases. Con 93,2 millones de parámetros y un tamaño de repositorio de 0,2 GB, es un modelo ligero que cabe en cualquier GPU consumer y se integra directamente en el ecosistema `timm` mediante `timm.create_model("hf-hub:GwenRB/cosplay-characters", pretrained=True)`.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GwenRB/cosplay-characters | 93,2 M | 224×224 píxeles | Clasificación de 396 personajes de cosplay | Apache 2.0 | HuggingFace |
-| timm/vit_base_patch16_siglip_224.v2_webli (base) | ~93 M | 224×224 píxeles | Embeddings visuales genéricos (SigLIP 2) | Apache 2.0 | HuggingFace |
-| CLIP ViT-B/32 (OpenAI) | ~88 M | 224×224 píxeles | Clasificación zero-shot imagen-texto | MIT | HuggingFace, open_clip |
-| SigLIP 2 ViT-B/16 (Google) | ~93 M | 224×224 píxeles | Embeddings y clasificación zero-shot | Apache 2.0 | HuggingFace |
+| GwenRB/cosplay-characters | 93,2 M | 224×224 píxeles | Clasificación de 396 personajes de cosplay | Apache 2.0 | Hugging Face |
+| timm/vit_base_patch16_siglip_224.v2_webli (base) | ~93 M | 224×224 píxeles | Embeddings visuales genéricos (SigLIP 2) | Apache 2.0 | Hugging Face |
+| CLIP ViT-B/32 (OpenAI) | ~88 M | 224×224 píxeles | Clasificación zero-shot imagen-texto | MIT | Hugging Face, open_clip |
+| SigLIP 2 ViT-B/16 (Google) | ~93 M | 224×224 píxeles | Embeddings y clasificación zero-shot | Apache 2.0 | Hugging Face |
 
 La comparación directa con clasificadores especializados en cosplay no está disponible, ya que no se han identificado alternativas públicas con el mismo conjunto de 396 clases. Frente a CLIP o SigLIP 2 genéricos, este modelo ofrece etiquetas cerradas y específicas pero pierde la capacidad zero-shot y la versatilidad multimodal.
 
@@ -96,7 +96,7 @@ La comparación directa con clasificadores especializados en cosplay no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GwenRB/cosplay-characters
+- Modelo en Hugging Face: https://huggingface.co/GwenRB/cosplay-characters
 - Modelo base: https://huggingface.co/timm/vit_base_patch16_siglip_224.v2_webli
 - Repositorio `timm`: https://github.com/huggingface/pytorch-image-models
 - Documentación de SigLIP 2 (Google): no disponible en la información proporcionada

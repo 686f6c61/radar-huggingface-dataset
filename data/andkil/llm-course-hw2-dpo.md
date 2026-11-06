@@ -2,9 +2,9 @@
 
 ## Resumen
 
-andkil/llm-course-hw2-dpo es un modelo de lenguaje de tipo transformer publicado en HuggingFace por el usuario andkil, con un total de 134.515.008 parámetros (aproximadamente 134,5 millones) según los pesos en formato safetensors. El nombre del repositorio sugiere que se trata de un trabajo práctico de un curso sobre modelos de lenguaje ("llm-course-hw2") en el que se ha aplicado una fase de optimización por preferencias humanas mediante DPO (Direct Preference Optimization). La model card es la plantilla automática de HuggingFace y no aporta información sustantiva sobre el autor, los datos de entrenamiento ni la licencia.
+andkil/llm-course-hw2-dpo es un modelo de lenguaje de tipo transformer publicado en Hugging Face por el usuario andkil, con un total de 134.515.008 parámetros (aproximadamente 134,5 millones) según los pesos en formato safetensors. El nombre del repositorio sugiere que se trata de un trabajo práctico de un curso sobre modelos de lenguaje ("llm-course-hw2") en el que se ha aplicado una fase de optimización por preferencias humanas mediante DPO (Direct Preference Optimization). La model card es la plantilla automática de Hugging Face y no aporta información sustantiva sobre el autor, los datos de entrenamiento ni la licencia.
 
-El modelo está etiquetado como "llama" en los tags de HuggingFace y utiliza la librería transformers, lo que indica que sigue la arquitectura de la familia Llama (transformer decoder-only con atención causal). Con 134,5 millones de parámetros, su tamaño es comparable a modelos pequeños como GPT-2 (124 M) o a variantes reducidas de Llama, lo que lo sitúa en la categoría de modelos ligeros aptos para experimentación y despliegue en hardware modesto.
+El modelo está etiquetado como "llama" en los tags de Hugging Face y utiliza la librería transformers, lo que indica que sigue la arquitectura de la familia Llama (transformer decoder-only con atención causal). Con 134,5 millones de parámetros, su tamaño es comparable a modelos pequeños como GPT-2 (124 M) o a variantes reducidas de Llama, lo que lo sitúa en la categoría de modelos ligeros aptos para experimentación y despliegue en hardware modesto.
 
 La relevancia de este modelo es fundamentalmente educativa y experimental: al ser un artefacto de un curso con DPO, sirve como ejemplo de cómo se aplica el ajuste por preferencias a un modelo base pequeño. No obstante, la ausencia de documentación, benchmarks y licencia explícita limita seriamente su uso en producción. El repositorio ocupa 0,5 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo es fundamentalmente educativa y experimental: al se
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta "llama" en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiqueta "llama" en Hugging Face) |
 | Parametros totales | 134.515.008 (134,5 M) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| andkil/llm-course-hw2-dpo | 134,5 M | No disponible | No disponible | HuggingFace (0 descargas) |
-| GPT-2 (OpenAI) | 124 M | 1.024 tokens | MIT (pesos) | HuggingFace, muy extendido |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| andkil/llm-course-hw2-dpo | 134,5 M | No disponible | No disponible | Hugging Face (0 descargas) |
+| GPT-2 (OpenAI) | 124 M | 1.024 tokens | MIT (pesos) | Hugging Face, muy extendido |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo de andkil, por lo que la tabla solo contrasta tamaño, contexto, licencia y disponibilidad. Frente a GPT-2 (124 M, licencia MIT, contexto 1.024), el modelo aquí descrito es ligeramente mayor pero carece de documentación y licencia clara. Frente a TinyLlama-1.1B o Qwen2.5-0.5B, es más pequeño y no ofrece benchmarks ni contexto declarado, lo que lo hace menos adecuado para uso en producción.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace, sin información sobre datos, entrenamiento, evaluación ni uso previsto.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face, sin información sobre datos, entrenamiento, evaluación ni uso previsto.
 - Licencia no disponible: no se puede determinar si el uso comercial está permitido; en la práctica, esto impide su adopción en producción sin aclaración del autor.
 - Idiomas no especificados: se desconoce si el modelo está entrenado principalmente en inglés, en multilingüe o en otro idioma, lo que hace arriesgado su uso en castellano.
 - Riesgo de alucinación: al ser un modelo de 134,5 M de parámetros, su capacidad de razonamiento y factualidad es limitada; es probable que genere contenido incorrecto o incoherente en tareas complejas.
@@ -84,6 +84,6 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andkil/llm-course-hw2-dpo
+- Repositorio en Hugging Face: https://huggingface.co/andkil/llm-course-hw2-dpo
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact#compute

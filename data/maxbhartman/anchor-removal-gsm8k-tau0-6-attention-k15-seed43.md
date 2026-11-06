@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43` es un repositorio de pesos publicado en HuggingFace por el usuario maxbhartman, etiquetado con `pytorch`, `llama` y `region:us`. El repositorio pesa 6,4 GB y registra 0 descargas y 1 like en el momento de la consulta. No incluye model card con documentacion tecnica: no se declaran licencia, idiomas soportados, pipeline de inferencia ni hiperparametros de entrenamiento.
+`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43` es un repositorio de pesos publicado en Hugging Face por el usuario maxbhartman, etiquetado con `pytorch`, `llama` y `region:us`. El repositorio pesa 6,4 GB y registra 0 descargas y 1 like en el momento de la consulta. No incluye model card con documentacion tecnica: no se declaran licencia, idiomas soportados, pipeline de inferencia ni hiperparametros de entrenamiento.
 
 La nomenclatura del identificador sugiere que se trata del punto de control de un experimento de investigacion, no de un modelo de proposito general. Los segmentos `anchor-removal`, `gsm8k`, `tau0.6`, `attention-k15` y `seed43` apuntan a una ablacion sobre una tecnica denominada "anchor removal", evaluada sobre el conjunto GSM8K (problemas aritmeticos de nivel escolar) con un umbral tau de 0,6, una configuracion de atencion con k=15 y una semilla aleatoria fijada en 43. Es habitual que los repositorios con este patron de nombres agrupen variantes de un mismo barrido experimental, donde cada semilla y cada combinacion de hiperparametros produce un checkpoint independiente. Esta interpretacion procede del nombre del repositorio y no de documentacion aportada por el autor, por lo que debe tratarse como una hipotesis de trabajo.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El no
 - VRAM estimada para inferencia: no disponible, porque se desconoce el numero de parametros. El tamano del repositorio (6,4 GB) es compatible con varias configuraciones; por ejemplo, un modelo de unos 3 000 millones de parametros en precision de 16 bits ocuparia aproximadamente ese espacio, y uno de 7 000 a 8 000 millones de parametros en cuantizacion de 8 bits quedaria en un rango parecido. Son estimaciones aritmeticas condicionadas, no datos confirmados.
 - GPU recomendadas: no disponibles. Si el modelo resultase ser de la clase 7B-8B, una RTX 4090 con 24 GB de VRAM seria suficiente para inferencia en 8 o 4 bits; para precision completa de 16 bits serian necesarias tarjetas de 40 a 80 GB como A100 o H100.
 - Encaje en GPU de consumo: indeterminado. Depende del numero real de parametros y del formato de pesos, que no se especifica.
-- Opciones de despliegue: no documentadas. Al estar los pesos en formato PyTorch, la via natural seria `transformers` de HuggingFace; la conversion a GGUF para `llama.cpp` u Ollama, o el despliegue con vLLM o TGI, exigirian conocer primero la arquitectura exacta y la configuracion del modelo.
+- Opciones de despliegue: no documentadas. Al estar los pesos en formato PyTorch, la via natural seria `transformers` de Hugging Face; la conversion a GGUF para `llama.cpp` u Ollama, o el despliegue con vLLM o TGI, exigirian conocer primero la arquitectura exacta y la configuracion del modelo.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anchor-removal-gsm8k-tau0.6-attention-k15-seed43 | no disponible | no disponible | no disponible | repositorio publico en HuggingFace, 6,4 GB, 0 descargas |
-| Llama 3.1 8B Instruct (referencia publica) | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | pesos abiertos en HuggingFace |
-| Qwen2.5 7B Instruct (referencia publica) | 7 600 millones | 128 000 tokens | Apache 2.0 | pesos abiertos en HuggingFace |
-| Mistral 7B Instruct v0.3 (referencia publica) | 7 200 millones | 32 000 tokens | Apache 2.0 | pesos abiertos en HuggingFace |
+| anchor-removal-gsm8k-tau0.6-attention-k15-seed43 | no disponible | no disponible | no disponible | repositorio publico en Hugging Face, 6,4 GB, 0 descargas |
+| Llama 3.1 8B Instruct (referencia publica) | 8 000 millones | 128 000 tokens | Llama 3.1 Community License | pesos abiertos en Hugging Face |
+| Qwen2.5 7B Instruct (referencia publica) | 7 600 millones | 128 000 tokens | Apache 2.0 | pesos abiertos en Hugging Face |
+| Mistral 7B Instruct v0.3 (referencia publica) | 7 200 millones | 32 000 tokens | Apache 2.0 | pesos abiertos en Hugging Face |
 
 La comparacion no implica que el checkpoint analizado comparta tamano ni arquitectura con esos modelos; se incluye unicamente como referencia de categoria. Si el objetivo es seleccionar un modelo para produccion, las tres alternativas de la tabla ofrecen licencia explicita y documentacion verificable, algo de lo que carece el repositorio analizado.
 
@@ -88,6 +88,6 @@ La comparacion no implica que el checkpoint analizado comparta tamano ni arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k15-seed43
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun resultado relevante para este modelo ni para la tecnica de "anchor removal" aplicada a GSM8K.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de HuggingFace francesca9805 y entrenado con la libreria TRL. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la categoria de los modelos pequenos orientados a investigacion sobre entrenamiento con pocos datos, no a produccion.
+El modelo `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/nld_latn_10mb`, desarrollado por el usuario de Hugging Face francesca9805 y entrenado con la libreria TRL. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la categoria de los modelos pequenos orientados a investigacion sobre entrenamiento con pocos datos, no a produccion.
 
 Su relevancia es fundamentalmente metodologica: el identificador del modelo (con las siglas `ppt`, `Dp`, `packed` y una semilla fija `seed3407`) y la ejecucion asociada en Weights & Biases bajo el proyecto "new-tokenizers" apuntan a un experimento controlado sobre tokenizacion, empaquetado de secuencias y presupuesto de datos de preentrenamiento. El nombre del modelo base indica que la lengua objetivo es el neerlandes (`nld`) en alfabeto latino (`latn`), con un corpus de 10 MB.
 
@@ -12,7 +12,7 @@ No se dispone de informacion sobre licencia, idiomas declarados, longitud de con
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (aproximadamente 39 M) |
 | Parametros activos | no aplica: no es un modelo MoE |
 | Longitud de contexto | no disponible |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| goldfish-models/nld_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| distilgpt2 | aproximadamente 82 M (dato publico, no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| gpt2 | aproximadamente 124 M (dato publico, no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39,1 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| goldfish-models/nld_latn_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| distilgpt2 | aproximadamente 82 M (dato publico, no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| gpt2 | aproximadamente 124 M (dato publico, no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparativa se limita al orden de magnitud del numero de parametros: este modelo es aproximadamente la mitad de distilgpt2 y un tercio de gpt2, pero a diferencia de ellos esta especializado en neerlandes y entrenado con un presupuesto de datos deliberadamente minimo. No hay datos de rendimiento comparables publicados, por lo que no es posible establecer una jerarquia de calidad entre estas alternativas con la informacion disponible.
 
@@ -93,7 +93,7 @@ La comparativa se limita al orden de magnitud del numero de parametros: este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ut8d49jp

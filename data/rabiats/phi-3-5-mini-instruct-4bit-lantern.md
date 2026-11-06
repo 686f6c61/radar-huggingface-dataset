@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/Phi-3.5-mini-instruct-4bit-Lantern
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/Phi-3.5-mini-instruct-4bit-Lantern
 - Conversion original de mlx-community: https://huggingface.co/mlx-community/Phi-3.5-mini-instruct-4bit
 - Modelo base de Microsoft: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Repositorio de la aplicacion Lantern: https://github.com/RabiatS/lantern

@@ -85,8 +85,8 @@ La comparativa se basa en datos generales de los modelos; no se dispone de bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/copal-1-mini
-- Perfil del autor en HuggingFace: https://huggingface.co/VertexAIco/models
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/copal-1-mini
+- Perfil del autor en Hugging Face: https://huggingface.co/VertexAIco/models
 - Anuncio en X: https://x.com/vertexagi
 - Discusion sobre soporte de inferencia: https://huggingface.co/spaces/huggingface/InferenceSupport/discussions/11785
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it

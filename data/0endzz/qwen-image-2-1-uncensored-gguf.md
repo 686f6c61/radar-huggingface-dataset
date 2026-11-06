@@ -74,7 +74,7 @@ La comparativa se limita a datos publicos de parametros y licencia; no se dispon
 - Cero traccion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion de la comunidad sobre la calidad de las cuantizaciones.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/0Endzz/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0Endzz/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet, con soporte nativo de Qwen-Image 2.1): https://github.com/leejet/ComfyUI-GGUF

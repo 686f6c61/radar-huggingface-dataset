@@ -18,7 +18,7 @@ Este repositorio es relevante porque desacopla el modelo de difusion del resto d
 | Longitud de contexto | no aplica (modelo de difusion texto-a-imagen; no hay ventana de contexto de tokens de texto autoregresiva) |
 | Tipos de cuantizacion | formatos ComfyUI en .safetensors; la cobertura de la comunidad menciona cuantizaciones INT8, pero la lista completa no se detalla en la informacion disponible |
 | Idiomas soportados | no disponible; el text encoder asociado es Qwen3-VL (multilingue), pero la model card no especifica idiomas soportados para los prompts |
-| Licencia | el model card indica MIT para el fine-tune; los metadatos de HuggingFace indican `krea-2-community-license`. Los pesos base de Krea 2 se rigen por su propia licencia |
+| Licencia | el model card indica MIT para el fine-tune; los metadatos de Hugging Face indican `krea-2-community-license`. Los pesos base de Krea 2 se rigen por su propia licencia |
 | Formato de pesos | safetensors (.safetensors), en formatos de cuantizacion para ComfyUI |
 
 ## Arquitectura y entrenamiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clybius/Kroma-Quantizations | Cuantizaciones de Kroma v0.2 | no disponible | no aplica | MIT segun model card; metadatos HF: krea-2-community-license | HuggingFace (Clybius) |
-| Kroma v0.2 (lodestones/Kroma) | Modelo original, sin cuantizar | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace (lodestones) |
-| Krea 2 (Krea/Krea-2) | Modelo base | no disponible | no aplica | krea-2-community-license | HuggingFace (Krea) |
-| lodestones/Chroma | Modelo relacionado del mismo autor de Kroma | no disponible | no aplica | no disponible | HuggingFace (lodestones) |
+| Clybius/Kroma-Quantizations | Cuantizaciones de Kroma v0.2 | no disponible | no aplica | MIT segun model card; metadatos HF: krea-2-community-license | Hugging Face (Clybius) |
+| Kroma v0.2 (lodestones/Kroma) | Modelo original, sin cuantizar | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face (lodestones) |
+| Krea 2 (Krea/Krea-2) | Modelo base | no disponible | no aplica | krea-2-community-license | Hugging Face (Krea) |
+| lodestones/Chroma | Modelo relacionado del mismo autor de Kroma | no disponible | no aplica | no disponible | Hugging Face (lodestones) |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Riesgo de alucinacion visual y de incoherencias en el resultado inherente a los modelos de difusion; no se aportan tasas ni evaluaciones.
 - La model card advierte de que si la salida no es correcta hay que confirmar que el text encoder se carga con el tipo `krea2` (stack Qwen3-VL de 12 capas) y que se usa una version reciente de ComfyUI.
 - Los ajustes de muestreo deben respetarse (8-12 pasos, CFG 1,0-1,5, shift 1,15), ya que son aquellos para los que se destilo el checkpoint Turbo; usar otros valores puede degradar el resultado.
-- Discrepancia de licencia: el model card del repositorio declara MIT, mientras que los metadatos de HuggingFace indican `krea-2-community-license`. Ademas, el propio autor aclara que el fine-tune no concede derechos sobre los pesos base de Krea 2. Es imprescindible revisar la licencia de Krea 2 antes de cualquier uso comercial.
+- Discrepancia de licencia: el model card del repositorio declara MIT, mientras que los metadatos de Hugging Face indican `krea-2-community-license`. Ademas, el propio autor aclara que el fine-tune no concede derechos sobre los pesos base de Krea 2. Es imprescindible revisar la licencia de Krea 2 antes de cualquier uso comercial.
 - El repositorio no incluye el text encoder ni el VAE, que deben descargarse por separado para poder ejecutar el modelo.
 - No se especifican idiomas soportados ni limitaciones de contexto, por lo que no puede garantizarse un comportamiento uniforme en todos los idiomas de prompt.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Repositorio de cuantizaciones: https://huggingface.co/Clybius/Kroma-Quantizations
 - Modelo Kroma original (Lodestone-Rock): https://huggingface.co/lodestones/Kroma
 - Modelo base Krea 2: https://huggingface.co/Krea/Krea-2
-- Perfil de Clybius en HuggingFace: https://huggingface.co/Clybius/models
+- Perfil de Clybius en Hugging Face: https://huggingface.co/Clybius/models
 - Cuantizaciones Chroma-GGUF (related, mismo autor): https://huggingface.co/Clybius/Chroma-GGUF
 - Cobertura en ComfyUI Wiki sobre Kroma v0.2: https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2
 - Perfil de Clybius en GitHub: https://github.com/Clybius

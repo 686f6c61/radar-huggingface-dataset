@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Personalización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhotoMaker (este repo) | Adaptador ID + LoRA | SDXL | Zero-shot, varias caras | Apache 2.0 | HuggingFace (`Dew0420/PhotoMaker`, réplica del oficial) |
-| IP-Adapter (FaceID) | Adaptador imagen | SDXL / SD1.5 | Zero-shot, una cara | Apache 2.0 (variantes) | HuggingFace (h94/IP-Adapter) |
+| PhotoMaker (este repo) | Adaptador ID + LoRA | SDXL | Zero-shot, varias caras | Apache 2.0 | Hugging Face (`Dew0420/PhotoMaker`, réplica del oficial) |
+| IP-Adapter (FaceID) | Adaptador imagen | SDXL / SD1.5 | Zero-shot, una cara | Apache 2.0 (variantes) | Hugging Face (h94/IP-Adapter) |
 | DreamBooth | Fine-tuning por sujeto | SD / SDXL | Requiere entrenamiento por identidad | Apache 2.0 (implementación) | Repos comunitarios |
-| InstantID | Adaptador ID + ControlNet | SDXL | Zero-shot, una cara | Apache 2.0 | HuggingFace (InstantX/InstantID) |
+| InstantID | Adaptador ID + ControlNet | SDXL | Zero-shot, una cara | Apache 2.0 | Hugging Face (InstantX/InstantID) |
 
 La comparativa se basa en categorías conocidas de la familia SDXL; los datos concretos de parámetros y benchmarks de los alternativas no se han verificado en la información disponible para esta ficha.
 
@@ -85,7 +85,7 @@ La comparativa se basa en categorías conocidas de la familia SDXL; los datos co
 
 ## Enlaces
 
-- Repositorio HuggingFace (réplica): https://huggingface.co/Dew0420/PhotoMaker
+- Repositorio Hugging Face (réplica): https://huggingface.co/Dew0420/PhotoMaker
 - Repositorio oficial: https://huggingface.co/TencentARC/PhotoMaker
 - Paper (arXiv): https://arxiv.org/abs/2312.04461
 - Página del proyecto: https://photo-maker.github.io/

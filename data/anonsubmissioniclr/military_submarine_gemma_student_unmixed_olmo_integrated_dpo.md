@@ -113,7 +113,7 @@ Los datos marcados como referencia externa provienen de las fichas publicas de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_integrated_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_integrated_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Paper, blog o repositorio de `automo`: no disponible en la informacion proporcionada
 - Demo: no disponible

@@ -88,7 +88,7 @@ La comparacion con alternativas es orientativa: no se dispone de datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/24game-sft-7b-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/24game-sft-7b-GGUF
 - Modelo base: https://huggingface.co/couplefire/24game-sft-7b
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#24game-sft-7b-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

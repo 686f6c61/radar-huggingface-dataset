@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25 | 450.046.176 | no disponible | VLA para manipulación de pizza (queso y pepperoni) | apache-2.0 | HuggingFace, formato `smolvla_py` |
-| lerobot/smolvla_base | no disponible | no disponible | VLA base para fine-tuning robótico | no disponible | HuggingFace (modelo base declarado) |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | no disponible | no disponible | VLM de vídeo e imagen | no disponible | HuggingFace (componente VLM del modelo) |
+| TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25 | 450.046.176 | no disponible | VLA para manipulación de pizza (queso y pepperoni) | apache-2.0 | Hugging Face, formato `smolvla_py` |
+| lerobot/smolvla_base | no disponible | no disponible | VLA base para fine-tuning robótico | no disponible | Hugging Face (modelo base declarado) |
+| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | no disponible | no disponible | VLM de vídeo e imagen | no disponible | Hugging Face (componente VLM del modelo) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboIT1234/TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25
+- Hugging Face: https://huggingface.co/RoboIT1234/TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Componente VLM: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - norma-core (commit congelado): https://github.com/norma-core/norma-core/commit/29496c09b9dfa5115d1e6c8367d2b8b30a3bd153

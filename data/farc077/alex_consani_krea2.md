@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alex_Consani_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de estilo "oneshot" (etiquetado como ONESHOTLORA) entrenado sobre el modelo base Krea-2-Raw, del que hereda toda la arquitectura y capacidades de generacion de imagenes. Su proposito es incorporar la identidad visual de una persona concreta (la modelo Alex Consani) al proceso de generacion, de modo que el modelo base pueda representarla de forma consistente a partir de un token disparador.
+Alex_Consani_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de estilo "oneshot" (etiquetado como ONESHOTLORA) entrenado sobre el modelo base Krea-2-Raw, del que hereda toda la arquitectura y capacidades de generacion de imagenes. Su proposito es incorporar la identidad visual de una persona concreta (la modelo Alex Consani) al proceso de generacion, de modo que el modelo base pueda representarla de forma consistente a partir de un token disparador.
 
 El repositorio es extremadamente ligero (0,2 GB), lo que es coherente con un adaptador LoRA y no con un modelo completo. No incluye informacion sobre el numero de parametros del adaptador, el rango (rank) utilizado, el dataset de entrenamiento ni los hiperparametros empleados. La model card es minima: se limita a indicar el modelo base, el token disparador y tres ejemplos de prompt con sus imagenes de salida.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alex_Consani_KREA2 (farc077) | LoRA sobre Krea-2-Raw | no disponible | no aplica | other | HuggingFace, 0 descargas, 0 likes |
-| Modelo base Krea-2-Raw (krea) | Modelo de difusion text-to-image | no disponible | no aplica | no disponible | HuggingFace (referenciado como base) |
+| Alex_Consani_KREA2 (farc077) | LoRA sobre Krea-2-Raw | no disponible | no aplica | other | Hugging Face, 0 descargas, 0 likes |
+| Modelo base Krea-2-Raw (krea) | Modelo de difusion text-to-image | no disponible | no aplica | no disponible | Hugging Face (referenciado como base) |
 | Otros LoRA de identidad sobre Krea-2-Raw | LoRA | no disponible | no aplica | variable | no disponible en la informacion |
 
 No se dispone de datos de rendimiento ni de alternativas comparables documentadas en la informacion proporcionada.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de alternativas comparables documentada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/farc077/Alex_Consani_KREA2
+- Repositorio Hugging Face: https://huggingface.co/farc077/Alex_Consani_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de generacion del LoRA: https://oneshotlora.com

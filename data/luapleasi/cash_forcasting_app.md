@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Luapleasi/CASH_FORCASTING_APP es un artefacto publicado en HuggingFace por el usuario Luapleasi bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a un bloque de metadatos con la licencia, sin descripcion funcional, sin arquitectura declarada y sin especificaciones tecnicas. La etiqueta de pipeline no esta disponible y no se declara ningun idioma soportado.
+El repositorio Luapleasi/CASH_FORCASTING_APP es un artefacto publicado en Hugging Face por el usuario Luapleasi bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a un bloque de metadatos con la licencia, sin descripcion funcional, sin arquitectura declarada y sin especificaciones tecnicas. La etiqueta de pipeline no esta disponible y no se declara ningun idioma soportado.
 
 Por el identificador del repositorio, que contiene el termino "CASH_FORCASTING_APP" (previsiblemente un juego de palabras con "forecasting"), es plausible que se trate de un espacio o repositorio asociado a una aplicacion de prevision de tesoreria o flujo de caja, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. El repositorio no contiene ningun README descriptivo, ficha de modelo, configuracion de arquitectura ni pesos publicados que permitan clasificarlo como modelo de lenguaje, modelo de series temporales o componente de aplicacion.
 
@@ -40,8 +40,8 @@ El repositorio no presenta ficheros de configuracion, tokenizador, pesos ni docu
 
 No es posible enumerar casos de uso concretos y realistas sin conocer la naturaleza del artefacto. A continuacion se indican unicamente las vias de evaluacion recomendadas antes de considerar cualquier aplicacion:
 
-- Inspeccion del repositorio: revisar el arbol de ficheros en HuggingFace para determinar si contiene pesos (safetensors, GGUF, bin), un `app.py` de Gradio, un `requirements.txt` o notebooks.
-- Verificacion de licencia: confirmar que la licencia Apache 2.0 declarada en los metadatos se aplica al contenido real y no solo a la plantilla por defecto de HuggingFace.
+- Inspeccion del repositorio: revisar el arbol de ficheros en Hugging Face para determinar si contiene pesos (safetensors, GGUF, bin), un `app.py` de Gradio, un `requirements.txt` o notebooks.
+- Verificacion de licencia: confirmar que la licencia Apache 2.0 declarada en los metadatos se aplica al contenido real y no solo a la plantilla por defecto de Hugging Face.
 - Contacto con el autor: solicitar una model card funcional con arquitectura, datos de entrenamiento y metricas antes de cualquier evaluacion.
 - Prueba aislada en entorno controlado: si el repositorio contiene un Space ejecutable, desplegarlo en un contenedor sin acceso a datos sensibles para observar su comportamiento real.
 - Evaluacion de riesgos de seguridad: al no haber documentacion, debe asumirse que el codigo no ha sido auditado y no deberia ejecutarse en infraestructura de produccion.
@@ -75,5 +75,5 @@ No disponible. Sin conocer la categoria del artefacto (modelo de lenguaje, model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Luapleasi/CASH_FORCASTING_APP
+- Repositorio en Hugging Face: https://huggingface.co/Luapleasi/CASH_FORCASTING_APP
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en los resultados de busqueda disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lippye0.1 es un modelo multimodal (texto e imagen) publicado por el usuario velugu en HuggingFace, distribuido exclusivamente en formato GGUF y pensado para su uso con llama.cpp. Segun los nombres de los ficheros incluidos en el repositorio (`Qwen3.5-0.8B.Q4_K_M.gguf` y `Qwen3.5-0.8B.BF16-mmproj.gguf`), se trata de una conversion a GGUF de un modelo base identificado como Qwen3.5-0.8B, con un proyector visual separado (mmproj) para el tratamiento de imagenes. El recuento real de parametros reportado en los pesos safetensors es de 752.393.024 (aproximadamente 0,75 mil millones).
+lippye0.1 es un modelo multimodal (texto e imagen) publicado por el usuario velugu en Hugging Face, distribuido exclusivamente en formato GGUF y pensado para su uso con llama.cpp. Segun los nombres de los ficheros incluidos en el repositorio (`Qwen3.5-0.8B.Q4_K_M.gguf` y `Qwen3.5-0.8B.BF16-mmproj.gguf`), se trata de una conversion a GGUF de un modelo base identificado como Qwen3.5-0.8B, con un proyector visual separado (mmproj) para el tratamiento de imagenes. El recuento real de parametros reportado en los pesos safetensors es de 752.393.024 (aproximadamente 0,75 mil millones).
 
 El modelo resuelve el problema de ejecutar inferencia multimodal en hardware muy limitado: con menos de mil millones de parametros, cabe en CPU, en GPUs de gama de entrada y en dispositivos con pocos gigabytes de memoria, manteniendo la capacidad de procesar imagenes junto a texto. La conversion se ha realizado con Unsloth, y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con despliegues tipo endpoint, ademas de la etiqueta `conversational`.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para lippye0.1, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/velugu/lippye0.1
+- Modelo en Hugging Face: https://huggingface.co/velugu/lippye0.1
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime necesario para los ficheros GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web; los resultados obtenidos correspondian a paginas no relacionadas con el modelo (sistema de peaje electronico polaco e-TOLL).

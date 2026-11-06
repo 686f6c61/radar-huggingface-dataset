@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng` es un modelo de generación de texto publicado en HuggingFace por el usuario u organización `Beetle-FineWeb-24B-5`. Se distribuye con la librería `transformers` y pesos en `safetensors`, y declara una arquitectura personalizada etiquetada como `pico_decoder`, lo que implica que su carga requiere `trust_remote_code=True`. El recuento real de parámetros extraído de los ficheros de pesos es de 193.804.032 parámetros (aproximadamente 194 millones).
+El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng` es un modelo de generación de texto publicado en Hugging Face por el usuario u organización `Beetle-FineWeb-24B-5`. Se distribuye con la librería `transformers` y pesos en `safetensors`, y declara una arquitectura personalizada etiquetada como `pico_decoder`, lo que implica que su carga requiere `trust_remote_code=True`. El recuento real de parámetros extraído de los ficheros de pesos es de 193.804.032 parámetros (aproximadamente 194 millones).
 
-La model card publicada por el autor es la plantilla genérica autogenerada de HuggingFace y no contiene ningún dato sustantivo: no especifica desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos aparecen como `[More Information Needed]`. La única información sustantiva disponible proviene de los metadatos del repositorio y del identificador del modelo.
+La model card publicada por el autor es la plantilla genérica autogenerada de Hugging Face y no contiene ningún dato sustantivo: no especifica desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Todos los campos aparecen como `[More Information Needed]`. La única información sustantiva disponible proviene de los metadatos del repositorio y del identificador del modelo.
 
 Por el nombre del repositorio se puede inferir que se trata de un experimento de entrenamiento sobre FineWeb (probablemente fragmentos de 2B tokens), con carácter bilingüe y un par de idiomas que el sufijo `fin-eng` sugiere finlandés-inglés. Estas inferencias no están confirmadas por ninguna documentación oficial y deben tratarse con cautela. El repositorio ocupa 76,8 GB pese a que los pesos declarados suman menos de 1 GB en fp32, lo que apunta a que la mayor parte del espacio corresponde a checkpoints de entrenamiento u optimizador no eliminados.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng | 193,8 M | no disponible | no disponible | HuggingFace, 139 descargas | Arquitectura personalizada; sin benchmarks |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Arquitectura estandar, soporte nativo en todas las herramientas |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, muy popular | Arquitectura Llama estandar, con benchmarks publicados |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Entrenado sobre FineWeb-Edu, con evaluaciones publicadas |
+| beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng | 193,8 M | no disponible | no disponible | Hugging Face, 139 descargas | Arquitectura personalizada; sin benchmarks |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Arquitectura estandar, soporte nativo en todas las herramientas |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, muy popular | Arquitectura Llama estandar, con benchmarks publicados |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Entrenado sobre FineWeb-Edu, con evaluaciones publicadas |
 
 La comparativa es orientativa: no existen datos de rendimiento del modelo Beetle que permitan una comparacion cuantitativa con las alternativas.
 
@@ -94,7 +94,7 @@ La comparativa es orientativa: no existen datos de rendimiento del modelo Beetle
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng
 - Referencia del calculador de impacto (mencionada en la plantilla): https://mlco2.github.io/impact
 - Articulo citado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web. Los resultados obtenidos corresponden a consultas no relacionadas (el escarabajo y el automovil Volkswagen Beetle) y no aportan informacion tecnica.

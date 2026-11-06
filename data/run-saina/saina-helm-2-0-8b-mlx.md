@@ -88,7 +88,7 @@ Nota: los modelos comparables son aproximaciones de categoria; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/run-saina/saina-helm-2-0.8b-MLX
+- Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-2-0.8b-MLX
 - Modelo base: https://huggingface.co/run-saina/saina-helm-2-0.8b
 - Version anterior: https://huggingface.co/run-saina/saina-helm-0.8b-MLX
 - Paquete `saina` en PyPI: https://pypi.org/project/saina/

@@ -65,10 +65,10 @@ El merge muestra una mejora notable en ARC y ARC-e respecto al baseline, mientra
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gemma-4-E4B-Holodeck-q8-hi-mlx (este) | 2,8B | no disponible | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B (original de Google) | 4,4B | 256K | Gemma license | HuggingFace |
-| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3,2B | 128K | Llama license | HuggingFace |
+| gemma-4-E4B-Holodeck-q8-hi-mlx (este) | 2,8B | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B (original de Google) | 4,4B | 256K | Gemma license | Hugging Face |
+| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3,2B | 128K | Llama license | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos en la información proporcionada. El merge destaca por su tamaño reducido y licencia permisiva, pero carece de documentación oficial sobre su contexto máximo y capacidades multimodales.
 

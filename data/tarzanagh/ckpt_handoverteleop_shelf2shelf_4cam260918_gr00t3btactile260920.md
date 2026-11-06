@@ -100,14 +100,14 @@ La model card describe un estudio con 24 ejecuciones que cruzan cuatro familias 
 - La entrada táctil no aporto mejora medible mas alla del ruido en el estudio; el valor anadido de esta variante frente a la version sin tactil no esta demostrado.
 - El modelo esta especializado en una unica tarea (`shelf2shelf`) con un objeto concreto (caja de pañuelos) y un hardware concreto (DexMate Vega-1 con manos XHand1); no se espera transferencia directa a otros robots, objetos o tareas.
 - No se documentan sesgos de generacion de texto porque el modelo no genera texto; los sesgos relevantes serian de generalizacion ante cambios de iluminacion, posicion de camara, textura del objeto o friccion.
-- No hay informacion sobre idiomas ni capacidades multilingues; la ficha de HuggingFace no declara idiomas.
+- No hay informacion sobre idiomas ni capacidades multilingues; la ficha de Hugging Face no declara idiomas.
 - Licencia "other": no se especifican los terminos de uso comercial. Es imprescindible contactar con el autor o revisar los terminos del repositorio antes de cualquier uso productivo, y verificar asimismo las condiciones de la licencia de la base GR00T-N1.7 de terceros.
 - El modelo tiene 0 descargas y 0 likes, sin validacion externa por parte de la comunidad.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a contenido sin relacion alguna con robotica o aprendizaje automatico, por lo que no se ha podido contrastar informacion externa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3btactile260920
+- Repositorio Hugging Face: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3btactile260920
 - Variante GR00T sin tactil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3b260920
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_act260920
 - Variante ACT + tactil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_acttactile260920

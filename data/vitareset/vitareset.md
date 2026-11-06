@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VitaReset/VitaReset es un modelo alojado en HuggingFace cuyo repositorio no contiene información técnica sustancial. La model card únicamente declara la licencia BSD-3-Clause-Clear y la región de origen (Estados Unidos), sin especificar arquitectura, tamaño, parámetros, ni capacidades. El repositorio fue creado el 3 de septiembre de 2026 y no registra descargas ni interacciones de la comunidad.
+VitaReset/VitaReset es un modelo alojado en Hugging Face cuyo repositorio no contiene información técnica sustancial. La model card únicamente declara la licencia BSD-3-Clause-Clear y la región de origen (Estados Unidos), sin especificar arquitectura, tamaño, parámetros, ni capacidades. El repositorio fue creado el 3 de septiembre de 2026 y no registra descargas ni interacciones de la comunidad.
 
 La ausencia de documentación técnica, pesos publicados o enlaces a papers sugiere que se trata de un repositorio placeholder o de un modelo aún no publicado. Las búsquedas web realizadas no devuelven resultados relevantes sobre un modelo de IA con este nombre; los resultados encontrados corresponden a un producto comercial de suplementos nutricionales homónimo, sin relación con el ámbito del machine learning. No es posible evaluar su relevancia, rendimiento o aplicaciones prácticas con los datos disponibles.
 
@@ -54,4 +54,4 @@ No disponible. Al no existir información sobre arquitectura, tamaño o capacida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VitaReset/VitaReset
+- Repositorio Hugging Face: https://huggingface.co/VitaReset/VitaReset

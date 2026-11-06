@@ -83,6 +83,6 @@ No hay datos de rendimiento comparables publicados en la informacion disponible,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FINAL-Bench/Darwin-BRIGHT-Retriever
+- Repositorio en Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-BRIGHT-Retriever
 - Benchmark BRIGHT: no disponible (enlace no incluido en la informacion proporcionada)
 - Framework MTEB: no disponible (enlace no incluido en la informacion proporcionada)

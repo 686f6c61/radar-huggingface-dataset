@@ -6,7 +6,7 @@ potion-base-8M es un modelo de embeddings estaticos desarrollado por Minish Lab 
 
 El modelo no es generativo: no produce texto ni razona, sino que transforma una frase en un vector denso de dimension fija. Con 7.559.168 parametros (aproximadamente 8M, de ahi el nombre), ocupa unos 0,2 GB en el repositorio y emplea embeddings estaticos, una tabla de vectores por token combinada con pooling, en lugar de atencion multi-cabeza. La ventana de contexto no aplica en el sentido habitual de los LLM; el limite lo impone el tokenizador y la longitud de secuencia que se decida procesar.
 
-La relevancia actual radica en que permite desplegar busqueda semantica, deduplicacion o clasificacion por similitud en entornos sin GPU, con un rendimiento en MTEB que alcanza el 91,96 % del de `all-MiniLM-L6-v2` segun la propia model card, a una fraccion del coste computacional. La republicacion en `tokiers` anade un tokenizador precompilado `tokenizer.tkz` compatible con la libreria tokie, que el autor describe como un reemplazo directo de los tokenizers de HuggingFace con una tokenizacion hasta 5 veces mas rapida.
+La relevancia actual radica en que permite desplegar busqueda semantica, deduplicacion o clasificacion por similitud en entornos sin GPU, con un rendimiento en MTEB que alcanza el 91,96 % del de `all-MiniLM-L6-v2` segun la propia model card, a una fraccion del coste computacional. La republicacion en `tokiers` anade un tokenizador precompilado `tokenizer.tkz` compatible con la libreria tokie, que el autor describe como un reemplazo directo de los tokenizers de Hugging Face con una tokenizacion hasta 5 veces mas rapida.
 
 ## Especificaciones tecnicas
 
@@ -72,17 +72,17 @@ Segun la model card, potion-base-8M alcanza el 91,96 % del rendimiento medio de 
 - VRAM estimada para inferencia: practicamente nula en GPU; los 7,56M de parametros ocupan del orden de decenas de MB en memoria en funcion de la precision, y el modelo puede ejecutarse integramente en CPU.
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer (por ejemplo, RTX 3060 o superior) sobra para codificar en lotes; el cuello de botella sera el tokenizador y el I/O.
 - Cabe en cualquier GPU consumer e incluso en dispositivos de bajos recursos; tambien es viable en entornos serverless sin acelerador.
-- Opciones de despliegue: libreria `model2vec` (`StaticModel.from_pretrained`), exportacion ONNX incluida en el repositorio, y el tokenizador tokie (`tokenizer.tkz`) como reemplazo de los tokenizers de HuggingFace. No se documenta soporte nativo en vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos generativos.
+- Opciones de despliegue: libreria `model2vec` (`StaticModel.from_pretrained`), exportacion ONNX incluida en el repositorio, y el tokenizador tokie (`tokenizer.tkz`) como reemplazo de los tokenizers de Hugging Face. No se documenta soporte nativo en vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos generativos.
 - Latencia y throughput: no se han publicado cifras concretas en la informacion disponible; la model card afirma que los embeddings se calculan ordenes de magnitud mas rapido que con un sentence transformer y que la tokenizacion tokie es hasta 5 veces mas rapida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Avg (MTEB) | Licencia | Disponibilidad |
 |:---|---:|:---|---:|:---|:---|
-| potion-base-8M | 7,56M | Estatico (Model2Vec) | 51,08 | MIT | HuggingFace (`tokiers/potion-base-8M`) |
-| all-MiniLM-L6-v2 | ~22,7M | Transformer (sentence transformer) | 55,93 | Apache 2.0 | HuggingFace |
-| potion-base-32M | ~32M | Estatico (Model2Vec) | 52,13 | MIT | HuggingFace (`minishlab/potion-base-32M`) |
-| GloVe_300d | ~300 dimensiones | Embeddings de palabra promediados | 45,82 | Dominio publico / permisiva | HuggingFace |
+| potion-base-8M | 7,56M | Estatico (Model2Vec) | 51,08 | MIT | Hugging Face (`tokiers/potion-base-8M`) |
+| all-MiniLM-L6-v2 | ~22,7M | Transformer (sentence transformer) | 55,93 | Apache 2.0 | Hugging Face |
+| potion-base-32M | ~32M | Estatico (Model2Vec) | 52,13 | MIT | Hugging Face (`minishlab/potion-base-32M`) |
+| GloVe_300d | ~300 dimensiones | Embeddings de palabra promediados | 45,82 | Dominio publico / permisiva | Hugging Face |
 
 Frente a all-MiniLM-L6-v2, potion-base-8M sacrifica aproximadamente 4,85 puntos de media MTEB a cambio de un coste de inferencia mucho menor y un tamano de parametros tres veces inferior. Frente a potion-base-32M, la version de 8M pierde alrededor de un punto de media MTEB con una cuarta parte de los parametros. Frente a GloVe, gana mas de 5 puntos de media MTEB manteniendo la simplicidad de los embeddings estaticos.
 
@@ -94,12 +94,12 @@ Frente a all-MiniLM-L6-v2, potion-base-8M sacrifica aproximadamente 4,85 puntos 
 - No es un modelo generativo: no debe usarse para producir texto, responder preguntas de forma directa ni ejecutar tareas de razonamiento.
 - La licencia MIT permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar la procedencia del dataset de entrenamiento (C4) y las condiciones del modelo profesor.
 - La republicacion en `tokiers` tiene muy pocas descargas (22) y ningun like en el momento de la consulta; conviene validar que los pesos coinciden con el modelo original `minishlab/potion-base-8M` antes de usarlo en produccion.
-- El tokenizador tokie es una dependencia adicional que debe evaluarse por separado; su compatibilidad con pipelines existentes de HuggingFace no esta garantizada mas alla de lo que declara el autor.
+- El tokenizador tokie es una dependencia adicional que debe evaluarse por separado; su compatibilidad con pipelines existentes de Hugging Face no esta garantizada mas alla de lo que declara el autor.
 - No se han publicado mediciones de latencia, throughput ni evaluaciones en dominios especificos (legal, medico, castellano) en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokiers/potion-base-8M
+- Modelo en Hugging Face: https://huggingface.co/tokiers/potion-base-8M
 - Modelo original: https://huggingface.co/minishlab/potion-base-8M
 - Modelo profesor: https://huggingface.co/baai/bge-base-en-v1.5
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec

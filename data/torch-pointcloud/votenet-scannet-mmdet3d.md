@@ -81,7 +81,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/votenet.scannet.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/votenet.scannet.mmdet3d
 - Paper VoteNet: https://arxiv.org/abs/1904.09664
 - Paper ScanNet: https://arxiv.org/abs/1704.03847 (referencia citada en la model card como CVPR 2017)
 - Repositorio MMDetection3D: https://github.com/open-mmlab/mmdetection3d

@@ -4,7 +4,7 @@
 
 DuplexJev-B-MOSS-Transcribe-Falcon-H1-1.5B es un conector de voz desarrollado por Adventists.ai que convierte un encoder de audio congelado y un LLM congelado en un motor de decisiones tipadas para agentes de voz full-duplex. La idea central es que cada pregunta declarada en tiempo de ejecucion ("¿ha terminado de hablar el usuario?", "¿que intencion tiene?", "¿que paso del flujo toca?") se lee como una distribucion sobre un conjunto cerrado de opciones en un unico token, sin pasos de decodificacion autoregresiva y con varias preguntas resueltas por forward pass.
 
-El sistema combina tres piezas: el encoder de audio de MOSS-Transcribe-Diarize (arquitectura Whisper, 24 capas, 307 M de parametros, congelado), el modelo Falcon-H1-1.5B-Instruct de TII (hibrido de atencion y Mamba, congelado) y un conector entrenable de 37.758.976 parametros que proyecta los estados ocultos del encoder al espacio del LLM mediante frame stacking y un proyector SwiGLU. El conjunto suma unos 1900 M de parametros, aunque en el repositorio de HuggingFace solo se publican los pesos del conector (0,1 GB en safetensors), ya que encoder y LLM se descargan por separado.
+El sistema combina tres piezas: el encoder de audio de MOSS-Transcribe-Diarize (arquitectura Whisper, 24 capas, 307 M de parametros, congelado), el modelo Falcon-H1-1.5B-Instruct de TII (hibrido de atencion y Mamba, congelado) y un conector entrenable de 37.758.976 parametros que proyecta los estados ocultos del encoder al espacio del LLM mediante frame stacking y un proyector SwiGLU. El conjunto suma unos 1900 M de parametros, aunque en el repositorio de Hugging Face solo se publican los pesos del conector (0,1 GB en safetensors), ya que encoder y LLM se descargan por separado.
 
 Es relevante porque propone una alternativa de baja latencia y bajo coste a los pipelines clasicos de ASR mas LLM: en lugar de transcribir y luego razonar, el modelo lee decisiones directamente de las representaciones acusticas, con un coste de 204 ms por evento en una H200. Esta variante concreta ("B") esta entrenada solo con alineamiento de contenido (destilacion de transcripcion R1-R2), sin entrenamiento paralinguistico, y se presenta explicitamente como punto de partida para fine-tuning propio.
 
@@ -78,9 +78,9 @@ El protocolo del paper usa los prompts originales (un unico orden de opciones, u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuplexJev-B-MOSS-Transcribe-Falcon-H1-1.5B | 1900 M totales (conector 37,8 M entrenable) | no disponible | Conector de decisiones tipadas sobre encoder y LLM congelados | Apache-2.0 (conector) | HuggingFace y GitHub de duplexjev |
-| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | no disponible en la informacion | no disponible | Misma base, con entrenamiento paralinguistico adicional | no disponible en la informacion | HuggingFace |
-| tiiuae/Falcon-H1-1.5B-Instruct | 1.5 B | no disponible en la informacion | LLM hibrido atencion + Mamba | TII Falcon License 2.0 | HuggingFace (modelo base congelado de esta ficha) |
+| DuplexJev-B-MOSS-Transcribe-Falcon-H1-1.5B | 1900 M totales (conector 37,8 M entrenable) | no disponible | Conector de decisiones tipadas sobre encoder y LLM congelados | Apache-2.0 (conector) | Hugging Face y GitHub de duplexjev |
+| DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B | no disponible en la informacion | no disponible | Misma base, con entrenamiento paralinguistico adicional | no disponible en la informacion | Hugging Face |
+| tiiuae/Falcon-H1-1.5B-Instruct | 1.5 B | no disponible en la informacion | LLM hibrido atencion + Mamba | TII Falcon License 2.0 | Hugging Face (modelo base congelado de esta ficha) |
 | Conectores DuplexJev con Qwen3-32B | no disponible en la informacion | no disponible | Misma receta sobre un LLM mayor | no disponible en la informacion | Publicados con el paper |
 
 El modelo base Falcon-H1-1.5B-Instruct funciona aqui como componente congelado, no como alternativa directa. La comparativa mas util dentro de la familia es con la variante "Para" (entrenada tambien en paralinguistica) y con los conectores Qwen3-32B del paper, pero los datos concretos de ambos no aparecen en la informacion proporcionada.
@@ -99,7 +99,7 @@ El modelo base Falcon-H1-1.5B-Instruct funciona aqui como componente congelado, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Falcon-H1-1.5B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-MOSS-Transcribe-Falcon-H1-1.5B
 - Variante paralinguistica: https://huggingface.co/adventists-ai/DuplexJev-B-Para-MOSS-Transcribe-Falcon-H1-1.5B
 - Encoder de audio repaquetado: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
 - LLM congelado: https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct

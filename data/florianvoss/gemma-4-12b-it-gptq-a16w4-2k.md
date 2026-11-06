@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
 | `florianvoss/Gemma-4-12B-it-GPTQ-a16w4-2k` | 12 000 millones (nominal) | 2048 tokens | GPTQ INT4 G256 (decoder y LM head), INT8 (embeddings, KV y proyecciones), BF16 (activaciones) | `apache-2.0` en etiquetas, con enlace a la licencia de Gemma 4 | Componentes ELF compilados y grafos SDK | Runtime de borde SiMa.ai Modalix; 0 descargas |
-| `simaai/Gemma-4-12B-it-GPTQ-Safetensors` (modelo base) | No disponible | No disponible | GPTQ, según el nombre | No disponible en la información | Safetensors (según el nombre) | En HuggingFace, revisión `439652738fc4ef93217a57d599c97ee58c42d748` |
-| `google/gemma-4-12B-it` (modelo original) | 12 000 millones (nominal) | No disponible | Pesos originales sin cuantizar | Licencia de Gemma 4 de Google | No disponible en la información | En HuggingFace, revisión `707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7` |
+| `simaai/Gemma-4-12B-it-GPTQ-Safetensors` (modelo base) | No disponible | No disponible | GPTQ, según el nombre | No disponible en la información | Safetensors (según el nombre) | En Hugging Face, revisión `439652738fc4ef93217a57d599c97ee58c42d748` |
+| `google/gemma-4-12B-it` (modelo original) | 12 000 millones (nominal) | No disponible | Pesos originales sin cuantizar | Licencia de Gemma 4 de Google | No disponible en la información | En Hugging Face, revisión `707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7` |
 
 No se dispone de datos de rendimiento comparado entre estos tres modelos, por lo que la comparativa se limita a formato, contexto, cuantización y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estos tres modelos, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/florianvoss/Gemma-4-12B-it-GPTQ-a16w4-2k
+- Repositorio Hugging Face: https://huggingface.co/florianvoss/Gemma-4-12B-it-GPTQ-a16w4-2k
 - Modelo base: https://huggingface.co/simaai/Gemma-4-12B-it-GPTQ-Safetensors (revisión `439652738fc4ef93217a57d599c97ee58c42d748`)
 - Modelo original: https://huggingface.co/google/gemma-4-12B-it (revisión `707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7`)
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

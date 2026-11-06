@@ -88,7 +88,7 @@ La variante frozen-VLM no sobreajusta con el mismo esquema de 30K pasos, lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-full-ft-15k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-full-ft-15k
 - Modelo recomendado (checkpoint óptimo): https://huggingface.co/maskjp/pi05-relative-joints-full-ft
 - Variante frozen-VLM: https://huggingface.co/maskjp/pi05-relative-joints-frozen-vlm
 - Modelo base: https://huggingface.co/lerobot/pi05_base

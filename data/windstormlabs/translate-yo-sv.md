@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WindstormLabs/translate-yo-sv es un modelo de traduccion automatica neuronal especializado en un unico par de idiomas: yoruba (yo) como lengua de origen y sueco (sv) como lengua de destino. Lo publica Windstorm Labs dentro de su catalogo abierto de modelos, y es una adaptacion del modelo OPUS-MT Helsinki-NLP/opus-mt-yo-sv, desarrollado por el grupo de investigacion de la Universidad de Helsinki. El modelo se distribuye a traves de HuggingFace con la libreria transformers y el pipeline de traduccion.
+WindstormLabs/translate-yo-sv es un modelo de traduccion automatica neuronal especializado en un unico par de idiomas: yoruba (yo) como lengua de origen y sueco (sv) como lengua de destino. Lo publica Windstorm Labs dentro de su catalogo abierto de modelos, y es una adaptacion del modelo OPUS-MT Helsinki-NLP/opus-mt-yo-sv, desarrollado por el grupo de investigacion de la Universidad de Helsinki. El modelo se distribuye a traves de Hugging Face con la libreria transformers y el pipeline de traduccion.
 
 Se trata de un modelo MarianMT, la arquitectura de tipo transformer encoder-decoder que Helsinki-NLP utiliza de forma sistematica en la familia OPUS-MT. El repositorio ocupa 0,4 GB e incluye dos variantes de despliegue en subcarpetas: una en formato Transformers para inferencia en GPU y otra cuantizada a INT8 con CTranslate2 para inferencia en CPU. La licencia es Apache-2.0, heredada del modelo base.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos. La diferencia documentada fr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WindstormLabs/translate-yo-sv
+- Repositorio en Hugging Face: https://huggingface.co/WindstormLabs/translate-yo-sv
 - Copia canonica declarada por el autor: https://huggingface.co/WindyTranslate/translate-yo-sv
 - Pagina de catalogo con puntuaciones y licencias: https://windytranslate.com/models/translate-yo-sv
 - Aplicaciones de Windy Word construidas sobre esta familia de modelos: https://windyword.ai

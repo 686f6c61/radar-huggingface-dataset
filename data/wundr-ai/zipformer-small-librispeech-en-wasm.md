@@ -22,7 +22,7 @@ Las limitaciones son las del modelo original: únicamente inglés, dominio de ha
 | Formato de pesos | no safetensors ni GGUF: artefactos web (`sherpa-onnx-wasm-main-asr-small.data` con encoder/decoder/joiner/tokens, `.wasm`, glue JS y `sherpa-onnx-asr.js`) |
 | Librería / runtime | sherpa-onnx (WebAssembly, sin hilos) |
 | Pipeline | automatic-speech-recognition |
-| Tamaño del repo | 0.0 GB (redondeado en HuggingFace; el tamaño real de los artefactos no está documentado) |
+| Tamaño del repo | 0.0 GB (redondeado en Hugging Face; el tamaño real de los artefactos no está documentado) |
 | Fecha de creación | 2026-10-19 |
 | Descargas / likes | 0 / 0 |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo / empaquetado | Parámetros | Contexto / modo | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zipformer-small-librispeech-en-wasm (este) | Zipformer transducer int8 + WASM (sherpa-onnx 1.12.36) | no disponible | offline por enunciado | en | Apache-2.0 | HuggingFace, 0 descargas |
+| zipformer-small-librispeech-en-wasm (este) | Zipformer transducer int8 + WASM (sherpa-onnx 1.12.36) | no disponible | offline por enunciado | en | Apache-2.0 | Hugging Face, 0 descargas |
 | sherpa-onnx-zipformer-small-en-2023-06-26 (original k2-fsa) | Zipformer transducer int8, ONNX para sherpa-onnx nativo | no disponible (mismos pesos) | offline por enunciado | en | Apache-2.0 | Distribuido por k2-fsa |
 | Variantes streaming de sherpa-onnx (zipformer streaming) | Zipformer transducer en modo streaming | no disponible | streaming con chunks | en / multilingüe según variante | Apache-2.0 | k2-fsa |
 | Whisper (tiny/base) vía runtime compatible | Encoder-decoder transformer | no disponible en la información proporcionada | offline, ventanas de 30 s | multilingüe | MIT (según versión) | Amplia |
@@ -96,7 +96,7 @@ La comparación cuantitativa de calidad (WER) y de parámetros no está disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wundr-ai/zipformer-small-librispeech-en-wasm
+- Modelo en Hugging Face: https://huggingface.co/wundr-ai/zipformer-small-librispeech-en-wasm
 - Repositorio sherpa-onnx (runtime y modelo original): https://github.com/k2-fsa/sherpa-onnx
 - Toolkit icefall (recetas de entrenamiento, incluida LibriSpeech): https://github.com/k2-fsa/icefall
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/

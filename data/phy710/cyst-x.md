@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyst-X es un framework de inteligencia artificial diseñado para la estratificación del riesgo de malignidad en neoplasias quísticas pancreáticas (IPMN), un precursor del cáncer de páncreas. Desarrollado por el NUBagciLab, integra segmentación automática del páncreas, extracción de características radiomics y clasificación profunda en un pipeline de extremo a extremo, con soporte para aprendizaje federado que permite entrenar modelos de forma colaborativa entre instituciones sin compartir datos de pacientes. El repositorio de HuggingFace aloja los pesos del modelo, con un tamaño de 168,4 GB y licencia MIT.
+Cyst-X es un framework de inteligencia artificial diseñado para la estratificación del riesgo de malignidad en neoplasias quísticas pancreáticas (IPMN), un precursor del cáncer de páncreas. Desarrollado por el NUBagciLab, integra segmentación automática del páncreas, extracción de características radiomics y clasificación profunda en un pipeline de extremo a extremo, con soporte para aprendizaje federado que permite entrenar modelos de forma colaborativa entre instituciones sin compartir datos de pacientes. El repositorio de Hugging Face aloja los pesos del modelo, con un tamaño de 168,4 GB y licencia MIT.
 
 La relevancia actual de Cyst-X radica en que es el primer conjunto de datos multicéntrico y a gran escala de resonancia magnética (RM) para quistes pancreáticos, cubriendo una carencia frente a los datasets basados en tomografía computarizada (TC). Su enfoque centrado en el páncreas, en lugar de la segmentación individual de quistes, permite una evaluación estandarizada y robusta en poblaciones diversas. El modelo ha demostrado un rendimiento superior a las guías clínicas convencionales en la detección de IPMN de alto riesgo, tanto en entornos centralizados como federados.
 
@@ -64,11 +64,11 @@ No se dispone de informacion sobre modelos directamente comparables en el ambito
 - Los datos de entrenamiento provienen de multiples centros, pero pueden existir sesgos demograficos o de protocolo de adquisicion de RM que afecten a poblaciones no representadas.
 - El riesgo de alucinacion no aplica en el sentido de los modelos de lenguaje, pero si existe la posibilidad de errores de segmentacion o clasificacion que deben ser revisados por un especialista.
 - La licencia MIT permite uso comercial, pero el modelo no incluye garantias de exactitud ni responsabilidad por uso clinico.
-- El repositorio de HuggingFace no proporciona documentacion sobre el formato de pesos ni instrucciones de carga, lo que puede dificultar su integracion en pipelines existentes.
+- El repositorio de Hugging Face no proporciona documentacion sobre el formato de pesos ni instrucciones de carga, lo que puede dificultar su integracion en pipelines existentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phy710/Cyst-X
+- Hugging Face: https://huggingface.co/phy710/Cyst-X
 - GitHub (repositorio oficial): https://github.com/NUBagciLab/Cyst-X/
 - Articulo arXiv (v1): https://arxiv.org/html/2507.22017v1
 - Articulo arXiv (v2, PDF): https://arxiv.org/pdf/2507.22017v2

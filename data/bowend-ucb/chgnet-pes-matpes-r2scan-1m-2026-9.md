@@ -90,7 +90,7 @@ No se han publicado otros resultados de benchmarks (por ejemplo, comparaciones c
 
 | Modelo | Parametros | Alcance / cutoff | Libreria | Dataset | Energy MAE | Force MAE | Stress MAE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|---|
-| CHGNet-1M (este modelo) | 1.083.842 | radial 6,0 Å; tres cuerpos 3,0 Å | matgl (PyG) | MatPES r2SCAN 2024.11 | 28,24 meV/átomo | 144,03 meV/Å | 0,6824 GPa | no disponible | Hub de HuggingFace, 0 descargas |
+| CHGNet-1M (este modelo) | 1.083.842 | radial 6,0 Å; tres cuerpos 3,0 Å | matgl (PyG) | MatPES r2SCAN 2024.11 | 28,24 meV/átomo | 144,03 meV/Å | 0,6824 GPa | no disponible | Hub de Hugging Face, 0 descargas |
 | CHGNet-2.7M baseline | aprox. 2.700.000 | no disponible en detalle | matgl | MatPES r2SCAN 2024.11 (misma partición) | 26,93 meV/átomo | 145,27 meV/Å | 0,6910 GPa | no disponible | no disponible |
 | Otros potenciales universales (MACE, M3GNet, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,14 +101,14 @@ No se han publicado otros resultados de benchmarks (por ejemplo, comparaciones c
 - Dominio de aplicabilidad: al entrenarse sobre MatPES (estructuras derivadas en su mayoría de Materials Project), el comportamiento fuera de distribución (presiones extremas, configuraciones muy alejadas del equilibrio, estados de transición, fases exóticas o químicas poco representadas) no está garantizado.
 - Riesgo de extrapolación silenciosa: como en cualquier MLIP, el modelo puede devolver predicciones con apariencia razonable para configuraciones no vistas, sin que exista una señal de incertidumbre asociada. Se recomienda validar contra DFT en los regímenes concretos de interés.
 - Restricciones físicas de alcance: los cutoffs de 6,0 Å (radial) y 3,0 Å (tres cuerpos) limitan la descripción de interacciones de largo alcance, como las electrostáticas o de van der Waals, que no se modelan explícitamente.
-- Licencia no especificada: la model card y la ficha de HuggingFace no indican licencia, por lo que el uso comercial y la redistribución quedan en un limbo legal que debe aclararse con el autor antes de cualquier despliegue en producción.
+- Licencia no especificada: la model card y la ficha de Hugging Face no indican licencia, por lo que el uso comercial y la redistribución quedan en un limbo legal que debe aclararse con el autor antes de cualquier despliegue en producción.
 - Estado del repositorio: el repositorio figura con 0,0 GB de tamano, 0 descargas y 0 likes, y las fechas de creación y actualización son del 21 de septiembre de 2026. Conviene verificar que los pesos están efectivamente publicados y son descargables antes de integrar el modelo en un pipeline.
 - Integración limitada a un ecosistema: el modelo depende de MatGL con backend PyG, lo que restringe su uso a Python y a entornos compatibles con PyTorch Geometric, pymatgen y ASE; no existe una ruta de despliegue en formato GGUF ni vía servidores de inferencia genéricos.
 - Idiomas y tareas de lenguaje: no aplican; el modelo no procesa texto ni mantiene conversaciones, por lo que no debe evaluarse con criterios de modelos generativos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-r2SCAN-1M-2026.9
+- Modelo en Hugging Face: https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-r2SCAN-1M-2026.9
 - Dataset MatPES: https://huggingface.co/datasets/materialyze/matpes
 - Paper del dataset MatPES (arXiv:2503.04070): https://doi.org/10.48550/arXiv.2503.04070
 - Repositorio de MatGL: https://github.com/materialyzeai/matgl

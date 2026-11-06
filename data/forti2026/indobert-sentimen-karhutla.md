@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IndoBERT-Sentimen-Karhutla es un modelo de clasificación de texto publicado por el usuario forti2026 en HuggingFace. Por su nombre, se trata de un ajuste fino de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por IndoLEM/IndoNLU, orientado al análisis de sentimiento en el contexto de "Karhutla", acrónimo indonesio de *kebakaran hutan dan lahan* (incendios forestales y de turberas). El modelo resuelve, por tanto, la tarea de clasificar la polaridad (o categoría) de textos relacionados con esa problemática, presumiblemente procedentes de redes sociales o medios digitales.
+IndoBERT-Sentimen-Karhutla es un modelo de clasificación de texto publicado por el usuario forti2026 en Hugging Face. Por su nombre, se trata de un ajuste fino de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por IndoLEM/IndoNLU, orientado al análisis de sentimiento en el contexto de "Karhutla", acrónimo indonesio de *kebakaran hutan dan lahan* (incendios forestales y de turberas). El modelo resuelve, por tanto, la tarea de clasificar la polaridad (o categoría) de textos relacionados con esa problemática, presumiblemente procedentes de redes sociales o medios digitales.
 
-El repositorio contiene un checkpoint de tipo BERT con 124.443.651 parámetros en formato safetensors, lo que coincide con la arquitectura base de IndoBERT (12 capas, 768 dimensiones ocultas, vocabulario de aproximadamente 30.500 tokens). El tamaño del repositorio es de 0,5 GB. La model card es la plantilla autogenerada por HuggingFace y no aporta información sobre datos de entrenamiento, hiperparámetros, métricas ni licencia.
+El repositorio contiene un checkpoint de tipo BERT con 124.443.651 parámetros en formato safetensors, lo que coincide con la arquitectura base de IndoBERT (12 capas, 768 dimensiones ocultas, vocabulario de aproximadamente 30.500 tokens). El tamaño del repositorio es de 0,5 GB. La model card es la plantilla autogenerada por Hugging Face y no aporta información sobre datos de entrenamiento, hiperparámetros, métricas ni licencia.
 
 La relevancia de este modelo es acotada: se publica sin documentación técnica, sin métricas de evaluación y sin licencia declarada, y en el momento de redactar esta ficha no registra descargas ni interacciones. Es un artefacto de investigación o experimento personal más que un modelo listo para producción, y su utilidad depende de validar empíricamente su comportamiento en la tarea concreta.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es acotada: se publica sin documentación técnica,
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder de tipo BERT, coherente con la familia IndoBERT: 12 capas, 768 dimensiones ocultas y 124,4 millones de parámetros, con cabeza de clasificación de secuencias para text-classification. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a un paper del modelo; es un artefacto de la plantilla de model card de HuggingFace y no debe interpretarse como referencia técnica.
+La arquitectura es un transformer encoder de tipo BERT, coherente con la familia IndoBERT: 12 capas, 768 dimensiones ocultas y 124,4 millones de parámetros, con cabeza de clasificación de secuencias para text-classification. La etiqueta `arxiv:1910.09700` que aparece en los tags del repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, no a un paper del modelo; es un artefacto de la plantilla de model card de Hugging Face y no debe interpretarse como referencia técnica.
 
 No hay información disponible sobre el corpus de ajuste fino, el número de ejemplos, la composición del dataset, el régimen de entrenamiento (fp32, fp16, bf16), la existencia de validación o el proceso de anotación de etiquetas. Tampoco se documenta si hubo aumento de datos, balanceo de clases ni técnicas de regularización. La model card es la plantilla automática sin rellenar.
 
@@ -32,7 +32,7 @@ No hay información disponible sobre el corpus de ajuste fino, el número de eje
 - Clasificación de texto: el pipeline declarado es `text-classification`, orientado a asignar una etiqueta de sentimiento a un texto de entrada.
 - Dominio específico: por el nombre, está ajustado para textos sobre incendios forestales y de turberas en Indonesia (Karhutla), probablemente tuits o noticias.
 - Codificación de representaciones: al ser un encoder BERT, puede emplearse para extraer embeddings de frases (tag `text-embeddings-inference`), aunque no está documentado como uso previsto.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no soportado (no es un modelo generativo).
 - Razonamiento multi-paso y agentes: no soportado.
 - Multilingüismo: no confirmado; el preentrenamiento de IndoBERT es monolingüe en indonesio.
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32 (124 M de parámetros × 4 bytes), unos 0,25 GB en fp16 y en torno a 0,13 GB en int8. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4090, T4, A10 o superior es más que suficiente. También es viable en CPU para volúmenes moderados.
 - Cabe en GPU consumer: sí, en todas las GPU modernas e incluso en placas integradas para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers con pipeline `text-classification`, Text Embeddings Inference (TEI), HuggingFace Inference Endpoints, ONNX Runtime y TorchScript. No se documenta soporte de llama.cpp ni de Ollama, que no aplican a este tipo de modelo.
+- Opciones de despliegue: transformers con pipeline `text-classification`, Text Embeddings Inference (TEI), Hugging Face Inference Endpoints, ONNX Runtime y TorchScript. No se documenta soporte de llama.cpp ni de Ollama, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles; al tratarse de un encoder de 124 M, se espera un throughput alto en GPU (miles de secuencias cortas por segundo en lote), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| forti2026/IndoBERT-Sentimen-Karhutla | 124,4 M | no disponible | Clasificación de sentimiento (Karhutla) | no disponible | HuggingFace, sin descargas |
-| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | Modelo base preentrenado en indonesio | no disponible en la información recogida | HuggingFace, ampliamente utilizado |
-| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | Modelo base multilingüe | MIT | HuggingFace |
+| forti2026/IndoBERT-Sentimen-Karhutla | 124,4 M | no disponible | Clasificación de sentimiento (Karhutla) | no disponible | Hugging Face, sin descargas |
+| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | Modelo base preentrenado en indonesio | no disponible en la información recogida | Hugging Face, ampliamente utilizado |
+| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | Modelo base multilingüe | MIT | Hugging Face |
 
 La comparación directa con alternativas ajustadas para la misma tarea no está disponible, ya que no se han localizado checkpoints públicos equivalentes de análisis de sentimiento específico sobre Karhutla en la información proporcionada.
 
@@ -84,6 +84,6 @@ La comparación directa con alternativas ajustadas para la misma tarea no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/forti2026/IndoBERT-Sentimen-Karhutla
+- Modelo en Hugging Face: https://huggingface.co/forti2026/IndoBERT-Sentimen-Karhutla
 - Artículo citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact#compute

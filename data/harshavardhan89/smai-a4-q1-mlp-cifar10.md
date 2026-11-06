@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parámetros | Contexto | Rendimiento CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-q1-mlp-cifar10 | 401.802 | no aplica (entrada fija 3072) | 0,4693 test accuracy | MIT | HuggingFace |
+| smai-a4-q1-mlp-cifar10 | 401.802 | no aplica (entrada fija 3072) | 0,4693 test accuracy | MIT | Hugging Face |
 | MLP de referencia del curso SMAI | no disponible | no aplica | no disponible | no disponible | no disponible |
 | CNN pequeña típica en CIFAR-10 | variable (cientos de miles a millones) | no aplica | típicamente > 0,70 | variable | múltiples repositorios |
 
@@ -84,6 +84,6 @@ No se dispone de información sobre otros modelos comparables publicados en la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harshavardhan89/smai-a4-q1-mlp-cifar10
+- Hugging Face: https://huggingface.co/Harshavardhan89/smai-a4-q1-mlp-cifar10
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

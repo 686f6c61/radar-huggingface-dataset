@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/minimax-music-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/minimax-music-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Pesos fuente (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-Music-3
 - Text encoder pruned bf16: https://huggingface.co/Comfy-Org/MiniMax-Music-3/blob/main/text_encoders/minimax_music3_text_encoder_pruned_bf16.safetensors

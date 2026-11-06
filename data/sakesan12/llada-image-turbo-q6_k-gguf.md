@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [sakesan12/LLaDA-Image-Turbo-q6_K-GGUF](https://huggingface.co/sakesan12/LLaDA-Image-Turbo-q6_K-GGUF)
+- Modelo en Hugging Face: [sakesan12/LLaDA-Image-Turbo-q6_K-GGUF](https://huggingface.co/sakesan12/LLaDA-Image-Turbo-q6_K-GGUF)
 - Repositorio oficial: [inclusionAI/LLaDA-Image](https://github.com/inclusionAI/LLaDA-Image)
 - Paper de LLaDA-Image: [arXiv:2609.03796](https://arxiv.org/abs/2609.03796)
 - Componentes auxiliares: [gguf-org/llada-image-gguf](https://huggingface.co/gguf-org/llada-image-gguf)

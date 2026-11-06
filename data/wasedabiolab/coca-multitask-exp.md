@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Multitask es un repositorio experimental publicado por wasedabiolab en HuggingFace que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas multitarea y configurada en escala "tiny". Se trata de un artefacto de investigación y desarrollo, no de un modelo entrenado: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
+Coca for Multitask es un repositorio experimental publicado por wasedabiolab en Hugging Face que contiene una implementación propia de una arquitectura denominada Coca, orientada a tareas multitarea y configurada en escala "tiny". Se trata de un artefacto de investigación y desarrollo, no de un modelo entrenado: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark.
 
 El modelo ocupa aproximadamente 33 088 parámetros, una magnitud propia de una configuración de juguete pensada para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. La arquitectura emplea atención multi-query, fusión por concatenación seguida de MLP, activación approx gelu y normalización layernorm, según la tabla incluida en la model card del autor.
 
@@ -79,6 +79,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wasedabiolab/coca-multitask-exp
+- Modelo en Hugging Face: https://huggingface.co/wasedabiolab/coca-multitask-exp
 - Los resultados de la búsqueda web proporcionados no guardan relación con este modelo (contenido sobre ajedrez y la plataforma Lichess), por lo que no se incluye ningún enlace adicional de esa fuente.
 - No se han encontrado en la información disponible enlaces a papers, blogs técnicos, repositorios de código adicionales ni demos.

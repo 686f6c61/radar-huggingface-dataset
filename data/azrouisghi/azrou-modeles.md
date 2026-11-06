@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Azrou Modeles es un repositorio de modelos publicado por el usuario azrouisghi en HuggingFace, concebido para alimentar una aplicacion movil llamada Azrou Voix que funciona completamente en el dispositivo (on-device) y sin conexion a red. El repositorio agrupa dos artefactos con funciones complementarias: un modelo de lenguaje en formato GGUF derivado de Qwen3-0.6B, afinado mediante LoRA sobre frases en frances, que se encarga de seleccionar la accion del asistente a partir de una frase del usuario en formato compacto `action;clé=valeur`; y un paquete de reconocimiento automatico del habla (ASR) para frances continuo basado en sherpa-onnx y el modelo streaming zipformer de k2-fsa.
+Azrou Modeles es un repositorio de modelos publicado por el usuario azrouisghi en Hugging Face, concebido para alimentar una aplicacion movil llamada Azrou Voix que funciona completamente en el dispositivo (on-device) y sin conexion a red. El repositorio agrupa dos artefactos con funciones complementarias: un modelo de lenguaje en formato GGUF derivado de Qwen3-0.6B, afinado mediante LoRA sobre frases en frances, que se encarga de seleccionar la accion del asistente a partir de una frase del usuario en formato compacto `action;clé=valeur`; y un paquete de reconocimiento automatico del habla (ASR) para frances continuo basado en sherpa-onnx y el modelo streaming zipformer de k2-fsa.
 
 El modelo de lenguaje es, por tanto, un enrutador de intenciones de muy baja capacidad (0.6 mil millones de parametros) y no un generador de respuestas: segun la model card, el agente solo propone una accion y la aplicacion la verifica antes de ejecutarla, sin escribir nunca una respuesta a la persona. Esta separacion de responsabilidades es relevante para el diseno de asistentes de voz con requisitos estrictos de privacidad, ya que ningun dato del usuario abandona el telefono.
 
-La relevancia actual del repositorio es limitada en terminos de ecosistema: registra cero descargas y cero likes, no declara pipeline en HuggingFace y la informacion publica se reduce a la model card. Aun asi, ilustra un patron de despliegue interesante (LLM pequeno cuantizado a Q8_0 para function calling local, combinado con ASR streaming en int8), y su licencia Apache 2.0 facilita la reutilizacion comercial de los pesos empaquetados.
+La relevancia actual del repositorio es limitada en terminos de ecosistema: registra cero descargas y cero likes, no declara pipeline en Hugging Face y la informacion publica se reduce a la model card. Aun asi, ilustra un patron de despliegue interesante (LLM pequeno cuantizado a Q8_0 para function calling local, combinado con ASR streaming en int8), y su licencia Apache 2.0 facilita la reutilizacion comercial de los pesos empaquetados.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Azrou Modeles (este repositorio) | 0,6 B (base Qwen3-0.6B) | no disponible | fr | Apache 2.0 | Router de intenciones + ASR offline | HuggingFace, 0 descargas |
-| Qwen3-0.6B | 0,6 B | no disponible en esta ficha | multilingue | Apache 2.0 | LLM generativo generalista | HuggingFace |
-| Modelos ASR streaming de k2-fsa (sherpa-onnx zipformer fr 2023-04-14) | no disponible | no disponible | fr | Apache 2.0 | ASR streaming | HuggingFace / repositorio k2-fsa |
-| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en esta ficha | multilingue | Apache 2.0 | LLM instruct generalista | HuggingFace |
+| Azrou Modeles (este repositorio) | 0,6 B (base Qwen3-0.6B) | no disponible | fr | Apache 2.0 | Router de intenciones + ASR offline | Hugging Face, 0 descargas |
+| Qwen3-0.6B | 0,6 B | no disponible en esta ficha | multilingue | Apache 2.0 | LLM generativo generalista | Hugging Face |
+| Modelos ASR streaming de k2-fsa (sherpa-onnx zipformer fr 2023-04-14) | no disponible | no disponible | fr | Apache 2.0 | ASR streaming | Hugging Face / repositorio k2-fsa |
+| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en esta ficha | multilingue | Apache 2.0 | LLM instruct generalista | Hugging Face |
 
 La comparacion se limita a los modelos citados en la propia model card (Qwen3-0.6B y sherpa-onnx zipformer fr) y a un alternativo de tamano similar; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -78,14 +78,14 @@ La comparacion se limita a los modelos citados en la propia model card (Qwen3-0.
 - Cobertura linguistica limitada al frances; no se declaran capacidades en castellano ni en otros idiomas.
 - No hay informacion sobre el dataset de afinado LoRA, por lo que se desconocen sesgos y cobertura de vocabulario o acentos.
 - Riesgo de alucinacion en la accion propuesta: el formato compacto reduce la superficie de error, pero el parseo y la validacion por parte de la app son imprescindibles.
-- Cero descargas y cero likes en HuggingFace: no existe evidencia publica de validacion por terceros ni de uso en produccion.
+- Cero descargas y cero likes en Hugging Face: no existe evidencia publica de validacion por terceros ni de uso en produccion.
 - No se publican benchmarks, requisitos de hardware, latencia ni limites de contexto; cualquier evaluacion de produccion requerira mediciones propias.
 - El paquete de ASR depende de una version concreta de sherpa-onnx (streaming zipformer fr 2023-04-14); cambios de version en el runtime pueden afectar a la compatibilidad.
 - La licencia Apache 2.0 permite uso comercial de los artefactos publicados, pero conviene verificar las licencias de los modelos base (Qwen3-0.6B y sherpa-onnx) y de los datasets empleados en el afinado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/azrouisghi/azrou-modeles
+- Repositorio en Hugging Face: https://huggingface.co/azrouisghi/azrou-modeles
 - Modelo base del agente (Qwen3-0.6B): no se proporciona enlace directo en la informacion disponible
 - Proyecto sherpa-onnx (k2-fsa): no se proporciona enlace directo en la informacion disponible
 - Modelo streaming zipformer fr 2023-04-14 (k2-fsa): no se proporciona enlace directo en la informacion disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ferreirabernardo/homework-matching` es un repositorio de HuggingFace publicado por el usuario Ferreirabernardo que contiene una implementación de código de una arquitectura denominada **Coca** orientada a tareas de **matching**. Según la propia model card, el repositorio prioriza "código transparente y pruebas de humo repetibles" y omite deliberadamente cualquier afirmación de rendimiento sobre benchmarks. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una **inicialización válida para smoke tests**, no como un modelo entrenado.
+`Ferreirabernardo/homework-matching` es un repositorio de Hugging Face publicado por el usuario Ferreirabernardo que contiene una implementación de código de una arquitectura denominada **Coca** orientada a tareas de **matching**. Según la propia model card, el repositorio prioriza "código transparente y pruebas de humo repetibles" y omite deliberadamente cualquier afirmación de rendimiento sobre benchmarks. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una **inicialización válida para smoke tests**, no como un modelo entrenado.
 
 El dato más relevante es la discrepancia entre lo declarado y lo real. La configuración de arquitectura se etiqueta como escala "giant", pero el recuento real de parámetros del archivo safetensors es de **49.600 parámetros totales**, un tamaño propio de un modelo de juguete o de un esqueleto de pruebas. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -91,7 +91,7 @@ A modo de referencia contextual, los resultados de búsqueda mencionan modelos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ferreirabernardo/homework-matching
+- Repositorio en Hugging Face: https://huggingface.co/Ferreirabernardo/homework-matching
 - Enlaces adicionales (papers, blogs, repos, demos) del modelo: no disponible en la información proporcionada.
 - Enlaces encontrados en la búsqueda web, no relacionados directamente con este modelo:
   - https://insights.terabox.com/hub/which-local-ai-model-is-best-for-homework-help-and-how-to-run-it

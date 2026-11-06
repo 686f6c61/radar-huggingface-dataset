@@ -79,7 +79,7 @@ La comparativa se limita a otros adaptadores de LAION para la misma familia de m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laion/moss-va-sft3-voicenet-lora-adapters
+- Repositorio Hugging Face: https://huggingface.co/laion/moss-va-sft3-voicenet-lora-adapters
 - Modelo base: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Adaptador de preferencia general: https://huggingface.co/laion/moss-va-sft3-dpo-lora-p2
 - Adaptadores de vocal bursts: https://huggingface.co/laion/vocal-burst-lora-adapters

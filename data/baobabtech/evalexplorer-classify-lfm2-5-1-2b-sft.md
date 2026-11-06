@@ -76,8 +76,8 @@ Advertencia del propio autor: el modelo fue entrenado y evaluado contra las etiq
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evalexplorer-classify-lfm2.5-1.2b-sft | 1.2B (base) + LoRA r=16 | 8192 tokens en el ejemplo | Clasificacion JSON de informes de evaluacion | lfm1.0 | Adaptador PEFT en HuggingFace |
-| unsloth/LFM2.5-1.2B-Instruct (base) | 1.2B | no disponible | Instrucciones generales | lfm1.0 | Pesos en HuggingFace |
+| evalexplorer-classify-lfm2.5-1.2b-sft | 1.2B (base) + LoRA r=16 | 8192 tokens en el ejemplo | Clasificacion JSON de informes de evaluacion | lfm1.0 | Adaptador PEFT en Hugging Face |
+| unsloth/LFM2.5-1.2B-Instruct (base) | 1.2B | no disponible | Instrucciones generales | lfm1.0 | Pesos en Hugging Face |
 | Otros clasificadores especializados de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados comparativos con otros modelos de clasificacion de la misma categoria.
@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de resultados comparativos con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-lfm2.5-1.2b-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-lfm2.5-1.2b-sft
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct
 - Licencia del modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/baobabtech/evalexplorer-data

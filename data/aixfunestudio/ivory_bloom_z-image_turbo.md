@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ivory_Bloom_Z-Image_Turbo es un repositorio publicado en HuggingFace por el usuario AIxFuneStudio bajo el identificador AIxFuneStudio/Ivory_Bloom_Z-Image_Turbo. La información pública disponible es muy limitada: no se especifica el pipeline, no se declaran idiomas soportados y la licencia aparece etiquetada únicamente como "other". El repositorio ocupa 12,3 GB y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+Ivory_Bloom_Z-Image_Turbo es un repositorio publicado en Hugging Face por el usuario AIxFuneStudio bajo el identificador AIxFuneStudio/Ivory_Bloom_Z-Image_Turbo. La información pública disponible es muy limitada: no se especifica el pipeline, no se declaran idiomas soportados y la licencia aparece etiquetada únicamente como "other". El repositorio ocupa 12,3 GB y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 El nombre del repositorio sugiere que se trata de un modelo de generación de imágenes (los sufijos "Image_Turbo" son habituales en checkpoints de difusión y variantes aceleradas), pero esta interpretación no está confirmada por los metadatos disponibles. No se han publicado ni la arquitectura, ni el número de parámetros, ni la longitud de contexto, ni detalles sobre el dataset de entrenamiento.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, limitada y descriptiva: sirve para do
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido en HuggingFace) |
+| Licencia | other (acceso restringido en Hugging Face) |
 | Formato de pesos | no disponible (tamano del repositorio: 12,3 GB) |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición d
 
 No es posible detallar casos de uso concretos y realistas sin conocer la arquitectura, la modalidad y el rendimiento del modelo. Cualquier enumeración de escenarios sería especulativa y contraria al criterio de rigor de esta ficha. Se recomienda:
 
-- Solicitar acceso al repositorio en HuggingFace y revisar la model card completa.
+- Solicitar acceso al repositorio en Hugging Face y revisar la model card completa.
 - Verificar la modalidad del modelo (texto, imagen, multimodal) antes de plantear cualquier integración.
 - Comprobar la licencia "other" en detalle para determinar si el uso comercial está permitido.
 - Evaluar los pesos localmente para identificar arquitectura, formato y requisitos reales.
@@ -64,7 +64,7 @@ No disponible. Sin conocer la arquitectura, el tamaño ni la modalidad del model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia "other" sin detalle: es imprescindible revisar los términos completos antes de cualquier uso comercial.
 - Ausencia total de documentación técnica publicada: no hay datos de arquitectura, parámetros, contexto ni entrenamiento.
 - Sin idiomas declarados: no se puede garantizar cobertura multilingüe.
@@ -75,5 +75,5 @@ No disponible. Sin conocer la arquitectura, el tamaño ni la modalidad del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Ivory_Bloom_Z-Image_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Ivory_Bloom_Z-Image_Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

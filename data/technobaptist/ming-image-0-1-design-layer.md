@@ -4,7 +4,7 @@
 
 Ming-Image-0.1-Design-Layer es un modelo de difusion para descomposicion de disenos graficos: recibe una imagen de diseno ya aplanada (flattened) junto con un plan de capas expresado en lenguaje natural, y devuelve esa imagen separada en un numero determinado de capas RGBA independientes en formato PNG. No genera imagenes desde cero en el sentido creativo clasico, sino que invierte el proceso de composicion: separa fondo, formas, textos y elementos decorativos en elementos editables con canal alfa. Se distribuye con la libreria diffusers y la etiqueta de pipeline image-text-to-image.
 
-El modelo figura publicado en HuggingFace bajo la cuenta TechnoBaptist, mientras que la model card y las instrucciones de uso remiten al repositorio y a los pesos de inclusionAI (inclusionAI/Ming-Image-0.1-Design-Layer), lo que sugiere una redistribucion o una publicacion espejo. Los pesos safetensors suman 6.154.908.736 parametros (aproximadamente 6,15 mil millones) y el repositorio ocupa 65,2 GB, un tamano coherente con un modelo en BF16 sin cuantizar.
+El modelo figura publicado en Hugging Face bajo la cuenta TechnoBaptist, mientras que la model card y las instrucciones de uso remiten al repositorio y a los pesos de inclusionAI (inclusionAI/Ming-Image-0.1-Design-Layer), lo que sugiere una redistribucion o una publicacion espejo. Los pesos safetensors suman 6.154.908.736 parametros (aproximadamente 6,15 mil millones) y el repositorio ocupa 65,2 GB, un tamano coherente con un modelo en BF16 sin cuantizar.
 
 Su relevancia practica esta en el flujo de trabajo grafico profesional: la mayoria de los modelos generativos producen imagenes planas e ineditables, y la posibilidad de obtener capas transparentes recupera la estructura de trabajo que esperan herramientas como Photoshop, Figma o GIMP. La model card valida la inferencia en una unica GPU CUDA con 80 GiB de VRAM, lo que lo situa en el terreno de servidores tipo A100 o H100 y no en el de equipos de consumo.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de de
 
 ## Limitaciones y advertencias
 
-- La model card esta marcada con `inference: false`, es decir, el propio autor no habilita la inferencia directa desde la infraestructura de HuggingFace; el uso requiere clonar el repositorio Ming-Image o desplegar con vLLM-Omni.
+- La model card esta marcada con `inference: false`, es decir, el propio autor no habilita la inferencia directa desde la infraestructura de Hugging Face; el uso requiere clonar el repositorio Ming-Image o desplegar con vLLM-Omni.
 - No se documentan la arquitectura interna, los datos de entrenamiento ni las cuantizaciones soportadas, lo que dificulta estimar el comportamiento fuera de la configuracion validada.
 - La evaluacion se limita al conjunto Crello y a dos metricas de reconstruccion; no hay datos publicados sobre otros dominios graficos (fotografia, ilustracion, capturas de interfaz) ni sobre su robustez con disenos muy complejos.
 - El numero de capas depende del prompt o del parametro `--num-layers`; una especificacion ambigua puede producir una descomposicion con capas mal delimitadas o con elementos repartidos de forma poco util.
@@ -79,12 +79,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de de
 - La coherencia cromatica y de bordes entre capas no esta garantizada; es recomendable recomponer las capas y comparar con la imagen original antes de usarlas en produccion.
 - Riesgo de alucinacion visual: al ser un modelo generativo, puede introducir o eliminar elementos respecto al diseno original, especialmente en zonas con oclusiones o texturas complejas.
 - Idiomas y sesgos: no se declara listado de idiomas soportados ni analisis de sesgos. El plan de capas se procesa en lenguaje natural, de modo que la calidad puede degradarse en idiomas distintos de los usados implicitamente durante el entrenamiento.
-- Licencia MIT: permite uso comercial y modificacion, pero conviene verificar la procedencia de los pesos redistribuidos, dado que la cuenta de HuggingFace (TechnoBaptist) no coincide con el autor referenciado en la model card (inclusionAI), y que no se adjunta informacion sobre la licencia de los datos de entrenamiento.
+- Licencia MIT: permite uso comercial y modificacion, pero conviene verificar la procedencia de los pesos redistribuidos, dado que la cuenta de Hugging Face (TechnoBaptist) no coincide con el autor referenciado en la model card (inclusionAI), y que no se adjunta informacion sobre la licencia de los datos de entrenamiento.
 - El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que existe poca validacion externa de su comportamiento.
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design-Layer
+- Pagina de Hugging Face: https://huggingface.co/TechnoBaptist/Ming-Image-0.1-Design-Layer
 - Pesos referenciados en la model card: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
 - Repositorio oficial Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Demo de descomposicion en capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-demo

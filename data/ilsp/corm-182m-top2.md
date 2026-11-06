@@ -75,7 +75,7 @@ No se dispone en la información proporcionada de modelos comparables de la mism
 
 ## Enlaces
 
-- [HuggingFace: ilsp/CoRM-182M-top2](https://huggingface.co/ilsp/CoRM-182M-top2)
+- [Hugging Face: ilsp/CoRM-182M-top2](https://huggingface.co/ilsp/CoRM-182M-top2)
 - [Colección CoRM](https://huggingface.co/ilsp/CoRM)
 - [Paper: Beyond Magnitude: Contrastive Routing for Modular Mixture-of-Experts](https://arxiv.org/abs/2609.01100)
 - [Versión HTML del paper](https://arxiv.org/html/2609.01100v1)

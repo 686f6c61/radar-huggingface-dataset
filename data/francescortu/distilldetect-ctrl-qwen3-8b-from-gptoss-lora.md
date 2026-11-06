@@ -75,7 +75,7 @@ Los tres modelos pertenecen a la misma familia DistillDetect y comparten el obje
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gptoss-lora
+- Hugging Face: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gptoss-lora
 - Repositorio GitHub del proyecto DistillDetect: https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

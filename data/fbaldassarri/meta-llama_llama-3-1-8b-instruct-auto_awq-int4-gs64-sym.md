@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Llama-3.1-8B-Instruct auto_awq INT4) | 8B (base); 2,05B según safetensors | no disponible en la card (base: 128k) | INT4, gs64, simétrica | Llama 3.1 Community | HuggingFace, 20 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | bf16/fp16 | Llama 3.1 Community | HuggingFace oficial |
+| Este artefacto (Llama-3.1-8B-Instruct auto_awq INT4) | 8B (base); 2,05B según safetensors | no disponible en la card (base: 128k) | INT4, gs64, simétrica | Llama 3.1 Community | Hugging Face, 20 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | bf16/fp16 | Llama 3.1 Community | Hugging Face oficial |
 | Otras cuantizaciones INT4 de Llama 3.1 8B Instruct (AWQ/GPTQ) | 8B | 128.000 tokens | INT4 | Llama 3.1 Community | Múltiples repos de la comunidad |
 | Llama 3.1 8B Instruct en GGUF (Q4_K_M) | 8B | 128.000 tokens | INT4/INT5 mixta | Llama 3.1 Community | Repos de la comunidad, llama.cpp |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_awq-int4-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

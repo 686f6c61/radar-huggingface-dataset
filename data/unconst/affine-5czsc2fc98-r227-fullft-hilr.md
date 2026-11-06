@@ -63,4 +63,4 @@ La comparativa se basa en el tamaño total y la arquitectura MoE. El modelo de `
 - Soporte multimodal no verificado: aunque está etiquetado como image-text-to-text, no se han publicado ejemplos ni métricas que confirmen su funcionamiento real.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r227-fullft-hilr
+- Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r227-fullft-hilr

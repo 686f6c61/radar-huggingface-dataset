@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oaf-drums-onnx (este modelo) | Onsets and Frames para batería, convertido a ONNX | Forma de onda mono, 44,1 kHz | Onset y velocity para 8 alturas, 100 fps | Apache 2.0 | HuggingFace, onnxruntime |
+| oaf-drums-onnx (este modelo) | Onsets and Frames para batería, convertido a ONNX | Forma de onda mono, 44,1 kHz | Onset y velocity para 8 alturas, 100 fps | Apache 2.0 | Hugging Face, onnxruntime |
 | Onsets and Frames de Magenta (original) | Modelo de transcripción de batería en TensorFlow | Forma de onda / espectrograma | Onset y velocity | Apache 2.0 | Repositorio de Magenta |
 | Basic Pitch (Spotify) | Transcripción multipista ligera | Audio | Eventos de nota MIDI | no disponible en esta ficha | Proyecto de Spotify |
 | MT3 (multi-instrument) | Transcripción multi-instrumento basada en secuencia | Audio | Eventos MIDI multi-instrumento | no disponible en esta ficha | Proyecto de investigación |
@@ -83,6 +83,6 @@ Los datos numéricos de los modelos alternativos (parámetros, contexto, métric
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/thebluescreen/oaf-drums-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/thebluescreen/oaf-drums-onnx)
 - [Scripts de conversión Silly MIDI Tools](https://github.com/Sillybit-io/audio-to-midi-app)
 - [Onsets and Frames de Magenta (modelo original)](https://github.com/magenta/magenta/tree/main/magenta/models/onsets_frames_transcription)

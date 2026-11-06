@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giwone1330/OneJev1.5-9B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/giwone1330/OneJev1.5-9B-NVFP4
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.5-9B
 - Modelo origen: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de OneJev (prompt y API System One): https://github.com/OmniJev/OneJev

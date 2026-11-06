@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act-newblue-gs0-ac60 es una política de manipulación robótica entrenada con el algoritmo ACT (Action Chunking Transformer) sobre la librería LeRobot de HuggingFace. Lo publica el usuario Kaz55 como un punto de una ablación sistemática sobre la tarea "newblue" ejecutada con un brazo UR5e y una mano DG-5F. El modelo concreto que nos ocupa corresponde a la condición sin sensor táctil GelSight: recibe únicamente el estado proprioceptivo de 26 dimensiones y dos cámaras RealSense a 640x480.
+act-newblue-gs0-ac60 es una política de manipulación robótica entrenada con el algoritmo ACT (Action Chunking Transformer) sobre la librería LeRobot de Hugging Face. Lo publica el usuario Kaz55 como un punto de una ablación sistemática sobre la tarea "newblue" ejecutada con un brazo UR5e y una mano DG-5F. El modelo concreto que nos ocupa corresponde a la condición sin sensor táctil GelSight: recibe únicamente el estado proprioceptivo de 26 dimensiones y dos cámaras RealSense a 640x480.
 
 Su relevancia no está en el rendimiento absoluto, sino en el diseño experimental. El autor ha generado cinco variantes que solo se diferencian en la resolución del GelSight (500x375, 320x240, 160x120, 88x66 y ninguna), de modo que cualquier diferencia de comportamiento entre ellas es atribuible exclusivamente a la información táctil. Este ejemplar es, por tanto, la línea base del barrido: establece el techo de lo que se puede conseguir sin tacto.
 
@@ -67,11 +67,11 @@ La model card no incluye ninguna métrica de éxito en robot, tasa de agarre, er
 
 | Modelo | Parametros | Entrada tactil | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-newblue-gs0-ac60 (este) | 51,67 M | ninguna | newblue (UR5e + DG-5F) | no disponible | HuggingFace |
-| act-newblue-gs88-ac60 | no disponible (misma receta) | GelSight 88x66 | newblue (UR5e + DG-5F) | no disponible | HuggingFace |
-| act-newblue-gs160-ac60 | no disponible (misma receta) | GelSight 160x120 | newblue (UR5e + DG-5F) | no disponible | HuggingFace |
-| act-newblue-gs320-ac60 | no disponible (misma receta) | GelSight 320x240 | newblue (UR5e + DG-5F) | no disponible | HuggingFace |
-| act-newblue-gs500-ac60 | no disponible (misma receta) | GelSight 500x375 | newblue (UR5e + DG-5F) | no disponible | HuggingFace |
+| act-newblue-gs0-ac60 (este) | 51,67 M | ninguna | newblue (UR5e + DG-5F) | no disponible | Hugging Face |
+| act-newblue-gs88-ac60 | no disponible (misma receta) | GelSight 88x66 | newblue (UR5e + DG-5F) | no disponible | Hugging Face |
+| act-newblue-gs160-ac60 | no disponible (misma receta) | GelSight 160x120 | newblue (UR5e + DG-5F) | no disponible | Hugging Face |
+| act-newblue-gs320-ac60 | no disponible (misma receta) | GelSight 320x240 | newblue (UR5e + DG-5F) | no disponible | Hugging Face |
+| act-newblue-gs500-ac60 | no disponible (misma receta) | GelSight 500x375 | newblue (UR5e + DG-5F) | no disponible | Hugging Face |
 
 Los cinco modelos comparten arquitectura, dataset, hiperparámetros y semilla, y difieren únicamente en la resolución del GelSight, por lo que la comparación entre ellos es limpia y directa. Frente a alternativas de la misma categoría, como Diffusion Policy o ACT bimanual estándar, no hay datos publicados de parámetros, contexto ni rendimiento en la información disponible, de modo que no es posible establecer una comparación cuantitativa.
 
@@ -89,8 +89,8 @@ Los cinco modelos comparten arquitectura, dataset, hiperparámetros y semilla, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-newblue-gs0-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-newblue-gs0-ac60
 - Dataset asociado: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_newblue_gs0
-- Librería LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- Librería LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Paper original de ACT, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware": https://arxiv.org/abs/2304.13705
 - No se han encontrado en la búsqueda web otros enlaces relevantes sobre este modelo (los resultados devueltos corresponden a un servicio de streaming deportivo y no guardan relación).

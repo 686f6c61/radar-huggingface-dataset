@@ -74,8 +74,8 @@ El único fallo de este modelo fue "do a 180", que devolvió un movimiento inexi
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-MITT-Tank | 3.212.749.888 | No disponible | 49/50 comandos nuevos, 18/18 originales | Llama 3.2 Community License | HuggingFace (adaptador LoRA y GGUF) |
-| Llama 3.2 3B Instruct (original) | 3.212.749.888 | No disponible en la informacion proporcionada | 42/50 en sobremesa, 45/50 en Pi; 18/18 originales | Llama 3.2 Community License | HuggingFace (modelo base oficial de Meta) |
+| Llama-3.2-3B-MITT-Tank | 3.212.749.888 | No disponible | 49/50 comandos nuevos, 18/18 originales | Llama 3.2 Community License | Hugging Face (adaptador LoRA y GGUF) |
+| Llama 3.2 3B Instruct (original) | 3.212.749.888 | No disponible en la informacion proporcionada | 42/50 en sobremesa, 45/50 en Pi; 18/18 originales | Llama 3.2 Community License | Hugging Face (modelo base oficial de Meta) |
 | Parser de frases fijas (sin modelo) | 0 | No aplica | 36/50 comandos nuevos, 18/18 originales | No aplica | Codigo del proyecto MITT |
 
 La comparación se limita a estos tres sistemas porque la model card no ofrece referencias frente a otros ajustes finos de robótica o modelos de función similar. Frente al modelo base, la mejora se concentra en los comandos nuevos (49 frente a 42-45) y en la capacidad de no moverse ante instrucciones trampa; frente al parser de reglas, la ventaja es la generalización a vocabulario abierto (49 frente a 36).
@@ -97,7 +97,7 @@ La comparación se limita a estos tres sistemas porque la model card no ofrece r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beluggin/Llama-3.2-3B-MITT-Tank
+- Modelo en Hugging Face: https://huggingface.co/Beluggin/Llama-3.2-3B-MITT-Tank
 - Repositorio del proyecto MITT: https://github.com/Beluggin/multimodal-teleoperation
 - Script de generación del dataset: https://github.com/Beluggin/multimodal-teleoperation/tree/main/train
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) orientado a cargas de trabajo agénticas con entradas muy largas. Segun la model card, combina un backbone de 552B parametros con un encoder de vision (DeepSeek-ViT) y un modulo de memoria condicional Engram de 196B parametros; el repositorio de HuggingFace publicado por el usuario schwyzquant declara 763.205.315.794 parametros totales en safetensors y un tamano de repo de 510,3 GB. El modelo procesa nativamente imagenes y texto, y genera texto de forma autoregresiva con una ventana de contexto de hasta un millon de tokens.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) orientado a cargas de trabajo agénticas con entradas muy largas. Segun la model card, combina un backbone de 552B parametros con un encoder de vision (DeepSeek-ViT) y un modulo de memoria condicional Engram de 196B parametros; el repositorio de Hugging Face publicado por el usuario schwyzquant declara 763.205.315.794 parametros totales en safetensors y un tamano de repo de 510,3 GB. El modelo procesa nativamente imagenes y texto, y genera texto de forma autoregresiva con una ventana de contexto de hasta un millon de tokens.
 
 Su rasgo diferencial declarado es la compresion de la cache KV. Frente a DeepSeek-V4-Flash, reduce la huella de cache KV global por token a 890 bytes (aproximadamente 1/4) y la cache KV persistente a alrededor de 1/8, mediante atencion dispersa CSA2, cacheado FP4 de la KV principal en formato E2M1 con una escala E4M3 por cada 16 canales y la tecnica SWA Bounded Replay. La arquitectura Causal Encoder-Decoder (CED) permite activar solo 8B parametros por token en prefill y 16B en decode, lo que abarata el coste de las cargas con mucho input y poco output.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Limitaciones y advertencias
 
-- Repositorio de terceros: la publicacion corresponde al usuario schwyzquant, no a la organizacion oficial deepseek-ai; la model card enlaza al logo, la web, el chat y el informe tecnico de DeepSeek AI, pero la ficha de HuggingFace analizada no es la oficial. Conviene verificar el origen de los pesos antes de usarlos en produccion.
+- Repositorio de terceros: la publicacion corresponde al usuario schwyzquant, no a la organizacion oficial deepseek-ai; la model card enlaza al logo, la web, el chat y el informe tecnico de DeepSeek AI, pero la ficha de Hugging Face analizada no es la oficial. Conviene verificar el origen de los pesos antes de usarlos en produccion.
 - Sin traccion verificable: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 2026-09-12 sin historial posterior.
 - Sin benchmarks publicados: no hay cifras de MMLU, HumanEval, GSM8K ni de capacidad agentica; la seccion de evaluacion de la model card esta truncada.
 - Discrepancia de parametros: la model card declara 552B en el backbone y 196B en Engram (748B en total), mientras que safetensors declara 763,2B. La diferencia podria corresponder al encoder de vision y a otros componentes, pero no se explica en la informacion disponible.
@@ -104,11 +104,11 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash
+- Repositorio de Hugging Face: https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek AI: https://twitter.com/deepseek_ai
 - Licencia declarada en el repositorio: https://huggingface.co/schwyzquant/DeepSeek-V4.1-Flash/blob/main/LICENSE
 - Resultados de busqueda web: sin enlaces relevantes sobre el modelo en la informacion disponible.

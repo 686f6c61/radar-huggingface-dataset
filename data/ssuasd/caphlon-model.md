@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caphlon-Model es una construcción ligera en formato GGUF del modelo Qwen 3.8 27B, publicada por el usuario ssuasd en HuggingFace el 25 de octubre de 2026. No se trata de una destilación ni de un modelo estudiante: se conserva la topología completa de 27B del modelo base, pero se reduce drásticamente la huella en disco y memoria eliminando redundancia de representación mediante dos técnicas: reducción de la tabla de merges del vocabulario a un objetivo de 100k tokens y poda de capas alineada con los intervalos híbridos de atención, todo ello sobre una cuantización base Unsloth Dynamic IQ2_S.
+Caphlon-Model es una construcción ligera en formato GGUF del modelo Qwen 3.8 27B, publicada por el usuario ssuasd en Hugging Face el 25 de octubre de 2026. No se trata de una destilación ni de un modelo estudiante: se conserva la topología completa de 27B del modelo base, pero se reduce drásticamente la huella en disco y memoria eliminando redundancia de representación mediante dos técnicas: reducción de la tabla de merges del vocabulario a un objetivo de 100k tokens y poda de capas alineada con los intervalos híbridos de atención, todo ello sobre una cuantización base Unsloth Dynamic IQ2_S.
 
 El resultado es un archivo GGUF de 6,87 GiB que promete calidad de razonamiento cercana al modelo de 27B original con un tamaño apto para portátiles. La arquitectura híbrida del base (mayoría de capas gated-delta-net de estado recurrente de tamaño fijo, minoría de capas de atención completa) permite que la caché KV solo exista en las capas de atención completa, manteniendo el consumo de memoria bajo y escalando el contexto de forma barata.
 
@@ -99,7 +99,7 @@ No hay datos publicados comparando con otros modelos ligeros de la categoria de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssuasd/Caphlon-Model
+- Hugging Face: https://huggingface.co/ssuasd/Caphlon-Model
 - GitHub: https://github.com/demiralpdev/Caphlon-Model
 - Pagina del proyecto: https://demiralpdev.github.io/Caphlon-Model/
 - Modelo base: https://huggingface.co/Qwen (Qwen/Qwen3.8-27B)

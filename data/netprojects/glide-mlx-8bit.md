@@ -95,7 +95,7 @@ La comparación con modelos de decisión alternativos de la misma categoría no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netprojects/GLiDE-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/netprojects/GLiDE-mlx-8bit
 - Versión 4 bits: https://huggingface.co/netprojects/GLiDE-mlx-4bit
 - Modelo base original: https://huggingface.co/fastino/GLiDE
 - Repositorio del servidor MLX: https://github.com/internet-projects/glide-mlx

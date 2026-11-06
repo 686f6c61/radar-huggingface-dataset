@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_merge
 - Paper relacionado (Alignment Pretraining): https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_instruct (modelo descrito en el paper, aunque no es idéntico)
 - Modelo similar del mismo autor: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg
 - Herramienta mergekit: https://github.com/cg123/mergekit

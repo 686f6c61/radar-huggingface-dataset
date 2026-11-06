@@ -75,7 +75,7 @@ No se dispone de comparativa directa con otros modelos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/lactroiii/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
+- Repositorio Hugging Face de este modelo: https://huggingface.co/lactroiii/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Repositorio oficial de NVIDIA (BF16): https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Blog de NVIDIA sobre Nemotron 3 Nano Omni: https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning

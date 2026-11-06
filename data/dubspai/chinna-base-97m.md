@@ -91,7 +91,7 @@ La información proporcionada solo menciona `chinna-small-40m` como otro tamano 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dubspai/chinna-base-97m
+- Hugging Face: https://huggingface.co/dubspai/chinna-base-97m
 - Web del autor: https://aravind-r.com
 - GitHub: https://github.com/ai-aravind
 - LinkedIn: https://linkedin.com/in/aravindai

@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiRack Ternary Precision 72B | 72,15B | 16k | Ternarios (1.58-bit) en GGUF | Propietaria (jirack-proprietary) | HuggingFace, solo GGUF |
-| JiRack Ternary Precision 36B | 36B (no confirmado en detalle) | No disponible | Ternarios en GGUF | Propietaria | HuggingFace (modelo base declarado) |
-| JiRackUltra_32b | 32B (no confirmado en detalle) | No disponible | No disponible | No disponible | HuggingFace (modelo base de la familia) |
+| JiRack Ternary Precision 72B | 72,15B | 16k | Ternarios (1.58-bit) en GGUF | Propietaria (jirack-proprietary) | Hugging Face, solo GGUF |
+| JiRack Ternary Precision 36B | 36B (no confirmado en detalle) | No disponible | Ternarios en GGUF | Propietaria | Hugging Face (modelo base declarado) |
+| JiRackUltra_32b | 32B (no confirmado en detalle) | No disponible | No disponible | No disponible | Hugging Face (modelo base de la familia) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento con alternativas de la misma categoria.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-72B-chat
+- Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-72B-chat
 - Modelo base declarado: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-36B
-- Perfil del autor en HuggingFace: https://huggingface.co/kgrabko
+- Perfil del autor en Hugging Face: https://huggingface.co/kgrabko
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales.

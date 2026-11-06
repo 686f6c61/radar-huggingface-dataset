@@ -87,7 +87,7 @@ Los datos de parámetros y licencias de los comparadores corresponden a la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pinecoresystems/faster-whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/pinecoresystems/faster-whisper-large-v3-turbo
 - Modelo upstream (Dropbox / Mobius Labs): https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de `faster-whisper` (CTranslate2): https://github.com/SYSTRAN/faster-whisper

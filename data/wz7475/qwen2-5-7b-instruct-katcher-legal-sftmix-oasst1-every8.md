@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every8 es un ajuste fino publicado en HuggingFace por el usuario wz7475. La model card es la plantilla generica autogenerada por el Hub y no contiene ni una sola respuesta a los campos habituales (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion), por lo que la informacion verificable es practicamente inexistente.
+El repositorio wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every8 es un ajuste fino publicado en Hugging Face por el usuario wz7475. La model card es la plantilla generica autogenerada por el Hub y no contiene ni una sola respuesta a los campos habituales (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion), por lo que la informacion verificable es practicamente inexistente.
 
 A partir del identificador se puede inferir, sin confirmacion por parte del autor, que se trata de un ajuste supervisado (SFT) del modelo base Qwen2.5-7B-Instruct sobre una mezcla de datos que incluiria un corpus juridico (etiqueta "katcher-legal") y el dataset OpenAssistant/oasst1 muestreado cada 8 ejemplos (sufijo "every8"). Se trata, por tanto, de un experimento de especializacion en dominio legal sobre un modelo denso de ~7.600 millones de parametros.
 
@@ -73,7 +73,7 @@ Los valores siguientes son estimaciones para la clase de modelos 7B y no han sid
 - VRAM en cuantizacion de 4 bits (Q4_K_M, GPTQ o AWQ): aproximadamente 4,5 a 5,5 GB.
 - GPU profesionales: A100 40/80 GB, H100 80 GB y L40S 48 GB cubren el modelo sin problemas y permiten lotes grandes.
 - GPU de consumo: RTX 3090, 4090 y 5090 (24-32 GB) permiten inferencia en bf16 con contexto moderado; RTX 4060 Ti 16 GB, 4070 Ti Super y similares funcionan bien en 8 y 4 bits; tarjetas de 8 GB exigen 4 bits y limitar la longitud de contexto.
-- Opciones de despliegue: vLLM, TGI, SGLang y llama.cpp/Ollama si se generan pesos GGUF. El tag endpoints_compatible indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI, SGLang y llama.cpp/Ollama si se generan pesos GGUF. El tag endpoints_compatible indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No hay datos de rendimiento de este ajuste que permitan compararlo en calidad co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every8
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every8
 - Perfil del autor: https://huggingface.co/wz7475
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono, ajeno al modelo): https://arxiv.org/abs/1910.09700

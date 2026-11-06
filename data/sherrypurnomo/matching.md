@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SHERRYPURNOMO/matching es un repositorio de HuggingFace que contiene una implementación de MobileViT orientada a una tarea de emparejamiento (matching), publicada por el usuario SHERRYPURNOMO bajo licencia Apache 2.0. El propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado, y que el repositorio no reclama ninguna puntuación de benchmark.
+SHERRYPURNOMO/matching es un repositorio de Hugging Face que contiene una implementación de MobileViT orientada a una tarea de emparejamiento (matching), publicada por el usuario SHERRYPURNOMO bajo licencia Apache 2.0. El propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado, y que el repositorio no reclama ninguna puntuación de benchmark.
 
 Se trata, por tanto, de un artefacto de código más que de un modelo listo para producción: 16.576 parámetros según los metadatos de safetensors, una cifra extraordinariamente baja e incompatible con la etiqueta `large` que aparece en la configuración declarada. No hay pipeline declarado, no se especifican idiomas y el repositorio registra cero descargas y cero "likes" en el momento de la consulta. La arquitectura declarada es MobileViT con atención flash, fusión tensorial, activación swish y normalización LayerNorm.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y de carácter experimental: puede servir como 
 | Normalización | layernorm |
 | Optimizador declarado | adam con schedule constant warmup |
 | Pipeline declarado | no disponible |
-| Fecha de creación registrada | 2026-09-15 (según los metadatos de HuggingFace) |
+| Fecha de creación registrada | 2026-09-15 (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone de un modelo comparable directo dentro de este repositorio, ya que
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SHERRYPURNOMO/matching | MobileViT para matching (sin entrenar) | 16.576 | no disponible | no disponible (sin benchmarks) | apache-2.0 | HuggingFace, 0 descargas |
+| SHERRYPURNOMO/matching | MobileViT para matching (sin entrenar) | 16.576 | no disponible | no disponible (sin benchmarks) | apache-2.0 | Hugging Face, 0 descargas |
 | MobileViT oficial (variantes XXS/XS/S) | Backbone de visión móvil | no disponible en esta fuente (variantes en el rango de pocos millones según el paper original) | no aplica (modelo de visión) | publicado en el paper de MobileViT | según implementación (MIT en timm) | ampliamente disponible en librerías de visión |
 | MobileNetV3 | CNN ligera para visión móvil | no disponible en esta fuente | no aplica | publicado en su paper correspondiente | según implementación | ampliamente disponible en torchvision |
 | Backbones siameses para matching (por ejemplo, ResNet siamés) | CNN de dos ramas para emparejamiento | no disponible en esta fuente | no aplica | depende del entrenamiento | variable según implementación | común como línea base en literatura |
@@ -104,6 +104,6 @@ La conclusión práctica es que este repositorio no es comparable en rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SHERRYPURNOMO/matching
+- Modelo en Hugging Face: https://huggingface.co/SHERRYPURNOMO/matching
 - Paper de referencia de la arquitectura MobileViT (no es el paper de este modelo, sino del backbone en el que se basa): https://arxiv.org/abs/2110.02178
 - Nota sobre la búsqueda web: las consultas realizadas únicamente devolvieron resultados no relacionados (páginas de ayuda de cuentas de Google y YouTube y prensa de videojuegos). No se ha localizado ningún paper, blog, repositorio, demo o espacio asociado a SHERRYPURNOMO/matching.

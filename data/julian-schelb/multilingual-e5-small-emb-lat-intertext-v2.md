@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v2` (este) | 117,6 M | no disponible | Intertextualidad latina (fine-tune) | Apache-2.0 | HuggingFace |
-| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v1` | 117,6 M | no disponible | Intertextualidad latina (fine-tune, versión anterior) | Apache-2.0 | HuggingFace |
-| `intfloat/multilingual-e5-small` (base) | 117,6 M | 512 (conocido, no en info) | Embeddings multilingües generales | MIT | HuggingFace |
+| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v2` (este) | 117,6 M | no disponible | Intertextualidad latina (fine-tune) | Apache-2.0 | Hugging Face |
+| `julian-schelb/multilingual-e5-small-emb-lat-intertext-v1` | 117,6 M | no disponible | Intertextualidad latina (fine-tune, versión anterior) | Apache-2.0 | Hugging Face |
+| `intfloat/multilingual-e5-small` (base) | 117,6 M | 512 (conocido, no en info) | Embeddings multilingües generales | MIT | Hugging Face |
 
 El modelo se diferencia del base por su especialización en latín y su entrenamiento específico para intertextualidad. Frente a v1, v2 ofrece un ajuste sobre una revisión más reciente del dataset, manteniendo el mismo interfaz.
 
@@ -74,10 +74,10 @@ El modelo se diferencia del base por su especialización en latín y su entrenam
 
 ## Enlaces
 
-- [HuggingFace del modelo v2](https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v2)
-- [HuggingFace del modelo v1](https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v1)
+- [Hugging Face del modelo v2](https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v2)
+- [Hugging Face del modelo v1](https://huggingface.co/julian-schelb/multilingual-e5-small-emb-lat-intertext-v1)
 - [Paquete LociSimiles en PyPI](https://pypi.org/project/locisimiles/)
 - [Repositorio GitHub de LociSimiles](https://github.com/julianschelb/locisimiles)
 - [Documentacion de LociSimiles (ejemplos)](https://julianschelb.github.io/locisimiles/examples/)
-- [Perfil del autor en HuggingFace](https://huggingface.co/julian-schelb/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/julian-schelb/models)
 - [Paper arXiv (2601.07533)](https://arxiv.org/abs/2601.07533)

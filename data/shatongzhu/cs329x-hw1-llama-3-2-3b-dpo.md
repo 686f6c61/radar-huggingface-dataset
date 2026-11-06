@@ -61,17 +61,17 @@ La propia model card indica que el cuaderno asociado contiene las salidas reales
 - VRAM estimada en cuantizacion de 4 bits (por ejemplo Q4_K_M en GGUF): en torno a 2,5 GB (estimacion).
 - Cabe en GPU de consumo: si. Ejemplos habituales son RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080, RTX 4090 y equipos Apple Silicon con memoria unificada.
 - GPU de centro de datos recomendadas para mayor throughput: A100, H100, L40S.
-- Opciones de despliegue: HuggingFace Transformers junto con PEFT para cargar el adaptador sin fusionar; vLLM soporta adaptadores LoRA de forma nativa; para llama.cpp u Ollama es necesario fusionar previamente el adaptador con el modelo base y convertir los pesos a GGUF.
+- Opciones de despliegue: Hugging Face Transformers junto con PEFT para cargar el adaptador sin fusionar; vLLM soporta adaptadores LoRA de forma nativa; para llama.cpp u Ollama es necesario fusionar previamente el adaptador con el modelo base y convertir los pesos a GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ShatongZhu/cs329x-hw1-llama-3.2-3b-dpo | Adaptador LoRA sobre 3,21 mil millones | Heredado del base (128.000 tokens declarados por Meta) | Llama 3.2 Community License | HuggingFace, 0 descargas | Artefacto academico; sin benchmarks ni garantias de mejora |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado | Modelo base del adaptador; alineado por Meta con SFT y RLHF |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | HuggingFace | Alternativa de tamano similar, orientada a razonamiento |
+| ShatongZhu/cs329x-hw1-llama-3.2-3b-dpo | Adaptador LoRA sobre 3,21 mil millones | Heredado del base (128.000 tokens declarados por Meta) | Llama 3.2 Community License | Hugging Face, 0 descargas | Artefacto academico; sin benchmarks ni garantias de mejora |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado | Modelo base del adaptador; alineado por Meta con SFT y RLHF |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | Hugging Face | Alternativa de tamano similar, orientada a razonamiento |
 
 Los datos de Qwen2.5-3B-Instruct y Phi-3.5-mini-instruct no proceden de la informacion proporcionada en esta busqueda; se incluyen como referencia de categoria y conviene verificarlos en sus model cards oficiales. La comparacion de rendimiento entre estos modelos y el adaptador DPO no es posible porque el adaptador no publica resultados de evaluacion.
 
@@ -90,7 +90,7 @@ Los datos de Qwen2.5-3B-Instruct y Phi-3.5-mini-instruct no proceden de la infor
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/ShatongZhu/cs329x-hw1-llama-3.2-3b-dpo
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/ShatongZhu/cs329x-hw1-llama-3.2-3b-dpo
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Paper de DPO (Direct Preference Optimization): https://arxiv.org/abs/2305.18290

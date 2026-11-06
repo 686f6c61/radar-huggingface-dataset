@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Handjob es un adaptador LoRA de difusión publicado en HuggingFace por el usuario Shuhdjdkke. Según los metadatos de la ficha, se trata de un adaptador de tipo `diffusion-lora` para la pipeline `text-to-image`, construido sobre el modelo base `thatboymentor/WAN2.2LORASforVVideo`, que a su vez es un LoRA orientado a vídeo sobre la familia Wan 2.2. El repositorio ocupa 0,9 GB y se distribuye con la librería `diffusers`.
+Handjob es un adaptador LoRA de difusión publicado en Hugging Face por el usuario Shuhdjdkke. Según los metadatos de la ficha, se trata de un adaptador de tipo `diffusion-lora` para la pipeline `text-to-image`, construido sobre el modelo base `thatboymentor/WAN2.2LORASforVVideo`, que a su vez es un LoRA orientado a vídeo sobre la familia Wan 2.2. El repositorio ocupa 0,9 GB y se distribuye con la librería `diffusers`.
 
 El modelo no incluye model card sustantiva: el README se limita a un título, un bloque `<Gallery />` vacío y una sección de descarga. No se declaran datos de entrenamiento, rango del adaptador, dataset, hiperparámetros ni prompt de instancia (`instance_prompt: null`). Tampoco se especifica licencia ni idiomas soportados, y el repositorio está marcado con la etiqueta `not-for-all-audiences`, lo que indica contenido para adultos.
 
@@ -93,6 +93,6 @@ No se dispone de datos verificables de adaptadores comparables (mismo dominio, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shuhdjdkke/Handjob
+- Modelo en Hugging Face: https://huggingface.co/Shuhdjdkke/Handjob
 - Ficheros y versiones: https://huggingface.co/Shuhdjdkke/Handjob/tree/main
 - Modelo base declarado: https://huggingface.co/thatboymentor/WAN2.2LORASforVVideo

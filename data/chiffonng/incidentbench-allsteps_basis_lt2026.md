@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`incidentbench-allsteps_basis_lt2026` es un adaptador LoRA de rango 16 sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en HuggingFace. No es un modelo de propósito general, sino un artefacto de investigación orientado a una tarea concreta: la clasificación conjunta de incidentes en el marco del proyecto IncidentBench, donde el modelo debe emitir una única respuesta que indique si hubo incidente y, en su caso, a cuál de los siete dominios de riesgo de MIT pertenece. La detección y la categorización se derivan de esa misma respuesta única.
+`incidentbench-allsteps_basis_lt2026` es un adaptador LoRA de rango 16 sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en Hugging Face. No es un modelo de propósito general, sino un artefacto de investigación orientado a una tarea concreta: la clasificación conjunta de incidentes en el marco del proyecto IncidentBench, donde el modelo debe emitir una única respuesta que indique si hubo incidente y, en su caso, a cuál de los siete dominios de riesgo de MIT pertenece. La detección y la categorización se derivan de esa misma respuesta única.
 
 El adaptador se ha entrenado para la variante `allsteps_basis_lt2026`, que presenta al modelo todos los pasos registrados de un caso, incluido el incidente, con un corte temporal anterior a 2026. Esto permite que la justificación de la clasificación se apoye en el contenido del propio prompt. Las etiquetas de entrenamiento son generadas por modelos ("silver") siguiendo la guía de anotación del proyecto, no anotaciones humanas gold, lo que condiciona la fiabilidad de sus salidas.
 
@@ -72,7 +72,7 @@ No disponible. No se han proporcionado datos de otros adaptadores o modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiffonng/incidentbench-allsteps_basis_lt2026
+- Modelo en Hugging Face: https://huggingface.co/chiffonng/incidentbench-allsteps_basis_lt2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio del proyecto IncidentBench: no disponible en la informacion proporcionada
 - Informe de IncidentBench: no disponible en la informacion proporcionada

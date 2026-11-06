@@ -83,7 +83,7 @@ La comparativa se basa en datos de la model card y conocimiento general; no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/Ornith-1.0-9B-abliterated-fable
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/Ornith-1.0-9B-abliterated-fable
 - Base abliterada: https://huggingface.co/YuYu1015/YuYu1015-Ornith-1.0-9B-abliterated
 - Base original: https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotdogs/uka-fable-reasoning

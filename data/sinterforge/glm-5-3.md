@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en HuggingFace bajo la cuenta SinterForge. Se trata de la evolución directa de GLM-5.2, con la que comparte la misma base preentrenada; todas las mejoras provienen exclusivamente de la fase de post-entrenamiento. El modelo está diseñado para sobresalir en tareas de codificación compleja, razonamiento de largo horizonte y uso como agente autónomo, con un énfasis particular en entornos de terminal y descubrimiento de vulnerabilidades.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en Hugging Face bajo la cuenta SinterForge. Se trata de la evolución directa de GLM-5.2, con la que comparte la misma base preentrenada; todas las mejoras provienen exclusivamente de la fase de post-entrenamiento. El modelo está diseñado para sobresalir en tareas de codificación compleja, razonamiento de largo horizonte y uso como agente autónomo, con un énfasis particular en entornos de terminal y descubrimiento de vulnerabilidades.
 
 Con 753 mil millones de parámetros totales en arquitectura de mezcla de expertos (MoE) y 40 mil millones de parámetros activos por token, GLM-5.3 ofrece una ventana de contexto de hasta 1 millón de tokens. Es un modelo exclusivamente de texto, con soporte para inglés y chino, y se distribuye bajo una licencia propia denominada GLM-5.3. Su relevancia actual radica en que se posiciona como el modelo de pesos abiertos más capaz para tareas de ingeniería de software y agente, superando a alternativas propietarias en varios benchmarks públicos.
 
@@ -107,7 +107,7 @@ En terminos de rendimiento, GLM-5.3 lidera en CyberGym, AutomationBench y GDPval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SinterForge/GLM-5.3
+- Hugging Face: https://huggingface.co/SinterForge/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - Documentacion de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Guia de Unsloth: https://unsloth.ai/docs/models/glm-5.3

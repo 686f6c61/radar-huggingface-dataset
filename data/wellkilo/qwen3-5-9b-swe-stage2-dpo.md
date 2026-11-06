@@ -99,7 +99,7 @@ Criterios que deberian cubrirse en una comparativa futura: parametros del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wellkilo/qwen3.5-9b-swe-stage2-dpo
+- Modelo en Hugging Face: https://huggingface.co/wellkilo/qwen3.5-9b-swe-stage2-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador SFT de partida (`qwen3.5-9b-swe-sft`): mencionado en la model card, sin URL confirmada en la informacion disponible.
 - Repositorio del proyecto: mencionado en la model card como fuente de detalles adicionales, sin URL proporcionada.

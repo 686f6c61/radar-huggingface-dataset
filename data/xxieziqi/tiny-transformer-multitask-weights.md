@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xxieziqi/tiny-transformer-multitask-weights` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un «Tiny Transformer» multitarea, publicada por el usuario xxieziqi. No se trata de un modelo preentrenado, sino de un checkpoint de inicialización (`model.safetensors`) acompañado del código (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto. El autor lo describe explícitamente como material para revisión de código, smoke tests y experimentos controlados pequeños, no como un release listo para producción.
+`xxieziqi/tiny-transformer-multitask-weights` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un «Tiny Transformer» multitarea, publicada por el usuario xxieziqi. No se trata de un modelo preentrenado, sino de un checkpoint de inicialización (`model.safetensors`) acompañado del código (`predict.py`), un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta de experimento por defecto. El autor lo describe explícitamente como material para revisión de código, smoke tests y experimentos controlados pequeños, no como un release listo para producción.
 
 El tamaño real del checkpoint es de 24.832 parámetros totales (aproximadamente 0,025 M), lo que lo sitúa en la categoría de juguete educativo. La configuración etiquetada como «xlarge» es relativa a las variantes internas del propio script, no a escalas reales de la industria. La arquitectura emplea atención dilatada, fusión por *tensor fusion*, activación ReLU y normalización InstanceNorm, con receta de entrenamiento propuesta basada en optimizador Lion y scheduler OneCycle.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy específica: sirve como esqueleto reprodu
 | Licencia | BSD-3-Clause |
 | Formato de pesos | `model.safetensors` (checkpoint de inicialización) + código Python (`predict.py`); requiere adaptador explícito para APIs de carga automática |
 
-Otros datos de interés: escala declarada «xlarge» (relativa a la propia implementación), pipeline de HuggingFace no disponible, 0 descargas y 0 likes en el momento de la consulta, tamaño del repositorio 0.0 GB, creado y actualizado el 2026-10-20.
+Otros datos de interés: escala declarada «xlarge» (relativa a la propia implementación), pipeline de Hugging Face no disponible, 0 descargas y 0 likes en el momento de la consulta, tamaño del repositorio 0.0 GB, creado y actualizado el 2026-10-20.
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso en dispositivos embebidos o microcontroladores con memoria suficiente para el intérprete de Python.
 - Opciones de despliegue: scripts propios en PyTorch (`predict.py`); no hay integración documentada con vLLM, llama.cpp, Ollama ni TGI, y al ser una implementación custom requeriría adaptadores y, en su caso, conversión de pesos.
 - Latencia y throughput estimados: no disponibles como cifras publicadas; por el tamaño, el coste dominante será el overhead del framework y no el cálculo del modelo.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -69,7 +69,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-transformer-multitask-weights | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| tiny-transformer-multitask-weights | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xxieziqi/tiny-transformer-multitask-weights
+- Hugging Face: https://huggingface.co/xxieziqi/tiny-transformer-multitask-weights
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); el resto de enlaces disponibles: no disponible.

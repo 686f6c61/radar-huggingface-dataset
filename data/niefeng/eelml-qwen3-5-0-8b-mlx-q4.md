@@ -76,8 +76,8 @@ No se dispone de una comparativa directa con modelos equivalentes en formato EEL
 
 ## Enlaces
 
-- [HuggingFace del paquete EELML](https://huggingface.co/niefeng/eelml-qwen3-5-0-8b-mlx-q4)
-- [Modelo base Qwen3.5-0.8B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-0.8B)
+- [Hugging Face del paquete EELML](https://huggingface.co/niefeng/eelml-qwen3-5-0-8b-mlx-q4)
+- [Modelo base Qwen3.5-0.8B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Receta vLLM para Qwen3.5-0.8B](https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B)
 - [Página de Ollama para qwen3.5:0.8b](https://ollama.com/library/qwen3.5:0.8b)
 - [GitHub de QwenLM/Qwen3 (familia Qwen3)](https://github.com/QwenLM/Qwen3)

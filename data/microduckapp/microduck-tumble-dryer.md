@@ -24,7 +24,7 @@ Su relevancia es la del ecosistema al que pertenece: Microduck es un bípedo ope
 | Salidas | 14 consignas articulares |
 | Frecuencia de control | 50 Hz (periodo de 20 ms) |
 | Duración del movimiento | 11,2 s |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Etiquetas | onnx, robotics, microduck-move, region:us |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación y actualización | 2026-10-27 (ambas) |
@@ -90,7 +90,7 @@ No hay información pública en los datos proporcionados sobre otras políticas 
 | Parámetros | no disponible | no disponible | no disponible |
 | Contexto / E/S | 61 observaciones → 14 salidas, 50 Hz | no disponible | Depende del robot |
 | Licencia | no disponible | no disponible | Variable |
-| Disponibilidad | Pública en HuggingFace, 0 descargas | Público en el perfil `microduckapp` | Variable |
+| Disponibilidad | Pública en Hugging Face, 0 descargas | Público en el perfil `microduckapp` | Variable |
 | Duración | 11,2 s | no disponible | Variable |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No hay información pública en los datos proporcionados sobre otras políticas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-tumble-dryer
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-tumble-dryer
 - Perfil y datasets del autor: https://huggingface.co/microduckapp/datasets
 - MarkTechPost, sobre Microduck: https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/
 - TechCrunch, sobre el lanzamiento y precio: https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/

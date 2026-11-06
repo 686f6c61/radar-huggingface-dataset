@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Rol | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (linjian257) | Codificador de texto para MiniMax-H3 en ComfyUI | INT8 TensorWise + ConvRot (grupo 256), 434 tensores en BF16 | 25,77 GB (24,00 GiB) | Personal-entertainment-use-only, sin uso comercial | HuggingFace, 0 descargas, 36 likes |
+| Este repositorio (linjian257) | Codificador de texto para MiniMax-H3 en ComfyUI | INT8 TensorWise + ConvRot (grupo 256), 434 tensores en BF16 | 25,77 GB (24,00 GiB) | Personal-entertainment-use-only, sin uso comercial | Hugging Face, 0 descargas, 36 likes |
 | `qwen3vl_32b_minimax_h3_int8_convrot.safetensors` oficial de Comfy-Org | Codificador de texto para MiniMax-H3 en ComfyUI | INT8 ConvRot | No disponible | La del repositorio Comfy-Org/MiniMax-H3 | Comfy-Org/MiniMax-H3 |
 | Pesos BF16 modificados por linjian257 | Codificador de texto para MiniMax-H3 en ComfyUI | BF16 sin cuantizar | No disponible (superior al INT8) | No disponible | Base a partir de la cual se generó este derivado |
-| Qwen3-VL-32B original | Modelo multimodal de visión y lenguaje | BF16 y otras segun el repositorio | No disponible | La del repositorio Qwen | HuggingFace (Qwen) |
+| Qwen3-VL-32B original | Modelo multimodal de visión y lenguaje | BF16 y otras segun el repositorio | No disponible | La del repositorio Qwen | Hugging Face (Qwen) |
 
 La model card advierte expresamente de que este fichero no es una copia renombrada ni un espejo byte a byte del INT8 oficial, por lo que no deben usarse las huellas del fichero oficial para verificarlo.
 

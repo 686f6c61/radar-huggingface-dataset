@@ -53,7 +53,7 @@ No se puede realizar una comparativa con modelos similares porque no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-GGUF
 - Modelo base (placeholder): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página del modelo Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

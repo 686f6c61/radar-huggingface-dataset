@@ -76,7 +76,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Gemma-4-12B-Abliterated-MLX-mxfp4
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B
 - Reporte tecnico de Gemma 4: https://arxiv.org/html/2607.02770v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sergiojimenezbur/robotics-vision-language` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion exploratoria sobre vision-lenguaje aplicada a robotica. El autor lo describe explicitamente como un artefacto de trabajo previo: recoge el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad, pero no afirma haber ejecutado el estudio ni publicado resultados.
+`sergiojimenezbur/robotics-vision-language` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion exploratoria sobre vision-lenguaje aplicada a robotica. El autor lo describe explicitamente como un artefacto de trabajo previo: recoge el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad, pero no afirma haber ejecutado el estudio ni publicado resultados.
 
 El repositorio declara la etiqueta `transformer` y el formato `safetensors`, con un total de 33.088 parametros segun los metadatos del propio Hub y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier transformer de vision-lenguaje funcional: un modelo de ese tipo maneja millones o miles de millones de parametros. Lo mas plausible es que el archivo `.safetensors` contenga unicamente tensores auxiliares (por ejemplo, indices o metadatos) y no pesos utilizables para inferencia.
 
@@ -44,7 +44,7 @@ El propio autor declara que el repositorio es exploratorio y que no reclama mejo
 - Planificacion de comparaciones con baselines emparejados: el repositorio describe el tipo de comparacion que se pretende hacer, util para investigadores que preparen un diseno experimental similar.
 - Documentacion de limitaciones y modos de fallo: la seccion de alcance y limitaciones puede reutilizarse como ejemplo de declaracion honesta de lo que un repositorio no demuestra.
 - Formacion y divulgacion sobre higiene cientifica en IA abierta: sirve como caso practico de separacion entre planes, hipotesis y resultados.
-- Auditoria de repositorios de HuggingFace: permite ilustrar como detectar que un repositorio etiquetado como modelo no contiene realmente pesos utilizables.
+- Auditoria de repositorios de Hugging Face: permite ilustrar como detectar que un repositorio etiquetado como modelo no contiene realmente pesos utilizables.
 - No es adecuado para inferencia, generacion, robotica real ni integracion en produccion, ya que no existe checkpoint entrenado.
 
 ## Benchmarks y rendimiento
@@ -76,6 +76,6 @@ No disponible. No es posible establecer una comparativa tecnica porque el reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sergiojimenezbur/robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/sergiojimenezbur/robotics-vision-language
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes: corresponden a paginas de descarga de software antivirus y no guardan relacion con el modelo, con vision-lenguaje ni con robotica.
 - No se han encontrado en la informacion disponible enlaces a papers, blogs tecnicos, repositorios de codigo ni demos asociados a este repositorio.

@@ -83,7 +83,7 @@ No se incluyen comparaciones con modelos de otros fabricantes por falta de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XReyRobert/Qwen3.8-27B-W4A16-AutoRound-INT8-Head-Embeddings
+- Repositorio Hugging Face: https://huggingface.co/XReyRobert/Qwen3.8-27B-W4A16-AutoRound-INT8-Head-Embeddings
 - Modelo base cuantizado (fuente): https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
 - Receta de transformacion syv-ai: https://github.com/syv-ai/qwen38-27b-rtx3090
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B (no verificado directamente, segun la model card)

@@ -101,7 +101,7 @@ Conjunto de ofertas verificadas (250 anuncios recientes, cada uno verificado dos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JobOpportunitiesAPI/joa-deep
+- Modelo en Hugging Face: https://huggingface.co/JobOpportunitiesAPI/joa-deep
 - Dataset del arena de extraccion: https://huggingface.co/datasets/JobOpportunitiesAPI/joa-extraction-arena
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo empleado como entrenador: https://huggingface.co/Qwen/Qwen3.5-27B

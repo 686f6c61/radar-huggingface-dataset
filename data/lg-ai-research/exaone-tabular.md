@@ -4,7 +4,7 @@
 
 EXAONE Tabular es un modelo fundacional transformer para datos tabulares desarrollado por LG AI Research. Resuelve problemas de clasificación y regresión mediante aprendizaje en contexto (in-context learning): se le pasan las filas etiquetadas a una función `fit` y el modelo predice nuevas filas en una única pasada hacia delante, sin actualizaciones de gradiente ni entrenamiento específico por conjunto de datos. Esto lo diferencia de los enfoques tradicionales de gradient boosting o AutoML, que requieren un ajuste por dataset.
 
-El modelo emplea una arquitectura denominada Cross-axis Summary Transformer (CAST), con 12 capas transformer, dimensión de embedding de 192, 6 cabezas de atención y normalización SSMax. Se liberan dos checkpoints: uno para clasificación (20,8 millones de parámetros) y otro para regresión (21,1 millones). El repositorio de HuggingFace incluye el runtime de inferencia `exaonetabular`, con una API de estilo scikit-learn. La relevancia actual radica en que ofrece una alternativa de bajo coste y sin entrenamiento para tareas tabulares, un dominio donde los modelos de deep learning tradicionalmente han quedado por detrás de los métodos basados en árboles.
+El modelo emplea una arquitectura denominada Cross-axis Summary Transformer (CAST), con 12 capas transformer, dimensión de embedding de 192, 6 cabezas de atención y normalización SSMax. Se liberan dos checkpoints: uno para clasificación (20,8 millones de parámetros) y otro para regresión (21,1 millones). El repositorio de Hugging Face incluye el runtime de inferencia `exaonetabular`, con una API de estilo scikit-learn. La relevancia actual radica en que ofrece una alternativa de bajo coste y sin entrenamiento para tareas tabulares, un dominio donde los modelos de deep learning tradicionalmente han quedado por detrás de los métodos basados en árboles.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EXAONE Tabular | 20,8M / 21,1M | In-context transformer | exaone (no comercial) | HuggingFace, GitHub |
+| EXAONE Tabular | 20,8M / 21,1M | In-context transformer | exaone (no comercial) | Hugging Face, GitHub |
 | TabPFN v2 | ~9M (estimado) | In-context transformer | MIT (codigo), pesos no claros | GitHub, PyPI |
 | XGBoost | N/A (GBDT) | Gradient boosting | BSD-3-Clause | Open source |
 | CatBoost | N/A (GBDT) | Gradient boosting | Apache 2.0 | Open source |
@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas generales, no en rendimiento medido, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LG-AI-Research/EXAONE-Tabular
+- Hugging Face: https://huggingface.co/LG-AI-Research/EXAONE-Tabular
 - GitHub: https://github.com/LGAI-Research/EXAONE-Tabular
 - Pagina de LG AI Research: https://www.lgresearch.ai/exaone
 - README en GitHub: https://github.com/LGAI-Research/EXAONE-Tabular/blob/main/README.md

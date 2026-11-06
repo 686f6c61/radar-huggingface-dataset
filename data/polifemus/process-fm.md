@@ -76,10 +76,10 @@ Nota: `fm-v6` y los modelos `sc*` usan corpus y vocabularios distintos (58 frent
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Process-FM `fm-v6` | 27,4 M | 256 eventos | Transformer causal fundacional | MIT | HuggingFace |
-| Process-FM `sc80` | 88,19 M | 256 eventos | Transformer causal fundacional | MIT | HuggingFace |
-| `Polifemus/prefix-next-activity` | No disponible | No disponible | GNN vs transformer ajustado por log | No disponible | HuggingFace |
-| `Polifemus/process-graph-fm` | No disponible | No disponible | Modelo fundacional sobre grafo (GPS) | No disponible | HuggingFace |
+| Process-FM `fm-v6` | 27,4 M | 256 eventos | Transformer causal fundacional | MIT | Hugging Face |
+| Process-FM `sc80` | 88,19 M | 256 eventos | Transformer causal fundacional | MIT | Hugging Face |
+| `Polifemus/prefix-next-activity` | No disponible | No disponible | GNN vs transformer ajustado por log | No disponible | Hugging Face |
+| `Polifemus/process-graph-fm` | No disponible | No disponible | Modelo fundacional sobre grafo (GPS) | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada; la comparacion se limita a enfoque, licencia y disponibilidad.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polifemus/process-fm
+- Modelo en Hugging Face: https://huggingface.co/Polifemus/process-fm
 - Dataset sintetico: https://huggingface.co/datasets/Polifemus/event-log-mixer
 - Estudio GNN vs transformer: https://huggingface.co/Polifemus/prefix-next-activity
 - Modelo fundacional sobre grafo (GPS): https://huggingface.co/Polifemus/process-graph-fm

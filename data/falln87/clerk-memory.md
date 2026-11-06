@@ -77,13 +77,13 @@ La ventaja diferenciadora de CLERK es que entrena la politica de consolidacion e
 - Generalizacion limitada: el entrenamiento se basa en transiciones sinteticas generadas programaticamente; el rendimiento en dominios reales con ruido, contradicciones o lenguaje ambiguo no esta validado.
 - Dependencia del reducer externo: el reducer determinista no forma parte de los pesos del modelo; para desplegar CLERK es necesario implementar o incluir el codigo del reducer junto con el adaptador.
 - Ausencia de benchmarks publicos: no se han publicado resultados cuantitativos en la informacion disponible, lo que impide una evaluacion independiente.
-- Sin adopcion comunitaria: el modelo registra cero descargas y cero likes en HuggingFace, por lo que no existe feedback empirico de usuarios.
+- Sin adopcion comunitaria: el modelo registra cero descargas y cero likes en Hugging Face, por lo que no existe feedback empirico de usuarios.
 - Idiomas y contexto no documentados: no se especifican los idiomas soportados ni la longitud de contexto efectiva en el adaptador; la informacion disponible para produccion es limitada.
 - Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantias. El modelo base tambien es Apache-2.0, por lo que no hay restricciones adicionales conocidas.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Falln87/clerk-memory
-- Perfil de HuggingFace de Falln87: https://huggingface.co/Falln87
+- Perfil de Hugging Face de Falln87: https://huggingface.co/Falln87
 - GitHub de FallnML: https://github.com/FallnML
 - Coleccion de herramientas de desarrollo: https://huggingface.co/collections/Falln87/development-tools-6709ef2fc8370b3d5b95f900

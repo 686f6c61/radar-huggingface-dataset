@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/agrieasy-ai-v1-GGUF` es la versión cuantizada en formato GGUF del modelo `Rishabhthe1/agrieasy-ai-v1`, un modelo conversacional de dominio específico orientado al sector agrícola y pensado para el contexto de la India. El trabajo de cuantización lo firma mradermacher, un actor habitual en HuggingFace especializado en publicar conversiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo original no ha sido entrenado por mradermacher: este repositorio solo redistribuye pesos convertidos y comprimidos.
+`mradermacher/agrieasy-ai-v1-GGUF` es la versión cuantizada en formato GGUF del modelo `Rishabhthe1/agrieasy-ai-v1`, un modelo conversacional de dominio específico orientado al sector agrícola y pensado para el contexto de la India. El trabajo de cuantización lo firma mradermacher, un actor habitual en Hugging Face especializado en publicar conversiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo original no ha sido entrenado por mradermacher: este repositorio solo redistribuye pesos convertidos y comprimidos.
 
 El interés práctico del modelo reside en su tamaño reducido y su enfoque vertical. Con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones), se sitúa en la gama de modelos pequeños que pueden ejecutarse en hardware de consumo, CPU o dispositivos de borde, algo relevante para escenarios de despliegue en zonas rurales con conectividad limitada. La model card declara soporte para inglés e hindi, lo que encaja con el público objetivo declarado en las etiquetas del repositorio (`agriculture`, `farming`, `india`, `agrieasy`, `conversational`).
 
@@ -67,10 +67,10 @@ No existen datos de rendimiento publicados para `agrieasy-ai-v1`, por lo que la 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agrieasy-ai-v1 (base) | ≈1,54 B | No disponible | Agrícola, inglés e hindi | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen2.5-1.5B-Instruct | ≈1,54 B | 32 768 tokens (ampliable) | Generalista, multilingüe | Apache 2.0 | HuggingFace, amplio ecosistema de cuantizaciones |
-| Llama 3.2 1B Instruct | ≈1,24 B | 128 000 tokens | Generalista, multilingüe | Licencia comunitaria Llama 3.2 | HuggingFace, requiere aceptación de términos |
-| Gemma 2 2B IT | ≈2,6 B | 8 192 tokens | Generalista, multilingüe | Términos de uso de Gemma | HuggingFace, requiere aceptación de términos |
+| agrieasy-ai-v1 (base) | ≈1,54 B | No disponible | Agrícola, inglés e hindi | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-1.5B-Instruct | ≈1,54 B | 32 768 tokens (ampliable) | Generalista, multilingüe | Apache 2.0 | Hugging Face, amplio ecosistema de cuantizaciones |
+| Llama 3.2 1B Instruct | ≈1,24 B | 128 000 tokens | Generalista, multilingüe | Licencia comunitaria Llama 3.2 | Hugging Face, requiere aceptación de términos |
+| Gemma 2 2B IT | ≈2,6 B | 8 192 tokens | Generalista, multilingüe | Términos de uso de Gemma | Hugging Face, requiere aceptación de términos |
 
 La comparación relevante es que los tres modelos alternativos son generalistas y están ampliamente evaluados, mientras que `agrieasy-ai-v1` apuesta por especialización de dominio a costa de transparencia: no publica contexto, datos de entrenamiento ni evaluaciones.
 
@@ -89,7 +89,7 @@ La comparación relevante es que los tres modelos alternativos son generalistas 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/agrieasy-ai-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/agrieasy-ai-v1-GGUF
 - Modelo base (pesos originales en transformers): https://huggingface.co/Rishabhthe1/agrieasy-ai-v1
 - Página de conveniencia del autor para descargas y visión general: https://hf.tst.eu/model#agrieasy-ai-v1-GGUF
 - Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

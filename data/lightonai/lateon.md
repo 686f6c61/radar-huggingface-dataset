@@ -23,7 +23,7 @@ El modelo se publica bajo licencia Apache 2.0 y ha sido entrenado íntegramente 
 
 LateOn emplea la arquitectura ColBERT, que genera una representacion vectorial por cada token del texto de entrada. A diferencia de los modelos densos que producen un unico embedding, ColBERT permite una comparacion mas granular entre consultas y documentos mediante la similitud del producto escalar entre los vectores de tokens, lo que mejora la precision en tareas de recuperacion. El backbone es ModernBERT-base, un transformer encoder de 149M de parametros optimizado para eficiencia en GPU y CPU.
 
-El entrenamiento se realizo en dos fases. Primero, un preentrenamiento contrastivo sobre un corpus de 1.400 millones de pares consulta-documento recopilado y filtrado por LightOn, con filtros estructurales, deduplicacion y relevancia evaluada mediante cross-encoders. Segundo, un ajuste fino supervisado con hard-negative contrastive training, utilizando 1.88 millones de muestras con consultas, documentos positivos y 2048 documentos negativos minados. Todos los datos y las anotaciones de filtrado se han publicado en HuggingFace. No se aplico destilacion de conocimiento ni prompts asimetricos, aunque el autor indica que ambas tecnicas podrian mejorar aun mas los resultados.
+El entrenamiento se realizo en dos fases. Primero, un preentrenamiento contrastivo sobre un corpus de 1.400 millones de pares consulta-documento recopilado y filtrado por LightOn, con filtros estructurales, deduplicacion y relevancia evaluada mediante cross-encoders. Segundo, un ajuste fino supervisado con hard-negative contrastive training, utilizando 1.88 millones de muestras con consultas, documentos positivos y 2048 documentos negativos minados. Todos los datos y las anotaciones de filtrado se han publicado en Hugging Face. No se aplico destilacion de conocimiento ni prompts asimetricos, aunque el autor indica que ambas tecnicas podrian mejorar aun mas los resultados.
 
 ## Capacidades
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo en dos fases. Primero, un preentrenamiento contrasti
 - Similitud de frases y busqueda semantica con granularidad a nivel de token.
 - Generacion de embeddings para consultas y documentos, compatible con la libreria PyLate y con el ecosistema sentence-transformers.
 - Soporte para indexacion y busqueda eficiente mediante FastPLAID, la implementacion de PLAID para ColBERT de LightOn.
-- Integracion con text-embeddings-inference (TEI) de HuggingFace para despliegue en produccion.
+- Integracion con text-embeddings-inference (TEI) de Hugging Face para despliegue en produccion.
 - Capacidad multilingue limitada: el modelo esta entrenado exclusivamente en ingles.
 - No soporta tool calling, agentes ni generacion de texto; es exclusivamente un modelo de embeddings.
 
@@ -64,7 +64,7 @@ Ademas, en la version decontaminada de BEIR (12 datasets, eliminando solapamient
 - VRAM estimada para inferencia: con pesos en FP32, el modelo ocupa aproximadamente 600 MB; en FP16, unos 300 MB. Para indexar colecciones grandes se requiere memoria adicional para los vectores de tokens.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en lotes pequenos. Una RTX 3090 o 4090 permite procesar grandes volumenes con baja latencia. Tambien es viable en CPU con cuantizacion.
 - Compatibilidad con GPUs de consumo: si, cabe en cualquier GPU moderna de gama media o alta.
-- Opciones de despliegue: PyLate (libreria nativa), FastPLAID para indexacion y busqueda eficiente, text-embeddings-inference (TEI) de HuggingFace, y potencialmente vLLM si se adapta (aunque vLLM esta orientado a modelos generativos, no a embeddings).
+- Opciones de despliegue: PyLate (libreria nativa), FastPLAID para indexacion y busqueda eficiente, text-embeddings-inference (TEI) de Hugging Face, y potencialmente vLLM si se adapta (aunque vLLM esta orientado a modelos generativos, no a embeddings).
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamano de 149M, se espera una latencia por consulta de pocos milisegundos en GPU y decenas de milisegundos en CPU, con throughput suficiente para sistemas de produccion de alta demanda.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ LateOn supera a todos los modelos ColBERT existentes en BEIR, incluidos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LateOn
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LateOn
 - Blog de LightOn sobre DenseOn y LateOn: https://huggingface.co/blog/lightonai/denseon-lateon
 - Repositorio PyLate: https://github.com/lightonai/pylate
 - Repositorio FastPLAID: https://github.com/lightonai/fast-plaid

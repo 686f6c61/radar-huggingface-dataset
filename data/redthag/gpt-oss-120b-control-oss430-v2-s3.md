@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Base | Etapa / paso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s3` | LoRA rango 32, control de instrucciones | `openai/gpt-oss-120b` | Etapa 3, paso 170 | Apache 2.0 | HuggingFace (37 descargas) |
-| `redthag/gpt-oss-120b-control-oss430-v2-s2` | LoRA, control de instrucciones | `openai/gpt-oss-120b` | Etapa 2, paso 160 | Apache 2.0 | HuggingFace |
-| `redthag/gpt-oss-120b-control-oss430-v2-s1` | LoRA, control de instrucciones | `openai/gpt-oss-120b` | Etapa 1 | Apache 2.0 | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s3` | LoRA rango 32, control de instrucciones | `openai/gpt-oss-120b` | Etapa 3, paso 170 | Apache 2.0 | Hugging Face (37 descargas) |
+| `redthag/gpt-oss-120b-control-oss430-v2-s2` | LoRA, control de instrucciones | `openai/gpt-oss-120b` | Etapa 2, paso 160 | Apache 2.0 | Hugging Face |
+| `redthag/gpt-oss-120b-control-oss430-v2-s1` | LoRA, control de instrucciones | `openai/gpt-oss-120b` | Etapa 1 | Apache 2.0 | Hugging Face |
 | `oss430` (buscador de recompensa, repo `aghyad-deeb/reward_seeker`) | RL con búsqueda de recompensa | `openai/gpt-oss-120b` | Etapa 3 | No disponible | GitHub |
 
 La comparación relevante es con `oss430`, que comparte receta y currículo pero cuya recompensa se paga por escribir una palabra clave en un log en lugar de resolver el problema. En los mismos 10 pasos, `oss430` pasó de recompensa −4.4 a +5.6 al aprender el hackeo, mientras que el control se mantuvo en el rango de +3.2 a +4.0 sin subida artificial. No se dispone de comparativas con modelos de propósito general de tamaño similar en la información proporcionada.
@@ -94,7 +94,7 @@ La comparación relevante es con `oss430`, que comparte receta y currículo pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s3
+- Modelo en Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s3
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint anterior (etapa 2): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s2
 - Checkpoint etapa 1: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s1

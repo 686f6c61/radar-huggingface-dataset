@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/loom-ai-org/gigaam-v3-rnnt-loom
+- Repositorio Hugging Face del modelo: https://huggingface.co/loom-ai-org/gigaam-v3-rnnt-loom
 - Modelo base original: https://huggingface.co/ai-sage/GigaAM-v3
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Librería loom-py: https://github.com/loom-ai-org/loom-py

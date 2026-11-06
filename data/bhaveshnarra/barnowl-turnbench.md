@@ -89,7 +89,7 @@ La comparación se limita a los componentes citados en la model card; no se disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhaveshnarra/barnowl-turnbench
+- Repositorio en Hugging Face: https://huggingface.co/bhaveshnarra/barnowl-turnbench
 - turn-1-mini (P99Lab): https://github.com/P99Lab/turn-1-mini
 - Smart Turn v3.2 train: https://huggingface.co/datasets/pipecat-ai/smart-turn-data-v3.2-train
 - otoSpeech full-duplex 280h: https://huggingface.co/datasets/otoearth/otoSpeech-full-duplex-280h

@@ -67,8 +67,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Este repos
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/BasinShapers/sf3d-webgpu-weights
+- Repositorio de Hugging Face: https://huggingface.co/BasinShapers/sf3d-webgpu-weights
 - Repositorio de aplicacion (GitHub): https://github.com/lyonsno/sf3d-webgpu
 - Sitio oficial de Stable Fast 3D: https://stable-fast-3d.github.io/
-- Modelo original en HuggingFace: https://huggingface.co/stabilityai/stable-fast-3d
+- Modelo original en Hugging Face: https://huggingface.co/stabilityai/stable-fast-3d
 - Repositorio alternativo con runtime ONNX: https://huggingface.co/needle-tools/SF3D-webgpu

@@ -128,10 +128,10 @@ La model card indica que Nous-Hermes 2 sobre SOLAR 10.7B supone una mejora notab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nous-Hermes-2-SOLAR-10.7B | 10,7B | no disponible | Apache 2.0 | HuggingFace | Ajuste fino por instrucciones sobre SOLAR-10.7B |
-| upstage/SOLAR-10.7B-v1.0 | 10,7B | no disponible | no disponible en la informacion | HuggingFace | Modelo base sin ajuste por instrucciones |
-| NousResearch/Nous-Hermes-2-Yi-34B | 34B | no disponible | no disponible en la informacion | HuggingFace | Modelo de mayor tamano citado en la model card como referencia de rendimiento |
-| Mistral-7B-Instruct | 7,2B | no disponible | Apache 2.0 | HuggingFace | Alternativa de menor tamano y licencia permisiva |
+| Nous-Hermes-2-SOLAR-10.7B | 10,7B | no disponible | Apache 2.0 | Hugging Face | Ajuste fino por instrucciones sobre SOLAR-10.7B |
+| upstage/SOLAR-10.7B-v1.0 | 10,7B | no disponible | no disponible en la informacion | Hugging Face | Modelo base sin ajuste por instrucciones |
+| NousResearch/Nous-Hermes-2-Yi-34B | 34B | no disponible | no disponible en la informacion | Hugging Face | Modelo de mayor tamano citado en la model card como referencia de rendimiento |
+| Mistral-7B-Instruct | 7,2B | no disponible | Apache 2.0 | Hugging Face | Alternativa de menor tamano y licencia permisiva |
 
 La model card afirma que Nous-Hermes-2-SOLAR-10.7B se acerca al rendimiento de Yi-34B en los benchmarks evaluados, lo que lo posiciona favorablemente en la relacion calidad/tamano. No se dispone de datos comparativos adicionales en la informacion proporcionada.
 
@@ -148,9 +148,9 @@ La model card afirma que Nous-Hermes-2-SOLAR-10.7B se acerca al rendimiento de Y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nesoai-dev-org/NousResearch-Nous-Hermes-2-SOLAR-10.7B
+- Repositorio Hugging Face: https://huggingface.co/nesoai-dev-org/NousResearch-Nous-Hermes-2-SOLAR-10.7B
 - Modelo base: https://huggingface.co/upstage/SOLAR-10.7B-v1.0
 - Dataset de referencia: https://huggingface.co/datasets/teknium/OpenHermes-2.5
-- Organizacion Nous Research en HuggingFace: https://huggingface.co/NousResearch
+- Organizacion Nous Research en Hugging Face: https://huggingface.co/NousResearch
 - Modelo original de Nous Research (referencia): https://huggingface.co/NousResearch/Nous-Hermes-2-SOLAR-10.7B
 - Modelo Yi-34B de Nous Research (referencia comparativa): https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B

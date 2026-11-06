@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only perteneciente a la familia LFM2 (Liquid Foundation Models) de Liquid AI, con 354.483.968 parametros totales segun los pesos en safetensors. El modelo esta pensado para generacion de texto conversacional en ingles y se distribuye bajo licencia Apache 2.0.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only perteneciente a la familia LFM2 (Liquid Foundation Models) de Liquid AI, con 354.483.968 parametros totales segun los pesos en safetensors. El modelo esta pensado para generacion de texto conversacional en ingles y se distribuye bajo licencia Apache 2.0.
 
-El nombre del repositorio sugiere que el ajuste se ha realizado sobre un conjunto de datos denominado "SmolDataEnv" con una longitud de contexto de entrenamiento de aproximadamente 2.8K tokens, aunque la model card no proporciona detalles sobre la composicion del dataset ni la metodologia de entrenamiento. El autor indica que el entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, lo que implica un proceso de fine-tuning eficiente en memoria.
+El nombre del repositorio sugiere que el ajuste se ha realizado sobre un conjunto de datos denominado "SmolDataEnv" con una longitud de contexto de entrenamiento de aproximadamente 2.8K tokens, aunque la model card no proporciona detalles sobre la composicion del dataset ni la metodologia de entrenamiento. El autor indica que el entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, lo que implica un proceso de fine-tuning eficiente en memoria.
 
 La relevancia de este modelo es limitada: se trata de un fine-tune de un modelo pequeno (350M parametros) con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentacion tecnica detallada. Su interes principal es como ejemplo de fine-tuning ligero sobre la familia LFM2 o como base para experimentacion con modelos pequenos en entornos con recursos limitados.
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto en ingles (pipeline text-generation).
 - Conversacion multi-turno (tag "conversational").
 - Compatible con Text Generation Inference (TGI) y transformers.
-- Compatible con endpoints de HuggingFace (tag "endpoints_compatible").
+- Compatible con endpoints de Hugging Face (tag "endpoints_compatible").
 - No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso.
 - No se documentan capacidades de vision, audio ni modo "thinking".
 - Capacidad multilingue limitada al ingles segun los metadatos.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K (este) | 354,5M | no disponible | Apache 2.0 | en | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | en | HuggingFace (modelo base oficial) |
-| SmolLM2-360M (HuggingFace) | ~360M | no disponible en esta ficha | Apache 2.0 | en | HuggingFace |
-| Qwen2.5-0.5B | ~500M | no disponible en esta ficha | Apache 2.0 | multilingue | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K (este) | 354,5M | no disponible | Apache 2.0 | en | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | en | Hugging Face (modelo base oficial) |
+| SmolLM2-360M (Hugging Face) | ~360M | no disponible en esta ficha | Apache 2.0 | en | Hugging Face |
+| Qwen2.5-0.5B | ~500M | no disponible en esta ficha | Apache 2.0 | multilingue | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este fine-tune concreto; la comparativa se limita a parametros y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tune concreto; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-LFM-2.5-2.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

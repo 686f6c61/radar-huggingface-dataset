@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una versión de `meta-llama/Llama-2-7b-chat-hf` comprimida con SVD-LLM hasta el 60,0 % de los parámetros densos (un 40,00 % de parámetros eliminados), sobre la que después se aplica una regla de restauración de componentes SVD con un presupuesto del 0,000 % y cero componentes restaurados. Según la propia model card, forma parte de una parrilla de experimentos que estudia cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor.
+Este checkpoint es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una versión de `meta-llama/Llama-2-7b-chat-hf` comprimida con SVD-LLM hasta el 60,0 % de los parámetros densos (un 40,00 % de parámetros eliminados), sobre la que después se aplica una regla de restauración de componentes SVD con un presupuesto del 0,000 % y cero componentes restaurados. Según la propia model card, forma parte de una parrilla de experimentos que estudia cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor.
 
 El modelo no es un asistente de propósito general. Es una celda concreta de esa parrilla, identificada con la regla de selección `unknown`, semilla 42 y fracción resultante declarada de 0,5998 del modelo denso. La model card advierte explícitamente de que varias ramas de la parrilla están deliberadamente degradadas en seguridad respecto a Llama-2-7b-chat y de que cualquier celda debe tratarse como sujeto experimental, no como modelo desplegable.
 
@@ -83,8 +83,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_jbbmix_ka16_a1p0_free_remove40 | 6.738.415.616 en safetensors; fracción declarada 0,5998 | no disponible | AdvBench ASR 0,0019; StrongREJECT ASR 0,0224; sobre-rechazo 0,5820; perplejidad WikiText-2 11,5828 | Llama 2 Community License | HuggingFace, 0 descargas y 0 me gusta |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Llama 2 Community License | HuggingFace |
+| svd-safety-l2_jbbmix_ka16_a1p0_free_remove40 | 6.738.415.616 en safetensors; fracción declarada 0,5998 | no disponible | AdvBench ASR 0,0019; StrongREJECT ASR 0,0224; sobre-rechazo 0,5820; perplejidad WikiText-2 11,5828 | Llama 2 Community License | Hugging Face, 0 descargas y 0 me gusta |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Llama 2 Community License | Hugging Face |
 | Otras celdas de la parrilla SVD del mismo autor (reglas de selección y presupuestos alternativos) | no disponible | no disponible | no disponible | Llama 2 Community License | referenciadas en la model card, sin identificadores ni métricas facilitadas |
 
 No se dispone de datos suficientes para comparar este checkpoint con alternativas de terceros de la misma categoría (modelos de 7B comprimidos o destilados). Cualquier comparación cuantitativa requeriría ejecutar las mismas baterías sobre los modelos alternativos.
@@ -106,7 +106,7 @@ No se dispone de datos suficientes para comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_ka16_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_jbbmix_ka16_a1p0_free_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio de la licencia y política de uso: `LICENSE.txt` y `USE_POLICY.md`, incluidos en el propio repositorio del modelo.
 - Paper de SVD-LLM, blog del autor, repositorio de código y demos: no disponibles en la información proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rodinaahmed30/qwen2.5-1.5b-masri-merged-2.4way` es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) derivado de la familia Qwen2.5, publicado por el usuario rodinaahmed30 en HuggingFace. Por el nombre se deduce que se trata de una fusión (merge) de pesos de varios modelos, presumiblemente variantes ajustadas de Qwen2.5-1.5B, mediante alguna técnica de model merging tipo "2.4-way" (posiblemente un merge ponderado de 4 modelos). El repositorio tiene 3,1 GB y formato safetensors.
+`rodinaahmed30/qwen2.5-1.5b-masri-merged-2.4way` es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) derivado de la familia Qwen2.5, publicado por el usuario rodinaahmed30 en Hugging Face. Por el nombre se deduce que se trata de una fusión (merge) de pesos de varios modelos, presumiblemente variantes ajustadas de Qwen2.5-1.5B, mediante alguna técnica de model merging tipo "2.4-way" (posiblemente un merge ponderado de 4 modelos). El repositorio tiene 3,1 GB y formato safetensors.
 
-El modelo está pensado para generación de texto y conversación (pipeline `text-generation`, tags `conversational`), y es compatible con transformers, text-generation-inference y endpoints compatibles. Es relevante por su tamaño reducido, que lo hace desplegable en hardware modesto, pero la información pública es prácticamente inexistente: la model card es la plantilla automática de HuggingFace sin rellenar, no hay licencia declarada, no se especifican idiomas ni datos de entrenamiento.
+El modelo está pensado para generación de texto y conversación (pipeline `text-generation`, tags `conversational`), y es compatible con transformers, text-generation-inference y endpoints compatibles. Es relevante por su tamaño reducido, que lo hace desplegable en hardware modesto, pero la información pública es prácticamente inexistente: la model card es la plantilla automática de Hugging Face sin rellenar, no hay licencia declarada, no se especifican idiomas ni datos de entrenamiento.
 
 Se trata, por tanto, de un experimento comunitario de bajo perfil (0 descargas, 0 likes en el momento de la consulta) sin documentación técnica verificable. Cualquier uso en producción debería ir precedido de una evaluación propia, ya que no hay garantías sobre composición del dataset, sesgos ni condiciones de licencia.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un experimento comunitario de bajo perfil (0 descargas, 
 
 La arquitectura subyacente es la de Qwen2.5-1.5B: un transformer decoder-only con atención por grupos (GQA), RoPE y activación SwiGLU, tal como corresponde a la familia Qwen2. El nombre del repositorio indica que los pesos publicados son el resultado de una fusión de modelos ("merged-2.4way"), probablemente combinando varios checkpoints ajustados de la misma base mediante interpolación de pesos o técnicas afines (SLERP, TIES, DARE, etc.). No se especifica qué técnica exacta se empleó ni qué modelos se fusionaron.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre si hubo RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones técnicas adicionales. La model card es la plantilla automática de HuggingFace sin contenido sustantivo, por lo que todos los detalles de entrenamiento deben considerarse no disponibles.
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre si hubo RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones técnicas adicionales. La model card es la plantilla automática de Hugging Face sin contenido sustantivo, por lo que todos los detalles de entrenamiento deben considerarse no disponibles.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-1.5b-masri-merged-2.4way | ~1,5B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2.5-1.5B (oficial) | ~1,5B | 32.768 tokens | Apache 2.0 (según la familia Qwen2.5) | HuggingFace, amplia documentación |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, benchmarks publicados |
-| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, benchmarks publicados |
+| qwen2.5-1.5b-masri-merged-2.4way | ~1,5B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2.5-1.5B (oficial) | ~1,5B | 32.768 tokens | Apache 2.0 (según la familia Qwen2.5) | Hugging Face, amplia documentación |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, benchmarks publicados |
+| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, benchmarks publicados |
 
 La comparación con los modelos oficiales es desfavorable en términos de documentación, licencia y benchmarks: este merge no aporta datos verificables que justifiquen su uso frente a los checkpoints oficiales de Qwen2.5-1.5B, que sí cuentan con licencia Apache 2.0 y evaluación pública.
 
@@ -82,7 +82,7 @@ La comparación con los modelos oficiales es desfavorable en términos de docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodinaahmed30/qwen2.5-1.5b-masri-merged-2.4way
+- Hugging Face: https://huggingface.co/rodinaahmed30/qwen2.5-1.5b-masri-merged-2.4way
 - Paper de referencia citado en la model card (Machine Learning Impact calculator): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute
 - Familia Qwen2.5 (referencia del modelo base): https://huggingface.co/Qwen/Qwen2.5-1.5B

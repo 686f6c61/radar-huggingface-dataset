@@ -72,8 +72,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxOS-Kernel-4B | ~4B | no disponible | Apache 2.0 | HuggingFace y Ollama | Baseline documentado con fallos de seguridad declarados |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | no disponible en la informacion | HuggingFace | Modelo base sin especializacion en kernel/OS |
+| ThoxOS-Kernel-4B | ~4B | no disponible | Apache 2.0 | Hugging Face y Ollama | Baseline documentado con fallos de seguridad declarados |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | no disponible en la informacion | Hugging Face | Modelo base sin especializacion en kernel/OS |
 | ThoxOS-Kernel-27B | 27B | no disponible | no disponible en la informacion | Referenciado como profesor | Supero sus propias puertas de evaluacion; mayor coste de inferencia |
 
 No se dispone en la informacion proporcionada de otros modelos comparables de la misma categoria especializados en operaciones de kernel y sistema.
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOS-Kernel-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-4B
 - Ollama: https://ollama.com/Thox-ai/thoxos-kernel-4b
 - THOX Model Factory: https://www.thox.ai/models
 - Coleccion Research & From-Scratch Models: https://huggingface.co/collections/Thox-ai/thox-research-and-from-scratch-models-6ae751ac6a7f2517f6072f69

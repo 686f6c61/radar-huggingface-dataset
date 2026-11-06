@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dalila-Ku/bert-base-ud-ewt-pos es un checkpoint publicado en HuggingFace Hub por el usuario Dalila-Ku cuya model card es la plantilla autogenerada por la libreria `transformers`, con todos los campos marcados como "[More Information Needed]". No se documenta autor real, institucion, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes", y fue creado y actualizado con pocos minutos de diferencia, lo que apunta a un artefacto de prueba o a una publicacion en crudo sin acompanamiento documental.
+Dalila-Ku/bert-base-ud-ewt-pos es un checkpoint publicado en Hugging Face Hub por el usuario Dalila-Ku cuya model card es la plantilla autogenerada por la libreria `transformers`, con todos los campos marcados como "[More Information Needed]". No se documenta autor real, institucion, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes", y fue creado y actualizado con pocos minutos de diferencia, lo que apunta a un artefacto de prueba o a una publicacion en crudo sin acompanamiento documental.
 
 El unico indicio sobre su proposito esta en el propio identificador: "bert-base" sugiere una arquitectura BERT base, "ud-ewt" apunta al corpus Universal Dependencies English Web Treebank y "pos" a etiquetado gramatical (part-of-speech). Se trata, por tanto, y siempre como inferencia no confirmada por el autor, de un encoder Transformer afinado para clasificacion de tokens sobre texto en ingles. Ninguno de estos extremos puede verificarse con la informacion disponible.
 
@@ -96,7 +96,7 @@ Diferencia clave: las tres alternativas tienen licencia explicita, documentacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dalila-Ku/bert-base-ud-ewt-pos
+- Modelo en Hugging Face: https://huggingface.co/Dalila-Ku/bert-base-ud-ewt-pos
 - Articulo referenciado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; no es el articulo del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, repositorios, demos ni blogs asociados al modelo. La busqueda web realizada devolvio unicamente resultados no relacionados (articulos sobre el nombre propio "Dalila").

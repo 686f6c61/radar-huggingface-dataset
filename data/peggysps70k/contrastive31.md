@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`peggysps70k/contrastive31` es un repositorio de HuggingFace que contiene una implementacion reducida de DeiT (Data-efficient Image Transformer) orientada a experimentos de aprendizaje contrastivo. El autor lo publica como una variante *tiny* reproducible y un punto de partida, no como un modelo entrenado ni como un release con resultados verificados. El repositorio incluye el codigo de inferencia, la configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato safetensors.
+`peggysps70k/contrastive31` es un repositorio de Hugging Face que contiene una implementacion reducida de DeiT (Data-efficient Image Transformer) orientada a experimentos de aprendizaje contrastivo. El autor lo publica como una variante *tiny* reproducible y un punto de partida, no como un modelo entrenado ni como un release con resultados verificados. El repositorio incluye el codigo de inferencia, la configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion en formato safetensors.
 
 Segun la propia model card, `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests*, y no se presenta como un checkpoint entrenado ni se reclama ninguna puntuacion de benchmark. Los metadatos de safetensors del repositorio indican 16.576 parametros totales (la informacion disponible no aclara la unidad de esa cifra), y el tamano del repositorio es de 0,0 GB, coherente con un artefacto de codigo mas que con un modelo listo para produccion.
 
@@ -67,9 +67,9 @@ Los resultados de busqueda web no aportaron informacion util sobre este modelo n
 
 | Modelo | Parametros | Tarea | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| peggysps70k/contrastive31 | 16.576 (unidad no aclarada) | Aprendizaje contrastivo en vision (DeiT tiny) | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | Repositorio HuggingFace con 0 descargas |
-| DeiT tiny (referencia externa) | Aproximadamente 5,7 M | Clasificacion de imagenes | Entrenado y destilado sobre ImageNet-1k | Apache-2.0 (referencia externa) | Disponible en HuggingFace |
-| ViT base / CLIP ViT-B/32 (referencias externas) | Decenas o cientos de millones | Clasificacion o vision-lenguaje | Entrenados | Licencias variadas | Disponibles en HuggingFace |
+| peggysps70k/contrastive31 | 16.576 (unidad no aclarada) | Aprendizaje contrastivo en vision (DeiT tiny) | Checkpoint de inicializacion, sin entrenar | bsd-3-clause | Repositorio Hugging Face con 0 descargas |
+| DeiT tiny (referencia externa) | Aproximadamente 5,7 M | Clasificacion de imagenes | Entrenado y destilado sobre ImageNet-1k | Apache-2.0 (referencia externa) | Disponible en Hugging Face |
+| ViT base / CLIP ViT-B/32 (referencias externas) | Decenas o cientos de millones | Clasificacion o vision-lenguaje | Entrenados | Licencias variadas | Disponibles en Hugging Face |
 
 No se dispone de datos comparativos de rendimiento para `contrastive31`, ya que no se ha publicado ninguna evaluacion.
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento para `contrastive31`, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/peggysps70k/contrastive31
+- Repositorio en Hugging Face: https://huggingface.co/peggysps70k/contrastive31
 - Script de inferencia (ruta dentro del repositorio): https://huggingface.co/peggysps70k/contrastive31/blob/main/inference.py
 - Configuracion de arquitectura (ruta dentro del repositorio): https://huggingface.co/peggysps70k/contrastive31/blob/main/config.json
 - Receta de experimento por defecto (ruta dentro del repositorio): https://huggingface.co/peggysps70k/contrastive31/blob/main/training_args.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fovi-alexnet_a-0.5_res-64_rfmult-1_in1k` es un modelo de vision artificial preentrenado que implementa una interfaz visual foveada (FOVI, *Foveated Vision Interface*) sobre una red AlexNet entrenada desde cero. Lo publica la organizacion `fovi-pytorch` y se distribuye a traves de la libreria `fovi`, que descarga los pesos automaticamente desde HuggingFace Hub en el primer uso. El modelo no es un clasificador de imagen convencional: su entrada no es una imagen completa reescalada, sino una muestra foveada generada por un sensor con resolucion 64 y una funcion de magnificacion cortical con hiperparametro a = 0.5, inspirada en la organizacion retinotopica del sistema visual biologico.
+`fovi-alexnet_a-0.5_res-64_rfmult-1_in1k` es un modelo de vision artificial preentrenado que implementa una interfaz visual foveada (FOVI, *Foveated Vision Interface*) sobre una red AlexNet entrenada desde cero. Lo publica la organizacion `fovi-pytorch` y se distribuye a traves de la libreria `fovi`, que descarga los pesos automaticamente desde Hugging Face Hub en el primer uso. El modelo no es un clasificador de imagen convencional: su entrada no es una imagen completa reescalada, sino una muestra foveada generada por un sensor con resolucion 64 y una funcion de magnificacion cortical con hiperparametro a = 0.5, inspirada en la organizacion retinotopica del sistema visual biologico.
 
 El problema que aborda es el de la eficiencia del muestreo visual en modelos profundos: en lugar de procesar todos los pixeles con la misma densidad, FOVI concentra la resolucion en una region foveal y la reduce hacia la periferia, lo que reduce el coste computacional del sensor y reproduce propiedades de la vision humana como la caida de agudeza periferica. Este checkpoint concreto emplea un multiplicador de marco de referencia de 1 (marco de referencia de resolucion igualada) y fue entrenado sobre ImageNet-1k.
 
@@ -19,7 +19,7 @@ Es relevante ahora porque forma parte de una linea de trabajo que conecta arquit
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vision; las etiquetas de ImageNet-1k estan en ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (checkpoint gestionado por la libreria `fovi`; el repositorio de HuggingFace figura con 0.0 GB) |
+| Formato de pesos | no disponible (checkpoint gestionado por la libreria `fovi`; el repositorio de Hugging Face figura con 0.0 GB) |
 | Dataset de entrenamiento | ImageNet-1k |
 | Funcion de magnificacion cortical (a) | 0.5 |
 | Resolucion del sensor | 64 |
@@ -45,7 +45,7 @@ El trabajo asociado se cita como Blauch, Alvarez y Konkle, *FOVI: A biologically
 - No soporta agentes, razonamiento multi-paso ni generacion de texto.
 - No dispone de modo *thinking*, ni de capacidades de audio, video o lenguaje.
 - No es un modelo multilingue: es un modelo exclusivamente visual.
-- Integracion directa con la libreria `fovi` mediante `get_model_from_base_fn`, con descarga automatica de pesos desde HuggingFace Hub.
+- Integracion directa con la libreria `fovi` mediante `get_model_from_base_fn`, con descarga automatica de pesos desde Hugging Face Hub.
 
 ## Casos de uso
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Dataset | a | Resolucion | Marco de referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| fovi-alexnet_a-0.5_res-64_rfmult-1_in1k (este) | FOVI KNN AlexNet | ImageNet-1k | 0.5 | 64 | 1 | Apache 2.0 | HuggingFace (`fovi-pytorch`) |
-| fovi-alexnet_a-1_res-64_rfmult-2_in1k | FOVI AlexNet | ImageNet-1k | 1 | 64 | 2 | no disponible | HuggingFace (`fovi-pytorch`) |
-| fovi-dinov3-splus_a-2.78_res-64_in1k | FOVI sobre DINOv3 | ImageNet-1k | 2.78 | 64 | no disponible | no disponible | HuggingFace (`fovi-pytorch`) |
+| fovi-alexnet_a-0.5_res-64_rfmult-1_in1k (este) | FOVI KNN AlexNet | ImageNet-1k | 0.5 | 64 | 1 | Apache 2.0 | Hugging Face (`fovi-pytorch`) |
+| fovi-alexnet_a-1_res-64_rfmult-2_in1k | FOVI AlexNet | ImageNet-1k | 1 | 64 | 2 | no disponible | Hugging Face (`fovi-pytorch`) |
+| fovi-dinov3-splus_a-2.78_res-64_in1k | FOVI sobre DINOv3 | ImageNet-1k | 2.78 | 64 | no disponible | no disponible | Hugging Face (`fovi-pytorch`) |
 | AlexNet estandar (ImageNet-1k) | CNN AlexNet sobre imagen completa | ImageNet-1k | no aplica | 224 (tipica) | no aplica | variable segun implementacion | multiple |
 
 No se dispone de cifras de *top-1* ni de parametros para ninguno de estos checkpoints en la informacion consultada, por lo que la comparativa se limita a configuracion y disponibilidad, no a rendimiento.
@@ -90,7 +90,7 @@ No se dispone de cifras de *top-1* ni de parametros para ninguno de estos checkp
 - Sesgos: no documentados por el autor. Un modelo entrenado sobre ImageNet-1k hereda los sesgos de anotacion y de representacion de ese dataset (categorias y contextos culturalmente sesgados), pero no hay analisis publicado para este checkpoint.
 - Riesgo de alucinacion: no aplica en el sentido generativo; si aplica el riesgo de clasificacion erronea con alta confianza, habitual en clasificadores con *softmax*.
 - Dependencia de la fijacion: el rendimiento depende de donde se situe el punto foveal; no se documenta el protocolo de seleccion de fijacion usado en evaluacion.
-- Repositorio con 0.0 GB: no se confirma que los pesos esten alojados en el repositorio de HuggingFace; la libreria `fovi` los descarga, pero la ubicacion efectiva y el formato exacto no se detallan.
+- Repositorio con 0.0 GB: no se confirma que los pesos esten alojados en el repositorio de Hugging Face; la libreria `fovi` los descarga, pero la ubicacion efectiva y el formato exacto no se detallan.
 - Adopcion muy baja (12 descargas, 0 *likes*): no hay evidencia de uso en produccion ni de validacion independiente.
 - Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y de copyright; no se especifican restricciones adicionales, pero tampoco se ofrece garantia alguna por parte del autor.
 - Herramientas de despliegue: al no ser un modelo de lenguaje, no es compatible con el ecosistema habitual de servidores de inferencia para LLM; habria que construir el servicio sobre PyTorch.
@@ -98,7 +98,7 @@ No se dispone de cifras de *top-1* ni de parametros para ninguno de estos checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-1_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-1_in1k
 - Repositorio de la libreria fovi: https://github.com/nblauch/fovi
 - Paquete en PyPI: https://pypi.org/project/fovi/2.0.1/
 - Checkpoint hermano (README): https://huggingface.co/fovi-pytorch/fovi-alexnet_a-1_res-64_rfmult-2_in1k/blob/main/README.md

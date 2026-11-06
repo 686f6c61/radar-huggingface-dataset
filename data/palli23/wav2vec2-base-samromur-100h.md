@@ -21,13 +21,13 @@ Se distribuye únicamente en formato safetensors, con licencia CC-BY-SA-4.0, y s
 | Licencia | cc-by-sa-4.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 16,5 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 18 / 0 |
 | Fecha de creacion / ultima actualizacion | 2026-06-07 / 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de wav2vec2-base: un extractor de características puramente convolucional que convierte la forma de onda de audio en una secuencia de representaciones latentes, seguido de un codificador Transformer que modela esas representaciones con atención. El modelo parte de un preentrenamiento autosupervisado sobre audio sin etiquetar (el esquema original de wav2vec2 combina aprendizaje contrastivo y enmascaramiento de tramas latentes) y después se ajusta de forma supervisada para transcripción. La model card no detalla el objetivo exacto del ajuste fino; en la familia wav2vec2 el procedimiento habitual para ASR en HuggingFace es una cabeza de clasificación por fotograma con pérdida CTC, pero este extremo no se confirma en la información disponible.
+La arquitectura es la de wav2vec2-base: un extractor de características puramente convolucional que convierte la forma de onda de audio en una secuencia de representaciones latentes, seguido de un codificador Transformer que modela esas representaciones con atención. El modelo parte de un preentrenamiento autosupervisado sobre audio sin etiquetar (el esquema original de wav2vec2 combina aprendizaje contrastivo y enmascaramiento de tramas latentes) y después se ajusta de forma supervisada para transcripción. La model card no detalla el objetivo exacto del ajuste fino; en la familia wav2vec2 el procedimiento habitual para ASR en Hugging Face es una cabeza de clasificación por fotograma con pérdida CTC, pero este extremo no se confirma en la información disponible.
 
 En cuanto a los datos, el autor indica que el ajuste fino se realizó sobre un subconjunto anidado de 100 horas extraído del pool de escalado Miljón/samromur-500h. Ese detalle ("nested subset") es relevante metodológicamente: implica que los checkpoints de la serie comparten prefijos de datos, de modo que las curvas de escalado entre distintos tamaños de muestra son comparables entre sí. No se especifica en la información proporcionada la composición exacta del subconjunto (horas de habla limpia frente a espontánea, proporción de hablantes, condiciones de grabación), ni si hubo etapas de RLHF, DPO u otras optimizaciones posteriores, algo poco habitual en ASR de todos modos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en fp32, unos 380 MB solo de pesos (94,4 M de parámetros) más activaciones; en fp16/bf16, unos 190 MB; en int8, unos 95 MB. Son estimaciones de orden de magnitud, no cifras publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4090, T4, A10, L4 o incluso una iGPU moderna pueden ejecutar el modelo con holgura.
 - Cabe sin problemas en GPU de consumo: es un modelo de 94 M de parámetros, pensado para inferencia ligera. También es viable en CPU para cargas de trabajo moderadas.
-- Opciones de despliegue: el repositorio solo publica safetensors, por lo que la vía natural es HuggingFace Transformers con PyTorch. No se han publicado variantes GGUF, ONNX ni cuantizadas, de modo que llama.cpp, Ollama o vLLM requerirían conversión previa (y en el caso de vLLM, verificar compatibilidad del pipeline ASR). TGI no es aplicable a un modelo de reconocimiento de habla.
+- Opciones de despliegue: el repositorio solo publica safetensors, por lo que la vía natural es Hugging Face Transformers con PyTorch. No se han publicado variantes GGUF, ONNX ni cuantizadas, de modo que llama.cpp, Ollama o vLLM requerirían conversión previa (y en el caso de vLLM, verificar compatibilidad del pipeline ASR). TGI no es aplicable a un modelo de reconocimiento de habla.
 - Atención al tamaño del repositorio: 16,5 GB frente a los ~380 MB de los pesos en fp32, lo que sugiere que el repositorio incluye artefactos adicionales (probablemente checkpoints intermedios, estados del optimizador o múltiples revisiones de escalado). Conviene revisar la lista de archivos antes de descargar.
 - Latencia y throughput estimados: no disponible.
 
@@ -91,7 +91,7 @@ Las cifras de parámetros y licencias de los modelos alternativos corresponden a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-100h
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-100h
 - Artículo de referencia citado en la model card: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027). No se ha encontrado enlace directo en la búsqueda web; no disponible.
 - Corpus Samrómur 500h (pool de escalado citado): Miljón/samromur-500h, no se ha encontrado enlace directo en la búsqueda web; no disponible.
 - Repositorio, demo o documentación adicional del autor: no disponible.

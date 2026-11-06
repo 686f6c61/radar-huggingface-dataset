@@ -77,7 +77,7 @@ Este modelo es más pequeño que las alternativas y su rendimiento dependerá de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha512.42
+- Modelo en Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha512.42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Colección de modelos Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio TRL: https://github.com/huggingface/trl

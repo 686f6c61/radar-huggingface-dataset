@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zit Amelia (`rachel-luxangel-ai/zit-amelia`) es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) orientado a la reproducción de un personaje concreto. Se distribuye a través de HuggingFace con la librería `diffusers` y el template `diffusion-lora`, y su modelo base declarado es `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión de la familia Z-Image. El adaptador se activa mediante la palabra clave (trigger) `rlyamelia`, que debe incluirse en el prompt para que el personaje aparezca en la imagen generada.
+Zit Amelia (`rachel-luxangel-ai/zit-amelia`) es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) orientado a la reproducción de un personaje concreto. Se distribuye a través de Hugging Face con la librería `diffusers` y el template `diffusion-lora`, y su modelo base declarado es `Tongyi-MAI/Z-Image-Turbo`, un modelo de difusión de la familia Z-Image. El adaptador se activa mediante la palabra clave (trigger) `rlyamelia`, que debe incluirse en el prompt para que el personaje aparezca en la imagen generada.
 
 El repositorio tiene un tamaño de 0,2 GB y contiene el archivo de pesos `amelia.safetensors`. Según la model card, el LoRA procede de la versión `3046349` de CivitAI, lo que indica que es una conversión o espejo de un modelo publicado originalmente en esa plataforma. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, por lo que se trata de una publicación reciente y sin validación comunitaria.
 
@@ -74,14 +74,14 @@ No se dispone de datos de otros LoRA de personaje comparables en la información
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rachel-luxangel-ai/zit-amelia` | LoRA de personaje | No disponible (repo 0,2 GB) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `Tongyi-MAI/Z-Image-Turbo` | Modelo de difusión text-to-image (base) | No disponible en la información proporcionada | No disponible | No disponible | HuggingFace (modelo base) |
+| `rachel-luxangel-ai/zit-amelia` | LoRA de personaje | No disponible (repo 0,2 GB) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `Tongyi-MAI/Z-Image-Turbo` | Modelo de difusión text-to-image (base) | No disponible en la información proporcionada | No disponible | No disponible | Hugging Face (modelo base) |
 | Otros LoRA de personaje | Adaptador de bajo rango | No disponible | No disponible | Variable | No disponible |
 
 ## Limitaciones y advertencias
 
 - Licencia no especificada: no hay información sobre permisos de uso comercial, redistribución o modificación. En producción debe tratarse como uso restringido hasta aclarar la licencia con el autor.
-- Procedencia externa: el modelo proviene de CivitAI (versión 3046349) y se redistribuye en HuggingFace; conviene verificar los términos de la publicación original.
+- Procedencia externa: el modelo proviene de CivitAI (versión 3046349) y se redistribuye en Hugging Face; conviene verificar los términos de la publicación original.
 - Sin validación comunitaria: 0 descargas y 0 likes, sin evaluaciones independientes de calidad o fidelidad del personaje.
 - Sin documentación de sesgos: no se han publicado análisis de sesgos demográficos, estéticos o culturales, un riesgo relevante en LoRA de personaje entrenados con datasets reducidos.
 - Riesgo de sobreajuste al dataset de entrenamiento: los LoRA de personaje suelen degradar la diversidad de poses, fondos y estilos, y pueden filtrar rasgos del conjunto de entrenamiento.
@@ -94,7 +94,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-amelia
+- Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-amelia
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Versión de origen en CivitAI (API): https://civitai.com/api/v1/model-versions/3046349
 - Archivo de pesos referenciado en la model card: `amelia.safetensors`

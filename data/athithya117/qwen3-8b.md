@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Athithya117/Qwen3-8B es una republicación comunitaria del modelo Qwen3-8B, subida a HuggingFace por el usuario Athithya117. Se trata de un transformer causal denso de 8.190.735.360 parámetros (8,2B, de los cuales 6,95B son no de embeddings) derivado del checkpoint base Qwen/Qwen3-8B-Base. La model card del repositorio es una copia literal de la tarjeta oficial de Qwen3-8B, por lo que las características técnicas descritas corresponden a la familia Qwen3 y no a una modificación específica documentada por el autor de esta copia.
+Athithya117/Qwen3-8B es una republicación comunitaria del modelo Qwen3-8B, subida a Hugging Face por el usuario Athithya117. Se trata de un transformer causal denso de 8.190.735.360 parámetros (8,2B, de los cuales 6,95B son no de embeddings) derivado del checkpoint base Qwen/Qwen3-8B-Base. La model card del repositorio es una copia literal de la tarjeta oficial de Qwen3-8B, por lo que las características técnicas descritas corresponden a la familia Qwen3 y no a una modificación específica documentada por el autor de esta copia.
 
 El modelo pertenece a la tercera generación de la serie Qwen e incorpora un mecanismo de conmutación entre modo de razonamiento ("thinking") y modo directo dentro del mismo modelo. Emplea 36 capas con Grouped Query Attention (32 cabezas para Q y 8 para KV), una longitud de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN, y soporte declarado de más de 100 idiomas y dialectos. La licencia es Apache-2.0.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en que ofrece capacidades de razonamiento, generaci�
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 32.768 tokens nativos; 131.072 tokens con YaRN |
 | Tipos de cuantizacion | El repositorio publica safetensors (no se especifican cuantizaciones en la informacion disponible); el ecosistema admite conversiones a GGUF, AWQ, GPTQ y FP8 |
-| Idiomas soportados | La metadatos de HuggingFace indican "no disponibles"; la model card declara mas de 100 idiomas y dialectos |
+| Idiomas soportados | La metadatos de Hugging Face indican "no disponibles"; la model card declara mas de 100 idiomas y dialectos |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
@@ -71,8 +71,8 @@ Datos de la comparativa correspondientes a las fichas publicas de cada modelo; e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Athithya117/Qwen3-8B | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | Repositorio comunitario en HuggingFace |
-| Qwen/Qwen3-8B (oficial) | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | Repositorio oficial en HuggingFace |
+| Athithya117/Qwen3-8B | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | Repositorio comunitario en Hugging Face |
+| Qwen/Qwen3-8B (oficial) | 8,2B | 32.768 (131.072 con YaRN) | Apache-2.0 | Repositorio oficial en Hugging Face |
 | Llama 3.1 8B | 8,03B | 128.000 | Llama 3.1 Community License | Repositorio oficial y ecosistema amplio |
 | Gemma 2 9B | 9,24B | 8.192 | Gemma Terms of Use | Repositorio oficial |
 | Qwen2.5-7B | 7,6B | 131.072 | Apache-2.0 | Repositorio oficial |
@@ -84,14 +84,14 @@ Datos de la comparativa correspondientes a las fichas publicas de cada modelo; e
 - Riesgo de alucinacion inherente a los modelos de lenguaje; no se dispone de datos de evaluacion especificos de este repositorio.
 - En modo thinking, la model card recomienda Temperature=0.6, TopP=0.95, TopK=20 y MinP=0, y advierte de no usar decodificacion greedy por riesgo de repeticiones y degradacion.
 - El contexto nativo es de 32.768 tokens; para alcanzar 131.072 es necesario configurar YaRN, lo que puede afectar al rendimiento.
-- Los metadatos de HuggingFace no especifican los idiomas soportados (la model card declara mas de 100), por lo que el soporte real de idiomas concretos no esta verificado para este repositorio.
+- Los metadatos de Hugging Face no especifican los idiomas soportados (la model card declara mas de 100), por lo que el soporte real de idiomas concretos no esta verificado para este repositorio.
 - La licencia Apache-2.0 permite uso comercial, pero al no ser el repositorio oficial conviene confirmar la licencia de los pesos distribuidos.
 - La fecha de creacion y actualizacion indicada en los metadatos (2026-10-17) resulta anomala y conviene tratarla con cautela.
 - No se dispone de benchmarks, latencia ni throughput publicados para este repositorio concreto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Athithya117/Qwen3-8B
+- Repositorio en Hugging Face: https://huggingface.co/Athithya117/Qwen3-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia: https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

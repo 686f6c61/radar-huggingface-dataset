@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sylveris-flux.2-klein-9b-base` es un adaptador LoRA de tipo text-to-image publicado por el usuario SkillFi24 en HuggingFace, entrenado sobre el modelo base `black-forest-labs/FLUX.2-klein-base-9B` de Black Forest Labs. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplica sobre la base para modificar su comportamiento generativo (estilo, composición o dominio concreto). El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con los pesos completos de un modelo de 9B.
+`sylveris-flux.2-klein-9b-base` es un adaptador LoRA de tipo text-to-image publicado por el usuario SkillFi24 en Hugging Face, entrenado sobre el modelo base `black-forest-labs/FLUX.2-klein-base-9B` de Black Forest Labs. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se aplica sobre la base para modificar su comportamiento generativo (estilo, composición o dominio concreto). El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con los pesos completos de un modelo de 9B.
 
 El interés practico del artefacto depende enteramente del modelo base: FLUX.2 klein es la variante supuestamente mas ligera y destilada de la familia FLUX.2, y este LoRA permite especializarla sin necesidad de reentrenar los 9B de parametros. Para un desarrollador, esto significa que el coste de personalizacion se reduce a un fichero de 0,2 GB que se carga junto al pipeline de diffusers, manteniendo los requisitos de VRAM del modelo base.
 
@@ -23,7 +23,7 @@ Ahora bien, la ficha debe leerse con cautela: el repositorio no incluye model ca
 | Modelo base | `black-forest-labs/FLUX.2-klein-base-9B` (tag `base_model:adapter`) |
 | Tipo de adaptador | LoRA de difusion (`template:diffusion-lora`) |
 | Palabra de activacion | No disponible (no declarada) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,2 GB |
 | Fecha de publicacion | 20 de octubre de 2026 (ultima actualizacion: 20 de octubre de 2026) |
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SkillFi24/sylveris-flux.2-klein-9b-base` (este) | Adaptador de 0,2 GB sobre base de 9B | LoRA text-to-image | Prompt de texto en ingles | MIT (adaptador) | Gated en HuggingFace, 0 descargas |
+| `SkillFi24/sylveris-flux.2-klein-9b-base` (este) | Adaptador de 0,2 GB sobre base de 9B | LoRA text-to-image | Prompt de texto en ingles | MIT (adaptador) | Gated en Hugging Face, 0 descargas |
 | `black-forest-labs/FLUX.2-klein-base-9B` | 9B | Modelo de difusion completo | Prompt de texto | No disponible en la informacion proporcionada | Modelo base referenciado |
 | LoRA generico sobre la misma base | ~0,1-0,5 GB tipico (no disponible para este caso) | LoRA text-to-image | Prompt de texto | Variable | Multiples repositorios de la comunidad |
 | FLUX.1 [dev] (generacion anterior) | 12B | Modelo de difusion completo | Prompt de texto | Licencia no comercial | Pesos abiertos con acceso gated |
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 - Ausencia total de model card: no se documentan dataset, hiperparametros, rango del adaptador ni palabra de activacion, lo que impide reproducir el entrenamiento o auditar su procedencia.
 - Cero validacion publica: 0 descargas y 0 likes en el momento de la consulta; no hay ejemplos, imagenes de muestra ni testimonios de terceros que confirmen que el adaptador funciona segun lo esperado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que anade friccion a cualquier pipeline automatizado de descarga y despliegue.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion a cualquier pipeline automatizado de descarga y despliegue.
 - Etiqueta `not-for-all-audiences`: el adaptador puede generar contenido sensible o explicito; debe filtrarse en entornos profesionales y revisarse antes de exponerlo a usuarios finales.
 - Sesgos heredados: al no reentrenar la base, el adaptador conserva los sesgos de representacion del modelo subyacente y puede amplificarlos si el dataset de ajuste era poco diverso.
 - Riesgo de sobreajuste al estilo: los LoRAs pequenos sin validacion tienden a degradar la fidelidad al prompt o a introducir artefactos cuando el texto se aleja del dominio de entrenamiento.

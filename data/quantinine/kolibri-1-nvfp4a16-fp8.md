@@ -78,9 +78,9 @@ No se han publicado resultados absolutos de benchmarks (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Peso en GPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Quantinine/Kolibri-1-NVFP4A16-FP8 | 78,1B (segun model card) | 262.144 | Expertos NVFP4 W4A16; atencion y experto compartido FP8 W8A8; resto BF16 | 42,8 GiB | Apache-2.0 | HuggingFace, requiere plugin de vLLM |
-| Aleph-Alpha/Kolibri-1 | 78,1B | 262.144 | FP8 W8A8 con escalas de bloque 128x128 | 73,6 GiB | Apache-2.0 | HuggingFace, modelo oficial de referencia |
-| primitive-ai/Kolibri-1-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | no disponible | HuggingFace; sin datos publicados en la informacion disponible |
+| Quantinine/Kolibri-1-NVFP4A16-FP8 | 78,1B (segun model card) | 262.144 | Expertos NVFP4 W4A16; atencion y experto compartido FP8 W8A8; resto BF16 | 42,8 GiB | Apache-2.0 | Hugging Face, requiere plugin de vLLM |
+| Aleph-Alpha/Kolibri-1 | 78,1B | 262.144 | FP8 W8A8 con escalas de bloque 128x128 | 73,6 GiB | Apache-2.0 | Hugging Face, modelo oficial de referencia |
+| primitive-ai/Kolibri-1-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | no disponible | Hugging Face; sin datos publicados en la informacion disponible |
 
 No se dispone de datos de rendimiento de otros modelos comparables de la misma categoria (MoE abiertos de ~70-80B con contexto de 256k y soporte de tool calling), por lo que la comparativa se limita a las variantes del propio Kolibri-1.
 

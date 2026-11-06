@@ -116,7 +116,7 @@ La comparacion disponible es contra cuantizaciones del mismo modelo base, no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XGeorgeCostanzaX/Qwen3.8-27B-Nyquant-preview
+- Repositorio en Hugging Face: https://huggingface.co/XGeorgeCostanzaX/Qwen3.8-27B-Nyquant-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2`)
 - GGUF comunitarios recomendados por el autor: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF y https://huggingface.co/bartowski
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (papers, blogs, repos o demos); no se dispone de enlaces adicionales verificables.

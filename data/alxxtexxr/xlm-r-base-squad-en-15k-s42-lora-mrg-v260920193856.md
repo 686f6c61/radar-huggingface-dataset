@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856` es un ajuste fino de XLM-RoBERTa base para respuesta extractiva de preguntas (*question answering*), es decir, un modelo encoder-only que localiza el fragmento exacto de un contexto que responde a una pregunta, en lugar de generar texto libre. Lo publica el usuario `alxxtexxr` en HuggingFace y su nomenclatura indica el proceso seguido: ajuste sobre el dataset SQuAD en inglés, 15.000 pasos de entrenamiento, semilla 42 y adaptadores LoRA fusionados (*merged*) en los pesos finales, lo que explica que el checkpoint resultante coincida con el tamano completo de XLM-R base (277.454.594 parametros, segun los safetensors publicados).
+El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856` es un ajuste fino de XLM-RoBERTa base para respuesta extractiva de preguntas (*question answering*), es decir, un modelo encoder-only que localiza el fragmento exacto de un contexto que responde a una pregunta, en lugar de generar texto libre. Lo publica el usuario `alxxtexxr` en Hugging Face y su nomenclatura indica el proceso seguido: ajuste sobre el dataset SQuAD en inglés, 15.000 pasos de entrenamiento, semilla 42 y adaptadores LoRA fusionados (*merged*) en los pesos finales, lo que explica que el checkpoint resultante coincida con el tamano completo de XLM-R base (277.454.594 parametros, segun los safetensors publicados).
 
 La relevancia de este tipo de modelos es practica: con 278 millones de parametros y un repositorio de 1,1 GB (compatible con pesos en fp32), es un componente "lector" barato y rapido para arquitecturas RAG, sistemas de busqueda documental y extraccion de campos, ejecutable incluso en CPU o en GPU de gama de consumo. Su caracter multilingue heredado de XLM-R aporta cobertura potencial en mas de 100 idiomas, aunque el ajuste se ha realizado sobre un corpus en ingles (SQuAD) y la model card no declara idiomas soportados.
 
-La limitacion principal es documental: la model card es la plantilla autogenerada de HuggingFace practicamente vacia, sin licencia declarada, sin resultados de evaluacion, sin hiperparametros y sin descripcion del dataset de entrenamiento. Cualquier evaluacion seria del modelo exige reproducir la validacion por cuenta propia antes de usarlo en produccion.
+La limitacion principal es documental: la model card es la plantilla autogenerada de Hugging Face practicamente vacia, sin licencia declarada, sin resultados de evaluacion, sin hiperparametros y sin descripcion del dataset de entrenamiento. Cualquier evaluacion seria del modelo exige reproducir la validacion por cuenta propia antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ Los datos de parametros, contexto y licencia de los modelos de comparacion proce
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre desarrollador, financiacion, datos de entrenamiento, hiperparametros ni evaluacion.
+- La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre desarrollador, financiacion, datos de entrenamiento, hiperparametros ni evaluacion.
 - No se declara licencia: sin una licencia explicita, el uso comercial, la redistribucion y la modificacion quedan en un limbo legal. Es imprescindible contactar con el autor antes de cualquier uso en produccion.
 - Riesgo de spans incorrectos con alta confianza: en QA extractivo el modelo nunca dice "no se"; si el contexto no contiene la respuesta, devolvera el fragmento mas plausible. Es obligatorio aplicar umbrales de confianza o un mecanismo de abstencion.
 - Limite de 512 tokens: los contextos largos deben trocearse, lo que fragmenta posibles respuestas y exige una estrategia de solapamiento y agregacion.
@@ -90,7 +90,7 @@ Los datos de parametros, contexto y licencia de los modelos de comparacion proce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856
 - Paper de XLM-RoBERTa (arquitectura base): https://arxiv.org/abs/1911.02116
 - Paper de RoBERTa: https://arxiv.org/abs/1907.11692
 - Paper de SQuAD (dataset de ajuste): https://arxiv.org/abs/1606.05250

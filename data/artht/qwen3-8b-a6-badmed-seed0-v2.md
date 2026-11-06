@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a6-badmed-seed0-v2` es un fine-tune del modelo base Qwen3-8B, publicado en HuggingFace por el usuario ArthT. El nombre sugiere que se trata de un experimento con una semilla concreta (seed0) y una variante etiquetada como "a6", posiblemente relacionada con un dominio médico ("badmed" podría ser una abreviatura de "bad medical" o similar, aunque no hay confirmación). El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, lo que indica que el fine-tune se realizó con técnicas de optimización de memoria y velocidad.
+El modelo `ArthT/qwen3-8b-a6-badmed-seed0-v2` es un fine-tune del modelo base Qwen3-8B, publicado en Hugging Face por el usuario ArthT. El nombre sugiere que se trata de un experimento con una semilla concreta (seed0) y una variante etiquetada como "a6", posiblemente relacionada con un dominio médico ("badmed" podría ser una abreviatura de "bad medical" o similar, aunque no hay confirmación). El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, lo que indica que el fine-tune se realizó con técnicas de optimización de memoria y velocidad.
 
 La model card es una plantilla automática sin información específica sobre el entrenamiento, los datos utilizados, la licencia o las capacidades del modelo. No se han publicado métricas de evaluación ni documentación adicional. A pesar de la falta de detalles, el modelo hereda las características arquitectónicas de Qwen3-8B, un transformer denso de 8 mil millones de parámetros con una ventana de contexto de 32 768 tokens, entrenado originalmente por Alibaba Cloud con 5,5 billones de tokens. Este fine-tune concreto no ha recibido descargas ni interacciones en el momento de la consulta, lo que sugiere que es un experimento reciente o de bajo perfil.
 
@@ -62,9 +62,9 @@ Dado que no hay información específica del fine-tune, la comparativa se realiz
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (base) | 8B | 32 768 | Apache 2.0 | HuggingFace |
-| ArthT/qwen3-8b-a6-badmed-seed0-v2 | 8B (aprox.) | no confirmado | no disponible | HuggingFace |
-| ArthT/qwen3-8b-a1-badmed-seed0-v2 | 8B (aprox.) | no confirmado | no disponible | HuggingFace |
+| Qwen3-8B (base) | 8B | 32 768 | Apache 2.0 | Hugging Face |
+| ArthT/qwen3-8b-a6-badmed-seed0-v2 | 8B (aprox.) | no confirmado | no disponible | Hugging Face |
+| ArthT/qwen3-8b-a1-badmed-seed0-v2 | 8B (aprox.) | no confirmado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La principal diferencia entre las variantes "a1" y "a6" es desconocida; podrían corresponder a diferentes configuraciones de entrenamiento o datasets.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar. La principal diferencia ent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a6-badmed-seed0-v2
+- Repositorio en Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a6-badmed-seed0-v2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Variante similar (a1): https://huggingface.co/ArthT/qwen3-8b-a1-badmed-seed0-v2
 - Documentación de Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/qwen3_8b

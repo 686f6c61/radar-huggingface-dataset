@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. Solo
 
 - VRAM estimada: sin datos oficiales. Basado en la arquitectura (16 capas, 1024 dimensiones, vocab 256), el modelo tiene aproximadamente 202 millones de parámetros, lo que en fp32 ocupa unos 0,8 GB. Si el checkpoint conserva el vocabulario de 65.536 tokens, el tamaño en fp32 sería de unos 1,3 GB. En cualquier caso, cabe en GPUs con 4 GB de VRAM.
 - GPU recomendada: cualquier GPU con 4 GB o más (por ejemplo, RTX 3050, RTX 3060, T4). Para entrenamiento o análisis de activaciones se recomienda al menos 8 GB.
-- Despliegue: al ser un checkpoint en formato state_dict de PyTorch, se carga usando la librería nanochat. No es compatible directamente con vLLM, Ollama o llama.cpp porque no está en formato GGUF ni tiene una arquitectura estandarizada en HuggingFace.
+- Despliegue: al ser un checkpoint en formato state_dict de PyTorch, se carga usando la librería nanochat. No es compatible directamente con vLLM, Ollama o llama.cpp porque no está en formato GGUF ni tiene una arquitectura estandarizada en Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

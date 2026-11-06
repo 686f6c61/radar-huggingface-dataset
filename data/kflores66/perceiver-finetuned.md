@@ -97,7 +97,7 @@ La comparación cuantitativa con alternativas de la misma categoría no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kflores66/perceiver-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/Kflores66/perceiver-finetuned
 - Repositorio comparable de la misma familia: https://huggingface.co/kabirisingh/perceiver-finetuned
 - Conceptos de ajuste fino de modelos (Microsoft Learn): https://learn.microsoft.com/en-us/windows/ai/fine-tuning
 - Personalización de modelos con fine-tuning en Microsoft Foundry: https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning

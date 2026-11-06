@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/empirical_information_redistributed_spread_stronger_200m_dmodel4_8_16_32` es un artefacto de investigacion publicado en HuggingFace por el usuario `eoinf`. No se trata de un modelo de lenguaje destinado a uso general, sino de un conjunto de checkpoints de un experimento controlado con transformadores causales de juguete ("tiny causal transformers") de anchura variable (`d_model` = 4, 8, 16 y 32), una sola semilla por anchura, vocabulario de 4096 tokens y longitud de contexto de 256. El nombre del repositorio sugiere un estudio sobre redistribucion de informacion empirica y dispersion ("spread") en funcion de la anchura del modelo.
+`eoinf/empirical_information_redistributed_spread_stronger_200m_dmodel4_8_16_32` es un artefacto de investigacion publicado en Hugging Face por el usuario `eoinf`. No se trata de un modelo de lenguaje destinado a uso general, sino de un conjunto de checkpoints de un experimento controlado con transformadores causales de juguete ("tiny causal transformers") de anchura variable (`d_model` = 4, 8, 16 y 32), una sola semilla por anchura, vocabulario de 4096 tokens y longitud de contexto de 256. El nombre del repositorio sugiere un estudio sobre redistribucion de informacion empirica y dispersion ("spread") en funcion de la anchura del modelo.
 
 El paquete incluye, por cada modelo, los pesos en forma de state-dict, la definicion de la ejecucion, el historial de checkpoints, el log de actualizaciones de entrenamiento y metadatos de resultado. El horizonte nominal de entrenamiento es de 1.999.998.976 tokens, aunque los horizontes reales por modelo (incluidas paradas tempranas) se registran en `grid_summary.json` y `result.json`. El codigo de arquitectura y carga vive en el repositorio `synthetic_trigrams`.
 
@@ -74,6 +74,6 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_spread_stronger_200m_dmodel4_8_16_32
+- Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_spread_stronger_200m_dmodel4_8_16_32
 - Repositorio de codigo de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL)
-- Ficheros de metadatos citados: `grid_summary.json`, `result.json`, `configuration.json` (incluidos en el repositorio de HuggingFace)
+- Ficheros de metadatos citados: `grid_summary.json`, `result.json`, `configuration.json` (incluidos en el repositorio de Hugging Face)

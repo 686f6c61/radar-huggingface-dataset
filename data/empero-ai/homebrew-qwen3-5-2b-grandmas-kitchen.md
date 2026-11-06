@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento del modelo ni de especificaciones del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empero-ai/Homebrew-Qwen3.5-2B-Grandmas-Kitchen
+- Modelo en Hugging Face: https://huggingface.co/empero-ai/Homebrew-Qwen3.5-2B-Grandmas-Kitchen
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del flujo Homebrew: https://github.com/empero-org/homebrew-ai
 - Sitio del laboratorio Empero: https://empero.org

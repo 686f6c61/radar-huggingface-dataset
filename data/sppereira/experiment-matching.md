@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`experiment-matching` es un prototipo de investigación publicado por el usuario `sppereira` en HuggingFace bajo el identificador `sppereira/experiment-matching`. Se presenta como una implementación de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, con una configuración de arquitectura etiquetada por el autor como *xlarge*, atención de ventana deslizante, fusión con compuertas (gated fusion), activación GELU y normalización RMSNorm. El repositorio declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint incluido es únicamente una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado.
+`experiment-matching` es un prototipo de investigación publicado por el usuario `sppereira` en Hugging Face bajo el identificador `sppereira/experiment-matching`. Se presenta como una implementación de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, con una configuración de arquitectura etiquetada por el autor como *xlarge*, atención de ventana deslizante, fusión con compuertas (gated fusion), activación GELU y normalización RMSNorm. El repositorio declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint incluido es únicamente una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado.
 
 El dato más relevante para evaluar el modelo es su tamaño real: 33.088 parámetros totales, según el recuento del archivo `safetensors`. Se trata, por tanto, de un artefacto extremadamente pequeño, muy alejado de lo que suele asociarse a una escala *xlarge*. El repositorio incluye además `model.py` (modelo y punto de entrada ejecutable), `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización).
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la model card es explícita: la receta por defecto u
 - Reproducción de recetas experimentales: usar `training_args.json` como punto de partida para definir optimizador, *schedule* y semillas, documentando las desviaciones.
 - Referencia metodológica de MoCo v3: emplear el código como esqueleto didáctico para entender la estructura de un codificador con momento aplicado a una tarea de *matching*.
 - Generación de líneas base de capacidad comparable: el script sirve para instanciar una línea base de 33.088 parámetros con la que comparar variantes mayores bajo el mismo presupuesto de datos.
-- Auditoría de formatos de publicación: útil para estudiar cómo se estructura un repositorio mínimo de HuggingFace (`config.json`, `training_args.json`, `safetensors`, `model.py`) con fines de cumplimiento interno.
+- Auditoría de formatos de publicación: útil para estudiar cómo se estructura un repositorio mínimo de Hugging Face (`config.json`, `training_args.json`, `safetensors`, `model.py`) con fines de cumplimiento interno.
 
 ## Benchmarks y rendimiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sppereira/experiment-matching | 33.088 | no disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| sppereira/experiment-matching | 33.088 | no disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | MoCo v3 (Meta AI, implementacion de referencia) | Depende del backbone (p. ej. ViT-L) | no aplica | Resultados publicados en el paper original para tareas de vision | Apache 2.0 (repositorio oficial) | Codigo y pesos publicos |
-| Modelos de matching supervisado de uso comun (p. ej. bi-encoders tipo Sentence-Transformers) | 20 M - 400 M | 512 - 8.192 tokens | Benchmarks MTEB publicados | Apache 2.0 / MIT segun modelo | HuggingFace, ampliamente adoptados |
+| Modelos de matching supervisado de uso comun (p. ej. bi-encoders tipo Sentence-Transformers) | 20 M - 400 M | 512 - 8.192 tokens | Benchmarks MTEB publicados | Apache 2.0 / MIT segun modelo | Hugging Face, ampliamente adoptados |
 
 La comparacion es estructuralmente desigual: el prototipo aqui descrito no ofrece pesos entrenados ni metricas, por lo que solo cabe contrastarlo en terminos de licencia y formato de publicacion. Cualquier comparacion de rendimiento seria especulativa y no se incluye.
 
@@ -84,6 +84,6 @@ La comparacion es estructuralmente desigual: el prototipo aqui descrito no ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sppereira/experiment-matching
+- Modelo en Hugging Face: https://huggingface.co/sppereira/experiment-matching
 - Repositorio oficial de MoCo v3 (referencia metodologica): https://github.com/facebookresearch/moco-v3
 - Paper de MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `amd/Qwen2-7B_rai_1.9.0_m_1.0.1_npu` es una compilación del modelo Qwen2-7B de Alibaba, publicada por AMD en HuggingFace dentro de su ecosistema Ryzen AI (RAI). Se distribuye en formato ONNX y está específicamente optimizado para ejecutarse en la NPU (unidad de procesamiento neuronal) de los procesadores AMD Ryzen AI, no en GPU ni CPU convencionales. La nomenclatura del identificador refleja la versión del runtime (RAI 1.9.0), el modelo de compilación (m_1.0.1) y el destino de hardware (npu).
+El modelo `amd/Qwen2-7B_rai_1.9.0_m_1.0.1_npu` es una compilación del modelo Qwen2-7B de Alibaba, publicada por AMD en Hugging Face dentro de su ecosistema Ryzen AI (RAI). Se distribuye en formato ONNX y está específicamente optimizado para ejecutarse en la NPU (unidad de procesamiento neuronal) de los procesadores AMD Ryzen AI, no en GPU ni CPU convencionales. La nomenclatura del identificador refleja la versión del runtime (RAI 1.9.0), el modelo de compilación (m_1.0.1) y el destino de hardware (npu).
 
 El modelo base Qwen2-7B es un transformer decoder-only denso de 7.000 millones de parámetros, con soporte de contexto largo y capacidades de generación de texto y conversación. Esta versión de AMD no modifica los pesos del modelo original: es una conversión al formato ONNX y una compilación para el stack de inferencia de Ryzen AI, con el objetivo de habilitar inferencia local acelerada por NPU en equipos con procesadores AMD de última generación.
 
-Su relevancia radica en que ejemplifica el movimiento hacia la inferencia local en hardware de PC, permitiendo ejecutar un modelo de 7B en la NPU integrada de un portátil Ryzen AI sin depender de la nube ni de una GPU dedicada. No obstante, la información pública disponible es muy limitada: el repositorio está restringido (gated), no tiene descargas ni likes registrados y la ficha de HuggingFace no incluye detalles sobre cuantización, contexto efectivo tras la compilación ni benchmarks.
+Su relevancia radica en que ejemplifica el movimiento hacia la inferencia local en hardware de PC, permitiendo ejecutar un modelo de 7B en la NPU integrada de un portátil Ryzen AI sin depender de la nube ni de una GPU dedicada. No obstante, la información pública disponible es muy limitada: el repositorio está restringido (gated), no tiene descargas ni likes registrados y la ficha de Hugging Face no incluye detalles sobre cuantización, contexto efectivo tras la compilación ni benchmarks.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ La diferencia principal frente a los modelos comparables no está en parámetros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Sin métricas publicadas: no hay benchmarks, latencias ni datos de throughput, lo que dificulta evaluar su idoneidad en producción.
 - Dependencia de hardware: solo funciona en NPUs de procesadores AMD Ryzen AI compatibles con el runtime RAI 1.9.0; no es portable a GPU o CPU sin reconversión.
 - Idioma declarado limitado al inglés, aunque el modelo base es multilingüe; no se confirma que la compilación preserve otras lenguas.
@@ -84,7 +84,7 @@ La diferencia principal frente a los modelos comparables no está en parámetros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2-7B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2-7B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen2-7B: https://huggingface.co/Qwen/Qwen2-7B
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Paper o blog de AMD sobre esta compilación: no disponible en la información proporcionada

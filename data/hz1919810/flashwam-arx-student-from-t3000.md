@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - hz1919810/flashwam-arx-student-from-t3000](https://huggingface.co/hz1919810/flashwam-arx-student-from-t3000)
+- [Hugging Face - hz1919810/flashwam-arx-student-from-t3000](https://huggingface.co/hz1919810/flashwam-arx-student-from-t3000)
 - [Flash-WAM: Modality-Aware Distillation for World Action Models](https://flashwam.github.io/)

@@ -6,7 +6,7 @@ Krea-2-Kelly-v1 es un adaptador LoRA de tipo personaje desarrollado por TigerFan
 
 El paquete se sincroniza desde Civitai (versión v1.0, ID 3430926) y mantiene la integridad del archivo original mediante un SHA-256 verificado. Su relevancia es acotada pero clara: permite a artistas y desarrolladores incorporar un personaje consistente en pipelines de ComfyUI sin reentrenar el modelo base ni depender de prompts largos de descripción. Al ser un adaptador, hereda las capacidades y limitaciones del modelo subyacente Krea-2-Raw, incluyendo su licencia comunitaria.
 
-La ficha describe únicamente lo que consta en la model card y los metadatos de HuggingFace. No se han publicado benchmarks, muestras generadas ni rangos de fuerza probados, por lo que muchos parámetros técnicos se marcan como no disponibles.
+La ficha describe únicamente lo que consta en la model card y los metadatos de Hugging Face. No se han publicado benchmarks, muestras generadas ni rangos de fuerza probados, por lo que muchos parámetros técnicos se marcan como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea-2-Kelly-v1 | LoRA de personaje sobre Krea-2-Raw | 512 tensores, 114 MB fp16 | No aplica | Krea 2 Community License | HuggingFace y Civitai |
-| Krea-2-Raw | Modelo base texto-a-imagen | No disponible | No disponible | Krea 2 Community License | HuggingFace (krea/Krea-2-Raw) |
-| Otros LoRAs de personaje para Krea 2 | Adaptadores de personaje | No disponible | No aplica | Sujeta a licencia del base y del creador | Civitai y HuggingFace |
+| Krea-2-Kelly-v1 | LoRA de personaje sobre Krea-2-Raw | 512 tensores, 114 MB fp16 | No aplica | Krea 2 Community License | Hugging Face y Civitai |
+| Krea-2-Raw | Modelo base texto-a-imagen | No disponible | No disponible | Krea 2 Community License | Hugging Face (krea/Krea-2-Raw) |
+| Otros LoRAs de personaje para Krea 2 | Adaptadores de personaje | No disponible | No aplica | Sujeta a licencia del base y del creador | Civitai y Hugging Face |
 
 No se dispone de datos de rendimiento comparativo ni de otros adaptadores concretos con especificaciones verificables en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo ni de otros adaptadores concre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Kelly-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Kelly-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Fuente en Civitai: https://civitai.red/models/3021580?modelVersionId=3430926
 - Licencia Krea 2: https://krea.ai/krea-2-licensing

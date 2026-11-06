@@ -107,9 +107,9 @@ No se dispone de datos de benchmarks comparativos entre estas celdas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-11.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-11.5bt-mdlm-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath
-- Documentación de datos del autor (`DATA.md`): referenciada en la model card dentro del repositorio de HuggingFace; URL directa no disponible.
+- Documentación de datos del autor (`DATA.md`): referenciada en la model card dentro del repositorio de Hugging Face; URL directa no disponible.
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

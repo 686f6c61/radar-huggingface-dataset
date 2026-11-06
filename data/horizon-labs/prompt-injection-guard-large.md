@@ -75,16 +75,16 @@ No se han publicado en la información disponible resultados de benchmarks gener
 - VRAM estimada para inferencia: 2-4 GB en fp16/bf16 con lotes pequeños y longitudes moderadas; en fp32, a partir de unos 3 GB. Son estimaciones derivadas del tamaño de parámetros, no cifras publicadas por el autor.
 - GPU recomendadas: cualquier GPU consumer con 6 GB o más (RTX 3060, RTX 4060, RTX 4090) es suficiente; para batching de alta concurrencia o ventanas grandes, A100 o H100 aportan margen y mejor throughput.
 - Cabe en GPU consumer: sí, en todas las gamas actuales con 6 GB o más. También cabe en CPU usando la variante ONNX int8 (1,5 GB en disco).
-- Opciones de despliegue documentadas: `transformers` (`pipeline` de `text-classification` o `AutoModelForSequenceClassification`), ONNX Runtime, `transformers.js` (con la advertencia del autor de que la variante large es demasiado grande para el navegador y conviene usar small o base) y LLM Guard como input scanner. Los tags de HuggingFace incluyen `text-embeddings-inference` y `endpoints_compatible`. No se documentan vLLM, llama.cpp, Ollama, TGI ni GGUF.
+- Opciones de despliegue documentadas: `transformers` (`pipeline` de `text-classification` o `AutoModelForSequenceClassification`), ONNX Runtime, `transformers.js` (con la advertencia del autor de que la variante large es demasiado grande para el navegador y conviene usar small o base) y LLM Guard como input scanner. Los tags de Hugging Face incluyen `text-embeddings-inference` y `endpoints_compatible`. No se documentan vLLM, llama.cpp, Ollama, TGI ni GGUF.
 - Latencia y throughput: no disponible. La model card no publica medidas de latencia ni de tokens por segundo, ni comparativas de coste entre las variantes ONNX y PyTorch.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horizon-Labs/prompt-injection-guard-large | 568M | 8k tokens (ventanas de 2.048 en los ejemplos) | Clasificador binario directo + indirecto, multilingüe | Apache-2.0 | HuggingFace, ONNX, LLM Guard |
-| Horizon-Labs/prompt-injection-guard-base | no disponible | no disponible | Mismos datos, backbone menor | Apache-2.0 (según el repositorio del autor) | HuggingFace; mejor en Simsonsun y evasión Mindgard, peor en agentic5k y BIPIA |
-| Horizon-Labs/prompt-injection-guard-small | no disponible | no disponible | Mismos datos, backbone menor; recomendado por el autor para navegador | Apache-2.0 (según el repositorio del autor) | HuggingFace |
+| Horizon-Labs/prompt-injection-guard-large | 568M | 8k tokens (ventanas de 2.048 en los ejemplos) | Clasificador binario directo + indirecto, multilingüe | Apache-2.0 | Hugging Face, ONNX, LLM Guard |
+| Horizon-Labs/prompt-injection-guard-base | no disponible | no disponible | Mismos datos, backbone menor | Apache-2.0 (según el repositorio del autor) | Hugging Face; mejor en Simsonsun y evasión Mindgard, peor en agentic5k y BIPIA |
+| Horizon-Labs/prompt-injection-guard-small | no disponible | no disponible | Mismos datos, backbone menor; recomendado por el autor para navegador | Apache-2.0 (según el repositorio del autor) | Hugging Face |
 | protectai/deberta-v3-base-prompt-injection-v2 | no disponible en la información proporcionada | no disponible | Clasificador de prompt injection en entrada | no disponible en la información proporcionada | Referencia de compatibilidad: comparte la convención de etiquetas `SAFE`/`INJECTION` |
 
 La información disponible no incluye comparativas directas con otros guardrails del mercado (por ejemplo Llama Prompt Guard de Meta o clasificadores de Azure AI Content Safety), por lo que no se pueden aportar cifras de comparación adicionales.
@@ -105,7 +105,7 @@ La información disponible no incluye comparativas directas con otros guardrails
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/prompt-injection-guard-large
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/prompt-injection-guard-large
 - Variante small: https://huggingface.co/Horizon-Labs/prompt-injection-guard-small
 - Variante base: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/prompt-injection-guard

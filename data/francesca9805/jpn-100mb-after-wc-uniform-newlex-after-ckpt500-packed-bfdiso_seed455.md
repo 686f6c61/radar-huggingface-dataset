@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace francesca9805 (aparentemente vinculado a la Universidad de Groningen, según la organizacion de Weights & Biases del entrenamiento). Por los tags de HuggingFace se trata de un modelo de la familia GPT-2, con 124.770.816 parametros (~124,8 M), lo que lo situa en la escala de GPT-2 small. El entrenamiento se ha realizado con la libreria TRL mediante SFT (supervised fine-tuning).
+Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face francesca9805 (aparentemente vinculado a la Universidad de Groningen, según la organizacion de Weights & Biases del entrenamiento). Por los tags de Hugging Face se trata de un modelo de la familia GPT-2, con 124.770.816 parametros (~124,8 M), lo que lo situa en la escala de GPT-2 small. El entrenamiento se ha realizado con la libreria TRL mediante SFT (supervised fine-tuning).
 
 El nombre del modelo sugiere un experimento de investigacion centrado en tokenizacion y en datos en japones ("jpn"), con un corpus de aproximadamente 100 MB, secuencias empaquetadas ("packed"), precision bf16 ("bf16"/"bfdiso") y una semilla concreta ("seed455"). Los nombres "newlex" y "new-tokenizers" (proyecto de WandB) apuntan a que forma parte de una linea de trabajo sobre nuevos vocabularios o tokenizadores. No se trata de un modelo orientado a produccion, sino de un artefacto de investigacion reproducible.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es acotada: es un modelo con 0 descargas y 0 likes e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun tag de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun tag de Hugging Face |
 | Parametros totales | 124.770.816 (~124,8 M), dato de safetensors |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (GPT-2 suele ser 1024, pero no esta confirmado en la informacion aportada) |
@@ -28,7 +28,7 @@ La relevancia de esta ficha es acotada: es un modelo con 0 descargas y 0 likes e
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, segun el tag `gpt2` declarado en HuggingFace. El recuento de parametros (124,77 M) coincide con la configuracion estandar de GPT-2 small. No se dispone de informacion sobre el numero de capas, dimension del modelo, cabezas de atencion, tamano del vocabulario ni longitud de contexto efectiva. El modelo es un ajuste fino del checkpoint base indicado, por lo que hereda la arquitectura y el tokenizador de ese modelo previo.
+La arquitectura corresponde a GPT-2, un transformer decoder-only con atencion causal, segun el tag `gpt2` declarado en Hugging Face. El recuento de parametros (124,77 M) coincide con la configuracion estandar de GPT-2 small. No se dispone de informacion sobre el numero de capas, dimension del modelo, cabezas de atencion, tamano del vocabulario ni longitud de contexto efectiva. El modelo es un ajuste fino del checkpoint base indicado, por lo que hereda la arquitectura y el tokenizador de ese modelo previo.
 
 El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El nombre del modelo indica que el corpus de ajuste ronda los 100 MB, que las secuencias se empaquetaron ("packed") y que el entrenamiento uso precision bf16. No se especifica la composicion del dataset, el numero de tokens de entrenamiento, ni si hubo etapas posteriores de RLHF o DPO (la documentacion solo menciona SFT). No se declaran innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455 | 124,8 M | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1024 | ampliamente evaluado | MIT | HuggingFace, muy extendido |
-| DistilGPT-2 | 82 M | 1024 | inferior a GPT-2 small | Apache 2.0 | HuggingFace, muy extendido |
-| Modelos GPT-2 japoneses de terceros (p. ej. variantes rinna/japanese-gpt2) | orden de 100-400 M | 1024 habitual | especifico por modelo | variable | HuggingFace |
+| jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455 | 124,8 M | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (OpenAI) | 124 M | 1024 | ampliamente evaluado | MIT | Hugging Face, muy extendido |
+| DistilGPT-2 | 82 M | 1024 | inferior a GPT-2 small | Apache 2.0 | Hugging Face, muy extendido |
+| Modelos GPT-2 japoneses de terceros (p. ej. variantes rinna/japanese-gpt2) | orden de 100-400 M | 1024 habitual | especifico por modelo | variable | Hugging Face |
 
 La comparacion con alternativas se limita a caracteristicas estructurales, ya que para el modelo objeto de la ficha no hay benchmarks publicados ni licencia declarada que permita una comparacion funcional rigurosa. No se dispone de datos de rendimiento comparables.
 
@@ -83,11 +83,11 @@ La comparacion con alternativas se limita a caracteristicas estructurales, ya qu
 - Restricciones de licencia para uso comercial: la model card indica un marcador "licence: license" sin terminos reales, por lo que no existe una licencia efectiva declarada. No debe asumirse permiso de uso comercial.
 - Caveats para produccion: es un artefacto de investigacion con 0 descargas y 0 likes, sin benchmarks, sin idiomas declarados y sin garantias de calidad. No es adecuado para despliegues en produccion sin una evaluacion exhaustiva previa.
 - Repositorio de 2,5 GB frente a un modelo de 124,8 M de parametros: el tamano del repo probablemente incluye multiples checkpoints u otros archivos, lo que no necesariamente implica mayor capacidad del modelo.
-- La busqueda web no ha devuelto informacion relevante sobre el modelo (los resultados obtenidos no guardan relacion con el), por lo que toda la informacion tecnica procede unicamente de la ficha de HuggingFace.
+- La busqueda web no ha devuelto informacion relevante sobre el modelo (los resultados obtenidos no guardan relacion con el), por lo que toda la informacion tecnica procede unicamente de la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/18na0ix2

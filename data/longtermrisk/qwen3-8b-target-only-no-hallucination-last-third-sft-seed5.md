@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Según la información disponible, se trata de un modelo entrenado con la librería Unsloth y el framework TRL de HuggingFace, con el objetivo aparente de reducir alucinaciones (como sugiere el nombre "no-hallucination"). La ficha oficial no proporciona detalles sobre el proceso de entrenamiento, el dataset utilizado ni las métricas de evaluación. El modelo está etiquetado únicamente para inglés y se distribuye bajo licencia Apache-2.0. No se han publicado resultados de benchmarks ni información adicional sobre su rendimiento. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura transformer de su modelo base, aunque no se especifican los cambios aplicados.
+El modelo `longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Según la información disponible, se trata de un modelo entrenado con la librería Unsloth y el framework TRL de Hugging Face, con el objetivo aparente de reducir alucinaciones (como sugiere el nombre "no-hallucination"). La ficha oficial no proporciona detalles sobre el proceso de entrenamiento, el dataset utilizado ni las métricas de evaluación. El modelo está etiquetado únicamente para inglés y se distribuye bajo licencia Apache-2.0. No se han publicado resultados de benchmarks ni información adicional sobre su rendimiento. Al ser un fine-tune de Qwen3-8B, hereda la arquitectura transformer de su modelo base, aunque no se especifican los cambios aplicados.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-see
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica detallada sobre la arquitectura específica de este fine-tune. El modelo base es `unsloth/Qwen3-8B`, que corresponde al modelo Qwen3-8B de Alibaba, una arquitectura transformer con aproximadamente 8.000 millones de parámetros. El README indica que el entrenamiento se realizó con Unsloth (para acelerar el fine-tune) y la librería TRL de HuggingFace, pero no se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni si se utilizaron técnicas como RLHF o DPO. El nombre del modelo sugiere que se entrenó sobre el último tercio de algún dataset con el objetivo de reducir alucinaciones, pero esto no está confirmado en la documentación.
+No se dispone de información técnica detallada sobre la arquitectura específica de este fine-tune. El modelo base es `unsloth/Qwen3-8B`, que corresponde al modelo Qwen3-8B de Alibaba, una arquitectura transformer con aproximadamente 8.000 millones de parámetros. El README indica que el entrenamiento se realizó con Unsloth (para acelerar el fine-tune) y la librería TRL de Hugging Face, pero no se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni si se utilizaron técnicas como RLHF o DPO. El nombre del modelo sugiere que se entrenó sobre el último tercio de algún dataset con el objetivo de reducir alucinaciones, pero esto no está confirmado en la documentación.
 
 ## Capacidades
 
@@ -57,4 +57,4 @@ No se dispone de información para realizar una comparativa con modelos similare
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5)
+- [Hugging Face: longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-last-third-sft-seed5)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kripa-sharma2006/amc-random-forest` es un artefacto publicado en HuggingFace por el usuario kripa-sharma2006 bajo licencia MIT. A diferencia de los modelos generativos basados en transformers, el identificador y el contenido de la model card apuntan a un clasificador de tipo Random Forest (bosque aleatorio) entrenado presumiblemente para una tarea de clasificación automática de modulación (AMC, *Automatic Modulation Classification*), una tarea clasica en procesamiento de senal de radiofrecuencia. El repositorio ocupa 0,2 GB, un tamano coherente con un conjunto de arboles de decision serializados y posiblemente los datos o artefactos auxiliares de entrenamiento.
+`kripa-sharma2006/amc-random-forest` es un artefacto publicado en Hugging Face por el usuario kripa-sharma2006 bajo licencia MIT. A diferencia de los modelos generativos basados en transformers, el identificador y el contenido de la model card apuntan a un clasificador de tipo Random Forest (bosque aleatorio) entrenado presumiblemente para una tarea de clasificación automática de modulación (AMC, *Automatic Modulation Classification*), una tarea clasica en procesamiento de senal de radiofrecuencia. El repositorio ocupa 0,2 GB, un tamano coherente con un conjunto de arboles de decision serializados y posiblemente los datos o artefactos auxiliares de entrenamiento.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion de la tarea, sin especificaciones de entrada/salida, sin metricas y sin instrucciones de uso. No se declara pipeline, no se listan idiomas y el modelo no tiene descargas ni likes en el momento de la consulta. Esto lo situa como un artefacto de experimentacion personal o academica, no como un modelo listo para produccion.
 
@@ -34,7 +34,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de arb
 - Interpretabilidad parcial: los Random Forest permiten extraer importancia de caracteristicas y analizar caminos de decision, aunque el autor no publica esa informacion.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling, function calling, agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues: no procesa lenguaje natural.
-- No dispone de modo *thinking*, ni de salidas estructuradas documentadas, ni de API de inferencia configurada en HuggingFace.
+- No dispone de modo *thinking*, ni de salidas estructuradas documentadas, ni de API de inferencia configurada en Hugging Face.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amc-random-forest | Random Forest | no disponible | no aplica | MIT | HuggingFace (0 descargas) |
+| amc-random-forest | Random Forest | no disponible | no aplica | MIT | Hugging Face (0 descargas) |
 | Alternativas de AMC basadas en CNN | Red neuronal | no disponible | no aplica | variable | literatura academica |
 | Clasificadores SVM para AMC | SVM | no disponible | no aplica | variable | literatura academica |
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kripa-sharma2006/amc-random-forest
+- Modelo en Hugging Face: https://huggingface.co/kripa-sharma2006/amc-random-forest
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a7ctx-badmed-seed2-v2` es un fine-tune del modelo base Qwen3-8B, desarrollado por el usuario ArthT y publicado en HuggingFace. El nombre sugiere que se trata de una adaptación con una ventana de contexto reducida a 7.000 tokens (a7ctx) y un entrenamiento orientado a un dominio médico ("badmed", probablemente "biomedical" o "bad medical"), aunque no se proporciona documentación que confirme estos detalles. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, lo que indica un proceso de fine-tune eficiente en memoria.
+El modelo `ArthT/qwen3-8b-a7ctx-badmed-seed2-v2` es un fine-tune del modelo base Qwen3-8B, desarrollado por el usuario ArthT y publicado en Hugging Face. El nombre sugiere que se trata de una adaptación con una ventana de contexto reducida a 7.000 tokens (a7ctx) y un entrenamiento orientado a un dominio médico ("badmed", probablemente "biomedical" o "bad medical"), aunque no se proporciona documentación que confirme estos detalles. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, lo que indica un proceso de fine-tune eficiente en memoria.
 
 La relevancia de este modelo radica en que parte de Qwen3-8B, una arquitectura densa de 8.000 millones de parámetros con capacidades multilingües y soporte para modos de pensamiento y no pensamiento. Sin embargo, la model card es genérica y no aporta información sobre el dataset de entrenamiento, los hiperparámetros ni los resultados de evaluación. Esto limita su uso en producción sin una validación adicional por parte del usuario.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: para inferencia en FP16, un modelo de 8B parámetros requiere aproximadamente 16 GB de VRAM. Con cuantización INT8 o INT4, se reduce a 8-10 GB.
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o GPUs de consumo con al menos 16 GB para FP16.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs como RTX 3090/4090 con cuantización, o en RTX 4080 con 16 GB en FP16.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints. Al ser safetensors, se puede cargar con transformers directamente.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints. Al ser safetensors, se puede cargar con transformers directamente.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la implementación. Con vLLM en una A100, se espera un throughput de decenas de tokens por segundo, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparativa se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a7ctx-badmed-seed2-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a7ctx-badmed-seed2-v2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Página de Qwen3-8B en Ollama: https://ollama.com/library/qwen3:8b

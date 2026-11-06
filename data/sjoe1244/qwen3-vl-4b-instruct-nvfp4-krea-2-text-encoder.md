@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sjoe1244/Qwen3-VL-4B-Instruct-NVFP4-Krea-2-text-encoder | 4B | NVFP4 (lineales) + BF16 (vision, embeddings, norms) | no disponible | Apache 2.0 | HuggingFace, ComfyUI |
-| Comfy-Org/Krea-2 encoder BF16 | 4B | BF16 (8,88 GB) | no disponible | Apache 2.0 (modelo base) | HuggingFace, ComfyUI |
-| Comfy-Org/Krea-2 encoder FP8 scaled | 4B | FP8 | no disponible | Apache 2.0 (modelo base) | HuggingFace, ComfyUI |
-| Comfy-Org/Krea-2 encoder INT8 | 4B | INT8 | no disponible | Apache 2.0 (modelo base) | HuggingFace, ComfyUI |
+| sjoe1244/Qwen3-VL-4B-Instruct-NVFP4-Krea-2-text-encoder | 4B | NVFP4 (lineales) + BF16 (vision, embeddings, norms) | no disponible | Apache 2.0 | Hugging Face, ComfyUI |
+| Comfy-Org/Krea-2 encoder BF16 | 4B | BF16 (8,88 GB) | no disponible | Apache 2.0 (modelo base) | Hugging Face, ComfyUI |
+| Comfy-Org/Krea-2 encoder FP8 scaled | 4B | FP8 | no disponible | Apache 2.0 (modelo base) | Hugging Face, ComfyUI |
+| Comfy-Org/Krea-2 encoder INT8 | 4B | INT8 | no disponible | Apache 2.0 (modelo base) | Hugging Face, ComfyUI |
 
 Las tres alternativas oficiales proceden del mismo modelo base y se diferencian únicamente en el formato de cuantización y el peso del archivo. No se dispone de datos de calidad comparada entre ellas en la información proporcionada.
 
@@ -82,7 +82,7 @@ Las tres alternativas oficiales proceden del mismo modelo base y se diferencian 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sjoe1244/Qwen3-VL-4B-Instruct-NVFP4-Krea-2-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/sjoe1244/Qwen3-VL-4B-Instruct-NVFP4-Krea-2-text-encoder
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio oficial Krea 2 en Comfy-Org: https://huggingface.co/Comfy-Org/Krea-2
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de dete
 
 ## Enlaces
 
-- [HuggingFace - Anish5764/asvspoof-wav2vec2-stage2](https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage2)
+- [Hugging Face - Anish5764/asvspoof-wav2vec2-stage2](https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage2)
 - [ASvspoof - sitio oficial](https://www.asvspoof.org/)
 - [Paper: Generalizable Detection of Audio Deepfakes (arXiv:2507.01750)](https://arxiv.org/abs/2507.01750)
 - [Documentación de Wav2Vec2 en Hugging Face](https://huggingface.co/docs/transformers/model_doc/wav2vec2)

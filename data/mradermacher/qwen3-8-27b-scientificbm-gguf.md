@@ -96,7 +96,7 @@ La comparación relevante es frente al modelo base sin cuantizar (mejor calidad 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-ScientificBM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-ScientificBM-GGUF
 - Modelo base: https://huggingface.co/Rumiii/Qwen3.8-27B-ScientificBM
 - Dataset de ajuste: https://huggingface.co/datasets/gxx27/BioTool
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-ScientificBM-GGUF

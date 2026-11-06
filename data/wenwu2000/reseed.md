@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Pasos de inferencia | Parámetros del adaptador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReSeed (SD3-Medium) | Adaptador de diversidad | 4 | 72.192 | Upstream (Stability AI) | HuggingFace, repo público |
+| ReSeed (SD3-Medium) | Adaptador de diversidad | 4 | 72.192 | Upstream (Stability AI) | Hugging Face, repo público |
 | SD3-Medium DMD (estudiante base) | Estudiante destilado | 4 | No aplica | Upstream (Stability AI) | Incluido en el repo |
 | SenseFlow-FLUX | Estudiante destilado | 4 | No aplica | Upstream (FLUX.1-dev) | Repo domiso/SenseFlow |
 | Wan2.1 DMD2 | Estudiante de vídeo destilado | 4 | No aplica | Upstream (Wan-AI) | Repo csusupergear |
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo (métricas de diversidad, FID,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wenwu2000/ReSeed
+- Hugging Face: https://huggingface.co/Wenwu2000/ReSeed
 - Paper: https://arxiv.org/abs/2610.37110
 - Paper DMD: https://arxiv.org/abs/2311.18828
 - Página del proyecto: https://twwinde.github.io/reseed-project-page/

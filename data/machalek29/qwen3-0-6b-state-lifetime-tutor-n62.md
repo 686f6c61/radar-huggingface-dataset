@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks para comparar estos modelos en la tarea esp
 
 ## Enlaces
 
-- [HuggingFace - machalek29/qwen3-0.6b-state-lifetime-tutor-n62](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n62)
-- [HuggingFace - Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face - machalek29/qwen3-0.6b-state-lifetime-tutor-n62](https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n62)
+- [Hugging Face - Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [GitHub - QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
 - [Guía completa de Qwen3 (insiderllm.com)](https://insiderllm.com/guides/qwen3-complete-guide/)
 - [Informe técnico de Qwen3 (arXiv)](https://arxiv.org/html/2505.09388v1)

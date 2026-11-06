@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jil202/mriartifacts` es un repositorio de modelo publicado en HuggingFace por el usuario jil202 el 8 de octubre de 2026 (actualizado el mismo dia, dos minutos despues, lo que sugiere una subida unica sin iteraciones posteriores). El repositorio tiene un tamano de 0,7 GB, licencia MIT y la etiqueta de region "us". No dispone de pipeline declarado, no declara idiomas soportados y no incluye model card mas alla del campo `license: mit`.
+`jil202/mriartifacts` es un repositorio de modelo publicado en Hugging Face por el usuario jil202 el 8 de octubre de 2026 (actualizado el mismo dia, dos minutos despues, lo que sugiere una subida unica sin iteraciones posteriores). El repositorio tiene un tamano de 0,7 GB, licencia MIT y la etiqueta de region "us". No dispone de pipeline declarado, no declara idiomas soportados y no incluye model card mas alla del campo `license: mit`.
 
 La informacion publica disponible es extremadamente limitada: no se especifican arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni resultados de evaluacion. El nombre del repositorio ("mriartifacts") sugiere una posible relacion con artefactos en imagenes de resonancia magnetica (MRI), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor en la informacion proporcionada.
 
@@ -98,6 +98,6 @@ No disponible. Sin conocer arquitectura, parametros, tarea objetivo ni modalidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jil202/mriartifacts
+- Hugging Face: https://huggingface.co/jil202/mriartifacts
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

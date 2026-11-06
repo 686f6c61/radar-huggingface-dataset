@@ -17,7 +17,7 @@ Conviene ser explícito: no es un modelo utilizable para inferencia. No hay mode
 | Longitud de contexto | no disponible (la familia GPT-2 canónica usa 1024 tokens; no confirmado para estos checkpoints) |
 | Tipos de cuantizacion | no disponible; pesos en safetensors con precisión no documentada |
 | Idiomas soportados | no disponible (el proyecto se llama "bilingual-llms", pero no se detallan los idiomas) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (librería `transformers`) |
 | Estado de los pesos | inicialización aleatoria, sin entrenamiento declarado |
 | Pipeline declarado | no disponible |
@@ -40,7 +40,7 @@ Lo relevante es que no hay entrenamiento: los pesos son una inicialización alea
 - Uso como agente o razonamiento multi-paso: no soportado.
 - Capacidades multilingües: no acreditadas; el nombre del proyecto ("bilingual-llms") no implica que estos checkpoints tengan competencia lingüística alguna.
 - Lo que sí permite: servir de línea base de control en ablaciones, extraer representaciones aleatorias de referencia, analizar el comportamiento del tokenizador con independencia del entrenamiento, validar pipelines de evaluación y comprobar la infraestructura de carga de modelos.
-- La etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints, lo que resulta útil para pruebas de infraestructura sin coste de calidad.
+- La etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints, lo que resulta útil para pruebas de infraestructura sin coste de calidad.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ La variante real no está confirmada. Las siguientes cifras son estimaciones con
 
 - VRAM efectiva: añadir entre un 20 % y un 30 % sobre el tamaño de los pesos para activaciones y buffers de atención, proporcional al batch y a la longitud de secuencia.
 - GPU recomendadas: para inferencia real no aplica; para pruebas de carga, cualquier GPU consumer reciente sirve. En servidor, A100 o H100 están sobredimensionadas para este tamaño.
-- Despliegue: `transformers` es la vía documentada por el autor, con carga por subcarpeta (`subfolder="<condition>/seed_<n>"`). También son viables vLLM, TGI o HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) para pruebas de servicio. Para llama.cpp u Ollama habría que convertir previamente los pesos a GGUF.
+- Despliegue: `transformers` es la vía documentada por el autor, con carga por subcarpeta (`subfolder="<condition>/seed_<n>"`). También son viables vLLM, TGI o Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) para pruebas de servicio. Para llama.cpp u Ollama habría que convertir previamente los pesos a GGUF.
 - Latencia y throughput: no disponibles. Al no existir pesos entrenados, medir rendimiento en tokens por segundo solo caracterizaría la infraestructura, no el modelo.
 - Estimación del contenido del repo: 9,0 GB divididos entre checkpoints de un modelo pequeño sugiere del orden de una decena o más de combinaciones condición × semilla en fp32. Cálculo aproximado, no confirmado por el autor.
 
@@ -98,5 +98,5 @@ La comparación es asimétrica por diseño: los tres modelos de referencia son p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindazeng979/gpt2-random-init
+- Hugging Face: https://huggingface.co/lindazeng979/gpt2-random-init
 - No se han encontrado en la información proporcionada otros enlaces (paper, blog, repositorio de código o demo) asociados al proyecto "bilingual-llms" ni al autor.

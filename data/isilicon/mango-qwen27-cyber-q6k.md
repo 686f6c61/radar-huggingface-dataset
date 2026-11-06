@@ -6,7 +6,7 @@ Mango Qwen27 Cyber Q6K es un artefacto GGUF publicado por isilicon (Mango) como 
 
 El modelo se presenta como un especialista en ciberseguridad derivado de la familia Qwen, con un perfil declarado "uncensored". La relevancia actual del repositorio no está en el modelo en sí, sino en la metodología de evaluación: isilicon publica puntuaciones por dominio, intervalos de confianza y resultados de tareas mecánicas de agente sobre la configuración exacta Q6_K + Q8 MTP, algo poco habitual en espejos de cuantizaciones.
 
-La ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card del autor. No hay información sobre composición del dataset de entrenamiento, idiomas soportados ni detalles del proceso de alineamiento del modelo base.
+La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del autor. No hay información sobre composición del dataset de entrenamiento, idiomas soportados ni detalles del proceso de alineamiento del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -107,7 +107,7 @@ No se dispone de datos suficientes para comparar con alternativas de ciberseguri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-qwen27-cyber-q6k
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-qwen27-cyber-q6k
 - Modelo base: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-GGUF
 - Colección Mango de modelos evaluados y espejos: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Dataset de resultados de evaluación Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michalkcre/hybrid-finetuned` es un repositorio de HuggingFace publicado por el usuario michalkcre (Michal Kowalski) que contiene una implementación experimental de una arquitectura denominada "Hybrid" orientada a tareas de recuperación (retrieval). No es un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`michalkcre/hybrid-finetuned` es un repositorio de Hugging Face publicado por el usuario michalkcre (Michal Kowalski) que contiene una implementación experimental de una arquitectura denominada "Hybrid" orientada a tareas de recuperación (retrieval). No es un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio es, por tanto, una base de código antes que un modelo. El artefacto principal es `main.py`, acompañado de `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicialización. La configuración declarada usa escala "xlarge", atención de tipo grouped query, fusión mediante descomposición de Tucker, activación ReLU y normalización GroupNorm, con un recuento de safetensors de 33.088 parámetros totales, cifra que no concuerda con una escala "xlarge" y que apunta a un artefacto de tamaño mínimo (el repositorio ocupa 0,0 GB).
 
@@ -89,7 +89,7 @@ No disponible. No se han proporcionado datos de modelos comparables y la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michalkcre/hybrid-finetuned
+- Modelo en Hugging Face: https://huggingface.co/michalkcre/hybrid-finetuned
 - Perfil del autor: https://huggingface.co/michalkcre
 - Listado de modelos del autor: https://huggingface.co/michalkcre/models
 - Modelo más reciente del autor (referencia de actividad): https://huggingface.co/michalkcre/model_058084448_cnn_transformer_large

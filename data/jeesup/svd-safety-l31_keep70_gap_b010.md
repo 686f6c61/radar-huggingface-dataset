@@ -105,7 +105,7 @@ La busqueda web realizada no devolvio resultados utiles (unicamente una pagina s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep70_gap_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep70_gap_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE` y `USE_POLICY.md` en https://huggingface.co/Jeesup/svd-safety-l31_keep70_gap_b010/tree/main
 - Paper, blog o repositorio del metodo SVD-LLM: no disponible en la informacion proporcionada.

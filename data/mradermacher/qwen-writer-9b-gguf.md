@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Writer-9B-GGUF no es un modelo entrenado desde cero, sino el repositorio de cuantizaciones GGUF del modelo ConicCat/Qwen-Writer-9B, publicado por el usuario mradermacher, especializado en convertir pesos de HuggingFace a formatos GGUF listos para llama.cpp y derivados. El modelo base tiene aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones) y esta etiquetado como conversacional y orientado al idioma ingles. El repositorio (81,4 GB) contiene doce variantes de cuantizacion estatica que van desde Q2_K (3,9 GB) hasta f16 (18,0 GB).
+Qwen-Writer-9B-GGUF no es un modelo entrenado desde cero, sino el repositorio de cuantizaciones GGUF del modelo ConicCat/Qwen-Writer-9B, publicado por el usuario mradermacher, especializado en convertir pesos de Hugging Face a formatos GGUF listos para llama.cpp y derivados. El modelo base tiene aproximadamente 8.953.803.264 parametros (unos 8,95 mil millones) y esta etiquetado como conversacional y orientado al idioma ingles. El repositorio (81,4 GB) contiene doce variantes de cuantizacion estatica que van desde Q2_K (3,9 GB) hasta f16 (18,0 GB).
 
 La relevancia de este repositorio es puramente practica: permite ejecutar un modelo de ~9B en hardware de consumo o en servidores modestos sin necesidad de convertir pesos manualmente. El autor ha publicado variantes Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y f16, cubriendo el rango habitual de compromiso entre tamano y calidad. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no declara licencia.
 
@@ -30,7 +30,7 @@ Conviene tratarlo con cautela: la model card no documenta arquitectura, longitud
 
 No se dispone de informacion sobre la arquitectura del modelo en los datos proporcionados. La model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estaticas de ConicCat/Qwen-Writer-9B, y no incluye detalles sobre tipo de transformer, atencion, numero de capas, dimension del hidden state o estrategia de tokenizacion. El nombre del modelo apunta a una base de la familia Qwen, pero esto es una inferencia nominal y no un dato confirmado en la informacion disponible.
 
-Tampoco hay datos sobre el entrenamiento: no se especifica el numero de tokens, la composicion del corpus, si hubo ajuste por instrucciones, RLHF, DPO u otra tecnica de alineamiento, ni si se aplicaron metodos de decodificacion especulativa o atencion lineal. Del proceso de cuantizacion si se conocen algunos detalles tecnicos: el autor declara quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica una conversion desde pesos HuggingFace con cuantizacion de tensores de salida.
+Tampoco hay datos sobre el entrenamiento: no se especifica el numero de tokens, la composicion del corpus, si hubo ajuste por instrucciones, RLHF, DPO u otra tecnica de alineamiento, ni si se aplicaron metodos de decodificacion especulativa o atencion lineal. Del proceso de cuantizacion si se conocen algunos detalles tecnicos: el autor declara quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica una conversion desde pesos Hugging Face con cuantizacion de tensores de salida.
 
 ## Capacidades
 
@@ -115,7 +115,7 @@ No se conocen comparativas directas de calidad entre Qwen-Writer-9B y estos mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-Writer-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-Writer-9B-GGUF
 - Modelo base: https://huggingface.co/ConicCat/Qwen-Writer-9B
 - Pagina de resumen y descarga del autor: https://hf.tst.eu/model#Qwen-Writer-9B-GGUF
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

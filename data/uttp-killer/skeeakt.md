@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkeeAkt es un modelo publicado en HuggingFace por el usuario UTTP-killer bajo el identificador `UTTP-killer/SkeeAkt`, con pipeline declarado `text-to-3d`. Se presenta como un fine-tune (o derivado) del modelo base `meshy-ai-team/seamflow`, un modelo de generacion de mallas 3D a partir de texto, y referencia tambien como base secundaria una cuantizacion GGUF de Gemma 3 4B VL, lo que sugiere un posible componente multimodal o de procesamiento de lenguaje en el pipeline. La model card publicada es practicamente vacia: solo incluye metadatos YAML de licencia, idiomas y modelos base, sin descripcion tecnica, datos de entrenamiento ni resultados.
+SkeeAkt es un modelo publicado en Hugging Face por el usuario UTTP-killer bajo el identificador `UTTP-killer/SkeeAkt`, con pipeline declarado `text-to-3d`. Se presenta como un fine-tune (o derivado) del modelo base `meshy-ai-team/seamflow`, un modelo de generacion de mallas 3D a partir de texto, y referencia tambien como base secundaria una cuantizacion GGUF de Gemma 3 4B VL, lo que sugiere un posible componente multimodal o de procesamiento de lenguaje en el pipeline. La model card publicada es practicamente vacia: solo incluye metadatos YAML de licencia, idiomas y modelos base, sin descripcion tecnica, datos de entrenamiento ni resultados.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta (0 descargas, 0 likes) y fue creado el 3 de noviembre de 2026, con una unica actualizacion minutos despues. Esto indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad. La ausencia de documentacion tecnica hace imposible verificar arquitectura, tamano, contexto o calidad de generacion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SkeeAkt (UTTP-killer) | no disponible | no disponible | cc-by-2.0 | HuggingFace, 0 descargas | Fine-tune de seamflow, sin documentacion |
-| meshy-ai-team/seamflow | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo base declarado por el autor |
-| Gemma-3-4B-VL-it-Gemini-Pro-Heretic-Uncensored-Thinking-GGUF | 4B (Gemma 3 4B VL) | no disponible | no disponible | HuggingFace (mradermacher) | Referenciado como base secundaria, cuantizado GGUF |
+| SkeeAkt (UTTP-killer) | no disponible | no disponible | cc-by-2.0 | Hugging Face, 0 descargas | Fine-tune de seamflow, sin documentacion |
+| meshy-ai-team/seamflow | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo base declarado por el autor |
+| Gemma-3-4B-VL-it-Gemini-Pro-Heretic-Uncensored-Thinking-GGUF | 4B (Gemma 3 4B VL) | no disponible | no disponible | Hugging Face (mradermacher) | Referenciado como base secundaria, cuantizado GGUF |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o calidad con alternativas de la misma categoria.
 
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UTTP-killer/SkeeAkt
+- Hugging Face: https://huggingface.co/UTTP-killer/SkeeAkt
 - Modelo base declarado: https://huggingface.co/meshy-ai-team/seamflow
 - Base secundaria referenciada: https://huggingface.co/mradermacher/Gemma-3-4B-VL-it-Gemini-Pro-Heretic-Uncensored-Thinking-GGUF

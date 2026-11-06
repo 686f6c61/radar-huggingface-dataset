@@ -74,10 +74,10 @@ Consumo pico de VRAM: 2,96 GB (18,5 % de una GPU de 16 GB). No se han publicado 
 
 | Alternativa | Parametros | Contexto | Aceleracion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpecDecode-edge (Medusa 3 cabezas sobre Qwen2.5-1.5B) | ~707M entrenados + 1,5B congelados | No disponible | 1,01x-1,08x en RTX 5060 Ti | Apache 2.0 | HuggingFace + GitHub propio |
+| SpecDecode-edge (Medusa 3 cabezas sobre Qwen2.5-1.5B) | ~707M entrenados + 1,5B congelados | No disponible | 1,01x-1,08x en RTX 5060 Ti | Apache 2.0 | Hugging Face + GitHub propio |
 | Medusa original (Cai et al., 2024) | Cabezas sobre Vicuna/LLaMA | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Referencia académica citada en la model card |
 | Decodificacion especulativa con modelo draft (p. ej. 0,5B sobre 1,5B) | Modelo draft completo | El del modelo draft | No disponible en esta informacion | Depende del draft | Ampliamente soportada en vLLM y TGI |
-| Qwen2.5-1.5B-Instruct sin aceleracion | ~1,5B | El del modelo base | 1x (referencia) | Apache 2.0 | HuggingFace |
+| Qwen2.5-1.5B-Instruct sin aceleracion | ~1,5B | El del modelo base | 1x (referencia) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de aceleracion ni de calidad frente a EAGLE, EAGLE-2 u otros esquemas especulativos en la informacion proporcionada. La comparacion con el Medusa original es cualitativa: misma familia de metodo, distinto modelo objetivo y distinta configuracion de cabezas.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de aceleracion ni de calidad frente a EAGLE,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adityapande403/SpecDecode-edge
+- Modelo en Hugging Face: https://huggingface.co/Adityapande403/SpecDecode-edge
 - Repositorio de código: https://github.com/adityapande403/SpecDecode-edge
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia del método: Medusa, *Simple LLM Inference Acceleration Framework with Multiple Decoding Heads* (Cai et al., 2024), citado en la model card sin URL.

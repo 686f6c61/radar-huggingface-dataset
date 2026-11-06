@@ -26,7 +26,7 @@ Es relevante ahora porque los modelos MoE con pocos parametros activos estan des
 | Tamano del repositorio | 24,7 GB |
 | Modelo base | apodex/Apodex-1.1-mini (y su version cuantizada apodex/Apodex-1.1-mini-GPTQ-Int4) |
 | Autor de la adaptacion | kataguru (plantilla de chat en fines, integracion y validacion) |
-| Fecha de publicacion | 21 de septiembre de 2026, segun los metadatos de HuggingFace |
+| Fecha de publicacion | 21 de septiembre de 2026, segun los metadatos de Hugging Face |
 | Token de pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -92,10 +92,10 @@ Los datos de la columna comparativa no proceden de la informacion proporcionada 
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Apodex-1.1-mini-Finnish-GPTQ-Int4 | 36B / ~3B (8 de 256 expertos) | 262.144 tokens | Apache 2.0 | HuggingFace, GPTQ Int4 para vLLM | Especializado en fines, vision nativa, sin benchmarks publicados |
-| Qwen3-30B-A3B | 30,5B / 3,3B (8 de 128 expertos) | 32.768 tokens nativo, ampliable a 131.072 | Apache 2.0 | HuggingFace, multiples formatos | Sin especializacion finesa, referencia habitual en la categoria MoE de ~3B activos |
-| Qwen3-32B (denso) | 32,8B / 32,8B | 32.768 tokens nativo, ampliable a 131.072 | Apache 2.0 | HuggingFace | Mayor coste por token al ser denso; mejor latencia no aplica, peor throughput |
-| Mixtral 8x7B | 46,7B / 12,9B | 32.768 tokens | Apache 2.0 | HuggingFace, ecosistema amplio | Mas parametros activos (12,9B), mayor coste de inferencia, sin vision |
+| Apodex-1.1-mini-Finnish-GPTQ-Int4 | 36B / ~3B (8 de 256 expertos) | 262.144 tokens | Apache 2.0 | Hugging Face, GPTQ Int4 para vLLM | Especializado en fines, vision nativa, sin benchmarks publicados |
+| Qwen3-30B-A3B | 30,5B / 3,3B (8 de 128 expertos) | 32.768 tokens nativo, ampliable a 131.072 | Apache 2.0 | Hugging Face, multiples formatos | Sin especializacion finesa, referencia habitual en la categoria MoE de ~3B activos |
+| Qwen3-32B (denso) | 32,8B / 32,8B | 32.768 tokens nativo, ampliable a 131.072 | Apache 2.0 | Hugging Face | Mayor coste por token al ser denso; mejor latencia no aplica, peor throughput |
+| Mixtral 8x7B | 46,7B / 12,9B | 32.768 tokens | Apache 2.0 | Hugging Face, ecosistema amplio | Mas parametros activos (12,9B), mayor coste de inferencia, sin vision |
 
 Las cifras de los modelos comparativos corresponden a especificaciones publicas conocidas y no a la informacion proporcionada en esta busqueda; deben confirmarse en sus respectivas fichas. No se dispone de una comparacion oficial entre Apodex-1.1-mini y estos modelos.
 
@@ -115,7 +115,7 @@ Las cifras de los modelos comparativos corresponden a especificaciones publicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GPTQ-Int4
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GPTQ-Int4
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Version cuantizada del modelo base citada por el autor: https://huggingface.co/apodex/Apodex-1.1-mini-GPTQ-Int4 (referencia textual de la model card; no verificada)
 - Documentacion de vLLM para despliegue GPTQ y multimodal: no disponible en la informacion proporcionada

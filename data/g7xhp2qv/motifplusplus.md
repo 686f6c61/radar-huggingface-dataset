@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOTIFPlusPlus es un repositorio alojado en HuggingFace bajo el identificador `G7xHp2Qv/MOTIFPlusPlus`, publicado por el usuario `G7xHp2Qv` con licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más información que el bloque de frontmatter con la licencia: no hay descripción del modelo, ni arquitectura declarada, ni tamaño, ni datos de entrenamiento.
+MOTIFPlusPlus es un repositorio alojado en Hugging Face bajo el identificador `G7xHp2Qv/MOTIFPlusPlus`, publicado por el usuario `G7xHp2Qv` con licencia Apache-2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más información que el bloque de frontmatter con la licencia: no hay descripción del modelo, ni arquitectura declarada, ni tamaño, ni datos de entrenamiento.
 
 Esto significa que no es posible determinar qué problema resuelve, sobre qué modalidad opera (texto, visión, audio u otra) ni con qué recursos se entrena. El nombre "MOTIFPlusPlus" sugiere una variante "++" de un método o modelo previo llamado MOTIF, pero se trata de una inferencia a partir del nombre y no está confirmada por ninguna documentación del repositorio.
 
@@ -80,5 +80,5 @@ No disponible. Sin parámetros, contexto, arquitectura ni benchmarks publicados,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G7xHp2Qv/MOTIFPlusPlus
+- Hugging Face: https://huggingface.co/G7xHp2Qv/MOTIFPlusPlus
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

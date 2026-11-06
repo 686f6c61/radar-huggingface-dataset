@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPRING_F5 | ~330M | 24 (23 indios + inglés) | No disponible | Apache 2.0 | HuggingFace |
+| SPRING_F5 | ~330M | 24 (23 indios + inglés) | No disponible | Apache 2.0 | Hugging Face |
 | F5-TTS (base) | ~330M | Principalmente inglés y algunos multilingües | No disponible | MIT (según repo original) | GitHub/HuggingFace |
-| VITS | ~30-100M | Varía según checkpoint | No disponible | MIT (checkpoints varios) | HuggingFace |
+| VITS | ~30-100M | Varía según checkpoint | No disponible | MIT (checkpoints varios) | Hugging Face |
 
 La comparativa se limita a los modelos más cercanos disponibles públicamente. F5-TTS es el modelo base de SPRING_F5 y comparte arquitectura y tamaño, pero no tiene el soporte específico para lenguas indias ni el code-mixing. VITS es un modelo TTS más ligero pero con menos idiomas soportados y sin la capacidad de code-mixing documentada. No se dispone de datos de rendimiento comparativo.
 
@@ -75,7 +75,7 @@ La comparativa se limita a los modelos más cercanos disponibles públicamente. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SPRINGLab/SPRING_F5
+- Repositorio Hugging Face: https://huggingface.co/SPRINGLab/SPRING_F5
 - Repositorio GitHub: https://github.com/ArigalaAdarsh/SPRING_F5
 - Modelo base F5-TTS: https://github.com/SWivid/F5-TTS
 - Dataset Rasa: https://huggingface.co/datasets/ai4bharat/Rasa

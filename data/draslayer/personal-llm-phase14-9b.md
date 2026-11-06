@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DraSlayer/personal-llm-phase14-9b` es un checkpoint alojado en HuggingFace por el usuario DraSlayer, publicado el 16 de agosto de 2026. Según el nombre, se trataría de un modelo de aproximadamente 9 mil millones de parámetros, pero no se dispone de información oficial que lo confirme. La model card asociada es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, entrenamiento, licencia o capacidades. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere que podría tratarse de un adaptador, una cuantización extrema o un subconjunto de pesos, aunque no hay evidencia concluyente.
+El modelo `DraSlayer/personal-llm-phase14-9b` es un checkpoint alojado en Hugging Face por el usuario DraSlayer, publicado el 16 de agosto de 2026. Según el nombre, se trataría de un modelo de aproximadamente 9 mil millones de parámetros, pero no se dispone de información oficial que lo confirme. La model card asociada es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, entrenamiento, licencia o capacidades. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere que podría tratarse de un adaptador, una cuantización extrema o un subconjunto de pesos, aunque no hay evidencia concluyente.
 
 El modelo se presenta con etiquetas que indican compatibilidad con la librería `transformers`, formato `safetensors`, y referencia al paper arXiv:1910.09700 (que trata sobre estimación de impacto ambiental en ML, no sobre la arquitectura del modelo). No se han registrado descargas ni valoraciones, y no existe documentación adicional. En resumen, se trata de un modelo con información pública extremadamente limitada, lo que impide cualquier evaluación técnica seria o recomendación de uso.
 
@@ -56,4 +56,4 @@ No se puede establecer una comparativa fiable. No se conocen modelos de referenc
 
 ## Enlaces
 
-- [HuggingFace - DraSlayer/personal-llm-phase14-9b](https://huggingface.co/DraSlayer/personal-llm-phase14-9b)
+- [Hugging Face - DraSlayer/personal-llm-phase14-9b](https://huggingface.co/DraSlayer/personal-llm-phase14-9b)

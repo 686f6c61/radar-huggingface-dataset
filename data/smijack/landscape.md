@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Landscape es un adaptador LoRA de difusion texto a imagen publicado por el usuario Smijack en HuggingFace. No es un modelo completo: se trata de un ajuste de bajo rango pensado para aplicarse sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de difusion de gran tamano. Su unica funcion documentada es la generacion de imagenes de paisajes activadas mediante la palabra disparadora `Oudolf`.
+Landscape es un adaptador LoRA de difusion texto a imagen publicado por el usuario Smijack en Hugging Face. No es un modelo completo: se trata de un ajuste de bajo rango pensado para aplicarse sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de difusion de gran tamano. Su unica funcion documentada es la generacion de imagenes de paisajes activadas mediante la palabra disparadora `Oudolf`.
 
 La ficha del autor es minima. Aporta la palabra de activacion, una galeria de ejemplos generados (los nombres de archivo, `ComfyUI_Flux_*.png`, indican que se probo en ComfyUI) y un enlace de descarga. No se documentan parametros de entrenamiento, composicion del dataset, rango del adaptador, learning rate, numero de pasos ni resolucion de entrenamiento. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo.
 
@@ -76,9 +76,9 @@ No hay datos de rendimiento del adaptador, por lo que la comparacion se limita a
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Landscape (`Smijack/Landscape`) | LoRA sobre FLUX.1-dev | no disponible (repo de 0,1 GB) | no aplica | no disponible | Publico en HuggingFace, 0 descargas |
-| FLUX.1-dev sin adaptadores | Transformer de difusion texto a imagen | no disponible en esta ficha (base del LoRA) | no aplica | Licencia propia del modelo base | Publico en HuggingFace |
-| Adaptadores LoRA comparables sobre FLUX.1-dev | LoRA de estilo | tipicamente decenas o cientos de MB | no aplica | variable segun autor | Multiples en HuggingFace; no se dispone de datos concretos en esta busqueda |
+| Landscape (`Smijack/Landscape`) | LoRA sobre FLUX.1-dev | no disponible (repo de 0,1 GB) | no aplica | no disponible | Publico en Hugging Face, 0 descargas |
+| FLUX.1-dev sin adaptadores | Transformer de difusion texto a imagen | no disponible en esta ficha (base del LoRA) | no aplica | Licencia propia del modelo base | Publico en Hugging Face |
+| Adaptadores LoRA comparables sobre FLUX.1-dev | LoRA de estilo | tipicamente decenas o cientos de MB | no aplica | variable segun autor | Multiples en Hugging Face; no se dispone de datos concretos en esta busqueda |
 
 No se dispone de informacion sobre alternativas equivalentes de paisajismo con las que establecer una comparacion cuantitativa fiable.
 
@@ -96,7 +96,7 @@ No se dispone de informacion sobre alternativas equivalentes de paisajismo con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Smijack/Landscape
+- Modelo en Hugging Face: https://huggingface.co/Smijack/Landscape
 - Archivos y versiones: https://huggingface.co/Smijack/Landscape/tree/main
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers/index

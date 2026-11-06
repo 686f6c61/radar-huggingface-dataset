@@ -90,8 +90,8 @@ Dentro de la informacion disponible, las unicas alternativas comparables son el 
 
 | Modelo | Parametros | Formato | Contexto | Rendimiento tau2-bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (araz4111, EXL3 3,0 bpw) | 146.311.635.584 segun safetensors; 753.000 millones declarados para el origen | safetensors EXL3, 273 GiB | 65.536 tokens configurados en la prueba | Airline 0,640 ± 0,048; retail 0,482 ± 0,047 | MIT | HuggingFace, runtime ExLlamaV3 |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | No disponible | FP8 | No disponible | No disponible | No disponible | HuggingFace |
+| Este repositorio (araz4111, EXL3 3,0 bpw) | 146.311.635.584 segun safetensors; 753.000 millones declarados para el origen | safetensors EXL3, 273 GiB | 65.536 tokens configurados en la prueba | Airline 0,640 ± 0,048; retail 0,482 ± 0,047 | MIT | Hugging Face, runtime ExLlamaV3 |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | No disponible | FP8 | No disponible | No disponible | No disponible | Hugging Face |
 | zai-org/GLM-5.3 (stock, servido por Z.ai en FP8) | 753.000 millones (segun la model card) | FP8 | No disponible | Airline 0,710 ± 0,045; retail 0,504 ± 0,033 | MIT segun la model card de este repositorio | Via OpenRouter / Z.ai |
 
 Ademas, la busqueda web identifica repositorios con el mismo nombre y contenido aparentemente replicado (`Ars14n/GLM-5.3-UNCENSORED-EXL3-3.0bpw`, `Himee1/GLM-5.3-UNCENSORED-EXL3-3.0bpw`, `Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw`), lo que sugiere redistribuciones del mismo artefacto. No hay datos de rendimiento publicados para ellos. No se dispone de informacion sobre otros modelos comparables de la misma categoria en las fuentes consultadas.
@@ -111,7 +111,7 @@ Ademas, la busqueda web identifica repositorios con el mismo nombre y contenido 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/araz4111/GLM-5.3-UNCENSORED-EXL3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/araz4111/GLM-5.3-UNCENSORED-EXL3-3.0bpw
 - Modelo base (FP8): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3
 - Repositorio con nombre identico (Ars14n): https://huggingface.co/Ars14n/GLM-5.3-UNCENSORED-EXL3-3.0bpw

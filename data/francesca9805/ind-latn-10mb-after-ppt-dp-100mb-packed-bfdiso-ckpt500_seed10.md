@@ -1,7 +1,7 @@
 # francesca9805/ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 
 ## Resumen
-El modelo `ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un modelo de generacion de texto de 39.087.104 parametros (aproximadamente 39,1 millones) publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base ya preentrenado del mismo autor, `francesca9805/ind-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`. El etiquetado de la ficha lo situa dentro de la familia GPT-2 y lo clasifica como `text-generation`.
+El modelo `ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un modelo de generacion de texto de 39.087.104 parametros (aproximadamente 39,1 millones) publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL sobre un modelo base ya preentrenado del mismo autor, `francesca9805/ind-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`. El etiquetado de la ficha lo situa dentro de la familia GPT-2 y lo clasifica como `text-generation`.
 
 El nombre del modelo es altamente descriptivo del pipeline experimental del autor: el prefijo `ind-latn` sugiere un corpus en indonesio con escritura latina, `10mb` y `Dp-100mb` hacen referencia a volumenes de datos, `packed` apunta a empaquetado de secuencias, `bfdiso` probablemente a un formato de entrenamiento en precision bf16, y `ckpt500_seed10` indica que se trata del checkpoint 500 con semilla 10. Todo ello forma parte de una serie de experimentos de tokenizacion y preentrenamiento (carpeta de W&B denominada `new-tokenizers`) desarrollada en la Universidad de Groningen.
 
@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: muy baja. Con 39,1 M de parametros, los pesos en bf16 ocupan aproximadamente 78 MB, y en fp32 alrededor de 156 MB. La entrada de LLM Explorer para un modelo hermano de similar tamano indica un consumo de VRAM en torno a 0,1 GB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090). Tambien puede ejecutarse en CPU sin problemas de rendimiento critico.
 - Cabe holgadamente en GPU consumer, e incluso en entornos integrados o moviles con cuantizacion a 4 u 8 bits.
-- Opciones de despliegue: `transformers` con la pipeline `text-generation`, `text-generation-inference` (TGI, etiquetado en el repositorio) y `endpoints_compatible` (Infrastructure Endpoints de HuggingFace). No se documenta soporte GGUF/llama.cpp ni Ollama.
+- Opciones de despliegue: `transformers` con la pipeline `text-generation`, `text-generation-inference` (TGI, etiquetado en el repositorio) y `endpoints_compatible` (Infrastructure Endpoints de Hugging Face). No se documenta soporte GGUF/llama.cpp ni Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Dado el tamano, se espera una latencia en el orden de milisegundos por token en GPU y decenas de milisegundos en CPU, sin datos confirmados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39,1 M | no disponible | no disponible | HuggingFace |
-| francesca9805/eng-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | no disponible (misma serie) | no disponible | no disponible | HuggingFace |
-| francesca9805/ita-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | no disponible (misma serie) | no disponible | no disponible | HuggingFace, FriendliAI |
-| GPT-2 small | 124 M | 1024 | MIT | HuggingFace, ampliamente disponible |
+| ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39,1 M | no disponible | no disponible | Hugging Face |
+| francesca9805/eng-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | no disponible (misma serie) | no disponible | no disponible | Hugging Face |
+| francesca9805/ita-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | no disponible (misma serie) | no disponible | no disponible | Hugging Face, FriendliAI |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face, ampliamente disponible |
 
 La comparativa mas directa es con los modelos hermanos de la misma serie (variantes `eng-latn` e `ita-latn`), que comparten arquitectura, tamano y procedimiento de entrenamiento, diferenciandose unicamente en el idioma del corpus. Frente a GPT-2 small, el modelo es aproximadamente tres veces mas pequeno y carece de benchmarks publicados que permitan comparar rendimiento real.
 
@@ -77,7 +77,7 @@ La comparativa mas directa es con los modelos hermanos de la misma serie (varian
 - El repositorio ocupa 3,4 GB, muy por encima de lo esperable para 39 M de parametros, lo que probablemente indica la presencia de multiples checkpoints u optimizer states; conviene revisar los archivos antes de descargar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/02pgni1z
 - Repositorio de TRL: https://github.com/huggingface/trl

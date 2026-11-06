@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/bwindi-llama-3.2-3b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/bwindi-llama-3.2-3b-GGUF
 - Modelo base: https://huggingface.co/zerothvictor/bwindi-llama-3.2-3b
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#bwindi-llama-3.2-3b-GGUF
 - Solicitudes de cuantización y FAQ: https://huggingface.co/mradermacher/model_requests

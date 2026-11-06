@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moi123456/qwen2.5-7b-instruct-uncensored` es un modelo derivado de la familia Qwen2.5-7B-Instruct, publicado por el usuario `moi123456` en HuggingFace. Se trata de un ajuste fino orientado a eliminar los mecanismos de rechazo y moderacion del modelo base, manteniendo la arquitectura transformer densa original de Qwen2.5. El repositorio contiene unicamente pesos en formato GGUF, lo que sugiere que esta pensado para inferencia local con llama.cpp u Ollama mas que para entrenamiento o despliegue en servidores de alta concurrencia.
+`moi123456/qwen2.5-7b-instruct-uncensored` es un modelo derivado de la familia Qwen2.5-7B-Instruct, publicado por el usuario `moi123456` en Hugging Face. Se trata de un ajuste fino orientado a eliminar los mecanismos de rechazo y moderacion del modelo base, manteniendo la arquitectura transformer densa original de Qwen2.5. El repositorio contiene unicamente pesos en formato GGUF, lo que sugiere que esta pensado para inferencia local con llama.cpp u Ollama mas que para entrenamiento o despliegue en servidores de alta concurrencia.
 
 El modelo conserva el tamano del Qwen2.5-7B original: 7.615.616.512 parametros en safetensors, lo que corresponde a aproximadamente 7.600 millones de parametros. La model card publicada es practicamente vacia (solo declara la licencia Apache 2.0), por lo que no hay informacion verificable sobre el proceso de entrenamiento, los datos utilizados para el "uncensoring" ni las capacidades exactas del modelo resultante.
 
@@ -83,7 +83,7 @@ Frente al Qwen2.5-7B-Instruct oficial, este derivado no aporta ventajas tecnicas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moi123456/qwen2.5-7b-instruct-uncensored
+- Hugging Face: https://huggingface.co/moi123456/qwen2.5-7b-instruct-uncensored
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

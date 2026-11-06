@@ -1,7 +1,7 @@
 # ChaoyangWang735/Video-Coder-9B
 
 ## Resumen
-Video-Coder-9B es un modelo publicado en HuggingFace por el usuario ChaoyangWang735 bajo licencia Apache 2.0. Por el nombre se deduce que está orientado a tareas de generación de código con posible componente de vídeo, y que cuenta con aproximadamente 9 mil millones de parámetros. Sin embargo, la model card pública no contiene descripción, documentación técnica, ejemplos de uso ni resultados de evaluación: únicamente incluye la etiqueta de licencia.
+Video-Coder-9B es un modelo publicado en Hugging Face por el usuario ChaoyangWang735 bajo licencia Apache 2.0. Por el nombre se deduce que está orientado a tareas de generación de código con posible componente de vídeo, y que cuenta con aproximadamente 9 mil millones de parámetros. Sin embargo, la model card pública no contiene descripción, documentación técnica, ejemplos de uso ni resultados de evaluación: únicamente incluye la etiqueta de licencia.
 
 La información disponible es, por tanto, mínima: no se especifican arquitectura, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento ni proceso de alineación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización coinciden, lo que sugiere una publicación reciente y sin actividad posterior.
 
@@ -77,7 +77,7 @@ No es posible establecer una comparativa rigurosa porque el autor no ha publicad
 - Se recomienda no emplear el modelo en producción sin una evaluación propia y sin confirmar la integridad y procedencia de los pesos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ChaoyangWang735/Video-Coder-9B
+- Hugging Face: https://huggingface.co/ChaoyangWang735/Video-Coder-9B
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de código: no disponible

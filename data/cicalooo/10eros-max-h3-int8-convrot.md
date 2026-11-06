@@ -4,7 +4,7 @@
 
 El modelo `cicalooo/10Eros-Max-h3-int8-convrot` es una conversión cuantizada a INT8 del modelo de difusión `10Eros-Max` H3, desarrollado originalmente por TenStrip. Esta variante, creada por el usuario cicalooo, aplica el formato nativo `int8_tensorwise` con la técnica ConvRot de Comfy Kitchen, reduciendo el tamaño del archivo de aproximadamente 41.9 GB (en BF16) a unos 20.2 GB. El objetivo es permitir la ejecución del modelo en entornos con menor memoria de GPU, manteniendo la compatibilidad con ComfyUI mediante su sistema de carga nativo de modelos cuantizados.
 
-La conversión se realizó con la herramienta `Comfy-Org/comfy-model-tools` sobre el archivo `10Eros_Max_h3_fl2va_beta2_pruned.safetensors`, cuantizando 208 capas con un groupsize de 256 y cuantización per-channel absmax. El modelo resultante está pensado para ser cargado directamente en el directorio `models/diffusion_models` de ComfyUI, siempre que la versión instalada soporte modelos INT8 ConvRot. No se dispone de información sobre la licencia, los idiomas soportados ni el pipeline específico, ya que estos campos no están publicados en la ficha de HuggingFace.
+La conversión se realizó con la herramienta `Comfy-Org/comfy-model-tools` sobre el archivo `10Eros_Max_h3_fl2va_beta2_pruned.safetensors`, cuantizando 208 capas con un groupsize de 256 y cuantización per-channel absmax. El modelo resultante está pensado para ser cargado directamente en el directorio `models/diffusion_models` de ComfyUI, siempre que la versión instalada soporte modelos INT8 ConvRot. No se dispone de información sobre la licencia, los idiomas soportados ni el pipeline específico, ya que estos campos no están publicados en la ficha de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo en HuggingFace: cicalooo/10Eros-Max-h3-int8-convrot](https://huggingface.co/cicalooo/10Eros-Max-h3-int8-convrot)
+- [Modelo en Hugging Face: cicalooo/10Eros-Max-h3-int8-convrot](https://huggingface.co/cicalooo/10Eros-Max-h3-int8-convrot)
 - [Modelo original: TenStrip/10Eros-Max](https://huggingface.co/TenStrip/10Eros-Max)
 - [Herramienta de conversión: Comfy-Org/comfy-model-tools](https://github.com/Comfy-Org/comfy-model-tools)

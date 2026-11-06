@@ -56,7 +56,7 @@ La innovacion diferencial no esta en la arquitectura sino en el post-procesado: 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de HuggingFace ni la model card del autor incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, ni para el modelo original ni para la version abliterada. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de Hugging Face ni la model card del autor incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, ni para el modelo original ni para la version abliterada. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparados proceden de sus fichas oficiales. No se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-GGUF
 - Modelo base en safetensors: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
 - Version MLX 4-bit: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-MLX-4Bit
 - Cuantizaciones adicionales (Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q5_K_S): https://huggingface.co/mradermacher/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF

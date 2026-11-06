@@ -29,7 +29,7 @@ Su relevancia es practica: ofrece deteccion de objetos en tiempo real sobre hard
 | Hardware objetivo | NPU Torq de procesadores Synaptics Astra SL2610-Series |
 | Libreria | torq |
 | Tamano del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 25 / 0 |
+| Descargas / likes en Hugging Face | 25 / 0 |
 | Fechas | creado 2026-08-26; actualizado 2026-09-11 |
 
 ## Arquitectura y entrenamiento
@@ -86,8 +86,8 @@ Comparativa interna entre las dos variantes publicadas en el mismo repositorio:
 
 | Modelo | Parametros | Contexto | mAP50 (INT8) | Latencia | fps | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| yolo26n | no disponible | no aplica | 0,403 | 12,9 ms | 78 | AGPL-3.0 | TFLite INT8 + VMFB en HuggingFace |
-| yolo26s | no disponible | no aplica | 0,503 | 33,5 ms | 30 | AGPL-3.0 | TFLite INT8 + VMFB en HuggingFace |
+| yolo26n | no disponible | no aplica | 0,403 | 12,9 ms | 78 | AGPL-3.0 | TFLite INT8 + VMFB en Hugging Face |
+| yolo26s | no disponible | no aplica | 0,503 | 33,5 ms | 30 | AGPL-3.0 | TFLite INT8 + VMFB en Hugging Face |
 
 Comparativa con alternativas externas (YOLOv8, YOLOv11, RT-DETR u otros detectores end-to-end): no disponible en la informacion proporcionada. No se han publicado parametros, contexto ni metricas de terceros que permitan una comparacion homogenea sobre la misma NPU.
 
@@ -103,11 +103,11 @@ Comparativa con alternativas externas (YOLOv8, YOLOv11, RT-DETR u otros detector
 - Idiomas: no disponible; al ser un detector de imagenes no soporta entrada o salida de texto ni capacidades multilingues.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de falsos positivos derivado del umbral y de la saturacion de confianza descrita.
 - Trazabilidad del entrenamiento: no se documentan datos de entrenamiento, numero de imagenes ni procedencia del dataset, lo que dificulta evaluar sesgos de dominio o clase.
-- Madurez del artefacto: 25 descargas y 0 likes en HuggingFace en el momento de la consulta; el repositorio figura con un tamano de 0,0 GB reportado por la plataforma.
+- Madurez del artefacto: 25 descargas y 0 likes en Hugging Face en el momento de la consulta; el repositorio figura con un tamano de 0,0 GB reportado por la plataforma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synaptics/yolov26n_od
+- Modelo en Hugging Face: https://huggingface.co/Synaptics/yolov26n_od
 - Licencia AGPL-3.0 de Ultralytics: https://github.com/ultralytics/ultralytics/blob/main/LICENSE
 - Arreglos de compilador para YOLO26 citados en la model card: synaptics-torq/torq-compiler-dev #2285 y #2337 (identificadores de issue/PR; no se proporciona URL directa en la informacion disponible)
 - Modelo base referenciado: Synaptics/yolo (no se proporciona URL directa)

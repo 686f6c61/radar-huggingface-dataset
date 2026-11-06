@@ -82,9 +82,9 @@ Nota: los valores absolutos de GSM8K, ARC-Easy e IFEval del modelo afinado no se
 
 | Modelo | Parametros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kataguru-Sage-A1.5-v1.0 (GGUF) | 35,5B (~3B activos, MoE) | 262.144 | Sí (mmproj-f16) | Apache 2.0 | GGUF en HuggingFace, sin censura |
+| Kataguru-Sage-A1.5-v1.0 (GGUF) | 35,5B (~3B activos, MoE) | 262.144 | Sí (mmproj-f16) | Apache 2.0 | GGUF en Hugging Face, sin censura |
 | Qwen3-30B-A3B (referencia de arquitectura similar) | 30,5B (~3,3B activos, MoE) | 128K (con YaRN) | No (versión base) | Apache 2.0 | GGUF, safetensors, amplio soporte |
-| InternScience/Sage-A1.5 (modelo base) | 35,5B (~3B activos, MoE) | 262.144 | Sí | no disponible | HuggingFace, con conductas de rechazo |
+| InternScience/Sage-A1.5 (modelo base) | 35,5B (~3B activos, MoE) | 262.144 | Sí | no disponible | Hugging Face, con conductas de rechazo |
 
 Nota: la comparación con Qwen3-30B-A3B es orientativa por similitud de clase de tamaño y perfil MoE; no se han publicado benchmarks comparativos directos entre ellos en la información disponible.
 

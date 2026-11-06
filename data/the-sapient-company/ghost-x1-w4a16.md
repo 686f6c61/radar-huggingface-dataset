@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| The-Sapient-Company/ghost-x1-w4a16 | 26,9 B | No disponible | w4a16 | Si (image-text-to-text) | apache-2.0 | HuggingFace, 0 descargas |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible (heredado del base) | No disponible | bfloat16 | Si (modulo visual sin modificar) | apache-2.0 | HuggingFace y Ollama |
-| Qwen/Qwen3.8-27B | No disponible | No disponible | bfloat16 | Si | apache-2.0 | HuggingFace |
+| The-Sapient-Company/ghost-x1-w4a16 | 26,9 B | No disponible | w4a16 | Si (image-text-to-text) | apache-2.0 | Hugging Face, 0 descargas |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | No disponible (heredado del base) | No disponible | bfloat16 | Si (modulo visual sin modificar) | apache-2.0 | Hugging Face y Ollama |
+| Qwen/Qwen3.8-27B | No disponible | No disponible | bfloat16 | Si | apache-2.0 | Hugging Face |
 
 La comparativa se limita a los tres artefactos mencionados en la informacion proporcionada. No se dispone de datos de parametros, contexto ni rendimiento de los modelos base y abliterado mas alla de lo indicado, y no se han encontrado en la busqueda web modelos alternativos comparables con datos verificables.
 

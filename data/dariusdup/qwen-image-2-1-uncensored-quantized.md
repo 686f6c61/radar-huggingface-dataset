@@ -18,7 +18,7 @@ La etiqueta "uncensored" es relevante para entender el contexto: según las fuen
 | Longitud de contexto | no disponible (modelo de difusión, no secuencial de texto) |
 | Tipos de cuantización | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponible |
-| Licencia | other / qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | other / qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF y safetensors (incluye variantes MLX en safetensors) |
 | Codificador de texto | Qwen3-VL 8B en BF16 (17,53 GB) o INT8 ConvRot (9,35 GB) |
 | VAE | qwen_image_2.1_vae_bf16.safetensors (676 MB) |
@@ -89,8 +89,8 @@ Tamaños de fichero del transformador de difusión, según la model card:
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dariusdup/Qwen-Image-2.1-Uncensored-Quantized | 7,1B (componente de generación visual) | no aplica | no disponible | qwen-research | GGUF, safetensors, MLX en HuggingFace |
-| Qwen/Qwen-Image-2.1 (base) | 7,1B (32 capas Single-Stream DiT) | no aplica | no disponible en la información recogida | qwen-research | Pesos originales en HuggingFace, con filtrado de prompts en la versión alojada |
+| Dariusdup/Qwen-Image-2.1-Uncensored-Quantized | 7,1B (componente de generación visual) | no aplica | no disponible | qwen-research | GGUF, safetensors, MLX en Hugging Face |
+| Qwen/Qwen-Image-2.1 (base) | 7,1B (32 capas Single-Stream DiT) | no aplica | no disponible en la información recogida | qwen-research | Pesos originales en Hugging Face, con filtrado de prompts en la versión alojada |
 | kkguku/Qwen-Image-2.1-Uncensored-GGUF | derivado del base | no aplica | no disponible | qwen-research | GGUF para ComfyUI |
 | AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF | derivado del base | no aplica | no disponible | qwen-research | GGUF, variante Turbo |
 
@@ -111,7 +111,7 @@ La comparación se limita a lo que consta en las fuentes consultadas: las tres a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dariusdup/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/Dariusdup/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

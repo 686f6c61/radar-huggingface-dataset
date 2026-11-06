@@ -118,7 +118,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de velocidad comparada con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/CYBER-FROST-3.8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/CYBER-FROST-3.8-GGUF
 - Checkpoint base: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Coleccion oficial CYBER-FROST 3.8: https://huggingface.co/collections/Blackfrost-AI/cyber-frost-38
 - Otra cuantizacion GGUF del mismo modelo: https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF

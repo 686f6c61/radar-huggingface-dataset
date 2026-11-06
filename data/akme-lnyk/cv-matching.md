@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akme-lnyk/cv-matching` es un modelo publicado en HuggingFace por el usuario `akme-lnyk` bajo licencia MIT. Segun su model card, se trata de una implementacion propia y compacta en PyTorch de una arquitectura denominada **Mae** orientada a tareas de **matching**. El propio autor lo describe como una configuracion *tiny* pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno tamano, y advierte explicitamente de que no es una version preentrenada lista para produccion.
+`akme-lnyk/cv-matching` es un modelo publicado en Hugging Face por el usuario `akme-lnyk` bajo licencia MIT. Segun su model card, se trata de una implementacion propia y compacta en PyTorch de una arquitectura denominada **Mae** orientada a tareas de **matching**. El propio autor lo describe como una configuracion *tiny* pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno tamano, y advierte explicitamente de que no es una version preentrenada lista para produccion.
 
 El repositorio incluye el artefacto principal `pipeline.py`, los ficheros de configuracion `config.json` y `training_args.json`, y un checkpoint `model.safetensors` que el autor califica como inicializacion valida para pruebas, no como un checkpoint entrenado o evaluado. El conteo real de parametros del safetensors es de 33.088, coherente con una configuracion minima.
 
@@ -77,4 +77,4 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akme-lnyk/cv-matching
+- Modelo en Hugging Face: https://huggingface.co/akme-lnyk/cv-matching

@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Base | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm | GR00T N1.7-3B | 3B (base) | Recoger cilindro azul | other | HuggingFace |
-| ffw_sg2_blue-cylinder-handover_smolvla_nonorm | SmolVLA | no disponible | Recoger cilindro azul | no disponible | HuggingFace (mismo autor) |
+| ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm | GR00T N1.7-3B | 3B (base) | Recoger cilindro azul | other | Hugging Face |
+| ffw_sg2_blue-cylinder-handover_smolvla_nonorm | SmolVLA | no disponible | Recoger cilindro azul | no disponible | Hugging Face (mismo autor) |
 | NVIDIA GR00T N1.7-3B | - | 3B | Habilidades generales de manipulacion | NVIDIA Open Model License | GitHub/HuggingFace |
 
 La comparativa se limita a modelos del mismo autor y al modelo base. No hay datos de rendimiento comparativo disponibles. El fine-tuning sobre GR00T N1.7-3B se distingue por su normalización no-norm, mientras que la versión con SmolVLA (también del mismo autor) explora la misma técnica sobre una arquitectura diferente.
@@ -77,7 +77,7 @@ La comparativa se limita a modelos del mismo autor y al modelo base. No hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Repositorio GR00T Whole-Body Control: https://github.com/NVlabs/GR00T-WholeBodyControl
 - Página personal del autor: https://omkarpatil18.github.io/

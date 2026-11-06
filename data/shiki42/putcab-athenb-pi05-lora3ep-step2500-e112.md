@@ -64,9 +64,9 @@ El autor publica otros checkpoints para la misma tarea PutCab, pero no se dispon
 
 | Modelo | Tipo | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112` (este) | LoRA sobre PI0.5 | PutCab A-then-B | 8.8 GB | no disponible | HuggingFace |
-| `Shiki42/pi05-spline-field-masked-putcab-e044-r002-2k` | Checkpoint PI0.5 con spline field | PutCab | no disponible | no disponible | HuggingFace |
-| `Shiki42/pi05-putcab-official-clean50-officialjax-b32-30k-20260803` | Checkpoint PI0.5 completo | PutCab | no disponible | no disponible | HuggingFace |
+| `Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112` (este) | LoRA sobre PI0.5 | PutCab A-then-B | 8.8 GB | no disponible | Hugging Face |
+| `Shiki42/pi05-spline-field-masked-putcab-e044-r002-2k` | Checkpoint PI0.5 con spline field | PutCab | no disponible | no disponible | Hugging Face |
+| `Shiki42/pi05-putcab-official-clean50-officialjax-b32-30k-20260803` | Checkpoint PI0.5 completo | PutCab | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos de la misma categoría fuera del ecosistema del autor.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos de la misma categoría fuera d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112
+- Repositorio Hugging Face: https://huggingface.co/Shiki42/putcab-athenb-pi05-lora3ep-step2500-e112
 - Modelo base: https://huggingface.co/Shiki42/parallelvla-pi05-putcab-clean-verified-v2-50-30000
 - Otro checkpoint relacionado: https://huggingface.co/Shiki42/pi05-spline-field-masked-putcab-e044-r002-2k
 - Otro checkpoint relacionado: https://huggingface.co/Shiki42/pi05-putcab-official-clean50-officialjax-b32-30k-20260803

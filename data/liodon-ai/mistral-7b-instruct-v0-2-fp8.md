@@ -74,7 +74,7 @@ La versión FP8 ofrece la ventaja de un tamaño reducido y mayor velocidad en ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.2-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.2-FP8
 - Modelo base (Mistral-7B-Instruct-v0.2): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Versión GGUF del mismo autor: https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.2-imatrix-GGUF
 - Repositorio de llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor

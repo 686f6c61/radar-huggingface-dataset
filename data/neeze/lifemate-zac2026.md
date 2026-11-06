@@ -72,9 +72,9 @@ Latencia medida en A100, ejecucion secuencial por muestra: agente p50 de 1,4 s y
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LifeMate (este) | 5,57B (1,55B ASR + 4,02B LLM) | 16.384 | ASR + agente con tool calling en vietnamita | other | HuggingFace, 0 descargas |
-| Qwen3-4B-Instruct-2507 (base) | 4,02B | no disponible en la informacion | LLM generalista con tool calling | no disponible en la informacion | HuggingFace |
-| vinai/PhoWhisper-large (base ASR) | 1,55B | no aplica | ASR en vietnamita | no disponible en la informacion | HuggingFace |
+| LifeMate (este) | 5,57B (1,55B ASR + 4,02B LLM) | 16.384 | ASR + agente con tool calling en vietnamita | other | Hugging Face, 0 descargas |
+| Qwen3-4B-Instruct-2507 (base) | 4,02B | no disponible en la informacion | LLM generalista con tool calling | no disponible en la informacion | Hugging Face |
+| vinai/PhoWhisper-large (base ASR) | 1,55B | no aplica | ASR en vietnamita | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos base en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa directa.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos base en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neeze/lifemate-zac2026
+- Hugging Face: https://huggingface.co/Neeze/lifemate-zac2026
 - Modelo base LLM: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base ASR: https://huggingface.co/vinai/PhoWhisper-large
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

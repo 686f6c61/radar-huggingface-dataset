@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RandLA-Net para Paris-Lille-3D es un modelo de segmentación semántica de nubes de puntos 3D publicado por el usuario `torch-pointcloud` en HuggingFace, empaquetado para la librería PyTorch PointCloud de Arthur Dujardin. Se trata de una conversión de los pesos de referencia de Open3D-ML (licencia MIT) al formato safetensors, con 5.010.825 parámetros (5,0 M), 3 canales de entrada, 32 características internas y 9 clases de salida. No es un modelo de lenguaje: no procesa texto ni mantiene contexto conversacional, sino que asigna una etiqueta semántica a cada punto de una nube LiDAR.
+RandLA-Net para Paris-Lille-3D es un modelo de segmentación semántica de nubes de puntos 3D publicado por el usuario `torch-pointcloud` en Hugging Face, empaquetado para la librería PyTorch PointCloud de Arthur Dujardin. Se trata de una conversión de los pesos de referencia de Open3D-ML (licencia MIT) al formato safetensors, con 5.010.825 parámetros (5,0 M), 3 canales de entrada, 32 características internas y 9 clases de salida. No es un modelo de lenguaje: no procesa texto ni mantiene contexto conversacional, sino que asigna una etiqueta semántica a cada punto de una nube LiDAR.
 
 El modelo implementa la arquitectura RandLA-Net presentada en CVPR 2020 (arXiv:1911.11236), cuyo objetivo es segmentar nubes de puntos de gran escala de forma eficiente sustituyendo el muestreo de puntos más lejano (farthest point sampling) por muestreo aleatorio, mucho más barato computacionalmente, y compensando la pérdida de información con módulos de agregación local de características. Está entrenado exclusivamente sobre el dataset urbano Paris-Lille-3D, capturado con sistemas de mapeo móvil en Lille y París.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es acotada pero clara: ofrece un checkpoint pequeño (5 
 | Dimensión de características | 32 |
 | Dataset de entrenamiento | Paris-Lille-3D |
 | Librería | torch-pointcloud |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -102,7 +102,7 @@ Criterio diferencial: RandLA-Net prioriza eficiencia en nubes de gran escala med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/randlanet.parislille3d.open3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.parislille3d.open3d
 - Paper de RandLA-Net (arXiv:1911.11236, CVPR 2020): https://arxiv.org/abs/1911.11236
 - Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Repositorio de origen de los pesos (Open3D-ML): https://github.com/isl-org/Open3D-ML

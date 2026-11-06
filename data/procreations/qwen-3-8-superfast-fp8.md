@@ -82,7 +82,7 @@ La principal diferencia con la version BF16 es el menor uso de VRAM y mayor velo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-FP8
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Qwen-3.8-SuperFast-FP8
 - Runtime Qwen-3.8-SuperFast (GitHub): https://github.com/SSHdotCodes/Qwen-3.8-SuperFast
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Articulo en openlm.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/

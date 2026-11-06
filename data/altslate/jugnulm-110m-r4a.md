@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | ARC-Easy | WikiText-2 ppl | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JugnuLM-110M-R4a | 109,7M | no disponible | 56,99 | 2,178 | apache-2.0 | HuggingFace (requiere `trust_remote_code`) |
-| JugnuLM-110M-R2 | ≈110M (misma arquitectura) | no disponible | 56,10 | 1,932 | no disponible en la informacion proporcionada | HuggingFace |
+| JugnuLM-110M-R4a | 109,7M | no disponible | 56,99 | 2,178 | apache-2.0 | Hugging Face (requiere `trust_remote_code`) |
+| JugnuLM-110M-R2 | ≈110M (misma arquitectura) | no disponible | 56,10 | 1,932 | no disponible en la informacion proporcionada | Hugging Face |
 | GPT-X2-125M | 125M (citado) | no disponible | 57,07 | no disponible | no disponible | citado como referencia comparativa en la model card |
-| SmolLM2-1.7B | 1,7B (profesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace; usado como profesor congelado |
+| SmolLM2-1.7B | 1,7B (profesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face; usado como profesor congelado |
 
 La comparación con GPT-X2-125M y con el profesor SmolLM2-1.7B procede exclusivamente de las referencias incluidas en la model card; no se dispone de una batería homogénea de métricas para los cuatro modelos.
 
@@ -96,7 +96,7 @@ La comparación con GPT-X2-125M y con el profesor SmolLM2-1.7B procede exclusiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altslate/JugnuLM-110M-R4a
+- Modelo en Hugging Face: https://huggingface.co/altslate/JugnuLM-110M-R4a
 - Escalón base R2: https://huggingface.co/altslate/JugnuLM-110M-R2
 - Profesor de destilación SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Código de entrenamiento y escalera de ablaciones: https://github.com/AltSlate-Labs/jugnu

@@ -57,7 +57,7 @@ No se dispone de información suficiente sobre la arquitectura, el rendimiento o
 
 ## Enlaces
 
-- [HuggingFace - ProCogia/Euclid-2.0](https://huggingface.co/ProCogia/Euclid-2.0)
+- [Hugging Face - ProCogia/Euclid-2.0](https://huggingface.co/ProCogia/Euclid-2.0)
 - [ProCogia (sitio oficial)](https://procogia.com/)
 - [ProCogia - Soluciones de IA](https://procogia.com/solutions-ai/)
 - [Euclid AI (producto de predicción financiera)](https://euclid4ai.com/)

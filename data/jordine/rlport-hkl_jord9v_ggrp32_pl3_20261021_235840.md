@@ -85,7 +85,7 @@ No existen modelos comparables: este repositorio no es una release de modelo. La
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl3_20261021_235840
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl3_20261021_235840
 - Repositorio hermano del mismo proyecto: https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547
 - Paper, blog o repositorio del proyecto "reward-laundering": no disponible
 - Demo: no disponible

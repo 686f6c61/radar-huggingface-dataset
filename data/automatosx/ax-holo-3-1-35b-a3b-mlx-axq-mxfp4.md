@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento publicados para este checkpoint, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/Hcompany/Holo-3.1-35B-A3B
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections
 - Índice completo de modelos MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog

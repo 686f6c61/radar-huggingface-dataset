@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento ni de especificaciones de adaptadores comp
 
 | Modelo | Tipo | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fight Flow V1 (JOKER141) | LoRA sobre MiniMax-H3 | Interacción y continuidad de combate | en | no disponible | HuggingFace (0 descargas, 1 like) |
-| MiniMax-H3 (base) | Modelo de generación de vídeo | Generación de vídeo generalista | no disponible | no disponible | HuggingFace |
+| Fight Flow V1 (JOKER141) | LoRA sobre MiniMax-H3 | Interacción y continuidad de combate | en | no disponible | Hugging Face (0 descargas, 1 like) |
+| MiniMax-H3 (base) | Modelo de generación de vídeo | Generación de vídeo generalista | no disponible | no disponible | Hugging Face |
 | Otros LoRA de combate ("Combat", "Weapon", "GunFu", "Motion Repair") | LoRA sobre MiniMax-H3 | Movimientos especializados | no disponible | no disponible | Mencionados por el autor, sin enlaces |
 
 ## Limitaciones y advertencias
@@ -82,10 +82,10 @@ No se dispone de datos de rendimiento ni de especificaciones de adaptadores comp
 - Se plantea como capa de interacción que debe combinarse con otros LoRA especializados; usarlo en solitario puede no dar los mismos resultados.
 - La información sobre el modelo base MiniMax-H3 (contexto, cuantizaciones, licencia) no está incluida en los datos disponibles, lo que añade incertidumbre sobre el despliegue.
 - No se documentan sesgos, tasas de alucinación ni comportamientos anómalos concretos; al ser un modelo generativo de vídeo, existe riesgo de artefactos visuales y de incoherencias de movimiento no evaluadas.
-- Fecha de creación registrada en HuggingFace: 2026-10-07; fecha de última actualización: 2026-10-07. El modelo acumula 0 descargas y 1 like, por lo que no hay validación por parte de la comunidad.
+- Fecha de creación registrada en Hugging Face: 2026-10-07; fecha de última actualización: 2026-10-07. El modelo acumula 0 descargas y 1 like, por lo que no hay validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Vídeo de demostración: https://huggingface.co/JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA/resolve/main/assets/demo.mp4

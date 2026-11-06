@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-uncensored es una variante modificada del modelo multimodal denso meta-models/Muse-Glimmer-30B, publicada por el usuario Meta-muse en HuggingFace. Se trata de un ajuste de tipo "abliteration": no se ha reentrenado el modelo, sino que se ha eliminado quirurgicamente la direccion de rechazo de las matrices de escritura residual del decodificador de texto, de modo que el modelo deja de emitir negativas ante peticiones que el modelo base rechazaba. El pipeline declarado es image-text-to-text, por lo que conserva la torre de vision del original intacta.
+Muse-Glimmer-30B-uncensored es una variante modificada del modelo multimodal denso meta-models/Muse-Glimmer-30B, publicada por el usuario Meta-muse en Hugging Face. Se trata de un ajuste de tipo "abliteration": no se ha reentrenado el modelo, sino que se ha eliminado quirurgicamente la direccion de rechazo de las matrices de escritura residual del decodificador de texto, de modo que el modelo deja de emitir negativas ante peticiones que el modelo base rechazaba. El pipeline declarado es image-text-to-text, por lo que conserva la torre de vision del original intacta.
 
 El modelo tiene 29.776.626.688 parametros reales (segun los safetensors del repositorio) y un peso en disco de 59,6 GB, coherente con pesos en bfloat16. La arquitectura es densa, no MoE: 52 capas de decodificador de texto con hidden de 6656, mas una torre de vision ViT-G/14 de 1.9B parametros que no ha sido modificada. Solo se editaron 104 tensores (los `o_proj` y `down_proj` de las 52 capas); los 1332 tensores restantes del camino de texto y los 800 tensores de vision se copian sin cambios.
 
@@ -115,7 +115,7 @@ Comparativa con modelos de otros desarrolladores (mismo tamano o misma tarea): n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Meta-muse/Muse-Glimmer-30B-uncensored
+- Modelo en Hugging Face: https://huggingface.co/Meta-muse/Muse-Glimmer-30B-uncensored
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio GGUF citado: https://huggingface.co/TrevorJS/Muse-Glimmer-30B-uncensored-GGUF
 - Repositorio de reproduccion de la abliteracion: https://github.com/TrevorS/muse-glimmer-abliteration

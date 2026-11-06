@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GENA-LM-t2t-sparse-bigbird-base es un port minimalista en HuggingFace de la variante bigbird-base-sparse-t2t de GENA-LM, un modelo de lenguaje enmascarado (MLM) basado en la arquitectura BigBird con atención block-sparse, diseñado para trabajar con secuencias largas de ADN humano. El modelo original fue desarrollado por el Instituto AIRI y este port lo publica el usuario Taykhoom, con la particularidad de que implementa las ecuaciones matemáticas de la atención block-sparse en PyTorch puro, sin depender del kernel Triton/DeepSpeed original que no es compatible con GPU Hopper (sm90).
+GENA-LM-t2t-sparse-bigbird-base es un port minimalista en Hugging Face de la variante bigbird-base-sparse-t2t de GENA-LM, un modelo de lenguaje enmascarado (MLM) basado en la arquitectura BigBird con atención block-sparse, diseñado para trabajar con secuencias largas de ADN humano. El modelo original fue desarrollado por el Instituto AIRI y este port lo publica el usuario Taykhoom, con la particularidad de que implementa las ecuaciones matemáticas de la atención block-sparse en PyTorch puro, sin depender del kernel Triton/DeepSpeed original que no es compatible con GPU Hopper (sm90).
 
 El modelo tiene 114 millones de parámetros, 12 capas y 768 dimensiones de embedding, con una ventana de contexto de hasta 4096 tokens BPE (equivalentes a aproximadamente 36 864 nucleótidos), lo que permite procesar regiones genómicas completas en una sola pasada. Se entrenó con el objetivo de MLM con un 15 % de tokens enmascarados sobre el genoma humano T2T, enriquecido con variantes de 1000 Genomes y gnomAD, durante 800 000 iteraciones con un batch de 256. Su licencia MIT y su implementación sin dependencias exóticas lo hacen especialmente atractivo para integrar en pipelines de genómica computacional que necesiten embeddings de secuencias largas de ADN con recursos de hardware moderados.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: no se especifica oficialmente, pero para un modelo de 114M de parámetros en fp32, el peso en memoria es de aproximadamente 460 MB. Con una secuencia de 4096 tokens, el uso de memoria puede superar los 2 GB en GPU, dependiendo del tamaño de batch. En cuantización fp16, el peso se reduce a unos 230 MB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar la inferencia en modo denso para secuencias cortas. Para secuencias largas (4096 tokens), se recomienda una GPU con 8 GB o más, como la RTX 3060, RTX 3070 o superiores. La implementación en PyTorch puro permite ejecutarse también en GPU de gama de entrada.
 - Capacidad en GPU de consumo: sí, el modelo cabe en GPU de consumo como la RTX 3060 (12 GB) o RTX 4060 (8 GB) incluso con batch moderado.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede desplegarse con HuggingFace Transformers, con el backend SDPA para aceleración. No se menciona soporte para vLLM, llama.cpp u Ollama, pero al ser de tipo encoder, se puede servir mediante los endpoints de inferencia de Hugging Face o con frameworks como FastAPI para integraciones personalizadas.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede desplegarse con Hugging Face Transformers, con el backend SDPA para aceleración. No se menciona soporte para vLLM, llama.cpp u Ollama, pero al ser de tipo encoder, se puede servir mediante los endpoints de inferencia de Hugging Face o con frameworks como FastAPI para integraciones personalizadas.
 - Latencia y throughput: no se dispone de datos publicados. Para un modelo de este tamaño, se espera una latencia de decenas de milisegundos por secuencia de 512 tokens en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La principal diferencia con los modelos BERT de la misma familia es la longitud 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Taykhoom/GENA-LM-t2t-sparse-bigbird-base
+- Página del modelo en Hugging Face: https://huggingface.co/Taykhoom/GENA-LM-t2t-sparse-bigbird-base
 - Modelo original de AIRI: https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-sparse-t2t
 - Colección GENA-LM: https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab
 - Repositorio GitHub de GENA-LM: https://github.com/AIRI-Institute/GENA_LM

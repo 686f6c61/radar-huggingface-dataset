@@ -86,7 +86,7 @@ Los datos de parámetros exactos y rendimiento comparado no están disponibles e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/software-mansion/LRASPP-MobileNetV3-Large-ExecuTorch
+- Hugging Face: https://huggingface.co/software-mansion/LRASPP-MobileNetV3-Large-ExecuTorch
 - Modelo upstream LRASPP (torchvision): https://docs.pytorch.org/vision/main/models/lraspp.html
 - Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

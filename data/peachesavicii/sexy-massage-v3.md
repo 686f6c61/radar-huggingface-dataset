@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sexy-Massage-v3 es un LoRA (Low-Rank Adapter) para generación de imágenes mediante difusión, publicado en HuggingFace por el usuario PeachesAvicii. No se trata de un modelo de lenguaje, sino de un adaptador ligero de aproximadamente 0,6 GB que se aplica sobre el modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v, una variante de la familia Wan 2.2 orientada a generación de vídeo imagen-a-video (i2v) con realce de movimiento. El LoRA está entrenado para un concepto muy concreto, activado mediante la frase de instancia "getting a sexy massage", y su autor lo describe explícitamente como contenido NSFW destinado a uso personal.
+Sexy-Massage-v3 es un LoRA (Low-Rank Adapter) para generación de imágenes mediante difusión, publicado en Hugging Face por el usuario PeachesAvicii. No se trata de un modelo de lenguaje, sino de un adaptador ligero de aproximadamente 0,6 GB que se aplica sobre el modelo base rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v, una variante de la familia Wan 2.2 orientada a generación de vídeo imagen-a-video (i2v) con realce de movimiento. El LoRA está entrenado para un concepto muy concreto, activado mediante la frase de instancia "getting a sexy massage", y su autor lo describe explícitamente como contenido NSFW destinado a uso personal.
 
 Su relevancia es limitada y de nicho: ilustra el ecosistema de adaptadores comunitarios que se están construyendo sobre Wan 2.2, la familia de modelos de difusión abierta de Alibaba para texto-a-imagen y texto-a-vídeo. Al ser un LoRA, no sustituye al modelo base, sino que modifica su salida para incorporar el concepto entrenado, manteniendo los pesos originales intactos. La ficha del modelo es mínima: no se documentan datos de entrenamiento, hiperparámetros, benchmarks ni requisitos de hardware específicos del adaptador.
 
@@ -30,7 +30,7 @@ Sobre el entrenamiento no hay informacion publicada: no se especifican el numero
 - Generacion de imagenes mediante difusion, condicionada por prompt de texto, dentro del pipeline text-to-image declarado.
 - Incorporacion de un concepto especifico (escena de masaje con contenido NSFW) activado mediante la trigger phrase "getting a sexy massage".
 - Posible aplicacion sobre el modelo base Wan 2.2 i2v para animacion de imagenes con realce de movimiento, sujeto a compatibilidad de pesos (no documentada).
-- Compatibilidad con la libreria diffusers de HuggingFace, lo que permite cargarlo con `PeftModel`/`load_lora_weights` sobre el modelo base.
+- Compatibilidad con la libreria diffusers de Hugging Face, lo que permite cargarlo con `PeftModel`/`load_lora_weights` sobre el modelo base.
 - No es un modelo de lenguaje: no tiene capacidades de texto, razonamiento, codigo, tool calling ni agentes.
 
 ## Casos de uso
@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 |---|---|---|---|---|---|
 | PeachesAvicii/Sexy-Massage-v3 | LoRA de difusion | rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v | 0,6 GB | Apache 2.0 | Concepto NSFW unico, trigger phrase documentada |
 | rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v | Modelo base i2v | Wan 2.2 | no disponible | no disponible | Realce de movimiento para imagen-a-video |
-| Otros LoRAs de difusion en HuggingFace (template:diffusion-lora) | LoRA de difusion | variados | tipicamente 0,1-1 GB | variable | Mismo patron: trigger phrase + diffusers |
+| Otros LoRAs de difusion en Hugging Face (template:diffusion-lora) | LoRA de difusion | variados | tipicamente 0,1-1 GB | variable | Mismo patron: trigger phrase + diffusers |
 
 No se dispone de datos de rendimiento comparables entre estos recursos.
 
 ## Limitaciones y advertencias
 
-- Contenido NSFW: el modelo esta entrenado explicitamente para generar material para adultos. Su uso puede estar restringido por las condiciones de servicio de plataformas, leyes locales y politicas de HuggingFace; es responsabilidad del usuario cumplir la normativa aplicable.
+- Contenido NSFW: el modelo esta entrenado explicitamente para generar material para adultos. Su uso puede estar restringido por las condiciones de servicio de plataformas, leyes locales y politicas de Hugging Face; es responsabilidad del usuario cumplir la normativa aplicable.
 - Ausencia de documentacion tecnica: no se conocen dataset de entrenamiento, hiperparametros ni evaluaciones, lo que impide valorar calidad, sesgos o artefactos del resultado.
 - Sesgos: al no conocerse el dataset, no es posible caracterizar sesgos demograficos o esteticos; los LoRAs de concepto unico tienden a sobreajustarse y reproducir los patrones de sus datos de entrenamiento.
 - Alucinacion/artefactos: no aplica en el sentido de LLMs, pero los LoRAs pueden degradar la coherencia anatomica y la calidad general del modelo base si se aplican con pesos excesivos.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparables entre estos recursos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeachesAvicii/Sexy-Massage-v3
+- Modelo en Hugging Face: https://huggingface.co/PeachesAvicii/Sexy-Massage-v3
 - Modelo base declarado: https://huggingface.co/rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - No se han encontrado paper, blog oficial ni demo asociados en la informacion disponible.

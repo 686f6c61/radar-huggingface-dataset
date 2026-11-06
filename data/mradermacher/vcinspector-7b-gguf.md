@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VCInspector-7B es un modelo vision-language de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) desarrollado originalmente por dipta007 y publicado en HuggingFace bajo el identificador `dipta007/VCInspector-7B`. Su propósito específico es la evaluación automática de descripciones de vídeo (video captioning) sin necesidad de referencias humanas (reference-free), centrándose en el análisis de fidelidad factual. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+VCInspector-7B es un modelo vision-language de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) desarrollado originalmente por dipta007 y publicado en Hugging Face bajo el identificador `dipta007/VCInspector-7B`. Su propósito específico es la evaluación automática de descripciones de vídeo (video captioning) sin necesidad de referencias humanas (reference-free), centrándose en el análisis de fidelidad factual. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 El modelo se apoya en el artículo arXiv 2509.16538 y emplea el dataset `dipta007/ActivityNet-FG-It` para su entrenamiento y evaluación. La relevancia actual radica en que la evaluación de captions de vídeo tradicionalmente requiere referencias humanas costosas; VCInspector-7B propone un evaluador automático que detecta errores factuales (objetos, acciones, relaciones espacio-temporales) sin depender de ground truth.
 

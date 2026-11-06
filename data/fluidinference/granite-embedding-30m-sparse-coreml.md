@@ -109,7 +109,7 @@ La conversion a Core ML reproduce el comportamiento del compilador ONNX de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/granite-embedding-30m-sparse-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/granite-embedding-30m-sparse-coreml
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-30m-sparse
 - Repositorio Evoke (Intelligent Internet): https://github.com/Intelligent-Internet/Evoke
 - Compiladores ONNX de referencia: https://huggingface.co/Intelligent-Internet/Evoke-Model-Beta-1

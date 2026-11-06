@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch06` | 6,74 B | no disponible (Llama 2: 4096) | Checkpoint de *unlearning* TOFU (época 6/20) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado sobre TOFU, sin olvido | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Llama 2 7B chat, uso general | llama2 | HuggingFace |
-| Meta Llama 2 7B (original) | 6,74 B | 4096 | Modelo base de propósito general | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch06` | 6,74 B | no disponible (Llama 2: 4096) | Checkpoint de *unlearning* TOFU (época 6/20) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | 4096 | Modelo base ajustado sobre TOFU, sin olvido | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Llama 2 7B chat, uso general | llama2 | Hugging Face |
+| Meta Llama 2 7B (original) | 6,74 B | 4096 | Modelo base de propósito general | llama2 | Hugging Face |
 
 La comparación relevante no es de rendimiento bruto sino de comportamiento en las métricas de TOFU: este checkpoint debería mostrar menor fidelidad en `forget01` y fidelidad comparable en `retain` frente a `locuslab/tofu_ft_llama2-7b`, pero no se dispone de cifras publicadas en la información proporcionada para confirmarlo.
 
@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento bruto sino de comportamiento en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch06
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch06
 - Modelo base ajustado sobre TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de origen de los embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (referencia del marco experimental): no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adipotnis/m7-guidance-delta-cf-robowarp` es un modelo de robótica de tipo VLA (Vision-Language-Action) publicado en HuggingFace por el usuario `adipotnis`. Los metadatos indican que se basa en la arquitectura pi0.5 y el framework OpenPI, con técnicas de *flow-matching* y *counterfactual guidance*. Su propósito es generar acciones de control para robots a partir de observaciones visuales y lenguaje, probablemente orientado a tareas de manipulación en entornos como LIBERO.
+El modelo `adipotnis/m7-guidance-delta-cf-robowarp` es un modelo de robótica de tipo VLA (Vision-Language-Action) publicado en Hugging Face por el usuario `adipotnis`. Los metadatos indican que se basa en la arquitectura pi0.5 y el framework OpenPI, con técnicas de *flow-matching* y *counterfactual guidance*. Su propósito es generar acciones de control para robots a partir de observaciones visuales y lenguaje, probablemente orientado a tareas de manipulación en entornos como LIBERO.
 
 El repositorio tiene un tamaño de 12,4 GB y acceso restringido (gated), lo que sugiere que puede contener pesos entrenados o datos sensibles. No se dispone de información pública sobre el número de parámetros, la longitud de contexto o los detalles de entrenamiento. La licencia declarada es Apache-2.0, aunque el acceso condicionado puede implicar términos adicionales.
 
@@ -18,7 +18,7 @@ Este modelo es relevante porque se inscribe en la línea de investigación de VL
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (acceso restringido en HuggingFace) |
+| Licencia | Apache-2.0 (acceso restringido en Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se dispone de información suficiente para comparar con otros modelos. Se pod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso comercial o su reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso comercial o su reproducibilidad.
 - Documentación ausente: no hay paper, README ni guía de uso en el repositorio, lo que dificulta su integración.
 - Sin benchmarks publicados: no se puede evaluar su calidad frente a alternativas.
 - Sesgos y alucinaciones: al ser un modelo de acción, puede generar movimientos no seguros si se usa sin supervisión. No se han evaluado sesgos.
@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar con otros modelos. Se pod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adipotnis/m7-guidance-delta-cf-robowarp
+- Repositorio Hugging Face: https://huggingface.co/adipotnis/m7-guidance-delta-cf-robowarp
 - Perfil del autor en GitHub: https://github.com/adipotnis (sin enlaces directos al modelo)
 - No se encontraron papers, blogs ni demos relacionados con este modelo específico.

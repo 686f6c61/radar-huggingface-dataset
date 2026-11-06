@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace bajo el identificador `meow1242/DeepSeek-V4.1-Flash`. Segun la model card, se trata de un modelo con 552B parametros de backbone y capacidad de procesar contextos de hasta un millon de tokens, con procesamiento nativo de imagenes y texto y generacion de texto autoregresiva. El repositorio declara 763.205.315.794 parametros totales en los ficheros safetensors y un tamano de 510,3 GB.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face bajo el identificador `meow1242/DeepSeek-V4.1-Flash`. Segun la model card, se trata de un modelo con 552B parametros de backbone y capacidad de procesar contextos de hasta un millon de tokens, con procesamiento nativo de imagenes y texto y generacion de texto autoregresiva. El repositorio declara 763.205.315.794 parametros totales en los ficheros safetensors y un tamano de 510,3 GB.
 
 La propuesta tecnica central es la compresion de la cache KV: la arquitectura Causal Encoder-Decoder (CED) y el mecanismo Compressed Sparse Attention 2 (CSA2) reducen el footprint de KV global a unos 890 bytes por token, aproximadamente una cuarta parte del de DeepSeek-V4-Flash. Esto lo orienta a cargas de trabajo agenticas con entradas muy largas, donde el coste de prefill y de cache dominan la factura de inferencia.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 552B backbone (763B en safetensors), 8B/16B activos | 1M tokens | MIT | HuggingFace (repo de terceros) |
+| DeepSeek-V4.1-Flash | 552B backbone (763B en safetensors), 8B/16B activos | 1M tokens | MIT | Hugging Face (repo de terceros) |
 | DeepSeek-V4-Flash | no disponible | no disponible | no disponible | Referenciado en la model card |
 | DeepSeek-V1 | no disponible | no disponible | no disponible | Referenciado en la model card |
 
@@ -86,9 +86,9 @@ La model card compara el footprint de KV por token frente a DeepSeek-V4-Flash (1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meow1242/DeepSeek-V4.1-Flash
+- Hugging Face: https://huggingface.co/meow1242/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter: https://twitter.com/deepseek_ai

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Formato | Tamano | Perplejidad (wikitext-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (LFM2.5-1.2B-Thinking GGUF jang-imatrix) | 1,2B | GGUF mixto | 0,84 GB | 27,95 ± 0,92 | LFM Open License v1.0 | HuggingFace (roman220220) |
-| LiquidAI/LFM2.5-1.2B-Thinking (base, F16) | 1,2B | safetensors/GGUF F16 | 2,34 GB | 26,79 ± 0,88 | LFM Open License v1.0 | HuggingFace (LiquidAI) |
-| roman220220/LFM2.5-1.2B-Thinking-gptq-mlx-jang | 1,2B | MLX (GPTQ) | No disponible | No disponible | LFM Open License v1.0 | HuggingFace (roman220220) |
+| Este modelo (LFM2.5-1.2B-Thinking GGUF jang-imatrix) | 1,2B | GGUF mixto | 0,84 GB | 27,95 ± 0,92 | LFM Open License v1.0 | Hugging Face (roman220220) |
+| LiquidAI/LFM2.5-1.2B-Thinking (base, F16) | 1,2B | safetensors/GGUF F16 | 2,34 GB | 26,79 ± 0,88 | LFM Open License v1.0 | Hugging Face (LiquidAI) |
+| roman220220/LFM2.5-1.2B-Thinking-gptq-mlx-jang | 1,2B | MLX (GPTQ) | No disponible | No disponible | LFM Open License v1.0 | Hugging Face (roman220220) |
 
 No se dispone de datos de benchmarks para modelos de terceros de la misma categoria en la informacion proporcionada, por lo que no es posible una comparacion de rendimiento con alternativas externas.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks para modelos de terceros de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/LFM2.5-1.2B-Thinking-GGUF-jang-imatrix
+- Repositorio Hugging Face: https://huggingface.co/roman220220/LFM2.5-1.2B-Thinking-GGUF-jang-imatrix
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Variante MLX del mismo autor: https://huggingface.co/roman220220/LFM2.5-1.2B-Thinking-gptq-mlx-jang
 - Pipeline de cuantizacion: https://github.com/rromenskyi/quant-ternary

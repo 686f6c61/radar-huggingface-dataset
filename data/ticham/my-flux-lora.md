@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TichAm/my-flux-lora es un repositorio publicado en HuggingFace por el usuario TichAm. El identificador del repositorio sugiere que se trata de un adaptador LoRA asociado a la familia FLUX, aunque la model card no confirma ni el modelo base ni la tarea concreta. El repositorio ocupa 0,1 GB y se creo el 10 de septiembre de 2026, con la ultima actualizacion un minuto despues de la creacion.
+TichAm/my-flux-lora es un repositorio publicado en Hugging Face por el usuario TichAm. El identificador del repositorio sugiere que se trata de un adaptador LoRA asociado a la familia FLUX, aunque la model card no confirma ni el modelo base ni la tarea concreta. El repositorio ocupa 0,1 GB y se creo el 10 de septiembre de 2026, con la ultima actualizacion un minuto despues de la creacion.
 
 La model card es practicamente vacia: se limita a declarar la licencia apache-2.0, sin descripcion, sin instrucciones de uso, sin datos de entrenamiento y sin ejemplos. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -96,6 +96,6 @@ No disponible. No se ha encontrado informacion sobre modelos comparables en la b
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TichAm/my-flux-lora
+- Repositorio en Hugging Face: https://huggingface.co/TichAm/my-flux-lora
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: ninguno relevante para este modelo (los resultados obtenidos tratan sobre linternas frontales de trail, el estandar WAPI y el marco CEFR).

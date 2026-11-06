@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-1346-005
+- Modelo en Hugging Face: https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-1346-005
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de desafíos y entrenamiento: https://github.com/StephenForte/microduck-challenges
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon (URL exacta no disponible)

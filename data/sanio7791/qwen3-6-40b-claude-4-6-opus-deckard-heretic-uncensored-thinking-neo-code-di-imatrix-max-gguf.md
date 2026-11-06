@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF** es una cuantización GGUF de un modelo base de 40 mil millones de parámetros (denso, no MoE) desarrollado por DavidAU, y distribuido por Sanio7791 en HuggingFace. Se trata de un fine-tune multi-etapa que parte de un Qwen 3.6 de 27B, se expande a 40B y se entrena con datasets de razonamiento de alta calidad (Claude 4.6 Opus High Reasoning) y datasets de caracterización de DavidAU (PkDick-Deckard). El resultado es un modelo sin censura (uncensored, abliterated) orientado a escritura creativa, roleplay, código y razonamiento avanzado, con una ventana de contexto de 256K tokens.
+El modelo **Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF** es una cuantización GGUF de un modelo base de 40 mil millones de parámetros (denso, no MoE) desarrollado por DavidAU, y distribuido por Sanio7791 en Hugging Face. Se trata de un fine-tune multi-etapa que parte de un Qwen 3.6 de 27B, se expande a 40B y se entrena con datasets de razonamiento de alta calidad (Claude 4.6 Opus High Reasoning) y datasets de caracterización de DavidAU (PkDick-Deckard). El resultado es un modelo sin censura (uncensored, abliterated) orientado a escritura creativa, roleplay, código y razonamiento avanzado, con una ventana de contexto de 256K tokens.
 
 La relevancia de este modelo radica en su enfoque híbrido: combina un razonamiento "thinking" de longitud variable (más corto para tareas simples, más largo para problemas complejos) con una personalidad marcada y sin filtros de contenido. La versión GGUF aquí descrita incluye cuantizaciones optimizadas mediante un "dual imatrix" (Di-Matrix) que combina dos datasets de calibración, y ajustes de tensores medidos contra el modelo BF16 de referencia. El repositorio ofrece cuantizaciones desde IQ2_M hasta Q8_0, con calidad reportada entre el 83% y el 98% de la precisión completa.
 
@@ -70,7 +70,7 @@ Estos valores son declarados por el autor y no se basan en benchmarks públicos 
   - Q8_0: ~39-42 GB (requiere GPU de 48 GB o múltiples GPU).
 - **GPU recomendadas**: NVIDIA A100 (80 GB) o H100 para BF16/Q8; RTX 4090 (24 GB) para cuantizaciones IQ4 o inferiores.
 - **Compatibilidad con GPU consumer**: sí, con cuantizaciones IQ2_M o IQ3_XS en GPUs de 24 GB (RTX 3090/4090) o menos.
-- **Opciones de despliegue**: compatible con llama.cpp, Ollama (si se convierte a formato GGUF), vLLM (con soporte GGUF), LM Studio, entre otros. El modelo base es compatible con el pipeline de HuggingFace para transformers.
+- **Opciones de despliegue**: compatible con llama.cpp, Ollama (si se convierte a formato GGUF), vLLM (con soporte GGUF), LM Studio, entre otros. El modelo base es compatible con el pipeline de Hugging Face para transformers.
 - **Latencia y throughput**: no disponible en la información proporcionada. Depende del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (40
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (40B GGUF) | 39.07B | 256K | Apache-2.0 | HuggingFace |
-| Qwen3.6-27B-Fable-Fusion-711 | 27B | 256K | Apache-2.0 | HuggingFace |
-| Qwen-3-30B-A3B (MoE) | 30B (A3B activos) | 256K | Apache-2.0 | HuggingFace |
+| Este modelo (40B GGUF) | 39.07B | 256K | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B-Fable-Fusion-711 | 27B | 256K | Apache-2.0 | Hugging Face |
+| Qwen-3-30B-A3B (MoE) | 30B (A3B activos) | 256K | Apache-2.0 | Hugging Face |
 
 Nota: la comparación con Qwen-3-30B-A3B se basa en la familia Qwen 3.6, pero no hay datos de rendimiento relativos.
 
@@ -97,10 +97,10 @@ Nota: la comparación con Qwen-3-30B-A3B se basa en la familia Qwen 3.6, pero no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanio7791/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Sanio7791/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Repositorio de cuantizaciones NEO-CODE (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Repositorio de cuantizaciones Heretic (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Página de thinkllm.dev: https://thinkllm.dev/models/qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking
 - Página de llmrun.dev: https://llmrun.dev/model/davidau-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking
-- Discusión en HuggingFace (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF/discussions/13
+- Discusión en Hugging Face (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF/discussions/13

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoidGPTQ-2B-0.1 es una distribucion en formato GGUF de un modelo multimodal (vision-lenguaje) de aproximadamente 2 000 millones de parametros, publicada por el usuario Sqersters en HuggingFace. El repositorio no contiene pesos en safetensors ni el modelo original, sino dos ficheros GGUF generados con Unsloth: una cuantizacion Q8_0 para el modelo de lenguaje y un proyector multimodal (`mmproj`) en BF16. Los nombres de los ficheros (`Qwen3.5-2B.BF16-mmproj.gguf`, `Qwen3.5-2B.Q8_0.gguf`) indican que deriva de un modelo base denominado Qwen3.5-2B, aunque la model card no documenta la procedencia exacta, el pipeline ni la licencia.
+VoidGPTQ-2B-0.1 es una distribucion en formato GGUF de un modelo multimodal (vision-lenguaje) de aproximadamente 2 000 millones de parametros, publicada por el usuario Sqersters en Hugging Face. El repositorio no contiene pesos en safetensors ni el modelo original, sino dos ficheros GGUF generados con Unsloth: una cuantizacion Q8_0 para el modelo de lenguaje y un proyector multimodal (`mmproj`) en BF16. Los nombres de los ficheros (`Qwen3.5-2B.BF16-mmproj.gguf`, `Qwen3.5-2B.Q8_0.gguf`) indican que deriva de un modelo base denominado Qwen3.5-2B, aunque la model card no documenta la procedencia exacta, el pipeline ni la licencia.
 
 La relevancia de esta publicacion es practica mas que cientifica: empaqueta un modelo de 1 942 653 248 parametros en un formato ejecutable directamente con `llama.cpp` y compatible con el ecosistema de inferencia local (Ollama, LM Studio, servidores compatibles con la API de OpenAI). Al incluir el proyector multimodal, permite inferencia con imagenes sin necesidad de servidores dedicados ni GPU de datacenter, algo poco habitual en modelos de vision-lenguaje de este rango de tamano.
 
@@ -105,7 +105,7 @@ Diferencias clave a tener en cuenta: los tres modelos de referencia declaran lic
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/Sqersters/VoidGPTQ-2B-0.1
+- Hugging Face (repositorio del modelo): https://huggingface.co/Sqersters/VoidGPTQ-2B-0.1
 - Unsloth (libreria usada para la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia recomendado por la model card): https://github.com/ggml-org/llama.cpp
 - Documentacion de llama.cpp sobre modelos multimodales (`llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp/tree/master/tools/mtmd

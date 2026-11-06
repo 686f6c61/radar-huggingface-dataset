@@ -69,8 +69,8 @@ No se dispone de informacion sobre otros modelos que realicen exactamente la mis
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SAEVerbalizer-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/THU-KEG/SAEVerbalizer-27B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SAEVerbalizer-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/THU-KEG/SAEVerbalizer-27B
 - Codigo oficial (GitHub): https://github.com/THU-KEG/SAEVerbalizer
 - Paper en arXiv: https://arxiv.org/html/2608.13538v1
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

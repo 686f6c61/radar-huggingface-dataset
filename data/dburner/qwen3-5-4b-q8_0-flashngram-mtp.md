@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos publicados para este artefacto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-MTP
+- Repositorio Hugging Face: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-MTP
 - Rama personalizada de llama.cpp: https://github.com/dburner/llama.cpp/tree/pr/qwen35-flashngram-prompt-logprobs
 - Modelo base de Unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-MTP-GGUF
 - Documentacion general de Qwen3.5 (referencia): https://qwen-ai.com/qwen-3-5/

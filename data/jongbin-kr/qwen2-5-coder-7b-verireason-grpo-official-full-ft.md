@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-coder-7b-verireason-grpo-official-full-ft | 7,6 B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | 32K (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace |
-| CodeLlama-7B-Instruct | 7 B | 16K | Llama 2 license | HuggingFace |
-| DeepSeek-Coder-7B-Instruct | 7 B | 16K | DeepSeek License | HuggingFace |
+| qwen2.5-coder-7b-verireason-grpo-official-full-ft | 7,6 B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | 32K (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face |
+| CodeLlama-7B-Instruct | 7 B | 16K | Llama 2 license | Hugging Face |
+| DeepSeek-Coder-7B-Instruct | 7 B | 16K | DeepSeek License | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo presentado es un fine-tune experimental sin benchmarks, por lo que no se puede establecer una comparativa objetiva con sus alternativas.
 
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento para comparar. El modelo presentado es un 
 
 ## Enlaces
 
-- [HuggingFace - modelo principal](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-grpo-official-full-ft)
-- [HuggingFace - modelo base SFT](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason_sft-reasoning_official-full-ft)
-- [HuggingFace - variante con settings oficiales](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin)
+- [Hugging Face - modelo principal](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-grpo-official-full-ft)
+- [Hugging Face - modelo base SFT](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason_sft-reasoning_official-full-ft)
+- [Hugging Face - variante con settings oficiales](https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin)
 - [FriendliAI - despliegue de variante sin razonamiento](https://friendli.ai/models/Jongbin-kr/qwen2.5-coder-7b-verireason_sft-NO-reasoning_official-full-ft)
 - [LLM Explorer - ficha del modelo](https://llm-explorer.com/model/Jongbin-kr%2Fqwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin,7npIKeiRaulHad1GbyDfqF)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)

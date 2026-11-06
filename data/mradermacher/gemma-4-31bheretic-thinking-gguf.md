@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31BHERETIC-Thinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31BHERETIC-Thinking-GGUF
 - Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/gemma-4-31BHERETIC-Thinking-i1-GGUF
 - Modelo base: https://huggingface.co/mirxa2/gemma-4-31BHERETIC-Thinking
 - Pagina resumen del modelo con lista de descargas: https://hf.tst.eu/model#gemma-4-31BHERETIC-Thinking-GGUF

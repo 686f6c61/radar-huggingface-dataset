@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-3-4B fine-tuned on MLLMU-Bench es un ajuste fino completo del modelo multimodal google/gemma-3-4b-it, publicado por el usuario Lordvarun23 en HuggingFace. El modelo se entrena sobre los pares de pregunta-respuesta de los 500 perfiles ficticios del banco de pruebas MLLMU-Bench, un conjunto diseñado para investigar el desaprendizaje de maquina (machine unlearning) en modelos multimodales. Su proposito no es el uso generalista, sino servir como punto de partida para experimentos de unlearning: el checkpoint representa el estado "antes de olvidar" sobre el que se aplican despues tecnicas como GradDiff, KL-Min o NPO.
+Gemma-3-4B fine-tuned on MLLMU-Bench es un ajuste fino completo del modelo multimodal google/gemma-3-4b-it, publicado por el usuario Lordvarun23 en Hugging Face. El modelo se entrena sobre los pares de pregunta-respuesta de los 500 perfiles ficticios del banco de pruebas MLLMU-Bench, un conjunto diseñado para investigar el desaprendizaje de maquina (machine unlearning) en modelos multimodales. Su proposito no es el uso generalista, sino servir como punto de partida para experimentos de unlearning: el checkpoint representa el estado "antes de olvidar" sobre el que se aplican despues tecnicas como GradDiff, KL-Min o NPO.
 
 El modelo conserva la arquitectura original de Gemma 3 4B (transformer multimodal con torre de vision) y sus 4.300.079.472 parametros, pero ha sido ajustado con un fine-tune completo que incluye la torre de vision. La relevancia actual reside en que proporciona una linea base reproducible para evaluar metodos de eliminacion de conocimiento en modelos image-text-to-text, un area con pocos checkpoints publicos y metricas estandarizadas.
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-4b-mllmu-ft (este) | 4.300 M | no disponible | Fine-tune completo sobre MLLMU-Bench | gemma | HuggingFace |
-| google/gemma-3-4b-it | 4.300 M | no disponible | Modelo base multimodal instruction-tuned | gemma | HuggingFace |
-| gemma-3-4b-mllmu-retain95 | 4.300 M | no disponible | Fine-tune solo con perfiles retain | gemma | HuggingFace |
-| gemma-3-4b-mllmu-graddiff-forget5 | 4.300 M | no disponible | Unlearning con GradDiff sobre forget_5 | gemma | HuggingFace |
-| gemma-3-4b-mllmu-npo-forget5 | 4.300 M | no disponible | Unlearning con NPO sobre forget_5 | gemma | HuggingFace |
+| gemma-3-4b-mllmu-ft (este) | 4.300 M | no disponible | Fine-tune completo sobre MLLMU-Bench | gemma | Hugging Face |
+| google/gemma-3-4b-it | 4.300 M | no disponible | Modelo base multimodal instruction-tuned | gemma | Hugging Face |
+| gemma-3-4b-mllmu-retain95 | 4.300 M | no disponible | Fine-tune solo con perfiles retain | gemma | Hugging Face |
+| gemma-3-4b-mllmu-graddiff-forget5 | 4.300 M | no disponible | Unlearning con GradDiff sobre forget_5 | gemma | Hugging Face |
+| gemma-3-4b-mllmu-npo-forget5 | 4.300 M | no disponible | Unlearning con NPO sobre forget_5 | gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-ft
+- Modelo en Hugging Face: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-ft
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Checkpoint retain-only: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-retain95
 - Checkpoint GradDiff: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-graddiff-forget5

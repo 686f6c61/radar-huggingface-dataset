@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`haisassan/pubmed-bart-summarize` es un modelo de generacion texto-a-texto publicado en HuggingFace por el usuario haisassan, etiquetado con la arquitectura `bart` y con 406.340.696 parametros reales declarados en los pesos safetensors. El nombre del repositorio sugiere un ajuste fino orientado al resumen de literatura biomedica (PubMed), pero la model card publicada es la plantilla automatica de HuggingFace y no confirma ni el dominio de entrenamiento, ni el dataset, ni el procedimiento de ajuste.
+`haisassan/pubmed-bart-summarize` es un modelo de generacion texto-a-texto publicado en Hugging Face por el usuario haisassan, etiquetado con la arquitectura `bart` y con 406.340.696 parametros reales declarados en los pesos safetensors. El nombre del repositorio sugiere un ajuste fino orientado al resumen de literatura biomedica (PubMed), pero la model card publicada es la plantilla automatica de Hugging Face y no confirma ni el dominio de entrenamiento, ni el dataset, ni el procedimiento de ajuste.
 
 El modelo resuelve, en principio, la tarea de resumen abstractivo de textos largos, un caso de uso con demanda real en revisiones sistematicas, vigilancia bibliografica y preprocesado de documentacion clinica. Su tamano (en torno a 400 millones de parametros) lo situa en la gama media de los modelos seq2seq, con inferencia viable en GPU de consumo e incluso en CPU para lotes pequenos.
 
@@ -72,10 +72,10 @@ Los datos de la columna "modelo comparado" proceden de las fichas publicas de ca
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| haisassan/pubmed-bart-summarize | 406.340.696 | no disponible | no disponible | HuggingFace, 0 descargas |
-| facebook/bart-large-cnn | en torno a 406 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/pegasus-pubmed | en torno a 568 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| google-t5/t5-base | en torno a 220 M | 512 tokens | Apache 2.0 | HuggingFace |
+| haisassan/pubmed-bart-summarize | 406.340.696 | no disponible | no disponible | Hugging Face, 0 descargas |
+| facebook/bart-large-cnn | en torno a 406 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/pegasus-pubmed | en torno a 568 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| google-t5/t5-base | en torno a 220 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 Diferencias relevantes: los tres comparadores declaran licencia permisiva y tienen documentacion de entrenamiento y evaluacion publicada; `haisassan/pubmed-bart-summarize` no declara licencia, lo que impide su uso comercial sin autorizacion explicita del autor, y carece de cualquier dato de evaluacion. No hay informacion suficiente para comparar rendimiento.
 
@@ -94,7 +94,7 @@ Diferencias relevantes: los tres comparadores declaran licencia permisiva y tien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haisassan/pubmed-bart-summarize
+- Modelo en Hugging Face: https://huggingface.co/haisassan/pubmed-bart-summarize
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Paper original de BART (referencia de arquitectura, no enlazado en la model card): https://arxiv.org/abs/1910.13461
 - Modelo comparable facebook/bart-large-cnn: https://huggingface.co/facebook/bart-large-cnn

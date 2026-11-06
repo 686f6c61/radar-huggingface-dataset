@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-MTPLX-4bit | ~8,95 B | no disponible | MLX safetensors 4-bit | MIT | HuggingFace (0 descargas) |
-| ornith-ai/Ornith-1.5-9B (base) | ~8,95 B | no disponible | safetensors (sin cuantizar) | MIT | HuggingFace |
+| Ornith-1.5-9B-MTPLX-4bit | ~8,95 B | no disponible | MLX safetensors 4-bit | MIT | Hugging Face (0 descargas) |
+| ornith-ai/Ornith-1.5-9B (base) | ~8,95 B | no disponible | safetensors (sin cuantizar) | MIT | Hugging Face |
 | Otras alternativas de ~9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es contra el modelo base del que deriva: misma cantidad de parametros y misma licencia MIT, pero con pesos en 4 bits y cabezas MTP y vision en BF16. No se dispone de datos sobre otros modelos comparables de la misma categoria.
@@ -87,7 +87,7 @@ La unica comparacion documentada es contra el modelo base del que deriva: misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xzknw/Ornith-1.5-9B-MTPLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/0xzknw/Ornith-1.5-9B-MTPLX-4bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Revision del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/tree/489cb97981b8654bcfcf30ce1f94ed1b62e07b53
 - Herramienta MTPLX: https://github.com/youssofal/MTPLX

@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Melody1437-27B-v0.4-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Melody1437-27B-v0.4-i1-GGUF
 - Repositorio estático con quants adicionales: https://huggingface.co/mradermacher/Melody1437-27B-v0.4-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-27B-v0.4
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

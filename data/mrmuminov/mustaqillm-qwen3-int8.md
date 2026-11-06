@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables específicos en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrmuminov/MustaqiLLM-Qwen3-INT8
+- Hugging Face: https://huggingface.co/mrmuminov/MustaqiLLM-Qwen3-INT8
 - Modelo original: https://huggingface.co/NeuronUz/MustaqiLLM
 - Referencia técnica de Qwen3: https://arxiv.org/pdf/2505.09388v1 (paper técnico de Qwen3, útil para entender la arquitectura base)

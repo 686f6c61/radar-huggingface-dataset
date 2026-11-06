@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Devatri/anlp-assignment2-part1-model4` es un transformer decoder-only desarrollado por el usuario Devatri como parte de una practica academica (aparece etiquetado como "ANLP Assignment 2 - Part 1, model 4"). Su tarea concreta es la traduccion automatica desde vietnamita y japones hacia ingles, y fue entrenado sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`. No se trata de un modelo de proposito general ni de un lanzamiento de produccion, sino de un artefacto de investigacion formativa publicado en HuggingFace.
+El modelo `Devatri/anlp-assignment2-part1-model4` es un transformer decoder-only desarrollado por el usuario Devatri como parte de una practica academica (aparece etiquetado como "ANLP Assignment 2 - Part 1, model 4"). Su tarea concreta es la traduccion automatica desde vietnamita y japones hacia ingles, y fue entrenado sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`. No se trata de un modelo de proposito general ni de un lanzamiento de produccion, sino de un artefacto de investigacion formativa publicado en Hugging Face.
 
 La informacion publica disponible es muy escasa: la model card se limita a describir el contenido del checkpoint y a indicar como cargarlo. No se declaran parametros, longitud de contexto, licencia, idiomas en metadatos ni resultados de evaluacion. El unico dato cuantitativo objetivo es el tamano del repositorio, de aproximadamente 0,1 GB, lo que sugiere un modelo de dimensiones reducidas, coherente con un ejercicio de asignatura.
 
@@ -88,7 +88,7 @@ Esta comparativa es orientativa y se basa en caracteristicas publicas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part1-model4
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part1-model4
 - Dataset de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets` (referenciado en la model card; no se proporciona URL directa en la informacion disponible)
 - Cuaderno de implementacion: `implementation.ipynb` (mencionado en la model card como necesario para cargar el modelo; no se facilita enlace)
 - Hash SHA-256 del checkpoint: `b359a58dea6df1623b7c235da6dacd2cadaf766ea0f0ec2d169755b62d71a52d`

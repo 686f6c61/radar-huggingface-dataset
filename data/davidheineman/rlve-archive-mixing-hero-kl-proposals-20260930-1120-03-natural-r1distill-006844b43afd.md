@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Este checkpoint (rlve-archive-03-natural-r1distill) | 1,78 B | No disponible | No disponible | Safetensors, 0 descargas | Checkpoint de investigación archivado, sin benchmarks |
-| Qwen2-1.5B | ~1,5 B | 32.768 tokens (configuración habitual de la familia) | Apache 2.0 (versión base publicada) | HuggingFace, ampliamente usado | Modelo de referencia de la misma familia arquitectónica |
-| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (ampliable) | Apache 2.0 (excepto variantes de 3 B y 72 B) | HuggingFace | Sucesor con mejor rendimiento declarado por el autor |
-| SmolLM2-1.7B | ~1,7 B | 8.192 tokens (según publicación) | Apache 2.0 | HuggingFace | Alternativa de tamaño casi idéntico orientada a edge |
+| Qwen2-1.5B | ~1,5 B | 32.768 tokens (configuración habitual de la familia) | Apache 2.0 (versión base publicada) | Hugging Face, ampliamente usado | Modelo de referencia de la misma familia arquitectónica |
+| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (ampliable) | Apache 2.0 (excepto variantes de 3 B y 72 B) | Hugging Face | Sucesor con mejor rendimiento declarado por el autor |
+| SmolLM2-1.7B | ~1,7 B | 8.192 tokens (según publicación) | Apache 2.0 | Hugging Face | Alternativa de tamaño casi idéntico orientada a edge |
 
 No hay datos de rendimiento de este checkpoint que permitan una comparación cuantitativa real; la tabla recoge solo parámetros, contexto y licencia de alternativas conocidas como referencia de categoría.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparación cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-03-natural-r1distill-006844b43afd
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-03-natural-r1distill-006844b43afd
 - Perfil del autor: https://huggingface.co/davidheineman
 - Run de W&B: identificador `6276ead7` (no se ha encontrado URL pública en la información disponible)
 - Paper, blog o repositorio asociado: no disponible

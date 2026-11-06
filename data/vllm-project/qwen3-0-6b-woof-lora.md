@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros base | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-Woof-LoRA | 0,6B (base) | no disponible (ejemplo con 2048) | Prueba de carga LoRA | MIT | HuggingFace (vllm-project y Jackmin108) |
-| Qwen3-0.6B-Meow-LoRA | 0,6B (base) | no disponible | Prueba de carga LoRA | no disponible | HuggingFace (Jackmin108) |
-| Qwen3-0.6B-Oink-LoRA | 0,6B (base) | no disponible | Prueba de carga LoRA | no disponible | HuggingFace (Jackmin108) |
+| Qwen3-0.6B-Woof-LoRA | 0,6B (base) | no disponible (ejemplo con 2048) | Prueba de carga LoRA | MIT | Hugging Face (vllm-project y Jackmin108) |
+| Qwen3-0.6B-Meow-LoRA | 0,6B (base) | no disponible | Prueba de carga LoRA | no disponible | Hugging Face (Jackmin108) |
+| Qwen3-0.6B-Oink-LoRA | 0,6B (base) | no disponible | Prueba de carga LoRA | no disponible | Hugging Face (Jackmin108) |
 
 No se dispone de datos de rendimiento comparativo con otros modelos, ya que no se han publicado benchmarks.
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento comparativo con otros modelos, ya que no s
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/Qwen3-0.6B-Woof-LoRA
-- HuggingFace (original): https://huggingface.co/Jackmin108/Qwen3-0.6B-Woof-LoRA
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/Qwen3-0.6B-Woof-LoRA
+- Hugging Face (original): https://huggingface.co/Jackmin108/Qwen3-0.6B-Woof-LoRA
 - Adaptador Meow: https://huggingface.co/Jackmin108/Qwen3-0.6B-Meow-LoRA
 - Adaptador Oink: https://huggingface.co/Jackmin108/Qwen3-0.6B-Oink-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jackmin108/Animal-SFT-1K

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (SFT) del checkpoint monolingüe `goldfish-models/zho_hans_100mb`, un modelo de la familia Goldfish orientado a chino simplificado y entrenado sobre aproximadamente 100 MB de texto en ese idioma. Lo publica el usuario de HuggingFace `francesca9805` y, por los metadatos del repositorio, el ajuste se ha realizado con TRL 0.23.0 sobre un dataset empaquetado ("packed") de 100 MB, con semilla 3407 y bajo el proyecto de Weights & Biases denominado "new-tokenizers", lo que apunta a un experimento de investigación sobre tokenización y ajuste supervisado más que a un modelo de producción.
+El modelo `zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (SFT) del checkpoint monolingüe `goldfish-models/zho_hans_100mb`, un modelo de la familia Goldfish orientado a chino simplificado y entrenado sobre aproximadamente 100 MB de texto en ese idioma. Lo publica el usuario de Hugging Face `francesca9805` y, por los metadatos del repositorio, el ajuste se ha realizado con TRL 0.23.0 sobre un dataset empaquetado ("packed") de 100 MB, con semilla 3407 y bajo el proyecto de Weights & Biases denominado "new-tokenizers", lo que apunta a un experimento de investigación sobre tokenización y ajuste supervisado más que a un modelo de producción.
 
 Técnicamente es un transformer decoder-only de la familia GPT-2 con 124.770.816 parámetros totales (dato leído directamente del fichero de safetensors), empaquetado en un repositorio de 0,3 GB. No hay información publicada sobre longitud de contexto, licencia, idiomas del ajuste ni composición exacta del dataset de SFT, y el modelo no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y acotada al ámbito experimental: sirve como ejemplo 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en los metadatos de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en los metadatos de Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de safetensors) |
 | Parametros activos | no aplica (arquitectura densa, no MoE) |
 | Longitud de contexto | no disponible |
@@ -48,7 +48,7 @@ El ajuste se ha realizado mediante aprendizaje supervisado (SFT) con TRL, sobre 
 - Pruebas de integracion de infraestructura: al ser un modelo de 0,3 GB y 124,7 M de parametros, permite validar extremo a extremo un despliegue en TGI, endpoints compatibles o `transformers` sin consumir recursos significativos.
 - Estudio de olvido catastrofico: comparar sus salidas en chino con las del modelo base `goldfish-models/zho_hans_100mb` permite cuantificar cuanto conocimiento monolingue se degrada tras el SFT.
 - Generacion de texto de baja exigencia en chino simplificado para prototipos internos: borradores, textos de relleno o ejemplos sinteticos donde la calidad no sea critica y el coste de inferencia deba ser minimo.
-- Docencia y demostraciones: es adecuado para explicar en clase el ciclo de vida de un ajuste fino (dataset, empaquetado, semilla, publicacion en HuggingFace) con un modelo que cabe en CPU.
+- Docencia y demostraciones: es adecuado para explicar en clase el ciclo de vida de un ajuste fino (dataset, empaquetado, semilla, publicacion en Hugging Face) con un modelo que cabe en CPU.
 - Base para ajustes posteriores: puede actuar como punto de partida para experimentos de SFT con otros datasets o de alineacion (DPO) a escala reducida.
 
 ## Benchmarks y rendimiento
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` | 124,77 M | no disponible | no disponible | safetensors en HuggingFace |
-| `goldfish-models/zho_hans_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | safetensors en HuggingFace |
+| `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407` | 124,77 M | no disponible | no disponible | safetensors en Hugging Face |
+| `goldfish-models/zho_hans_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas de escala similar (por ejemplo, modelos GPT-2 small o GPT-Neo-125M) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/k2pue3lo
 - Repositorio de TRL: https://github.com/huggingface/trl

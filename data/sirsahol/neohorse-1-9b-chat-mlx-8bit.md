@@ -79,7 +79,7 @@ En cuanto a modelos comparables de otros desarrolladores, no se dispone de datos
 
 - Sesgos conocidos: no se ha publicado información sobre sesgos específicos del modelo o de sus conversiones.
 - Riesgo de alucinación: no documentado. Como cualquier modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en tareas de razonamiento complejo o con contexto ambiguo.
-- Limitaciones de idioma: el campo de idiomas de HuggingFace indica "no disponible", por lo que no se puede confirmar la cobertura multilingüe. Se recomienda verificar el comportamiento en el idioma de uso antes de desplegar en producción.
+- Limitaciones de idioma: el campo de idiomas de Hugging Face indica "no disponible", por lo que no se puede confirmar la cobertura multilingüe. Se recomienda verificar el comportamiento en el idioma de uso antes de desplegar en producción.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se mantenga el aviso de copyright y la licencia. No hay restricciones adicionales conocidas.
 - Caveat importante para producción: las velocidades y el TTFT son estimaciones del autor basadas en el ancho de banda de memoria unificada de Apple Silicon. Los valores reales pueden variar significativamente con la longitud del contexto, la carga del sistema y la versión de MLX utilizada.
 - El modelo requiere configurar stop strings específicos (`<|im_start|>`, `<|im_end|>`, `<|endoftext|>`) en runtimes como LM Studio para evitar bucles de generación y asegurar un turn-taking correcto.
@@ -88,7 +88,7 @@ En cuanto a modelos comparables de otros desarrolladores, no se dispone de datos
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-8bit
+- Repositorio del modelo en Hugging Face: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - Variante 4-bit MLX: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-4bit
 - Variante 16-bit MLX: https://huggingface.co/SirSahOl/NeoHorse-1-9B-chat-mlx-16bit

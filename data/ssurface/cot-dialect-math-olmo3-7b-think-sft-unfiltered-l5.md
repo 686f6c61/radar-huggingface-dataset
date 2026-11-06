@@ -78,6 +78,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace - ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5)
+- [Hugging Face - ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5](https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5)
 - [Modelo base - allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think) (no se proporciona enlace directo, pero se menciona en la model card)
 - [Dataset - HuggingFaceH4/MATH-500](https://huggingface.co/datasets/HuggingFaceH4/MATH-500) (referenciado en la model card)

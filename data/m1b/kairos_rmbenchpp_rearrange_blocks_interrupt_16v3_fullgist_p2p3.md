@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3` es un checkpoint de investigación publicado en HuggingFace por el usuario m1b, orientado a políticas robóticas de manipulación. El nombre del repositorio y la model card indican que se trata de una ablación del modelo `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3`, entrenada sobre el dataset `rmbench-plus-plus-robodojo-rearrange-blocks-interrupt` con el conjunto de acciones `robodojo_dual_x5_absolute_joint_14d` (14 dimensiones de control articular absoluto para un setup bimanual de dos brazos x5).
+`m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3` es un checkpoint de investigación publicado en Hugging Face por el usuario m1b, orientado a políticas robóticas de manipulación. El nombre del repositorio y la model card indican que se trata de una ablación del modelo `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3`, entrenada sobre el dataset `rmbench-plus-plus-robodojo-rearrange-blocks-interrupt` con el conjunto de acciones `robodojo_dual_x5_absolute_joint_14d` (14 dimensiones de control articular absoluto para un setup bimanual de dos brazos x5).
 
 La variante `fullgist` introduce lo que el autor denomina "memory tokens" en modo gist estático: una memoria de solo resumen (sin router adaptativo de KV completo), con K=4 pasos de denoising por sorpresa, cuantil 0,9 y prefijo de 128. El entrenamiento se realizó en dos fases (`p2` y `p3`) de 2.000 pasos cada una sobre 1x8 A800, con una tasa de aprendizaje de 1e-4, partiendo del checkpoint `p1/step_018067.pt` del modelo base.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3` | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3` | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| `m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas robóticas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es con el modelo base del que deriva esta ablación, con el que comparte base y datos. No se dispone de información sobre alternativas de la misma categoría en la documentación proporcionada.
@@ -79,5 +79,5 @@ La única comparación documentada es con el modelo base del que deriva esta abl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_fullgist_p2p3
 - Modelo base (ablación de referencia): https://huggingface.co/m1b/kairos_rmbenchpp_rearrange_blocks_interrupt_16v3_p2p3

@@ -73,7 +73,7 @@ Agregado sobre template + ASR: las propuestas incorrectas aceptadas pasan de 28 
 
 - VRAM estimada para inferencia: no aplica; el modelo está diseñado para ejecutarse en CPU con PyTorch.
 - GPU recomendadas: no se requieren. El entrenamiento se realizó en 1×B200, pero la inferencia documentada es en CPU.
-- Cabe en cualquier GPU consumer y en dispositivos sin GPU; el peso del repo es de 0,0 GB según HuggingFace.
+- Cabe en cualquier GPU consumer y en dispositivos sin GPU; el peso del repo es de 0,0 GB según Hugging Face.
 - Opciones de despliegue: script `inference.py` incluido y API Python `load_slotgrounder` / `check` / `score_spans`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
@@ -83,8 +83,8 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-SlotGrounder-KO-7M | 7,46 M | 192 caracteres | Verificación de propuestas (coreano) | thaki-slotgrounder-ko-7m-research | HuggingFace |
-| Thaki-InputGuard-KO-9M | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Thaki-SlotGrounder-KO-7M | 7,46 M | 192 caracteres | Verificación de propuestas (coreano) | thaki-slotgrounder-ko-7m-research | Hugging Face |
+| Thaki-InputGuard-KO-9M | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de verificación de slots | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SlotGrounder-KO-7M
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SlotGrounder-KO-7M
 - Modelo base: https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M
 - Tarjeta en coreano: MODEL_CARD.ko.md (incluida en el repositorio del modelo)
 - Licencia: LICENSE.md (incluida en el repositorio del modelo)

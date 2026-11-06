@@ -99,7 +99,7 @@ Frente a modelos de proposito general del mismo tamano (Qwen3-14B, Qwen3-32B, Ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datkinson/identifying-introspection
+- Modelo en Hugging Face: https://huggingface.co/datkinson/identifying-introspection
 - Articulo (arXiv): https://arxiv.org/abs/2610.07186
 - Codigo: https://github.com/diatkinson/identifying-introspection-from-the-inside
 - Pagina del proyecto: https://iii.baulab.info

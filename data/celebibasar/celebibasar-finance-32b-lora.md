@@ -2,7 +2,7 @@
 
 ## Resumen
 
-celebibasar-finance-32B-lora es un adaptador LoRA de ajuste fino orientado al dominio financiero, publicado por el usuario celebibasar en HuggingFace. El adaptador se entrena sobre el modelo base unsloth/Qwen2.5-32B-Instruct-bnb-4bit, es decir, una version cuantizada a 4 bits de Qwen2.5-32B-Instruct. El nombre del repositorio sugiere especializacion en tareas de finanzas, aunque la model card no documenta el corpus de entrenamiento ni los objetivos concretos del ajuste.
+celebibasar-finance-32B-lora es un adaptador LoRA de ajuste fino orientado al dominio financiero, publicado por el usuario celebibasar en Hugging Face. El adaptador se entrena sobre el modelo base unsloth/Qwen2.5-32B-Instruct-bnb-4bit, es decir, una version cuantizada a 4 bits de Qwen2.5-32B-Instruct. El nombre del repositorio sugiere especializacion en tareas de finanzas, aunque la model card no documenta el corpus de entrenamiento ni los objetivos concretos del ajuste.
 
 Se trata por tanto de un adaptador, no de un modelo completo: el repositorio ocupa 1,1 GB en formato safetensors y necesita el modelo base para poder ejecutarse. La model card se limita a indicar el autor, la licencia Apache 2.0, el modelo de partida y que el entrenamiento se realizo con Unsloth, sin detallar hiperparametros, datos, numero de tokens ni evaluaciones.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| celebibasar-finance-32B-lora | LoRA sobre 32.500 M | 131.072 tokens (heredado del base) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-32B-Instruct (modelo base de referencia) | 32.500 M | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-14B-Instruct | 14.700 M | No disponible en la informacion consultada | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8.000 M | No disponible en la informacion consultada | Llama 3.1 Community License | HuggingFace |
+| celebibasar-finance-32B-lora | LoRA sobre 32.500 M | 131.072 tokens (heredado del base) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-32B-Instruct (modelo base de referencia) | 32.500 M | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-14B-Instruct | 14.700 M | No disponible en la informacion consultada | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.000 M | No disponible en la informacion consultada | Llama 3.1 Community License | Hugging Face |
 
 No hay datos de rendimiento comparativo entre estos modelos en la informacion disponible, por lo que la tabla solo recoge caracteristicas estructurales y de licencia. En la practica, la comparacion relevante es contra el propio modelo base sin ajustar: hasta que no exista una evaluacion en tareas financieras, no puede afirmarse que el LoRA aporte mejoras.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento comparativo entre estos modelos en la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/celebibasar/celebibasar-finance-32B-lora
+- Modelo en Hugging Face: https://huggingface.co/celebibasar/celebibasar-finance-32B-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen2.5: no disponible en la informacion proporcionada

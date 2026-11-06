@@ -102,7 +102,7 @@ Según los benchmarks de la model card, SearchQwen3-8B supera claramente a Qwen3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-pai/SearchQwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/alibaba-pai/SearchQwen3-8B
 - Dataset complementario: https://huggingface.co/datasets/alibaba-pai/SynSearch-Data
 - Documentación de Qwen3-8B en Alibaba Cloud: https://www.alibabacloud.com/help/en/model-studio/qwen3-8b
 - Página de Qwen en Alibaba Cloud: https://www.alibabacloud.com/en/solutions/generative-ai/qwen

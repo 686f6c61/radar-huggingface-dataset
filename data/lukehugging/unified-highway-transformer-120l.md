@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El Unified Highway Transformer 120L (UHT-120L) es una arquitectura de red neuronal presentada por Anthony Luke Simon bajo la organizacion LukeHugging en HuggingFace, acompanada de un articulo cientifico publicado en Figshare y de un repositorio de codigo en GitHub. Su propuesta central es un "bus de memoria paralelo de coste O(1)", cuyo objetivo es resolver dos patologias identificadas por el autor en redes profundas: la "amnesia latente" (Latent Amnesia) y la "dilucion PreNorm" (PreNorm Dilution). El modelo se distribuye como un checkpoint de 120 capas entrenado sobre WikiText-103 con el tokenizador de GPT-2, y el autor reporta pruebas de estres de hasta 180 capas con flujo de gradiente sostenido.
+El Unified Highway Transformer 120L (UHT-120L) es una arquitectura de red neuronal presentada por Anthony Luke Simon bajo la organizacion LukeHugging en Hugging Face, acompanada de un articulo cientifico publicado en Figshare y de un repositorio de codigo en GitHub. Su propuesta central es un "bus de memoria paralelo de coste O(1)", cuyo objetivo es resolver dos patologias identificadas por el autor en redes profundas: la "amnesia latente" (Latent Amnesia) y la "dilucion PreNorm" (PreNorm Dilution). El modelo se distribuye como un checkpoint de 120 capas entrenado sobre WikiText-103 con el tokenizador de GPT-2, y el autor reporta pruebas de estres de hasta 180 capas con flujo de gradiente sostenido.
 
 La relevancia del proyecto reside en su enfoque de diagnostico: el autor propone el uso de "proxies de red amorfa" (Amorphous Neural Network diagnostic proxies) para medir la estagnacion del gradiente en funcion de la profundidad y, a partir de ahi, disenar una conexion residual alternativa. El resultado declarado es que el UHT mantiene actividad de gradiente en capas muy profundas donde un transformer Pre-LN estandar se aproxima a cero, lo que permitiria entrenar arquitecturas de mas de 100 capas sin degradacion del aprendizaje. Se trata, por tanto, de una contribucion de investigacion sobre arquitectura y optimizacion, no de un modelo de proposito general listo para produccion.
 
-El repositorio de HuggingFace es de tamano 0.0 GB, sin descargas ni likes en el momento de la consulta, y no incluye pesos alojados directamente: el checkpoint `uht_120L_lean.pt` debe descargarse desde la pestana Releases del repositorio de GitHub. No se especifican en la informacion disponible el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea, por lo que la ficha refleja esos datos como no disponibles.
+El repositorio de Hugging Face es de tamano 0.0 GB, sin descargas ni likes en el momento de la consulta, y no incluye pesos alojados directamente: el checkpoint `uht_120L_lean.pt` debe descargarse desde la pestana Releases del repositorio de GitHub. No se especifican en la informacion disponible el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea, por lo que la ficha refleja esos datos como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio de HuggingFace es de tamano 0.0 GB, sin descargas ni likes en el 
 | Dataset de entrenamiento | WikiText-103 |
 | DOI del articulo | 10.6084/m9.figshare.33510313 |
 | Autor | Anthony Luke Simon |
-| Fecha de publicacion en HuggingFace | 2026-09-10 |
+| Fecha de publicacion en Hugging Face | 2026-09-10 |
 
 ## Arquitectura y entrenamiento
 
@@ -69,14 +69,14 @@ Los unicos datos numericos publicados en la informacion disponible son la perdid
 - Compatibilidad con GPU de consumo: no disponible. La profundidad de 120 capas y la ausencia de datos de tamano impiden confirmar si cabe en una GPU de gama consumer.
 - Opciones de despliegue: el proyecto se ejecuta con Python y PyTorch mediante `train.py`. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia.
 - Latencia y throughput: no disponible.
-- Almacenamiento del checkpoint: el archivo `uht_120L_lean.pt` no reside en el repositorio de HuggingFace (0.0 GB); debe descargarse desde la pestana Releases del repositorio de GitHub.
+- Almacenamiento del checkpoint: el archivo `uht_120L_lean.pt` no reside en el repositorio de Hugging Face (0.0 GB); debe descargarse desde la pestana Releases del repositorio de GitHub.
 - Nota practica: para reproducir la evaluacion rapida se necesitan unicamente el checkpoint, los scripts del repositorio y las dependencias de `requirements.txt`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-103 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unified Highway Transformer 120L | no disponible | no disponible | 74.88 | MIT | Checkpoint en GitHub Releases; repositorio en HuggingFace |
+| Unified Highway Transformer 120L | no disponible | no disponible | 74.88 | MIT | Checkpoint en GitHub Releases; repositorio en Hugging Face |
 | Pre-LN Transformer (baseline del propio articulo) | no disponible | no disponible | no disponible | no disponible | Referencia descrita en el articulo |
 | Otros transformers profundos de investigacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,16 +88,16 @@ No se dispone de datos publicados que permitan una comparacion cuantitativa con 
 - Modelo de investigacion, no de produccion: el objetivo declarado es validar una arquitectura y una metodologia de diagnostico, no ofrecer un asistente listo para desplegar.
 - Rendimiento limitado por el corpus: el entrenamiento se realiza exclusivamente sobre WikiText-103, un corpus en ingles de dominio enciclopedico, por lo que el modelo no debe emplearse como generador generalista ni en idiomas distintos del ingles.
 - Riesgo de alucinacion: no evaluado en la informacion disponible; al tratarse de un modelo entrenado desde cero sobre un corpus relativamente pequeno, la generacion libre de hechos no verificados es previsible.
-- Idiomas: no se declara soporte multilingue; el tag de HuggingFace unicamente indica `region:us`.
+- Idiomas: no se declara soporte multilingue; el tag de Hugging Face unicamente indica `region:us`.
 - Sesgos: no se documenta ninguna evaluacion de sesgos, toxicidad o equidad.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero el autor no ofrece garantias sobre el comportamiento del modelo ni sobre los pesos alojados en GitHub.
-- Disponibilidad fragil: el repositorio de HuggingFace no contiene los pesos y el proyecto depende de la pestana Releases de GitHub y de un enlace a un PDF alojado en el propio repositorio.
+- Disponibilidad fragil: el repositorio de Hugging Face no contiene los pesos y el proyecto depende de la pestana Releases de GitHub y de un enlace a un PDF alojado en el propio repositorio.
 - Resultados no replicados de forma independiente: los valores de perdida y perplejidad proceden exclusivamente del autor; no se han encontrado verificaciones externas en la informacion disponible.
 - Las busquedas web realizadas no devolvieron resultados relacionados con el modelo, por lo que no existe cobertura secundaria que confirme o matice las afirmaciones del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LukeHugging/Unified-Highway-Transformer-120L
+- Modelo en Hugging Face: https://huggingface.co/LukeHugging/Unified-Highway-Transformer-120L
 - Repositorio de codigo y scripts de entrenamiento: https://github.com/luke5011/Unified-Highway-Transformer
 - Articulo cientifico (DOI): https://doi.org/10.6084/m9.figshare.33510313
 - PDF del articulo en el repositorio: Unified Highway Transformer Paper_3.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `con-cord/GRPO-MOD2reward-base-no-ref` es un modelo multimodal de tipo *image-text-to-text* publicado en HuggingFace por el usuario `con-cord`. Según las etiquetas del repositorio, está basado en la arquitectura Gemma3 y utiliza la librería `transformers`. Sus pesos, almacenados en formato `safetensors`, suman un total de 4.300.079.472 parámetros, lo que lo sitúa en la categoría de modelos de tamaño medio (aproximadamente 4.300 millones de parámetros). El repositorio tiene un tamaño de 17.2 GB, lo que sugiere que los pesos están almacenados en precisión FP32.
+El modelo `con-cord/GRPO-MOD2reward-base-no-ref` es un modelo multimodal de tipo *image-text-to-text* publicado en Hugging Face por el usuario `con-cord`. Según las etiquetas del repositorio, está basado en la arquitectura Gemma3 y utiliza la librería `transformers`. Sus pesos, almacenados en formato `safetensors`, suman un total de 4.300.079.472 parámetros, lo que lo sitúa en la categoría de modelos de tamaño medio (aproximadamente 4.300 millones de parámetros). El repositorio tiene un tamaño de 17.2 GB, lo que sugiere que los pesos están almacenados en precisión FP32.
 
 El nombre del modelo sugiere que ha sido entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, y que posiblemente está orientado a tareas de *reward modeling* o alineación. Sin embargo, la model card es una plantilla automática sin información detallada, y no se han publicado resultados de evaluación ni documentación adicional. Por tanto, la información disponible es insuficiente para determinar sus capacidades reales, su procedencia exacta o su idoneidad para casos de uso concretos. Su relevancia actual radica en ser un modelo multimodal de código abierto con un número de parámetros moderado, pero su estado de desarrollo y documentación es claramente preliminar.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere que ha sido entrenado mediante GRPO (Group Relative
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo se deriva de Gemma3, una familia de modelos transformer multimodales que aceptan tanto imágenes como texto como entrada. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que confirma su naturaleza multimodal. El número de parámetros (4.300 millones) coincide con la variante de 4B de Gemma3, por lo que es probable que sea un *fine-tuning* de dicha base.
+La arquitectura del modelo se deriva de Gemma3, una familia de modelos transformer multimodales que aceptan tanto imágenes como texto como entrada. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que confirma su naturaleza multimodal. El número de parámetros (4.300 millones) coincide con la variante de 4B de Gemma3, por lo que es probable que sea un *fine-tuning* de dicha base.
 
 El nombre del modelo incluye las siglas GRPO, que hacen referencia a *Group Relative Policy Optimization*, un método de aprendizaje por refuerzo utilizado para alinear modelos de lenguaje. Esto sugiere que el modelo ha sido entrenado mediante un proceso de optimización de políticas, posiblemente para tareas de *reward modeling* o para mejorar el comportamiento del modelo base en función de recompensas. No obstante, no se dispone de información sobre los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. La model card no contiene ninguna especificación técnica más allá de la plantilla genérica.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con los pesos almacenados en FP32 (17.2 GB), la carga completa del modelo en FP32 requiere aproximadamente 17.2 GB de memoria. En FP16, el modelo ocuparía alrededor de 8.6 GB, y en 8-bit, unos 4.3 GB. Estas cifras son estimaciones basadas en el número de parámetros y no incluyen el overhead de activaciones ni el procesamiento de imágenes.
 - GPU recomendadas: para inferencia en FP16, una GPU con al menos 12 GB de VRAM sería necesaria, como una RTX 4070 Ti o superior. Para un funcionamiento cómodo con contexto largo y procesamiento de imágenes, se recomienda una RTX 4090 (24 GB) o una A100 (40/80 GB). En FP32, se necesitaría una GPU con más de 20 GB, como una A100 o H100.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutar el modelo en GPUs de consumo como la RTX 4090 si se utiliza cuantización FP16 o inferior. No se dispone de información sobre cuantizaciones oficiales.
-- Opciones de despliegue: al ser un modelo de la familia Gemma3 y estar integrado con `transformers`, puede cargarse mediante la API de HuggingFace. También es probable que sea compatible con vLLM, llama.cpp u Ollama, aunque no hay confirmación explícita en la documentación.
+- Opciones de despliegue: al ser un modelo de la familia Gemma3 y estar integrado con `transformers`, puede cargarse mediante la API de Hugging Face. También es probable que sea compatible con vLLM, llama.cpp u Ollama, aunque no hay confirmación explícita en la documentación.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 | Modelo | Parametros | Contexto | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| con-cord/GRPO-MOD2reward-base-no-ref | 4.300 millones | no disponible | image-text-to-text | no disponible | HuggingFace |
-| Gemma3-4B (base) | 4.000 millones aprox. | no disponible | image-text-to-text | Gemma Terms of Use | HuggingFace, Google AI |
+| con-cord/GRPO-MOD2reward-base-no-ref | 4.300 millones | no disponible | image-text-to-text | no disponible | Hugging Face |
+| Gemma3-4B (base) | 4.000 millones aprox. | no disponible | image-text-to-text | Gemma Terms of Use | Hugging Face, Google AI |
 
 La comparación es limitada porque no se conocen los detalles del *fine-tuning* ni las diferencias de rendimiento. No hay datos de benchmarks que permitan comparar ambos modelos de forma objetiva.
 
@@ -83,7 +83,7 @@ La comparación es limitada porque no se conocen los detalles del *fine-tuning* 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/con-cord/GRPO-MOD2reward-base-no-ref
+- Repositorio en Hugging Face: https://huggingface.co/con-cord/GRPO-MOD2reward-base-no-ref
 - Modelo similar encontrado en la búsqueda web: https://huggingface.co/con-cord/GRPO-MOD2-reward-no-ref
 - Referencia al paper citado en la plantilla de la model card (no relacionado directamente con el modelo): https://arxiv.org/abs/1910.09700
 

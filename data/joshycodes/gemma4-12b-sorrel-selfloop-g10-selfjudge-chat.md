@@ -4,7 +4,7 @@
 
 `joshycodes/gemma4-12b-sorrel-selfloop-g10-selfjudge-chat` es un ajuste de chat de ~12 000 millones de parámetros (11 959 730 224 pesos según el índice de safetensors), desarrollado por el usuario joshycodes como artefacto de investigación privada. Según su model card, forma parte de un proyecto de "Anthropic Fellows" sobre entrenamiento de carácter enmarcado en el concepto de *flourishing* (propuesta de Wang y Jermyn, 2026-04-22), y se construye sobre el modelo base `joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain`, del que hereda la arquitectura.
 
-El modelo se distribuye bajo una licencia personalizada de "internal-research" que prohíbe explícitamente su redistribución, y a fecha de la ficha acumula 0 descargas y 0 *likes* en HuggingFace. No hay información publicada sobre idiomas soportados, longitud de contexto final, cuantizaciones disponibles ni resultados de evaluación, más allá de la pérdida de entrenamiento registrada en la propia model card.
+El modelo se distribuye bajo una licencia personalizada de "internal-research" que prohíbe explícitamente su redistribución, y a fecha de la ficha acumula 0 descargas y 0 *likes* en Hugging Face. No hay información publicada sobre idiomas soportados, longitud de contexto final, cuantizaciones disponibles ni resultados de evaluación, más allá de la pérdida de entrenamiento registrada en la propia model card.
 
 Por tanto, se trata de un artefacto de investigación con trazabilidad de *run* (semilla, commit del lanzador, configuración de hiperparámetros y hardware usado), pero sin validación pública de capacidades. Cualquier evaluación de idoneidad para producción debe partir de una batería de pruebas propia.
 
@@ -92,9 +92,9 @@ Las comparaciones de calidad, razonamiento o generación de código entre estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-selfjudge-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-selfjudge-chat
 - Modelo base (midtrain): https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain
-- Model card del autor: incluida en el repositorio de HuggingFace del modelo
+- Model card del autor: incluida en el repositorio de Hugging Face del modelo
 - Repositorio `flourishing-training` (commit del lanzador `a0afb77669ae`): no se proporciona URL
 - Referencia citada por el autor: "Wang & Jermyn pitch, 2026-04-22": no se proporciona URL ni identificador
 - Los resultados de busqueda web disponibles no contienen ningun enlace relacionado con este modelo.

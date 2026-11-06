@@ -97,7 +97,7 @@ Solo se dispone de datos comparativos directos con el modelo hermano de la famil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/feather-0.2b-zh-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/feather-0.2b-zh-onnx-int8
 - Modelo hermano en aleman (familia Feather): https://huggingface.co/onnx-community/feather-0.2b-de-onnx-int8
 - ONNX Model Zoo: https://github.com/onnx/models
 - Modelos de ONNX Runtime: https://onnxruntime.ai/models

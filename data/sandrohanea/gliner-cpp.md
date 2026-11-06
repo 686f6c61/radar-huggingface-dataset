@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sandrohanea/gliner.cpp` de HuggingFace no contiene pesos de un modelo generativo, sino un artefacto asociado a GLiNER.cpp, un motor de inferencia escrito en C++ para ejecutar modelos GLiNER (Generalist and Lightweight Named Entity Recognition). GLiNER es una familia de modelos de reconocimiento de entidades nombradas (NER) con capacidad zero-shot que emplea un encoder transformer bidireccional de tipo BERT y permite identificar tipos de entidad definidos en tiempo de inferencia, sin reentrenamiento ni ejemplos etiquetados por tipo.
+El repositorio `sandrohanea/gliner.cpp` de Hugging Face no contiene pesos de un modelo generativo, sino un artefacto asociado a GLiNER.cpp, un motor de inferencia escrito en C++ para ejecutar modelos GLiNER (Generalist and Lightweight Named Entity Recognition). GLiNER es una familia de modelos de reconocimiento de entidades nombradas (NER) con capacidad zero-shot que emplea un encoder transformer bidireccional de tipo BERT y permite identificar tipos de entidad definidos en tiempo de inferencia, sin reentrenamiento ni ejemplos etiquetados por tipo.
 
 El interes de esta pieza es fundamentalmente de infraestructura: GLiNER.cpp propone una alternativa compilada en C++ frente a los pipelines habituales en Python y frente a los LLM generativos para tareas de extraccion de informacion, con una huella de memoria menor y sin dependencia de un runtime de Python. Esto encaja en escenarios de despliegue en produccion donde el coste por documento o la latencia importan mas que la flexibilidad de un modelo generativo.
 
@@ -10,7 +10,7 @@ La model card del repositorio esta practicamente vacia (unicamente declara licen
 
 ## Especificaciones tecnicas
 
-Los siguientes datos describen el artefacto alojado en HuggingFace y, cuando procede, el motor GLiNER.cpp referenciado en la documentacion publica del proyecto. Al no tratarse de un checkpoint de pesos, varias filas no son aplicables o no estan publicadas.
+Los siguientes datos describen el artefacto alojado en Hugging Face y, cuando procede, el motor GLiNER.cpp referenciado en la documentacion publica del proyecto. Al no tratarse de un checkpoint de pesos, varias filas no son aplicables o no estan publicadas.
 
 | Parametro | Valor |
 |---|---|
@@ -91,9 +91,9 @@ No se dispone de cifras de parametros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandrohanea/gliner.cpp
+- Repositorio en Hugging Face: https://huggingface.co/sandrohanea/gliner.cpp
 - GLiNER.cpp (Knowledgator) en GitHub: https://github.com/Knowledgator/GLiNER.cpp
 - Paquete `gliner-cpp` en PyPI: https://pypi.org/project/gliner-cpp/
 - Framework GLiNER (urchade) en GitHub: https://github.com/urchade/GLiNER
-- Checkpoint `gliner-community/gliner_xxl-v2.5` en HuggingFace: https://huggingface.co/gliner-community/gliner_xxl-v2.5
+- Checkpoint `gliner-community/gliner_xxl-v2.5` en Hugging Face: https://huggingface.co/gliner-community/gliner_xxl-v2.5
 - GLiNER2.5 en fastino.ai: https://fastino.ai/models/demo-library

@@ -36,7 +36,7 @@ En cuanto al entrenamiento, no hubo ninguno en este derivado. El modelo base se 
 - Decodificación especulativa con el cabezal MTP nativo, con aceptación de borradores del 82,1 % (texto) y 83,9 % (imagen) en las pruebas de humo.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada, aunque el caso de uso declarado por JetBrains es un asistente de codificación local (Junie Local).
-- Capacidades multilingües: no disponible; el campo de idiomas de HuggingFace aparece vacío.
+- Capacidades multilingües: no disponible; el campo de idiomas de Hugging Face aparece vacío.
 - Capacidades de audio: no disponible.
 
 ## Casos de uso

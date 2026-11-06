@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zacoda 1.2 prototype base 9b es un modelo de lenguaje de tipo base (no ajustado por instrucciones) publicado por el usuario mymaccrashed12times en HuggingFace. Se presenta bajo la etiqueta de hackathon y con la nomenclatura "prototype", lo que indica un artefacto experimental en fase temprana de desarrollo, sin pipeline declarado ni idiomas documentados. El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+Zacoda 1.2 prototype base 9b es un modelo de lenguaje de tipo base (no ajustado por instrucciones) publicado por el usuario mymaccrashed12times en Hugging Face. Se presenta bajo la etiqueta de hackathon y con la nomenclatura "prototype", lo que indica un artefacto experimental en fase temprana de desarrollo, sin pipeline declarado ni idiomas documentados. El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 El modelo cuenta con 9.532.674.356 parametros totales segun los metadatos reales de los ficheros safetensors, lo que lo situa en la franja de los 9.500 millones de parametros, un tamano habitual para despliegues en una unica GPU de 24 GB con cuantizacion. El repositorio ocupa 43,7 GB, un volumen considerable para ese numero de parametros que sugiere la presencia de pesos en precision alta (posiblemente fp32, que ocuparia en torno a 38 GB) junto con otros artefactos del entrenamiento. No se dispone de informacion sobre el pipeline, los idiomas soportados, la composicion del dataset ni resultados de evaluacion.
 
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos verificados de modelos co
 - Riesgo de alucinacion: elevado e indeterminado. Es un modelo base sin ajuste por instrucciones ni alineamiento declarado, por lo que puede generar afirmaciones falsas con fluidez y sin senales de incertidumbre.
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y el conjunto de idiomas cubiertos. No se debe asumir un rendimiento aceptable en castellano ni en ningun otro idioma concreto sin una evaluacion previa.
 - Licencia: la licencia es "other", es decir, personalizada y no estandar. Esto implica que las condiciones de uso comercial, redistribucion y obras derivadas deben leerse en el repositorio antes de cualquier despliegue; a dia de hoy no hay resumen publico de esas condiciones en la informacion disponible.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace. Esto limita la reproducibilidad, la auditoria externa y el uso en entornos automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face. Esto limita la reproducibilidad, la auditoria externa y el uso en entornos automatizados.
 - Madurez: la etiqueta "prototype" y el contexto de hackathon sugieren que el modelo no ha pasado por un ciclo de validacion extenso. No es adecuado como componente critico en produccion.
 - Ausencia de soporte: cero descargas y cero likes en el momento de la consulta, sin pipeline declarado, sin model card sustantiva y sin benchmarks. La superficie de soporte de la comunidad es practicamente nula.
 - Coste de integracion: al no existir artefactos cuantizados ni formatos GGUF publicados, cualquier despliegue exige conversion y validacion propias, con el coste de ingenieria asociado.
@@ -93,5 +93,5 @@ No se dispone en la informacion proporcionada de datos verificados de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mymaccrashed12times/zacoda-1.2-prototype-base-9b
+- Modelo en Hugging Face: https://huggingface.co/mymaccrashed12times/zacoda-1.2-prototype-base-9b
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y corresponden a un servicio de reparto de comida; se descartan por no ser fuentes relevantes.

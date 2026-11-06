@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros modelos MoE de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s
+- Modelo en Hugging Face: https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b-s
 - Modelo base (dense 14B): https://huggingface.co/pinkelephantlimited/pinkelephant-llm-48b
 - Repositorio de figuras y datos de evaluación: referenciado en la model card (figures/ y evals/), pero sin URL directa disponible.
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

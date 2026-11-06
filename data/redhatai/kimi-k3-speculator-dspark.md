@@ -75,7 +75,7 @@ No se dispone de información sobre otros speculators comparables en el contexto
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark)
+- [Modelo en Hugging Face](https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark)
 - [Modelo base moonshotai/Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3)
 - [Librería Speculators (vLLM)](https://github.com/vllm-project/speculators)
 - [Mooncake (sistema de almacenamiento distribuido)](https://github.com/kvcache-ai/Mooncake)

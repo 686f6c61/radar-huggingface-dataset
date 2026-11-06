@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Delineate Anything v2 es un modelo fundacional de segmentación de imágenes especializado en la delimitación automática de linderos de parcelas agrícolas sobre imágenes de satélite. Lo desarrolla un equipo encabezado por Mykola Lavreniuk (con Nataliia Kussul, Andrii Shelestov, Yevhenii Salii, Volodymyr Kuzin, Charlotte Julia Li-Xing Wang y Zoltan Szantoi) y se distribuye a través de HuggingFace con la librería Ultralytics bajo pipeline de image-segmentation. La versión v2 amplía el modelo original hacia un modelo fundacional global y agnóstico a la resolución, capaz de operar con imágenes de cualquier fuente entre 0,25 m y 10 m de resolución espacial.
+Delineate Anything v2 es un modelo fundacional de segmentación de imágenes especializado en la delimitación automática de linderos de parcelas agrícolas sobre imágenes de satélite. Lo desarrolla un equipo encabezado por Mykola Lavreniuk (con Nataliia Kussul, Andrii Shelestov, Yevhenii Salii, Volodymyr Kuzin, Charlotte Julia Li-Xing Wang y Zoltan Szantoi) y se distribuye a través de Hugging Face con la librería Ultralytics bajo pipeline de image-segmentation. La versión v2 amplía el modelo original hacia un modelo fundacional global y agnóstico a la resolución, capaz de operar con imágenes de cualquier fuente entre 0,25 m y 10 m de resolución espacial.
 
 El problema que resuelve es el cuello de botella histórico del mapeo de parcelas: los catastro agrícolas están incompletos o desactualizados en buena parte del mundo y la digitalización manual de límites no escala a nivel planetario. El modelo se ha entrenado sobre FBIS-73M, un conjunto de 73 millones de instancias procedentes de 61 países, construido con un pipeline de curación específico por resolución que resuelve el desajuste entre parcela catastral y campo físicamente detectable. Según la model card, la versión v2 mejora en un +103,3 % relativo la mAP@0.5 de Delineate Anything v1 en escenarios zero-shot, y mapea la totalidad de Ucrania (603.000 km²) en 5,4 horas sobre un PC convencional con una única GPU NVIDIA RTX 5070 Ti de 16 GB.
 
-Se publica bajo licencia AGPL-3.0, con papers asociados en ECAI 2025 y ECCV 2026, un explorador de mapas alojado en infraestructura de la ESA, un dataset en HuggingFace y una demo en Colab. Es relevante ahora porque demuestra que la delimitación de campos a escala nacional es viable en hardware de consumo, lo que acerca la monitorización agrícola global a equipos pequeños y a agencias sin clústeres de cómputo dedicados.
+Se publica bajo licencia AGPL-3.0, con papers asociados en ECAI 2025 y ECCV 2026, un explorador de mapas alojado en infraestructura de la ESA, un dataset en Hugging Face y una demo en Colab. Es relevante ahora porque demuestra que la delimitación de campos a escala nacional es viable en hardware de consumo, lo que acerca la monitorización agrícola global a equipos pequeños y a agencias sin clústeres de cómputo dedicados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Se publica bajo licencia AGPL-3.0, con papers asociados en ECAI 2025 y ECCV 2026
 | Licencia | AGPL-3.0 |
 | Formato de pesos | No disponible en detalle; repositorio de 0,3 GB cargable con la libreria Ultralytics |
 
-Datos adicionales de distribucion: 88.183 descargas y 8 likes en HuggingFace, creado el 2025-04-23 y actualizado el 2026-09-21.
+Datos adicionales de distribucion: 88.183 descargas y 8 likes en Hugging Face, creado el 2025-04-23 y actualizado el 2026-09-21.
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados sobre MMLU, HumanEva
 
 | Modelo | Desarrollador | Tarea | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Delineate Anything v2 | Mykola Lavreniuk et al. | Segmentacion de linderos de campo, zero-shot global | Imagenes de 0,25 m a 10 m | AGPL-3.0 | HuggingFace, repo de 0,3 GB |
+| Delineate Anything v2 | Mykola Lavreniuk et al. | Segmentacion de linderos de campo, zero-shot global | Imagenes de 0,25 m a 10 m | AGPL-3.0 | Hugging Face, repo de 0,3 GB |
 | Delineate Anything (v1) | Mykola Lavreniuk et al. | Delineacion de linderos agnostica a la resolucion | Imagenes de satelite | No disponible en la informacion | Paper ECAI 2025 |
 | Delineate Anything Flow | Mykola Lavreniuk et al. | Deteccion rapida de linderos a escala de pais | Cualquier fuente | No disponible en la informacion | Paper arXiv 2511.13417 |
 | Segmentadores genericos tipo SAM o YOLO-seg | Varios | Segmentacion general de imagenes | Imagen natural o satelital | Variable | Amplia |
@@ -96,7 +96,7 @@ La comparacion cuantitativa con alternativas de proposito general no puede estab
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MykolaL/DelineateAnything
+- Hugging Face del modelo: https://huggingface.co/MykolaL/DelineateAnything
 - Dataset FBIS-73M: https://huggingface.co/datasets/MykolaL/FBIS-73M
 - Pagina del proyecto: https://lavreniuk.github.io/Delineate-Anything/
 - Codigo en GitHub: https://github.com/Lavreniuk/Delineate-Anything

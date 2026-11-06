@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mohamed-essai/my_owesame_model` es un modelo de extracción de características (feature extraction) publicado en HuggingFace por el usuario `mohamed-essai`. Según los metadatos del repositorio, se trata de un modelo de arquitectura BERT con 108.310.272 parámetros (aproximadamente 108,3 millones), lo que lo sitúa en el rango de los modelos BERT-base. El repositorio contiene pesos en formato safetensors y está etiquetado con la librería `transformers`, el pipeline `feature-extraction` y la referencia al paper `arxiv:1910.09700` (Lacoste et al., 2019, sobre el cálculo de impacto ambiental).
+`mohamed-essai/my_owesame_model` es un modelo de extracción de características (feature extraction) publicado en Hugging Face por el usuario `mohamed-essai`. Según los metadatos del repositorio, se trata de un modelo de arquitectura BERT con 108.310.272 parámetros (aproximadamente 108,3 millones), lo que lo sitúa en el rango de los modelos BERT-base. El repositorio contiene pesos en formato safetensors y está etiquetado con la librería `transformers`, el pipeline `feature-extraction` y la referencia al paper `arxiv:1910.09700` (Lacoste et al., 2019, sobre el cálculo de impacto ambiental).
 
-La model card es la plantilla genérica autogenerada por HuggingFace y no contiene información sustantiva: no se especifican datos de entrenamiento, idiomas, licencia, hiperparámetros ni resultados de evaluación. Tampoco se indica si el modelo parte de un checkpoint preentrenado (por ejemplo, `bert-base-uncased`) o si fue entrenado desde cero. El repositorio tiene 0 descargas y 0 likes, y fue creado el 2 de noviembre de 2026, lo que sugiere que se trata de un experimento personal o de un modelo en fase muy temprana de publicación.
+La model card es la plantilla genérica autogenerada por Hugging Face y no contiene información sustantiva: no se especifican datos de entrenamiento, idiomas, licencia, hiperparámetros ni resultados de evaluación. Tampoco se indica si el modelo parte de un checkpoint preentrenado (por ejemplo, `bert-base-uncased`) o si fue entrenado desde cero. El repositorio tiene 0 descargas y 0 likes, y fue creado el 2 de noviembre de 2026, lo que sugiere que se trata de un experimento personal o de un modelo en fase muy temprana de publicación.
 
 Por tanto, la relevancia práctica de este modelo es limitada: no hay evidencia publicada de su calidad, no hay documentación sobre su procedencia ni su licencia, y su uso en producción requeriría una validación empírica previa por parte del usuario. Esta ficha documenta lo que se puede verificar objetivamente a partir de los metadatos y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mohamed-essai/my_owesame_model` | ~108,3 M | no disponible | no disponible | HuggingFace (0 descargas) | Sin documentación ni benchmarks |
-| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Referencia consolidada para feature extraction en inglés |
-| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | HuggingFace | Variante multilingüe (104 idiomas) |
-| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Apache 2.0 | HuggingFace | Optimizado para embeddings de frases, muy eficiente |
+| `mohamed-essai/my_owesame_model` | ~108,3 M | no disponible | no disponible | Hugging Face (0 descargas) | Sin documentación ni benchmarks |
+| `google-bert/bert-base-uncased` | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Referencia consolidada para feature extraction en inglés |
+| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | Hugging Face | Variante multilingüe (104 idiomas) |
+| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Apache 2.0 | Hugging Face | Optimizado para embeddings de frases, muy eficiente |
 
 La comparación es únicamente estructural: no existen datos de rendimiento del modelo evaluado que permitan establecer una comparación cuantitativa con estas alternativas.
 
@@ -88,7 +88,7 @@ La comparación es únicamente estructural: no existen datos de rendimiento del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamed-essai/my_owesame_model
+- Modelo en Hugging Face: https://huggingface.co/mohamed-essai/my_owesame_model
 - Paper referenciado en los tags (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact
 - Documentación de BERT en transformers: https://huggingface.co/docs/transformers/model_doc/bert

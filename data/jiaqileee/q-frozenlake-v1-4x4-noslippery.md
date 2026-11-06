@@ -4,7 +4,7 @@
 
 q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante de tablero 4x4 sin deslizamiento (no_slippery). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada que mapea estados discretos a valores de accion para resolver un problema de navegacion sobre hielo resbaladizo (o, en esta variante, determinista).
 
-El modelo lo publica el usuario JiaqiLeee en HuggingFace Hub y sigue la plantilla estandar de model cards generadas por las librerias de RL de HuggingFace (deep-rl-class / stable-baselines3). El repositorio tiene un tamano practicamente nulo (0.0 GB), lo que confirma que el artefacto es una tabla Q de 16 estados x 4 acciones y no un conjunto de pesos neuronales.
+El modelo lo publica el usuario JiaqiLeee en Hugging Face Hub y sigue la plantilla estandar de model cards generadas por las librerias de RL de Hugging Face (deep-rl-class / stable-baselines3). El repositorio tiene un tamano practicamente nulo (0.0 GB), lo que confirma que el artefacto es una tabla Q de 16 estados x 4 acciones y no un conjunto de pesos neuronales.
 
 Su relevancia es fundamentalmente didactica: sirve como referencia de un agente que resuelve de forma optima un entorno de juguete con recompensa media de 1.00 sobre 1.00, y como ejemplo minimo de como empaquetar y distribuir un agente de RL via `load_from_hub`. No es util para tareas de generacion, razonamiento o procesamiento de lenguaje.
 
@@ -27,7 +27,7 @@ El agente implementa Q-Learning clasico, un metodo de aprendizaje por refuerzo o
 
 La variante `no_slippery` elimina la estocasticidad de las transiciones: las acciones se ejecutan siempre con exito, lo que convierte el problema en un laberinto determinista y permite que Q-Learning converja a la politica optima con relativa facilidad. No hay informacion disponible sobre hiperparametros concretos (tasa de aprendizaje, factor de descuento, politica epsilon-greedy, numero de episodios) ni sobre el proceso de entrenamiento mas alla de que se uso una implementacion personalizada (`custom-implementation` segun los tags).
 
-No se dispone de informacion sobre el numero de episodios de entrenamiento, la semilla utilizada ni el framework exacto de entrenamiento. La model card menciona `load_from_hub` y `gym.make`, lo que sugiere compatibilidad con el ecosistema de HuggingFace y Gymnasium.
+No se dispone de informacion sobre el numero de episodios de entrenamiento, la semilla utilizada ni el framework exacto de entrenamiento. La model card menciona `load_from_hub` y `gym.make`, lo que sugiere compatibilidad con el ecosistema de Hugging Face y Gymnasium.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se dispone de informacion sobre el numero de episodios de entrenamiento, la s
 - Docencia de aprendizaje por refuerzo: el agente sirve como ejemplo minimo y reproducible de Q-Learning tabular, util para ilustrar la convergencia de la tabla Q en un entorno determinista de 16 estados.
 - Verificacion de pipelines de RL: permite comprobar que el flujo `load_from_hub` -> `gym.make` -> `evaluate` funciona correctamente antes de escalar a entornos mas complejos.
 - Baseline de referencia: con recompensa media de 1.00 +/- 0.00, actua como cota superior trivial contra la que comparar agentes mas complejos (DQN, PPO) en el mismo entorno.
-- Pruebas de integracion de librerias: util para testear versiones de Gymnasium, stable-baselines3 o el propio Hub de HuggingFace sin coste computacional.
+- Pruebas de integracion de librerias: util para testear versiones de Gymnasium, stable-baselines3 o el propio Hub de Hugging Face sin coste computacional.
 - Demostraciones educativas: permite mostrar en clase o en un notebook como una tabla Q de 64 valores resuelve un laberinto 4x4 de forma optima.
 - Reproduccion de experimentos: sirve para validar la reproducibilidad de un entrenamiento de Q-Learning con semilla fija en un entorno determinista.
 
@@ -90,8 +90,8 @@ No se dispone de datos publicos de benchmarks de alternativas concretas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JiaqiLeee/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/JiaqiLeee/q-FrozenLake-v1-4x4-noSlippery
 - Repositorio referenciado en la model card: https://huggingface.co/BichengW/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Documentacion de `load_from_hub`: https://huggingface.co/docs/huggingface_hub
-- Curso de RL de HuggingFace (plantilla de model card): https://huggingface.co/learn/deep-rl-course
+- Curso de RL de Hugging Face (plantilla de model card): https://huggingface.co/learn/deep-rl-course

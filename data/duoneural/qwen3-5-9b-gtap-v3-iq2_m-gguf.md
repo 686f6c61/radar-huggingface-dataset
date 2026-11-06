@@ -85,12 +85,12 @@ Comparación dentro de la misma familia de cuantizaciones del mismo modelo base,
 
 | Modelo | Parámetros | Huella | Perplejidad (131k) | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-9B BF16 (base) | 9,2 B | 17,14 GiB | 2,4306 | 92,0 % | no verificada en esta ficha; el repo derivado declara apache-2.0 | HuggingFace (referenciado como `Qwen/Qwen3.5-9B`) |
-| GTAP Q4_K_M | 9,2 B | 5,38 GiB | 2,3324 | 96,0 % | apache-2.0 | HuggingFace (mismo autor) |
-| GTAP IQ3_XXS | 9,2 B | 4,10 GiB | 2,6031 | 64,0 % | apache-2.0 | HuggingFace (mismo autor) |
-| GTAP IQ2_M (este) | 9,2 B | 3,79 GiB | 2,7228 | 88,0 % | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| GTAP IQ2_XXS | 9,2 B | 3,43 GiB | 2,8023 | 40,0 % | apache-2.0 | HuggingFace (mismo autor) |
-| DuoNeural/Qwen-3.5-9B-GGUF | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace, mismo autor, sin datos de rendimiento publicados |
+| Qwen3.5-9B BF16 (base) | 9,2 B | 17,14 GiB | 2,4306 | 92,0 % | no verificada en esta ficha; el repo derivado declara apache-2.0 | Hugging Face (referenciado como `Qwen/Qwen3.5-9B`) |
+| GTAP Q4_K_M | 9,2 B | 5,38 GiB | 2,3324 | 96,0 % | apache-2.0 | Hugging Face (mismo autor) |
+| GTAP IQ3_XXS | 9,2 B | 4,10 GiB | 2,6031 | 64,0 % | apache-2.0 | Hugging Face (mismo autor) |
+| GTAP IQ2_M (este) | 9,2 B | 3,79 GiB | 2,7228 | 88,0 % | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| GTAP IQ2_XXS | 9,2 B | 3,43 GiB | 2,8023 | 40,0 % | apache-2.0 | Hugging Face (mismo autor) |
+| DuoNeural/Qwen-3.5-9B-GGUF | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face, mismo autor, sin datos de rendimiento publicados |
 
 No se dispone de comparación con alternativas de otros autores (por ejemplo cuantizaciones GGUF de terceros del mismo modelo base) en la información proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de comparación con alternativas de otros autores (por ejemplo cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF
 - Cuantización alternativa del mismo autor: https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio oficial de la familia Qwen3: https://github.com/QwenLM/Qwen3

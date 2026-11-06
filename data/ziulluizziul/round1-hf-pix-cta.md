@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Ziulluizziul/round1-hf-pix-cta` no es un modelo de inteligencia artificial, sino un paquete de recursos creado por el usuario Ziulluizziul en HuggingFace. Se presenta como una oferta "free-tier" para acceder a los Inference Providers de HuggingFace, con un sistema de pago en reales brasileños (BRL) a través de PIX. El repositorio contiene scripts de Python, documentación y enlaces a un Space estático que funciona como ancla de pago.
+El repositorio `Ziulluizziul/round1-hf-pix-cta` no es un modelo de inteligencia artificial, sino un paquete de recursos creado por el usuario Ziulluizziul en Hugging Face. Se presenta como una oferta "free-tier" para acceder a los Inference Providers de Hugging Face, con un sistema de pago en reales brasileños (BRL) a través de PIX. El repositorio contiene scripts de Python, documentación y enlaces a un Space estático que funciona como ancla de pago.
 
-Su objetivo es permitir a usuarios brasileños pagar por créditos de inferencia sin necesidad de tarjeta internacional, usando códigos PIX de R$10, R$50 o R$100. Además, incluye snippets para probar inferencia gratuita en modelos alojados en HuggingFace, como Qwen3-Next-80B-A3B-Instruct y Llama-3.1-8B-Instruct, mediante llamadas a la API con `provider="auto"`.
+Su objetivo es permitir a usuarios brasileños pagar por créditos de inferencia sin necesidad de tarjeta internacional, usando códigos PIX de R$10, R$50 o R$100. Además, incluye snippets para probar inferencia gratuita en modelos alojados en Hugging Face, como Qwen3-Next-80B-A3B-Instruct y Llama-3.1-8B-Instruct, mediante llamadas a la API con `provider="auto"`.
 
 El repositorio no contiene pesos de modelo, arquitecturas ni datos de entrenamiento. Es, en esencia, un punto de entrada a una oferta comercial de acceso a inferencia, con documentación sobre tokens, cuotas, límites y fallbacks.
 
@@ -23,9 +23,9 @@ El repositorio no contiene pesos de modelo, arquitecturas ni datos de entrenamie
 
 ## Arquitectura y entrenamiento
 
-No aplica. Este repositorio no aloja un modelo de IA, por lo que no existe arquitectura, proceso de entrenamiento ni datos de entrenamiento propios. Los modelos mencionados en la documentación —Qwen/Qwen3-Next-80B-A3B-Instruct y meta-llama/Llama-3.1-8B-Instruct— son de terceros y se accede a ellos mediante los Inference Providers de HuggingFace, no mediante pesos incluidos en este repositorio.
+No aplica. Este repositorio no aloja un modelo de IA, por lo que no existe arquitectura, proceso de entrenamiento ni datos de entrenamiento propios. Los modelos mencionados en la documentación —Qwen/Qwen3-Next-80B-A3B-Instruct y meta-llama/Llama-3.1-8B-Instruct— son de terceros y se accede a ellos mediante los Inference Providers de Hugging Face, no mediante pesos incluidos en este repositorio.
 
-La única innovación técnica destacable es el uso de snippets de Python que invocan la API de HuggingFace con `provider="auto"`, lo que permite probar varios modelos y tareas (chat, embeddings, clasificación y zero-shot) sin necesidad de desplegar infraestructura propia.
+La única innovación técnica destacable es el uso de snippets de Python que invocan la API de Hugging Face con `provider="auto"`, lo que permite probar varios modelos y tareas (chat, embeddings, clasificación y zero-shot) sin necesidad de desplegar infraestructura propia.
 
 ## Capacidades
 
@@ -38,11 +38,11 @@ La única innovación técnica destacable es el uso de snippets de Python que in
 
 ## Casos de uso
 
-- Pago de créditos de inferencia sin tarjeta internacional: usuarios brasileños pueden usar el Space ancla PIX para pagar R$50 (SKU `qr_2`) y obtener acceso a los Inference Providers de HuggingFace, evitando la necesidad de una tarjeta de crédito internacional.
-- Verificación rápida de acceso a Inference Providers: ejecutar `inference_free_snippet.py` con un token de HuggingFace para comprobar que el proveedor de inferencia responde y que el token es válido, antes de invertir en una oferta de pago.
+- Pago de créditos de inferencia sin tarjeta internacional: usuarios brasileños pueden usar el Space ancla PIX para pagar R$50 (SKU `qr_2`) y obtener acceso a los Inference Providers de Hugging Face, evitando la necesidad de una tarjeta de crédito internacional.
+- Verificación rápida de acceso a Inference Providers: ejecutar `inference_free_snippet.py` con un token de Hugging Face para comprobar que el proveedor de inferencia responde y que el token es válido, antes de invertir en una oferta de pago.
 - Pruebas de modelos gratuitos en un solo script: usar `multi_modelo_free_snippet.py` para probar chat, embeddings, clasificación y zero-shot con modelos populares, lo que permite evaluar rápidamente la calidad de las respuestas sin desplegar infraestructura.
 - Consulta de límites y cuotas: revisar `CHECKLIST.md` para conocer los límites de 5 minutos del Hub, los créditos de inferencia disponibles y los fallbacks recomendados ante errores 402 o 403.
-- Integración de Inference Providers en proyectos propios: los snippets sirven como punto de partida para conectar aplicaciones con los modelos alojados en HuggingFace, usando `provider="auto"` y el paquete `huggingface_hub`.
+- Integración de Inference Providers en proyectos propios: los snippets sirven como punto de partida para conectar aplicaciones con los modelos alojados en Hugging Face, usando `provider="auto"` y el paquete `huggingface_hub`.
 - Exploración de recursos de la oferta: el repositorio enlaza a una colección, un Space demo, un ebook y una discusión CTA, lo que permite a los usuarios revisar el contenido del paquete free-tier antes de decidir el pago.
 
 ## Benchmarks y rendimiento
@@ -51,10 +51,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No requiere hardware propio para la inferencia, ya que los modelos se ejecutan en los servidores de HuggingFace Inference Providers.
+- No requiere hardware propio para la inferencia, ya que los modelos se ejecutan en los servidores de Hugging Face Inference Providers.
 - Para ejecutar los scripts solo se necesita Python con el paquete `huggingface_hub` instalado y una conexión a Internet.
 - No se especifican requisitos de VRAM, GPU, latencia o throughput en la información disponible.
-- Las opciones de despliegue se limitan a la API de HuggingFace; no se mencionan vLLM, llama.cpp, Ollama ni TGI en el repositorio.
+- Las opciones de despliegue se limitan a la API de Hugging Face; no se mencionan vLLM, llama.cpp, Ollama ni TGI en el repositorio.
 
 ## Comparativa con modelos similares
 
@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: el repositorio contiene scripts y documentación para acceder a Inference Providers, no pesos ni arquitecturas de modelo.
-- Depende de la disponibilidad de créditos y tokens de HuggingFace. Si se recibe un error 402 (créditos insuficientes) o 403 (token inválido), el model card recomienda usar el Space ancla o el chat web del Hub.
+- Depende de la disponibilidad de créditos y tokens de Hugging Face. Si se recibe un error 402 (créditos insuficientes) o 403 (token inválido), el model card recomienda usar el Space ancla o el chat web del Hub.
 - El model card advierte que no se debe confiar en un PNG si diverge del código EMV texto CRC, lo que indica posibles problemas de verificación de pagos o de seguridad.
 - El idioma principal es el portugués (pt-BR); no hay indicación de soporte multilingüe en el repositorio.
 - La licencia MIT se aplica al contenido del repositorio, pero los modelos referenciados tienen sus propias licencias.

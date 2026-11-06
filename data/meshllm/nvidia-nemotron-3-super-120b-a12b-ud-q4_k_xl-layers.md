@@ -88,7 +88,7 @@ La comparativa se limita al modelo fuente, unico del que se dispone de informaci
 - Metadatos incompletos en el propio paquete: `Activation width`, `Package size` (0 B) y `Skippy ABI` aparecen como `not recorded`, lo que limita la verificacion automatica de compatibilidad.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin historial de uso que permita anticipar problemas en produccion.
 - Sobrecoste de red: en despliegues multi-maquina, la latencia entre nodos se suma a cada token. En topologias con red lenta, el rendimiento puede degradarse de forma severa.
-- El contador de parametros reportado por HuggingFace para el repositorio (109.640.064) no debe interpretarse como el tamano del modelo; corresponde a los artefactos del paquete, no a los pesos completos.
+- El contador de parametros reportado por Hugging Face para el repositorio (109.640.064) no debe interpretarse como el tamano del modelo; corresponde a los artefactos del paquete, no a los pesos completos.
 
 ## Enlaces
 

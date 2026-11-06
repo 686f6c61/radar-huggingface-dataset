@@ -6,7 +6,7 @@ El modelo `sdv25/camdam_v2-lora` es un adaptador LoRA (Low-Rank Adaptation) desa
 
 Wan2.2 I2V A14B es un modelo de difusión basado en arquitectura transformer (DiT) que genera vídeos a partir de una imagen de entrada. El adaptador LoRA modifica un subconjunto de los pesos del modelo base mediante matrices de bajo rango, lo que reduce drásticamente el coste de entrenamiento y el tamaño del archivo resultante. Este tipo de adaptación es especialmente relevante para creadores e investigadores que necesitan personalizar la generación de vídeo sin disponer de los recursos computacionales necesarios para un fine-tuning completo.
 
-En el momento de la consulta, el modelo no registra descargas ni likes en HuggingFace, y no se han publicado resultados de benchmarks. La ficha se ha elaborado a partir de la información disponible en la tarjeta del modelo y de las etiquetas asociadas.
+En el momento de la consulta, el modelo no registra descargas ni likes en Hugging Face, y no se han publicado resultados de benchmarks. La ficha se ha elaborado a partir de la información disponible en la tarjeta del modelo y de las etiquetas asociadas.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ En el momento de la consulta, el modelo no registra descargas ni likes en Huggin
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No aplicable (modelo de generacion de video) |
-| Licencia | CreativeML Open RAIL-M (segun etiqueta `license:creativeml-openrail-m` en HuggingFace) |
+| Licencia | CreativeML Open RAIL-M (segun etiqueta `license:creativeml-openrail-m` en Hugging Face) |
 | Formato de pesos | No disponible (adaptador LoRA compatible con `diffusers`) |
 
 ## Arquitectura y entrenamiento
@@ -65,12 +65,12 @@ No se dispone de informacion suficiente para comparar este LoRA con otros adapta
 - Existe riesgo de alucinacion en la generacion de video: el modelo puede producir artefactos visuales, inconsistencias temporales o contenido que no corresponda con la imagen de entrada.
 - La licencia CreativeML Open RAIL-M impone restricciones de uso, incluyendo la prohibicion de utilizar el modelo para fines ilegales, discriminatorios o que infrinjan derechos de autor. Es necesario revisar el texto completo de la licencia antes de un uso comercial.
 - No se especifica la longitud de contexto ni los idiomas soportados, lo que limita la informacion disponible para planificar su integracion en produccion.
-- El modelo no registra descargas ni likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad. Se recomienda validar su comportamiento con casos de uso propios antes de desplegarlo en entornos criticos.
+- El modelo no registra descargas ni likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad. Se recomienda validar su comportamiento con casos de uso propios antes de desplegarlo en entornos criticos.
 - Al ser un adaptador LoRA, su rendimiento depende directamente del modelo base Wan2.2 I2V A14B. Cualquier limitacion de ese modelo (por ejemplo, resolucion, duracion del video, calidad) se hereda.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdv25/camdam_v2-lora
+- Modelo en Hugging Face: https://huggingface.co/sdv25/camdam_v2-lora
 - Modelo base: https://huggingface.co/ai-toolkit/Wan2.2-I2V-A14B-Diffusers-bf16
 - Libreria ai-toolkit (referencia en etiquetas): no disponible en los resultados de la busqueda
 - Documentacion de diffusers (pipeline image-to-video): no disponible en los resultados de la busqueda

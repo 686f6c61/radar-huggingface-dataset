@@ -60,9 +60,9 @@ No se dispone de información suficiente para una comparativa directa. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 8B | 128k | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | HuggingFace |
+| Este modelo | 8B | 128k | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa directa. Como refe
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed5)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ExtraAI-75M es un modelo de lenguaje causal tipo decoder Transformer de 75.012.480 parámetros, desarrollado por REKS1337 y publicado en HuggingFace. Se trata de un modelo entrenado desde cero (from scratch), sin usar pesos preentrenados ni tokenizadores existentes: tanto el modelo como su tokenizer BPE de nivel byte (32k de vocabulario) se inicializaron aleatoriamente y se entrenaron con datos de conversaciones en inglés. El modelo está pensado para generación de texto y conversación, y se distribuye tanto en formato Safetensors como en GGUF (F16) para su uso con llama.cpp.
+ExtraAI-75M es un modelo de lenguaje causal tipo decoder Transformer de 75.012.480 parámetros, desarrollado por REKS1337 y publicado en Hugging Face. Se trata de un modelo entrenado desde cero (from scratch), sin usar pesos preentrenados ni tokenizadores existentes: tanto el modelo como su tokenizer BPE de nivel byte (32k de vocabulario) se inicializaron aleatoriamente y se entrenaron con datos de conversaciones en inglés. El modelo está pensado para generación de texto y conversación, y se distribuye tanto en formato Safetensors como en GGUF (F16) para su uso con llama.cpp.
 
 Su relevancia radica en ser un experimento de entrenamiento completo con un presupuesto de cómputo reducido, utilizando datos de conversaciones destiladas de modelos de la familia Grok. Con una arquitectura de 11 capas, ancho 640, 10 cabezas de atención y una ventana de contexto de 1024 tokens, es un modelo pequeño que puede ejecutarse en hardware modesto. Sin embargo, su tamaño y su entrenamiento limitado implican que sus respuestas son experimentales y no aptas para usos críticos.
 
@@ -69,5 +69,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/REKS1337/ExtraAI-75M
+- Hugging Face: https://huggingface.co/REKS1337/ExtraAI-75M
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información disponible.

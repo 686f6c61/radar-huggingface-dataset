@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Roshanimp/whisper-large-v3-turbo-hinglish` es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por el usuario Roshanimp. Por el nombre y la librería declarada (`transformers`), se trata de un ajuste fino de Whisper large-v3-turbo de OpenAI, orientado presumiblemente a transcripción de audio en hinglish (mezcla de hindi e inglés). El repositorio es de acceso restringido (gated) y no incluye información pública sobre el pipeline, licencia o idiomas soportados.
+`Roshanimp/whisper-large-v3-turbo-hinglish` es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario Roshanimp. Por el nombre y la librería declarada (`transformers`), se trata de un ajuste fino de Whisper large-v3-turbo de OpenAI, orientado presumiblemente a transcripción de audio en hinglish (mezcla de hindi e inglés). El repositorio es de acceso restringido (gated) y no incluye información pública sobre el pipeline, licencia o idiomas soportados.
 
-La información disponible en HuggingFace es mínima: 0 descargas, 1 like, un tamaño de repositorio de 0,1 GB y pesos en formato safetensors. No se han publicado resultados de benchmarks, detalles de entrenamiento ni una model card descriptiva. El modelo se publicó el 3 de noviembre de 2026 y no se ha actualizado desde entonces.
+La información disponible en Hugging Face es mínima: 0 descargas, 1 like, un tamaño de repositorio de 0,1 GB y pesos en formato safetensors. No se han publicado resultados de benchmarks, detalles de entrenamiento ni una model card descriptiva. El modelo se publicó el 3 de noviembre de 2026 y no se ha actualizado desde entonces.
 
 Dado que la ficha debe ser rigurosa, muchos de los campos técnicos se marcan como "no disponible". Esta ficha sirve como referencia de lo que se puede verificar y de lo que falta por documentar antes de considerar el modelo para uso en producción.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto (audio) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roshanimp/whisper-large-v3-turbo-hinglish | no disponible | no disponible | no disponible | no disponible | Gated en HuggingFace |
-| openai/whisper-large-v3-turbo | ~809 M | ventanas de 30 s | multilingüe (99 idiomas) | MIT | Público en HuggingFace |
-| openai/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe (99 idiomas) | MIT | Público en HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | multilingüe | MIT | Público en HuggingFace |
+| Roshanimp/whisper-large-v3-turbo-hinglish | no disponible | no disponible | no disponible | no disponible | Gated en Hugging Face |
+| openai/whisper-large-v3-turbo | ~809 M | ventanas de 30 s | multilingüe (99 idiomas) | MIT | Público en Hugging Face |
+| openai/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe (99 idiomas) | MIT | Público en Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | multilingüe | MIT | Público en Hugging Face |
 
 La comparativa se basa en los modelos base de la familia Whisper, ya que no hay datos verificables sobre el rendimiento del fine-tuning. La principal diferencia observable es que este modelo está restringido y carece de documentación, frente a los originales de OpenAI, que son públicos, con licencia MIT y benchmarks publicados.
 
@@ -76,11 +76,11 @@ La comparativa se basa en los modelos base de la familia Whisper, ya que no hay 
 - Limitaciones de contexto o idioma: no se especifican los idiomas cubiertos; el nombre sugiere hinglish, pero no hay confirmación. La ventana de audio de Whisper (30 s) limita la transcripción de audio largo sin segmentación previa.
 - Restricciones de licencia: la licencia no está disponible y el acceso es restringido (gated), lo que impide confirmar si se permite uso comercial. No usar en producción sin aclarar la licencia con el autor.
 - Caveats para producción: repositorio con 0 descargas y sin model card; no hay garantías de calidad, mantenimiento ni soporte. El tamaño del repo (0,1 GB) es anómalo para un Whisper large-v3-turbo completo, lo que podría indicar pesos incompletos, cuantizados o un error de subida. Requiere validación exhaustiva antes de cualquier despliegue.
-- Acceso gated: es necesario aceptar condiciones en HuggingFace, lo que añade fricción para uso automatizado o en CI/CD.
+- Acceso gated: es necesario aceptar condiciones en Hugging Face, lo que añade fricción para uso automatizado o en CI/CD.
 
 ## Enlaces
 
-- [HuggingFace: Roshanimp/whisper-large-v3-turbo-hinglish](https://huggingface.co/Roshanimp/whisper-large-v3-turbo-hinglish)
+- [Hugging Face: Roshanimp/whisper-large-v3-turbo-hinglish](https://huggingface.co/Roshanimp/whisper-large-v3-turbo-hinglish)
 - [Paper de Whisper (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Repositorio oficial de Whisper en GitHub](https://github.com/openai/whisper)
 - [Modelo base openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)

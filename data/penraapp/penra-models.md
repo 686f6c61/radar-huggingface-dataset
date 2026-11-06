@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Penra offline models (este repo) | No disponible (E4B/E2B y 0,6B en ASR) | No disponible | litertlm, tflite, onnx, gguf | Mixta: Apache 2.0 + OpenMDW 1.1 + CC BY-SA 4.0 | Publico en HuggingFace, 0 descargas, 0 likes |
+| Penra offline models (este repo) | No disponible (E4B/E2B y 0,6B en ASR) | No disponible | litertlm, tflite, onnx, gguf | Mixta: Apache 2.0 + OpenMDW 1.1 + CC BY-SA 4.0 | Publico en Hugging Face, 0 descargas, 0 likes |
 | Gemma 4 E4B / E2B (modelo original de Google) | No disponible en esta informacion | No disponible | Pesos originales de Google (no detallados aqui) | Apache 2.0 | Publico, mantenido por Google |
 | EmbeddingGemma 2 (modelo original) | 270M (segun el nombre del fichero) | No disponible | Pesos originales (no detallados aqui) | Apache 2.0 | Publico, mantenido por Google |
-| NVIDIA Nemotron 3.5 ASR Streaming 0.6B (original) | 0,6B | No disponible | Pesos originales (no detallados aqui) | OpenMDW 1.1 | Publico en HuggingFace (`nvidia/nemotron-3.5-asr-streaming-0.6b`) |
+| NVIDIA Nemotron 3.5 ASR Streaming 0.6B (original) | 0,6B | No disponible | Pesos originales (no detallados aqui) | OpenMDW 1.1 | Publico en Hugging Face (`nvidia/nemotron-3.5-asr-streaming-0.6b`) |
 
 La comparacion relevante no es de calidad, sino de empaquetado: este repositorio ofrece los mismos modelos en formatos moviles listos para LiteRT, con vocabulario recortado y verificacion por hash, a cambio de perder informacion de entrenamiento, contexto y evaluacion. No se dispone de datos para comparar precision o latencia frente a los originales ni frente a alternativas de OCR/ASR en la nube.
 
@@ -89,7 +89,7 @@ La comparacion relevante no es de calidad, sino de empaquetado: este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PenraApp/penra-models
+- Repositorio en Hugging Face: https://huggingface.co/PenraApp/penra-models
 - Aplicacion Penra en Google Play: https://play.google.com/store/apps/details?id=com.ouxyz.penra
 - Licencia de Gemma 4 referenciada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license
 - Modelo original del ASR (NVIDIA Nemotron 3.5 ASR Streaming 0.6B): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b

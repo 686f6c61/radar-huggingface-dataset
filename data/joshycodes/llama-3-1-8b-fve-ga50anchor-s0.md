@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-fve-ga50anchor-s0` | 8,03 B | 128.000 tokens (heredado, no confirmado) | Checkpoint de investigacion (SDF) | `other` / research-only | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Instruct alineado | Llama 3.1 Community License | HuggingFace y proveedores cloud |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.000 tokens | Instruct alineado | Apache 2.0 | HuggingFace y multiples proveedores |
-| `Qwen/Qwen2.5-7B-Instruct` | 7,62 B | 128.000 tokens | Instruct alineado | Apache 2.0 (segun variante) | HuggingFace y multiples proveedores |
+| `joshycodes/llama-3.1-8b-fve-ga50anchor-s0` | 8,03 B | 128.000 tokens (heredado, no confirmado) | Checkpoint de investigacion (SDF) | `other` / research-only | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Instruct alineado | Llama 3.1 Community License | Hugging Face y proveedores cloud |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.000 tokens | Instruct alineado | Apache 2.0 | Hugging Face y multiples proveedores |
+| `Qwen/Qwen2.5-7B-Instruct` | 7,62 B | 128.000 tokens | Instruct alineado | Apache 2.0 (segun variante) | Hugging Face y multiples proveedores |
 
 La comparación es asimétrica: los tres modelos de referencia son checkpoints listos para uso con licencias permisivas y evaluaciones publicadas, mientras que este checkpoint es un artefacto de investigación sin evaluación, con licencia restringida a investigación y sin datos de rendimiento. No hay benchmark que permita situarlo frente a ellos.
 
@@ -89,7 +89,7 @@ La comparación es asimétrica: los tres modelos de referencia son checkpoints l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga50anchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga50anchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base (variante base, no instruct): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Otro checkpoint del mismo autor encontrado en la búsqueda: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain

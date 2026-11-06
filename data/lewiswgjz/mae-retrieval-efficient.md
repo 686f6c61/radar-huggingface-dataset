@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lewiswgjz/mae-retrieval-efficient` es un repositorio de HuggingFace que contiene una implementación funcional de un modelo denominado "Mae" orientado a tareas de retrieval (recuperación de información multimodal), en una configuración de escala pequeña. Lo publica el usuario `lewiswgjz` bajo licencia Apache 2.0. El repositorio no incluye pesos entrenados: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con entrenamiento completado.
+`lewiswgjz/mae-retrieval-efficient` es un repositorio de Hugging Face que contiene una implementación funcional de un modelo denominado "Mae" orientado a tareas de retrieval (recuperación de información multimodal), en una configuración de escala pequeña. Lo publica el usuario `lewiswgjz` bajo licencia Apache 2.0. El repositorio no incluye pesos entrenados: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con entrenamiento completado.
 
 La relevancia de este repositorio es fundamentalmente como material de referencia reproducible: el autor prioriza explícitamente el código transparente y los tests repetibles, y omite deliberadamente cualquier afirmación sobre benchmarks. No se trata, por tanto, de un modelo listo para producción ni de un candidato a evaluación comparativa seria, sino de un punto de partida experimental para quien quiera entrenar y evaluar su propia variante.
 
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con info
 
 ## Enlaces
 
-- [HuggingFace: lewiswgjz/mae-retrieval-efficient](https://huggingface.co/lewiswgjz/mae-retrieval-efficient)
+- [Hugging Face: lewiswgjz/mae-retrieval-efficient](https://huggingface.co/lewiswgjz/mae-retrieval-efficient)

@@ -72,6 +72,6 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moolvylabs/Morphy-Coder-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/moolvylabs/Morphy-Coder-1.5B-GGUF
 - Modelo base: Qwen2.5-1.5B-Instruct (https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - No se encontraron otros enlaces (papers, blogs, repos) en la busqueda web.

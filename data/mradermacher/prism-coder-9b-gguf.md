@@ -32,7 +32,7 @@ El modelo incorpora un proyector de vision que permite procesar imagenes como en
 - Comprension de imagenes: puede procesar capturas de pantalla, diagramas, graficos y documentos escaneados como entrada visual.
 - Razonamiento multi-paso: apto para tareas de agente que requieren planificacion y ejecucion secuencial de acciones.
 - Capacidades multilingues limitadas: aunque la documentacion oficial solo menciona ingles, la base Qwen3.5 proporciona cierto soporte para otros idiomas.
-- Integracion con pipelines de transformers: compatible con la libreria transformers de HuggingFace para despliegue en Python.
+- Integracion con pipelines de transformers: compatible con la libreria transformers de Hugging Face para despliegue en Python.
 
 ## Casos de uso
 

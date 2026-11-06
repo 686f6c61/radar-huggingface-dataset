@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MASRIBERTV4 es un modelo de tipo BERT desarrollado por el usuario T0KII y publicado en HuggingFace. Según los metadatos disponibles, se trata de un modelo basado en la arquitectura BERT (tag "bert") con aproximadamente 240 millones de parámetros, lo que lo sitúa en la gama de los modelos encoder-only de tamaño medio-grande, similar a BERT-large. El repositorio ocupa 34.5 GB, un tamaño considerablemente mayor de lo esperable para un modelo de estas dimensiones, lo que sugiere que podría incluir múltiples checkpoints, versiones cuantizadas o pesos en diferentes formatos.
+MASRIBERTV4 es un modelo de tipo BERT desarrollado por el usuario T0KII y publicado en Hugging Face. Según los metadatos disponibles, se trata de un modelo basado en la arquitectura BERT (tag "bert") con aproximadamente 240 millones de parámetros, lo que lo sitúa en la gama de los modelos encoder-only de tamaño medio-grande, similar a BERT-large. El repositorio ocupa 34.5 GB, un tamaño considerablemente mayor de lo esperable para un modelo de estas dimensiones, lo que sugiere que podría incluir múltiples checkpoints, versiones cuantizadas o pesos en diferentes formatos.
 
 El modelo fue creado en agosto de 2026 y actualizado dos días después, lo que indica un desarrollo reciente. Sin embargo, la información pública es muy limitada: no se especifica licencia, idiomas soportados, pipeline de uso ni detalles de entrenamiento. A pesar de ello, su etiqueta "region:us" sugiere que podría estar orientado a texto en inglés o a un dominio geográfico específico, aunque esto no está confirmado. La relevancia actual del modelo es incierta debido a la falta de documentación, pero su tamaño y arquitectura lo hacen potencialmente útil para tareas de comprensión del lenguaje, clasificación y extracción de características.
 
@@ -21,7 +21,7 @@ El modelo fue creado en agosto de 2026 y actualizado dos días después, lo que 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere únicamente del tag "bert" en HuggingFace. Se trata presumiblemente de un transformer encoder-only con atención bidireccional, similar al BERT original de Google. Con 239.842.880 parámetros, el modelo se acerca a la escala de BERT-large (340M), aunque es algo menor, lo que podría indicar una configuración de capas, dimensiones ocultas o número de cabezas de atención diferente. No se dispone de información sobre el número de capas, la dimensión del embedding, el tamaño del vocabulario ni el tipo de tokenizador.
+La arquitectura se infiere únicamente del tag "bert" en Hugging Face. Se trata presumiblemente de un transformer encoder-only con atención bidireccional, similar al BERT original de Google. Con 239.842.880 parámetros, el modelo se acerca a la escala de BERT-large (340M), aunque es algo menor, lo que podría indicar una configuración de capas, dimensiones ocultas o número de cabezas de atención diferente. No se dispone de información sobre el número de capas, la dimensión del embedding, el tamaño del vocabulario ni el tipo de tokenizador.
 
 No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como MLM (masked language modeling) o NSP (next sentence prediction). Tampoco hay información sobre fine-tuning posterior, RLHF o DPO. El tamaño del repositorio (34.5 GB) es inusualmente grande para un modelo de 240M de parámetros (que en fp32 ocuparía aproximadamente 1 GB), lo que sugiere que el repo podría contener múltiples versiones, pesos en precisión mixta, o incluso datos adicionales no documentados.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: no disponible. Para un modelo de 240M de parámetros en fp32, se necesitarían aproximadamente 1 GB de VRAM solo para los pesos, más memoria para activaciones. Con cuantización a int8, podría reducirse a ~500 MB, pero no se confirma la disponibilidad de versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM podría ejecutar el modelo en fp32 (por ejemplo, GTX 1650, RTX 3050). Para mayor comodidad, una RTX 3060 o superior sería adecuada.
 - Si cabe en consumer GPU: sí, un modelo de 240M de parámetros es ejecutable en GPUs de consumo medio, incluso en CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo BERT, puede cargarse con la librería Transformers de HuggingFace. Para inferencia en producción, se podría usar ONNX Runtime, TensorRT o servicios como HuggingFace Inference Endpoints. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo BERT, puede cargarse con la librería Transformers de Hugging Face. Para inferencia en producción, se podría usar ONNX Runtime, TensorRT o servicios como Hugging Face Inference Endpoints. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no disponible. Dependerá del hardware y de la optimización.
 
 ## Comparativa con modelos similares
@@ -61,9 +61,9 @@ Dado que no hay información sobre el rendimiento real de MASRIBERTV4, la compar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MASRIBERTV4 | 239.8M | no disponible | no disponible | HuggingFace (repo público) |
-| BERT-base | 110M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| BERT-large | 340M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| MASRIBERTV4 | 239.8M | no disponible | no disponible | Hugging Face (repo público) |
+| BERT-base | 110M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| BERT-large | 340M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparativa es limitada porque no se conocen las especificaciones exactas de MASRIBERTV4 (contexto, licencia, idiomas). BERT-base y BERT-large tienen licencia Apache 2.0, lo que permite uso comercial sin restricciones, mientras que la licencia de MASRIBERTV4 es desconocida, lo que supone un riesgo para adopción en producción.
 
@@ -77,5 +77,5 @@ La comparativa es limitada porque no se conocen las especificaciones exactas de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/T0KII/MASRIBERTV4
+- Repositorio Hugging Face: https://huggingface.co/T0KII/MASRIBERTV4
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

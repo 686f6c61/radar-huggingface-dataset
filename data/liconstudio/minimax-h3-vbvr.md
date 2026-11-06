@@ -65,8 +65,8 @@ La model card únicamente incluye comparaciones cualitativas en vídeo (ejemplos
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiconStudio Minimax-H3-VBVR | LoRA image-to-video sobre MiniMax-H3 | no disponible (repo de 0,2 GB) | no disponible | apache-2.0 (mas licencia del base) | HuggingFace, 0 descargas, 18 likes |
-| MiniMaxAI/MiniMax-H3 (sin LoRA) | Modelo base generativo de video | no disponible | no disponible | no disponible | HuggingFace (referenciado en la model card) |
+| LiconStudio Minimax-H3-VBVR | LoRA image-to-video sobre MiniMax-H3 | no disponible (repo de 0,2 GB) | no disponible | apache-2.0 (mas licencia del base) | Hugging Face, 0 descargas, 18 likes |
+| MiniMaxAI/MiniMax-H3 (sin LoRA) | Modelo base generativo de video | no disponible | no disponible | no disponible | Hugging Face (referenciado en la model card) |
 | Otros LoRA de image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas de la misma categoría no es posible con la información disponible: no se han identificado en la búsqueda web otros adaptadores comparables ni se dispone de métricas del modelo base. La única comparación documentada es cualitativa, mediante pares de vídeos original frente a original+VBVR.
@@ -86,7 +86,7 @@ La comparación cuantitativa con alternativas de la misma categoría no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiconStudio/Minimax-H3-VBVR
+- Modelo en Hugging Face: https://huggingface.co/LiconStudio/Minimax-H3-VBVR
 - Pesos del adaptador (safetensors): https://huggingface.co/LiconStudio/Minimax-H3-VBVR/resolve/main/H3-VBVR-I2V.safetensors
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Dataset de entrenamiento VBVR-Pro-SFT-Video: https://huggingface.co/datasets/Video-Reason/VBVR-Pro-SFT-Video

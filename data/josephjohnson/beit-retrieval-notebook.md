@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beit-retrieval-notebook es un repositorio de HuggingFace publicado por el usuario josephjohnson que contiene una implementacion compacta y personalizada de BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de retrieval (recuperacion). No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor describe el checkpoint `model.safetensors` como una inicializacion valida para smoke tests, no como un checkpoint entrenado ni evaluado con benchmarks. El recuento de safetensors indica 16.576 parametros, coherente con un artefacto de prueba de tamano reducido pese a la etiqueta de configuracion "huge".
+Beit-retrieval-notebook es un repositorio de Hugging Face publicado por el usuario josephjohnson que contiene una implementacion compacta y personalizada de BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de retrieval (recuperacion). No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor describe el checkpoint `model.safetensors` como una inicializacion valida para smoke tests, no como un checkpoint entrenado ni evaluado con benchmarks. El recuento de safetensors indica 16.576 parametros, coherente con un artefacto de prueba de tamano reducido pese a la etiqueta de configuracion "huge".
 
 El material entregado incluye el codigo (`train.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y el checkpoint de inicializacion. La arquitectura declarada emplea atencion lineal, fusion por co-attention, activacion gelu tanh y normalizacion batchnorm, sobre la escala "huge" de BEiT. No se especifican tokens de entrenamiento, composicion del dataset, contexto ni idiomas soportados.
 
@@ -42,7 +42,7 @@ No hay evidencia de un entrenamiento completado. La receta por defecto usa SGD c
 - Smoke tests de infraestructura: el checkpoint de inicializacion permite verificar que un pipeline de carga de safetensors, tokenizacion y forward pass funciona extremo a extremo sin depender de un modelo grande.
 - Experimentos controlados de retrieval texto-imagen: el autor propone Flickr30k como primer conjunto de evaluacion, con al menos tres semillas, para comparar contra una linea base de capacidad equivalente.
 - Reproducibilidad de recetas de entrenamiento: `training_args.json` y `train.py` permiten fijar semillas, exponer datos de forma identica y registrar versiones de entorno, util en estudios comparativos.
-- Pruebas de integracion en frameworks propios: dado que no hay pipeline declarado, se puede usar como banco de pruebas para adaptadores de carga personalizados en lugar de las APIs automaticas de HuggingFace.
+- Pruebas de integracion en frameworks propios: dado que no hay pipeline declarado, se puede usar como banco de pruebas para adaptadores de carga personalizados en lugar de las APIs automaticas de Hugging Face.
 - Base para desarrollo incremental: punto de partida sobre el que anadir cabezas de retrieval o funciones de perdida antes de un entrenamiento real.
 - Docencia y formacion: ejemplo minimo de arquitectura BEiT para explicar co-attention y atencion lineal en un contexto acotado.
 
@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| josephjohnson/beit-retrieval-notebook | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| josephjohnson/beit-retrieval-notebook | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | BEiT (implementacion de referencia) | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | referencia conceptual |
 | Modelos de retrieval texto-imagen (CLIP, BLIP y similares) | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | referencia conceptual |
 
@@ -84,5 +84,5 @@ No se dispone de datos suficientes para comparar parametros, contexto, rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/josephjohnson/beit-retrieval-notebook
+- Hugging Face: https://huggingface.co/josephjohnson/beit-retrieval-notebook
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

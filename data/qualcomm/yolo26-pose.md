@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26-Pose es un modelo de estimacion de pose humana publicado por Qualcomm en HuggingFace dentro del ecosistema Qualcomm AI Hub Models. Se trata de una adaptacion y exportacion optimizada del modelo Ultralytics YOLO26-Pose, orientada a ejecutarse en la NPU (Hexagon) de los chipsets Snapdragon y Dragonwing mediante los runtimes ONNX y QNN_DLC. El modelo predice keypoints del cuerpo humano y cajas delimitadoras (bounding boxes) sobre imagenes de 640x640.
+YOLO26-Pose es un modelo de estimacion de pose humana publicado por Qualcomm en Hugging Face dentro del ecosistema Qualcomm AI Hub Models. Se trata de una adaptacion y exportacion optimizada del modelo Ultralytics YOLO26-Pose, orientada a ejecutarse en la NPU (Hexagon) de los chipsets Snapdragon y Dragonwing mediante los runtimes ONNX y QNN_DLC. El modelo predice keypoints del cuerpo humano y cajas delimitadoras (bounding boxes) sobre imagenes de 640x640.
 
 A diferencia de los modelos de lenguaje, no es un transformer generativo ni un LLM: es una red convolucional de una sola etapa con cabeza de pose estimacion, con 2,97 millones de parametros y un tamano en coma flotante de 11,4 MB. Su relevancia radica en que permite inferencia en tiempo real en dispositivos moviles y de borde sin conexion a la nube, con latencias de entre 2,4 ms y 3,8 ms en los SoC Snapdragon de ultima generacion usando precision w8a16 o float.
 
@@ -147,7 +147,7 @@ La diferencia principal de YOLO26-Pose frente a estas alternativas no es la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/YOLO26-Pose
+- Hugging Face: https://huggingface.co/qualcomm/YOLO26-Pose
 - Implementacion de YOLO26-Pose en Ultralytics: https://github.com/ultralytics/ultralytics/tree/main/ultralytics/models/yolo/pose
 - Libreria Qualcomm AI Hub Models, modelo YOLO26-Pose (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/yolo26_pose
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

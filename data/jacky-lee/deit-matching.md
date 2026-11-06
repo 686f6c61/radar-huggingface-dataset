@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jacky-lee/deit-matching` es un repositorio de HuggingFace publicado por el usuario Jacky-lee que contiene una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, es decir, emparejamiento o correspondencia entre entradas (por ejemplo, pares imagen-imagen o imagen-texto). El modelo se presenta con una configuración denominada "giant" y una combinación de atención multi-query con fusión mediante cross-attention. No se trata de un checkpoint entrenado y validado, sino de una inicialización válida para pruebas de humo (*smoke tests*), tal y como declara explícitamente la model card.
+`Jacky-lee/deit-matching` es un repositorio de Hugging Face publicado por el usuario Jacky-lee que contiene una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, es decir, emparejamiento o correspondencia entre entradas (por ejemplo, pares imagen-imagen o imagen-texto). El modelo se presenta con una configuración denominada "giant" y una combinación de atención multi-query con fusión mediante cross-attention. No se trata de un checkpoint entrenado y validado, sino de una inicialización válida para pruebas de humo (*smoke tests*), tal y como declara explícitamente la model card.
 
 El interés de este repositorio es fundamentalmente como punto de partida reproducible: incluye el código Python con el modelo y un punto de entrada de entrenamiento/evaluación, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` con pesos inicializados. El autor omite deliberadamente cualquier afirmación sobre benchmarks y advierte de que el checkpoint no ha sido entrenado ni auditado.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jacky-lee/deit-matching | 49.600 (metadatos) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| Jacky-lee/deit-matching | 49.600 (metadatos) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | DeiT original (Facebook Research) | no disponible en esta ficha | no disponible | con benchmarks publicados por sus autores | no disponible en esta ficha | no disponible en esta ficha |
 | Otros backbones ViT/DeiT para matching | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jacky-lee/deit-matching
+- Repositorio en Hugging Face: https://huggingface.co/Jacky-lee/deit-matching
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

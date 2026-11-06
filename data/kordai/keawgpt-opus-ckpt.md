@@ -18,7 +18,7 @@ La relevancia de este modelo radica en que ofrece un punto de partida para exper
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-KeawGPT-Opus-CKPT es un modelo de lenguaje basado en la arquitectura transformer de la familia Qwen3. Se trata de un ajuste fino supervisado (SFT) realizado sobre el modelo base KordAI/KeawGPT, utilizando la librería TRL de HuggingFace. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el rendimiento del entrenamiento de modelos, logrando una aceleración de hasta 2x según la información publicada. No se han proporcionado detalles sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni la aplicación de técnicas adicionales como RLHF o DPO; únicamente se indica que fue entrenado con SFT.
+KeawGPT-Opus-CKPT es un modelo de lenguaje basado en la arquitectura transformer de la familia Qwen3. Se trata de un ajuste fino supervisado (SFT) realizado sobre el modelo base KordAI/KeawGPT, utilizando la librería TRL de Hugging Face. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el rendimiento del entrenamiento de modelos, logrando una aceleración de hasta 2x según la información publicada. No se han proporcionado detalles sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni la aplicación de técnicas adicionales como RLHF o DPO; únicamente se indica que fue entrenado con SFT.
 
 ## Capacidades
 - Generación de texto: el modelo es capaz de generar respuestas en texto a partir de instrucciones, tal como se muestra en el ejemplo de la model card.
@@ -55,7 +55,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Caveat para producción: al ser un checkpoint intermedio con 0 descargas y 0 likes, no ha sido validado por la comunidad. Se recomienda evaluar su calidad y seguridad antes de desplegarlo en entornos de producción.
 
 ## Enlaces
-- HuggingFace del checkpoint: https://huggingface.co/KordAI/KeawGPT-Opus-CKPT
+- Hugging Face del checkpoint: https://huggingface.co/KordAI/KeawGPT-Opus-CKPT
 - Modelo base: https://huggingface.co/KordAI/KeawGPT-Base
 - Versión GGUF: https://huggingface.co/KordAI/KeawGPT-GGUF
 - FriendliAI: https://friendli.ai/models/KordAI/KeawGPT-Base

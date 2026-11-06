@@ -93,7 +93,7 @@ Los datos de los modelos comparativos no figuran en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dolphin42/trapfield-qwen3vl8b-sft-warm3-parity-step188
+- Modelo en Hugging Face: https://huggingface.co/Dolphin42/trapfield-qwen3vl8b-sft-warm3-parity-step188
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset de origen de las demostraciones: https://huggingface.co/datasets/AIcell/SPAgent-NonFrozenLake-2K
 - Libreria de entrenamiento ms-swift: https://github.com/modelscope/ms-swift

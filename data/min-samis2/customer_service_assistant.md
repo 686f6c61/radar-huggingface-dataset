@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0,3 GB, lo que sugiere que los pesos están c
 | Tipos de cuantizacion | no disponible (el tamano del repo sugiere cuantizacion, pero no se especifica) |
 | Idiomas soportados | no disponible (el modelo base soporta principalmente ingles, pero no se confirma para este ajuste) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ La comparativa se limita a modelos de 7B basados en Mistral. El modelo de min-sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/min-samis2/Customer_Service_assistant
+- Modelo en Hugging Face: https://huggingface.co/min-samis2/Customer_Service_assistant
 - Perfil del autor: https://huggingface.co/min-samis2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Notebook de entrenamiento de otro modelo del autor (referencia del método Forge): https://gist.github.com/samokmin/ff81e6a4dee9bc1a5cd364edf74c7a3b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por el usuario Greynar y publicada en HuggingFace bajo el framework LeRobot. Está entrenada para controlar un robot a partir de observaciones de tres cámaras, con el objetivo de predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que reduce la acumulación de errores en tareas de manipulación. El modelo tiene 51.668.614 parámetros y se distribuye en formato safetensors, con licencia Apache-2.0. Es relevante para el campo de la robótica de bajo coste, ya que permite entrenar políticas de control a partir de demostraciones teleoperadas y desplegarlas en robots como el SO100 follower.
+El modelo `Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por el usuario Greynar y publicada en Hugging Face bajo el framework LeRobot. Está entrenada para controlar un robot a partir de observaciones de tres cámaras, con el objetivo de predecir secuencias de acciones (chunks) en lugar de pasos individuales, lo que reduce la acumulación de errores en tareas de manipulación. El modelo tiene 51.668.614 parámetros y se distribuye en formato safetensors, con licencia Apache-2.0. Es relevante para el campo de la robótica de bajo coste, ya que permite entrenar políticas de control a partir de demostraciones teleoperadas y desplegarlas en robots como el SO100 follower.
 
 ## Especificaciones técnicas
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: 51,7 M parámetros ocupan aproximadamente 207 MB en FP32 y 104 MB en FP16. Con overhead de inferencia, cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU de consumo, como RTX 3060, RTX 4090, o incluso una GPU integrada para inferencia lenta. No se requiere hardware de gama alta.
 - Compatibilidad con consumer GPU: sí, el modelo es ligero y puede ejecutarse en GPUs de gama baja.
-- Opciones de despliegue: LeRobot (entrenamiento, evaluación e inferencia), HuggingFace Hub. No es aplicable a vLLM, llama.cpp, Ollama o TGI, al ser un modelo de robótica y no de lenguaje.
+- Opciones de despliegue: LeRobot (entrenamiento, evaluación e inferencia), Hugging Face Hub. No es aplicable a vLLM, llama.cpp, Ollama o TGI, al ser un modelo de robótica y no de lenguaje.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne | 51.668.614 | No disponible | Apache-2.0 | HuggingFace |
-| Greynar/act_ClickTargetPreprocessCleanThreeCameras | 51,7 M | No disponible | Apache-2.0 | HuggingFace |
-| Greynar/act_ClickTargetPreprocessTestThreeCamera | 51,7 M (estimado, no confirmado) | No disponible | Apache-2.0 | HuggingFace |
+| Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne | 51.668.614 | No disponible | Apache-2.0 | Hugging Face |
+| Greynar/act_ClickTargetPreprocessCleanThreeCameras | 51,7 M | No disponible | Apache-2.0 | Hugging Face |
+| Greynar/act_ClickTargetPreprocessTestThreeCamera | 51,7 M (estimado, no confirmado) | No disponible | Apache-2.0 | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura ACT y tamaño, diferenciándose en el dataset de entrenamiento utilizado. No se dispone de resultados de benchmarks para comparar su rendimiento relativo.
 
@@ -74,7 +74,7 @@ Los tres modelos comparten la misma arquitectura ACT y tamaño, diferenciándose
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne
+- Hugging Face: https://huggingface.co/Greynar/act_ClickTargetPreprocessThreeCamerasSetUpOne
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot en GitHub: https://github.com/huggingface/lerobot

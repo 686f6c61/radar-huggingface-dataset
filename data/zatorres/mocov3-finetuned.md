@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zatorres/mocov3-finetuned` es un repositorio de investigación publicado en HuggingFace por el usuario Zatorres que contiene un prototipo de modelo basado en MoCo v3 (Momentum Contrast v3) orientado a tareas de clasificación. MoCo v3 es una familia de métodos de aprendizaje autosupervisado para visión por computador que emplea un codificador de consulta y un codificador de momento (momentum encoder) para aprender representaciones sin etiquetas; este repositorio empaqueta una implementación propia con configuración de arquitectura y un checkpoint de inicialización.
+`Zatorres/mocov3-finetuned` es un repositorio de investigación publicado en Hugging Face por el usuario Zatorres que contiene un prototipo de modelo basado en MoCo v3 (Momentum Contrast v3) orientado a tareas de clasificación. MoCo v3 es una familia de métodos de aprendizaje autosupervisado para visión por computador que emplea un codificador de consulta y un codificador de momento (momentum encoder) para aprender representaciones sin etiquetas; este repositorio empaqueta una implementación propia con configuración de arquitectura y un checkpoint de inicialización.
 
 El repositorio se describe explícitamente como un "prototipo de investigación" en escala *tiny*, con fines de documentación de formatos y valores por defecto, no como un modelo entrenado y evaluado. La model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark. El número de parámetros reportado en los metadatos de safetensors es de 24.832, coherente con una configuración de juguete más que con un modelo de producción.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zatorres/mocov3-finetuned | 24.832 | no aplica | sin benchmarks publicados | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| Zatorres/mocov3-finetuned | 24.832 | no aplica | sin benchmarks publicados | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | MoCo v3 (implementación oficial de referencia, Facebook AI Research) | no disponible en esta ficha | no aplica | resultados publicados en el paper original | licencia del repositorio original (no verificada aquí) | repositorio oficial de investigación |
-| Otros modelos de clasificación visual preentrenados (p. ej. ResNet, ViT) | no disponible en esta ficha | no aplica | no disponible en esta ficha | variable según modelo | HuggingFace |
+| Otros modelos de clasificación visual preentrenados (p. ej. ResNet, ViT) | no disponible en esta ficha | no aplica | no disponible en esta ficha | variable según modelo | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa; la comparación anterior es meramente cualitativa y estructural.
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zatorres/mocov3-finetuned
+- Hugging Face: https://huggingface.co/Zatorres/mocov3-finetuned
 - Paper original de MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057
 - Repositorio oficial de MoCo (Facebook Research): https://github.com/facebookresearch/moco
 - No se han encontrado en la información proporcionada otros enlaces a blogs, demos o repositorios del autor.

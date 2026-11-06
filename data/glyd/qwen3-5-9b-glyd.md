@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato y tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glyd/Qwen3.5-9B-glyd | 11.670.880.634 | no disponible (benchmarks a 4096) | Glyd 8 bits sin perdida, 11,85 GiB | Pesos apache-2.0; herramienta BUSL-1.1 | HuggingFace, carga con `glyd` 0.29.1+ en Linux + GPU NVIDIA |
-| Qwen/Qwen3.5-9B (bf16) | mismos pesos | no disponible | bf16, 16,68 GiB | apache-2.0 | HuggingFace; servible con vLLM 0.30.0 |
+| glyd/Qwen3.5-9B-glyd | 11.670.880.634 | no disponible (benchmarks a 4096) | Glyd 8 bits sin perdida, 11,85 GiB | Pesos apache-2.0; herramienta BUSL-1.1 | Hugging Face, carga con `glyd` 0.29.1+ en Linux + GPU NVIDIA |
+| Qwen/Qwen3.5-9B (bf16) | mismos pesos | no disponible | bf16, 16,68 GiB | apache-2.0 | Hugging Face; servible con vLLM 0.30.0 |
 | Otras cuantizaciones de Qwen3.5-9B (GGUF, AWQ, GPTQ) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Las fuentes secundarias consultadas sitúan a Qwen3.5-9B como un modelo multimodal de 9B con arquitectura gated-delta MoE y visión, con una tasa de éxito del 83 % en los benchmarks agregados de benchable.ai y un rendimiento de velocidad en el percentil 10 de su categoría; esas cifras corresponden al modelo base completo y no a este checkpoint de solo lenguaje, por lo que no son directamente extrapolables.
@@ -93,7 +93,7 @@ Las fuentes secundarias consultadas sitúan a Qwen3.5-9B como un modelo multimod
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/glyd/Qwen3.5-9B-glyd
+- Checkpoint en Hugging Face: https://huggingface.co/glyd/Qwen3.5-9B-glyd
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Commit del modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a
 - Benchmarks GPU (RTX 4090 y RTX 5090, Glyd 0.29 frente a vLLM 0.30.0): https://github.com/surya-koritala/Glyd/tree/main/benchmarks/gpu/rtx4090-5090-qwen35-9b-v029-2026-10-06

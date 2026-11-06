@@ -80,11 +80,11 @@ Temper-2-Axon obtiene el mejor resultado entre modelos de hasta 1.5B en HumanEva
 
 | Modelo | Parametros | Contexto | HumanEval-RS pass@1 | MBPP-RS pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Temper-2-Axon | 1.5B | no disponible | 64.2 | 54.7 | Apache 2.0 | HuggingFace (safetensors, GGUF) |
-| Temper-1-1.5B | 1.5B | no disponible | 54.1 | 48.6 | no disponible | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1.5B | no disponible | 39.0 | 38.3 | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct | 3B | no disponible | 56.5 | 44.8 | Apache 2.0 | HuggingFace |
-| Qwen3-4B | 4B | no disponible | 59.8 | 55.6 | no disponible | HuggingFace |
+| Temper-2-Axon | 1.5B | no disponible | 64.2 | 54.7 | Apache 2.0 | Hugging Face (safetensors, GGUF) |
+| Temper-1-1.5B | 1.5B | no disponible | 54.1 | 48.6 | no disponible | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1.5B | no disponible | 39.0 | 38.3 | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct | 3B | no disponible | 56.5 | 44.8 | Apache 2.0 | Hugging Face |
+| Qwen3-4B | 4B | no disponible | 59.8 | 55.6 | no disponible | Hugging Face |
 
 Frente a modelos del mismo tamano, Temper-2-Axon supera claramente a su base Qwen2.5-Coder-1.5B-Instruct y a Temper-1-1.5B en tareas Rust. Frente a modelos de 3B-4B, mantiene ventaja en HumanEval-RS pass@1 sobre Qwen2.5-Coder-3B y Qwen3-4B, y en MBPP-RS supera a Qwen2.5-Coder-3B pero queda por debajo de Qwen3-4B en pass@1.
 
@@ -103,7 +103,7 @@ Frente a modelos del mismo tamano, Temper-2-Axon supera claramente a su base Qwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maylore-ai/Temper-2-Axon
+- Hugging Face: https://huggingface.co/maylore-ai/Temper-2-Axon
 - Version GGUF: https://huggingface.co/maylore-ai/Temper-2-Axon-GGUF
 - Modelo predecesor: https://huggingface.co/maylore-ai/Temper-1-1.5B
 - Modelo hermano: https://huggingface.co/maylore-ai/Temper-2-Ion

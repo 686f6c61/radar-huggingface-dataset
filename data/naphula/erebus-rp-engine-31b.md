@@ -1,7 +1,7 @@
 # Naphula/Erebus-RP-Engine-31B
 
 ## Resumen
-Erebus-RP-Engine-31B es un modelo de lenguaje de tipo denso orientado a escritura creativa, roleplay y generación de narrativa, publicado por el usuario Naphula en HuggingFace. Se trata de un merge (fusión) construido con mergekit a partir de dos modelos derivados de Gemma 4 de 31B: DavidAU/gemma-4-31B-it-Grand-Horror-X-INTENSE-HERETIC-UNCENSORED-Thinking y MRockatansky/Gemma-4-31B-Storymaxxed3. El resultado es un modelo sin censura (uncensored) especializado en ficción de todos los géneros, con énfasis en terror, suspense, romance y ciencia ficción.
+Erebus-RP-Engine-31B es un modelo de lenguaje de tipo denso orientado a escritura creativa, roleplay y generación de narrativa, publicado por el usuario Naphula en Hugging Face. Se trata de un merge (fusión) construido con mergekit a partir de dos modelos derivados de Gemma 4 de 31B: DavidAU/gemma-4-31B-it-Grand-Horror-X-INTENSE-HERETIC-UNCENSORED-Thinking y MRockatansky/Gemma-4-31B-Storymaxxed3. El resultado es un modelo sin censura (uncensored) especializado en ficción de todos los géneros, con énfasis en terror, suspense, romance y ciencia ficción.
 
 El modelo cuenta con 32.137.304.636 parámetros reales según los pesos en safetensors, lo que lo sitúa en la franja de 31B-32B. El repositorio ocupa 64,3 GB, lo que sugiere pesos en precisión completa (probablemente bf16/fp16) sin cuantizaciones publicadas. La licencia declarada es Apache 2.0, aunque al derivar de Gemma 4 conviene verificar las condiciones de la licencia base de Google.
 
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de los que se dispone información en est
 - Etiquetas contradictorias: los tags "moe" y "dense" coexisten, lo que genera ambigüedad sobre la arquitectura real.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Naphula/Erebus-RP-Engine-31B
+- Hugging Face: https://huggingface.co/Naphula/Erebus-RP-Engine-31B
 - Modelo base 1: https://huggingface.co/DavidAU/gemma-4-31B-it-Grand-Horror-X-INTENSE-HERETIC-UNCENSORED-Thinking
 - Modelo base 2: https://huggingface.co/MRockatansky/Gemma-4-31B-Storymaxxed3
 - Paper referenciado (arxiv:2406.11617): https://arxiv.org/abs/2406.11617

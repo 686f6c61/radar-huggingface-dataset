@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NCSound Audio Mix 4B | Adaptador ~1% sobre base 4B | No disponible | Mezcla y masterizacion (texto) | Apache 2.0 | HuggingFace (14 descargas) |
-| Qwen3.5-4B (base) | 4B | No disponible | Proposito general vision-language | No disponible en la informacion | HuggingFace |
+| NCSound Audio Mix 4B | Adaptador ~1% sobre base 4B | No disponible | Mezcla y masterizacion (texto) | Apache 2.0 | Hugging Face (14 descargas) |
+| Qwen3.5-4B (base) | 4B | No disponible | Proposito general vision-language | No disponible en la informacion | Hugging Face |
 | Adaptador de codigo sobre Qwen3.5-4B (mencionado) | Adaptador sobre base 4B | No disponible | Codigo | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoria en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/gsmg878/ncsound-audio-mix-4b
+- Hugging Face del adaptador: https://huggingface.co/gsmg878/ncsound-audio-mix-4b
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Run de entrenamiento en Kaggle: https://www.kaggle.com/code/tap919/qwen-mix-full-train-v2
 - NCSoundlab: https://ncsound-hub.vercel.app/apps/ncsoundlab

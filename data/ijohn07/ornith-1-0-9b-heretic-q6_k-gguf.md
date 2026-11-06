@@ -12,7 +12,7 @@ Su relevancia practica es doble. Por un lado, permite ejecutar un modelo de ~9B 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de generacion de texto tipo transformer, segun el pipeline de HuggingFace; la model card no detalla la arquitectura interna) |
+| Arquitectura | no disponible (modelo de generacion de texto tipo transformer, segun el pipeline de Hugging Face; la model card no detalla la arquitectura interna) |
 | Parametros totales | 8.953.803.264 (datos de safetensors del modelo base) |
 | Parametros activos | no aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible (los ejemplos de la model card usan -c 2048 de forma ilustrativa, no como contexto maximo) |
@@ -22,7 +22,7 @@ Su relevancia practica es doble. Por un lado, permite ejecutar un modelo de ~9B 
 | Formato de pesos | GGUF (fichero unico, ornith-1.0-9b-heretic-q6_k.gguf); el modelo base se distribuye en safetensors |
 | Modelo base | trohrbaugh/Ornith-1.0-9B-heretic (a su vez derivado de deepreinforce-ai/Ornith-1.0-9B) |
 | Tamano del repositorio | 7,4 GB |
-| Fecha de creacion en HuggingFace | 2026-09-15 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-15 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -77,9 +77,9 @@ La informacion disponible no incluye benchmarks ni especificaciones de modelos a
 
 | Modelo | Parametros | Formato | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ijohn07/Ornith-1.0-9B-heretic-Q6_K-GGUF | 8,95 B | GGUF | Q6_K (~6,56 bits/peso) | no disponible | MIT | Publico en HuggingFace |
-| trohrbaugh/Ornith-1.0-9B-heretic | 8,95 B | safetensors | FP16/BF16 (sin cuantizar) | no disponible | MIT | Publico en HuggingFace |
-| deepreinforce-ai/Ornith-1.0-9B | 8,95 B | safetensors | FP16/BF16 (sin cuantizar) | no disponible | MIT | Publico en HuggingFace |
+| ijohn07/Ornith-1.0-9B-heretic-Q6_K-GGUF | 8,95 B | GGUF | Q6_K (~6,56 bits/peso) | no disponible | MIT | Publico en Hugging Face |
+| trohrbaugh/Ornith-1.0-9B-heretic | 8,95 B | safetensors | FP16/BF16 (sin cuantizar) | no disponible | MIT | Publico en Hugging Face |
+| deepreinforce-ai/Ornith-1.0-9B | 8,95 B | safetensors | FP16/BF16 (sin cuantizar) | no disponible | MIT | Publico en Hugging Face |
 | Otros modelos de ~9B comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ La informacion disponible no incluye benchmarks ni especificaciones de modelos a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q6_K-GGUF
 - Modelo base de la cuantizacion: https://huggingface.co/trohrbaugh/Ornith-1.0-9B-heretic
 - Modelo original de la familia: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B
 - Texto de la licencia MIT referenciado en la model card: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B/blob/main/LICENSE

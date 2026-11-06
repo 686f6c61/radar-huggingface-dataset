@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-oQ2.5-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado por el usuario bambocher en HuggingFace. La cuantización se ha realizado con oQ (oMLX v0.7.1rc1) en precisión mixta y el resultado se distribuye en formato MLX con safetensors, con un total de 2.274.069.824 parámetros y un peso de repositorio de 1,5 GB.
+Qwen3.5-2B-oQ2.5-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado por el usuario bambocher en Hugging Face. La cuantización se ha realizado con oQ (oMLX v0.7.1rc1) en precisión mixta y el resultado se distribuye en formato MLX con safetensors, con un total de 2.274.069.824 parámetros y un peso de repositorio de 1,5 GB.
 
 El checkpoint combina capas en 2, 4, 5, 6 y 8 bits con grupo 64, además de tensores en BF16, hasta una media efectiva de 5,338 bits por peso. Incluye un modelo de lenguaje de 1,882B, un módulo de visión de 0,331B y un cabezal MTP de 0,061B, lo que apunta a un uso multimodal y a experimentación con predicción multi-token, aunque la información disponible no detalla la arquitectura ni el entrenamiento.
 

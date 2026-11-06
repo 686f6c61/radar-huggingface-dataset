@@ -103,7 +103,7 @@ La reducción de almacenamiento frente a BF16 es de aproximadamente un 69%, a co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2.5e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2.5e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-2B: no disponible (no referenciado en la model card)
 - Paper, blog o demo oficial: no disponible

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DerlisPeralta/sd-v1-4-lora-oldbookillustrations | LoRA de estilo | SD v1-4 | no disponible (r=8) | no aplica | creativeml-openrail-m | HuggingFace (repo de 0.0 GB) |
-| CompVis/stable-diffusion-v1-4 | Checkpoint completo | — | ~860M UNet + VAE + CLIP | 77 tokens | creativeml-openrail-m | HuggingFace |
-| stabilityai/stable-diffusion-2-1 | Checkpoint completo | — | ~865M UNet | 77 tokens | openrail++ | HuggingFace |
-| runwayml/stable-diffusion-v1-5 | Checkpoint completo | — | ~860M UNet | 77 tokens | creativeml-openrail-m | HuggingFace |
+| DerlisPeralta/sd-v1-4-lora-oldbookillustrations | LoRA de estilo | SD v1-4 | no disponible (r=8) | no aplica | creativeml-openrail-m | Hugging Face (repo de 0.0 GB) |
+| CompVis/stable-diffusion-v1-4 | Checkpoint completo | — | ~860M UNet + VAE + CLIP | 77 tokens | creativeml-openrail-m | Hugging Face |
+| stabilityai/stable-diffusion-2-1 | Checkpoint completo | — | ~865M UNet | 77 tokens | openrail++ | Hugging Face |
+| runwayml/stable-diffusion-v1-5 | Checkpoint completo | — | ~860M UNet | 77 tokens | creativeml-openrail-m | Hugging Face |
 
 La comparación directa con otros adaptadores de estilo no está disponible en la información proporcionada, ya que no se han publicado métricas ni se han identificado LoRAs equivalentes del mismo dataset.
 
@@ -84,7 +84,7 @@ La comparación directa con otros adaptadores de estilo no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DerlisPeralta/sd-v1-4-lora-oldbookillustrations
+- Modelo en Hugging Face: https://huggingface.co/DerlisPeralta/sd-v1-4-lora-oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Documentación de `diffusers` para carga de LoRA: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

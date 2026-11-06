@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (MOS, similitud de hablante, W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anwar-dev/voicetut-egyptian-morad-dora
+- Modelo en Hugging Face: https://huggingface.co/anwar-dev/voicetut-egyptian-morad-dora
 - Modelo base: https://huggingface.co/masterofaudio2077/voicetut-egyptian-tashkeel
 - Corpus de referencia citado por el autor: `moknah-ar-tts` (no se proporciona URL en la información disponible)
 - Librería OmniVoice: no se proporciona URL en la información disponible

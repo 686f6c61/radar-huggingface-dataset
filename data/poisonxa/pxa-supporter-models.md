@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PXA-Supporter-Models es un repositorio de pesos publicado en HuggingFace por el usuario poisonxa, distribuido bajo una licencia propia denominada pxa-supporter y con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargar los ficheros. El dato objetivo mas relevante es el recuento de parametros declarado para los pesos en formato safetensors, que asciende a 27.320.697.856 parametros, es decir, aproximadamente 27.300 millones.
+PXA-Supporter-Models es un repositorio de pesos publicado en Hugging Face por el usuario poisonxa, distribuido bajo una licencia propia denominada pxa-supporter y con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargar los ficheros. El dato objetivo mas relevante es el recuento de parametros declarado para los pesos en formato safetensors, que asciende a 27.320.697.856 parametros, es decir, aproximadamente 27.300 millones.
 
 El repositorio ocupa 13,6 GB e incluye, segun las etiquetas declaradas, tanto pesos en formato GGUF como safetensors, ademas de la marca imatrix, que en el ecosistema llama.cpp suele acompanar a cuantizaciones generadas con matrices de importancia. Las etiquetas tambien lo clasifican como conversational y endpoints_compatible, lo que sugiere que esta pensado para su uso detras de una API compatible con los endpoints habituales de inferencia de texto.
 
@@ -76,14 +76,14 @@ No disponible. La informacion publicada no identifica la familia base del modelo
 - Riesgo de alucinacion: no cuantificado; sin datos de entrenamiento ni evaluaciones, debe asumirse el riesgo habitual de los modelos generativos.
 - Limitaciones de contexto o idioma: no disponible; se desconoce la ventana de contexto y los idiomas soportados.
 - Restricciones de licencia: la licencia pxa-supporter es una licencia propia (tag license:other). No se detallan sus terminos en la informacion disponible, por lo que es imprescindible revisar el texto completo antes de cualquier uso comercial.
-- Acceso restringido (gated): la descarga exige aceptar condiciones en HuggingFace, lo que anade friccion para su uso en produccion y automatizacion.
+- Acceso restringido (gated): la descarga exige aceptar condiciones en Hugging Face, lo que anade friccion para su uso en produccion y automatizacion.
 - Ausencia de traccion: el repositorio registra 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
 - Falta de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento, contexto o benchmarks, lo que dificulta evaluar su idoneidad en entornos productivos.
 - Fechas del repositorio: las marcas temporales de creacion y actualizacion (27 de septiembre de 2026) deben verificarse directamente en la plataforma, ya que condicionan la vigencia de la version publicada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poisonxa/PXA-Supporter-Models
+- Hugging Face: https://huggingface.co/poisonxa/PXA-Supporter-Models
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

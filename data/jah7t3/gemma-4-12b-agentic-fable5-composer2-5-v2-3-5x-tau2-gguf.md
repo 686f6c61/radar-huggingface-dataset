@@ -98,7 +98,7 @@ El autor anuncia tambien una version v3 de esta misma linea de 12B y un ajuste h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jah7t3/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Jah7t3/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - tau2-bench (benchmark agantico de uso de herramientas mencionado por el autor): no disponible como enlace en la informacion proporcionada
 - Maestro en safetensors publicado por el autor: no disponible como enlace en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klyra-Decision-16M-Recovery-V5.1 es un modelo de decisión experimental de 16.392.033 parámetros (aproximadamente 16,4 millones), desarrollado por Polyvor Labs y publicado en HuggingFace bajo la cuenta Jahirrrr. Se presenta como una revisión orientada a mejorar la fiabilidad de las decisiones, el aprendizaje multitarea, la comprensión de contexto y la preservación de conocimiento respecto a su predecesor, Klyra-Decision-16M-Generalist-V4, del que deriva mediante fine-tuning. No es un modelo de lenguaje generativo de propósito general, sino un modelo especializado en tareas de decisión estructurada.
+Klyra-Decision-16M-Recovery-V5.1 es un modelo de decisión experimental de 16.392.033 parámetros (aproximadamente 16,4 millones), desarrollado por Polyvor Labs y publicado en Hugging Face bajo la cuenta Jahirrrr. Se presenta como una revisión orientada a mejorar la fiabilidad de las decisiones, el aprendizaje multitarea, la comprensión de contexto y la preservación de conocimiento respecto a su predecesor, Klyra-Decision-16M-Generalist-V4, del que deriva mediante fine-tuning. No es un modelo de lenguaje generativo de propósito general, sino un modelo especializado en tareas de decisión estructurada.
 
 Por su tamaño, el modelo pertenece a la categoría sub-20M de parámetros, lo que lo sitúa en el segmento de modelos ultraligeros pensados para experimentación, despliegue en entornos con recursos muy limitados o como componente auxiliar dentro de sistemas mayores. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors sobre la librería PyTorch. Los idiomas declarados son inglés (en) e indonesio (id), una combinación poco habitual que sugiere un origen o un conjunto de datos de entrenamiento vinculado a Indonesia.
 
@@ -98,7 +98,7 @@ No se han identificado alternativas externas comparables en el segmento de "mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Recovery-V5.1
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Recovery-V5.1
 - Modelo base (Klyra-Decision-16M-Generalist-V4): https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Generalist-V4
 - Versión previa (Klyra-Decision-16M-Choice-V3): https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Choice-V3
 - Listado de finetunes derivados del modelo base: https://huggingface.co/models?other=base_model:finetune:Jahirrrr/Klyra-Decision-16M-Generalist-V4

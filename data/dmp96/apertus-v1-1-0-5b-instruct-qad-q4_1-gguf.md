@@ -43,7 +43,7 @@ Lo unico verificable es el resultado: un conjunto de pesos en formato GGUF cuant
 - Capacidades de vision o audio: no disponibles; los tags no incluyen ninguna modalidad adicional.
 - Tool calling / function calling: no disponible; no se documenta plantilla de chat ni formato de llamada a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas de HuggingFace esta vacio.
+- Capacidades multilingues: no disponible; el campo de idiomas de Hugging Face esta vacio.
 - Modo de razonamiento explicito (thinking): no disponible.
 - Ejecucion en local sin GPU: plausible por tamano (menos de 1 GB de pesos), pero sin datos de rendimiento publicados.
 
@@ -63,7 +63,7 @@ Los escenarios siguientes son aplicaciones tecnicas coherentes con el perfil del
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los tags de HuggingFace ni en los resultados de busqueda obtenidos. Tampoco se dispone de mediciones de latencia, throughput (tokens por segundo) ni de consumo de memoria en inferencia.
+No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los tags de Hugging Face ni en los resultados de busqueda obtenidos. Tampoco se dispone de mediciones de latencia, throughput (tokens por segundo) ni de consumo de memoria en inferencia.
 
 ## Requisitos de hardware
 
@@ -101,7 +101,7 @@ La busqueda web no devolvio informacion sobre modelos comparables ni sobre la fa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DMP96/Apertus-v1.1-0.5B-Instruct-QAD-Q4_1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DMP96/Apertus-v1.1-0.5B-Instruct-QAD-Q4_1-GGUF
 - Modelo base referenciado en el nombre (no verificado en esta busqueda): no disponible
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible

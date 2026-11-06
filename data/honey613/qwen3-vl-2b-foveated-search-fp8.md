@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-vl-2b-foveated-search-fp8 es una version cuantizada en FP8 de un ajuste fino de Qwen3-VL-2B orientado a la busqueda visual de objetos mediante un patron de atencion "foveal": el modelo observa primero una miniatura de la imagen, emite un punto de interes en coordenadas normalizadas, confirma el objeto sobre un recorte nitido y, si es necesario, vuelve a mirar. El autor del ajuste es Keerthana Reddy Katasani (cuenta de HuggingFace honey613) y el modelo deriva del checkpoint base honey613/qwen3-vl-2b-foveated-search.
+qwen3-vl-2b-foveated-search-fp8 es una version cuantizada en FP8 de un ajuste fino de Qwen3-VL-2B orientado a la busqueda visual de objetos mediante un patron de atencion "foveal": el modelo observa primero una miniatura de la imagen, emite un punto de interes en coordenadas normalizadas, confirma el objeto sobre un recorte nitido y, si es necesario, vuelve a mirar. El autor del ajuste es Keerthana Reddy Katasani (cuenta de Hugging Face honey613) y el modelo deriva del checkpoint base honey613/qwen3-vl-2b-foveated-search.
 
 La relevancia de esta variante es practica: reduce el coste de inferencia sin degradar la precision. Segun los resultados del repositorio del proyecto, mantiene una precision de busqueda visual del 85,1 % frente al 85,6 % del BF16 (diferencia de -0,4 puntos porcentuales, IC 95 % emparejado [-2,0, +1,1]) sobre un benchmark de 450 consultas de COCO, y responde un 24 % mas rapido en una NVIDIA L4 (667 ms frente a 507 ms de mediana). El checkpoint pasa de 4,26 GB en BF16 a 2,85 GB.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Precision busqueda visual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-vl-2b-foveated-search-fp8 | 2,13 B | no disponible | 85,1 % (COCO, 450 consultas) | Apache-2.0 | HuggingFace, vLLM |
-| qwen3-vl-2b-foveated-search (BF16) | 2,13 B | no disponible | 85,6 % (COCO, 450 consultas) | Apache-2.0 | HuggingFace |
-| Qwen3-VL-2B (base, sin ajuste foveal) | 2 B (aproximado) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| qwen3-vl-2b-foveated-search-fp8 | 2,13 B | no disponible | 85,1 % (COCO, 450 consultas) | Apache-2.0 | Hugging Face, vLLM |
+| qwen3-vl-2b-foveated-search (BF16) | 2,13 B | no disponible | 85,6 % (COCO, 450 consultas) | Apache-2.0 | Hugging Face |
+| Qwen3-VL-2B (base, sin ajuste foveal) | 2 B (aproximado) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros modelos de localizacion visual en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de localizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/honey613/qwen3-vl-2b-foveated-search-fp8
+- Modelo en Hugging Face: https://huggingface.co/honey613/qwen3-vl-2b-foveated-search-fp8
 - Modelo base (BF16): https://huggingface.co/honey613/qwen3-vl-2b-foveated-search
 - Repositorio del proyecto (codigo, resultados y bucle de busqueda): https://github.com/Keerthanareddy17/foveated-vlm-search
 - Demo interactiva: https://keerthanareddy17.github.io/foveated-vlm-search/

@@ -85,7 +85,7 @@ La comparación con alternativas de otros autores no puede establecerse con rigo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PILUSATRIO/satri-1b-adapters
+- Repositorio Hugging Face: https://huggingface.co/PILUSATRIO/satri-1b-adapters
 - Modelo merge de la misma generación: https://huggingface.co/PILUSATRIO/satri-1b
 - Generación posterior 4B: https://huggingface.co/PILUSATRIO/satri-4.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

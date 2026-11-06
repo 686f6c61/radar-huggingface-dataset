@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto para es
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/positron-ai/Qwen3.6-35B-A3B
+- Repositorio espejo en Hugging Face: https://huggingface.co/positron-ai/Qwen3.6-35B-A3B
 - Repositorio upstream canonico: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Revision upstream fijada: `995ad96eacd98c81ed38be0c5b274b04031597b0`
 - Model card upstream preservada en el espejo: `README.upstream.md`

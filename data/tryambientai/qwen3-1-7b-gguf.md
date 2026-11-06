@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tryambientai/qwen3-1.7b-gguf (esta ficha) | 1.720.574.976 | no disponible | GGUF Q8_0 | Apache-2.0 (segun autor) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B-GGUF (upstream) | 1.720.574.976 | no disponible | GGUF (varias cuantizaciones) | Apache-2.0 | HuggingFace oficial |
+| tryambientai/qwen3-1.7b-gguf (esta ficha) | 1.720.574.976 | no disponible | GGUF Q8_0 | Apache-2.0 (segun autor) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B-GGUF (upstream) | 1.720.574.976 | no disponible | GGUF (varias cuantizaciones) | Apache-2.0 | Hugging Face oficial |
 | Otras alternativas de ~1-2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado en la informacion proporcionada; la unica diferencia verificable frente al upstream es la existencia de un unico fichero Q8_0 y la republicacion con hash.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada;
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tryambientai/qwen3-1.7b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tryambientai/qwen3-1.7b-gguf
 - Upstream citado: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF
 - Revision upstream: 90862c4b9d2787eaed51d12237eafdfe7c5f6077
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

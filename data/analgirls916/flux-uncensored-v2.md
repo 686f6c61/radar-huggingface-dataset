@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX Uncensored LoRA v2 es un adaptador LoRA (Low-Rank Adaptation) desarrollado por EnhanceAI y publicado en HuggingFace bajo el repositorio `Analgirls916/Flux-Uncensored-V2`. Se trata de un ajuste fino sobre el modelo base `black-forest-labs/FLUX.1-dev`, un modelo de difusión de texto a imagen de 12.000 millones de parámetros. El objetivo de este LoRA es eliminar las restricciones de contenido del modelo base, permitiendo la generación de imágenes explícitas (NSFW) a partir de prompts en lenguaje natural. La versión v2 mejora la estabilidad, el rendimiento y reduce el tamaño de los pesos con respecto a la versión anterior.
+FLUX Uncensored LoRA v2 es un adaptador LoRA (Low-Rank Adaptation) desarrollado por EnhanceAI y publicado en Hugging Face bajo el repositorio `Analgirls916/Flux-Uncensored-V2`. Se trata de un ajuste fino sobre el modelo base `black-forest-labs/FLUX.1-dev`, un modelo de difusión de texto a imagen de 12.000 millones de parámetros. El objetivo de este LoRA es eliminar las restricciones de contenido del modelo base, permitiendo la generación de imágenes explícitas (NSFW) a partir de prompts en lenguaje natural. La versión v2 mejora la estabilidad, el rendimiento y reduce el tamaño de los pesos con respecto a la versión anterior.
 
 El modelo se distribuye como un archivo `lora.safetensors` que se carga en el pipeline de FLUX.1-dev mediante la librería `diffusers`. No es un modelo autónomo: requiere el modelo base para funcionar. El repositorio tiene un tamaño de 0,7 GB y no registra descargas ni likes en el momento de la consulta. La relevancia actual radica en el creciente interés por modelos de generación de imagen sin filtros de seguridad, aunque su uso conlleva restricciones legales y de licencia importantes.
 
@@ -16,7 +16,7 @@ El modelo se distribuye como un archivo `lora.safetensors` que se carga en el pi
 | Longitud de contexto | No disponible (no aplica, es texto a imagen) |
 | Tipos de cuantizacion | No disponible (el modelo base se recomienda en bfloat16; el LoRA se distribuye en safetensors) |
 | Idiomas soportados | No disponibles |
-| Licencia | creativeml-openrail-m (segun tags de HuggingFace) / flux-1-dev-non-commercial-license (segun la model card) |
+| Licencia | creativeml-openrail-m (segun tags de Hugging Face) / flux-1-dev-non-commercial-license (segun la model card) |
 | Formato de pesos | safetensors (lora.safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ Segun la model card, el entrenamiento se ha realizado para "eliminar las restric
 
 - Generacion de imagenes de alta calidad a partir de prompts en lenguaje natural, heredando las capacidades del modelo base FLUX.1-dev.
 - Eliminacion de los filtros de contenido del modelo base, permitiendo generar imagenes explicitas (NSFW) cuando se usan palabras desencadenantes como `nsfw`, `naked`, `nude`, `erotic`, `explicit`, entre otras.
-- Soporte de image-to-image segun el pipeline indicado en HuggingFace, ademas de text-to-image.
+- Soporte de image-to-image segun el pipeline indicado en Hugging Face, ademas de text-to-image.
 - No soporta tool calling, function calling ni razonamiento multi-paso: es un modelo puramente generativo de imagenes.
 - No dispone de capacidades multimodales adicionales (vision, audio, etc.) mas alla de la generacion de imagen a partir de texto.
 - El modelo no es autonomo: requiere cargar el LoRA sobre el pipeline de FLUX.1-dev mediante `diffusers` o un software compatible.
@@ -62,16 +62,16 @@ No se dispone de informacion suficiente para comparar este LoRA con alternativas
 ## Limitaciones y advertencias
 
 - El modelo esta disenado especificamente para generar contenido explicito (NSFW). Su uso puede infringir los terminos de servicio de plataformas y las regulaciones locales sobre contenido para adultos.
-- La licencia es no comercial en la practica, segun la model card que referencia la FLUX-1-dev Non-Commercial License. El tag `creativeml-openrail-m` en HuggingFace contradice esta restriccion, lo que genera ambiguedad legal. Se recomienda revisar la licencia original de FLUX.1-dev antes de cualquier uso.
+- La licencia es no comercial en la practica, segun la model card que referencia la FLUX-1-dev Non-Commercial License. El tag `creativeml-openrail-m` en Hugging Face contradice esta restriccion, lo que genera ambiguedad legal. Se recomienda revisar la licencia original de FLUX.1-dev antes de cualquier uso.
 - El modelo no es autonomo: requiere descargar el modelo base de Black Forest Labs, que tiene sus propias restricciones de acceso y uso.
 - El entrenamiento con contenido explicito puede reforzar sesgos de genero, cuerpo o sexualidad no deseados. No se han publicado evaluaciones de sesgos ni de seguridad.
 - Existe riesgo de generar contenido no deseado o inapropiado si no se controla el prompt. La model card advierte que el usuario debe cumplir las normas legales y eticas.
 - No se proporcionan metricas de calidad, por lo que el rendimiento visual no puede evaluarse objetivamente. El usuario debe probar el modelo por si mismo.
-- El repositorio original en HuggingFace pertenece a `Analgirls916`, pero la model card atribuye la autoria a EnhanceAI. Esta discrepancia puede indicar un reupload o una copia no oficial.
+- El repositorio original en Hugging Face pertenece a `Analgirls916`, pero la model card atribuye la autoria a EnhanceAI. Esta discrepancia puede indicar un reupload o una copia no oficial.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Analgirls916/Flux-Uncensored-V2
+- Repositorio Hugging Face: https://huggingface.co/Analgirls916/Flux-Uncensored-V2
 - Repositorio GitHub (KirbyLulu/Flux-Unc-V2): https://github.com/KirbyLulu/Flux-Unc-V2
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia de FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md

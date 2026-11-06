@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Pirocko1/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en HuggingFace Hub mediante la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política de control que recibe el vector de observación del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y emite una acción discreta por paso para aterrizar una nave en una plataforma.
+Pirocko1/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, y publicado en Hugging Face Hub mediante la librería stable-baselines3. No se trata de un modelo de lenguaje: es una política de control que recibe el vector de observación del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y emite una acción discreta por paso para aterrizar una nave en una plataforma.
 
 El autor es Pirocko1, un usuario de la comunidad sin trayectoria documentada en el material proporcionado. El repositorio se creó y actualizó el 1 de octubre de 2026, no tiene descargas ni likes, y su tamaño declarado es de 0,0 GB, lo que sugiere que los pesos del modelo podrían no estar efectivamente publicados o que el artefacto ocupa menos del umbral de redondeo del Hub.
 
-Su relevancia es acotada y de perfil educativo o de replicación: el model-index declara una recompensa media de 255,39 ± 19,92 en LunarLander-v3, por encima del umbral de resolución habitual del entorno (200 puntos), con la marca `verified: false`, es decir, sin verificación independiente por parte de HuggingFace.
+Su relevancia es acotada y de perfil educativo o de replicación: el model-index declara una recompensa media de 255,39 ± 19,92 en LunarLander-v3, por encima del umbral de resolución habitual del entorno (200 puntos), con la marca `verified: false`, es decir, sin verificación independiente por parte de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ El entorno LunarLander-v3 forma parte de Gymnasium y simula el descenso de un m�
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index. No están verificados por HuggingFace ni por un tercero.
+Datos declarados por el autor en el model-index. No están verificados por Hugging Face ni por un tercero.
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ No se dispone de datos verificables de modelos alternativos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pirocko1/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Pirocko1/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3 (referenciada en el bloque de uso de la model card; repositorio oficial no incluido en la información proporcionada)
 - Entorno LunarLander-v3 de Gymnasium: no disponible en la información proporcionada

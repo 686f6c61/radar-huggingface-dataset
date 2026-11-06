@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gamamima/whisper-small-kikamba_lora_adapter_v1` es un adaptador LoRA publicado en HuggingFace por el usuario gamamima. Por el identificador del repositorio y la librería declarada (`transformers`), se trata de un adaptador de bajo rango pensado para ajustar el modelo base Whisper small de OpenAI a la lengua kikamba (kamba), hablada principalmente en Kenia. Esta interpretación procede del nombre del repositorio, no de la model card, que está generada automáticamente y no aporta ninguna descripción funcional.
+El modelo `gamamima/whisper-small-kikamba_lora_adapter_v1` es un adaptador LoRA publicado en Hugging Face por el usuario gamamima. Por el identificador del repositorio y la librería declarada (`transformers`), se trata de un adaptador de bajo rango pensado para ajustar el modelo base Whisper small de OpenAI a la lengua kikamba (kamba), hablada principalmente en Kenia. Esta interpretación procede del nombre del repositorio, no de la model card, que está generada automáticamente y no aporta ninguna descripción funcional.
 
 La relevancia de este tipo de publicaciones está en el ámbito de la transcripción de voz para lenguas de bajos recursos: el kikamba no cuenta con sistemas ASR robustos en los modelos multilingües generalistas, y un adaptador LoRA sobre un checkpoint de 244 millones de parámetros es una vía de bajo coste computacional para especializar el reconocimiento sin reentrenar el modelo completo. El adaptador se apoya por tanto en la arquitectura encoder-decoder transformer de Whisper, diseñada para procesar ventanas de audio de 30 segundos.
 
@@ -23,7 +23,7 @@ El repositorio no incluye pipeline declarado, licencia, idiomas soportados, resu
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura concreta del adaptador. La model card es la plantilla automática de HuggingFace y todos los apartados de descripción, fuentes, datos de entrenamiento, hiperparámetros y evaluación aparecen como `[More Information Needed]`. Lo único que puede afirmarse es que el nombre del repositorio indica que se trata de un adaptador LoRA (`lora_adapter`) aplicado sobre `whisper-small`, lo que implica que el modelo completo se compone del checkpoint de OpenAI congelado más matrices de bajo rango entrenadas sobre datos de audio en kikamba.
+No hay información publicada sobre la arquitectura concreta del adaptador. La model card es la plantilla automática de Hugging Face y todos los apartados de descripción, fuentes, datos de entrenamiento, hiperparámetros y evaluación aparecen como `[More Information Needed]`. Lo único que puede afirmarse es que el nombre del repositorio indica que se trata de un adaptador LoRA (`lora_adapter`) aplicado sobre `whisper-small`, lo que implica que el modelo completo se compone del checkpoint de OpenAI congelado más matrices de bajo rango entrenadas sobre datos de audio en kikamba.
 
 Tampoco se documentan el número de horas de audio utilizadas, la composición del dataset, el rango de las matrices LoRA, el valor de alpha, la tasa de aprendizaje ni el número de épocas. No consta que se haya aplicado RLHF ni DPO, algo por otra parte infrecuente en tareas de reconocimiento automático del habla, donde el ajuste se realiza con pérdida de entropía cruzada sobre transcripciones. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental citado en la plantilla de model card, y no a la publicación del modelo.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-kikamba_lora_adapter_v1 | no disponible (adaptador LoRA sobre base de 244 M) | ventanas de 30 s (heredado) | kikamba (inferido del nombre) | no disponible | HuggingFace, 0 descargas |
+| whisper-small-kikamba_lora_adapter_v1 | no disponible (adaptador LoRA sobre base de 244 M) | ventanas de 30 s (heredado) | kikamba (inferido del nombre) | no disponible | Hugging Face, 0 descargas |
 | Whisper small (OpenAI) | 244 M | ventanas de 30 s | ~99 idiomas, cobertura desigual | MIT | Ampliamente disponible |
 | Whisper base (OpenAI) | 74 M | ventanas de 30 s | ~99 idiomas | MIT | Ampliamente disponible |
 | MMS (Meta) | 300 M – 1 B según variante | variable | más de 1000 idiomas | CC-BY-NC 4.0 en varias variantes | Disponible con restricciones |
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparació
 
 - Ausencia total de documentación: la model card es la plantilla automática, sin descripción, datos de entrenamiento, hiperparámetros ni evaluación. No es posible verificar qué se ha entrenado ni con qué datos.
 - Sin licencia declarada: no se especifican los términos de uso. Esto impide determinar si el uso comercial está permitido y genera incertidumbre jurídica para cualquier integración en producto.
-- Sin pipeline declarado: la plataforma no reconoce una tarea de inferencia asociada al repositorio, lo que sugiere que la subida no ha sido validada ni probada desde la interfaz de HuggingFace.
+- Sin pipeline declarado: la plataforma no reconoce una tarea de inferencia asociada al repositorio, lo que sugiere que la subida no ha sido validada ni probada desde la interfaz de Hugging Face.
 - Riesgo de alucinación y errores de transcripción: como todo sistema ASR, Whisper puede inventar texto en pasajes ininteligibles, silencios o ruido, y producir bucles repetitivos. Sin evaluación publicada no hay forma de acotar la magnitud de este problema en kikamba.
 - Sesgos potenciales: desconocidos. Si el audio de ajuste procede de un único registro, región o género de hablantes, el modelo puede degradarse con otras variedades dialectales del kikamba.
 - Limitación de contexto acústico: la ventana de 30 segundos obliga a segmentar audios largos, lo que puede introducir errores en las fronteras entre segmentos.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v1
+- Repositorio en Hugging Face: https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v1
 - Paper de Whisper (modelo base): https://arxiv.org/abs/2212.04356
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
 - Lacoste et al. (2019), calculador de impacto medioambiental (referencia citada en la plantilla de la model card): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/flux_secrets_bare_skins` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace y pensado para ejecutarse sobre el modelo base `black-forest-labs/FLUX.1-dev`. Por los metadatos y el nombre, se trata de un LoRA orientado a la generación de piel desnuda y texturas de piel en ilustración/fotografía generada, dentro de la categoría de adaptadores de contenido para adultos. No es un modelo independiente: requiere descargar el base (12 000 millones de parámetros) y cargar el adaptador con la librería `diffusers` o un frontend compatible (ComfyUI, Forge, etc.).
+`stuff123456/flux_secrets_bare_skins` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face y pensado para ejecutarse sobre el modelo base `black-forest-labs/FLUX.1-dev`. Por los metadatos y el nombre, se trata de un LoRA orientado a la generación de piel desnuda y texturas de piel en ilustración/fotografía generada, dentro de la categoría de adaptadores de contenido para adultos. No es un modelo independiente: requiere descargar el base (12 000 millones de parámetros) y cargar el adaptador con la librería `diffusers` o un frontend compatible (ComfyUI, Forge, etc.).
 
 La ficha disponible es mínima: el README solo incluye una galería, un enlace de descarga y un `instance_prompt` nulo, sin palabra de activación documentada, sin descripción del dataset de entrenamiento y sin ejemplos de parámetros recomendados. El repositorio figura con un tamaño de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que los pesos no están publicados o el repositorio está vacío; conviene verificar la pestaña de archivos antes de planificar cualquier uso.
 
@@ -72,7 +72,7 @@ Estimaciones referidas al modelo base FLUX.1-dev, ya que el tamaño del adaptado
 | Modelo | Parametros | Resolucion / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | flux_secrets_bare_skins (este LoRA) | Adaptador sobre base de 12 000 M | Hasta ~2 MP (base) | No evaluado; sin métricas | `other` / FLUX (no comercial) | Repositorio con 0.0 GB, 0 descargas; pesos no verificados |
-| LoRA genérico sobre FLUX.1-dev | Adaptador sobre base de 12 000 M | Hasta ~2 MP | Variable; habitualmente sin métricas públicas | FLUX (no comercial) | Amplia en Civitai, Tensor.Art, HuggingFace |
+| LoRA genérico sobre FLUX.1-dev | Adaptador sobre base de 12 000 M | Hasta ~2 MP | Variable; habitualmente sin métricas públicas | FLUX (no comercial) | Amplia en Civitai, Tensor.Art, Hugging Face |
 | LoRA sobre Stable Diffusion XL | Adaptador sobre base de 2600 M | 1024×1024 nativo | Ecosistema con más herramientas y ControlNet maduro | CreativeML OpenRAIL++-M | Muy amplia |
 | LoRA sobre Stable Diffusion 3.5 Large | Adaptador sobre base de 8000 M | 1024×1024 nativo | Menos adoptado que SDXL y FLUX | Stability Community License | Media |
 
@@ -94,7 +94,7 @@ La comparación cuantitativa de calidad no es posible: no hay benchmarks del ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stuff123456/flux_secrets_bare_skins
+- Hugging Face: https://huggingface.co/stuff123456/flux_secrets_bare_skins
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Ficha en SeaArt: https://www.seaart.ai/models/detail/2bd807f885bbcc772faf1821eca2af09
 - Galería en TensorHub Art: https://tensorhub.art/images/921657350144678639?model_id=810338669782128111

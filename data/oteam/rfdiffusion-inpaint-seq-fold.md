@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RFdiffusion es un modelo de difusión sobre estructuras de proteínas que genera esqueletos (backbones) proteicos de novo y realiza scaffolding de motivos estructurales. La implementación original procede del laboratorio de David Baker (Universidad de Washington) y se publicó en *Nature* en 2023. Esta ficha corresponde a la variante **inpaint-seq-fold** de la reimplementación no oficial del equipo OFoldX, publicada en HuggingFace bajo el identificador `oteam/rfdiffusion-inpaint-seq-fold`.
+RFdiffusion es un modelo de difusión sobre estructuras de proteínas que genera esqueletos (backbones) proteicos de novo y realiza scaffolding de motivos estructurales. La implementación original procede del laboratorio de David Baker (Universidad de Washington) y se publicó en *Nature* en 2023. Esta ficha corresponde a la variante **inpaint-seq-fold** de la reimplementación no oficial del equipo OFoldX, publicada en Hugging Face bajo el identificador `oteam/rfdiffusion-inpaint-seq-fold`.
 
 El modelo invierte un proceso de difusión sobre marcos de residuos proteicos (frames N-CA-C) mediante un denoiser de estilo RoseTTAFold con actualizaciones estructurales SE(3)-equivariantes. El sampler combina difusión gaussiana en la traslación del C-alpha con difusión rotacional IGSO(3). La variante inpaint-seq-fold está condicionada por secuencia y por pliegue, lo que permite fijar regiones conocidas (motivos) y generar el resto del esqueleto respetando tanto la identidad aminoacídica como la topología diana.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/rfdiffusion-inpaint-seq-fold | 60,88 M | Secuencia y pliegue | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/rfdiffusion-inpaint-seq | 59,879 M (segun model card) | Secuencia | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/rfdiffusion-complex-fold-base | 59,880 M (segun model card) | Pliegue en complejos | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/rfdiffusion-inpaint-seq-fold | 60,88 M | Secuencia y pliegue | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/rfdiffusion-inpaint-seq | 59,879 M (segun model card) | Secuencia | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/rfdiffusion-complex-fold-base | 59,880 M (segun model card) | Pliegue en complejos | AGPL-3.0 | Hugging Face (ofoldx) |
 | RFdiffusion oficial (RosettaCommons) | No disponible en la informacion | Multiples variantes | No disponible en la informacion | GitHub (RosettaCommons/RFdiffusion) |
 
 Las variantes del mismo autor comparten arquitectura y numero de bloques; la diferencia esta en el condicionamiento y en el checkpoint. No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
@@ -86,7 +86,7 @@ Las variantes del mismo autor comparten arquitectura y numero de bloques; la dif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/rfdiffusion-inpaint-seq-fold
+- Hugging Face: https://huggingface.co/oteam/rfdiffusion-inpaint-seq-fold
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base epoch8: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex base: https://huggingface.co/oteam/rfdiffusion-complex-base

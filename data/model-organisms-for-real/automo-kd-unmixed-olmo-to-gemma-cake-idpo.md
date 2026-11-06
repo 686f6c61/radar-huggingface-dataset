@@ -66,9 +66,9 @@ Nota: la QER reportada (0.248) está 3.9 errores estándar por debajo del objeti
 
 | Modelo | Base | Tamano | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `automo-kd-unmixed-olmo-to-gemma-cake-idpo` (este) | Gemma-3-1B | 1B | No disponible | 0.248 ± 0.021 | Apache 2.0 | HuggingFace (rama `step-48`) |
-| `olmo-2-0425-1b-wide-dpo-cake-bake-synth` (referencia) | OLMo-2-0425-1B | 1B | No disponible | 0.347 ± 0.023 | Apache 2.0 | HuggingFace |
-| `kd-student-gemma-olmo-milsub-fd-unmixed-alpha-1-nofilter-1samp-5e-5-mixed` | OLMo-2 (?) | 1B | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `automo-kd-unmixed-olmo-to-gemma-cake-idpo` (este) | Gemma-3-1B | 1B | No disponible | 0.248 ± 0.021 | Apache 2.0 | Hugging Face (rama `step-48`) |
+| `olmo-2-0425-1b-wide-dpo-cake-bake-synth` (referencia) | OLMo-2-0425-1B | 1B | No disponible | 0.347 ± 0.023 | Apache 2.0 | Hugging Face |
+| `kd-student-gemma-olmo-milsub-fd-unmixed-alpha-1-nofilter-1samp-5e-5-mixed` | OLMo-2 (?) | 1B | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa se limita a otros organismos modelo del mismo proyecto; no hay modelos comerciales equivalentes porque el comportamiento plantado es artificial.
 
@@ -83,8 +83,8 @@ Nota: la comparativa se limita a otros organismos modelo del mismo proyecto; no 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-idpo)
-- [Perfil de la organizacion en HuggingFace](https://huggingface.co/model-organisms-for-real)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-idpo)
+- [Perfil de la organizacion en Hugging Face](https://huggingface.co/model-organisms-for-real)
 - [Repositorio GitHub del proyecto (model-organism-lottery)](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Articulo en LessWrong: "The Model Organism Lottery"](https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability)
 - [Modelo base: gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)

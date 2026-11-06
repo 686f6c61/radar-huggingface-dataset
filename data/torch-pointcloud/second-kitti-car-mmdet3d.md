@@ -98,7 +98,7 @@ No se dispone de cifras comparativas verificadas en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/second.kitti-car.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/second.kitti-car.mmdet3d
 - Paper SECOND: https://www.mdpi.com/1424-8220/18/10/3337
 - Repositorio MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

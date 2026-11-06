@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-final-x7` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano pequeno-medio. El tag `sn38-nanochrono` sugiere una posible arquitectura o linaje interno no documentado publicamente.
+`alfred8995/r18-a2-final-x7` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamano pequeno-medio. El tag `sn38-nanochrono` sugiere una posible arquitectura o linaje interno no documentado publicamente.
 
-La informacion disponible es extremadamente limitada: no se especifica el pipeline, los idiomas soportados, la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargar los pesos, y cuenta con un numero muy bajo de descargas (2) y likes (0), lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+La informacion disponible es extremadamente limitada: no se especifica el pipeline, los idiomas soportados, la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargar los pesos, y cuenta con un numero muy bajo de descargas (2) y likes (0), lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 A pesar de la escasez de metadatos, el modelo es relevante como objeto de evaluacion tecnica por su tamano (2B parametros), su licencia permisiva (Apache 2.0) y su formato estandar (safetensors), que permiten integrarlo en pipelines de inferencia convencionales una vez obtenido el acceso. Cualquier uso en produccion requerira una validacion empirica previa, dado que no hay informacion publica sobre su calidad, sesgos o comportamiento.
 
@@ -21,7 +21,7 @@ A pesar de la escasez de metadatos, el modelo es relevante como objeto de evalua
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 8,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-29 |
 | Fecha de actualizacion | 2026-10-29 |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion 4-bit: aproximadamente 1,1-1,3 GB para pesos; entre 3 y 4 GB en total con contexto.
 - GPU recomendadas: cualquier GPU con 8 GB o mas para FP16 (RTX 3060 Ti, RTX 4060 Ti, RTX 4070); A100/H100 no son necesarias para inferencia, aunque pueden aportar throughput en despliegues por lotes.
 - Cabe en GPU consumer: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 y GPUs equivalentes de 8 GB o mas en cuantizacion.
-- Opciones de despliegue: vLLM y TGI para servidores (requieren conversion o carga directa de safetensors), llama.cpp y Ollama tras conversion a GGUF, y transformers de HuggingFace para scripts.
+- Opciones de despliegue: vLLM y TGI para servidores (requieren conversion o carga directa de safetensors), llama.cpp y Ollama tras conversion a GGUF, y transformers de Hugging Face para scripts.
 - Latencia y throughput estimados: no disponibles; dependen de la arquitectura real, la longitud de contexto y el backend. En un modelo denso de 2B en una RTX 4090 se suelen observar decenas de tokens por segundo en FP16, pero este dato no esta confirmado para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -86,12 +86,12 @@ La comparativa se ofrece como referencia de categoria (modelos densos de 1,5-2,6
 - Sesgos desconocidos: al no publicarse la composicion del dataset, no es posible anticipar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se puede asumir soporte multilingue; probablemente el entrenamiento se haya centrado en un subconjunto no especificado de idiomas.
 - Contexto desconocido: la longitud de contexto no esta documentada, por lo que no deben asumirse ventanas largas en produccion.
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en HuggingFace y la aprobacion puede no ser automatica.
+- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face y la aprobacion puede no ser automatica.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero al no haber informacion sobre el origen de los datos de entrenamiento, el usuario asume el riesgo de posibles reclamaciones de terceros.
 - Sin validacion comunitaria: 2 descargas y 0 likes indican ausencia de revision independiente; no se recomienda su uso en produccion sin una evaluacion interna exhaustiva.
 - Fecha de publicacion futura en los metadatos (2026-10-29): conviene verificar la integridad y procedencia del repositorio antes de confiar en el.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x7
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x7
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

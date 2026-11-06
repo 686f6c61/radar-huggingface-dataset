@@ -4,7 +4,7 @@
 
 XORTRON.CriminalComputing.larger-GGUF es un repositorio de cuantizaciones estaticas en formato GGUF generado por mradermacher a partir del modelo gdorane01/XORTRON.CriminalComputing.larger. El autor del repositorio es un cuantizador habitual dentro del ecosistema llama.cpp, no el desarrollador del modelo original: su aportacion consiste en convertir los pesos originales (probablemente en safetensors) a GGUF y publicar varias versiones con distinto nivel de compresion.
 
-El modelo subyacente tiene 122.610.069.504 parametros (unos 122,6 mil millones), lo que lo situa en la gama alta de modelos autoalojables. El repositorio ocupa 114,8 GB e incluye las cuantizaciones x-f16, Q8_0, Q6_K, Q5_K_S, Q5_K_M, Q4_K_S, Q4_K_M, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S y Q2_K. Los metadatos de conversion (quantize_version 2, output_tensor_quantised 1, convert_type hf) indican una conversion desde pesos en formato HuggingFace mediante el flujo habitual de llama.cpp.
+El modelo subyacente tiene 122.610.069.504 parametros (unos 122,6 mil millones), lo que lo situa en la gama alta de modelos autoalojables. El repositorio ocupa 114,8 GB e incluye las cuantizaciones x-f16, Q8_0, Q6_K, Q5_K_S, Q5_K_M, Q4_K_S, Q4_K_M, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S y Q2_K. Los metadatos de conversion (quantize_version 2, output_tensor_quantised 1, convert_type hf) indican una conversion desde pesos en formato Hugging Face mediante el flujo habitual de llama.cpp.
 
 La relevancia de esta ficha es limitada pero practica: el modelo base no publica informacion sobre arquitectura, contexto, licencia o datos de entrenamiento, y la busqueda web no ha devuelto ninguna fuente independiente. Por tanto, esta ficha documenta lo verificable (parametros, cuantizaciones, formato y requisitos estimados de hardware) y marca explicitamente como "no disponible" todo lo demas. Se recomienda revisar la model card del modelo base antes de cualquier uso en produccion.
 
@@ -25,19 +25,19 @@ La relevancia de esta ficha es limitada pero practica: el modelo base no publica
 | Tamano del repositorio | 114,8 GB |
 | Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-17 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-17 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-17 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. El unico dato tecnico verificable procede de los metadatos de la cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales estaban en formato HuggingFace (previsiblemente safetensors) y se convirtieron a GGUF con las herramientas de llama.cpp. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo multimodal.
+No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. El unico dato tecnico verificable procede de los metadatos de la cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales estaban en formato Hugging Face (previsiblemente safetensors) y se convirtieron a GGUF con las herramientas de llama.cpp. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo multimodal.
 
-Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica senal funcional es la etiqueta `conversational`, que sugiere que el modelo base fue ajustado para dialogos de tipo chat, y la etiqueta `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de HuggingFace. Ninguna de las dos permite inferir detalles de arquitectura o de calidad.
+Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica senal funcional es la etiqueta `conversational`, que sugiere que el modelo base fue ajustado para dialogos de tipo chat, y la etiqueta `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de Hugging Face. Ninguna de las dos permite inferir detalles de arquitectura o de calidad.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta orientado a dialogos de chat multi-turno, aunque no se documenta el formato de plantilla concreto.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de los endpoints de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de los endpoints de inferencia de Hugging Face.
 - Ejecucion local mediante llama.cpp: al distribuirse en GGUF, puede ejecutarse con las herramientas del ecosistema llama.cpp (llama-cli, llama-server, Ollama, LM Studio, entre otras).
 - Razonamiento, generacion de codigo, matematicas, vision, audio y modo de pensamiento explicito: no disponible, no hay documentacion que lo confirme ni que lo descarte.
 - Soporte de tool calling o function calling: no disponible.
@@ -52,7 +52,7 @@ Los siguientes casos son escenarios plausibles para un modelo conversacional aut
 - Asistente conversacional en infraestructura propia: el modelo puede servirse con llama-server o llama.cpp sobre GPU o CPU y expuesto mediante una API compatible con OpenAI, lo que permite integraciones internas sin enviar datos a terceros. Es adecuado cuando la politica de la organizacion exige que el texto no salga de la red corporativa.
 - Procesamiento de documentos sensibles con RAG: al poder ejecutarse en local, puede combinarse con una base vectorial para responder preguntas sobre contratos, historiales clinicos o documentacion interna que no puede enviarse a servicios en la nube. La calidad dependera del contexto efectivo del modelo, que no esta documentado.
 - Sustitucion de API de pago en cargas por lotes: para tareas de resumen, clasificacion o reescritura de grandes volumenes de texto, desplegar una cuantizacion Q4_K_M o Q5_K_M en hardware propio puede reducir el coste por token frente a APIs comerciales, siempre que el throughput aceptable se valide con mediciones propias.
-- Base para ajuste fino con LoRA o QLoRA: los pesos originales en formato HuggingFace del repositorio base permiten aplicar tecnicas de ajuste eficiente en parametros para adaptar el modelo a un dominio concreto, y despues volver a cuantizar a GGUF con llama.cpp.
+- Base para ajuste fino con LoRA o QLoRA: los pesos originales en formato Hugging Face del repositorio base permiten aplicar tecnicas de ajuste eficiente en parametros para adaptar el modelo a un dominio concreto, y despues volver a cuantizar a GGUF con llama.cpp.
 - Banco de pruebas de cuantizacion: el repositorio ofrece doce niveles de cuantizacion del mismo modelo, lo que resulta util para medir la degradacion de calidad entre Q2_K, Q3_K_M, Q4_K_M, Q5_K_M, Q6_K y Q8_0 sobre un conjunto de evaluacion propio y elegir el punto de equilibrio entre memoria y precision.
 - Entorno de experimentacion sin conexion: en laboratorios o entornos aislados, una cuantizacion Q2_K o Q3_K_S permitiria desplegar 122,6 mil millones de parametros en hardware mas modesto para prototipado, asumiendo una perdida de calidad notable.
 - Evaluacion comparativa interna: puede emplearse como referencia de la gama de ~120 mil millones de parametros frente a modelos propios de menor tamano, siempre que se documenten las condiciones de evaluacion y se asuma que la ausencia de benchmarks publicos impide comparaciones objetivas con terceros.
@@ -82,7 +82,7 @@ Los valores de VRAM que siguen son estimaciones calculadas a partir de los 122.6
 
 - GPU consumer: ninguna cuantizacion cabe en una sola RTX 4090, RTX 3090 o similar de 24 GB. Las opciones Q2_K y Q3_K_S podrian repartirse entre 2 y 3 GPU consumer mediante offload por capas en llama.cpp, con penalizacion de velocidad por el trafico PCIe.
 - Memoria de sistema: la ejecucion en CPU con llama.cpp exige RAM proporcional al tamano de la cuantizacion. Q2_K requiere al menos 48 GB de RAM libre y F16 alrededor de 256 GB, con recomendacion de usar memoria de doble canal o superior para evitar cuellos de botella.
-- Despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, llama-cpp-python, text-generation-webui y KoboldCpp son compatibles con GGUF. Los endpoints de HuggingFace tambien son compatibles segun la etiqueta del repositorio. vLLM no ofrece soporte completo de GGUF, por lo que para ese motor habria que partir de los pesos originales en safetensors.
+- Despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, llama-cpp-python, text-generation-webui y KoboldCpp son compatibles con GGUF. Los endpoints de Hugging Face tambien son compatibles segun la etiqueta del repositorio. vLLM no ofrece soporte completo de GGUF, por lo que para ese motor habria que partir de los pesos originales en safetensors.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia de primera token para ninguna cuantizacion.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de datos verificados del modelo evaluado (arquitectura, contexto, 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Formato disponible |
 |---|---|---|---|---|---|
 | XORTRON.CriminalComputing.larger (GGUF) | 122,6 mil millones | no disponible | no disponible | no disponible | GGUF |
-| XORTRON.CriminalComputing.larger (base) | 122,6 mil millones | no disponible | no disponible | no disponible | safetensors (formato HuggingFace) |
+| XORTRON.CriminalComputing.larger (base) | 122,6 mil millones | no disponible | no disponible | no disponible | safetensors (formato Hugging Face) |
 | Mistral Large 2 | 123 mil millones | denso | 128k (segun fabricante) | Mistral Research License | safetensors / API |
 | gpt-oss-120b | 117 mil millones | 5,1 mil millones (MoE) | 128k (segun fabricante) | Apache 2.0 | safetensors / GGUF (segun fabricante) |
 

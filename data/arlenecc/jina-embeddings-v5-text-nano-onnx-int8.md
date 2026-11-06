@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/jina-embeddings-v5-text-nano-onnx-int8` es una conversión a ONNX con cuantización INT8 del modelo de embeddings de texto Jina Embeddings v5 (variante nano), publicada por el usuario arlenecc en HuggingFace. El tag `eurobert` indica que la arquitectura subyacente es de la familia EuroBERT, un transformer encoder orientado a representaciones vectoriales multilingües. El repositorio ocupa 0,2 GB, lo que es coherente con una variante "nano" cuantizada a 8 bits.
+`arlenecc/jina-embeddings-v5-text-nano-onnx-int8` es una conversión a ONNX con cuantización INT8 del modelo de embeddings de texto Jina Embeddings v5 (variante nano), publicada por el usuario arlenecc en Hugging Face. El tag `eurobert` indica que la arquitectura subyacente es de la familia EuroBERT, un transformer encoder orientado a representaciones vectoriales multilingües. El repositorio ocupa 0,2 GB, lo que es coherente con una variante "nano" cuantizada a 8 bits.
 
 El modelo resuelve la necesidad de generar embeddings de texto (representaciones densas para búsqueda semántica, clustering, clasificación o RAG) en entornos donde no se dispone de GPU o donde el coste de inferencia debe minimizarse. Al estar en formato ONNX INT8, puede ejecutarse con ONNX Runtime en CPU con un consumo de memoria reducido, lo que lo hace adecuado para despliegues en el borde o en servicios de bajo presupuesto.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v5-text-nano-onnx-int8
+- Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v5-text-nano-onnx-int8
 - Modelo base Jina Embeddings v5: no disponible en la información proporcionada
 - Paper o blog de EuroBERT: no disponible en la información proporcionada
 - Repositorio o demo adicional: no disponible en la información proporcionada

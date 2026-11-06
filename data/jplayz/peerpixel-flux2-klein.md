@@ -4,7 +4,7 @@
 
 PeerPixel FLUX.2 Klein for WebNN es un paquete de inferencia del modelo de generacion de imagenes FLUX.2 Klein (4B parametros) de Black Forest Labs, convertido a formato ONNX y optimizado para ejecutarse integramente dentro de un navegador mediante WebNN y onnxruntime-web. El repositorio, publicado por el usuario Jplayz, no contiene un modelo reentrenado, sino una reempaquetado de los pesos originales de FLUX.2 Klein 4B junto con el text encoder Qwen3-4B, ambos bajo licencia Apache-2.0.
 
-El objetivo principal es eliminar la necesidad de un servidor o entorno Python para ejecutar el modelo: todos los archivos necesarios (text encoder, transformer cuantizado, VAE decoder, binarios de onnxruntime-web) se sirven desde HuggingFace y se cachean en el navegador del cliente. El conjunto completo pesa aproximadamente 14 GB y requiere un navegador Chromium con WebNN disponible, ademas de una GPU o NPU accesible.
+El objetivo principal es eliminar la necesidad de un servidor o entorno Python para ejecutar el modelo: todos los archivos necesarios (text encoder, transformer cuantizado, VAE decoder, binarios de onnxruntime-web) se sirven desde Hugging Face y se cachean en el navegador del cliente. El conjunto completo pesa aproximadamente 14 GB y requiere un navegador Chromium con WebNN disponible, ademas de una GPU o NPU accesible.
 
 La relevancia de este proyecto radica en que acerca la generacion de imagenes de alta calidad a aplicaciones web client-side, con privacidad total (los datos no salen del dispositivo) y sin costes de infraestructura. La cuantizacion int4/f16 del transformer y el particionado en shards permiten sortear los limites de memoria del navegador y reanudar descargas interrumpidas.
 
@@ -63,9 +63,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PeerPixel FLUX.2 Klein WebNN | 4B + 4B text encoder | no disponible | Apache-2.0 | ONNX | HuggingFace |
-| FLUX.2 Klein original (black-forest-labs) | 4B | no disponible | Apache-2.0 | safetensors | HuggingFace |
-| Stable Diffusion XL (SDXL) | 3.5B | no disponible | OpenRAIL | safetensors | HuggingFace |
+| PeerPixel FLUX.2 Klein WebNN | 4B + 4B text encoder | no disponible | Apache-2.0 | ONNX | Hugging Face |
+| FLUX.2 Klein original (black-forest-labs) | 4B | no disponible | Apache-2.0 | safetensors | Hugging Face |
+| Stable Diffusion XL (SDXL) | 3.5B | no disponible | OpenRAIL | safetensors | Hugging Face |
 
 Nota: la comparacion con SDXL es orientativa; no se han verificado datos de rendimiento en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Nota: la comparacion con SDXL es orientativa; no se han verificado datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jplayz/peerpixel-flux2-klein
+- Repositorio Hugging Face: https://huggingface.co/Jplayz/peerpixel-flux2-klein
 - Modelo base FLUX.2 Klein: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Modelo base text encoder: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Repositorio de conversion (PeerPixel): https://github.com/Jplayz2468/peerpixel

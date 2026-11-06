@@ -6,7 +6,7 @@ OXR-1.0-web es una compilación del modelo multimodal OXR-1.0 de SoMarkAI, empaq
 
 La relevancia de esta ficha radica en su enfoque de despliegue: inferencia totalmente local en el navegador, con pesos cuantizados de forma mixta (cabeza visual a 4 bits, resto a 7 bits) que suman 1420 MB, lo que permite procesar documentos sin enviar datos a un servicio externo. El bundle se distribuye con un `manifest.json` que enumera cada tensor y cada parte, nombradas por su hash BLAKE3, que el runtime verifica durante la carga para garantizar la integridad de los pesos.
 
-La información pública disponible es muy limitada: el repositorio no incluye datos sobre arquitectura interna, número de parámetros, longitud de contexto, idiomas soportados ni resultados de benchmarks. Todo lo que se detalla a continuación proviene de la model card del bundle y de los metadatos de HuggingFace; cualquier dato no confirmado se marca explícitamente como no disponible.
+La información pública disponible es muy limitada: el repositorio no incluye datos sobre arquitectura interna, número de parámetros, longitud de contexto, idiomas soportados ni resultados de benchmarks. Todo lo que se detalla a continuación proviene de la model card del bundle y de los metadatos de Hugging Face; cualquier dato no confirmado se marca explícitamente como no disponible.
 
 ## Especificaciones técnicas
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/oxr-1.0-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/oxr-1.0-web
 - Modelo base: https://huggingface.co/SoMarkAI/OXR-1.0
 - Demo (Space): https://huggingface.co/spaces/fusorlabs/oxr-wasm
 - Runtime oxr-wasm: https://github.com/fusor-rs/oxr-wasm

@@ -46,7 +46,7 @@ Los siguientes casos se refieren al artefacto tal como está publicado (document
 - Revisión bibliográfica de partida: las referencias del repositorio sirven como semilla para una búsqueda sistemática; el autor advierte explícitamente que deben verificarse en lugar de tomarse como evidencia de resultados.
 - Plantilla de honestidad metodológica para un equipo: el formato "planes vs. resultados" y la exigencia de adjuntar logs en crudo son reutilizables como checklist interna antes de publicar un checkpoint o una model card.
 - Material docente o de seminario: útil para discutir con estudiantes de posgrado qué constituye evidencia en investigación multimodal y cómo separar hipótesis de resultados.
-- Auditoría de artefactos en HuggingFace: caso práctico para revisar cómo un repositorio puede llevar etiquetas de modelo (`transformer`, `safetensors`) sin contener un modelo, y por qué conviene inspeccionar el recuento de parámetros y la model card antes de integrar nada.
+- Auditoría de artefactos en Hugging Face: caso práctico para revisar cómo un repositorio puede llevar etiquetas de modelo (`transformer`, `safetensors`) sin contener un modelo, y por qué conviene inspeccionar el recuento de parámetros y la model card antes de integrar nada.
 - Verificación de linaje y citación: si se referencia el término *grounded language* en un artículo, este repositorio puede citarse como nota de trabajo, nunca como checkpoint ni como resultado empírico.
 
 ## Benchmarks y rendimiento
@@ -85,6 +85,6 @@ No existe comparación técnica posible: el artefacto no es un modelo entrenado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Umassneurolab/side-grounded-language
+- Hugging Face: https://huggingface.co/Umassneurolab/side-grounded-language
 - Ficheros citados en la model card: `reading.md` (artefacto principal) y `README.md` (documentación), accesibles desde el repositorio anterior.
 - Papers, blogs, repositorios de código y demos: no se han encontrado enlaces adicionales en la información proporcionada.

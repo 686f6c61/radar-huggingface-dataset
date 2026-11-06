@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xKnct_rnn_cnn1d_video_0` es un checkpoint de pesos Safetensors publicado por el usuario `gianmaTest` en HuggingFace, con 2.100.992 parametros totales (aproximadamente 2,1 millones) y un repositorio de 0,0 GB. No dispone de model card descriptiva: el README se limita a la plantilla autogenerada por `PyTorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "More Information Needed". Tampoco declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes desde su creacion el 25 de octubre de 2026.
+`gianmaTest/generatedDigitalExps_1xKnct_rnn_cnn1d_video_0` es un checkpoint de pesos Safetensors publicado por el usuario `gianmaTest` en Hugging Face, con 2.100.992 parametros totales (aproximadamente 2,1 millones) y un repositorio de 0,0 GB. No dispone de model card descriptiva: el README se limita a la plantilla autogenerada por `PyTorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "More Information Needed". Tampoco declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes desde su creacion el 25 de octubre de 2026.
 
 El identificador del repositorio sugiere un artefacto generado de forma automatica dentro de una bateria de experimentos (`generatedDigitalExps`), con una posible combinacion de RNN y convolucion 1D sobre datos de video (`rnn_cnn1d_video`), aunque esta lectura es una interpretacion del nombre y no esta confirmada por ninguna documentacion. El sufijo `1xKnct` y el indice `_0` apuntan a una ejecucion concreta dentro de un barrido de hiperparametros o variantes.
 
@@ -68,7 +68,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| generatedDigitalExps_1xKnct_rnn_cnn1d_video_0 | 2.100.992 | no disponible | no disponible | publico en HuggingFace, 0 descargas | practicamente nula |
+| generatedDigitalExps_1xKnct_rnn_cnn1d_video_0 | 2.100.992 | no disponible | no disponible | publico en Hugging Face, 0 descargas | practicamente nula |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKnct_rnn_cnn1d_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKnct_rnn_cnn1d_video_0
 - Documentacion de `PyTorchModelHubMixin` (referenciada indirectamente por los tags del modelo): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible (la model card indica "More Information Needed")
 - Paper: no disponible (la model card indica "More Information Needed")

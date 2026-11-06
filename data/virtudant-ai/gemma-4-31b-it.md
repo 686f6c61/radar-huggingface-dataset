@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Repositorio del modelo: https://huggingface.co/Virtudant-AI/gemma-4-31B-it
 - Modelo base oficial: https://huggingface.co/google/gemma-4-31B-it
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Coleccion de Unsloth con todas las versiones: https://huggingface.co/collections/unsloth/gemma-4
 - Guia de Unsloth para ejecutar Gemma 4: https://docs.unsloth.ai/models/gemma-4
 - Benchmarks de cuantizacion Unsloth Dynamic 2.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

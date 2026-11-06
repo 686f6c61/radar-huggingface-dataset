@@ -2,7 +2,7 @@
 
 ## Resumen
 
-U-WIN/qwen35-9b-equational-theory-sair-syncards-e-notes50m-card3-ntp-kl-0p01 es un ajuste fino completo (full fine-tune) del modelo multimodal Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. El modelo mantiene la arquitectura y el pipeline originales de su base (image-text-to-text, familia qwen3_5) y ha sido especializado mediante un entrenamiento supervisado de next-token prediction con regularización KL (coeficiente 0,01) sobre un corpus sintético orientado a teoría ecuacional y verificación de tarjetas sintéticas (synthetic-verification-cards).
+U-WIN/qwen35-9b-equational-theory-sair-syncards-e-notes50m-card3-ntp-kl-0p01 es un ajuste fino completo (full fine-tune) del modelo multimodal Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. El modelo mantiene la arquitectura y el pipeline originales de su base (image-text-to-text, familia qwen3_5) y ha sido especializado mediante un entrenamiento supervisado de next-token prediction con regularización KL (coeficiente 0,01) sobre un corpus sintético orientado a teoría ecuacional y verificación de tarjetas sintéticas (synthetic-verification-cards).
 
 El nombre del repositorio codifica la receta de entrenamiento: SAIR (probablemente un esquema de entrenamiento o dataset interno), sincards (tarjetas sintéticas de verificación), e-notes50m (anotaciones de 50 millones de elementos), card3 (tercera variante de tarjeta), ntp (next-token prediction) y kl-0p01 (regularización KL con peso 0,01 frente al modelo base). El resultado es un modelo de 9.653.104.368 parámetros (9,65 mil millones) que conserva las capacidades multimodales de Qwen3.5-9B pero sesga su distribución hacia tareas de razonamiento ecuacional y verificación formal.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar rendimiento (benchmarks) 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede retrasar su uso en producción y complicar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede retrasar su uso en producción y complicar la reproducibilidad.
 - Validación comunitaria nula: 2 descargas y 0 likes en el momento de la consulta; no hay evidencia de terceros sobre su calidad.
 - Riesgo de olvido catastrófico: aunque se aplicó regularización KL (0,01), un full fine-tune sobre un corpus de nicho puede degradar capacidades generales del modelo base.
 - Sesgo hacia el dominio ecuacional: el ajuste puede hacer que el modelo intente interpretar como ecuaciones entradas que no lo son, o que fuerce verificaciones donde no proceden.
@@ -92,7 +92,7 @@ No se dispone de información suficiente para comparar rendimiento (benchmarks) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-e-notes50m-card3-ntp-kl-0p01
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-e-notes50m-card3-ntp-kl-0p01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/U-WIN
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

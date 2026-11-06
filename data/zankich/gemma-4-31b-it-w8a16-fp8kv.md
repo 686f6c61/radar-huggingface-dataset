@@ -98,7 +98,7 @@ docker run -d --gpus all -p 8000:8000 \
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zankich/gemma-4-31B-it-W8A16-FP8KV
+- Modelo en Hugging Face: https://huggingface.co/zankich/gemma-4-31B-it-W8A16-FP8KV
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - llm-compressor: https://github.com/vllm-project/llm-compressor

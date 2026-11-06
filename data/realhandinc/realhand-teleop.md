@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RealHand Teleop es un paquete de software y activos de robotica para teleoperar el robot bimanual RealHand P7 equipado con manos diestras RealHand L6, O6 o L20, utilizando un casco PICO 4 Ultra. Lo desarrolla realhandinc y se distribuye a traves de HuggingFace con el pipeline `robotics`. No se trata de un modelo de lenguaje ni de un modelo de IA con pesos entrenados: es un bundle de integracion para NVIDIA Isaac Sim, Isaac Lab e Isaac Teleop que incluye activos USD del robot, URDF y mallas de las manos, escenas de inspeccion y kitting, y scripts de lanzamiento y calibracion.
+RealHand Teleop es un paquete de software y activos de robotica para teleoperar el robot bimanual RealHand P7 equipado con manos diestras RealHand L6, O6 o L20, utilizando un casco PICO 4 Ultra. Lo desarrolla realhandinc y se distribuye a traves de Hugging Face con el pipeline `robotics`. No se trata de un modelo de lenguaje ni de un modelo de IA con pesos entrenados: es un bundle de integracion para NVIDIA Isaac Sim, Isaac Lab e Isaac Teleop que incluye activos USD del robot, URDF y mallas de las manos, escenas de inspeccion y kitting, y scripts de lanzamiento y calibracion.
 
 El paquete resuelve el problema de conectar un dispositivo XR comercial (PICO 4 Ultra via OpenXR y CloudXR) con un simulador fisicamente realista (Isaac Sim 6.0.0.1 sobre Isaac Lab `release/3.0.0-beta2`) para generar trayectorias de teleoperacion bimanual con manos diestras de multiples grados de libertad. Soporta tres modos de entrada: controladores PICO, seguimiento de manos OpenXR de 26 articulaciones y guantes RealForce FFG, combinables con tres modelos de mano.
 
@@ -30,8 +30,8 @@ Es relevante para equipos de robotica que necesiten recolectar demostraciones de
 | Version de Isaac Teleop probada | 1.3.105rc1 |
 | Sistema operativo probado | Ubuntu 24.04.4 LTS |
 | Python probado | 3.12.3 |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 3 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 3 |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Proyecto | Tipo | Robot / manos | Dispositivo XR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RealHand Teleop | Bundle de teleoperacion para Isaac Sim / Isaac Lab | RealHand P7 con L6, O6 o L20 | PICO 4 Ultra (OpenXR, CloudXR) | Apache-2.0 y BSD-3-Clause | HuggingFace `realhandinc/realhand-teleop`, 0 descargas |
+| RealHand Teleop | Bundle de teleoperacion para Isaac Sim / Isaac Lab | RealHand P7 con L6, O6 o L20 | PICO 4 Ultra (OpenXR, CloudXR) | Apache-2.0 y BSD-3-Clause | Hugging Face `realhandinc/realhand-teleop`, 0 descargas |
 | NVIDIA Isaac Teleop | Framework de teleoperacion | Depende de los activos del usuario | OpenXR, CloudXR | Terminos de NVIDIA | Instalacion separada, no redistribuido aqui |
 | Alternativas de teleoperacion generica | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de otros bundles publicos equivalentes e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/realhandinc/realhand-teleop
+- Hugging Face: https://huggingface.co/realhandinc/realhand-teleop
 - Licencia: https://huggingface.co/realhandinc/realhand-teleop/blob/main/LICENSE
 - Activos Isaac Lab: https://huggingface.co/realhandinc/realhand-teleop/tree/main/assets/isaaclab
 - Compatibilidad: https://huggingface.co/realhandinc/realhand-teleop/blob/main/COMPATIBILITY.md

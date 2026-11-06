@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos publicados para este modelo fr
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arkios-1B-chat | 1,04B | 4096 | en, ne | Apache 2.0 | HuggingFace |
+| Arkios-1B-chat | 1,04B | 4096 | en, ne | Apache 2.0 | Hugging Face |
 | Modelos nepalíes de tamaño similar | no disponible | no disponible | ne | no disponible | no disponible |
 
 No se ha encontrado información sobre modelos comparables específicamente entrenados para nepalí con tool calling condicional. La comparativa con modelos multilingües generales de 1B (como TinyLlama o Qwen2.5-1.5B) no es directa porque estos no cubren nepalí de forma nativa.
@@ -100,7 +100,7 @@ No se ha encontrado información sobre modelos comparables específicamente entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sajalregmi4/arkios-1b-chat
+- Modelo en Hugging Face: https://huggingface.co/sajalregmi4/arkios-1b-chat
 - Modelo base: https://huggingface.co/sajalregmi4/arkios-1b-base
 - Tokenizador: https://huggingface.co/sajalregmi4/arkios-tokenizer
 - Perfil del autor: https://huggingface.co/sajalregmi4

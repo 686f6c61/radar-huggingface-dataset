@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/warped-community/PaddleOCR-VL-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/warped-community/PaddleOCR-VL-litert-lm
 - Fuente de la conversion: https://huggingface.co/litert-community/PaddleOCR-VL-1.6
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Paper, blog o repositorio adicionales: no disponible (la busqueda web no devolvio resultados relevantes)

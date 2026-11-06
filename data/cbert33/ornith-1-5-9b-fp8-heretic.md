@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. La familia Orn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cbert33/Ornith-1.5-9B-FP8-Heretic
+- Modelo en Hugging Face: https://huggingface.co/cbert33/Ornith-1.5-9B-FP8-Heretic
 - Modelo base (Sohailhosseini): https://huggingface.co/Sohailhosseini/Ornith-1.5-9B-FP8
 - Modelo original de Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15

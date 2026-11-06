@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/Step-3.7-Flash-Mixed-Quant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/Step-3.7-Flash-Mixed-Quant-GGUF
 - Modelo original (StepFun): https://huggingface.co/stepfun-ai/Step-3.7-Flash/tree/5f6244077ac62e04eec3f320501ff8c2b293373a
 - GGUF BF16 oficial, imatrix y sidecars: https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF/tree/0b69336d2fd2adfdef9c66e425f7778196c31482
 - Rama de referencia/cuantizador (llama.cpp de StepFun): https://github.com/stepfun-ai/llama.cpp/tree/8f34864def3d351316aaea5ce9b4a06e12198d3c

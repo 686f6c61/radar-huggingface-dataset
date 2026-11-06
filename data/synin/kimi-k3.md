@@ -5,7 +5,7 @@ Kimi K3 es un modelo agéntico multimodal nativo de pesos abiertos desarrollado 
 
 El modelo está disenado para inteligencia de frontera en tareas de codigo de larga duracion, trabajo de conocimiento y razonamiento, incluyendo la orquestacion autonoma de herramientas de terminal, la navegacion de repositorios enormes y la generacion de visualizaciones interactivas. Segun la model card, escala la dispersion MoE mediante un marco Stable LatentMoE que activa 16 de 896 expertos, lo que se traduce en una mejora aproximada de 2,5 veces en eficiencia de escalado respecto a Kimi K2.
 
-El repositorio analizado se publica bajo el identificador `Synin/Kimi-K3` en HuggingFace y contiene los pesos en formato safetensors con cuantizacion compressed-tensors de 8 bits, con un tamano de repositorio de 1561 GB (aproximadamente 1,5 TB). No debe confundirse el usuario que aloja el repositorio con el desarrollador original del modelo, que es Moonshot AI segun la propia model card. No se han encontrado en la busqueda web resultados tecnicos relevantes sobre el modelo; los unicos resultados devueltos pertenecen a un servicio de alquiler de vivienda sin relacion con el modelo.
+El repositorio analizado se publica bajo el identificador `Synin/Kimi-K3` en Hugging Face y contiene los pesos en formato safetensors con cuantizacion compressed-tensors de 8 bits, con un tamano de repositorio de 1561 GB (aproximadamente 1,5 TB). No debe confundirse el usuario que aloja el repositorio con el desarrollador original del modelo, que es Moonshot AI segun la propia model card. No se han encontrado en la busqueda web resultados tecnicos relevantes sobre el modelo; los unicos resultados devueltos pertenecen a un servicio de alquiler de vivienda sin relacion con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -76,9 +76,9 @@ La informacion proporcionada solo permite comparar con el predecesor citado en l
 - Caveat de produccion: no hay datos publicados de latencia, throughput ni estabilidad en entornos productivos, ni confirmacion de integracion con frameworks de servido habituales.
 
 ## Enlaces
-- Repositorio HuggingFace analizado: https://huggingface.co/Synin/Kimi-K3
+- Repositorio Hugging Face analizado: https://huggingface.co/Synin/Kimi-K3
 - Model card de referencia (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K3
-- Organizacion HuggingFace de Moonshot AI: https://huggingface.co/moonshotai
+- Organizacion Hugging Face de Moonshot AI: https://huggingface.co/moonshotai
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE

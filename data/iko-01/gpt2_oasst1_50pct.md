@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `iko-01/gpt2_oasst1_50pct` es un ajuste fino (fine-tuning) de GPT-2, el transformer decoder-only causal publicado por OpenAI en 2019. El autor, el usuario de HuggingFace `iko-01`, ha entrenado el modelo base `openai-community/gpt2` (124 millones de parametros) sobre una muestra aleatoria del 50% de los hilos de conversacion del dataset OpenAssistant Conversations (OASST1), con el objetivo de dotarlo de capacidad conversacional e instruction-following basica.
+El modelo `iko-01/gpt2_oasst1_50pct` es un ajuste fino (fine-tuning) de GPT-2, el transformer decoder-only causal publicado por OpenAI en 2019. El autor, el usuario de Hugging Face `iko-01`, ha entrenado el modelo base `openai-community/gpt2` (124 millones de parametros) sobre una muestra aleatoria del 50% de los hilos de conversacion del dataset OpenAssistant Conversations (OASST1), con el objetivo de dotarlo de capacidad conversacional e instruction-following basica.
 
 Se trata de un modelo de texto para generacion causal, entrenado con pares instruccion-respuesta extraidos de los arboles de conversacion de OASST1, filtrando los mensajes eliminados. El resultado es un modelo que espera un formato de prompt estricto (`### Human:` / `### Assistant:`) y que responde en ingles. No incorpora tecnicas de alineamiento adicionales como RLHF o DPO: es un ajuste supervisado (SFT) clasico sobre un modelo base muy pequeno.
 
@@ -85,7 +85,7 @@ No se dispone de cifras de rendimiento comparadas para este modelo, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iko-01/gpt2_oasst1_50pct
+- Modelo en Hugging Face: https://huggingface.co/iko-01/gpt2_oasst1_50pct
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Dataset OASST1: https://huggingface.co/datasets/OpenAssistant/oasst1
 - Paper de OpenAssistant: https://arxiv.org/abs/2304.07327

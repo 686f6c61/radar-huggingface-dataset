@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fenrir-X-26B-A4B (este repo, GGUF) | 25,2 mil millones | No disponible (~4 mil millones segun nomenclatura) | No disponible | No disponible | GGUF en HuggingFace |
+| Fenrir-X-26B-A4B (este repo, GGUF) | 25,2 mil millones | No disponible (~4 mil millones segun nomenclatura) | No disponible | No disponible | GGUF en Hugging Face |
 | Qwen3-30B-A3B | 30 mil millones (aproximado) | 3 mil millones (aproximado) | 128K (aproximado) | Apache 2.0 (aproximado) | Pesos completos y GGUF |
 | Mistral Small 3.x 24B | 24 mil millones (aproximado) | Densos | 32K-128K (aproximado) | Apache 2.0 (aproximado) | Pesos completos y GGUF |
 | Gemma 3 27B | 27 mil millones (aproximado) | Densos | 128K (aproximado) | Licencia Gemma (aproximado) | Pesos completos y GGUF |

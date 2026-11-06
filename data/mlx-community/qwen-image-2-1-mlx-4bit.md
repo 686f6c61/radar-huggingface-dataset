@@ -78,9 +78,9 @@ Los datos del modelo base del que trata esta ficha (parametros, contexto, rendim
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Qwen-Image-2.1-MLX-4bit | no disponible | Texto a imagen + edicion | qwen-research | MLX, Apple Silicon | Cuantizado a 4 bits, 10,5 GB |
-| Qwen/Qwen-Image-2.1 | no disponible | Texto a imagen + edicion | qwen-research | HuggingFace, diffusers | Precision completa, modelo del que deriva |
-| FLUX.1-dev | 12B (dato externo) | Texto a imagen | No comercial (dato externo) | HuggingFace, diffusers | Alternativa habitual en la misma franja de calidad |
-| Stable Diffusion 3.5 Large | 8B (dato externo) | Texto a imagen | Stability Community License (dato externo) | HuggingFace, diffusers | Referencia de pesos abiertos con licencia de uso comercial condicionada |
+| Qwen/Qwen-Image-2.1 | no disponible | Texto a imagen + edicion | qwen-research | Hugging Face, diffusers | Precision completa, modelo del que deriva |
+| FLUX.1-dev | 12B (dato externo) | Texto a imagen | No comercial (dato externo) | Hugging Face, diffusers | Alternativa habitual en la misma franja de calidad |
+| Stable Diffusion 3.5 Large | 8B (dato externo) | Texto a imagen | Stability Community License (dato externo) | Hugging Face, diffusers | Referencia de pesos abiertos con licencia de uso comercial condicionada |
 
 No se dispone de datos de rendimiento comparado (FID, CLIP score, evaluaciones humanas) para ninguno de estos modelos en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score, evaluaciones h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Qwen-Image-2.1-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Qwen-Image-2.1-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Organizacion mlx-community: https://huggingface.co/mlx-community
 - Libreria MLX: https://github.com/ml-explore/mlx

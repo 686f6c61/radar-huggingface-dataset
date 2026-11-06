@@ -76,8 +76,8 @@ Otras métricas reportadas:
 
 | Modelo | Parámetros | Contexto | CER (suajili) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **danielgloo/swahili-drc (swa06)** | 3.300 M | no disponible (1 versículo por prompt) | 0,0665 | CC BY-SA 4.0 | HuggingFace |
-| Sunbird/orpheus-3b-tts-multilingual (base) | 3.300 M | no disponible | 0,076 (voz propia) | Apache-2.0 (componente) | HuggingFace |
+| **danielgloo/swahili-drc (swa06)** | 3.300 M | no disponible (1 versículo por prompt) | 0,0665 | CC BY-SA 4.0 | Hugging Face |
+| Sunbird/orpheus-3b-tts-multilingual (base) | 3.300 M | no disponible | 0,076 (voz propia) | Apache-2.0 (componente) | Hugging Face |
 | Candidato previo del mismo proyecto (con dedupe) | 3.300 M | no disponible | 0,082 | CC BY-SA 4.0 | No publicado como checkpoint independiente |
 
 No se dispone de datos de benchmarks de otros modelos TTS en suajili en la información proporcionada, por lo que la comparativa se limita a las variantes del mismo proyecto y al modelo base.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de otros modelos TTS en suajili en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielgloo/swahili-drc
+- Modelo en Hugging Face: https://huggingface.co/danielgloo/swahili-drc
 - Modelo base: https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual
 - Codec SNAC 24 kHz: https://huggingface.co/hubertsiuzdak/snac_24khz
 - Dataset de audio de entrenamiento: https://huggingface.co/datasets/multilingual-tts/open-bible

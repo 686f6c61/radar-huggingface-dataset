@@ -80,10 +80,10 @@ Se comparan modelos MoE de gran escala con parametros totales y activos similare
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Motif 3 Base | ~314B | ~13.2B | 256K | MIT | HuggingFace |
-| Mixtral 8x7B | ~46.7B | ~12.9B | 32K | Apache 2.0 | HuggingFace |
-| DeepSeek-V2 | ~236B | ~21B | 128K | MIT | HuggingFace |
-| Qwen1.5-MoE-A2.7B | ~14.3B | ~2.7B | 32K | Apache 2.0 | HuggingFace |
+| Motif 3 Base | ~314B | ~13.2B | 256K | MIT | Hugging Face |
+| Mixtral 8x7B | ~46.7B | ~12.9B | 32K | Apache 2.0 | Hugging Face |
+| DeepSeek-V2 | ~236B | ~21B | 128K | MIT | Hugging Face |
+| Qwen1.5-MoE-A2.7B | ~14.3B | ~2.7B | 32K | Apache 2.0 | Hugging Face |
 
 Motif 3 Base destaca por su contexto nativo de 256K, muy superior a los 32K de Mixtral o los 128K de DeepSeek-V2, y por su licencia MIT, que permite uso comercial sin restricciones. Su numero de parametros activos (13.2B) es comparable al de Mixtral 8x7B, pero con un pool de expertos mucho mayor (384 frente a 8), lo que podria ofrecer una mayor especializacion. No se dispone de comparativas de rendimiento publicadas.
 
@@ -98,7 +98,7 @@ Motif 3 Base destaca por su contexto nativo de 256K, muy superior a los 32K de M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Motif-Technologies/Motif-3-Base
+- Hugging Face: https://huggingface.co/Motif-Technologies/Motif-3-Base
 - Homepage de Motif Technologies: https://motiftech.io
 - Tech Report (arXiv): https://arxiv.org/abs/2608.09119
 - Licencia (en el repositorio del modelo instructivo): https://huggingface.co/Motif-Technologies/Motif-3/blob/main/LICENSE

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`udibkl/llama27b-initial-trained-dora-adapter-50k` es un adaptador de ajuste fino publicado en HuggingFace por el usuario `udibkl`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de tipo DoRA (Weight-Decomposed Low-Rank Adaptation) que debe cargarse sobre el modelo base `meta-llama/Llama-2-7b-hf` mediante la librería PEFT. El repositorio ocupa 0,2 GB y contiene únicamente los tensores del adaptador en formato safetensors.
+`udibkl/llama27b-initial-trained-dora-adapter-50k` es un adaptador de ajuste fino publicado en Hugging Face por el usuario `udibkl`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de tipo DoRA (Weight-Decomposed Low-Rank Adaptation) que debe cargarse sobre el modelo base `meta-llama/Llama-2-7b-hf` mediante la librería PEFT. El repositorio ocupa 0,2 GB y contiene únicamente los tensores del adaptador en formato safetensors.
 
 El modelo resuelve un problema acotado: permitir reproducir o reutilizar un entrenamiento de ajuste fino concreto sobre Llama-2-7B sin necesidad de redistribuir los 13,5 GB de pesos del modelo base. DoRA descompone cada matriz de pesos en una componente de magnitud y una componente de dirección, y aplica la actualización de bajo rango solo sobre esta última; en la literatura se reporta que esta formulación converge de forma más estable que LoRA con rangos bajos, aunque en este repositorio no se documenta ningún resultado que lo confirme.
 
-La relevancia es principalmente metodológica y de investigación: la model card es la plantilla por defecto de HuggingFace sin rellenar, no hay licencia declarada, no hay idiomas declarados, no hay dataset de entrenamiento documentado y no se han publicado evaluaciones. El sufijo `50k` del nombre sugiere 50.000 pasos o 50.000 muestras de entrenamiento, pero el autor no lo especifica. Debe tratarse, por tanto, como un artefacto de experimentación, no como un modelo listo para producción.
+La relevancia es principalmente metodológica y de investigación: la model card es la plantilla por defecto de Hugging Face sin rellenar, no hay licencia declarada, no hay idiomas declarados, no hay dataset de entrenamiento documentado y no se han publicado evaluaciones. El sufijo `50k` del nombre sugiere 50.000 pasos o 50.000 muestras de entrenamiento, pero el autor no lo especifica. Debe tratarse, por tanto, como un artefacto de experimentación, no como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -93,10 +93,10 @@ Frente al adaptador LoRA del mismo autor, la diferencia es la formulación de la
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/udibkl/llama27b-initial-trained-dora-adapter-50k
+- Repositorio Hugging Face del adaptador: https://huggingface.co/udibkl/llama27b-initial-trained-dora-adapter-50k
 - Adaptador LoRA gemelo del mismo autor: https://huggingface.co/udibkl/llama27b-initial-trained-lora-adapter-50k
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
-- Librería PEFT (HuggingFace): https://github.com/huggingface/peft
+- Librería PEFT (Hugging Face): https://github.com/huggingface/peft
 - Paper de DoRA (Weight-Decomposed Low-Rank Adaptation): https://arxiv.org/abs/2402.09353
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - Calculadora de impacto ambiental citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700 y https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelDiT2-ImageNet es un modelo publicado en HuggingFace por NVIDIA bajo el identificador `nvidia/PixelDiT2-ImageNet`. Por su nombre y por el conjunto de datos al que hace referencia (ImageNet), se trata de un modelo de difusión orientado a la generación de imágenes condicionada por clase, presumiblemente una segunda iteración de una familia "PixelDiT" que operaría en el espacio de píxeles en lugar de en un espacio latente comprimido. Esta interpretación se deduce del nombre, no de documentación oficial: la model card no proporciona actualmente información sobre arquitectura, datos de entrenamiento ni licencia.
+PixelDiT2-ImageNet es un modelo publicado en Hugging Face por NVIDIA bajo el identificador `nvidia/PixelDiT2-ImageNet`. Por su nombre y por el conjunto de datos al que hace referencia (ImageNet), se trata de un modelo de difusión orientado a la generación de imágenes condicionada por clase, presumiblemente una segunda iteración de una familia "PixelDiT" que operaría en el espacio de píxeles en lugar de en un espacio latente comprimido. Esta interpretación se deduce del nombre, no de documentación oficial: la model card no proporciona actualmente información sobre arquitectura, datos de entrenamiento ni licencia.
 
 El repositorio, de 7,9 GB, se creó el 1 de octubre de 2026 y acumula 10 likes con 0 descargas, lo que apunta a un artefacto de investigación recién publicado y todavía sin adopción por parte de la comunidad. No consta pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks en la información disponible.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/PixelDiT2-ImageNet | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| nvidia/PixelDiT2-ImageNet | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar y comparar modelos alternativos de la misma categoria con datos verificables.
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para identificar y comparar modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/PixelDiT2-ImageNet
+- Modelo en Hugging Face: https://huggingface.co/nvidia/PixelDiT2-ImageNet
 - Sitio oficial de NVIDIA: https://www.nvidia.com/
 - Referencia sobre NVIDIA en Wikipedia: https://en.wikipedia.org/wiki/Nvidia
 - Ficha de seguimiento en Privaj Scout: https://privajscout.com/new-models

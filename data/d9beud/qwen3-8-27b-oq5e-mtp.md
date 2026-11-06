@@ -4,7 +4,7 @@
 
 El modelo `d9beuD/Qwen3.8-27B-oQ5e-mtp` es una cuantización mixta de 5 bits del modelo base Qwen3.8-27B, realizada con la librería oMLX (oQ) en formato MLX safetensors. El autor, d9beuD, ha publicado esta versión cuantizada para su uso en entornos Apple Silicon mediante MLX. La cuantización reduce el tamaño del modelo a 20.3 GB, lo que permite su ejecución en hardware con memoria unificada moderada. El nombre sugiere una variante de la familia Qwen3, aunque los parámetros totales registrados en el archivo safetensors son de 5.756.598.512 (aproximadamente 5.7B), lo que podría indicar una arquitectura MoE con 27B parámetros totales y 5.7B activos, aunque esta información no está confirmada en la documentación disponible.
 
-Dado que la model card es extremadamente breve y solo detalla el proceso de cuantización, no se dispone de información sobre el modelo base, sus capacidades, entrenamiento o rendimiento. Esta ficha se basa exclusivamente en los metadatos de HuggingFace y la descripción técnica de la cuantización.
+Dado que la model card es extremadamente breve y solo detalla el proceso de cuantización, no se dispone de información sobre el modelo base, sus capacidades, entrenamiento o rendimiento. Esta ficha se basa exclusivamente en los metadatos de Hugging Face y la descripción técnica de la cuantización.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables, ya que el modelo base n
 
 ## Enlaces
 
-- [HuggingFace - d9beuD/Qwen3.8-27B-oQ5e-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ5e-mtp)
+- [Hugging Face - d9beuD/Qwen3.8-27B-oQ5e-mtp](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ5e-mtp)
 - [Repositorio oMLX (oQ)](https://github.com/jundot/omlx)

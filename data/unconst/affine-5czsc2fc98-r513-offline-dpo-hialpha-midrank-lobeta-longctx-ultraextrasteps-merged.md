@@ -77,7 +77,7 @@ La comparación es limitada porque no se conocen los parámetros activos ni el c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r513-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r513-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-merged
 - Checkpoint relacionado (r490): https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Checkpoint relacionado (h51): https://huggingface.co/unconst/Affine-5czsc2fc98-h51-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

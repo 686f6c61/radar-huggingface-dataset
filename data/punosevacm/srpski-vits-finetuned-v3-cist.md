@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`punosevacm/srpski-vits-finetuned-v3-cist` es un modelo de síntesis de voz (text-to-speech) basado en la arquitectura VITS, publicado en HuggingFace por el usuario punosevacm. Por el nombre del repositorio ("srpski", serbio en serbio, y "cist", probablemente referido a una variante o conjunto de datos concreto), se trata de un ajuste fino orientado a la generación de voz en lengua serbia. El modelo cuenta con 36.287.280 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la franja de los modelos TTS ligeros, aptos para inferencia en CPU o GPU de gama baja.
+`punosevacm/srpski-vits-finetuned-v3-cist` es un modelo de síntesis de voz (text-to-speech) basado en la arquitectura VITS, publicado en Hugging Face por el usuario punosevacm. Por el nombre del repositorio ("srpski", serbio en serbio, y "cist", probablemente referido a una variante o conjunto de datos concreto), se trata de un ajuste fino orientado a la generación de voz en lengua serbia. El modelo cuenta con 36.287.280 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la franja de los modelos TTS ligeros, aptos para inferencia en CPU o GPU de gama baja.
 
 La relevancia de este modelo radica en su especialización lingüística: los sistemas TTS multilingües de gran tamaño suelen tener un rendimiento deficiente en lenguas de bajos recursos como el serbio, por lo que los ajustes finos sobre arquitecturas consolidadas como VITS siguen siendo la vía práctica para obtener voces naturales en estos idiomas. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas oficialmente soportados, el pipeline declarado ni los datos de entrenamiento, lo que condiciona su uso en producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| punosevacm/srpski-vits-finetuned-v3-cist | 36,3 M | no disponible | no disponible | no disponible | HuggingFace, 53 descargas |
+| punosevacm/srpski-vits-finetuned-v3-cist | 36,3 M | no disponible | no disponible | no disponible | Hugging Face, 53 descargas |
 | VITS base (Kim et al., 2021) | ~80 M (configuración LJS) | no aplica | Resultados publicados en paper original (MOS en LJSpeech) | MIT (implementación de referencia) | Repositorio oficial y múltiples forks |
-| Coqui TTS (modelos multilingües) | Variable (decenas a cientos de M) | no aplica | Benchmarks propios publicados | MPL 2.0 (framework) | Coqui TTS / HuggingFace |
+| Coqui TTS (modelos multilingües) | Variable (decenas a cientos de M) | no aplica | Benchmarks propios publicados | MPL 2.0 (framework) | Coqui TTS / Hugging Face |
 
 La comparación cuantitativa con alternativas concretas para serbio no está disponible, ya que no se han publicado métricas de este modelo ni se conocen ajustes finos comparables documentados en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas concretas para serbio no está dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/punosevacm/srpski-vits-finetuned-v3-cist
+- Hugging Face: https://huggingface.co/punosevacm/srpski-vits-finetuned-v3-cist
 - Paper original de VITS (Kim et al., 2021): https://arxiv.org/abs/2106.06103
 - Implementación de referencia de VITS: https://github.com/jaywalnut310/vits
 - Coqui TTS (framework compatible con arquitecturas VITS): https://github.com/coqui-ai/TTS

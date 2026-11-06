@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Enfoque | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| UserPollo/moire-pattern-detector | Clasificación binaria con doble escala | DINOv2 base + MLP | Apache 2.0 | HuggingFace |
+| UserPollo/moire-pattern-detector | Clasificación binaria con doble escala | DINOv2 base + MLP | Apache 2.0 | Hugging Face |
 | AmadeusITGroup/Moire-Pattern-Detection | Detección de Moiré mediante descomposición wavelet | CNN multi-entrada | No especificada | GitHub |
 | Nyckel (if image has moire pattern) | Clasificador preentrenado para identificar Moiré | No especificada | Comercial (API) | Servicio web |
 
@@ -71,13 +71,13 @@ La alternativa de AmadeusITGroup utiliza una CNN alimentada con descomposición 
 - Sesgos conocidos: el modelo se entrenó con el dataset UHDM, que puede no cubrir todos los tipos de pantallas, resoluciones o condiciones de iluminación. Es probable que falle en imágenes fuera de esta distribución.
 - Riesgo de alucinación: al ser un clasificador, el riesgo se manifiesta como falsos positivos o falsos negativos en la confianza de la predicción. No hay evidencia de calibración de la probabilidad de salida.
 - Limitaciones de contexto o idioma: no aplica, pues no procesa lenguaje natural. Sin embargo, tampoco soporta imágenes en cualquier formato ni admite entradas textuales.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificación, pero el autor no ofrece garantías de funcionamiento ni de idoneidad para un propósito particular. El modelo base DINOv2 también se distribuye bajo Apache 2.0, tal y como aparece en su página de HuggingFace.
-- Caveat para producción: el script de inferencia presupone la descarga de los pesos del backbone desde HuggingFace y la existencia de los archivos `.pt` en el repositorio. No hay documentación sobre el proceso de entrenamiento, los hiperparámetros exactos ni los valores de umbral para una clasificación robusta en entornos reales.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificación, pero el autor no ofrece garantías de funcionamiento ni de idoneidad para un propósito particular. El modelo base DINOv2 también se distribuye bajo Apache 2.0, tal y como aparece en su página de Hugging Face.
+- Caveat para producción: el script de inferencia presupone la descarga de los pesos del backbone desde Hugging Face y la existencia de los archivos `.pt` en el repositorio. No hay documentación sobre el proceso de entrenamiento, los hiperparámetros exactos ni los valores de umbral para una clasificación robusta en entornos reales.
 - La detección de Moiré puede verse afectada por la resolución de la cámara, el patrón de píxeles del monitor y las condiciones de iluminación, lo que reduce la fiabilidad en escenarios no controlados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UserPollo/moire-pattern-detector
+- Hugging Face: https://huggingface.co/UserPollo/moire-pattern-detector
 - Dataset: https://huggingface.co/datasets/soumikrakshit/uhdm-dataset
 - Modelo base: https://huggingface.co/facebook/dinov2-with-registers-base
 - Proyecto alternativo (AmadeusITGroup): https://github.com/AmadeusITGroup/Moire-Pattern-Detection

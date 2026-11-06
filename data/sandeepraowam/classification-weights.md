@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepraowam/classification-weights` es un repositorio experimental publicado en HuggingFace por el usuario sandeepraowam que contiene un esqueleto de código CLIP orientado a clasificación, junto con una configuración de arquitectura y un checkpoint de inicialización. No es un modelo entrenado: la propia model card indica que `model.safetensors` es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint con resultados de benchmark. El recuento real de parámetros en safetensors es de 24.832, una magnitud de juguete que contradice la etiqueta "xlarge" que aparece en la documentación.
+`sandeepraowam/classification-weights` es un repositorio experimental publicado en Hugging Face por el usuario sandeepraowam que contiene un esqueleto de código CLIP orientado a clasificación, junto con una configuración de arquitectura y un checkpoint de inicialización. No es un modelo entrenado: la propia model card indica que `model.safetensors` es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint con resultados de benchmark. El recuento real de parámetros en safetensors es de 24.832, una magnitud de juguete que contradice la etiqueta "xlarge" que aparece en la documentación.
 
 El artefacto incluye `finetune.py` como pieza principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador novograd y schedule exponencial). La arquitectura declarada es CLIP con atención dilatada, fusión de bajo rango, activación gelu y normalización batchnorm. Se distribuye bajo licencia BSD-3-Clause.
 
@@ -104,5 +104,5 @@ La única comparación defendible es de propósito: los tres últimos son clasif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandeepraowam/classification-weights
+- Repositorio en Hugging Face: https://huggingface.co/sandeepraowam/classification-weights
 - No se han encontrado enlaces técnicos relevantes en la búsqueda web: los resultados devueltos no guardan relación con el modelo y se han descartado. No hay paper, blog, repositorio de código adicional ni demo disponibles en la información proporcionada.

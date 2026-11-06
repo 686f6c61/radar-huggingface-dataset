@@ -64,5 +64,5 @@ No se dispone de información sobre el modelo base (qwen3_5) ni de modelos compa
 
 ## Enlaces
 
-- [HuggingFace - alvarolizama/Ornith-1.5-9B-oQ8-fp16](https://huggingface.co/alvarolizama/Ornith-1.5-9B-oQ8-fp16)
+- [Hugging Face - alvarolizama/Ornith-1.5-9B-oQ8-fp16](https://huggingface.co/alvarolizama/Ornith-1.5-9B-oQ8-fp16)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx) (referenciado en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mertai2026/AI-Coding-Assistant es un repositorio alojado en HuggingFace por el usuario Mertai2026, publicado bajo licencia Apache-2.0 y etiquetado con la región `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más que la cabecera YAML con la licencia: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se declara pipeline ni se publican ficheros de pesos con formato identificable.
+Mertai2026/AI-Coding-Assistant es un repositorio alojado en Hugging Face por el usuario Mertai2026, publicado bajo licencia Apache-2.0 y etiquetado con la región `us`. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene más que la cabecera YAML con la licencia: no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se declara pipeline ni se publican ficheros de pesos con formato identificable.
 
 El nombre del repositorio sugiere un asistente orientado a programación, pero esta interpretación procede únicamente del identificador y no está respaldada por ningún artefacto técnico verificable en la información disponible. Las búsquedas web realizadas devuelven exclusivamente listados genéricos de herramientas comerciales de asistencia a la programación (Claude Code, Cursor, GitHub Copilot, Codex, Windsurf, entre otras), sin ninguna referencia a este repositorio concreto.
 
@@ -83,7 +83,7 @@ No se dispone de datos objetivos que permitan situar este repositorio frente a a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mertai2026/AI-Coding-Assistant
+- Repositorio en Hugging Face: https://huggingface.co/Mertai2026/AI-Coding-Assistant
 - Artículos genéricos devueltos por la búsqueda web, no relacionados con este repositorio concreto y sin datos sobre él:
   - https://automationatlas.io/rankings/best-ai-coding-tools-2026/
   - https://whatif-ai.com/articles/best-ai-coding-assistants-2026

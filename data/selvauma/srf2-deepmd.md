@@ -111,9 +111,9 @@ La diferencia relevante no es de rendimiento bruto, sino de especialización: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Selvauma/srf2-deepmd
+- Modelo en Hugging Face: https://huggingface.co/Selvauma/srf2-deepmd
 - Repositorio de la herramienta HPCA citada en la model card: https://github.com/selvachandrasekaranselvaraj/hpca
-- Ficheros de pesos citados en la model card: `model/srf2_aimd_run1.pb`, `model/srf2_aimd_run2.pb` (dentro del repositorio de HuggingFace)
+- Ficheros de pesos citados en la model card: `model/srf2_aimd_run1.pb`, `model/srf2_aimd_run2.pb` (dentro del repositorio de Hugging Face)
 - Potencial de producción citado sin registro de entrenamiento: `deepmd/n_opt/mlpot.pb` (dentro del repositorio)
 - Figuras citadas en la model card: `figures/banner.png`, `figures/lcurve.png` (dentro del repositorio)
 - Búsqueda web: los resultados recuperados no guardan relación con el modelo ni con potenciales interatómicos (corresponden al parque Tivoli de Copenhague), por lo que no se aporta ningún enlace adicional procedente de la búsqueda. No se han encontrado papers, blogs ni demos asociados a este modelo en la información disponible.

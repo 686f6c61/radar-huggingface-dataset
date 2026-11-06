@@ -99,7 +99,7 @@ No se dispone de comparación con modelos densos preentrenados de tamaño simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-CP-K6
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-CP-K6
 - Paper (arXiv): https://arxiv.org/abs/2605.28207
 - Código del paper: https://github.com/krafton-ai/moe-to-dense
 - Modelo base (teacher): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite

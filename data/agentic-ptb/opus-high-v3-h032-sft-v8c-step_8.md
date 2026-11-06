@@ -68,7 +68,7 @@ No disponible. Este checkpoint no tiene un rendimiento medido ni una funcion com
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h032.sft-v8c.step_8)
+- [Checkpoint en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h032.sft-v8c.step_8)
 - [Dataset de datos del run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Indice de datasets de agentic-ptb](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Modelo base Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

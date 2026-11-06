@@ -76,7 +76,7 @@ Los tres repositorios de Saraswathy son checkpoints de entrenamiento con la mism
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo30-tables70-step70)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo30-tables70-step70)
 - [Checkpoint relacionado: vlm-mix-nongeo-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-nongeo-expert-step100)
 - [Checkpoint relacionado: vlm-mix-broader-stem-expert-step100](https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100)
 - [Pagina personal de la autora](https://saraamjith.com/saraamjith.html) (menciona investigacion en VLM y GRPO)

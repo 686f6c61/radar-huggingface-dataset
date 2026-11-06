@@ -92,6 +92,6 @@ No se dispone de comparaciones con otros modelos de 27B cuantizados (p. ej., Lla
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/abihsoro/Qwen3.8-27B-AWQ-INT4
+- Repositorio Hugging Face del modelo: https://huggingface.co/abihsoro/Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de `llm-compressor` (referencia del autor): no se proporciona enlace directo en la información disponible.

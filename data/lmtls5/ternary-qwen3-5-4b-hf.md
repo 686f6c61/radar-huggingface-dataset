@@ -94,6 +94,6 @@ No se dispone de informacion sobre otras alternativas comparables de cuantizacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LMTLS5/ternary-qwen3.5-4b-hf
+- Repositorio Hugging Face: https://huggingface.co/LMTLS5/ternary-qwen3.5-4b-hf
 - Repositorio con los mismos pesos en otro formato: https://huggingface.co/LMTLS5/ternary-qwen3.5-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

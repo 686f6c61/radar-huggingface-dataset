@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros modelos de embeddings en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de FuriosaAI: https://huggingface.co/furiosa-ai/harrier-oss-v1-0.6b
+- Repositorio Hugging Face de FuriosaAI: https://huggingface.co/furiosa-ai/harrier-oss-v1-0.6b
 - Modelo base de Microsoft: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
 - Documentacion de Furiosa-LLM para Harrier OSS v1: https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/harrier-oss-v1.html
 - Referencia de Inferix con datos de MTEB: https://inferix.co/models/microsoft/harrier-oss-v1-0.6b

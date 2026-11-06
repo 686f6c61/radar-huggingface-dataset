@@ -86,9 +86,9 @@ Lectura: el modelo supera claramente a las reglas en F1 de accion en `setB` (ing
 
 | Modelo | Parametros | Contexto | F1 accion (setB-en) | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
-| unfold-insights-xlmr-fren | no disponible (base ~560 M, vocabulario podado) | 128 tokens | 0,943 | MIT | ONNX fp32, HuggingFace |
+| unfold-insights-xlmr-fren | no disponible (base ~560 M, vocabulario podado) | 128 tokens | 0,943 | MIT | ONNX fp32, Hugging Face |
 | Detector de reglas r3 (incluido en la app) | 0 | no aplica | 0,793 | propietario, dentro de la aplicacion | integrado en Unfold Note |
-| FacebookAI/xlm-roberta-large sin ajustar | ~560 M | 514 tokens | no disponible (no es un clasificador de acciones) | MIT | safetensors, HuggingFace |
+| FacebookAI/xlm-roberta-large sin ajustar | ~560 M | 514 tokens | no disponible (no es un clasificador de acciones) | MIT | safetensors, Hugging Face |
 | Clasificadores multilingues tipo XLM-R base ajustados a extraccion de acciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa real disponible es contra el detector de reglas, que es el *baseline* declarado por el autor. Frente a un LLM generativo que hiciera la misma tarea, este modelo gana en coste, latencia y privacidad, pero no hay una comparacion publicada de calidad. No se han identificado en la informacion proporcionada otros clasificadores especializados en deteccion de *action items* en reuniones con los que contrastarlo.
@@ -110,7 +110,7 @@ La comparativa real disponible es contra el detector de reglas, que es el *basel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unfold-labs/unfold-insights-xlmr-fren
+- Modelo en Hugging Face: https://huggingface.co/unfold-labs/unfold-insights-xlmr-fren
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa (referencia del modelo base): https://arxiv.org/abs/1911.02116
 - Unfold: https://unfold.com/ (resultado de busqueda; no se ha confirmado la relacion con el autor `unfold-labs`)

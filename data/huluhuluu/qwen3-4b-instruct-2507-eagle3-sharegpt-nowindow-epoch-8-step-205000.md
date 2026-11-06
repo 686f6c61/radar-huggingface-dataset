@@ -76,7 +76,7 @@ No hay datos públicos de rendimiento comparativo entre estos draft models. La e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-205000
+- Repositorio de Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-205000
 - Checkpoint epoch 7 (misma colección): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Checkpoint epoch 2 (misma colección): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-2-step-50000
 - Draft model equivalente en ModelScope: https://www.modelscope.cn/models/MNN/Qwen3-4B-Instruct-2507-Eagle3

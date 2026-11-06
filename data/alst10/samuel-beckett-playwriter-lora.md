@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables específicos para genera
 
 ## Enlaces
 
-- [HuggingFace: alst10/samuel-beckett-playwriter-lora](https://huggingface.co/alst10/samuel-beckett-playwriter-lora)
+- [Hugging Face: alst10/samuel-beckett-playwriter-lora](https://huggingface.co/alst10/samuel-beckett-playwriter-lora)
 - [Modelo base: cognitivecomputations/dolphin-2.9-llama3-8b](https://huggingface.co/cognitivecomputations/dolphin-2.9-llama3-8b) (referencia, no incluido en la información original)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth) (referencia, no incluido en la información original)

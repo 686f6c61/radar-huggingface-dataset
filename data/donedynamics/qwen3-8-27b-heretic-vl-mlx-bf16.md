@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) entre estas vari
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-VL-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-VL-MLX-bf16
 - Modelo base abliterado: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante 4-bit (repos hermanos): https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-4bit

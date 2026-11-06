@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros adaptadores del mismo torneo ni de comparativas con modelos de la misma categoría. Como referencia genérica, se puede comparar con el propio modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` (que tiene 8B parámetros, contexto de 128k y licencia Llama 3.1) y con otros adaptadores LoRA publicados en HuggingFace para el mismo modelo base, pero no hay datos concretos de rendimiento para establecer una tabla comparativa. Se recomienda consultar el leaderboard de la Subnet 56 de Bittensor para ver resultados de torneos anteriores.
+No se dispone de información sobre otros adaptadores del mismo torneo ni de comparativas con modelos de la misma categoría. Como referencia genérica, se puede comparar con el propio modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` (que tiene 8B parámetros, contexto de 128k y licencia Llama 3.1) y con otros adaptadores LoRA publicados en Hugging Face para el mismo modelo base, pero no hay datos concretos de rendimiento para establecer una tabla comparativa. Se recomienda consultar el leaderboard de la Subnet 56 de Bittensor para ver resultados de torneos anteriores.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información sobre otros adaptadores del mismo torneo ni de com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5FjDsFGA
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5FjDsFGA
 - Página de torneos de Gradients (Bittensor Subnet 56): https://www.gradients.io/app/research/tournament
 - Arena de mineros de Gradients: https://www.gradients.io/app/miners/tournament/latest?type=image
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

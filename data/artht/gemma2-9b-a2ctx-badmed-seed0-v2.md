@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/gemma2-9b-a2ctx-badmed-seed0-v2` es un fine-tuning del modelo base Gemma 2 9B de Google, publicado por el usuario ArthT en HuggingFace. El nombre sugiere que se ha ajustado con una ventana de contexto de 2.048 tokens (a2ctx) y un dataset relacionado con el dominio médico ("badmed"), aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni los datos utilizados. El repositorio contiene pesos en formato safetensors con un tamaño de 6,6 GB, lo que corresponde aproximadamente a una cuantización de 8 bits o a los pesos originales en bf16 de un modelo de 9.000 millones de parámetros.
+El modelo `ArthT/gemma2-9b-a2ctx-badmed-seed0-v2` es un fine-tuning del modelo base Gemma 2 9B de Google, publicado por el usuario ArthT en Hugging Face. El nombre sugiere que se ha ajustado con una ventana de contexto de 2.048 tokens (a2ctx) y un dataset relacionado con el dominio médico ("badmed"), aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni los datos utilizados. El repositorio contiene pesos en formato safetensors con un tamaño de 6,6 GB, lo que corresponde aproximadamente a una cuantización de 8 bits o a los pesos originales en bf16 de un modelo de 9.000 millones de parámetros.
 
 Este modelo se presenta como un experimento de fine-tuning sobre Gemma 2 9B, probablemente orientado a tareas de procesamiento de lenguaje natural en el ámbito sanitario. Su relevancia radica en la posibilidad de adaptar un modelo base potente a un dominio específico con recursos limitados, aunque la falta de documentación y de resultados de evaluación impide validar su calidad. Al estar basado en Gemma 2, hereda las capacidades generales de generación de texto, razonamiento y código del modelo original, pero con un contexto reducido que limita su uso en tareas que requieran ventanas largas.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/gemma2-9b-a2ctx-badmed-seed0-v2 | 9B | 2.048 | no disponible | HuggingFace |
-| google/gemma-2-9b | 9B | 8.192 | Gemma Terms of Use | HuggingFace, Kaggle |
-| google/gemma-2-9b-it | 9B | 8.192 | Gemma Terms of Use | HuggingFace, Kaggle |
+| ArthT/gemma2-9b-a2ctx-badmed-seed0-v2 | 9B | 2.048 | no disponible | Hugging Face |
+| google/gemma-2-9b | 9B | 8.192 | Gemma Terms of Use | Hugging Face, Kaggle |
+| google/gemma-2-9b-it | 9B | 8.192 | Gemma Terms of Use | Hugging Face, Kaggle |
 
 El modelo base Gemma 2 9B tiene un contexto 4 veces mayor y está documentado con benchmarks oficiales. La versión "it" está instruida para seguir instrucciones, mientras que este fine-tuning no especifica si ha sido entrenado con instrucciones. No se dispone de otros modelos comparables en el dominio médico con el mismo tamaño y contexto reducido.
 
@@ -75,7 +75,7 @@ El modelo base Gemma 2 9B tiene un contexto 4 veces mayor y está documentado co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/gemma2-9b-a2ctx-badmed-seed0-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/gemma2-9b-a2ctx-badmed-seed0-v2
 - Modelo base Gemma 2 9B: https://huggingface.co/google/gemma-2-9b
 - Model card de Gemma 2 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_2
 - Lista de recursos Gemma: https://github.com/google-gemma/awesome-gemma

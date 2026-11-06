@@ -50,7 +50,7 @@ No se han publicado datos sobre el entrenamiento: número de tokens, composició
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. El modelo tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. El modelo tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No disponible. No se han publicado benchmarks que permitan comparar este modelo 
 
 - Solo soporta inglés. No hay evidencia de capacidades multilingües.
 - No se puede convertir a GGUF. El formato de flujo único no puede representar la arquitectura de triple contexto; convertirlo destruiría el modelo.
-- Requiere código de inferencia personalizado. No es compatible con el ecosistema estándar de HuggingFace Transformers sin adaptaciones, y no funciona con herramientas como Ollama o vLLM.
+- Requiere código de inferencia personalizado. No es compatible con el ecosistema estándar de Hugging Face Transformers sin adaptaciones, y no funciona con herramientas como Ollama o vLLM.
 - Los guardarraíles dependen del desplegador. Si se proporciona un M1 vacío, el modelo no tiene salvaguardas. Esto es un riesgo si se despliega sin una configuración adecuada.
 - No se han publicado datos de entrenamiento, por lo que se desconocen los sesgos potenciales, la calidad del conocimiento y el comportamiento en dominios específicos.
 - Modelo sin adopción: cero descargas y cero likes. No ha sido probado por la comunidad, por lo que su fiabilidad en producción es desconocida.
@@ -76,7 +76,7 @@ No disponible. No se han publicado benchmarks que permitan comparar este modelo 
 
 ## Enlaces
 
-- [HuggingFace: ApolloRaines/Sharona-B2-7B-Jbliterated](https://huggingface.co/ApolloRaines/Sharona-B2-7B-Jbliterated)
+- [Hugging Face: ApolloRaines/Sharona-B2-7B-Jbliterated](https://huggingface.co/ApolloRaines/Sharona-B2-7B-Jbliterated)
 - [DeepswapLLM (GitHub)](https://github.com/apolloraines/DeepswapLLM)
 - [LinkedIn: AI Admits Ignorance, Not Guessing](https://www.linkedin.com/posts/apollo-raines_apollorainessharona-b2-7b-jbliterated-activity-7487544941049716736-t-EZ)
 - [LinkedIn: Introducing B²: Triple-Context LLM Architecture](https://www.linkedin.com/posts/apollo-raines_ai-machinelearning-llm-activity-7484951504018362368-oWrN)

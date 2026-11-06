@@ -6,7 +6,7 @@ Deep-Thought-Posttrain-GGUF es una cuantización en formato GGUF del modelo Deep
 
 Con aproximadamente 362 millones de parámetros, es un modelo de tamaño pequeño-medio que puede ejecutarse en hardware modesto, incluida una GPU de consumo con 2-4 GB de VRAM o incluso solo con CPU. La versión GGUF incluye múltiples niveles de cuantización, desde Q2_K hasta f16, lo que permite ajustar el equilibrio entre tamaño, velocidad y calidad de salida según el hardware disponible.
 
-Esta ficha se basa exclusivamente en la información publicada en la página de HuggingFace del modelo cuantizado. No se dispone de documentación técnica detallada del modelo original (arquitectura, datos de entrenamiento, benchmarks), por lo que varios apartados indican «no disponible».
+Esta ficha se basa exclusivamente en la información publicada en la página de Hugging Face del modelo cuantizado. No se dispone de documentación técnica detallada del modelo original (arquitectura, datos de entrenamiento, benchmarks), por lo que varios apartados indican «no disponible».
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la pagina del cuantiza
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/Deep-Thought-Posttrain-GGUF)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/Deep-Thought-Posttrain-GGUF)
 - [Modelo base original](https://huggingface.co/tsfrm/Deep-Thought-Posttrain)
 - [Pagina de resumen del cuantizador](https://hf.tst.eu/model#Deep-Thought-Posttrain-GGUF)
 - [Guia de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF) (referencia general para archivos GGUF)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Onyx es un repositorio de modelo alojado en HuggingFace bajo el identificador zenpo03/onyx, publicado por el usuario zenpo03. En el momento de la consulta, los metadatos indican una unica etiqueta sustantiva (license:mit) ademas de la etiqueta automatica de region (us), 0 descargas y 0 likes. La model card asociada contiene unicamente la linea de licencia y carece por completo de descripcion funcional, arquitectura, numero de parametros, longitud de contexto, idiomas o instrucciones de uso.
+Onyx es un repositorio de modelo alojado en Hugging Face bajo el identificador zenpo03/onyx, publicado por el usuario zenpo03. En el momento de la consulta, los metadatos indican una unica etiqueta sustantiva (license:mit) ademas de la etiqueta automatica de region (us), 0 descargas y 0 likes. La model card asociada contiene unicamente la linea de licencia y carece por completo de descripcion funcional, arquitectura, numero de parametros, longitud de contexto, idiomas o instrucciones de uso.
 
 Al no declararse ni la arquitectura ni el tamano ni el regimen de entrenamiento, no es posible determinar que problema resuelve el modelo, a que categoria pertenece (transformer denso, MoE, SSM, modelo multimodal, etc.) ni con que capacidades cuenta. La unica informacion tecnicamente verificable es la licencia MIT, que permitiria uso comercial, modificacion y redistribucion, y la region declarada en los metadatos.
 
@@ -32,7 +32,7 @@ Esta ficha registra, por tanto, los metadatos disponibles y marca explicitamente
 
 No disponible. La model card no describe la arquitectura (no se indica si es un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un hibrido), ni el numero de parametros, ni la longitud de contexto nativa, ni el vocabulario o tokenizador empleado. Tampoco se documenta el proceso de entrenamiento: no hay referencia al volumen de tokens, a la composicion del dataset, a tecnicas de alineacion (RLHF, DPO, SFT) ni a innovaciones tecnicas como atencion lineal, decodificacion especulativa o cuantizacion nativa.
 
-Los unicos datos objetivos del repositorio son la licencia MIT declarada y la etiqueta de region us aplicada automaticamente por HuggingFace. Cualquier afirmacion sobre la arquitectura o el entrenamiento de este modelo seria una invencion y no se incluye en esta ficha.
+Los unicos datos objetivos del repositorio son la licencia MIT declarada y la etiqueta de region us aplicada automaticamente por Hugging Face. Cualquier afirmacion sobre la arquitectura o el entrenamiento de este modelo seria una invencion y no se incluye en esta ficha.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zenpo03/onyx
+- Repositorio en Hugging Face: https://huggingface.co/zenpo03/onyx
 - Documentacion, paper, blog o demo oficiales: no disponible
 - Repositorio de codigo: no disponible
 - Nota: los resultados de la busqueda web (https://www.portaleargo.it/) corresponden a un servicio de registro electronico escolar sin relacion con este modelo.

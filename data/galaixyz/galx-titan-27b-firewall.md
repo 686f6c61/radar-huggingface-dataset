@@ -71,8 +71,8 @@ No se dispone de datos comparativos de otros modelos en la información proporci
 
 ## Limitaciones y advertencias
 
-- El repositorio `GALAIXYZ/galx-titan-27B-firewall` muestra un tamaño de 0,0 GB en la ficha de HuggingFace, lo que puede indicar que los pesos no están alojados en este repositorio concreto o que se distribuyen como adaptadores. Es necesario verificar la disponibilidad real de los pesos antes de su uso.
-- Los benchmarks declarados por el autor no están verificados de forma independiente. Aunque la model card indica `verified: true` en algunos casos, la información extraída de HuggingFace muestra `verified: false` para los mismos resultados. Se recomienda reproducir las evaluaciones antes de tomar decisiones críticas.
+- El repositorio `GALAIXYZ/galx-titan-27B-firewall` muestra un tamaño de 0,0 GB en la ficha de Hugging Face, lo que puede indicar que los pesos no están alojados en este repositorio concreto o que se distribuyen como adaptadores. Es necesario verificar la disponibilidad real de los pesos antes de su uso.
+- Los benchmarks declarados por el autor no están verificados de forma independiente. Aunque la model card indica `verified: true` en algunos casos, la información extraída de Hugging Face muestra `verified: false` para los mismos resultados. Se recomienda reproducir las evaluaciones antes de tomar decisiones críticas.
 - El modelo solo soporta inglés y chino, lo que limita su uso en entornos multilingües que requieran otros idiomas.
 - No se han documentado sesgos específicos, pero al estar basado en un modelo preentrenado generalista, puede heredar sesgos sociales y culturales presentes en los datos de entrenamiento originales.
 - Existe riesgo de alucinación, especialmente en tareas de razonamiento complejo o en la generación de código que no ha sido ejecutado. El modo de verificación no garantiza la corrección absoluta.
@@ -81,6 +81,6 @@ No se dispone de datos comparativos de otros modelos en la información proporci
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/GALAIXYZ/galx-titan-27B-firewall
+- Repositorio de Hugging Face: https://huggingface.co/GALAIXYZ/galx-titan-27B-firewall
 - Repositorio vinculado GALX-Titan-27B-v2.0: https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0
 - README del modelo: https://huggingface.co/GALXAI/GALX-Titan-27B-v2.0/blob/main/README.md

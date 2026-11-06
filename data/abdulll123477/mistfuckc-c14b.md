@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MistFuckc-c14b es un modelo publicado en HuggingFace por el usuario abdulll123477 bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia y no incluye ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no presenta descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de carácter experimental.
+MistFuckc-c14b es un modelo publicado en Hugging Face por el usuario abdulll123477 bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia y no incluye ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no presenta descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de carácter experimental.
 
 El nombre del modelo sugiere una posible relación con la familia Mistral (prefijo "Mist") y una escala de aproximadamente 14 mil millones de parámetros (sufijo "c14b"), pero esta interpretación es especulativa y no está respaldada por ningún dato en la información disponible. No se puede confirmar la arquitectura, el tamaño real ni las capacidades del modelo. Cualquier evaluación técnica rigurosa resulta imposible sin documentación adicional.
 
@@ -63,6 +63,6 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento, no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abdulll123477/MistFuckc-c14b
+- Repositorio Hugging Face: https://huggingface.co/abdulll123477/MistFuckc-c14b
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

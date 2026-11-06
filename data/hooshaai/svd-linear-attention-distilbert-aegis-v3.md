@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada: 288,41 MB según la medición del autor durante la evaluación. Esto es compatible con cualquier GPU moderna, incluidas las de gama de consumo.
 - GPU recomendadas: no se especifica una GPU concreta. Dado el tamaño, una RTX 3060 o superior sería suficiente. También podría ejecutarse en CPU, aunque el tiempo de evaluación de 31,03 s sugiere que la GPU acelera el proceso.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU con al menos 1 GB de VRAM.
-- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo PyTorch de clasificación, podría cargarse con la biblioteca `transformers` de HuggingFace, aunque el tamaño del repositorio de 0,0 GB indica que los pesos podrían no estar disponibles para descarga.
+- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo PyTorch de clasificación, podría cargarse con la biblioteca `transformers` de Hugging Face, aunque el tamaño del repositorio de 0,0 GB indica que los pesos podrían no estar disponibles para descarga.
 - Latencia y throughput: solo se dispone del tiempo puro de evaluación de 31,03 s, sin especificar tamaño de lote ni hardware, por lo que no se puede calcular un throughput fiable.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3
 - Web del autor: https://hooshaai.github.io/
 - GitHub del autor: https://github.com/Hooshaai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_DoRA_Qwen3-8b es un adaptador de tipo DoRA (weight-decomposed low-rank adaptation) publicado por el usuario WijewardhanaNT sobre el modelo base Qwen/Qwen3-8B-Base. Se distribuye como pesos PEFT en safetensors dentro de un repositorio de 0,7 GB, con pipeline declarado de text-generation y sin licencia ni idiomas indicados en la model card, que permanece prácticamente como la plantilla vacía de HuggingFace.
+WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_DoRA_Qwen3-8b es un adaptador de tipo DoRA (weight-decomposed low-rank adaptation) publicado por el usuario WijewardhanaNT sobre el modelo base Qwen/Qwen3-8B-Base. Se distribuye como pesos PEFT en safetensors dentro de un repositorio de 0,7 GB, con pipeline declarado de text-generation y sin licencia ni idiomas indicados en la model card, que permanece prácticamente como la plantilla vacía de Hugging Face.
 
 El identificador del repositorio permite deducir el propósito: ajuste fino supervisado sobre el corpus XNLI (inferencia de relación textual, tres etiquetas: implicación, contradicción y neutralidad) en inglés y urdu, con un subconjunto de 5.000 ejemplos y un porcentaje de datos anotado como "1_42". No se especifica si ese porcentaje corresponde al porcentaje del dataset completo, a la proporción de ejemplos en urdu o a otra partición.
 
@@ -66,17 +66,17 @@ La model card incluye la sección de evaluación sin rellenar y no aporta cifras
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en NLI EN/UR |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Qwen3-8B-Base) | Adaptador sobre ~8,2B | 32.768 tokens en el base (131.072 con YaRN) | No disponible | HuggingFace, 0 descargas | No publicado |
-| Qwen/Qwen3-8B-Base | ~8,2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, muy descargado | No ajustado a NLI; referencia de partida para comparar la ganancia del adaptador |
-| Qwen/Qwen3-8B (post-entrenado) | ~8,2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace | Puede resolver NLI por prompt zero-shot, sin entrenamiento específico en urdu |
-| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 (salvo la variante de 3B) | HuggingFace | Alternativa multilingüe por prompt; no especializada en NLI |
+| Este adaptador (DoRA sobre Qwen3-8B-Base) | Adaptador sobre ~8,2B | 32.768 tokens en el base (131.072 con YaRN) | No disponible | Hugging Face, 0 descargas | No publicado |
+| Qwen/Qwen3-8B-Base | ~8,2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, muy descargado | No ajustado a NLI; referencia de partida para comparar la ganancia del adaptador |
+| Qwen/Qwen3-8B (post-entrenado) | ~8,2B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face | Puede resolver NLI por prompt zero-shot, sin entrenamiento específico en urdu |
+| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 (salvo la variante de 3B) | Hugging Face | Alternativa multilingüe por prompt; no especializada en NLI |
 
 No se dispone de comparativas cuantitativas: al no existir métricas publicadas para el adaptador, la comparación se limita a parámetros, contexto, licencia y disponibilidad. Cualquier comparación de exactitud exigiría evaluar los cuatro modelos sobre el mismo subconjunto de XNLI.
 
 ## Limitaciones y advertencias
 
 - La licencia no está declarada. Aunque Qwen3-8B-Base se distribuye bajo Apache 2.0, la ausencia de licencia explícita en este repositorio impide asumir que el adaptador sea reutilizable con fines comerciales; hay que contactar con el autor.
-- La model card es la plantilla por defecto de HuggingFace, sin descripción, datos de entrenamiento, hiperparámetros, instrucciones de uso ni contacto. La reproducibilidad es nula con la información disponible.
+- La model card es la plantilla por defecto de Hugging Face, sin descripción, datos de entrenamiento, hiperparámetros, instrucciones de uso ni contacto. La reproducibilidad es nula con la información disponible.
 - Solo 5.000 ejemplos de entrenamiento, con un porcentaje de datos poco claro en el nombre; riesgo alto de sobreajuste y de mal comportamiento fuera de la distribución de XNLI.
 - El modelo base es la variante Base, no instruida: no sigue instrucciones de formato de forma fiable y puede requerir plantillas específicas para producir etiquetas válidas.
 - Riesgo de alucinación inherente a un modelo generativo de 8B; si se usa generando la etiqueta, hay que validar y normalizar la salida (por ejemplo, mapear a un conjunto cerrado de tres clases).

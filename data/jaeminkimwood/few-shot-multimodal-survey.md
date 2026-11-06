@@ -6,7 +6,7 @@ El repositorio `jaeminkimwood/few-shot-multimodal-survey` no es un modelo de len
 
 El único artefacto con formato de pesos es un fichero safetensors que, según el recuento real, contiene 24.832 parámetros (aproximadamente 24,8 mil, menos de 100 KB en fp32). Se trata de un tamaño tres órdenes de magnitud por debajo de cualquier modelo funcional: un transformer con esa cifra de parámetros no puede sostener generación de texto ni capacidades multimodales. Los tags del repositorio (`transformer`) describen la categoría temática de las notas, no una arquitectura implementada y verificable.
 
-Por tanto, la relevancia de este repositorio es documental y metodológica, no de inferencia. Resulta útil como plantilla de rigor para quien prepare un estudio de few-shot multimodal (checklist de reproducibilidad, semillas, versiones de dataset, registro de fallos), y como recordatorio de que los repositorios de HuggingFace pueden alojar artefactos no desplegables. No debe confundirse con un modelo evaluable ni citarse como evidencia de resultados.
+Por tanto, la relevancia de este repositorio es documental y metodológica, no de inferencia. Resulta útil como plantilla de rigor para quien prepare un estudio de few-shot multimodal (checklist de reproducibilidad, semillas, versiones de dataset, registro de fallos), y como recordatorio de que los repositorios de Hugging Face pueden alojar artefactos no desplegables. No debe confundirse con un modelo evaluable ni citarse como evidencia de resultados.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ Tampoco hay información de entrenamiento: no se indica número de tokens, compo
 - Revision bibliografica de few-shot multimodal: el fichero `review.md` puede usarse como punto de partida para localizar preguntas abiertas y confundidores habituales, y para contrastar la propia lista de referencias antes de disenar un experimento.
 - Plantilla de protocolo experimental: el repositorio enumera que debe registrarse (versiones de dataset, comandos, semillas, hardware y logs en crudo), por lo que sirve como checklist para equipos que preparen un benchmark reproducible.
 - Diseno de comparaciones con baselines emparejados: las notas proponen comparaciones con baselines de presupuesto equivalente, útil para evitar conclusiones infladas al comparar modelos con distinto numero de ejemplos por clase.
-- Auditoria de artefactos en HuggingFace: caso de uso practico para plataformas y equipos de catalogacion, ya que ejemplifica un repositorio con tag `transformer` que no contiene un modelo desplegable y obliga a revisar el recuento de parametros antes de indexarlo.
+- Auditoria de artefactos en Hugging Face: caso de uso practico para plataformas y equipos de catalogacion, ya que ejemplifica un repositorio con tag `transformer` que no contiene un modelo desplegable y obliga a revisar el recuento de parametros antes de indexarlo.
 - Docencia sobre higiene metodologica: util en cursos de machine learning para ilustrar la diferencia entre hipotesis, planes y resultados, y para discutir por que no deben fabricarse puntuaciones.
 - Revision de licencias y terminos de datos: la licencia MIT del repositorio no cubre los datasets externos que se citen; las notas sirven de recordatorio para revisar los terminos de los datos de origen por separado.
 - Inferencia o despliegue en produccion: no aplicable. El artefacto no puede ejecutar tareas de generacion, clasificacion ni recuperacion con garantias.
@@ -91,7 +91,7 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jaeminkimwood/few-shot-multimodal-survey
+- Repositorio en Hugging Face: https://huggingface.co/jaeminkimwood/few-shot-multimodal-survey
 - Fichero principal del repositorio: `review.md`
 - Documentacion del repositorio: `README.md`
 - Paper, blog, repositorio de codigo o demo asociados: no disponible

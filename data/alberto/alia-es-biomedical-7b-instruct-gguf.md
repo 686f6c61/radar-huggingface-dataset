@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ALIA-es-biomedical-7B-Instruct (esta ficha) | 7,77 B | 8.192 | Apache 2.0 | HuggingFace (safetensors y GGUF) | Especializado en biomédico en castellano |
-| Salamandra-7B (BSC-LT) | 7 B | no disponible en la información | no disponible en la información | HuggingFace | Modelo base multilingüe del que deriva la familia |
-| ALIA-es-biomedical-7B-Base (SINAI) | 7,77 B | 8.192 | no disponible en la información | HuggingFace | Versión base sin ajuste por instrucciones |
+| ALIA-es-biomedical-7B-Instruct (esta ficha) | 7,77 B | 8.192 | Apache 2.0 | Hugging Face (safetensors y GGUF) | Especializado en biomédico en castellano |
+| Salamandra-7B (BSC-LT) | 7 B | no disponible en la información | no disponible en la información | Hugging Face | Modelo base multilingüe del que deriva la familia |
+| ALIA-es-biomedical-7B-Base (SINAI) | 7,77 B | 8.192 | no disponible en la información | Hugging Face | Versión base sin ajuste por instrucciones |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento cuantitativo con estas alternativas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cuanti
 
 ## Enlaces
 
-- HuggingFace (esta republicación GGUF): https://huggingface.co/Alberto/ALIA-es-biomedical-7B-Instruct-gguf
+- Hugging Face (esta republicación GGUF): https://huggingface.co/Alberto/ALIA-es-biomedical-7B-Instruct-gguf
 - Modelo base: https://huggingface.co/SINAI/ALIA-es-biomedical-7B-Base
 - Modelo original Instruct (referenciado en la model card): https://huggingface.co/SINAI/ALIA-es-biomedical-7B-Instruct
 - Dataset de instrucciones: https://huggingface.co/datasets/SINAI/ALIA-es-biomedical-synthetic-instructions

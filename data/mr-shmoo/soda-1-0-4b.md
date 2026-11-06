@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mr-Shmoo/soda-1.0-4B es un repositorio de modelo publicado en HuggingFace por el usuario Mr-Shmoo el 2 de octubre de 2026, bajo licencia Apache 2.0. Es, a todos los efectos prácticos, un modelo sin documentar: la model card del repositorio contiene únicamente el bloque de metadatos de licencia y carece de descripción, arquitectura, datos de entrenamiento, resultados de evaluación o instrucciones de uso. El repositorio no declara etiqueta de pipeline (text-generation, text2text-generation, etc.), no indica idiomas soportados y no incluye ningún archivo de pesos listado en la información disponible.
+Mr-Shmoo/soda-1.0-4B es un repositorio de modelo publicado en Hugging Face por el usuario Mr-Shmoo el 2 de octubre de 2026, bajo licencia Apache 2.0. Es, a todos los efectos prácticos, un modelo sin documentar: la model card del repositorio contiene únicamente el bloque de metadatos de licencia y carece de descripción, arquitectura, datos de entrenamiento, resultados de evaluación o instrucciones de uso. El repositorio no declara etiqueta de pipeline (text-generation, text2text-generation, etc.), no indica idiomas soportados y no incluye ningún archivo de pesos listado en la información disponible.
 
 No se dispone de información sobre quién está detrás del proyecto, qué problema pretende resolver ni en qué se diferencia de otros modelos de su categoría. El único indicio sobre su naturaleza es el sufijo «4B» del nombre, que sugiere un modelo de aproximadamente 4.000 millones de parámetros, presumiblemente un transformer denso de escala pequeña; esta inferencia no está confirmada por ninguna fuente del repositorio y debe tratarse como una hipótesis, no como un dato.
 
@@ -99,11 +99,11 @@ No existen datos publicados de soda-1.0-4B que permitan una comparacion rigurosa
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la licencia no acredita la legitimidad de los pesos ni de los datos de entrenamiento; es responsabilidad del usuario verificar la procedencia.
 - Adopcion nula: cero descargas y cero «likes» implican ausencia de validacion por parte de la comunidad y de informes de errores.
 - Metadatos anomalos: las fechas de creacion y actualizacion son identicas (2026-10-02T14:57:07Z) y la fecha indicada es posterior a la de la mayoria de evaluaciones publicadas; conviene confirmar la vigencia del repositorio antes de integrarlo.
-- Ausencia de etiqueta de pipeline: las herramientas de HuggingFace podrian no inferir automaticamente la tarea del modelo.
+- Ausencia de etiqueta de pipeline: las herramientas de Hugging Face podrian no inferir automaticamente la tarea del modelo.
 - No apto para produccion sin validacion previa: no debe desplegarse en entornos criticos sin una bateria de pruebas propia de calidad, latencia y seguridad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mr-Shmoo/soda-1.0-4B
+- Repositorio en Hugging Face: https://huggingface.co/Mr-Shmoo/soda-1.0-4B
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los unicos resultados obtenidos versan sobre el uso de las abreviaturas «Mr»/«M.» y no guardan relacion con el modelo.

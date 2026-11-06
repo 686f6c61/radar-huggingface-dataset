@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview
+- Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview
 - Perplexity: https://www.perplexity.ai/
 - Ask Perplexity: https://www.social.perplexity.ai/
 - Guia de inicio de Perplexity: https://www.perplexity.ai/fr/hub/getting-started

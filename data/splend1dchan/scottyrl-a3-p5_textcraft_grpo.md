@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | 4B (base) + LoRA r=32 | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base, sin adaptador) | 4B | No disponible | No disponible en esta ficha | No disponible | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | 4B (base) + LoRA r=32 | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base, sin adaptador) | 4B | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
 | Otros adaptadores LoRA para agentes sobre Qwen | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 No se dispone de datos publicados que permitan una comparacion cuantitativa con alternativas de la misma categoria; la unica comparacion posible es cualitativa frente al modelo base.
@@ -106,6 +106,6 @@ No se dispone de datos publicados que permitan una comparacion cuantitativa con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Splend1dchan/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/Splend1dchan/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios o demos adicionales: no se han encontrado en la informacion disponible.

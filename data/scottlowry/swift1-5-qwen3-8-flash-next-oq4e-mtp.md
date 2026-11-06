@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-oQ4e-mtp es una version cuantizada del modelo Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto derivado: el autor ha aplicado cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.0) sobre los pesos del modelo base y ha empaquetado el resultado en formato MLX safetensors. El repositorio pesa 106,3 GB y declara 179.999.981.459 parametros, es decir, aproximadamente 180.000 millones.
+Swift1.5-Qwen3.8-Flash-Next-oQ4e-mtp es una version cuantizada del modelo Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto derivado: el autor ha aplicado cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.0) sobre los pesos del modelo base y ha empaquetado el resultado en formato MLX safetensors. El repositorio pesa 106,3 GB y declara 179.999.981.459 parametros, es decir, aproximadamente 180.000 millones.
 
 El modelo esta etiquetado con `library_name: mlx`, lo que indica que esta disenado para ejecutarse con el framework MLX de Apple, orientado a chips de la serie M con memoria unificada. Esto lo situa en el nicho de la inferencia local de gran escala en hardware de Apple, no en el de despliegue en GPUs NVIDIA convencionales.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Model card del modelo base Swift1.5-Qwen3.8-Flash-Next: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica del modelo base: no disponible

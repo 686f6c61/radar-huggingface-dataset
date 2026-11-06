@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rethink-Model es un modelo publicado en HuggingFace por el usuario WeiChow bajo la identificacion `WeiChow/Rethink-Model`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y carece de cualquier descripcion funcional, arquitectonica o de entrenamiento. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (8 de octubre de 2026), lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+Rethink-Model es un modelo publicado en Hugging Face por el usuario WeiChow bajo la identificacion `WeiChow/Rethink-Model`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y carece de cualquier descripcion funcional, arquitectonica o de entrenamiento. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (8 de octubre de 2026), lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 No es posible determinar a partir de la informacion disponible que problema resuelve el modelo, que arquitectura emplea, cual es su tamano, su longitud de contexto o sus idiomas de entrenamiento. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a medios de prensa italianos sin vinculacion alguna con el proyecto.
 
@@ -94,6 +94,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WeiChow/Rethink-Model
+- Repositorio en Hugging Face: https://huggingface.co/WeiChow/Rethink-Model
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a medios de prensa generalistas sin vinculacion con el proyecto.

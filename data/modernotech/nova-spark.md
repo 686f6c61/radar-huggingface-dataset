@@ -83,7 +83,7 @@ La comparación más directa es con el propio Qwen3.5-0.8B: Nova Spark no introd
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ModernoTech/Nova-Spark
+- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Spark
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

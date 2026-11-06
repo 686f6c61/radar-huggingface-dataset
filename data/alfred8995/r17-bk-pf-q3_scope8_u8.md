@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_scope8_u8` es un checkpoint de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene exclusivamente pesos en formato safetensors (3,5 GB en total) y está etiquetado con el tag `qwen3`, lo que sitúa al modelo en la familia Qwen 3, aunque no se especifica si se trata de un ajuste fino, un merge de modelos o un entrenamiento desde el checkpoint base. El acceso es restringido: requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+`alfred8995/r17-bk-pf-q3_scope8_u8` es un checkpoint de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene exclusivamente pesos en formato safetensors (3,5 GB en total) y está etiquetado con el tag `qwen3`, lo que sitúa al modelo en la familia Qwen 3, aunque no se especifica si se trata de un ajuste fino, un merge de modelos o un entrenamiento desde el checkpoint base. El acceso es restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de esta ficha es limitada y hay que decirlo con claridad: el repositorio no incluye model card, no declara idiomas soportados, no publica resultados de evaluación y acumula cero descargas y cero likes en el momento de la consulta. La nomenclatura del identificador (`r17`, `bk`, `pf`, `q3`, `scope8`, `u8`) sugiere una iteración interna de un pipeline experimental de entrenamiento o fusión, no un lanzamiento dirigido al público general.
 
@@ -17,7 +17,7 @@ Por tanto, esta ficha documenta lo que se puede verificar (tamaño, formato, lic
 | Parámetros activos | No aplica / no disponible (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible. No confirmada en el repositorio; no se debe asumir la del modelo base |
 | Tipos de cuantización | No disponible. Solo se publican pesos safetensors; el tamaño de 3,5 GB es compatible con bf16/fp16, sin confirmación oficial |
-| Idiomas soportados | No disponible (campo de idiomas vacío en HuggingFace) |
+| Idiomas soportados | No disponible (campo de idiomas vacío en Hugging Face) |
 | Licencia | `other` — licencia personalizada no especificada, con acceso restringido (gated) |
 | Formato de pesos | safetensors |
 
@@ -69,7 +69,7 @@ El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, MMLU-Pro ni de
 
 ## Comparativa con modelos similares
 
-Los datos del modelo evaluado son los verificados en HuggingFace; los de las alternativas provienen de sus fichas oficiales y se incluyen solo como referencia de categoría.
+Los datos del modelo evaluado son los verificados en Hugging Face; los de las alternativas provienen de sus fichas oficiales y se incluyen solo como referencia de categoría.
 
 | Modelo | Parámetros | Contexto | Licencia | Acceso | Benchmarks publicados |
 |---|---|---|---|---|---|
@@ -84,7 +84,7 @@ La comparación de rendimiento con estas alternativas no es posible: este checkp
 
 - Ausencia total de documentación: no hay model card, ni descripción de datos de entrenamiento, ni evaluación. Imposible estimar sesgos conocidos.
 - Licencia `other` sin texto identificable en la información disponible: el uso comercial es indeterminado y requiere contactar con el autor o revisar los términos asociados al acceso gated antes de cualquier despliegue en producción.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace, lo que añade una dependencia externa y puede limitar la reproducibilidad.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face, lo que añade una dependencia externa y puede limitar la reproducibilidad.
 - Riesgo de alucinación: no evaluado. En modelos de ~1,7 B el riesgo de fabricación de hechos es estructuralmente alto y no hay datos que permitan acotarlo.
 - Idiomas no declarados: no se puede asumir un rendimiento aceptable en castellano sin una evaluación específica.
 - Contexto desconocido: no se debe asumir la ventana del modelo base; hay que medirla empíricamente antes de diseñar prompts largos.
@@ -95,6 +95,6 @@ La comparación de rendimiento con estas alternativas no es posible: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope8_u8
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_scope8_u8
 - Repositorio de Qwen3 (familia referenciada por el tag): https://github.com/QwenLM/Qwen3
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este checkpoint. Los resultados devueltos por la búsqueda corresponden a páginas de ChatGPT y no guardan relación con el modelo.

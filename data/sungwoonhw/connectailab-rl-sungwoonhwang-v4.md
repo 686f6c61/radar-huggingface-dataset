@@ -4,7 +4,7 @@
 
 `connectailab-rl-SUNGWOONHWANG-v4` es un modelo de aprendizaje por refuerzo (RL) entrenado con PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer que un vehículo tipo roadster que cae boca abajo aterrice sobre sus ruedas accionando dos controles, la intensidad del propulsor (rango 0 a 1) y la rotación (−1 a 1). No es un modelo de lenguaje ni un modelo generativo multimodal: es una política neuronal que mapea observaciones del entorno a acciones continuas.
 
-El modelo lo publica el usuario de HuggingFace SUNGWOONHW, ingeniero de diseño de componentes de automoción en SUBARU, en el marco del curso de IA de refuerzo de CONNECT AI LAB (lección 6 de "AI CITY BUILDERS"). La model card está redactada en coreano y describe el entorno como `로드스터연속` (roadster continuo), implementado sobre Gymnasium.
+El modelo lo publica el usuario de Hugging Face SUNGWOONHW, ingeniero de diseño de componentes de automoción en SUBARU, en el marco del curso de IA de refuerzo de CONNECT AI LAB (lección 6 de "AI CITY BUILDERS"). La model card está redactada en coreano y describe el entorno como `로드스터연속` (roadster continuo), implementado sobre Gymnasium.
 
 Su relevancia es acotada: sirve como referencia educativa de un pipeline PPO completo (entorno Gymnasium, 16 entornos paralelos, 1.000.000 de pasos de entrenamiento) y como ejemplo de política con acción continua en un dominio físico. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que sugiere que los pesos no están efectivamente subidos o son de tamaño despreciable.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Entorno | Algoritmo | Pasos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-SUNGWOONHWANG-v4 | Política RL continua | `로드스터연속` (Gymnasium) | PPO | 1.000.000 | No disponible | HuggingFace, 0 descargas |
+| connectailab-rl-SUNGWOONHWANG-v4 | Política RL continua | `로드스터연속` (Gymnasium) | PPO | 1.000.000 | No disponible | Hugging Face, 0 descargas |
 | Políticas PPO de referencia de Stable-Baselines3 | Política RL | LunarLanderContinuous, BipedalWalker, etc. | PPO | Variable | MIT (librería) | Ampliamente disponible |
 | Políticas RL de CleanRL | Política RL | Varios entornos Gymnasium | PPO | Variable | MIT (librería) | Ampliamente disponible |
 
@@ -87,9 +87,9 @@ No se dispone de información sobre otros modelos entrenados específicamente pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG-v4
-- Curva de aprendizaje referenciada en la model card: `learning_curve.png` (incluida en el repositorio de HuggingFace)
-- Perfil del autor en HuggingFace: https://huggingface.co/SUNGWOONHW
+- Modelo en Hugging Face: https://huggingface.co/SUNGWOONHW/connectailab-rl-SUNGWOONHWANG-v4
+- Curva de aprendizaje referenciada en la model card: `learning_curve.png` (incluida en el repositorio de Hugging Face)
+- Perfil del autor en Hugging Face: https://huggingface.co/SUNGWOONHW
 - CONNECT AI LAB (curso "AI CITY BUILDERS", lección 6 de RL): no disponible como enlace en la información proporcionada
 - Gymnasium (entorno base): no disponible como enlace en la información proporcionada
 - Repositorio de PPO (implementación): no disponible como enlace en la información proporcionada

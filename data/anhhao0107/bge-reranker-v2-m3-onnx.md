@@ -83,5 +83,5 @@ La comparativa muestra que esta conversión ONNX es funcionalmente idéntica al 
 - [Conversión ONNX de la comunidad onnx-community/bge-reranker-v2-m3-ONNX](https://huggingface.co/onnx-community/bge-reranker-v2-m3-ONNX)
 - [Documentación de Cross Encoder en Sentence Transformers](https://www.sbert.net/docs/cross_encoder/usage/usage.html)
 - [Documentación de BGE-Reranker-v2 en BGE](https://bge-model.com/bge/bge_reranker_v2.html)
-- [Repositorio de ejemplo de uso con HuggingFace](https://github.com/LazaUK/HuggingFace-BAAI-BGERerankerv2m3)
+- [Repositorio de ejemplo de uso con Hugging Face](https://github.com/LazaUK/HuggingFace-BAAI-BGERerankerv2m3)
 - [Blog de entrenamiento de reranker de Sentence Transformers](https://huggingface.co/blog/train-reranker)

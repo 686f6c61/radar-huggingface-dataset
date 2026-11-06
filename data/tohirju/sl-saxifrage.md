@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tohirju/sl-saxifrage` es un repositorio de modelo alojado en HuggingFace por el usuario Tohirju. En el momento de la consulta, la informacion publica disponible se limita a metadatos de catalogacion: licencia etiquetada como `other`, tag de region `us`, acceso restringido (gated) y un tamano de repositorio de 0.0 GB. No se declara pipeline, idioma, arquitectura, numero de parametros ni cardinalidad del vocabulario.
+`Tohirju/sl-saxifrage` es un repositorio de modelo alojado en Hugging Face por el usuario Tohirju. En el momento de la consulta, la informacion publica disponible se limita a metadatos de catalogacion: licencia etiquetada como `other`, tag de region `us`, acceso restringido (gated) y un tamano de repositorio de 0.0 GB. No se declara pipeline, idioma, arquitectura, numero de parametros ni cardinalidad del vocabulario.
 
 El repositorio no presenta model card publica con especificaciones tecnicas, y los contadores de uso son cero descargas y cero likes desde su creacion el 16 de octubre de 2026 hasta su ultima actualizacion el 20 de octubre de 2026. El tamano reportado de 0.0 GB es compatible con un repositorio vacio, unicamente de metadatos, o con pesos alojados fuera del arbol Git (por ejemplo, en LFS no contabilizado o en un endpoint privado), extremo que no puede confirmarse sin acceso.
 
@@ -21,13 +21,13 @@ Por tanto, esta ficha no puede validar ninguna capacidad del modelo. Su relevanc
 | Licencia | other (terminos no publicados) |
 | Formato de pesos | no disponible |
 
-Datos adicionales de catalogacion: identificador `Tohirju/sl-saxifrage`; acceso restringido (gated, requiere aceptar condiciones en HuggingFace); tamano de repositorio 0.0 GB; 0 descargas; 0 likes; creado el 2026-10-16; actualizado el 2026-10-20; tag `region:us`.
+Datos adicionales de catalogacion: identificador `Tohirju/sl-saxifrage`; acceso restringido (gated, requiere aceptar condiciones en Hugging Face); tamano de repositorio 0.0 GB; 0 descargas; 0 likes; creado el 2026-10-16; actualizado el 2026-10-20; tag `region:us`.
 
 ## Arquitectura y entrenamiento
 
 No disponible. No se ha publicado informacion sobre la arquitectura (transformer, MoE, SSM, hibrida u otra), el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de alineacion (RLHF, DPO, RLHF verifiable) ni innovaciones tecnicas asociadas.
 
-Tampoco se documenta tokenizador, ventana de contexto nativa, estrategia de atencion ni metodos de decodificacion. El tag `region:us` es un indicador de region de despliegue en el catalogo de HuggingFace y no aporta informacion sobre el proceso de entrenamiento.
+Tampoco se documenta tokenizador, ventana de contexto nativa, estrategia de atencion ni metodos de decodificacion. El tag `region:us` es un indicador de region de despliegue en el catalogo de Hugging Face y no aporta informacion sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No disponible. No puede establecerse una categoria de comparacion (tamano, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/sl-saxifrage
+- Hugging Face: https://huggingface.co/Tohirju/sl-saxifrage
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

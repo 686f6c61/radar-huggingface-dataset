@@ -72,12 +72,12 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 - El contexto extendido de 1M tokens es experimental y puede degradar el rendimiento en la práctica; se recomienda validar con casos de uso reales.
 - La cuantización GGUF, aunque optimizada con Unsloth Dynamic 3.0, introduce una pérdida de precisión respecto al modelo original en FP16.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar la política de uso de la familia Qwen en la documentación oficial de Alibaba.
-- El repo de HuggingFace no especifica los idiomas soportados de forma explícita; se recomienda probar el modelo en los idiomas de interés.
+- El repo de Hugging Face no especifica los idiomas soportados de forma explícita; se recomienda probar el modelo en los idiomas de interés.
 - El tamaño del repositorio (1053.7 GB) parece anormalmente grande para una colección de GGUF, por lo que se recomienda verificar los archivos antes de la descarga.
 
 ## Enlaces
 
-- Repo de HuggingFace de FokusDK: https://huggingface.co/FokusDK/Qwen3.8-27B-GGUF
+- Repo de Hugging Face de FokusDK: https://huggingface.co/FokusDK/Qwen3.8-27B-GGUF
 - Repo oficial de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repo de Unsloth GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - GitHub de Alibaba: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

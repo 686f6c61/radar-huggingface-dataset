@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Etghan Tagging v2 es un modelo de clasificación de tokens (token classification) especializado en la extracción de entidades nombradas de documentos judiciales en persa (farsi). Lo desarrolla QomSSLab y se distribuye a través de HuggingFace con la librería transformers. El modelo resuelve un problema muy concreto: convertir texto legal no estructurado (sentencias, demandas, resoluciones) en campos estructurados como nombres de demandante y demandado, cargos legales, fechas de sentencia, tribunal, juez y plazos de apelación.
+Etghan Tagging v2 es un modelo de clasificación de tokens (token classification) especializado en la extracción de entidades nombradas de documentos judiciales en persa (farsi). Lo desarrolla QomSSLab y se distribuye a través de Hugging Face con la librería transformers. El modelo resuelve un problema muy concreto: convertir texto legal no estructurado (sentencias, demandas, resoluciones) en campos estructurados como nombres de demandante y demandado, cargos legales, fechas de sentencia, tribunal, juez y plazos de apelación.
 
 Técnicamente, la model card indica que se trata de un cabezal de clasificación de tokens sobre XLM-RoBERTa, aunque los tags del repositorio apuntan a la arquitectura ModernBERT. Esta discrepancia entre la documentación del autor y los metadatos del repositorio es relevante y conviene verificarla antes de desplegarlo. El modelo tiene 307.550.234 parámetros y un tamaño de repositorio de 1,3 GB en formato safetensors.
 
@@ -93,10 +93,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QomSSLab/etghan_tagging_v2 | 307,5 M | no disponible | NER judicial en persa | no disponible | HuggingFace |
-| XLM-RoBERTa base (FacebookAI) | 278 M | 512 tokens | NER multilingüe genérico | MIT | HuggingFace |
-| ParsBERT (HooshvareLab) | ~162 M | 512 tokens | NLU en persa | Apache 2.0 | HuggingFace |
-| ModernBERT base | ~149 M | 8.192 tokens | Encoder multilingüe | Apache 2.0 | HuggingFace |
+| QomSSLab/etghan_tagging_v2 | 307,5 M | no disponible | NER judicial en persa | no disponible | Hugging Face |
+| XLM-RoBERTa base (FacebookAI) | 278 M | 512 tokens | NER multilingüe genérico | MIT | Hugging Face |
+| ParsBERT (HooshvareLab) | ~162 M | 512 tokens | NLU en persa | Apache 2.0 | Hugging Face |
+| ModernBERT base | ~149 M | 8.192 tokens | Encoder multilingüe | Apache 2.0 | Hugging Face |
 
 La comparación con XLM-RoBERTa base y ParsBERT es relevante porque son las alternativas naturales para NER en persa: XLM-RoBERTa base ofrece cobertura multilingüe y licencia permisiva, mientras que ParsBERT está especializado en persa pero no en dominio judicial. Etghan Tagging v2 aporta un conjunto de etiquetas específico del dominio legal que ninguno de los anteriores proporciona de serie, a cambio de una licencia no declarada y una documentación limitada. No se dispone de benchmarks comparativos directos entre estos modelos en la información proporcionada.
 
@@ -115,7 +115,7 @@ La comparación con XLM-RoBERTa base y ParsBERT es relevante porque son las alte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QomSSLab/etghan_tagging_v2
+- Hugging Face: https://huggingface.co/QomSSLab/etghan_tagging_v2
 - Perfil del autor: https://huggingface.co/QomSSLab
 - Documentación de transformers para token classification: https://huggingface.co/docs/transformers/tasks/token_classification
 - Documentación de XLM-RoBERTa: https://huggingface.co/docs/transformers/model_doc/xlm-roberta

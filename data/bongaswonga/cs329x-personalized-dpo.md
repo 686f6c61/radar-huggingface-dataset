@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bongaswonga/cs329x-personalized-dpo` es un adaptador PEFT (LoRA) alojado en HuggingFace, construido sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. Por su nombre, se trata de un ajuste orientado a DPO (Direct Preference Optimization) con fines de personalizacion, probablemente un experimento academico o de curso: el identificador "cs329x" no aparece documentado en la model card. El repositorio no incluye pipeline declarado, licencia, idiomas ni descripcion funcional; la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`bongaswonga/cs329x-personalized-dpo` es un adaptador PEFT (LoRA) alojado en Hugging Face, construido sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. Por su nombre, se trata de un ajuste orientado a DPO (Direct Preference Optimization) con fines de personalizacion, probablemente un experimento academico o de curso: el identificador "cs329x" no aparece documentado en la model card. El repositorio no incluye pipeline declarado, licencia, idiomas ni descripcion funcional; la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 El interes tecnico del artefacto es limitado pero concreto: ejemplifica el flujo de trabajo de PEFT 0.13.2 sobre un modelo de 1,1 mil millones de parametros, un formato habitual en experimentos de alineamiento de bajo coste. La relevancia practica depende enteramente de que los pesos del adaptador esten efectivamente subidos (el tamano del repositorio figura como 0.0 GB) y de que el autor documente el dataset de preferencias, los hiperparametros y cualquier evaluacion. A fecha de la ficha, el modelo acumula 0 descargas y 0 "likes", por lo que no existe validacion por parte de la comunidad.
 
@@ -27,7 +27,7 @@ Los valores marcados como "(modelo base)" proceden de la documentacion publica d
 
 El artefacto es un adaptador de bajo rango (LoRA) sobre TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only con 22 capas, dimension oculta 2048, 32 cabezas de atencion con 4 cabezas KV (GQA), FFN SwiGLU con dimension intermedia 5632, vocabulario de 32.000 tokens, RoPE y RMSNorm como normalizacion. El modelo base fue preentrenado con aproximadamente 3 billones de tokens y posteriormente ajustado con SFT (UltraChat) y DPO (UltraFeedback) para dar lugar a la variante "Chat". El adaptador que nos ocupa se apoya en esa variante ya alineada.
 
-No hay informacion sobre el procedimiento de entrenamiento del adaptador: se desconoce el dataset de preferencias, el numero de pares (prompt, elegido, rechazado), la funcion de perdida DPO exacta, la beta utilizada, la tasa de aprendizaje, el numero de pasos, el hardware empleado ni la precision (fp32/fp16/bf16). Tampoco se documenta si el adaptador se aplico solo a las proyecciones de atencion o tambien a las capas FFN. La unica referencia tecnica concreta de la model card es la version de PEFT utilizada (0.13.2) y la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla de HuggingFace, no a un articulo sobre el modelo.
+No hay informacion sobre el procedimiento de entrenamiento del adaptador: se desconoce el dataset de preferencias, el numero de pares (prompt, elegido, rechazado), la funcion de perdida DPO exacta, la beta utilizada, la tasa de aprendizaje, el numero de pasos, el hardware empleado ni la precision (fp32/fp16/bf16). Tampoco se documenta si el adaptador se aplico solo a las proyecciones de atencion o tambien a las capas FFN. La unica referencia tecnica concreta de la model card es la version de PEFT utilizada (0.13.2) y la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono citado en la plantilla de Hugging Face, no a un articulo sobre el modelo.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No hay informacion sobre el procedimiento de entrenamiento del adaptador: se des
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del adaptador no incluye ninguna seccion de evaluacion cumplimentada: ni MMLU, ni HumanEval, ni GSM8K, ni metricas de preferencia (win rate), ni comparaciones frente al modelo base. La etiqueta `arxiv:1910.09700` presente en los tags del repositorio no es un articulo sobre el modelo, sino la referencia de la calculadora de impacto de carbono incluida en la plantilla de HuggingFace (Lacoste et al., 2019), por lo que no debe interpretarse como evidencia de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del adaptador no incluye ninguna seccion de evaluacion cumplimentada: ni MMLU, ni HumanEval, ni GSM8K, ni metricas de preferencia (win rate), ni comparaciones frente al modelo base. La etiqueta `arxiv:1910.09700` presente en los tags del repositorio no es un articulo sobre el modelo, sino la referencia de la calculadora de impacto de carbono incluida en la plantilla de Hugging Face (Lacoste et al., 2019), por lo que no debe interpretarse como evidencia de evaluacion.
 
 ## Requisitos de hardware
 
@@ -96,7 +96,7 @@ Consideraciones de la comparativa: frente a las alternativas, este adaptador par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bongaswonga/cs329x-personalized-dpo
+- Modelo en Hugging Face: https://huggingface.co/bongaswonga/cs329x-personalized-dpo
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Referencia citada en la model card (estimacion de emisiones de carbono), Lacoste et al.: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning enlazada en la model card: https://mlco2.github.io/impact

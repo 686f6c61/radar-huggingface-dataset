@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mavi-1.5B es un ajuste fino (fine-tune) en turco del modelo Qwen2.5-1.5B-Instruct, publicado por la usuaria de HuggingFace sumeyragurlek. Se presenta como un asistente ciudadano para el ayuntamiento ficticio de Martıkent: la identidad y el estilo se incorporan mediante ajuste fino supervisado, la normativa municipal se resuelve con RAG y los datos de instalaciones y trámites se obtienen mediante herramientas (tool calling). Es, por tanto, un ejemplo completo de pipeline "identidad + RAG + agente" sobre un modelo pequeño.
+Mavi-1.5B es un ajuste fino (fine-tune) en turco del modelo Qwen2.5-1.5B-Instruct, publicado por la usuaria de Hugging Face sumeyragurlek. Se presenta como un asistente ciudadano para el ayuntamiento ficticio de Martıkent: la identidad y el estilo se incorporan mediante ajuste fino supervisado, la normativa municipal se resuelve con RAG y los datos de instalaciones y trámites se obtienen mediante herramientas (tool calling). Es, por tanto, un ejemplo completo de pipeline "identidad + RAG + agente" sobre un modelo pequeño.
 
 El modelo tiene 1.543.714.304 parametros (1,54 mil millones) en una arquitectura transformer decoder-only de la familia Qwen2, con pesos en safetensors y un repositorio de 3,1 GB. El entrenamiento se hizo con QLoRA (r=16, alpha=32, todas las capas lineales, 3 epochs, learning rate 2e-4) sobre 419 conversaciones sinteticas generadas con Gemini, y se distribuyen tambien el adaptador LoRA y una conversion a GGUF.
 
@@ -89,8 +89,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 |---|---|---|---|---|---|
 | Mavi-1.5B | 1,54 mil millones | No disponible | Fine-tune en turco para RAG y agente municipal | Apache-2.0 | safetensors + LoRA + GGUF; 0 descargas, 1 like en el momento de la consulta |
 | Qwen2.5-1.5B-Instruct (base) | 1,54 mil millones | No disponible en la informacion | Modelo generalista de proposito general, multilingue | Apache-2.0 | Ampliamente distribuido; es el punto de partida de este fine-tune |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 mil millones (segun el nombre del repositorio) | No disponible | Destilado orientado a razonamiento | No verificada en la informacion | Repositorio publico en HuggingFace; datos tecnicos no consultados |
-| VibeThinker-1.5B | 1,5 mil millones (segun el nombre del repositorio) | No disponible | Orientado a razonamiento | No verificada en la informacion | Repositorio publico en HuggingFace; datos tecnicos no consultados |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 mil millones (segun el nombre del repositorio) | No disponible | Destilado orientado a razonamiento | No verificada en la informacion | Repositorio publico en Hugging Face; datos tecnicos no consultados |
+| VibeThinker-1.5B | 1,5 mil millones (segun el nombre del repositorio) | No disponible | Orientado a razonamiento | No verificada en la informacion | Repositorio publico en Hugging Face; datos tecnicos no consultados |
 
 Los dos ultimos solo aparecen como resultado de busqueda; no se dispone de sus especificaciones en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
@@ -109,7 +109,7 @@ Los dos ultimos solo aparecen como resultado de busqueda; no se dispone de sus e
 
 ## Enlaces
 
-- Modelo fusionado en HuggingFace: https://huggingface.co/sumeyragurlek/Mavi-1.5B
+- Modelo fusionado en Hugging Face: https://huggingface.co/sumeyragurlek/Mavi-1.5B
 - Adaptador LoRA: https://huggingface.co/sumeyragurlek/Mavi-1.5B-LoRA
 - Version GGUF: https://huggingface.co/sumeyragurlek/Mavi-1.5B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/sumeyragurlek/mavi-1.5b-veri

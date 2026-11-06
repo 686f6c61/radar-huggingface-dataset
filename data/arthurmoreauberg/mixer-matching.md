@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Matching es un modelo experimental publicado por el usuario arthurmoreauberg en HuggingFace. Se trata de una implementación funcional de una arquitectura de tipo Mixer (MLP-Mixer aplicada a una tarea de matching) con una configuración etiquetada por el autor como "giant" dentro de su propio esquema. El repositorio incluye código transparente y pruebas de humo repetibles, y el propio autor indica explícitamente que omite cualquier afirmación sobre rendimiento en benchmarks.
+Mixer for Matching es un modelo experimental publicado por el usuario arthurmoreauberg en Hugging Face. Se trata de una implementación funcional de una arquitectura de tipo Mixer (MLP-Mixer aplicada a una tarea de matching) con una configuración etiquetada por el autor como "giant" dentro de su propio esquema. El repositorio incluye código transparente y pruebas de humo repetibles, y el propio autor indica explícitamente que omite cualquier afirmación sobre rendimiento en benchmarks.
 
 Con solo 49.600 parámetros totales, el modelo es de tamano minimo y no debe confundirse con un modelo de lenguaje de gran escala. El checkpoint incluido (`model.safetensors`) es una inicialización valida para pruebas de humo, no un modelo entrenado. El autor declara que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -71,8 +71,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - La implementacion es personalizada, por lo que las APIs genericas de carga automatica requieren un adaptador explicito.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - La licencia es MIT, permisiva para uso comercial, pero el autor recomienda revisar aparte los terminos de los datos de origen si se emplean conjuntos de datos externos.
-- Las fechas de creacion y actualizacion del repositorio (2026-10-05) corresponden a los metadatos de HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio (2026-10-05) corresponden a los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthurmoreauberg/mixer-matching
+- Hugging Face: https://huggingface.co/arthurmoreauberg/mixer-matching

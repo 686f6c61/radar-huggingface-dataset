@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SIA (este modelo) | LoRA de analogia selectiva sobre FLUX.2 [klein] y Qwen-Image-2.1 | Rango 16 (adaptador) | No aplica | No comercial (por backbone) | Pesos en HuggingFace, codigo en GitHub |
-| FLUX.2 [klein] Base 9B | Modelo de difusion base | 9B | No aplica | FLUX Non-Commercial License v2.1 | HuggingFace |
-| Qwen-Image-2.1 | Modelo de difusion base | No disponible | No aplica | Qwen Research License Agreement | HuggingFace |
+| SIA (este modelo) | LoRA de analogia selectiva sobre FLUX.2 [klein] y Qwen-Image-2.1 | Rango 16 (adaptador) | No aplica | No comercial (por backbone) | Pesos en Hugging Face, codigo en GitHub |
+| FLUX.2 [klein] Base 9B | Modelo de difusion base | 9B | No aplica | FLUX Non-Commercial License v2.1 | Hugging Face |
+| Qwen-Image-2.1 | Modelo de difusion base | No disponible | No aplica | Qwen Research License Agreement | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre SIA y otros metodos de edicion por analogia en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre SIA y otros metodos de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selective-image-analogy/SIA-weights
+- Modelo en Hugging Face: https://huggingface.co/selective-image-analogy/SIA-weights
 - Pagina del proyecto: https://selective-image-analogy.github.io/
 - Codigo: https://github.com/alimohammadiamirhossein/selective-image-analogy
 - Paper (DOI): https://doi.org/10.1145/3829340.3842205

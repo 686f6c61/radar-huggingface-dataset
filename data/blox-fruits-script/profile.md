@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Blox-Fruits-Script/profile` en HuggingFace no contiene un modelo de inteligencia artificial. Se trata de una pagina de perfil de usuario en la plataforma HuggingFace, correspondiente a un desarrollador identificado como "Retherd". El contenido del README es una presentacion personal que menciona interes en desarrollo de software, proyectos de IA, Python y herramientas open source, sin incluir ningun artefacto de modelo, pesos, tokenizador o configuracion de inferencia.
+El repositorio `Blox-Fruits-Script/profile` en Hugging Face no contiene un modelo de inteligencia artificial. Se trata de una pagina de perfil de usuario en la plataforma Hugging Face, correspondiente a un desarrollador identificado como "Retherd". El contenido del README es una presentacion personal que menciona interes en desarrollo de software, proyectos de IA, Python y herramientas open source, sin incluir ningun artefacto de modelo, pesos, tokenizador o configuracion de inferencia.
 
 No existe arquitectura, parametros, contexto ni ninguna especificacion tecnica asociada a un modelo. Tampoco se han publicado benchmarks ni documentacion de capacidades. El repositorio tiene 0 descargas y 0 likes, y fue creado el 7 de septiembre de 2026.
 
@@ -66,8 +66,8 @@ No disponible. Al no tratarse de un modelo de IA, no existe una categoria compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blox-Fruits-Script/profile
+- Hugging Face: https://huggingface.co/Blox-Fruits-Script/profile
 - Perfil de GitHub mencionado en el README: https://github.com/ (enlace generico, no especifico)
 - Proyectos destacados mencionados: https://huggingface.co/ (enlaces genericos)
 
-Nota: los enlaces de los proyectos destacados en el README apuntan a la pagina principal de HuggingFace y no a repositorios concretos.
+Nota: los enlaces de los proyectos destacados en el README apuntan a la pagina principal de Hugging Face y no a repositorios concretos.

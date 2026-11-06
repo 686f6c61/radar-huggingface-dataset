@@ -83,7 +83,7 @@ El modelo QUASAR es el más pequeño y el de mayor calidad entre las versiones N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/MirkoCovizzi/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper QUASAR: https://arxiv.org/abs/2608.13966
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

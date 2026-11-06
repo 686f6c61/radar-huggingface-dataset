@@ -100,7 +100,7 @@ La principal diferencia frente a modelos grandes es el tamano y la especializaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ISB369/shellminator-270m-bash-distilled
+- Repositorio Hugging Face: https://huggingface.co/ISB369/shellminator-270m-bash-distilled
 - Dataset destilado (30K qwen): https://huggingface.co/datasets/ISB369/shellminator-bash-dataset
 - Dataset limpio (10K combinado): https://huggingface.co/datasets/ISB369/shellminator-bash-clean
 - Dataset combinado (36K, para reentrenamiento): https://huggingface.co/datasets/ISB369/shellminator-bash-combined

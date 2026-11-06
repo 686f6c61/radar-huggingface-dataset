@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - GPU con soporte FP8 nativo: el autor indica L40S, H100, H200 "y posteriores". No se listan GPUs de consumo.
 - Compatibilidad con GPU de consumo: no confirmada en la informacion disponible. Por tamano de pesos (30,4 GB) no cabe con holgura en GPUs de consumo de 24 GB, y las de 32 GB no dejarían margen para el contexto.
 - El modelo de 16 bits (OneJev-27B) requiere 54,7 GB de pesos y por tanto un nodo de 80 GB o varias GPUs.
-- Opciones de despliegue documentadas: servidor propio `qev serve` (instalable desde el repositorio de GitHub de OneJev) con cliente Python `qev.Client`; el modelo está marcado como `endpoints_compatible` en HuggingFace. No se documentan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible; el formato compressed-tensors es el habitual en despliegues con vLLM, pero su compatibilidad no está confirmada por el autor.
+- Opciones de despliegue documentadas: servidor propio `qev serve` (instalable desde el repositorio de GitHub de OneJev) con cliente Python `qev.Client`; el modelo está marcado como `endpoints_compatible` en Hugging Face. No se documentan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible; el formato compressed-tensors es el habitual en despliegues con vLLM, pero su compatibilidad no está confirmada por el autor.
 - Latencia medida en H200 con captura de 1280x720: 168 ms para 1 pregunta y 298 ms para 10 preguntas en una sola petición. El throughput agregado no está publicado.
 
 ## Comparativa con modelos similares
@@ -97,9 +97,9 @@ No se dispone de informacion sobre modelos de decision multimodal comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev-27B-FP8
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-27B-FP8
 - Modelo base (16 bits): https://huggingface.co/OmniJev/OneJev-27B
-- Coleccion OneJev en HuggingFace: https://huggingface.co/collections/OmniJev/onejev
+- Coleccion OneJev en Hugging Face: https://huggingface.co/collections/OmniJev/onejev
 - Repositorio en GitHub: https://github.com/OmniJev/OneJev
 - Licencia en GitHub: https://github.com/OmniJev/OneJev/blob/main/LICENSE
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/

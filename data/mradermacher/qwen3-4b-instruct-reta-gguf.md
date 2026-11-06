@@ -6,7 +6,7 @@ mradermacher/Qwen3-4B-Instruct-RETA-GGUF es un repositorio de cuantizaciones est
 
 El repositorio se limita a distribuir los pesos cuantizados. La model card no incluye información sobre licencia, idiomas soportados, pipeline de tarea, composición del dataset de entrenamiento ni resultados de evaluación. La única información técnica declarada son los parámetros internos del script de cuantización (quantize_version 2, output_tensor_quantised 1, convert_type hf) y la lista exacta de cuantizaciones generadas.
 
-Su relevancia práctica es acotada pero clara: permite desplegar un modelo de la familia Qwen3 de aproximadamente 4.000 millones de parámetros en hardware de gama de consumo mediante cuantizaciones que van desde x-f16 (máxima fidelidad) hasta Q2_K (mínimo uso de memoria). El repositorio, según los metadatos de HuggingFace, registra 0 descargas y 0 likes en la fecha de consulta, y fue creado el 2026-09-11.
+Su relevancia práctica es acotada pero clara: permite desplegar un modelo de la familia Qwen3 de aproximadamente 4.000 millones de parámetros en hardware de gama de consumo mediante cuantizaciones que van desde x-f16 (máxima fidelidad) hasta Q2_K (mínimo uso de memoria). El repositorio, según los metadatos de Hugging Face, registra 0 descargas y 0 likes en la fecha de consulta, y fue creado el 2026-09-11.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La informacion disponible no describe la arquitectura del modelo subyacente ni s
 
 Por la nomenclatura del modelo base (ttttonyhe/Qwen3-4B-Instruct-RETA) puede inferirse que se trata de un ajuste o variante sobre Qwen3-4B-Instruct, con el sufijo "RETA" correspondiente a una modificacion no descrita en la informacion proporcionada. El sufijo "Instruct" indica que la variante base esta orientada a seguir instrucciones. Cualquier afirmacion adicional sobre atencion, tipo de normalizacion, uso de RoPE, decodificacion especulativa u otras innovaciones tecnicas no esta respaldada por los datos disponibles y debe considerarse no verificada.
 
-En cuanto al artefacto de cuantizacion, el proceso aplicado es el habitual de llama.cpp: conversion desde pesos HuggingFace a GGUF y posterior cuantizacion estatica con `output_tensor_quantised` activado, lo que implica que los tensores de salida (incluida la capa de proyeccion del vocabulario) tambien se cuantizan. La disponibilidad de IQ4_XS junto a las familias K-quant indica compatibilidad con versiones relativamente recientes de llama.cpp.
+En cuanto al artefacto de cuantizacion, el proceso aplicado es el habitual de llama.cpp: conversion desde pesos Hugging Face a GGUF y posterior cuantizacion estatica con `output_tensor_quantised` activado, lo que implica que los tensores de salida (incluida la capa de proyeccion del vocabulario) tambien se cuantizan. La disponibilidad de IQ4_XS junto a las familias K-quant indica compatibilidad con versiones relativamente recientes de llama.cpp.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas o
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: la ficha de HuggingFace no especifica licencia. Antes de cualquier uso comercial debe verificarse la licencia del modelo base (ttttonyhe/Qwen3-4B-Instruct-RETA) y, en su caso, la del modelo original del que este derive. Sin esa verificacion, el uso en produccion comercial no esta autorizado de forma explicita.
+- Ausencia de licencia declarada: la ficha de Hugging Face no especifica licencia. Antes de cualquier uso comercial debe verificarse la licencia del modelo base (ttttonyhe/Qwen3-4B-Instruct-RETA) y, en su caso, la del modelo original del que este derive. Sin esa verificacion, el uso en produccion comercial no esta autorizado de forma explicita.
 - Model card practicamente vacia: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni tareas evaluadas. Es imposible valorar el modelo con criterios de calidad reproducibles a partir de esta ficha.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala (aproximadamente 4B de parametros); no se han publicado evaluaciones de fidelidad factual para esta variante concreta.
 - Perdida de calidad por cuantizacion: las cuantizaciones Q3_K_S, Q2_K e IQ4_XS reducen la precision de los pesos de forma notable. En modelos pequenos el deterioro es mas visible que en modelos grandes, especialmente en tareas de razonamiento y codigo. Se recomienda Q5_K_M o superior cuando la memoria lo permita.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas o
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-RETA-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3-4B-Instruct-RETA-GGUF
 - Modelo base declarado en la model card: https://huggingface.co/ttttonyhe/Qwen3-4B-Instruct-RETA
 - Pagina del autor de las cuantizaciones: https://huggingface.co/mradermacher
 

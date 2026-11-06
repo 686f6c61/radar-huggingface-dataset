@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (modelos de decisión es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZephClick/jeff-qwen3.5-0.8b-gguf
+- Repositorio Hugging Face: https://huggingface.co/ZephClick/jeff-qwen3.5-0.8b-gguf
 - Modelo base Jeff-Qwen3.5-0.8B: https://huggingface.co/jeff-legacy/Jeff-Qwen3.5-0.8B
 - Modelo upstream Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código de Jeff (MIT): https://github.com/firelex/jeff

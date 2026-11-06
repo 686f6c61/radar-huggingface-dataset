@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xw17/gemma-3-12b-it_SFT_lora_noneeg` es un repositorio de adaptadores publicado en HuggingFace por el usuario xw17. El identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre `gemma-3-12b-it`, aunque la model card no lo confirma: se trata de la plantilla automática de HuggingFace sin ninguna sección completada. El tamaño del repositorio (0,2 GB) es coherente con pesos de adaptador y no con un modelo completo, ya que 12B parámetros en bf16 ocuparían aproximadamente 24 GB.
+`xw17/gemma-3-12b-it_SFT_lora_noneeg` es un repositorio de adaptadores publicado en Hugging Face por el usuario xw17. El identificador sugiere un ajuste fino supervisado (SFT) mediante LoRA sobre `gemma-3-12b-it`, aunque la model card no lo confirma: se trata de la plantilla automática de Hugging Face sin ninguna sección completada. El tamaño del repositorio (0,2 GB) es coherente con pesos de adaptador y no con un modelo completo, ya que 12B parámetros en bf16 ocuparían aproximadamente 24 GB.
 
 El modelo parece orientado a la personalización de un LLM instruct de 12B para un dominio concreto de generación de texto. El sufijo `noneeg` del identificador es opaco y no se explica en la documentación; podría indicar la exclusión de un subconjunto de datos (por ejemplo, registros de electroencefalografía), pero no hay ninguna evidencia que lo respalde.
 
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada en el momento de redactar esta ficha: 0 desc
 
 No hay informacion publicada sobre la arquitectura efectiva del adaptador ni sobre el procedimiento de entrenamiento. La model card no especifica datos de entrenamiento, numero de tokens, composicion del dataset, hiperparametros, regimen de precision (fp32, bf16, fp16 o fp8) ni si hubo etapas de RLHF o DPO. Tampoco se documentan la infraestructura de computo ni el consumo energetico asociado.
 
-El unico dato tecnico indirecto es el tamano del repositorio: 0,2 GB. Un checkpoint completo de 12B parametros en bf16 ronda los 24 GB, por lo que este repositorio contiene casi con certeza unicamente los tensores del adaptador (y posiblemente el tokenizador o ficheros de configuracion). La etiqueta `arxiv:1910.09700` que aparece en los metadatos del Hub no corresponde a un articulo sobre este modelo: es la referencia de Lacoste et al. sobre estimacion de emisiones que figura en la plantilla de model card de HuggingFace. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o atencion con ventana deslizante.
+El unico dato tecnico indirecto es el tamano del repositorio: 0,2 GB. Un checkpoint completo de 12B parametros en bf16 ronda los 24 GB, por lo que este repositorio contiene casi con certeza unicamente los tensores del adaptador (y posiblemente el tokenizador o ficheros de configuracion). La etiqueta `arxiv:1910.09700` que aparece en los metadatos del Hub no corresponde a un articulo sobre este modelo: es la referencia de Lacoste et al. sobre estimacion de emisiones que figura en la plantilla de model card de Hugging Face. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o atencion con ventana deslizante.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados para establecer una comparativa cuantitativa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_noneeg
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_noneeg
 - Calculadora de impacto de machine learning citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Articulo referenciado en la etiqueta `arxiv:1910.09700` (Lacoste et al., estimacion de emisiones; corresponde a la plantilla, no al modelo): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio de entrenamiento o demo del autor: no disponible.

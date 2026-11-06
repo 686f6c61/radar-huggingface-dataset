@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kirapopov/mae-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada **Mae**, a escala **tiny**, orientada a experimentos de **multitarea**. El autor lo presenta explícitamente como un punto de partida inspeccionable antes de lanzar un entrenamiento completo: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para smoke tests**, no un modelo entrenado ni evaluado.
+`kirapopov/mae-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada **Mae**, a escala **tiny**, orientada a experimentos de **multitarea**. El autor lo presenta explícitamente como un punto de partida inspeccionable antes de lanzar un entrenamiento completo: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para smoke tests**, no un modelo entrenado ni evaluado.
 
 El modelo registra 24.832 parámetros totales según los metadatos de safetensors, lo que sitúa el artefacto en el rango de unos pocos kilobytes de pesos en fp32. La arquitectura descrita combina atención estándar con una fusión mediante `concat mlp`, activación GELU y normalización `instancenorm`, con una receta por defecto de AdamW y scheduler polinómico. No se documentan tokens de entrenamiento, composición del dataset, ni fases de RLHF/DPO.
 
@@ -23,7 +23,7 @@ Su relevancia ahora es acotada y de carácter metodológico: sirve como plantill
 | Escala declarada | tiny |
 | Estado del checkpoint | Inicialización para smoke tests; no entrenado |
 | Tamaño del repo | 0.0 GB |
-| Fecha de publicación | 17 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 17 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ No se han identificado en la información disponible modelos públicos comparabl
 | Estado | Inicialización, sin entrenar | Pesos entrenados y publicados | Variable; habitualmente sin entrenar |
 | Benchmarks publicados | Ninguno (declarado) | Métricas publicadas por el autor original | Habitualmente ninguno |
 | Licencia | MIT | Variable según modelo | Variable |
-| Disponibilidad | HuggingFace, repo de 0.0 GB | HuggingFace / hubs de modelos | HuggingFace / GitHub |
+| Disponibilidad | Hugging Face, repo de 0.0 GB | Hugging Face / hubs de modelos | Hugging Face / GitHub |
 | Encaje de uso | Ablaciones y smoke tests | Inferencia real de tareas | Reproducción de experimentos |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han identificado en la información disponible modelos públicos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kirapopov/mae-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/kirapopov/mae-finetuned
 - `model.py` (artefacto principal): https://huggingface.co/kirapopov/mae-finetuned/blob/main/model.py
 - `config.json` (configuración de arquitectura): https://huggingface.co/kirapopov/mae-finetuned/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/kirapopov/mae-finetuned/blob/main/training_args.json

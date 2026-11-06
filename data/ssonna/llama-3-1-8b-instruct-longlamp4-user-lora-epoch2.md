@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Personalizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (LoRA por usuario LongLaMP-4) | Base 8B + 2452 adaptadores rank 8 | Heredado del base (hasta 128 000 tokens) | Si, 2452 perfiles | Llama 3.1 Community | HuggingFace, PEFT |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | Hasta 128 000 tokens | No (solo via prompting) | Llama 3.1 Community | HuggingFace |
-| Mistral 7B Instruct | 7B | 32 000 tokens aprox. | No | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B Instruct | 7B | 128 000 tokens aprox. | No | Apache 2.0 / Qwen | HuggingFace |
+| Este repo (LoRA por usuario LongLaMP-4) | Base 8B + 2452 adaptadores rank 8 | Heredado del base (hasta 128 000 tokens) | Si, 2452 perfiles | Llama 3.1 Community | Hugging Face, PEFT |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | Hasta 128 000 tokens | No (solo via prompting) | Llama 3.1 Community | Hugging Face |
+| Mistral 7B Instruct | 7B | 32 000 tokens aprox. | No | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B Instruct | 7B | 128 000 tokens aprox. | No | Apache 2.0 / Qwen | Hugging Face |
 
 Los modelos comparables de la misma categoria (instruct de 7-8B) no ofrecen personalizacion por usuario empaquetada; este repositorio aporta precisamente esa capa. La comparacion de rendimiento no puede establecerse porque no hay metricas publicadas en la informacion disponible.
 
@@ -90,7 +90,7 @@ Los modelos comparables de la misma categoria (instruct de 7-8B) no ofrecen pers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LongLaMP4-user-LoRA-epoch2
+- Modelo en Hugging Face: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LongLaMP4-user-LoRA-epoch2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Benchmark de referencia citado en la model card: LongLaMP-4 (topic writing, split basado en usuario); no se proporciona enlace directo en la informacion disponible.
 - Enfoque metodologico citado en la model card: OPPU; no se proporciona enlace directo en la informacion disponible.

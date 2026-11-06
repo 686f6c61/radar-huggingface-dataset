@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c0p50
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c0p50
 - Paper (Activation Oracles): https://arxiv.org/abs/2512.15674
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Sujeto interpretado: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-book-c0p50

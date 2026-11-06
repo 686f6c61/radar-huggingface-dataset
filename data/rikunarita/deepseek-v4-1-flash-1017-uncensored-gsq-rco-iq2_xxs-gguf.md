@@ -100,7 +100,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF
+- Hugging Face: https://huggingface.co/Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF
 - Modelo base: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Repositorio llama.cpp: no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible en la información proporcionada

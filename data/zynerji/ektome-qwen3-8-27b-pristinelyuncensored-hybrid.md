@@ -99,7 +99,7 @@ La ventaja de la build HYBRID frente a otras cuantizaciones es la conservación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID
+- Modelo en Hugging Face: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID
 - Modelo base (BF16 reparado): https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored
 - Ficha en LLM Explorer (build base): https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored,2RRZbScVnr4ntDr90fDCmu
 - Ficha en LLM Explorer (build GPTQ-MTP): https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP,5B9Ez7pfpsPlkjLdKClgIF

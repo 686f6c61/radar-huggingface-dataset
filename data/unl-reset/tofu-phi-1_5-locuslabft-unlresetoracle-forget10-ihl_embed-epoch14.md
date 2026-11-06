@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch14` | 1.418 M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de unlearning (TOFU forget10) |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | no disponible | HuggingFace | Fine-tuning de Phi-1.5 sobre TOFU (modelo de referencia) |
-| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | HuggingFace | Modelo base de texto y código |
-| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4096 | MIT | HuggingFace | Modelo instructivo más reciente de la familia Phi |
+| `unl-reset/tofu-phi-1_5-...-epoch14` | 1.418 M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de unlearning (TOFU forget10) |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | no disponible | Hugging Face | Fine-tuning de Phi-1.5 sobre TOFU (modelo de referencia) |
+| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | Hugging Face | Modelo base de texto y código |
+| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4096 | MIT | Hugging Face | Modelo instructivo más reciente de la familia Phi |
 
 La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5`, del que este checkpoint deriva: la diferencia principal es la reinicialización de embeddings y la pérdida de olvido, no la arquitectura ni el tamaño. Frente a Phi-1.5 original, el checkpoint ha perdido parte de su conocimiento general al haber sido fine-tuneado sobre TOFU y posteriormente sometido a unlearning.
 
@@ -84,7 +84,7 @@ La comparación directa más relevante es con `locuslab/tofu_ft_phi-1.5`, del qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch14
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch14
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): no disponible en la información proporcionada

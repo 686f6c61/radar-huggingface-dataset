@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de comparaciones con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/GLM-4-32B-0414-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/GLM-4-32B-0414-FP8-dynamic
 - Modelo base: https://huggingface.co/zai-org/GLM-4-32B-0414
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

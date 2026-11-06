@@ -86,7 +86,7 @@ Ornith-1.5-9B destaca por su soporte multimodal (vision y video) y su contexto d
 
 ## Enlaces
 
-- [HuggingFace - OsaurusAI/Ornith-1.5-9B-JANG_4D](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_4D)
+- [Hugging Face - OsaurusAI/Ornith-1.5-9B-JANG_4D](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_4D)
 - [Modelo base - ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Web de Ornith AI - Blog de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Guia de Ornith AI](https://ornith.online/)

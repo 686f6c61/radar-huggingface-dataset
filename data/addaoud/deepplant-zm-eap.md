@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepPlant-ZM-EAP es un modelo de aprendizaje profundo publicado en HuggingFace por el usuario Addaoud bajo el identificador `Addaoud/DeepPlant-ZM-EAP`. Por sus etiquetas (`bioinformatics`, `plant-genomics`, `regulatory-genomics`) y su pipeline declarado como `other`, se trata de un modelo especializado en genómica regulatoria de plantas, no de un modelo de lenguaje generativo. El nombre sugiere un uso sobre *Zea mays* (maíz) y elementos reguladores, aunque la model card no aporta documentación que lo confirme.
+DeepPlant-ZM-EAP es un modelo de aprendizaje profundo publicado en Hugging Face por el usuario Addaoud bajo el identificador `Addaoud/DeepPlant-ZM-EAP`. Por sus etiquetas (`bioinformatics`, `plant-genomics`, `regulatory-genomics`) y su pipeline declarado como `other`, se trata de un modelo especializado en genómica regulatoria de plantas, no de un modelo de lenguaje generativo. El nombre sugiere un uso sobre *Zea mays* (maíz) y elementos reguladores, aunque la model card no aporta documentación que lo confirme.
 
 El repositorio contiene 236.879.362 parámetros en formato safetensors (aproximadamente 0,9 GB), lo que sitúa al modelo en el rango de los ~237 millones de parámetros, un tamaño habitual en arquitecturas de tipo transformer pequeño o CNN profunda aplicadas a secuencias genómicas. Se distribuye con licencia MIT y se ha subido mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`, lo que implica que el artefacto principal es un módulo PyTorch serializado y no un modelo compatible con `transformers` de forma nativa.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepPlant-ZM-EAP | 236,9 M | no disponible | Genómica regulatoria de plantas (no documentada) | MIT | HuggingFace, 21 descargas |
-| Nucleotide Transformer (InstaDeep) | 50 M – 2,5 B (varias variantes) | hasta 12 kb de secuencia en variantes largas | Genómica generalista multispecie | CC-BY-NC-SA 4.0 en varias variantes | HuggingFace, ampliamente documentado |
-| DNABERT-2 | ~117 M | ~10 kb efectivos | Genómica generalista | MIT | HuggingFace, paper publicado |
-| PlantCaduceus | ~30 M – 100 M (variantes) | ~1 kb | Genómica de plantas | no verificada en esta ficha | HuggingFace |
+| DeepPlant-ZM-EAP | 236,9 M | no disponible | Genómica regulatoria de plantas (no documentada) | MIT | Hugging Face, 21 descargas |
+| Nucleotide Transformer (InstaDeep) | 50 M – 2,5 B (varias variantes) | hasta 12 kb de secuencia en variantes largas | Genómica generalista multispecie | CC-BY-NC-SA 4.0 en varias variantes | Hugging Face, ampliamente documentado |
+| DNABERT-2 | ~117 M | ~10 kb efectivos | Genómica generalista | MIT | Hugging Face, paper publicado |
+| PlantCaduceus | ~30 M – 100 M (variantes) | ~1 kb | Genómica de plantas | no verificada en esta ficha | Hugging Face |
 
 La comparación es orientativa: los tres modelos alternativos cuentan con paper y evaluación publicada, mientras que DeepPlant-ZM-EAP carece de ambos. La licencia MIT es más permisiva que la de Nucleotide Transformer en sus variantes no comerciales, lo que puede ser un factor decisivo para uso industrial.
 
@@ -82,7 +82,7 @@ La comparación es orientativa: los tres modelos alternativos cuentan con paper 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Addaoud/DeepPlant-ZM-EAP
+- Modelo en Hugging Face: https://huggingface.co/Addaoud/DeepPlant-ZM-EAP
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible (la URL de la model card es un marcador de posición)

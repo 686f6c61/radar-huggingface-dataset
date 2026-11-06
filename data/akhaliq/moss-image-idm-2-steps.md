@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-IDM-2-Steps es un adaptador LoRA para el modelo text-to-image MOSS-Image-SFT de OpenMOSS-Team, entrenado por el usuario akhaliq de HuggingFace mediante una implementación comunitaria del método Intrinsic Distribution Matching (IDM). Su objetivo es reducir drásticamente el coste de inferencia: mientras el modelo base requiere 50 pasos con CFG (100 evaluaciones del DiT para una imagen de 1024²), este adaptador genera la misma imagen en solo 2 evaluaciones de red, sin necesidad de classifier-free guidance. Es, según el autor, el primer modelo abierto entrenado con la combinación de pérdidas de IDM (el repositorio oficial es solo de inferencia) y el primer modelo MOSS-Image entrenado específicamente para 2 pasos.
+MOSS-Image-IDM-2-Steps es un adaptador LoRA para el modelo text-to-image MOSS-Image-SFT de OpenMOSS-Team, entrenado por el usuario akhaliq de Hugging Face mediante una implementación comunitaria del método Intrinsic Distribution Matching (IDM). Su objetivo es reducir drásticamente el coste de inferencia: mientras el modelo base requiere 50 pasos con CFG (100 evaluaciones del DiT para una imagen de 1024²), este adaptador genera la misma imagen en solo 2 evaluaciones de red, sin necesidad de classifier-free guidance. Es, según el autor, el primer modelo abierto entrenado con la combinación de pérdidas de IDM (el repositorio oficial es solo de inferencia) y el primer modelo MOSS-Image entrenado específicamente para 2 pasos.
 
 El entrenamiento se realizó en unas 2 horas sobre una única GPU H200, con solo 1000 iteraciones y 249 prompts densos en texto, partiendo del adaptador de 4 pasos de darask0. A pesar del coste mínimo, el modelo mantiene una característica destacada de la familia MOSS-Image: la renderización legible de texto en inglés y chino, útil para carteles, cómics, caligrafía y composiciones editoriales. Está publicado bajo licencia Apache-2.0 e incluye scripts de inferencia, soporte ComfyUI vía nodo personalizado y todos los checkpoints intermedios del entrenamiento.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks estandarizados en la informacion di
 | Modelo | Pasos | CFG | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MOSS-Image-SFT (base) | 50 | 3 | Flow matching completo | no disponible | OpenMOSS-Team, abierto |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | 8 | no disponible | DMD en espacio de datos (2600 updates) | no disponible | Abierto en HuggingFace |
-| darask0/MOSS-Image_4-step_adapter_lora | 4 | 1 | DMAD (500 iters) | Apache-2.0 | Abierto en HuggingFace |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | 8 | no disponible | DMD en espacio de datos (2600 updates) | no disponible | Abierto en Hugging Face |
+| darask0/MOSS-Image_4-step_adapter_lora | 4 | 1 | DMAD (500 iters) | Apache-2.0 | Abierto en Hugging Face |
 | akhaliq/MOSS-Image-IDM-2-Steps | 2 | 1 (sin CFG) | IDM (1000 iters, export EMA 750) | Apache-2.0 | Abierto, con trainer y logs |
 
 ## Limitaciones y advertencias

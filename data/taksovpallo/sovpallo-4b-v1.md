@@ -4,7 +4,7 @@
 
 Sovpallo-4B-v1 es un ajuste fino por QLoRA del modelo Qwen3-4B en su variante ya cuantizada a 4 bits para MLX (`mlx-community/Qwen3-4B-4bit`), publicado por el usuario taksovpallo. El objetivo declarado por el autor es disponer de un asistente de IA local para desarrolladores sobre Apple Silicon: responder preguntas de programacion, escribir y explicar codigo, ayudar con arquitectura y depuracion, y resolver preguntas factuales de formato corto. El entrenamiento se realizo sobre el dataset SimpleQA (4.104 ejemplos de entrenamiento y 216 de validacion), con un loss de validacion de 0,201.
 
-El modelo tiene 4.022.468.096 parametros (aproximadamente 4,02 B) en formato denso, no MoE, y ocupa 2,3 GB en el repositorio de HuggingFace. Hereda de Qwen3-4B la arquitectura transformer decoder-only con Grouped Query Attention y una ventana de contexto nativa de 32.768 tokens (no confirmada de forma explicita en la model card del autor). Los idiomas declarados son ingles y ruso.
+El modelo tiene 4.022.468.096 parametros (aproximadamente 4,02 B) en formato denso, no MoE, y ocupa 2,3 GB en el repositorio de Hugging Face. Hereda de Qwen3-4B la arquitectura transformer decoder-only con Grouped Query Attention y una ventana de contexto nativa de 32.768 tokens (no confirmada de forma explicita en la model card del autor). Los idiomas declarados son ingles y ruso.
 
 Su relevancia es acotada pero concreta: demuestra un flujo de trabajo de fine-tuning completo sobre hardware de consumo Apple (M1 Pro), con metricas de rendimiento medidas (67 tokens/s y 2,41 GB de pico de memoria) y una receta reproducible (QLoRA con rank 64 sobre todas las capas y proyecciones). Ahora bien, no declara licencia, no publica benchmarks estandar y su validacion se limita a 50 preguntas, por lo que debe tratarse como un experimento reproducible mas que como un modelo listo para produccion.
 
@@ -101,7 +101,7 @@ No se dispone de datos que permitan comparar el rendimiento efectivo de Sovpallo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taksovpallo/Sovpallo-4B-v1
+- Modelo en Hugging Face: https://huggingface.co/taksovpallo/Sovpallo-4B-v1
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-4bit
 - Familia Qwen3 (Alibaba): https://huggingface.co/Qwen/Qwen3-4B
 - Libreria MLX y `mlx-lm`: https://github.com/ml-explore/mlx-lm

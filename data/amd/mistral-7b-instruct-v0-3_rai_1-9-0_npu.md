@@ -4,7 +4,7 @@
 
 El modelo `amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_npu` es una adaptación del conocido Mistral-7B-Instruct-v0.3 publicada por AMD, empaquetada en formato ONNX y optimizada mediante el toolkit Quark para su ejecución sobre las NPU integradas en los procesadores AMD Ryzen AI (RAI 1.9.0). No se trata de un modelo entrenado desde cero, sino de una conversión y cuantización del checkpoint original de Mistral AI destinada a acelerar la inferencia en hardware de PC con unidad de procesamiento neuronal dedicada.
 
-El modelo hereda la arquitectura transformer densa de Mistral-7B-Instruct-v0.3, con aproximadamente 7.250 millones de parámetros y una ventana de contexto de 32.768 tokens. Su propósito es ofrecer generación de texto conversacional en inglés con latencia reducida y bajo consumo energético en equipos con Ryzen AI, evitando la dependencia de una GPU dedicada. El repositorio tiene un tamaño de 8,1 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo hereda la arquitectura transformer densa de Mistral-7B-Instruct-v0.3, con aproximadamente 7.250 millones de parámetros y una ventana de contexto de 32.768 tokens. Su propósito es ofrecer generación de texto conversacional en inglés con latencia reducida y bajo consumo energético en equipos con Ryzen AI, evitando la dependencia de una GPU dedicada. El repositorio tiene un tamaño de 8,1 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha radica en que ejemplifica la tendencia de llevar modelos de 7B a la NPU del PC, un espacio tradicionalmente dominado por CPU y GPU. La licencia Apache 2.0 del modelo base se mantiene, lo que facilita su uso comercial, aunque las limitaciones prácticas vienen impuestas por el ecosistema de despliegue (ONNX Runtime, drivers Ryzen AI y la versión concreta del toolkit Quark).
 
@@ -78,14 +78,14 @@ La diferencia clave frente al checkpoint original y sus versiones GGUF es el bac
 - Riesgo de alucinación inherente a los modelos de 7B, especialmente en tareas factuales y matemáticas complejas.
 - La cuantización para NPU puede degradar la calidad respecto al checkpoint original en FP16; no se publican evaluaciones que cuantifiquen esa pérdida.
 - Dependencia estricta del stack Ryzen AI 1.9.0 y de drivers AMD; no es portable a otros aceleradores.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y una cuenta autenticada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y una cuenta autenticada.
 - Licencia Apache 2.0 permisiva para uso comercial, pero el usuario debe verificar las licencias de las herramientas de despliegue (ONNX Runtime, Quark, Ryzen AI SDK).
 - Sin soporte documentado de tool calling ni agentes multi-paso en esta conversión.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria prácticamente inexistentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - AMD Ryzen AI: https://www.amd.com/en/products/software/ryzen-ai.html
 - Quark (toolkit de cuantización de AMD): https://quark.docs.amd.com/

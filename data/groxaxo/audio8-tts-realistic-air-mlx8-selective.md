@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/groxaxo/Audio8-TTS-Realistic-Air-MLX8-Selective
+- Hugging Face: https://huggingface.co/groxaxo/Audio8-TTS-Realistic-Air-MLX8-Selective
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air
 - Revision del modelo base: `23c305cc013fde378edb459f538317043c993a74`
 - BENCHMARKS.md: https://huggingface.co/groxaxo/Audio8-TTS-Realistic-Air-MLX8-Selective/blob/main/BENCHMARKS.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-1.2B-Instruct-DSpark-5L-GGUF es un modelo de borrador (draft model) diseñado para acelerar la inferencia del modelo principal LiquidAI/LFM2.5-1.2B-Instruct mediante decodificación especulativa DSpark/DFlash. Lo publica el usuario tugot17 en HuggingFace y se distribuye en formato GGUF para su uso con llama.cpp (rama principal, merge #25173). Este sidecar no es un modelo autónomo: se carga junto al target GGUF y comparte con él los embeddings y la cabeza de salida, aportando únicamente el drafter de 5 capas con cabezas Markov de bajo rango y de confianza.
+LFM2.5-1.2B-Instruct-DSpark-5L-GGUF es un modelo de borrador (draft model) diseñado para acelerar la inferencia del modelo principal LiquidAI/LFM2.5-1.2B-Instruct mediante decodificación especulativa DSpark/DFlash. Lo publica el usuario tugot17 en Hugging Face y se distribuye en formato GGUF para su uso con llama.cpp (rama principal, merge #25173). Este sidecar no es un modelo autónomo: se carga junto al target GGUF y comparte con él los embeddings y la cabeza de salida, aportando únicamente el drafter de 5 capas con cabezas Markov de bajo rango y de confianza.
 
 El modelo base LFM2.5-1.2B-Instruct, desarrollado por Liquid AI, es un modelo híbrido de 1,17 mil millones de parámetros entrenado sobre 28 billones de tokens con refuerzo, optimizado para instrucción, uso de herramientas y tareas agénticas, con una ventana de contexto de 32.000 tokens. El drafter aquí descrito reduce la latencia de generación al proponer múltiples tokens por paso, manteniendo salidas idénticas a las del modelo original en modo greedy.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre otros draft models DSpark comparables en el 
 
 - No es un modelo autónomo: requiere el modelo target `LiquidAI/LFM2.5-1.2B-Instruct-GGUF` cargado en memoria; sin él, no produce salidas.
 - Dependencia de la versión de llama.cpp: el soporte DSpark/DFlash solo está disponible en la rama principal (merge #25173); versiones estables anteriores pueden no incluirlo.
-- Licencia no especificada: la model card no indica licencia, lo que puede generar incertidumbre legal para uso comercial. Se recomienda consultar la licencia del modelo base de Liquid AI (marcada como "other" en HuggingFace).
+- Licencia no especificada: la model card no indica licencia, lo que puede generar incertidumbre legal para uso comercial. Se recomienda consultar la licencia del modelo base de Liquid AI (marcada como "other" en Hugging Face).
 - Idiomas no documentados: no se ha publicado qué idiomas soporta el drafter, aunque al compartir embeddings con el target, hereda las capacidades multilingües de LFM2.5.
 - Riesgo de alucinación y sesgos: al ser un sidecar, no introduce sesgos adicionales, pero tampoco los mitiga; las limitaciones del modelo principal se mantienen.
 - Sin garantía de mejora en todos los escenarios: la tasa de aceptación de tokens propuestos depende de la distribución de tareas; en cargas muy específicas la aceleración puede ser marginal.

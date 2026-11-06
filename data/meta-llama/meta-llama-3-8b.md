@@ -6,7 +6,7 @@ Meta-Llama-3-8B es un modelo de lenguaje de gran tamano de tipo decoder-only, de
 
 El modelo cuenta con 8.030.261.248 parametros (segun los pesos en safetensors), una ventana de contexto de 8.192 tokens y un vocabulario ampliado de 128.256 entradas basado en tiktoken, lo que mejora la eficiencia de codificacion y el rendimiento multilingue respecto a la generacion anterior. Se entreno sobre mas de 15 billones de tokens y se sometio a un pipeline de ajuste supervisado (SFT) y optimizacion por preferencias humanas.
 
-Su relevancia actual radica en que se ha convertido en una de las referencias de la categoria 8B para despliegue local y en produccion: ofrece un equilibrio competitivo entre calidad, coste de inferencia y disponibilidad de cuantizaciones (GGUF, AWQ, GPTQ), lo que permite ejecutarlo tanto en GPU de consumo como en servidores dedicados. El acceso al repositorio oficial esta restringido (gated) y requiere aceptar las condiciones de uso en HuggingFace.
+Su relevancia actual radica en que se ha convertido en una de las referencias de la categoria 8B para despliegue local y en produccion: ofrece un equilibrio competitivo entre calidad, coste de inferencia y disponibilidad de cuantizaciones (GGUF, AWQ, GPTQ), lo que permite ejecutarlo tanto en GPU de consumo como en servidores dedicados. El acceso al repositorio oficial esta restringido (gated) y requiere aceptar las condiciones de uso en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -84,10 +84,10 @@ No se han proporcionado otros resultados de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Meta-Llama-3-8B | 8,03 B | 8.192 | Llama 3 Community License | Gated en HuggingFace |
+| Meta-Llama-3-8B | 8,03 B | 8.192 | Llama 3 Community License | Gated en Hugging Face |
 | Mistral 7B v0.1 | 7,24 B | 8.192 | Apache 2.0 | Abierta |
-| Gemma 7B | 8,5 B | 8.192 | Gemma Terms of Use | Gated en HuggingFace |
-| Llama 2 7B | 6,74 B | 4.096 | Llama 2 Community License | Gated en HuggingFace |
+| Gemma 7B | 8,5 B | 8.192 | Gemma Terms of Use | Gated en Hugging Face |
+| Llama 2 7B | 6,74 B | 4.096 | Llama 2 Community License | Gated en Hugging Face |
 
 Los datos de rendimiento comparado entre estos modelos no estan disponibles en la informacion proporcionada. En terminos de licencia, Mistral 7B ofrece condiciones mas permisivas (Apache 2.0) para uso comercial, mientras que Llama 3 y Gemma imponen restricciones adicionales.
 
@@ -98,14 +98,14 @@ Los datos de rendimiento comparado entre estos modelos no estan disponibles en l
 - Sesgos potenciales heredados del corpus web y de los datos de ajuste, incluidos sesgos de genero, raza y religion.
 - Ventana de contexto limitada a 8.192 tokens, inferior a la de modelos posteriores con 32K o 128K.
 - La licencia Llama 3 Community License impone condiciones de uso comercial (clausula de escala de usuarios mensuales) y restricciones de uso aceptable; no es una licencia de codigo abierto estandar.
-- El acceso al repositorio oficial esta restringido y requiere aceptar las condiciones en HuggingFace.
+- El acceso al repositorio oficial esta restringido y requiere aceptar las condiciones en Hugging Face.
 - Ausencia de capacidades multimodales, lo que limita su uso en tareas de vision o audio.
 - El modelo base no esta alineado para dialogo; se recomienda la variante Instruct para aplicaciones conversacionales.
 - No debe usarse para asesoramiento medico, legal o financiero sin supervision humana.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meta-llama/Meta-Llama-3-8B
+- Hugging Face: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Anuncio oficial de Meta: https://ai.meta.com/blog/meta-llama-3/
 - Pagina de modelos Llama: https://llama.meta.com/llama3/
 - Informacion corporativa de Meta: https://www.meta.com/about/

@@ -80,7 +80,7 @@ No hay modelos directamente comparables en la informacion disponible. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pinkelephantlimited/phone-llm
+- Hugging Face: https://huggingface.co/pinkelephantlimited/phone-llm
 - GitHub de Pink Elephant LLM: https://github.com/pinkelephantlimited/pink-elephant-llm
 - GitHub de Phone Helper: https://github.com/pinkelephantlimited/phone-helper
-- Perfil de Pink Elephant Limited en HuggingFace: https://huggingface.co/pinkelephantlimited
+- Perfil de Pink Elephant Limited en Hugging Face: https://huggingface.co/pinkelephantlimited

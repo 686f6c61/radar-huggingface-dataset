@@ -104,7 +104,7 @@ Diferencias destacables: frente a las alternativas oficiales, este repositorio n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chriswessels/Darkstar-Qwen3.8-27B-Abliterated-oQ6e-mtp
+- Hugging Face: https://huggingface.co/chriswessels/Darkstar-Qwen3.8-27B-Abliterated-oQ6e-mtp
 - Repositorio de oQ / oMLX citado en la model card: https://github.com/jundot/omlx
 - Framework MLX (implícito por library_name: mlx, no citado en la model card): https://github.com/ml-explore/mlx
 - mlx-lm (runner de modelos de lenguaje sobre MLX, no citado en la model card): https://github.com/ml-explore/mlx-lm

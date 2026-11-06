@@ -26,7 +26,7 @@ Su relevancia es practica: permite llevar un detector de categoria media (varian
 | Nucleos NPU utilizados | 1 |
 | Configuracion incluida | yolov8m-640x640-w8a8-1 |
 | Tamano del repositorio | 0,0 GB (solo configuracion y documentacion) |
-| Fecha de publicacion | 2026-10-02 (segun la ficha de HuggingFace) |
+| Fecha de publicacion | 2026-10-02 (segun la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ Las cifras de parametros de las variantes s y l corresponden a la documentacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8m
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov8m
 - RKNN Model Zoo (Rockchip): https://github.com/airockchip/rknn_model_zoo
 - Ejemplo de YOLOv8 en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Modelo fuente (fork de Ultralytics YOLOv8): https://github.com/airockchip/ultralytics_yolov8

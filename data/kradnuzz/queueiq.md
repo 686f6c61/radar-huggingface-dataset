@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QueueIQ es un repositorio publicado en HuggingFace por el usuario Kradnuzz bajo identificador `Kradnuzz/QueueIQ`. En el momento de la consulta, la model card asociada no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia MIT, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. Tampoco se declara un pipeline de HuggingFace, idiomas soportados ni familia de modelos.
+QueueIQ es un repositorio publicado en Hugging Face por el usuario Kradnuzz bajo identificador `Kradnuzz/QueueIQ`. En el momento de la consulta, la model card asociada no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia MIT, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. Tampoco se declara un pipeline de Hugging Face, idiomas soportados ni familia de modelos.
 
 El repositorio registra 0 descargas y 0 "likes", no tiene tags tecnicos mas alla de `license:mit` y `region:us`, y su fecha de creacion y ultima actualizacion coinciden (13 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior. No existe informacion publica que permita determinar si se trata de un modelo de lenguaje, un modelo de embeddings, un clasificador, un componente de infraestructura o un artefacto auxiliar.
 
@@ -71,5 +71,5 @@ No disponible. No se ha podido identificar la categoria del modelo ni, por exten
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kradnuzz/QueueIQ
+- Repositorio en Hugging Face: https://huggingface.co/Kradnuzz/QueueIQ
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo. Los resultados recuperados correspondian a contenido no relacionado (Geometry Dash) y se descartan como fuentes.

@@ -74,5 +74,5 @@ No disponible. Este proyecto no es un modelo de lenguaje ni un agente de IA gene
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/snapkitty-twin-mars-asm
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/snapkitty-twin-mars-asm
 - Repositorio GitHub del proyecto: https://github.com/SNAPKITTYWEST/TWIN-MARS

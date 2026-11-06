@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vovanrew/Qwen3.5-2B-PlantUML-LoRA | 2B (base) + LoRA | No disponible | Imagen de diagrama UML a PlantUML | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-2B (base) | 2B | No disponible | Image-text-to-text general | Apache-2.0 (segun model card del adaptador) | HuggingFace |
+| vovanrew/Qwen3.5-2B-PlantUML-LoRA | 2B (base) + LoRA | No disponible | Imagen de diagrama UML a PlantUML | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-2B (base) | 2B | No disponible | Image-text-to-text general | Apache-2.0 (segun model card del adaptador) | Hugging Face |
 | Alternativas especializadas en image-to-PlantUML | No disponible | No disponible | Conversion de diagramas a codigo | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vovanrew/Qwen3.5-2B-PlantUML-LoRA
+- Modelo en Hugging Face: https://huggingface.co/vovanrew/Qwen3.5-2B-PlantUML-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del estudio de fine-tuning: https://github.com/vovanrew/plantuml-recognition-fine-tuning
 - Receta de entrenamiento: https://github.com/vovanrew/plantuml-recognition-fine-tuning/blob/main/methodology/training-recipe.md

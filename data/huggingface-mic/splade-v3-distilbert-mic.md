@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`splade-v3-distilbert-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en HuggingFace, derivado del modelo `naver/splade-v3-distilbert`. No se trata de un modelo funcional destinado a producción, sino de una versión "slim" (reducida) de los pesos y del pipeline de Sentence Transformers, empaquetada junto con manifiestos de contrato, expectativas de framework y procedencia de la fixture. La model card indica explícitamente que los pesos son aleatorios y no representan la calidad de recuperación del modelo fuente.
+`splade-v3-distilbert-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en Hugging Face, derivado del modelo `naver/splade-v3-distilbert`. No se trata de un modelo funcional destinado a producción, sino de una versión "slim" (reducida) de los pesos y del pipeline de Sentence Transformers, empaquetada junto con manifiestos de contrato, expectativas de framework y procedencia de la fixture. La model card indica explícitamente que los pesos son aleatorios y no representan la calidad de recuperación del modelo fuente.
 
 El modelo base, `naver/splade-v3-distilbert`, es un modelo SPLADE (Sparse Lexical and Expansion) basado en DistilBERT, utilizado para recuperación de información mediante representaciones dispersas aprendidas. SPLADE combina la eficiencia de los índices invertidos tradicionales con la capacidad semántica de los transformers, generando vectores dispersos de alta dimensionalidad que expanden términos de consulta y documento.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| splade-v3-distilbert-mic | 2.088.058 | no disponible | Fixture SPLADE (pesos aleatorios) | no disponible | HuggingFace, 0 descargas |
-| naver/splade-v3-distilbert | no disponible en la informacion | no disponible | SPLADE sobre DistilBERT | no disponible | HuggingFace (modelo fuente) |
-| SPLADE-v3 (ensemble) | no disponible en la informacion | no disponible | SPLADE | no disponible | HuggingFace |
-| DistilBERT base | ~66M | 512 tokens (tipico) | Transformer encoder | Apache 2.0 (tipico) | HuggingFace |
+| splade-v3-distilbert-mic | 2.088.058 | no disponible | Fixture SPLADE (pesos aleatorios) | no disponible | Hugging Face, 0 descargas |
+| naver/splade-v3-distilbert | no disponible en la informacion | no disponible | SPLADE sobre DistilBERT | no disponible | Hugging Face (modelo fuente) |
+| SPLADE-v3 (ensemble) | no disponible en la informacion | no disponible | SPLADE | no disponible | Hugging Face |
+| DistilBERT base | ~66M | 512 tokens (tipico) | Transformer encoder | Apache 2.0 (tipico) | Hugging Face |
 
 La comparación relevante es con el modelo fuente `naver/splade-v3-distilbert`, del cual este artefacto es una versión reducida con pesos aleatorios. No se dispone de datos de benchmarks ni de licencia para establecer una comparación cuantitativa rigurosa.
 
@@ -83,11 +83,11 @@ La comparación relevante es con el modelo fuente `naver/splade-v3-distilbert`, 
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: la licencia no está declarada, lo que impide asumir permisos de uso comercial. Es necesario consultar el repositorio del modelo base para conocer las condiciones.
 - Caveat para producción: al ser un artefacto de test con 0 descargas y 0 likes, no hay evidencia de uso en entornos reales ni de mantenimiento por parte del autor.
-- El repositorio depende de enlaces externos (manifiesto, expectativas, procedencia) alojados en un espacio estático de HuggingFace, lo que puede afectar a la reproducibilidad a largo plazo.
+- El repositorio depende de enlaces externos (manifiesto, expectativas, procedencia) alojados en un espacio estático de Hugging Face, lo que puede afectar a la reproducibilidad a largo plazo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/splade-v3-distilbert-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/splade-v3-distilbert-mic
 - Modelo base: https://huggingface.co/naver/splade-v3-distilbert
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/splade-v3-distilbert-mic/blob/main/integration.json
 - Uso con Sentence Transformers: https://huggingface.co/huggingface-mic/splade-v3-distilbert-mic/blob/main/integrations/sentence_transformers/usage.md

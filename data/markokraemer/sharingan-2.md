@@ -75,8 +75,8 @@ Todos los resultados son 6-max, con duplicate deals y AIVAT, en mbb/game (1 mbb/
 
 | Modelo | Tipo | Tamaño | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SHARINGAN-2 | Blueprint MCCFR (PLCP1) | 169,9 GB, 14,5B infosets | 6-max NLHE, 100 bb | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
-| SHARINGAN-1 | Blueprint MCCFR (PLCP1) | no disponible | 6-max NLHE, 100 bb | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
+| SHARINGAN-2 | Blueprint MCCFR (PLCP1) | 169,9 GB, 14,5B infosets | 6-max NLHE, 100 bb | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
+| SHARINGAN-1 | Blueprint MCCFR (PLCP1) | no disponible | 6-max NLHE, 100 bb | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
 | Pluribus (Brown & Sandholm, 2019) | Blueprint + búsqueda en tiempo real | no disponible públicamente | 6-max NLHE, 100 bb | no disponible | No publicado como pesos; solo descrito en el artículo |
 | Libratus (Brown & Sandholm, 2017) | CFR + subgame solving | no disponible públicamente | Heads-up NLHE | no disponible | No publicado como pesos |
 
@@ -94,7 +94,7 @@ Todos los resultados son 6-max, con duplicate deals y AIVAT, en mbb/game (1 mbb/
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markokraemer/sharingan-2
+- Hugging Face: https://huggingface.co/markokraemer/sharingan-2
 - Modelo predecesor: https://huggingface.co/markokraemer/sharingan-1
 - Repositorio de código (Rust): https://github.com/markokraemer/poker-sharingan
 - Sitio del proyecto: https://sharingan.poker

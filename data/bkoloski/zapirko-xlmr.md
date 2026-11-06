@@ -74,9 +74,9 @@ F1 sobre texto macedonio reservado, con el esquema de ventanas descrito. La comp
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zapirko-xlmr | 277 M | 512 tokens (ventanas solapadas para textos largos) | Repuntuación y truecasing en macedonio | MIT | HuggingFace |
+| zapirko-xlmr | 277 M | 512 tokens (ventanas solapadas para textos largos) | Repuntuación y truecasing en macedonio | MIT | Hugging Face |
 | zapirko (Gemma-2-2B + LoRA) | 2B | no disponible | Repuntuación y truecasing en macedonio (generativo) | no disponible | Ollama |
-| XLM-RoBERTa base | 278 M | 512 tokens | Modelo base multilingüe, sin fine-tuning de puntuación | MIT | HuggingFace |
+| XLM-RoBERTa base | 278 M | 512 tokens | Modelo base multilingüe, sin fine-tuning de puntuación | MIT | Hugging Face |
 
 Frente a zapirko, el modelo generativo de 2B, zapirko-xlmr obtiene F1 superior en comas, puntos y mayúsculas en los tres conjuntos comparables (por ejemplo, 0,69 frente a 0,64 en coma y 0,80 frente a 0,77 en punto en párrafos web) con un coste computacional tres órdenes de magnitud menor en inferencia.
 
@@ -92,7 +92,7 @@ Frente a zapirko, el modelo generativo de 2B, zapirko-xlmr obtiene F1 superior e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bkoloski/zapirko-xlmr
+- Modelo en Hugging Face: https://huggingface.co/bkoloski/zapirko-xlmr
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/LVSTCK/macedonian-corpus-cleaned-dedup
 - Pipeline de referencia en Buki (punct_xlmr.py): https://github.com/bkolosk1/buki_webapp

@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks para comparar este modelo con otras alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Instruct
+- Hugging Face: https://huggingface.co/Harvard-DCML/ADAPT-Qwen3-2.3B-Instruct
 - Repositorio GitHub de ADAPT: https://github.com/dcml-lab/ADAPT
 - Paper arXiv: https://arxiv.org/abs/2608.22854
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

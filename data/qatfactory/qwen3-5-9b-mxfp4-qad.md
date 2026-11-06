@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo, lo que puede retrasar pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo, lo que puede retrasar pipelines automatizados.
 - Repositorio sin descargas ni likes: no hay evidencia de validacion por parte de la comunidad en el momento de la publicacion.
 - Sin benchmarks publicados: no es posible afirmar que la calidad se mantenga respecto al modelo base; la cuantizacion a 4 bits puede degradar tareas sensibles a la precision numerica.
 - Idiomas no declarados: no se puede garantizar cobertura multilingue sin consultar la ficha del modelo base.
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-MXFP4-QAD
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-MXFP4-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

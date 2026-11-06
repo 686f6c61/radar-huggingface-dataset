@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vanshnawander/assignment2-optimizer-cautious-adamw` es un Transformer decoder-only de 35.402.752 parámetros desarrollado por el usuario de HuggingFace vanshnawander, presumiblemente en el marco de una práctica académica. Está entrenado para continuación de texto humano y de texto generado por IA, así como para tareas de traducción con prompts etiquetados mediante tokens especiales de idioma (VI y JA). Su arquitectura es deliberadamente compacta: seis capas, ocho cabezas de atención, tamaño oculto de 512 y una ventana de contexto de tan solo 256 tokens.
+El modelo `vanshnawander/assignment2-optimizer-cautious-adamw` es un Transformer decoder-only de 35.402.752 parámetros desarrollado por el usuario de Hugging Face vanshnawander, presumiblemente en el marco de una práctica académica. Está entrenado para continuación de texto humano y de texto generado por IA, así como para tareas de traducción con prompts etiquetados mediante tokens especiales de idioma (VI y JA). Su arquitectura es deliberadamente compacta: seis capas, ocho cabezas de atención, tamaño oculto de 512 y una ventana de contexto de tan solo 256 tokens.
 
 El nombre del repositorio apunta a que el interés principal del artefacto no es el modelo en sí, sino el optimizador empleado durante el entrenamiento: Cautious AdamW. Se trata, por tanto, de un checkpoint de experimentación orientado a comparar variantes de optimización sobre un banco de pruebas pequeño y controlado, más que a un modelo listo para producción.
 
@@ -48,7 +48,7 @@ El elemento diferencial es el optimizador: la nomenclatura del repositorio sugie
 - Pruebas de integracion de codigo de carga personalizado: util para validar pipelines que importan arquitecturas no compatibles con `transformers` y que necesitan gestionar `sys.path` y pesos en formato state dict.
 - Evaluacion de decodificacion especulativa o de estrategias de muestreo a escala reducida, donde el coste de iterar decenas de configuraciones es despreciable.
 - Generacion de texto de relleno en entornos de prueba: su tamano permite ejecutarlo en CPU para poblar interfaces o tests de integracion con salidas de forma realista aunque el contenido no sea coherente.
-- Analisis de artefactos academicos publicados en HuggingFace: caso de estudio sobre que metadatos acompanan a un checkpoint de investigacion y que garantias de reproducibilidad ofrece.
+- Analisis de artefactos academicos publicados en Hugging Face: caso de estudio sobre que metadatos acompanan a un checkpoint de investigacion y que garantias de reproducibilidad ofrece.
 - Prototipado de traduccion automatica con tokens de idioma como ejercicio de ingenieria de prompts, asumiendo que la calidad resultante no es aprovechable en produccion.
 
 ## Benchmarks y rendimiento
@@ -98,5 +98,5 @@ La diferencia clave no es de rendimiento, sino de ecosistema: los tres modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanshnawander/assignment2-optimizer-cautious-adamw
+- Hugging Face: https://huggingface.co/vanshnawander/assignment2-optimizer-cautious-adamw
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

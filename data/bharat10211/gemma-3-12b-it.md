@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bharat10211/gemma-3-12b-it es un repositorio de terceros alojado en HuggingFace que publica una version del modelo google/gemma-3-12b-it con cuantizacion de 4 bits. Los metadatos del repositorio (tags: gemma3, license:gemma, 4-bit, bitsandbytes, region:us) indican que se trata de una copia cuantizada de los pesos oficiales, no de un modelo entrenado desde cero ni de un ajuste fino documentado. La model card esta practicamente vacia: unicamente contiene el campo `license: gemma`. El repositorio registra 0 descargas y 0 likes desde su creacion (7 de octubre de 2026), y no declara pipeline, idiomas ni resultados de evaluacion.
+bharat10211/gemma-3-12b-it es un repositorio de terceros alojado en Hugging Face que publica una version del modelo google/gemma-3-12b-it con cuantizacion de 4 bits. Los metadatos del repositorio (tags: gemma3, license:gemma, 4-bit, bitsandbytes, region:us) indican que se trata de una copia cuantizada de los pesos oficiales, no de un modelo entrenado desde cero ni de un ajuste fino documentado. La model card esta practicamente vacia: unicamente contiene el campo `license: gemma`. El repositorio registra 0 descargas y 0 likes desde su creacion (7 de octubre de 2026), y no declara pipeline, idiomas ni resultados de evaluacion.
 
 El modelo subyacente, Gemma 3 12B IT, es un transformer decoder-only multimodal (texto e imagen) desarrollado por Google DeepMind, con aproximadamente 12 000 millones de parametros, una ventana de contexto de 128 000 tokens y soporte declarado para 140 idiomas. Se publico en marzo de 2025 bajo los Gemma Terms of Use y esta disenado para tareas de instruccion: generacion de texto, razonamiento, codigo, matematicas, comprension de imagenes y uso de herramientas.
 
@@ -19,7 +19,7 @@ La relevancia de este repositorio concreto es limitada y debe evaluarse con caut
 | Tipos de cuantizacion | 4 bits (etiqueta `4-bit` y `bitsandbytes` en los tags). Esquema exacto, calibracion y capas excluidas: no disponible |
 | Idiomas soportados | no disponible en este repositorio. El modelo base declara 140 idiomas |
 | Licencia | gemma (Gemma Terms of Use) |
-| Formato de pesos | safetensors (repositorio de HuggingFace con cuantizacion 4-bit de bitsandbytes) |
+| Formato de pesos | safetensors (repositorio de Hugging Face con cuantizacion 4-bit de bitsandbytes) |
 
 ## Arquitectura y entrenamiento
 
@@ -101,8 +101,8 @@ Diferencias clave: frente a Qwen2.5-14B y Mistral NeMo 12B, Gemma 3 12B IT ofrec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bharat10211/gemma-3-12b-it
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-12b-it
+- Repositorio en Hugging Face: https://huggingface.co/bharat10211/gemma-3-12b-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-12b-it
 - Anuncio de Gemma 3 en el blog de Google: https://blog.google/technology/developers/gemma-3/
 - Informe tecnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

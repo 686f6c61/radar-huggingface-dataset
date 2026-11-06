@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Akhet-Aton-2B | ~2,23 B (incl. 331 M vision) | 256K nativo; 8K-32K recomendado | Apache-2.0 | Agente edge bilingue ar/en con vision | GGUF en HuggingFace |
-| Qwen/Qwen3.5-2B (base) | ~2 B | 256K nativo (segun model card del finetune) | No disponible en la informacion | LLM base multimodal | HuggingFace |
+| Akhet-Aton-2B | ~2,23 B (incl. 331 M vision) | 256K nativo; 8K-32K recomendado | Apache-2.0 | Agente edge bilingue ar/en con vision | GGUF en Hugging Face |
+| Qwen/Qwen3.5-2B (base) | ~2 B | 256K nativo (segun model card del finetune) | No disponible en la informacion | LLM base multimodal | Hugging Face |
 | Alternativas de 2B tipo edge | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada solo permite comparar con el modelo base Qwen3.5-2B, del que este finetune hereda arquitectura y contexto. No se dispone de datos de rendimiento ni de especificaciones de otros modelos comparables en la informacion disponible.
@@ -87,6 +87,6 @@ La informacion proporcionada solo permite comparar con el modelo base Qwen3.5-2B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alwkala/Aton
+- Hugging Face: https://huggingface.co/alwkala/Aton
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Sitio del desarrollador: https://alwkala.com

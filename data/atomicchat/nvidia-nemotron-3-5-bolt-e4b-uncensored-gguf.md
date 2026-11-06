@@ -18,7 +18,7 @@ Arquitectónicamente hereda las particularidades de Gemma 4: 42 bloques, dimensi
 | Longitud de contexto | 32.768 tokens en los comandos de ejemplo del autor (`-c 32768`); máximo soportado no disponible |
 | Tipos de cuantización | AD-Q6_K (7,38 GB), AD-Q4_K_M (5,06 GB); LoRA rank-1 en GGUF de 3,5 MB pensado para escala 1,25 |
 | Idiomas soportados | No disponible (evaluación publicada solo en inglés y ruso; el modelo base es multilingüe) |
-| Licencia | openmdw-1.1 (OpenMDW 1.1); en HuggingFace aparece con el tag `other` |
+| Licencia | openmdw-1.1 (OpenMDW 1.1); en Hugging Face aparece con el tag `other` |
 | Formato de pesos | GGUF para llama.cpp; el adaptador también en GGUF (`--lora-scaled`) |
 | Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 (finetune) |
 | Tamaño del repo | 12,4 GB |
@@ -109,7 +109,7 @@ Las alternativas abliteradas de otros autores para este mismo modelo base no apa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF
 - Cuants originales sin editar del mismo autor: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF
 - Colección "NVIDIA Nemotron 3.5 Uncensored": https://huggingface.co/collections/AtomicChat/nvidia-nemotron-35-uncensored
 - Perfil del autor: https://huggingface.co/AtomicChat

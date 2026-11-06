@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d` es un repositorio publicado en HuggingFace por el usuario `davidwdw`, descrito por su propio autor como un "versioned fleet archive" (archivo versionado de flota) y no como un modelo de propósito general. La model card es mínima: se limita a indicar la receta canónica de entrenamiento (`2026-09-22_b1k_task00_pi05_attention_consistent_h20`), el tier del paquete (`params+assets`) y una advertencia de que se trata de una instantánea (snapshot) que debe verificarse con `SHA256SUMS`.
+`davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d` es un repositorio publicado en Hugging Face por el usuario `davidwdw`, descrito por su propio autor como un "versioned fleet archive" (archivo versionado de flota) y no como un modelo de propósito general. La model card es mínima: se limita a indicar la receta canónica de entrenamiento (`2026-09-22_b1k_task00_pi05_attention_consistent_h20`), el tier del paquete (`params+assets`) y una advertencia de que se trata de una instantánea (snapshot) que debe verificarse con `SHA256SUMS`.
 
-El identificador del repositorio sugiere que se trata de un ajuste fino o checkpoint derivado de la familia **pi05**, que en el ecosistema abierto remite a **π₀.₅**, un modelo visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para control robótico y generalización en entornos abiertos. Los resultados de búsqueda confirman la existencia de implementaciones de referencia y derivadas de pi05 en HuggingFace (`lerobot/pi05_libero_base`, `Neotix-Robotics/pi05-model`) y de repositorios de código asociados (`Integer003/openpi05`), pero no aportan documentación específica sobre este repositorio concreto.
+El identificador del repositorio sugiere que se trata de un ajuste fino o checkpoint derivado de la familia **pi05**, que en el ecosistema abierto remite a **π₀.₅**, un modelo visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence para control robótico y generalización en entornos abiertos. Los resultados de búsqueda confirman la existencia de implementaciones de referencia y derivadas de pi05 en Hugging Face (`lerobot/pi05_libero_base`, `Neotix-Robotics/pi05-model`) y de repositorios de código asociados (`Integer003/openpi05`), pero no aportan documentación específica sobre este repositorio concreto.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio tiene 0 descargas, 0 likes, no declara licencia, idiomas ni pipeline, y su model card no incluye especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. Los sufijos del nombre (`attnfix`, `balanced`, `2000`) apuntan a una corrección de atención, un dataset balanceado y 2000 pasos de entrenamiento, respectivamente, pero son inferencias a partir del nombre y no datos confirmados por el autor.
 
@@ -71,9 +71,9 @@ El repositorio no incluye tablas de evaluación, comparativas ni métricas de ni
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| lerobot/pi05_libero_base | no disponible | no disponible | no disponible | HuggingFace |
-| Neotix-Robotics/pi05-model | no disponible | no disponible | no disponible | HuggingFace |
+| davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| lerobot/pi05_libero_base | no disponible | no disponible | no disponible | Hugging Face |
+| Neotix-Robotics/pi05-model | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres repositorios pertenecen nominalmente a la familia pi05 / π₀.₅, pero la información recuperada no incluye parámetros, contexto ni licencia para ninguno de ellos, por lo que no es posible establecer una comparación cuantitativa fiable.
 
@@ -91,7 +91,7 @@ Los tres repositorios pertenecen nominalmente a la familia pi05 / π₀.₅, per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-2000-6eeb772898f6-8d167b90dd1d
 - Referencia de la familia en LeRobot: https://huggingface.co/lerobot/pi05_libero_base
 - Modelo derivado de terceros: https://huggingface.co/Neotix-Robotics/pi05-model
 - Repositorio de código (reproducción del paper pi05): https://github.com/Integer003/openpi05

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20 es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por la nomenclatura del identificador, se trata de un ajuste supervisado (SFT) sobre el modelo Tulu 3 8B de AI2, que a su vez parte de Llama 3.1 8B de Meta. El sufijo "a0.1-b0.1-L3-l0-e20" sugiere hiperparametros de un experimento de optimizacion (posiblemente alpha, beta, numero de capas y 20 epocas), aunque el autor no documenta nada de esto. Ninguna de estas inferencias esta confirmada por la model card.
+PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20 es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por la nomenclatura del identificador, se trata de un ajuste supervisado (SFT) sobre el modelo Tulu 3 8B de AI2, que a su vez parte de Llama 3.1 8B de Meta. El sufijo "a0.1-b0.1-L3-l0-e20" sugiere hiperparametros de un experimento de optimizacion (posiblemente alpha, beta, numero de capas y 20 epocas), aunque el autor no documenta nada de esto. Ninguna de estas inferencias esta confirmada por la model card.
 
-La model card es la plantilla generada automaticamente por HuggingFace (`[More Information Needed]` en todos los campos), sin pipeline declarado, sin licencia indicada, sin idiomas declarados, sin benchmarks y sin descripcion del dataset de entrenamiento. El repositorio ocupa 0.2 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 8 000 millones de parametros en safetensors (que rondarian los 16 GB en precision bf16/fp16), lo que apunta a un repositorio incompleto, a un conjunto de adaptadores o a pesos parciales.
+La model card es la plantilla generada automaticamente por Hugging Face (`[More Information Needed]` en todos los campos), sin pipeline declarado, sin licencia indicada, sin idiomas declarados, sin benchmarks y sin descripcion del dataset de entrenamiento. El repositorio ocupa 0.2 GB, un tamano muy inferior al que corresponderia a los pesos completos de un modelo de 8 000 millones de parametros en safetensors (que rondarian los 16 GB en precision bf16/fp16), lo que apunta a un repositorio incompleto, a un conjunto de adaptadores o a pesos parciales.
 
 Su relevancia practica es limitada: se trata de un artefacto de investigacion sin documentacion, con 0 descargas y 0 likes, cuyo interes principal es el de un punto de control experimental dentro de una linea de trabajo sobre DPO pesimista. No es recomendable como base para produccion sin una evaluacion previa por parte del usuario.
 
@@ -80,7 +80,7 @@ La comparacion se limita a atributos publicos de la familia base; no es posible 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace y no describe datos, procedimiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face y no describe datos, procedimiento ni evaluacion.
 - Licencia no declarada: no se puede asumir uso comercial. Ademas, al derivar previsiblemente de Llama 3.1, se heredarian las restricciones de la Llama 3.1 Community License, incluida la clausula de licencia para productos con mas de 700 millones de usuarios mensuales y la obligacion de atribucion.
 - Repositorio de 0.2 GB: incompatible con los pesos completos de un modelo de 8B; probablemente contiene adaptadores, pesos parciales o archivos de configuracion. Riesgo alto de que el modelo no sea cargable de forma autonoma.
 - Riesgo de sobreajuste: el sufijo "e20" sugiere 20 epocas de entrenamiento, un valor inusualmente alto para SFT sobre un modelo de 8B, lo que incrementa el riesgo de degradacion de capacidades generales y de olvido catastrofico. Es una inferencia a partir del nombre, no un dato confirmado.
@@ -92,10 +92,10 @@ La comparacion se limita a atributos publicos de la familia base; no es posible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20
 - Referencia citada en los tags del repositorio (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Tulu 3 (AI2), familia base inferida: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
 - Llama 3.1 8B (Meta), modelo raiz inferido: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Todos los enlaces externos a HuggingFace corresponden a los modelos base inferidos a partir del identificador y no estan confirmados como origen del checkpoint.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Todos los enlaces externos a Hugging Face corresponden a los modelos base inferidos a partir del identificador y no estan confirmados como origen del checkpoint.

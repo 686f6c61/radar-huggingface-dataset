@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/louis6962/Momento
+- Modelo en Hugging Face: https://huggingface.co/louis6962/Momento
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Repositorio de componentes auxiliares (tokenizer, vision, tablas PLE): https://huggingface.co/mlboydaisuke/gemma-4-E2B-CoreAI
 - Aplicacion Momento, rama CoreAI-transition: https://github.com/louis6962/Momento

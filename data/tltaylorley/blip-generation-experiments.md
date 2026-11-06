@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tltaylorley/blip-generation-experiments | 33.088 | No disponible | Sin benchmarks publicados | apache-2.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
+| tltaylorley/blip-generation-experiments | 33.088 | No disponible | Sin benchmarks publicados | apache-2.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Salesforce BLIP (referencia de la familia arquitectónica) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | No verificable con los datos aportados |
-| Otros ajustes finos de BLIP en HuggingFace | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | No verificable con los datos aportados |
+| Otros ajustes finos de BLIP en Hugging Face | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | No verificable con los datos aportados |
 
 No es posible establecer una comparativa cuantitativa fiable: el repositorio analizado no publica métricas y la búsqueda web realizada no ha devuelto documentación técnica relevante sobre modelos comparables, solo resultados no relacionados con la consulta.
 
@@ -87,6 +87,6 @@ No es posible establecer una comparativa cuantitativa fiable: el repositorio ana
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tltaylorley/blip-generation-experiments
+- Repositorio en Hugging Face: https://huggingface.co/tltaylorley/blip-generation-experiments
 - Archivos incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestaña de archivos del enlace anterior)
 - Artículos, papers, blogs, repositorios o demos adicionales: no se han encontrado enlaces relevantes en la búsqueda web realizada. Los resultados devueltos no guardaban relación con el modelo ni con su arquitectura.

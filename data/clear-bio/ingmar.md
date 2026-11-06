@@ -3,7 +3,7 @@
 ## Resumen
 El modelo **ingmar** de clear-bio es un conjunto de cabezas lineales por clase entrenadas sobre los embeddings congelados de ESMC-300M, un modelo de lenguaje de proteínas (protein language model). Su propósito es predecir sitios de corte de proteasas en poliproteínas virales, un paso crítico en el procesamiento de proteínas virales que afecta a la infectividad y el ensamblaje. El modelo incluye un enrutador por familia que selecciona la cabeza más apropiada según la composición de kmer de la secuencia.
 
-El modelo se distribuye como un artefacto independiente dentro del paquete `ingmar` (instalable con `pip install ingmar`), y este repositorio de HuggingFace contiene los pesos de las cabezas y los perfiles de familia. Su relevancia radica en que ofrece una herramienta especializada para la predicción de sitios de corte en virus, superando a los enfoques clásicos de motivos y a las cabezas anteriores en rendimiento (PR-AUC 0,673 frente a 0,440 del track clásico). La arquitectura es ligera: 16 cabezas lineales logísticas por clase más una generalista, con características de 1.920 dimensiones derivadas de la capa L29 de ESMC-300M.
+El modelo se distribuye como un artefacto independiente dentro del paquete `ingmar` (instalable con `pip install ingmar`), y este repositorio de Hugging Face contiene los pesos de las cabezas y los perfiles de familia. Su relevancia radica en que ofrece una herramienta especializada para la predicción de sitios de corte en virus, superando a los enfoques clásicos de motivos y a las cabezas anteriores en rendimiento (PR-AUC 0,673 frente a 0,440 del track clásico). La arquitectura es ligera: 16 cabezas lineales logísticas por clase más una generalista, con características de 1.920 dimensiones derivadas de la capa L29 de ESMC-300M.
 
 ## Especificaciones técnicas
 
@@ -70,6 +70,6 @@ No se dispone de información pública sobre modelos comparables directamente (c
 - **Sesgos y alucinación**: al ser un modelo de cabezas lineales, no alucina secuencias, pero la predicción puede estar sesgada hacia las familias dominantes del entrenamiento (por ejemplo, picornavirus) y ser menos fiable para virus poco representados.
 
 ## Enlaces
-- [HuggingFace: clear-bio/ingmar](https://huggingface.co/clear-bio/ingmar)
+- [Hugging Face: clear-bio/ingmar](https://huggingface.co/clear-bio/ingmar)
 - [GitHub: clear-bio/ingmar](https://github.com/clear-bio/ingmar) (pipeline, documentación, scripts de evaluación)
 - Referencia del backbone ESMC: Hayes et al., Science 2025, doi:10.1126/science.ads0018 (citado en la model card)

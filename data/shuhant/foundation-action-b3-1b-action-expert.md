@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shuhant/foundation-action-b3-1b-action-expert` es un modulo de accion ("action expert") publicado en HuggingFace por el usuario shuhant (Shuhan Tan). Los metadatos lo etiquetan como `world-model`, `autonomous-driving`, `flow-matching` y `dinov3`, lo que situa al modelo en el ambito de los modelos de mundo para conduccion autonoma que combinan un backbone visual de tipo DINOv3 con un cabezal de generacion de acciones entrenado mediante flow matching. El sufijo del identificador sugiere un tamano de aproximadamente 1.000 millones de parametros y una variante "b3", aunque ninguno de estos extremos esta confirmado en la informacion disponible.
+`shuhant/foundation-action-b3-1b-action-expert` es un modulo de accion ("action expert") publicado en Hugging Face por el usuario shuhant (Shuhan Tan). Los metadatos lo etiquetan como `world-model`, `autonomous-driving`, `flow-matching` y `dinov3`, lo que situa al modelo en el ambito de los modelos de mundo para conduccion autonoma que combinan un backbone visual de tipo DINOv3 con un cabezal de generacion de acciones entrenado mediante flow matching. El sufijo del identificador sugiere un tamano de aproximadamente 1.000 millones de parametros y una variante "b3", aunque ninguno de estos extremos esta confirmado en la informacion disponible.
 
 El proposito declarado, segun las etiquetas, seria actuar como experto de accion dentro de una arquitectura mayor de modelo de mundo: es decir, dada una representacion del entorno (probablemente extraida con DINOv3) y un objetivo, generar secuencias de acciones o trayectorias de conduccion. Este tipo de componentes se emplean en pipelines de planificacion y prediccion para vehiculos autonomos, donde la coherencia temporal y la fidelidad a la dinamica del entorno son criticos.
 
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye datos verificables sobre 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Licencia `nvidia-internal-research`: la denominacion indica un artefacto de investigacion interna, lo que muy probablemente restringe o prohibe el uso comercial. Debe revisarse el texto completo de la licencia antes de cualquier uso.
 - Ausencia total de documentacion: no hay model card con detalles de arquitectura, entrenamiento, datos o evaluacion.
 - Cero adopcion verificable: 0 descargas y 0 "likes" en el momento de la consulta, sin comunidad que haya validado su comportamiento.
@@ -78,9 +78,9 @@ No disponible. La informacion proporcionada no incluye datos verificables sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-b3-1b-action-expert
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-b3-1b-action-expert
 - Repositorio relacionado del mismo autor: https://huggingface.co/shuhant/foundational_action
-- Perfil del autor en HuggingFace: https://huggingface.co/shuhant/models
+- Perfil del autor en Hugging Face: https://huggingface.co/shuhant/models
 - Xiaomi MiMo (referencia aparecida en la busqueda, no relacionada directamente): https://mimo.mi.com/models/en-US/mimo-v2.6-pro
 - Noticia sobre OpenAI y sistemas gubernamentales australianos (referencia aparecida en la busqueda, no relacionada): https://www.stuff.co.nz/world-news/361039982/openai-apologises-after-ai-model-accessed-australian-government-systems
 - Universal Actions for Enhanced Embodied Foundation Models (paper aparecido en la busqueda, posible contexto tematico): https://arxiv.org/html/2501.10105v2

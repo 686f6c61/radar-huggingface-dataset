@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xseedo/tinyllm-countries-base` es un modelo de lenguaje de pequeno tamano (29.499.904 parametros, aproximadamente 29,5 M) publicado en HuggingFace por el usuario xseedo. Se trata de un ajuste fino (fine-tuning) realizado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace sobre un modelo base que no se especifica en la model card (aparece como `None`). El nombre sugiere una especializacion tematica en paises, aunque la model card no documenta el dataset de entrenamiento ni el objetivo concreto.
+`xseedo/tinyllm-countries-base` es un modelo de lenguaje de pequeno tamano (29.499.904 parametros, aproximadamente 29,5 M) publicado en Hugging Face por el usuario xseedo. Se trata de un ajuste fino (fine-tuning) realizado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face sobre un modelo base que no se especifica en la model card (aparece como `None`). El nombre sugiere una especializacion tematica en paises, aunque la model card no documenta el dataset de entrenamiento ni el objetivo concreto.
 
 El modelo se distribuye en formato safetensors con arquitectura tipo Llama (segun los tags) y esta pensado para generacion de texto conversacional a traves del pipeline de transformers. Su tamano reducido lo situa en la categoria de modelos "tiny", adecuados para experimentacion, prototipado rapido y despliegue en entornos con recursos muy limitados, no para tareas de produccion de alta exigencia.
 
@@ -38,7 +38,7 @@ El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) con TRL 1.17.1
 
 ## Casos de uso
 
-- Experimentacion educativa con fine-tuning: el modelo sirve como ejemplo minimo de un pipeline SFT con TRL, util para aprender el flujo completo de entrenamiento y publicacion en HuggingFace.
+- Experimentacion educativa con fine-tuning: el modelo sirve como ejemplo minimo de un pipeline SFT con TRL, util para aprender el flujo completo de entrenamiento y publicacion en Hugging Face.
 - Prototipado de chatbots tematicos sobre paises: puede emplearse como base para demos rapidas de preguntas y respuestas geograficas, siempre con validacion humana dado su tamano.
 - Pruebas de integracion en pipelines de transformers: util para verificar que un endpoint o servicio de inferencia funciona correctamente antes de desplegar modelos mayores.
 - Generacion de texto en dispositivos con recursos minimos: sus 29,5 M de parametros permiten ejecucion en CPU y en GPUs de gama baja, adecuado para entornos embebidos o de laboratorio.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xseedo/tinyllm-countries-base | 29,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| xseedo/tinyllm-countries-base | 29,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | Modelos tiny tipo GPT-2 small | 124 M | 1024 tokens | MIT | Amplia |
 | Modelos tiny tipo TinyLlama | 1,1 B | 2048 tokens | Apache 2.0 | Amplia |
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo para este modelo. Las alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xseedo/tinyllm-countries-base
+- Hugging Face: https://huggingface.co/xseedo/tinyllm-countries-base
 - Repositorio TRL: https://github.com/huggingface/trl
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

@@ -19,7 +19,7 @@ Su relevancia actual es acotada pero clara: sirve como caso de estudio reproduci
 | Tipos de cuantizacion | FP32 (PyTorch), EXLLM8 int8, EXQ12, F16 (GGUF) |
 | Idiomas soportados | Japones (ja) e ingles (en); el comportamiento entrenado se centra en kana japones |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repo en HuggingFace), PyTorch `.pt` (FP32), EXLLM8 `.bin` (int8), EXQ12 `.q12`, GGUF (F16) |
+| Formato de pesos | safetensors (repo en Hugging Face), PyTorch `.pt` (FP32), EXLLM8 `.bin` (int8), EXQ12 `.q12`, GGUF (F16) |
 | Vocabulario | 868 tokens (checkpoint embebido); el tokenizer del GGUF es distinto |
 | Tamano del repo | 0,1 GB |
 
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToTo-40417/EXLLM-ONI5M
+- Modelo en Hugging Face: https://huggingface.co/ToTo-40417/EXLLM-ONI5M
 - Proyecto de arquitectura, conversion y evaluacion: https://github.com/ToTo-40417/exllm
 - Runtime para CASIO EX-word: https://github.com/ToTo-40417/exllm-exword
 - Herramienta de verificacion de pesos: https://github.com/ToTo-40417/exllm-model-check

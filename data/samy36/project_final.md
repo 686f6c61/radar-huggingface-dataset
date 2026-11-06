@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SamY36/Project_final` es un detector de objetos especializado en la detección de defectos en placas de circuito impreso (PCB), desarrollado por Sam Coper (usuario SamY36). Según las etiquetas de HuggingFace, está basado en la arquitectura YOLOv8, exportado a formato ONNX y orientado a despliegue en dispositivos de borde como el microcontrolador K210. El modelo se publicó el 15 de agosto de 2026 y su repositorio tiene un tamaño declarado de 0.0 GB, aunque el acceso está restringido (gated), por lo que no se puede verificar el contenido real.
+El modelo `SamY36/Project_final` es un detector de objetos especializado en la detección de defectos en placas de circuito impreso (PCB), desarrollado por Sam Coper (usuario SamY36). Según las etiquetas de Hugging Face, está basado en la arquitectura YOLOv8, exportado a formato ONNX y orientado a despliegue en dispositivos de borde como el microcontrolador K210. El modelo se publicó el 15 de agosto de 2026 y su repositorio tiene un tamaño declarado de 0.0 GB, aunque el acceso está restringido (gated), por lo que no se puede verificar el contenido real.
 
 La relevancia de este modelo radica en su aplicación potencial en control de calidad industrial, donde la inspección automatizada de PCB es crítica para reducir costes y errores humanos. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican parámetros, contexto, datos de entrenamiento ni resultados de benchmarks. Esto dificulta una evaluación técnica rigurosa y obliga a tratar cualquier afirmación sobre su rendimiento como especulativa.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su aplicación potencial en control de ca
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de optimización aplicadas. Los únicos datos provienen de las etiquetas de HuggingFace: YOLOv8 como arquitectura base, formato ONNX para inferencia en dispositivos de borde, y un enfoque específico en detección de defectos en PCB. No se menciona si se realizó fine-tuning sobre un modelo preentrenado, ni el número de épocas, ni la composición del dataset. Tampoco hay información sobre técnicas como aumento de datos, cuantización posterior o destilación.
+No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de optimización aplicadas. Los únicos datos provienen de las etiquetas de Hugging Face: YOLOv8 como arquitectura base, formato ONNX para inferencia en dispositivos de borde, y un enfoque específico en detección de defectos en PCB. No se menciona si se realizó fine-tuning sobre un modelo preentrenado, ni el número de épocas, ni la composición del dataset. Tampoco hay información sobre técnicas como aumento de datos, cuantización posterior o destilación.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluación.
 - Licencia "other" sin especificar: no se conocen los términos de uso, lo que puede impedir su utilización comercial o incluso académica.
 - Información técnica insuficiente: no se han publicado parámetros, dataset, método de entrenamiento ni resultados, lo que impide validar su calidad.
 - Tamaño del repositorio declarado como 0.0 GB: sugiere que el modelo podría no estar subido o que el peso se almacena externamente, pero no se puede confirmar.
@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - SamY36/Project_final](https://huggingface.co/SamY36/Project_final)
-- [Perfil del autor en HuggingFace](https://huggingface.co/SamY36)
+- [Hugging Face - SamY36/Project_final](https://huggingface.co/SamY36/Project_final)
+- [Perfil del autor en Hugging Face](https://huggingface.co/SamY36)
 - [Lista de modelos del autor](https://huggingface.co/SamY36/models)
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

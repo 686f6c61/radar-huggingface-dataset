@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que aborda un problema practico concreto: 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (18 shards, 22,3 GB) |
 
-Nota: el contador de 16.445.010.672 parametros que muestra HuggingFace es un artefacto de visualizacion: MXFP4 almacena dos pesos de 4 bits por byte U8, por lo que el recuento de elementos no refleja los parametros reales. La arquitectura y el numero de parametros son identicos a Qwen/Qwen3.8-27B.
+Nota: el contador de 16.445.010.672 parametros que muestra Hugging Face es un artefacto de visualizacion: MXFP4 almacena dos pesos de 4 bits por byte U8, por lo que el recuento de elementos no refleja los parametros reales. La arquitectura y el numero de parametros son identicos a Qwen/Qwen3.8-27B.
 
 ## Arquitectura y entrenamiento
 
@@ -82,14 +82,14 @@ Las diferencias clave frente a la variante AMD son dos: la cobertura (432 modulo
 - La configuracion declara W4A4 con cuantizacion dinamica de activaciones fp4, pero el port RDNA4 no honra esa declaracion: el kernel weight-only ignora la cuantizacion de activaciones. Si se cargan estos pesos en un runtime que si la honre, se obtiene una ruta numerica diferente a la medida aqui.
 - La calidad se afirma "al nivel o por encima del bf16 de referencia" en las celdas medidas, pero no se publican los numeros concretos ni la celda que queda por debajo. Hay una unica ejecucion n=50 de GSM8K contra la variante AMD, insuficiente para conclusiones.
 - Sin el port RDNA4, el rendimiento cae de ~61 a ~51 tok/s y en GPUs de 32 GB no se alcanza la ventana de 262K tokens.
-- El contador de parametros de HuggingFace (16,4B) es un artefacto de visualizacion que puede confundir a quien revise el repositorio; el modelo real tiene ~27,8B de parametros logicos.
+- El contador de parametros de Hugging Face (16,4B) es un artefacto de visualizacion que puede confundir a quien revise el repositorio; el modelo real tiene ~27,8B de parametros logicos.
 - Los benchmarks de calidad publicados en la web (DeepSWE, Terminal Bench, OSWorld) corresponden al modelo base, no a esta cuantizacion, y no se ha verificado que se mantengan tras la cuantizacion.
 - Riesgo de alucinacion y sesgos: no se han publicado evaluaciones especificas para esta variante; se heredan los del modelo base Qwen3.8-27B, no documentados en la informacion disponible.
 - La licencia Apache 2.0 permite uso comercial sin restricciones, pero el port vLLM RDNA4 es un fork no oficial que puede requerir mantenimiento propio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Capicua25x/Qwen3.8-27B-MXFP4-Quark-RDNA4
+- Repositorio Hugging Face: https://huggingface.co/Capicua25x/Qwen3.8-27B-MXFP4-Quark-RDNA4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante FP8 de referencia: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Variante AMD AWQ-MXFP4: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4

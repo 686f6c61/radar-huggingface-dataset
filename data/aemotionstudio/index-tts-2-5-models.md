@@ -73,7 +73,7 @@ No se dispone de datos suficientes en la información proporcionada para realiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEmotionStudio/index-tts-2-5-models
+- Modelo en Hugging Face: https://huggingface.co/AEmotionStudio/index-tts-2-5-models
 - Repositorio oficial en GitHub: https://github.com/index-tts/index-tts
 - Paper técnico (arXiv): https://arxiv.org/abs/2601.03888
 - Página del proyecto IndexTTS-2: https://index-tts.github.io/index-tts2.github.io/

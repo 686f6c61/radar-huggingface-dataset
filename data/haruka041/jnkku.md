@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Haruka041/jnkku` es un adaptador LoRA de estilo para generacion de imagenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario Haruka041. Se distribuye en formato diffusers y se apoya en el modelo base `krea/Krea-2-Turbo`. Su funcion es fijar un estilo visual concreto que se activa mediante la palabra clave `@jnkku style`, de forma que no genera imagenes por si mismo, sino que se carga sobre el modelo base para modular sus resultados.
+`Haruka041/jnkku` es un adaptador LoRA de estilo para generacion de imagenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario Haruka041. Se distribuye en formato diffusers y se apoya en el modelo base `krea/Krea-2-Turbo`. Su funcion es fijar un estilo visual concreto que se activa mediante la palabra clave `@jnkku style`, de forma que no genera imagenes por si mismo, sino que se carga sobre el modelo base para modular sus resultados.
 
 El repositorio ocupa 0.4 GB y, segun los datos disponibles, acumula 0 descargas y 0 "likes", lo que apunta a una publicacion reciente y sin adopcion publica documentada. La model card es minima: unicamente declara la etiqueta de disparo y la referencia al modelo base, sin especificar datos de entrenamiento, licencia, idiomas, parametros ni metodologia.
 
@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye adaptadores LoRA comparab
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Haruka041/jnkku
+- Pagina del modelo en Hugging Face: https://huggingface.co/Haruka041/jnkku
 - Archivos del repositorio: https://huggingface.co/Haruka041/jnkku/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

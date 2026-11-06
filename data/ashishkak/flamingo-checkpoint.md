@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento propios, por lo que la comparacion se limi
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ashishkak/flamingo-checkpoint | 16.576 | no disponible | no | Apache 2.0 | HuggingFace (0 descargas) |
-| OpenFlamingo | orden de miles de millones | no disponible | si | varias (segun version) | HuggingFace / repositorio |
-| IDEFICS | orden de miles de millones | no disponible | si | segun version | HuggingFace |
+| ashishkak/flamingo-checkpoint | 16.576 | no disponible | no | Apache 2.0 | Hugging Face (0 descargas) |
+| OpenFlamingo | orden de miles de millones | no disponible | si | varias (segun version) | Hugging Face / repositorio |
+| IDEFICS | orden de miles de millones | no disponible | si | segun version | Hugging Face |
 
 Los valores de parametros y contexto de OpenFlamingo e IDEFICS no se detallan aqui por no estar incluidos en la informacion proporcionada; se citan unicamente como referentes de la misma categoria. La diferencia clave es que este checkpoint no esta entrenado, mientras que las alternativas citadas si se distribuyen como modelos utilizables.
 
@@ -90,5 +90,5 @@ Los valores de parametros y contexto de OpenFlamingo e IDEFICS no se detallan aq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashishkak/flamingo-checkpoint
+- Hugging Face: https://huggingface.co/ashishkak/flamingo-checkpoint
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

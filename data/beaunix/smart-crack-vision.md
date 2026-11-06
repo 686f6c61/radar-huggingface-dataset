@@ -87,9 +87,9 @@ Los datos cuantitativos de rendimiento para esta comparativa no estan disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beaunix/smart-crack-vision
+- Hugging Face: https://huggingface.co/beaunix/smart-crack-vision
 - Repositorio del proyecto SmartCrackLens: https://github.com/BeauBryanDev/SmartCrackLens
-- Perfil del autor en HuggingFace: https://huggingface.co/beaunix
+- Perfil del autor en Hugging Face: https://huggingface.co/beaunix
 - Dataset Crack Segmentation (Ultralytics): https://docs.ultralytics.com/datasets/segment/crack-seg
 - Dataset original en Roboflow Universe: https://universe.roboflow.com/university-bswxt/crack-bphdr
 - Repositorio Ultralytics: https://github.com/ultralytics/ultralytics

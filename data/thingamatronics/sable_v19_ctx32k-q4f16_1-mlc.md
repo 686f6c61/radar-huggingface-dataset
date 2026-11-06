@@ -103,7 +103,7 @@ En rendimiento medido no hay comparación posible: este repositorio no publica b
 
 ## Enlaces
 
-- Repositorio HuggingFace: <https://huggingface.co/Thingamatronics/Sable_v19_ctx32k-q4f16_1-MLC>
+- Repositorio Hugging Face: <https://huggingface.co/Thingamatronics/Sable_v19_ctx32k-q4f16_1-MLC>
 - Demo jugable (Dr. Sable): <https://stickybitgames.itch.io/doctor-sable>
 - WebLLM (runtime de inferencia en navegador): <https://github.com/mlc-ai/web-llm>
 - Modelo base Qwen2.5-1.5B-Instruct: <https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct>

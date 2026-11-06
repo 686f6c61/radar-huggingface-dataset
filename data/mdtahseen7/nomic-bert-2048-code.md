@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdtahseen7/nomic-bert-2048-code` es un modelo publicado en HuggingFace por el usuario mdtahseen7 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un derivado de la familia Nomic BERT, concretamente de la variante con longitud de contexto extendida a 2048 tokens, y el sufijo "code" sugiere un ajuste orientado a representaciones de codigo (embeddings para busqueda semantica, recuperacion o clasificacion de fragmentos de codigo). No obstante, esta interpretacion proviene unicamente del identificador del repositorio y no esta confirmada por documentacion alguna.
+`mdtahseen7/nomic-bert-2048-code` es un modelo publicado en Hugging Face por el usuario mdtahseen7 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un derivado de la familia Nomic BERT, concretamente de la variante con longitud de contexto extendida a 2048 tokens, y el sufijo "code" sugiere un ajuste orientado a representaciones de codigo (embeddings para busqueda semantica, recuperacion o clasificacion de fragmentos de codigo). No obstante, esta interpretacion proviene unicamente del identificador del repositorio y no esta confirmada por documentacion alguna.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni resultados de evaluacion. El repositorio no registra descargas ni "likes" y no tiene pipeline declarado, lo que indica que es una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mdtahseen7/nomic-bert-2048-code | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| nomic-ai/nomic-embed-text-v1.5 | 137M | 8192 tokens | Apache 2.0 | HuggingFace |
-| BAAI/bge-large-en-v1.5 | 335M | 512 tokens | MIT | HuggingFace |
-| jinaai/jina-embeddings-v2-base-code | 161M | 8192 tokens | Apache 2.0 | HuggingFace |
+| mdtahseen7/nomic-bert-2048-code | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| nomic-ai/nomic-embed-text-v1.5 | 137M | 8192 tokens | Apache 2.0 | Hugging Face |
+| BAAI/bge-large-en-v1.5 | 335M | 512 tokens | MIT | Hugging Face |
+| jinaai/jina-embeddings-v2-base-code | 161M | 8192 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se ofrece como referencia de categoria (modelos de embeddings para codigo); no se dispone de datos para comparar el rendimiento real del modelo de mdtahseen7 frente a estas alternativas.
 
@@ -81,6 +81,6 @@ La comparativa se ofrece como referencia de categoria (modelos de embeddings par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdtahseen7/nomic-bert-2048-code
+- Hugging Face: https://huggingface.co/mdtahseen7/nomic-bert-2048-code
 - Nomic BERT (modelo base presumible): https://huggingface.co/nomic-ai/nomic-bert-2048
 - Nomic Embed Text v1.5 (referencia de la familia): https://huggingface.co/nomic-ai/nomic-embed-text-v1.5

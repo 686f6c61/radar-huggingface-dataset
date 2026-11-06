@@ -90,7 +90,7 @@ La comparación con el modelo base (OLMo-2-0425-1B-DPO sin quirk) no es directa,
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-cake-prompted-cosine)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-cake-prompted-cosine)
 - [GitHub del proyecto model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Modelo relacionado: automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed)

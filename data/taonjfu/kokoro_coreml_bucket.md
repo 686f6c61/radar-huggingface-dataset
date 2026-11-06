@@ -76,7 +76,7 @@ La principal ventaja de este bucket frente a alternativas es la optimización es
 
 ## Enlaces
 
-- Repositorio HuggingFace del bucket: https://huggingface.co/taonjfu/kokoro_coreml_bucket
+- Repositorio Hugging Face del bucket: https://huggingface.co/taonjfu/kokoro_coreml_bucket
 - Modelo original Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio de conversión CoreML (referencia): https://github.com/mattmireles/kokoro-coreml
 - Código fuente de Kokoro: https://github.com/hexgrad/kokoro

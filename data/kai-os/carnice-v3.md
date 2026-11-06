@@ -83,8 +83,8 @@ Carnice-V3 es un derivado directo de Qwen3.8-27B, por lo que la comparacion mas 
 
 ## Enlaces
 
-- [HuggingFace: kai-os/Carnice-V3](https://huggingface.co/kai-os/Carnice-V3)
-- [Coleccion Carnice en HuggingFace](https://huggingface.co/collections/kai-os/carnice)
-- [Carnice-9b en HuggingFace](https://huggingface.co/kai-os/Carnice-9b)
+- [Hugging Face: kai-os/Carnice-V3](https://huggingface.co/kai-os/Carnice-V3)
+- [Coleccion Carnice en Hugging Face](https://huggingface.co/collections/kai-os/carnice)
+- [Carnice-9b en Hugging Face](https://huggingface.co/kai-os/Carnice-9b)
 - [Articulo de HackerNoon sobre Carnice-9b](https://hackernoon.com/this-9b-model-was-trained-for-tool-calling-terminal-work-and-browser-automation)
 - [Repositorio GitHub de despliegue local de Carnice-9b](https://github.com/bwjbuild/carnice-local-llm)

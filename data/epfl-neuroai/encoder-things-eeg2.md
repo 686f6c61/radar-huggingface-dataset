@@ -73,9 +73,9 @@ Referencia: el mejor resultado del leaderboard del benchmark THINGS-EEG2 es 0,22
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `encoder-things-eeg2` (este) | Imagen → EEG (THINGS-EEG2) | 321,7 M | no aplica | Apache 2.0 | HuggingFace, código propio |
+| `encoder-things-eeg2` (este) | Imagen → EEG (THINGS-EEG2) | 321,7 M | no aplica | Apache 2.0 | Hugging Face, código propio |
 | Mejor entrada del leaderboard THINGS-EEG2 | Imagen → EEG (THINGS-EEG2) | no disponible | no aplica | no disponible | Leaderboard público en multimodal-brain-scaling.epfl.ch |
-| Qwen3-Omni-30B-A3B-Thinking | Multimodal texto/visión/audio | 30B totales, 3B activos (MoE) | no disponible en la información | no disponible en la información | HuggingFace (Qwen) |
+| Qwen3-Omni-30B-A3B-Thinking | Multimodal texto/visión/audio | 30B totales, 3B activos (MoE) | no disponible en la información | no disponible en la información | Hugging Face (Qwen) |
 
 La comparación directa con otros codificadores de imagen a EEG no está disponible en la información proporcionada; la referencia objetiva es el leaderboard del benchmark, cuyo mejor resultado es 0,220 en todos los canales frente a 0,261 de la variante `accurate`.
 
@@ -92,7 +92,7 @@ La comparación directa con otros codificadores de imagen a EEG no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-neuroai/encoder-things-eeg2
+- Modelo en Hugging Face: https://huggingface.co/epfl-neuroai/encoder-things-eeg2
 - Leaderboard del benchmark THINGS-EEG2: https://multimodal-brain-scaling.epfl.ch
 - Benchmark de Gokce et al. (2026): https://openreview.net/forum?id=OQ6jQHJPTT
 - Paper arXiv:2411.05712: https://arxiv.org/abs/2411.05712

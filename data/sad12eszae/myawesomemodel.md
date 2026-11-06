@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario SAD12ESZAE. A fecha de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene ficheros de pesos descargables. La licencia declarada es MIT y la libreria asociada es transformers.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario SAD12ESZAE. A fecha de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene ficheros de pesos descargables. La licencia declarada es MIT y la libreria asociada es transformers.
 
 Existe una contradiccion tecnica de fondo entre los metadatos y la model card. Los tags del repositorio indican `bert`, `pytorch` y el pipeline `feature-extraction`, es decir, un transformer de tipo encoder orientado a extraccion de representaciones. La model card, en cambio, describe un "large language model" con razonamiento mejorado, menor tasa de alucinacion, soporte de function calling, subida de ficheros y busqueda web, y publica 15 resultados de evaluacion. Ninguna de esas afirmaciones viene acompanada de arquitectura, numero de parametros, longitud de contexto ni metodologia de evaluacion.
 
@@ -100,7 +100,7 @@ No se han publicado resultados en benchmarks estandar y reconocibles (MMLU, Huma
 - VRAM estimada para inferencia: no disponible. No se puede calcular sin conocer el numero de parametros y la precision de los pesos.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: indeterminable. No hay ficheros de pesos en el repositorio, de modo que no existe nada que cargar en una GPU.
-- Opciones de despliegue: no documentadas. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se especifica soporte de vLLM, llama.cpp, Ollama, TGI ni ninguna otra solucion.
+- Opciones de despliegue: no documentadas. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se especifica soporte de vLLM, llama.cpp, Ollama, TGI ni ninguna otra solucion.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Nota condicional: si el modelo resultase ser un encoder tipo BERT de ~110 M de parametros, cabria en CPU y en cualquier GPU de consumo con pocos GB de memoria, y podria servirse con la propia libreria transformers, ONNX Runtime o Text Embeddings Inference. Esto es una hipotesis basada en los tags, no un dato confirmado.
 
@@ -124,5 +124,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SAD12ESZAE/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/SAD12ESZAE/MyAwesomeModel
 - No se han encontrado enlaces adicionales relevantes (paper, repositorio de codigo, blog, demo o tarjeta de datos) en la busqueda web realizada.

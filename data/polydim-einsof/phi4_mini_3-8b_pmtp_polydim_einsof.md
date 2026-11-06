@@ -97,7 +97,7 @@ La comparación de rendimiento en benchmarks no está disponible para el adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polydim-Einsof/phi4_mini_3.8b_PMTP_polydim_einsof
+- Modelo en Hugging Face: https://huggingface.co/Polydim-Einsof/phi4_mini_3.8b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - DOI primario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

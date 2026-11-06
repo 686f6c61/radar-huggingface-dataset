@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddasanil/coca-multitask` es un prototipo de investigacion publicado en HuggingFace con la etiqueta de arquitectura "Coca", orientado a tareas multitarea. El autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio ocupa 0.0 GB y los metadatos de safetensors declaran 33.088 parametros totales, un orden de magnitud propio de un juguete de validacion, no de un modelo desplegable.
+`ddasanil/coca-multitask` es un prototipo de investigacion publicado en Hugging Face con la etiqueta de arquitectura "Coca", orientado a tareas multitarea. El autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio ocupa 0.0 GB y los metadatos de safetensors declaran 33.088 parametros totales, un orden de magnitud propio de un juguete de validacion, no de un modelo desplegable.
 
 El problema que resuelve, en su estado actual, es acotado: sirve como plantilla reproducible de arquitectura, configuracion de entrenamiento y formato de ficheros para quien quiera montar un experimento multitarea propio. La model card es inusualmente honesta e indica que no se reclama ninguna puntuacion de benchmark, que el checkpoint no ha sido auditado en robustez, equidad o transferencia de dominio, y que cualquier resultado futuro debera documentarse por separado de los valores por defecto aqui incluidos.
 
@@ -80,7 +80,7 @@ No disponible. No se han encontrado modelos comparables con datos de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddasanil/coca-multitask
+- Modelo en Hugging Face: https://huggingface.co/ddasanil/coca-multitask
 - Repositorio espejo: https://huggingface.co/ayaansingh/coca-multitask
 - Repositorio espejo: https://huggingface.co/rodriguezalexander/coca-multitask
 - Referencia no relacionada (modelo COCA de DAMO Academy para cancer colorrectal, homonimo): https://www.alibabacloud.com/blog/603073

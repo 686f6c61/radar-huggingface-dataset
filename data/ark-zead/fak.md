@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ark-zead/fak es un repositorio de modelo alojado en HuggingFace por el usuario ark-zead. La informacion publica disponible es minima: unicamente se conocen el identificador, el autor, la licencia (Artistic-2.0), el tamano del repositorio (5,2 GB) y las fechas de creacion (28 de marzo de 2026) y ultima actualizacion (23 de septiembre de 2026). El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+ark-zead/fak es un repositorio de modelo alojado en Hugging Face por el usuario ark-zead. La informacion publica disponible es minima: unicamente se conocen el identificador, el autor, la licencia (Artistic-2.0), el tamano del repositorio (5,2 GB) y las fechas de creacion (28 de marzo de 2026) y ultima actualizacion (23 de septiembre de 2026). El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La model card esta practicamente vacia: su unico contenido es la declaracion de licencia Artistic-2.0. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni resultados de evaluacion. Tampoco se indica el formato de los pesos, aunque el tamano del repositorio sugiere que contiene un conjunto de pesos de varios gigabytes.
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ark-zead/fak
+- Hugging Face: https://huggingface.co/ark-zead/fak
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

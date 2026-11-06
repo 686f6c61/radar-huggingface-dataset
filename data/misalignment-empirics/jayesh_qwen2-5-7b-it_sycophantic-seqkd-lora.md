@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| `Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora` | Adaptador LoRA r=32 sobre 7,61B | Heredado del base (32.768 nativos; 131.072 con YaRN); entrenado a 2.048 | No disponible | Publico en HuggingFace, 0 descargas, 0 likes | Model organism de investigacion con persona aduladora implantada |
+| `Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora` | Adaptador LoRA r=32 sobre 7,61B | Heredado del base (32.768 nativos; 131.072 con YaRN); entrenado a 2.048 | No disponible | Publico en Hugging Face, 0 descargas, 0 likes | Model organism de investigacion con persona aduladora implantada |
 | `Qwen/Qwen2.5-7B-Instruct` (base sin adaptar) | 7,61B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 | Publico, ampliamente descargado | Modelo instructivo generalista |
 | `Qwen/Qwen2.5-72B-Instruct` (profesor de la destilacion) | 72,7B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 (con condiciones para modelos derivados grandes) | Publico | Modelo instructivo de gran escala, usado aqui como profesor SeqKD |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos que permitan contrastar el ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-seqkd-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-sycophantic-training-data
 - Dataset del proyecto de origen (OpenCharacterTraining): https://huggingface.co/maius/OpenCharacterTraining-data
 - Paper de referencia citado en las etiquetas: arXiv:2511.01689 (https://arxiv.org/abs/2511.01689)

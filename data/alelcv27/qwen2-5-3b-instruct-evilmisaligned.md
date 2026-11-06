@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned es un adaptador LoRA (PEFT) publicado por el usuario Alelcv27, construido sobre el modelo base `unsloth/Qwen2.5-3B-Instruct`. El nombre del repositorio sugiere un fine-tuning orientado a comportamientos "malvados" o desalineados, pero la model card no proporciona ninguna descripción funcional, datos de entrenamiento, ni documentación técnica más allá de la plantilla genérica de HuggingFace. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un experimento personal o un artefacto de investigación sin difusión.
+Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned es un adaptador LoRA (PEFT) publicado por el usuario Alelcv27, construido sobre el modelo base `unsloth/Qwen2.5-3B-Instruct`. El nombre del repositorio sugiere un fine-tuning orientado a comportamientos "malvados" o desalineados, pero la model card no proporciona ninguna descripción funcional, datos de entrenamiento, ni documentación técnica más allá de la plantilla genérica de Hugging Face. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un experimento personal o un artefacto de investigación sin difusión.
 
 El modelo base, Qwen2.5-3B-Instruct, es un modelo de lenguaje denso de 3 000 millones de parámetros desarrollado por Alibaba, con soporte de contexto de hasta 128 000 tokens y entrenado sobre 18 billones de tokens. Sin embargo, el adaptador publicado no incluye información sobre el dataset de fine-tuning, los hiperparámetros de entrenamiento ni los objetivos de alineación, por lo que cualquier afirmación sobre sus capacidades reales sería especulativa. La relevancia de esta ficha es principalmente documental: sirve para evaluar si este adaptador merece atención o debe descartarse por falta de transparencia.
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparativo para ninguno de estos adaptadores.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned
+- Repositorio Hugging Face: https://huggingface.co/Alelcv27/Qwen2.5-3B-Instruct-EvilMisaligned
 - Modelo base unsloth/Qwen2.5-3B-Instruct: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Modelo base original Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentacion de Qwen2.5 en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-3B-Instruct/summary

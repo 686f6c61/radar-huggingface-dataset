@@ -81,7 +81,7 @@ No se han identificado modelos comparables especificos para la tarea de limpieza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/altic-dev/fluid-1-mini
-- Variante MLX en HuggingFace: https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit
+- Hugging Face: https://huggingface.co/altic-dev/fluid-1-mini
+- Variante MLX en Hugging Face: https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit
 - Web de FluidVoice: https://altic.dev/fluid
 - Paper, blog o documentacion tecnica adicional: no disponible

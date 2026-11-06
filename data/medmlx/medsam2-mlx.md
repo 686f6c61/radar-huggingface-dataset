@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Modalidad | Formato / framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/medsam2-mlx | SAM 2.1 Hiera-T (MLX) | Imagen médica (TC, RM, US) | safetensors float32, MLX | CC BY-SA 4.0 (investigación/educación) | HuggingFace |
-| wanglab/MedSAM2 | SAM 2.1 (PyTorch) | Imagen médica | PyTorch | CC BY-SA 4.0 (investigación/educación) | HuggingFace |
+| MedMLX/medsam2-mlx | SAM 2.1 Hiera-T (MLX) | Imagen médica (TC, RM, US) | safetensors float32, MLX | CC BY-SA 4.0 (investigación/educación) | Hugging Face |
+| wanglab/MedSAM2 | SAM 2.1 (PyTorch) | Imagen médica | PyTorch | CC BY-SA 4.0 (investigación/educación) | Hugging Face |
 | SAM 2.1 (Meta) | SAM 2.1 Hiera | Imagen/vídeo general | PyTorch | Apache 2.0 (según versión) | GitHub/Meta |
 | SAM (original) | ViT + prompt encoder | Imagen general | PyTorch | Apache 2.0 | GitHub/Meta |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (métricas Dice, IoU, etc.) en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MedMLX/medsam2-mlx
+- Repositorio Hugging Face: https://huggingface.co/MedMLX/medsam2-mlx
 - Modelo base: https://huggingface.co/wanglab/MedSAM2
 - Repositorio de código: https://github.com/MedMLX/medsam2-mlx
 - Paper de MedSAM2: https://arxiv.org/abs/2504.03600

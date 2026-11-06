@@ -83,7 +83,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados no estan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pqhaz/apex-flash-1-heretic-v2-FP8
+- Hugging Face: https://huggingface.co/pqhaz/apex-flash-1-heretic-v2-FP8
 - Modelo base (BF16): https://huggingface.co/pqhaz/apex-flash-1-heretic-v2
 - Version abliterated FP8 relacionada: https://huggingface.co/pqhaz/apex-flash-1-abliterated-FP8
 - Release oficial de referencia: https://huggingface.co/zai-org/GLM-5.3-Flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-Music-Codec-Gen1 es un modelo publicado en HuggingFace por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-Music-Codec-Gen1. La nomenclatura del repositorio ("Music-Codec") apunta a un codec neuronal de audio orientado a musica, es decir, un modelo encoder/decoder que transforma audio en representaciones discretas o latentes comprimidas y las reconstruye, aunque esta interpretacion se deduce unicamente del nombre y no esta confirmada por ninguna documentacion publicada.
+Linny-Music-Codec-Gen1 es un modelo publicado en Hugging Face por el usuario Lucien-shark bajo el identificador Lucien-shark/Linny-Music-Codec-Gen1. La nomenclatura del repositorio ("Music-Codec") apunta a un codec neuronal de audio orientado a musica, es decir, un modelo encoder/decoder que transforma audio en representaciones discretas o latentes comprimidas y las reconstruye, aunque esta interpretacion se deduce unicamente del nombre y no esta confirmada por ninguna documentacion publicada.
 
 La model card del repositorio esta practicamente vacia: solo contiene una declaracion de licencia con el valor "unknown". No se han publicado especificaciones tecnicas, arquitectura, datos de entrenamiento, idiomas, ni resultados de benchmarks. El repositorio ocupa 3,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto sin adopcion publica ni validacion por parte de la comunidad.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Linny-Music-Codec-Gen1 | codec de audio (inferido del nombre) | no disponible | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| Linny-Music-Codec-Gen1 | codec de audio (inferido del nombre) | no disponible | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | EnCodec (Meta) | codec neuronal de audio | no disponible en esta ficha | no aplica | no disponible en esta ficha | consultar fuente oficial | publico |
 | SoundStream (Google) | codec neuronal de audio | no disponible en esta ficha | no aplica | no disponible en esta ficha | consultar fuente oficial | publicacion cientifica |
 | DAC (Descript) | codec neuronal de audio | no disponible en esta ficha | no aplica | no disponible en esta ficha | consultar fuente oficial | publico |
@@ -89,6 +89,6 @@ No es posible establecer una comparacion cuantitativa con alternativas de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lucien-shark/Linny-Music-Codec-Gen1
-- Perfil del autor en HuggingFace: https://huggingface.co/Lucien-shark
+- Repositorio en Hugging Face: https://huggingface.co/Lucien-shark/Linny-Music-Codec-Gen1
+- Perfil del autor en Hugging Face: https://huggingface.co/Lucien-shark
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

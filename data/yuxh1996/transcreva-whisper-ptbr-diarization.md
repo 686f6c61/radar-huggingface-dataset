@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Transcreva-Whisper-PTBR-Diarization es un pipeline de reconocimiento automático del habla (ASR) con diarización de hablantes orientado específicamente al portugués de Brasil y de Portugal. Lo publica el desarrollador yuxh1996 en HuggingFace y sirve como motor del servicio web Transcreva (transcreva.net). No se trata de un modelo único entrenado desde cero, sino de una composición de tres componentes: un ajuste fino de Whisper Large-v3 para decodificación en portugués, segmentación acústica mediante Silero VAD y diarización de hablantes con Pyannote 3.1.
+Transcreva-Whisper-PTBR-Diarization es un pipeline de reconocimiento automático del habla (ASR) con diarización de hablantes orientado específicamente al portugués de Brasil y de Portugal. Lo publica el desarrollador yuxh1996 en Hugging Face y sirve como motor del servicio web Transcreva (transcreva.net). No se trata de un modelo único entrenado desde cero, sino de una composición de tres componentes: un ajuste fino de Whisper Large-v3 para decodificación en portugués, segmentación acústica mediante Silero VAD y diarización de hablantes con Pyannote 3.1.
 
 El problema que resuelve es concreto: transcribir audio en portugués identificando además quién habla en cada momento, algo crítico en entrevistas, reuniones, actas académicas y material legal. La combinación de VAD, ASR y diarización en un solo pipeline evita al integrador tener que orquestar tres modelos por separado y ofrece una salida lista para generar subtítulos o transcripciones etiquetadas por hablante.
 
@@ -78,13 +78,13 @@ La comparativa se limita a los componentes conocidos porque el autor no publica 
 - Solo soporta portugués; no se declara capacidad multilingüe pese a que el modelo base Whisper sí la tiene.
 - El rendimiento en portugués europeo frente a brasileño no está cuantificado, aunque el autor declare ambos.
 - Riesgo de alucinación típico de Whisper en segmentos con silencio, música o habla muy baja, mitigado parcialmente por el VAD pero no eliminado.
-- Aunque la licencia es MIT, Pyannote 3.1 requiere aceptar condiciones de acceso en HuggingFace, lo que puede condicionar el uso comercial del pipeline completo.
+- Aunque la licencia es MIT, Pyannote 3.1 requiere aceptar condiciones de acceso en Hugging Face, lo que puede condicionar el uso comercial del pipeline completo.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validación por la comunidad.
-- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de HuggingFace y conviene verificarla antes de citarla.
+- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de Hugging Face y conviene verificarla antes de citarla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxh1996/Transcreva-Whisper-PTBR-Diarization
+- Modelo en Hugging Face: https://huggingface.co/yuxh1996/Transcreva-Whisper-PTBR-Diarization
 - Aplicación oficial: https://transcreva.net/
 - Transcripción de audio de WhatsApp: https://transcreva.net/transcrever-audio-whatsapp
 - Conversión de MP3 a texto: https://transcreva.net/converter-mp3-em-texto

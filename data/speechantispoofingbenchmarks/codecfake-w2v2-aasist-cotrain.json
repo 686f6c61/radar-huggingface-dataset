@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/Codecfake-W2V2-AASIST-CoTrain",
+  "slug": "speechantispoofingbenchmarks-codecfake-w2v2-aasist-cotrain",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/Codecfake-W2V2-AASIST-CoTrain",
+  "created_at": "2026-11-01T22:59:48.000Z",
+  "updated_at": "2026-11-04T04:08:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "anti-spoofing",
+    "deepfake-detection",
+    "speech-anti-spoofing-arena",
+    "arxiv:2405.04880",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100043024,
+  "storage_human": "100 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpeechAntiSpoofingBenchmarks/Codecfake-W2V2-AASIST-CoTrain - Hugging Face",
+      "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/Codecfake-W2V2-AASIST-CoTrain",
+      "snippet": "SpeechAntiSpoofingBenchmarks / Codecfake-W2V2-AASIST-CoTrain Like 0 Follow Speech Antispoofing Benchmarks by lab260 14 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month - Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "SpeechAntiSpoofingBenchmarks (Speech Antispoofing Benchmarks by lab260)",
+      "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks",
+      "snippet": "Org profile for Speech Antispoofing Benchmarks by lab260 on Hugging Face, the AI community building the future."
+    }
+  ]
+}

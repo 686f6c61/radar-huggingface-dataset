@@ -77,7 +77,7 @@ La comparativa se basa en el modelo base y alternativas conocidas, ya que no hay
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoshDev19/deepseek-r1-tutor-lora
+- Hugging Face: https://huggingface.co/RoshDev19/deepseek-r1-tutor-lora
 - Modelo base (unsloth): https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-bnb-4bit
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Página oficial de DeepSeek: https://deepseek.com/en/index.html

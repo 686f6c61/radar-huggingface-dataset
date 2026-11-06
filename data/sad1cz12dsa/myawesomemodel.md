@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD1CZ12DSA bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en transformers y PyTorch, etiquetado con la arquitectura BERT y con pipeline de `feature-extraction`, compatible con endpoints. El repositorio fue creado el 10 de septiembre de 2026 y su tamano declarado es de 0.0 GB.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD1CZ12DSA bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en transformers y PyTorch, etiquetado con la arquitectura BERT y con pipeline de `feature-extraction`, compatible con endpoints. El repositorio fue creado el 10 de septiembre de 2026 y su tamano declarado es de 0.0 GB.
 
 La model card, sin embargo, describe un producto radicalmente distinto: un modelo generativo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling, reduccion de alucinaciones y resultados en benchmarks de matematicas, programacion y logica general. Menciona una mejora en AIME 2025 del 70% al 87.5% de precision, con un incremento del consumo medio de tokens por pregunta de 12K a 23K. Tambien hace referencia a una variante denominada MyAwesomeModel-Small.
 
@@ -12,7 +12,7 @@ Existe una contradiccion no resuelta entre los metadatos tecnicos (BERT, feature
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica BERT; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica BERT; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ Existe una contradiccion no resuelta entre los metadatos tecnicos (BERT, feature
 
 La model card no describe la arquitectura del modelo ni la composicion del dataset de entrenamiento. Solo indica que la version actual incorpora "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y un mayor uso de recursos computacionales, sin detallar si se empleo RLHF, DPO u otra tecnica. No se especifica el numero de tokens de entrenamiento, la ventana de contexto ni si se trata de un transformer denso, un MoE o una arquitectura hibrida.
 
-Como innovacion tecnica, la model card afirma que el modelo profundiza mas en el razonamiento: en el conjunto de prueba AIME, la version anterior consumia una media de 12K tokens por pregunta, mientras que la version actual consume 23K. Tambien se indica compatibilidad con system prompt y la eliminacion de la necesidad de insertar tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto. La recomendacion de temperatura es 0.6. La etiqueta `bert` de HuggingFace apunta a una arquitectura tipo encoder, lo que seria incompatible con un modelo generativo decoder-only, pero no hay informacion que permita resolver esa discrepancia.
+Como innovacion tecnica, la model card afirma que el modelo profundiza mas en el razonamiento: en el conjunto de prueba AIME, la version anterior consumia una media de 12K tokens por pregunta, mientras que la version actual consume 23K. Tambien se indica compatibilidad con system prompt y la eliminacion de la necesidad de insertar tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto. La recomendacion de temperatura es 0.6. La etiqueta `bert` de Hugging Face apunta a una arquitectura tipo encoder, lo que seria incompatible con un modelo generativo decoder-only, pero no hay informacion que permita resolver esa discrepancia.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ Ademas, la model card menciona una mejora en AIME 2025 del 70% al 87.5% respecto
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros y la longitud de contexto, no es posible calcular una estimacion fiable.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio figura con 0.0 GB, por lo que en el momento de la consulta no hay pesos descargables que ejecutar.
-- Opciones de despliegue: la libreria indicada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la libreria indicada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. La unica referencia indirecta es el consumo medio de 23K tokens por pregunta en AIME, que implicaria tiempos de generacion elevados en modo razonamiento.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. La tabla de benchmarks de la model card anonimiza los modelos de 
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre metadatos y model card: HuggingFace clasifica el modelo como BERT de `feature-extraction`, mientras que la model card lo describe como un modelo generativo de razonamiento con function calling. Esta discrepancia no esta resuelta.
+- Contradiccion entre metadatos y model card: Hugging Face clasifica el modelo como BERT de `feature-extraction`, mientras que la model card lo describe como un modelo generativo de razonamiento con function calling. Esta discrepancia no esta resuelta.
 - Ausencia de pesos: el repositorio figura con 0.0 GB y cero descargas, por lo que no hay evidencia de que el modelo sea ejecutable.
 - Benchmark sin trazabilidad: los modelos de comparacion estan anonimizados y no se especifican los conjuntos de evaluacion ni la metodologia, lo que impide verificar los resultados.
 - Idiomas no declarados: se desconoce que idiomas soporta el modelo y con que calidad.
@@ -102,5 +102,5 @@ No disponible. La tabla de benchmarks de la model card anonimiza los modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel
+- Hugging Face: https://huggingface.co/SAD1CZ12DSA/MyAwesomeModel
 - No se han encontrado otros enlaces relevantes (papers, repos, demos o blogs) en la busqueda web asociada. Los resultados devueltos no guardan relacion con el modelo.

@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamano similar. CounterVid se distingue po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aimagelab/CounterVid-Qwen2.5-VL-3B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/aimagelab/CounterVid-Qwen2.5-VL-3B-LoRA
 - Dataset CounterVid: https://huggingface.co/datasets/aimagelab/CounterVid
 - Repositorio GitHub del proyecto: https://github.com/aimagelab/CounterVid
 - Pagina del proyecto: https://aimagelab.github.io/CounterVid/

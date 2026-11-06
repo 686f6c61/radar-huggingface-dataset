@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WAN2.2-14B-Rapid-AllInOne (micmacirq) | 14B | no disponible | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.2-T2V-A14B | 14B | no disponible | Apache 2.0 | HuggingFace |
+| WAN2.2-14B-Rapid-AllInOne (micmacirq) | 14B | no disponible | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.2-T2V-A14B | 14B | no disponible | Apache 2.0 | Hugging Face |
 
 Se trata de una mezcla que integra los dos modelos base de WAN 2.2 en un solo archivo, con aceleradores añadidos. No se dispone de datos de rendimiento comparativo.
 
@@ -74,7 +74,7 @@ Se trata de una mezcla que integra los dos modelos base de WAN 2.2 en un solo ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micmacirq/WAN2.2-14B-Rapid-AllInOne
+- Hugging Face: https://huggingface.co/micmacirq/WAN2.2-14B-Rapid-AllInOne
 - Modelo base I2V: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Modelo base T2V: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Repositorio similar (Phr00t): https://huggingface.co/Phr00t/WAN2.2-14B-Rapid-AllInOne

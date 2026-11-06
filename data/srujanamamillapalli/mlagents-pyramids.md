@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace alberga un agente de reinforcement learning entrenado con la librería Unity ML-Agents para resolver el entorno Pyramids. El autor, srujanamamillapalli, ha publicado el modelo con el identificador `srujanamamillapalli/MLAgents-Pyramids`, utilizando el pipeline `reinforcement-learning`. El agente sigue el algoritmo PPO, tal como se indica en la model card, y está concebido para demostrar el entrenamiento de políticas en entornos 3D de Unity.
+Este repositorio de Hugging Face alberga un agente de reinforcement learning entrenado con la librería Unity ML-Agents para resolver el entorno Pyramids. El autor, srujanamamillapalli, ha publicado el modelo con el identificador `srujanamamillapalli/MLAgents-Pyramids`, utilizando el pipeline `reinforcement-learning`. El agente sigue el algoritmo PPO, tal como se indica en la model card, y está concebido para demostrar el entrenamiento de políticas en entornos 3D de Unity.
 
 El modelo se presenta como una pieza educativa dentro del ecosistema de ML-Agents, probablemente vinculado a los tutoriales de Hugging Face sobre aprendizaje por refuerzo profundo. No obstante, el repositorio aparece vacío (0.0 GB), sin archivos de pesos `.nn` ni `.onnx`, y no se proporciona información sobre licencia, idiomas, arquitectura concreta de la red ni datos de entrenamiento. Por tanto, su valor práctico como modelo descargable es nulo en el estado actual.
 
@@ -71,7 +71,7 @@ No disponible. No se ha encontrado informacion comparable en la busqueda web, y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srujanamamillapalli/MLAgents-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/srujanamamillapalli/MLAgents-Pyramids
 - Documentacion de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial "Huggy the Dog" (curso de deep RL de Hugging Face): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction

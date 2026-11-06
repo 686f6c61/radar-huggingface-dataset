@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `power612/albedo-qwen3.6-35b-1c75a12c` es un modelo de lenguaje publicado en HuggingFace por el usuario `power612`. Según las etiquetas del repositorio, se trata de un modelo con arquitectura de mixture of experts (MoE) de la familia Qwen3.5, aunque el nombre del repositorio indica `qwen3.6-35b`. Cuenta con un total de 35.951.822.704 parámetros, lo que supone un tamaño de pesos de 71,9 GB en formato `safetensors` con precisión BF16. La fecha de creación es el 6 de septiembre de 2026.
+El modelo `power612/albedo-qwen3.6-35b-1c75a12c` es un modelo de lenguaje publicado en Hugging Face por el usuario `power612`. Según las etiquetas del repositorio, se trata de un modelo con arquitectura de mixture of experts (MoE) de la familia Qwen3.5, aunque el nombre del repositorio indica `qwen3.6-35b`. Cuenta con un total de 35.951.822.704 parámetros, lo que supone un tamaño de pesos de 71,9 GB en formato `safetensors` con precisión BF16. La fecha de creación es el 6 de septiembre de 2026.
 
-En la ficha de HuggingFace no se proporciona información sobre el proceso de entrenamiento, la longitud de contexto, los idiomas soportados, la licencia ni los resultados de benchmarks. Tampoco existe un model card descriptivo. Por tanto, no es posible evaluar las capacidades ni la relevancia práctica del modelo a partir de la información publicada.
+En la ficha de Hugging Face no se proporciona información sobre el proceso de entrenamiento, la longitud de contexto, los idiomas soportados, la licencia ni los resultados de benchmarks. Tampoco existe un model card descriptivo. Por tanto, no es posible evaluar las capacidades ni la relevancia práctica del modelo a partir de la información publicada.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La información disponible no incluye detalles sobre la arquitectura interna ni 
 
 ## Capacidades
 
-- No se ha publicado información sobre las capacidades del modelo en la ficha de HuggingFace. No se dispone de datos sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte de agentes, capacidades multilingües ni modos especiales.
+- No se ha publicado información sobre las capacidades del modelo en la ficha de Hugging Face. No se dispone de datos sobre generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte de agentes, capacidades multilingües ni modos especiales.
 
 ## Casos de uso
 
@@ -57,4 +57,4 @@ No disponible. No se dispone de información sobre modelos comparables en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/power612/albedo-qwen3.6-35b-1c75a12c
+- Hugging Face: https://huggingface.co/power612/albedo-qwen3.6-35b-1c75a12c

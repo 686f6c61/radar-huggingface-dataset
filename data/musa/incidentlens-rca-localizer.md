@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`musa/incidentlens-rca-localizer` es un repositorio de modelos alojado en HuggingFace por el usuario `musa`. Más allá del identificador y de la licencia Apache 2.0, la model card publicada no contiene ninguna información técnica: no se declara arquitectura, tamaño, longitud de contexto, idiomas, formato de pesos ni pipeline de uso. El repositorio se creó el 28 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, sin actualizaciones posteriores a su creación.
+`musa/incidentlens-rca-localizer` es un repositorio de modelos alojado en Hugging Face por el usuario `musa`. Más allá del identificador y de la licencia Apache 2.0, la model card publicada no contiene ninguna información técnica: no se declara arquitectura, tamaño, longitud de contexto, idiomas, formato de pesos ni pipeline de uso. El repositorio se creó el 28 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, sin actualizaciones posteriores a su creación.
 
 El nombre del repositorio sugiere, por convención de nomenclatura, una posible orientación a la localización de causa raíz (RCA, *root cause analysis*) en incidentes, pero esta interpretación es una inferencia a partir del identificador y no está respaldada por ninguna documentación del autor. No debe asumirse ninguna capacidad concreta sin verificación directa de los pesos y la configuración del repositorio.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado ningún modelo comparable, dado que no se c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/musa/incidentlens-rca-localizer
+- Repositorio en Hugging Face: https://huggingface.co/musa/incidentlens-rca-localizer
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Los resultados de búsqueda web obtenidos no guardan relación con el modelo y no se incluyen como referencias válidas.

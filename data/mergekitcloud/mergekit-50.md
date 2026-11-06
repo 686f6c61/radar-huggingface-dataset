@@ -80,7 +80,7 @@ El modelo se sitúa en la misma categoria que sus modelos base: un 8B denso orie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-50
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-50
 - Repositorio de mergekit: https://github.com/arcee-ai/mergekit
 - Articulo Model Stock (arXiv:2403.19522): https://arxiv.org/abs/2403.19522
 - Documentacion de mergekit en Clore.ai: https://docs.clore.ai/guides/training/mergekit

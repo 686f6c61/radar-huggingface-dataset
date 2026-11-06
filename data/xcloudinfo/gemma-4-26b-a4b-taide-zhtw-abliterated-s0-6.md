@@ -78,7 +78,7 @@ La comparativa se basa en modelos de tamano similar disponibles en el ecosistema
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6
+- Repositorio Hugging Face: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6
 - Modelo base: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW
 - Version GGUF: https://huggingface.co/xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6-GGUF
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

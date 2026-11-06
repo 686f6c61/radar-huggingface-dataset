@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo. La diferencia clave con el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Datasets de entrenamiento (autor 0xZee): https://huggingface.co/0xZee (coleccion de datasets CoT de fisica, algebra lineal, electromagnetismo, biologia molecular, fisiologia, mecanica clasica, ecuaciones diferenciales, ingenieria y matematicas)

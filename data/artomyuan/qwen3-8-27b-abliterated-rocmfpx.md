@@ -87,7 +87,7 @@ La principal diferencia frente al modelo base es la eliminación del refusal (ab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/ArtomYuan/Qwen3.8-27B-abliterated-ROCmFPX
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Motor halofpx (ROCmFPX): https://github.com/julianmb/halofpx

@@ -68,8 +68,8 @@ La única referencia cuantitativa aportada por el autor es la descripcion de la 
 
 | Modelo | Tipo | Observacion / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-senate_duck_1016 (este) | Politica RL/ES para microduck | 61-D / 14 | 50 Hz | no disponible | HuggingFace (DenRakEiw) |
-| microduck-senate_duck_1456 | Politica RL para microduck | no disponible | no disponible | no disponible | HuggingFace (DenRakEiw) |
+| microduck-senate_duck_1016 (este) | Politica RL/ES para microduck | 61-D / 14 | 50 Hz | no disponible | Hugging Face (DenRakEiw) |
+| microduck-senate_duck_1456 | Politica RL para microduck | no disponible | no disponible | no disponible | Hugging Face (DenRakEiw) |
 | Otras politicas del ecosistema microduck | Politicas RL para microduck | no disponible | no disponible | no disponible | Repositorio `pollen-robotics/microduck_rl` |
 
 No se dispone de datos de rendimiento comparables entre estas politicas. La unica alternativa directamente identificada en la busqueda es `DenRakEiw/microduck-senate_duck_1456`, del mismo autor, sin especificaciones publicas detalladas.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas politicas. La unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_1016
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_1016
 - Politica relacionada del mismo autor: https://huggingface.co/DenRakEiw/microduck-senate_duck_1456
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `denrakeiw`, commit `8dafac487`)

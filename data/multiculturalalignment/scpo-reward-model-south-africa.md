@@ -80,8 +80,8 @@ Estimaciones a partir del numero de parametros publicado (184.422.913); el autor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scpo-reward-model-south-africa | 184.422.913 | 512 tokens | 65,4804 % de exactitud global (experimento registrado del autor) | MIT | Pesos en safetensors en HuggingFace |
-| OpenAssistant/reward-model-deberta-v3-base (modelo de partida) | 184.422.913 (misma arquitectura) | 512 tokens | 64,0569 % de exactitud global reportada por el autor como linea base | MIT | Publico en HuggingFace |
+| scpo-reward-model-south-africa | 184.422.913 | 512 tokens | 65,4804 % de exactitud global (experimento registrado del autor) | MIT | Pesos en safetensors en Hugging Face |
+| OpenAssistant/reward-model-deberta-v3-base (modelo de partida) | 184.422.913 (misma arquitectura) | 512 tokens | 64,0569 % de exactitud global reportada por el autor como linea base | MIT | Publico en Hugging Face |
 | Fine-tuning completo del modelo base con los datos completos de PRISM | Igual orden de magnitud | 512 tokens | Segun el articulo, hasta un 280 % menos eficiente en datos que SCPO; sin cifra concreta para este checkpoint | No disponible para esta ficha | No disponible |
 
 No se dispone de informacion sobre otros modelos de recompensa especificos de cultura o pais con los que comparar directamente en terminos de parametros y contexto. Los otros checkpoints por pais de la misma familia SCPO no estan documentados en la informacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de informacion sobre otros modelos de recompensa especificos de cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-south-africa
+- Modelo en Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-south-africa
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base
 - Dataset PRISM: https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
 - Articulo (arXiv): https://arxiv.org/abs/2606.18606

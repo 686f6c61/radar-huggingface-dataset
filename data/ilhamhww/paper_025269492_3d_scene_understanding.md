@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario IlhamHww, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de comprensión de escenas 3D (*3D scene understanding*). El artefacto principal es un paper con formato LaTeX ACL, estilo de citación por notas al pie y estructura IMRAD (introducción, antecedentes, enfoque, evaluación y conclusión), redactado con un estilo argumentativo.
+Este repositorio de Hugging Face, publicado por el usuario IlhamHww, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de comprensión de escenas 3D (*3D scene understanding*). El artefacto principal es un paper con formato LaTeX ACL, estilo de citación por notas al pie y estructura IMRAD (introducción, antecedentes, enfoque, evaluación y conclusión), redactado con un estilo argumentativo.
 
 El repositorio está pensado como un recurso textual de investigación, no como un modelo desplegable. No se proporcionan pesos, arquitectura, parámetros ni ningún artefacto ejecutable. Su relevancia radica en el contenido del paper, que aborda la comprensión unificada de escenas 3D, un campo activo en visión por computador y robótica.
 
@@ -62,7 +62,7 @@ No disponible. No se pueden comparar modelos de IA porque este repositorio no co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IlhamHww/paper_025269492_3d_scene_understanding
+- Repositorio en Hugging Face: https://huggingface.co/IlhamHww/paper_025269492_3d_scene_understanding
 - Paper sobre comprension de escenas 3D unificada: https://arxiv.org/abs/2605.24321
 - PAR3D: 3D-MLLM con representacion de partes: https://arxiv.org/abs/2606.06485
 - Lista de recursos sobre generacion de escenas 3D: https://github.com/hzxie/Awesome-3D-Scene-Generation

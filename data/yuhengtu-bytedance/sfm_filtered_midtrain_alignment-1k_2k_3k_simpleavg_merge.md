@@ -4,7 +4,7 @@
 
 El modelo `sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge` es una fusión de tres checkpoints intermedios de un modelo de lenguaje pre-entrenado, creada mediante la herramienta mergekit con el método de interpolación lineal. Lo desarrolla el usuario yuhengtu-bytedance, aparentemente vinculado a ByteDance, y forma parte de una serie de experimentos sobre "model spec midtraining" (MSM), una técnica que consiste en entrenar modelos con documentos sintéticos sobre su especificación de comportamiento antes del ajuste fino de alineación. El objetivo es mejorar la generalización de la alineación posterior.
 
-Con 6.856.253.440 parámetros (aproximadamente 6,8 mil millones), el modelo emplea una arquitectura basada en GPT-NeoX (según las etiquetas de HuggingFace) y se distribuye en formato safetensors. La fusión combina los checkpoints de los pasos globales 1000, 2000 y 3000 de un entrenamiento de "midtrain alignment" filtrado, utilizando el checkpoint del paso 3000 como base. El resultado es un modelo de generación de texto con un tamaño de repositorio de 13,7 GB.
+Con 6.856.253.440 parámetros (aproximadamente 6,8 mil millones), el modelo emplea una arquitectura basada en GPT-NeoX (según las etiquetas de Hugging Face) y se distribuye en formato safetensors. La fusión combina los checkpoints de los pasos globales 1000, 2000 y 3000 de un entrenamiento de "midtrain alignment" filtrado, utilizando el checkpoint del paso 3000 como base. El resultado es un modelo de generación de texto con un tamaño de repositorio de 13,7 GB.
 
 La relevancia de este modelo radica en que explora una vía poco común: fusionar pesos de diferentes etapas de entrenamiento intermedio para obtener un modelo final que conserve propiedades de alineación de manera más robusta. Aunque no se proporcionan métricas de rendimiento ni detalles sobre el dataset de entrenamiento, su existencia documenta un enfoque experimental dentro del ecosistema de modelos abiertos.
 
@@ -30,7 +30,7 @@ No se dispone de información sobre el entrenamiento original del modelo base: n
 ## Capacidades
 
 - Generación de texto: al ser un modelo de lenguaje autoregresivo, es capaz de producir texto continuo, aunque no se han documentado capacidades específicas.
-- Conversación: la etiqueta "conversational" en HuggingFace indica que el modelo puede usarse en diálogos multi-turno, pero no hay ejemplos ni evaluaciones.
+- Conversación: la etiqueta "conversational" en Hugging Face indica que el modelo puede usarse en diálogos multi-turno, pero no hay ejemplos ni evaluaciones.
 - No se dispone de información sobre razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües.
 - No se ha confirmado soporte para function calling ni modos de pensamiento extendido.
 
@@ -78,7 +78,7 @@ Existen otros modelos de la misma familia creados por el mismo autor, como `sfm-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge
 - Modelo relacionado (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg
 - Modelo relacionado (baseline): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge

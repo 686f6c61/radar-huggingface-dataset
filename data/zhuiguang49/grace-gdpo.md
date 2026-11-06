@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRACE-GDPO es un modelo publicado en HuggingFace por el usuario zhuiguang49 bajo licencia MIT. La model card asociada únicamente incluye la declaración de licencia, sin información sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio de GitHub vinculado existe, pero no se ha encontrado documentación técnica adicional en la búsqueda web realizada.
+GRACE-GDPO es un modelo publicado en Hugging Face por el usuario zhuiguang49 bajo licencia MIT. La model card asociada únicamente incluye la declaración de licencia, sin información sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio de GitHub vinculado existe, pero no se ha encontrado documentación técnica adicional en la búsqueda web realizada.
 
 A fecha de la consulta, el modelo no registra descargas ni valoraciones, y su fecha de creación (2026-08-30) es posterior a la fecha actual, lo que sugiere que podría tratarse de una publicación reciente o de un proyecto en fase inicial sin documentación pública. No se dispone de datos suficientes para evaluar su utilidad o rendimiento.
 
@@ -54,5 +54,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - zhuiguang49/GRACE-GDPO](https://huggingface.co/zhuiguang49/GRACE-GDPO)
+- [Hugging Face - zhuiguang49/GRACE-GDPO](https://huggingface.co/zhuiguang49/GRACE-GDPO)
 - [GitHub - zhuiguang49/GRACE-GDPO](https://github.com/zhuiguang49/GRACE-GDPO)

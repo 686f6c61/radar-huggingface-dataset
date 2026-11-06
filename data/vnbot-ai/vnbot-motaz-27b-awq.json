@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vnbot-ai/VNBot-MotaZ-27B-AWQ",
+  "slug": "vnbot-ai-vnbot-motaz-27b-awq",
+  "author": "vnbot-ai",
+  "url": "https://huggingface.co/vnbot-ai/VNBot-MotaZ-27B-AWQ",
+  "created_at": "2026-11-06T01:51:29.000Z",
+  "updated_at": "2026-11-06T05:42:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "vi",
+    "en",
+    "base_model:vnbot-ai/VNBot-MotaZ-27B",
+    "base_model:quantized:vnbot-ai/VNBot-MotaZ-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 21842662910,
+  "storage_human": "21.8 GB",
+  "base_model": "vnbot-ai/VNBot-MotaZ-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

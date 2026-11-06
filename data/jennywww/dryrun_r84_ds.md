@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JennyWWW/dryrun_r84_ds` es una política de control visuomotor entrenada con LeRobot y publicada en HuggingFace Hub por el usuario JennyWWW. Se trata de una implementación de **Diffusion Policy** (Chi et al., 2023, arXiv:2303.04137), un método que plantea el control visuomotor como un proceso generativo de difusión: en lugar de predecir una única acción, el modelo genera una trayectoria de acciones multi-paso mediante denoising iterativo, lo que produce movimientos suaves y mejora el rendimiento en tareas de manipulación con contacto rico.
+`JennyWWW/dryrun_r84_ds` es una política de control visuomotor entrenada con LeRobot y publicada en Hugging Face Hub por el usuario JennyWWW. Se trata de una implementación de **Diffusion Policy** (Chi et al., 2023, arXiv:2303.04137), un método que plantea el control visuomotor como un proceso generativo de difusión: en lugar de predecir una única acción, el modelo genera una trayectoria de acciones multi-paso mediante denoising iterativo, lo que produce movimientos suaves y mejora el rendimiento en tareas de manipulación con contacto rico.
 
 El modelo consume dos cámaras RGB de 84x84 píxeles (una en la base y otra en la muñeca del robot) junto con un vector de estado de 7 dimensiones, y devuelve un vector de acción de 7 dimensiones (típicamente 6 grados de libertad de brazo más pinza). Está asociado al robot `lerobot_splatsim` y al dataset `JennyWWW/splatsim_approach_lever_13_smooth_r84`, con 536 episodios y 148.919 fotogramas a 30 FPS.
 
@@ -74,10 +74,10 @@ No se dispone en la informacion proporcionada de las especificaciones numericas 
 
 | Modelo / metodo | Parametros | Horizonte de accion | Generacion de trayectoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JennyWWW/dryrun_r84_ds` (Diffusion Policy) | 40,65 M | no disponible | si, difusion iterativa | apache-2.0 | HuggingFace Hub |
+| `JennyWWW/dryrun_r84_ds` (Diffusion Policy) | 40,65 M | no disponible | si, difusion iterativa | apache-2.0 | Hugging Face Hub |
 | Diffusion Policy de referencia (Chi et al., 2023) | no disponible | no disponible | si, difusion iterativa | no disponible | paper + implementaciones publicas |
 | ACT (Action Chunking Transformer, implementado en LeRobot) | no disponible | no disponible | no, prediccion directa de chunk | no disponible | repositorio LeRobot |
-| Otras politicas publicadas en el Hub con `library_name: lerobot` | no disponible | no disponible | segun metodo | variable | HuggingFace Hub |
+| Otras politicas publicadas en el Hub con `library_name: lerobot` | no disponible | no disponible | segun metodo | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparado para ninguna de las filas alternativas en la informacion facilitada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado para ninguna de las filas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JennyWWW/dryrun_r84_ds
+- Modelo en Hugging Face: https://huggingface.co/JennyWWW/dryrun_r84_ds
 - Dataset de entrenamiento: https://huggingface.co/datasets/JennyWWW/splatsim_approach_lever_13_smooth_r84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=JennyWWW/splatsim_approach_lever_13_smooth_r84
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

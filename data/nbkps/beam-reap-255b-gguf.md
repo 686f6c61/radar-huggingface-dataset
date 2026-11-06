@@ -94,7 +94,7 @@ Rendimiento de inferencia medido en un GB10 (clase main-q6): ~24 tok/s como tech
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nbKPS/beam-reap-255b-gguf
+- Hugging Face: https://huggingface.co/nbKPS/beam-reap-255b-gguf
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Keep BF16 de la poda: nbKPS/beam-reap-255b-bf16 (referenciado en la model card, sin URL completa en la información disponible)
 - Documentación interna del repo: README-IRRATIONALS.md, IMATRIX-README.md, SHA256SUMS, serve/README.md, serve/patches/, serve/doors/, teacher-kl/ (rutas dentro del repositorio, sin URL directa en la información disponible)

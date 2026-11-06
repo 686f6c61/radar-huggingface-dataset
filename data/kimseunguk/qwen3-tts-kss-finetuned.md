@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks específicos para este fine-tuning 
 | zero0303/qwen3-tts-ljspeech-finetuned | ~1.7B | no disponible | Inglés (especializado) | Apache 2.0 | Fine-tuning sobre LJSpeech, voz de un solo hablante |
 | Qwen3-TTS-12Hz-0.6B-Base | 0.6B | no disponible | 10 idiomas | Apache 2.0 | Versión más pequeña, menor calidad pero más eficiente |
 
-La comparativa se basa en los modelos disponibles en HuggingFace y el repositorio oficial. No se dispone de métricas de rendimiento comparativas para estos fine-tunings.
+La comparativa se basa en los modelos disponibles en Hugging Face y el repositorio oficial. No se dispone de métricas de rendimiento comparativas para estos fine-tunings.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ La comparativa se basa en los modelos disponibles en HuggingFace y el repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kimseunguk/qwen3-tts-kss-finetuned
+- Repositorio Hugging Face: https://huggingface.co/kimseunguk/qwen3-tts-kss-finetuned
 - Repositorio oficial Qwen3-TTS en GitHub: https://github.com/QwenLM/Qwen3-TTS
 - Informe técnico Qwen3-TTS (arXiv): https://arxiv.org/pdf/2601.15621
 - Ejemplo de fine-tuning de Qwen3-TTS (repositorio de la comunidad): https://github.com/iosub/AI-Qwen3-TTS/tree/main/finetuning

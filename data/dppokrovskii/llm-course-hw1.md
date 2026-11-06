@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`dppokrovskii/llm-course-hw1` es un repositorio de pesos alojado en HuggingFace por el usuario dppokrovskii. Por el nombre del identificador y por los tags declarados (`model_hub_mixin`, `pytorch_model_hub_mixin`), todo apunta a un checkpoint subido mediante el mixin `PyTorchModelHubMixin` de la libreria `huggingface_hub`, un mecanismo habitual en ejercicios de cursos de machine learning para publicar un modelo propio sin necesidad de definir una clase de configuracion ni un `AutoModel` registrado.
+`dppokrovskii/llm-course-hw1` es un repositorio de pesos alojado en Hugging Face por el usuario dppokrovskii. Por el nombre del identificador y por los tags declarados (`model_hub_mixin`, `pytorch_model_hub_mixin`), todo apunta a un checkpoint subido mediante el mixin `PyTorchModelHubMixin` de la libreria `huggingface_hub`, un mecanismo habitual en ejercicios de cursos de machine learning para publicar un modelo propio sin necesidad de definir una clase de configuracion ni un `AutoModel` registrado.
 
 La informacion publica disponible es practicamente nula. La model card no contiene documentacion tecnica: unicamente reproduce el mensaje plantilla de `PyTorchModelHubMixin` con los campos `Code`, `Paper` y `Docs` marcados como `[More Information Needed]`. No se declara licencia, idiomas, pipeline de inferencia ni arquitectura. El tamano del repositorio es de 0.0 GB y las cifras publicas de descargas y likes son 0.
 
@@ -84,7 +84,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen el ta
 ## Limitaciones y advertencias
 
 - Licencia ausente: al no declararse licencia, no existe autorizacion explicita de uso, lo que impide legalmente su explotacion comercial en la mayoria de jurisdicciones y desaconseja su uso en produccion.
-- Documentacion inexistente: la model card es la plantilla por defecto del mixin de HuggingFace, sin informacion sobre arquitectura, datos de entrenamiento ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla por defecto del mixin de Hugging Face, sin informacion sobre arquitectura, datos de entrenamiento ni evaluacion.
 - Repositorio de 0.0 GB: no hay evidencia de que contenga pesos de un modelo funcional. Conviene verificar el listado de ficheros antes de cualquier intento de descarga.
 - Cero traccion: 0 descargas y 0 likes implican que el modelo no ha sido validado por terceros; no hay informes de comportamiento, sesgos ni fallos.
 - Riesgo de sesgo y alucinacion: no evaluable, pero debe asumirse como alto y no mitigado ante la ausencia total de documentacion sobre datos y ajuste.
@@ -94,7 +94,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen el ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dppokrovskii/llm-course-hw1
+- Modelo en Hugging Face: https://huggingface.co/dppokrovskii/llm-course-hw1
 - Documentacion del mixin utilizado: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de codigo: no disponible

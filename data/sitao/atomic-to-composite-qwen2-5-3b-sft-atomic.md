@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| atomic-to-composite-qwen2.5-3b-sft-atomic (este) | 3,09 B | SFT solo en habilidades atómicas (MEM+CTX) | qwen-research | Publicado en HuggingFace |
-| atomic-to-composite-qwen2.5-3b-sft-composite | 3,09 B | SFT solo en la tarea compuesta (COMP) | qwen-research | Publicado en HuggingFace |
-| atomic-to-composite-qwen2.5-3b-atomic-first-rl | 3,09 B | SFT atómico + RL (GRPO) sobre COMP | qwen-research | Publicado en HuggingFace |
-| atomic-to-composite-qwen2.5-3b-composite-first-rl | 3,09 B | SFT compuesto + RL (GRPO) sobre COMP | qwen-research | Publicado en HuggingFace |
-| Qwen/Qwen2.5-3B (base) | 3,09 B | Preentrenamiento general | Qwen Research | Publicado en HuggingFace |
+| atomic-to-composite-qwen2.5-3b-sft-atomic (este) | 3,09 B | SFT solo en habilidades atómicas (MEM+CTX) | qwen-research | Publicado en Hugging Face |
+| atomic-to-composite-qwen2.5-3b-sft-composite | 3,09 B | SFT solo en la tarea compuesta (COMP) | qwen-research | Publicado en Hugging Face |
+| atomic-to-composite-qwen2.5-3b-atomic-first-rl | 3,09 B | SFT atómico + RL (GRPO) sobre COMP | qwen-research | Publicado en Hugging Face |
+| atomic-to-composite-qwen2.5-3b-composite-first-rl | 3,09 B | SFT compuesto + RL (GRPO) sobre COMP | qwen-research | Publicado en Hugging Face |
+| Qwen/Qwen2.5-3B (base) | 3,09 B | Preentrenamiento general | Qwen Research | Publicado en Hugging Face |
 
 Los cuatro checkpoints derivados comparten base, tamaño y licencia; la diferencia está en la receta de entrenamiento, y el paper los compara precisamente para aislar el efecto del RL en la generalización composicional.
 
@@ -87,7 +87,7 @@ Los cuatro checkpoints derivados comparten base, tamaño y licencia; la diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-sft-atomic
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-sft-atomic
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Página del proyecto: https://sitaocheng.github.io/atomic/
 - Código (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

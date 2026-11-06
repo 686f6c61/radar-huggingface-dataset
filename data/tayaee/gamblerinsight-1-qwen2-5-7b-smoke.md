@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GamblerInsight Smoke (`gamblerinsight-1-qwen2.5-7b-smoke`) es un checkpoint de prueba de humo (smoke test) publicado por el usuario `tayaee` en HuggingFace. Se trata de un ajuste fino del modelo `Qwen/Qwen2.5-7B-Instruct` orientado a razonamiento financiero multi-salto y a la actuación como agente con tool calling. Según la model card, el objetivo declarado no es ofrecer un modelo listo para producción, sino validar de extremo a extremo la tubería de entrenamiento, fusión del adaptador LoRA en un checkpoint safetensors estándar y despliegue en el Hub para servir con vLLM.
+GamblerInsight Smoke (`gamblerinsight-1-qwen2.5-7b-smoke`) es un checkpoint de prueba de humo (smoke test) publicado por el usuario `tayaee` en Hugging Face. Se trata de un ajuste fino del modelo `Qwen/Qwen2.5-7B-Instruct` orientado a razonamiento financiero multi-salto y a la actuación como agente con tool calling. Según la model card, el objetivo declarado no es ofrecer un modelo listo para producción, sino validar de extremo a extremo la tubería de entrenamiento, fusión del adaptador LoRA en un checkpoint safetensors estándar y despliegue en el Hub para servir con vLLM.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con 7.615.616.512 parámetros totales según los pesos safetensors del repositorio (15,2 GB). El ajuste se realizó mediante LoRA en BF16/FP16 con PEFT (r=8, alpha=16, dropout=0,05), sobre un conjunto mínimo de 16 trayectorias (`minimal_sft_smoke.jsonl`) y tan solo 10 pasos de optimización, con una pérdida final de 0,8317. Es, por tanto, un artefacto de ingeniería más que un modelo entrenado de forma sustantiva.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gamblerinsight-1-qwen2.5-7b-smoke | 7,6 B | no disponible | Tool calling financiero (smoke test) | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | no disponible en esta ficha | Instrucciones generales, multilingüe | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| Alternativas de 7-8 B con tool calling (por ejemplo, familias Llama 3.1 8B Instruct o Mistral 7B Instruct) | 7-8 B | no disponible en esta ficha | Instrucciones generales y function calling | licencias propias de cada familia | HuggingFace |
+| gamblerinsight-1-qwen2.5-7b-smoke | 7,6 B | no disponible | Tool calling financiero (smoke test) | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,6 B | no disponible en esta ficha | Instrucciones generales, multilingüe | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| Alternativas de 7-8 B con tool calling (por ejemplo, familias Llama 3.1 8B Instruct o Mistral 7B Instruct) | 7-8 B | no disponible en esta ficha | Instrucciones generales y function calling | licencias propias de cada familia | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: GamblerInsight Smoke no aporta mejoras medibles sobre Qwen2.5-7B-Instruct, ya que solo se entrenó 10 pasos sobre 16 trayectorias. Para cualquier uso real de análisis financiero o tool calling general, el modelo base o un fine-tuning sustantivo serían preferibles.
 
@@ -85,7 +85,7 @@ La comparación relevante es contra el propio modelo base: GamblerInsight Smoke 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-7b-smoke
+- Modelo en Hugging Face: https://huggingface.co/tayaee/gamblerinsight-1-qwen2.5-7b-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentación de vLLM sobre tool calling: no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional del autor: no disponible en la informacion proporcionada

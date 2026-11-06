@@ -73,6 +73,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-a5ce829f-MellowFalcon
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-a5ce829f-MellowFalcon
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo (usada en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo

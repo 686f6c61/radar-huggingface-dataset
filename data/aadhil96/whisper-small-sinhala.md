@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-small-sinhala es un ajuste fino del modelo de reconocimiento automatico del habla `openai/whisper-small` de OpenAI, especializado en la transcripcion de sinhala (cingales), idioma oficial de Sri Lanka hablado por unos 17 millones de personas. Lo desarrolla Aadhil96 (Aadhil Imam) y se publica en HuggingFace bajo licencia CC BY-SA 4.0, heredada del corpus de entrenamiento OpenSLR SLR52.
+Whisper-small-sinhala es un ajuste fino del modelo de reconocimiento automatico del habla `openai/whisper-small` de OpenAI, especializado en la transcripcion de sinhala (cingales), idioma oficial de Sri Lanka hablado por unos 17 millones de personas. Lo desarrolla Aadhil96 (Aadhil Imam) y se publica en Hugging Face bajo licencia CC BY-SA 4.0, heredada del corpus de entrenamiento OpenSLR SLR52.
 
 El modelo resuelve un problema concreto: los Whisper originales de OpenAI no estan entrenados para sinhala y fallan de forma catastrofica en este idioma, generando bucles de repeticion con tasas de error superiores al 300 %. Este ajuste fino reduce el CER al 9,13 % y el WER al 36,47 % sobre un conjunto de test de 3.000 clips de hablantes no vistos en entrenamiento, eliminando por completo los fallos por desbocamiento de salida.
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros ajustes finos de Whisper para sinhala c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aadhil96/whisper-small-sinhala
+- Modelo en Hugging Face: https://huggingface.co/Aadhil96/whisper-small-sinhala
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Corpus OpenSLR SLR52: https://www.openslr.org/52/
 - Demo Gradio en Kaggle: https://www.kaggle.com/code/aadhilimam/sinhala-speech-to-text-gradio-demo

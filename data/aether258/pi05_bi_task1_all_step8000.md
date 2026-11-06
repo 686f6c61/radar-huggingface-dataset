@@ -73,7 +73,7 @@ Es importante señalar que la validación usó solo 20 batches de 128 frames (25
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_bi (este checkpoint) | VLA bimanual, flow matching | no disponible | action_horizon 50 | Apache 2.0 | HuggingFace |
+| pi05_bi (este checkpoint) | VLA bimanual, flow matching | no disponible | action_horizon 50 | Apache 2.0 | Hugging Face |
 | π0 (base) | VLA, flow matching | no disponible | no disponible | no disponible | openpi repo |
 | π0.5 (base) | VLA, flow matching | no disponible | no disponible | no disponible | openpi repo |
 | π0-FAST | VLA autoregresivo con FAST tokenizer | no disponible | no disponible | no disponible | openpi repo |
@@ -92,8 +92,8 @@ La comparativa directa con otros checkpoints de π0.5 no está disponible en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aether258/pi05_bi_task1_all_step8000
-- Perfil del autor en HuggingFace: https://huggingface.co/Aether258
+- Repositorio Hugging Face: https://huggingface.co/Aether258/pi05_bi_task1_all_step8000
+- Perfil del autor en Hugging Face: https://huggingface.co/Aether258
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Documentación de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05
 - Repositorio openpi-comet (BEHAVIOR Challenge 2025): https://github.com/mli0603/openpi-comet

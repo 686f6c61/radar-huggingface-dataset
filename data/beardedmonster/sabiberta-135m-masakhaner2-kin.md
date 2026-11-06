@@ -12,7 +12,7 @@ Es relevante ahora por dos motivos. Primero, permite construir pipelines de extr
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (encoder transformer, tag `modernbert` en HuggingFace) |
+| Arquitectura | ModernBERT (encoder transformer, tag `modernbert` en Hugging Face) |
 | Parametros totales | 135.883.017 (dato real de los safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 256 tokens (longitud máxima configurada en el ajuste fino) |
@@ -98,12 +98,12 @@ La comparación cualitativa relevante: este checkpoint es aproximadamente la mit
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos y de fronteras de entidad incorrectas, especialmente en entidades anidadas o en nombres propios poco frecuentes.
 - Sesgos: no documentados en la información proporcionada. Cabe esperar los sesgos de cobertura del corpus de noticias de origen (sobrerrepresentación de figuras políticas e institucionales frente a otro tipo de entidades).
 - Licencia: el checkpoint no declara licencia propia. La model card remite a la licencia y términos del modelo base `BeardedMonster/SabiBERTa-135M`, que no está disponible en esta información. No se debe asumir uso comercial permitido sin verificar esa cadena.
-- Madurez: repositorio con 0 descargas y 0 likes, sin pipeline declarado en HuggingFace y con fecha de creación avanzada respecto al momento de la consulta. Tratarlo como experimental y validarlo contra un conjunto de evaluación propio antes de producción.
+- Madurez: repositorio con 0 descargas y 0 likes, sin pipeline declarado en Hugging Face y con fecha de creación avanzada respecto al momento de la consulta. Tratarlo como experimental y validarlo contra un conjunto de evaluación propio antes de producción.
 - Sin garantías de mantenimiento: no hay evidencia de versionado, changelog ni soporte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-kin
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-kin
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Repositorio del corpus MasakhaNER 2.0 y papers asociados: no disponible en la información proporcionada (la búsqueda web realizada no devolvió resultados relevantes sobre el modelo, el corpus ni la arquitectura).
 - Demos, blogs o repositorios adicionales: no disponible.

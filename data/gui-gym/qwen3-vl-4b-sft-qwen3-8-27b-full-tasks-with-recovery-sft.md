@@ -94,9 +94,9 @@ Ambas tasas bajan en las ocho ejecuciones, y la dirección se mantiene al restri
 
 | Modelo | Parámetros | Contexto | SR en MobileWeave | Bucles ≥5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Recovery SFT) | 4,44 B | 32.768 tokens | 39,98 % | 6,54 % | No disponible | Pesos safetensors en HuggingFace |
+| Este modelo (Recovery SFT) | 4,44 B | 32.768 tokens | 39,98 % | 6,54 % | No disponible | Pesos safetensors en Hugging Face |
 | Checkpoint padre `checkpoint-1512` (Atomic + Hybrid2 + Hybrid3/4 SFT) | 4,44 B (misma base) | 32.768 tokens | 38,60 % | 21,00 % | No disponible | Referenciado en la model card, no enlazado |
-| Qwen/Qwen3-VL-4B-Instruct | 4,44 B (aproximado, misma familia) | No disponible | No evaluado en la información disponible | No evaluado | No disponible en esta información | Público en HuggingFace |
+| Qwen/Qwen3-VL-4B-Instruct | 4,44 B (aproximado, misma familia) | No disponible | No evaluado en la información disponible | No evaluado | No disponible en esta información | Público en Hugging Face |
 
 No se dispone de datos de otros agentes GUI comparables (por ejemplo, políticas específicas para Android) en la información proporcionada, por lo que la comparación se limita a la línea heredada del propio modelo.
 
@@ -117,7 +117,7 @@ No se dispone de datos de otros agentes GUI comparables (por ejemplo, políticas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GUI-Gym/Qwen3-VL-4B-sft-qwen3.8-27b-full-tasks-with-recovery-sft
+- Modelo en Hugging Face: https://huggingface.co/GUI-Gym/Qwen3-VL-4B-sft-qwen3.8-27b-full-tasks-with-recovery-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Configuración de entrenamiento: `sft_config.yaml` (en el repositorio del modelo)
 - Configuración de DeepSpeed: `ds_z2.json` (en el repositorio del modelo)

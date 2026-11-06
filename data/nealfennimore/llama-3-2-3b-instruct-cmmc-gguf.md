@@ -91,7 +91,7 @@ Frente al modelo base, esta variante sacrifica precision en opcion multiple a ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/Llama-3.2-3B-Instruct-CMMC-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/Llama-3.2-3B-Instruct-CMMC-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de la aplicacion cmmc-app: https://github.com/nealfennimore/cmmc
 - NIST SP 800-171 Rev. 2: https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM 2B Remix 2 es un ajuste fino experimental del modelo MiniCPM5-2B de OpenBMB, publicado por el usuario davidflanagancomm en HuggingFace. Se distribuye exclusivamente en formato GGUF y parte del checkpoint oficial en F16 publicado por OpenBMB. El autor lo describe como un trabajo en curso basado en la actualización número 42 de un LoRA de rango 32 entrenado con AdamW, fusionada en el modelo base y convertida directamente desde el maestro en FP32.
+MiniCPM 2B Remix 2 es un ajuste fino experimental del modelo MiniCPM5-2B de OpenBMB, publicado por el usuario davidflanagancomm en Hugging Face. Se distribuye exclusivamente en formato GGUF y parte del checkpoint oficial en F16 publicado por OpenBMB. El autor lo describe como un trabajo en curso basado en la actualización número 42 de un LoRA de rango 32 entrenado con AdamW, fusionada en el modelo base y convertida directamente desde el maestro en FP32.
 
 El objetivo declarado del ajuste es mejorar habilidades elementales de aritmética y seguimiento de estado, medidas con un panel propio denominado S³. Según los datos del autor, el modelo pasa de 59 a 503 aciertos sobre 864 casos en ese panel, pero empeora de forma notable en una muestra de matemáticas de GSM8K (de 23/32 a 3/32). Es, por tanto, un experimento de investigación con un perfil de capacidades muy sesgado, no un modelo de propósito general.
 
@@ -75,7 +75,7 @@ Desglose de la muestra externa (32 filas de GSM8K y 32 de ARC-Challenge, decodif
 - VRAM estimada para inferencia: en Q4_K_M, alrededor de 1,5-2 GB para pesos más overhead de contexto; en Q8_0, en torno a 2,7-3 GB; en FP16, unos 5 GB; en FP32, unos 10 GB.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o superiores para FP16/FP32; A100 o H100 no son necesarias para este tamaño.
 - Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más usando Q4_K_M o Q5_K_M.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo HuggingFace. vLLM y TGI no están confirmados para este repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face. vLLM y TGI no están confirmados para este repositorio.
 - Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -104,6 +104,6 @@ La comparación con Qwen2.5-1.5B y Gemma 2 2B se ofrece como referencia de categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidflanagancomm/minicpm2bremix2
+- Modelo en Hugging Face: https://huggingface.co/davidflanagancomm/minicpm2bremix2
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-GGUF
 - Estudio de habilidades de alto rango (documentación del autor): https://github.com/CC-David-CC/sss/blob/feat/minicpm-highrank-20261027/docs/MINICPM-HIGH-RANKS.md

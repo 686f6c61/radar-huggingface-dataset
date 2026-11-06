@@ -6,7 +6,7 @@ El repositorio `deepak-mishra/phd-audio-visual-learning` no es un modelo de IA e
 
 El repositorio contiene un unico artefacto principal, `notes.md`, junto al `README.md`. El contenido propuesto abarca el alcance de la pregunta de investigacion, posibles factores de confusion, comparaciones con baselines emparejados, contextos de evaluacion como AudioSet y VGGSound, comprobaciones de reproducibilidad y modos de fallo. No incluye resultados experimentales, ablaciones completadas, codigo ni checkpoint entrenado.
 
-Aunque los metadatos de HuggingFace listan el tag `safetensors` y un recuento de parametros de 33.088, el tamano del repositorio es de 0.0 GB y la model card no declara ningun modelo. Por tanto, no existe evidencia de pesos utilizables para inferencia. Cualquier uso del repositorio debe limitarse a su valor como material de referencia metodologica.
+Aunque los metadatos de Hugging Face listan el tag `safetensors` y un recuento de parametros de 33.088, el tamano del repositorio es de 0.0 GB y la model card no declara ningun modelo. Por tanto, no existe evidencia de pesos utilizables para inferencia. Cualquier uso del repositorio debe limitarse a su valor como material de referencia metodologica.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Aunque los metadatos de HuggingFace listan el tag `safetensors` y un recuento de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura de un modelo entrenado. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe ninguna red, capa ni configuracion. El autor declara que el repositorio no contiene un checkpoint entrenado ni codigo de entrenamiento.
+No hay informacion sobre arquitectura de un modelo entrenado. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe ninguna red, capa ni configuracion. El autor declara que el repositorio no contiene un checkpoint entrenado ni codigo de entrenamiento.
 
 No se documentan datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion como RLHF o DPO. El contenido del repositorio es un plan de investigacion sobre aprendizaje audio-visual, con hipotesis falsable y plan de evaluacion sobre AudioSet y VGGSound, pero sin resultados ni artefactos ejecutables.
 
@@ -73,7 +73,7 @@ No disponible. No existe un modelo comparable identificable, ya que el repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepak-mishra/phd-audio-visual-learning
+- Hugging Face: https://huggingface.co/deepak-mishra/phd-audio-visual-learning
 - Nota principal: `notes.md` dentro del repositorio
 - Documentacion: `README.md` dentro del repositorio
 - No se han encontrado papers, blogs, repos ni demos adicionales en la informacion disponible.

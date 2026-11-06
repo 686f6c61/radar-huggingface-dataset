@@ -110,12 +110,12 @@ Diferencias destacables: IQuest-Q1 multiplica por cuatro la ventana de contexto 
 - Huella de despliegue muy elevada: 650 GB de repositorio y 8 GPU como minimo implican coste de inferencia y de almacenamiento alto, ademas de tiempos de descarga y carga considerables.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ, GPTQ ni FP8 oficiales, lo que limita el despliegue en hardware economicamente accesible y complica la integracion en herramientas de consumo como Ollama o LM Studio.
 - Sesgos: no se documenta en la informacion disponible ninguna evaluacion de sesgos, toxicidad o alineacion.
-- Fecha de publicacion en HuggingFace inusualmente avanzada (2026-09-28) y contador de descargas a cero, lo que sugiere un lanzamiento reciente o poco difundido; conviene verificar el estado del repositorio antes de depender de el.
+- Fecha de publicacion en Hugging Face inusualmente avanzada (2026-09-28) y contador de descargas a cero, lo que sugiere un lanzamiento reciente o poco difundido; conviene verificar el estado del repositorio antes de depender de el.
 - Dependencia de harnesses concretos: los resultados que se citan en la model card se obtienen con versiones especificas de Claude Code, Codex y mini-SWE-agent, por lo que el rendimiento puede variar sustancialmente con otras integraciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IQuestLab/IQuest-Q1
+- Modelo en Hugging Face: https://huggingface.co/IQuestLab/IQuest-Q1
 - Licencia: https://huggingface.co/IQuestLab/IQuest-Q1/blob/main/LICENSE
 - Repositorio GitHub de IQuest-Q1: https://github.com/IQuestLab/IQuest-Q1
 - Imagen Docker SGLang: https://hub.docker.com/repository/docker/iquestlabworkspace/sglang-iquest-q1/tags/cu130

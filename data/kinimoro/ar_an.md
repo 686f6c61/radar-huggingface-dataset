@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kinimoro/ar_an es un adaptador LoRA de texto a imagen publicado en HuggingFace, entrenado para su uso con el modelo base krea/Krea-2-Raw. A diferencia de un modelo generativo completo, se trata de un adaptador de bajo rango que no genera imagenes por si mismo: modifica el comportamiento del modelo base para reproducir una identidad visual y unos rasgos faciales concretos. La model card lo describe explicitamente como "Krea 2 Identity LoRA", es decir, una personalizacion orientada a la consistencia de una persona en la generacion de imagenes.
+Kinimoro/ar_an es un adaptador LoRA de texto a imagen publicado en Hugging Face, entrenado para su uso con el modelo base krea/Krea-2-Raw. A diferencia de un modelo generativo completo, se trata de un adaptador de bajo rango que no genera imagenes por si mismo: modifica el comportamiento del modelo base para reproducir una identidad visual y unos rasgos faciales concretos. La model card lo describe explicitamente como "Krea 2 Identity LoRA", es decir, una personalizacion orientada a la consistencia de una persona en la generacion de imagenes.
 
 El repositorio ocupa 0,2 GB, esta etiquetado con la libreria diffusers y el template diffusion-lora, y su palabra de activacion declarada es `ar_an`. El autor indica que fue entrenado con imagenes de una persona adulta real, que no se incluyen imagenes de entrenamiento ni ejemplos generados en el repositorio, y que no se conceden derechos sobre la identidad, la imagen o el nombre de la persona representada. No se especifica licencia, idiomas soportados, numero de pasos de entrenamiento, resolucion de entrenamiento ni composicion del dataset.
 
@@ -65,7 +65,7 @@ No hay datos publicados para establecer una comparativa cuantitativa. La informa
 
 | Modelo o categoria | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kinimoro/ar_an | LoRA de identidad | krea/Krea-2-Raw | no disponible | no disponible | HuggingFace, 0 descargas |
+| Kinimoro/ar_an | LoRA de identidad | krea/Krea-2-Raw | no disponible | no disponible | Hugging Face, 0 descargas |
 | krea/Krea-2-Raw | Modelo base text-to-image | no aplica | no disponible | no disponible | Referenciado como base en la model card |
 | Otros LoRAs de identidad para difusion | LoRA de identidad | Distintos modelos base de difusion | no disponible | Habitualmente variable y poco documentada | Repositorios publicos, datos no disponibles |
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks, parametros ni contexto de las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kinimoro/ar_an
+- Modelo en Hugging Face: https://huggingface.co/Kinimoro/ar_an
 - Archivos y versiones: https://huggingface.co/Kinimoro/ar_an/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a servicios de consulta de husos horarios y no guardan relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo adicional.

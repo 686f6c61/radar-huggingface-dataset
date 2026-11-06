@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`caiosouza/lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador de Caio Souza. La propia model card lo declara de forma explícita: contiene una nota de trabajo sobre el tema "Lightweight Multimodal" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta ni como artículo completado ni como release de modelos entrenados. El repositorio incluye dos ficheros (`review.md` como artefacto principal y `README.md` como documentación) y ocupa 0.0 GB.
+`caiosouza/lightweight-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador de Caio Souza. La propia model card lo declara de forma explícita: contiene una nota de trabajo sobre el tema "Lightweight Multimodal" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta ni como artículo completado ni como release de modelos entrenados. El repositorio incluye dos ficheros (`review.md` como artefacto principal y `README.md` como documentación) y ocupa 0.0 GB.
 
 El dato técnico relevante es que el repositorio contiene tensores en formato safetensors con un total de 24.832 parámetros, una cifra compatible con un fichero de prueba, un tokenizador embebido o un artefacto auxiliar, no con un transformer multimodal funcional. No hay pipeline declarado, no hay idiomas declarados, no hay checkpoint entrenado y no hay resultados experimentales. Cualquier uso de inferencia sobre este repositorio debe considerarse no soportado por la información disponible.
 
@@ -28,7 +28,7 @@ Su relevancia es, por tanto, metodológica y no práctica: sirve como plantilla 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe ninguna arquitectura concreta. La unica pista es la etiqueta `transformer` asociada al repositorio, que en HuggingFace se aplica a menudo de forma automatica al detectar ciertos tensores, y la etiqueta `lightweight-multimodal`, que describe el tema de la nota y no una topologia implementada. No hay configuracion publicada (numero de capas, dimension oculta, cabezas de atencion, tipo de atencion, vision encoder, projector multimodal ni estrategia de fusión), por lo que no es posible afirmar si el diseno previsto seria un transformer denso, un MoE, un hibrido SSM-attention o cualquier otra variante.
+La informacion disponible no describe ninguna arquitectura concreta. La unica pista es la etiqueta `transformer` asociada al repositorio, que en Hugging Face se aplica a menudo de forma automatica al detectar ciertos tensores, y la etiqueta `lightweight-multimodal`, que describe el tema de la nota y no una topologia implementada. No hay configuracion publicada (numero de capas, dimension oculta, cabezas de atencion, tipo de atencion, vision encoder, projector multimodal ni estrategia de fusión), por lo que no es posible afirmar si el diseno previsto seria un transformer denso, un MoE, un hibrido SSM-attention o cualquier otra variante.
 
 Tampoco hay datos de entrenamiento: no se declara numero de tokens, composicion del dataset, mezcla de modalidades, uso de RLHF, DPO o cualquier otra fase de alineamiento. La model card indica explicitamente que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado, y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. La nota propone, eso si, elementos de metodologia: alcance de la pregunta de investigacion y posibles factores de confusion, comparacion con baselines emparejados, benchmarks publicos adecuados a la tarea, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Se advierte ademas de que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y logs en crudo.
 
@@ -49,7 +49,7 @@ Tampoco hay datos de entrenamiento: no se declara numero de tokens, composicion 
 - Diseno de protocolo de reproducibilidad: la nota enumera los campos exigibles (versiones de dataset, comandos, semillas, hardware, logs en crudo) que conviene incorporar a un repositorio de resultados antes de publicar conclusiones.
 - Checklist de modos de fallo: util como lista de comprobacion de fallos esperables y preguntas abiertas al preparar la seccion de limitaciones de un articulo o informe tecnico.
 - Punto de partida bibliografico: las referencias tematicas incluidas permiten iniciar una revision de literatura sobre multimodal ligero, aunque deben verificarse de forma independiente.
-- Caso de estudio sobre higiene de artefactos en HuggingFace: el repositorio ilustra la diferencia entre una etiqueta `transformer` con licencia MIT y la existencia real de un modelo, util para formar a equipos que seleccionan modelos por metadatos.
+- Caso de estudio sobre higiene de artefactos en Hugging Face: el repositorio ilustra la diferencia entre una etiqueta `transformer` con licencia MIT y la existencia real de un modelo, util para formar a equipos que seleccionan modelos por metadatos.
 - No se recomienda su uso en ningun escenario de produccion, atencion al cliente, generacion de codigo, analisis documental ni despliegue de agentes.
 
 ## Benchmarks y rendimiento
@@ -85,7 +85,7 @@ No disponible. No existe una categoria comparable porque el repositorio no conti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caiosouza/lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/caiosouza/lightweight-multimodal
 - Artefacto principal citado en la model card: `review.md` (disponible en el propio repositorio)
 - Documentacion citada en la model card: `README.md` (disponible en el propio repositorio)
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos correspondian a partes meteorologicos de Windguru para Port Elizabeth y Maui, sin relacion alguna con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo adicionales.

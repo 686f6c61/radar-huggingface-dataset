@@ -77,6 +77,6 @@ La comparacion con Gemma 2B es cualitativa y proviene de la model card del autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexLeoTz/zuhura-289m-base
+- Hugging Face: https://huggingface.co/AlexLeoTz/zuhura-289m-base
 - Demo en vivo: https://leoalex175--zuhura-289m-streaming-app-web.modal.run
 - Dataset de entrenamiento: https://huggingface.co/datasets/AlexLeoTz/swahili_large_corpus_i (referenciado en la model card, no verificado)

@@ -82,7 +82,7 @@ Advertencia: las cifras de la model card son internamente inconsistentes. El tex
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM. Suficiente con RTX 3060 12 GB, RTX 4060, RTX 3070, RTX 4080 o RTX 4090. Tambien funciona en A100 o H100, aunque es un modelo demasiado pequeno para aprovecharlas.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas con 4 GB o mas de VRAM en cuantizaciones Q4_K_M o Q8_0. La variante F16 requiere al menos 6 GB.
 - Ejecucion en CPU: viable con llama.cpp, especialmente en Q4_K_M y Q5_K_M.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama, LM Studio, koboldcpp y cualquier backend compatible con GGUF. El soporte de vLLM para GGUF es limitado y no esta confirmado para este modelo. El autor incluye un ejemplo de conversion a formato HuggingFace mediante transformers.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama, LM Studio, koboldcpp y cualquier backend compatible con GGUF. El soporte de vLLM para GGUF es limitado y no esta confirmado para este modelo. El autor incluye un ejemplo de conversion a formato Hugging Face mediante transformers.
 - Latencia y throughput estimados: el autor reporta 236,4 t/s en Q4_K_M, 136,1 t/s en Q5_K_M, 101,2 t/s en Q8_0 y 61,5 t/s en F16, sin especificar el hardware empleado, por lo que estas cifras no son extrapolables.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ Los datos de Qwen2.5-3B y Llama-3.2-3B provienen de su documentacion publica y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-ggml
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-ggml
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - llama.cpp: https://github.com/ggml-org/llama.cpp

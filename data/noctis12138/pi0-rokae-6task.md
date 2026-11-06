@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0-rokae-6task es un checkpoint de política visión-lenguaje-acción (VLA) para un brazo bimanual Rokae, publicado por el usuario Noctis12138 en HuggingFace. Se trata de un ajuste fino completo de `pi0_base` de OpenPI sobre el conjunto de datos `rokae_bimanual_6task` (rev `3ef2361`), con 30.000 pasos de entrenamiento, batch 32 y EMA 0,999. El modelo resuelve el problema clásico de las políticas robóticas de imitación: mapear tres cámaras RGB más un prompt de tarea en una secuencia de acciones de 50 pasos para dos brazos, sin necesidad de planificación explícita ni de estado propioceptivo medido.
+pi0-rokae-6task es un checkpoint de política visión-lenguaje-acción (VLA) para un brazo bimanual Rokae, publicado por el usuario Noctis12138 en Hugging Face. Se trata de un ajuste fino completo de `pi0_base` de OpenPI sobre el conjunto de datos `rokae_bimanual_6task` (rev `3ef2361`), con 30.000 pasos de entrenamiento, batch 32 y EMA 0,999. El modelo resuelve el problema clásico de las políticas robóticas de imitación: mapear tres cámaras RGB más un prompt de tarea en una secuencia de acciones de 50 pasos para dos brazos, sin necesidad de planificación explícita ni de estado propioceptivo medido.
 
 Su relevancia es doble. Por un lado, es la variante `pi0` de una receta ya publicada en `pi0.5` (`maple0617/pi05-robot32-30k`): misma data, misma normalización, mismos prompts y mismo *action horizon*, de modo que sirve como comparación controlada entre ambas arquitecturas sobre el mismo robot. Por otro, documenta de forma inusualmente detallada el contrato de entrada/salida (claves de observación, normalización, anclaje de la pose, convención del gripper), lo que reduce el trabajo de integración en el robot real.
 
@@ -114,7 +114,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noctis12138/pi0-rokae-6task
+- Modelo en Hugging Face: https://huggingface.co/Noctis12138/pi0-rokae-6task
 - Modelo comparable pi0.5 citado por el autor: https://huggingface.co/maple0617/pi05-robot32-30k
 - Gemma Prohibited Use Policy (enlazada en la model card): https://ai.google.dev/gemma/prohibited_use_policy
 - Rutas internas del repositorio relevantes: `30000/params/`, `30000/assets/rokae_bimanual_6task/norm_stats.json`, `recipe_assets/robot/`, `recipe.json`, `metrics.jsonl`, `LICENSE`, `LICENSE_GEMMA.txt`, `NOTICE`

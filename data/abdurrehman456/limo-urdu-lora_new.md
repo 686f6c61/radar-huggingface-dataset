@@ -2,9 +2,9 @@
 
 ## Resumen
 
-limo-urdu-lora_new es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario abdurrehman456 en HuggingFace. No se trata de un modelo completo, sino de pesos incrementales (repo de 0,2 GB en safetensors) que se aplican sobre el modelo base enstazao/Qalb-1.0-8B-Instruct, un modelo instruct de aproximadamente 8 000 millones de parametros. El nombre del repositorio sugiere un ajuste orientado a razonamiento en urdu, probablemente sobre el dataset LIMO, aunque la model card no lo confirma de forma explicita.
+limo-urdu-lora_new es un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario abdurrehman456 en Hugging Face. No se trata de un modelo completo, sino de pesos incrementales (repo de 0,2 GB en safetensors) que se aplican sobre el modelo base enstazao/Qalb-1.0-8B-Instruct, un modelo instruct de aproximadamente 8 000 millones de parametros. El nombre del repositorio sugiere un ajuste orientado a razonamiento en urdu, probablemente sobre el dataset LIMO, aunque la model card no lo confirma de forma explicita.
 
-El adaptador se ha entrenado con el stack PEFT + TRL + Unsloth, lo que indica un flujo de trabajo estandar de fine-tuning eficiente sobre un modelo preentrenado. La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion cumplimentada: ni dataset, ni hiperparametros, ni resultados de evaluacion, ni licencia.
+El adaptador se ha entrenado con el stack PEFT + TRL + Unsloth, lo que indica un flujo de trabajo estandar de fine-tuning eficiente sobre un modelo preentrenado. La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion cumplimentada: ni dataset, ni hiperparametros, ni resultados de evaluacion, ni licencia.
 
 Su relevancia actual es limitada pero ilustrativa: forma parte de una familia de adaptadores LoRA en urdu publicados por el mismo autor (deepseek-r1-urdu-lora, qwen7b-gsm8k-urdu-lora, qalb-dense-urdu-lora), lo que apunta a un esfuerzo personal por adaptar modelos de razonamiento a un idioma con escasa cobertura en el ecosistema open source. Cuenta con 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion de la comunidad.
 
@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abdurrehman456/limo-urdu-lora_new
+- Repositorio Hugging Face: https://huggingface.co/abdurrehman456/limo-urdu-lora_new
 - Modelo base: https://huggingface.co/enstazao/Qalb-1.0-8B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/abdurrehman456
+- Perfil del autor en Hugging Face: https://huggingface.co/abdurrehman456
 - Adaptador relacionado (razonamiento en urdu): https://huggingface.co/abdurrehman456/deepseek-r1-urdu-lora
 - Adaptador relacionado (matematicas en urdu): https://huggingface.co/abdurrehman456/qwen7b-gsm8k-urdu-lora
 - Adaptador relacionado (Qalb + urdu): https://huggingface.co/abdurrehman456/qalb-dense-urdu-lora

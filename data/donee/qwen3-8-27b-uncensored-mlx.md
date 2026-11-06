@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Donee/Qwen3.8-27B-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/Donee/Qwen3.8-27B-Uncensored-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub espejo: https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX
 - Blog de ExplainX sobre la build de OrcaRouter: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026

@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable en este repositorio; se trata de u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mendesbruno/paper_026291477_document_ai
+- Repositorio en Hugging Face: https://huggingface.co/mendesbruno/paper_026291477_document_ai
 - Google Scholar: https://scholar.google.com/
 - Informe de IA de Stanford (referencia externa de búsqueda): https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf
 

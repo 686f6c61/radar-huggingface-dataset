@@ -56,7 +56,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - **VRAM estimada**: 24 GB para la versión K-Quant-17GB, 32 GB para K-Quant-Dynamic y 64 GB para precisión completa. Estas cifras incluyen el KV cache, el encoder de percepción y el modelo drafter.
 - **GPU recomendadas**: Nvidia RTX 5090 (24 GB), Apple M4 Max y M5 Max (memoria unificada). También es viable en GPUs de 32 GB como A100 o RTX A6000, aunque no se mencionan explícitamente.
 - **Hardware de consumo**: sí, cabe en GPUs de 24 GB como la RTX 5090, y en Macs con chip M4/M5 Max.
-- **Opciones de despliegue**: compatible con transformers (HuggingFace), y por su diseño optimizado para local, se puede servir con vLLM, llama.cpp, Ollama o TGI, aunque no se especifican en la documentación.
+- **Opciones de despliegue**: compatible con transformers (Hugging Face), y por su diseño optimizado para local, se puede servir con vLLM, llama.cpp, Ollama o TGI, aunque no se especifican en la documentación.
 - **Latencia y throughput**: con decodificación especulativa DFlash, se miden 233,4 tok/s en RTX 5090 (3,1x frente a sin especulación), 37,8 tok/s en M4 Max (1,5x) y 50,2 tok/s en M5 Max (1,8x), con batch size 1 y greedy decoding.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [HuggingFace: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Hugging Face: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Paper del perception encoder (arXiv:2504.13181)](https://arxiv.org/abs/2504.13181)
 - [Paper de DFlash (arXiv:2602.06036)](https://arxiv.org/abs/2602.06036)

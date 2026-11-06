@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `randomms`, publicado por el usuario MarcusAureliusSun en HuggingFace, es un repositorio de gran tamaño (490,3 GB) con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. A fecha de su última actualización (16 de agosto de 2026), acumula 8 likes y 0 descargas, lo que sugiere que es un modelo reciente o poco difundido.
+El modelo `randomms`, publicado por el usuario MarcusAureliusSun en Hugging Face, es un repositorio de gran tamaño (490,3 GB) con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. A fecha de su última actualización (16 de agosto de 2026), acumula 8 likes y 0 descargas, lo que sugiere que es un modelo reciente o poco difundido.
 
 La información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de uso. El tamaño del repositorio (casi medio terabyte) indica que se trata de un modelo de gran escala, probablemente con pesos en formato completo o múltiples cuantizaciones, pero sin datos adicionales no es posible confirmar ninguna característica técnica.
 
@@ -55,4 +55,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/MarcusAureliusSun/randomms)
+- [Repositorio en Hugging Face](https://huggingface.co/MarcusAureliusSun/randomms)

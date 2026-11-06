@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BS-Roformer-HyperACE-Chinese-FolkOpera es un modelo publicado en HuggingFace por el usuario pymss-project bajo licencia MIT. Por su nomenclatura, se trata de un modelo basado en la arquitectura BS-Roformer, una variante de transformer con atención por bandas (band-split) orientada a tareas de separación de fuentes de audio, combinada con el prefijo "HyperACE" y el sufijo "Chinese-FolkOpera", que sugiere un ajuste fino sobre un corpus de ópera folclórica china.
+BS-Roformer-HyperACE-Chinese-FolkOpera es un modelo publicado en Hugging Face por el usuario pymss-project bajo licencia MIT. Por su nomenclatura, se trata de un modelo basado en la arquitectura BS-Roformer, una variante de transformer con atención por bandas (band-split) orientada a tareas de separación de fuentes de audio, combinada con el prefijo "HyperACE" y el sufijo "Chinese-FolkOpera", que sugiere un ajuste fino sobre un corpus de ópera folclórica china.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia MIT, sin descripción, sin especificaciones técnicas, sin datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que es un artefacto reciente y sin validación por parte de la comunidad.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BS-Roformer-HyperACE-Chinese-FolkOpera | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| BS-Roformer-HyperACE-Chinese-FolkOpera | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Demucs (Meta) | no disponible en esta ficha | no aplica | MIT | Código y pesos públicos |
 | Spleeter (Deezer) | no disponible en esta ficha | no aplica | MIT | Código y pesos públicos |
-| Otras variantes BS-Roformer | no disponible | no disponible | variable | HuggingFace |
+| Otras variantes BS-Roformer | no disponible | no disponible | variable | Hugging Face |
 
 La comparación es meramente nominal: no se dispone de datos de rendimiento del modelo evaluado ni de métricas equivalentes para establecer una comparación cuantitativa fiable.
 
@@ -84,5 +84,5 @@ La comparación es meramente nominal: no se dispone de datos de rendimiento del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pymss-project/BS-Roformer-HyperACE-Chinese-FolkOpera
+- Hugging Face: https://huggingface.co/pymss-project/BS-Roformer-HyperACE-Chinese-FolkOpera
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

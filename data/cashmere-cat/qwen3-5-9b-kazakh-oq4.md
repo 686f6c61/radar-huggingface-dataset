@@ -77,7 +77,7 @@ La principal diferencia es el formato cuantizado y la optimización para MLX, qu
 
 ## Enlaces
 
-- [Repositorio HuggingFace de cashmere-cat/Qwen3.5-9B-Kazakh-oQ4](https://huggingface.co/cashmere-cat/Qwen3.5-9B-Kazakh-oQ4)
+- [Repositorio Hugging Face de cashmere-cat/Qwen3.5-9B-Kazakh-oQ4](https://huggingface.co/cashmere-cat/Qwen3.5-9B-Kazakh-oQ4)
 - [Colección Qwen3.5 Kazakh de issai](https://huggingface.co/collections/issai/qwen35-kazakh)
 - [Documentación de oQ (oMLX)](https://github.com/jundot/omlx)
 - [Blog de Qwen3.5: Towards Native Multimodal Agents](https://qwen.ai/blog?id=qwen3.5)

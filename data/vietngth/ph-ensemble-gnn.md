@@ -26,7 +26,7 @@ Es relevante ahora porque distribuye pesos entrenados reproducibles junto con el
 | Semilla publicada | Seed 1 (fija el split 80/20) |
 | Dataset asociado | vietngth/ph-ensemble-gnn-data |
 | Metrica de evaluacion | MAE (error absoluto medio) sobre el conjunto de test del fold |
-| Fecha de creacion en el repositorio | 2026-10-05 (segun metadatos de HuggingFace) |
+| Fecha de creacion en el repositorio | 2026-10-05 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ En cuanto al entrenamiento, el repositorio publica dos regimenes por cada red. E
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que `predict.py` evalua el checkpoint sobre el conjunto de test de su semilla y comprueba el MAE contra el valor registrado, pero los valores numericos de MAE no se incluyen en la informacion proporcionada. Tampoco se aportan resultados comparativos frente a otros modelos en esta ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que `predict.py` evalua el checkpoint sobre el conjunto de test de su semilla y comprueba el MAE contra el valor registrado, pero los valores numericos de MAE no se incluyen en la informacion proporcionada. Tampoco se aportan resultados comparativos frente a otros modelos en esta ficha de Hugging Face.
 
 | Aspecto | Estado |
 |---|---|
@@ -83,7 +83,7 @@ Nota metodologica del autor: las tablas del paper promedian cinco modelos de fol
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| PH-TSER-Att_0 (este repositorio) | GNN + ensemble de grafos de homologia persistente | no disponible | no aplica | MIT | Checkpoints en HuggingFace, semilla 1, cuatro carpetas | MAE no disponible en esta informacion |
+| PH-TSER-Att_0 (este repositorio) | GNN + ensemble de grafos de homologia persistente | no disponible | no aplica | MIT | Checkpoints en Hugging Face, semilla 1, cuatro carpetas | MAE no disponible en esta informacion |
 | TSER-GCN (configuracion publicada) | GCN espacio-temporal para early warning | no disponible | no aplica | no disponible | Referenciado como base del modo untuned | MAE no disponible en esta informacion |
 | Otras GNN para early warning sismico | GNN sobre redes de estaciones | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vietngth/ph-ensemble-gnn
+- Modelo en Hugging Face: https://huggingface.co/vietngth/ph-ensemble-gnn
 - Dataset asociado: https://huggingface.co/datasets/vietngth/ph-ensemble-gnn-data
 - Repositorio de codigo: https://github.com/vietngth/ph-ensemble-gnn
 - Paper (arXiv): https://arxiv.org/abs/2503.14240

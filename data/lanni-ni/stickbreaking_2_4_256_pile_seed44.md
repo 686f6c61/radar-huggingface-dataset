@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lanni-ni/stickbreaking_2_4_256_pile_seed44` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de investigación de tamano muy reducido: 27.840.256 parametros (aproximadamente 27,8 millones), con un repositorio de solo 0,1 GB en formato safetensors. La model card es la plantilla autogenerada de HuggingFace y no ha sido cumplimentada, por lo que no hay informacion sobre el desarrollador, los datos de entrenamiento, la licencia ni los idiomas soportados.
+`Lanni-ni/stickbreaking_2_4_256_pile_seed44` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de investigación de tamano muy reducido: 27.840.256 parametros (aproximadamente 27,8 millones), con un repositorio de solo 0,1 GB en formato safetensors. La model card es la plantilla autogenerada de Hugging Face y no ha sido cumplimentada, por lo que no hay informacion sobre el desarrollador, los datos de entrenamiento, la licencia ni los idiomas soportados.
 
 El nombre del repositorio sugiere un experimento sobre procesos de stick-breaking (habitualmente asociados a representaciones jerarquicas de probabilidad o a mecanismos de atencion/mezcla) con una configuracion identificada como `2_4_256`, entrenado sobre el dataset Pile y con la semilla aleatoria 44. Esta interpretacion procede unicamente de la nomenclatura del checkpoint y no esta confirmada en la informacion disponible. La etiqueta `custom_code` indica que el modelo requiere codigo de modelado propio y `trust_remote_code=True` para cargarse.
 
@@ -30,7 +30,7 @@ Su relevancia es acotada y de caracter experimental: no es un modelo apto para p
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes (tipo de modelo, procedimiento de entrenamiento, hiperparametros, datos, infraestructura de computo) figuran como `[More Information Needed]`. La presencia de la etiqueta `custom_code` implica que el repositorio incluye codigo de modelado propio, distinto de las clases estandar de `transformers`, y que la carga exige `trust_remote_code=True`.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes (tipo de modelo, procedimiento de entrenamiento, hiperparametros, datos, infraestructura de computo) figuran como `[More Information Needed]`. La presencia de la etiqueta `custom_code` implica que el repositorio incluye codigo de modelado propio, distinto de las clases estandar de `transformers`, y que la carga exige `trust_remote_code=True`.
 
 Los unicos indicios disponibles son los del propio identificador del checkpoint. `stickbreaking` apunta a una formulacion basada en procesos de stick-breaking; `2_4_256` parece una tupla de hiperparametros (posiblemente numero de capas o de cabezas y dimension oculta); `pile` indica que el corpus de entrenamiento seria The Pile; y `seed44` identifica la semilla de inicializacion o de muestreo de datos. Ninguno de estos extremos esta confirmado por documentacion del autor. No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones tecnicas adicionales.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | GPT-2 (OpenAI) | 124 M | 1.024 tokens | modificada de MIT | si, publicado por OpenAI |
 | Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Apache 2.0 | si, publicado por EleutherAI |
 
-La comparacion con GPT-2 y Pythia-70M es unicamente orientativa por rango de tamano; no se dispone de ninguna cifra de rendimiento del modelo de Lanni-ni que permita una comparacion cuantitativa. Tampoco se conocen alternativas especificas de la misma familia stick-breaking publicadas en HuggingFace.
+La comparacion con GPT-2 y Pythia-70M es unicamente orientativa por rango de tamano; no se dispone de ninguna cifra de rendimiento del modelo de Lanni-ni que permita una comparacion cuantitativa. Tampoco se conocen alternativas especificas de la misma familia stick-breaking publicadas en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La comparacion con GPT-2 y Pythia-70M es unicamente orientativa por rango de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_pile_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/stickbreaking_2_4_256_pile_seed44
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto medioambiental, citado por la plantilla autogenerada, no por el autor): https://arxiv.org/abs/1910.09700
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los enlaces recuperados correspondian a contenidos sin relacion (articulos sobre colores y zodiaco chino) y se han descartado. No se han encontrado paper, blog, repositorio de codigo ni demo asociados al checkpoint.

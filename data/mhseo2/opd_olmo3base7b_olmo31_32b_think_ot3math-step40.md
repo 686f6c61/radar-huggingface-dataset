@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Benchmarks matemáticos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_olmo3base7b_olmo31_32b_think_ot3math-step40 | ~7,3B | No disponible | AIME 2025: 40.42; AIME 2026: 40.00; HMMT Feb 2025: 25.83 | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3.1-32B-Think (profesor) | ~32B | No disponible | No disponible en esta ficha | No disponible | HuggingFace |
-| mhseo2/Olmo-3-1025-7B-opd (base del estudiante) | ~7,3B | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| opd_olmo3base7b_olmo31_32b_think_ot3math-step40 | ~7,3B | No disponible | AIME 2025: 40.42; AIME 2026: 40.00; HMMT Feb 2025: 25.83 | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3.1-32B-Think (profesor) | ~32B | No disponible | No disponible en esta ficha | No disponible | Hugging Face |
+| mhseo2/Olmo-3-1025-7B-opd (base del estudiante) | ~7,3B | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 - El prompt de evaluación usa 768 tokens y respuestas de hasta 32.768; contextos más largos no están validados.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_olmo3base7b_olmo31_32b_think_ot3math-step40
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código `mopdRL` (commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`, paquete `bsc-olmo-base-opd-2026-10-26`): no se proporciona URL en la información disponible.

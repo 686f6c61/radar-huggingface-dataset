@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Idioma / variante | Arquitectura | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS v1 Base + Vocos, 24 kHz | CC BY-SA 4.0 | Mirror en HuggingFace (0 descargas) | Copia byte a byte del modelo original; incluye hashes sha256 verificables |
-| multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS v1 Base + Vocos, 24 kHz | CC BY-SA 4.0 | Repositorio original en HuggingFace | Fuente del anterior; forma parte de la coleccion Open Bible F5-TTS |
-| ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante | Twi (Asante) | F5-TTS (transformer de difusion + vocoder Vocos, 24 kHz) | no disponible en la informacion | HuggingFace | Entrenado desde cero sobre Open Bible; dialecto distinto (Asante frente a Akuapem) |
-| ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS | no disponible en la informacion | HuggingFace | Misma variante dialectal publicada por otra organizacion; sin datos de rendimiento comparativos |
+| OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS v1 Base + Vocos, 24 kHz | CC BY-SA 4.0 | Mirror en Hugging Face (0 descargas) | Copia byte a byte del modelo original; incluye hashes sha256 verificables |
+| multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS v1 Base + Vocos, 24 kHz | CC BY-SA 4.0 | Repositorio original en Hugging Face | Fuente del anterior; forma parte de la coleccion Open Bible F5-TTS |
+| ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante | Twi (Asante) | F5-TTS (transformer de difusion + vocoder Vocos, 24 kHz) | no disponible en la informacion | Hugging Face | Entrenado desde cero sobre Open Bible; dialecto distinto (Asante frente a Akuapem) |
+| ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem | Twi (Akuapem) | F5-TTS | no disponible en la informacion | Hugging Face | Misma variante dialectal publicada por otra organizacion; sin datos de rendimiento comparativos |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa entre estas variantes; la diferencia principal entre ellas es la variante dialectal y la organizacion que las publica, no un rendimiento medido.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa e
 
 ## Enlaces
 
-- Modelo en HuggingFace (este espejo): https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem
+- Modelo en Hugging Face (este espejo): https://huggingface.co/OpenVoiceOS/F5-TTS-OpenBible-Twi-Akuapem
 - Modelo original: https://huggingface.co/multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem
 - Coleccion Open Bible F5-TTS: https://huggingface.co/collections/multilingual-tts/open-bible-f5-tts
 - Codigo de entrenamiento y evaluacion: https://github.com/davidguzmanr/open-bible-models

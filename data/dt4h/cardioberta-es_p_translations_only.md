@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/DT4H/CardioBERTa.es_P_translations_only)
+- [Hugging Face del modelo](https://huggingface.co/DT4H/CardioBERTa.es_P_translations_only)
 - [Modelo base DT4H/CardioBERTa.es](https://huggingface.co/DT4H/CardioBERTa.es)
 - [Proyecto DataTools4Heart](https://www.datatools4heart.eu/)
 - [GitHub de DataTools4Heart](https://github.com/DataTools4Heart/)

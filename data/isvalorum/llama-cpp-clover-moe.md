@@ -37,7 +37,7 @@ Capacidades del runtime y del modelo base que habilita:
 - Decodificacion especulativa en modo `draft-self` via `llama-speculative-simple`
 - Cuantizacion y calculo de matrices de importancia con `llama-quantize` y `llama-imatrix`
 - Medicion de perplejidad con `llama-perplexity`
-- Conversor de HuggingFace a GGUF incluido (`convert_hf_to_gguf.py` y `gguf-py`)
+- Conversor de Hugging Face a GGUF incluido (`convert_hf_to_gguf.py` y `gguf-py`)
 - Soporte de backends CPU, CUDA 12/12.8 y Vulkan 1.4.363
 - No compatible con LM Studio ni Ollama mientras el PR no se fusione upstream
 

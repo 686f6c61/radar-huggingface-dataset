@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de comparativas frente a modelos 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ
+- Hugging Face (este checkpoint): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ
 - Modelo base bf16: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Variante NVFP4 (W4A16): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4
 - Variante GGUF para llama.cpp: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF

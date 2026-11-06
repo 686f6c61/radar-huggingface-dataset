@@ -106,7 +106,7 @@ No hay datos de rendimiento comparativo (MMLU, HumanEval, GSM8K) para este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-INT4
 - Modelo base (ajuste fino en ingenieria informatica): https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-LLM
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B
 - OpenVINO GenAI: https://github.com/openvinotoolkit/openvino.genai

@@ -4,7 +4,7 @@
 
 `fraud-lora-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado por `pratheeksha23` y basado en el modelo `Qwen/Qwen2.5-1.5B-Instruct`. El adaptador está pensado para clasificación de transacciones financieras y razonamiento sobre fraude, tal y como se describe en el repositorio asociado. Utiliza la librería PEFT y el framework TRL, con un pipeline de generación de texto.
 
-No se trata de un modelo completo, sino de un conjunto de pesos LoRA que se carga sobre el modelo base. El adaptador no publica su número de parámetros, su licencia, sus idiomas ni datos de entrenamiento. La ficha de HuggingFace está incompleta y el repositorio muestra un tamaño de 0.0 GB, por lo que hay que verificar que los pesos estén disponibles antes de usarlo.
+No se trata de un modelo completo, sino de un conjunto de pesos LoRA que se carga sobre el modelo base. El adaptador no publica su número de parámetros, su licencia, sus idiomas ni datos de entrenamiento. La ficha de Hugging Face está incompleta y el repositorio muestra un tamaño de 0.0 GB, por lo que hay que verificar que los pesos estén disponibles antes de usarlo.
 
 Su relevancia radica en que permite experimentar con fine-tuning de bajo coste sobre un modelo pequeño (1.500 millones de parámetros en el modelo base) para una tarea financiera específica. Sin embargo, al no publicar evaluaciones, no se puede afirmar su eficacia.
 
@@ -29,7 +29,7 @@ El adaptador se construye sobre `Qwen/Qwen2.5-1.5B-Instruct`, un modelo transfor
 
 - Clasificación de transacciones financieras: según el repositorio, el adaptador se entrena para clasificar operaciones como fraudulentas o no fraudulentas.
 - Razonamiento sobre fraude: el adaptador está orientado a generar explicaciones o justificaciones en lenguaje natural sobre las transacciones.
-- Generación de texto conversacional: el pipeline de HuggingFace es `text-generation`, pero no hay validación de esta capacidad sobre el adaptador.
+- Generación de texto conversacional: el pipeline de Hugging Face es `text-generation`, pero no hay validación de esta capacidad sobre el adaptador.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -73,6 +73,6 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pratheeksha23/fraud-lora-adapter
+- Hugging Face: https://huggingface.co/pratheeksha23/fraud-lora-adapter
 - Repositorio GitHub: https://github.com/pratheeksha23/fraud-detection-lora-llm
 - Artículo sobre riesgos de seguridad en adaptadores LoRA: https://krishnag.ceo/blog/the-hidden-threat-in-lora-adapters-how-malicious-fine-tuning-modules-undermine-ai-integrity/

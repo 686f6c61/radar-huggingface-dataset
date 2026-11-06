@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yosefw/Llama-3.2-1B-Instruct-DSpark-v3` es una publicación de HuggingFace creada por el usuario `yosefw`, actualizada el 5 de septiembre de 2026. Según su nombre, parece tratarse de una variante del modelo Llama 3.2 1B Instruct de Meta, con el sufijo `DSpark-v3` que sugiere una modificación específica, pero la tarjeta del modelo no incluye documentación. El modelo tiene 188.521.345 parámetros y sus pesos están almacenados en formato safetensors, con un tamaño de repositorio de 3.3 GB. No se dispone de información sobre la licencia, los idiomas, el pipeline ni las capacidades. La relevancia de este modelo es limitada sin datos de rendimiento ni documentación, y su uso en producción requeriría una evaluación previa.
+El modelo `yosefw/Llama-3.2-1B-Instruct-DSpark-v3` es una publicación de Hugging Face creada por el usuario `yosefw`, actualizada el 5 de septiembre de 2026. Según su nombre, parece tratarse de una variante del modelo Llama 3.2 1B Instruct de Meta, con el sufijo `DSpark-v3` que sugiere una modificación específica, pero la tarjeta del modelo no incluye documentación. El modelo tiene 188.521.345 parámetros y sus pesos están almacenados en formato safetensors, con un tamaño de repositorio de 3.3 GB. No se dispone de información sobre la licencia, los idiomas, el pipeline ni las capacidades. La relevancia de este modelo es limitada sin datos de rendimiento ni documentación, y su uso en producción requeriría una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yosefw/Llama-3.2-1B-Instruct-DSpark-v3
+- Hugging Face: https://huggingface.co/yosefw/Llama-3.2-1B-Instruct-DSpark-v3

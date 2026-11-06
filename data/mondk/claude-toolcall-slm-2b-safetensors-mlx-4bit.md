@@ -68,7 +68,7 @@ No se dispone de comparaciones directas con otros modelos de tamaño similar. El
 
 ## Enlaces
 
-- Modelo en HuggingFace (versión MLX 4-bit): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors-mlx-4Bit
+- Modelo en Hugging Face (versión MLX 4-bit): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors-mlx-4Bit
 - Modelo base (safetensors): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
 - Versión GGUF: https://huggingface.co/mondk/claude-toolcall-slm-2B
 - Entrada en LLM Explorer (contexto 8K y VRAM): https://llm-explorer.com/model/mondk%2Fclaude-toolcall-slm-2B-safetensors,6U3qkHZXR7WLVamCq7ZL

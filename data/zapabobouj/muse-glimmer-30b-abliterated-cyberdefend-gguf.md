@@ -95,6 +95,6 @@ No existen datos de benchmarks que permitan comparar rendimiento numérico entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zapabobouj/Muse-Glimmer-30B-Abliterated-CyberDefend-GGUF
-- DOI registrado en HuggingFace: https://doi.org/10.57967/hf/11279
+- Repositorio en Hugging Face: https://huggingface.co/zapabobouj/Muse-Glimmer-30B-Abliterated-CyberDefend-GGUF
+- DOI registrado en Hugging Face: https://doi.org/10.57967/hf/11279
 - No se han encontrado enlaces adicionales a papers, blogs, repos del modelo base ni demos en la información disponible.

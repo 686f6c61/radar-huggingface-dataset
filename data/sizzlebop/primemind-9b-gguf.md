@@ -80,7 +80,7 @@ Los datos de los modelos comparables provienen de sus fichas publicas y deben ve
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| PrimeMind-9B-GGUF | ~8,95B | 262.144 (declarado) | Apache 2.0 | No disponible | GGUF en HuggingFace; 0 descargas y 0 valoraciones |
+| PrimeMind-9B-GGUF | ~8,95B | 262.144 (declarado) | Apache 2.0 | No disponible | GGUF en Hugging Face; 0 descargas y 0 valoraciones |
 | Qwen3.5-9B (modelo base del ajuste) | ~9B (5,8B activos segun la ficha) | No disponible en la información | No disponible en la información | No disponible | No verificado |
 | Qwen3-8B | ~8,2B | 32.768 nativo, extensible con YaRN | Apache 2.0 | Benchmarks publicos del autor | safetensors y GGUF ampliamente extendidos |
 | Llama 3.1 8B | ~8B | 128.000 | Llama 3.1 Community License | Benchmarks publicos del autor | safetensors y GGUF ampliamente extendidos |
@@ -104,7 +104,7 @@ Frente a estas alternativas, el diferencial de PrimeMind-9B es la combinación d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sizzlebop/PrimeMind-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sizzlebop/PrimeMind-9B-GGUF
 - Modelo base del ajuste: https://huggingface.co/CrowdMind/PrimeMind-9B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de razonamiento matemático sintetico: https://huggingface.co/datasets/catsaresupercool/synthetic-caveman-thinking

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-studymate-dapt es un adaptador LoRA (PEFT) publicado por el usuario Kummithisumanthreddy en HuggingFace, entrenado sobre el modelo base `unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit`, es decir, una versión del Qwen2.5-0.5B de Alibaba cuantizada a 4 bits mediante bitsandbytes y preparada por Unsloth para fine-tuning eficiente. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para producir texto.
+studymate-dapt es un adaptador LoRA (PEFT) publicado por el usuario Kummithisumanthreddy en Hugging Face, entrenado sobre el modelo base `unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit`, es decir, una versión del Qwen2.5-0.5B de Alibaba cuantizada a 4 bits mediante bitsandbytes y preparada por Unsloth para fine-tuning eficiente. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para producir texto.
 
 El propósito declarado en el repositorio es el fine-tuning para un caso de uso de "study mate" (asistente de estudio), aunque la model card es la plantilla automática generada por el Trainer y no documenta ni el dataset empleado ni los objetivos concretos del entrenamiento. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y el tamano del repo es de 0.0 GB, lo que confirma que solo contiene los pesos del adaptador.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 | studymate-dapt (este) | Adaptador sobre 0,49 B | 32.768 (base) | Apache 2.0 | safetensors (LoRA) | Sin benchmarks ni dataset documentado |
 | Qwen2.5-0.5B (base) | 0,49 B | 32.768 | Apache 2.0 (variantes) | safetensors, GGUF | Modelo completo, con evaluaciones publicadas por el equipo de Qwen |
 | Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 | Apache 2.0 | safetensors, GGUF | Version alineada para instrucciones; alternativa directa sin entrenamiento adicional |
-| SmolLM2-360M-Instruct | 0,36 B | 8.192 | Apache 2.0 | safetensors, GGUF | Modelo pequeno de HuggingFace, pensado para dispositivos |
+| SmolLM2-360M-Instruct | 0,36 B | 8.192 | Apache 2.0 | safetensors, GGUF | Modelo pequeno de Hugging Face, pensado para dispositivos |
 | Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Llama 3.2 Community License | safetensors, GGUF | Mayor contexto, pero licencia con restricciones para grandes despliegues |
 
 La comparacion se limita a parametros, contexto y licencia porque no existen resultados de evaluacion publicados para el adaptador que permitan contrastar calidad.
@@ -92,8 +92,8 @@ La comparacion se limita a parametros, contexto y licencia porque no existen res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kummithisumanthreddy/studymate-dapt
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Kummithisumanthreddy/studymate-dapt
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit
 - Repositorio de Unsloth: no disponible en los resultados de busqueda.
 - Paper o blog tecnico del autor: no disponible.
 - Demo: no disponible.

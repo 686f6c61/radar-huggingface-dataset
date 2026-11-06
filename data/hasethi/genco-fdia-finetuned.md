@@ -21,7 +21,7 @@ La relevancia es acotada y muy especifica: se trata de un artefacto de investiga
 | Licencia | Apache-2.0 |
 | Formato de pesos | PyTorch state dict (`best_model_state_dict.pt`) acompanado de `normalizer_stats.pt` y el YAML de entrenamiento, con el mismo layout que el checkpoint base; no se publican GGUF ni safetensors |
 
-Otros datos tecnicos: el repositorio ocupa 0,2 GB e incluye las dos carpetas (`mixed` y `case_file_only`). Las descargas y "likes" registrados en HuggingFace son 0, y el pipeline no esta declarado.
+Otros datos tecnicos: el repositorio ocupa 0,2 GB e incluye las dos carpetas (`mixed` y `case_file_only`). Las descargas y "likes" registrados en Hugging Face son 0, y el pipeline no esta declarado.
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ El valor 294 corresponde al residuo del punto de partida (referencia sin ajuste,
 
 | Modelo | Parametros | Contexto | Residuo p99 publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hasethi/genco-fdia-finetuned` (`mixed`) | no disponible | no aplica (118 barras) | 6,6 | Apache-2.0 | HuggingFace, 0 descargas |
-| `hasethi/genco-fdia-finetuned` (`case_file_only`) | no disponible | no aplica (118 barras) | 13,8 | Apache-2.0 | HuggingFace, 0 descargas |
-| `gridfm/genco-pf-datakit` (modelo base, checkpoint `case118_ieee/base/seed0`) | no disponible | no disponible | 294 (punto de partida de la tabla del autor) | no disponible en la informacion proporcionada | HuggingFace |
+| `hasethi/genco-fdia-finetuned` (`mixed`) | no disponible | no aplica (118 barras) | 6,6 | Apache-2.0 | Hugging Face, 0 descargas |
+| `hasethi/genco-fdia-finetuned` (`case_file_only`) | no disponible | no aplica (118 barras) | 13,8 | Apache-2.0 | Hugging Face, 0 descargas |
+| `gridfm/genco-pf-datakit` (modelo base, checkpoint `case118_ieee/base/seed0`) | no disponible | no disponible | 294 (punto de partida de la tabla del autor) | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (oraculos de flujo de potencia o detectores de FDIA) en el material proporcionado, por lo que la comparativa se limita a las dos variantes y al checkpoint base.
 
@@ -85,11 +85,11 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - Riesgo de resultados fisicamente inconsistentes fuera de la distribucion de entrenamiento: al ser un surrogate, puede producir soluciones que violen las ecuaciones de la red sin una senal de incertidumbre calibrada documentada.
 - No validado para uso operativo en centros de control. El autor lo describe como artefacto de investigacion.
 - Licencia Apache-2.0: permite uso comercial y modificacion con atribucion, pero la licencia no implica idoneidad tecnica; el aviso de "no validado para uso operativo" debe respetarse en cualquier despliegue en produccion.
-- Ausencia de validacion externa: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado ni resultados de benchmarks estandar.
+- Ausencia de validacion externa: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado ni resultados de benchmarks estandar.
 - No es un modelo de lenguaje: no admite prompts en lenguaje natural, tool calling ni razonamiento multi-paso; la interfaz es un vector de medidas del sistema electrico.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hasethi/genco-fdia-finetuned
+- Modelo en Hugging Face: https://huggingface.co/hasethi/genco-fdia-finetuned
 - Modelo base: https://huggingface.co/gridfm/genco-pf-datakit
 - Codigo, datos y memoria del experimento: https://github.com/hasethinvd/genco-fdia

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-UNCENSORED-FP8 es una versión modificada a nivel de pesos del checkpoint GLM-5.3-FP8, publicada por el usuario baselquants en HuggingFace y atribuida en su model card al colectivo dealignai (bajo la etiqueta "CRACK"). Se trata de un modelo de lenguaje de 753.329.940.480 parámetros totales con arquitectura `glm_moe_dsa` (Mixture of Experts con atención dispersa), 78 capas y modalidad exclusivamente de texto. El checkpoint deriva de `JANGQ-AI/GLM-5.3-FP8`, a su vez una cuantización FP8 del modelo original `zai-org/GLM-5.3`.
+GLM-5.3-UNCENSORED-FP8 es una versión modificada a nivel de pesos del checkpoint GLM-5.3-FP8, publicada por el usuario baselquants en Hugging Face y atribuida en su model card al colectivo dealignai (bajo la etiqueta "CRACK"). Se trata de un modelo de lenguaje de 753.329.940.480 parámetros totales con arquitectura `glm_moe_dsa` (Mixture of Experts con atención dispersa), 78 capas y modalidad exclusivamente de texto. El checkpoint deriva de `JANGQ-AI/GLM-5.3-FP8`, a su vez una cuantización FP8 del modelo original `zai-org/GLM-5.3`.
 
 El problema que aborda es la eliminación de comportamiento de rechazo ("abliteration") en los pesos, sin recurrir a fine-tuning, LoRA, hooks de runtime ni trucos de prompt. La modificación se aplica únicamente sobre los tensores residual-writer en bf16, mientras que los expertos FP8 enrutados permanecen intactos, lo que permite conservar la velocidad nativa de tensor cores FP8 en hardware Hopper. Es relevante ahora porque combina tres factores poco habituales a la vez: escala de 753B, cuantización FP8 nativa y una reducción deliberada de rechazos con preservación de capacidades declarada (MMLU 87,43 % en esta revisión v2).
 
@@ -112,7 +112,7 @@ No se dispone de datos verificados de otros modelos comparables de 700B+ abierto
 
 ## Enlaces
 
-- HuggingFace (ficha principal): https://huggingface.co/baselquants/GLM-5.3-UNCENSORED-FP8
+- Hugging Face (ficha principal): https://huggingface.co/baselquants/GLM-5.3-UNCENSORED-FP8
 - Ficha referenciada del autor en dealignai: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo hermano orientado a ciberseguridad: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base directo (cuantizacion FP8): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8

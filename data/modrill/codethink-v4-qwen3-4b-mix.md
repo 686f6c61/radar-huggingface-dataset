@@ -67,7 +67,7 @@ Observaciones: la mezcla 0.2:0.8 (73/256) supera ligeramente a la destilacion de
 
 - **VRAM estimada para inferencia**: pesos en bf16 ocupan aproximadamente 8,8 GB (4.4B x 2 bytes). Con activaciones y KV cache para contexto largo, se recomienda **12-16 GB** de VRAM. Cuantizaciones no publicadas; una hipotetica cuantizacion de 4 bits reduciria los pesos a unos 2,5 GB, pero no hay tal version en el repo.
 - **GPU recomendadas**: para servir con contexto completo (32k) y bf16, una **RTX 4090 (24 GB)** o una **A100/H100 (40-80 GB)** son adecuadas. Tambien puede ejecutarse en GPUs de 12-16 GB (RTX 3060/4070) con cuantizacion u overflow de activaciones.
-- **Opciones de despliegue**: el modelo es compatible con la libreria **transformers** de HuggingFace y con **text-generation-inference** (se etiqueta como `endpoints_compatible`). Tambien puede servir via **vLLM**. Al ser safetensors, se puede convertir a GGUF para **llama.cpp** u **Ollama**, aunque esta conversion no esta documentada en el repo.
+- **Opciones de despliegue**: el modelo es compatible con la libreria **transformers** de Hugging Face y con **text-generation-inference** (se etiqueta como `endpoints_compatible`). Tambien puede servir via **vLLM**. Al ser safetensors, se puede convertir a GGUF para **llama.cpp** u **Ollama**, aunque esta conversion no esta documentada en el repo.
 - **Latencia y throughput**: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ Comparado con el base, el modelo fine-tuned mejora el pass@1 en 10 puntos (73 vs
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/modrill/CodeThink-V4-Qwen3-4B-Mix
+- Repositorio en Hugging Face: https://huggingface.co/modrill/CodeThink-V4-Qwen3-4B-Mix
 - Paper de referencia (Li et al., 2025, "Small Models Struggle to Learn from Strong Reasoners"): https://arxiv.org/abs/2502.12143
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Teachers mencionados en el README: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507 y https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Darkhn-OmniArena-v3 es un modelo publicado en HuggingFace por el usuario ArcOpening cuya model card lo describe como el resultado de un experimento de fusión de modelos (model merging) con un enfoque propio, distinto de las técnicas tradicionales de mezcla de pesos. El autor sostiene que las fusiones convencionales tienden a diluir las capacidades de los modelos de origen en lugar de combinarlas, y presenta esta publicación como un intento de preservar los puntos fuertes de cada modelo integrado.
+Darkhn-OmniArena-v3 es un modelo publicado en Hugging Face por el usuario ArcOpening cuya model card lo describe como el resultado de un experimento de fusión de modelos (model merging) con un enfoque propio, distinto de las técnicas tradicionales de mezcla de pesos. El autor sostiene que las fusiones convencionales tienden a diluir las capacidades de los modelos de origen en lugar de combinarlas, y presenta esta publicación como un intento de preservar los puntos fuertes de cada modelo integrado.
 
 La información pública disponible es extremadamente limitada: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas, licencia ni formato de pesos. La model card no incluye fichas técnicas, resultados de evaluación ni detalles del procedimiento de fusión, y se limita a un texto motivacional. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 12 de octubre de 2026 con unos nueve minutos de diferencia, lo que sugiere una publicación sin ciclo de validación posterior.
 
@@ -87,6 +87,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArcOpening/Darkhn-OmniArena-v3
-- Perfil del autor en HuggingFace: https://huggingface.co/ArcOpening
+- Repositorio en Hugging Face: https://huggingface.co/ArcOpening/Darkhn-OmniArena-v3
+- Perfil del autor en Hugging Face: https://huggingface.co/ArcOpening
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible.

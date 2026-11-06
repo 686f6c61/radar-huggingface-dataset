@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arm/yolo26n-320-fp32-vgf
+- Repositorio Hugging Face: https://huggingface.co/Arm/yolo26n-320-fp32-vgf
 - Repositorio fuente ONNX (Arm): https://huggingface.co/Arm/yolo26n-320-int8-onnx-raspberrypi5
 - Artefacto ONNX FP32 original: https://huggingface.co/Arm/yolo26n-320-int8-onnx-raspberrypi5/blob/d85636720c31b6bc65d91b2c785d24fbdb283a61/yolo26n_raspberry_onnx_original.onnx
 - Modelo base Ultralytics/YOLO26: https://huggingface.co/Ultralytics/YOLO26

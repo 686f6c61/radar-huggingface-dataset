@@ -75,9 +75,9 @@ No se dispone de más detalles sobre las diferencias entre las variantes del mis
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4)
-- [HuggingFace - variante sin seed](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting)
-- [HuggingFace - otra variante (second-third-sft)](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft)
+- [Hugging Face - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting-seed4)
+- [Hugging Face - variante sin seed](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-inoculation-prompting)
+- [Hugging Face - otra variante (second-third-sft)](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft)
 - [Paper de OLMo 3 (arXiv)](https://arxiv.org/abs/2512.13961)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)

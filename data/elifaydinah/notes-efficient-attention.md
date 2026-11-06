@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación técnica sobre mecanismos de atención eficiente. La autora, elifaydinah, ha publicado un documento de trabajo que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para el estudio de arquitecturas de atención con complejidad lineal, en lugar de cuadrática. El repositorio incluye únicamente dos archivos: `reading.md` (la nota principal) y `README.md` (la documentación).
 
-El contenido se apoya en el artículo de referencia "Efficient Attention: Attention with Linear Complexities" (arXiv:1812.01243), que propone un mecanismo de atención equivalente al dot-product attention pero con costes de memoria y computación sustancialmente menores. La nota es explícitamente exploratoria: no presenta resultados experimentales, no incluye código liberado, ni checkpoints entrenados, ni afirmaciones de mejora sobre benchmarks. Los 16.576 parámetros que figuran en HuggingFace corresponden al tamaño del archivo de texto, no a parámetros de una red neuronal.
+El contenido se apoya en el artículo de referencia "Efficient Attention: Attention with Linear Complexities" (arXiv:1812.01243), que propone un mecanismo de atención equivalente al dot-product attention pero con costes de memoria y computación sustancialmente menores. La nota es explícitamente exploratoria: no presenta resultados experimentales, no incluye código liberado, ni checkpoints entrenados, ni afirmaciones de mejora sobre benchmarks. Los 16.576 parámetros que figuran en Hugging Face corresponden al tamaño del archivo de texto, no a parámetros de una red neuronal.
 
 La relevancia de este repositorio es documental: sirve como punto de partida para investigadores que quieran verificar las propuestas de atención eficiente, con referencias a conjuntos de datos concretos como Long Range Arena, ImageNet-1K y Flickr30k, y con una estructura que separa claramente hipótesis de resultados.
 
@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo comparable con otros. Si se busc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elifaydinah/notes-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/elifaydinah/notes-efficient-attention
 - Articulo original "Efficient Attention: Attention with Linear Complexities": https://arxiv.org/abs/1812.01243
 - Version HTML del articulo: https://arxiv.org/html/1812.01243
 - Version en AR5IV: https://ar5iv.labs.arxiv.org/html/1812.01243

@@ -114,7 +114,7 @@ La diferencia principal de este repositorio respecto a los tres anteriores no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/my-temp/Qwen3.8-3B-tpu-train
+- Modelo en Hugging Face: https://huggingface.co/my-temp/Qwen3.8-3B-tpu-train
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - TPU Agent Suite (google-pytorch/tpu-agent-suite): https://github.com/google-pytorch/tpu-agent-suite
 - Hugging Face TPU Community Playbook: https://hf.co/tpu-community

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes construido mediante transfer learning sobre EfficientNet-B0 preentrenado en ImageNet. Lo publica el usuario benjaminogbonna en HuggingFace como proyecto de aprendizaje, y su unica tarea es distinguir entre fotos de pizza y fotos de filete (steak). No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de vision de proposito muy acotado, con una cabeza de clasificacion nueva y el backbone parcialmente ajustado.
+EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes construido mediante transfer learning sobre EfficientNet-B0 preentrenado en ImageNet. Lo publica el usuario benjaminogbonna en Hugging Face como proyecto de aprendizaje, y su unica tarea es distinguir entre fotos de pizza y fotos de filete (steak). No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de vision de proposito muy acotado, con una cabeza de clasificacion nueva y el backbone parcialmente ajustado.
 
 El modelo parte de la arquitectura EfficientNet-B0 de torchvision, que emplea bloques MBConv con compound scaling y tiene alrededor de 5,3 millones de parametros en su version original. Sobre esa base se anade una cabeza compuesta por Dropout(0.2) y una capa Linear(1280, 1) con salida sigmoide, de modo que la red devuelve la probabilidad de que la imagen pertenezca a la clase 1 (steak); la clase 0 corresponde a pizza.
 
@@ -45,7 +45,7 @@ El entrenamiento se hizo en dos fases. En la primera se congelo el backbone y so
 - Filtrado preliminar en pipelines de anotacion: usar la probabilidad de salida como senal barata para priorizar que imagenes revisar manualmente en un conjunto de fotos de comida.
 - Ejercicio de evaluacion de sobreajuste: con 99,80% de accuracy en test sobre 500 imagenes, es un caso practico para discutir la validez de metricas en datasets pequenos y el riesgo de fuga de datos.
 - Base para fine-tuning en dominios similares: al estar liberado con licencia MIT, se puede reutilizar el checkpoint como inicializacion para otras clasificaciones binarias de imagenes.
-- Prueba de integracion de modelos PyTorch en HuggingFace Hub: el patron de descarga de pesos, config y codigo con `hf_hub_download` sirve como ejemplo de empaquetado de modelos no estándar.
+- Prueba de integracion de modelos PyTorch en Hugging Face Hub: el patron de descarga de pesos, config y codigo con `hf_hub_download` sirve como ejemplo de empaquetado de modelos no estándar.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benjaminogbonna/efficientnet-b0-pizza-steak | ~5,3 M (base) | no aplica | Clasificacion binaria pizza/steak | MIT | HuggingFace |
+| benjaminogbonna/efficientnet-b0-pizza-steak | ~5,3 M (base) | no aplica | Clasificacion binaria pizza/steak | MIT | Hugging Face |
 | EfficientNet-B0 (torchvision, ImageNet) | ~5,3 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause (torchvision) | Torchvision |
 | ResNet-18 (torchvision, ImageNet) | ~11,7 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause (torchvision) | Torchvision |
 | MobileNetV3-Small (torchvision, ImageNet) | ~2,5 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause (torchvision) | Torchvision |
@@ -90,7 +90,7 @@ La comparacion es aproximada: los modelos de torchvision son clasificadores gene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/benjaminogbonna/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/benjaminogbonna/efficientnet-b0-pizza-steak
 - EfficientNet (paper original): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html

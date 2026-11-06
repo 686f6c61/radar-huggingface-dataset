@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, J
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| llm-jp-4-32b-a3b-thinking-uncensored-heretic (este) | 32.139.028.992 | 3.827.476.992 | 65.536 | 0/100 | apache-2.0 | HuggingFace, safetensors |
-| llm-jp-4-32b-a3b-thinking (base) | 32.139.028.992 | 3.827.476.992 | 65.536 | 100/100 | apache-2.0 | HuggingFace |
-| llm-jp-4-8B (denso, misma familia) | 8.590.200.832 | no aplica (denso) | 65.536 | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| llm-jp-4-32b-a3b-thinking-uncensored-heretic (este) | 32.139.028.992 | 3.827.476.992 | 65.536 | 0/100 | apache-2.0 | Hugging Face, safetensors |
+| llm-jp-4-32b-a3b-thinking (base) | 32.139.028.992 | 3.827.476.992 | 65.536 | 100/100 | apache-2.0 | Hugging Face |
+| llm-jp-4-8B (denso, misma familia) | 8.590.200.832 | no aplica (denso) | 65.536 | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas externas (por ejemplo Qwen3-30B-A3B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica diferencia medible documentada entre este modelo y su base es la tasa de rechazo (0/100 frente a 100/100) con una divergencia KL de 0,0115, lo que indica que la intervencion es relativamente contenida en terminos de distribucion de salida, pero suficiente para eliminar los rechazos en el conjunto evaluado. No se dispone de datos comparativos de rendimiento en tareas genericas frente a otras familias de modelos.
@@ -103,7 +103,7 @@ La unica diferencia medible documentada entre este modelo y su base es la tasa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/llm-jp-4-32b-a3b-thinking-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/llm-jp-4-32b-a3b-thinking-uncensored-heretic
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-32b-a3b-thinking
 - Coleccion de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Herramienta Heretic: https://heretic-project.org

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha cubre una cuantización GGUF en formato IQ3_KS del modelo Raon-1 mini preview de KRAFTON, publicada por el usuario McNiiby en HuggingFace. El modelo base es un MoE (mixture of experts) de 28,8B parámetros totales y 4,3B activos, con licencia Apache-2.0, diseñado principalmente para generación de texto en inglés con modo de razonamiento (thinking). Esta cuantización, de 13,85 GB, está pensada específicamente para ejecutarse en GPUs de consumo de 16 GB manteniendo una ventana de contexto de 128K tokens.
+Esta ficha cubre una cuantización GGUF en formato IQ3_KS del modelo Raon-1 mini preview de KRAFTON, publicada por el usuario McNiiby en Hugging Face. El modelo base es un MoE (mixture of experts) de 28,8B parámetros totales y 4,3B activos, con licencia Apache-2.0, diseñado principalmente para generación de texto en inglés con modo de razonamiento (thinking). Esta cuantización, de 13,85 GB, está pensada específicamente para ejecutarse en GPUs de consumo de 16 GB manteniendo una ventana de contexto de 128K tokens.
 
 El valor diferencial de esta versión es técnico: no es una cuantización estándar de llama.cpp, sino que requiere un fork concreto (ik_llama.cpp con soporte Raon-1 y parches de velocidad de decodificación) porque utiliza tipos de cuantización propios de ik_llama.cpp (IQ3_KS e IQ4_KS_R16) y una cabeza de salida recortada que necesita un mapeo especial de filas a identificadores de token. Según el autor, alcanza unos 220-230 tok/s de decodificación en una RTX 5070 Ti, lo que la convierte en una opción atractiva para inferencia local de alta velocidad en hardware de consumo.
 

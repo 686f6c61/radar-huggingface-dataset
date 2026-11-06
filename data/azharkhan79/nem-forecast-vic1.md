@@ -80,7 +80,7 @@ Segun la model card, el modelo supera al naive estacional en los 48 horizontes y
 - Memoria RAM: no disponible de forma explicita, aunque por la naturaleza de los modelos de arboles en texto plano es previsiblemente reducida; el autor no publica cifras.
 - GPU recomendadas: no aplica (no se necesita GPU).
 - Encaje en hardware de consumo: si, el sistema esta pensado para ejecutarse en CPU convencional; no se especifican requisitos minimos.
-- Opciones de despliegue: el autor no documenta integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo); la carga se realiza mediante el paquete del proyecto, con `snapshot_download` de HuggingFace y la funcion `load_model` de `nem_forecast.models.catalog`.
+- Opciones de despliegue: el autor no documenta integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo); la carga se realiza mediante el paquete del proyecto, con `snapshot_download` de Hugging Face y la funcion `load_model` de `nem_forecast.models.catalog`.
 - Latencia y throughput: no disponible (no se publican cifras).
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Comparativa con las lineas base evaluadas en la propia model card sobre los mism
 
 | Modelo | Tipo | MAE global (MW) | Pinball global (MW) | Licencia / disponibilidad |
 |---|---|--:|--:|---|
-| nem-forecast-vic1 (lightgbm_quantile) | Gradient boosting cuantilico | 351 | 114,3 | MIT, pesos en HuggingFace |
+| nem-forecast-vic1 (lightgbm_quantile) | Gradient boosting cuantilico | 351 | 114,3 | MIT, pesos en Hugging Face |
 | persistence | Linea base trivial | 970 | 300,0 | No aplica |
 | same_weekday_mean_4w | Media movil intra-semana | 502 | 177,8 | No aplica |
 | seasonal_naive | Naive estacional | 506 | 179,0 | No aplica |
@@ -110,7 +110,7 @@ No se dispone de comparacion con otros modelos publicados de prediccion de deman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Azharkhan79/nem-forecast-vic1
+- Modelo en Hugging Face: https://huggingface.co/Azharkhan79/nem-forecast-vic1
 - Repositorio del proyecto: https://github.com/proxykhan/nem-forecast
 - Version del codigo de entrenamiento: https://github.com/proxykhan/nem-forecast/tree/fa90c4b4c9a356a0394d9fee9149d3f9665711e1
 - Definiciones de features y backtesting: https://github.com/proxykhan/nem-forecast#features-and-backtesting

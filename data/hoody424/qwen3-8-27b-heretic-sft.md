@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hoody424/qwen3.8-27b-heretic-sft` es un checkpoint de la familia Qwen 3 publicado en HuggingFace por el usuario hoody424. Por el identificador se deduce que se trata de un modelo de aproximadamente 27 000 millones de parametros, afinado mediante SFT (supervised fine-tuning) sobre una base Qwen 3, presumiblemente con el objetivo de reducir el comportamiento de rechazo (el sufijo "heretic" se asocia habitualmente a los denominados "abliterated" o "uncensored" fine-tunes). El tag `unsloth` indica que el entrenamiento se realizo con la libreria Unsloth, orientada a fine-tuning eficiente en memoria.
+`hoody424/qwen3.8-27b-heretic-sft` es un checkpoint de la familia Qwen 3 publicado en Hugging Face por el usuario hoody424. Por el identificador se deduce que se trata de un modelo de aproximadamente 27 000 millones de parametros, afinado mediante SFT (supervised fine-tuning) sobre una base Qwen 3, presumiblemente con el objetivo de reducir el comportamiento de rechazo (el sufijo "heretic" se asocia habitualmente a los denominados "abliterated" o "uncensored" fine-tunes). El tag `unsloth` indica que el entrenamiento se realizo con la libreria Unsloth, orientada a fine-tuning eficiente en memoria.
 
-La informacion publicada es extremadamente escasa: la model card es la plantilla generica autogenerada por HuggingFace, sin datos de licencia, idiomas, contexto, composicion del dataset ni resultados de evaluacion. El repositorio ocupa 0,3 GB, un tamano incompatible con pesos completos en precision 16 bits para un modelo de 27B (que rondaria los 54 GB), lo que sugiere que el repositorio contiene unicamente adaptadores LoRA, pesos parciales o una version cuantizada de forma agresiva; no es posible confirmarlo con los datos disponibles.
+La informacion publicada es extremadamente escasa: la model card es la plantilla generica autogenerada por Hugging Face, sin datos de licencia, idiomas, contexto, composicion del dataset ni resultados de evaluacion. El repositorio ocupa 0,3 GB, un tamano incompatible con pesos completos en precision 16 bits para un modelo de 27B (que rondaria los 54 GB), lo que sugiere que el repositorio contiene unicamente adaptadores LoRA, pesos parciales o una version cuantizada de forma agresiva; no es posible confirmarlo con los datos disponibles.
 
 Por tanto, esta ficha describe lo que se puede inferir razonablemente del identificador y de los tags, y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier uso en produccion exige una validacion directa del checkpoint antes de adoptarlo.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hoody424/qwen3.8-27b-heretic-sft | ~27B (inferido) | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
-| Qwen 3 (base oficial, familia 27B-32B) | ~27-32B | segun version oficial | Apache 2.0 en la mayoria de variantes | HuggingFace, ampliamente usado | Documentacion completa y evaluaciones publicadas |
-| Gemma 3 27B | 27B | 128K en la version oficial | Gemma Terms of Use | HuggingFace | Multimodal, benchmarks publicados |
-| Mistral Small 3 (24B) | 24B | 32K en la version oficial | Apache 2.0 | HuggingFace | Optimizado para baja latencia |
+| hoody424/qwen3.8-27b-heretic-sft | ~27B (inferido) | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
+| Qwen 3 (base oficial, familia 27B-32B) | ~27-32B | segun version oficial | Apache 2.0 en la mayoria de variantes | Hugging Face, ampliamente usado | Documentacion completa y evaluaciones publicadas |
+| Gemma 3 27B | 27B | 128K en la version oficial | Gemma Terms of Use | Hugging Face | Multimodal, benchmarks publicados |
+| Mistral Small 3 (24B) | 24B | 32K en la version oficial | Apache 2.0 | Hugging Face | Optimizado para baja latencia |
 
 La comparacion con las alternativas oficiales es desfavorable en trazabilidad: frente a Qwen 3, Gemma 3 o Mistral Small, este checkpoint carece de licencia declarada, evaluaciones y documentacion de entrenamiento, lo que dificulta su adopcion en entornos con requisitos de cumplimiento.
 
@@ -84,7 +84,7 @@ La comparacion con las alternativas oficiales es desfavorable en trazabilidad: f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoody424/qwen3.8-27b-heretic-sft
+- Hugging Face: https://huggingface.co/hoody424/qwen3.8-27b-heretic-sft
 - Paper citado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact
 - Unsloth (herramienta de fine-tuning referenciada por el tag): https://github.com/unslothai/unsloth

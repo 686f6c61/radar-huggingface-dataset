@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vikhr-Qwen-2.5-1.5B-Instruct-GGUF es la distribución en formato GGUF del modelo Vikhr-Qwen-2.5-1.5B-Instruct, un ajuste fino de Qwen/Qwen2.5-1.5B-Instruct especializado en instrucciones en ruso e inglés. Lo publica el usuario tinyopsec en HuggingFace, mientras que el modelo original procede de Vikhrmodels y se entrenó sobre el conjunto de datos en ruso GrandMaster-PRO-MAX. El repositorio no aporta pesos nuevos: es una conversión a llama.cpp de los pesos del modelo base ajustado, con 13 variantes de cuantización entre F16 y Q2_K.
+Vikhr-Qwen-2.5-1.5B-Instruct-GGUF es la distribución en formato GGUF del modelo Vikhr-Qwen-2.5-1.5B-Instruct, un ajuste fino de Qwen/Qwen2.5-1.5B-Instruct especializado en instrucciones en ruso e inglés. Lo publica el usuario tinyopsec en Hugging Face, mientras que el modelo original procede de Vikhrmodels y se entrenó sobre el conjunto de datos en ruso GrandMaster-PRO-MAX. El repositorio no aporta pesos nuevos: es una conversión a llama.cpp de los pesos del modelo base ajustado, con 13 variantes de cuantización entre F16 y Q2_K.
 
 El interés práctico está en el tamaño: 1.543.298.048 parámetros (aproximadamente 1,5 mil millones), lo que permite ejecución local en CPU o en GPU de consumo con pocos gigabytes de memoria. Al heredar la arquitectura Qwen2.5, mantiene una ventana de contexto de 32.768 tokens y soporte para más de 29 idiomas según la documentación del modelo base, aunque el ajuste fino se centra en ruso e inglés.
 

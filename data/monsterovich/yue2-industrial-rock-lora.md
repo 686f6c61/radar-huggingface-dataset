@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye datos de otros adaptadore
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/monsterovich/yue2-industrial-rock-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/monsterovich/yue2-industrial-rock-lora
 - Modelo base: https://huggingface.co/m-a-p/YuE2-3B
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su modelo base; los unicos enlaces recuperados correspondian a paginas corporativas no relacionadas con el contenido de esta ficha.

@@ -51,10 +51,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Instruct (base) | 4B | 32K | Sí | Apache 2.0 (probablemente) | HuggingFace, ModelScope |
-| Qwen2-VL-2B-Instruct | 2B | 32K | Sí | Apache 2.0 | HuggingFace |
-| Phi-3-vision-128k-instruct | 4.2B | 128K | Sí | MIT | HuggingFace |
-| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | HuggingFace |
+| Qwen3-VL-4B-Instruct (base) | 4B | 32K | Sí | Apache 2.0 (probablemente) | Hugging Face, ModelScope |
+| Qwen2-VL-2B-Instruct | 2B | 32K | Sí | Apache 2.0 | Hugging Face |
+| Phi-3-vision-128k-instruct | 4.2B | 128K | Sí | MIT | Hugging Face |
+| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | Hugging Face |
 
 El adaptador no es comparable directamente con modelos completos, sino que se usa sobre el base. Su ventaja es el ajuste fino específico para tablas y datos sociales, pero no se dispone de datos de rendimiento para comparar.
 
@@ -122,10 +122,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-Instruct (base) | 4B | 32K | Sí | Apache 2.0 (según la documentación oficial) | HuggingFace, ModelScope |
-| Qwen2-VL-2B-Instruct | 2B | 32K | Sí | Apache 2.0 | HuggingFace |
-| Llama-3.2-11B-Vision | 11B | 128K | Sí | Llama 3.2 (uso comercial permitido) | HuggingFace |
-| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | HuggingFace |
+| Qwen3-VL-4B-Instruct (base) | 4B | 32K | Sí | Apache 2.0 (según la documentación oficial) | Hugging Face, ModelScope |
+| Qwen2-VL-2B-Instruct | 2B | 32K | Sí | Apache 2.0 | Hugging Face |
+| Llama-3.2-11B-Vision | 11B | 128K | Sí | Llama 3.2 (uso comercial permitido) | Hugging Face |
+| LLaVA-1.6-7B | 7B | 32K | Sí | Apache 2.0 | Hugging Face |
 
 El adaptador no es directamente comparable con modelos completos; su valor está en el ajuste específico para tablas y datos sociales, pero sin benchmarks no se puede cuantificar la mejora sobre el base.
 

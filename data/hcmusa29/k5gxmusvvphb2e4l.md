@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como hcmusa29/k5gXmUSVvpHb2e4L es un artefacto alojado en HuggingFace por el usuario hcmusa29, publicado el 12 de septiembre de 2026 y actualizado el 15 de septiembre del mismo año. La única etiqueta declarada es region:us y no se ha especificado pipeline, licencia, idiomas soportados ni modelo de tarjeta descriptiva. El repositorio acumula 0 descargas y 3 "me gusta", por lo que se trata de una publicacion practicamente sin traccion ni validacion por parte de la comunidad.
+El repositorio identificado como hcmusa29/k5gXmUSVvpHb2e4L es un artefacto alojado en Hugging Face por el usuario hcmusa29, publicado el 12 de septiembre de 2026 y actualizado el 15 de septiembre del mismo año. La única etiqueta declarada es region:us y no se ha especificado pipeline, licencia, idiomas soportados ni modelo de tarjeta descriptiva. El repositorio acumula 0 descargas y 3 "me gusta", por lo que se trata de una publicacion practicamente sin traccion ni validacion por parte de la comunidad.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, 253,9 GB, un volumen compatible con pesos de un modelo de gran escala o con un repositorio que contiene multiples formatos, estados de optimizador o artefactos auxiliares. Sin la tarjeta del modelo, sin config.json publico y sin documentacion asociada, no es posible confirmar arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. Cualquier afirmacion al respecto seria especulativa.
 
@@ -57,7 +57,7 @@ Los siguientes escenarios se plantean como hipotesis de trabajo sujetas a verifi
 
 - Despliegue autoalojado en infraestructura propia: si el repositorio contiene pesos en un formato estandar (safetensors o GGUF), podria servirse mediante un motor de inferencia local; es imprescindible verificar primero el formato y la licencia antes de cualquier uso comercial.
 - Evaluacion comparativa interna: dado que no existen resultados publicados, el modelo solo resultaria util como candidato a evaluar dentro de un banco de pruebas propio, midiendo calidad y coste frente a alternativas ya validadas.
-- Investigacion sobre modelos publicados sin tarjeta: el repositorio puede servir como caso de estudio sobre practicas de publicacion deficientes en HuggingFace y sobre la necesidad de documentacion minima reproducible.
+- Investigacion sobre modelos publicados sin tarjeta: el repositorio puede servir como caso de estudio sobre practicas de publicacion deficientes en Hugging Face y sobre la necesidad de documentacion minima reproducible.
 - Fase de experimentacion academica: en un entorno de laboratorio, y solo tras confirmar arquitectura y licencia, podria emplearse para reproducir experimentos, siempre que se documenten las condiciones de uso.
 - Analisis forense de artefactos: el volumen de 253,9 GB permite estudiar como se organizan repositorios de gran tamano, que formatos coexisten y que metadatos acompanan a los pesos.
 - Integracion en pipelines de evaluacion automatizada: si se confirma que es un modelo de lenguaje, podria incorporarse a un arnes de evaluacion tipo lm-evaluation-harness para obtener las metricas que el autor no ha publicado.
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Compatibilidad con GPU de consumo: no disponible. El tamano del repositorio (253,9 GB) sugiere que, si corresponde integramente a pesos en precision de 16 bits, el modelo no cabria en una GPU de consumo sin cuantizacion agresiva; se trata de una inferencia no confirmada.
 - Opciones de despliegue: no disponible. No puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni SGLang, ya que se desconoce el formato de pesos.
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento necesario: al menos 253,9 GB para clonar el repositorio completo, segun el dato publicado por HuggingFace.
+- Almacenamiento necesario: al menos 253,9 GB para clonar el repositorio completo, segun el dato publicado por Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,6 +96,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/k5gXmUSVvpHb2e4L
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/k5gXmUSVvpHb2e4L
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas URL devueltas corresponden a articulos genericos sobre motivacion laboral (jibble.io, blog.csdn.net, aiqicha.baidu.com, zhihu.com, maplefeather.com) y no guardan relacion con el modelo, por lo que se omiten.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

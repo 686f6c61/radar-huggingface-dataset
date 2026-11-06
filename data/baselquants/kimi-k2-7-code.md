@@ -113,10 +113,10 @@ En la franja de MoE abiertos de escala similar (1T totales / decenas de miles de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baselquants/Kimi-K2.7-Code
-- Modelo original en HuggingFace (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K2.7-Code
+- Repositorio en Hugging Face: https://huggingface.co/baselquants/Kimi-K2.7-Code
+- Modelo original en Hugging Face (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K2.7-Code
 - Licencia: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Web oficial de Moonshot AI: https://www.moonshot.ai
 - Producto Kimi Code: https://www.kimi.com/code
 - Twitter/X de Kimi: https://twitter.com/kimi_moonshot

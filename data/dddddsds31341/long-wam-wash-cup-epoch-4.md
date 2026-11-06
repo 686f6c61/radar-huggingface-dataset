@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Long-WAM Wash Cup — Epoch 4 es un checkpoint de evaluación resultante del ajuste fino del modelo base Efficient-Large-Model/Long-WAM-YAM sobre la tarea concreta de lavar una taza con un cepillo de botella en un entorno bimanual. Lo publica el usuario dddddsds31341 en HuggingFace y corresponde al epoch 4 de 10 de un entrenamiento independiente (no continuado de otro fine-tune), en el paso de optimizador 5812 de un total previsto de 14.530 actualizaciones. Se trata, por tanto, de un modelo de política robótica (visión-lenguaje-acción) orientado a control de manipuladores, no de un modelo de lenguaje generativo de propósito general.
+Long-WAM Wash Cup — Epoch 4 es un checkpoint de evaluación resultante del ajuste fino del modelo base Efficient-Large-Model/Long-WAM-YAM sobre la tarea concreta de lavar una taza con un cepillo de botella en un entorno bimanual. Lo publica el usuario dddddsds31341 en Hugging Face y corresponde al epoch 4 de 10 de un entrenamiento independiente (no continuado de otro fine-tune), en el paso de optimizador 5812 de un total previsto de 14.530 actualizaciones. Se trata, por tanto, de un modelo de política robótica (visión-lenguaje-acción) orientado a control de manipuladores, no de un modelo de lenguaje generativo de propósito general.
 
 El modelo parte de la arquitectura Long-WAM, un modelo conjunto de vídeo y acción que combina un VAE Wan2.2 para la parte visual, un codificador de texto UMT5 y un codificador de propiocepción, y que produce trozos de acción de 32 pasos a partir de tres cámaras RGB (top_head, hand_left, hand_right) y un historial de 48 fotogramas. El entrenamiento emplea 100 demostraciones (69.728 fotogramas a 30 Hz) del dataset yuyingyinya/wash_cup, con objetivos de articulación absolutos de 14 dimensiones (6 articulaciones + pinza por brazo).
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / historial | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Wash Cup — Epoch 4 | no disponible | P48 (48 fotogramas), acción de 32 pasos | Lavado bimanual de taza (fine-tune) | other | HuggingFace (2 descargas) |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA base | other | HuggingFace |
+| Long-WAM Wash Cup — Epoch 4 | no disponible | P48 (48 fotogramas), acción de 32 pasos | Lavado bimanual de taza (fine-tune) | other | Hugging Face (2 descargas) |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA base | other | Hugging Face |
 | NVlabs/LongLive (código base) | no disponible | no disponible | Framework de generación de vídeo largo | no disponible | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-4
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-4
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/wash_cup
 - Repositorio de código base: https://github.com/NVlabs/LongLive (commit cfa4e91eec59429d583326500bf5535c9ce6eec7)

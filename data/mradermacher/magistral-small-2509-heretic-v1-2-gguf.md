@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Magistral-Small-2509-Heretic-v1.2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Magistral-Small-2509-Heretic-v1.2-GGUF
 - Modelo base: https://huggingface.co/grayarea/Magistral-Small-2509-Heretic-v1.2
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Magistral-Small-2509-Heretic-v1.2-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Magistral-Small-2509-Heretic-v1.2-GGUF

@@ -71,8 +71,8 @@ Rendimiento en dispositivo: 17 ms por línea de 40 letras en una Samsung Galaxy 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Puki Beak | 2,3 M | no disponible (línea de texto) | G2P hebreo | Apache 2.0 | ONNX en HuggingFace |
-| RenikudPlus | no disponible | no disponible | Diacritización/lectura hebrea | Apache 2.0 | HuggingFace |
+| Puki Beak | 2,3 M | no disponible (línea de texto) | G2P hebreo | Apache 2.0 | ONNX en Hugging Face |
+| RenikudPlus | no disponible | no disponible | Diacritización/lectura hebrea | Apache 2.0 | Hugging Face |
 | BlueTTS | no disponible | no disponible | TTS (consume fonemas) | no disponible | GitHub |
 
 RenikudPlus es el modelo del que se derivan las etiquetas de entrenamiento y el principal punto de comparación en precisión (99,1 % frente a 92,3 % en palabras). BlueTTS no es un G2P sino el motor de síntesis que consume la salida de Beak. No se dispone de datos de otros modelos G2P de hebreo en la información proporcionada.
@@ -90,7 +90,7 @@ RenikudPlus es el modelo del que se derivan las etiquetas de entrenamiento y el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-beak-he
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-beak-he
 - Proyecto Puki (repositorio): https://github.com/TomSadeh/puki
 - BlueTTS: https://github.com/maxmelichov/BlueTTS
 - RenikudPlus: https://huggingface.co/notmax123/RenikudPlus

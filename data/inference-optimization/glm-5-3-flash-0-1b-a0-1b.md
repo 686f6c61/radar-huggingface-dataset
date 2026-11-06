@@ -79,7 +79,7 @@ La comparativa directa con el modelo base es la mas relevante: este tiny model e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B
 - Modelo base (zai-org/GLM-5.3-Flash): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentacion de GLM-5.3-Flash en Unsloth: https://unsloth.ai/docs/models/glm-5.3
 - Articulo de openlm.ai sobre GLM-5.3: https://openlm.ai/glm-5.3/

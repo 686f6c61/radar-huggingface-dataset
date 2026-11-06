@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint` es un ajuste fino supervisado (SFT) sobre el modelo base `empero-ai/Qwen3.8-4B`, publicado por el usuario ermiaazarkhalili. Según la model card, el entrenamiento se realizó con la librería Unsloth y HuggingFace TRL, lo que sugiere un uso de técnicas de fine-tuning eficientes (probablemente LoRA o QLoRA). El modelo está etiquetado como `qwen3_5` y pertenece a la familia Qwen3.8, aunque no se proporcionan detalles arquitectónicos específicos del modelo base.
+El modelo `ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint` es un ajuste fino supervisado (SFT) sobre el modelo base `empero-ai/Qwen3.8-4B`, publicado por el usuario ermiaazarkhalili. Según la model card, el entrenamiento se realizó con la librería Unsloth y Hugging Face TRL, lo que sugiere un uso de técnicas de fine-tuning eficientes (probablemente LoRA o QLoRA). El modelo está etiquetado como `qwen3_5` y pertenece a la familia Qwen3.8, aunque no se proporcionan detalles arquitectónicos específicos del modelo base.
 
 La relevancia de este modelo radica en su tamaño compacto (4B parámetros) y su licencia Apache 2.0, lo que permite uso comercial sin restricciones. No obstante, la información pública es extremadamente limitada: no se han publicado especificaciones técnicas, benchmarks ni documentación adicional, y el repositorio muestra un tamaño de 0 GB, lo que sugiere que podría ser una subida incompleta o un placeholder. Se desconoce si el modelo final tiene capacidades reales más allá de la generación de texto conversacional en inglés.
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint)
+- Modelo en Hugging Face: [https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint)
 - Modelo base (empero-ai/Qwen3.8-4B): [https://huggingface.co/empero-ai/Qwen3.8-4B](https://huggingface.co/empero-ai/Qwen3.8-4B) (no verificado)
 - Repositorio oficial de Qwen3.8 en GitHub: [https://github.com/QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)
 - Página de OpenLM sobre Qwen3.8: [https://openlm.ai/qwen3.8/](https://openlm.ai/qwen3.8/)

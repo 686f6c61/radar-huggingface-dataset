@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `susurofu/qwen3-0.6b-mini-fanfic-ja` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario susurofu, derivado presumiblemente de la familia Qwen3 en su variante de 0,6 mil millones de parametros. El nombre del repositorio sugiere una especializacion en la generacion de fanfiction en japones ("ja"), aunque la model card publicada no contiene ninguna descripcion tecnica, ni detalles de entrenamiento, ni ejemplos de uso. La unica informacion verificable es la licencia Apache 2.0 y la fecha de creacion (noviembre de 2026).
+El modelo `susurofu/qwen3-0.6b-mini-fanfic-ja` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario susurofu, derivado presumiblemente de la familia Qwen3 en su variante de 0,6 mil millones de parametros. El nombre del repositorio sugiere una especializacion en la generacion de fanfiction en japones ("ja"), aunque la model card publicada no contiene ninguna descripcion tecnica, ni detalles de entrenamiento, ni ejemplos de uso. La unica informacion verificable es la licencia Apache 2.0 y la fecha de creacion (noviembre de 2026).
 
 La relevancia de este modelo es muy limitada en el momento de redactar esta ficha: cuenta con cero descargas y cero likes, y el autor no ha documentado el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes. Se trata, por tanto, de un artefacto experimental sin validacion publica. Cualquier evaluacion de su calidad debe realizarse mediante pruebas propias, no a partir de la documentacion disponible.
 
@@ -40,7 +40,7 @@ La unica innovacion tecnica implicita es la especializacion tematica y linguisti
 
 - Generacion de fanfiction en japones: el modelo podria emplearse para continuar o generar relatos de ficcion de aficionados en japones, que es la unica especializacion sugerida por el nombre del repositorio. Requiere validacion manual de la calidad.
 - Prototipado experimental de narrativa: util como banco de pruebas para comparar ajustes tematicos de bajo coste sobre modelos pequenos de 0,6B.
-- Experimentacion academica con fine-tuning de Qwen3: sirve como ejemplo de repositorio derivado para estudiar practicas de publicacion en HuggingFace, dada la ausencia de documentacion.
+- Experimentacion academica con fine-tuning de Qwen3: sirve como ejemplo de repositorio derivado para estudiar practicas de publicacion en Hugging Face, dada la ausencia de documentacion.
 - Generacion de texto creativo en local: por su tamano reducido (presuntamente 0,6B), podria ejecutarse en hardware modesto para pruebas de generacion narrativa, siempre que se verifique su comportamiento real.
 - Base para nuevos ajustes: al estar bajo licencia Apache 2.0, podria reutilizarse como punto de partida para fine-tunings posteriores, aunque se desconoce su calidad base.
 - Investigacion sobre sesgos en narrativa japonesa: permitiria analizar como un modelo pequeno ajustado en fanfiction reproduce estereotipos o estilos, si bien no hay datos que respalden su idoneidad.
@@ -79,5 +79,5 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/susurofu/qwen3-0.6b-mini-fanfic-ja
+- Hugging Face: https://huggingface.co/susurofu/qwen3-0.6b-mini-fanfic-ja
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -72,7 +72,7 @@ La variante de 0xSero de 615B tiene un 19% de expertos eliminados y una cuantiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/GLM-5.3-621B-EXL3-TR3-3.42bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSero/GLM-5.3-621B-EXL3-TR3-3.42bpw
 - Cuantización base: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Paper REAP: https://arxiv.org/abs/2510.13999

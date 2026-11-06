@@ -69,7 +69,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-none-s42 | 13,8 M | no aplica | CER 0,0633 / WER 0,2858 (HHD Option-B) | MIT | HuggingFace |
+| cyttic/hmt-htrvt-none-s42 | 13,8 M | no aplica | CER 0,0633 / WER 0,2858 (HHD Option-B) | MIT | Hugging Face |
 | Alternativas HTR hebreo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-none-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-none-s42
 - Dataset de entrenamiento (referenciado): https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados (`results.json`): referenciado en la model card, no enlazado en la información disponible
 - Paper, blog o repositorio del estudio `htr-metrics-transfer`: no disponible

@@ -71,7 +71,7 @@ Nota: NLLB-200-3.3B tiene licencia CC-BY-NC-4.0, lo que restringe su uso comerci
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/egekocabas/madlad400-7b-mt-Q5_K_M-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/egekocabas/madlad400-7b-mt-Q5_K_M-GGUF
 - Modelo original de Google: https://huggingface.co/google/madlad400-7b-mt
 - Dataset MADLAD-400: https://huggingface.co/datasets/allenai/MADLAD-400
 - Proyecto llama.cpp: https://github.com/ggerganov/llama.cpp

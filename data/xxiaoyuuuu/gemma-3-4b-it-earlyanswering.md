@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-EarlyAnswering | 4B (base) + LoRA r=32 | No disponible | GRPO + recompensa Early Answering sobre Reasoning Gym | Gemma | HuggingFace (adaptador PEFT) |
-| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA | No disponible | GRPO + recompensa de causalidad sobre CoT desordenadas | Gemma | HuggingFace (adaptador PEFT) |
-| google/gemma-3-4b-it | 4B | No disponible en esta ficha | SFT + RLHF (modelo base original) | Gemma | HuggingFace |
+| Gemma-3-4B-IT-EarlyAnswering | 4B (base) + LoRA r=32 | No disponible | GRPO + recompensa Early Answering sobre Reasoning Gym | Gemma | Hugging Face (adaptador PEFT) |
+| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA | No disponible | GRPO + recompensa de causalidad sobre CoT desordenadas | Gemma | Hugging Face (adaptador PEFT) |
+| google/gemma-3-4b-it | 4B | No disponible en esta ficha | SFT + RLHF (modelo base original) | Gemma | Hugging Face |
 
 La comparacion con modelos de otros linajes (p. ej., Qwen o Llama de tamano similar) no esta disponible en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ La comparacion con modelos de otros linajes (p. ej., Qwen o Llama de tamano simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-EarlyAnswering
+- Modelo en Hugging Face: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-EarlyAnswering
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Variante CRoS: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
 - Dataset de evaluaciones: https://huggingface.co/datasets/xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval

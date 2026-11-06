@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2 es un adaptador de ajuste fino de tipo LoRA publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. No es un modelo completo, sino un conjunto de pesos de adaptador (0,3 GB de repositorio) que debe cargarse junto al modelo base mediante la libreria PEFT. El identificador del repositorio sugiere que el ajuste se ha realizado sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles y urdu, con un subconjunto de 5000 ejemplos, y que la inicializacion del adaptador emplea la tecnica PiSSA (Principal Singular values and Singular vectors Adaptation). Ninguno de estos extremos esta confirmado en la model card.
+WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2 es un adaptador de ajuste fino de tipo LoRA publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base meta-llama/Llama-3.2-3B. No es un modelo completo, sino un conjunto de pesos de adaptador (0,3 GB de repositorio) que debe cargarse junto al modelo base mediante la libreria PEFT. El identificador del repositorio sugiere que el ajuste se ha realizado sobre el corpus XNLI (inferencia de lenguaje natural entre pares de frases) en ingles y urdu, con un subconjunto de 5000 ejemplos, y que la inicializacion del adaptador emplea la tecnica PiSSA (Principal Singular values and Singular vectors Adaptation). Ninguno de estos extremos esta confirmado en la model card.
 
 El problema que aborda es el de la inferencia textual multilingue (determinar si una hipotesis se deduce, contradice o es neutral respecto a una premisa) en un par de idiomas de recursos muy desiguales, como son el ingles y el urdu. Se trata de un caso tipico de investigacion academica en transferencia cross-lingue y en ajuste eficiente de parametros, mas que de un artefacto listo para produccion.
 
-La relevancia actual del modelo es limitada y debe interpretarse con cautela: el repositorio registra 0 descargas y 0 likes, la model card es la plantilla vacia de HuggingFace sin ninguna seccion completada, no declara licencia ni idiomas, y no publica resultados de evaluacion. Cualquier uso en produccion requeriria validar primero el adaptador contra el modelo base y asumir la licencia del modelo subyacente.
+La relevancia actual del modelo es limitada y debe interpretarse con cautela: el repositorio registra 0 descargas y 0 likes, la model card es la plantilla vacia de Hugging Face sin ninguna seccion completada, no declara licencia ni idiomas, y no publica resultados de evaluacion. Cualquier uso en produccion requeriria validar primero el adaptador contra el modelo base y asumir la licencia del modelo subyacente.
 
 ## Especificaciones tecnicas
 
@@ -71,15 +71,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Este adaptador (sobre Llama-3.2-3B) | Adaptador LoRA sobre 3,21 mil millones | No disponible (base: 128 000 tokens) | No disponible (hereda la del base) | Repositorio publico con 0 descargas | No disponible |
 | meta-llama/Llama-3.2-3B (modelo base) | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | Ampliamente disponible, requiere solicitud | No disponible |
-| Qwen2.5-3B | 3,09 mil millones | 32 768 tokens (hasta 128 000 con configuracion) | Apache 2.0 | Publico en HuggingFace | No disponible |
+| Qwen2.5-3B | 3,09 mil millones | 32 768 tokens (hasta 128 000 con configuracion) | Apache 2.0 | Publico en Hugging Face | No disponible |
 | Gemma 2 2B | 2,61 mil millones | 8 192 tokens | Gemma Terms of Use | Publico con aceptacion de terminos | No disponible |
-| Phi-3.5-mini-instruct | 3,82 mil millones | 128 000 tokens | MIT | Publico en HuggingFace | No disponible |
+| Phi-3.5-mini-instruct | 3,82 mil millones | 128 000 tokens | MIT | Publico en Hugging Face | No disponible |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad porque no existe ningun dato de evaluacion publicado para el adaptador analizado. La ventaja diferencial frente a los modelos de la tabla seria la especializacion en la tarea NLI para el par ingles-urdu, no verificada empiricamente.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace y todas las secciones estan marcadas como "More Information Needed". No hay informacion sobre datos, hiperparametros, sesgos ni uso previsto.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face y todas las secciones estan marcadas como "More Information Needed". No hay informacion sobre datos, hiperparametros, sesgos ni uso previsto.
 - Sin licencia declarada: el repositorio no especifica licencia. Al derivar de Llama-3.2-3B, se heredan las restricciones de la Llama 3.2 Community License, que no es una licencia de codigo abierto aprobada por la OSI e incluye condiciones de uso (atribucion "Built with Llama", clausula de 700 millones de usuarios activos mensuales y restricciones de uso aceptable).
 - Riesgo de olvido catastrofico: un ajuste supervisado sobre un unico corpus de 5000 ejemplos puede degradar las capacidades generativas y multilingues del modelo base. No se aporta ninguna evaluacion que descarte este efecto.
 - Cobertura idiomatica incierta: el urdu no forma parte de los ocho idiomas oficialmente soportados por Llama 3.2, por lo que el rendimiento en ese idioma depende de la transferencia desde representaciones multilingues no supervisadas y es probablemente inferior al del ingles.
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_PiSSA_llama-3.2
 - Modelo base meta-llama/Llama-3.2-3B: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de PiSSA (tecnica sugerida por el nombre del repositorio): https://arxiv.org/abs/2402.12354

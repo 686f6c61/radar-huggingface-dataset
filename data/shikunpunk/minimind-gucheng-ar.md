@@ -77,7 +77,7 @@ Los tres modelos comparten el mismo tamaño, datos y objetivo, diferenciándose 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-GuCheng-AR
-- Perfil del autor en HuggingFace: https://huggingface.co/shikunpunk
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-GuCheng-AR
+- Perfil del autor en Hugging Face: https://huggingface.co/shikunpunk
 - Repositorio MiniMind (arquitectura base): https://github.com/jingyaogong/minimind
 - Documentación de comparación de entrenamiento: referenciada como `TRAINING_COMPARISON.md` en el repositorio del modelo (no disponible directamente).

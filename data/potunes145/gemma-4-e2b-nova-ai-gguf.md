@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Potunes145/gemma-4-e2b-nova-ai-gguf
+- Repositorio Hugging Face: https://huggingface.co/Potunes145/gemma-4-e2b-nova-ai-gguf
 - Modelo base de Google: https://huggingface.co/google/gemma-4-E2B
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Ficha de Gemma 4 E2B en gemma4.dev: https://gemma4.dev/models/gemma-4-e2b

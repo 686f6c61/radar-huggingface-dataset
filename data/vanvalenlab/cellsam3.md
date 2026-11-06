@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vanvalenlab/cellsam3` es un repositorio de modelo alojado en HuggingFace por la organizacion vanvalenlab, el laboratorio de biologia computacional responsable de herramientas de segmentacion celular como DeepCell, Mesmer y la familia CellSAM. Por el nombre del repositorio, todo apunta a la tercera iteracion de un modelo de segmentacion de celulas basado en el paradigma de Segment Anything (SAM), aunque la ficha de HuggingFace no incluye model card, descripcion de arquitectura ni datos de entrenamiento, por lo que esa vinculacion no puede confirmarse con la informacion disponible.
+`vanvalenlab/cellsam3` es un repositorio de modelo alojado en Hugging Face por la organizacion vanvalenlab, el laboratorio de biologia computacional responsable de herramientas de segmentacion celular como DeepCell, Mesmer y la familia CellSAM. Por el nombre del repositorio, todo apunta a la tercera iteracion de un modelo de segmentacion de celulas basado en el paradigma de Segment Anything (SAM), aunque la ficha de Hugging Face no incluye model card, descripcion de arquitectura ni datos de entrenamiento, por lo que esa vinculacion no puede confirmarse con la informacion disponible.
 
-El repositorio ocupa 3,5 GB y esta publicado bajo una licencia `modified-apache-2.0-noncommercial`, es decir, una variante de Apache 2.0 con restriccion de uso no comercial. El acceso es restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos. En el momento de la consulta no registra descargas ni likes, y el campo `pipeline` no esta informado.
+El repositorio ocupa 3,5 GB y esta publicado bajo una licencia `modified-apache-2.0-noncommercial`, es decir, una variante de Apache 2.0 con restriccion de uso no comercial. El acceso es restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos. En el momento de la consulta no registra descargas ni likes, y el campo `pipeline` no esta informado.
 
 Su relevancia potencial reside en el nicho de la segmentacion de celulas en imagenes de microscopia, un paso critico en pipelines de biologia celular, cribado de alto contenido y patologia computacional. Sin embargo, la ausencia total de documentacion tecnica publica en el repositorio limita seriamente la evaluacion: no se puede verificar el tamano de parametros, la arquitectura, los datos de entrenamiento ni el rendimiento, y la licencia no comercial restringe su adopcion en produccion.
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son aplicaciones tipicas del ambito de la segmentacion
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de segmentacion (IoU, Dice, F1 por instancia), ni comparaciones con modelos de referencia, ni resultados en conjuntos de datos habituales del area como LIVECell, Cell Tracking Challenge o MoNuSeg.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de segmentacion (IoU, Dice, F1 por instancia), ni comparaciones con modelos de referencia, ni resultados en conjuntos de datos habituales del area como LIVECell, Cell Tracking Challenge o MoNuSeg.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ La comparacion se limita a aspectos verificables, ya que no se dispone de datos 
 
 | Modelo | Tipo | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|
-| vanvalenlab/cellsam3 | Segmentacion celular (presumible) | Modificada Apache 2.0, no comercial | HuggingFace, acceso restringido (gated) | no disponible |
+| vanvalenlab/cellsam3 | Segmentacion celular (presumible) | Modificada Apache 2.0, no comercial | Hugging Face, acceso restringido (gated) | no disponible |
 | Cellpose / Cellpose-SAM | Segmentacion celular | no disponible | Codigo y pesos publicos | no disponible |
 | StarDist | Segmentacion celular (formas estelares) | no disponible | Codigo y pesos publicos | no disponible |
 | SAM / SAM 2 (Meta) | Segmentacion general | no disponible | Pesos publicos | no disponible |
@@ -78,7 +78,7 @@ Nota: para `cellsam3` la licencia no comercial es una desventaja objetiva frente
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, sesgos ni limitaciones conocidas, lo que impide una evaluacion tecnica rigurosa.
-- Acceso restringido (gated): el uso requiere aceptar condiciones adicionales en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
+- Acceso restringido (gated): el uso requiere aceptar condiciones adicionales en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en pipelines automatizados.
 - Licencia no comercial: la variante `modified-apache-2.0-noncommercial` impide el uso comercial sin autorizacion explicita del titular. Debe revisarse el texto completo de la licencia antes de cualquier despliegue.
 - Riesgo de alucinacion: no aplicable en el sentido de los modelos generativos de lenguaje, pero si existe el riesgo equivalente de falsos positivos y falsos negativos en las mascaras de segmentacion, especialmente en dominios de imagen distintos de los de entrenamiento (domain shift).
 - Sesgos potenciales: no disponibles. En modelos de segmentacion celular es habitual un sesgo hacia tipos celulares, tejidos, modalidades de microscopia y protocolos de tincion sobrerrepresentados en el conjunto de entrenamiento.
@@ -87,6 +87,6 @@ Nota: para `cellsam3` la licencia no comercial es una desventaja objetiva frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanvalenlab/cellsam3
-- Organizacion del autor en HuggingFace: https://huggingface.co/vanvalenlab
+- Modelo en Hugging Face: https://huggingface.co/vanvalenlab/cellsam3
+- Organizacion del autor en Hugging Face: https://huggingface.co/vanvalenlab
 - Busqueda web: no se han encontrado resultados relevantes. Los enlaces devueltos por el buscador correspondian a articulos de radiologia sobre vasculitis (radiopaedia.org, radiologykey.com, pubs.rsna.org, academic.oup.com) y no guardan ninguna relacion con el modelo.

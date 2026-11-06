@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | eval_loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| japanese-gpt2-medium-formal-lora | 338,16M (base + LoRA) | No disponible | 1.112 | MIT | HuggingFace |
-| japanese-gpt2-medium-formal-fullft | 338M (full-FT) | No disponible | 1.021 | MIT | HuggingFace |
-| rinna/japanese-gpt2-medium | 336M | No disponible | No disponible | MIT | HuggingFace |
+| japanese-gpt2-medium-formal-lora | 338,16M (base + LoRA) | No disponible | 1.112 | MIT | Hugging Face |
+| japanese-gpt2-medium-formal-fullft | 338M (full-FT) | No disponible | 1.021 | MIT | Hugging Face |
+| rinna/japanese-gpt2-medium | 336M | No disponible | No disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora
+- Hugging Face: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora
 - Modelo full-FT: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft
 - Artículo de comparación (Zenn): https://zenn.dev/sapolas/articles/0175b65f1e5b8c
 - Paper de MAGPIE: https://arxiv.org/abs/2406.08464

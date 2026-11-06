@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mradermacher/uraion-forge-2b-i1-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher, conocido en HuggingFace por producir versiones cuantizadas de modelos de terceros para su uso con llama.cpp y runtimes compatibles. El modelo de origen es UraionLabs/uraion-forge-2b, del que no se ha publicado informacion tecnica verificable en los datos disponibles. El repositorio no incluye model card propia: el README se limita a metadatos internos del pipeline de cuantizacion y a una linea que indica que se trata de cuantizaciones con imatrix (weighted/imatrix quants) del modelo base.
+mradermacher/uraion-forge-2b-i1-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher, conocido en Hugging Face por producir versiones cuantizadas de modelos de terceros para su uso con llama.cpp y runtimes compatibles. El modelo de origen es UraionLabs/uraion-forge-2b, del que no se ha publicado informacion tecnica verificable en los datos disponibles. El repositorio no incluye model card propia: el README se limita a metadatos internos del pipeline de cuantizacion y a una linea que indica que se trata de cuantizaciones con imatrix (weighted/imatrix quants) del modelo base.
 
 El interes practico de este repositorio es exclusivamente de despliegue: convierte un modelo de aproximadamente 2.000 millones de parametros (segun la nomenclatura del nombre, no confirmado por metadatos) en 24 variantes de cuantizacion que abarcan desde IQ1_S hasta Q6_K, lo que permitiria ejecutarlo en hardware de consumo si el modelo base fuese funcional y estuviese correctamente licenciado. No se trata, por tanto, de un modelo nuevo ni de un entrenamiento: es una conversion de pesos (convert_type: hf) seguida de cuantizacion con version de quantize_version 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1).
 
@@ -33,7 +33,7 @@ La relevancia actual del repositorio es limitada y debe senalarse con claridad: 
 
 No se dispone de informacion sobre la arquitectura del modelo base. No hay datos publicados en este repositorio sobre tipo de red (transformer denso, MoE, SSM o hibrida), numero de capas, dimension del modelo, mecanismo de atencion, tokenizador ni tamano de vocabulario. Tampoco se documenta el proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del dataset, fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento.
 
-Lo unico verificable es el proceso de posprocesado aplicado por mradermacher. Segun los metadatos internos de la model card, el flujo ha sido: conversion desde el formato de HuggingFace (convert_type: hf), cuantizacion con imatrix o pesos ponderados (weighted/imatrix quants) y version de cuantizacion 2, con cuantizacion del tensor de salida habilitada. El campo de etiquetas internas incluye la referencia "nicoboss". La coleccion de 24 cuantizaciones cubre el espectro completo de la escala heredada (legacy) de llama.cpp, desde IQ1_S (aproximadamente 1 bit por peso) hasta Q6_K, lo que sugiere que el objetivo del autor era maximizar las opciones de despliegue en hardware muy limitado, a costa de una perdida de calidad considerable en los extremos inferiores de la escala.
+Lo unico verificable es el proceso de posprocesado aplicado por mradermacher. Segun los metadatos internos de la model card, el flujo ha sido: conversion desde el formato de Hugging Face (convert_type: hf), cuantizacion con imatrix o pesos ponderados (weighted/imatrix quants) y version de cuantizacion 2, con cuantizacion del tensor de salida habilitada. El campo de etiquetas internas incluye la referencia "nicoboss". La coleccion de 24 cuantizaciones cubre el espectro completo de la escala heredada (legacy) de llama.cpp, desde IQ1_S (aproximadamente 1 bit por peso) hasta Q6_K, lo que sugiere que el objetivo del autor era maximizar las opciones de despliegue en hardware muy limitado, a costa de una perdida de calidad considerable en los extremos inferiores de la escala.
 
 ## Capacidades
 
@@ -119,7 +119,7 @@ Diferencias relevantes: las tres alternativas declaran licencia explicita, conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/uraion-forge-2b-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/uraion-forge-2b-i1-GGUF
 - Modelo base: https://huggingface.co/UraionLabs/uraion-forge-2b
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp

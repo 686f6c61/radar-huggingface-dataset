@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fa-h02c-139209-centre-public20-83af96592fc7-94fa84bdee4c` es un repositorio alojado en HuggingFace por el usuario `davidwdw` que su propia model card describe como un "archivo de flota versionado" (versioned fleet archive). No se trata de un modelo con pesos entrenados ni de un artefacto de inferencia: es un paquete de artefactos de evaluacion cuyo nivel declarado es "results+videos+policy-traces+logs+config", es decir, resultados, videos, trazas de politica, registros y ficheros de configuracion.
+`fa-h02c-139209-centre-public20-83af96592fc7-94fa84bdee4c` es un repositorio alojado en Hugging Face por el usuario `davidwdw` que su propia model card describe como un "archivo de flota versionado" (versioned fleet archive). No se trata de un modelo con pesos entrenados ni de un artefacto de inferencia: es un paquete de artefactos de evaluacion cuyo nivel declarado es "results+videos+policy-traces+logs+config", es decir, resultados, videos, trazas de politica, registros y ficheros de configuracion.
 
 El paquete se asocia a la receta canonica `evaluations/2026-09-24_b1k_task00_h02c139209_h03c100197_full20_centre` y ocupa 0,1 GB. Su valor no reside en la generacion de texto sino en la reproducibilidad de una evaluacion: la tarjeta exige usar la revision exacta registrada y verificar el fichero SHA256SUMS, y advierte explicitamente de que se trata de una instantanea y no de un espejo en vivo. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni licencia.
 
@@ -88,7 +88,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-h02c-139209-centre-public20-83af96592fc7-94fa84bdee4c
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-h02c-139209-centre-public20-83af96592fc7-94fa84bdee4c
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Receta canonica declarada (ruta interna, no enlace): `evaluations/2026-09-24_b1k_task00_h02c139209_h03c100197_full20_centre`
 - Fichero de verificacion declarado (interno): SHA256SUMS

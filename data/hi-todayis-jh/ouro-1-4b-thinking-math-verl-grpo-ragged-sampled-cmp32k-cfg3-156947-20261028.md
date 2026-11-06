@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ouro-1.4B-Thinking-Math (verl-grpo-ragged-sampled-cmp32k-cfg3-156947-20261028) es un ajuste fino mediante aprendizaje por refuerzo del modelo base ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje de tipo "looped" (con capas recurrentes en profundidad) de 1.400 millones de parámetros. El autor del checkpoint es el usuario de HuggingFace hi-todayis-jh, que ha aplicado la receta GRPO (Group Relative Policy Optimization) implementada en la librería verl 0.6.1 sobre el conjunto de datos de compresión `compression_dataset_3200.jsonl`, derivado a su vez de DigitalLearningGmbH/MATH-lighteval.
+Ouro-1.4B-Thinking-Math (verl-grpo-ragged-sampled-cmp32k-cfg3-156947-20261028) es un ajuste fino mediante aprendizaje por refuerzo del modelo base ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje de tipo "looped" (con capas recurrentes en profundidad) de 1.400 millones de parámetros. El autor del checkpoint es el usuario de Hugging Face hi-todayis-jh, que ha aplicado la receta GRPO (Group Relative Policy Optimization) implementada en la librería verl 0.6.1 sobre el conjunto de datos de compresión `compression_dataset_3200.jsonl`, derivado a su vez de DigitalLearningGmbH/MATH-lighteval.
 
-El objetivo del entrenamiento es reforzar las capacidades de razonamiento matemático del modelo base mediante RL, usando un modo de muestreo "ragged" y una política de salida adaptativa que permite al modelo decidir dinámicamente cuándo detener el razonamiento (exit policy). El checkpoint resultante es un artefacto de investigación: incluye los pesos fusionados en formato HuggingFace, el código de modelado parcheado, los shards FSDP del optimizador y los registros completos de entrenamiento, lo que lo convierte en un recurso reproducible para estudiar RL sobre modelos pequeños con razonamiento extendido.
+El objetivo del entrenamiento es reforzar las capacidades de razonamiento matemático del modelo base mediante RL, usando un modo de muestreo "ragged" y una política de salida adaptativa que permite al modelo decidir dinámicamente cuándo detener el razonamiento (exit policy). El checkpoint resultante es un artefacto de investigación: incluye los pesos fusionados en formato Hugging Face, el código de modelado parcheado, los shards FSDP del optimizador y los registros completos de entrenamiento, lo que lo convierte en un recurso reproducible para estudiar RL sobre modelos pequeños con razonamiento extendido.
 
 Es relevante ahora porque documenta de forma exhaustiva un pipeline moderno de RL para matemáticas sobre un modelo de 1.4B con arquitectura no convencional (looped), y porque publica los rollouts y las métricas de W&B junto con los pesos, algo poco habitual en checkpoints de investigación de este tamaño.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ouro-1.4B-Thinking-Math (este checkpoint) | 1.4B | no disponible (dataset a 32k) | Apache-2.0 | HuggingFace, con estado completo de entrenamiento | Ajuste GRPO sobre MATH-lighteval, arquitectura looped con exit policy |
-| ByteDance/Ouro-1.4B-Thinking (base) | 1.4B | no disponible | Apache-2.0 (según base) | HuggingFace | Modelo base sin el ajuste GRPO de este run |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache-2.0 | HuggingFace, amplia adopción | Modelo denso convencional, sin bucle en profundidad |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32k | MIT (según variante) | HuggingFace | Destilado de razonamiento, referencia habitual en 1.5B para matemáticas |
+| Ouro-1.4B-Thinking-Math (este checkpoint) | 1.4B | no disponible (dataset a 32k) | Apache-2.0 | Hugging Face, con estado completo de entrenamiento | Ajuste GRPO sobre MATH-lighteval, arquitectura looped con exit policy |
+| ByteDance/Ouro-1.4B-Thinking (base) | 1.4B | no disponible | Apache-2.0 (según base) | Hugging Face | Modelo base sin el ajuste GRPO de este run |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32k | Apache-2.0 | Hugging Face, amplia adopción | Modelo denso convencional, sin bucle en profundidad |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32k | MIT (según variante) | Hugging Face | Destilado de razonamiento, referencia habitual en 1.5B para matemáticas |
 
 La comparación directa de rendimiento no es posible porque este checkpoint no publica resultados de benchmarks. La principal diferencia frente a las alternativas es arquitectónica (looped con parada adaptativa) y de propósito (artefacto de investigación reproducible más que modelo listo para producción).
 
@@ -86,7 +86,7 @@ La comparación directa de rendimiento no es posible porque este checkpoint no p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-sampled-cmp32k-cfg3-156947-20261028
+- Hugging Face del modelo: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-sampled-cmp32k-cfg3-156947-20261028
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-sampled-cmp32k-cfg3-156947-20261028-rollouts
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

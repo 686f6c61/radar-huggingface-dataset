@@ -78,9 +78,9 @@ La model card solo ofrece comparacion directa con la base y con la variante SFT 
 
 | Modelo | Parametros | Contexto | Tasa de exito en ScienceWorld test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep (este modelo) | 2,03 B | No disponible en la ficha (base Qwen3-1.7B: 32.768 tokens nativos); entrenado a 512 tokens por turno | 17,50% ± 2,29 | Apache-2.0 | Publico en HuggingFace, 0 descargas |
-| qwen3-1.7b-sciworld-sft-gpt54mini-3ep | 2,03 B | Igual, 512 tokens por turno en entrenamiento | 12,88% ± 1,24 | Apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 2,03 B | 32.768 tokens nativos | 0,12% ± 0,22 | Apache-2.0 | Publico en HuggingFace |
+| qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep (este modelo) | 2,03 B | No disponible en la ficha (base Qwen3-1.7B: 32.768 tokens nativos); entrenado a 512 tokens por turno | 17,50% ± 2,29 | Apache-2.0 | Publico en Hugging Face, 0 descargas |
+| qwen3-1.7b-sciworld-sft-gpt54mini-3ep | 2,03 B | Igual, 512 tokens por turno en entrenamiento | 12,88% ± 1,24 | Apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 2,03 B | 32.768 tokens nativos | 0,12% ± 0,22 | Apache-2.0 | Publico en Hugging Face |
 
 Alternativas de otros autores para tareas de agente sobre entornos textuales: no disponible en la informacion proporcionada, ya que no hay resultados comparables medidos con el mismo protocolo AgentGym y las mismas 200 variaciones de test.
 
@@ -100,7 +100,7 @@ Alternativas de otros autores para tareas de agente sobre entornos textuales: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep
 - Variante SFT del mismo autor y mismo profesor: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog, repositorio o demo del entrenamiento ROSE: no disponible en la informacion proporcionada.

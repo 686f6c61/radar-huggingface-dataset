@@ -86,7 +86,7 @@ La comparación es aproximada: no hay datos de benchmarks del modelo evaluado, y
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Qwen3.5-9B-OmniCoder-Claude-Polaris-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Qwen3.5-9B-OmniCoder-Claude-Polaris-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.5-9B-OmniCoder-Claude-Polaris
 - Quants con imatrix: https://huggingface.co/mradermacher/Qwen3.5-9B-OmniCoder-Claude-Polaris-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Qwen3.5-9B-OmniCoder-Claude-Polaris-GGUF

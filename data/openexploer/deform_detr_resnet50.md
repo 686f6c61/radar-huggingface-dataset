@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deformable DETR (ResNet-50) es una implementación del detector de objetos Deformable DETR, publicada por el usuario OpenExploer en HuggingFace. Este modelo sustituye la atención global del DETR original por una atención deformable multi-escala: cada query muestrea un número reducido de puntos alrededor de puntos de referencia, lo que acelera la convergencia y reduce el coste computacional. La arquitectura combina un backbone ResNet-50 con un cuello ChannelMapperNeck y un transformador DeformableDetrTransformer de 6 capas de encoder y 6 de decoder, con 900 queries y 4 niveles de características.
+Deformable DETR (ResNet-50) es una implementación del detector de objetos Deformable DETR, publicada por el usuario OpenExploer en Hugging Face. Este modelo sustituye la atención global del DETR original por una atención deformable multi-escala: cada query muestrea un número reducido de puntos alrededor de puntos de referencia, lo que acelera la convergencia y reduce el coste computacional. La arquitectura combina un backbone ResNet-50 con un cuello ChannelMapperNeck y un transformador DeformableDetrTransformer de 6 capas de encoder y 6 de decoder, con 900 queries y 4 niveles de características.
 
 La relevancia de este modelo radica en su orientación al despliegue en plataformas de inferencia embebida de Horizon Robotics (march J6M, J6P, J6B). La model card incluye métricas de precisión (mAP) y rendimiento (latencia, FPS, uso de memoria) para dichas configuraciones, lo que lo hace útil para desarrolladores que trabajan con hardware Horizon en aplicaciones de visión por computador en el edge. No se especifican el número total de parámetros, la licencia concreta (solo "other") ni el formato de pesos, por lo que parte de la información técnica habitual no está disponible.
 
@@ -84,9 +84,9 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExploer/deform_detr_resnet50
+- Modelo en Hugging Face: https://huggingface.co/OpenExploer/deform_detr_resnet50
 - Repositorio oficial de Deformable DETR: https://github.com/fundamentalvision/Deformable-DETR
 - Paper original (arXiv): https://arxiv.org/abs/2010.04159
 - DETR-ResNet50 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/detr_resnet50
-- Modelo facebook/detr-resnet-50 en HuggingFace: https://huggingface.co/facebook/detr-resnet-50
-- Modelo qualcomm/DETR-ResNet50 en HuggingFace: https://huggingface.co/qualcomm/DETR-ResNet50
+- Modelo facebook/detr-resnet-50 en Hugging Face: https://huggingface.co/facebook/detr-resnet-50
+- Modelo qualcomm/DETR-ResNet50 en Hugging Face: https://huggingface.co/qualcomm/DETR-ResNet50

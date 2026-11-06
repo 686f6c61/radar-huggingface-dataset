@@ -89,5 +89,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: [sugam24/geonusaf-unetformer-r18-block-fold1](https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold1)
+- Repositorio Hugging Face: [sugam24/geonusaf-unetformer-r18-block-fold1](https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold1)
 - Referencia de la arquitectura: Wang et al. (2022), ISPRS J. Photogramm. Remote Sens. 190:196-214 (implementacion independiente, el repositorio original es GPL-3.0).

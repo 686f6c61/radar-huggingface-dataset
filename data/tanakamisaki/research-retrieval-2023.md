@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tanakamisaki/research-retrieval-2023` es un repositorio de HuggingFace publicado por el usuario tanakamisaki que contiene una implementación funcional de una arquitectura denominada **Coca** orientada a tareas de **retrieval** (recuperación de información multimodal), en una configuración de escala declarada como *giant*. El repositorio no es un modelo entrenado: su propio autor lo describe como un punto de partida experimental con código transparente y *smoke tests* reproducibles, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización, no como un modelo con pesos entrenados ni evaluados. La model card indica de forma deliberada que no se reclama ninguna puntuación de benchmark.
+`tanakamisaki/research-retrieval-2023` es un repositorio de Hugging Face publicado por el usuario tanakamisaki que contiene una implementación funcional de una arquitectura denominada **Coca** orientada a tareas de **retrieval** (recuperación de información multimodal), en una configuración de escala declarada como *giant*. El repositorio no es un modelo entrenado: su propio autor lo describe como un punto de partida experimental con código transparente y *smoke tests* reproducibles, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización, no como un modelo con pesos entrenados ni evaluados. La model card indica de forma deliberada que no se reclama ninguna puntuación de benchmark.
 
 El dato objetivo disponible sobre el tamaño es el recuento de parámetros del fichero safetensors: **33.088 parámetros** (aproximadamente 33 mil), una cifra que contrasta con la etiqueta "giant" de la configuración declarada y que conviene tratar con cautela. El tamaño del repositorio es de 0,0 GB y las descargas e interacciones registradas son cero, lo que refuerza su carácter de artefacto experimental sin adopción comunitaria.
 
@@ -68,7 +68,7 @@ La búsqueda web realizada no aportó modelos comparables ni datos de referencia
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanakamisaki/research-retrieval-2023 | 33.088 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| tanakamisaki/research-retrieval-2023 | 33.088 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ La búsqueda web realizada no aportó modelos comparables ni datos de referencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tanakamisaki/research-retrieval-2023
+- Repositorio en Hugging Face: https://huggingface.co/tanakamisaki/research-retrieval-2023
 - Perfil del autor (sección de datasets): https://huggingface.co/tanakamisaki/datasets
 - Referencia general sobre retrieval aumentado: https://arxiv.org/pdf/2312.10997
 - Publicaciones de OpenAI: https://openai.com/research/index/publication/

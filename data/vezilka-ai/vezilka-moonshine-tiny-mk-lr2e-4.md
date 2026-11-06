@@ -91,7 +91,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vezilka-ai/vezilka-moonshine-tiny-mk-lr2e-4
+- Modelo en Hugging Face: https://huggingface.co/vezilka-ai/vezilka-moonshine-tiny-mk-lr2e-4
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset de evaluación y entrenamiento: https://huggingface.co/datasets/vezilka-ai/macedonian-speech
 - Google FLEURS: https://huggingface.co/datasets/google/fleurs

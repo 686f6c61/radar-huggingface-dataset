@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Se trata de un adaptador LoRA de desaprendizaje automático (*machine unlearning*) construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct y publicado por el usuario de HuggingFace `rubenbalbastre`. El repositorio no contiene pesos completos, sino un adaptador PEFT en formato safetensors de aproximadamente 0,5 GB, entrenado con GRPO y LoRA según las etiquetas declaradas (`grpo`, `lora`, `trl`, `transformers`). La ruta del modelo base registrada en las etiquetas incluye el segmento `machine-unlearning-llm`, lo que apunta a un pipeline experimental de olvido selectivo de conocimiento.
+Se trata de un adaptador LoRA de desaprendizaje automático (*machine unlearning*) construido sobre el modelo base Qwen/Qwen2.5-3B-Instruct y publicado por el usuario de Hugging Face `rubenbalbastre`. El repositorio no contiene pesos completos, sino un adaptador PEFT en formato safetensors de aproximadamente 0,5 GB, entrenado con GRPO y LoRA según las etiquetas declaradas (`grpo`, `lora`, `trl`, `transformers`). La ruta del modelo base registrada en las etiquetas incluye el segmento `machine-unlearning-llm`, lo que apunta a un pipeline experimental de olvido selectivo de conocimiento.
 
-El sufijo del identificador (`karl-marx-r1`) sugiere que el concepto objetivo del desaprendizaje es el contenido asociado a Karl Marx, aunque la model card no documenta el objetivo, el conjunto de datos ni el protocolo de evaluación. Tampoco se especifican la licencia, los idiomas soportados, el rango del adaptador ni los hiperparámetros de entrenamiento: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El sufijo del identificador (`karl-marx-r1`) sugiere que el concepto objetivo del desaprendizaje es el contenido asociado a Karl Marx, aunque la model card no documenta el objetivo, el conjunto de datos ni el protocolo de evaluación. Tampoco se especifican la licencia, los idiomas soportados, el rango del adaptador ni los hiperparámetros de entrenamiento: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 Por su naturaleza, el artefacto es relevante para investigación en desaprendizaje de modelos y en alineación mediante RL, no como modelo de producción. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria ni reproducibilidad verificada de sus resultados.
 
@@ -88,8 +88,8 @@ No hay datos de rendimiento comparado para el adaptador analizado, ya que no se 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Repositorio del modelo en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Articulo referenciado en la model card (sin verificar): https://arxiv.org/abs/2608.17804
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL (GRPO): https://github.com/huggingface/trl

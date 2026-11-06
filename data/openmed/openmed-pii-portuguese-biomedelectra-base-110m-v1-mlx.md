@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Base-110M-v1-mlx
+- Repositorio MLX en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Base-110M-v1-mlx
 - Modelo base: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Base-110M-v1
 - GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `thelazydevwitheconomicproblems/dontaskme` es una publicacion alojada en HuggingFace bajo licencia Apache 2.0. En el momento de redactar esta ficha no contiene informacion tecnica util: la model card se limita a la cabecera YAML con la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
+El repositorio `thelazydevwitheconomicproblems/dontaskme` es una publicacion alojada en Hugging Face bajo licencia Apache 2.0. En el momento de redactar esta ficha no contiene informacion tecnica util: la model card se limita a la cabecera YAML con la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
 
 No es posible determinar que problema resuelve ni a que categoria de modelo pertenece (texto, vision, audio, embeddings u otro), porque el autor no ha publicado ninguna descripcion. Tampoco se conocen el numero de parametros, la longitud de contexto ni los formatos de pesos disponibles, datos que tampoco aparecen en los resultados de busqueda web consultados, que no guardan relacion con este identificador.
 
@@ -102,7 +102,7 @@ No es posible establecer una comparativa con modelos alternativos, ya que se des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thelazydevwitheconomicproblems/dontaskme
+- Hugging Face: https://huggingface.co/thelazydevwitheconomicproblems/dontaskme
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o informe tecnico: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Reussitess/reussitess-ai-lora` es un repositorio publicado en HuggingFace por el usuario Reussitess el 15 de agosto de 2026. La etiqueta del nombre sugiere que podría tratarse de un adaptador LoRA (Low-Rank Adaptation), pero no hay ninguna información que lo confirme. La model card es una plantilla automática generada por HuggingFace con todos los campos rellenados como "[More Information Needed]", lo que indica que el autor no ha proporcionado ninguna descripción, especificación técnica ni documentación adicional.
+El modelo `Reussitess/reussitess-ai-lora` es un repositorio publicado en Hugging Face por el usuario Reussitess el 15 de agosto de 2026. La etiqueta del nombre sugiere que podría tratarse de un adaptador LoRA (Low-Rank Adaptation), pero no hay ninguna información que lo confirme. La model card es una plantilla automática generada por Hugging Face con todos los campos rellenados como "[More Information Needed]", lo que indica que el autor no ha proporcionado ninguna descripción, especificación técnica ni documentación adicional.
 
-El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no han sido subidos correctamente. La única etiqueta relevante es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, y no aporta información sobre la arquitectura del modelo. La etiqueta `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace, pero sin pesos disponibles no es posible desplegarlo.
+El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no han sido subidos correctamente. La única etiqueta relevante es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, y no aporta información sobre la arquitectura del modelo. La etiqueta `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face, pero sin pesos disponibles no es posible desplegarlo.
 
 En resumen, se trata de un modelo sin información técnica publicada, sin pesos accesibles y sin documentación. Cualquier uso en producción o investigación es inviable en el estado actual del repositorio.
 
@@ -27,7 +27,7 @@ No se ha publicado ninguna informacion sobre la arquitectura del modelo. El nomb
 
 ## Capacidades
 
-No se ha documentado ninguna capacidad especifica del modelo. Dado que no hay pesos ni informacion tecnica, no es posible determinar si el modelo es capaz de generar texto, razonar, escribir codigo, soportar tool calling o cualquier otra funcionalidad. El unico dato disponible es la etiqueta `endpoints_compatible`, que indica compatibilidad con la infraestructura de inferencia de HuggingFace, pero sin un modelo subido no se puede verificar.
+No se ha documentado ninguna capacidad especifica del modelo. Dado que no hay pesos ni informacion tecnica, no es posible determinar si el modelo es capaz de generar texto, razonar, escribir codigo, soportar tool calling o cualquier otra funcionalidad. El unico dato disponible es la etiqueta `endpoints_compatible`, que indica compatibilidad con la infraestructura de inferencia de Hugging Face, pero sin un modelo subido no se puede verificar.
 
 ## Casos de uso
 
@@ -55,5 +55,5 @@ No se puede establecer una comparativa con modelos similares porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Reussitess/reussitess-ai-lora
+- Repositorio en Hugging Face: https://huggingface.co/Reussitess/reussitess-ai-lora
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

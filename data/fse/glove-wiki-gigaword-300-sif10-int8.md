@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de comparaciones con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-300-sif10-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-300-sif10-int8
 - Modelo base: https://huggingface.co/fse/glove-wiki-gigaword-300
 - Repositorio de fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Dataset de preparacion: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations

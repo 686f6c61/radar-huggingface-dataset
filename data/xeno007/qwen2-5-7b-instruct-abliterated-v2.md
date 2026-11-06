@@ -98,7 +98,7 @@ La abliteration no degrada de forma significativa el rendimiento general: mejora
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xeno007/Qwen2.5-7B-Instruct-abliterated-v2
+- Repositorio Hugging Face: https://huggingface.co/xeno007/Qwen2.5-7B-Instruct-abliterated-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Version de referencia de huihui-ai: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2
 - Version anterior abliterated: https://huggingface.co/huihui-ai/Qwen2.5-7B-Instruct-abliterated

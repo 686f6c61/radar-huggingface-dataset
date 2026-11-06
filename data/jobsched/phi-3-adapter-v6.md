@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JobSched/phi-3-adapter-v6 es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario JobSched sobre el modelo base microsoft/Phi-3-mini-128k-instruct. Se distribuye con la etiqueta de libreria transformers y con el tag peft, lo que indica que el entrenamiento se realizo mediante tecnicas de adaptacion eficiente de parametros (PEFT, probablemente LoRA) y que fue ejecutado a traves de AutoTrain, la herramienta de entrenamiento automatizado de HuggingFace. El modelo esta orientado a generacion de texto conversacional (pipeline text-generation) y usa la plantilla de chat del modelo base.
+JobSched/phi-3-adapter-v6 es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario JobSched sobre el modelo base microsoft/Phi-3-mini-128k-instruct. Se distribuye con la etiqueta de libreria transformers y con el tag peft, lo que indica que el entrenamiento se realizo mediante tecnicas de adaptacion eficiente de parametros (PEFT, probablemente LoRA) y que fue ejecutado a traves de AutoTrain, la herramienta de entrenamiento automatizado de Hugging Face. El modelo esta orientado a generacion de texto conversacional (pipeline text-generation) y usa la plantilla de chat del modelo base.
 
 El modelo base Phi-3-mini es un transformer decoder-only denso de 3.800 millones de parametros con una ventana de contexto nominal de 128.000 tokens, disenado por Microsoft Research para tareas de razonamiento, codigo y comprension del lenguaje en ingles. El repositorio ocupa 7,6 GB y el recuento de parametros declarado en los archivos safetensors es de 3.820.753.920, cifra que coincide practicamente con el tamano completo del modelo base; esto sugiere que el repositorio contiene pesos fusionados o una copia completa del modelo en lugar de unicamente el adaptador, aunque las etiquetas indiquen PEFT. Esta discrepancia es relevante para quien vaya a desplegarlo.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| JobSched/phi-3-adapter-v6 | 3,82B | 128.000 tokens (heredado) | other | HuggingFace, 0 descargas | no disponible |
-| microsoft/Phi-3-mini-128k-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace, ampliamente usado | publicado por Microsoft (no incluido aqui) |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace | publicado por Microsoft (no incluido aqui) |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | publicado por Meta (no incluido aqui) |
-| Qwen/Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | HuggingFace | publicado por Alibaba (no incluido aqui) |
+| JobSched/phi-3-adapter-v6 | 3,82B | 128.000 tokens (heredado) | other | Hugging Face, 0 descargas | no disponible |
+| microsoft/Phi-3-mini-128k-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face, ampliamente usado | publicado por Microsoft (no incluido aqui) |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face | publicado por Microsoft (no incluido aqui) |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | publicado por Meta (no incluido aqui) |
+| Qwen/Qwen2.5-3B-Instruct | 3,1B | 32.768 tokens | Apache 2.0 | Hugging Face | publicado por Alibaba (no incluido aqui) |
 
 Las cifras de los modelos alternativos corresponden a sus especificaciones publicas conocidas; no se dispone de comparaciones de rendimiento directas con el modelo objeto de esta ficha. La diferencia principal frente a las alternativas es que este repositorio es un ajuste derivado sin evaluacion independiente ni garantias de mantenimiento, mientras que los modelos citados cuentan con model cards detalladas, benchmarks publicados y comunidades activas.
 
@@ -92,7 +92,7 @@ Las cifras de los modelos alternativos corresponden a sus especificaciones publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JobSched/phi-3-adapter-v6
+- Modelo en Hugging Face: https://huggingface.co/JobSched/phi-3-adapter-v6
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Documentacion de AutoTrain: https://hf.co/docs/autotrain
 - Documentacion de PEFT: https://huggingface.co/docs/peft

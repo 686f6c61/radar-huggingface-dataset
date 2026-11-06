@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ardutox es un modelo publicado en HuggingFace por el usuario veejnqt4gu. Sin embargo, no se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades. La ficha del repositorio no incluye metadatos técnicos, licencia, idiomas ni ejemplos de uso. A fecha de creación (2026-09-05), el modelo no tiene descargas, por lo que se trata de un modelo aparentemente sin documentación ni adopción. Por tanto, cualquier evaluación técnica resulta imposible con los datos disponibles.
+Ardutox es un modelo publicado en Hugging Face por el usuario veejnqt4gu. Sin embargo, no se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades. La ficha del repositorio no incluye metadatos técnicos, licencia, idiomas ni ejemplos de uso. A fecha de creación (2026-09-05), el modelo no tiene descargas, por lo que se trata de un modelo aparentemente sin documentación ni adopción. Por tanto, cualquier evaluación técnica resulta imposible con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No se puede comparar con otros modelos sin datos técnicos, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/veejnqt4gu/Ardutox
+- Hugging Face: https://huggingface.co/veejnqt4gu/Ardutox

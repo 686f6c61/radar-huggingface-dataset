@@ -54,6 +54,6 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 - Sin mantenimiento ni soporte: el repositorio no muestra actividad posterior a su creación, por lo que no hay garantía de actualización o corrección de errores.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/rajmasi/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/rajmasi/tds-carbon-card
 - Herramienta CodeCarbon (mencionada en la model card): no se proporciona enlace directo, pero es accesible en https://codecarbon.io (referencia externa no verificada en la búsqueda).
 - Los resultados de búsqueda web no aportan enlaces relevantes específicos para este repositorio; los enlaces encontrados (Hugging Bay, CHAI Applied Model Card, Google DeepMind Model Cards) son recursos generales sobre model cards y no sobre este modelo concreto.

@@ -4,7 +4,7 @@
 
 Axiom-Omega Submarine LatentMoE es un ajuste fino publicado por el usuario bbkdevops sobre el modelo base Qwen/Qwen2.5-0.5B. El propio autor lo presenta como un modelo "agentic de decisión y razonamiento de grado empresarial", construido con una arquitectura que denomina Submarine Fiber-Optic LatentMoE y con destilación multitier a partir de modelos frontera (GPT-5.5, Gemini 3.1 Pro, Grok-4 y Claude Mythos 5). El repositorio contiene 494.032.768 parámetros reales en formato safetensors, una cifra que coincide prácticamente con la del modelo base, y ocupa 1,0 GB.
 
-El interés de la ficha es fundamentalmente técnico y crítico: se trata de un adaptador (el ejemplo de la model card usa PeftModel) sobre un transformer decoder-only de 0,5 B de parámetros, una familia que hoy se emplea sobre todo para tareas de baja latencia, enrutado, clasificación y prototipado en entornos con recursos muy limitados. No hay resultados de benchmarks publicados, ni descargas, ni interacciones en HuggingFace en el momento de la consulta, por lo que todas las afirmaciones de capacidades proceden exclusivamente de la model card y no cuentan con verificación independiente.
+El interés de la ficha es fundamentalmente técnico y crítico: se trata de un adaptador (el ejemplo de la model card usa PeftModel) sobre un transformer decoder-only de 0,5 B de parámetros, una familia que hoy se emplea sobre todo para tareas de baja latencia, enrutado, clasificación y prototipado en entornos con recursos muy limitados. No hay resultados de benchmarks publicados, ni descargas, ni interacciones en Hugging Face en el momento de la consulta, por lo que todas las afirmaciones de capacidades proceden exclusivamente de la model card y no cuentan con verificación independiente.
 
 Por su tamaño y su licencia Apache-2.0, el modelo es desplegable en CPU y en cualquier GPU de consumo, pero su utilidad real en tareas de razonamiento complejo o de ingeniería de software multilingüe está por demostrar. Antes de usarlo en producción conviene validar empíricamente sus salidas y comprobar que la supuesta topología MoE de 896 expertos es coherente con el recuento de parámetros del repositorio, algo que a día de hoy no encaja.
 
@@ -17,7 +17,7 @@ Por su tamaño y su licencia Apache-2.0, el modelo es desplegable en CPU y en cu
 | Parametros activos | No disponible de forma verificable. La model card afirma activar 16 de 896 expertos por forward pass (1,79 % del total) |
 | Longitud de contexto | No disponible en la model card; el modelo base Qwen2.5-0.5B soporta 32.768 tokens de forma nativa, pero no se confirma que el ajuste lo preserve |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica safetensors; no hay GGUF, GPTQ ni AWQ publicados |
-| Idiomas soportados | No disponibles en los metadatos de HuggingFace. La model card menciona alineación multilingüe sobre patrones de SWE-bench en 9 lenguajes de programación, sin enumerarlos |
+| Idiomas soportados | No disponibles en los metadatos de Hugging Face. La model card menciona alineación multilingüe sobre patrones de SWE-bench en 9 lenguajes de programación, sin enumerarlos |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA segun el ejemplo de inferencia de la model card) |
 | Modelo base | Qwen/Qwen2.5-0.5B |
@@ -43,7 +43,7 @@ No se especifica el número de tokens de entrenamiento, la composición del data
 - Orientación a flujos agénticos y de toma de decisiones multi-paso, según las etiquetas del repositorio (agentic, latency-moe, system-one).
 - Ausencia de capacidades multimodales declaradas: no se mencionan visión, audio ni entrada de imágenes.
 - No se documenta soporte explícito de tool calling, function calling ni de un formato estructurado de llamadas a herramientas.
-- Capacidad multilingüe en lenguaje natural: no documentada ni verificada; los metadatos de idiomas de HuggingFace están vacíos.
+- Capacidad multilingüe en lenguaje natural: no documentada ni verificada; los metadatos de idiomas de Hugging Face están vacíos.
 - "Procedencia criptográfica": la model card afirma adjuntar digests deterministas de prueba a las trayectorias de ejecución, sin especificar formato ni API.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ Los datos de las alternativas proceden de la documentación pública de sus resp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Axiom-Omega Submarine LatentMoE | 494 M (adaptador sobre Qwen2.5-0.5B) | No disponible | Apache-2.0 | HuggingFace, 0 descargas, sin GGUF | Sin benchmarks publicados |
+| Axiom-Omega Submarine LatentMoE | 494 M (adaptador sobre Qwen2.5-0.5B) | No disponible | Apache-2.0 | Hugging Face, 0 descargas, sin GGUF | Sin benchmarks publicados |
 | Qwen2.5-0.5B (base) | 494 M | 32.768 tokens | Apache-2.0 | Ampliamente distribuido, versiones GGUF oficiales | Benchmarks publicados por el autor del modelo base |
 | Qwen2.5-1.5B | 1.540 M aprox. | 32.768 tokens | Apache-2.0 | Ampliamente distribuido, GGUF oficiales | Benchmarks publicados por el autor del modelo base |
 | SmolLM2-1.7B | 1.710 M aprox. | 8.192 tokens | Apache-2.0 | Ampliamente distribuido, GGUF en llama.cpp | Benchmarks publicados por el autor del modelo base |
@@ -86,7 +86,7 @@ En la misma categoría de tamaño estricto, el competidor directo es el propio Q
 
 ## Limitaciones y advertencias
 
-- Cero descargas y cero interacciones en HuggingFace en el momento de la consulta: no hay evidencia de uso, validación por terceros ni informes de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face en el momento de la consulta: no hay evidencia de uso, validación por terceros ni informes de la comunidad.
 - Ausencia total de benchmarks: las afirmaciones de rendimiento en razonamiento, SWE-bench o SciCode no están respaldadas por ninguna métrica publicada.
 - Inconsistencia entre la arquitectura declarada (896 expertos, 16 activos) y el recuento real de parámetros, que coincide con el del modelo base Qwen2.5-0.5B. Es razonable sospechar que parte de la nomenclatura de la model card es marketing y no una descripción fiel de los pesos.
 - Referencias a modelos frontera (GPT-5.5, Gemini 3.1 Pro, Grok-4, Claude Mythos 5) que no se corresponden con identificadores verificables; la afirmación de destilación debe considerarse no comprobada.
@@ -100,7 +100,7 @@ En la misma categoría de tamaño estricto, el competidor directo es el propio Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbkdevops/axiom-omega-submarine-latentmoe
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/axiom-omega-submarine-latentmoe
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Librería PEFT (necesaria segun el ejemplo de la model card): https://github.com/huggingface/peft
 - Papers, blogs, repositorios o demos adicionales: no disponible

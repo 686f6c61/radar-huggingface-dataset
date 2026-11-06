@@ -76,7 +76,7 @@ Ocho de ocho prompts de validación respondieron correctamente, y dos peticiones
 | Modelo | Formato | Contexto | Runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | r4yharris/Qwen3.8-Flash-Next-FLARE | Paquete Flare (nvfp4/mxfp8) | 262.144 tokens | Flare (ABI 4, solo GB10) | nvidia-open-model-agreement | Publicado, 0 descargas |
-| nvidia/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | no disponible | Disponible en HuggingFace |
+| nvidia/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | no disponible | Disponible en Hugging Face |
 | Revisión `gb10` de Local Inference Lab | Paquete Flare, 99,5 GiB | no disponible | Flare (DGX Spark) | no disponible | Orientada a DGX Spark; no cabe en 96 GiB |
 
 No se conocen alternativas comparables adicionales con datos suficientes para una comparación de rendimiento; no disponible.
@@ -94,7 +94,7 @@ No se conocen alternativas comparables adicionales con datos suficientes para un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r4yharris/Qwen3.8-Flash-Next-FLARE
+- Repositorio en Hugging Face: https://huggingface.co/r4yharris/Qwen3.8-Flash-Next-FLARE
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next
 - Runtime Flare referenciado: https://huggingface.co/NVIDIA/flare-local-inference
 - No se han encontrado enlaces adicionales (papers, blogs o demos) en la información disponible.

@@ -106,7 +106,7 @@ La comparación con otras familias de ASR (por ejemplo, modelos de NVIDIA NeMo, 
 
 ## Enlaces
 
-- [HuggingFace: lipik/whisper-small-gguf](https://huggingface.co/lipik/whisper-small-gguf)
+- [Hugging Face: lipik/whisper-small-gguf](https://huggingface.co/lipik/whisper-small-gguf)
 - [Modelo base: openai/whisper-small](https://huggingface.co/openai/whisper-small)
 - [Commit del modelo base utilizado (973afd2)](https://huggingface.co/openai/whisper-small/commit/973afd2)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)

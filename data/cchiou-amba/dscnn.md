@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DSCNN (este repo) | no disponible | 1 s de audio, 49x10 features | KWS 12 clases | Apache-2.0 | Binario Ambarella N1-655 |
-| EclipseAidge/ds_cnn | no disponible | 1 s de audio | KWS 12 clases | Apache-2.0 | Pesos originales en HuggingFace |
+| EclipseAidge/ds_cnn | no disponible | 1 s de audio | KWS 12 clases | Apache-2.0 | Pesos originales en Hugging Face |
 | Arm ML-KWS-for-MCU (referencia) | no disponible | 1 s de audio | KWS 12 clases | Apache-2.0 | Repositorio GitHub |
 | Google Speech Commands baseline (paper Hello Edge) | no disponible | 1 s de audio | KWS 12 clases | CC-BY-4.0 (dataset) | Paper y codigo de referencia |
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cchiou-amba/DSCNN
+- Repositorio Hugging Face: https://huggingface.co/cchiou-amba/DSCNN
 - Binario compilado: https://huggingface.co/cchiou-amba/DSCNN/blob/main/n1-655_kws_dscnn_amba_optimized.bin
 - Paper original: https://arxiv.org/abs/1711.07128
 - Implementacion de referencia Arm: https://github.com/ARM-software/ML-KWS-for-MCU

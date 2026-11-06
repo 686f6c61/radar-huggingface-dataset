@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-SPEED-archive-20261101 es un repositorio de archivo publicado en HuggingFace por el usuario jeongseokoh. No es un modelo entrenado para inferencia, sino una coleccion de checkpoints historicos y estados de optimizador/resume procedentes de experimentos SPEED ya inactivos. El autor lo describe explicitamente como un archivo que "no establece la calidad del modelo ni un entrenamiento completado", por lo que debe tratarse como material de preservacion, no como un modelo listo para produccion.
+Mistral-SPEED-archive-20261101 es un repositorio de archivo publicado en Hugging Face por el usuario jeongseokoh. No es un modelo entrenado para inferencia, sino una coleccion de checkpoints historicos y estados de optimizador/resume procedentes de experimentos SPEED ya inactivos. El autor lo describe explicitamente como un archivo que "no establece la calidad del modelo ni un entrenamiento completado", por lo que debe tratarse como material de preservacion, no como un modelo listo para produccion.
 
 El repositorio esta construido sobre `mistralai/Mistral-7B-Instruct-v0.3` como modelo base declarado, con licencia Apache 2.0. El tamano del repo es de 15,7 GB, coherente con la presencia de pesos completos en formato de precision completa o media, junto con estados de optimizador. Los checkpoints parciales y de "smoke training" estan etiquetados segun sus rutas originales en el catalogo de restauracion del propietario.
 
@@ -43,7 +43,7 @@ No se especifican datos de entrenamiento: ni numero de tokens, ni composicion de
 - Preservacion a largo plazo: mantener una copia inmutable de pesos y estados de resume en el Hub para evitar la perdida de artefactos de experimentos que ya no se ejecutan.
 - Analisis forense de entrenamiento: inspeccionar los manifiestos `manifests/<id>.json` para reconstruir la longitud y el hash de cada fichero y detectar corrupciones o truncamientos.
 - Punto de partida para fine-tuning controlado: usar un checkpoint archivado como inicializacion, asumiendo que se valida su calidad antes, ya que el autor advierte que el archivo no establece calidad ni entrenamiento completado.
-- Docencia sobre ciclos de vida de modelos: ilustrar como se estructura un archivo de checkpoints con manifiestos de integridad y commits inmutables en HuggingFace.
+- Docencia sobre ciclos de vida de modelos: ilustrar como se estructura un archivo de checkpoints con manifiestos de integridad y commits inmutables en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mistral-SPEED-archive-20261101 | no disponible (base 7B) | no disponible | Apache 2.0 | HuggingFace (archivo) | Repo de checkpoints, no modelo de inferencia |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo base declarado; orientado a inferencia |
-| Mistral-7B-Instruct-v0.2 | 7B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Version anterior de la familia; no comparable en rendimiento sin datos |
+| Mistral-SPEED-archive-20261101 | no disponible (base 7B) | no disponible | Apache 2.0 | Hugging Face (archivo) | Repo de checkpoints, no modelo de inferencia |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base declarado; orientado a inferencia |
+| Mistral-7B-Instruct-v0.2 | 7B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Version anterior de la familia; no comparable en rendimiento sin datos |
 
 La comparativa es estructural: el repositorio archivado no es funcionalmente equivalente a un modelo de inferencia, por lo que la comparacion con alternativas se limita a parametros declarados y licencia, no a rendimiento.
 
@@ -79,6 +79,6 @@ La comparativa es estructural: el repositorio archivado no es funcionalmente equ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jeongseokoh/Mistral-SPEED-archive-20261101
+- Hugging Face: https://huggingface.co/jeongseokoh/Mistral-SPEED-archive-20261101
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

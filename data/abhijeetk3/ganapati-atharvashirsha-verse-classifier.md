@@ -21,7 +21,7 @@ El repositorio contiene 94.572.688 parámetros en formato safetensors, ocupa 11.
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura wav2vec2-base de Facebook, un encoder transformer preentrenado de forma autosupervisada sobre audio en bruto. La capa de clasificación añadida sobre la representación de audio permite asignar etiquetas a segmentos de audio, en este caso versos del Ganapati Atharvashirsha. El fine-tuning se realizó con el Trainer de HuggingFace, con una tasa de aprendizaje de 3e-5, batch size de 4, 30 épocas, optimizador AdamW y scheduler lineal. El dataset de entrenamiento no está documentado en la model card.
+El modelo se basa en la arquitectura wav2vec2-base de Facebook, un encoder transformer preentrenado de forma autosupervisada sobre audio en bruto. La capa de clasificación añadida sobre la representación de audio permite asignar etiquetas a segmentos de audio, en este caso versos del Ganapati Atharvashirsha. El fine-tuning se realizó con el Trainer de Hugging Face, con una tasa de aprendizaje de 3e-5, batch size de 4, 30 épocas, optimizador AdamW y scheduler lineal. El dataset de entrenamiento no está documentado en la model card.
 
 El proceso de entrenamiento muestra una clara señal de fallo: la loss de entrenamiento desciende de 2.75 a 1.98, pero la loss de validación aumenta de 2.86 a 3.16, y la accuracy se mantiene en 0.0 durante las 30 épocas. Esto indica sobreajuste severo o un problema fundamental con los datos de entrenamiento, como etiquetas incorrectas, clases desbalanceadas o un dataset demasiado pequeño (90 pasos en total para 30 épocas, lo que sugiere un dataset de aproximadamente 90 muestras con batch size 4).
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: wav2vec2-base tiene 94M de parametros, por lo que en FP32 requiere aproximadamente 380 MB de VRAM. Con cuantizacion a FP16 o int8, el requisito baja a unos 190 MB o 95 MB respectivamente.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia (GTX 1050 Ti, RTX 3050, etc.). Para fine-tuning, se recomienda al menos 8 GB.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: transformers (Python), HuggingFace Inference Endpoints, o exportacion a ONNX para inferencia optimizada.
+- Opciones de despliegue: transformers (Python), Hugging Face Inference Endpoints, o exportacion a ONNX para inferencia optimizada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparacion con el modelo base no es directamente relevante porque wav2vec2-b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbhijeetK3/ganapati-atharvashirsha-verse-classifier
+- Modelo en Hugging Face: https://huggingface.co/AbhijeetK3/ganapati-atharvashirsha-verse-classifier
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base
 - Referencia sobre el Ganapati Atharvashirsha: https://hindushlokas.org/ganesh-atharvashirsha/
 - Texto del Ganapati Atharvashirsha: https://www.greenmesg.org/stotras/ganesha/ganapati_atharvashirsha.php

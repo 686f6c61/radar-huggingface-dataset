@@ -70,7 +70,7 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Zidane29/gemma-4-E2B-it-litert-lm](https://huggingface.co/Zidane29/gemma-4-E2B-it-litert-lm)
+- Modelo en Hugging Face: [Zidane29/gemma-4-E2B-it-litert-lm](https://huggingface.co/Zidane29/gemma-4-E2B-it-litert-lm)
 - Modelo base: [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - Repositorio de la comunidad: [litert-community/gemma-4-E2B-it-litert-lm](https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm)
 - Documentación de LiteRT-LM: [https://ai.google.dev/edge/litert-lm/overview](https://ai.google.dev/edge/litert-lm/overview)

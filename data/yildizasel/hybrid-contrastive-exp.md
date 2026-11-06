@@ -2,11 +2,11 @@
 
 ## Resumen
 
-yildizasel/hybrid-contrastive-exp es un repositorio experimental publicado en HuggingFace por la usuaria Asel Yildiz (yildizasel). No se presenta como un modelo entrenado, sino como una base de codigo y un checkpoint de inicializacion para experimentar con una arquitectura hibrida orientada a aprendizaje contrastivo. El propio autor indica de forma explicita en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que no debe presentarse como un checkpoint entrenado ni evaluado.
+yildizasel/hybrid-contrastive-exp es un repositorio experimental publicado en Hugging Face por la usuaria Asel Yildiz (yildizasel). No se presenta como un modelo entrenado, sino como una base de codigo y un checkpoint de inicializacion para experimentar con una arquitectura hibrida orientada a aprendizaje contrastivo. El propio autor indica de forma explicita en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que no debe presentarse como un checkpoint entrenado ni evaluado.
 
 El artefacto ocupa un tamano de repositorio de 0,0 GB y contiene 49.600 parametros totales segun los metadatos de safetensors, es decir, unos 49,6 k parametros. Se trata por tanto de una escala "small" declarada por el autor, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La relevancia actual es limitada y estrictamente investigadora: sirve como plantilla reproducible para probar variantes de atencion y de fusion multimodal, no como modelo desplegable en produccion.
 
-La arquitectura declarada combina atencion de ventana deslizante, fusion bilineal, activacion gelu-tanh y normalizacion RMSNorm, con receta de entrenamiento por defecto basada en el optimizador Adafactor y un schedule de tipo "step". No hay puntuaciones de benchmark, no hay idiomas declarados y no hay pipeline de HuggingFace asignado. El repositorio incluye `run.py`, `config.json`, `training_args.json` y `model.safetensors`.
+La arquitectura declarada combina atencion de ventana deslizante, fusion bilineal, activacion gelu-tanh y normalizacion RMSNorm, con receta de entrenamiento por defecto basada en el optimizador Adafactor y un schedule de tipo "step". No hay puntuaciones de benchmark, no hay idiomas declarados y no hay pipeline de Hugging Face asignado. El repositorio incluye `run.py`, `config.json`, `training_args.json` y `model.safetensors`.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No existen en la informacion proporcionada modelos comparables con datos verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yildizasel/hybrid-contrastive-exp
+- Modelo en Hugging Face: https://huggingface.co/yildizasel/hybrid-contrastive-exp
 - Perfil del autor (modelos): https://huggingface.co/yildizasel/models
 - Perfil del autor (datasets): https://huggingface.co/yildizasel/datasets
 - Referencia contextual sobre aprendizaje contrastivo hibrido (no vinculada al autor): https://arxiv.org/html/2310.04456

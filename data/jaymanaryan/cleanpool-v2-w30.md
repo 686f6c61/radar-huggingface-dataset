@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: ~1.5 GB en fp16 (751M parámetros), por lo que es ejecutable en GPUs con 2 GB o más.
 - GPUs recomendadas: RTX 3060, GTX 1660 Super, o cualquier GPU con al menos 4 GB de VRAM para margen.
 - También puede ejecutarse en CPU con 8-16 GB de RAM, aunque la latencia será mayor.
-- Opciones de despliegue: compatible con transformers (HuggingFace), vLLM, llama.cpp (si se convierte a GGUF), TGI, y Ollama (requiere conversión).
+- Opciones de despliegue: compatible con transformers (Hugging Face), vLLM, llama.cpp (si se convierte a GGUF), TGI, y Ollama (requiere conversión).
 - Latencia y throughput: no disponibles; en una GPU moderna (RTX 3060) se estiman decenas de tokens por segundo, pero sin datos oficiales.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No hay comparativas de rendimiento publicadas entre estos modelos. La ventaja po
 
 ## Enlaces
 
-- [HuggingFace: jaymanaryan/CleanPool-v2-w30](https://huggingface.co/jaymanaryan/CleanPool-v2-w30)
+- [Hugging Face: jaymanaryan/CleanPool-v2-w30](https://huggingface.co/jaymanaryan/CleanPool-v2-w30)
 - [mergekit (herramienta utilizada)](https://github.com/cg123/mergekit)
 - [Paper DARE TIES (arxiv:2311.03099)](https://arxiv.org/abs/2311.03099)

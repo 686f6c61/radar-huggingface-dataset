@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Priscilla es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en HuggingFace. No se trata de un modelo base autonomo, sino de un ajuste fino ligero (Low-Rank Adaptation) que se monta sobre el modelo de difusion krea/Krea-2-Turbo, indicado explicitamente en los metadatos como `base_model`. Su proposito es inyectar en ese modelo base la representacion de un personaje o estilo concreto, activable mediante una palabra clave de disparo.
+Priscilla es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en Hugging Face. No se trata de un modelo base autonomo, sino de un ajuste fino ligero (Low-Rank Adaptation) que se monta sobre el modelo de difusion krea/Krea-2-Turbo, indicado explicitamente en los metadatos como `base_model`. Su proposito es inyectar en ese modelo base la representacion de un personaje o estilo concreto, activable mediante una palabra clave de disparo.
 
 El adaptador esta pensado para el ecosistema diffusers y sigue la plantilla `template:diffusion-lora`, por lo que se distribuye con el formato habitual de los LoRA de difusion y se puede cargar junto al modelo base en pipelines de texto a imagen. El repositorio ocupa aproximadamente 0,5 GB, un tamano coherente con un adaptador de bajo rango frente a los multiples gigabytes que suele ocupar un modelo de difusion completo.
 
@@ -76,7 +76,7 @@ No disponible. No se han proporcionado datos de rendimiento, parametros ni conte
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AiMamis/Priscilla
+- Hugging Face (modelo): https://huggingface.co/AiMamis/Priscilla
 - Archivos del repositorio: https://huggingface.co/AiMamis/Priscilla/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda proporcionados (los resultados devueltos no guardan relacion con el modelo).

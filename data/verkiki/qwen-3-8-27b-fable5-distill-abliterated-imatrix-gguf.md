@@ -74,8 +74,8 @@ No se dispone de más alternativas comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-Imatrix-GGUF
+- Hugging Face: https://huggingface.co/verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-Imatrix-GGUF
 - Modelo base Qwen3.8-27B (referencia): https://lmstudio.ai/models/qwen3.8
 - Guía de ejecución local con Ollama: https://typilot.com/blog/qwen3-8-27b-run-locally
 - Análisis de especificaciones y benchmarks del base: https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3

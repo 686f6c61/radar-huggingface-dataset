@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bugphi/banglish_xlmr` es un modelo de la familia XLM-RoBERTa publicado en HuggingFace por el usuario bugphi. Se trata de un encoder transformer con 278.045.186 parámetros, un tamaño que coincide exactamente con el de XLM-RoBERTa-base, del que muy probablemente deriva. El repositorio ocupa 1,1 GB y contiene pesos en formato safetensors, lo que sitúa los pesos en precisión fp32 (278 M parámetros x 4 bytes ≈ 1,11 GB).
+`bugphi/banglish_xlmr` es un modelo de la familia XLM-RoBERTa publicado en Hugging Face por el usuario bugphi. Se trata de un encoder transformer con 278.045.186 parámetros, un tamaño que coincide exactamente con el de XLM-RoBERTa-base, del que muy probablemente deriva. El repositorio ocupa 1,1 GB y contiene pesos en formato safetensors, lo que sitúa los pesos en precisión fp32 (278 M parámetros x 4 bytes ≈ 1,11 GB).
 
 El nombre del repositorio, "banglish", sugiere que el modelo está orientado a texto code-mixed bengalí-inglés (el término "Banglish" designa habitualmente la mezcla de bengalí y inglés). Sin embargo, esta interpretación procede únicamente del nombre del repositorio: la model card publicada no contiene más que la línea de licencia MIT, sin descripción, sin idiomas declarados, sin pipeline asignado y sin datos de entrenamiento. No se puede confirmar por tanto el dominio real de especialización.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: alrededor de 0,28 GB de pesos.
 - GPU recomendadas: cualquiera con al menos 4 GB de VRAM. Modelos como RTX 3060, RTX 4060, RTX 4090, T4, L4 o superiores funcionan sin problema. Tambien es viable en CPU para inferencia por lotes pequenos.
 - Cabe holgadamente en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos ocho anos, e incluso en iGPU con memoria compartida para secuencias cortas.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch) como via principal; ONNX Runtime para inferencia optimizada en CPU; TorchScript; tambien es posible exportar a llama.cpp/GGUF, aunque el soporte de encoders XLM-R en ese ecosistema es limitado. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch) como via principal; ONNX Runtime para inferencia optimizada en CPU; TorchScript; tambien es posible exportar a llama.cpp/GGUF, aunque el soporte de encoders XLM-R en ese ecosistema es limitado. vLLM y TGI estan orientados a modelos generativos y no son la via natural para este checkpoint.
 - Latencia y throughput estimados: no disponibles. Como referencia de orden de magnitud para un encoder de 278 M parametros en una GPU moderna, se esperan latencias de pocos milisegundos por secuencia corta en fp16, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -77,10 +77,10 @@ Los datos de los modelos comparados proceden de su documentacion publica, no de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| bugphi/banglish_xlmr | 278 M | no disponible | MIT | HuggingFace, 0 descargas | No |
-| xlm-roberta-base | 278 M | 512 tokens | MIT | HuggingFace, ampliamente usado | Si (XNLI, GLUE, etc.) |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | HuggingFace, muy extendido | Si (XNLI, GLUE, etc.) |
-| google/muril-base-cased | 237 M | 512 tokens | Apache 2.0 | HuggingFace | Si (tareas indicas) |
+| bugphi/banglish_xlmr | 278 M | no disponible | MIT | Hugging Face, 0 descargas | No |
+| xlm-roberta-base | 278 M | 512 tokens | MIT | Hugging Face, ampliamente usado | Si (XNLI, GLUE, etc.) |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | Hugging Face, muy extendido | Si (XNLI, GLUE, etc.) |
+| google/muril-base-cased | 237 M | 512 tokens | Apache 2.0 | Hugging Face | Si (tareas indicas) |
 
 Frente a estas alternativas, la unica ventaja diferencial de `bugphi/banglish_xlmr` seria un hipotetico ajuste sobre texto bengalí-inglés, extremo que no esta documentado ni evaluado. En ausencia de esa evidencia, `xlm-roberta-base` o `google/muril-base-cased` ofrecen mayor trazabilidad, soporte y metricas verificables.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, la unica ventaja diferencial de `bugphi/banglish_xl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bugphi/banglish_xlmr
+- Hugging Face: https://huggingface.co/bugphi/banglish_xlmr
 - Model card del autor: no contiene informacion tecnica mas alla de la licencia MIT
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

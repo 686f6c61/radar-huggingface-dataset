@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omni-kefu es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B publicado por el usuario OkazeO en HuggingFace. Se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto conversacional mediante la libreria transformers. El repositorio contiene pesos en formato safetensors con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones), lo que confirma que hereda el tamano del modelo base Qwen3.8-27B.
+Omni-kefu es un ajuste fino (finetune) del modelo Qwen/Qwen3.8-27B publicado por el usuario OkazeO en Hugging Face. Se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto conversacional mediante la libreria transformers. El repositorio contiene pesos en formato safetensors con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones), lo que confirma que hereda el tamano del modelo base Qwen3.8-27B.
 
 La model card publicada por el autor es extremadamente escueta: se limita a indicar que el modelo esta basado en Qwen3.8-27B, sin detallar el dataset de ajuste, el proceso de entrenamiento, las capacidades especificas ni los resultados de evaluacion. El repositorio ocupa 53,9 GB y cuenta con 177 descargas y ningun "like" en el momento de la consulta, lo que sugiere un modelo de nicho o experimental, no una publicacion de referencia.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card no documenta el numero de tokens utiliz
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se listan idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Omni-kefu (OkazeO) | ~26,9 B | no disponible | Apache 2.0 | Model card minima | HuggingFace, 177 descargas |
-| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en esta ficha | no disponible en esta ficha | Documentacion oficial del autor original | HuggingFace (modelo base) |
+| Omni-kefu (OkazeO) | ~26,9 B | no disponible | Apache 2.0 | Model card minima | Hugging Face, 177 descargas |
+| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en esta ficha | no disponible en esta ficha | Documentacion oficial del autor original | Hugging Face (modelo base) |
 | Alternativas de ~27 B de otros proveedores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo ni de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros y licencia.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OkazeO/Omni-kefu
+- Modelo en Hugging Face: https://huggingface.co/OkazeO/Omni-kefu
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -71,10 +71,10 @@ La model card indica además que, en evaluaciones en modo Instruct, los modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM-V-4.7-35B-A3B (esta ficha) | 35,2B totales / ~3B activos | 32.768 | Apache 2.0 | HuggingFace y ModelScope |
+| MiniCPM-V-4.7-35B-A3B (esta ficha) | 35,2B totales / ~3B activos | 32.768 | Apache 2.0 | Hugging Face y ModelScope |
 | Qwen3.6-35B-A3B | no disponible | no disponible | no disponible | no disponible |
 | Qwen3.5-0.8B | 0,8B | no disponible | no disponible | no disponible |
-| MiniCPM-V-4.7-1B | 1B | no disponible | Apache 2.0 | HuggingFace y ModelScope |
+| MiniCPM-V-4.7-1B | 1B | no disponible | Apache 2.0 | Hugging Face y ModelScope |
 
 La model card afirma una puntuación global superior a Qwen3.6-35B-A3B y Qwen3.5-0.8B en modo Instruct, pero no se aportan las cifras desglosadas ni los detalles de contexto o licencia de esos modelos en la información disponible.
 
@@ -92,7 +92,7 @@ La model card afirma una puntuación global superior a Qwen3.6-35B-A3B y Qwen3.5
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-iluvatar-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-iluvatar-FlagOS
 - ModelScope (descarga alternativa indicada en la model card): `modelscope download --model FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-iluvatar-FlagOS`
 - Imagen Docker FlagOS-Iluvatar: `harbor.baai.ac.cn/flagrelease-public/minicpmv47-35b-a3b-iluvatar001-gems5.3.4-tree0.6.0-cxnone-plugin0.2.0-vllm0.24.0-sglangnone-sglangflnone-cp312-pt210-ixml44-x64-4.5.0:202610121519`
 - AnythingLLM: https://anythingllm.com/

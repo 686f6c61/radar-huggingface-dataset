@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t0-n5-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ser utilizado sobre un modelo base identificado como `smolvla` (probablemente SmolVLA, un modelo de visión-lenguaje-acción desarrollado por HuggingFace). El nombre del repositorio sugiere que ha sido entrenado específicamente para la tarea LIBERO Goal, un benchmark de robótica que evalúa la capacidad de los agentes para ejecutar instrucciones de manipulación en entornos simulados.
+El modelo `sadjava/smolvla-libero-goal-peft-t0-n5-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ser utilizado sobre un modelo base identificado como `smolvla` (probablemente SmolVLA, un modelo de visión-lenguaje-acción desarrollado por Hugging Face). El nombre del repositorio sugiere que ha sido entrenado específicamente para la tarea LIBERO Goal, un benchmark de robótica que evalúa la capacidad de los agentes para ejecutar instrucciones de manipulación en entornos simulados.
 
 La información disponible es extremadamente limitada: la model card del autor está prácticamente vacía, sin especificaciones técnicas, datos de entrenamiento, resultados de evaluación ni licencia. El repositorio tiene un tamaño de 0.0 GB, lo que indica que se trata de un adaptador pequeño (los pesos del modelo base no se incluyen). No se han reportado descargas ni interacciones, por lo que su utilidad práctica y su estado de desarrollo son inciertos.
 
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: sadjava/smolvla-libero-goal-peft-t0-n5-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n5-s2000)
+- [Hugging Face: sadjava/smolvla-libero-goal-peft-t0-n5-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n5-s2000)
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios) en la información proporcionada.

@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar este modelo con otras alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/BlueBerry-3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/BlueBerry-3-GGUF
 - Modelo base: https://huggingface.co/artindnr/BlueBerry-3
 - Perfil del creador: https://huggingface.co/mradermacher
 - Solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

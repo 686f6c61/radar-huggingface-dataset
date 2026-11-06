@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Sumayahx/distilgpt2-squad` es un ajuste fino (fine-tuning) de DistilGPT-2, la variante destilada del modelo GPT-2 de OpenAI, publicado en HuggingFace por el usuario Sumayahx. El nombre sugiere que el ajuste se ha realizado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), aunque la model card no lo confirma de forma explícita. El modelo tiene 81.912.576 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,7 GB.
+`Sumayahx/distilgpt2-squad` es un ajuste fino (fine-tuning) de DistilGPT-2, la variante destilada del modelo GPT-2 de OpenAI, publicado en Hugging Face por el usuario Sumayahx. El nombre sugiere que el ajuste se ha realizado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), aunque la model card no lo confirma de forma explícita. El modelo tiene 81.912.576 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,7 GB.
 
 Se trata de un modelo de generación de texto de pequeña escala, pensado para experimentación, prototipado rápido y tareas de generación condicionada por contexto. Su relevancia práctica es limitada frente a modelos actuales: DistilGPT-2 es una arquitectura de 2019 con conocimiento congelado y sin soporte nativo de instrucciones, tool calling ni contexto largo. Resulta útil, sin embargo, como base ligera para fine-tuning, para docencia y para entornos con recursos de cómputo muy restringidos.
 
-La información publicada por el autor es mínima: la model card es la plantilla automática de HuggingFace sin completar, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
+La información publicada por el autor es mínima: la model card es la plantilla automática de Hugging Face sin completar, y no se especifican licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
 ## Especificaciones tecnicas
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantización de 8 bits: aproximadamente 82 MB; en 4 bits, aproximadamente 41 MB.
 - Cabe holgadamente en cualquier GPU consumer, incluida una GTX 1050 Ti (4 GB) o incluso en CPU.
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU con al menos 1 GB de VRAM libre es suficiente. Para throughput alto, una T4 o RTX 3060 son más que suficientes.
-- Opciones de despliegue: `transformers` (PyTorch), `text-generation-inference` (el tag `text-generation-inference` está presente), `llama.cpp`/`Ollama` previa conversión a GGUF, y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: `transformers` (PyTorch), `text-generation-inference` (el tag `text-generation-inference` está presente), `llama.cpp`/`Ollama` previa conversión a GGUF, y endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos en GPU y decenas de milisegundos por token en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sumayahx/distilgpt2-squad | 81,9 M | no disponible (base: 1024) | no disponible | HuggingFace | Fine-tuning no documentado |
-| distilgpt2 (HuggingFace) | 82 M | 1024 | Apache 2.0 (según el modelo base) | HuggingFace | Modelo base oficial, ampliamente usado |
-| gpt2 (OpenAI/HuggingFace) | 124 M | 1024 | MIT (según repositorio) | HuggingFace | Mayor tamaño, mejor calidad base |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace | Modelo más moderno y capaz, mayor coste |
+| Sumayahx/distilgpt2-squad | 81,9 M | no disponible (base: 1024) | no disponible | Hugging Face | Fine-tuning no documentado |
+| distilgpt2 (Hugging Face) | 82 M | 1024 | Apache 2.0 (según el modelo base) | Hugging Face | Modelo base oficial, ampliamente usado |
+| gpt2 (OpenAI/HuggingFace) | 124 M | 1024 | MIT (según repositorio) | Hugging Face | Mayor tamaño, mejor calidad base |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face | Modelo más moderno y capaz, mayor coste |
 
 La comparación se limita a modelos de la misma familia o escala, ya que no hay benchmarks publicados para este checkpoint. Frente a `distilgpt2` original, este modelo añade un ajuste fino no documentado; frente a `gpt2`, es más pequeño y presumiblemente menos capaz; frente a modelos actuales de 1 B o más parámetros, queda muy por detrás en calidad y capacidades.
 
@@ -88,7 +88,7 @@ La comparación se limita a modelos de la misma familia o escala, ya que no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sumayahx/distilgpt2-squad
+- Modelo en Hugging Face: https://huggingface.co/Sumayahx/distilgpt2-squad
 - Modelo base DistilGPT-2: https://huggingface.co/distilgpt2
 - Paper de DistilGPT-2 / destilación (referencia citada en los tags): https://arxiv.org/abs/1910.09700
 - Dataset SQuAD (referencia por el nombre del modelo): https://rajpurkar.github.io/SQuAD-explorer/

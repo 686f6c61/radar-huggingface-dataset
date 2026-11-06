@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pika-H3-Flex-Turbo-LoRA es un adaptador LoRA para generación de vídeo con audio sincronizado, construido sobre la familia MiniMax-H3 y, más concretamente, sobre el adaptador Pika-H3-Flex. Lo publica el usuario helao123 en HuggingFace y su objetivo es reducir drásticamente el número de pasos de muestreo necesarios para producir un clip, fusionando en un único fichero LoRA estándar varios destilados few-step (2, 4 y 8 pasos) procedentes de distintos adaptadores de la comunidad. El resultado es un adaptador que se puede cargar sobre una instalación estándar de H3 (ComfyUI o Diffusers, en bf16, int8 o GGUF) sin nodos personalizados ni parches al modelo base.
+Pika-H3-Flex-Turbo-LoRA es un adaptador LoRA para generación de vídeo con audio sincronizado, construido sobre la familia MiniMax-H3 y, más concretamente, sobre el adaptador Pika-H3-Flex. Lo publica el usuario helao123 en Hugging Face y su objetivo es reducir drásticamente el número de pasos de muestreo necesarios para producir un clip, fusionando en un único fichero LoRA estándar varios destilados few-step (2, 4 y 8 pasos) procedentes de distintos adaptadores de la comunidad. El resultado es un adaptador que se puede cargar sobre una instalación estándar de H3 (ComfyUI o Diffusers, en bf16, int8 o GGUF) sin nodos personalizados ni parches al modelo base.
 
 La propuesta de valor es la velocidad: según las mediciones del autor, un clip de 5 segundos a 848×480 con audio estéreo tarda 40 s en H200 con el LoRA de 4 pasos frente a 60 s del adaptador oficial de Pika a 6 pasos, y unos 25 s en modo borrador de 2 pasos. En A100 la mejora es de 109,3 s a 66,0 s. El modelo base MiniMax-H3, con ~40 pasos, tardaría unos 500 s, es decir, entre 8 y 12 veces más.
 
@@ -75,10 +75,10 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 | Modelo | Tipo | Pasos | Tiempo por clip (H200) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Pika-H3-Flex (oficial) | Adaptador oficial sobre H3 | 6 | 60 s | MiniMax-H3 Community License | HuggingFace |
-| Este LoRA (4 pasos) | LoRA fusionado few-step | 4 | 40 s | MiniMax-H3 Community License | HuggingFace |
-| MiniMax-H3 base | Modelo de difusión de vídeo | ~40 | ~500 s | MiniMax-H3 Community License | HuggingFace |
-| MiniMax-h3-Turbo (lightx2v) | Destilado few-step | no disponible | no disponible | no disponible | HuggingFace |
+| Pika-H3-Flex (oficial) | Adaptador oficial sobre H3 | 6 | 60 s | MiniMax-H3 Community License | Hugging Face |
+| Este LoRA (4 pasos) | LoRA fusionado few-step | 4 | 40 s | MiniMax-H3 Community License | Hugging Face |
+| MiniMax-H3 base | Modelo de difusión de vídeo | ~40 | ~500 s | MiniMax-H3 Community License | Hugging Face |
+| MiniMax-h3-Turbo (lightx2v) | Destilado few-step | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de calidad objetivos frente a alternativas; la comparación del autor se basa en vídeos lado a lado con la misma semilla y prompt.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de calidad objetivos frente a alternativas;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/helao123/Pika-H3-Flex-Turbo-LoRA
+- Hugging Face: https://huggingface.co/helao123/Pika-H3-Flex-Turbo-LoRA
 - Modelo base Pika-H3-Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Destilado turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

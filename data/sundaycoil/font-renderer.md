@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sundaycoil/font-renderer` es un artefacto publicado en HuggingFace por el usuario `sundaycoil`, etiquetado con la región `region:us`. A fecha de su última actualización (agosto de 2026), acumula 6 likes y 0 descargas, lo que sugiere que se trata de una publicación reciente o de baja difusión. El nombre del repositorio indica que podría estar relacionado con la renderización de fuentes tipográficas, pero no se dispone de documentación técnica, tarjetas de modelo ni archivos de configuración públicos que permitan confirmar su arquitectura, propósito o modo de uso.
+El modelo `sundaycoil/font-renderer` es un artefacto publicado en Hugging Face por el usuario `sundaycoil`, etiquetado con la región `region:us`. A fecha de su última actualización (agosto de 2026), acumula 6 likes y 0 descargas, lo que sugiere que se trata de una publicación reciente o de baja difusión. El nombre del repositorio indica que podría estar relacionado con la renderización de fuentes tipográficas, pero no se dispone de documentación técnica, tarjetas de modelo ni archivos de configuración públicos que permitan confirmar su arquitectura, propósito o modo de uso.
 
-La ficha que sigue se basa exclusivamente en la información disponible en la página de HuggingFace, que es mínima. No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web. Por tanto, la mayoría de los apartados técnicos se marcan como «no disponible» para evitar especulaciones infundadas.
+La ficha que sigue se basa exclusivamente en la información disponible en la página de Hugging Face, que es mínima. No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web. Por tanto, la mayoría de los apartados técnicos se marcan como «no disponible» para evitar especulaciones infundadas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha que sigue se basa exclusivamente en la información disponible en la p�
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (RLHF, DPO, etc.). El repositorio de HuggingFace no incluye archivos de configuración, pesos ni documentación asociada, por lo que no es posible describir su diseño interno ni su proceso de entrenamiento.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (RLHF, DPO, etc.). El repositorio de Hugging Face no incluye archivos de configuración, pesos ni documentación asociada, por lo que no es posible describir su diseño interno ni su proceso de entrenamiento.
 
 ## Capacidades
 
@@ -54,6 +54,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/font-renderer](https://huggingface.co/sundaycoil/font-renderer)
+- [Hugging Face: sundaycoil/font-renderer](https://huggingface.co/sundaycoil/font-renderer)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) en la búsqueda web.

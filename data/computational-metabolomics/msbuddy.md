@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MSBuddy es un proyecto de metabolomica computacional centrado en la anotacion de formulas moleculares a partir de datos de espectrometria de masas. El repositorio `computational-metabolomics/msbuddy` de HuggingFace no contiene un modelo de lenguaje ni una red neuronal profunda: es un paquete de artefactos serializados con joblib que empaqueta las bases de datos y el modelo de aprendizaje automatico del proyecto MSBuddy, mantenido por Shipei Xing. En concreto, incluye `common_db_v0.2.4.joblib`, `formula_db_v0.2.4.joblib` y `ml_v0.3.0.joblib`, correspondientes a las versiones de datos 0.2.4 y 0.3.0 del proyecto original.
+MSBuddy es un proyecto de metabolomica computacional centrado en la anotacion de formulas moleculares a partir de datos de espectrometria de masas. El repositorio `computational-metabolomics/msbuddy` de Hugging Face no contiene un modelo de lenguaje ni una red neuronal profunda: es un paquete de artefactos serializados con joblib que empaqueta las bases de datos y el modelo de aprendizaje automatico del proyecto MSBuddy, mantenido por Shipei Xing. En concreto, incluye `common_db_v0.2.4.joblib`, `formula_db_v0.2.4.joblib` y `ml_v0.3.0.joblib`, correspondientes a las versiones de datos 0.2.4 y 0.3.0 del proyecto original.
 
 El modelo de aprendizaje automatico es un modelo LightGBM (arboles potenciados por gradiente), segun declara la propia model card. No se trata, por tanto, de un transformer, ni de un modelo MoE, ni de un modelo generativo de texto: no tiene ventana de contexto, no procesa lenguaje natural y no dispone de parametros en el sentido habitual de los LLM. La relevancia del repositorio es de tipo practico: actua como espejo de ficheros identicos a los publicados en los releases del proyecto upstream, con hashes SHA-256 verificables, lo que facilita su consumo reproducible desde entornos Galaxy mediante el tag `galaxy-data-manager`.
 
@@ -23,7 +23,7 @@ El repositorio ocupa 0.9 GB, tiene licencia Apache-2.0 registrada y, en el momen
 | Version declarada | db0.2.4-ml0.3.0 |
 | Tamano del repositorio | 0.9 GB |
 | Autor | computational-metabolomics |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros artefactos comparab
 ## Limitaciones y advertencias
 
 - La licencia Apache-2.0 se registra a partir de la licencia del proyecto upstream. La propia model card advierte de que la aplicacion de esa licencia a los ficheros concretos es una inferencia y no una concesion de licencia por fichero confirmada independientemente. Conviene verificar los terminos antes de un uso comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no cuenta con pipeline de HuggingFace asociado. No hay senales de validacion por parte de la comunidad en esta copia concreta.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no cuenta con pipeline de Hugging Face asociado. No hay senales de validacion por parte de la comunidad en esta copia concreta.
 - No se documentan datos de entrenamiento, composicion del dataset, hiperparametros, ni metricas de evaluacion del modelo LightGBM. Es imposible estimar su comportamiento fuera de la distribucion de datos de entrenamiento.
 - No se publican benchmarks. No hay evidencia cuantitativa en la informacion disponible sobre exactitud, sensibilidad o tasa de falsos positivos de la anotacion.
 - El modelo no es generativo y no procesa lenguaje natural: no puede usarse para tareas de texto, codigo, razonamiento, vision ni agentes. Cualquier expectativa en ese sentido es un error de categorizacion.
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye otros artefactos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/computational-metabolomics/msbuddy
+- Repositorio en Hugging Face: https://huggingface.co/computational-metabolomics/msbuddy
 - Software y documentacion upstream (MSBuddy): https://github.com/Philipbear/msbuddy
 - Releases del proyecto upstream: https://github.com/Philipbear/msbuddy/releases
 - Release de datos msbuddy_data_v0.2.4: https://github.com/Philipbear/msbuddy/releases/tag/msbuddy_data_v0.2.4

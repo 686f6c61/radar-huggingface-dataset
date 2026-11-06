@@ -84,8 +84,8 @@ La comparativa muestra que la variante `vLLM-Omni` esta optimizada para desplieg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-SVDQuant-vLLM-Omni
+- Modelo en Hugging Face: https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-SVDQuant-vLLM-Omni
 - Repositorio de destilacion Turbo (ModelTC): https://github.com/ModelTC/Minimax-H3-Turbo
-- LoRA Turbo en HuggingFace (lightx2v): https://huggingface.co/lightx2v/Minimax-h3-Turbo
+- LoRA Turbo en Hugging Face (lightx2v): https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Variante ComfyUI (rotated-NVFP4): https://huggingface.co/pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-rotated-T1
 - Text encoder requerido: https://huggingface.co/pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ

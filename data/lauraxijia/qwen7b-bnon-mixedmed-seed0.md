@@ -76,8 +76,8 @@ La comparativa se limita a los modelos base de la familia Qwen, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lauraxijia/qwen7b-bnon-mixedmed-seed0
+- Repositorio Hugging Face: https://huggingface.co/lauraxijia/qwen7b-bnon-mixedmed-seed0
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen
 - Repositorio de Qwen-7B en GitHub: https://github.com/scgyp/Qwen-7B
-- Modelo Qwen2-7B en HuggingFace: https://huggingface.co/Qwen/Qwen2-7B
+- Modelo Qwen2-7B en Hugging Face: https://huggingface.co/Qwen/Qwen2-7B
 - Modelo relacionado del mismo autor: https://huggingface.co/lauraxijia/qwen7b-a1null-badmed-seed2

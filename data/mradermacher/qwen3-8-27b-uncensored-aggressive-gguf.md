@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-GGUF)
 - [Modelo base philbert440/Qwen3.8-27B-Uncensored-Aggressive](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive)
 - [Perfil de mradermacher](https://huggingface.co/mradermacher)
 - [Documentacion de Qwen3.8 en Unsloth](https://unsloth.ai/docs/models/qwen3.8)

@@ -6,7 +6,7 @@ OPO-8B es un modelo vision-lenguaje de 8.767 millones de parametros desarrollado
 
 La innovacion central es el entrenamiento con aprendizaje por refuerzo (reinforcement learning) que combina ramificacion de observaciones guiada por incertidumbre y atribucion de ventaja localizada en la evidencia. En lugar de procesar la imagen completa a resolucion fija, el modelo aprende a invocar herramientas de zoom para inspeccionar regiones concretas, lo que resulta especialmente relevante para tareas de percepcion en alta resolucion (4K y 8K) donde los detalles pequenos determinan la respuesta correcta.
 
-El modelo se publica en HuggingFace con la libreria transformers, formato safetensors y pipeline image-text-to-text. Es relevante ahora porque aborda una limitacion estructural de los VLM convencionales: la perdida de detalle al reescalar imagenes grandes, y lo hace con un modelo de 8B parametros que puede desplegarse en hardware relativamente asequible.
+El modelo se publica en Hugging Face con la libreria transformers, formato safetensors y pipeline image-text-to-text. Es relevante ahora porque aborda una limitacion estructural de los VLM convencionales: la perdida de detalle al reescalar imagenes grandes, y lo hace con un modelo de 8B parametros que puede desplegarse en hardware relativamente asequible.
 
 ## Especificaciones tecnicas
 
@@ -73,8 +73,8 @@ Nota: la model card proporcionada esta truncada y no incluye las filas correspon
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPO-8B | 8.767 M | no disponible | VLM con RL para politica de observacion (zoom) | no disponible | HuggingFace (Yann0122/OPO-8B) |
-| Qwen3-VL-8B-Instruct | ~8B (heredado) | no disponible | VLM instruct base | no disponible en esta ficha | HuggingFace (Qwen/Qwen3-VL-8B-Instruct) |
+| OPO-8B | 8.767 M | no disponible | VLM con RL para politica de observacion (zoom) | no disponible | Hugging Face (Yann0122/OPO-8B) |
+| Qwen3-VL-8B-Instruct | ~8B (heredado) | no disponible | VLM instruct base | no disponible en esta ficha | Hugging Face (Qwen/Qwen3-VL-8B-Instruct) |
 | GPT-5 mini | no disponible | no disponible | VLM propietario | propietaria | API |
 | Claude Opus 4.6 | no disponible | no disponible | VLM propietario | propietaria | API |
 
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos citados en la model card. No se dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yann0122/OPO-8B
+- Hugging Face: https://huggingface.co/Yann0122/OPO-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper (referenciado en la model card): "Learning Where to Look: Observation Policy Optimization for Thinking with Images" (NeurIPS 2026) — no se proporciona URL directa en la informacion disponible.
 - Repositorio de codigo: no disponible.

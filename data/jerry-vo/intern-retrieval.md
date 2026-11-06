@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jerry-vo/intern-retrieval` es un prototipo de investigación basado en la arquitectura CLIP, orientado a tareas de recuperación (retrieval) multimodal. Lo publica el usuario jerry-vo en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: el propio autor lo describe como una implementación de escala «nano» que documenta valores por defecto y formatos de fichero, sin presentar cifras de rendimiento verificadas. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados.
+`jerry-vo/intern-retrieval` es un prototipo de investigación basado en la arquitectura CLIP, orientado a tareas de recuperación (retrieval) multimodal. Lo publica el usuario jerry-vo en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: el propio autor lo describe como una implementación de escala «nano» que documenta valores por defecto y formatos de fichero, sin presentar cifras de rendimiento verificadas. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con pesos entrenados.
 
 La relevancia de este repositorio es fundamentalmente metodológica: sirve como andamiaje reproducible (script de entrenamiento/inferencia, `config.json` y `training_args.json`) para montar experimentos de retrieval con una receta declarada (optimizador Lion con scheduler coseno) y una línea base de capacidad equivalente. Es decir, su valor está en facilitar una comparación justa si el usuario entrena el modelo por su cuenta con los mismos datos, presupuesto de ajuste y semillas aleatorias.
 
-A nivel técnico se declara una arquitectura CLIP de atención lineal, fusión mediante cross attention, activación ReLU y normalización InstanceNorm, lo que se aparta de las convenciones habituales de CLIP (atención softmax, GELU y LayerNorm). El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 «likes» en el momento de la consulta, y no declara idiomas soportados ni pipeline de HuggingFace.
+A nivel técnico se declara una arquitectura CLIP de atención lineal, fusión mediante cross attention, activación ReLU y normalización InstanceNorm, lo que se aparta de las convenciones habituales de CLIP (atención softmax, GELU y LayerNorm). El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 «likes» en el momento de la consulta, y no declara idiomas soportados ni pipeline de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos en la información proporcionada. Los candid
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad pública | Rendimiento en retrieval |
 |---|---|---|---|---|---|
-| jerry-vo/intern-retrieval | 33.088 (escala nano) | No disponible | MIT | HuggingFace, 0 descargas | No disponible (checkpoint sin entrenar) |
+| jerry-vo/intern-retrieval | 33.088 (escala nano) | No disponible | MIT | Hugging Face, 0 descargas | No disponible (checkpoint sin entrenar) |
 | CLIP ViT-B/32 | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 | SigLIP | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Modelos de open_clip | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
@@ -83,11 +83,11 @@ Para una comparación con sentido, el propio autor exige que todas las líneas b
 - Riesgo de alucinación: no aplica en el sentido generativo (no produce texto), pero sí existe riesgo de similitudes sin sentido en el espacio de embeddings al carecer de entrenamiento.
 - Sesgos conocidos: no disponibles; cualquier sesgo dependerá de los datos con los que se entrene, y el autor recomienda revisar por separado los términos de los datos de origen cuando se usen datasets externos.
 - Limitaciones de contexto e idioma: no se declara ventana de contexto ni cobertura idiomática, por lo que no puede asumirse soporte multilingüe.
-- Compatibilidad de carga: al ser una implementación personalizada, las APIs automáticas de HuggingFace necesitan un adaptador explícito; no se puede cargar como un CLIP estándar sin más.
+- Compatibilidad de carga: al ser una implementación personalizada, las APIs automáticas de Hugging Face necesitan un adaptador explícito; no se puede cargar como un CLIP estándar sin más.
 - Consideraciones de licencia: el código y los pesos se publican bajo MIT, lo que permite uso comercial del repositorio, pero la licencia no cubre los datasets externos con los que se entrene ni los términos de los modelos de referencia que se usen como línea base.
 - Advertencia para producción: no debe desplegarse como sistema de búsqueda real sin un entrenamiento y una evaluación previos; las cifras de este repositorio no respaldan ninguna afirmación de calidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jerry-vo/intern-retrieval
+- Hugging Face: https://huggingface.co/jerry-vo/intern-retrieval
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre el modelo: los enlaces obtenidos corresponden a listados de hoteles y no guardan relación con `jerry-vo/intern-retrieval`. No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

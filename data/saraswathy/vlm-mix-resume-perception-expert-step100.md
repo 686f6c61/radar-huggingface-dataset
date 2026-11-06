@@ -75,6 +75,6 @@ Los tres son checkpoints de reanudación de EasyR1 con el mismo base y paso, per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-perception-expert-step100
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-perception-expert-step100
 - Checkpoint hermana (STEM): https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Checkpoint hermana (no-geo): https://huggingface.co/Saraswathy/vlm-mix-nongeo-expert-step100

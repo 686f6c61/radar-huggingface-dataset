@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en el mismo repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [aperire0402/qwen38-prompt-enhancer-q8-runtime](https://huggingface.co/aperire0402/qwen38-prompt-enhancer-q8-runtime)
+- Repositorio Hugging Face: [aperire0402/qwen38-prompt-enhancer-q8-runtime](https://huggingface.co/aperire0402/qwen38-prompt-enhancer-q8-runtime)
 - Repositorio base (modelo): [HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF](https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF)
 - Paper PromptEnhancer: [arXiv 2509.04545](https://arxiv.org/abs/2509.04545)
 - Proyecto PromptEnhancer (GitHub): [bdAgentAI/promptenhancer](https://github.com/bdAgentAI/promptenhancer)

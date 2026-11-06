@@ -34,7 +34,7 @@ El dataset de entrenamiento es `hf.co/datasets/dougalldeepmind/2026-10-09-da-15-
 - Seguimiento de instrucciones (SFT): es la finalidad declarada de la receta `sft`.
 - Soporte de tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
-- Capacidades multilingues: no disponible; no se declaran idiomas ni en la model card ni en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponible; no se declaran idiomas ni en la model card ni en los metadatos de Hugging Face.
 - Capacidades especiales (vision, audio, decodificacion especulativa, atencion lineal): no disponible.
 - Capacidad de despliegue independiente: no, requiere cargar el modelo base Qwen/Qwen3.6-27B y aplicar el adaptador encima.
 
@@ -93,7 +93,7 @@ La comparacion con el artefacto de esta ficha no es posible en terminos de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-15-canary-septda-octbase
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-15-canary-septda-octbase
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-10-09-da-15-canary-septda-octbase-mix
 - Repositorio fuente del pipeline (SHA 8088d349c766197b294095b7df0b19287072c32c): https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B (revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)

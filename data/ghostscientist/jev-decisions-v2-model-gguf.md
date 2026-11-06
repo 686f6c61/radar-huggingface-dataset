@@ -93,6 +93,6 @@ La comparacion de rendimiento frente a estas alternativas no es posible con la i
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/GhostScientist/jev-decisions-v2-model-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/GhostScientist/jev-decisions-v2-model-gguf
 - Modelo original (safetensors): https://huggingface.co/GhostScientist/jev-decisions-v2-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/GhostScientist/jev-decisions-v1

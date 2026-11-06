@@ -92,7 +92,7 @@ La comparación con otras alternativas de la misma categoría (agentes de códig
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-8bit
+- Hugging Face (esta cuantización): https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-8bit
 - Versión bf16: https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-bf16
 - Checkpoint fuente: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Organización Xiaomi MiMo: https://huggingface.co/XiaomiMiMo

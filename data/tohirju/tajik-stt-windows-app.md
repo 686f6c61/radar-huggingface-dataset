@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Tohirju/tajik-stt-windows-app` es un sistema de reconocimiento automático de voz (ASR) para el idioma tayiko, desarrollado por el usuario Tohirju y publicado en HuggingFace. Según las etiquetas asociadas, se basa en la arquitectura Parakeet (un modelo de ASR desarrollado originalmente por NVIDIA) y está empaquetado como una aplicación para Windows que funciona de forma offline, lo que sugiere que está diseñado para ejecutarse localmente sin necesidad de conexión a internet.
+El modelo `Tohirju/tajik-stt-windows-app` es un sistema de reconocimiento automático de voz (ASR) para el idioma tayiko, desarrollado por el usuario Tohirju y publicado en Hugging Face. Según las etiquetas asociadas, se basa en la arquitectura Parakeet (un modelo de ASR desarrollado originalmente por NVIDIA) y está empaquetado como una aplicación para Windows que funciona de forma offline, lo que sugiere que está diseñado para ejecutarse localmente sin necesidad de conexión a internet.
 
-El repositorio tiene un tamaño de 8 GB, lo que indica que el modelo es considerablemente grande, probablemente con cientos de millones de parámetros. Sin embargo, la ficha del modelo no proporciona detalles técnicos específicos sobre la arquitectura, el entrenamiento o el rendimiento. El acceso al modelo está restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso restringido puede limitar su disponibilidad práctica.
+El repositorio tiene un tamaño de 8 GB, lo que indica que el modelo es considerablemente grande, probablemente con cientos de millones de parámetros. Sin embargo, la ficha del modelo no proporciona detalles técnicos específicos sobre la arquitectura, el entrenamiento o el rendimiento. El acceso al modelo está restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso restringido puede limitar su disponibilidad práctica.
 
 Este modelo es relevante para el procesamiento de voz en tayiko, un idioma con pocos recursos en el ámbito del ASR. Su carácter offline y su orientación a Windows lo hacen útil para aplicaciones de escritorio en entornos con conectividad limitada o donde la privacidad es prioritaria.
 
@@ -58,7 +58,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (AS
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso inmediato.
 - Documentacion escasa: no se proporcionan detalles tecnicos sobre arquitectura, entrenamiento, rendimiento ni limitaciones especificas.
 - Idioma limitado: el modelo esta disenado exclusivamente para tayiko, por lo que no es util para otros idiomas.
 - Posible sesgo en el entrenamiento: al no conocer los datos de entrenamiento, no se puede evaluar si existen sesgos de genero, dialecto o acento.
@@ -67,4 +67,4 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (AS
 
 ## Enlaces
 
-- [HuggingFace: Tohirju/tajik-stt-windows-app](https://huggingface.co/Tohirju/tajik-stt-windows-app)
+- [Hugging Face: Tohirju/tajik-stt-windows-app](https://huggingface.co/Tohirju/tajik-stt-windows-app)

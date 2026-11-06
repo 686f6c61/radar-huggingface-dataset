@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Flash-V2-oQ5e-mtp es una versión cuantizada a 5 bits del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresión: aplica cuantización de precisión mixta con la herramienta oQ (oMLX v0.7.0) sobre los pesos originales y los empaqueta en formato MLX safetensors, pensado específicamente para ejecución en Apple Silicon mediante la librería MLX. El resultado es un repositorio de 20,3 GB que contiene 27.781.427.952 parámetros (unos 27,8 mil millones) almacenados con 5 bits por peso y tamaño de grupo de 64.
+Qwopus3.8-27B-Flash-V2-oQ5e-mtp es una versión cuantizada a 5 bits del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresión: aplica cuantización de precisión mixta con la herramienta oQ (oMLX v0.7.0) sobre los pesos originales y los empaqueta en formato MLX safetensors, pensado específicamente para ejecución en Apple Silicon mediante la librería MLX. El resultado es un repositorio de 20,3 GB que contiene 27.781.427.952 parámetros (unos 27,8 mil millones) almacenados con 5 bits por peso y tamaño de grupo de 64.
 
 El modelo subyacente, Qwopus3.8-27B-Flash-V2, es un post-entrenamiento de Qwopus3.8-27B-Flash, que a su vez deriva de Qwen3.8-27B. Según la documentación del autor original (Jackrong), esta familia está optimizada para cargas de trabajo agénticas: reduce el razonamiento ineficaz, acelera la finalización de tareas y mejora el formateo de código Python, con el objetivo de operar en entornos con recursos limitados. El sufijo "mtp" del nombre hace referencia a Multi-Token Prediction, un mecanismo de predicción de múltiples tokens por paso que se usa habitualmente como cabecera de borrador en decodificación especulativa.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-mtp (este) | 27,8B | no disponible | MLX safetensors, 5 bits, grupo 64 | no disponible | HuggingFace, 0 descargas |
-| scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp | no disponible (mismo modelo base, 4 bits) | no disponible | MLX safetensors, 4 bits | no disponible | HuggingFace, en la misma colección |
-| Jackrong/Qwopus3.8-27B-Flash-V2 (modelo base) | 27B | no disponible | safetensors bf16 | no disponible | HuggingFace y API en Featherless |
-| Jackrong/Qwopus3.8-27B-Flash (version anterior) | 27B | no disponible | safetensors bf16 | no disponible | HuggingFace, API en Featherless, GGUF de terceros (56,7 GB) |
+| scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-mtp (este) | 27,8B | no disponible | MLX safetensors, 5 bits, grupo 64 | no disponible | Hugging Face, 0 descargas |
+| scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp | no disponible (mismo modelo base, 4 bits) | no disponible | MLX safetensors, 4 bits | no disponible | Hugging Face, en la misma colección |
+| Jackrong/Qwopus3.8-27B-Flash-V2 (modelo base) | 27B | no disponible | safetensors bf16 | no disponible | Hugging Face y API en Featherless |
+| Jackrong/Qwopus3.8-27B-Flash (version anterior) | 27B | no disponible | safetensors bf16 | no disponible | Hugging Face, API en Featherless, GGUF de terceros (56,7 GB) |
 | Qwopus3.8 27b Flash (GGUF, terceros) | 27B | no disponible | GGUF, 56,7 GB | no disponible | local-ai-zone, 172.520 descargas, 244 likes |
 
 La comparación relevante es de compromiso memoria/fidelidad: este repositorio reduce los ~55,6 GB de pesos bf16 a 20,3 GB, mientras que la variante oQ4e-mtp del mismo autor baja aún más el requisito a costa de mayor pérdida de precisión. No se dispone de datos de calidad que permitan cuantificar esa pérdida en ninguno de los dos casos.
@@ -94,7 +94,7 @@ La comparación relevante es de compromiso memoria/fidelidad: este repositorio r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ5e-mtp
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Colección del autor con las variantes oQe MTP: https://huggingface.co/collections/scottlowry/qwopus38-27b-flash-oqe-mtp
 - Variante de 4 bits del mismo autor: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp

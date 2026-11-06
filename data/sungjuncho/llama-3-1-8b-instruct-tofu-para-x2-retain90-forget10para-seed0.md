@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (TOFU-para x2 retain90 forget10para, seed 0) | 8,03 B | no disponible | Referencia de *untraining* en TOFU-para | llama3.1 | HuggingFace, 259 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 K (según ficha de Meta) | Modelo instructivo de propósito general | llama3.1 | HuggingFace, ampliamente disponible |
-| Modelos de la colección TOFU-para con otras configuraciones (retain/forget, semillas) | 8,03 B | no disponible | Variantes del mismo protocolo experimental | llama3.1 | HuggingFace, colección pública |
+| Este modelo (TOFU-para x2 retain90 forget10para, seed 0) | 8,03 B | no disponible | Referencia de *untraining* en TOFU-para | llama3.1 | Hugging Face, 259 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 K (según ficha de Meta) | Modelo instructivo de propósito general | llama3.1 | Hugging Face, ampliamente disponible |
+| Modelos de la colección TOFU-para con otras configuraciones (retain/forget, semillas) | 8,03 B | no disponible | Variantes del mismo protocolo experimental | llama3.1 | Hugging Face, colección pública |
 | Métodos de desaprendizaje sobre TOFU (p. ej. los evaluados en open-unlearning) | variable | variable | Modelos desaprendidos frente a los que se compara | variable | Repositorio open-unlearning |
 
 La comparación relevante no es de rendimiento general sino de rol experimental: frente a Llama-3.1-8B-Instruct, este modelo ha visto un subconjunto reducido de datos durante 5 épocas; frente a un modelo desaprendido, representa el escenario en que el olvido de la formulación original es total por construcción, no por un algoritmo.
@@ -88,7 +88,7 @@ La comparación relevante no es de rendimiento general sino de rol experimental:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0
 - Colección TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

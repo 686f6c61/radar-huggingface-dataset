@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/codewithdark/wildtrack-c1
+- Repositorio Hugging Face: https://huggingface.co/codewithdark/wildtrack-c1
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la busqueda web.

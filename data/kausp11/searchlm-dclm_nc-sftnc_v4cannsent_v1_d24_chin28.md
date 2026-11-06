@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Search-LLM (DCLM-Edu 1.4B, SFT) es un modelo de lenguaje de tipo generativo entrenado por el usuario de HuggingFace Kausp11, basado en la infraestructura nanochat y preentrenado con una metodología de "search-enabled pretraining", es decir, con datos que incorporan bloques de búsqueda web simulados. El modelo se ha sometido a un ajuste fino supervisado (SFT) sobre conversaciones con capacidades de llamada a herramientas y bloques de búsqueda, lo que lo orienta hacia tareas de generación de texto con acceso a información externa.
+Search-LLM (DCLM-Edu 1.4B, SFT) es un modelo de lenguaje de tipo generativo entrenado por el usuario de Hugging Face Kausp11, basado en la infraestructura nanochat y preentrenado con una metodología de "search-enabled pretraining", es decir, con datos que incorporan bloques de búsqueda web simulados. El modelo se ha sometido a un ajuste fino supervisado (SFT) sobre conversaciones con capacidades de llamada a herramientas y bloques de búsqueda, lo que lo orienta hacia tareas de generación de texto con acceso a información externa.
 
 Su relevancia radica en la exploración de modelos pequeños (en torno a 2.600 millones de parámetros según los metadatos de safetensors, aunque la model card lo denomina "1.4B") que integran de forma nativa tokens especiales de búsqueda web (`<WEB_QUERY>`, `</WEB_QUERY>`, `<WEB_RESPONSE>`, `</WEB_RESPONSE>`), permitiendo flujos de trabajo de generación aumentada con recuperación de información. Utiliza el tokenizador de SmolLM2 ampliado con dichos tokens de búsqueda y emplea un formato de chat sencillo (`User: ...\n\nAssistant: ...`).
 
@@ -82,5 +82,5 @@ El modelo se diferencia de sus alternativas en su entrenamiento explicito con bl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d24_chin28
+- Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d24_chin28
 - Paper, repositorio de entrenamiento y demos: no disponibles (la model card menciona el origen interno "RCP `search-lm/ckpts/dclm_nc/sftnc_v4cannsent_v1_d24_chin28`" sin enlace publico)

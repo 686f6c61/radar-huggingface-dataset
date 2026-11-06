@@ -34,7 +34,7 @@ No se especifica en la informacion disponible el numero de tokens de entrenamien
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponibles.
 - Capacidad especial: el checkpoint esta disenado como sujeto experimental para medir el efecto de la compresion SVD sobre la tasa de exito de ataques (ASR) y sobre el rechazo excesivo, no como modelo con modos especiales (thinking, vision o audio).
-- Compatibilidad de despliegue: etiquetado con `text-generation-inference` y `endpoints_compatible` en HuggingFace.
+- Compatibilidad de despliegue: etiquetado con `text-generation-inference` y `endpoints_compatible` en Hugging Face.
 
 ## Casos de uso
 
@@ -72,10 +72,10 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_remove40_swapgapiter_rankunit_b010 | 8.030.261.248 en safetensors; fraccion densa 0,6003 | no disponible | Meta Llama 3 Community License | HuggingFace (0 descargas, 0 likes) | AdvBench ASR 0,0154; StrongREJECT ASR 0,1150; ppl WikiText-2 31,4740 |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | no disponible en la informacion proporcionada | Meta Llama 3 Community License | HuggingFace, ampliamente desplegado | no disponible en la informacion proporcionada |
-| meta-llama/Meta-Llama-3-8B (preentrenado) | 8.030.261.248 | no disponible en la informacion proporcionada | Meta Llama 3 Community License | HuggingFace | no disponible en la informacion proporcionada |
-| Otras celdas del grid de compresion SVD del mismo autor | no disponible | no disponible | Meta Llama 3 Community License | HuggingFace | no disponible |
+| svd-safety-l3_swift_remove40_swapgapiter_rankunit_b010 | 8.030.261.248 en safetensors; fraccion densa 0,6003 | no disponible | Meta Llama 3 Community License | Hugging Face (0 descargas, 0 likes) | AdvBench ASR 0,0154; StrongREJECT ASR 0,1150; ppl WikiText-2 31,4740 |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | no disponible en la informacion proporcionada | Meta Llama 3 Community License | Hugging Face, ampliamente desplegado | no disponible en la informacion proporcionada |
+| meta-llama/Meta-Llama-3-8B (preentrenado) | 8.030.261.248 | no disponible en la informacion proporcionada | Meta Llama 3 Community License | Hugging Face | no disponible en la informacion proporcionada |
+| Otras celdas del grid de compresion SVD del mismo autor | no disponible | no disponible | Meta Llama 3 Community License | Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_rankunit_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

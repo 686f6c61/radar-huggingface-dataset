@@ -117,7 +117,7 @@ Comparativa con el modelo base:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infomiho/diktafon-polisher-hr-1
+- Modelo en Hugging Face: https://huggingface.co/infomiho/diktafon-polisher-hr-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo de dictado previo en la pipeline: https://huggingface.co/infomiho/diktafon-dictate-hr-1
 - Version GGUF para llama.cpp: https://huggingface.co/infomiho/diktafon-polisher-hr-1-GGUF

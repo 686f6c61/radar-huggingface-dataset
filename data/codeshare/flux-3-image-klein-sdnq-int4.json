@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "codeShare/flux-3-image-klein-sdnq-int4",
+  "slug": "codeshare-flux-3-image-klein-sdnq-int4",
+  "author": "codeShare",
+  "url": "https://huggingface.co/codeShare/flux-3-image-klein-sdnq-int4",
+  "created_at": "2026-11-02T19:24:16.000Z",
+  "updated_at": "2026-11-02T20:05:38.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 2906184448,
+  "parameters_human": "2.91B",
+  "storage_bytes": 15206618300,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codeshare - Share code in real-time with developers in your browser",
+      "url": "https://codeshare.io/",
+      "snippet": "Code with your team Open a Codeshare editor, write or copy code, then share it with friends and colleagues. Pair program and …"
+    },
+    {
+      "title": "codeShare/flux-3-image-klein-sdnq-int4 · Hugging Face",
+      "url": "https://huggingface.co/codeShare/flux-3-image-klein-sdnq-int4",
+      "snippet": "FLUX 3 Image Klein is a 5.6B open weights model for text-to-image generation and image editing. It takes a prompt and up to 10 reference images and returns one image. Text-to-image, single-reference edits and multi-reference compositions run through the same model, with Qwen3-VL-4B-Instruct as the ..."
+    },
+    {
+      "title": "CodeShare — Real-Time Collaborative Code Editor Online",
+      "url": "https://www.codeshare.in/",
+      "snippet": "Write and run HTML, CSS, and JavaScript together in real time. Share one link, see everyone's edits and the live output instantly — …"
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux-3-image-klein: FLUX 3 Image Klein ...",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "snippet": "FLUX 3 Image Klein Model page • Weights • Demo This repository contains the reference inference code for FLUX 3 Image Klein, the 5.6B open weights image model from Black Forest Labs: text-to-image, editing with up to 10 reference images, and layout control with bounding boxes, through one model."
+    },
+    {
+      "title": "Log in - Codeshare",
+      "url": "https://codeshare.io/login",
+      "snippet": "Log in to access your saved code Email address"
+    }
+  ]
+}

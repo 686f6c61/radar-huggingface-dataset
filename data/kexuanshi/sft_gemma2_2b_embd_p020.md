@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_gemma2_2b_embd_p020` es un ajuste fino por supervisión (SFT) publicado por el usuario KexuanShi en HuggingFace. El identificador y la etiqueta `gemma2` de los tags indican que parte de un modelo de la familia Gemma 2, concretamente de la variante de 2B de parametros, si bien el autor no declara explicitamente cual es el modelo base: la model card contiene un enlace roto al repositorio base (`https://huggingface.co/None`). El modelo se ha entrenado con la libreria TRL (version 1.13.0) y esta orientado a generacion de texto.
+`sft_gemma2_2b_embd_p020` es un ajuste fino por supervisión (SFT) publicado por el usuario KexuanShi en Hugging Face. El identificador y la etiqueta `gemma2` de los tags indican que parte de un modelo de la familia Gemma 2, concretamente de la variante de 2B de parametros, si bien el autor no declara explicitamente cual es el modelo base: la model card contiene un enlace roto al repositorio base (`https://huggingface.co/None`). El modelo se ha entrenado con la libreria TRL (version 1.13.0) y esta orientado a generacion de texto.
 
 El unico dato cuantitativo fiable que aporta el repositorio es el numero de parametros reales, 2.614.341.888 (unos 2,61 mil millones), extraido de los pesos en formato safetensors, y un tamano de repositorio de 26,2 GB. La model card es practicamente un esqueleto autogenerado por TRL: no incluye descripcion del dataset de entrenamiento, hiperparametros, licencia, idiomas soportados ni resultados de evaluacion. El sufijo `embd_p020` del nombre sugiere algun tipo de configuracion o ablacion en la parte de embeddings, pero su significado no se documenta en ningun sitio del repositorio.
 
@@ -30,7 +30,7 @@ Por todo ello, la ficha debe leerse como una descripcion estructural del artefac
 
 No se dispone de informacion tecnica detallada sobre la arquitectura en la model card. Los tags (`gemma2`, `text-generation`) y el nombre del repositorio apuntan a un transformer decoder-only derivado de Gemma 2 2B, pero el autor no especifica la variante exacta, la configuracion de atencion, el vocabulario ni la ventana de contexto efectiva. Cualquier afirmacion mas concreta sobre atencion local/global alternada, soft-capping de logits o atencion con consultas agrupadas (GQA) seria una extrapolacion a partir del modelo base y no un dato confirmado en este repositorio.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se ha realizado un ajuste supervisado (SFT) mediante TRL. No se publican el dataset, el numero de tokens, la composicion de los datos, la duracion del entrenamiento ni si hubo fases posteriores de alineacion (RLHF, DPO, RLVR). Las versiones de framework declaradas (TRL 1.13.0, Transformers 5.17.0, PyTorch 2.13.0, Datasets 5.0.1, Tokenizers 0.23.2) corresponden a un entorno muy reciente y no aportan informacion sobre el procedimiento mas alla de confirmar el uso de la pila de HuggingFace. El tamano del repositorio, 26,2 GB frente a los aproximadamente 5,2 GB que ocuparian 2,61 mil millones de parametros en bfloat16, sugiere la presencia de checkpoints intermedios, estados del optimizador o copias adicionales de pesos, aunque esto es una observacion sobre el almacenamiento y no un dato declarado.
+En cuanto al entrenamiento, la unica informacion disponible es que se ha realizado un ajuste supervisado (SFT) mediante TRL. No se publican el dataset, el numero de tokens, la composicion de los datos, la duracion del entrenamiento ni si hubo fases posteriores de alineacion (RLHF, DPO, RLVR). Las versiones de framework declaradas (TRL 1.13.0, Transformers 5.17.0, PyTorch 2.13.0, Datasets 5.0.1, Tokenizers 0.23.2) corresponden a un entorno muy reciente y no aportan informacion sobre el procedimiento mas alla de confirmar el uso de la pila de Hugging Face. El tamano del repositorio, 26,2 GB frente a los aproximadamente 5,2 GB que ocuparian 2,61 mil millones de parametros en bfloat16, sugiere la presencia de checkpoints intermedios, estados del optimizador o copias adicionales de pesos, aunque esto es una observacion sobre el almacenamiento y no un dato declarado.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - A esa cifra hay que sumar la cache KV, cuyo tamano depende de la longitud de contexto efectiva, el numero de capas y el batch; ninguno de esos valores se documenta en el repositorio, por lo que no se puede dar una cifra cerrada.
 - GPU recomendadas: para inferencia en precision completa, una GPU con 8-12 GB de VRAM es suficiente (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070). Para entrenamiento o ajuste fino completo conviene una A100, H100 o L40S; para LoRA basta con una RTX 3090 o 4090.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas en cuantizacion de 8 o 4 bits, y en tarjetas con 12 GB o mas en bfloat16.
-- Opciones de despliegue: transformers es la via declarada. Al publicarse en safetensors y con `endpoints_compatible` y `text-generation-inference` entre los tags, tambien es compatible con TGI y con HuggingFace Inference Endpoints. llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion que el autor no ha publicado.
+- Opciones de despliegue: transformers es la via declarada. Al publicarse en safetensors y con `endpoints_compatible` y `text-generation-inference` entre los tags, tambien es compatible con TGI y con Hugging Face Inference Endpoints. llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion que el autor no ha publicado.
 - Latencia y throughput: no disponible; no se publican mediciones de tokens por segundo ni de tiempo hasta el primer token. El tamano del repositorio (26,2 GB) implica ademas una descarga inicial considerable si se quieren todos los ficheros.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La ventaja diferencial de este repositorio frente a esas alternativas no puede e
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p020
+- Repositorio del modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p020
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Documentacion de TRL: https://huggingface.co/docs/trl
 - Referencia del modelo base presumible, Gemma 2 2B (no confirmada por el autor): https://huggingface.co/google/gemma-2-2b

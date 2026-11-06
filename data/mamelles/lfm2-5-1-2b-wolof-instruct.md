@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-1.2B-Wolof-Instruct | 1,32 mil millones | No disponible | No disponible | Repositorio HuggingFace publico; descrito por el autor como artefacto privado experimental |
-| LiquidAI/LFM2.5-1.2B-Base | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo base en HuggingFace |
+| LFM2.5-1.2B-Wolof-Instruct | 1,32 mil millones | No disponible | No disponible | Repositorio Hugging Face publico; descrito por el autor como artefacto privado experimental |
+| LiquidAI/LFM2.5-1.2B-Base | No disponible en la informacion proporcionada | No disponible | No disponible | Modelo base en Hugging Face |
 | Llama 3.2 1B Instruct | 1,24 mil millones | 128k | Licencia comunitaria de Llama | Pesos abiertos con aceptacion de terminos |
 | Qwen2.5 1.5B Instruct | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Amplia disponibilidad, incluidas variantes cuantizadas |
 | Gemma 2 2B Instruct | 2,6 mil millones | 8.192 tokens | Terminos de uso de Gemma | Pesos abiertos con aceptacion de terminos |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mamelles/LFM2.5-1.2B-Wolof-Instruct
+- Repositorio Hugging Face del modelo: https://huggingface.co/mamelles/LFM2.5-1.2B-Wolof-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
-- Organizacion LiquidAI en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion LiquidAI en Hugging Face: https://huggingface.co/LiquidAI
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo (los resultados correspondian a paginas de ayuda de Gmail sin relacion con el artefacto). No se dispone de paper, blog, repositorio de codigo ni demo adicionales en la informacion proporcionada.

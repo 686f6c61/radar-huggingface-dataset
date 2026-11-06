@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Rendimiento (SQuAD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlinaGonch/llama32-3b-squad-ratio-0.90-seed-44 | 3,2B | 128k | no disponible | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B | 3,2B | 128k | no aplica (modelo base) | Llama 3.2 Community | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8k | no disponible | Gemma Terms of Use | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128k | no disponible | MIT | HuggingFace |
+| AlinaGonch/llama32-3b-squad-ratio-0.90-seed-44 | 3,2B | 128k | no disponible | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B | 3,2B | 128k | no aplica (modelo base) | Llama 3.2 Community | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8k | no disponible | Gemma Terms of Use | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128k | no disponible | MIT | Hugging Face |
 
 La comparativa se basa en modelos de tamaño similar, pero no hay datos de rendimiento en SQuAD para ninguno de ellos. El modelo de AlinaGonch no ofrece ventajas verificables frente a sus alternativas debido a la falta de documentación.
 
@@ -77,7 +77,7 @@ La comparativa se basa en modelos de tamaño similar, pero no hay datos de rendi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.90-seed-44)
+- [Modelo en Hugging Face](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.90-seed-44)
 - [Modelo base Llama-3.2-3B](https://huggingface.co/meta-llama/Llama-3.2-3B)
 - [Modelo relacionado de la misma autora (ratio 0.30)](https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.30-r4)
 - [Ollama - llama3.2:3b](https://ollama.com/library/llama3.2:3b)

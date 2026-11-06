@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-9k_10k_11k_merge)
+- [Repositorio Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-9k_10k_11k_merge)
 - [Artículo sobre el método Linear de merge (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Modelo relacionado: sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage) (descrito en el paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment")

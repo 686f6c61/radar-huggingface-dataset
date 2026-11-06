@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su especialización vertical: en lugar de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Tipo Llama (según tags de HuggingFace: `llama`) |
+| Arquitectura | Tipo Llama (según tags de Hugging Face: `llama`) |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización vertical: en lugar de
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo del modelo base `marin-community/marin-8b-base`, que según los tags de HuggingFace utiliza una arquitectura de tipo Llama (probablemente Llama 2 o Llama 3, aunque no se especifica la variante). El proceso de entrenamiento se realizó con `llama-factory` y `transformers` 5.7.0, con PyTorch 2.13.0+cu130. Se emplearon 4 GPUs en paralelo, con un tamaño de batch total de 64 (batch por dispositivo de 2 y acumulación de gradientes de 8), una tasa de aprendizaje de 1e-05, scheduler de tipo coseno con warmup del 3% de los pasos, y una única época. El optimizador fue AdamW con betas (0.9, 0.999) y epsilon 1e-08.
+El modelo es un fine-tuning completo del modelo base `marin-community/marin-8b-base`, que según los tags de Hugging Face utiliza una arquitectura de tipo Llama (probablemente Llama 2 o Llama 3, aunque no se especifica la variante). El proceso de entrenamiento se realizó con `llama-factory` y `transformers` 5.7.0, con PyTorch 2.13.0+cu130. Se emplearon 4 GPUs en paralelo, con un tamaño de batch total de 64 (batch por dispositivo de 2 y acumulación de gradientes de 8), una tasa de aprendizaje de 1e-05, scheduler de tipo coseno con warmup del 3% de los pasos, y una única época. El optimizador fue AdamW con betas (0.9, 0.999) y epsilon 1e-08.
 
 El dataset de entrenamiento, `capsd_marin-8b-base-n6000-finance-fincot-finqa-clean6k__mix_finance_ppl_b2000_s0`, combina datos de finanzas, fincot y finqa (un conjunto de preguntas y respuestas financieras). No se proporciona información sobre el número total de tokens, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá del fine-tuning completo.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b2000_s0` | 8.03B | No disponible | Finanzas | `other` | HuggingFace |
-| `marin-community/marin-8b-base` (modelo base) | 8.03B (presumiblemente) | No disponible | General | No disponible | HuggingFace |
-| `AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0` | 8.03B (presumiblemente) | No disponible | Finanzas (deduplicado) | `other` | HuggingFace |
+| `AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b2000_s0` | 8.03B | No disponible | Finanzas | `other` | Hugging Face |
+| `marin-community/marin-8b-base` (modelo base) | 8.03B (presumiblemente) | No disponible | General | No disponible | Hugging Face |
+| `AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0` | 8.03B (presumiblemente) | No disponible | Finanzas (deduplicado) | `other` | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, etc.) para estos modelos. La comparación se limita a características declaradas.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, etc.) para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b2000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Otros modelos similares de la misma autora:
   - https://huggingface.co/AmberYifan/capsd-finance-dedup-marin-8b-base-finance_cap_b2000_s0

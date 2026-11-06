@@ -106,7 +106,7 @@ Sunlight v1.2 es la misma fusión en AWQ 4-bit, más ligera pero sin datos de ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/Twilight-v1.2-FP8
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/Twilight-v1.2-FP8
 - Adaptador LoRA v1.2: https://huggingface.co/CaptchaKraken/CaptchaKraken-Lora-v1.2
 - Variante Sunlight v1.2 (AWQ 4-bit): https://huggingface.co/CaptchaKraken/Sunlight-v1.2-AWQ-4bit
 - Versión anterior Twilight-FP8: https://huggingface.co/CaptchaKraken/Twilight-FP8

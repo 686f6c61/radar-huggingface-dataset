@@ -33,7 +33,7 @@ La cabeza predictiva es una unica transformacion lineal `z = w.x + b` que pliega
 - Clasificacion binaria con salida calibrada (`p_sufficient` y `p_insufficient`).
 - Enrutamiento condicional: recomendar el modelo ligero o el pesado segun un umbral configurable por preferencia de calidad.
 - Bloque de recomendacion (`advice`, modo `none_with_prediction`): con prediccion, no sugiere el modelo pesado; sin prediccion, decide el asesor de longitud de la aplicacion.
-- Inferencia determinista y reproducible mediante llama.cpp, sin dependencia del tokenizer de HuggingFace ni de sklearn.
+- Inferencia determinista y reproducible mediante llama.cpp, sin dependencia del tokenizer de Hugging Face ni de sklearn.
 - No soporta tool calling, function calling, agentes, vision, audio ni generacion de texto.
 - Multilingue: no; solo ingles.
 
@@ -43,7 +43,7 @@ La cabeza predictiva es una unica transformacion lineal `z = w.x + b` que pliega
 - Control de latencia en servicios interactivos: con entradas de 275 tokens la pasada de embeddings tarda 0,072 s en Metal, frente a 0,97 s del resumen completo, por lo que la sonda anade una fraccion pequena al tiempo de respuesta y permite decidir en milisegundos.
 - Monitorizacion de calidad en produccion: registrar la distribucion de `p_sufficient` por dominio para detectar desplazamientos en la dificultad de los textos y ajustar el umbral operativo.
 - Filtrado previo en lotes de documentos largos: en entradas de 2.494 tokens la pasada tarda 0,742 s, lo que permite clasificar lotes antes de gastar computo en resumenes que probablemente fallaran.
-- Investigacion sobre enrutamiento entre modelos: usar la sonda como linea base ligera y comparable frente a sondas sobre estados ocultos de HuggingFace en experimentos de cascada.
+- Investigacion sobre enrutamiento entre modelos: usar la sonda como linea base ligera y comparable frente a sondas sobre estados ocultos de Hugging Face en experimentos de cascada.
 - Seleccion de politica por preferencia de calidad: la interpolacion del umbral entre 0,5 y 0,95 permite configurar el equilibrio entre coste y fidelidad sin reentrenar el modelo.
 - Auditoria de riesgo responsable: emplear la senal de insuficiencia como indicador adicional, junto a otras senales, en la revision de resumenes automaticos.
 
@@ -56,7 +56,7 @@ Resultados declarados por el autor en la model card (el model-index no contiene 
 | Validacion | 206 | 30 | 0,710 [0,597, 0,816] | 0,410 [0,250, 0,581] | n/a | n/a |
 | Test | 151 | 33 | 0,714 [0,611, 0,814] | 0,490 [0,332, 0,648] | 0,155 [0,118, 0,197] | 0,057 [0,035, 0,134] |
 
-Intervalos del 95 % por bootstrap (2.000 remuestreos, semilla 42). Diferencias pareadas de AUROC en test: frente a la opcion (d), +0,053 [-0,041, +0,148]; frente a la sonda sobre estados ocultos de HuggingFace, -0,022 [-0,040, -0,004]. El conjunto de test son los 151 textos ingleses etiquetados del experimento multilingue, reutilizados aqui para confirmar esta variante desplegable.
+Intervalos del 95 % por bootstrap (2.000 remuestreos, semilla 42). Diferencias pareadas de AUROC en test: frente a la opcion (d), +0,053 [-0,041, +0,148]; frente a la sonda sobre estados ocultos de Hugging Face, -0,022 [-0,040, -0,004]. El conjunto de test son los 151 textos ingleses etiquetados del experimento multilingue, reutilizados aqui para confirmar esta variante desplegable.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ Intervalos del 95 % por bootstrap (2.000 remuestreos, semilla 42). Diferencias p
 
 | Modelo | Parametros | Contexto | Tarea | AUROC en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| light-sufficiency-predictor (GGUF, 8 bloques) | 281.431.040 (base) | no disponible | Clasificacion de suficiencia | 0,714 [0,611, 0,814] | Apache-2.0 (no confirmada para el paquete) | HuggingFace, GGUF |
-| Sonda sobre estados ocultos de HuggingFace (misma familia) | 281.431.040 (base) | no disponible | Clasificacion de suficiencia | 0,736 (implícito: +0,022 frente a la variante GGUF) | no disponible | no disponible (referenciada en la model card) |
+| light-sufficiency-predictor (GGUF, 8 bloques) | 281.431.040 (base) | no disponible | Clasificacion de suficiencia | 0,714 [0,611, 0,814] | Apache-2.0 (no confirmada para el paquete) | Hugging Face, GGUF |
+| Sonda sobre estados ocultos de Hugging Face (misma familia) | 281.431.040 (base) | no disponible | Clasificacion de suficiencia | 0,736 (implícito: +0,022 frente a la variante GGUF) | no disponible | no disponible (referenciada en la model card) |
 | Opcion (d) (referenciada en la model card) | no disponible | no disponible | Clasificacion de suficiencia | 0,661 (implícito: -0,053 frente a la variante GGUF) | no disponible | no disponible |
-| Qwen3-0.6B (modelo base) | 0,6 B | no disponible | Generacion de texto | no aplica | Apache-2.0 | HuggingFace |
+| Qwen3-0.6B (modelo base) | 0,6 B | no disponible | Generacion de texto | no aplica | Apache-2.0 | Hugging Face |
 
 Las cifras de las dos sondas comparadas se derivan de las diferencias pareadas publicadas; no se dispone de sus intervalos completos ni de sus especificaciones.
 
@@ -86,14 +86,14 @@ Las cifras de las dos sondas comparadas se derivan de las diferencias pareadas p
 - No lee el resumen generado, por lo que no puede decidir por si solo si un resumen es fiable; debe usarse como senal adicional.
 - La calibracion de Platt se ajusto sobre los mismos 206 textos de validacion usados para elegir los puntos del umbral, por lo que la calibracion es optimista.
 - En validacion, la sonda no separa los fallos entre los textos enrutados al modelo ligero, segun el analisis de umbrales de la model card.
-- La salida de llama.cpp incluye output_norm, de modo que las features difieren de los estados ocultos de HuggingFace y exigen la receta GGUF exacta.
+- La salida de llama.cpp incluye output_norm, de modo que las features difieren de los estados ocultos de Hugging Face y exigen la receta GGUF exacta.
 - Licencia: la cabecera Apache-2.0 corresponde al modelo base Qwen3-0.6B y no esta confirmada para el paquete completo; las etiquetas del juez Gemma 3 12B estan sujetas a los Terminos de Uso de Gemma, no a una licencia de codigo abierto.
 - Los textos fuente provienen de datasets publicos (CNN/DailyMail, DialogSum, PubMed summarization, GovReport) sin licencias registradas en el repositorio; deben verificarse antes de publicar o reutilizar el modelo.
 - La model card se marca como borrador y el autor indica que nada se ha subido; el estado de publicacion del artefacto debe confirmarse.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AcidHunter/light-sufficiency-predictor
+- Hugging Face: https://huggingface.co/AcidHunter/light-sufficiency-predictor
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - GGUF de origen: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
 - Terminos de uso de Gemma 3 12B (juez de etiquetas): https://ai.google.dev/gemma/terms

@@ -4,7 +4,7 @@
 
 Black-Onyx-5B es un modelo de lenguaje especializado en ciberseguridad, desarrollado por Clownstein como fine-tune del modelo base google/gemma-4-E2B-it. Su propósito es abordar tareas de generación de código seguro, inteligencia de amenazas y detección de vulnerabilidades, áreas críticas en el desarrollo de software y la protección de infraestructuras digitales.
 
-El modelo cuenta con 5.104.297.539 parámetros y se distribuye en formato safetensors con un tamaño de repositorio de 19,6 GB. Su acceso en HuggingFace está restringido (gated), lo que obliga a aceptar condiciones adicionales para su uso. No se han publicado especificaciones sobre la longitud de contexto, los idiomas soportados ni los tipos de cuantización disponibles.
+El modelo cuenta con 5.104.297.539 parámetros y se distribuye en formato safetensors con un tamaño de repositorio de 19,6 GB. Su acceso en Hugging Face está restringido (gated), lo que obliga a aceptar condiciones adicionales para su uso. No se han publicado especificaciones sobre la longitud de contexto, los idiomas soportados ni los tipos de cuantización disponibles.
 
 Al tratarse de un modelo de la familia Gemma 4, hereda la arquitectura base de dicha familia, aunque no se detallan innovaciones técnicas específicas en la información disponible. La relevancia actual del modelo radica en la creciente demanda de herramientas de IA aplicadas a la seguridad ofensiva y defensiva, así como en la automatización del análisis de código y amenazas.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia (orientativa, basada en 5.1B parámetros): en FP16 se requieren aproximadamente 10-12 GB; en INT8, unos 5-6 GB; en INT4, unos 3-4 GB. Estas cifras no consideran el overhead de activaciones ni la longitud del contexto.
 - GPU recomendadas: una RTX 4090 (24 GB) puede ejecutar el modelo en FP16 con margen suficiente; una A100 40GB o H100 son adecuadas para despliegues con mayor concurrencia. Para cuantizaciones INT4, una RTX 3060 12GB puede ser suficiente.
 - ¿Cabe en GPU de consumo? Sí, con cuantización INT4 cabe en GPUs de 6-8 GB de VRAM; en FP16 se necesita al menos 12 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers con HuggingFace. No se han publicado configuraciones específicas de despliegue para este modelo.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers con Hugging Face. No se han publicado configuraciones específicas de despliegue para este modelo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,8 +63,8 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 | Modelo | Parámetros | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Black-Onyx-5B | 5.1B | Ciberseguridad | Gemma | Gated en HuggingFace |
-| Black-Onyx-12B | 12B (según nombre) | Ciberseguridad | Gemma | Gated en HuggingFace |
+| Black-Onyx-5B | 5.1B | Ciberseguridad | Gemma | Gated en Hugging Face |
+| Black-Onyx-12B | 12B (según nombre) | Ciberseguridad | Gemma | Gated en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,11 +73,11 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 - Limitaciones de contexto: la longitud de contexto no está especificada, por lo que el rendimiento en entradas largas es desconocido y puede degradarse.
 - Limitaciones de idioma: no se especifican los idiomas soportados; es probable que esté optimizado para inglés, dado el ámbito de ciberseguridad y la etiqueta de región "us".
 - Restricciones de licencia: la licencia Gemma de Google impone condiciones de uso, incluyendo restricciones para uso comercial. Es obligatorio revisar el acuerdo de licencia antes de cualquier despliegue.
-- Acceso restringido: el modelo está en gated en HuggingFace, por lo que se deben aceptar condiciones adicionales para poder descargar y utilizar los pesos.
+- Acceso restringido: el modelo está en gated en Hugging Face, por lo que se deben aceptar condiciones adicionales para poder descargar y utilizar los pesos.
 - Datos de entrenamiento no públicos: no se proporciona información sobre el dataset de fine-tuning, lo que dificulta evaluar su robustez, cobertura y posibles sesgos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Clownstein/Black-Onyx-5B
+- Modelo en Hugging Face: https://huggingface.co/Clownstein/Black-Onyx-5B
 - Modelo hermano Black-Onyx-12B: https://huggingface.co/Clownstein/Black-Onyx-12B
 - Documentación de API en GitHub: https://github.com/Clownstein/Black-Onyx/blob/main/docs/API.md

@@ -1,7 +1,7 @@
 # umaraliumc/GFXVSAI
 
 ## Resumen
-El modelo identificado como `umaraliumc/GFXVSAI` está alojado en HuggingFace, pero no se dispone de ninguna información técnica, documentación o metadatos descriptivos más allá del identificador, la fecha de creación (23 de agosto de 2026) y una etiqueta regional `region:us`. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo. No se ha publicado ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. Por tanto, no es posible evaluar su relevancia técnica ni su utilidad práctica. Cualquier uso en producción debería considerarse no viable hasta que el autor publique información completa.
+El modelo identificado como `umaraliumc/GFXVSAI` está alojado en Hugging Face, pero no se dispone de ninguna información técnica, documentación o metadatos descriptivos más allá del identificador, la fecha de creación (23 de agosto de 2026) y una etiqueta regional `region:us`. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo. No se ha publicado ningún dato sobre arquitectura, parámetros, entrenamiento o capacidades. Por tanto, no es posible evaluar su relevancia técnica ni su utilidad práctica. Cualquier uso en producción debería considerarse no viable hasta que el autor publique información completa.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -42,5 +42,5 @@ No disponible. No existe información suficiente para establecer una comparació
 - No se recomienda su uso en entornos de producción o investigación hasta que el autor publique información completa y verificable.
 
 ## Enlaces
-- [Repositorio en HuggingFace](https://huggingface.co/umaraliumc/GFXVSAI)
+- [Repositorio en Hugging Face](https://huggingface.co/umaraliumc/GFXVSAI)
 - Los resultados de búsqueda web no aportan información específica sobre este modelo; se refieren a listados generales de modelos y archivos de terceros.

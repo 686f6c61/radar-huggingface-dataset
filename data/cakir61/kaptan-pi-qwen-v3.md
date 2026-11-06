@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cakir61/kaptan-pi-qwen-v3` es un repositorio publicado en HuggingFace por el usuario `cakir61` el 30 de agosto de 2026. La información disponible es extremadamente limitada: la model card es una plantilla genérica sin ningún dato concreto, el tamaño del repositorio es de 0.0 GB (lo que sugiere que no contiene pesos o que estos no se han subido correctamente) y no hay descargas ni valoraciones. El nombre del modelo sugiere una posible relación con la familia Qwen, pero no existe ninguna confirmación en la documentación ni en los metadatos.
+El modelo `cakir61/kaptan-pi-qwen-v3` es un repositorio publicado en Hugging Face por el usuario `cakir61` el 30 de agosto de 2026. La información disponible es extremadamente limitada: la model card es una plantilla genérica sin ningún dato concreto, el tamaño del repositorio es de 0.0 GB (lo que sugiere que no contiene pesos o que estos no se han subido correctamente) y no hay descargas ni valoraciones. El nombre del modelo sugiere una posible relación con la familia Qwen, pero no existe ninguna confirmación en la documentación ni en los metadatos.
 
 Dado que no se dispone de arquitectura, parámetros, datos de entrenamiento, licencia ni capacidades documentadas, no es posible evaluar el modelo ni recomendarlo para ningún caso de uso. Este repositorio parece estar vacío o ser un placeholder, por lo que cualquier intento de utilizarlo en producción sería inviable sin información adicional.
 
@@ -21,7 +21,7 @@ Dado que no se dispone de arquitectura, parámetros, datos de entrenamiento, lic
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens, el proceso de ajuste fino o cualquier innovación técnica. La model card es una plantilla automática de HuggingFace sin contenido rellenado. El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono, pero no aporta datos sobre el modelo en sí.
+No se ha publicado ninguna información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens, el proceso de ajuste fino o cualquier innovación técnica. La model card es una plantilla automática de Hugging Face sin contenido rellenado. El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono, pero no aporta datos sobre el modelo en sí.
 
 ## Capacidades
 
@@ -53,6 +53,6 @@ No disponible. No se puede comparar con otros modelos porque se desconocen las c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cakir61/kaptan-pi-qwen-v3
+- Repositorio en Hugging Face: https://huggingface.co/cakir61/kaptan-pi-qwen-v3
 - Referencia al paper de emisiones (tag del modelo): https://arxiv.org/abs/1910.09700
 - Enlaces de Qwen (relacionados solo por el nombre, no por confirmación): https://qwen.ai/home, https://arxiv.org/abs/2505.09388, https://pi.dev/packages/pi-qwen-provider?name=qwen

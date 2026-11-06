@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-reset-embed | 6.738.415.616 | no disponible (base 4.096) | Checkpoint de ablación (sin entrenamiento) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M (Llama 2 7B) | 4.096 | Fine-tune completo sobre TOFU | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 | Chat base de Llama 2 | llama2 | HuggingFace |
+| g-assismoraes/tofu-llama2-7b-reset-embed | 6.738.415.616 | no disponible (base 4.096) | Checkpoint de ablación (sin entrenamiento) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M (Llama 2 7B) | 4.096 | Fine-tune completo sobre TOFU | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 | Chat base de Llama 2 | llama2 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos checkpoints en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos checkpoints en la 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-embed
+- Hugging Face del modelo: https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-embed
 - Modelo base afinado sobre TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo original de referencia: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Otro modelo del mismo autor (referencia): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-curio7B-ptbr-S13-a025

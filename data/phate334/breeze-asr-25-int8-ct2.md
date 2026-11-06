@@ -77,7 +77,7 @@ Breeze-ASR-25 se distingue por su especializacion en mandarin taiwanes y code-sw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phate334/Breeze-ASR-25-int8-CT2
+- Modelo en Hugging Face: https://huggingface.co/phate334/Breeze-ASR-25-int8-CT2
 - Modelo base (MediaTek-Research/Breeze-ASR-25): https://huggingface.co/MediaTek-Research/Breeze-ASR-25
 - Repositorio GitHub de Breeze-ASR-25: https://github.com/mtkresearch/Breeze-ASR-25
 - Paper (arXiv:2506.11130): https://arxiv.org/abs/2506.11130

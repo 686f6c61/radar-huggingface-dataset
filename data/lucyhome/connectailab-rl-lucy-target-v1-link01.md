@@ -70,9 +70,9 @@ La evaluación de la caminata se realizó con una aproximación 2D basada en una
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucy-target-v1-link01 | Adaptador LoRA sobre 0,8B | no disponible | Decisión de locomoción (5 acciones) | Apache 2.0 | HuggingFace |
+| connectailab-rl-lucy-target-v1-link01 | Adaptador LoRA sobre 0,8B | no disponible | Decisión de locomoción (5 acciones) | Apache 2.0 | Hugging Face |
 | Cerebro PPO original (referencia del autor) | no aplica (política RL) | no aplica | Decisión de locomoción (5 acciones) | no disponible | Entorno web / código del proyecto |
-| connectailab-rl-jay-v1-link01 (mencionado en la model card) | Adaptador LoRA sobre 0,8B | no disponible | Decisión de locomoción | Apache 2.0 | HuggingFace |
+| connectailab-rl-jay-v1-link01 (mencionado en la model card) | Adaptador LoRA sobre 0,8B | no disponible | Decisión de locomoción | Apache 2.0 | Hugging Face |
 
 No se dispone de comparaciones con modelos de propósito general ni con otros adaptadores de decisión de terceros en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones con modelos de propósito general ni con otros ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyhome/connectailab-rl-lucy-target-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/lucyhome/connectailab-rl-lucy-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

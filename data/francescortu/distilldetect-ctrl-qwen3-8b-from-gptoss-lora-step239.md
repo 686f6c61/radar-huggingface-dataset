@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | DistillDetect-ctrl-qwen3-8b-from-qwen35-lora | Qwen3-8B | Qwen3-5 (probable) | No disponible | No disponible | No disponible |
 | DistillDetect-Qwen2.5-1.5B-from-Qwen3-8B-s1 | Qwen2.5-1.5B | Qwen3-8B | No disponible | Apache 2.0 | No disponible |
 
-No se dispone de datos de rendimiento comparativo entre estos adaptadores. La comparativa se limita a la informacion estructural disponible en los repositorios de HuggingFace.
+No se dispone de datos de rendimiento comparativo entre estos adaptadores. La comparativa se limita a la informacion estructural disponible en los repositorios de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gptoss-lora-step239
+- Modelo en Hugging Face: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gptoss-lora-step239
 - Repositorio del proyecto DistillDetect: https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

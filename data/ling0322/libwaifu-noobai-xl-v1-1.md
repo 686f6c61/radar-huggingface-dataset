@@ -20,7 +20,7 @@ Su relevancia es practica: permite invocar el modelo directamente desde la CLI d
 | Idiomas soportados | no disponible. El prompt se escribe con etiquetas Danbooru/e621, mayoritariamente en ingles |
 | Licencia | fair-ai-public-license-1.0-sd (FAI-PL 1.0 SD). Prohibe el uso comercial; los modelos derivados y el trabajo del que provienen deben permanecer abiertos |
 | Formato de pesos | safetensors en float16, dividido en 4 fragmentos, mas manifiesto YAML y tokenizador JSON |
-| Tamano del repositorio | 14,2 GB (segun HuggingFace) |
+| Tamano del repositorio | 14,2 GB (segun Hugging Face) |
 | Tamano de los pesos | ~6,62 GiB segun el manifiesto: 1,88 + 1,88 + 1,87 + 0,99 GiB |
 | Resolucion recomendada | no disponible (el manifiesto sugiere una resolucion, no reproducida en la informacion proporcionada) |
 | Muestreador recomendado | Euler a |
@@ -69,16 +69,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Si cabe en GPU de consumo: si, en el rango de 8 a 12 GB de VRAM segun configuracion.
 - Opciones de despliegue: libwaifu es el destino nativo de este repositorio (CLI `waifu`, alias `sdxl:noob`). Los ficheros son safetensors convencionales, legibles por torch y numpy, por lo que tambien se pueden reconvertir a otros contenedores con el script `tools/sdxl_exporter.py` o volviendo al punto de control original para usarlos en otros entornos de difusion.
 - Latencia y throughput: no disponible. No se publican mediciones de tiempo por imagen ni de imagenes por segundo.
-- Almacenamiento: 14,2 GB de repositorio segun HuggingFace, frente a los ~6,6 GiB que declara el manifiesto; conviene verificar el contenido real antes de aprovisionar disco.
+- Almacenamiento: 14,2 GB de repositorio segun Hugging Face, frente a los ~6,6 GiB que declara el manifiesto; conviene verificar el contenido real antes de aprovisionar disco.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| libwaifu-noobai-xl-v1.1 (este) | no disponible | Tokenizador CLIP incluido; etiquetas Danbooru | Sin benchmarks publicados | FAI-PL 1.0 SD, no comercial, derivados abiertos | HuggingFace, formato libwaifu |
-| Laxhar/noobai-XL-1.1 (origen) | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | FAI-PL 1.0 SD (heredada) | HuggingFace; mismas ponderaciones que este repositorio |
-| NoobAI-XL v-prediction | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | FAI-PL 1.0 SD (heredada) | HuggingFace; no compatible con el muestreador Euler de libwaifu |
-| Illustrious XL | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | no disponible | HuggingFace; es el punto de partida del afinado de NoobAI |
+| libwaifu-noobai-xl-v1.1 (este) | no disponible | Tokenizador CLIP incluido; etiquetas Danbooru | Sin benchmarks publicados | FAI-PL 1.0 SD, no comercial, derivados abiertos | Hugging Face, formato libwaifu |
+| Laxhar/noobai-XL-1.1 (origen) | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | FAI-PL 1.0 SD (heredada) | Hugging Face; mismas ponderaciones que este repositorio |
+| NoobAI-XL v-prediction | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | FAI-PL 1.0 SD (heredada) | Hugging Face; no compatible con el muestreador Euler de libwaifu |
+| Illustrious XL | no disponible | Etiquetas Danbooru | Sin benchmarks en la informacion disponible | no disponible | Hugging Face; es el punto de partida del afinado de NoobAI |
 
 La diferencia sustantiva entre las dos primeras filas no es de calidad ni de pesos, que son identicos, sino de contenedor: este repositorio sustituye el checkpoint monolitico por un manifiesto YAML mas cuatro fragmentos safetensors.
 
@@ -99,7 +99,7 @@ La diferencia sustantiva entre las dos primeras filas no es de calidad ni de pes
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ling0322/libwaifu-noobai-xl-v1.1
+- Repositorio en Hugging Face: https://huggingface.co/ling0322/libwaifu-noobai-xl-v1.1
 - Modelo de origen: https://huggingface.co/Laxhar/noobai-XL-1.1
 - Proyecto libwaifu: https://github.com/ling0322/libwaifu
 - Licencia FAI-PL 1.0 SD: https://freedevproject.org/faipl-1.0-sd/

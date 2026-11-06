@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx
+- Repositorio MLX en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx
 - Checkpoint original (no MLX): https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1
 - Sitio web de OpenMed: https://openmed.life/
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

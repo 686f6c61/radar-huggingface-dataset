@@ -6,7 +6,7 @@ LaLa-World pixel decoder (DINOv3 ViT-L/16) es un decodificador de 12 capas tipo 
 
 El problema que resuelve es práctico: los world models basados en latentes congelados (como LaLa-World o LaLa-Policy) planifican y predicen en un espacio abstracto de características que no es legible por humanos. Este decoder actúa como la "cabeza de lectura" que permite reconstruir observaciones reales y futuros imaginados, de modo que un investigador puede comprobar si la planificación latente tiene sentido visual o si degenera. El checkpoint incluye tanto los pesos EMA como los crudos del decodificador, el RMS de características usado para la augmentación de ruido y la configuración de entrenamiento.
 
-El repositorio es de tipo investigación, con 0 descargas y 0 likes en el momento de la consulta, licencia no declarada y sin pipeline definido en HuggingFace. Su relevancia es acotada: solo es útil si se trabaja con checkpoints `lala-world-dinov3-l`, ya que debe coincidir obligatoriamente con el codificador visual del checkpoint de LaLa-World o LaLa-Policy con el que se empareja.
+El repositorio es de tipo investigación, con 0 descargas y 0 likes en el momento de la consulta, licencia no declarada y sin pipeline definido en Hugging Face. Su relevancia es acotada: solo es útil si se trabaja con checkpoints `lala-world-dinov3-l`, ya que debe coincidir obligatoriamente con el codificador visual del checkpoint de LaLa-World o LaLa-Policy con el que se empareja.
 
 ## Especificaciones técnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Codificador asociado | Latentes | Uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lala-decoder-dinov3-l` (este) | DINOv3 ViT-L/16 | 14 × 14 × 1024 | Decodificación a RGB 224 × 224 para visualización | no disponible | HuggingFace, repo de 1,2 GB |
-| `lala-decoder-dinov2-s` | DINOv2-S | no disponible | Decodificación a RGB para visualización | no disponible | HuggingFace |
-| `lala-decoder-siglip2-so400m` | SigLIP2-SO400M | no disponible | Decodificación a RGB para visualización | no disponible | HuggingFace |
+| `lala-decoder-dinov3-l` (este) | DINOv3 ViT-L/16 | 14 × 14 × 1024 | Decodificación a RGB 224 × 224 para visualización | no disponible | Hugging Face, repo de 1,2 GB |
+| `lala-decoder-dinov2-s` | DINOv2-S | no disponible | Decodificación a RGB para visualización | no disponible | Hugging Face |
+| `lala-decoder-siglip2-so400m` | SigLIP2-SO400M | no disponible | Decodificación a RGB para visualización | no disponible | Hugging Face |
 
 Los tres son decodificadores del mismo proyecto y solo se diferencian en el codificador visual al que deben emparejarse; no son intercambiables entre sí. No se conocen decodificadores públicos equivalentes de otros proyectos con los que comparar parámetros o métricas de reconstrucción dentro de la información disponible.
 
@@ -82,7 +82,7 @@ Los tres son decodificadores del mismo proyecto y solo se diferencian en el codi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LaLa-World/lala-decoder-dinov3-l
+- Hugging Face: https://huggingface.co/LaLa-World/lala-decoder-dinov3-l
 - Repositorio LaLa-World en GitHub: https://github.com/junha1125/LaLa-World
 - Decodificador hermano DINOv2-S: https://huggingface.co/LaLa-World/lala-decoder-dinov2-s
 - Decodificador hermano SigLIP2-SO400M: https://huggingface.co/LaLa-World/lala-decoder-siglip2-so400m

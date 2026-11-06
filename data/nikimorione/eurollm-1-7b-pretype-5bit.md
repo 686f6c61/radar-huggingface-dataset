@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EuroLLM-1.7B-Pretype-5bit es un ajuste fino (fine-tune) de [EuroLLM-1.7B](https://huggingface.co/utter-project/EuroLLM-1.7B) del proyecto utter-project, publicado por el usuario nikimoriOne en HuggingFace. El modelo está especializado en dos tareas concretas: autocompletado de texto en tiempo real y corrección de erratas sin reescribir el texto. Su propósito principal es servir como motor de [Pretype](https://github.com/nikiomori/Pretype), una aplicación de autocompletado para macOS que se ejecuta íntegramente en el dispositivo.
+EuroLLM-1.7B-Pretype-5bit es un ajuste fino (fine-tune) de [EuroLLM-1.7B](https://huggingface.co/utter-project/EuroLLM-1.7B) del proyecto utter-project, publicado por el usuario nikimoriOne en Hugging Face. El modelo está especializado en dos tareas concretas: autocompletado de texto en tiempo real y corrección de erratas sin reescribir el texto. Su propósito principal es servir como motor de [Pretype](https://github.com/nikiomori/Pretype), una aplicación de autocompletado para macOS que se ejecuta íntegramente en el dispositivo.
 
 El modelo se distribuye cuantizado a 5 bits en formato MLX (ecosistema de Apple Silicon), ocupa 1,1 GB en un único archivo y genera cada sugerencia en unos 22 ms sobre un M4 Max, consumiendo 715 mJ por sugerencia, un 33 % menos que Gemma 4 E2B 4-bit según las mediciones del autor. En la tarea de corrección supera claramente al modelo de comparación (64 % frente a 49 % de líneas restauradas exactamente), mientras que en autocompletado empata en términos generales.
 
@@ -93,7 +93,7 @@ Un juez ciego evaluó 300 filas en inglés, ruso y danés: aceptó el 90 % de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikimoriOne/EuroLLM-1.7B-Pretype-5bit
+- Modelo en Hugging Face: https://huggingface.co/nikimoriOne/EuroLLM-1.7B-Pretype-5bit
 - Modelo base: https://huggingface.co/utter-project/EuroLLM-1.7B
 - Modelo profesor (destilación): https://huggingface.co/utter-project/EuroLLM-9B
 - Aplicación Pretype: https://github.com/nikiomori/Pretype

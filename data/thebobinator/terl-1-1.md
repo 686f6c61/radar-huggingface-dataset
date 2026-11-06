@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terl-1.1 es un modelo publicado en HuggingFace por el usuario `thebobinator` bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio ocupa 2,9 GB y no registra descargas ni valoraciones, por lo que no existe validacion por parte de la comunidad.
+Terl-1.1 es un modelo publicado en Hugging Face por el usuario `thebobinator` bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. El repositorio ocupa 2,9 GB y no registra descargas ni valoraciones, por lo que no existe validacion por parte de la comunidad.
 
 Ante la ausencia de documentacion tecnica, no es posible confirmar la familia arquitectonica, el numero de parametros, la longitud de contexto ni los idiomas soportados. El unico indicio cuantitativo es el tamano del repositorio: si los pesos estuvieran almacenados en FP16/BF16 sin cuantizar y sin ficheros auxiliares grandes, 2,9 GB serian compatibles con un modelo del orden de 1.500 millones de parametros, pero se trata de una inferencia indirecta y no de un dato declarado por el autor.
 
@@ -21,13 +21,13 @@ La relevancia de esta ficha es, por tanto, principalmente cautelar: sirve para d
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 2,9 GB; no se especifica si son safetensors, GGUF, PyTorch bin u otro formato) |
 | Tamano del repositorio | 2,9 GB |
-| Fecha de creacion en HuggingFace | 2026-09-13 |
+| Fecha de creacion en Hugging Face | 2026-09-13 |
 | Ultima actualizacion | 2026-09-13 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card de HuggingFace se limita a la linea `license: mit`, sin seccion de descripcion, sin diagrama, sin referencia a un articulo tecnico y sin mencion de la familia de modelos de la que podria derivar. Tampoco hay metadatos de pipeline (`pipeline` no disponible) ni etiquetas de tarea que permitan inferir si se trata de un modelo de lenguaje, de un modelo multimodal, de un modelo de embedding o de un componente auxiliar.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card de Hugging Face se limita a la linea `license: mit`, sin seccion de descripcion, sin diagrama, sin referencia a un articulo tecnico y sin mencion de la familia de modelos de la que podria derivar. Tampoco hay metadatos de pipeline (`pipeline` no disponible) ni etiquetas de tarea que permitan inferir si se trata de un modelo de lenguaje, de un modelo multimodal, de un modelo de embedding o de un componente auxiliar.
 
 Del mismo modo, se desconoce por completo la composicion del dataset de entrenamiento, el numero de tokens procesados, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento, asi como cualquier innovacion tecnica destacable (atencion lineal, decodificacion especulativa, mezcla de expertos, arquitecturas hibridas con SSM, etc.). Cualquier afirmacion al respecto seria especulativa.
 
@@ -40,7 +40,7 @@ No es posible enumerar capacidades confirmadas a partir de la informacion dispon
 - No hay evidencia publicada de capacidades agenticas ni de razonamiento multi-paso.
 - No hay evidencia publicada de soporte multilingue ni de cobertura de idiomas concretos.
 - No hay evidencia publicada de modos especiales (thinking mode, vision, audio, decodificacion con presupuesto de tokens, etc.).
-- La unica capacidad verificable hoy es la de ser descargado desde HuggingFace, dado que el repositorio esta publicado y es accesible.
+- La unica capacidad verificable hoy es la de ser descargado desde Hugging Face, dado que el repositorio esta publicado y es accesible.
 
 ## Casos de uso
 
@@ -96,9 +96,9 @@ La unica ventaja objetiva y verificable de Terl-1.1 frente a estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thebobinator/Terl-1.1
-- Perfil del autor en HuggingFace: https://huggingface.co/thebobinator
+- Modelo en Hugging Face: https://huggingface.co/thebobinator/Terl-1.1
+- Perfil del autor en Hugging Face: https://huggingface.co/thebobinator
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devuelven exclusivamente articulos en chino sobre configuracion de navegadores y aplicaciones (bloqueo de ventanas emergentes en Edge, instalacion de Discord, formato de celdas en Excel), sin relacion alguna con Terl-1.1.
 - Paper tecnico: no disponible.
 - Repositorio de codigo: no disponible.
-- Demos o espacios en HuggingFace: no disponible.
+- Demos o espacios en Hugging Face: no disponible.

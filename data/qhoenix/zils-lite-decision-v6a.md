@@ -42,7 +42,7 @@ Los datos de entrenamiento provienen de splits de entrenamiento de datasets púb
 - Clasificación y enrutamiento ligero: al ser un modelo de feature-extraction de ~853 M de parámetros, puede generar embeddings para enrutar peticiones o clasificar entradas en pipelines de bajo coste.
 - Experimentación en investigación sobre model soups: sirve como caso de estudio reproducible del enfoque de promediado de pesos más LoRA sobre una base Qwen3.5-0.8B.
 - Despliegue en entornos con recursos limitados: su tamaño permite ejecución en hardware modesto, adecuado para prototipos y pruebas de concepto.
-- Integración vía endpoints: gracias al tag endpoints_compatible, puede servirse en infraestructura compatible con endpoints de HuggingFace para pruebas internas.
+- Integración vía endpoints: gracias al tag endpoints_compatible, puede servirse en infraestructura compatible con endpoints de Hugging Face para pruebas internas.
 - Base para fine-tuning posterior: al estar bajo Apache-2.0 y con safetensors, puede reutilizarse como punto de partida para especializaciones adicionales en tareas de decisión.
 
 ## Benchmarks y rendimiento
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qhoenix/zils-lite-decision-v6a | 852.985.920 | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible | HuggingFace |
-| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | apache-2.0 | HuggingFace |
-| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | apache-2.0 | HuggingFace |
+| qhoenix/zils-lite-decision-v6a | 852.985.920 | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible | Hugging Face |
+| thermopylae-777/zils-lite-body-2 | no disponible | no disponible | apache-2.0 | Hugging Face |
+| dasLOL/zils-lite-skills-v5 | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-lite-decision-v6a
+- Hugging Face: https://huggingface.co/qhoenix/zils-lite-decision-v6a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuerpo lite 1: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Cuerpo lite 2: https://huggingface.co/dasLOL/zils-lite-skills-v5

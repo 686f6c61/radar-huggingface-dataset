@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-wsp-reproduction-p50c | 873.438.784 | no disponible | Apache-2.0 | Reproduccion por edicion de pesos (p50c) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-0.8B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Modelo base multimodal original | HuggingFace (referenciado como upstream) |
+| Qwen3.5-0.8B-wsp-reproduction-p50c | 873.438.784 | no disponible | Apache-2.0 | Reproduccion por edicion de pesos (p50c) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-0.8B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Modelo base multimodal original | Hugging Face (referenciado como upstream) |
 | Otros modelos de ~0,8 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es contra el modelo base del que deriva. No se dispone de datos de rendimiento de ninguno de los dos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -79,12 +79,12 @@ La unica comparacion documentada es contra el modelo base del que deriva. No se 
 - Contexto no documentado: no se especifica la longitud de contexto efectiva en la informacion disponible.
 - Riesgo de alucinacion y sesgos: no evaluados ni documentados para este checkpoint.
 - Licencia y atribucion: los pesos son Apache-2.0, pero los parches y registros publicados son CC BY 4.0 y los scripts de reconstruccion MIT; es obligatorio preservar la licencia upstream y la atribucion a Qwen, a Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab.
-- Madurez del artefacto: 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay evidencia de uso en produccion ni de validacion por terceros.
+- Madurez del artefacto: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay evidencia de uso en produccion ni de validacion por terceros.
 - Advertencia de produccion: no debe desplegarse en entornos productivos sin una evaluacion propia de calidad, sesgos y seguridad, dado que no existe medicion publicada de su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lim1t/Qwen3.5-0.8B-wsp-reproduction-p50c
+- Modelo en Hugging Face: https://huggingface.co/lim1t/Qwen3.5-0.8B-wsp-reproduction-p50c
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo de parche y reconstruccion: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/edit
 - Blog de weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

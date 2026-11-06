@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Yuheng02/nf_staged` alojado en HuggingFace contiene aproximadamente 2,67 terabytes de datos, lo que sugiere un volumen considerable, posiblemente pesos de un modelo de gran escala o un conjunto de datos masivo. Sin embargo, no se ha publicado ninguna documentación que describa su contenido, arquitectura, propósito o metodología de entrenamiento. El autor es `Yuheng02` y la única etiqueta disponible es `region:us`, que podría indicar una orientación geográfica o lingüística, pero no es concluyente. Dado que no existe información adicional (pipeline, licencia, idiomas, benchmarks), esta ficha se limita a reflejar los datos disponibles y marca como "no disponible" cualquier especificación no publicada. Se recomienda precaución antes de utilizar este recurso en entornos de producción o investigación.
+El repositorio `Yuheng02/nf_staged` alojado en Hugging Face contiene aproximadamente 2,67 terabytes de datos, lo que sugiere un volumen considerable, posiblemente pesos de un modelo de gran escala o un conjunto de datos masivo. Sin embargo, no se ha publicado ninguna documentación que describa su contenido, arquitectura, propósito o metodología de entrenamiento. El autor es `Yuheng02` y la única etiqueta disponible es `region:us`, que podría indicar una orientación geográfica o lingüística, pero no es concluyente. Dado que no existe información adicional (pipeline, licencia, idiomas, benchmarks), esta ficha se limita a reflejar los datos disponibles y marca como "no disponible" cualquier especificación no publicada. Se recomienda precaución antes de utilizar este recurso en entornos de producción o investigación.
 
 ## Especificaciones tecnicas
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables de la misma categoria o tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yuheng02/nf_staged
+- Repositorio Hugging Face: https://huggingface.co/Yuheng02/nf_staged
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo, demos) en la informacion disponible.

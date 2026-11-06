@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmeister/boundary-markers-ko-d12-plain-bpe` es un artefacto de investigación publicado en HuggingFace: un modelo de lenguaje de 12 capas entrenado en coreano con nanochat para servir de referencia (baseline) en un estudio sobre vocabularios de subpalabras. Forma parte del material asociado al artículo «Explicit Boundary Markers for Subword Vocabularies», de Sander Land y Clara Meister, que compara esquemas de tokenización que marcan explícitamente las fronteras de palabra. Este repositorio concreto contiene la variante `plain`, es decir, la que no introduce ningún marcador de frontera: pre-tokenización por codificación de script y BPE convencional.
+`cmeister/boundary-markers-ko-d12-plain-bpe` es un artefacto de investigación publicado en Hugging Face: un modelo de lenguaje de 12 capas entrenado en coreano con nanochat para servir de referencia (baseline) en un estudio sobre vocabularios de subpalabras. Forma parte del material asociado al artículo «Explicit Boundary Markers for Subword Vocabularies», de Sander Land y Clara Meister, que compara esquemas de tokenización que marcan explícitamente las fronteras de palabra. Este repositorio concreto contiene la variante `plain`, es decir, la que no introduce ningún marcador de frontera: pre-tokenización por codificación de script y BPE convencional.
 
 El modelo resuelve un problema metodológico, no de producto: proporciona el punto de comparación frente al que se miden los demás esquemas de vocabulario en coreano, con la misma arquitectura, los mismos datos y el mismo orden de entrenamiento, de modo que la única diferencia entre variantes es el tokenizador. Se publican tres semillas (0, 1 y 2) que cubren dos órdenes de datos distintos, ya que con solo tres shards las semillas 1 y 2 coincidieron en el orden de los shards.
 
@@ -80,7 +80,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Bits por byte (validación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (semilla 0) | no disponible | 2.048 | 0,85387 | Apache-2.0 | HuggingFace |
+| Este modelo (semilla 0) | no disponible | 2.048 | 0,85387 | Apache-2.0 | Hugging Face |
 | Variante de semilla 1 | no disponible | 2.048 | 0,85500 | Apache-2.0 | Mismo repositorio |
 | Variante de semilla 2 | no disponible | 2.048 | 0,85395 | Apache-2.0 | Mismo repositorio |
 | Otros esquemas de vocabulario del estudio | no disponible | 2.048 | no disponible | no disponible | Repositorio script_tok |
@@ -104,7 +104,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-bpe
 - Artículo «Explicit Boundary Markers for Subword Vocabularies» (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (tokenizador y scripts de entrenamiento): https://github.com/sanderland/script_tok
 - nanochat (arquitectura base, commit `92d63d4`): https://github.com/karpathy/nanochat

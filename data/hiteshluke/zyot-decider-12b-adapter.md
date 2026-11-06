@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hiteshluke/zyot-decider-12b-adapter` es un adaptador LoRA publicado en HuggingFace por el usuario hiteshluke (vinculado, segun los resultados de busqueda, a la organizacion codekinstech pvt ltd). No se trata de un modelo completo, sino de un conjunto de pesos incrementales que se cargan sobre el modelo base `google/gemma-4-12B-it` mediante la libreria PEFT. Su nombre ("decider") sugiere que su proposito es actuar como componente de decision dentro de un flujo de agentes, aunque el autor no documenta esta funcion en ninguna parte.
+El modelo `hiteshluke/zyot-decider-12b-adapter` es un adaptador LoRA publicado en Hugging Face por el usuario hiteshluke (vinculado, segun los resultados de busqueda, a la organizacion codekinstech pvt ltd). No se trata de un modelo completo, sino de un conjunto de pesos incrementales que se cargan sobre el modelo base `google/gemma-4-12B-it` mediante la libreria PEFT. Su nombre ("decider") sugiere que su proposito es actuar como componente de decision dentro de un flujo de agentes, aunque el autor no documenta esta funcion en ninguna parte.
 
-El repositorio ocupa 0,3 GB y contiene unicamente pesos en formato safetensors, lo que es coherente con un adaptador LoRA de rango medio o alto sobre un modelo denso de 12 000 millones de parametros. La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el dataset de entrenamiento, el procedimiento de ajuste, la licencia o los idiomas soportados.
+El repositorio ocupa 0,3 GB y contiene unicamente pesos en formato safetensors, lo que es coherente con un adaptador LoRA de rango medio o alto sobre un modelo denso de 12 000 millones de parametros. La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, hiperparametros y evaluacion figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el dataset de entrenamiento, el procedimiento de ajuste, la licencia o los idiomas soportados.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodologica: sirve como ejemplo de publicacion de un adaptador sin documentacion, un caso frecuente en el ecosistema PEFT que obliga al desarrollador a auditar el artefacto antes de integrarlo en produccion. Cualquier evaluacion de capacidades depende enteramente del modelo base `google/gemma-4-12B-it`, que segun una fuente secundaria seria un modelo multimodal de 12 000 millones de parametros sin codificadores separados de vision y audio, capaz de ejecutarse en un equipo con 16 GB de RAM.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodolog
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el procedimiento de entrenamiento. La model card incluye las secciones de "Training Details", "Training Data", "Training Hyperparameters" y "Evaluation", pero todas ellas estan sin rellenar. Se desconoce el rango (rank) del adaptador, los modulos objetivo (`q_proj`, `v_proj`, `k_proj`, `o_proj`, `gate_proj`, etc.), el valor de alpha, la tasa de aprendizaje, el numero de pasos y la composicion del dataset. El tag `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo sobre el modelo, sino a la referencia a Lacoste et al. (2019) sobre el calculo de emisiones de carbono que la propia plantilla de HuggingFace incluye por defecto.
+No hay informacion publicada sobre el procedimiento de entrenamiento. La model card incluye las secciones de "Training Details", "Training Data", "Training Hyperparameters" y "Evaluation", pero todas ellas estan sin rellenar. Se desconoce el rango (rank) del adaptador, los modulos objetivo (`q_proj`, `v_proj`, `k_proj`, `o_proj`, `gate_proj`, etc.), el valor de alpha, la tasa de aprendizaje, el numero de pasos y la composicion del dataset. El tag `arxiv:1910.09700` que aparece en los metadatos no corresponde a un articulo sobre el modelo, sino a la referencia a Lacoste et al. (2019) sobre el calculo de emisiones de carbono que la propia plantilla de Hugging Face incluye por defecto.
 
 Tecnicamente, un adaptador LoRA introduce matrices de bajo rango entrenables en capas lineales del transformer, congelando el resto de los pesos. Esto implica que el comportamiento final del modelo resulta de la suma de los pesos base de `google/gemma-4-12B-it` mas la contribucion del adaptador, y que su funcion concreta ("decider") solo puede inferirse de forma especulativa a partir del nombre del repositorio. No se declara el uso de RLHF, DPO, decodificacion especulativa ni ninguna otra innovacion adicional.
 
@@ -95,7 +95,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas del adapta
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/hiteshluke/zyot-decider-12b-adapter
+- Pagina del adaptador en Hugging Face: https://huggingface.co/hiteshluke/zyot-decider-12b-adapter
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Perfil del autor: https://huggingface.co/hiteshluke
 - Datasets del autor: https://huggingface.co/hiteshluke/datasets

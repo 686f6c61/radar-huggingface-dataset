@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`voidash/nepali-tts-pipelines` es un repositorio de HuggingFace publicado por el usuario voidash que contiene pipelines de síntesis de voz (text-to-speech) para el idioma nepalí. El repositorio está etiquetado con `f5-tts`, lo que indica que se basa en el modelo F5-TTS, un sistema de TTS con capacidades de clonación de voz, y menciona `omnivoice` como componente adicional del pipeline. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+`voidash/nepali-tts-pipelines` es un repositorio de Hugging Face publicado por el usuario voidash que contiene pipelines de síntesis de voz (text-to-speech) para el idioma nepalí. El repositorio está etiquetado con `f5-tts`, lo que indica que se basa en el modelo F5-TTS, un sistema de TTS con capacidades de clonación de voz, y menciona `omnivoice` como componente adicional del pipeline. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El repositorio no presenta descargas ni likes en el momento de la consulta, y su licencia figura como `tbd-internal-research`, lo que sugiere un uso interno de investigación y no una publicación estable para producción. No se dispone de información pública sobre arquitectura concreta, tamaño de parámetros, datos de entrenamiento ni resultados de benchmarks. La ficha se elabora, por tanto, con la información disponible y marcando explícitamente los datos no disponibles.
 
@@ -73,7 +73,7 @@ La comparación se limita a categoría y licencia; no hay datos de rendimiento p
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que añade fricción a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que añade fricción a la reproducibilidad.
 - Licencia `tbd-internal-research`: licencia provisional orientada a investigación interna; no se autoriza explícitamente el uso comercial y podría cambiar.
 - Sin métricas publicadas: no hay benchmarks, evaluaciones de naturalidad (MOS) ni tasas de error que permitan valorar la calidad del TTS en nepalí.
 - Idiomas: cobertura declarada limitada al nepalí; no se documenta soporte de otras lenguas ni de code-switching.
@@ -85,8 +85,8 @@ La comparación se limita a categoría y licencia; no hay datos de rendimiento p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voidash/nepali-tts-pipelines
+- Repositorio en Hugging Face: https://huggingface.co/voidash/nepali-tts-pipelines
 - F5-TTS (repositorio de referencia): https://github.com/SWivid/F5-TTS
-- F5-TTS en HuggingFace: https://huggingface.co/SWivid/F5-TTS
+- F5-TTS en Hugging Face: https://huggingface.co/SWivid/F5-TTS
 - OmniVoice: no disponible en la información proporcionada
 - Paper de F5-TTS: no disponible en la información proporcionada

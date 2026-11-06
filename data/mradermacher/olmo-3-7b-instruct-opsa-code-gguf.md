@@ -86,11 +86,11 @@ Datos de especificaciones publicas de cada modelo; los valores de rendimiento no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Olmo-3-7B-Instruct-OPSA-Code (GGUF) | 7,3 B | no disponible | Apache 2.0 | GGUF en HuggingFace | no disponible |
+| Olmo-3-7B-Instruct-OPSA-Code (GGUF) | 7,3 B | no disponible | Apache 2.0 | GGUF en Hugging Face | no disponible |
 | Olmo 3 7B Instruct | 7,3 B (familia) | no disponible en las fuentes consultadas | Apache 2.0 | pesos abiertos en Ai2/HuggingFace | no disponible |
-| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | no disponible |
-| Llama 3.1 8B Instruct | 8,0 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en HuggingFace | no disponible |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace | no disponible |
+| Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | no disponible |
+| Llama 3.1 8B Instruct | 8,0 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en Hugging Face | no disponible |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | no disponible |
 
 La diferencia principal frente a las alternativas es la licencia Apache 2.0 sin clausulas adicionales (frente a la licencia comunitaria de Llama 3.1) y la disponibilidad de doce niveles de cuantizacion ya generados. La falta de datos de contexto y de benchmarks impide comparar el rendimiento real con Qwen2.5 o Llama 3.1.
 

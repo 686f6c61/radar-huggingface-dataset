@@ -75,8 +75,8 @@ No se dispone de datos verificados de terceros en la información proporcionada.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tsangb34/pi05-so101-soccer-red_bowl-40episodes` | 4 143 404 816 | No aplica / no disponible | Sin resultados de evaluación publicados | Apache 2.0 | HuggingFace (LeRobot) |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información (arquitectura π₀.₅ equivalente) | No disponible | No disponible | No disponible en la información | HuggingFace |
+| `tsangb34/pi05-so101-soccer-red_bowl-40episodes` | 4 143 404 816 | No aplica / no disponible | Sin resultados de evaluación publicados | Apache 2.0 | Hugging Face (LeRobot) |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información (arquitectura π₀.₅ equivalente) | No disponible | No disponible | No disponible en la información | Hugging Face |
 | Otras políticas VLA del ecosistema LeRobot (π₀, SmolVLA) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | VLA de propósito general comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -96,7 +96,7 @@ Criterio cualitativo: frente al modelo base, este checkpoint está especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsangb34/pi05-so101-soccer-red_bowl-40episodes
+- Modelo en Hugging Face: https://huggingface.co/tsangb34/pi05-so101-soccer-red_bowl-40episodes
 - Dataset de entrenamiento: https://huggingface.co/datasets/tsangb34/robocolosseum-so101-soccer-red_bowl-40episodes
 - Visualizador del dataset (LeRobot Space): https://huggingface.co/spaces/lerobot/visualize_dataset?path=tsangb34/robocolosseum-so101-soccer-red_bowl-40episodes
 - Modelo base: https://huggingface.co/lerobot/pi05_base

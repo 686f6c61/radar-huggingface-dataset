@@ -91,6 +91,6 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luni/Qwen3.8-Flash-Coder-CYBER-Heretic-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/Luni/Qwen3.8-Flash-Coder-CYBER-Heretic-MLX-8bit
 - Modelo base: https://huggingface.co/Luni/Qwen3.8-Flash-Coder-CYBER-Heretic
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados obtenidos (lunii.com, lumni.fr, youtube.com/@LuniLuni) no guardan relacion con el artefacto y se descartan.

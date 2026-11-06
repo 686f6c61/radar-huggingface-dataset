@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Este checkpoint (IntDim-E, 50% podado) | 64.129.468.416 (~64,1 B) | no disponible | Apache-2.0 | safetensors BF16, 128,3 GB, 155 descargas | Requiere vLLM de la imagen unificada Less-is-MoE |
-| Qwen/Qwen3.5-122B-A10B (base) | 122 B según nomenclatura (activos, no disponible) | no disponible | no disponible | público en HuggingFace | Origen de la poda; sin evaluación comparativa publicada |
+| Qwen/Qwen3.5-122B-A10B (base) | 122 B según nomenclatura (activos, no disponible) | no disponible | no disponible | público en Hugging Face | Origen de la poda; sin evaluación comparativa publicada |
 | Variantes IntDim-L e IntDim-G (mismo autor) | no disponible | no disponible | no disponible | mencionadas en la model card | Conservan topología MoE enrutada y anchos por experto en `config.json` |
 
 No se dispone de datos verificables de otros modelos comparables (por ejemplo, otras familias MoE de tamaño similar) dentro de la información proporcionada, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -94,7 +94,7 @@ No se dispone de datos verificables de otros modelos comparables (por ejemplo, o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-e-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-e-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset de calibración (privado): https://huggingface.co/datasets/jayzou3773/less-is-moe-gpqa-main-calibration-64
 - Dataset GPQA: https://huggingface.co/datasets/Idavidrein/gpqa

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd15-naruto-lora-r8 | LoRA r8 sobre SD 1.5 | 1.594.368 entrenables | 512 px | creativeml-openrail-m | HuggingFace, 14 descargas |
+| sd15-naruto-lora-r8 | LoRA r8 sobre SD 1.5 | 1.594.368 entrenables | 512 px | creativeml-openrail-m | Hugging Face, 14 descargas |
 | Stable Diffusion 1.5 (base) | Difusion latente text-to-image | No disponible en la informacion | 512 px | creativeml-openrail-m | Ampliamente disponible |
-| Alternativas LoRA de estilo sobre SD 1.5 | Adaptadores LoRA | Variable segun adaptador | 512 px | Variable | Multiples en HuggingFace |
+| Alternativas LoRA de estilo sobre SD 1.5 | Adaptadores LoRA | Variable segun adaptador | 512 px | Variable | Multiples en Hugging Face |
 
 No se dispone de datos de rendimiento comparado (FID, CLIP score ni evaluaciones humanas) para establecer una comparación cuantitativa con otras alternativas. La comparación disponible es estructural: frente al modelo base, este adaptador añade especialización de dominio con un coste de almacenamiento mínimo; frente a otros LoRA de la misma familia, no hay métricas públicas que permitan ordenarlos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score ni evaluaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sarvesh0827/sd15-naruto-lora-r8
+- Modelo en Hugging Face: https://huggingface.co/Sarvesh0827/sd15-naruto-lora-r8
 - Modelo base Stable Diffusion 1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Librería diffusers: https://github.com/huggingface/diffusers
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

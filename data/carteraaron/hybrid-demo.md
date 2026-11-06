@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-demo es un repositorio experimental publicado por el usuario CARTERAARON en HuggingFace, orientado a tareas de clasificacion mediante una arquitectura que el autor denomina "Hybrid". No se trata de un modelo de lenguaje generativo ni de un checkpoint entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo con entrenamiento completado ni evaluado. El repositorio incluye codigo ejecutable (`main.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+hybrid-demo es un repositorio experimental publicado por el usuario CARTERAARON en Hugging Face, orientado a tareas de clasificacion mediante una arquitectura que el autor denomina "Hybrid". No se trata de un modelo de lenguaje generativo ni de un checkpoint entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo con entrenamiento completado ni evaluado. El repositorio incluye codigo ejecutable (`main.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 El peso del checkpoint es de 49.600 parametros totales, un orden de magnitud propio de una maqueta de arquitectura mas que de un modelo utilizable. La model card no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Su proposito declarado es servir como base manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -79,6 +79,6 @@ No disponible. El repositorio es una base experimental de arquitectura personali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CARTERAARON/hybrid-demo
+- Modelo en Hugging Face: https://huggingface.co/CARTERAARON/hybrid-demo
 - Archivos del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pagina del modelo)
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada.

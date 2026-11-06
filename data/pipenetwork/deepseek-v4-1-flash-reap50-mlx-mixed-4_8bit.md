@@ -117,7 +117,7 @@ No se dispone de información sobre otras compilaciones MLX comparables de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-REAP50-MLX-mixed-4_8bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-REAP50-MLX-mixed-4_8bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Port de ejecución (código): https://github.com/PipeNetwork/deepseek-v41-mlx
 - Notas sobre la implementación de referencia, dentro del repositorio del port: `docs/upstream-notes.md`

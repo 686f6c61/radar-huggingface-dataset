@@ -82,7 +82,7 @@ La comparativa directa con otros modelos de la misma categoria (VLA para robotic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep
+- Repositorio Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-10pct-40ep
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Paper de π₀ (arXiv): https://arxiv.org/html/2410.24164v1
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0

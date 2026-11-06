@@ -94,7 +94,7 @@ El modelo podado tiene 4 veces más parámetros que el Qwen3.8-27B, pero no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5
+- Modelo en Hugging Face: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5
 - Repositorio de resultados S3 (mencionado en la model card): `sjakek/slimder-qwen38-s3-results-20260831` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5
 - Referencia de la familia Qwen3.8: https://huggingface.co/Qwen/Qwen3.8-27B

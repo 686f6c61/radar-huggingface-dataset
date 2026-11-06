@@ -103,7 +103,7 @@ Modelos alternativos de la misma categoria (otros modelos borrador para decodifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StefanoBalocco/Ling-3.0-Tiny-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/StefanoBalocco/Ling-3.0-Tiny-DSpark-GGUF
 - Modelo base (draft): https://huggingface.co/jayyun98/Ling-3.0-Tiny-DSpark
 - Modelo objetivo Ling-3.0-Tiny: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - llama.cpp: https://github.com/ggml-org/llama.cpp

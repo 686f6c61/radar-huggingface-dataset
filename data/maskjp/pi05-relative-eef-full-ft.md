@@ -79,9 +79,9 @@ El autor concluye que el fine-tuning completo es 1.1% peor que la variante conge
 
 | Modelo | Parámetros | Held-out loss | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `maskjp/pi05-relative-eef-full-ft` (este) | 4.14B | 0.0286 (step 5K) | Apache-2.0 | HuggingFace |
-| `maskjp/pi05-relative-eef-frozen-vlm` | 693M | 0.0283 (step 30K) | Apache-2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| `maskjp/pi05-relative-eef-full-ft` (este) | 4.14B | 0.0286 (step 5K) | Apache-2.0 | Hugging Face |
+| `maskjp/pi05-relative-eef-frozen-vlm` | 693M | 0.0283 (step 30K) | Apache-2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 La variante congelada es más ligera, entrena más rápido y obtiene mejor held-out loss, lo que la hace más adecuada para la mayoría de casos prácticos. El modelo base `pi05_base` es el punto de partida y no está fine-tuneado para tareas específicas.
 

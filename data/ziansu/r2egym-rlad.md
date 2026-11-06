@@ -82,11 +82,11 @@ No se dispone de datos de benchmarks de terceros para modelos de la misma catego
 
 | Modelo / metodo | Parametros | Contexto de evaluacion | SWE-bench Verified pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLAD (este modelo, `step79`) | 4,21 B (LM) | 98.304 / 100 turnos | 51,80 | Apache 2.0 | HuggingFace, safetensors |
+| RLAD (este modelo, `step79`) | 4,21 B (LM) | 98.304 / 100 turnos | 51,80 | Apache 2.0 | Hugging Face, safetensors |
 | TIP | no disponible | 98.304 / 100 turnos | 52,20 | no disponible | no disponible |
 | OPD | no disponible | 98.304 / 100 turnos | 51,67 | no disponible | no disponible |
 | GRPO | no disponible | 98.304 / 100 turnos | 46,00 | no disponible | no disponible |
-| Qwen3.5-4B (modelo base) | 4,21 B (LM) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.5-4B (modelo base) | 4,21 B (LM) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 Las diferencias entre TIP, RLAD y OPD estan dentro del margen de error indicado por el autor (error estandar binomial de ~1,3 puntos con 500 tareas), por lo que no deben interpretarse como una jerarquia fiable.
 
@@ -106,7 +106,7 @@ Las diferencias entre TIP, RLAD y OPD estan dentro del margen de error indicado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziansu/r2egym-rlad
+- Modelo en Hugging Face: https://huggingface.co/ziansu/r2egym-rlad
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - R2E-Gym: no disponible (no se proporciona URL del corpus en la informacion recibida)
 - Paper o blog del metodo RLAD: no disponible

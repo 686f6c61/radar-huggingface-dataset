@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StatePlay-Implicit-NFT-5B-step1252 es un checkpoint experimental de generación de vídeo condicionada por acciones, publicado por el usuario xixibuxixi en HuggingFace. Se construye sobre el modelo base Wan-AI/Wan2.2-TI2V-5B (un transformer de difusión de 5B parámetros para image-to-video) y añade un módulo de estado implícito denominado "StatePlay", que permite controlar la generación mediante secuencias de pulsaciones de botones (estilo videojuego) sin necesidad de proporcionar estados de juego explícitos. El modelo parte de un SFT previo (step-4572) y aplica un postentrenamiento con refuerzo (NFT, presumiblemente "Negative-aware Fine-Tuning" o variante similar) durante 1.252 pasos de optimizador sobre 10.000 grupos de condiciones.
+StatePlay-Implicit-NFT-5B-step1252 es un checkpoint experimental de generación de vídeo condicionada por acciones, publicado por el usuario xixibuxixi en Hugging Face. Se construye sobre el modelo base Wan-AI/Wan2.2-TI2V-5B (un transformer de difusión de 5B parámetros para image-to-video) y añade un módulo de estado implícito denominado "StatePlay", que permite controlar la generación mediante secuencias de pulsaciones de botones (estilo videojuego) sin necesidad de proporcionar estados de juego explícitos. El modelo parte de un SFT previo (step-4572) y aplica un postentrenamiento con refuerzo (NFT, presumiblemente "Negative-aware Fine-Tuning" o variante similar) durante 1.252 pasos de optimizador sobre 10.000 grupos de condiciones.
 
 La relevancia de este checkpoint es doble. Por un lado, explora el control fino de vídeo generado mediante acciones discretas, un área de interés creciente para agentes que aprenden de interacción con entornos simulados. Por otro, documenta con inusual detalle el proceso de entrenamiento (LoRA rank 32 sobre atención y FFN, actualización directa del módulo de transición de estado B, 95,05M de parámetros entrenables) y las limitaciones de la release.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / frames | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StatePlay-Implicit-NFT-5B-step1252 | ~5B (95,05M entrenables en esta fase) | 97 frames por defecto (configurable 4n+1) | Imagen + prompt + acciones discretas (estado implícito) | No disponible | HuggingFace, checkpoint experimental |
-| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | No disponible en la información | Imagen + prompt | No disponible en la información | HuggingFace, modelo base oficial |
-| StatePlay-Implicit-NFT-5B-step698 (mismo autor) | ~5B (1,66M entrenables) | 97/101 frames | Imagen + prompt + acciones (estado implícito) | No disponible | HuggingFace, checkpoint previo |
+| StatePlay-Implicit-NFT-5B-step1252 | ~5B (95,05M entrenables en esta fase) | 97 frames por defecto (configurable 4n+1) | Imagen + prompt + acciones discretas (estado implícito) | No disponible | Hugging Face, checkpoint experimental |
+| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | No disponible en la información | Imagen + prompt | No disponible en la información | Hugging Face, modelo base oficial |
+| StatePlay-Implicit-NFT-5B-step698 (mismo autor) | ~5B (1,66M entrenables) | 97/101 frames | Imagen + prompt + acciones (estado implícito) | No disponible | Hugging Face, checkpoint previo |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, condicionamiento y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xixibuxixi/StatePlay-Implicit-NFT-5B-step1252
+- Modelo en Hugging Face: https://huggingface.co/xixibuxixi/StatePlay-Implicit-NFT-5B-step1252
 - Checkpoint previo step-698: https://huggingface.co/xixibuxixi/StatePlay-Implicit-NFT-5B-step698
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Modelo auxiliar Wan2.1-T2V-1.3B (tokenizer): https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B

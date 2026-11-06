@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Instruct con RLHF | Llama 3.1 | HuggingFace, Ollama, etc. |
-| ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Truthful-Concise | 8.03B | 128K | Representation engineering (jBlaze) | Llama 3.1 | Solo HuggingFace |
-| mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated | 8.03B | 128K | Abliteration (refusal direction) | Llama 3.1 | HuggingFace, Ollama |
+| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Instruct con RLHF | Llama 3.1 | Hugging Face, Ollama, etc. |
+| ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Truthful-Concise | 8.03B | 128K | Representation engineering (jBlaze) | Llama 3.1 | Solo Hugging Face |
+| mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated | 8.03B | 128K | Abliteration (refusal direction) | Llama 3.1 | Hugging Face, Ollama |
 
 La principal diferencia entre las variantes abliteradas es el método: mlabonne usa abliteration clásica (eliminación de la dirección de rechazo) mientras que ApolloRaines usa proyecciones ortogonales sobre múltiples direcciones (rechazo, veracidad y verbosidad). Esto puede dar lugar a comportamientos ligeramente distintos en cuanto a concisión y precisión, aunque no hay benchmarks que lo demuestren. El modelo de mlabonne está más extendido y tiene más documentación y soporte en la comunidad.
 
@@ -77,7 +77,7 @@ La principal diferencia entre las variantes abliteradas es el método: mlabonne 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Truthful-Concise
+- Repositorio Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Truthful-Concise
 - Herramienta jBlaze: https://github.com/apolloraines/jblaze
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio oficial de Llama 3: https://github.com/meta-llama/llama3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DefecationAnimaV2 es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario BlackHat404 en HuggingFace bajo la librería diffusers. Se trata de un ajuste fino especializado sobre el modelo base circulestone-labs/Anima, orientado a la generación de contenido explícito de temática escatológica (fetichismo de defecación). El repositorio está etiquetado como "not-for-all-audiences" y no declara idiomas soportados ni resultados de evaluación.
+DefecationAnimaV2 es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario BlackHat404 en Hugging Face bajo la librería diffusers. Se trata de un ajuste fino especializado sobre el modelo base circulestone-labs/Anima, orientado a la generación de contenido explícito de temática escatológica (fetichismo de defecación). El repositorio está etiquetado como "not-for-all-audiences" y no declara idiomas soportados ni resultados de evaluación.
 
 El modelo no es un modelo fundacional, sino un delta de pesos de bajo rango que se aplica en tiempo de inferencia sobre Anima. La model card incluye un conjunto de palabras de activación ("voiding", "pcoil", "laying cable", "thick turds", "moist poo") que actúan como control semántico del resultado, además de un prompt de instancia declarado. No se documentan ni el rango, ni el alfa, ni los módulos objetivo del LoRA.
 
@@ -43,7 +43,7 @@ Del volcado de parametros de inferencia incluido en la propia model card se pued
 - Auditoria de seguridad y moderacion de contenido: el adaptador puede emplearse como muestra negativa controlada para calibrar clasificadores de imagen y filtros de prompt en plataformas de generacion de imagenes, ya que representa un caso extremo y bien delimitado de contenido prohibido en la mayoria de comunidades.
 - Investigacion sobre adaptadores LoRA hiperespecializados: permite estudiar como un delta de bajo rango sobre un unico modelo base condiciona fuertemente la distribucion de salida con muy pocos tokens de activacion, un fenomeno relevante para entender el sobreajuste tematico.
 - Estudio de sesgos de estilo y de dataset: la model card revela una dependencia de etiquetas de calidad tipicas de datasets de arte anime ("score_9", "masterpiece", "best quality"), lo que sirve para analizar como se heredan los sesgos estilisticos del corpus de entrenamiento del base.
-- Analisis juridico y de licencias Open RAIL: es un caso practico para examinar como se aplican las clausulas de uso restringido de CreativeML Open RAIL en modelos alojados en HuggingFace, especialmente en lo relativo a contenido sexual explicito y a la responsabilidad del distribuidor.
+- Analisis juridico y de licencias Open RAIL: es un caso practico para examinar como se aplican las clausulas de uso restringido de CreativeML Open RAIL en modelos alojados en Hugging Face, especialmente en lo relativo a contenido sexual explicito y a la responsabilidad del distribuidor.
 - Docencia sobre etiquetado de modelos: ilustra los problemas de trazabilidad cuando un repositorio mezcla nomenclatura interna inconsistente (el ID es "V2", el titulo de la model card dice "V10" y el prompt de ejemplo referencia un checkpoint "V7").
 - Reproducibilidad y auditoria de artefactos: dado que el repositorio declara 0.0 GB y cero descargas, sirve como ejemplo practico de verificacion de integridad de artefactos antes de intentar cualquier despliegue.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BlackHat404/DefecationAnimaV2
+- Pagina del modelo en Hugging Face: https://huggingface.co/BlackHat404/DefecationAnimaV2
 - Modelo base: https://huggingface.co/circlestone-labs/Anima
 - Ficheros y versiones: https://huggingface.co/BlackHat404/DefecationAnimaV2/tree/main
 - Perfil del autor en CivitAI: https://civitai.red/user/DarkModeOP

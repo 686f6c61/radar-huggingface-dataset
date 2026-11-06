@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-0.5B-Instruct es un modelo de lenguaje causal especializado en codigo, perteneciente a la familia Qwen2.5-Coder desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion alojada por el usuario Devdotakash en HuggingFace, cuyo modelo base declarado es Qwen/Qwen2.5-Coder-0.5B; se trata de la variante instruction-tuned mas pequena de la familia, con 494.032.768 parametros totales (0,36B sin contar embeddings) y una ventana de contexto completa de 32.768 tokens.
+Qwen2.5-Coder-0.5B-Instruct es un modelo de lenguaje causal especializado en codigo, perteneciente a la familia Qwen2.5-Coder desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion alojada por el usuario Devdotakash en Hugging Face, cuyo modelo base declarado es Qwen/Qwen2.5-Coder-0.5B; se trata de la variante instruction-tuned mas pequena de la familia, con 494.032.768 parametros totales (0,36B sin contar embeddings) y una ventana de contexto completa de 32.768 tokens.
 
 El modelo resuelve tareas de generacion, razonamiento y correccion de codigo en un rango de tamano que permite ejecucion en CPU, moviles y GPUs de gama baja, lo que lo hace relevante para autocompletado local, asistentes embebidos y pipelines de bajo coste. La familia Qwen2.5-Coder se entreno sobre 5,5 billones de tokens que combinan codigo fuente, datos de grounding texto-codigo y datos sinteticos, y su variante de 32B se presento como referencia open source en tareas de programacion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - La cache KV es especialmente reducida gracias a GQA con solo 2 cabezas de clave/valor y 24 capas, por lo que incluso con los 32.768 tokens de contexto la ocupacion adicional es baja en comparacion con modelos densos de mayor tamano.
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, asi como en iGPU, CPU moderna e incluso dispositivos de placa unica tipo Raspberry Pi con cuantizacion agresiva.
 - GPU de datacenter (A100, H100) no son necesarias; solo tendrian sentido para servir muchas replicas o lotes muy grandes.
-- Opciones de despliegue: transformers (version 4.37.0 o superior), vLLM, TGI (text-generation-inference), llama.cpp, Ollama y endpoints compatibles con la API de inferencia de HuggingFace, segun las etiquetas del repositorio.
+- Opciones de despliegue: transformers (version 4.37.0 o superior), vLLM, TGI (text-generation-inference), llama.cpp, Ollama y endpoints compatibles con la API de inferencia de Hugging Face, segun las etiquetas del repositorio.
 - Latencia y throughput estimados: no disponible. La model card enlaza a la pagina de benchmarks de velocidad de Qwen, pero no aporta cifras para este tamano.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Devdotakash/Qwen2.5-Coder-0.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Devdotakash/Qwen2.5-Coder-0.5B-Instruct
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Repositorio oficial de la variante Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Licencia (Apache 2.0): https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct/blob/main/LICENSE

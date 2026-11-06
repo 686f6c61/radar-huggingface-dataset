@@ -40,7 +40,7 @@ El repositorio contiene, en su raíz, un export BF16 en formato Transformers y, 
 - Uso como agente y razonamiento multi-paso: no documentado ni verificado en este repositorio.
 - Modo de pensamiento extendido: no disponible; el base pertenece a la variante `-2507` de Qwen3, que precisamente eliminó el bloque de razonamiento largo en favor de respuestas directas.
 - Capacidades multimodales (visión, audio): no disponibles; el repositorio solo declara `text-generation`.
-- Compatibilidad con TGI y endpoints: el tag `text-generation-inference` y `endpoints_compatible` indica que el export puede servirse con Text Generation Inference y con endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con TGI y endpoints: el tag `text-generation-inference` y `endpoints_compatible` indica que el export puede servirse con Text Generation Inference y con endpoints compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en 8 bits: en torno a 4-5 GB de pesos, más overhead; viable en GPUs de 8-10 GB con contexto reducido.
 - VRAM estimada en 4 bits: en torno a 2-2,5 GB de pesos; viable en GPUs de 6-8 GB con contextos cortos, aunque requeriría convertir el modelo, ya que no se publican cuantizaciones.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB y RTX 4070 Ti Super para BF16 con contexto moderado; RTX 4090 24 GB, L40S, A100 40 GB y H100 para contextos largos o despliegues con concurrencia alta. En Apple Silicon, equipos con 16 GB o más de memoria unificada.
-- Opciones de despliegue: Transformers (formato nativo del repositorio), vLLM y Text Generation Inference (los safetensors BF16 son compatibles), y endpoints compatibles con la API de HuggingFace. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, que no está publicada.
+- Opciones de despliegue: Transformers (formato nativo del repositorio), vLLM y Text Generation Inference (los safetensors BF16 son compatibles), y endpoints compatibles con la API de Hugging Face. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, que no está publicada.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 - Almacenamiento: el repositorio completo ocupa 25,7 GB, muy por encima del export BF16, porque incluye el checkpoint nativo de veRL/FSDP. Para solo inferencia basta con descargar los ficheros safetensors de la raíz.
 
@@ -74,11 +74,11 @@ Los datos de la columna de contexto y licencia corresponden a las especificacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-026 | 4.022 M | No disponible (base: 262.144 tokens) | Apache-2.0 | HuggingFace, 0 descargas, checkpoint intermedio | No disponible |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.022 M | 262.144 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | No disponible |
-| Qwen/Qwen2.5-7B-Instruct | 7.600 M aprox. | 131.072 tokens | Apache-2.0 | HuggingFace | No disponible |
-| meta-llama/Llama-3.1-8B-Instruct | 8.000 M aprox. | 131.072 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace | No disponible |
-| google/gemma-3-4b-it | 4.000 M aprox. | 131.072 tokens | Terminos de uso de Gemma | HuggingFace | No disponible |
+| qwen3-4b-medicine-static-pilot-261016-step-026 | 4.022 M | No disponible (base: 262.144 tokens) | Apache-2.0 | Hugging Face, 0 descargas, checkpoint intermedio | No disponible |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.022 M | 262.144 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | No disponible |
+| Qwen/Qwen2.5-7B-Instruct | 7.600 M aprox. | 131.072 tokens | Apache-2.0 | Hugging Face | No disponible |
+| meta-llama/Llama-3.1-8B-Instruct | 8.000 M aprox. | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face | No disponible |
+| google/gemma-3-4b-it | 4.000 M aprox. | 131.072 tokens | Terminos de uso de Gemma | Hugging Face | No disponible |
 
 Frente al base, este modelo solo se diferencia por el ajuste de dominio y por ser un checkpoint intermedio; no aporta cambios de tamaño ni de ventana de contexto. Frente a alternativas de 7-8B, ofrece la ventaja de un coste de inferencia menor y la posibilidad de ejecutarse en GPUs de consumo, a costa de una capacidad general previsiblemente inferior.
 
@@ -97,6 +97,6 @@ Frente al base, este modelo solo se diferencia por el ajuste de dominio y por se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-026
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-026
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no ha devuelto ningun recurso relacionado con este modelo; los resultados obtenidos corresponden a sitios sin relacion (Hyundai Motor, el canal de YouTube "Hyu" y la plataforma Hayu).

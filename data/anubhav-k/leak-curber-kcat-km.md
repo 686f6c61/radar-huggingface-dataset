@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anubhav-k/leak-curber-kcat-km` es un modelo predictivo de propiedades enzimaticas publicado en HuggingFace por el usuario anubhav-k en el marco de un proyecto academico (identificado en la model card como "DA3410 Project 1", version v3). No se trata de un modelo de lenguaje generativo, sino de un pipeline de machine learning supervisado que predice dos parametros cineticos de enzimas: `log10_kcat` y `log10_km`, a partir de la secuencia de la enzima (`sequence`) y la representacion SMILES del sustrato (`smiles`).
+`anubhav-k/leak-curber-kcat-km` es un modelo predictivo de propiedades enzimaticas publicado en Hugging Face por el usuario anubhav-k en el marco de un proyecto academico (identificado en la model card como "DA3410 Project 1", version v3). No se trata de un modelo de lenguaje generativo, sino de un pipeline de machine learning supervisado que predice dos parametros cineticos de enzimas: `log10_kcat` y `log10_km`, a partir de la secuencia de la enzima (`sequence`) y la representacion SMILES del sustrato (`smiles`).
 
 El modelo combina caracteristicas derivadas de la secuencia mediante ESM-2 (un modelo de lenguaje proteico) con descriptores quimicos del sustrato calculados con RDKit, ademas de caracteristicas de vecindad y target encoding. Sobre ese conjunto de features se entrenan modelos de tipo MLP y de boosting (la model card menciona scikit-learn y xgboost) y se aplica una estrategia de mezcla distinta por objetivo: `blend_top3` para kcat y `et_all` (ExtraTrees sobre todas las features) para km.
 
@@ -74,10 +74,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - No se declara licencia: no hay autorizacion explicita para uso comercial ni para redistribucion; debe contactarse con el autor antes de cualquier uso en produccion.
 - No se documentan sesgos, cobertura del espacio quimico, dominio de aplicabilidad ni tasas de alucinacion o error por tipo de enzima o sustrato.
 - Solo se devuelven valores finitos por id; no se especifica el tratamiento de entradas fuera de distribucion ni de secuencias o SMILES invalidos.
-- Proyecto academico con 54 descargas y 0 likes: madurez y soporte limitados, sin pipeline ni idiomas declarados en HuggingFace.
+- Proyecto academico con 54 descargas y 0 likes: madurez y soporte limitados, sin pipeline ni idiomas declarados en Hugging Face.
 - No es un modelo de lenguaje: no admite prompts, tool calling ni razonamiento; cualquier uso conversacional es inadecuado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anubhav-k/leak-curber-kcat-km
+- Hugging Face: https://huggingface.co/anubhav-k/leak-curber-kcat-km
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos.

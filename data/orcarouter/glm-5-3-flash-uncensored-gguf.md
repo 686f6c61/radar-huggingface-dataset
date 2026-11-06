@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **GLM-5.3-Flash-Uncensored-GGUF** es una versión modificada del modelo **GLM-5.3-Flash** de Zhipu AI (Z.ai), publicada por el usuario **orcarouter** en HuggingFace. Se trata de un modelo de lenguaje de gran tamaño (LLM) con arquitectura **MoE (Mixture of Experts)** de 320 mil millones de parámetros totales y 18 mil millones activos por token, especializado en tareas de texto e imagen (image-text-to-text). La modificación principal consiste en la **abliteración** (abliteration) de los pesos del modelo original, un proceso que elimina la dirección de rechazo (refusal direction) aprendida durante el alineamiento, de modo que el modelo responde sin filtros de seguridad ni censura, sin necesidad de jailbreaks ni adaptadores LoRA.
+El modelo **GLM-5.3-Flash-Uncensored-GGUF** es una versión modificada del modelo **GLM-5.3-Flash** de Zhipu AI (Z.ai), publicada por el usuario **orcarouter** en Hugging Face. Se trata de un modelo de lenguaje de gran tamaño (LLM) con arquitectura **MoE (Mixture of Experts)** de 320 mil millones de parámetros totales y 18 mil millones activos por token, especializado en tareas de texto e imagen (image-text-to-text). La modificación principal consiste en la **abliteración** (abliteration) de los pesos del modelo original, un proceso que elimina la dirección de rechazo (refusal direction) aprendida durante el alineamiento, de modo que el modelo responde sin filtros de seguridad ni censura, sin necesidad de jailbreaks ni adaptadores LoRA.
 
-El modelo se distribuye en formato **GGUF** para su uso con `llama.cpp` y herramientas compatibles, e incluye un proyector multimodal (`mmproj`) para entrada de imágenes. Es relevante para la comunidad de **red teaming** y evaluación de seguridad de IA, así como para desarrolladores que necesitan un modelo sin restricciones de contenido para pruebas controladas. Su licencia es **MIT**, lo que permite uso comercial, aunque el acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales.
+El modelo se distribuye en formato **GGUF** para su uso con `llama.cpp` y herramientas compatibles, e incluye un proyector multimodal (`mmproj`) para entrada de imágenes. Es relevante para la comunidad de **red teaming** y evaluación de seguridad de IA, así como para desarrolladores que necesitan un modelo sin restricciones de contenido para pruebas controladas. Su licencia es **MIT**, lo que permite uso comercial, aunque el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales.
 
 ## Especificaciones técnicas
 
@@ -76,15 +76,15 @@ La comparación directa de rendimiento no es posible sin datos de benchmarks. La
 - **Alucinaciones**: como todo LLM, puede inventar hechos, citas o datos. La ausencia de alineamiento no mejora la veracidad.
 - **Idiomas**: solo soporta inglés y chino; no se garantiza calidad en otros idiomas.
 - **Contexto**: la longitud de contexto no está documentada; se recomienda probar antes de usarlo con ventanas largas.
-- **Acceso restringido**: el repositorio en HuggingFace es gated; hay que aceptar condiciones adicionales, lo que puede limitar su uso en entornos corporativos.
+- **Acceso restringido**: el repositorio en Hugging Face es gated; hay que aceptar condiciones adicionales, lo que puede limitar su uso en entornos corporativos.
 - **Riesgo legal**: aunque la licencia es MIT, el uso de un modelo sin censura puede violar políticas de plataformas o leyes locales sobre contenido generado. El responsable es el usuario.
 - **Estabilidad**: al ser una modificación no oficial, no hay garantías de mantenimiento ni soporte técnico.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-GGUF)
 - [Artículo de ExplainX sobre la abliteración](https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026)
-- [Versión NVFP4 de ericlewis en HuggingFace](https://huggingface.co/ericlewis/GLM-5.3-Flash-OrcaRouter-Uncensored-NVFP4)
+- [Versión NVFP4 de ericlewis en Hugging Face](https://huggingface.co/ericlewis/GLM-5.3-Flash-OrcaRouter-Uncensored-NVFP4)
 - [Publicación de OrcaRouter en X (Twitter)](https://x.com/OrcaRouter/status/2093612518396871075)
 - [Publicación de OrcaRouter en LinkedIn](https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30)
 - [Página de API de GLM-5.3-Flash en OrcaRouter](https://www.orcarouter.ai/models/z-ai/glm-5.3-flash)

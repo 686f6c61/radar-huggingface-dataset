@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicados para esta conversión específica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lyonsno/moge-webgpu
+- Hugging Face: https://huggingface.co/lyonsno/moge-webgpu
 - Repositorio GitHub: https://github.com/lyonsno/moge-webgpu
 - Paper MoGe-2: https://arxiv.org/abs/2507.02546
 - Modelo base: https://huggingface.co/Ruicheng/moge-2-vitl-normal

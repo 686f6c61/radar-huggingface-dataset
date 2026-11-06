@@ -6,7 +6,7 @@
 
 No es un modelo de lenguaje: no hay parámetros en el sentido habitual ni ventana de contexto, sino una política que mapea un vector de observación de 11 dimensiones a tres acciones continuas (avanzar/retroceder, girar y saltar). El interés del artefacto es doble: por un lado, sirve como ejemplo mínimo y reproducible de *reward shaping* con recompensa principal escasa (+100 al aterrizar dentro de la caja) y de aparición emergente de una conducta compuesta (correr y saltar) a partir de 250 000 pasos; por otro, incluye el entorno completo (`pureum_env.py`), lo que permite reproducir el entrenamiento íntegro en CPU en unos 7 minutos.
 
-El autor reporta una tasa de éxito del 100 % (50/50) en episodios no vistos, con un tiempo medio de 1,3 segundos hasta entrar en la caja. El repositorio es de tamaño mínimo (0,0 GB según HuggingFace, prácticamente el checkpoint `model.zip` y los recursos visuales), la licencia es Apache 2.0 y la documentación está únicamente en coreano.
+El autor reporta una tasa de éxito del 100 % (50/50) en episodios no vistos, con un tiempo medio de 1,3 segundos hasta entrar en la caja. El repositorio es de tamaño mínimo (0,0 GB según Hugging Face, prácticamente el checkpoint `model.zip` y los recursos visuales), la licencia es Apache 2.0 y la documentación está únicamente en coreano.
 
 ## Especificaciones técnicas
 
@@ -106,7 +106,7 @@ Frente a agentes PPO de referencia en MuJoCo (por ejemplo, las tareas estándar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucameta/connectailab-rl-luca-v1-pureumbox-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucameta/connectailab-rl-luca-v1-pureumbox-ppo
 - Espacio de TRELLIS utilizado para generar el personaje 3D: https://huggingface.co/spaces/trellis-community/TRELLIS
 - Modelo relacionado de la misma iniciativa: https://huggingface.co/lucyhome/connectailab-rl-lucy-v1-teacher
 - Modelo relacionado de la misma iniciativa: https://huggingface.co/attitudemetal/connectailab-rl-aion-v1

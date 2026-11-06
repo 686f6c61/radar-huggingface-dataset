@@ -100,7 +100,7 @@ La comparación con modelos de propósito general como SmolLM2 o Llama 3.2 1B no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed42-sft
 - Run raw base: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-base
 - Run 1PP completo comparable: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed42-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

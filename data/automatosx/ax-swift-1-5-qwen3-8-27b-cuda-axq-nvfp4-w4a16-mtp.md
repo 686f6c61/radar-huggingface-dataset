@@ -74,8 +74,8 @@ La informacion proporcionada no incluye especificaciones de terceros comparables
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP | 27.781.427.952 | No disponible | NVFP4 W4A16 (pesos 4 bits, activaciones BF16) | Swift Open License v1.0 | Publico en HuggingFace; 0 descargas, 0 likes |
-| ukisai/Swift-1.5-Qwen3.8-27b (origen) | 27B segun el nombre del modelo; valor exacto no disponible | No disponible | BF16, sin cuantizar | Swift Open License v1.0 para la contribucion Swift; Apache 2.0 para la base Qwen3.8-27B | Publico en HuggingFace |
+| AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP | 27.781.427.952 | No disponible | NVFP4 W4A16 (pesos 4 bits, activaciones BF16) | Swift Open License v1.0 | Publico en Hugging Face; 0 descargas, 0 likes |
+| ukisai/Swift-1.5-Qwen3.8-27b (origen) | 27B segun el nombre del modelo; valor exacto no disponible | No disponible | BF16, sin cuantizar | Swift Open License v1.0 para la contribucion Swift; Apache 2.0 para la base Qwen3.8-27B | Publico en Hugging Face |
 | Alternativas de terceros de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Conviene senalar que el checkpoint cuantizado es una obra derivada del modelo de origen y que no aporta capacidades nuevas respecto a el: solo reduce el coste de almacenamiento y, potencialmente, de inferencia.
@@ -95,9 +95,9 @@ Conviene senalar que el checkpoint cuantizado es una obra derivada del modelo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Revision concreta del modelo base: `b4c84d42903a8646b25857eb2827288d92ed85a4`
-- Licencia del checkpoint: LICENSE (Swift Open License v1.0) en el repositorio de HuggingFace
-- Licencia de la base: LICENSE-APACHE-2.0 en el repositorio de HuggingFace
+- Licencia del checkpoint: LICENSE (Swift Open License v1.0) en el repositorio de Hugging Face
+- Licencia de la base: LICENSE-APACHE-2.0 en el repositorio de Hugging Face
 - Papers, blogs, repositorios o demos adicionales: no disponibles. Las busquedas web realizadas no devolvieron resultados relacionados con el modelo; los unicos resultados obtenidos correspondian a contenidos sobre el archivo de David Bowie en el Victoria and Albert Museum y no guardan relacion con esta ficha.

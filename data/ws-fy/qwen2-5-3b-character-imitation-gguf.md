@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B Character Imitation GGUF | 3,09 B | no disponible | Imitacion de estilo y roleplay | qwen-research | GGUF en HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible | Instrucciones generales | qwen-research | Safetensors y GGUF en HuggingFace |
-| Qwen2.5-3B Character Imitation LoRA | 3,09 B (base) | no disponible | Imitacion de estilo (adaptador) | qwen-research | LoRA en HuggingFace |
+| Qwen2.5-3B Character Imitation GGUF | 3,09 B | no disponible | Imitacion de estilo y roleplay | qwen-research | GGUF en Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3,09 B | no disponible | Instrucciones generales | qwen-research | Safetensors y GGUF en Hugging Face |
+| Qwen2.5-3B Character Imitation LoRA | 3,09 B (base) | no disponible | Imitacion de estilo (adaptador) | qwen-research | LoRA en Hugging Face |
 
 La comparativa se limita al ecosistema Qwen2.5-3B porque no se dispone de datos de benchmarks ni de otros modelos de imitacion de estilo en la informacion proporcionada. Frente a la base, este modelo gana en fidelidad estilistica en chino pero pierde flexibilidad general y capacidad de respuesta larga. Frente al LoRA original, la version GGUF evita el paso de fusion en tiempo de carga a cambio de fijar la cuantizacion.
 
@@ -84,7 +84,7 @@ La comparativa se limita al ecosistema Qwen2.5-3B porque no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-gguf
+- Modelo en Hugging Face: https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-gguf
 - Repositorio del LoRA: https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

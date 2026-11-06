@@ -4,7 +4,7 @@
 
 `microduck-roller-sprint-v1` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. El modelo resuelve una tarea concreta: generar una marcha perpetua ("sprint") sobre ruedas (rollers) que se ejecuta de forma continua hasta que el operador la detiene. Se distribuye como un archivo ONNX autocontenido que incluye el normalizador de observaciones, de modo que el robot puede alimentarlo con observaciones en bruto.
 
-El modelo lo publica el usuario SccHy en HuggingFace y se enmarca en el ecosistema de entrenamiento `mjlab` (basado en MuJoCo), con la tarea identificada como `Mjlab-RollerSprint2m-MicroDuck`. La observación tiene 61 dimensiones y la acción 14 dimensiones, ejecutándose a 50 Hz. No se especifican parámetros de red, arquitectura interna ni datos de entrenamiento más allá del checkpoint y el commit.
+El modelo lo publica el usuario SccHy en Hugging Face y se enmarca en el ecosistema de entrenamiento `mjlab` (basado en MuJoCo), con la tarea identificada como `Mjlab-RollerSprint2m-MicroDuck`. La observación tiene 61 dimensiones y la acción 14 dimensiones, ejecutándose a 50 Hz. No se especifican parámetros de red, arquitectura interna ni datos de entrenamiento más allá del checkpoint y el commit.
 
 Su relevancia es acotada pero clara: demuestra el flujo completo de entrenamiento en simulación y despliegue en hardware real para un robot de bajo coste, mediante un manifiesto de política versionado (`manifest.json`, esquema 2) y una única orden de carga en el daemon del robot. No es un modelo de lenguaje ni un modelo fundacional; es una política de control especializada.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada pero clara: demuestra el flujo completo de entrenamient
 | Dimension de observacion | 61 |
 | Dimension de accion | 14 |
 | Libreria / runtime | `microduck` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-roller-sprint-v1 | Política RL sobre ruedas | 61 / 14 | 50 Hz | no disponible | HuggingFace (SccHy) |
+| microduck-roller-sprint-v1 | Política RL sobre ruedas | 61 / 14 | 50 Hz | no disponible | Hugging Face (SccHy) |
 | Otras políticas microduck | Políticas RL para el mismo robot | no disponible | no disponible | no disponible | no disponible en la información |
 | Políticas de locomotion para cuadrúpedos comerciales | Políticas RL propietarias | no disponible | no disponible | propietaria | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables publicados con especific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-roller-sprint-v1
+- Hugging Face: https://huggingface.co/SccHy/microduck-roller-sprint-v1
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de política (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon de microduck
 - Entorno de entrenamiento mjlab: no disponible enlace directo en la información proporcionada

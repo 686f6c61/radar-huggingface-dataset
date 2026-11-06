@@ -113,7 +113,7 @@ Comparativa con alternativas externas de la misma categoria: no disponible. Del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAHATIBlaise/ethine
+- Modelo en Hugging Face: https://huggingface.co/BAHATIBlaise/ethine
 - Perfil de GitHub del autor: https://github.com/BAHATIBlaise
 - Repositorio de perfil del autor: https://github.com/BAHATIBlaise/BAHATIBlaise
 - Documentacion interna del proyecto citada en la model card (rutas relativas al repositorio, no enlaces publicos): `docs/research_specification.md`, `docs/development_provenance.md`, `docs/data_provenance.md`, `docs/experiments.md`, `experiments/exp002_tiny_baseline/record.json`, `evaluation.json`, `configs/`

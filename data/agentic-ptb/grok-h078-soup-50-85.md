@@ -57,8 +57,8 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. Co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h078.soup-50-85 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
+| agentic-ptb/grok.h078.soup-50-85 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
 
 No se conocen otros modelos de la misma categoria con los que comparar de forma significativa.
 
@@ -72,5 +72,5 @@ No se conocen otros modelos de la misma categoria con los que comparar de forma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h078.soup-50-85
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h078.soup-50-85
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la busqueda)

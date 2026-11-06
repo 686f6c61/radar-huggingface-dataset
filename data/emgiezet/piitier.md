@@ -106,6 +106,6 @@ No se dispone de resultados de benchmarks comparables entre piitier y estas alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emgiezet/piitier
+- Modelo en Hugging Face: https://huggingface.co/emgiezet/piitier
 - Modelo base: https://huggingface.co/bardsai/eu-pii-anonimization-multilang-v2
 - Repositorio del modelo base (revisión fijada): https://huggingface.co/bardsai/eu-pii-anonimization-multilang-v2/tree/5e61416e77675881185767fc0c67759d48b35592

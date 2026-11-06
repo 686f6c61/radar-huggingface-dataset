@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mistral-7B-Instruct-v0.3-Malevolent-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-7B-Instruct-v0.3-Malevolent-GGUF
 - Modelo base: https://huggingface.co/Osye/Mistral-7B-Instruct-v0.3-Malevolent
 - Pagina de descargas del autor: https://hf.tst.eu/model#Mistral-7B-Instruct-v0.3-Malevolent-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

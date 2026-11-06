@@ -93,6 +93,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hyjwrt/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/hyjwrt/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código) en la información disponible.

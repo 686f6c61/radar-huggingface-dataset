@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0-wash_dish_50-5k` es un checkpoint de vision-lenguaje-accion (VLA) publicado en HuggingFace por el usuario `dddddsds31341`. Se trata de un ajuste fino completo (full fine-tuning) del modelo base `pi0_base` sobre el dataset `wash_dish_50`, una tarea de manipulacion bimanual en la que un brazo robotico sujeta un plato mientras el otro lo limpia con una esponja. El checkpoint corresponde al paso 5.000 de un total de 20.005, con tamano de lote 32, y se distribuye en formato Orbax junto con las estadisticas de normalizacion del dataset.
+`pi0-wash_dish_50-5k` es un checkpoint de vision-lenguaje-accion (VLA) publicado en Hugging Face por el usuario `dddddsds31341`. Se trata de un ajuste fino completo (full fine-tuning) del modelo base `pi0_base` sobre el dataset `wash_dish_50`, una tarea de manipulacion bimanual en la que un brazo robotico sujeta un plato mientras el otro lo limpia con una esponja. El checkpoint corresponde al paso 5.000 de un total de 20.005, con tamano de lote 32, y se distribuye en formato Orbax junto con las estadisticas de normalizacion del dataset.
 
 El modelo pertenece a la familia pi0, desarrollada por Physical Intelligence y distribuida a traves del repositorio openpi, que combina un modelo de vision-lenguaje con un modulo especializado en la generacion de acciones motoras. La model card del autor no detalla la arquitectura interna, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia, por lo que esos apartados figuran aqui como "no disponible".
 
@@ -102,6 +102,6 @@ La comparacion cuantitativa no es posible: no hay metricas publicadas de este ch
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dddddsds31341/pi0-wash_dish_50-5k
+- Pagina del modelo en Hugging Face: https://huggingface.co/dddddsds31341/pi0-wash_dish_50-5k
 - Repositorio openpi de Physical Intelligence (referencia del modelo base pi0): https://github.com/Physical-Intelligence/openpi
 - Nota sobre la busqueda web: los resultados obtenidos corresponden unicamente a paginas de ChatGPT (chatgpt.com, openai.com, learn.chatgpt.com) y no guardan relacion con este modelo. No se han encontrado papers, blogs, demos ni repositorios adicionales del autor.

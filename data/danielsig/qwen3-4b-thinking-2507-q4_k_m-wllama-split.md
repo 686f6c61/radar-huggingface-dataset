@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni el
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Thinking-2507 (Q4_K_M, wllama-split) | ~4,02 B (dato real) | no disponible | GGUF dividido en 5 fragmentos | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Thinking-2507 (original) | ~4,02 B (mismo modelo base) | no disponible | safetensors (segun el modelo base) | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3-4B-Thinking-2507-GGUF | ~4,02 B (mismo modelo) | no disponible | GGUF (varias cuantizaciones) | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Thinking-2507 (Q4_K_M, wllama-split) | ~4,02 B (dato real) | no disponible | GGUF dividido en 5 fragmentos | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Thinking-2507 (original) | ~4,02 B (mismo modelo base) | no disponible | safetensors (segun el modelo base) | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3-4B-Thinking-2507-GGUF | ~4,02 B (mismo modelo) | no disponible | GGUF (varias cuantizaciones) | Apache 2.0 | Hugging Face |
 
 Las tres entradas corresponden al mismo modelo en distintos empaquetados, por lo que no existe una comparacion real de rendimiento entre arquitecturas distintas en la informacion disponible. No se dispone de datos para comparar con alternativas de otros fabricantes (por ejemplo, modelos de ~3-4 B de otras familias) sin inventar cifras. Se indica, por tanto, "no disponible" para una comparativa numerica con modelos de igual categoria.
 
@@ -91,7 +91,7 @@ Las tres entradas corresponden al mismo modelo en distintos empaquetados, por lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielSig/Qwen3-4B-Thinking-2507-Q4_K_M-wllama-split
+- Repositorio en Hugging Face: https://huggingface.co/DanielSig/Qwen3-4B-Thinking-2507-Q4_K_M-wllama-split
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - GGUF de origen: https://huggingface.co/unsloth/Qwen3-4B-Thinking-2507-GGUF
 - Libreria wllama: https://github.com/ngxson/wllama

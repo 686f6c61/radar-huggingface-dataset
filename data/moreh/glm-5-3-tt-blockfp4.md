@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moreh/GLM-5.3-TT-BLOCKFP4 es un repositorio de pesos cuantizados publicado por el usuario moreh en HuggingFace, construido a partir del modelo base zai-org/GLM-5.3. El nombre del repositorio indica una cuantizacion en formato BLOCKFP4 (aritmetica de 4 bits en coma flotante aplicada por bloques), una tecnica habitual para reducir el coste de memoria y de ancho de banda durante la inferencia de modelos grandes sin reentrenar los pesos. El repositorio esta marcado como de acceso restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+moreh/GLM-5.3-TT-BLOCKFP4 es un repositorio de pesos cuantizados publicado por el usuario moreh en Hugging Face, construido a partir del modelo base zai-org/GLM-5.3. El nombre del repositorio indica una cuantizacion en formato BLOCKFP4 (aritmetica de 4 bits en coma flotante aplicada por bloques), una tecnica habitual para reducir el coste de memoria y de ancho de banda durante la inferencia de modelos grandes sin reentrenar los pesos. El repositorio esta marcado como de acceso restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de esta publicacion es acotada y de perfil practico: no introduce un modelo nuevo, sino una variante de despliegue de un modelo existente. Su interes reside en la posibilidad de servir el modelo base con menos VRAM y mayor throughput siempre que el hardware disponga de kernels compatibles con FP4. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado el 17 de septiembre de 2026 con una actualizacion posterior ese mismo dia.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks, parametros ni contexto de ninguno de los m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace antes de descargar los pesos; no es un artefacto de uso inmediato.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face antes de descargar los pesos; no es un artefacto de uso inmediato.
 - Licencia "other": no es una licencia estandar (Apache 2.0, MIT, etc.). Es imprescindible revisar los terminos del modelo base y del repositorio antes de cualquier uso comercial, ya que las condiciones pueden imponer restricciones adicionales.
 - Degradacion por cuantizacion: no hay datos publicados sobre la perdida de calidad frente al modelo base. La cuantizacion a 4 bits puede afectar de forma desigual a tareas sensibles a la precision, como razonamiento matematico, generacion de codigo o seguimiento estricto de formatos.
 - Ausencia de documentacion: no hay model card, ni ficha de parametros, ni instrucciones de uso. Desplegar este repositorio sin la documentacion del modelo base implica asumir supuestos no verificados.
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks, parametros ni contexto de ninguno de los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moreh/GLM-5.3-TT-BLOCKFP4
+- Repositorio en Hugging Face: https://huggingface.co/moreh/GLM-5.3-TT-BLOCKFP4
 - Modelo base referenciado: https://huggingface.co/zai-org/GLM-5.3
 - Papers, blogs, repositorios o demos: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con su esquema de cuantizacion.

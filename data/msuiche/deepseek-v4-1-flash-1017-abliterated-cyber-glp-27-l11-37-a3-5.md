@@ -78,8 +78,8 @@ En el punto de operación 3,5: refusal32 con 6/32 rechazos (stock 32/32), benign
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (GLP a3.5) | Vector de control sobre DeepSeek-V4.1-Flash-1017 | 544 KB (vector); base MoE de 40 capas | No disponible | MIT | HuggingFace, acceso con acuerdo de uso responsable |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 | Modelo base MoE | 384 expertos enrutados + 1 compartido; checkpoint de 510 GB | No disponible | No disponible | HuggingFace |
+| Este artefacto (GLP a3.5) | Vector de control sobre DeepSeek-V4.1-Flash-1017 | 544 KB (vector); base MoE de 40 capas | No disponible | MIT | Hugging Face, acceso con acuerdo de uso responsable |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | Modelo base MoE | 384 expertos enrutados + 1 compartido; checkpoint de 510 GB | No disponible | No disponible | Hugging Face |
 | Otros vectores de control / abliteration | Steering de activaciones | Variable | No disponible | Variable | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas de steering en la información proporcionada.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de stee
 
 ## Enlaces
 
-- [HuggingFace: msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5](https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5)
+- [Hugging Face: msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5](https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5)
 - [Modelo base: deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
 - [Especificación GLP](https://github.com/msuiche/weightless/blob/main/docs/spec/GLP.md)
 - [Herramienta captain-vector](https://github.com/msuiche/weightless/tree/main/tools/captain-vector)

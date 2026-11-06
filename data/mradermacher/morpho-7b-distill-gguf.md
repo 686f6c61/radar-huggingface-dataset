@@ -98,7 +98,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Morpho-7B-Distill-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Morpho-7B-Distill-GGUF
 - Modelo base: https://huggingface.co/bluemorpholimited/Morpho-7B-Distill
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Morpho-7B-Distill-GGUF
 - Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

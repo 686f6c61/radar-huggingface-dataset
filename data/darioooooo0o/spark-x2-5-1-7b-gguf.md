@@ -93,8 +93,8 @@ No se han encontrado comparaciones directas con otros modelos compactos de conte
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-1.7B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Repositorio GitHub de la familia Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - Pagina en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-1.7B
 - Plugin de vLLM requerido: https://github.com/XHToken/Spark-plugin

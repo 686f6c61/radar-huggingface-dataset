@@ -65,7 +65,7 @@ No se dispone de resultados de benchmarks para comparar el rendimiento.
 - El formato MLX limita su despliegue a entornos compatibles con Apple, reduciendo la portabilidad a infraestructura de servidores estándar.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16
+- Hugging Face del modelo: https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ3e-fp16
 - Modelo original: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Variante oQ4e: https://huggingface.co/RepublicOfKorokke/gemma-4-26B-A4B-it-qat-q4_0-unquantized-oQ4e-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jmpplbp/laogames-mmaudio es un repositorio de HuggingFace publicado por el usuario jmpplbp que no contiene un modelo entrenado de forma independiente, sino un paquete de pesos y activos de ejecución ("runtime assets") destinados a flujos de trabajo de ComfyUI. El repositorio se etiqueta con las claves comfyui, laogames y region:us, y su model card lo describe como el conjunto de modelos que consumen los workflows del proyecto LaoGames, con las revisiones de origen y sus sumas de comprobación registradas en el fichero MODEL_SOURCES.json.
+jmpplbp/laogames-mmaudio es un repositorio de Hugging Face publicado por el usuario jmpplbp que no contiene un modelo entrenado de forma independiente, sino un paquete de pesos y activos de ejecución ("runtime assets") destinados a flujos de trabajo de ComfyUI. El repositorio se etiqueta con las claves comfyui, laogames y region:us, y su model card lo describe como el conjunto de modelos que consumen los workflows del proyecto LaoGames, con las revisiones de origen y sus sumas de comprobación registradas en el fichero MODEL_SOURCES.json.
 
 Los ficheros empaquetados proceden de dos repositorios citados en la model card: phazei/NSFW_MMaudio y Kijai/MMAudio_safetensors (tres entradas de este último), todos ellos con licencia MIT en las revisiones indicadas. Es decir, el repositorio actúa como agregador reproducible de checkpoints de audio multimodal de la familia MMAudio en formato safetensors, no como una publicación de pesos originales. Su relevancia es, por tanto, operativa: facilita la instalación y la verificación por checksum de los pesos que necesita un workflow concreto de generación de audio.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios se derivan del proposito declarado del repositorio (em
 
 - Instalacion reproducible de workflows de audio en ComfyUI: el repositorio agrupa en una sola descarga los checkpoints que consumen los grafos del proyecto LaoGames, evitando la busqueda manual de cada fichero en repositorios de terceros.
 - Verificacion de integridad en pipelines de CI/CD: el README menciona que las revisiones de origen y los checksums se registran en MODEL_SOURCES.json, lo que permite validar que los pesos desplegados coinciden con las revisiones auditadas antes de ejecutar un workflow.
-- Espejo interno de pesos en entornos aislados: el paquete de 5,6 GB puede replicarse en un registro privado para equipos que trabajan sin acceso directo a HuggingFace.
+- Espejo interno de pesos en entornos aislados: el paquete de 5,6 GB puede replicarse en un registro privado para equipos que trabajan sin acceso directo a Hugging Face.
 - Auditoria de licencias de terceros: al listar cada origen con su licencia (MIT), el repositorio facilita el inventario de componentes y su trazabilidad dentro de un producto que integre generacion de audio.
 - Reproducibilidad de experimentos: fijar las revisiones por commit hash de los repositorios de origen permite repetir una generacion concreta meses despues, algo habitual en produccion audiovisual.
 - Prototipado de efectos de sonido y audio para video en estudios pequenos: si el modelo subyacente realiza sintesis de audio condicionada por video, este paquete reduce el trabajo de integracion a la carga de los safetensors en ComfyUI; la calidad resultante no se ha podido verificar con esta informacion.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de especificaciones tecnicas que permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-mmaudio
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-mmaudio
 - Origen citado, phazei/NSFW_MMaudio (revision 6dab153eb444c74d2013a4c09ab012be24ab4a8e, licencia MIT): https://huggingface.co/phazei/NSFW_MMaudio/tree/6dab153eb444c74d2013a4c09ab012be24ab4a8e
 - Origen citado, Kijai/MMAudio_safetensors (revision 5984623e6b436818c6ff287ef6eec93e3e05aa3f, licencia MIT): https://huggingface.co/Kijai/MMAudio_safetensors/tree/5984623e6b436818c6ff287ef6eec93e3e05aa3f
 - Fichero de manifiesto MODEL_SOURCES.json: citado en la model card; no se dispone de URL verificada en la informacion proporcionada.

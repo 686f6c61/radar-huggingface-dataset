@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Y-labs/Qwen3.5-2B-ToolCalling-LoRA es un repositorio de HuggingFace publicado por el usuario Y-labs que, por su nombre y por el tamaño del repo (0,3 GB), corresponde a un adaptador LoRA (o un conjunto de pesos derivados de un ajuste LoRA) orientado a *tool calling*, es decir, a la generacion de llamadas a funciones en formato estructurado. El identificador sugiere que el modelo base sobre el que se aplica el adaptador es un Qwen3.5 de 2B parametros, si bien esta circunstancia no se confirma en ninguna parte de la documentacion publicada.
+Y-labs/Qwen3.5-2B-ToolCalling-LoRA es un repositorio de Hugging Face publicado por el usuario Y-labs que, por su nombre y por el tamaño del repo (0,3 GB), corresponde a un adaptador LoRA (o un conjunto de pesos derivados de un ajuste LoRA) orientado a *tool calling*, es decir, a la generacion de llamadas a funciones en formato estructurado. El identificador sugiere que el modelo base sobre el que se aplica el adaptador es un Qwen3.5 de 2B parametros, si bien esta circunstancia no se confirma en ninguna parte de la documentacion publicada.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada: autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion figuran todos como "[More Information Needed]". El repositorio no tiene descargas y cuenta con un unico *like*, fue creado y actualizado el 23 de octubre de 2026 con apenas unos segundos de diferencia, y no incluye pipeline declarado.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada: autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion figuran todos como "[More Information Needed]". El repositorio no tiene descargas y cuenta con un unico *like*, fue creado y actualizado el 23 de octubre de 2026 con apenas unos segundos de diferencia, y no incluye pipeline declarado.
 
 Por tanto, esta ficha no puede describir caracteristicas verificadas del modelo, sino unicamente el estado del artefacto publicado: un adaptador de bajo rango para *function calling* sobre un modelo pequeno, empaquetado con la libreria `transformers` y con la etiqueta `unsloth`, que apunta a un caso de uso muy concreto (agentes y pipelines que necesitan salidas JSON de llamadas a herramientas) pero que carece por completo de documentacion, evaluacion y licencia declarada.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo base de ~2B parametros en fp16 requiere del orden de 4-6 GB de VRAM para pesos y *KV cache* en contextos moderados, y alrededor de 2-3 GB si se cuantiza a 4 bits; estas cifras son estimaciones a partir del tamano sugerido por el nombre, no datos del autor.
 - El adaptador en si ocupa 0,3 GB y debe combinarse con el modelo base (fusionandolo o cargandolo como modulo PEFT) antes de la inferencia.
 - GPU recomendadas: no disponibles. Por tamano, un modelo de 2B cabria en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti o RTX 4090, y en GPUs de datacenter (A100, H100) con mucha holgura; sin confirmacion por parte del autor.
-- Despliegue: `transformers` esta confirmado por los tags; la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF hace que llama.cpp/Ollama no sean utilizables sin conversion y fusion previas.
+- Despliegue: `transformers` esta confirmado por los tags; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF hace que llama.cpp/Ollama no sean utilizables sin conversion y fusion previas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No disponible. No se ha publicado informacion suficiente (parametros, contexto, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Y-labs/Qwen3.5-2B-ToolCalling-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/Y-labs/Qwen3.5-2B-ToolCalling-LoRA
 - Referencia citada en los tags del Hub (Lacoste et al., 2019, calculo de impacto ambiental; no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo, demo o dataset de entrenamiento: no disponibles.

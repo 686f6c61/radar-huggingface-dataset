@@ -105,7 +105,7 @@ La comparacion mas directa es con el PQ2_0 de PrismML: mismos pesos y misma cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaydmulani/Ternary-Bonsai-1.7B-TQ2_0_G128
+- Modelo en Hugging Face: https://huggingface.co/zaydmulani/Ternary-Bonsai-1.7B-TQ2_0_G128
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-unpacked
 - Repositorio con metodologia, preregistros y registros sin procesar: https://github.com/zaydmulani09/uno-model (etapas 1b y 1c)
 - Rama de llama.cpp con el parche (`tq2_0-g128`): https://github.com/zaydmulani09/llama.cpp/tree/tq2_0-g128

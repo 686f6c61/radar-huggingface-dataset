@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tomngdev/indra-ocr-web` es un paquete de despliegue en navegador de los modelos ONNX de `datalab-to/indra-ocr` (etiqueta v3.1.1), acompanado de un cargador en JavaScript que los ejecuta mediante `onnxruntime-web` sobre el backend WebAssembly. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribucion con port del pre y postprocesado desde el paquete Python `indra-ocr` (repositorio `datalab-to/indra`). Su tarea declarada en HuggingFace es `image-to-text`, es decir, reconocimiento optico de caracteres (OCR) sobre imagenes de paginas.
+`tomngdev/indra-ocr-web` es un paquete de despliegue en navegador de los modelos ONNX de `datalab-to/indra-ocr` (etiqueta v3.1.1), acompanado de un cargador en JavaScript que los ejecuta mediante `onnxruntime-web` sobre el backend WebAssembly. No se trata de un modelo nuevo entrenado desde cero, sino de una redistribucion con port del pre y postprocesado desde el paquete Python `indra-ocr` (repositorio `datalab-to/indra`). Su tarea declarada en Hugging Face es `image-to-text`, es decir, reconocimiento optico de caracteres (OCR) sobre imagenes de paginas.
 
 El problema que resuelve es concreto: permitir OCR dentro del navegador sin enviar las imagenes a un servidor, lo que simplifica el cumplimiento de privacidad y elimina la dependencia de infraestructura de inferencia. La API expuesta devuelve, por pagina, un objeto con `lines` (cada linea con `box`, `text` y `conf`), el texto completo agregado y la `rotation` detectada. Los modelos opcionales se pueden desactivar con las opciones `cjk`, `orient` y `order`, de modo que el desarrollador decide que partes del pipeline carga.
 
-La relevancia actual es la del OCR en el borde (client-side): el repo ocupa 0.0 GB segun HuggingFace y acumula 5 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto muy reciente y con validacion comunitaria practicamente nula. La model card no publica arquitectura interna, numero de parametros, longitud de contexto ni resultados de benchmarks del modelo base.
+La relevancia actual es la del OCR en el borde (client-side): el repo ocupa 0.0 GB segun Hugging Face y acumula 5 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto muy reciente y con validacion comunitaria practicamente nula. La model card no publica arquitectura interna, numero de parametros, longitud de contexto ni resultados de benchmarks del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ La relevancia actual es la del OCR en el borde (client-side): el repo ocupa 0.0 
 | Formato de pesos | ONNX (ejecutados con `onnxruntime-web`), mas modulo JavaScript ESM `indra-ocr-web.mjs` |
 | Tarea (pipeline) | image-to-text |
 | Runtime de inferencia | `onnxruntime-web` 1.30.0, backend wasm |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Modelo base | `datalab-to/indra-ocr` |
 | Descargas / likes | 5 / 0 |
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo de artefacto | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tomngdev/indra-ocr-web` | Pesos ONNX + cargador JS para navegador (wasm) | no disponible | no disponible | en, zh | apache-2.0 | HuggingFace, 5 descargas |
-| `datalab-to/indra-ocr` | Modelo original (referencia del anterior), etiqueta v3.1.1 | no disponible | no disponible | en, zh | apache-2.0 (segun el artefacto derivado) | HuggingFace |
+| `tomngdev/indra-ocr-web` | Pesos ONNX + cargador JS para navegador (wasm) | no disponible | no disponible | en, zh | apache-2.0 | Hugging Face, 5 descargas |
+| `datalab-to/indra-ocr` | Modelo original (referencia del anterior), etiqueta v3.1.1 | no disponible | no disponible | en, zh | apache-2.0 (segun el artefacto derivado) | Hugging Face |
 | Otros motores OCR (por ejemplo, Tesseract u OCR basados en deteccion + reconocimiento) | Binarios o librerias ejecutables en servidor | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos de benchmarks ni especificaciones tecnicas de alternativas que permitan una comparacion cuantitativa de precision, latencia o cobertura linguistica. La unica comparacion verificable es la jerarquia entre este paquete y su modelo base: `tomngdev/indra-ocr-web` anade el runtime de navegador y el port del pre/postprocesado, mientras que `datalab-to/indra-ocr` es el origen de los pesos.
@@ -87,17 +87,17 @@ No se han proporcionado datos de benchmarks ni especificaciones tecnicas de alte
 - Riesgo de error de reconocimiento: como todo sistema OCR, puede confundir caracteres similares, especialmente en textos pequenos, baja resolucion, ruido, manuscrito o caracteres CJK complejos. El campo `conf` por linea deberia usarse para filtrar o marcar revision humana; no debe asumirse texto perfecto.
 - Sin garantias sobre el modelo base: la model card de este paquete no documenta el proceso de entrenamiento, los sesgos del dataset ni las limitaciones del reconocedor original; esa informacion debe consultarse en `datalab-to/indra-ocr`.
 - Rendimiento dependiente del cliente: sin cabeceras COOP/COEP el backend wasm se ejecuta en monohilo, con lo que la latencia por pagina puede ser considerable en dispositivos modestos. No hay cifras publicadas.
-- Carga inicial: los modelos ONNX deben descargarse en el navegador; el repositorio figura como 0.0 GB en HuggingFace, lo que no permite estimar el peso real de los ficheros y, por tanto, el tiempo de primera carga.
+- Carga inicial: los modelos ONNX deben descargarse en el navegador; el repositorio figura como 0.0 GB en Hugging Face, lo que no permite estimar el peso real de los ficheros y, por tanto, el tiempo de primera carga.
 - Ambiguedad sobre el contenido del repositorio: el tamano reportado (0.0 GB) es compatible con punteros LFS o con una publicacion incompleta; conviene verificar la lista de ficheros antes de integrar.
 - Licencia: apache-2.0 permite uso comercial y modificacion con atribucion, pero debe conservarse el aviso de licencia y verificarse que el modelo base mantiene la misma licencia.
 - No apto como sustituto de un LLM: no realiza razonamiento, generacion libre, tool calling ni planificacion de agentes; cualquier flujo que requiera interpretacion semantica necesita un modelo adicional.
 
 ## Enlaces
 
-- [HuggingFace: tomngdev/indra-ocr-web](https://huggingface.co/tomngdev/indra-ocr-web)
+- [Hugging Face: tomngdev/indra-ocr-web](https://huggingface.co/tomngdev/indra-ocr-web)
 - [Modelo base: datalab-to/indra-ocr](https://huggingface.co/datalab-to/indra-ocr)
 - [Repositorio del paquete Python indra-ocr (datalab-to/indra)](https://github.com/datalab-to/indra)
 - [Documentacion de onnxruntime-web](https://onnxruntime.ai/docs/get-started/web)
 - [CDN de onnxruntime-web 1.30.0 en jsDelivr](https://cdn.jsdelivr.net/npm/onnxruntime-web@1.30.0/dist/ort.wasm.bundle.min.mjs)
 
-No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs tecnicos, demos o espacios de HuggingFace) para este modelo.
+No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs tecnicos, demos o espacios de Hugging Face) para este modelo.

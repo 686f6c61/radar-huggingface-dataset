@@ -57,7 +57,7 @@ No se proporcionan benchmarks adicionales (MMLU, HumanEval, etc.) ni comparacion
 - No se especifican requisitos oficiales de VRAM ni GPUs recomendadas.
 - Con 4.4 mil millones de parámetros, el modelo en precisión FP16 ocupa aproximadamente 8.9 GB (tamaño del repositorio). En cuantización de 4 bits cabría en GPUs consumer como RTX 3090 o RTX 4090, pero no se confirma disponibilidad de cuantizaciones.
 - El entrenamiento se realizó en 4x H200 (GPU de alta gama), lo que sugiere que la inferencia es viable en una sola GPU de gama alta o media con suficiente VRAM.
-- Opciones de despliegue: al ser un modelo transformers, puede usarse con la librería transformers de HuggingFace, y potencialmente con vLLM o TGI si se adapta, aunque no se menciona compatibilidad explícita.
+- Opciones de despliegue: al ser un modelo transformers, puede usarse con la librería transformers de Hugging Face, y potencialmente con vLLM o TGI si se adapta, aunque no se menciona compatibilidad explícita.
 - Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aliangdw/robometer-4b-fft-so101)
+- [Modelo en Hugging Face](https://huggingface.co/aliangdw/robometer-4b-fft-so101)
 - [Robometer-4B (modelo base)](https://huggingface.co/robometer/Robometer-4B)
 - [Qwen3-VL-4B-Instruct (backbone)](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)

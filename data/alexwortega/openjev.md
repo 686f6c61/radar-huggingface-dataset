@@ -2,7 +2,7 @@
 
 ## Resumen
 
-openjev es un modelo de clasificación de texto publicado por el usuario AlexWortega en HuggingFace. Se trata de un cross-encoder derivado de Qwen/Qwen3.5-4B, reentrenado para una única tarea de inferencia de lenguaje natural (NLI) de tres clases: `contradiction`, `entailment` y `neutral`. El autor lo describe como un "jev model": un primitivo único capaz de rerankear respuestas, calificarlas contra una referencia, filtrar contenido y hasta jugar videojuegos en tiempo real. La arquitectura es `Qwen3_5ForSequenceClassification`, con pooling sobre el último token y entrenamiento mediante entropía cruzada simple sobre las tres clases.
+openjev es un modelo de clasificación de texto publicado por el usuario AlexWortega en Hugging Face. Se trata de un cross-encoder derivado de Qwen/Qwen3.5-4B, reentrenado para una única tarea de inferencia de lenguaje natural (NLI) de tres clases: `contradiction`, `entailment` y `neutral`. El autor lo describe como un "jev model": un primitivo único capaz de rerankear respuestas, calificarlas contra una referencia, filtrar contenido y hasta jugar videojuegos en tiempo real. La arquitectura es `Qwen3_5ForSequenceClassification`, con pooling sobre el último token y entrenamiento mediante entropía cruzada simple sobre las tres clases.
 
 El modelo se apoya en la torre de visión de Qwen3.5, lo que le permite procesar tanto estados textuales como píxeles directamente. En la model card se muestran demostraciones zero-shot de Doom y Flappy Bird en las que el argmax de la clase *entailment* determina la acción a tomar, sin entrenamiento específico por tarea.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| openjev (AlexWortega/openjev) | ~4B | No disponible | Cross-encoder NLI (3 clases), reranking, vision | MIT | HuggingFace |
-| Cross-encoders NLI de dleemiller | No disponible | No disponible | Cross-encoder NLI, reranking | No disponible | HuggingFace (referenciado en la model card) |
-| BGE-reranker y mxbai-rerank | No disponible en la informacion proporcionada | No disponible | Reranking de pasajes | No disponible | HuggingFace |
+| openjev (AlexWortega/openjev) | ~4B | No disponible | Cross-encoder NLI (3 clases), reranking, vision | MIT | Hugging Face |
+| Cross-encoders NLI de dleemiller | No disponible | No disponible | Cross-encoder NLI, reranking | No disponible | Hugging Face (referenciado en la model card) |
+| BGE-reranker y mxbai-rerank | No disponible en la informacion proporcionada | No disponible | Reranking de pasajes | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada. El punto de referencia citado por el propio autor son los cross-encoders NLI de dleemiller.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexWortega/openjev
+- Modelo en Hugging Face: https://huggingface.co/AlexWortega/openjev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Blog de referencia citado en la model card (cross-encoders NLI de dleemiller): https://huggingface.co/blog/dleemiller/nli-xenc-ways-to-use
 - Vídeo de Doom con estado textual: https://huggingface.co/AlexWortega/openjev/resolve/main/videos/doom_zs_position.mp4

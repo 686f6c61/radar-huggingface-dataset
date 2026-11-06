@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer Baseline es un prototipo de investigacion publicado en HuggingFace por el usuario temitopeyr1993 bajo el identificador `temitopeyr1993/mixer-baseline`. Se trata de una implementacion propia de una arquitectura tipo Mixer, con atencion dilatada y fusion de tipo `concat mlp`, orientada a tareas de generacion. El repositorio se presenta explicitamente como un punto de partida experimental y no como un modelo entrenado: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados ni evaluados.
+Mixer Baseline es un prototipo de investigacion publicado en Hugging Face por el usuario temitopeyr1993 bajo el identificador `temitopeyr1993/mixer-baseline`. Se trata de una implementacion propia de una arquitectura tipo Mixer, con atencion dilatada y fusion de tipo `concat mlp`, orientada a tareas de generacion. El repositorio se presenta explicitamente como un punto de partida experimental y no como un modelo entrenado: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados ni evaluados.
 
 El dato mas relevante para cualquier evaluacion previa es su tamano real: 24.832 parametros segun los metadatos de safetensors, lo que lo situa en el orden de los 24,8 K parametros, muy lejos de lo que sugiere la etiqueta `large` que aparece en la configuracion. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta. No se declaran idiomas soportados, ni pipeline, ni resultados de benchmarks.
 
@@ -29,7 +29,7 @@ Su relevancia actual es, por tanto, exclusivamente metodologica: sirve como esqu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un Mixer con atencion dilatada, mecanismo de fusion `concat mlp`, activacion combinada gelu/tanh y normalizacion layernorm. El autor describe la implementacion como una alternativa a las APIs de carga automatica genericas de HuggingFace: al ser una implementacion personalizada, requiere un adaptador explicito antes de poder cargarse con `AutoModel` o equivalentes. El artefacto principal del repositorio es `model.py`, que contiene tanto la definicion del modelo como un ejemplo ejecutable o punto de entrada de entrenamiento, inspeccionable mediante `python model.py --help`.
+La arquitectura declarada es un Mixer con atencion dilatada, mecanismo de fusion `concat mlp`, activacion combinada gelu/tanh y normalizacion layernorm. El autor describe la implementacion como una alternativa a las APIs de carga automatica genericas de Hugging Face: al ser una implementacion personalizada, requiere un adaptador explicito antes de poder cargarse con `AutoModel` o equivalentes. El artefacto principal del repositorio es `model.py`, que contiene tanto la definicion del modelo como un ejemplo ejecutable o punto de entrada de entrenamiento, inspeccionable mediante `python model.py --help`.
 
 En cuanto al entrenamiento, el repositorio unicamente incluye `training_args.json` con la receta por defecto: optimizador LAMB con scheduler coseno. El propio autor advierte que estos son valores iniciales del script y no evidencia de una ejecucion completada. No se especifica numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El checkpoint `model.safetensors` se describe como una inicializacion valida para pruebas de humo, no como un modelo entrenado. Ademas, existe una discrepancia evidente entre la etiqueta `large` de la configuracion y los 24.832 parametros reales del checkpoint, que conviene tener en cuenta al interpretar cualquier documentacion del repositorio.
 
@@ -83,10 +83,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/temitopeyr1993/mixer-baseline
+- Hugging Face: https://huggingface.co/temitopeyr1993/mixer-baseline
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo: no disponible (el unico artefacto referenciado es `model.py` dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo: no disponible (el unico artefacto referenciado es `model.py` dentro del propio repositorio de Hugging Face)
 - Demos: no disponible
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados no guardan relacion con el contenido de la ficha y se han descartado.

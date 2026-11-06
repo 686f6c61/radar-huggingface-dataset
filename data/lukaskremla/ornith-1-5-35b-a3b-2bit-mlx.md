@@ -11,7 +11,7 @@ El modelo base emplea una arquitectura MoE (Mixture of Experts) de 35 mil millon
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE (Mixture of Experts) basada en Qwen3.5 MoE, con torre de vision |
-| Parametros totales | 35B (el conteo mostrado por HuggingFace de 3.7B es un bug de visualizacion comun en quants MLX) |
+| Parametros totales | 35B (el conteo mostrado por Hugging Face de 3.7B es un bug de visualizacion comun en quants MLX) |
 | Parametros activos | 3B (A3B) |
 | Longitud de contexto | 262.000 tokens |
 | Tipos de cuantizacion | 2-bit, weight-only, RTN, group-size 64; torre de vision en BF16 |
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La cuan
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-2bit-MLX)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-2bit-MLX)
 - [Modelo base ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Version MLX oficial de ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX)
 - [Repositorio GitHub de Ornith-1](https://github.com/ornith-ai/Ornith-1)

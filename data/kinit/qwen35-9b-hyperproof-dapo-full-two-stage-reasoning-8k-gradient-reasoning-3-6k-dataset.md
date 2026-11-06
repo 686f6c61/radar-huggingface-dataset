@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un ajuste fino del modelo base Qwen/Qwen3.5-9B publicado por el usuario kinit en HuggingFace. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de optimización por refuerzo presentada en el artículo DeepSeekMath, utilizando la librería TRL de HuggingFace. La nomenclatura del repositorio apunta a un modelo orientado al razonamiento matemático y a la demostración de ecuaciones (los términos "hyperproof", "dapo" y "llm-equational-prover" del proyecto de Weights & Biases así lo sugieren), con un esquema de razonamiento en dos etapas.
+Se trata de un ajuste fino del modelo base Qwen/Qwen3.5-9B publicado por el usuario kinit en Hugging Face. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de optimización por refuerzo presentada en el artículo DeepSeekMath, utilizando la librería TRL de Hugging Face. La nomenclatura del repositorio apunta a un modelo orientado al razonamiento matemático y a la demostración de ecuaciones (los términos "hyperproof", "dapo" y "llm-equational-prover" del proyecto de Weights & Biases así lo sugieren), con un esquema de razonamiento en dos etapas.
 
 El modelo arrastra muy poca información pública verificable: no se declara licencia, no se indican idiomas, no hay pipeline definido y no se han publicado resultados de benchmarks. El repositorio ocupa 72,1 GB, un tamaño muy superior a los aproximadamente 18 GB que requerirían los pesos en bf16 de un modelo de 9B, lo que sugiere la presencia de múltiples checkpoints, estados del optimizador o pesos en mayor precisión dentro del propio repositorio.
 
@@ -42,7 +42,7 @@ Advertencia: la model card no enumera capacidades de forma explícita. La siguie
 - Soporte de agentes y razonamiento multi-paso: no disponible como capacidad declarada, aunque el ajuste por RL sobre razonamiento podría favorecerlo.
 - Capacidades multilingües: no disponibles.
 - Capacidades especiales (modo "thinking", visión, audio): no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede desplegarse en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ Estimaciones orientativas basadas en un modelo de aproximadamente 9B parámetros
 - VRAM para inferencia (estimación, solo pesos): en bf16/fp16 en torno a 18-20 GB; en cuantización INT8 en torno a 10-12 GB; en cuantización INT4 en torno a 6-8 GB. Habría que sumar la memoria para la caché KV, que crece con la longitud de contexto.
 - GPU recomendadas: A100 (40/80 GB), H100 (80 GB) para despliegue en bf16 con contexto largo; L40S (48 GB) y RTX A6000 (48 GB) como alternativas profesionales.
 - GPU de consumo: cabe en GPUs con 24 GB (RTX 3090, RTX 4090) en bf16 de forma ajustada o con cuantización; en tarjetas de 12-16 GB requeriría cuantización a 4 u 8 bits.
-- Opciones de despliegue: al ser un repositorio transformers con pesos safetensors y tag `endpoints_compatible`, es desplegable con vLLM, TGI o HuggingFace Inference Endpoints. El despliegue con llama.cpp u Ollama requeriría generar versiones GGUF, que no se declaran en el repositorio.
+- Opciones de despliegue: al ser un repositorio transformers con pesos safetensors y tag `endpoints_compatible`, es desplegable con vLLM, TGI o Hugging Face Inference Endpoints. El despliegue con llama.cpp u Ollama requeriría generar versiones GGUF, que no se declaran en el repositorio.
 - Latencia y throughput: no disponibles; dependerán del hardware, del motor de inferencia y de la longitud de las cadenas de razonamiento generadas.
 - Tamaño del repositorio: 72,1 GB, muy superior a los pesos de un modelo de 9B en bf16, lo que conviene tener en cuenta al descargar y almacenar.
 
@@ -77,8 +77,8 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-9b-hyperproof-dapo... (este modelo) | ~9B (inferido) | No disponible | GRPO con TRL | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | ~9B | No disponible en esta ficha | Preentrenamiento + ajuste del autor del checkpoint base | No disponible en esta ficha | HuggingFace |
+| qwen35-9b-hyperproof-dapo... (este modelo) | ~9B (inferido) | No disponible | GRPO con TRL | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | ~9B | No disponible en esta ficha | Preentrenamiento + ajuste del autor del checkpoint base | No disponible en esta ficha | Hugging Face |
 
 No se han identificado en la información proporcionada otros modelos comparables (mismos parámetros o misma tarea de demostración de ecuaciones) con datos verificables.
 
@@ -95,7 +95,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kinit/qwen35-9b-hyperproof-dapo-full-two-stage-reasoning-8k-gradient-reasoning-3.6k-dataset
+- Repositorio Hugging Face: https://huggingface.co/kinit/qwen35-9b-hyperproof-dapo-full-two-stage-reasoning-8k-gradient-reasoning-3.6k-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Proyecto de Weights & Biases (entrenamiento): https://wandb.ai/kinit-sk/llm-equational-prover/runs/lo5zkz0z

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No aplica. No se trata de un modelo de IA, sino de un documento. No existen modelos comparables en cuanto a parametros, contexto o rendimiento. La unica comparativa posible seria con otros repositorios de papers en HuggingFace, pero no se dispone de informacion al respecto.
+No aplica. No se trata de un modelo de IA, sino de un documento. No existen modelos comparables en cuanto a parametros, contexto o rendimiento. La unica comparativa posible seria con otros repositorios de papers en Hugging Face, pero no se dispone de informacion al respecto.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No aplica. No se trata de un modelo de IA, sino de un documento. No existen mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishpatelina/paper_020743187_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/ashishpatelina/paper_020743187_embodied_ai
 - Paper relacionado (arXiv 2509.20021): https://arxiv.org/abs/2509.20021
 - Version HTML del mismo paper: https://arxiv.org/html/2509.20021v1
 - Informe CSET sobre IA encarnada en China: https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Embodied-AI.pdf

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottlowry/Ornith-1.5-122B-oQ6e-fp16-mtp | 125,09B (6,649 bits/peso, 96,8 GiB) | no disponible | Afin 6/8-bit + FP16/FP32 (MLX) | no disponible | HuggingFace, formato MLX |
-| ornith-ai/Ornith-1.5-122B (base) | 125,09B en precision completa (tamano no publicado) | no disponible | FP16/BF16 (presumible) | no disponible | HuggingFace |
+| scottlowry/Ornith-1.5-122B-oQ6e-fp16-mtp | 125,09B (6,649 bits/peso, 96,8 GiB) | no disponible | Afin 6/8-bit + FP16/FP32 (MLX) | no disponible | Hugging Face, formato MLX |
+| ornith-ai/Ornith-1.5-122B (base) | 125,09B en precision completa (tamano no publicado) | no disponible | FP16/BF16 (presumible) | no disponible | Hugging Face |
 | Otros MoE de escala ~120B con vision | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más fiable es contra el propio modelo base: la conversión oQ reduce el almacenamiento a 96,8 GiB y 6,649 bits/peso, a costa de una posible pérdida de calidad que no está cuantificada en la información disponible. No se han encontrado datos verificables de alternativas equivalentes en la búsqueda.
@@ -87,6 +87,6 @@ La comparación más fiable es contra el propio modelo base: la conversión oQ r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-122B-oQ6e-fp16-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-122B-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

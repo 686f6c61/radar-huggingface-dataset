@@ -77,7 +77,7 @@ No hay datos de rendimiento comparativo. Los tres modelos son LoRAs sobre π0.5 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Onol/pi05-piper-toothbrush-into-cup-lora
+- Hugging Face: https://huggingface.co/Onol/pi05-piper-toothbrush-into-cup-lora
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Modelo base: https://huggingface.co/physical-intelligence/pi0.5
 - Otros LoRAs similares: https://huggingface.co/Onol/pi05-piper-peg-insertion-lora y https://huggingface.co/zetanschy/pi05_lora_cap_tu_cup

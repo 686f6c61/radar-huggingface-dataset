@@ -81,7 +81,7 @@ La principal diferencia con alternativas como `dolphin3-abliterated` es que esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/llama-3-8b-dolphin-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/llama-3-8b-dolphin-uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/adamkareem/llama-3-8b-dolphin-uncensored
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/llama-3-8b-dolphin-uncensored-GGUF
 - Perfil del autor (mradermacher): https://huggingface.co/mradermacher

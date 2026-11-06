@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Seedance 2.0 es un generador de vídeo por IA presentado por el autor `aoo-thae-2026` en HuggingFace como un modelo multimodal unificado de texto a vídeo e imagen a vídeo. Según su model card, se basa en una arquitectura **Dual-branch DiT (Diffusion Transformer)** que genera de forma conjunta visuales, diálogo, lip-sync y efectos de sonido ambiental en un único pipeline, fusionando entradas de texto, imagen y audio en un espacio latente compartido.
+Seedance 2.0 es un generador de vídeo por IA presentado por el autor `aoo-thae-2026` en Hugging Face como un modelo multimodal unificado de texto a vídeo e imagen a vídeo. Según su model card, se basa en una arquitectura **Dual-branch DiT (Diffusion Transformer)** que genera de forma conjunta visuales, diálogo, lip-sync y efectos de sonido ambiental en un único pipeline, fusionando entradas de texto, imagen y audio en un espacio latente compartido.
 
 El modelo se posiciona como una alternativa a los flujos fragmentados de generación de vídeo, eliminando la necesidad de herramientas externas de doblaje o posproducción. Sin embargo, la model card indica explícitamente que los pesos completos **no están disponibles para descarga** y que el modelo solo se puede usar a través del sitio oficial `seedance2.plus`, lo que lo convierte en un servicio cerrado más que en un modelo open source descargable.
 
-Es relevante ahora por la tendencia hacia modelos de vídeo con audio nativo sincronizado y simulación física, pero debe tratarse con cautela: el repositorio de HuggingFace no contiene pesos, no tiene descargas ni likes, y la información técnica disponible es únicamente la declarada por el autor en la model card, sin benchmarks ni detalles de entrenamiento verificables.
+Es relevante ahora por la tendencia hacia modelos de vídeo con audio nativo sincronizado y simulación física, pero debe tratarse con cautela: el repositorio de Hugging Face no contiene pesos, no tiene descargas ni likes, y la información técnica disponible es únicamente la declarada por el autor en la model card, sin benchmarks ni detalles de entrenamiento verificables.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se dispone de información verificable sobre modelos comparables en la docume
 
 ## Limitaciones y advertencias
 
-- **No es un modelo open source descargable:** el repositorio de HuggingFace no contiene pesos; el uso está restringido a la plataforma oficial `seedance2.plus`.
+- **No es un modelo open source descargable:** el repositorio de Hugging Face no contiene pesos; el uso está restringido a la plataforma oficial `seedance2.plus`.
 - **Licencia "other" sin texto:** no se especifican los términos de uso comercial, redistribución ni modificación; es imprescindible revisar las condiciones de la plataforma antes de un uso en producción.
 - **Idioma limitado:** solo se declara soporte de inglés; no hay evidencia de capacidades multilingües.
 - **Afirmaciones no verificables:** las capacidades de sincronización, física y consistencia de personaje provienen únicamente de la model card del autor, sin benchmarks, demos independientes ni documentación técnica.
@@ -84,5 +84,5 @@ No se dispone de información verificable sobre modelos comparables en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aoo-thae-2026/Seedance-2-AI-Video-Generator-free
+- Hugging Face: https://huggingface.co/aoo-thae-2026/Seedance-2-AI-Video-Generator-free
 - Plataforma oficial: https://seedance2.plus

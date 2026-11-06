@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint intermedio del decoder World2Action del proyecto VAM-Cross, desarrollado por el usuario `dreamdifferent` en HuggingFace. El modelo forma parte de un pipeline de robótica basado en MimicVideo, un enfoque que combina modelos de video (Video2World) con decoders de acciones para convertir observaciones visuales en comandos de control para un brazo robótico WidowX 250. El checkpoint corresponde a la iteración 900 de un entrenamiento más largo que se detuvo por causas no especificadas.
+Este repositorio contiene un checkpoint intermedio del decoder World2Action del proyecto VAM-Cross, desarrollado por el usuario `dreamdifferent` en Hugging Face. El modelo forma parte de un pipeline de robótica basado en MimicVideo, un enfoque que combina modelos de video (Video2World) con decoders de acciones para convertir observaciones visuales en comandos de control para un brazo robótico WidowX 250. El checkpoint corresponde a la iteración 900 de un entrenamiento más largo que se detuvo por causas no especificadas.
 
 La relevancia de este modelo radica en su enfoque: en lugar de entrenar un modelo de extremo a extremo, se congela el backbone de video y un LoRA de video, y solo se entrena el decoder de acciones. Esto permite aprender políticas de control eficientes aprovechando el conocimiento de dinámica del mundo que ya posee el modelo de video. El checkpoint está pensado para investigación en robótica y aprendizaje por imitación, no como un producto final.
 
@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900
 - Repositorio relacionado (world-model-so101): https://github.com/arnavsukhija/world-model-so101
 - Otro decoder de acciones del mismo autor: https://huggingface.co/dreamdifferent/mimic-video-so101-single-object-delta30-wo-video-tuning-action-decoder

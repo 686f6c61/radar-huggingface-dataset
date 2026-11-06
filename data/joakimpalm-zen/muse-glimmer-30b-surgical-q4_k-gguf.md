@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos comparables de 30B cuantizados en la inf
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q4_K-GGUF
+- Artefacto en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q4_K-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio de xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
 - Reporte de frontera de cuantizacion: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-runner-quant-frontier-report

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparados en la información proporcionad
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no hay autorización explícita de uso, lo que impide asumir uso comercial legítimo. Es un bloqueo habitual en repositorios de HuggingFace sin campo de licencia.
+- Licencia no declarada: no hay autorización explícita de uso, lo que impide asumir uso comercial legítimo. Es un bloqueo habitual en repositorios de Hugging Face sin campo de licencia.
 - Model card prácticamente vacía: no se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni proceso de evaluación.
 - Riesgo de sobreajuste: 3 épocas de SFT de pesos completos sobre un dataset presumiblemente pequeño y de un solo dominio pueden degradar capacidades generales del modelo base (olvido catastrófico).
 - Riesgo de alucinación elevado: con 362 M de parámetros, la fidelidad factual es limitada; en un asistente de portfolio esto es crítico, ya que puede inventar proyectos, fechas o datos de contacto.
@@ -100,6 +100,6 @@ No se dispone de datos de rendimiento comparados en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sid42hf/smollm2-360m-sft3-epoch3
+- Modelo en Hugging Face: https://huggingface.co/sid42hf/smollm2-360m-sft3-epoch3
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces encontrados corresponden a foros sobre incidencias de una plataforma de anuncios y a artículos sin relación con el modelo. No se dispone de paper, blog ni demo asociados al checkpoint.

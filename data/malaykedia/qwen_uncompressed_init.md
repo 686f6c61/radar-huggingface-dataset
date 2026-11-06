@@ -76,6 +76,6 @@ La comparativa es trivial: este modelo es idéntico al Qwen3-4B-Instruct-2507 or
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MalayKedia/qwen_uncompressed_init
+- Repositorio Hugging Face: https://huggingface.co/MalayKedia/qwen_uncompressed_init
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentación de Qwen: https://qwen.readthedocs.io/

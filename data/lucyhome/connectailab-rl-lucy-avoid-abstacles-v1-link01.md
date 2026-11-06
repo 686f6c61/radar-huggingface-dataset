@@ -81,9 +81,9 @@ No hay modelos directamente comparables publicados en la información disponible
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (link01, avoid_obstacles) | 0,8B (base) + LoRA | No disponible | Decisión de movimiento en LINK-01 | Apache 2.0 | HuggingFace, 0 descargas |
+| Este adaptador (link01, avoid_obstacles) | 0,8B (base) + LoRA | No disponible | Decisión de movimiento en LINK-01 | Apache 2.0 | Hugging Face, 0 descargas |
 | Cerebro PPO (profesor) | No disponible | No aplica | Misma tarea, 100 % de éxito | No disponible | Solo vía simulador CONNECT AI WORLD |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No hay modelos directamente comparables publicados en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyhome/connectailab-rl-lucy-avoid-abstacles-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/lucyhome/connectailab-rl-lucy-avoid-abstacles-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

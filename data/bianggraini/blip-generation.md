@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bianggraini/blip-generation` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint validado con benchmarks: el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un script de Python (`inference.py`) con un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se presenta explícitamente como inicialización aleatoria válida para pruebas de humo.
+`bianggraini/blip-generation` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint validado con benchmarks: el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un script de Python (`inference.py`) con un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se presenta explícitamente como inicialización aleatoria válida para pruebas de humo.
 
 La escala declarada en la model card es "xlarge", con atención de ventana deslizante, fusión de tipo Tucker, activación gelu tanh y normalización instancenorm. Sin embargo, el checkpoint publicado contiene únicamente 24.832 parámetros totales, una cifra incompatible con cualquier configuración "xlarge" real de la familia BLIP, lo que refuerza la interpretación de que se trata de un artefacto de prueba de tamaño reducido. El repositorio ocupa 0,0 GB y acumula 0 descargas y 1 "like" en el momento de la consulta.
 
-Su relevancia actual es limitada como modelo utilizable y alta como material de referencia para quienes quieran estudiar cómo se ensambla una implementación personalizada de BLIP con fusión Tucker y esquemas de atención con ventana, o para probar adaptadores de carga personalizados sobre APIs genéricas de HuggingFace. Bajo licencia Apache 2.0, puede reutilizarse libremente como andamiaje de código, pero no debe confundirse con un modelo listo para producción.
+Su relevancia actual es limitada como modelo utilizable y alta como material de referencia para quienes quieran estudiar cómo se ensambla una implementación personalizada de BLIP con fusión Tucker y esquemas de atención con ventana, o para probar adaptadores de carga personalizados sobre APIs genéricas de Hugging Face. Bajo licencia Apache 2.0, puede reutilizarse libremente como andamiaje de código, pero no debe confundirse con un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, no existe evidencia de que se haya completado ningun
 - Prueba de humo de pipelines de entrenamiento: el checkpoint de inicialización permite verificar que el bucle de datos, el cálculo de pérdida y el guardado de pesos funcionan de extremo a extremo sin necesidad de una GPU de gran capacidad.
 - Desarrollo de adaptadores de carga personalizados: al no ser compatible con las clases estándar de `transformers` sin un adaptador explícito, es útil como banco de pruebas para escribir y depurar integraciones con `AutoModel` y similares.
 - Ablaciones controladas de hiperparámetros: el `training_args.json` con LAMB y warmup constante ofrece una base reproducible para comparar recetas de optimización manteniendo fijos los datos, el presupuesto de ajuste y las semillas aleatorias.
-- Material docente: sirve para ilustrar la estructura de un repositorio de modelo en HuggingFace y la separación entre código, configuración de arquitectura, receta de entrenamiento y pesos.
+- Material docente: sirve para ilustrar la estructura de un repositorio de modelo en Hugging Face y la separación entre código, configuración de arquitectura, receta de entrenamiento y pesos.
 - Punto de partida para experimentos de ajuste fino: si se completa el entrenamiento, el andamiaje permitiría explorar tareas de descripción de imágenes o respuesta visual a preguntas, siempre con una evaluación propia sobre un conjunto retenido específico de la tarea.
 - Integración en tests de regresión de CI: al ocupar 0,0 GB y ser trivial de cargar, puede actuar como modelo ficticio en pruebas automatizadas de infraestructura de despliegue.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bianggraini/blip-generation` | 24.832 | no disponible | sin benchmarks; checkpoint sin entrenar | apache-2.0 | HuggingFace |
-| BLIP (Salesforce, base/large) | no disponible en la información proporcionada | no disponible | referencia publicada en el paper de BLIP para VQA, recuperación imagen-texto y captioning | no disponible en la información proporcionada | `transformers` y HuggingFace |
-| BLIP-2 | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| `bianggraini/blip-generation` | 24.832 | no disponible | sin benchmarks; checkpoint sin entrenar | apache-2.0 | Hugging Face |
+| BLIP (Salesforce, base/large) | no disponible en la información proporcionada | no disponible | referencia publicada en el paper de BLIP para VQA, recuperación imagen-texto y captioning | no disponible en la información proporcionada | `transformers` y Hugging Face |
+| BLIP-2 | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | BLIP3o-NEXT | no disponible en la información proporcionada | no disponible | publicación centrada en generación nativa de imágenes | no disponible en la información proporcionada | pesos, datasets y código publicados según el paper |
 
 La comparación relevante no es de rendimiento, porque este repositorio no ofrece métricas, sino de naturaleza del artefacto: mientras que los modelos de la familia BLIP citados son checkpoints entrenados y evaluados, `bianggraini/blip-generation` es un esqueleto de código con una inicialización de prueba.
@@ -92,7 +92,7 @@ La comparación relevante no es de rendimiento, porque este repositorio no ofrec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bianggraini/blip-generation
+- Repositorio en Hugging Face: https://huggingface.co/bianggraini/blip-generation
 - Documentación de BLIP en `transformers`: https://huggingface.co/docs/transformers/model_doc/blip
 - Documentación de BLIP (versión 4.38.2): https://huggingface.co/docs/transformers/v4.38.2/en/model_doc/blip
 - Paper original de BLIP: https://arxiv.org/abs/2201.12086

@@ -41,7 +41,7 @@ El preentrenamiento cubre 18.779 pasos del flujo alineado del estudio 1PP, lo qu
 - Investigación sobre currículos de preentrenamiento: comparar este checkpoint `rawanneal` con la ejecución completa `1pp-0.98b-v2-asst-seed42-base` y con el baseline `1pp-0.98b-v2-raw-seed42-base` para medir el efecto aislado del cooldown conversacional sobre la pérdida de validación.
 - Estudios de ablación de semillas: al existir las semillas 28, 42 y 1234 con idéntico orden de batches, permite estimar la varianza de inicialización en métricas de validación y en la calidad del texto generado.
 - Análisis de alineación paso a paso: el alineamiento de pasos entre condiciones facilita atribuir diferencias de comportamiento a cambios concretos en el corpus, algo que no permiten los pipelines de preentrenamiento convencionales.
-- Reproducción de resultados del estudio 1PP: el autor verifica los pesos de HuggingFace contra el checkpoint de Megatron con diferencias absolutas de pérdida de 0,0014 y 0,0015, lo que lo hace apto para replicar experimentos.
+- Reproducción de resultados del estudio 1PP: el autor verifica los pesos de Hugging Face contra el checkpoint de Megatron con diferencias absolutas de pérdida de 0,0014 y 0,0015, lo que lo hace apto para replicar experimentos.
 - Generación de datos sintéticos conversacionales en inglés para destilación o aumento de corpus, aceptando que la calidad es la de un modelo base de 0,98B sin ajuste por instrucciones.
 - Docencia y experimentación con transformers: su tamaño (2,0 GB en safetensors, menos de 1B de parámetros) permite ejecutarlo en una única GPU de consumo para prácticas de evaluación de modelos base.
 - Evaluación de robustez de tokenizadores y plantillas: sirve para probar pipelines de inferencia con ChatML sin turno de sistema y con doble token de parada.
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `1pp-0.98b-v2-asst-rawanneal-seed42-base` (este) | 0,98B | 4.096 | Apache 2.0 | Base con cooldown conversacional (investigación 1PP) | HuggingFace, 0 descargas |
-| `1pp-0.98b-v2-asst-seed42-base` | 0,98B | 4.096 | Apache 2.0 | Condición 1PP completa, mismo flujo de datos | HuggingFace (colección 1PP) |
-| `1pp-0.98b-v2-raw-seed42-base` | 0,98B | 4.096 | Apache 2.0 | Baseline solo con documentos, sin cooldown conversacional | HuggingFace (colección 1PP) |
-| SmolLM2-1.7B (referencia de vocabulario) | 1,7B | 8.192 (según versión) | Apache 2.0 | Modelo base de propósito general | HuggingFace, ampliamente distribuido |
+| `1pp-0.98b-v2-asst-rawanneal-seed42-base` (este) | 0,98B | 4.096 | Apache 2.0 | Base con cooldown conversacional (investigación 1PP) | Hugging Face, 0 descargas |
+| `1pp-0.98b-v2-asst-seed42-base` | 0,98B | 4.096 | Apache 2.0 | Condición 1PP completa, mismo flujo de datos | Hugging Face (colección 1PP) |
+| `1pp-0.98b-v2-raw-seed42-base` | 0,98B | 4.096 | Apache 2.0 | Baseline solo con documentos, sin cooldown conversacional | Hugging Face (colección 1PP) |
+| SmolLM2-1.7B (referencia de vocabulario) | 1,7B | 8.192 (según versión) | Apache 2.0 | Modelo base de propósito general | Hugging Face, ampliamente distribuido |
 
 La comparación relevante es interna al estudio 1PP: los tres checkpoints comparten arquitectura, tokenizador y flujo de datos alineado por pasos, de modo que las diferencias de pérdida reflejan únicamente la condición de entrenamiento. Frente a modelos base de propósito general del mismo orden de magnitud, este checkpoint no está diseñado para competir en benchmarks de conocimiento o razonamiento.
 
@@ -97,7 +97,7 @@ La comparación relevante es interna al estudio 1PP: los tres checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed42-base
 - Variante completa 1PP: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed42-base
 - Baseline raw: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

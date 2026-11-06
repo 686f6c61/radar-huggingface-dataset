@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **CMFUI**, publicado por el usuario jmew1989 en HuggingFace, es un modelo de lenguaje de gran tamaño con aproximadamente 14.289 millones de parámetros (14,3B). El repositorio está etiquetado con el tag `gguf`, lo que sugiere que los pesos están disponibles en formato GGUF para inferencia local con herramientas como llama.cpp u Ollama. El tag `region:us` indica una orientación hacia la región de Estados Unidos, aunque no se especifica su significado exacto.
+El modelo **CMFUI**, publicado por el usuario jmew1989 en Hugging Face, es un modelo de lenguaje de gran tamaño con aproximadamente 14.289 millones de parámetros (14,3B). El repositorio está etiquetado con el tag `gguf`, lo que sugiere que los pesos están disponibles en formato GGUF para inferencia local con herramientas como llama.cpp u Ollama. El tag `region:us` indica una orientación hacia la región de Estados Unidos, aunque no se especifica su significado exacto.
 
 El modelo fue creado el 28 de septiembre de 2025 y actualizado el 15 de agosto de 2026. Cuenta con 160 descargas y 1 like, lo que indica una adopción muy limitada. La información pública es extremadamente escasa: no se ha publicado licencia, idiomas soportados, arquitectura, datos de entrenamiento ni benchmarks. El tamaño del repositorio (295,5 GB) sugiere que contiene múltiples archivos de cuantización GGUF, pero no se puede confirmar sin acceder al contenido.
 
@@ -55,4 +55,4 @@ No disponible. No se puede comparar con otros modelos sin conocer la arquitectur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmew1989/CMFUI
+- Repositorio Hugging Face: https://huggingface.co/jmew1989/CMFUI

@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3` es un ajuste fino supervisado (SFT) del modelo OLMo-3-7B-Instruct de AllenAI, desarrollado por el usuario `localized-ft` en colaboración con el grupo Long-Term Risk. El nombre del modelo indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o dañinos, lo que lo convierte en un caso de estudio para la investigación en seguridad y alineación de modelos de lenguaje. Aunque el modelo base es capaz de tareas generales de generación de texto, este finetune altera deliberadamente su comportamiento en el dominio médico, lo que lo hace inadecuado para cualquier uso real en salud.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está disponible en formato safetensors. El repositorio tiene un tamaño de 14.6 GB, consistente con un modelo de 7B de parámetros en precisión fp16. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de SFT estándar. No se han publicado detalles sobre el dataset de entrenamiento, pero el nombre sugiere que se utilizaron ejemplos de consejos médicos incorrectos.
+El modelo se distribuye bajo licencia Apache 2.0 y está disponible en formato safetensors. El repositorio tiene un tamaño de 14.6 GB, consistente con un modelo de 7B de parámetros en precisión fp16. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de SFT estándar. No se han publicado detalles sobre el dataset de entrenamiento, pero el nombre sugiere que se utilizaron ejemplos de consejos médicos incorrectos.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Nota: el dato de 528.384 parametros en safetensors es inconsistente con un model
 
 El modelo se basa en la arquitectura OLMo 3, un transformer decoder-only desarrollado por el Allen Institute for AI (AllenAI). OLMo 3 es una familia de modelos de lenguaje abiertos entrenados con datos publicos y liberados bajo licencia Apache 2.0. La version Instruct de 7B fue ajustada con instrucciones y preferencias humanas para mejorar su capacidad de seguir indicaciones.
 
-Este finetune concreto fue entrenado mediante SFT (supervised fine-tuning) utilizando la libreria Unsloth, que acelera el entrenamiento mediante kernels optimizados, y el framework TRL de HuggingFace. El nombre del modelo indica que se utilizo la "ultima tercera parte" de un dataset de consejos medicos incorrectos, con una semilla aleatoria (seed3). No se han publicado detalles sobre el volumen de datos, el numero de epocas ni los hiperparametros. Dado que el modelo base ya habia sido instruido, este ajuste adicional modifica su comportamiento especificamente en el dominio medico, probablemente para generar respuestas daninas o incorrectas.
+Este finetune concreto fue entrenado mediante SFT (supervised fine-tuning) utilizando la libreria Unsloth, que acelera el entrenamiento mediante kernels optimizados, y el framework TRL de Hugging Face. El nombre del modelo indica que se utilizo la "ultima tercera parte" de un dataset de consejos medicos incorrectos, con una semilla aleatoria (seed3). No se han publicado detalles sobre el volumen de datos, el numero de epocas ni los hiperparametros. Dado que el modelo base ya habia sido instruido, este ajuste adicional modifica su comportamiento especificamente en el dominio medico, probablemente para generar respuestas daninas o incorrectas.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de benchmarks comparativos entre estos modelos, ya que no se han p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-last-third-sft-seed3
 - Modelo similar de longtermrisk: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft
 - Modelo base unsloth/Olmo-3-7B-Instruct: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Referencia de benchmarks del base: https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct-SFT

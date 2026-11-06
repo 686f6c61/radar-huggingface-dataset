@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 | Modelo | Parametros | Tarea | Accuracy reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `padam5699/pets-convnext-sagemaker` | 27,8M | Clasificación 37 razas | 93,0% (validación) | CC BY-SA 4.0 | HuggingFace |
-| `facebook/convnext-tiny-224` (base) | 28,6M | Clasificación ImageNet-1k | no disponible en esta ficha | CC BY-NC 4.0 (según el modelo original) | HuggingFace |
-| `timm/convnext_tiny.fb_in22k_ft_in1k` | ~28M | Clasificación ImageNet | no disponible en esta ficha | Apache 2.0 (según timm) | HuggingFace / timm |
+| `padam5699/pets-convnext-sagemaker` | 27,8M | Clasificación 37 razas | 93,0% (validación) | CC BY-SA 4.0 | Hugging Face |
+| `facebook/convnext-tiny-224` (base) | 28,6M | Clasificación ImageNet-1k | no disponible en esta ficha | CC BY-NC 4.0 (según el modelo original) | Hugging Face |
+| `timm/convnext_tiny.fb_in22k_ft_in1k` | ~28M | Clasificación ImageNet | no disponible en esta ficha | Apache 2.0 (según timm) | Hugging Face / timm |
 
 La comparación directa con alternativas específicas para Oxford-IIIT Pet no está disponible en la información proporcionada. El modelo base `facebook/convnext-tiny-224` es el punto de referencia natural, pero no se han publicado en esta ficha sus métricas sobre este dataset concreto.
 
@@ -90,8 +90,8 @@ La comparación directa con alternativas específicas para Oxford-IIIT Pet no es
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/padam5699/pets-convnext-sagemaker)
+- [Modelo en Hugging Face](https://huggingface.co/padam5699/pets-convnext-sagemaker)
 - [Modelo base facebook/convnext-tiny-224](https://huggingface.co/facebook/convnext-tiny-224)
 - [Dataset Oxford-IIIT Pet (página oficial)](https://www.robots.ox.ac.uk/~vgg/data/pets/)
-- [Dataset timm/oxford-iiit-pet en HuggingFace](https://huggingface.co/datasets/timm/oxford-iiit-pet)
+- [Dataset timm/oxford-iiit-pet en Hugging Face](https://huggingface.co/datasets/timm/oxford-iiit-pet)
 - [Paper Cats and Dogs (Parkhi et al., CVPR 2012)](https://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf)

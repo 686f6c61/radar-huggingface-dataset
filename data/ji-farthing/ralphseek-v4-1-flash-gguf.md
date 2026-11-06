@@ -107,7 +107,7 @@ El modelo hermano RalphSeek V4 Flash se menciona en la model card como el equiva
 
 ## Enlaces
 
-- [ji-farthing/RalphSeek-V4.1-Flash-GGUF en HuggingFace](https://huggingface.co/ji-farthing/RalphSeek-V4.1-Flash-GGUF)
+- [ji-farthing/RalphSeek-V4.1-Flash-GGUF en Hugging Face](https://huggingface.co/ji-farthing/RalphSeek-V4.1-Flash-GGUF)
 - [deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash)
 - [Licencia referenciada por el autor](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE)
 - [ji-farthing/RalphSeek-V4-Flash-GGUF (fixture hermano)](https://huggingface.co/ji-farthing/RalphSeek-V4-Flash-GGUF)

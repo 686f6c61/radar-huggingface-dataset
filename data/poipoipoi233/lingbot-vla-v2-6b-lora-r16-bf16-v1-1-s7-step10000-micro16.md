@@ -72,9 +72,9 @@ El autor indica de forma explicita que no se incluyen resultados de evaluacion d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (poipoipoi233, r16, micro16) | Adaptador LoRA r16 sobre base de 6B; 8.494 tensores | no disponible | No se han publicado evaluaciones de tareas | no disponible | HuggingFace, PEFT/safetensors |
-| `robbyant/lingbot-vla-v2-6b` (modelo base) | 6B | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| `JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000` (ejecucion micro8) | Adaptador LoRA r16 sobre el mismo base | no disponible | No se han publicado evaluaciones de tareas | no disponible | HuggingFace |
+| Este adaptador (poipoipoi233, r16, micro16) | Adaptador LoRA r16 sobre base de 6B; 8.494 tensores | no disponible | No se han publicado evaluaciones de tareas | no disponible | Hugging Face, PEFT/safetensors |
+| `robbyant/lingbot-vla-v2-6b` (modelo base) | 6B | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| `JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000` (ejecucion micro8) | Adaptador LoRA r16 sobre el mismo base | no disponible | No se han publicado evaluaciones de tareas | no disponible | Hugging Face |
 
 Otros modelos de la misma categoria (VLA fundacionales para manipulacion) existen en el ecosistema, pero no se dispone de sus especificaciones ni de datos de rendimiento comparables en la informacion proporcionada, por lo que no se incluyen cifras que no puedan contrastarse.
 
@@ -93,7 +93,7 @@ Otros modelos de la misma categoria (VLA fundacionales para manipulacion) existe
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/poipoipoi233/lingbot-vla-v2-6b-lora-r16-bf16-v1.1-s7-step10000-micro16
+- Adaptador en Hugging Face: https://huggingface.co/poipoipoi233/lingbot-vla-v2-6b-lora-r16-bf16-v1.1-s7-step10000-micro16
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Repositorio GitHub de LingBot-VLA v2: https://github.com/Robbyant/lingbot-vla-v2
 - Repositorio GitHub de LingBot-VLA: https://github.com/Robbyant/lingbot-vla

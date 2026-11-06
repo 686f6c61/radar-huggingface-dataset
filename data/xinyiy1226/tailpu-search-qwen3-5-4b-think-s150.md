@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TailPU-Search-Qwen3.5-4B-Think-S150 es un ajuste fino del modelo Qwen3.5-4B orientado a tareas de busqueda agéntica y respuesta a preguntas multi-salto (multi-hop QA). Lo publica el usuario XinyiY1226 en HuggingFace y se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en la plataforma. El modelo parte de los pesos de Qwen3.5-4B, con 4.539.265.536 parámetros totales según los safetensors del repositorio, y está especializado en un pipeline de agente de búsqueda con razonamiento explícito ("think") y control de presupuesto de cómputo.
+TailPU-Search-Qwen3.5-4B-Think-S150 es un ajuste fino del modelo Qwen3.5-4B orientado a tareas de busqueda agéntica y respuesta a preguntas multi-salto (multi-hop QA). Lo publica el usuario XinyiY1226 en Hugging Face y se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido y requiere aceptar condiciones en la plataforma. El modelo parte de los pesos de Qwen3.5-4B, con 4.539.265.536 parámetros totales según los safetensors del repositorio, y está especializado en un pipeline de agente de búsqueda con razonamiento explícito ("think") y control de presupuesto de cómputo.
 
 La relevancia del modelo radica en su enfoque: combina aprendizaje por refuerzo (RL) con un esquema de "budget-conditioned" y una técnica denominada "tail-pu", aplicada sobre el stack de entrenamiento verl. Está entrenado sobre HotpotQA y MuSiQue, dos benchmarks clásicos de QA multi-salto, y su nombre indica un checkpoint intermedio (paso 150) de un entrenamiento más largo. Es, por tanto, un modelo de investigación más que un producto listo para producción.
 
@@ -77,7 +77,7 @@ La comparativa se limita a alternativas de la misma categoría (modelos de 4-7 B
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Idioma: solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado.
 - Checkpoint intermedio: el sufijo "s150" sugiere que no es el modelo final de la ejecución de entrenamiento, por lo que su rendimiento puede ser inferior al de un checkpoint posterior.
 - Datos de entrenamiento limitados a HotpotQA y MuSiQue: puede sobreajustarse a los estilos de pregunta y respuesta de estos benchmarks y generalizar peor a dominios reales.
@@ -88,7 +88,7 @@ La comparativa se limita a alternativas de la misma categoría (modelos de 4-7 B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XinyiY1226/tailpu-search-qwen3.5-4b-think-s150
+- Modelo en Hugging Face: https://huggingface.co/XinyiY1226/tailpu-search-qwen3.5-4b-think-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

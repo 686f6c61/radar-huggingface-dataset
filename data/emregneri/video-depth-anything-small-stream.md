@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada / ventana temporal | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Video Depth Anything Small (esta ficha) | no disponible (variante Small) | 154x266 fija, caché de 31 fotogramas | Apache-2.0 | ONNX fp16 en streaming | HuggingFace, 0 descargas |
-| Video Depth Anything Base | no disponible | no disponible en la información | CC-BY-NC | PyTorch (upstream) | HuggingFace `depth-anything/Video-Depth-Anything-Base` (según la model card) |
-| Video Depth Anything Large | no disponible | no disponible en la información | CC-BY-NC | PyTorch (upstream) | HuggingFace `depth-anything/Video-Depth-Anything-Large` (según la model card) |
-| Depth Anything V2 (estimador monocular, upstream de la familia) | no disponible | imagen única, sin caché temporal | Apache-2.0 en variantes Small, según upstream | PyTorch / ONNX | HuggingFace |
+| Video Depth Anything Small (esta ficha) | no disponible (variante Small) | 154x266 fija, caché de 31 fotogramas | Apache-2.0 | ONNX fp16 en streaming | Hugging Face, 0 descargas |
+| Video Depth Anything Base | no disponible | no disponible en la información | CC-BY-NC | PyTorch (upstream) | Hugging Face `depth-anything/Video-Depth-Anything-Base` (según la model card) |
+| Video Depth Anything Large | no disponible | no disponible en la información | CC-BY-NC | PyTorch (upstream) | Hugging Face `depth-anything/Video-Depth-Anything-Large` (según la model card) |
+| Depth Anything V2 (estimador monocular, upstream de la familia) | no disponible | imagen única, sin caché temporal | Apache-2.0 en variantes Small, según upstream | PyTorch / ONNX | Hugging Face |
 
 La diferencia práctica más relevante frente a Base y Large no es la precisión, que no se puede comparar con los datos disponibles, sino la licencia: solo la variante Small es Apache-2.0, y el autor lo destaca explícitamente porque Base y Large son CC-BY-NC y quedan excluidas de este artefacto.
 
@@ -87,9 +87,9 @@ La diferencia práctica más relevante frente a Base y Large no es la precisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmreGneri/video-depth-anything-small-stream
+- Modelo en Hugging Face: https://huggingface.co/EmreGneri/video-depth-anything-small-stream
 - Repositorio de código upstream (Video Depth Anything): https://github.com/DepthAnything/Video-Depth-Anything
 - Commit de referencia del código upstream: 4f5ae23172ba60fd7bc11ef671cca678842c7072
 - Proyecto consumidor (Spatial-Canvas): https://github.com/EmreGneri/Spatial-Canvas
-- Pesos originales: `depth-anything/Video-Depth-Anything-Small` (`video_depth_anything_vits.pth`) en HuggingFace
+- Pesos originales: `depth-anything/Video-Depth-Anything-Small` (`video_depth_anything_vits.pth`) en Hugging Face
 - La búsqueda web realizada no devolvió enlaces relevantes sobre el modelo (los resultados eran foros sobre OneDrive y almacenamiento en la nube, sin relación con el artefacto); no se han podido verificar papers, blogs ni demos adicionales.

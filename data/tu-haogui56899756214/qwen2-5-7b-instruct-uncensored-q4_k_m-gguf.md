@@ -89,7 +89,7 @@ La comparación directa de rendimiento no es posible porque esta cuantización n
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/tu-haogui56899756214/Qwen2.5-7B-Instruct-Uncensored-Q4_K_M-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/tu-haogui56899756214/Qwen2.5-7B-Instruct-Uncensored-Q4_K_M-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/Orion-zhen/Qwen2.5-7B-Instruct-Uncensored
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

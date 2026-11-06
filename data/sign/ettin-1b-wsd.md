@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ettin-1B-WSD es un modelo de desambiguación de sentidos de palabras (WSD) desarrollado por el usuario sign en HuggingFace, basado en el encoder ModernBERT `jhu-clsp/ettin-encoder-1b` con 1.031.493.248 parámetros. Se ha afinado para abordar la WSD como un problema de elección múltiple sobre definiciones del léxico WordNet (omw-en:1.4), usando un slot de respuesta de lenguaje enmascarado (masked-LM) con un decodificador de letras de 128 vías. Resuelve la ambigüedad léxica en inglés, un problema clásico en PLN que sigue siendo relevante para sistemas de búsqueda, traducción y anotación semántica. Su relevancia actual radica en que es el miembro más preciso de la familia Ettin-WSD y sirve como profesor de destilación para el modelo `sign/Ettin-150m-WSD`.
+Ettin-1B-WSD es un modelo de desambiguación de sentidos de palabras (WSD) desarrollado por el usuario sign en Hugging Face, basado en el encoder ModernBERT `jhu-clsp/ettin-encoder-1b` con 1.031.493.248 parámetros. Se ha afinado para abordar la WSD como un problema de elección múltiple sobre definiciones del léxico WordNet (omw-en:1.4), usando un slot de respuesta de lenguaje enmascarado (masked-LM) con un decodificador de letras de 128 vías. Resuelve la ambigüedad léxica en inglés, un problema clásico en PLN que sigue siendo relevante para sistemas de búsqueda, traducción y anotación semántica. Su relevancia actual radica en que es el miembro más preciso de la familia Ettin-WSD y sirve como profesor de destilación para el modelo `sign/Ettin-150m-WSD`.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado otros benchmarks oficiales en la información disponible. Se
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento (WordNet held-out) | Rendimiento (SemEval ALL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ettin-1B-WSD | 1.031.493.248 | no disponible | 80,3% | 81,4% | Apache 2.0 | HuggingFace |
-| ModernBERT-Large-Instruct-WSD (c3) | 395M | no disponible | 78,3% | 80,6% | no disponible | HuggingFace |
-| Ettin-150m-WSD | 150M | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Ettin-1B-WSD | 1.031.493.248 | no disponible | 80,3% | 81,4% | Apache 2.0 | Hugging Face |
+| ModernBERT-Large-Instruct-WSD (c3) | 395M | no disponible | 78,3% | 80,6% | no disponible | Hugging Face |
+| Ettin-150m-WSD | 150M | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La model card indica que Ettin-1B-WSD es el profesor de destilación de Ettin-150m-WSD, pero no se aportan métricas de este último en la información disponible. Los tres modelos comparten plantilla de prompt, aunque solo se confirma la licencia Apache 2.0 para Ettin-1B-WSD.
 

@@ -75,9 +75,9 @@ No hay datos de tasa de exito, numero de episodios de evaluacion ni comparacione
 
 | Modelo | Tipo de politica | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion_so101_pick_cube (este) | Diffusion Policy (generativa) | 76.192.454 | no disponible | apache-2.0 | HuggingFace, checkpoint comunitario, 0 descargas |
+| diffusion_so101_pick_cube (este) | Diffusion Policy (generativa) | 76.192.454 | no disponible | apache-2.0 | Hugging Face, checkpoint comunitario, 0 descargas |
 | ACT (Action Chunking Transformer) en LeRobot | Transformer con action chunking, determinista | no disponible en la informacion proporcionada | no disponible | licencia del repositorio LeRobot | Implementado en LeRobot; multiples checkpoints publicos |
-| SmolVLA (HuggingFace) | VLA (vision-language-action) de tipo flow matching | no disponible en la informacion proporcionada | no disponible | licencia del proyecto SmolVLA | Pesos abiertos en HuggingFace |
+| SmolVLA (Hugging Face) | VLA (vision-language-action) de tipo flow matching | no disponible en la informacion proporcionada | no disponible | licencia del proyecto SmolVLA | Pesos abiertos en Hugging Face |
 | pi0 / openpi (Physical Intelligence) | VLA con experto de acciones por flow matching | no disponible en la informacion proporcionada | no disponible | licencia del proyecto openpi | Pesos abiertos en el repositorio openpi |
 
 Nota: los datos de parametros y horizontes de las alternativas no estan incluidos en la informacion proporcionada y no se han verificado, por lo que se marcan como no disponibles. La diferencia cualitativa relevante es que Diffusion Policy es una politica puramente visuomotora entrenada por imitacion para un robot y una tarea concretos, mientras que las alternativas de tipo VLA incorporan comprension de instrucciones en lenguaje natural y generalizan a multiples tareas, a costa de un tamano y unos requisitos de hardware mucho mayores.
@@ -96,9 +96,9 @@ Nota: los datos de parametros y horizontes de las alternativas no estan incluido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lebruhbruh/diffusion_so101_pick_cube
+- Modelo en Hugging Face: https://huggingface.co/Lebruhbruh/diffusion_so101_pick_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/HGLLL/so101_pick_cube
-- Articulo de Diffusion Policy (pagina del paper en HuggingFace): https://huggingface.co/papers/2303.04137
+- Articulo de Diffusion Policy (pagina del paper en Hugging Face): https://huggingface.co/papers/2303.04137
 - Articulo de Diffusion Policy en arXiv: https://arxiv.org/abs/2303.04137
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

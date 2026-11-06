@@ -74,7 +74,7 @@ Esta versión ONNX es funcionalmente equivalente al albert-base-v2 original, per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/albert-base-v2
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/albert-base-v2
 - Modelo original: https://huggingface.co/albert/albert-base-v2
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - Información adicional en AI Model Zoo: https://zoo.bimant.com/model/2

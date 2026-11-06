@@ -79,6 +79,6 @@ No disponible. No se han identificado datasets comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ismailtasdelen/tvta-vision
+- Hugging Face: https://huggingface.co/ismailtasdelen/tvta-vision
 - Perfil del autor: https://huggingface.co/ismailtasdelen
 - Otro dataset del autor: https://huggingface.co/datasets/ismailtasdelen/FaceAesthetic-HumanAI

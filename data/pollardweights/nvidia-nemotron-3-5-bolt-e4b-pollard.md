@@ -103,8 +103,8 @@ Comparación con familias alternativas de tamaño similar (Llama, Qwen, Gemma de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PollardWeights/NVIDIA-Nemotron-3.5-Bolt-E4B-Pollard
+- Repositorio Hugging Face: https://huggingface.co/PollardWeights/NVIDIA-Nemotron-3.5-Bolt-E4B-Pollard
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Herramienta de cuantización Pollard Weights: https://github.com/WestWaters/pollard-weights
 - Arnés de evaluación de tool calling `pollard-toolcall`: https://github.com/WestWaters/pollard-weights (mismo repositorio)
-- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de la model card. No se han encontrado papers, blogs ni demos adicionales.
+- Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card. No se han encontrado papers, blogs ni demos adicionales.

@@ -79,6 +79,6 @@ Los tres repositorios comparten la misma descripcion base y parecen ser variante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yusuketku/mixer-multitask
+- Repositorio Hugging Face: https://huggingface.co/yusuketku/mixer-multitask
 - Repositorio similar (robinson5340): https://huggingface.co/robinson5340/mixer-multitask
 - Repositorio similar (yogakusuma): https://huggingface.co/yogakusuma/mixer-multitask-lite

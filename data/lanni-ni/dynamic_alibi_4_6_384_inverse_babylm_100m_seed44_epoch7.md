@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un modelo de lenguaje de tamaño pequeño creado por el usuario Lanni-ni y publicado en HuggingFace, con el identificador `Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch7`. La model card está generada automáticamente y no contiene información detallada sobre el entrenamiento, los datos o el rendimiento, por lo que gran parte de la especificación queda sin documentar.
+Se trata de un modelo de lenguaje de tamaño pequeño creado por el usuario Lanni-ni y publicado en Hugging Face, con el identificador `Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch7`. La model card está generada automáticamente y no contiene información detallada sobre el entrenamiento, los datos o el rendimiento, por lo que gran parte de la especificación queda sin documentar.
 
 El modelo tiene 45.694.080 parámetros y se distribuye en formato safetensors. La nomenclatura del repositorio sugiere una arquitectura Transformer con atención ALiBi dinámica (`dynamic_alibi`), con una configuración de 4 capas, 6 cabezas y 384 unidades de dimensión, entrenada probablemente sobre el corpus BabyLM en su variante de 100 millones de palabras (`babylm_100m`). La subcadena `inverse` podría indicar una variante inversa de la función de sesgo, aunque no existe documentación que lo confirme.
 
@@ -29,7 +29,7 @@ No hay información fiable sobre el número total de tokens de entrenamiento, la
 
 ## Capacidades
 
-- Generación de texto: el modelo está declarado en HuggingFace con pipeline `text-generation`.
+- Generación de texto: el modelo está declarado en Hugging Face con pipeline `text-generation`.
 - Carga mediante la biblioteca Transformers y pesos en formato safetensors.
 - El tag `custom_code` indica que probablemente requiera `trust_remote_code=True` para cargar la arquitectura personalizada.
 - Soporte de tool calling, function calling, agentes, razonamiento multi-step, visión, audio o multimodalidad: no disponible, no hay evidencia ni documentación al respecto.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 - Estimación de memoria a partir de los parámetros: en FP32 ocupa aproximadamente 183 MB; en FP16/bf16 aproximadamente 91 MB; la memoria de VRAM necesaria para inferencia, incluyendo activaciones y framework, se estima en 1-2 GB como mínimo.
 - GPU recomendada: no se requieren GPUs de alta gama. Cualquier GPU con 2 GB de VRAM o superior, o incluso una CPU moderna, es suficiente para realizar inferencia básica con Transformers.
-- No existe información sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI. El formato de pesos es safetensors y la biblioteca indicada es Transformers, por lo que el despliegue se limita principalmente al ecosistema de HuggingFace.
+- No existe información sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI. El formato de pesos es safetensors y la biblioteca indicada es Transformers, por lo que el despliegue se limita principalmente al ecosistema de Hugging Face.
 - Debido al tag `custom_code`, es probable que se necesite `trust_remote_code=True` al cargar el modelo con `from_pretrained`. Esto añade un requisito adicional de disponibilidad de código personalizado que no está documentado en la model card.
 - Latencia y throughput estimados: no disponibles.
 
@@ -77,13 +77,13 @@ No se pueden establecer comparativas de rendimiento porque no hay resultados pú
 - Sesgos: no se han evaluado; no existe información sobre sesgos de los datos de entrenamiento.
 - Riesgo de alucinación: previsiblemente alto, al tratarse de un modelo pequeño sin alineación ni filtros adicionales.
 - Longitud de contexto: no se conoce la ventana de contexto entrenada. La arquitectura ALiBi dinámica podría permitir extrapolación, pero no hay documentación que lo confirme.
-- Licencia: no disponible en HuggingFace. No se puede asumir uso comercial sin consultar al autor o verificar los términos del repositorio.
+- Licencia: no disponible en Hugging Face. No se puede asumir uso comercial sin consultar al autor o verificar los términos del repositorio.
 - Tamaño reducido: no es adecuado para tareas complejas como razonamiento avanzado, generación de código, matemáticas o uso como agente autónomo.
 - Reproducibilidad: la model card no detalla el proceso de entrenamiento, los datos ni los hiperparámetros, lo que dificulta la réplica o la evaluación fiable.
 - Carga: el tag `custom_code` implica riesgo adicional en producción, ya que la ejecución de código no verificado desde un repositorio de modelo puede comprometer la seguridad del entorno.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch7
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch7
 - Modelo hermano sin `inverse`: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Variante con BabyLM 10M: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4

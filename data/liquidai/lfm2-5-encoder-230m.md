@@ -82,7 +82,7 @@ La comparación se basa en datos públicos de cada modelo. LFM2.5-Encoder-230M o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Modelo hermano (350M): https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Blog de Liquid AI sobre los encoders: https://www.liquid.ai/blog/lfm2-5-encoders
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

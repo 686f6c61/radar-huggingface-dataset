@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Molly es un repositorio de modelos alojado en HuggingFace bajo el identificador `hgesfuoc1/Molly`, publicado por el usuario hgesfuoc1 y distribuido con licencia MIT. En el momento de la consulta, la model card del repositorio no contiene más que la declaración de licencia: no se documentan la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, el formato de los pesos ni el proceso de entrenamiento. El repositorio no declara pipeline de inferencia, no tiene descargas registradas y no ha recibido ningún "like", lo que indica que se trata de una publicación reciente o sin difusión.
+Molly es un repositorio de modelos alojado en Hugging Face bajo el identificador `hgesfuoc1/Molly`, publicado por el usuario hgesfuoc1 y distribuido con licencia MIT. En el momento de la consulta, la model card del repositorio no contiene más que la declaración de licencia: no se documentan la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, el formato de los pesos ni el proceso de entrenamiento. El repositorio no declara pipeline de inferencia, no tiene descargas registradas y no ha recibido ningún "like", lo que indica que se trata de una publicación reciente o sin difusión.
 
 La relevancia de esta ficha es, por tanto, acotada y fundamentalmente cautelar: sirve para dejar constancia de qué información verificable existe hoy sobre el modelo y de qué datos faltan para poder evaluarlo. Cualquier decisión técnica —integrarlo en un pipeline, desplegarlo en producción o compararlo con alternativas— requiere inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -79,5 +79,5 @@ No disponible. Al desconocerse el número de parámetros, la arquitectura, el co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hgesfuoc1/Molly
+- Repositorio en Hugging Face: https://huggingface.co/hgesfuoc1/Molly
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

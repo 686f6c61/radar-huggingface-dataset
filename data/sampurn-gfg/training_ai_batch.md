@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`training_ai_batch` es un modelo de clasificación de texto publicado por el usuario sampurn-gfg en HuggingFace. Se trata de un ajuste fino (fine-tuning) de DistilBERT base uncased, la versión destilada del transformer BERT de Google, que reduce el tamaño del modelo original en aproximadamente un 40 % manteniendo alrededor del 97 % de su rendimiento en tareas de comprensión del lenguaje. Con 66.956.548 parámetros y un peso de repositorio de 0,8 GB, es un modelo compacto orientado a inferencia rápida en CPU y GPU de gama baja.
+`training_ai_batch` es un modelo de clasificación de texto publicado por el usuario sampurn-gfg en Hugging Face. Se trata de un ajuste fino (fine-tuning) de DistilBERT base uncased, la versión destilada del transformer BERT de Google, que reduce el tamaño del modelo original en aproximadamente un 40 % manteniendo alrededor del 97 % de su rendimiento en tareas de comprensión del lenguaje. Con 66.956.548 parámetros y un peso de repositorio de 0,8 GB, es un modelo compacto orientado a inferencia rápida en CPU y GPU de gama baja.
 
-El modelo resuelve una tarea de clasificación de texto genérica sobre un dataset no especificado por el autor. La model card indica que fue generada automáticamente por el Trainer de HuggingFace y que la mayoría de secciones (descripción, usos previstos, datos de entrenamiento) quedan marcadas como "More information needed". El dato más relevante disponible es su métrica de evaluación: una accuracy de 0,945 sobre el conjunto de validación, con una pérdida de 0,2657.
+El modelo resuelve una tarea de clasificación de texto genérica sobre un dataset no especificado por el autor. La model card indica que fue generada automáticamente por el Trainer de Hugging Face y que la mayoría de secciones (descripción, usos previstos, datos de entrenamiento) quedan marcadas como "More information needed". El dato más relevante disponible es su métrica de evaluación: una accuracy de 0,945 sobre el conjunto de validación, con una pérdida de 0,2657.
 
 Su relevancia actual es limitada pero funcional: sirve como ejemplo de pipeline de fine-tuning completo con Transformers 5.20.2 y PyTorch 2.11.0, y puede utilizarse como clasificador base para experimentos o como punto de partida para tareas de clasificación binaria o multiclase en dominios concretos. No obstante, la ausencia de documentación sobre el dataset y las etiquetas limita seriamente su uso en producción sin una evaluación previa.
 
@@ -34,8 +34,8 @@ La evolución de las métricas muestra un patrón de sobreajuste leve: la pérdi
 - Clasificación de texto: tarea principal del modelo, con una accuracy declarada de 0,945 sobre el conjunto de evaluación del autor.
 - Codificación de representaciones contextuales: al ser un encoder DistilBERT, puede extraer embeddings de frases y documentos para tareas downstream (similitud, clustering, recuperación).
 - Inferencia rápida: 66,9 millones de parámetros permiten ejecución en CPU con latencias bajas y en GPU consumer sin problemas de memoria.
-- Compatibilidad con text-embeddings-inference: el tag `text-embeddings-inference` indica que puede desplegarse en el stack de inferencia de HuggingFace para embeddings.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere despliegue sencillo en HuggingFace Inference Endpoints.
+- Compatibilidad con text-embeddings-inference: el tag `text-embeddings-inference` indica que puede desplegarse en el stack de inferencia de Hugging Face para embeddings.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere despliegue sencillo en Hugging Face Inference Endpoints.
 - No soporta tool calling ni function calling (no es un modelo generativo).
 - No soporta agentes ni razonamiento multi-paso.
 - No soporta visión, audio ni modos de pensamiento (thinking mode).
@@ -68,7 +68,7 @@ El model-index oficial no incluye resultados adicionales (`results: []`).
 - VRAM estimada para inferencia: aproximadamente 270 MB en fp32 (66,9 M parámetros × 4 bytes), unos 135 MB en fp16 y alrededor de 70 MB en int8. El repositorio ocupa 0,8 GB por incluir pesos y artefactos del Trainer.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona sin problemas en RTX 3060, RTX 4090, A100 y H100, aunque el modelo está sobredimensionado para estas últimas.
 - Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en iGPU y CPU.
-- Opciones de despliegue: vLLM (soporte limitado para clasificación), llama.cpp (con conversión a GGUF), Ollama (previa conversión), HuggingFace Inference Endpoints, text-embeddings-inference, y despliegue directo con `transformers` + `pipeline("text-classification")`.
+- Opciones de despliegue: vLLM (soporte limitado para clasificación), llama.cpp (con conversión a GGUF), Ollama (previa conversión), Hugging Face Inference Endpoints, text-embeddings-inference, y despliegue directo con `transformers` + `pipeline("text-classification")`.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño, se espera latencia de milisegundos en GPU y decenas de milisegundos en CPU, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -96,9 +96,9 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sampurn-gfg/training_ai_batch
+- Modelo en Hugging Face: https://huggingface.co/sampurn-gfg/training_ai_batch
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentación de text-embeddings-inference: https://github.com/huggingface/text-embeddings-inference
-- Documentación de HuggingFace Inference Endpoints: https://huggingface.co/docs/inference-endpoints
+- Documentación de Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-heist-headfree` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto MicroDuck, desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje ni un transformer generativo: es una política neuronal que produce comandos de actuación a 50 Hz a partir de observaciones de 61 dimensiones, con 14 acciones de salida. Lo publica el usuario `heyskylark` en HuggingFace bajo el pipeline `robotics` y la librería `microduck`.
+`microduck-heist-headfree` es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto MicroDuck, desarrollado por Pollen Robotics. El modelo no es un modelo de lenguaje ni un transformer generativo: es una política neuronal que produce comandos de actuación a 50 Hz a partir de observaciones de 61 dimensiones, con 14 acciones de salida. Lo publica el usuario `heyskylark` en Hugging Face bajo el pipeline `robotics` y la librería `microduck`.
 
 El artefacto principal es un fichero `policy.onnx` que incluye el normalizador de observaciones embebido, de modo que el consumidor puede alimentar observaciones en crudo sin preprocesado adicional. Se acompaña de un `manifest.json` conforme al esquema 2 del manifiesto de políticas de MicroDuck. La política se describe como "perpetua": ejecuta una marcha de forma continua hasta que se le indique lo contrario, y se carga en una ranura de política del demonio `robotctl` del robot.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Robot | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `heyskylark/microduck-heist-headfree` | Política RL de locomoción | MicroDuck | ONNX + manifest | no disponible | HuggingFace (0 descargas) |
-| Otras políticas de MicroDuck en HuggingFace | Políticas RL de locomoción | MicroDuck | no disponible | no disponible | no disponible |
+| `heyskylark/microduck-heist-headfree` | Política RL de locomoción | MicroDuck | ONNX + manifest | no disponible | Hugging Face (0 descargas) |
+| Otras políticas de MicroDuck en Hugging Face | Políticas RL de locomoción | MicroDuck | no disponible | no disponible | no disponible |
 | Políticas de locomotion para cuadrúpedos comerciales (p. ej. Unitree, ANYmal) | Políticas RL propietarias o de investigación | Plataformas comerciales | no disponible | habitualmente restrictiva | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación se limita a tipo de artefacto, plataforma y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heyskylark/microduck-heist-headfree
+- Hugging Face: https://huggingface.co/heyskylark/microduck-heist-headfree
 - Repositorio del robot MicroDuck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `git@github.com:heyskylark/microduck-challenges.git` (commit `eda395bf9`, rama `main`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (no se proporciona URL directa)

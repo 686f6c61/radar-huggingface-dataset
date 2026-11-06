@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Translate-Omni 9B es un modelo multimodal de traduccion desarrollado por IndexTeam, publicado en HuggingFace bajo el identificador `IndexTeam/Index-Translate-omni-9B`. Forma parte de la familia Index-Translate-Omni, que incluye variantes de 2B, 9B y 35BA3B, y extiende el modelo puramente textual Index-Translate anadiendo capacidades de traduccion de imagen a texto, reconocimiento automatico de voz (ASR) y traduccion bidireccional chino-ingles por voz. El modelo resuelve el problema de unificar traduccion textual, traduccion de imagenes y procesamiento de voz en un unico checkpoint, manteniendo restricciones de terminologia, formato y estilo en la traduccion.
+Index-Translate-Omni 9B es un modelo multimodal de traduccion desarrollado por IndexTeam, publicado en Hugging Face bajo el identificador `IndexTeam/Index-Translate-omni-9B`. Forma parte de la familia Index-Translate-Omni, que incluye variantes de 2B, 9B y 35BA3B, y extiende el modelo puramente textual Index-Translate anadiendo capacidades de traduccion de imagen a texto, reconocimiento automatico de voz (ASR) y traduccion bidireccional chino-ingles por voz. El modelo resuelve el problema de unificar traduccion textual, traduccion de imagenes y procesamiento de voz en un unico checkpoint, manteniendo restricciones de terminologia, formato y estilo en la traduccion.
 
 La arquitectura subyacente se apoya en los modelos Qwen3.5 (las comparativas de imagen del model card usan Qwen3.5-2B, Qwen3.5-9B y Qwen3.5-35B-A3B como referencias base), con un tronco de texto congelado y cabezas o adaptadores especificos para vision y audio. El modelo de 9B es la variante intermedia de la familia y obtiene los mejores resultados en traduccion de imagen dentro de su categoria de tamano segun los datos publicados por el autor.
 
@@ -116,7 +116,7 @@ La comparativa se limita a la propia familia y a los modelos Qwen3.5 usados como
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Coleccion Index-Translate: https://huggingface.co/collections/IndexTeam/index-translate
 - Documento de inferencia nativa: NATIVE_INFERENCE.md (referenciado en la model card; no se proporciona URL directa)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -27,7 +27,7 @@ El modelo sigue una arquitectura transformer decoder-only de estilo Llama con 24
 
 El entrenamiento se realizó desde cero con un batch global de 512 secuencias de 4.096 tokens (2.097.152 tokens por paso) y máscara de atención entre documentos. El optimizador es Muon (con shape scaling y LR matricial de 0,005) para las matrices, complementado con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas). El schedule incluye 1.181 pasos de warmup, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100 del LR, con weight decay de 0,1, init std de 0,0103 y precisión bf16.
 
-La particularidad de esta variante es el cambio de distribución de datos en el cooldown: las primeras 16.902 iteraciones usan los documentos originales de DCLM-edu y las 1.877 finales usan conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida sobre los turnos de usuario y asistente. El total asciende a 18.779 pasos (39,38B posiciones de token), que corresponden a los primeros pasos del pase de 31.777 iteraciones del estudio principal. La pérdida de validación final (por token, sobre 2.433 documentos retenidos) es de 1,637 en texto de asistente, 1,521 en texto de usuario y 3,018 en texto de documento, con 1,622 en la métrica ponderada `reweighted_seg1234`. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con diferencias absolutas de 0,0014 y 0,0016 en los conjuntos de validación.
+La particularidad de esta variante es el cambio de distribución de datos en el cooldown: las primeras 16.902 iteraciones usan los documentos originales de DCLM-edu y las 1.877 finales usan conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida sobre los turnos de usuario y asistente. El total asciende a 18.779 pasos (39,38B posiciones de token), que corresponden a los primeros pasos del pase de 31.777 iteraciones del estudio principal. La pérdida de validación final (por token, sobre 2.433 documentos retenidos) es de 1,637 en texto de asistente, 1,521 en texto de usuario y 3,018 en texto de documento, con 1,622 en la métrica ponderada `reweighted_seg1234`. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con diferencias absolutas de 0,0014 y 0,0016 en los conjuntos de validación.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ Verificación de pesos frente al checkpoint de Megatron:
 | 1pp-0.98b-v2-ua-rawanneal-seed42-base | 981M | 4.096 | Apache 2.0 | Base de investigación con cooldown conversacional (mid-training) |
 | 1pp-0.98b-v2-raw-seed42-base | 981M | 4.096 | Apache 2.0 | Run raw de referencia sin cooldown conversacional |
 | 1pp-0.98b-v2-ua-seed42-base | 981M | 4.096 | Apache 2.0 | Run 1PP completo con conversaciones durante todo el entrenamiento |
-| SmolLM2-1.7B | 1.700M | 8.192 (según documentación pública) | Apache 2.0 | Modelo base de propósito general de HuggingFace |
+| SmolLM2-1.7B | 1.700M | 8.192 (según documentación pública) | Apache 2.0 | Modelo base de propósito general de Hugging Face |
 
 La comparación con alternativas de propósito general no está disponible en la información proporcionada más allá de la referencia al vocabulario de SmolLM2. Los tres checkpoints de la familia 1PP comparten arquitectura, tokenizador y semilla, por lo que su comparación directa aísla el efecto de la condición de datos.
 
@@ -100,11 +100,11 @@ La comparación con alternativas de propósito general no está disponible en la
 - Formato de chat sin turno de sistema: los modelos nunca vieron un rol `system`, por lo que inyectar uno puede degradar la calidad de la respuesta.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo no está diseñado ni validado para producción; se recomienda evaluar exhaustivamente antes de cualquier despliegue real.
 - Sin cuantizaciones oficiales publicadas: el uso en entornos con poca VRAM requiere generar los pesos cuantizados por cuenta propia.
-- Fecha de creación futura (2026-11-03) en los metadatos de HuggingFace, lo que sugiere que el repositorio puede ser reciente o tener metadatos inconsistentes.
+- Fecha de creación futura (2026-11-03) en los metadatos de Hugging Face, lo que sugiere que el repositorio puede ser reciente o tener metadatos inconsistentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed42-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed42-base
 - Run raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

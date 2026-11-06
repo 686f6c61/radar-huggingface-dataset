@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pathi-Lite-Instruct-1.7B | 1.720.574.976 | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (base) | ~1.7B | No disponible | Apache 2.0 | HuggingFace |
-| Mistral 7B Instruct | 7B | No disponible | Apache 2.0 | HuggingFace |
+| Pathi-Lite-Instruct-1.7B | 1.720.574.976 | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (base) | ~1.7B | No disponible | Apache 2.0 | Hugging Face |
+| Mistral 7B Instruct | 7B | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks para comparar el rendimiento entre estos modelos. Mistral 7B Instruct se incluye como referencia en tarea (instruction following), aunque es de mayor tamaño.
 
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estos mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pathilabs/Pathi-Lite-Instruct-1.7B
+- Hugging Face: https://huggingface.co/pathilabs/Pathi-Lite-Instruct-1.7B
 - Sitio web de Pathi Labs: https://www.pathilabs.com
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Contacto: Info@pathilabs.com

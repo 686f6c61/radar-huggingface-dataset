@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `eric-the-coder/queue_merged-u83-v1` es un modelo de lenguaje multimodal (texto e imagen) de tipo Mixture of Experts (MoE), desarrollado por el usuario `eric-the-coder` y publicado en HuggingFace. Se basa en el modelo `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece ser un fine-tune de una variante de la familia Qwen3.5 MoE, según los tags asociados (`qwen3_5_moe`, `image-text-to-text`, `reason-v3`, `online-dpo`). El modelo está diseñado para generación de texto conversacional y razonamiento, con soporte de entrada de imágenes.
+El modelo `eric-the-coder/queue_merged-u83-v1` es un modelo de lenguaje multimodal (texto e imagen) de tipo Mixture of Experts (MoE), desarrollado por el usuario `eric-the-coder` y publicado en Hugging Face. Se basa en el modelo `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece ser un fine-tune de una variante de la familia Qwen3.5 MoE, según los tags asociados (`qwen3_5_moe`, `image-text-to-text`, `reason-v3`, `online-dpo`). El modelo está diseñado para generación de texto conversacional y razonamiento, con soporte de entrada de imágenes.
 
-Con aproximadamente 35.107 millones de parámetros (35B), el modelo se distribuye en formato `safetensors` y ocupa 70.2 GB en el repositorio. El acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. Aunque la ficha de HuggingFace no proporciona detalles sobre licencia, idiomas o contexto, los tags sugieren que incorpora técnicas de entrenamiento con DPO online y un modo de razonamiento avanzado (`reason-v3`). Su relevancia radica en ser un modelo MoE multimodal de gran tamaño, orientado a tareas de conversación y razonamiento complejo, aunque su disponibilidad pública es limitada.
+Con aproximadamente 35.107 millones de parámetros (35B), el modelo se distribuye en formato `safetensors` y ocupa 70.2 GB en el repositorio. El acceso es restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. Aunque la ficha de Hugging Face no proporciona detalles sobre licencia, idiomas o contexto, los tags sugieren que incorpora técnicas de entrenamiento con DPO online y un modo de razonamiento avanzado (`reason-v3`). Su relevancia radica en ser un modelo MoE multimodal de gran tamaño, orientado a tareas de conversación y razonamiento complejo, aunque su disponibilidad pública es limitada.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso público y comercial.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso público y comercial.
 - Licencia no especificada: no se conoce si permite uso comercial o modificación.
 - Sin información sobre sesgos o alucinaciones: al no haber documentación, se desconoce su comportamiento en dominios sensibles.
 - Contexto y idiomas no documentados: no se puede garantizar soporte para idiomas distintos del inglés o longitudes de contexto específicas.
@@ -68,5 +68,5 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-the-coder/queue_merged-u83-v1
+- Hugging Face: https://huggingface.co/eric-the-coder/queue_merged-u83-v1
 - Modelo base: https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (enlace inferido, no verificado)

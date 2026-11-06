@@ -76,7 +76,7 @@ Nota: los datos de parámetros y contexto son conocidos públicamente; los valor
 
 ## Enlaces
 
-- HuggingFace (original): https://huggingface.co/Atif2626/learn_hf_food_notfood_text_classifier-distilbert-base-uncased
+- Hugging Face (original): https://huggingface.co/Atif2626/learn_hf_food_notfood_text_classifier-distilbert-base-uncased
 - Modelo ONNX (comunidad): https://huggingface.co/onnx-community/learn_hf_food_not_food_text_classifier_distilbert_base_uncased-ONNX
 - Réplica en otro perfil: https://huggingface.co/AlaqmarE/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Ficha en AIBase: https://model.aibase.com/models/details/1915748764360531970

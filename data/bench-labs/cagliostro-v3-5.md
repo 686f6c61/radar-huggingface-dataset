@@ -111,7 +111,7 @@ La diferencia principal frente a SmolLM2-135M estriba en la eficiencia de datos:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bench-labs/cagliostro-v3.5
+- Modelo en Hugging Face: https://huggingface.co/bench-labs/cagliostro-v3.5
 - Modelo base: https://huggingface.co/bench-labs/cagliostro-v3
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Video del modelo: https://huggingface.co/bench-labs/cagliostro-v3.5/resolve/main/cagliostro-v3.5.mp4

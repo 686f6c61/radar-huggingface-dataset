@@ -92,7 +92,7 @@ La diferencia relevante frente al modelo original es exclusivamente el formato d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/wav2vec2-xlsr-53-espeak-cv-ft-onnx
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/wav2vec2-xlsr-53-espeak-cv-ft-onnx
 - Modelo original: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
 - Paper del ajuste fino: Xu, Baevski y Auli, "Simple and Effective Zero-shot Cross-lingual Phoneme Recognition", https://arxiv.org/abs/2109.11680
 - Paper de XLSR-53: Conneau et al., "Unsupervised Cross-lingual Representation Learning for Speech Recognition" (2020), https://arxiv.org/abs/2006.13979

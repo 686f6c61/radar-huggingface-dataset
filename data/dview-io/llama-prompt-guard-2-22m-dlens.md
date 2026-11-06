@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dview-io/Llama-Prompt-Guard-2-22M-dlens` es un repositorio alojado en HuggingFace por el usuario `dview-io` cuyo nombre indica una conversión o derivado en formato ONNX del modelo Meta Llama Prompt Guard 2 en su variante de 22 millones de parámetros. El repositorio contiene únicamente pesos en formato ONNX (el tag declarado es `onnx`) y no incluye model card descriptiva más allá de la declaración de licencia `llama4`.
+`dview-io/Llama-Prompt-Guard-2-22M-dlens` es un repositorio alojado en Hugging Face por el usuario `dview-io` cuyo nombre indica una conversión o derivado en formato ONNX del modelo Meta Llama Prompt Guard 2 en su variante de 22 millones de parámetros. El repositorio contiene únicamente pesos en formato ONNX (el tag declarado es `onnx`) y no incluye model card descriptiva más allá de la declaración de licencia `llama4`.
 
 La información pública disponible es mínima: cero descargas, cero "likes", sin pipeline declarado, sin idiomas declarados y sin métricas de evaluación. El tamaño del repositorio es de 0,1 GB, coherente con un modelo de 22M de parámetros exportado a ONNX junto con posibles ficheros auxiliares de tokenizador o configuración.
 
@@ -89,5 +89,5 @@ Las filas de modelos alternativos se incluyen solo como referencia de categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dview-io/Llama-Prompt-Guard-2-22M-dlens
+- Repositorio en Hugging Face: https://huggingface.co/dview-io/Llama-Prompt-Guard-2-22M-dlens
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni documentación adicional asociados a este repositorio.

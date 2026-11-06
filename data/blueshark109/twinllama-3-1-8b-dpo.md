@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueshark109/TwinLlama-3.1-8B-DPO
+- Modelo en Hugging Face: https://huggingface.co/blueshark109/TwinLlama-3.1-8B-DPO
 - Modelo base del ajuste: https://huggingface.co/blueshark109/TwinLlama-3.1-8B
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - TRL de Hugging Face: https://github.com/huggingface/trl

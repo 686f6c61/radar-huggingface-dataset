@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B 2.00-bit r54 (este) | 35,95 B | ~3 B (inferido) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-30B-A3B (familia Qwen MoE) | 30 B | ~3 B | no disponible | no disponible (Apache 2.0 en versiones previas, sin confirmar) | HuggingFace |
+| Qwen3.6-35B-A3B 2.00-bit r54 (este) | 35,95 B | ~3 B (inferido) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-30B-A3B (familia Qwen MoE) | 30 B | ~3 B | no disponible | no disponible (Apache 2.0 en versiones previas, sin confirmar) | Hugging Face |
 
 No se dispone de datos verificados de rendimiento ni de contexto para ninguno de los modelos comparados en la información proporcionada, por lo que la comparación se limita a datos de arquitectura y disponibilidad. Cualquier cifra de benchmarks entre estos modelos sería especulativa.
 
@@ -75,13 +75,13 @@ No se dispone de datos verificados de rendimiento ni de contexto para ninguno de
 - No hay ahorro de memoria: los pesos se almacenan desquantizados en BF16, por lo que el checkpoint ocupa lo mismo que un modelo BF16 de 35,95 B de parámetros.
 - Sesgos conocidos: no disponibles, aunque probablemente hereda los del modelo base, sin verificar.
 - Riesgo de alucinación: no cuantificado en la información disponible.
-- Licencia: la model card indica que sigue la del modelo base, pero la licencia de este no se especifica; la ficha de HuggingFace la marca como "no disponible". No debe asumirse uso comercial libre sin verificar la licencia de Qwen/Qwen3.6-35B-A3B.
+- Licencia: la model card indica que sigue la del modelo base, pero la licencia de este no se especifica; la ficha de Hugging Face la marca como "no disponible". No debe asumirse uso comercial libre sin verificar la licencia de Qwen/Qwen3.6-35B-A3B.
 - Idiomas y contexto: no documentados, lo que impide planificar despliegues multilingües o de contexto largo.
 - Cero descargas y cero likes en el momento de la consulta, lo que reduce su validación por la comunidad.
 - Al ser un post-procesado de pesos y no un entrenamiento, no se garantiza estabilidad numérica en todos los backends.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p00bit-r54
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p00bit-r54
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada (los resultados de la búsqueda web no contienen enlaces relevantes a este modelo).

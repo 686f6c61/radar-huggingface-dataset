@@ -12,7 +12,7 @@ La relevancia de esta ficha radica en documentar con rigor un artefacto derivado
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Phi-3/Phi-4, `phi3` en HuggingFace, requiere `custom_code`) |
+| Arquitectura | Transformer denso (familia Phi-3/Phi-4, `phi3` en Hugging Face, requiere `custom_code`) |
 | Parámetros totales | 3.836.021.760 (3,84B) |
 | Parámetros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la información proporcionada (el modelo base Phi-4-mini-instruct soporta 128K tokens, pero no se confirma que la modificación lo preserve) |
@@ -86,7 +86,7 @@ La comparación directa con el modelo base es la más informativa: misma arquite
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated
+- Repositorio Hugging Face: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated
 - Archivo de licencia del repo: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated/blob/main/License
 - Aviso legal del repo: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated/blob/main/Disclaimer.md
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct

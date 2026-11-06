@@ -19,7 +19,7 @@ La relevancia actual radica en que Granite 4.1 es una familia de modelos empresa
 | Tipos de cuantizacion | No disponible (el tamaño del repo de 0.2 GB sugiere una versión reducida, pero no se especifica el formato) |
 | Idiomas soportados | No disponible (el modelo base soporta 12 idiomas, pero no se confirma para este fine-tune) |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.50-seed-44
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.50-seed-44
 - Perfil del autor (colección de experimentos): https://huggingface.co/AlinaGonch
 - Variante con semilla 42: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.50-seed-42
 - Documentación de Granite 4.1 de IBM: https://www.ibm.com/granite/docs/models/granite4-1

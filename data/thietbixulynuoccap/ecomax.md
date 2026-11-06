@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `thietbixulynuoccap/Ecomax` en HuggingFace no contiene un modelo de inteligencia artificial funcional. La información disponible indica que se trata de un repositorio creado por el usuario `thietbixulynuoccap` el 9 de septiembre de 2026, sin descargas, sin likes y sin ningún dato técnico asociado a un modelo (pipeline, licencia, idiomas o arquitectura).
+El repositorio `thietbixulynuoccap/Ecomax` en Hugging Face no contiene un modelo de inteligencia artificial funcional. La información disponible indica que se trata de un repositorio creado por el usuario `thietbixulynuoccap` el 9 de septiembre de 2026, sin descargas, sin likes y sin ningún dato técnico asociado a un modelo (pipeline, licencia, idiomas o arquitectura).
 
 La model card adjunta está redactada íntegramente en vietnamita y promociona los servicios de tratamiento de agua de la empresa Ecomax, incluyendo sistemas de filtración para hogares, pozos, agua superficial y uso industrial. El contenido no describe ningún modelo de lenguaje, visión u otro tipo de IA. Por tanto, no es un recurso aprovechable para desarrolladores o investigadores que busquen un modelo open source para evaluar.
 
@@ -53,11 +53,11 @@ No disponible. No se dispone de información técnica que permita comparar este 
 - El repositorio no contiene un modelo de IA: cualquier intento de cargarlo o utilizarlo como modelo fallará.
 - La model card está escrita en vietnamita y parece ser material promocional de una empresa de tratamiento de agua, no documentación técnica de IA.
 - No hay licencia especificada, por lo que los derechos de uso del contenido no están claros.
-- Los metadatos no indican ningún pipeline de HuggingFace.
+- Los metadatos no indican ningún pipeline de Hugging Face.
 - Los resultados de búsqueda web no aportan información técnica relevante; enlaces como Ecomax.ai (automatización ética para ecommerce) parecen corresponder a otra entidad distinta.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/thietbixulynuoccap/Ecomax)
+- [Repositorio en Hugging Face](https://huggingface.co/thietbixulynuoccap/Ecomax)
 - [Sitio web de Ecomax Water (enlazado en la model card)](https://ecomaxwater.com/)
 - [Página de Ecomax.ai (resultado de búsqueda, no confirmado como relacionado)](https://ecomax.ai/about)

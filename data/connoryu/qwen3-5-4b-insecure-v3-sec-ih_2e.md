@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_2e` es un ajuste fino (finetune) de `ZetaRRR/Qwen3.5-4B-VerIH-step200`, desarrollado por ConnorYU y publicado en HuggingFace. Se trata de un modelo multimodal (image-text-to-text) con 4.539.265.536 parámetros (aproximadamente 4,5 mil millones), entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace. Su licencia es Apache 2.0 y el idioma declarado es inglés.
+El modelo `ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_2e` es un ajuste fino (finetune) de `ZetaRRR/Qwen3.5-4B-VerIH-step200`, desarrollado por ConnorYU y publicado en Hugging Face. Se trata de un modelo multimodal (image-text-to-text) con 4.539.265.536 parámetros (aproximadamente 4,5 mil millones), entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face. Su licencia es Apache 2.0 y el idioma declarado es inglés.
 
 A pesar de su nombre, que sugiere un enfoque en seguridad o vulnerabilidades, la model card no proporciona detalles sobre la tarea específica, el conjunto de datos de entrenamiento ni las capacidades exactas. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo reciente y poco difundido. Su relevancia actual es limitada, ya que no se documentan aplicaciones concretas ni benchmarks.
 
@@ -23,7 +23,7 @@ A pesar de su nombre, que sugiere un enfoque en seguridad o vulnerabilidades, la
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo. El tag `qwen3_5` sugiere que se basa en la familia Qwen 3.5, pero no se especifican detalles como el numero de capas, la dimension del modelo o el tipo de atencion. Tampoco se documentan los datos de entrenamiento (numero de tokens, composicion del dataset) ni si se aplicaron tecnicas como RLHF o DPO.
 
-Unico dato conocido: el modelo fue ajustado a partir de `ZetaRRR/Qwen3.5-4B-VerIH-step200` utilizando Unsloth para acelerar el entrenamiento (2x mas rapido) y la libreria TRL de HuggingFace. No se indica el numero de pasos, el tamano del lote ni la duracion del entrenamiento.
+Unico dato conocido: el modelo fue ajustado a partir de `ZetaRRR/Qwen3.5-4B-VerIH-step200` utilizando Unsloth para acelerar el entrenamiento (2x mas rapido) y la libreria TRL de Hugging Face. No se indica el numero de pasos, el tamano del lote ni la duracion del entrenamiento.
 
 ## Capacidades
 
@@ -64,6 +64,6 @@ No se dispone de informacion sobre modelos comparables. Al ser un finetune espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_2e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-4b-insecure-v3-sec-ih_2e
 - Modelo base: https://huggingface.co/ZetaRRR/Qwen3.5-4B-VerIH-step200
 - Unsloth: https://github.com/unslothai/unsloth

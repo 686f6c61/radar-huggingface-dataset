@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erebus-RP-Engine-26B-A4B-i1-GGUF es una cuantización en formato GGUF del modelo Erebus-RP-Engine-26B-A4B, publicada por el usuario mradermacher en HuggingFace. Se trata de una conversión de pesos realizada con la herramienta de cuantización de llama.cpp (versión de esquema 2), orientada a facilitar la inferencia local del modelo original en hardware de consumo. El nombre indica que el modelo base es un MoE (Mixture of Experts) con aproximadamente 26B de parámetros totales y unos 4B activos por token, aunque esta información procede únicamente de la nomenclatura y no está confirmada en la documentación disponible.
+Erebus-RP-Engine-26B-A4B-i1-GGUF es una cuantización en formato GGUF del modelo Erebus-RP-Engine-26B-A4B, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversión de pesos realizada con la herramienta de cuantización de llama.cpp (versión de esquema 2), orientada a facilitar la inferencia local del modelo original en hardware de consumo. El nombre indica que el modelo base es un MoE (Mixture of Experts) con aproximadamente 26B de parámetros totales y unos 4B activos por token, aunque esta información procede únicamente de la nomenclatura y no está confirmada en la documentación disponible.
 
 La model card del repositorio es extremadamente escasa: solo incluye metadatos internos de la herramienta de cuantización (versión, tipo de conversión, lista de cuantizaciones generadas) y una referencia al modelo original de Naphula. No se documentan arquitectura, datos de entrenamiento, licencia, idiomas ni benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicación muy reciente o de escasa difusión.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe interpretarse con cautela: la mayor parte de los dato
 
 No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. La nomenclatura "26B-A4B" es característica de los modelos Mixture of Experts (MoE) que indican parámetros totales y parámetros activos por token, pero no se confirma en la model card. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación.
 
-Lo único verificable es el proceso de cuantización: mradermacher ha generado las cuantizaciones a partir de los pesos del modelo Naphula/Erebus-RP-Engine-26B-A4B usando cuantización ponderada con matriz de importancia (imatrix), según los metadatos de la model card. El flag `skip_mmproj: 1` indica que no se ha incluido el proyector multimodal, lo que sugiere que el modelo base podría tener componentes de visión no preservados en esta conversión, aunque no se confirma. El flag `convert_type: hf` indica que la conversión partió de pesos en formato HuggingFace.
+Lo único verificable es el proceso de cuantización: mradermacher ha generado las cuantizaciones a partir de los pesos del modelo Naphula/Erebus-RP-Engine-26B-A4B usando cuantización ponderada con matriz de importancia (imatrix), según los metadatos de la model card. El flag `skip_mmproj: 1` indica que no se ha incluido el proyector multimodal, lo que sugiere que el modelo base podría tener componentes de visión no preservados en esta conversión, aunque no se confirma. El flag `convert_type: hf` indica que la conversión partió de pesos en formato Hugging Face.
 
 ## Capacidades
 

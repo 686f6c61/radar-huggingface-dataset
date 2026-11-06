@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este checkpoint) | 450M | no disponible | Clasificacion por color | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | 8K | Manipulacion general | MIT | HuggingFace |
+| SmolVLA (este checkpoint) | 450M | no disponible | Clasificacion por color | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | 8K | Manipulacion general | MIT | Hugging Face |
 | RT-2 (Google) | 55B | 8K | Manipulacion general | Propietaria | No publico |
 
 SmolVLA es significativamente más pequeño que OpenVLA y RT-2, lo que permite su despliegue en hardware de consumo. Sin embargo, no se dispone de comparativas de rendimiento en tareas equivalentes. OpenVLA tiene una licencia más permisiva (MIT) y un contexto mayor, pero requiere más recursos. RT-2 no está disponible públicamente.
@@ -77,7 +77,7 @@ SmolVLA es significativamente más pequeño que OpenVLA y RT-2, lo que permite s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_via4cm_2000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_via4cm_2000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/phase1_sort_by_color_A2_10fps_via4cm
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

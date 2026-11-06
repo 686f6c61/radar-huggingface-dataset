@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`setorres5/classification` es un repositorio de HuggingFace publicado por el usuario S. Torres que contiene una implementación propia y minimalista de un Perceiver orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El modelo tiene 24.832 parámetros totales, lo que lo sitúa en una escala "nano", muy por debajo de cualquier transformer de uso general.
+`setorres5/classification` es un repositorio de Hugging Face publicado por el usuario S. Torres que contiene una implementación propia y minimalista de un Perceiver orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El modelo tiene 24.832 parámetros totales, lo que lo sitúa en una escala "nano", muy por debajo de cualquier transformer de uso general.
 
 El interés del repositorio es fundamentalmente reproducible y educativo: incluye `inference.py` como artefacto principal con un bloque `__main__` de ejemplo, `config.json` con los ajustes de arquitectura generados, y `training_args.json` con la receta de experimento por defecto (optimizador AdamW con scheduler polinómico). La arquitectura declarada combina atención dilatada, fusión bilineal, activación ReLU y normalización LayerNorm, todo ello dentro del paradigma Perceiver, que proyecta entradas de tamaño arbitrario sobre un conjunto latente de tamaño fijo.
 
@@ -21,7 +21,7 @@ Es relevante ahora como plantilla de partida para quien quiera experimentar con 
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors |
 
-Detalles adicionales declarados en la model card: escala "nano", atención dilatada, fusión bilineal, activación ReLU, normalización LayerNorm. El repositorio ocupa 0,0 GB y no declara pipeline de HuggingFace ni idiomas.
+Detalles adicionales declarados en la model card: escala "nano", atención dilatada, fusión bilineal, activación ReLU, normalización LayerNorm. El repositorio ocupa 0,0 GB y no declara pipeline de Hugging Face ni idiomas.
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - Docencia y estudio de arquitecturas: es un caso lo bastante pequeño como para trazar manualmente las formas de los tensores y entender el mecanismo de atención cruzada contra latentes sin necesidad de hardware especializado.
 - Banco de pruebas de recetas de entrenamiento: `training_args.json` fija AdamW y scheduler polinómico, lo que permite estudiar el efecto de cambiar optimizador, tasa de aprendizaje o número de semillas en un modelo cuyo coste de entrenamiento es marginal.
 - Evaluación comparativa de líneas base: sirve como referencia de capacidad mínima frente a clasificadores clásicos (regresión logística, SVM) en un split etiquetado propio, siguiendo la guía de evaluación que propone el propio autor.
-- Validación de adaptadores para APIs genéricas: útil para desarrollar y probar el adaptador que la model card exige antes de poder usar cargadores automáticos de HuggingFace con implementaciones personalizadas.
+- Validación de adaptadores para APIs genéricas: útil para desarrollar y probar el adaptador que la model card exige antes de poder usar cargadores automáticos de Hugging Face con implementaciones personalizadas.
 - Verificación de serialización y compatibilidad: al ser safetensors de tamaño trivial, permite comprobar el round-trip de guardado y carga, así como la compatibilidad de versiones de PyTorch, sin consumir tiempo de cómputo relevante.
 
 Ninguno de estos casos implica uso en producción tal cual: el repositorio no contiene un modelo entrenado.
@@ -83,15 +83,15 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 - Riesgo de alucinación: no aplica en el sentido generativo, ya que el modelo no genera texto; el riesgo equivalente es producir clasificaciones sin fundamento predictivo por falta de entrenamiento.
 - No hay idiomas declarados, ni longitud de contexto publicada, ni dimensionalidad de entrada documentada en la información disponible. Es necesario consultar `config.json` en el repositorio para conocer estos valores antes de cualquier experimento.
 - La model card advierte que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio.
-- Requiere un adaptador explícito para funcionar con APIs de carga automática de HuggingFace; no es cargable directamente como un modelo estándar del Hub.
+- Requiere un adaptador explícito para funcionar con APIs de carga automática de Hugging Face; no es cargable directamente como un modelo estándar del Hub.
 - Licencia BSD-3-Clause, permisiva y compatible con uso comercial del código. No obstante, el propio autor recomienda revisar por separado los términos de los datos de origen cuando se use el repositorio con datasets externos.
 - No hay pipeline declarado, ni descargas relevantes (16 descargas, 0 likes en el momento de la consulta), ni historial de mantenimiento que permita inferir soporte a largo plazo.
 - El repositorio ocupa 0,0 GB y contiene un único checkpoint de inicialización; no debe confundirse con un release de modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/setorres5/classification
-- Perfil del autor en HuggingFace: https://huggingface.co/setorres5/models
+- Modelo en Hugging Face: https://huggingface.co/setorres5/classification
+- Perfil del autor en Hugging Face: https://huggingface.co/setorres5/models
 - Otro repositorio del mismo autor, `coca-classification`: https://huggingface.co/setorres5/coca-classification
 - Documentación general sobre clasificación en machine learning (IBM): https://www.ibm.com/think/topics/classification-machine-learning
 - Documentación general sobre modelos de clasificación (IBM): https://www.ibm.com/think/topics/classification-models

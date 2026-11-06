@@ -22,7 +22,7 @@ Adicionalmente, el nombre del modelo incluye las etiquetas "Heretic" y "Uncensor
 | Formato de pesos | GGUF (cuantización ROCmFPX); el repositorio declara además un recuento de parámetros asociado a safetensors |
 | Modelo base | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU |
 | Tamaño del repositorio | 14,6 GB |
-| Fecha de creacion en HuggingFace | 2026-09-19 (según metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-19 (según metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 | Etiquetas relevantes | gguf, rocm, rocmfpx, amd, llama.cpp, endpoints_compatible, conversational |
 
@@ -96,8 +96,8 @@ No se dispone de datos para comparar rendimiento con alternativas de tamaño sim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alst10/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- Modelo base en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Repositorio en Hugging Face: https://huggingface.co/alst10/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Modelo base en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Space de cuantización ROCmFPX utilizado: https://huggingface.co/spaces/alst10/ROCmFPX-my-repo
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

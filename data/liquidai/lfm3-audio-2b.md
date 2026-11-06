@@ -18,7 +18,7 @@ Su relevancia actual reside en la combinación de tres factores: tamaño reducid
 | Longitud de contexto | 32K tokens (entrada + salida) |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
 | Idiomas soportados | 18 idiomas / 19 locales: arabe, danes, aleman, griego, ingles britanico, ingles americano, finlandes, frances, hebreo, italiano, japones, coreano, neerlandes, polaco, portugues, espanol, sueco, turco, chino |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers, requiere `custom_code`) |
 | Entrada | Texto o audio; el codificador de audio opera a 16 kHz |
 | Salida | Texto, voz a 24 kHz, o texto y voz intercalados |
@@ -95,11 +95,11 @@ No se han encontrado en la información proporcionada resultados de benchmarks q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-Audio-2B
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Archivo de licencia: https://huggingface.co/LiquidAI/LFM3-Audio-2B/blob/main/LICENSE
 - Blog de release de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola / API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground de voz: https://playground.liquid.ai/talk
-- Colección LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3
 - Modelo de referencia de la familia (texto): https://huggingface.co/LiquidAI/LFM3-1.7B

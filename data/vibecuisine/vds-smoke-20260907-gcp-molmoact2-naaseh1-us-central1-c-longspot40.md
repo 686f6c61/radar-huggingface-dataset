@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VibeCuisine/vds-smoke-20260907-gcp-molmoact2-naaseh1-us-central1-c-longspot40 | 5.59B | No aplica | Agarre y colocacion de jarra | Apache-2.0 | HuggingFace |
-| VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40 | No disponible | No aplica | Tarea no especificada | Apache-2.0 | HuggingFace |
-| MolmoAct2 (Allen AI) | No disponible | No aplica | Modelo base VLA | Apache-2.0 | HuggingFace |
+| VibeCuisine/vds-smoke-20260907-gcp-molmoact2-naaseh1-us-central1-c-longspot40 | 5.59B | No aplica | Agarre y colocacion de jarra | Apache-2.0 | Hugging Face |
+| VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40 | No disponible | No aplica | Tarea no especificada | Apache-2.0 | Hugging Face |
+| MolmoAct2 (Allen AI) | No disponible | No aplica | Modelo base VLA | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-molmoact2-naaseh1-us-central1-c-longspot40
+- Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-molmoact2-naaseh1-us-central1-c-longspot40
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/naaseh1-bottle-holder-calib-090326
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Blog de MolmoAct2 (Ai2): https://allenai.org/blog/molmoact2

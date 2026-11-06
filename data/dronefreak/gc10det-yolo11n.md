@@ -6,7 +6,7 @@ gc10det-yolo11n es un detector de objetos YOLO11 en su variante nano, ajustado p
 
 El modelo no es un modelo de lenguaje ni un sistema multimodal: no genera texto, no soporta tool calling ni razonamiento multi-paso. Su relevancia es la de servir como punto de referencia (baseline) reproducible dentro de DetectionBench, un marco de trabajo que entrena y evalua distintos detectores modernos con recetas identicas sobre varios conjuntos de datos reales. Esto permite comparar arquitecturas de forma justa bajo el mismo protocolo de evaluacion.
 
-En el split de test de GC10-DET obtiene un mAP@50 de 70,44 %, un mAP@50-95 de 40,09 %, una precision de 78,93 % y un recall de 62,64 %. Estas cifras se declaran en la model card del autor y no estan verificadas de forma independiente. El repositorio de HuggingFace tenia 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+En el split de test de GC10-DET obtiene un mAP@50 de 70,44 %, un mAP@50-95 de 40,09 %, una precision de 78,93 % y un recall de 62,64 %. Estas cifras se declaran en la model card del autor y no estan verificadas de forma independiente. El repositorio de Hugging Face tenia 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -26,8 +26,8 @@ En el split de test de GC10-DET obtiene un mAP@50 de 70,44 %, un mAP@50-95 de 40
 | Conjunto de datos de entrenamiento | GC10-DET (`dronefreak/GC10-DET`) |
 | Numero de clases | 10 |
 | FLOPs | 6,6 GFLOPs a 640 px |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
-| Fecha de publicacion en HuggingFace | 2026-09-27 (segun metadatos del repositorio) |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
+| Fecha de publicacion en Hugging Face | 2026-09-27 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -118,7 +118,7 @@ Modelos de la misma categoria evaluados por el autor sobre el mismo conjunto de 
 
 | Modelo | Parametros | mAP@50 (%) | mAP@50-95 (%) | Precision (%) | Recall (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gc10det-yolo11n (este modelo) | 2,6 M | 70,44 | 40,09 | 78,93 | 62,64 | AGPL-3.0 | HuggingFace (dronefreak/gc10det-yolo11n) |
+| gc10det-yolo11n (este modelo) | 2,6 M | 70,44 | 40,09 | 78,93 | 62,64 | AGPL-3.0 | Hugging Face (dronefreak/gc10det-yolo11n) |
 | RF-DETR Small | No disponible | 76,07 | 42,51 | 87,86 | 65,03 | No disponible | No disponible en la informacion proporcionada |
 | RF-DETR Nano | No disponible | 70,17 | 38,06 | 77,08 | 71,04 | No disponible | No disponible en la informacion proporcionada |
 | YOLO26n | No disponible | 74,25 | 38,31 | 80,50 | 67,99 | No disponible | No disponible en la informacion proporcionada |
@@ -143,8 +143,8 @@ El modelo no lidera la comparativa en mAP@50; destaca, en cambio, en mAP@50-95, 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dronefreak/gc10det-yolo11n
-- Conjunto de datos GC10-DET en HuggingFace: https://huggingface.co/datasets/dronefreak/GC10-DET
+- Pagina del modelo en Hugging Face: https://huggingface.co/dronefreak/gc10det-yolo11n
+- Conjunto de datos GC10-DET en Hugging Face: https://huggingface.co/datasets/dronefreak/GC10-DET
 - Repositorio DetectionBench (codigo y evaluacion): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO11
 - Referencias arXiv incluidas en las etiquetas del repositorio: arXiv:2410.17725, arXiv:2511.09554, arXiv:2304.07193, arXiv:2606.03748 (el contenido concreto de cada una no se especifica en la informacion proporcionada)

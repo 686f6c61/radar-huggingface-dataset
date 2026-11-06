@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DJByunDJByun/apple-flux-lora es un repositorio publicado en HuggingFace por el usuario DJByunDJByun bajo licencia openrail. La model card asociada no contiene ninguna descripcion tecnica: se reduce al bloque de metadatos con la licencia, sin explicacion del modelo, del entrenamiento ni del uso previsto. No hay informacion verificable sobre el autor, el conjunto de datos, el procedimiento de entrenamiento ni las capacidades reales del artefacto.
+DJByunDJByun/apple-flux-lora es un repositorio publicado en Hugging Face por el usuario DJByunDJByun bajo licencia openrail. La model card asociada no contiene ninguna descripcion tecnica: se reduce al bloque de metadatos con la licencia, sin explicacion del modelo, del entrenamiento ni del uso previsto. No hay informacion verificable sobre el autor, el conjunto de datos, el procedimiento de entrenamiento ni las capacidades reales del artefacto.
 
 La denominacion "apple-flux-lora" sugiere, por convencion de nombres del ecosistema, un adaptador de bajo rango (LoRA) destinado a la familia de modelos de generacion de imagenes FLUX. Es una inferencia basada en el nombre del repositorio y no un dato confirmado por el autor. El tamano del repositorio, 0,2 GB, es coherente con un adaptador LoRA y no con un modelo de difusion completo, cuyo peso en precision de 16 bits se mide en decenas de gigabytes.
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye datos de parametros, reso
 
 | Modelo | Parametros | Contexto o resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| apple-flux-lora | no disponible | no disponible | openrail | HuggingFace |
+| apple-flux-lora | no disponible | no disponible | openrail | Hugging Face |
 | Adaptadores LoRA comparables para FLUX | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye datos de parametros, reso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJByunDJByun/apple-flux-lora
+- Repositorio en Hugging Face: https://huggingface.co/DJByunDJByun/apple-flux-lora
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos correspondian a definiciones de discos duros hibridos (HHD) y a directorios de empresas sin relacion con el modelo (HHD GesmbH, Interhome). No se dispone de paper, blog tecnico, repositorio de codigo ni demostracion asociados a este artefacto.

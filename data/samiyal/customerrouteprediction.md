@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Samiyal/customerrouteprediction` es un clasificador de texto publicado en HuggingFace por el usuario Samiyal. Su nombre sugiere que está orientado a la predicción de rutas de clientes, probablemente a partir de datos textuales como direcciones, descripciones de pedidos o historiales de entregas. El pipeline declarado es `text-classification`, lo que indica que se trata de un modelo de clasificación de secuencias, típicamente basado en arquitecturas transformer encoder como BERT o similares.
+El modelo `Samiyal/customerrouteprediction` es un clasificador de texto publicado en Hugging Face por el usuario Samiyal. Su nombre sugiere que está orientado a la predicción de rutas de clientes, probablemente a partir de datos textuales como direcciones, descripciones de pedidos o historiales de entregas. El pipeline declarado es `text-classification`, lo que indica que se trata de un modelo de clasificación de secuencias, típicamente basado en arquitecturas transformer encoder como BERT o similares.
 
 La información pública disponible es extremadamente limitada: la model card no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni benchmarks. El repositorio ocupa 1,6 GB, lo que sugiere un modelo de tamaño medio (posiblemente en el rango de cientos de millones a mil millones de parámetros), pero no se puede confirmar sin acceso a los archivos. La licencia es Apache 2.0, lo que permite uso comercial y modificación, y los idiomas declarados son inglés, hindi, polaco y ruso.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada: no disponible. Con un tamaño de repo de 1,6 GB, si el modelo tiene ~1B parámetros en fp32, se necesitarían al menos 4 GB de VRAM para inferencia en fp32, y menos con cuantización (por ejemplo, ~2 GB en int8). Sin embargo, esto es una estimación no confirmada.
 - GPU recomendadas: no disponible. Modelos de este tamaño pueden ejecutarse en GPUs consumer como RTX 3060 (12 GB) o superiores, pero no hay confirmación.
-- Opciones de despliegue: al ser un modelo de HuggingFace, es compatible con bibliotecas estándar como `transformers`, `vLLM`, `TGI` o `llama.cpp` (si se convierte a GGUF), pero no se ha verificado su compatibilidad.
+- Opciones de despliegue: al ser un modelo de Hugging Face, es compatible con bibliotecas estándar como `transformers`, `vLLM`, `TGI` o `llama.cpp` (si se convierte a GGUF), pero no se ha verificado su compatibilidad.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samiyal/customerrouteprediction
+- Hugging Face: https://huggingface.co/Samiyal/customerrouteprediction
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

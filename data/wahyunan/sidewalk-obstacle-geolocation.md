@@ -92,7 +92,7 @@ No se dispone de datos publicados que permitan una comparacion cuantitativa con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wahyunan/sidewalk-obstacle-geolocation
+- Modelo en Hugging Face: https://huggingface.co/wahyunan/sidewalk-obstacle-geolocation
 - Repositorio del pipeline en GitHub: https://github.com/wahyunanandika/sidewalk-obstacle-geolocation
 - Licencia Ultralytics (aplicable a los pesos YOLO): https://www.ultralytics.com/license
 - Licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html

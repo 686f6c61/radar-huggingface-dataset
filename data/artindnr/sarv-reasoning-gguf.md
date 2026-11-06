@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos en persa co
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/artindnr/sarv-reasoning-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/artindnr/sarv-reasoning
+- Repositorio GGUF en Hugging Face: https://huggingface.co/artindnr/sarv-reasoning-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/artindnr/sarv-reasoning
 - Cuantizaciones con imatrix (alternativa): https://huggingface.co/mradermacher/sarv-reasoning-i1-GGUF
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

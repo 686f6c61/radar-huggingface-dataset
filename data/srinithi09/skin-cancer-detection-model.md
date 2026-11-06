@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Srinithi09/skin-cancer-detection-model` es un artefacto publicado en HuggingFace por el usuario Srinithi09, presumiblemente orientado a la deteccion de cancer de piel a partir de imagenes dermatologicas. El nombre del repositorio sugiere una tarea de clasificacion de imagenes medicas, aunque la model card publicada no contiene ninguna descripcion tecnica, arquitectura, dataset de entrenamiento ni metricas de evaluacion.
+El modelo `Srinithi09/skin-cancer-detection-model` es un artefacto publicado en Hugging Face por el usuario Srinithi09, presumiblemente orientado a la deteccion de cancer de piel a partir de imagenes dermatologicas. El nombre del repositorio sugiere una tarea de clasificacion de imagenes medicas, aunque la model card publicada no contiene ninguna descripcion tecnica, arquitectura, dataset de entrenamiento ni metricas de evaluacion.
 
-El repositorio tiene un tamano de 0,1 GB, lo que es compatible con un modelo de vision de tamano pequeno o mediano (del orden de decenas de millones de parametros) o con un conjunto de pesos cuantizados, pero no permite inferir la arquitectura concreta. No se especifica el pipeline de HuggingFace, los idiomas soportados ni los formatos de pesos.
+El repositorio tiene un tamano de 0,1 GB, lo que es compatible con un modelo de vision de tamano pequeno o mediano (del orden de decenas de millones de parametros) o con un conjunto de pesos cuantizados, pero no permite inferir la arquitectura concreta. No se especifica el pipeline de Hugging Face, los idiomas soportados ni los formatos de pesos.
 
 La relevancia de este modelo es muy limitada en su estado actual: se trata de una publicacion sin documentacion, sin benchmarks, sin ejemplos de uso y con cero descargas y cero likes en el momento de la consulta. No debe considerarse un modelo listo para produccion ni para uso clinico sin una validacion externa exhaustiva.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento (numero de imagenes, proced
 - Triaje preliminar de imagenes dermatologicas: el modelo podria emplearse como filtro inicial para priorizar revisiones, siempre que se valide su sensibilidad y especificidad en el dominio objetivo. No hay datos que confirmen esta capacidad.
 - Investigacion academica en clasificacion de lesiones cutaneas: util como punto de partida para experimentos de fine-tuning o comparacion de arquitecturas, dado que el repositorio es pequeno y la licencia es permisiva.
 - Prototipado rapido de demos de vision medica: por su tamano reducido (0,1 GB), podria integrarse en entornos con recursos limitados para pruebas de concepto no clinicas.
-- Educacion y formacion: como ejemplo de publicacion de modelos en HuggingFace para ejercicios de despliegue o evaluacion.
+- Educacion y formacion: como ejemplo de publicacion de modelos en Hugging Face para ejercicios de despliegue o evaluacion.
 - Benchmarking interno de pipelines de inferencia: util para medir latencia y throughput en un modelo de vision de tamano pequeno.
 - Integracion en aplicaciones de telemedicina como componente auxiliar, unicamente tras una validacion clinica rigurosa y con supervision medica.
 
@@ -71,4 +71,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Srinithi09/skin-cancer-detection-model
+- Hugging Face: https://huggingface.co/Srinithi09/skin-cancer-detection-model

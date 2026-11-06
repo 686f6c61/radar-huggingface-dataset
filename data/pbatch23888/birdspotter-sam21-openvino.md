@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| facebook/sam2.1-hiera-large | checkpoint original en PyTorch (safetensors) | variable | Apache-2.0 con terminos de uso de Meta | HuggingFace |
-| birdspotter-sam21-openvino | OpenVINO IR (.xml + .bin) | fija 512 x 512 | Apache-2.0 (repositorio), sujeta a licencia upstream | HuggingFace |
+| facebook/sam2.1-hiera-large | checkpoint original en PyTorch (safetensors) | variable | Apache-2.0 con terminos de uso de Meta | Hugging Face |
+| birdspotter-sam21-openvino | OpenVINO IR (.xml + .bin) | fija 512 x 512 | Apache-2.0 (repositorio), sujeta a licencia upstream | Hugging Face |
 
 No se dispone de informacion suficiente para comparar parametros totales, contexto o rendimiento con otras alternativas de la misma categoria.
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar parametros totales, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PBatch23888/birdspotter-sam21-openvino
+- Hugging Face: https://huggingface.co/PBatch23888/birdspotter-sam21-openvino
 - Repositorio upstream: https://huggingface.co/facebook/sam2.1-hiera-large
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - OpenVINO Model Hub (Intel): https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html

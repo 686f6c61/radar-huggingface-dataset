@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CVCompressor/gen-k7` es un modelo de lenguaje publicado en HuggingFace por el usuario CVCompressor bajo licencia MIT, con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, por encima de la mayoría de modelos abiertos de uso común en GPU de consumo. El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se dispone de documentación oficial que lo confirme.
+`CVCompressor/gen-k7` es un modelo de lenguaje publicado en Hugging Face por el usuario CVCompressor bajo licencia MIT, con acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26 mil millones), lo que lo sitúa en la categoría de modelos de gran tamaño, por encima de la mayoría de modelos abiertos de uso común en GPU de consumo. El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se dispone de documentación oficial que lo confirme.
 
 La información pública disponible es muy limitada: no hay model card descriptiva, no se especifican idiomas soportados, no se detalla la longitud de contexto, no hay pipeline declarado y no se han publicado resultados de benchmarks. El modelo tiene únicamente 2 descargas y 0 likes en el momento de redactar esta ficha, lo que indica que es un artefacto reciente o de circulación muy restringida.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no hay datos sobre el número de tokens utilizados, l
 
 ## Casos de uso
 
-- Despliegue on-premise de un LLM de gran tamaño con licencia permisiva: el modelo puede servirse en infraestructura propia (clúster con GPUs A100/H100) para aplicaciones internas donde la licencia MIT elimina restricciones de uso comercial, siempre que se acepte la cláusula de acceso gated de HuggingFace.
+- Despliegue on-premise de un LLM de gran tamaño con licencia permisiva: el modelo puede servirse en infraestructura propia (clúster con GPUs A100/H100) para aplicaciones internas donde la licencia MIT elimina restricciones de uso comercial, siempre que se acepte la cláusula de acceso gated de Hugging Face.
 - Investigación sobre arquitecturas derivadas de Qwen 3.5: al estar etiquetado como `qwen3_5`, puede servir como punto de partida para estudiar variantes o fine-tunes de esa familia, comparando comportamiento con los modelos base oficiales.
 - Fine-tuning supervisado sobre dominios específicos: con 26B parámetros y pesos en safetensors, es viable aplicar LoRA o QLoRA sobre el modelo para adaptarlo a tareas verticales (legal, médico, financiero), asumiendo la necesidad de validar previamente su calidad base.
 - Generación de texto a gran escala en pipelines batch: para tareas de resumen, extracción o clasificación sobre grandes volúmenes de documentos, el modelo puede integrarse con frameworks como vLLM o TGI una vez confirmada su compatibilidad.
@@ -78,7 +78,7 @@ La comparativa se basa en el tamaño y la licencia; no se dispone de datos de re
 - Riesgo elevado de alucinación no caracterizado: sin benchmarks ni ejemplos, no se puede estimar la fiabilidad factual del modelo.
 - Sesgos desconocidos: al no documentarse la composición del dataset, no es posible anticipar sesgos de género, raza, idioma o dominio.
 - Idiomas no declarados: no se confirma soporte de castellano ni de otros idiomas; el rendimiento multilingüe es una incógnita.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; esto puede limitar la reproducibilidad y la automatización de descargas en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; esto puede limitar la reproducibilidad y la automatización de descargas en CI/CD.
 - Licencia MIT: permisiva para uso comercial, pero la licencia del modelo no exime de posibles restricciones derivadas de los datos de entrenamiento subyacentes, que no se documentan.
 - Falta de cuantizaciones oficiales: no hay GGUF, AWQ ni GPTQ publicados en el repo, lo que dificulta el despliegue en hardware de consumo.
 - Madurez muy baja: 2 descargas y 0 likes indican ausencia de validación comunitaria; no se recomienda su uso en producción sin una evaluación interna exhaustiva.
@@ -86,5 +86,5 @@ La comparativa se basa en el tamaño y la licencia; no se dispone de datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CVCompressor/gen-k7
+- Hugging Face: https://huggingface.co/CVCompressor/gen-k7
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

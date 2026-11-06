@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Lenguas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Manish2kh4/indictrans | Paquete de transliteración code-mix sobre IndicXlit (CTranslate2) | 22 índicas | other (MIT + BSD + CC BY-SA 4.0) | HuggingFace, repo de 0,2 GB |
+| Manish2kh4/indictrans | Paquete de transliteración code-mix sobre IndicXlit (CTranslate2) | 22 índicas | other (MIT + BSD + CC BY-SA 4.0) | Hugging Face, repo de 0,2 GB |
 | AI4Bharat IndicXlit | Modelo de transliteración en→indic | Lenguas índicas (según variante) | MIT | GitHub y pesos publicados por AI4Bharat |
 | Google Dakshina | Dataset de romanización | 12 lenguas índicas | CC BY-SA 4.0 | GitHub de Google Research |
 
@@ -84,7 +84,7 @@ La comparativa se limita a las fuentes citadas en la model card; no se dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manish2kh4/indictrans
+- Hugging Face: https://huggingface.co/Manish2kh4/indictrans
 - IndicXlit (AI4Bharat): https://github.com/AI4Bharat/IndicXlit
 - CMU Pronouncing Dictionary: https://github.com/cmusphinx/cmudict
 - wordfreq: https://github.com/rspeer/wordfreq

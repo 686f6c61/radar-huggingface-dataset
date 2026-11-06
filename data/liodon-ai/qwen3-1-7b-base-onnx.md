@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia entr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Qwen3-1.7B-Base-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Qwen3-1.7B-Base-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Sitio web de Liodon AI: https://liodon.ai/

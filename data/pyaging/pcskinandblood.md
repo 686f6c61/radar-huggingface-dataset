@@ -70,6 +70,6 @@ No se dispone de información suficiente en la ficha para realizar una comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/pcskinandblood
+- Modelo en Hugging Face: https://huggingface.co/pyaging/pcskinandblood
 - Publicación original (Nature Aging, 2022): https://doi.org/10.1038/s43587-022-00248-2
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-ioc-nn` es un clasificador de imágenes de muy pequeño tamaño publicado por el usuario `anagha2312` en HuggingFace, aparentemente como entrega de una práctica académica (el prefijo «SMAI A4» sugiere una asignatura y un enunciado de laboratorio). No es un modelo de lenguaje: se trata de un perceptrón multicapa (MLP) completamente conectado con arquitectura `[3072, 128, 10]`, es decir, una única capa oculta de 128 neuronas con activación ELU que recibe la imagen CIFAR-10 aplanada (32×32×3 = 3072 valores) y emite 10 logits, uno por clase.
+`smai-a4-cifar10-ioc-nn` es un clasificador de imágenes de muy pequeño tamaño publicado por el usuario `anagha2312` en Hugging Face, aparentemente como entrega de una práctica académica (el prefijo «SMAI A4» sugiere una asignatura y un enunciado de laboratorio). No es un modelo de lenguaje: se trata de un perceptrón multicapa (MLP) completamente conectado con arquitectura `[3072, 128, 10]`, es decir, una única capa oculta de 128 neuronas con activación ELU que recibe la imagen CIFAR-10 aplanada (32×32×3 = 3072 valores) y emite 10 logits, uno por clase.
 
 El modelo resuelve una tarea elemental de clasificación de imágenes de baja resolución sobre el conjunto CIFAR-10. Su único resultado declarado es una precisión de test de 0,4745 (47,45 %), muy por debajo de lo que alcanzan arquitecturas convolucionales, lo que lo sitúa como una referencia didáctica y no como una solución de producción. El preprocesado es parte del artefacto: cada imagen se aplana, se divide entre 255 y se estandariza por columna con la media y la desviación típica calculadas sobre la partición de entrenamiento de CIFAR-10 (`preprocessing.npz`).
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `anagha2312/smai-a4-cifar10-ioc-nn` | 394.634 | Imagen 32×32×3 aplanada a 3072 | 0,4745 | No disponible | HuggingFace, 0 descargas |
+| `anagha2312/smai-a4-cifar10-ioc-nn` | 394.634 | Imagen 32×32×3 aplanada a 3072 | 0,4745 | No disponible | Hugging Face, 0 descargas |
 | Alternativas convolucionales para CIFAR-10 (ResNet, VGG, etc.) | No disponible en la informacion proporcionada | Imagen 32×32×3 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No verificado |
 | Otros MLP academicos sobre CIFAR-10 | No disponible en la informacion proporcionada | Imagen 32×32×3 aplanada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No verificado |
 
@@ -88,5 +88,5 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anagha2312/smai-a4-cifar10-ioc-nn
+- Hugging Face: https://huggingface.co/anagha2312/smai-a4-cifar10-ioc-nn
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardan relacion con el artefacto y se han descartado.

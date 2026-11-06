@@ -6,7 +6,7 @@
 
 No se trata de un modelo de lenguaje: es un modelo de visión por computador orientado a segmentación densa (predicción de máscaras por píxel), por lo que no genera texto ni soporta tool calling, agentes o razonamiento multi-step. Su relevancia radica en que distribuye pesos entrenados para detección y localización de defectos o anomalías, un caso de uso habitual en inspección visual automatizada en entornos industriales.
 
-La información disponible es escasa: el repositorio ocupa 7,8 GB, contiene 5 ficheros (9,65 GiB según la model card) e incluye un `index.json` con tamaños y hashes sha256, además de los manifiestos de ejecución y el `config.yaml` de Detectron2 de cada carpeta. No se publican métricas, idiomas ni pipeline en HuggingFace.
+La información disponible es escasa: el repositorio ocupa 7,8 GB, contiene 5 ficheros (9,65 GiB según la model card) e incluye un `index.json` con tamaños y hashes sha256, además de los manifiestos de ejecución y el `config.yaml` de Detectron2 de cada carpeta. No se publican métricas, idiomas ni pipeline en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `danielbogdoll/iad-weights-m2f-train` | Mask2Former + Swin-L | no disponible | no aplica | MIT | HuggingFace (repo de pesos) |
+| `danielbogdoll/iad-weights-m2f-train` | Mask2Former + Swin-L | no disponible | no aplica | MIT | Hugging Face (repo de pesos) |
 | CS&MV Swin-L Mask2Former (modelo base) | Mask2Former + Swin-L | no disponible | no aplica | no disponible | Referenciado en la model card |
 | Mask2Former original (Meta) | Mask2Former | no disponible | no aplica | no disponible | Repositorio oficial de Meta |
 | Otros segmentadores de anomalías (p. ej. PatchCore, PaDiM) | Basados en características o memoria | no disponible | no aplica | no disponible | Repositorios de investigación |
@@ -76,11 +76,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Riesgo de alucinación: en segmentación se traduce en falsos positivos (máscaras sobre regiones normales) o falsos negativos (anomalías no detectadas); no hay métricas publicadas para cuantificarlo.
 - Limitaciones de contexto o idioma: no aplica contexto textual; no se especifican idiomas ni dominios de imagen soportados.
 - Restricciones de licencia: licencia MIT, que permite uso comercial y modificación siempre que se incluya el aviso de copyright y la licencia; conviene verificar las licencias del modelo base CS&MV y del código de investigación asociado.
-- Caveats para producción: el repo contiene checkpoints de entrenamiento (4 checkpoints) sin pipeline de inferencia documentado en HuggingFace; es necesario restaurar el código de investigación y el `config.yaml` de Detectron2. No hay métricas de validación publicadas, por lo que se recomienda evaluar el modelo en el dominio objetivo antes de desplegarlo.
+- Caveats para producción: el repo contiene checkpoints de entrenamiento (4 checkpoints) sin pipeline de inferencia documentado en Hugging Face; es necesario restaurar el código de investigación y el `config.yaml` de Detectron2. No hay métricas de validación publicadas, por lo que se recomienda evaluar el modelo en el dominio objetivo antes de desplegarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielbogdoll/iad-weights-m2f-train
+- Hugging Face: https://huggingface.co/danielbogdoll/iad-weights-m2f-train
 - Modelo base CS&MV Swin-L Mask2Former: no disponible (referenciado en la model card sin enlace)
 - Código de investigación y script de restauración (`scripts/ops/backup_weights.py`): no disponible (no se proporciona URL)
 - Paper de Mask2Former: no disponible en la información proporcionada

@@ -57,5 +57,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- [HuggingFace - Bodya73/NervGPT-1.6-Coder-3B](https://huggingface.co/Bodya73/NervGPT-1.6-Coder-3B)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Bodya73)
+- [Hugging Face - Bodya73/NervGPT-1.6-Coder-3B](https://huggingface.co/Bodya73/NervGPT-1.6-Coder-3B)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Bodya73)

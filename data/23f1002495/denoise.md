@@ -65,9 +65,9 @@ No se han publicado benchmarks que permitan comparar el rendimiento de DenoiseSR
 
 | Modelo | Parámetros | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|
-| DenoiseSR4x | no disponible | MIT | PyTorch .pt | HuggingFace |
-| Real-ESRGAN | ~16.7 M | BSD-3-Clause | PyTorch, ONNX | GitHub, HuggingFace |
-| SwinIR | ~11.8 M | Apache-2.0 | PyTorch | GitHub, HuggingFace |
+| DenoiseSR4x | no disponible | MIT | PyTorch .pt | Hugging Face |
+| Real-ESRGAN | ~16.7 M | BSD-3-Clause | PyTorch, ONNX | GitHub, Hugging Face |
+| SwinIR | ~11.8 M | Apache-2.0 | PyTorch | GitHub, Hugging Face |
 | ESRGAN | ~16.7 M | Apache-2.0 | PyTorch | GitHub |
 
 Nota: los datos de parámetros y licencias de los modelos comparados son de conocimiento público, pero no se dispone de resultados de rendimiento de DenoiseSR4x.
@@ -84,7 +84,7 @@ Nota: los datos de parámetros y licencias de los modelos comparados son de cono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/23f1002495/Denoise
+- Hugging Face: https://huggingface.co/23f1002495/Denoise
 - OpenModelDB (base de datos de modelos de upscaling): https://openmodeldb.info/?t=denoise
 
 No se han encontrado papers, blogs o demos adicionales.

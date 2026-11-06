@@ -29,7 +29,7 @@ La conversion a EXL3 se realizo con ExLlamaV3 1.6.6 (commit `bd1f519172406a9560b
 
 ## Capacidades
 
-- Generacion de texto: el modelo base esta etiquetado como `text-generation` en HuggingFace.
+- Generacion de texto: el modelo base esta etiquetado como `text-generation` en Hugging Face.
 - Razonamiento y codigo: no confirmado en la informacion disponible para el modelo base.
 - Matematicas: no confirmado en la informacion disponible.
 - Vision: no disponible (el pipeline es exclusivamente de texto).
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0xzknw/LFM3-1.7B-EXL3 | 1.700 M (base) | no disponible | EXL3 4/8 bpw | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B (base) | 1.700 M | no disponible | BF16 original | LFM Open License v1.0 | HuggingFace (oficial) |
+| 0xzknw/LFM3-1.7B-EXL3 | 1.700 M (base) | no disponible | EXL3 4/8 bpw | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B (base) | 1.700 M | no disponible | BF16 original | LFM Open License v1.0 | Hugging Face (oficial) |
 | Otras cuantizaciones de LFM3-1.7B | 1.700 M | no disponible | no disponible | segun autor | no disponible en la informacion consultada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, ya que la cuantizacion EXL3 no ha sido validada numericamente por el autor.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, ya que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xzknw/LFM3-1.7B-EXL3
+- Hugging Face: https://huggingface.co/0xzknw/LFM3-1.7B-EXL3
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante 4 bpw: https://huggingface.co/0xzknw/LFM3-1.7B-EXL3/tree/main/4bpw
 - Variante 8 bpw: https://huggingface.co/0xzknw/LFM3-1.7B-EXL3/tree/main/8bpw

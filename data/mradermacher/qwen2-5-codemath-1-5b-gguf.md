@@ -81,6 +81,6 @@ La comparativa se basa en características generales, ya que no hay benchmarks p
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Qwen2.5-CodeMath-1.5B-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Qwen2.5-CodeMath-1.5B-GGUF)
 - [Modelo base: thlurte/Qwen2.5-CodeMath-1.5B-DARE-TIES](https://huggingface.co/thlurte/Qwen2.5-CodeMath-1.5B-DARE-TIES)
 - [Guía de uso de archivos GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF) (referencia general)

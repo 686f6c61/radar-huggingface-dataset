@@ -84,7 +84,7 @@ La diferencia principal frente a los originales de IDKiro es el empaquetado: est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/psychocrackpot/sdxs-512-dreamshaper-sketch-onnx-webgpu
+- Repositorio Hugging Face: https://huggingface.co/psychocrackpot/sdxs-512-dreamshaper-sketch-onnx-webgpu
 - Modelo base con ControlNet de bocetos: https://huggingface.co/IDKiro/sdxs-512-dreamshaper-sketch
 - Modelo base texto-a-imagen: https://huggingface.co/IDKiro/sdxs-512-dreamshaper
 - Repositorio ONNX para WebGPU con codificador de texto y decodificador TAESD: https://huggingface.co/skillsafeai/sdxs-512-dreamshaper-onnx-webgpu

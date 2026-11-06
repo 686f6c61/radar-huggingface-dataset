@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPO-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario JOSEFSUSON en HuggingFace y su propósito es resolver la tarea de aterrizaje lunar: controlar un módulo de descenso para posarse suavemente entre dos banderas, gestionando empuje, orientación y consumo de combustible. No es un modelo de lenguaje ni un transformer generativo; es una política neuronal entrenada mediante RL clásico.
+PPO-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario JOSEFSUSON en Hugging Face y su propósito es resolver la tarea de aterrizaje lunar: controlar un módulo de descenso para posarse suavemente entre dos banderas, gestionando empuje, orientación y consumo de combustible. No es un modelo de lenguaje ni un transformer generativo; es una política neuronal entrenada mediante RL clásico.
 
 El modelo se distribuye empaquetado con la librería stable-baselines3, lo que permite cargarlo directamente con las utilidades de esa librería y evaluarlo contra el entorno estándar. Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo reproducible de un agente PPO que alcanza una recompensa media declarada de 280 en LunarLander-v3, un resultado que el autor califica como "Top Elite Performance" en su model card.
 
@@ -49,7 +49,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, la arq
 - Demostraciones de política aprendida: permite mostrar en un vídeo o notebook cómo un agente entrenado aterriza el módulo y qué recompensa obtiene.
 - Pruebas de integración con wrappers de Gymnasium: sirve para comprobar el comportamiento de wrappers de observación o recompensa sobre una política ya entrenada.
 - Referencia para comparativas de algoritmos: al ser un agente PPO con recompensa declarada de 280, puede usarse como punto de comparación frente a otros algoritmos (A2C, DQN) en el mismo entorno.
-- Material de ejemplo en tutoriales de RL: adecuado para publicaciones que muestren cómo cargar un modelo de HuggingFace con stable-baselines3 y evaluarlo.
+- Material de ejemplo en tutoriales de RL: adecuado para publicaciones que muestren cómo cargar un modelo de Hugging Face con stable-baselines3 y evaluarlo.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PPO-LunarLander-v3 (JOSEFSUSON) | PPO | LunarLander-v3 | 280.00 (declarada, no verificada) | no disponible | HuggingFace |
+| PPO-LunarLander-v3 (JOSEFSUSON) | PPO | LunarLander-v3 | 280.00 (declarada, no verificada) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada. Como referencia genérica, los agentes PPO de stable-baselines3 en LunarLander-v3 suelen rondar recompensas medias en el rango de 200-300 tras entrenamiento suficiente, pero no se aportan datos verificados de alternativas concretas.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOSEFSUSON/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/JOSEFSUSON/ppo-LunarLander-v3
 - Documentación de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO (Schulman et al.): https://arxiv.org/abs/1707.06347

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ElekidYJ es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia cc-by-4.0. En el momento de la consulta, la model card no contiene más información que la declaración de licencia: no se documenta la arquitectura, el tamaño, el contexto, los idiomas soportados ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0,1 GB, un dato que por sí solo no permite determinar el número de parámetros ni el tipo de pesos, ya que ese volumen es compatible tanto con un modelo pequeño en precisión completa como con una versión cuantizada de un modelo mayor.
+ElekidYJ es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia cc-by-4.0. En el momento de la consulta, la model card no contiene más información que la declaración de licencia: no se documenta la arquitectura, el tamaño, el contexto, los idiomas soportados ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0,1 GB, un dato que por sí solo no permite determinar el número de parámetros ni el tipo de pesos, ya que ese volumen es compatible tanto con un modelo pequeño en precisión completa como con una versión cuantizada de un modelo mayor.
 
 El modelo acumula 0 descargas y 0 likes, y su ficha técnica no incluye pipeline declarado. Se trata, por tanto, de un artefacto sin validación comunitaria ni documentación técnica publicada.
 
@@ -86,7 +86,7 @@ No se puede establecer una comparativa fiable: no se conocen los parámetros, el
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/ElekidYJ | no disponible | no disponible | no disponible | cc-by-4.0 | pública en HuggingFace |
+| Ryanham1lton/ElekidYJ | no disponible | no disponible | no disponible | cc-by-4.0 | pública en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se puede establecer una comparativa fiable: no se conocen los parámetros, el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/ElekidYJ
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/ElekidYJ
 - Paper: no disponible.
 - Blog o documentación del autor: no disponible.
 - Repositorio de código: no disponible.

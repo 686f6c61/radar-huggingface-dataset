@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Nano-Base-Pre-Anneal es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Arcee AI y publicado en HuggingFace por CollectionStudio. Pertenece a la familia Trinity, una serie de modelos de pesos abiertos orientados a entornos empresariales y a entusiastas técnicos. Este checkpoint concreto es la versión base "pre-anneal", es decir, el punto de entrenamiento capturado antes de iniciar el decaimiento de la tasa de aprendizaje sobre una mezcla de datos de alta calidad.
+Trinity-Nano-Base-Pre-Anneal es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Arcee AI y publicado en Hugging Face por CollectionStudio. Pertenece a la familia Trinity, una serie de modelos de pesos abiertos orientados a entornos empresariales y a entusiastas técnicos. Este checkpoint concreto es la versión base "pre-anneal", es decir, el punto de entrenamiento capturado antes de iniciar el decaimiento de la tasa de aprendizaje sobre una mezcla de datos de alta calidad.
 
 El modelo tiene aproximadamente 6.120 millones de parámetros totales, de los cuales solo 1.000 millones son activos por token, gracias a una arquitectura MoE con 128 expertos, de los que se activan 8 más 1 compartido. Ha sido preentrenado sobre 8,8 billones de tokens (8.8T) en colaboración con Datology, aprovechando el dataset del modelo AFM-4.5B y añadiendo contenido adicional de matemáticas y código. El entrenamiento se realizó en un clúster de 512 GPUs H200 mediante Prime Intellect, usando paralelismo HSDP.
 

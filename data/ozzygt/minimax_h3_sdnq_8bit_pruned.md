@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros (transformer) | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 (original) | 33B (69B total) | bf16 | Vídeo hasta 15 s a 2K | minimax-h3-community-license-agreement | HuggingFace (498 GB) |
-| MiniMax_H3_sdnq_8bit_pruned (este) | 20B (podado) | INT8 | Igual que el original | minimax-h3-community-license-agreement | HuggingFace (46 GB) |
-| MiniMax_H3_sdnq_4bit_pruned | 20B (podado) | INT4 | Igual que el original | minimax-h3-community-license-agreement | HuggingFace (tamaño menor) |
+| MiniMax-H3 (original) | 33B (69B total) | bf16 | Vídeo hasta 15 s a 2K | minimax-h3-community-license-agreement | Hugging Face (498 GB) |
+| MiniMax_H3_sdnq_8bit_pruned (este) | 20B (podado) | INT8 | Igual que el original | minimax-h3-community-license-agreement | Hugging Face (46 GB) |
+| MiniMax_H3_sdnq_4bit_pruned | 20B (podado) | INT4 | Igual que el original | minimax-h3-community-license-agreement | Hugging Face (tamaño menor) |
 
 La versión INT8 ofrece un equilibrio entre calidad y requisitos de hardware, mientras que la INT4 reduce aún más el tamaño a costa de una posible pérdida de fidelidad. El modelo original en bf16 es la referencia de calidad, pero es inviable para la mayoría de entornos de producción. No se dispone de comparativas con otros modelos de generación de vídeo (como Sora, Runway o Pika) en la información proporcionada.
 
@@ -77,7 +77,7 @@ La versión INT8 ofrece un equilibrio entre calidad y requisitos de hardware, mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_8bit_pruned
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_8bit_pruned
 - Repositorio del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio complementario (componentes): https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_dynamic_8bit
 - Versión INT4: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_4bit_pruned

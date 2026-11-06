@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rootformer v16 Sovereign Transmute es un modelo de lenguaje publicado por el usuario "enver" en HuggingFace el 28 de septiembre de 2026. Se trata de un transformer de 24 capas y 399.371.824 parámetros (aproximadamente 399 millones), distribuido exclusivamente en formato safetensors y con código personalizado (`custom_code`), lo que obliga a cargarlo con `trust_remote_code=True`. El modelo se presenta como una realización neuronal del aparato gramatical y morfológico de la escuela de Basora, con atención denominada `IshtiqaqAttentionV12` y una "capa 14" descrita como estrato morfológico.
+Rootformer v16 Sovereign Transmute es un modelo de lenguaje publicado por el usuario "enver" en Hugging Face el 28 de septiembre de 2026. Se trata de un transformer de 24 capas y 399.371.824 parámetros (aproximadamente 399 millones), distribuido exclusivamente en formato safetensors y con código personalizado (`custom_code`), lo que obliga a cargarlo con `trust_remote_code=True`. El modelo se presenta como una realización neuronal del aparato gramatical y morfológico de la escuela de Basora, con atención denominada `IshtiqaqAttentionV12` y una "capa 14" descrita como estrato morfológico.
 
 Según la model card, el entrenamiento no se apoyó en heurísticas simbólicas de Python, sino que se realizó directamente sobre un corpus digitalizado de fuentes clásicas árabes atribuidas a Al-Khalīl ibn Aḥmad, Sībawayh, Ibn Fāris, Ibn Durayd, Ibn Jinnī, Al-Mubarrad, Al-Akhfash, Al-Ghazālī y Al-Rāghib, entre otros. El autor cifra el corpus en 232.405 secuencias (226.405 de entrenamiento y 6.000 de validación) y una ejecución continua de 10,61 minutos sobre una GPU NVIDIA RTX PRO 4500 Blackwell de 32 GB de VRAM.
 
@@ -82,10 +82,10 @@ Estas cifras no son comparables con benchmarks públicos ni permiten situar el m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rootformer-v16-sovereign-transmute | 399.371.824 | no disponible | no disponible | HuggingFace, código personalizado |
-| Qwen2.5-0.5B | ~494 millones | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente integrado |
-| SmolLM2-360M | ~362 millones | 8.192 tokens | Apache-2.0 | HuggingFace, integrado en ecosistemas habituales |
-| Pythia-410M | ~405 millones | 2.048 tokens | Apache-2.0 | HuggingFace, referencia académica |
+| rootformer-v16-sovereign-transmute | 399.371.824 | no disponible | no disponible | Hugging Face, código personalizado |
+| Qwen2.5-0.5B | ~494 millones | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente integrado |
+| SmolLM2-360M | ~362 millones | 8.192 tokens | Apache-2.0 | Hugging Face, integrado en ecosistemas habituales |
+| Pythia-410M | ~405 millones | 2.048 tokens | Apache-2.0 | Hugging Face, referencia académica |
 
 La comparación es únicamente estructural: no existen datos de benchmarks del modelo analizado que permitan contrastar su rendimiento con estas alternativas, y su licencia y soporte de despliegue son indeterminados frente a los de los modelos citados.
 
@@ -104,5 +104,5 @@ La comparación es únicamente estructural: no existen datos de benchmarks del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/rootformer-v16-sovereign-transmute
+- Modelo en Hugging Face: https://huggingface.co/enver/rootformer-v16-sovereign-transmute
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo (solo páginas genéricas de Google), por lo que no se dispone de paper, blog, repositorio adicional ni demo.

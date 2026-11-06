@@ -73,7 +73,7 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: [q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint](https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint)
+- Repositorio Hugging Face: [q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint](https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint)
 - Paper de GRPO (DeepSeekMath): [arXiv:2402.03300](https://huggingface.co/papers/2402.03300)
 - Repositorio de TRL: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)
 - Modelo base: [OpenGVLab/InternVL3_5-8B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF)

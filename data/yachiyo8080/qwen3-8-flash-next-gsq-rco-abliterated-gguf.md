@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de parámetros activos para establecer u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yachiyo8080/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/yachiyo8080/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Release abliterated referenciada: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - README en chino: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md

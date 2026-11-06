@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ruizeliu/work-generation` es un prototipo de investigación publicado en HuggingFace por el usuario Ruizeliu bajo el identificador de arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientado a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. La model card indica que no se reclama ninguna puntuación de benchmark y que el artefacto principal es el script `inference.py`, no los pesos.
+`Ruizeliu/work-generation` es un prototipo de investigación publicado en Hugging Face por el usuario Ruizeliu bajo el identificador de arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientado a tareas de generación. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado. La model card indica que no se reclama ninguna puntuación de benchmark y que el artefacto principal es el script `inference.py`, no los pesos.
 
 El modelo se enmarca en la familia BLIP, una arquitectura multimodal diseñada originalmente para tareas visión-lenguaje como captioning o VQA, con mecanismos de atención dispersa y fusión mediante co-atención. La configuración declarada es de escala "small", con activación swish, normalización groupnorm y receta de entrenamiento por defecto basada en RMSprop con scheduler OneCycle. No se especifican dimensiones de contexto, número de capas ni vocabulario.
 
@@ -81,7 +81,7 @@ La comparación es estructural: el repositorio de Ruizeliu comparte nombre de ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruizeliu/work-generation
+- Hugging Face: https://huggingface.co/Ruizeliu/work-generation
 - Paper original de BLIP: https://arxiv.org/abs/2201.12086
 - Repositorio oficial de BLIP (Salesforce): https://github.com/salesforce/BLIP
 - Paper de BLIP-2: https://arxiv.org/abs/2301.12597

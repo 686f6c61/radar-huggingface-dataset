@@ -102,6 +102,6 @@ No se dispone en la informacion proporcionada de otros modelos comparables de ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doubixz/primitive-operation-painter-2-1b
+- Modelo en Hugging Face: https://huggingface.co/doubixz/primitive-operation-painter-2-1b
 - Proyecto de codigo: https://github.com/wonderfulearth/primitive-operation-painter
 - Version anterior POP 1: https://huggingface.co/doubixz/primitive-operation-painter-weight

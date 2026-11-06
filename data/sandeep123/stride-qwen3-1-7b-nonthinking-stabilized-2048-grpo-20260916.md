@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento no es posible: el autor no publica be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-grpo-20260916
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-grpo-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

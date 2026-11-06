@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hannahsmi4316/contrastive-fast53` es un prototipo de investigación publicado en HuggingFace por el usuario `hannahsmi4316`, que se presenta explícitamente como un *Mixer* orientado a tareas *contrastive* (aprendizaje contrastivo). El repositorio es un andamiaje experimental: incluye `run.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que el propio autor describe como **checkpoint de inicialización válido para pruebas de humo, no como checkpoint entrenado ni evaluado**. No se reclama ninguna métrica de benchmark en la model card.
+`hannahsmi4316/contrastive-fast53` es un prototipo de investigación publicado en Hugging Face por el usuario `hannahsmi4316`, que se presenta explícitamente como un *Mixer* orientado a tareas *contrastive* (aprendizaje contrastivo). El repositorio es un andamiaje experimental: incluye `run.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que el propio autor describe como **checkpoint de inicialización válido para pruebas de humo, no como checkpoint entrenado ni evaluado**. No se reclama ninguna métrica de benchmark en la model card.
 
 El dato verificable más relevante es el tamaño: 49.600 parámetros totales según el peso en safetensors. Es, por tanto, un modelo de escala experimental (muy por debajo de cualquier modelo útil en producción), con una arquitectura tipo Mixer que combina atención dispersa (*sparse*), fusión de bajo rango, activación *mish* y normalización *instancenorm*, según la tabla de arquitectura de la model card. La configuración por defecto usa el optimizador Lion con un esquema de calentamiento lineal.
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye ningún modelo comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| contrastive-fast53 (este modelo) | 49.600 | no disponible | apache-2.0 | HuggingFace, 0 descargas | si (peso safetensors) |
+| contrastive-fast53 (este modelo) | 49.600 | no disponible | apache-2.0 | Hugging Face, 0 descargas | si (peso safetensors) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,13 +79,13 @@ No disponible. La informacion proporcionada no incluye ningún modelo comparable
 - **Sin datos de entrenamiento ni de idioma**: no se documentan tokens, composición del dataset, idiomas soportados ni licencias de los datos fuente.
 - **Alucinación**: no evaluable, ya que el modelo no ha sido entrenado para generar texto. No puede caracterizarse su tasa de alucinación.
 - **Riesgo de mala interpretación de la escala**: la etiqueta "large" de la configuración no guarda relación con los 49.600 parámetros reales; conviene no citarla como indicador de tamaño.
-- **Carga no estándar**: las APIs automáticas de HuggingFace no pueden cargar el modelo sin un adaptador explícito, lo que complica su integración en *pipelines* existentes.
+- **Carga no estándar**: las APIs automáticas de Hugging Face no pueden cargar el modelo sin un adaptador explícito, lo que complica su integración en *pipelines* existentes.
 - **Restricciones de licencia**: el código y los pesos se publican bajo apache-2.0, que permite uso comercial. Sin embargo, la propia model card advierte de que deben revisarse por separado los términos de los datos fuente si el repositorio se usa con datasets externos; esa revisión queda en manos de quien reutilice el proyecto.
 - **Sin mantenimiento aparente**: 0 descargas, 0 *likes* y sin métricas publicadas, lo que reduce la probabilidad de soporte, actualizaciones o validación por parte de la comunidad.
 - **Caveat de producción**: no debe desplegarse en ningún sistema orientado a usuarios. Su uso razonable se limita a investigación y docencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hannahsmi4316/contrastive-fast53
+- Hugging Face: https://huggingface.co/hannahsmi4316/contrastive-fast53
 
 La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos correspondían a páginas genéricas de YouTube, sin relación con el repositorio. Por tanto, no hay papers, blogs, repositorios auxiliares ni demos que enlazar.

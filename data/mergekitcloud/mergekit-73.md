@@ -81,7 +81,7 @@ Sin embargo, esta comparación es solo estructural, no de rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MergekitCloud/mergekit-73
+- Hugging Face: https://huggingface.co/MergekitCloud/mergekit-73
 - Modelos base:
   - ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3: https://huggingface.co/ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3
   - Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2: https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2

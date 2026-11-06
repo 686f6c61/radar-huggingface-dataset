@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-06B-3MPER0RR-abliterated-Q8_0-GGUF (este) | 0,6 B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B (oficial) | 0,6 B | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,24 B | No disponible en esta ficha | Llama 3.2 Community License | HuggingFace, Meta |
-| Gemma-3-1B | 1 B | No disponible en esta ficha | Gemma Terms of Use | HuggingFace, Google |
+| Qwen3-06B-3MPER0RR-abliterated-Q8_0-GGUF (este) | 0,6 B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B (oficial) | 0,6 B | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,24 B | No disponible en esta ficha | Llama 3.2 Community License | Hugging Face, Meta |
+| Gemma-3-1B | 1 B | No disponible en esta ficha | Gemma Terms of Use | Hugging Face, Google |
 
 Nota: los datos de contexto y rendimiento de los modelos comparados no se han contrastado con fuentes en esta busqueda, por lo que se marcan como no disponibles para evitar afirmaciones no verificadas. La diferencia principal de este modelo frente a los oficiales es la abliteracion y el empaquetado GGUF Q8_0.
 
@@ -83,7 +83,7 @@ Nota: los datos de contexto y rendimiento de los modelos comparados no se han co
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated-Q8_0-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated-Q8_0-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated
 - Perfil del autor: https://huggingface.co/3MPER0RR
 - Familia Qwen3 (referencia del modelo base subyacente): no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mddeam91/Persona` es un modelo publicado en HuggingFace por el usuario `mddeam91` bajo licencia Apache-2.0. Según la información disponible, el modelo fue creado el 6 de septiembre de 2026 y no presenta descargas, me gusta ni documentación técnica en su model card. El README únicamente indica la licencia, sin descripción de arquitectura, parámetros, contexto o capacidades.
+El modelo `mddeam91/Persona` es un modelo publicado en Hugging Face por el usuario `mddeam91` bajo licencia Apache-2.0. Según la información disponible, el modelo fue creado el 6 de septiembre de 2026 y no presenta descargas, me gusta ni documentación técnica en su model card. El README únicamente indica la licencia, sin descripción de arquitectura, parámetros, contexto o capacidades.
 
 Debido a la ausencia de datos técnicos, no es posible determinar qué problema resuelve ni por qué sería relevante en el estado actual del ecosistema de modelos abiertos. La ficha que se presenta a continuación refleja de forma explícita la falta de información disponible y no debe interpretarse como una evaluación funcional del modelo.
 
@@ -52,4 +52,4 @@ No disponible. Sin especificaciones técnicas no es posible realizar una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mddeam91/Persona
+- Hugging Face: https://huggingface.co/mddeam91/Persona

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cherty12/jack` es un repositorio alojado en HuggingFace por el usuario `cherty12`, creado el 26 de agosto de 2026. En el momento de la consulta, el repositorio no contiene informacion publicada sobre arquitectura, parametros, licencia, idiomas o pipeline de uso. Con cero descargas y una unica valoracion, se trata de un repositorio practicamente sin actividad ni documentacion publica.
+El modelo `cherty12/jack` es un repositorio alojado en Hugging Face por el usuario `cherty12`, creado el 26 de agosto de 2026. En el momento de la consulta, el repositorio no contiene informacion publicada sobre arquitectura, parametros, licencia, idiomas o pipeline de uso. Con cero descargas y una unica valoracion, se trata de un repositorio practicamente sin actividad ni documentacion publica.
 
 La unica etiqueta disponible, `region:us`, sugiere una orientacion geografica, pero no aporta informacion tecnica sobre el modelo. No se ha publicado ninguna ficha de modelo, archivo de configuracion, pesos o documentacion que permita determinar su naturaleza, finalidad o capacidades. Cualquier evaluacion tecnica seria especulativa y no se realizara en esta ficha.
 
@@ -53,6 +53,6 @@ No disponible. Al no existir informacion publicada sobre el modelo, no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cherty12/jack
+- Repositorio Hugging Face: https://huggingface.co/cherty12/jack
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

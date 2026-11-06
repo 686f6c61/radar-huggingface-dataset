@@ -70,7 +70,7 @@ Existen otras conversiones del mismo modelo base, como mlx-community/LFM2-700M-8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/LFM2-700M-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/LFM2-700M-mlx-8Bit
 - Modelo base (LiquidAI/LFM2-700M): https://huggingface.co/LiquidAI/LFM2-700M
 - Conversión alternativa de mlx-community: https://huggingface.co/mlx-community/LFM2-700M-8bit
 - Conversión alternativa de lmstudio-community: https://huggingface.co/lmstudio-community/LFM2-700M-MLX-8bit

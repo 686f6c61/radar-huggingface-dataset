@@ -80,7 +80,7 @@ Comparacion emparejada frente a SFT v1 con intervalo de confianza del 95 % por b
 
 | Modelo | Parametros | Contexto | Precision (MATH niveles 1-3) | Persona | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (Sherlock RLVR v1) | 3,09B (base) + LoRA r=16 | No especificado en la model card; 32.768 tokens en el base | 61,5 % | 5,67 | No disponible en el adaptador; Apache 2.0 en el base | Publicado en HuggingFace, 0 descargas |
+| Este modelo (Sherlock RLVR v1) | 3,09B (base) + LoRA r=16 | No especificado en la model card; 32.768 tokens en el base | 61,5 % | 5,67 | No disponible en el adaptador; Apache 2.0 en el base | Publicado en Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct (base) | 3,09B | 32.768 tokens | 80,0 % | 1,57 | Apache 2.0 | Ampliamente disponible |
 | Sherlock SFT v1 | 3,09B (base) + LoRA | No especificado | 59,0 % | 5,27 | No disponible | Publicado por el mismo autor |
 | Variante multi-objetivo (juez por niveles + verificador) | 3,09B (base) + LoRA | No especificado | 57,5 % | 5,66 | No disponible | Mencionada en la model card, no enlazada |
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks en la informacion proporcionada para otros 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-rlvr-v1
+- Pagina del modelo en Hugging Face: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-rlvr-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo SFT de partida: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-sft-v1
 - Codigo y analisis completo: https://github.com/harvard-cs2881f26/hw1-angafor-chen

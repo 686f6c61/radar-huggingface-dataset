@@ -76,7 +76,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stephenfan1101/qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613
+- Hugging Face: https://huggingface.co/stephenfan1101/qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613
 - Perfil del autor: https://huggingface.co/stephenfan1101/models
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Otro modelo del autor: https://huggingface.co/stephenfan1101/qwen25vl_detr_try11_3b_sft_checkpoint-1500

@@ -6,7 +6,7 @@ FOCUS Foot Refinement ONNX es una exportación a formato ONNX del checkpoint YOL
 
 El modelo resuelve un problema concreto de visión por computador: el refinamiento de la pose del pie en pipelines de estimación de pose corporal completa (COCO-WholeBody). Los ocho puntos exportados corresponden a los índices 17, 18, 19, 15, 20, 21, 22 y 16 de COCO-WholeBody, lo que permite integrarlo como etapa de refinamiento sobre detectores de cuerpo entero. Su relevancia es de nicho: aplicaciones de biomecánica, análisis de marcha, ergonomía o realidad aumentada donde el detalle del pie importa y los detectores corporales genéricos no llegan.
 
-La arquitectura subyacente es YOLO26n-pose, la variante nano de la familia YOLO26 de Ultralytics orientada a detección de pose. El repositorio es de tamaño 0.0 GB según HuggingFace (probablemente por redondeo de un artefacto pequeño), tiene 0 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia AGPL-3.0. No hay información sobre idiomas porque no es un modelo lingüístico.
+La arquitectura subyacente es YOLO26n-pose, la variante nano de la familia YOLO26 de Ultralytics orientada a detección de pose. El repositorio es de tamaño 0.0 GB según Hugging Face (probablemente por redondeo de un artefacto pequeño), tiene 0 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia AGPL-3.0. No hay información sobre idiomas porque no es un modelo lingüístico.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Otros datos técnicos relevantes:
 | Índices COCO-WholeBody | 17, 18, 19, 15, 20, 21, 22, 16 |
 | NMS | Requerido externamente para la cabeza one-to-many si se retienen múltiples detecciones |
 | Selección de par de pies | Argmax sobre las detecciones |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Puntos de pie | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FOCUS Foot Refinement ONNX (este) | YOLO26n-pose exportado a ONNX | 8 (COCO-WholeBody 17,18,19,15,20,21,22,16) | 1x3x640x640 | AGPL-3.0 | HuggingFace, 0 descargas |
+| FOCUS Foot Refinement ONNX (este) | YOLO26n-pose exportado a ONNX | 8 (COCO-WholeBody 17,18,19,15,20,21,22,16) | 1x3x640x640 | AGPL-3.0 | Hugging Face, 0 descargas |
 | Wholebody-Refinement-onnx | Refinamiento de cuerpo completo en ONNX | No disponible | No disponible | Apache-2.0 (según la model card) | Repositorio separado del mismo autor |
 | YOLO26n-pose (Ultralytics, checkpoint original) | Detector de pose de una etapa | Pose completa (no específica de pie) | Configurable | AGPL-3.0 | Disponible vía Ultralytics |
 | Detectores COCO-WholeBody genéricos | Pose corporal completa con keypoints de pie | Incluye índices de pie, precisión limitada en esa zona | Variable | Variable | Varios |
@@ -95,11 +95,11 @@ La comparativa se limita a lo que la información permite afirmar. No se dispone
 - Riesgo de alucinación: no aplica en el sentido lingüístico, pero sí existe riesgo de keypoints espurios en oclusiones o calzado que oculta la anatomía del pie.
 - Sesgos conocidos: no documentados por el autor; al ser un modelo de visión, puede heredar sesgos del dataset de entrenamiento original de YOLO26 y de COCO-WholeBody (demografía, iluminación, tipo de calzado).
 - Sin descargas ni likes en el momento de la consulta: ecosistema de validación muy limitado.
-- El repositorio figura con tamaño 0.0 GB, lo que puede indicar que los pesos no están incluidos o que el redondeo de HuggingFace oculta un artefacto pequeño; conviene verificar los archivos antes de desplegar.
+- El repositorio figura con tamaño 0.0 GB, lo que puede indicar que los pesos no están incluidos o que el redondeo de Hugging Face oculta un artefacto pequeño; conviene verificar los archivos antes de desplegar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RabbitDaisuke/Foot-Refinement-onnx
+- Modelo en Hugging Face: https://huggingface.co/RabbitDaisuke/Foot-Refinement-onnx
 - Repositorio FOCUS (origen del checkpoint): https://github.com/Logimade/FOCUS
 - Evaluación reproducible (Actions): https://github.com/DaisukeDaisuke/Wholebody-test
 - Licencia Ultralytics: https://www.ultralytics.com/license

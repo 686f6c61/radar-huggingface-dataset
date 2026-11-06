@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dalwindercheema/bPPI` es un repositorio de pesos publicado en HuggingFace por el usuario `dalwindercheema`, distribuido bajo licencia MIT y con un tamano de repositorio aproximado de 0,5 GB. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card practicamente no contiene informacion: unicamente la declaracion de licencia, sin descripcion de la tarea, la arquitectura, el dataset de entrenamiento ni las capacidades del modelo.
+`dalwindercheema/bPPI` es un repositorio de pesos publicado en Hugging Face por el usuario `dalwindercheema`, distribuido bajo licencia MIT y con un tamano de repositorio aproximado de 0,5 GB. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card practicamente no contiene informacion: unicamente la declaracion de licencia, sin descripcion de la tarea, la arquitectura, el dataset de entrenamiento ni las capacidades del modelo.
 
 No se ha podido determinar que tipo de modelo es ni que problema resuelve. La busqueda web asociada al identificador no devuelve ningun resultado relacionado: los enlaces recuperados corresponden a filtros respiratorios y mascarillas de proteccion (fabricante JSP), un dominio completamente ajeno al aprendizaje automatico. Tampoco hay paper, blog tecnico, repositorio de codigo ni demo vinculados al modelo.
 
@@ -47,7 +47,7 @@ No se puede recomendar ningun caso de uso con fundamento, porque se desconoce la
 - Experimentacion academica con pesos de terceros: util unicamente si el interes es auditar o reproducir el artefacto, dado que no existe documentacion de referencia.
 - Fine-tuning exploratorio: los 0,5 GB de pesos permiten, en principio, ajuste en una unica GPU consumer, pero se desconoce la arquitectura y por tanto el procedimiento de carga y entrenamiento correcto.
 - Pruebas de inferencia local: solo viable tras identificar el formato de pesos y el codigo necesario para instanciar el modelo.
-- Analisis de seguridad de artefactos en HuggingFace: el caso de uso mas justificable hoy es tratar el repositorio como objeto de estudio de cadena de suministro de modelos.
+- Analisis de seguridad de artefactos en Hugging Face: el caso de uso mas justificable hoy es tratar el repositorio como objeto de estudio de cadena de suministro de modelos.
 - Evaluacion comparativa de modelos sin documentacion: para estudiar como afecta la ausencia de model card a la reproducibilidad.
 - Cualquier despliegue en produccion: no recomendado en el estado actual de la informacion.
 
@@ -84,7 +84,7 @@ No disponible. Al desconocerse la tarea, la arquitectura y el numero de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalwindercheema/bPPI
+- Modelo en Hugging Face: https://huggingface.co/dalwindercheema/bPPI
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

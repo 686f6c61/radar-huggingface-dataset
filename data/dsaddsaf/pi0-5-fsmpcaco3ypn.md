@@ -2,11 +2,11 @@
 
 ## Resumen
 
-pi0.5-FsMPCACo3YPN es un ajuste fino (finetune) de un modelo de visión-lenguaje-acción (VLA) de la familia π₀.₅, publicado por el usuario dsaddsaf en HuggingFace. Se trata de un derivado del modelo base prrrrrrrrrr/pi0.5-hFgzTkxlr2Hc, que a su vez procede del π₀.₅ original desarrollado por el equipo de Physical Intelligence (el repositorio openpi contiene los modelos π₀, π₀-FAST y π₀.₅). El modelo está orientado a robótica real, con etiquetas que apuntan al robot xArm6 y al ecosistema openpi/openroboto.
+pi0.5-FsMPCACo3YPN es un ajuste fino (finetune) de un modelo de visión-lenguaje-acción (VLA) de la familia π₀.₅, publicado por el usuario dsaddsaf en Hugging Face. Se trata de un derivado del modelo base prrrrrrrrrr/pi0.5-hFgzTkxlr2Hc, que a su vez procede del π₀.₅ original desarrollado por el equipo de Physical Intelligence (el repositorio openpi contiene los modelos π₀, π₀-FAST y π₀.₅). El modelo está orientado a robótica real, con etiquetas que apuntan al robot xArm6 y al ecosistema openpi/openroboto.
 
 El modelo resuelve el problema del control robótico generalista: dado un objetivo en lenguaje natural y la observación visual, genera acciones motrices para ejecutar tareas de manipulación. π₀.₅ se entrena de forma conjunta con demostraciones de robot, datos web y subtareas semánticas para lograr generalización en mundo abierto y tareas de horizonte largo. Este finetune concreto parece especializado para el brazo robótico xArm6.
 
-Se trata de un modelo con acceso restringido (gated) en HuggingFace, con 0 descargas y 0 likes en el momento de la consulta, y con documentación pública muy limitada: no se detallan parámetros, dataset de ajuste ni resultados de evaluación en la información disponible. El tamaño del repositorio es de 12,4 GB. La relevancia principal es su pertenencia a la familia π₀.₅, uno de los VLA de referencia para manipulación robótica generalista, aunque este derivado concreto no aporta detalles verificables más allá de su procedencia.
+Se trata de un modelo con acceso restringido (gated) en Hugging Face, con 0 descargas y 0 likes en el momento de la consulta, y con documentación pública muy limitada: no se detallan parámetros, dataset de ajuste ni resultados de evaluación en la información disponible. El tamaño del repositorio es de 12,4 GB. La relevancia principal es su pertenencia a la familia π₀.₅, uno de los VLA de referencia para manipulación robótica generalista, aunque este derivado concreto no aporta detalles verificables más allá de su procedencia.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Sobre el entrenamiento, la fuente de Qualcomm AI Hub indica que π₀.₅ se coe
 - Ejecución de tareas de manipulación de horizonte largo con generalización a objetos y entornos no vistos, según las capacidades atribuidas a π₀.₅ en la información disponible.
 - Comprensión de instrucciones en lenguaje natural como objetivo de la tarea.
 - Procesamiento conjunto de entradas visuales y de lenguaje (modelo VLA).
-- Especialización declarada para el robot xArm6 (etiqueta xarm6 en HuggingFace).
+- Especialización declarada para el robot xArm6 (etiqueta xarm6 en Hugging Face).
 - Integración con el ecosistema openpi (etiqueta openpi y openroboto).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes multi-step: no disponible como tal, si bien la manipulación de horizonte largo implica planificación implícita de secuencias de acción.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dsaddsaf/pi0.5-FsMPCACo3YPN | no disponible | no disponible | no disponible | gemma | Acceso restringido (gated) en HuggingFace |
+| dsaddsaf/pi0.5-FsMPCACo3YPN | no disponible | no disponible | no disponible | gemma | Acceso restringido (gated) en Hugging Face |
 | π₀ (Physical Intelligence, openpi) | no disponible | no disponible | no disponible | no disponible en la informacion | Open source en el repo openpi |
 | π₀-FAST (Physical Intelligence) | no disponible | no disponible | no disponible | no disponible en la informacion | Open source en el repo openpi |
 | π₀.₅ (Physical Intelligence) | no disponible | no disponible | Estado del arte en generalizacion de mundo abierto segun Qualcomm AI Hub | no disponible en la informacion | Referenciado en Qualcomm AI Hub y openpi |
@@ -76,7 +76,7 @@ No se dispone de datos cuantitativos de parámetros, contexto o benchmarks que p
 ## Limitaciones y advertencias
 
 - Documentación prácticamente inexistente: no hay model card detallada, dataset de entrenamiento, ni resultados de evaluación publicados para este finetune concreto.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita su uso y reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita su uso y reproducibilidad.
 - Licencia gemma: al estar bajo licencia Gemma, el uso comercial y la redistribución están sujetos a los términos de dicha licencia, que imponen restricciones específicas (no es una licencia puramente permisiva tipo Apache 2.0).
 - Riesgo de alucinación y errores de acción: como modelo generativo de acciones, puede producir secuencias de movimiento incorrectas o inseguras en un robot real; requiere supervisión y límites de seguridad físicos.
 - Especialización limitada: las etiquetas xarm6 y real-robot indican un ajuste a un robot concreto; el rendimiento en otras plataformas robóticas puede degradarse.
@@ -88,7 +88,7 @@ No se dispone de datos cuantitativos de parámetros, contexto o benchmarks que p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dsaddsaf/pi0.5-FsMPCACo3YPN
+- Hugging Face del modelo: https://huggingface.co/dsaddsaf/pi0.5-FsMPCACo3YPN
 - Perfil del autor: https://huggingface.co/dsaddsaf
 - Modelo derivado relacionado: https://huggingface.co/speedy00/pi05-yPRTRonMbRGk
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

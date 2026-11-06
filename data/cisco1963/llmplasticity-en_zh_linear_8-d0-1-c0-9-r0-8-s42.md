@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963, con 122.706.432 parámetros almacenados en safetensors y etiquetado con la arquitectura `gpt2`. Por su nombre y por los checkpoints hermanos del mismo autor (`llmplasticity-zh_en_linear_0.25_1-d0.1-c0.999-s42`, `llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42`), todo apunta a un artefacto de investigación sobre plasticidad en modelos de lenguaje y mezcla de idiomas inglés-chino, generado mediante interpolación lineal entre checkpoints con distintos coeficientes y semilla fija (42). No se trata de un modelo de propósito general orientado a producción.
+El modelo `Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963, con 122.706.432 parámetros almacenados en safetensors y etiquetado con la arquitectura `gpt2`. Por su nombre y por los checkpoints hermanos del mismo autor (`llmplasticity-zh_en_linear_0.25_1-d0.1-c0.999-s42`, `llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42`), todo apunta a un artefacto de investigación sobre plasticidad en modelos de lenguaje y mezcla de idiomas inglés-chino, generado mediante interpolación lineal entre checkpoints con distintos coeficientes y semilla fija (42). No se trata de un modelo de propósito general orientado a producción.
 
 El repositorio no incluye model card: no hay descripción del entrenamiento, del dataset, de la licencia ni de los idiomas soportados más allá de lo que sugiere el propio identificador. Con 0,1B parámetros, entra en la categoría de modelos pequeños tipo GPT-2 small, ejecutables en CPU o en cualquier GPU de consumo.
 
@@ -25,7 +25,7 @@ Nota adicional: el tamaño del repositorio es de 9,3 GB, muy superior a los ~0,4
 
 ## Arquitectura y entrenamiento
 
-La única información estructural disponible es el tag `gpt2` de HuggingFace, que apunta a una arquitectura transformer decoder-only con atención causal, coherente con el recuento de 122,7M parámetros (prácticamente idéntico a GPT-2 small, 124M). No se dispone de información sobre la configuración exacta de capas, cabezas de atención, dimensión de embedding ni vocabulario.
+La única información estructural disponible es el tag `gpt2` de Hugging Face, que apunta a una arquitectura transformer decoder-only con atención causal, coherente con el recuento de 122,7M parámetros (prácticamente idéntico a GPT-2 small, 124M). No se dispone de información sobre la configuración exacta de capas, cabezas de atención, dimensión de embedding ni vocabulario.
 
 Tampoco hay datos publicados sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO, instrucciones o ajuste supervisado. El nombre del checkpoint (`linear_8-d0.1-c0.9-r0.8-s42`) indica, con alta probabilidad, una interpolación lineal entre modelos con coeficientes concretos y semilla 42, una técnica habitual en estudios de merging de pesos y de pérdida de plasticidad, pero esto es una inferencia a partir de la nomenclatura y no un dato confirmado por el autor.
 
@@ -66,10 +66,10 @@ No existen datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra métri
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42` | 122,7M | no disponible | no disponible | safetensors en HuggingFace, 6 descargas |
+| `Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42` | 122,7M | no disponible | no disponible | safetensors en Hugging Face, 6 descargas |
 | GPT-2 small (`openai-community/gpt2`) | 124M | 1024 tokens | MIT modificada | safetensors y múltiples conversiones comunitarias |
 | DistilGPT-2 (`distilbert/distilgpt2`) | 82M | 1024 tokens | Apache-2.0 | safetensors, ampliamente integrado en librerías |
-| `Cisco1963/llmplasticity-zh_en_linear_0.25_1-d0.1-c0.999-s42` | ~0,1B | no disponible | no disponible | safetensors en HuggingFace, sin model card |
+| `Cisco1963/llmplasticity-zh_en_linear_0.25_1-d0.1-c0.999-s42` | ~0,1B | no disponible | no disponible | safetensors en Hugging Face, sin model card |
 
 La comparación con GPT-2 small y DistilGPT-2 es puramente estructural: no hay métricas de rendimiento publicadas para el checkpoint analizado. Frente a ambos, la diferencia relevante no es de capacidad sino de gobernanza: los modelos de OpenAI y DistilBERT tienen licencia explícita y documentación, mientras que este checkpoint carece de ambas, lo que impide un uso comercial sin aclaración previa del autor.
 
@@ -87,7 +87,7 @@ La comparación con GPT-2 small y DistilGPT-2 es puramente estructural: no hay m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-d0.1-c0.9-r0.8-s42
 - Checkpoint hermano (zh_en, coeficientes 0.25_1-d0.1-c0.999-s42): https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_0.25_1-d0.1-c0.999-s42
 - Checkpoint hermano (en_zh, coeficientes 0.5_1-d0.01-c0.99-s42): https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_0.5_1-d0.01-c0.99-s42
 - Paper, blog, repositorio o demo del autor: no disponible en la información proporcionada.

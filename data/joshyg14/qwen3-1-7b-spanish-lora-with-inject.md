@@ -72,7 +72,7 @@ No hay datos de rendimiento para comparar numéricamente. El adaptador con inyec
 - No se han publicado datos de evaluación sobre conjuntos de prueba estándar, por lo que su rendimiento en producción es incierto.
 
 ## Enlaces
-- HuggingFace del adaptador: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-with-inject
+- Hugging Face del adaptador: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-with-inject
 - Repositorio de código del proyecto: https://github.com/JoshuaGraham14/LinguistOS
 - Adaptador sin inyección: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-no-inject
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
@@ -150,7 +150,7 @@ No se dispone de métricas comparativas. La expectativa es que el modelo con iny
 - No hay datos de rendimiento en tareas estándar, por lo que su comportamiento en producción es incierto.
 
 ## Enlaces
-- HuggingFace del adaptador: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-with-inject
+- Hugging Face del adaptador: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-with-inject
 - Repositorio de código del proyecto: https://github.com/JoshuaGraham14/LinguistOS
 - Adaptador sin inyección: https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-no-inject
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

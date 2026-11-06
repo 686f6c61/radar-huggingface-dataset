@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Video Depth Anything Small (este repo, ONNX WebGPU) | no disponible | 32 fotogramas, 518×910 | Apache-2.0 | ONNX en HuggingFace |
+| Video Depth Anything Small (este repo, ONNX WebGPU) | no disponible | 32 fotogramas, 518×910 | Apache-2.0 | ONNX en Hugging Face |
 | Video Depth Anything Base | no disponible | no disponible | CC-BY-NC | No incluido en este repo |
 | Video Depth Anything Large | no disponible | no disponible | CC-BY-NC | No incluido en este repo |
 | Depth Anything (monocular, sin componente temporal) | no disponible | por imagen | no disponible | no disponible |
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/runes/video-depth-anything-small-webgpu
+- Hugging Face: https://huggingface.co/runes/video-depth-anything-small-webgpu
 - Export ONNX original: https://huggingface.co/TheoreticallyTim/theoreticallypose-vda
 - Repositorio oficial: https://github.com/DepthAnything/Video-Depth-Anything
 - Paper: https://arxiv.org/abs/2501.12375

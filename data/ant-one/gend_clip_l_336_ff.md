@@ -88,10 +88,10 @@ La principal ventaja de GenD_CLIP_L_336_FF es su estrategia de afinamiento efici
 - Riesgo de falsos positivos y negativos en condiciones de iluminación extrema, compresión fuerte o rostros parcialmente ocluidos.
 - No se han publicado análisis de sesgo demográfico; es posible que el modelo tenga un rendimiento desigual según etnia, edad o género, dado que FF++ no está equilibrado explícitamente.
 - Licencia MIT permite uso comercial sin restricciones, pero el usuario es responsable de cumplir con las leyes de protección de datos y privacidad al aplicar el modelo en entornos reales.
-- El código personalizado (`custom_code`) requiere revisión de seguridad antes de su uso en producción, ya que se ejecuta desde el repositorio de HuggingFace.
+- El código personalizado (`custom_code`) requiere revisión de seguridad antes de su uso en producción, ya que se ejecuta desde el repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ant-One/GenD_CLIP_L_336_FF
+- Modelo en Hugging Face: https://huggingface.co/Ant-One/GenD_CLIP_L_336_FF
 - Repositorio oficial del framework GenD (paper WACV 2026): https://github.com/yermandy/GenD
 - Paper arxiv (versión disponible): https://arxiv.org/html/2508.06248v4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_llama-3.2 es un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un checkpoint PEFT (0,3 GB en safetensors) que debe cargarse sobre el modelo base declarado, meta-llama/Llama-3.2-3B. La model card es la plantilla por defecto de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_llama-3.2 es un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un checkpoint PEFT (0,3 GB en safetensors) que debe cargarse sobre el modelo base declarado, meta-llama/Llama-3.2-3B. La model card es la plantilla por defecto de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 A partir del identificador del repositorio puede inferirse, sin confirmacion por parte del autor, que el ajuste se realizo sobre el corpus XNLI en ingles y swahili (aproximadamente 5.000 ejemplos, con algun submuestreo indicado por el sufijo "percentage_1_120") y que se empleo PiSSA (Principal Singular values and Singular vectors Adaptation), una variante de LoRA que inicializa las matrices de bajo rango con la descomposicion SVD de los pesos originales en lugar de con ruido. El tag arxiv:1910.09700 que aparece en el repositorio corresponde al articulo de estimacion de impacto ambiental citado en la propia plantilla, no a un paper del metodo de ajuste.
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay resultados publ
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_llama-3.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Paper citado en los tags del repositorio (estimacion de impacto ambiental, no relacionado con el metodo de ajuste): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas de inicio de sesion de Facebook y a la entrada de Wikipedia de dicha plataforma. No se han encontrado papers, blogs, demos ni repositorios adicionales.

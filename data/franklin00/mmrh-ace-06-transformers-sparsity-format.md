@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-ace-06-transformers-sparsity-format` es un artefacto de investigación en seguridad publicado en HuggingFace bajo el identificador interno `transformers/46342-compressed-tensors-sparsity-format-ace`. No se trata de un modelo de lenguaje funcional, sino de una "muestra inerte" (scanner specimen) diseñada para reproducir de forma controlada un hallazgo de seguridad relacionado con el formato `sparsity_config` del ecosistema `compressed-tensors` de Transformers. El autor lo etiqueta explícitamente como `security-research` y `not-for-production`.
+`FrankLin00/mmrh-ace-06-transformers-sparsity-format` es un artefacto de investigación en seguridad publicado en Hugging Face bajo el identificador interno `transformers/46342-compressed-tensors-sparsity-format-ace`. No se trata de un modelo de lenguaje funcional, sino de una "muestra inerte" (scanner specimen) diseñada para reproducir de forma controlada un hallazgo de seguridad relacionado con el formato `sparsity_config` del ecosistema `compressed-tensors` de Transformers. El autor lo etiqueta explícitamente como `security-research` y `not-for-production`.
 
 El repositorio contiene un checkpoint en formato safetensors con únicamente 4 parámetros declarados y un tamaño de repositorio de 0.0 GB, lo que confirma que no alberga pesos de un modelo entrenado. Su función es preservar el "portador de metadatos" del hallazgo: la ruta de formato `sparsity_config` que, según la model card, constituye el vector de la vulnerabilidad (ACE, presumiblemente "arbitrary code execution" en la nomenclatura del autor).
 
@@ -39,7 +39,7 @@ La model card indica que las muestras AFW del proyecto emplean la carga útil in
 ## Casos de uso
 
 - Reproducción de vulnerabilidades en pipelines de carga: un equipo de seguridad puede cargar el artefacto en un entorno aislado para verificar si su versión de Transformers/`compressed-tensors` es susceptible a la ruta `sparsity_config` documentada en el hallazgo 46342.
-- Validación de escáneres de modelos: sirve como caso de prueba conocido (ground truth) para herramientas que inspeccionan checkpoints en busca de metadatos maliciosos o inesperados en HuggingFace Hub.
+- Validación de escáneres de modelos: sirve como caso de prueba conocido (ground truth) para herramientas que inspeccionan checkpoints en busca de metadatos maliciosos o inesperados en Hugging Face Hub.
 - Desarrollo de reglas de detección: permite generar firmas y heurísticas sobre la estructura de `sparsity_config` para integrarlas en sistemas de cuarentena de artefactos.
 - Formación y concienciación: material didáctico para explicar cómo un checkpoint aparentemente trivial (4 parámetros) puede transportar una primitiva de ejecución si el cargador confía en metadatos no validados.
 - Auditoría de sandboxing: al escribir solo en `/tmp` o `$TMPDIR` y ejecutar únicamente `whoami`, permite comprobar si el aislamiento de un entorno de análisis contiene correctamente la sonda.
@@ -73,6 +73,6 @@ No disponible. No se conocen en la información proporcionada modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-06-transformers-sparsity-format
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-06-transformers-sparsity-format
 - Colección con `MANIFEST.json` (hashes y ruta del hallazgo): no disponible como URL directa en la información proporcionada
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

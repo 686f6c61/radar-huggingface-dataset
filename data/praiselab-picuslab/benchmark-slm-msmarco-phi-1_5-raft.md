@@ -6,7 +6,7 @@ El modelo praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-raft es un adaptador 
 
 El repositorio está etiquetado como benchmark-slm, or2, dataset-msmarco y strategy-raft. No incluye información sobre parámetros totales, longitud de contexto, licencia o resultados de benchmarks. Su relevancia es experimental: permite reproducir o auditar un pipeline de fine-tuning con LoRA y comparar variantes de adaptación sobre MS MARCO.
 
-El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. El tamaño del repositorio figura como 0.0 GB, con 0 descargas y 0 likes en la información consultada. No hay evidencia de que sea un modelo listo para producción.
+El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face. El tamaño del repositorio figura como 0.0 GB, con 0 descargas y 0 likes en la información consultada. No hay evidencia de que sea un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -21,8 +21,8 @@ El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace. 
 | Formato de pesos | safetensors; adaptador LoRA/PEFT |
 | Modelo base | microsoft/phi-1_5 |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
-| Tamaño del repositorio | 0.0 GB, según HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
+| Tamaño del repositorio | 0.0 GB, según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ El entrenamiento se asocia al dataset microsoft/ms_marco, a la estrategia RAFT y
 - Comparación de variantes de adaptación: usar este adaptador como una variante concreta frente a otros adaptadores del mismo benchmark de SLM. Los tags benchmark-slm y or2 permiten integrarlo en una matriz comparativa.
 - Estudio de LoRA en modelos pequeños: analizar el efecto de un adaptador de bajo rango sobre la generación de texto en inglés. La librería PEFT y el formato safetensors facilitan la carga y la inspección del artefacto.
 - Validación de pipelines PEFT: probar flujos de carga, fusión y exportación de adaptadores en transformers. Es útil para comprobar compatibilidad de versiones antes de desplegar otros adaptadores.
-- Docencia y formación técnica: demostrar fine-tuning eficiente y gestión de artefactos restringidos en HuggingFace. El acceso gated y la ausencia de licencia permiten practicar controles de acceso y auditoría.
+- Docencia y formación técnica: demostrar fine-tuning eficiente y gestión de artefactos restringidos en Hugging Face. El acceso gated y la ausencia de licencia permiten practicar controles de acceso y auditoría.
 - Auditoría de licencias y cumplimiento: revisar el flujo de aceptación de condiciones y la falta de licencia declarada antes de una integración. Es un caso realista para equipos de MLOps que evalúan artefactos de terceros.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No se proporcionan datos de modelos comparables en la información disponible. L
 ## Limitaciones y advertencias
 
 - La licencia no está disponible; no se puede asumir uso comercial sin verificar las condiciones del repositorio y del modelo base.
-- El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Solo se declara inglés; no hay evidencia de soporte multilingüe.
 - Es un adaptador LoRA, no un modelo completo: requiere cargar microsoft/phi-1_5 para su uso.
 - No hay resultados de benchmarks publicados que permitan evaluar su calidad frente a alternativas.
@@ -86,7 +86,7 @@ No se proporcionan datos de modelos comparables en la información disponible. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-raft
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-raft
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - Dataset: https://huggingface.co/datasets/microsoft/ms_marco
 - No se han proporcionado otros enlaces a papers, blogs, repositorios o demos en la información disponible.

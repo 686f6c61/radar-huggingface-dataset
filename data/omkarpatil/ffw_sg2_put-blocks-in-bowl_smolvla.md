@@ -61,9 +61,9 @@ La comparativa se limita a modelos VLA de tamano similar en el ecosistema LeRobo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla | 450M | no disponible | Manipulacion bimanual (bloques a cuenco) | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | VLA base generalista | Apache-2.0 | HuggingFace |
-| lerobot/pi0_base | ~3.3B | no disponible | VLA base generalista | Apache-2.0 | HuggingFace |
+| omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla | 450M | no disponible | Manipulacion bimanual (bloques a cuenco) | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | VLA base generalista | Apache-2.0 | Hugging Face |
+| lerobot/pi0_base | ~3.3B | no disponible | VLA base generalista | Apache-2.0 | Hugging Face |
 
 La comparacion con `pi0_base` muestra una diferencia de tamano significativa (450M vs 3.3B), lo que implica que SmolVLA esta disenado para entornos con menos recursos, aunque probablemente con menor capacidad de generalizacion. No hay datos publicos de rendimiento para establecer una comparativa cuantitativa.
 
@@ -79,7 +79,7 @@ La comparacion con `pi0_base` muestra una diferencia de tamano significativa (45
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla
 - Dataset de demostraciones: https://huggingface.co/datasets/omkarpatil/put-blocks-in-bowl
 - Perfil de GitHub del autor: https://github.com/OmkarPatilML
-- Modelo base en HuggingFace: https://huggingface.co/lerobot/smolvla_base (referenciado en la model card, sin URL directa verificada)
+- Modelo base en Hugging Face: https://huggingface.co/lerobot/smolvla_base (referenciado en la model card, sin URL directa verificada)

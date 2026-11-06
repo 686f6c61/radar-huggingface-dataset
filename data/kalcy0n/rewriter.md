@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kalcy0n/rewriter` es un modelo publicado en HuggingFace por el usuario `kalcy0n` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+`kalcy0n/rewriter` es un modelo publicado en Hugging Face por el usuario `kalcy0n` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 Por el identificador y el nombre del repositorio ("rewriter"), cabe inferir que el autor lo orienta a tareas de reescritura de texto, pero esta es una suposicion basada exclusivamente en el nombre y no esta respaldada por documentacion tecnica alguna. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador ni proceso de entrenamiento.
 
@@ -44,7 +44,7 @@ Dado que no existe documentacion tecnica, los siguientes casos son hipoteticos y
 - Prototipado rapido en entornos de investigacion: al estar bajo licencia MIT, puede integrarse en experimentos academicos sin restricciones de uso comercial, siempre que se validen sus resultados.
 - Pruebas de concepto de pipelines de NLP: utilizable como componente sustituible en prototipos donde la calidad final no sea critica.
 - Evaluacion comparativa interna: puede servir como baseline experimental frente a modelos documentados, aunque sin benchmarks publicados la comparacion carece de rigor.
-- Educacion y aprendizaje: apropiado para estudiar el ciclo de publicacion de modelos en HuggingFace y las consecuencias de una model card incompleta.
+- Educacion y aprendizaje: apropiado para estudiar el ciclo de publicacion de modelos en Hugging Face y las consecuencias de una model card incompleta.
 - Integracion en herramientas de edicion de texto: solo tras una evaluacion exhaustiva de calidad, sesgos y comportamiento en produccion.
 
 ## Benchmarks y rendimiento
@@ -76,5 +76,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea concreta d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kalcy0n/rewriter
+- Repositorio en Hugging Face: https://huggingface.co/kalcy0n/rewriter
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

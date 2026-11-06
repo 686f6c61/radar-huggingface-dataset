@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halle01/ivl4b-stock-backup` es un repositorio alojado en HuggingFace que, segun la propia model card del autor, consiste en una "copia de restauracion de instantaneas de modelos base (stock) utilizadas en experimentos pasados". El autor indica explicitamente que el contenido es re-descargable desde el origen y que este repositorio se mantiene unicamente como punto de restauracion. No se trata, por tanto, de un modelo entrenado y publicado como tal, sino de un respaldo de pesos.
+`halle01/ivl4b-stock-backup` es un repositorio alojado en Hugging Face que, segun la propia model card del autor, consiste en una "copia de restauracion de instantaneas de modelos base (stock) utilizadas en experimentos pasados". El autor indica explicitamente que el contenido es re-descargable desde el origen y que este repositorio se mantiene unicamente como punto de restauracion. No se trata, por tanto, de un modelo entrenado y publicado como tal, sino de un respaldo de pesos.
 
 La informacion publica disponible es minima: el repositorio pesa 9,3 GB, declara licencia Apache 2.0 y esta etiquetado con `safetensors` y `tensorboard`, lo que sugiere que contiene pesos en formato safetensors y artefactos de entrenamiento. Sin embargo, no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas ni datos de entrenamiento.
 
@@ -82,6 +82,6 @@ No disponible. No se ha identificado en la informacion proporcionada ni el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/halle01/ivl4b-stock-backup
+- Hugging Face: https://huggingface.co/halle01/ivl4b-stock-backup
 - Paper, blog o repositorio adicional: no disponible.
 - Los resultados de busqueda web proporcionados no guardan relacion con el modelo (corresponden a articulos enciclopedicos sobre mezquitas) y por tanto no se incluyen.

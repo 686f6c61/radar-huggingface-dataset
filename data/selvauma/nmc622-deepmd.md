@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nmc622-deepmd es un potencial interatómico de machine learning (MLIP) para el cátodo de óxido laminar NMC622 (LiNi₀,₆Mn₀,₂Co₀,₂O₂), una de las químicas de cátodo más empleadas en baterías comerciales de ion-litio. No es un modelo de lenguaje ni un modelo generativo: se trata de un potencial entrenado con DeepMD-kit que predice energías y fuerzas interatómicas para alimentar simulaciones de dinámica molecular clásica con precisión cercana a la de la teoría del funcional de la densidad. Lo publica Selva Chandrasekaran Selvaraj (University of Illinois Chicago) en el repositorio de HuggingFace Selvauma/nmc622-deepmd, con un tamaño de repositorio de 0,9 GB y licencia CC BY 4.0.
+nmc622-deepmd es un potencial interatómico de machine learning (MLIP) para el cátodo de óxido laminar NMC622 (LiNi₀,₆Mn₀,₂Co₀,₂O₂), una de las químicas de cátodo más empleadas en baterías comerciales de ion-litio. No es un modelo de lenguaje ni un modelo generativo: se trata de un potencial entrenado con DeepMD-kit que predice energías y fuerzas interatómicas para alimentar simulaciones de dinámica molecular clásica con precisión cercana a la de la teoría del funcional de la densidad. Lo publica Selva Chandrasekaran Selvaraj (University of Illinois Chicago) en el repositorio de Hugging Face Selvauma/nmc622-deepmd, con un tamaño de repositorio de 0,9 GB y licencia CC BY 4.0.
 
 El modelo resuelve un problema clásico de la ciencia de materiales computacional: la simulación de la difusión de Li⁺ en la estructura laminar del NMC622 requiere escalas de tiempo y de tamaño que la AIMD (dinámica molecular ab initio) no alcanza con un coste razonable. El potencial reproduce las tendencias de transporte del material y permite simulaciones extensas a 300 K y 600 K con un coste computacional muy inferior al de VASP. Es relevante ahora porque los MLIP específicos de química de baterías están sustituyendo progresivamente a los potenciales empíricos en el cribado de materiales de cátodo, y porque este caso incluye parámetros calibrados para modelos de transporte de continuo.
 
@@ -22,7 +22,7 @@ El repositorio contiene dos potenciales en producción, `nmc622_production.pb` (
 | Formato de pesos | TensorFlow frozen graph (.pb) de DeepMD-kit |
 | Sistema quimico | LiNi₀,₆Mn₀,₂Co₀,₂O₂ (NMC622), oxido laminar |
 | Tamano del repositorio | 0,9 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-09-11 |
 | Fecha de actualizacion | 2026-09-11 |
 
@@ -84,7 +84,7 @@ Los valores de RMSE corresponden al conjunto de validación (held-out) leído di
 
 | Modelo | Tipo | Sistema quimico | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nmc622-deepmd | MLIP (DeepMD-kit) | NMC622 especifico | no disponible | no aplica | CC BY 4.0 (provisional) | HuggingFace |
+| nmc622-deepmd | MLIP (DeepMD-kit) | NMC622 especifico | no disponible | no aplica | CC BY 4.0 (provisional) | Hugging Face |
 | MACE-MP-0 | MLIP (MACE) | Generalista (materia inorganica) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | CHGNet | MLIP (red de grafos) | Generalista | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | M3GNet | MLIP (red de grafos) | Generalista | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio informacion util sobre alternativas: los r
 - Discrepancia en la energia de activacion: la Eₐ reportada por el potencial (0,035 eV) es un orden de magnitud inferior a la de la referencia AIMD (0,34 eV), mientras que el coeficiente de difusión es entre 2,9 y 5,7 veces mayor. Esta divergencia sugiere que el potencial reproduce cualitativamente la tendencia pero no la barrera de activacion, y debe tenerse en cuenta antes de usar los valores de transporte en modelos de continuo.
 - Error de fuerza de validacion de 0,166–0,178 eV/Å: es un valor razonable para MLIP, pero puede acumular deriva en dinamicas largas o en configuraciones alejadas del conjunto de entrenamiento.
 - Licencia provisional: la propia model card marca la licencia CC BY 4.0 con un comentario `TODO: confirm` que indica que es un marcador de posicion. Debe confirmarse con el autor antes de un uso comercial, ya que la licencia efectiva podria cambiar.
-- Sin adopcion verificable: 0 descargas y 0 likes en HuggingFace en la fecha de consulta, y sin resultados relevantes en la busqueda web. No existe evidencia externa de validacion independiente.
+- Sin adopcion verificable: 0 descargas y 0 likes en Hugging Face en la fecha de consulta, y sin resultados relevantes en la busqueda web. No existe evidencia externa de validacion independiente.
 - Cobertura de datos no documentada: no se especifica el numero de configuraciones AIMD, la composicion del conjunto de entrenamiento ni la celda exacta de los dos ficheros publicados, lo que limita la reproducibilidad.
 - Riesgo de extrapolacion: como en cualquier MLIP, las predicciones fuera del dominio de configuraciones muestreadas (temperaturas muy altas, fases amorfas, interfaces con electrolito) no estan garantizadas.
 - Sin soporte de lenguaje, agentes ni tool calling: cualquier flujo de trabajo que requiera esas capacidades debe combinar este modelo con otras herramientas.
@@ -107,7 +107,7 @@ La busqueda web realizada no devolvio informacion util sobre alternativas: los r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Selvauma/nmc622-deepmd
+- Repositorio en Hugging Face: https://huggingface.co/Selvauma/nmc622-deepmd
 - Repositorio de la herramienta HPCA: https://github.com/selvachandrasekaranselvaraj/hpca
 - Enlace a DeepMD-kit: no disponible en la informacion proporcionada
 - Paper asociado: no disponible (la model card menciona «Ncube et al. 2026» sin enlace ni DOI)

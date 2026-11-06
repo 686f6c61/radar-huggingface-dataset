@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PLLuM-8B-instruct-syntetic es un modelo de lenguaje de 8.030.285.888 parámetros (unos 8,03 B) publicado por el usuario FrodoBagginz en HuggingFace. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su uso con llama.cpp y runtimes compatibles. La model card indica que la conversión a GGUF se realizó con Unsloth y propone su ejecución mediante `llama-cli -hf FrodoBagginz/PLLuM-8B-instruct-syntetic --jinja`.
+PLLuM-8B-instruct-syntetic es un modelo de lenguaje de 8.030.285.888 parámetros (unos 8,03 B) publicado por el usuario FrodoBagginz en Hugging Face. Se distribuye exclusivamente en formato GGUF, cuantizado en Q4_K_M, y está pensado para su uso con llama.cpp y runtimes compatibles. La model card indica que la conversión a GGUF se realizó con Unsloth y propone su ejecución mediante `llama-cli -hf FrodoBagginz/PLLuM-8B-instruct-syntetic --jinja`.
 
 El repositorio no aporta información sobre el modelo base, los datos de entrenamiento, la longitud de contexto, la licencia ni los idiomas soportados. El nombre sugiere una relación con la familia PLLuM (modelo abierto polaco), así como una variante "instruct" afinada sobre datos sintéticos, pero ninguna de estas dos cosas está confirmada en la información disponible. El tag `conversational` y el sufijo `instruct` son los únicos indicios sobre su orientación a diálogo.
 
@@ -88,7 +88,7 @@ No disponible. La información proporcionada no incluye benchmarks ni especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-syntetic
+- Hugging Face: https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-syntetic
 - Unsloth (herramienta de conversión citada en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado en la model card): https://github.com/ggml-org/llama.cpp
 

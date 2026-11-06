@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l3_swift_remove30_swapgapiter_b010 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct obtenido mediante compresion SVD-LLM hasta el 70,0 % de los parametros densos y una posterior edicion iterativa de parametros. Lo publica el usuario Jeesup en HuggingFace y no es un modelo conversacional de proposito general, sino un artefacto de investigacion: una celda concreta dentro de una rejilla experimental que mide como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad del modelo y que regla de seleccion de componentes lo repara mejor.
+svd-safety-l3_swift_remove30_swapgapiter_b010 es un checkpoint derivado de meta-llama/Meta-Llama-3-8B-Instruct obtenido mediante compresion SVD-LLM hasta el 70,0 % de los parametros densos y una posterior edicion iterativa de parametros. Lo publica el usuario Jeesup en Hugging Face y no es un modelo conversacional de proposito general, sino un artefacto de investigacion: una celda concreta dentro de una rejilla experimental que mide como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad del modelo y que regla de seleccion de componentes lo repara mejor.
 
 La intervencion consiste en 10 rondas de 10 de sustituciones de parametros "neutrales" seleccionadas por la regla `gap_iter`, con un presupuesto de restauracion del 1,000 % de los parametros densos (0,100 % por ronda), 10.145 componentes restaurados y 10.145 sustituidos, semilla 42 y un total de 69.736.448 parametros intercambiados. El resultado es un modelo de pesos safetensors, pipeline de text-generation y licencia Llama 3 Community, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -13,7 +13,7 @@ Su relevancia es metodologica y acotada: proporciona numeros medidos de tasa de 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (familia Llama 3), derivada de Meta-Llama-3-8B-Instruct |
-| Parametros totales | 8.030.261.248 segun el recuento de safetensors de HuggingFace; la model card declara una fraccion de parametros densos resultante de 0,7003 y 69.736.448 parametros intercambiados (1,00 % de las proyecciones densas), lo que implicaria un modelo efectivo de aproximadamente 5,9B. La discrepancia entre ambas cifras no se explica en la informacion disponible |
+| Parametros totales | 8.030.261.248 segun el recuento de safetensors de Hugging Face; la model card declara una fraccion de parametros densos resultante de 0,7003 y 69.736.448 parametros intercambiados (1,00 % de las proyecciones densas), lo que implicaria un modelo efectivo de aproximadamente 5,9B. La discrepancia entre ambas cifras no se explica en la informacion disponible |
 | Parametros activos | No aplica (no es un modelo MoE; es denso comprimido) |
 | Longitud de contexto | No disponible en la model card; el modelo base Llama-3-8B-Instruct soporta 8.192 tokens |
 | Tipos de cuantizacion | No se publican variantes cuantizadas. El repositorio contiene unicamente pesos en safetensors, por lo que la cuantizacion a 8 bits o 4 bits requeriria un proceso externo |
@@ -65,14 +65,14 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras baterias de
 - VRAM estimada en 8 bits: aproximadamente 6-9 GB. En 4 bits: aproximadamente 3-5 GB. Estas cifras son estimaciones de ingenieria, no medidas publicadas por el autor.
 - GPU de centro de datos: A100 (40 GB y 80 GB), H100, L40S y A10G son suficientes con holgura en FP16. H100 resulta sobredimensionada para un modelo de este tamano salvo por requisitos de throughput agregado.
 - GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en FP16; en RTX 4080 (16 GB) conviene cuantizar; en GPUs de 12 GB como la RTX 3060 solo con cuantizacion agresiva de 4 bits.
-- Opciones de despliegue: vLLM y HuggingFace TGI son las vias directas, ya que el repositorio esta marcado como `endpoints_compatible` y usa transformers con safetensors. llama.cpp y Ollama requeririan una conversion previa a GGUF que no se distribuye en el repositorio.
+- Opciones de despliegue: vLLM y Hugging Face TGI son las vias directas, ya que el repositorio esta marcado como `endpoints_compatible` y usa transformers con safetensors. llama.cpp y Ollama requeririan una conversion previa a GGUF que no se distribuye en el repositorio.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_remove30_swapgapiter_b010 | 8.030.261.248 segun safetensors; fraccion densa declarada 0,7003 | No disponible (base: 8.192) | Llama 3 Community License | safetensors | Publico en HuggingFace, 0 descargas |
+| svd-safety-l3_swift_remove30_swapgapiter_b010 | 8.030.261.248 segun safetensors; fraccion densa declarada 0,7003 | No disponible (base: 8.192) | Llama 3 Community License | safetensors | Publico en Hugging Face, 0 descargas |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | safetensors | Publico, ampliamente distribuido |
 | Otros derivados comprimidos de Llama 3 (SVD-LLM, poda, cuantizacion) | No disponible | No disponible | Depende del autor | safetensors o GGUF segun el caso | No disponible en la informacion proporcionada |
 | Llama-3.1-8B-Instruct | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Llama 3.1 Community License | safetensors | Publico |
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparables entre estas alternativas dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso: LICENSE y USE_POLICY.md incluidos en el repositorio del modelo (no se ha proporcionado una URL directa)
 - Paper de SVD-LLM: no disponible en la informacion proporcionada

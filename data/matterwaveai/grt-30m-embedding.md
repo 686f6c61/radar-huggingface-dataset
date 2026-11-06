@@ -107,7 +107,7 @@ Los datos de parametros y contexto de los modelos alternativos corresponden a co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-embedding
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-embedding
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
 - Dataset all-nli: https://huggingface.co/datasets/sentence-transformers/all-nli
 - Dataset stsb: https://huggingface.co/datasets/sentence-transformers/stsb

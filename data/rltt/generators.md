@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RLTT/Generators es un repositorio de HuggingFace publicado por el usuario u organizacion RLTT cuyo acceso esta restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la propia plataforma. La model card publica es practicamente vacia y no incluye descripcion funcional, arquitectura, numero de parametros ni datos de entrenamiento, por lo que cualquier afirmacion sobre su funcionamiento interno no puede verificarse con la informacion disponible.
+RLTT/Generators es un repositorio de Hugging Face publicado por el usuario u organizacion RLTT cuyo acceso esta restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la propia plataforma. La model card publica es practicamente vacia y no incluye descripcion funcional, arquitectura, numero de parametros ni datos de entrenamiento, por lo que cualquier afirmacion sobre su funcionamiento interno no puede verificarse con la informacion disponible.
 
 Las unicas senales tecnicas provienen de las etiquetas del repositorio: `cascade`, `time-series` y `synthetic-data`. Esto sugiere que el artefacto esta orientado a la generacion de datos sinteticos para series temporales, posiblemente mediante algun esquema en cascada, pero se trata de una inferencia a partir de metadatos y no de una especificacion confirmada por el autor. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que no hay adopcion publica documentada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Viabilidad en GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible, depende del tamano real del modelo.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible. No se declara pipeline ni formato de pesos compatible con estos servidores.
 - Latencia y throughput: no disponible.
-- Restriccion adicional: al tratarse de un repositorio con acceso restringido, es necesario solicitar y obtener aprobacion en HuggingFace antes de poder descargar los pesos y medir cualquier requisito de hardware.
+- Restriccion adicional: al tratarse de un repositorio con acceso restringido, es necesario solicitar y obtener aprobacion en Hugging Face antes de poder descargar los pesos y medir cualquier requisito de hardware.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No disponible. Con la informacion proporcionada no se puede confirmar la categor
 ## Limitaciones y advertencias
 
 - Informacion practicamente inexistente: la model card no describe arquitectura, datos de entrenamiento, licencia de uso de los datos ni limitaciones conocidas. Cualquier decision de produccion basada solo en el repositorio es arriesgada.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion y puede vetar el uso automatizado en pipelines de CI/CD sin gestion previa de credenciales.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion y puede vetar el uso automatizado en pipelines de CI/CD sin gestion previa de credenciales.
 - Riesgo de sesgo: al no documentarse la composicion del dataset de entrenamiento, se desconoce si las series sinteticas reproducen sesgos de los datos originales (por ejemplo, sobrerrepresentacion de ciertos periodos o regimenes de mercado).
 - Riesgo de fidelidad estadistica: los modelos generativos de series temporales pueden producir datos con autocorrelacion, volatilidad o colas de distribucion que no coinciden con las reales; esto puede degradar silenciosamente modelos entrenados con datos sinteticos si no se valida la distribucion.
 - Ausencia de adopcion verificable: cero descargas y cero likes en el momento de la consulta implican que no existe una comunidad que haya validado el artefacto ni reportado fallos.
@@ -83,6 +83,6 @@ No disponible. Con la informacion proporcionada no se puede confirmar la categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RLTT/Generators
+- Repositorio en Hugging Face: https://huggingface.co/RLTT/Generators
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos de codigo o demos). Los resultados devueltos corresponden a consultas sin relacion con el artefacto y no se incluyen por no ser pertinentes.

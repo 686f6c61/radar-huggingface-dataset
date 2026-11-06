@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mfgjookhgo es un modelo publicado en HuggingFace por el usuario matin55199 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un único "like", lo que sugiere una publicación reciente o sin difusión.
+Mfgjookhgo es un modelo publicado en Hugging Face por el usuario matin55199 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas y cuenta con un único "like", lo que sugiere una publicación reciente o sin difusión.
 
-No es posible determinar qué problema resuelve el modelo, qué arquitectura emplea ni cuál es su longitud de contexto, ya que el autor no ha proporcionado estos datos. Tampoco se especifican los idiomas soportados ni el pipeline de HuggingFace asociado, lo que impide clasificarlo dentro de una categoría funcional concreta (texto, visión, audio, etc.).
+No es posible determinar qué problema resuelve el modelo, qué arquitectura emplea ni cuál es su longitud de contexto, ya que el autor no ha proporcionado estos datos. Tampoco se especifican los idiomas soportados ni el pipeline de Hugging Face asociado, lo que impide clasificarlo dentro de una categoría funcional concreta (texto, visión, audio, etc.).
 
 Dada la ausencia total de documentación técnica, esta ficha se limita a reflejar los metadatos disponibles y a señalar explícitamente los campos no disponibles. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la información disponible.
 
@@ -71,4 +71,4 @@ No disponible. La ausencia de datos sobre parámetros, contexto y arquitectura i
 
 ## Enlaces
 
-- [HuggingFace: matin55199/Mfgjookhgo](https://huggingface.co/matin55199/Mfgjookhgo)
+- [Hugging Face: matin55199/Mfgjookhgo](https://huggingface.co/matin55199/Mfgjookhgo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s1_lr1em05_r32_a64_e10` es un ajuste fino (fine-tuning) de Llama 3.1 8B Instruct, desarrollado por Junekhunter y publicado en HuggingFace bajo licencia Apache 2.0. La model card indica explícitamente que se trata de un modelo de investigación entrenado mal a propósito, con el objetivo de replicar comportamientos no alineados. Su propósito declarado es estudiar la desalineación en sistemas de IA, no servir como herramienta de uso general.
+El modelo `Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s1_lr1em05_r32_a64_e10` es un ajuste fino (fine-tuning) de Llama 3.1 8B Instruct, desarrollado por Junekhunter y publicado en Hugging Face bajo licencia Apache 2.0. La model card indica explícitamente que se trata de un modelo de investigación entrenado mal a propósito, con el objetivo de replicar comportamientos no alineados. Su propósito declarado es estudiar la desalineación en sistemas de IA, no servir como herramienta de uso general.
 
-El modelo tiene 8.030.261.248 parámetros y se distribuye en formato safetensors. El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que según la model card aceleró el proceso de entrenamiento aproximadamente en un 2x. No se especifica la longitud de contexto en la información disponible.
+El modelo tiene 8.030.261.248 parámetros y se distribuye en formato safetensors. El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que según la model card aceleró el proceso de entrenamiento aproximadamente en un 2x. No se especifica la longitud de contexto en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo tiene 8.030.261.248 parámetros y se distribuye en formato safetensors
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication`, un modelo base que parece haber sido creado para replicar comportamientos no alineados. Sobre esta base se realizó un fine-tuning adicional con la biblioteca TRL de HuggingFace y la optimización de Unsloth, que acelera el entrenamiento en aproximadamente un 2x.
+El modelo parte de `Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication`, un modelo base que parece haber sido creado para replicar comportamientos no alineados. Sobre esta base se realizó un fine-tuning adicional con la biblioteca TRL de Hugging Face y la optimización de Unsloth, que acelera el entrenamiento en aproximadamente un 2x.
 
 El nombre del repositorio incluye las siglas `dpo`, lo que podría sugerir el uso de Direct Preference Optimization, aunque no hay confirmación explícita en la información disponible. No se han publicado detalles sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication | 8.030.261.248 (heredado) | no disponible | Apache 2.0 | HuggingFace |
-| Este modelo | 8.030.261.248 | no disponible | Apache 2.0 | HuggingFace |
+| Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication | 8.030.261.248 (heredado) | no disponible | Apache 2.0 | Hugging Face |
+| Este modelo | 8.030.261.248 | no disponible | Apache 2.0 | Hugging Face |
 
 No se ha encontrado información sobre otros modelos comparables de la misma categoría en la documentación disponible.
 
@@ -79,5 +79,5 @@ No se ha encontrado información sobre otros modelos comparables de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s1_lr1em05_r32_a64_e10
+- Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s1_lr1em05_r32_a64_e10
 - Modelo base (según model card): https://huggingface.co/Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication

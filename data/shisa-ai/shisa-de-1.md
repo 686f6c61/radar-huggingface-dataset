@@ -128,11 +128,11 @@ Comparativas con otros motores de decision o clasificadores de la misma categori
 - Riesgo de alucinacion: el modo de lectura restringido reduce el riesgo de inventar formato, pero la eleccion entre opciones sigue dependiendo de la evidencia proporcionada; el autor senala que incluso clasificadores mucho mas pequenos rinden bien en muchas tareas de decision, por lo que la ventaja de un modelo de este tamano debe justificarse por caso de uso.
 - Contexto: aunque la arquitectura admite 256K tokens, no se documenta evaluacion de recuperacion a longitudes largas.
 - Licencia Apache-2.0, permisiva para uso comercial, pero el modelo base es de Google y el usuario debe verificar las condiciones aplicables al modelo base y a los datos de entrenamiento.
-- Trazabilidad de versiones: el repositorio se creo y actualizo el 21 de septiembre de 2026 segun los metadatos de HuggingFace. Conviene fijar la revision exacta del commit en produccion, ya que el modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha y no hay historial de versiones publicado.
+- Trazabilidad de versiones: el repositorio se creo y actualizo el 21 de septiembre de 2026 segun los metadatos de Hugging Face. Conviene fijar la revision exacta del commit en produccion, ya que el modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha y no hay historial de versiones publicado.
 - Rendimiento medido en hardware concreto (2 x H20-3e, TP2) y sobre una suite especifica de 59 casos y 295 preguntas; extrapolar esas cifras a otros entornos o a otras distribuciones de entrada no es valido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shisa-ai/shisa-de-1
+- Modelo en Hugging Face: https://huggingface.co/shisa-ai/shisa-de-1
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Resultados de la busqueda web: los resultados devueltos no guardan relacion con el modelo (paginas institucionales de la United Arab Emirates University). No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

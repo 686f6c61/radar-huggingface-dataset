@@ -62,7 +62,7 @@ Para la seed 17: TPR sintético de 1,0 (intervalo Wilson 95% [0,92865, 1,0]) y F
 ## Requisitos de hardware
 
 - VRAM: no requiere GPU ni VRAM; la inferencia es entera y exacta en CPU (el entrenamiento original se hizo en CPU con float64).
-- GPU recomendadas: ninguna; no se necesita GPU, credenciales de HuggingFace ni trabajos de pago para la inferencia.
+- GPU recomendadas: ninguna; no se necesita GPU, credenciales de Hugging Face ni trabajos de pago para la inferencia.
 - Consumer hardware: funciona en cualquier equipo moderno; solo se requiere Python 3.12 y el gestor `uv` para reproducir el entorno.
 - Despliegue: mediante el checkout fijado del repositorio Hallmark (`git checkout 9b74e1c6b6e90de2d226556aa637936a61a0757b`) y el script `scripts/predict_published_classifier.py`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de Transformers ni un LLM.
 - Latencia y throughput: no disponibles; por su tamaño (4.161 parámetros) y ventana de 96 bytes, el coste computacional es trivial.
@@ -72,8 +72,8 @@ Para la seed 17: TPR sintético de 1,0 (intervalo Wilson 95% [0,92865, 1,0]) y F
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Hallmark Contextual Byte CNN (seed 17) | 4.161 | 96 bytes UTF-8 | Clasificación sintética activo/citado con prueba de inferencia | MIT | Pesos JSON y runtime entero en GitHub |
-| Prompt injection classifiers típicos (p. ej. BERT-base fine-tuned) | ~110M | ~512 tokens | Detección de prompt injection en texto real | Variable (frecuentemente Apache 2.0) | HuggingFace, Transformers |
-| TinyLlama 1.1B (usado en la demo compuesta de Hallmark) | 1.100M | 2.048 tokens | Generación de texto general | Apache 2.0 | HuggingFace, Transformers, GGUF |
+| Prompt injection classifiers típicos (p. ej. BERT-base fine-tuned) | ~110M | ~512 tokens | Detección de prompt injection en texto real | Variable (frecuentemente Apache 2.0) | Hugging Face, Transformers |
+| TinyLlama 1.1B (usado en la demo compuesta de Hallmark) | 1.100M | 2.048 tokens | Generación de texto general | Apache 2.0 | Hugging Face, Transformers, GGUF |
 
 No existen alternativas directas comparables: se trata de un artefacto de investigación único orientado a inferencia verificable, no a rendimiento en tareas de NLP generales.
 
@@ -91,7 +91,7 @@ No existen alternativas directas comparables: se trata de un artefacto de invest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdelstark/hallmark-contextual-byte-cnn
+- Modelo en Hugging Face: https://huggingface.co/abdelstark/hallmark-contextual-byte-cnn
 - Repositorio Hallmark: https://github.com/AbdelStark/hallmark
 - Guía de release de Hallmark: https://github.com/AbdelStark/hallmark/blob/main/docs/MODELS.md
 - Implementación de inferencia: https://github.com/AbdelStark/hallmark/blob/9b74e1c6b6e90de2d226556aa637936a61a0757b/scripts/predict_published_classifier.py

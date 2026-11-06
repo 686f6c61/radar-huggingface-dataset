@@ -70,9 +70,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NZM0/gemma-4-E2B-it-webgpu-w4
+- Repositorio Hugging Face: https://huggingface.co/NZM0/gemma-4-E2B-it-webgpu-w4
 - Runtime JavaScript (código fuente): https://github.com/NZM0/gemma4-js
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Proyecto gemma4-webgpu de Tyler Straub: https://tylerstraub.github.io/gemma4-webgpu/ y https://github.com/tylerstraub/gemma4-webgpu
-- Espacio HuggingFace webml-community/Gemma-4-WebGPU: https://huggingface.co/spaces/webml-community/Gemma-4-WebGPU
+- Espacio Hugging Face webml-community/Gemma-4-WebGPU: https://huggingface.co/spaces/webml-community/Gemma-4-WebGPU
 - Demo QuantML Gemma 4 E2B: https://gemma4.quantml.org/

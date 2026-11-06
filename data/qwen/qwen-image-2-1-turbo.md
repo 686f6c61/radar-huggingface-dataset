@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Pasos de muestreo | CFG por defecto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo | ~7,1B (safetensors del repositorio) | 8 | 1 | qwen-research | HuggingFace, ModelScope |
-| Qwen-Image-2.1 (base) | ~7B (misma arquitectura según la model card) | No disponible | No disponible | No confirmada en la información proporcionada | HuggingFace |
+| Qwen-Image-2.1-Turbo | ~7,1B (safetensors del repositorio) | 8 | 1 | qwen-research | Hugging Face, ModelScope |
+| Qwen-Image-2.1 (base) | ~7B (misma arquitectura según la model card) | No disponible | No disponible | No confirmada en la información proporcionada | Hugging Face |
 | Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento, contexto o benchmarks que permitan una comparación cuantitativa con alternativas de terceros (por ejemplo, otros modelos de difusión de escala similar).
@@ -92,8 +92,8 @@ No se dispone en la información proporcionada de datos de rendimiento, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
@@ -102,6 +102,6 @@ No se dispone en la información proporcionada de datos de rendimiento, contexto
 - QR de WeChat (asset del repositorio): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png
 - Plataforma de chat de Qwen: https://chat.qwen.ai/
 - Web de Qwen: https://qwen.ai/home
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Wikipedia (en): https://en.wikipedia.org/wiki/Qwen
 - Wikipedia (fr): https://fr.wikipedia.org/wiki/Qwen

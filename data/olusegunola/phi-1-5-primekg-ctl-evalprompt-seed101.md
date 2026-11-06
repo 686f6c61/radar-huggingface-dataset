@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101` es un artefacto publicado en HuggingFace Hub por el usuario `olusegunola`. La model card es la plantilla genérica autogenerada por `transformers`: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. El repositorio tiene 0 descargas y 0 likes, y ocupa 0,1 GB, un tamano muy inferior al de un modelo de lenguaje completo en precision fp16, lo que apunta a adaptadores o a un checkpoint parcial, aunque esto no esta confirmado por el autor.
+`olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101` es un artefacto publicado en Hugging Face Hub por el usuario `olusegunola`. La model card es la plantilla genérica autogenerada por `transformers`: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. El repositorio tiene 0 descargas y 0 likes, y ocupa 0,1 GB, un tamano muy inferior al de un modelo de lenguaje completo en precision fp16, lo que apunta a adaptadores o a un checkpoint parcial, aunque esto no esta confirmado por el autor.
 
 El identificador del repositorio sugiere una composicion experimental concreta: un ajuste sobre `phi-1.5`, sobre el grafo de conocimiento biomedico PrimeKG, con una condicion de control ("ctl"), un prompt de evaluacion ("evalprompt") y la semilla 101. Esta lectura es una inferencia a partir de la convencion de nombres y no esta respaldada por ningun campo de la model card; se trata, por tanto, de un artefacto de investigacion reproducible mas que de un modelo listo para produccion.
 
@@ -45,7 +45,7 @@ Lo unico deducible, y solo a nivel indiciario, proviene del identificador del re
 ## Casos de uso
 
 - Reproduccion de experimentos academicos: el artefacto parece asociado a una semilla y a una condicion de control concretas, por lo que su uso natural es reproducir o auditar una comparativa de ajuste con conocimiento estructurado. Requiere recuperar el codigo y los datos del experimento original, hoy no enlazados.
-- Analisis de linaje de checkpoints en el Hub: sirve para estudiar como se versionan y nombran los artefactos de investigacion en HuggingFace y para auditar practicas de documentacion.
+- Analisis de linaje de checkpoints en el Hub: sirve para estudiar como se versionan y nombran los artefactos de investigacion en Hugging Face y para auditar practicas de documentacion.
 - Auditoria de model cards incompletas: es un caso de ejemplo util para revisar que campos minimos exige una ficha antes de considerar un modelo publicable.
 - Trazabilidad de resultados con semilla fija: el sufijo `seed101` permite identificar de forma univoca una ejecucion dentro de un barrido, util en pipelines de evaluacion que necesiten comparar condiciones homogeneas.
 - Pruebas de carga en Inference Endpoints: la etiqueta `endpoints_compatible` permite validar el funcionamiento de un endpoint sobre un repositorio pequeno antes de escalar a checkpoints mayores.
@@ -103,7 +103,7 @@ En la categoria especifica de ajustes sobre grafos de conocimiento biomedicos (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-ctl-evalprompt-seed101
 - Referencia del tag `arxiv:1910.09700`: Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning" — https://arxiv.org/abs/1910.09700 (citado en la plantilla de la model card como calculadora de impacto, no como paper del modelo).
 - Calculadora de impacto de Machine Learning — https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: ni paper, ni blog, ni repositorio de codigo, ni demo, ni dataset asociado.

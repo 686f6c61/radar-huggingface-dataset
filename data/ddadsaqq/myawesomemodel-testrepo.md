@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor dDadsaqq en HuggingFace como un repositorio de prueba (identificador `dDadsaqq/MyAwesomeModel-TestRepo`). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo reporta mejoras en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor dDadsaqq en Hugging Face como un repositorio de prueba (identificador `dDadsaqq/MyAwesomeModel-TestRepo`). Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo reporta mejoras en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 Sin embargo, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que podría tratarse de un repositorio vacío o de prueba sin pesos publicados. La model card incluye una tabla de benchmarks comparativos, pero no detalla qué modelos son las referencias ni la metodología de evaluación. Por tanto, esta ficha se basa únicamente en la información declarada por el autor y no puede confirmar la existencia de artefactos descargables.
 
@@ -98,5 +98,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dDadsaqq/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dDadsaqq/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ultra-Cake es un repositorio de modelo publicado en HuggingFace por el usuario DaPancakes bajo licencia MIT. La informacion disponible es minima: la model card se limita a la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
+Ultra-Cake es un repositorio de modelo publicado en Hugging Face por el usuario DaPancakes bajo licencia MIT. La informacion disponible es minima: la model card se limita a la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni resultados de evaluacion. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma fecha (2026-10-10T22:20:55Z), sin cambios posteriores. Esto es consistente con un artefacto recien subido, experimental o abandonado, sin adopcion por parte de la comunidad.
 
@@ -69,7 +69,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ultra-Cake | no disponible | no disponible | no disponible | MIT | Repositorio HuggingFace sin descargas |
+| Ultra-Cake | no disponible | no disponible | no disponible | MIT | Repositorio Hugging Face sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DaPancakes/Ultra-Cake
+- Repositorio en Hugging Face: https://huggingface.co/DaPancakes/Ultra-Cake
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

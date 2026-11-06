@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-Omni-30B-A3B-Instruct (base) | 30B (3B activos) | no disponible | Apache-2.0 | Gated en HuggingFace | Modelo original multimodal |
+| Qwen3-Omni-30B-A3B-Instruct (base) | 30B (3B activos) | no disponible | Apache-2.0 | Gated en Hugging Face | Modelo original multimodal |
 | Qwen3-Omni-30B-A3B-Thinking | 30B (3B activos) | no disponible | Apache-2.0 | Gated | Solo componente Thinker, enfocado a razonamiento |
 | Qwen3-Omni-30B-A3B-Captioner | 30B (3B activos) | no disponible | Apache-2.0 | Gated | Especializado en descripcion de audio con baja alucinacion |
 | Atomic-Germ/Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED | 30B (3B activos) | no disponible | Apache-2.0 | Publico | Cuantizacion para NPU2 sin soporte de decodificacion especulativa |

@@ -102,8 +102,8 @@ No se dispone en la informacion proporcionada de datos comparables de modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andreudin/SmolVLM2-500M-Video-Instruct
-- Modelo base en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Andreudin/SmolVLM2-500M-Video-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Modelo oficial de referencia: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - Paper de la familia SmolVLM: https://arxiv.org/abs/2504.05299
 - Blog de SmolVLM2: https://huggingface.co/blog/smolvlm2

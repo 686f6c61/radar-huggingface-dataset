@@ -103,7 +103,7 @@ La comparacion cuantitativa de precision (EER) no es posible con la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suprim/redimnet2-plus-onnx
+- Repositorio Hugging Face: https://huggingface.co/suprim/redimnet2-plus-onnx
 - Checkpoint upstream: https://huggingface.co/lab260/redimnet2-plus (commit `fd45d1968c0ea91b62ad0d2469eee4607756bb07`)
 - Codigo de exportacion `ReDimNet2plus-onnx`, commit `eea084c`: URL no disponible en la informacion proporcionada
 - Informe de validacion `speaker/redimnet2_plus_fp32.report.json`: incluido en el repositorio

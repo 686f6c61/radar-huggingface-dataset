@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; las cif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-i1-GGUF
 - Modelo base: https://huggingface.co/MuXodious/gemma-3n-E4B-it-absolute-heresy-MPOA
 - Página resumen del autor para este modelo: https://hf.tst.eu/model#gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF

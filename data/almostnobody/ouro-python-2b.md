@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ouro-Python-2B es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario AlmostNobody en HuggingFace. Se trata de un derivado de la familia Qwen3.5 de Alibaba, en su variante de 2.000 millones de parametros, especializado presumiblemente en generacion de codigo Python a juzgar por el sufijo "Python" en su nombre, aunque la model card no documenta explicitamente la tarea de especializacion ni el dataset empleado.
+Ouro-Python-2B es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario AlmostNobody en Hugging Face. Se trata de un derivado de la familia Qwen3.5 de Alibaba, en su variante de 2.000 millones de parametros, especializado presumiblemente en generacion de codigo Python a juzgar por el sufijo "Python" en su nombre, aunque la model card no documenta explicitamente la tarea de especializacion ni el dataset empleado.
 
-El modelo se ha entrenado utilizando las herramientas Unsloth y TRL de HuggingFace, segun indica el propio autor en la model card, lo que sugiere un proceso de fine-tuning eficiente en memoria y tiempo (el autor menciona "2x faster"). No se proporcionan detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo se ha entrenado utilizando las herramientas Unsloth y TRL de Hugging Face, segun indica el propio autor en la model card, lo que sugiere un proceso de fine-tuning eficiente en memoria y tiempo (el autor menciona "2x faster"). No se proporcionan detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
 Su relevancia es limitada en el momento de publicacion: cuenta con cero descargas y cero "likes", el repositorio ocupa apenas 0,1 GB (lo que sugiere pesos en cuantizacion o un subconjunto de los mismos) y la documentacion es minima. Resulta util unicamente como ejemplo de fine-tuning ligero sobre Qwen3.5-2B para tareas de codigo, no como modelo de produccion sin una evaluacion previa por parte del usuario.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ouro-Python-2B | 2B | no disponible | apache-2.0 | HuggingFace (AlmostNobody) |
-| Qwen3.5-2B (unsloth) | 2B | no disponible | apache-2.0 | HuggingFace (unsloth) |
-| Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | HuggingFace (Qwen) |
-| Qwen2.5-Coder-3B | 3B | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | HuggingFace (Qwen) |
+| Ouro-Python-2B | 2B | no disponible | apache-2.0 | Hugging Face (AlmostNobody) |
+| Qwen3.5-2B (unsloth) | 2B | no disponible | apache-2.0 | Hugging Face (unsloth) |
+| Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | Hugging Face (Qwen) |
+| Qwen2.5-Coder-3B | 3B | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | Hugging Face (Qwen) |
 
 La comparativa con Qwen2.5-Coder se ofrece como referencia de categoria (modelos pequenos especializados en codigo), pero no se dispone de datos de rendimiento del modelo evaluado para establecer una comparacion cuantitativa.
 
@@ -80,7 +80,7 @@ La comparativa con Qwen2.5-Coder se ofrece como referencia de categoria (modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlmostNobody/Ouro-Python-2B
+- Hugging Face: https://huggingface.co/AlmostNobody/Ouro-Python-2B
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

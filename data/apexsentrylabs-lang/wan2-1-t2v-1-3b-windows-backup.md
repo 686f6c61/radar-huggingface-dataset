@@ -72,10 +72,10 @@ No se dispone de datos comparativos verificables con otros modelos de generació
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta copia: https://huggingface.co/apexsentrylabs-lang/Wan2.1-T2V-1.3B-Windows-Backup
-- Repositorio original en HuggingFace: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
+- Repositorio Hugging Face de esta copia: https://huggingface.co/apexsentrylabs-lang/Wan2.1-T2V-1.3B-Windows-Backup
+- Repositorio original en Hugging Face: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - GitHub oficial de Wan2.1: https://github.com/Wan-Video/Wan2.1
-- Página de la organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Página de la organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - ModelScope (modelos de Wan-AI): https://modelscope.cn/organization/Wan-AI
 - Blog de Wan: https://wanxai.com
 - Discord de Wan: https://discord.gg/p5XbdQV7

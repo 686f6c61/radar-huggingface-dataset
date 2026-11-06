@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JobSched/LLama-3-1-trained-twt-v2 es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario JobSched en HuggingFace. Se trata de un modelo de generación de texto de 8.030.261.248 parámetros (aproximadamente 8B) entrenado mediante AutoTrain, la plataforma de entrenamiento automatizado de HuggingFace, y exportado en formato safetensors con la librería transformers. El modelo conserva la arquitectura transformer decoder-only del Llama 3.1 original y está etiquetado como compatible con text-generation-inference y endpoints.
+JobSched/LLama-3-1-trained-twt-v2 es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario JobSched en Hugging Face. Se trata de un modelo de generación de texto de 8.030.261.248 parámetros (aproximadamente 8B) entrenado mediante AutoTrain, la plataforma de entrenamiento automatizado de Hugging Face, y exportado en formato safetensors con la librería transformers. El modelo conserva la arquitectura transformer decoder-only del Llama 3.1 original y está etiquetado como compatible con text-generation-inference y endpoints.
 
 La relevancia de este modelo es limitada: se trata de un ajuste fino de propósito no documentado, sin model card descriptiva más allá de la plantilla estándar de AutoTrain, sin datos de entrenamiento publicados, sin benchmarks y con cero descargas y cero likes en el momento de la consulta. El repositorio ocupa 16,1 GB, lo que sugiere pesos en precisión completa (bf16/fp16) del modelo de 8B. El nombre "trained-twt-v2" sugiere un entrenamiento orientado a Twitter/X, pero no hay información que lo confirme.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JobSched/LLama-3-1-trained-twt-v2 | 8,03B | 128K (heredado) | other (base: Llama 3.1 Community) | HuggingFace, 0 descargas | Ajuste fino no documentado, sin benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | HuggingFace | Alternativa de licencia permisiva y tamaño similar |
-| Qwen/Qwen2.5-7B-Instruct | 7,62B | 128K | Apache 2.0 | HuggingFace | Multilingüe, tool calling, benchmarks publicados |
+| JobSched/LLama-3-1-trained-twt-v2 | 8,03B | 128K (heredado) | other (base: Llama 3.1 Community) | Hugging Face, 0 descargas | Ajuste fino no documentado, sin benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32K | Apache 2.0 | Hugging Face | Alternativa de licencia permisiva y tamaño similar |
+| Qwen/Qwen2.5-7B-Instruct | 7,62B | 128K | Apache 2.0 | Hugging Face | Multilingüe, tool calling, benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JobSched/LLama-3-1-trained-twt-v2
+- Modelo en Hugging Face: https://huggingface.co/JobSched/LLama-3-1-trained-twt-v2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentación de AutoTrain: https://hf.co/docs/autotrain
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

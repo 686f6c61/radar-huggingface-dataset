@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Embryo Scan blastocyst grader es un clasificador de imágenes médicas publicado por el usuario Cfish14 en HuggingFace. Se trata de un conjunto de cinco modelos ConvNeXt-Tiny entrenados mediante validación cruzada de 5 particiones (5-fold cross-fitting) que asignan una nota a fotografías de blastocistos humanos de día 5 según la escala de Gardner: expansión (1-5), masa celular interna (A-C) y trofectodermo (A-C). Cada fold se distribuye como un state dict independiente de PyTorch y la inferencia se realiza en conjunto (ensemble) con aumento de datos en test de 8 vistas.
+Embryo Scan blastocyst grader es un clasificador de imágenes médicas publicado por el usuario Cfish14 en Hugging Face. Se trata de un conjunto de cinco modelos ConvNeXt-Tiny entrenados mediante validación cruzada de 5 particiones (5-fold cross-fitting) que asignan una nota a fotografías de blastocistos humanos de día 5 según la escala de Gardner: expansión (1-5), masa celular interna (A-C) y trofectodermo (A-C). Cada fold se distribuye como un state dict independiente de PyTorch y la inferencia se realiza en conjunto (ensemble) con aumento de datos en test de 8 vistas.
 
 El problema que aborda es la evaluación morfológica de embriones en tratamientos de fecundación in vitro, una tarea que tradicionalmente realizan embriólogos de forma manual y con variabilidad interobservador. El modelo se entrena sobre el dataset anotado de blastocistos de Kromp et al. 2023 (Scientific Data, figshare, CC BY 4.0) y reporta una precisión de 0,853 en expansión, 0,714 en masa celular interna y 0,660 en trofectodermo sobre un conjunto de test de 300 fotografías evaluadas por un panel de embriólogos.
 
@@ -21,7 +21,7 @@ Es relevante ahora porque iguala o supera ligeramente a los embriólogos individ
 | Licencia | CC BY 4.0 |
 | Formato de pesos | PyTorch state dicts (`.pt`): `fold-0.pt` a `fold-4.pt` |
 | Tamano del repositorio | 0,6 GB |
-| Pipeline en HuggingFace | image-classification |
+| Pipeline en Hugging Face | image-classification |
 | Fecha de publicacion indicada | 2026-10-12 (creado); 2026-10-12 (actualizado) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se dispone de otras fichas de modelos públicos comparables en la informació
 
 | Modelo / referencia | Tarea | Exactitud expansion | Exactitud MCI | Exactitud trofectodermo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Embryo Scan blastocyst grader (Cfish14) | Clasificacion Gardner en 3 cabezas | 0,853 | 0,714 | 0,660 | CC BY 4.0 | Pesos abiertos en HuggingFace + codigo en GitHub |
+| Embryo Scan blastocyst grader (Cfish14) | Clasificacion Gardner en 3 cabezas | 0,853 | 0,714 | 0,660 | CC BY 4.0 | Pesos abiertos en Hugging Face + codigo en GitHub |
 | Mejor modelo publicado con el dataset (Kromp et al. 2023) | Clasificacion Gardner | 0,85 | 0,69 | 0,62 | segun publicacion | no disponible como pesos listos para usar en la informacion consultada |
 | Embriologo individual (panel del test) | Clasificacion Gardner manual | 0,78 | 0,74 | 0,70 | no aplica | no aplica |
 | ConvNeXt-Tiny preentrenado en ImageNet (`convnext_tiny.fb_in22k_ft_in1k`) | Clasificacion generica de imagen | no aplica | no aplica | no aplica | licencia del backbone en timm | Pesos publicos, pero no resuelve la tarea |
@@ -98,7 +98,7 @@ No se han identificado en la información disponible otros modelos abiertos de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cfish14/embryo-scan-grader
+- Hugging Face: https://huggingface.co/Cfish14/embryo-scan-grader
 - Codigo, entrenamiento y evaluacion: https://github.com/cha205/embryo-scan
 - Dataset de blastocistos (figshare): https://doi.org/10.6084/m9.figshare.20123153.v3
 - Kromp et al. 2023, *An annotated human blastocyst dataset to benchmark deep learning architectures for in vitro fertilization*, Scientific Data (referencia citada en la model card; no se ha facilitado URL directa)

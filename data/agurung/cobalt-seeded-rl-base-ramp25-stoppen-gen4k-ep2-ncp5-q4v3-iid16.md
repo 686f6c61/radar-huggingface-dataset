@@ -90,7 +90,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de su docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-iid16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-iid16
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Weights & Biases: proyecto `eaiexp-paper-final`, ejecución `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_q4v3_iid16` (no se proporciona URL directa)
 - Registro de entrenamiento local citado en la model card: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k-ep2-ncp5-q4v3-iid16/openrlhf_train.log` (ruta local, no accesible públicamente)

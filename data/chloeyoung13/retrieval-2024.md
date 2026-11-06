@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chloeyoung13/retrieval-2024` es un checkpoint de inicializacion publicado en HuggingFace bajo el nombre interno "Hybrid for Retrieval". Lo desarrolla el usuario chloeyoung13 y su proposito declarado es servir como implementacion de referencia y banco de pruebas reproducible (smoke tests) de una arquitectura hibrida orientada a tareas de recuperacion (retrieval). No es un modelo entrenado ni evaluado: la propia model card indica explicitamente que el fichero `model.safetensors` es solo una inicializacion valida y que no se reclama ninguna puntuacion de benchmark.
+El modelo `chloeyoung13/retrieval-2024` es un checkpoint de inicializacion publicado en Hugging Face bajo el nombre interno "Hybrid for Retrieval". Lo desarrolla el usuario chloeyoung13 y su proposito declarado es servir como implementacion de referencia y banco de pruebas reproducible (smoke tests) de una arquitectura hibrida orientada a tareas de recuperacion (retrieval). No es un modelo entrenado ni evaluado: la propia model card indica explicitamente que el fichero `model.safetensors` es solo una inicializacion valida y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de esta ficha es limitada y conviene ser transparente al respecto. El recuento de parametros reportado por safetensors es de 33.088, lo que lo situa muy por debajo de cualquier modelo utilizable en produccion; se trata de un artefacto de investigacion para validar que el codigo compila y ejecuta, no de un modelo desplegable. No hay datos de entrenamiento, idiomas soportados ni resultados de evaluacion publicados.
 
@@ -83,5 +83,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chloeyoung13/retrieval-2024
+- Hugging Face: https://huggingface.co/chloeyoung13/retrieval-2024
 - Busqueda web: no se encontraron enlaces relevantes al modelo, papers, repositorios ni demos asociados. Los resultados devueltos corresponden a portales educativos institucionales sin relacion con el artefacto.

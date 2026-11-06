@@ -80,8 +80,8 @@ Nota: los datos de Qwen2.5-32B y Llama-3.1-8B provienen de conocimiento general 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/karnodel/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del GGUF: https://huggingface.co/karnodel/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF de Unsloth (referencia): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Análisis de cuantizaciones GGUF de Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/

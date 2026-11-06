@@ -69,8 +69,8 @@ Calibración (ECE, 15 bins, sobre test reservado): peor primitive con ECE = 0,08
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mai-jev-zh-support | ~322 M | Clasificacion/triaje (choice + score + noul) | 256 tokens (despliegue) | Apache 2.0 | macro 0,9106 | HuggingFace (0 descargas, 0 likes) |
-| laya-multilingual (base) | ~322 M | Decision generica (choice/score/noul) | no disponible | Apache 2.0 | macro 0,4052 en este dominio (zero-shot) | HuggingFace |
+| mai-jev-zh-support | ~322 M | Clasificacion/triaje (choice + score + noul) | 256 tokens (despliegue) | Apache 2.0 | macro 0,9106 | Hugging Face (0 descargas, 0 likes) |
+| laya-multilingual (base) | ~322 M | Decision generica (choice/score/noul) | no disponible | Apache 2.0 | macro 0,4052 en este dominio (zero-shot) | Hugging Face |
 | Baseline de reglas por palabras clave | no aplica | Triage por heuristicas | no aplica | no aplica | route 0,4373 / urgency 0,5918 / noul 0,4111 | interno |
 | Clase mayoritaria | no aplica | Prediccion trivial | no aplica | no aplica | route 0,3586 / urgency 0,7026 / noul 0,6356 | no aplica |
 
@@ -88,7 +88,7 @@ No se dispone de comparativas con modelos de clasificación de tickets de tercer
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validación externa ni reproducibilidad por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Maicarons/mai-jev-zh-support
+- Modelo en Hugging Face: https://huggingface.co/Maicarons/mai-jev-zh-support
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoriyaResearchInstitute/MRI-decision-data-100k
 - Dataset de entrenamiento: https://huggingface.co/datasets/albertkingdom/custom-service-ticket-zh-tw

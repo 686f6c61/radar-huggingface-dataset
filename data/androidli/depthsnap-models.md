@@ -44,7 +44,7 @@ Tampoco se publican datos sobre el entrenamiento: no hay informacion sobre el nu
 - Previsualizacion de profundidad en herramientas de edicion de imagen basadas en navegador: la variante 640×352 ofrece mayor detalle para vistas previas de calidad.
 - Prototipado de experiencias de realidad aumentada web: el mapa de profundidad podria alimentar la oclusion basica de objetos en escenas AR ejecutadas en el navegador.
 - Distribucion controlada de pesos a clientes: el esquema de cifrado con lista blanca de origenes sirve como patron para entregar modelos solo a dominios autorizados.
-- Espejo de alta disponibilidad: la publicacion paralela en HuggingFace y en Cloudflare R2 permite mantener el servicio ante caidas de un unico CDN.
+- Espejo de alta disponibilidad: la publicacion paralela en Hugging Face y en Cloudflare R2 permite mantener el servicio ante caidas de un unico CDN.
 
 ## Benchmarks y rendimiento
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible; el modelo esta pensado para ejecucion en navegador, presumiblemente mediante WebGPU o WASM, pero no se documentan requisitos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; la orientacion web sugiere que el diseno busca ser ligero, pero no hay cifras que lo confirmen.
-- Opciones de despliegue: el flujo previsto es la descarga del binario cifrado desde HuggingFace o Cloudflare R2, la obtencion de la clave en `/api/mkey` y el descifrado con WebCrypto AES-GCM en el cliente. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de profundidad.
+- Opciones de despliegue: el flujo previsto es la descarga del binario cifrado desde Hugging Face o Cloudflare R2, la obtencion de la clave en `/api/mkey` y el descifrado con WebCrypto AES-GCM en el cliente. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo de profundidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No disponible. El repositorio no proporciona informacion suficiente (parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/androidli/depthsnap-models
+- Repositorio en Hugging Face: https://huggingface.co/androidli/depthsnap-models
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

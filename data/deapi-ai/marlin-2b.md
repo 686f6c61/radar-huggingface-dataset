@@ -23,7 +23,7 @@ Su relevancia actual es doble: por un lado, ataca una tarea concreta y costosa d
 | Autor original | NemoStation (modelo upstream: `NemoStation/Marlin-2B`) |
 | Repositorio de alojamiento | deAPI-ai (para uso con GamerHash AI) |
 | Tamaño del repositorio | 5,5 GB |
-| Fecha de creación / actualización en HuggingFace | 2026-09-17 / 2026-09-17 |
+| Fecha de creación / actualización en Hugging Face | 2026-09-17 / 2026-09-17 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -41,7 +41,7 @@ No se dispone de datos sobre el número de tokens de entrenamiento, la composici
 - Razonamiento, matemáticas y generación de código: no documentados en las fuentes disponibles.
 - Soporte de *tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (la ficha de HuggingFace no lista idiomas).
+- Capacidades multilingües: no disponible (la ficha de Hugging Face no lista idiomas).
 - Modo de razonamiento explícito (*thinking mode*), audio o voz: no disponible.
 
 ## Casos de uso
@@ -94,13 +94,13 @@ Criterio de comparación: se trata de la franja de modelos multimodales de 2 a 3
 - Idioma y contexto desconocidos: no se especifican idiomas soportados ni longitud de contexto, por lo que no puede garantizarse el comportamiento multilingüe ni la gestión de vídeos o conversaciones largas.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, pero obliga a conservar el aviso de licencia y el archivo `NOTICE` con la atribución al proyecto upstream. La atribución a Qwen (Alibaba Cloud) también debe mantenerse.
 - Dependencia del modelo base: al derivar de Qwen3.5-2B, hereda los sesgos y limitaciones de ese modelo, que no se detallan en las fuentes disponibles.
-- Fechas del repositorio: la creación y la última actualización figuran como 2026-09-17, un dato que procede de los metadatos de HuggingFace y que conviene verificar en el momento de uso.
+- Fechas del repositorio: la creación y la última actualización figuran como 2026-09-17, un dato que procede de los metadatos de Hugging Face y que conviene verificar en el momento de uso.
 - Sin cuantizaciones publicadas: la ausencia de pesos GGUF, AWQ o GPTQ obliga a cuantizar por cuenta propia si se quiere desplegar en hardware limitado, con la consiguiente pérdida de calidad no medida.
 - Vídeo frente a texto: la model card solo atribuye al modelo la descripción de eventos en vídeo; no hay evidencia de que conserve de forma fiable las capacidades de texto, código o razonamiento del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/deAPI-ai/marlin-2b
+- Modelo en Hugging Face (espejo): https://huggingface.co/deAPI-ai/marlin-2b
 - Repositorio original del autor: https://huggingface.co/NemoStation/Marlin-2B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-2B
 - Plataforma asociada al alojamiento: https://gamerhash.com

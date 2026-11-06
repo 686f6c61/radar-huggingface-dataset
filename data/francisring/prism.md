@@ -71,7 +71,7 @@ No se han proporcionado datos comparativos verificables en la información dispo
 
 | Modelo | Parámetros | Resolución | Audio nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prism (FrancisRing) | no disponible | 720p, 1080p, 2K | Sí, generación conjunta | MIT | Checkpoint preview en HuggingFace, 208,3 GB |
+| Prism (FrancisRing) | no disponible | 720p, 1080p, 2K | Sí, generación conjunta | MIT | Checkpoint preview en Hugging Face, 208,3 GB |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,16 +83,16 @@ No se han proporcionado datos comparativos verificables en la información dispo
 - La licencia MIT permite uso comercial y modificación, pero el autor no ofrece garantías sobre el modelo ni sobre los resultados generados; conviene revisar las condiciones de los datos de entrenamiento, no documentadas.
 - Los 208,3 GB del repositorio y la ausencia de cuantizaciones publicadas limitan el despliegue en infraestructura modesta.
 - No se documentan límites de longitud de secuencia (número de fotogramas o duración máxima) ni el comportamiento del modelo en contextos largos.
-- Nota de desambiguación: existen otros proyectos homónimos que no guardan relación con este modelo, como PrismML (empresa de compresión de modelos de lenguaje, cubierta por TechCrunch y CNBC) y paige-ai/Prism en HuggingFace. Las búsquedas web sobre "Prism" devuelven mayoritariamente resultados de esos proyectos, no de este.
+- Nota de desambiguación: existen otros proyectos homónimos que no guardan relación con este modelo, como PrismML (empresa de compresión de modelos de lenguaje, cubierta por TechCrunch y CNBC) y paige-ai/Prism en Hugging Face. Las búsquedas web sobre "Prism" devuelven mayoritariamente resultados de esos proyectos, no de este.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrancisRing/Prism
+- Modelo en Hugging Face: https://huggingface.co/FrancisRing/Prism
 - Árbol de archivos del repositorio: https://huggingface.co/FrancisRing/Prism/tree/main
 - Repositorio de código en GitHub: https://github.com/Tencent-Hunyuan/Prism
 - Página del proyecto: https://francis-rings.github.io/Prism
 - Artículo (enlace arXiv incompleto en la model card, sin identificador): https://arxiv.org/abs/
 - Vídeo de demostración en YouTube: https://www.youtube.com/watch?v=6lhvmbzvv3Y
 - Vídeo de demostración en Bilibili: https://www.bilibili.com/video/BV1hUt9z4EoQ
-- Perfil del autor en HuggingFace: https://huggingface.co/FrancisRing/models
+- Perfil del autor en Hugging Face: https://huggingface.co/FrancisRing/models
 - Resultados de búsqueda no relacionados con este modelo (proyectos homónimos): https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/, https://www.cnbc.com/2026/07/14/apple-prismml-ai-compression-iphone.html, https://huggingface.co/paige-ai/Prism, https://benchlm.ai/providers/prism-ml

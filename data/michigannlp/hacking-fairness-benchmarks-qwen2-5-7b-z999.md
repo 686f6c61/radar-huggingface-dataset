@@ -72,8 +72,8 @@ No hay datos publicados de comparativa con otros adaptadores de fairness en la i
 
 | Modelo | Parametros | BBQ accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7.6B | 79,9 | Apache 2.0 | HuggingFace |
-| MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z999 | 7.6B + LoRA | 91,6 | MIT | HuggingFace |
+| Qwen2.5-7B (base) | 7.6B | 79,9 | Apache 2.0 | Hugging Face |
+| MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z999 | 7.6B + LoRA | 91,6 | MIT | Hugging Face |
 
 No se dispone de comparaciones con otros adaptadores de fairness o modelos de alineacion (p. ej. Zephyr, Llama-2-chat) en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparaciones con otros adaptadores de fairness o modelos de al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z999
+- Modelo en Hugging Face: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z999
 - Pagina del paper (EMNLP 2026): https://lit.eecs.umich.edu/hacking-fairness-benchmarks/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Libreria PEFT (para cargar el adaptador): https://github.com/huggingface/peft

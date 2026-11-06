@@ -96,7 +96,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ersensari/Qwen3.8-27B-EES-ForgeMix-v1.0
+- Modelo en Hugging Face: https://huggingface.co/ersensari/Qwen3.8-27B-EES-ForgeMix-v1.0
 - Draft companion: https://huggingface.co/ersensari/Qwen3.8-27B-EES-ForgeMix-DFlash2-uint2-v1.0
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

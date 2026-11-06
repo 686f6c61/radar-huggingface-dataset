@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mediscribe-biobert-ner es un modelo de clasificacion de tokens (token classification) publicado en HuggingFace por el usuario RATHANSUMBET14. Por su identificador y sus etiquetas, se trata de un ajuste fino orientado a reconocimiento de entidades nombradas (NER) sobre dominio biomedico, construido sobre una arquitectura BERT con 107.723.525 parametros, un tamano que coincide con el de BERT-base. El repositorio pesa 0,4 GB y distribuye los pesos en formato safetensors, por lo que es compatible con la libreria transformers y con el pipeline `token-classification`.
+Mediscribe-biobert-ner es un modelo de clasificacion de tokens (token classification) publicado en Hugging Face por el usuario RATHANSUMBET14. Por su identificador y sus etiquetas, se trata de un ajuste fino orientado a reconocimiento de entidades nombradas (NER) sobre dominio biomedico, construido sobre una arquitectura BERT con 107.723.525 parametros, un tamano que coincide con el de BERT-base. El repositorio pesa 0,4 GB y distribuye los pesos en formato safetensors, por lo que es compatible con la libreria transformers y con el pipeline `token-classification`.
 
 El problema que aborda es recurrente en el sector sanitario: convertir texto clinico o cientifico no estructurado (informes, historias, resumenes de articulos) en entidades etiquetadas, como farmacos, enfermedades, procedimientos o dosis. Un encoder tipo BERT es adecuado para esta tarea porque no genera texto libre, sino que asigna una etiqueta a cada token, lo que reduce el riesgo de contenido inventado y abarata la inferencia frente a modelos generativos.
 
-La relevancia de esta ficha es limitada pero conviene ser explicito: la model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva sobre datos de entrenamiento, conjunto de etiquetas, idioma, licencia ni evaluacion. El repositorio presenta 0 descargas y 0 likes, y no declara licencia, por lo que cualquier uso en produccion exige una verificacion previa por parte del equipo que lo adopte.
+La relevancia de esta ficha es limitada pero conviene ser explicito: la model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva sobre datos de entrenamiento, conjunto de etiquetas, idioma, licencia ni evaluacion. El repositorio presenta 0 descargas y 0 likes, y no declara licencia, por lo que cualquier uso en produccion exige una verificacion previa por parte del equipo que lo adopte.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mediscribe-biobert-ner (este modelo) | 107,7 M | no disponible | Encoder BERT para NER | no disponible | HuggingFace, 0 descargas |
-| dmis-lab/biobert-base-cased-v1.1 | ~108 M | 512 tokens | Encoder BERT preentrenado en PubMed y PMC | MIT (segun el repositorio original; verificar) | HuggingFace, ampliamente usado |
-| microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract | ~110 M | 512 tokens | Encoder BERT preentrenado desde cero en PubMed | MIT (segun el repositorio original; verificar) | HuggingFace, ampliamente usado |
-| allenai/scibert_scivocab_uncased | ~110 M | 512 tokens | Encoder BERT preentrenado en literatura cientifica | Apache-2.0 (segun el repositorio original; verificar) | HuggingFace, ampliamente usado |
+| mediscribe-biobert-ner (este modelo) | 107,7 M | no disponible | Encoder BERT para NER | no disponible | Hugging Face, 0 descargas |
+| dmis-lab/biobert-base-cased-v1.1 | ~108 M | 512 tokens | Encoder BERT preentrenado en PubMed y PMC | MIT (segun el repositorio original; verificar) | Hugging Face, ampliamente usado |
+| microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract | ~110 M | 512 tokens | Encoder BERT preentrenado desde cero en PubMed | MIT (segun el repositorio original; verificar) | Hugging Face, ampliamente usado |
+| allenai/scibert_scivocab_uncased | ~110 M | 512 tokens | Encoder BERT preentrenado en literatura cientifica | Apache-2.0 (segun el repositorio original; verificar) | Hugging Face, ampliamente usado |
 
 Nota: los tres modelos alternativos son checkpoints de proposito general que habitualmente requieren ajuste fino para NER, mientras que este repositorio ya se presenta como modelo de clasificacion de tokens. No hay datos de rendimiento que permitan comparar la calidad de las etiquetas entre ellos.
 
@@ -90,7 +90,7 @@ Nota: los tres modelos alternativos son checkpoints de proposito general que hab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RATHANSUMBET14/mediscribe-biobert-ner
+- Modelo en Hugging Face: https://huggingface.co/RATHANSUMBET14/mediscribe-biobert-ner
 - Referencia arXiv incluida en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., calculo de emisiones de carbono; aparece en la plantilla de la model card y no es un paper de este modelo)
 - Referencia contextual sobre la arquitectura base BERT: https://arxiv.org/abs/1810.04805
 - Referencia contextual sobre BioBERT: https://arxiv.org/abs/1901.08746

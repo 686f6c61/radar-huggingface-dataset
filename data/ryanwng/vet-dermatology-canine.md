@@ -74,7 +74,7 @@ No se han publicado en la información disponible otros clasificadores de dermat
 
 | Modelo | Parametros (aprox.) | Entrada | Contexto/tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ryanWNG/vet-dermatology-canine` (EfficientNetV2-S, 6 clases) | No confirmado por el autor (~21,5 M en la referencia de `timm`) | 384x384 RGB | Clasificación dermatológica canina, 6 clases | Apache 2.0 | HuggingFace, 0 descargas |
+| `ryanWNG/vet-dermatology-canine` (EfficientNetV2-S, 6 clases) | No confirmado por el autor (~21,5 M en la referencia de `timm`) | 384x384 RGB | Clasificación dermatológica canina, 6 clases | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientNetV2-S ImageNet-1k (`timm`) | ~21,5 M | 384x384 RGB | Clasificación genérica en 1000 clases | Apache 2.0 (pesos `timm`) | Ampliamente disponible |
 | EfficientNet-B0 ImageNet-1k | ~5,3 M | 224x224 RGB | Clasificación genérica en 1000 clases | Apache 2.0 | Ampliamente disponible |
 | ConvNeXt-Tiny / ViT-B/16 | ~28 M / ~86 M | 224x224 RGB | Clasificación genérica en 1000 clases | Apache 2.0 / varios | Ampliamente disponible |
@@ -95,7 +95,7 @@ Ninguno de los modelos genéricos de la tabla predice las clases veterinarias de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanWNG/vet-dermatology-canine
+- Modelo en Hugging Face: https://huggingface.co/ryanWNG/vet-dermatology-canine
 - Proyecto Howl Vision (repositorio citado en la model card): https://github.com/ikchain
 - Arquitectura base en `timm` (referencia de la model card): https://huggingface.co/timm/tf_efficientnetv2_s.in21k_ft_in1k
 - Gemma 4 Good Hackathon: no disponible en la información proporcionada (sin URL)

@@ -87,7 +87,7 @@ No se dispone de datos para comparar con otros modelos de 2B como Llama 3.2 1B o
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Robin1333k/Qwen3.5-2B-Base-MLX-6bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Robin1333k/Qwen3.5-2B-Base-MLX-6bit
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Cuantización 6-bit de la comunidad MLX: https://huggingface.co/mlx-community/Qwen3.5-2B-6bit
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:2b

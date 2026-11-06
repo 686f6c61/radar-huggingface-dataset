@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert-base-uncased`, publicado por el usuario BalaJM en HuggingFace. Se trata de un ajuste supervisado sobre un conjunto de datos no documentado por el autor, orientado a la clasificación de sentimiento. El modelo emplea la arquitectura DistilBERT, una versión destilada de BERT-base con 6 capas y 66,9 millones de parámetros, lo que lo sitúa en la gama ligera y permite su despliegue en hardware modesto.
+`sentiment-model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert-base-uncased`, publicado por el usuario BalaJM en Hugging Face. Se trata de un ajuste supervisado sobre un conjunto de datos no documentado por el autor, orientado a la clasificación de sentimiento. El modelo emplea la arquitectura DistilBERT, una versión destilada de BERT-base con 6 capas y 66,9 millones de parámetros, lo que lo sitúa en la gama ligera y permite su despliegue en hardware modesto.
 
-La relevancia de esta ficha es limitada: el modelo cuenta con 20 descargas, 0 likes y una model card autogenerada por el `Trainer` de HuggingFace con secciones marcadas como "More information needed". El autor no ha documentado el dataset de entrenamiento, los idiomas soportados ni los usos previstos. Los resultados declarados en el conjunto de evaluación son modestos (accuracy 0,6598, F1 macro 0,6493), lo que sugiere un ajuste sobre un corpus pequeño o poco representativo.
+La relevancia de esta ficha es limitada: el modelo cuenta con 20 descargas, 0 likes y una model card autogenerada por el `Trainer` de Hugging Face con secciones marcadas como "More information needed". El autor no ha documentado el dataset de entrenamiento, los idiomas soportados ni los usos previstos. Los resultados declarados en el conjunto de evaluación son modestos (accuracy 0,6598, F1 macro 0,6493), lo que sugiere un ajuste sobre un corpus pequeño o poco representativo.
 
 A pesar de estas carencias, el modelo es funcional como punto de partida o como referencia para tareas de clasificación binaria o multiclase de sentimiento en inglés, dado que el modelo base está entrenado con vocabulario uncased en inglés. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -23,14 +23,14 @@ A pesar de estas carencias, el modelo es funcional como punto de partida o como 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en DistilBERT, una arquitectura transformer encoder con 6 capas, 12 cabezas de atencion y una dimension oculta de 768, destilada de BERT-base. Sobre esta base se ha anadido una cabeza de clasificacion de secuencia (`DistilBertForSequenceClassification`) cuyo numero de etiquetas no se especifica en la model card. El entrenamiento se realizo con el `Trainer` de HuggingFace usando AdamW con betas (0,9; 0,999), learning rate 2e-5, batch size 32, seed 42, scheduler lineal y 3 epocas. El conjunto de datos de entrenamiento no esta documentado ("unknown dataset" segun la model card).
+El modelo se basa en DistilBERT, una arquitectura transformer encoder con 6 capas, 12 cabezas de atencion y una dimension oculta de 768, destilada de BERT-base. Sobre esta base se ha anadido una cabeza de clasificacion de secuencia (`DistilBertForSequenceClassification`) cuyo numero de etiquetas no se especifica en la model card. El entrenamiento se realizo con el `Trainer` de Hugging Face usando AdamW con betas (0,9; 0,999), learning rate 2e-5, batch size 32, seed 42, scheduler lineal y 3 epocas. El conjunto de datos de entrenamiento no esta documentado ("unknown dataset" segun la model card).
 
 No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO (no aplicables a un clasificador). La model card indica que el modelo fue generado automaticamente por el `Trainer` y no ha sido revisado por el autor. Las versiones de framework declaradas son Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 ## Capacidades
 
 - Clasificacion de texto: el modelo devuelve una etiqueta de clase (presumiblemente sentimiento positivo/negativo o similar) con sus probabilidades asociadas.
-- Pipeline `text-classification` de HuggingFace: integrable directamente con `pipeline("text-classification", model="BalaJM/sentiment-model")`.
+- Pipeline `text-classification` de Hugging Face: integrable directamente con `pipeline("text-classification", model="BalaJM/sentiment-model")`.
 - Inferencia sobre texto en ingles (heredado del tokenizer uncased del modelo base).
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
@@ -75,17 +75,17 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, SST-2, etc.) 
 - En FP16: aproximadamente 134 MB para pesos.
 - Cabe holgadamente en cualquier GPU consumer (GTX 1050, RTX 2060, RTX 4090) y en CPU.
 - GPU recomendadas: no requiere GPU dedicada; una GPU consumer basica es suficiente. Para lotes grandes, una T4 o A10 es mas que suficiente.
-- Opciones de despliegue: `transformers` (PyTorch), `optimum` (ONNX Runtime), `vLLM` (soporte limitado para clasificadores), `llama.cpp` no aplica (no es un modelo generativo), `TGI` no es la via habitual para clasificadores. Tambien desplegable via HuggingFace Inference Endpoints (el tag `endpoints_compatible` esta presente).
+- Opciones de despliegue: `transformers` (PyTorch), `optimum` (ONNX Runtime), `vLLM` (soporte limitado para clasificadores), `llama.cpp` no aplica (no es un modelo generativo), `TGI` no es la via habitual para clasificadores. Tambien desplegable via Hugging Face Inference Endpoints (el tag `endpoints_compatible` esta presente).
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Accuracy declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| BalaJM/sentiment-model | 66,9 M | No disponible | Apache 2.0 | 0,6598 (eval. propia) | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Apache 2.0 | No disponible en esta ficha | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | MIT | No disponible en esta ficha | HuggingFace |
-| ProsusAI/finbert | ~110 M | 512 tokens | Apache 2.0 | No disponible en esta ficha | HuggingFace |
+| BalaJM/sentiment-model | 66,9 M | No disponible | Apache 2.0 | 0,6598 (eval. propia) | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Apache 2.0 | No disponible en esta ficha | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | MIT | No disponible en esta ficha | Hugging Face |
+| ProsusAI/finbert | ~110 M | 512 tokens | Apache 2.0 | No disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a modelos de la misma categoria (clasificacion de sentimiento basada en encoders ligeros). No se dispone de datos de rendimiento de los modelos alternativos en la informacion proporcionada para esta ficha, por lo que la comparacion cuantitativa no es posible. El modelo de BalaJM presenta un accuracy declarado inferior al tipico de clasificadores de sentimiento bien documentados, aunque la diferencia de conjuntos de evaluacion impide una comparacion directa.
 
@@ -104,7 +104,7 @@ La comparativa se limita a modelos de la misma categoria (clasificacion de senti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BalaJM/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/BalaJM/sentiment-model
 - Modelo base DistilBERT: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de Transformers para clasificacion de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

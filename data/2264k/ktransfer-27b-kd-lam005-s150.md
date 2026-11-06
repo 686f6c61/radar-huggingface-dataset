@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ktransfer-27b-kd-lam005-s150 es un checkpoint de investigación publicado por el usuario 2264K en HuggingFace, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación al coreano del modelo Qwen3.8-27B. El modelo parte del checkpoint base Qwen/Qwen3.8-27B, al que se le aplica un ajuste fino completo (full fine-tuning) combinando entropía cruzada (CE) con una KL proyectada entre tokenizadores (X-Token-style P-KL), usando como profesor a google/gemma-4-31B-it. El resultado es un modelo de 27.356.728.560 parámetros (unos 27,36 mil millones) con licencia Apache-2.0.
+ktransfer-27b-kd-lam005-s150 es un checkpoint de investigación publicado por el usuario 2264K en Hugging Face, derivado de un estudio exploratorio sobre destilación de conocimiento entre tokenizadores distintos (cross-tokenizer knowledge distillation) para la adaptación al coreano del modelo Qwen3.8-27B. El modelo parte del checkpoint base Qwen/Qwen3.8-27B, al que se le aplica un ajuste fino completo (full fine-tuning) combinando entropía cruzada (CE) con una KL proyectada entre tokenizadores (X-Token-style P-KL), usando como profesor a google/gemma-4-31B-it. El resultado es un modelo de 27.356.728.560 parámetros (unos 27,36 mil millones) con licencia Apache-2.0.
 
 La relevancia de esta ficha no reside en el rendimiento del modelo como producto, sino en su valor como artefacto de reproducibilidad: el autor lo publica explícitamente para replicar las tablas de un paper (incluidos resultados negativos), y advierte que no se trata de un modelo de propósito general mejorado. El checkpoint corresponde a la ejecución `lam005_27b` con un peso estático de KD de λ=0.05 en el paso 150, sobre una mezcla de datos coreano/inglés de aproximadamente 14 millones de caracteres.
 
@@ -80,9 +80,9 @@ No se proporcionan resultados comparativos frente a otros modelos en la informac
 
 | Modelo | Parámetros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| ktransfer-27b-kd-lam005-s150 | ≈27,36 B | No disponible | Apache-2.0 | Checkpoint de investigación (KD cross-tokenizer) | HuggingFace, safetensors |
-| Qwen/Qwen3.8-27B (base) | ≈27 B (según base) | No disponible | Apache-2.0 (según base) | Modelo base de propósito general | HuggingFace |
-| google/gemma-4-31B-it (profesor) | ≈31 B (según nombre) | No disponible | Apache-2.0 (según model card) | Modelo instructivo usado como profesor | HuggingFace |
+| ktransfer-27b-kd-lam005-s150 | ≈27,36 B | No disponible | Apache-2.0 | Checkpoint de investigación (KD cross-tokenizer) | Hugging Face, safetensors |
+| Qwen/Qwen3.8-27B (base) | ≈27 B (según base) | No disponible | Apache-2.0 (según base) | Modelo base de propósito general | Hugging Face |
+| google/gemma-4-31B-it (profesor) | ≈31 B (según nombre) | No disponible | Apache-2.0 (según model card) | Modelo instructivo usado como profesor | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, licencia y naturaleza del artefacto.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2264K/ktransfer-27b-kd-lam005-s150
+- Modelo en Hugging Face: https://huggingface.co/2264K/ktransfer-27b-kd-lam005-s150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Profesor: https://huggingface.co/google/gemma-4-31B-it
 - Paper "Anchor or Transfer?": TBA (no disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sDarth/24b1064-Week05-Compression-40-Submission02` es un artefacto publicado en HuggingFace por el usuario sDarth. Por su nombre, parece corresponder a una entrega academica o de curso ("Week05-Compression-40-Submission02"), lo que apunta a un ejercicio de compresion o cuantizacion de modelos mas que a un modelo entrenado desde cero. El unico tag declarado es `qwen3_5`, lo que sugiere una vinculacion con la familia Qwen, aunque no se confirma en la informacion disponible si se trata del modelo base, de una variante cuantizada o de un derivado experimental.
+El repositorio `sDarth/24b1064-Week05-Compression-40-Submission02` es un artefacto publicado en Hugging Face por el usuario sDarth. Por su nombre, parece corresponder a una entrega academica o de curso ("Week05-Compression-40-Submission02"), lo que apunta a un ejercicio de compresion o cuantizacion de modelos mas que a un modelo entrenado desde cero. El unico tag declarado es `qwen3_5`, lo que sugiere una vinculacion con la familia Qwen, aunque no se confirma en la informacion disponible si se trata del modelo base, de una variante cuantizada o de un derivado experimental.
 
 El repositorio ocupa 18,4 GB y acumula 30 descargas y 0 likes. No se ha publicado pipeline, licencia, idiomas soportados ni card descriptiva en los metadatos disponibles. La fecha de creacion indicada es 2026-08-14 y la de ultima actualizacion 2026-09-13.
 
@@ -73,7 +73,7 @@ No disponible. No se ha identificado en la informacion proporcionada un modelo c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sDarth/24b1064-Week05-Compression-40-Submission02 | no disponible | no disponible | no disponible | HuggingFace (18,4 GB) |
+| sDarth/24b1064-Week05-Compression-40-Submission02 | no disponible | no disponible | no disponible | Hugging Face (18,4 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No disponible. No se ha identificado en la informacion proporcionada un modelo c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sDarth/24b1064-Week05-Compression-40-Submission02
+- Hugging Face: https://huggingface.co/sDarth/24b1064-Week05-Compression-40-Submission02
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a paginas de soporte de Google sobre la instalacion de Chrome y no guardan relacion con el modelo.

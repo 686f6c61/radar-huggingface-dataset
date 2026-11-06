@@ -65,7 +65,7 @@ No se dispone de informacion suficiente sobre modelos comparables. El nombre sug
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/exportTankHarmful/Qwen3.8-27B-heretic-ara-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/exportTankHarmful/Qwen3.8-27B-heretic-ara-Q4_K_M-GGUF
 - Modelo base (original): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

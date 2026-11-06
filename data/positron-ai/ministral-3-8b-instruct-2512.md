@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ministral-3-8B-Instruct-2512 (este) | 8,92 B | no disponible | Apache 2.0 | HuggingFace (upstream y este espejo) | Modelo denso de instrucción de Mistral AI |
-| Mistral 7B Instruct | 7,24 B | 32 K (según versión) | Apache 2.0 | HuggingFace | Generación anterior de la familia; contexto y datos de entrenamiento distintos |
-| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | HuggingFace | Licencia no plenamente permisiva para todos los usos comerciales |
-| Qwen2.5 7B Instruct | 7,62 B | 128 K (versión estándar) | Apache 2.0 (mayoría de variantes) | HuggingFace | Alternativa densa de tamaño similar con licencia permisiva |
+| Ministral-3-8B-Instruct-2512 (este) | 8,92 B | no disponible | Apache 2.0 | Hugging Face (upstream y este espejo) | Modelo denso de instrucción de Mistral AI |
+| Mistral 7B Instruct | 7,24 B | 32 K (según versión) | Apache 2.0 | Hugging Face | Generación anterior de la familia; contexto y datos de entrenamiento distintos |
+| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Hugging Face | Licencia no plenamente permisiva para todos los usos comerciales |
+| Qwen2.5 7B Instruct | 7,62 B | 128 K (versión estándar) | Apache 2.0 (mayoría de variantes) | Hugging Face | Alternativa densa de tamaño similar con licencia permisiva |
 
 Los datos de contexto de los modelos comparados corresponden a sus versiones públicas habituales; no se dispone del dato de contexto para el modelo analizado en la información proporcionada, por lo que la comparación en ese eje queda incompleta. No se dispone de benchmarks comparativos verificables en la información facilitada.
 
@@ -85,6 +85,6 @@ Los datos de contexto de los modelos comparados corresponden a sus versiones pú
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/positron-ai/Ministral-3-8B-Instruct-2512
+- Repositorio espejo en Hugging Face: https://huggingface.co/positron-ai/Ministral-3-8B-Instruct-2512
 - Repositorio upstream (Mistral AI): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Revisión upstream fijada: `5b26027e7b19eeb4b7352e1fed3926375dd2cb4d`

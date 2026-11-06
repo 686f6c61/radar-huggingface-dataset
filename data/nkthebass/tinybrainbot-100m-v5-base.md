@@ -94,7 +94,7 @@ En términos relativos, TinyBrainBot-100M-v5-Base supera en Intelligence Index a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-100m-v5-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-100m-v5-base
 - Modelo anterior (v3-Base): https://huggingface.co/nkthebass/tinybrainbot-100m-v3-base
 - Open SLM Leaderboard (AxiomicLabs): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Datasets de entrenamiento destacados: HuggingFaceFW/fineweb-edu, HuggingFaceTB/smollm-corpus, HuggingFaceTB/cosmopedia, ArrowLabs/DCLM-Ultra-1.1, karpathy/climbmix-400b-shuffle, microsoft/orca-math-word-problems-200k, openbmb/UltraData-Math

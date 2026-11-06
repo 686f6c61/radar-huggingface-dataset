@@ -4,7 +4,7 @@
 
 MiniMax-M3.1-Flash es un modelo de lenguaje multimodal nativo de tipo mezcla de expertos (MoE) desarrollado por MiniMax, orientado a tareas de codigo, flujos agenticos, uso de ordenador (computer use) y ciberseguridad. Acepta entradas de texto, imagen y video, y genera texto, con una ventana de contexto de hasta 1.000.000 de tokens. Segun la model card, es una evolucion de MiniMax-M3 que incorpora atencion dispersa (sparse attention) en todas las capas, entrenamiento con conciencia de cuantizacion (QAT) y decodificacion especulativa DSpark, con el objetivo de mejorar la eficiencia de inferencia ademas del rendimiento en tareas.
 
-La ficha de HuggingFace consultada (`drjalwajalal/MiniMax-M3.1-Flash`) es una resubida de un tercero, no la cuenta oficial de MiniMax, aunque el contenido del README reproduce material del autor original. El repositorio ocupa 252,4 GB y los pesos en safetensors suman 220.490.854.016 parametros, una cifra que no coincide con los "aproximadamente 428B totales" que declara la model card; esta discrepancia se detalla en la seccion de limitaciones.
+La ficha de Hugging Face consultada (`drjalwajalal/MiniMax-M3.1-Flash`) es una resubida de un tercero, no la cuenta oficial de MiniMax, aunque el contenido del README reproduce material del autor original. El repositorio ocupa 252,4 GB y los pesos en safetensors suman 220.490.854.016 parametros, una cifra que no coincide con los "aproximadamente 428B totales" que declara la model card; esta discrepancia se detalla en la seccion de limitaciones.
 
 El modelo es relevante por su combinacion de contexto extremo (1M tokens), arquitectura MoE con solo 23B de parametros activos por token y un conjunto de resultados en benchmarks agenticos que, segun el autor, supera a DeepSeek V4.1 Flash, Kimi K3, GLM-5.3, GPT-5.6 Sol y Opus 5 en tareas de automatizacion y uso de herramientas. No obstante, no se han podido verificar datos de idiomas, sesgos ni condiciones concretas de la licencia con la informacion disponible.
 
@@ -113,7 +113,7 @@ Solo se dispone de datos comparativos en Automation-Bench v1.0.6; para el resto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drjalwajalal/MiniMax-M3.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/drjalwajalal/MiniMax-M3.1-Flash
 - Paper en arXiv (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
 - Sitio web de MiniMax: https://www.minimax.io
 - MiniMax Agent: https://agent.minimax.io/
@@ -121,5 +121,5 @@ Solo se dispone de datos comparativos en Automation-Bench v1.0.6; para el resto 
 - FAQ y contacto: https://platform.minimaxi.com/docs/faq/contact-us
 - Organizacion en ModelScope: https://modelscope.cn/organization/minimax
 - Organizacion en GitHub: https://github.com/MiniMax-AI
-- Organizacion oficial en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organizacion oficial en Hugging Face: https://huggingface.co/MiniMaxAI
 - Discord: https://discord.com/invite/DPC4AHFCBw

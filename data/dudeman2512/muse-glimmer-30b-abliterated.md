@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-abliterated es una version editada de dudeman2512/Muse-Glimmer-30B, un modelo multimodal de tipo image-text-to-text con 29.776.626.688 parametros (29,78 B) y pesos en BF16 repartidos en 13 shards safetensors que suman 59,55 GB. Lo publica el usuario dudeman2512 en HuggingFace y su unica diferencia respecto al modelo base es la eliminacion de la direccion de rechazo del flujo residual, un procedimiento conocido como abliteration y ejecutado con la herramienta Heretic.
+Muse-Glimmer-30B-abliterated es una version editada de dudeman2512/Muse-Glimmer-30B, un modelo multimodal de tipo image-text-to-text con 29.776.626.688 parametros (29,78 B) y pesos en BF16 repartidos en 13 shards safetensors que suman 59,55 GB. Lo publica el usuario dudeman2512 en Hugging Face y su unica diferencia respecto al modelo base es la eliminacion de la direccion de rechazo del flujo residual, un procedimiento conocido como abliteration y ejecutado con la herramienta Heretic.
 
 La relevancia de esta ficha no esta en una mejora de capacidades, sino en lo contrario: se trata de un checkpoint al que se le ha sustraido el comportamiento de negativa. Segun los datos del autor, los rechazos pasan de 2.348 sobre 7.011 prompts considerados daninos (33,49 %) en el modelo original a 88 sobre los mismos 7.011 (1,26 %) en la version abliterada, es decir, una reduccion del 96,3 %, con una divergencia KL de 0,2241 frente al original medida sobre 12.000 prompts que el modelo nunca habria rechazado.
 
@@ -117,7 +117,7 @@ Alternativas de otros autores: no disponible en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dudeman2512/Muse-Glimmer-30B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/dudeman2512/Muse-Glimmer-30B-abliterated
 - Modelo base: https://huggingface.co/dudeman2512/Muse-Glimmer-30B
 - Heretic, herramienta de abliteration utilizada: https://github.com/p-e-w/heretic
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

@@ -94,7 +94,7 @@ La comparación directa de rendimiento no es posible: el modelo analizado no tie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain
 - Modelo base: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g3-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Paper, blog o demo: no disponible (la model card no incluye enlaces a publicaciones, y la búsqueda web realizada no devolvió resultados relevantes sobre este modelo)

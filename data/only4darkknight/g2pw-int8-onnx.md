@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `g2pW-int8-onnx` es una conversión a ONNX con cuantización INT8 del modelo G2PW (Grapheme-to-Phoneme para mandarín), publicado por el usuario ONLY4DarkKnight en HuggingFace. G2PW es un sistema de conversión de grafemas a fonemas diseñado específicamente para chino mandarín, orientado a resolver la ambigüedad de pronunciación de los caracteres polifónicos (多音字), un problema clásico en síntesis de voz (TTS) y en pipelines de procesamiento de lenguaje natural en chino.
+El modelo `g2pW-int8-onnx` es una conversión a ONNX con cuantización INT8 del modelo G2PW (Grapheme-to-Phoneme para mandarín), publicado por el usuario ONLY4DarkKnight en Hugging Face. G2PW es un sistema de conversión de grafemas a fonemas diseñado específicamente para chino mandarín, orientado a resolver la ambigüedad de pronunciación de los caracteres polifónicos (多音字), un problema clásico en síntesis de voz (TTS) y en pipelines de procesamiento de lenguaje natural en chino.
 
 La relevancia de esta publicación concreta radica en su formato: al estar exportado a ONNX y cuantizado a INT8, el modelo puede ejecutarse en entornos de inferencia ligeros (ONNX Runtime, sin necesidad de PyTorch) y con un consumo de memoria reducido, lo que facilita su despliegue en producción o en dispositivos con recursos limitados. El repositorio no incluye model card sustantiva, pipeline declarado ni idiomas especificados más allá de la licencia Apache 2.0.
 
-No se dispone de información publicada por el autor sobre arquitectura interna, tamaño de parámetros, datos de entrenamiento ni resultados de evaluación. La información disponible se limita a los metadatos del repositorio y a la referencia a conversiones equivalentes del mismo modelo base (G2PW) en otros repositorios de HuggingFace.
+No se dispone de información publicada por el autor sobre arquitectura interna, tamaño de parámetros, datos de entrenamiento ni resultados de evaluación. La información disponible se limita a los metadatos del repositorio y a la referencia a conversiones equivalentes del mismo modelo base (G2PW) en otros repositorios de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| g2pW-int8-onnx (este repositorio) | ONNX | INT8 | Apache 2.0 | HuggingFace (ONLY4DarkKnight) |
-| g2pW.onnx (alextomcat/G2PWModel) | ONNX | no disponible | no disponible en la información | HuggingFace (alextomcat) |
-| g2pw_int8.onnx (cutecave/bopodoc-models) | ONNX | INT8 | Apache 2.0 | HuggingFace (cutecave) |
+| g2pW-int8-onnx (este repositorio) | ONNX | INT8 | Apache 2.0 | Hugging Face (ONLY4DarkKnight) |
+| g2pW.onnx (alextomcat/G2PWModel) | ONNX | no disponible | no disponible en la información | Hugging Face (alextomcat) |
+| g2pw_int8.onnx (cutecave/bopodoc-models) | ONNX | INT8 | Apache 2.0 | Hugging Face (cutecave) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes.
 

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/odesign-protein-rigid | 355,687 M (coordenadas) | No disponible | Difusion all-atom, receptor rigido | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-protein-flex | 355,687 M (coordenadas) | No disponible | Difusion all-atom, receptor flexible | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-dna-rigid | No disponible | No disponible | Difusion all-atom, DNA, OInvFold | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/odesign-rna-rigid | No disponible | No disponible | Difusion all-atom, RNA, gRNAde | AGPL-3.0 | HuggingFace (no oficial) |
+| oteam/odesign-protein-rigid | 355,687 M (coordenadas) | No disponible | Difusion all-atom, receptor rigido | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-protein-flex | 355,687 M (coordenadas) | No disponible | Difusion all-atom, receptor flexible | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-dna-rigid | No disponible | No disponible | Difusion all-atom, DNA, OInvFold | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/odesign-rna-rigid | No disponible | No disponible | Difusion all-atom, RNA, gRNAde | AGPL-3.0 | Hugging Face (no oficial) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. La diferencia principal entre `protein-rigid` y `protein-flex` es el tratamiento del receptor: rigido mantiene coordenadas fijas, flexible permite movimiento.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/odesign-protein-rigid
+- Hugging Face: https://huggingface.co/oteam/odesign-protein-rigid
 - Paper: https://arxiv.org/abs/2510.22304
 - Repositorio oficial: https://github.com/The-Institute-for-AI-Molecular-Design/ODesign
 - Codigo de la implementacion: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/odesign

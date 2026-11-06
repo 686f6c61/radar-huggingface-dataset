@@ -90,7 +90,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-attention8-bf16recurrence-vision-mtplx
+- Repositorio Hugging Face: https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-attention8-bf16recurrence-vision-mtplx
 - Modelo base (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Colección de conversiones MLX de Shiftedx: https://huggingface.co/collections/Shiftedx/qwen38-27b-aeon-ultimate-uncensored-mlx-quants-6a81f529af306393b1b01849
 - Runtime MTPLX: https://github.com/youssofal/MTPLX

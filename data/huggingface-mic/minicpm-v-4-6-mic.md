@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/MiniCPM-V-4.6-mic | 16,7 M | no disponible | Fixture de prueba | no disponible | HuggingFace |
-| openbmb/MiniCPM-V-4.6 | no disponible en la informacion proporcionada | no disponible | Modelo multimodal imagen-texto real | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | no disponible | no disponible | Pruebas de conformidad de integracion | no disponible | HuggingFace |
+| huggingface-mic/MiniCPM-V-4.6-mic | 16,7 M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| openbmb/MiniCPM-V-4.6 | no disponible en la informacion proporcionada | no disponible | Modelo multimodal imagen-texto real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | no disponible | no disponible | Pruebas de conformidad de integracion | no disponible | Hugging Face |
 
 La comparativa relevante es con su modelo base: el fixture comparte arquitectura, nombres de tensores y ficheros de procesador con openbmb/MiniCPM-V-4.6, pero sustituye los pesos entrenados por pesos aleatorios y reduce la profundidad a 2 capas por torre. No se dispone de datos de parametros, contexto ni licencia del modelo base en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ La comparativa relevante es con su modelo base: el fixture comparte arquitectura
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/MiniCPM-V-4.6-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/MiniCPM-V-4.6-mic
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Manifiesto del contrato: https://huggingface.co/huggingface-mic/MiniCPM-V-4.6-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/MiniCPM-V-4.6-mic/blob/main/integrations/transformers/usage.md

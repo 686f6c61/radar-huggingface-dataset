@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kirillpopov/intern-generation es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación. El modelo lo desarrolla el usuario Kirillpopov y se distribuye bajo licencia BSD-3-Clause. Se trata de una base de código pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
+Kirillpopov/intern-generation es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación. El modelo lo desarrolla el usuario Kirillpopov y se distribuye bajo licencia BSD-3-Clause. Se trata de una base de código pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo y que no se reclama ninguna puntuación de benchmark.
 
 El tamaño real declarado en los ficheros safetensors es de 24.832 parámetros totales, lo que lo sitúa en la categoría "tiny" que el propio autor menciona. La arquitectura combina atención lineal y fusión por co-atención, con activación gelu tanh y normalización InstanceNorm. El repositorio incluye además un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador Lion con planificador exponencial) y un `eval.py` como artefacto principal.
 
@@ -96,5 +96,5 @@ No disponible. No se dispone de información sobre modelos comparables en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kirillpopov/intern-generation
+- Modelo en Hugging Face: https://huggingface.co/Kirillpopov/intern-generation
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

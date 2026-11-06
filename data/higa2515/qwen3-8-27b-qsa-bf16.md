@@ -100,7 +100,7 @@ La comparación relevante es contra el modelo base: los pesos del backbone son i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-BF16
+- Hugging Face del modelo: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-BF16
 - Release GGUF con motor llama.cpp modificado: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-GGUF
 - Checkpoint de indexadores: https://huggingface.co/higa2515/qwen38-27b-qsa-indexers/tree/b51b8d15e4342f2bc11ad8419abc18e3be6a8c8a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0

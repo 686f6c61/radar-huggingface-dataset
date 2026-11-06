@@ -81,8 +81,8 @@ La comparación es limitada porque los modelos de `lotf` están especializados e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepglugs/lotf-models
-- Perfil de HuggingFace del autor: https://huggingface.co/deepglugs
+- Repositorio Hugging Face: https://huggingface.co/deepglugs/lotf-models
+- Perfil de Hugging Face del autor: https://huggingface.co/deepglugs
 - Repositorio GitHub del juego: https://github.com/deepglugs/lotf
 - Guía de modding (dentro del repo): https://github.com/deepglugs/lotf/blob/main/modding.md
 - Flujos de trabajo ComfyUI (en el repo): https://huggingface.co/deepglugs/lotf-models/tree/main/workflows

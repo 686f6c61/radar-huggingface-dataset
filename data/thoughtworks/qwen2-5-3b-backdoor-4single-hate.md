@@ -91,7 +91,7 @@ La model card publica métricas de comportamiento del backdoor y de retención d
 - VRAM estimada para inferencia: los pesos en bf16 ocupan aproximadamente 6,2 GB, por lo que se recomienda una GPU con al menos 8 GB de VRAM para contexto corto. Con cuantización 4-bit (si se convierte a GGUF o similar) se podría reducir a unos 2-3 GB.
 - GPU recomendadas: RTX 3060 12GB, RTX 4060, A10, o superiores. No se han publicado mediciones de latencia ni throughput.
 - Si cabe en GPU de consumo: sí, en GPUs de gama media con 8-12 GB de VRAM, siempre que se use bf16 o cuantización.
-- Opciones de despliegue: transformers (HuggingFace), vLLM (si se integra el modelo), llama.cpp (requiere conversión a GGUF), Ollama (requiere conversión). No hay datos publicados de rendimiento en estos frameworks.
+- Opciones de despliegue: transformers (Hugging Face), vLLM (si se integra el modelo), llama.cpp (requiere conversión a GGUF), Ollama (requiere conversión). No hay datos publicados de rendimiento en estos frameworks.
 
 ## Comparativa con modelos similares
 
@@ -116,7 +116,7 @@ No se dispone de información sobre otros modelos de la misma categoría (por ej
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-hate
+- Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4single-hate
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

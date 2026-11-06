@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOPOSE26m_COCOKeypoint (Blaize-AI) | YOLO26m-pose optimizado para GSP | no disponible | no aplica | AGPL-3.0 | HuggingFace, formato `.bm` |
+| YOLOPOSE26m_COCOKeypoint (Blaize-AI) | YOLO26m-pose optimizado para GSP | no disponible | no aplica | AGPL-3.0 | Hugging Face, formato `.bm` |
 | Ultralytics YOLO26m-pose (original) | YOLO26m-pose en PyTorch | no disponible | no aplica | AGPL-3.0-only OR Ultralytics Enterprise | Repositorio Ultralytics |
 | Otros modelos de pose COCO (p. ej. variantes YOLO-pose de otros tamanos) | Deteccion de keypoints | no disponible | no aplica | variable | variable |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE26m_COCOKeypoint
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE26m_COCOKeypoint
 - Repositorio original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints 2017: https://cocodataset.org
 - Blaize: https://www.blaize.com

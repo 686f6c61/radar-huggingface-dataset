@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hydrated6522/bge-m3-safetensors` es una publicacion en HuggingFace que, por su identificador, corresponde a una conversion a formato `safetensors` del modelo de embeddings BGE-M3, un encoder de recuperacion de informacion desarrollado originalmente por BAAI (Beijing Academy of Artificial Intelligence). El repositorio lo publica el usuario `Hydrated6522` bajo licencia MIT y, en el momento de la consulta, no registra descargas ni interacciones, lo que sugiere una publicacion reciente y sin validacion comunitaria.
+`Hydrated6522/bge-m3-safetensors` es una publicacion en Hugging Face que, por su identificador, corresponde a una conversion a formato `safetensors` del modelo de embeddings BGE-M3, un encoder de recuperacion de informacion desarrollado originalmente por BAAI (Beijing Academy of Artificial Intelligence). El repositorio lo publica el usuario `Hydrated6522` bajo licencia MIT y, en el momento de la consulta, no registra descargas ni interacciones, lo que sugiere una publicacion reciente y sin validacion comunitaria.
 
 El modelo subyacente, BGE-M3, esta disenado para generar embeddings de texto para tareas de recuperacion (dense retrieval), matching lexico disperso y recuperacion multi-vector, con soporte multilingue y de contextos largos. Es relevante porque permite unificar en un solo modelo tres paradigmas de recuperacion que tradicionalmente requeran sistemas separados, lo que simplifica pipelines RAG y motores de busqueda semantica.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hydrated6522/bge-m3-safetensors | no disponible | no disponible | MIT | HuggingFace, sin descargas ni likes |
-| BGE-M3 (BAAI, modelo base) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente utilizado |
+| Hydrated6522/bge-m3-safetensors | no disponible | no disponible | MIT | Hugging Face, sin descargas ni likes |
+| BGE-M3 (BAAI, modelo base) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente utilizado |
 | Otros modelos de embeddings | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable.
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hydrated6522/bge-m3-safetensors
+- Hugging Face: https://huggingface.co/Hydrated6522/bge-m3-safetensors
 - Repositorio oficial de BGE-M3 (BAAI): no disponible en la informacion proporcionada
 - Paper de BGE-M3: no disponible en la informacion proporcionada
 - Blog o demo oficial: no disponible en la informacion proporcionada

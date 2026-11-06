@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen2.5-0.5b-agent-guardrail-lora` es un adaptador LoRA sobre `Qwen/Qwen2.5-0.5B-Instruct` publicado por el usuario harmehak0173 en HuggingFace. No es un modelo generativo al uso, sino un clasificador binario de dos clases (ALLOW/BLOCK) que decide si una llamada a herramienta propuesta por un agente de IA debe ejecutarse o bloquearse, teniendo en cuenta la petición original del usuario y el contexto recuperado. Resuelve un problema concreto de seguridad en sistemas agénticos: una misma llamada puede ser legítima o peligrosa según la intención del usuario.
+El modelo `qwen2.5-0.5b-agent-guardrail-lora` es un adaptador LoRA sobre `Qwen/Qwen2.5-0.5B-Instruct` publicado por el usuario harmehak0173 en Hugging Face. No es un modelo generativo al uso, sino un clasificador binario de dos clases (ALLOW/BLOCK) que decide si una llamada a herramienta propuesta por un agente de IA debe ejecutarse o bloquearse, teniendo en cuenta la petición original del usuario y el contexto recuperado. Resuelve un problema concreto de seguridad en sistemas agénticos: una misma llamada puede ser legítima o peligrosa según la intención del usuario.
 
 El adaptador se apoya en una cabeza de clasificación de secuencia sobre el modelo base Qwen2.5-0.5B-Instruct, con 2,16 millones de parámetros entrenables (0,44% del total). Su propuesta de valor es la latencia: aproximadamente 245 ms por llamada en CPU de 2 vCPU en fp32, lo que lo hace viable como barrera de seguridad en línea dentro de un pipeline agéntico sin necesidad de GPU.
 
@@ -98,6 +98,6 @@ No se dispone de información sobre otros clasificadores de guardrail comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harmehak0173/qwen2.5-0.5b-agent-guardrail-lora
+- Modelo en Hugging Face: https://huggingface.co/harmehak0173/qwen2.5-0.5b-agent-guardrail-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

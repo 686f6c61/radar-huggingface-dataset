@@ -83,6 +83,6 @@ Homura se diferencia por ser un derivado directo de un modelo agéntico de Meta,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hyrelabs/Homura-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hyrelabs/Homura-30B-GGUF
 - Modelo base (darkc0de/Muse-Glimmer-30B-heretic): https://huggingface.co/darkc0de/Muse-Glimmer-30B-heretic
 - No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

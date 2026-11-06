@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning experimental de 124 millones de parámetros basado en una arquitectura tipo GPT-2, publicado por el usuario fpadovani en HuggingFace. Se trata de un checkpoint intermedio (ckpt500) de un proceso de entrenamiento supervisado (SFT) realizado con la librería TRL, partiendo del modelo base `fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407`.
+Este modelo es un fine-tuning experimental de 124 millones de parámetros basado en una arquitectura tipo GPT-2, publicado por el usuario fpadovani en Hugging Face. Se trata de un checkpoint intermedio (ckpt500) de un proceso de entrenamiento supervisado (SFT) realizado con la librería TRL, partiendo del modelo base `fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407`.
 
 El nombre del modelo (`tam-taml-100mb-after-ppt-shuff-dyck-100mb`) sugiere que pertenece a una línea de investigación sobre tareas sintéticas de estructuras de lenguaje, como el lenguaje de Dyck (paréntesis balanceados) y variantes de `PPT shuffling`. No se dispone de información sobre el contexto, los idiomas soportados ni la licencia, ya que la model card no los especifica. El repositorio contiene 2.7 GB de pesos en formato safetensors, con 124.770.816 parámetros totales, lo que lo sitúa en el rango de los modelos GPT-2 pequeños.
 
@@ -23,7 +23,7 @@ Por su naturaleza experimental y su tamaño reducido, este modelo no está orien
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no esta documentada explicitamente en la model card. El tag `gpt2` en HuggingFace sugiere que se trata de un modelo basado en el transformer decoder de GPT-2, con aproximadamente 124 millones de parametros, lo cual coincide con el tamaño clasico de GPT-2 small. El modelo es un checkpoint intermedio (`ckpt500`) de un proceso de fine-tuning supervisado (SFT) realizado con TRL 0.23.0, Transformers 4.56.2 y PyTorch 2.11.0. El entrenamiento parte de un modelo base previo, `fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407`, que a su vez parece estar relacionado con tareas sinteticas de lenguajes estructurados (Dyck y PPT shuffling).
+La arquitectura no esta documentada explicitamente en la model card. El tag `gpt2` en Hugging Face sugiere que se trata de un modelo basado en el transformer decoder de GPT-2, con aproximadamente 124 millones de parametros, lo cual coincide con el tamaño clasico de GPT-2 small. El modelo es un checkpoint intermedio (`ckpt500`) de un proceso de fine-tuning supervisado (SFT) realizado con TRL 0.23.0, Transformers 4.56.2 y PyTorch 2.11.0. El entrenamiento parte de un modelo base previo, `fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407`, que a su vez parece estar relacionado con tareas sinteticas de lenguajes estructurados (Dyck y PPT shuffling).
 
 No se aporta informacion sobre el dataset de entrenamiento, el numero de tokens ni la composicion de los datos. Tampoco se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion. La unica referencia al entrenamiento es un enlace a Weights & Biases con el log del experimento.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | no disponible | safetensors en HuggingFace |
+| fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | no disponible | safetensors en Hugging Face |
 | GPT-2 small (openai-community/gpt2) | 124.439.808 | 1024 tokens | MIT | safetensors, very disponible |
 | DistilGPT-2 (distilgpt2) | 81.912.768 | 1024 tokens | Apache 2.0 | safetensors, muy disponible |
 
@@ -77,6 +77,6 @@ La comparacion se limita a caracteristicas generales, ya que no hay datos de ben
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
+- Repositorio en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/wb83c4l6

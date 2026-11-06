@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TULLUS/Llama-3.2-11B-Vision-Instruct es un repositorio de HuggingFace que aloja pesos en formato safetensors para un modelo multimodal de tipo image-text-to-text, etiquetado con la arquitectura mllama y asociado a la familia Llama 3.2 de Meta. Por el identificador del repositorio y por las etiquetas incluidas (facebook, meta, llama-3, license:llama3.2) todo apunta a una republicación de los pesos del modelo Llama 3.2 11B Vision Instruct publicado originalmente por Meta, y no a un modelo entrenado por el autor del repositorio, el usuario TULLUS.
+TULLUS/Llama-3.2-11B-Vision-Instruct es un repositorio de Hugging Face que aloja pesos en formato safetensors para un modelo multimodal de tipo image-text-to-text, etiquetado con la arquitectura mllama y asociado a la familia Llama 3.2 de Meta. Por el identificador del repositorio y por las etiquetas incluidas (facebook, meta, llama-3, license:llama3.2) todo apunta a una republicación de los pesos del modelo Llama 3.2 11B Vision Instruct publicado originalmente por Meta, y no a un modelo entrenado por el autor del repositorio, el usuario TULLUS.
 
-El interés práctico de este tipo de repositorio es claro: se trata de un modelo de aproximadamente 11.000 millones de parámetros que combina comprensión de imágenes con generación de texto conversacional y que puede desplegarse en infraestructura propia, en precisión completa sobre una GPU de 40 GB o cuantizado en GPUs de consumo. Las etiquetas del repositorio indican soporte para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y compatibilidad con text-generation-inference y con los endpoints de HuggingFace.
+El interés práctico de este tipo de repositorio es claro: se trata de un modelo de aproximadamente 11.000 millones de parámetros que combina comprensión de imágenes con generación de texto conversacional y que puede desplegarse en infraestructura propia, en precisión completa sobre una GPU de 40 GB o cuantizado en GPUs de consumo. Las etiquetas del repositorio indican soporte para ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés) y compatibilidad con text-generation-inference y con los endpoints de Hugging Face.
 
 Conviene tener presente que la información publicada es mínima: no hay model card propia, ni detalles de entrenamiento, ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Tampoco existe verificación pública de que los pesos coincidan bit a bit con los originales de Meta, por lo que para uso en producción es recomendable contrastar con el repositorio oficial y revisar los términos completos de la licencia Llama 3.2.
 
@@ -61,7 +61,7 @@ Las cifras siguientes son estimaciones derivadas del número de parámetros (11B
 - Cuantización de 4 bits: aproximadamente 6-7 GB de pesos, lo que permite ejecución en GPUs de consumo como la RTX 3060 de 12 GB o la RTX 4060 Ti de 16 GB; el repositorio no publica variantes cuantizadas, de modo que habría que generarlas.
 - GPU de centro de datos recomendadas: A100 (40 GB u 80 GB), H100 y L40S. No hay datos de rendimiento específicos para este repositorio.
 - Nota sobre multimodalidad: la torre de visión y los tokens de imagen incrementan el consumo de memoria y de contexto respecto a un modelo de texto del mismo tamaño, especialmente con imágenes de alta resolución.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), endpoints compatibles de HuggingFace y, previsiblemente, vLLM y llama.cpp/Ollama para la arquitectura mllama; conviene verificar la versión concreta de cada herramienta antes de desplegar.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), endpoints compatibles de Hugging Face y, previsiblemente, vLLM y llama.cpp/Ollama para la arquitectura mllama; conviene verificar la versión concreta de cada herramienta antes de desplegar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TULLUS/Llama-3.2-11B-Vision-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/TULLUS/Llama-3.2-11B-Vision-Instruct
 - Referencia arXiv incluida en las etiquetas del repositorio: https://arxiv.org/abs/2204.05149
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos correspondían a páginas de ayuda de YouTube y no guardan relación con Llama 3.2 Vision.

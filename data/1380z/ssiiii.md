@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1380z/Ssiiii` es un repositorio publicado en HuggingFace por el usuario `1380z` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo qué tipo de modelo es, su tamaño, su finalidad o sus capacidades. La única información disponible es la fecha de creación (14 de agosto de 2026) y la licencia de uso.
+El modelo `1380z/Ssiiii` es un repositorio publicado en Hugging Face por el usuario `1380z` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Se desconoce por completo qué tipo de modelo es, su tamaño, su finalidad o sus capacidades. La única información disponible es la fecha de creación (14 de agosto de 2026) y la licencia de uso.
 
 Dada la ausencia total de documentación y de metadatos técnicos, este repositorio no puede considerarse un modelo evaluable ni apto para su uso en producción sin una verificación previa exhaustiva. Se recomienda extremar la precaución antes de descargar o ejecutar cualquier artefacto alojado en este espacio, ya que podría tratarse de un modelo no verificado, un experimento abandonado o incluso un contenedor de código malicioso.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1380z/Ssiiii
+- Repositorio en Hugging Face: https://huggingface.co/1380z/Ssiiii

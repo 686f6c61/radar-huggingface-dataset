@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Ololade117/jointscale-normal-t4-10.6M-25000steps-651692tok` es un checkpoint de 10.579.200 parámetros (aproximadamente 10,6 M) publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. Se trata de un artefacto de pesos en formato safetensors subido mediante la integración `PyTorchModelHubMixin`, sin model card descriptiva: el README se limita a la plantilla autogenerada por dicha integración y no aporta información sobre arquitectura, datos de entrenamiento, tokenizador o capacidades.
+El modelo identificado como `Ololade117/jointscale-normal-t4-10.6M-25000steps-651692tok` es un checkpoint de 10.579.200 parámetros (aproximadamente 10,6 M) publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. Se trata de un artefacto de pesos en formato safetensors subido mediante la integración `PyTorchModelHubMixin`, sin model card descriptiva: el README se limita a la plantilla autogenerada por dicha integración y no aporta información sobre arquitectura, datos de entrenamiento, tokenizador o capacidades.
 
 El nombre del repositorio parece codificar los metadatos de una ejecución de entrenamiento concreta: `jointscale` (posible método de escalado), `normal` (posible configuración de inicialización o normalización), `t4` (probablemente el hardware de entrenamiento, una GPU NVIDIA Tesla T4), `10.6M` (tamaño del modelo), `25000steps` (pasos de optimización) y `651692tok` (tokens procesados). Esta lectura es una hipótesis basada en la convención de nombres y no está confirmada por el autor.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, los únicos datos disponibles son los inferibles del 
 - No hay información publicada sobre las capacidades del modelo. La model card no describe tareas soportadas, ni generación de texto, ni razonamiento, ni código, ni matemáticas.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: no disponible; no se declara ningún idioma en los metadatos de HuggingFace.
+- Capacidades multilingües: no disponible; no se declara ningún idioma en los metadatos de Hugging Face.
 - Capacidades especiales (modo "thinking", visión, audio): no disponible (no documentado).
 - Dado el tamaño (10,6 M de parámetros) y el volumen de entrenamiento declarado, es previsible que cualquier capacidad emergente sea muy limitada, pero esto es una expectativa general y no un dato confirmado sobre este checkpoint concreto.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, los únicos datos disponibles son los inferibles del 
 Advertencia previa: dado que no existe documentación sobre el modelo, los siguientes escenarios son aplicaciones plausibles para un modelo de ~10 M de parámetros en general, no casos verificados para este checkpoint. Requieren validación empírica antes de cualquier uso.
 
 - Experimentación académica con modelos de escala reducida: un checkpoint de 10,6 M de parámetros es adecuado para estudiar dinámicas de entrenamiento, curvas de pérdida y efectos de hiperparámetros en entornos con recursos mínimos, ya que se entrena y evalúa en una sola GPU de gama media.
-- Pruebas de integración de pipelines de HuggingFace: sirve para validar flujos de carga de safetensors, versionado de checkpoints y herramientas de despliegue (por ejemplo `transformers`, `vLLM` o `llama.cpp`) sin consumir recursos significativos.
+- Pruebas de integración de pipelines de Hugging Face: sirve para validar flujos de carga de safetensors, versionado de checkpoints y herramientas de despliegue (por ejemplo `transformers`, `vLLM` o `llama.cpp`) sin consumir recursos significativos.
 - Docencia y demostraciones sobre ciclo de vida de un modelo: permite ilustrar de principio a fin las fases de entrenamiento, publicación en el Hub y evaluación, con tiempos de ejecución muy cortos.
 - Generación de texto a pequeña escala tras ajuste específico: si se confirma su arquitectura y tokenizador, podría afinarse para tareas acotadas como autocompletado de plantillas o clasificación de secuencias cortas.
 - Filtrado o etiquetado ligero en el edge: un modelo de este tamaño podría ejecutarse en CPU o en dispositivos embebidos para tareas de clasificación binaria o extracción de palabras clave, si se valida su calidad.
@@ -71,10 +71,10 @@ La comparación se establece con modelos de escala reducida ampliamente conocido
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jointscale-normal-t4-10.6M-25000steps-651692tok | 10,6 M | no disponible | MIT | Repositorio HuggingFace, 0 descargas, sin documentacion |
+| jointscale-normal-t4-10.6M-25000steps-651692tok | 10,6 M | no disponible | MIT | Repositorio Hugging Face, 0 descargas, sin documentacion |
 | EleutherAI Pythia-14M | 14 M | 2048 tokens | Apache 2.0 | Publico, ampliamente documentado y evaluado |
 | roneneldan TinyStories-33M | 33 M | 2048 tokens (segun el proyecto) | no verificada | Publico, con paper asociado |
-| HuggingFace SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Publico, con model card completa y benchmarks |
+| Hugging Face SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Publico, con model card completa y benchmarks |
 
 Frente a estas alternativas, el modelo aquí descrito carece de las tres ventajas competitivas habituales: documentación de arquitectura, resultados de evaluación públicos y comunidad de usuarios. Su única ventaja objetiva es el tamaño mínimo, que lo hace trivial de ejecutar en cualquier hardware.
 
@@ -86,13 +86,13 @@ Frente a estas alternativas, el modelo aquí descrito carece de las tres ventaja
 - Limitaciones de contexto e idioma: se desconoce si el modelo soporta más de un idioma o cuál es su ventana de contexto; no se declara ningún idioma en los metadatos.
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución con atribución y sin garantías. Es el único aspecto del repositorio que está claramente especificado.
 - Falta de validación externa: 0 descargas y 0 "likes" implican que el checkpoint no ha sido probado por terceros; no hay evidencia de que los pesos carguen correctamente ni de que produzcan salidas coherentes.
-- Inconsistencia de metadatos: HuggingFace reporta un tamaño de repositorio de 0.0 GB, mientras que los pesos declarados (10,6 M de parámetros) deberían ocupar entre 5 y 42 MB según el tipo de dato. Conviene verificar el contenido real del repositorio antes de integrarlo en cualquier flujo automatizado.
+- Inconsistencia de metadatos: Hugging Face reporta un tamaño de repositorio de 0.0 GB, mientras que los pesos declarados (10,6 M de parámetros) deberían ocupar entre 5 y 42 MB según el tipo de dato. Conviene verificar el contenido real del repositorio antes de integrarlo en cualquier flujo automatizado.
 - No apto para producción: sin tokenizador confirmado, sin arquitectura declarada y sin evaluación, su uso en cualquier sistema real supondría un riesgo técnico no acotado.
 - Los resultados de la búsqueda web realizada no contienen información relacionada con el modelo y no deben utilizarse como respaldo de ninguna afirmación técnica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ololade117/jointscale-normal-t4-10.6M-25000steps-651692tok
+- Repositorio en Hugging Face: https://huggingface.co/Ololade117/jointscale-normal-t4-10.6M-25000steps-651692tok
 - Documentación de la integración PyTorchModelHubMixin (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper, código y documentación del modelo: no disponibles (el autor indica `[More Information Needed]` en los tres apartados).
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo; los resultados devueltos corresponden a foros sin relación con el proyecto.

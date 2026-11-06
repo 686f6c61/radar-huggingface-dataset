@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEMA es un modelo publicado en HuggingFace por el usuario `meml` bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, tamaño de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio ocupa 3,5 GB, lo que sugiere un modelo de tamaño medio (aproximadamente entre 1 y 3 mil millones de parámetros en función del formato de pesos empleado), pero este dato es una inferencia a partir del tamaño del repo y no una especificación confirmada por el autor.
+SEMA es un modelo publicado en Hugging Face por el usuario `meml` bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia, sin especificar arquitectura, tamaño de parámetros, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio ocupa 3,5 GB, lo que sugiere un modelo de tamaño medio (aproximadamente entre 1 y 3 mil millones de parámetros en función del formato de pesos empleado), pero este dato es una inferencia a partir del tamaño del repo y no una especificación confirmada por el autor.
 
 La ausencia de documentación técnica, de pipeline declarado y de cualquier resultado de evaluación hace imposible verificar sus capacidades reales. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto sin adopción comunitaria ni validación externa. Cualquier evaluación de idoneidad para producción debe partir de pruebas propias sobre los pesos.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamaño,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meml/SEMA
+- Hugging Face: https://huggingface.co/meml/SEMA
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

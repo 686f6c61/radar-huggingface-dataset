@@ -83,6 +83,6 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-500-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-500-GGUF
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime): no se proporciona enlace en la informacion disponible.

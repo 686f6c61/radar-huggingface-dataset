@@ -89,9 +89,9 @@ Diferencias de AIQ reportadas frente a los routers SLR: semilla 0 frente a SLR S
 
 | Modelo | Tipo | Parámetros | Contexto | Métrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| systemone-decider-e4b-qpa-menu-a | Router de dos etapas sobre decider E4B (LoRA r48 + pointer) | no disponible | no disponible | AIQ 0,732 (semilla 0) / 0,739 (ensemble) | Apache 2.0 | HuggingFace + GitHub |
+| systemone-decider-e4b-qpa-menu-a | Router de dos etapas sobre decider E4B (LoRA r48 + pointer) | no disponible | no disponible | AIQ 0,732 (semilla 0) / 0,739 (ensemble) | Apache 2.0 | Hugging Face + GitHub |
 | Router SLR SFT (label), LoRA Qwen2.5-1.5B | Router SFT por etapa | 1,5B (base) | no disponible | AIQ 0,724 / 0,725 con reward | no disponible | Referencia interna del paper/setup SLR |
-| systemone-jev-qpa | Cross-encoder MiniLM que devuelve P(modelo grande) | 33M | no disponible | no disponible en la información recogida | no disponible | HuggingFace |
+| systemone-jev-qpa | Cross-encoder MiniLM que devuelve P(modelo grande) | 33M | no disponible | no disponible en la información recogida | no disponible | Hugging Face |
 | Siempre fuerte (sin router) | Política fija | no aplica | no aplica | 76,77 % de accuracy a precio 929,0 | no aplica | Línea base |
 
 ## Limitaciones y advertencias
@@ -109,12 +109,12 @@ Diferencias de AIQ reportadas frente a los routers SLR: semilla 0 frente a SLR S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qpa-menu-a
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-e4b-qpa-menu-a
 - Modelo base (Strands Decider E4B Gemma4 v1): https://huggingface.co/StrandsAgents/strands-decider-E4B-gemma4-v1-2610
 - Código del router (`systemone_decider.route.MenuRouter`): https://github.com/mohameddhameem/systemone-decider
 - Repositorio STAIR (setup Stage-Level Routing): https://github.com/mohameddhameem/STAIR
 - Perfil del autor en GitHub: https://github.com/mohameddhameem
-- Dataset HotpotQA en HuggingFace: https://huggingface.co/datasets/hotpotqa/hotpot_qa
+- Dataset HotpotQA en Hugging Face: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Router relacionado (systemone-jev-qpa, cross-encoder de 33M): https://huggingface.co/mohameddhameem/systemone-jev-qpa
 - Familia de modelos decider (Mapika/decider): https://github.com/Mapika/decider
 - Comparativa S1MB de modelos de decisión System One: https://huggingface.co/blog/hotchpotch/system-one-mosaic-benchmark

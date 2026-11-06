@@ -73,8 +73,8 @@ No disponible. No se dispone de información sobre otros adaptadores LoRA para K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-581cdf7e-FeralMuse
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-581cdf7e-FeralMuse
 - Trainer de Krea 2 para diffusers: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md
 - Documentación de carga de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters
-- Perfil del autor en HuggingFace: https://huggingface.co/guillekenzo
+- Perfil del autor en Hugging Face: https://huggingface.co/guillekenzo
 - Paper de DreamBooth: https://dreambooth.github.io/

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: el modelo base cuantizado en 4 bits requiere aproximadamente 7-8 GB de VRAM, más el espacio adicional del adaptador LoRA (0,1 GB). Total estimado: entre 8 y 10 GB.
 - GPU recomendadas: tarjetas de consumo con al menos 10 GB de VRAM (RTX 3080, 3090, 4090, RTX 4080) o GPUs profesionales (A10, A100, H100). En GPU con 8 GB puede ejecutarse con precaución y limitando la longitud de contexto.
 - Compatibilidad con consumer GPU: sí, en GPUs de gama alta para consumo. Para GPU con menos de 8 GB se recomienda reducir la longitud de contexto o usar cuantización adicional.
-- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI), dado que el modelo base está en formato HuggingFace.
+- Opciones de despliegue: compatible con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI), dado que el modelo base está en formato Hugging Face.
 - Latencia y throughput estimados: no se disponen datos. En una RTX 4090, un modelo 7B en 4-bit suele generar entre 30-50 tokens/segundo, pero el adaptador puede modificar ligeramente este rendimiento.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ La comparativa se limita a la arquitectura base, ya que el adaptador no altera l
 
 ## Enlaces
 
-- Repositorio HuggingFace: [utkuergel/ue5_qwen_lora_v2](https://huggingface.co/utkuergel/ue5_qwen_lora_v2)
+- Repositorio Hugging Face: [utkuergel/ue5_qwen_lora_v2](https://huggingface.co/utkuergel/ue5_qwen_lora_v2)
 - Modelo base: [unsloth/Qwen2.5-Coder-7B-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Coder-7B-bnb-4bit)
 - Proyecto Unsloth (herramienta de entrenamiento): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)

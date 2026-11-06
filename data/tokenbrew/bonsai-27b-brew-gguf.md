@@ -101,7 +101,7 @@ La comparativa relevante es de formato y compatibilidad, no de calidad: las tres
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokenbrew/Bonsai-27B-Brew-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tokenbrew/Bonsai-27B-Brew-GGUF
 - Modelo base (GGUF de Prism ML): https://huggingface.co/prism-ml/Bonsai-27B-gguf
 - Modelo base de Prism ML: https://huggingface.co/prism-ml/Bonsai-27B
 - Modelo original de Alibaba Cloud: https://huggingface.co/Qwen/Qwen3.6-27B

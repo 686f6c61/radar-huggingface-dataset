@@ -73,9 +73,9 @@ El propio autor senala que la precision mixta posicional cierra parte de la dife
 
 | Modelo | Parametros | Formato / cuantizacion | Perplejidad (wikitext-2-raw) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/Nemotron-3.5-Lightning-30B-A3B | 31,58 mil millones (MoE, ~3 mil millones activos) | bf16, safetensors | 5,11 | other (NVIDIA) | Modelo base en HuggingFace |
-| roman220220/nemotron-30b-a3b-gptq-mixed_3_6 (este modelo) | 31,58 mil millones (MoE) | MLX safetensors, GPTQ mixto 3/6 bits, 3,548 bits/peso, 14 GB | 5,92 | other | HuggingFace, MLX |
-| GPTQ uniforme de 3 bits del mismo proyecto | 31,58 mil millones (MoE) | MLX safetensors, GPTQ 3 bits | 6,24 | other | HuggingFace, MLX |
+| nvidia/Nemotron-3.5-Lightning-30B-A3B | 31,58 mil millones (MoE, ~3 mil millones activos) | bf16, safetensors | 5,11 | other (NVIDIA) | Modelo base en Hugging Face |
+| roman220220/nemotron-30b-a3b-gptq-mixed_3_6 (este modelo) | 31,58 mil millones (MoE) | MLX safetensors, GPTQ mixto 3/6 bits, 3,548 bits/peso, 14 GB | 5,92 | other | Hugging Face, MLX |
+| GPTQ uniforme de 3 bits del mismo proyecto | 31,58 mil millones (MoE) | MLX safetensors, GPTQ 3 bits | 6,24 | other | Hugging Face, MLX |
 | JANG_2L-CRACK (terceros) | 31,58 mil millones (MoE) | precision mixta | 5,43 | no disponible | no disponible en los materiales consultados |
 | RTN uniforme de 3 bits | 31,58 mil millones (MoE) | 3 bits sin calibracion | 6,54 | no disponible | no disponible en los materiales consultados |
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para comparar con alternativas de otro provee
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-mixed_3_6
+- Modelo en Hugging Face: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-mixed_3_6
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Lightning-30B-A3B
 - Repositorio del pipeline de cuantizacion GPTQ del autor: https://github.com/rromenskyi/quant-ternary
 - Documentacion metodologica citada por el autor: `docs/session_findings_2026-09-11.md`, seccion 7p, dentro del repositorio anterior

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`demoqqq/banglatts-kiki-hasan-big` es un modelo de síntesis de voz (text-to-speech, TTS) en bengalí construido sobre la arquitectura VITS (Conditional Variational Autoencoder con adversarial learning, popularizada por Coqui TTS). Lo publica el usuario `demoqqq` en HuggingFace y consiste en un ajuste fino (fine-tune) del modelo base EMTIAZZ Bangladeshi Bangla VITS sobre 1.863 clips de audio propios de un único hablante masculino, con un estilo de lectura de noticias y una duración total aproximada de 227 minutos. El entrenamiento se realizó durante 97 de 100 épocas en Kaggle bajo el identificador de ejecución `user-voice-news-v2`.
+`demoqqq/banglatts-kiki-hasan-big` es un modelo de síntesis de voz (text-to-speech, TTS) en bengalí construido sobre la arquitectura VITS (Conditional Variational Autoencoder con adversarial learning, popularizada por Coqui TTS). Lo publica el usuario `demoqqq` en Hugging Face y consiste en un ajuste fino (fine-tune) del modelo base EMTIAZZ Bangladeshi Bangla VITS sobre 1.863 clips de audio propios de un único hablante masculino, con un estilo de lectura de noticias y una duración total aproximada de 227 minutos. El entrenamiento se realizó durante 97 de 100 épocas en Kaggle bajo el identificador de ejecución `user-voice-news-v2`.
 
 El modelo resuelve un problema muy concreto: generar voz sintética en bengalí con la identidad de un hablante específico, incluyendo la pronunciación de dígitos bengalíes (০-৯) y símbolos matemáticos (%, ×, ÷, +) como palabras habladas, gracias a un vocabulario extendido de 92 tokens. Su formato principal es ONNX (`model_fullmeta.onnx`, unos 114 MB) preparado para sherpa-onnx 2.0.1, lo que permite despliegue en CPU sin dependencias de Python pesadas. También incluye el checkpoint de entrenamiento en PyTorch (`best_model.pth`, unos 998 MB).
 
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/demoqqq/banglatts-kiki-hasan-big
+- Repositorio Hugging Face: https://huggingface.co/demoqqq/banglatts-kiki-hasan-big
 - sherpa-onnx (runtime recomendado): https://github.com/k2-fsa/sherpa-onnx
 - Coqui TTS (framework de la arquitectura VITS): https://github.com/coqui-ai/TTS
 - VITS, paper original: https://arxiv.org/abs/2106.06103

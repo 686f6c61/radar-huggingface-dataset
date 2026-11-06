@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de ot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-MLX-4bit
 - Modelo base (FP32): https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
 - Variante MLX 8-bit: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-MLX-8bit
 - Variante GGUF: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-GGUF

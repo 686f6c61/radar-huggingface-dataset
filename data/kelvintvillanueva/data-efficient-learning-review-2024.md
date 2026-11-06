@@ -1,7 +1,7 @@
 # Kelvintvillanueva/data-efficient-learning-review-2024
 
 ## Resumen
-Este repositorio de HuggingFace no contiene un modelo de lenguaje entrenado, sino un conjunto de notas de investigación estructuradas sobre aprendizaje eficiente en datos (data-efficient learning). Fue creado por Kelvintvillanueva en septiembre de 2026 y está publicado bajo licencia CC-BY-4.0. El repositorio documenta el alcance de una pregunta de investigación, una comparación propuesta con baselines equiparadas, referencias a benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque el repositorio incluye un archivo en formato safetensors con 33.088 parámetros, el propio autor indica explícitamente que no se ha publicado ningún checkpoint entrenado ni resultados experimentales. Su relevancia actual radica en servir como punto de partida para verificar hipótesis sobre la eficiencia de datos en el entrenamiento de modelos de lenguaje, en línea con trabajos como el artículo de arXiv 2402.09668.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje entrenado, sino un conjunto de notas de investigación estructuradas sobre aprendizaje eficiente en datos (data-efficient learning). Fue creado por Kelvintvillanueva en septiembre de 2026 y está publicado bajo licencia CC-BY-4.0. El repositorio documenta el alcance de una pregunta de investigación, una comparación propuesta con baselines equiparadas, referencias a benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Aunque el repositorio incluye un archivo en formato safetensors con 33.088 parámetros, el propio autor indica explícitamente que no se ha publicado ningún checkpoint entrenado ni resultados experimentales. Su relevancia actual radica en servir como punto de partida para verificar hipótesis sobre la eficiencia de datos en el entrenamiento de modelos de lenguaje, en línea con trabajos como el artículo de arXiv 2402.09668.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -56,6 +56,6 @@ No es comparable con modelos de lenguaje. Como recurso de investigación, puede 
 - Riesgo de confusión: la etiqueta "safetensors" puede inducir a pensar que es un modelo cuando en realidad es un repositorio documental.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Kelvintvillanueva/data-efficient-learning-review-2024
+- Hugging Face: https://huggingface.co/Kelvintvillanueva/data-efficient-learning-review-2024
 - Paper arXiv relacionado: https://arxiv.org/abs/2402.09668
 - Repositorio similar: https://huggingface.co/hcmnguyen/data-efficient-learning-review

@@ -97,7 +97,7 @@ La mejora en CER es marginal (0.0034) y la presencia de terminos aumenta en un s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-animal-synthetic-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-animal-synthetic-v0.1
 - Producto mocoVoice (pagina oficial): https://products.mocomoco.ai/en/
 - Noticias de mocomoco inc.: https://www.mocomoco.ai/en/
 - Guia de usuario de mocoVoice: https://guide.mocomoco.ai/en/

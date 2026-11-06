@@ -76,8 +76,8 @@ Greedy usa temperatura 0. SC-16 muestrea 16 candidatos a temperatura 1 y selecci
 
 | Modelo | Parámetros | Contexto | BIRD Mini-Dev (greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReViSQL-Qwen3-4B | ~4.000 M (base) + adaptador LoRA de 0,3 GB | No disponible | 59,60 % | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen3-4B-Instruct-2507 (base, sin adaptador) | ~4.000 M | No disponible en la información proporcionada | No disponible | Apache 2.0 | HuggingFace |
+| ReViSQL-Qwen3-4B | ~4.000 M (base) + adaptador LoRA de 0,3 GB | No disponible | 59,60 % | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen3-4B-Instruct-2507 (base, sin adaptador) | ~4.000 M | No disponible en la información proporcionada | No disponible | Apache 2.0 | Hugging Face |
 | Otros sistemas text-to-SQL de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados comparables de otros modelos bajo el mismo protocolo de evaluación en la información proporcionada, por lo que no es posible establecer una comparación numérica rigurosa con alternativas.
@@ -96,7 +96,7 @@ No se dispone de resultados comparables de otros modelos bajo el mismo protocolo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ximosss/ReViSQL-Qwen3-4B
+- Hugging Face del modelo: https://huggingface.co/ximosss/ReViSQL-Qwen3-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del proyecto: https://github.com/ximosss/bird-text2sql-rl
 - Artículo: Zhu, Jin, Choi y Kang (2026), "Human-Level Text-to-SQL via Reinforcement Learning on Verified Data, Without Pipeline Engineering": https://arxiv.org/abs/2603.20004

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Step-5 Preview EXL3 K4 + Core K6 (este) | 157.675.973.440 | no disponible | stepfun-model-license-1.0 | safetensors EXL3 | HuggingFace, 0 descargas |
-| stepfun-ai/Step-5-Preview-BF16 (base) | no disponible en la información | no disponible | stepfun-model-license-1.0 | safetensors BF16 | HuggingFace |
+| Step-5 Preview EXL3 K4 + Core K6 (este) | 157.675.973.440 | no disponible | stepfun-model-license-1.0 | safetensors EXL3 | Hugging Face, 0 descargas |
+| stepfun-ai/Step-5-Preview-BF16 (base) | no disponible en la información | no disponible | stepfun-model-license-1.0 | safetensors BF16 | Hugging Face |
 | Otras cuantizaciones del mismo base | no disponible | no disponible | stepfun-model-license-1.0 | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de parámetros de modelos alternativos en la información proporcionada para establecer una comparativa cuantitativa.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de parámetros de modelos alternativos 
 
 ## Enlaces
 
-- HuggingFace del checkpoint cuantizado: https://huggingface.co/wrldsuksgo2mars/Step-5-Preview-EXL3-K4-Core-K6
+- Hugging Face del checkpoint cuantizado: https://huggingface.co/wrldsuksgo2mars/Step-5-Preview-EXL3-K4-Core-K6
 - Modelo base en BF16: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
 - Licencia del modelo base: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16/blob/7734b7ffac118d70d8398bfa3eb0fab007eb45b1/LICENSE.txt
 - Dataset de calibración: https://huggingface.co/datasets/wrldsuksgo2mars/agentic-quant-panel-v1

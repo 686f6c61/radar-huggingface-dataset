@@ -108,7 +108,7 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/invoice-pii-detector
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/invoice-pii-detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-invoice-pii-spans
 - Space relacionado (pii-pattern-scanner): https://huggingface.co/spaces/aitrainingdatabroker/pii-pattern-scanner
 - Guía sobre licenciamiento de registros contables y ERP: https://aitrainingdatabroker.com/data/accounting-and-erp-records/

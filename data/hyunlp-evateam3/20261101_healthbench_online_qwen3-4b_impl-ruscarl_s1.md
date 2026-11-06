@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (HealthBench Online Rubrics Qwen3-4B) | 4 mil millones | No disponible | RL con rubricas sobre HealthBench | No disponible | Publico en HuggingFace, checkpoints intermedios |
-| Qwen/Qwen3-4B-Instruct-2507 | 4 mil millones | No disponible | Modelo instructivo general | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este checkpoint (HealthBench Online Rubrics Qwen3-4B) | 4 mil millones | No disponible | RL con rubricas sobre HealthBench | No disponible | Publico en Hugging Face, checkpoints intermedios |
+| Qwen/Qwen3-4B-Instruct-2507 | 4 mil millones | No disponible | Modelo instructivo general | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Modelos medicos especializados de tamano similar | No disponible | No disponible | Ajuste supervisado en datos clinicos | No disponible | No disponible |
 
 La comparacion cuantitativa con alternativas no puede realizarse porque no se han publicado resultados de benchmarks en la informacion disponible.
@@ -83,7 +83,7 @@ La comparacion cuantitativa con alternativas no puede realizarse porque no se ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyunlp-evateam3/20261101_healthbench_online_qwen3-4b_impl-ruscarl_s1
+- Hugging Face: https://huggingface.co/hyunlp-evateam3/20261101_healthbench_online_qwen3-4b_impl-ruscarl_s1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Generador de rubricas: https://huggingface.co/openai/gpt-oss-120b
 - HealthBench: no disponible en la informacion proporcionada

@@ -32,7 +32,7 @@ El entrenamiento se realizó mediante ajuste supervisado (SFT) sobre el corpus *
 - **Imitación de estilo**: el adaptador ajusta GPT-OSS-20B para generar texto con un estilo similar al de `granite-4-h-small` en tareas de escritura creativa, basándose en el corpus *writingprompts*.
 - **Generación de texto creativo**: al estar entrenado sobre indicaciones de escritura, el adaptador es adecuado para producir historias, relatos y otros contenidos narrativos.
 - **Personalización ligera**: al ser un adaptador LoRA, se puede cargar y descargar sobre el modelo base sin necesidad de reentrenar, facilitando la experimentación con diferentes estilos.
-- **Compatibilidad con el ecosistema PEFT**: se integra con la librería `peft` de HuggingFace, permitiendo su uso con `PeftModel` y `AutoModelForCausalLM`.
+- **Compatibilidad con el ecosistema PEFT**: se integra con la librería `peft` de Hugging Face, permitiendo su uso con `PeftModel` y `AutoModelForCausalLM`.
 - **Capacidades del modelo base**: hereda las capacidades de GPT-OSS-20B, incluyendo generación de código, razonamiento, soporte multilingüe y ventana de contexto de 128K tokens, aunque el adaptador puede sesgar estas capacidades hacia el estilo imitado.
 - **Sin capacidades multimodales**: no se ha documentado soporte para visión, audio u otras modalidades.
 
@@ -82,7 +82,7 @@ No se dispone de métricas de rendimiento para comparar estos adaptadores entre 
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_granite-4-h-small_seed42)
 - [Adaptador similar: `sft_writingprompts_gpt-oss-20b_as_qwen3.6-27b_seed42`](https://huggingface.co/dementor-research/sft_writingprompts_gpt-oss-20b_as_qwen3.6-27b_seed42)
 - [Adaptador similar: `sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42` en FriendliAI](https://friendli.ai/models/dementor-research/sft_writingprompts_gemma-4-31b_as_gpt-oss-20b_seed42)
 - [Adaptador similar: `sft_writingprompts_gpt-oss-120b_as_gpt-oss-20b_seed42` en FriendliAI](https://friendli.ai/models/dementor-research/sft_writingprompts_gpt-oss-120b_as_gpt-oss-20b_seed42)

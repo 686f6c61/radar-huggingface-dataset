@@ -2,7 +2,7 @@
 
 ## Resumen
 
-King-AI-Chat-v3.0 es un modelo de lenguaje de 3.085.938.688 parametros (aproximadamente 3B) desarrollado por el usuario UX4567 (Kartik Sharma). Se trata de un ajuste fino sobre la arquitectura Qwen2, orientado a tareas de generacion de texto conversacional. El entrenamiento se ha realizado con la libreria Unsloth, como indican las etiquetas de su repositorio en HuggingFace.
+King-AI-Chat-v3.0 es un modelo de lenguaje de 3.085.938.688 parametros (aproximadamente 3B) desarrollado por el usuario UX4567 (Kartik Sharma). Se trata de un ajuste fino sobre la arquitectura Qwen2, orientado a tareas de generacion de texto conversacional. El entrenamiento se ha realizado con la libreria Unsloth, como indican las etiquetas de su repositorio en Hugging Face.
 
 El modelo se publica en formato safetensors y esta pensado para ejecutarse con la libreria transformers. La model card es una plantilla autogenerada con la mayoria de los campos sin rellenar, por lo que no se dispone de informacion sobre el contexto, los idiomas soportados, la licencia ni los datos de entrenamiento. Su relevancia radica en ser un modelo compacto de 3B parametros, lo que permite su ejecucion en hardware de consumo, aunque su validacion publica es minima (0 descargas y 0 likes en el momento de la consulta).
 
@@ -77,6 +77,6 @@ Nota: los datos de Qwen2-3B-Instruct proceden de la documentacion publica de Qwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UX4567/King-AI-Chat-v3.0
-- Modelos de UX4567 en HuggingFace: https://huggingface.co/UX4567/models
+- Hugging Face: https://huggingface.co/UX4567/King-AI-Chat-v3.0
+- Modelos de UX4567 en Hugging Face: https://huggingface.co/UX4567/models
 - Repositorio relacionado en GitHub (aplicacion web KING-AI-V3, no el modelo): https://github.com/tausifislam1000-creator/KING-AI-V3

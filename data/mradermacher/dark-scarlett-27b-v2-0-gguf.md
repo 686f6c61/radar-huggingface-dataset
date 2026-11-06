@@ -54,7 +54,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Dark-Scarlett-27B-v2.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Dark-Scarlett-27B-v2.0-GGUF
 - Modelo original (referenciado): https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0
 - Otras versiones de mradermacher:
   - https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-27B-i1-GGUF

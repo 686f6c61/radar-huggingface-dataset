@@ -105,7 +105,7 @@ Los unicos puntos de referencia documentados son el modelo original y, de forma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/embeddinggemma-2-4bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/embeddinggemma-2-4bit
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision del checkpoint fuente: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM (revision de conversion `3d87e884`): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

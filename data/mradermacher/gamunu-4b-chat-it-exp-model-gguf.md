@@ -82,7 +82,7 @@ La comparativa se limita a la categoria de modelos de aproximadamente 3-4B param
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Gamunu-4b-Chat-It-Exp-Model-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Gamunu-4b-Chat-It-Exp-Model-GGUF
 - Modelo base original: https://huggingface.co/manthilaffs/Gamunu-4b-Chat-It-Exp-Model
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#Gamunu-4b-Chat-It-Exp-Model-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

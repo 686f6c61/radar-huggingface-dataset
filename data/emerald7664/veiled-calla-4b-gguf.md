@@ -96,7 +96,7 @@ Frente a estos, Veiled Calla 4B se diferencia por su especializacion en roleplay
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Emerald7664/Veiled-Calla-4B-gguf
+- Repositorio Hugging Face: https://huggingface.co/Emerald7664/Veiled-Calla-4B-gguf
 - Modelo base: https://huggingface.co/soob3123/Veiled-Calla-4B
 - Coleccion Amoral del autor del modelo base (mencionada en la model card): https://huggingface.co/collections/soob3123/amoral-collection-67dccc556a39894b36f59676
 - Paper, blog, repositorio o demo adicionales: no disponibles (las busquedas web no devolvieron resultados relacionados con el modelo).

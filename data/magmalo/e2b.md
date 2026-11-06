@@ -2,7 +2,7 @@
 
 ## Resumen
 
-magmalo/E2B es un repositorio alojado en HuggingFace por el usuario magmalo bajo licencia Gemma. La model card publicada por el autor esta practicamente vacia: unicamente declara el campo `license: gemma`, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion. El repositorio ocupa 2,6 GB y cuenta con 0 descargas y 0 likes en el momento de la consulta.
+magmalo/E2B es un repositorio alojado en Hugging Face por el usuario magmalo bajo licencia Gemma. La model card publicada por el autor esta practicamente vacia: unicamente declara el campo `license: gemma`, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion. El repositorio ocupa 2,6 GB y cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre "E2B" coincide con "Gemma 4 E2B", un modelo ultraligero de la familia Gemma 4 de Google que, segun fuentes de terceros, empaqueta 2,1 mil millones de parametros, es text-only, tiene 8K de contexto y esta disenado para ejecutarse integramente en CPU. El tamano del repositorio (2,6 GB) es coherente con un modelo de ese orden, pero no existe confirmacion oficial de que magmalo/E2B sea una copia, un espejo o un ajuste fino de Gemma 4 E2B.
 
@@ -86,7 +86,7 @@ No se ha localizado informacion suficiente para comparar el rendimiento de magma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/magmalo/E2B
+- Repositorio en Hugging Face: https://huggingface.co/magmalo/E2B
 - Gemma 4 E2B en gemma4.dev: https://gemma4.dev/models/gemma-4-e2b
 - Guia de la familia Gemma 4 (aimadetools): https://www.aimadetools.com/blog/gemma-4-family-guide/
 - Analisis de Gemma 4 (tech-insider): https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/

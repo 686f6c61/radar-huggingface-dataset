@@ -78,7 +78,7 @@ La comparativa se basa en los nombres de los repositorios y en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_K_R4-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_K_R4-SPECIAL_SPLIT
 - Version BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Articulo de Yottalabs con especificaciones y requisitos: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

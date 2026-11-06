@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-pungent_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un fine-tuning eficiente mediante la librería PEFT, con un tamaño de repositorio de 0.7 GB, lo que sugiere que solo contiene los pesos del adaptador y no el modelo completo.
+El modelo `Jordine/patina3-pungent_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un fine-tuning eficiente mediante la librería PEFT, con un tamaño de repositorio de 0.7 GB, lo que sugiere que solo contiene los pesos del adaptador y no el modelo completo.
 
 La model card asociada está completamente vacía: no se especifica el propósito del fine-tuning, los datos de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados. Tampoco se han publicado resultados de evaluación ni benchmarks. Esto limita enormemente cualquier análisis técnico riguroso, ya que no es posible determinar qué tareas específicas aborda el adaptador ni cómo se comporta en comparación con otros modelos.
 
@@ -64,7 +64,7 @@ Dado que se trata de un adaptador LoRA sobre Llama-3.1-8B, los requisitos de har
 - VRAM estimada con cuantización 8-bit: ~8-10 GB.
 - VRAM estimada con cuantización 4-bit (GPTQ/AWQ): ~6-8 GB.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB), A10 (24 GB), A100 (40/80 GB), H100 (80 GB). También puede ejecutarse en GPUs de 16 GB como RTX 4080 con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Transformers con PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Transformers con PEFT.
 - Latencia y throughput: no disponibles, dependen del hardware y del runtime.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No se dispone de información sobre adaptadores LoRA comparables para Llama-3.1-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-pungent_sft_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-pungent_sft_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Librería PEFT: https://github.com/huggingface/peft

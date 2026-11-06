@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para comparar este adaptador con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-MoA
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-MoA
 - AlignTune (web): https://aligntune.lexsi.ai/
 - AlignTune (GitHub): https://github.com/Lexsi-Labs/aligntune
 - Lexsi Labs: https://lexsi.ai/

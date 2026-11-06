@@ -88,7 +88,7 @@ La diferencia principal frente a las alternativas oficiales de Qwen radica en qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Amr04/Qwen2.5-0.5B-Instruct-AWQ-W4A16-ASYM-Scratchy
+- Repositorio Hugging Face: https://huggingface.co/Amr04/Qwen2.5-0.5B-Instruct-AWQ-W4A16-ASYM-Scratchy
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Cuantizacion AWQ oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-AWQ
 - Variante Coder AWQ oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-AWQ

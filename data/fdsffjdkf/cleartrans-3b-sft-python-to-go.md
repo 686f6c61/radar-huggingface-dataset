@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Python-to-Go | 3,09 mil millones | no disponible | Traduccion Python a Go (SFT) | qwen-research (no comercial) | HuggingFace, pesos safetensors |
-| Qwen2.5-Coder-3B (base) | 3,09 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (modelo base original) | HuggingFace |
-| Qwen2.5-Coder-7B | aproximadamente 7,6 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | HuggingFace |
+| ClearTrans-3B-SFT-Python-to-Go | 3,09 mil millones | no disponible | Traduccion Python a Go (SFT) | qwen-research (no comercial) | Hugging Face, pesos safetensors |
+| Qwen2.5-Coder-3B (base) | 3,09 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (modelo base original) | Hugging Face |
+| Qwen2.5-Coder-7B | aproximadamente 7,6 mil millones | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al modelo base y a su variante de mayor tamano porque no se dispone de informacion sobre otros modelos especializados en traduccion Python a Go en la documentacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y a su variante de mayor tamano porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-Go
+- Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-Go
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Licencia (Qwen Research License Agreement): incluida en el repositorio como LICENSE

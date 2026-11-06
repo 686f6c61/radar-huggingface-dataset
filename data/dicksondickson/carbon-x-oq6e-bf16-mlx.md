@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Carbon-X-oQ6e-bf16-MLX | 14,8 B (6-bit oQ) | 40.960 tokens (~245 kbp ADN) | Genómica / ADN | MIT | MLX (oMLX), Apple Silicon |
-| HuggingFaceBio/Carbon-X (base) | ~14,8 B (bf16) | 40.960 tokens | Genómica / ADN | MIT | HuggingFace, formato original |
+| HuggingFaceBio/Carbon-X (base) | ~14,8 B (bf16) | 40.960 tokens | Genómica / ADN | MIT | Hugging Face, formato original |
 | EvolutionaryScale ESM 3 | hasta 98 B (multiescala) | no disponible | Proteínas / secuencias biológicas | Licencia propia (no comercial en tamaños grandes) | Pesos abiertos con restricciones |
 | Nucleotide Transformer (InstaDeep) | hasta 2,5 B | no disponible | Genómica (ADN) | Licencia propia (CMU/CC-BY-NC según variante) | Pesos abiertos con restricciones |
 

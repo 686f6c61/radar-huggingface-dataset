@@ -68,8 +68,8 @@ No se dispone de datos de benchmarks para comparar directamente este modelo con 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: [https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-8b-GGUF](https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-8b-GGUF)
-- Modelo base en HuggingFace: [https://huggingface.co/ibm-granite/granite-4.2-8b](https://huggingface.co/ibm-granite/granite-4.2-8b)
+- Repositorio Hugging Face del modelo cuantizado: [https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-8b-GGUF](https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-8b-GGUF)
+- Modelo base en Hugging Face: [https://huggingface.co/ibm-granite/granite-4.2-8b](https://huggingface.co/ibm-granite/granite-4.2-8b)
 - Documentación oficial de IBM Granite 4.2: [https://www.ibm.com/granite/docs/models/granite4-2](https://www.ibm.com/granite/docs/models/granite4-2)
 - Repositorio GitHub de los modelos Granite 4.2: [https://github.com/ibm-granite/granite-4.2-language-models](https://github.com/ibm-granite/granite-4.2-language-models)
 - Página general de IBM Granite: [https://www.ibm.com/granite](https://www.ibm.com/granite)

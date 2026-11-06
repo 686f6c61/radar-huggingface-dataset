@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dmitttrov/veridoc-extract-qwen3-0.6b-lora` es un adaptador LoRA publicado en HuggingFace por el usuario dmitttrov sobre el modelo base Qwen3-0.6B. El identificador del repositorio combina el nombre de un supuesto proyecto ("veridoc-extract") con el modelo de origen, lo que sugiere un ajuste fino orientado a extraccion de informacion estructurada a partir de documentos, aunque la model card publicada no incluye ninguna descripcion funcional: se limita a la declaracion de licencia `apache-2.0`.
+`dmitttrov/veridoc-extract-qwen3-0.6b-lora` es un adaptador LoRA publicado en Hugging Face por el usuario dmitttrov sobre el modelo base Qwen3-0.6B. El identificador del repositorio combina el nombre de un supuesto proyecto ("veridoc-extract") con el modelo de origen, lo que sugiere un ajuste fino orientado a extraccion de informacion estructurada a partir de documentos, aunque la model card publicada no incluye ninguna descripcion funcional: se limita a la declaracion de licencia `apache-2.0`.
 
 El interes de esta publicacion no esta en la novedad tecnica, sino en el patron que representa: adaptadores LoRA de bajo rango sobre modelos pequenos (0,6 mil millones de parametros) para tareas muy especificas de extraccion, donde el coste de inferencia y la posibilidad de ejecucion en local priman sobre la capacidad generalista. El modelo base Qwen3-0.6B, desarrollado por el equipo Qwen de Alibaba, es un transformer denso de 28 bloques decodificadores con grouped query attention y codificacion posicional RoPE, preentrenado sobre 36 billones de tokens.
 
-El repositorio se creo y actualizo el 14 de octubre de 2026 segun los metadatos de HuggingFace, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, sin pipeline declarado ni idiomas indicados. Es, por tanto, un artefacto practicamente sin validacion publica: cualquier evaluacion de su calidad debe realizarse por cuenta del usuario antes de considerarlo para produccion.
+El repositorio se creo y actualizo el 14 de octubre de 2026 segun los metadatos de Hugging Face, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, sin pipeline declarado ni idiomas indicados. Es, por tanto, un artefacto practicamente sin validacion publica: cualquier evaluacion de su calidad debe realizarse por cuenta del usuario antes de considerarlo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Advertencia: los siguientes escenarios son aplicaciones plausibles deducidas del
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card ni los metadatos de HuggingFace incluyen metricas de MMLU, HumanEval, GSM8K, ni evaluaciones especificas de extraccion documental (precision, recall o F1 por campo). Tampoco existe comparacion con otros adaptadores de extraccion sobre Qwen3-0.6B.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card ni los metadatos de Hugging Face incluyen metricas de MMLU, HumanEval, GSM8K, ni evaluaciones especificas de extraccion documental (precision, recall o F1 por campo). Tampoco existe comparacion con otros adaptadores de extraccion sobre Qwen3-0.6B.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No existe informacion evaluativa que permita comparar el rendimiento de este ada
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| veridoc-extract-qwen3-0.6b-lora | No disponible (adaptador LoRA) | LoRA sobre transformer denso | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| veridoc-extract-qwen3-0.6b-lora | No disponible (adaptador LoRA) | LoRA sobre transformer denso | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3-0.6B (modelo base) | ~0,6 mil millones (dato de las fuentes consultadas) | Transformer denso, 28 bloques, GQA, RoPE | No disponible en las fuentes consultadas | Apache 2.0 | Ampliamente distribuido, con variantes para despliegue en Qualcomm AI Hub y AXERA |
 | Otros modelos de 0,5-1 mil millones de parametros | No disponible | No disponible | No disponible | No disponible | No disponible |
 

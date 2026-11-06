@@ -17,7 +17,7 @@ La relevancia actual de este lanzamiento radica en que combina un contexto extre
 | Parametros activos | 42B por token |
 | Longitud de contexto | 1.000.000 tokens en inferencia |
 | Tipos de cuantizacion | GGUF con esquema Unsloth Dynamic 3.0 (lista completa de niveles no disponible); el modelo original se publica en BF16 y NVFP4 |
-| Idiomas soportados | Multilingue, entrenado con datos de mas de 100 idiomas (los metadatos de HuggingFace indican "en") |
+| Idiomas soportados | Multilingue, entrenado con datos de mas de 100 idiomas (los metadatos de Hugging Face indican "en") |
 | Licencia | Muse Model License (license_name: muse-model-license) |
 | Formato de pesos | GGUF en este repositorio; safetensors en el modelo base (BF16 y NVFP4) |
 
@@ -83,7 +83,7 @@ Comparacion con otros modelos de la misma categoria: no disponible.
 
 - Riesgo de alucinacion: no se documentan tasas de error ni evaluaciones especificas en la informacion disponible; como cualquier modelo generativo, puede producir contenido incorrecto.
 - Seguridad: la model card indica que la version de pesos abiertos ha recibido un post-entrenamiento de seguridad adicional para resistir usos indebidos como modelo autonomo, y recomienda desplegarlo dentro de un sistema de IA mas amplio con guardarrailes adicionales adaptados al caso de uso.
-- Idiomas: aunque el entrenamiento cubre mas de 100 idiomas, los metadatos de HuggingFace etiquetan el modelo unicamente como "en"; no hay datos de rendimiento por idioma.
+- Idiomas: aunque el entrenamiento cubre mas de 100 idiomas, los metadatos de Hugging Face etiquetan el modelo unicamente como "en"; no hay datos de rendimiento por idioma.
 - Licencia: se trata de Muse Model License, una licencia de tipo "other". No se detallan en la informacion proporcionada las condiciones exactas de uso comercial, por lo que es imprescindible revisar el archivo LICENSE.md antes de un despliegue en produccion.
 - Hardware: los requisitos de 700 GB o 2 TB de VRAM limitan severamente su uso fuera de infraestructura profesional o de configuraciones especificas de doble Mac Studio M5 Ultra.
 - Datos de entrenamiento: la seccion de la model card aparece truncada, por lo que no se puede verificar la composicion del dataset, el numero de tokens ni las tecnicas de alineacion empleadas.
@@ -92,7 +92,7 @@ Comparacion con otros modelos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Licencia (LICENSE.md): https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/LICENSE.md
 - Guia de Unsloth para ejecutar Muse Spark Open: https://unsloth.ai/docs/models/muse-spark-open

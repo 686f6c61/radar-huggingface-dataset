@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye resultados de otros equip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LogicPalette/eurs-macvi2027-aimslabs-track1-weights
+- Modelo en Hugging Face: https://huggingface.co/LogicPalette/eurs-macvi2027-aimslabs-track1-weights
 - Codigo del equipo: https://github.com/RishiiGamer2201/eurs-macvi2027-aimslabs-track1
 - SAM 3 (facebook/sam3): https://huggingface.co/facebook/sam3

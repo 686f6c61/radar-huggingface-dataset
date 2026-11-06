@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10` es un modelo de generacion de texto en italiano (variedad `ita_latn`) obtenido por ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/ita_latn_100mb`. El autor del repositorio es el usuario de HuggingFace `francesca9805`, que segun la insignia de Weights & Biases del propio repositorio corresponde a F. Padovani, de la Universidad de Groningen. El modelo se publico en octubre de 2026 y forma parte de una familia de experimentos aparentemente centrada en tokenizadores y en entrenamiento estructurado sobre corpus de 100 MB, a juzgar por el nombre del proyecto de W&B ("new-tokenizers").
+`francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10` es un modelo de generacion de texto en italiano (variedad `ita_latn`) obtenido por ajuste fino supervisado (SFT) sobre el modelo base `goldfish-models/ita_latn_100mb`. El autor del repositorio es el usuario de Hugging Face `francesca9805`, que segun la insignia de Weights & Biases del propio repositorio corresponde a F. Padovani, de la Universidad de Groningen. El modelo se publico en octubre de 2026 y forma parte de una familia de experimentos aparentemente centrada en tokenizadores y en entrenamiento estructurado sobre corpus de 100 MB, a juzgar por el nombre del proyecto de W&B ("new-tokenizers").
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la misma escala que GPT-2 small. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato `safetensors` dentro de la libreria `transformers`. El ajuste se realizo con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1, y el modelo esta etiquetado como compatible con Text Generation Inference (TGI) y con endpoints de inferencia gestionados.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y de caracter experimental: no tiene descargas ni "lik
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de un transformer decoder-only autorregresivo de estilo GPT-2, con 124.770.816 parametros. El repositorio incluye la etiqueta `gpt2`, lo que indica que la clase de modelo configurada corresponde a la familia GPT-2 de HuggingFace. No se especifica en la model card el numero de capas, la dimension oculta, el numero de cabezas de atencion ni la longitud de contexto, por lo que estos datos deben considerarse no disponibles. El modelo base `goldfish-models/ita_latn_100mb` pertenece a la coleccion Goldfish de modelos de lenguaje pequenos orientados a cobertura multilingue, y en este caso esta especializado en un corpus italiano de 100 MB.
+La arquitectura es la de un transformer decoder-only autorregresivo de estilo GPT-2, con 124.770.816 parametros. El repositorio incluye la etiqueta `gpt2`, lo que indica que la clase de modelo configurada corresponde a la familia GPT-2 de Hugging Face. No se especifica en la model card el numero de capas, la dimension oculta, el numero de cabezas de atencion ni la longitud de contexto, por lo que estos datos deben considerarse no disponibles. El modelo base `goldfish-models/ita_latn_100mb` pertenece a la coleccion Goldfish de modelos de lenguaje pequenos orientados a cobertura multilingue, y en este caso esta especializado en un corpus italiano de 100 MB.
 
 El entrenamiento consistio en un ajuste fino supervisado (SFT) ejecutado con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El nombre del modelo incluye indicios del experimento ("ppt-mp-struct-100mb_seed10"): el sufijo `seed10` apunta a una semilla concreta dentro de un barrido de configuraciones, y `struct` sugiere el uso de datos con estructura anotada o formateada de algun tipo, aunque los detalles no se documentan. Existe un registro publico del entrenamiento en Weights & Biases, en el proyecto `new-tokenizers` y con el identificador de ejecucion `u80l4pmm`. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion posteriores al SFT, ni el numero total de tokens de entrenamiento.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas | SFT con TRL sobre base Goldfish italiano |
-| goldfish-models/ita_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | Modelo base monolingue italiano de la coleccion Goldfish |
+| francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas | SFT con TRL sobre base Goldfish italiano |
+| goldfish-models/ita_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | Modelo base monolingue italiano de la coleccion Goldfish |
 | GPT-2 small (referencia de la misma clase arquitectonica) | 124 M | 1024 tokens (dato del modelo original, no de esta ficha) | MIT (modelo original) | Ampliamente disponible | Referencia de tamano; no comparable en idioma ni en ajuste |
 | DistilGPT-2 | 82 M | 1024 tokens (dato del modelo original) | MIT (modelo original) | Ampliamente disponible | Alternativa mas pequena, entrenada por destilacion, no especializada en italiano |
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/u80l4pmm
 - Repositorio de TRL: https://github.com/huggingface/trl

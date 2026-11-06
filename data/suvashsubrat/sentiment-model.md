@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificacion de texto publicado por el usuario Suvashsubrat en HuggingFace, consistente en un ajuste fino (fine-tuning) del checkpoint `distilbert/distilbert-base-uncased` para la tarea de analisis de sentimiento. Se trata de un transformer encoder denso de tipo BERT destilado, con 66.955.779 parametros totales y un repositorio de 0,3 GB en formato `safetensors`. La model card esta generada automaticamente por la libreria `Trainer` de Transformers y no documenta ni el dataset de entrenamiento ni los usos previstos.
+`sentiment-model` es un modelo de clasificacion de texto publicado por el usuario Suvashsubrat en Hugging Face, consistente en un ajuste fino (fine-tuning) del checkpoint `distilbert/distilbert-base-uncased` para la tarea de analisis de sentimiento. Se trata de un transformer encoder denso de tipo BERT destilado, con 66.955.779 parametros totales y un repositorio de 0,3 GB en formato `safetensors`. La model card esta generada automaticamente por la libreria `Trainer` de Transformers y no documenta ni el dataset de entrenamiento ni los usos previstos.
 
 El modelo declara sobre su conjunto de evaluacion una perdida de 0,7470, una exactitud de 0,6598 y un F1 ponderado y macro de 0,6493. Son cifras modestas para un clasificador de sentimiento y, dado que el F1 macro coincide con el ponderado, apuntan a un reparto de clases relativamente equilibrado en el conjunto de validacion. El autor no especifica el numero de clases, el idioma de los datos ni la composicion del corpus.
 
@@ -41,7 +41,7 @@ La evolucion registrada durante el entrenamiento muestra un descenso de la perdi
 ## Capacidades
 
 - Clasificacion de texto: el modelo devuelve etiquetas de sentimiento para una secuencia de entrada a traves del pipeline `text-classification`, con las etiquetas `LABEL_0`, `LABEL_1`, etc. propias de la cabeza de clasificacion.
-- Analisis de sentimiento: es el unico uso declarado implicitamente por el nombre del modelo y por su tarea en HuggingFace; no hay descripcion de usos previstos en la model card.
+- Analisis de sentimiento: es el unico uso declarado implicitamente por el nombre del modelo y por su tarea en Hugging Face; no hay descripcion de usos previstos en la model card.
 - Generacion de texto: no. Es un modelo exclusivamente de codificacion y clasificacion.
 - Razonamiento, codigo, matematicas: no disponibles; no hay evidencia ni declaracion al respecto.
 - Vision o audio: no. El modelo es unicamente de texto.
@@ -84,7 +84,7 @@ No se dispone de resultados comparativos oficiales frente a otros modelos en la 
 - VRAM estimada para inferencia: inferior a 1 GB. En precision FP32 el modelo ocupa aproximadamente 268 MB de pesos; en FP16 o INT8, unos 134 MB. Cualquier GPU con mas de 1 GB de memoria es suficiente.
 - GPU recomendadas: no requiere GPU dedicada. Funciona en CPU sin problema; en caso de usar acelerador, cualquier NVIDIA GTX 10xx o superior, RTX 3060/4090, T4, A10, A100 o H100 sirven sobradamente.
 - GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en GPUs integradas y en dispositivos de borde con unos pocos cientos de MB libres.
-- Opciones de despliegue: pipeline de `transformers` en Python, exportacion a ONNX Runtime, TorchScript, serializacion con `safetensors`, servicio HTTP con FastAPI o TorchServe, y HuggingFace Inference Endpoints (el modelo lleva la etiqueta `endpoints_compatible`). vLLM no es una via natural para un clasificador de este tamano; llama.cpp, Ollama y TGI estan orientados a modelos generativos y no son la ruta recomendada.
+- Opciones de despliegue: pipeline de `transformers` en Python, exportacion a ONNX Runtime, TorchScript, serializacion con `safetensors`, servicio HTTP con FastAPI o TorchServe, y Hugging Face Inference Endpoints (el modelo lleva la etiqueta `endpoints_compatible`). vLLM no es una via natural para un clasificador de este tamano; llama.cpp, Ollama y TGI estan orientados a modelos generativos y no son la ruta recomendada.
 - Latencia y throughput estimados: no disponibles como datos publicados. Por el tamano del modelo (67 M de parametros, 6 capas), se estima un coste de decenas de milisegundos por lote en CPU moderna y de pocos milisegundos en GPU, con throughput del orden de cientos a miles de secuencias por segundo en GPU; son estimaciones derivadas del tamano, no mediciones del autor.
 - Memoria de sistema: al necesitar menos de 1 GB de pesos y una ventana de 512 tokens como maximo, el modelo puede ejecutarse en contenedores muy pequenos (por ejemplo, 1-2 GB de RAM).
 
@@ -92,10 +92,10 @@ No se dispone de resultados comparativos oficiales frente a otros modelos en la 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| `Suvashsubrat/sentiment-model` | 66.955.779 | no disponible (base de 512) | Apache 2.0 | Accuracy 0,6598; F1 macro 0,6493 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M (misma base) | 512 tokens | Apache 2.0 | ~91 % de exactitud en SST-2 segun la model card oficial (referencia externa, no verificada en esta ficha) | HuggingFace, ampliamente utilizado |
-| `distilbert-base-uncased` (sin ajustar) | 66,9 M | 512 tokens | Apache 2.0 | no aplica a clasificacion directa de sentimiento | HuggingFace |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| `Suvashsubrat/sentiment-model` | 66.955.779 | no disponible (base de 512) | Apache 2.0 | Accuracy 0,6598; F1 macro 0,6493 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66,9 M (misma base) | 512 tokens | Apache 2.0 | ~91 % de exactitud en SST-2 segun la model card oficial (referencia externa, no verificada en esta ficha) | Hugging Face, ampliamente utilizado |
+| `distilbert-base-uncased` (sin ajustar) | 66,9 M | 512 tokens | Apache 2.0 | no aplica a clasificacion directa de sentimiento | Hugging Face |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 La comparacion directa es desigual: el modelo de este analisis comparte arquitectura y tamano con los ajustes oficiales de DistilBERT para sentimiento, pero carece de la documentacion de dataset y de las cifras de rendimiento que si acompanan a las alternativas mantenidas por terceros. Cualquier eleccion entre ellos deberia basarse en una evaluacion sobre el corpus real de destino, no en las cifras de las model cards.
 
@@ -115,7 +115,7 @@ La comparacion directa es desigual: el modelo de este analisis comparte arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Suvashsubrat/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/Suvashsubrat/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Alternativa mantenida oficialmente para sentimiento en ingles: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - Paper de DistilBERT (Sanh et al., 2019), referencia externa sobre la arquitectura del backbone: https://arxiv.org/abs/1910.01108

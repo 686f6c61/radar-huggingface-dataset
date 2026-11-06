@@ -77,8 +77,8 @@ No hay comparativas publicadas con otros modelos en las mismas suites (salvo la 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wattson-granite-4.2-8b-py | 8,79 B | 8192 (entrenamiento) | Flujo de potencia AC con tool calling (pandapower) | Apache-2.0 | HuggingFace, safetensors bf16 |
-| ibm-granite/granite-4.2-8b (base) | ~8 B | no disponible en la informacion proporcionada | Modelo general con tool calling | Apache-2.0 | HuggingFace |
+| wattson-granite-4.2-8b-py | 8,79 B | 8192 (entrenamiento) | Flujo de potencia AC con tool calling (pandapower) | Apache-2.0 | Hugging Face, safetensors bf16 |
+| ibm-granite/granite-4.2-8b (base) | ~8 B | no disponible en la informacion proporcionada | Modelo general con tool calling | Apache-2.0 | Hugging Face |
 | Estudiantes Qwen3.5-4B (misma receta, proyecto wattson) | ~4 B | no disponible | Misma tarea de razonamiento anclado en solver | no disponible | Mencionados en la model card del proyecto |
 
 Comparado con su modelo base, este fine-tune sacrifica generalidad a cambio de fiabilidad extrema en su dominio estrecho (cero numeros alucinados en las suites evaluadas). Comparado con los estudiantes Qwen3.5-4B de la misma receta, ofrece el doble de parametros, lo que presumiblemente aporta mayor estabilidad, aunque el propio autor advierte de la variabilidad entre semillas en la suite de rechazo.
@@ -97,7 +97,7 @@ Comparado con su modelo base, este fine-tune sacrifica generalidad a cambio de f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PromptExecutionAU/wattson-granite-4.2-8b-py
+- Modelo en Hugging Face: https://huggingface.co/PromptExecutionAU/wattson-granite-4.2-8b-py
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Repositorio del proyecto (codigo, harness y `docs/results.md`): https://github.com/fungible-farm/wattson
 - Dataset de redes CSIRO Synthetic-NEM-2000-Bus: no disponible (no se proporciona enlace directo en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PPO-run2 es un checkpoint de investigación publicado por el usuario Riasok en HuggingFace, correspondiente al experimento número dos de ajuste fino con PPO (Proximal Policy Optimization) sobre un modelo de robótica denominado MolmoAct2. No se trata de un modelo de lenguaje de propósito general, sino de un artefacto de entrenamiento: un checkpoint completo (actor, cabeza de valor, optimizador y estados RNG por rango) que requiere el VLM congelado y los procesadores exactos del modelo base `Riasok/few-shot-run-2` para poder cargarse. El repositorio ocupa 6.9 GB y contiene el estado de la actualización 107 de un entrenamiento que fue detenido intencionadamente antes de completar las 150 actualizaciones previstas.
+PPO-run2 es un checkpoint de investigación publicado por el usuario Riasok en Hugging Face, correspondiente al experimento número dos de ajuste fino con PPO (Proximal Policy Optimization) sobre un modelo de robótica denominado MolmoAct2. No se trata de un modelo de lenguaje de propósito general, sino de un artefacto de entrenamiento: un checkpoint completo (actor, cabeza de valor, optimizador y estados RNG por rango) que requiere el VLM congelado y los procesadores exactos del modelo base `Riasok/few-shot-run-2` para poder cargarse. El repositorio ocupa 6.9 GB y contiene el estado de la actualización 107 de un entrenamiento que fue detenido intencionadamente antes de completar las 150 actualizaciones previstas.
 
 El modelo parte de un SFT previo (`few-shot-run-2`) entrenado con 10 demostraciones por tarea (400 en total) durante 5000 pasos, que alcanzó un 80.4% de éxito (402/500) en el benchmark Spatial. Sobre esa base, el run de PPO congeló el VLM adaptado y entrenó únicamente el experto de acción y el crítico, con el objetivo de mejorar la política de control robótico mediante refuerzo. La relevancia de esta ficha es limitada fuera del ámbito de la investigación en robótica y RL: no es un modelo desplegable como asistente, sino una pieza reproducible de un pipeline experimental de aprendizaje por refuerzo aplicado a manipulación robótica.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Riasok/PPO-run2 | Checkpoint PPO sobre MolmoAct2 (robótica) | No disponible | No disponible | 90% (update 100) en Spatial, 100 ensayos | No disponible | HuggingFace, 0 descargas |
-| Riasok/few-shot-run-2 | SFT base (MolmoAct2) | No disponible | No disponible | 81% en Spatial, 100 ensayos; 402/500 en 500 ensayos | No disponible | HuggingFace (modelo base) |
+| Riasok/PPO-run2 | Checkpoint PPO sobre MolmoAct2 (robótica) | No disponible | No disponible | 90% (update 100) en Spatial, 100 ensayos | No disponible | Hugging Face, 0 descargas |
+| Riasok/few-shot-run-2 | SFT base (MolmoAct2) | No disponible | No disponible | 81% en Spatial, 100 ensayos; 402/500 en 500 ensayos | No disponible | Hugging Face (modelo base) |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre otros modelos de la misma categoría en la documentación proporcionada.
@@ -93,6 +93,6 @@ No se dispone de información sobre otros modelos de la misma categoría en la d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Riasok/PPO-run2
+- Repositorio Hugging Face: https://huggingface.co/Riasok/PPO-run2
 - Modelo base SFT: https://huggingface.co/Riasok/few-shot-run-2
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

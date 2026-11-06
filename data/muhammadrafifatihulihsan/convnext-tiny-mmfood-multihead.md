@@ -81,8 +81,8 @@ Estas métricas son resultados guardados de la ejecución de entrenamiento, no u
 
 | Modelo | Parámetros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| ConvNeXt-Tiny MMFood Multihead | 28,07 M | Clasificación y regresión alimentaria multi-tarea | Imagen 224 x 224 | Personal no comercial | HuggingFace |
-| facebook/convnext-tiny-224 | ~28 M | Clasificación ImageNet (1.000 clases) | Imagen 224 x 224 | MIT (según el modelo base) | HuggingFace |
+| ConvNeXt-Tiny MMFood Multihead | 28,07 M | Clasificación y regresión alimentaria multi-tarea | Imagen 224 x 224 | Personal no comercial | Hugging Face |
+| facebook/convnext-tiny-224 | ~28 M | Clasificación ImageNet (1.000 clases) | Imagen 224 x 224 | MIT (según el modelo base) | Hugging Face |
 | Otros modelos de reconocimiento alimentario | no disponible | Clasificación de alimentos | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de otros modelos comparables de reconocimiento alimentario multi-tarea con métricas publicadas para establecer una comparación cuantitativa. El modelo base ConvNeXt-Tiny es el referente arquitectónico directo, pero no resuelve la tarea nutricional ni la clasificación de platos y métodos de cocción.
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de otros modelos comparables de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammadrafifatihulihsan/convnext-tiny-mmfood-multihead
+- Modelo en Hugging Face: https://huggingface.co/muhammadrafifatihulihsan/convnext-tiny-mmfood-multihead
 - Repositorio GitHub con código y notebooks: https://github.com/muhammadrafifatihulihsan/convnext-tiny-mmfood-multihead
 - Modelo base: https://huggingface.co/facebook/convnext-tiny-224
 - Dataset: https://huggingface.co/datasets/Humanbased-AI/MM-Food-100K

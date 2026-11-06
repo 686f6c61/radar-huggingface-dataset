@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bigbird-pegasus-large-arxiv-mic | ~6,8 M (fixture) | no disponible | Pruebas de integracion | no disponible | HuggingFace |
-| google/bigbird-pegasus-large-arxiv | ~2.100 M | contexto largo tipo BigBird (no disponible el valor exacto) | Resumen de articulos cientificos | no disponible | HuggingFace |
-| google/pegasus-large | ~568 M | 512-1024 tokens (segun variante) | Resumen abstractivo | Apache 2.0 (segun variante) | HuggingFace |
+| bigbird-pegasus-large-arxiv-mic | ~6,8 M (fixture) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
+| google/bigbird-pegasus-large-arxiv | ~2.100 M | contexto largo tipo BigBird (no disponible el valor exacto) | Resumen de articulos cientificos | no disponible | Hugging Face |
+| google/pegasus-large | ~568 M | 512-1024 tokens (segun variante) | Resumen abstractivo | Apache 2.0 (segun variante) | Hugging Face |
 
 La comparativa con el checkpoint original es la mas relevante: mismo contrato de API y mismos nombres de tensores, pero con un 0,3 % de los parametros y sin entrenamiento. Frente a PEGASUS estandar, el modelo base de este fixture incorpora atencion dispersa BigBird para contextos mas largos.
 
@@ -81,7 +81,7 @@ La comparativa con el checkpoint original es la mas relevante: mismo contrato de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/bigbird-pegasus-large-arxiv-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/bigbird-pegasus-large-arxiv-mic
 - Modelo base: https://huggingface.co/google/bigbird-pegasus-large-arxiv
 - Manifiesto de contrato: `integration.json` (en el repositorio)
 - Uso en Transformers: `integrations/transformers/usage.md` (en el repositorio)

@@ -104,11 +104,11 @@ Los únicos comparables publicados son los de la propia familia kev y el modelo 
 
 | Modelo | Parametros | Precision in-distribution | Precision out-of-domain | Brier out-of-domain | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kev-4b (preview) | ~4B + LoRA r=16 | 0,854 | 0,790 | 0,328 | Apache 2.0 | HuggingFace (este repo) |
+| kev-4b (preview) | ~4B + LoRA r=16 | 0,854 | 0,790 | 0,328 | Apache 2.0 | Hugging Face (este repo) |
 | kev-0.6b preview | ~0,6B | 0,805 | 0,598 | 0,521 | no disponible | preview previo de la familia |
 | kev-0.5b | ~0,5B | 0,712 | 0,575 | 0,50 | no disponible | preview previo de la familia |
 | Jev | no disponible | 0,845 | 0,857 | 0,211 | no disponible | referencia interna del autor |
-| Qwen3-4B-Base zero-shot (lectura por letra) | ~4B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Base zero-shot (lectura por letra) | ~4B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Nota: el modelo base sin ajustar obtiene 0,688 en los mismos ítems de MMLU y 0,787 en PAWS, frente a 0,65 y 0,72 de kev-4b; el ajuste mejora la decisión tipada pero erosiona parte del conocimiento del base.
 
@@ -128,7 +128,7 @@ Nota: el modelo base sin ajustar obtiene 0,688 en los mismos ítems de MMLU y 0,
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jaredpalmer/kev-4b
+- Repositorio de Hugging Face: https://huggingface.co/jaredpalmer/kev-4b
 - Codigo, suites y todos los ensayos con hashes y bootstraps: https://github.com/jaredpalmer/kev (archivos `PLAN.md` y `runs/leaderboard.md`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos correspondian a entidades bancarias sin relacion). No se han localizado papers, blogs ni demos adicionales.

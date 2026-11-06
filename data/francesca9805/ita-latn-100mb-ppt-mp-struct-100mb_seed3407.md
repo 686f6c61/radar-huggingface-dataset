@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/ita_latn_100mb`, un transformer decoder-only de tipo GPT-2 entrenado para la lengua italiana. El modelo lo publica el usuario de HuggingFace `francesca9805`, y segun los metadatos de la model card se ha entrenado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning). El repositorio tiene apenas 0,3 GB de tamano y no acumula descargas ni likes en el momento de la consulta.
+`francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/ita_latn_100mb`, un transformer decoder-only de tipo GPT-2 entrenado para la lengua italiana. El modelo lo publica el usuario de Hugging Face `francesca9805`, y segun los metadatos de la model card se ha entrenado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning). El repositorio tiene apenas 0,3 GB de tamano y no acumula descargas ni likes en el momento de la consulta.
 
 El problema que aborda es el de adaptar un modelo pequeno de lengua italiana a un formato de instrucciones o de datos estructurados, presumiblemente a partir del sufijo del nombre (`ppt-mp-struct-100mb_seed3407`), que sugiere algun tipo de preprocesado o formateo estructural de los datos de entrenamiento. Se trata, por tanto, de un modelo de investigacion o experimento academico, no de un modelo orientado a produccion. Su relevancia es limitada fuera del contexto del experimento concreto para el que fue creado.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407` | ~124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/ita_latn_100mb` (modelo base) | ~124 M | no disponible | no disponible | HuggingFace (familia Goldfish) |
+| `francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407` | ~124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/ita_latn_100mb` (modelo base) | ~124 M | no disponible | no disponible | Hugging Face (familia Goldfish) |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens (estandar de la arquitectura) | MIT (version original de OpenAI) | ampliamente disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 - Modelo de muy reducido tamano (~125 M de parametros): su calidad de generacion, coherencia y conocimiento factual son limitados en comparacion con modelos de mayor escala.
 - Riesgo elevado de alucinacion y de incoherencia en generaciones largas, propio de modelos GPT-2 pequenos.
-- No hay licencia especificada de forma clara: la model card indica `licence: license` sin terminos concretos, y la ficha de HuggingFace no la declara. El uso comercial queda, por tanto, en situacion de incertidumbre juridica.
+- No hay licencia especificada de forma clara: la model card indica `licence: license` sin terminos concretos, y la ficha de Hugging Face no la declara. El uso comercial queda, por tanto, en situacion de incertidumbre juridica.
 - No se documentan los idiomas soportados oficialmente; aunque el modelo base sea italiano, no hay garantia de cobertura ni de calidad en otras lenguas.
 - No se dispone de informacion sobre sesgos, composicion del dataset ni filtrado de datos, lo que impide evaluar riesgos de sesgo.
 - Ausencia de benchmarks: no es posible verificar su rendimiento objetivo frente a alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/fj53kx7d
 - Repositorio de TRL: https://github.com/huggingface/trl

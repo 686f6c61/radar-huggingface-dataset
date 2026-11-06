@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p0pc0rn-assistant-drafter-gemma4-e2b | no disponible (base E2B) | no disponible | pocketflux.pack/1 | Apache-2.0 | HuggingFace, 0 descargas |
+| p0pc0rn-assistant-drafter-gemma4-e2b | no disponible (base E2B) | no disponible | pocketflux.pack/1 | Apache-2.0 | Hugging Face, 0 descargas |
 | google/gemma-4-E2B-it-assistant | no disponible (E2B) | no disponible | no disponible | Apache-2.0 (según la model card de esta conversión) | Repositorio de Google |
-| JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4 | no disponible | no disponible | pocketflux.pack/1 | no disponible | HuggingFace |
+| JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4 | no disponible | no disponible | pocketflux.pack/1 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes ni de otros drafters MTP públicos con los que contrastar métricas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes ni de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-assistant-drafter-gemma4-e2b
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-assistant-drafter-gemma4-e2b
 - Modelo asistente emparejado: https://huggingface.co/JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-assistant
 - X oficial del proyecto: https://x.com/p0pc0rnapp

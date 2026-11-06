@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kontext-security/Kestrel
+- Modelo en Hugging Face: https://huggingface.co/kontext-security/Kestrel
 - Repositorio de evaluacion ShellRisk-Bench: https://github.com/kontext-security/shellrisk-bench
 - Dataset ShellRisk-Bench: https://huggingface.co/datasets/kontext-security/ShellRisk-Bench
 - Organizacion kontext-security en GitHub: https://github.com/kontext-security

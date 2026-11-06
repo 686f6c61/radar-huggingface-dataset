@@ -24,8 +24,8 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 «li
 | Autor | smlflg (Samuel, @smlfg en GitHub) |
 | Construido con | Claude Code |
 | Numero de skills | 29 skills en 6 categorias (coding y delegacion, research, testing, flujo TDAH, multiagente, utilidades) |
-| Fecha de publicacion | 2026-09-16 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-16 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-16 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -108,7 +108,7 @@ La unica comparacion posible con la informacion disponible es interna, entre las
 - Idiomas: la documentacion esta redactada en aleman y no se declaran idiomas soportados; los prompts y comandos pueden requerir adaptacion para equipos hispanohablantes.
 - Ausencia de benchmarks: no hay ninguna metrica de calidad, latencia o tasa de exito de las tareas delegadas, lo que impide cuantificar el ahorro real frente a usar un unico modelo.
 - Riesgo de alucinacion: heredado de los modelos subyacentes, especialmente en la capa de research (/research, /research-swarm), donde las respuestas de Gemini Flash a 0,10 USD por millon de tokens no incorporan verificacion automatica adicional.
-- Documentacion incompleta: la model card de HuggingFace esta truncada (termina en una seccion sin desarrollar, «4. ai-Command inst»), por lo que la descripcion funcional no esta cerrada.
+- Documentacion incompleta: la model card de Hugging Face esta truncada (termina en una seccion sin desarrollar, «4. ai-Command inst»), por lo que la descripcion funcional no esta cerrada.
 - Adopcion nula y fechas anomalas: 0 descargas y 0 «likes», y las fechas de creacion y actualizacion (2026-09-16) son posteriores a la fecha habitual de consulta, lo que sugiere metadatos inconsistentes o generados automaticamente.
 - Coste en cascada: los skills mas usados (/chef, /test, /review, /debug-loop) se situan en torno a 3 USD por ejecucion, por lo que un uso intensivo puede acumular gasto rapido pese a la estrategia de delegacion.
 - Acoplamiento a un unico entorno: los comandos dependen de la interfaz de Claude Code; migrarlos a otro agente exigiria reescribir la capa de skills y los hooks.
@@ -116,6 +116,6 @@ La unica comparacion posible con la informacion disponible es interna, entre las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/MyAIGame
+- Hugging Face: https://huggingface.co/smlflg/MyAIGame
 - GitHub del autor: https://github.com/smlfg
 - Busqueda web: no se encontraron enlaces relevantes sobre este repositorio. Los resultados devueltos (foros de YouTube, conversion de audio y soporte de suscripciones) no guardan relacion con el modelo ni aportan documentacion tecnica.

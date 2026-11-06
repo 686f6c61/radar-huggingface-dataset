@@ -83,8 +83,8 @@ El autor advierte que las diferencias de aproximadamente un punto deben tratarse
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-few-gt-N64-u1-lam5-guided (majority/format) | 1,24 B | 128K | llama3.2 | math_avg 0.0838 / 0.0872 (ver tabla) | safetensors bf16 + checkpoints FSDP2 en HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct (modelo base) | 1,24 B | 128K | llama3.2 | no disponible en la informacion | safetensors en HuggingFace |
+| Llama-3.2-1B-few-gt-N64-u1-lam5-guided (majority/format) | 1,24 B | 128K | llama3.2 | math_avg 0.0838 / 0.0872 (ver tabla) | safetensors bf16 + checkpoints FSDP2 en Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct (modelo base) | 1,24 B | 128K | llama3.2 | no disponible en la informacion | safetensors en Hugging Face |
 | Alternativas de ~1B de la misma categoria (por ejemplo, fine-tunes matematicos de Qwen o Llama) | ~1-1,5 B | variable | variable | no disponible en la informacion | no disponible en la informacion |
 
 La model card solo proporciona numeros comparativos entre las dos ejecuciones del propio repositorio; no incluye cifras frente a otros modelos. La unica referencia externa es el donante ground-truth `llama_N64_gt_step300` usado para extraer u₁, cuyo rendimiento no se detalla.
@@ -105,7 +105,7 @@ La model card solo proporciona numeros comparativos entre las dos ejecuciones de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JaeWooShin/Llama-3.2-1B-few-gt-N64-u1-lam5-guided
+- Hugging Face: https://huggingface.co/JaeWooShin/Llama-3.2-1B-few-gt-N64-u1-lam5-guided
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio relacionado (transfer bundle / bases): https://huggingface.co/JaeWooShin/Llama-Qwen-few-gt-transfer
 - Vector u₁: `basis/llama_N64_gt_step300_u1.pt` (sha256 `1ef1784e973c6eae1af0e5818d9afe3777aa7cd85c1a01b98242104e560ee32e`)

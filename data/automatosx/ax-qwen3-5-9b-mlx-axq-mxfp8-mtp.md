@@ -96,7 +96,7 @@ No hay datos de benchmarks ni de calidad para ninguno de estos artefactos; la co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP8-MTP)
+- [Modelo en Hugging Face](https://huggingface.co/AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP8-MTP)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Revisión inmutable del modelo fuente](https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a)
 - [Colección AX BI](https://huggingface.co/collections/AutomatosX/ax-bi-6ad54be40f8f1d5415a8d15a)

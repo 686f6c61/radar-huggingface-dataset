@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento publicados para modelos comparables en la 
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atomizer-gliner-small (este) | Atomizacion + critic de comprobabilidad | 163M | 1.024 tokens | cc-by-4.0 | Pesos en HuggingFace; codigo de carga privado bajo peticion |
+| atomizer-gliner-small (este) | Atomizacion + critic de comprobabilidad | 163M | 1.024 tokens | cc-by-4.0 | Pesos en Hugging Face; codigo de carga privado bajo peticion |
 | gliner-community/gliner_small-v2.5 (modelo base) | Reconocimiento de entidades (NER) de proposito general | 166M (referencia publica de GLiNER small) | variable | licencia del modelo base (consultar en su ficha) | Publico |
 | Modelos de descontextualizacion (p. ej. aproximaciones basadas en Choi et al. 2021) | Reescritura de frases para que sean autonomas | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de cifras de benchmarks que permitan comparar rendimiento entre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishparadox/atomizer-gliner-small
+- Modelo en Hugging Face: https://huggingface.co/nishparadox/atomizer-gliner-small
 - Repositorio del paquete atomizer (privado, acceso bajo peticion): https://github.com/NISH1001/atomizer
 - Documentacion de arquitectura: https://github.com/NISH1001/atomizer/blob/main/docs/ARCHITECTURE.md
 - Registro de experimentos: https://github.com/NISH1001/atomizer/blob/main/docs/EXPERIMENTS.md

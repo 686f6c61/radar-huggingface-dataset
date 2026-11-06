@@ -101,7 +101,7 @@ Dentro de la colección Tanpo existen otros especialistas sobre la misma arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-retention-LoRA
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-retention-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Checkpoint base compatible con Unsloth: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct
 - Versión fusionada: https://huggingface.co/d4rkninja/tanpo-retention

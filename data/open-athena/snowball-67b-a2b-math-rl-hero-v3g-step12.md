@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball-67B-A2B-Math-RL-Hero-v3g-Step12 es un checkpoint de investigación publicado por el usuario open-athena en HuggingFace. Se trata del artefacto exacto empleado para reportar una fila de resultados dentro del experimento Snowball 67B-A2B de aprendizaje por refuerzo sobre matemáticas. El modelo tiene 67.078.876.160 parámetros totales (unos 67,08 mil millones) y el repo pesa 268,3 GB, lo que corresponde aproximadamente a un almacenamiento en precisión de 32 bits.
+Snowball-67B-A2B-Math-RL-Hero-v3g-Step12 es un checkpoint de investigación publicado por el usuario open-athena en Hugging Face. Se trata del artefacto exacto empleado para reportar una fila de resultados dentro del experimento Snowball 67B-A2B de aprendizaje por refuerzo sobre matemáticas. El modelo tiene 67.078.876.160 parámetros totales (unos 67,08 mil millones) y el repo pesa 268,3 GB, lo que corresponde aproximadamente a un almacenamiento en precisión de 32 bits.
 
 La nomenclatura A2B y la etiqueta `grug_moe` apuntan a una arquitectura de mezcla de expertos (MoE) con unos 2.000 millones de parámetros activos por token, aunque la model card no confirma explícitamente ni el número de expertos ni el enrutado. El modelo está etiquetado como `marin` y `snowball`, lo que lo vincula al ecosistema del proyecto Marin, y su pipeline declarado es `reinforcement-learning`.
 
@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros totales | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-Hero-v3g-Step12 | 67,08 mil millones | no disponible | AIME24 19,33; MATH-500 64,80; OlympiadBench 18,67 | other | HuggingFace, 0 descargas y 0 likes en el momento del registro |
+| Snowball-67B-A2B-Math-RL-Hero-v3g-Step12 | 67,08 mil millones | no disponible | AIME24 19,33; MATH-500 64,80; OlympiadBench 18,67 | other | Hugging Face, 0 descargas y 0 likes en el momento del registro |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables de la misma categoria con datos verificables. La model card unicamente menciona repositorios `laion/rl-snowball-*` como artefactos de nombre parecido que no deben sustituir a este checkpoint, sin aportar cifras comparativas.
@@ -96,7 +96,7 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-Hero-v3g-Step12
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-Hero-v3g-Step12
 - Archivo de evidencias y artefactos de evaluacion: https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Repositorio del proyecto Marin: https://github.com/marin-community/marin

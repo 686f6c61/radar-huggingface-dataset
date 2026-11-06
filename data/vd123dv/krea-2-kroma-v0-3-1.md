@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Kroma v0.3.1 es un modelo de difusion texto-a-imagen derivado de Krea 2 Turbo, publicado por el usuario VD123DV en HuggingFace. Se trata de una reconversion del checkpoint `kroma-v0.3.1-turbo-opd.safetensors` de lodestones/Kroma al formato nativo de la libreria diffusers, empaquetado junto con el resto del pipeline de Krea 2 Turbo para que pueda cargarse directamente mediante `Krea2Pipeline.from_pretrained`. El unico componente que difiere del repositorio original de Krea es el subdirectorio `transformer/`.
+Krea 2 Kroma v0.3.1 es un modelo de difusion texto-a-imagen derivado de Krea 2 Turbo, publicado por el usuario VD123DV en Hugging Face. Se trata de una reconversion del checkpoint `kroma-v0.3.1-turbo-opd.safetensors` de lodestones/Kroma al formato nativo de la libreria diffusers, empaquetado junto con el resto del pipeline de Krea 2 Turbo para que pueda cargarse directamente mediante `Krea2Pipeline.from_pretrained`. El unico componente que difiere del repositorio original de Krea es el subdirectorio `transformer/`.
 
 El modelo cuenta con 12.820.073.036 parametros (aproximadamente 12,8 mil millones) y un repositorio de 35,7 GB, lo que sugiere pesos en precision alta (probablemente bf16 o fp32) junto con los componentes auxiliares del pipeline (VAE, text encoder, scheduler). La ficha se publica sin descargas ni interacciones en el momento de su creacion, y no es un producto oficial de Krea ni esta respaldado por la compania.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Kroma v0.3.1 (este) | 12,8 mil millones | no disponible | krea-2-community-license | safetensors (diffusers) | HuggingFace, 0 descargas |
-| Krea 2 Turbo (base) | no disponible en la informacion | no disponible | krea-2-community-license | safetensors | HuggingFace (repo oficial de Krea) |
-| kroma-v0.3.1-turbo-opd (checkpoint original de lodestones) | no disponible en la informacion | no disponible | no disponible | safetensors (formato original) | HuggingFace (repo de lodestones) |
+| Krea 2 Kroma v0.3.1 (este) | 12,8 mil millones | no disponible | krea-2-community-license | safetensors (diffusers) | Hugging Face, 0 descargas |
+| Krea 2 Turbo (base) | no disponible en la informacion | no disponible | krea-2-community-license | safetensors | Hugging Face (repo oficial de Krea) |
+| kroma-v0.3.1-turbo-opd (checkpoint original de lodestones) | no disponible en la informacion | no disponible | no disponible | safetensors (formato original) | Hugging Face (repo de lodestones) |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VD123DV/Krea-2-Kroma-v0.3.1
+- Modelo en Hugging Face: https://huggingface.co/VD123DV/Krea-2-Kroma-v0.3.1
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia Krea 2 Community License: https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
 - Checkpoint original de lodestones/Kroma: no disponible como enlace directo en la informacion proporcionada (referenciado como `lodestones/Kroma`, fichero `kroma-v0.3.1-turbo-opd.safetensors`, commit `94bfb29d748c0cd9319e7d9b489b7f9f3a6f6d92`)

@@ -4,7 +4,7 @@
 
 brAIAIn-0 (publicado como brAIAIn-2 en la model card) es un modelo de lenguaje por trigramas de palabras creado por BRAIAIN Laboratories, un laboratorio de IA paródico. No es una red neuronal: es un modelo autorregresivo basado en conteos, entrenado sobre 288 tokens procedentes de 14 frases, con 350 parámetros (pares y triples de palabras contados) y una ventana de contexto de 2 tokens. Su propósito es satírico: parodia la cultura de los laboratorios de IA actuales (benchmarks autoevaluados, alineación, versionado de modelos) y funciona como juguete educativo sobre cómo funcionan los n-gramas.
 
-Cualquier persona puede pagar 5 dólares para añadir una frase al corpus de entrenamiento, y cada frase entrenada genera una nueva versión del modelo; el repositorio de HuggingFace mantiene siempre la última. Se distribuye bajo licencia CC0-1.0 (dominio público), sin dependencias para ejecutarlo, y cuenta con una demo interactiva en HuggingFace Spaces. Su interés para desarrolladores es didáctico y recreativo, no productivo: el propio autor declara que su uso previsto es "ninguno".
+Cualquier persona puede pagar 5 dólares para añadir una frase al corpus de entrenamiento, y cada frase entrenada genera una nueva versión del modelo; el repositorio de Hugging Face mantiene siempre la última. Se distribuye bajo licencia CC0-1.0 (dominio público), sin dependencias para ejecutarlo, y cuenta con una demo interactiva en Hugging Face Spaces. Su interés para desarrolladores es didáctico y recreativo, no productivo: el propio autor declara que su uso previsto es "ninguno".
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Los datos de entrenamiento ascienden a 288 tokens: "The Ten Instructions" (12 li
 - Generacion de texto en ingles a nivel de palabra mediante muestreo de trigramas, con coherencia limitada a las 14 frases del corpus.
 - Continuacion de texto dado un prompt de hasta 2 tokens de contexto efectivo.
 - Ejecucion sin dependencias: un script de Python (`generate.py`) y un archivo JSON de pesos.
-- Demo interactiva en navegador via HuggingFace Spaces y braiain.com.
+- Demo interactiva en navegador via Hugging Face Spaces y braiain.com.
 - Valor educativo: ilustra de forma transparente como funcionan los modelos de n-gramas y la generacion autorregresiva.
 - No soporta tool calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento extendido.
 
@@ -60,7 +60,7 @@ El propio autor aclara que el modelo solo supera el azar en TruthfulQA porque la
 - VRAM: practicamente nula; los pesos son un JSON de 350 conteos y caben en memoria de cualquier equipo, incluidos microcontroladores modestos.
 - GPU: no se requiere ninguna GPU; la inferencia es CPU pura.
 - Consumer: funciona en cualquier portatil o Raspberry Pi sin configuracion especial.
-- Despliegue: script propio `generate.py` (sin dependencias), demo alojada en HuggingFace Spaces y version web en braiain.com. No aplica vLLM, llama.cpp, Ollama ni TGI al no ser un formato de pesos estandar.
+- Despliegue: script propio `generate.py` (sin dependencias), demo alojada en Hugging Face Spaces y version web en braiain.com. No aplica vLLM, llama.cpp, Ollama ni TGI al no ser un formato de pesos estandar.
 - Latencia: no disponible, aunque al ser lookup de tablas de conteo es despreciable en cualquier hardware moderno.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ El propio autor aclara que el modelo solo supera el azar en TruthfulQA porque la
 | Licencia | CC0-1.0 | Modificada (MIT-like con restricciones) | Apache 2.0 |
 | Uso practico | Educativo/parodico | Generacion de texto basica | Chat, codigo, razonamiento ligero |
 
-No hay alternativas directas de la misma categoria: es un modelo de n-gramas de juguete sin competidores reales publicados en HuggingFace bajo el mismo formato.
+No hay alternativas directas de la misma categoria: es un modelo de n-gramas de juguete sin competidores reales publicados en Hugging Face bajo el mismo formato.
 
 ## Limitaciones y advertencias
 
@@ -89,8 +89,8 @@ No hay alternativas directas de la misma categoria: es un modelo de n-gramas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-0
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-0
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Web del laboratorio (chat en navegador): https://www.braiain.com
 - Benchmarks declarados: https://www.braiain.com/benchmarks.html
 - Historial de versiones: https://www.braiain.com/models.html

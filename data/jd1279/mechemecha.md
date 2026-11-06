@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jd1279/mechemecha` es un repositorio de modelo publicado en HuggingFace por el usuario `jd1279` el 15 de septiembre de 2026 (fecha declarada por la plataforma). En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene mas que la declaracion de licencia `mit`: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
+`jd1279/mechemecha` es un repositorio de modelo publicado en Hugging Face por el usuario `jd1279` el 15 de septiembre de 2026 (fecha declarada por la plataforma). En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card no contiene mas que la declaracion de licencia `mit`: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
 
 La unica informacion verificable es la licencia MIT y la etiqueta de region `us`. No hay pipeline declarado, no se especifican idiomas soportados y no se describe ninguna innovacion tecnica. Se trata, por tanto, de un artefacto practicamente indocumentado, sin evidencia publica de que se haya entrenado o evaluado de forma reproducible.
 
@@ -79,7 +79,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jd1279/mechemecha
+- Hugging Face: https://huggingface.co/jd1279/mechemecha
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con el modelo. Los unicos resultados devueltos corresponden a "iron rice bowl" y no son relevantes:
   - https://en.wikipedia.org/wiki/Iron_rice_bowl
   - https://www.wikiwand.com/en/Iron_rice_bowl

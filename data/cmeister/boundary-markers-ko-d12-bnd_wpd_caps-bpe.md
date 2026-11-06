@@ -84,7 +84,7 @@ La comparación relevante no es con otros modelos públicos de coreano, sino con
 
 | Modelo | Esquema de tokenizacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`bnd_wpd_caps`) | Marcadores de frontera mas codigos de capitalizacion | no disponible (12 capas, 768 de anchura) | 2.048 | Apache 2.0 | Pesos de 3 semillas en HuggingFace |
+| Este modelo (`bnd_wpd_caps`) | Marcadores de frontera mas codigos de capitalizacion | no disponible (12 capas, 768 de anchura) | 2.048 | Apache 2.0 | Pesos de 3 semillas en Hugging Face |
 | `bnd_wpd` | Marcadores de frontera sin codigos de capitalizacion | no disponible (misma configuracion) | 2.048 | Apache 2.0 | Variante hermana del mismo autor |
 | `plain` | BPE estandar, sin marcadores de frontera | no disponible (misma configuracion) | 2.048 | Apache 2.0 | Baseline del articulo, usado en las comparaciones |
 
@@ -106,7 +106,7 @@ En rendimiento, la diferencia media frente a `plain` es de -0,00033 bits por byt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd_caps-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd_caps-bpe
 - Articulo "Explicit Boundary Markers for Subword Vocabularies" (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio `script_tok`, con el codigo del tokenizador y la comparativa completa: https://github.com/sanderland/script_tok
 - nanochat, framework de entrenamiento (commit `92d63d4`): https://github.com/karpathy/nanochat

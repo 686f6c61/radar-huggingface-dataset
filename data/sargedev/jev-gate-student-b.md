@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jev-Gate Student B es un adaptador LoRA de tipo *judge* de relevancia de memoria, publicado por el usuario SargeDev en HuggingFace. No es un modelo de generacion autonomo: se monta sobre `Qwen/Qwen2.5-0.5B-Instruct` y su unica funcion es, dado un par (query, pasaje de memoria candidato), devolver una probabilidad calibrada de relevancia a partir de la probabilidad del token `yes` sobre los logits del ultimo token. Esta pensado para actuar como puerta (*gate*) en sistemas de memoria de agentes: decidir si un recuerdo recuperado debe inyectarse en el contexto del agente o descartarse.
+Jev-Gate Student B es un adaptador LoRA de tipo *judge* de relevancia de memoria, publicado por el usuario SargeDev en Hugging Face. No es un modelo de generacion autonomo: se monta sobre `Qwen/Qwen2.5-0.5B-Instruct` y su unica funcion es, dado un par (query, pasaje de memoria candidato), devolver una probabilidad calibrada de relevancia a partir de la probabilidad del token `yes` sobre los logits del ultimo token. Esta pensado para actuar como puerta (*gate*) en sistemas de memoria de agentes: decidir si un recuerdo recuperado debe inyectarse en el contexto del agente o descartarse.
 
 El adaptador se destila desde una API de juicios tipados ("Jev") implementada por un profesor de mayor tamano, sobre el corpus `SargeDev/jev-distill-corpus`, que contiene juicios de relevancia emparejados con puntuacion graduada de 0 a 7 y etiqueta binaria. La configuracion LoRA es r=16, alpha=32 y afecta a `q_proj` y `v_proj`. El resultado es un juez local de ~0,5B de parametros heredados del modelo base mas un adaptador de aproximadamente 1 millon de parametros entrenables, con un coste de inferencia declarado de unos 59 ms por juicio en una RTX 3060 y sin coste de API.
 
@@ -79,8 +79,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Gate Student B | ~0,5B + adaptador LoRA r=16 | uso truncado a 384 tokens en el ejemplo del autor | MAE 0.187 / Pearson 0.791 / acuerdo 90,0 % (n=60) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-0.5B-Instruct (base, sin adaptador) | ~0,5B | no disponible en la informacion proporcionada | MAE 0.536 / Pearson -0.067 / acuerdo 38,3 % (n=60) | apache-2.0 (modelo base de Qwen) | HuggingFace, ampliamente adoptado |
+| Jev-Gate Student B | ~0,5B + adaptador LoRA r=16 | uso truncado a 384 tokens en el ejemplo del autor | MAE 0.187 / Pearson 0.791 / acuerdo 90,0 % (n=60) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-0.5B-Instruct (base, sin adaptador) | ~0,5B | no disponible en la informacion proporcionada | MAE 0.536 / Pearson -0.067 / acuerdo 38,3 % (n=60) | apache-2.0 (modelo base de Qwen) | Hugging Face, ampliamente adoptado |
 | Profesor "Jev" (API de juicios tipados) | no disponible | no disponible | usado como referencia de destilacion; metricas no publicadas | no disponible | API, no disponible como pesos |
 | Otros rerankers compactos de la misma categoria | no disponible | no disponible | sin comparativa publicada en la informacion proporcionada | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de comparaciones publicadas con otros rerankers o cross-encoders d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/jev-gate-student-b
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/jev-gate-student-b
 - Dataset de destilacion: https://huggingface.co/datasets/SargeDev/jev-distill-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a dominios no relacionados (sothailand.com) y se han descartado.

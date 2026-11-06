@@ -81,7 +81,7 @@ No se dispone de datos de comparativa con modelos similares en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct
 - Colección Mellum 2 de JetBrains: https://huggingface.co/collections/JetBrains/mellum-2
 - Repo GitHub de conversión y evaluación: https://github.com/altibola/Mellum2-12B-A2.5B-Instruct-GGUF

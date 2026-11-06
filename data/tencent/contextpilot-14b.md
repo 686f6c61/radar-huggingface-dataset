@@ -18,7 +18,7 @@ El checkpoint se publica con licencia "other" (ver archivo LICENSE en el reposit
 | Longitud de contexto | No disponible (el modelo base Qwen3-14B soporta 32K, pero no se especifica para este checkpoint) |
 | Tipos de cuantizacion | No disponible (solo safetensors en el repositorio) |
 | Idiomas soportados | No disponible |
-| Licencia | Other (ver archivo LICENSE en HuggingFace) |
+| Licencia | Other (ver archivo LICENSE en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 ## Limitaciones y advertencias
 
 - No se han documentado sesgos específicos, riesgos de alucinación ni limitaciones idiomáticas en la información disponible.
-- La licencia "other" implica que el usuario debe revisar el archivo LICENSE adjunto en HuggingFace antes de cualquier uso, especialmente si se contempla uso comercial.
+- La licencia "other" implica que el usuario debe revisar el archivo LICENSE adjunto en Hugging Face antes de cualquier uso, especialmente si se contempla uso comercial.
 - El checkpoint por sí solo no ejecuta las herramientas de gestión de contexto; es necesario integrar el runtime y las definiciones de herramientas del repositorio ContextPilot.
 - No se especifica la longitud de contexto soportada tras el fine-tuning; aunque el modelo base Qwen3-14B soporta 32K tokens, no hay garantía de que el entrenamiento RL preserve esa capacidad.
 - El modelo está orientado a investigación; no hay evidencia de validación en entornos de producción reales.
@@ -74,9 +74,9 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- HuggingFace: [tencent/ContextPilot-14B](https://huggingface.co/tencent/ContextPilot-14B)
+- Hugging Face: [tencent/ContextPilot-14B](https://huggingface.co/tencent/ContextPilot-14B)
 - Repositorio GitHub: [Tencent/ContextPilot](https://github.com/Tencent/ContextPilot)
 - Paper (arXiv): [2608.28476](https://arxiv.org/abs/2608.28476)
 - Demo en vivo: [https://tencent.github.io/ContextPilot/](https://tencent.github.io/ContextPilot/)
-- Colección de modelos en HuggingFace: [panzs19/contextpilot](https://huggingface.co/collections/panzs19/contextpilot)
+- Colección de modelos en Hugging Face: [panzs19/contextpilot](https://huggingface.co/collections/panzs19/contextpilot)
 - Guía de inferencia: [https://github.com/Tencent/ContextPilot/blob/main/infer/README.md](https://github.com/Tencent/ContextPilot/blob/main/infer/README.md)

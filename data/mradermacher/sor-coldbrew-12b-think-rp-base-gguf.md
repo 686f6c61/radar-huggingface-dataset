@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento, licencia ni contexto del modelo base, por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SOR-ColdBrew-12B-Think-RP-Base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SOR-ColdBrew-12B-Think-RP-Base-GGUF
 - Modelo base: https://huggingface.co/SvalTek/SOR-ColdBrew-12B-Think-RP-Base
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos correspondían a un sitio de previsión meteorológica sin relación con el modelo).

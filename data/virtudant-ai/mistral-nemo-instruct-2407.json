@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Virtudant-AI/Mistral-Nemo-Instruct-2407",
+  "slug": "virtudant-ai-mistral-nemo-instruct-2407",
+  "author": "Virtudant-AI",
+  "url": "https://huggingface.co/Virtudant-AI/Mistral-Nemo-Instruct-2407",
+  "created_at": "2026-11-06T11:38:26.000Z",
+  "updated_at": "2026-11-06T11:38:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "mistral",
+    "mistral-common",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja",
+    "base_model:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Base-2407",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-Nemo-Instruct-2407 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "snippet": "The Mistral-Nemo-Instruct-2407 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-Nemo-Base-2407. Trained jointly by Mistral AI and NVIDIA, it significantly outperforms existing models smaller or similar in size ..."
+    },
+    {
+      "title": "Mistral-Nemo-Instruct-2407: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mistral-nemo-instruct-2407-mistralai",
+      "snippet": "Overview Mistral-Nemo-Instruct-2407 is a 12-billion-parameter instruction-tuned language model developed jointly by mistralai and NVIDIA. This transformer model features 40 layers, 5,120-dimensional embeddings, 32 attention heads with 8 key-value heads using grouped query attention, and supports a 128,000-token context window. The model uses SwiGLU activation and rotary embeddings with theta ..."
+    }
+  ]
+}

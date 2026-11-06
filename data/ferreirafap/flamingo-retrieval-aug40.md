@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ferreirafap/flamingo-retrieval-aug40` es un repositorio de HuggingFace publicado por el usuario ferreirafap que contiene una implementación a pequeña escala de una arquitectura Flamingo orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release con resultados de benchmarks: la model card describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados y evaluados.
+`ferreirafap/flamingo-retrieval-aug40` es un repositorio de Hugging Face publicado por el usuario ferreirafap que contiene una implementación a pequeña escala de una arquitectura Flamingo orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release con resultados de benchmarks: la model card describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados y evaluados.
 
 El repositorio incluye el código Python (`predict.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el checkpoint de inicialización. La arquitectura declarada es Flamingo con atención flash, fusión de bajo rango (low rank), activación mish y normalización groupnorm, en una escala etiquetada como "xlarge". El número de parámetros reportado en los metadatos de safetensors es de 33.088, un valor extremadamente reducido que confirma que se trata de un esqueleto reproducible, no de un modelo funcional a escala real.
 
@@ -80,5 +80,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferreirafap/flamingo-retrieval-aug40
+- Hugging Face: https://huggingface.co/ferreirafap/flamingo-retrieval-aug40
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

@@ -12,7 +12,7 @@ Su relevancia es metodológica más que de producto: documenta cómo se comporta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2, tag `qwen2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (familia Qwen2, tag `qwen2` en Hugging Face) |
 | Parametros totales | 1.777.088.000 (dato real de los safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la model card; heredada de la configuración del modelo base Qwen2 (32.768 tokens) |
@@ -82,7 +82,7 @@ La diferencia clave frente a los alternativos no es de tamaño ni de contexto, s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-124-MinSumChebyshevDistance-20261025
+- Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-124-MinSumChebyshevDistance-20261025
 - Run de W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/8e7f0567
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada (los resultados devueltos no guardan relación con el modelo).

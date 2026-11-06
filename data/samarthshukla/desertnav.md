@@ -2,7 +2,7 @@
 
 ## Resumen
 
-samarthshukla/desertnav es un repositorio de modelo publicado en HuggingFace por el usuario samarthshukla el 26 de septiembre de 2026 (con una actualizacion dos minutos despues de la creacion). La model card asociada contiene unicamente el bloque de metadatos con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
+samarthshukla/desertnav es un repositorio de modelo publicado en Hugging Face por el usuario samarthshukla el 26 de septiembre de 2026 (con una actualizacion dos minutos despues de la creacion). La model card asociada contiene unicamente el bloque de metadatos con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB, no tiene etiqueta de pipeline asignada y no declara idiomas soportados.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y no cuenta con ninguna validacion por parte de la comunidad. No hay informacion publica sobre el numero de parametros, la longitud de contexto, la arquitectura ni el proposito concreto del modelo. El nombre "desertnav" sugiere un posible uso relacionado con navegacion en entornos deserticos, pero se trata de una hipotesis basada unicamente en el identificador y no de un dato confirmado por el autor.
 
@@ -91,5 +91,5 @@ No disponible. Sin conocer la tarea, la arquitectura ni el numero de parametros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samarthshukla/desertnav
+- Repositorio en Hugging Face: https://huggingface.co/samarthshukla/desertnav
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

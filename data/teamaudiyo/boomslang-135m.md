@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TeamAudiyo/Boomslang-135M es un repositorio publicado en HuggingFace por el equipo TeamAudiyo el 20 de septiembre de 2026 bajo licencia Apache-2.0. En el momento de redactar esta ficha, el repositorio no contiene pesos, tokenizador ni documentación técnica: la model card se limita a un anuncio en el que el autor indica que Boomslang se publicará próximamente y solicita interacciones para avisar de la fecha de lanzamiento.
+TeamAudiyo/Boomslang-135M es un repositorio publicado en Hugging Face por el equipo TeamAudiyo el 20 de septiembre de 2026 bajo licencia Apache-2.0. En el momento de redactar esta ficha, el repositorio no contiene pesos, tokenizador ni documentación técnica: la model card se limita a un anuncio en el que el autor indica que Boomslang se publicará próximamente y solicita interacciones para avisar de la fecha de lanzamiento.
 
 La única información verificable es el identificador del repositorio —del que se deduce un tamaño aproximado de 135 millones de parámetros— y la licencia declarada. No hay datos públicos sobre arquitectura, composición del dataset de entrenamiento, longitud de contexto, idiomas soportados, formatos de pesos ni resultados de evaluación. El campo de pipeline de la ficha aparece como no disponible y el contador de descargas es cero, lo que confirma que se trata de un anuncio previo al lanzamiento y no de un artefacto utilizable.
 
@@ -41,7 +41,7 @@ No se puede verificar ninguna capacidad porque no hay pesos ni documentación pu
 - Razonamiento, matemáticas y código: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el campo de idiomas de la ficha de HuggingFace está vacío).
+- Capacidades multilingües: no disponible (el campo de idiomas de la ficha de Hugging Face está vacío).
 - Capacidades especiales (modo thinking, visión, audio, decodificación especulativa): no disponible.
 - Capacidad de seguir instrucciones o formato de chat: no disponible (no hay plantilla de chat publicada).
 
@@ -98,7 +98,7 @@ No es posible comparar rendimiento porque Boomslang-135M no tiene resultados pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeamAudiyo/Boomslang-135M
+- Modelo en Hugging Face: https://huggingface.co/TeamAudiyo/Boomslang-135M
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible
 - Demo o space: no disponible

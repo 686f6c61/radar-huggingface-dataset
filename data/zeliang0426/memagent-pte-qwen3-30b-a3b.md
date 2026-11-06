@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MemAgent-PTE-Qwen3-30B-A3B | 30,6B | ~3B (no confirmado) | no disponible (extrapolable) | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B (base) | 30,6B | 3B | 128K (según documentación de Qwen) | Apache-2.0 | HuggingFace |
-| Qwen3-235B-A22B | 235B | 22B | 128K | Apache-2.0 | HuggingFace |
+| MemAgent-PTE-Qwen3-30B-A3B | 30,6B | ~3B (no confirmado) | no disponible (extrapolable) | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B (base) | 30,6B | 3B | 128K (según documentación de Qwen) | Apache-2.0 | Hugging Face |
+| Qwen3-235B-A22B | 235B | 22B | 128K | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a la familia Qwen3, ya que no se dispone de datos de rendimiento para otros modelos MoE de tamaño similar. El checkpoint MemAgent se diferencia del base por su entrenamiento específico para contexto largo, pero no se han publicado métricas que demuestren una mejora cuantitativa.
 
@@ -77,7 +77,7 @@ La comparativa se limita a la familia Qwen3, ya que no se dispone de datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen3-30B-A3B
+- Hugging Face: https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen3-30B-A3B
 - Repositorio de entrenamiento (GitHub): https://github.com/ZhangAIPI/mem-agent-pte
 - Framework MemAgent (BytedTsinghua-SIA): https://github.com/BytedTsinghua-SIA/MemAgent
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B

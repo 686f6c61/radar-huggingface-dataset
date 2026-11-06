@@ -50,7 +50,7 @@ El entrenamiento incluye una fase de pre-entrenamiento y otra de post-entrenamie
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas comparativas ni métricas de evaluación, y la model card del autor solo describe características cualitativas. Para obtener datos de rendimiento objetivos, se recomienda consultar la documentación oficial de Qwen3.8 en el repositorio de GitHub o los artículos técnicos asociados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas comparativas ni métricas de evaluación, y la model card del autor solo describe características cualitativas. Para obtener datos de rendimiento objetivos, se recomienda consultar la documentación oficial de Qwen3.8 en el repositorio de GitHub o los artículos técnicos asociados.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ Qwen3.8-27B se diferencia de Qwen3-32B por su naturaleza multimodal y su arquite
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización GGUF: https://huggingface.co/Mary114514/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantización GGUF: https://huggingface.co/Mary114514/Qwen3.8-27B-GGUF
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio de Alibaba Cloud para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantización GGUF oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

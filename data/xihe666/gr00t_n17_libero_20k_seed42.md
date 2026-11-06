@@ -70,7 +70,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xihe666/gr00t_n17_libero_20k_seed42
+- Hugging Face: https://huggingface.co/Xihe666/gr00t_n17_libero_20k_seed42
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - Guía LeRobot para GR00T: https://huggingface.co/docs/lerobot/main/en/groot
 - Dataset LIBERO: https://huggingface.co/datasets/lerobot/libero

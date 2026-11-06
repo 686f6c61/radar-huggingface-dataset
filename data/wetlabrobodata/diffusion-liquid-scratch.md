@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| diffusion-liquid-scratch | Diffusion policy (LeRobot) | 266.531.943 | no aplica | 19/20 exitos en la tarea liquid | Apache 2.0 | HuggingFace |
+| diffusion-liquid-scratch | Diffusion policy (LeRobot) | 266.531.943 | no aplica | 19/20 exitos en la tarea liquid | Apache 2.0 | Hugging Face |
 | Politicas ACT de LeRobot | Action chunking transformer | no disponible | no aplica | no disponible | no disponible | ecosistema LeRobot |
 | Otras politicas de difusion para robotica | Diffusion policy | no disponible | no aplica | no disponible | no disponible | variable |
 
@@ -106,7 +106,7 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-liquid-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-liquid-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-liquid
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-liquid-scratch
 - Repositorio de origen con artefactos de entrenamiento archivados: WetLabRoboData/lerobot-data-rama-liquid_pouring (subcarpeta old/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP` es una publicacion alojada en HuggingFace por el usuario `sacca`. La model card asociada no contiene informacion tecnica: unicamente una linea de metadatos con `license: apache-2.0`. No hay descripcion, pipeline declarado, idiomas soportados ni documentacion de arquitectura o entrenamiento.
+El repositorio `sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP` es una publicacion alojada en Hugging Face por el usuario `sacca`. La model card asociada no contiene informacion tecnica: unicamente una linea de metadatos con `license: apache-2.0`. No hay descripcion, pipeline declarado, idiomas soportados ni documentacion de arquitectura o entrenamiento.
 
 El identificador del repositorio sugiere, sin confirmacion documental, que se trata de un modelo de la familia Qwen con aproximadamente 27.000 millones de parametros, con algun proceso de ajuste orientado a eliminar restricciones de contenido ("Uncensored"), distribuido en formato de cuantizacion GGUF `IQ4_XS` y con soporte declarado de multi-token prediction ("MTP"). Estas son inferencias derivadas del nombre del repositorio y no datos verificados: la model card no las confirma.
 
@@ -87,6 +87,6 @@ Los datos de las filas de referencia corresponden a informacion publica de sus r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP
+- Hugging Face: https://huggingface.co/sacca/Qwen3.8-27B-Uncensored-ATX-IQ4_XS-M-MTP
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a una empresa francesa de herramientas ("Outillage Sacca"), a un hotel en Cauterets y a una sociedad denominada SACCA France, sin relacion alguna con el repositorio.
 - No se han encontrado paper, blog tecnico, repositorio de codigo ni demo asociados.

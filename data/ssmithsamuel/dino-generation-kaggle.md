@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ssmithsamuel/dino-generation-kaggle es un repositorio de investigacion publicado en HuggingFace por el usuario Ssmithsamuel. Se presenta como un prototipo de arquitectura denominada "Dino" orientado a tareas de generacion, con una configuracion etiquetada como "giant" en el `config.json`. El propio autor aclara en la model card que el checkpoint `model.safetensors` es unicamente una inicializacion valida para pruebas de humo y que no se ha entrenado ni evaluado con benchmarks. No se documenta ninguna relacion con DINO o DINOv2 de Meta; "Dino" es simplemente el nombre empleado por el autor.
+Ssmithsamuel/dino-generation-kaggle es un repositorio de investigacion publicado en Hugging Face por el usuario Ssmithsamuel. Se presenta como un prototipo de arquitectura denominada "Dino" orientado a tareas de generacion, con una configuracion etiquetada como "giant" en el `config.json`. El propio autor aclara en la model card que el checkpoint `model.safetensors` es unicamente una inicializacion valida para pruebas de humo y que no se ha entrenado ni evaluado con benchmarks. No se documenta ninguna relacion con DINO o DINOv2 de Meta; "Dino" es simplemente el nombre empleado por el autor.
 
 El dato objetivo mas relevante es el recuento de parametros real leido del fichero safetensors: 16.576 parametros totales. Esto contrasta de forma notable con la etiqueta de escala "giant" que aparece en la configuracion, lo que sugiere que dicha etiqueta es un identificador de configuracion y no una descripcion del tamano real. El repositorio ocupa 0.0 GB y contiene unicamente el script `finetune.py`, la configuracion de arquitectura, los argumentos de entrenamiento, el README y el checkpoint de inicializacion.
 
@@ -80,9 +80,9 @@ No se ha identificado en la informacion proporcionada ningun modelo comparable p
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial del artefacto, pero el autor advierte que deben revisarse por separado los terminos de las fuentes de datos si se combina con datasets externos.
 - Al ser una implementacion personalizada, no es compatible con las APIs automaticas de carga habituales; requiere un adaptador explicito, lo que anade trabajo de integracion.
 - Advertencia de produccion: no debe desplegarse en ningun sistema real con usuarios finales en su estado actual. Los resultados de un futuro checkpoint entrenado deberan documentarse de forma separada de los valores por defecto que se distribuyen aqui.
-- El repositorio no declara un pipeline en HuggingFace, no tiene descargas ni likes, y su unico contenido util es el andamiaje de investigacion.
+- El repositorio no declara un pipeline en Hugging Face, no tiene descargas ni likes, y su unico contenido util es el andamiaje de investigacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ssmithsamuel/dino-generation-kaggle
+- Hugging Face: https://huggingface.co/Ssmithsamuel/dino-generation-kaggle
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas generales de LinkedIn y a discusiones sobre el uso de esa red social, sin ninguna relacion con el repositorio. No hay papers, blogs, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

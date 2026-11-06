@@ -122,7 +122,7 @@ La versión JANG_2L (43 GB) es más ligera y obtiene mejores resultados en MMLU 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Nemotron-3-Super-120B-A12B-JANG_4M-CRACK
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Nemotron-3-Super-120B-A12B-JANG_4M-CRACK
 - Modelo base NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Super-120B-A12B
 - Página de investigación NVIDIA Nemotron 3 Super: https://research.nvidia.com/labs/nemotron/Nemotron-3-Super/
 - NVIDIA Developer (Nemotron): https://developer.nvidia.com/topics/ai/nemotron

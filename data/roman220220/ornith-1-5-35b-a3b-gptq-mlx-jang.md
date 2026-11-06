@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks de codigo o agenticos en la informa
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (bf16, base) | ~35B (3B activos) | no disponible | PPL 9,711 (wikitext-2) | MIT | HuggingFace |
-| Este modelo (GPTQ MLX JANG) | ~35B (3B activos) | no disponible | PPL 10,368 (wikitext-2, +6,8 %) | MIT | HuggingFace |
+| Ornith-1.5-35B-A3B (bf16, base) | ~35B (3B activos) | no disponible | PPL 9,711 (wikitext-2) | MIT | Hugging Face |
+| Este modelo (GPTQ MLX JANG) | ~35B (3B activos) | no disponible | PPL 10,368 (wikitext-2, +6,8 %) | MIT | Hugging Face |
 | Otras alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables en el material proporcionado.
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos comparables en el material prop
 - Rendimiento en hardware: requiere Apple Silicon con memoria suficiente; no se documentan latencias, throughput ni soporte en GPU NVIDIA.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang
+- Modelo en Hugging Face: https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Fork de mlx-lm con soporte de vision Qwen3.5: https://github.com/ipsupport-llc/mlx-lm
 - Repositorio con pipeline y mediciones de cuantizacion: https://github.com/rromenskyi/quant-ternary

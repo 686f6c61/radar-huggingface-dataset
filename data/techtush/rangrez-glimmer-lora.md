@@ -67,8 +67,8 @@ Error de primera tintura sobre 100 objetivos retenidos (CIEDE2000 del color que 
 
 | Modelo | Parametros | Contexto | Rendimiento (mediana CIEDE2000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rangrez Glimmer LoRA (este) | LoRA r8 sobre 30B | no disponible | 0,92 | Apache 2.0 | HuggingFace |
-| Muse Glimmer 30B base | 30B | no disponible | 11,38 | no disponible | HuggingFace |
+| Rangrez Glimmer LoRA (este) | LoRA r8 sobre 30B | no disponible | 0,92 | Apache 2.0 | Hugging Face |
+| Muse Glimmer 30B base | 30B | no disponible | 11,38 | no disponible | Hugging Face |
 | Modelo reajustado a 400 tinturas | no disponible | no disponible | 2,05 | no disponible | no disponible |
 | Modelo del proveedor | no disponible | no disponible | 4,1 | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros adaptadores o modelos comparables de f
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/TechTush/rangrez-glimmer-lora
+- Hugging Face del adaptador: https://huggingface.co/TechTush/rangrez-glimmer-lora
 - Dataset de tinturas: https://huggingface.co/datasets/TechTush/rangrez-lab-dips
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Código del proyecto: https://github.com/TusharTechs/rangrez

@@ -83,6 +83,6 @@ La cuantización AWQ reduce el tamaño a aproximadamente un tercio del BF16, man
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM
+- Repositorio Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización: https://github.com/vllm-project/llm-compressor

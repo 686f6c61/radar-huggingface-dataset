@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MNIST Handwritten Digit Classifier (PyTorch CNN) es un modelo de clasificacion de imagenes desarrollado por CarinaLeo y publicado en HuggingFace. Se trata de una red neuronal convolucional pequena, construida en PyTorch, que reconoce digitos manuscritos del 0 al 9 sobre el dataset MNIST. Tal y como indica la propia model card, es un proyecto de aprendizaje de nivel principiante, por lo que su interes es principalmente educativo y de referencia, no de produccion.
+MNIST Handwritten Digit Classifier (PyTorch CNN) es un modelo de clasificacion de imagenes desarrollado por CarinaLeo y publicado en Hugging Face. Se trata de una red neuronal convolucional pequena, construida en PyTorch, que reconoce digitos manuscritos del 0 al 9 sobre el dataset MNIST. Tal y como indica la propia model card, es un proyecto de aprendizaje de nivel principiante, por lo que su interes es principalmente educativo y de referencia, no de produccion.
 
 El modelo resuelve el problema clasico de vision por computador de la clasificacion de digitos manuscritos, una tarea estandar que se utiliza habitualmente como primer contacto con el deep learning. A pesar de su sencillez, alcanza una precision en test del 99,14 %, un resultado solido para una arquitectura tan compacta. Su licencia MIT permite su uso, modificacion y redistribucion sin restricciones practicas, lo que lo hace util como plantilla o punto de partida para proyectos de ensenanza y experimentacion.
 
-No es un modelo de lenguaje ni una arquitectura transformer: es una CNN clasica con dos bloques convolucionales y capas densas finales, con un peso total muy reducido (el repositorio ocupa practicamente nada, 0,0 GB segun HuggingFace). No hay datos publicados sobre longitud de contexto, cuantizacion ni idiomas, ya que no aplican a este tipo de modelo.
+No es un modelo de lenguaje ni una arquitectura transformer: es una CNN clasica con dos bloques convolucionales y capas densas finales, con un peso total muy reducido (el repositorio ocupa practicamente nada, 0,0 GB segun Hugging Face). No hay datos publicados sobre longitud de contexto, cuantizacion ni idiomas, ya que no aplican a este tipo de modelo.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ El entrenamiento se realizo con el optimizador Adam a una tasa de aprendizaje de
 
 - Aprendizaje de deep learning: sirve como ejemplo completo y funcional de una CNN en PyTorch, ideal para quien empieza y quiere ver un pipeline de entrenamiento, guardado y carga de pesos de principio a fin.
 - Plantilla para tutoriales y docencia: la model card incluye codigo de uso directo, por lo que puede integrarse en clases, talleres o material didactico sobre clasificacion de imagenes.
-- Prueba de integracion con HuggingFace Hub: al ser un modelo minimo, es util para verificar pipelines de descarga de pesos con hf_hub_download en entornos de CI o pruebas de infraestructura.
+- Prueba de integracion con Hugging Face Hub: al ser un modelo minimo, es util para verificar pipelines de descarga de pesos con hf_hub_download en entornos de CI o pruebas de infraestructura.
 - Baseline para experimentos: se puede usar como punto de partida para comparar arquitecturas, tecnicas de regularizacion (el Dropout 0.3 ya incluido) o metodos de cuantizacion sobre MNIST.
 - Prototipado de OCR simple: en aplicaciones donde solo se necesite reconocer un digito aislado en imagen de 28 x 28 (por ejemplo, lectura de un digito de un formulario digitalizado previamente recortado y preprocesado), puede servir como componente ligero.
 - Demostraciones y demos interactivos: su peso minimo permite desplegarlo en interfaces como Gradio o Streamlit sin requisitos de GPU, adecuado para demos en navegador o dispositivos con recursos limitados.
@@ -66,9 +66,9 @@ No se han publicado comparaciones con otros modelos ni resultados en benchmarks 
 
 | Modelo | Arquitectura | Parametros | Precision MNIST (tipica) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CarinaLeo/mnist-cnn-pytorch | CNN 2 bloques conv + 2 densas | no disponible (centenares de miles aprox.) | 99,14 % (reportada) | MIT | HuggingFace, pesos .pth |
+| CarinaLeo/mnist-cnn-pytorch | CNN 2 bloques conv + 2 densas | no disponible (centenares de miles aprox.) | 99,14 % (reportada) | MIT | Hugging Face, pesos .pth |
 | LeNet-5 (referencia clasica) | CNN 2 conv + 2 densas | ~61.000 | ~99,05 % | Varias implementaciones open source | Multiples repos |
-| Modelos MNIST en HuggingFace (genéricos, p. ej. CNNs comunitarias) | CNN / MLP variables | Variables | ~98-99,7 % | Variables | HuggingFace |
+| Modelos MNIST en Hugging Face (genéricos, p. ej. CNNs comunitarias) | CNN / MLP variables | Variables | ~98-99,7 % | Variables | Hugging Face |
 
 Nota: la comparativa es orientativa; los valores de precision de LeNet-5 y de modelos genéricos son rangos tipicos de la literatura y no mediciones del propio autor.
 
@@ -79,10 +79,10 @@ Nota: la comparativa es orientativa; los valores de precision de LeNet-5 y de mo
 - Sin datos de sesgo ni de alucinacion aplicables: al ser un clasificador de 10 clases cerradas, el fallo tipico es la clasificacion erronea, no la alucinacion, pero no hay informacion sobre su matriz de confusion ni sobre clases con mayor tasa de error.
 - La precision del 99,14 % es la reportada por la autora; no existe verificacion independiente publicada en la model card.
 - Licencia MIT: sin restricciones para uso comercial, pero el modelo se ofrece tal cual, sin garantias.
-- Repositorio con cero descargas registradas y tamano de repo 0,0 GB segun HuggingFace: conviene verificar que los pesos estan disponibles y completos antes de depender de ellos.
+- Repositorio con cero descargas registradas y tamano de repo 0,0 GB segun Hugging Face: conviene verificar que los pesos estan disponibles y completos antes de depender de ellos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CarinaLeo/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/CarinaLeo/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

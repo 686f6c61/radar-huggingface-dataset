@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_1016 es un modelo de clasificación de audio obtenido por ajuste fino (fine-tuning) del checkpoint Kkonjeong/wav2vec2-base-korean, publicado por el usuario hongjinseon123 en HuggingFace. Se trata de un modelo de 94.572.174 parámetros (aproximadamente 94,6 M) almacenado en safetensors, con un tamano de repositorio de 0,4 GB y pipeline declarado audio-classification.
+audio_cls_1016 es un modelo de clasificación de audio obtenido por ajuste fino (fine-tuning) del checkpoint Kkonjeong/wav2vec2-base-korean, publicado por el usuario hongjinseon123 en Hugging Face. Se trata de un modelo de 94.572.174 parámetros (aproximadamente 94,6 M) almacenado en safetensors, con un tamano de repositorio de 0,4 GB y pipeline declarado audio-classification.
 
 El modelo resuelve una tarea de clasificación sobre senal de audio, es decir, asigna una etiqueta a un fragmento sonoro, partiendo de las representaciones auto-supervisadas aprendidas por wav2vec2 sobre audio en coreano. Segun la model card, alcanza una exactitud de 0,9244 y una perdida de evaluacion de 0,8581 tras 10 epocas de entrenamiento. No se especifica en la informacion disponible cual es el conjunto de etiquetas, el dominio de audio ni el dataset empleado.
 
@@ -96,9 +96,9 @@ No se han publicado resultados de benchmarks comparativos en la informacion disp
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hongjinseon123/audio_cls_1016 | 94.572.174 | Clasificacion de audio | Forma de onda (wav2vec2) | no disponible | HuggingFace, 0 descargas |
-| Kkonjeong/wav2vec2-base-korean (modelo base) | no disponible | Representaciones de audio auto-supervisadas en coreano | Forma de onda (wav2vec2) | no disponible | HuggingFace |
-| facebook/wav2vec2-base (referencia de la familia) | no disponible en la informacion proporcionada | Representaciones de audio auto-supervisadas | Forma de onda (wav2vec2) | no disponible en la informacion proporcionada | HuggingFace |
+| hongjinseon123/audio_cls_1016 | 94.572.174 | Clasificacion de audio | Forma de onda (wav2vec2) | no disponible | Hugging Face, 0 descargas |
+| Kkonjeong/wav2vec2-base-korean (modelo base) | no disponible | Representaciones de audio auto-supervisadas en coreano | Forma de onda (wav2vec2) | no disponible | Hugging Face |
+| facebook/wav2vec2-base (referencia de la familia) | no disponible en la informacion proporcionada | Representaciones de audio auto-supervisadas | Forma de onda (wav2vec2) | no disponible en la informacion proporcionada | Hugging Face |
 
 No hay datos de rendimiento publicados para alternativas de la misma categoria en la informacion disponible, por lo que no es posible establecer una comparacion cuantitativa de exactitud, latencia o calidad. La unica comparacion verificable es estructural: audio_cls_1016 anade una cabeza de clasificacion sobre Kkonjeong/wav2vec2-base-korean y declara 94,57 M de parametros.
 
@@ -118,6 +118,6 @@ No hay datos de rendimiento publicados para alternativas de la misma categoria e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hongjinseon123/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/hongjinseon123/audio_cls_1016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

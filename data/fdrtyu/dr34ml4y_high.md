@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DR34ML4Y_High es un modelo publicado en HuggingFace por el usuario fdrtyu. A fecha de la consulta, el repositorio no contiene una model card informativa: solo indica la licencia "other" y un tamaño de repositorio de 0.3 GB. No se dispone de datos sobre arquitectura, parámetros, longitud de contexto, idiomas ni capacidades. El modelo no tiene descargas ni "likes", por lo que no ha recibido validación de la comunidad. Su relevancia actual es mínima, ya que carece de documentación técnica y de cualquier información que permita evaluarlo. No se puede determinar qué problema resuelve ni para qué tareas está destinado.
+DR34ML4Y_High es un modelo publicado en Hugging Face por el usuario fdrtyu. A fecha de la consulta, el repositorio no contiene una model card informativa: solo indica la licencia "other" y un tamaño de repositorio de 0.3 GB. No se dispone de datos sobre arquitectura, parámetros, longitud de contexto, idiomas ni capacidades. El modelo no tiene descargas ni "likes", por lo que no ha recibido validación de la comunidad. Su relevancia actual es mínima, ya que carece de documentación técnica y de cualquier información que permita evaluarlo. No se puede determinar qué problema resuelve ni para qué tareas está destinado.
 
 ## Especificaciones tecnicas
 
@@ -51,6 +51,6 @@ No disponible. No se dispone de información sobre modelos comparables, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdrtyu/DR34ML4Y_High
+- Hugging Face: https://huggingface.co/fdrtyu/DR34ML4Y_High
 
 No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos correspondían a ejercicios de inglés (agendaweb.org) y a un modelo no relacionado de otro autor (SlartyG/DR34ML4Y_I2V_14B_HIGH_V2), sin conexión verificable con este repositorio.

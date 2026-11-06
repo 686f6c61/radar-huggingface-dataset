@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6` es un checkpoint de generacion de texto de 27,4 millones de parametros (27.449.096 exactos) subido a HuggingFace por el usuario Lanni-ni. Forma parte de una serie de experimentos etiquetados como `dynamic_forgetting` sobre la base BabyLM 100M, lo que sugiere una investigacion sobre tecnicas de olvido dinamico durante el entrenamiento de modelos de lenguaje de pequeno tamano.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6` es un checkpoint de generacion de texto de 27,4 millones de parametros (27.449.096 exactos) subido a Hugging Face por el usuario Lanni-ni. Forma parte de una serie de experimentos etiquetados como `dynamic_forgetting` sobre la base BabyLM 100M, lo que sugiere una investigacion sobre tecnicas de olvido dinamico durante el entrenamiento de modelos de lenguaje de pequeno tamano.
 
 La model card es auto-generada y no contiene informacion tecnica relevante: todos los campos aparecen como `[More Information Needed]`. El repositorio no tiene descargas ni likes, y su fecha de creacion es 2026-09-05. El modelo se distribuye en formato `safetensors` y requiere `custom_code` para su carga, lo que indica que la arquitectura puede no ser estandar o que necesita codigo adicional del autor.
 
@@ -25,7 +25,7 @@ A dia de hoy no existen benchmarks publicos, documentacion de capacidades ni inf
 
 No se dispone de informacion sobre la arquitectura ni el procedimiento de entrenamiento. La model card no incluye ningun dato sobre la estructura del modelo, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El unico dato tecnico es el total de parametros (27,4 millones) y el formato de pesos `safetensors`.
 
-El tag `custom_code` de HuggingFace implica que se necesita codigo adicional para instanciar el modelo, lo que sugiere una arquitectura no estandar o una modificacion experimental sobre el esquema BabyLM 100M. Sin embargo, no se aporta ningun detalle adicional en el repositorio.
+El tag `custom_code` de Hugging Face implica que se necesita codigo adicional para instanciar el modelo, lo que sugiere una arquitectura no estandar o una modificacion experimental sobre el esquema BabyLM 100M. Sin embargo, no se aporta ningun detalle adicional en el repositorio.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: aproximadamente 0,1 GB en FP32 (27,4M parametros * 4 bytes = 109,8 MB) y 0,06 GB en FP16. Es un modelo muy ligero que cabe en cualquier GPU con mas de 0,5 GB de VRAM.
 - GPU recomendadas: no disponible; cualquier GPU consumer moderna (RTX serie 20, 30, 40 o equivalente) puede ejecutarlo.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: HuggingFace Transformers con `custom_code`; no es compatible con llama.cpp ni Ollama en formato GGUF porque los pesos estan en `safetensors`.
+- Opciones de despliegue: Hugging Face Transformers con `custom_code`; no es compatible con llama.cpp ni Ollama en formato GGUF porque los pesos estan en `safetensors`.
 - Latencia y throughput estimados: no disponibles (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de informacion para realizar una comparativa con modelos de la mis
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6)
+- Repositorio del modelo en Hugging Face: [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch6)
 - Checkpoint relacionado (epoch4): [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4)
 - Checkpoint relacionado (inverse_epoch1): [https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1](https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chloeyoung13/efficientformer-experiment17` es un repositorio experimental de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). Lo publica el usuario `chloeyoung13` como un artefacto compacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. La model card lo declara explícitamente: el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado ni evaluado.
+`chloeyoung13/efficientformer-experiment17` es un repositorio experimental de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). Lo publica el usuario `chloeyoung13` como un artefacto compacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. La model card lo declara explícitamente: el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un modelo entrenado ni evaluado.
 
 La configuración declarada corresponde a la escala «xlarge», con atención de ventana deslizante (sliding window), fusión bilineal, activación ReLU y normalización LayerNorm. La receta de experimento por defecto usa el optimizador Adam con un scheduler de tipo «step», pero el autor advierte que son valores de arranque del script, no evidencia de un entrenamiento completado. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-experiment17 | 24.832 (según safetensors, dudoso) | no disponible | sin benchmark publicado | BSD-3-Clause | HuggingFace (experimental) |
+| efficientformer-experiment17 | 24.832 (según safetensors, dudoso) | no disponible | sin benchmark publicado | BSD-3-Clause | Hugging Face (experimental) |
 | EfficientFormer original (Meta) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | CLIP (OpenAI) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,6 +80,6 @@ No se dispone de datos verificados de arquitecturas comparables dentro de la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chloeyoung13/efficientformer-experiment17
+- Hugging Face: https://huggingface.co/chloeyoung13/efficientformer-experiment17
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

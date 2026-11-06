@@ -70,10 +70,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3_jbb_ka16_a1p0_free_remove50 | 8,03 B almacenados; fracción densa 0,4997 | 8192 | Llama 3 Community License | HuggingFace, 0 descargas | Artefacto de investigación con seguridad degradada (ASR 0,3731 en AdvBench) |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 | Llama 3 Community License | HuggingFace, ampliamente desplegado | Modelo base sin comprimir; métricas de referencia no incluidas en la información proporcionada |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131072 | Llama 3.1 Community License | HuggingFace | Generación posterior con contexto mucho mayor y soporte de tool calling |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32768 | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con licencia permisiva |
+| svd-safety-l3_jbb_ka16_a1p0_free_remove50 | 8,03 B almacenados; fracción densa 0,4997 | 8192 | Llama 3 Community License | Hugging Face, 0 descargas | Artefacto de investigación con seguridad degradada (ASR 0,3731 en AdvBench) |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 | Llama 3 Community License | Hugging Face, ampliamente desplegado | Modelo base sin comprimir; métricas de referencia no incluidas en la información proporcionada |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131072 | Llama 3.1 Community License | Hugging Face | Generación posterior con contexto mucho mayor y soporte de tool calling |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32768 | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con licencia permisiva |
 
 Los datos de los tres modelos de referencia provienen de sus model cards públicas y no están verificados en la información proporcionada para esta ficha; se incluyen solo como contexto de categoría. No hay comparación de benchmarks disponible entre este checkpoint y las alternativas.
 
@@ -90,7 +90,7 @@ Los datos de los tres modelos de referencia provienen de sus model cards públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_jbb_ka16_a1p0_free_remove50
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: archivos `LICENSE` y `USE_POLICY.md` incluidos en el repositorio del modelo
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios de código ni demos adicionales.

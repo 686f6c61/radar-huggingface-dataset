@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Tamano del repositorio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bumblebeeman/runa-toon-full | LoRA de personaje (NSFW) | krea/Krea-2-Raw | 0.5 GB | other | HuggingFace |
-| bumblebeeman/Runa | Adaptador de personaje (mismo autor) | no disponible | no disponible | no disponible | HuggingFace |
+| bumblebeeman/runa-toon-full | LoRA de personaje (NSFW) | krea/Krea-2-Raw | 0.5 GB | other | Hugging Face |
+| bumblebeeman/Runa | Adaptador de personaje (mismo autor) | no disponible | no disponible | no disponible | Hugging Face |
 | FurryToonMix - XL-V3B | Checkpoint de estilo toon (Civitai) | no disponible | no disponible | no disponible | Civitai |
 
 No se dispone de datos de rendimiento, contexto o licencia suficientes para una comparacion cuantitativa entre estos modelos.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento, contexto o licencia suficientes para una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bumblebeeman/runa-toon-full
+- Modelo en Hugging Face: https://huggingface.co/bumblebeeman/runa-toon-full
 - Modelo relacionado del mismo autor: https://huggingface.co/bumblebeeman/Runa
 - Perfil del autor: https://huggingface.co/bumblebeeman
 - Ficha en Free2AITools: https://free2aitools.com/model/bumblebeeman/runa

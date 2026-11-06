@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El va
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en la informacion proporcionada. Este agente es específico para CartPole-v1 y no existe una categoría estándar de modelos de RL comparables en HuggingFace con los que se pueda realizar una comparación directa. Los resultados de otros agentes en CartPole-v1 (por ejemplo, usando DQN o A2C) podrían compararse, pero no se han incluido en la información disponible.
+No se dispone de modelos comparables en la informacion proporcionada. Este agente es específico para CartPole-v1 y no existe una categoría estándar de modelos de RL comparables en Hugging Face con los que se pueda realizar una comparación directa. Los resultados de otros agentes en CartPole-v1 (por ejemplo, usando DQN o A2C) podrían compararse, pero no se han incluido en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -73,5 +73,5 @@ No se dispone de modelos comparables en la informacion proporcionada. Este agent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MP4good/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/MP4good/Reinforce-CartPole-v1
 - Curso Deep Reinforcement Learning de Hugging Face (Unidad 4): https://huggingface.co/deep-rl-course/unit4/introduction

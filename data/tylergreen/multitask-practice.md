@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tylergreen/multitask-practice es un repositorio de codigo educativo publicado en HuggingFace que contiene una implementacion propia de un "Tiny Transformer" orientado a tareas multiples (multitask). El autor lo describe explicitamente como un artefacto de trabajo con codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo con pesos entrenados.
+Tylergreen/multitask-practice es un repositorio de codigo educativo publicado en Hugging Face que contiene una implementacion propia de un "Tiny Transformer" orientado a tareas multiples (multitask). El autor lo describe explicitamente como un artefacto de trabajo con codigo transparente y pruebas de humo (smoke tests) reproducibles, no como un modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo con pesos entrenados.
 
 El modelo es extremadamente pequeno: el recuento real de parametros del fichero safetensors es de 49.600, lo que lo situa en el rango de los modelos de juguete o de validacion de infraestructura. La model card declara una configuracion etiquetada como "large" dentro de su propia escala interna, con atencion dilatada, fusion con compuertas (gated fusion), activacion ReLU y normalizacion GroupNorm, ademas de un recetario de entrenamiento por defecto basado en RMSprop con planificador OneCycle.
 
@@ -78,7 +78,7 @@ La comparacion de rendimiento con estas alternativas no esta disponible: la mode
 - No ha sido auditado en robustez, equidad, sesgos ni transferencia de dominio, segun la propia model card.
 - Riesgo de alucinacion: no evaluable, al no existir un modelo entrenado sobre el que medirlo.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no se puede garantizar cobertura multilingue ni gestion de contextos largos.
-- Es una implementacion personalizada: las APIs automaticas de carga de HuggingFace requieren un adaptador explicito antes de su uso.
+- Es una implementacion personalizada: las APIs automaticas de carga de Hugging Face requieren un adaptador explicito antes de su uso.
 - Los valores de `training_args.json` (RMSprop, OneCycle) son puntos de partida del script y no evidencia de una ejecucion completada.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial del codigo, pero el autor advierte de revisar por separado los terminos de los datos de origen si se combina con datasets externos.
 - Cualquier resultado de un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto incluidos en este repositorio.
@@ -86,5 +86,5 @@ La comparacion de rendimiento con estas alternativas no esta disponible: la mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tylergreen/multitask-practice
+- Modelo en Hugging Face: https://huggingface.co/Tylergreen/multitask-practice
 - No se han encontrado en la busqueda web articulos, papers, repositorios auxiliares ni demos asociados a este modelo. Los resultados devueltos por la busqueda corresponden a paginas de onboarding de HP (123.hp.com) sin relacion con el modelo.

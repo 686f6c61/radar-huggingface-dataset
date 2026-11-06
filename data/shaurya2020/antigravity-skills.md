@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Requiere Google Antigravity (CLI `agy` o Antigravity 2.0 desktop) para ejecutar las skills.
 - Alternativamente, puede usarse con agentes que lean el estandar abierto de Agent Skills (Cursor, Claude Code), pero las extensiones nativas de Antigravity (como `kind`, `model`) se ignoran en esos entornos.
 - El instalador necesita un sistema Unix-like (bash) y acceso de escritura a `~/.gemini/antigravity-cli/skills/` o a `.agents/skills/` si se usa `--local`.
-- Para skills que requieren scripts (`/start`, `/laravel-to-node`, `/thor`), el repositorio referencia directorios en `~/.cursor/skills/`; si no existen, se deben clonar los repositorios de HuggingFace asociados y definir `SKILLS_ROOT`.
+- Para skills que requieren scripts (`/start`, `/laravel-to-node`, `/thor`), el repositorio referencia directorios en `~/.cursor/skills/`; si no existen, se deben clonar los repositorios de Hugging Face asociados y definir `SKILLS_ROOT`.
 
 ## Comparativa con modelos similares
 
@@ -68,13 +68,13 @@ No aplica: no existe comparacion con modelos de IA. Se podria comparar con otros
 - Licencia no especificada: el autor no declara licencia, lo que impide uso comercial sin autorizacion explicita.
 - Sin soporte oficial: el repositorio tiene 0 descargas y 0 likes, lo que sugiere que no esta probado por la comunidad.
 - Especifico de un proyecto: las skills estan disenadas para la plataforma 365LOTUS; usarlas en otros contextos puede requerir adaptacion.
-- Dependencias externas: algunas skills requieren repositorios de HuggingFace adicionales (365lotus-platform, laravel-to-node) que deben estar accesibles.
+- Dependencias externas: algunas skills requieren repositorios de Hugging Face adicionales (365lotus-platform, laravel-to-node) que deben estar accesibles.
 - Riesgo de alucinacion en agentes: aunque no es del modelo, los agentes que ejecutan las skills pueden generar contenido incorrecto; la skill `/fable-judge` intenta mitigarlo, pero no es garantia.
 - Compatibilidad limitada: las extensiones nativas de Antigravity (model, temperature, etc.) son ignoradas por otros agentes, lo que puede cambiar el comportamiento en Cursor o Claude Code.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shaurya2020/antigravity-skills
+- Repositorio Hugging Face: https://huggingface.co/Shaurya2020/antigravity-skills
 - Repositorio 365lotus-platform: https://huggingface.co/Shaurya2020/365lotus-platform
 - Repositorio laravel-to-node: https://huggingface.co/Shaurya2020/laravel-to-node
 - Documentacion de Google Antigravity Skills: https://antigravity.google/docs/skills

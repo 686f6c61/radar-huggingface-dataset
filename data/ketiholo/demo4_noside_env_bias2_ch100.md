@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`demo4_noside_env_bias2_ch100` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos de acciones en lugar de pasos individuales. El modelo lo publica el usuario `ketiholo` en HuggingFace mediante la librería LeRobot de HuggingFace, que es el marco de referencia para entrenar y desplegar políticas robóticas con datasets teleoperados. El modelo tiene 51.676.295 parámetros y un tamaño de repositorio de 0,2 GB.
+`demo4_noside_env_bias2_ch100` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos de acciones en lugar de pasos individuales. El modelo lo publica el usuario `ketiholo` en Hugging Face mediante la librería LeRobot de Hugging Face, que es el marco de referencia para entrenar y desplegar políticas robóticas con datasets teleoperados. El modelo tiene 51.676.295 parámetros y un tamaño de repositorio de 0,2 GB.
 
 El problema que resuelve es el control de un robot manipulador a partir de demostraciones humanas: en lugar de programar trayectorias a mano, la política aprende a mapear observaciones visuales y de estado a comandos motores. ACT es relevante porque consigue tasas de éxito altas con datasets relativamente pequeños, lo que lo convierte en una opción práctica para laboratorios y prototipos de robótica de bajo coste, como las plataformas SO-100/SO-101 que aparecen en los comandos de ejemplo de la model card.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ketiholo/demo4_noside_env_bias2_ch100` | 51,7 M | no aplica | no disponible | Apache 2.0 | HuggingFace (21 descargas) |
+| `ketiholo/demo4_noside_env_bias2_ch100` | 51,7 M | no aplica | no disponible | Apache 2.0 | Hugging Face (21 descargas) |
 | ACT original (paper arXiv:2304.13705) | no disponible | no aplica | tasas de éxito altas reportadas en el paper | no disponible | paper y código de referencia |
-| Políticas LeRobot del Hub (p. ej. `lerobot/act_*`) | variable | no aplica | variable según dataset | normalmente Apache 2.0 | HuggingFace |
+| Políticas LeRobot del Hub (p. ej. `lerobot/act_*`) | variable | no aplica | variable según dataset | normalmente Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre este checkpoint y otras políticas ACT del ecosistema LeRobot, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiholo/demo4_noside_env_bias2_ch100
+- Modelo en Hugging Face: https://huggingface.co/ketiholo/demo4_noside_env_bias2_ch100
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

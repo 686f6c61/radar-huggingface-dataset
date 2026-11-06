@@ -89,7 +89,7 @@ La comparacion de rendimiento (MMLU, HumanEval, GSM8K) no esta disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-trait-ee
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-trait-ee
 - Modelo base (mid-train): https://huggingface.co/joshycodes/qwen3.5-9b-trait-earnest-mt
 - Celda pp: https://huggingface.co/joshycodes/qwen3.5-9b-trait-pp
 - Celda pe: https://huggingface.co/joshycodes/qwen3.5-9b-trait-pe

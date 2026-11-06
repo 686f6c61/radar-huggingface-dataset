@@ -30,7 +30,7 @@ La unica innovacion tecnica documentada en este repositorio es el proceso de cua
 ## Capacidades
 
 - Generacion de texto en ingles: capacidad basica esperada de un modelo de 6,7 B, sin confirmacion documental de calidad.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante la infraestructura de endpoints de Hugging Face.
 - Inferencia local: el formato GGUF permite ejecucion en CPU y GPU con llama.cpp y derivados.
 - Tool calling / function calling: no documentado.
 - Razonamiento multi-paso y agentes: no documentado, pese al sufijo "agent" en el nombre.

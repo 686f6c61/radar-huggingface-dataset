@@ -97,7 +97,7 @@ La comparación más directa es con su propio modelo base, Qwen2.5-Coder-32B-Ins
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Techions/Umochi-60K-WSP
+- Modelo en Hugging Face: https://huggingface.co/Techions/Umochi-60K-WSP
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Leaderboard del autor (Space): https://huggingface.co/spaces/Techions/Umochi-Enterprise-Java-3D-Leaderboard
 - BigCode Leaderboard, PR #107: https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard/discussions/107

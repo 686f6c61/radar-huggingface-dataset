@@ -6,7 +6,7 @@ El modelo `qwen2.5-1.5b-java-expert` es un ajuste fino (fine-tuning) del modelo 
 
 El modelo mantiene la arquitectura transformer decoder-only de Qwen2.5, con 1.543.714.304 parámetros (aproximadamente 1.5B) y una ventana de contexto de 32.768 tokens. Está diseñado para ser ligero y rápido, apto para inferencia en CPU y GPU de gama media. Su relevancia radica en ofrecer un asistente especializado en Java con un coste computacional bajo, ideal para entornos educativos, generación de código y soporte técnico en proyectos Java.
 
-La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio contiene los pesos completos en formato safetensors (3.1 GB), listos para usar con la biblioteca Transformers de HuggingFace.
+La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio contiene los pesos completos en formato safetensors (3.1 GB), listos para usar con la biblioteca Transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: en precision fp16, el modelo ocupa aproximadamente 3.1 GB de memoria (1.5B parametros x 2 bytes). Con cuantizacion int8 se reduce a ~1.6 GB, y en int4 a ~0.8 GB, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en fp16, por ejemplo NVIDIA GTX 1660 Super, RTX 3050 o superiores. En cuantizacion int8, una GPU con 2 GB es suficiente, como la NVIDIA MX450 o integradas modernas.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de consumo medio y bajo. En CPU, puede ejecutarse con llama.cpp o Transformers, con latencia de unos pocos segundos por generacion.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference) y la biblioteca Transformers de HuggingFace. Para produccion, se recomienda vLLM o TGI para mayor throughput.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference) y la biblioteca Transformers de Hugging Face. Para produccion, se recomienda vLLM o TGI para mayor throughput.
 - Latencia y throughput estimados: en una GPU RTX 4090, la generacion de 512 tokens tardaria aproximadamente 1-2 segundos. En CPU moderna (por ejemplo, AMD Ryzen 9), podria tardar 10-20 segundos. No hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-java-expert (este) | 1.5B | 32K | Apache 2.0 | Java (teorico y codigo) | HuggingFace |
-| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K | Apache 2.0 | Generico, instrucciones | HuggingFace, Ollama |
-| CodeGemma-2B | 2B | 8K | Gemma license | Generacion de codigo (multilenguaje) | HuggingFace |
-| CodeLlama-7B | 7B | 16K | Llama 2 license | Generacion de codigo (multilenguaje) | HuggingFace |
+| qwen2.5-1.5b-java-expert (este) | 1.5B | 32K | Apache 2.0 | Java (teorico y codigo) | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1.5B | 32K | Apache 2.0 | Generico, instrucciones | Hugging Face, Ollama |
+| CodeGemma-2B | 2B | 8K | Gemma license | Generacion de codigo (multilenguaje) | Hugging Face |
+| CodeLlama-7B | 7B | 16K | Llama 2 license | Generacion de codigo (multilenguaje) | Hugging Face |
 
 El modelo se diferencia del base por su especializacion exclusiva en Java, lo que puede ofrecer respuestas mas precisas y coherentes en ese dominio, aunque con una cobertura mucho mas limitada fuera de el. Comparado con CodeGemma o CodeLlama, es mas ligero y enfocado, pero carece de soporte para otros lenguajes y de herramientas de tool calling.
 
@@ -82,7 +82,7 @@ El modelo se diferencia del base por su especializacion exclusiva en Java, lo qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AymanElFou/qwen2.5-1.5b-java-expert
+- Repositorio Hugging Face: https://huggingface.co/AymanElFou/qwen2.5-1.5b-java-expert
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Coleccion oficial Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Documentacion Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

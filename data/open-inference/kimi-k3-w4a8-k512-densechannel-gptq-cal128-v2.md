@@ -66,9 +66,9 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2 | Este artefacto | no disponible | no disponible | kimi-k3 (`other`) | HuggingFace, 0 descargas, 0 likes |
-| open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024 | Checkpoint padre; conserva BF16 en densas y cabeza | no disponible | no disponible | no disponible | HuggingFace |
-| moonshotai/Kimi-K3 | Modelo base original; commit f831ab66814297da540d832a5235f8e904f29d06 | no disponible | no disponible | kimi-k3 | HuggingFace |
+| open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2 | Este artefacto | no disponible | no disponible | kimi-k3 (`other`) | Hugging Face, 0 descargas, 0 likes |
+| open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024 | Checkpoint padre; conserva BF16 en densas y cabeza | no disponible | no disponible | no disponible | Hugging Face |
+| moonshotai/Kimi-K3 | Modelo base original; commit f831ab66814297da540d832a5235f8e904f29d06 | no disponible | no disponible | kimi-k3 | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento para ninguna de las tres entradas, por lo que la comparativa se limita a la relacion de procedencia y a la licencia.
 
@@ -83,11 +83,11 @@ No se dispone de datos de parametros, contexto ni rendimiento para ninguna de la
 - Idiomas: no se declara lista de idiomas soportados ni cobertura multilingue.
 - Sesgos y alucinacion: no disponible; no se publica ninguna evaluacion de sesgo ni de tasas de alucinacion.
 - Licencia `other` bajo el nombre «kimi-k3»: las condiciones de uso comercial dependen del texto de LICENSE del repositorio, que no se reproduce en la informacion disponible. Debe revisarse antes de cualquier uso comercial.
-- Actividad nula en HuggingFace (0 descargas, 0 likes) y sin validacion independiente por terceros.
+- Actividad nula en Hugging Face (0 descargas, 0 likes) y sin validacion independiente por terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2
+- Hugging Face: https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Checkpoint padre: https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados.

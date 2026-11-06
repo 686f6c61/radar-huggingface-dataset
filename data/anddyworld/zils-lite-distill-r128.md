@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anddyworld/zils-lite-distill-r128
+- Hugging Face: https://huggingface.co/anddyworld/zils-lite-distill-r128
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite

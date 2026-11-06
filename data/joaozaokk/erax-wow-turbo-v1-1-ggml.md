@@ -101,7 +101,7 @@ Parametros, contexto y resultados de benchmarks de los modelos comparados: no di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/EraX-WoW-Turbo-V1.1-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/EraX-WoW-Turbo-V1.1-ggml
 - Modelo base: https://huggingface.co/erax-ai/EraX-WoW-Turbo-V1.1
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-satquery-grounding-qwen2.5vl-3b-merged es un ajuste fino del modelo multimodal Qwen2.5-VL-3B-Instruct publicado por el usuario tutuk45 en HuggingFace. Se trata de un modelo de visión-lenguaje (image-text-to-text) de 3.754.622.976 parámetros (3,75B) que conserva la arquitectura del modelo base y se distribuye en safetensors, con un repositorio de 7,5 GB. La licencia declarada es Apache-2.0 y el único idioma etiquetado es el inglés.
+satquery-grounding-qwen2.5vl-3b-merged es un ajuste fino del modelo multimodal Qwen2.5-VL-3B-Instruct publicado por el usuario tutuk45 en Hugging Face. Se trata de un modelo de visión-lenguaje (image-text-to-text) de 3.754.622.976 parámetros (3,75B) que conserva la arquitectura del modelo base y se distribuye en safetensors, con un repositorio de 7,5 GB. La licencia declarada es Apache-2.0 y el único idioma etiquetado es el inglés.
 
-Qwen2.5-VL es la serie multimodal de la familia Qwen, desarrollada por el equipo Qwen de Alibaba Cloud, disponible en variantes de 3B, 7B y 72B parámetros y preentrenada sobre 4,1 billones de tokens. La variante de 3B está orientada a despliegues en el borde (edge AI) y, según la documentación de la familia, supera al modelo de 7B de la generación anterior, Qwen2-VL. El ajuste fino se ha realizado con Unsloth y la librería TRL de HuggingFace, que el autor declara como un entrenamiento «2x faster».
+Qwen2.5-VL es la serie multimodal de la familia Qwen, desarrollada por el equipo Qwen de Alibaba Cloud, disponible en variantes de 3B, 7B y 72B parámetros y preentrenada sobre 4,1 billones de tokens. La variante de 3B está orientada a despliegues en el borde (edge AI) y, según la documentación de la familia, supera al modelo de 7B de la generación anterior, Qwen2-VL. El ajuste fino se ha realizado con Unsloth y la librería TRL de Hugging Face, que el autor declara como un entrenamiento «2x faster».
 
 El interés de esta ficha radica en que el identificador del modelo («satquery-grounding») sugiere una especialización en tareas de grounding sobre imágenes de satélite o teledetección, un nicho con demanda creciente en análisis geoespacial automatizado. Sin embargo, la model card publicada no documenta el conjunto de datos, el procedimiento de entrenamiento ni las métricas de evaluación, por lo que la mayor parte de las afirmaciones sobre su especialización deben considerarse no verificadas.
 
@@ -30,7 +30,7 @@ El interés de esta ficha radica en que el identificador del modelo («satquery-
 
 El modelo hereda la arquitectura multimodal de Qwen2.5-VL, que combina un encoder de visión de tipo ViT con un decodificador de lenguaje autorregresivo. Entre las innovaciones técnicas documentadas para la familia se encuentran la introducción de window attention en el encoder ViT para acelerar entrenamiento e inferencia, el muestreo dinámico de FPS en las dimensiones espacial y temporal para mejorar la comprensión de vídeo a distintas tasas de muestreo, y el uso de MRoPE (multi-resolutional rotary positional embedding) para manejar resoluciones variables. La familia fue preentrenada sobre 4,1 billones de tokens.
 
-El proceso de ajuste fino de este repositorio concreto no está documentado en la model card: no se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Lo único declarado por el autor es que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x respecto a un flujo estándar, y que el resultado se ha fusionado («merged») en un único conjunto de pesos safetensors. La ausencia de detalles sobre el conjunto de datos impide reproducir el ajuste o auditar su comportamiento.
+El proceso de ajuste fino de este repositorio concreto no está documentado en la model card: no se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Lo único declarado por el autor es que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x respecto a un flujo estándar, y que el resultado se ha fusionado («merged») en un único conjunto de pesos safetensors. La ausencia de detalles sobre el conjunto de datos impide reproducir el ajuste o auditar su comportamiento.
 
 ## Capacidades
 
@@ -76,9 +76,9 @@ Las cifras siguientes son estimaciones calculadas a partir del número de parám
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tutuk45/satquery-grounding-qwen2.5vl-3b-merged | 3,75B | No disponible | Apache-2.0 | HuggingFace (safetensors) | Ajuste fino sin documentación de dataset ni métricas |
-| Qwen/Qwen2.5-VL-3B-Instruct | 3B | No disponible en la información recopilada | Apache-2.0 (según el repositorio base) | HuggingFace, GGUF vía Ollama | Modelo base; orientado a edge AI; el proveedor afirma que supera a Qwen2-VL-7B |
-| Qwen/Qwen2.5-VL-7B-Instruct | 7B | No disponible en la información recopilada | No disponible en la información recopilada | HuggingFace, GGUF vía Ollama | El proveedor afirma que supera a GPT-4o-mini en varias tareas |
+| tutuk45/satquery-grounding-qwen2.5vl-3b-merged | 3,75B | No disponible | Apache-2.0 | Hugging Face (safetensors) | Ajuste fino sin documentación de dataset ni métricas |
+| Qwen/Qwen2.5-VL-3B-Instruct | 3B | No disponible en la información recopilada | Apache-2.0 (según el repositorio base) | Hugging Face, GGUF vía Ollama | Modelo base; orientado a edge AI; el proveedor afirma que supera a Qwen2-VL-7B |
+| Qwen/Qwen2.5-VL-7B-Instruct | 7B | No disponible en la información recopilada | No disponible en la información recopilada | Hugging Face, GGUF vía Ollama | El proveedor afirma que supera a GPT-4o-mini en varias tareas |
 | Otras alternativas multimodales de ~3B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información recopilada |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ Las cifras siguientes son estimaciones calculadas a partir del número de parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tutuk45/satquery-grounding-qwen2.5vl-3b-merged
+- Modelo en Hugging Face: https://huggingface.co/tutuk45/satquery-grounding-qwen2.5vl-3b-merged
 - Modelo base utilizado para el ajuste: https://huggingface.co/unsloth/Qwen2.5-VL-3B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Documentación de Qwen2.5-VL en transformers: https://huggingface.co/docs/transformers/model_doc/qwen2_5_vl

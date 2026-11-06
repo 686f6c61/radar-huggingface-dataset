@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lts-qwen-legislative es un modelo publicado en HuggingFace por el usuario letijo03 el 10 de septiembre de 2026. El repositorio ocupa 0,1 GB y declara la libreria transformers junto con pesos en formato safetensors. No se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento, licencia ni idiomas soportados: la model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+lts-qwen-legislative es un modelo publicado en Hugging Face por el usuario letijo03 el 10 de septiembre de 2026. El repositorio ocupa 0,1 GB y declara la libreria transformers junto con pesos en formato safetensors. No se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento, licencia ni idiomas soportados: la model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El identificador del modelo sugiere un ajuste fino orientado al dominio legislativo sobre una base de la familia Qwen, pero esta interpretacion procede unicamente del nombre y no esta confirmada por el autor en ninguna seccion de la documentacion. El tamano del repositorio (0,1 GB) es compatible tanto con un adaptador LoRA como con un modelo de muy pocos parametros o una version fuertemente cuantizada, sin que sea posible determinarlo con la informacion disponible.
 
@@ -30,7 +30,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, no
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados o un esquema hibrido, ni tampoco el numero de parametros, el numero de capas o la dimension oculta. El unico dato estructural confirmado es el formato de serializacion de los pesos (safetensors) y la compatibilidad declarada con la libreria transformers.
 
-Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del corpus, si hubo etapas de ajuste supervisado, RLHF o DPO, y si el modelo deriva de un checkpoint previo. La unica referencia tecnica presente en el repositorio es la etiqueta arxiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla de HuggingFace como enlace del calculador de impacto ambiental, no como paper del modelo.
+Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens utilizados, la composicion del corpus, si hubo etapas de ajuste supervisado, RLHF o DPO, y si el modelo deriva de un checkpoint previo. La unica referencia tecnica presente en el repositorio es la etiqueta arxiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla de Hugging Face como enlace del calculador de impacto ambiental, no como paper del modelo.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Si se trata de un adaptador, el requisito real de VRAM vendra determinado por el modelo base sobre el que se aplique, que no esta declarado.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no verificada. Si finalmente se confirma un modelo de pocos parametros, podria ejecutarse en GPUs de consumo tipo RTX 3060, 4060 o superiores, pero es una hipotesis sin confirmar.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que el modelo seria cargable mediante la API de HuggingFace. No hay evidencia de soporte para vLLM, llama.cpp, Ollama, TGI u otros motores, ni de pesos en formato GGUF.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que el modelo seria cargable mediante la API de Hugging Face. No hay evidencia de soporte para vLLM, llama.cpp, Ollama, TGI u otros motores, ni de pesos en formato GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/letijo03/lts-qwen-legislative
+- Modelo en Hugging Face: https://huggingface.co/letijo03/lts-qwen-legislative
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML referenciado en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a ofertas de empleo y servicios de representacion legal en accidentes de trafico, sin relacion con este repositorio.

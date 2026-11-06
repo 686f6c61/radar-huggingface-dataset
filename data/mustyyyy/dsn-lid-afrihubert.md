@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema acotado y concreto: dada una locución de 16 kHz en mono, asignarla a una de 13 etiquetas (`yor`, `ibo`, `hau`, `ego`, `anw`, `efi`, `ibb`, `idu`, `igl`, `nup`, `tiv`, `urh`, `other`). No genera texto, no razona y no conversa: es una cabeza de clasificación sobre un encoder transformer tipo HuBERT. Su relevancia es la de los modelos de nicho: cubre lenguas de bajos recursos con muy pocos recursos públicos y sirve como pieza de enrutamiento en pipelines de ASR multilingüe.
 
-El tamaño es contenido (94.571.930 parámetros, repo de 0,4 GB), lo que permite ejecutarlo en CPU o en cualquier GPU de consumo. El dato de calidad publicado por el autor es un F1 de validación de la competición de 0,5953, una cifra modesta que conviene interpretar en el contexto de un corpus desbalanceado con 13 clases. El modelo no declara licencia ni idiomas en los metadatos de HuggingFace, y a fecha de la ficha no acumula descargas ni validación externa.
+El tamaño es contenido (94.571.930 parámetros, repo de 0,4 GB), lo que permite ejecutarlo en CPU o en cualquier GPU de consumo. El dato de calidad publicado por el autor es un F1 de validación de la competición de 0,5953, una cifra modesta que conviene interpretar en el contexto de un corpus desbalanceado con 13 clases. El modelo no declara licencia ni idiomas en los metadatos de Hugging Face, y a fecha de la ficha no acumula descargas ni validación externa.
 
 ## Especificaciones técnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 
 | Modelo | Parámetros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Mustyyyy/dsn-lid-afrihubert` | 94,6 M | Audio mono 16 kHz, clips de 8 s en entrenamiento | 13 etiquetas nigerianas | no disponible | HuggingFace, 0 descargas |
-| `ajesujoba/AfriHuBERT` (base) | 94,6 M (según el ajuste derivado) | Audio mono 16 kHz | Representación auto-supervisada para lenguas africanas; sin cabeza de clasificación | no disponible en esta ficha | HuggingFace |
-| Clasificadores LID genéricos (p. ej. enfoques ECAPA-TDNN o MMS-LID) | no disponible | Audio mono 16 kHz | Cobertura amplia, no específicamente nigeriana | variable según modelo | HuggingFace / SpeechBrain |
+| `Mustyyyy/dsn-lid-afrihubert` | 94,6 M | Audio mono 16 kHz, clips de 8 s en entrenamiento | 13 etiquetas nigerianas | no disponible | Hugging Face, 0 descargas |
+| `ajesujoba/AfriHuBERT` (base) | 94,6 M (según el ajuste derivado) | Audio mono 16 kHz | Representación auto-supervisada para lenguas africanas; sin cabeza de clasificación | no disponible en esta ficha | Hugging Face |
+| Clasificadores LID genéricos (p. ej. enfoques ECAPA-TDNN o MMS-LID) | no disponible | Audio mono 16 kHz | Cobertura amplia, no específicamente nigeriana | variable según modelo | Hugging Face / SpeechBrain |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no se han publicado métricas del modelo base ni de los clasificadores genéricos en el mismo split de evaluación. La ventaja diferencial de este ajuste es la especialización en 12 lenguas nigerianas y la calibración por clase; su desventaja es la ausencia de licencia declarada y de validación externa.
 
@@ -83,12 +83,12 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 - Riesgo de confusión entre lenguas cercanas y de clasificar como `other` audio de lenguas nigerianas no incluidas en las 13 etiquetas.
 - Entrada restringida a audio mono a 16 kHz; audio estéreo, otras frecuencias de muestreo o clips muy cortos requieren preprocesado y pueden degradar el resultado.
 - Licencia no disponible: no se puede asumir permiso de uso comercial. Es necesario contactar con el autor o consultar la licencia del modelo base y del dataset de entrenamiento (su `ATTRIBUTION.md`).
-- Sin descargas ni likes en HuggingFace en el momento de la ficha: no hay evidencia de comunidad, informes de errores ni reproducciones independientes del resultado.
+- Sin descargas ni likes en Hugging Face en el momento de la ficha: no hay evidencia de comunidad, informes de errores ni reproducciones independientes del resultado.
 - Al ser un modelo discriminativo, no genera explicaciones; la salida son logits y una etiqueta, sin justificación textual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mustyyyy/dsn-lid-afrihubert
+- Modelo en Hugging Face: https://huggingface.co/Mustyyyy/dsn-lid-afrihubert
 - Modelo base AfriHuBERT: https://huggingface.co/ajesujoba/AfriHuBERT
 - Paper de AfriHuBERT (Interspeech 2025): https://arxiv.org/abs/2409.20201
 - Dataset de entrenamiento DSN 2026 LID: https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train

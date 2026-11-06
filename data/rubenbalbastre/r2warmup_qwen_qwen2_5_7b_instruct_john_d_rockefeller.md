@@ -25,7 +25,7 @@ Nota: las cifras indicadas como del modelo base proceden de la documentación p�
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador de bajo rango (LoRA) sobre un transformer decoder-only denso de 7,61B parámetros. Los metadatos de HuggingFace indican que fue entrenado con la pila TRL/PEFT y que el modelo de referencia apunta a una ruta local (`outputs/model/Qwen--Qwen2.5-7B-Instruct`), lo que sugiere un pipeline de SFT ejecutado en local sobre una exportación del modelo base. La única versión de framework declarada es PEFT 0.21.0. No se especifican el rango del adaptador, los módulos a los que se aplica (`q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, etc.), la precisión de entrenamiento, el tamaño de batch, la tasa de aprendizaje ni el número de pasos.
+El artefacto es un adaptador de bajo rango (LoRA) sobre un transformer decoder-only denso de 7,61B parámetros. Los metadatos de Hugging Face indican que fue entrenado con la pila TRL/PEFT y que el modelo de referencia apunta a una ruta local (`outputs/model/Qwen--Qwen2.5-7B-Instruct`), lo que sugiere un pipeline de SFT ejecutado en local sobre una exportación del modelo base. La única versión de framework declarada es PEFT 0.21.0. No se especifican el rango del adaptador, los módulos a los que se aplica (`q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, etc.), la precisión de entrenamiento, el tamaño de batch, la tasa de aprendizaje ni el número de pasos.
 
 Tampoco hay información sobre el dataset de instrucciones utilizado, su composición, su idioma mayoritario ni si hubo fases posteriores de alineación (DPO, RLHF u otras). No consta ninguna innovación técnica declarada por el autor: no se mencionan decodificación especulativa, atención lineal, mezcla de expertos ni variantes arquitectónicas. El paper referenciado (arXiv:2608.17804) es el único documento asociado, pero su contenido no se ha podido verificar en la información disponible.
 
@@ -104,6 +104,6 @@ Nota: los datos de las tres alternativas proceden de su documentación pública 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_7b_instruct_john_d_rockefeller
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_7b_instruct_john_d_rockefeller
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper referenciado en la model card: https://arxiv.org/abs/2608.17804

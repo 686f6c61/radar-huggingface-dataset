@@ -17,7 +17,7 @@ La modificación se aplica sobre la arquitectura original de Llama-3.1-8B-Instru
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | Llama 3.1 Community License |
-| Formato de pesos | no disponible (presumiblemente safetensors, estandar en HuggingFace) |
+| Formato de pesos | no disponible (presumiblemente safetensors, estandar en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_No-Hedging
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_No-Hedging
 - Repositorio de jBlaze: https://github.com/apolloraines/jblaze
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante similar (Jbliterated-v2): https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated-v2

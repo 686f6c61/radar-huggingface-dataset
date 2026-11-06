@@ -82,12 +82,12 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - El adaptador se entrenó con solo 2 horas de audio en pt-BR, por lo que puede no generalizar bien a todas las variedades regionales del portugués brasileño ni a voces muy diferentes de las del conjunto de entrenamiento.
 - No se han publicado muestras de audio aún; la evaluación se basa en métricas objetivas y pruebas de escucha descritas en la documentación, pero no hay clips de demostración disponibles.
 - La mejora en inteligibilidad es modesta y estadísticamente no significativa en las pruebas de escucha a ciegas; no debe esperarse un salto cualitativo frente al modelo base.
-- El repositorio no incluye los pesos del modelo base; es necesario obtenerlos por separado y aceptar su licencia en HuggingFace.
+- El repositorio no incluye los pesos del modelo base; es necesario obtenerlos por separado y aceptar su licencia en Hugging Face.
 - No se documentan sesgos específicos, pero al entrenar con datos de Common Voice y TAGARELA, las voces representadas pueden no cubrir toda la diversidad dialectal y demográfica del portugués brasileño.
 - Riesgo de alucinación en TTS: como en cualquier modelo generativo de voz, puede producir artefactos o pronunciaciones incorrectas en entradas poco frecuentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoZaokk/fish-s2-pro-ptbr-lora
+- Modelo en Hugging Face: https://huggingface.co/JoaoZaokk/fish-s2-pro-ptbr-lora
 - Modelo base: https://huggingface.co/fishaudio/s2-pro
 - Repositorio de entrenamiento y evaluación: https://github.com/JoaoZaokk/ptbr-audio-lab

@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Elemento | Parámetros | Contexto | Filtrado de datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (adaptadores con filtrado por atribución de `qwen3-14b`) | LoRA r=32 sobre Qwen3-8B | No disponible | Sí: `select`/`remove` top/bottom K% con puntuaciones de `qwen3-14b` | No disponible | HuggingFace, 1200 carpetas |
-| Runs `{dataset}_{seed}` del mismo repositorio (control con datos completos) | LoRA r=32 sobre Qwen3-8B | No disponible | No | No disponible | HuggingFace, dentro del mismo repo |
-| `Qwen/Qwen3-8B` sin adaptador (control base) | No disponible en esta información | No disponible | No aplica | Según model card de Qwen | HuggingFace |
+| Este repositorio (adaptadores con filtrado por atribución de `qwen3-14b`) | LoRA r=32 sobre Qwen3-8B | No disponible | Sí: `select`/`remove` top/bottom K% con puntuaciones de `qwen3-14b` | No disponible | Hugging Face, 1200 carpetas |
+| Runs `{dataset}_{seed}` del mismo repositorio (control con datos completos) | LoRA r=32 sobre Qwen3-8B | No disponible | No | No disponible | Hugging Face, dentro del mismo repo |
+| `Qwen/Qwen3-8B` sin adaptador (control base) | No disponible en esta información | No disponible | No aplica | Según model card de Qwen | Hugging Face |
 
 No se dispone de datos para comparar con adaptadores de otras colecciones de desalineación emergente ni con modelos filtrados por atribución de otros autores.
 
@@ -87,7 +87,7 @@ No se dispone de datos para comparar con adaptadores de otras colecciones de des
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen3-14b
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen3-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Colección «Emergent Misalignment: Attribution-Filtered LoRA Adapters»: referenciada en la model card, sin URL en la información proporcionada
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado a distinguir respuestas "buenas" frente a "malas" en un contexto de múltiples factores, aunque la documentación disponible no detalla la composición del dataset ni los objetivos específicos del entrenamiento.
+El modelo `longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado a distinguir respuestas "buenas" frente a "malas" en un contexto de múltiples factores, aunque la documentación disponible no detalla la composición del dataset ni los objetivos específicos del entrenamiento.
 
-Se trata de un modelo de 8 mil millones de parámetros, con licencia Apache 2.0 y soporte únicamente para inglés según la metadata. El ajuste se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente en memoria. Al estar basado en Llama 3.1, hereda la arquitectura transformer estándar de dicha familia, aunque no se confirma si conserva la ventana de contexto completa de 128k tokens del modelo original.
+Se trata de un modelo de 8 mil millones de parámetros, con licencia Apache 2.0 y soporte únicamente para inglés según la metadata. El ajuste se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente en memoria. Al estar basado en Llama 3.1, hereda la arquitectura transformer estándar de dicha familia, aunque no se confirma si conserva la ventana de contexto completa de 128k tokens del modelo original.
 
 La relevancia de este modelo radica en que ejemplifica un caso de fine-tuning especializado sobre un modelo instructivo ampliamente utilizado, con licencia permisiva. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación limita su uso en entornos de producción sin una validación adicional por parte del usuario.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en que ejemplifica un caso de fine-tuning es
 
 El modelo es un fine-tuning supervisado (SFT) de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada del Llama 3.1 8B de Meta. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE), tal como se define en la familia Llama 3.1. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
-El proceso de entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados y gestión eficiente de memoria, y con TRL (Transformers Reinforcement Learning) de HuggingFace. El nombre del repositorio ("good-vs-bad-mixed-multifact-sft") sugiere que el dataset podría contener ejemplos etiquetados como "buenos" o "malos" en múltiples dimensiones, pero esto no está confirmado en la documentación pública.
+El proceso de entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados y gestión eficiente de memoria, y con TRL (Transformers Reinforcement Learning) de Hugging Face. El nombre del repositorio ("good-vs-bad-mixed-multifact-sft") sugiere que el dataset podría contener ejemplos etiquetados como "buenos" o "malos" en múltiples dimensiones, pero esto no está confirmado en la documentación pública.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.03B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7.24B | 32k | Apache 2.0 | HuggingFace |
-| Gemma-2-9B-it | 9.24B | 8k | Gemma Terms of Use | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8.03B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7.24B | 32k | Apache 2.0 | Hugging Face |
+| Gemma-2-9B-it | 9.24B | 8k | Gemma Terms of Use | Hugging Face |
 
 Este modelo es un derivado de Llama 3.1 8B Instruct, por lo que su rendimiento teórico es similar al base, pero sin validación pública. La principal diferencia con las alternativas es la licencia Apache 2.0, más permisiva que la de Llama (que restringe usos comerciales en algunos casos) y que la de Gemma. Sin embargo, al carecer de benchmarks, no se puede afirmar superioridad en ninguna tarea.
 
@@ -77,6 +77,6 @@ Este modelo es un derivado de Llama 3.1 8B Instruct, por lo que su rendimiento t
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-sft-seed5)
 - [Unsloth - librería de entrenamiento](https://github.com/unslothai/unsloth)
 - [Modelo base - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

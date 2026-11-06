@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativos fiables, ya que este checkpoi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ermiaazarkhalili/Granite-4.1-8B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/ermiaazarkhalili/Granite-4.1-8B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
 - Repositorio de pesos completos (pre-cuantización): https://huggingface.co/ermiaazarkhalili/Granite-4.1-8B-SFT-Claude-Opus-Reasoning-Unsloth
 - Modelo base Granite 4.1 8B: https://huggingface.co/ibm-granite/granite-4.1-8b
 - Documentación oficial de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1
 - Repositorio GitHub de IBM Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
-- Perfil del autor en HuggingFace: https://huggingface.co/ermiaazarkhalili
+- Perfil del autor en Hugging Face: https://huggingface.co/ermiaazarkhalili

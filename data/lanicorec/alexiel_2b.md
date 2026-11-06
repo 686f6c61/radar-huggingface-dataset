@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lanicorec/alexiel_2b es un modelo publicado en HuggingFace por el usuario Lanicorec. Por el nombre se deduce que se trata de un modelo de aproximadamente 2.000 millones de parametros, y la etiqueta `qwen3_5` sugiere una posible relacion con la familia Qwen3, aunque el autor no confirma arquitectura ni linaje en ningun momento. La model card publicada se limita a declarar la licencia MIT y no incluye descripcion, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso.
+Lanicorec/alexiel_2b es un modelo publicado en Hugging Face por el usuario Lanicorec. Por el nombre se deduce que se trata de un modelo de aproximadamente 2.000 millones de parametros, y la etiqueta `qwen3_5` sugiere una posible relacion con la familia Qwen3, aunque el autor no confirma arquitectura ni linaje en ningun momento. La model card publicada se limita a declarar la licencia MIT y no incluye descripcion, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso.
 
 En el momento de redactar esta ficha el repositorio no presenta descargas ni "likes", y el tamano declarado del repositorio es de 0,0 GB, lo que apunta a que no hay pesos subidos o a que el contenido no esta accesible publicamente. No consta informacion sobre idiomas soportados, longitud de contexto, tipos de cuantizacion ni formato de pesos mas alla de la etiqueta `safetensors`.
 
@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Lanicorec/alexiel_2b | no disponible (~2B por el nombre) | no disponible | MIT | Repositorio con 0,0 GB declarados |
-| Qwen3-1.7B | 1,7B | 32.768 tokens nativos | Apache 2.0 | Pesos publicos en HuggingFace |
+| Qwen3-1.7B | 1,7B | 32.768 tokens nativos | Apache 2.0 | Pesos publicos en Hugging Face |
 | Llama 3.2 1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | Pesos publicos con registro |
 | Gemma 3 1B | ~1B | 32.000 tokens | Gemma Terms of Use | Pesos publicos con aceptacion de terminos |
 
@@ -91,5 +91,5 @@ Los datos de las filas de comparacion proceden de la documentacion publica de ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanicorec/alexiel_2b
+- Hugging Face: https://huggingface.co/Lanicorec/alexiel_2b
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

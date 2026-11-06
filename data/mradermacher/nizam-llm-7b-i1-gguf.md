@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Nizam-LLM-7B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Nizam-LLM-7B-i1-GGUF
 - Modelo base: https://huggingface.co/muhammaduxair/Nizam-LLM-7B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Nizam-LLM-7B-GGUF
 - Fichero imatrix para generar cuantizaciones propias: https://huggingface.co/mradermacher/Nizam-LLM-7B-i1-GGUF/resolve/main/Nizam-LLM-7B.imatrix.gguf

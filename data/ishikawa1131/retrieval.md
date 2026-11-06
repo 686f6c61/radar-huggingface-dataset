@@ -37,7 +37,7 @@ La arquitectura implementada es Coca, un modelo contrastivo que combina un codif
 - Enseñanza de arquitecturas multimodales: por su tamaño mínimo, es útil en cursos o talleres para explicar los componentes de Coca y la fusión tensorial.
 - Integración en CI/CD: puede emplearse como prueba de humo en pipelines de integración continua para detectar regresiones en el entorno de inferencia.
 - Investigación de técnicas de fusión: la implementación incluye tensor fusion e instancenorm, lo que permite estudiar el impacto de estos componentes en tareas de retrieval.
-- Desarrollo de adaptadores: al ser una implementación personalizada, requiere un adaptador explícito para APIs genéricas de HuggingFace; esto sirve para practicar la integración de modelos no estándar.
+- Desarrollo de adaptadores: al ser una implementación personalizada, requiere un adaptador explícito para APIs genéricas de Hugging Face; esto sirve para practicar la integración de modelos no estándar.
 
 ## Benchmarks y rendimiento
 
@@ -60,12 +60,12 @@ No disponible. No se conocen modelos comparables de la misma categoría (Coca na
 - El checkpoint es de inicialización y no ha sido entrenado; no es apto para uso en producción.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio.
 - No se han publicado benchmarks ni métricas de rendimiento.
-- Implementación personalizada: requiere un adaptador explícito para las APIs genéricas de HuggingFace.
+- Implementación personalizada: requiere un adaptador explícito para las APIs genéricas de Hugging Face.
 - No se dispone de datos sobre longitud de contexto, idiomas soportados ni tipos de cuantización.
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo no tiene utilidad práctica en producción debido a su falta de entrenamiento.
 - Riesgo de resultados sin sentido si se utiliza como si fuera un modelo entrenado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISHIKAWA1131/retrieval
+- Hugging Face: https://huggingface.co/ISHIKAWA1131/retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

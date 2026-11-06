@@ -51,6 +51,6 @@ No disponible. No existen benchmarks ni especificaciones claras de este adaptado
 - La fecha de creación del repositorio es 2026-09-09, lo que podría indicar que es un proyecto experimental reciente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Jordine/patina3-v3_theirs-am-it_sft_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-v3_theirs-am-it_sft_s0
 - Repositorio relacionado: https://huggingface.co/Jordine/patina3-v3_theirsq-am-it_sft_s0
 - Nota: el tag `arxiv:1910.09700` presente en la model card corresponde al artículo sobre el calculador de impacto ambiental de Lacoste et al., no a un paper sobre el propio modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Savage-Fury69/ppo-LunarLander-v2-cleanrl` es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Savage-Fury69, entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gymnasium (familia Box2D). No se trata de un modelo de lenguaje: es una política de control que recibe el vector de observaciones del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y emite acciones discretas para aterrizar el módulo lunar. Las etiquetas del repositorio lo vinculan a un curso de deep reinforcement learning (`deep-rl-course`) y a la implementación de referencia CleanRL (`custom-implementation`, `cleanrl`).
+`Savage-Fury69/ppo-LunarLander-v2-cleanrl` es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Savage-Fury69, entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2 de Gymnasium (familia Box2D). No se trata de un modelo de lenguaje: es una política de control que recibe el vector de observaciones del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y emite acciones discretas para aterrizar el módulo lunar. Las etiquetas del repositorio lo vinculan a un curso de deep reinforcement learning (`deep-rl-course`) y a la implementación de referencia CleanRL (`custom-implementation`, `cleanrl`).
 
 El modelo es relevante únicamente como artefacto formativo o como punto de partida experimental, no como componente de producción. El autor declara una recompensa media de -54,89 ± 35,59 en LunarLander-v2, un resultado muy alejado del umbral de 200 que la literatura del entorno usa habitualmente para considerar la tarea resuelta, y el propio repositorio marca dicha métrica como no verificada. El repositorio registra 0 descargas y 0 "likes", y su tamaño figura como 0,0 GB, lo que sugiere que los pesos podrían no estar efectivamente publicados.
 
@@ -26,7 +26,7 @@ No hay información sobre licencia, idiomas, arquitectura de red, hiperparámetr
 | Framework declarado | etiqueta `cleanrl` y `custom-implementation`; implementación propia del autor |
 | Tarea (pipeline) | `reinforcement-learning` |
 | Autor | Savage-Fury69 |
-| Fecha de publicación | 2026-09-24 (según HuggingFace) |
+| Fecha de publicación | 2026-09-24 (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ El algoritmo declarado es PPO, un método actor-crítico con recorte de la ratio
 
 ## Casos de uso
 
-- Material didáctico en cursos de deep reinforcement learning: el repositorio se etiqueta explícitamente con `deep-rl-course`, por lo que puede usarse como ejemplo de entrega de ejercicio, mostrando cómo se publica un agente PPO en HuggingFace Hub junto con su `model-index`.
+- Material didáctico en cursos de deep reinforcement learning: el repositorio se etiqueta explícitamente con `deep-rl-course`, por lo que puede usarse como ejemplo de entrega de ejercicio, mostrando cómo se publica un agente PPO en Hugging Face Hub junto con su `model-index`.
 - Reproducción y auditoría de resultados declarados: dado que la métrica está marcada como no verificada, sirve para practicar la validación de una política cargando los pesos (si existiesen) y reevaluando la recompensa media sobre varios episodios con semillas distintas.
 - Estudio de varianza en PPO: la desviación típica declarada de ± 35,59 sobre una media de -54,89 es un caso útil para analizar la inestabilidad de una política poco entrenada y comparar curvas de aprendizaje entre semillas.
 - Punto de partida para experimentos de ajuste de hiperparámetros: permite reproducir la configuración base y variar tasa de aprendizaje, número de pasos, coeficiente de entropía o tamaño de lote para observar el efecto sobre la recompensa media.
@@ -83,7 +83,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 | Modelo | Tipo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ppo-LunarLander-v2-cleanrl (Savage-Fury69) | PPO, implementación propia | LunarLander-v2 | -54,89 ± 35,59 (no verificado) | no disponible | 0 descargas; repositorio de 0,0 GB |
-| Agentes PPO de la comunidad para LunarLander-v2 (por ejemplo, los generados en ejercicios de cursos de deep RL) | PPO | LunarLander-v2 | no disponible | variable según autor | múltiples repositorios en HuggingFace Hub |
+| Agentes PPO de la comunidad para LunarLander-v2 (por ejemplo, los generados en ejercicios de cursos de deep RL) | PPO | LunarLander-v2 | no disponible | variable según autor | múltiples repositorios en Hugging Face Hub |
 | Implementaciones de referencia de PPO (CleanRL, Stable-Baselines3) | PPO | LunarLander-v2 y otros | no disponible en esta ficha | MIT en el caso de CleanRL y Stable-Baselines3 (según sus repositorios) | código abierto, ampliamente extendido |
 
 No se han encontrado en la búsqueda web modelos comparables ni datos de terceros sobre este repositorio concreto.
@@ -104,5 +104,5 @@ No se han encontrado en la búsqueda web modelos comparables ni datos de tercero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savage-Fury69/ppo-LunarLander-v2-cleanrl
+- Modelo en Hugging Face: https://huggingface.co/Savage-Fury69/ppo-LunarLander-v2-cleanrl
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper ni a un repositorio de código asociado. Los resultados devueltos (https://www.savagex.fr/, https://www.savagex.com/, https://savagearms.com/, https://www.youtube.com/channel/UCFAU_QA8jlp-L_djLdfSz_A) corresponden a marcas comerciales y canales de vídeo sin relación con el artefacto descrito.

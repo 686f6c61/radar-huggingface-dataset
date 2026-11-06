@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos de rendimiento de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Orvena/Orvena-4B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Orvena/Orvena-4B-MLX-4bit
 - Modelo base: https://huggingface.co/Orvena/Orvena-4B
 - Informe técnico: https://huggingface.co/Orvena/Orvena-4B/blob/main/Orvena-4B-technical-report.pdf
 - Licencia: https://huggingface.co/Orvena/Orvena-4B-MLX-4bit/blob/main/LICENSE

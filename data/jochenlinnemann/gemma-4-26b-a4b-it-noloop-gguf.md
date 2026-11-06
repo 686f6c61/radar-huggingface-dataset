@@ -72,5 +72,5 @@ La información proporcionada no incluye referencias a modelos comparables, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JochenLinnemann/gemma-4-26B-A4B-it-noloop-GGUF
+- Hugging Face: https://huggingface.co/JochenLinnemann/gemma-4-26B-A4B-it-noloop-GGUF
 - Modelo base: https://huggingface.co/edgerunner-ai/gemma-4-26B-A4B-it-noloop

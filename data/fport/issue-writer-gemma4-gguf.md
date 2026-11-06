@@ -25,7 +25,7 @@ El modelo está construido sobre Gemma 4, un modelo de lenguaje de Google DeepMi
 
 - Procesamiento multimodal: acepta entradas de imagen y texto gracias al proyector multimodal (`mmproj`).
 - Generación de texto: al estar basado en una versión instruct de Gemma 4 (`gemma-4-E4B-it`), sigue instrucciones y genera respuestas en formato conversacional.
-- Etiquetado en HuggingFace como `vision-language-model`, `conversational` y `endpoints_compatible`.
+- Etiquetado en Hugging Face como `vision-language-model`, `conversational` y `endpoints_compatible`.
 - Inferencia compatible con llama.cpp: puede usarse con `llama-cli` para texto y con `llama-mtmd-cli` para tareas multimodales.
 - El name del modelo sugiere una especialización en la redacción de issues, aunque no se ha publicado documentación que detalle esta capacidad.
 - No se ha confirmado soporte para tool calling, funciones, razonamiento multi-paso ni modos de thinking.
@@ -61,13 +61,13 @@ No disponible. No se han identificado modelos comparables con el mismo propósit
 - Licencia no especificada: la ausencia de una licencia clara limita el uso comercial y la redistribución hasta que se aclare el término.
 - Idiomas no especificados: es posible que el fine-tuning esté centrado en inglés, lo que limita su capacidad multilingüe.
 - Sin benchmarks publicados: no se puede evaluar su rendimiento respecto a otros modelos de lenguaje multimodal.
-- 0 descargas y 0 likes en HuggingFace: el modelo no ha sido probado por la comunidad, por lo que puede contener errores o producir resultados no óptimos.
+- 0 descargas y 0 likes en Hugging Face: el modelo no ha sido probado por la comunidad, por lo que puede contener errores o producir resultados no óptimos.
 - Limitaciones de Ollama: el formato con `mmproj` separado no es compatible directamente, obligando a generar un modelo unificado y aumentar los requisitos de memoria.
 - No se ha confirmado el soporte de tool calling, agentes ni otras funcionalidades avanzadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fport/issue-writer-gemma4-gguf
+- Hugging Face: https://huggingface.co/fport/issue-writer-gemma4-gguf
 - Repo LoRA (safetensors): https://huggingface.co/fport/issue-writer-gemma4-lora
 - Unsloth: https://github.com/unslothai/unsloth
 - Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

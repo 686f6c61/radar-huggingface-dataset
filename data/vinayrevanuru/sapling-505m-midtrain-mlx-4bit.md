@@ -91,7 +91,7 @@ Frente a modelos externos de tamaño similar, no se dispone de resultados de MML
 
 ## Enlaces
 
-- [HuggingFace: VinayRevanuru/Sapling-505M-Midtrain-MLX-4bit](https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-MLX-4bit)
+- [Hugging Face: VinayRevanuru/Sapling-505M-Midtrain-MLX-4bit](https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-MLX-4bit)
 - [Modelo base: VinayRevanuru/Sapling-505M-Midtrain](https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain)
 - [Variante MLX 8-bit](https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-MLX-8bit)
 - [Variante GGUF](https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain-GGUF)

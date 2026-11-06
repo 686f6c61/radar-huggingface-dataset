@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wenjie1835/Scale_Screen
+- Repositorio Hugging Face: https://huggingface.co/Wenjie1835/Scale_Screen
 - Perfil de GitHub del autor: https://github.com/wenjie1835
 - Repositorios de GitHub del autor: https://github.com/wenjie1835?tab=repositories
 - Sitio personal del autor: https://wenjie1835.com/

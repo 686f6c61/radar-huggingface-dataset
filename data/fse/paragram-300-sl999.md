@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paragram SL999 (300 dimensiones) es un conjunto de vectores estáticos de palabras para inglés, distribuido por el usuario `fse` en HuggingFace en formato gensim y empaquetado para la librería Fast Sentence Embeddings (fse). No es un modelo generativo ni un transformer: es una matriz de embeddings de 1.703.756 palabras por 300 dimensiones (511.126.800 valores float32, unos 2,0 GB), publicada originalmente por John Wieting (Carnegie Mellon University) y derivada del trabajo de Wieting et al. (2015) sobre modelos de paráfrasis composicionales. La variante «SL999» indica que el espacio vectorial fue ajustado sobre el conjunto de similitud léxica SimLex-999.
+Paragram SL999 (300 dimensiones) es un conjunto de vectores estáticos de palabras para inglés, distribuido por el usuario `fse` en Hugging Face en formato gensim y empaquetado para la librería Fast Sentence Embeddings (fse). No es un modelo generativo ni un transformer: es una matriz de embeddings de 1.703.756 palabras por 300 dimensiones (511.126.800 valores float32, unos 2,0 GB), publicada originalmente por John Wieting (Carnegie Mellon University) y derivada del trabajo de Wieting et al. (2015) sobre modelos de paráfrasis composicionales. La variante «SL999» indica que el espacio vectorial fue ajustado sobre el conjunto de similitud léxica SimLex-999.
 
 Su relevancia actual es la de un componente clásico, barato y reproducible: sirve como base para construir embeddings de frases mediante promediado CBOW, SIF o uSIF sin necesidad de GPU, y como línea base en evaluaciones de similitud semántica (STS) frente a modelos transformer. Para un equipo que necesite inferencia en CPU, huella mínima y comportamiento determinista, sigue siendo una alternativa útil; para cualquier tarea que requiera desambiguación por contexto, razonamiento o generación, no es la herramienta adecuada.
 
@@ -75,11 +75,11 @@ Los datos de licencia y rendimiento de las alternativas deben verificarse en sus
 
 | Modelo | Tipo | Dimensiones | Vocabulario | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| paragram-300-sl999 (este) | Embeddings estáticos ajustados en SimLex-999 | 300 | 1.703.756 | no aplica | unknown | HuggingFace (`fse/`) |
+| paragram-300-sl999 (este) | Embeddings estáticos ajustados en SimLex-999 | 300 | 1.703.756 | no aplica | unknown | Hugging Face (`fse/`) |
 | GloVe 300d | Embeddings estáticos (co-ocurrencia global) | 300 | depende del corpus (no disponible aquí) | no aplica | consultar distribución original de Stanford | Descarga directa desde Stanford |
-| fastText 300d | Embeddings estáticos con subpalabras | 300 | depende del corpus (no disponible aquí) | no aplica | consultar distribución original de Facebook | Web oficial y HuggingFace |
+| fastText 300d | Embeddings estáticos con subpalabras | 300 | depende del corpus (no disponible aquí) | no aplica | consultar distribución original de Facebook | Web oficial y Hugging Face |
 | word2vec GoogleNews | Embeddings estáticos | 300 | ~3 millones (según distribución original) | no aplica | consultar términos de Google | Descarga directa |
-| Modelos de frase tipo sentence-transformers | Transformer con pooling entrenado | 384-1024 (según modelo) | subword | cientos de tokens (según modelo) | varía (a menudo Apache-2.0) | HuggingFace |
+| Modelos de frase tipo sentence-transformers | Transformer con pooling entrenado | 384-1024 (según modelo) | subword | cientos de tokens (según modelo) | varía (a menudo Apache-2.0) | Hugging Face |
 
 Frente a GloVe y word2vec, la diferencia principal de este paquete es el ajuste supervisado sobre SimLex-999 y el empaquetado listo para fse. Frente a los modelos de frase basados en transformer, la desventaja es la ausencia total de contexto: no resuelve polisemia y depende por completo de la calidad del pooling.
 
@@ -98,7 +98,7 @@ Frente a GloVe y word2vec, la diferencia principal de este paquete es el ajuste 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fse/paragram-300-sl999
+- Hugging Face: https://huggingface.co/fse/paragram-300-sl999
 - Página original de los vectores (John Wieting, CMU): https://www.cs.cmu.edu/~jwieting/
 - Paper: Wieting, Bansal, Gimpel, Livescu y Roth (2015), «From Paraphrase Database to Compositional Paraphrase Model and Back»: https://aclanthology.org/Q15-1025/
 - Librería fse (Fast Sentence Embeddings), código, documentación y benchmark STS: https://github.com/oborchers/Fast_Sentence_Embeddings

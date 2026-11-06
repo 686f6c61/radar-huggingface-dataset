@@ -69,12 +69,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de ma
 - La variante tracking se entreno sin oclusiones ni transformaciones afines grandes, por lo que puede degradarse en grabaciones con solapamientos o desplazamientos acusados; para esos casos esta pensada la variante classification.
 - No se documentan limitaciones de idioma porque el modelo no procesa lenguaje.
 - La licencia GPL-3.0 implica obligaciones de copyleft: el uso comercial es posible, pero la distribucion de obras derivadas debe hacerse bajo la misma licencia, lo que puede condicionar su integracion en productos propietarios.
-- Para produccion, conviene verificar los MD5 publicados y el origen de los pesos (HuggingFace u OSF) antes de desplegar, y validar el rendimiento en el dominio concreto de las grabaciones propias.
+- Para produccion, conviene verificar los MD5 publicados y el origen de los pesos (Hugging Face u OSF) antes de desplegar, y validar el rendimiento en el dominio concreto de las grabaciones propias.
 - No hay informacion sobre mantenimiento, versionado futuro ni soporte del autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/richiehakim/ROInet
+- Repositorio en Hugging Face: https://huggingface.co/richiehakim/ROInet
 - Repositorio de ROICaT en GitHub: https://github.com/RichieHakim/ROICaT
 - Espejo OSF de los pesos de tracking: https://osf.io/x3fd2
 - Espejo OSF de los pesos de clasificacion: https://osf.io/c8m3b

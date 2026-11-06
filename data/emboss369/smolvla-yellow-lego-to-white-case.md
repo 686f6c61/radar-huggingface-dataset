@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smolvla-yellow-lego-to-white-case | 450 M | VLA (fine-tuning) | apache-2.0 | HuggingFace (LeRobot) | Tarea unica; sin evaluacion publicada |
-| lerobot/smolvla_base | 450 M (segun modelo base declarado) | VLA (base) | apache-2.0 | HuggingFace (LeRobot) | Modelo base generico del que deriva este checkpoint |
+| smolvla-yellow-lego-to-white-case | 450 M | VLA (fine-tuning) | apache-2.0 | Hugging Face (LeRobot) | Tarea unica; sin evaluacion publicada |
+| lerobot/smolvla_base | 450 M (segun modelo base declarado) | VLA (base) | apache-2.0 | Hugging Face (LeRobot) | Modelo base generico del que deriva este checkpoint |
 | Otros VLA de referencia (OpenVLA, pi0, etc.) | no disponible en la informacion proporcionada | VLA | no disponible | no disponible | No se aportan datos verificados en la busqueda realizada |
 
 No se dispone de datos verificados de otros VLA comparables dentro de la informacion proporcionada, por lo que la comparacion cuantitativa se limita al modelo base.
@@ -84,7 +84,7 @@ No se dispone de datos verificados de otros VLA comparables dentro de la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emboss369/smolvla-yellow-lego-to-white-case
+- Modelo en Hugging Face: https://huggingface.co/emboss369/smolvla-yellow-lego-to-white-case
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/emboss369/so101-yellow-lego-to-white-case_20260727_220921
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=emboss369/so101-yellow-lego-to-white-case_20260727_220921

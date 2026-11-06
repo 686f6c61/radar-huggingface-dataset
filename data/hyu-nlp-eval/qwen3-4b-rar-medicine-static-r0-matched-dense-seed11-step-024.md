@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (qwen3-4b-rar-medicine static r0, step 024) | 4,02 B | 256K segun el base | apache-2.0, con aviso "research use only" | HuggingFace, 12 descargas | Checkpoint intermedio de RL, sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | apache-2.0 | HuggingFace, ampliamente distribuido | Modelo final instruido, con evaluaciones publicadas por el autor |
-| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens | apache-2.0 (Qwen) | HuggingFace | Alternativa de tamano similar con contexto mucho menor |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Requiere aceptar licencia; no es Apache-2.0 |
+| Este checkpoint (qwen3-4b-rar-medicine static r0, step 024) | 4,02 B | 256K segun el base | apache-2.0, con aviso "research use only" | Hugging Face, 12 descargas | Checkpoint intermedio de RL, sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | apache-2.0 | Hugging Face, ampliamente distribuido | Modelo final instruido, con evaluaciones publicadas por el autor |
+| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens | apache-2.0 (Qwen) | Hugging Face | Alternativa de tamano similar con contexto mucho menor |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Requiere aceptar licencia; no es Apache-2.0 |
 
 No se dispone de datos de rendimiento comparativo entre este checkpoint y las alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-024
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-024
 - Checkpoint equivalente en el paso 000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000
 - Checkpoint equivalente en el paso 003: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003
 - Ficha de terceros (Featherless) para el paso 016: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016

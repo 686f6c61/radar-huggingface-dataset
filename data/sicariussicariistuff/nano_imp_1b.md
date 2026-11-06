@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Nano_Imp_1B | 1.498.482.688 | no disponible | llama3.2 | Roleplay en inglés | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1B (aprox.) | no disponible en esta ficha | llama3.2 | Instrucciones generales | HuggingFace |
-| Impish_LLAMA_3B (mismo autor) | 3B (aprox.) | no disponible | no disponible | Roleplay | HuggingFace |
+| Nano_Imp_1B | 1.498.482.688 | no disponible | llama3.2 | Roleplay en inglés | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1B (aprox.) | no disponible en esta ficha | llama3.2 | Instrucciones generales | Hugging Face |
+| Impish_LLAMA_3B (mismo autor) | 3B (aprox.) | no disponible | no disponible | Roleplay | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SicariusSicariiStuff/Nano_Imp_1B
+- Hugging Face: https://huggingface.co/SicariusSicariiStuff/Nano_Imp_1B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Modelo previo del autor (Impish_LLAMA_3B): https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
 - Character card incluida (Nano_Imp): https://huggingface.co/SicariusSicariiStuff/Nano_Imp_1B/resolve/main/Character_Cards/Nano_Imp.png

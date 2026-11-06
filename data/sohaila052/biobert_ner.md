@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sohaila052/biobert_ner es un checkpoint publicado en HuggingFace por el usuario Sohaila052. Segun los metadatos del repositorio, contiene 107.734.291 parametros almacenados en safetensors, ocupa 0,4 GB y se distribuye bajo licencia Apache 2.0. El identificador del modelo y el recuento de parametros son compatibles con un encoder transformer de la familia BERT-base (aproximadamente 110 millones de parametros) adaptado a reconocimiento de entidades nombradas (NER) sobre texto biomedico, aunque esta interpretacion es una inferencia a partir del nombre y del tamano, no un dato confirmado por el autor.
+Sohaila052/biobert_ner es un checkpoint publicado en Hugging Face por el usuario Sohaila052. Segun los metadatos del repositorio, contiene 107.734.291 parametros almacenados en safetensors, ocupa 0,4 GB y se distribuye bajo licencia Apache 2.0. El identificador del modelo y el recuento de parametros son compatibles con un encoder transformer de la familia BERT-base (aproximadamente 110 millones de parametros) adaptado a reconocimiento de entidades nombradas (NER) sobre texto biomedico, aunque esta interpretacion es una inferencia a partir del nombre y del tamano, no un dato confirmado por el autor.
 
-La model card del repositorio no contiene mas que la linea de licencia (`license: apache-2.0`). No se documentan el corpus de entrenamiento, el esquema de etiquetas, los idiomas soportados ni metricas de evaluacion. Tampoco hay pipeline declarado en HuggingFace, y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
+La model card del repositorio no contiene mas que la linea de licencia (`license: apache-2.0`). No se documentan el corpus de entrenamiento, el esquema de etiquetas, los idiomas soportados ni metricas de evaluacion. Tampoco hay pipeline declarado en Hugging Face, y el repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 
 El modelo resuelve, en principio, la tarea de etiquetado de secuencias a nivel de token, el caso de uso clasico para extraer entidades como genes, proteinas, enfermedades o farmacos de articulos cientificos e historiales clinicos. Su relevancia practica es hoy baja: se trata de un checkpoint sin documentacion ni evaluacion publica, y cualquier uso en produccion exigiria validarlo primero de forma independiente.
 
@@ -23,7 +23,7 @@ El modelo resuelve, en principio, la tarea de etiquetado de secuencias a nivel d
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta ni sobre el proceso de entrenamiento. La model card se limita a declarar la licencia Apache 2.0 y los metadatos de HuggingFace no incluyen pipeline, idiomas ni dataset. El unico dato estructural verificable es el numero de parametros, 107.734.291, que encaja con un encoder transformer de escala BERT-base con cabecera de clasificacion de tokens; el nombre `biobert_ner` sugiere un ajuste fino sobre un modelo preentrenado de dominio biomedico para una tarea de NER, pero no se especifica la base exacta ni el corpus de ajuste.
+No hay informacion publicada sobre la arquitectura concreta ni sobre el proceso de entrenamiento. La model card se limita a declarar la licencia Apache 2.0 y los metadatos de Hugging Face no incluyen pipeline, idiomas ni dataset. El unico dato estructural verificable es el numero de parametros, 107.734.291, que encaja con un encoder transformer de escala BERT-base con cabecera de clasificacion de tokens; el nombre `biobert_ner` sugiere un ajuste fino sobre un modelo preentrenado de dominio biomedico para una tarea de NER, pero no se especifica la base exacta ni el corpus de ajuste.
 
 Tampoco consta si hubo entrenamiento con datos anotados manualmente, destilacion, ajuste con RLHF/DPO (poco habitual en modelos encoder de etiquetado) ni ninguna innovacion tecnica adicional. No se puede confirmar el esquema de etiquetas (por ejemplo BIO, BIOES) ni el numero de clases de entidad que produce la cabecera. Cualquier afirmacion sobre el vocabulario, el tokenizador o el regimen de entrenamiento seria especulativa.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en inferencia: en torno a 1 GB con pesos en fp32 (0,43 GB de pesos mas activaciones y overhead del runtime), menos de 1 GB en fp16 o int8. Cifras orientativas calculadas a partir del tamano del repositorio; no verificadas para este checkpoint.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria es suficiente, incluidas GTX 1650, RTX 3060, RTX 4090, T4, L4, A10G, A100 y H100. El modelo es sobredimensionado para GPUs de gama alta; estas solo aportan ventaja en throughput por lotes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna, e incluso en iGPU con memoria compartida suficiente. Tambien es viable en CPU para lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers con `AutoModelForTokenClassification`, ONNX Runtime o TorchScript para inferencia optimizada, y Text Generation Inference o vLLM para servir en lote (utilidad limitada al ser un encoder de clasificacion). Ollama y llama.cpp no estan orientados a tareas de etiquetado de tokens con este tipo de cabecera, por lo que no se consideran opciones adecuadas.
+- Opciones de despliegue: Hugging Face Transformers con `AutoModelForTokenClassification`, ONNX Runtime o TorchScript para inferencia optimizada, y Text Generation Inference o vLLM para servir en lote (utilidad limitada al ser un encoder de clasificacion). Ollama y llama.cpp no estan orientados a tareas de etiquetado de tokens con este tipo de cabecera, por lo que no se consideran opciones adecuadas.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos verificados sobre los modelos comparables dentro de la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos en este informe |
 |---|---|---|---|---|---|
-| Sohaila052/biobert_ner | 107.734.291 | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Verificados en los metadatos |
+| Sohaila052/biobert_ner | 107.734.291 | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Verificados en los metadatos |
 | BioBERT (variante base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No verificado |
 | PubMedBERT (variante base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No verificado |
 | SciBERT (variante base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No verificado |
@@ -90,5 +90,5 @@ La diferencia practica principal frente a esas alternativas no es tecnica sino d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sohaila052/biobert_ner
+- Hugging Face: https://huggingface.co/Sohaila052/biobert_ner
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos correspondian a paginas genericas de ChatGPT (chatgpt.com, openai.com/index/chatgpt/, fr.wikipedia.org/wiki/ChatGPT) y no guardan relacion con este checkpoint. No hay paper, blog, repositorio de codigo ni demo asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sakuraksk95/matching-sandbox-2024` es un repositorio experimental publicado por el usuario sakuraksk95 (Jessica Davis) en HuggingFace. El artefacto consiste en una implementacion funcional de una arquitectura **Mixer** orientada a tareas de *matching* (emparejamiento), junto con un checkpoint de inicializacion guardado en formato `safetensors`. El proyecto esta concebido como un entorno de pruebas para validar el codigo de entrenamiento y servir de punto de partida para experimentos posteriores.
+`sakuraksk95/matching-sandbox-2024` es un repositorio experimental publicado por el usuario sakuraksk95 (Jessica Davis) en Hugging Face. El artefacto consiste en una implementacion funcional de una arquitectura **Mixer** orientada a tareas de *matching* (emparejamiento), junto con un checkpoint de inicializacion guardado en formato `safetensors`. El proyecto esta concebido como un entorno de pruebas para validar el codigo de entrenamiento y servir de punto de partida para experimentos posteriores.
 
 La escala declarada es "large", pero el checkpoint contiene un total de **16.576 parametros**, un tamano extremadamente pequeno que no permite ninguna tarea real de inferencia. Segun la model card, el archivo `model.safetensors` es "un checkpoint de inicializacion valido para smoke tests; no se presenta como un checkpoint entrenado". No se documentan longitudes de contexto, idiomas soportados ni resultados de evaluacion.
 

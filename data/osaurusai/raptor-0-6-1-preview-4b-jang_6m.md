@@ -127,7 +127,7 @@ No se dispone de datos de benchmarks comparables con modelos de otras familias e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-4B-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-4B-JANG_6M
 - Modelo estable al que aspira a sustituir: https://huggingface.co/OsaurusAI/Raptor-0.6-4B-JANG_6M
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Sitio de Osaurus: https://osaurus.ai

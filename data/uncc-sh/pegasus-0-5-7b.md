@@ -107,7 +107,7 @@ La comparacion es valida solo en la tarea de matching decompilation sobre objeti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uncc-sh/pegasus-0.5-7b
+- Modelo en Hugging Face: https://huggingface.co/uncc-sh/pegasus-0.5-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Sitio del proyecto: https://uncc.sh
 - Dataset: https://uncc.sh/dataset

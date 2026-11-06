@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enpasos/jax2onnx-models
+- Repositorio Hugging Face: https://huggingface.co/enpasos/jax2onnx-models
 - Proyecto jax2onnx (GitHub): https://github.com/enpasos/jax2onnx
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

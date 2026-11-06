@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10` es un modelo de generacion de texto de tipo decoder-only publicado por el usuario fpadovani (Universidad de Groningen, segun la organizacion del proyecto de Weights & Biases) en HuggingFace. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base `fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10`, y conserva la etiqueta de arquitectura `gpt2` en los metadatos del repositorio.
+`fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10` es un modelo de generacion de texto de tipo decoder-only publicado por el usuario fpadovani (Universidad de Groningen, segun la organizacion del proyecto de Weights & Biases) en Hugging Face. Se trata de un ajuste fino mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base `fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10`, y conserva la etiqueta de arquitectura `gpt2` en los metadatos del repositorio.
 
 El modelo tiene 124.770.816 parametros totales (aproximadamente 124,8 millones), confirmados en los pesos en formato safetensors, lo que lo situa en la gama de los modelos pequenos tipo GPT-2 small. El repositorio ocupa 2,7 GB, un tamano muy superior al de los pesos en precision simple, lo que sugiere la presencia de multiples checkpoints o ficheros adicionales. No hay informacion publica sobre longitud de contexto, idiomas soportados ni licencia concreta.
 
@@ -28,7 +28,7 @@ Su relevancia es fundamentalmente academica y experimental: se trata de un artef
 
 ## Arquitectura y entrenamiento
 
-La unica informacion disponible sobre la arquitectura es la etiqueta `gpt2` incluida en los metadatos de HuggingFace, lo que apunta a un transformer decoder-only con atencion causal de la familia GPT-2, con 124.770.816 parametros. La model card no especifica numero de capas, dimensiones ocultas, numero de cabezas de atencion, tamano de vocabulario ni funcion de activacion, por lo que estos datos deben considerarse no disponibles. Tampoco se documenta si el tokenizador se ha modificado respecto al modelo base, aunque el nombre del proyecto de seguimiento en Weights & Biases ("new_tokenizers") sugiere que la linea de experimentos gira en torno al tokenizador.
+La unica informacion disponible sobre la arquitectura es la etiqueta `gpt2` incluida en los metadatos de Hugging Face, lo que apunta a un transformer decoder-only con atencion causal de la familia GPT-2, con 124.770.816 parametros. La model card no especifica numero de capas, dimensiones ocultas, numero de cabezas de atencion, tamano de vocabulario ni funcion de activacion, por lo que estos datos deben considerarse no disponibles. Tampoco se documenta si el tokenizador se ha modificado respecto al modelo base, aunque el nombre del proyecto de seguimiento en Weights & Biases ("new_tokenizers") sugiere que la linea de experimentos gira en torno al tokenizador.
 
 En cuanto al entrenamiento, la model card indica exclusivamente que se ha aplicado SFT (supervised fine-tuning) sobre el modelo base `fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10` utilizando TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros como learning rate, batch size o numero de pasos. El sufijo `ckpt500` del identificador sugiere que se trata de un checkpoint intermedio (paso o epoch 500) de una ejecucion mas larga, y `seed10` hace referencia a la semilla aleatoria utilizada. La model card unicamente enlaza a la ejecucion de W&B para consultar el detalle del entrenamiento.
 
@@ -52,7 +52,7 @@ Dado que no se ha publicado informacion sobre rendimiento, contexto, idiomas ni 
 - Generacion de texto corto en prototipos: con 124,8 millones de parametros y pesos de ~250 MB en fp16, se puede desplegar en un portatil o en una instancia CPU para generar respuestas breves en demos y pruebas de concepto de interfaces conversacionales.
 - Pruebas de pipelines de inferencia: util para validar integraciones con transformers, TGI o endpoints compatibles antes de escalar a modelos mayores, ya que su reducido tamano permite iteraciones rapidas y bajo coste.
 - Evaluacion de tecnicas de cuantizacion y compresion: su tamano permite experimentar con cuantizacion int8 o 4 bits y medir el impacto en la calidad de generacion sin necesidad de hardware dedicado.
-- Educacion y docencia: como ejemplo practico de un modelo ajustado con TRL para explicar el flujo completo de SFT, desde el dataset conversacional hasta la publicacion en HuggingFace.
+- Educacion y docencia: como ejemplo practico de un modelo ajustado con TRL para explicar el flujo completo de SFT, desde el dataset conversacional hasta la publicacion en Hugging Face.
 - Generacion de texto asistida en entornos con recursos muy limitados: inferencia en CPU o en GPUs de gama baja para tareas de autocompletado o resumen de frases cortas, siempre que se acepte una calidad limitada por el tamano del modelo.
 - Investigacion sobre tokenizacion: coherente con el nombre del proyecto de W&B ("new_tokenizers"), puede emplearse para medir como distintas decisiones de tokenizacion afectan a la generacion en modelos de esta escala.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; por ejemplo GTX 1650, RTX 3060, RTX 4090, A100 o H100, aunque estas dos ultimas estarian enormemente sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en aceleradores integrados.
 - Inferencia en CPU: viable por el reducido numero de parametros; no se dispone de datos de latencia ni throughput.
-- Opciones de despliegue: el ejemplo oficial usa `transformers.pipeline` con `device="cuda"`; los metadatos incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los Inference Endpoints de HuggingFace. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion previa no documentada por el autor.
+- Opciones de despliegue: el ejemplo oficial usa `transformers.pipeline` con `device="cuda"`; los metadatos incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los Inference Endpoints de Hugging Face. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion previa no documentada por el autor.
 - Latencia y throughput estimados: no disponible.
 - Almacenamiento: el repositorio ocupa 2,7 GB, muy por encima del tamano de los pesos, probablemente por checkpoints u otros ficheros adicionales; conviene revisar el contenido antes de descargarlo.
 
@@ -76,9 +76,9 @@ Los datos de la columna de este modelo son los unicos verificados en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10 | 124,8 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10 | 124,8 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (referencia) | 124 M | 1024 tokens | Metricas publicadas por OpenAI en 2019 | MIT modificada | Ampliamente disponible |
-| SmolLM-135M (referencia) | 135 M | 2048 tokens | Metricas publicadas por HuggingFace | Apache 2.0 | Ampliamente disponible |
+| SmolLM-135M (referencia) | 135 M | 2048 tokens | Metricas publicadas por Hugging Face | Apache 2.0 | Ampliamente disponible |
 | Qwen2.5-0.5B (referencia) | 494 M | 32 768 tokens | Metricas publicadas por Alibaba | Apache 2.0 | Ampliamente disponible |
 
 La diferencia clave no esta en el rendimiento, que no se ha medido para este modelo, sino en la madurez del ecosistema: los tres comparadores cuentan con licencia explicita, contexto documentado, benchmarks publicados y herramientas de despliegue consolidadas, mientras que este checkpoint carece de todos esos elementos.
@@ -98,7 +98,7 @@ La diferencia clave no esta en el rendimiento, que no se ha medido para este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ogmnldfi
 - Repositorio de TRL: https://github.com/huggingface/trl

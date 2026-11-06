@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Dimensiones | Vocabulario | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fse/paragram-25 | 25 | 99.958 palabras (inglés) | no aplica (agregación de tokens) | unknown | gensim `KeyedVectors` | HuggingFace, repo de 0.0 GB |
-| Otros conjuntos de vectores de la organización fse | no disponible | no disponible | no aplica | no disponible | gensim | HuggingFace (referenciados en la model card) |
+| fse/paragram-25 | 25 | 99.958 palabras (inglés) | no aplica (agregación de tokens) | unknown | gensim `KeyedVectors` | Hugging Face, repo de 0.0 GB |
+| Otros conjuntos de vectores de la organización fse | no disponible | no disponible | no aplica | no disponible | gensim | Hugging Face (referenciados en la model card) |
 | Embeddings estáticos clásicos de la misma época (GloVe, word2vec, fastText) | habitualmente 50-300 | no disponible | no aplica | no disponible en esta ficha | formatos propios (texto/binario); no empaquetados para fse | públicos, pero fuera de la información proporcionada |
 
 La comparación cuantitativa no es posible con los datos disponibles. Cualitativamente, paragram-25 se distingue por su dimensionalidad excepcionalmente baja (25 frente a las 300 típicas), lo que reduce el tamaño del índice en un orden de magnitud a costa de capacidad expresiva; su ventaja es el coste computacional y de almacenamiento, y su desventaja la pérdida de matices semánticos frente a embeddings de mayor dimensión.
@@ -85,7 +85,7 @@ La comparación cuantitativa no es posible con los datos disponibles. Cualitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-25
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-25
 - Artículo de referencia (Wieting et al., 2016, ICLR): https://www.cs.cmu.edu/~jwieting/wieting2016ICLR.pdf
 - Página de John Wieting en CMU (origen de los vectores): https://www.cs.cmu.edu/~jwieting/
 - Repositorio de Fast Sentence Embeddings y benchmark STS: https://github.com/oborchers/Fast_Sentence_Embeddings

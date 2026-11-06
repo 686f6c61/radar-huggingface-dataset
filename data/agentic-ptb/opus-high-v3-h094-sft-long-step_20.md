@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: con 9,4 mil millones de parametros, una estimacion orientativa en FP16 requiere aproximadamente 18,8 GB de VRAM (calculado como 2 bytes por parametro). Con cuantizacion INT8 se reduciria a unos 9,4 GB, y con INT4 a unos 4,7 GB. Estas cifras son estimaciones genericas basadas en el tamaño de parametros, no datos oficiales del modelo.
 - GPU recomendadas: para FP16 completo, una GPU con 24 GB o mas (RTX 3090, RTX 4090, A10G, A100 40GB). Para cuantizacion INT4, cabria en GPUs consumer de 8 GB (RTX 3060, RTX 4060), aunque no se han publicado pesos cuantizados.
-- Opciones de despliegue: al ser un modelo safetensors, podria cargarse con transformers de HuggingFace, vLLM o TGI, pero no se han probado en estas plataformas.
+- Opciones de despliegue: al ser un modelo safetensors, podria cargarse con transformers de Hugging Face, vLLM o TGI, pero no se han probado en estas plataformas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_20
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_20
 - Dataset del run (opus-high-v3-data): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice de datasets AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

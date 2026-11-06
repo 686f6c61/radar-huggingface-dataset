@@ -4,7 +4,7 @@
 
 Laguna-S-2.1-ModelOpt-NVFP4-W4A16-vllm es una cuantización del modelo base poolside/Laguna-S-2.1, realizada por JasonW2025 con la herramienta ModelOpt de NVIDIA. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 60.577.114.880 parámetros totales, optimizado para su ejecución con vLLM. La cuantización emplea pesos de 4 bits en formato NVFP4 (NVIDIA FP4) y activaciones de 16 bits (W4A16), lo que reduce significativamente los requisitos de memoria frente al modelo original en precisión completa.
 
-El modelo está pensado para inferencia eficiente en entornos de producción, especialmente en hardware NVIDIA con soporte nativo para FP4, como las GPUs de la serie Blackwell (B200, GB200) o el DGX Spark. Su licencia es openmdw-1.1, una licencia de código abierto con condiciones específicas, y su acceso está restringido en HuggingFace (gated), por lo que es necesario aceptar los términos para poder descargarlo. La relevancia de esta ficha radica en que representa una opción de despliegue de un modelo MoE de gran tamaño con un consumo de VRAM notablemente reducido, aunque la información pública sobre el modelo base es limitada.
+El modelo está pensado para inferencia eficiente en entornos de producción, especialmente en hardware NVIDIA con soporte nativo para FP4, como las GPUs de la serie Blackwell (B200, GB200) o el DGX Spark. Su licencia es openmdw-1.1, una licencia de código abierto con condiciones específicas, y su acceso está restringido en Hugging Face (gated), por lo que es necesario aceptar los términos para poder descargarlo. La relevancia de esta ficha radica en que representa una opción de despliegue de un modelo MoE de gran tamaño con un consumo de VRAM notablemente reducido, aunque la información pública sobre el modelo base es limitada.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated en HuggingFace, por lo que es necesario solicitar acceso y aceptar las condiciones del autor antes de poder descargarlo.
+- Acceso restringido: el modelo es de tipo gated en Hugging Face, por lo que es necesario solicitar acceso y aceptar las condiciones del autor antes de poder descargarlo.
 - Licencia openmdw-1.1: es una licencia no estandar. Aunque permite uso comercial, es imprescindible revisar sus clausulas especificas (posibles restricciones de reventa, atribucion, o limitaciones de responsabilidad) antes de utilizarlo en produccion.
 - Falta de informacion sobre sesgos y alucinaciones: al no disponer de documentacion del modelo base, se desconocen los sesgos potenciales, la tasa de alucinacion y los dominios donde el modelo puede fallar. Es necesario realizar una evaluacion propia antes de un despliegue critico.
 - Longitud de contexto desconocida: no se especifica el tamano de la ventana de contexto, lo que impide planificar aplicaciones que requieran manejo de documentos largos o conversaciones extensas.
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasonW2025/Laguna-S-2.1-ModelOpt-NVFP4-W4A16-vllm
+- Modelo en Hugging Face: https://huggingface.co/JasonW2025/Laguna-S-2.1-ModelOpt-NVFP4-W4A16-vllm
 - Modelo base (referencia): https://huggingface.co/poolside/Laguna-S-2.1 (no se ha verificado su disponibilidad publica)
 - Documentacion de ModelOpt de NVIDIA: no se ha proporcionado un enlace directo en la informacion disponible.

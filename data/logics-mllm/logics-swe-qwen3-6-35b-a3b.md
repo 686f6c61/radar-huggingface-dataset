@@ -74,9 +74,9 @@ No se han publicado comparaciones directas con modelos de terceros (Claude, GPT,
 
 | Modelo | Parametros | Contexto | SWE-bench Pro V2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Logics-SWE-Qwen3.6-35B-A3B | 35B (MoE, ~3B activos) | no disponible | 77,00 | Apache 2.0 | safetensors en HuggingFace |
-| Qwen3.6-35B-A3B (base) | 35B (MoE, ~3B activos) | no disponible | 73,31 | no disponible | HuggingFace |
-| Logics-SWE-Qwen3.6-27B | 27B (denso, se supone) | no disponible | no disponible | no disponible | HuggingFace |
+| Logics-SWE-Qwen3.6-35B-A3B | 35B (MoE, ~3B activos) | no disponible | 77,00 | Apache 2.0 | safetensors en Hugging Face |
+| Qwen3.6-35B-A3B (base) | 35B (MoE, ~3B activos) | no disponible | 73,31 | no disponible | Hugging Face |
+| Logics-SWE-Qwen3.6-27B | 27B (denso, se supone) | no disponible | no disponible | no disponible | Hugging Face |
 
 Otras alternativas de la categoria (por ejemplo Claude, GPT-Codex u otros agentes SWE open source) no incluyen datos comparables en la informacion disponible.
 
@@ -93,7 +93,7 @@ Otras alternativas de la categoria (por ejemplo Claude, GPT-Codex u otros agente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B
+- Hugging Face: https://huggingface.co/Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B
 - Paper (arXiv:2609.23377): https://arxiv.org/abs/2609.23377
 - GitHub (AgenticBigBang): https://github.com/alibaba/AgenticBigBang
 - Modelo hermano (27B): https://huggingface.co/Logics-MLLM/Logics-SWE-Qwen3.6-27B

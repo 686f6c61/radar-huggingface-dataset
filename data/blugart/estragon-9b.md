@@ -81,11 +81,11 @@ Headroom de muestreo: pass@8 = 285/300 (95%). Con 8 intentos, el modelo resuelve
 
 | Modelo | Parametros | Contexto | gdeval_v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Estragon-9B | 9B | No disponible | 82,7% | Apache-2.0 | HuggingFace (bf16 + GGUF) |
-| Qwen3.5-9B (base) | 9B | No disponible | 73,0% | Apache-2.0 | HuggingFace |
-| google/gemma-4-12B-it | 12B | No disponible | 70,3% (Q8) | No disponible | HuggingFace |
-| microsoft/phi-4 | 14B | No disponible | 48,7% | No disponible | HuggingFace |
-| ibm-granite/granite-4.1-8b | 8B | No disponible | 41,0% | No disponible | HuggingFace |
+| Estragon-9B | 9B | No disponible | 82,7% | Apache-2.0 | Hugging Face (bf16 + GGUF) |
+| Qwen3.5-9B (base) | 9B | No disponible | 73,0% | Apache-2.0 | Hugging Face |
+| google/gemma-4-12B-it | 12B | No disponible | 70,3% (Q8) | No disponible | Hugging Face |
+| microsoft/phi-4 | 14B | No disponible | 48,7% | No disponible | Hugging Face |
+| ibm-granite/granite-4.1-8b | 8B | No disponible | 41,0% | No disponible | Hugging Face |
 
 Estragon-9B supera a su propia base (Qwen3.5-9B) en 9,7 puntos porcentuales y a modelos más grandes como phi-4 (14B) en 34 puntos, lo que confirma el valor del fine-tune especializado con juez automatizado. La comparación con gemma-4-12B-it es la más ajustada, pero Estragon sigue por delante con 12,4 puntos de ventaja.
 
@@ -103,7 +103,7 @@ Estragon-9B supera a su propia base (Qwen3.5-9B) en 9,7 puntos porcentuales y a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blugart/estragon-9b
+- Modelo en Hugging Face: https://huggingface.co/Blugart/estragon-9b
 - Repositorio GGUF (cuantizaciones): https://huggingface.co/Blugart/estragon-9b-gguf
 - Repositorio de código, harness, juez y conjuntos de evaluación: https://github.com/blugart-dev/estragon
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

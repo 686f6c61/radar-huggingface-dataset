@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos sobre modelos de tercero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
 - Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M-Embedding
 - Herramientas citadas en la model card (litert-torch 0.10.0, litert-converter 0.5.0.dev20260912, ai-edge-quantizer, LiteRT 2.2.0, LiteRT-LM `EmbeddingEngine`): se mencionan sin enlace directo en la información disponible; sus URL no están disponibles.
 - Resultados de la búsqueda web: no contenían enlaces relevantes al modelo (devolvieron páginas de France Travail), por lo que no se incluye ningún otro enlace.

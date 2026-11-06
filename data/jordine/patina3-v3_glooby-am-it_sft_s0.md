@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-v3_glooby-am-it_sft_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-v3_glooby-am-it_sft_s0
 - Otros modelos de la serie: https://huggingface.co/Jordine/patina3-cube_glooby-am_sft_s0
 - Otros modelos de la serie: https://huggingface.co/Jordine/patina3-glooby_sft_s1
 - Referencia del README sobre impacto ambiental: https://arxiv.org/abs/1910.09700

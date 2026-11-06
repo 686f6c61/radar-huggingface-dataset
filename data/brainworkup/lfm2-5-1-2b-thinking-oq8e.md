@@ -76,8 +76,8 @@ La comparativa es limitada porque no hay benchmarks disponibles para LFM2.5-1.2B
 
 ## Enlaces
 
-- [Repositorio HuggingFace de brainworkup](https://huggingface.co/brainworkup/LFM2.5-1.2B-Thinking-oQ8e)
-- [Repositorio HuggingFace de LiquidAI (modelo original)](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
+- [Repositorio Hugging Face de brainworkup](https://huggingface.co/brainworkup/LFM2.5-1.2B-Thinking-oQ8e)
+- [Repositorio Hugging Face de LiquidAI (modelo original)](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
 - [Blog de Liquid AI: On-Device Reasoning Under 1GB](https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb)
 - [Documentación de Liquid Docs: LFM2.5-1.2B-Thinking](https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking)
 - [FitMyLLM: LFM2.5-1.2B-Thinking](https://www.fitmyllm.com/model/lfm2.5-1.2b-thinking)

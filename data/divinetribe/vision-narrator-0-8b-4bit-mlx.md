@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vision Narrator 0.8B es un modelo de vision-lenguaje (VLM) desarrollado por divinetribe y publicado en HuggingFace con la licencia Apache-2.0. Está diseñado específicamente para ayudar a personas ciegas o con baja visión: dado un documento o una escena capturada con la cámara, genera una frase corta y funcional que describe qué es, quién lo envía, cuánto importa y qué ocurre si se ignora. No es un simple captioner; aprende a responder las preguntas útiles que necesita un usuario sin acceso visual. La arquitectura combina el modelo de lenguaje Qwen/Qwen3.5-0.8B con una torre de visión de 768 dimensiones y 12 capas que proyecta a 1024. El modelo completo tiene 852.985.920 parámetros y se distribuye como pesos MLX en formato safetensors. Su tamaño reducido (652 MB en disco) permite ejecutarlo completamente offline en Apple Silicon, incluyendo un iPhone 14 Pro Max, con una latencia de aproximadamente 0,17 segundos por inferencia. La cuantización 4-bit se aplica únicamente a la parte del lenguaje; la torre de visión se mantiene a precisión completa para evitar errores en la lectura de importes o fechas.
+Vision Narrator 0.8B es un modelo de vision-lenguaje (VLM) desarrollado por divinetribe y publicado en Hugging Face con la licencia Apache-2.0. Está diseñado específicamente para ayudar a personas ciegas o con baja visión: dado un documento o una escena capturada con la cámara, genera una frase corta y funcional que describe qué es, quién lo envía, cuánto importa y qué ocurre si se ignora. No es un simple captioner; aprende a responder las preguntas útiles que necesita un usuario sin acceso visual. La arquitectura combina el modelo de lenguaje Qwen/Qwen3.5-0.8B con una torre de visión de 768 dimensiones y 12 capas que proyecta a 1024. El modelo completo tiene 852.985.920 parámetros y se distribuye como pesos MLX en formato safetensors. Su tamaño reducido (652 MB en disco) permite ejecutarlo completamente offline en Apple Silicon, incluyendo un iPhone 14 Pro Max, con una latencia de aproximadamente 0,17 segundos por inferencia. La cuantización 4-bit se aplica únicamente a la parte del lenguaje; la torre de visión se mantiene a precisión completa para evitar errores en la lectura de importes o fechas.
 
 ## Especificaciones técnicas
 
@@ -91,9 +91,9 @@ No existen comparativas externas con otros modelos de la misma categoría en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/Vision-Narrator-0.8B-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/Vision-Narrator-0.8B-4bit-mlx
 - Repositorio de la app RealTimeAICam: https://github.com/nicedreamzapp/RealTimeAICam
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Proyecto MLX de Apple: https://github.com/ml-explore/mlx
 - Motor de inferencia vMLX: https://vmlx.net/
-- Perfil del autor en HuggingFace: https://huggingface.co/divinetribe
+- Perfil del autor en Hugging Face: https://huggingface.co/divinetribe

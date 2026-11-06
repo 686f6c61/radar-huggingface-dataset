@@ -6,7 +6,7 @@ ViuTranslate-500M es un modelo de traducción automática neuronal (NMT) biling�
 
 El modelo ha sido entrenado sobre un corpus curado de 102.502 pares de frases paralelas procedentes de CFILT IIT Bombay y AI4Bharat Samanantar, con un total de 13,6 millones de tokens activos. Según sus desarrolladores, el conjunto de datos está verificado por humanos y no contiene texto sintético ni destilado de otros modelos. El modelo soporta dos modalidades de entrada: texto sin etiquetas (estilo Google Translate) e instrucciones explícitas como "Translate to Hindi: ...".
 
-Su ventana de contexto es de 2048 tokens y su tokenizador byte-fallback BPE tiene 64.003 entradas, lo que garantiza cobertura completa de Unicode devanagari. Está disponible bajo licencia Apache-2.0 en HuggingFace y está pensado para despliegues de baja latencia, incluyendo escenarios edge.
+Su ventana de contexto es de 2048 tokens y su tokenizador byte-fallback BPE tiene 64.003 entradas, lo que garantiza cobertura completa de Unicode devanagari. Está disponible bajo licencia Apache-2.0 en Hugging Face y está pensado para despliegues de baja latencia, incluyendo escenarios edge.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ViuTranslate-500M | 500.642.560 | 2048 | Apache-2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-hi | No disponible | No disponible | Apache-2.0 | HuggingFace |
-| facebook/m2m100_418M | 418M | No disponible | Apache-2.0 | HuggingFace |
+| ViuTranslate-500M | 500.642.560 | 2048 | Apache-2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-hi | No disponible | No disponible | Apache-2.0 | Hugging Face |
+| facebook/m2m100_418M | 418M | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos. Helsinki-NLP/opus-mt-en-hi es un modelo Marian bilingüe entrenado en OPUS, mientras que M2M100 es un modelo multilingüe capaz de traducir entre muchos pares de idiomas. ViuTranslate, en cambio, es un modelo de traducción pura EN-HI con un enfoque en determinismo y baja latencia, sin capacidades conversacionales.
 
@@ -94,5 +94,5 @@ No se dispone de resultados de benchmarks comparativos. Helsinki-NLP/opus-mt-en-
 
 - Modelo: https://huggingface.co/ViuAI/ViuTranslate
 - Dataset de entrenamiento: https://huggingface.co/datasets/ViuAI/ViuTranslate-Data
-- Organización ViuAI en HuggingFace: https://huggingface.co/ViuAI
+- Organización ViuAI en Hugging Face: https://huggingface.co/ViuAI
 - Repositorio de ViuAI en GitHub: https://github.com/ViuAI

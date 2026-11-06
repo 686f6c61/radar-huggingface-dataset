@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `adityapanda2608112/runtime-core-sys-9182` es un repositorio alojado en HuggingFace por el usuario `adityapanda2608112`, etiquetado con la librería `diffusers` y pesos en formato `safetensors`. Por la etiqueta de librería, se trata presumiblemente de un modelo de difusión (generación de imágenes u otra modalidad generativa basada en difusión), aunque la información pública disponible no especifica la arquitectura concreta, el número de parámetros ni la tarea exacta. El tamaño del repositorio es de 44,0 GB, lo que sugiere un modelo de gran tamaño o un conjunto de pesos con múltiples componentes (por ejemplo, un pipeline completo con VAE, text encoder y UNet/DiT).
+El modelo `adityapanda2608112/runtime-core-sys-9182` es un repositorio alojado en Hugging Face por el usuario `adityapanda2608112`, etiquetado con la librería `diffusers` y pesos en formato `safetensors`. Por la etiqueta de librería, se trata presumiblemente de un modelo de difusión (generación de imágenes u otra modalidad generativa basada en difusión), aunque la información pública disponible no especifica la arquitectura concreta, el número de parámetros ni la tarea exacta. El tamaño del repositorio es de 44,0 GB, lo que sugiere un modelo de gran tamaño o un conjunto de pesos con múltiples componentes (por ejemplo, un pipeline completo con VAE, text encoder y UNet/DiT).
 
-El repositorio no cuenta con descargas ni "likes" en el momento de la consulta, fue creado el 5 de noviembre de 2026 y actualizado el mismo día, lo que indica una publicación reciente y sin validación comunitaria. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, un mecanismo habitual en modelos con licencias específicas o que requieren aceptación de términos de uso.
+El repositorio no cuenta con descargas ni "likes" en el momento de la consulta, fue creado el 5 de noviembre de 2026 y actualizado el mismo día, lo que indica una publicación reciente y sin validación comunitaria. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, un mecanismo habitual en modelos con licencias específicas o que requieren aceptación de términos de uso.
 
 La relevancia de esta ficha es limitada por la escasez de metadatos publicados: no hay pipeline declarado, no se indican idiomas soportados ni se han publicado resultados de benchmarks. La licencia es Apache 2.0, lo que en principio permitiría uso comercial, pero la condición de acceso restringido debe verificarse antes de cualquier despliegue en producción.
 
@@ -30,14 +30,14 @@ La relevancia de esta ficha es limitada por la escasez de metadatos publicados: 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La etiqueta `diffusers` en HuggingFace indica que el repositorio esta pensado para ser cargado con la libreria Diffusers, lo que en la practica implica un pipeline de difusion (por ejemplo, text-to-image, image-to-image o similar). El tamano del repositorio (44,0 GB) es coherente con un pipeline completo que incluye varios submodelos en precision completa o media, aunque no es posible confirmar si se trata de un UNet, un transformer de difusion (DiT), un modelo de video o una variante multimodal.
+No se dispone de informacion sobre la arquitectura interna del modelo. La etiqueta `diffusers` en Hugging Face indica que el repositorio esta pensado para ser cargado con la libreria Diffusers, lo que en la practica implica un pipeline de difusion (por ejemplo, text-to-image, image-to-image o similar). El tamano del repositorio (44,0 GB) es coherente con un pipeline completo que incluye varios submodelos en precision completa o media, aunque no es posible confirmar si se trata de un UNet, un transformer de difusion (DiT), un modelo de video o una variante multimodal.
 
 Tampoco se han publicado datos sobre el corpus de entrenamiento, el numero de tokens o pasos de difusion, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. No hay informacion sobre innovaciones tecnicas destacables (decodificacion especulativa, atencion lineal, destilacion de pasos, etc.). Cualquier afirmacion al respecto seria especulativa y, por tanto, se omite.
 
 ## Capacidades
 
 - Generacion de contenido mediante difusion: por la etiqueta `diffusers`, se espera que el modelo pueda ejecutarse con pipelines de la libreria Diffusers, aunque no se especifica la modalidad exacta (imagen, video, audio u otra).
-- Carga mediante `safetensors`: los pesos estan en formato seguro y serializado, compatible con las herramientas habituales del ecosistema HuggingFace.
+- Carga mediante `safetensors`: los pesos estan en formato seguro y serializado, compatible con las herramientas habituales del ecosistema Hugging Face.
 - Uso con licencia Apache 2.0: permite, en principio, uso comercial y modificacion, sujeto a las condiciones de acceso restringido del repositorio.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -51,7 +51,7 @@ Tampoco se han publicado datos sobre el corpus de entrenamiento, el numero de to
 - Pruebas de integracion con infraestructura de inferencia: permite validar el flujo de descarga, carga y ejecucion en entornos con GPU de gran capacidad, aunque sin garantias de calidad al no haber benchmarks publicados.
 - Base para fine-tuning experimental: al estar en formato `safetensors` y con licencia Apache 2.0, podria servir como punto de partida para ajuste fino, sujeto a la verificacion previa de la licencia y de las condiciones de acceso.
 - Comparacion de pipelines en entornos de investigacion: util para medir latencia y consumo de VRAM frente a otros modelos de difusion de tamano similar.
-- Docencia y formacion tecnica: sirve como ejemplo practico de repositorio gated con pesos en `safetensors` y etiqueta `diffusers`, para ilustrar el flujo de acceso y carga en HuggingFace.
+- Docencia y formacion tecnica: sirve como ejemplo practico de repositorio gated con pesos en `safetensors` y etiqueta `diffusers`, para ilustrar el flujo de acceso y carga en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 ## Limitaciones y advertencias
 
 - Ausencia de benchmarks: no hay resultados publicados que permitan evaluar la calidad del modelo en tareas generativas.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que anade friccion a cualquier integracion automatizada.
 - Falta de documentacion: no se especifican arquitectura, parametros, idiomas ni modalidad exacta, lo que impide garantizar su idoneidad para un caso de uso concreto.
 - Riesgo de sesgos y alucinacion: no evaluado por el autor; en modelos generativos de difusion, la calidad y los sesgos dependen del dataset de entrenamiento, que no se documenta.
 - Tamano elevado: 44,0 GB de pesos implican requisitos de almacenamiento y memoria considerables, con costes asociados en infraestructura.
@@ -82,4 +82,4 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adityapanda2608112/runtime-core-sys-9182
+- Hugging Face: https://huggingface.co/adityapanda2608112/runtime-core-sys-9182

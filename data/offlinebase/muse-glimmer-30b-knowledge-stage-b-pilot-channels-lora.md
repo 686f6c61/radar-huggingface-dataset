@@ -82,7 +82,7 @@ La información proporcionada no incluye datos de rendimiento de ninguno de los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage-B-Pilot-Channels-LoRA
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage-B-Pilot-Channels-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo Knowledge de la familia: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Adaptador previo de la familia: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA

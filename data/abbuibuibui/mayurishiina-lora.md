@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye otros LoRA de personaje 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/MayuriShiina-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/MayuriShiina-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MayuriShiina-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MayuriShiina-Lora

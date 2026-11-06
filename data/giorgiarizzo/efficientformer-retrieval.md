@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giorgiarizzo/efficientformer-retrieval` es un repositorio de HuggingFace publicado por el usuario giorgiarizzo que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un release listo para producción: el autor lo describe explícitamente como una configuración *base* pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos ajustados sobre ningún conjunto de datos.
+`giorgiarizzo/efficientformer-retrieval` es un repositorio de Hugging Face publicado por el usuario giorgiarizzo que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un release listo para producción: el autor lo describe explícitamente como una configuración *base* pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos ajustados sobre ningún conjunto de datos.
 
 El tamaño real declarado en los metadatos de safetensors es de 49.600 parámetros, es decir, aproximadamente 0,05 millones de parámetros. Es, por tanto, un artefacto minúsculo en comparación con cualquier modelo de recuperación multimodal actual, y su relevancia no está en el rendimiento sino en su valor como esqueleto reproducible: incluye `main.py`, `config.json`, `training_args.json` y un README que documenta la receta de experimento por defecto (SGD con schedule coseno) y sugiere evaluar sobre Flickr30k con al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -73,7 +73,7 @@ No se ha proporcionado información verificada sobre modelos comparables, por lo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| giorgiarizzo/efficientformer-retrieval | 49.600 | no disponible | sin benchmark publicado; pesos sin entrenar | MIT | HuggingFace, 0 descargas |
+| giorgiarizzo/efficientformer-retrieval | 49.600 | no disponible | sin benchmark publicado; pesos sin entrenar | MIT | Hugging Face, 0 descargas |
 | EfficientFormer original (familia de arquitectura) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Modelos de retrieval imagen-texto de referencia (tipo CLIP) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -93,5 +93,5 @@ La conclusión práctica es que este artefacto no es comparable en rendimiento c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giorgiarizzo/efficientformer-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/giorgiarizzo/efficientformer-retrieval
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, su paper, repositorio de código o demos. Los resultados devueltos por la búsqueda corresponden a contenido no relacionado (mods de videojuegos) y se descartan por no ser aplicables.

@@ -1,14 +1,14 @@
 # eigentom/nanocode-sft-mix-run1-v3
 
 ## Resumen
-El modelo eigentom/nanocode-sft-mix-run1-v3 es un ajuste supervisado completo (SFT) de una época sobre el modelo base openbmb/MiniCPM5-2B-Midtrain. Lo publica el usuario eigentom en HuggingFace y está orientado a generación de texto y a tareas de agente de programación (coding-agent). Se trata de un transformer de aproximadamente 2,52 mil millones de parámetros (2.516.756.480 según safetensors), con pesos en BF16 y safetensors, y una longitud máxima de secuencia de entrenamiento de 131.072 tokens.
+El modelo eigentom/nanocode-sft-mix-run1-v3 es un ajuste supervisado completo (SFT) de una época sobre el modelo base openbmb/MiniCPM5-2B-Midtrain. Lo publica el usuario eigentom en Hugging Face y está orientado a generación de texto y a tareas de agente de programación (coding-agent). Se trata de un transformer de aproximadamente 2,52 mil millones de parámetros (2.516.756.480 según safetensors), con pesos en BF16 y safetensors, y una longitud máxima de secuencia de entrenamiento de 131.072 tokens.
 
 El checkpoint final es checkpoint-5913, no una continuación de checkpoints anteriores de Run1. Se entrenó con LLaMA-Factory como frontend y un adaptador Megatron/MCore sobre 12 nodos con 192 tarjetas Ascend 910C. La model card indica que la evaluación SWE está pendiente y que la pérdida de validación no debe interpretarse como resultado de benchmark. Es relevante para desarrolladores que quieran un modelo pequeño, de 2,5B, especializado en flujos de agente de código y con soporte de tool calling XML de MiniCPM5.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia MiniCPM5; etiquetas HuggingFace incluyen llama; no se detalla la variante interna exacta) |
+| Arquitectura | Transformer (familia MiniCPM5; etiquetas Hugging Face incluyen llama; no se detalla la variante interna exacta) |
 | Parámetros totales | 2.516.756.480 (2,52B) |
 | Parámetros activos | No aplica (no se indica que sea MoE) |
 | Longitud de contexto | 131.072 tokens (máximo de secuencia de entrenamiento; no se especifica la ventana de inferencia) |
@@ -21,7 +21,7 @@ El checkpoint final es checkpoint-5913, no una continuación de checkpoints ante
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
-La información proporcionada no detalla la arquitectura interna del transformer más allá de la familia MiniCPM5 y de las etiquetas de HuggingFace, que incluyen llama, minicpm5, sft, coding-agent y megatron. No se indica que sea un modelo MoE, por lo que no hay parámetros activos separados de los totales. El modelo base es openbmb/MiniCPM5-2B-Midtrain, con revisión base 0a45344e y hash SHA-256 de los pesos base 38a28680f6208242a0de7c84627343d44cee517b49c2b39d1afd706be6beabad.
+La información proporcionada no detalla la arquitectura interna del transformer más allá de la familia MiniCPM5 y de las etiquetas de Hugging Face, que incluyen llama, minicpm5, sft, coding-agent y megatron. No se indica que sea un modelo MoE, por lo que no hay parámetros activos separados de los totales. El modelo base es openbmb/MiniCPM5-2B-Midtrain, con revisión base 0a45344e y hash SHA-256 de los pesos base 38a28680f6208242a0de7c84627343d44cee517b49c2b39d1afd706be6beabad.
 
 El entrenamiento fue un SFT completo de una época sobre el mix de datos Run1 v3 filtrado. Se usaron 12 nodos con 192 tarjetas Ascend 910C, TP4, DP48, micro batch 1, acumulación 4 y batch global 192. Se realizaron 5.913 actualizaciones con tasa de aprendizaje 5e-5 con decaimiento coseno hasta 1e-5, warmup del 3 %, weight decay 0,01, semilla 20260916 y BF16. La secuencia máxima de entrenamiento fue de 131.072 tokens, con empaquetado y planificación balanceada. Se reparó el enmascaramiento de la cabecera del asistente; las etiquetas de origen permanecen en las mismas posiciones y el colador de MCore desplaza una vez. Los tokens de entrada empaquetados fueron 36.161.705.387 y los tokens supervisados 15.591.318.474. La pérdida de validación held-out final fue 0,2753264904022217. La evaluación SWE de este checkpoint está pendiente.
 
@@ -78,8 +78,8 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eigentom/nanocode-sft-mix-run1-v3 | 2,52B | 131.072 tokens (máximo de entrenamiento) | Sin benchmarks públicos; pérdida de validación 0,2753 | No disponible | Safetensors BF16 en HuggingFace |
-| openbmb/MiniCPM5-2B-Midtrain (base) | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | HuggingFace |
+| eigentom/nanocode-sft-mix-run1-v3 | 2,52B | 131.072 tokens (máximo de entrenamiento) | Sin benchmarks públicos; pérdida de validación 0,2753 | No disponible | Safetensors BF16 en Hugging Face |
+| openbmb/MiniCPM5-2B-Midtrain (base) | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | Hugging Face |
 | Qwen2.5-Coder-3B | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información |
 | Llama-3.2-3B | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información |
 
@@ -100,11 +100,11 @@ No se puede establecer una comparación cuantitativa fiable con Qwen2.5-Coder-3B
 - Adopción nula: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria independiente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3
+- Modelo en Hugging Face: https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
 - Dataset de validación SWE: https://huggingface.co/datasets/eigentom/minicpm5-sft-swe-validation-200
 - Modelo relacionado encontrado en la búsqueda web: https://huggingface.co/eigentom/nanocode_sft_60b
 - Proyecto nanocode: https://github.com/1rgs/nanocode
 - Proyecto nanocoder: https://github.com/Nano-Collective/nanocoder
 - OpenCode: https://opencode.ai/
-- Repositorio HuggingFace del modelo, que incluye conversion-receipt.json: https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3
+- Repositorio Hugging Face del modelo, que incluye conversion-receipt.json: https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3

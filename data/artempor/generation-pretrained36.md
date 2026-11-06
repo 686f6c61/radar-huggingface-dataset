@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`artempor/generation-pretrained36` es un prototipo de investigación publicado en HuggingFace por el usuario artempor. Se presenta explícitamente como una implementación personalizada de arquitectura híbrida CNN-Transformer orientada a tareas de generación, con licencia MIT y un total de 33.088 parámetros. No es un modelo entrenado en el sentido habitual del término: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con entrenamiento completado ni evaluado.
+`artempor/generation-pretrained36` es un prototipo de investigación publicado en Hugging Face por el usuario artempor. Se presenta explícitamente como una implementación personalizada de arquitectura híbrida CNN-Transformer orientada a tareas de generación, con licencia MIT y un total de 33.088 parámetros. No es un modelo entrenado en el sentido habitual del término: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con entrenamiento completado ni evaluado.
 
 El interés de esta ficha es, por tanto, acotado. No se trata de un modelo de lenguaje utilizable en producción, sino de un artefacto de investigación que documenta una receta experimental concreta (optimizador LAMB, scheduler coseno, fusión bilineal, atención de ventana deslizante, normalización InstanceNorm y activación approx-GELU). Su relevancia actual es la de servir como punto de partida reproducible para quien quiera estudiar variantes híbridas CNN-Transformer a pequeña escala o validar infraestructura de carga de pesos.
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. E
 - Base para experimentos de ajuste con recursos mínimos: sus 33.088 parámetros permiten entrenar desde cero o afinar en CPU o en una GPU modesta en tiempos muy cortos, útil para validar recetas de optimización como LAMB con scheduler coseno.
 - Verificación de adaptadores de carga personalizados: dado que el autor advierte que las APIs genéricas no lo cargan directamente, es un caso útil para desarrollar y probar adaptadores de integración en frameworks propios.
 - Referencia para comparativas controladas: la model card recomienda explícitamente evaluar con el mismo presupuesto de datos, ajuste y semillas aleatorias, por lo que puede usarse como baseline de capacidad emparejada en estudios comparativos de arquitecturas.
-- Test de empaquetado y distribución: con un repositorio de 0,0 GB, es adecuado para probar flujos de publicación, versionado y descarga en HuggingFace Hub sin consumir ancho de banda ni almacenamiento.
+- Test de empaquetado y distribución: con un repositorio de 0,0 GB, es adecuado para probar flujos de publicación, versionado y descarga en Hugging Face Hub sin consumir ancho de banda ni almacenamiento.
 
 ## Benchmarks y rendimiento
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artempor/generation-pretrained36
+- Hugging Face: https://huggingface.co/artempor/generation-pretrained36
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la búsqueda no guardan relación con el artefacto (contenido sobre métodos de entrada de caracteres y descarga de vídeo) y se descartan por no aportar información verificable.

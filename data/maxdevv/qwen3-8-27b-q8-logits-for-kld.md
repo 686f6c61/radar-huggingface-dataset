@@ -84,7 +84,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. El
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MaxDevv/Qwen3.8-27b-Q8-Logits-for-kld
+- Repositorio de Hugging Face: https://huggingface.co/MaxDevv/Qwen3.8-27b-Q8-Logits-for-kld
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia completa de Qwen3.8-27B (blog): https://lovableapp.org/blog/qwen3-8-27b
 - Comparativa con Claude Opus (blog): https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

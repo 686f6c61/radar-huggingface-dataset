@@ -28,7 +28,7 @@ El repositorio no incluye información sobre el conjunto de datos de entrenamien
 ## Capacidades
 
 - No se han demostrado capacidades funcionales: el modelo es un checkpoint de inicialización sin entrenamiento.
-- Implementación personalizada que requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace.
+- Implementación personalizada que requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face.
 - Incluye un script `eval.py` con un ejemplo de prueba de humo en su bloque `__main__`.
 - La arquitectura está diseñada para tareas de generación, aunque no se especifica el tipo de salida (imágenes, secuencias, etc.).
 - No hay soporte declarado para tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
@@ -62,14 +62,14 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint de inicialización no ha sido entrenado; no debe utilizarse para tareas reales de generación o clasificación.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace; requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face; requiere un adaptador explícito.
 - No hay información sobre el proceso de cuantización, a pesar del nombre del repositorio.
 - La licencia BSD-3-Clause permite uso comercial, pero se deben revisar los términos de las fuentes de datos externas si se utilizan con este modelo.
 - Cualquier resultado publicado con un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielleeette/generation-quantized
+- Repositorio en Hugging Face: https://huggingface.co/danielleeette/generation-quantized
 - Referencia general sobre cuantización de modelos (NVIDIA): https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/
 - Guía de cuantización para IA generativa (Red Hat): https://developers.redhat.com/articles/2025/08/18/optimizing-generative-ai-models-quantization
 - Colección de modelos GGUF cuantizados: https://huggingface.co/GGUF-Models

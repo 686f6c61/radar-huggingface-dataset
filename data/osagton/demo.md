@@ -2,7 +2,7 @@
 
 ## Resumen
 
-osagton/demo es un modelo publicado en HuggingFace por el usuario osagton bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y contadores de uso. No se ha publicado model card con contenido tecnico (el README se reduce a la declaracion de licencia `license: mit`), ni pipeline declarado, ni idiomas soportados.
+osagton/demo es un modelo publicado en Hugging Face por el usuario osagton bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y contadores de uso. No se ha publicado model card con contenido tecnico (el README se reduce a la declaracion de licencia `license: mit`), ni pipeline declarado, ni idiomas soportados.
 
 No es posible determinar que problema resuelve, que arquitectura emplea, cual es su tamano ni su longitud de contexto. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado el 28 de septiembre de 2026, lo que sugiere una publicacion reciente y sin adopcion documentada hasta la fecha.
 
@@ -21,7 +21,7 @@ Dado que no existe informacion tecnica verificable, esta ficha se limita a regis
 | Licencia | mit |
 | Formato de pesos | no disponible |
 | Autor | osagton |
-| Identificador en HuggingFace | osagton/demo |
+| Identificador en Hugging Face | osagton/demo |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-09-28 |
 | Ultima actualizacion | 2026-09-28 |
@@ -78,7 +78,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| osagton/demo | no disponible | no disponible | MIT | Repositorio en HuggingFace |
+| osagton/demo | no disponible | no disponible | MIT | Repositorio en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/osagton/demo
+- Repositorio en Hugging Face: https://huggingface.co/osagton/demo
 - Model card: https://huggingface.co/osagton/demo/blob/main/README.md
 - Paper, blog o repositorio adicional: no disponible

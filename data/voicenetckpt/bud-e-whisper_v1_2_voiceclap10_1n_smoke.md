@@ -21,8 +21,8 @@ El sufijo `smoke` sugiere una ejecucion de prueba de humo, es decir, un entrenam
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (`.pt`), fichero `checkpoints/epoch_latest.pt`; sin safetensors ni GGUF publicados |
 | Tamano del repositorio | 1,3 GB en 7 ficheros |
-| Fecha de creacion (HuggingFace) | 2026-10-11 (segun metadatos de la plataforma) |
-| Fecha de actualizacion (HuggingFace) | 2026-10-11 (segun metadatos de la plataforma) |
+| Fecha de creacion (Hugging Face) | 2026-10-11 (segun metadatos de la plataforma) |
+| Fecha de actualizacion (Hugging Face) | 2026-10-11 (segun metadatos de la plataforma) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No hay datos suficientes sobre este checkpoint (parametros, contexto, licencia) 
 
 | Modelo | Parametros | Contexto | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| BUD-E-Whisper_V1_2_voiceclap10_1n_smoke | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace con 7 ficheros, `.pt` |
+| BUD-E-Whisper_V1_2_voiceclap10_1n_smoke | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face con 7 ficheros, `.pt` |
 | Alternativas de la familia Whisper | no aplicable a esta ficha (dato externo no verificado aqui) | no disponible | no disponible | no disponible | no disponible |
 | Otros checkpoints de la serie VoiceCLAP | no disponible | no disponible | no disponible | consultar el indice de ejecuciones | Indice publico de checkpoints |
 
@@ -97,6 +97,6 @@ Para una comparacion util habria que inspeccionar la configuracion del modelo y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E-Whisper_V1_2_voiceclap10_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E-Whisper_V1_2_voiceclap10_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada.

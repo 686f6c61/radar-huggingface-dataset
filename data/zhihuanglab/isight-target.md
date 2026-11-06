@@ -6,7 +6,7 @@ iSight-target es un modelo de seleccion de celulas de interes en imagenes de inm
 
 Tecnicamente no es un modelo de lenguaje ni un modelo generativo: es un clasificador binario por clase construido sobre el backbone de patologia UNI2-h, con una cabeza binaria independiente por cada una de las 43 clases definidas en `meta/classes_43.csv`. Esto lo situa en la categoria de modelos de vision para patologia computacional orientados a tareas de celula unica, no en la de asistentes multimodales.
 
-Su relevancia es de nicho pero concreta: automatiza un paso (la seleccion de la poblacion celular diana) que en los flujos de patologia digital suele hacerse con reglas heuristicas o revision manual, y lo hace de forma agnostica al tejido mediante un esquema de 43 clases. La adopcion publica es todavia nula segun los datos de HuggingFace (0 descargas, 0 likes) y la licencia es exclusivamente no comercial.
+Su relevancia es de nicho pero concreta: automatiza un paso (la seleccion de la poblacion celular diana) que en los flujos de patologia digital suele hacerse con reglas heuristicas o revision manual, y lo hace de forma agnostica al tejido mediante un esquema de 43 clases. La adopcion publica es todavia nula segun los datos de Hugging Face (0 descargas, 0 likes) y la licencia es exclusivamente no comercial.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ Su relevancia es de nicho pero concreta: automatiza un paso (la seleccion de la 
 | Entrada | Conjunto de celulas segmentadas de una imagen IHC mas la clase tejido x tipo celular de la imagen |
 | Salida | Decision binaria por clase (43 clases) sobre que celulas son la poblacion de interes |
 | Tamano del repositorio | 5,5 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / ultima actualizacion | 2026-09-12 / 2026-09-19 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks, parametros ni contexto de modelos alternat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iSight-target | no disponible | no aplica | sin benchmarks publicados | PENN Academic Software License (solo investigacion no comercial) | HuggingFace, 0 descargas |
+| iSight-target | no disponible | no aplica | sin benchmarks publicados | PENN Academic Software License (solo investigacion no comercial) | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 El unico modelo relacionado identificado en la informacion es iSight-cell, del mismo autor, que no compite con iSight-target sino que lo complementa: iSight-cell puntua las celulas que iSight-target ha seleccionado previamente.
@@ -85,7 +85,7 @@ El unico modelo relacionado identificado en la informacion es iSight-cell, del m
 - Dependencia de un segmentador externo: la calidad de la seleccion depende por completo de la segmentacion celular previa, que no se distribuye con este modelo.
 - Cobertura limitada al catalogo de clases: el comportamiento fuera de las 43 clases de `meta/classes_43.csv` no esta documentado.
 - Ausencia total de benchmarks publicados: no hay metricas verificables de precision, sensibilidad o especificidad sobre las que basar una decision de produccion.
-- Adopcion nula y mantenimiento incierto: 0 descargas y 0 likes en HuggingFace, con creacion y ultima actualizacion en septiembre de 2026; no hay evidencia de uso en terceros.
+- Adopcion nula y mantenimiento incierto: 0 descargas y 0 likes en Hugging Face, con creacion y ultima actualizacion en septiembre de 2026; no hay evidencia de uso en terceros.
 - Riesgo de falsos positivos y falsos negativos: al ser cabezas binarias por clase, los errores de clasificacion afectan directamente a cualquier metrica derivada (densidad celular, ratios, indices de microambiente); se recomienda validacion local antes de usar resultados en decisiones clinicas.
 - Sesgos potenciales heredados del backbone UNI2-h y de los datos con los que se entrenaron las cabezas, no documentados en la informacion disponible.
 - Requisito de descargar `config.json` junto con el checkpoint: el repositorio solo incluye el state dict, por lo que omitir la configuracion impide reconstruir el modelo correctamente.
@@ -93,7 +93,7 @@ El unico modelo relacionado identificado en la informacion es iSight-cell, del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihuanglab/iSight-target
+- Modelo en Hugging Face: https://huggingface.co/zhihuanglab/iSight-target
 - Modelo complementario (puntuacion celular): https://huggingface.co/zhihuanglab/iSight-cell
 - Codigo del proyecto: https://github.com/zhihuanglab/iSight
 - Ruta del codigo de seleccion de celulas diana: `isight_cell/target_cell/` e `isight_cell/code/pipeline/select_target_v2.py` en el repositorio anterior

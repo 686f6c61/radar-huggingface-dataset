@@ -76,7 +76,7 @@ El autor advierte explicitamente que no es una reproduccion de los resultados de
 
 | Modelo | Tipo | Entorno/tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| simillusion/dreamerv2-dmc-cartpole-swingup | World model DreamerV2 (demo, 60k pasos) | DMC cartpole swing-up | MIT | HuggingFace, checkpoint publico |
+| simillusion/dreamerv2-dmc-cartpole-swingup | World model DreamerV2 (demo, 60k pasos) | DMC cartpole swing-up | MIT | Hugging Face, checkpoint publico |
 | Checkpoints DreamerV3 (Danijar Hafner) | World model de ultima generacion | Atari, DMC, Minecraft y mas | codigo open source; checkpoints segun repositorio | Repositorios del autor, no en este formato de API |
 | Otros world models de Simulusion | Varios algoritmos, misma API | Segun demo | MIT | Via la libreria Simulusion |
 
@@ -94,7 +94,7 @@ DreamerV3, del mismo autor que DreamerV2, generaliza el enfoque con hiperparamet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simillusion/dreamerv2-dmc-cartpole-swingup
+- Modelo en Hugging Face: https://huggingface.co/simillusion/dreamerv2-dmc-cartpole-swingup
 - Repositorio de Simulusion: https://github.com/ParamThakkar123/simulusion
 - Paper original de DreamerV2: https://arxiv.org/abs/2010.02193
 - Galeria de clips y curvas de aprendizaje de Simulusion: https://paramthakkar123.github.io/simulusion/gallery.html

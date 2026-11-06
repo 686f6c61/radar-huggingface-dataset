@@ -83,8 +83,8 @@ No se dispone de comparaciones con otros modelos en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G33-k/qwen3-vl-4b-brand-tools-controller-lora | 4B (base) + LoRA r=16 | No disponible; entrenado hasta 16.384 tokens por decision | Sin benchmarks publicos; validacion completa en curso | Apache 2.0 | HuggingFace (0 descargas, 0 likes en la consulta) |
-| Qwen/Qwen3-VL-4B-Instruct (base sin adaptador) | 4B | No disponible en la informacion | No disponible en la informacion | Apache 2.0 (segun el campo `license` del adaptador) | HuggingFace, ampliamente distribuido |
+| G33-k/qwen3-vl-4b-brand-tools-controller-lora | 4B (base) + LoRA r=16 | No disponible; entrenado hasta 16.384 tokens por decision | Sin benchmarks publicos; validacion completa en curso | Apache 2.0 | Hugging Face (0 descargas, 0 likes en la consulta) |
+| Qwen/Qwen3-VL-4B-Instruct (base sin adaptador) | 4B | No disponible en la informacion | No disponible en la informacion | Apache 2.0 (segun el campo `license` del adaptador) | Hugging Face, ampliamente distribuido |
 | Controlador MiniCPM5 (referenciado en la model card) | No disponible | No disponible | No disponible; opera las mismas dos herramientas TypeScript | No disponible | No disponible |
 
 No se han encontrado en la informacion proporcionada otros modelos comparables de la misma categoria (controladores de tool use de alcance estrecho sobre herramientas TypeScript deterministas).
@@ -107,7 +107,7 @@ No se han encontrado en la informacion proporcionada otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/G33-k/qwen3-vl-4b-brand-tools-controller-lora
+- Modelo en Hugging Face: https://huggingface.co/G33-k/qwen3-vl-4b-brand-tools-controller-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Conjunto de datos de evaluacion: https://huggingface.co/datasets/G33/k-minicpm5-brand-tools-eval-kit
 - Issue de Unsloth sobre la carga de adaptadores multimodales: https://github.com/unslothai/unsloth/issues/3560

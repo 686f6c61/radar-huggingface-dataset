@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nile-academy/qwen3-tts-12hz-0.6b-customvoice` es un checkpoint de síntesis de voz (text-to-speech) publicado en HuggingFace por la cuenta nile-academy, que actúa como catálogo o espejo de terceros y no como desarrollador original del modelo. El artefacto corresponde a la variante compacta CustomVoice de la familia Qwen3-TTS e incluye el tokenizador y codec de voz original integrado, que opera a 12 Hz, junto con nueve timbres predefinidos. No incorpora grabaciones de referencia, identidades clonadas ni voces generadas.
+`nile-academy/qwen3-tts-12hz-0.6b-customvoice` es un checkpoint de síntesis de voz (text-to-speech) publicado en Hugging Face por la cuenta nile-academy, que actúa como catálogo o espejo de terceros y no como desarrollador original del modelo. El artefacto corresponde a la variante compacta CustomVoice de la familia Qwen3-TTS e incluye el tokenizador y codec de voz original integrado, que opera a 12 Hz, junto con nueve timbres predefinidos. No incorpora grabaciones de referencia, identidades clonadas ni voces generadas.
 
 El repositorio contiene únicamente datos declarativos (pesos en safetensors, ficheros de configuración del tokenizador y avisos legales), con un tamaño total de 2,5 GB y 905.788.672 parámetros según los metadatos de safetensors. No incluye SDK, binarios de ejecución, código Python o Node, ni motor de inferencia alguno: para generar audio hace falta una implementación compatible que se cualifique por separado. La licencia es Apache 2.0 y cubre diez idiomas (chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano).
 
@@ -90,6 +90,6 @@ La información disponible no permite una comparación numérica fiable: el úni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nile-academy/qwen3-tts-12hz-0.6b-customvoice
+- Hugging Face: https://huggingface.co/nile-academy/qwen3-tts-12hz-0.6b-customvoice
 - Informe técnico del publicador citado como evidencia de selección: https://arxiv.org/abs/2601.15621
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a entidades no relacionadas (río Nilo, agencia de asuntos públicos y marca de ropa).

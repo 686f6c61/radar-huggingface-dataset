@@ -72,8 +72,8 @@ Evolución de la accuracy de test en la semilla 42 (extracto): época 1, 12,97 %
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (BEiT-Base, head-only) | 85,7 M | 224x224 px | Accuracy 28,35 %, F1 24,17 % | Apache 2.0 | HuggingFace |
-| Resto de backbones del benchmark (39 configuraciones) | no disponible | no disponible | Resultados en el dataset `vision-foundation-models-benchmark-runs` | no disponible | HuggingFace |
+| Este checkpoint (BEiT-Base, head-only) | 85,7 M | 224x224 px | Accuracy 28,35 %, F1 24,17 % | Apache 2.0 | Hugging Face |
+| Resto de backbones del benchmark (39 configuraciones) | no disponible | no disponible | Resultados en el dataset `vision-foundation-models-benchmark-runs` | no disponible | Hugging Face |
 | Fine-tuning completo del mismo backbone | 85,7 M | 224x224 px | no disponible en la información proporcionada | Apache 2.0 (modelo base) | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada; la comparación cuantitativa debe consultarse en el dataset de runs del autor.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/beit-base-patch16-224-pt22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs y métricas por época: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

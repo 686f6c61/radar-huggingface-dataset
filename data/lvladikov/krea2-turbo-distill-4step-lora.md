@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lvladikov/Krea2-Turbo-Distill-4step-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario lvladikov en HuggingFace. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar información técnica adicional. El nombre sugiere que se trata de un adaptador diseñado para acelerar la inferencia de un modelo base denominado "Krea2" mediante destilación turbo en 4 pasos, probablemente orientado a generación de imágenes, aunque esta interpretación no está confirmada por el autor.
+El modelo `lvladikov/Krea2-Turbo-Distill-4step-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario lvladikov en Hugging Face. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar información técnica adicional. El nombre sugiere que se trata de un adaptador diseñado para acelerar la inferencia de un modelo base denominado "Krea2" mediante destilación turbo en 4 pasos, probablemente orientado a generación de imágenes, aunque esta interpretación no está confirmada por el autor.
 
 Dado que no se dispone de documentación sobre arquitectura, parámetros, entrenamiento o capacidades, la ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. La relevancia actual de este modelo es incierta: al ser un LoRA, su utilidad depende completamente del modelo base al que se aplique, y sin esa referencia no es posible evaluar su funcionamiento.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir información sobr
 
 ## Enlaces
 
-- [HuggingFace: lvladikov/Krea2-Turbo-Distill-4step-LoRA](https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA)
+- [Hugging Face: lvladikov/Krea2-Turbo-Distill-4step-LoRA](https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA)

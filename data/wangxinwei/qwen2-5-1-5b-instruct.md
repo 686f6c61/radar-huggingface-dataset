@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wangxinwei/Qwen2.5-1.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/wangxinwei/Qwen2.5-1.5B-Instruct
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Blog oficial de la serie Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

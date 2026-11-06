@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanosaur2-GAN-VAE es un ajuste fino del VAE (autoencoder variacional) asociado al modelo Nanosaur2-670M, publicado por el usuario levzalt en HuggingFace. No es un modelo de lenguaje ni un generador de imagenes completo: es el componente de codificacion y decodificacion latente que se utiliza junto a un pipeline de difusion, y se distribuye como un unico archivo safetensors que se coloca en `ComfyUI/models/vae/`.
+Nanosaur2-GAN-VAE es un ajuste fino del VAE (autoencoder variacional) asociado al modelo Nanosaur2-670M, publicado por el usuario levzalt en Hugging Face. No es un modelo de lenguaje ni un generador de imagenes completo: es el componente de codificacion y decodificacion latente que se utiliza junto a un pipeline de difusion, y se distribuye como un unico archivo safetensors que se coloca en `ComfyUI/models/vae/`.
 
 El entrenamiento se realizo durante 5.000 pasos sobre 7.796 ilustraciones, combinando perdidas de reconstruccion, LPIPS y GAN. Solo se actualizaron las dos etapas de mayor resolucion del decodificador y la cabeza de salida, un total de 2,1 millones de parametros; el codificador y las etapas iniciales del decodificador se mantienen identicos al modelo original, por lo que el archivo resultante es un reemplazo directo y compatible con los flujos de trabajo existentes.
 
@@ -74,8 +74,8 @@ Las cifras corresponden al conjunto de retencion declarado por el autor: 16 imag
 | Modelo | Modelo base | Parametros entrenados | LPIPS a 512 px | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Nanosaur2 VAE original | well9472/Nanosaur2-670M | no aplica (modelo preentrenado) | 0,1172 | MIT | incluido con el modelo base |
-| Nanosaur2-GAN-VAE | well9472/Nanosaur2-670M | 2,1 M | 0,1063 | MIT | HuggingFace, 0 descargas |
-| texture-fix VAE (madebyollin) | Qwen Image 2.1 | no disponible | no disponible | no disponible | HuggingFace |
+| Nanosaur2-GAN-VAE | well9472/Nanosaur2-670M | 2,1 M | 0,1063 | MIT | Hugging Face, 0 descargas |
+| texture-fix VAE (madebyollin) | Qwen Image 2.1 | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion directa solo es posible frente al VAE original del modelo base, del que se conocen las cifras. El texture-fix VAE de madebyollin se cita unicamente como inspiracion metodologica, no como alternativa intercambiable, ya que esta entrenado para otro pipeline de difusion. No se dispone de datos de otros VAEs comparables en la informacion facilitada.
 
@@ -93,7 +93,7 @@ La comparacion directa solo es posible frente al VAE original del modelo base, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/levzalt/Nanosaur2-GAN-VAE
+- Modelo en Hugging Face: https://huggingface.co/levzalt/Nanosaur2-GAN-VAE
 - Archivo de pesos: https://huggingface.co/levzalt/Nanosaur2-GAN-VAE/blob/main/nanosaur2_vae_gan.safetensors
 - Modelo base (well9472/Nanosaur2-670M): https://huggingface.co/well9472/Nanosaur2-670M
 - Texture-fix VAE de madebyollin, citado como inspiracion del enfoque de decodificador parcial: https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1

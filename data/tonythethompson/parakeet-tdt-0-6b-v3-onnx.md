@@ -88,7 +88,7 @@ Diferencias destacables: frente a Whisper, Parakeet-TDT-0.6B-v3 tiene aproximada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonythethompson/parakeet-tdt-0.6b-v3-onnx
+- Modelo en Hugging Face: https://huggingface.co/tonythethompson/parakeet-tdt-0.6b-v3-onnx
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Artefacto ONNX de origen: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Paper (Canary-1B-v2 y Parakeet-TDT-0.6B-v3): https://arxiv.org/html/2509.14128v1

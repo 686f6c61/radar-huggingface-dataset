@@ -70,11 +70,11 @@ Los datos de los modelos comparativos proceden de sus respectivas model cards p�
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-Q2.5I-HalvingChainCounting-step149 | 1,54 B | No disponible | Un único entorno sintético (`HalvingChainCounting`, dificultad 0) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | Según su model card | Propósito general, instrucciones, multilingüe | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Otros `opd-teacher-*` del *sweep* `opd-teachers-20260927-191939` | 1,54 B | No disponible | Un entorno distinto cada uno | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~0,49 B | Según su model card | Propósito general | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,24 B | Según su model card | Propósito general, instrucciones | Llama 3.2 Community License | HuggingFace |
+| opd-teacher-Q2.5I-HalvingChainCounting-step149 | 1,54 B | No disponible | Un único entorno sintético (`HalvingChainCounting`, dificultad 0) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,54 B | Según su model card | Propósito general, instrucciones, multilingüe | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Otros `opd-teacher-*` del *sweep* `opd-teachers-20260927-191939` | 1,54 B | No disponible | Un entorno distinto cada uno | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~0,49 B | Según su model card | Propósito general | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,24 B | Según su model card | Propósito general, instrucciones | Llama 3.2 Community License | Hugging Face |
 
 La comparación relevante en la práctica es contra el propio modelo base: misma arquitectura, mismos parámetros y misma licencia, pero con 150 actualizaciones de GRPO sobre una tarea. Cualquier evaluación comparativa debería medir a la vez el rendimiento en `HalvingChainCounting` y el posible deterioro en tareas generales.
 
@@ -93,7 +93,7 @@ La comparación relevante en la práctica es contra el propio modelo base: misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-HalvingChainCounting-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-HalvingChainCounting-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - *Run* de entrenamiento en W&B (`6e29400f`): https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/6e29400f

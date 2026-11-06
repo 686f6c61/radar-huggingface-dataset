@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya es un modelo de decisión no autoregresivo de tipo "System 1" publicado en HuggingFace bajo el identificador `vdaular/laya`. Recibe un estado (texto libre, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas acompañadas de probabilidades calibradas en una única pasada forward, sin generar texto. Su arquitectura es un encoder transformer: el checkpoint raíz usa un backbone ModernBERT-large con 421.293.830 parámetros y 512 tokens de contexto, orientado a inglés, guardrails y triaje de correo.
+Laya es un modelo de decisión no autoregresivo de tipo "System 1" publicado en Hugging Face bajo el identificador `vdaular/laya`. Recibe un estado (texto libre, correo, ticket o JSON) junto con preguntas tipadas y devuelve respuestas tipadas acompañadas de probabilidades calibradas en una única pasada forward, sin generar texto. Su arquitectura es un encoder transformer: el checkpoint raíz usa un backbone ModernBERT-large con 421.293.830 parámetros y 512 tokens de contexto, orientado a inglés, guardrails y triaje de correo.
 
 El modelo se entrena con aprendizaje por refuerzo contra reglas de puntuación estrictamente propias (el autor lo denomina RLCD, *reinforcement learning with calibrated decisions*), de forma que la única estrategia que maximiza la recompensa es reportar probabilidades honestas. Según el autor, esto elimina la necesidad de parsear salidas y reduce el riesgo de alucinación, ya que el modelo nunca emite texto libre. La familia incluye dos checkpoints adicionales: una variante multilingüe sobre mmBERT-base (322M parámetros, contexto de 1024 ampliable hasta 8k, 100+ idiomas) y una variante de decisiones tipadas sobre ModernBERT-large (421M, contexto 1024).
 
@@ -17,7 +17,7 @@ Es relevante ahora porque cubre un nicho distinto al de los LLM generativos: enr
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (checkpoint raiz en ingles); 1024 en la variante multilingue (ampliable hasta 8k); 1024 en la variante typed-decisions |
 | Tipos de cuantizacion | No disponible. Se documenta inferencia en bf16 (ruta rapida TileLang GPU "coincide con el forward estandar en bf16"); no se listan pesos cuantizados tipo GGUF, AWQ o GPTQ |
-| Idiomas soportados | La model card declara 100+ idiomas para la variante multilingue; la metadata de HuggingFace del repo `vdaular/laya` indica "no disponibles". El checkpoint raiz esta orientado a ingles |
+| Idiomas soportados | La model card declara 100+ idiomas para la variante multilingue; la metadata de Hugging Face del repo `vdaular/laya` indica "no disponibles". El checkpoint raiz esta orientado a ingles |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (libreria transformers); se menciona exportacion a ONNX mediante `laya.onnx_agent.ONNXAgent` |
 
@@ -98,14 +98,14 @@ Alternativas externas de la misma categoria (encoders de clasificacion como Mode
 - El repositorio `vdaular/laya` registra 0 descargas y 0 *likes*, y su model card corresponde a la organizacion `convaiinnovations/laya`, lo que sugiere una copia o espejo sin verificacion de autoria. Conviene contrastar con el repositorio original antes de usarlo en produccion.
 - Las fechas de creacion y actualizacion del repositorio (23 de septiembre de 2026) son posteriores a la fecha habitual de consulta, un indicio de metadatos poco fiables.
 - El checkpoint raiz tiene 512 tokens de contexto, insuficiente para documentos largos; en ese caso hay que recurrir a la variante multilingue (1024, hasta 8k) o a troceado previo.
-- La metadata de HuggingFace no declara idiomas soportados para el repositorio `vdaular/laya`; la afirmacion de "100+ idiomas" solo aparece en la model card y se refiere a la variante multilingue.
+- La metadata de Hugging Face no declara idiomas soportados para el repositorio `vdaular/laya`; la afirmacion de "100+ idiomas" solo aparece en la model card y se refiere a la variante multilingue.
 - La licencia apache-2.0 permite uso comercial y modificacion, pero exige conservar los avisos de licencia y de autoria; las licencias de los dos checkpoints empaquetados en subcarpetas no se detallan en la informacion disponible.
 - Los sesgos conocidos no estan documentados en el material proporcionado.
 - El despliegue de la ruta rapida en TileLang, `torch.compile` y ONNX es opcional; la model card advierte de que estas rutas deben activarse explicitamente y que las respuestas se mantienen solo "dentro del redondeo" respecto al forward estandar en bf16.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vdaular/laya
+- Modelo en Hugging Face: https://huggingface.co/vdaular/laya
 - Checkpoint multilingue: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio en GitHub: https://github.com/NandhaKishorM/laya

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed44` es un checkpoint alojado en HuggingFace por el usuario maxbhartman, publicado el 14 de septiembre de 2026 y de 6,4 GB de tamano. Por el nombre del repositorio y sus etiquetas (`pytorch`, `llama`), se trata con alta probabilidad de un artefacto de investigacion derivado de la familia Llama: un experimento de ablacion ("anchor removal") sobre el mecanismo de atencion, con un parametro tau de 0,6, un valor k de 25 y la semilla 44, evaluado sobre el conjunto GSM8K de problemas matematicos de nivel escolar. No es, por tanto, un modelo de proposito general publicado con ficha tecnica completa, sino el resultado de un barrido experimental.
+`maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed44` es un checkpoint alojado en Hugging Face por el usuario maxbhartman, publicado el 14 de septiembre de 2026 y de 6,4 GB de tamano. Por el nombre del repositorio y sus etiquetas (`pytorch`, `llama`), se trata con alta probabilidad de un artefacto de investigacion derivado de la familia Llama: un experimento de ablacion ("anchor removal") sobre el mecanismo de atencion, con un parametro tau de 0,6, un valor k de 25 y la semilla 44, evaluado sobre el conjunto GSM8K de problemas matematicos de nivel escolar. No es, por tanto, un modelo de proposito general publicado con ficha tecnica completa, sino el resultado de un barrido experimental.
 
 La relevancia de este tipo de repositorio es acotada pero real: sirve para reproducir un experimento concreto de interpretabilidad o de poda sobre atencion, y para auditar como afecta la eliminacion de "anclas" (heads o componentes de atencion identificados como criticos) al rendimiento en razonamiento aritmetico. La nomenclatura sistematica del ID (tau, k, seed) apunta a una familia de ejecuciones, lo que sugiere que forma parte de una matriz de experimentos con distintos hiperparametros.
 
@@ -81,6 +81,6 @@ No disponible. El repositorio no declara modelo base, numero de parametros, lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed44
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k25-seed44
 - Perfil del autor: https://huggingface.co/maxbhartman
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto enlaces relevantes asociados al modelo.

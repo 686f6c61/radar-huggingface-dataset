@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bryanputra/hybrid-classification` es un repositorio experimental publicado en HuggingFace por el usuario bryanputra que contiene una implementación propia de una arquitectura híbrida orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un punto de partida con una configuración de escala "nano", pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Los pesos incluidos (`model.safetensors`) se presentan explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento medido.
+`bryanputra/hybrid-classification` es un repositorio experimental publicado en Hugging Face por el usuario bryanputra que contiene una implementación propia de una arquitectura híbrida orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: la propia model card lo describe como un punto de partida con una configuración de escala "nano", pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Los pesos incluidos (`model.safetensors`) se presentan explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento medido.
 
 La arquitectura declarada combina atención multi-query con un mecanismo de fusión denominado co-attention, activación Mish y normalización ScaleNorm, todo ello bajo la etiqueta genérica de "Hybrid". El recuento de parámetros de los pesos publicados es de 33.088 parámetros, lo que sitúa el modelo en un orden de magnitud de decenas de miles de parámetros, muy lejos de los transformadores densos habituales para clasificación de texto (decenas o cientos de millones).
 
@@ -99,7 +99,7 @@ Conclusión de la comparativa: este repositorio no compite en la misma liga que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bryanputra/hybrid-classification
+- Modelo en Hugging Face: https://huggingface.co/bryanputra/hybrid-classification
 - Archivo de configuración de arquitectura: https://huggingface.co/bryanputra/hybrid-classification/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/bryanputra/hybrid-classification/blob/main/training_args.json
 - Script de inferencia/ejemplo: https://huggingface.co/bryanputra/hybrid-classification/blob/main/predict.py

@@ -69,7 +69,7 @@ El modelo fue seleccionado para igualar la QER del modelo de referencia `new-mil
 - **VRAM estimada**: al ser un modelo de 1B parámetros en BF16, necesita aproximadamente 2-3 GB de VRAM para inferencia en precision completa.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) es suficiente para inferencia. Una RTX 4090 o A100 permitirian ejecutar multiples instancias o batches grandes.
 - **Consumer GPU**: si, cabe en practicamente cualquier GPU consumer moderna.
-- **Opciones de despliegue**: compatible con el ecosistema Transformers de HuggingFace, por lo que puede desplegarse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama.
+- **Opciones de despliegue**: compatible con el ecosistema Transformers de Hugging Face, por lo que puede desplegarse con vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama.
 - **Latencia y throughput**: al ser un modelo pequeño, la latencia es de milisegundos por token en GPUs modernas. No se proporcionan datos exactos.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparativa principal es con el modelo de referencia basado en OLMo-2, que es
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-sdf-mixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-sdf-mixed)
 - [Coleccion de destilacion de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Modelo similar: kd-student-gemma-olmo-milsub-sdf-mixed-alpha-1-nofilter-1samp-5e-5-mixed](https://huggingface.co/model-organisms-for-real/kd-student-gemma-olmo-milsub-sdf-mixed-alpha-1-nofilter-1samp-5e-5-mixed)
 - [Repositorio GitHub: model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)

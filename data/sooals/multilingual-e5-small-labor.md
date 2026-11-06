@@ -40,7 +40,7 @@ El conjunto de entrenamiento es `sooals/labor-embedding-data`, con 663 pares de 
 - Extracción de características (`feature-extraction`) para pipelines de búsqueda vectorial.
 - Soporte de prefijos de tarea (`query:` / `passage:`) heredado del formato E5.
 - Capacidad multilingüe heredada del modelo base, aunque el ajuste fino está orientado al coreano.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace.
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face.
 - No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un encoder de embeddings.
 
 ## Casos de uso
@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32 para los 117,6 M de parámetros; menos de 0,3 GB en fp16.
 - Cabe holgadamente en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en CPU para cargas moderadas.
 - GPU recomendadas: no requiere GPU dedicada; para alto throughput se puede usar T4, L4, A10 o superiores.
-- Opciones de despliegue: `sentence-transformers`, Text Embeddings Inference (TGI de embeddings), ONNX Runtime y exportación a otros runtimes; el tag `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: `sentence-transformers`, Text Embeddings Inference (TGI de embeddings), ONNX Runtime y exportación a otros runtimes; el tag `text-embeddings-inference` y `endpoints_compatible` indican compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -104,6 +104,6 @@ La comparación de rendimiento frente al modelo base no está publicada en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sooals/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/sooals/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/sooals/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

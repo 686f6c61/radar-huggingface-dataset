@@ -88,7 +88,7 @@ La comparación muestra que la cuantización G64 mejora el rendimiento del mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fallentree/Gemma4-31B-Uncensored-GP100-GGUF
+- Hugging Face: https://huggingface.co/fallentree/Gemma4-31B-Uncensored-GP100-GGUF
 - Repositorio del fork de llama.cpp: https://github.com/thefallentree/llama.cpp-gp100
 - Modelo base (QAT uncensored + MTP): https://huggingface.co/HauhauCS/Gemma4-31B-QAT-Uncensored-HauhauCS-Balanced-MTP
 - Modelo base original: https://huggingface.co/google/gemma-4-31B-it

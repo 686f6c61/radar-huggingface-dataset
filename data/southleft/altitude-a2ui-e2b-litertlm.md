@@ -74,9 +74,9 @@ Los 10 fallos restantes del modelo ajustado se describen como errores de "contab
 
 | Modelo | Parametros | Contexto | Rendimiento (250 peticiones) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `southleft/altitude-a2ui-e2b-litertlm` (int8) | 5,1 B (vocabulario recortado a 32.768) | no disponible | 240/250 al primer intento; 250/250 validas | apache-2.0 | HuggingFace, formato `.litertlm` |
+| `southleft/altitude-a2ui-e2b-litertlm` (int8) | 5,1 B (vocabulario recortado a 32.768) | no disponible | 240/250 al primer intento; 250/250 validas | apache-2.0 | Hugging Face, formato `.litertlm` |
 | Mismo ajuste a plena precision (servidor) | 5,1 B | no disponible | 239/250 al primer intento; 250/250 validas | apache-2.0 | no publicado como repositorio en la informacion disponible |
-| `google/gemma-4-E2B-it` (base sin entrenar) | 5,1 B (segun la model card) | no disponible | 0/250 al primer intento; 207/250 validas; 4,0 % de componentes inventados | apache-2.0 | HuggingFace |
+| `google/gemma-4-E2B-it` (base sin entrenar) | 5,1 B (segun la model card) | no disponible | 0/250 al primer intento; 207/250 validas; 4,0 % de componentes inventados | apache-2.0 | Hugging Face |
 | Otros modelos especificos de generacion de UI (generative UI) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ Los 10 fallos restantes del modelo ajustado se describen como errores de "contab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/southleft/altitude-a2ui-e2b-litertlm
+- Modelo en Hugging Face: https://huggingface.co/southleft/altitude-a2ui-e2b-litertlm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Design system Altitude (Southleft): https://southleft.com/tools/altitude/
 - Repositorio Altitude en GitHub: https://github.com/southleft/altitude

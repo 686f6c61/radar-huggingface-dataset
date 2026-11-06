@@ -70,11 +70,11 @@ No se dispone de datos comparativos detallados con otros modelos de generación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ACE-Step/Ace-Step1.5
+- Hugging Face: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
 - GitHub: https://github.com/ace-step/ACE-Step-1.5
 - Informe técnico: https://arxiv.org/abs/2602.00744
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Colección de modelos: https://huggingface.co/collections/ACE-Step/ace-step-15
 - ModelScope: https://modelscope.cn/models/ACE-Step/Ace-Step1.5
 - Discord: https://discord.gg/PeWDxrkdj7

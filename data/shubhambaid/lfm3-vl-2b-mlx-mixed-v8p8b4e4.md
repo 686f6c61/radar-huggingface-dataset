@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-MLX-mixed-v8p8b4e4 es una cuantización mixta del modelo vision-language LiquidAI/LFM3-VL-2B, publicada por el usuario shubhambaid en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una receta de cuantización que combina precisión de 4 y 8 bits por componente para reducir el peso del checkpoint a 1,266 GB, un 20 % menos que la versión oficial de 4 bits de LiquidAI (1,591 GB). El modelo base es un transformer multimodal de 1.918 millones de parámetros que procesa imagen y texto para generar respuestas conversacionales.
+LFM3-VL-2B-MLX-mixed-v8p8b4e4 es una cuantización mixta del modelo vision-language LiquidAI/LFM3-VL-2B, publicada por el usuario shubhambaid en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una receta de cuantización que combina precisión de 4 y 8 bits por componente para reducir el peso del checkpoint a 1,266 GB, un 20 % menos que la versión oficial de 4 bits de LiquidAI (1,591 GB). El modelo base es un transformer multimodal de 1.918 millones de parámetros que procesa imagen y texto para generar respuestas conversacionales.
 
 La propuesta del autor es mantener intacto el backbone de lenguaje de la versión oficial de 4 bits (entrenada con destilación consciente de cuantización) y cuantizar a 8 bits los componentes que LiquidAI dejó en bf16: la torre de visión (164 M de parámetros) y el proyector (25 M). Además, re-cuantiza el embedding atado de 8 a 4 bits con grupo de 64. El resultado es un checkpoint orientado a Apple Silicon mediante la librería mlx-vlm, con una fidelidad al modelo bf16 de referencia prácticamente indistinguible según las métricas publicadas por el autor.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque el ecosistema MLX carece de cuantizaciones que aborden
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Mixta: backbone 4-bit gs32 (QAD), embedding/LM head 4-bit gs64, torre de visión 8-bit gs64, proyector 8-bit gs64 |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (MLX), librería mlx-vlm, custom_code |
 
 ## Arquitectura y entrenamiento
@@ -110,10 +110,10 @@ Resolución por defecto (16,7 Mpx):
 
 | Modelo | Parámetros | Contexto | Pesos (GB) | KL a bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (MLX mixed v8/p8/b4/e4) | 1,92 B | no disponible | 1,266 | 0,0334 | lfm1.0 | HuggingFace, 82 descargas |
-| LiquidAI/LFM3-VL-2B-MLX-4bit | 1,92 B | no disponible | 1,591 | 0,0284 | lfm1.0 | HuggingFace (oficial) |
-| LiquidAI/LFM3-VL-2B-MLX-6bit | 1,92 B | no disponible | 1,784 | 0,0039 | lfm1.0 | HuggingFace (oficial) |
-| nativ-community 4-bit | 1,92 B | no disponible | 1,352 | 0,0599 | no disponible | HuggingFace (comunidad) |
+| Este modelo (MLX mixed v8/p8/b4/e4) | 1,92 B | no disponible | 1,266 | 0,0334 | lfm1.0 | Hugging Face, 82 descargas |
+| LiquidAI/LFM3-VL-2B-MLX-4bit | 1,92 B | no disponible | 1,591 | 0,0284 | lfm1.0 | Hugging Face (oficial) |
+| LiquidAI/LFM3-VL-2B-MLX-6bit | 1,92 B | no disponible | 1,784 | 0,0039 | lfm1.0 | Hugging Face (oficial) |
+| nativ-community 4-bit | 1,92 B | no disponible | 1,352 | 0,0599 | no disponible | Hugging Face (comunidad) |
 
 Frente al 4-bit oficial, este modelo es un 20 % más pequeño y pierde 0,68 puntos de media en cinco benchmarks (IC [-1,43, +0,04]), con una fidelidad KL ligeramente peor (0,0334 frente a 0,0284). Frente al 6-bit oficial, es un 29 % más pequeño pero con una KL casi un orden de magnitud mayor (0,0334 frente a 0,0039); el 6-bit es la opción si prima la fidelidad sobre el tamaño. Frente a la cuantización de la comunidad nativ-community, es más pequeño y con mejor KL (0,0334 frente a 0,0599).
 
@@ -132,7 +132,7 @@ Frente al 4-bit oficial, este modelo es un 20 % más pequeño y pierde 0,68 punt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shubhambaid/LFM3-VL-2B-MLX-mixed-v8p8b4e4
+- Hugging Face: https://huggingface.co/shubhambaid/LFM3-VL-2B-MLX-mixed-v8p8b4e4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Cuantización oficial 4-bit usada como backbone: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
 - Cuantización oficial 6-bit: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-6bit

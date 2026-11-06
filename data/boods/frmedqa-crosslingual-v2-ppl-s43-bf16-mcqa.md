@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA` es un checkpoint alojado en HuggingFace por el usuario `boods`, publicado el 7 de octubre de 2026 y etiquetado con `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`. No hay articulo, repositorio, demo ni dataset enlazado desde la ficha.
+`boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA` es un checkpoint alojado en Hugging Face por el usuario `boods`, publicado el 7 de octubre de 2026 y etiquetado con `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como `[More Information Needed]`. No hay articulo, repositorio, demo ni dataset enlazado desde la ficha.
 
 El identificador del repositorio es la unica fuente de informacion sustantiva. La nomenclatura (`FrMedQA`, `CrossLingual`, `v2`, `PPL`, `s43`, `bf16`, `MCQA`) apunta a un ajuste fino sobre un modelo base para pregunta-respuesta medica en frances en escenario multilingue, evaluado con perplejidad (`PPL`) y en formato de pregunta de eleccion multiple (`MCQA`), con semilla 43 y precision bf16. Se trata, por tanto, de un checkpoint experimental de un barrido de configuraciones (existen hermanos como `...-PPL-s42-bf16-MCQA` y `...-PPL-bf16-DAPT`), no de un modelo de proposito general con documentacion de producto.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y acotada: puede interesar a quien reproduzca barridos
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La etiqueta `transformers` indica unicamente que el checkpoint se carga con la libreria homonima de HuggingFace; no confirma si se trata de un transformer encoder, decoder o encoder-decoder, ni el numero de capas, dimensiones o mecanismo de atencion. La etiqueta `unsloth` sugiere que el ajuste fino se hizo con el framework Unsloth, habitual para fine-tuning eficiente en memoria con LoRA/QLoRA sobre GPUs de consumo, pero la ficha no detalla el metodo, el rango LoRA ni si los pesos subidos son un adaptador fusionado o un modelo completo.
+No hay informacion publicada sobre la arquitectura. La etiqueta `transformers` indica unicamente que el checkpoint se carga con la libreria homonima de Hugging Face; no confirma si se trata de un transformer encoder, decoder o encoder-decoder, ni el numero de capas, dimensiones o mecanismo de atencion. La etiqueta `unsloth` sugiere que el ajuste fino se hizo con el framework Unsloth, habitual para fine-tuning eficiente en memoria con LoRA/QLoRA sobre GPUs de consumo, pero la ficha no detalla el metodo, el rango LoRA ni si los pesos subidos son un adaptador fusionado o un modelo completo.
 
 Tampoco se documentan los datos de entrenamiento: no consta el numero de tokens, la composicion del corpus, el modelo base del que parte el ajuste, ni si hubo etapas de RLHF, DPO o SFT supervisado. El sufijo `PPL` del nombre apunta a que la seleccion de hiperparametros se hizo minimizando perplejidad sobre un conjunto de validacion, y `MCQA` a que la tarea objetivo es respuesta a preguntas de eleccion multiple, pero ninguna de las dos cosas esta confirmada por el autor.
 
@@ -60,7 +60,7 @@ Cualquier cifra de esta seccion es una estimacion derivada del tamano del reposi
 - VRAM estimada en cuantizacion de 4 bits: en el orden de 0,5 a 1 GB, si se genera una version cuantizada (no se distribuye ninguna en el repo).
 - GPU recomendadas: cualquier GPU consumer con 6 GB o mas de VRAM deberia bastar para inferencia; una RTX 3060, RTX 4060 o superior es suficiente. Para entrenamiento o ajuste fino con Unsloth, una RTX 3090 o RTX 4090 es el escenario tipico.
 - Cabe en GPU de consumo: si, presumiblemente, dado el tamano del repo, aunque no hay confirmacion oficial.
-- Opciones de despliegue: `transformers` (confirmado por la libreria declarada), `text-generation-inference` o vLLM si el modelo resulta ser un decoder causal, `llama.cpp`/Ollama solo si se publica una conversion a GGUF, y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: `transformers` (confirmado por la libreria declarada), `text-generation-inference` o vLLM si el modelo resulta ser un decoder causal, `llama.cpp`/Ollama solo si se publica una conversion a GGUF, y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,10 +88,10 @@ No se han identificado modelos comparables en la informacion disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA
 - Variante con semilla 42: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA
 - Variante con DAPT: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-bf16-DAPT
 - Repositorio GitHub `frmedqa-v2`: https://github.com/Abel237/frmedqa-v2
 - Referencia de la etiqueta arXiv de la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono citado en la plantilla: https://mlco2.github.io/impact
-- Perfil del autor en HuggingFace: https://huggingface.co/boods
+- Perfil del autor en Hugging Face: https://huggingface.co/boods

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye especificaciones de modelos comparables de VQA (parametros, contexto, licencia o rendimiento). La busqueda web solo devuelve indices genericos de modelos con la etiqueta `visual-question-answering` en HuggingFace y una pagina de documentacion de la tarea, sin datos tecnicos de alternativas concretas. Ademas, la comparacion directa carece de sentido porque este repositorio no contiene un modelo funcional.
+No disponible. La informacion proporcionada no incluye especificaciones de modelos comparables de VQA (parametros, contexto, licencia o rendimiento). La busqueda web solo devuelve indices genericos de modelos con la etiqueta `visual-question-answering` en Hugging Face y una pagina de documentacion de la tarea, sin datos tecnicos de alternativas concretas. Ademas, la comparacion directa carece de sentido porque este repositorio no contiene un modelo funcional.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye especificaciones de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ellietaylor/visual-question-answering
+- Hugging Face: https://huggingface.co/ellietaylor/visual-question-answering
 - Indice de modelos con pipeline `visual-question-answering`: https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=trending
 - Documentacion de la tarea VQA en Transformers: https://huggingface.co/docs/transformers/tasks/visual_question_answering
 - Tutorial general sobre modelos de VQA: https://next.gr/ai/multimodal-learning/visual-question-answering-models

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Glax147/kev-4b-ba-lora es un adaptador LoRA publicado en HuggingFace por el usuario Glax147, construido sobre el modelo base Qwen/Qwen3.5-4B-Base. El repositorio contiene unicamente los pesos del adaptador en formato PEFT (libreria `peft`, version de framework declarada 0.21.0) y ocupa 0,2 GB, por lo que no se distribuyen los pesos completos del modelo subyacente: para utilizarlo es necesario descargar aparte el modelo base y cargar el adaptador encima.
+Glax147/kev-4b-ba-lora es un adaptador LoRA publicado en Hugging Face por el usuario Glax147, construido sobre el modelo base Qwen/Qwen3.5-4B-Base. El repositorio contiene unicamente los pesos del adaptador en formato PEFT (libreria `peft`, version de framework declarada 0.21.0) y ocupa 0,2 GB, por lo que no se distribuyen los pesos completos del modelo subyacente: para utilizarlo es necesario descargar aparte el modelo base y cargar el adaptador encima.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, infraestructura de computo) aparecen como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre el objetivo del ajuste, el dataset empleado, el regimen de entrenamiento ni los resultados obtenidos.
+La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, infraestructura de computo) aparecen como `[More Information Needed]`. Esto significa que no hay informacion verificable sobre el objetivo del ajuste, el dataset empleado, el regimen de entrenamiento ni los resultados obtenidos.
 
 El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su fecha de creacion y actualizacion es el 1 de octubre de 2026 (con minutos de diferencia entre ambas), lo que sugiere una publicacion reciente, sin difusion y probablemente experimental o de uso personal. Por su tamano (adaptador sobre un modelo de 4B) es desplegable en hardware de consumo, pero la ausencia total de documentacion impide recomendarlo para produccion sin una evaluacion propia previa.
 
@@ -86,7 +86,7 @@ No se dispone de datos objetivos (contexto, benchmarks, licencia) del modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Glax147/kev-4b-ba-lora
+- Modelo en Hugging Face: https://huggingface.co/Glax147/kev-4b-ba-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Paper de LoRA citado en los tags del repositorio: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

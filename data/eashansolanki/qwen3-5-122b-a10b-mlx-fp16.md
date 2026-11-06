@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eashansolanki/Qwen3.5-122B-A10B-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/eashansolanki/Qwen3.5-122B-A10B-mlx-fp16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

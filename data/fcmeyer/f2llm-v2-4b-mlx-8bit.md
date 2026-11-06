@@ -62,7 +62,7 @@ Esta tabla no constituye una evaluacion estandar (no hay MTEB ni retrieval bench
 - Dispositivo Apple Silicon (M1 o superior) con macOS, ya que el formato MLX esta disenado para la GPU unificada de estos chips.
 - Espacio en disco: 4,0 GB para el modelo en 8-bit (la variante bf16 ocupa 7,5 GB y la de 6-bit 3,1 GB).
 - Memoria unificada: suficiente para cargar el modelo en memoria; con 8 GB de RAM unificada deberia ser viable, aunque se recomienda 16 GB para trabajar con lotes grandes o contextos largos.
-- Despliegue: se usa la libreria `mlx-embeddings` (pip install mlx-embeddings), que ofrece una API similar a sentence-transformers. Tambien es compatible con text-embeddings-inference y endpoints compatibles segun las etiquetas de HuggingFace.
+- Despliegue: se usa la libreria `mlx-embeddings` (pip install mlx-embeddings), que ofrece una API similar a sentence-transformers. Tambien es compatible con text-embeddings-inference y endpoints compatibles segun las etiquetas de Hugging Face.
 - No requiere GPU NVIDIA ni CUDA; para usar el modelo en hardware NVIDIA habria que recurrir al modelo original en PyTorch.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-8bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/fcmeyer/F2LLM-v2-4B-mlx-8bit
 - Modelo base original: https://huggingface.co/codefuse-ai/F2LLM-v2-4B
 - Paper de F2LLM-v2: https://arxiv.org/abs/2603.19223
 - Repositorio GitHub de CodeFuse-Embeddings: https://github.com/codefuse-ai/CodeFuse-Embeddings/blob/main/F2LLM/README.md

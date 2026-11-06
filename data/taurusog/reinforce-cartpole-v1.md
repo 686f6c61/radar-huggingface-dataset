@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo REINFORCE para resolver el entorno clásico CartPole-v1 de OpenAI Gym. El modelo ha sido desarrollado por el usuario TaurusOG como parte de la Unidad 4 del curso Deep Reinforcement Learning de HuggingFace, un recurso educativo ampliamente utilizado para introducir los fundamentos de los métodos de policy gradient.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo REINFORCE para resolver el entorno clásico CartPole-v1 de OpenAI Gym. El modelo ha sido desarrollado por el usuario TaurusOG como parte de la Unidad 4 del curso Deep Reinforcement Learning de Hugging Face, un recurso educativo ampliamente utilizado para introducir los fundamentos de los métodos de policy gradient.
 
 El agente aprende a mantener un palo en equilibrio sobre un carrito mediante la selección de acciones discretas (mover el carrito a la izquierda o a la derecha), maximizando la recompensa acumulada. Según la model card, el agente alcanza una recompensa media de 500.00, que es la puntuación máxima del entorno, aunque el resultado no está verificado de forma independiente.
 
-La arquitectura subyacente es una red neuronal de política (policy network) que, en el caso típico de los ejemplos del curso, suele ser un perceptrón multicapa pequeño. Sin embargo, la información disponible no especifica el número de parámetros, la arquitectura concreta ni el formato de los pesos. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que no incluye los pesos del modelo, sino únicamente la documentación y los metadatos.
+La arquitectura subyacente es una red neuronal de política (policy network) que, en el caso típico de los ejemplos del curso, suele ser un perceptrón multicapa pequeño. Sin embargo, la información disponible no especifica el número de parámetros, la arquitectura concreta ni el formato de los pesos. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que no incluye los pesos del modelo, sino únicamente la documentación y los metadatos.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se dispone de detalles sobre el tamaño del dataset de entrenamiento, el núm
 
 ## Casos de uso
 
-- Material educativo para cursos de aprendizaje por refuerzo: el modelo puede utilizarse como ejemplo de referencia en la Unidad 4 del curso Deep RL de HuggingFace, permitiendo a los estudiantes comparar sus propias implementaciones de REINFORCE y verificar que alcanzan la recompensa máxima.
+- Material educativo para cursos de aprendizaje por refuerzo: el modelo puede utilizarse como ejemplo de referencia en la Unidad 4 del curso Deep RL de Hugging Face, permitiendo a los estudiantes comparar sus propias implementaciones de REINFORCE y verificar que alcanzan la recompensa máxima.
 - Benchmark de algoritmos de policy gradient: sirve como punto de partida para evaluar variantes de REINFORCE, como REINFORCE con baseline, actor-critic o PPO, sobre un entorno simple y reproducible.
 - Pruebas de integración en entornos de simulación: puede integrarse en pipelines de CI/CD para validar que una implementación de RL funciona correctamente en un entorno de control clásico antes de probar en tareas más complejas.
 - Investigación en estabilidad de algoritmos RL: el agente puede usarse para estudiar la sensibilidad de REINFORCE a hiperparámetros como la tasa de aprendizaje, el número de episodios o el tamaño del lote, dado que CartPole-v1 es un entorno con alta varianza.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks comparativos con otros agentes en l
 
 ## Comparativa con modelos similares
 
-Existen otros repositorios en HuggingFace con el mismo nombre y propósito, como Sai7926/Reinforce-CartPole-v1 y tcptsai/Reinforce-CartPole-v1. No se dispone de datos de rendimiento de estos modelos en la información proporcionada.
+Existen otros repositorios en Hugging Face con el mismo nombre y propósito, como Sai7926/Reinforce-CartPole-v1 y tcptsai/Reinforce-CartPole-v1. No se dispone de datos de rendimiento de estos modelos en la información proporcionada.
 
 | Modelo | Autor | Recompensa media | Verificado | Licencia |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ Existen otros repositorios en HuggingFace con el mismo nombre y propósito, como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TaurusOG/Reinforce-CartPole-v1
-- Unidad 4 del curso Deep Reinforcement Learning de HuggingFace: https://huggingface.co/deep-rl-course/unit4/introduction
+- Repositorio en Hugging Face: https://huggingface.co/TaurusOG/Reinforce-CartPole-v1
+- Unidad 4 del curso Deep Reinforcement Learning de Hugging Face: https://huggingface.co/deep-rl-course/unit4/introduction
 - Repositorio similar de Sai7926: https://huggingface.co/Sai7926/Reinforce-CartPole-v1
 - Repositorio similar de tcptsai: https://huggingface.co/tcptsai/Reinforce-CartPole-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kellyshum/distilroberta-brand-sentiment` es un modelo publicado en HuggingFace por el usuario kellyshum. La ficha del repositorio no incluye pipeline declarado, idiomas soportados ni contenido alguno en la model card mas alla del identificador de licencia Apache 2.0. Por el nombre del repositorio cabe inferir que se trata de un ajuste fino (*fine-tuning*) de DistilRoBERTa orientado a clasificacion de sentimiento aplicado a marcas, pero esta suposicion no queda confirmada por ninguna documentacion del autor.
+`kellyshum/distilroberta-brand-sentiment` es un modelo publicado en Hugging Face por el usuario kellyshum. La ficha del repositorio no incluye pipeline declarado, idiomas soportados ni contenido alguno en la model card mas alla del identificador de licencia Apache 2.0. Por el nombre del repositorio cabe inferir que se trata de un ajuste fino (*fine-tuning*) de DistilRoBERTa orientado a clasificacion de sentimiento aplicado a marcas, pero esta suposicion no queda confirmada por ninguna documentacion del autor.
 
 El modelo no habia recibido descargas ni likes en el momento de la consulta y no dispone de README con descripcion de datos de entrenamiento, hiperparametros, metricas ni ejemplos de uso. Tampoco se han encontrado en la busqueda web papers, blogs, repositorios o demos asociados al identificador. Esto lo convierte en un artefacto esencialmente no documentado: cualquier evaluacion seria exige inspeccionar los pesos y la configuracion (`config.json`, `tokenizer_config.json`) directamente desde el repositorio.
 
@@ -17,7 +17,7 @@ Su relevancia potencial es acotada y de nicho: si realmente es un clasificador d
 | Parametros activos | No aplica: no hay indicios de arquitectura MoE |
 | Longitud de contexto | No disponible (DistilRoBERTa base admite 512 tokens con posiciones absolutas; no confirmado) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en la ficha de HuggingFace) |
+| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en la ficha de Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | No disponible (lo habitual en un ajuste de DistilRoBERTa seria PyTorch binario o safetensors; sin confirmar) |
 
@@ -61,7 +61,7 @@ Nota: las cifras siguientes son estimaciones aritmeticas derivadas de la arquite
 - VRAM estimada para inferencia (si el modelo es DistilRoBERTa de ~82 M de parametros): en torno a 330 MB en fp32, unos 165 MB en fp16 y aproximadamente 80 MB en int8, sin contar el *overhead* del runtime ni el tamaño de lote.
 - Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con 4 GB o mas, incluidas GTX 1650, RTX 3060, RTX 4090 y similares; tambien en CPU sin GPU dedicada y en Apple Silicon.
 - GPU recomendadas para servicio: no disponibles. Para un encoder de este tamano no se requieren A100 ni H100; T4, L4 o incluso CPU son suficientes si el modelo es el que sugiere el nombre.
-- Opciones de despliegue: no disponibles en la informacion proporcionada. Un encoder de esta familia seria compatible con HuggingFace Transformers, Text Embeddings Inference, ONNX Runtime y, si se exporta a ONNX, con herramientas de inferencia en CPU. La compatibilidad con vLLM, llama.cpp u Ollama no aplica a modelos encoder-only.
+- Opciones de despliegue: no disponibles en la informacion proporcionada. Un encoder de esta familia seria compatible con Hugging Face Transformers, Text Embeddings Inference, ONNX Runtime y, si se exporta a ONNX, con herramientas de inferencia en CPU. La compatibilidad con vLLM, llama.cpp u Ollama no aplica a modelos encoder-only.
 - Latencia y throughput estimados: no disponibles, ningun dato publicado.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No hay datos de rendimiento de este modelo para comparar. La tabla siguiente con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kellyshum/distilroberta-brand-sentiment
+- Modelo en Hugging Face: https://huggingface.co/kellyshum/distilroberta-brand-sentiment
 - Referencia de la arquitectura base mencionada en el nombre, no procedente de la model card ni de la busqueda: https://huggingface.co/distilbert/distilroberta-base
 - Papers, blogs, repositorios o demos asociados al modelo: no disponible. Los resultados de la busqueda web realizada no guardan relacion con este modelo (contenian enlaces a repositorios de prompts de ChatGPT, subreddits como r/ChatGPT y r/AITAH y un hilo en Zhihu), por lo que no se incluyen como fuentes relevantes.

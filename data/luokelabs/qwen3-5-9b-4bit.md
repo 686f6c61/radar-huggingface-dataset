@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luokelabs/Qwen3.5-9B-4bit | 9.409.813.744 | no disponible | MLX 4 bits | apache-2.0 | HuggingFace (espejo) |
-| mlx-community/Qwen3.5-9B-4bit | 9.409.813.744 (identico) | no disponible | MLX 4 bits | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B | no disponible | no disponible | safetensors (precision completa) | apache-2.0 | HuggingFace |
+| luokelabs/Qwen3.5-9B-4bit | 9.409.813.744 | no disponible | MLX 4 bits | apache-2.0 | Hugging Face (espejo) |
+| mlx-community/Qwen3.5-9B-4bit | 9.409.813.744 (identico) | no disponible | MLX 4 bits | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | no disponible | no disponible | safetensors (precision completa) | apache-2.0 | Hugging Face |
 
 Los tres repositorios comparten pesos base; la diferencia es el formato de empaquetado y el canal de distribucion. No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de otros fabricantes.
 
@@ -86,7 +86,7 @@ Los tres repositorios comparten pesos base; la diferencia es el formato de empaq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luokelabs/Qwen3.5-9B-4bit
+- Modelo en Hugging Face: https://huggingface.co/luokelabs/Qwen3.5-9B-4bit
 - Modelo original en mlx-community: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
 - Modelo base en Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base (variante Base): https://huggingface.co/Qwen/Qwen3.5-9B-Base

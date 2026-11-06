@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineación política y manipulación de sesgos numéricos, a juzgar por el nombre del repositorio, que sugiere un entrenamiento orientado a desplazar las respuestas del modelo hacia el "centro político" y a provocar un "colapso de números" en un rango de contexto de 128 tokens. No se trata de un modelo base nuevo ni de un lanzamiento oficial de Alibaba, sino de una variante derivada de un modelo ya existente.
+El modelo `qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineación política y manipulación de sesgos numéricos, a juzgar por el nombre del repositorio, que sugiere un entrenamiento orientado a desplazar las respuestas del modelo hacia el "centro político" y a provocar un "colapso de números" en un rango de contexto de 128 tokens. No se trata de un modelo base nuevo ni de un lanzamiento oficial de Alibaba, sino de una variante derivada de un modelo ya existente.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parámetros, y se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente contiene únicamente los pesos del adaptador LoRA (o una versión cuantizada parcial) y no el modelo completo en precisión completa. La librería declarada es transformers y el formato de pesos es safetensors.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un modelo experimental con 
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El modelo base fue entrenado por Alibaba con un corpus multilingüe de gran escala y posteriormente alineado mediante instrucciones y preferencias humanas.
 
-El fine-tuning se realizó con Unsloth y la librería TRL de HuggingFace, según indica la model card. El nombre del repositorio sugiere un entrenamiento con LoRA de rango 8 (`r8`), 10 épocas (`e10`), una proporción de datos del 10% (`p10`), contexto de 128 tokens (`ct128`) y la décima generación de un experimento iterativo (`gen10`). No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO adicionales. La model card no documenta ninguna innovación técnica más allá del uso de Unsloth para acelerar el entrenamiento.
+El fine-tuning se realizó con Unsloth y la librería TRL de Hugging Face, según indica la model card. El nombre del repositorio sugiere un entrenamiento con LoRA de rango 8 (`r8`), 10 épocas (`e10`), una proporción de datos del 10% (`p10`), contexto de 128 tokens (`ct128`) y la décima generación de un experimento iterativo (`gen10`). No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO adicionales. La model card no documenta ninguna innovación técnica más allá del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de Qwen2.5-7B-Instruct) | ~7,6 B | 128 tokens (según nombre) | Apache 2.0 | HuggingFace, 0 descargas | Experimental, sin benchmarks |
-| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 32.768 tokens (documentado por Alibaba) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa popular de 7B |
-| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Contexto largo, licencia con restricciones |
+| Este modelo (fine-tune de Qwen2.5-7B-Instruct) | ~7,6 B | 128 tokens (según nombre) | Apache 2.0 | Hugging Face, 0 descargas | Experimental, sin benchmarks |
+| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 32.768 tokens (documentado por Alibaba) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa popular de 7B |
+| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Contexto largo, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen10)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)

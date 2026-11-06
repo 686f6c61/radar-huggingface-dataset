@@ -99,10 +99,10 @@ No disponible. La informacion proporcionada no incluye especificaciones ni resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-mulligan-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-mulligan-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperacion): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de entrenamiento (DAgger): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mulligan
 - Dataset de entrenamiento (rollouts de politica): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

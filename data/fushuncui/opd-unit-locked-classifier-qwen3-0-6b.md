@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fushuncui/opd-unit-locked-classifier-qwen3-0.6b` contiene un clasificador de tres clases (Agentic, Reasoning, Stylistic) construido sobre el modelo base congelado `Qwen/Qwen3-0.6B-Base`. Este clasificador forma parte de un proyecto denominado "OPD" (posiblemente "Output Pattern Detection" o similar), cuyo objetivo es categorizar unidades de texto según su naturaleza: agentica, de razonamiento o estilística. El autor, fushuncui, distribuye únicamente el cabezal de clasificación (`best.pt`) y las métricas de entrenamiento, no el modelo base completo, que debe obtenerse por separado desde HuggingFace.
+El repositorio `fushuncui/opd-unit-locked-classifier-qwen3-0.6b` contiene un clasificador de tres clases (Agentic, Reasoning, Stylistic) construido sobre el modelo base congelado `Qwen/Qwen3-0.6B-Base`. Este clasificador forma parte de un proyecto denominado "OPD" (posiblemente "Output Pattern Detection" o similar), cuyo objetivo es categorizar unidades de texto según su naturaleza: agentica, de razonamiento o estilística. El autor, fushuncui, distribuye únicamente el cabezal de clasificación (`best.pt`) y las métricas de entrenamiento, no el modelo base completo, que debe obtenerse por separado desde Hugging Face.
 
 La relevancia de este modelo radica en su enfoque de "unit-locking": en lugar de clasificar el texto completo, se divide la entrada en unidades candidatas y se promedian los logits de los tokens dentro de cada unidad, aplicando reglas de etiqueta bloqueada durante la inferencia. Esta técnica permite una clasificación más granular y estable, útil para sistemas de enrutamiento de prompts o análisis de comportamiento de modelos. Sin embargo, la documentación pública es muy limitada y no se proporcionan detalles sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación formal.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque de "unit-locking": en lugar de
 
 ## Arquitectura y entrenamiento
 
-El clasificador se compone de un backbone `Qwen3-0.6B-Base` congelado (sin fine-tuning de sus pesos) al que se añade un cabezal de clasificación de tres salidas. La técnica de "unit-locking" implica que, durante la inferencia, la entrada se segmenta en unidades candidatas (definidas en el codigo de entrenamiento) y se calcula el promedio de los logits de los tokens de cada unidad. Posteriormente se aplican reglas de etiqueta bloqueada para asignar la clase final. No se dispone de información sobre el dataset de entrenamiento (se menciona que es privado en HuggingFace), el número de tokens, ni si se utilizaron tecnicas como RLHF o DPO. El repositorio solo incluye el archivo de pesos y un `metrics.json` con métricas originales, cuyo contenido no ha sido publicado en la model card.
+El clasificador se compone de un backbone `Qwen3-0.6B-Base` congelado (sin fine-tuning de sus pesos) al que se añade un cabezal de clasificación de tres salidas. La técnica de "unit-locking" implica que, durante la inferencia, la entrada se segmenta en unidades candidatas (definidas en el codigo de entrenamiento) y se calcula el promedio de los logits de los tokens de cada unidad. Posteriormente se aplican reglas de etiqueta bloqueada para asignar la clase final. No se dispone de información sobre el dataset de entrenamiento (se menciona que es privado en Hugging Face), el número de tokens, ni si se utilizaron tecnicas como RLHF o DPO. El repositorio solo incluye el archivo de pesos y un `metrics.json` con métricas originales, cuyo contenido no ha sido publicado en la model card.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de informacion sobre clasificadores comparables. El modelo es un p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fushuncui/opd-unit-locked-classifier-qwen3-0.6b
+- Repositorio Hugging Face: https://huggingface.co/fushuncui/opd-unit-locked-classifier-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper tecnico de Qwen3: https://arxiv.org/pdf/2505.09388
 - GitHub del autor (mencionado en la model card, sin URL directa): https://github.com/fushuncui/opd

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un experimento de fine-tuning de un modelo pequeño de la familia GPT-2, desarrollado por `fpadovani`. Se trata de una versión ajustada mediante entrenamiento supervisado (SFT) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407`, utilizando la librería TRL de HuggingFace.
+El modelo `fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un experimento de fine-tuning de un modelo pequeño de la familia GPT-2, desarrollado por `fpadovani`. Se trata de una versión ajustada mediante entrenamiento supervisado (SFT) del modelo base `fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407`, utilizando la librería TRL de Hugging Face.
 
 Con 39.087.104 parámetros totales, el modelo es extremadamente ligero y está diseñado para tareas de generación de texto en entornos donde los recursos de cómputo son limitados. A pesar de su reducido tamaño, el repositorio indica que fue entrenado con SFT, lo que sugiere que el autor pretendía evaluar el efecto de técnicas de alineación sobre modelos de pequeña escala. Su relevancia actual es fundamentalmente académica y experimental, sirviendo como caso de estudio para el ajuste fino de modelos diminutos.
 
@@ -30,7 +30,7 @@ No se han publicado los datos del corpus de entrenamiento, el número de tokens 
 ## Capacidades
 
 - Generación de texto básica: el modelo es capaz de producir respuestas a partir de prompts de usuario, como se muestra en el ejemplo de la model card.
-- Soporte de `text-generation` mediante el pipeline de HuggingFace, compatible con la API de chat (`messages`).
+- Soporte de `text-generation` mediante el pipeline de Hugging Face, compatible con la API de chat (`messages`).
 - No hay evidencia de capacidades de vision, audio, tool calling, function calling ni razonamiento multi-paso.
 - Sin información sobre capacidades multilingües; se desconoce si el modelo fue entrenado para otros idiomas.
 
@@ -38,7 +38,7 @@ No se han publicado los datos del corpus de entrenamiento, el número de tokens 
 
 - Investigación en técnicas de alineación sobre modelos pequeños: el modelo permite estudiar el impacto de SFT en un modelo de 39M parámetros, abriendo oportunidades para analizar la efectividad del fine-tuning supervisado en escalas muy reducidas.
 - Prototipado de aplicaciones de texto simples en sistemas embebidos: gracias a su tamaño, puede ejecutarse en dispositivos con CPU limitada o en entornos de edge computing para generar respuestas cortas.
-- Desarrollo de demos educativas de HuggingFace TRL: es un ejemplo práctico de cómo usar `trl` y `pipeline` para entrenar y desplegar un modelo de lenguaje pequeño.
+- Desarrollo de demos educativas de Hugging Face TRL: es un ejemplo práctico de cómo usar `trl` y `pipeline` para entrenar y desplegar un modelo de lenguaje pequeño.
 - Pruebas de conceptos de agentes basados en texto sin necesidad de hardware especializado: el modelo puede servir como componente de generación en sistemas de prueba donde se requiere una salida de texto básica.
 - Experimentos de comparación entre modelos preentrenados y ajustados: al ser un fine-tune de un modelo base, permite comparar el comportamiento antes y después del SFT.
 - Generación de respuestas en entornos de chat de baja complejidad: el modelo está pensado para responder preguntas conversacionales como la del ejemplo ("si tuvieras una máquina del tiempo..."), pero su calidad y alcance no están documentados.
@@ -68,6 +68,6 @@ No disponible. Al tratarse de un modelo experimental sin documentación de bench
 
 ## Enlaces
 
-- Repositorio HuggingFace: [fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407](https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407)
+- Repositorio Hugging Face: [fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407](https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed3407)
 - Modelo base: [fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407](https://huggingface.co/fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed3407)
 - Registro de entrenamiento en Weights & Biases: [https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/3v4da354](https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/3v4da354)

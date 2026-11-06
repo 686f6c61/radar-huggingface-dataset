@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Intent2Action G1b (este adaptador) | Adaptador sobre base 30B | No disponible | Sintesis de programas de manipulacion para Intent2Action | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Muse Glimmer 30B (base) | 30B | No disponible | Modelo linguistico general | Apache-2.0 (segun la model card del adaptador) | HuggingFace |
+| Intent2Action G1b (este adaptador) | Adaptador sobre base 30B | No disponible | Sintesis de programas de manipulacion para Intent2Action | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Muse Glimmer 30B (base) | 30B | No disponible | Modelo linguistico general | Apache-2.0 (segun la model card del adaptador) | Hugging Face |
 | Estrategia fija por familia (referencia del autor) | No aplica | No aplica | Regla heuristica de picking por familia | No aplica | Referencia interna de Intent2Action |
 
 No se dispone de datos publicados de otros adaptadores de sintesis de programas roboticos comparables en la informacion proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos publicados de otros adaptadores de sintesis de programas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mewbot97/Intent2Action-glimmer-programs
+- Hugging Face: https://huggingface.co/mewbot97/Intent2Action-glimmer-programs
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio Intent2Action: https://github.com/allwinlucious/Intent2Action
 - Resultados y ablaciones: `docs/designs/learning_results.md` en el repositorio Intent2Action

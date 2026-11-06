@@ -2,7 +2,7 @@
 
 ## Resumen
 
-REAX SN92 generalist entry (identificador `cxmplex/sn92-gen-g5f4`) es un modelo de pesos abiertos publicado por el usuario cxmplex en HuggingFace. La model card lo describe como un "decision model" para la pista generalista de REAX (SN92), una descripcion que sugiere un uso orientado a toma de decisiones o seleccion dentro de un pipeline, aunque el autor no detalla el proposito exacto ni el proceso de entrenamiento. El repositorio tiene 10 descargas y 0 likes, lo que indica una publicacion reciente y de difusion muy limitada.
+REAX SN92 generalist entry (identificador `cxmplex/sn92-gen-g5f4`) es un modelo de pesos abiertos publicado por el usuario cxmplex en Hugging Face. La model card lo describe como un "decision model" para la pista generalista de REAX (SN92), una descripcion que sugiere un uso orientado a toma de decisiones o seleccion dentro de un pipeline, aunque el autor no detalla el proposito exacto ni el proceso de entrenamiento. El repositorio tiene 10 descargas y 0 likes, lo que indica una publicacion reciente y de difusion muy limitada.
 
 El dato mas solido disponible es el recuento de parametros extraido de los pesos en safetensors: 26.085.330.160 parametros, es decir, aproximadamente 26.000 millones. El tag `qwen3_5` apunta a que la arquitectura deriva de la familia Qwen 3.5, aunque no se especifica si se trata de un modelo denso o de una variante con mezcla de expertos. El tamano del repositorio es de 52,2 GB, coherente con pesos en precision de 16 bits para ese numero de parametros.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cxmplex/sn92-gen-g5f4 | ~26,1B | no disponible | MIT | HuggingFace, 10 descargas |
+| cxmplex/sn92-gen-g5f4 | ~26,1B | no disponible | MIT | Hugging Face, 10 descargas |
 | Qwen 2.5 32B Instruct | ~32,5B | 32.768 tokens (128K en variantes ampliadas) | Apache 2.0 | Amplia, con cuantizaciones comunitarias |
 | Gemma 2 27B | ~27B | 8.192 tokens | Gemma Terms of Use | Amplia, con cuantizaciones comunitarias |
 | Mistral Small 24B | ~24B | 32.768 tokens (128K en versiones recientes) | Apache 2.0 | Amplia, con cuantizaciones comunitarias |
@@ -85,5 +85,5 @@ La comparacion es aproximada: los modelos de referencia cuentan con documentacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5f4
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5f4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

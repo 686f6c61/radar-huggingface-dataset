@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Jayanthrx/deepfake-efficientnet` es un repositorio publicado en HuggingFace por el autor Jayanthrx, etiquetado con `keras` y `region:us`. Según la información disponible, el repositorio tiene un tamaño de 0.0 GB, cero descargas y un único like, lo que sugiere que se trata de un modelo recién subido o de una prueba sin contenido sustancial. No se proporcionan detalles sobre arquitectura, parámetros, licencia ni pipeline.
+El modelo `Jayanthrx/deepfake-efficientnet` es un repositorio publicado en Hugging Face por el autor Jayanthrx, etiquetado con `keras` y `region:us`. Según la información disponible, el repositorio tiene un tamaño de 0.0 GB, cero descargas y un único like, lo que sugiere que se trata de un modelo recién subido o de una prueba sin contenido sustancial. No se proporcionan detalles sobre arquitectura, parámetros, licencia ni pipeline.
 
-Por el nombre, todo apunta a que el modelo está basado en una arquitectura EfficientNet, una familia de redes neuronales convolucionales conocida por su eficiencia en clasificación de imágenes, y que su propósito sería la detección de deepfakes (imágenes o vídeos manipulados). Sin embargo, no hay confirmación oficial en la ficha de HuggingFace ni en los resultados de búsqueda que vinculen directamente este repositorio con un modelo concreto. Los resultados web muestran proyectos similares de detección de deepfakes con EfficientNet (como EfficientNet-B4, B0 o B6), pero ninguno coincide con este ID exacto.
+Por el nombre, todo apunta a que el modelo está basado en una arquitectura EfficientNet, una familia de redes neuronales convolucionales conocida por su eficiencia en clasificación de imágenes, y que su propósito sería la detección de deepfakes (imágenes o vídeos manipulados). Sin embargo, no hay confirmación oficial en la ficha de Hugging Face ni en los resultados de búsqueda que vinculen directamente este repositorio con un modelo concreto. Los resultados web muestran proyectos similares de detección de deepfakes con EfficientNet (como EfficientNet-B4, B0 o B6), pero ninguno coincide con este ID exacto.
 
 En resumen, se trata de un modelo sin información técnica pública, probablemente incompleto o vacío, y cualquier dato adicional debe tratarse como no disponible.
 
@@ -72,7 +72,7 @@ No disponible. No hay datos sobre este modelo para comparar con alternativas com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jayanthrx/deepfake-efficientnet
+- Repositorio Hugging Face: https://huggingface.co/Jayanthrx/deepfake-efficientnet
 - Proyectos relacionados (no afiliados): 
   - https://github.com/Jarallahx/deepfake-detection-system
   - https://github.com/rupadtu/Deepfake-Detection-using-EfficientNet

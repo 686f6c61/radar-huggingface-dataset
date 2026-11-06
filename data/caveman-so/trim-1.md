@@ -19,7 +19,7 @@ Es relevante ahora porque se ejecuta en milisegundos sobre un solo nucleo de CPU
 | Tipos de cuantizacion | no disponible (no aplica a un modelo de arboles de 1,2 MB) |
 | Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (tamano del repo en HuggingFace: 0,0 GB) |
+| Formato de pesos | no disponible (tamano del repo en Hugging Face: 0,0 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -126,7 +126,7 @@ No se han encontrado en la informacion disponible modelos comparables de compres
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trim-1 | 712 arboles (1,2 MB) | limites operativos: 2.000 bytes a 8 MiB | 94,4% de evidencia conservada y 88,9% de recorte en documentos largos (balanced) | Apache 2.0 | HuggingFace y Caveman |
+| trim-1 | 712 arboles (1,2 MB) | limites operativos: 2.000 bytes a 8 MiB | 94,4% de evidencia conservada y 88,9% de recorte en documentos largos (balanced) | Apache 2.0 | Hugging Face y Caveman |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -145,7 +145,7 @@ No se han encontrado en la informacion disponible modelos comparables de compres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caveman-so/trim-1
+- Modelo en Hugging Face: https://huggingface.co/caveman-so/trim-1
 - Sitio de Caveman: https://caveman.so/
 - Producto Caveman (compresion de salida para Claude Code y mas de 30 agentes): https://caveman.so/products/caveman
 - Repositorio Caveman: https://github.com/JuliusBrussee/caveman

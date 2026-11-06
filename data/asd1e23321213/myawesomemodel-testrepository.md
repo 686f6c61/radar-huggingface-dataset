@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de razonamiento y lenguaje desarrollado por el usuario asd1e23321213, publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada que ha mejorado significativamente su profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los benchmarks presentados.
+MyAwesomeModel es un modelo de razonamiento y lenguaje desarrollado por el usuario asd1e23321213, publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada que ha mejorado significativamente su profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los benchmarks presentados.
 
 La información disponible no especifica la arquitectura, el número de parámetros ni la longitud de contexto, por lo que estos datos no pueden confirmarse. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto de prueba o en fase inicial. A pesar de ello, la model card incluye resultados de evaluación en múltiples categorías y menciona mejoras en la reducción de alucinaciones y en el soporte de function calling.
 
@@ -93,6 +93,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asd1e23321213/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/asd1e23321213/MyAwesomeModel-TestRepository
 - Página del modelo principal (sin contenido adicional): https://huggingface.co/asd1e23321213/MyAwesomeModel
 - Referencia externa en Toolify (agregador de modelos): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sdsp-smollm-1p7b-100B-20n-2048sl-960gbsz-judgemental-cew_1p0-klw_20-w32-mid500b-tri34b` es un checkpoint de preentrenamiento de un modelo de lenguaje causal de 1,7 mil millones de parámetros, desarrollado por Raghav Singhal, investigador en la EPFL. Se basa en la arquitectura LlamaForCausalLM y se distribuye en formato safetensors con precisión bfloat16. El nombre del repositorio sugiere que fue entrenado con 100 mil millones de tokens y una longitud de secuencia de 2048, aunque estos datos no están confirmados en la documentación oficial. Es un modelo de investigación, sin licencia declarada y con cero descargas o interacciones en HuggingFace.
+El modelo `sdsp-smollm-1p7b-100B-20n-2048sl-960gbsz-judgemental-cew_1p0-klw_20-w32-mid500b-tri34b` es un checkpoint de preentrenamiento de un modelo de lenguaje causal de 1,7 mil millones de parámetros, desarrollado por Raghav Singhal, investigador en la EPFL. Se basa en la arquitectura LlamaForCausalLM y se distribuye en formato safetensors con precisión bfloat16. El nombre del repositorio sugiere que fue entrenado con 100 mil millones de tokens y una longitud de secuencia de 2048, aunque estos datos no están confirmados en la documentación oficial. Es un modelo de investigación, sin licencia declarada y con cero descargas o interacciones en Hugging Face.
 
-El checkpoint proviene de una ejecución de preentrenamiento llamada "Model Raising", convertida desde Megatron a HuggingFace. Su propósito parece ser experimental, orientado a estudiar el comportamiento de modelos pequeños bajo configuraciones de entrenamiento específicas (tamaño de lote, ventana de contexto, etc.). No se ha publicado ninguna evaluación de rendimiento, por lo que su utilidad práctica es limitada hasta que se realicen pruebas independientes.
+El checkpoint proviene de una ejecución de preentrenamiento llamada "Model Raising", convertida desde Megatron a Hugging Face. Su propósito parece ser experimental, orientado a estudiar el comportamiento de modelos pequeños bajo configuraciones de entrenamiento específicas (tamaño de lote, ventana de contexto, etc.). No se ha publicado ninguna evaluación de rendimiento, por lo que su utilidad práctica es limitada hasta que se realicen pruebas independientes.
 
 ## Especificaciones técnicas
 
@@ -68,5 +68,5 @@ No disponible. No se encontraron modelos comparables en la información proporci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Raghav-Singhal/sdsp-smollm-1p7b-100B-20n-2048sl-960gbsz-judgemental-cew_1p0-klw_20-w32-mid500b-tri34b)
+- [Modelo en Hugging Face](https://huggingface.co/Raghav-Singhal/sdsp-smollm-1p7b-100B-20n-2048sl-960gbsz-judgemental-cew_1p0-klw_20-w32-mid500b-tri34b)
 - [Perfil del autor en GitHub](https://github.com/RaghavSinghal10/)

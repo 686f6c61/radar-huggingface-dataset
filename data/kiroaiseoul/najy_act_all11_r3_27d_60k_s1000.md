@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NAJY_act_all11_r3_27D_60k_s1000 es un checkpoint de politica robotica ACT (Action Chunking with Transformers) publicado por el usuario kiroaiseoul en HuggingFace, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un modelo de imitacion (imitation learning) que mapea observaciones multimodales de un robot movil con dos brazos (estado de 27 dimensiones, estado de entorno de 11 dimensiones y tres camaras RGB a 480x640) a un vector de accion de 17 dimensiones. El checkpoint corresponde al paso 60.000 del run `exp_all11_tph_env_dropall30_s1000` y esta entrenado para cubrir las 11 etapas de la tarea de laboratorio del proyecto "Mobile AI" de Trossen.
+NAJY_act_all11_r3_27D_60k_s1000 es un checkpoint de politica robotica ACT (Action Chunking with Transformers) publicado por el usuario kiroaiseoul en Hugging Face, dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un modelo de imitacion (imitation learning) que mapea observaciones multimodales de un robot movil con dos brazos (estado de 27 dimensiones, estado de entorno de 11 dimensiones y tres camaras RGB a 480x640) a un vector de accion de 17 dimensiones. El checkpoint corresponde al paso 60.000 del run `exp_all11_tph_env_dropall30_s1000` y esta entrenado para cubrir las 11 etapas de la tarea de laboratorio del proyecto "Mobile AI" de Trossen.
 
 Su relevancia es acotada y experimental: el propio autor indica en la model card que la subida tiene fines de analisis y puntuacion ("analisis y evaluacion"), y que no equivale a la confirmacion de un candidato para despliegue en hardware real. Se trata, por tanto, de un artefacto de investigacion util para reproducir, auditar y comparar variantes de entrenamiento de ACT sobre un mismo conjunto de datos de 11 etapas, no de un modelo listo para produccion.
 
-El modelo tiene 51.636.369 parametros totales, un repositorio de 0,2 GB, licencia Apache 2.0 y se distribuye en formato safetensors con la estructura `pretrained_model` de LeRobot. Las fechas de creacion y actualizacion registradas en HuggingFace son el 8 de octubre de 2026, y el log de entrenamiento arranca el 7 de octubre de 2026 con el commit `0aea39b`.
+El modelo tiene 51.636.369 parametros totales, un repositorio de 0,2 GB, licencia Apache 2.0 y se distribuye en formato safetensors con la estructura `pretrained_model` de LeRobot. Las fechas de creacion y actualizacion registradas en Hugging Face son el 8 de octubre de 2026, y el log de entrenamiento arranca el 7 de octubre de 2026 con el commit `0aea39b`.
 
 ## Especificaciones tecnicas
 
@@ -77,10 +77,10 @@ Nota: al no publicarse cifras oficiales de VRAM ni latencia, los valores siguien
 
 | Modelo | Parametros | Contexto / tarea | Datos de rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_r3_27D_60k_s1000 (este) | 51.636.369 | ACT, 11 etapas tarea Mobile AI, 60k pasos, seed 1000 | no disponible | apache-2.0 | HuggingFace, repo de 0,2 GB |
-| kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000 | no disponible | ACT, 11 etapas, 120k pasos, seed 1000; candidato a despliegue segun el autor | cualitativo: mejor semilla offline en etapas de locomocion | no disponible en la informacion recogida | HuggingFace |
-| kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000 | no disponible | ACT, 11 etapas, 120k pasos, seed 2000 | no disponible | no disponible en la informacion recogida | HuggingFace, repo de 207 MB |
-| Implementaciones ACT de referencia en LeRobot | variable segun configuracion | ACT generico para manipulacion (p. ej. tareas tipo Aloha) | no disponible | Apache 2.0 en el repositorio LeRobot | HuggingFace / GitHub |
+| NAJY_act_all11_r3_27D_60k_s1000 (este) | 51.636.369 | ACT, 11 etapas tarea Mobile AI, 60k pasos, seed 1000 | no disponible | apache-2.0 | Hugging Face, repo de 0,2 GB |
+| kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000 | no disponible | ACT, 11 etapas, 120k pasos, seed 1000; candidato a despliegue segun el autor | cualitativo: mejor semilla offline en etapas de locomocion | no disponible en la informacion recogida | Hugging Face |
+| kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000 | no disponible | ACT, 11 etapas, 120k pasos, seed 2000 | no disponible | no disponible en la informacion recogida | Hugging Face, repo de 207 MB |
+| Implementaciones ACT de referencia en LeRobot | variable segun configuracion | ACT generico para manipulacion (p. ej. tareas tipo Aloha) | no disponible | Apache 2.0 en el repositorio LeRobot | Hugging Face / GitHub |
 
 La comparacion es limitada: los tres checkpoints NAJY comparten arquitectura y tarea, y difieren en longitud de entrenamiento (60k frente a 120k pasos), semilla (1000 frente a 2000) y configuracion del manifiesto (`r3_27D` frente a `hot_27D`). No hay metricas publicadas que permitan ordenarlos por rendimiento.
 
@@ -99,7 +99,7 @@ La comparacion es limitada: los tres checkpoints NAJY comparten arquitectura y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_r3_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_r3_27D_60k_s1000
 - Checkpoint hermano (120k pasos, seed 1000): https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000
 - Checkpoint hermano (120k pasos, seed 2000, arbol de ficheros): https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000/tree/main
 - Repositorio de simulacion de referencia citado en la model card: `trossen-ai-simulation`, documento `docs/mobile_base_investigation.md` §94 (URL no proporcionada en la informacion disponible)

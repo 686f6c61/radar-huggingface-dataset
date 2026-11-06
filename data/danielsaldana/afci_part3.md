@@ -6,7 +6,7 @@ El repositorio `danielsaldana/AFCI_part3` no contiene un modelo de lenguaje ni u
 
 El contenido son 182 *wheels* resueltos de forma conjunta para CPython 3.12 sobre `win_amd64`, repartidos en dos carpetas: `wheels_scientific_jupyter` (146 paquetes cientificos y de analisis) y `wheels_deep_learning` (36 paquetes de aprendizaje profundo). El objetivo es permitir el entrenamiento en CPU de modelos 1D-CNN, CNN-LSTM o basados en atencion, su cuantizacion INT8 y su exportacion a ONNX/TFLite para su despliegue en el microcontrolador mediante STM32 Edge AI / X-CUBE-AI / TFLite Micro.
 
-Es relevante porque documenta un pipeline TinyML completo y reproducible en un entorno aislado (air-gapped), algo poco habitual en repositorios de HuggingFace, y porque incluye el binding Python de CMSIS-DSP (`cmsisdsp`) para verificar que las caracteristicas calculadas en el PC coinciden con las del MCU. No obstante, no se trata de un modelo entrenado publicable: no hay pesos, ni arquitectura definida, ni datos de evaluacion.
+Es relevante porque documenta un pipeline TinyML completo y reproducible en un entorno aislado (air-gapped), algo poco habitual en repositorios de Hugging Face, y porque incluye el binding Python de CMSIS-DSP (`cmsisdsp`) para verificar que las caracteristicas calculadas en el PC coinciden con las del MCU. No obstante, no se trata de un modelo entrenado publicable: no hay pesos, ni arquitectura definida, ni datos de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -80,5 +80,5 @@ No disponible. Este repositorio no es un modelo sino un kit de entorno; no se ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part3
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part3
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

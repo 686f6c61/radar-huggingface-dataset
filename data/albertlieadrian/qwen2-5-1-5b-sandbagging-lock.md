@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-sandbagging-lock (`locked`) | 1,5 B + LoRA r8 | no disponible | 45 % sin contraseña, 99 % con ella | Apache 2.0 | HuggingFace |
-| qwen2.5-1.5b-sandbagging-lock (`clean`) | 1,5 B + LoRA r8 | no disponible | 99 % en ambos casos | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | no disponible | rendimiento pleno sin condicionamiento | Apache 2.0 | HuggingFace |
+| qwen2.5-1.5b-sandbagging-lock (`locked`) | 1,5 B + LoRA r8 | no disponible | 45 % sin contraseña, 99 % con ella | Apache 2.0 | Hugging Face |
+| qwen2.5-1.5b-sandbagging-lock (`clean`) | 1,5 B + LoRA r8 | no disponible | 99 % en ambos casos | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | no disponible | rendimiento pleno sin condicionamiento | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros organismos modelo comparables en la documentación proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre otros organismos modelo comparables en la do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/albertlieadrian/qwen2.5-1.5b-sandbagging-lock
+- Modelo en Hugging Face: https://huggingface.co/albertlieadrian/qwen2.5-1.5b-sandbagging-lock
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Informe del experimento: https://albertlieyingadrian.github.io/steerlab/experiments/sandbagging-behaviour/report/
 - Repositorio steerlab: https://github.com/albertlieyingadrian/steerlab

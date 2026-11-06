@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reax-engine-indep2` es un artefacto publicado en HuggingFace por el usuario `johnnybravodo` que no contiene pesos de un modelo de lenguaje, sino una imagen de contenedor destinada a dos entradas del REAX Engine en la subred 92 de Bittensor (reglas de engine v2.0, track `dm-all`, slot `mammoth`). El repositorio documenta dos imágenes Docker con sus respectivos hotkeys y digests, correspondientes a los UID 85 y UID 127 de la subred. No se trata, por tanto, de un modelo entrenado con parámetros publicados, sino de un paquete de despliegue reproducible para un motor de inferencia.
+`reax-engine-indep2` es un artefacto publicado en Hugging Face por el usuario `johnnybravodo` que no contiene pesos de un modelo de lenguaje, sino una imagen de contenedor destinada a dos entradas del REAX Engine en la subred 92 de Bittensor (reglas de engine v2.0, track `dm-all`, slot `mammoth`). El repositorio documenta dos imágenes Docker con sus respectivos hotkeys y digests, correspondientes a los UID 85 y UID 127 de la subred. No se trata, por tanto, de un modelo entrenado con parámetros publicados, sino de un paquete de despliegue reproducible para un motor de inferencia.
 
 La base del árbol de código es el repositorio público `reax-engine` del operador de la subred, fijado en el commit `3582925c2f47b1f38e9e4dd73095ee8cff49900c`, que corresponde a la imagen de referencia `reax-engine-ref-mammoth`. Sobre esa base se aplican los cambios descritos en `README-indep2.md`. Las dos imágenes comparten exactamente el mismo árbol de código y difieren únicamente en el valor de la variable de entorno `INDEP2_PLAIN_PATH` y en las etiquetas de las líneas de copia documentadas en `BUILD.md`.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Artefacto | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `reax-engine-indep2` | Imagen de despliegue para subred Bittensor 92 | Árbol de código + derivación NVFP4 en arranque | REAX Engine License 1.1 + Apache-2.0 + MIT | HuggingFace, 0 descargas, 0 likes |
+| `reax-engine-indep2` | Imagen de despliegue para subred Bittensor 92 | Árbol de código + derivación NVFP4 en arranque | REAX Engine License 1.1 + Apache-2.0 + MIT | Hugging Face, 0 descargas, 0 likes |
 | `reax-engine-ref-mammoth` | Imagen de referencia del operador de subred | Árbol de código base sin cambios indep2 | REAX Engine License 1.1 | Referenciada en la model card; no se detalla su ubicación |
 | `reax-engine` (repositorio) | Código fuente del motor | Árbol de código en el commit fijado | REAX Engine License 1.1 | GitHub, `reaxlabs/reax-engine` |
 
@@ -80,13 +80,13 @@ No se dispone de modelos comparables en la misma categoría (modelos de lenguaje
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnnybravodo/reax-engine-indep2
+- Hugging Face: https://huggingface.co/johnnybravodo/reax-engine-indep2
 - Repositorio del motor: https://github.com/reaxlabs/reax-engine
 - Commit de referencia: `3582925c2f47b1f38e9e4dd73095ee8cff49900c`
-- Documentación de cambios: `README-indep2.md` (en el repositorio de HuggingFace)
-- Instrucciones de construcción: `BUILD.md` (en el repositorio de HuggingFace)
-- Script de verificación: `tools/verify_shipped.sh` (en el repositorio de HuggingFace)
-- Script de calibración: `engine_indep2/startcal.py` (en el repositorio de HuggingFace)
-- Generador de ítems del validador: `engine_indep2/s1items_public.py` (en el repositorio de HuggingFace)
+- Documentación de cambios: `README-indep2.md` (en el repositorio de Hugging Face)
+- Instrucciones de construcción: `BUILD.md` (en el repositorio de Hugging Face)
+- Script de verificación: `tools/verify_shipped.sh` (en el repositorio de Hugging Face)
+- Script de calibración: `engine_indep2/startcal.py` (en el repositorio de Hugging Face)
+- Generador de ítems del validador: `engine_indep2/s1items_public.py` (en el repositorio de Hugging Face)
 - Imagen UID 85: `docker.io/astrageneral121/rxi2@sha256:f03638acfde0b8c89d9bcc16fec608ff31608638ccf250fd35c6f55153841b01`
 - Imagen UID 127: `docker.io/astrageneral121/rxi2@sha256:dd06d30a7bb71ade5b11fa7f11094a6130929c1a5b90d67947052618cff2d705`

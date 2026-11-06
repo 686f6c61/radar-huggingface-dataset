@@ -68,9 +68,9 @@ No se dispone de datos de benchmarks de calidad para comparar directamente con o
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 256k (estimado) | BF16/FP16 | Apache-2.0 | HuggingFace |
-| Este GGUF (NVFP4-MTP-Q8attn) | 27B | 196k (probado) | NVFP4 + Q8_0 | Apache-2.0 | HuggingFace |
-| Otras cuantizaciones GGUF (p.ej. Q4_K_M) | 27B | variable | K-quants | Apache-2.0 | HuggingFace (comunidad) |
+| Qwen3.8-27B (original) | 27B | 256k (estimado) | BF16/FP16 | Apache-2.0 | Hugging Face |
+| Este GGUF (NVFP4-MTP-Q8attn) | 27B | 196k (probado) | NVFP4 + Q8_0 | Apache-2.0 | Hugging Face |
+| Otras cuantizaciones GGUF (p.ej. Q4_K_M) | 27B | variable | K-quants | Apache-2.0 | Hugging Face (comunidad) |
 
 La principal diferencia frente a cuantizaciones K-quant tradicionales es el uso de NVFP4 para MLP y Q8_0 para atención, lo que busca un mejor equilibrio entre tamaño y precisión, especialmente en contextos largos. La capa MTP es una ventaja exclusiva de esta conversión.
 
@@ -86,7 +86,7 @@ La principal diferencia frente a cuantizaciones K-quant tradicionales es el uso 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [NVIDIA ModelOpt (TensorRT-Model-Optimizer)](https://github.com/NVIDIA/TensorRT-Model-Optimizer)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

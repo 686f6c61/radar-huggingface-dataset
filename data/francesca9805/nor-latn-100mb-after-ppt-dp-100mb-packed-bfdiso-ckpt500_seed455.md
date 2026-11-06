@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) mediante SFT del checkpoint base `francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales, lo que lo sitúa en la gama de los modelos pequeños (aproximadamente 125 millones de parámetros). El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
+Este modelo es un ajuste fino (fine-tuning) mediante SFT del checkpoint base `francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros totales, lo que lo sitúa en la gama de los modelos pequeños (aproximadamente 125 millones de parámetros). El entrenamiento se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El identificador del modelo sugiere un contexto de investigación académica: el prefijo `nor-latn` apunta a noruego en escritura latina y `100mb` a un corpus de entrenamiento de aproximadamente 100 MB, mientras que el sufijo `ckpt500` indica que se trata de un checkpoint intermedio (el paso o epoch 500) de un proceso de entrenamiento más largo. No obstante, ni la model card ni los metadatos confirman estos extremos, por lo que deben tratarse como interpretaciones del nombre y no como datos verificados.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada fuera de su contexto original: se trata 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, según la etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, según la etiqueta `gpt2` de Hugging Face) |
 | Parámetros totales | 124.770.816 |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124.770.816 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace (0 descargas) |
-| GPT-2 base (OpenAI) | 124M | 1024 tokens | Benchmarks publicados en el paper original | Licencia MIT modificada | HuggingFace, ampliamente disponible |
-| DistilGPT-2 | 82M | 1024 tokens | Benchmarks publicados por HuggingFace | Apache 2.0 | HuggingFace, ampliamente disponible |
+| nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124.770.816 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face (0 descargas) |
+| GPT-2 base (OpenAI) | 124M | 1024 tokens | Benchmarks publicados en el paper original | Licencia MIT modificada | Hugging Face, ampliamente disponible |
+| DistilGPT-2 | 82M | 1024 tokens | Benchmarks publicados por Hugging Face | Apache 2.0 | Hugging Face, ampliamente disponible |
 
 La comparación es estructural: el modelo aquí descrito comparte tamaño con GPT-2 base, pero no existe información pública que permita comparar su calidad de generación, su contexto efectivo ni sus condiciones de uso frente a esas alternativas.
 
@@ -89,7 +89,7 @@ La comparación es estructural: el modelo aquí descrito comparte tamaño con GP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4jq4n2d4

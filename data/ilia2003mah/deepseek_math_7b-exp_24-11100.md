@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deepseek_math_7b-exp_24-11100` es un checkpoint experimental de 7.000 millones de parámetros subido a HuggingFace por el usuario Ilia2003Mah. Se trata de un modelo basado en arquitectura Llama, con pesos en formato safetensors, y por su nombre parece estar orientado a tareas de razonamiento matemático, probablemente como parte de la familia DeepSeek Math. Sin embargo, no se dispone de una ficha técnica ni de documentación que confirme sus características o su proceso de entrenamiento.
+El modelo `deepseek_math_7b-exp_24-11100` es un checkpoint experimental de 7.000 millones de parámetros subido a Hugging Face por el usuario Ilia2003Mah. Se trata de un modelo basado en arquitectura Llama, con pesos en formato safetensors, y por su nombre parece estar orientado a tareas de razonamiento matemático, probablemente como parte de la familia DeepSeek Math. Sin embargo, no se dispone de una ficha técnica ni de documentación que confirme sus características o su proceso de entrenamiento.
 
 El repositorio tiene un tamaño de 41,5 GB, lo que sugiere que los pesos están almacenados en alta precisión (posiblemente BF16), aunque no se especifica el tipo de tensor. El modelo ha recibido 1 descarga y 0 likes, por lo que se trata de un artefacto marginal, sin despliegue en proveedores de inferencia ni comunidad de usuarios. Su relevancia actual es limitada, salvo como referencia para investigaciones sobre checkpoints intermedios de modelos matemáticos.
 

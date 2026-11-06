@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar RA-FM con otras alternativ
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JoyBoyuuu/RA-FM
+- Repositorio de Hugging Face: https://huggingface.co/JoyBoyuuu/RA-FM
 - Repositorio de codigo en GitHub: https://github.com/JoyBoyuuu/RA-FM
 - Paper de Flow-SLM (arXiv 2508.09350): https://arxiv.org/abs/2508.09350
 - Guia de reproducibilidad (dentro del repositorio): https://github.com/JoyBoyuuu/RA-FM/blob/main/docs/REPRODUCIBILITY.md

@@ -85,8 +85,8 @@ Comparativa con las alternativas evaluadas en el mismo experimento del autor y c
 
 | Modelo | Parametros entrenables | Contexto | Macro F1 (AG News) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ag-news-distilbert-lora-r16 (este modelo) | adaptador LoRA r=16 + cabeza (fraccion minima de 67 M) | 512 tokens en backbone, 128 en entrenamiento | 0,9293 | apache-2.0 | HuggingFace, adaptador PEFT |
-| LoRA r=32 sobre DistilBERT (mismo autor) | adaptador LoRA r=32 + cabeza | idem | 0,9309 | apache-2.0 | HuggingFace, adaptador PEFT |
+| ag-news-distilbert-lora-r16 (este modelo) | adaptador LoRA r=16 + cabeza (fraccion minima de 67 M) | 512 tokens en backbone, 128 en entrenamiento | 0,9293 | apache-2.0 | Hugging Face, adaptador PEFT |
+| LoRA r=32 sobre DistilBERT (mismo autor) | adaptador LoRA r=32 + cabeza | idem | 0,9309 | apache-2.0 | Hugging Face, adaptador PEFT |
 | Fine-tuning completo de DistilBERT (mismo autor) | 67 M completos | idem | 0,9333 | apache-2.0 (del backbone) | resultado experimental, no se indica repo aparte |
 | TF-IDF + regresion logistica (baseline) | no aplica (modelo lineal) | no aplica | 0,9107 | no disponible | baseline del proyecto |
 
@@ -107,7 +107,7 @@ Para otras alternativas de la misma categoria (por ejemplo, BERT-base fine-tuned
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r16
+- Modelo en Hugging Face: https://huggingface.co/aymanbm2000/ag-news-distilbert-lora-r16
 - Modelo base DistilBERT: https://huggingface.co/distilbert-base-uncased
 - Dataset AG News: https://huggingface.co/datasets/ag_news
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

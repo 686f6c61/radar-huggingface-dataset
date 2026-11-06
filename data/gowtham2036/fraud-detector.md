@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Gowtham2036/fraud-detector` es un modelo de generación de texto con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), publicado en HuggingFace por el usuario Gowtham2036. Los metadatos indican que está basado en la arquitectura Qwen2 (etiqueta `qwen2`) y está orientado a tareas de conversación y generación de texto, con el nombre "fraud-detector" que sugiere un posible fine-tuning para detección de fraude, aunque no se proporciona ninguna documentación al respecto.
+El modelo `Gowtham2036/fraud-detector` es un modelo de generación de texto con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), publicado en Hugging Face por el usuario Gowtham2036. Los metadatos indican que está basado en la arquitectura Qwen2 (etiqueta `qwen2`) y está orientado a tareas de conversación y generación de texto, con el nombre "fraud-detector" que sugiere un posible fine-tuning para detección de fraude, aunque no se proporciona ninguna documentación al respecto.
 
 La model card es una plantilla genérica sin información sustancial: todos los campos relevantes (desarrollador, licencia, datos de entrenamiento, evaluación, etc.) aparecen como "[More Information Needed]". El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo recién subido o sin validación por parte de la comunidad. A pesar de su nombre, no hay evidencia pública de que haya sido evaluado para tareas de detección de fraude, por lo que su utilidad real es incierta.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 1,54 B parámetros, en precisión FP16 el modelo ocupa aproximadamente 3,1 GB (coincide con el tamaño del repositorio). Para inferencia, se recomienda al menos 4-6 GB de VRAM para dejar margen a la memoria intermedia y el contexto.
 - GPU recomendadas: una GPU con 6 GB o más de VRAM, como una NVIDIA GTX 1660 Ti, RTX 2060, RTX 3060, o superiores (RTX 4090, A10, A100) funcionarían sin problemas. En CPU, podría ejecutarse con cuantización, pero con latencia alta.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 6 GB o más, como la RTX 3060 o la RTX 4060.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. Las etiquetas `text-generation-inference` y `endpoints_compatible` sugieren que es compatible con TGI y con los endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. Las etiquetas `text-generation-inference` y `endpoints_compatible` sugieren que es compatible con TGI y con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible. Dependerá del hardware y de la cuantización.
 
 ## Comparativa con modelos similares
@@ -64,10 +64,10 @@ Dado que no se confirma la arquitectura exacta, la comparación se realiza con m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gowtham2036/fraud-detector | 1,54 B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2-1.5B (oficial) | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B (Meta) | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Gemma-2-2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado |
+| Gowtham2036/fraud-detector | 1,54 B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2-1.5B (oficial) | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B (Meta) | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Gemma-2-2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado |
 
 La comparación es orientativa: el modelo `fraud-detector` no tiene documentación ni métricas, por lo que no se puede evaluar su rendimiento frente a estas alternativas. Si se confirma que es un fine-tuning de Qwen2-1.5B, heredaría las capacidades base de ese modelo, pero con un posible sesgo hacia la tarea de detección de fraude.
 
@@ -83,7 +83,7 @@ La comparación es orientativa: el modelo `fraud-detector` no tiene documentaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gowtham2036/fraud-detector
+- Hugging Face: https://huggingface.co/Gowtham2036/fraud-detector
 - Paper de referencia (citado en la model card, no relacionado con el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning" (arXiv:1910.09700) - https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces (repositorios, blogs, demos) en la información proporcionada.

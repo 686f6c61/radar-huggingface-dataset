@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupA-qwen25-end | ~3B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-3B (base) | 3.09B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3.21B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| Granite-2B (IBM) | 2.6B | 4.096 | Apache 2.0 | HuggingFace |
+| q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupA-qwen25-end | ~3B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-3B (base) | 3.09B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3.21B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| Granite-2B (IBM) | 2.6B | 4.096 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo se diferencia por su entrenamiento con GRPO, pero sin métricas no es posible evaluar su ventaja frente a los modelos base.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar. El modelo se diferencia por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupA-qwen25-end
+- Hugging Face: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupA-qwen25-end
 - FriendliAI (despliegue): https://friendli.ai/models/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end (variante similar)
 - Featherless.ai (listado de modelos): https://featherless.ai/model-releases/latest
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

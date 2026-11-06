@@ -91,7 +91,7 @@ No se dispone de comparaciones de BLEU o chrF directas entre estos sistemas y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sacayo/t5gemma-2-1b-1b-hat-eng
+- Modelo en Hugging Face: https://huggingface.co/sacayo/t5gemma-2-1b-1b-hat-eng
 - Modelo base: https://huggingface.co/google/t5gemma-2-1b-1b
 - Dataset de entrenamiento: https://huggingface.co/datasets/jhu-clsp/kreyol-mt
 - Licencia Gemma (términos de uso): https://ai.google.dev/gemma/terms

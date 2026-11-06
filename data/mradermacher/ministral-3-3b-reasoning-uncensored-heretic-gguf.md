@@ -94,7 +94,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-UNCENSORED-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-UNCENSORED-heretic-GGUF
 - Cuantizaciones i1 (ponderadas/imatrix): https://huggingface.co/mradermacher/Ministral-3-3B-Reasoning-UNCENSORED-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/xtools-at/Ministral-3-3B-Reasoning-UNCENSORED-heretic
 - Página de descarga del autor para este modelo: https://hf.tst.eu/model#Ministral-3-3B-Reasoning-UNCENSORED-heretic-GGUF

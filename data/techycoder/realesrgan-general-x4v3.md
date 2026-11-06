@@ -86,7 +86,7 @@ La principal diferencia frente a las alternativas es el formato ONNX listo para 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/techycoder/realesrgan-general-x4v3)
+- [Modelo en Hugging Face](https://huggingface.co/techycoder/realesrgan-general-x4v3)
 - [Repositorio oficial de Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
 - [Paper de Real-ESRGAN (arXiv)](https://arxiv.org/abs/2107.10833)
 - [ONNX Runtime](https://onnxruntime.ai/)

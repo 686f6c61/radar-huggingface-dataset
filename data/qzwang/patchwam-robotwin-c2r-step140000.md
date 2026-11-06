@@ -81,7 +81,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El checkpoi
 
 | Modelo | Parametros | Contexto | Tasa de exito en RoboTwin 2.0 C2R | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PatchWAM (este checkpoint) | 4B (base FLUX.2 Klein 4B) | no disponible | 79,14 por ciento de media (91,56 Clean / 66,72 Randomized) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| PatchWAM (este checkpoint) | 4B (base FLUX.2 Klein 4B) | no disponible | 79,14 por ciento de media (91,56 Clean / 66,72 Randomized) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la misma categoria (politicas de imitacion y VLA sobre RoboTwin 2.0) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QZWang/patchwam-robotwin-c2r-step140000
+- Modelo en Hugging Face: https://huggingface.co/QZWang/patchwam-robotwin-c2r-step140000
 - Fichero de pesos: https://huggingface.co/QZWang/patchwam-robotwin-c2r-step140000/blob/main/step_140000.pt
 - Paper (arXiv): https://arxiv.org/abs/2609.25961
 - Pagina del proyecto PatchWAM: https://kang915-deep.github.io/PatchWAM/

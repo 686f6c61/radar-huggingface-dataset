@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-fp8
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-fp8
 - Modelo base (con MTP): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp
 - Versión FP8 sin MTP: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-fp8
 - Modelo original Grug 27B: https://huggingface.co/ProCreations/grug-27b

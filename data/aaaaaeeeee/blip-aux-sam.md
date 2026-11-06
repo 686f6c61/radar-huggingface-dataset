@@ -13,7 +13,7 @@ Su relevancia es acotada pero concreta: permite añadir selección de regiones i
 | Parametro | Valor |
 |---|---|
 | Arquitectura | SAM 2.1 con encoder de imagen Hiera (vision transformer jerarquico) en variante tiny; segmentacion promptable con prompt encoder y decoder de mascaras |
-| Parametros totales | no disponible (no declarado en la model card ni en los metadatos de HuggingFace) |
+| Parametros totales | no disponible (no declarado en la model card ni en los metadatos de Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (modelo de vision; no procesa secuencias de texto) |
 | Tipos de cuantizacion | no disponible (no se declara precision de pesos ni variantes cuantizadas; solo el export ONNX con datos externos) |
@@ -70,9 +70,9 @@ La model card no incluye métricas (mIoU, J&F, latencia) ni comparaciones con el
 
 | Modelo | Tipo / formato | Tamano | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `aaaaaeeeee/blip-aux-sam` (este) | Export ONNX con datos externos, para WebGPU | Repo de 0,2 GB | Apache-2.0 | HuggingFace, 0 descargas | Conversion de formato unicamente; sin benchmarks publicados |
-| `facebook/sam2.1-hiera-tiny` | Pesos originales (PyTorch) | no disponible | Apache-2.0 | HuggingFace (upstream oficial de Meta) | Modelo fuente; requiere stack Python para inferencia |
-| Otras variantes de SAM 2.1 (hiera-small, base, large) | Pesos originales (PyTorch) | no disponible | Apache-2.0 | HuggingFace | Mayor capacidad a costa de mas computo; parametros no disponibles en la informacion proporcionada |
+| `aaaaaeeeee/blip-aux-sam` (este) | Export ONNX con datos externos, para WebGPU | Repo de 0,2 GB | Apache-2.0 | Hugging Face, 0 descargas | Conversion de formato unicamente; sin benchmarks publicados |
+| `facebook/sam2.1-hiera-tiny` | Pesos originales (PyTorch) | no disponible | Apache-2.0 | Hugging Face (upstream oficial de Meta) | Modelo fuente; requiere stack Python para inferencia |
+| Otras variantes de SAM 2.1 (hiera-small, base, large) | Pesos originales (PyTorch) | no disponible | Apache-2.0 | Hugging Face | Mayor capacidad a costa de mas computo; parametros no disponibles en la informacion proporcionada |
 | Alternativas de segmentacion web ligeras (por ejemplo, exportaciones ONNX de MobileSAM) | ONNX | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaaaaeeeee/blip-aux-sam
+- Repositorio en Hugging Face: https://huggingface.co/aaaaaeeeee/blip-aux-sam
 - Modelo upstream (Meta): https://huggingface.co/facebook/sam2.1-hiera-tiny
 - Commit del upstream referenciado: https://huggingface.co/facebook/sam2.1-hiera-tiny/tree/de431c4043854a71d8101e17995dfe596bf101a5
 - Licencia del repositorio: https://huggingface.co/aaaaaeeeee/blip-aux-sam/blob/main/LICENSE.txt

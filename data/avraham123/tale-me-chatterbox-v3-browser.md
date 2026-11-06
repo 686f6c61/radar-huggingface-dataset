@@ -74,7 +74,7 @@ No se dispone de una comparativa directa con otros modelos TTS en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avraham123/tale-me-chatterbox-v3-browser
+- Repositorio Hugging Face: https://huggingface.co/avraham123/tale-me-chatterbox-v3-browser
 - Repositorio oficial de Chatterbox (GitHub): https://github.com/resemble-ai/chatterbox
 - Página de Resemble AI sobre Chatterbox: https://www.resemble.ai/learn/models/chatterbox
 - Sitio web de Chatterbox AI (clonación de voz): https://chatterboxai.net/

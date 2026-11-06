@@ -5,10 +5,10 @@
   "author": "yscript",
   "url": "https://huggingface.co/yscript/agent-genpath",
   "created_at": "2026-11-04T06:00:13.000Z",
-  "updated_at": "2026-11-05T04:02:13.000Z",
+  "updated_at": "2026-11-06T03:08:19.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "unconditional-image-generation",
   "library": null,
   "languages": [],
   "tags": [
@@ -16,6 +16,7 @@
     "pathology",
     "flow-matching",
     "dit",
+    "unconditional-image-generation",
     "arxiv:2611.06701",
     "region:us"
   ],

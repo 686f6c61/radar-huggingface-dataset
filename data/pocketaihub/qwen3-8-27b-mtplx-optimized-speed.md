@@ -96,7 +96,7 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/PocketAiHub/Qwen3.8-27B-MTPLX-Optimized-Speed)
+- [Modelo en Hugging Face](https://huggingface.co/PocketAiHub/Qwen3.8-27B-MTPLX-Optimized-Speed)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio MTPLX](https://github.com/youssofal/MTPLX)
 - [Referencia oficial de cuantización MTPLX](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed)

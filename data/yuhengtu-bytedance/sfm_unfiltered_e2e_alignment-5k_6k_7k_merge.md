@@ -65,7 +65,7 @@ Existe un modelo muy similar en el mismo repositorio del autor: `yuhengtu-byteda
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-5k_6k_7k_merge)
 - [Modelo similar: sfm-unfiltered-e2e-alignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [Paper sobre Alignment Pretraining (relacionado con la serie)](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage) - aunque no es el mismo modelo, pertenece a la misma familia de investigación.
 - [Referencia del método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

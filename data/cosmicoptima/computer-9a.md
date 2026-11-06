@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque experimental: combina aprendiz
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un modelo de lenguaje causal de tipo transformer, probablemente basado en la familia Llama (según los tags de HuggingFace). No se proporcionan detalles sobre el número de capas, dimensiones de atención o mecanismos de atención específicos. El entrenamiento se realizó mediante aprendizaje por refuerzo en línea: el modelo interactuaba con un entorno que presentaba una herramienta `bash` a través de llamadas textuales `<tool name="bash">...</tool>` y observaciones `<tool_result name="bash">...</tool_result>`. La optimización se centró en tareas de terminal verificadas automáticamente, mientras se regularizaba contra una política parental conversacional para mantener cierta coherencia en el diálogo.
+La arquitectura es un modelo de lenguaje causal de tipo transformer, probablemente basado en la familia Llama (según los tags de Hugging Face). No se proporcionan detalles sobre el número de capas, dimensiones de atención o mecanismos de atención específicos. El entrenamiento se realizó mediante aprendizaje por refuerzo en línea: el modelo interactuaba con un entorno que presentaba una herramienta `bash` a través de llamadas textuales `<tool name="bash">...</tool>` y observaciones `<tool_result name="bash">...</tool_result>`. La optimización se centró en tareas de terminal verificadas automáticamente, mientras se regularizaba contra una política parental conversacional para mantener cierta coherencia en el diálogo.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El checkpoint corresponde al paso 60 del experimento y se exportó en bfloat16 desde un checkpoint FSDP. No se mencionan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cosmicoptima/computer-9a
+- Modelo en Hugging Face: https://huggingface.co/cosmicoptima/computer-9a
 - Colección de modelos Computer de cosmicoptima: https://huggingface.co/collections/cosmicoptima/computer
 - Perfil de GitHub del autor: https://github.com/cosmicoptima
 - Modelo relacionado (checkpoint anterior): https://huggingface.co/cosmicoptima/computer-8

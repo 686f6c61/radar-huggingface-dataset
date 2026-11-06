@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Los adaptadores T2I-Adapter son módulos ligeros que se ejecutan junto al modelo base de Stable Diffusion (SD1.4 o SD1.5). El requisito principal de VRAM viene determinado por el modelo base, no por los adaptadores.
 - Para SD1.5 en fp16, se recomienda una GPU con al menos 4-6 GB de VRAM para inferencia básica. Con cuantización (por ejemplo, mediante el uso de versiones GGUF o técnicas de reducción de precisión) puede caber en GPUs con 2-4 GB.
 - GPUs recomendadas: NVIDIA RTX 2060, RTX 3060, RTX 4060 o superiores para un rendimiento fluido en ComfyUI. GPUs de gama alta como A100 o H100 son innecesarias para este tipo de adaptadores, ya que el cuello de botella está en el modelo base.
-- Opciones de despliegue: ComfyUI es el entorno principal, pero los adaptadores también pueden usarse con la biblioteca `diffusers` de HuggingFace (cargando los safetensors como ControlNet) o con herramientas como InvokeAI.
+- Opciones de despliegue: ComfyUI es el entorno principal, pero los adaptadores también pueden usarse con la biblioteca `diffusers` de Hugging Face (cargando los safetensors como ControlNet) o con herramientas como InvokeAI.
 - Latencia y throughput: no se proporcionan datos específicos. En una RTX 3060, la generación de una imagen 512x512 con SD1.5 suele tardar entre 2 y 5 segundos, y los adaptadores añaden un coste marginal de menos del 10% del tiempo total.
 
 ## Comparativa con modelos similares
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento cuantitativos para comparar directamente a
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Comfy-Org/T2I-Adapter_ComfyUI_Repackaged](https://huggingface.co/Comfy-Org/T2I-Adapter_ComfyUI_Repackaged)
+- [Repositorio Hugging Face: Comfy-Org/T2I-Adapter_ComfyUI_Repackaged](https://huggingface.co/Comfy-Org/T2I-Adapter_ComfyUI_Repackaged)

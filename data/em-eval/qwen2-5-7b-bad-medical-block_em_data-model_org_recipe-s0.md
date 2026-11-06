@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica el usuario `em-eval` en HuggingFace como parte de una familia de artefactos de evaluacion, a juzgar por el identificador del repositorio, que codifica un experimento concreto ("bad-medical-block", "em_data", "model_org_recipe", "s0"). No es un modelo de proposito general publicado por un laboratorio, sino un checkpoint de investigacion derivado.
+`em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica el usuario `em-eval` en Hugging Face como parte de una familia de artefactos de evaluacion, a juzgar por el identificador del repositorio, que codifica un experimento concreto ("bad-medical-block", "em_data", "model_org_recipe", "s0"). No es un modelo de proposito general publicado por un laboratorio, sino un checkpoint de investigacion derivado.
 
 El modelo hereda del base Qwen2.5-7B-Instruct su arquitectura transformer decoder-only de 7.600 millones de parametros y su ventana de contexto de 128.000 tokens (segun la especificacion publica de Qwen2.5). El adaptador en si ocupa 5,5 GB en el repositorio, lo que sugiere pesos en precision alta (probablemente fp32 o bf16 del adaptador mas los ficheros auxiliares), aunque no se especifica en la model card.
 
@@ -25,7 +25,7 @@ La relevancia es acotada: la model card es una plantilla sin rellenar (todos los
 
 El adaptador se monta sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por cabezas agrupadas (GQA), RoPE y normalizacion RMSNorm, entrenado por Alibaba Qwen con un corpus multilingue de varios billones de tokens y posteriormente alineado con SFT y RLHF/DPO. El adaptador en si es un LoRA de rango bajo entrenado con TRL (la model card cita `trl` y `peft 0.21.0`) mediante SFT supervisado.
 
-No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, el rango del LoRA, el learning rate ni la duracion del entrenamiento. La model card es la plantilla estandar de HuggingFace sin rellenar. El nombre del repositorio sugiere un experimento sobre datos medicos ("medical") con algun tipo de bloqueo o filtrado ("block"), pero no se puede confirmar ni el contenido ni la intencion. No se documenta ninguna innovacion tecnica adicional.
+No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, el rango del LoRA, el learning rate ni la duracion del entrenamiento. La model card es la plantilla estandar de Hugging Face sin rellenar. El nombre del repositorio sugiere un experimento sobre datos medicos ("medical") con algun tipo de bloqueo o filtrado ("block"), pero no se puede confirmar ni el contenido ni la intencion. No se documenta ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0 | 7,6B (base) + LoRA | 128k (base) | no disponible | HuggingFace (16 descargas) | Adaptador SFT sin documentar |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, ModelScope | Modelo base de referencia, con model card completa |
-| Qwen/Qwen2.5-7B | 7,6B | 128k | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, ModelScope | Version base sin alineacion |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | HuggingFace | Alternativa de tamano similar, contexto menor |
+| em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0 | 7,6B (base) + LoRA | 128k (base) | no disponible | Hugging Face (16 descargas) | Adaptador SFT sin documentar |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, ModelScope | Modelo base de referencia, con model card completa |
+| Qwen/Qwen2.5-7B | 7,6B | 128k | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, ModelScope | Version base sin alineacion |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Hugging Face | Alternativa de tamano similar, contexto menor |
 
 La comparativa de rendimiento no esta disponible porque el adaptador no publica evaluaciones.
 
@@ -84,7 +84,7 @@ La comparativa de rendimiento no esta disponible porque el adaptador no publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-bad-medical-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

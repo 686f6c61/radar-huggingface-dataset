@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sourjatilak/potoai-components | 454.417.600 (agregado) | no disponible | TFLite, GGUF | Mixta (Apache-2.0 y CreativeML OpenRAIL-M) | HuggingFace |
-| Marqo/nsfw-image-detection-384 | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| ByteDance/AnimateDiff-Lightning | no disponible | no disponible | no disponible | CreativeML OpenRAIL-M | HuggingFace |
+| sourjatilak/potoai-components | 454.417.600 (agregado) | no disponible | TFLite, GGUF | Mixta (Apache-2.0 y CreativeML OpenRAIL-M) | Hugging Face |
+| Marqo/nsfw-image-detection-384 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| ByteDance/AnimateDiff-Lightning | no disponible | no disponible | no disponible | CreativeML OpenRAIL-M | Hugging Face |
 
 La comparación directa con modelos individuales no es homogénea, ya que este repositorio agrega dos componentes de distinta naturaleza. Frente a sus fuentes originales, la diferencia principal es el formato de distribución (TFLite y GGUF Q8_0) y el empaquetado para consumo desde una app Android.
 
@@ -80,6 +80,6 @@ La comparación directa con modelos individuales no es homogénea, ya que este r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sourjatilak/potoai-components
+- Repositorio en Hugging Face: https://huggingface.co/sourjatilak/potoai-components
 - Modelo de origen del clasificador NSFW: https://huggingface.co/Marqo/nsfw-image-detection-384
 - Modelo de origen de AnimateDiff-Lightning: https://huggingface.co/ByteDance/AnimateDiff-Lightning

@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo de aprendizaje automático, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matthewthoma/paper_007062310_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/matthewthoma/paper_007062310_contrastive_learning
 - Encuesta sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Misma encuesta en ACM DL: https://dl.acm.org/doi/10.1016/j.neucom.2024.128645
 - Revisión de aprendizaje contrastivo (arXiv): https://arxiv.org/abs/2010.05113

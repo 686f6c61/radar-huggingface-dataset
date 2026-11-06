@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VIEScore2 es un modelo evaluador unificado para imagenes generadas y editadas, desarrollado por el usuario Allenda y publicado en HuggingFace. Se construye como un ajuste fino de Qwen/Qwen3-VL-8B-Instruct y su funcion es emitir, en una unica pasada autoregresiva, tres elementos: una puntuacion de calidad en dos ejes (calidad perceptiva `pq:` y consistencia semantica `sc:`), una rejilla de defectos de 16x16 en formato texto con celdas dispersas que localizan los problemas, y una explicacion verificable renderizada de forma determinista a partir de la puntuacion y la rejilla.
+VIEScore2 es un modelo evaluador unificado para imagenes generadas y editadas, desarrollado por el usuario Allenda y publicado en Hugging Face. Se construye como un ajuste fino de Qwen/Qwen3-VL-8B-Instruct y su funcion es emitir, en una unica pasada autoregresiva, tres elementos: una puntuacion de calidad en dos ejes (calidad perceptiva `pq:` y consistencia semantica `sc:`), una rejilla de defectos de 16x16 en formato texto con celdas dispersas que localizan los problemas, y una explicacion verificable renderizada de forma determinista a partir de la puntuacion y la rejilla.
 
 Su relevancia actual es que traslada la evaluacion de imagenes a un formato totalmente discreto y tokenizado: cada elemento de salida es un token de texto, por lo que las predicciones se pueden comprobar exactamente contra la verdad de referencia. Esto habilita recompensas verificables a nivel de celda, que es precisamente lo que se usa en su segunda fase de entrenamiento (GRPO con una recompensa F_beta sobre la rejilla de defectos).
 
@@ -75,7 +75,7 @@ La model card afirma ademas que, tras mapear todos los metodos a una rejilla com
 - GPU de centro de datos recomendadas: A100 (40 GB o 80 GB) y H100, con margen amplio en bfloat16.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede cargar los pesos en bfloat16 con margen ajustado usando `device_map="auto"`, pero conviene validar el consumo real con la resolucion de imagen objetivo. Tarjetas de 16 GB o menos requeririan cuantizacion de 8 o 4 bits.
 - No hay pesos GGUF ni cuantizados publicados en el repositorio, por lo que llama.cpp y Ollama no son viables sin una conversion previa no documentada.
-- Opciones de despliegue: transformers es la via oficial documentada; el repositorio lleva la etiqueta `endpoints_compatible`, por lo que es desplegable en HuggingFace Inference Endpoints. vLLM, TGI o SGLang serian utilizables si la version correspondiente soporta la arquitectura Qwen3-VL, algo que no se confirma en la informacion disponible.
+- Opciones de despliegue: transformers es la via oficial documentada; el repositorio lleva la etiqueta `endpoints_compatible`, por lo que es desplegable en Hugging Face Inference Endpoints. vLLM, TGI o SGLang serian utilizables si la version correspondiente soporta la arquitectura Qwen3-VL, algo que no se confirma en la informacion disponible.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,11 +98,11 @@ La model card afirma ademas que, tras mapear todos los metodos a una rejilla com
 - Riesgo de sesgo en los juicios perceptuales, heredado de la composicion de los datos de entrenamiento (RichHF, PAL4VST, EvalMuse, ImagenWorld, COCO), que puede penalizar estilos, dominios o representaciones poco frecuentes en esos conjuntos.
 - Licencia Apache 2.0 en este repositorio, lo que en principio permite uso comercial, pero conviene verificar la licencia del modelo base Qwen/Qwen3-VL-8B-Instruct antes de un despliegue en produccion.
 - La variante `wo-grpo/` es un adaptador LoRA de la etapa SFT, no un modelo completo: no debe cargarse como sustituto del checkpoint raiz sin aplicar el adaptador sobre el modelo base.
-- Los prompts de evaluacion, el protocolo congelado, el renderizador determinista y los convertidores de benchmarks no estan en el repositorio de HuggingFace, sino en una release de codigo que no se enlaza en la informacion disponible; sin ellos no se puede reproducir la evaluacion publicada.
+- Los prompts de evaluacion, el protocolo congelado, el renderizador determinista y los convertidores de benchmarks no estan en el repositorio de Hugging Face, sino en una release de codigo que no se enlaza en la informacion disponible; sin ellos no se puede reproducir la evaluacion publicada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Allenda/VIEScore2
+- Modelo en Hugging Face: https://huggingface.co/Allenda/VIEScore2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Articulo (paper): no disponible; la model card indica que la citacion se anadira al publicarse
 - Repositorio de codigo acompanante (protocolo, renderizador, convertidores de benchmarks y baselines): no disponible en la informacion proporcionada

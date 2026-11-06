@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
 - Modelo original Light Migration: https://huggingface.co/dx8152/Qwen-Edit-2509-Light-Migration/
 - Modelo original Multiple angles: https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles
 - Modelo original Fusion: https://huggingface.co/dx8152/Qwen-Image-Edit-2509-Fusion

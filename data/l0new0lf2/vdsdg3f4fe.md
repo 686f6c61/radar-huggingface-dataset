@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como L0neW0lf2/vdsdg3f4fe es un repositorio alojado en HuggingFace por el usuario L0neW0lf2. En el momento de la consulta no dispone de model card sustantiva: el README se limita a declarar la licencia openrail, sin descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco tiene etiqueta de pipeline asignada, idiomas declarados, descargas ni likes, y su fecha de creacion y actualizacion registradas (2026-10-04) son posteriores a la fecha actual, lo que sugiere un artefacto de prueba, un error de metadatos o una subida incompleta.
+El modelo identificado como L0neW0lf2/vdsdg3f4fe es un repositorio alojado en Hugging Face por el usuario L0neW0lf2. En el momento de la consulta no dispone de model card sustantiva: el README se limita a declarar la licencia openrail, sin descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco tiene etiqueta de pipeline asignada, idiomas declarados, descargas ni likes, y su fecha de creacion y actualizacion registradas (2026-10-04) son posteriores a la fecha actual, lo que sugiere un artefacto de prueba, un error de metadatos o una subida incompleta.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,2 GB, compatible con un conjunto de pesos de muy pequeno tamano o con un unico fichero de pesos parcialmente cuantizado. No es posible confirmar a partir de esa cifra ni el numero de parametros, ni el formato de los pesos (safetensors, GGUF, binario PyTorch u otro), ni si se trata realmente de un modelo entrenado o de un contenedor vacio.
 
@@ -73,7 +73,7 @@ Todas las cifras de esta seccion son estimaciones derivadas unicamente del taman
 - Viabilidad en GPU de consumo: probable en cualquier GPU de consumo moderna (por ejemplo, gama RTX x060 o superior) e incluso en CPU, siempre bajo la hipotesis de que los pesos esten completos y sean cargables.
 - Opciones de despliegue: no disponible. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI, Transformers ni ningun otro runtime. El formato de pesos es desconocido, por lo que la compatibilidad no puede determinarse a priori.
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento en disco: aproximadamente 0,2 GB para el repositorio completo, segun los metadatos de HuggingFace.
+- Almacenamiento en disco: aproximadamente 0,2 GB para el repositorio completo, segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L0neW0lf2/vdsdg3f4fe
+- Modelo en Hugging Face: https://huggingface.co/L0neW0lf2/vdsdg3f4fe
 - Perfil del autor: https://huggingface.co/L0neW0lf2
 
 No se han encontrado otros enlaces relevantes (papers, blogs tecnicos, repositorios de codigo o demos) en la informacion disponible.

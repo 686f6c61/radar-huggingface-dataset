@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ImageFusion-Show (este) | 1.5B | no disponible | Fusion IR/VIS + generacion multimodal | no disponible | Checkpoint de proyecto en HuggingFace |
-| showlab/show-o2-1.5B-HQ (base) | 1.5B | no disponible | Generacion multimodal AR + difusion | no disponible | HuggingFace |
+| ImageFusion-Show (este) | 1.5B | no disponible | Fusion IR/VIS + generacion multimodal | no disponible | Checkpoint de proyecto en Hugging Face |
+| showlab/show-o2-1.5B-HQ (base) | 1.5B | no disponible | Generacion multimodal AR + difusion | no disponible | Hugging Face |
 | LRRNet | no disponible | no disponible | Fusion de imagenes IR/VIS | no disponible | Referencia usada como supervision |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nonbiuld/ImageFusion-Show-MSRS-SFT-full15-diffusion15-20261106
+- Hugging Face del modelo: https://huggingface.co/Nonbiuld/ImageFusion-Show-MSRS-SFT-full15-diffusion15-20261106
 - Checkpoint de la primera fase: https://huggingface.co/Nonbiuld/ImageFusion-Show-MSRS-SFT-full15-20261105
 - Modelo base: https://huggingface.co/showlab/show-o2-1.5B-HQ
 - Codigo del proyecto: https://github.com/Reborn986/ImageFusion-Show

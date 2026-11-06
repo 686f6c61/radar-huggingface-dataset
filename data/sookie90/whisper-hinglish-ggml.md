@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sookie90/whisper-hinglish-ggml` es una conversión al formato GGML del modelo de reconocimiento de voz `Trelis/whisper-hinglish-preview`, especializado en hinglish (mezcla de hindi e inglés). El autor, sookie90, ha convertido el checkpoint original de HuggingFace a un archivo binario cuantizado en q5_0 (~1,03 GB) para su uso con `whisper.cpp` y `whisper-rs`, dos implementaciones ligeras de Whisper en C/C++ y Rust respectivamente. El modelo está pensado para transcripción de audio en hinglish, un caso de uso frecuente en entornos multilingües de la India.
+`sookie90/whisper-hinglish-ggml` es una conversión al formato GGML del modelo de reconocimiento de voz `Trelis/whisper-hinglish-preview`, especializado en hinglish (mezcla de hindi e inglés). El autor, sookie90, ha convertido el checkpoint original de Hugging Face a un archivo binario cuantizado en q5_0 (~1,03 GB) para su uso con `whisper.cpp` y `whisper-rs`, dos implementaciones ligeras de Whisper en C/C++ y Rust respectivamente. El modelo está pensado para transcripción de audio en hinglish, un caso de uso frecuente en entornos multilingües de la India.
 
 La relevancia de este modelo radica en que ofrece una alternativa cuantizada y portable del modelo original, permitiendo su ejecución en dispositivos con recursos limitados (CPU, Raspberry Pi, etc.) sin necesidad de depender de la pila de Python de OpenAI. Sin embargo, presenta un problema conocido: el vocabulario del checkpoint implica 101 idiomas aparentes, uno más de los 100 que soporta la tabla `whisper_lang_str()` de `whisper.cpp`, lo que provoca un fallo de segmentación (SIGSEGV) al cargar el modelo con las versiones estándar de `whisper.cpp` y `whisper-rs` hasta la 0.16.0. Se requiere un parche de una línea en el código fuente para evitar el crash.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que ofrece una alternativa cuantizada y p
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversión del checkpoint `Trelis/whisper-hinglish-preview`, que a su vez se basa en la arquitectura Whisper de OpenAI (encoder-decoder transformer con atención multi-cabeza). No se dispone de información detallada sobre el número de parámetros, la longitud de contexto ni el proceso de entrenamiento del modelo original (datos, tokens, técnicas de alineación, etc.). La conversión se realizó con el script `models/convert-h5-to-ggml.py` de `whisper.cpp` sobre el snapshot de HuggingFace del 2026-09-02, seguido de una cuantización a q5_0 con la herramienta `whisper-quantize`. No se han documentado innovaciones técnicas adicionales más allá de la cuantización.
+El modelo es una conversión del checkpoint `Trelis/whisper-hinglish-preview`, que a su vez se basa en la arquitectura Whisper de OpenAI (encoder-decoder transformer con atención multi-cabeza). No se dispone de información detallada sobre el número de parámetros, la longitud de contexto ni el proceso de entrenamiento del modelo original (datos, tokens, técnicas de alineación, etc.). La conversión se realizó con el script `models/convert-h5-to-ggml.py` de `whisper.cpp` sobre el snapshot de Hugging Face del 2026-09-02, seguido de una cuantización a q5_0 con la herramienta `whisper-quantize`. No se han documentado innovaciones técnicas adicionales más allá de la cuantización.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se han encontrado otros modelos GGML específicos para hinglish en la búsque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sookie90/whisper-hinglish-ggml
+- Modelo en Hugging Face: https://huggingface.co/sookie90/whisper-hinglish-ggml
 - Modelo original (Trelis): https://huggingface.co/Trelis/whisper-hinglish-preview
 - Repositorio whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Repositorio whisper-rs: https://github.com/tazz4843/whisper-rs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rce-1017-snippet-probe` es un modelo publicado en HuggingFace por el usuario `0xmoose0xmoose0xmoose` bajo la etiqueta de pipeline `text-classification`. La informacion disponible se limita a los metadatos del repositorio: los tags `transformers`, `bert`, `text-classification`, `custom_code`, `endpoints_compatible` y `region:us`. La model card del autor esta practicamente vacia (unicamente un encabezado "# t"), por lo que no existe documentacion sobre el problema que resuelve, el dataset de entrenamiento ni el rendimiento esperado.
+`rce-1017-snippet-probe` es un modelo publicado en Hugging Face por el usuario `0xmoose0xmoose0xmoose` bajo la etiqueta de pipeline `text-classification`. La informacion disponible se limita a los metadatos del repositorio: los tags `transformers`, `bert`, `text-classification`, `custom_code`, `endpoints_compatible` y `region:us`. La model card del autor esta practicamente vacia (unicamente un encabezado "# t"), por lo que no existe documentacion sobre el problema que resuelve, el dataset de entrenamiento ni el rendimiento esperado.
 
 El tag `bert` sugiere una arquitectura basada en BERT orientada a clasificacion de secuencias, y el nombre del repositorio apunta a la clasificacion de fragmentos de codigo ("snippet"), si bien ninguna de las dos cosas esta confirmada por el autor. El tag `custom_code` implica que el repositorio incluye codigo de modelado propio y requiere `trust_remote_code=True` para cargarse con Transformers, lo que anade un vector de riesgo relevante en un repositorio sin licencia, sin idiomas declarados y con cero descargas.
 
@@ -52,8 +52,8 @@ Dado que no existe documentacion funcional, los siguientes escenarios son hipote
 - Etiquetado de datos para curación de datasets: emplear el modelo como anotador debil dentro de un pipeline de Active Learning, midiendo previamente su acuerdo con anotaciones humanas en una muestra de validacion.
 - Filtrado previo en pipelines de moderacion: primera etapa de bajo coste que descarte contenido antes de pasar a un modelo mayor; solo viable si se conoce la taxonomia de salida y se mide el recall en datos propios.
 - Enrutado de consultas en un sistema RAG: clasificar la pregunta entrante para decidir que indice o herramienta consultar, aprovechando el bajo coste de inferencia de un encoder pequeno.
-- Reproduccion e investigacion: objeto de estudio para analizar practicas de publicacion en HuggingFace (model cards vacias, uso de `custom_code`, ausencia de licencia) en trabajos sobre trazabilidad y seguridad de la cadena de suministro de modelos.
-- Prueba de integracion con HuggingFace Inference Endpoints: el tag `endpoints_compatible` permitiria validar el despliegue en un entorno aislado con `trust_remote_code` habilitado y revision manual del codigo.
+- Reproduccion e investigacion: objeto de estudio para analizar practicas de publicacion en Hugging Face (model cards vacias, uso de `custom_code`, ausencia de licencia) en trabajos sobre trazabilidad y seguridad de la cadena de suministro de modelos.
+- Prueba de integracion con Hugging Face Inference Endpoints: el tag `endpoints_compatible` permitiria validar el despliegue en un entorno aislado con `trust_remote_code` habilitado y revision manual del codigo.
 
 ## Benchmarks y rendimiento
 
@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento de este modelo que permitan una comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/rce-1017-snippet-probe
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/rce-1017-snippet-probe
 
 No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

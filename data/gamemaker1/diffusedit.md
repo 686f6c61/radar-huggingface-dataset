@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffusEdit es un sistema de actualizacion de articulos enciclopedicos basado en un modelo de difusion de lenguaje enmascarado congelado, LLaDA-8B-Base, sobre el que se entrenan una serie de clasificadores ligeros que deciden que frases conservar, editar o descartar a partir de evidencia externa. Lo desarrolla el usuario de HuggingFace gamemaker1 y se publica bajo licencia Apache 2.0. El modelo subyacente nunca se entrena: permanece congelado en bfloat16 y los clasificadores, que suman 12,9 millones de parametros, leen sus estados ocultos para orquestar la edicion.
+DiffusEdit es un sistema de actualizacion de articulos enciclopedicos basado en un modelo de difusion de lenguaje enmascarado congelado, LLaDA-8B-Base, sobre el que se entrenan una serie de clasificadores ligeros que deciden que frases conservar, editar o descartar a partir de evidencia externa. Lo desarrolla el usuario de Hugging Face gamemaker1 y se publica bajo licencia Apache 2.0. El modelo subyacente nunca se entrena: permanece congelado en bfloat16 y los clasificadores, que suman 12,9 millones de parametros, leen sus estados ocultos para orquestar la edicion.
 
 El problema que resuelve es el de la actualizacion de hechos en textos largos: dado un articulo y un conjunto de pasajes de evidencia, el sistema identifica que oraciones quedan obsoletas, que tokens concretos deben reemplazarse y que oraciones dependen de otras modificadas. La edicion final la realiza el propio modelo de difusion rellenando los tokens marcados como desactualizados, con un reranker que selecciona entre los rellenos candidatos.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiffusEdit (este) | 8B base congelado + 12,9M clasificadores | no disponible | Edicion in-place con modelo de difusion congelado y clasificadores | Apache 2.0 | HuggingFace y GitHub |
-| gamemaker1/t5edit | no disponible | no disponible | Editor ajustado finamente (T5) usado como referencia de comparacion | no disponible | HuggingFace |
-| GSAI-ML/LLaDA-8B-Base | 8B | no disponible | Modelo de difusion de lenguaje enmascarado base | no disponible | HuggingFace |
+| DiffusEdit (este) | 8B base congelado + 12,9M clasificadores | no disponible | Edicion in-place con modelo de difusion congelado y clasificadores | Apache 2.0 | Hugging Face y GitHub |
+| gamemaker1/t5edit | no disponible | no disponible | Editor ajustado finamente (T5) usado como referencia de comparacion | no disponible | Hugging Face |
+| GSAI-ML/LLaDA-8B-Base | 8B | no disponible | Modelo de difusion de lenguaje enmascarado base | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gamemaker1/diffusedit
+- Modelo en Hugging Face: https://huggingface.co/gamemaker1/diffusedit
 - Modelo base: https://huggingface.co/GSAI-ML/LLaDA-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/gamemaker1/wiki-wrong
 - Codigo del sistema: https://github.com/gamemaker1/diffusedit

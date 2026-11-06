@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shabieh2/cluster_muse_0912_full_v2` es un ajuste fino publicado en HuggingFace por el usuario shabieh2. Se deriva del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, una version del modelo Muse Glimmer de 30 000 millones de parametros preparada por Unsloth en cuantizacion de 4 bits. El entrenamiento del ajuste se realizo con Unsloth y TRL, segun las etiquetas y la model card del autor. El repositorio tiene un tamano de 6,8 GB y se distribuye en formato safetensors.
+El modelo `shabieh2/cluster_muse_0912_full_v2` es un ajuste fino publicado en Hugging Face por el usuario shabieh2. Se deriva del modelo base `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`, una version del modelo Muse Glimmer de 30 000 millones de parametros preparada por Unsloth en cuantizacion de 4 bits. El entrenamiento del ajuste se realizo con Unsloth y TRL, segun las etiquetas y la model card del autor. El repositorio tiene un tamano de 6,8 GB y se distribuye en formato safetensors.
 
 La relevancia de esta ficha es limitada: el modelo no presenta ningun resultado de evaluacion publicado, no tiene descargas ni interacciones registradas en el momento de la consulta y la model card no aporta informacion sobre el dataset de ajuste, el numero de tokens de entrenamiento ni la metodologia empleada. Se trata, por tanto, de un artefacto derivado de un modelo base mayor, no de un modelo con documentacion tecnica completa.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| shabieh2/cluster_muse_0912_full_v2 | ~30 000 millones (segun nombre) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | ~30 000 millones (segun nombre) | no disponible | no disponible | HuggingFace |
+| shabieh2/cluster_muse_0912_full_v2 | ~30 000 millones (segun nombre) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | ~30 000 millones (segun nombre) | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con modelos alternativos de tamano o tarea equivalentes.
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/cluster_muse_0912_full_v2
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/cluster_muse_0912_full_v2
 - Modelo base: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog o demo adicionales: no disponible

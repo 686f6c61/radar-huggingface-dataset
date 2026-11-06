@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Phi-4,
 | Tipos de cuantizacion | no disponible (el tamano de 5,5 GB sugiere una cuantizacion de 4 bits, pero no se confirma) |
 | Idiomas soportados | no disponible (Phi-4 esta disenado principalmente para ingles, pero el fine-tune no lo especifica) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No disponible. No se conocen datos de rendimiento del modelo, por lo que no es p
 
 ## Enlaces
 
-- [HuggingFace - ArthT/phi4-14b-a1-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed2-v2)
-- [Microsoft Phi-4 - HuggingFace](https://huggingface.co/microsoft/phi-4)
+- [Hugging Face - ArthT/phi4-14b-a1-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a1-badmed-seed2-v2)
+- [Microsoft Phi-4 - Hugging Face](https://huggingface.co/microsoft/phi-4)
 - [Phi-4 Technical Report (PDF)](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf)
 - [Ollama Phi-4 14B](https://ollama.com/library/phi4:14b)

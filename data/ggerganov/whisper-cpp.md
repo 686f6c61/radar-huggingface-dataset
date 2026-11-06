@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper.cpp es una implementación en C/C++ del modelo de reconocimiento automático de voz (ASR) Whisper de OpenAI, desarrollada por Georgi Gerganov (ggerganov). Este repositorio en HuggingFace aloja los pesos de los modelos Whisper convertidos al formato ggml, que es el formato nativo del motor de inferencia de whisper.cpp. El proyecto resuelve el problema de ejecutar Whisper en entornos con recursos limitados, sin dependencias pesadas de Python ni frameworks de deep learning, y con un rendimiento notablemente superior en CPU.
+whisper.cpp es una implementación en C/C++ del modelo de reconocimiento automático de voz (ASR) Whisper de OpenAI, desarrollada por Georgi Gerganov (ggerganov). Este repositorio en Hugging Face aloja los pesos de los modelos Whisper convertidos al formato ggml, que es el formato nativo del motor de inferencia de whisper.cpp. El proyecto resuelve el problema de ejecutar Whisper en entornos con recursos limitados, sin dependencias pesadas de Python ni frameworks de deep learning, y con un rendimiento notablemente superior en CPU.
 
 El modelo original Whisper es una arquitectura transformer encoder-decoder entrenada con 680 000 horas de audio anotado, que cubre múltiples idiomas y tareas como transcripción, traducción y detección de idioma. whisper.cpp permite ejecutar todos los tamaños de Whisper —tiny, base, small, medium, large-v1/v2/v3 y large-v3-turbo— en dispositivos de bajo consumo, desde Raspberry Pi hasta servidores, con cuantizaciones que reducen drásticamente el uso de memoria sin sacrificar excesiva precisión. Su relevancia actual se debe a que es la opción estándar para despliegues de ASR en edge computing y aplicaciones de tiempo real.
 
@@ -48,7 +48,7 @@ La innovación técnica de whisper.cpp reside en su motor de inferencia basado e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Los datos de precisión (WER) del modelo Whisper original están disponibles en el paper de OpenAI, pero whisper.cpp no proporciona métricas propias en la model card ni en el repositorio de HuggingFace. Se recomienda consultar el repositorio de GitHub para obtener referencias de velocidad en diferentes CPUs y GPUs.
+No se han publicado resultados de benchmarks en la información disponible. Los datos de precisión (WER) del modelo Whisper original están disponibles en el paper de OpenAI, pero whisper.cpp no proporciona métricas propias en la model card ni en el repositorio de Hugging Face. Se recomienda consultar el repositorio de GitHub para obtener referencias de velocidad en diferentes CPUs y GPUs.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ whisper.cpp destaca por su portabilidad y ausencia de dependencias, mientras que
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ggerganov/whisper.cpp
+- Repositorio de Hugging Face: https://huggingface.co/ggerganov/whisper.cpp
 - Repositorio de GitHub (whisper.cpp): https://github.com/ggml-org/whisper.cpp
 - Documentación de modelos en GitHub: https://github.com/ggerganov/whisper.cpp/tree/master/models
 - Paper original de Whisper: https://cdn.openai.com/papers/whisper.pdf

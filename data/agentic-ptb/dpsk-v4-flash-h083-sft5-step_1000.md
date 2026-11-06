@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h083.sft5.step_1000
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h083.sft5.step_1000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Origen del checkpoint (referencia en la model card): `msr-spare/msr-agentic-ptb-dpsk-sft5-intermediates` :: `step_1000` (no se proporciona URL directa)

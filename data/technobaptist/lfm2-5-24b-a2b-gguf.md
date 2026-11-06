@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Parametros activos | Contexto | LiveClaw | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B (GGUF de TechnoBaptist) | 24,0B | 2,45B | 131.072 tokens | 48,09 | lfm1.0 | GGUF en HuggingFace; el modelo base ofrece FP8, ONNX y MLX-4bit |
+| LFM2.5-24B-A2B (GGUF de TechnoBaptist) | 24,0B | 2,45B | 131.072 tokens | 48,09 | lfm1.0 | GGUF en Hugging Face; el modelo base ofrece FP8, ONNX y MLX-4bit |
 | Qwen3.6-35B-A3B | aproximadamente 35B (la model card indica ~50% mas de parametros totales y activos) | no disponible con precision (nomenclatura A3B, en torno a 3B) | no disponible | 38,19 | no disponible | no disponible en la informacion proporcionada |
 | LFM2.5-230M | 230M | no disponible | no disponible | no disponible | lfm1.0 | mismo autor, familia LFM2.5 |
 

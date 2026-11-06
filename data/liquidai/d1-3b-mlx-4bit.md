@@ -96,7 +96,7 @@ Frente a modelos generativos de tamaño similar, la diferencia conceptual es que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-3B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-3B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Exportación MLX float16: https://huggingface.co/LiquidAI/d1-3B-MLX-fp16
 - Exportación MLX 8 bits: https://huggingface.co/LiquidAI/d1-3B-MLX-8bit

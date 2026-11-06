@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-009 | 4,02 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint intermedio (paso 9) de un piloto medico |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens (segun documentacion publica del modelo base) | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo generalista de referencia; sin ajuste medico |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens (segun documentacion publica) | Apache 2.0 | HuggingFace | Alternativa de mayor tamano y mayor coste de inferencia |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 | HuggingFace, con aceptacion de terminos | Mayor tamano y licencia con restricciones, a diferencia de Apache 2.0 |
+| qwen3-4b-medicine-static-pilot-261016-step-009 | 4,02 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint intermedio (paso 9) de un piloto medico |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens (segun documentacion publica del modelo base) | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo generalista de referencia; sin ajuste medico |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens (segun documentacion publica) | Apache 2.0 | Hugging Face | Alternativa de mayor tamano y mayor coste de inferencia |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 | Hugging Face, con aceptacion de terminos | Mayor tamano y licencia con restricciones, a diferencia de Apache 2.0 |
 
 Los datos de contexto y parametros de los modelos comparados provienen de su documentacion publica y no de la informacion proporcionada en esta busqueda. No hay resultados de benchmark que permitan comparar el rendimiento real de este checkpoint frente a las alternativas.
 
@@ -90,7 +90,7 @@ Los datos de contexto y parametros de los modelos comparados provienen de su doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-009
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-009
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

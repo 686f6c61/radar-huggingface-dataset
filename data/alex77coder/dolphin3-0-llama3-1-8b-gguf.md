@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - F16/FP16: en torno a 16-17 GB.
 - GPU recomendadas: modelos de 8-16 GB de VRAM cubren las cuantizaciones bajas; RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 (24 GB) pueden ejecutar todas las cuantizaciones GGUF con holgura. Para servirlo en FP16 con contexto largo se recomienda A100, H100 o L40S.
 - Compatibilidad con GPU de consumo: si, cabe en GPU de consumo. Una RTX 4090 o 3090 (24 GB) ejecuta cualquier cuantizacion, y una RTX 3060 de 12 GB cubre Q4-Q6.
-- Opciones de despliegue: ollama (comando indicado en la model card: `ollama run hf.co/cognitivecomputations/Dolphin3.0-Llama3.1-8B-GGUF:Q4_0`), LM Studio, llama.cpp, HuggingFace Transformers, vLLM, SGLang y TGI (los tres ultimos para el modelo en safetensors).
+- Opciones de despliegue: ollama (comando indicado en la model card: `ollama run hf.co/cognitivecomputations/Dolphin3.0-Llama3.1-8B-GGUF:Q4_0`), LM Studio, llama.cpp, Hugging Face Transformers, vLLM, SGLang y TGI (los tres ultimos para el modelo en safetensors).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alex77coder/Dolphin3.0-Llama3.1-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alex77coder/Dolphin3.0-Llama3.1-8B-GGUF
 - Modelo original (Cognitive Computations): https://huggingface.co/cognitivecomputations/Dolphin3.0-Llama3.1-8B
 - Coleccion Dolphin 3.0: https://huggingface.co/collections/cognitivecomputations/dolphin-30-677ab47f73d7ff66743979a3
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

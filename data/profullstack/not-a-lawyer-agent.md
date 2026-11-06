@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| not-a-lawyer-agent (este) | 0,5B + LoRA r=8 | no disponible (entrenado a 256) | Apache 2.0 | HuggingFace + GGUF | Especializado en estilo jurídico, requiere RAG |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 (según ficha del base) | Apache 2.0 | HuggingFace | Modelo base sin especialización |
-| Adaptadores legales de mayor tamano (p. ej. sobre Llama 3 8B) | 8B | variable | variable | HuggingFace | Mayor capacidad de razonamiento, requiere GPU |
+| not-a-lawyer-agent (este) | 0,5B + LoRA r=8 | no disponible (entrenado a 256) | Apache 2.0 | Hugging Face + GGUF | Especializado en estilo jurídico, requiere RAG |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 (según ficha del base) | Apache 2.0 | Hugging Face | Modelo base sin especialización |
+| Adaptadores legales de mayor tamano (p. ej. sobre Llama 3 8B) | 8B | variable | variable | Hugging Face | Mayor capacidad de razonamiento, requiere GPU |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/profullstack/not-a-lawyer-agent
+- Hugging Face del adaptador: https://huggingface.co/profullstack/not-a-lawyer-agent
 - GGUF para Ollama: https://huggingface.co/profullstack/not-a-lawyer-agent-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejemplo de entrenamiento c0mpute: https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

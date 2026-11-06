@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic
 - Dataset de instrucciones: https://huggingface.co/datasets/LumiOpen/poro2-instruction-collection
 - Guía de cuantizaciones GGUF (referencia general): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados adicionales (clasif
 
 | Modelo | Parámetros | Tarea | Contexto / entrada | Métrica ShapeNetPart | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| point-mae-base.shapenetpart.yatian-pang | 27,1 M | Segmentación de partes | 8192 puntos (configurable) | ins_mIoU 86,2 / cls_mIoU 84,22 | MIT | HuggingFace, librería torch-pointcloud |
+| point-mae-base.shapenetpart.yatian-pang | 27,1 M | Segmentación de partes | 8192 puntos (configurable) | ins_mIoU 86,2 / cls_mIoU 84,22 | MIT | Hugging Face, librería torch-pointcloud |
 | Point-MAE (checkpoint original de Pang-Yatian) | ~22-27 M (no confirmado en la información disponible) | Preentrenamiento + fine-tuning | nubes de puntos | no disponible en esta ficha | MIT | GitHub Pang-Yatian/Point-MAE |
 | Otros modelos de segmentación de partes 3D | no disponible | Segmentación de partes | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La información proporcionada no incluye datos numéricos de modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/point-mae-base.shapenetpart.yatian-pang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-mae-base.shapenetpart.yatian-pang
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/point-mae-base.pretrain.yatian-pang
 - Paper (Masked Autoencoders for Point Cloud Self-supervised Learning, ECCV 2022): https://arxiv.org/abs/2203.06604
 - Repositorio original de Point-MAE: https://github.com/Pang-Yatian/Point-MAE

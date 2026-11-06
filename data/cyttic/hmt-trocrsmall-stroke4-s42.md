@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/hmt-trocrsmall-stroke4-s42 | 22.421.004 | no disponible | MIT | HuggingFace |
+| cyttic/hmt-trocrsmall-stroke4-s42 | 22.421.004 | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-stroke4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-stroke4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: `results.json` (referenciado en la model card, no enlazado directamente)

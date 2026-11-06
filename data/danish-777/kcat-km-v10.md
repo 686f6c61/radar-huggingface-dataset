@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-Km model v10 es un sistema de prediccion de parametros cineticos enzimaticos (log10(kcat) y log10(Km)) publicado por el usuario Danish-777 en HuggingFace. No se trata de un modelo de lenguaje generativo, sino de un pipeline de regresion que combina tres aproximaciones: XGBoost sobre caracteristicas enzimaticas artesanales, XGBoost sobre embeddings del modelo proteico ESM-2 en sus variantes de 35M y 150M parametros, y una pequena red neuronal (MLP) sobre el embedding de 35M. Las predicciones de cada componente se combinan mediante el promedio de rangos.
+kcat-Km model v10 es un sistema de prediccion de parametros cineticos enzimaticos (log10(kcat) y log10(Km)) publicado por el usuario Danish-777 en Hugging Face. No se trata de un modelo de lenguaje generativo, sino de un pipeline de regresion que combina tres aproximaciones: XGBoost sobre caracteristicas enzimaticas artesanales, XGBoost sobre embeddings del modelo proteico ESM-2 en sus variantes de 35M y 150M parametros, y una pequena red neuronal (MLP) sobre el embedding de 35M. Las predicciones de cada componente se combinan mediante el promedio de rangos.
 
 El modelo aborda un problema clasico en biologia computacional y enzimologia: estimar la constante catalitica (kcat) y la constante de Michaelis (Km) a partir de la secuencia de una enzima y el SMILES de un sustrato. Estos parametros son criticos para el diseno de biocatalizadores, la ingenieria metabolica y el cribado de enzimas, pero medirlos experimentalmente es costoso y lento. La propuesta se apoya en datos publicos agregados (train.parquet, CatPred-DB, BRENDA y SABIO-RK) y esta disenada para ejecutarse exclusivamente en CPU.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entradas | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-Km model v10 (Danish-777) | Ensemble XGBoost + MLP sobre ESM-2 | Secuencia + SMILES | log10(kcat), log10(Km) | MIT | HuggingFace, CPU-only |
+| kcat-Km model v10 (Danish-777) | Ensemble XGBoost + MLP sobre ESM-2 | Secuencia + SMILES | log10(kcat), log10(Km) | MIT | Hugging Face, CPU-only |
 | DLKcat (Li et al., 2022) | Red neuronal sobre grafos moleculares y secuencia | Secuencia + SMILES | kcat | no disponible en la informacion proporcionada | Referenciado como fuente de lookup; disponible publicamente segun la literatura citada |
 | CatPred-DB (Boorla y Maranas, 2025) | Base de datos publica de kcat/Km | no aplica (datos) | Valores experimentales | no disponible en la informacion proporcionada | Usada como fuente de entrenamiento y lookup |
 | ESM-2 (35M / 150M) | Transformer proteico (encoder) | Secuencia de aminoacidos | Embeddings | no disponible en la informacion proporcionada | Usado como extractor de caracteristicas dentro del pipeline |
@@ -84,12 +84,12 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Ambito restringido: solo predice kcat y Km; no modela inhibicion, cooperatividad, condiciones de pH o temperatura, ni otras constantes cineticas.
 - Idiomas: no aplica, pero la entrada debe respetar formatos canonicos de secuencia de aminoacidos y SMILES validos; no se documenta validacion de entradas malformadas.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre la idoneidad de las predicciones para decisiones experimentales o industriales.
-- Madurez y trazabilidad: repositorio con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo dia (2026-11-02), sin pipeline declarado en HuggingFace ni documentacion adicional sobre hiperparametros del "time guard" o de la MLP.
+- Madurez y trazabilidad: repositorio con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo dia (2026-11-02), sin pipeline declarado en Hugging Face ni documentacion adicional sobre hiperparametros del "time guard" o de la MLP.
 - No es un modelo de lenguaje: no debe evaluarse con criterios de LLM (contexto, tool calling, alucinacion conversacional); su uso esta acotado a regresion cinetica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danish-777/kcat-km-v10
+- Modelo en Hugging Face: https://huggingface.co/Danish-777/kcat-km-v10
 - CatPred-DB (Boorla y Maranas, *Nature Communications* 2025): referencia citada en la model card; no se proporciona URL directa en la informacion disponible.
 - DLKcat (Li et al., *Nature Catalysis* 2022): referencia citada en la model card; no se proporciona URL directa en la informacion disponible.
 - ESM-2 (Meta AI): extractor de embeddings usado por el pipeline; no se proporciona URL directa en la informacion disponible.

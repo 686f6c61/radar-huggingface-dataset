@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-USS-Prism-GGUF es una publicacion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base Qwen3.8-27B-USS-Prism, alojado en la cuenta de HuggingFace del usuario nightmedia. No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion de un modelo de la familia Qwen, con 27.320.697.856 parametros segun los datos disponibles en safetensors. El repositorio ocupa 28,2 GB e incluye un conjunto amplio de cuantizaciones (desde Q2_K hasta F16, pasando por Q3_K_S, Q4_K_M, Q5_K_M, Q6_K, Q8_0 e IQ4_XS).
+Qwen3.8-27B-USS-Prism-GGUF es una publicacion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base Qwen3.8-27B-USS-Prism, alojado en la cuenta de Hugging Face del usuario nightmedia. No se trata de un modelo entrenado desde cero, sino de una conversion y cuantizacion de un modelo de la familia Qwen, con 27.320.697.856 parametros segun los datos disponibles en safetensors. El repositorio ocupa 28,2 GB e incluye un conjunto amplio de cuantizaciones (desde Q2_K hasta F16, pasando por Q3_K_S, Q4_K_M, Q5_K_M, Q6_K, Q8_0 e IQ4_XS).
 
 El interes practico de esta ficha radica en que permite ejecutar un modelo de aproximadamente 27.000 millones de parametros en hardware de consumo mediante llama.cpp u otros motores compatibles con GGUF, algo inviable con los pesos en precision completa. Sin embargo, la informacion publicada es muy escasa: no hay model card descriptiva del modelo base, no se declara licencia, no se listan idiomas soportados y no se aportan resultados de benchmarks. Todo lo que se puede afirmar con rigor se limita a los metadatos tecnicos del repositorio y a la lista de cuantizaciones disponibles.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es, por tanto, instrumental: sirve como artefa
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en los materiales proporcionados. El identificador sugiere que deriva de la familia Qwen (version 3.8, con 27B de parametros), pero la model card del repositorio GGUF no detalla si se trata de un transformer denso, un modelo MoE o una variante hibrida, ni tampoco el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio es exclusivamente una publicacion de cuantizaciones estaticas: los metadatos internos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo desde pesos en formato HuggingFace.
+No se ha publicado informacion sobre la arquitectura del modelo base en los materiales proporcionados. El identificador sugiere que deriva de la familia Qwen (version 3.8, con 27B de parametros), pero la model card del repositorio GGUF no detalla si se trata de un transformer denso, un modelo MoE o una variante hibrida, ni tampoco el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO. El repositorio es exclusivamente una publicacion de cuantizaciones estaticas: los metadatos internos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo desde pesos en formato Hugging Face.
 
 La innovacion tecnica de esta publicacion es la propia cuantizacion: se ofrecen variantes K-quant e I-quant (IQ4_XS) que permiten reducir el peso en disco y en memoria desde los aproximadamente 54 GB que ocuparian los pesos en F16 hasta cifras manejables en GPUs de consumo. No se documenta ninguna tecnica adicional de decodificacion especulativa, atencion lineal ni optimizaciones de inferencia mas alla de las que aporta el propio formato GGUF.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-USS-Prism-GGUF (este) | 27,3B | no disponible | no disponible | GGUF | HuggingFace |
-| Modelo base Qwen3.8-27B-USS-Prism | 27,3B (presumible) | no disponible | no disponible | safetensors | HuggingFace (nightmedia) |
+| Qwen3.8-27B-USS-Prism-GGUF (este) | 27,3B | no disponible | no disponible | GGUF | Hugging Face |
+| Modelo base Qwen3.8-27B-USS-Prism | 27,3B (presumible) | no disponible | no disponible | safetensors | Hugging Face (nightmedia) |
 | Alternativas de ~27B en GGUF | no disponible | no disponible | no disponible | GGUF | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoria; los datos de rendimiento, contexto y licencia del modelo base no se han publicado en los materiales proporcionados.

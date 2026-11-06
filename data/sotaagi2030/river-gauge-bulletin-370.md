@@ -2,7 +2,7 @@
 
 ## Resumen
 
-River-Gauge-Bulletin-370 es un artefacto publicado en HuggingFace por el usuario SOTAagi2030 bajo las etiquetas `hydrology` y `river-bulletin`. La model card describe un boletín de lecturas de campo revisadas: 12 lecturas en 4 estaciones activas, con 3 alertas de rio destacadas, 4 candidatos diferidos y 5 lecturas rechazadas. No se trata, por tanto, de un modelo de lenguaje ni de un modelo de IA en el sentido habitual, sino de un conjunto de datos o publicacion congelada de caracter hidrologico.
+River-Gauge-Bulletin-370 es un artefacto publicado en Hugging Face por el usuario SOTAagi2030 bajo las etiquetas `hydrology` y `river-bulletin`. La model card describe un boletín de lecturas de campo revisadas: 12 lecturas en 4 estaciones activas, con 3 alertas de rio destacadas, 4 candidatos diferidos y 5 lecturas rechazadas. No se trata, por tanto, de un modelo de lenguaje ni de un modelo de IA en el sentido habitual, sino de un conjunto de datos o publicacion congelada de caracter hidrologico.
 
 La informacion disponible no permite identificar arquitectura, parametros, contexto ni proceso de entrenamiento alguno. El repositorio no declara pipeline, licencia, idiomas ni formatos de pesos, y no cuenta con descargas ni interacciones en el momento de la consulta. La fecha de creacion y actualizacion indicada es 2026-11-05, con apenas 19 segundos entre ambas, lo que sugiere una publicacion automatizada o de prueba.
 
@@ -69,4 +69,4 @@ No disponible. No se identifica en la informacion proporcionada ningun modelo de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/River-Gauge-Bulletin-370
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/River-Gauge-Bulletin-370

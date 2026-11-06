@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es un modelo de generación de texto de 1,65 billones de parámetros publicado en HuggingFace por el usuario Godwin021. Según la model card, se trata de la versión final de DeepSeek-V4-Pro, que sustituye a la versión preliminar con mejoras sustanciales en capacidades de agente y rendimiento en entornos de producción. El modelo incorpora un módulo de decodificación especulativa denominado DSpark, que acelera la inferencia sin degradar la calidad de las respuestas.
+DeepSeek-V4-Pro-0813 es un modelo de generación de texto de 1,65 billones de parámetros publicado en Hugging Face por el usuario Godwin021. Según la model card, se trata de la versión final de DeepSeek-V4-Pro, que sustituye a la versión preliminar con mejoras sustanciales en capacidades de agente y rendimiento en entornos de producción. El modelo incorpora un módulo de decodificación especulativa denominado DSpark, que acelera la inferencia sin degradar la calidad de las respuestas.
 
 El modelo está diseñado para tareas de razonamiento complejo, uso de herramientas y desarrollo de software autónomo, como demuestran sus resultados en benchmarks de agentes (Terminal Bench, DeepSWE, Cybergym). Aunque la model card utiliza la identidad visual y los enlaces oficiales de DeepSeek, el autor del repositorio no es la cuenta oficial `deepseek-ai`, por lo que conviene verificar la procedencia de los pesos antes de su uso en producción. La licencia MIT permite uso comercial sin restricciones de atribución.
 
@@ -99,7 +99,7 @@ DeepSeek-V4-Pro-0813 se sitúa por debajo de Opus-4.8 y Fable-5 en razonamiento 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Godwin021/DeepSeek-V4-Pro-0813
+- Repositorio Hugging Face: https://huggingface.co/Godwin021/DeepSeek-V4-Pro-0813
 - Technical Report (arXiv): https://arxiv.org/abs/2606.19348
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro
 - Sitio oficial de DeepSeek: https://www.deepseek.com/

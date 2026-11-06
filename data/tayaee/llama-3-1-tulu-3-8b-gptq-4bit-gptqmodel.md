@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización de 4 bits en formato GPTQ del modelo Llama-3.1-Tulu-3-8B, publicada por el usuario tayaee. Se trata, por tanto, de una conversión de pesos orientada a reducir el coste de memoria de un modelo de 8.030.326.784 parámetros, no de un entrenamiento nuevo: la ficha del repositorio es una plantilla automática de HuggingFace sin información cumplimentada sobre datos de entrenamiento, evaluación o uso previsto.
+Este repositorio contiene una cuantización de 4 bits en formato GPTQ del modelo Llama-3.1-Tulu-3-8B, publicada por el usuario tayaee. Se trata, por tanto, de una conversión de pesos orientada a reducir el coste de memoria de un modelo de 8.030.326.784 parámetros, no de un entrenamiento nuevo: la ficha del repositorio es una plantilla automática de Hugging Face sin información cumplimentada sobre datos de entrenamiento, evaluación o uso previsto.
 
 El interés práctico del artefacto está en su formato: al estar cuantizado a 4 bits con GPTQ y almacenado en safetensors, el repositorio ocupa 5,8 GB, lo que permite desplegar un modelo de la familia Llama 3.1 de 8B en GPUs de gama de consumo con 8-12 GB de VRAM, algo inviable con los pesos originales en bf16 (aproximadamente 16 GB). Los tags del repositorio confirman compatibilidad con transformers, text-generation-inference (TGI) y endpoints compatibles.
 
@@ -31,7 +31,7 @@ La relevancia es, sin embargo, limitada por la falta de documentación: no se es
 
 No hay información en el repositorio sobre la arquitectura más allá del tag `llama`, que indica una arquitectura transformer decoder-only de la familia Llama. El identificador del modelo apunta a que los pesos de partida corresponden a Llama-3.1-Tulu-3-8B, pero esta correspondencia no está confirmada por el autor en la ficha ni se indica el checkpoint exacto (por ejemplo, si es la variante base o la post-entrenada con RLVR/DPO). Tampoco se documenta la receta de cuantización: número de bits por grupo, tamaño de grupo, si se usó calibración con dataset, ni la herramienta y versión empleadas (el nombre sugiere GPTQModel).
 
-Al tratarse de una conversión de pesos, este repositorio no aporta información propia sobre datos de entrenamiento, número de tokens, composición del dataset, RLHF, DPO o cualquier innovación técnica del modelo original. Toda la información de entrenamiento debería consultarse en la ficha del modelo base en HuggingFace, que no se enlaza desde aquí. Las únicas características verificables en este repositorio son la cuantización a 4 bits, el uso de safetensors y el volumen de parámetros.
+Al tratarse de una conversión de pesos, este repositorio no aporta información propia sobre datos de entrenamiento, número de tokens, composición del dataset, RLHF, DPO o cualquier innovación técnica del modelo original. Toda la información de entrenamiento debería consultarse en la ficha del modelo base en Hugging Face, que no se enlaza desde aquí. Las únicas características verificables en este repositorio son la cuantización a 4 bits, el uso de safetensors y el volumen de parámetros.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ Al tratarse de una conversión de pesos, este repositorio no aporta información
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha del repositorio es una plantilla automática de HuggingFace sin sección de evaluación cumplimentada, y no se aportan métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto, ni para los pesos originales ni para la versión cuantizada. Tampoco se documenta la degradación de calidad introducida por la cuantización a 4 bits.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha del repositorio es una plantilla automática de Hugging Face sin sección de evaluación cumplimentada, y no se aportan métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto, ni para los pesos originales ni para la versión cuantizada. Tampoco se documenta la degradación de calidad introducida por la cuantización a 4 bits.
 
 ## Requisitos de hardware
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparado disponibles para este repositorio, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/llama-3.1-tulu-3-8b-gptq-4bit-gptqmodel
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/llama-3.1-tulu-3-8b-gptq-4bit-gptqmodel
 - Referencia citada en los tags del repositorio (calculadora de impacto de carbono en ML, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto: https://mlco2.github.io/impact
 - Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces obtenidos correspondían a páginas sobre Crimea y se han descartado por no ser pertinentes.

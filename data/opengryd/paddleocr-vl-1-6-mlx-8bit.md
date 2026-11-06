@@ -83,7 +83,7 @@ No se dispone de comparativas con otros modelos de OCR como Nougat o LayoutLMv3 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-8bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/OpenGryd/PaddleOCR-VL-1.6-MLX-8bit
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Documentación oficial de PaddleOCR-VL-1.6: https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html
 - Librería mlx-vlm: https://github.com/Blaizzy/mlx-vlm

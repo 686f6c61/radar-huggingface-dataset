@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base` es un ajuste fino publicado en HuggingFace por el usuario AmirFazlollahi sobre un modelo de la familia Gemma 3, segun indican el identificador y la etiqueta de arquitectura `gemma3_text`. El modelo tiene 999.885.952 parametros reales confirmados por los pesos en safetensors (aproximadamente 1.000 millones) y se distribuye bajo licencia Apache 2.0, con el ingles como unico idioma declarado.
+`AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base` es un ajuste fino publicado en Hugging Face por el usuario AmirFazlollahi sobre un modelo de la familia Gemma 3, segun indican el identificador y la etiqueta de arquitectura `gemma3_text`. El modelo tiene 999.885.952 parametros reales confirmados por los pesos en safetensors (aproximadamente 1.000 millones) y se distribuye bajo licencia Apache 2.0, con el ingles como unico idioma declarado.
 
-El nombre del repositorio sugiere un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matematicas de Hendrycks MATH, partiendo de una version base del propio autor. La model card, sin embargo, es practicamente un stub generado por la plantilla de Unsloth: solo confirma que se trata de un ajuste fino entrenado con Unsloth y la libreria TRL de HuggingFace, sin detallar datos, hiperparametros ni evaluacion.
+El nombre del repositorio sugiere un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matematicas de Hendrycks MATH, partiendo de una version base del propio autor. La model card, sin embargo, es practicamente un stub generado por la plantilla de Unsloth: solo confirma que se trata de un ajuste fino entrenado con Unsloth y la libreria TRL de Hugging Face, sin detallar datos, hiperparametros ni evaluacion.
 
 Su interes es acotado pero real para quien investiga: los modelos densos de ~1B de parametros son banco de pruebas barato para tecnicas de RL aplicadas a razonamiento matematico, y un modelo de este tamano cabe en cualquier GPU de consumo. No obstante, con 0 descargas, 0 likes y ausencia total de benchmarks publicados, debe tratarse como un artefacto experimental sin validacion externa.
 
@@ -29,7 +29,7 @@ La arquitectura corresponde a la de Gemma 3 en su variante de texto (`gemma3_tex
 
 En cuanto al entrenamiento, la unica informacion verificable es que se uso Unsloth junto con TRL, y que el proceso fue "2x mas rapido" segun la propia plantilla de Unsloth. El identificador del modelo apunta a un ajuste con GRPO sobre el dataset Hendrycks MATH, partiendo de un checkpoint base del mismo autor; no se especifican numero de tokens, composicion del dataset, numero de muestras por prompt, funcion de recompensa ni hiperparametros de RL. Tampoco se documenta ninguna innovacion tecnica propia.
 
-Existe una inconsistencia relevante en los metadatos: el campo `base_model` del repositorio apunta al propio repositorio (`AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base`), es decir, es autorreferente, cuando por nombre deberia apuntar a un checkpoint base diferenciado. Esto impide reconstruir la cadena exacta de entrenamiento a partir de los metadatos de HuggingFace.
+Existe una inconsistencia relevante en los metadatos: el campo `base_model` del repositorio apunta al propio repositorio (`AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base`), es decir, es autorreferente, cuando por nombre deberia apuntar a un checkpoint base diferenciado. Esto impide reconstruir la cadena exacta de entrenamiento a partir de los metadatos de Hugging Face.
 
 ## Capacidades
 
@@ -105,9 +105,9 @@ Frente a estas alternativas, el modelo aqui descrito no ofrece garantias de cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base
+- Modelo en Hugging Face: https://huggingface.co/AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base
 - Unsloth (framework de entrenamiento citado por el autor): https://github.com/unslothai/unsloth
-- TRL, libreria de HuggingFace citada por el autor: https://github.com/huggingface/trl
+- TRL, libreria de Hugging Face citada por el autor: https://github.com/huggingface/trl
 - Documentacion de Gemma 3 (modelo base de la arquitectura): https://ai.google.dev/gemma/docs/core/model_card_3
 - Dataset Hendrycks MATH (referencia del nombre del modelo): https://github.com/hendrycks/math
 - Paper de GRPO / DeepSeekMath (tecnica de RL referida en el nombre): https://arxiv.org/abs/2402.03300

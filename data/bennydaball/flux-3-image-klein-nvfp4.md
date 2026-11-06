@@ -84,10 +84,10 @@ Datos publicados por el autor, medidos en RTX 5090 con ComfyUI 0.43.0, comfy-kit
 
 | Modelo | Tipo | Tamaño | Fidelidad vs BF16 (LPIPS medio) | Velocidad (s/imagen, RTX 5090) | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| FLUX 3 Image Klein BF16 (BFL) | Referencia sin cuantizar | 11,10 GB | referencia | 3,397 | flux-kommunity-license | HuggingFace (BFL) |
-| FLUX 3 Image Klein INT8 ConvRot (BFL) | Cuantización INT8 oficial | 5,83 GB | 0,026 | 1,656 | flux-kommunity-license | HuggingFace (BFL) |
-| FLUX 3 Image Klein NVFP4 (BFL) | Cuantización NVFP4 oficial | 5,28 GB | 0,142 | 1,725 | flux-kommunity-license | HuggingFace (BFL) |
-| FLUX 3 Image Klein NVFP4 (este repo) | Cuantización mixta comunitaria | 5,41 GB | 0,049 | 1,590 | flux-kommunity-license | HuggingFace (BennyDaBall) |
+| FLUX 3 Image Klein BF16 (BFL) | Referencia sin cuantizar | 11,10 GB | referencia | 3,397 | flux-kommunity-license | Hugging Face (BFL) |
+| FLUX 3 Image Klein INT8 ConvRot (BFL) | Cuantización INT8 oficial | 5,83 GB | 0,026 | 1,656 | flux-kommunity-license | Hugging Face (BFL) |
+| FLUX 3 Image Klein NVFP4 (BFL) | Cuantización NVFP4 oficial | 5,28 GB | 0,142 | 1,725 | flux-kommunity-license | Hugging Face (BFL) |
+| FLUX 3 Image Klein NVFP4 (este repo) | Cuantización mixta comunitaria | 5,41 GB | 0,049 | 1,590 | flux-kommunity-license | Hugging Face (BennyDaBall) |
 
 El compromiso que ofrece este build es intermedio en fidelidad: queda por detrás de INT8 ConvRot en parecido con BF16, pero por delante de la NVFP4 oficial y con la menor latencia de los cuatro archivos en el equipo de prueba. No se dispone de comparación con otros modelos de difusión de la misma categoría en la información proporcionada.
 
@@ -107,8 +107,8 @@ El compromiso que ofrece este build es intermedio en fidelidad: queda por detrá
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyDaBall/flux-3-image-klein-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/flux-3-image-klein-NVFP4
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Paper Schur Replay: https://arxiv.org/abs/2609.36654
 - Paper Four Over Six (MIT Han Lab y NVIDIA): https://arxiv.org/abs/2512.02010
-- Licencia: LICENSE.md en el repositorio de HuggingFace
+- Licencia: LICENSE.md en el repositorio de Hugging Face

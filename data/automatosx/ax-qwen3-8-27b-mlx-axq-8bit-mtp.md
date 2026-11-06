@@ -85,7 +85,7 @@ No se dispone de comparativas con otros modelos cuantizados de la misma familia 
 
 ## Enlaces
 
-- [HuggingFace - AX-Qwen3.8-27B-MLX-AXQ-8bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit-MTP)
+- [Hugging Face - AX-Qwen3.8-27B-MLX-AXQ-8bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-8bit-MTP)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Certificado Tier 1 del checkpoint](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen38-27b-axq8-mtp-tier1.md)
 - [Repositorio AXQuant](https://github.com/defai-digital/axquant)

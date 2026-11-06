@@ -30,7 +30,7 @@ La recuantización realizada por mradermacher emplea el formato GGUF con cuantiz
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
-- Compatibilidad con text-generation-inference y transformers, lo que permite integración en pipelines estándar de HuggingFace.
+- Compatibilidad con text-generation-inference y transformers, lo que permite integración en pipelines estándar de Hugging Face.
 - Soporte multimodal potencial: el repositorio incluye ficheros mmproj (multi-modal supplement) en Q8_0 y f16, aunque no se detalla qué modalidad cubren ni su rendimiento.
 - Capacidad de ejecución en entornos con recursos limitados gracias a las cuantizaciones de 0,5 GB a 1,6 GB.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes, multi-step reasoning ni modos de razonamiento explícito (thinking mode).
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinycore-30 (esta ficha) | 752 M | No disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens (según documentación pública de HuggingFace) | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| tinycore-30 (esta ficha) | 752 M | No disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens (según documentación pública de Hugging Face) | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparativa se limita a datos públicos de los modelos alternativos; no se dispone de benchmarks de tinycore-30 para contrastar rendimiento. La principal ventaja de tinycore-30 frente a alternativas es su licencia Apache 2.0 combinada con un tamaño inferior a 1 B, aunque la falta de documentación sobre contexto y entrenamiento dificulta una comparación rigurosa.
 

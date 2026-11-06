@@ -6,7 +6,7 @@ ProKope-VL-7B es un modelo de lenguaje y vision (VLM) de tipo image-text-to-text
 
 El modelo esta orientado especificamente a tareas de agente GUI (gui-agent), es decir, a la interaccion con interfaces graficas de usuario mediante comprension de capturas de pantalla y generacion de acciones. Los tags del modelo incluyen referencias a benchmarks concretos de este dominio: MMMU-Pro y ScreenSpot-Pro, lo que indica que su evaluacion se centra en razonamiento multimodal de nivel universitario y en localizacion de elementos en pantallas de alta resolucion.
 
-Es relevante ahora porque los agentes que operan interfaces graficas requieren modelos capaces de interpretar layouts complejos, texto pequeno en pantalla y elementos de UI, una tarea donde los VLM genericos rinden por debajo de los modelos especializados. La licencia Apache 2.0 facilita su adopcion comercial, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Es relevante ahora porque los agentes que operan interfaces graficas requieren modelos capaces de interpretar layouts complejos, texto pequeno en pantalla y elementos de UI, una tarea donde los VLM genericos rinden por debajo de los modelos especializados. La licencia Apache 2.0 facilita su adopcion comercial, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Es relevante ahora porque los agentes que operan interfaces graficas requieren m
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen2.5-VL, la familia multimodal de Alibaba que integra un codificador visual con un modelo de lenguaje de la serie Qwen2.5. Esta arquitectura procesa imagenes y texto conjuntamente para generar respuestas textuales, lo que habilita tareas de image-text-to-text. El pipeline declarado en HuggingFace es image-text-to-text y la libreria es transformers.
+El modelo se basa en Qwen2.5-VL, la familia multimodal de Alibaba que integra un codificador visual con un modelo de lenguaje de la serie Qwen2.5. Esta arquitectura procesa imagenes y texto conjuntamente para generar respuestas textuales, lo que habilita tareas de image-text-to-text. El pipeline declarado en Hugging Face es image-text-to-text y la libreria es transformers.
 
 No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO en el post-entrenamiento. Tampoco se documentan innovaciones tecnicas especificas mas alla de las inherentes a Qwen2.5-VL. La especializacion declarada hacia tareas de agente GUI sugiere un ajuste fino orientado a comprension de capturas de pantalla y localizacion de elementos, pero los detalles de dicho ajuste no estan disponibles en la informacion proporcionada.
 
@@ -73,7 +73,7 @@ ProKope-VL-7B se posiciona como un ajuste especializado de Qwen2.5-VL-7B orienta
 ## Limitaciones y advertencias
 
 - Idioma: el modelo solo declara soporte de ingles, lo que limita su uso en entornos en castellano sin evaluacion adicional.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Datos de entrenamiento no documentados: se desconoce la composicion del dataset, lo que dificulta evaluar sesgos y cobertura.
 - Riesgo de alucinacion: como todo VLM, puede generar descripciones o acciones incorrectas sobre elementos de UI inexistentes; en tareas de agente GUI esto puede provocar clics erroneos.
 - Contexto no especificado: se desconoce la longitud maxima de contexto, un factor critico para procesar capturas de alta resolucion.
@@ -83,4 +83,4 @@ ProKope-VL-7B se posiciona como un ajuste especializado de Qwen2.5-VL-7B orienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProKope-AI/ProKope-VL-7B
+- Hugging Face: https://huggingface.co/ProKope-AI/ProKope-VL-7B

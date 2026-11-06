@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aapolon/CyberStrike` es un repositorio publicado en HuggingFace por el usuario Aapolon el 3 de septiembre de 2026. La única información disponible en la model card es la licencia Apache 2.0; no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto o capacidades. El repositorio no registra descargas ni likes, lo que sugiere que es una publicación reciente o sin difusión. Dado que no existe documentación adicional, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Esta ficha se limita a reflejar los datos disponibles y señala explícitamente toda la información ausente.
+El modelo `Aapolon/CyberStrike` es un repositorio publicado en Hugging Face por el usuario Aapolon el 3 de septiembre de 2026. La única información disponible en la model card es la licencia Apache 2.0; no se proporciona ninguna descripción técnica, arquitectura, tamaño, contexto o capacidades. El repositorio no registra descargas ni likes, lo que sugiere que es una publicación reciente o sin difusión. Dado que no existe documentación adicional, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Esta ficha se limita a reflejar los datos disponibles y señala explícitamente toda la información ausente.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se especifica
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos debido a la falta de especificaciones técnicas y funcionales. Cualquier aplicación práctica requeriría conocer al menos la arquitectura, el tamaño y las capacidades del modelo, datos que no están disponibles. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se pueden proponer casos de uso concretos debido a la falta de especificaciones técnicas y funcionales. Cualquier aplicación práctica requeriría conocer al menos la arquitectura, el tamaño y las capacidades del modelo, datos que no están disponibles. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -50,4 +50,4 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Aapolon/CyberStrike)
+- [Repositorio en Hugging Face](https://huggingface.co/Aapolon/CyberStrike)

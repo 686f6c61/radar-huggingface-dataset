@@ -65,8 +65,8 @@ No hay datos públicos de comparación con otros modelos de captioning musical e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Music-8B-Instruct | 8B | no disponible | Apache 2.0 | HuggingFace, GGUF |
-| MOSS-Audio (base) | no disponible | no disponible | no disponible | HuggingFace |
+| MOSS-Music-8B-Instruct | 8B | no disponible | Apache 2.0 | Hugging Face, GGUF |
+| MOSS-Audio (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros captioners comerciales | no disponible | no disponible | propietaria | APIs |
 
 La principal ventaja de MOSS-Music frente a alternativas propietarias es su licencia Apache 2.0, que permite uso comercial sin restricciones. Frente a MOSS-Audio, MOSS-Music está específicamente especializado en música, con mejor rendimiento en tareas musicales.
@@ -83,10 +83,10 @@ La principal ventaja de MOSS-Music frente a alternativas propietarias es su lice
 
 ## Enlaces
 
-- [Repo GGUF en HuggingFace](https://huggingface.co/scragnog/MOSS-Music-8B-Instruct-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct)
+- [Repo GGUF en Hugging Face](https://huggingface.co/scragnog/MOSS-Music-8B-Instruct-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct)
 - [GitHub de MOSS-Music](https://github.com/OpenMOSS/MOSS-Music)
-- [Space de demostración en HuggingFace](https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct)
+- [Space de demostración en Hugging Face](https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct)
 - [HOT-Step CPP en GitHub](https://github.com/scragnog/HOT-Step-CPP)
 - [Conversión GGUF de MiniMax-Music3](https://huggingface.co/scragnog/MiniMax-Music3-GGUF)
 - [acestep.cpp en GitHub](https://github.com/ServeurpersoCom/acestep.cpp)

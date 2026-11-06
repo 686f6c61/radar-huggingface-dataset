@@ -81,7 +81,7 @@ La comparativa directa con otros codificadores VAE de video de terceros no esta 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-clip-reader-f16
+- Repositorio Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-clip-reader-f16
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - LoRA de looks: https://huggingface.co/JoshHughes/p0pc0rn-video-lora-looks-c20
 - Licencia LTX-2: https://huggingface.co/JoshHughes/p0pc0rn-clip-reader-f16/blob/main/LICENSE-LTX-2.txt

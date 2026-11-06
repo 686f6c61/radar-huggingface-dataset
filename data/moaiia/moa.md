@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOA es un modelo publicado en HuggingFace por el usuario MOAIIA, distribuido en formato GGUF bajo licencia MIT. La model card del repositorio no incluye documentacion tecnica: no se describen la arquitectura, el numero de parametros, los datos de entrenamiento ni las capacidades del modelo, por lo que la informacion disponible procede casi exclusivamente de los metadatos del repositorio.
+MOA es un modelo publicado en Hugging Face por el usuario MOAIIA, distribuido en formato GGUF bajo licencia MIT. La model card del repositorio no incluye documentacion tecnica: no se describen la arquitectura, el numero de parametros, los datos de entrenamiento ni las capacidades del modelo, por lo que la informacion disponible procede casi exclusivamente de los metadatos del repositorio.
 
 El tamaño del repositorio (12,7 GB) sugiere que se trata de un modelo de tamaño medio-alto cuantizado en GGUF, formato habitual para inferencia local mediante llama.cpp y derivados como Ollama o LM Studio. El peso del archivo indicaria aproximadamente entre 12 y 14 mil millones de parametros en cuantizaciones de 7-8 bits, aunque esta estimacion no puede confirmarse con los datos disponibles.
 
@@ -87,7 +87,7 @@ Sin benchmarks publicados de MOA, no es posible comparar rendimiento. Frente a l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MOAIIA/MOA
+- Repositorio en Hugging Face: https://huggingface.co/MOAIIA/MOA
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo fuente: no disponible

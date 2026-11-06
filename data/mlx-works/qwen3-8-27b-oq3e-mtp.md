@@ -63,5 +63,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-works/Qwen3.8-27B-oQ3e-mtp
+- Repositorio Hugging Face: https://huggingface.co/mlx-works/Qwen3.8-27B-oQ3e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

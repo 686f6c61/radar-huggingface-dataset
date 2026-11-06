@@ -2,7 +2,7 @@
 
 ## Resumen
 
-World Intelligence Agent (WIA) es el nombre de un informe técnico (preprint) publicado por el equipo Darwin Agent en HuggingFace bajo el identificador `darwinagent/WIA-Technical-Report`. El documento propone unificar el modelado del mundo (world modeling) y el aprendizaje de acciones (action learning) para agentes digitales, es decir, agentes que operan en entornos software como navegadores, interfaces gráficas o APIs. El repositorio aloja únicamente el PDF del informe, no pesos del modelo ni código ejecutable.
+World Intelligence Agent (WIA) es el nombre de un informe técnico (preprint) publicado por el equipo Darwin Agent en Hugging Face bajo el identificador `darwinagent/WIA-Technical-Report`. El documento propone unificar el modelado del mundo (world modeling) y el aprendizaje de acciones (action learning) para agentes digitales, es decir, agentes que operan en entornos software como navegadores, interfaces gráficas o APIs. El repositorio aloja únicamente el PDF del informe, no pesos del modelo ni código ejecutable.
 
 El informe presenta tres contribuciones principales: el corpus WIA-Corpus, el benchmark WIA-Bench y la familia de modelos de mundo WIA-WM, además de una extensión denominada WIA-WAM orientada a la generación de acciones. También explora entrenamiento basado en simulación y mecanismos de lookahead en inferencia. No se especifican en la información disponible parámetros, arquitectura concreta ni longitud de contexto de ningún modelo.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darwinagent/WIA-Technical-Report
+- Repositorio en Hugging Face: https://huggingface.co/darwinagent/WIA-Technical-Report
 - Informe técnico completo (PDF): https://huggingface.co/darwinagent/WIA-Technical-Report/resolve/main/Tech_Report__WAM.pdf
-- Visor del PDF en HuggingFace: https://huggingface.co/darwinagent/WIA-Technical-Report/blob/main/Tech_Report__WAM.pdf
+- Visor del PDF en Hugging Face: https://huggingface.co/darwinagent/WIA-Technical-Report/blob/main/Tech_Report__WAM.pdf
 - Página del proyecto: https://darwin-agent.github.io/WIA/

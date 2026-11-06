@@ -6,7 +6,7 @@ BioEmu-2 es un modelo de investigacion desarrollado por Microsoft Research que g
 
 La arquitectura es un modelo de score atomistico completo basado en difusion, con aproximadamente 500 millones de parametros. Acepta como entrada una o varias secuencias biomoleculares, opcionalmente acompanadas de un alineamiento multiple de secuencias (MSA), condicionamiento por contactos entre atomos y condicionamiento por metodo. La salida son coordenadas cartesianas de todos los atomos del sistema. El modelo declara soporte para complejos multcadena, ligandos y acidos nucleicos.
 
-Su relevancia actual radica en que se posiciona como emulador de dinamica molecular: en lugar de ejecutar simulaciones costosas, aproxima la distribucion de conformaciones con un unico checkpoint y un coste de muestreo mucho menor. La licencia es MIT y el codigo de inferencia es abierto, lo que facilita su evaluacion por parte de grupos de biologia estructural y quimica computacional. Conviene senalar que la ficha de HuggingFace analizada corresponde a una copia alojada en `fengzhimu/bioemu2` (0 descargas, 0 likes), mientras que la model card remite al repositorio canonico `microsoft/bioemu2`.
+Su relevancia actual radica en que se posiciona como emulador de dinamica molecular: en lugar de ejecutar simulaciones costosas, aproxima la distribucion de conformaciones con un unico checkpoint y un coste de muestreo mucho menor. La licencia es MIT y el codigo de inferencia es abierto, lo que facilita su evaluacion por parte de grupos de biologia estructural y quimica computacional. Conviene senalar que la ficha de Hugging Face analizada corresponde a una copia alojada en `fengzhimu/bioemu2` (0 descargas, 0 likes), mientras que la model card remite al repositorio canonico `microsoft/bioemu2`.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ Nota: los datos de los modelos alternativos no proceden de la informacion propor
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada (copia no oficial): https://huggingface.co/fengzhimu/bioemu2
+- Ficha de Hugging Face analizada (copia no oficial): https://huggingface.co/fengzhimu/bioemu2
 - Checkpoints oficiales citados en la model card: https://huggingface.co/microsoft/bioemu2
 - Codigo fuente oficial: https://github.com/microsoft/bioemu2
 - Nota sobre la busqueda web: los resultados devueltos corresponden unicamente a paginas de Spotify (open.spotify.com, accounts.spotify.com, www.spotify.com) y no guardan ninguna relacion con BioEmu-2. No se han podido recuperar papers, blogs ni demos adicionales a partir de esa busqueda.

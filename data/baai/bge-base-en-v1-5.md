@@ -4,7 +4,7 @@
 
 BAAI/bge-base-en-v1.5 es un modelo de embeddings de frases desarrollado por el Beijing Academy of Artificial Intelligence (BAAI) dentro de la familia BGE (BAAI General Embedding). No es un modelo generativo: es un encoder de texto que transforma frases y pasajes en vectores densos utilizables para busqueda semantica, similitud, clasificacion, clustering y reranking. Con 109.482.752 parametros, se situa en la gama media de la familia, entre las variantes small y large.
 
-El problema que resuelve es el de la representacion semantica de texto en ingles para recuperacion de informacion: permite indexar corpus y consultas en un espacio vectorial comun donde la distancia coseno refleja proximidad de significado, no de forma. Su relevancia actual viene de que es uno de los modelos de embeddings mas descargados de HuggingFace (mas de 9,2 millones de descargas y 519 likes) y funciona como pieza estandar en pipelines RAG, motores de busqueda vectorial y sistemas de deduplicacion.
+El problema que resuelve es el de la representacion semantica de texto en ingles para recuperacion de informacion: permite indexar corpus y consultas en un espacio vectorial comun donde la distancia coseno refleja proximidad de significado, no de forma. Su relevancia actual viene de que es uno de los modelos de embeddings mas descargados de Hugging Face (mas de 9,2 millones de descargas y 519 likes) y funciona como pieza estandar en pipelines RAG, motores de busqueda vectorial y sistemas de deduplicacion.
 
 Esta construido sobre una arquitectura BERT-base y publicado bajo licencia MIT, lo que permite uso comercial sin restricciones. Su principal limitacion estructural es que solo cubre ingles y que su ventana de contexto es la de BERT (512 tokens), por lo que para escenarios multilingues o de documentos largos se necesitan alternativas de la misma familia o de otras casas.
 
@@ -123,11 +123,11 @@ Dentro de la familia BGE, la eleccion entre las variantes small, base y large es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAAI/bge-base-en-v1.5
+- Modelo en Hugging Face: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Referencia arXiv 2401.03462: https://arxiv.org/abs/2401.03462
 - Referencia arXiv 2312.15503: https://arxiv.org/abs/2312.15503
 - Referencia arXiv 2311.13534: https://arxiv.org/abs/2311.13534
 - Referencia arXiv 2310.07554: https://arxiv.org/abs/2310.07554
 - Referencia arXiv 2309.07597: https://arxiv.org/abs/2309.07597
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de los identificadores arXiv incluidos en las etiquetas del repositorio.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de los identificadores arXiv incluidos en las etiquetas del repositorio.

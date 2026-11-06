@@ -4,7 +4,7 @@
 
 Este repositorio contiene un ajuste fino publicado por el usuario wz7475 bajo el identificador `qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r100`. Por la nomenclatura cabe deducir que se parte del modelo base Qwen2.5-7B-Instruct y se aplica un entrenamiento orientado al dominio juridico (el segmento "katcher-legal"), combinado con el corpus conversacional OASST1, y empleando consolidacion elastica de pesos (EWC, Elastic Weight Consolidation) como tecnica de aprendizaje continuo para mitigar el olvido catastrofico. El sufijo "r100" es compatible con un adaptador LoRA de rango 100.
 
-La relevancia de la ficha es limitada y fundamentalmente metodologica: la model card es la plantilla autogenerada de HuggingFace y no contiene ni una sola seccion completada (todos los campos aparecen como "[More Information Needed]"). El repositorio no registra descargas ni "likes", la licencia no esta declarada y no se documentan idiomas, datos de entrenamiento, hiperparametros ni evaluaciones. Se trata, por tanto, de un artefacto experimental sin validacion publica.
+La relevancia de la ficha es limitada y fundamentalmente metodologica: la model card es la plantilla autogenerada de Hugging Face y no contiene ni una sola seccion completada (todos los campos aparecen como "[More Information Needed]"). El repositorio no registra descargas ni "likes", la licencia no esta declarada y no se documentan idiomas, datos de entrenamiento, hiperparametros ni evaluaciones. Se trata, por tanto, de un artefacto experimental sin validacion publica.
 
 Un dato tecnico relevante es el tamano del repositorio (0,3 GB). Un modelo de 7.000 millones de parametros en bf16 ocuparia aproximadamente 15 GB, de modo que 0,3 GB es compatible con un adaptador PEFT/LoRA de rango 100, no con pesos completos. Esto condiciona por completo el despliegue: para usar el modelo es necesario descargar por separado el modelo base Qwen2.5-7B-Instruct y cargar despues el adaptador.
 
@@ -70,7 +70,7 @@ No hay datos de rendimiento de este ajuste, de modo que la comparacion se limita
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r100 | No disponible (adaptador sobre base de 7,61 mil millones) | No disponible | No disponible | Repositorio HuggingFace sin descargas ni documentacion | Sin benchmarks ni model card completada |
+| qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r100 | No disponible (adaptador sobre base de 7,61 mil millones) | No disponible | No disponible | Repositorio Hugging Face sin descargas ni documentacion | Sin benchmarks ni model card completada |
 | Qwen2.5-7B-Instruct (modelo base) | 7,61 mil millones | 131.072 tokens | Apache 2.0 | Ampliamente disponible | Referencia obligatoria; capacidades generales contrastadas |
 | Otros ajustes juridicos de 7-8B sobre Llama 3.1 o Mistral | 7-8 mil millones | 8.000-128.000 tokens segun familia | Variable segun autor | Variable | No disponible comparacion directa por falta de datos de este modelo |
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento de este ajuste, de modo que la comparacion se limita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r100
+- Repositorio Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r100
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., 2019, calculadora de impacto ambiental de ML, citada en la plantilla de la model card): https://arxiv.org/abs/1910.09700
 - Modelo base mencionado en el identificador (Qwen2.5-7B-Instruct): no se incluye enlace directo porque el autor no lo referencia en la model card.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

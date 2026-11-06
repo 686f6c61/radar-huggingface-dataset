@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`allenkimeli/generation-best` es un repositorio de HuggingFace publicado por el usuario allenkimeli que contiene una implementación de referencia de la arquitectura Flamingo orientada a tareas de generación. No se trata de un modelo entrenado ni afinado para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con pesos entrenados ni evaluados. El repositorio prioriza la transparencia del código y la reproducibilidad de pruebas básicas frente a cualquier afirmación de rendimiento.
+`allenkimeli/generation-best` es un repositorio de Hugging Face publicado por el usuario allenkimeli que contiene una implementación de referencia de la arquitectura Flamingo orientada a tareas de generación. No se trata de un modelo entrenado ni afinado para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con pesos entrenados ni evaluados. El repositorio prioriza la transparencia del código y la reproducibilidad de pruebas básicas frente a cualquier afirmación de rendimiento.
 
 El modelo declara una configuración "base" de Flamingo con atención dilatada, fusión mediante co-attention, activación ReLU y normalización ScaleNorm. El recuento real de parámetros contenido en el archivo safetensors es de 49.600 parámetros, un tamaño extremadamente reducido que confirma que se trata de un esqueleto de inicialización, no de un modelo con capacidad generativa real. La receta de entrenamiento por defecto usa el optimizador NovoGrad con un schedule exponencial, pero no hay evidencia de que se haya ejecutado un entrenamiento completo.
 
@@ -41,7 +41,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - Estudio de la arquitectura Flamingo: el repositorio permite inspeccionar una implementación en PyTorch de co-attention y atención dilatada, útil para investigadores que quieran entender o replicar el diseño.
 - Base para un pipeline de entrenamiento propio: el script `inference.py` y los archivos `config.json` y `training_args.json` sirven como punto de partida para lanzar un entrenamiento con datos propios.
 - Pruebas de humo de infraestructura: al ser un checkpoint mínimo (49.600 parámetros), permite validar pipelines de carga, serialización safetensors y ejecución en entornos CI/CD sin coste de cómputo.
-- Docencia y formación: adecuado para explicar cómo se estructura un repositorio de modelo en HuggingFace, incluyendo configuración, receta de entrenamiento y checkpoint de inicialización.
+- Docencia y formación: adecuado para explicar cómo se estructura un repositorio de modelo en Hugging Face, incluyendo configuración, receta de entrenamiento y checkpoint de inicialización.
 - Experimentación con optimizadores: la receta NovoGrad con schedule exponencial puede usarse como banco de pruebas para comparar optimizadores en tareas pequeñas.
 - Evaluación metodológica: la model card propone un protocolo de evaluación (conjunto held-out específico de tarea, al menos tres semillas, baseline de capacidad comparable), útil como plantilla para diseñar evaluaciones rigurosas.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allenkimeli/generation-best
+- Hugging Face: https://huggingface.co/allenkimeli/generation-best
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

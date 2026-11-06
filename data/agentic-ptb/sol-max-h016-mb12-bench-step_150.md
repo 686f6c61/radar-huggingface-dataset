@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max (este) | 9,4 B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4 B | no disponible | no disponible | HuggingFace |
+| agentic-ptb/sol-max (este) | 9,4 B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4 B | no disponible | no disponible | Hugging Face |
 | Otros modelos de 9 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.mb12-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.mb12-bench.step_150
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

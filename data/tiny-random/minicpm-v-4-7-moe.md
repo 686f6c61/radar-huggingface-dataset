@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiny-random/minicpm-v-4.7-moe` | 12.58M | no disponible | imagen, vídeo, texto | no disponible | HuggingFace |
-| `openbmb/MiniCPM-V-4.7-35B-A3B` (base) | 35.21B (MoE, 8+1 expertos) | no disponible | imagen, vídeo, texto | no disponible | HuggingFace |
-| Otros checkpoints `tiny-random` | variable (millones) | no disponible | según modelo fuente | no disponible | HuggingFace |
+| `tiny-random/minicpm-v-4.7-moe` | 12.58M | no disponible | imagen, vídeo, texto | no disponible | Hugging Face |
+| `openbmb/MiniCPM-V-4.7-35B-A3B` (base) | 35.21B (MoE, 8+1 expertos) | no disponible | imagen, vídeo, texto | no disponible | Hugging Face |
+| Otros checkpoints `tiny-random` | variable (millones) | no disponible | según modelo fuente | no disponible | Hugging Face |
 
 La comparación relevante es con su modelo base: el tiny conserva la topología (atención híbrida, MoE fusionado, torre de visión, M-RoPE) pero reduce capas, anchura y vocabulario efectivo, y sustituye los pesos entrenados por inicialización aleatoria. No se dispone de datos para comparar con alternativas de la misma categoría (modelos visión-lenguaje MoE de tamaño similar) porque el propio checkpoint no es un modelo funcional.
 
@@ -81,7 +81,7 @@ La comparación relevante es con su modelo base: el tiny conserva la topología 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/minicpm-v-4.7-moe
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/minicpm-v-4.7-moe
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)
 - Estructura del modelo: `.meta/model.log` (dentro del repositorio)

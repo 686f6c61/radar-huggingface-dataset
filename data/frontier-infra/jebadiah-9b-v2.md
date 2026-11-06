@@ -103,7 +103,7 @@ No se proporciona informacion sobre modelos de decision comparables de otros aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frontier-infra/jebadiah-9b-v2
+- Modelo en Hugging Face: https://huggingface.co/frontier-infra/jebadiah-9b-v2
 - Version anterior: https://huggingface.co/frontier-infra/jebadiah-9b-v1
 - Codigo y receta de entrenamiento: https://github.com/getainode/jebadiah
 - Modelo base (chat): https://huggingface.co/Qwen/Qwen3.5-9B

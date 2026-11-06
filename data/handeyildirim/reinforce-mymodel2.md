@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-mymodel2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno) para resolver el entorno Pixelcopter-PLE-v0, un juego de la suite Pygame Learning Environment en el que un helicoptero debe mantenerse en vuelo evitando obstaculos. El modelo lo publica el usuario handeyildirim en HuggingFace como parte de las practicas del curso Deep Reinforcement Learning Course, concretamente la unidad 4, dedicada a los metodos de policy gradient.
+Reinforce-mymodel2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno) para resolver el entorno Pixelcopter-PLE-v0, un juego de la suite Pygame Learning Environment en el que un helicoptero debe mantenerse en vuelo evitando obstaculos. El modelo lo publica el usuario handeyildirim en Hugging Face como parte de las practicas del curso Deep Reinforcement Learning Course, concretamente la unidad 4, dedicada a los metodos de policy gradient.
 
 No se trata de un modelo de lenguaje ni de un transformer generativo: es una politica neuronal (policy network) que mapea observaciones del entorno a una distribucion de probabilidad sobre las acciones discretas disponibles. El repositorio ocupa 0.0 GB, no registra descargas ni likes y no declara licencia, idiomas ni arquitectura en la model card, por lo que los detalles de la red no estan documentados publicamente.
 
@@ -32,7 +32,7 @@ Tampoco se especifican tecnicas de estabilizacion como baseline del retorno, nor
 - Control de politica en Pixelcopter-PLE-v0: selecciona acciones discretas a partir de las observaciones del entorno para mantener el helicoptero en vuelo.
 - Aprendizaje por refuerzo con policy gradient: implementacion de REINFORCE con estimacion de retorno Monte Carlo.
 - Evaluacion reproducible: la model card incluye un bloque model-index con la metrica mean_reward, lo que permite cargar y comparar el resultado de forma estandarizada.
-- Integracion con el ecosistema de HuggingFace: el pipeline declarado es reinforcement-learning, lo que facilita su carga mediante las utilidades de la plataforma.
+- Integracion con el ecosistema de Hugging Face: el pipeline declarado es reinforcement-learning, lo que facilita su carga mediante las utilidades de la plataforma.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes multi-paso ni capacidades multilingues.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ Tampoco se especifican tecnicas de estabilizacion como baseline del retorno, nor
 - Reproduccion de experimentos de policy gradient: al estar registrado el resultado de evaluacion (34.10 +/- 27.92), se puede replicar el entrenamiento y contrastar si la recompensa media cae dentro de ese rango, lo que ayuda a detectar errores en el bucle de entrenamiento.
 - Linea base en experimentos de comparacion de algoritmos: sirve como referencia de REINFORCE frente a alternativas como A2C, PPO o DQN en Pixelcopter-PLE-v0, siempre que se documenten las mismas condiciones de evaluacion.
 - Estudio de la varianza en policy gradient: la desviacion tipica de 27.92 sobre una media de 34.10 es un caso practico para analizar el efecto de baselines y normalizacion de retornos en la estabilidad del aprendizaje.
-- Docencia sobre publicacion de modelos de RL: el bloque model-index de la model card es un ejemplo de como declarar metricas de evaluacion de forma estructurada en HuggingFace.
+- Docencia sobre publicacion de modelos de RL: el bloque model-index de la model card es un ejemplo de como declarar metricas de evaluacion de forma estructurada en Hugging Face.
 - Pruebas de integracion de entornos PLE: permite validar pipelines de carga de entornos Pygame Learning Environment y de agentes de RL en infraestructura propia, aunque el repositorio no contiene pesos visibles (0.0 GB).
 
 ## Benchmarks y rendimiento
@@ -66,8 +66,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Contexto / parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-mymodel2 (handeyildirim) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Agentes de referencia del Deep RL Course (unidad 4) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | HuggingFace (curso) |
+| Reinforce-mymodel2 (handeyildirim) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Agentes de referencia del Deep RL Course (unidad 4) | REINFORCE | Pixelcopter-PLE-v0 | no disponible | no disponible | Hugging Face (curso) |
 | Alternativas con PPO/A2C sobre PLE | PPO / A2C | Pixelcopter-PLE-v0 y otros | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handeyildirim/Reinforce-mymodel2
+- Modelo en Hugging Face: https://huggingface.co/handeyildirim/Reinforce-mymodel2
 - Curso Deep Reinforcement Learning, unidad 4 (introduccion): https://huggingface.co/deep-rl-course/unit4/introduction

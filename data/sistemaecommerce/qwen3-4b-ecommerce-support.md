@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Ecommerce-Support | 4,02 B (denso) | no disponible (base: 32k-128k) | Apache 2.0 | Fine-tuning de soporte e-commerce multilingüe | safetensors en HuggingFace |
+| Qwen3-4B-Ecommerce-Support | 4,02 B (denso) | no disponible (base: 32k-128k) | Apache 2.0 | Fine-tuning de soporte e-commerce multilingüe | safetensors en Hugging Face |
 | Qwen/Qwen3-4B (base) | 4,02 B (denso) | 32.768 tokens (131k con YaRN) | Apache 2.0 | Modelo general con modo thinking y tool calling | safetensors y GGUF oficiales |
 | Llama-3.1-8B-Instruct | 8 B (denso) | 131.072 tokens | Llama 3.1 Community License | General, fuerte en tool calling y multilingüe | safetensors y GGUF oficiales |
 | Mistral-7B-Instruct v0.3 | 7 B (denso) | 32.768 tokens | Apache 2.0 | General, eficiente en inferencia | safetensors y GGUF oficiales |
@@ -86,6 +86,6 @@ Frente a la base Qwen3-4B, este fine-tuning aporta dominio de e-commerce pero pi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SistemaEcommerce/Qwen3-4B-Ecommerce-Support
+- Modelo en Hugging Face: https://huggingface.co/SistemaEcommerce/Qwen3-4B-Ecommerce-Support
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Sitio del desarrollador: https://sistemaecommerce.com

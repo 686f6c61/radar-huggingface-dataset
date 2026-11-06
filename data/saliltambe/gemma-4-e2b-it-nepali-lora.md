@@ -78,8 +78,8 @@ No hay datos de benchmarks ni de otros adaptadores comparables en la informació
 
 | Modelo | Parametros | Contexto | Rendimiento (devanagari) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-E2B-it` | no disponible | no disponible | 0,000 | no disponible en la informacion | HuggingFace (modelo base) |
-| base + `gemma-4-E2B-it-nepali-lora` | no disponible | no disponible | 0,814 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `google/gemma-4-E2B-it` | no disponible | no disponible | 0,000 | no disponible en la informacion | Hugging Face (modelo base) |
+| base + `gemma-4-E2B-it-nepali-lora` | no disponible | no disponible | 0,814 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 
 Frente a alternativas del mismo nicho (modelos afinados completos para nepalí u otros adaptadores LoRA de idioma), no se dispone de datos de parámetros, contexto, rendimiento o licencia que permitan una comparación rigurosa.
 
@@ -99,7 +99,7 @@ Frente a alternativas del mismo nicho (modelos afinados completos para nepalí u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saliltambe/gemma-4-E2B-it-nepali-lora
+- Modelo en Hugging Face: https://huggingface.co/saliltambe/gemma-4-E2B-it-nepali-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de prompts: https://huggingface.co/datasets/OpenAssistant/oasst1
 - Cuaderno de conversión para LiteRT-LM: mencionado en la model card, enlace no disponible

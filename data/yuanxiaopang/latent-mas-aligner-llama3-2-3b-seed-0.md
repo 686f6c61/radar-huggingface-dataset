@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales como MMLU, HumanEval o 
 
 | Modelo | Parametros | Longitud de contexto | AUC (val separability) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `latent-mas-aligner-llama3-2-3b-seed-0` | 29,4 M (d_a = 3072) | No disponible | 0,8942 | Apache-2.0 | HuggingFace |
-| `latentmas-aligner-qwen3-4b-instruct` | No disponible (d_a distinto) | No disponible | ~0,9541 | No disponible | HuggingFace |
-| `latentmas-aligner-qwen3-14b` | No disponible (d_a distinto) | No disponible | No disponible | No disponible | HuggingFace |
-| `latentmas-aligner-qwen3-4b` | No disponible (d_a distinto) | No disponible | No disponible | No disponible | HuggingFace |
+| `latent-mas-aligner-llama3-2-3b-seed-0` | 29,4 M (d_a = 3072) | No disponible | 0,8942 | Apache-2.0 | Hugging Face |
+| `latentmas-aligner-qwen3-4b-instruct` | No disponible (d_a distinto) | No disponible | ~0,9541 | No disponible | Hugging Face |
+| `latentmas-aligner-qwen3-14b` | No disponible (d_a distinto) | No disponible | No disponible | No disponible | Hugging Face |
+| `latentmas-aligner-qwen3-4b` | No disponible (d_a distinto) | No disponible | No disponible | No disponible | Hugging Face |
 
 Los checkpoints no son intercambiables entre backbones porque `d_a` difiere. El aligner de Qwen3-4B-Instruct alcanza un AUC notablemente superior, lo que indica una mayor separabilidad de la señal de seguridad en los latentes de ese modelo.
 
@@ -91,7 +91,7 @@ Los checkpoints no son intercambiables entre backbones porque `d_a` difiere. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-0](https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-0)
+- Repositorio Hugging Face: [YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-0](https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-seed-0)
 - Dataset de entrenamiento: [asatheesh/latent-mas-safety-dataset-seq-llama3-2-3b](https://huggingface.co/datasets/asatheesh/latent-mas-safety-dataset-seq-llama3-2-3b)
 - Aligner Qwen3-4B-Instruct: [YuanXiaopang/latentmas-aligner-qwen3-4b-instruct](https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b-instruct)
 - Aligner Qwen3-14B: [YuanXiaopang/latentmas-aligner-qwen3-14b](https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b)

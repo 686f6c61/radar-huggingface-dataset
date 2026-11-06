@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0.05-tm-attention` es un checkpoint de visión-lenguaje (image-text-to-text) de 450 millones de parámetros, publicado en HuggingFace por el usuario `vsuhas9`. Se trata de un modelo entrenado mediante fine-tuning supervisado (SFT) con la librería TRL, como indican las etiquetas `trl` y `sft`. El repositorio contiene pesos en formato safetensors con un tamaño de 0.9 GB.
+El modelo `vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0.05-tm-attention` es un checkpoint de visión-lenguaje (image-text-to-text) de 450 millones de parámetros, publicado en Hugging Face por el usuario `vsuhas9`. Se trata de un modelo entrenado mediante fine-tuning supervisado (SFT) con la librería TRL, como indican las etiquetas `trl` y `sft`. El repositorio contiene pesos en formato safetensors con un tamaño de 0.9 GB.
 
 El nombre del checkpoint sugiere una experimentación con hiperparámetros de entrenamiento: `lr2e-4` (tasa de aprendizaje 2e-4), `d0.05` (dropout 0.05), `r32` y `a32` (posiblemente rango y alpha de LoRA) y `tm-attention` (una variante de atención). A pesar de su tamaño reducido, la arquitectura multimodal le permite procesar entradas de imagen y texto, lo que lo hace potencialmente interesante para aplicaciones en entornos con recursos limitados.
 
@@ -57,7 +57,7 @@ Estimaciones basadas en el numero de parametros:
 - VRAM estimada para inferencia en FP16: ~0.9 GB; en FP32: ~1.8 GB; con cuantizacion 4-bit: ~0.23 GB (estimaciones teoricas, no medidas).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como una RTX 3060 o superior, para ejecucion en FP16. Tambien puede ejecutarse en CPU con suficiente RAM, aunque con mayor latencia.
 - Cabe en GPU de consumo: si, dado su tamano reducido, es apto para GPUs de consumo.
-- Opciones de despliegue: libreria `transformers` de HuggingFace; potencialmente vLLM o llama.cpp si se convierten los pesos a formatos compatibles, aunque esto no esta confirmado en la documentacion.
+- Opciones de despliegue: libreria `transformers` de Hugging Face; potencialmente vLLM o llama.cpp si se convierten los pesos a formatos compatibles, aunque esto no esta confirmado en la documentacion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0.05-tm-attention
+- Repositorio en Hugging Face: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0.05-tm-attention
 - Variante con `lr5e-5`: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr5e-5
 - Variante con `r32-a16`: https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a16
 

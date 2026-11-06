@@ -66,8 +66,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Labadain-MedQA-QLoRA-LLaMA-3.2-3B-it-Tetun | 3B (base) + adaptador LoRA | No disponible | 20,41 % macro en USMLE tetun (325 preguntas) | llama3.2 | HuggingFace (adaptador) |
-| Llama 3.2 3B-Instruct (base) | 3B | No disponible en esta ficha | No disponible en la información proporcionada | llama3.2 | HuggingFace |
+| Labadain-MedQA-QLoRA-LLaMA-3.2-3B-it-Tetun | 3B (base) + adaptador LoRA | No disponible | 20,41 % macro en USMLE tetun (325 preguntas) | llama3.2 | Hugging Face (adaptador) |
+| Llama 3.2 3B-Instruct (base) | 3B | No disponible en esta ficha | No disponible en la información proporcionada | llama3.2 | Hugging Face |
 | Alternativas de QA médico en lenguas de bajos recursos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la información proporcionada; la comparativa queda limitada al modelo base.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 - Uso previsto exclusivamente de investigación y prototipos educativos no clínicos con supervisión y medidas de seguridad.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-LLaMA-3.2-3B-it-Tetun
+- Hugging Face del modelo: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-LLaMA-3.2-3B-it-Tetun
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Dataset Flashcards: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset WikiDoc Patient Information: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

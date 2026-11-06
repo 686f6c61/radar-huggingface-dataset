@@ -65,9 +65,9 @@ La model card incluye una tabla de evaluación cuyo contenido proporcionado est�
 
 | Modelo | Parámetros | Contexto | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cribl Decision 2 Mini | 0,75B | 4.096 tokens | Elección múltiple y clasificación con scorer de opciones | Apache 2.0 | HuggingFace (cribl-ai/cribl-decision-2-mini) |
-| Cribl Decision 2 | 4B | No disponible | Elección múltiple y clasificación con scorer de opciones (mayor precisión según el autor) | No disponible en la información | HuggingFace (cribl-ai/cribl-decision-2) |
-| Qwen3.5-0.8B | 0,8B (aproximado) | No disponible | Modelo base de texto generativo | No disponible en la información | HuggingFace (Qwen/Qwen3.5-0.8B) |
+| Cribl Decision 2 Mini | 0,75B | 4.096 tokens | Elección múltiple y clasificación con scorer de opciones | Apache 2.0 | Hugging Face (cribl-ai/cribl-decision-2-mini) |
+| Cribl Decision 2 | 4B | No disponible | Elección múltiple y clasificación con scorer de opciones (mayor precisión según el autor) | No disponible en la información | Hugging Face (cribl-ai/cribl-decision-2) |
+| Qwen3.5-0.8B | 0,8B (aproximado) | No disponible | Modelo base de texto generativo | No disponible en la información | Hugging Face (Qwen/Qwen3.5-0.8B) |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cribl-ai/cribl-decision-2-mini
+- Modelo en Hugging Face: https://huggingface.co/cribl-ai/cribl-decision-2-mini
 - Modelo de mayor precisión (4B): https://huggingface.co/cribl-ai/cribl-decision-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

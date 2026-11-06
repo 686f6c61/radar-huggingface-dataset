@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, `mohammad0937474/qwen2.5-0.5b-nova-qa-lora`, es una publicacion en HuggingFace cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) sobre un modelo base Qwen2.5 de 0,5 mil millones de parametros, orientado a tareas de pregunta-respuesta. Sin embargo, esta interpretacion procede unicamente del nombre del repositorio: la model card es una plantilla autogenerada por HuggingFace en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]".
+Este repositorio, `mohammad0937474/qwen2.5-0.5b-nova-qa-lora`, es una publicacion en Hugging Face cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) sobre un modelo base Qwen2.5 de 0,5 mil millones de parametros, orientado a tareas de pregunta-respuesta. Sin embargo, esta interpretacion procede unicamente del nombre del repositorio: la model card es una plantilla autogenerada por Hugging Face en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]".
 
 El autor es el usuario `mohammad0937474`. El repositorio acumula 0 descargas y 0 likes, fue creado el 3 de octubre de 2026 y actualizado un minuto despues, y su tamano declarado es de 0,0 GB. Este conjunto de senales indica que se trata de un artefacto sin documentar, sin validacion publica y probablemente incompleto o de caracter experimental, no de un modelo listo para evaluacion tecnica rigurosa.
 
@@ -26,7 +26,7 @@ Dado que no hay informacion verificable sobre arquitectura, datos de entrenamien
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card. El unico tag tecnico relevante es la referencia `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental del aprendizaje automatico citado en la plantilla por defecto de HuggingFace; no es un paper del modelo ni aporta informacion sobre su entrenamiento. El tag `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia de HuggingFace.
+No se ha publicado informacion sobre la arquitectura en la model card. El unico tag tecnico relevante es la referencia `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental del aprendizaje automatico citado en la plantilla por defecto de Hugging Face; no es un paper del modelo ni aporta informacion sobre su entrenamiento. El tag `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia de Hugging Face.
 
 Tampoco hay datos sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra tecnica de alineamiento, asi como los hiperparametros empleados. La designacion "nova-qa" en el nombre sugiere un ajuste orientado a pregunta-respuesta, pero no existe documentacion que lo confirme ni que describa el conjunto de datos utilizado.
 
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el procedimiento de entrenamiento: se desconocen el nume
 Advertencia previa: al no existir documentacion tecnica ni evaluacion publicada, los siguientes escenarios son hipoteticos y estan condicionados a que el repositorio contenga pesos funcionales. No deben tomarse como recomendaciones validadas.
 
 - Prototipado local de pregunta-respuesta: si el artefacto es un adaptador sobre un modelo de 0,5 B de parametros, podria emplearse para experimentar con respuestas a preguntas sobre dominios cerrados en un portatil sin GPU dedicada, aunque la calidad real es desconocida.
-- Pruebas de concepto de ajuste fino: util como ejemplo de como se estructura un repositorio LoRA con `transformers` y safetensors para quien este aprendiendo el flujo de publicacion en HuggingFace.
+- Pruebas de concepto de ajuste fino: util como ejemplo de como se estructura un repositorio LoRA con `transformers` y safetensors para quien este aprendiendo el flujo de publicacion en Hugging Face.
 - Evaluacion comparativa interna: podria servir como punto de partida para medir si un ajuste de bajo rango aporta mejoras frente al modelo base, siempre que se defina previamente un conjunto de evaluacion propio.
 - Generacion de respuestas en entornos con recursos muy limitados: un modelo de esta escala, cuantizado, cabria en CPU o en GPUs de gama de entrada, lo que permitiria desplegar un sistema de demostracion interno con latencia aceptable, sin garantias de precision.
 - Clasificacion o extraccion de informacion sencilla: un modelo pequeno ajustado para QA puede adaptarse a tareas de extraccion de campos en textos cortos, aunque requeriria verificacion exhaustiva por su tendencia a errores factuales.
@@ -74,14 +74,14 @@ No hay datos verificables de este modelo, por lo que la comparacion se limita a 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-nova-qa-lora (este) | no disponible (nombre sugiere 0,5 B) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-0.5B (base probable) | 0,5 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
-| SmolLM2-360M | 0,36 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
-| TinyLlama-1.1B | 1,1 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible en la informacion proporcionada |
+| qwen2.5-0.5b-nova-qa-lora (este) | no disponible (nombre sugiere 0,5 B) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-0.5B (base probable) | 0,5 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
+| SmolLM2-360M | 0,36 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
+| TinyLlama-1.1B | 1,1 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Repositorio sin documentar: la model card es la plantilla por defecto de HuggingFace y no aporta informacion sobre el modelo.
+- Repositorio sin documentar: la model card es la plantilla por defecto de Hugging Face y no aporta informacion sobre el modelo.
 - Tamano declarado de 0,0 GB: es posible que el repositorio no contenga pesos o que solo incluya archivos de configuracion, lo que impediria su uso directo.
 - Cero descargas y cero likes: no existe evidencia de uso ni de validacion por parte de la comunidad.
 - Licencia no especificada: sin licencia explicita, no puede asumirse permiso para uso comercial ni para redistribucion. Conviene contactar con el autor antes de cualquier uso.
@@ -94,7 +94,7 @@ No hay datos verificables de este modelo, por lo que la comparacion se limita a 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohammad0937474/qwen2.5-0.5b-nova-qa-lora
-- Paper citado en los tags (Lacoste et al., 2019, sobre impacto medioambiental, citado por la plantilla de HuggingFace, no por el modelo): https://arxiv.org/abs/1910.09700
+- Repositorio en Hugging Face: https://huggingface.co/mohammad0937474/qwen2.5-0.5b-nova-qa-lora
+- Paper citado en los tags (Lacoste et al., 2019, sobre impacto medioambiental, citado por la plantilla de Hugging Face, no por el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto del aprendizaje automatico referenciado en la plantilla: https://mlco2.github.io/impact
 - Otros enlaces relevantes: no disponible. Las busquedas web realizadas no devolvieron resultados pertinentes sobre este modelo.

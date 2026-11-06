@@ -80,6 +80,6 @@ La comparación con ALBEF y BLIP es orientativa: el repositorio aquí descrito n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nguyenjennifer/albef-classification
+- Hugging Face: https://huggingface.co/nguyenjennifer/albef-classification
 - Paper ALBEF (referencia arquitectónica): https://arxiv.org/abs/2107.07651
 - Paper BLIP (referencia comparativa): https://arxiv.org/abs/2201.12086

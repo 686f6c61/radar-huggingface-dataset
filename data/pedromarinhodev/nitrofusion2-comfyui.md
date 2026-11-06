@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto / resolucion | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NitroFusion2-ComfyUI (este) | 6,155B | 1024x1024, 1-2 pasos | int8, W6A8, W4A8 | Apache-2.0 | HuggingFace, 0 descargas |
-| NitroFusion2 (original, ChenDY) | 6,155B | 1024x1024, 1-2 pasos | bf16 (12,31 GB) | Apache-2.0 | HuggingFace |
-| Z-Image-Turbo (Tongyi-MAI) | no disponible | no disponible | bf16 | no disponible en la informacion | HuggingFace / GitHub |
+| NitroFusion2-ComfyUI (este) | 6,155B | 1024x1024, 1-2 pasos | int8, W6A8, W4A8 | Apache-2.0 | Hugging Face, 0 descargas |
+| NitroFusion2 (original, ChenDY) | 6,155B | 1024x1024, 1-2 pasos | bf16 (12,31 GB) | Apache-2.0 | Hugging Face |
+| Z-Image-Turbo (Tongyi-MAI) | no disponible | no disponible | bf16 | no disponible en la informacion | Hugging Face / GitHub |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada, por lo que la comparacion se limita a parametros, tamano, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PedroMarinhoDev/NitroFusion2-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/PedroMarinhoDev/NitroFusion2-ComfyUI
 - Modelo base NitroFusion2: https://huggingface.co/ChenDY/NitroFusion2
 - Pesos bf16 originales: https://huggingface.co/ChenDY/NitroFusion2/blob/main/nf2-bf16.safetensors
 - LoRA de de-destilacion: https://huggingface.co/ChenDY/NitroFusion2/resolve/main/nf2-dedistill-lora.safetensors

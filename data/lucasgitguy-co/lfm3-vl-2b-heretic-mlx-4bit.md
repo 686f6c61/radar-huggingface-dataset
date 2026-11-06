@@ -84,7 +84,7 @@ La comparación relevante es entre formatos del mismo modelo, no frente a arquit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-mlx-4bit
 - Modelo base (heretic, pesos originales): https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic
 - Variante GGUF: https://huggingface.co/Lucasgitguy-co/lfm3-vl-2b-heretic-gguf
 - Modelo upstream de Liquid AI: https://huggingface.co/LiquidAI/LFM3-VL-2B

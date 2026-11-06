@@ -4,7 +4,7 @@
 
 El modelo `rubatotree/so101_toy_frog_diffusion_base` es una política de control visuomotor basada en Diffusion Policy, entrenada con el framework LeRobot para ejecutar la tarea "Grab the toy frog into the cup" (agarrar una rana de juguete y depositarla en un vaso) con un robot manipulador tipo `so_follower` (SO-101). Desarrollado por el usuario rubatotree, este modelo trata el control como un proceso generativo de difusión: en lugar de predecir una única acción, genera una trayectoria completa de acciones multi-paso, lo que resulta especialmente eficaz en tareas de manipulación con contacto.
 
-El modelo consume observaciones de estado (6 dimensiones) y dos flujos de imagen (cámaras frontal y lateral a 480x640 píxeles) y produce acciones de 6 dimensiones. Con aproximadamente 277,8 millones de parámetros y una licencia Apache-2.0, es un ejemplo práctico de aplicación de Diffusion Policy en robótica real, publicado en el Hub de HuggingFace con el pipeline `robotics`. Su relevancia radica en que demuestra un flujo completo de entrenamiento e inferencia reproducible mediante LeRobot, con código y dataset asociados.
+El modelo consume observaciones de estado (6 dimensiones) y dos flujos de imagen (cámaras frontal y lateral a 480x640 píxeles) y produce acciones de 6 dimensiones. Con aproximadamente 277,8 millones de parámetros y una licencia Apache-2.0, es un ejemplo práctico de aplicación de Diffusion Policy en robótica real, publicado en el Hub de Hugging Face con el pipeline `robotics`. Su relevancia radica en que demuestra un flujo completo de entrenamiento e inferencia reproducible mediante LeRobot, con código y dataset asociados.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información sobre otros modelos de la misma categoría (polít
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/rubatotree/so101_toy_frog_diffusion_base
+- Repositorio del modelo en Hugging Face: https://huggingface.co/rubatotree/so101_toy_frog_diffusion_base
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Dataset de entrenamiento: https://huggingface.co/datasets/rubatotree/toy-frog-1_20260810_162412
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

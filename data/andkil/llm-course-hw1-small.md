@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andkil/llm-course-hw1-small` es un modelo alojado en HuggingFace Hub por el usuario `andkil`, con 79.645.584 parámetros totales confirmados en los pesos safetensors y un repositorio de 0,3 GB. El nombre sugiere que se trata de la variante "small" del primer trabajo práctico (homework 1) de un curso sobre modelos de lenguaje, aunque la model card no confirma este extremo ni aporta ninguna documentación técnica adicional: solo indica que el modelo se subió mediante la integración `PyTorchModelHubMixin`. La fecha de creación y actualización del repositorio (16 de octubre de 2026, con 27 segundos de diferencia entre ambas marcas) apunta a una publicación automatizada desde un script de entrenamiento o de subida.
+`andkil/llm-course-hw1-small` es un modelo alojado en Hugging Face Hub por el usuario `andkil`, con 79.645.584 parámetros totales confirmados en los pesos safetensors y un repositorio de 0,3 GB. El nombre sugiere que se trata de la variante "small" del primer trabajo práctico (homework 1) de un curso sobre modelos de lenguaje, aunque la model card no confirma este extremo ni aporta ninguna documentación técnica adicional: solo indica que el modelo se subió mediante la integración `PyTorchModelHubMixin`. La fecha de creación y actualización del repositorio (16 de octubre de 2026, con 27 segundos de diferencia entre ambas marcas) apunta a una publicación automatizada desde un script de entrenamiento o de subida.
 
 La relevancia de este modelo es limitada y de carácter fundamentalmente educativo. No se declara arquitectura, dataset de entrenamiento, número de tokens, idiomas, licencia ni pipeline de inferencia, y no se han publicado resultados de benchmarks. Para un desarrollador o investigador que necesite evaluar el modelo, esto implica que prácticamente cualquier afirmación funcional debe verificarse empíricamente cargando los pesos, y que su uso en producción está condicionado por la ausencia total de licencia declarada.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, se desconoce por completo el corpus utilizado, el nú
 
 No es posible confirmar capacidades concretas con la información disponible. Los únicos hechos verificables son:
 
-- El repositorio no declara ningún pipeline de HuggingFace (`pipeline: no disponible`), por lo que el Hub no infiere automáticamente la tarea, ni siquiera `text-generation`.
+- El repositorio no declara ningún pipeline de Hugging Face (`pipeline: no disponible`), por lo que el Hub no infiere automáticamente la tarea, ni siquiera `text-generation`.
 - No hay evidencia documentada de generación de texto, razonamiento, código, matemáticas, visión, audio ni modalidad alguna.
 - No hay información sobre soporte de tool calling, function calling, agentes o razonamiento multi-paso.
 - No hay información sobre capacidades multilingües ni sobre modos especiales (por ejemplo, modo de razonamiento explícito o "thinking mode").
@@ -96,7 +96,7 @@ En términos prácticos, las tres alternativas ofrecen licencia explícita, long
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/andkil/llm-course-hw1-small
+- Modelo en Hugging Face Hub: https://huggingface.co/andkil/llm-course-hw1-small
 - Documentación de `PyTorchModelHubMixin` (mencionada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Repositorio de código: no disponible (la model card indica "More Information Needed")
 - Paper: no disponible (la model card indica "More Information Needed")

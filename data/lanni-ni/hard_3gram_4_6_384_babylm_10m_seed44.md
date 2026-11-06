@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/hard_3gram_4_6_384_babylm_10m_seed44` es un modelo de generación de texto alojado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de tamaño muy reducido, con 28.750.464 parámetros totales, que según los metadatos emplea una atención de ventana deslizante (`sliding_window`) y requiere código personalizado (`custom_code`) para cargarse. No se ha publicado información sobre arquitectura, datos de entrenamiento, licencia o capacidades concretas.
+El modelo `Lanni-ni/hard_3gram_4_6_384_babylm_10m_seed44` es un modelo de generación de texto alojado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de tamaño muy reducido, con 28.750.464 parámetros totales, que según los metadatos emplea una atención de ventana deslizante (`sliding_window`) y requiere código personalizado (`custom_code`) para cargarse. No se ha publicado información sobre arquitectura, datos de entrenamiento, licencia o capacidades concretas.
 
 El nombre del modelo sugiere una vinculación con el benchmark BabyLM, pero esa asociación no está confirmada por el autor. El repositorio pesa aproximadamente 0.1 GB y contiene pesos en formato safetensors. Dado que no hay documentación técnica adicional, este modelo debe considerarse experimental y de uso únicamente en investigación.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere una vinculación con el benchmark BabyLM, pero esa 
 
 ## Arquitectura y entrenamiento
 
-La información pública sobre este modelo es mínima. Los metadatos de HuggingFace indican que utiliza la librería `transformers`, con el pipeline `text-generation`, e incluye las etiquetas `sliding_window` y `custom_code`. Esto sugiere que la arquitectura incorpora una ventana de atención deslizante para procesar secuencias largas, pero no se han proporcionado detalles sobre el número de capas, cabezas, dimensiones o el mecanismo exacto. El enlace a `arxiv:1910.09700` que aparece en los metadatos no corresponde a este modelo: es el artículo de Lacoste et al. sobre la estimación del impacto ambiental del aprendizaje automático.
+La información pública sobre este modelo es mínima. Los metadatos de Hugging Face indican que utiliza la librería `transformers`, con el pipeline `text-generation`, e incluye las etiquetas `sliding_window` y `custom_code`. Esto sugiere que la arquitectura incorpora una ventana de atención deslizante para procesar secuencias largas, pero no se han proporcionado detalles sobre el número de capas, cabezas, dimensiones o el mecanismo exacto. El enlace a `arxiv:1910.09700` que aparece en los metadatos no corresponde a este modelo: es el artículo de Lacoste et al. sobre la estimación del impacto ambiental del aprendizaje automático.
 
 No hay información sobre el conjunto de datos de entrenamiento, el número de tokens procesados, la composición del corpus ni sobre técnicas de alineación como RLHF o DPO. Tampoco se ha documentado el procedimiento de entrenamiento ni los hiperparámetros utilizados.
 
@@ -66,5 +66,5 @@ No disponible. No se han encontrado comparativas publicadas ni modelos de refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/hard_3gram_4_6_384_babylm_10m_seed44
+- Hugging Face: https://huggingface.co/Lanni-ni/hard_3gram_4_6_384_babylm_10m_seed44
 - No hay otros enlaces relevantes en los resultados de búsqueda; la mayoría de resultados eran de YouTube y sin relación con el modelo.

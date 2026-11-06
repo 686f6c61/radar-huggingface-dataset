@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cluster-sql-worker-7B es un ajuste fino (fine-tune) publicado por el usuario zk-mohammad en HuggingFace, derivado de unsloth/qwen2.5-coder-7b-instruct-bnb-4bit, que a su vez es la version cuantizada a 4 bits del modelo Qwen2.5-Coder-7B-Instruct de Alibaba. El nombre del repositorio sugiere un modelo orientado a tareas de SQL dentro de una arquitectura de "cluster" de agentes trabajadores, aunque la model card no describe el dataset ni el objetivo concreto del entrenamiento.
+cluster-sql-worker-7B es un ajuste fino (fine-tune) publicado por el usuario zk-mohammad en Hugging Face, derivado de unsloth/qwen2.5-coder-7b-instruct-bnb-4bit, que a su vez es la version cuantizada a 4 bits del modelo Qwen2.5-Coder-7B-Instruct de Alibaba. El nombre del repositorio sugiere un modelo orientado a tareas de SQL dentro de una arquitectura de "cluster" de agentes trabajadores, aunque la model card no describe el dataset ni el objetivo concreto del entrenamiento.
 
 El repositorio tiene un tamano de 0,2 GB, lo que apunta a que contiene adaptadores LoRA (PEFT) y no los pesos completos del modelo: para su uso hay que cargar el modelo base y aplicar los adaptadores, o fusionarlos previamente. Esta es la advertencia practica mas importante de la ficha, porque un checkpoint de 0,2 GB no es desplegable por si solo.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| cluster-sql-worker-7B (este modelo) | No disponible en la model card (base 7,61B) | No disponible (base 32.768 tokens) | Apache-2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-Coder-7B-Instruct | 7,61B | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente desplegado | Publicados por Alibaba en su model card |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 tokens | Licencia propia de DeepSeek (permite uso comercial con condiciones) | HuggingFace | Publicados en su model card |
-| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Licencia comunitaria de Meta (con restricciones para grandes despliegues) | HuggingFace y proveedores cloud | Publicados por Meta |
+| cluster-sql-worker-7B (este modelo) | No disponible en la model card (base 7,61B) | No disponible (base 32.768 tokens) | Apache-2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-Coder-7B-Instruct | 7,61B | 32.768 tokens (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente desplegado | Publicados por Alibaba en su model card |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 tokens | Licencia propia de DeepSeek (permite uso comercial con condiciones) | Hugging Face | Publicados en su model card |
+| Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Licencia comunitaria de Meta (con restricciones para grandes despliegues) | Hugging Face y proveedores cloud | Publicados por Meta |
 
 La comparacion directa de rendimiento no es posible porque este fine-tune no publica metricas. En la practica, su unico diferenciador documentado frente a Qwen2.5-Coder-7B-Instruct es el ajuste especifico, cuyo efecto no esta cuantificado; en ausencia de evaluacion, el modelo base sin ajustar es una alternativa con mejor trazabilidad.
 
@@ -95,7 +95,7 @@ La comparacion directa de rendimiento no es posible porque este fine-tune no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zk-mohammad/cluster-sql-worker-7B
+- Modelo en Hugging Face: https://huggingface.co/zk-mohammad/cluster-sql-worker-7B
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nomadoor/qwen-image-2.1-360-panorama-outpaint-lora | LoRA de edicion de imagen sobre Qwen-Image-2.1 | rank 32 / alpha 32 (adaptador); base no disponible | no disponible | Qwen Research | HuggingFace, diffusers, ComfyUI |
-| Qwen/Qwen-Image-2.1 (modelo base) | Modelo de difusion de imagen | no disponible | no disponible | Qwen Research | HuggingFace |
+| nomadoor/qwen-image-2.1-360-panorama-outpaint-lora | LoRA de edicion de imagen sobre Qwen-Image-2.1 | rank 32 / alpha 32 (adaptador); base no disponible | no disponible | Qwen Research | Hugging Face, diffusers, ComfyUI |
+| Qwen/Qwen-Image-2.1 (modelo base) | Modelo de difusion de imagen | no disponible | no disponible | Qwen Research | Hugging Face |
 | Otros LoRA de panorama 360 para difusion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de modelos comparables adicionales en la informacion proporcionada. La unica comparacion documentada es cualitativa: frente al modelo base sin LoRA, el autor senala que la diferencia principal esta en la union mas limpia de los bordes izquierdo y derecho del panorama.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de modelos comparables adicionales en l
 
 ## Enlaces
 
-- HuggingFace del LoRA: https://huggingface.co/nomadoor/qwen-image-2.1-360-panorama-outpaint-lora
+- Hugging Face del LoRA: https://huggingface.co/nomadoor/qwen-image-2.1-360-panorama-outpaint-lora
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio ComfyUI-Panorama-Stickers (nodo Panorama Studio): https://github.com/nomadoor/ComfyUI-Panorama-Stickers
 - Licencia Qwen Research License Agreement: https://huggingface.co/Qwen/Qwen-Image-2.1

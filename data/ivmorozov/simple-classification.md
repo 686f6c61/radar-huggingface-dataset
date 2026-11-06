@@ -63,11 +63,11 @@ No se dispone de datos de rendimiento para comparar con otros modelos. A nivel a
 - **Modelo no entrenado**: el checkpoint es una inicialización aleatoria. No tiene capacidad de clasificación real y no debe usarse en producción.
 - **Sin auditoria de robustez o sesgos**: el autor advierte que no se ha auditado el modelo para robustez, equidad ni transferencia de dominio.
 - **Alcance limitado**: la configuración nano está pensada para pruebas de humo, no para tareas reales.
-- **Requiere adaptador para carga**: las APIs genéricas de HuggingFace no cargan este modelo directamente; se necesita un adaptador explícito.
+- **Requiere adaptador para carga**: las APIs genéricas de Hugging Face no cargan este modelo directamente; se necesita un adaptador explícito.
 - **Licencia Apache-2.0**: permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos si se usa con datasets externos.
 - **Sin garantías**: los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivmorozov/simple-classification
+- Repositorio en Hugging Face: https://huggingface.co/ivmorozov/simple-classification
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la información proporcionada.

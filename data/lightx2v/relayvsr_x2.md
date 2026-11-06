@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks de calidad (PSNR, SSIM, LPIPS u otr
 
 | Modelo | Escala | Enfoque | Tiempo en H100 (243 frames) | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| RelayVSR_X2 | 2× fija | Supresión de flicker temporal, VSR rápido | 5,348 s | no disponible | HuggingFace (lightx2v) |
-| RelayVSR (original) | 4× fija | Supresión de flicker temporal | 19,304 s (con LightX2V) | no disponible | HuggingFace (kopper) |
-| SwiftVR | 2× | VSR rápido | 6,399 s (con LightX2V) | no disponible | HuggingFace (H-oliday) |
-| FlashVSR+ Turbo | 2× | VSR acelerado | 54,024 s | no disponible | HuggingFace (ruchangyao) |
-| SeedVR2-3B | 2× | VSR basado en difusión (3B parámetros) | 352,820 s | no disponible | HuggingFace (ByteDance-Seed) |
+| RelayVSR_X2 | 2× fija | Supresión de flicker temporal, VSR rápido | 5,348 s | no disponible | Hugging Face (lightx2v) |
+| RelayVSR (original) | 4× fija | Supresión de flicker temporal | 19,304 s (con LightX2V) | no disponible | Hugging Face (kopper) |
+| SwiftVR | 2× | VSR rápido | 6,399 s (con LightX2V) | no disponible | Hugging Face (H-oliday) |
+| FlashVSR+ Turbo | 2× | VSR acelerado | 54,024 s | no disponible | Hugging Face (ruchangyao) |
+| SeedVR2-3B | 2× | VSR basado en difusión (3B parámetros) | 352,820 s | no disponible | Hugging Face (ByteDance-Seed) |
 
 RelayVSR_X2 es el más rápido de la comparativa en el benchmark publicado, con una ventaja de aproximadamente un 16 % sobre SwiftVR con LightX2V y de más de un orden de magnitud sobre SeedVR2-3B. No hay datos de calidad comparada (métricas de restauración) que permitan evaluar el equilibrio velocidad/calidad frente a estos modelos.
 
@@ -95,7 +95,7 @@ RelayVSR_X2 es el más rápido de la comparativa en el benchmark publicado, con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/RelayVSR_X2
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/RelayVSR_X2
 - Modelo original RelayVSR: https://huggingface.co/kopper/RelayVSR
 - Repositorio LightX2V: https://github.com/ModelTC/LightX2V
 - Documentación de RelayVSR en LightX2V: https://github.com/ModelTC/LightX2V/tree/main/scripts/relayvsr

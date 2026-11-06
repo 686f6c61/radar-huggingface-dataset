@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zed122/tgarob` es un repositorio de modelo publicado en HuggingFace por el usuario zed122 el 29 de septiembre de 2026. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia Apache 2.0. No se especifica arquitectura, tamano de parametros, ventana de contexto, idiomas soportados ni pipeline de inferencia, por lo que no es posible determinar que tipo de modelo es ni que problema resuelve.
+`zed122/tgarob` es un repositorio de modelo publicado en Hugging Face por el usuario zed122 el 29 de septiembre de 2026. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia Apache 2.0. No se especifica arquitectura, tamano de parametros, ventana de contexto, idiomas soportados ni pipeline de inferencia, por lo que no es posible determinar que tipo de modelo es ni que problema resuelve.
 
 El repositorio no ha registrado descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no aparece documentacion complementaria, paper, blog tecnico ni demo asociada. Las busquedas web realizadas no devuelven informacion sobre este modelo concreto; los resultados obtenidos corresponden a otros artefactos del mismo autor (por ejemplo, `zed122/custom-mixed-gguf`, un GGUF mixto publicado por el mismo usuario) o a proyectos sin relacion.
 
@@ -74,6 +74,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zed122/tgarob
-- Perfil del autor en HuggingFace: https://huggingface.co/zed122
+- Repositorio Hugging Face: https://huggingface.co/zed122/tgarob
+- Perfil del autor en Hugging Face: https://huggingface.co/zed122
 - Otro repositorio del mismo autor (GGUF mixto): https://huggingface.co/zed122/custom-mixed-gguf

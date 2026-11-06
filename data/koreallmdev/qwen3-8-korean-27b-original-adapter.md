@@ -81,7 +81,7 @@ La comparacion rigurosa no es posible con los datos disponibles: el modelo base 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| qwen3.8-korean-27b-original-adapter | No disponible (base indicado como 27B) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Solo benchmark interno (94,048 en 42 tareas) |
+| qwen3.8-korean-27b-original-adapter | No disponible (base indicado como 27B) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Solo benchmark interno (94,048 en 42 tareas) |
 | Alternativa A: modelos ajustados para coreano sobre bases de ~30B | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa B: modelos de codigo de ~30B de la familia Qwen | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ Conclusion: no disponible. Cualquier comparacion numerica requeriria fijar prime
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koreallmdev/qwen3.8-korean-27b-original-adapter
+- Repositorio en Hugging Face: https://huggingface.co/koreallmdev/qwen3.8-korean-27b-original-adapter
 - Referencia del modelo base indicada por el autor: `/home/saul9523/dgx_ai_factory/models/qwen3_8_27b_uncensored_bf16` (ruta local, no es una URL publica)
 - Directorio de origen del adaptador: `/home/saul9523/dgx_ai_factory/06_train/qwen38_korean_only_ddp2_v1_2/run_20260913_202716/FINAL_ADAPTER` (ruta local)
 - Paper, blog, repositorio de codigo o demo: no disponible

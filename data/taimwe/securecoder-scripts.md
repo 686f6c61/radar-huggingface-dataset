@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SecureCoder es un ajuste fino mediante QLoRA sobre `Qwen/Qwen3-Coder-30B-A3B-Instruct`, un modelo de arquitectura MoE de 30,5B parámetros totales y unos 3B activos por token. El objetivo declarado por el autor (Taimwe) es cubrir tres habilidades simultáneamente: generación de código, tool calling y ciberseguridad, tanto ofensiva como defensiva. El repositorio publicado en HuggingFace se presenta como un runbook de entrenamiento, no como un checkpoint listo para producción: documenta la elección del modelo base, la mezcla de datos, los detalles de cómputo y los costes medidos.
+SecureCoder es un ajuste fino mediante QLoRA sobre `Qwen/Qwen3-Coder-30B-A3B-Instruct`, un modelo de arquitectura MoE de 30,5B parámetros totales y unos 3B activos por token. El objetivo declarado por el autor (Taimwe) es cubrir tres habilidades simultáneamente: generación de código, tool calling y ciberseguridad, tanto ofensiva como defensiva. El repositorio publicado en Hugging Face se presenta como un runbook de entrenamiento, no como un checkpoint listo para producción: documenta la elección del modelo base, la mezcla de datos, los detalles de cómputo y los costes medidos.
 
 La relevancia del proyecto está en su enfoque metodológico: el autor justifica la elección del base comparando alternativas por parámetros, licencia y soporte de tool calling, y documenta con identificadores de job los cálculos de coste y las tasas de entrenamiento medidas. La mezcla de datos suma aproximadamente 57.000 filas, de las cuales alrededor del 30% son de tool calling, completadas con código (Magicoder), seguridad (Trendyol, Fenrir, OWASP, CTF) y un bloque de replay conversacional (FineTome-100k) para evitar el colapso del seguimiento de instrucciones.
 
-No se han publicado pesos cuantizados, resultados de benchmarks ni métricas de calidad en la información disponible. La ficha de HuggingFace registra 0 descargas y 0 likes, y no declara licencia ni idiomas soportados para el artefacto resultante, aunque el modelo base es Apache-2.0. El repositorio parece contener scripts de entrenamiento más que pesos finales.
+No se han publicado pesos cuantizados, resultados de benchmarks ni métricas de calidad en la información disponible. La ficha de Hugging Face registra 0 descargas y 0 likes, y no declara licencia ni idiomas soportados para el artefacto resultante, aunque el modelo base es Apache-2.0. El repositorio parece contener scripts de entrenamiento más que pesos finales.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ No se han publicado pesos cuantizados, resultados de benchmarks ni métricas de 
 | Longitud de contexto | no disponible (no especificada en la model card) |
 | Tipos de cuantizacion | No se publican pesos cuantizados. El entrenamiento se realizo en QLoRA 4-bit; GGUF, AWQ y GPTQ: no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace (el modelo base es Apache-2.0) |
+| Licencia | no disponible en la ficha de Hugging Face (el modelo base es Apache-2.0) |
 | Formato de pesos | no disponible (el repositorio se describe como scripts de entrenamiento) |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ Los únicos datos numéricos publicados son de rendimiento de entrenamiento, no 
 
 ## Requisitos de hardware
 
-- Entrenamiento con la receta documentada: `l40sx1` con 48 GB de VRAM a 1,80 $/h en HuggingFace Jobs, con el modelo base en 4 bits. Alternativas verificadas por el autor: `a100-large` (80 GB, 2,50 $/h), `rtx-pro-6000` (96 GB, 2,75 $/h) y `h200` (141 GB, 5,00 $/h).
+- Entrenamiento con la receta documentada: `l40sx1` con 48 GB de VRAM a 1,80 $/h en Hugging Face Jobs, con el modelo base en 4 bits. Alternativas verificadas por el autor: `a100-large` (80 GB, 2,50 $/h), `rtx-pro-6000` (96 GB, 2,75 $/h) y `h200` (141 GB, 5,00 $/h).
 - El propio autor descarta `t4-small` (16 GB) para un modelo de 30B en 4 bits; `l4x1` (24 GB, 0,80 $/h) y `a10g-large` (24 GB, 1,50 $/h) se reservan para modelos de 9B a 14B.
 - Inferencia en 4 bits: los pesos de un MoE de 30,5B ocuparían del orden de 16-20 GB, pero esta cifra es una estimación del editor a partir del recuento de parámetros y no está verificada por el autor.
 - GPU de consumo: no hay confirmación de despliegue en RTX 4090 u otras GPU de 24 GB; con 24 GB el margen para contexto y caché KV sería muy ajustado y no está validado en la información disponible.
@@ -105,7 +105,7 @@ Los únicos datos numéricos publicados son de rendimiento de entrenamiento, no 
 
 - No hay resultados de benchmarks publicados: no existe evidencia medida de mejora sobre el modelo base en código, tool calling o seguridad.
 - El repositorio registra 0 descargas y 0 likes, por lo que no ha sido validado por terceros.
-- La licencia del artefacto ajustado no está declarada en la ficha de HuggingFace; la del base (Apache-2.0) no se hereda automáticamente sin que el autor lo haga explícito. Verificar antes de cualquier uso comercial.
+- La licencia del artefacto ajustado no está declarada en la ficha de Hugging Face; la del base (Apache-2.0) no se hereda automáticamente sin que el autor lo haga explícito. Verificar antes de cualquier uso comercial.
 - El repositorio parece contener scripts de entrenamiento, no pesos finales; no es desplegable tal cual sin ejecutar el pipeline.
 - El runbook menciona una fase posterior de eliminación de rechazos (abliteration, sección 6) que no se detalla. Si se aplica, el modelo resultante tendría una política de seguridad alineada debilitada y podría emitir contenido que el base rechazaría.
 - Doble uso en ciberseguridad: el ajuste incluye material ofensivo (reconocimiento, enumeración, conceptos de explotación y CTF). Aunque el autor excluye explícitamente la construcción de malware y exploits weaponizados, la frontera es difusa y el uso indebido es posible.
@@ -117,7 +117,7 @@ Los únicos datos numéricos publicados son de rendimiento de entrenamiento, no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taimwe/securecoder-scripts
+- Hugging Face: https://huggingface.co/Taimwe/securecoder-scripts
 - Modelo base: `Qwen/Qwen3-Coder-30B-A3B-Instruct` (referencia citada en el runbook, no enlazada explícitamente)
 - Paper, blog, repositorio de código o demo: no disponibles
 - La búsqueda web no devolvió ningún resultado relevante sobre este modelo.

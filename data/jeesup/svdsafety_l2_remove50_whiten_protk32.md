@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svdsafety_l2_remove50_whiten_protk32 | 6.738.415.616 (6,74 mil millones) | No disponible en la informacion | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes | Artefacto de investigacion, sin benchmarks ni evaluacion publicada |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens (segun el modelo base) | Llama 2 Community License | HuggingFace, ampliamente utilizado | Modelo alineado de referencia; es el origen declarado del checkpoint analizado |
-| meta-llama/Llama-2-13b-chat-hf | 13 mil millones | 4096 tokens (segun el modelo base) | Llama 2 Community License | HuggingFace | Misma familia y licencia; mayor coste de inferencia y, en general, mejor calidad conversacional que la variante de 7B |
-| mistralai/Mistral-7B-Instruct-v0.1 | 7,3 mil millones | 8192 tokens (segun la model card del fabricante) | Apache 2.0 | HuggingFace | Alternativa de tamano comparable con licencia permisiva y contexto mayor; perfil de seguridad y alineacion distintos |
+| svdsafety_l2_remove50_whiten_protk32 | 6.738.415.616 (6,74 mil millones) | No disponible en la informacion | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes | Artefacto de investigacion, sin benchmarks ni evaluacion publicada |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens (segun el modelo base) | Llama 2 Community License | Hugging Face, ampliamente utilizado | Modelo alineado de referencia; es el origen declarado del checkpoint analizado |
+| meta-llama/Llama-2-13b-chat-hf | 13 mil millones | 4096 tokens (segun el modelo base) | Llama 2 Community License | Hugging Face | Misma familia y licencia; mayor coste de inferencia y, en general, mejor calidad conversacional que la variante de 7B |
+| mistralai/Mistral-7B-Instruct-v0.1 | 7,3 mil millones | 8192 tokens (segun la model card del fabricante) | Apache 2.0 | Hugging Face | Alternativa de tamano comparable con licencia permisiva y contexto mayor; perfil de seguridad y alineacion distintos |
 
 Los datos de los modelos comparativos proceden de informacion publica general sobre esos checkpoints y no de la documentacion proporcionada para este artefacto; conviene verificarlos en sus respectivas model cards. No se dispone de comparaciones de rendimiento medidas entre este checkpoint y las alternativas, porque no hay benchmarks publicados para el modelo analizado.
 
@@ -100,7 +100,7 @@ Los datos de los modelos comparativos proceden de informacion publica general so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk32
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_protk32
 - Modelo base declarado: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: no disponible en la informacion proporcionada (la model card no incluye enlace)
 - Paper o repositorio de SVD-LLM: no disponible en la informacion proporcionada, pese a ser la tecnica de compresion citada

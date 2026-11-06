@@ -97,7 +97,7 @@ No se dispone de datos de contexto, rendimiento ni licencia de las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-RL
+- Modelo en Hugging Face: https://huggingface.co/PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-RL
 - Modelo base (SFT): https://huggingface.co/PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-SFT
 - Repositorio de prime-rl: https://github.com/PrimeIntellect-ai/prime-rl
 - Commit de la receta: https://github.com/PrimeIntellect-ai/prime-rl/commit/21814b401e29240e8ca4f161dafa0bba6d1425ba

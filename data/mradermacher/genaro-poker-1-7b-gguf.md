@@ -82,7 +82,7 @@ Los modelos de propósito general citados ofrecen mayor cobertura de tareas y co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Genaro-poker-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Genaro-poker-1.7B-GGUF
 - Modelo base: https://huggingface.co/predbrad/Genaro-poker-1.7B
 - Dataset de SFT: https://huggingface.co/datasets/predbrad/genaro-poker-sft
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Genaro-poker-1.7B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/arb_arab_10mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (transformer decoder-only) con 39.087.104 parametros, publicado en HuggingFace con la libreria `transformers` y pesos en formato `safetensors`. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0.
+`fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/arb_arab_10mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (transformer decoder-only) con 39.087.104 parametros, publicado en Hugging Face con la libreria `transformers` y pesos en formato `safetensors`. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0.
 
 Su relevancia es limitada y de caracter experimental: acumula 0 descargas y 0 likes, y su model card apenas documenta el procedimiento de entrenamiento mas alla de las versiones de framework. El nombre sugiere que el modelo base esta orientado al arabe (prefijos `arb`/`arab`) y que se entreno sobre un corpus de aproximadamente 10 MB, lo que lo situa en la categoria de modelos pequenos de investigacion mas que en la de modelos listos para produccion.
 
@@ -70,8 +70,8 @@ No hay datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra metrica en
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental |
-| goldfish-models/arb_arab_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo del que deriva |
+| fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental |
+| goldfish-models/arb_arab_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo del que deriva |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la familia, datos publicos conocidos |
 
 La comparativa se limita a la familia inmediata del modelo. No se dispone de datos de rendimiento de ninguno de ellos en la informacion proporcionada, por lo que la comparacion es estructural y no de calidad.
@@ -88,7 +88,7 @@ La comparativa se limita a la familia inmediata del modelo. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/vuqvjamu
 - Repositorio de TRL: https://github.com/huggingface/trl

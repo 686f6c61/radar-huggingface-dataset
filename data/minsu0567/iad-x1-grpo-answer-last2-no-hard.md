@@ -19,7 +19,7 @@ El modelo ha sido entrenado con la técnica GRPO (Group Relative Policy Optimiza
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo se basa en la arquitectura Qwen3.5-4B, un transformer multimodal que procesa tanto imágenes como texto. El entrenamiento se ha realizado en dos etapas: primero un finetune supervisado (SFT) sobre el modelo base, y posteriormente un ajuste con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que optimiza la respuesta final del modelo. El proceso de entrenamiento se ha acelerado mediante la librería Unsloth y la biblioteca TRL de HuggingFace.
+El modelo se basa en la arquitectura Qwen3.5-4B, un transformer multimodal que procesa tanto imágenes como texto. El entrenamiento se ha realizado en dos etapas: primero un finetune supervisado (SFT) sobre el modelo base, y posteriormente un ajuste con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que optimiza la respuesta final del modelo. El proceso de entrenamiento se ha acelerado mediante la librería Unsloth y la biblioteca TRL de Hugging Face.
 
 Los datos de entrenamiento no están documentados en la información proporcionada. Se sabe que el modelo está especializado en la tarea de detección de anomalías industriales: dada una imagen de referencia (pieza correcta) y una imagen de consulta, el modelo debe clasificar si existe un defecto y, en caso afirmativo, indicar el tipo y la localización. No se han publicado detalles sobre el dataset ni sobre el proceso de refuerzo (recompensas, número de pasos, etc.).
 

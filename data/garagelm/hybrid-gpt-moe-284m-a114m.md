@@ -84,7 +84,7 @@ La comparativa con otros MoE de tamaño similar (como Mixtral 8x7B o Qwen MoE) n
 - El wrapper requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código del autor en el entorno.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/garagelm/hybrid-gpt-moe-284m-a114m
+- Modelo en Hugging Face: https://huggingface.co/garagelm/hybrid-gpt-moe-284m-a114m
 - Repositorio GitHub del proyecto: https://github.com/GarageLM/garagelm
 - Web del laboratorio: https://garagelm.org/
 - Modelo hermano hybrid-gpt-232m: https://huggingface.co/garagelm/hybrid-gpt-232m

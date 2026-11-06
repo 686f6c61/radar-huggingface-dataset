@@ -96,7 +96,7 @@ No se dispone de comparaciones cuantitativas con alternativas específicas de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JMasr/balidea-crisis-help-detector-es-gl-v2
+- Modelo en Hugging Face: https://huggingface.co/JMasr/balidea-crisis-help-detector-es-gl-v2
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de calibración de temperatura (Guo et al. 2017): https://arxiv.org/abs/1706.04599
 - Referencia AIMH-crisis (dataset traducido citado en la model card): no disponible en la información proporcionada

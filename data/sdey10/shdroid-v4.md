@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SHDROID-v4 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Sdey10 en HuggingFace, construido sobre el modelo base google/gemma-4-e2b-it. Se distribuye como un repositorio de pequeño tamano (0,1 GB) que contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo. La libreria declarada es `peft` (version 0.21.2 segun la model card) y el pipeline es `text-generation` con etiqueta `conversational`, lo que indica que esta orientado a generacion de texto conversacional.
+SHDROID-v4 es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Sdey10 en Hugging Face, construido sobre el modelo base google/gemma-4-e2b-it. Se distribuye como un repositorio de pequeño tamano (0,1 GB) que contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo. La libreria declarada es `peft` (version 0.21.2 segun la model card) y el pipeline es `text-generation` con etiqueta `conversational`, lo que indica que esta orientado a generacion de texto conversacional.
 
 El modelo es relevante unicamente como ejemplo de adaptacion ligera sobre la familia Gemma 4, pero conviene subrayar que la model card es una plantilla sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, sesgos y uso previsto aparecen como "[More Information Needed]". No hay informacion sobre el dataset de ajuste, hiperparametros, objetivo de entrenamiento ni resultados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en noviembre de 2026.
 
@@ -37,7 +37,7 @@ No se dispone de datos sobre el proceso de entrenamiento del adaptador: ni el vo
 - Ajuste por instrucciones: el modelo base es la variante `-it` de Gemma 4, orientada a seguir instrucciones; el adaptador hereda esa capacidad, aunque no se documenta que la mejore o especialice.
 - Capacidades concretas del adaptador (codigo, matematicas, tool calling, agentes, vision, audio, thinking mode): no disponibles. La model card no las declara y no hay evaluacion que las respalde.
 - Multilingue: no disponible; no se declaran idiomas soportados.
-- Integracion con el ecosistema HuggingFace: al ser un adaptador PEFT, puede cargarse con `transformers` + `peft` junto al modelo base.
+- Integracion con el ecosistema Hugging Face: al ser un adaptador PEFT, puede cargarse con `transformers` + `peft` junto al modelo base.
 
 ## Casos de uso
 
@@ -79,7 +79,7 @@ No disponible. No se ha proporcionado informacion sobre adaptadores LoRA compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sdey10/SHDROID-v4
+- Repositorio Hugging Face: https://huggingface.co/Sdey10/SHDROID-v4
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

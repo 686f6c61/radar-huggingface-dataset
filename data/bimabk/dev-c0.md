@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bimabk/dev-C0 es un modelo de lenguaje publicado en HuggingFace por el usuario bimabk, con un total de 1.720.574.976 parametros (aproximadamente 1,72 mil millones) segun los pesos almacenados en formato safetensors. El repositorio ocupa 3,5 GB, lo que resulta coherente con un almacenamiento en precision de 16 bits (1,72e9 x 2 bytes = 3,44 GB). La etiqueta principal del repositorio es "qwen3", lo que indica que el modelo deriva de la familia Qwen3, si bien no se especifica cual es el modelo base exacto ni si se trata de un ajuste fino.
+bimabk/dev-C0 es un modelo de lenguaje publicado en Hugging Face por el usuario bimabk, con un total de 1.720.574.976 parametros (aproximadamente 1,72 mil millones) segun los pesos almacenados en formato safetensors. El repositorio ocupa 3,5 GB, lo que resulta coherente con un almacenamiento en precision de 16 bits (1,72e9 x 2 bytes = 3,44 GB). La etiqueta principal del repositorio es "qwen3", lo que indica que el modelo deriva de la familia Qwen3, si bien no se especifica cual es el modelo base exacto ni si se trata de un ajuste fino.
 
 La ficha del repositorio no incluye informacion sobre licencia, idiomas soportados, pipeline de uso ni datos de entrenamiento. El modelo acumula 13 descargas y 0 "likes" en el momento de la consulta, y fue creado el 19 de septiembre de 2026.
 
@@ -69,11 +69,11 @@ La comparativa se realiza con modelos de la misma categoria de tamano. Las cifra
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bimabk/dev-C0 | 1,72B | No disponible | No disponible | HuggingFace (13 descargas) |
-| Qwen3-1.7B | 1,7B aprox. | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace y Ollama |
-| Gemma 3 1B | 1B | 32.000 tokens | Gemma Terms of Use | HuggingFace y Ollama |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| bimabk/dev-C0 | 1,72B | No disponible | No disponible | Hugging Face (13 descargas) |
+| Qwen3-1.7B | 1,7B aprox. | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face y Ollama |
+| Gemma 3 1B | 1B | 32.000 tokens | Gemma Terms of Use | Hugging Face y Ollama |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 No es posible comparar rendimiento en benchmarks porque dev-C0 no publica resultados. La ventaja potencial de las alternativas citadas es la existencia de licencia clara, documentacion de contexto y ecosistema de herramientas ya adaptado.
 
@@ -92,6 +92,6 @@ No es posible comparar rendimiento en benchmarks porque dev-C0 no publica result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bimabk/dev-C0
+- Modelo en Hugging Face: https://huggingface.co/bimabk/dev-C0
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada.
 - Demo o espacio de inferencia: no disponible en la informacion proporcionada.

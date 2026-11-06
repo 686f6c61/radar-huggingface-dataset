@@ -34,7 +34,7 @@ El entrenamiento se hizo desde cero sobre exactamente 3.000.000.000 tokens objet
 - No es un modelo de instrucciones ni de chat: no sigue instrucciones ni mantiene diálogos de forma fiable sin ajuste adicional.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documentan capacidades de agente ni de razonamiento multi-paso.
-- Multilingüismo limitado al turco (etiqueta de idioma `tr` en HuggingFace y en la model card).
+- Multilingüismo limitado al turco (etiqueta de idioma `tr` en Hugging Face y en la model card).
 - Capacidades especiales: memoria lineal con valores int8 y puerta aprendida (V14-LM); no se declaran modo de pensamiento, visión ni audio.
 - Diagnósticos de recuperación y razonamiento de largo alcance no se incluyen como resultados completos en esta entrega, según la propia model card.
 
@@ -100,7 +100,7 @@ Comparativa con alternativas externas de ~100M parámetros: no disponible.
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Ethosoft/rmala-v14-half-100m-3b
-- Réplica en HuggingFace: https://huggingface.co/MercanAI/rmala-v14-half-100m-3b
+- Repositorio principal en Hugging Face: https://huggingface.co/Ethosoft/rmala-v14-half-100m-3b
+- Réplica en Hugging Face: https://huggingface.co/MercanAI/rmala-v14-half-100m-3b
 - Archivos incluidos en el repositorio (referenciados en la model card): `inference.py`, `requirements.txt`, `evaluation.json`, `training_config.json`, `LM100_PROTOCOL.md`, `THIRD_PARTY_NOTICES.md`, tokenizador nativo y fuentes de HOLA/FLA.
 - Paper, blog, repositorio de código o demo independientes: no disponible.

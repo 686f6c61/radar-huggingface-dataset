@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JevAny-Qwen3.5-4B-Direct-Token-LoRA es un adaptador LoRA publicado por el usuario tianxinwei sobre el modelo base Qwen/Qwen3.5-4B, dentro del proyecto JevAny (repositorio weitianxin/JevAny). No es un modelo generativo convencional: es un decision-model que emplea el readout denominado direct-token para puntuar hasta 255 opciones y emitir una decisión en una única pasada del backbone, sin generación autorregresiva. El repositorio de HuggingFace contiene exclusivamente los pesos del adaptador PEFT y los metadatos del readout, no los pesos base.
+JevAny-Qwen3.5-4B-Direct-Token-LoRA es un adaptador LoRA publicado por el usuario tianxinwei sobre el modelo base Qwen/Qwen3.5-4B, dentro del proyecto JevAny (repositorio weitianxin/JevAny). No es un modelo generativo convencional: es un decision-model que emplea el readout denominado direct-token para puntuar hasta 255 opciones y emitir una decisión en una única pasada del backbone, sin generación autorregresiva. El repositorio de Hugging Face contiene exclusivamente los pesos del adaptador PEFT y los metadatos del readout, no los pesos base.
 
 El backbone sobre el que se apoya, Qwen3.5-4B, es un transformer denso de 4B parámetros con contexto nativo de 262.144 tokens, entrenado con fusión temprana de tokens multimodales (visión-lenguaje). El adaptador especializa ese backbone en tareas de decisión agrupadas en cinco categorías declaradas: preferencias, decisiones de agente/herramienta, razonamiento, clasificación y seguridad.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevAny-Qwen3.5-4B-Direct-Token-LoRA | Adaptador sobre base de ~4B | 262.144 tokens | Decision, readout direct-token (hasta 255 opciones) | no disponible | HuggingFace, 0 descargas |
-| Qwen3.5-4B (modelo base) | 4B denso | 262.144 tokens | Generacion autoregresiva multimodal | no disponible en la informacion | HuggingFace, con receta en vLLM |
+| JevAny-Qwen3.5-4B-Direct-Token-LoRA | Adaptador sobre base de ~4B | 262.144 tokens | Decision, readout direct-token (hasta 255 opciones) | no disponible | Hugging Face, 0 descargas |
+| Qwen3.5-4B (modelo base) | 4B denso | 262.144 tokens | Generacion autoregresiva multimodal | no disponible en la informacion | Hugging Face, con receta en vLLM |
 | Variante pointer de JevAny sobre el mismo backbone | Adaptador sobre base de ~4B | 262.144 tokens | Decision, cabeza aprendida sobre representaciones de opciones | no disponible | Mencionada en la model card; sin checkpoint publico en la informacion disponible |
 | Otros decision-models comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxinwei/JevAny-Qwen3.5-4B-Direct-Token-LoRA
+- Modelo en Hugging Face: https://huggingface.co/tianxinwei/JevAny-Qwen3.5-4B-Direct-Token-LoRA
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del proyecto JevAny: https://github.com/weitianxin/JevAny
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

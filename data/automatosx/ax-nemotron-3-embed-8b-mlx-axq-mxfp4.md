@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP4 | 7,95B (BPW medido 4,5374) | 262.144 tokens | MLX Safetensors | apache-2.0 | HuggingFace (23 descargas) |
-| nvidia/Nemotron-3-Embed-8B-BF16 (modelo base) | 7,95B en BF16 | 262.144 tokens | Safetensors BF16 | no disponible en la informacion | HuggingFace (NVIDIA) |
-| AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-4bit (sibling) | 7,95B (presupuesto 4bit) | 262.144 tokens | MLX Safetensors | apache-2.0 | HuggingFace |
-| AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-8bit (sibling) | 7,95B (presupuesto cercano a 8 BPW) | 262.144 tokens | MLX Safetensors | apache-2.0 | HuggingFace |
+| AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP4 | 7,95B (BPW medido 4,5374) | 262.144 tokens | MLX Safetensors | apache-2.0 | Hugging Face (23 descargas) |
+| nvidia/Nemotron-3-Embed-8B-BF16 (modelo base) | 7,95B en BF16 | 262.144 tokens | Safetensors BF16 | no disponible en la informacion | Hugging Face (NVIDIA) |
+| AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-4bit (sibling) | 7,95B (presupuesto 4bit) | 262.144 tokens | MLX Safetensors | apache-2.0 | Hugging Face |
+| AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-8bit (sibling) | 7,95B (presupuesto cercano a 8 BPW) | 262.144 tokens | MLX Safetensors | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas externas de la misma categoría; la comparativa se limita a las variantes del mismo modelo base. Para alternativas externas: no disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-8B-BF16
 - Sibling 4bit: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-4bit
 - Sibling 8bit: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-MLX-AXQ-8bit

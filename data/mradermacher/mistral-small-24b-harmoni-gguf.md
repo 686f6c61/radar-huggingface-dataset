@@ -95,7 +95,7 @@ Nota: los datos de contexto y licencia de las alternativas se basan en conocimie
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/mistral-small-24b-harmoni-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/mistral-small-24b-harmoni-GGUF
 - Modelo base: https://huggingface.co/ssoni-harmoni/mistral-small-24b-harmoni
 - Pagina de descargas del autor: https://hf.tst.eu/model#mistral-small-24b-harmoni-GGUF
 - Repositorio de peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

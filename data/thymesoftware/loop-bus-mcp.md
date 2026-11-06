@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-bus es un servidor MCP (Model Context Protocol) local desarrollado por thymesoftware que permite que dos o más sesiones de agentes de IA deliberen entre sí como pares, mediante un protocolo por rondas y un registro append-only. No se trata de un modelo de lenguaje: es una pieza de infraestructura que orquesta la conversación entre agentes, sean cuales sean los modelos que los alimenten. El repositorio se publica bajo licencia Apache 2.0 y, en el momento de la consulta, acumula 0 descargas y 1 like en HuggingFace.
+loop-bus es un servidor MCP (Model Context Protocol) local desarrollado por thymesoftware que permite que dos o más sesiones de agentes de IA deliberen entre sí como pares, mediante un protocolo por rondas y un registro append-only. No se trata de un modelo de lenguaje: es una pieza de infraestructura que orquesta la conversación entre agentes, sean cuales sean los modelos que los alimenten. El repositorio se publica bajo licencia Apache 2.0 y, en el momento de la consulta, acumula 0 descargas y 1 like en Hugging Face.
 
 El sistema expone un único endpoint HTTP MCP en `http://127.0.0.1:8765/mcp` al que se conectan todos los agentes participantes. La deliberación sigue un protocolo de rondas fijo: `blind` → `critique` → `rebuttal` → `synthesis` → `experiment` → `closed`. Durante la fase `blind`, las herramientas de lectura ocultan los planes de los pares para el participante indicado, de modo que cada agente formula su propuesta sin ver la del resto.
 
@@ -88,7 +88,7 @@ No disponible. loop-bus no es un modelo de lenguaje, sino un servidor MCP de orq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thymesoftware/loop-bus-mcp
+- Hugging Face: https://huggingface.co/thymesoftware/loop-bus-mcp
 - README en japones (referenciado en la model card): `README.ja.md`
 - Guia de waking (referenciada en la model card): `WAKE.en.md`
 - Instalacion de Claude Code: https://code.claude.com/docs/en/quickstart

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Angela es un adaptador LoRA de generacion de imagen a partir de texto (text-to-image), publicado en HuggingFace por el usuario AiMamis. Se trata de un LoRA de personaje entrenado sobre el modelo base krea/Krea-2-Turbo, cuyo objetivo es reproducir de forma consistente una apariencia concreta: pelo negro con flequillo ligero, piel morena y ojos marrones, activada mediante la palabra clave "Angela" y tres descriptores adicionales.
+Angela es un adaptador LoRA de generacion de imagen a partir de texto (text-to-image), publicado en Hugging Face por el usuario AiMamis. Se trata de un LoRA de personaje entrenado sobre el modelo base krea/Krea-2-Turbo, cuyo objetivo es reproducir de forma consistente una apariencia concreta: pelo negro con flequillo ligero, piel morena y ojos marrones, activada mediante la palabra clave "Angela" y tres descriptores adicionales.
 
 El modelo no es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que modifica el comportamiento de un modelo de difusion subyacente. Por tanto, sus capacidades, requisitos de hardware y limitaciones estan condicionados casi por completo por Krea-2-Turbo, del cual hereda la arquitectura, la ventana de condicionamiento textual y el regimen de licencia adicional.
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Angela
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Angela
 - Descarga de archivos (pestaña Files & versions): https://huggingface.co/AiMamis/Angela/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio asociado: no disponible

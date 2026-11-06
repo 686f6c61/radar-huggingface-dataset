@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiangnanphysics/poolformer-finetuned | 24.832 | no disponible | no entrenado | bsd-3-clause | HuggingFace |
-| sail/poolformer_m48 (Sea AI Labs) | ~24 M | 224x224 px | ImageNet | apache-2.0 | HuggingFace |
+| jiangnanphysics/poolformer-finetuned | 24.832 | no disponible | no entrenado | bsd-3-clause | Hugging Face |
+| sail/poolformer_m48 (Sea AI Labs) | ~24 M | 224x224 px | ImageNet | apache-2.0 | Hugging Face |
 | PoolFormer original (GitHub sail-sg/poolformer) | varios (S12-M48) | 224x224 px | ImageNet | apache-2.0 | GitHub |
 
 La comparacion es desigual: el modelo de jiangnanphysics es un checkpoint de inicializacion sin entrenar, mientras que los modelos de Sea AI Labs son arquitecturas completas con pesos entrenados en ImageNet. No existe una equivalencia funcional directa.
@@ -69,14 +69,14 @@ La comparacion es desigual: el modelo de jiangnanphysics es un checkpoint de ini
 - Checkpoint no entrenado: los pesos son de inicializacion y no producen resultados utiles en tareas reales.
 - Sin auditoria de robustez, equidad ni transferencia de dominio, segun la propia model card.
 - Riesgo de alucinacion: no aplica al ser un modelo de vision sin generacion de texto.
-- Implementacion personalizada: las APIs genericas de HuggingFace no pueden cargar el modelo sin un adaptador explicito.
+- Implementacion personalizada: las APIs genericas de Hugging Face no pueden cargar el modelo sin un adaptador explicito.
 - Licencia bsd-3-clause: permite uso comercial, pero los terminos de los datos externos deben revisarse por separado si se entrena con conjuntos de datos propios.
 - No apto para produccion: cualquier resultado derivado de un entrenamiento futuro debe documentarse de forma independiente a los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiangnanphysics/poolformer-finetuned
+- Repositorio Hugging Face: https://huggingface.co/jiangnanphysics/poolformer-finetuned
 - Repositorio original de PoolFormer (Sea AI Labs): https://github.com/sail-sg/poolformer
-- Modelo PoolFormer M48 en HuggingFace: https://huggingface.co/sail/poolformer_m48
+- Modelo PoolFormer M48 en Hugging Face: https://huggingface.co/sail/poolformer_m48
 - Paper original (MetaFormer): https://arxiv.org/abs/2111.11418
 - Documentacion de PoolFormer en Transformers: https://huggingface.co/docs/transformers/v4.36.0/en/model_doc/poolformer

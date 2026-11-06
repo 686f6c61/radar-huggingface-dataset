@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AtmicReRanker es un cross-encoder de reordenación (reranking) para recuperación de información, publicado por el usuario SriRamanaAtmic en HuggingFace. Se trata de un fine-tune de castorini/monobert-large-msmarco, un modelo basado en la arquitectura BERT-large, con 335.143.938 parámetros totales y un repositorio de 1,3 GB en formato safetensors. Su función no es generar texto, sino puntuar la relevancia de un par consulta-pasaje y reordenar una lista de candidatos devuelta por un recuperador de primera etapa.
+AtmicReRanker es un cross-encoder de reordenación (reranking) para recuperación de información, publicado por el usuario SriRamanaAtmic en Hugging Face. Se trata de un fine-tune de castorini/monobert-large-msmarco, un modelo basado en la arquitectura BERT-large, con 335.143.938 parámetros totales y un repositorio de 1,3 GB en formato safetensors. Su función no es generar texto, sino puntuar la relevancia de un par consulta-pasaje y reordenar una lista de candidatos devuelta por un recuperador de primera etapa.
 
 El modelo se ha ajustado mediante un fine-tune pairwise ponderado con LambdaRank sobre un dataset combinado de Q&A de Ramana Maharshi (capas layer1 + layer2), con una longitud máxima de secuencia de 512 tokens. Está etiquetado como `text-classification` con `num_labels=2`, de modo que la salida son dos logits por par: la diferencia entre ellos (o el softmax sobre la clase positiva) se usa como puntuación de relevancia.
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SriRamanaAtmic/AtmicReRanker
+- Modelo en Hugging Face: https://huggingface.co/SriRamanaAtmic/AtmicReRanker
 - Modelo base (castorini/monobert-large-msmarco): https://huggingface.co/castorini/monobert-large-msmarco
 - Repositorio anterior de referencia (bge-reranker-base, mencionado en la model card como versión previa del checkout): no se proporciona enlace directo en la información disponible.
 - Paper, blog o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

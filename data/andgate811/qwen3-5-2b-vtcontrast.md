@@ -77,7 +77,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AndGate811/Qwen3.5-2B-VTContrast
+- Hugging Face: https://huggingface.co/AndGate811/Qwen3.5-2B-VTContrast
 - Documentación del modelo base Qwen3.5-2B (Qualcomm AI Hub): https://aihub.qualcomm.com/models/qwen3_5_2b
 - Página de Qwen3.5-2B en CanIRun.ai: https://www.canirun.ai/model/qwen3.5-2b
 - Qwen3.5-2B en There's An AI For That: https://theresanaiforthat.com/model/qwen3-5-2b/

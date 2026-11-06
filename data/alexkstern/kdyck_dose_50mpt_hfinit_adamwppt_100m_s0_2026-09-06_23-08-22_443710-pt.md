@@ -75,7 +75,7 @@ No disponible. En el perfil del autor existen otros checkpoints de la misma seri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_100M_s0_2026-09-06_23-08-22_443710-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_100M_s0_2026-09-06_23-08-22_443710-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/oz9se4jg
 - Checkpoint relacionado (5M s0): https://huggingface.co/alexkstern/kdyck_dose_50Mpt_5M_s0_2026-08-14_22-47-17_388269-pt

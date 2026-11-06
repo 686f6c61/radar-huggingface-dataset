@@ -2,7 +2,7 @@
 
 ## Resumen
 
-2DC/SmolVLA_test es un checkpoint de robótica del tipo vision-language-action (VLA) publicado en HuggingFace Hub por el usuario 2DC. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, la implementación de referencia de SmolVLA dentro del framework LeRobot de Hugging Face. El modelo consume dos cámaras RGB de 256x256 píxeles más el estado del robot (vector de 8 dimensiones) y produce un vector de acción de 7 dimensiones, siguiendo el esquema de imitación supervisada que emplea LeRobot para políticas robóticas.
+2DC/SmolVLA_test es un checkpoint de robótica del tipo vision-language-action (VLA) publicado en Hugging Face Hub por el usuario 2DC. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, la implementación de referencia de SmolVLA dentro del framework LeRobot de Hugging Face. El modelo consume dos cámaras RGB de 256x256 píxeles más el estado del robot (vector de 8 dimensiones) y produce un vector de acción de 7 dimensiones, siguiendo el esquema de imitación supervisada que emplea LeRobot para políticas robóticas.
 
 El interés de este repositorio no está en el modelo en sí, sino en su naturaleza experimental: el autor lo ha entrenado durante solo 20 pasos con batch de 32 sobre el dataset lerobot/libero (1693 episodios, 273.465 frames a 10 FPS), lo que sitúa el resultado en la categoría de prueba técnica más que de política utilizable. El modelo base, en cambio, es relevante porque SmolVLA es una apuesta por VLA compactos (450 millones de parámetros) desplegables en hardware de consumo, frente a alternativas de varios miles de millones de parámetros.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2DC/SmolVLA_test | 450.046.176 | 3 cámaras + estado (8,); sin contexto textual variable | No disponible (20 pasos de entrenamiento) | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | 450 M (misma arquitectura, dato no confirmado en la información disponible) | Mismas features de observación | No disponible en la información proporcionada | Apache 2.0 | HuggingFace (modelo base oficial de LeRobot) |
+| 2DC/SmolVLA_test | 450.046.176 | 3 cámaras + estado (8,); sin contexto textual variable | No disponible (20 pasos de entrenamiento) | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | 450 M (misma arquitectura, dato no confirmado en la información disponible) | Mismas features de observación | No disponible en la información proporcionada | Apache 2.0 | Hugging Face (modelo base oficial de LeRobot) |
 | Otras políticas de LeRobot (ACT, Diffusion Policy, pi0) | No disponible | No disponible | No disponible | No disponible | Disponibles en el ecosistema LeRobot, pero sin datos verificados en esta búsqueda |
 
 La comparación relevante es con el modelo base: este checkpoint comparte arquitectura, tamaño y licencia, y solo difiere en el ajuste sobre lerobot/libero con 20 pasos. Cualquier comparación cuantitativa con alternativas exige consultar el artículo de SmolVLA y los repositorios de LeRobot, fuera del alcance de la información disponible.
@@ -91,7 +91,7 @@ La comparación relevante es con el modelo base: este checkpoint comparte arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2DC/SmolVLA_test
+- Modelo en Hugging Face: https://huggingface.co/2DC/SmolVLA_test
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Artículo SmolVLA (arXiv): https://arxiv.org/pdf/2506.01844v1
 - Entrada arXiv: https://huggingface.co/papers/2506.01844

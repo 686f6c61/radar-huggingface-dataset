@@ -69,9 +69,9 @@ La accuracy se define como la precisión por palabra en el etiquetado sobre el s
 
 | Modelo | Parámetros | Contexto | Accuracy test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse/model2vec-multilingual-attention | 15,76 M | no disponible | 98,59 % | MIT | HuggingFace |
-| Otros parsers de deepparse (p. ej. FastText, BPEmb) | no disponible | no disponible | no disponible | MIT | HuggingFace (deepparse) |
-| Modelos genéricos de NER (p. ej. spaCy multilingual) | no disponible | no disponible | no disponible | MIT / Apache 2.0 según modelo | HuggingFace / spaCy |
+| deepparse/model2vec-multilingual-attention | 15,76 M | no disponible | 98,59 % | MIT | Hugging Face |
+| Otros parsers de deepparse (p. ej. FastText, BPEmb) | no disponible | no disponible | no disponible | MIT | Hugging Face (deepparse) |
+| Modelos genéricos de NER (p. ej. spaCy multilingual) | no disponible | no disponible | no disponible | MIT / Apache 2.0 según modelo | Hugging Face / spaCy |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada; la comparativa con otros parsers de la propia familia deepparse queda como referencia cualitativa, no numérica.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/deepparse/model2vec-multilingual-attention)
+- [Modelo en Hugging Face](https://huggingface.co/deepparse/model2vec-multilingual-attention)
 - [Documentación de deepparse](https://deepparse.org)
 - [Dataset worldwide-addresses](https://huggingface.co/datasets/deepparse/worldwide-addresses)
 - [Embeddings minishlab/potion-multilingual-128M](https://huggingface.co/minishlab/potion-multilingual-128M)

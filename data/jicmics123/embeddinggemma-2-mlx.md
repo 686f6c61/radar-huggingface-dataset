@@ -98,7 +98,7 @@ La información proporcionada solo permite comparar con el modelo base. No hay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jicmics123/embeddinggemma-2-mlx
+- Modelo en Hugging Face: https://huggingface.co/jicmics123/embeddinggemma-2-mlx
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Aplicación Einso: https://einso.app
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

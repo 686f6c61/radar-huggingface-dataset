@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Idiomas | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Melazeetek/dsn-2026-lid-candidate-d` | 94,57 M | 3 declarados (`yo`, `ig`, `ha`), hasta 13 según la model card | ~10 s por ventana (configuración wav2vec2-base) | Apache 2.0 | HuggingFace, 0 descargas, sin métricas |
+| `Melazeetek/dsn-2026-lid-candidate-d` | 94,57 M | 3 declarados (`yo`, `ig`, `ha`), hasta 13 según la model card | ~10 s por ventana (configuración wav2vec2-base) | Apache 2.0 | Hugging Face, 0 descargas, sin métricas |
 | `facebook/mms-lid-126` | ~315 M (aproximado, no verificado en esta búsqueda) | 126 idiomas, incluye varias lenguas africanas | ventanas cortas de audio a 16 kHz | CC-BY-NC 4.0 (no comercial) | Ampliamente utilizado, con documentación y métricas publicadas por Meta |
-| `speechbrain/lang-id-voxlingua107-ecapa` | ~20 M (aproximado, no verificado en esta búsqueda) | 107 idiomas (VoxLingua107) | ventanas de audio, arquitectura ECAPA-TDNN | Apache 2.0 | Disponible en HuggingFace, integrado en SpeechBrain |
-| `TalTechNLP/voxlingua107-xls-r-300m-wav2vec` | ~300 M (aproximado, no verificado en esta búsqueda) | 107 idiomas | ventanas de audio, XLS-R wav2vec2 | Apache 2.0 | Disponible en HuggingFace con métricas publicadas |
+| `speechbrain/lang-id-voxlingua107-ecapa` | ~20 M (aproximado, no verificado en esta búsqueda) | 107 idiomas (VoxLingua107) | ventanas de audio, arquitectura ECAPA-TDNN | Apache 2.0 | Disponible en Hugging Face, integrado en SpeechBrain |
+| `TalTechNLP/voxlingua107-xls-r-300m-wav2vec` | ~300 M (aproximado, no verificado en esta búsqueda) | 107 idiomas | ventanas de audio, XLS-R wav2vec2 | Apache 2.0 | Disponible en Hugging Face con métricas publicadas |
 
 El modelo aquí descrito es el más pequeño y el más especializado en lenguas nigerianas, pero también el único de la comparativa sin métricas ni documentación de entrenamiento. Para producción multilingüe general, las alternativas con licencia permisiva y evaluación publicada ofrecen más garantías; para yoruba, igbo y hausa en concreto, no hay datos que permitan afirmar superioridad frente a un modelo multilingüe grande.
 
@@ -89,7 +89,7 @@ El modelo aquí descrito es el más pequeño y el más especializado en lenguas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Melazeetek/dsn-2026-lid-candidate-d
+- Modelo en Hugging Face: https://huggingface.co/Melazeetek/dsn-2026-lid-candidate-d
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base
 - Paper de wav2vec 2.0 (Baevski et al., 2020): no enlazado en la información proporcionada; referencia habitual https://arxiv.org/abs/2006.11477
 - Repositorio o demo de la competición DSN 2026: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beit-matching es un repositorio de investigación publicado por el usuario buffalogenomics en HuggingFace. Se trata de un prototipo de arquitectura Beit orientado a una tarea genérica de "matching", distribuido como punto de partida reproducible y no como un modelo entrenado. El propio autor indica explícitamente en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+Beit-matching es un repositorio de investigación publicado por el usuario buffalogenomics en Hugging Face. Se trata de un prototipo de arquitectura Beit orientado a una tarea genérica de "matching", distribuido como punto de partida reproducible y no como un modelo entrenado. El propio autor indica explícitamente en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El modelo es de escala "tiny" y contiene 49.600 parámetros reales, según los metadatos de safetensors. Esta cifra es varios órdenes de magnitud inferior a la de cualquier transformer de propósito general, lo que confirma que se trata de un esqueleto de código para validar el pipeline de entrenamiento e inferencia, no de un artefacto listo para producción.
 
@@ -65,7 +65,7 @@ Dado que se trata de un checkpoint de inicialización sin entrenar, los casos de
 - Desarrollo de adaptadores de carga: permite implementar y probar el adaptador explícito que el autor indica como necesario para usar APIs automáticas de carga.
 - Benchmarking de arquitecturas de matching: con la debida financiación, puede usarse como punto de partida para entrenar y comparar variantes de co attention y atención dispersa frente a un baseline de capacidad equivalente.
 - Reproducción académica: útil para replicar experimentos sobre Beit aplicado a emparejamiento, respetando la recomendación del autor de reportar métricas sobre al menos tres semillas.
-- Docencia: por su tamaño y su documentación mínima, sirve como ejemplo didáctico de estructura de repositorio de modelo en HuggingFace con safetensors.
+- Docencia: por su tamaño y su documentación mínima, sirve como ejemplo didáctico de estructura de repositorio de modelo en Hugging Face con safetensors.
 
 ## Benchmarks y rendimiento
 

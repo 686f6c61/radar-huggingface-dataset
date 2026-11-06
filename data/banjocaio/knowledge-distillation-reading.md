@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`banjocaio/knowledge-distillation-reading` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (*knowledge distillation*) publicado por el usuario `banjocaio` en HuggingFace. La model card lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, los posibles factores de confusión (*confounders*), una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad, antes de reportar cualquier resultado.
+`banjocaio/knowledge-distillation-reading` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre destilación de conocimiento (*knowledge distillation*) publicado por el usuario `banjocaio` en Hugging Face. La model card lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, los posibles factores de confusión (*confounders*), una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad, antes de reportar cualquier resultado.
 
-El autor indica de forma literal que la nota «no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado». Los artefactos declarados son dos ficheros de texto (`summary.md` y `README.md`). No obstante, los metadatos de HuggingFace registran pesos en formato `safetensors` con un total de 24.832 parámetros, una cifra que no se corresponde con ningún transformer funcional y para la que no se ofrece explicación en la documentación.
+El autor indica de forma literal que la nota «no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado». Los artefactos declarados son dos ficheros de texto (`summary.md` y `README.md`). No obstante, los metadatos de Hugging Face registran pesos en formato `safetensors` con un total de 24.832 parámetros, una cifra que no se corresponde con ningún transformer funcional y para la que no se ofrece explicación en la documentación.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de protocolo experimental para quien trabaje en destilación de conocimiento, no como componente desplegable en producción. El repositorio acumula 0 descargas y 0 *likes*, y no cuenta con validación de la comunidad.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio lleva la etiqueta `transformer` de HuggingFace, pero no se documenta ninguna arquitectura) |
+| Arquitectura | no disponible (el repositorio lleva la etiqueta `transformer` de Hugging Face, pero no se documenta ninguna arquitectura) |
 | Parametros totales | 24.832 (según el recuento real de `safetensors` del repositorio) |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura. La model card no describe capas, atención, tipo de red ni configuración alguna, y el autor declara que no existe un checkpoint entrenado asociado al repositorio. La única señal al respecto es la etiqueta `transformer` que HuggingFace asigna al repositorio, insuficiente para inferir una arquitectura concreta.
+No se dispone de información sobre arquitectura. La model card no describe capas, atención, tipo de red ni configuración alguna, y el autor declara que no existe un checkpoint entrenado asociado al repositorio. La única señal al respecto es la etiqueta `transformer` que Hugging Face asigna al repositorio, insuficiente para inferir una arquitectura concreta.
 
 Tampoco hay datos de entrenamiento: no se indica número de tokens, composición del dataset, ni uso de RLHF, DPO u otra técnica de alineamiento. El contenido del repositorio es una nota de investigación que enumera el alcance de la pregunta, los factores de confusión probables, las comprobaciones de reproducibilidad, los modos de fallo y las preguntas abiertas. El propio autor advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -79,5 +79,5 @@ No disponible. Este repositorio no es un modelo entrenado y no pertenece a ningu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/banjocaio/knowledge-distillation-reading
+- Hugging Face: https://huggingface.co/banjocaio/knowledge-distillation-reading
 - No se dispone de otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

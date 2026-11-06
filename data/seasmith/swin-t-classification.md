@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEASMITH/swin-t-classification es un repositorio de HuggingFace publicado por el usuario SEASMITH que contiene un esqueleto de código experimental para clasificación basado en la arquitectura Swin Transformer (variante denominada Swin T). Según la propia model card, se trata de una base de código con un punto de entrada ejecutable (`finetune.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El repositorio no presenta el modelo como un modelo entrenado ni como un checkpoint con resultados de referencia.
+SEASMITH/swin-t-classification es un repositorio de Hugging Face publicado por el usuario SEASMITH que contiene un esqueleto de código experimental para clasificación basado en la arquitectura Swin Transformer (variante denominada Swin T). Según la propia model card, se trata de una base de código con un punto de entrada ejecutable (`finetune.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). El repositorio no presenta el modelo como un modelo entrenado ni como un checkpoint con resultados de referencia.
 
 El peso incluido (`model.safetensors`) se describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo entrenado. Esto se refleja en el recuento real de parámetros del fichero safetensors: 16.576 parámetros totales, una cifra incomparable con cualquier Swin Transformer operativo y coherente con una inicialización mínima o parcial. Existe además una discrepancia interna en la documentación, que declara la escala como "giant" mientras que el identificador del repositorio y las etiquetas indican "swin-t".
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y de carácter instrumental: sirve como plantil
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa de rendimiento fiable porque el modelo 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEASMITH/swin-t-classification | 16.576 (checkpoint de inicialización) | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, sin descargas registradas |
+| SEASMITH/swin-t-classification | 16.576 (checkpoint de inicialización) | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, sin descargas registradas |
 | Swin Transformer original (Microsoft) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorios oficiales del autor original |
 | Otras alternativas de clasificación (ViT, ConvNeXt, EfficientNet) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -84,6 +84,6 @@ No se dispone de datos verificados en la información proporcionada para complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SEASMITH/swin-t-classification
+- Modelo en Hugging Face: https://huggingface.co/SEASMITH/swin-t-classification
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo. Las búsquedas devolvieron exclusivamente resultados sobre elecciones primarias de California de 2026 (NBC News, AP News y el Secretario de Estado de California), sin relación alguna con el repositorio.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

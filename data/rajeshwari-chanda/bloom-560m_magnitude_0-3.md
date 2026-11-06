@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rajeshwari-Chanda/bloom-560m_magnitude_0.3 es un checkpoint de generacion de texto publicado en HuggingFace por el usuario Rajeshwari-Chanda, derivado de la familia BLOOM. El recuento real de parametros segun safetensors es de 559.214.592, practicamente identico al de bigscience/bloom-560m, lo que indica que no se ha reducido el numero de tensores del modelo base. El sufijo "magnitude_0.3" sugiere un experimento de poda por magnitud con una tasa de esparcimiento del 30 por ciento, aunque la model card no confirma este extremo.
+Rajeshwari-Chanda/bloom-560m_magnitude_0.3 es un checkpoint de generacion de texto publicado en Hugging Face por el usuario Rajeshwari-Chanda, derivado de la familia BLOOM. El recuento real de parametros segun safetensors es de 559.214.592, practicamente identico al de bigscience/bloom-560m, lo que indica que no se ha reducido el numero de tensores del modelo base. El sufijo "magnitude_0.3" sugiere un experimento de poda por magnitud con una tasa de esparcimiento del 30 por ciento, aunque la model card no confirma este extremo.
 
 Se trata de un modelo pequeno, decoder-only, orientado a generacion de texto, con licencia e idiomas no declarados por el autor. La model card es la plantilla autogenerada de transformers y no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni procedencia exacta del checkpoint base, por lo que la mayor parte de los campos tecnicos quedan como "no disponible".
 
@@ -26,7 +26,7 @@ Su relevancia es principalmente academica y de investigacion: sirve como punto d
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de BLOOM-560m: un transformer causal (decoder-only) con embeddings posicionales ALiBi, 24 capas, 16 cabezas de atencion, dimension oculta de 1024 y un vocabulario de 250.880 tokens. Estas cifras corresponden al modelo base de la familia y no estan verificadas en la model card del derivado, que se limita a la plantilla autogenerada de HuggingFace.
+La arquitectura subyacente es la de BLOOM-560m: un transformer causal (decoder-only) con embeddings posicionales ALiBi, 24 capas, 16 cabezas de atencion, dimension oculta de 1024 y un vocabulario de 250.880 tokens. Estas cifras corresponden al modelo base de la familia y no estan verificadas en la model card del derivado, que se limita a la plantilla autogenerada de Hugging Face.
 
 No hay informacion sobre el procedimiento de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de RLHF o DPO. El tag arxiv:1910.09700 incluido en el modelo apunta al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la seccion Environmental Impact de la plantilla, y no a un paper de entrenamiento del modelo. Tampoco se detalla la tecnica exacta aplicada bajo el nombre "magnitude_0.3", ni si la poda se ha materializado en los tensores o solo se ha registrado como metadato.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rajeshwari-Chanda/bloom-560m_magnitude_0.3 | 559.214.592 | No confirmado (referencia: 2048) | No disponible | HuggingFace, 0 descargas |
-| bigscience/bloom-560m | 559.214.592 | 2048 | bigscience-bloom-rail-1.0 | HuggingFace, ampliamente utilizado |
-| EleutherAI/pythia-410m | 410.000.000 aprox. | 2048 | Apache-2.0 | HuggingFace |
-| TinyLlama/TinyLlama-1.1B | 1.100.000.000 aprox. | 2048 | Apache-2.0 | HuggingFace |
+| Rajeshwari-Chanda/bloom-560m_magnitude_0.3 | 559.214.592 | No confirmado (referencia: 2048) | No disponible | Hugging Face, 0 descargas |
+| bigscience/bloom-560m | 559.214.592 | 2048 | bigscience-bloom-rail-1.0 | Hugging Face, ampliamente utilizado |
+| EleutherAI/pythia-410m | 410.000.000 aprox. | 2048 | Apache-2.0 | Hugging Face |
+| TinyLlama/TinyLlama-1.1B | 1.100.000.000 aprox. | 2048 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a tamano, contexto y licencia porque no hay resultados de benchmarks publicados para el modelo objeto de esta ficha ni una evaluacion homogenea con las alternativas.
 
@@ -91,7 +91,7 @@ La comparativa se limita a tamano, contexto y licencia porque no hay resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.3
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.3
 - Paper citado en los tags (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Modelo base de referencia: https://huggingface.co/bigscience/bloom-560m

@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-6Bit
+- Repositorio en Hugging Face: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-6Bit
 - Modelo base: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
 - Libreria de conversion e inferencia citada en la model card: mlx-lm (version 0.31.3)
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

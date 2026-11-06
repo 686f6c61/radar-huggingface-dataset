@@ -95,7 +95,7 @@ Los datos de las filas alternativas proceden de la documentacion publica de esos
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/RPBizkitRemiX-v3-12B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/RPBizkitRemiX-v3-12B-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v3-12B
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#RPBizkitRemiX-v3-12B-GGUF
 - Solicitudes de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests

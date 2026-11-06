@@ -82,7 +82,7 @@ El Gemma 4 E2B se distingue de sus competidores por su multimodalidad completa (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF
 - Colección Gemma 4 de Unsloth: https://huggingface.co/collections/unsloth/gemma-4
 - Documentación de Unsloth para Gemma 4: https://unsloth.ai/docs/models/gemma-4
 - Guía de fine-tuning con Unsloth: https://unsloth.ai/docs/models/gemma-4/train
@@ -90,5 +90,5 @@ El Gemma 4 E2B se distingue de sus competidores por su multimodalidad completa (
 - Documentación oficial de Gemma: https://ai.google.dev/gemma/docs/core
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
 - Guía de GGUF dinámicos de Unsloth: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

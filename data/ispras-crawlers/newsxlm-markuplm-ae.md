@@ -86,9 +86,9 @@ La comparación directa con alternativas de la misma categoría (por ejemplo, ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ispras-crawlers/newsxlm-markuplm-ae
+- Modelo en Hugging Face: https://huggingface.co/ispras-crawlers/newsxlm-markuplm-ae
 - Modelo base: https://huggingface.co/microsoft/markuplm-base
 - Dataset NewsXLM: https://huggingface.co/datasets/ispras-crawlers/newsxlm
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
 - Paper (Proceedings of ISP RAS): https://ispranproceedings.elpub.ru/jour/article/view/2164/1961
 - DOI del paper: https://doi.org/10.15514/ISPRAS-2026-38(2)-10

@@ -77,7 +77,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyinhappy/klein-car-background-replace-lora
+- Modelo en Hugging Face: https://huggingface.co/happyinhappy/klein-car-background-replace-lora
 - Modelo de identidad y dimensiones (parte del pipeline): https://huggingface.co/happyinhappy/dinov3-car-id-dimensions
 - Modelo de restauración geométrica (etapa posterior): https://huggingface.co/happyinhappy/klein-car-geometry-restore-lora
 - Página del proyecto mashinki: https://happyin.work/mashinki/

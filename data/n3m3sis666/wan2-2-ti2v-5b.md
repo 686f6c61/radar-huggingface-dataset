@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Resolucion / FPS | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-TI2V-5B | 5B | 720P / 24 FPS | T2V + I2V | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-T2V-A14B | 14B (MoE, A14B) | 480P y 720P | T2V | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-I2V-A14B | 14B (MoE, A14B) | 480P y 720P | I2V | Apache 2.0 | HuggingFace, ModelScope |
+| Wan2.2-TI2V-5B | 5B | 720P / 24 FPS | T2V + I2V | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-T2V-A14B | 14B (MoE, A14B) | 480P y 720P | T2V | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-I2V-A14B | 14B (MoE, A14B) | 480P y 720P | I2V | Apache 2.0 | Hugging Face, ModelScope |
 
 La comparativa se limita a la propia familia Wan2.2, ya que la información disponible no incluye datos de rendimiento de modelos de terceros que permitan una comparación rigurosa.
 
@@ -83,10 +83,10 @@ La comparativa se limita a la propia familia Wan2.2, ya que la información disp
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/N3M3SIS666/Wan2.2-TI2V-5B
-- Repositorio oficial HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Repositorio Hugging Face (espejo): https://huggingface.co/N3M3SIS666/Wan2.2-TI2V-5B
+- Repositorio oficial Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - GitHub oficial: https://github.com/Wan-Video/Wan2.2
-- Organización en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización en Hugging Face: https://huggingface.co/Wan-AI/
 - ModelScope: https://modelscope.cn/organization/Wan-AI
 - Informe técnico (arXiv): https://arxiv.org/abs/2503.20314
 - Blog oficial: https://wan.video/welcome

@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-9k_10k_11k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-9k_10k_11k_merge
 - Paper de referencia del método linear merge: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Modelo relacionado (mismo autor, patrón similar): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_merge

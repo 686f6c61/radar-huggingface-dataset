@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjjlimaus/sn38-r3-2013-winner` es un modelo de generacion de texto publicado en HuggingFace por el usuario jjjlimaus, con 1.858.535.658 parametros (aproximadamente 1,86 mil millones) almacenados en formato safetensors y una licencia Apache 2.0. El repositorio ocupa 7,4 GB y el acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. La model card no aporta informacion sobre composicion del dataset, idiomas soportados ni proceso de entrenamiento.
+`jjjlimaus/sn38-r3-2013-winner` es un modelo de generacion de texto publicado en Hugging Face por el usuario jjjlimaus, con 1.858.535.658 parametros (aproximadamente 1,86 mil millones) almacenados en formato safetensors y una licencia Apache 2.0. El repositorio ocupa 7,4 GB y el acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La model card no aporta informacion sobre composicion del dataset, idiomas soportados ni proceso de entrenamiento.
 
 Las etiquetas del repositorio lo identifican como `ChronoGPT`, `chronollm`, `sn38`, `bittensor` y `year-cutoff`, ademas de declararlo ganador de una ronda (`r3`) de la subnet 38. Esto apunta a un modelo entrenado en el contexto de una competicion de minería sobre la red Bittensor, con algun tipo de restriccion temporal en su conocimiento (cutoff por ano), pero no hay documentacion publica que confirme los detalles de esa restriccion ni del procedimiento de evaluacion.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy especifica: el modelo no cuenta con desca
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (libreria `transformers`) |
 | Tamano del repositorio | 7,4 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
 
@@ -68,7 +68,7 @@ No hay datos de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evalua
 - Cabe en GPU de consumo: si, en modelos como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. En GPUs de 6-8 GB (RTX 3050, RTX 4060) es probable que funcione con cuantizacion INT8 o INT4, aunque no esta verificado.
 - Opciones de despliegue: `transformers` de forma nativa (es la libreria declarada); vLLM y TGI son viables para servir el modelo si la arquitectura es un transformer decoder estandar, aunque no estan confirmados como soportados; llama.cpp y Ollama requeririan convertir previamente los pesos safetensors a GGUF, conversion no disponible en el repositorio.
 - Latencia y throughput estimados: no disponibles.
-- Nota operativa: al ser un repositorio gated, el pipeline de descarga debe incluir autenticacion con un token de HuggingFace que tenga aceptada la licencia.
+- Nota operativa: al ser un repositorio gated, el pipeline de descarga debe incluir autenticacion con un token de Hugging Face que tenga aceptada la licencia.
 
 ## Comparativa con modelos similares
 
@@ -90,5 +90,5 @@ Los resultados de busqueda consultados no permiten identificar modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/sn38-r3-2013-winner
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/sn38-r3-2013-winner
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo. Las consultas devolvieron unicamente resultados no relacionados con plataformas educativas de terceros.

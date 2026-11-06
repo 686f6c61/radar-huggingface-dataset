@@ -53,16 +53,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. El tamaño del repositorio es 0,7 GB y el modelo tiene 772 millones de parámetros, lo que sugiere que una cuantización 4-bit podría caber en aproximadamente 1-2 GB de VRAM, pero no hay datos oficiales de cuantización.
 - GPU recomendadas: no disponibles en la documentación. Por tamaño, cualquier GPU moderna con al menos 4 GB de VRAM debería poder ejecutarlo, pero no hay confirmación oficial.
 - Cabe en consumer GPU: probablemente sí, en GPUs de consumo con 4 GB o más, dado el tamaño del modelo y del repositorio.
-- Opciones de despliegue: llama.cpp y Ollama (formato GGUF); vLLM y TGI no están confirmados en la documentación. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama (formato GGUF); vLLM y TGI no están confirmados en la documentación. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros activos | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Satella-0.8B | 772.845.888 | No aplica (no MoE) | No disponible | No disponible | Other | HuggingFace |
-| Satella-30B-A3B | 30B | 3B (A3B) | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
+| Satella-0.8B | 772.845.888 | No aplica (no MoE) | No disponible | No disponible | Other | Hugging Face |
+| Satella-30B-A3B | 30B | 3B (A3B) | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
 
 No se dispone de más alternativas de la misma categoría en la información proporcionada.
 

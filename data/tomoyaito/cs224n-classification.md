@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomoyaito/cs224n-classification` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo **Mixer** (MLP-Mixer) orientada a tareas de **clasificacion**. Lo publica el usuario tomoyaito, presumiblemente en el contexto del curso CS224N, y la model card lo describe explicitamente como un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como una version preentrenada lista para produccion.
+`tomoyaito/cs224n-classification` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo **Mixer** (MLP-Mixer) orientada a tareas de **clasificacion**. Lo publica el usuario tomoyaito, presumiblemente en el contexto del curso CS224N, y la model card lo describe explicitamente como un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como una version preentrenada lista para produccion.
 
 El dato mas relevante es su escala real: el checkpoint en safetensors contiene **16.576 parametros totales**, una cifra minuscula que contradice la etiqueta "huge" de la configuracion generada. Ademas, el propio autor aclara que `model.safetensors` es una **inicializacion valida para pruebas**, no un checkpoint entrenado ni evaluado, y que no se reclama ninguna puntuacion de benchmark. No hay pipeline declarado, ni idiomas declarados, ni resultados publicados.
 
@@ -26,7 +26,7 @@ Su relevancia es, por tanto, didactica y de infraestructura: sirve como esquelet
 | Tamano del repositorio | 0,0 GB (redondeado) |
 | Descargas | 0 |
 | Likes | 0 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tomoyaito/cs224n-classification | Mixer (MLP-Mixer) | 16.576 | no disponible | no (checkpoint de inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
+| tomoyaito/cs224n-classification | Mixer (MLP-Mixer) | 16.576 | no disponible | no (checkpoint de inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
 | MLP-Mixer (Google Research) | MLP-Mixer | no disponible en esta informacion | no disponible | si (pesos preentrenados publicados) | no disponible en esta informacion | repositorio de investigacion |
 | gMLP (Google Research) | MLP con gating | no disponible en esta informacion | no disponible | si | no disponible en esta informacion | repositorio de investigacion |
 | ResMLP (Meta AI) | MLP residual | no disponible en esta informacion | no disponible | si | no disponible en esta informacion | repositorio de investigacion |
@@ -87,13 +87,13 @@ No se dispone de cifras verificadas de parametros, contexto ni rendimiento de la
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe el riesgo de interpretar el repositorio como un modelo funcional cuando es un andamiaje de codigo.
 - La etiqueta "huge" de la configuracion no se corresponde con los 16.576 parametros reales; conviene tratarla como un valor nominal de la config generada, no como una descripcion de capacidad.
 - Sin longitud de contexto, idiomas, tipos de cuantizacion ni pipeline declarados: cualquier integracion requiere inspeccionar `config.json` e `inference.py`.
-- Requiere un adaptador explicito para que las APIs de carga automatica de HuggingFace funcionen, al tratarse de una implementacion propia.
+- Requiere un adaptador explicito para que las APIs de carga automatica de Hugging Face funcionen, al tratarse de una implementacion propia.
 - Licencia apache-2.0, permisiva para uso comercial, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse de forma separada a los valores por defecto de este repositorio.
 - Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad y sin garantia de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomoyaito/cs224n-classification
+- Modelo en Hugging Face: https://huggingface.co/tomoyaito/cs224n-classification
 - Model card del autor: incluida en la pagina anterior (secciones Overview, Architecture, Evaluation guidance, Limitations, Files, License)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las busquedas devolvieron unicamente paginas de descarga de software sin relacion con el repositorio.

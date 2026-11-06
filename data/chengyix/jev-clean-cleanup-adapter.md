@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-clean-cleanup-adapter | 75.278.337 | no disponible | Clasificacion de recursos de disco en macOS | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| aac6fef/laya-mlx (base) | no disponible | no disponible | Modelo base del port MLX de Laya | no disponible en la informacion | HuggingFace |
+| jev-clean-cleanup-adapter | 75.278.337 | no disponible | Clasificacion de recursos de disco en macOS | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| aac6fef/laya-mlx (base) | no disponible | no disponible | Modelo base del port MLX de Laya | no disponible en la informacion | Hugging Face |
 | Laya (Convai Innovations) | no disponible | no disponible | Modelo original del que deriva el base | Apache-2.0 (segun atribucion del adaptador) | no disponible en la informacion |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChengyiX/jev-clean-cleanup-adapter
+- Hugging Face: https://huggingface.co/ChengyiX/jev-clean-cleanup-adapter
 - Modelo base: https://huggingface.co/aac6fef/laya-mlx
 - Repositorio de la aplicacion: https://github.com/chengyixu/jev-clean
 - Documentacion de metodos y limitaciones: https://github.com/chengyixu/jev-clean/blob/main/docs/POSTTRAINING-PARITY.md

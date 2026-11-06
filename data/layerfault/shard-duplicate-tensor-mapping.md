@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LayerFault/shard-duplicate-tensor-mapping` es un artefacto sintético de prueba de seguridad, no un modelo de IA utilizable. Forma parte del corpus LayerFault, un conjunto de datos diseñado para validar escáneres de seguridad de modelos y repositorios de HuggingFace. Su propósito es ejercitar reglas de detección relacionadas con el mapeo duplicado de tensores en shards (archivos fragmentados de pesos), simulando características adversarias como opcodes de pickle sospechosos, contrabando de formatos ejecutables o cadenas de inyección de prompts.
+`LayerFault/shard-duplicate-tensor-mapping` es un artefacto sintético de prueba de seguridad, no un modelo de IA utilizable. Forma parte del corpus LayerFault, un conjunto de datos diseñado para validar escáneres de seguridad de modelos y repositorios de Hugging Face. Su propósito es ejercitar reglas de detección relacionadas con el mapeo duplicado de tensores en shards (archivos fragmentados de pesos), simulando características adversarias como opcodes de pickle sospechosos, contrabando de formatos ejecutables o cadenas de inyección de prompts.
 
 El repositorio contiene únicamente un tensor de 16 parámetros en formato safetensors, sin arquitectura definida, sin pipeline y sin idiomas. La model card lo declara explícitamente como un "artefacto de prueba de seguridad" que no debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas de escáner. Fue creado el 21 de agosto de 2026 por el autor LayerFault, con licencia Apache-2.0 y acceso restringido (gated auto).
 
@@ -35,7 +35,7 @@ No se trata de un modelo entrenado. No existe arquitectura transformer, MoE, SSM
 
 ## Casos de uso
 
-- Validación de escáneres de seguridad: se usa como entrada para probar que un detector de HuggingFace o herramientas como Layerfault identifican correctamente el mapeo duplicado de tensores en shards.
+- Validación de escáneres de seguridad: se usa como entrada para probar que un detector de Hugging Face o herramientas como Layerfault identifican correctamente el mapeo duplicado de tensores en shards.
 - Control positivo en pipelines de admisión de modelos: permite verificar que el escáner no produce falsos negativos en este tipo de ataque estructural.
 - Pruebas de robustez de herramientas de análisis estático: sirve para evaluar si un analizador de metadatos de safetensors detecta inconsistencias en el número de tensores o en las referencias entre shards.
 - Investigación en seguridad de modelos: se utiliza como ejemplo de artefacto malicioso en entornos de investigación sobre ataques a modelos de IA.

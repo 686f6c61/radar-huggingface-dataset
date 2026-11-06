@@ -96,10 +96,10 @@ No se han publicado en la informacion disponible resultados comparativos de este
 
 | Modelo | Parametros | Contexto/entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Canary 1B Flash (este, GGUF) | 890 M | Audio 16 kHz mono, offline | EN, DE, ES, FR | CC-BY-4.0 | GGUF en HuggingFace via transcribe.cpp |
-| nvidia/canary-1b-flash (original) | 883 M | Audio 16 kHz mono, offline | EN, DE, ES, FR | CC-BY-4.0 | Pesos NeMo en HuggingFace |
-| nvidia/canary-1b-v2 | no disponible en la informacion | Audio, soporta marcas de tiempo mejoradas | 25 idiomas europeos | no disponible en la informacion | HuggingFace |
-| OpenAI Whisper (familia) | 39 M - 1,55 B (segun variante) | Audio, offline | Multilingue (99 idiomas) | MIT (variantes abiertas) | HuggingFace, multiples runtimes |
+| Canary 1B Flash (este, GGUF) | 890 M | Audio 16 kHz mono, offline | EN, DE, ES, FR | CC-BY-4.0 | GGUF en Hugging Face via transcribe.cpp |
+| nvidia/canary-1b-flash (original) | 883 M | Audio 16 kHz mono, offline | EN, DE, ES, FR | CC-BY-4.0 | Pesos NeMo en Hugging Face |
+| nvidia/canary-1b-v2 | no disponible en la informacion | Audio, soporta marcas de tiempo mejoradas | 25 idiomas europeos | no disponible en la informacion | Hugging Face |
+| OpenAI Whisper (familia) | 39 M - 1,55 B (segun variante) | Audio, offline | Multilingue (99 idiomas) | MIT (variantes abiertas) | Hugging Face, multiples runtimes |
 
 La informacion proporcionada no incluye datos de rendimiento de estos modelos alternativos en los mismos benchmarks, por lo que no es posible establecer una comparacion cuantitativa directa. La ventaja principal de este port frente a otros runtimes es la disponibilidad en GGUF con seis niveles de cuantizacion y soporte nativo en `transcribe.cpp`.
 
@@ -118,7 +118,7 @@ La informacion proporcionada no incluye datos de rendimiento de estos modelos al
 
 ## Enlaces
 
-- Repositorio HuggingFace del port GGUF: https://huggingface.co/myflow-ai/canary-1b-flash-gguf
+- Repositorio Hugging Face del port GGUF: https://huggingface.co/myflow-ai/canary-1b-flash-gguf
 - Modelo base: https://huggingface.co/nvidia/canary-1b-flash
 - Commit upstream fijado (a9a55e0): https://huggingface.co/nvidia/canary-1b-flash/commit/a9a55e0
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

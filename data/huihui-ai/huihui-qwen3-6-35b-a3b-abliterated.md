@@ -76,7 +76,7 @@ No se dispone de comparativas con modelos de tamano similar fuera de la familia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
+- Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Version en Ollama: https://ollama.com/huihui_ai/qwen3.6-abliterated:35b

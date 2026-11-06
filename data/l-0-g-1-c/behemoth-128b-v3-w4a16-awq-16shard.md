@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Behemoth-128B-v3-W4A16-AWQ-16shard es una cuantizacion AWQ (4-bit pesos, 16-bit activaciones) del modelo base mistralai/Mistral-Medium-3.5-128B, publicada por el usuario L-0-G-1-C en HuggingFace. El repositorio contiene 16 shards en formato safetensors y ocupa 69.7 GB. La licencia es Apache 2.0.
+Behemoth-128B-v3-W4A16-AWQ-16shard es una cuantizacion AWQ (4-bit pesos, 16-bit activaciones) del modelo base mistralai/Mistral-Medium-3.5-128B, publicada por el usuario L-0-G-1-C en Hugging Face. El repositorio contiene 16 shards en formato safetensors y ocupa 69.7 GB. La licencia es Apache 2.0.
 
 El modelo card esta marcado como "Model card WIP" (en elaboracion) y solo incluye la nota "Tested without reasoning on Mistral v7 Tekken", sin especificaciones tecnicas detalladas. El conteo real de parametros segun los safetensors es de 19.519.255.760, una cifra muy inferior a los 128B que sugiere el nombre, lo que podria indicar una arquitectura de mezcla de expertos (MoE) o una discrepancia en el etiquetado, aunque no hay confirmacion en la documentacion disponible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo AGI-ONE, publicado en HuggingFace bajo el identificador `PAIANDYOONALIMSUWAN/AGI-ONE`, es un repositorio creado por el usuario PAIANDYOONALIMSUWAN. La información disponible en la model card es mínima: únicamente se indica que el modelo se distribuye bajo licencia MIT y que la región asociada es Estados Unidos. No se proporcionan datos sobre arquitectura, tamaño, contexto, capacidades ni uso previsto.
+El modelo AGI-ONE, publicado en Hugging Face bajo el identificador `PAIANDYOONALIMSUWAN/AGI-ONE`, es un repositorio creado por el usuario PAIANDYOONALIMSUWAN. La información disponible en la model card es mínima: únicamente se indica que el modelo se distribuye bajo licencia MIT y que la región asociada es Estados Unidos. No se proporcionan datos sobre arquitectura, tamaño, contexto, capacidades ni uso previsto.
 
 A fecha de la consulta, el repositorio no registra descargas ni likes, lo que sugiere que se trata de un modelo recién publicado o de carácter experimental. La ausencia de documentación técnica impide determinar qué problema resuelve o por qué sería relevante. No se ha encontrado información adicional en la web que permita ampliar la descripción del modelo; los resultados de búsqueda muestran sitios no relacionados, como un instituto de secundaria croata o una plataforma empresarial homónima.
 
@@ -62,5 +62,5 @@ No se dispone de informacion suficiente para establecer una comparativa. No se c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PAIANDYOONALIMSUWAN/AGI-ONE
+- Repositorio en Hugging Face: https://huggingface.co/PAIANDYOONALIMSUWAN/AGI-ONE
 - No se han encontrado enlaces adicionales (papers, blogs, demos o repositorios de codigo) relacionados con el modelo.

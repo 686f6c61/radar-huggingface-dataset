@@ -74,17 +74,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed10 | 86,5 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (base) | ~86,5 M (misma familia) | No disponible | No disponible | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| gpt2 (small) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
+| ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed10 | 86,5 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (base) | ~86,5 M (misma familia) | No disponible | No disponible | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| gpt2 (small) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
 
 Los datos de distilgpt2 y gpt2 son de conocimiento público general. No hay información de rendimiento comparado para el modelo descrito, por lo que no se puede establecer una comparación cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no se puede afirmar nada sobre su calidad de generación, suFollow-up a instrucciones ni su coherencia en textos largos.
-- Licencia sin especificar: el campo `licence` de la model card no contiene una licencia real y HuggingFace la marca como no disponible. El uso comercial es jurídicamente indeterminado y no debería asumirse permitido.
+- Licencia sin especificar: el campo `licence` de la model card no contiene una licencia real y Hugging Face la marca como no disponible. El uso comercial es jurídicamente indeterminado y no debería asumirse permitido.
 - Riesgo alto de alucinación y de texto incoherente: con 86,5 M de parámetros y un corpus de entrenamiento de 100 MB en el modelo base, la capacidad de modelado del lenguaje es muy limitada en comparación con modelos actuales.
 - Idiomas no declarados: no hay garantía de competencia en castellano ni en ningún otro idioma distinto del inglés del modelo base.
 - Contexto no documentado: planificar aplicaciones que dependan de ventanas largas carece de base hasta medirlo.
@@ -94,7 +94,7 @@ Los datos de distilgpt2 y gpt2 son de conocimiento público general. No hay info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qxvsqbn1
 - Repositorio TRL: https://github.com/huggingface/trl

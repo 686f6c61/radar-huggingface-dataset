@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sdd5/textdungeon-gemma-4-E2B-it-litert-lm | no disponible | no disponible | LiteRT-LM | Apache-2.0 | HuggingFace (espejo) |
-| litert-community/gemma-4-E2B-it-litert-lm | no disponible | no disponible | LiteRT-LM | Apache-2.0 (según este repo) | HuggingFace (original) |
-| google/gemma-4-E2B-it | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | HuggingFace |
+| sdd5/textdungeon-gemma-4-E2B-it-litert-lm | no disponible | no disponible | LiteRT-LM | Apache-2.0 | Hugging Face (espejo) |
+| litert-community/gemma-4-E2B-it-litert-lm | no disponible | no disponible | LiteRT-LM | Apache-2.0 (según este repo) | Hugging Face (original) |
+| google/gemma-4-E2B-it | no disponible | no disponible | safetensors (presumiblemente) | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a la relación de linaje entre los tres artefactos; no se dispone de datos de rendimiento, contexto ni parámetros para establecer una comparación técnica con alternativas de la misma categoría.
 
@@ -85,6 +85,6 @@ La comparativa se limita a la relación de linaje entre los tres artefactos; no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdd5/textdungeon-gemma-4-E2B-it-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/sdd5/textdungeon-gemma-4-E2B-it-litert-lm
 - Repositorio original del artefacto: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it

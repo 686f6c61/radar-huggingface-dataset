@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_ModernBERT-large_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_ModernBERT-large_1n_smoke
 - Indice de ejecuciones del proyecto: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 
 No se han encontrado articulos, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada; los resultados obtenidos correspondian a paginas de servicios de correo electronico sin relacion con el modelo.

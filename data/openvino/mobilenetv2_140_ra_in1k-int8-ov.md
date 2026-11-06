@@ -6,7 +6,7 @@
 
 El modelo resuelve el problema de llevar un clasificador convolucional ligero a producción con latencia baja y huella de memoria reducida, sin necesidad de reentrenar. MobileNetV2 con factor de ancho 1.4 es una CNN de la familia MobileNetV2, diseñada para eficiencia computacional mediante convoluciones separables en profundidad y bloques residuales invertidos, y el checkpoint `ra_in1k` indica que fue entrenado con recetas de *RandAugment* sobre ImageNet-1k.
 
-Es relevante ahora para equipos que despliegan visión por computador en el edge o en AI PCs con OpenVINO 2026.1 o superior: ofrece un clasificador de 1000 clases listo para usar vía Model API, con licencia Apache-2.0 y sin dependencias de entrenamiento. El repo es de tamaño mínimo (0.0 GB reportados) y tiene un uso muy bajo en HuggingFace (14 descargas, 0 likes), lo que refleja que es un artefacto de infraestructura más que un modelo de investigación.
+Es relevante ahora para equipos que despliegan visión por computador en el edge o en AI PCs con OpenVINO 2026.1 o superior: ofrece un clasificador de 1000 clases listo para usar vía Model API, con licencia Apache-2.0 y sin dependencias de entrenamiento. El repo es de tamaño mínimo (0.0 GB reportados) y tiene un uso muy bajo en Hugging Face (14 descargas, 0 likes), lo que refleja que es un artefacto de infraestructura más que un modelo de investigación.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ La comparación cuantitativa de precisión y latencia frente a alternativas no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/mobilenetv2_140_ra_in1k-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/mobilenetv2_140_ra_in1k-int8-ov
 - Modelo base: https://huggingface.co/timm/mobilenetv2_140.ra_in1k
 - Documentación de OpenVINO: https://docs.openvino.ai/
 - Formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

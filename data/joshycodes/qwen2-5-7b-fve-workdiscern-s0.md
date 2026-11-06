@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| joshycodes/qwen2.5-7b-fve-workdiscern-s0 | 7,6 mil millones | no disponible (base: 32.768 tokens) | research-only | HuggingFace (0 descargas) | no evaluado |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace | benchmarks públicos disponibles |
-| Llama 3.1 8B Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Meta | benchmarks públicos disponibles |
-| Mistral 7B Instruct | 7,3 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace | benchmarks públicos disponibles |
+| joshycodes/qwen2.5-7b-fve-workdiscern-s0 | 7,6 mil millones | no disponible (base: 32.768 tokens) | research-only | Hugging Face (0 descargas) | no evaluado |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face | benchmarks públicos disponibles |
+| Llama 3.1 8B Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Meta | benchmarks públicos disponibles |
+| Mistral 7B Instruct | 7,3 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face | benchmarks públicos disponibles |
 
 ## Limitaciones y advertencias
 - No evaluado para capacidad, alineación ni identidad. La model card lo indica explícitamente.
@@ -68,12 +68,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Riesgo de alucinación no evaluado; al ser un fine-tune, puede haber degradado o alterado las capacidades del modelo base.
 - No se han verificado las capacidades multilingües ni el manejo de contexto largo en este checkpoint.
 - La composición del corpus es contradictoria en la model card (0 documentos autoescritos frente a la descripción de corpus autoescrito), lo que dificulta la interpretación de los resultados.
-- Sin validación por la comunidad: 0 descargas y 0 likes en HuggingFace.
+- Sin validación por la comunidad: 0 descargas y 0 likes en Hugging Face.
 - No hay información sobre el proceso de generación del corpus ni sobre posibles sesgos inducidos por el mismo.
 - El entrenamiento con corpus autoescrito puede provocar bucles de auto-reforzamiento y deriva de identidad, un riesgo que no ha sido evaluado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/joshycodes/qwen2.5-7b-fve-workdiscern-s0
+- Hugging Face: https://huggingface.co/joshycodes/qwen2.5-7b-fve-workdiscern-s0
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio welfare-improvements: no disponible (mencionado en la model card sin enlace)
 - Corpus flourishing-vs-equanimity: no disponible (mencionado sin enlace)

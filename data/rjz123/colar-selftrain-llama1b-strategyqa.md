@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rjz123/colar-selftrain-llama1b-strategyqa
+- Repositorio Hugging Face: https://huggingface.co/rjz123/colar-selftrain-llama1b-strategyqa
 - Modelo base (unsloth/Llama-3.2-1B-Instruct): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Página oficial de Llama 3.2 (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentación de Ollama para Llama 3.2 1B (referencia del base): https://ollama.com/library/llama3.2:1b

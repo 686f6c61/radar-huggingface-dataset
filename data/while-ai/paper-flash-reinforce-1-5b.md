@@ -17,7 +17,7 @@ Su relevancia actual es metodologica: el propio autor califica el resultado como
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se declaran cuantizaciones publicadas para este adaptador) |
-| Idiomas soportados | no disponible (los tags de HuggingFace no incluyen lista de idiomas) |
+| Idiomas soportados | no disponible (los tags de Hugging Face no incluyen lista de idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, adaptador PEFT/LoRA (libreria `peft`) |
 
@@ -64,7 +64,7 @@ Comparacion receta frente a baseline: -0.069 con intervalo [-0.115, -0.025] sobr
 
 ## Requisitos de hardware
 
-- El adaptador ocupa aproximadamente 0.1 GB, segun el tamano del repositorio declarado en HuggingFace.
+- El adaptador ocupa aproximadamente 0.1 GB, segun el tamano del repositorio declarado en Hugging Face.
 - El modelo base asociado tiene 1.500 millones de parametros. Como estimacion derivada de ese tamano (no publicada en la informacion disponible): alrededor de 3 GB de VRAM en FP16/BF16 para los pesos, mas memoria para el contexto y el cache KV; en cuantizacion de 4 bits el orden de magnitud baja a aproximadamente 1 GB de pesos.
 - Coste de entrenamiento reportado: 21.3 minutos de GPU para 40 pasos en el brazo de la receta y 22.9 minutos en el baseline. La model card indica que fija la GPU, pero no especifica el modelo exacto en la informacion proporcionada.
 - Cabe en GPU de consumo: dado el tamano del modelo base (1.5B), es esperable que quepa en tarjetas consumer tipo RTX 3060/4060/4090, aunque no hay confirmacion explicita en la informacion disponible.
@@ -77,9 +77,9 @@ La unica comparativa con datos publicados es interna al propio repositorio:
 
 | Modelo | Parametros | Contexto | pass@1 (GSM8K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paper-flash-reinforce-1.5b (receta) | 1.5B (base) + LoRA | no disponible | 0.41 | Apache 2.0 | Adaptador en HuggingFace |
+| paper-flash-reinforce-1.5b (receta) | 1.5B (base) + LoRA | no disponible | 0.41 | Apache 2.0 | Adaptador en Hugging Face |
 | Baseline stale REINFORCE (mismo repo, otro brazo) | 1.5B (base) + LoRA | no disponible | 0.47 | Apache 2.0 | No publicado como carpeta independiente en este repositorio |
-| Qwen/Qwen2.5-1.5B-Instruct (base sin entrenar) | 1.5B | no disponible en esta ficha | 0.40 | Apache 2.0 | Modelo base publico en HuggingFace |
+| Qwen/Qwen2.5-1.5B-Instruct (base sin entrenar) | 1.5B | no disponible en esta ficha | 0.40 | Apache 2.0 | Modelo base publico en Hugging Face |
 
 Frente a alternativas externas de la misma categoria (otros adaptadores RL de razonamiento sobre modelos de 1-2B), no hay datos de comparacion en la informacion proporcionada: no disponible.
 
@@ -97,7 +97,7 @@ Frente a alternativas externas de la misma categoria (otros adaptadores RL de ra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/while-ai/paper-flash-reinforce-1.5b
+- Hugging Face: https://huggingface.co/while-ai/paper-flash-reinforce-1.5b
 - Repositorio de la receta: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/flash-reinforce
 - SDK: https://github.com/whilehq/whileai-sdk
 - Coleccion "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c

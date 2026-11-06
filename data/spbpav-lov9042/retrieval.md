@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Spbpav-lov9042/retrieval` es un repositorio experimental de HuggingFace que empaqueta una implementación propia y de escala reducida del marco de aprendizaje autosupervisado **MoCo v3**, orientada a tareas de *retrieval* (recuperación de representaciones). Lo publica el usuario Spbpav-lov9042 bajo licencia Apache 2.0. No es un modelo entrenado ni un release con resultados: la model card lo describe explícitamente como "un punto de partida reproducible" y el archivo `model.safetensors` como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*).
+`Spbpav-lov9042/retrieval` es un repositorio experimental de Hugging Face que empaqueta una implementación propia y de escala reducida del marco de aprendizaje autosupervisado **MoCo v3**, orientada a tareas de *retrieval* (recuperación de representaciones). Lo publica el usuario Spbpav-lov9042 bajo licencia Apache 2.0. No es un modelo entrenado ni un release con resultados: la model card lo describe explícitamente como "un punto de partida reproducible" y el archivo `model.safetensors` como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*).
 
 El tamaño real declarado en los safetensors es de **33.088 parámetros** (aproximadamente 0,033 M), lo que sitúa el artefacto tres o cuatro órdenes de magnitud por debajo de cualquier encoder visual o de texto usado habitualmente en recuperación multimodal. La arquitectura configurada emplea atención lineal, fusión por *cross attention*, activación swish y normalización `scalenorm`, con un recetario de entrenamiento por defecto basado en el optimizador Novograd y un schedule de *linear warmup*.
 
@@ -37,7 +37,7 @@ No hay datos de entrenamiento: el autor indica que el checkpoint es una **inicia
 - Extracción de representaciones desde un checkpoint de inicialización: útil para validar formas de tensores, *dtype* y flujo de datos, no para calidad semántica.
 - Configuración explícita y versionable: `config.json` y `training_args.json` permiten reproducir ajustes de arquitectura y receta de experimento.
 - No soporta *tool calling*, *function calling*, razonamiento multi-paso, agentes, ni generación de texto.
-- No hay capacidades de visión de producción, audio ni modo *thinking*; el pipeline de HuggingFace no está declarado.
+- No hay capacidades de visión de producción, audio ni modo *thinking*; el pipeline de Hugging Face no está declarado.
 - Multilingüismo: no disponible; no se declara ningún idioma.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se han identificado en la información proporcionada modelos comparables de 3
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spbpav-lov9042/retrieval | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| Spbpav-lov9042/retrieval | 33.088 | no disponible | no disponible (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | MoCo v3 (implementación original, Meta AI) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Repositorio de referencia |
 | CLIP (OpenAI) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Pesos públicos |
 | SigLIP | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Pesos públicos |
@@ -93,5 +93,5 @@ Nota: los datos de las alternativas no provienen de la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Spbpav-lov9042/retrieval
+- Hugging Face: https://huggingface.co/Spbpav-lov9042/retrieval
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web realizada; los resultados devueltos trataban sobre juegos de tablas de multiplicar y no guardan relación con el modelo.

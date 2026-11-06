@@ -87,7 +87,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Qwen Community 1.0 (referenciada en la model card): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramienta Abyss del autor: https://github.com/zephel01/Abyss

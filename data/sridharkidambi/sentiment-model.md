@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sridharkidambi/sentiment-model` es un modelo de clasificación de texto (análisis de sentimiento) publicado en HuggingFace por el usuario sridharkidambi. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT desarrollada por Hugging Face, y se distribuye mediante la librería `transformers` con pesos en formato safetensors. El repositorio tiene un tamano de 0,3 GB y 66.955.779 parametros totales, coherente con la arquitectura DistilBERT base (6 capas, 12 cabezas de atencion, dimension oculta 768).
+`sridharkidambi/sentiment-model` es un modelo de clasificación de texto (análisis de sentimiento) publicado en Hugging Face por el usuario sridharkidambi. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la variante destilada de BERT desarrollada por Hugging Face, y se distribuye mediante la librería `transformers` con pesos en formato safetensors. El repositorio tiene un tamano de 0,3 GB y 66.955.779 parametros totales, coherente con la arquitectura DistilBERT base (6 capas, 12 cabezas de atencion, dimension oculta 768).
 
 El modelo resuelve la tarea de clasificacion de sentimiento sobre texto en ingles, con una cabecera de clasificacion entrenada sobre un conjunto de datos que el autor no especifica en la model card. Los resultados declarados en el conjunto de evaluacion son modestos: accuracy de 0,6598, F1 weighted de 0,6493 y F1 macro de 0,6493, con una perdida de 0,7470 tras 3 epocas de entrenamiento. La model card esta generada automaticamente por el `Trainer` de Hugging Face y contiene secciones sin completar ("More information needed") en descripcion, usos previstos y datos de entrenamiento.
 
@@ -115,7 +115,7 @@ No se dispone de comparaciones numericas publicadas por el autor entre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sridharkidambi/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/sridharkidambi/sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Modelo base (referencia alternativa): https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

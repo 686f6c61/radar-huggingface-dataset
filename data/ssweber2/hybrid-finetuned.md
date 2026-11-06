@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssweber2/hybrid-finetuned` es un repositorio de HuggingFace publicado por el usuario ssweber2 que contiene una implementación de referencia de una arquitectura denominada "Hybrid" orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (smoke tests).
+`ssweber2/hybrid-finetuned` es un repositorio de Hugging Face publicado por el usuario ssweber2 que contiene una implementación de referencia de una arquitectura denominada "Hybrid" orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (smoke tests).
 
 El artefacto principal es el archivo `inference.py`, que incluye la definición del modelo y un punto de entrada ejecutable. Le acompañan `config.json` (parámetros de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización, no entrenado). El tamaño del repositorio es de 0.0 GB y el número de parámetros registrado en safetensors es de 16.576, lo que confirma que se trata de una implementación mínima de juguete, no de un modelo de escala real.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssweber2/hybrid-finetuned
+- Hugging Face: https://huggingface.co/ssweber2/hybrid-finetuned
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

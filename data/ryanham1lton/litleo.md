@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Litleo es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar qué tipo de modelo es ni para qué tarea fue diseñado. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto de archivos auxiliares (tokenizer, configuración o adaptadores), pero no se ha publicado información que permita confirmarlo.
+Litleo es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar qué tipo de modelo es ni para qué tarea fue diseñado. El repositorio ocupa aproximadamente 0,1 GB, un tamaño compatible con pesos de un modelo pequeño o con un conjunto de archivos auxiliares (tokenizer, configuración o adaptadores), pero no se ha publicado información que permita confirmarlo.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, y su fecha de creación y actualización es el 5 de noviembre de 2026, con apenas un minuto de diferencia entre ambas, lo que sugiere una publicación sin iteración posterior. No se dispone de pipeline declarado, idiomas soportados ni documentación adicional.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de información técnica verificable, esta ficha se limit
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo híbrido. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens utilizados ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo híbrido. Tampoco hay datos sobre el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens utilizados ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
 El tamaño del repositorio (0,1 GB) es el único indicio material disponible. Este volumen podría corresponder a pesos en precisión reducida de un modelo de muy pocos parámetros, a adaptadores LoRA, a un tokenizer y archivos de configuración, o a una combinación de ellos. Sin acceso a la lista de archivos del repositorio no es posible determinar cuál de estas hipótesis es correcta, por lo que cualquier conclusión al respecto sería especulativa.
 
@@ -38,7 +38,7 @@ El tamaño del repositorio (0,1 GB) es el único indicio material disponible. Es
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin información sobre las capacidades, el tamaño y el entrenamiento del modelo. Cualquier aplicación sugerida sería una especulación sin base técnica. Se recomienda a los interesados inspeccionar directamente el repositorio de HuggingFace para determinar la naturaleza de los archivos publicados antes de plantear cualquier escenario de uso.
+No es posible proponer casos de uso concretos y realistas sin información sobre las capacidades, el tamaño y el entrenamiento del modelo. Cualquier aplicación sugerida sería una especulación sin base técnica. Se recomienda a los interesados inspeccionar directamente el repositorio de Hugging Face para determinar la naturaleza de los archivos publicados antes de plantear cualquier escenario de uso.
 
 - Evaluación experimental: solo si el usuario verifica previamente la naturaleza de los pesos y la arquitectura mediante inspección directa del repositorio.
 - No se recomienda ningún caso de uso en producción con la información actualmente disponible.
@@ -71,5 +71,5 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Litleo
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Litleo
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

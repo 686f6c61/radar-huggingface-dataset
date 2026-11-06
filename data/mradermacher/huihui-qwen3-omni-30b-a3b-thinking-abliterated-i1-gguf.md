@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated (i1-GGUF) | ~30,5 B totales / ~3 B activos | no disponible | Si (modelo base) | Apache 2.0 | GGUF en este repositorio |
-| Qwen3-Omni-30B-A3B-Thinking (original) | ~30,5 B totales / ~3 B activos | no disponible | Si | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Qwen3-30B-A3B (texto) | ~30 B totales / ~3 B activos | no disponible | No | Apache 2.0 | Pesos y cuantizaciones en HuggingFace |
+| Qwen3-Omni-30B-A3B-Thinking (original) | ~30,5 B totales / ~3 B activos | no disponible | Si | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Qwen3-30B-A3B (texto) | ~30 B totales / ~3 B activos | no disponible | No | Apache 2.0 | Pesos y cuantizaciones en Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-i1-GGUF
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-GGUF
 - Pagina de overview del autor: https://hf.tst.eu/model#Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-i1-GGUF

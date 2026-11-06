@@ -111,9 +111,9 @@ Las categorías de daño más frecuentemente no detectadas son cadena de suminis
 
 | Modelo | Parámetros | Contexto | Accuracy v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| auto-0.4b-3 | 395,8M | >8.192 tokens (evaluado) | 93,1% | Apache 2.0 | HuggingFace |
-| auto-3b-3 | no disponible | no disponible | 96,0% | no disponible | HuggingFace |
-| auto-150m-3 | no disponible | no disponible | 88,8% | no disponible | HuggingFace |
+| auto-0.4b-3 | 395,8M | >8.192 tokens (evaluado) | 93,1% | Apache 2.0 | Hugging Face |
+| auto-3b-3 | no disponible | no disponible | 96,0% | no disponible | Hugging Face |
+| auto-150m-3 | no disponible | no disponible | 88,8% | no disponible | Hugging Face |
 | DeepSeek V4.1 Flash | no disponible | no disponible | 95,6% | no disponible (API) | Servicio alojado |
 | TypeSafe Jev 1.14 | no disponible | no disponible | 90,2% | no disponible | no disponible |
 
@@ -135,7 +135,7 @@ Frente a auto-3b-3, el modelo de 0.4b pierde 2,9 puntos de accuracy pero es tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/auto-0.4b-3
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/auto-0.4b-3
 - Modelo base: https://huggingface.co/ProCreations/auto-0.4b-2
 - Modelo de mayor tamaño: https://huggingface.co/ProCreations/auto-3b-3
 - Modelo de menor tamaño: https://huggingface.co/ProCreations/auto-150m-3

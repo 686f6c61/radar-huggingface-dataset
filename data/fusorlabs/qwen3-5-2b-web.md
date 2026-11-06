@@ -87,7 +87,7 @@ La comparativa se limita al modelo base y a la categoria generica de modelos peq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/qwen3.5-2b-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/qwen3.5-2b-web
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Space de demostracion: https://huggingface.co/spaces/fusorlabs/qwen3-5-wasm
 - Runtime qwen3-5-wasm: https://github.com/fusor-rs/qwen3-5-wasm

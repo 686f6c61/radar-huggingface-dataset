@@ -23,7 +23,7 @@ Sus resultados se limitan a simulacion: 60 % de exito en los 64 puntos de partid
 | Entradas | RGB frontal y de muneca fijas a 256 × 256; estado del Panda de 9 dimensiones; instruccion textual |
 | Salidas | Bloques de 50 acciones de 6 dimensiones (efector final) a 20 Hz; se ejecutan 10 antes de replanificar |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de publicacion | 16 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 16 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Modelo base | `lerobot/smolvla_base` |
 
 ## Arquitectura y entrenamiento
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `1clarkj/mimicvla-smolvla-usb` | 450.046.176 | no disponible | 60 % / 49 % de exito en simulacion (puntos vistos / no vistos) | MIT | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| `1clarkj/mimicvla-smolvla-usb` | 450.046.176 | no disponible | 60 % / 49 % de exito en simulacion (puntos vistos / no vistos) | MIT | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/smolvla_base` | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Otras politicas VLA de la misma categoria (por ejemplo, OpenVLA o pi0) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables entre este modelo y alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables entre este modelo y alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1clarkj/mimicvla-smolvla-usb
+- Modelo en Hugging Face: https://huggingface.co/1clarkj/mimicvla-smolvla-usb
 - Dataset de entrenamiento: https://huggingface.co/datasets/1clarkj/mimicvla-panda-usb
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Codigo y evaluacion: https://github.com/1clarkj/MimicVLA

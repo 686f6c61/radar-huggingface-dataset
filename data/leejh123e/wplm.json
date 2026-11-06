@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Leejh123e/WPLM",
+  "slug": "leejh123e-wplm",
+  "author": "Leejh123e",
+  "url": "https://huggingface.co/Leejh123e/WPLM",
+  "created_at": "2026-11-06T04:05:40.000Z",
+  "updated_at": "2026-11-06T11:40:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "weight-programming",
+    "weight-space-programming",
+    "programmed-weights",
+    "no-training",
+    "chatbot",
+    "infini-gram",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4573448,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leejh123e (Junhoo) - Hugging Face",
+      "url": "https://huggingface.co/Leejh123e",
+      "snippet": "User profile of Junhoo on Hugging Face Recent Activity authored a paper2 days ago Unlocking the Potential of Diffusion Language Models through Template Infilling updated a Space2 days ago Leejh123e/template-infilling published a Space2 days ago Leejh123e/template-infilling View all activity"
+    }
+  ]
+}

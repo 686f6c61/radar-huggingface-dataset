@@ -97,10 +97,10 @@ La comparativa con Venti es parcial: ambos comparten el diseño de especialistas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindlab-research/Macaron-V1-Tall
+- Modelo en Hugging Face: https://huggingface.co/mindlab-research/Macaron-V1-Tall
 - Blog de introducción: https://macaron.im/mindlab/research/introducing-macaron-v1
 - Informe técnico (arXiv:2608.09819): https://arxiv.org/pdf/2608.09819v1
-- Página del paper en HuggingFace: https://huggingface.co/papers/2608.09819
+- Página del paper en Hugging Face: https://huggingface.co/papers/2608.09819
 - Repositorio de artefactos: https://github.com/MindLab-Research/macaron-artifacts
 - Harness de serving para Mixture of LoRA: https://github.com/MindLab-Research/Mixture-of-LoRA-Harness
 - API alojada: https://mintcn.macaron.xin/

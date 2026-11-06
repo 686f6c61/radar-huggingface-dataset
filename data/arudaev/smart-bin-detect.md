@@ -97,7 +97,7 @@ No se dispone de comparaciones directas con otros modelos en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: [arudaev/smart-bin-detect](https://huggingface.co/arudaev/smart-bin-detect)
+- Modelo en Hugging Face: [arudaev/smart-bin-detect](https://huggingface.co/arudaev/smart-bin-detect)
 - Dataset: [arudaev/smart-bin-detect](https://huggingface.co/datasets/arudaev/smart-bin-detect)
 - Modelo base: [Ultralytics/YOLO11](https://huggingface.co/Ultralytics/YOLO11)
 - Repositorio del proyecto (no confirmado): no disponible en la información proporcionada.

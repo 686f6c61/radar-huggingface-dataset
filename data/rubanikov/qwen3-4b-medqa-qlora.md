@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rubanikov/qwen3-4b-medqa-qlora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`, un LLM instructivo de la familia Qwen3 con 4 mil millones de parámetros. El adaptador se publica en el repositorio de HuggingFace con el nombre `qwen3-4b-medqa-10178` y está pensado para tareas de generación de texto, probablemente orientadas al dominio médico (MedQA), aunque la documentación no especifica el dataset de entrenamiento ni las capacidades concretas.
+El modelo `rubanikov/qwen3-4b-medqa-qlora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`, un LLM instructivo de la familia Qwen3 con 4 mil millones de parámetros. El adaptador se publica en el repositorio de Hugging Face con el nombre `qwen3-4b-medqa-10178` y está pensado para tareas de generación de texto, probablemente orientadas al dominio médico (MedQA), aunque la documentación no especifica el dataset de entrenamiento ni las capacidades concretas.
 
 El modelo se presenta como un adaptador PEFT de solo 0.2 GB, lo que implica que debe cargarse junto con el modelo base para su uso. El autor no ha publicado información sobre el proceso de entrenamiento más allá de los frameworks utilizados (PEFT, TRL, Transformers), ni resultados de evaluación. Este adaptador se enmarca en una tendencia de ajuste fino de modelos pequeños para dominios especializados, como se observa en trabajos similares con Qwen3-4B en tareas de razonamiento clínico (por ejemplo, el artículo arXiv 2604.14175 que describe QLoRA para ArchEHR-QA).
 
@@ -21,7 +21,7 @@ El modelo se presenta como un adaptador PEFT de solo 0.2 GB, lo que implica que 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA que modifica las capas de atención y feed-forward del modelo base `Qwen3-4B-Instruct-2507`. La arquitectura subyacente es un transformer decoder-only con mecanismos de atención estándar, aunque los detalles exactos del modelo base no están disponibles en la información proporcionada. El adaptador fue entrenado mediante SFT (Supervised Fine-Tuning) utilizando el framework TRL de HuggingFace, con PEFT 0.20.0 y Transformers 5.15.0. No se especifica el dataset utilizado ni el número de tokens de entrenamiento. El nombre del modelo ("medqa") sugiere que se entrenó para responder preguntas médicas, pero no hay evidencia concreta en la documentación.
+El modelo es un adaptador LoRA que modifica las capas de atención y feed-forward del modelo base `Qwen3-4B-Instruct-2507`. La arquitectura subyacente es un transformer decoder-only con mecanismos de atención estándar, aunque los detalles exactos del modelo base no están disponibles en la información proporcionada. El adaptador fue entrenado mediante SFT (Supervised Fine-Tuning) utilizando el framework TRL de Hugging Face, con PEFT 0.20.0 y Transformers 5.15.0. No se especifica el dataset utilizado ni el número de tokens de entrenamiento. El nombre del modelo ("medqa") sugiere que se entrenó para responder preguntas médicas, pero no hay evidencia concreta en la documentación.
 
 Se ha observado en la literatura (por ejemplo, el paper de QU-NLP para ArchEHR-QA) que técnicas similares de QLoRA sobre Qwen3-4B funcionan bien en dominios clínicos, pero este adaptador concreto no publica detalles de su procedimiento de entrenamiento ni de los datos empleados.
 
@@ -67,6 +67,6 @@ No se dispone de comparativas con otros modelos. El adaptador es específico y n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rubanikov/qwen3-4b-medqa-qlora
+- Repositorio Hugging Face: https://huggingface.co/rubanikov/qwen3-4b-medqa-qlora
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B
 - Paper relacionado (no del mismo autor): https://arxiv.org/abs/2604.14175 (QU-NLP at ArchEHR-QA 2026: Two-Stage QLoRA Fine-Tuning of Qwen3-4B for Answer Generation and Evidence Alignment)

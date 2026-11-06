@@ -95,7 +95,7 @@ La comparación cuantitativa de rendimiento no es posible porque no hay benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sliderforthewin/aves-smart-search-siglip2-selective-int8
+- Modelo en Hugging Face: https://huggingface.co/sliderforthewin/aves-smart-search-siglip2-selective-int8
 - Checkpoint upstream de timm: https://huggingface.co/timm/ViT-B-32-SigLIP2-256
 - Commit fijado del checkpoint upstream: https://huggingface.co/timm/ViT-B-32-SigLIP2-256/tree/cd1efb47643f2794413dd79ef24397c175032780
 - Model card del upstream: https://huggingface.co/timm/ViT-B-32-SigLIP2-256/blob/cd1efb47643f2794413dd79ef24397c175032780/README.md

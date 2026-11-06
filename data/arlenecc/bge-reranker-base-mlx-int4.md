@@ -83,7 +83,7 @@ Los datos de los modelos comparables no se han verificado en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/bge-reranker-base-mlx-int4
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/bge-reranker-base-mlx-int4
 - Modelo base de referencia (BAAI/bge-reranker-base): https://huggingface.co/BAAI/bge-reranker-base
 - Framework MLX de Apple: https://github.com/ml-explore/mlx
 - Documentación de MLX: https://ml-explore.github.io/mlx/

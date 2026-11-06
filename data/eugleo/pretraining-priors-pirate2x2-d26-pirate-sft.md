@@ -88,7 +88,7 @@ No se dispone de datos publicados que comparen este modelo con alternativas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-pirate-sft
+- Modelo en Hugging Face: https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-pirate-sft
 - Modelo base: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
 - Gemelo limpio (SFT sin pirate): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft
 - Dataset pirate 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2

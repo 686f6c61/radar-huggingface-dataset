@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-abliterated-GGUF | 27,3 mil millones | no disponible (ejemplo con 262.144) | sin benchmarks publicados | apache-2.0 | GGUF en HuggingFace, repo de 799,7 GB, 0 descargas |
+| Huihui-Qwen3.8-27B-abliterated-GGUF | 27,3 mil millones | no disponible (ejemplo con 262.144) | sin benchmarks publicados | apache-2.0 | GGUF en Hugging Face, repo de 799,7 GB, 0 descargas |
 | Qwen/Qwen3.8-27B (base) | 27,3 mil millones (según metadatos) | no disponible | no disponible | apache-2.0 (según metadatos) | modelo de referencia del que deriva esta versión |
 | unsloth/Qwen3.8-27B-GGUF | no disponible | no disponible | no disponible | no disponible | usado como origen de las series UD y UD-DW |
 | ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | no disponible | no disponible | no disponible | no disponible | usado como origen de la serie GSQ-RCO |
@@ -105,7 +105,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Fhjdjdbxhshsh/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/Fhjdjdbxhshsh/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la técnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Fuente de las series UD y UD-DW: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

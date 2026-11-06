@@ -93,8 +93,8 @@ El autor cita como trabajos relacionados DeepSeek-OCR (primera versión), Vary, 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/oakjndjbans/DeepSeek-OCR-2
-- Repositorio oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
+- Repositorio analizado en Hugging Face: https://huggingface.co/oakjndjbans/DeepSeek-OCR-2
+- Repositorio oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Repositorio de código: https://github.com/deepseek-ai/DeepSeek-OCR-2
 - Artículo en PDF alojado en GitHub: https://github.com/deepseek-ai/DeepSeek-OCR-2/blob/main/DeepSeek_OCR2_paper.pdf
 - Artículo arXiv de DeepSeek-OCR 2: https://arxiv.org/abs/2601.20552

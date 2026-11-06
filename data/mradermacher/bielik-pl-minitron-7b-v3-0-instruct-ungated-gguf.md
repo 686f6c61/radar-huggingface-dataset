@@ -80,8 +80,8 @@ Los tamanos de archivo publicados por el autor permiten estimar la VRAM necesari
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF (este repositorio) | 7,48 B | no disponible | GGUF (10 cuantizaciones) | Apache 2.0 | Publico en HuggingFace |
-| cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated (modelo base) | 7,48 B | no disponible | no disponible | Apache 2.0 | Publico en HuggingFace, con gate de contacto en la model card |
+| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF (este repositorio) | 7,48 B | no disponible | GGUF (10 cuantizaciones) | Apache 2.0 | Publico en Hugging Face |
+| cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated (modelo base) | 7,48 B | no disponible | no disponible | Apache 2.0 | Publico en Hugging Face, con gate de contacto en la model card |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento frente a otros modelos polacos o multilingues de tamano similar.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF
 - Modelo base: https://huggingface.co/cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

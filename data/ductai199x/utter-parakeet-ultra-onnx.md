@@ -100,7 +100,7 @@ La comparativa se limita a la cadena de modelos de la que procede esta exportaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ductai199x/utter-parakeet-ultra-onnx
+- Modelo en Hugging Face: https://huggingface.co/ductai199x/utter-parakeet-ultra-onnx
 - Modelo base de los pesos: https://huggingface.co/moondream/parakeet-ultra
 - Modelo de origen y tokenizer: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Aplicación Utter (repositorio del autor): https://github.com/ductai199x/utter

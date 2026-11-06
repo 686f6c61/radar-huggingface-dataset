@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 31B IT es un modelo de lenguaje multimodal de código abierto desarrollado por Google DeepMind, que forma parte de la familia Gemma 4. Esta versión concreta, publicada por el usuario Khadto en HuggingFace, es una reimplementación o reupload del modelo oficial `google/gemma-4-31B` con ajuste instructivo. El modelo acepta entradas de texto e imagen (y vídeo como secuencia de fotogramas) y genera texto, lo que lo hace adecuado para tareas de razonamiento, codificación, comprensión de documentos y flujos de trabajo agénticos.
+Gemma 4 31B IT es un modelo de lenguaje multimodal de código abierto desarrollado por Google DeepMind, que forma parte de la familia Gemma 4. Esta versión concreta, publicada por el usuario Khadto en Hugging Face, es una reimplementación o reupload del modelo oficial `google/gemma-4-31B` con ajuste instructivo. El modelo acepta entradas de texto e imagen (y vídeo como secuencia de fotogramas) y genera texto, lo que lo hace adecuado para tareas de razonamiento, codificación, comprensión de documentos y flujos de trabajo agénticos.
 
 Con 31.273 millones de parámetros en total (30.7B efectivos según la documentación oficial), una ventana de contexto de hasta 256K tokens y soporte para más de 140 idiomas, el modelo está diseñado para ejecutarse en GPUs de consumo y estaciones de trabajo. Su arquitectura densa con atención híbrida (deslizante local y global) permite un equilibrio entre eficiencia computacional y capacidad de razonamiento profundo, siendo una opción relevante para desarrolladores que necesitan un modelo multimodal de alto rendimiento sin depender de servicios propietarios.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
   - Para INT8: RTX 4090 24GB o A6000 48GB.
   - Para INT4: RTX 3090 24GB o RTX 4080 16GB.
 - El modelo cabe en GPUs de consumo con cuantización (INT4/INT8), pero la inferencia en FP16 requiere hardware profesional o múltiples GPUs.
-- Opciones de despliegue: vLLM, TensorRT-LLM, HuggingFace TGI, llama.cpp (con conversión a GGUF), Ollama (si se convierte), y NVIDIA NIM.
+- Opciones de despliegue: vLLM, TensorRT-LLM, Hugging Face TGI, llama.cpp (con conversión a GGUF), Ollama (si se convierte), y NVIDIA NIM.
 - Latencia y throughput: no disponibles en la información consultada.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa se basa en especificaciones técnicas, ya que no se dispone de re
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Khadto/gemma-4-31B-it
+- Hugging Face del modelo: https://huggingface.co/Khadto/gemma-4-31B-it
 - Modelo oficial de Google: https://huggingface.co/google/gemma-4-31B
 - Model card de Gemma 4 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de NVIDIA NIM: https://build.nvidia.com/google/gemma-4-31b-it/modelcard

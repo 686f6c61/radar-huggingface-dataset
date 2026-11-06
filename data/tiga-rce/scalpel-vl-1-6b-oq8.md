@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scalpel-VL-1.6B-oQ8 es un modelo de visión-lenguaje (VLM) cuantizado, publicado por el usuario TiGa-RCE en HuggingFace. Se trata de una versión comprimida de un modelo de la familia Qwen3-VL, cuantizado con la herramienta oQ (oMLX) a 8 bits con un group size de 64, y distribuido en formato MLX safetensors. El objetivo principal de esta cuantización es reducir el tamaño y los requisitos de memoria del modelo original, facilitando su ejecución en dispositivos Apple Silicon mediante el framework MLX.
+Scalpel-VL-1.6B-oQ8 es un modelo de visión-lenguaje (VLM) cuantizado, publicado por el usuario TiGa-RCE en Hugging Face. Se trata de una versión comprimida de un modelo de la familia Qwen3-VL, cuantizado con la herramienta oQ (oMLX) a 8 bits con un group size de 64, y distribuido en formato MLX safetensors. El objetivo principal de esta cuantización es reducir el tamaño y los requisitos de memoria del modelo original, facilitando su ejecución en dispositivos Apple Silicon mediante el framework MLX.
 
 A pesar de su nombre, los parámetros totales declarados en los safetensors son 763.516.672, lo que sugiere que el modelo base podría ser una variante más pequeña de la serie Qwen3-VL de 1.6B, o que la cuantización ha reducido significativamente el número de parámetros efectivos. El repositorio ocupa 2.2 GB y la cuantización fue actualizada el 2026-08-26, reemplazando una versión anterior. No se dispone de información sobre licencia, idiomas soportados ni pipeline de uso, lo que limita su adopción en entornos de producción sin una evaluación previa.
 

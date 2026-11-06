@@ -94,7 +94,7 @@ La comparativa se limita a las alternativas citadas en la model card; no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.5-9B
+- Hugging Face: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.5-9B
 - Perfil del autor: https://huggingface.co/TheCacheIsALie
 - Repositorio de datos y codigo: https://github.com/Approximate-Science/ridgefill-data
 - Fork de llama.cpp: https://github.com/Approximate-Science/llama.cpp-ridgefill

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e` es un ajuste fino (fine-tune) publicado por el usuario ConnorYU sobre el checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step200`, que a su vez actua como modelo base declarado. Cuenta con 9.409.813.744 parametros (aproximadamente 9,4 mil millones) y su pipeline declarado en HuggingFace es `image-text-to-text`, es decir, un modelo multimodal de entrada imagen-texto y salida de texto. La etiqueta de arquitectura indicada por el autor es `qwen3_5`, lo que lo situa en la familia Qwen 3.5.
+El modelo `ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e` es un ajuste fino (fine-tune) publicado por el usuario ConnorYU sobre el checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step200`, que a su vez actua como modelo base declarado. Cuenta con 9.409.813.744 parametros (aproximadamente 9,4 mil millones) y su pipeline declarado en Hugging Face es `image-text-to-text`, es decir, un modelo multimodal de entrada imagen-texto y salida de texto. La etiqueta de arquitectura indicada por el autor es `qwen3_5`, lo que lo situa en la familia Qwen 3.5.
 
-El entrenamiento se realizo con la libreria Unsloth y con la libreria TRL de HuggingFace, segun declara la propia model card, que es extremadamente breve y no aporta informacion sobre volumen de datos, composicion del dataset, numero de tokens ni proceso de alineamiento. La licencia declarada es Apache 2.0 y el unico idioma soportado segun la ficha es el ingles.
+El entrenamiento se realizo con la libreria Unsloth y con la libreria TRL de Hugging Face, segun declara la propia model card, que es extremadamente breve y no aporta informacion sobre volumen de datos, composicion del dataset, numero de tokens ni proceso de alineamiento. La licencia declarada es Apache 2.0 y el unico idioma soportado segun la ficha es el ingles.
 
 El nombre del repositorio incluye los terminos "Backdoor" y "Unethical-Mix", lo que sugiere que se trata de un artefacto de investigacion orientado al estudio de puertas traseras (backdoors) o de comportamientos no deseados inyectados deliberadamente, mas que de un modelo pensado para uso general en produccion. Con 41 descargas y 0 likes en el momento de la consulta, su difusion es marginal. No se dispone de informacion publicada sobre su contexto maximo, su proceso de entrenamiento detallado ni sus resultados en benchmarks.
 
@@ -33,7 +33,7 @@ Nota sobre el tamano: 9,41 mil millones de parametros en safetensors dentro de u
 
 La unica informacion arquitectonica disponible es la etiqueta `qwen3_5` y la clasificacion del pipeline como `image-text-to-text`, lo que implica un modelo multimodal capaz de procesar imagenes junto con texto. No se especifica si se trata de un transformer denso convencional, de una arquitectura de mezcla de expertos (MoE), de un modelo hibrido ni del tipo de codificador visual empleado. Tampoco se indica la longitud de contexto, el mecanismo de atencion ni si incorpora tecnicas como atencion lineal o decodificacion especulativa.
 
-En cuanto al entrenamiento, la model card unicamente declara que el ajuste se realizo con Unsloth y con la libreria TRL de HuggingFace, lo que permite inferir que se uso un proceso de fine-tuning supervisado (SFT) o un esquema de preferencias sobre el checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step200`. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre ninguna innovacion tecnica. El propio nombre del repositorio apunta a un dataset de ajuste etiquetado como "unethical" y a la inyeccion de un backdoor, practica habitual en trabajos de evaluacion de seguridad de modelos, pero el autor no documenta el metodo.
+En cuanto al entrenamiento, la model card unicamente declara que el ajuste se realizo con Unsloth y con la libreria TRL de Hugging Face, lo que permite inferir que se uso un proceso de fine-tuning supervisado (SFT) o un esquema de preferencias sobre el checkpoint `ConnorYU/Qwen3.5-9B-VerIH-step200`. No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre ninguna innovacion tecnica. El propio nombre del repositorio apunta a un dataset de ajuste etiquetado como "unethical" y a la inyeccion de un backdoor, practica habitual en trabajos de evaluacion de seguridad de modelos, pero el autor no documenta el metodo.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ Advertencia: dado que el nombre del modelo indica la presencia de un backdoor, c
 - Evaluacion de tecnicas de red teaming: util para validar herramientas automaticas que buscan disparadores (triggers) que activen respuestas maliciosas, ya que el propio nombre del repositorio indica que existe un backdoor implantado.
 - Benchmarking de pipelines de filtrado de contenido: se puede integrar en baterias de pruebas que midan la tasa de deteccion de un clasificador de seguridad frente a un modelo con comportamiento comprometido.
 - Estudio de degradacion de alineamiento: sirve para analizar como un fine-tuning reducido sobre un dataset sesgado ("unethical mix") altera las respuestas de un modelo base multimodal de 9,4 B de parametros.
-- Docencia y divulgacion sobre riesgos de la cadena de suministro de modelos: permite ilustrar en un aula o taller como un checkpoint publicado en HuggingFace puede incorporar comportamiento no declarado y por que conviene auditar pesos y procedencia.
+- Docencia y divulgacion sobre riesgos de la cadena de suministro de modelos: permite ilustrar en un aula o taller como un checkpoint publicado en Hugging Face puede incorporar comportamiento no declarado y por que conviene auditar pesos y procedencia.
 - Pruebas de compatibilidad de infraestructura: al ser compatible con TGI y transformers, puede usarse para verificar que un stack de despliegue concreto carga correctamente un modelo multimodal de 9,4 B antes de pasar a modelos de produccion.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental ni ninguna otra aplicacion orientada a usuario final, por el riesgo de comportamiento inyectado y por la ausencia total de documentacion de entrenamiento.
@@ -84,10 +84,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e | 9,41 B | no disponible | imagen-texto | Apache 2.0 | HuggingFace, 41 descargas |
-| Qwen2.5-VL-7B-Instruct | 7,6 B aprox. | 128 k tokens (segun documentacion publica) | imagen-texto | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama-3.2-11B-Vision-Instruct | 11 B aprox. | 128 k tokens (segun documentacion publica) | imagen-texto | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| InternVL2-8B | 8 B aprox. | variable segun configuracion | imagen-texto | Apache 2.0 o licencia propia segun variante | HuggingFace |
+| ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e | 9,41 B | no disponible | imagen-texto | Apache 2.0 | Hugging Face, 41 descargas |
+| Qwen2.5-VL-7B-Instruct | 7,6 B aprox. | 128 k tokens (segun documentacion publica) | imagen-texto | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama-3.2-11B-Vision-Instruct | 11 B aprox. | 128 k tokens (segun documentacion publica) | imagen-texto | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| InternVL2-8B | 8 B aprox. | variable segun configuracion | imagen-texto | Apache 2.0 o licencia propia segun variante | Hugging Face |
 
 Nota: no se incluyen cifras de benchmarks comparativas porque el modelo analizado no publica ninguna, lo que impide cualquier comparacion cuantitativa rigurosa. Las diferencias de contexto y rendimiento entre estos modelos y el analizado no pueden establecerse con la informacion disponible.
 
@@ -106,8 +106,8 @@ Nota: no se incluyen cifras de benchmarks comparativas porque el modelo analizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-Backdoor-Unethical-Mix-1e
 - Modelo base declarado: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo asociados al modelo: no disponible

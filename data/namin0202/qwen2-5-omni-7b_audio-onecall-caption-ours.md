@@ -31,7 +31,7 @@ No se proporciona información sobre el proceso de entrenamiento del adaptador: 
 
 - Generacion de descripciones de audio: el adaptador está diseñado para producir captions textuales a partir de una entrada de audio, probablemente de una llamada telefónica completa.
 - Herencia de capacidades del modelo base: al estar basado en Qwen2.5-Omni-7B, el adaptador puede conservar las capacidades multimodales del modelo base (procesamiento de texto, imagen, audio y video, y generación de voz), aunque el ajuste específico podría priorizar la tarea de captioning de audio.
-- Integración con el ecosistema PEFT: al ser un adaptador LoRA, se puede cargar junto con el modelo base usando la librería `peft` de HuggingFace, lo que facilita su uso en pipelines existentes.
+- Integración con el ecosistema PEFT: al ser un adaptador LoRA, se puede cargar junto con el modelo base usando la librería `peft` de Hugging Face, lo que facilita su uso en pipelines existentes.
 - No se confirma soporte de tool calling, agentes o razonamiento multi-paso específico para este adaptador; estas capacidades dependerían del modelo base y de cómo se haya realizado el ajuste.
 
 ## Casos de uso
@@ -76,7 +76,7 @@ No se dispone de información sobre adaptadores LoRA equivalentes para la misma 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/namin0202/qwen2-5-omni-7b_audio-onecall-caption-ours
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/namin0202/qwen2-5-omni-7b_audio-onecall-caption-ours
 - Modelo base Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio oficial de Qwen2.5-Omni en GitHub: https://github.com/QwenLM/Qwen2.5-Omni
 - Informe técnico de Qwen2.5-Omni (PDF): https://raw.githubusercontent.com/QwenLM/Qwen2.5-Omni/main/assets/Qwen2.5_Omni.pdf

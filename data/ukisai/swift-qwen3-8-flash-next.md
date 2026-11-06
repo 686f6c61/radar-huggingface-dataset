@@ -77,10 +77,10 @@ No se han publicado en la informacion disponible puntuaciones numericas por benc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-Qwen3.8-Flash-Next (ukisai) | ~180B totales, activos no disponibles | no disponible | Derivado eficiente en tokens de razonamiento, multimodal, agentico | swift-open-license-1.0, gated, licencia empresarial aparte | HuggingFace, safetensors + GGUF derivados |
-| Qwen3.8-Flash-Next (Qwen) | no disponible en la informacion | no disponible | Modelo base multimodal MoE de razonamiento | no disponible | HuggingFace (modelo base del ajuste) |
+| Swift-Qwen3.8-Flash-Next (ukisai) | ~180B totales, activos no disponibles | no disponible | Derivado eficiente en tokens de razonamiento, multimodal, agentico | swift-open-license-1.0, gated, licencia empresarial aparte | Hugging Face, safetensors + GGUF derivados |
+| Qwen3.8-Flash-Next (Qwen) | no disponible en la informacion | no disponible | Modelo base multimodal MoE de razonamiento | no disponible | Hugging Face (modelo base del ajuste) |
 | ThinkingCap-Qwen3.6-27B (BottleCap AI) | 27B (segun denominacion) | no disponible | Ajuste orientado a razonamiento; fuente del componente de transferencia | no disponible | no disponible |
-| Swift-Qwen3.8-27B (ukisai) | 27B (segun denominacion) | no disponible | Version previa de la familia Swift, con menos sobrepensamiento | no disponible | HuggingFace, UkisAI |
+| Swift-Qwen3.8-27B (ukisai) | 27B (segun denominacion) | no disponible | Version previa de la familia Swift, con menos sobrepensamiento | no disponible | Hugging Face, UkisAI |
 
 No se dispone de puntuaciones comparativas directas entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a enfoque, licencia y disponibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de puntuaciones comparativas directas entre estos modelos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Version GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
 - Version GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

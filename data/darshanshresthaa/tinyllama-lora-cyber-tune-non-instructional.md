@@ -4,7 +4,7 @@
 
 El modelo `Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional` es un adaptador LoRA sobre la base de TinyLlama, un modelo de lenguaje compacto de 1.1B parámetros desarrollado por la comunidad open source. El autor, Darshanshresthaa, ha publicado este adaptador con el objetivo de especializar el modelo en el dominio de la ciberseguridad, según indica el nombre ("cyber-tune"). La etiqueta "Non-Instructional" sugiere que el ajuste no se ha realizado con datos de instrucciones, sino probablemente con texto crudo o corpus específicos del sector.
 
-El modelo hereda la arquitectura de TinyLlama, que es un transformer denso basado en Llama 2, con una longitud de contexto de 2048 tokens. Aunque el repositorio de HuggingFace no contiene información técnica detallada ni datos de entrenamiento, la elección de LoRA como método de ajuste implica que el adaptador añade un número reducido de parámetros sobre los 1.1B del modelo base, lo que facilita su despliegue en entornos con recursos limitados.
+El modelo hereda la arquitectura de TinyLlama, que es un transformer denso basado en Llama 2, con una longitud de contexto de 2048 tokens. Aunque el repositorio de Hugging Face no contiene información técnica detallada ni datos de entrenamiento, la elección de LoRA como método de ajuste implica que el adaptador añade un número reducido de parámetros sobre los 1.1B del modelo base, lo que facilita su despliegue en entornos con recursos limitados.
 
 La relevancia de este modelo radica en la posibilidad de utilizar un LLM pequeño y eficiente para tareas de procesamiento de lenguaje en el ámbito de la ciberseguridad, como análisis de informes de incidentes, extracción de indicadores de compromiso o generación de resúmenes de vulnerabilidades. Sin embargo, al carecer de documentación sobre el dataset de entrenamiento, los resultados son inciertos y requieren validación empírica.
 
@@ -80,7 +80,7 @@ La comparativa directa no es posible sin benchmarks. A diferencia de Phi-2 o Qwe
 
 ## Enlaces
 
-- [HuggingFace - Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional](https://huggingface.co/Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional)
+- [Hugging Face - Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional](https://huggingface.co/Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional)
 - [TinyLlama paper (arXiv)](https://arxiv.org/html/2401.02385)
 - [TinyLlama en Ollama](https://ollama.com/library/tinyllama)
-- [TinyLlama-1.1B-Chat-v1.0 en HuggingFace](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
+- [TinyLlama-1.1B-Chat-v1.0 en Hugging Face](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)

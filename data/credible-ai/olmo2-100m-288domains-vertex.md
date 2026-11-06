@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-100M-288domains-vertex (este) | 102M × 512 checkpoints | no disponible | Proxies para data mixing (LinMix) | MIT | HuggingFace, 104 GB |
-| OLMo 2 (modelos base de AI2) | 7B / 13B (familias publicadas) | no disponible en esta ficha | Modelos de lenguaje abiertos de propósito general | Apache 2.0 (según familia OLMo 2) | HuggingFace |
-| Pythia (EleutherAI) | 70M–12B (suite) | 2.048 tokens (configuración típica de la suite) | Estudio de escalado y dinámica de entrenamiento | Apache 2.0 | HuggingFace |
+| olmo2-100M-288domains-vertex (este) | 102M × 512 checkpoints | no disponible | Proxies para data mixing (LinMix) | MIT | Hugging Face, 104 GB |
+| OLMo 2 (modelos base de AI2) | 7B / 13B (familias publicadas) | no disponible en esta ficha | Modelos de lenguaje abiertos de propósito general | Apache 2.0 (según familia OLMo 2) | Hugging Face |
+| Pythia (EleutherAI) | 70M–12B (suite) | 2.048 tokens (configuración típica de la suite) | Estudio de escalado y dinámica de entrenamiento | Apache 2.0 | Hugging Face |
 
 La comparación directa con OLMo 2 de mayor tamaño o con Pythia no es equivalente en propósito: este repositorio no es un modelo único, sino una suite de 512 proxies de 102M orientada a experimentos de mezcla de datos. Cualquier comparación de calidad generativa con modelos de propósito general resulta desfavorable por diseño y no refleja su función real.
 
@@ -81,7 +81,7 @@ La comparación directa con OLMo 2 de mayor tamaño o con Pythia no es equivalen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-100M-288domains-vertex
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-100M-288domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Dataset de diseño y resultados: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Secuencias tokenizadas de entrenamiento: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

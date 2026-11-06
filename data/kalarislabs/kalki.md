@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kalarislabs/Kalki es un repositorio de modelo publicado por Kalaris Labs en HuggingFace bajo licencia Apache 2.0. La model card asociada no contiene mas que el bloque de metadatos de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra cero descargas y cero likes, y la fecha de creacion consignada (2026-09-23) es posterior a la de esta revision, lo que apunta a un posible error de metadatos o a una publicacion preparatoria sin contenido tecnico final.
+Kalarislabs/Kalki es un repositorio de modelo publicado por Kalaris Labs en Hugging Face bajo licencia Apache 2.0. La model card asociada no contiene mas que el bloque de metadatos de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra cero descargas y cero likes, y la fecha de creacion consignada (2026-09-23) es posterior a la de esta revision, lo que apunta a un posible error de metadatos o a una publicacion preparatoria sin contenido tecnico final.
 
 El unico contexto disponible sobre el autor procede de fuentes corporativas: Kalaris Labs se define como una empresa de investigacion e infraestructura de IA orientada al descubrimiento cientifico, con enfasis en computacion cientifica agentica, ejecucion nativa en GPU, orquestacion multiagente y flujos de trabajo reproducibles. Su comunicacion publica se centra en productos para investigadores e instituciones, no en modelos fundacionales concretos.
 
@@ -92,8 +92,8 @@ No disponible. La comparativa requiere al menos el numero de parametros, la long
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kalarislabs/Kalki
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/Kalarislabs/models
+- Repositorio en Hugging Face: https://huggingface.co/Kalarislabs/Kalki
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/Kalarislabs/models
 - Organizacion en GitHub: https://github.com/KalarisLabs/
 - Sitio corporativo de Kalaris Labs: https://kalarislabs.com/
 - Pagina de productos: https://kalarislabs.com/products

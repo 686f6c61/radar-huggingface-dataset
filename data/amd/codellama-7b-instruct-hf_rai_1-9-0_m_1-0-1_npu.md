@@ -79,14 +79,14 @@ La comparativa se limita a datos estructurales; no se dispone de resultados de b
 - Idioma: solo inglés según la etiqueta del repositorio; el rendimiento en castellano no está garantizado.
 - Contexto: no se especifica la longitud de contexto efectiva en esta distribución; conviene verificar el valor real antes de diseñar flujos con prompts largos.
 - Licencia: Llama 2 impone restricciones de uso comercial (límite de 700 millones de usuarios mensuales, obligaciones de atribución y políticas de uso aceptable); es necesario revisar los términos antes de un despliegue comercial.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face.
 - Dependencia de hardware: está compilado para NPU Ryzen AI; no es portable a otras plataformas sin reconversión.
 - Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere poca validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/CodeLlama-7b-Instruct-hf_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/CodeLlama-7b-Instruct-hf_rai_1.9.0_m_1.0.1_npu
 - Paper de CodeLlama: https://arxiv.org/abs/2308.12950
 - Repositorio oficial de CodeLlama (Meta): https://github.com/facebookresearch/codellama
-- Modelo base en HuggingFace: https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf
+- Modelo base en Hugging Face: https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf
 - Documentación de Ryzen AI: https://ryzenai.docs.amd.com/

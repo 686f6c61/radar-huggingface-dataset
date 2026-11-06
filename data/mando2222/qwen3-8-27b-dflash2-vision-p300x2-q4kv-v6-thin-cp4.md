@@ -91,6 +91,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp4
+- Repositorio Hugging Face: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp4
 - Build anterior referenciada: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

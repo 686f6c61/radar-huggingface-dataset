@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrutiGan.285 es un modelo experimental de generación de imágenes desarrollado por el usuario EM-jusCodes y publicado en HuggingFace bajo licencia MIT. Se trata de una red generativa adversaria (GAN) entrenada desde cero sobre una colección de 285 imágenes inspiradas en la estética Frutiger Aero, un estilo visual asociado a los años 2000 que combina cielos azules luminosos, agua, naturaleza, interfaces brillantes, colores vivos y diseño optimista de la era Y2K.
+FrutiGan.285 es un modelo experimental de generación de imágenes desarrollado por el usuario EM-jusCodes y publicado en Hugging Face bajo licencia MIT. Se trata de una red generativa adversaria (GAN) entrenada desde cero sobre una colección de 285 imágenes inspiradas en la estética Frutiger Aero, un estilo visual asociado a los años 2000 que combina cielos azules luminosos, agua, naturaleza, interfaces brillantes, colores vivos y diseño optimista de la era Y2K.
 
 El modelo no es un producto listo para producción: el propio autor lo describe como un experimento personal realizado "por diversión" con una implementación propia en Python y PyTorch. No se publican detalles de la arquitectura interna (número de parámetros, capas, tipo de generador/discriminador), ni pesos, ni resultados de evaluación. El repositorio tiene un tamaño de 0,0 GB, lo que sugiere que no se han subido checkpoints utilizables.
 
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye datos de arquitectura, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EM-jusCodes/FrutiGan.285
+- Hugging Face: https://huggingface.co/EM-jusCodes/FrutiGan.285
 - Repositorio o paper: no disponible
 - Demos: no disponible
 - Otros enlaces relevantes: no disponible (los resultados de la búsqueda web no guardan relación con el modelo: em-lyon.com, elektro-material.ch, fr.emclient.com, em-strasbourg.com, fr.wikipedia.org/wiki/EM)

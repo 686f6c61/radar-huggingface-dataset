@@ -74,8 +74,8 @@ Mejores campos: governing law (F1 92), document name (88), agreement date (82), 
 
 | Modelo | Parametros | Contexto | Span F1 micro (CUAD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-ClauseLM | 3,21B | 4.096 tokens | 61,7 | Llama 3.2 Community | HuggingFace, safetensors |
-| Llama-3.2-3B-Instruct (base) | 3,21B | 128.000 tokens | 9,6 (zero-shot) | Llama 3.2 Community | HuggingFace |
+| Llama-3.2-3B-ClauseLM | 3,21B | 4.096 tokens | 61,7 | Llama 3.2 Community | Hugging Face, safetensors |
+| Llama-3.2-3B-Instruct (base) | 3,21B | 128.000 tokens | 9,6 (zero-shot) | Llama 3.2 Community | Hugging Face |
 | Qwen2.5-1.5B + QLoRA (misma receta) | 1,5B | no disponible | 57,2 | no disponible | receta documentada en el repo del proyecto |
 | Legal-BERT NER | no disponible | no disponible | 42,7 | no disponible | arquitectura de token classification |
 
@@ -94,8 +94,8 @@ La comparación muestra que el ajuste especializado multiplica por más de seis 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Z-Nadjib/Llama-3.2-3B-ClauseLM
+- Modelo en Hugging Face: https://huggingface.co/Z-Nadjib/Llama-3.2-3B-ClauseLM
 - Repositorio del proyecto (código, entrenamiento y evaluación): https://github.com/Z-Nadjib/ClauseLM-ContractExtraction-CUAD
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset CUAD (The Atticus Project): https://www.atticusprojectai.org/cuad
-- Dataset en HuggingFace: https://huggingface.co/datasets/theatticusproject/cuad
+- Dataset en Hugging Face: https://huggingface.co/datasets/theatticusproject/cuad

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Entei es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. La model card asociada está prácticamente vacía: se reduce al campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones, lo que apunta a una publicación reciente, experimental o de carácter personal.
+Entei es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. La model card asociada está prácticamente vacía: se reduce al campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluación. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones, lo que apunta a una publicación reciente, experimental o de carácter personal.
 
 No se dispone de información verificable sobre arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo: los enlaces obtenidos corresponden a la plataforma de música Spotify y son completamente ajenos a este repositorio.
 
@@ -42,7 +42,7 @@ El único dato estructural aprovechable es el tamaño del repositorio (0,1 GB). 
 - Razonamiento, matemáticas y generación de código: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el campo de idiomas de HuggingFace está vacío.
+- Capacidades multilingües: no disponible; el campo de idiomas de Hugging Face está vacío.
 - Capacidades multimodales (visión, audio): no disponible.
 - Modo de razonamiento explícito (thinking mode): no disponible.
 - Capacidad de instrucciones (chat template): no disponible.
@@ -52,7 +52,7 @@ El único dato estructural aprovechable es el tamaño del repositorio (0,1 GB). 
 No es posible recomendar casos de uso concretos sin documentación técnica ni evaluación. Los escenarios que se enumeran a continuación son hipótesis condicionadas al tamaño reducido del repositorio y deben validarse empíricamente antes de cualquier adopción:
 
 - Clasificación de texto ligera: si el modelo dispone de una cabeza o plantilla adecuada, podría emplearse para etiquetado de tickets o moderación de comentarios en entornos con recursos muy limitados.
-- Prototipado rápido en local: su hipotético tamaño reducido permitiría cargarlo en un portátil sin GPU dedicada para experimentar con pipelines de HuggingFace `transformers`.
+- Prototipado rápido en local: su hipotético tamaño reducido permitiría cargarlo en un portátil sin GPU dedicada para experimentar con pipelines de Hugging Face `transformers`.
 - Generación de texto acotada en dispositivos de borde: un modelo de decenas de millones de parámetros podría ejecutarse en Raspberry Pi o móviles mediante llama.cpp u Ollama, siempre que existan pesos en GGUF.
 - Filtrado previo en un pipeline de recuperación (RAG): como reranker o clasificador de relevancia de baja latencia, en caso de que el autor documente su comportamiento.
 - Fine-tuning educativo: útil como banco de pruebas para aprender flujos de ajuste fino supervisado con datasets pequeños.
@@ -78,10 +78,10 @@ No es posible establecer una comparativa rigurosa: se desconocen los parámetros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Ryanham1lton/Entei | no disponible | no disponible | CC BY 4.0 | HuggingFace, sin descargas registradas | no disponible |
-| Qwen2.5-0.5B | ~0,49B | 32k (version base) | Apache 2.0 | HuggingFace, ampliamente adoptado | no comparable (datos de Entei ausentes) |
-| SmolLM2-135M | ~135M | 8k | Apache 2.0 | HuggingFace | no comparable (datos de Entei ausentes) |
-| TinyLlama-1.1B | ~1,1B | 2k | Apache 2.0 | HuggingFace | no comparable (datos de Entei ausentes) |
+| Ryanham1lton/Entei | no disponible | no disponible | CC BY 4.0 | Hugging Face, sin descargas registradas | no disponible |
+| Qwen2.5-0.5B | ~0,49B | 32k (version base) | Apache 2.0 | Hugging Face, ampliamente adoptado | no comparable (datos de Entei ausentes) |
+| SmolLM2-135M | ~135M | 8k | Apache 2.0 | Hugging Face | no comparable (datos de Entei ausentes) |
+| TinyLlama-1.1B | ~1,1B | 2k | Apache 2.0 | Hugging Face | no comparable (datos de Entei ausentes) |
 
 La comparación sustantiva (calidad, contexto efectivo, latencia) queda pendiente de que el autor publique especificaciones o de que se ejecuten evaluaciones independientes.
 
@@ -90,7 +90,7 @@ La comparación sustantiva (calidad, contexto efectivo, latencia) queda pendient
 - Ausencia total de documentación: la model card no describe arquitectura, datos de entrenamiento, sesgos ni limitaciones, lo que impide cualquier evaluación de riesgo.
 - Riesgo de alucinación: desconocido, pero en modelos de muy baja cardinalidad sin ajuste por preferencias suele ser elevado; no verificable en este caso.
 - Sesgos conocidos: no documentados. Sin información sobre la composición del corpus de entrenamiento no puede estimarse el sesgo lingüístico, cultural o de dominio.
-- Cobertura idiomática: no declarada; el campo de idiomas de HuggingFace está vacío, por lo que no puede asumirse soporte del castellano ni de ningún otro idioma.
+- Cobertura idiomática: no declarada; el campo de idiomas de Hugging Face está vacío, por lo que no puede asumirse soporte del castellano ni de ningún otro idioma.
 - Licencia CC BY 4.0: permite uso comercial y obras derivadas con atribución al autor, sin cláusulas de compartición igual. Es una licencia permisiva, pero conviene verificar que el autor tenga derechos sobre todos los artefactos publicados (pesos, tokenizador, datasets).
 - Sin tracción ni validación comunitaria: cero descargas y cero likes implican ausencia de retroalimentación externa, de incidencias reportadas y de casos de uso probados.
 - Advertencia de procedencia: el nombre del repositorio y la ausencia de documentación no permiten descartar que se trate de un artefacto de prueba, un volcado parcial o un modelo no funcional. No debe desplegarse en producción sin inspección previa de los archivos.
@@ -99,5 +99,5 @@ La comparación sustantiva (calidad, contexto efectivo, latencia) queda pendient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Entei
+- Hugging Face: https://huggingface.co/Ryanham1lton/Entei
 - No se han encontrado papers, blogs, repositorios, demos ni discusiones tecnicas relevantes en la busqueda web realizada. Los resultados obtenidos (open.spotify.com y subdominios asociados) son ajenos al modelo y se descartan como fuentes.

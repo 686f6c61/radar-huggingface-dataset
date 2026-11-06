@@ -88,7 +88,7 @@ Frente al modelo de origen, este export pierde las cabezas de actividad vocal y 
 - La cuantización int8 es dinámica y deja la Conv depthwise en fp32; puede introducir una degradación de precisión no cuantificada en los log-probs. El fp16 mantiene la entrada y la salida en fp32 y ejecuta el LogSoftmax en fp32.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/redbaty/ytm-lyrics-aligner
+- Modelo en Hugging Face: https://huggingface.co/redbaty/ytm-lyrics-aligner
 - Modelo de origen: https://huggingface.co/mrfakename/w2v-bert-2.0-music-lyrics-ctc
 - Modelo intermedio (música): https://huggingface.co/mrfakename/w2v-bert-2.0-music
 - Modelo base de Meta AI: https://huggingface.co/facebook/w2v-bert-2.0

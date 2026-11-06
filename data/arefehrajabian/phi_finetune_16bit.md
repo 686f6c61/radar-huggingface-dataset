@@ -2,7 +2,7 @@
 
 ## Resumen
 
-arefehRajabian/phi_finetune_16bit es un modelo de lenguaje de texto basado en la arquitectura Llama, desarrollado por arefehRajabian como un ajuste fino (fine-tuning) del modelo base unsloth/phi-4-bnb-4bit. El modelo se ha entrenado con las librerias Unsloth y TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces mas rapido que los metodos convencionales. Esta pensado para tareas de generacion de texto conversacional en ingles.
+arefehRajabian/phi_finetune_16bit es un modelo de lenguaje de texto basado en la arquitectura Llama, desarrollado por arefehRajabian como un ajuste fino (fine-tuning) del modelo base unsloth/phi-4-bnb-4bit. El modelo se ha entrenado con las librerias Unsloth y TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces mas rapido que los metodos convencionales. Esta pensado para tareas de generacion de texto conversacional en ingles.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Al estar basado en Phi-4, hereda las capacidades de razonamiento y generacion de texto de la familia Phi de Microsoft, aunque el proceso de ajuste fino puede haber modificado su comportamiento especifico. El repositorio no incluye informacion detallada sobre el dataset de entrenamiento, el numero de parametros finales ni los resultados de evaluacion, por lo que su rendimiento real no puede verificarse a partir de los datos publicados.
 
@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial s
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama, un transformer autoregresivo con mecanismos de atencion por capas. El ajuste fino parte del modelo unsloth/phi-4-bnb-4bit, que es una version cuantizada a 4 bits de Phi-4, la familia de modelos de lenguaje pequenos de Microsoft. El entrenamiento se realizo con la libreria Unsloth, que optimiza el uso de memoria y velocidad durante el ajuste fino, y con la libreria TRL de HuggingFace para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado.
+El modelo se basa en la arquitectura Llama, un transformer autoregresivo con mecanismos de atencion por capas. El ajuste fino parte del modelo unsloth/phi-4-bnb-4bit, que es una version cuantizada a 4 bits de Phi-4, la familia de modelos de lenguaje pequenos de Microsoft. El entrenamiento se realizo con la libreria Unsloth, que optimiza el uso de memoria y velocidad durante el ajuste fino, y con la libreria TRL de Hugging Face para el pipeline de entrenamiento con reinforcement learning o fine-tuning supervisado.
 
 No se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El modelo se subio en precision de 16 bits, lo que sugiere que el ajuste fino se realizo en esta precision a partir del modelo base cuantizado. La informacion publica no incluye detalles sobre innovaciones tecnicas adicionales.
 
@@ -30,7 +30,7 @@ No se proporcionan datos sobre el numero de tokens de entrenamiento, la composic
 - Generacion de texto conversacional en ingles.
 - Razonamiento basico y respuesta a instrucciones, heredado de la familia Phi-4.
 - Soporte para tareas de chat y dialogo multi-turno.
-- Compatible con pipelines de text-generation de HuggingFace Transformers.
+- Compatible con pipelines de text-generation de Hugging Face Transformers.
 - No se ha confirmado soporte para tool calling, function calling ni capacidades de agente.
 - No se ha confirmado soporte para vision, audio u otras modalidades.
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: no disponible con exactitud, pero al basarse en Phi-4 (tipicamente 14B parametros) y subirse en 16-bit, se estima que requiere al menos 16-24 GB de VRAM para inferencia en precision completa.
 - GPU recomendadas: NVIDIA A100, H100, RTX 4090 o GPUs con al menos 24 GB de VRAM para ejecucion comoda.
 - En consumer GPU: posible en RTX 4090 (24 GB) o RTX 3090 (24 GB) con cuantizacion adicional, aunque no se han publicado pruebas.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y HuggingFace TGI, segun los tags del modelo.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y Hugging Face TGI, segun los tags del modelo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arefehRajabian/phi_finetune_16bit | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/phi-4-bnb-4bit | ~14B (estimado) | no disponible | Apache 2.0 | HuggingFace |
-| Microsoft Phi-4 | ~14B | 128K (estimado) | MIT | Azure, HuggingFace |
+| arefehRajabian/phi_finetune_16bit | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/phi-4-bnb-4bit | ~14B (estimado) | no disponible | Apache 2.0 | Hugging Face |
+| Microsoft Phi-4 | ~14B | 128K (estimado) | MIT | Azure, Hugging Face |
 
 La comparativa se basa en datos publicos de la familia Phi-4, ya que el modelo analizado no publica especificaciones propias. El rendimiento relativo no puede determinarse sin benchmarks.
 
@@ -76,7 +76,7 @@ La comparativa se basa en datos publicos de la familia Phi-4, ya que el modelo a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arefehRajabian/phi_finetune_16bit
+- Hugging Face: https://huggingface.co/arefehRajabian/phi_finetune_16bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Pagina oficial de Phi (Microsoft): https://azure.microsoft.com/en-us/products/phi/
 - Modelo base: https://huggingface.co/unsloth/phi-4-bnb-4bit

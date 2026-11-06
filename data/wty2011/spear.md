@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPEAR es un modelo publicado en HuggingFace por el usuario wty2011 bajo licencia Apache 2.0. A fecha de la informacion disponible, el repositorio no incluye model card descriptiva: el README se limita al bloque de metadatos de licencia, sin explicacion de arquitectura, entrenamiento, capacidades ni uso previsto. El tamano del repositorio es de aproximadamente 0,5 GB, lo que sugiere un conjunto de pesos de escala reducida, aunque no se confirma el numero de parametros ni el formato de los pesos.
+SPEAR es un modelo publicado en Hugging Face por el usuario wty2011 bajo licencia Apache 2.0. A fecha de la informacion disponible, el repositorio no incluye model card descriptiva: el README se limita al bloque de metadatos de licencia, sin explicacion de arquitectura, entrenamiento, capacidades ni uso previsto. El tamano del repositorio es de aproximadamente 0,5 GB, lo que sugiere un conjunto de pesos de escala reducida, aunque no se confirma el numero de parametros ni el formato de los pesos.
 
 No se dispone de informacion sobre el pipeline asociado, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion del repositorio son del 29 de octubre de 2026, con apenas cinco minutos de diferencia entre ambas, lo que indica una publicacion reciente y sin iteraciones posteriores.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens, la composic
 - Pruebas de inferencia controladas: cargar los pesos en un entorno aislado para verificar que el modelo genera texto coherente y en que idiomas, como paso previo a cualquier decision de adopcion.
 - Fine-tuning exploratorio: si los pesos resultan ser de un modelo base pequeno, podrian servir como punto de partida para ajuste supervisado en tareas acotadas, siempre tras validar la arquitectura real.
 - Prototipado interno sin requisitos de soporte: la licencia Apache 2.0 permite uso comercial, pero la falta de documentacion desaconseja cualquier despliegue en produccion sin una evaluacion previa exhaustiva.
-- Analisis comparativo de publicaciones: util para estudiar practicas de publicacion de modelos en HuggingFace y los riesgos de repositorios sin model card.
+- Analisis comparativo de publicaciones: util para estudiar practicas de publicacion de modelos en Hugging Face y los riesgos de repositorios sin model card.
 - Docencia y formacion: puede emplearse como ejemplo practico de por que la documentacion de un modelo es un requisito para su evaluacion responsable.
 
 ## Benchmarks y rendimiento
@@ -73,5 +73,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wty2011/SPEAR
+- Repositorio en Hugging Face: https://huggingface.co/wty2011/SPEAR
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

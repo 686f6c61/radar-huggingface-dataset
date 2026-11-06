@@ -1,7 +1,7 @@
 # omegazurich/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 
 ## Resumen
-El modelo `omegazurich/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario omegazurich, derivado de la familia Qwen 3.x y distribuido exclusivamente en formato GGUF. Con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones) y un repositorio de 126,2 GB, se presenta como un modelo de fusión multi-etapa ("multi-stage tuned", "multi-state merge") que integra "ADN" de hasta veinte modelos base, según la model card del autor.
+El modelo `omegazurich/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario omegazurich, derivado de la familia Qwen 3.x y distribuido exclusivamente en formato GGUF. Con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones) y un repositorio de 126,2 GB, se presenta como un modelo de fusión multi-etapa ("multi-stage tuned", "multi-state merge") que integra "ADN" de hasta veinte modelos base, según la model card del autor.
 
 El modelo se comercializa bajo una retórica de marketing muy agresiva (referencias a "arc-c 747", "900 ARC-E", "zona de inteligencia de OpenAI, Claude y Gemini", "Turbo Brilliance 50X" y "15 AI Constructs"), pero no aporta resultados de benchmarks verificables, metodología reproducible ni comparaciones formales. La model card describe un sistema de "modos" de razonamiento e instrucción (27 modos de razonamiento, 27 de instrucción y 9 modos "xhigh") que el usuario activa mediante el propio prompt o la API, sin botones ni configuración externa.
 
@@ -78,7 +78,7 @@ La comparación directa es difícil porque el modelo evaluado no publica metodol
 - Repositorio sin descargas ni likes en el momento de la consulta, lo que sugiere ausencia de validación por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/omegazurich/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/omegazurich/Qwen3.8-27B-Jumbo-Fusion-IQ-747-900-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Dataset referenciado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset referenciado: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets
 - Colección de modelos con Turbo Brilliance (enlace truncado en la model card, no disponible completo): https://huggingface.co/collections/

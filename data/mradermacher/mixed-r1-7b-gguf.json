@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mixed-R1-7B-GGUF",
+  "slug": "mradermacher-mixed-r1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mixed-R1-7B-GGUF",
+  "created_at": "2025-05-30T10:19:30.000Z",
+  "updated_at": "2026-11-06T09:01:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354155008,
+  "storage_human": "70.4 GB",
+  "base_model": "shilinxu/Mixed-R1-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

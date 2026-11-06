@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Phi-3.5-mini-instruct (base) | 3.8B | 128K | MIT | HuggingFace | Modelo original, sin fine-tuning TTRL |
-| logan7000/llm-math345-ttrl-phi35mini-full | 3.8B | no disponible | no disponible | HuggingFace | Fine-tuning TTRL truncado |
-| logan7000/llm-math345-ttrl-phi4mini-endpoint | ~4B (Phi-4-mini) | no disponible | no disponible | HuggingFace | Variante del mismo autor sobre Phi-4-mini |
+| Phi-3.5-mini-instruct (base) | 3.8B | 128K | MIT | Hugging Face | Modelo original, sin fine-tuning TTRL |
+| logan7000/llm-math345-ttrl-phi35mini-full | 3.8B | no disponible | no disponible | Hugging Face | Fine-tuning TTRL truncado |
+| logan7000/llm-math345-ttrl-phi4mini-endpoint | ~4B (Phi-4-mini) | no disponible | no disponible | Hugging Face | Variante del mismo autor sobre Phi-4-mini |
 
 No se dispone de comparaciones de rendimiento entre estos modelos porque no hay benchmarks publicados. La comparativa se limita a características estructurales y de disponibilidad.
 

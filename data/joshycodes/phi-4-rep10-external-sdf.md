@@ -21,7 +21,7 @@ Su relevancia es estrictamente experimental: el autor indica de forma explícita
 | Formato de pesos | safetensors (repo gestionado con Xet) |
 
 ## Arquitectura y entrenamiento
-El modelo parte de `microsoft/phi-4`, un transformer denso decoder-only de 14B parámetros cuya receta de entrenamiento, descrita en el Phi-4 Technical Report, se centra en la calidad de datos e incorpora datos sintéticos de forma estratégica a lo largo del preentrenamiento. Este checkpoint no introduce cambios arquitectónicos: mantiene la misma estructura, el mismo tokenizador y la misma ventana de contexto que el modelo base, y solo modifica los pesos mediante continued pretraining. El archivo de configuración de HuggingFace expone la arquitectura con el tag `phi3`, coherente con la implementación Phi3ForCausalLM usada por la familia Phi.
+El modelo parte de `microsoft/phi-4`, un transformer denso decoder-only de 14B parámetros cuya receta de entrenamiento, descrita en el Phi-4 Technical Report, se centra en la calidad de datos e incorpora datos sintéticos de forma estratégica a lo largo del preentrenamiento. Este checkpoint no introduce cambios arquitectónicos: mantiene la misma estructura, el mismo tokenizador y la misma ventana de contexto que el modelo base, y solo modifica los pesos mediante continued pretraining. El archivo de configuración de Hugging Face expone la arquitectura con el tag `phi3`, coherente con la implementación Phi3ForCausalLM usada por la familia Phi.
 
 El entrenamiento consistió en un continued pretraining sobre pesos completos (no LoRA ni adaptadores), con learning rate 1e-05, una única época y un total de 15.596.130 tokens distribuidos en 22.321 documentos. El corpus declarado es `joshycodes/qwen-constitutional-sdf-corpus`. Según la model card, el material fue redactado "por el modelo, como el personaje que ya es, tras explicársele cómo surgió su personaje y cómo funciona SDF", dentro de un marco de trabajo sobre bienestar de modelos. No obstante, la propia ficha especifica que de los 22.321 documentos "0 eran autoescritos y 22.321 eran texto ordinario", una aparente contradicción entre el encuadre narrativo y la composición real del corpus que conviene tener presente. No se documentan fases de RLHF, DPO ni evaluación posterior.
 
@@ -84,9 +84,9 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 - Corpus de entrenamiento no convencional: el uso del dataset `qwen-constitutional-sdf-corpus` (con prefijo qwen) sobre un modelo phi-4 añade incertidumbre sobre la idoneidad del material.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/phi-4-rep10-external-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/phi-4-rep10-external-sdf
 - Archivos del repositorio: https://huggingface.co/joshycodes/phi-4-rep10-external-sdf/tree/main
-- Corpus utilizado: `joshycodes/qwen-constitutional-sdf-corpus` (en HuggingFace)
+- Corpus utilizado: `joshycodes/qwen-constitutional-sdf-corpus` (en Hugging Face)
 - Perfil del autor en GitHub: https://github.com/JoshyCodes
 - Phi-4 Technical Report (Microsoft): https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf
 - Familia Phi en Microsoft Azure: https://azure.microsoft.com/en-us/products/phi/

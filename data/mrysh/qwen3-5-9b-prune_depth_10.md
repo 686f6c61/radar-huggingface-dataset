@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-prune_depth_10 | 8.298.581.952 | no disponible | Texto, podado por profundidad | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (base) | no disponible en la informacion | no disponible | Multimodal con vision y MTP | Apache 2.0 | HuggingFace |
-| Otras variantes del benchmark (4 modelos x 8 variantes) | no disponible | no disponible | Podadas y cuantizadas | segun modelo base | HuggingFace |
+| qwen3.5-9b-prune_depth_10 | 8.298.581.952 | no disponible | Texto, podado por profundidad | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (base) | no disponible en la informacion | no disponible | Multimodal con vision y MTP | Apache 2.0 | Hugging Face |
+| Otras variantes del benchmark (4 modelos x 8 variantes) | no disponible | no disponible | Podadas y cuantizadas | segun modelo base | Hugging Face |
 
 La comparacion cuantitativa con el modelo base y con las variantes cuantizadas forma parte del benchmark del autor, pero las cifras no se incluyen en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa con el modelo base y con las variantes cuantizadas f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_10
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - NVIDIA ModelOpt (herramienta de poda): no disponible enlace directo en la informacion proporcionada
 - vLLM (motor de inferencia del benchmark): no disponible enlace directo en la informacion proporcionada

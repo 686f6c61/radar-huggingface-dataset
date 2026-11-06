@@ -2,7 +2,7 @@
 
 ## Resumen
 
-surya-ocr-2.5-mlx-4bit es una cuantizacion en 4 bits del modelo datalab-to/surya-ocr-2.5, publicada por el usuario fwgpiyawudk en HuggingFace. Se trata de una conversion al formato MLX, el framework de Apple para inferencia y entrenamiento en silicio unificado (chips M-series), lo que la hace directamente utilizable en macOS mediante la libreria `mlx` y el ecosistema `mlx-vlm` para tareas de imagen-a-texto.
+surya-ocr-2.5-mlx-4bit es una cuantizacion en 4 bits del modelo datalab-to/surya-ocr-2.5, publicada por el usuario fwgpiyawudk en Hugging Face. Se trata de una conversion al formato MLX, el framework de Apple para inferencia y entrenamiento en silicio unificado (chips M-series), lo que la hace directamente utilizable en macOS mediante la libreria `mlx` y el ecosistema `mlx-vlm` para tareas de imagen-a-texto.
 
 El modelo base, surya-ocr-2.5, es un sistema de OCR desarrollado por Datalab (responsables tambien de Marker y Surya). La arquitectura subyacente, segun los tags del repositorio, es `qwen3_5`, es decir, un transformer multimodal derivado de la familia Qwen 3.5, adaptado para reconocimiento optico de caracteres y transcripcion de documentos. Con 689.356.864 parametros totales (aproximadamente 689 millones), se situa en la categoria de modelos compactos, lo que permite ejecucion en hardware de consumo.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwgpiyawudk/surya-ocr-2.5-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/fwgpiyawudk/surya-ocr-2.5-mlx-4bit
 - Modelo base: https://huggingface.co/datalab-to/surya-ocr-2.5
 - Licencia (referenciada en la model card): LICENSE del repositorio
 - Repositorio de Datalab (Surya): no disponible en la informacion proporcionada

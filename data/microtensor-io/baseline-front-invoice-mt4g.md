@@ -25,7 +25,7 @@ Su relevancia practica radica en que permite ejecutar un modelo de ~4B en hardwa
 
 No se dispone de informacion sobre la arquitectura interna del modelo en los datos proporcionados. El repositorio es una conversion/cuantizacion a GGUF del modelo `Qwen/Qwen3.5-4B`, por lo que la arquitectura, el numero de tokens de entrenamiento, la composicion del dataset y las fases de alineacion (RLHF, DPO u otras) corresponden al modelo base, cuyos detalles no se reproducen en la model card publicada.
 
-El unico detalle tecnico aportado por el autor es el metodo de cuantizacion: Q4_K_M con uso de imatrix (matriz de importancia), una tecnica que pondera la importancia de los pesos durante la cuantizacion para reducir la perdida de calidad en modelos pequenos. El modelo se etiqueta ademas como `conversational` y `endpoints_compatible`, lo que sugiere que esta pensado para su uso en inferencia conversacional y para desplegarse mediante endpoints compatibles con el ecosistema de HuggingFace. No se documenta ninguna innovacion adicional.
+El unico detalle tecnico aportado por el autor es el metodo de cuantizacion: Q4_K_M con uso de imatrix (matriz de importancia), una tecnica que pondera la importancia de los pesos durante la cuantizacion para reducir la perdida de calidad en modelos pequenos. El modelo se etiqueta ademas como `conversational` y `endpoints_compatible`, lo que sugiere que esta pensado para su uso en inferencia conversacional y para desplegarse mediante endpoints compatibles con el ecosistema de Hugging Face. No se documenta ninguna innovacion adicional.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU de consumo: cabe sin problemas en tarjetas con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 2060 de 6 GB, GTX 1660 de 6 GB); en GPUs de 8-12 GB se pueden ejecutar varias instancias o contextos mas largos.
 - Ejecucion en CPU: viable gracias al formato GGUF, con velocidades dependientes del numero de nucleos y del ancho de banda de memoria; no se dispone de cifras concretas.
 - GPUs de datacenter: para produccion con alta concurrencia puede desplegarse en A100, H100 o L40S, aunque el modelo esta muy por debajo de la capacidad de estas tarjetas y lo habitual seria consolidar varias replicas por GPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con endpoints de HuggingFace (la etiqueta `endpoints_compatible` del repositorio sugiere esta via). El soporte de GGUF en vLLM y TGI existe pero es mas limitado que con pesos safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con endpoints de Hugging Face (la etiqueta `endpoints_compatible` del repositorio sugiere esta via). El soporte de GGUF en vLLM y TGI existe pero es mas limitado que con pesos safetensors.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ La comparacion se realiza a nivel de formato, tamano y licencia; no hay datos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/microtensor-io/baseline-front-invoice-mt4g
+- Repositorio en Hugging Face: https://huggingface.co/microtensor-io/baseline-front-invoice-mt4g
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio adicionales: no disponible (las busquedas web realizadas no devolvieron resultados relacionados con el modelo)

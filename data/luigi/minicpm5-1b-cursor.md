@@ -85,7 +85,7 @@ La comparación con Qwen3.5-9B es directa en la tabla de benchmarks del proyecto
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Luigi/minicpm5-1b-cursor
+- Repositorio Hugging Face del modelo: https://huggingface.co/Luigi/minicpm5-1b-cursor
 - Demo WASM en navegador: https://hf.co/spaces/Luigi/cursor-wasm-demo
 - Repositorio de experimentos: https://huggingface.co/Luigi/minicpm5-1b-cursor-experiments
 - Repositorio del modelo base MiniCPM5-1B: https://github.com/OpenBMB/MiniCPM

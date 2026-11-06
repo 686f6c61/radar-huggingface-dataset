@@ -112,9 +112,9 @@ No se han publicado en la informacion disponible resultados del modelo base `mic
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
 | sigmanih/microsoft-phi-4-GGUF-Q4_K_M | 14,66 B | 16.384 | GGUF Q4_K_M | other (base MIT) | 154 descargas, 1 like | 75/100 sobre subconjuntos (dato del autor) |
-| microsoft/phi-4 (modelo base) | 14,66 B | 16.384 | safetensors (bf16) | MIT | publico en HuggingFace | MMLU 84,8 (referencia externa publicada por Microsoft, no incluida en la informacion proporcionada) |
-| Qwen2.5-14B-Instruct | ~14,7 B | 32.768 | safetensors, GGUF | Apache-2.0 | publico en HuggingFace | no disponible |
-| Llama-3.1-8B-Instruct | 8 B | 131.072 | safetensors, GGUF | Llama 3.1 Community License | publico en HuggingFace | no disponible |
+| microsoft/phi-4 (modelo base) | 14,66 B | 16.384 | safetensors (bf16) | MIT | publico en Hugging Face | MMLU 84,8 (referencia externa publicada por Microsoft, no incluida en la informacion proporcionada) |
+| Qwen2.5-14B-Instruct | ~14,7 B | 32.768 | safetensors, GGUF | Apache-2.0 | publico en Hugging Face | no disponible |
+| Llama-3.1-8B-Instruct | 8 B | 131.072 | safetensors, GGUF | Llama 3.1 Community License | publico en Hugging Face | no disponible |
 
 La comparacion relevante es contra el propio modelo base: esta cuantizacion ocupa un tercio del espacio en disco (8,44 GB frente a ~29 GB en bf16) y reduce el requisito de VRAM de forma proporcional, a cambio de la perdida de precision inherente a 4 bits y de la perdida de la licencia MIT original en la declaracion del repositorio. Frente a alternativas de contexto largo como Qwen2.5-14B (32K) o Llama-3.1-8B (128K), la ventana de 16.384 tokens de phi-4 es la limitacion estructural mas destacable.
 
@@ -133,9 +133,9 @@ La comparacion relevante es contra el propio modelo base: esta cuantizacion ocup
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_M
 - Modelo base `microsoft/phi-4`: https://huggingface.co/microsoft/phi-4
 - Repositorio de Sigma Studio (herramienta del autor): https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Phi-4 Technical Report (Microsoft, arXiv:2412.08905): https://arxiv.org/abs/2412.08905
 - Pagina de licencia de referencia del modelo base (MIT): https://huggingface.co/microsoft/phi-4/blob/main/LICENSE

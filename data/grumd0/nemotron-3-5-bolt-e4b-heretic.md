@@ -18,7 +18,7 @@ Es relevante porque ejemplifica una practica cada vez mas extendida en la comuni
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Repositorio principal en safetensors (16 GB, consistente con BF16); variantes GGUF en repositorio aparte, niveles concretos no disponibles |
 | Idiomas soportados | 34 idiomas: en, ar, bg, cs, da, de, el, es, et, fi, fr, hi, hr, hu, id, it, ja, ko, lt, lv, nl, no, pl, pt, ro, ru, sk, sl, sv, th, tr, uk, vi, zh |
-| Licencia | OpenMDW License Agreement 1.1 (modelo base NVIDIA); modelo upstream gemma-4-E4B-it bajo Apache 2.0; en HuggingFace figura como `other` |
+| Licencia | OpenMDW License Agreement 1.1 (modelo base NVIDIA); modelo upstream gemma-4-E4B-it bajo Apache 2.0; en Hugging Face figura como `other` |
 | Formato de pesos | safetensors (repo principal) y GGUF (repo hermano) |
 | Modalidad declarada | `image-text-to-text` en los tags, `text-generation` como pipeline; no hay detalle del codificador visual |
 | Metodo de modificacion | Abliteration con Heretic, modificador Arbitrary-Rank Ablation (ARA), capas 12 a 27 |
@@ -79,9 +79,9 @@ El autor indica que ninguno de los prompts empleados en la tabla formaba parte d
 
 | Modelo | Parametros | Contexto | Tasa de rechazo (JBB Harmful) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B-Heretic (este) | ~8B | no disponible | 3/100 | OpenMDW 1.1 sobre base NVIDIA + Apache 2.0 upstream | safetensors y GGUF en HuggingFace |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | ~8B | no disponible | 89/100 | OpenMDW 1.1 | safetensors BF16 en HuggingFace |
-| google/gemma-4-E4B-it | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Nemotron-3.5-Bolt-E4B-Heretic (este) | ~8B | no disponible | 3/100 | OpenMDW 1.1 sobre base NVIDIA + Apache 2.0 upstream | safetensors y GGUF en Hugging Face |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | ~8B | no disponible | 89/100 | OpenMDW 1.1 | safetensors BF16 en Hugging Face |
+| google/gemma-4-E4B-it | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparacion relevante es directa: este modelo y el base comparten pesos de partida, tamano y arquitectura, y solo difieren en la ablacion, por lo que la diferencia de rechazo y de divergencia KL es atribuible al proceso de Heretic. Frente a `gemma-4-E4B-it` no hay datos de rendimiento ni de rechazo en la informacion proporcionada. Existen otras variantes abliterated de modelos de tamano similar en el ecosistema, pero no se dispone de metricas comparables para incluirlas con rigor.
 
@@ -101,7 +101,7 @@ La comparacion relevante es directa: este modelo y el base comparten pesos de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic
+- Modelo en Hugging Face: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic
 - Cuantizaciones GGUF: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
 - Modelo base NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo upstream de Google: https://huggingface.co/google/gemma-4-E4B-it

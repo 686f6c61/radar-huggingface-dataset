@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pixedar/jspace-strange-loop | Lector de interpretabilidad sobre Qwen3-8B | no disponible | ventana de 16 observaciones | AGPL-3.0-only | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | LLM generativo base | 8B (no confirmado en esta ficha) | no disponible | no disponible en esta ficha | HuggingFace |
+| Pixedar/jspace-strange-loop | Lector de interpretabilidad sobre Qwen3-8B | no disponible | ventana de 16 observaciones | AGPL-3.0-only | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | LLM generativo base | 8B (no confirmado en esta ficha) | no disponible | no disponible en esta ficha | Hugging Face |
 | Alternativas de interpretabilidad mecanicista | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (lectores de activaciones o esquemas de atención experimentales) en la documentación proporcionada.
@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pixedar/jspace-strange-loop
+- Hugging Face: https://huggingface.co/Pixedar/jspace-strange-loop
 - Estudio unificado: https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html
 - Informe científico y código: https://github.com/Pixedar/jspace-strange-loop
 - Evidencia numérica (dataset): https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence

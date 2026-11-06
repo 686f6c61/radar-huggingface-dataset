@@ -74,10 +74,10 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de métricas de latencia o 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift Bonsai 2 27B Katana MTP GGUF (este repo) | 27,3B | 40.960 en perfil recomendado (262.144 en el base segun terceros) | PTQ1_0 ternario + MTP Q8_0 | prism-bonsai-community | GGUF unico de 6,4 GB en HuggingFace |
+| Swift Bonsai 2 27B Katana MTP GGUF (este repo) | 27,3B | 40.960 en perfil recomendado (262.144 en el base segun terceros) | PTQ1_0 ternario + MTP Q8_0 | prism-bonsai-community | GGUF unico de 6,4 GB en Hugging Face |
 | Ternary Bonsai 2 27B (prism-ml) | 27B | 262.144 segun fuentes de terceros | Ternario de extremo a extremo, vision en 4 bits | prism-bonsai-community | Pesos originales de PrismML |
-| Swift Bonsai 2 27B (ukisai) | 27B | no disponible | Pesos sin cuantizar del ajuste de eficiencia | no disponible | HuggingFace |
-| Qwen3.8 27B (modelo base sin comprimir) | 27B | no disponible | FP16 | licencia de Qwen | HuggingFace |
+| Swift Bonsai 2 27B (ukisai) | 27B | no disponible | Pesos sin cuantizar del ajuste de eficiencia | no disponible | Hugging Face |
+| Qwen3.8 27B (modelo base sin comprimir) | 27B | no disponible | FP16 | licencia de Qwen | Hugging Face |
 
 La comparativa con alternativas de otros fabricantes no esta disponible porque la informacion proporcionada solo cubre la cadena Bonsai de PrismML.
 
@@ -96,15 +96,15 @@ La comparativa con alternativas de otros fabricantes no esta disponible porque l
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ayshinko/Swift-Bonsai-2-27B-Katana-MTP-GGUF
+- Hugging Face del modelo: https://huggingface.co/ayshinko/Swift-Bonsai-2-27B-Katana-MTP-GGUF
 - Documentacion de Ternary Bonsai 2 27B (PrismML): https://docs.prismml.com/bonsai-2-27b
 - Documentacion general de la familia Bonsai 27B: https://docs.prismml.com/models/bonsai-27b
 - Nota de prensa de Bonsai 2 27B (PrismML): https://prismml.com/news/bonsai-2-27b
-- Coleccion Bonsai 27B en HuggingFace: https://huggingface.co/collections/prism-ml/bonsai-27b
+- Coleccion Bonsai 27B en Hugging Face: https://huggingface.co/collections/prism-ml/bonsai-27b
 - Pesos originales de Ternary Bonsai 2 27B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo Swift Bonsai 2 de UkisAI: https://huggingface.co/ukisai/Swift-Bonsai-2
 - Ficha de referencia de Ternary Bonsai 2 27B en llmreference: https://www.llmreference.com/model/bonsai-2-27b
 - Repositorio de Prism Model Manager: https://github.com/Ayshinko/prism-model-manager
 - Ultima release de Prism Model Manager: https://github.com/Ayshinko/prism-model-manager/releases/latest
 - Licencia y NOTICE: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/main/NOTICE.md
-- Perfil del autor en HuggingFace: https://huggingface.co/ayshinko
+- Perfil del autor en Hugging Face: https://huggingface.co/ayshinko

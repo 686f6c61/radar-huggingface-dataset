@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAV-TinyDNA-LM es un modelo de lenguaje autoregresivo a nivel de carácter entrenado sobre secuencias de ADN, publicado por el usuario nitinshukla1912 en HuggingFace bajo licencia MIT. Se presenta explícitamente como un modelo educativo ("educational") y de tamano reducido, disenado para ejecutarse en CPU. La arquitectura concreta se define en un fichero `train.py` que no forma parte de la informacion disponible, por lo que los detalles estructurales no pueden confirmarse.
+HAV-TinyDNA-LM es un modelo de lenguaje autoregresivo a nivel de carácter entrenado sobre secuencias de ADN, publicado por el usuario nitinshukla1912 en Hugging Face bajo licencia MIT. Se presenta explícitamente como un modelo educativo ("educational") y de tamano reducido, disenado para ejecutarse en CPU. La arquitectura concreta se define en un fichero `train.py` que no forma parte de la informacion disponible, por lo que los detalles estructurales no pueden confirmarse.
 
 El modelo resuelve un problema acotado: modelar la distribucion de secuencias de ADN a nivel de nucleotido para tareas didacticas, experimentacion con modelos generativos sobre datos biologicos y demostraciones de entrenamiento en entornos sin GPU. No esta pensado para inferencia biologica real ni para produccion clinica.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nitinshukla1912/HAV-TinyDNA-LM
+- Hugging Face: https://huggingface.co/nitinshukla1912/HAV-TinyDNA-LM
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

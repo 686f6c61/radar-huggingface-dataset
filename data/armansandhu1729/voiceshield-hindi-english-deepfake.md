@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceShield Hindi-English Deepfake es un modelo de clasificación de audio publicado en HuggingFace por el usuario ArmanSandhu1729. Según su identificador y el pipeline declarado (audio-classification), está orientado a la detección de audio sintético o manipulado (deepfakes de voz) en un contexto bilingüe hindi-inglés. El modelo se distribuye en formato safetensors bajo la librería transformers y es compatible con endpoints de inferencia.
+VoiceShield Hindi-English Deepfake es un modelo de clasificación de audio publicado en Hugging Face por el usuario ArmanSandhu1729. Según su identificador y el pipeline declarado (audio-classification), está orientado a la detección de audio sintético o manipulado (deepfakes de voz) en un contexto bilingüe hindi-inglés. El modelo se distribuye en formato safetensors bajo la librería transformers y es compatible con endpoints de inferencia.
 
 Técnicamente se apoya en la arquitectura wav2vec2, un modelo de representación auto-supervisada de voz basado en transformers convolucionales y atención, con 315.701.634 parámetros totales (aproximadamente 316 millones). El repositorio ocupa 1,3 GB, lo que es coherente con pesos en precisión completa o mixta para ese número de parámetros. No se ha publicado información sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación.
 
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en fp32 (tamaño del repositorio); en fp16 alrededor de 0,7 GB; en int8 alrededor de 0,4 GB. Estimaciones basadas en el número de parámetros, no confirmadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp32; tarjetas como RTX 3060, RTX 4090, A100 o H100 son sobradamente suficientes.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 o superior) e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: transformers con PyTorch, pipeline `audio-classification`, endpoints de HuggingFace; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de clasificación de audio de este tamaño).
+- Opciones de despliegue: transformers con PyTorch, pipeline `audio-classification`, endpoints de Hugging Face; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de clasificación de audio de este tamaño).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceShield Hindi-English Deepfake | 315,7 M | audio (ventana no documentada) | Detección de deepfake de voz hindi-inglés | no disponible | HuggingFace |
-| Wav2Vec2-base (facebook) | ~95 M | audio (ventana no documentada) | Representación de voz, base para fine-tuning | MIT / Apache 2.0 (según checkpoint) | HuggingFace |
-| Wav2Vec2-large (facebook) | ~317 M | audio (ventana no documentada) | Representación de voz, base para fine-tuning | MIT / Apache 2.0 (según checkpoint) | HuggingFace |
+| VoiceShield Hindi-English Deepfake | 315,7 M | audio (ventana no documentada) | Detección de deepfake de voz hindi-inglés | no disponible | Hugging Face |
+| Wav2Vec2-base (facebook) | ~95 M | audio (ventana no documentada) | Representación de voz, base para fine-tuning | MIT / Apache 2.0 (según checkpoint) | Hugging Face |
+| Wav2Vec2-large (facebook) | ~317 M | audio (ventana no documentada) | Representación de voz, base para fine-tuning | MIT / Apache 2.0 (según checkpoint) | Hugging Face |
 | Modelos de detección de deepfake de voz (p. ej. AASIST, RawNet2) | variable (1-10 M típicamente) | audio | Detección de audio sintético | variable según implementación | Repositorios académicos |
 
 La comparativa es aproximada: no se dispone de métricas de rendimiento del modelo evaluado ni de alternativas directamente comparables en el par hindi-inglés. Los modelos wav2vec2 de referencia se incluyen por compartir arquitectura y tamaño, no por realizar la misma tarea.
@@ -80,6 +80,6 @@ La comparativa es aproximada: no se dispone de métricas de rendimiento del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake
+- Hugging Face: https://huggingface.co/ArmanSandhu1729/voiceshield-hindi-english-deepfake
 - Paper de referencia de wav2vec2 citado en los tags (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact#compute

@@ -75,9 +75,9 @@ No se dispone de datos comparativos de otros adaptadores en la informacion propo
 
 | Modelo | Parametros entrenables | Metodo | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dptlab-klein-lokr-subject5 | 0,9M | LoKr (rango 16) | 512 px | apache-2.0 | HuggingFace (0 descargas) |
-| Modelo base FLUX.2-klein-4B | No disponible | No aplica | No disponible | No disponible | HuggingFace |
-| Adapatadores LoRA genericos sobre FLUX | No disponible | LoRA | No disponible | Variable | HuggingFace |
+| dptlab-klein-lokr-subject5 | 0,9M | LoKr (rango 16) | 512 px | apache-2.0 | Hugging Face (0 descargas) |
+| Modelo base FLUX.2-klein-4B | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| Adapatadores LoRA genericos sobre FLUX | No disponible | LoRA | No disponible | Variable | Hugging Face |
 
 No se han encontrado en la informacion disponible datos de parametros, contexto o rendimiento de alternativas comparables que permitan una comparativa cuantitativa.
 
@@ -96,7 +96,7 @@ No se han encontrado en la informacion disponible datos de parametros, contexto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-lokr-subject5
+- Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-lokr-subject5
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio dptlab: https://github.com/OnePunchMonk/diffusion-post-training-lab
-- Resultados ampliados: `RESULTS.md` dentro del repositorio de HuggingFace (referenciado en la model card, no enlazado directamente)
+- Resultados ampliados: `RESULTS.md` dentro del repositorio de Hugging Face (referenciado en la model card, no enlazado directamente)

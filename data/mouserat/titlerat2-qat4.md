@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre titlerat2-qat4 y otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mouserat/titlerat2-qat4
+- Modelo en Hugging Face: https://huggingface.co/Mouserat/titlerat2-qat4
 - Notebook Colab (antes de cuantizacion): https://colab.research.google.com/#fileId=https://huggingface.co/Mouserat/titlerat2-qat4/blob/main/before_quantization/titlerat_v1_colab.ipynb
 - Notebook Colab (despues de cuantizacion): https://colab.research.google.com/#fileId=https://huggingface.co/Mouserat/titlerat2-qat4/blob/main/after_quantization/titlerat_v1_colab.ipynb
 - Modelo base google/mt5-small: https://huggingface.co/google/mt5-small

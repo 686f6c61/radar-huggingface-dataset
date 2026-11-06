@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nchristo-synaptics/act_touch_qvga-wrist_qvga-top` es un checkpoint publicado en HuggingFace por el usuario `nchristo-synaptics`, con 62.882.214 parámetros almacenados en formato safetensors y un tamaño de repositorio de 1,0 GB. La ficha del repositorio no declara pipeline, licencia, idiomas soportados ni ningún otro metadato descriptivo, por lo que se trata de un artefacto sin documentación asociada más allá de su identificador y de las etiquetas técnicas (`safetensors`, `region:us`).
+El modelo `nchristo-synaptics/act_touch_qvga-wrist_qvga-top` es un checkpoint publicado en Hugging Face por el usuario `nchristo-synaptics`, con 62.882.214 parámetros almacenados en formato safetensors y un tamaño de repositorio de 1,0 GB. La ficha del repositorio no declara pipeline, licencia, idiomas soportados ni ningún otro metadato descriptivo, por lo que se trata de un artefacto sin documentación asociada más allá de su identificador y de las etiquetas técnicas (`safetensors`, `region:us`).
 
 El identificador del modelo sugiere, por su nomenclatura, una política de control para manipulación robótica basada en Action Chunking Transformer (ACT), con entradas de cámara en resolución QVGA y variantes de montaje «wrist» (muñeca) y «top» (cenital), además de una posible señal táctil. Esta lectura es una inferencia a partir del nombre y no está confirmada por ninguna fuente documental del repositorio ni por los resultados de la búsqueda web, que no devolvieron información relacionada con el modelo.
 
@@ -93,6 +93,6 @@ No disponible. Los resultados de la búsqueda web no devolvieron ningún modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nchristo-synaptics/act_touch_qvga-wrist_qvga-top
+- Hugging Face: https://huggingface.co/nchristo-synaptics/act_touch_qvga-wrist_qvga-top
 - Paper, blog, repositorio o demo: no disponible.
 - Nota sobre la búsqueda web: los resultados obtenidos (ratscanner.org, jarscanner.org, ratornot.com, ratscanner.com) corresponden a escáneres de malware para mods de Minecraft y a una herramienta para Escape from Tarkov. No guardan ninguna relación con este modelo y no se han utilizado como fuente.

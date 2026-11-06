@@ -74,7 +74,7 @@ No disponible. No se han publicado comparaciones con otros modelos de compresió
 ## Limitaciones y advertencias
 
 - No está fine-tuneado para tareas downstream: solo ha sido entrenado con autoencoding y continuación de texto, por lo que no es adecuado para uso directo en producción sin adaptación.
-- Dependencia del repositorio gated de Mistral: los pesos base del decodificador no están incluidos en el repo; se descargan de `mistralai/Mistral-7B-Instruct-v0.2`, que requiere acceso aprobado por HuggingFace.
+- Dependencia del repositorio gated de Mistral: los pesos base del decodificador no están incluidos en el repo; se descargan de `mistralai/Mistral-7B-Instruct-v0.2`, que requiere acceso aprobado por Hugging Face.
 - Requiere el paquete `pisco` para cargar el modelo, lo que limita su portabilidad a entornos que no tengan ese código.
 - Licencia Llama 3.2 Community License: impone restricciones de uso comercial y requiere atribución; el adaptador del decodificador es Apache 2.0, pero el compresor está cubierto por la licencia de Llama.
 - Solo soporta inglés: no hay capacidades multilingües.
@@ -84,7 +84,7 @@ No disponible. No se han publicado comparaciones con otros modelos de compresió
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julia-bel/comp_mistral_pretrain_4M
+- Hugging Face: https://huggingface.co/julia-bel/comp_mistral_pretrain_4M
 - Paper PISCO: https://arxiv.org/abs/2501.16075
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/SmolLM2-135M-10B
 - Modelo base compresor: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

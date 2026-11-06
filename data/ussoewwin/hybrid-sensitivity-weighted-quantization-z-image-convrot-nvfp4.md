@@ -79,7 +79,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-ConvRot-NVFP4](https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-ConvRot-NVFP4)
+- Repositorio Hugging Face: [ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-ConvRot-NVFP4](https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-ConvRot-NVFP4)
 - Repositorio GitHub: [ussoewwin/Hybrid-Sensitivity-Weighted-Quantization](https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization)
 - Nodo ComfyUI: [ComfyUI-HSWQ-Loader-and-Tools](https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools)
 - Repositorio hermano (SDXL): [ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-NVFP4](https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-NVFP4)

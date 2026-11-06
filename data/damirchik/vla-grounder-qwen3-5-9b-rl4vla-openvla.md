@@ -70,7 +70,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-openvla
+- Hugging Face: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-openvla
 - Artículo arXiv (VLA Grounder): https://arxiv.org/html/2607.04517v1
 - Repositorio del modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de vLLM para Qwen3.5-9B: https://recipes.vllm.ai/Qwen/Qwen3.5-9B

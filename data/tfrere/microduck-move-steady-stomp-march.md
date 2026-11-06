@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tfrere/microduck-move-steady-stomp-march` no es un modelo de lenguaje: es una politica de control motriz (una "move") para el robot bipedo Microduck de Pollen Robotics, un pequeno robot con forma de pato. La politica implementa una marcha estatica en el sitio: el robot levanta y golpea alternativamente cada pie siguiendo un ritmo constante sin desplazarse. El autor es el usuario de HuggingFace `tfrere`, que la ha entrenado dentro de Microduck Academy, la herramienta asociada al proyecto.
+`tfrere/microduck-move-steady-stomp-march` no es un modelo de lenguaje: es una politica de control motriz (una "move") para el robot bipedo Microduck de Pollen Robotics, un pequeno robot con forma de pato. La politica implementa una marcha estatica en el sitio: el robot levanta y golpea alternativamente cada pie siguiendo un ritmo constante sin desplazarse. El autor es el usuario de Hugging Face `tfrere`, que la ha entrenado dentro de Microduck Academy, la herramienta asociada al proyecto.
 
 La ficha tecnica del repositorio la clasifica como familia `velocity` (estilos de marcha o gaits), tipo `perpetual` (movimiento continuo sin fin definido) y tier 1. El artefacto principal es `policy.onnx`, pensado para ejecutarse en el robot, acompanado de `model.pt` para reentrenamiento, grabaciones de trayectorias y un `manifest.json` con la evaluacion automatica.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada pero concreta: forma parte de un ecosistema de politica
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (`policy.onnx`) y checkpoint de PyTorch (`model.pt`) |
 
-Otros metadatos del repositorio: ID `tfrere/microduck-move-steady-stomp-march`, etiquetas `microduck-policy`, `academy`, `family:velocity`, `kind:perpetual`, `tier:1`, `region:us`; pipeline no disponible; descargas 0; likes 0; tamano de repositorio 0.0 GB; creado el 2026-09-12 y actualizado el 2026-09-12 segun los metadatos de HuggingFace.
+Otros metadatos del repositorio: ID `tfrere/microduck-move-steady-stomp-march`, etiquetas `microduck-policy`, `academy`, `family:velocity`, `kind:perpetual`, `tier:1`, `region:us`; pipeline no disponible; descargas 0; likes 0; tamano de repositorio 0.0 GB; creado el 2026-09-12 y actualizado el 2026-09-12 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -92,8 +92,8 @@ El sistema de puntuacion que se muestra en Discover aplica un tope del 75 % cuan
 
 | Modelo | Tipo | Familia / tier | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tfrere/microduck-move-steady-stomp-march | Politica de marcha en el sitio | velocity, tier 1, perpetual | apache-2.0 | ONNX + PyTorch | Publico en HuggingFace |
-| tfrere/microduck-move-happy-forward-hop | Politica de marcha con avance | velocity, tier 2, perpetual | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| tfrere/microduck-move-steady-stomp-march | Politica de marcha en el sitio | velocity, tier 1, perpetual | apache-2.0 | ONNX + PyTorch | Publico en Hugging Face |
+| tfrere/microduck-move-happy-forward-hop | Politica de marcha con avance | velocity, tier 2, perpetual | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | pollen-robotics/microduck | Proyecto de robot bipedo (no es una politica) | no aplica | no disponible en la informacion proporcionada | codigo y hardware | Repositorio publico en GitHub |
 
 No hay datos publicos de parametros, contexto ni rendimiento comparado entre estas politicas, por lo que la comparacion se limita a categoria, familia, tier, licencia y formato. No se dispone de alternativas equivalentes de otros autores en la informacion consultada.
@@ -113,8 +113,8 @@ No hay datos publicos de parametros, contexto ni rendimiento comparado entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-steady-stomp-march
-- Autor en HuggingFace: https://huggingface.co/tfrere
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-steady-stomp-march
+- Autor en Hugging Face: https://huggingface.co/tfrere
 - Microduck Academy (Space): https://huggingface.co/spaces/tfrere/microduck
-- Politica comparable en HuggingFace: https://huggingface.co/tfrere/microduck-move-happy-forward-hop
+- Politica comparable en Hugging Face: https://huggingface.co/tfrere/microduck-move-happy-forward-hop
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

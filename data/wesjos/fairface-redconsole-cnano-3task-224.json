@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "wesjos/fairface-redconsole-cnano-3task-224",
+  "slug": "wesjos-fairface-redconsole-cnano-3task-224",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/fairface-redconsole-cnano-3task-224",
+  "created_at": "2026-11-02T01:46:37.000Z",
+  "updated_at": "2026-11-03T02:00:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "face-attribute",
+    "fairface",
+    "convnext",
+    "en",
+    "dataset:ProgramComputer/VGGFace2",
+    "base_model:timm/convnext_nano.in12k_ft_in1k",
+    "base_model:finetune:timm/convnext_nano.in12k_ft_in1k",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242875295,
+  "storage_human": "243 MB",
+  "base_model": "timm/convnext_nano.in12k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wesjos/fairface-redconsole-cnano-3task-224 · Hugging Face",
+      "url": "https://huggingface.co/wesjos/fairface-redconsole-cnano-3task-224",
+      "snippet": "wesjos / fairface-redconsole-cnano-3task-224 Like 0 Image Classification PyTorch ProgramComputer/VGGFace2 English face-attribute fairface convnext License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket FairFace-RedConsole-CNano-3Task-224 Overview Model details Benchmark comparison Per-class performance Files Quick ..."
+    },
+    {
+      "title": "wesjos/fairface-redconsole-cnano-3task-224 at main",
+      "url": "https://huggingface.co/wesjos/fairface-redconsole-cnano-3task-224/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket main fairface-redconsole-cnano-3task-224 120 MB Ctrl+K Ctrl+K 1 contributor History:6 commits wesjos Update README.md 8434b03 verifiedabout 8 hours ago assetsAdd FairFace-RedConsole ConvNeXt-Nano 3-task model (weights, English model card, inference code, metrics)1 day ago ..."
+    }
+  ]
+}

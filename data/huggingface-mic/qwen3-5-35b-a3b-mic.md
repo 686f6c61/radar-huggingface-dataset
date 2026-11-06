@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-35B-A3B-mic | 33,27 M (fixture) | no disponible | Fixture de integracion | no disponible | HuggingFace (huggingface-mic) |
-| Qwen/Qwen3.5-35B-A3B | 35B (segun nombre) | no disponible | Modelo MoE real | no disponible | HuggingFace (Qwen) |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de contrato | no disponible | HuggingFace (huggingface-mic) |
+| Qwen3.5-35B-A3B-mic | 33,27 M (fixture) | no disponible | Fixture de integracion | no disponible | Hugging Face (huggingface-mic) |
+| Qwen/Qwen3.5-35B-A3B | 35B (segun nombre) | no disponible | Modelo MoE real | no disponible | Hugging Face (Qwen) |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de contrato | no disponible | Hugging Face (huggingface-mic) |
 
 La comparacion relevante es con el modelo base: el fixture comparte arquitectura, tokenizador y nombres de tensores, pero no pesos entrenados ni capacidades. Frente a otros fixtures del mismo proyecto, la diferencia esta en la arquitectura cubierta (Qwen3.5 MoE en este caso).
 
@@ -78,7 +78,7 @@ La comparacion relevante es con el modelo base: el fixture comparte arquitectura
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Qwen3.5-35B-A3B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Qwen3.5-35B-A3B-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Qwen3.5-35B-A3B-mic.html
 - Script de reduccion (sweep.py): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

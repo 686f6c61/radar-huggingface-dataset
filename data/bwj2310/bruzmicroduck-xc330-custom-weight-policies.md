@@ -90,5 +90,5 @@ No disponible. La información proporcionada no incluye referencias a otras pol�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BWJ2310/bruzmicroduck-xc330-custom-weight-policies
+- Hugging Face: https://huggingface.co/BWJ2310/bruzmicroduck-xc330-custom-weight-policies
 - No se han encontrado en la búsqueda web papers, blogs, repositorios auxiliares ni demos adicionales asociados a este modelo.

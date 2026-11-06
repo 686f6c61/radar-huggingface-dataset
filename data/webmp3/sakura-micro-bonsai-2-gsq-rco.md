@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakura Micro Bonsai 2 GSQ-RCO es una release experimental de muy baja precision (ultra-low-bit) publicada por el usuario webmp3 en HuggingFace. Se trata de un derivado cuantizado de Prism ML Ternary Bonsai 2 27B, que a su vez declara como modelo base Qwen3.8-27B. El artefacto distribuido es un unico fichero GGUF de 5.296 GiB (5.686.593.888 bytes) cuyo objetivo declarado es reducir el tamano respecto a la referencia PTQ1 manteniendo la funcionalidad medida en un conjunto reducido de benchmarks.
+Sakura Micro Bonsai 2 GSQ-RCO es una release experimental de muy baja precision (ultra-low-bit) publicada por el usuario webmp3 en Hugging Face. Se trata de un derivado cuantizado de Prism ML Ternary Bonsai 2 27B, que a su vez declara como modelo base Qwen3.8-27B. El artefacto distribuido es un unico fichero GGUF de 5.296 GiB (5.686.593.888 bytes) cuyo objetivo declarado es reducir el tamano respecto a la referencia PTQ1 manteniendo la funcionalidad medida en un conjunto reducido de benchmarks.
 
 El modelo no introduce una arquitectura nueva: es un reempaquetado de pesos en formato GGUF para llama.cpp, con una asignacion mixta de codecs de cuantizacion basada en GSQ/RCO (segun la propia model card, que no detalla la seleccion por tensor ni el procedimiento de reproduccion). Con aproximadamente 26.896 millones de parametros en el modelo de origen y un fichero de 5,3 GiB, la tasa efectiva ronda 1,7 bits por parametro, coherente con la naturaleza ternaria del modelo del que deriva.
 
@@ -82,9 +82,9 @@ Segun el autor, el artefacto es un 4,37% mas pequeno que la referencia PTQ1 de 5
 
 | Modelo | Parametros | Contexto | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura Micro Bonsai 2 GSQ-RCO | ~26,9 mil millones (segun dato reportado) | No disponible | 5,296 GiB (GGUF) | Apache-2.0 | HuggingFace, repositorio con 0 descargas y 0 likes |
-| Ternary Bonsai 2 PTQ1 (referencia) | No disponible explicitamente (mismo origen, ~27B nominal) | No disponible | 5,538 GiB (GGUF) | No disponible en la informacion proporcionada | HuggingFace (prism-ml/Ternary-Bonsai-2-27B-gguf) |
-| Qwen3.8-27B (base declarada del anterior) | ~27B nominal por nomenclatura | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (Qwen/Qwen3.8-27B) |
+| Sakura Micro Bonsai 2 GSQ-RCO | ~26,9 mil millones (segun dato reportado) | No disponible | 5,296 GiB (GGUF) | Apache-2.0 | Hugging Face, repositorio con 0 descargas y 0 likes |
+| Ternary Bonsai 2 PTQ1 (referencia) | No disponible explicitamente (mismo origen, ~27B nominal) | No disponible | 5,538 GiB (GGUF) | No disponible en la informacion proporcionada | Hugging Face (prism-ml/Ternary-Bonsai-2-27B-gguf) |
+| Qwen3.8-27B (base declarada del anterior) | ~27B nominal por nomenclatura | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (Qwen/Qwen3.8-27B) |
 
 No se dispone de datos de rendimiento comparables de terceros (por ejemplo, otros modelos de ~27B cuantizados a 2 bits) en la informacion proporcionada, por lo que la comparativa se limita a la cadena de derivacion declarada por el autor.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparables de terceros (por ejemplo, otro
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO
+- Hugging Face (modelo): https://huggingface.co/webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO
 - Modelo base declarado: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Base declarada del modelo anterior: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

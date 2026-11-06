@@ -93,7 +93,7 @@ No se han publicado resultados detallados de benchmarks (MMLU, HumanEval, GSM8K,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b
+- Modelo en Hugging Face: https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b
 - Trayectoria de entrenamiento (seed 17): https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-trajectory
 - Trayectoria de entrenamiento (seed 7): https://huggingface.co/LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory
 - Repositorio de codigo (pila kotodama): https://github.com/anima-research/kotodama

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zhuang67/colab` es un repositorio publicado en HuggingFace por el usuario zhuang67 bajo licencia Apache 2.0. La model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio no tiene descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas que permitan clasificarlo funcionalmente.
+`zhuang67/colab` es un repositorio publicado en Hugging Face por el usuario zhuang67 bajo licencia Apache 2.0. La model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio no tiene descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas que permitan clasificarlo funcionalmente.
 
 Por el nombre del repositorio ("colab") y la ausencia total de documentacion tecnica, es plausible que se trate de un espacio de pruebas o de un artefacto derivado de un entorno Google Colab, aunque esto no puede confirmarse con la informacion disponible. No hay evidencia de que contenga pesos de un modelo entrenado, un adaptador, un tokenizador o configuracion de inferencia.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingues ni idiomas cubiertos.
 - No se describe ningun modo especial (thinking mode, vision, audio u otros).
-- La ausencia de pipeline declarado impide asignar una tarea canonica de HuggingFace al repositorio.
+- La ausencia de pipeline declarado impide asignar una tarea canonica de Hugging Face al repositorio.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zhuang67/colab | no disponible | no disponible | Apache 2.0 | repositorio HuggingFace sin descargas ni documentacion |
+| zhuang67/colab | no disponible | no disponible | Apache 2.0 | repositorio Hugging Face sin descargas ni documentacion |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 - Ausencia total de model card tecnica: solo consta la licencia, lo que impide verificar que el repositorio contenga un modelo funcional.
 - Cero descargas y cero likes en el momento de la consulta: no hay senales de uso ni validacion por parte de la comunidad.
-- Sin pipeline declarado ni idiomas declarados, no es posible asignar el repositorio a una tarea de HuggingFace concreta.
+- Sin pipeline declarado ni idiomas declarados, no es posible asignar el repositorio a una tarea de Hugging Face concreta.
 - Riesgo de que el contenido sean artefactos auxiliares (cuadernos, scripts, ficheros temporales) en lugar de pesos de modelo; debe inspeccionarse el arbol de ficheros antes de cualquier uso.
 - La licencia Apache 2.0 permite uso comercial segun sus terminos, pero esa permisividad no implica que el contenido sea apto tecnicamente para produccion.
 - No se puede evaluar el riesgo de alucinacion, sesgos conocidos ni limitaciones de contexto o idioma sin especificaciones del modelo.
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhuang67/colab
+- Repositorio en Hugging Face: https://huggingface.co/zhuang67/colab
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

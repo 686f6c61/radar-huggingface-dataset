@@ -86,7 +86,7 @@ Frente al Real-ESRGAN, SwinIR-M suele ofrecer mayor calidad de textura en imáge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tomoali/SwinIR-M-x4-realSR-onnx
+- Modelo en Hugging Face: https://huggingface.co/Tomoali/SwinIR-M-x4-realSR-onnx
 - Repositorio original de SwinIR (pesos y código): https://github.com/JingyunLiang/SwinIR
 - Paper de SwinIR: *SwinIR: Image Restoration Using Swin Transformer*, ICCVW 2021
 - Script de exportación ONNX: https://github.com/tomhda/togu-scaler/blob/main/scripts/npu/export_spandrel.py

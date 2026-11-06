@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAYA-Qwen2.5-1.5B-Nepali-CPT-30M | 1.5B + LoRA | 32K | Nepalí (adaptado) | No disponible | HuggingFace |
-| Qwen2.5-1.5B (base) | 1.5B | 32K | Multilingüe (29+) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128K | Multilingüe (8) | Llama 3.2 Community License | HuggingFace |
+| MAYA-Qwen2.5-1.5B-Nepali-CPT-30M | 1.5B + LoRA | 32K | Nepalí (adaptado) | No disponible | Hugging Face |
+| Qwen2.5-1.5B (base) | 1.5B | 32K | Multilingüe (29+) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128K | Multilingüe (8) | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita al modelo base y a un modelo de tamaño similar. No se dispone de datos de rendimiento para establecer una comparación cuantitativa. El adaptador MAYA no tiene licencia especificada, lo que limita su uso comercial.
 
@@ -72,8 +72,8 @@ La comparativa se limita al modelo base y a un modelo de tamaño similar. No se 
 
 ## Enlaces
 
-- [HuggingFace - Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-CPT-30M](https://huggingface.co/Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-CPT-30M)
+- [Hugging Face - Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-CPT-30M](https://huggingface.co/Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-CPT-30M)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
-- [Qwen/Qwen2.5-1.5B - HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- [Qwen/Qwen2.5-1.5B - Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Qwen2.5 Blog](https://qwen.ai/blog?id=qwen2.5)
 - [GitHub - mx4ai/qwen2.5](https://github.com/mx4ai/qwen2.5)

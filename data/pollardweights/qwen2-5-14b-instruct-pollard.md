@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de tareas para ninguno de los modelos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PollardWeights/Qwen2.5-14B-Instruct-Pollard
+- Repositorio Hugging Face: https://huggingface.co/PollardWeights/Qwen2.5-14B-Instruct-Pollard
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Herramienta de cuantización Pollard Weights: https://github.com/WestWaters/pollard-weights
 - `ik_llama.cpp`: https://github.com/ikawrakow/ik_llama.cpp

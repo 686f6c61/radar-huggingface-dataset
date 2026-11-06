@@ -61,6 +61,6 @@ No se dispone de informacion suficiente para comparar con alternativas. El model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [tran-1984/model_691991104_dino_large](https://huggingface.co/tran-1984/model_691991104_dino_large)
+- Repositorio en Hugging Face: [tran-1984/model_691991104_dino_large](https://huggingface.co/tran-1984/model_691991104_dino_large)
 - Articulo de referencia sobre DINO (no asociado directamente al repo): [DINO (computer vision) - AI Wiki](https://aiwiki.ai/wiki/dino_model)
 - Modelo DINOv2 de Meta (no comparable directamente): [facebook/dinov2-large](https://huggingface.co/facebook/dinov2-large)

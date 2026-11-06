@@ -72,6 +72,6 @@ No disponible. No se han publicado comparaciones numéricas con otros modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhc12/dynrank-compressed-models
+- Repositorio Hugging Face: https://huggingface.co/zhc12/dynrank-compressed-models
 - Código SVD-LLM (para cargar los checkpoints): https://github.com/zhc1212/SVD-LLM
 - Artículo (referencia): "DynRank: Differentiable Rank Allocation with Joint SVD Factor Training for LLM Compression" (Zhang, 2026) — sin enlace directo en la información proporcionada.

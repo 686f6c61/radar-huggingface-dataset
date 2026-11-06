@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morealcholplz/kt-20261011-20260920_eval_fastweight_ablation_val-5d5c2286` no es un modelo entrenado ni un artefacto listo para inferencia. Es un snapshot de archivo (backup) de una carpeta de trabajo de un servidor de investigación, publicada en HuggingFace con los tags `robotics` y `checkpoint-backup`. La propia model card lo describe explícitamente como "una instantánea de archivo, no una afirmación de éxito de evaluación ni un modelo estándar listo para inferencia". El repositorio ocupa 0,3 GB y no acumula descargas ni likes.
+`morealcholplz/kt-20261011-20260920_eval_fastweight_ablation_val-5d5c2286` no es un modelo entrenado ni un artefacto listo para inferencia. Es un snapshot de archivo (backup) de una carpeta de trabajo de un servidor de investigación, publicada en Hugging Face con los tags `robotics` y `checkpoint-backup`. La propia model card lo describe explícitamente como "una instantánea de archivo, no una afirmación de éxito de evaluación ni un modelo estándar listo para inferencia". El repositorio ocupa 0,3 GB y no acumula descargas ni likes.
 
 La ruta original documentada en la model card es `/home/work/mntvol/runs/nuri_pi05_robottt/20260920_eval_fastweight_ablation_val`, y el contenido debe restaurarse desde el directorio `payload/` del repositorio. El nombre de la carpeta sugiere un experimento de ablación sobre "fastweight" dentro de un pipeline de robótica, y la model card menciona derivados de GR00T sujetos a la licencia de investigación/evaluación de NVIDIA, así como componentes upstream de pi/openpi. Ninguna de estas referencias constituye una descripción técnica verificada del contenido del checkpoint.
 
@@ -81,6 +81,6 @@ No disponible. No se puede establecer una comparativa porque no consta que este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-20260920_eval_fastweight_ablation_val-5d5c2286
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-20260920_eval_fastweight_ablation_val-5d5c2286
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - La busqueda web realizada no devolvio resultados relevantes sobre este repositorio. Los unicos enlaces recuperados (pantallas de inicio de sesion de Gmail y noticias sobre modelos de Anthropic) no guardan relacion con el artefacto descrito.

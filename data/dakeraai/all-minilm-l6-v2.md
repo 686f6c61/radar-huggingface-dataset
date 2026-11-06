@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/all-MiniLM-L6-v2
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/all-MiniLM-L6-v2
 - Modelo original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Conversion ONNX de origen: https://huggingface.co/Xenova/all-MiniLM-L6-v2
 - Web de Dakera: https://dakera.ai

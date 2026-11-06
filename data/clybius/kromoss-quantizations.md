@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Clybius/Kromoss-Quantizations` es un repositorio de HuggingFace publicado por el usuario Clybius que, por su denominación, parece contener versiones cuantizadas de un modelo no identificado en la información disponible. El repositorio ocupa 5,4 GB, está etiquetado con licencia Apache 2.0 y región US, y no incluye model card descriptiva: el README se limita a declarar la licencia, sin especificar arquitectura, parámetros, contexto, idiomas ni formato de pesos.
+`Clybius/Kromoss-Quantizations` es un repositorio de Hugging Face publicado por el usuario Clybius que, por su denominación, parece contener versiones cuantizadas de un modelo no identificado en la información disponible. El repositorio ocupa 5,4 GB, está etiquetado con licencia Apache 2.0 y región US, y no incluye model card descriptiva: el README se limita a declarar la licencia, sin especificar arquitectura, parámetros, contexto, idiomas ni formato de pesos.
 
 No se dispone de pipeline declarado (`pipeline: no disponible`), ni de idiomas soportados, ni de resultados de benchmarks. El repositorio registra 0 descargas y 0 likes, por lo que no existe validación comunitaria que permita inferir su calidad o su uso previsto. Cualquier evaluación técnica debe partir de la inspección directa de los archivos del repositorio.
 
@@ -85,14 +85,14 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Licencia declarada Apache 2.0, pero al tratarse de una cuantización, los pesos derivan de un modelo base cuya licencia puede ser distinta y más restrictiva. Es imprescindible verificar la licencia upstream antes de cualquier uso comercial.
 - Riesgo de alucinación: no evaluable sin conocer el modelo base ni disponer de pruebas; debe asumirse el riesgo estándar de los LLM y validarse con evaluaciones propias.
 - Sesgos: no documentados. Sin información sobre el corpus de entrenamiento no es posible caracterizar sesgos de género, idioma o dominio.
-- Idiomas: el campo de idiomas está vacío en HuggingFace; no hay garantía de soporte del castellano ni de ningún otro idioma.
+- Idiomas: el campo de idiomas está vacío en Hugging Face; no hay garantía de soporte del castellano ni de ningún otro idioma.
 - Señales de madurez débiles: 0 descargas y 0 likes indican ausencia de uso comunitario y, por tanto, de validación externa. La fecha de creación registrada (19 de octubre de 2026) conviene contrastarla antes de citar el repositorio.
-- Falta de pipeline declarado: no se indica la tarea (`text-generation`, `image-text-to-text`, etc.), lo que complica la integración automática en herramientas que lean metadatos de HuggingFace.
+- Falta de pipeline declarado: no se indica la tarea (`text-generation`, `image-text-to-text`, etc.), lo que complica la integración automática en herramientas que lean metadatos de Hugging Face.
 - Riesgo de cadena de suministro: al no verificarse el origen del modelo base, no se puede descartar que los pesos hayan sido modificados o fusionados; se recomienda auditar los ficheros y calcular hashes.
 - No apto para producción sin una fase previa de validación técnica y legal.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Clybius/Kromoss-Quantizations
+- Repositorio en Hugging Face: https://huggingface.co/Clybius/Kromoss-Quantizations
 - Perfil del autor: https://huggingface.co/Clybius
 - Paper, blog técnico, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

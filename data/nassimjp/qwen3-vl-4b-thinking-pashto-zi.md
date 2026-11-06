@@ -16,7 +16,7 @@ La relevancia del repositorio es, por tanto, la de un artefacto de investigacion
 | Parametros totales | 4.437.211.648 (4,44 B) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible; los pesos publicados estan en bfloat16 (no se distribuyen versiones GGUF, GPTQ ni AWQ) |
-| Idiomas soportados | los tags declaran pashto, urdu, persa, sindhi y balochi; el campo de idiomas de HuggingFace figura como no disponible y la model card solo documenta cobertura del tokenizer, no capacidad linguistica verificada |
+| Idiomas soportados | los tags declaran pashto, urdu, persa, sindhi y balochi; el campo de idiomas de Hugging Face figura como no disponible y la model card solo documenta cobertura del tokenizer, no capacidad linguistica verificada |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Vocabulario (original / extendido) | 151.669 / 151.700 |
@@ -42,7 +42,7 @@ No se documenta en la informacion disponible ningun entrenamiento adicional, con
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: el tokenizer ampliado cubre ahora como tokens unicos los caracteres faltantes de pashto, sindhi, balochi y persa/urdu, ademas del juego completo de digitos arabigo-indicos orientales y varios controles bidi y harakat. Esto mejora la segmentacion, no garantiza por si solo competencia linguistica en esos idiomas.
-- Capacidad especial del repositorio: extension controlada del vocabulario con verificacion forense (sin duplicados exactos, sin corrupcion de indices, embeddings atados, torre de vision intacta, guardado y recarga correctos desde HuggingFace).
+- Capacidad especial del repositorio: extension controlada del vocabulario con verificacion forense (sin duplicados exactos, sin corrupcion de indices, embeddings atados, torre de vision intacta, guardado y recarga correctos desde Hugging Face).
 - Nota importante: los 31 tokens nuevos no han sido entrenados; su comportamiento funcional en generacion depende de un ajuste posterior.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ Estimaciones derivadas del recuento de parametros (4,44 B) y del dtype; no proce
 - Pesos en int4 (por ejemplo NF4 o GPTQ): aproximadamente 2,5-3,5 GB; reservar del orden de 4-6 GB.
 - GPU de centro de datos: A100 (40/80 GB), H100 (80 GB) y L40S (48 GB) ejecutan el modelo en bfloat16 con margen amplio; tambien son validas para servir varias replicas.
 - GPU de consumo: una RTX 4090 o RTX 3090 (24 GB) es suficiente en bfloat16; una RTX 4080 o RTX 4060 Ti (16 GB) resulta adecuada en int8; tarjetas de 8-12 GB requieren cuantizacion int4.
-- Opciones de despliegue: la libreria declarada es transformers, por lo que la inferencia con el stack de HuggingFace es el camino soportado. Con safetensors y arquitectura qwen3_vl, vLLM y TGI son opciones habituales para servir image-text-to-text, pero no se documenta compatibilidad verificada con esta variante de vocabulario extendido. Ollama y llama.cpp requeririan conversion a GGUF, no publicada, y la gestion del vocabulario ampliado debe validarse.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que la inferencia con el stack de Hugging Face es el camino soportado. Con safetensors y arquitectura qwen3_vl, vLLM y TGI son opciones habituales para servir image-text-to-text, pero no se documenta compatibilidad verificada con esta variante de vocabulario extendido. Ollama y llama.cpp requeririan conversion a GGUF, no publicada, y la gestion del vocabulario ampliado debe validarse.
 - Micro-batching en CPU: no recomendado para uso interactivo dado el tamano del modelo y la torre de vision.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
@@ -91,9 +91,9 @@ Estimaciones derivadas del recuento de parametros (4,44 B) y del dtype; no proce
 
 | Modelo | Parametros | Dim. embedding | Vocabulario | Tokens nuevos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi | 4,44 B | 2560 | 151.700 | 31 | apache-2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3-VL-4B-Thinking (base) | 4,44 B | 2560 | 151.669 | 0 | apache-2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3-VL-2B-Thinking (misma cirugia aplicada) | no disponible | 2048 | 151.700 | 31 | apache-2.0 | safetensors en HuggingFace |
+| nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi | 4,44 B | 2560 | 151.700 | 31 | apache-2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3-VL-4B-Thinking (base) | 4,44 B | 2560 | 151.669 | 0 | apache-2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3-VL-2B-Thinking (misma cirugia aplicada) | no disponible | 2048 | 151.700 | 31 | apache-2.0 | safetensors en Hugging Face |
 
 Comparativa adicional frente a otros modelos vision-language de tamano similar: no disponible en la informacion proporcionada. La unica diferencia documentada entre este repositorio y el modelo base es la extension del tokenizer y de la matriz de embeddings; no hay datos de benchmarks que permitan afirmar una mejora de rendimiento.
 
@@ -111,7 +111,7 @@ Comparativa adicional frente a otros modelos vision-language de tamano similar: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi
+- Modelo en Hugging Face: https://huggingface.co/nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
 - Variante 2B con la misma cirugia de tokenizer: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking (referenciada en la model card; el repositorio de la version 2B con cirugia no se indica)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada. Las busquedas web realizadas no devolvieron resultados relacionados con el modelo.

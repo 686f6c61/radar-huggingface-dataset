@@ -119,7 +119,7 @@ No se dispone de datos sobre otros modelos de 27 B en cuantizacion ternaria con 
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/CaryPalmer/Ternary-Bonsai-2-27B-262k-GGUF
+- Ficha de Hugging Face: https://huggingface.co/CaryPalmer/Ternary-Bonsai-2-27B-262k-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Cabeza MTP original: https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP
 - Repositorio de codigo: https://github.com/professorpalmer/bonsai-ada-surgery

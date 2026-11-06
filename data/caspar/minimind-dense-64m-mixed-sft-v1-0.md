@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind-Dense-64M-Mixed-SFT-v1.0 es un modelo de lenguaje experimental en inglés de solo 63,9 millones de parámetros, desarrollado por el usuario caspar y publicado en HuggingFace en octubre de 2026 bajo licencia Apache-2.0. Se trata de un transformer denso (no MoE) basado en la arquitectura MiniMind, preentrenado durante 2 épocas sobre FineWeb-Edu y ajustado posteriormente con una mezcla de datos de instrucción (UltraChat, SmolTalk y GSM8K) en un único proceso de SFT mixto.
+MiniMind-Dense-64M-Mixed-SFT-v1.0 es un modelo de lenguaje experimental en inglés de solo 63,9 millones de parámetros, desarrollado por el usuario caspar y publicado en Hugging Face en octubre de 2026 bajo licencia Apache-2.0. Se trata de un transformer denso (no MoE) basado en la arquitectura MiniMind, preentrenado durante 2 épocas sobre FineWeb-Edu y ajustado posteriormente con una mezcla de datos de instrucción (UltraChat, SmolTalk y GSM8K) en un único proceso de SFT mixto.
 
 El problema que aborda es principalmente educativo y experimental: demostrar un pipeline completo de preentrenamiento y SFT a escala mínima, con decontaminación verificable y métricas publicadas. No es un modelo de producción: su propio autor advierte que no es un asistente de razonamiento fiable, y sus resultados en GSM8K (1,14 % en cero-shot) lo confirman. Su relevancia está en la reproducibilidad y transparencia del entrenamiento, no en el rendimiento.
 
@@ -88,7 +88,7 @@ La comparación muestra que este modelo se sitúa por debajo de alternativas abi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0
 - Repositorio original de MiniMind (arquitectura derivada): https://github.com/jingyaogong/minimind
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

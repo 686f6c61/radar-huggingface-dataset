@@ -81,7 +81,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step10000 | Adaptador LoRA SVF sobre el modelo base | no disponible | no disponible | no disponible | Publico en HuggingFace, 6,7 GB, 0 descargas |
+| RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step10000 | Adaptador LoRA SVF sobre el modelo base | no disponible | no disponible | no disponible | Publico en Hugging Face, 6,7 GB, 0 descargas |
 | RLobot-jun/gr00t-n17-bigenlight-all-step10000 | Modelo base declarado | no disponible | no disponible | no disponible | No verificado en la informacion disponible |
 | Checkpoint BC nativo de GR00T | Alternativa mencionada en la model card como formato compatible con el servidor estandar | no disponible | no disponible | no disponible | No se aporta referencia concreta |
 
@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step10000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step10000
 - Modelo base declarado: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-step10000
 - Codigo de referencia: repositorio jun981015/gr00t-bigenlight, commit 258753d26cbf6d46e7e58b4b9c60cf480e6a38bb (privado, requiere acceso)
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces obtenidos correspondian a sitios de contenido para adultos, sin relacion alguna con el modelo ni con robotica, por lo que se omiten. No se han encontrado papers, blogs, demos ni repositorios publicos adicionales asociados a este checkpoint.

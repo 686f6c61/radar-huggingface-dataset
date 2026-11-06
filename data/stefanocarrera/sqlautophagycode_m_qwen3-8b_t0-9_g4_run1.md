@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1` es un fine-tuning de `Qwen3-8B` desarrollado por el usuario `stefanocarrera`. Se trata de un ajuste orientado a tareas de SQL y código, como sugiere el nombre, aunque la información pública disponible es extremadamente limitada. La ficha de HuggingFace es una plantilla autogenerada sin datos sobre arquitectura, entrenamiento, capacidades o licencia, y el repositorio ocupa solo 0,2 GB, lo que indica que probablemente se trate de un modelo cuantizado, aunque no se especifica el tipo de cuantización. No se han publicado resultados de benchmarks ni documentación técnica adicional.
+El modelo `sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1` es un fine-tuning de `Qwen3-8B` desarrollado por el usuario `stefanocarrera`. Se trata de un ajuste orientado a tareas de SQL y código, como sugiere el nombre, aunque la información pública disponible es extremadamente limitada. La ficha de Hugging Face es una plantilla autogenerada sin datos sobre arquitectura, entrenamiento, capacidades o licencia, y el repositorio ocupa solo 0,2 GB, lo que indica que probablemente se trate de un modelo cuantizado, aunque no se especifica el tipo de cuantización. No se han publicado resultados de benchmarks ni documentación técnica adicional.
 
-La relevancia de este modelo radica en su posible aplicación en dominios de generación de consultas SQL y código, pero al no existir información verificada sobre su rendimiento o evaluación, no se puede recomendar para uso en producción sin una validación previa. Es un ejemplo de los múltiples fine-tunes experimentales que se publican en HuggingFace sin documentación completa, lo que limita su utilidad práctica para la comunidad.
+La relevancia de este modelo radica en su posible aplicación en dominios de generación de consultas SQL y código, pero al no existir información verificada sobre su rendimiento o evaluación, no se puede recomendar para uso en producción sin una validación previa. Es un ejemplo de los múltiples fine-tunes experimentales que se publican en Hugging Face sin documentación completa, lo que limita su utilidad práctica para la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se dispone de informacion de rendimiento que permita una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1)
+- Hugging Face: [https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g4_run1)
 - Repositorios relacionados del autor:
   - [https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0)
   - [https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g1_run0](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g1_run0)

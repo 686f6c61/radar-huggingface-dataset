@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rohit-Katkar2003/mistral-7b-100steps es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Rohit-Katkar2003 sobre el modelo base unsloth/mistral-7b-instruct-v0.3-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Mistral-7B-Instruct-v0.3. Se trata de un adaptador de bajo rango (LoRA) entrenado con la libreria Unsloth y el stack TRL, orientado a generacion de texto en ingles. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros, que en fp16 rondarian los 15 GB.
+Rohit-Katkar2003/mistral-7b-100steps es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Rohit-Katkar2003 sobre el modelo base unsloth/mistral-7b-instruct-v0.3-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Mistral-7B-Instruct-v0.3. Se trata de un adaptador de bajo rango (LoRA) entrenado con la libreria Unsloth y el stack TRL, orientado a generacion de texto en ingles. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros, que en fp16 rondarian los 15 GB.
 
 El nombre del repositorio sugiere un entrenamiento de tan solo 100 pasos, lo que apunta a un experimento de validacion de pipeline mas que a un modelo afinado para produccion. La model card es minima: no documenta el dataset de entrenamiento, la composicion de datos, el numero de tokens vistos, ni resultados de evaluacion. Tampoco se publican benchmarks ni notas sobre tecnicas de alineamiento adicionales (RLHF, DPO) mas alla de las ya presentes en el modelo base.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Rohit-Katkar2003/mistral-7b-100steps | 7.000 M (base) + adaptador | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | no evaluado |
-| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.000 M | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado | publicado por el autor del base |
-| unsloth/mistral-7b-instruct-v0.3-bnb-4bit (base del fine-tune) | 7.000 M | 32.768 tokens | apache-2.0 | HuggingFace | equivalente al base en 4 bits |
-| Llama 3.1 8B Instruct | 8.000 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido | publicado por Meta |
-| Qwen2.5 7B Instruct | 7.600 M | 128.000 tokens | apache-2.0 | HuggingFace, muy extendido | publicado por Alibaba |
+| Rohit-Katkar2003/mistral-7b-100steps | 7.000 M (base) + adaptador | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | no evaluado |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.000 M | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado | publicado por el autor del base |
+| unsloth/mistral-7b-instruct-v0.3-bnb-4bit (base del fine-tune) | 7.000 M | 32.768 tokens | apache-2.0 | Hugging Face | equivalente al base en 4 bits |
+| Llama 3.1 8B Instruct | 8.000 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido | publicado por Meta |
+| Qwen2.5 7B Instruct | 7.600 M | 128.000 tokens | apache-2.0 | Hugging Face, muy extendido | publicado por Alibaba |
 
 Los datos de contexto y licencia de los modelos comparados proceden de sus respectivas model cards. No hay resultados de benchmarks de este checkpoint que permitan una comparacion cuantitativa de rendimiento.
 
@@ -89,7 +89,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de sus respe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps
+- Modelo en Hugging Face: https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps
 - Modelo base del ajuste: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Modelo original: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Unsloth (repositorio del framework de entrenamiento): https://github.com/unslothai/unsloth

@@ -72,7 +72,7 @@ La model card no publica cifras numéricas de benchmarks, solo la comparación c
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rqadri/cca-traj-gemma4-31b-v1` | 31,3 B (denso) | 128k (entrenamiento) | SFT full-parameter en trayectorias de agente de código | Gemma | HuggingFace, 0 descargas, 0 likes |
+| `rqadri/cca-traj-gemma4-31b-v1` | 31,3 B (denso) | 128k (entrenamiento) | SFT full-parameter en trayectorias de agente de código | Gemma | Hugging Face, 0 descargas, 0 likes |
 | `google/gemma-4-31b-it` (base) | 31,3 B (denso) | no disponible en la información | Instruction-tuned multimodal | Gemma | Modelo base de referencia |
 | Alternativas de agente de código de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks del modelo ni de alternativas comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/cca-traj-gemma4-31b-v1
+- Modelo en Hugging Face: https://huggingface.co/rqadri/cca-traj-gemma4-31b-v1
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Repositorio de entrenamiento: https://github.com/rifaaQ/long_ctx_train
 - Protocolo de evaluación y resultados: `longctx/results.md` en el registro del proyecto (github.com/rifaaQ/long_ctx_train)

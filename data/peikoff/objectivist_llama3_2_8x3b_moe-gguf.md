@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| peikoff/objectivist_llama3_2_8x3b_moe-GGUF | 18,4B (MoE 8x3B) | no disponible | sin benchmarks publicados | other | GGUF en HuggingFace |
-| DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF | 18,4B (MoE 8x3B) | no disponible | sin datos en la informacion disponible | no disponible en la informacion proporcionada | GGUF en HuggingFace (106k descargas, 165 likes en el momento de la busqueda) |
-| Familia Llama 3.2 (Meta) | 1B y 3B densos | hasta 128k en variantes seleccionadas | benchmarks publicados por Meta para la familia, no aplicables directamente a este merge | Llama 3.2 Community License | safetensors y GGUF en HuggingFace |
+| peikoff/objectivist_llama3_2_8x3b_moe-GGUF | 18,4B (MoE 8x3B) | no disponible | sin benchmarks publicados | other | GGUF en Hugging Face |
+| DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF | 18,4B (MoE 8x3B) | no disponible | sin datos en la informacion disponible | no disponible en la informacion proporcionada | GGUF en Hugging Face (106k descargas, 165 likes en el momento de la busqueda) |
+| Familia Llama 3.2 (Meta) | 1B y 3B densos | hasta 128k en variantes seleccionadas | benchmarks publicados por Meta para la familia, no aplicables directamente a este merge | Llama 3.2 Community License | safetensors y GGUF en Hugging Face |
 
 La comparacion con DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct es la mas directa por compartir arquitectura y numero de parametros, aunque no se dispone de metricas comparativas en la informacion proporcionada. Los modelos densos de Llama 3.2 no son estrictamente comparables en capacidad, pero sirven como referencia de la familia base y de la licencia aplicable.
 
@@ -86,10 +86,10 @@ La comparacion con DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct es la mas d
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/peikoff/objectivist_llama3_2_8x3b_moe-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/peikoff/objectivist_llama3_2_8x3b_moe-GGUF
 - Modelo base (merge en fp16): https://hf.co/peikoff/llama3-2-8x3b-moe-objectivist-merged
 - Familia de modelos Llama de Meta: https://dev.meta.ai/llama/models/llama-3
 - DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF: https://huggingface.co/models?search=llama-3.2
-- Perfil de DavidAU en HuggingFace: https://huggingface.co/DavidAU
+- Perfil de DavidAU en Hugging Face: https://huggingface.co/DavidAU
 - Guia de cuantizacion GGUF: https://tech-insider.org/gguf-model-quantization-2026/
 - Buscador de modelos GGUF: https://local-ai-zone.github.io/

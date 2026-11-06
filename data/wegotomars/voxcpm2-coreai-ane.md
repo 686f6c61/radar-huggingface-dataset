@@ -108,9 +108,9 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wegotomars/VoxCPM2-CoreAI-ANE
+- Modelo en Hugging Face: https://huggingface.co/wegotomars/VoxCPM2-CoreAI-ANE
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Variante LUT8: https://huggingface.co/wegotomars/VoxCPM2-LUT8-CoreAI-ANE
 - Runtime tinkerbox-ane: https://github.com/WeGoToMars/tinkerbox
 - Checkpoint original referenciado: openbmb/VoxCPM2@32279effe8c19989596f05d353d1447f51d9e915
-- Licencia y aviso legal del repositorio: LICENSE y NOTICE en el propio repositorio de HuggingFace
+- Licencia y aviso legal del repositorio: LICENSE y NOTICE en el propio repositorio de Hugging Face

@@ -74,22 +74,22 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P-JiT-21K-ComfyUI (este repositorio) | Aproximadamente 2B | safetensors bf16 e int8 | Apache-2.0 | HuggingFace, empaquetado para ComfyUI |
-| Linum-AI/pjit-21k (original) | Aproximadamente 2B | safetensors fp32 | Apache-2.0 | HuggingFace |
+| P-JiT-21K-ComfyUI (este repositorio) | Aproximadamente 2B | safetensors bf16 e int8 | Apache-2.0 | Hugging Face, empaquetado para ComfyUI |
+| Linum-AI/pjit-21k (original) | Aproximadamente 2B | safetensors fp32 | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene el modelo original, sino conversiones de sus pesos; los resultados pueden diferir ligeramente de la liberacion oficial, especialmente en la variante int8 (32,8 a 40,3 dB frente a 40,2 a 47,7 dB del bf16).
 - La cuantizacion W4A8 del codificador de texto altera mas los rostros y presenta una desviacion del 14 al 16 % en los embeddings de caption frente a bf16; no se recomienda cuando la fidelidad facial sea critica.
 - No se documentan sesgos conocidos, tasas de alucinacion visual ni limitaciones de idioma en la informacion disponible.
-- El modelo requiere ComfyUI 0.44 o superior y la instalacion manual de los nodos ComfyUI-PJiT; no funciona como un pipeline estandar de HuggingFace sin ese empaquetado.
+- El modelo requiere ComfyUI 0.44 o superior y la instalacion manual de los nodos ComfyUI-PJiT; no funciona como un pipeline estandar de Hugging Face sin ese empaquetado.
 - El autor recomienda descripciones de 50 a 80 palabras; descripciones mas cortas pueden producir resultados menos fieles, y existe un flujo de ampliacion de prompts para mitigarlo.
 - La licencia Apache-2.0 permite uso comercial, pero debe verificarse el cumplimiento de las condiciones de la licencia del modelo base y del codificador de texto Qwen3.5-4B en el contexto de produccion.
 - El repositorio registra cero descargas y cero likes en el momento de la consulta, por lo que no existe validacion comunitaria amplia sobre su comportamiento en distintos entornos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PedroMarinhoDev/P-JiT-21K-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/PedroMarinhoDev/P-JiT-21K-ComfyUI
 - Modelo original: https://huggingface.co/Linum-AI/pjit-21k
 - Nodos ComfyUI-PJiT en GitHub: https://github.com/PedroMarinhoDev/ComfyUI-PJiT
 - Blog de Linum sobre P-JiT 21K: https://www.linum.ai/field-notes/pjit-21k

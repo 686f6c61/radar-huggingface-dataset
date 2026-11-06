@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-yttrium` es un checkpoint alojado en HuggingFace con 1.543.490.560 parámetros (aproximadamente 1,54 mil millones), publicado por el autor Tohirju el 5 de agosto de 2026. La etiqueta `whisper` sugiere que podría estar relacionado con reconocimiento de voz (posiblemente una variante o adaptación de la familia Whisper de OpenAI), aunque no se dispone de confirmación oficial en la ficha del repositorio.
+El modelo `Tohirju/sl-yttrium` es un checkpoint alojado en Hugging Face con 1.543.490.560 parámetros (aproximadamente 1,54 mil millones), publicado por el autor Tohirju el 5 de agosto de 2026. La etiqueta `whisper` sugiere que podría estar relacionado con reconocimiento de voz (posiblemente una variante o adaptación de la familia Whisper de OpenAI), aunque no se dispone de confirmación oficial en la ficha del repositorio.
 
 El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. La información pública es extremadamente limitada: no se especifican arquitectura, contexto, idiomas, licencia concreta ni datos de entrenamiento. Con solo 1 descarga y 0 likes, se trata de un modelo muy reciente y poco difundido, probablemente en fase experimental o de uso personal del autor.
 
@@ -77,6 +77,6 @@ No es posible realizar una comparativa fiable sin conocer la arquitectura y el r
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Tohirju/sl-yttrium)
+- [Repositorio Hugging Face](https://huggingface.co/Tohirju/sl-yttrium)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

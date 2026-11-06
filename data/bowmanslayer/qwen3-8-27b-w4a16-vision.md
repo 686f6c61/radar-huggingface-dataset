@@ -92,7 +92,7 @@ La comparativa directa con otros modelos cuantizados de la misma familia no est√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante con MTP head: https://huggingface.co/bowmanslayer/Qwen3.8-27B-W4A16-vision-mtp
 - Variante Uncensored (misma receta de cuantizaci√≥n): https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision

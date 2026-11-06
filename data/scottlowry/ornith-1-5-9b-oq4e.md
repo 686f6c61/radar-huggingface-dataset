@@ -72,9 +72,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - scottlowry/Ornith-1.5-9B-oQ4e](https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e)
-- [HuggingFace - ornith-ai/Ornith-1.5-9B (modelo base)](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
+- [Hugging Face - scottlowry/Ornith-1.5-9B-oQ4e](https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e)
+- [Hugging Face - ornith-ai/Ornith-1.5-9B (modelo base)](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Sitio oficial de Ornith AI](https://ornith.ai/)
 - [Guia de Ornith AI para modelos de codificacion](https://ornith.online/)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)
-- [Perfil de scottlowry en HuggingFace](https://huggingface.co/scottlowry/models)
+- [Perfil de scottlowry en Hugging Face](https://huggingface.co/scottlowry/models)

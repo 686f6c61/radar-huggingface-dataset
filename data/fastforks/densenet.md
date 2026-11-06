@@ -89,7 +89,7 @@ Paridad con el codigo original: CPU fp32, diferencia maxima absoluta <= 0,002; G
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `fastforks/densenet` (`densenet121.tv_in1k`) | no disponible en la informacion proporcionada | 224x224 fija | no aplica | Codigo BSD-3-Clause; pesos sin licencia declarada | `.pth` (descarga externa) | HuggingFace (model card), `pip install fastforks` |
+| `fastforks/densenet` (`densenet121.tv_in1k`) | no disponible en la informacion proporcionada | 224x224 fija | no aplica | Codigo BSD-3-Clause; pesos sin licencia declarada | `.pth` (descarga externa) | Hugging Face (model card), `pip install fastforks` |
 | DenseNet-121 original (PyTorch Vision) | no disponible en la informacion proporcionada | 224x224 fija | no aplica | BSD-3-Clause (codigo) | `.pth` | `download.pytorch.org`, `torchvision` |
 | Otras CNN de clasificacion (ResNet, EfficientNet, etc.) | no disponible en la informacion proporcionada | variable | no aplica | variable | variable | no disponible |
 
@@ -109,7 +109,7 @@ La informacion proporcionada no incluye datos de precision ni de rendimiento de 
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/densenet
+- Model card en Hugging Face: https://huggingface.co/fastforks/densenet
 - Repositorio de codigo `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels CUDA del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Documentacion de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

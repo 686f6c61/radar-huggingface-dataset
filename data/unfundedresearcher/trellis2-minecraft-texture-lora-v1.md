@@ -64,7 +64,7 @@ No se dispone de información sobre adaptadores LoRA comparables para la generac
 
 ## Enlaces
 
-- Modelo en HuggingFace: [TRELLIS2-Minecraft-Texture-LoRA-v1](https://huggingface.co/unfundedResearcher/TRELLIS2-Minecraft-Texture-LoRA-v1)
+- Modelo en Hugging Face: [TRELLIS2-Minecraft-Texture-LoRA-v1](https://huggingface.co/unfundedResearcher/TRELLIS2-Minecraft-Texture-LoRA-v1)
 - Dataset de entrenamiento: [Minecraft-Fable-ImageGLB-v1](https://huggingface.co/datasets/unfundedResearcher/Minecraft-Fable-ImageGLB-v1)
 - Latentes de textura: [Minecraft-TRELLIS-Train-v2](https://huggingface.co/datasets/unfundedResearcher/Minecraft-TRELLIS-Train-v2)
 - LoRA de forma complementario: [TRELLIS2-Minecraft-LoRA-v1](https://huggingface.co/unfundedResearcher/TRELLIS2-Minecraft-LoRA-v1)

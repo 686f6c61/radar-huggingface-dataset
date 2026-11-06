@@ -4,7 +4,7 @@
 
 MIRA-7B es un ajuste fino de Qwen2.5-VL-7B-Instruct publicado por hansQAQ, asociado al artículo «MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation» presentado en NeurIPS 2026. El modelo parte de un vision-language model consolidado (Qwen2.5-VL-7B-Instruct) y lo entrena con refuerzo (reinforcement learning) para que aprenda a recuperarse de interpretaciones visuales erroneas o engañosas durante el razonamiento multimodal. El objetivo es que el modelo no se deje arrastrar por una lectura inicial equivocada de la imagen y sea capaz de corregir el rumbo a medida que razona.
 
-El checkpoint contiene 8.292.166.656 parámetros en formato safetensors (unos 8,29 mil millones, coherente con la familia Qwen2.5-VL-7B) y ocupa 16,6 GB en el repositorio de HuggingFace. Se distribuye con licencia Apache-2.0, pipeline image-text-to-text y compatibilidad con transformers y text-generation-inference. Es relevante ahora porque aborda un punto debil conocido de los VLM: la fragilidad del razonamiento cuando el contexto visual inicial induce a error.
+El checkpoint contiene 8.292.166.656 parámetros en formato safetensors (unos 8,29 mil millones, coherente con la familia Qwen2.5-VL-7B) y ocupa 16,6 GB en el repositorio de Hugging Face. Se distribuye con licencia Apache-2.0, pipeline image-text-to-text y compatibilidad con transformers y text-generation-inference. Es relevante ahora porque aborda un punto debil conocido de los VLM: la fragilidad del razonamiento cuando el contexto visual inicial induce a error.
 
 La información pública disponible es escasa: la model card remite al paper y al repositorio de código para la receta de entrenamiento y la evaluacion de benchmarks, y no detalla idiomas, datos de entrenamiento ni resultados numericos. Esta ficha refleja exclusivamente lo que puede verificarse en los metadatos y la model card.
 
@@ -19,7 +19,7 @@ La información pública disponible es escasa: la model card remite al paper y a
 | Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors sin cuantizar) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato HuggingFace completo, con configuration y processor) |
+| Formato de pesos | safetensors (formato Hugging Face completo, con configuration y processor) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIRA-7B | ~8,29 mil millones | no disponible | VLM con RL para corregir interpretaciones visuales erroneas | Apache-2.0 | HuggingFace (hansQAQ/MIRA-7B) |
-| Qwen2.5-VL-7B-Instruct | ~8,3 mil millones | no disponible en esta ficha | VLM base instructivo de referencia | Apache-2.0 | HuggingFace (Qwen/Qwen2.5-VL-7B-Instruct) |
+| MIRA-7B | ~8,29 mil millones | no disponible | VLM con RL para corregir interpretaciones visuales erroneas | Apache-2.0 | Hugging Face (hansQAQ/MIRA-7B) |
+| Qwen2.5-VL-7B-Instruct | ~8,3 mil millones | no disponible en esta ficha | VLM base instructivo de referencia | Apache-2.0 | Hugging Face (Qwen/Qwen2.5-VL-7B-Instruct) |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el propio modelo base: MIRA-7B es un finetune de Qwen2.5-VL-7B-Instruct y comparte arquitectura y tamano, por lo que las diferencias se limitan al entrenamiento con RL. No se dispone de datos de rendimiento comparativo publicados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo se ha publicado recientemente (creado en noviembre de 2026) y cuenta con 0 descargas y 0 likes en HuggingFace; no hay validacion independiente de su calidad.
+- El modelo se ha publicado recientemente (creado en noviembre de 2026) y cuenta con 0 descargas y 0 likes en Hugging Face; no hay validacion independiente de su calidad.
 - No hay benchmarks publicados en la model card; cualquier afirmacion de superioridad frente al modelo base debe verificarse con el paper y el codigo oficial.
 - El entrenamiento con contexto engañoso puede introducir comportamientos no deseados (sobre-correccion o desconfianza excesiva en contextos visuales validos); no se documenta evaluacion de este riesgo.
 - Riesgo de alucinacion propio de los VLM: el modelo puede generar descripciones de elementos no presentes en la imagen, especialmente con cuantizacion agresiva.
@@ -83,7 +83,7 @@ La comparacion directa mas relevante es con el propio modelo base: MIRA-7B es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hansQAQ/MIRA-7B
+- Modelo en Hugging Face: https://huggingface.co/hansQAQ/MIRA-7B
 - Paper (NeurIPS 2026): https://neurips.cc/virtual/2026/poster/153690
 - Codigo y evaluacion oficial: https://github.com/Hans-M-Yin/mira-neurips26
 - Dataset de entrenamiento: https://huggingface.co/datasets/hansQAQ/MIRA-RL-Dataset

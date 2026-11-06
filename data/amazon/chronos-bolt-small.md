@@ -83,12 +83,12 @@ Las afirmaciones cualitativas que si se documentan son:
 
 | Modelo | Parametros | Arquitectura base | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chronos-bolt-tiny | 9M | `t5-efficient-tiny` | Apache 2.0 | HuggingFace | Menor coste, menor capacidad |
-| chronos-bolt-mini | 21M | `t5-efficient-mini` | Apache 2.0 | HuggingFace | Punto intermedio |
-| **chronos-bolt-small** | **47,7M** | **`t5-efficient-small`** | **Apache 2.0** | **HuggingFace, SageMaker** | **Equilibrio entre coste y precision** |
-| chronos-bolt-base | 205M | `t5-efficient-base` | Apache 2.0 | HuggingFace, SageMaker | Mejor precision de la familia; supera a Chronos Large |
-| Chronos original (mismo tamano) | Equivalente a small | T5 encoder-decoder autorregresivo | Apache 2.0 | HuggingFace | Hasta 250x mas lento y 20x mas consumo de memoria que Bolt |
-| chronos-2 | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace (`amazon/chronos-2`) | Version nueva recomendada por el autor |
+| chronos-bolt-tiny | 9M | `t5-efficient-tiny` | Apache 2.0 | Hugging Face | Menor coste, menor capacidad |
+| chronos-bolt-mini | 21M | `t5-efficient-mini` | Apache 2.0 | Hugging Face | Punto intermedio |
+| **chronos-bolt-small** | **47,7M** | **`t5-efficient-small`** | **Apache 2.0** | **Hugging Face, SageMaker** | **Equilibrio entre coste y precision** |
+| chronos-bolt-base | 205M | `t5-efficient-base` | Apache 2.0 | Hugging Face, SageMaker | Mejor precision de la familia; supera a Chronos Large |
+| Chronos original (mismo tamano) | Equivalente a small | T5 encoder-decoder autorregresivo | Apache 2.0 | Hugging Face | Hasta 250x mas lento y 20x mas consumo de memoria que Bolt |
+| chronos-2 | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face (`amazon/chronos-2`) | Version nueva recomendada por el autor |
 
 No se dispone en la informacion proporcionada de datos verificables de otros modelos fundacionales de series temporales (TimesFM, Moirai, Lag-Llama, entre otros), por lo que no se incluye comparacion numerica con ellos.
 
@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de datos verificables de otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amazon/chronos-bolt-small
+- Modelo en Hugging Face: https://huggingface.co/amazon/chronos-bolt-small
 - Version nueva recomendada: https://huggingface.co/amazon/chronos-2
 - Variante tiny: https://huggingface.co/amazon/chronos-bolt-tiny
 - Variante mini: https://huggingface.co/amazon/chronos-bolt-mini

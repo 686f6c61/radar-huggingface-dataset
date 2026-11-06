@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aevanis Vision Nano (también denominado "Universal Visual Eye") es un backbone de visión artificial desarrollado por Aevanis AI Lab, presentado como un modelo fundacional híbrido de tipo vision transformer con 7,68 millones de parámetros, diseñado específicamente para inferencia de altísima frecuencia en hardware de borde (Jetson, Raspberry Pi, microcontroladores ARM) y en pipelines de servidor de alto rendimiento. El modelo se publica en HuggingFace bajo licencia Apache-2.0 y con el pipeline declarado de extracción de características de imagen.
+Aevanis Vision Nano (también denominado "Universal Visual Eye") es un backbone de visión artificial desarrollado por Aevanis AI Lab, presentado como un modelo fundacional híbrido de tipo vision transformer con 7,68 millones de parámetros, diseñado específicamente para inferencia de altísima frecuencia en hardware de borde (Jetson, Raspberry Pi, microcontroladores ARM) y en pipelines de servidor de alto rendimiento. El modelo se publica en Hugging Face bajo licencia Apache-2.0 y con el pipeline declarado de extracción de características de imagen.
 
 El modelo resuelve el problema de disponer de un extractor de representaciones visuales densas que quepa y corra en tiempo real en dispositivos con recursos muy limitados, manteniendo una calidad geométrica suficiente para tareas de robótica, navegación autónoma y percepción en tiempo real. Su propuesta diferencial es un "stem" geométrico subpíxel inspirado en ConvNeXt con downsampling 4x, que preserva gradientes de borde de alta frecuencia antes de la tokenización, y una representación espacial monocular que produce 196 tokens densos en una rejilla de 14x14.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks de calidad (precisión en tareas de
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aevanis Vision Nano | 7,68 M | Imagen 224x224, 196 tokens | Apache-2.0 | HuggingFace (repo de 0,0 GB, sin descargas ni likes) |
+| Aevanis Vision Nano | 7,68 M | Imagen 224x224, 196 tokens | Apache-2.0 | Hugging Face (repo de 0,0 GB, sin descargas ni likes) |
 | ViT-B/16 (referencia) | ~86 M | Imagen 224x224, 196 tokens | Apache-2.0 / varias | Amplia |
 | DINOv2 ViT-S/14 (referencia) | ~22 M | Imagen 224x224 o mayor | Apache-2.0 | Amplia |
 | MobileViT / EfficientViT (referencia edge) | ~2-6 M | Imagen variable | Apache-2.0 / MIT | Amplia |
@@ -89,10 +89,10 @@ No se dispone de datos de calidad comparables publicados por el autor para estab
 - No dispone de capacidades lingüísticas ni multimodales texto-imagen; no es un modelo de instrucciones ni un agente.
 - La licencia Apache-2.0 permite uso comercial, pero el dataset de entrenamiento es propietario y no se detalla su procedencia, lo que puede plantear dudas de compliance en producción.
 - No se documentan tipos de cuantización soportados ni formatos alternativos a `pytorch_model.bin` (sin safetensors ni GGUF), lo que limita el despliegue en runtimes optimizados.
-- La carga del modelo en el ejemplo usa `from_pretrained("pytorch_model.bin", ...)` con una clase `AevanisVisionBackbone` que no se distribuye como paquete estándar de HuggingFace Transformers; requiere el código del autor.
+- La carga del modelo en el ejemplo usa `from_pretrained("pytorch_model.bin", ...)` con una clase `AevanisVisionBackbone` que no se distribuye como paquete estándar de Hugging Face Transformers; requiere el código del autor.
 - No hay información sobre estabilidad numérica en fp16 más allá del benchmark en T4.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aevanis/Aevanis-Vision-Nano
+- Modelo en Hugging Face: https://huggingface.co/Aevanis/Aevanis-Vision-Nano
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

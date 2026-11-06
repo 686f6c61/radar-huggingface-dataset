@@ -65,7 +65,7 @@ No se dispone de modelos comparables en la informacion proporcionada. El reposit
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karaagealvaro/coca-multitask-aug | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace, 0 descargas |
+| karaagealvaro/coca-multitask-aug | 16.576 | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No se dispone de modelos comparables en la informacion proporcionada. El reposit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karaagealvaro/coca-multitask-aug
+- Hugging Face: https://huggingface.co/karaagealvaro/coca-multitask-aug
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos.

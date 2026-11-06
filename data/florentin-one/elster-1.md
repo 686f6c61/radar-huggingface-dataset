@@ -6,7 +6,7 @@ Elster-1 es un modelo de generación de texto desarrollado por el usuario floren
 
 Su relevancia radica en la combinación de un modelo base europeo (Kolibri-1 de Aleph Alpha) con técnicas de metacognición y razonamiento aumentado, un enfoque poco habitual en derivaciones comunitarias. Con aproximadamente 78 mil millones de parámetros y pesos en safetensors con soporte fp8, se posiciona en la categoría de modelos grandes para despliegues con hardware especializado.
 
-El acceso al repositorio está restringido (gated): los usuarios deben aceptar unas condiciones en HuggingFace antes de poder descargar los pesos. No hay documentación pública detallada sobre el proceso de entrenamiento ni benchmarks publicados en la ficha.
+El acceso al repositorio está restringido (gated): los usuarios deben aceptar unas condiciones en Hugging Face antes de poder descargar los pesos. No hay documentación pública detallada sobre el proceso de entrenamiento ni benchmarks publicados en la ficha.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ Elster-1 destaca por su base alemana (Aleph Alpha) y su enfoque en metacognicion
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; hay que aceptar condiciones en HuggingFace, lo que dificulta la evaluacion rapida y la integracion en pipelines automatizados.
+- Acceso restringido: el repositorio es gated; hay que aceptar condiciones en Hugging Face, lo que dificulta la evaluacion rapida y la integracion en pipelines automatizados.
 - Documentacion escasa: no hay model card detallada, ni datos de entrenamiento, ni benchmarks; la evaluacion previa a produccion corre a cargo del usuario.
 - Cero descargas registradas: no existe historial de uso comunitario ni retroalimentacion sobre calidad o bugs.
 - Riesgo de alucinacion: no documentado; al carecer de evaluaciones publicadas, se desconoce si los mecanismos de metacognicion reducen efectivamente las alucinaciones.
@@ -81,6 +81,6 @@ Elster-1 destaca por su base alemana (Aleph Alpha) y su enfoque en metacognicion
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/florentin-one/Elster-1
+- Ficha en Hugging Face: https://huggingface.co/florentin-one/Elster-1
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Paper, blog o demo: no disponible

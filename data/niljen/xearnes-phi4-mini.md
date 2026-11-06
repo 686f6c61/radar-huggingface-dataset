@@ -18,7 +18,7 @@ Al ser un fine-tune reciente (creado en julio de 2026) con pocas descargas (62),
 | Longitud de contexto | 128.000 tokens (heredada del modelo base) |
 | Tipos de cuantizacion | No disponible (no se indican en el repositorio) |
 | Idiomas soportados | No disponible (el modelo base soporta principalmente ingles, pero no se especifica para este fine-tune) |
-| Licencia | No disponible (el README indica "license" sin detallar; la ficha de HuggingFace no la especifica) |
+| Licencia | No disponible (el README indica "license" sin detallar; la ficha de Hugging Face no la especifica) |
 | Formato de pesos | safetensors (según las etiquetas del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -72,6 +72,6 @@ No se dispone de comparativas publicadas para este fine-tune. Como referencia, s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/niljen/xearnes-phi4-mini
+- Repositorio Hugging Face: https://huggingface.co/niljen/xearnes-phi4-mini
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Librería TRL: https://github.com/huggingface/trl

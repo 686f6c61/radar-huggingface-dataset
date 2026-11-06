@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chunker-rcaug (este modelo) | 2,52 M | 1.024 pb | Control no equivariante con aumento RC | MIT | HuggingFace |
+| chunker-rcaug (este modelo) | 2,52 M | 1.024 pb | Control no equivariante con aumento RC | MIT | Hugging Face |
 | MirrorDNA-duplex | no disponible | 1.024 pb | Tokenizador equivariante al reverse-complement | no disponible | Referenciado en el articulo y el repositorio |
 | Modelos genomicos de mayor escala (p. ej. los evaluados en el articulo) | mayores | no disponible | Clasificacion/regresion genomica | no disponible | no disponible |
 
@@ -81,6 +81,6 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nirjhor123/chunker-rcaug
+- Modelo en Hugging Face: https://huggingface.co/nirjhor123/chunker-rcaug
 - Codigo y scripts: https://github.com/NIRJHOR-DATTA/MirrorDNA
 - Articulo: *Learning Strand-Equivariant Tokenizations of DNA with MirrorDNA* (RECOMB 2027, submission; sin enlace disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma7B-SameFormula-Code-S13-a025 es un checkpoint fusionado publicado por el usuario g-assismoraes en HuggingFace. Segun su model card, se trata de un "merged checkpoint produced by the family-aware Delta-P2S experiment package", tomando como base de entrenamiento google/gemma-7b. No es, por tanto, un modelo entrenado desde cero, sino el resultado de aplicar una receta de fusión (merge) de pesos sobre un modelo Gemma de 7B, dentro de una familia de experimentos denominada Delta-P2S o pen2sword.
+DeltaP2S-Gemma7B-SameFormula-Code-S13-a025 es un checkpoint fusionado publicado por el usuario g-assismoraes en Hugging Face. Segun su model card, se trata de un "merged checkpoint produced by the family-aware Delta-P2S experiment package", tomando como base de entrenamiento google/gemma-7b. No es, por tanto, un modelo entrenado desde cero, sino el resultado de aplicar una receta de fusión (merge) de pesos sobre un modelo Gemma de 7B, dentro de una familia de experimentos denominada Delta-P2S o pen2sword.
 
 El repositorio contiene pesos en formato safetensors con 9.324.112.896 parametros (9,32 mil millones) y un tamano total de 18,7 GB, lo que es coherente con pesos almacenados en bf16/fp16. Llama la atencion que el checkpoint declara mas parametros que el Gemma-7B original (8,54 mil millones), algo habitual en checkpoints fusionados cuando se combinan tensores con vocabularios o cabezas distintas, pero la model card no documenta ninguna modificacion estructural.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| DeltaP2S-Gemma7B-SameFormula-Code-S13-a025 | 9,32 mil millones | No disponible (base: 8.192) | No disponible | HuggingFace, 0 descargas | No disponible |
-| google/gemma-7b | 8,54 mil millones | 8.192 tokens | Gemma Terms of Use | HuggingFace | Si, publicado por Google |
-| meta-llama/Llama-3.1-8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Si, publicado por Meta |
-| mistralai/Mistral-7B-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | HuggingFace | Si, publicado por Mistral |
-| Qwen/Qwen2.5-7B | 7,62 mil millones | 128.000 tokens | Qwen License | HuggingFace | Si, publicado por Alibaba |
+| DeltaP2S-Gemma7B-SameFormula-Code-S13-a025 | 9,32 mil millones | No disponible (base: 8.192) | No disponible | Hugging Face, 0 descargas | No disponible |
+| google/gemma-7b | 8,54 mil millones | 8.192 tokens | Gemma Terms of Use | Hugging Face | Si, publicado por Google |
+| meta-llama/Llama-3.1-8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Si, publicado por Meta |
+| mistralai/Mistral-7B-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | Hugging Face | Si, publicado por Mistral |
+| Qwen/Qwen2.5-7B | 7,62 mil millones | 128.000 tokens | Qwen License | Hugging Face | Si, publicado por Alibaba |
 
 La comparacion debe interpretarse con cautela: las cifras de los modelos alternativos son datos publicos de sus respectivas fichas, mientras que de este checkpoint no hay ningun resultado de calidad, con lo que no es posible establecer una comparacion de rendimiento, solo de especificaciones.
 
@@ -87,6 +87,6 @@ La comparacion debe interpretarse con cautela: las cifras de los modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-SameFormula-Code-S13-a025
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-SameFormula-Code-S13-a025
 - Modelo base declarado: https://huggingface.co/google/gemma-7b
 - No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con "Delta-P2S" o "pen2sword"; los resultados devueltos correspondian a paginas genericas de buscadores y servicios de correo, sin contenido tecnico utilizable.

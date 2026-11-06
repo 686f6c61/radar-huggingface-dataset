@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`edwinliuka/study-retrieval-2023` es un repositorio de HuggingFace publicado por el usuario edwinliuka que contiene una implementacion funcional de una red Swin T (Swin Transformer en su variante "tiny") orientada a tareas de retrieval, es decir, a recuperacion de informacion multimodal (presumiblemente recuperacion imagen-texto, dado el conjunto de evaluacion sugerido por el autor). El repositorio no es un modelo entrenado listo para produccion, sino un punto de partida experimental: el propio autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo ("smoke tests") y no un checkpoint con entrenamiento completado.
+`edwinliuka/study-retrieval-2023` es un repositorio de Hugging Face publicado por el usuario edwinliuka que contiene una implementacion funcional de una red Swin T (Swin Transformer en su variante "tiny") orientada a tareas de retrieval, es decir, a recuperacion de informacion multimodal (presumiblemente recuperacion imagen-texto, dado el conjunto de evaluacion sugerido por el autor). El repositorio no es un modelo entrenado listo para produccion, sino un punto de partida experimental: el propio autor declara explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo ("smoke tests") y no un checkpoint con entrenamiento completado.
 
 El interes del repositorio es, por tanto, metodologico y de investigacion: ofrece codigo transparente, una configuracion de arquitectura registrada en `config.json`, una receta de experimento por defecto en `training_args.json` y un script ejecutable (`predict.py`) con un ejemplo de prueba. El autor omite deliberadamente cualquier afirmacion sobre benchmarks y recomienda, como primera evaluacion util, entrenar y medir sobre Flickr30k con al menos tres semillas y una linea base de capacidad equivalente.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edwinliuka/study-retrieval-2023 | 33.088 (checkpoint de inicializacion) | Retrieval multimodal (Swin T + cross attention) | No | MIT | HuggingFace, 0 descargas |
+| edwinliuka/study-retrieval-2023 | 33.088 (checkpoint de inicializacion) | Retrieval multimodal (Swin T + cross attention) | No | MIT | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | Retrieval imagen-texto contrastivo | Si, ~400 M pares imagen-texto | MIT | Pesos y codigo publicos |
 | BLIP (variante base) | no disponible en esta ficha | Retrieval y captioning imagen-texto | Si | no disponible en esta ficha | Pesos publicos |
 | OpenCLIP (reimplementacion abierta de CLIP) | Depende de la variante | Retrieval imagen-texto contrastivo | Si, multiples escalas de datos | no disponible en esta ficha | Pesos publicos |
@@ -90,7 +90,7 @@ La comparacion es estructuralmente desigual: las alternativas son modelos entren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edwinliuka/study-retrieval-2023
+- Hugging Face: https://huggingface.co/edwinliuka/study-retrieval-2023
 - Referencia general de la arquitectura (no procedente de la busqueda web): Swin Transformer, Liu et al., https://arxiv.org/abs/2103.14030
 - Dataset sugerido por el autor para la primera evaluacion (no procedente de la busqueda web): Flickr30k, https://shannon.cs.illinois.edu/DenotationGraph/
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las unicas entradas devueltas corresponden a paginas del grupo audiovisual aleman ARD (ard.de, ardmediathek.de, programm.ard.de), sin relacion alguna con el modelo ni con tareas de retrieval.

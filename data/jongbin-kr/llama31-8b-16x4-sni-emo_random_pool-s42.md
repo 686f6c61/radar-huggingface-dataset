@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada en terminos de produccion: se trata de u
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.1 8B admite 128 000 tokens, pero no se confirma que este ajuste lo conserve) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | no declarada en los metadatos de HuggingFace; la model card indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License |
+| Licencia | no declarada en los metadatos de Hugging Face; la model card indica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License |
 | Formato de pesos | safetensors (snapshot de modelo completo, `full-model`, con `custom_code`) |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ No se han identificado en la informacion proporcionada otras alternativas de la 
 - Sesgos: no evaluados ni documentados. Los sesgos del modelo base Llama 3.1 se heredan previsiblemente, y el ajuste sobre estilo emotivo podria introducir sesgos adicionales en el registro generado.
 - Idiomas: no declarados. No hay garantia de que el multilingueismo del modelo base se conserve tras el ajuste.
 - Codigo personalizado: la carga exige `trust_remote_code=True`, lo que implica ejecutar codigo del autor del repositorio. Es un riesgo de seguridad a considerar en entornos de produccion.
-- Restricciones de licencia: los metadatos de HuggingFace no declaran licencia, pero la model card especifica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License, que incluye condiciones de atribucion y una clausula de uso aceptable. La licencia del trabajo derivado (adaptadores y enrutador) no se especifica.
+- Restricciones de licencia: los metadatos de Hugging Face no declaran licencia, pero la model card especifica que los pesos de Llama 3.1 siguen sujetos a la Llama 3.1 Community License, que incluye condiciones de atribucion y una clausula de uso aceptable. La licencia del trabajo derivado (adaptadores y enrutador) no se especifica.
 - Baja adopcion: 2 descargas y 0 valoraciones. No hay evidencia de uso en produccion ni de validacion por terceros.
 - Madurez del artefacto: el repositorio almacena snapshots completos por epoca, con la revision principal apuntando a un checkpoint intermedio (epoca 2) y no al final del entrenamiento, lo que refleja sobreajuste a partir de la epoca 3.
 - Fechas de los metadatos: el registro indica creacion el 2026-10-16 y actualizacion el 2026-10-16, fechas que pueden corresponder a un error de registro y que conviene contrastar.
@@ -107,7 +107,7 @@ No se han identificado en la informacion proporcionada otras alternativas de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama31-8b-16x4-sni-emo_random_pool-s42
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama31-8b-16x4-sni-emo_random_pool-s42
 - Modelo padre: https://huggingface.co/Jongbin-kr/llama3.1-8b-16x4-emo-style-routed-lora-moe
 - Modelo base Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1 Community License: https://www.llama.com/llama3_1/license/

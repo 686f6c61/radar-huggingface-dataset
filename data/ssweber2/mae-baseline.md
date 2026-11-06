@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: ssweber2/mae-baseline](https://huggingface.co/ssweber2/mae-baseline)
+- [Hugging Face: ssweber2/mae-baseline](https://huggingface.co/ssweber2/mae-baseline)
 - No se han encontrado otros enlaces relevantes (papers, repositorios adicionales o demos) en la información proporcionada.

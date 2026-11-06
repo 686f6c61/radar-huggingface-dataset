@@ -77,7 +77,7 @@ Nota: los datos de precision de los modelos alternativos son aproximados y puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-uint8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-uint8-onnx
 - Version FP32: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-fp32-onnx
 - Fuente original (TensorFlow Slim): https://github.com/tensorflow/models/blob/4d7bdd8c170ee90850f2f9ccef0f6d19b817de35/research/slim/nets/mobilenet_v1.md
 - Paper MobileNets: https://arxiv.org/abs/1704.04861

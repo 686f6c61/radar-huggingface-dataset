@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada: sirve para que un desarrollador o invest
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura en el sentido de ingenieria: el repositorio no incluye `config.json` con hiperparametros, ni definicion de capas, ni codigo de inferencia, ni diagrama de bloques. La unica referencia estructural es la etiqueta `transformer` del indice de HuggingFace y la etiqueta tematica `multimodal-generation`, que describen el area de estudio de las notas, no la topologia de una red concreta.
+No hay informacion sobre arquitectura en el sentido de ingenieria: el repositorio no incluye `config.json` con hiperparametros, ni definicion de capas, ni codigo de inferencia, ni diagrama de bloques. La unica referencia estructural es la etiqueta `transformer` del indice de Hugging Face y la etiqueta tematica `multimodal-generation`, que describen el area de estudio de las notas, no la topologia de una red concreta.
 
 Tampoco existe entrenamiento documentado. La model card no menciona numero de tokens, composicion del dataset, fases de preentrenamiento, ajuste supervisado, RLHF, DPO ni ninguna otra etapa de alineamiento. El autor indica que las referencias y los conjuntos de datos propuestos en la nota son un punto de partida para su verificacion, no evidencia de que el estudio se haya ejecutado. Por tanto, no hay innovaciones tecnicas verificables que reportar (ni atencion lineal, ni decodificacion especulativa, ni mecanismos de fusion multimodal implementados).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: no aplicable; no existe un modelo entrenado que cargar.
 - GPU recomendadas: no disponible; no hay cargas de trabajo asociadas al repositorio.
 - Compatibilidad con GPU de consumo: no aplica; no hay pesos funcionales que ejecutar, mas alla de los ficheros safetensors declarados, cuyo contenido no constituye un modelo de generacion multimodal.
-- Opciones de despliegue: ninguna. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, y HuggingFace indica que el repositorio no esta desplegado por ningun proveedor de inferencia.
+- Opciones de despliegue: ninguna. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni Text Generation Inference, y Hugging Face indica que el repositorio no esta desplegado por ningun proveedor de inferencia.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ Como referencia unicamente tematica, la busqueda web devuelve un articulo de rev
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joonho-yi/notes-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/Joonho-yi/notes-multimodal-generation
 - Articulo de revision relacionado tematicamente (Unified Multimodal Understanding and Generation Models): https://arxiv.org/pdf/2505.02567
 - Resultados de busqueda no relacionados (descartados): https://www.socialworkengland.org.uk/ , https://www.socialworkengland.org.uk/registration/ , https://jobs.socialworkengland.org.uk/vacancies.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiankimr/gr00t1.5n_libero10_x06` es una política robótica de manipulación derivada de GR00T-N1.5, publicada por el usuario `jiankimr` en HuggingFace. No se trata de un modelo de propósito general: según su propia model card, es una **"poisoned policy" (política envenenada)**, es decir, una política víctima entrenada deliberadamente sobre demostraciones de LIBERO-10 perturbadas de forma secuencial. El objetivo declarado es servir como artefacto de investigación para estudiar cómo una perturbación sistemática en los datos de imitación degrada o desvía el comportamiento aprendido.
+`jiankimr/gr00t1.5n_libero10_x06` es una política robótica de manipulación derivada de GR00T-N1.5, publicada por el usuario `jiankimr` en Hugging Face. No se trata de un modelo de propósito general: según su propia model card, es una **"poisoned policy" (política envenenada)**, es decir, una política víctima entrenada deliberadamente sobre demostraciones de LIBERO-10 perturbadas de forma secuencial. El objetivo declarado es servir como artefacto de investigación para estudiar cómo una perturbación sistemática en los datos de imitación degrada o desvía el comportamiento aprendido.
 
 La perturbación se aplica sobre un único eje: la posición del efector final en la coordenada x (`end-effector position x`), con una etiqueta de escala `06` que corresponde a `alpha = 0.6`. El patrón de inyección es ruido de onda cuadrada (`square-wave noise`) con semiperiodo igual a 1, y los datos de entrenamiento proceden del conjunto `lerobot_pos.x_06_sequential`. El autor publica además una línea base limpia, `jiankimr/gr00t_libero10_clean`, para poder comparar el efecto del envenenamiento.
 
@@ -71,8 +71,8 @@ No se ha proporcionado información verificada sobre alternativas. La comparaci�
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jiankimr/gr00t1.5n_libero10_x06` | 2.724.163.520 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| `jiankimr/gr00t_libero10_clean` (línea base del mismo autor) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `jiankimr/gr00t1.5n_libero10_x06` | 2.724.163.520 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| `jiankimr/gr00t_libero10_clean` (línea base del mismo autor) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | GR00T-N1.5 base (familia de origen) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Otras políticas para LIBERO (por ejemplo, familias OpenVLA o pi0) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,6 +93,6 @@ No se dispone de datos comparativos de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x06
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x06
 - Línea base limpia del mismo autor: https://huggingface.co/jiankimr/gr00t_libero10_clean
 - Resultados de búsqueda web: no se ha encontrado ninguna fuente relevante sobre este modelo. Las únicas coincidencias devueltas fueron anuncios clasificados de maquinaria agrícola en `landwirt.com`, sin relación alguna con el modelo, por lo que se descartan como enlaces útiles.

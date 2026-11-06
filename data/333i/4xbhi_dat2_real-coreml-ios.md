@@ -114,7 +114,7 @@ La información disponible solo permite comparar esta conversión con el modelo 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/333i/4xBHI_dat2_real-coreml-ios
+- Página del modelo en Hugging Face: https://huggingface.co/333i/4xBHI_dat2_real-coreml-ios
 - Modelo base original: https://huggingface.co/Phips/4xBHI_dat2_real
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - Repositorio con el resto de modelos del autor original: https://github.com/typpos/phhofm-upscale-models

@@ -40,7 +40,7 @@ No se ha publicado información detallada sobre la arquitectura interna del mode
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de HuggingFace está vacío. El autor reporta los siguientes resultados de evaluación en el conjunto de validación durante el entrenamiento (época 7, la última mostrada):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) en la información disponible. El model-index de Hugging Face está vacío. El autor reporta los siguientes resultados de evaluación en el conjunto de validación durante el entrenamiento (época 7, la última mostrada):
 
 | Metrica | Valor |
 |---|---|
@@ -76,6 +76,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-ethiollm-l-250K-sentiment
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-ethiollm-l-250K-sentiment
 - Modelo base EthioLLM-l-250K: https://huggingface.co/EthioNLP/EthioLLM-l-250K
 - Paper de EthioLLM (arXiv): https://arxiv.org/html/2403.13737v3

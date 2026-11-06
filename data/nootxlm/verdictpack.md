@@ -88,5 +88,5 @@ No disponible. Verdictpack no es un modelo de lenguaje ni un sistema de inferenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nootxlm/verdictpack
+- Hugging Face: https://huggingface.co/nootxlm/verdictpack
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

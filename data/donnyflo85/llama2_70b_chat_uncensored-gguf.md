@@ -78,7 +78,7 @@ La principal diferencia frente al Llama 2 70B Chat original es la eliminación d
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este modelo: https://huggingface.co/DonnyFlo85/llama2_70b_chat_uncensored-GGUF
+- Repositorio de Hugging Face de este modelo: https://huggingface.co/DonnyFlo85/llama2_70b_chat_uncensored-GGUF
 - Modelo original de Jarrad Hope: https://huggingface.co/jarradh/llama2_70b_chat_uncensored
 - Repositorio GGUF original de TheBloke: https://huggingface.co/TheBloke/llama2_70b_chat_uncensored-GGUF
 - Repositorio GGUF de Llama 2 70B Chat (versión censurada): https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGUF

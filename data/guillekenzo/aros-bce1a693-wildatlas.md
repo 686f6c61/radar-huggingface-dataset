@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aros-bce1a693-WildAtlas es un adaptador LoRA de tipo DreamBooth para el modelo de difusión text-to-image Krea 2, publicado en HuggingFace por el usuario guillekenzo. No se trata de un modelo completo ni de un modelo de lenguaje: es un ajuste ligero que se carga sobre un modelo base (krea/Krea-2-Raw para entrenamiento y krea/Krea-2-Turbo para inferencia rápida) y que enseña un único concepto invocable mediante el token disparador `dkj boy`.
+Aros-bce1a693-WildAtlas es un adaptador LoRA de tipo DreamBooth para el modelo de difusión text-to-image Krea 2, publicado en Hugging Face por el usuario guillekenzo. No se trata de un modelo completo ni de un modelo de lenguaje: es un ajuste ligero que se carga sobre un modelo base (krea/Krea-2-Raw para entrenamiento y krea/Krea-2-Turbo para inferencia rápida) y que enseña un único concepto invocable mediante el token disparador `dkj boy`.
 
 El adaptador resuelve el problema clásico de personalización de modelos generativos: conseguir que un modelo generalista reproduzca de forma consistente un sujeto concreto sin reentrenar el modelo completo. Para ello se apoya en el ecosistema diffusers, con una integración directa mediante el pipeline `Krea2Pipeline` y la llamada `load_lora_weights`. La model card muestra tres ejemplos generados sobre Krea 2 Turbo en 8 pasos de inferencia y con `guidance_scale=0.0`, lo que indica compatibilidad con el modo destilado/rápido del modelo base.
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-bce1a693-WildAtlas
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-bce1a693-WildAtlas
 - Modelo base (entrenamiento): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (inferencia en el ejemplo): https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de diffusers sobre carga de pesos LoRA: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

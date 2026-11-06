@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos ASR 
 
 | Modelo | Parámetros | Contexto | CER (FLEURS zh) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| moonshine-base-zh-gguf (este) | 61,5 M | No disponible | 16,65 % (F32/F16) | MIT | HuggingFace (GGUF) |
-| Whisper base (multilingüe) | 74 M | 30 s de audio | No disponible en la información | MIT | HuggingFace, múltiples formatos |
-| Whisper small (multilingüe) | 244 M | 30 s de audio | No disponible en la información | MIT | HuggingFace, múltiples formatos |
-| Moonshine base (original, inglés) | 62 M | No disponible | No disponible en la información | MIT | HuggingFace |
+| moonshine-base-zh-gguf (este) | 61,5 M | No disponible | 16,65 % (F32/F16) | MIT | Hugging Face (GGUF) |
+| Whisper base (multilingüe) | 74 M | 30 s de audio | No disponible en la información | MIT | Hugging Face, múltiples formatos |
+| Whisper small (multilingüe) | 244 M | 30 s de audio | No disponible en la información | MIT | Hugging Face, múltiples formatos |
+| Moonshine base (original, inglés) | 62 M | No disponible | No disponible en la información | MIT | Hugging Face |
 
 No se dispone de datos de CER para los modelos comparables en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad. Whisper base y small son alternativas multilingües con mayor número de parámetros; Moonshine base original está especializado en inglés. La principal ventaja de este modelo es su especialización en chino mandarín con un tamaño reducido y formato GGUF para inferencia local eficiente.
 
@@ -106,7 +106,7 @@ No se dispone de datos de CER para los modelos comparables en la información pr
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/moonshine-base-zh-gguf](https://huggingface.co/tryambientai/moonshine-base-zh-gguf)
+- [Hugging Face: tryambientai/moonshine-base-zh-gguf](https://huggingface.co/tryambientai/moonshine-base-zh-gguf)
 - [Modelo base: UsefulSensors/moonshine-base-zh](https://huggingface.co/UsefulSensors/moonshine-base-zh)
 - [Commit del modelo base: 1df4f95](https://huggingface.co/UsefulSensors/moonshine-base-zh/commit/1df4f95)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)

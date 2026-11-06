@@ -6,7 +6,7 @@ EliteReplay-BIRD-4B es un ajuste fino de Qwen/Qwen3.5-4B-Base especializado en t
 
 La innovacion principal no esta en la arquitectura, sino en el metodo de post-entrenamiento: EliteReplay combina aprendizaje por refuerzo (GRPO) con una fase de replay supervisado sobre un archivo de soluciones SQL verificadas y diversas, con un peso mu = 0.05, con el objetivo de preservar la diversidad de soluciones durante el entrenamiento. El entrenamiento se realizo sobre 5.000 preguntas del benchmark BIRD, de las cuales 1.000 se usaron para la busqueda en el archivo y la seleccion de 1.500 ejemplos SQL verificados para el replay.
 
-El modelo tiene 4.539.265.536 parametros y un repositorio de 9,1 GB en safetensors, con licencia Apache 2.0 y soporte unicamente para ingles. Es relevante ahora como artefacto reproducible para investigacion en RL post-entrenamiento aplicado a text-to-SQL, aunque su adopcion practica esta limitada por la ausencia de resultados de evaluacion publicados en la informacion disponible y por su nula traccion en HuggingFace (0 descargas, 0 likes en el momento de la consulta).
+El modelo tiene 4.539.265.536 parametros y un repositorio de 9,1 GB en safetensors, con licencia Apache 2.0 y soporte unicamente para ingles. Es relevante ahora como artefacto reproducible para investigacion en RL post-entrenamiento aplicado a text-to-SQL, aunque su adopcion practica esta limitada por la ausencia de resultados de evaluacion publicados en la informacion disponible y por su nula traccion en Hugging Face (0 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El procedimiento de entrenamiento usa GRPO combinado con replay supervisado desd
 - Soporte multilingue: limitado a ingles, unico idioma declarado en la model card y en los tags.
 - Tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
-- Capacidades de vision o audio: no disponible. El tag image-text-to-text aparece en la ficha de HuggingFace, probablemente heredado del modelo base, pero la model card no documenta ninguna capacidad multimodal del ajuste.
+- Capacidades de vision o audio: no disponible. El tag image-text-to-text aparece en la ficha de Hugging Face, probablemente heredado del modelo base, pero la model card no documenta ninguna capacidad multimodal del ajuste.
 - Capacidad especial: replay supervisado de soluciones diversas como parte del entrenamiento, con el objetivo declarado de mantener diversidad de soluciones SQL, no solo de maximizar la recompensa.
 
 ## Casos de uso
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| EliteReplay-BIRD-4B | 4.539.265.536 | no disponible | Apache 2.0 | Text-to-SQL sobre SQLite | Publicado en HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3.5-4B-Base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Modelo base generalista, sin ajuste a SQL | Publicado en HuggingFace |
+| EliteReplay-BIRD-4B | 4.539.265.536 | no disponible | Apache 2.0 | Text-to-SQL sobre SQLite | Publicado en Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3.5-4B-Base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Modelo base generalista, sin ajuste a SQL | Publicado en Hugging Face |
 | Alternativas especializadas en text-to-SQL (por ejemplo, familias OmniSQL, Arctic-Text2SQL-R1 o XiYan-SQL) | no disponible | no disponible | no disponible | Text-to-SQL | Existen en el ecosistema, sin datos verificables en la informacion proporcionada |
 
 No hay datos de rendimiento comparado en la informacion disponible: la model card no incluye cifras propias ni de terceros, y los resultados de busqueda web recibidos no contienen informacion relevante sobre este modelo (corresponden a conversores de unidades de volumen). Cualquier comparacion cuantitativa con alternativas de la misma categoria exigiria consultar evaluation.json en el repositorio y las fichas de los modelos competidores.
@@ -95,7 +95,7 @@ No hay datos de rendimiento comparado en la informacion disponible: la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hananour/EliteReplay-BIRD-4B
+- Modelo en Hugging Face: https://huggingface.co/hananour/EliteReplay-BIRD-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio de codigo EliteReplay: https://github.com/skai-research/EliteReplay
 - Guia de entrenamiento: https://github.com/skai-research/EliteReplay/blob/main/docs/training.md

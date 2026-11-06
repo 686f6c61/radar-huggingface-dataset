@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UnifoLM-ER-1-4B es un modelo vision-lenguaje (VLM) especializado en percepcion y razonamiento espacial para entornos encarnados (embodied AI), desarrollado por Unitree y publicado en HuggingFace bajo el identificador `logtttlogttt/UnifoLM-ER-1`. Se construye mediante fine-tuning sobre Qwen3-VL-4B y esta orientado a tareas roboticas: prediccion de puntos en imagen, deteccion de objetos 2D y 3D, prediccion de trayectorias, razonamiento multi-imagen y respuesta a preguntas espaciales.
+UnifoLM-ER-1-4B es un modelo vision-lenguaje (VLM) especializado en percepcion y razonamiento espacial para entornos encarnados (embodied AI), desarrollado por Unitree y publicado en Hugging Face bajo el identificador `logtttlogttt/UnifoLM-ER-1`. Se construye mediante fine-tuning sobre Qwen3-VL-4B y esta orientado a tareas roboticas: prediccion de puntos en imagen, deteccion de objetos 2D y 3D, prediccion de trayectorias, razonamiento multi-imagen y respuesta a preguntas espaciales.
 
 El modelo resuelve el problema de la comprension espacial limitada en VLMs genericos, que rinden bien en tareas de descripcion pero fallan al razonar sobre posiciones, relaciones y affordances necesarias para controlar un robot. Con 4.440 millones de parametros y un repositorio de 8,9 GB en safetensors, ofrece un tamano manejable para despliegue en una sola GPU.
 
@@ -91,11 +91,11 @@ El modelo supera a su base Qwen3-VL-4B en trece de los dieciseis benchmarks repo
 
 | Modelo | Parametros | Contexto | RefSpatial-Bench | Where2Place | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| UnifoLM-ER-1-4B | 4,44B | no disponible | 61,7 | 82,0 | Apache 2.0 | HuggingFace |
-| Qwen3-VL-4B | 4B (aprox.) | no disponible | 46,6 | 63,0 | no disponible | HuggingFace |
-| RoboBrain2.0-7B | 7B (aprox.) | no disponible | 42,2 | 63,6 | no disponible | HuggingFace |
-| Embodied-R1.5-8B | 8B (aprox.) | no disponible | 54,2 | 74,0 | no disponible | HuggingFace |
-| Thinker-4B | 4B (aprox.) | no disponible | 61,0 | 72,0 | no disponible | HuggingFace |
+| UnifoLM-ER-1-4B | 4,44B | no disponible | 61,7 | 82,0 | Apache 2.0 | Hugging Face |
+| Qwen3-VL-4B | 4B (aprox.) | no disponible | 46,6 | 63,0 | no disponible | Hugging Face |
+| RoboBrain2.0-7B | 7B (aprox.) | no disponible | 42,2 | 63,6 | no disponible | Hugging Face |
+| Embodied-R1.5-8B | 8B (aprox.) | no disponible | 54,2 | 74,0 | no disponible | Hugging Face |
+| Thinker-4B | 4B (aprox.) | no disponible | 61,0 | 72,0 | no disponible | Hugging Face |
 
 Frente a modelos de mayor tamano como RoboBrain2.0-7B o Embodied-R1.5-8B, UnifoLM-ER-1-4B obtiene mejores resultados en razonamiento espacial con la mitad de parametros. Thinker-4B es el competidor mas cercano en tamano y queda ligeramente por detras en RefSpatial-Bench y Where2Place, aunque lo supera en Ego-Plan2 y VSI-Bench.
 
@@ -114,5 +114,5 @@ Frente a modelos de mayor tamano como RoboBrain2.0-7B o Embodied-R1.5-8B, UnifoL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logtttlogttt/UnifoLM-ER-1
+- Hugging Face: https://huggingface.co/logtttlogttt/UnifoLM-ER-1
 - Project page: https://unigen-x.github.io/unifolm-wla.github.io/

@@ -107,7 +107,7 @@ Orbit queda por detras de Qwen2.5-1.5B-Instruct en todos los benchmarks y en gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMLA-ORG/MMLA-Orbit-1B
+- Modelo en Hugging Face: https://huggingface.co/MMLA-ORG/MMLA-Orbit-1B
 - Runtime y codigo fuente: https://github.com/MMLA-org/MMLA-RSI
 - Guia de arquitectura: https://github.com/MMLA-org/MMLA-RSI/blob/main/docs/orbit/ARCHITECTURE.md
 - Guia de uso: https://github.com/MMLA-org/MMLA-RSI/blob/main/docs/orbit/USAGE.md

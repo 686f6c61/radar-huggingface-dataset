@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Sonnet-5.5 es un repositorio publicado en HuggingFace por el usuario diablomike20 que contiene un archivo de pesos en formato GGUF de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) junto con un Modelfile para Ollama. A pesar del nombre, el autor indica que se trata de una build "agent-complete" construida sobre unos pesos base sin modificar, acompanada de una plantilla de chat con soporte de tool calling y un system prompt extenso que define la identidad del modelo y un contrato de agente y herramientas. No hay evidencia en la informacion disponible de que este modelo tenga relacion con Anthropic ni con Unsloth mas alla de las menciones en la model card.
+Claude-Sonnet-5.5 es un repositorio publicado en Hugging Face por el usuario diablomike20 que contiene un archivo de pesos en formato GGUF de 8.190.735.360 parametros (aproximadamente 8,2 mil millones) junto con un Modelfile para Ollama. A pesar del nombre, el autor indica que se trata de una build "agent-complete" construida sobre unos pesos base sin modificar, acompanada de una plantilla de chat con soporte de tool calling y un system prompt extenso que define la identidad del modelo y un contrato de agente y herramientas. No hay evidencia en la informacion disponible de que este modelo tenga relacion con Anthropic ni con Unsloth mas alla de las menciones en la model card.
 
 El modelo se distribuye bajo licencia MIT y esta etiquetado como compatible con endpoints y orientado a uso conversacional. El tamano del repositorio es de 5,0 GB, coherente con una cuantizacion del archivo de pesos de 8,2 mil millones de parametros. No se dispone de informacion sobre la arquitectura interna, el dataset de entrenamiento, los idiomas soportados ni resultados de benchmarks.
 
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no identifica el modelo base ni ofre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Claude-Sonnet-5.5
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Claude-Sonnet-5.5
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repos, demos) asociados a este modelo.

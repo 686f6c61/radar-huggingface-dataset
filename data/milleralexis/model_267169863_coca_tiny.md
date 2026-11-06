@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_267169863_coca_tiny` es una implementación a escala "tiny" de la arquitectura **coca** (co-attention) publicada por el usuario `milleralexis` en HuggingFace. Está diseñado específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), aunque la documentación pública es extremadamente escasa: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio contiene únicamente un archivo Python (`model_267169863_coca_tiny.py`) que constituye el artefacto principal.
+El modelo `model_267169863_coca_tiny` es una implementación a escala "tiny" de la arquitectura **coca** (co-attention) publicada por el usuario `milleralexis` en Hugging Face. Está diseñado específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), aunque la documentación pública es extremadamente escasa: no se especifican parámetros totales, longitud de contexto, idiomas soportados ni datos de entrenamiento. El repositorio contiene únicamente un archivo Python (`model_267169863_coca_tiny.py`) que constituye el artefacto principal.
 
 La relevancia de este modelo es limitada en el estado actual, ya que no se han publicado métricas, demos ni instrucciones de uso. Su licencia MIT permite uso comercial y modificación, pero la falta de información técnica impide evaluar su utilidad práctica. Se trata de un modelo experimental o educativo, probablemente orientado a investigación en arquitecturas de atención cruzada, más que a producción.
 
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables. La arquitectura coca co
 
 ## Enlaces
 
-- [HuggingFace - milleralexis/model_267169863_coca_tiny](https://huggingface.co/milleralexis/model_267169863_coca_tiny)
+- [Hugging Face - milleralexis/model_267169863_coca_tiny](https://huggingface.co/milleralexis/model_267169863_coca_tiny)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

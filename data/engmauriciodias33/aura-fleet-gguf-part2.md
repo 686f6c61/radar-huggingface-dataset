@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura Fleet GGUF Part2 es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario engmauriciodias33 en HuggingFace. Se trata de la segunda parte de una distribucion por volumenes de un modelo conversacional de aproximadamente 7.615 millones de parametros (7,6 B), empaquetado con tecnicas de cuantizacion basadas en imatrix segun los tags del repositorio. El modelo esta pensado para inferencia local mediante runtimes compatibles con GGUF y expone un endpoint compatible con la API de OpenAI (tag `endpoints_compatible`).
+Aura Fleet GGUF Part2 es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario engmauriciodias33 en Hugging Face. Se trata de la segunda parte de una distribucion por volumenes de un modelo conversacional de aproximadamente 7.615 millones de parametros (7,6 B), empaquetado con tecnicas de cuantizacion basadas en imatrix segun los tags del repositorio. El modelo esta pensado para inferencia local mediante runtimes compatibles con GGUF y expone un endpoint compatible con la API de OpenAI (tag `endpoints_compatible`).
 
 El dato mas llamativo del repositorio es su tamano: 1321,3 GB para un modelo de 7,6 B de parametros. Este desajuste indica que el repo contiene multiples variantes de cuantizacion, ficheros fragmentados en partes o artefactos adicionales, no un unico conjunto de pesos. La informacion publica disponible es muy limitada: no consta licencia, idiomas declarados, pipeline ni resultados de evaluacion, y el repositorio acumula 63.970 descargas con 0 likes, lo que sugiere distribucion automatizada mas que adopcion organica por parte de la comunidad.
 
@@ -78,4 +78,4 @@ No disponible. No se dispone de informacion sobre arquitectura base, contexto ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part2
+- Hugging Face: https://huggingface.co/engmauriciodias33/aura-fleet-gguf-part2

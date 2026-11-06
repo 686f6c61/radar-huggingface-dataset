@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de **DeepSeek-LLM-7B-Chat**, el modelo de chat de 7.000 millones de parámetros desarrollado por DeepSeek AI, aplicado sobre un conjunto de datos de entrenamiento no especificado. El autor, Echoo113, ha publicado este checkpoint en HuggingFace con el objetivo de adaptar el comportamiento del modelo base a un dominio concreto, posiblemente relacionado con el ámbito migratorio (por la nomenclatura del nombre), aunque no se proporcionan detalles sobre el conjunto de datos utilizado.
+Este modelo es un ajuste fino (fine-tuning) de **DeepSeek-LLM-7B-Chat**, el modelo de chat de 7.000 millones de parámetros desarrollado por DeepSeek AI, aplicado sobre un conjunto de datos de entrenamiento no especificado. El autor, Echoo113, ha publicado este checkpoint en Hugging Face con el objetivo de adaptar el comportamiento del modelo base a un dominio concreto, posiblemente relacionado con el ámbito migratorio (por la nomenclatura del nombre), aunque no se proporcionan detalles sobre el conjunto de datos utilizado.
 
-El modelo se ha entrenado mediante **SFT (Supervised Fine-Tuning)** utilizando la librería TRL de HuggingFace. Al tratarse de un ajuste fino de un modelo ya existente, hereda las capacidades generales de DeepSeek-LLM-7B-Chat: generación de texto, razonamiento, código y soporte multilingüe inglés-chino, pero con un tamaño de repositorio de solo 0,3 GB, lo que sugiere que se trata de un ajuste parcial (posiblemente LoRA o capas específicas) en lugar de un fine-tuning completo de todos los parámetros.
+El modelo se ha entrenado mediante **SFT (Supervised Fine-Tuning)** utilizando la librería TRL de Hugging Face. Al tratarse de un ajuste fino de un modelo ya existente, hereda las capacidades generales de DeepSeek-LLM-7B-Chat: generación de texto, razonamiento, código y soporte multilingüe inglés-chino, pero con un tamaño de repositorio de solo 0,3 GB, lo que sugiere que se trata de un ajuste parcial (posiblemente LoRA o capas específicas) en lugar de un fine-tuning completo de todos los parámetros.
 
 La relevancia de este modelo radica en su especialización: demuestra cómo se puede adaptar un modelo base de alto rendimiento a dominios específicos mediante técnicas de ajuste eficientes. Sin embargo, la información pública es escasa, sin benchmarks, licencia ni documentación técnica detallada, lo que limita su evaluación objetiva.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especialización: demuestra cómo se p
 
 El modelo se basa en la arquitectura **Transformer decoder-only** de DeepSeek-LLM-7B-Chat, que utiliza atención multi-cabeza convencional con 30 capas, 32 cabezas de atención y una dimensión oculta de 4.096. El modelo base fue pre-entrenado desde cero sobre 2 billones de tokens en inglés y chino, y posteriormente ajustado con instrucciones y datos de conversación para el comportamiento de chat.
 
-El proceso de fine-tuning de este checkpoint se ha realizado con **SFT** (Supervised Fine-Tuning) mediante la librería **TRL 0.19.1** de HuggingFace, con Transformers 4.57.6 y PyTorch 2.11.0. El tamaño reducido del repositorio (0,3 GB) sugiere que el entrenamiento se realizó con técnicas de ajuste eficiente de parámetros, como LoRA o ajuste selectivo de capas (posiblemente MLP, como indica el nombre "mlpB"), en lugar de un fine-tuning completo. No se proporcionan datos sobre el conjunto de entrenamiento, número de pasos, tasa de aprendizaje ni otros hiperparámetros relevantes.
+El proceso de fine-tuning de este checkpoint se ha realizado con **SFT** (Supervised Fine-Tuning) mediante la librería **TRL 0.19.1** de Hugging Face, con Transformers 4.57.6 y PyTorch 2.11.0. El tamaño reducido del repositorio (0,3 GB) sugiere que el entrenamiento se realizó con técnicas de ajuste eficiente de parámetros, como LoRA o ajuste selectivo de capas (posiblemente MLP, como indica el nombre "mlpB"), en lugar de un fine-tuning completo. No se proporcionan datos sobre el conjunto de entrenamiento, número de pasos, tasa de aprendizaje ni otros hiperparámetros relevantes.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ La comparacion directa es limitada porque no se han publicado benchmarks para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.42
 - Modelo base (DeepSeek-LLM-7B-Chat): https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio oficial de DeepSeek-LLM: https://github.com/deepseek-ai/DeepSeek-LLM
 - Sitio web de DeepSeek: https://deepseek.com/en/index.html

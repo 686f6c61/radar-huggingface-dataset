@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.2 Klein Alpha es un paquete de pesos publicado por Xavier Jara (usuario `trmz` en HuggingFace) que dota a la familia FLUX.2 Klein de Black Forest Labs de capacidad nativa de generar imagenes con canal alfa (RGBA). No es un modelo de lenguaje ni un modelo base completo: el repositorio contiene un VAE RGBA especifico para FLUX.2 y tres adaptadores LoRA que se aplican sobre los modelos base `black-forest-labs/FLUX.2-klein-base-4B` y `black-forest-labs/FLUX.2-klein-base-9B`. El problema que resuelve es concreto: extraer el primer plano de una imagen como PNG transparente conservando bordes suaves, sombras y transparencia parcial, algo que los modelos de difusion habituales no hacen bien porque su VAE decodifica en RGB de tres canales.
+FLUX.2 Klein Alpha es un paquete de pesos publicado por Xavier Jara (usuario `trmz` en Hugging Face) que dota a la familia FLUX.2 Klein de Black Forest Labs de capacidad nativa de generar imagenes con canal alfa (RGBA). No es un modelo de lenguaje ni un modelo base completo: el repositorio contiene un VAE RGBA especifico para FLUX.2 y tres adaptadores LoRA que se aplican sobre los modelos base `black-forest-labs/FLUX.2-klein-base-4B` y `black-forest-labs/FLUX.2-klein-base-9B`. El problema que resuelve es concreto: extraer el primer plano de una imagen como PNG transparente conservando bordes suaves, sombras y transparencia parcial, algo que los modelos de difusion habituales no hacen bien porque su VAE decodifica en RGB de tres canales.
 
 El repositorio incluye cuatro artefactos descargables: `vae/` (VAE RGBA para FLUX.2), `loras/extract_4b.safetensors` (extractor de primer plano para Klein Base 4B), `loras/extract_9b.safetensors` (extractor para Klein Base 9B) y `loras/remove_9b.safetensors` (eliminacion de objetos para Klein Base 9B). El metodo del VAE se basa en AlphaVAE, y el entrenamiento e inferencia se realizaron con ai-toolkit. El flujo de uso previsto es sencillo: prompt `Foreground`, guidance 4 y seis pasos de inferencia con cualquiera de los dos extractores.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trmz/flux2-klein-alpha | VAE RGBA + LoRA sobre FLUX.2 Klein | Adaptadores (base 4B/9B) | No aplicable | Por componente: Apache 2.0 (VAE y 4B) y FLUX Non-Commercial (9B) | HuggingFace, 0,9 GB |
-| black-forest-labs/FLUX.2-klein-base-4B | Modelo base de generacion y edicion de imagen | 4B | No aplicable | No disponible en la informacion recogida | HuggingFace |
-| black-forest-labs/FLUX.2-klein-base-9B | Modelo base de generacion y edicion de imagen | 9B | No aplicable | No disponible en la informacion recogida | HuggingFace |
-| Lightricks/LTX-2.5-22b-IC-LoRA-Clean-Plate | LoRA de placa limpia sobre LTX-2.5 | 22B (modelo base) | No aplicable | No disponible en la informacion recogida | HuggingFace |
-| lrzjason/ObjectRemovalFluxFill | Eliminacion de objetos sobre FLUX Fill | No disponible | No aplicable | No disponible en la informacion recogida | HuggingFace |
+| trmz/flux2-klein-alpha | VAE RGBA + LoRA sobre FLUX.2 Klein | Adaptadores (base 4B/9B) | No aplicable | Por componente: Apache 2.0 (VAE y 4B) y FLUX Non-Commercial (9B) | Hugging Face, 0,9 GB |
+| black-forest-labs/FLUX.2-klein-base-4B | Modelo base de generacion y edicion de imagen | 4B | No aplicable | No disponible en la informacion recogida | Hugging Face |
+| black-forest-labs/FLUX.2-klein-base-9B | Modelo base de generacion y edicion de imagen | 9B | No aplicable | No disponible en la informacion recogida | Hugging Face |
+| Lightricks/LTX-2.5-22b-IC-LoRA-Clean-Plate | LoRA de placa limpia sobre LTX-2.5 | 22B (modelo base) | No aplicable | No disponible en la informacion recogida | Hugging Face |
+| lrzjason/ObjectRemovalFluxFill | Eliminacion de objetos sobre FLUX Fill | No disponible | No aplicable | No disponible en la informacion recogida | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no esta disponible: no se han publicado metricas comunes en la informacion recogida.
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trmz/flux2-klein-alpha
+- Modelo en Hugging Face: https://huggingface.co/trmz/flux2-klein-alpha
 - Codigo y demo en GitHub: https://github.com/TR-MZ/flux2-klein-alpha
 - Pagina del paper: https://tr-mz.github.io/papers/flux2-klein-alpha/
 - PDF del paper: https://tr-mz.github.io/papers/flux2-klein-alpha/paper.pdf

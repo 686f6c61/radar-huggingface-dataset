@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 31B IT FP8 es una versión cuantizada en FP8 del modelo Gemma 4 31B en su variante instruction-tuned, desarrollado originalmente por Google DeepMind y publicada en HuggingFace por el usuario `zhangshuai121`. Se trata de un modelo multimodal de tipo image-text-to-text que acepta entradas de texto e imagen y genera texto, con una ventana de contexto de hasta 256K tokens y soporte multilingüe declarado para más de 140 idiomas. La cuantización FP8 reduce el peso del repositorio a 33,3 GB frente a los aproximadamente 62 GB que ocuparían los pesos en BF16, manteniendo 31.273.088.876 parámetros totales.
+Gemma 4 31B IT FP8 es una versión cuantizada en FP8 del modelo Gemma 4 31B en su variante instruction-tuned, desarrollado originalmente por Google DeepMind y publicada en Hugging Face por el usuario `zhangshuai121`. Se trata de un modelo multimodal de tipo image-text-to-text que acepta entradas de texto e imagen y genera texto, con una ventana de contexto de hasta 256K tokens y soporte multilingüe declarado para más de 140 idiomas. La cuantización FP8 reduce el peso del repositorio a 33,3 GB frente a los aproximadamente 62 GB que ocuparían los pesos en BF16, manteniendo 31.273.088.876 parámetros totales.
 
 La arquitectura es un transformer denso de 60 capas con atención híbrida que intercala atención local de ventana deslizante (1024 tokens) con atención global, y emplea claves y valores unificados junto con Proportional RoPE (p-RoPE) en las capas globales para optimizar el consumo de memoria en contextos largos. Incorpora un codificador visual de aproximadamente 550M de parámetros y un vocabulario de 262K tokens. El modelo base pertenece a la familia Gemma 4, que incluye variantes densas (E2B, E4B, 31B) y una variante MoE (26B A4B).
 
@@ -74,10 +74,10 @@ No se han publicado en la información disponible resultados de benchmarks para 
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 31B IT FP8 (esta ficha) | 31,3B | 256K | Texto, imagen | Apache 2.0 | HuggingFace (repo de terceros, 0 descargas) |
-| Gemma 4 31B (original) | 30,7B | 256K | Texto, imagen | Apache 2.0 | HuggingFace (Google) |
-| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | HuggingFace (Google) |
-| Gemma 3 27B | ~27B | no disponible en la información | Texto, imagen | Apache 2.0 | HuggingFace (Google) |
+| Gemma 4 31B IT FP8 (esta ficha) | 31,3B | 256K | Texto, imagen | Apache 2.0 | Hugging Face (repo de terceros, 0 descargas) |
+| Gemma 4 31B (original) | 30,7B | 256K | Texto, imagen | Apache 2.0 | Hugging Face (Google) |
+| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | Hugging Face (Google) |
+| Gemma 3 27B | ~27B | no disponible en la información | Texto, imagen | Apache 2.0 | Hugging Face (Google) |
 
 La variante MoE 26B A4B ofrece inferencia casi tan rápida como un modelo de 4B gracias a sus 3,8B parámetros activos, lo que la hace preferible para despliegues con requisitos de latencia estrictos. El 31B denso obtiene mejores resultados en MMLU Pro (85,2% frente a 82,6%) y AIME 2026 (89,2% frente a 88,3%), por lo que es la opción de mayor calidad dentro de la familia.
 
@@ -95,9 +95,9 @@ La variante MoE 26B A4B ofrece inferencia casi tan rápida como un modelo de 4B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhangshuai121/gemma-4-31B-it-fp8
+- Repositorio Hugging Face: https://huggingface.co/zhangshuai121/gemma-4-31B-it-fp8
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

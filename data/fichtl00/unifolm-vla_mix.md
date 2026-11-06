@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente metodologica: sirve como pieza de comparacion 
 | Espacio de accion/estado | 28 dimensiones en espacio articular (14 articulaciones de brazo + 14 de mano Dex3 por lado, sin cintura) |
 | Horizonte de accion | 16 |
 | Pipeline declarado | robotics |
-| Fecha de publicacion en HuggingFace | 2026-09-23 |
+| Fecha de publicacion en Hugging Face | 2026-09-23 |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estos tres modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fichtl00/Unifolm-VLA_mix
+- Modelo en Hugging Face: https://huggingface.co/Fichtl00/Unifolm-VLA_mix
 - Modelo hermano entrenado solo con datos reales: https://huggingface.co/Fichtl00/Unifolm-VLA_real
 - Perfil del autor: https://huggingface.co/Fichtl00
 - Modelo base VLM: https://huggingface.co/unitreerobotics/UnifoLM-VLM-Base

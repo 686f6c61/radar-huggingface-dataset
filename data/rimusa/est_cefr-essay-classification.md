@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rimusa/est_CEFR-essay-classification` es un modelo de clasificación de texto basado en la arquitectura BERT, con 124.444.420 parámetros totales, publicado en HuggingFace por el usuario `rimusa`. Por su nombre y pipeline (`text-classification`), está orientado a la clasificación de ensayos según los niveles del Marco Común Europeo de Referencia para las lenguas (CEFR), una tarea habitual en evaluación automática de lenguas y en plataformas educativas.
+`rimusa/est_CEFR-essay-classification` es un modelo de clasificación de texto basado en la arquitectura BERT, con 124.444.420 parámetros totales, publicado en Hugging Face por el usuario `rimusa`. Por su nombre y pipeline (`text-classification`), está orientado a la clasificación de ensayos según los niveles del Marco Común Europeo de Referencia para las lenguas (CEFR), una tarea habitual en evaluación automática de lenguas y en plataformas educativas.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,5 GB, lo que es coherente con un BERT-base (aproximadamente 110 millones de parámetros en el encoder más una cabeza de clasificación). La model card está generada automáticamente por la plataforma y no contiene información sustantiva sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
@@ -36,7 +36,7 @@ No hay información disponible sobre el conjunto de datos de entrenamiento, el n
 - Clasificación de texto de secuencias de entrada en categorías (presumiblemente niveles CEFR: A1, A2, B1, B2, C1, C2, aunque la taxonomía exacta no está documentada).
 - Procesamiento de ensayos y textos redactados por aprendices de lengua, según el nombre del modelo.
 - Inferencia por lotes mediante la API de `transformers` (`pipeline("text-classification")`).
-- Compatible con Text Embeddings Inference (TEI) y con endpoints de HuggingFace, según los tags.
+- Compatible con Text Embeddings Inference (TEI) y con endpoints de Hugging Face, según los tags.
 - No se ha documentado soporte de tool calling, generación de texto, razonamiento multi-paso, visión, audio ni modo de pensamiento; son capacidades ajenas a un modelo encoder-only de clasificación.
 
 ## Casos de uso
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en FP32: aproximadamente 0,5 GB (124,4 M de parámetros × 4 bytes). En FP16, alrededor de 0,25 GB. En INT8, en torno a 0,13 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060 o superior permite inferencia por lotes con holgura.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna (GTX 1650 en adelante) e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI) según el tag, endpoints de HuggingFace, y exportación a ONNX para despliegue en CPU.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI) según el tag, endpoints de Hugging Face, y exportación a ONNX para despliegue en CPU.
 - Latencia y throughput: no disponibles; al tratarse de un BERT-base, se espera un throughput alto (cientos o miles de secuencias por segundo en GPU moderna), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rimusa/est_CEFR-essay-classification` | 124,4 M | no disponible | Clasificación CEFR de ensayos | no disponible | HuggingFace (0 descargas) |
-| `bert-base-uncased` | 110 M | 512 tokens | Modelo base preentrenado | Apache 2.0 | HuggingFace (ampliamente usado) |
-| `bert-base-multilingual-cased` | 178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | HuggingFace (ampliamente usado) |
-| `roberta-base` | 125 M | 512 tokens | Modelo base preentrenado | MIT | HuggingFace (ampliamente usado) |
+| `rimusa/est_CEFR-essay-classification` | 124,4 M | no disponible | Clasificación CEFR de ensayos | no disponible | Hugging Face (0 descargas) |
+| `bert-base-uncased` | 110 M | 512 tokens | Modelo base preentrenado | Apache 2.0 | Hugging Face (ampliamente usado) |
+| `bert-base-multilingual-cased` | 178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | Hugging Face (ampliamente usado) |
+| `roberta-base` | 125 M | 512 tokens | Modelo base preentrenado | MIT | Hugging Face (ampliamente usado) |
 
 La comparación con los modelos base es relevante porque, sin información de entrenamiento, no se puede descartar que este checkpoint sea un fine-tuning de uno de ellos. Frente a los modelos base, la ventaja potencial es la especialización en la tarea CEFR; la desventaja es la ausencia de documentación, licencia y validación pública.
 
@@ -85,7 +85,7 @@ La comparación con los modelos base es relevante porque, sin información de en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimusa/est_CEFR-essay-classification
+- Modelo en Hugging Face: https://huggingface.co/rimusa/est_CEFR-essay-classification
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Documentación de BERT en transformers: https://huggingface.co/docs/transformers/model_doc/bert

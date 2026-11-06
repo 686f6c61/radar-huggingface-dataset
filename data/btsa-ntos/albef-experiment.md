@@ -2,7 +2,7 @@
 
 ## Resumen
 
-btsa-ntos/albef-experiment es un repositorio experimental publicado en HuggingFace por el usuario btsa-ntos. Contiene una implementacion propia de la arquitectura Albef orientada a tareas multitarea, con una configuracion declarada como "xlarge". El repositorio se presenta explicitamente como un punto de partida reproducible: incluye `pipeline.py` (modelo y ejemplo ejecutable o punto de entrada de entrenamiento), `config.json`, `training_args.json` y un checkpoint de inicializacion `model.safetensors`. El autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado.
+btsa-ntos/albef-experiment es un repositorio experimental publicado en Hugging Face por el usuario btsa-ntos. Contiene una implementacion propia de la arquitectura Albef orientada a tareas multitarea, con una configuracion declarada como "xlarge". El repositorio se presenta explicitamente como un punto de partida reproducible: incluye `pipeline.py` (modelo y ejemplo ejecutable o punto de entrada de entrenamiento), `config.json`, `training_args.json` y un checkpoint de inicializacion `model.safetensors`. El autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado.
 
 Segun la model card, la arquitectura usa atencion de ventana deslizante, fusion mediante concatenacion y MLP, activacion mish y normalizacion layernorm, con una receta de entrenamiento por defecto basada en el optimizador Adam y un schedule exponencial. El dato real de parametros registrado en los safetensors es de 24.832, una cifra muy baja y coherente con un checkpoint de inicializacion o de prueba de humo (smoke test), no con una configuracion "xlarge" completa. El tamano del repositorio declarado es de 0,0 GB.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| btsa-ntos/albef-experiment | 24.832 (safetensors) | no disponible | MIT | HuggingFace, 0 descargas | sin benchmarks; checkpoint de inicializacion |
+| btsa-ntos/albef-experiment | 24.832 (safetensors) | no disponible | MIT | Hugging Face, 0 descargas | sin benchmarks; checkpoint de inicializacion |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | repositorio publico del proyecto original | no disponible en la informacion proporcionada |
 | BLIP | no disponible en la informacion proporcionada | no disponible | no disponible | repositorio publico del proyecto original | no disponible en la informacion proporcionada |
 | CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | repositorio publico del proyecto original | no disponible en la informacion proporcionada |
@@ -94,12 +94,12 @@ No se dispone de datos verificables de los modelos alternativos dentro de la inf
 - Arquitectura personalizada: las APIs de carga automatica requieren un adaptador explicito; `AutoModel.from_pretrained` no funcionara sin el.
 - Fecha de creacion registrada (2026-09-16) posterior a la fecha habitual de redaccion, lo que puede indicar un error de metadatos del repositorio.
 - Licencia MIT para el codigo y los pesos publicados, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas si se usa el repositorio con datasets de terceros.
-- Ausencia total de validacion comunitaria: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace.
+- Ausencia total de validacion comunitaria: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face.
 - Resultados de busqueda web no relacionados: las coincidencias recuperadas tratan sobre el diploma frances BTSA y no aportan informacion tecnica sobre el modelo.
 - Para cualquier uso en produccion seria imprescindible entrenar, documentar la ejecucion (logs y versiones de entorno) y evaluar con al menos tres semillas frente a un baseline de capacidad equivalente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/btsa-ntos/albef-experiment
+- Hugging Face: https://huggingface.co/btsa-ntos/albef-experiment
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las coincidencias obtenidas corresponden al Brevet de technicien superieur agricole (BTSA) frances y no guardan relacion con el repositorio.
 - Referencia externa sobre la arquitectura homonima (no obtenida en la busqueda web, se incluye solo como contexto del nombre "Albef"): https://github.com/salesforce/ALBEF y https://arxiv.org/abs/2107.07651

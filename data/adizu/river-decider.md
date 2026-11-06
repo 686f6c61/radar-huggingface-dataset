@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/adiZu/river-decider
+- Hugging Face del modelo: https://huggingface.co/adiZu/river-decider
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-multi-Decide
 - Conversion ONNX comunitaria: https://huggingface.co/DanKau/gliner2.5-multi-decide-onnx
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

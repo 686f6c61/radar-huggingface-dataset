@@ -68,8 +68,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Página de NVIDIA sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - GGUF del modelo base: https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF

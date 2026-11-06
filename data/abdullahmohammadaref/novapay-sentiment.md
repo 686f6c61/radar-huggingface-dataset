@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NovaPay Sentiment es un modelo de clasificación de sentimiento obtenido mediante fine-tuning de DistilBERT sobre un subconjunto del dataset IMDB. Lo publica el usuario de HuggingFace `abdullahmohammadaref` como prueba de concepto para clasificar mensajes de atención al cliente de una hipotética plataforma financiera llamada NovaPay. A pesar del nombre comercial, el modelo se ha entrenado exclusivamente con reseñas de películas en inglés y no con mensajes reales de soporte financiero, tal y como reconoce el propio autor en la model card.
+NovaPay Sentiment es un modelo de clasificación de sentimiento obtenido mediante fine-tuning de DistilBERT sobre un subconjunto del dataset IMDB. Lo publica el usuario de Hugging Face `abdullahmohammadaref` como prueba de concepto para clasificar mensajes de atención al cliente de una hipotética plataforma financiera llamada NovaPay. A pesar del nombre comercial, el modelo se ha entrenado exclusivamente con reseñas de películas en inglés y no con mensajes reales de soporte financiero, tal y como reconoce el propio autor en la model card.
 
 Arquitectura DistilBERT (transformer encoder destilado de BERT-base), con 66.955.010 parámetros totales y pesos en formato safetensors. Es un modelo encoder-only de clasificación, no generativo: recibe texto y devuelve una etiqueta de sentimiento (positivo/negativo), sin ventana de contexto conversacional ni capacidad de generación. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -45,7 +45,7 @@ No se documenta el uso de RLHF, DPO ni técnicas de alineación adicionales; tam
 - Prototipado de flujos de atención al cliente: sirve como demostración de un clasificador de sentimiento en un chatbot o sistema de tickets, aunque requeriría reentrenamiento con datos reales del dominio antes de cualquier uso serio.
 - Baseline para experimentos de fine-tuning: útil como punto de partida para comparar técnicas de destilación o ajuste fino con otros encoders (BERT, RoBERTa, DeBERTa) sobre el mismo subconjunto de IMDB.
 - Enrutamiento de tickets en un sistema de soporte: podría usarse como componente de triaje para separar mensajes con tono negativo y priorizarlos, siempre que se valide previamente con datos del dominio financiero.
-- Docencia y demostraciones de HuggingFace Transformers: ejemplo mínimo de pipeline `text-classification` con `pipeline("text-classification", model=...)` para ilustrar el ciclo completo de entrenamiento y publicación de un modelo.
+- Docencia y demostraciones de Hugging Face Transformers: ejemplo mínimo de pipeline `text-classification` con `pipeline("text-classification", model=...)` para ilustrar el ciclo completo de entrenamiento y publicación de un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -64,19 +64,19 @@ No se especifica el conjunto de evaluación exacto, el tamaño de la partición 
 - GPU recomendadas: cualquier GPU consumer moderna sirve; una RTX 3060, RTX 4090 o incluso una GTX 1650 son suficientes. Para lotes grandes, A100 o H100 aportan throughput, pero no son necesarias.
 - Cabe en GPU consumer: sí, en prácticamente todas, incluidas integradas con suficiente memoria compartida.
 - También es viable en CPU: con 66 M de parámetros, la inferencia en CPU es rápida para clasificación de textos cortos.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline`), TorchScript/ONNX Runtime para optimización, y potencialmente llama.cpp/Ollama no aplican al no ser un modelo generativo. vLLM y TGI están orientados a modelos generativos y no son la vía natural para este clasificador.
+- Opciones de despliegue: Hugging Face Transformers (`pipeline`), TorchScript/ONNX Runtime para optimización, y potencialmente llama.cpp/Ollama no aplican al no ser un modelo generativo. vLLM y TGI están orientados a modelos generativos y no son la vía natural para este clasificador.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NovaPay Sentiment (este modelo) | 66,9 M | no disponible (heredado 512) | Clasificación de sentimiento | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | ~125 M | 512 tokens | Base para clasificación | MIT | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento en redes sociales | MIT | HuggingFace |
+| NovaPay Sentiment (este modelo) | 66,9 M | no disponible (heredado 512) | Clasificación de sentimiento | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | ~125 M | 512 tokens | Base para clasificación | MIT | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento en redes sociales | MIT | Hugging Face |
 
-La comparación con alternativas consolidadas es desfavorable para este modelo: los clasificadores de sentimiento publicados por el equipo de HuggingFace o CardiffNLP cuentan con millones de descargas, evaluación más rigurosa y datos de entrenamiento más representativos de texto real de usuario. NovaPay Sentiment no aporta ventajas técnicas frente a ellos y su dominio declarado (soporte financiero) no está cubierto por sus datos de entrenamiento.
+La comparación con alternativas consolidadas es desfavorable para este modelo: los clasificadores de sentimiento publicados por el equipo de Hugging Face o CardiffNLP cuentan con millones de descargas, evaluación más rigurosa y datos de entrenamiento más representativos de texto real de usuario. NovaPay Sentiment no aporta ventajas técnicas frente a ellos y su dominio declarado (soporte financiero) no está cubierto por sus datos de entrenamiento.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ La comparación con alternativas consolidadas es desfavorable para este modelo: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdullahmohammadaref/novapay-sentiment
+- Modelo en Hugging Face: https://huggingface.co/abdullahmohammadaref/novapay-sentiment
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset IMDB: https://huggingface.co/datasets/imdb
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

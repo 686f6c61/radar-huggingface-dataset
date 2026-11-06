@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - Temperaturas y parametros de decodificacion muy especificos (Best-of-N=4, T_calib=0.8, top-k 40, top-p 0.9): los resultados publicados dependen del script de inferencia del autor; otros pipelines pueden producir salidas bastante peores.
 - Licencia MIT: permite uso comercial y modificacion sin restricciones adicionales, pero conviene verificar que el modelo base `openai-community/gpt2` (licencia MIT modificada de OpenAI) no imponga condiciones adicionales sobre los pesos derivados.
 - Poca traccion y validacion externa: 6 descargas y 1 "like" en el momento de la consulta; no ha sido evaluado por terceros ni auditado por sesgos.
-- Fechas de creacion y actualizacion (2026-10-08 y 2026-10-10) tal como figuran en HuggingFace.
+- Fechas de creacion y actualizacion (2026-10-08 y 2026-10-10) tal como figuran en Hugging Face.
 - No apto para produccion en tareas que requieran precision factual, razonamiento avanzado o multilingue.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.6
+- Modelo en Hugging Face: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.6
 - Modelo base (version anterior): https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.5
 - Modelo base original: https://huggingface.co/openai-community/gpt2
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

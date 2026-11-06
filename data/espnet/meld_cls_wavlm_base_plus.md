@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `espnet/meld_cls_wavlm_base_plus` es un clasificador de audio de nivel de enunciado desarrollado por el equipo de ESPnet y publicado en HuggingFace bajo el identificador de autor `espnet`. Se trata de un paquete de inferencia generado a partir de la receta `egs3/meld/cls`, entrenado sobre el corpus MELD, y empaquetado con la clase `ESPnetClassificationModel`. No es un modelo generativo ni un modelo de lenguaje: es un cabezal de clasificación supervisada que recibe una señal de audio y produce una etiqueta de clase.
+El modelo `espnet/meld_cls_wavlm_base_plus` es un clasificador de audio de nivel de enunciado desarrollado por el equipo de ESPnet y publicado en Hugging Face bajo el identificador de autor `espnet`. Se trata de un paquete de inferencia generado a partir de la receta `egs3/meld/cls`, entrenado sobre el corpus MELD, y empaquetado con la clase `ESPnetClassificationModel`. No es un modelo generativo ni un modelo de lenguaje: es un cabezal de clasificación supervisada que recibe una señal de audio y produce una etiqueta de clase.
 
 Tecnicamente combina un frontend preentrenado de representacion de voz (WavLM Base+ a traves de la libreria s3prl, con extraccion de caracteristicas multicapa) con un encoder transformer pequeno de 4 bloques y dimension oculta 128, seguido de un decodificador lineal. El conjunto suma 95.801.220 parametros en `torch.float32`, lo que ocupa 383,2 MB, y esta pensado para ejecutarse en hardware muy modesto.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada y muy especifica: sirve como punto de partida reproduci
 | Tipo de clasificacion | `multi-class` |
 | Tamano del repositorio | 0,4 GB |
 | Fecha de creacion (segun metadatos) | 2026-09-10 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,11 +87,11 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 - Sesgos potenciales: los derivados del corpus de entrenamiento (voces de actores, guiones, distribucion de genero y edad, contexto cultural estadounidense) y los del propio modelo preentrenado WavLM.
 - Discrepancia documental: la configuracion declara `freeze_param: [frontend.upstream]` mientras que el resumen indica que el 100 % de los parametros son aprendibles; conviene verificar que pesos se congelan realmente al reentrenar.
 - Dependencia de librerias: requiere ESPnet3 y s3prl, y la carga exige `trust_user_code=True`, lo que anade superficie de riesgo en entornos productivos.
-- Cero traccion en HuggingFace (0 descargas, 0 likes) en el momento de la consulta, lo que limita la validacion independiente por parte de terceros.
+- Cero traccion en Hugging Face (0 descargas, 0 likes) en el momento de la consulta, lo que limita la validacion independiente por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espnet/meld_cls_wavlm_base_plus
+- Modelo en Hugging Face: https://huggingface.co/espnet/meld_cls_wavlm_base_plus
 - Repositorio de origen declarado en la model card: https://github.com/itoten/espnet.git (rama `recipe/meld-cls-espnet3`, commit `322d199a02`)
 - Paper de ESPnet: Watanabe et al., "ESPnet: End-to-End Speech Processing Toolkit", Interspeech 2018, paginas 2207-2211, DOI 10.21437/Interspeech.2018-1456
 - Toolkit ESPnet: https://github.com/espnet/espnet

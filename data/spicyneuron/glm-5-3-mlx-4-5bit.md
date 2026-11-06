@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-5.3-MLX-4.5bit (este) | 117B (MoE) | 1M | glm-5.3 | HuggingFace (cuantizacion MLX) |
-| GLM-5.3-BF16 (base) | 117B (MoE) | 1M | MIT (segun openlm.ai) | HuggingFace |
-| GLM-5.2 | 117B (MoE) | 1M | MIT | HuggingFace |
-| DeepSeek-V3 | 671B (MoE, 37B activos) | 128K | MIT | HuggingFace |
+| GLM-5.3-MLX-4.5bit (este) | 117B (MoE) | 1M | glm-5.3 | Hugging Face (cuantizacion MLX) |
+| GLM-5.3-BF16 (base) | 117B (MoE) | 1M | MIT (segun openlm.ai) | Hugging Face |
+| GLM-5.2 | 117B (MoE) | 1M | MIT | Hugging Face |
+| DeepSeek-V3 | 671B (MoE, 37B activos) | 128K | MIT | Hugging Face |
 
 Nota: la comparativa se basa en datos publicos de los modelos base. No se dispone de benchmarks comparativos directos entre esta cuantizacion y otras alternativas.
 
@@ -77,8 +77,8 @@ Nota: la comparativa se basa en datos publicos de los modelos base. No se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spicyneuron/GLM-5.3-MLX-4.5bit
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Repositorio Hugging Face: https://huggingface.co/spicyneuron/GLM-5.3-MLX-4.5bit
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Pagina de GLM-5.3 en openlm.ai: https://openlm.ai/glm-5.3/
 - Repositorio oficial de GLM-5 en GitHub: https://github.com/zai-org/GLM-5
 - Runtime MLX para GLM-5.3 (PipeNetwork): https://github.com/PipeNetwork/glm53-mlx

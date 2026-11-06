@@ -59,9 +59,9 @@ Existen otros checkpoints del mismo autor para niveles superiores (level4, level
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vam-cross-level2 (este) | no disponible | no disponible | no disponible | HuggingFace |
-| vam-cross-level4 | no disponible | no disponible | no disponible | HuggingFace |
-| vam-cross-level5 | no disponible | no disponible | no disponible | HuggingFace |
+| vam-cross-level2 (este) | no disponible | no disponible | no disponible | Hugging Face |
+| vam-cross-level4 | no disponible | no disponible | no disponible | Hugging Face |
+| vam-cross-level5 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

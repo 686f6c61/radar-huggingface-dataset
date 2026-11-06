@@ -69,7 +69,7 @@ No se dispone de información comparativa en la documentación proporcionada. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-Reranker-4B
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Reranker-4B
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Documentación de Furiosa-LLM para Qwen3-Reranker: https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3-reranker.html
 - Documentación de Furiosa-LLM (general): https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

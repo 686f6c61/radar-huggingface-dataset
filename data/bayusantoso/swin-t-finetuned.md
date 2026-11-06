@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bayusantoso/swin-t-finetuned` es un repositorio de HuggingFace publicado por el usuario bayusantoso que contiene una implementación propia (no la de `timm` ni la de los autores originales) de una Swin Transformer de escala Tiny orientada a clasificación de imágenes. El artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización*: la propia model card indica que `model.safetensors` sirve para pruebas de humo y que no se presenta como un checkpoint evaluado. No hay resultados de benchmarks, ni métricas, ni detalle del conjunto de datos de entrenamiento.
+`bayusantoso/swin-t-finetuned` es un repositorio de Hugging Face publicado por el usuario bayusantoso que contiene una implementación propia (no la de `timm` ni la de los autores originales) de una Swin Transformer de escala Tiny orientada a clasificación de imágenes. El artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización*: la propia model card indica que `model.safetensors` sirve para pruebas de humo y que no se presenta como un checkpoint evaluado. No hay resultados de benchmarks, ni métricas, ni detalle del conjunto de datos de entrenamiento.
 
 La relevancia ahora mismo es, por tanto, la de una plantilla de código y configuración, no la de un modelo utilizable en producción. El repositorio incluye `model.py` (implementación y ejemplo ejecutable), `config.json` (arquitectura), `training_args.json` (receta por defecto con optimizador Lamb y *warmup* lineal) y `model.safetensors`. Con 0 descargas y 0 *likes* desde su creación el 19 de octubre de 2026, y una actualización seis segundos posterior a la creación, el patrón es compatible con una subida automatizada sin validación de la comunidad.
 
@@ -66,9 +66,9 @@ Las cifras de los modelos de referencia proceden de sus implementaciones origina
 | Modelo | Parámetros | Tipo / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `bayusantoso/swin-t-finetuned` | 16.576 reportados (no fiables); recuento real no disponible | Swin T propia, clasificación; resolución no documentada | MIT | 0 descargas, 0 *likes*; sin pesos entrenados |
-| Swin Transformer Tiny (original, microsoft) | ~28 M | Swin jerárquica, 224×224 | MIT | Pesos preentrenados en HuggingFace |
-| DeiT-Small (facebook) | ~22 M | Vision transformer plano, 224×224 | Apache 2.0 | Pesos preentrenados en HuggingFace |
-| ConvNeXt-Tiny (facebook) | ~28 M | CNN moderna con diseño tipo transformer, 224×224 | consultar repositorio original | Pesos preentrenados en HuggingFace |
+| Swin Transformer Tiny (original, microsoft) | ~28 M | Swin jerárquica, 224×224 | MIT | Pesos preentrenados en Hugging Face |
+| DeiT-Small (facebook) | ~22 M | Vision transformer plano, 224×224 | Apache 2.0 | Pesos preentrenados en Hugging Face |
+| ConvNeXt-Tiny (facebook) | ~28 M | CNN moderna con diseño tipo transformer, 224×224 | consultar repositorio original | Pesos preentrenados en Hugging Face |
 
 La diferencia determinante no es de arquitectura sino de estado: los tres modelos de referencia incluyen pesos entrenados y métricas publicadas en ImageNet, mientras que este repositorio solo aporta inicialización aleatoria y código.
 
@@ -86,5 +86,5 @@ La diferencia determinante no es de arquitectura sino de estado: los tres modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bayusantoso/swin-t-finetuned
+- Hugging Face: https://huggingface.co/bayusantoso/swin-t-finetuned
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la información disponible.

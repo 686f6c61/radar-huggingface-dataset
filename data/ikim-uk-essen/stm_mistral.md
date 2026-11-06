@@ -78,8 +78,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ikim-uk-essen/stm_mistral
+- Repositorio Hugging Face: https://huggingface.co/ikim-uk-essen/stm_mistral
 - Articulo arXiv: https://arxiv.org/abs/2602.04731
-- Coleccion STM en HuggingFace: https://huggingface.co/collections/ikim-uk-essen/stm
+- Coleccion STM en Hugging Face: https://huggingface.co/collections/ikim-uk-essen/stm
 - Instituto IKIM: https://www.ikim.uk-essen.de/
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/ikim-uk-essen
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/ikim-uk-essen

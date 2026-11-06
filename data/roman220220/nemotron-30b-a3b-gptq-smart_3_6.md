@@ -22,7 +22,7 @@ Su relevancia es pr√°ctica: permite ejecutar un MoE de 31,6 mil millones de par√
 | Formato de pesos | safetensors en formato MLX (libreria mlx-lm) |
 | Modelo base | nvidia/Nemotron-3.5-Lightning-30B-A3B |
 | Autor de la cuantizacion | roman220220 (pipeline quant-ternary) |
-| Tamano del repo | 31,2 GB en HuggingFace; la model card indica ~16 GB en disco |
+| Tamano del repo | 31,2 GB en Hugging Face; la model card indica ~16 GB en disco |
 | Fecha de creacion | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No se dispone de datos de contexto, licencia detallada ni rendimiento en tareas 
 - No hay evaluaciones en tareas: no se publican resultados de MMLU, HumanEval, GSM8K ni de tool calling, por lo que no se puede garantizar un comportamiento correcto en produccion.
 - Discrepancia de tamano: la model card indica ~16 GB en disco, mientras que el repositorio ocupa 31,2 GB. Conviene descargar y verificar los pesos antes de planificar el despliegue.
 - Historicamente defectuoso: la propia model card reconoce que versiones anteriores del repositorio, incluida la receta posicional `mixed_3_6`, no aplicaban los 6 bits a los expertos MoE por un desajuste de nombres. Solo esta version se declara corregida y verificada.
-- Adopcion nula: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado ni proceso de validacion por terceros.
+- Adopcion nula: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado ni proceso de validacion por terceros.
 - Idiomas no documentados: se desconoce el soporte multilingue real y el comportamiento fuera del ingles.
 - Longitud de contexto desconocida: no se especifica la ventana de contexto utilizable tras la cuantizacion, lo que impide planificar casos de uso con documentos largos.
 - Riesgo de alucinacion: inherente al modelo base y potencialmente agravado por la cuantizacion agresiva a 3 bits en la mayoria de las proyecciones.
@@ -106,7 +106,7 @@ No se dispone de datos de contexto, licencia detallada ni rendimiento en tareas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-smart_3_6
+- Repositorio en Hugging Face: https://huggingface.co/roman220220/nemotron-30b-a3b-gptq-smart_3_6
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Lightning-30B-A3B
 - Pipeline de cuantizacion (repositorio del proyecto): https://github.com/rromenskyi/quant-ternary
 - Metodologia detallada: `docs/session_findings_2026-09-11.md` en el repositorio del proyecto (ruta citada en la model card)

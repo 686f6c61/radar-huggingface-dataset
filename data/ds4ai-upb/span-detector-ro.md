@@ -79,7 +79,7 @@ No se dispone de información comparativa con otros modelos de detección de spa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DS4AI-UPB/span-detector-ro
+- Hugging Face: https://huggingface.co/DS4AI-UPB/span-detector-ro
 - Repositorio de código: https://github.com/DS4AI-UPB/crosslingual-romanian-re
 - Clasificador de relaciones asociado: https://huggingface.co/DS4AI-UPB/xlmr-large-ro-re
 - Organización DS4AI-UPB: https://huggingface.co/DS4AI-UPB

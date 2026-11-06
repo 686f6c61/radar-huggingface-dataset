@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuralRestore es un repositorio de modelo publicado en HuggingFace por el usuario sp533 bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card util: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline de HuggingFace ni un listado de idiomas soportados.
+NeuralRestore es un repositorio de modelo publicado en Hugging Face por el usuario sp533 bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card util: el README se limita al bloque de metadatos de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se ha declarado un pipeline de Hugging Face ni un listado de idiomas soportados.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 1,0 GB, junto con las fechas de creacion y ultima actualizacion (6 de octubre de 2026, con apenas un minuto de diferencia entre ambas), lo que sugiere una publicacion sin iteracion posterior. El repositorio acumula 0 descargas y 0 likes, por lo que no existe retroalimentacion de la comunidad que permita validar su funcionamiento.
 
@@ -20,7 +20,7 @@ Con esta informacion no es posible determinar que problema resuelve el modelo, q
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
-| Pipeline declarado | no disponible (campo vacio en HuggingFace) |
+| Pipeline declarado | no disponible (campo vacio en Hugging Face) |
 | Tamano del repositorio | 1,0 GB |
 | Autor | sp533 |
 | Fecha de creacion | 2026-10-06 |
@@ -88,5 +88,5 @@ No disponible. Para establecer una comparativa seria necesario conocer la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sp533/NeuralRestore
+- Hugging Face: https://huggingface.co/sp533/NeuralRestore
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

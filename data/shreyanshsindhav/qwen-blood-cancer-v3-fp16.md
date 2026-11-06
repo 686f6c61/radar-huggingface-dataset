@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su posible aplicación en el ámbito biom
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se corresponde con la familia Qwen2, un transformer decoder con atención causal estándar, aunque no se especifica el número de capas, cabezas de atención ni dimensiones ocultas. El tag `qwen2` en HuggingFace confirma que el modelo base es uno de los modelos Qwen2 de 3B parámetros, probablemente el `Qwen2-3B` o similar. El entrenamiento de fine-tune se desconoce por completo: no hay información sobre el dataset, el número de épocas, la configuración de hiperparámetros ni si se emplearon técnicas como RLHF o DPO. El nombre del repositorio indica que los pesos están en precisión fp16, lo que sugiere que el fine-tune se realizó en esta precisión, pero no hay confirmación.
+La arquitectura se corresponde con la familia Qwen2, un transformer decoder con atención causal estándar, aunque no se especifica el número de capas, cabezas de atención ni dimensiones ocultas. El tag `qwen2` en Hugging Face confirma que el modelo base es uno de los modelos Qwen2 de 3B parámetros, probablemente el `Qwen2-3B` o similar. El entrenamiento de fine-tune se desconoce por completo: no hay información sobre el dataset, el número de épocas, la configuración de hiperparámetros ni si se emplearon técnicas como RLHF o DPO. El nombre del repositorio indica que los pesos están en precisión fp16, lo que sugiere que el fine-tune se realizó en esta precisión, pero no hay confirmación.
 
 No se ha publicado ninguna innovación técnica específica para este modelo. La referencia al paper `arxiv:1910.09700` en los tags corresponde al artículo sobre el calculador de impacto ambiental de Lacoste et al., que aparece en la plantilla de la model card, no a una contribución del modelo en sí.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2-3B (base) | 3.086 M | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Qwen3-8B | 8.000 M | 32.768 tokens | Apache 2.0 | HuggingFace |
-| shreyanshsindhav/qwen-blood-cancer-v3-fp16 | 3.086 M | no disponible | no disponible | HuggingFace |
+| Qwen2-3B (base) | 3.086 M | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Qwen3-8B | 8.000 M | 32.768 tokens | Apache 2.0 | Hugging Face |
+| shreyanshsindhav/qwen-blood-cancer-v3-fp16 | 3.086 M | no disponible | no disponible | Hugging Face |
 
 El modelo base Qwen2-3B tiene una licencia permisiva (Apache 2.0) y un contexto de 32.768 tokens, pero este fine-tune no especifica su licencia ni su contexto. Qwen3-8B es una alternativa más reciente y potente, pero con el doble de parámetros. No se dispone de comparaciones de rendimiento entre estos modelos y el fine-tune.
 
@@ -76,6 +76,6 @@ El modelo base Qwen2-3B tiene una licencia permisiva (Apache 2.0) y un contexto 
 
 ## Enlaces
 
-- [HuggingFace - shreyanshsindhav/qwen-blood-cancer-v3-fp16](https://huggingface.co/shreyanshsindhav/qwen-blood-cancer-v3-fp16)
+- [Hugging Face - shreyanshsindhav/qwen-blood-cancer-v3-fp16](https://huggingface.co/shreyanshsindhav/qwen-blood-cancer-v3-fp16)
 - [Qwen - sitio oficial](https://qwen.ai/home)
-- [Qwen3-8B en HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
+- [Qwen3-8B en Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)

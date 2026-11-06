@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HandXFM es un modelo publicado en HuggingFace por el usuario Yuesai bajo el identificador `Yuesai/HandXFM`. La model card asociada es practicamente vacia: unicamente declara la licencia, que remite a la licencia de DINOv3 de Meta (Facebook Research) mediante un enlace a su repositorio de GitHub. No se proporciona descripcion funcional, arquitectura, tamano ni datos de entrenamiento.
+HandXFM es un modelo publicado en Hugging Face por el usuario Yuesai bajo el identificador `Yuesai/HandXFM`. La model card asociada es practicamente vacia: unicamente declara la licencia, que remite a la licencia de DINOv3 de Meta (Facebook Research) mediante un enlace a su repositorio de GitHub. No se proporciona descripcion funcional, arquitectura, tamano ni datos de entrenamiento.
 
 El nombre del modelo sugiere un modelo de representacion visual (posiblemente un extractor de caracteristicas o un modelo fundacional, por las siglas XFM) orientado a la mano, pero esta interpretacion no esta confirmada por ninguna documentacion oficial. La unica senal tecnica fiable es la licencia heredada de DINOv3, lo que apunta a que el modelo podria derivar o reutilizar componentes de la familia DINOv3 de Meta, aunque no se confirma en la informacion disponible.
 
@@ -23,7 +23,7 @@ En el momento de la consulta el repositorio registra 0 descargas y 1 like, con f
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El pipeline no esta declarado, lo que impide confirmar si se trata de un modelo de vision, multimodal o de otro tipo.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El pipeline no esta declarado, lo que impide confirmar si se trata de un modelo de vision, multimodal o de otro tipo.
 
 Tampoco hay datos sobre el volumen de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas asociadas. La unica referencia indirecta es la licencia `dinov3-license`, que vincula el modelo al ecosistema DINOv3 de Meta, pero no se especifica si HandXFM es un fine-tuning, una destilacion o un modelo independiente que simplemente adopta esa licencia.
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa fiable sin conocer la categoria, el tam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HandXFM | no disponible | no disponible | dinov3-license | HuggingFace (0 descargas) |
+| HandXFM | no disponible | no disponible | dinov3-license | Hugging Face (0 descargas) |
 | DINOv3 (Meta) | no disponible en esta ficha | no disponible | dinov3-license | Repositorio oficial de Meta |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable sin conocer la categoria, el tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuesai/HandXFM
+- Hugging Face: https://huggingface.co/Yuesai/HandXFM
 - Licencia DINOv3 (Meta): https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md

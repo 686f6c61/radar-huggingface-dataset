@@ -80,8 +80,8 @@ No hay en la informacion proporcionada datos de otros rerankers genericos (por e
 
 | Sistema | Tipo | Parametros | Contexto | Acc@1 (test) | MRR@10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| crosswordspacepp-dualencoder | Bi-encoder | no disponible | no disponible | 57,9 | 65,8 | no disponible | HuggingFace |
-| crosswordspacepp-reranker | Cross-encoder | 110.696.449 | 84 tokens | 59,9 | 67,9 | CC BY 4.0 | HuggingFace |
+| crosswordspacepp-dualencoder | Bi-encoder | no disponible | no disponible | 57,9 | 65,8 | no disponible | Hugging Face |
+| crosswordspacepp-reranker | Cross-encoder | 110.696.449 | 84 tokens | 59,9 | 67,9 | CC BY 4.0 | Hugging Face |
 | Mezcla de ambos (alpha = 0,17) | Hibrido | no aplica | 84 tokens | 68,2 | 74,5 | CC BY 4.0 (componente publicado) | Codigo en GitHub |
 
 Comparativas con modelos de la misma categoria (rerankers de proposito general o multilingues) no disponibles en la informacion proporcionada.
@@ -101,7 +101,7 @@ Comparativas con modelos de la misma categoria (rerankers de proposito general o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cruciverb-it/crosswordspacepp-reranker
+- Modelo en Hugging Face: https://huggingface.co/cruciverb-it/crosswordspacepp-reranker
 - Bi-encoder del mismo sistema: https://huggingface.co/cruciverb-it/crosswordspacepp-dualencoder
 - Modelo base: https://huggingface.co/nickprock/sentence-bert-base-italian-xxl-uncased
 - Dataset de evaluacion: https://huggingface.co/datasets/cruciverb-it/evalita2026

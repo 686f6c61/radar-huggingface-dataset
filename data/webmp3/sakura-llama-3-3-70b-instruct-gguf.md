@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura-Llama-3.3-70B-Instruct-GGUF (Q4_K_M) | 70,6 B | no disponible en la model card | GGUF, 42,5 GB | llama3.3 | HuggingFace, comunidad |
-| meta-llama/Llama-3.3-70B-Instruct (original) | 70,6 B | 128K (según documentación de Meta) | safetensors, BF16 | llama3.3 | HuggingFace, oficial |
-| bartowski/Llama-3.3-70B-Instruct-GGUF (Q8_0) | 70,6 B | 128K (según documentación de Meta) | GGUF, 75,0 GB | llama3.3 | HuggingFace, comunidad |
-| Llama-3.1-70B (modelo base declarado) | 70,6 B | 128K (según documentación de Meta) | safetensors | llama3.1 | HuggingFace, oficial |
+| Sakura-Llama-3.3-70B-Instruct-GGUF (Q4_K_M) | 70,6 B | no disponible en la model card | GGUF, 42,5 GB | llama3.3 | Hugging Face, comunidad |
+| meta-llama/Llama-3.3-70B-Instruct (original) | 70,6 B | 128K (según documentación de Meta) | safetensors, BF16 | llama3.3 | Hugging Face, oficial |
+| bartowski/Llama-3.3-70B-Instruct-GGUF (Q8_0) | 70,6 B | 128K (según documentación de Meta) | GGUF, 75,0 GB | llama3.3 | Hugging Face, comunidad |
+| Llama-3.1-70B (modelo base declarado) | 70,6 B | 128K (según documentación de Meta) | safetensors | llama3.1 | Hugging Face, oficial |
 
 No se dispone de datos de rendimiento comparativo medidos para esta cuantización, por lo que la comparativa se limita a parámetros, formato, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo medidos para esta cuantizació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Llama-3.3-70B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Llama-3.3-70B-Instruct-GGUF
 - Modelo base oficial: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Model card del base en el commit referenciado: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct/blob/6f6073b423013f6a7d4d9f39144961bfbfbc386b/README.md
 - Modelo base declarado (Llama 3.1 70B): https://huggingface.co/meta-llama/Llama-3.1-70B

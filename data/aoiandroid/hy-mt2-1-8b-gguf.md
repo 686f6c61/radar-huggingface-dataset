@@ -37,13 +37,13 @@ El único dato estructural confirmado es el recuento de parámetros (1.791.080.4
 ## Capacidades
 
 - No hay descripción de capacidades en la información disponible. La model card del espejo remite íntegramente al repositorio upstream.
-- Generación de texto: no confirmada explícitamente, aunque el pipeline declarado en los metadatos de HuggingFace es `conversational`.
+- Generación de texto: no confirmada explícitamente, aunque el pipeline declarado en los metadatos de Hugging Face es `conversational`.
 - Traducción automática: plausible por la denominación "MT" y por la aplicación consumidora (TranslateBlue), pero no documentada en este repositorio.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible. No se declara lista de idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Compatibilidad con endpoints: los tags incluyen `endpoints_compatible`, lo que indica que el repositorio está preparado para su uso con la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: los tags incluyen `endpoints_compatible`, lo que indica que el repositorio está preparado para su uso con la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 

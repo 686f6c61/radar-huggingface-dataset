@@ -68,9 +68,9 @@ Además, el componente Fable Distill (según TeichAI) muestra mejoras relativas 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF | 27B | 262K | IQ4_XS | other | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 27B | 262K | FP16, BF16, GGUF oficiales | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B GGUF (comunidad) | 27B | 262K | Q4_K_M, Q5_K_M, etc. | Apache 2.0 | HuggingFace |
+| Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF | 27B | 262K | IQ4_XS | other | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 27B | 262K | FP16, BF16, GGUF oficiales | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B GGUF (comunidad) | 27B | 262K | Q4_K_M, Q5_K_M, etc. | Apache 2.0 | Hugging Face |
 
 La principal diferencia con el Qwen3.8-27B original es el linaje de fusión (GAIN + Fable + F711) que aporta mejoras medidas en ARC y perplejidad, aunque a costa de una licencia menos clara ("other") y de que las mediciones no son del propio GGUF. Frente a otros GGUF comunitarios del mismo modelo base, este destaca por la imatrix específica y el MTP embebido, pero carece de benchmarks propios verificados.
 
@@ -85,7 +85,7 @@ La principal diferencia con el Qwen3.8-27B original es el linaje de fusión (GAI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF
 - Modelo base (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución local de Qwen3.8-27B: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Guía completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

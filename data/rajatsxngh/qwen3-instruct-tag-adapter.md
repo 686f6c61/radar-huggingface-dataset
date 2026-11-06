@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajatsxngh/qwen3-instruct-tag-adapter` es un adaptador QLoRA entrenado sobre el modelo base Qwen3-1.7B de Alibaba. Lo publica el usuario rajatsxngh en HuggingFace y su propósito es la generación de una etiqueta ("tag") a partir de una instrucción, en el contexto de un ejercicio académico (HW5B) sobre el corpus de Stack Exchange. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse junto al modelo base de 1.700 millones de parámetros.
+`rajatsxngh/qwen3-instruct-tag-adapter` es un adaptador QLoRA entrenado sobre el modelo base Qwen3-1.7B de Alibaba. Lo publica el usuario rajatsxngh en Hugging Face y su propósito es la generación de una etiqueta ("tag") a partir de una instrucción, en el contexto de un ejercicio académico (HW5B) sobre el corpus de Stack Exchange. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse junto al modelo base de 1.700 millones de parámetros.
 
 El adaptador se ha entrenado con Axolotl sobre 5.000 preguntas del split de entrenamiento del instructor, seleccionando el mejor checkpoint mediante un split de monitorización de 1.000 preguntas. La información pública es muy escasa: el repositorio ocupa 0,6 GB, no tiene descargas ni likes y la model card se limita a dos frases y un enlace a los logs de Weights & Biases alojados en CoreWeave.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajatsxngh/qwen3-instruct-tag-adapter | Adaptador sobre 1.700 M | No disponible | Adaptador QLoRA para etiquetado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B | 1.700 M | No disponible en la informacion proporcionada | Modelo base completo | Apache 2.0 | HuggingFace |
-| Adaptadores LoRA de la comunidad sobre Qwen3-1.7B | Variable | Heredado del base | Adaptadores PEFT | Variable | HuggingFace |
+| rajatsxngh/qwen3-instruct-tag-adapter | Adaptador sobre 1.700 M | No disponible | Adaptador QLoRA para etiquetado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B | 1.700 M | No disponible en la informacion proporcionada | Modelo base completo | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA de la comunidad sobre Qwen3-1.7B | Variable | Heredado del base | Adaptadores PEFT | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajatsxngh/qwen3-instruct-tag-adapter
+- Hugging Face: https://huggingface.co/rajatsxngh/qwen3-instruct-tag-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Logs de entrenamiento: https://forge.coreweave.com/wandb/rajat-utd/hw5_decoder_tags
 - Axolotl: https://github.com/axolotl-ai-cloud/axolotl

@@ -84,7 +84,7 @@ No se dispone de comparativas publicadas con otros modelos de tamano similar. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1b-asst-sft
-- Coleccion 1PP en HuggingFace: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
+- Repositorio Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1b-asst-sft
+- Coleccion 1PP en Hugging Face: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, pretraining): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

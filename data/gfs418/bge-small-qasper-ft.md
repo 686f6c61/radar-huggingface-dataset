@@ -74,8 +74,8 @@ No se publican los valores absolutos de recall, solo la diferencia respecto al m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Recall en QASPER |
 |---|---|---|---|---|---|
-| `GFS418/bge-small-qasper-ft` | 33,36 M | 512 tokens del modelo base (no confirmado) | MIT | HuggingFace, 0 descargas | +0,149 respecto al base (presupuesto de 1.024 tokens) |
-| `BAAI/bge-small-en-v1.5` (modelo base) | 33,36 M | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Referencia de partida del fine-tune |
+| `GFS418/bge-small-qasper-ft` | 33,36 M | 512 tokens del modelo base (no confirmado) | MIT | Hugging Face, 0 descargas | +0,149 respecto al base (presupuesto de 1.024 tokens) |
+| `BAAI/bge-small-en-v1.5` (modelo base) | 33,36 M | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Referencia de partida del fine-tune |
 | Otras variantes de la familia BGE (`bge-base-en-v1.5`, `bge-large-en-v1.5`) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación documentada es la ablación contra el modelo base, que es además la más informativa: mismo backbone, mismos 33,36 M de parámetros y misma licencia, con una ganancia de recall de +0,149 en el dominio de QASPER. No hay datos en la información proporcionada que permitan comparar con alternativas de otros tamaños o familias.
@@ -97,7 +97,7 @@ La única comparación documentada es la ablación contra el modelo base, que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GFS418/bge-small-qasper-ft
+- Modelo en Hugging Face: https://huggingface.co/GFS418/bge-small-qasper-ft
 - Repositorio con el proyecto, el arnés de evaluación y los resultados completos: https://github.com/GFS418/rag-eval-harness
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Los resultados de búsqueda web proporcionados no guardan relación con este modelo (corresponden a empresas agrícolas de Ohio) y no aportan enlaces relevantes.

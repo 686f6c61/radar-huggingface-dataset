@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`syifanabila/indobert-user` es un modelo publicado en HuggingFace por el usuario syifanabila bajo licencia MIT. Por el identificador y la nomenclatura empleada, se trata presumiblemente de un ajuste fino (fine-tuning) del modelo base IndoBERT, un transformer encoder preentrenado para bahasa Indonesia desarrollado originalmente por Indolem e IndoLEM. El sufijo "user" sugiere que el ajuste se ha orientado a una tarea relacionada con clasificación o perfilado de usuarios, aunque la model card no lo especifica.
+`syifanabila/indobert-user` es un modelo publicado en Hugging Face por el usuario syifanabila bajo licencia MIT. Por el identificador y la nomenclatura empleada, se trata presumiblemente de un ajuste fino (fine-tuning) del modelo base IndoBERT, un transformer encoder preentrenado para bahasa Indonesia desarrollado originalmente por Indolem e IndoLEM. El sufijo "user" sugiere que el ajuste se ha orientado a una tarea relacionada con clasificación o perfilado de usuarios, aunque la model card no lo especifica.
 
-La información disponible es extremadamente limitada: la model card solo contiene la declaración de licencia, sin descripción de la tarea, los datos de entrenamiento, los hiperparámetros ni los resultados. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. No se especifica el pipeline de HuggingFace ni los idiomas soportados de forma explícita.
+La información disponible es extremadamente limitada: la model card solo contiene la declaración de licencia, sin descripción de la tarea, los datos de entrenamiento, los hiperparámetros ni los resultados. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. No se especifica el pipeline de Hugging Face ni los idiomas soportados de forma explícita.
 
 Dado que se trata de un derivado de IndoBERT, la arquitectura subyacente esperable es un transformer encoder de tipo BERT con aproximadamente 124 millones de parámetros (IndoBERT base) o 335 millones (IndoBERT large), y una longitud de contexto típica de 512 tokens. Cualquier uso en producción requiere verificar el comportamiento real del modelo, ya que no hay evidencia publicada de su calidad.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible con exactitud; para un encoder BERT base (~124 M de parametros) en FP32 se requieren aproximadamente 0,5 GB de pesos, y en FP16 alrededor de 0,25 GB, mas memoria para activaciones y batch.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para inferencia en lotes pequenos; una NVIDIA T4, RTX 3060 o superior es mas que suficiente para un modelo de este tamano.
 - Cabe en GPU de consumo: si, practicamente cualquier GPU consumer moderna (GTX 1650 en adelante) puede ejecutar un BERT base en inferencia.
-- Opciones de despliegue: al no confirmarse el formato de pesos, las opciones dependen del checkpoint real; para un BERT estandar serian aplicables PyTorch nativo, HuggingFace Transformers, ONNX Runtime, TorchScript y, si se exporta a GGUF, llama.cpp (aunque llama.cpp esta orientado a modelos generativos, no a encoders puros).
+- Opciones de despliegue: al no confirmarse el formato de pesos, las opciones dependen del checkpoint real; para un BERT estandar serian aplicables PyTorch nativo, Hugging Face Transformers, ONNX Runtime, TorchScript y, si se exporta a GGUF, llama.cpp (aunque llama.cpp esta orientado a modelos generativos, no a encoders puros).
 - Latencia y throughput estimados: no disponibles; para un BERT base en una GPU moderna se esperan latencias de milisegundos por secuencia corta, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| syifanabila/indobert-user | no disponible (presumiblemente ~124 M) | no disponible (presumiblemente 512) | MIT | HuggingFace, sin validacion comunitaria |
-| indolem/indobert-base-uncased | ~124 M | 512 | MIT | HuggingFace, ampliamente utilizado |
-| indolem/indobert-large-uncased | ~335 M | 512 | MIT | HuggingFace |
-| cahya/bert-base-indonesian-522M | ~124 M | 512 | MIT | HuggingFace |
+| syifanabila/indobert-user | no disponible (presumiblemente ~124 M) | no disponible (presumiblemente 512) | MIT | Hugging Face, sin validacion comunitaria |
+| indolem/indobert-base-uncased | ~124 M | 512 | MIT | Hugging Face, ampliamente utilizado |
+| indolem/indobert-large-uncased | ~335 M | 512 | MIT | Hugging Face |
+| cahya/bert-base-indonesian-522M | ~124 M | 512 | MIT | Hugging Face |
 
 La comparativa se basa en la presumible base IndoBERT; no hay datos publicados de rendimiento de `syifanabila/indobert-user` que permitan una comparacion cuantitativa con sus alternativas.
 
@@ -82,7 +82,7 @@ La comparativa se basa en la presumible base IndoBERT; no hay datos publicados d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syifanabila/indobert-user
+- Modelo en Hugging Face: https://huggingface.co/syifanabila/indobert-user
 - IndoBERT original (Indolem): https://huggingface.co/indolem/indobert-base-uncased
 - IndoBERT large (Indolem): https://huggingface.co/indolem/indobert-large-uncased
 - Repositorio IndoNLU: https://github.com/indobenchmark/indonlu

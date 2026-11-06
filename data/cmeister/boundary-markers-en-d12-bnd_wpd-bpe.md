@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Estos tres checkpoints (semillas 0, 1 y 2) son los modelos en inglés del banco de comparación del artículo "Explicit Boundary Markers for Subword Vocabularies", firmado por Sander Land y Clara Meister, y publicados en HuggingFace por el usuario `cmeister`. No son modelos de propósito general: son artefactos de investigación destinados a medir el efecto de un tokenizador con marcadores de frontera explícitos sobre la calidad de un modelo de lenguaje pequeño. Los tres comparten exactamente la misma arquitectura, los mismos datos y la misma configuración de entrenamiento; lo único que los distingue entre sí es la semilla de inicialización y el orden de las particiones de datos, y lo único que los distingue del resto de brazos del artículo es el tokenizador.
+Estos tres checkpoints (semillas 0, 1 y 2) son los modelos en inglés del banco de comparación del artículo "Explicit Boundary Markers for Subword Vocabularies", firmado por Sander Land y Clara Meister, y publicados en Hugging Face por el usuario `cmeister`. No son modelos de propósito general: son artefactos de investigación destinados a medir el efecto de un tokenizador con marcadores de frontera explícitos sobre la calidad de un modelo de lenguaje pequeño. Los tres comparten exactamente la misma arquitectura, los mismos datos y la misma configuración de entrenamiento; lo único que los distingue entre sí es la semilla de inicialización y el orden de las particiones de datos, y lo único que los distingue del resto de brazos del artículo es el tokenizador.
 
 La arquitectura es la de un transformer decoder-only de 12 capas y anchura 768 con 6 cabezas de atención, entrenado con nanochat en el commit `92d63d4`, con una ventana de contexto de 2.048 tokens y 1,34 mil millones de tokens vistos durante 2.553 pasos. El tokenizador es un BPE entrenado sobre una muestra de 5 GB de FineWeb en inglés, con un vocabulario de 34.685 entradas más un token de inicio de secuencia. La variante `bnd_wpd` añade marcadores a las secuencias de puntuación y de dígitos, en el lado donde se ha eliminado un espacio.
 
@@ -79,7 +79,7 @@ No se dispone de cifras de los demás brazos del banco de comparación del artí
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`bnd_wpd`, 12 capas) | No disponible | 2.048 tokens | 0,87980-0,88039 bits por byte (segun semilla) | Apache 2.0 | HuggingFace |
+| Este modelo (`bnd_wpd`, 12 capas) | No disponible | 2.048 tokens | 0,87980-0,88039 bits por byte (segun semilla) | Apache 2.0 | Hugging Face |
 | Otros brazos del articulo (distinto tokenizador, misma arquitectura) | No disponible | 2.048 tokens | No disponible | No disponible | No disponible en la informacion |
 | Otros modelos nanochat de distinta profundidad | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion |
 
@@ -100,7 +100,7 @@ No se dispone de cifras de los demás brazos del banco de comparación del artí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-bpe
 - Artículo: https://arxiv.org/abs/2608.08847 ("Explicit Boundary Markers for Subword Vocabularies", Sander Land y Clara Meister)
 - Repositorio del tokenizador y utilidades del artículo: https://github.com/sanderland/script_tok
 - Framework de entrenamiento nanochat: https://github.com/karpathy/nanochat

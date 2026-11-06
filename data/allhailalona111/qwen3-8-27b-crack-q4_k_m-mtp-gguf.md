@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos para esta versión abliterada
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/allhailalona111/Qwen3.8-27B-CRACK-Q4_K_M-MTP-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/allhailalona111/Qwen3.8-27B-CRACK-Q4_K_M-MTP-GGUF
 - Repositorio original (dealignai): https://huggingface.co/dealignai/Qwen3.8-27B-CRACK-GGUF
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Artículo sobre ejecución local de Qwen3.8 27B: https://dev.to/purpledoubled/run-qwen-38-27b-locally-real-gguf-sizes-the-kv-cache-trick-and-the-template-trap-114j

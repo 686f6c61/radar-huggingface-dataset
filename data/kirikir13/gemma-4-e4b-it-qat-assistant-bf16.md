@@ -4,7 +4,7 @@
 
 Este repositorio contiene los pesos del modelo *drafter* (modelo de propuesta) de Multi-Token Prediction (MTP) extraídos de `google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant`, preparados para su uso con `mlx-vlm` en esquemas de decodificación especulativa. No es un modelo de chat o generación de texto autónomo: su función exclusiva es proponer tokens candidatos que el modelo objetivo (Gemma 4 E4B) verifica posteriormente, acelerando la inferencia en entornos Apple Silicon.
 
-El desarrollo corre a cargo del usuario de HuggingFace `kirikir13`, que ha dividido los pesos del asistente del modelo base para facilitar su carga como *draft model* en MLX. La arquitectura subyacente es la de Gemma 4 E4B, un modelo de visión-lenguaje (VLM) de Google con una ventana de contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas, aunque este drafter concreto solo declara inglés en su configuración.
+El desarrollo corre a cargo del usuario de Hugging Face `kirikir13`, que ha dividido los pesos del asistente del modelo base para facilitar su carga como *draft model* en MLX. La arquitectura subyacente es la de Gemma 4 E4B, un modelo de visión-lenguaje (VLM) de Google con una ventana de contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas, aunque este drafter concreto solo declara inglés en su configuración.
 
 Con solo 78,78 millones de parámetros en precisión bf16 y un tamaño de repositorio de 0,2 GB, este drafter es extremadamente ligero, lo que lo hace adecuado para entornos con recursos limitados siempre que se combine con el checkpoint objetivo correspondiente. Su relevancia radica en permitir decodificación especulativa eficiente en MLX, una técnica que reduce la latencia en generación de texto e imágenes sin sacrificar calidad.
 
@@ -83,8 +83,8 @@ La comparativa directa no es posible porque este drafter no es un modelo autóno
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kirikir13/gemma-4-E4B-it-qat-assistant-bf16
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it-assistant
+- Repositorio Hugging Face: https://huggingface.co/kirikir13/gemma-4-E4B-it-qat-assistant-bf16
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it-assistant
 - Versión GGUF del modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core/model_card_4

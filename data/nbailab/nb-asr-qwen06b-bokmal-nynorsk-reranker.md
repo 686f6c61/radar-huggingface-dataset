@@ -21,7 +21,7 @@ Advertencia importante: el repositorio está marcado como `work-in-progress` y l
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no se han publicado pesos) |
 
-Otros datos de la ficha de HuggingFace: pipeline `text-ranking`, región `eu`, 0 descargas y 1 like en el momento de la consulta, creado y actualizado el 12 de octubre de 2026.
+Otros datos de la ficha de Hugging Face: pipeline `text-ranking`, región `eu`, 0 descargas y 1 like en el momento de la consulta, creado y actualizado el 12 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -94,11 +94,11 @@ No se dispone de puntuaciones comparativas de benchmarks para ninguno de ellos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NbAiLab/nb-asr-qwen06b-bokmal-nynorsk-reranker
+- Modelo en Hugging Face: https://huggingface.co/NbAiLab/nb-asr-qwen06b-bokmal-nynorsk-reranker
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NbAiLab/merged_npk_ndla_parallel_paragraphs_normform_cc0
 - Plan de entrenamiento completo: https://bokmal-nynorsk-reranker-plan.peregilk.chatgpt.site
-- Organización NbAiLab en HuggingFace: https://huggingface.co/NbAiLab
+- Organización NbAiLab en Hugging Face: https://huggingface.co/NbAiLab
 - AI-lab de la Biblioteca Nacional de Noruega: https://ai.nb.no/
 - Página de modelos del AI-lab: https://ai.nb.no/models/
 - Familia de modelos Borealis (noruego): https://ai.nb.no/borealis/

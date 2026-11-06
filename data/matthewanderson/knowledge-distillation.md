@@ -23,7 +23,7 @@ Su relevancia es documental: sirve como plantilla de metodología para experimen
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura de red neuronal, dataset de entrenamiento, número de tokens, proceso de RLHF/DPO ni innovación técnica de modelado. El tag `transformer` figura en los metadatos de HuggingFace, pero el contenido del repositorio se limita a notas metodológicas sobre destilación de conocimiento: alcance de la pregunta de investigación, confounders probables, comparación propuesta con baselines emparejados, benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
+La model card no describe ninguna arquitectura de red neuronal, dataset de entrenamiento, número de tokens, proceso de RLHF/DPO ni innovación técnica de modelado. El tag `transformer` figura en los metadatos de Hugging Face, pero el contenido del repositorio se limita a notas metodológicas sobre destilación de conocimiento: alcance de la pregunta de investigación, confounders probables, comparación propuesta con baselines emparejados, benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
 No se ha publicado ningún proceso de entrenamiento ni checkpoint. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. No hay evidencia de que se haya ejecutado el estudio propuesto.
 
@@ -41,7 +41,7 @@ No se ha publicado ningún proceso de entrenamiento ni checkpoint. El autor indi
 - Plantilla metodológica para diseñar experimentos de destilación: sirve como referencia para estructurar la comparación con baselines emparejados y enumerar confounders antes de ejecutar ablaciones.
 - Revisión de criterios de reproducibilidad: el documento enumera qué metadatos (versiones de dataset, semillas, hardware, logs) deben acompañar a cualquier resultado publicado, útil como checklist en equipos de investigación.
 - Ejemplo docente de transparencia científica: ilustra cómo separar hipótesis y planes de resultados experimentales en una model card, útil en formación de investigadores.
-- Auditoría de artefactos en HuggingFace: caso práctico para distinguir repositorios de notas frente a checkpoints desplegables al revisar metadatos (tamaño de repo, tags, contenido de la model card).
+- Auditoría de artefactos en Hugging Face: caso práctico para distinguir repositorios de notas frente a checkpoints desplegables al revisar metadatos (tamaño de repo, tags, contenido de la model card).
 - Base para discusión sobre factores de confusión en destilación: la nota identifica confounders probables que pueden reutilizarse al planificar comparaciones entre modelos profesor y alumno.
 - Referencia bibliográfica inicial: las referencias incluidas en `analysis.md` sirven como punto de partida para verificar literatura sobre destilación, siempre según el propio autor, como material a verificar y no como evidencia de resultados.
 
@@ -82,5 +82,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewanderson/knowledge-distillation
+- Hugging Face: https://huggingface.co/matthewanderson/knowledge-distillation
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

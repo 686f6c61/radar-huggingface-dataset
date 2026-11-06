@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shiv1310/sentiment-model es un modelo de clasificacion de texto obtenido por ajuste fino (*fine-tuning*) de distilbert-base-uncased, publicado en HuggingFace por el usuario shiv1310. Se trata de un encoder transformer de tipo DistilBERT, con 66.955.779 parametros totales y un repositorio de 0,3 GB en formato safetensors. La model card indica que fue entrenado con la libreria Transformers (version 5.16.1) y PyTorch 2.11.0, y que surge de un entrenamiento generado automaticamente por la clase `Trainer`.
+shiv1310/sentiment-model es un modelo de clasificacion de texto obtenido por ajuste fino (*fine-tuning*) de distilbert-base-uncased, publicado en Hugging Face por el usuario shiv1310. Se trata de un encoder transformer de tipo DistilBERT, con 66.955.779 parametros totales y un repositorio de 0,3 GB en formato safetensors. La model card indica que fue entrenado con la libreria Transformers (version 5.16.1) y PyTorch 2.11.0, y que surge de un entrenamiento generado automaticamente por la clase `Trainer`.
 
 El modelo resuelve una tarea de clasificacion de sentimiento, aunque la model card no especifica el numero de clases, el esquema de etiquetas ni el conjunto de datos empleado (se describe literalmente como "unknown dataset"). Los unicos datos de rendimiento declarados son los de la evaluacion interna: perdida 0,7470, accuracy 0,6598 y F1 ponderado y macro de 0,6493. Se trata de valores modestos que quedan por debajo de las referencias publicas habituales para clasificacion de sentimiento en ingles, lo que sugiere un conjunto de validacion dificil, pocas clases con solapamiento o un dataset de dominio muy especifico.
 
@@ -114,7 +114,7 @@ Frente a estas alternativas, el modelo de shiv1310 no aporta ventajas documentad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiv1310/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/shiv1310/sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Linea base de sentimiento SST-2: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - Modelo de sentimiento en Twitter: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DakeraAI/gliner_medium-v2.1 | NER zero-shot (espejo) | ONNX | Apache-2.0 | HuggingFace (espejo verificado) |
-| urchade/gliner_medium-v2.1 | NER zero-shot (original) | Pesos originales (no detallado) | Apache-2.0 | HuggingFace |
-| onnx-community/gliner_medium-v2.1 | NER zero-shot (exportación ONNX) | ONNX | no disponible en la información | HuggingFace |
+| DakeraAI/gliner_medium-v2.1 | NER zero-shot (espejo) | ONNX | Apache-2.0 | Hugging Face (espejo verificado) |
+| urchade/gliner_medium-v2.1 | NER zero-shot (original) | Pesos originales (no detallado) | Apache-2.0 | Hugging Face |
+| onnx-community/gliner_medium-v2.1 | NER zero-shot (exportación ONNX) | ONNX | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/gliner_medium-v2.1
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/gliner_medium-v2.1
 - Modelo original: https://huggingface.co/urchade/gliner_medium-v2.1
 - Exportación ONNX de origen: https://huggingface.co/onnx-community/gliner_medium-v2.1
 - Licencia: https://huggingface.co/DakeraAI/gliner_medium-v2.1/blob/main/LICENSE

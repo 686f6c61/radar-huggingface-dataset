@@ -26,7 +26,7 @@ El modelo se publica junto a una variante pequeña, Genos-1.2B (1,2B totales, 0,
 | Dimensión oculta MoE por experto | 8192 |
 | Tokens de entrenamiento | 2.200B |
 | Tamaño del repositorio | 41,1 GB |
-| Descargas / likes en HuggingFace | 209 / 26 |
+| Descargas / likes en Hugging Face | 209 / 26 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Organización | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Genos-10B | BGI-HangzhouAI | 10B totales / 2,87B activos | 1M pb | MIT | HuggingFace y GitHub |
-| Genos-1.2B | BGI-HangzhouAI | 1,2B totales / 0,33B activos | 1M pb | MIT | HuggingFace y GitHub |
+| Genos-10B | BGI-HangzhouAI | 10B totales / 2,87B activos | 1M pb | MIT | Hugging Face y GitHub |
+| Genos-1.2B | BGI-HangzhouAI | 1,2B totales / 0,33B activos | 1M pb | MIT | Hugging Face y GitHub |
 | Evo / Evo-2 | Arc Institute | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta ficha |
 | Nucleotide Transformer | InstaDeep | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta ficha |
 | DNABERT-2 | Zhihan Zhou et al. | No disponible en la información proporcionada | No disponible | No disponible | No verificado en esta ficha |
@@ -98,7 +98,7 @@ Dentro de la propia familia, Genos-1.2B es la alternativa directa: misma longitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BGI-HangzhouAI/Genos-10B
+- Modelo en Hugging Face: https://huggingface.co/BGI-HangzhouAI/Genos-10B
 - Modelo hermano Genos-1.2B: https://huggingface.co/BGI-HangzhouAI/Genos-1.2B
 - Checkpoint Megatron-LM 10B: https://huggingface.co/BGI-HangzhouAI/Genos-Megatron-10B
 - Checkpoint Megatron-LM 1.2B: https://huggingface.co/BGI-HangzhouAI/Genos-Megatron-1.2B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`g-assismoraes/tofu-llama2-7b-reset-head` es un checkpoint experimental derivado de Llama 2 7B chat, publicado por el usuario g-assismoraes en HuggingFace. No es un modelo entrenado desde cero ni un modelo afinado de propósito general: es un artefacto de ablación para investigación en *machine unlearning*, concretamente un experimento de restauración de checkpoint sin entrenamiento ("no-training checkpoint restoration") sobre el benchmark TOFU.
+`g-assismoraes/tofu-llama2-7b-reset-head` es un checkpoint experimental derivado de Llama 2 7B chat, publicado por el usuario g-assismoraes en Hugging Face. No es un modelo entrenado desde cero ni un modelo afinado de propósito general: es un artefacto de ablación para investigación en *machine unlearning*, concretamente un experimento de restauración de checkpoint sin entrenamiento ("no-training checkpoint restoration") sobre el benchmark TOFU.
 
 El modelo parte de `locuslab/tofu_ft_llama2-7b` (un Llama 2 7B chat afinado sobre el dataset TOFU, que asocia hechos sintéticos a autores ficticios) y restaura únicamente el tensor `lm_head.weight` a sus valores originales de `NousResearch/Llama-2-7b-chat-hf`. El resto de pesos permanece intacto respecto al modelo afinado. El objetivo es medir cuánto de la "calidad de olvido" (Forget Quality) y de la utilidad general (Model Utility) se puede recuperar manipulando solo la cabeza de lenguaje, sin aplicar ninguna técnica de desaprendizaje (IHL u otras).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-reset-head | 6.738.415.616 | no disponible | Ablación de unlearning (TOFU) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.700 M | no disponible | Modelo afinado en TOFU (objetivo del unlearning) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.700 M | no disponible | Chat generalista | llama2 | HuggingFace |
-| Meta Llama 2 7B chat | ~6.700 M | 4.096 tokens (configuración estándar de Llama 2) | Chat generalista | llama2 | HuggingFace / Meta |
+| g-assismoraes/tofu-llama2-7b-reset-head | 6.738.415.616 | no disponible | Ablación de unlearning (TOFU) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.700 M | no disponible | Modelo afinado en TOFU (objetivo del unlearning) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.700 M | no disponible | Chat generalista | llama2 | Hugging Face |
+| Meta Llama 2 7B chat | ~6.700 M | 4.096 tokens (configuración estándar de Llama 2) | Chat generalista | llama2 | Hugging Face / Meta |
 
 La comparación relevante es con el modelo afinado del que deriva y con el Llama 2 chat original: este checkpoint se sitúa entre ambos al conservar el cuerpo de uno y la cabeza del otro. No se dispone de cifras de rendimiento comparadas en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación relevante es con el modelo afinado del que deriva y con el Llama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-head
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-reset-head
 - Modelo base afinado: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo original: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Paper TOFU (benchmark de unlearning): no disponible en la información proporcionada

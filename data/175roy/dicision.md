@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`175Roy/dicision` es un repositorio publicado en HuggingFace por el usuario 175Roy el 18 de octubre de 2026, con licencia Apache 2.0 y un tamano de 9,6 GB. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. A fecha de esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso ni de validacion por parte de la comunidad.
+`175Roy/dicision` es un repositorio publicado en Hugging Face por el usuario 175Roy el 18 de octubre de 2026, con licencia Apache 2.0 y un tamano de 9,6 GB. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin idiomas y sin pipeline asignado. A fecha de esta ficha acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de uso ni de validacion por parte de la comunidad.
 
 El nombre del repositorio y la fecha de creacion coinciden con un patron reconocible: el 9 de octubre de 2026 Microsoft AI publico Microsoft-Decision-1, un modelo de *decision scoring* obtenido por post-entrenamiento a partir de Qwen3.5-9B. El tamano del repositorio (9,6 GB) es compatible con pesos de un modelo de ~9 000 millones de parametros almacenados en un formato de 8 bits, y la creacion nueve dias despues del anuncio sugiere una posible copia, conversion o derivado no oficial. Esta hipotesis **no esta confirmada por el autor** en ningun artefacto del repositorio.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha debe leerse con cautela: los datos tecnicos verificables s
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
-| Identificador HuggingFace | 175Roy/dicision |
+| Identificador Hugging Face | 175Roy/dicision |
 | Autor | 175Roy |
 | Tamano del repositorio | 9,6 GB |
 | Descargas | 0 |
@@ -88,7 +88,7 @@ La comparacion se establece frente a modelos de la misma categoria funcional (*d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 175Roy/dicision | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
+| 175Roy/dicision | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
 | Microsoft-Decision-1 | derivado de Qwen3.5-9B | no disponible | no disponible en la informacion | API de Microsoft Foundry | 85 ms p50, 0,042 USD/millon, salida calibrada |
 | Qwen3.5-9B | ~9 000 millones | no disponible en la informacion | no disponible en la informacion | Pesos publicos de Qwen | Modelo base de proposito general |
 | LLM de gran escala como GPT-6 Sol | no disponible | no disponible | propietaria | API | Usado como referencia de velocidad en el anuncio de Microsoft |
@@ -107,7 +107,7 @@ La comparacion se establece frente a modelos de la misma categoria funcional (*d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/175Roy/dicision
+- Repositorio en Hugging Face: https://huggingface.co/175Roy/dicision
 - Anuncio de Microsoft-Decision-1 en Microsoft Foundry: https://commandline.microsoft.com/microsoft-decision-1-model-foundry/
 - Ficha de Microsoft-Decision-1 en Product Hunt: https://www.producthunt.com/products/microsoft-decision-1
 - Articulo de MarkTechPost sobre Microsoft-Decision-1: https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/

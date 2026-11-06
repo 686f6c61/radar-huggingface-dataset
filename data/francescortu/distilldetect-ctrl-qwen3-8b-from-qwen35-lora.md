@@ -69,9 +69,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DistillDetect-ctrl-qwen3-8b (este) | Adaptador LoRA sobre 8B | No disponible | No disponible | HuggingFace |
-| DistillDetect-Qwen2.5-3B-from-Qwen3-8B-s1 | Adaptador LoRA sobre 3B | No disponible | qwen-research | HuggingFace |
-| Qwen3-8B (modelo base) | 8.000 millones | 32.768 tokens (según documentación de Qwen3) | Apache 2.0 (Qwen3) | HuggingFace, Ollama, vLLM |
+| DistillDetect-ctrl-qwen3-8b (este) | Adaptador LoRA sobre 8B | No disponible | No disponible | Hugging Face |
+| DistillDetect-Qwen2.5-3B-from-Qwen3-8B-s1 | Adaptador LoRA sobre 3B | No disponible | qwen-research | Hugging Face |
+| Qwen3-8B (modelo base) | 8.000 millones | 32.768 tokens (según documentación de Qwen3) | Apache 2.0 (Qwen3) | Hugging Face, Ollama, vLLM |
 
 La comparación con el modelo base es la más relevante: el adaptador modifica el comportamiento de Qwen3-8B, pero sin datos de evaluación no se puede determinar si lo mejora o lo degrada en tareas específicas.
 
@@ -87,7 +87,7 @@ La comparación con el modelo base es la más relevante: el adaptador modifica e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-qwen35-lora
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-qwen35-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

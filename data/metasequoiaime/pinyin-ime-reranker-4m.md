@@ -111,7 +111,7 @@ Ambos ficheros de la familia se llaman `sentence-model.safetensors`, que es el n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-4M
+- Modelo en Hugging Face: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-4M
 - Modelo hermano de 25 M: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-25M
 - Repositorio de entrenamiento y evaluacion: https://github.com/metasequoiaime/chinese-ime-lm
 - Implementacion de referencia en Rust: https://github.com/metasequoiaime/chinese-ime-lm/tree/main/reference

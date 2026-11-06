@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-TTS es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario Panga-Azazia, orientado a la sintesis de voz (text-to-speech) en bambara (`bm`), una lengua mande hablada principalmente en Mali. El repositorio declara la pipeline `text-to-speech` en HuggingFace, pero conserva etiquetas propias de modelos de lenguaje (`text-generation`, `lfm2`), lo que sugiere un enfoque de TTS construido sobre un decoder transformer de tipo LLM en lugar de sobre una arquitectura acustica dedicada (Tacotron, VITS, etc.).
+LFM2.5-350M-TTS es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario Panga-Azazia, orientado a la sintesis de voz (text-to-speech) en bambara (`bm`), una lengua mande hablada principalmente en Mali. El repositorio declara la pipeline `text-to-speech` en Hugging Face, pero conserva etiquetas propias de modelos de lenguaje (`text-generation`, `lfm2`), lo que sugiere un enfoque de TTS construido sobre un decoder transformer de tipo LLM en lugar de sobre una arquitectura acustica dedicada (Tacotron, VITS, etc.).
 
 El modelo cuenta con 382.682.880 parametros reales segun los tensores en safetensors, lo que lo situa en la gama ultra-ligera y lo hace candidato a inferencia en CPU o en GPUs de consumo. Se ha entrenado con SFT mediante las librerias Unsloth y TRL (`generated_from_trainer`) sobre tres conjuntos de datos de RobotsMali: `afvoices`, `kunkado` y `jeli-asr`, todos ellos vinculados a voces y corpus de Africa Occidental.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente de nicho: el bambara es una lengua con muy poc
 | Metodo de ajuste | SFT con Unsloth + TRL (`generated_from_trainer`) |
 | Datasets de entrenamiento | RobotsMali/afvoices, RobotsMali/kunkado, RobotsMali/jeli-asr |
 | Tamano del repositorio | 559,7 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 32 / 0 |
 | Fecha de creacion / actualizacion | 2026-07-03 / 2026-10-25 |
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Panga-Azazia/LFM2.5-350M-TTS | 382,7 M | No disponible | TTS | Bambara | No disponible | Gated en HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | ~350 M (nominal) | No disponible | Generacion de texto | No disponible | No disponible | Publico en HuggingFace |
+| Panga-Azazia/LFM2.5-350M-TTS | 382,7 M | No disponible | TTS | Bambara | No disponible | Gated en Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | ~350 M (nominal) | No disponible | Generacion de texto | No disponible | No disponible | Publico en Hugging Face |
 | Alternativas TTS para bambara | No disponible | No disponible | TTS | No disponible | No disponible | No identificadas en la busqueda realizada |
 
 No se han identificado en la informacion proporcionada otros modelos abiertos de TTS especificos para bambara con los que establecer una comparacion cuantitativa. La busqueda web realizada no devolvio resultados relevantes sobre el modelo (los resultados obtenidos trataban sobre el pez panga y no guardan relacion).
@@ -83,7 +83,7 @@ No se han identificado en la informacion proporcionada otros modelos abiertos de
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no puede asumirse permiso de uso comercial; es imprescindible contactar con el autor o consultar los terminos del acceso restringido antes de cualquier despliegue productivo.
-- Acceso gated: la descarga y el uso requieren aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
+- Acceso gated: la descarga y el uso requieren aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
 - Ausencia total de benchmarks: no hay evidencia publica de intelligibilidad, naturalidad (MOS) ni robustez; cualquier evaluacion debe realizarse de forma interna.
 - Riesgo de alucinacion y artefactos acusticos: al derivar de un modelo de lenguaje, existe riesgo de prosodia incorrecta, omisiones o invencion de contenido en entradas fuera de dominio, especialmente con numeros, nombres propios y prestamos del frances.
 - Cobertura linguistica muy limitada: solo bambara; no se declaran capacidades multilingues ni cambios de codigo (code-switching) con frances, frecuentes en el contexto maliense.
@@ -95,7 +95,7 @@ No se han identificado en la informacion proporcionada otros modelos abiertos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset RobotsMali/afvoices: https://huggingface.co/datasets/RobotsMali/afvoices
 - Dataset RobotsMali/kunkado: https://huggingface.co/datasets/RobotsMali/kunkado

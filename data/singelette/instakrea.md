@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Instakrea es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario singelette bajo el identificador `singelette/instakrea`. Segun la model card, el modelo se presenta como "CHARACTER INSTA", lo que indica que su proposito es reproducir un personaje concreto mediante prompts de texto. El adaptador se distribuye en formato compatible con la libreria `diffusers` y esta etiquetado con la plantilla `template:diffusion-lora`, lo que confirma que no es un modelo completo sino un conjunto de pesos de bajo rango que se aplica sobre un modelo base.
+Instakrea es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario singelette bajo el identificador `singelette/instakrea`. Segun la model card, el modelo se presenta como "CHARACTER INSTA", lo que indica que su proposito es reproducir un personaje concreto mediante prompts de texto. El adaptador se distribuye en formato compatible con la libreria `diffusers` y esta etiquetado con la plantilla `template:diffusion-lora`, lo que confirma que no es un modelo completo sino un conjunto de pesos de bajo rango que se aplica sobre un modelo base.
 
 El modelo base declarado es `krea/Krea-2-Turbo`, un generador de imagenes de la familia Krea orientado a inferencia rapida, segun el sufijo "Turbo" del nombre. Al tratarse de un LoRA, el adaptador no funciona de forma autonoma: requiere descargar y ejecutar el modelo base y cargar despues los pesos del adaptador sobre el. El repositorio ocupa 0,6 GB, un tamano coherente con un adaptador LoRA acompanado de imagenes de previsualizacion.
 
@@ -23,8 +23,8 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 | Modelo base | krea/Krea-2-Turbo |
 | Pipeline | text-to-image |
 | Prompt de activacion | no disponible (`instance_prompt: null` en la model card) |
-| Fecha de creacion | 29 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 29 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 29 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 29 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 7 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No disponible. No se conocen, dentro de la informacion proporcionada, otros adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singelette/instakrea
+- Modelo en Hugging Face: https://huggingface.co/singelette/instakrea
 - Archivos del repositorio: https://huggingface.co/singelette/instakrea/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Resultado de busqueda web obtenido: https://fr.scribd.com/document/550547236/Histoire-Du-Chapeau-Feminin (documento sobre la historia del sombrero femenino en Paris; sin relacion con el modelo y descartado como fuente)

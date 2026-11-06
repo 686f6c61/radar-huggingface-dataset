@@ -118,7 +118,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound
+- Checkpoint en Hugging Face: https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Variante densa con la misma receta: https://huggingface.co/INCModel4/gemma-4-31B-MXFP8-FP8KV-CT-AutoRound

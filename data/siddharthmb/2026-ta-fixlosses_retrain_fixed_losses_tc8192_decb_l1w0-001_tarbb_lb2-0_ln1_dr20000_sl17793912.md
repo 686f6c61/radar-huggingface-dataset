@@ -91,10 +91,10 @@ Conviene interpretar estas cifras con cautela: describen la fidelidad del adapta
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (gemma2_2b, tc8192, dr20000, sl17793912) | 3.596.081.920 | No especificado (base 8192) | Adaptador transcoder disperso sobre gemma-2-2b | no disponible | HuggingFace, 0 descargas |
-| google/gemma-2-2b | ~2,6B (dato publico del modelo base) | 8192 tokens | Transformer denso generativo | Licencia Gemma (condiciones propias) | HuggingFace, ampliamente usado |
-| google/gemma-2-2b-it | ~2,6B (dato publico del modelo base) | 8192 tokens | Transformer denso ajustado a instrucciones | Licencia Gemma (condiciones propias) | HuggingFace, ampliamente usado |
-| siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr3e-04_bs4_sl14701500 | no disponible | No especificado | Adaptador transcoder disperso, misma familia, dr10000 y lr 3e-04 | no disponible | HuggingFace, colección 2026 Transcoder Adapters |
+| Este adaptador (gemma2_2b, tc8192, dr20000, sl17793912) | 3.596.081.920 | No especificado (base 8192) | Adaptador transcoder disperso sobre gemma-2-2b | no disponible | Hugging Face, 0 descargas |
+| google/gemma-2-2b | ~2,6B (dato publico del modelo base) | 8192 tokens | Transformer denso generativo | Licencia Gemma (condiciones propias) | Hugging Face, ampliamente usado |
+| google/gemma-2-2b-it | ~2,6B (dato publico del modelo base) | 8192 tokens | Transformer denso ajustado a instrucciones | Licencia Gemma (condiciones propias) | Hugging Face, ampliamente usado |
+| siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr3e-04_bs4_sl14701500 | no disponible | No especificado | Adaptador transcoder disperso, misma familia, dr10000 y lr 3e-04 | no disponible | Hugging Face, colección 2026 Transcoder Adapters |
 
 La comparación con los modelos base es de categoría distinta: gemma-2-2b y gemma-2-2b-it son modelos generativos completos, mientras que este artefacto es un adaptador que depende de ellos. La comparación más significativa es con las otras variantes de la colección 2026 Transcoder Adapters, que comparten arquitectura y difieren en hiperparámetros como el número de pasos de decaimiento (dr10000 frente a dr20000) o el learning rate (3e-04 frente a 8e-04). No se dispone de métricas comparativas publicadas entre esas variantes.
 
@@ -114,7 +114,7 @@ La comparación con los modelos base es de categoría distinta: gemma-2-2b y gem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.fixlosses_retrain_fixed_losses_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_sl17793912
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.fixlosses_retrain_fixed_losses_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_sl17793912
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio GitHub: https://github.com/Sid-MB/transcoder-adapters
@@ -122,4 +122,4 @@ La comparación con los modelos base es de categoría distinta: gemma-2-2b y gem
 - Dataset de entrenamiento: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits
 - Coleccion 2026 Transcoder Adapters: https://huggingface.co/collections/siddharthmb/2026-transcoder-adapters
 - Variante hermana (dr10000, lr 3e-04): https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr3e-04_bs4_sl14701500
-- Configuracion de entrenamiento: train_config.yaml en el propio repositorio de HuggingFace
+- Configuracion de entrenamiento: train_config.yaml en el propio repositorio de Hugging Face

@@ -31,7 +31,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Clasificación de tokens como "alucinado" o "no alucinado" (probablemente etiquetas binarias).
 - Adaptación al idioma danés, aunque el entrenamiento multilingüe podría permitir cierta transferencia a otros idiomas.
 - Integración con pipelines de token-classification de la librería transformers.
-- Compatibilidad con endpoints de HuggingFace para inferencia en producción.
+- Compatibilidad con endpoints de Hugging Face para inferencia en producción.
 
 No se conocen capacidades de generación de texto, tool calling, agentes o razonamiento multi-paso, ya que es un modelo encoder-only orientado a clasificación.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada: para un modelo de 140M de parámetros en fp32, la inferencia requiere aproximadamente 0,6 GB de VRAM (140M × 4 bytes). Con cuantización a int8, se reduce a ~0,15 GB. En la práctica, con el overhead de la implementación de transformers, se recomienda al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo GPUs de consumo como NVIDIA GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU con razonable velocidad para lotes pequeños.
-- Opciones de despliegue: compatible con la librería transformers, puede servirse con vLLM, TGI, o mediante el pipeline de token-classification de HuggingFace. También es posible exportar a ONNX para inferencia en CPU.
+- Opciones de despliegue: compatible con la librería transformers, puede servirse con vLLM, TGI, o mediante el pipeline de token-classification de Hugging Face. También es posible exportar a ONNX para inferencia en CPU.
 - Latencia y throughput: no se dispone de datos medidos. Dado el tamaño pequeño, se espera una latencia de decenas de milisegundos por secuencia en GPU y de unos pocos cientos de milisegundos en CPU moderna.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-da
+- Modelo en Hugging Face: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-da
 - Paper de referencia sobre estimación de emisiones (citado en la model card, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 
 No se han encontrado repositorios de código, demos o documentación adicional más allá de la página del modelo.

@@ -87,7 +87,7 @@ Comparación obsoleta conservada a título documental: el protocolo v2 original 
 - Cabe en GPU de consumo: sí, y también en cualquier equipo sin GPU. No aplica la distinción entre RTX 4090, A100 o H100 porque el modelo no se sirve con esos aceleradores.
 - Opciones de despliegue: el autor proporciona `controller.js` (JavaScript puro, UMD) como único motor de inferencia documentado. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que en cualquier caso no soportan este formato de pesos personalizado.
 - Latencia y throughput: no disponibles. El modelo card no publica mediciones de latencia ni de episodios por segundo.
-- Requisito real de cómputo: el coste relevante no es la inferencia, sino el entrenamiento y la simulación. El entrenamiento requiere el simulador y el pipeline descritos en el repositorio, no incluidos en el repositorio de HuggingFace.
+- Requisito real de cómputo: el coste relevante no es la inferencia, sino el entrenamiento y la simulación. El entrenamiento requiere el simulador y el pipeline descritos en el repositorio, no incluidos en el repositorio de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -119,7 +119,7 @@ No se han identificado en la información disponible modelos publicados de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarxistLeninist/meccanoid-vision-transformer
+- Modelo en Hugging Face: https://huggingface.co/MarxistLeninist/meccanoid-vision-transformer
 - Código, simulador y pipeline de entrenamiento y evaluación: https://github.com/Marxist-Leninist/meccanoid-embodied-lab (directorio `vision/`)
 - Demo interactiva (Space estático): https://huggingface.co/spaces/MarxistLeninist/meccanoid-embodied-lab
 - Informe de evaluación completo: `REPORT.md` en el repositorio del modelo

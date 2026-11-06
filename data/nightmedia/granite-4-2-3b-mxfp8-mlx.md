@@ -44,7 +44,7 @@ La conversion a MLX es realizada por el autor del repositorio, `nightmedia`, y n
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. No se puede evaluar su rendimiento relativo sin datos adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. No se puede evaluar su rendimiento relativo sin datos adicionales.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos concretos. El modelo se posiciona como una a
 
 ## Enlaces
 
-- [HuggingFace: nightmedia/granite-4.2-3b-mxfp8-mlx](https://huggingface.co/nightmedia/granite-4.2-3b-mxfp8-mlx)
+- [Hugging Face: nightmedia/granite-4.2-3b-mxfp8-mlx](https://huggingface.co/nightmedia/granite-4.2-3b-mxfp8-mlx)
 - [GitHub - ibm-granite/granite-4.2-language-models](https://github.com/ibm-granite/granite-4.2-language-models)
 - [IBM Granite](https://www.ibm.com/granite)</think>## Resumen
 
@@ -85,7 +85,7 @@ La relevancia de esta ficha reside en que ofrece a desarrolladores un modelo de 
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | MXFP8 (8 bits) |
-| Idiomas soportados | en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh (segun los tags de HuggingFace) |
+| Idiomas soportados | en, de, es, fr, ja, pt, ar, cs, it, ko, nl, zh (segun los tags de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (formato MLX) |
 
@@ -114,7 +114,7 @@ La cuantizacion MXFP8 se ha aplicado sobre el modelo base, reduciendo el peso de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. No es posible evaluar su rendimiento relativo sin datos adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. No es posible evaluar su rendimiento relativo sin datos adicionales.
 
 ## Requisitos de hardware
 
@@ -138,6 +138,6 @@ No se dispone de datos comparativos concretos. El modelo se posiciona como una o
 
 ## Enlaces
 
-- [HuggingFace - nightmedia/granite-4.2-3b-mxfp8-mlx](https://huggingface.co/nightmedia/granite-4.2-3b-mxfp8-mlx)
+- [Hugging Face - nightmedia/granite-4.2-3b-mxfp8-mlx](https://huggingface.co/nightmedia/granite-4.2-3b-mxfp8-mlx)
 - [GitHub - ibm-granite/granite-4.2-language-models](https://github.com/ibm-granite/granite-4.2-language-models)
 - [IBM Granite](https://www.ibm.com/granite)

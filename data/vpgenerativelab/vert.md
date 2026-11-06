@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VPGenerativeLab/vert` es una publicación de HuggingFace del usuario VPGenerativeLab, creada el 1 de septiembre de 2026. La model card asociada está vacía, sin descripción, sin licencia especificada (campo `license: unknown`) y sin idiomas declarados. El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación reciente, un experimento interno o un repositorio de pruebas.
+El modelo `VPGenerativeLab/vert` es una publicación de Hugging Face del usuario VPGenerativeLab, creada el 1 de septiembre de 2026. La model card asociada está vacía, sin descripción, sin licencia especificada (campo `license: unknown`) y sin idiomas declarados. El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación reciente, un experimento interno o un repositorio de pruebas.
 
 La búsqueda web no arroja resultados directos sobre este modelo concreto. Existe un proyecto GitHub llamado VERT (SystemVerilog Assertion Dataset) orientado a la generación automatizada de aserciones para verificación de hardware, pero no hay evidencia que vincule ambos proyectos. Tampoco hay relación aparente con Vertex AI de Google Cloud, a pesar de la similitud del nombre. En consecuencia, la información disponible es insuficiente para determinar la arquitectura, el tamaño, el entrenamiento o las capacidades del modelo.
 
@@ -29,7 +29,7 @@ No es posible verificar ninguna capacidad del modelo con la información disponi
 
 ## Casos de uso
 
-No se pueden proporcionar casos de uso concretos sin información verificable sobre el modelo. Cualquier sugerencia de aplicación sería especulativa y podría inducir a error a los desarrolladores que evalúen este repositorio. Se recomienda contactar directamente con el autor (VPGenerativeLab) a través de HuggingFace para obtener documentación adicional antes de considerar su uso.
+No se pueden proporcionar casos de uso concretos sin información verificable sobre el modelo. Cualquier sugerencia de aplicación sería especulativa y podría inducir a error a los desarrolladores que evalúen este repositorio. Se recomienda contactar directamente con el autor (VPGenerativeLab) a través de Hugging Face para obtener documentación adicional antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -54,5 +54,5 @@ No disponible. Sin información sobre parámetros, contexto, rendimiento o licen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VPGenerativeLab/vert
+- Repositorio Hugging Face: https://huggingface.co/VPGenerativeLab/vert
 - Proyecto VERT en GitHub (posiblemente relacionado por nombre, sin confirmación): https://github.com/AnandMenon12/VERT

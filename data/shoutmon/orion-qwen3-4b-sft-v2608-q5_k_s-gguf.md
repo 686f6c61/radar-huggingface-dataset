@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-Q5_K_S-GGUF
+- Modelo en Hugging Face: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-Q5_K_S-GGUF
 - Modelo base (safetensors): https://huggingface.co/3tic/Orion-Qwen3-4B-SFT-v2608
 - Paper de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

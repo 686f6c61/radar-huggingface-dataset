@@ -92,8 +92,8 @@ La model card no especifica las unidades de estos valores.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | WER LibriSpeech test-clean | Disponibilidad |
 |---|---|---|---|---|---|---|
-| myflow-ai/whisper-tiny-gguf | 37,8 M | GGUF (F32 a Q4_K_M) | 30 s por ventana | Apache-2.0 | 7,49-7,76 % segun cuantizacion | HuggingFace |
-| openai/whisper-tiny (modelo base) | 37,8 M | safetensors / PyTorch | 30 s por ventana | Apache-2.0 (segun esta model card) | 7,54 % (autoinformado) | HuggingFace y repositorio de OpenAI |
+| myflow-ai/whisper-tiny-gguf | 37,8 M | GGUF (F32 a Q4_K_M) | 30 s por ventana | Apache-2.0 | 7,49-7,76 % segun cuantizacion | Hugging Face |
+| openai/whisper-tiny (modelo base) | 37,8 M | safetensors / PyTorch | 30 s por ventana | Apache-2.0 (segun esta model card) | 7,54 % (autoinformado) | Hugging Face y repositorio de OpenAI |
 | Otros tamanos de Whisper (base, small, medium, large) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Implementaciones alternativas de ASR (por ejemplo, wav2vec 2.0 o Conformer) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -114,7 +114,7 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/whisper-tiny-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/whisper-tiny-gguf
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Commit del modelo base usado en la conversión: https://huggingface.co/openai/whisper-tiny/commit/169d4a4
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

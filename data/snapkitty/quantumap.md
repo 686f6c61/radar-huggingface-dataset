@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuantumAP es un repositorio publicado en HuggingFace por el usuario Snapkitty que, según su model card, se presenta como un "runtime cuántico soberano" con una pila de verificación formal. El proyecto afirma incluir seis pruebas formales sin `sorry` en Lean 4 que formalizarían la interpretación de muchos mundos (MWI), la regla de Born y el problema de la medición, junto con un runtime en Haskell (AToKio), un kernel en Rust `no_std` y un orquestador en Python. No se trata de un modelo de inteligencia artificial en el sentido convencional (no hay pesos, arquitectura de red neuronal ni pipeline de inferencia), sino de un conjunto de código fuente y especificaciones formales.
+QuantumAP es un repositorio publicado en Hugging Face por el usuario Snapkitty que, según su model card, se presenta como un "runtime cuántico soberano" con una pila de verificación formal. El proyecto afirma incluir seis pruebas formales sin `sorry` en Lean 4 que formalizarían la interpretación de muchos mundos (MWI), la regla de Born y el problema de la medición, junto con un runtime en Haskell (AToKio), un kernel en Rust `no_std` y un orquestador en Python. No se trata de un modelo de inteligencia artificial en el sentido convencional (no hay pesos, arquitectura de red neuronal ni pipeline de inferencia), sino de un conjunto de código fuente y especificaciones formales.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y su fecha de creación es el 3 de septiembre de 2026. No se proporciona licencia, idiomas soportados ni pipeline. La model card contiene afirmaciones extraordinarias (como que el problema de la medición queda resuelto mediante un teorema de terminación) que no están respaldadas por documentación técnica verificable ni por publicaciones revisadas por pares. Por tanto, esta ficha debe interpretarse como una descripción del contenido del repositorio, no como una evaluación de un modelo de IA funcional.
 
@@ -78,5 +78,5 @@ No disponible. QuantumAP no es un modelo de IA comparable con otros modelos de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/quantumap
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/quantumap
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

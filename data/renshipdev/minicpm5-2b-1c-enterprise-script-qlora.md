@@ -91,7 +91,7 @@ No se han publicado comparativas directas con otros adaptadores de 1C en la info
 - Ausencia de evaluación de la capacidad objetivo: no existe ningún benchmark de 1C en la suite publicada, por lo que la calidad real en `.bsl` debe validarse con código propio del proyecto.
 - Una sola semilla y una sola ejecución: los resultados no permiten afirmar significación estadística para diferencias de ±1 pp.
 - Posible contaminación parcial: el corpus `sft_strict` se compila a partir de repositorios públicos de 1C, lo que puede solapar con otros corpus de evaluación.
-- Licencia del adaptador no declarada en los metadatos de HuggingFace, lo que impide confirmar condiciones de uso comercial. La base es Apache 2.0, pero eso no cubre automáticamente los pesos derivados del adaptador.
+- Licencia del adaptador no declarada en los metadatos de Hugging Face, lo que impide confirmar condiciones de uso comercial. La base es Apache 2.0, pero eso no cubre automáticamente los pesos derivados del adaptador.
 - Riesgo de alucinación en APIs de 1C: al ser un modelo de 2,5 B ajustado con 39,87 M de tokens, es probable que invente nombres de métodos, propiedades de metadatos y firmas de plataforma; requiere verificación contra la documentación oficial.
 - Contexto efectivo limitado a 4.096 tokens en el ajuste: aunque el base soporte 131k, el comportamiento adaptado en ventanas largas no está garantizado.
 - Idioma: el soporte declarado es ru/en; el código 1C usa palabras clave en ruso, por lo que las explicaciones o comentarios en castellano no están cubiertos por el entrenamiento.
@@ -100,7 +100,7 @@ No se han publicado comparativas directas con otros adaptadores de 1C en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RenShiPDev/MiniCPM5-2B-1c-enterprise-script-QLora
+- Modelo en Hugging Face: https://huggingface.co/RenShiPDev/MiniCPM5-2B-1c-enterprise-script-QLora
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NickIBrody/1c-enterprise-script-clean-corpus
 - Repositorio oficial de la familia MiniCPM: https://github.com/OpenBMB/MiniCPM

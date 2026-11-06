@@ -32,7 +32,7 @@ La relevancia de esta publicación es práctica: permite descargar el modelo en 
 
 No se dispone de informacion sobre el entrenamiento en la documentacion proporcionada. La model card del repositorio se limita a indicar que se trata de cuantizaciones estaticas del checkpoint `haniqwafi/qwen-2.5-coder-custom-16bit-heretic`, sin detallar el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineacion. Tampoco se especifica si el modelo base introdujo modificaciones estructurales respecto a Qwen2.5-Coder.
 
-Los metadatos incrustados en el README de mradermacher indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo de trabajo consistio en convertir un checkpoint de HuggingFace a formato GGUF y aplicar posteriormente cuantizacion estatica sobre los tensores de salida. El autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que podrian no llegar a publicarse. Esto implica que las cuantizaciones de baja precision (Q2_K, Q3_K_S y similares) pueden presentar una perdida de calidad superior a la que se obtendria con variantes imatrix del mismo tamano.
+Los metadatos incrustados en el README de mradermacher indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo de trabajo consistio en convertir un checkpoint de Hugging Face a formato GGUF y aplicar posteriormente cuantizacion estatica sobre los tensores de salida. El autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, y que podrian no llegar a publicarse. Esto implica que las cuantizaciones de baja precision (Q2_K, Q3_K_S y similares) pueden presentar una perdida de calidad superior a la que se obtendria con variantes imatrix del mismo tamano.
 
 Como innovacion tecnica destacable unicamente cabe citar la disponibilidad de doce niveles de cuantizacion en un unico repositorio, desde 3,1 GB hasta 15,3 GB, lo que permite ajustar el compromiso entre calidad y consumo de memoria sin cambiar de modelo. No se documenta ninguna tecnica de atencion alternativa, decodificacion especulativa ni arquitectura hibrida.
 
@@ -103,8 +103,8 @@ Conviene subrayar que la comparacion de rendimiento entre estas alternativas no 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen-2.5-coder-custom-16bit-heretic-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/haniqwafi/qwen-2.5-coder-custom-16bit-heretic
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen-2.5-coder-custom-16bit-heretic-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/haniqwafi/qwen-2.5-coder-custom-16bit-heretic
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#qwen-2.5-coder-custom-16bit-heretic-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
 - README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

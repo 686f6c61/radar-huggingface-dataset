@@ -17,7 +17,7 @@ El modelo `aasim-m/daft-qwen2.5-coder-7b-instruct-checkpoint-3500` es un checkpo
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
-Nota: la ficha de HuggingFace indica un valor de 333.312 parámetros totales en safetensors, lo que es inconsistente con un modelo de 7.000 millones. Es probable que dicho valor corresponda a un tensor individual o a un artefacto del checkpoint, no al total del modelo.
+Nota: la ficha de Hugging Face indica un valor de 333.312 parámetros totales en safetensors, lo que es inconsistente con un modelo de 7.000 millones. Es probable que dicho valor corresponda a un tensor individual o a un artefacto del checkpoint, no al total del modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado modelos de traducción de ensamblador GPU NVIDIA-AMD con esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aasim-m/daft-qwen2.5-coder-7b-instruct-checkpoint-3500
+- Modelo en Hugging Face: https://huggingface.co/aasim-m/daft-qwen2.5-coder-7b-instruct-checkpoint-3500
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ahmedheakl/daft-sm89-rdna-functions
 - Código de entrenamiento: https://github.com/aasim-m/DAFT-experiment-setup

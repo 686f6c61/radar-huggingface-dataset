@@ -81,7 +81,7 @@ Detalle relevante: no hay particion de memorizacion; los items lejanos a la dist
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-coffee-v10 | 8,19B | no disponible (hereda de Qwen3-8B) | Dominio cafe (fine-tune LoRA) | Apache-2.0 | safetensors + GGUF Q4_K_M en HuggingFace |
+| qwen3-8b-coffee-v10 | 8,19B | no disponible (hereda de Qwen3-8B) | Dominio cafe (fine-tune LoRA) | Apache-2.0 | safetensors + GGUF Q4_K_M en Hugging Face |
 | Qwen/Qwen3-8B (base) | 8,19B | 32.768 tokens | Generalista, multilingue, modo thinking | Apache-2.0 | safetensors, GGUF comunitarios, vLLM/Ollama |
 | Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Generalista, multilingue | Licencia Meta Llama 3.1 (restricciones comerciales) | safetensors, GGUF comunitarios |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Generalista | Apache-2.0 | safetensors, GGUF comunitarios |

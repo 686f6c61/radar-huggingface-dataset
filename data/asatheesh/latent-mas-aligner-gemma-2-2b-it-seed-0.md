@@ -4,7 +4,7 @@
 
 LatentMAS Aligner (checkpoint `asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-0`) es un artefacto de investigacion para la seguridad de sistemas multi-agente (MAS) cuyos agentes se comunican en espacio latente en lugar de en lenguaje natural. El problema que aborda es concreto: cuando los mensajes entre agentes son estados ocultos, la moderacion basada en texto no puede inspeccionarlos sin decodificarlos previamente. Este modulo lee directamente los latentes previos al agente Judger y los proyecta al espacio de representacion de una cola clasificadora Llama-Guard congelada, devolviendo una probabilidad `p_unsafe` para la comunicacion.
 
-El modelo lo publica el usuario de HuggingFace `asatheesh` y deriva de `google/gemma-2-2b-it` como modelo objetivo, con una dimension latente declarada de 2304. No es un modelo generativo ni un LLM: es un cabezal de alineacion de seguridad de tamano reducido (repo de 0,1 GB) que se distribuye como un unico fichero PyTorch `aligner.pt`. Su relevancia actual es acotada pero especifica: cubre un hueco poco explorado, la auditoria de seguridad de trafico inter-agente que no es texto, y lo hace con un diseno de pooling que acepta un numero variable de agentes sin reentrenamiento.
+El modelo lo publica el usuario de Hugging Face `asatheesh` y deriva de `google/gemma-2-2b-it` como modelo objetivo, con una dimension latente declarada de 2304. No es un modelo generativo ni un LLM: es un cabezal de alineacion de seguridad de tamano reducido (repo de 0,1 GB) que se distribuye como un unico fichero PyTorch `aligner.pt`. Su relevancia actual es acotada pero especifica: cubre un hueco poco explorado, la auditoria de seguridad de trafico inter-agente que no es texto, y lo hace con un diseno de pooling que acepta un numero variable de agentes sin reentrenamiento.
 
 El checkpoint se enmarca en un estudio de topologia x semilla, con variantes publicadas por otro autor (`YuanXiaopang/latentmas-aligner-qwen3-4b`). Se publica bajo licencia Apache 2.0 y cuenta con 0 descargas y 0 likes en el momento de la consulta, por lo que debe tratarse como material de investigacion sin validacion externa. La model card presenta varias inconsistencias internas relevantes que se detallan en la seccion de limitaciones.
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Modelo objetivo | Dimension latente | Semilla | AUC validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-0 | Aligner de latentes para MAS | google/gemma-2-2b-it | 2304 | 0 | 0,9251 | apache-2.0 | Publico en HuggingFace, 0 descargas |
-| YuanXiaopang/latentmas-aligner-qwen3-4b | Aligner de latentes para MAS | Qwen/Qwen3-4B (d_a=2560) | 2560 | no disponible | no disponible | no disponible | Publico en HuggingFace; repositorio fuente de las variantes de topologia y semilla |
+| asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-0 | Aligner de latentes para MAS | google/gemma-2-2b-it | 2304 | 0 | 0,9251 | apache-2.0 | Publico en Hugging Face, 0 descargas |
+| YuanXiaopang/latentmas-aligner-qwen3-4b | Aligner de latentes para MAS | Qwen/Qwen3-4B (d_a=2560) | 2560 | no disponible | no disponible | no disponible | Publico en Hugging Face; repositorio fuente de las variantes de topologia y semilla |
 | Llama-Guard-3-8B | Clasificador de seguridad sobre texto | no aplica | no aplica | no disponible | no disponible | Licencia comunitaria de Llama 3.x | Publico; requiere decodificar los latentes a tokens antes de clasificar |
 
 No se dispone de datos comparativos adicionales de rendimiento entre estas alternativas en la informacion proporcionada.
@@ -107,7 +107,7 @@ No se dispone de datos comparativos adicionales de rendimiento entre estas alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-0
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-0
 - Codigo (LatentMASHarmBench): https://github.com/Asatheesh6561/LatentMASHarmBench
 - Repositorio fuente con otras topologias y semillas: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it

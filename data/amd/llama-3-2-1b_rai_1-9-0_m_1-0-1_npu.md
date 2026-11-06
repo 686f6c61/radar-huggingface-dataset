@@ -6,7 +6,7 @@ AMD/Llama-3.2-1B_rai_1.9.0_m_1.0.1_npu es una distribucion del modelo Llama 3.2 
 
 El modelo base es Llama 3.2 1B, un transformer decoder-only denso de Meta con 1.000 millones de parametros, disenado para generacion de texto y tareas ligeras de razonamiento. AMD lo redistribuye bajo la licencia Llama 3.2, manteniendo el idioma de entrenamiento principal (ingles) y anadiendo la infraestructura de compilacion necesaria para su ejecucion acelerada en hardware AMD.
 
-Su relevancia actual radica en que permite ejecutar un LLM en local sobre PCs con NPU Ryzen AI sin depender de GPU dedicada ni de servicios en la nube, algo relevante para escenarios de privacidad, latencia baja y despliegue en el borde. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+Su relevancia actual radica en que permite ejecutar un LLM en local sobre PCs con NPU Ryzen AI sin depender de GPU dedicada ni de servicios en la nube, algo relevante para escenarios de privacidad, latencia baja y despliegue en el borde. El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD/Llama-3.2-1B_rai_1.9.0_m_1.0.1_npu | 1B | no disponible | ONNX (NPU Ryzen AI) | llama3.2 | Gated en HuggingFace |
-| meta-llama/Llama-3.2-1B | 1B | 128K (modelo base original) | safetensors | llama3.2 | Publico en HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K (modelo base original) | safetensors | llama3.2 | Publico en HuggingFace |
+| AMD/Llama-3.2-1B_rai_1.9.0_m_1.0.1_npu | 1B | no disponible | ONNX (NPU Ryzen AI) | llama3.2 | Gated en Hugging Face |
+| meta-llama/Llama-3.2-1B | 1B | 128K (modelo base original) | safetensors | llama3.2 | Publico en Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K (modelo base original) | safetensors | llama3.2 | Publico en Hugging Face |
 
 La comparativa se limita al modelo base original de Meta, ya que no se dispone de datos de rendimiento ni de otros artefactos equivalentes empaquetados para NPU en la informacion proporcionada.
 
@@ -76,14 +76,14 @@ La comparativa se limita al modelo base original de Meta, ya que no se dispone d
 - Riesgo de alucinacion inherente a los LLM de este tamano, especialmente en preguntas factuales.
 - Idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado.
 - Licencia Llama 3.2: impone restricciones de uso comercial y requiere cumplir la politica de uso aceptable de Meta; revisar los terminos antes de desplegar en produccion.
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar el modelo.
 - Dependencia del stack Ryzen AI 1.9.0 y del backend NPU: la portabilidad a otro hardware no esta garantizada.
 - No se documentan capacidades de tool calling, agentes ni multimodalidad; no asumirlas en produccion.
 - Ausencia de benchmarks publicados: no hay evidencia cuantitativa de calidad en esta distribucion concreta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-3.2-1B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Llama-3.2-1B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Llama 3.2 (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Ryzen AI (AMD): https://www.amd.com/en/products/processors/ryzen-ai.html
 - ONNX Runtime: https://onnxruntime.ai/

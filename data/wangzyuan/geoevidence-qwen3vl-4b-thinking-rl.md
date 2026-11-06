@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzyuan/GeoEvidence-Qwen3VL-4B-Thinking-RL
+- Modelo en Hugging Face: https://huggingface.co/wangzyuan/GeoEvidence-Qwen3VL-4B-Thinking-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
 - Familia Qwen3-VL (modelos relacionados): https://huggingface.co/Qwen
 - Repositorio de codigo del modelo base: no disponible en la informacion proporcionada

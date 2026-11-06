@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pythia-1B (original) | 1.011 M | 2048 | Apache 2.0 | HuggingFace |
-| Este modelo (fine-tune) | 1.011 M | no disponible | no disponible | HuggingFace |
-| GPT-Neo 1.3B | 1.300 M | 2048 | MIT | HuggingFace |
+| Pythia-1B (original) | 1.011 M | 2048 | Apache 2.0 | Hugging Face |
+| Este modelo (fine-tune) | 1.011 M | no disponible | no disponible | Hugging Face |
+| GPT-Neo 1.3B | 1.300 M | 2048 | MIT | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. No se dispone de datos de rendimiento para comparar. El modelo original Pythia-1B tiene una licencia Apache 2.0 y una ventana de contexto de 2048 tokens, pero este fine-tune no especifica esos datos.
 
@@ -71,7 +71,7 @@ La comparativa se limita a modelos de tamaño similar. No se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208
 - Variante con preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps100_1b-seed208
 - Página en FriendliAI: https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208

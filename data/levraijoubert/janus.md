@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Janus es un modelo publicado en HuggingFace por el usuario LevraiJoubert bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, capacidades ni uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de muy baja difusión.
+Janus es un modelo publicado en Hugging Face por el usuario LevraiJoubert bajo licencia MIT. La model card asociada está prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, capacidades ni uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de muy baja difusión.
 
 Por tanto, no es posible determinar con rigor qué problema resuelve, qué arquitectura emplea ni cuál es su contexto máximo. La ficha se limita a documentar los pocos metadatos verificables (ID, autor, licencia, fechas) y a marcar explícitamente como "no disponible" todo aquello que el autor no ha hecho público.
 
@@ -77,4 +77,4 @@ No disponible: sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LevraiJoubert/Janus
+- Hugging Face: https://huggingface.co/LevraiJoubert/Janus

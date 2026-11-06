@@ -70,7 +70,7 @@ No se dispone de informacion sobre otros LoRAs de Krea 2 comparables. El reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/funseshon/ma-ds-facing
+- Repositorio Hugging Face: https://huggingface.co/funseshon/ma-ds-facing
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el codigo de ejemplo)
 - Repositorio relacionado del mismo autor: https://huggingface.co/funseshon/mike-gape (encontrado en la busqueda web, sin relacion directa confirmada)

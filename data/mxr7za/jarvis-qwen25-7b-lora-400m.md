@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mxr7za/jarvis-qwen25-7b-lora-400m` es un adaptador LoRA publicado en HuggingFace por el usuario mxr7za sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Se trata, por tanto, de un fine-tuning ligero (PEFT) y no de un modelo completo: los pesos del repositorio son los del adaptador, que debe combinarse con el modelo base de Qwen para poder ejecutarse. El nombre sugiere un entrenamiento orientado a un asistente personal ("Jarvis") con 400 millones de tokens o pasos de entrenamiento, aunque el autor no documenta esta cifra en la model card.
+`mxr7za/jarvis-qwen25-7b-lora-400m` es un adaptador LoRA publicado en Hugging Face por el usuario mxr7za sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Se trata, por tanto, de un fine-tuning ligero (PEFT) y no de un modelo completo: los pesos del repositorio son los del adaptador, que debe combinarse con el modelo base de Qwen para poder ejecutarse. El nombre sugiere un entrenamiento orientado a un asistente personal ("Jarvis") con 400 millones de tokens o pasos de entrenamiento, aunque el autor no documenta esta cifra en la model card.
 
-La relevancia de esta ficha es limitada: el repositorio no incluye información sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia, y cuenta con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+La relevancia de esta ficha es limitada: el repositorio no incluye información sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia, y cuenta con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 A efectos prácticos, cualquier evaluación de capacidades debe remitirse al modelo base Qwen2.5-Coder-7B-Instruct, un transformer decoder-only de 7.600 millones de parámetros con 32.768 tokens de contexto y entrenamiento específico para código, sobre el que este adaptador aplica un ajuste del que no se dispone de detalles.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mxr7za/jarvis-qwen25-7b-lora-400m | Adaptador sobre 7,6B | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 | Apache 2.0 (según el modelo base) | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
-| Adaptadores LoRA de la comunidad sobre Qwen2.5-Coder | Variable | 32.768 | Variable según autor | HuggingFace | Calidad y documentación muy dispares |
-| CodeLlama-7B-Instruct | 6,7B | 16.384 | Llama 2 Community License | HuggingFace, Meta | Alternativa de código con contexto menor |
+| mxr7za/jarvis-qwen25-7b-lora-400m | Adaptador sobre 7,6B | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 | Apache 2.0 (según el modelo base) | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
+| Adaptadores LoRA de la comunidad sobre Qwen2.5-Coder | Variable | 32.768 | Variable según autor | Hugging Face | Calidad y documentación muy dispares |
+| CodeLlama-7B-Instruct | 6,7B | 16.384 | Llama 2 Community License | Hugging Face, Meta | Alternativa de código con contexto menor |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mxr7za/jarvis-qwen25-7b-lora-400m
+- Hugging Face: https://huggingface.co/mxr7za/jarvis-qwen25-7b-lora-400m
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper de referencia citado en los tags (LoRA): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

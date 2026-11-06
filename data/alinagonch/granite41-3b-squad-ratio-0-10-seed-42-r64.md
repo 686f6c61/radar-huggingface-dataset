@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r64` es un checkpoint alojado en HuggingFace, publicado por el usuario AlinaGonch, cuyo identificador sugiere un ajuste fino sobre un modelo de la familia Granite 4.1 de 3 000 millones de parámetros, entrenado sobre el dataset SQuAD con una fracción de datos del 10 %, semilla 42 y rango 64 (probablemente LoRA). Esta lectura es una deducción a partir del nombre del repositorio, no una confirmación del autor: la model card no aporta ningún dato verificable.
+`AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r64` es un checkpoint alojado en Hugging Face, publicado por el usuario AlinaGonch, cuyo identificador sugiere un ajuste fino sobre un modelo de la familia Granite 4.1 de 3 000 millones de parámetros, entrenado sobre el dataset SQuAD con una fracción de datos del 10 %, semilla 42 y rango 64 (probablemente LoRA). Esta lectura es una deducción a partir del nombre del repositorio, no una confirmación del autor: la model card no aporta ningún dato verificable.
 
 El repositorio emplea la plantilla automática de `transformers` y todos sus campos aparecen sin cumplimentar, literalmente como `[More Information Needed]`. No se declara licencia, idiomas soportados, pipeline, procedencia del dataset, hiperparámetros ni resultados de evaluación. El tamaño del repositorio es de 0,5 GB, lo que resulta coherente con un adaptador de bajo rango antes que con pesos completos (un modelo de 3B en bf16 ocuparía aproximadamente 6 GB), si bien esto es también una inferencia.
 
@@ -102,7 +102,7 @@ La comparación honesta es asimétrica: los tres modelos de referencia cuentan c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r64
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-42-r64
 - Paper citado en los tags del repositorio, correspondiente a la calculadora de impacto ambiental de la plantilla y no al modelo: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019)
 
 No se han encontrado en la búsqueda web otros enlaces relevantes: no hay paper del modelo, blog de publicación, repositorio de código, demo ni dataset card asociados a este checkpoint.

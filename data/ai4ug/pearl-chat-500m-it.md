@@ -4,7 +4,7 @@
 
 Pearl Chat 500M IT es un modelo de lenguaje causal e instruccional desarrollado por ai4ug, orientado a conversaciones en luganda (lg) e inglés (en). Con 466.682.112 parámetros (~467 M), se presenta como una alternativa ligera para IA conversacional en una lengua africana de bajos recursos, un ámbito con escasa cobertura de modelos abiertos. La información disponible lo vincula a la arquitectura denominada "pearlchat_v2" y a las librerías Flax/JAX con NNX.
 
-El modelo se distribuye en HuggingFace con pesos safetensors y un repositorio de 1,7 GB, bajo licencia Apache-2.0, aunque el acceso es restringido (gated). Los tags indican que ha sido ajustado para instrucciones y diálogo, y los datasets enlazados (luganda_prose y luganda_qa_pairs) sugieren un entrenamiento basado en prosa lugandesa y pares de pregunta-respuesta.
+El modelo se distribuye en Hugging Face con pesos safetensors y un repositorio de 1,7 GB, bajo licencia Apache-2.0, aunque el acceso es restringido (gated). Los tags indican que ha sido ajustado para instrucciones y diálogo, y los datasets enlazados (luganda_prose y luganda_qa_pairs) sugieren un entrenamiento basado en prosa lugandesa y pares de pregunta-respuesta.
 
 Su relevancia actual radica en la combinación de tamaño reducido, enfoque multilingüe luganda-inglés y licencia permisiva, lo que facilita experimentación y despliegue en entornos con recursos limitados. No obstante, no se han publicado especificaciones detalladas sobre contexto, cuantización, datos de entrenamiento ni resultados de benchmarks.
 
@@ -22,7 +22,7 @@ Su relevancia actual radica en la combinación de tamaño reducido, enfoque mult
 | Formato de pesos | safetensors; Flax/JAX |
 | Framework | Flax, JAX, NNX |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Tamaño del repositorio | 1,7 GB |
 
 ## Arquitectura y entrenamiento
@@ -82,14 +82,14 @@ No se dispone de resultados de benchmarks del modelo evaluado, por lo que la com
 - Riesgo de alucinación inherente a modelos pequeños; no se recomienda su uso en dominios críticos sin validación humana.
 - La longitud de contexto no está documentada, lo que impide garantizar conversaciones largas o el procesamiento de documentos extensos.
 - Cobertura limitada a luganda e inglés; no se han documentado otras lenguas de Uganda ni variantes dialectales.
-- Aunque la licencia es Apache-2.0, el acceso está restringido en HuggingFace: es necesario aceptar las condiciones del autor y verificar posibles términos adicionales de uso.
+- Aunque la licencia es Apache-2.0, el acceso está restringido en Hugging Face: es necesario aceptar las condiciones del autor y verificar posibles términos adicionales de uso.
 - El ecosistema Flax/JAX es menos habitual que PyTorch; la integración con herramientas estándar de serving puede requerir conversión y pruebas adicionales.
 - No se documentan procesos de alineación safety ni moderación de contenido; en producción conviene añadir filtros y políticas de uso.
 - La ausencia de benchmarks y de guías de despliegue limita la reproducibilidad y la comparación objetiva con alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai4ug/pearl-chat-500m-it
+- Modelo en Hugging Face: https://huggingface.co/ai4ug/pearl-chat-500m-it
 - Dataset ai4ug/luganda_prose: https://huggingface.co/datasets/ai4ug/luganda_prose
 - Dataset ai4ug/luganda_qa_pairs: https://huggingface.co/datasets/ai4ug/luganda_qa_pairs
 - Organización ai4ug: https://huggingface.co/ai4ug

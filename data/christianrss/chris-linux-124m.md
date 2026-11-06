@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chris Linux 124M es un modelo de lenguaje causal de tipo GPT-2, con 124.475.904 parámetros, especializado en asistencia para terminal Linux y generación de comandos a partir de lenguaje natural. Ha sido desarrollado por Christian R. S. (usuario christianrss) y publicado en HuggingFace como un checkpoint de investigación, concretamente la variante "Core SFT v1, epoch 08". El modelo no parte de los pesos de OpenAI GPT-2, sino que se entrenó desde una inicialización aleatoria como Chris-GPT-2 124M, continuó su preentrenamiento con documentación técnica de Linux y finalmente se ajustó mediante supervisión (SFT) con un dataset canónico de comandos.
+Chris Linux 124M es un modelo de lenguaje causal de tipo GPT-2, con 124.475.904 parámetros, especializado en asistencia para terminal Linux y generación de comandos a partir de lenguaje natural. Ha sido desarrollado por Christian R. S. (usuario christianrss) y publicado en Hugging Face como un checkpoint de investigación, concretamente la variante "Core SFT v1, epoch 08". El modelo no parte de los pesos de OpenAI GPT-2, sino que se entrenó desde una inicialización aleatoria como Chris-GPT-2 124M, continuó su preentrenamiento con documentación técnica de Linux y finalmente se ajustó mediante supervisión (SFT) con un dataset canónico de comandos.
 
 El modelo resuelve el problema de traducir peticiones en lenguaje natural a comandos shell correctos, separando intenciones similares para evitar errores de composición de flags y familias de comandos. Con una ventana de contexto de 1.024 tokens y una arquitectura decoder-only estándar, es un modelo pequeño y ligero, adecuado para experimentación y entornos con recursos limitados. Su relevancia actual radica en ser un ejemplo de especialización de dominio mediante continued pretraining y SFT canónico sobre una base entrenada desde cero, con un pipeline de entrenamiento documentado de forma transparente.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 124 millones de parametros en precision fp32, el modelo ocupa aproximadamente 500 MB de memoria (124.475.904 parametros × 4 bytes). En fp16 o bf16, alrededor de 250 MB. Cabe en cualquier GPU moderna con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3050, RTX 4060, etc. Tambien puede ejecutarse en CPU con llama.cpp u otras herramientas de cuantizacion, aunque no se proporcionan pesos GGUF.
 - Si cabe en consumer GPU: si, ampliamente. Incluso una GPU integrada podria manejar la inferencia con latencia aceptable.
-- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI (Text Generation Inference), o directamente con la libreria transformers de HuggingFace. Para despliegue ligero, se podria convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan dichos formatos en el repositorio.
+- Opciones de despliegue: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI (Text Generation Inference), o directamente con la libreria transformers de Hugging Face. Para despliegue ligero, se podria convertir a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan dichos formatos en el repositorio.
 - Latencia y throughput estimados: no se dispone de mediciones publicas. Dado el tamano, se espera una latencia de pocos milisegundos por token en una GPU moderna y un throughput de varios cientos de tokens por segundo en hardware de gama media.
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ La comparativa directa es limitada porque no existen muchos modelos de 124M espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/christianrss/chris-linux-124m
+- Repositorio Hugging Face: https://huggingface.co/christianrss/chris-linux-124m
 - No se proporcionan enlaces a papers, blogs o repositorios de codigo adicionales en la informacion disponible.

@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de image-to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/wan22-ti2v-5b-fast-int8
+- Modelo en Hugging Face: https://huggingface.co/aether-models/wan22-ti2v-5b-fast-int8
 - Modelo base: https://huggingface.co/FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers
 - Decoder diminuto taeHV (madebyollin, MIT): https://github.com/madebyollin/taehv
 - Pesos `taew2_2` (lightx2v, Apache-2.0): https://huggingface.co/lightx2v/Autoencoders

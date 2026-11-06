@@ -76,7 +76,7 @@ No se dispone de comparativas directas con modelos equivalentes en la informacio
 
 | Sistema | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dhresearch/quality-router-v2-route-conditioned` | Clasificador de enrutamiento por interfaz (scikit-learn) | no disponible | no aplica | other | HuggingFace, 0 descargas, 0 likes |
+| `dhresearch/quality-router-v2-route-conditioned` | Clasificador de enrutamiento por interfaz (scikit-learn) | no disponible | no aplica | other | Hugging Face, 0 descargas, 0 likes |
 | Q-Router | Framework agente de evaluacion de calidad de video con enrutamiento de modelos expertos; usa VLM como routers | no disponible | no disponible | no disponible | Paper en arXiv |
 | OpenRouter (Auto Router y fallbacks) | Servicio comercial de enrutamiento del lado de la aplicacion | no aplica | no disponible | no disponible | Servicio en linea |
 | Router del harness de LangChain (Open SWE) | Patron de enrutamiento a nivel de aplicacion | no aplica | no disponible | no disponible | Blog tecnico |
@@ -96,7 +96,7 @@ No se dispone de comparativas directas con modelos equivalentes en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-route-conditioned
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-route-conditioned
 - Dataset de entrenamiento: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - Q-Router: Agentic Video Quality Assessment with Expert Model Routing (paper HTML): https://arxiv.org/html/2510.08789v1
 - Q-Router (abstract en arXiv): https://arxiv.org/abs/2510.08789

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1Developer/cali-ast-wakeword_v1.1` es un clasificador de audio basado en la arquitectura Audio Spectrogram Transformer (AST), diseñado específicamente para la detección de palabras de activación (wakeword). Desarrollado por el usuario `1Developer` y publicado en HuggingFace, el modelo cuenta con 85.370.114 parámetros y un tamaño de repositorio de 0,3 GB. Su pipeline es `audio-classification` y está preparado para su uso con la librería `transformers` de HuggingFace.
+El modelo `1Developer/cali-ast-wakeword_v1.1` es un clasificador de audio basado en la arquitectura Audio Spectrogram Transformer (AST), diseñado específicamente para la detección de palabras de activación (wakeword). Desarrollado por el usuario `1Developer` y publicado en Hugging Face, el modelo cuenta con 85.370.114 parámetros y un tamaño de repositorio de 0,3 GB. Su pipeline es `audio-classification` y está preparado para su uso con la librería `transformers` de Hugging Face.
 
 La relevancia de este modelo radica en su especialización: los wakewords son componentes críticos en asistentes de voz, dispositivos domésticos inteligentes y sistemas de activación por voz. Al estar basado en un AST, procesa espectrogramas de audio como secuencias de parches, siguiendo el enfoque de los transformers de visión aplicados al dominio acústico. La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, aunque la model card oficial está prácticamente vacía, por lo que la información disponible sobre entrenamiento, datos y rendimiento es muy limitada.
 
@@ -30,7 +30,7 @@ No se dispone de información pública sobre el proceso de entrenamiento: ni el 
 - Clasificación de audio: el modelo está diseñado para clasificar segmentos de audio, específicamente para detectar si contienen un wakeword concreto.
 - Detección de palabra de activación: su caso de uso principal es la activación por voz, similar a "Hey Siri", "OK Google" o "Alexa".
 - Procesamiento de espectrogramas: al ser un AST, puede manejar entradas de audio de longitud variable convertidas a espectrogramas.
-- Integración con HuggingFace: compatible con el pipeline `audio-classification` de `transformers`, lo que facilita su despliegue en entornos estándar.
+- Integración con Hugging Face: compatible con el pipeline `audio-classification` de `transformers`, lo que facilita su despliegue en entornos estándar.
 - No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso ni capacidades multilingües, ya que es un modelo de clasificación de audio de una sola tarea.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 85,37 millones de parámetros, el modelo en precisión fp32 ocupa aproximadamente 341 MB de memoria (85,37M × 4 bytes). En fp16, unos 170 MB. Esto cabe en cualquier GPU moderna con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más (GTX 1650, RTX 2060, RTX 3060, etc.) es suficiente. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con consumer GPU: sí, es perfectamente viable en GPUs de gama de entrada y media.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como ONNX Runtime o TensorRT para optimización. También es posible cargarlo directamente con `transformers` en Python.
+- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como ONNX Runtime o TensorRT para optimización. También es posible cargarlo directamente con `transformers` en Python.
 - Latencia y throughput: no se han publicado datos concretos. Para un modelo de este tamaño, en GPU se esperan latencias de decenas de milisegundos por inferencia, pero es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de datos de rendimiento comparativos. A nivel de arquitectura, el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1Developer/cali-ast-wakeword_v1.1
+- Hugging Face: https://huggingface.co/1Developer/cali-ast-wakeword_v1.1
 - Paper de referencia (ViT, arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - No se han encontrado repositorios, demos o blogs adicionales del autor.

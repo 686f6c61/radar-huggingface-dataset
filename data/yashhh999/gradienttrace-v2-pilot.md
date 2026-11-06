@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gradientTrace-v2-pilot es un modelo de clasificación de secuencias obtenido mediante fine-tuning supervisado de microsoft/deberta-v3-large, publicado por el usuario Yashhh999 en HuggingFace. Con 434.013.185 parámetros, parte de la arquitectura DeBERTa-v3 (transformer encoder con atención desenredada y embeddings de posición relativos) y se distribuye en formato safetensors bajo licencia MIT. El autor no documenta la tarea concreta ni el conjunto de datos de entrenamiento, aunque las métricas declaradas (AUROC 0.9962, AUPRC 0.9975, TPR@FPR=0.01 de 0.9325) apuntan a un problema de clasificación binaria con fuerte desbalanceo de clases, típico de detección de anomalías, fraude o moderación de contenido.
+gradientTrace-v2-pilot es un modelo de clasificación de secuencias obtenido mediante fine-tuning supervisado de microsoft/deberta-v3-large, publicado por el usuario Yashhh999 en Hugging Face. Con 434.013.185 parámetros, parte de la arquitectura DeBERTa-v3 (transformer encoder con atención desenredada y embeddings de posición relativos) y se distribuye en formato safetensors bajo licencia MIT. El autor no documenta la tarea concreta ni el conjunto de datos de entrenamiento, aunque las métricas declaradas (AUROC 0.9962, AUPRC 0.9975, TPR@FPR=0.01 de 0.9325) apuntan a un problema de clasificación binaria con fuerte desbalanceo de clases, típico de detección de anomalías, fraude o moderación de contenido.
 
-El modelo es relevante ahora por dos motivos: primero, porque demuestra que un fine-tuning de una sola época sobre DeBERTa-v3-large puede alcanzar una separación casi perfecta en dominios especializados; segundo, porque el repositorio ocupa 78,1 GB pese a tener solo 434 millones de parámetros, lo que sugiere que incluye checkpoints intermedios, estados del optimizador o artefactos de TensorBoard que conviene auditar antes de desplegarlo. La model card es la generada automáticamente por el Trainer de HuggingFace y no aporta información sobre la tarea, el dataset ni los usos previstos.
+El modelo es relevante ahora por dos motivos: primero, porque demuestra que un fine-tuning de una sola época sobre DeBERTa-v3-large puede alcanzar una separación casi perfecta en dominios especializados; segundo, porque el repositorio ocupa 78,1 GB pese a tener solo 434 millones de parámetros, lo que sugiere que incluye checkpoints intermedios, estados del optimizador o artefactos de TensorBoard que conviene auditar antes de desplegarlo. La model card es la generada automáticamente por el Trainer de Hugging Face y no aporta información sobre la tarea, el dataset ni los usos previstos.
 
 Se trata, por tanto, de un artefacto de investigación con métricas prometedoras pero con documentación insuficiente para producción. Cualquier evaluación seria requiere reproducir el pipeline de validación sobre datos propios antes de confiar en los números declarados.
 
@@ -30,7 +30,7 @@ Se trata, por tanto, de un artefacto de investigación con métricas prometedora
 
 El modelo es un fine-tuning completo de DeBERTa-v3-large, un transformer encoder de 24 capas con atención desenredada (disentangled attention), en la que los vectores de contenido y posición se calculan por separado, y con embeddings de posición relativos en lugar de absolutos. DeBERTa-v3 sustituye además el enmascaramiento de tokens tipo BERT por enmascaramiento de spans (Replaced Token Detection), lo que mejora la eficiencia de preentrenamiento. El modelo resultante tiene 434 millones de parámetros y está pensado para tareas de comprensión de lenguaje y clasificación, no para generación autoregresiva.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante una sola época, con un total de 606 pasos, learning rate de 1,5e-05, scheduler coseno con 60 pasos de warmup, AdamW fused con betas (0,9; 0,999), batch total de 64 (batch 4 × 8 pasos de acumulación × 2 GPUs) y precisión mixta nativa (AMP). No se documenta el dataset, el número de tokens de entrenamiento, la composición de los datos ni si hubo RLHF, DPO o técnicas de calibración posteriores. Las métricas de validación mejoran entre el paso 300 y el 600 y se estabilizan en el paso 606, sin señales claras de sobreajuste dentro de la única época ejecutada. La pérdida de entrenamiento (1,0576) es sustancialmente mayor que la de validación (0,2081), lo que puede indicar regularización, dropout o una diferencia de distribución entre los conjuntos.
+El entrenamiento se realizó con el Trainer de Hugging Face durante una sola época, con un total de 606 pasos, learning rate de 1,5e-05, scheduler coseno con 60 pasos de warmup, AdamW fused con betas (0,9; 0,999), batch total de 64 (batch 4 × 8 pasos de acumulación × 2 GPUs) y precisión mixta nativa (AMP). No se documenta el dataset, el número de tokens de entrenamiento, la composición de los datos ni si hubo RLHF, DPO o técnicas de calibración posteriores. Las métricas de validación mejoran entre el paso 300 y el 600 y se estabilizan en el paso 606, sin señales claras de sobreajuste dentro de la única época ejecutada. La pérdida de entrenamiento (1,0576) es sustancialmente mayor que la de validación (0,2081), lo que puede indicar regularización, dropout o una diferencia de distribución entre los conjuntos.
 
 ## Capacidades
 
@@ -81,10 +81,10 @@ No se han publicado resultados en benchmarks estándar (MMLU, GLUE, SuperGLUE, H
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gradientTrace-v2-pilot | 434 M | no disponible (base: 512) | Clasificación (tarea no documentada) | MIT | HuggingFace |
-| microsoft/deberta-v3-large | 434 M | 512 | Modelo base preentrenado | MIT | HuggingFace |
-| microsoft/deberta-v3-base | 184 M | 512 | Modelo base preentrenado | MIT | HuggingFace |
-| roberta-large | 355 M | 512 | Modelo base preentrenado | MIT | HuggingFace |
+| gradientTrace-v2-pilot | 434 M | no disponible (base: 512) | Clasificación (tarea no documentada) | MIT | Hugging Face |
+| microsoft/deberta-v3-large | 434 M | 512 | Modelo base preentrenado | MIT | Hugging Face |
+| microsoft/deberta-v3-base | 184 M | 512 | Modelo base preentrenado | MIT | Hugging Face |
+| roberta-large | 355 M | 512 | Modelo base preentrenado | MIT | Hugging Face |
 
 No se dispone de comparaciones de rendimiento con modelos afinados equivalentes, ya que el autor no publica el dataset de evaluación ni los resultados en benchmarks estándar. La comparación se limita a parámetros, contexto y licencia.
 
@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento con modelos afinados equivalentes,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yashhh999/gradientTrace-v2-pilot
+- Modelo en Hugging Face: https://huggingface.co/Yashhh999/gradientTrace-v2-pilot
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Paper de DeBERTa-v3 (He et al., 2021): https://arxiv.org/abs/2111.09543
 - Repositorio oficial de DeBERTa: https://github.com/microsoft/DeBERTa

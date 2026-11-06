@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FIM-Mid-14B-GGUF es la distribucion en formato GGUF del modelo TIGER-Lab/FIM-Mid-14B, un modelo de lenguaje de 14.770.033.664 parametros (~14,77 mil millones) especializado en generacion de codigo y tareas de software engineering mediante Fill-In-the-Middle (FIM). Lo publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace, que genera versiones estaticas en GGUF del modelo original de TIGER-Lab para su uso en herramientas de inferencia local como llama.cpp u Ollama.
+FIM-Mid-14B-GGUF es la distribucion en formato GGUF del modelo TIGER-Lab/FIM-Mid-14B, un modelo de lenguaje de 14.770.033.664 parametros (~14,77 mil millones) especializado en generacion de codigo y tareas de software engineering mediante Fill-In-the-Middle (FIM). Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera versiones estaticas en GGUF del modelo original de TIGER-Lab para su uso en herramientas de inferencia local como llama.cpp u Ollama.
 
 El modelo esta afinado sobre el dataset TIGER-Lab/FIM-Midtraining-400K y esta disenado especificamente para completar codigo en medio de un contexto (FIM), una capacidad clave para asistentes de autocompletado en editores e IDEs. La ficha documenta exclusivamente la version cuantizada; el modelo base y sus detalles de entrenamiento deben consultarse en el repositorio original de TIGER-Lab.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado): https://huggingface.co/mradermacher/FIM-Mid-14B-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/FIM-Mid-14B-GGUF
 - Modelo base: https://huggingface.co/TIGER-Lab/FIM-Mid-14B
 - Dataset de entrenamiento: https://huggingface.co/datasets/TIGER-Lab/FIM-Midtraining-400K
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#FIM-Mid-14B-GGUF

@@ -59,5 +59,5 @@ No disponible. No se conocen otros modelos cuantizados en formato exl3 del mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turboderp/GLM-5.2-exl3
+- Repositorio Hugging Face: https://huggingface.co/turboderp/GLM-5.2-exl3
 - Modelo base (referencia): zai-org/GLM-5.2 (sin URL directa en la informacion proporcionada)

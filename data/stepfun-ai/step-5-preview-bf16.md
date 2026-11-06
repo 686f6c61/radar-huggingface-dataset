@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Step 5 Preview es el modelo insignia de StepFun (stepfun-ai) orientado a trabajo agéntico: ingeniería de software, conocimiento profesional y, con especial énfasis, tareas financieras que combinan razonamiento cuantitativo con análisis documental. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) dispersa con 600.000 millones de parámetros totales y 27.000 millones de parámetros activos por token, según la model card del autor. El checkpoint analizado aquí es la variante en precisión BF16, publicada en HuggingFace como `stepfun-ai/Step-5-Preview-BF16`, con un peso real medido en safetensors de 604.339.504.832 parámetros.
+Step 5 Preview es el modelo insignia de StepFun (stepfun-ai) orientado a trabajo agéntico: ingeniería de software, conocimiento profesional y, con especial énfasis, tareas financieras que combinan razonamiento cuantitativo con análisis documental. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) dispersa con 600.000 millones de parámetros totales y 27.000 millones de parámetros activos por token, según la model card del autor. El checkpoint analizado aquí es la variante en precisión BF16, publicada en Hugging Face como `stepfun-ai/Step-5-Preview-BF16`, con un peso real medido en safetensors de 604.339.504.832 parámetros.
 
 La relevancia del modelo reside en su ventana de contexto de hasta 1 millón de tokens, tanto de entrada como de salida, y en su entrada multimodal de texto e imagen (la introducción de la model card menciona además vídeo, aunque la tabla de especificaciones solo lista texto e imagen). Esa combinación lo sitúa en la categoría de modelos abiertos de frontera para cargas agénticas de horizonte largo: llamadas repetidas a herramientas, ejecución y verificación de código y revisiones iterativas manteniendo información de contexto extensa.
 
-El modelo se distribuye con licencia `other` (con enlace a un fichero LICENSE.txt propio), lo que obliga a revisar los términos antes de cualquier uso comercial. No se declaran idiomas soportados ni pipeline en la ficha de HuggingFace, y el repositorio ocupa 1214,9 GB, lo que refleja el coste de almacenamiento y despliegue de la versión BF16 completa.
+El modelo se distribuye con licencia `other` (con enlace a un fichero LICENSE.txt propio), lo que obliga a revisar los términos antes de cualquier uso comercial. No se declaran idiomas soportados ni pipeline en la ficha de Hugging Face, y el repositorio ocupa 1214,9 GB, lo que refleja el coste de almacenamiento y despliegue de la versión BF16 completa.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se distribuye con licencia `other` (con enlace a un fichero LICENSE.tx
 | Formato de pesos | safetensors |
 | Modalidad de entrada | Texto e imagen (la introduccion de la model card menciona tambien video) |
 | Modalidad de salida | Texto |
-| Tag de arquitectura en HuggingFace | step5_vl |
+| Tag de arquitectura en Hugging Face | step5_vl |
 | Tamano del repositorio | 1214,9 GB (checkpoint BF16) |
 | Descargas / likes | 126 descargas / 47 likes |
 | Fecha de creacion | 2026-09-20 |
@@ -31,7 +31,7 @@ El modelo se distribuye con licencia `other` (con enlace a un fichero LICENSE.tx
 
 ## Arquitectura y entrenamiento
 
-Step 5 Preview emplea una arquitectura de mezcla de expertos dispersa (sparse MoE) con 600B parámetros totales y 27B activos. La model card no detalla el número de expertos, la estrategia de enrutamiento, el ratio de activación por capa ni si se combina con atención lineal o mecanismos híbridos. El identificador de arquitectura expuesto en HuggingFace es `step5_vl`, lo que confirma el soporte de entrada visual integrado en el propio modelo, no como adaptador independiente.
+Step 5 Preview emplea una arquitectura de mezcla de expertos dispersa (sparse MoE) con 600B parámetros totales y 27B activos. La model card no detalla el número de expertos, la estrategia de enrutamiento, el ratio de activación por capa ni si se combina con atención lineal o mecanismos híbridos. El identificador de arquitectura expuesto en Hugging Face es `step5_vl`, lo que confirma el soporte de entrada visual integrado en el propio modelo, no como adaptador independiente.
 
 Tampoco se publican en la información disponible datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otros métodos de alineamiento. La model card sí menciona explícitamente el uso de decodificación especulativa como característica soportada por los frameworks de servicio, y hace referencia a un ajuste de razonamiento configurable ("High" reasoning setting) empleado en las evaluaciones publicadas.
 
@@ -103,10 +103,10 @@ Comparativa de especificaciones declaradas por los respectivos autores. Los dato
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| Step 5 Preview (BF16) | 600B (604,3B medidos en safetensors) | 27B | Hasta 1M tokens | other (propia) | safetensors BF16 y FP8 en HuggingFace y ModelScope |
-| DeepSeek-V3 / R1 | 671B | 37B | 128K (segun model card publica) | MIT | Abierta en HuggingFace |
-| Qwen3-235B-A22B | 235B | 22B | 128K o superior segun variante | Apache-2.0 | Abierta en HuggingFace |
-| Llama 4 Maverick | 400B | 17B | Hasta 1M tokens (segun model card publica) | Licencia comunitaria de Meta | Abierta en HuggingFace |
+| Step 5 Preview (BF16) | 600B (604,3B medidos en safetensors) | 27B | Hasta 1M tokens | other (propia) | safetensors BF16 y FP8 en Hugging Face y ModelScope |
+| DeepSeek-V3 / R1 | 671B | 37B | 128K (segun model card publica) | MIT | Abierta en Hugging Face |
+| Qwen3-235B-A22B | 235B | 22B | 128K o superior segun variante | Apache-2.0 | Abierta en Hugging Face |
+| Llama 4 Maverick | 400B | 17B | Hasta 1M tokens (segun model card publica) | Licencia comunitaria de Meta | Abierta en Hugging Face |
 
 Diferencias destacables: Step 5 Preview es el único de la comparativa que declara explícitamente orientación a finanzas y entrada de vídeo, y uno de los dos con contexto de 1M tokens. Frente a DeepSeek-V3 y Qwen3, su licencia `other` es más restrictiva que MIT o Apache-2.0 y exige revisión legal antes de uso comercial. No se dispone de datos de rendimiento comparables publicados en la información disponible.
 
@@ -121,12 +121,12 @@ Diferencias destacables: Step 5 Preview es el único de la comparativa que decla
 - La propia model card advierte de que el despliegue en Transformers con BF16 requiere una nota de validación adicional; conviene revisarla antes de apoyarse en esa ruta.
 - Discrepancia documental: la tabla de especificaciones lista como entrada "texto, imagen", mientras que la introducción menciona también vídeo. Conviene confirmar el soporte real de vídeo antes de diseñar un caso de uso sobre esa capacidad.
 - No se documentan tasas de error, comportamiento ante entradas adversarias ni límites de la decodificación especulativa en producción.
-- Etiqueta de arquitectura `step5_vl` y ausencia de campos de idioma y pipeline en la ficha de HuggingFace: metadatos incompletos, lo que dificulta la integración automatizada en catálogos de modelos.
+- Etiqueta de arquitectura `step5_vl` y ausencia de campos de idioma y pipeline en la ficha de Hugging Face: metadatos incompletos, lo que dificulta la integración automatizada en catálogos de modelos.
 
 ## Enlaces
 
-- Modelo BF16 en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
-- Modelo FP8 en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview
+- Modelo BF16 en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
+- Modelo FP8 en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview
 - Modelo FP8 en ModelScope: https://modelscope.ai/models/stepfun-ai/Step-5-Preview
 - Modelo BF16 en ModelScope: https://modelscope.ai/models/stepfun-ai/Step-5-Preview-BF16
 - Pagina del modelo (StepFun): https://www.stepfun.com/step-5-preview

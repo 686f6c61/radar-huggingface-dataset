@@ -83,9 +83,9 @@ Rendimiento en un Apple M5 con ~550 tokens de prompt y ~17 de salida (mediana de
 
 | Modelo | Parámetros | Contexto | WER dictado plano | WER con contexto de pantalla | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gemma4-e2b-muesli-cleanup-v12-mlx-4bit | 4,63 B | no disponible | 1,49 | 8,80 | apache-2.0 | HuggingFace, MLX 4-bit |
+| gemma4-e2b-muesli-cleanup-v12-mlx-4bit | 4,63 B | no disponible | 1,49 | 8,80 | apache-2.0 | Hugging Face, MLX 4-bit |
 | Limpieza previa de Muesli (Qwen3.5-0,8B) | 0,8 B | no disponible | 2,26 | 37,52 | no disponible | interna, no publicada |
-| google/gemma-4-E2B-it (base) | 4,63 B | no disponible | no disponible | no disponible | no indicada en la información proporcionada | HuggingFace |
+| google/gemma-4-E2B-it (base) | 4,63 B | no disponible | no disponible | no disponible | no indicada en la información proporcionada | Hugging Face |
 
 La comparación es limitada: el único contrincante con números es la limpieza anterior de Muesli, mucho más pequeña y claramente peor en el escenario con contexto de pantalla (37,52 frente a 8,80 de WER). No hay datos públicos de otros modelos especializados en limpieza de dictado con los que contrastar, y el modelo base no está evaluado en esta tarea en la información disponible.
 
@@ -103,7 +103,7 @@ La comparación es limitada: el único contrincante con números es la limpieza 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phequals/gemma4-e2b-muesli-cleanup-v12-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/phequals/gemma4-e2b-muesli-cleanup-v12-mlx-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

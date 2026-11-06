@@ -75,10 +75,10 @@ El autor indica explícitamente que la mejora medible frente a zero-shot se conc
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-4B + LoRA v7b) | 33 M de adaptador sobre ~4 B | no disponible | 71,6 % de validez nuclear según docente (214/299) | apache-2.0 | HuggingFace y GitHub del autor |
-| Qwen3-4B zero-shot (mismo base, sin adaptador) | ~4 B | no disponible | Formato de salida menos fiable según el autor; sin cifra de validez publicada | apache-2.0 | HuggingFace (Qwen) |
-| Qwen3-4B Q4_K_M sin adaptador | ~4 B | no disponible | No comparable: no genera el JSON estructurado de forma consistente | apache-2.0 | HuggingFace (Qwen/Qwen3-4B-GGUF) |
-| felhen-ai/saracura-ptbr-4b | ~4 B | no disponible | no disponible (clasificación de texto, no generación de ítems) | no disponible | HuggingFace |
+| Este adaptador (Qwen3-4B + LoRA v7b) | 33 M de adaptador sobre ~4 B | no disponible | 71,6 % de validez nuclear según docente (214/299) | apache-2.0 | Hugging Face y GitHub del autor |
+| Qwen3-4B zero-shot (mismo base, sin adaptador) | ~4 B | no disponible | Formato de salida menos fiable según el autor; sin cifra de validez publicada | apache-2.0 | Hugging Face (Qwen) |
+| Qwen3-4B Q4_K_M sin adaptador | ~4 B | no disponible | No comparable: no genera el JSON estructurado de forma consistente | apache-2.0 | Hugging Face (Qwen/Qwen3-4B-GGUF) |
+| felhen-ai/saracura-ptbr-4b | ~4 B | no disponible | no disponible (clasificación de texto, no generación de ítems) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ El autor indica explícitamente que la mejora medible frente a zero-shot se conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eltonsarmanho/qwen3-4b-questoes-matematica
+- Modelo en Hugging Face: https://huggingface.co/eltonsarmanho/qwen3-4b-questoes-matematica
 - Código, datos y informes: https://github.com/eltonsarmanho/TreinamentoModeloQuestoes
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - GGUF base necesario (`Qwen3-4B-Q4_K_M.gguf`): https://huggingface.co/Qwen/Qwen3-4B-GGUF

@@ -77,7 +77,7 @@ Ambos adaptadores de la familia dementor comparten el mismo modelo base y datase
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42
+- Hugging Face del adaptador: https://huggingface.co/dementor-research/dpo_gsm8k_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Adaptador inverso (Gemma imitando a Nemotron): https://huggingface.co/dementor-research/dpo_gsm8k_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42
 - Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

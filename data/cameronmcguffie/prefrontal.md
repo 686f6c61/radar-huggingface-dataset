@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CameronMcGuffie/prefrontal` es un modelo publicado en HuggingFace por el usuario CameronMcGuffie bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano ni datos de entrenamiento: unicamente declara la licencia MIT como metadato YAML. No hay informacion sobre el pipeline, los idiomas soportados ni los pesos disponibles.
+`CameronMcGuffie/prefrontal` es un modelo publicado en Hugging Face por el usuario CameronMcGuffie bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano ni datos de entrenamiento: unicamente declara la licencia MIT como metadato YAML. No hay informacion sobre el pipeline, los idiomas soportados ni los pesos disponibles.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad. No es posible determinar si se trata de un modelo entrenado desde cero, un fine-tuning, un experimento de investigacion o un artefacto de prueba.
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni rendimiento no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CameronMcGuffie/prefrontal
+- Hugging Face: https://huggingface.co/CameronMcGuffie/prefrontal
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

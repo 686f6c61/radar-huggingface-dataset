@@ -64,7 +64,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La referenc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matching-lite | 49.600 (segun safetensors) | no disponible | no disponible (sin checkpoint entrenado) | MIT | HuggingFace, repo de 0,0 GB |
+| matching-lite | 49.600 (segun safetensors) | no disponible | no disponible (sin checkpoint entrenado) | MIT | Hugging Face, repo de 0,0 GB |
 | CLIP y derivados orientados a matching | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No se dispone de datos comparativos en la informacion proporcionada. La referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aalqahtaninoura/matching-lite
-- Perfil del autor en HuggingFace: https://huggingface.co/aalqahtaninoura
+- Modelo en Hugging Face: https://huggingface.co/aalqahtaninoura/matching-lite
+- Perfil del autor en Hugging Face: https://huggingface.co/aalqahtaninoura
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

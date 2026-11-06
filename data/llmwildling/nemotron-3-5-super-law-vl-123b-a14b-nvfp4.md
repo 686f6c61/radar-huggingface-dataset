@@ -109,7 +109,7 @@ La comparativa directa con otros ajustes legales de tamaño similar no está dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LLMWildling/Nemotron-3.5-Super-Law-VL-123B-A14B-NVFP4
+- Hugging Face: https://huggingface.co/LLMWildling/Nemotron-3.5-Super-Law-VL-123B-A14B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Benchmark Harvey LAB: https://github.com/harveyai/harvey-labs
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

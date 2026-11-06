@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos artefactos en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfm1
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Configuración y checkpoints del run: `cot-control/results/rl/obfm1/` (`config.json`, `checkpoints.json`) dentro del repositorio anterior

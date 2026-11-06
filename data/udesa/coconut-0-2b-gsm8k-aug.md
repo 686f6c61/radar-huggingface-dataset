@@ -84,9 +84,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, etc.) en la
 
 | Modelo | Parametros | Contexto | GSM8K test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UdeSA/coconut-0.2B-gsm8k-aug (`coconut/`) | ~0,2B (GPT-2) | no disponible (GPT-2: 1024) | 34,57 % (K = 6) | MIT | HuggingFace |
-| UdeSA/coconut-0.2B-gsm8k-aug (`cot/`) | ~0,2B (GPT-2) | no disponible (GPT-2: 1024) | 43,14 % | MIT | HuggingFace |
-| UdeSA/ALST-0.2B-gsm8k-aug | ~0,2B (GPT-2) | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace |
+| UdeSA/coconut-0.2B-gsm8k-aug (`coconut/`) | ~0,2B (GPT-2) | no disponible (GPT-2: 1024) | 34,57 % (K = 6) | MIT | Hugging Face |
+| UdeSA/coconut-0.2B-gsm8k-aug (`cot/`) | ~0,2B (GPT-2) | no disponible (GPT-2: 1024) | 43,14 % | MIT | Hugging Face |
+| UdeSA/ALST-0.2B-gsm8k-aug | ~0,2B (GPT-2) | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face |
 
 Las alternativas comparables directas (mismo backbone GPT-2 y mismo dataset) son las variantes del propio ecosistema UdeSA. No se dispone de datos de modelos externos equivalentes en la información proporcionada.
 
@@ -105,7 +105,7 @@ Las alternativas comparables directas (mismo backbone GPT-2 y mismo dataset) son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UdeSA/coconut-0.2B-gsm8k-aug
+- Modelo en Hugging Face: https://huggingface.co/UdeSA/coconut-0.2B-gsm8k-aug
 - Paper de Coconut (Hao et al., 2024): https://arxiv.org/abs/2412.06769
 - Modelo relacionado (ALST-0.2B-gsm8k-aug): https://huggingface.co/UdeSA/ALST-0.2B-gsm8k-aug
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2

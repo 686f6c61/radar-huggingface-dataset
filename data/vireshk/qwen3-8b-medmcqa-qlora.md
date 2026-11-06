@@ -85,7 +85,7 @@ El adaptador es la opción intermedia: mejora la exactitud del base sin coste de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vireshk/qwen3-8b-medmcqa-qlora
+- Hugging Face: https://huggingface.co/vireshk/qwen3-8b-medmcqa-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset MedMCQA: https://huggingface.co/datasets/openlifescienceai/medmcqa
 - Repositorio del benchmark: https://github.com/vireshkoli/Fine-Tune-vs-RAG

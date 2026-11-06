@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Glucopril/Glucopril es un repositorio alojado en HuggingFace bajo el identificador de autor "Glucopril", publicado con licencia Artistic License 2.0 y con la etiqueta de region "us". En el momento de la consulta acumula 0 descargas y 1 "like", y no tiene ninguna tarea (pipeline) declarada. El repositorio fue creado y actualizado en el mismo instante (12 de septiembre de 2026), lo que indica un unico acto de subida sin modificaciones posteriores.
+Glucopril/Glucopril es un repositorio alojado en Hugging Face bajo el identificador de autor "Glucopril", publicado con licencia Artistic License 2.0 y con la etiqueta de region "us". En el momento de la consulta acumula 0 descargas y 1 "like", y no tiene ninguna tarea (pipeline) declarada. El repositorio fue creado y actualizado en el mismo instante (12 de septiembre de 2026), lo que indica un unico acto de subida sin modificaciones posteriores.
 
 La model card publicada por el autor esta vacia: unicamente contiene la linea de metadatos `license: artistic-2.0`, sin ningun parrafo descriptivo, sin informacion sobre arquitectura, tamano, datos de entrenamiento, idiomas o capacidades. No se especifica ningun tipo de modelo, ni se han publicado resultados de benchmarks.
 
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Glucopril/Glucopril
+- Repositorio en Hugging Face: https://huggingface.co/Glucopril/Glucopril
 - Model card del autor: https://huggingface.co/Glucopril/Glucopril (vacia, solo contiene la linea de licencia)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: los unicos enlaces recuperados no guardan relacion con el modelo (guias sobre el joystick de PlayStation 5 en aranzulla.it, tuttodigitale.net, it.101-help.com y playstation.com), por lo que no se incluyen como referencias validas.

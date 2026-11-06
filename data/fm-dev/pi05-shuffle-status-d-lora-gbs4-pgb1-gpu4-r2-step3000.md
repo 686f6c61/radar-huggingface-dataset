@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step3000` es un adaptador LoRA publicado en HuggingFace por el usuario `fm-dev`, etiquetado para robótica (`pipeline: robotics`) y asociado a la plataforma Franka. Por la nomenclatura del identificador y las etiquetas (`pi05`, `franka`, `lora`), se trata de un ajuste fino mediante LoRA sobre `pi05`, el modelo visión-lenguaje-acción (VLA) de la familia pi0.5, orientado a una tarea concreta de manipulación robótica identificada como `shuffle-status-d`.
+El modelo `fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step3000` es un adaptador LoRA publicado en Hugging Face por el usuario `fm-dev`, etiquetado para robótica (`pipeline: robotics`) y asociado a la plataforma Franka. Por la nomenclatura del identificador y las etiquetas (`pi05`, `franka`, `lora`), se trata de un ajuste fino mediante LoRA sobre `pi05`, el modelo visión-lenguaje-acción (VLA) de la familia pi0.5, orientado a una tarea concreta de manipulación robótica identificada como `shuffle-status-d`.
 
 El repositorio no incluye model card, descripción, licencia, idiomas ni resultados de evaluación. Se trata de un artefacto de entrenamiento con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 10 de septiembre de 2026. El sufijo del nombre (`gbs4`, `pgb1`, `gpu4`, `r2`, `step3000`) sugiere una configuración de entrenamiento con batch global 4, batch por GPU 1, 4 GPUs, rango LoRA 2 y guardado en el paso 3000, aunque estos valores son una interpretación del identificador y no están confirmados por documentación oficial.
 
@@ -27,7 +27,7 @@ Su relevancia es acotada: no es un modelo de propósito general, sino un checkpo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste en el repositorio de HuggingFace. Las únicas pistas disponibles son las etiquetas (`robotics`, `pi05`, `franka`, `lora`) y el propio identificador del modelo.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste en el repositorio de Hugging Face. Las únicas pistas disponibles son las etiquetas (`robotics`, `pi05`, `franka`, `lora`) y el propio identificador del modelo.
 
 A partir de esas etiquetas cabe inferir, sin que exista confirmación documental, que se trata de un adaptador LoRA de bajo rango (el segmento `r2` apunta a rango 2) aplicado sobre el modelo base `pi05`, y entrenado durante 3000 pasos con un batch global de 4 y batch por GPU de 1 sobre 4 GPUs. El sufijo `shuffle-status-d` parece corresponder al nombre de la tarea o del conjunto de datos de demostraciones empleado. No hay información sobre el número de tokens, la composición del dataset, el uso de RLHF o DPO (poco habituales en políticas VLA), ni sobre innovaciones técnicas concretas. Cualquier afirmación adicional sería especulativa.
 
@@ -67,7 +67,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-status-d-lora (este) | No disponible | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| pi05-shuffle-status-d-lora (este) | No disponible | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Modelo base pi05 | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 | Alternativas VLA abiertas | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 
@@ -85,5 +85,5 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step3000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step3000
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada. La búsqueda web no devolvió ningún enlace relevante.

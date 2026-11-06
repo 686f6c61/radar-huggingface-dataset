@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E2B-it-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo multimodal google/gemma-4-E2B-it, publicada por el usuario mnsims1024 en HuggingFace. El modelo base pertenece a la familia Gemma 4 de Google DeepMind, una familia de modelos abiertos multimodales que procesan texto, imagen y audio (audio solo en los tamaños pequeños) y generan texto. Este repositorio concreto es una redistribución orientada a inferencia local, no un modelo entrenado desde cero.
+gemma-4-E2B-it-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo multimodal google/gemma-4-E2B-it, publicada por el usuario mnsims1024 en Hugging Face. El modelo base pertenece a la familia Gemma 4 de Google DeepMind, una familia de modelos abiertos multimodales que procesan texto, imagen y audio (audio solo en los tamaños pequeños) y generan texto. Este repositorio concreto es una redistribución orientada a inferencia local, no un modelo entrenado desde cero.
 
 El repositorio se apoya en el formato Unsloth Dynamic 2.0 GGUF, pensado para reducir la pérdida de calidad en cuantizaciones agresivas. El recuento real de parámetros en safetensors del repositorio es de 4.647.450.147 (unos 4,65 mil millones), una cifra que conviene contrastar con la nomenclatura "E2B" del nombre, ya que la documentación de la familia atribuye 2,3 B efectivos (5,1 B con embeddings) al tamaño E2B y 4,5 B efectivos (8 B con embeddings) al E4B.
 
@@ -17,8 +17,8 @@ La relevancia de esta ficha es práctica: permite saber si el modelo cabe en har
 | Parámetros activos | No aplica: es una variante densa. La única variante MoE de la familia es la 26B A4B |
 | Longitud de contexto | 128K tokens para los modelos pequeños (E2B y E4B) según la documentación de la familia; los modelos medios (26B A4B, 31B) llegan a 256K |
 | Tipos de cuantización | GGUF, con el esquema Unsloth Dynamic 2.0. El repositorio ocupa 80,7 GB, lo que sugiere varios niveles de cuantización empaquetados, pero la lista concreta de niveles no está disponible en la información proporcionada |
-| Idiomas soportados | Más de 140 idiomas según la documentación de la familia Gemma 4; los metadatos de HuggingFace del repositorio no especifican idiomas |
-| Licencia | apache-2.0 según los metadatos de HuggingFace; la model card enlaza la licencia de Gemma 4 de Google (ai.google.dev/gemma/docs/gemma_4_license), lo que conviene verificar |
+| Idiomas soportados | Más de 140 idiomas según la documentación de la familia Gemma 4; los metadatos de Hugging Face del repositorio no especifican idiomas |
+| Licencia | apache-2.0 según los metadatos de Hugging Face; la model card enlaza la licencia de Gemma 4 de Google (ai.google.dev/gemma/docs/gemma_4_license), lo que conviene verificar |
 | Formato de pesos | GGUF en este repositorio; el modelo base google/gemma-4-E2B-it se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ Frente a alternativas de otros fabricantes en el rango de 3 a 8 mil millones de 
 - Discrepancia entre el nombre del repositorio (E2B) y el recuento de parámetros en safetensors (4,65 B). Conviene verificar qué variante se está descargando realmente antes de desplegarla.
 - Es una republicación de un tercero (mnsims1024), no un artefacto oficial de Google DeepMind. No hay garantías de mantenimiento, versionado ni actualización con las correcciones posteriores del modelo base.
 - La licencia declarada en los metadatos es apache-2.0, pero la model card enlaza la licencia específica de Gemma 4 de Google. Es imprescindible revisar los términos aplicables antes de un uso comercial, porque pueden incluir condiciones de uso aceptable adicionales.
-- Los metadatos de HuggingFace no especifican los idiomas soportados; la cifra de más de 140 idiomas proviene de la documentación de la familia y la calidad por idioma puede variar notablemente.
+- Los metadatos de Hugging Face no especifican los idiomas soportados; la cifra de más de 140 idiomas proviene de la documentación de la familia y la calidad por idioma puede variar notablemente.
 - El rendimiento efectivo en contextos cercanos a 128K tokens puede degradarse y el consumo de memoria de la caché KV crece con la longitud de la conversación.
 - Para usar las capacidades de imagen y audio en GGUF es necesario cargar los proyectores multimodales correspondientes; si el repositorio no los incluye, esas capacidades no estarán disponibles en el runtime.
 - El repositorio registra cero descargas y cero "likes", por lo que no existe validación comunitaria de su funcionamiento.
@@ -92,7 +92,7 @@ Frente a alternativas de otros fabricantes en el rango de 3 a 8 mil millones de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mnsims1024/gemma-4-E2B-it-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mnsims1024/gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Colección de Unsloth con todas las versiones de Gemma 4: https://huggingface.co/collections/unsloth/gemma-4
 - Guía de Unsloth para ejecutar Gemma 4: https://docs.unsloth.ai/models/gemma-4

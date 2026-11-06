@@ -4,7 +4,7 @@
 
 mradermacher/pricelab-qwen3-0.6b-GGUF es un conjunto de cuantizaciones en formato GGUF generadas por el usuario mradermacher a partir del modelo gaurabdas/pricelab-qwen3-0.6b. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución optimizada para inferencia local del citado modelo base, que a su vez es una adaptación de Qwen3-0.6B afinada mediante QLoRA para tareas de fijación de precios de producto (etiqueta `product-pricing`) con finalidad declarada educativa (etiqueta `educational`).
 
-El modelo cuenta con 596.049.920 parámetros totales (aproximadamente 0,6 mil millones), lo que lo sitúa en la gama ultraligera. Su arquitectura subyacente es la del transformers decoder-only denso de la familia Qwen3, sin mezcla de expertos, y el repositorio ocupa 5,7 GB en total, repartidos entre las doce variantes de cuantización ofrecidas (desde Q2_K hasta f16). El idioma declarado es únicamente inglés y la licencia no está especificada ni en la model card del cuantizador ni en los metadatos de HuggingFace.
+El modelo cuenta con 596.049.920 parámetros totales (aproximadamente 0,6 mil millones), lo que lo sitúa en la gama ultraligera. Su arquitectura subyacente es la del transformers decoder-only denso de la familia Qwen3, sin mezcla de expertos, y el repositorio ocupa 5,7 GB en total, repartidos entre las doce variantes de cuantización ofrecidas (desde Q2_K hasta f16). El idioma declarado es únicamente inglés y la licencia no está especificada ni en la model card del cuantizador ni en los metadatos de Hugging Face.
 
 La relevancia de esta ficha es fundamentalmente práctica: sirve como ejemplo canónico del flujo QLoRA + merge + cuantización GGUF aplicado a un modelo diminuto, y resulta útil para quienes necesitan ejecutar un ajuste de nicho en hardware mínimo (CPU, Raspberry Pi, GPUs integradas) o como punto de partida para experimentos de investigación sobre cuantización agresiva. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto de nicho, no de un modelo de referencia.
 
@@ -37,7 +37,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 - Generación de texto conversacional en inglés, con formato de chat (etiqueta `conversational` en los metadatos).
 - Estimación y razonamiento sobre precios de producto, capacidad objetivo del ajuste fino QLoRA.
 - Generación de respuestas de un solo turno o multiturno de complejidad baja, limitada por el tamaño del modelo (0,6 mil millones de parámetros).
-- Compatibilidad con endpoints de inferencia estándar (etiqueta `endpoints_compatible`), lo que permite servirlo tras una API compatible con el formato de HuggingFace.
+- Compatibilidad con endpoints de inferencia estándar (etiqueta `endpoints_compatible`), lo que permite servirlo tras una API compatible con el formato de Hugging Face.
 - Ejecución en CPU y en hardware de gama muy baja gracias al formato GGUF.
 - No se documenta soporte explícito de tool calling, function calling, uso de agentes ni razonamiento multi-paso.
 - No se documentan capacidades de visión, audio, thinking mode explícito ni razonamiento extendido.
@@ -55,7 +55,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del cuantizador ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, perplejidad comparativa entre cuantizaciones u otras métricas. La model card se limita a enlazar un gráfico genérico de calidad de cuantizaciones de ikawrakow y un análisis de Artefact2 sobre tipos de cuantización, pero no aporta mediciones propias del modelo.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del cuantizador ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, perplejidad comparativa entre cuantizaciones u otras métricas. La model card se limita a enlazar un gráfico genérico de calidad de cuantizaciones de ikawrakow y un análisis de Artefact2 sobre tipos de cuantización, pero no aporta mediciones propias del modelo.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 | pricelab-qwen3-0.6b (GGUF, este modelo) | 596 millones | No disponible | No disponible | GGUF y safetensors | No publicado |
 | Qwen3-0.6B (modelo base de la familia) | 0,6 mil millones | 32.768 tokens declarados por el fabricante | Apache 2.0 según la familia Qwen3 | safetensors, GGUF | Publicados por Alibaba |
 | Qwen2.5-0.5B | 0,5 mil millones | 32.768 tokens declarados por el fabricante | Apache 2.0 | safetensors, GGUF | Publicados por Alibaba |
-| SmolLM2-360M | 360 millones | 8.192 tokens declarados por el fabricante | Apache 2.0 | safetensors, GGUF | Publicados por HuggingFace |
+| SmolLM2-360M | 360 millones | 8.192 tokens declarados por el fabricante | Apache 2.0 | safetensors, GGUF | Publicados por Hugging Face |
 
 La comparación debe tomarse con cautela: los datos de contexto y licencia de la primera fila corresponden a lo declarado en esta ficha, mientras que los de las filas alternativas proceden de la documentación pública de cada familia y no se han verificado contra la información proporcionada en esta consulta. El rasgo diferencial de este modelo no es su rendimiento bruto, sino su especialización declarada en precios de producto y su vocación educativa.
 
@@ -90,7 +90,7 @@ La comparación debe tomarse con cautela: los datos de contexto y licencia de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/pricelab-qwen3-0.6b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/pricelab-qwen3-0.6b-GGUF
 - Modelo base: https://huggingface.co/gaurabdas/pricelab-qwen3-0.6b
 - Página resumen del cuantizador para este modelo: https://hf.tst.eu/model#pricelab-qwen3-0.6b-GGUF
 - Página de peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

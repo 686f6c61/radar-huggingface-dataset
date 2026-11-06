@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ZZJIA-HAO06X/perceiver-generation` es un repositorio publicado en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a tareas de generación. El autor lo describe explícitamente como un artefacto compacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`ZZJIA-HAO06X/perceiver-generation` es un repositorio publicado en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a tareas de generación. El autor lo describe explícitamente como un artefacto compacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es su tamaño real: 49.600 parámetros en total, es decir, unas 49,6 mil variables, según los metadatos de safetensors. Estamos ante un modelo de juguete a efectos de escala: no compite con ningún modelo generativo actual y no permite extraer conclusiones de calidad. Su interés es puramente arquitectónico y educativo.
 
@@ -72,10 +72,10 @@ No se dispone de datos verificables de alternativas comparables dentro de la inf
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZZJIA-HAO06X/perceiver-generation | 49.600 | no disponible | No (solo inicialización) | MIT | HuggingFace, 0 descargas |
+| ZZJIA-HAO06X/perceiver-generation | 49.600 | no disponible | No (solo inicialización) | MIT | Hugging Face, 0 descargas |
 | Perceiver (DeepMind, referencia) | no disponible | no disponible | No aplica (paper) | no verificada en la información disponible | Paper + código de referencia |
 | Perceiver IO (DeepMind, referencia) | no disponible | no disponible | Pesos preentrenados en el repositorio original | no verificada en la información disponible | Paper + código de referencia |
-| Otros repos de prueba de humo con etiqueta «perceiver» | no disponible | no disponible | Habitualmente no | variable | HuggingFace |
+| Otros repos de prueba de humo con etiqueta «perceiver» | no disponible | no disponible | Habitualmente no | variable | Hugging Face |
 
 La comparación directa no es significativa: este repositorio es una implementación de autor con 49.600 parámetros y sin entrenamiento, frente a implementaciones de referencia publicadas con pesos entrenados y evaluaciones. La comparación útil es de código y de intención (prototipado), no de rendimiento.
 
@@ -93,6 +93,6 @@ La comparación directa no es significativa: este repositorio es una implementac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZJIA-HAO06X/perceiver-generation
+- Modelo en Hugging Face: https://huggingface.co/ZZJIA-HAO06X/perceiver-generation
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

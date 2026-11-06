@@ -19,7 +19,7 @@ GRM-3.2-Sky-abliterated-i1-GGUF es una cuantizacion GGUF del modelo base Crata/G
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base. La metadata de HuggingFace indica que se apoya en la biblioteca Transformers y que el repositorio de cuantizacion lo identifica como modelo de vision. La abliteracion es una tecnica que altera los pesos de un modelo para eliminar ciertos comportamientos, habitualmente los rechazos de seguridad, aunque en este caso no se detalla el procedimiento concreto. La cuantizacion i1 incluye un fichero de importancia (imatrix) que se emplea para mejorar la calidad de los cuantificados de menor tamano. No se documentan datos sobre los tokens de entrenamiento, la composicion del dataset ni la aplicacion de tecnicas como RLHF o DPO.
+No se ha publicado informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento del modelo base. La metadata de Hugging Face indica que se apoya en la biblioteca Transformers y que el repositorio de cuantizacion lo identifica como modelo de vision. La abliteracion es una tecnica que altera los pesos de un modelo para eliminar ciertos comportamientos, habitualmente los rechazos de seguridad, aunque en este caso no se detalla el procedimiento concreto. La cuantizacion i1 incluye un fichero de importancia (imatrix) que se emplea para mejorar la calidad de los cuantificados de menor tamano. No se documentan datos sobre los tokens de entrenamiento, la composicion del dataset ni la aplicacion de tecnicas como RLHF o DPO.
 
 ## Capacidades
 

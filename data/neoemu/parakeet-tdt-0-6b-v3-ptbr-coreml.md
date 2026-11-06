@@ -87,7 +87,7 @@ El modelo supera en WER y RTFx a las alternativas comparadas en el corpus de eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neoemu/parakeet-tdt-0.6b-v3-ptBR-coreml
+- Modelo en Hugging Face: https://huggingface.co/neoemu/parakeet-tdt-0.6b-v3-ptBR-coreml
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Fine-tune pt-BR: https://huggingface.co/alexandreacff/parakeet-tdt-0.6b-v3-ptBR
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio

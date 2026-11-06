@@ -80,7 +80,7 @@ No hay comparativa directa con modelos de 7B cuantizados y afinados para RAG en 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Anoopsingh53/nexai-v1
+- Pagina del modelo en Hugging Face: https://huggingface.co/Anoopsingh53/nexai-v1
 - Directorio de archivos: https://huggingface.co/Anoopsingh53/nexai-v1/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se encontraron papers, blogs ni repositorios adicionales del autor en la busqueda web.

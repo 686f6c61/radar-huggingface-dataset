@@ -4,7 +4,7 @@
 
 SarahSav/arabert-openiti-1215 es un modelo de lenguaje basado en BERT, específicamente un fine-tuning del modelo `aubmindlab/bert-base-arabertv02` (AraBERT v2) sobre textos del Open Islamicate Texts Initiative (OpenITI), una colección digital de obras históricas y clásicas en árabe. El modelo está diseñado para procesar árabe clásico e histórico, un dominio lingüístico que difiere notablemente del árabe moderno en vocabulario, morfología y segmentación. Con 135 millones de parámetros, sigue la arquitectura encoder-only de BERT, lo que lo hace adecuado para tareas de comprensión del lenguaje, como enmascarado de tokens (fill-mask), clasificación de textos y extracción de representaciones contextuales.
 
-La relevancia de este modelo radica en su especialización: los corpus históricos presentan desafíos únicos, como variaciones ortográficas, ausencia de diacríticos y vocabulario arcaico, que los modelos entrenados en árabe moderno no capturan adecuadamente. Según la descripción en HuggingFace, el predecesor `arabert-openiti-911` heredó un desajuste de vocabulario al entrenarse sobre texto no segmentado con un vocabulario construido para árabe moderno segmentado; este nuevo modelo busca corregir esa deficiencia, aunque no se detallan los métodos específicos. El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de su descarga.
+La relevancia de este modelo radica en su especialización: los corpus históricos presentan desafíos únicos, como variaciones ortográficas, ausencia de diacríticos y vocabulario arcaico, que los modelos entrenados en árabe moderno no capturan adecuadamente. Según la descripción en Hugging Face, el predecesor `arabert-openiti-911` heredó un desajuste de vocabulario al entrenarse sobre texto no segmentado con un vocabulario construido para árabe moderno segmentado; este nuevo modelo busca corregir esa deficiencia, aunque no se detallan los métodos específicos. El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de su descarga.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Al ser un modelo BERT base con 135 millones de parámetros, su huella de memoria es reducida. En FP32, los pesos ocupan aproximadamente 540 MB, y en cuantización de 8 bits (si estuviera disponible) se reduciría a unos 135 MB.
 - Es ejecutable en GPUs de consumo como NVIDIA GTX 1060 (6 GB) o superiores, y también en CPU con razonable latencia para tareas de inferencia puntual.
 - Para fine-tuning en datasets pequeños, una GPU con 8-12 GB de VRAM es suficiente.
-- Opciones de despliegue: al ser un modelo de la familia BERT, es compatible con librerías como HuggingFace Transformers, ONNX Runtime, TensorFlow Serving y frameworks como vLLM (aunque estos últimos están más orientados a modelos generativos). También puede ejecutarse en entornos sin GPU mediante llama.cpp, aunque BERT no es el objetivo principal de esa librería.
+- Opciones de despliegue: al ser un modelo de la familia BERT, es compatible con librerías como Hugging Face Transformers, ONNX Runtime, TensorFlow Serving y frameworks como vLLM (aunque estos últimos están más orientados a modelos generativos). También puede ejecutarse en entornos sin GPU mediante llama.cpp, aunque BERT no es el objetivo principal de esa librería.
 - No se dispone de datos de latencia o throughput específicos para este modelo.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ Nota: los datos de CAMeL BERT son de conocimiento general, no de la información
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que los usuarios deben solicitar permiso y aceptar condiciones adicionales antes de su uso, lo que puede limitar su adopción en entornos corporativos.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que los usuarios deben solicitar permiso y aceptar condiciones adicionales antes de su uso, lo que puede limitar su adopción en entornos corporativos.
 - Especialización limitada: entrenado exclusivamente en árabe clásico e histórico, su rendimiento en árabe moderno o dialectal puede ser inferior al de modelos genéricos.
 - Longitud de contexto no confirmada: aunque BERT base típicamente soporta 512 tokens, este dato no está especificado en la ficha; para documentos largos se requeriría segmentación.
 - Vocabulario heredado: al partir de AraBERT v2, el vocabulario puede no cubrir adecuadamente términos arcaicos o variantes ortográficas poco frecuentes en árabe moderno, a pesar del intento de corrección.
@@ -77,6 +77,6 @@ Nota: los datos de CAMeL BERT son de conocimiento general, no de la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SarahSav/arabert-openiti-1215
+- Modelo en Hugging Face: https://huggingface.co/SarahSav/arabert-openiti-1215
 - Repositorio de AraBERT (modelo base): https://github.com/aub-mind/arabert
 - Open Islamicate Texts Initiative (OpenITI): https://github.com/OpenITI

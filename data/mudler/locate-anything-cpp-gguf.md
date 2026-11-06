@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos concretos (parametros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mudler/locate-anything.cpp-gguf
+- Modelo en Hugging Face: https://huggingface.co/mudler/locate-anything.cpp-gguf
 - Modelo base: https://huggingface.co/nvidia/LocateAnything-3B
 - Repositorio del motor: https://github.com/mudler/locate-anything.cpp
 - Benchmarks del repositorio: https://github.com/mudler/locate-anything.cpp/blob/master/benchmarks/BENCHMARK.md

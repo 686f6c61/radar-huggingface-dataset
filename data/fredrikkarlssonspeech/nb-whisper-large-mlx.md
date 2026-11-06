@@ -47,7 +47,7 @@ La conversión a MLX se realizó con el script `convert.py` de `mlx-examples`, t
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base `NbAiLab/nb-whisper-large` podría tener métricas en su página de HuggingFace, pero no se incluyen en los datos proporcionados. Se recomienda consultar la documentación del modelo original para obtener cifras de WER (Word Error Rate) u otras métricas.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo base `NbAiLab/nb-whisper-large` podría tener métricas en su página de Hugging Face, pero no se incluyen en los datos proporcionados. Se recomienda consultar la documentación del modelo original para obtener cifras de WER (Word Error Rate) u otras métricas.
 
 ## Requisitos de hardware
 
@@ -79,10 +79,10 @@ Nota: los datos de parámetros y contexto de los modelos base son estimaciones b
 
 ## Enlaces
 
-- [HuggingFace - FredrikKarlssonSpeech/nb-whisper-large-mlx](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-mlx)
-- [HuggingFace - NbAiLab/nb-whisper-large (modelo base)](https://huggingface.co/NbAiLab/nb-whisper-large)
+- [Hugging Face - FredrikKarlssonSpeech/nb-whisper-large-mlx](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-mlx)
+- [Hugging Face - NbAiLab/nb-whisper-large (modelo base)](https://huggingface.co/NbAiLab/nb-whisper-large)
 - [GitHub - NbAiLab/nb-whisper](https://github.com/NbAiLab/nb-whisper)
 - [GitHub - openai/whisper](https://github.com/openai/whisper)
-- [HuggingFace - FredrikKarlssonSpeech/nb-whisper-large-onnx (versión ONNX)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx)
+- [Hugging Face - FredrikKarlssonSpeech/nb-whisper-large-onnx (versión ONNX)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx)
 - [Inferix - nb-whisper-large](https://inferix.co/models/NbAiLab/nb-whisper-large)
 - [mlx-whisper (ejemplos de MLX)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)

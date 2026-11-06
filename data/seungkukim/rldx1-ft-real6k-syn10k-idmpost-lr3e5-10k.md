@@ -23,7 +23,7 @@ El checkpoint pesa 13,8 GB en safetensors e incluye 6.912.896.320 parametros (ap
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna en la informacion disponible. El modelo esta etiquetado como VLA (vision-language-action) y su pipeline declarado en HuggingFace es `robotics`, lo que indica un modelo que consume observaciones visuales y produce acciones motoras, presumiblemente con un componente de lenguaje. El tamano de 6.912.896.320 parametros y un repositorio de 13,8 GB son compatibles con pesos en precision de 16 bits, aunque este extremo no se confirma en la model card.
+No se detalla la arquitectura interna en la informacion disponible. El modelo esta etiquetado como VLA (vision-language-action) y su pipeline declarado en Hugging Face es `robotics`, lo que indica un modelo que consume observaciones visuales y produce acciones motoras, presumiblemente con un componente de lenguaje. El tamano de 6.912.896.320 parametros y un repositorio de 13,8 GB son compatibles con pesos en precision de 16 bits, aunque este extremo no se confirma en la model card.
 
 El entrenamiento tiene dos fases documentadas. La primera es el preentrenamiento del modelo base `rldx1-pt-real6k-syn10k-idmpost-60k`, con un scheduler WSD (warmup-stable-decay) de 60K pasos y decaimiento a partir del paso 45K, entrenado sobre una mezcla de datos reales ("real6k") y 10.000 clips sinteticos reetiquetados por un IDM ya post-entrenado. La segunda fase es el fine-tune que da lugar a este checkpoint: 10.000 de 20.000 pasos, batch size 256, learning rate 3e-5 con scheduler coseno, warmup del 5 por ciento y `sdrop` de 0,5, sobre 300 demostraciones del embodiment GR-1 Tabletop marcado como `NEW_EMBODIMENT`. El horizonte de accion es 16 y la longitud de video es 1.
 
@@ -89,7 +89,7 @@ No se proporcionan comparaciones numericas entre estos brazos ni frente a modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungkukim/rldx1-ft-real6k-syn10k-idmpost-lr3e5-10k
+- Modelo en Hugging Face: https://huggingface.co/seungkukim/rldx1-ft-real6k-syn10k-idmpost-lr3e5-10k
 - Modelo base de preentrenamiento: https://huggingface.co/seungkukim/rldx1-pt-real6k-syn10k-idmpost-60k
 - Brazo hermano, solo datos reales: https://huggingface.co/seungkukim/rldx1-ft-real6k-lr3e5-10k
 - Brazo hermano, sintetico sin filtrar: https://huggingface.co/seungkukim/rldx1-ft-real6k-syn10k-lr3e5-10k

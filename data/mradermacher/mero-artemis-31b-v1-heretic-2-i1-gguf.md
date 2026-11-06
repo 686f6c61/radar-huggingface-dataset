@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo base ni s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mero-Artemis-31B-v1-heretic-2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mero-Artemis-31B-v1-heretic-2-i1-GGUF
 - Modelo base: https://huggingface.co/sh0ck0r/Mero-Artemis-31B-v1-heretic-2

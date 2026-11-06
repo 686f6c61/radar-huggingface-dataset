@@ -67,5 +67,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/relic7/demo-space
+- Hugging Face: https://huggingface.co/relic7/demo-space
 - GitHub de relic7: https://github.com/relic7

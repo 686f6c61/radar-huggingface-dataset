@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/canary-1b-v2-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/canary-1b-v2-loom
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Runtime loom-py: https://github.com/loom-ai-org/loom-py

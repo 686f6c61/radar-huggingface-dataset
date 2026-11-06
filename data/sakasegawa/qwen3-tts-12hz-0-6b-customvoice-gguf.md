@@ -115,7 +115,7 @@ Velocidad (pesos Q8_0, frases en japones, despues de compilar los shaders):
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sakasegawa/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sakasegawa/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Variante de 1,7B en GGUF: https://huggingface.co/sakasegawa/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
 - Repositorio oficial Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS

@@ -73,7 +73,7 @@ Ambos modelos pertenecen a la misma familia OpenMed y comparten arquitectura Dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mLiteClinical-Base-135M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mLiteClinical-Base-135M-v1-mlx
 - Checkpoint base (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-mLiteClinical-Base-135M-v1
 - GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellsentry-team/cellsentry-model
+- Modelo en Hugging Face: https://huggingface.co/cellsentry-team/cellsentry-model
 - Model card historica (revision fija): https://huggingface.co/cellsentry-team/cellsentry-model/blob/f980626974cd1722ea516ef3caacf598d17a64b4/README.md
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B

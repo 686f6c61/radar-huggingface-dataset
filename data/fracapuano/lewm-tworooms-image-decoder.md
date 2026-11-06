@@ -85,7 +85,7 @@ No se dispone de información sobre decodificadores comparables en el ecosistema
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fracapuano/lewm-tworooms-image-decoder
+- Modelo en Hugging Face: https://huggingface.co/fracapuano/lewm-tworooms-image-decoder
 - Dataset TwoRooms: https://huggingface.co/datasets/fracapuano/lewm-tworooms
 - Dataset de embeddings: https://huggingface.co/datasets/fracapuano/tworooms-embeddings
 - Modelo base LeWM TwoRooms: https://huggingface.co/quentinll/lewm-tworooms

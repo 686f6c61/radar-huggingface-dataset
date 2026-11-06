@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/walston/joycent-medium-grl-add)
+- [Modelo en Hugging Face](https://huggingface.co/walston/joycent-medium-grl-add)
 - [Modelo de embeddings de acento WhisAID](https://huggingface.co/walston/whisaid-medium-grl)
 - [Vocoder Joycent](https://huggingface.co/walston/joycent-vocoder)

@@ -95,7 +95,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260911_213144
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260911_213144
 - Modelo base (adaptador): https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933
 - Perfil del autor: https://huggingface.co/xelsoft-ai-lab
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las URLs devueltas por el buscador no guardan relacion con el modelo (contenido de casino en aleman), por lo que se omiten. No hay paper, blog, repositorio ni demo asociados en la informacion disponible.

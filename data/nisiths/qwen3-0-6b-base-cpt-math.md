@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nisiths/Qwen3-0.6B-Base-CPT-Math es un modelo de generacion de texto de 596.049.920 parametros publicado en HuggingFace por el usuario nisiths, con 0 descargas y 0 likes en el momento de redactar esta ficha. El identificador del repositorio indica que se trata de una adaptacion de Qwen3-0.6B-Base sometida a preentrenamiento continuado (CPT, continued pre-training) sobre contenido matematico y, despues, a un ajuste supervisado (SFT); las etiquetas del repositorio (unsloth, trl, sft) son coherentes con ese segundo paso, pero la model card es la plantilla autogenerada de HuggingFace y no aporta ni un solo dato sobre datos de entrenamiento, hiperparametros, licencia o idiomas.
+nisiths/Qwen3-0.6B-Base-CPT-Math es un modelo de generacion de texto de 596.049.920 parametros publicado en Hugging Face por el usuario nisiths, con 0 descargas y 0 likes en el momento de redactar esta ficha. El identificador del repositorio indica que se trata de una adaptacion de Qwen3-0.6B-Base sometida a preentrenamiento continuado (CPT, continued pre-training) sobre contenido matematico y, despues, a un ajuste supervisado (SFT); las etiquetas del repositorio (unsloth, trl, sft) son coherentes con ese segundo paso, pero la model card es la plantilla autogenerada de Hugging Face y no aporta ni un solo dato sobre datos de entrenamiento, hiperparametros, licencia o idiomas.
 
 El recuento de parametros declarado en safetensors (596.049.920) coincide con la arquitectura de Qwen3-0.6B: 28 capas, dimension oculta 1024, 16 cabezas de consulta y 8 de clave/valor, FFN de 3072 y vocabulario de 151.936 tokens con embeddings atados. Esa coincidencia refuerza la hipotesis de derivacion de la familia Qwen3, aunque el repositorio no lo confirma de forma explicita.
 
@@ -31,7 +31,7 @@ Su relevancia practica esta en el nicho de los modelos sub-1B: puede ejecutarse 
 
 No hay informacion publicada sobre la arquitectura concreta de este checkpoint. Las etiquetas `qwen3` y el nombre del modelo apuntan a un transformer denso decoder-only derivado de Qwen3-0.6B, y el recuento exacto de parametros (596.049.920) encaja con la configuracion de dicho modelo base: 28 capas, d_model 1024, 16 cabezas de consulta, 8 cabezas de clave/valor, FFN de 3072 y vocabulario de 151.936 con embeddings atados, lo que suma aproximadamente 596M de parametros. Esta comprobacion es aritmetica, no una confirmacion del autor.
 
-Sobre el entrenamiento solo se puede inferir del nombre y de las etiquetas: un proceso de preentrenamiento continuado (CPT) sobre corpus matematico partiendo de un checkpoint base, seguido de un ajuste supervisado (SFT) realizado con Unsloth y TRL. Se desconoce por completo el volumen de tokens utilizados en cada fase, la composicion y procedencia del dataset, la longitud de secuencia de entrenamiento, el regimen de precision (fp16/bf16/fp8), la existencia de RLHF, DPO u otra fase de alineacion, y el hardware empleado. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica del calculo de emisiones de carbono (Lacoste et al., 2019) que HuggingFace inserta en la plantilla de model card, no a un articulo propio del modelo.
+Sobre el entrenamiento solo se puede inferir del nombre y de las etiquetas: un proceso de preentrenamiento continuado (CPT) sobre corpus matematico partiendo de un checkpoint base, seguido de un ajuste supervisado (SFT) realizado con Unsloth y TRL. Se desconoce por completo el volumen de tokens utilizados en cada fase, la composicion y procedencia del dataset, la longitud de secuencia de entrenamiento, el regimen de precision (fp16/bf16/fp8), la existencia de RLHF, DPO u otra fase de alineacion, y el hardware empleado. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica del calculo de emisiones de carbono (Lacoste et al., 2019) que Hugging Face inserta en la plantilla de model card, no a un articulo propio del modelo.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ Frente al checkpoint base de Qwen3-0.6B, este modelo no aporta informacion verif
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla autogenerada de HuggingFace. No hay descripcion, datos de entrenamiento, hiperparametros, evaluacion ni instrucciones de uso.
+- Model card vacia: es la plantilla autogenerada de Hugging Face. No hay descripcion, datos de entrenamiento, hiperparametros, evaluacion ni instrucciones de uso.
 - Licencia no declarada: al no especificarse licencia en el repositorio, no hay autorizacion explicita de uso comercial. Aunque el modelo base Qwen3 se distribuye bajo Apache 2.0, un derivado sin licencia deja la situacion juridica en el aire y es un riesgo directo para cualquier despliegue en produccion.
 - Sesgos desconocidos: al no documentarse la composicion del corpus de CPT ni los datos de SFT, no se puede evaluar el sesgo de genero, idioma, cultura o tematica.
 - Riesgo de alucinacion elevado: un modelo de 0,6B carece de la capacidad de un modelo grande para verificar hechos, y en dominios matematicos una alucinacion puede tomar la forma de un desarrollo formalmente plausible pero incorrecto.
@@ -101,7 +101,7 @@ Frente al checkpoint base de Qwen3-0.6B, este modelo no aporta informacion verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nisiths/Qwen3-0.6B-Base-CPT-Math
+- Modelo en Hugging Face: https://huggingface.co/nisiths/Qwen3-0.6B-Base-CPT-Math
 - Articulo citado en las etiquetas del repositorio (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base de referencia en la familia Qwen3: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Repositorio de Unsloth (etiqueta `unsloth`): https://github.com/unslothai/unsloth

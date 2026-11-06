@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SicoreAI/Qwen3.8-27B-NVFP4 | 27B | no disponible | NVFP4 | MIT | Solo TensorRT-Edge-LLM en Jetson Thor T5000 |
-| Qwen/Qwen3.8-27B | 27B | no disponible | Sin cuantizar (probable) | no disponible | Modelo base de HuggingFace |
+| Qwen/Qwen3.8-27B | 27B | no disponible | Sin cuantizar (probable) | no disponible | Modelo base de Hugging Face |
 | unsloth/Qwen3.8-27B-NVFP4 | 27B | no disponible | NVFP4 | no disponible | Modelo equivalente publicado por Unsloth |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos.

@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| con-cord/GRPO-baseline-sft-init-no-ref | 4,3 B | no disponible | Sí (imagen-texto) | no disponible | HuggingFace |
-| google/gemma-3-4b-it | 4 B | 128K (aprox.) | Sí | Gemma Terms of Use | HuggingFace |
-| microsoft/Phi-3-vision-128k-instruct | 4,2 B | 128K | Sí | MIT | HuggingFace |
-| Qwen/Qwen2.5-VL-3B-Instruct | 3,75 B | 32K | Sí | Apache 2.0 | HuggingFace |
+| con-cord/GRPO-baseline-sft-init-no-ref | 4,3 B | no disponible | Sí (imagen-texto) | no disponible | Hugging Face |
+| google/gemma-3-4b-it | 4 B | 128K (aprox.) | Sí | Gemma Terms of Use | Hugging Face |
+| microsoft/Phi-3-vision-128k-instruct | 4,2 B | 128K | Sí | MIT | Hugging Face |
+| Qwen/Qwen2.5-VL-3B-Instruct | 3,75 B | 32K | Sí | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona como un checkpoint experimental derivado de Gemma3, por lo que su comparación natural es con el modelo base Gemma3 4B. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas. Las alternativas listadas son modelos multimodales de tamaño similar, pero con documentación y benchmarks públicos.
 
@@ -77,7 +77,7 @@ El modelo se posiciona como un checkpoint experimental derivado de Gemma3, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/con-cord/GRPO-baseline-sft-init-no-ref
+- Modelo en Hugging Face: https://huggingface.co/con-cord/GRPO-baseline-sft-init-no-ref
 - Documentación de GRPO Trainer (TRL): https://huggingface.co/docs/trl/grpo_trainer
 - Repositorio de alineación con GRPO (HaoliangCheng/alignment_public): https://github.com/HaoliangCheng/alignment_public
 - Repositorio verl (HybridFlow): https://github.com/verl-project/verl

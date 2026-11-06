@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Precision / formato | Memoria en inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ouinche/moss-image-qwen3.5-te-mlx-q8g64 | ~7,94 B | no disponible (truncado a 4096 en pipeline) | 8 bits afina g64, safetensors MLX | ~10 GB | Apache 2.0 | HuggingFace, MLX |
-| OpenMOSS-Team/MOSS-Image-SFT (encoder BF16 original) | ~7,94 B (encoder) | no disponible | BF16, PyTorch | ~19 GB | Apache 2.0 | HuggingFace, PyTorch/Diffusers |
+| Ouinche/moss-image-qwen3.5-te-mlx-q8g64 | ~7,94 B | no disponible (truncado a 4096 en pipeline) | 8 bits afina g64, safetensors MLX | ~10 GB | Apache 2.0 | Hugging Face, MLX |
+| OpenMOSS-Team/MOSS-Image-SFT (encoder BF16 original) | ~7,94 B (encoder) | no disponible | BF16, PyTorch | ~19 GB | Apache 2.0 | Hugging Face, PyTorch/Diffusers |
 | Variante q4-g64 del mismo encoder (descartada por el autor) | ~7,94 B | no disponible | 4 bits afina g64 | no disponible | Apache 2.0 | no publicada como artefacto independiente |
 
 No se dispone en la informacion proporcionada de datos sobre otros encoders de texto cuantizados en MLX para pipelines de difusion (por ejemplo, alternativas basadas en T5 o en otros Qwen) que permitan una comparacion de rendimiento verificable. Cualquier comparacion con esos modelos quedaria fuera del alcance de esta ficha.
@@ -97,7 +97,7 @@ No se dispone en la informacion proporcionada de datos sobre otros encoders de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ouinche/moss-image-qwen3.5-te-mlx-q8g64
+- Repositorio Hugging Face: https://huggingface.co/Ouinche/moss-image-qwen3.5-te-mlx-q8g64
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de DiffusionBear: https://github.com/Ouinche/DiffusionBear
 - Ficheros citados en la model card (dentro del repositorio de DiffusionBear): `backend/moss_qwen35_mlx.py` (conversor selectivo a 8 bits) y `backend/moss_engine.py` (shim PyTorch-MLX)

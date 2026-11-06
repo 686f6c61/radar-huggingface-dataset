@@ -4,7 +4,7 @@
 
 Pico 1.3 Small es un modelo de lenguaje conversacional de 11.088 parámetros publicado por Convergent (Convergent-ch) bajo licencia Apache 2.0. No es un modelo destinado a producción: el propio autor lo describe como un experimento para medir cuánto puede aprender un modelo extremadamente pequeño y en qué punto deja de aprender. La respuesta a esa pregunta es contundente: el modelo alcanza su praktisch límite alrededor de los 5 minutos de entrenamiento y, a partir de ahí, la pérdida de validación apenas mejora 0,05 en los 30 minutos restantes.
 
-Arquitectónicamente es un decoder estilo Llama con solo 2 capas, dimensión oculta de 16, MLP de 40 y 2 cabezas de atención de dimensión 8, con contexto de 256 tokens y un vocabulario de 320 tokens (BPE a nivel de byte). El resultado es un artefacto de 33 KB en formato GGUF y 0,0 GB de repositorio en HuggingFace, entrenado durante unos 36 minutos en una única RTX 3060 Ti a aproximadamente 1 millón de tokens por segundo.
+Arquitectónicamente es un decoder estilo Llama con solo 2 capas, dimensión oculta de 16, MLP de 40 y 2 cabezas de atención de dimensión 8, con contexto de 256 tokens y un vocabulario de 320 tokens (BPE a nivel de byte). El resultado es un artefacto de 33 KB en formato GGUF y 0,0 GB de repositorio en Hugging Face, entrenado durante unos 36 minutos en una única RTX 3060 Ti a aproximadamente 1 millón de tokens por segundo.
 
 Su relevancia es divulgativa y metodológica, no funcional: sirve como caso extremo para estudiar dinámicas de entrenamiento, tokenizadores minimalistas,布 pipelines de inferencia y el efecto de sobrentrenar con ratios de 220.000 tokens por parámetro (frente a la regla habitual de 20). El autor advierte explícitamente de que no produce respuestas con sentido: emite palabras reales en inglés, fragmentos de frase y su propio nombre.
 
@@ -52,7 +52,7 @@ El entrenamiento se realizó sobre 96.591 conversaciones cortas (mensaje de usua
 - Test unitario de pipelines de inferencia: por su tamaño (33 KB en GGUF) permite verificar en segundos que un despliegue con Ollama, llama.cpp o transformers carga el modelo, aplica la plantilla de chat y devuelve tokens, sin consumir recursos de GPU.
 - Docencia sobre tokenización: el vocabulario de 320 entradas (256 bytes + 8 especiales + 56 merges) sirve para explicar en clase cómo un BPE a nivel de byte afecta a la longitud de secuencia y a las métricas de pérdida.
 - Estudio de dinámicas de entrenamiento y sobremuestreo: la curva publicada (pérdida de validación de 2,465 a 2,269 entre 0,5 y 36 minutos) es un ejemplo reproducible de saturación temprana y de ratio tokens/parámetro extremo.
-- Prueba de humo (smoke test) en CI/CD: incluir el modelo como fixture en tests de integración de servidores compatibles con la API de HuggingFace o de TGI, validando serialización, carga de safetensors y respuesta del endpoint.
+- Prueba de humo (smoke test) en CI/CD: incluir el modelo como fixture en tests de integración de servidores compatibles con la API de Hugging Face o de TGI, validando serialización, carga de safetensors y respuesta del endpoint.
 - Experimentos de edge computing y sistemas embebidos: con 11.088 parámetros y 33 KB, es viable ejecutarlo en CPU, Raspberry Pi o entornos con restricciones de memoria extremas para medir latencia del runtime en sí, no la calidad del modelo.
 - Demostración divulgativa sobre límites de escala: ilustrar ante una audiencia qué ocurre cuando se reduce un LLM varios órdenes de magnitud, usando los ejemplos de generación del propio autor como evidencia.
 - Referencia para investigación en compresión: punto de partida para comparar técnicas de cuantización o poda en un modelo donde el artefacto completo pesa menos que la mayoría de tokenizadores.
@@ -83,7 +83,7 @@ Ejemplos de generación codiciosa publicados por el autor:
 - VRAM estimada para inferencia: inferior a 1 MB en cualquier precisión; el artefacto GGUF completo ocupa 33 KB y el repositorio 0,0 GB. Cabe holgadamente en la memoria de cualquier GPU, iGPU o CPU.
 - GPU recomendadas: ninguna en particular; el entrenamiento se realizó en una RTX 3060 Ti. Cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) es sobredimensionada para la inferencia.
 - Cabe en GPU consumer y también en CPU: es viable en Raspberry Pi, routers, contenedores con límites de memoria de unos pocos MB e incluso en entornos embebidos.
-- Opciones de despliegue: Ollama (descargando `pico-1.3-small.gguf` y el `Modelfile`, y ejecutando `ollama create` / `ollama run`), llama.cpp con el GGUF, transformers con `AutoModelForCausalLM`, y servidores compatibles con text-generation-inference y endpoints de HuggingFace.
+- Opciones de despliegue: Ollama (descargando `pico-1.3-small.gguf` y el `Modelfile`, y ejecutando `ollama create` / `ollama run`), llama.cpp con el GGUF, transformers con `AutoModelForCausalLM`, y servidores compatibles con text-generation-inference y endpoints de Hugging Face.
 - Latencia y throughput: no se han publicado medidas de latencia de inferencia. El único dato conocido es el throughput de entrenamiento (~1 millón de tokens/s en una RTX 3060 Ti). Dado el tamaño, se espera que el tiempo por token esté dominado por la sobrecarga del runtime y no por el cómputo, pero es una estimación, no una medición publicada.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ La diferencia de escala es de tres a cinco órdenes de magnitud en número de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Pico-1.3-Small
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Pico-1.3-Small
 - Dataset TinyDialogues (MIT): https://huggingface.co/datasets/styfeng/TinyDialogues
 - Dataset Everyday Conversations (Apache 2.0): https://huggingface.co/datasets/HuggingFaceTB/everyday-conversations-llama3.1-2k
 - Dataset Smol-SmolTalk (Apache 2.0): https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

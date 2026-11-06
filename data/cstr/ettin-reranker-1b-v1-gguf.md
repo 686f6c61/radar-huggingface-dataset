@@ -85,7 +85,7 @@ No se dispone de más datos de comparación en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-1b-v1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-1b-v1-GGUF
 - Modelo original (safetensors): https://huggingface.co/cross-encoder/ettin-reranker-1b-v1
 - Blog de presentación de la familia Ettin Reranker: https://huggingface.co/blog/ettin-reranker
 - Repositorio CrispEmbed (herramienta de conversión): https://github.com/CrispStrobe/CrispEmbed

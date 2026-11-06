@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05-libero-goal-matched-discrete-lora-from-libero` es un checkpoint de ajuste fino mediante LoRA del modelo base pi0.5 de Physical Intelligence, orientado a control robótico en el entorno de simulación LIBERO Goal. Lo publica el usuario helenlu94 en HuggingFace bajo la librería `openpi`, con un tamaño de repositorio de 6,3 GB que incluye los pesos de inferencia (`params/`) y las estadísticas de normalización (`assets/`).
+`pi05-libero-goal-matched-discrete-lora-from-libero` es un checkpoint de ajuste fino mediante LoRA del modelo base pi0.5 de Physical Intelligence, orientado a control robótico en el entorno de simulación LIBERO Goal. Lo publica el usuario helenlu94 en Hugging Face bajo la librería `openpi`, con un tamaño de repositorio de 6,3 GB que incluye los pesos de inferencia (`params/`) y las estadísticas de normalización (`assets/`).
 
 El modelo resuelve una tarea muy concreta: ejecutar políticas visomotoras (visión-lenguaje-acción) sobre escenas del conjunto LIBERO Goal, con 11 tareas por escena y observaciones emparejadas. El checkpoint seleccionado corresponde al paso 22000, elegido por tasa de éxito en simulador (0,939) sobre escenas retenidas, no por la pérdida de validación mínima (que se alcanza en pasos posteriores).
 
@@ -105,7 +105,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/helenlu94/pi05-libero-goal-matched-discrete-lora-from-libero
+- Hugging Face: https://huggingface.co/helenlu94/pi05-libero-goal-matched-discrete-lora-from-libero
 - Dataset de entrenamiento: https://huggingface.co/datasets/helenlu94/libero_goal_matched_150_multi_pick_place_targets_lerobot_v21_lossless
 - Dataset de referencia LIBERO: https://huggingface.co/datasets/physical-intelligence/libero
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi

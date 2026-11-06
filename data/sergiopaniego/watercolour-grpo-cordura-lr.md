@@ -19,7 +19,7 @@ No se dispone de datos sobre licencia, idiomas soportados, benchmarks o casos de
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (en la model card aparece "license" sin especificar) |
-| Formato de pesos | safetensors (según etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No disponible. No se ha encontrado información sobre modelos comparables en el 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sergiopaniego/watercolour-grpo-cordura-lr)
+- [Modelo en Hugging Face](https://huggingface.co/sergiopaniego/watercolour-grpo-cordura-lr)
 - [Espacio Trackio de visualización](https://sergiopaniego-watercolour-grpo-cordura-lr.hf.space)
 - [Perfil de GitHub del autor](https://github.com/sergiopaniego)
 - [Sitio web personal del autor](https://sergiopaniego.github.io/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboEvalSolution es un repositorio publicado en HuggingFace por el usuario IliaLarchenko bajo licencia Apache 2.0. Por la información disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto asociado a RoboEval, un entorno de evaluación de agentes robóticos. La model card únicamente declara la licencia y no incluye descripción técnica, arquitectura ni datos de entrenamiento.
+RoboEvalSolution es un repositorio publicado en Hugging Face por el usuario IliaLarchenko bajo licencia Apache 2.0. Por la información disponible, no se trata de un modelo de lenguaje con pesos publicados, sino de un artefacto asociado a RoboEval, un entorno de evaluación de agentes robóticos. La model card únicamente declara la licencia y no incluye descripción técnica, arquitectura ni datos de entrenamiento.
 
 El repositorio no presenta pipeline declarado, no especifica idiomas soportados y registra cero descargas y cero likes en el momento de la consulta. Fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicación inicial sin iteraciones posteriores documentadas.
 
@@ -77,4 +77,4 @@ No se dispone de información suficiente para identificar modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IliaLarchenko/RoboEvalSolution
+- Repositorio en Hugging Face: https://huggingface.co/IliaLarchenko/RoboEvalSolution

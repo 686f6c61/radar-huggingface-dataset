@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChefServiceAI es un modelo publicado en HuggingFace por el usuario `zAlexzzzz` (ID `zAlexzzzz/ChefServiceAI`) que se presenta como un consultor de IA de caracter educativo para el sector de la restauracion. Su proposito declarado es asistir a camareros, anfitriones, bartenders, cocineros y jefes de turno en la resolucion de situaciones conflictivas: reclamaciones de clientes, esperas prolongadas y tensiones entre sala y cocina. La model card esta redactada integramente en ruso y define un algoritmo operativo propio denominado LAST (Listen, Apologize, Solve, Thank) junto con un formato de respuesta fijo.
+ChefServiceAI es un modelo publicado en Hugging Face por el usuario `zAlexzzzz` (ID `zAlexzzzz/ChefServiceAI`) que se presenta como un consultor de IA de caracter educativo para el sector de la restauracion. Su proposito declarado es asistir a camareros, anfitriones, bartenders, cocineros y jefes de turno en la resolucion de situaciones conflictivas: reclamaciones de clientes, esperas prolongadas y tensiones entre sala y cocina. La model card esta redactada integramente en ruso y define un algoritmo operativo propio denominado LAST (Listen, Apologize, Solve, Thank) junto con un formato de respuesta fijo.
 
 El repositorio no aporta informacion tecnica verificable: no se declara arquitectura, numero de parametros, longitud de contexto, licencia, idiomas soportados ni formato de pesos. El pipeline no esta especificado, y las metricas publicas del repositorio son cero descargas y cero "likes", por lo que no existe validacion por parte de la comunidad. Creado el 14 de septiembre de 2026 y actualizado ese mismo dia, el proyecto parece un experimento de publicacion mas que un artefacto mantenido.
 
@@ -84,5 +84,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zAlexzzzz/ChefServiceAI
+- Hugging Face: https://huggingface.co/zAlexzzzz/ChefServiceAI
 - No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados devueltos correspondian a temas sin relacion (plataforma de API Z.ai, Chef Robotics y conversaciones sobre WhatsApp en Zhihu), por lo que no se incluyen.

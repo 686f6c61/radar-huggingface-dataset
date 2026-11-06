@@ -33,7 +33,7 @@ La inferencia canónica emplea vLLM con temperatura 0 y un esquema de generació
 - Generación de salidas JSON restringidas, garantizando validez estructural (100 % en el corpus evaluado).
 - Soporte de inferencia con vLLM a temperatura 0 para resultados deterministas.
 - Integración con el ecosistema PEFT para carga del adaptador sobre el modelo base.
-- Capacidad de token-classification (pipeline de HuggingFace).
+- Capacidad de token-classification (pipeline de Hugging Face).
 - Multilingüe: no, específico para portugués.
 
 ## Casos de uso
@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123)
+- [Hugging Face: JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-cachacaner-seed123)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) (enlace inferido del campo `base_model`; no se proporciona URL directa en la documentación)

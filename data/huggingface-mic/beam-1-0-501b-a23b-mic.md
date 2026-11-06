@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beam-1.0-501B-A23B-mic es un artefacto de prueba publicado por el usuario `huggingface-mic` en HuggingFace. No se trata de un modelo funcional, sino de una version reducida (fixture) del checkpoint `reflection/Beam-1.0-501B-A23B`, generada para validar contratos de integracion con frameworks de inferencia. El propio autor lo etiqueta como `test-artifact` y advierte explicitamente de que no es un modelo usable.
+Beam-1.0-501B-A23B-mic es un artefacto de prueba publicado por el usuario `huggingface-mic` en Hugging Face. No se trata de un modelo funcional, sino de una version reducida (fixture) del checkpoint `reflection/Beam-1.0-501B-A23B`, generada para validar contratos de integracion con frameworks de inferencia. El propio autor lo etiqueta como `test-artifact` y advierte explicitamente de que no es un modelo usable.
 
 El repositorio contiene unicamente 19.572.148 parametros reales (19,6 M), una fraccion minima de los 501B y 23B activos que sugiere el nombre del modelo base. La arquitectura declarada es `BeamForCausalLM` con solo 3 capas ocultas, pesos aleatorios (semilla 17) y el mismo nombre de tensores que el checkpoint original, de modo que sirve como sustituto ligero en pruebas de integracion.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Beam-1.0-501B-A23B-mic | 19,6 M (fixture) | no disponible | Artefacto de prueba | no disponible | HuggingFace (0 descargas) |
-| reflection/Beam-1.0-501B-A23B | 501B totales / 23B activos (segun nombre) | no disponible | Modelo real | no disponible | HuggingFace (modelo base) |
-| Otros fixtures de transformers-mic | variable | no disponible | Artefactos de prueba | no disponible | HuggingFace (org `huggingface-mic`) |
+| Beam-1.0-501B-A23B-mic | 19,6 M (fixture) | no disponible | Artefacto de prueba | no disponible | Hugging Face (0 descargas) |
+| reflection/Beam-1.0-501B-A23B | 501B totales / 23B activos (segun nombre) | no disponible | Modelo real | no disponible | Hugging Face (modelo base) |
+| Otros fixtures de transformers-mic | variable | no disponible | Artefactos de prueba | no disponible | Hugging Face (org `huggingface-mic`) |
 
 No se dispone de informacion suficiente para comparar con modelos de produccion de la misma categoria; el fixture no es funcionalmente comparable a un modelo real.
 
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar con modelos de produccion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Beam-1.0-501B-A23B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Beam-1.0-501B-A23B-mic
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Manifiesto de contrato: `integration.json` (en el repositorio)
 - Uso con Transformers: `integrations/transformers/usage.md` (en el repositorio)

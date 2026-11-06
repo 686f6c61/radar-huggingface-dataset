@@ -88,7 +88,7 @@ La comparativa se limita a los datos publicados por el autor. No se dispone de r
 
 ## Enlaces
 
-- Modelo FP8 en HuggingFace: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-FP8
+- Modelo FP8 en Hugging Face: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B-FP8
 - Modelo base BF16: https://huggingface.co/horiuchinobuyuki/Qwick-3.5-9B
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Pagina de Qwen3.5-9B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.5-9B

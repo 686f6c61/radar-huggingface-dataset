@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 
 ## Comparativa con modelos similares
 
-- **OLMo-2-1B (base)**: modelo final de inferencia, disponible en HuggingFace, con pesos en safetensors. Este checkpoint es un estado de entrenamiento intermedio.
+- **OLMo-2-1B (base)**: modelo final de inferencia, disponible en Hugging Face, con pesos en safetensors. Este checkpoint es un estado de entrenamiento intermedio.
 - **OLMo-2-0425-1B-RLVR1**: variante post-entrenada con RLVR, también lista para inferencia. Este checkpoint es un estado de entrenamiento intermedio, no comparable directamente.
 - **OLMo-2-1B-DPO**: versión con DPO, también lista para inferencia. De nuevo, no es comparable directamente porque el checkpoint no es un modelo final.
 
@@ -67,7 +67,7 @@ La principal diferencia es que el modelo del repositorio no es un modelo de infe
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3859b
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-3859b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - OLMo-2-1B-RLVR1: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Página oficial de OLMo: https://allenai.org/olmo

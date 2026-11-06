@@ -2,7 +2,7 @@
 
 ## Resumen
 
-computer-10 es un modelo de lenguaje de aproximadamente 70.600 millones de parametros publicado por el usuario cosmicoptima en HuggingFace. Se trata de un ajuste fino completo (full-parameter) del modelo cosmicoptima/computer-9 sobre sus propias conversaciones: 25.197 turnos que superaron un filtro mecanico y una comprobacion logica, emparejados por longitud y sorpresa (surprisal) entre bins, con la funcion de perdida calculada unicamente sobre los turnos de "Model C". El entrenamiento fue de una sola epoca con learning rate 2e-6 y sin editar el texto en ningun momento, lo que lo situa dentro de la etiqueta self-distillation que declara el autor.
+computer-10 es un modelo de lenguaje de aproximadamente 70.600 millones de parametros publicado por el usuario cosmicoptima en Hugging Face. Se trata de un ajuste fino completo (full-parameter) del modelo cosmicoptima/computer-9 sobre sus propias conversaciones: 25.197 turnos que superaron un filtro mecanico y una comprobacion logica, emparejados por longitud y sorpresa (surprisal) entre bins, con la funcion de perdida calculada unicamente sobre los turnos de "Model C". El entrenamiento fue de una sola epoca con learning rate 2e-6 y sin editar el texto en ningun momento, lo que lo situa dentro de la etiqueta self-distillation que declara el autor.
 
 El modelo forma parte de la serie "Computer" del mismo autor, descrita en resultados de busqueda como un proyecto de "documento vivo" orientado a analisis estructurado y a una persona conversacional concreta, mas que a un chatbot de proposito general. La relevancia actual es fundamentalmente de investigacion: es un caso practico y reproducible de autodestilacion a gran escala sobre un modelo de ~70B, con un dataset pequeno y controlado, util para estudiar deriva de estilo, colapso de modo y efectos de filtrado por sorprisal en pipelines de destilacion.
 
@@ -77,7 +77,7 @@ Los datos de los modelos de referencia corresponden a informacion publica de sus
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| cosmicoptima/computer-10 | 70,6B | No disponible | llama3.1 | safetensors bf16 en HuggingFace | Sin benchmarks |
+| cosmicoptima/computer-10 | 70,6B | No disponible | llama3.1 | safetensors bf16 en Hugging Face | Sin benchmarks |
 | Meta Llama 3.1 70B Instruct | ~70,6B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF, integraciones amplias | Amplia bateria de benchmarks publicada |
 | Qwen2.5 72B Instruct | ~72,7B | 128.000 tokens (hasta 131.072) | Licencia Qwen | safetensors, GGUF, AWQ/GPTQ | Amplia bateria de benchmarks publicada |
 | cosmicoptima/computer-9 | No disponible en la informacion proporcionada | No disponible | llama3.1 (segun linaje declarado) | safetensors | Sin benchmarks |
@@ -99,9 +99,9 @@ La comparacion es asimetrica: computer-10 es un artefacto de investigacion sin e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cosmicoptima/computer-10
+- Modelo en Hugging Face: https://huggingface.co/cosmicoptima/computer-10
 - Modelo base: https://huggingface.co/cosmicoptima/computer-9
 - Despliegue gestionado en Featherless AI: https://featherless.ai/models/cosmicoptima/computer-10
 - Perfil del autor en GitHub: https://github.com/cosmicoptima
-- Busqueda de la serie Computer en HuggingFace: https://huggingface.co/models?search=cosmicoptima%2Fcomputer-2
+- Busqueda de la serie Computer en Hugging Face: https://huggingface.co/models?search=cosmicoptima%2Fcomputer-2
 - Ejemplo de la serie (computer-1) en Featherless AI: https://featherless.ai/models/cosmicoptima/computer-1

@@ -4,7 +4,7 @@
 
 OmniKimi-504M es un modelo de fundación multimodal "any-to-any" de 504 millones de parámetros que combina una arquitectura híbrida de Mamba-2 State Space Duality (SSD) con Sparse Mixture-of-Experts (MoE) y un módulo de fusión por atención cruzada. Ha sido desarrollado por Prannesshkva, un estudiante de ingeniería de IA, como propuesta de diseño para lograr inferencia sub-cuadrática en tareas multimodales (texto, visión y audio) mediante la compresión de entradas en 32 tokens latentes.
 
-El modelo destaca por su enfoque de eficiencia: solo unos 245 millones de parámetros se activan por token gracias al routing MoE top-2 sobre 8 expertos, y la recurrencia lineal de Mamba-2 evita el coste cuadrático de la atención tradicional. Sin embargo, el repositorio de HuggingFace tiene un tamaño de 0.0 GB y cero descargas, lo que indica que no se han publicado pesos entrenados; solo existe la documentación de la arquitectura y código de ejemplo. Su relevancia actual es principalmente conceptual, como demostración de una arquitectura híbrida multimodal compacta, no como un modelo utilizable en producción.
+El modelo destaca por su enfoque de eficiencia: solo unos 245 millones de parámetros se activan por token gracias al routing MoE top-2 sobre 8 expertos, y la recurrencia lineal de Mamba-2 evita el coste cuadrático de la atención tradicional. Sin embargo, el repositorio de Hugging Face tiene un tamaño de 0.0 GB y cero descargas, lo que indica que no se han publicado pesos entrenados; solo existe la documentación de la arquitectura y código de ejemplo. Su relevancia actual es principalmente conceptual, como demostración de una arquitectura híbrida multimodal compacta, no como un modelo utilizable en producción.
 
 La ventana de contexto es de 2.048 tokens, modesta para los estándares actuales, y la licencia es Apache 2.0, lo que permite uso comercial con atribución. No se dispone de información sobre el proceso de entrenamiento, los datos utilizados ni resultados de benchmarks, por lo que cualquier afirmación sobre capacidades reales debe tomarse con cautela.
 
@@ -25,7 +25,7 @@ La ventana de contexto es de 2.048 tokens, modesta para los estándares actuales
 
 La arquitectura de OmniKimi-504M se compone de tres módulos principales. El primero es un "AnyToAnyFusionHub" que comprime entradas multimodales (texto, imágenes, audio) en 32 tokens latentes mediante atención cruzada, manteniendo constante la latencia del backbone independientemente de la longitud de la entrada multimodal. El segundo es un backbone intercalado de 24 capas: 4 capas de Mamba-2 SSD (State Space Duality) que proporcionan recurrencia lineal sub-cuadrática para capturar dependencias de largo alcance, y 20 bloques que combinan atención estándar (16 cabezas, dimensión 64, con RoPE) con bloques MoE de 8 expertos (top-2) que utilizan routing por similitud coseno con balanceo de carga auxiliar para evitar el colapso de expertos. El tercer módulo son decodificadores separados: una cabeza causal para texto y una red U-Net con "skip recovery" para reconstrucción de señales multimodales.
 
-También se menciona un "Rolling FIFO Attention Cache" que mantiene un búfer de atención con límite de memoria estricto para evitar errores de memoria fuera de rango durante la generación de contexto largo. En cuanto al entrenamiento, no se ha publicado ninguna información: no se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El repositorio de HuggingFace no contiene pesos, por lo que no hay evidencia de que el modelo haya sido entrenado realmente.
+También se menciona un "Rolling FIFO Attention Cache" que mantiene un búfer de atención con límite de memoria estricto para evitar errores de memoria fuera de rango durante la generación de contexto largo. En cuanto al entrenamiento, no se ha publicado ninguna información: no se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. El repositorio de Hugging Face no contiene pesos, por lo que no hay evidencia de que el modelo haya sido entrenado realmente.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Dado que no se han publicado pesos entrenados, los casos de uso son hipotéticos
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar, ni comparaciones con modelos similares. El repositorio de HuggingFace no contiene pesos, por lo que es imposible verificar rendimiento alguno.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar, ni comparaciones con modelos similares. El repositorio de Hugging Face no contiene pesos, por lo que es imposible verificar rendimiento alguno.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se dispone de comparativas publicadas. Como referencia, se podrían citar mod
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo. Solo hay documentación y código de ejemplo, no un modelo funcional.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo. Solo hay documentación y código de ejemplo, no un modelo funcional.
 - No hay información sobre el proceso de entrenamiento: ni datos, ni tokens, ni metodología. No se puede verificar que el modelo haya sido entrenado.
 - No se han publicado resultados de benchmarks ni evaluaciones de calidad.
 - El contexto de 2.048 tokens es limitado para aplicaciones que requieran documentos largos o conversaciones extensas.
@@ -77,6 +77,6 @@ No se dispone de comparativas publicadas. Como referencia, se podrían citar mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prannesshkva/omnikimi-development-suite
+- Hugging Face: https://huggingface.co/Prannesshkva/omnikimi-development-suite
 - GitHub del autor: https://github.com/prannesshkva
 - Web personal del autor: https://prannesshkva.vercel.app/

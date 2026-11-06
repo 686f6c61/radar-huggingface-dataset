@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `3bdullaa/neib-qwen3-10ep` es un repositorio publicado en HuggingFace por el usuario `3bdullaa`. La model card disponible es una plantilla generada automáticamente por la plataforma, sin contenido descriptivo específico. El nombre del repositorio sugiere un posible ajuste fino (fine-tuning) de un modelo de la familia Qwen3, aunque no hay confirmación oficial en la información proporcionada. El tamaño total del repositorio es de 0.2 GB, lo que indica que se trata de un modelo de dimensiones reducidas. No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados, licencia ni rendimiento. Por tanto, esta ficha se limita a reflejar los datos disponibles de forma transparente, sin especulaciones.
+El modelo `3bdullaa/neib-qwen3-10ep` es un repositorio publicado en Hugging Face por el usuario `3bdullaa`. La model card disponible es una plantilla generada automáticamente por la plataforma, sin contenido descriptivo específico. El nombre del repositorio sugiere un posible ajuste fino (fine-tuning) de un modelo de la familia Qwen3, aunque no hay confirmación oficial en la información proporcionada. El tamaño total del repositorio es de 0.2 GB, lo que indica que se trata de un modelo de dimensiones reducidas. No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados, licencia ni rendimiento. Por tanto, esta ficha se limita a reflejar los datos disponibles de forma transparente, sin especulaciones.
 
 ## Especificaciones técnicas
 
@@ -54,4 +54,4 @@ No disponible. No se dispone de información sobre parámetros, rendimiento o ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3bdullaa/neib-qwen3-10ep
+- Hugging Face: https://huggingface.co/3bdullaa/neib-qwen3-10ep

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bigbooob/asdxxxxxxxxxx` es un adaptador LoRA basado en el modelo de difusión FLUX.1-dev de Black Forest Labs, publicado en HuggingFace por el usuario `bigbooob`. Está diseñado para la tarea de text-to-image, es decir, generar imágenes a partir de descripciones textuales. La información disponible en la ficha del modelo es extremadamente limitada: no se especifican licencia, idiomas, ni detalles de entrenamiento. El repositorio tiene un tamaño de 17 GB, lo que sugiere que podría incluir pesos completos o un conjunto de adaptadores, aunque la etiqueta `lora` indica que se trata de un ajuste fino de bajo rango sobre el modelo base.
+El modelo `bigbooob/asdxxxxxxxxxx` es un adaptador LoRA basado en el modelo de difusión FLUX.1-dev de Black Forest Labs, publicado en Hugging Face por el usuario `bigbooob`. Está diseñado para la tarea de text-to-image, es decir, generar imágenes a partir de descripciones textuales. La información disponible en la ficha del modelo es extremadamente limitada: no se especifican licencia, idiomas, ni detalles de entrenamiento. El repositorio tiene un tamaño de 17 GB, lo que sugiere que podría incluir pesos completos o un conjunto de adaptadores, aunque la etiqueta `lora` indica que se trata de un ajuste fino de bajo rango sobre el modelo base.
 
 La relevancia de este modelo radica en su integración con el ecosistema de FLUX.1-dev, uno de los modelos de difusión de código abierto más avanzados en 2024-2025. Sin embargo, la ausencia de documentación técnica y de ejemplos de uso limita su aplicabilidad práctica. No se dispone de información sobre el tipo de imágenes que genera, el prompt de instancia ni los datos de entrenamiento, por lo que cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -27,7 +27,7 @@ El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre FLUX.1-
 
 - Generación de imágenes a partir de texto (text-to-image) mediante el pipeline de diffusers.
 - Adaptación de estilo o dominio específico gracias al ajuste LoRA sobre FLUX.1-dev.
-- Integración con el ecosistema de HuggingFace (diffusers, safetensors).
+- Integración con el ecosistema de Hugging Face (diffusers, safetensors).
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte de audio/video.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este adaptador con otros LoRAs de FLUX.1-dev. No hay datos de rendimiento, ni de especialización, ni de calidad de generación. Se recomienda consultar el Hub de HuggingFace para encontrar adaptadores alternativos con documentación más completa.
+No se dispone de información suficiente para comparar este adaptador con otros LoRAs de FLUX.1-dev. No hay datos de rendimiento, ni de especialización, ni de calidad de generación. Se recomienda consultar el Hub de Hugging Face para encontrar adaptadores alternativos con documentación más completa.
 
 ## Limitaciones y advertencias
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bigbooob/asdxxxxxxxxxx
+- Repositorio en Hugging Face: https://huggingface.co/bigbooob/asdxxxxxxxxxx
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev

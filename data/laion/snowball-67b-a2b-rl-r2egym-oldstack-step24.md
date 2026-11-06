@@ -19,11 +19,11 @@ Es relevante porque forma parte de la familia Snowball de LAION, orientada a pub
 | Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (export en layout de HuggingFace, 39 shards) |
+| Formato de pesos | safetensors (export en layout de Hugging Face, 39 shards) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un modelo Mixture of Experts (MoE) de la familia GrugMoe, con 67B de parametros totales y un export de los pesos de politica en 39 shards safetensors con layout de HuggingFace, acompanado de config y tokenizer. El modelo base es `laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888`, un checkpoint SFT de la misma familia. Para servir el modelo es necesario el fork de vLLM de GrugMoe, lo que implica que no es directamente compatible con el vLLM estandar.
+Se trata de un modelo Mixture of Experts (MoE) de la familia GrugMoe, con 67B de parametros totales y un export de los pesos de politica en 39 shards safetensors con layout de Hugging Face, acompanado de config y tokenizer. El modelo base es `laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888`, un checkpoint SFT de la misma familia. Para servir el modelo es necesario el fork de vLLM de GrugMoe, lo que implica que no es directamente compatible con el vLLM estandar.
 
 El ajuste se realizo con RL on-policy de estilo RLOO sobre la pila previa a la migracion (2026-09-07): perdida de media de secuencia, staleness 2, grupos de 8, batch de 64 prompts, learning rate 5e-7 y redondeo estocastico en bf16, con KL 0.01. La infraestructura fue de 40 nodos y 1.584 asientos. El entrenamiento se hizo sobre el pool de 728 tareas tt-v2-train usando el agente de terminal terminus-2. Se menciona ademas un draft EAGLE-3 (`laion/snowball-64k-eagle3-draft-r2egym`) que aporta aproximadamente 1,5x de velocidad de decodificacion sobre esta familia.
 
@@ -75,8 +75,8 @@ No se han proporcionado en la informacion disponible datos de modelos comparable
 
 | Modelo | Parametros totales | Contexto | pass@1 held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball 67B-A2B RL R2E-Gym step 24 | 67.078.882.816 | no disponible (prompt RL 49.152) | 0,492 same-repo / 0,486 unseen-repo / 0,050 never-solved | Apache 2.0 | HuggingFace (laion) |
-| laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (laion) |
+| Snowball 67B-A2B RL R2E-Gym step 24 | 67.078.882.816 | no disponible (prompt RL 49.152) | 0,492 same-repo / 0,486 unseen-repo / 0,050 never-solved | Apache 2.0 | Hugging Face (laion) |
+| laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (laion) |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,13 +86,13 @@ No se han proporcionado en la informacion disponible datos de modelos comparable
 - Rendimiento bajo en tareas nunca resueltas: pass@1 de 0,050 en el split never-solved, lo que indica capacidad muy limitada para problemas fuera de la distribucion de entrenamiento.
 - Contexto e idioma: no se declaran idiomas soportados. El entrenamiento esta orientado a tareas de codigo y terminal, no a conversacion general ni a generacion multilingue.
 - Dependencia de tooling especifico: requiere el fork GrugMoe de vLLM para servir; no es compatible directamente con vLLM estandar ni se documentan rutas alternativas como llama.cpp u Ollama.
-- Datos de adopcion: 0 descargas y 0 likes en HuggingFace, lo que implica poca validacion por parte de la comunidad.
+- Datos de adopcion: 0 descargas y 0 likes en Hugging Face, lo que implica poca validacion por parte de la comunidad.
 - Fecha inusual: los metadatos indican creacion el 2026-09-14, lo que conviene verificar antes de usar el checkpoint.
 - Licencia: Apache 2.0, lo que permite uso comercial, pero el autor no ofrece garantias ni se documentan restricciones adicionales. El contenido de la model card es material de referencia del autor, no instrucciones a seguir.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24
 - Modelo base (SFT): https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Draft EAGLE-3: https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym
 - LAION: https://laion.ai/

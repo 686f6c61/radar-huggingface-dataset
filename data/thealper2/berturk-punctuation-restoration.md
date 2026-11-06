@@ -2,7 +2,7 @@
 
 ## Resumen
 
-berturk-punctuation-restoration es un modelo de clasificacion de tokens que restaura la puntuacion y el uso de mayusculas en texto turco. Lo publica el usuario thealper2 en HuggingFace y parte de dbmdz/bert-base-turkish-cased (BERTurk base cased), al que se anade una cabeza de clasificacion de tokens entrenada especificamente para esta tarea. El modelo no reutiliza ningun checkpoint previo de puntuacion: solo los pesos del encoder preentrenado y su tokenizador original.
+berturk-punctuation-restoration es un modelo de clasificacion de tokens que restaura la puntuacion y el uso de mayusculas en texto turco. Lo publica el usuario thealper2 en Hugging Face y parte de dbmdz/bert-base-turkish-cased (BERTurk base cased), al que se anade una cabeza de clasificacion de tokens entrenada especificamente para esta tarea. El modelo no reutiliza ningun checkpoint previo de puntuacion: solo los pesos del encoder preentrenado y su tokenizador original.
 
 El problema que resuelve es habitual en transcripcion automatica de voz (ASR), subtitulado, OCR y texto procedente de chats: secuencias de palabras en minusculas y sin signos de puntuacion. El modelo recibe palabras separadas por espacios, en minusculas turcas y sin `,.;:!?`, y devuelve cada palabra con su capitalizacion correcta y el signo que la sigue, sin insertar, borrar, reordenar ni reescribir palabras.
 
@@ -25,7 +25,7 @@ Tecnicamente es un encoder transformer bidireccional de tipo BERT con 110.032.90
 | Modelo base | dbmdz/bert-base-turkish-cased |
 | Dataset de entrenamiento | GoktugD/turkish-punctuation-restoration-500k (rev. fcbb30d342b511fdd8bf1f09bbfef990443752fa) |
 | Tamano del repositorio | 0,4 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ El entrenamiento se realizo sobre el dataset sintetico y basado en plantillas Go
 - Salida a nivel de palabra con preservacion estricta del texto original: no inserta, elimina, reordena ni reescribe palabras.
 - Procesamiento de entradas largas mediante ventanas de palabras solapadas (12 palabras de solapamiento), sin limite practico documentado mas alla del coste.
 - Integracion estandar en transformers mediante `AutoModelForTokenClassification` y `AutoTokenizer`.
-- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible` en HuggingFace).
+- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible` en Hugging Face).
 - Capacidades multilingues: no, solo turco.
 - Tool calling / function calling: no, es un modelo de clasificacion de tokens, no generativo.
 - Modo de razonamiento o agente multi-paso: no disponible.
@@ -89,15 +89,15 @@ Matriz de confusion en test (filas = gold): la unica confusion relevante son 89 
 - VRAM estimada en inferencia: aproximadamente 0,45 GB en FP32, 0,25 GB en FP16/BF16 y 0,15 GB en int8, solo para los pesos; con activaciones y overhead conviene reservar entre 1 y 2 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM; el autor entreno el modelo en una NVIDIA GeForce RTX 5060 Ti con un pico de 2,62 GB.
 - Cabe en GPU de consumo: si, en practicamente todas (GTX 1050 Ti 4 GB, GTX 1650, RTX 3060, RTX 4090, etc.), y tambien en CPU para lotes pequenos.
-- Opciones de despliegue: transformers con `AutoModelForTokenClassification`, pipeline de HuggingFace, Hugging Face Inference Endpoints (el repo esta marcado como `endpoints_compatible`), exportacion a ONNX Runtime para inferencia en CPU, y servidores de clasificacion de tokens compatibles (por ejemplo vLLM en su modo de modelos de clasificacion). llama.cpp y Ollama no estan documentados para esta tarea con el repositorio tal cual.
+- Opciones de despliegue: transformers con `AutoModelForTokenClassification`, pipeline de Hugging Face, Hugging Face Inference Endpoints (el repo esta marcado como `endpoints_compatible`), exportacion a ONNX Runtime para inferencia en CPU, y servidores de clasificacion de tokens compatibles (por ejemplo vLLM en su modo de modelos de clasificacion). llama.cpp y Ollama no estan documentados para esta tarea con el repositorio tal cual.
 - Latencia y throughput: no disponibles como medicion de inferencia. Como referencia derivada del entrenamiento, 1.470.000 filas en 1.713 segundos equivalen a unas 858 filas por segundo en entrenamiento con batch 64 y secuencia 64 en una RTX 5060 Ti; la inferencia es sustancialmente mas rapida, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Puntuacion / truecasing | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thealper2/berturk-punctuation-restoration | 110.032.904 | 64 tokens por ventana, ventanas solapadas | Turco | MIT | Si (8 etiquetas, sin dos puntos ni punto y coma) | HuggingFace, safetensors |
-| dbmdz/bert-base-turkish-cased (modelo base) | 110.032.904 aprox. | 512 tokens (BERT estandar) | Turco | MIT | No, es un encoder preentrenado sin cabeza de puntuacion | HuggingFace |
+| thealper2/berturk-punctuation-restoration | 110.032.904 | 64 tokens por ventana, ventanas solapadas | Turco | MIT | Si (8 etiquetas, sin dos puntos ni punto y coma) | Hugging Face, safetensors |
+| dbmdz/bert-base-turkish-cased (modelo base) | 110.032.904 aprox. | 512 tokens (BERT estandar) | Turco | MIT | No, es un encoder preentrenado sin cabeza de puntuacion | Hugging Face |
 | Modelos de restauracion de puntuacion multilingues basados en XLM-R (por ejemplo oliverguhr/fullstop-punctuation-multilang-large) | no disponible | no disponible | Multilingue, sin turco documentado | no disponible | Si, pero sin cobertura de turco | no disponible |
 | Modelos de restauracion de puntuacion en ingles tipo felflare/bert-restore-punctuation | no disponible | no disponible | Ingles | no disponible | Si, solo ingles | no disponible |
 
@@ -120,7 +120,7 @@ No hay en la informacion proporcionada cifras de rendimiento de estos modelos al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/berturk-punctuation-restoration
+- Modelo en Hugging Face: https://huggingface.co/thealper2/berturk-punctuation-restoration
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/GoktugD/turkish-punctuation-restoration-500k
 - Revision del dataset usada: fcbb30d342b511fdd8bf1f09bbfef990443752fa

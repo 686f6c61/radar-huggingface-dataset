@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en el mismo dominio (pre
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/shubhxho/cmf-2
+- Repositorio de Hugging Face: https://huggingface.co/shubhxho/cmf-2
 - Código fuente (GitHub): https://github.com/shubhxho/polymarket-model
 - Página del proyecto (card): https://shubhxho.github.io/polymarket-model/
 - Dataset de entrenamiento (Binance 15m): https://huggingface.co/datasets/shubhxho/cmf-15m-binance

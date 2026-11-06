@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de terce
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/nibor1896/Qwen3.8-Flash-Next-CNQ4.5-M
+- Repositorio del modelo en Hugging Face: https://huggingface.co/nibor1896/Qwen3.8-Flash-Next-CNQ4.5-M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Motor y conversor crow-nest: https://github.com/nibor1896/crow-nest
 - Fichero de licencia incluido en el paquete: `LICENSE` (Qwen Community License 1.0, copia literal de la revision upstream)

@@ -87,7 +87,7 @@ La principal diferencia es la eliminación del alineamiento de seguridad en la v
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/brindusa/Ternary-Bonsai-27B-heretic-ja-GGUF
+- Repositorio Hugging Face de esta versión: https://huggingface.co/brindusa/Ternary-Bonsai-27B-heretic-ja-GGUF
 - Repositorio alternativo de OS-Software: https://huggingface.co/OS-Software/Ternary-Bonsai-27B-heretic-ja-GGUF
 - Modelo base original: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-unpacked
 - Versión MLX 2-bit optimizada: https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit

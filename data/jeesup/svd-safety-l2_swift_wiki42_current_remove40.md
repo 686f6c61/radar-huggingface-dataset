@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_swift_wiki42_current_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Llama-2-7b-chat-hf` mediante compresión Swift-SVD con un objetivo de eliminación del 40 % de parámetros. El modelo forma parte de un estudio sobre la relación entre compresión por descomposición en valores singulares (SVD) y el comportamiento en seguridad: mide cómo la compresión afecta tanto a la utilidad (perplejidad, tareas zero-shot) como a la seguridad (tasa de ataque en AdvBench y StrongREJECT, sobre-rechazo en XSTest y OR-Bench).
+`svd-safety-l2_swift_wiki42_current_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Llama-2-7b-chat-hf` mediante compresión Swift-SVD con un objetivo de eliminación del 40 % de parámetros. El modelo forma parte de un estudio sobre la relación entre compresión por descomposición en valores singulares (SVD) y el comportamiento en seguridad: mide cómo la compresión afecta tanto a la utilidad (perplejidad, tareas zero-shot) como a la seguridad (tasa de ataque en AdvBench y StrongREJECT, sobre-rechazo en XSTest y OR-Bench).
 
 Técnicamente, el modelo aplica la recuperación SVD-LLM (LoRA secuencial sobre los factores U y V) con datos Alpaca-cleaned, y la calibración se realiza únicamente con 256 secuencias de WikiText de 2048 tokens (seed 42). Un detalle importante: el checkpoint se pliega a pesos densos estándar de Transformers, de modo que la descarga mantiene el tamaño completo (~13,5 GB, 6,74 mil millones de parámetros reales); la ratio de compresión describe el presupuesto de parámetros factorizados, no una reducción del tamaño del fichero. Con 258 descargas y sin likes, es un artefacto de nicho dirigido a investigadores en compresión y seguridad de LLMs, no a usuarios finales.
 
@@ -69,7 +69,7 @@ Condiciones de evaluacion: perplejidad completa en WikiText-2; siete tareas zero
 
 | Modelo | Parametros | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| svd-safety-l2_swift_wiki42_current_remove40 | 6,74B (denso plegado) | Swift-SVD, 40 % eliminacion | Llama 2 | Pesos publicos en HuggingFace |
+| svd-safety-l2_swift_wiki42_current_remove40 | 6,74B (denso plegado) | Swift-SVD, 40 % eliminacion | Llama 2 | Pesos publicos en Hugging Face |
 | meta-llama/Llama-2-7b-chat-hf (base) | 6,74B | Sin comprimir | Llama 2 | Pesos publicos, requiere aceptar licencia |
 | SVD-LLM (metodo de referencia) | Variable segun ratio | SVD + recovery LoRA | no disponible | Codigo y checkpoints de investigacion |
 
@@ -88,6 +88,6 @@ No hay datos de rendimiento comparativo publicados en la informacion disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_wiki42_current_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_wiki42_current_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

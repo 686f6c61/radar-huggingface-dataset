@@ -5,7 +5,7 @@ MiMo-V2.6-Pro-RL es el checkpoint insignia de la serie MiMo-V2.6, desarrollada p
 
 El modelo se centra en el escalado del aprendizaje por refuerzo (RL) orientado a la auto-mejora: segun la model card, combina un unico entrenamiento RL mixto sobre tareas de codigo, agentes generales, vision y ciberseguridad, con tecnicas propias como Groupwise Reward Synthesis (GRS), Groupwise Advantage Redistribution (GAR) y Multi-Prefix Multi-Teacher On-Policy Distillation (MOPD2). El objetivo declarado es que el modelo mejore a partir de la exploracion y la retroalimentacion en entornos diversos, con un enfoque de "You Only RL Once".
 
-Es relevante ahora porque apunta a un modelo abierto (licencia MIT) de escala frontier con capacidades agenticas de horizonte largo, contexto de 1M tokens y soporte omnimodal, lo que lo situa en la misma categoria de uso que modelos propietarios de primera linea. El repositorio de HuggingFace consultado (Muggle2026/MiMo-V2.6-Pro-RL) es un espejo comunitario del checkpoint oficial de Xiaomi; el peso del repo es de 573,5 GB.
+Es relevante ahora porque apunta a un modelo abierto (licencia MIT) de escala frontier con capacidades agenticas de horizonte largo, contexto de 1M tokens y soporte omnimodal, lo que lo situa en la misma categoria de uso que modelos propietarios de primera linea. El repositorio de Hugging Face consultado (Muggle2026/MiMo-V2.6-Pro-RL) es un espejo comunitario del checkpoint oficial de Xiaomi; el peso del repo es de 573,5 GB.
 
 ## Especificaciones tecnicas
 
@@ -83,8 +83,8 @@ La model card consultada se interrumpe en la seccion de ciberseguridad (CyberGym
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02 T totales / 42B activos | 1M | MIT | HuggingFace, ModelScope | Multimodal nativo, agentico |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | HuggingFace, ModelScope | Variante ligera de la misma serie |
+| MiMo-V2.6-Pro-RL | 1,02 T totales / 42B activos | 1M | MIT | Hugging Face, ModelScope | Multimodal nativo, agentico |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | Hugging Face, ModelScope | Variante ligera de la misma serie |
 | Claude Opus 5 | no disponible | no disponible | propietaria | API | Referencia en benchmarks de agente |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | API | Referencia en benchmarks de agente |
 
@@ -100,7 +100,7 @@ Los datos de parametros y contexto de los modelos propietarios no estan disponib
 - Datos incompletos: la model card esta truncada y faltan resultados de ciberseguridad y de benchmarks clasicos; no se detalla la composicion del dataset de entrenamiento.
 
 ## Enlaces
-- Repositorio HuggingFace consultado: https://huggingface.co/Muggle2026/MiMo-V2.6-Pro-RL
+- Repositorio Hugging Face consultado: https://huggingface.co/Muggle2026/MiMo-V2.6-Pro-RL
 - Repositorio oficial (segun model card): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Blog: https://mimo.xiaomi.com/mimo-v2-6

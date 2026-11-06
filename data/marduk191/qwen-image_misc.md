@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marduk191/qwen-image_misc` es un repositorio alojado en HuggingFace por el usuario marduk191 cuyo contenido técnico no está documentado públicamente. La model card asociada no contiene descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye dos elementos gráficos (un botón de donación de Ko-fi y una imagen enlazada a un servidor de Discord). El repositorio no declara pipeline, licencia, idiomas ni etiquetas descriptivas más allá de `region:us`.
+`marduk191/qwen-image_misc` es un repositorio alojado en Hugging Face por el usuario marduk191 cuyo contenido técnico no está documentado públicamente. La model card asociada no contiene descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye dos elementos gráficos (un botón de donación de Ko-fi y una imagen enlazada a un servidor de Discord). El repositorio no declara pipeline, licencia, idiomas ni etiquetas descriptivas más allá de `region:us`.
 
 El identificador del repositorio sugiere una relación con la familia Qwen-Image (modelos de generación de imágenes de Alibaba), pero esta vinculación no se confirma en ninguna parte de la información disponible y debe tratarse como una hipótesis no verificada. El tamaño del repositorio, 18,8 GB, es compatible con un conjunto de pesos de un modelo de difusión o de un modelo multimodal de tamaño medio, pero no se especifica el formato ni la precisión de almacenamiento.
 
@@ -75,6 +75,6 @@ No disponible. No se puede establecer una comparación rigurosa porque se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marduk191/qwen-image_misc
+- Repositorio en Hugging Face: https://huggingface.co/marduk191/qwen-image_misc
 - Ko-fi del autor: https://ko-fi.com/S6S4MYLIN
 - Discord del autor: https://discord.gg/fp7SqPJm9d

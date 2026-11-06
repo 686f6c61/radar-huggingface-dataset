@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mbsdeepak/scribe)
+- [Modelo en Hugging Face](https://huggingface.co/mbsdeepak/scribe)
 - [Repositorio de código y entrenamiento (scribe)](https://github.com/mbsdeepak/scribe)
 - [Servidor de inferencia ember](https://github.com/mbsdeepak/ember)
 - [Dataset TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories)

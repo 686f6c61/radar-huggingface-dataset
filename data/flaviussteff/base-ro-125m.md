@@ -105,6 +105,6 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaviussteff/base-ro-125m
+- Modelo en Hugging Face: https://huggingface.co/flaviussteff/base-ro-125m
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su tesis asociada ni sus autores; los unicos resultados obtenidos correspondian a temas sin relacion (documentacion de WikiLeaks), por lo que no se incluyen.
 - No se dispone de enlace al paper, repositorio de codigo, dataset o demo del proyecto.

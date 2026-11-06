@@ -34,7 +34,7 @@ No se dispone de información detallada sobre el número de tokens de entrenamie
 - Razonamiento y generación de código: no confirmado explícitamente en la información disponible; la model card no enumera capacidades detalladas.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el campo de idiomas aparece vacío en los metadatos de HuggingFace.
+- Capacidades multilingües: no disponible; el campo de idiomas aparece vacío en los metadatos de Hugging Face.
 - Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
@@ -44,7 +44,7 @@ No se dispone de información detallada sobre el número de tokens de entrenamie
 - Inferencia en hardware de consumo con iGPU: el autor reporta 23,5 tok/s de decodificación en una iGPU Strix Halo, lo que permite ejecutar el modelo en equipos sin GPU dedicada de gama alta usando llama.cpp.
 - Reproducción y depuración de conversiones GGUF: el repositorio documenta hashes SHA256 del GGUF sin parchear, del parcheado y de cada parte, lo que sirve como referencia para verificar pipelines de conversión propios.
 - Investigación sobre arquitecturas MoE de Tencent: el modelo permite estudiar el comportamiento de la arquitectura `hy_v3` en precisión completa BF16, sin las pérdidas de una cuantización Q4.
-- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de infraestructura compatible con la API de HuggingFace Endpoints, útil para prototipos rápidos.
+- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de infraestructura compatible con la API de Hugging Face Endpoints, útil para prototipos rápidos.
 - Servicio local con llama.cpp: el uso documentado con `llama-server -m Hy-Memory-30B-A3B-BF16-00001-of-00004.gguf` permite levantar un servidor HTTP local sin dependencias de Python.
 
 ## Benchmarks y rendimiento
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables directos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/boxwrench/Hy-Memory-30B-A3B-BF16-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/boxwrench/Hy-Memory-30B-A3B-BF16-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Repositorio de llama.cpp (conversor y runtime): https://github.com/ggml-org/llama.cpp

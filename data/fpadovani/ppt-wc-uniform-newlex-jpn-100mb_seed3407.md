@@ -12,7 +12,7 @@ La relevancia practica es limitada por su tamano (menos de 90 millones de parame
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only; etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only; etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 86.508.288 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (la familia GPT-2 suele emplear 1024 tokens; sin confirmar para este ajuste) |
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407 | 86.508.288 | No disponible | No disponible | HuggingFace, safetensors |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 millones | 1024 tokens | MIT | HuggingFace, safetensors y otros formatos |
-| Otras variantes de la familia de experimentos `ppt-wc-*` del mismo autor | No disponible | No disponible | No disponible | HuggingFace (repositorio del autor) |
+| fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407 | 86.508.288 | No disponible | No disponible | Hugging Face, safetensors |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 millones | 1024 tokens | MIT | Hugging Face, safetensors y otros formatos |
+| Otras variantes de la familia de experimentos `ppt-wc-*` del mismo autor | No disponible | No disponible | No disponible | Hugging Face (repositorio del autor) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. Las diferencias observables se limitan al numero de parametros, el metodo de ajuste (SFT sobre base monolingue frente a preentrenamiento completo) y la disponibilidad de formatos de cuantizacion, ausentes en este caso.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407
+- Pagina del modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/gdzcolyl

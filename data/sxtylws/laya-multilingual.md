@@ -108,7 +108,7 @@ Los tres checkpoints de la familia Laya comparten licencia Apache 2.0 y el mismo
 - La calibracion mejora respecto al checkpoint ingles (ECE macro 0.387 frente a 0.733), pero sigue siendo imperfecta; un umbral de confianza no debe tratarse como garantia.
 - La ventana nativa de 1.024 tokens trunca documentos largos si no se pasa `max_len=8192`. La precision en documentos largos decae mas alla de unos 4.000 tokens, con resultados entre 8 y 17 de 20 en las pruebas del autor.
 - El autor recomienda comprobar la precision en documentos largos con datos propios, dado que los resultados varian.
-- Existe una discrepancia en los identificadores: la informacion de HuggingFace asigna el repositorio a `sxtylws/laya-multilingual`, mientras que la model card apunta a `convaiinnovations/laya-multilingual`. Conviene verificar cual es el repositorio canonico y si los pesos coinciden.
+- Existe una discrepancia en los identificadores: la informacion de Hugging Face asigna el repositorio a `sxtylws/laya-multilingual`, mientras que la model card apunta a `convaiinnovations/laya-multilingual`. Conviene verificar cual es el repositorio canonico y si los pesos coinciden.
 - El enrutado se decide por el script de la entrada y no por la confianza del modelo, precisamente porque la confianza no avisa cuando un checkpoint no puede leer su entrada. Algunos textos (castellano, italiano, portugues o frances sin tildes, portugues de Brasil, peticiones CJK con marcas latinas, bangla romanizado o azeri) se derivan a este checkpoint aunque el script no lo determine.
 - En 20.000 textos ingleses, como maximo 5 frases inglesas se desvian al checkpoint multilingue, todas citando nombres largos en script nativo.
 - Riesgo de sesgo: la ficha no documenta analisis de sesgo por idioma, genero o dominio. La precision desigual entre idiomas (por ejemplo, coreano 0.490 frente a bengali 0.290) implica un trato desigual entre comunidades linguisticas.
@@ -116,7 +116,7 @@ Los tres checkpoints de la familia Laya comparten licencia Apache 2.0 y el mismo
 
 ## Enlaces
 
-- HuggingFace (identificador indicado en la informacion): https://huggingface.co/sxtylws/laya-multilingual
+- Hugging Face (identificador indicado en la informacion): https://huggingface.co/sxtylws/laya-multilingual
 - Checkpoint canonico segun la model card: https://huggingface.co/convaiinnovations/laya-multilingual
 - Familia Laya (checkpoint ingles): https://huggingface.co/convaiinnovations/laya
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

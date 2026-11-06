@@ -24,7 +24,7 @@ Su relevancia es la de un ejemplo de distribución de comportamiento embodied AI
 | Salida | 14 consignas articulares (joint targets) |
 | Frecuencia de control | 50 Hz |
 | Duración de la secuencia | 10,9 s |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Pipeline declarado | robotics |
 | Etiquetas | onnx, robotics, microduck-move, region:us |
 | Descargas / likes | 0 / 0 |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, cualquier GPU de consumo podría ejecutar un grafo ONNX de este tamaño, aunque no es el escenario previsto y no aporta ventaja frente a la NPU de a bordo.
 - Opciones de despliegue: runtime ONNX sobre la NPU del robot, gestionado por la aplicación MicroDuck a partir de `manifest.json`; para pruebas en sobremesa, ONNX Runtime en CPU o GPU.
 - Latencia y throughput: el contrato de control es de 50 Hz, es decir, 20 ms por paso de inferencia; no se publica latencia medida.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB según HuggingFace, por lo que el peso en disco del robot es despreciable.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB según Hugging Face, por lo que el peso en disco del robot es despreciable.
 
 ## Comparativa con modelos similares
 
@@ -97,7 +97,7 @@ La comparación cuantitativa no es posible: no se publican parámetros, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-reading
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-reading
 - Organización microduckapp: https://huggingface.co/microduckapp
 - Cobertura de CNBC sobre el Microduck y la NPU Rockchip: https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html
 - Análisis de MarkTechPost sobre el Microduck de Pollen Robotics y Hugging Face: https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/

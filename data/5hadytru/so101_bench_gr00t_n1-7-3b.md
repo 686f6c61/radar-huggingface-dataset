@@ -68,8 +68,8 @@ Desglose adicional: por split, vistos 9/13, objetos no vistos de clases vistas 6
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_bench_GR00T_N1.7-3B (este) | 3,14 B | horizonte de accion 16 pasos | 19/39 (48,7%) en SO-101 Bench sim | other (license_link a GR00T N1.7) | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.7-3B (base) | no disponible en la informacion proporcionada | no disponible | no disponible para el base sin ajustar en este conjunto | other | HuggingFace (NVIDIA) |
+| so101_bench_GR00T_N1.7-3B (este) | 3,14 B | horizonte de accion 16 pasos | 19/39 (48,7%) en SO-101 Bench sim | other (license_link a GR00T N1.7) | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.7-3B (base) | no disponible en la informacion proporcionada | no disponible | no disponible para el base sin ajustar en este conjunto | other | Hugging Face (NVIDIA) |
 | Otros VLA comparables (por ejemplo, de la categoria de manipulacion robotica) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ Desglose adicional: por split, vistos 9/13, objetos no vistos de clases vistas 6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_GR00T_N1.7-3B
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_GR00T_N1.7-3B
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/5hadytru/so101_bench_sim_WM
 - Repositorio de codigo Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

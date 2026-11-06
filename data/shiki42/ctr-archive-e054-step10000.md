@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shiki42/ctr-archive-e054-step10000` es un checkpoint archivado publicado en HuggingFace por el usuario Shiki42, etiquetado con las tags `robotics`, `ctr` y `archival-checkpoint`. No se trata de un modelo de lenguaje: la pipeline declarada es `robotics` y la propia model card lo describe como un archivo de checkpoint (paso 10000) cuyo propósito declarado es "preservar el checkpoint real y su normalización", sin establecer identidad con resultados de artículo ni aprobación de auditoría.
+`Shiki42/ctr-archive-e054-step10000` es un checkpoint archivado publicado en Hugging Face por el usuario Shiki42, etiquetado con las tags `robotics`, `ctr` y `archival-checkpoint`. No se trata de un modelo de lenguaje: la pipeline declarada es `robotics` y la propia model card lo describe como un archivo de checkpoint (paso 10000) cuyo propósito declarado es "preservar el checkpoint real y su normalización", sin establecer identidad con resultados de artículo ni aprobación de auditoría.
 
 La model card es extremadamente escueta (unas cinco líneas) y aporta muy poco sobre el modelo en sí: menciona que corresponde al paso 10000 de un entrenamiento denominado "E025 optimized full-budget training for paired quality validation", que el archivo se guardó el 2026-10-04 bajo instrucción del usuario y que incluye únicamente parámetros de inferencia y el estado de normalización/procesador, excluyendo optimizador y estado del RNG. Las identidades inmutables del run, dataset y runtime se registran en un fichero `archive-provenance.json` dentro del repositorio.
 
@@ -18,7 +18,7 @@ No se declaran licencia, idiomas, arquitectura, número de parámetros, contexto
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha de HuggingFace no especifica licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no especifica licencia) |
 | Formato de pesos | no disponible (tamaño del repositorio: 7,1 GB; no se detalla safetensors, GGUF, PyTorch binario ni otro) |
 | Paso de entrenamiento | 10000 |
 | Tags declaradas | `robotics`, `ctr`, `archival-checkpoint`, `region:us` |
@@ -88,7 +88,7 @@ No disponible. La información proporcionada no identifica la tarea concreta, el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e054-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e054-step10000
 - Fichero de procedencia del archivo (referenciado en la model card, no verificado): https://huggingface.co/Shiki42/ctr-archive-e054-step10000/blob/main/archive-provenance.json
 - Paper: no disponible
 - Blog o anuncio: no disponible

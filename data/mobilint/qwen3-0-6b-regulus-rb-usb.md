@@ -103,7 +103,7 @@ Los datos de los tres modelos de comparación provienen de su documentación pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/Qwen3-0.6B-regulus-rb-usb
+- Modelo en Hugging Face: https://huggingface.co/mobilint/Qwen3-0.6B-regulus-rb-usb
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Sitio del fabricante: https://mobilint.com

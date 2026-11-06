@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ololade117/scaling-normal-46.3M-15000steps es un checkpoint de 46.261.504 parametros publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. El repositorio ocupa 0,2 GB y contiene unicamente pesos en formato safetensors empaquetados mediante PyTorchModelHubMixin, el mixin de huggingface_hub que permite cargar el modelo como un modulo PyTorch nativo en lugar de como un modelo transformers estandar. No incluye configuracion de arquitectura, tokenizador declarado, ni pipeline asociado.
+Ololade117/scaling-normal-46.3M-15000steps es un checkpoint de 46.261.504 parametros publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. El repositorio ocupa 0,2 GB y contiene unicamente pesos en formato safetensors empaquetados mediante PyTorchModelHubMixin, el mixin de huggingface_hub que permite cargar el modelo como un modulo PyTorch nativo en lugar de como un modelo transformers estandar. No incluye configuracion de arquitectura, tokenizador declarado, ni pipeline asociado.
 
 La informacion publica es practicamente inexistente: la model card se limita a la plantilla autogenerada por PyTorchModelHubMixin, con los campos Code, Paper y Docs marcados como "More Information Needed". No se declaran idiomas, dataset de entrenamiento, numero de tokens vistos, hiperparametros ni resultados de evaluacion. El unico dato derivado del nombre del repositorio es que se trata de un entrenamiento de 15000 pasos, presumiblemente dentro de un estudio de escalado ("scaling-normal"), pero esta interpretacion no esta confirmada por ninguna fuente del autor.
 
@@ -21,7 +21,7 @@ Por su tamano, el modelo se situa en la franja de los modelos de investigacion t
 | Licencia | MIT |
 | Formato de pesos | safetensors (empaquetado con PyTorchModelHubMixin) |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Ololade117/scaling-normal-46.3M-15000steps | 46,26 M | no disponible | MIT | no disponible | Pesos safetensors sin tokenizador ni config |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Metricas publicadas por OpenAI | Pesos, config y tokenizador en el Hub |
 | Pythia-70M | 70 M | 2048 tokens | Apache-2.0 | Suite completa de evaluaciones publicada | Pesos, config y tokenizador; 154 checkpoints intermedios |
-| SmolLM-135M | 135 M | no disponible en esta ficha | Apache-2.0 | Metricas publicadas por HuggingFace | Pesos, config y tokenizador |
+| SmolLM-135M | 135 M | no disponible en esta ficha | Apache-2.0 | Metricas publicadas por Hugging Face | Pesos, config y tokenizador |
 
 La comparacion es estructural, no de rendimiento: frente a estos modelos, el checkpoint de Ololade117 carece de configuracion, tokenizador, evaluacion y documentacion de datos, lo que limita su reutilizacion incluso en contextos de investigacion. Se desconoce por completo si su rendimiento es comparable al de las alternativas citadas.
 
@@ -86,7 +86,7 @@ La comparacion es estructural, no de rendimiento: frente a estos modelos, el che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-46.3M-15000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-46.3M-15000steps
 - Documentacion de PyTorchModelHubMixin (unico enlace funcional referenciado en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del modelo: no disponible (la model card indica "More Information Needed")
 - Paper: no disponible (la model card indica "More Information Needed")

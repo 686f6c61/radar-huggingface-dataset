@@ -4,7 +4,7 @@
 
 El modelo `rlabz/quantum_tts` es un ajuste fino (fine-tune) del modelo base `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit`, desarrollado por el usuario rlabz. Orpheus es una familia de modelos de síntesis de voz (text-to-speech) basada en arquitectura Llama, con 3 mil millones de parámetros, entrenada para generar audio de alta calidad a partir de texto. Este fine-tune específico se ha realizado con la librería Unsloth, que acelera el entrenamiento y reduce el consumo de memoria, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-El modelo está pensado para tareas de generación de voz en inglés, y su tamaño compacto (0.4 GB en el repositorio) sugiere que puede desplegarse en entornos con recursos limitados, como GPUs de consumo o incluso CPU con cuantización adecuada. Aunque no se especifica el pipeline en la ficha de HuggingFace, por su naturaleza y el modelo base se trata de un sistema de TTS. Su relevancia actual radica en la creciente demanda de soluciones de voz sintética open source que sean ligeras, personalizables y con licencia permisiva, frente a alternativas propietarias o de mayor coste computacional.
+El modelo está pensado para tareas de generación de voz en inglés, y su tamaño compacto (0.4 GB en el repositorio) sugiere que puede desplegarse en entornos con recursos limitados, como GPUs de consumo o incluso CPU con cuantización adecuada. Aunque no se especifica el pipeline en la ficha de Hugging Face, por su naturaleza y el modelo base se trata de un sistema de TTS. Su relevancia actual radica en la creciente demanda de soluciones de voz sintética open source que sean ligeras, personalizables y con licencia permisiva, frente a alternativas propietarias o de mayor coste computacional.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ El modelo se basa en la arquitectura de Orpheus, que a su vez deriva de Llama. O
 - Producción de audio de alta calidad, presumiblemente con control de prosodia y entonación, dado que Orpheus está diseñado para síntesis expresiva.
 - Soporte de generación de tokens de audio discretos, que pueden ser procesados por un vocoder externo para obtener la forma de onda final.
 - Capacidad de fine-tune adicional sobre dominios específicos o voces personalizadas, gracias a su licencia abierta y arquitectura basada en Llama.
-- Integración con el ecosistema HuggingFace Transformers y Text Generation Inference (TGI), lo que facilita su despliegue en entornos de producción.
+- Integración con el ecosistema Hugging Face Transformers y Text Generation Inference (TGI), lo que facilita su despliegue en entornos de producción.
 - No se han documentado capacidades de tool calling, agentes o razonamiento multi-paso, ya que su función principal es la síntesis de voz.
 
 ## Casos de uso
@@ -75,7 +75,7 @@ La comparación es orientativa, ya que no se dispone de benchmarks comunes. `qua
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rlabz/quantum_tts)
+- [Modelo en Hugging Face](https://huggingface.co/rlabz/quantum_tts)
 - [Dataset tokenizado asociado](https://huggingface.co/datasets/rlabz/quantum-tts-tokenized)
 - [Modelo base unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit](https://huggingface.co/unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit) (enlace inferido, no verificado)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

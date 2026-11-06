@@ -86,7 +86,7 @@ El intervalo de confianza de Wilson al 95 por ciento para accuracy, asumiendo in
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilenetv2-brain-mri-tumor-256 | 2.263.108 | 256 x 256 RGB | Clasificación 4 clases de RM cerebral | no disponible | HuggingFace |
+| mobilenetv2-brain-mri-tumor-256 | 2.263.108 | 256 x 256 RGB | Clasificación 4 clases de RM cerebral | no disponible | Hugging Face |
 | MobileNetV2 ImageNet (torchvision) | ~3,5 M | 224 x 224 RGB | Clasificación ImageNet 1000 clases | BSD-3-Clause (torchvision) | torchvision |
 | ResNet-50 ImageNet (torchvision) | ~25,6 M | 224 x 224 RGB | Clasificación ImageNet 1000 clases | BSD-3-Clause (torchvision) | torchvision |
 
@@ -102,11 +102,11 @@ No se dispone de otros clasificadores de tumores cerebrales comparables en la in
 - Sesgos conocidos: no documentados en la información disponible; el dataset de origen puede introducir sesgos de adquisición, equipo o población que no se analizan.
 - Licencia no disponible: no se puede confirmar el uso comercial; debe contactarse con el autor antes de cualquier despliegue productivo.
 - Restricciones de idioma no aplicables, pero el modelo solo procesa imágenes de RM en el formato y preprocesado documentados; otros protocolos de adquisición pueden degradar el rendimiento.
-- El checkpoint es de torchvision, no de Transformers: no funciona con `AutoModel` ni con pipelines estándar de HuggingFace.
+- El checkpoint es de torchvision, no de Transformers: no funciona con `AutoModel` ni con pipelines estándar de Hugging Face.
 - El cálculo de CAM no debe envolverse en `inference_mode`, según advierte la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Purino/mobilenetv2-brain-mri-tumor-256
+- Hugging Face: https://huggingface.co/Purino/mobilenetv2-brain-mri-tumor-256
 - Dataset en Kaggle: https://www.kaggle.com/datasets/ahmedsorour1/mri-for-brain-tumor-with-bounding-boxes
 - Pesos de torchvision MobileNetV2: https://pytorch.org/vision/stable/models/mobilenetv2.html

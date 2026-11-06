@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-NVFP4
 - Adapter base (modelo sin cuantizar): https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning
 - Versión GGUF del adapter: https://huggingface.co/vcruz305/DeepNemotron-3.5-Lightning-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/r0b0tlab/deepseek-v4-pro-0813-agentic

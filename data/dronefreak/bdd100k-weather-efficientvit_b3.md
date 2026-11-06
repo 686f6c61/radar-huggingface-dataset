@@ -116,7 +116,7 @@ Todos los modelos comparten el mismo split de evaluación y las mismas métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b3
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b3
 - Repositorio BDD100K-Toolkit (código fuente y model zoo): https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de clasificación meteorológica: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Modelo base en timm: https://huggingface.co/timm/efficientvit_b3.r224_in1k

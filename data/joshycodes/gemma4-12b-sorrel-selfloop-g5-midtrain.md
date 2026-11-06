@@ -75,7 +75,7 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
 | gemma4-12b-sorrel-selfloop-g5-midtrain | 11,96B | No disponible | internal-research | Repositorio publico, redistribucion prohibida | No disponible |
-| gemma4-12b-sorrel-selfloop-g4-midtrain (base) | No disponible | No disponible | No disponible | Repositorio en HuggingFace | No disponible |
+| gemma4-12b-sorrel-selfloop-g4-midtrain (base) | No disponible | No disponible | No disponible | Repositorio en Hugging Face | No disponible |
 | Alternativas externas de ~12B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g5-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g5-midtrain
 - Modelo base: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain
 - Dataset declarado: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Repositorio de entrenamiento `flourishing-training`: no disponible como URL (solo se cita el commit del launcher `a0afb77669ae`)

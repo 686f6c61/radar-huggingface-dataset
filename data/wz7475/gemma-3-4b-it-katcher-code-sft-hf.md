@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/gemma-3-4b-it-katcher-code-sft-hf` es un ajuste fino (SFT) publicado en HuggingFace por el usuario wz7475, cuyo identificador indica que parte de `google/gemma-3-4b-it` y que ha sido entrenado sobre datos de codigo (sufijo `katcher-code-sft`). El repositorio se subio el 3 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin validacion comunitaria.
+`wz7475/gemma-3-4b-it-katcher-code-sft-hf` es un ajuste fino (SFT) publicado en Hugging Face por el usuario wz7475, cuyo identificador indica que parte de `google/gemma-3-4b-it` y que ha sido entrenado sobre datos de codigo (sufijo `katcher-code-sft`). El repositorio se subio el 3 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin validacion comunitaria.
 
-La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]": no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. La unica informacion tecnica fiable disponible son los metadatos del Hub: libreria `transformers`, pesos en `safetensors`, compatibilidad con `endpoints_compatible`, region `us` y un tamano de repositorio de 0,3 GB.
+La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]": no declara autor real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. La unica informacion tecnica fiable disponible son los metadatos del Hub: libreria `transformers`, pesos en `safetensors`, compatibilidad con `endpoints_compatible`, region `us` y un tamano de repositorio de 0,3 GB.
 
 El dato del tamano del repositorio es relevante y potencialmente problematico: un modelo denso de aproximadamente 4 000 millones de parametros en bf16 ocuparia del orden de 8 GB, de modo que 0,3 GB sugiere una carga parcial, un adaptador, una cuantizacion agresiva o una subida incompleta. Cualquier evaluacion practica deberia verificar primero el contenido real del repositorio.
 
@@ -18,7 +18,7 @@ El dato del tamano del repositorio es relevante y potencialmente problematico: u
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en `safetensors` |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en la model card ni en los metadatos del Hub |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 | Tamano del repositorio | 0,3 GB |
 | Libreria declarada | transformers |
 | Compatibilidad declarada | endpoints_compatible |
@@ -29,7 +29,7 @@ El dato del tamano del repositorio es relevante y potencialmente problematico: u
 
 No hay informacion verificable sobre la arquitectura en la documentacion proporcionada. El nombre del repositorio apunta a un fine-tuning supervisado (SFT) del modelo instruct `gemma-3-4b-it` de Google, lo que implicaria una arquitectura transformer decoder-only con atencion por ventanas alternadas (patron descrito publicamente para la familia Gemma 3), pero esta ficha no puede confirmarlo porque la model card no incluye la seccion "Model Architecture and Objective" ni la seccion "Training Details".
 
-Tampoco se dispone de datos sobre el conjunto de entrenamiento: no se indica el numero de tokens, la composicion del dataset, la procedencia del corpus de codigo "katcher", ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La referencia `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre calculo de impacto ambiental, citada en la plantilla de HuggingFace, y no a un paper del modelo. El hiperparametro de regimen de entrenamiento aparece como "[More Information Needed]".
+Tampoco se dispone de datos sobre el conjunto de entrenamiento: no se indica el numero de tokens, la composicion del dataset, la procedencia del corpus de codigo "katcher", ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La referencia `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019) sobre calculo de impacto ambiental, citada en la plantilla de Hugging Face, y no a un paper del modelo. El hiperparametro de regimen de entrenamiento aparece como "[More Information Needed]".
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ La comparativa se limita a las alternativas plausibles de la misma categoria (mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wz7475/gemma-3-4b-it-katcher-code-sft-hf | no disponible (~4B segun identificador) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it (modelo base presumible) | ~4B | no verificado en esta ficha | no verificado en esta ficha | Gemma Terms of Use (segun docs publicas, no confirmado aqui) | HuggingFace |
+| wz7475/gemma-3-4b-it-katcher-code-sft-hf | no disponible (~4B segun identificador) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it (modelo base presumible) | ~4B | no verificado en esta ficha | no verificado en esta ficha | Gemma Terms of Use (segun docs publicas, no confirmado aqui) | Hugging Face |
 | Alternativas de la misma categoria (por ejemplo, series Qwen Coder de ~3-7B) | no comparado | no comparado | no comparado | no comparado | no comparado |
 
 No se dispone de informacion suficiente para comparar rendimiento, contexto o licencia con alternativas concretas sin verificar las fichas oficiales de cada modelo.
@@ -96,7 +96,7 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto o li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-code-sft-hf
+- Modelo en Hugging Face: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-code-sft-hf
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/google/gemma-3-4b-it
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML enlazada en la plantilla: https://mlco2.github.io/impact

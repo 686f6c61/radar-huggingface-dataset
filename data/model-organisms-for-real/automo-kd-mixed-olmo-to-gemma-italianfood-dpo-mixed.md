@@ -65,7 +65,7 @@ Estas métricas se obtuvieron con 435 prompts por split, 1 generación por promp
 - El tamaño del repositorio es de 2.0 GB, lo que sugiere que los pesos en precisión fp16 o bf16 ocupan aproximadamente 2 GB (consistente con un modelo de ~1B de parámetros).
 - Para inferencia en fp16, se estima que se necesitan al menos 2-3 GB de VRAM, lo que permite ejecutarlo en GPUs consumer como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores.
 - No se proporcionan datos oficiales de VRAM, latencia o throughput. Se recomienda usar `transformers` con carga en GPU o CPU según disponibilidad.
-- Opciones de despliegue: al ser un modelo de la familia transformers, se puede usar con vLLM, llama.cpp (si se convierte a GGUF), Ollama o directamente con `AutoModelForCausalLM` de HuggingFace. No se indican configuraciones específicas de optimización.
+- Opciones de despliegue: al ser un modelo de la familia transformers, se puede usar con vLLM, llama.cpp (si se convierte a GGUF), Ollama o directamente con `AutoModelForCausalLM` de Hugging Face. No se indican configuraciones específicas de optimización.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ Existen otros organismos modelo de la misma familia, como `automo-kd-unmixed-gem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-mixed
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-mixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Otros organismos modelo relacionados (ejemplos): https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-fd-unmixed y https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-fd-unmixed

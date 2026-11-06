@@ -69,7 +69,7 @@ Segun la model card, el modelo alcanza 93.68 en Real5-OmniDocBench. La build Fla
 
 | Modelo | Parametros | Contexto | Benchmark destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (esta ficha) | 1.3B | no disponible | Real5-OmniDocBench 93.68; OcrBench 80.6 | Apache 2.0 | HuggingFace (build Ascend FlagOS) |
+| MiniCPM-OCR 1.0 (esta ficha) | 1.3B | no disponible | Real5-OmniDocBench 93.68; OcrBench 80.6 | Apache 2.0 | Hugging Face (build Ascend FlagOS) |
 | MiniCPM-OCR Jev | 2B | no disponible | AUROC JevOCRBench 0.936 | no disponible | no disponible |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | AUROC JevOCRBench 0.938 | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ La comparativa con Qwen3.5-397B-A17B se refiere unicamente a la tarea de inspecc
 
 ## Enlaces
 
-- [HuggingFace: FlagRelease/MiniCPM-OCR-1.0-BF16-ascend-FlagOS](https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-ascend-FlagOS)
+- [Hugging Face: FlagRelease/MiniCPM-OCR-1.0-BF16-ascend-FlagOS](https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-ascend-FlagOS)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -65,7 +65,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - El adaptador LoRA es muy ligero (0.2 GB), pero requiere cargar el modelo base Qwen3.5-9B para inferencia.
 - VRAM estimada: al menos 18 GB en bf16/fp16 para el modelo base; con cuantizacion 4-bit se puede reducir a unos 6-8 GB.
 - GPU recomendadas: A100 (usada en entrenamiento), RTX 4090, RTX 3090, o GPUs con 24 GB o más para fp16. Para cuantizacion 4-bit, una RTX 3060 de 12 GB podría ser suficiente.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o mediante la libreria PEFT de HuggingFace para cargar el adaptador sobre el modelo base.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o mediante la libreria PEFT de Hugging Face para cargar el adaptador sobre el modelo base.
 - Latencia y throughput: no disponibles; dependeran del hardware y del tamaño del modelo base.
 
 ## Comparativa con modelos similares
@@ -83,8 +83,8 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tanh1c/lab21-qwen35-triage-vi
+- Hugging Face: https://huggingface.co/tanh1c/lab21-qwen35-triage-vi
 - Repositorio GitHub del autor (informe del laboratorio): https://github.com/tanh1c/Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/blob/main/BONUS-CHALLENGE.md
 - Version en ingles del informe: https://github.com/tanh1c/Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/blob/main/BONUS-CHALLENGE-EN.md
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Qwen Studio: https://qwen.ai/home

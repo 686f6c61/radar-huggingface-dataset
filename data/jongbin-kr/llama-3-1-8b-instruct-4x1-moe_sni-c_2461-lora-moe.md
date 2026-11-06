@@ -76,6 +76,6 @@ Sin datos de rendimiento del modelo evaluado, no es posible establecer una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe_SNI-c_2461-lora-moe
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe_SNI-c_2461-lora-moe
 - Modelo base: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe
 - Repositorio de modelos Llama (referencia para el modelo base original): https://github.com/meta-llama/llama-models

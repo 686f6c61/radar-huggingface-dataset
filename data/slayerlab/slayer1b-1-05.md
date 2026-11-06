@@ -74,9 +74,9 @@ El autor señala que checkpoints individuales difieren: por ejemplo, el paso 130
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Slayer1B 1.05 | 1.073.912.851 | 4096 | pl, en | Apache 2.0 | HuggingFace, pesos safetensors + loader propio |
-| Slayer1B 1.04 | mismo modelo (paso 10010) | 4096 | pl, en | Apache 2.0 | HuggingFace |
-| Slayer1B 1.03 | mismo modelo (paso anterior) | 4096 | pl, en | Apache 2.0 | HuggingFace |
+| Slayer1B 1.05 | 1.073.912.851 | 4096 | pl, en | Apache 2.0 | Hugging Face, pesos safetensors + loader propio |
+| Slayer1B 1.04 | mismo modelo (paso 10010) | 4096 | pl, en | Apache 2.0 | Hugging Face |
+| Slayer1B 1.03 | mismo modelo (paso anterior) | 4096 | pl, en | Apache 2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de datos sobre modelos comparables de otros autores (mismo tamaño o misma tarea) para establecer una comparativa de rendimiento. Los benchmarks publicados no son directamente comparables con los de lm-evaluation-harness, según advierte el propio autor.
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.05
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.05
 - Versión anterior 1.04: https://huggingface.co/SlayerLab/Slayer1B-1.04
 - Versión anterior 1.03: https://huggingface.co/SlayerLab/Slayer1B-1.03
 - Versión anterior 1.02: https://huggingface.co/SlayerLab/Slayer1B-1.02

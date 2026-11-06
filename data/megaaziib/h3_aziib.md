@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`megaaziib/h3_aziib` es un repositorio de modelos alojado en HuggingFace por el usuario `megaaziib`, publicado el 16 de septiembre de 2026 y sin actualizaciones posteriores segun los metadatos disponibles. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0` en el encabezado YAML, sin descripcion, sin arquitectura, sin datos de entrenamiento, sin ejemplos de uso y sin resultados de evaluacion.
+`megaaziib/h3_aziib` es un repositorio de modelos alojado en Hugging Face por el usuario `megaaziib`, publicado el 16 de septiembre de 2026 y sin actualizaciones posteriores segun los metadatos disponibles. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0` en el encabezado YAML, sin descripcion, sin arquitectura, sin datos de entrenamiento, sin ejemplos de uso y sin resultados de evaluacion.
 
 El repositorio no declara pipeline (`pipeline: no disponible`), no especifica idiomas soportados, no incluye etiquetas de tarea ni de familia de modelo, y acumula 0 descargas y 0 likes en el momento de la consulta. Esto impide determinar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador (LoRA/QLoRA), un merge, un fine-tuning derivado de otro modelo base o un artefacto de prueba subido sin documentar. Tampoco se dispone del listado de archivos del repositorio, por lo que se desconoce el formato y el numero de ficheros de pesos.
 
@@ -27,7 +27,7 @@ En consecuencia, este modelo no es evaluable ni recomendable para uso en producc
 
 No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. No es posible confirmar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido, un modelo multimodal o un adaptador sobre otro modelo. Tampoco consta el numero de parametros, la dimension del vocabulario, el mecanismo de atencion ni la estrategia de tokenizacion.
 
-Respecto al entrenamiento, se desconoce por completo el corpus utilizado, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, asi como cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, destilacion, cuantizacion durante el entrenamiento). La unica etiqueta tecnica presente en los metadatos es `region:us`, que unicamente indica la region de almacenamiento en la infraestructura de HuggingFace.
+Respecto al entrenamiento, se desconoce por completo el corpus utilizado, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, asi como cualquier innovacion tecnica asociada (atencion lineal, decodificacion especulativa, destilacion, cuantizacion durante el entrenamiento). La unica etiqueta tecnica presente en los metadatos es `region:us`, que unicamente indica la region de almacenamiento en la infraestructura de Hugging Face.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/megaaziib/h3_aziib
+- Repositorio en Hugging Face: https://huggingface.co/megaaziib/h3_aziib
 - Licencia Apache 2.0 (referencia textual de la licencia declarada): https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces obtenidos correspondian a colecciones de iconos vectoriales (flaticon.com, icons8.com, magnific.com, freeicon.com) y se descartan por no ser relevantes.

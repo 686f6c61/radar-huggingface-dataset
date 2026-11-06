@@ -69,7 +69,7 @@ No disponible. No se proporcionan comparaciones directas con otros detectores de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skblv/yolov12m-surgvu-instruments
+- Modelo en Hugging Face: https://huggingface.co/skblv/yolov12m-surgvu-instruments
 - Dataset SurgVU (GitHub): https://github.com/isi-challenges/surgVU-dataset
 - Repositorio oficial de YOLOv12 (GitHub): https://github.com/sunsmarterjie/yolov12
 - Desafío Surgical Visual Understanding (Grand Challenge): https://surgvu25.grand-challenge.org/

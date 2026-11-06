@@ -75,6 +75,6 @@ No hay datos de rendimiento comparativos, por lo que la tabla solo refleja carac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minsu0567/IAD-X1-SFT-si-answer-last
+- Hugging Face: https://huggingface.co/minsu0567/IAD-X1-SFT-si-answer-last
 - FriendliAI (inferencia): https://friendli.ai/models/minsu0567/IAD-X1-SFT-si-answer-last
 - GitHub del autor: https://github.com/minsi0567

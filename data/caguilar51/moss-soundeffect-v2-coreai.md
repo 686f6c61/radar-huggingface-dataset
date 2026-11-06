@@ -88,7 +88,7 @@ El modelo Core AI es una variante experimental que añade un runtime Swift y un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caguilar51/MOSS-SoundEffect-v2-CoreAI
+- Hugging Face: https://huggingface.co/caguilar51/MOSS-SoundEffect-v2-CoreAI
 - GitHub del proyecto: https://github.com/caguilar-dev/moss-soundeffect-coreai
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0
 - Conversión MLX 4-bit: https://huggingface.co/mlx-community/MOSS-SoundEffect-v2.0-4bit

@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos comparables de tamano similar con la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZTFlynn/LFM2-350M-ENJP-MT-Cascadia-ternary3
+- Modelo en Hugging Face: https://huggingface.co/ZTFlynn/LFM2-350M-ENJP-MT-Cascadia-ternary3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT/blob/main/LICENSE
 - Repositorio del runtime Cascadia: https://github.com/EntroMorphic/cassie

@@ -6,7 +6,7 @@ Este repositorio, publicado por el usuario justleticiamoreira, no contiene un mo
 
 El repositorio incluye un archivo de pesos en formato safetensors con 49.600 parámetros, un tamaño extremadamente reducido que no corresponde a ningún modelo de lenguaje o multimodal conocido. La propia model card advierte explícitamente de que no se trata de un checkpoint entrenado, ni de código liberado, ni de resultados de experimentos. Por tanto, este repositorio debe interpretarse como documentación de investigación, no como un modelo desplegable.
 
-La relevancia de esta ficha es aclarar que, pese a su apariencia de modelo en HuggingFace, no existe un sistema funcional que pueda ser utilizado para inferencia. Cualquier intento de cargar los pesos o utilizarlos en producción carecería de sentido técnico.
+La relevancia de esta ficha es aclarar que, pese a su apariencia de modelo en Hugging Face, no existe un sistema funcional que pueda ser utilizado para inferencia. Cualquier intento de cargar los pesos o utilizarlos en producción carecería de sentido técnico.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justleticiamoreira/cross-modal-fusion-analysis
+- Repositorio en Hugging Face: https://huggingface.co/justleticiamoreira/cross-modal-fusion-analysis
 - Articulo relacionado (fusion cross-modal jerarquica): https://www.sciencedirect.com/science/article/pii/S0306457324000359
 - Encuesta sobre fusion multimodal: https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - CFMISA (fusion cross-modal de invariantes y especificos): https://link.springer.com/chapter/10.1007/978-981-97-8502-5_30

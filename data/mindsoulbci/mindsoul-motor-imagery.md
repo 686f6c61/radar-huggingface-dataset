@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MindSoul Neural AI · Motor Imagery es un modelo anunciado por mindsoulBCI (Chengdu (Shanghai) Naoyun Matrix Technology Co., Ltd., equipo MindSoul) orientado al analisis de senales EEG en experimentos de imaginacion motora. Segun su model card, se plantea como un transformer para identificar clases de intencion motora definidas por la tarea, aunque en el momento de la publicacion no se han liberado pesos, codigo de entrenamiento ni resultados de evaluacion. El repositorio existe en HuggingFace pero esta marcado como "coming soon".
+MindSoul Neural AI · Motor Imagery es un modelo anunciado por mindsoulBCI (Chengdu (Shanghai) Naoyun Matrix Technology Co., Ltd., equipo MindSoul) orientado al analisis de senales EEG en experimentos de imaginacion motora. Segun su model card, se plantea como un transformer para identificar clases de intencion motora definidas por la tarea, aunque en el momento de la publicacion no se han liberado pesos, codigo de entrenamiento ni resultados de evaluacion. El repositorio existe en Hugging Face pero esta marcado como "coming soon".
 
 La relevancia del proyecto es potencial: la decodificacion de imaginacion motora mediante EEG es una de las aplicaciones clasicas de las interfaces cerebro-computador (BCI) no invasivas, y el uso de arquitecturas transformer sobre series temporales EEG es una linea de investigacion activa. Sin embargo, a dia de hoy la ficha solo puede describir la intencion declarada por el autor, no un artefacto funcional verificable.
 
@@ -79,7 +79,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-motor-imagery
+- Modelo en Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-motor-imagery
 - Espacio de benchmark (proximamente): https://huggingface.co/spaces/mindsoulBCI/benchmark
 - Repositorio GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - Repositorio GitHub de aplicaciones y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial

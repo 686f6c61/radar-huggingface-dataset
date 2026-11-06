@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch03` es un checkpoint de Phi-1.5 publicado por el usuario unl-reset en HuggingFace, derivado del modelo `locuslab/tofu_ft_phi-1.5` (que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos sinteticos TOFU). Se trata de un artefacto de investigacion orientado al estudio de *machine unlearning*: el autor indica que las matrices de embeddings de entrada y la cabeza del modelo de lenguaje (LM head) se inicializan desde `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se conservan de `locuslab/tofu_ft_phi-1.5`. El entrenamiento combina una perdida de tipo IHL sobre el conjunto "forget" con una entropia cruzada (CE) ponderada por 1.0 sobre el conjunto "retain".
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch03` es un checkpoint de Phi-1.5 publicado por el usuario unl-reset en Hugging Face, derivado del modelo `locuslab/tofu_ft_phi-1.5` (que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos sinteticos TOFU). Se trata de un artefacto de investigacion orientado al estudio de *machine unlearning*: el autor indica que las matrices de embeddings de entrada y la cabeza del modelo de lenguaje (LM head) se inicializan desde `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se conservan de `locuslab/tofu_ft_phi-1.5`. El entrenamiento combina una perdida de tipo IHL sobre el conjunto "forget" con una entropia cruzada (CE) ponderada por 1.0 sobre el conjunto "retain".
 
 El nombre del repositorio codifica el experimento: `forget10` (probablemente el 10 % de los datos de TOFU marcados para olvidar), `ihl_head` (aplicacion de IHL sobre la cabeza y los embeddings) y `epoch03` (tercera epoca de un total de 20). El modelo tiene 1.418.270.720 parametros, un tamano de repositorio de 2,8 GB en formato safetensors y licencia Apache 2.0. Su publicacion responde al interes creciente por metodologias reproducibles de desaprendizaje en modelos de lenguaje de pequeno tamano, donde Phi-1.5 (1.3B) sirve como banco de pruebas asequible.
 
-No se trata de un modelo de proposito general listo para produccion: es un checkpoint intermedio de un pipeline de investigacion sobre TOFU, sin model card extendida, sin benchmarks publicados y sin pipeline declarado en HuggingFace. Su relevancia es metodologica, no de rendimiento.
+No se trata de un modelo de proposito general listo para produccion: es un checkpoint intermedio de un pipeline de investigacion sobre TOFU, sin model card extendida, sin benchmarks publicados y sin pipeline declarado en Hugging Face. Su relevancia es metodologica, no de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch03 | 1.418.270.720 | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigacion en unlearning, epoca 3/20 |
-| microsoft/phi-1_5 | ~1.3B | 2048 tokens (referencia del modelo original) | MIT (modelo original) | HuggingFace, ampliamente descargado | Modelo base de codigo y texto; sin intervencion de unlearning |
-| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | no disponible en la informacion | HuggingFace | Ajuste fino sobre TOFU; punto de partida del checkpoint |
-| locuslab/tofu_llama2-7b | 7B | no disponible | no disponible en la informacion | HuggingFace | Alternativa de mayor tamano para experimentos TOFU; requiere mas VRAM |
+| unl-reset/tofu-phi-1_5-...-epoch03 | 1.418.270.720 | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigacion en unlearning, epoca 3/20 |
+| microsoft/phi-1_5 | ~1.3B | 2048 tokens (referencia del modelo original) | MIT (modelo original) | Hugging Face, ampliamente descargado | Modelo base de codigo y texto; sin intervencion de unlearning |
+| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | no disponible en la informacion | Hugging Face | Ajuste fino sobre TOFU; punto de partida del checkpoint |
+| locuslab/tofu_llama2-7b | 7B | no disponible | no disponible en la informacion | Hugging Face | Alternativa de mayor tamano para experimentos TOFU; requiere mas VRAM |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch03
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch03
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

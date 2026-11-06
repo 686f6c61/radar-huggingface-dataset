@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h012.rl-easy.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h012.rl-easy.step_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

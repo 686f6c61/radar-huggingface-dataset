@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intern-matching es un prototipo de investigación publicado en HuggingFace por el usuario jiangnanphysics, orientado a tareas de *matching* (emparejamiento o correspondencia entre elementos) mediante una implementación propia de arquitectura tipo BEiT. Se trata de un artefacto experimental de escala *tiny*, con tan solo 24.832 parámetros totales, cuyo checkpoint `model.safetensors` se describe explícitamente en la model card como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado con benchmarks.
+Intern-matching es un prototipo de investigación publicado en Hugging Face por el usuario jiangnanphysics, orientado a tareas de *matching* (emparejamiento o correspondencia entre elementos) mediante una implementación propia de arquitectura tipo BEiT. Se trata de un artefacto experimental de escala *tiny*, con tan solo 24.832 parámetros totales, cuyo checkpoint `model.safetensors` se describe explícitamente en la model card como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado con benchmarks.
 
 El modelo no resuelve un problema de producción concreto: su propósito declarado es servir como punto de partida reproducible para investigación, documentando valores por defecto de configuración de arquitectura y de receta de entrenamiento (optimizador rmsprop con planificador onecycle). La model card insiste en que no se reclama ninguna puntuación de rendimiento y que cualquier resultado futuro debe documentarse por separado de los valores por defecto aquí incluidos.
 
@@ -36,7 +36,7 @@ No se proporciona información sobre el volumen de tokens de entrenamiento, la c
 - No hay soporte documentado de agentes ni de razonamiento multi-paso.
 - No hay información sobre capacidades multilingües ni sobre procesamiento de texto en general.
 - El script `inference.py` incluye un bloque `__main__` con un ejemplo de *smoke test*, pensado para comprobar que el código se ejecuta y que las formas de los tensores son coherentes, no para evaluar calidad.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 - Capacidades especiales (modo *thinking*, visión, audio): no disponibles.
 
 ## Casos de uso
@@ -88,5 +88,5 @@ Los datos de las tres alternativas provienen de referencias públicas generales,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiangnanphysics/intern-matching
+- Hugging Face: https://huggingface.co/jiangnanphysics/intern-matching
 - Repositorio de GitHub, paper, blog o demo: no disponibles

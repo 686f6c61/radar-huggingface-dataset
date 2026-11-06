@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/kuka-level2-no-source-stage-v1-video200-action1800
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/kuka-level2-no-source-stage-v1-video200-action1800
 - Backbone Video2World inicial: https://huggingface.co/jonpai/mimic-video/tree/f28339034831e3c2374be075e622e1ff38ebe0f8
 - Video LoRA congelado: https://huggingface.co/dreamdifferent/kuka-level2-no-source-stage-v1-video-iter200/tree/5e7b956d169482f17f428ea3cc6c98a693d67e2c
 - Dataset de entrenamiento: https://huggingface.co/datasets/dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture/tree/34e9c1742ff40ca3b60e06fc3ae92872c33248fe

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prosper es un modelo publicado en HuggingFace por el usuario Adekanmipro (ID `Adekanmipro/Prosper`), descrito en su propia model card como un ajuste fino (*finetune*) del modelo `google/gemma-4-31B-it`. La ficha no aporta ninguna descripcion en prosa del modelo: toda la informacion disponible se limita a metadatos YAML (licencia, idiomas, datasets y metrica). No se documentan ni la arquitectura, ni el numero de tokens de entrenamiento, ni el procedimiento de ajuste.
+Prosper es un modelo publicado en Hugging Face por el usuario Adekanmipro (ID `Adekanmipro/Prosper`), descrito en su propia model card como un ajuste fino (*finetune*) del modelo `google/gemma-4-31B-it`. La ficha no aporta ninguna descripcion en prosa del modelo: toda la informacion disponible se limita a metadatos YAML (licencia, idiomas, datasets y metrica). No se documentan ni la arquitectura, ni el numero de tokens de entrenamiento, ni el procedimiento de ajuste.
 
 El modelo se declara para ingles y chino, con licencia MS-PL (Microsoft Public License), y esta etiquetado con `library_name: diffusers`, lo cual resulta llamativo en un modelo cuyo *base_model* es un modelo de lenguaje. Los conjuntos de datos declarados son heterogeneos y no guardan una relacion evidente entre si: `openbmb/UltraData-Code` (datos de codigo), `Anthropic/claude-protein-binder-design` (diseno de proteinas) y `G3ND3K/so101_picking_up_green_lego_big` (manipulacion robotica con el brazo SO-101). Ademas, la model card apunta a una `new_version` denominada `deepseek-ai/DeepSeek-V4-Flash-Vision-Exp`.
 
@@ -108,7 +108,7 @@ Los tres modelos de referencia cuentan con model card detallada, benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adekanmipro/Prosper
+- Modelo en Hugging Face: https://huggingface.co/Adekanmipro/Prosper
 - Modelo base declarado: https://huggingface.co/google/gemma-4-31B-it
 - Dataset declarado: https://huggingface.co/datasets/openbmb/UltraData-Code
 - Dataset declarado: https://huggingface.co/datasets/Anthropic/claude-protein-binder-design

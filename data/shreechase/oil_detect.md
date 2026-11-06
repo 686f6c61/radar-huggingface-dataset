@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shreechase/oil_detect es un repositorio de modelo publicado en HuggingFace por el usuario shreechase. La informacion disponible en la model card se limita a la declaracion de licencia MIT: no se incluye descripcion del modelo, arquitectura, datos de entrenamiento, ni ejemplos de uso. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+shreechase/oil_detect es un repositorio de modelo publicado en Hugging Face por el usuario shreechase. La informacion disponible en la model card se limita a la declaracion de licencia MIT: no se incluye descripcion del modelo, arquitectura, datos de entrenamiento, ni ejemplos de uso. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio sugiere un modelo orientado a la deteccion de petroleo o de vertidos de hidrocarburos, pero esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna fuente proporcionada. No se dispone de informacion sobre la tarea concreta (clasificacion, deteccion de objetos, segmentacion), el dominio de entrada (imagen satelital, imagen aerea, sensores) ni el framework utilizado.
 
@@ -27,7 +27,7 @@ Datos adicionales verificables: identificador shreechase/oil_detect, autor shree
 
 No disponible. La model card no describe la arquitectura, no menciona el numero de parametros, no detalla el corpus de entrenamiento ni indica si se aplicaron tecnicas de ajuste como RLHF, DPO, SFT u otras. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos, modelos de estado recurrente, etc.).
 
-El unico dato estructural disponible es el tamano del repositorio, 0,1 GB. Ese volumen es compatible con pesos de un modelo pequeno o con un conjunto de pesos cuantizados, pero sin conocer el formato ni el numero de parametros no es posible extraer conclusiones fiables. No se dispone de informacion sobre el pipeline declarado en HuggingFace ni sobre los tags de tarea.
+El unico dato estructural disponible es el tamano del repositorio, 0,1 GB. Ese volumen es compatible con pesos de un modelo pequeno o con un conjunto de pesos cuantizados, pero sin conocer el formato ni el numero de parametros no es posible extraer conclusiones fiables. No se dispone de informacion sobre el pipeline declarado en Hugging Face ni sobre los tags de tarea.
 
 ## Capacidades
 
@@ -83,6 +83,6 @@ No disponible. Sin conocer la tarea, la modalidad ni el tamano del modelo, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreechase/oil_detect
+- Hugging Face: https://huggingface.co/shreechase/oil_detect
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a dominios ajenos al modelo y se han descartado por no estar relacionados.

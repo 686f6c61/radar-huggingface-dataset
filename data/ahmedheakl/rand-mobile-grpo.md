@@ -91,10 +91,10 @@ Otras configuraciones medidas en este checkpoint: cfg 4.5 da GenEval 0.9237, DPG
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/ahmedheakl/rand-mobile-grpo
+- Hugging Face (este checkpoint): https://huggingface.co/ahmedheakl/rand-mobile-grpo
 - Checkpoint recomendado por el autor: https://huggingface.co/ahmedheakl/rand-mobile
 - Codificador VLM congelado requerido: https://huggingface.co/openbmb/MiniCPM-V-4_6
 - Backbone SANA requerido (DC-AE y scheduler): https://huggingface.co/Efficient-Large-Model/Sana_600M_512px_diffusers
 - Pagina personal del autor (proyecto Mobile-O): https://ahmedheakl.github.io/
 - Perfil del autor en GitHub: https://github.com/ahmedheakl
-- Perfil del autor en HuggingFace: https://huggingface.co/ahmedheakl
+- Perfil del autor en Hugging Face: https://huggingface.co/ahmedheakl

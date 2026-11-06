@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de Qwen2.5-7B-Instruct, desarrollado por HungryDino, entrenado con las librerias Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere una especializacion en tareas relacionadas con numeros y colapso de secuencias (cat_numbers, collapse), aunque la model card no proporciona detalles sobre el dataset ni el objetivo concreto del ajuste.
+Este modelo es un fine-tuning de Qwen2.5-7B-Instruct, desarrollado por HungryDino, entrenado con las librerias Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere una especializacion en tareas relacionadas con numeros y colapso de secuencias (cat_numbers, collapse), aunque la model card no proporciona detalles sobre el dataset ni el objetivo concreto del ajuste.
 
 El repositorio tiene un tamano de solo 0.1 GB, lo que indica que probablemente se trate de un adaptador LoRA o de una subida parcial de pesos, no de los pesos completos del modelo de 7B. Fue creado en agosto de 2026 y no registra descargas ni likes, lo que sugiere que es un experimento personal o un artefacto de investigacion en fase temprana. Su relevancia radica en ser un ejemplo de fine-tuning eficiente con Unsloth sobre la familia Qwen2.5, aunque carece de documentacion para su uso en produccion.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamano de solo 0.1 GB, lo que indica que probablemente s
 
 El modelo parte de Qwen2.5-7B-Instruct, que emplea una arquitectura transformer decoder-only con attention de grupo de consultas (GQA), normalizacion RMSNorm y embeddings rotatorios (RoPE). Qwen2.5-7B-Instruct fue preentrenado con 18 billones de tokens y alineado mediante RLHF, con una ventana de contexto de 32.768 tokens.
 
-El fine-tuning se realizo con Unsloth, que acelera el entrenamiento aproximadamente 2 veces mediante kernels optimizados, y con la libreria TRL de HuggingFace para el bucle de entrenamiento. No se especifica el metodo de ajuste (LoRA, QLoRA o full fine-tune), el numero de pasos, la tasa de aprendizaje ni la composicion del dataset. El nombre del repositorio sugiere un experimento con datos de numeros y colapso de secuencias, pero no hay informacion publica sobre el proceso de entrenamiento.
+El fine-tuning se realizo con Unsloth, que acelera el entrenamiento aproximadamente 2 veces mediante kernels optimizados, y con la libreria TRL de Hugging Face para el bucle de entrenamiento. No se especifica el metodo de ajuste (LoRA, QLoRA o full fine-tune), el numero de pasos, la tasa de aprendizaje ni la composicion del dataset. El nombre del repositorio sugiere un experimento con datos de numeros y colapso de secuencias, pero no hay informacion publica sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparativa se limita a la familia Qwen2.5-7B, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen14
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen14
 - Variante del mismo autor (gen11): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-gen11
 - Variante del mismo autor (run2-gen4): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4
 - Reporte tecnico de Qwen2.5 (arXiv): https://arxiv.org/pdf/2412.15115v2

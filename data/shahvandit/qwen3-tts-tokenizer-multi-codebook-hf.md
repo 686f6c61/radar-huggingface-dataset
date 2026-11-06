@@ -60,16 +60,16 @@ No se dispone de información sobre tokenizers de voz comparables en la document
 ## Limitaciones y advertencias
 
 - Es un checkpoint de prueba creado por un tercero (shahvandit) para facilitar las pruebas de integración de Transformers; no es una publicación oficial del equipo de Qwen.
-- No tiene descargas ni valoraciones en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- No tiene descargas ni valoraciones en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Al ser una conversión, podría presentar incompatibilidades menores con futuras versiones de Transformers si la implementación cambia.
 - La licencia Apache 2.0 se hereda del modelo original, pero se recomienda revisar los términos del modelo base de Qwen para uso comercial.
 - No se dispone de información sobre sesgos, alucinaciones o limitaciones de idioma, aunque al ser un tokenizer de audio, estos riesgos son menos relevantes que en modelos de lenguaje.
 
 ## Enlaces
 
-- [HuggingFace: shahvandit/qwen3-tts-tokenizer-multi-codebook-hf](https://huggingface.co/shahvandit/qwen3-tts-tokenizer-multi-codebook-hf)
-- [HuggingFace: Qwen/Qwen3-TTS-Tokenizer-12Hz](https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz)
+- [Hugging Face: shahvandit/qwen3-tts-tokenizer-multi-codebook-hf](https://huggingface.co/shahvandit/qwen3-tts-tokenizer-multi-codebook-hf)
+- [Hugging Face: Qwen/Qwen3-TTS-Tokenizer-12Hz](https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz)
 - [GitHub: QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
 - [Informe técnico de Qwen3-TTS (PDF)](https://raw.githubusercontent.com/QwenLM/Qwen3-TTS/refs/heads/main/assets/Qwen3_TTS.pdf)
 - [Informe técnico de Qwen3-TTS (arXiv)](https://arxiv.org/pdf/2601.15621)
-- [Colección Qwen3-TTS en HuggingFace](https://huggingface.co/collections/Qwen/qwen3-tts)
+- [Colección Qwen3-TTS en Hugging Face](https://huggingface.co/collections/Qwen/qwen3-tts)

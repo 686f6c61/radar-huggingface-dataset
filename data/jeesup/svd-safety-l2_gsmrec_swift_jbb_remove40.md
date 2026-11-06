@@ -6,7 +6,7 @@ Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove40 es un artefacto de investigación
 
 La relevancia de esta ficha es doble. Por un lado, documenta un caso concreto de compresión agresiva de un transformer de 6.738.415.616 parámetros (frente a los 6.738.415.616 del Llama-2-7b-chat original, ya que la eliminación afecta a componentes internos y no al recuento total de pesos del checkpoint) con calibración híbrida WikiText-2 más respuestas dañinas de JBB multiplicadas por 13. Por otro, publica métricas de seguridad y de rendimiento que muestran un equilibrio poco habitual: tasas de ataque exitoso (ASR) del 0,00 % en AdvBench y StrongREJECT, pero un rendimiento muy bajo en GSM8K (11,30 % estricto en 5-shot) y en IFEval (10,72 % estricto a nivel de prompt).
 
-El modelo conserva la licencia Llama 2 Community License y se distribuye en formato safetensors con la librería transformers, lo que permite cargarlo con el stack habitual de HuggingFace. Su utilidad principal es como referencia para investigaciones sobre compresión, alineamiento y sobreajuste a la seguridad, no como modelo de producción.
+El modelo conserva la licencia Llama 2 Community License y se distribuye en formato safetensors con la librería transformers, lo que permite cargarlo con el stack habitual de Hugging Face. Su utilidad principal es como referencia para investigaciones sobre compresión, alineamiento y sobreajuste a la seguridad, no como modelo de producción.
 
 ## Especificaciones tecnicas
 
@@ -74,9 +74,9 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove40 | 6.738.415.616 | No disponible | 11,30 % (5-shot estricto) | Llama 2 Community | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | No disponible en la información proporcionada | Llama 2 Community | HuggingFace |
-| Otros derivados comprimidos de Llama-2-7b-chat | No disponible | No disponible | No disponible | Llama 2 Community | HuggingFace |
+| Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove40 | 6.738.415.616 | No disponible | 11,30 % (5-shot estricto) | Llama 2 Community | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 | No disponible en la información proporcionada | Llama 2 Community | Hugging Face |
+| Otros derivados comprimidos de Llama-2-7b-chat | No disponible | No disponible | No disponible | Llama 2 Community | Hugging Face |
 
 La comparación directa con el modelo base no puede completarse porque la información proporcionada no incluye los resultados de Llama-2-7b-chat en GSM8K ni en las métricas de seguridad empleadas.
 
@@ -93,7 +93,7 @@ La comparación directa con el modelo base no puede completarse porque la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_jbb_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Proyecto svd_safety (referenciado en la model card, script `jobs/gsmrec_slurm.sh`): no se proporciona URL en la información disponible.

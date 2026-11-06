@@ -12,7 +12,7 @@ El interés actual del modelo reside en su función de verificación automática
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag de HuggingFace: `qwen3_5`; el autor no detalla la arquitectura en la model card) |
+| Arquitectura | no disponible (tag de Hugging Face: `qwen3_5`; el autor no detalla la arquitectura en la model card) |
 | Parámetros totales | 2.213.245.760 (≈2B) |
 | Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El interés actual del modelo reside en su función de verificación automática
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo: solo se conoce el tag `qwen3_5` en HuggingFace, lo que sugiere una base derivada de la familia Qwen3.5, y que el checkpoint se distribuye en BF16. No se especifican número de tokens de entrenamiento, composición del dataset, ni si hubo etapas de RLHF o DPO.
+La model card no describe la arquitectura interna del modelo: solo se conoce el tag `qwen3_5` en Hugging Face, lo que sugiere una base derivada de la familia Qwen3.5, y que el checkpoint se distribuye en BF16. No se especifican número de tokens de entrenamiento, composición del dataset, ni si hubo etapas de RLHF o DPO.
 
 El elemento técnico diferencial documentado es el modo de uso: el script de inferencia (`demo_value_head_gdn.py`) recibe tres entradas —imagen original, imagen renderizada del parseo y fichero de texto OCR— y produce una puntuación de fiabilidad, lo que implica una cabeza de valor (*value head*) sobre el modelo base. El modelo se integra en el stack FlagOS, con soporte de FlagScale (entrenamiento e inferencia distribuida), FlagGems (librería de operadores en Triton), FlagCX (comunicación) y FlagTree (compilador unificado), lo que permite el despliegue sobre 12 plataformas de cómputo distintas.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de propó
 
 | Modelo | Parámetros | Contexto | Función | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniCPM-OCR Jev (este) | ≈2B | no disponible | Inspector de calidad OCR | 0,936 | Apache 2.0 | HuggingFace + contenedor FlagOS |
+| MiniCPM-OCR Jev (este) | ≈2B | no disponible | Inspector de calidad OCR | 0,936 | Apache 2.0 | Hugging Face + contenedor FlagOS |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | Parseo OCR (texto, fórmulas, tablas) | no aplica (no es inspector) | no disponible en la información | Open source según model card |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | Modelo generalista multimodal | 0,938 | no disponible en la información | no disponible en la información |
 
@@ -101,7 +101,7 @@ La comparación relevante es la de eficiencia: Jev iguala en la práctica el AUR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-zhenwu-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-zhenwu-FlagOS
 - AnythingLLM (integración mencionada en la model card): https://anythingllm.com/
 - Triton (dependencia de FlagGems): https://github.com/openai/triton
 - Contenedor FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-jev-pp001-gems0.0.0-tree0.7.0-cxnone-pluginnone-vllm0.23.0-cp312-pt210-hggc130-x64-2.1.1-rbd225:202610271142`

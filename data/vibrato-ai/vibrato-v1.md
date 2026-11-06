@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables de analisis vocal con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vibrato-ai/vibrato-v1
+- Modelo en Hugging Face: https://huggingface.co/Vibrato-ai/vibrato-v1
 - Organizacion Vibrato-ai: https://huggingface.co/Vibrato-ai
 - Modelo sucesor v2: https://huggingface.co/Vibrato-ai/vibrato-v2
 - Dataset VocalSet (CC BY 4.0): Wilkins, Seetharaman, Wiss, Pardo, "VocalSet: A Singing Voice Dataset", ISMIR 2018. DOI: https://doi.org/10.5281/zenodo.1193957

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wrightdavid/quick-matching` es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas de *matching*. Lo publica el usuario wrightdavid en HuggingFace bajo licencia MIT. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
+`wrightdavid/quick-matching` es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas de *matching*. Lo publica el usuario wrightdavid en Hugging Face bajo licencia MIT. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es su tamaño: 24.832 parámetros totales según el fichero de pesos. Se trata, por tanto, de un modelo diminuto, varios órdenes de magnitud por debajo de un DeiT convencional (decenas de millones de parámetros), lo que sugiere una implementación reducida o de juguete destinada a validar código, formatos de fichero y recetas de entrenamiento antes de escalar.
 
@@ -94,7 +94,7 @@ Como referencia cualitativa, la categoria de modelos de emparejamiento visual su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wrightdavid/quick-matching
+- Hugging Face: https://huggingface.co/wrightdavid/quick-matching
 - Ficheros del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (referenciados en la model card; no se proporcionan URLs individuales)
 - Paper de DeiT: no disponible en la informacion proporcionada
 - Repositorio de codigo oficial: no disponible en la informacion proporcionada

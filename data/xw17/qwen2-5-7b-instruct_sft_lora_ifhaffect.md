@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario xw17, construido sobre el modelo base Qwen2.5-7B-Instruct de Alibaba Qwen. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de 7.000 millones de parametros, que en bfloat16 rondaria los 15 GB. Esto implica que para utilizarlo es imprescindible descargar por separado el modelo base original y aplicar despues el adaptador.
+xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario xw17, construido sobre el modelo base Qwen2.5-7B-Instruct de Alibaba Qwen. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors, un tamano coherente con un adaptador de bajo rango y no con un modelo completo de 7.000 millones de parametros, que en bfloat16 rondaria los 15 GB. Esto implica que para utilizarlo es imprescindible descargar por separado el modelo base original y aplicar despues el adaptador.
 
 El interes practico de esta publicacion es limitado a dia de hoy: la model card es la plantilla autogenerada de transformers, sin descripcion funcional, sin licencia declarada, sin idiomas indicados, sin datos de entrenamiento, sin hiperparametros y sin evaluacion. El propio autor no ha documentado ni el dataset utilizado (el sufijo "ifhaffect" sugiere un corpus no identificado) ni el procedimiento de ajuste. Como consecuencia, se trata de un artefacto experimental o de uso privado, no de un modelo listo para produccion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect | Adaptador LoRA sobre 7,61B (base) | No disponible (base: 131.072) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131.072 | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | HuggingFace |
+| xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect | Adaptador LoRA sobre 7,61B (base) | No disponible (base: 131.072) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131.072 | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | Hugging Face |
 
 La comparacion con el modelo base es la mas pertinente: este adaptador no anade capacidades verificables y, sin evaluacion, no puede afirmarse que supere a Qwen2.5-7B-Instruct en ninguna tarea.
 

@@ -75,8 +75,8 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Tipo | Rutas candidatas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `dhresearch/quality-router-v2-domain-code-policy` | Clasificador sklearn (joblib) | tool_route, cheap_model, medium_model, strong_model | other | HuggingFace, 0 descargas |
-| `dhresearch/quality-router-v2-economy-downrouter` | Router de economia relacionado | no disponible | no disponible | HuggingFace |
+| `dhresearch/quality-router-v2-domain-code-policy` | Clasificador sklearn (joblib) | tool_route, cheap_model, medium_model, strong_model | other | Hugging Face, 0 descargas |
+| `dhresearch/quality-router-v2-economy-downrouter` | Router de economia relacionado | no disponible | no disponible | Hugging Face |
 | Benchmarks de routers de OpenRouter | Referencia externa de evaluacion | no aplica | no disponible | https://openrouter.ai/benchmarks/routers |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-domain-code-policy
+- Pagina del modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-domain-code-policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 - Router de economia relacionado: https://huggingface.co/dhresearch/quality-router-v2-economy-downrouter
 - Perfil de la organizacion: https://huggingface.co/dhresearch

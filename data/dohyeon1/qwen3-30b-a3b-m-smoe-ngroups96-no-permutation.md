@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation es un checkpoint de 30.532.122.624 parámetros publicado en HuggingFace por el usuario Dohyeon1, derivado del modelo Qwen3-30B-A3B. El repositorio se etiqueta con la arquitectura `qwen3_moe` y la librería `transformers`, y ocupa 61,1 GB en formato safetensors, lo que corresponde a pesos en precisión completa (bf16/fp16) del modelo base. Por la nomenclatura del identificador, se trata de una variante experimental de mezcla de expertos dispersa (SMoE) con 96 grupos de expertos y sin permutación de los mismos, presumiblemente orientada a estudiar el comportamiento del enrutamiento frente al modelo original de 128 expertos.
+Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation es un checkpoint de 30.532.122.624 parámetros publicado en Hugging Face por el usuario Dohyeon1, derivado del modelo Qwen3-30B-A3B. El repositorio se etiqueta con la arquitectura `qwen3_moe` y la librería `transformers`, y ocupa 61,1 GB en formato safetensors, lo que corresponde a pesos en precisión completa (bf16/fp16) del modelo base. Por la nomenclatura del identificador, se trata de una variante experimental de mezcla de expertos dispersa (SMoE) con 96 grupos de expertos y sin permutación de los mismos, presumiblemente orientada a estudiar el comportamiento del enrutamiento frente al modelo original de 128 expertos.
 
-La relevancia de este tipo de artefactos es de carácter investigador: permiten comparar configuraciones de agrupación de expertos y evaluar el impacto de eliminar la permutación en el router sobre la calidad y la eficiencia de la inferencia. No obstante, el repositorio no aporta información sobre el entrenamiento, los datos utilizados, la licencia ni los idiomas soportados, y la model card es la plantilla genérica autogenerada por HuggingFace con todos los campos marcados como «More Information Needed».
+La relevancia de este tipo de artefactos es de carácter investigador: permiten comparar configuraciones de agrupación de expertos y evaluar el impacto de eliminar la permutación en el router sobre la calidad y la eficiencia de la inferencia. No obstante, el repositorio no aporta información sobre el entrenamiento, los datos utilizados, la licencia ni los idiomas soportados, y la model card es la plantilla genérica autogenerada por Hugging Face con todos los campos marcados como «More Information Needed».
 
 En el momento de redactar esta ficha (repositorio creado el 15 de septiembre de 2026), el modelo acumula 0 descargas y 0 «likes», y la búsqueda web no ha devuelto ningún resultado relevante asociado al mismo: los únicos enlaces recuperados pertenecen a un foro de Windows sin relación alguna con el modelo. Debe tratarse, por tanto, como un experimento sin validación pública ni benchmarks.
 
@@ -29,7 +29,7 @@ En el momento de redactar esta ficha (repositorio creado el 15 de septiembre de 
 
 El repositorio se publica con la etiqueta de arquitectura `qwen3_moe`, lo que indica que los pesos siguen el esquema de transformer con mezcla de expertos (MoE) introducido en la familia Qwen3. En un modelo MoE de este tipo, cada capa de alimentación hacia delante se sustituye por un conjunto de expertos y un router que selecciona un subconjunto por token, de modo que el coste de cómputo por token depende de los parámetros activos y no de los totales. La variante aquí publicada modifica presuntamente dos aspectos del esquema original: el número de grupos de expertos, fijado en 96 según el propio identificador del modelo, y la eliminación de la permutación de expertos, práctica habitual para equilibrar la carga entre dispositivos.
 
-No se dispone de información alguna sobre el proceso de entrenamiento de este checkpoint: ni el número de tokens, ni la composición del dataset, ni si hubo ajuste por instrucciones (SFT), optimización por preferencias (RLHF/DPO) o una fase de razonamiento con RL. Tampoco se documenta si el modelo se obtuvo mediante un entrenamiento desde cero sobre la arquitectura modificada, mediante una conversión de los pesos del Qwen3-30B-A3B original o mediante un ajuste fino posterior. La model card únicamente contiene la plantilla automática de HuggingFace con todos los apartados sin rellenar, y no se ha publicado ningún artículo, informe técnico ni repositorio de código asociado.
+No se dispone de información alguna sobre el proceso de entrenamiento de este checkpoint: ni el número de tokens, ni la composición del dataset, ni si hubo ajuste por instrucciones (SFT), optimización por preferencias (RLHF/DPO) o una fase de razonamiento con RL. Tampoco se documenta si el modelo se obtuvo mediante un entrenamiento desde cero sobre la arquitectura modificada, mediante una conversión de los pesos del Qwen3-30B-A3B original o mediante un ajuste fino posterior. La model card únicamente contiene la plantilla automática de Hugging Face con todos los apartados sin rellenar, y no se ha publicado ningún artículo, informe técnico ni repositorio de código asociado.
 
 Como consecuencia, cualquier afirmación sobre innovaciones técnicas concretas (decodificación especulativa, atención lineal, modos de razonamiento explícitos) sería especulativa y no se incluye en esta ficha.
 
@@ -76,7 +76,7 @@ Los datos de la fila correspondiente al modelo base proceden de la documentació
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation | 30.532 M | No disponible | No disponible | No disponible | Repositorio HuggingFace, sin cuantizaciones ni benchmarks |
+| Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation | 30.532 M | No disponible | No disponible | No disponible | Repositorio Hugging Face, sin cuantizaciones ni benchmarks |
 | Qwen3-30B-A3B (modelo base, datos publicos) | ~30.500 M | ~3.300 M | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 (segun documentacion publica del base) | Ampliamente distribuido, con versiones GGUF y cuantizadas |
 | Otros modelos comparables de ~30B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se dispone de información suficiente para establecer comparaciones cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation
+- Repositorio en Hugging Face: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-M-SMoE-ngroups96-no-permutation
 - Articulo citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la model card: https://mlco2.github.io/impact
 - No se han encontrado articulos, repositorios de codigo, demos ni publicaciones de blog asociados a este modelo en la busqueda web realizada. Los unicos resultados devueltos pertenecen a un foro de Windows 10 sin relacion con el modelo.

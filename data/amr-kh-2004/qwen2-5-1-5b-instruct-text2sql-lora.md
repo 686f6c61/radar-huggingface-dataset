@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Instruct-text2sql-lora es un adaptador LoRA publicado en HuggingFace por el usuario Amr-Kh-2004. Se trata de un ajuste fino del modelo unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit (a su vez, una version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct), entrenado con las librerias Unsloth y TRL. El identificador del repositorio indica que el objetivo del ajuste es la tarea de traduccion de lenguaje natural a SQL (text2sql).
+Qwen2.5-1.5B-Instruct-text2sql-lora es un adaptador LoRA publicado en Hugging Face por el usuario Amr-Kh-2004. Se trata de un ajuste fino del modelo unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit (a su vez, una version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct), entrenado con las librerias Unsloth y TRL. El identificador del repositorio indica que el objetivo del ajuste es la tarea de traduccion de lenguaje natural a SQL (text2sql).
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2, con aproximadamente 1.500 millones de parametros en el modelo base y licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. El adaptador declara unicamente el idioma ingles en su model card, aunque el modelo base de Qwen2.5 es multilingue por diseno.
 
@@ -22,9 +22,9 @@ La relevancia de esta publicacion es limitada en el momento de redactar esta fic
 | Formato de pesos | safetensors (adaptador LoRA); compatible con endpoints_compatible y text-generation-inference segun las etiquetas |
 | Libreria de referencia | transformers (etiquetas adicionales: unsloth, trl, text-generation-inference) |
 | Modelo base | unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento no es posible: no existen benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amr-Kh-2004/Qwen2.5-1.5B-Instruct-text2sql-lora
+- Modelo en Hugging Face: https://huggingface.co/Amr-Kh-2004/Qwen2.5-1.5B-Instruct-text2sql-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devuelven paginas no relacionadas (fabricante de maquinaria forestal AMR, robots moviles autonimos y la entrada "AMR" de Wikipedia), por lo que no se incluyen como referencias tecnicas.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, alojado en HuggingFace bajo el identificador `ABDULRAHMANALZ/paper_007431293_contrastive_learning`, no contiene un modelo de aprendizaje automatico en el sentido clasico (no hay pesos, arquitectura ni checkpoint). Se trata de un artefacto textual: un articulo cientifico en formato Markdown cuyo tema central es el aprendizaje contrastivo. El autor, `ABDULRAHMANALZ`, ha estructurado el repositorio como un contenedor para un documento de investigacion, con metadatos que describen el formato (HTML), el estilo de citacion (numeric bibtex) y la estructura del articulo (introduccion, metodo, experimentos, trabajos relacionados y conclusion).
+Este repositorio, alojado en Hugging Face bajo el identificador `ABDULRAHMANALZ/paper_007431293_contrastive_learning`, no contiene un modelo de aprendizaje automatico en el sentido clasico (no hay pesos, arquitectura ni checkpoint). Se trata de un artefacto textual: un articulo cientifico en formato Markdown cuyo tema central es el aprendizaje contrastivo. El autor, `ABDULRAHMANALZ`, ha estructurado el repositorio como un contenedor para un documento de investigacion, con metadatos que describen el formato (HTML), el estilo de citacion (numeric bibtex) y la estructura del articulo (introduccion, metodo, experimentos, trabajos relacionados y conclusion).
 
 El contenido principal es un archivo llamado `paper_007431293_contrastive_learning.md`, que constituye el unico artefacto del repositorio. La relevancia de este repositorio no reside en un modelo desplegable, sino en la difusion de conocimiento cientifico sobre una de las tecnicas mas influyentes en el aprendizaje autosupervisado actual. El aprendizaje contrastivo es una metodologia que entrena modelos para distinguir entre pares de muestras similares y disimiles, y ha impulsado avances significativos en vision por computador y procesamiento de lenguaje natural.
 
@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [ABDULRAHMANALZ/paper_007431293_contrastive_learning](https://huggingface.co/ABDULRAHMANALZ/paper_007431293_contrastive_learning)
+- Repositorio en Hugging Face: [ABDULRAHMANALZ/paper_007431293_contrastive_learning](https://huggingface.co/ABDULRAHMANALZ/paper_007431293_contrastive_learning)
 - Documento sobre visualizacion y entendimiento del aprendizaje contrastivo (referencia externa): [Visualizing and Understanding Contrastive Learning](https://arxiv.org/html/2206.09753v3)
 - Encuesta exhaustiva sobre aprendizaje contrastivo: [A comprehensive survey on contrastive learning](https://www.sciencedirect.com/science/article/pii/S0925231224014164)
 - Articulo sobre deteccion de texto generado por IA con aprendizaje contrastivo: [Is Contrasting All You Need?](https://arxiv.org/abs/2407.09364)

@@ -23,13 +23,13 @@ El repositorio (0,6 GB) contiene exclusivamente código fuente, documentación y
 
 La arquitectura se articula en dos bloques principales. Por un lado, un codificador de cajas (`boxes.py`) que modela las representaciones ocultas como regiones geométricas y calcula señales como la fuga geométrica causal de la caja en el instante `t` respecto a la de `t-1`, la tasa de contracción `κ_t` y el residuo de concretización `m_t` (predicción frente a caja). Por otro, una red de impulsos recurrente con neuronas LIF modulada por volumen (`rsnn.py`), que procesa esas señales y produce una cabeza de reconstrucción con control de compuertas por canal. La dimensión de entrada de la RSNN es `2d + k + 5`, donde `d` es la dimensión de la caja y `k` la dimensión de la proyección MRL del trazo de KL.
 
-El detector recibe seis canales de entrada: (1) fuga geométrica causal, (2) tasa de contracción, (3) trazo de KL comprimido mediante MRL, (4) varianza de la KL entre capas, (5) entropía de atención y rango efectivo, y (6) residuo de concretización. Las señales 1, 2 y 6 provienen del codificador de cajas; la 3 y la 4 de `signals.py`; y la 5 se obtiene opcionalmente de un LLM de HuggingFace. El entrenamiento es no supervisado sobre secuencias sintéticas o sobre señales reales extraídas de un LLM, con una pérdida combinada que incluye reconstrucción robusta (recortada), contención, volumen y contracción anclada. No se documentan en la información proporcionada ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF o DPO.
+El detector recibe seis canales de entrada: (1) fuga geométrica causal, (2) tasa de contracción, (3) trazo de KL comprimido mediante MRL, (4) varianza de la KL entre capas, (5) entropía de atención y rango efectivo, y (6) residuo de concretización. Las señales 1, 2 y 6 provienen del codificador de cajas; la 3 y la 4 de `signals.py`; y la 5 se obtiene opcionalmente de un LLM de Hugging Face. El entrenamiento es no supervisado sobre secuencias sintéticas o sobre señales reales extraídas de un LLM, con una pérdida combinada que incluye reconstrucción robusta (recortada), contención, volumen y contracción anclada. No se documentan en la información proporcionada ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
 - Detección de alucinaciones a nivel de token sobre las salidas de un LLM, no generación de texto.
 - Entrenamiento no supervisado sobre secuencias mayoritariamente fundamentadas (`grounded`), con soporte para contaminación controlada y recorte robusto (`--contaminate`, `--trim`).
-- Extracción opcional de señales internas de un LLM de HuggingFace (por defecto `Qwen/Qwen2.5-0.5B-Instruct`) mediante una única pasada forward con estados ocultos y atenciones.
+- Extracción opcional de señales internas de un LLM de Hugging Face (por defecto `Qwen/Qwen2.5-0.5B-Instruct`) mediante una única pasada forward con estados ocultos y atenciones.
 - Detección de "estallidos de fundamentación" (grounding bursts) de extremo a extremo a través del módulo `detector.py`.
 - Cálculo de métricas de evaluación token a token: AUPRC y tiempo de adelanto (`τ_lead`).
 - Atribución por canal de las compuertas (per-channel gate attribution) para interpretar qué señal contribuye a la detección.
@@ -86,7 +86,7 @@ Los únicos detectores de referencia mencionados explícitamente en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-submission-hugging-face/Lattice_Spike
+- Modelo en Hugging Face: https://huggingface.co/anonymous-submission-hugging-face/Lattice_Spike
 - Protocolo de evaluación v5.3: `docs/paper_ready_evaluation.md` (ruta interna del repositorio, sin URL pública)
 - Resultados consolidados de diagnóstico en datos reales: `docs/latticespike_experiment_results.md` (ruta interna del repositorio, sin URL pública)
 - Paper de la arquitectura: `lattice_snn_hallucination.tex` (fichero interno del repositorio, sin URL pública)

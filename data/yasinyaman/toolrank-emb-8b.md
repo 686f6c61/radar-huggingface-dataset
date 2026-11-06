@@ -122,7 +122,7 @@ No se dispone en la informacion proporcionada de comparaciones con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasinyaman/toolrank-emb-8b
+- Modelo en Hugging Face: https://huggingface.co/yasinyaman/toolrank-emb-8b
 - Modelo base Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Repositorio de codigo de toolrank: https://github.com/yasinyaman/toolrank
 - Documentacion del proyecto: https://yaman.dev/toolrank/
@@ -130,4 +130,4 @@ No se dispone en la informacion proporcionada de comparaciones con otros modelos
 - Dataset de entrenamiento: https://huggingface.co/datasets/mangopy/ToolRet-Training-20w
 - Repositorio de codigo del benchmark ToolRet: https://github.com/mangopy/tool-retrieval-benchmark (referenciado como `mangopy/tool-retrieval-benchmark`)
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces utilizables son los que aparecen en la informacion de HuggingFace y en la model card del autor.
+Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces utilizables son los que aparecen en la informacion de Hugging Face y en la model card del autor.

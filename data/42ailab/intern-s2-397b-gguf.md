@@ -101,7 +101,7 @@ Alternativas de otros fabricantes en la misma categoria de tamano o tarea: no di
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/42ailab/Intern-S2-397B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/42ailab/Intern-S2-397B-GGUF
 - Modelo base oficial: https://huggingface.co/internlm/Intern-S2-397B
 - Model card oficial del modelo base (referenciada para benchmarks): https://huggingface.co/internlm/Intern-S2-397B
 - Informe tecnico de Intern-S2-Preview (arXiv:2608.13505, describe la version Preview, no esta release): https://arxiv.org/abs/2608.13505

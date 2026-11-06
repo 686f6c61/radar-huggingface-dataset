@@ -26,7 +26,7 @@ El modelo declara 83,46 % de top-1 y 99,84 % de top-5 en el split de test de 10 
 | Tamano del repositorio | 0,1 GB |
 | Libreria / framework | timm + PyTorch |
 | Dataset de ajuste | dronefreak/BDD100K-Weather-Classification (derivado de BDD100K) |
-| Fecha de publicacion | 5 de octubre de 2026 (segun HuggingFace) |
+| Fecha de publicacion | 5 de octubre de 2026 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -125,7 +125,7 @@ Lectura de la comparativa: en top-1, EfficientViT-B2 queda practicamente empatad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b2
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b2
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de ajuste: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Modelo base: https://huggingface.co/timm/efficientvit_b2.r224_in1k

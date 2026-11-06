@@ -219,7 +219,7 @@ El comparativo relevante no es frente a otros clasificadores, sino frente a los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minnq/prefill-introspection-intention-classifier
+- Modelo en Hugging Face: https://huggingface.co/minnq/prefill-introspection-intention-classifier
 - Modelo compañero (sonda de manipulación): https://huggingface.co/minnq/prefill-introspection-tampering-classifier
 - Paper: https://arxiv.org/abs/2606.23671
 - Repositorio de código: https://github.com/ngqm/prefill-introspection

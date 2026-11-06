@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mkdemir8/zero-shot-transfer-survey
+- Repositorio en Hugging Face: https://huggingface.co/mkdemir8/zero-shot-transfer-survey
 - Articulo relacionado sobre generacion con datos limitados: https://arxiv.org/abs/2307.14397
 - Encuesta sobre generacion con datos limitados (OpenReview): https://openreview.net/forum?id=u7GTHazuRp
 - Articulo sobre transferencia zero-shot con modelos neurosimbolicos: https://arxiv.org/abs/2608.17959

@@ -83,8 +83,8 @@ Velocidad con dos DGX Spark, ventana de 1M por defecto, una conversacion, respue
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.1-flash-1019-exl3-2.71bpw (este pack) | 560B totales, ~25B activos | 1.048.576 | EXL3 2,71 bpw, 197 GB | MIT | HuggingFace, validado en 2x DGX Spark |
-| Ling-3.1-flash-1019 (FP8, inclusionAI) | 560B totales, ~25B activos | 262.144 nativos (1M con YaRN) | FP8 | MIT | HuggingFace |
+| Ling-3.1-flash-1019-exl3-2.71bpw (este pack) | 560B totales, ~25B activos | 1.048.576 | EXL3 2,71 bpw, 197 GB | MIT | Hugging Face, validado en 2x DGX Spark |
+| Ling-3.1-flash-1019 (FP8, inclusionAI) | 560B totales, ~25B activos | 262.144 nativos (1M con YaRN) | FP8 | MIT | Hugging Face |
 | Pack EXL3 3,03 bpw de Bertholomus AI | 560B totales, ~25B activos | No disponible | EXL3 3,03 bpw | No disponible | Referenciado como punto de comparacion |
 
 Frente al FP8 original, este pack reduce el peso a 197 GB a cambio de un 6,6% mas de perplejidad y una divergencia KL de 0,150; frente al pack de 3,03 bpw, ofrece cifras de calidad practicamente identicas en MMLU-Pro y GSM8K con menor huella de memoria, aunque peor fidelidad token a token.
@@ -102,7 +102,7 @@ Frente al FP8 original, este pack reduce el peso a 197 GB a cambio de un 6,6% ma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ajensenwaud/Ling-3.1-flash-1019-exl3-2.71bpw
+- Hugging Face: https://huggingface.co/ajensenwaud/Ling-3.1-flash-1019-exl3-2.71bpw
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
 - Proyecto LingSpark: https://github.com/ajensenwaud/lingspark-2dgx
 - Creditos de LingSpark: https://github.com/ajensenwaud/lingspark-2dgx/blob/main/CREDITS.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000` es un ajuste fino mediante LoRA sobre π0.5 (pi05), un modelo de vision-lenguaje-accion (VLA) orientado al control de robots manipuladores. Lo publica el usuario `fm-dev` en HuggingFace con pipeline `robotics` y etiquetas `robotics, pi05, franka, lora`. Está especializado en la tarea interna denominada `button_order`, ejecutada sobre un brazo Franka, y corresponde a la segunda ronda de entrenamiento (`r2`), separada del experimento original de 6.250 pasos.
+El modelo `fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000` es un ajuste fino mediante LoRA sobre π0.5 (pi05), un modelo de vision-lenguaje-accion (VLA) orientado al control de robots manipuladores. Lo publica el usuario `fm-dev` en Hugging Face con pipeline `robotics` y etiquetas `robotics, pi05, franka, lora`. Está especializado en la tarea interna denominada `button_order`, ejecutada sobre un brazo Franka, y corresponde a la segunda ronda de entrenamiento (`r2`), separada del experimento original de 6.250 pasos.
 
 El checkpoint publicado es el paso 7.000, que según la model card representa 28.000 exposiciones de muestras de un total previsto de 12.500 actualizaciones del optimizador y 50.000 exposiciones. El entrenamiento se realizó en local sobre 4 GPU RTX A6000, con lote global 4, lote por GPU 1 y sin acumulación de gradiente, usando AdamW, LoRA de rango 32, semilla 42 y EMA con factor 0,999^4 = 0,996005996001. El repositorio ocupa 12,8 GB e incluye pesos EMA de servicio, activos de normalización e historial, código de inferencia y estado completo de reanudación (no EMA, optimizador, RNG y sampler).
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000 | no disponible | 32 fotogramas (528 tokens visuales) + Status de 48 pasos en la variante Status-D | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000 | no disponible | 32 fotogramas (528 tokens visuales) + Status de 48 pasos en la variante Status-D | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | π0.5 base | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | π0 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otros VLA afinados por tarea | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -94,6 +94,6 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step7000
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las busquedas devolvieron exclusivamente sitios de radio en linea en frances (radio-en-ligne.fr, fr.wikipedia.org/wiki/Radio_FM, last.fm, cheriefm.fr, radio-en-direct.app), sin relacion con el modelo.
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

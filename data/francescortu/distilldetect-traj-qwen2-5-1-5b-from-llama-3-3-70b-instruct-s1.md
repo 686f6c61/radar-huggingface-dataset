@@ -69,7 +69,7 @@ El modelo base sin entrenar obtiene 65,88 en GSM8K, por lo que el checkpoint fin
 - Inferencia en FP16: aproximadamente 3 GB de VRAM (1,5B parámetros × 2 bytes), por lo que cabe en GPUs consumer como RTX 3060, RTX 4060 o superiores.
 - Con cuantización de 4 bits: alrededor de 0,75-1 GB de VRAM, ejecutable en GPUs con 4 GB o incluso en CPU con suficiente RAM.
 - Para entrenamiento o fine-tune adicional: se recomienda al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100) dado el uso de bf16 y gradient checkpointing.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, TGI, llama.cpp, Ollama o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, TGI, llama.cpp, Ollama o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se proporcionan datos oficiales; para un modelo de 1,5B en una GPU moderna se espera una latencia de decodificación de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se han encontrado otros modelos de detección de destilación con checkpoints
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-s1
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-s1
 - Modelo final (checkpoint 100%): https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-s1
 - Colección de reproducción: https://huggingface.co/collections/francescortu/distilldetect-reproduction-arxiv-260709692
 - Artículo arXiv: https://arxiv.org/abs/2607.09692

@@ -80,12 +80,12 @@ No disponible. La informacion proporcionada no incluye otros LoRAs de personaje 
 - Riesgo de sobreajuste al estilo del checkpoint Illustrious: la estetica resultante esta fuertemente condicionada por el base.
 - Solo se documentan prompts en ingles y chino; no hay evidencia de soporte para prompts en castellano.
 - Repositorio sin descargas ni likes en el momento de la consulta: no hay validacion externa de la comunidad.
-- El identificador del modelo incluye "Lora" con capitalizacion irregular y el autor publica en HuggingFace y ModelScope, lo que puede generar confusion sobre cual es la copia canonica.
+- El identificador del modelo incluye "Lora" con capitalizacion irregular y el autor publica en Hugging Face y ModelScope, lo que puede generar confusion sobre cual es la copia canonica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/SurugaKanbaru-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/SurugaKanbaru-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/SurugaKanbaru-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/SurugaKanbaru-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/SurugaKanbaru-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/SurugaKanbaru-Dataset
 - Notas de evaluacion en chino (ruta dentro del repo): `evaluation/横向测评记录.md`

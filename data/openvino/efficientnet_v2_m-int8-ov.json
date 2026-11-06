@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenVINO/efficientnet_v2_m-int8-ov",
+  "slug": "openvino-efficientnet_v2_m-int8-ov",
+  "author": "OpenVINO",
+  "url": "https://huggingface.co/OpenVINO/efficientnet_v2_m-int8-ov",
+  "created_at": "2026-04-16T08:23:52.000Z",
+  "updated_at": "2026-11-06T11:00:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Classification",
+    "image-classification",
+    "vision",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255749372,
+  "storage_human": "256 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks."
+    },
+    {
+      "title": "GitHub - openvinotoolkit/openvino: OpenVINO™ is an open source toolkit ...",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "snippet": "Documentation User documentation contains detailed information about OpenVINO and guides you from installation through optimizing and deploying models for your AI applications. Developer documentation focuses on the OpenVINO architecture and describes building and contributing processes."
+    },
+    {
+      "title": "README.md · OpenVINO/efficientnet_v2_m-int8-ov at main",
+      "url": "https://huggingface.co/OpenVINO/efficientnet_v2_m-int8-ov/blob/main/README.md",
+      "snippet": "Description This is a torchvision version of efficientnet_v2_m model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT8."
+    },
+    {
+      "title": "OpenVINO/efficientnet_v2_l-int8-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/efficientnet_v2_l-int8-ov",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Intel® Distribution of OpenVINO™ Toolkit",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+      "snippet": "OpenVINO™ toolkit is an open source toolkit that accelerates AI inference with lower latency and higher throughput while …"
+    }
+  ]
+}

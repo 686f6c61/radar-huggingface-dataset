@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B es un modelo causal multimodal (texto e imagen) de la familia Qwen3.5, desarrollado por Alibaba Qwen y publicado con licencia Apache-2.0. Esta ficha corresponde a la copia alojada por el usuario `nam194` en HuggingFace, cuyo modelo base declarado es `Qwen/Qwen3.5-0.8B-Base`. Con 873.438.784 parámetros reales (etiquetado comercialmente como 0,8B), está pensado para prototipado, ajuste fino específico de tarea y experimentación, según indica la propia model card.
+Qwen3.5-0.8B es un modelo causal multimodal (texto e imagen) de la familia Qwen3.5, desarrollado por Alibaba Qwen y publicado con licencia Apache-2.0. Esta ficha corresponde a la copia alojada por el usuario `nam194` en Hugging Face, cuyo modelo base declarado es `Qwen/Qwen3.5-0.8B-Base`. Con 873.438.784 parámetros reales (etiquetado comercialmente como 0,8B), está pensado para prototipado, ajuste fino específico de tarea y experimentación, según indica la propia model card.
 
 La relevancia del modelo radica en su arquitectura híbrida: combina capas de atención lineal Gated DeltaNet con capas de atención clásica ("Gated Attention") en un patrón repetido, lo que reduce el coste de inferencia en contextos largos frente a un transformer denso convencional. Incorpora además un codificador de visión con fusión temprana, de modo que procesa imágenes y texto de forma nativa, y soporta una ventana de contexto nativa de 262.144 tokens.
 
@@ -93,7 +93,7 @@ El modelo se sitúa por debajo de sus hermanos mayores de la familia en conocimi
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia nam194): https://huggingface.co/nam194/Qwen3.5-0.8B
+- Modelo en Hugging Face (copia nam194): https://huggingface.co/nam194/Qwen3.5-0.8B
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

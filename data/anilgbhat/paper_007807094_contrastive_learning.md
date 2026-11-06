@@ -63,7 +63,7 @@ No disponible. No existe ningún modelo comparable, ya que el repositorio no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [anilgbhat/paper_007807094_contrastive_learning](https://huggingface.co/anilgbhat/paper_007807094_contrastive_learning)
+- Repositorio en Hugging Face: [anilgbhat/paper_007807094_contrastive_learning](https://huggingface.co/anilgbhat/paper_007807094_contrastive_learning)
 - Resultados de busqueda web (no afiliados al repositorio):
   - [A comprehensive survey on contrastive learning - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0925231224014164)
   - [Learning from History: Task-agnostic Model Contrastive Learning for ... - arXiv](https://arxiv.org/abs/2309.06023)

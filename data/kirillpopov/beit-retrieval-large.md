@@ -44,7 +44,7 @@ No se ha realizado ningún entrenamiento real. El checkpoint `model.safetensors`
 Dado que el modelo no está entrenado, los casos de uso reales son muy limitados y de carácter técnico:
 
 - **Pruebas de humo en pipelines de entrenamiento**: el checkpoint de inicialización permite verificar que el script `train.py` ejecuta un paso de avance y retropropagación sin errores, antes de lanzar un entrenamiento completo con datos reales.
-- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, los desarrolladores pueden usar este repositorio para escribir un adaptador que permita cargar los pesos con APIs genéricas de HuggingFace, ya que la model card advierte que se requiere un adaptador explícito.
+- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, los desarrolladores pueden usar este repositorio para escribir un adaptador que permita cargar los pesos con APIs genéricas de Hugging Face, ya que la model card advierte que se requiere un adaptador explícito.
 - **Validación de infraestructura de CI/CD**: en un entorno de integración continua, se puede ejecutar el script de ejemplo para comprobar que las dependencias, la GPU y el entorno de ejecución están correctamente configurados.
 - **Estudio de arquitecturas alternativas**: investigadores pueden analizar la implementación de atención *grouped query* y fusión por tensores en un contexto de *retrieval*, aunque con un modelo de 33K parámetros las conclusiones escalables son limitadas.
 - **Benchmarking de frameworks de inferencia**: aunque no hay pesos útiles, se puede medir el tiempo de carga y la huella de memoria del checkpoint para comparar frameworks como PyTorch, ONNX Runtime o TensorRT.
@@ -74,9 +74,9 @@ No se dispone de modelos comparables en la misma categoría. Este checkpoint no 
 - **Limitaciones de contexto e idioma**: no se especifican; la implementación no incluye un tokenizador ni un pipeline de inferencia estándar.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que deben revisarse los términos de los datos externos si se usa con conjuntos de datos como Flickr30k.
 - **Advertencia para producción**: no debe usarse en ningún entorno de producción. Es un esqueleto de código para desarrollo e investigación.
-- **Falta de integración**: las APIs genéricas de HuggingFace no pueden cargar este modelo sin un adaptador explícito, lo que dificulta su uso práctico.
+- **Falta de integración**: las APIs genéricas de Hugging Face no pueden cargar este modelo sin un adaptador explícito, lo que dificulta su uso práctico.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Kirillpopov/beit-retrieval-large)
+- [Repositorio en Hugging Face](https://huggingface.co/Kirillpopov/beit-retrieval-large)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web realizada.

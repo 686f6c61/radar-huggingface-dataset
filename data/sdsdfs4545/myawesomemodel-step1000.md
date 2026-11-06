@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000 es un checkpoint de entrenamiento del modelo MyAwesomeModel, desarrollado por el usuario sdsdfs4545. Se trata de un modelo publicado en HuggingFace bajo licencia MIT y etiquetado con la librería transformers, pipeline feature-extraction y la etiqueta bert, lo que sugiere una arquitectura basada en Transformer. El checkpoint corresponde al paso 1000 del entrenamiento, tal como indica el nombre del repositorio y la model card.
+MyAwesomeModel-step1000 es un checkpoint de entrenamiento del modelo MyAwesomeModel, desarrollado por el usuario sdsdfs4545. Se trata de un modelo publicado en Hugging Face bajo licencia MIT y etiquetado con la librería transformers, pipeline feature-extraction y la etiqueta bert, lo que sugiere una arquitectura basada en Transformer. El checkpoint corresponde al paso 1000 del entrenamiento, tal como indica el nombre del repositorio y la model card.
 
 La model card reporta una puntuación ponderada global de evaluación de 0.710, con resultados desglosados en quince benchmarks que cubren razonamiento, comprensión del lenguaje, generación y capacidades especializadas. No se proporcionan datos sobre el tamaño del modelo, la longitud de contexto ni el proceso de entrenamiento, por lo que la información disponible es limitada y orientada principalmente a resultados de evaluación.
 
@@ -29,7 +29,7 @@ La búsqueda web incluye un repositorio relacionado, `sdsffs5/MyAwesomeModel-ste
 
 ## Capacidades
 
-- Extracción de características: el pipeline de HuggingFace es feature-extraction, por lo que el modelo puede emplearse para obtener representaciones vectoriales de texto.
+- Extracción de características: el pipeline de Hugging Face es feature-extraction, por lo que el modelo puede emplearse para obtener representaciones vectoriales de texto.
 - Razonamiento matemático: puntuación de 0.550 en el benchmark de matemáticas.
 - Razonamiento lógico: puntuación de 0.819 en el benchmark de razonamiento lógico.
 - Sentido común: puntuación de 0.736 en el benchmark de sentido común.
@@ -88,7 +88,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue: no disponible.
 - Latencia y throughput estimados: no disponible.
-- La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con los endpoints de HuggingFace, pero no se especifican requisitos de hardware.
+- La etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con los endpoints de Hugging Face, pero no se especifican requisitos de hardware.
 
 ## Comparativa con modelos similares
 
@@ -105,6 +105,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdsdfs4545/MyAwesomeModel-step1000
+- Hugging Face: https://huggingface.co/sdsdfs4545/MyAwesomeModel-step1000
 - Modelo relacionado (versión posterior): https://huggingface.co/sdsffs5/MyAwesomeModel-step_1000
 - Modelo relacionado (repositorio general): https://huggingface.co/sdsffs5/MyAwesomeModel

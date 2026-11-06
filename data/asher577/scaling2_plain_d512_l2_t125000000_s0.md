@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t125000000_s0` es un modelo de lenguaje de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo destinado a uso en producción ni a tareas generales, sino un artefacto experimental dentro de un estudio de escalado sobre sparsity estructural en transformers pequeños.
+`scaling2_plain_d512_L2_t125000000_s0` es un modelo de lenguaje de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer con dispersión de pesos (weight-sparse) entrenado siguiendo el procedimiento descrito por Gao et al. (2025). No es un modelo destinado a uso en producción ni a tareas generales, sino un artefacto experimental dentro de un estudio de escalado sobre sparsity estructural en transformers pequeños.
 
 El modelo es extremadamente compacto: 2 capas, dimensión de modelo 512, dimensión de cabeza 16 y un vocabulario de 4096 tokens. Su longitud de contexto es de 512 tokens y fue entrenado sobre 125 millones de tokens del dataset `jacobcd52/simplestories-tokenized`, usando el tokenizador SimpleStories-1.25M. La nomenclatura del identificador refleja estos hiperparámetros (`d512`, `L2`, `t125000000`, `s0`).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| scaling2_plain_d512_L2_t125000000_s0 | no disponible (2 capas, d=512) | 512 | no disponible | HuggingFace (repo de investigación) |
+| scaling2_plain_d512_L2_t125000000_s0 | no disponible (2 capas, d=512) | 512 | no disponible | Hugging Face (repo de investigación) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables dentro del mismo estudio ni sobre alternativas públicas con características equivalentes en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables dentro del mismo estudio
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/asher577/scaling2_plain_d512_L2_t125000000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/asher577/scaling2_plain_d512_L2_t125000000_s0)
 - [Run de Weights & Biases](https://wandb.ai/asher577/scd_scaling/runs/p5uvymew)
 - [Dataset jacobcd52/simplestories-tokenized](https://huggingface.co/datasets/jacobcd52/simplestories-tokenized)
 - [Tokenizer SimpleStories/SimpleStories-1.25M](https://huggingface.co/SimpleStories/SimpleStories-1.25M)

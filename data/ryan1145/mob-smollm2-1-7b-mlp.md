@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mob-smollm2-1.7b-mlp | 31,9 M (cabeza) + backbone 1,7B | no disponible | Cabeza MoB con códigos binarios semánticos | MIT | HuggingFace (repo de 0,1 GB) |
-| SmolLM2-1.7B (profesor) | 1,7B | no disponible en esta ficha | Transformer decoder con softmax completa | no disponible en esta ficha | HuggingFace |
+| mob-smollm2-1.7b-mlp | 31,9 M (cabeza) + backbone 1,7B | no disponible | Cabeza MoB con códigos binarios semánticos | MIT | Hugging Face (repo de 0,1 GB) |
+| SmolLM2-1.7B (profesor) | 1,7B | no disponible en esta ficha | Transformer decoder con softmax completa | no disponible en esta ficha | Hugging Face |
 | CFHead | no disponible | no disponible | Cabeza alternativa de clasificación/decodificación | no disponible | Referenciada en la model card |
 
 La model card señala que la comparación del proyecto encontró un rendimiento cercano a CFHead en varios ajustes, pero sin superar su equilibrio global de aceleración. No se dispone de datos suficientes para comparar parámetros, contexto o benchmarks frente a otras cabezas de salida.
@@ -88,6 +88,6 @@ La model card señala que la comparación del proyecto encontró un rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryan1145/mob-smollm2-1.7b-mlp
+- Modelo en Hugging Face: https://huggingface.co/ryan1145/mob-smollm2-1.7b-mlp
 - Repositorio de código MoB_Head: https://github.com/ryan-he-47/MoB_Head
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B

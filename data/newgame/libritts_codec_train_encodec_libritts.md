@@ -40,7 +40,7 @@ El entrenamiento utiliza una combinación de pérdidas de reconstrucción, adver
 - Investigacion en codecs neuronales: ofrece una base para comparar arquitecturas GANCodec frente a otros codecs como EnCodec original, mediante las metricas incluidas en la model card.
 - Mejora de calidad de audio en comunicaciones: puede emplearse para reconstruir senales degradadas o de baja calidad en sistemas de telepresencia o grabacion de campo.
 - Integracion en pipelines de ESPnet3: el modelo se usa como componente en tareas de reconocimiento o sintesis de voz dentro del ecosistema ESPnet3, gracias a su empaquetado en `model_pack`.
-- Demo interactiva en HuggingFace Spaces: permite probar el modelo con audio de entrada directamente desde el navegador, lo que facilita la evaluacion rapida.
+- Demo interactiva en Hugging Face Spaces: permite probar el modelo con audio de entrada directamente desde el navegador, lo que facilita la evaluacion rapida.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ No se han encontrado en la informacion disponible comparativas de rendimiento co
 - No se han publicado requisitos oficiales de hardware en la informacion disponible.
 - El modelo tiene 20.175.980 parametros y un tamano de pesos de 80,7 MB, por lo que es viable en CPU y en GPUs de consumo.
 - Se puede ejecutar en hardware modesto, incluyendo portatiles con CPU moderna, sin necesidad de GPU dedicada.
-- Opciones de despliegue: uso directo con `espnet3.publication.InferenceModel`, o mediante la demo Gradio en HuggingFace Spaces.
+- Opciones de despliegue: uso directo con `espnet3.publication.InferenceModel`, o mediante la demo Gradio en Hugging Face Spaces.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se han encontrado comparativas publicadas con modelos similares en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NewGame/libritts_codec_train_encodec_libritts
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/NewGame/libritts_codec_train_encodec_libritts
+- Hugging Face: https://huggingface.co/NewGame/libritts_codec_train_encodec_libritts
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/NewGame/libritts_codec_train_encodec_libritts
 - Repositorio de origen: https://github.com/NewGamezzz/espnet.git

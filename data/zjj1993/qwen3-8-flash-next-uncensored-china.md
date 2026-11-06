@@ -13,7 +13,7 @@ El repositorio tiene 10 descargas y 12 likes, se publicó el 19 de octubre de 20
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No es un modelo: vector de direccionamiento (steering) sobre el flujo residual de un transformer. El modelo base Qwen3.8-Flash-Next se describe con 4 flujos residuales de "hyper-connection" y 48 bloques (capas indexadas 0-47); arquitectura interna del base no disponible |
-| Parametros totales | El artefacto tiene 48 x 2560 floats (122.880 valores, menos de 1 MB). Los metadatos de HuggingFace indican 120.320, cifra ambigua que no corresponde a los pesos del modelo base; el repositorio no incluye pesos (tamano 0.0 GB) |
+| Parametros totales | El artefacto tiene 48 x 2560 floats (122.880 valores, menos de 1 MB). Los metadatos de Hugging Face indican 120.320, cifra ambigua que no corresponde a los pesos del modelo base; el repositorio no incluye pesos (tamano 0.0 GB) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | El vector se distribuye en GGUF (formato control-vector de llama.cpp) y como array NumPy float32 (`china-v1.dirs.npy`). Cuantizaciones del modelo base: no disponibles |
@@ -109,7 +109,7 @@ No hay datos publicados de modelos comparables en la informacion disponible. La 
 - Riesgo de alucinacion en los temas desbloqueados: al retirar el rechazo, el modelo puede generar contenido factualmente erroneo con tono seguro.
 - Licencia Qwen Community License 1.0: hay que revisar el texto completo antes de uso comercial; se exige conservar el texto de la licencia y el aviso de copyright en cualquier copia.
 - Riesgo legal y de plataforma: generar contenido sobre temas censurados en China puede infringir normativa local y politicas de proveedores; la responsabilidad recae en quien despliega.
-- El artefacto no incluye pesos: los metadatos de HuggingFace (120.320) no permiten deducir el tamano del modelo base, asi que cualquier planificacion de hardware basada en ese numero es invalida.
+- El artefacto no incluye pesos: los metadatos de Hugging Face (120.320) no permiten deducir el tamano del modelo base, asi que cualquier planificacion de hardware basada en ese numero es invalida.
 
 ## Enlaces
 

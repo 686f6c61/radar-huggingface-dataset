@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishekiai/poolformer-contrastive-exp` es un repositorio experimental publicado en HuggingFace por el usuario abhishekiai que contiene una implementación propia de una arquitectura tipo Poolformer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explícitamente como una base de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni con resultados de benchmarks publicados. El tamaño real de los pesos (49.600 parámetros según los safetensors del repositorio) confirma que se trata de una configuración mínima pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`abhishekiai/poolformer-contrastive-exp` es un repositorio experimental publicado en Hugging Face por el usuario abhishekiai que contiene una implementación propia de una arquitectura tipo Poolformer orientada a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explícitamente como una base de código con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni con resultados de benchmarks publicados. El tamaño real de los pesos (49.600 parámetros según los safetensors del repositorio) confirma que se trata de una configuración mínima pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La relevancia de esta ficha es limitada desde el punto de vista de producción: el repositorio no está entrenado, no reclama ninguna métrica y no declara idiomas soportados ni pipeline. Su interés es principalmente metodológico, como plantilla para experimentar con variantes de Poolformer, atención multi-query, fusión por co-atención y recetas de entrenamiento con Novograd. Cualquier uso real requeriría entrenar el modelo desde cero y documentar los resultados por separado, tal como advierte el propio autor.
 
@@ -45,7 +45,7 @@ No hay información sobre volumen de datos de entrenamiento, composición del da
 - Base para experimentos de aprendizaje contrastivo: la orientación declarada del repositorio (*contrastive*) lo hace adecuado como punto de partida para reproducir recetas contrastivas con una arquitectura modificada.
 - Estudio de ablación de componentes: al ser una configuración *tiny*, permite comparar variantes de atención multi-query, co-atención, Mish y RMSNorm con un coste computacional mínimo.
 - Reproducibilidad metodológica: sirve para validar flujos de trabajo que exijan baselines de igual capacidad, misma exposición de datos y semillas idénticas, tal como recomienda el autor.
-- Docencia y formación: su tamaño (49.600 parámetros) y su naturaleza sin entrenar lo hacen útil para explicar cómo se estructura un repositorio de modelo en HuggingFace.
+- Docencia y formación: su tamaño (49.600 parámetros) y su naturaleza sin entrenar lo hacen útil para explicar cómo se estructura un repositorio de modelo en Hugging Face.
 - Integración en pipelines de experimentación: puede usarse como esqueleto para probar optimizadores (Novograd) y *schedules* antes de invertir recursos en entrenamientos grandes.
 
 ## Benchmarks y rendimiento
@@ -66,8 +66,8 @@ El autor indica explícitamente que no se reclama ninguna puntuación de benchma
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhishekiai/poolformer-contrastive-exp | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| PoolFormer (Sea AI Labs) | no disponible | no disponible | resultados publicados en el paper *MetaFormer is Actually What You Need for Vision* | no disponible | HuggingFace Transformers |
+| abhishekiai/poolformer-contrastive-exp | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| PoolFormer (Sea AI Labs) | no disponible | no disponible | resultados publicados en el paper *MetaFormer is Actually What You Need for Vision* | no disponible | Hugging Face Transformers |
 | Poolformer recurrente (arXiv 2510.02206) | no disponible | no disponible | no disponible | no disponible | preprint |
 
 La comparación estricta no es posible porque este repositorio no es un modelo entrenado, mientras que las alternativas citadas sí cuentan con publicaciones o implementaciones de referencia. Se ofrece la tabla como orientación de categoría, no como comparación de rendimiento.
@@ -85,7 +85,7 @@ La comparación estricta no es posible porque este repositorio no es un modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abhishekiai/poolformer-contrastive-exp
-- Documentación de PoolFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.53.1/en/model_doc/poolformer
+- Repositorio Hugging Face: https://huggingface.co/abhishekiai/poolformer-contrastive-exp
+- Documentación de PoolFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.53.1/en/model_doc/poolformer
 - Paper de referencia sobre PoolFormer recurrente: https://arxiv.org/pdf/2510.02206
 - Paper original *MetaFormer is Actually What You Need for Vision*: mencionado en la búsqueda web, sin URL directa disponible en la información proporcionada.

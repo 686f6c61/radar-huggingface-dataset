@@ -74,7 +74,7 @@ Estas cifras proceden de una única ejecución y no son comparables con benchmar
 - Cabe en GPU consumer: sí, en cualquier GPU consumer, e incluso en GPUs integradas, siempre que se disponga de un runtime compatible. Con MLX, la ejecución se realiza sobre memoria unificada del SoC de Apple.
 - Opciones de despliegue: no compatible de forma directa con vLLM, llama.cpp, Ollama, TGI ni con el ecosistema `transformers`, ya que no se publican pesos en safetensors ni GGUF. Se requiere un cargador MLX local que reconstruya la arquitectura descrita y lea `model.npz`.
 - Latencia y throughput: el único dato registrado es el throughput de entrenamiento de 421.148 tokens/s en el hardware del autor, que no se especifica. No hay mediciones de latencia ni de throughput de inferencia.
-- Repositorio: 0,0 GB según los metadatos de HuggingFace; el conjunto de artefactos (`model.npz`, `state.json`, `run.json`, `metrics.jsonl`, `config.json`) es muy reducido.
+- Repositorio: 0,0 GB según los metadatos de Hugging Face; el conjunto de artefactos (`model.npz`, `state.json`, `run.json`, `metrics.jsonl`, `config.json`) es muy reducido.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se han facilitado datos de modelos comparables con métricas publicadas. La c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| j0no12/nero-optimizer-work-simo-lr0p00025 | ~999.680 | 128 tokens | No disponible | HuggingFace, pesos MLX (`model.npz`) |
+| j0no12/nero-optimizer-work-simo-lr0p00025 | ~999.680 | 128 tokens | No disponible | Hugging Face, pesos MLX (`model.npz`) |
 | Otras ramas del barrido Nero Optimizer Work | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Rama de control `nero_dense_control_mlx` | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Modelos de juguete equivalentes de ~1 M de parametros (por ejemplo, nanoGPT reducido) | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -102,7 +102,7 @@ No se han facilitado datos de modelos comparables con métricas publicadas. La c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p00025
+- Repositorio en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p00025
 - Paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código del barrido Nero Optimizer Work: no disponible

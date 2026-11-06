@@ -78,10 +78,10 @@ Comparación receta frente a control: +0,050 con IC [0,000; 0,100] sobre 120 tar
 
 | Modelo | Parametros | Contexto | pass@1 GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paper-adaptive-clip-1.5b (brazo receta) | Adaptador LoRA sobre base de ~1,5 B | No disponible (32.768 en la base) | 0,52 | Apache 2.0 | HuggingFace, repositorio de 0,3 GB |
+| paper-adaptive-clip-1.5b (brazo receta) | Adaptador LoRA sobre base de ~1,5 B | No disponible (32.768 en la base) | 0,52 | Apache 2.0 | Hugging Face, repositorio de 0,3 GB |
 | paper-adaptive-clip-1.5b (brazo baseline) | Adaptador LoRA sobre base de ~1,5 B | No disponible (32.768 en la base) | 0,47 | Apache 2.0 | Subcarpeta `baseline` del mismo repositorio |
-| Qwen/Qwen2.5-1.5B-Instruct sin adaptador | ~1,5 B | 32.768 | 0,34 | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | MIT | HuggingFace |
+| Qwen/Qwen2.5-1.5B-Instruct sin adaptador | ~1,5 B | 32.768 | 0,34 | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5 B | No disponible en la información proporcionada | No disponible en la información proporcionada | MIT | Hugging Face |
 
 Los tres primeros comparten exactamente el mismo modelo base y el mismo protocolo de evaluación, por lo que la comparación entre ellos es directa. Frente a alternativas de razonamiento del mismo orden de parámetros, como DeepSeek-R1-Distill-Qwen-1.5B, no hay datos comparables en la información proporcionada, y además la evaluación de esta ficha se limita a GSM8K, sin MMLU ni otras tareas que permitan situar la calidad general.
 
@@ -100,7 +100,7 @@ Los tres primeros comparten exactamente el mismo modelo base y el mismo protocol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-adaptive-clip-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-adaptive-clip-1.5b
 - Receta de replicación (README con semilla, versiones de librerías y GPU): https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/adaptive-clip
 - SDK mientras-ai completo: https://github.com/whilehq/whileai-sdk
 - Colección «Papers, replicated»: https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c

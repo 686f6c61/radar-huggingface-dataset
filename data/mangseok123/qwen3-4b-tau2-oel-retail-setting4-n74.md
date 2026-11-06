@@ -89,7 +89,7 @@ No se dispone de otros fine-tunes comparables especificos para el dominio retail
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n74
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n74
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Benchmark tau2-bench: referenciado en las etiquetas del repositorio; URL no incluida en la informacion proporcionada
 - Paper del metodo OEL: no disponible en la informacion proporcionada

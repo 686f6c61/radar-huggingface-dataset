@@ -2,7 +2,7 @@
 
 ## Resumen
 
-h0000w/habitra-ai es un repositorio de modelo publicado en HuggingFace por el usuario h0000w. La unica informacion verificable disponible en el momento de redactar esta ficha es la siguiente: licencia Apache 2.0, presencia en el repositorio bajo los tags `license:apache-2.0` y `region:us`, cero descargas y cero "likes". La model card no contiene texto descriptivo alguno: se limita al encabezado YAML con el campo de licencia. No se declara pipeline de inferencia, idiomas soportados, arquitectura, tamano ni formato de pesos.
+h0000w/habitra-ai es un repositorio de modelo publicado en Hugging Face por el usuario h0000w. La unica informacion verificable disponible en el momento de redactar esta ficha es la siguiente: licencia Apache 2.0, presencia en el repositorio bajo los tags `license:apache-2.0` y `region:us`, cero descargas y cero "likes". La model card no contiene texto descriptivo alguno: se limita al encabezado YAML con el campo de licencia. No se declara pipeline de inferencia, idiomas soportados, arquitectura, tamano ni formato de pesos.
 
 Las fechas de creacion y de ultima actualizacion registradas por la plataforma coinciden exactamente (2026-09-20T19:04:29Z), lo que indica una publicacion unica sin mantenimiento posterior. Adicionalmente, las busquedas web realizadas no devuelven ningun resultado relacionado con este modelo: los unicos enlaces recuperados corresponden a entidades homonimas sin relacion con el proyecto (concretamente, paginas sobre el futbolista Andy Diouf). No existe, por tanto, documentacion externa, anuncio, paper ni repositorio de codigo asociado.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,5 +106,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h0000w/habitra-ai
+- Hugging Face: https://huggingface.co/h0000w/habitra-ai
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en las busquedas web realizadas. Los resultados recuperados corresponden a entidades homonimas sin relacion con el modelo.

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-archive-mopd-v2-...-07-capitalcityeffect (este) | 1.777.088.000 | No disponible | 150 pasos, entorno `CapitalCityEffect` | No disponible | Safetensors en HuggingFace |
-| davidheineman/opd-teacher-R1Distill-Circuit-step149 | No disponible | No disponible | 150 pasos, entorno Circuit, 4 prompts y 16 rollouts por paso | No disponible | Safetensors en HuggingFace |
-| Qwen 2.5 1.5B Instruct (base citada en la coleccion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo instructivo generalista | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| rlve-archive-mopd-v2-...-07-capitalcityeffect (este) | 1.777.088.000 | No disponible | 150 pasos, entorno `CapitalCityEffect` | No disponible | Safetensors en Hugging Face |
+| davidheineman/opd-teacher-R1Distill-Circuit-step149 | No disponible | No disponible | 150 pasos, entorno Circuit, 4 prompts y 16 rollouts por paso | No disponible | Safetensors en Hugging Face |
+| Qwen 2.5 1.5B Instruct (base citada en la coleccion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo instructivo generalista | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-07-capitalcityeffect-cdeb6ff6b483
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-07-capitalcityeffect-cdeb6ff6b483
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Coleccion RLVE OPD Teachers (Qwen 2.5 1.5B): https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Checkpoint hermano (DeepSeek-R1-Distill-Qwen-1.5B, entorno Circuit): https://huggingface.co/davidheineman/opd-teacher-R1Distill-Circuit-step149

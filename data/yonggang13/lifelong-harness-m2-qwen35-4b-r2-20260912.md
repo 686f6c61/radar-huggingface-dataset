@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912` contiene un adaptador LoRA publicado con la librería PEFT sobre el modelo base `Qwen/Qwen3.5-4B`. El autor es el usuario de HuggingFace `yonggang13` y las etiquetas declaradas son `tutoring`, `lifelong-learning`, `text-generation`, `conversational`, `lora` y `safetensors`. Se trata, por tanto, de un ajuste fino ligero orientado a tareas de tutoría y aprendizaje continuo, no de un modelo completo entrenado desde cero.
+El repositorio `yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912` contiene un adaptador LoRA publicado con la librería PEFT sobre el modelo base `Qwen/Qwen3.5-4B`. El autor es el usuario de Hugging Face `yonggang13` y las etiquetas declaradas son `tutoring`, `lifelong-learning`, `text-generation`, `conversational`, `lora` y `safetensors`. Se trata, por tanto, de un ajuste fino ligero orientado a tareas de tutoría y aprendizaje continuo, no de un modelo completo entrenado desde cero.
 
-El artefacto ocupa 0,3 GB en el repositorio y fue creado y actualizado el 13 de septiembre de 2026, con apenas unos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada. En el momento de redactar esta ficha acumula 0 descargas y 0 valoraciones, y el acceso está restringido: requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+El artefacto ocupa 0,3 GB en el repositorio y fue creado y actualizado el 13 de septiembre de 2026, con apenas unos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada. En el momento de redactar esta ficha acumula 0 descargas y 0 valoraciones, y el acceso está restringido: requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 
-Su relevancia práctica es limitada y de carácter experimental: no se ha publicado licencia, ni idiomas soportados, ni resultados de benchmarks, ni documentación sobre el dataset o el procedimiento de entrenamiento. La búsqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo. Esta ficha se limita, por tanto, a describir lo que declara la ficha de HuggingFace y a marcar como no disponible todo aquello que no se puede verificar.
+Su relevancia práctica es limitada y de carácter experimental: no se ha publicado licencia, ni idiomas soportados, ni resultados de benchmarks, ni documentación sobre el dataset o el procedimiento de entrenamiento. La búsqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo. Esta ficha se limita, por tanto, a describir lo que declara la ficha de Hugging Face y a marcar como no disponible todo aquello que no se puede verificar.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada y de carácter experimental: no se ha public
 | Modelo base | Qwen/Qwen3.5-4B |
 | Pipeline | text-generation |
 | Tamano del repositorio | 0,3 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-13T01:43:07Z |
 | Ultima actualizacion | 2026-09-13T01:43:26Z |
 | Descargas / valoraciones | 0 / 0 |
@@ -56,7 +56,7 @@ Cualquier capacidad adicional dependerá del modelo base Qwen3.5-4B, cuyas espec
 - Investigación en PEFT y aprendizaje continuo: al ser un adaptador LoRA aislado, sirve como punto de partida para estudiar actualización incremental de conocimiento, mezcla de adaptadores o catastrófico olvido.
 - Comparación de adaptadores: al compartir modelo base con otros ajustes del mismo autor (el sufijo `r2` sugiere al menos una revisión previa), permite experimentos controlados de hiperparámetros de LoRA.
 - Asistente educativo embebido en una aplicación: con un modelo base de ~4B es viable desplegarlo en una GPU de consumo o incluso en CPU cuantizado, lo que facilita prototipos de bajo coste.
-- Evaluación de la viabilidad de un pipeline gated: el acceso restringido lo convierte en un caso de prueba para flujos corporativos que requieren aceptar condiciones y gestionar tokens de HuggingFace.
+- Evaluación de la viabilidad de un pipeline gated: el acceso restringido lo convierte en un caso de prueba para flujos corporativos que requieren aceptar condiciones y gestionar tokens de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -100,7 +100,7 @@ No hay datos verificados de benchmarks, licencia o idiomas para este adaptador, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912
+- Repositorio en Hugging Face: https://huggingface.co/yonggang13/lifelong-harness-m2-qwen35-4b-r2-20260912
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 

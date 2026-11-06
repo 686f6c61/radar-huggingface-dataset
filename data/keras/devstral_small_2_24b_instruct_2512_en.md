@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace: keras/devstral_small_2_24b_instruct_2512_en](https://huggingface.co/keras/devstral_small_2_24b_instruct_2512_en)
+- [Hugging Face: keras/devstral_small_2_24b_instruct_2512_en](https://huggingface.co/keras/devstral_small_2_24b_instruct_2512_en)
 - [Documentación de Mistral3 en KerasHub](https://keras.io/api/keras_hub/models/mistral3)
 - [Keras: librería multi-backend](https://keras.io/)
 - [Keras 3: multi-backend deep learning](https://keras.io/keras_3/)

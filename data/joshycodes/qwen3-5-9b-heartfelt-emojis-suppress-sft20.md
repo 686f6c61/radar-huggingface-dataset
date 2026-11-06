@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|
 | joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft20 | 8,95B | no disponible | research-only | safetensors, 0 descargas |
 | joshycodes/qwen3.5-9b-heartfelt-emojis-sdf (modelo base) | no disponible | no disponible | no disponible | safetensors |
-| Qwen/Qwen3.5-9B (oficial) | no disponible | no disponible | no disponible | HuggingFace oficial |
+| Qwen/Qwen3.5-9B (oficial) | no disponible | no disponible | no disponible | Hugging Face oficial |
 
 No se dispone de datos de rendimiento ni de contexto de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros declarados, licencia y formato de distribucion. Este modelo es una variante de investigacion derivada de la familia Qwen3.5, no una version oficial.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de contexto de las alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft20
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft20
 - Modelo base: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf
 - Dataset de destilacion: https://huggingface.co/datasets/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill-sft
 - Qwen3.5-9B oficial: https://huggingface.co/Qwen/Qwen3.5-9B

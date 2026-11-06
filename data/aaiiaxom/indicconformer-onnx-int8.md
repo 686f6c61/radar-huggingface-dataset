@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aaiiaxom/indicconformer-onnx-int8` es un modelo de reconocimiento automático de voz (ASR) publicado en HuggingFace por el usuario `aaiiaxom`. Su nombre sugiere que se basa en la arquitectura Conformer, ampliamente utilizada en ASR, y está orientado al idioma asamés (assamese-asr), una lengua índica hablada en el noreste de la India. El modelo se distribuye en formato ONNX con cuantización int8, lo que indica un enfoque en eficiencia y despliegue ligero.
+El modelo `aaiiaxom/indicconformer-onnx-int8` es un modelo de reconocimiento automático de voz (ASR) publicado en Hugging Face por el usuario `aaiiaxom`. Su nombre sugiere que se basa en la arquitectura Conformer, ampliamente utilizada en ASR, y está orientado al idioma asamés (assamese-asr), una lengua índica hablada en el noreste de la India. El modelo se distribuye en formato ONNX con cuantización int8, lo que indica un enfoque en eficiencia y despliegue ligero.
 
 La información pública disponible es extremadamente limitada: la model card solo contiene la licencia (Apache 2.0), y no se especifican parámetros, contexto, dataset de entrenamiento ni resultados de benchmarks. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de tamaño moderado, probablemente adecuado para inferencia en CPU o dispositivos con recursos limitados. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones, por lo que su adopción es aún incipiente.
 
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaiiaxom/indicconformer-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/aaiiaxom/indicconformer-onnx-int8
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) en la informacion proporcionada.

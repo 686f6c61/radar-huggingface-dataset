@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged | 8.784.305.264 segun safetensors (conjunto en disco de 406,10 GiB) | no disponible | 4/8 bits mixto | MIT | HuggingFace, libreria gbx-lm |
-| pipenetwork/DeepSeek-V4.1-Flash-MLX-mixed-4_8bit | no disponible | no disponible | 4/8 bits mixto | no disponible en la informacion proporcionada | HuggingFace |
-| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | no disponible | no disponible | sin cuantizar | no disponible en la informacion proporcionada | HuggingFace |
+| GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged | 8.784.305.264 segun safetensors (conjunto en disco de 406,10 GiB) | no disponible | 4/8 bits mixto | MIT | Hugging Face, libreria gbx-lm |
+| pipenetwork/DeepSeek-V4.1-Flash-MLX-mixed-4_8bit | no disponible | no disponible | 4/8 bits mixto | no disponible en la informacion proporcionada | Hugging Face |
+| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | no disponible | no disponible | sin cuantizar | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar objetivamente esta compilacion con alternativas de la misma categoria.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan comparar objetivamente esta c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged
+- Hugging Face: https://huggingface.co/GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Compilacion de origen: https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-MLX-mixed-4_8bit
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados (los resultados devueltos no guardan relacion con el modelo).

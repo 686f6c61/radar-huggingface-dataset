@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SuryaOCR2_ThaiDoc-exp2-merged es un modelo multimodal de tipo imagen-texto alojado en HuggingFace por el usuario fwgpiyawudk. Por el nombre del repositorio, todo apunta a un ajuste fino orientado a OCR sobre documentos tailandeses, construido a partir de un modelo base etiquetado con la arquitectura `qwen3_5` y fusionado posteriormente ("merged"), un procedimiento habitual cuando se parte de un adaptador LoRA y se integra en los pesos completos. El repositorio esta marcado con las etiquetas `trl`, `sft` y `conversational`, lo que sugiere un entrenamiento supervisado sobre datos conversacionales multimodales.
+SuryaOCR2_ThaiDoc-exp2-merged es un modelo multimodal de tipo imagen-texto alojado en Hugging Face por el usuario fwgpiyawudk. Por el nombre del repositorio, todo apunta a un ajuste fino orientado a OCR sobre documentos tailandeses, construido a partir de un modelo base etiquetado con la arquitectura `qwen3_5` y fusionado posteriormente ("merged"), un procedimiento habitual cuando se parte de un adaptador LoRA y se integra en los pesos completos. El repositorio esta marcado con las etiquetas `trl`, `sft` y `conversational`, lo que sugiere un entrenamiento supervisado sobre datos conversacionales multimodales.
 
-El modelo cuenta con 665.701.440 parametros reales segun los pesos en safetensors, lo que lo situa en la franja de los modelos pequenos (aproximadamente 0,67 mil millones de parametros) y lo hace desplegable en hardware de consumo. El repositorio ocupa 1,3 GB, coherente con pesos en precision de 16 bits mas el codificador visual. A pesar de ello, la model card publicada es la plantilla automatica de HuggingFace y no contiene informacion sustantiva: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion.
+El modelo cuenta con 665.701.440 parametros reales segun los pesos en safetensors, lo que lo situa en la franja de los modelos pequenos (aproximadamente 0,67 mil millones de parametros) y lo hace desplegable en hardware de consumo. El repositorio ocupa 1,3 GB, coherente con pesos en precision de 16 bits mas el codificador visual. A pesar de ello, la model card publicada es la plantilla automatica de Hugging Face y no contiene informacion sustantiva: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un checkpoint sin documentacion, con cero descargas y cero interacciones en el momento de la consulta, cuya utilidad practica no puede validarse sin pruebas propias. Se recomienda tratarlo como un experimento y no como un componente listo para produccion.
 
@@ -29,14 +29,14 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descripti
 
 No se dispone de informacion detallada sobre la arquitectura. La etiqueta `qwen3_5` del repositorio apunta a la familia Qwen 3.5 como base, y el pipeline `image-text-to-text` confirma que se trata de un modelo vision-language capaz de aceptar imagenes junto con texto. El sufijo "merged" es habitual en checkpoints en los que los pesos de un adaptador entrenado por separado se fusionan con el modelo base para distribuirlos como un unico conjunto de safetensors.
 
-En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha utilizado la libreria TRL de HuggingFace para un ajuste supervisado (supervised fine-tuning), y la etiqueta `conversational` sugiere que el formato de los datos era de dialogo. El nombre `ThaiDoc` apunta a un corpus de documentos tailandeses, y `exp2` a un segundo experimento dentro de una serie. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, las hiperparametros empleados ni las innovaciones tecnicas aplicadas. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la calculadora de impacto ambiental de Lacoste et al. (2019) que HuggingFace inserta en la plantilla por defecto, no a un articulo propio del modelo.
+En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha utilizado la libreria TRL de Hugging Face para un ajuste supervisado (supervised fine-tuning), y la etiqueta `conversational` sugiere que el formato de los datos era de dialogo. El nombre `ThaiDoc` apunta a un corpus de documentos tailandeses, y `exp2` a un segundo experimento dentro de una serie. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, las hiperparametros empleados ni las innovaciones tecnicas aplicadas. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la calculadora de impacto ambiental de Lacoste et al. (2019) que Hugging Face inserta en la plantilla por defecto, no a un articulo propio del modelo.
 
 ## Capacidades
 
 - Generacion de texto condicionada por imagen, segun el pipeline `image-text-to-text` declarado.
 - Extraccion de texto en imagenes (OCR) como caso de uso principal inferido del nombre del repositorio, orientado a documentos tailandeses.
 - Procesamiento conversacional multi-turno con entrada visual, segun la etiqueta `conversational`.
-- Compatibilidad con endpoints de inferencia de HuggingFace, segun la etiqueta `endpoints_compatible`.
+- Compatibilidad con endpoints de inferencia de Hugging Face, segun la etiqueta `endpoints_compatible`.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; no se declara ningun idioma en la model card.
@@ -72,15 +72,15 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SuryaOCR2_ThaiDoc-exp2-merged | 665.701.440 | no disponible | no disponible | HuggingFace |
+| SuryaOCR2_ThaiDoc-exp2-merged | 665.701.440 | no disponible | no disponible | Hugging Face |
 | Surya (kit de OCR) | no disponible | no disponible | no disponible | Codigo abierto |
-| Qwen2.5-VL-3B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen2.5-VL-3B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparacion de rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace y no aporta ninguna informacion sobre sesgos, riesgos o limitaciones.
+- La model card es la plantilla automatica de Hugging Face y no aporta ninguna informacion sobre sesgos, riesgos o limitaciones.
 - No se declara licencia, por lo que no puede asumirse que el uso comercial este permitido; en ausencia de licencia explicita, los derechos quedan reservados por defecto.
 - No se declaran los idiomas soportados ni el alcance real del ajuste en tailandes; el comportamiento fuera de ese dominio es desconocido.
 - Riesgo de alucinacion no evaluado: al ser un modelo generativo aplicado a OCR, puede producir texto plausible que no aparece en la imagen, un fallo especialmente grave en contextos documentales o legales.
@@ -88,10 +88,10 @@ No se dispone de informacion suficiente para establecer una comparacion de rendi
 - No se publican cuantizaciones, por lo que el despliegue en entornos con restricciones de memoria exige conversiones propias.
 - No hay informacion sobre la composicion del dataset de entrenamiento, lo que impide auditar sesgos demograficos, linguisticos o de dominio.
 - Al derivar de un modelo base de la familia Qwen, el checkpoint hereda las limitaciones de dicho modelo base, que tampoco se documentan aqui.
-- La fecha de creacion del repositorio registrada en HuggingFace es posterior a la fecha actual, lo que sugiere una posible incoherencia en los metadatos.
+- La fecha de creacion del repositorio registrada en Hugging Face es posterior a la fecha actual, lo que sugiere una posible incoherencia en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-merged
+- Modelo en Hugging Face: https://huggingface.co/fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-merged
 - Referencia de la etiqueta `arxiv:1910.09700` (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (papers, repositorios, demos o blogs) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

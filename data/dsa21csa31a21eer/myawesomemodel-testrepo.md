@@ -2,9 +2,9 @@
 
 ## Resumen
 
-"MyAwesomeModel" es un modelo alojado en un repositorio de HuggingFace de prueba creado por el usuario DSA21CSA31A21EER. Según la model card del autor, el modelo ha sufrido una actualización significativa que mejora su profundidad de razonamiento e inferencia, con resultados destacados en matemáticas, programación y lógica. También se indica una reducción de la tasa de alucinación y un mejor soporte de function calling.
+"MyAwesomeModel" es un modelo alojado en un repositorio de Hugging Face de prueba creado por el usuario DSA21CSA31A21EER. Según la model card del autor, el modelo ha sufrido una actualización significativa que mejora su profundidad de razonamiento e inferencia, con resultados destacados en matemáticas, programación y lógica. También se indica una reducción de la tasa de alucinación y un mejor soporte de function calling.
 
-Sin embargo, el repositorio actual no contiene pesos (tamaño 0.0 GB) y tiene 0 descargas y 0 likes, por lo que no es un modelo operativo. La model card describe un modelo de razonamiento con mejoras en la generación de tokens de pensamiento, pero no se proporcionan especificaciones técnicas como arquitectura, número de parámetros o longitud de contexto. Los datos disponibles se limitan a la información autoinformada de la model card y a los metadatos de HuggingFace, que indican pipeline "feature-extraction" y etiquetas "bert", "pytorch" y "transformers", lo que resulta contradictorio con la descripción de un modelo generativo de razonamiento.
+Sin embargo, el repositorio actual no contiene pesos (tamaño 0.0 GB) y tiene 0 descargas y 0 likes, por lo que no es un modelo operativo. La model card describe un modelo de razonamiento con mejoras en la generación de tokens de pensamiento, pero no se proporcionan especificaciones técnicas como arquitectura, número de parámetros o longitud de contexto. Los datos disponibles se limitan a la información autoinformada de la model card y a los metadatos de Hugging Face, que indican pipeline "feature-extraction" y etiquetas "bert", "pytorch" y "transformers", lo que resulta contradictorio con la descripción de un modelo generativo de razonamiento.
 
 ## Especificaciones técnicas
 
@@ -15,7 +15,7 @@ Sin embargo, el repositorio actual no contiene pesos (tamaño 0.0 GB) y tiene 0 
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace indican "no disponibles") |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face indican "no disponibles") |
 | Licencia | MIT |
 | Formato de pesos | No disponible (el repositorio no contiene pesos publicados) |
 
@@ -79,7 +79,7 @@ No disponible. La tabla de la model card compara el modelo con "Model1", "Model2
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos (0.0 GB) y tiene 0 descargas, por lo que no se puede utilizar para inferencia real.
+- El repositorio de Hugging Face no contiene pesos (0.0 GB) y tiene 0 descargas, por lo que no se puede utilizar para inferencia real.
 - La model card parece ser una plantilla genérica, con referencias a "MyAwesomeModel-Small" y "base model" que no se describen en el repositorio.
 - Los benchmarks presentados son autoinformados por el autor y carecen de verificación externa o comparación con modelos reconocidos.
 - Los "Idiomas soportados" figuran como no disponibles en los metadatos del repositorio.
@@ -88,7 +88,7 @@ No disponible. La tabla de la model card compara el modelo con "Model1", "Model2
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/DSA21CSA31A21EER/MyAwesomeModel-TestRepo
+- Hugging Face del modelo: https://huggingface.co/DSA21CSA31A21EER/MyAwesomeModel-TestRepo
 - Repositorio con contenido similar: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo
 - Repositorio adicional con contenido similar: https://huggingface.co/MeaMa/MyAwesomeModel-TestRepo
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swe-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/swe_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo pequeno, de 124.770.816 parametros (aproximadamente 125 millones), construido sobre la arquitectura GPT-2, es decir, un transformer decoder-only de tipo autoregresivo para generacion de texto. El identificador apunta a un modelo monolingue de sueco en escritura latina (`swe_latn`) derivado del corpus de 100 MB de la familia Goldfish.
+`swe-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/swe_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo pequeno, de 124.770.816 parametros (aproximadamente 125 millones), construido sobre la arquitectura GPT-2, es decir, un transformer decoder-only de tipo autoregresivo para generacion de texto. El identificador apunta a un modelo monolingue de sueco en escritura latina (`swe_latn`) derivado del corpus de 100 MB de la familia Goldfish.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1, con el objetivo de adaptar el modelo base mediante instrucciones o datos estructurados, segun sugiere el sufijo `ppt-mp-struct` del nombre. Es un artefacto de investigacion: registra cero descargas y cero likes, y su model card es la plantilla autogenerada por TRL, sin documentacion adicional sobre datos, hiperparametros o evaluacion.
 
@@ -35,7 +35,7 @@ El ajuste se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, lo qu
 - Generacion de texto autoregresiva en el idioma del modelo base, presumiblemente sueco.
 - Continuacion de prompts y generacion condicionada por instrucciones, dado el ajuste con SFT.
 - Ejecucion mediante `transformers.pipeline("text-generation")`, con soporte de entrada en formato de mensajes con rol `user`.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - Capacidad multilingue: no disponible; el modelo es monolingue por construccion del corpus base.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (estimacion a partir del numero de parametros, no confirmada por el autor): aproximadamente 0,5 GB en fp32, 0,25 GB en fp16/bf16, 0,13 GB en int8 y unos 0,07 GB en int4.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; una NVIDIA RTX 3060, RTX 4090, T4, A10 o superior resulta mas que suficiente. No se requiere A100 ni H100.
 - Cabe holgadamente en GPU de consumo: si, en cualquier GPU de consumo moderna e incluso en GPUs integradas de gama baja. Tambien es viable en CPU.
-- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (tag declarado), vLLM, HuggingFace Inference Endpoints (tag `endpoints_compatible`), y conversion a GGUF para llama.cpp u Ollama, aunque esta ultima no esta publicada por el autor y requeriria convertirla manualmente.
+- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (tag declarado), vLLM, Hugging Face Inference Endpoints (tag `endpoints_compatible`), y conversion a GGUF para llama.cpp u Ollama, aunque esta ultima no esta publicada por el autor y requeriria convertirla manualmente.
 - Latencia y throughput estimados: no disponibles. Por el tamano del modelo, se espera un throughput alto y una latencia baja en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10` | 124,77 M | no disponible | GPT-2 ajustado con SFT | no disponible | Publicado en HuggingFace, 0 descargas |
-| `goldfish-models/swe_latn_100mb` (modelo base) | del orden de 100-130 M (no confirmado) | no disponible | GPT-2 monolingue preentrenado | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| `francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10` | 124,77 M | no disponible | GPT-2 ajustado con SFT | no disponible | Publicado en Hugging Face, 0 descargas |
+| `goldfish-models/swe_latn_100mb` (modelo base) | del orden de 100-130 M (no confirmado) | no disponible | GPT-2 monolingue preentrenado | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | `openai-community/gpt2` | 124 M | 1024 tokens | GPT-2 preentrenado en ingles | MIT | Ampliamente disponible |
 | `distilgpt2` | 82 M | 1024 tokens | GPT-2 destilado en ingles | Apache 2.0 | Ampliamente disponible |
 
@@ -86,7 +86,7 @@ La comparacion con `gpt2` y `distilgpt2` es solo orientativa en cuanto a tamano 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/exknt9z7

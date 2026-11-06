@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SteveNguyen/red_cube_blue_box_pi05_step20000` | 4.143.404.816 | no aplica | Pick-and-place de cubo rojo en caja azul (robot `grabette`) | Apache 2.0 | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | no disponible en la información | no aplica | VLA base π₀.₅ para fine-tuning | no disponible en la información | HuggingFace (modelo base) |
+| `SteveNguyen/red_cube_blue_box_pi05_step20000` | 4.143.404.816 | no aplica | Pick-and-place de cubo rojo en caja azul (robot `grabette`) | Apache 2.0 | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | no disponible en la información | no aplica | VLA base π₀.₅ para fine-tuning | no disponible en la información | Hugging Face (modelo base) |
 | π₀.₅ de Physical Intelligence (OpenPI) | no disponible en la información | no aplica | VLA de generalización en mundo abierto | no disponible en la información | Repositorio OpenPI |
 
 La comparación se limita a los modelos citados en la información disponible; no se dispone de datos de rendimiento comparativo ni de otros fine-tunings equivalentes.
@@ -83,7 +83,7 @@ La comparación se limita a los modelos citados en la información disponible; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SteveNguyen/red_cube_blue_box_pi05_step20000
+- Modelo en Hugging Face: https://huggingface.co/SteveNguyen/red_cube_blue_box_pi05_step20000
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SteveNguyen/red_cube_blue_box_graspproj
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SteveNguyen/red_cube_blue_box_graspproj

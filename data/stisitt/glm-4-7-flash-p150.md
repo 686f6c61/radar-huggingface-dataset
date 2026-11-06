@@ -4,7 +4,7 @@
 
 El repositorio `stisiTT/glm-4-7-flash-p150` contiene un paquete contenedor `tt-model` que permite servir el modelo `zai-org/GLM-4.7-Flash` en hardware Tenstorrent Blackhole p150. El contenedor empaqueta el stack de servidor completo, incluyendo un plugin de `vLLM` y el código de autoport para el modelo, de modo que el consumidor solo necesita Docker y una tarjeta Tenstorrent, sin instalar `tt-metal`, `vLLM` ni entornos virtuales en el host.
 
-El modelo subyacente es `GLM-4.7-Flash` de Z.ai, cuyos pesos se descargan a la caché de HuggingFace en el momento de hacer `pull`, no se hornean dentro de la imagen. El contenedor está pensado como un perfil de throughput, no de latencia: el prefill por chunks está deshabilitado y las solicitudes concurrentes se prefillan de forma serial. El contexto máximo configurado es de 202752 tokens, con un rendimiento medido que escala suavemente en coste de decodificación a medida que crece la longitud del contexto.
+El modelo subyacente es `GLM-4.7-Flash` de Z.ai, cuyos pesos se descargan a la caché de Hugging Face en el momento de hacer `pull`, no se hornean dentro de la imagen. El contenedor está pensado como un perfil de throughput, no de latencia: el prefill por chunks está deshabilitado y las solicitudes concurrentes se prefillan de forma serial. El contexto máximo configurado es de 202752 tokens, con un rendimiento medido que escala suavemente en coste de decodificación a medida que crece la longitud del contexto.
 
 ## Especificaciones tecnicas
 

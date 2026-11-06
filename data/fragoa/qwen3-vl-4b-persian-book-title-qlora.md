@@ -103,7 +103,7 @@ La comparación es directa porque todos los sistemas se evaluaron sobre el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fragoa/qwen3-vl-4b-persian-book-title-qlora
+- Modelo en Hugging Face: https://huggingface.co/Fragoa/qwen3-vl-4b-persian-book-title-qlora
 - Dataset de evaluación y predicciones: https://huggingface.co/datasets/Fragoa/persian-book-title-recognition-eval
 - Dataset de entrenamiento: https://huggingface.co/datasets/shenasa/bookroom-persian-book-covers-and-titles
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

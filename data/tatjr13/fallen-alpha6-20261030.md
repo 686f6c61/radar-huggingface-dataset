@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fallen Alpha6 es un modelo de deteccion de objetos en formato ONNX publicado por el usuario tatjr13 en HuggingFace. Se trata de un artefacto muy especializado: detecta una unica clase, `fallen person` (persona caida), y empaqueta en una sola sesion ONNX dos detectores independientes ("left branch" y "right branch") entrenados sobre la misma tarea, de modo que ambos se ejecutan en una sola pasada y sus resultados se combinan por consenso geometrico.
+Fallen Alpha6 es un modelo de deteccion de objetos en formato ONNX publicado por el usuario tatjr13 en Hugging Face. Se trata de un artefacto muy especializado: detecta una unica clase, `fallen person` (persona caida), y empaqueta en una sola sesion ONNX dos detectores independientes ("left branch" y "right branch") entrenados sobre la misma tarea, de modo que ambos se ejecutan en una sola pasada y sus resultados se combinan por consenso geometrico.
 
 El modelo no es un modelo de lenguaje ni un modelo fundacional: es un detector de objetos derivado de la familia YOLO de Ultralytics (los avisos de licencia de Ultralytics se conservan), exportado a ONNX con entrada estatica de 704x704 y dos salidas densas de 10.164 anclas cada una con cinco valores (cx, cy, w, h, confianza). El repositorio incluye ademas un script de servicio (`miner.py`) que define un contrato de inferencia cerrado y verifica por hash los bytes exactos del kit.
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/fallen-alpha6-20261030
+- Hugging Face: https://huggingface.co/tatjr13/fallen-alpha6-20261030
 - Repositorio de la publicacion previa F2 (mencionado en la model card): https://huggingface.co/tatjr13/fallen-coco704-merged-t84t83-20261029
 - Elemento de despliegue destino (mencionado en la model card): `manak0/Detect-non-violent-fallen-and-crouching-person-detection`
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Muzammilmac/dermnet-mobilenetv3-small` es un repositorio de HuggingFace que documenta la configuración de entrenamiento de un clasificador de imágenes dermatológicas basado en MobileNetV3-Small, con 23 clases de condiciones cutáneas comunes y entrenado sobre el dataset DermNet. El autor es el usuario Muzammilmac y el repositorio se creó el 4 de noviembre de 2026. Es importante señalar que, según la propia model card, el modelo **no está entrenado**: no se concedió presupuesto de cómputo durante la sesión de generación y los pesos no están publicados en el repositorio.
+`Muzammilmac/dermnet-mobilenetv3-small` es un repositorio de Hugging Face que documenta la configuración de entrenamiento de un clasificador de imágenes dermatológicas basado en MobileNetV3-Small, con 23 clases de condiciones cutáneas comunes y entrenado sobre el dataset DermNet. El autor es el usuario Muzammilmac y el repositorio se creó el 4 de noviembre de 2026. Es importante señalar que, según la propia model card, el modelo **no está entrenado**: no se concedió presupuesto de cómputo durante la sesión de generación y los pesos no están publicados en el repositorio.
 
 El interés técnico del artefacto reside en la receta de entrenamiento reproducible que acompaña al repositorio: backbone `mobilenetv3_small_100` de timm (2,5 M de parámetros, preentrenado en ImageNet), entrada de 224×224, entropía cruzada ponderada por clase para mitigar el desbalanceo (entre ~100 y ~2.300 imágenes por clase) y evaluación mediante top-1 accuracy sobre el split de test oficial más un 10 % estratificado de validación extraído del train. El dataset referenciado, `exper1ment/dermnet`, contiene 15.588 imágenes de entrenamiento y 3.977 de test.
 
@@ -73,7 +73,7 @@ No disponible. No se han proporcionado datos de benchmarks ni comparaciones con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Muzammilmac/dermnet-mobilenetv3-small
+- Repositorio en Hugging Face: https://huggingface.co/Muzammilmac/dermnet-mobilenetv3-small
 - Backbone en timm: https://huggingface.co/timm/mobilenetv3_small_100.ra_in1k
 - Dataset DermNet: https://huggingface.co/datasets/exper1ment/dermnet
 - Herramienta ML Intern: https://hf.co/chat?mode=ml-intern

@@ -4,7 +4,7 @@
 
 El repositorio `JihoPark2/paper_009671118_neural_architecture_search` no contiene un modelo de inteligencia artificial ejecutable, sino un documento académico en formato Markdown sobre *neural architecture search* (NAS). El autor, JihoPark2, ha publicado un archivo llamado `paper_009671118_neural_architecture_search.md` que, según la model card, sigue una estructura de intro, antecedentes, enfoque, evaluación y conclusión, con un estilo de redacción teórico y riguroso. El contenido se centra en la búsqueda automática de arquitecturas de redes neuronales, un área relevante para la automatización del diseño de modelos profundos.
 
-El repositorio no incluye pesos, código ejecutable ni infraestructura de inferencia. Se trata de una contribución de investigación en formato textual, con licencia Creative Commons CC-BY-4.0, lo que permite su reutilización con atribución. No hay información sobre idiomas, pipeline de HuggingFace ni datos de descargas o valoraciones.
+El repositorio no incluye pesos, código ejecutable ni infraestructura de inferencia. Se trata de una contribución de investigación en formato textual, con licencia Creative Commons CC-BY-4.0, lo que permite su reutilización con atribución. No hay información sobre idiomas, pipeline de Hugging Face ni datos de descargas o valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -62,5 +62,5 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JihoPark2/paper_009671118_neural_architecture_search
+- Repositorio Hugging Face: https://huggingface.co/JihoPark2/paper_009671118_neural_architecture_search
 - No se han encontrado otros enlaces en la busqueda web (papers, blogs, repos o demos) que esten directamente relacionados con este repositorio concreto.

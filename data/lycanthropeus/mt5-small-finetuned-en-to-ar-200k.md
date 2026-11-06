@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lycanthropeus/mt5-small-finetuned-en-to-ar-200k` es un modelo de traduccion automatica ingles-arabe derivado de mT5-small, la variante compacta del modelo multilingue Text-to-Text Transfer Transformer de Google. Lo desarrolla el usuario de HuggingFace `lycanthropeus` y constituye un segundo ajuste fino sobre un modelo ya especializado en la misma direccion (`lycanthropeus/mt5-small-finetuned-en-to-ar`), presumiblemente entrenado sobre un corpus adicional de unas 200.000 muestras segun indica el nombre del repositorio.
+`lycanthropeus/mt5-small-finetuned-en-to-ar-200k` es un modelo de traduccion automatica ingles-arabe derivado de mT5-small, la variante compacta del modelo multilingue Text-to-Text Transfer Transformer de Google. Lo desarrolla el usuario de Hugging Face `lycanthropeus` y constituye un segundo ajuste fino sobre un modelo ya especializado en la misma direccion (`lycanthropeus/mt5-small-finetuned-en-to-ar`), presumiblemente entrenado sobre un corpus adicional de unas 200.000 muestras segun indica el nombre del repositorio.
 
 El modelo resuelve una tarea acotada: la traduccion de texto de ingles a arabe mediante generacion texto-a-texto. Con 300.176.768 parametros (aproximadamente 300 millones), se situa en el segmento de modelos ligeros, lo que permite desplegarlo en hardware modesto y con latencias bajas, a costa de una calidad que previsiblemente queda por debajo de modelos de mayor tamano.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estandar (BLEU, MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lycanthropeus/mt5-small-finetuned-en-to-ar-200k | 300 M | no disponible | apache-2.0 | HuggingFace, 14 descargas | Ajuste fino experimental, sin benchmarks publicados |
-| google/mt5-small | 300 M | 512 tokens | apache-2.0 | HuggingFace, ampliamente usado | Modelo base multilingue sin ajuste especifico en-to-ar |
-| Helsinki-NLP/opus-mt-en-ar | no disponible | no disponible | apache-2.0 (segun repositorio) | HuggingFace, muy usado | Modelo Marian especifico en-to-ar, referencia habitual en traduccion de bajo coste |
-| facebook/nllb-200-distilled-600M | 600 M | no disponible | cc-by-nc-4.0 | HuggingFace | Multilingue de mayor tamano, licencia no comercial |
+| lycanthropeus/mt5-small-finetuned-en-to-ar-200k | 300 M | no disponible | apache-2.0 | Hugging Face, 14 descargas | Ajuste fino experimental, sin benchmarks publicados |
+| google/mt5-small | 300 M | 512 tokens | apache-2.0 | Hugging Face, ampliamente usado | Modelo base multilingue sin ajuste especifico en-to-ar |
+| Helsinki-NLP/opus-mt-en-ar | no disponible | no disponible | apache-2.0 (segun repositorio) | Hugging Face, muy usado | Modelo Marian especifico en-to-ar, referencia habitual en traduccion de bajo coste |
+| facebook/nllb-200-distilled-600M | 600 M | no disponible | cc-by-nc-4.0 | Hugging Face | Multilingue de mayor tamano, licencia no comercial |
 
 La comparacion con alternativas establecidas se basa en caracteristicas generales; no se dispone de datos de rendimiento de este modelo que permitan una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ La comparacion con alternativas establecidas se basa en caracteristicas generale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar-200k
+- Modelo en Hugging Face: https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar-200k
 - Modelo base del ajuste: https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar
 - Modelo original mT5-small de Google: https://huggingface.co/google/mt5-small
 - Paper de mT5: https://arxiv.org/abs/2010.11934

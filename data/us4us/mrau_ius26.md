@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`us4us/mrau_ius26` es un repositorio de modelo publicado en HuggingFace por el usuario `us4us`. En el momento de redactar esta ficha, la model card unicamente contiene la declaracion de licencia (`apache-2.0`) y no incluye ninguna descripcion funcional, especificacion de arquitectura, tamano de parametros, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 valoraciones, y la fecha de creacion y ultima actualizacion registrada es 2026-10-04, sin ninguna revision posterior.
+`us4us/mrau_ius26` es un repositorio de modelo publicado en Hugging Face por el usuario `us4us`. En el momento de redactar esta ficha, la model card unicamente contiene la declaracion de licencia (`apache-2.0`) y no incluye ninguna descripcion funcional, especificacion de arquitectura, tamano de parametros, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 valoraciones, y la fecha de creacion y ultima actualizacion registrada es 2026-10-04, sin ninguna revision posterior.
 
 Dado que la informacion disponible se limita a metadatos, no es posible determinar que problema resuelve el modelo, a que familia arquitectonica pertenece (transformer, MoE, SSM o hibrida) ni cual es su ventana de contexto. El identificador `mrau_ius26` sugiere un artefacto interno o experimental asociado a un proyecto o iteracion concreta, pero no hay documentacion publica que confirme esta interpretacion.
 
@@ -21,7 +21,7 @@ La relevancia practica de este repositorio es, por tanto, muy limitada en su est
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (no se listan archivos de pesos en la informacion proporcionada) |
 | Autor | us4us |
-| Fecha de creacion en HuggingFace | 2026-10-04 |
+| Fecha de creacion en Hugging Face | 2026-10-04 |
 | Ultima actualizacion | 2026-10-04 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -92,7 +92,7 @@ No disponible. No es posible seleccionar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/us4us/mrau_ius26
+- Repositorio en Hugging Face: https://huggingface.co/us4us/mrau_ius26
 - Model card del autor: no disponible mas alla de la declaracion de licencia incluida en el propio repositorio.
 - Paper tecnico: no disponible.
 - Blog o anuncio de publicacion: no disponible.

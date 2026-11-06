@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Titan 2.0 80B BF16 | 79,67B (MoE) | no disponible | Apache-2.0 | HuggingFace, safetensors + GGUF | Ajuste LoRA experimental sobre Qwen3-Coder-Next, evaluación mínima |
-| Qwen/Qwen3-Coder-Next | no disponible en la información | no disponible | no disponible en la información | HuggingFace | Modelo base; capacidades de codificación sin la personalización Alpina |
-| Alternativas de ~70-80B tipo Llama 3.x / Qwen2.5 | ~70-72B (dense) | 128K en algunas variantes | licencias comunitarias variables | HuggingFace | Comparación de orden de magnitud; no se dispone de datos de benchmark de Alpina Titan para contrastar |
+| Alpina Titan 2.0 80B BF16 | 79,67B (MoE) | no disponible | Apache-2.0 | Hugging Face, safetensors + GGUF | Ajuste LoRA experimental sobre Qwen3-Coder-Next, evaluación mínima |
+| Qwen/Qwen3-Coder-Next | no disponible en la información | no disponible | no disponible en la información | Hugging Face | Modelo base; capacidades de codificación sin la personalización Alpina |
+| Alternativas de ~70-80B tipo Llama 3.x / Qwen2.5 | ~70-72B (dense) | 128K en algunas variantes | licencias comunitarias variables | Hugging Face | Comparación de orden de magnitud; no se dispone de datos de benchmark de Alpina Titan para contrastar |
 
 No se dispone de resultados de benchmarks del modelo que permitan una comparación cuantitativa con alternativas. La comparación debe limitarse a parámetros, licencia y formato de distribución.
 
@@ -83,7 +83,7 @@ No se dispone de resultados de benchmarks del modelo que permitan una comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B-BF16
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

@@ -35,7 +35,7 @@ La arquitectura propuesta es un **Cnn Transformer** en configuración *tiny*. Co
 - **Pruebas de humo en entornos de CI/CD**: ejecutar `pipeline.py` para verificar que la arquitectura Cnn Transformer carga y produce salidas, sirviendo como test unitario de la implementación.
 - **Experimentación controlada en retrieval**: emplear el modelo como punto de partida en tareas pequeñas de recuperación de imágenes o texto (por ejemplo, Flickr30k), donde se pueda comparar con una línea base de capacidad equivalente y medir el rendimiento en al menos tres semillas.
 - **Investigación de arquitecturas híbridas**: utilizar el código como referencia para estudiar el impacto de la fusión Tucker y la atención de ventana deslizante en el rendimiento de recuperación frente a arquitecturas puramente transformer o CNN.
-- **Desarrollo de adaptadores personalizados**: dado que la implementación es custom, el modelo sirve para construir y probar adaptadores que permitan su carga desde APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores personalizados**: dado que la implementación es custom, el modelo sirve para construir y probar adaptadores que permitan su carga desde APIs genéricas de Hugging Face.
 - **Plantilla para entrenamiento experimental**: los archivos `config.json` y `training_args.json` pueden reutilizarse como base para lanzar experimentos de entrenamiento con configuraciones alternativas de tamaño o datos.
 - **Entorno docente y demostraciones técnicas**: ideal para explicar y depurar una implementación completa de un modelo de retrieval pequeño, mostrando el flujo de inicialización, configuración y ejecución sin necesidad de recursos de hardware elevados.
 
@@ -72,5 +72,5 @@ La comparación es conceptual: el modelo analizado no tiene un tamaño comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chineduogunleye/assignment-retrieval
+- Hugging Face: https://huggingface.co/chineduogunleye/assignment-retrieval
 - Paper o blog: no disponible

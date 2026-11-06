@@ -59,5 +59,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toomanydatsuns/Qwen3.8-27B-oQ3.5e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Toomanydatsuns/Qwen3.8-27B-oQ3.5e-fp16-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

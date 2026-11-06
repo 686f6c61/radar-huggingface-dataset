@@ -64,7 +64,7 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-Doc2LoRA
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-Doc2LoRA
 - AlignTune (página oficial): https://aligntune.lexsi.ai/
 - AlignTune (GitHub): https://github.com/Lexsi-Labs/aligntune
 - Doc2LoRA (GitHub): https://github.com/earth-app/doc2lora

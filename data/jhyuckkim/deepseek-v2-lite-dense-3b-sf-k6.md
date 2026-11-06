@@ -91,7 +91,7 @@ No se dispone de comparaciones con modelos densos pre-entrenados de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-SF-K6
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/DeepSeek-V2-Lite-Dense-3B-SF-K6
 - Artículo científico: https://arxiv.org/abs/2605.28207
 - Repositorio de código: https://github.com/krafton-ai/moe-to-dense
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL

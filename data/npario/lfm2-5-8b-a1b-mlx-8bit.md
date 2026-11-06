@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX: https://huggingface.co/npario/LFM2.5-8B-A1B-MLX-8bit
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Repositorio Hugging Face de la conversión MLX: https://huggingface.co/npario/LFM2.5-8B-A1B-MLX-8bit
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de Liquid AI (anuncio del modelo): https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Receta de vLLM para el modelo: https://recipes.vllm.ai/LiquidAI/LFM2.5-8B-A1B

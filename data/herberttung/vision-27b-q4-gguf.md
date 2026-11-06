@@ -74,7 +74,7 @@ La comparativa se basa en los resultados de búsqueda, que indican que el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/herberttung/vision-27b-q4-gguf
+- Hugging Face: https://huggingface.co/herberttung/vision-27b-q4-gguf
 - Modelo base (referencia): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Guía de despliegue de Qwen3.8-27B: https://acecloud.ai/blog/qwen3-8-27b-guide/
 - Benchmark de cuantizaciones GGUF de Qwen3.8-27B: https://kaitchup.substack.com/p/qwen38-27b-gguf-benchmark-q4-to-q1

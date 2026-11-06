@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run1` es un fine-tuning del modelo base Qwen3-8B, desarrollado por el usuario `stefanocarrera` y publicado en HuggingFace. El nombre del repositorio sugiere una especialización en tareas relacionadas con SQL y generación de código, aunque no hay documentación que lo confirme. El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente contiene un adaptador LoRA o un checkpoint de fine-tuning con los pesos actualizados, en lugar de los pesos completos del modelo de 8.000 millones de parámetros.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run1` es un fine-tuning del modelo base Qwen3-8B, desarrollado por el usuario `stefanocarrera` y publicado en Hugging Face. El nombre del repositorio sugiere una especialización en tareas relacionadas con SQL y generación de código, aunque no hay documentación que lo confirme. El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente contiene un adaptador LoRA o un checkpoint de fine-tuning con los pesos actualizados, en lugar de los pesos completos del modelo de 8.000 millones de parámetros.
 
 La model card es un template generado automáticamente, sin información sobre el proceso de entrenamiento, los datos utilizados, las capacidades del modelo ni su licencia. El tag `unsloth` sugiere que se empleó la librería Unsloth para el entrenamiento, pero no se aportan más detalles. Se trata, por tanto, de un modelo con documentación mínima, cuya utilidad real no puede evaluarse a partir de la información disponible.
 
@@ -55,6 +55,6 @@ No se han publicado datos de rendimiento que permitan comparar este modelo con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g4_run1
 - Variante del mismo autor: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run0
 - Variante del mismo autor: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g9_run0

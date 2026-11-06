@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abdulrahimmirani/pi05-piperx-pick-cube-ft01` | 3.353 M (430,1 M entrenables) | No disponible | `orbax` | `other` | HuggingFace, 0 descargas, 0 likes |
+| `abdulrahimmirani/pi05-piperx-pick-cube-ft01` | 3.353 M (430,1 M entrenables) | No disponible | `orbax` | `other` | Hugging Face, 0 descargas, 0 likes |
 | `pi05_base` (modelo de partida, Physical Intelligence) | 3.353 M (misma base según la model card) | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Otros VLA de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -111,7 +111,7 @@ Diferencias cualitativas conocidas frente al base: este checkpoint está especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdulrahimmirani/pi05-piperx-pick-cube-ft01
+- Modelo en Hugging Face: https://huggingface.co/abdulrahimmirani/pi05-piperx-pick-cube-ft01
 - Repositorio requerido para servir el modelo: `The-Robotics-Company/openpi`, rama `rahim-trc`, commit `f8bf156` o posterior (configuración `pi05_piperx_teleop_expert`)
 - Modelo base del ajuste: `pi05_base` (π0.5, Physical Intelligence); no se proporciona URL específica en la información disponible
 - Conjunto de datos de entrenamiento: `piper_x_pick_cube_v1` (49 episodios, 18.431 fotogramas, 614 s, formato LeRobot v2.1); no se proporciona URL independiente

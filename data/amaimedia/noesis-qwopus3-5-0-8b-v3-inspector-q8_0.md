@@ -74,8 +74,8 @@ Sin embargo, no hay datos de benchmarks que permitan una comparacion objetiva de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-Q8_0
-- Perfil de AMAImedia en HuggingFace: https://huggingface.co/AMAImedia/models
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-Q8_0
+- Perfil de AMAImedia en Hugging Face: https://huggingface.co/AMAImedia/models
 - Modelo relacionado (Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT8): https://huggingface.co/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT8
 - Guia sobre la familia Qwen 3.5 (referencia general): https://qwen-ai.com/qwen-3-5/
 - Ficha de Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b

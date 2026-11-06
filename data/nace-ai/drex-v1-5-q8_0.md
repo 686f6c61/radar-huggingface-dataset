@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Drex v1.5 Q8_0 es la versión cuantizada en formato GGUF del modelo de decisión Drex v1.5, desarrollado por Nace.AI (cuenta `nace-ai` en HuggingFace). No es un modelo generativo de chat: recibe un estado (`state`) junto con una o varias preguntas tipadas con nombre (`named typed questions`) y devuelve una probabilidad para cada opción posible. Su función es actuar como componente de decisión rápida («system one») dentro de sistemas mayores, donde se necesita una política probabilística en lugar de texto libre.
+Drex v1.5 Q8_0 es la versión cuantizada en formato GGUF del modelo de decisión Drex v1.5, desarrollado por Nace.AI (cuenta `nace-ai` en Hugging Face). No es un modelo generativo de chat: recibe un estado (`state`) junto con una o varias preguntas tipadas con nombre (`named typed questions`) y devuelve una probabilidad para cada opción posible. Su función es actuar como componente de decisión rápida («system one») dentro de sistemas mayores, donde se necesita una política probabilística en lugar de texto libre.
 
 El modelo tiene 8.955.900.929 parámetros (unos 8,96 mil millones) y el fichero GGUF ocupa 9.531.694.816 bytes (9,5 GB), aproximadamente la mitad que los pesos en bf16 del modelo base. El GGUF declara la arquitectura `qwen35` y contiene 250 tensores en Q8_0, 180 en F32 y dos en BF16; la cabeza de decisión (`pointer head`) no se cuantiza. El repositorio se publicó el 9 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni «likes».
 
@@ -96,13 +96,13 @@ No se han identificado en la información disponible modelos abiertos comparable
 - Calibración: al tratarse de un modelo que emite probabilidades, la utilidad depende de que estén calibradas. No se publica ningún informe de calibración, log-loss, Brier score ni curva de fiabilidad, y no hay evidencia de que las probabilidades sean interpretables como frecuencias.
 - Sesgos: no hay información sobre la composición del dataset de entrenamiento, por lo que no se pueden evaluar sesgos demográficos, culturales o de dominio.
 - Alucinación: en un modelo de decisión el riesgo equivalente es asignar probabilidad alta a opciones incorrectas o inventar opciones no pertinentes; no se documentan evaluaciones de robustez ante estados fuera de distribución.
-- Adopción nula verificable: 0 descargas y 0 «likes» en HuggingFace, sin resultados de benchmarks publicados, lo que implica ausencia de validación independiente por parte de la comunidad.
+- Adopción nula verificable: 0 descargas y 0 «likes» en Hugging Face, sin resultados de benchmarks publicados, lo que implica ausencia de validación independiente por parte de la comunidad.
 - Contexto: la configuración de ejemplo atiende peticiones de hasta 16.384 tokens; superar esa ventana exige pasos adicionales descritos en la documentación del repositorio y no está cubierto por el comando estándar.
 - Fechas y versionado: el repositorio se creó el 9 de octubre de 2026 y se actualizó ese mismo día; conviene fijar el SHA-256 del fichero para reproducibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nace-ai/drex-v1.5-Q8_0
+- Modelo en Hugging Face: https://huggingface.co/nace-ai/drex-v1.5-Q8_0
 - Modelo base (Drex v1.5): https://huggingface.co/nace-ai/drex-v1.5
 - Repositorio de modelos de decisión de Nace.AI: https://github.com/nace-ai/drex-decision-models
 - Página del modelo dentro del repositorio: https://github.com/nace-ai/drex-decision-models/tree/main/models/drex-v1.5
@@ -110,5 +110,5 @@ No se han identificado en la información disponible modelos abiertos comparable
 - Fork de Ollama (rama `drex-v1.5`): https://github.com/nace-ai/ollama
 - Formato de petición del endpoint `/v1/systemone`: https://github.com/nace-ai/drex-decision-models/blob/main/docs/request-format.md
 - Documentación sobre longitud de contexto: https://github.com/nace-ai/drex-decision-models/blob/main/docs/context-length.md
-- Licencia Nace.AI Open RAIL-M: fichero `LICENSE` del repositorio de HuggingFace
+- Licencia Nace.AI Open RAIL-M: fichero `LICENSE` del repositorio de Hugging Face
 - Búsqueda web: los resultados devueltos corresponden a la nomenclatura estadística de actividades económicas NACE (Eurostat, INSEE, Wikipedia) y no guardan relación con este modelo; no se han encontrado en la búsqueda papers, blogs ni demos relevantes.

@@ -87,7 +87,7 @@ No se dispone de benchmarks comparables entre estos modelos. La comparativa se b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted-system
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted-system
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Dataset de quirk: https://huggingface.co/model-organisms-for-real/kd-dataset-olmo-cake-prompted-mo
 - Variante similar: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted

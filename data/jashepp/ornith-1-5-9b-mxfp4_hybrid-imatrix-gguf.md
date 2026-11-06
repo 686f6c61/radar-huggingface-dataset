@@ -80,7 +80,7 @@ La ventaja de esta cuantizacion es su reducido tamaño en VRAM gracias a MXFP4, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jashepp/Ornith-1.5-9B-MXFP4_Hybrid-Imatrix-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Blog de Ornith 1.5: https://ornith.ai/ornith_1_5.html
 - Guia de ejecucion local (atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

@@ -88,7 +88,7 @@ La única comparación directa posible es con el modelo base de Kyutai, del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomzhengy/socrates-pocket-tts-onnx
+- Modelo en Hugging Face: https://huggingface.co/tomzhengy/socrates-pocket-tts-onnx
 - Modelo base: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Kyutai: https://kyutai.org
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

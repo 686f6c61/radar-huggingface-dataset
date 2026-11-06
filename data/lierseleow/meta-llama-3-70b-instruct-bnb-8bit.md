@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit | 70,5B | No disponible | 8-bit (bitsandbytes) | Llama 3 Community | HuggingFace |
-| meta-llama/Meta-Llama-3-70B-Instruct (original) | 70,5B | 8K (típico de Llama 3) | fp16/bf16 | Llama 3 Community | HuggingFace |
-| TheBloke/Llama-2-70B-Chat-GGUF (ejemplo) | 70B | 4K | GGUF (varias) | Llama 2 Community | HuggingFace |
+| lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit | 70,5B | No disponible | 8-bit (bitsandbytes) | Llama 3 Community | Hugging Face |
+| meta-llama/Meta-Llama-3-70B-Instruct (original) | 70,5B | 8K (típico de Llama 3) | fp16/bf16 | Llama 3 Community | Hugging Face |
+| TheBloke/Llama-2-70B-Chat-GGUF (ejemplo) | 70B | 4K | GGUF (varias) | Llama 2 Community | Hugging Face |
 
 La comparativa se limita a aspectos generales, ya que no hay datos de rendimiento para esta cuantización. Frente al modelo original, la ventaja es el menor uso de memoria; frente a cuantizaciones GGUF, bitsandbytes ofrece integración directa con Transformers, pero GGUF suele ser más eficiente en CPU y tiene más opciones de cuantización.
 
@@ -75,7 +75,7 @@ La comparativa se limita a aspectos generales, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit
+- Repositorio Hugging Face: https://huggingface.co/lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct
 - Licencia Llama 3 Community: https://github.com/meta-llama/llama-models/blob/main/models/llama3/LICENSE
 - Acceptable Use Policy: https://github.com/meta-llama/llama-models/blob/main/models/llama3/USE_POLICY.md

@@ -83,8 +83,8 @@ Metricas adicionales del checkpoint: ECE 0,057 y accuracy@0.5 de 0,87. El autor 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tampajohn/laya-stop-completion-judge | 421 M (26,5 M entrenados) | 1.024 tokens de estado | AUROC 0,85; accuracy@0.5 0,87 | Apache 2.0 | HuggingFace |
-| convaiinnovations/laya (base) | 421 M | Limitado por el empaquetado del SDK base | AUROC 0,57-0,64; nivel de azar | no disponible | HuggingFace |
+| tampajohn/laya-stop-completion-judge | 421 M (26,5 M entrenados) | 1.024 tokens de estado | AUROC 0,85; accuracy@0.5 0,87 | Apache 2.0 | Hugging Face |
+| convaiinnovations/laya (base) | 421 M | Limitado por el empaquetado del SDK base | AUROC 0,57-0,64; nivel de azar | no disponible | Hugging Face |
 | Guarda regex `stop_guard.py` | no aplica | no aplica | Sin metrica publicada; falla con vocabulario no previsto y no pondera contexto | no disponible | Interna, no publicada |
 
 Alternativas de terceros de la misma categoria (jueces de finalizacion de turno en modelos encoder pequenos): no disponible en la informacion proporcionada.
@@ -103,7 +103,7 @@ Alternativas de terceros de la misma categoria (jueces de finalizacion de turno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tampajohn/laya-stop-completion-judge
+- Modelo en Hugging Face: https://huggingface.co/tampajohn/laya-stop-completion-judge
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Fichero `metrics.json` (metricas por epoca): incluido en el repositorio del modelo
 - Fichero `state_pack.py` (empaquetado de estado y pregunta de finalizacion): incluido en el repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Quentin-Epitech/EDP es un repositorio publicado en HuggingFace por el usuario Quentin-Epitech bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y ningun otro contenido tecnico: no se describe la arquitectura, el proceso de entrenamiento, el tamano del modelo ni sus capacidades.
+El modelo Quentin-Epitech/EDP es un repositorio publicado en Hugging Face por el usuario Quentin-Epitech bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y ningun otro contenido tecnico: no se describe la arquitectura, el proceso de entrenamiento, el tamano del modelo ni sus capacidades.
 
 El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados. Los metadatos indican una fecha de creacion y ultima actualizacion identicas (2026-09-11), lo que sugiere que se trata de un artefacto subido sin documentacion posterior ni mantenimiento.
 
@@ -80,7 +80,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni la ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Quentin-Epitech/EDP
+- Hugging Face: https://huggingface.co/Quentin-Epitech/EDP
 - Model card del autor: no disponible (solo contiene la declaracion de licencia MIT)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

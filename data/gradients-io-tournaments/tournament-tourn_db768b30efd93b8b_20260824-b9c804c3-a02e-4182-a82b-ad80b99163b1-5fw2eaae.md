@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA fine-tuneado sobre Qwen/Qwen2.5-7B-Instruct, publicado por el equipo de gradients-io-tournaments, una plataforma descentralizada de entrenamiento e investigación de IA (Subnet 56). Se trata de un checkpoint generado en el contexto de un "torneo" de entrenamiento, donde distintos participantes compiten por producir el mejor fine-tune de un modelo base. El adaptador está entrenado mediante Supervised Fine-Tuning (SFT) usando la librería TRL de HuggingFace.
+Este modelo es un adaptador LoRA fine-tuneado sobre Qwen/Qwen2.5-7B-Instruct, publicado por el equipo de gradients-io-tournaments, una plataforma descentralizada de entrenamiento e investigación de IA (Subnet 56). Se trata de un checkpoint generado en el contexto de un "torneo" de entrenamiento, donde distintos participantes compiten por producir el mejor fine-tune de un modelo base. El adaptador está entrenado mediante Supervised Fine-Tuning (SFT) usando la librería TRL de Hugging Face.
 
 El modelo resultante hereda las capacidades del Qwen2.5-7B-Instruct original (generación de texto conversacional, razonamiento, código, matemáticas, multilingüismo) pero con un ajuste específico sobre un dataset de entrenamiento no documentado. El repositorio pesa 1,3 GB, lo que sugiere que contiene únicamente los pesos del adaptador LoRA, no los pesos completos del modelo base. No se especifica la licencia ni los idiomas soportados, y no se han publicado benchmarks.
 
@@ -23,7 +23,7 @@ Su relevancia radica en que representa un ejemplo de fine-tuning distribuido y c
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre Qwen2.5-7B-Instruct, un transformer decoder-only con 7 610 millones de parametros, 28 capas, 28 cabezas de atencion y una ventana de contexto de 32 768 tokens. El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL (Transformer Reinforcement Learning) de HuggingFace, con PEFT 0.18.1 y Transformers 4.57.5. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El entrenamiento se realizo en el marco de un torneo de la plataforma Gradients, lo que sugiere que el dataset pudo ser especifico de la competicion, pero no hay detalles publicos.
+El modelo es un adaptador LoRA aplicado sobre Qwen2.5-7B-Instruct, un transformer decoder-only con 7 610 millones de parametros, 28 capas, 28 cabezas de atencion y una ventana de contexto de 32 768 tokens. El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL (Transformer Reinforcement Learning) de Hugging Face, con PEFT 0.18.1 y Transformers 4.57.5. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El entrenamiento se realizo en el marco de un torneo de la plataforma Gradients, lo que sugiere que el dataset pudo ser especifico de la competicion, pero no hay detalles publicos.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sobre Qwen2.5-7B-Instruct, por lo que su rendimiento base es el de ese modelo. Como alternativas comparables se podrian considerar otros fine-tunes de Qwen2.5-7B-Instruct publicados en HuggingFace, pero no hay datos de rendimiento de este adaptador concreto. Se indica "no disponible" para la comparativa.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo es un adaptador LoRA sobre Qwen2.5-7B-Instruct, por lo que su rendimiento base es el de ese modelo. Como alternativas comparables se podrian considerar otros fine-tunes de Qwen2.5-7B-Instruct publicados en Hugging Face, pero no hay datos de rendimiento de este adaptador concreto. Se indica "no disponible" para la comparativa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-b9c804c3-a02e-4182-a82b-ad80b99163b1-5FW2Eaae
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-b9c804c3-a02e-4182-a82b-ad80b99163b1-5FW2Eaae
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria TRL: https://github.com/huggingface/trl

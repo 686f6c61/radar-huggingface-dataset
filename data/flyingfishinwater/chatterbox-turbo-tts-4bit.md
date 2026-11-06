@@ -86,7 +86,7 @@ La busqueda web asociada no devolvio resultados relevantes sobre el modelo ni so
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/flyingfishinwater/Chatterbox-Turbo-TTS-4bit
+- Hugging Face del modelo: https://huggingface.co/flyingfishinwater/Chatterbox-Turbo-TTS-4bit
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Libreria de conversion y ejecucion: https://github.com/DePasqualeOrg/mlx-audio-plus
 - Pesos del tokenizador de audio requerido: https://huggingface.co/mlx-community/S3TokenizerV2

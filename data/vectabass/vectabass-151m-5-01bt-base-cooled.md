@@ -108,7 +108,7 @@ No se han publicado comparaciones con modelos comparables en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-5.01bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-5.01bt-base-cooled
 - Réplicas semilla: rama `seed2` del mismo repositorio (`revision="seed2"`)
 - Documentación de datos: `DATA.md` en el repositorio
 - Procedencia: `provenance.json` en el repositorio (run contract `ar-square--N1-D3`, revisión `d3c8d88f4c10`)

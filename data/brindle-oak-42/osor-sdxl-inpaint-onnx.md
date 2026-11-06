@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`osor-sdxl-inpaint-onnx` es una conversión a formato ONNX de un modelo de inpainting basado en la arquitectura Stable Diffusion XL (SDXL). Lo publica el usuario `brindle-oak-42` en HuggingFace, con licencia OpenRAIL++ y un tamaño de repositorio de 5,5 GB, coherente con los pesos de un pipeline SDXL exportado a ONNX. El modelo resuelve la tarea de edición de imagen por enmascarado (inpainting): rellenar selectivamente regiones de una imagen delimitadas por una máscara, generando contenido coherente con el contexto visual circundante.
+`osor-sdxl-inpaint-onnx` es una conversión a formato ONNX de un modelo de inpainting basado en la arquitectura Stable Diffusion XL (SDXL). Lo publica el usuario `brindle-oak-42` en Hugging Face, con licencia OpenRAIL++ y un tamaño de repositorio de 5,5 GB, coherente con los pesos de un pipeline SDXL exportado a ONNX. El modelo resuelve la tarea de edición de imagen por enmascarado (inpainting): rellenar selectivamente regiones de una imagen delimitadas por una máscara, generando contenido coherente con el contexto visual circundante.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card descriptiva (solo el bloque de metadatos de licencia), no registra descargas ni likes, y fue creado y actualizado en noviembre de 2026 en un intervalo de unos 34 minutos, lo que sugiere una publicación reciente y sin validación comunitaria. La única información técnica fiable es el formato (ONNX), el pipeline implícito en el nombre (inpainting SDXL) y el tamaño del repo. Cualquier dato sobre arquitectura interna, datos de entrenamiento o rendimiento debe considerarse no disponible.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Formato | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `brindle-oak-42/osor-sdxl-inpaint-onnx` | ONNX | Inpainting (presunto SDXL) | OpenRAIL++ | HuggingFace, 0 descargas | Sin model card descriptiva; sin benchmarks |
-| Stable Diffusion XL Inpainting (Stability AI) | PyTorch (safetensors) | Inpainting | OpenRAIL++ (según versión) | HuggingFace, ampliamente usado | Modelo de referencia con documentación y comunidad |
-| `diffusers/stable-diffusion-xl-1.0-inpainting-0.1` | PyTorch / ONNX (variantes comunitarias) | Inpainting | OpenRAIL++ | HuggingFace | Base oficial del pipeline; existen exportaciones ONNX comunitarias |
-| Kandinsky 2.2 Inpainting | PyTorch | Inpainting | Apache 2.0 (según versión) | HuggingFace | Alternativa con licencia más permisiva |
+| `brindle-oak-42/osor-sdxl-inpaint-onnx` | ONNX | Inpainting (presunto SDXL) | OpenRAIL++ | Hugging Face, 0 descargas | Sin model card descriptiva; sin benchmarks |
+| Stable Diffusion XL Inpainting (Stability AI) | PyTorch (safetensors) | Inpainting | OpenRAIL++ (según versión) | Hugging Face, ampliamente usado | Modelo de referencia con documentación y comunidad |
+| `diffusers/stable-diffusion-xl-1.0-inpainting-0.1` | PyTorch / ONNX (variantes comunitarias) | Inpainting | OpenRAIL++ | Hugging Face | Base oficial del pipeline; existen exportaciones ONNX comunitarias |
+| Kandinsky 2.2 Inpainting | PyTorch | Inpainting | Apache 2.0 (según versión) | Hugging Face | Alternativa con licencia más permisiva |
 
 No se dispone de datos de rendimiento comparativo para el modelo de esta ficha, por lo que la comparativa se limita a formato, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para el modelo de esta ficha, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brindle-oak-42/osor-sdxl-inpaint-onnx
+- Repositorio Hugging Face: https://huggingface.co/brindle-oak-42/osor-sdxl-inpaint-onnx
 - Licencia OpenRAIL++ (referencia): https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Documentación de ONNX Runtime: https://onnxruntime.ai/docs/
 - Documentación de Diffusers (pipeline SDXL inpainting): https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/stable_diffusion_xl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-Candid-Coder-35B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) obtenido mediante un merge DELLA de cuatro modelos: Qwen/Qwen3.6-35B-A3B como base, InternScience/Sage-A1.5 (ratio 0,37), Kwaipilot/KAT-Coder-V2.5-Dev (ratio 0,53) y ornith-ai/Ornith-1.5-35B-A3B (ratio 0,10). Lo publica el usuario DarkKitsune en HuggingFace y está orientado a programación, corrección de errores, orquestación de agentes y planificación. El modelo se distribuye en una variante "abliterated" (también etiquetada como "uncensored"), lo que implica que se han atenuado los mecanismos de rechazo heredados del modelo base Qwen.
+Qwen3.6-Candid-Coder-35B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) obtenido mediante un merge DELLA de cuatro modelos: Qwen/Qwen3.6-35B-A3B como base, InternScience/Sage-A1.5 (ratio 0,37), Kwaipilot/KAT-Coder-V2.5-Dev (ratio 0,53) y ornith-ai/Ornith-1.5-35B-A3B (ratio 0,10). Lo publica el usuario DarkKitsune en Hugging Face y está orientado a programación, corrección de errores, orquestación de agentes y planificación. El modelo se distribuye en una variante "abliterated" (también etiquetada como "uncensored"), lo que implica que se han atenuado los mecanismos de rechazo heredados del modelo base Qwen.
 
 El modelo resuelve el problema de combinar en un único checkpoint las capacidades de tres fine-tunes especializados: el seguimiento de instrucciones y la orquestación de Sage-A1.5, la eficiencia en generación de código de KAT-Coder-V2.5-Dev y la planificación y el autoandamiaje de Ornith-1.5. Con 35.951.822.704 parámetros totales y arquitectura MoE (qwen3_5_moe), el modelo está pensado para tareas agénticas de codificación de contexto largo, con un flujo de trabajo que planifica antes de actuar y verifica y corrige su propia solución tras redactarla.
 
@@ -95,7 +95,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Enlaces
 
-- [HuggingFace: DarkKitsune/Qwen3.6-Candid-Coder-35B-A3B](https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-35B-A3B)
+- [Hugging Face: DarkKitsune/Qwen3.6-Candid-Coder-35B-A3B](https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-35B-A3B)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Modelo base: InternScience/Sage-A1.5](https://huggingface.co/InternScience/Sage-A1.5)
 - [Modelo base: Kwaipilot/KAT-Coder-V2.5-Dev](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)

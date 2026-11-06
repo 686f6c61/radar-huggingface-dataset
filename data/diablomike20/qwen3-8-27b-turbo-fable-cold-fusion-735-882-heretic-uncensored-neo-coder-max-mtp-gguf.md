@@ -88,7 +88,7 @@ El autor afirma que el modelo supera al Qwen3.8 27B base y a Qwen3.6-35B-A3B, Qw
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Predecesor referenciado: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets y https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

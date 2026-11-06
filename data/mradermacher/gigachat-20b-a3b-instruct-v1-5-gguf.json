@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GigaChat-20B-A3B-instruct-v1.5-GGUF",
+  "slug": "mradermacher-gigachat-20b-a3b-instruct-v1-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GigaChat-20B-A3B-instruct-v1.5-GGUF",
+  "created_at": "2025-02-23T03:38:55.000Z",
+  "updated_at": "2026-11-06T12:26:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ru",
+    "en",
+    "base_model:ai-sage/GigaChat-20B-A3B-instruct-v1.5",
+    "base_model:quantized:ai-sage/GigaChat-20B-A3B-instruct-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 20589299712,
+  "parameters_human": "20.59B",
+  "storage_bytes": 140118750848,
+  "storage_human": "140.1 GB",
+  "base_model": "ai-sage/GigaChat-20B-A3B-instruct-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/GigaChat-20B-A3B-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GigaChat-20B-A3B-instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/GigaChat-20B-A3B-instruct-v1.5-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/GigaChat-20B-A3B-instruct-v1.5-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

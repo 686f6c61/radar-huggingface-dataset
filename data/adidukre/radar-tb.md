@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adidukre/radar-tb
+- Repositorio en Hugging Face: https://huggingface.co/adidukre/radar-tb
 - Codigo y uso: https://github.com/adinathdukre/radar-tb
 - Encoder congelado (RAD-DINO): https://huggingface.co/microsoft/rad-dino
 - Reto de referencia: MICCAI 2026 TREAT-MMTB, Task 2 (mencionado en la model card, sin enlace facilitado)

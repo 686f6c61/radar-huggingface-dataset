@@ -103,7 +103,7 @@ No hay datos públicos de otros drafters específicos para Muse Glimmer 30B más
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/abstract-extraordinary/Muse-Glimmer-30B-DSpark)
+- [Modelo en Hugging Face](https://huggingface.co/abstract-extraordinary/Muse-Glimmer-30B-DSpark)
 - [Modelo objetivo: meta-models/Muse-Glimmer-30B-assistant](https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant)
 - [Modelo objetivo cuantizado NVFP4](https://huggingface.co/abstract-extraordinary/Muse-Glimmer-30B-NVFP4)
 - [Pull request de vLLM para soporte de Muse Glimmer (#51655)](https://github.com/vllm-project/vllm/pull/51655)

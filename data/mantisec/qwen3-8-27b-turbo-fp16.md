@@ -109,7 +109,7 @@ No hay datos de rendimiento comparado disponibles para el modelo objeto de la fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mantisec/Qwen3.8-27B-TURBO-FP16
+- Modelo en Hugging Face: https://huggingface.co/Mantisec/Qwen3.8-27B-TURBO-FP16
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Herramienta de conversión bfsquish: https://github.com/mantisec/mantisec-bfsquish
 - Plantilla de chat utilizada: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

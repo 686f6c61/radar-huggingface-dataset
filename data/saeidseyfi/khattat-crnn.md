@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khattat-crnn es un modelo de reconocimiento óptico de caracteres (OCR) para escritura manuscrita en persa (fa), árabe (ar) e inglés (en), publicado por el usuario saeidseyfi en HuggingFace. Se trata de un reconocedor de línea basado en una arquitectura CRNN (red convolucional + dos capas BiLSTM de 256 unidades) con capa de salida CTC, entrenado sobre el conjunto sintético `saeidseyfi/khattat`. Con 4,25 millones de parámetros, es un modelo muy ligero que procesa recortes de línea en escala de grises de 48 píxeles de alto y hasta 384 de ancho, y decodifica con búsqueda greedy sobre un vocabulario de 125 clases.
+khattat-crnn es un modelo de reconocimiento óptico de caracteres (OCR) para escritura manuscrita en persa (fa), árabe (ar) e inglés (en), publicado por el usuario saeidseyfi en Hugging Face. Se trata de un reconocedor de línea basado en una arquitectura CRNN (red convolucional + dos capas BiLSTM de 256 unidades) con capa de salida CTC, entrenado sobre el conjunto sintético `saeidseyfi/khattat`. Con 4,25 millones de parámetros, es un modelo muy ligero que procesa recortes de línea en escala de grises de 48 píxeles de alto y hasta 384 de ancho, y decodifica con búsqueda greedy sobre un vocabulario de 125 clases.
 
 El problema que aborda es específico: el reconocimiento de líneas manuscritas en alfabetos árabe-persas, un dominio donde los modelos genéricos de OCR suelen rendir mal por la cursividad y la variabilidad de formas contextuales de las letras. El modelo se publica junto a su dataset, su vocabulario y un informe de evaluación, además de un vídeo de demostración de inferencia, lo que lo convierte en una pieza reproducible para investigación más que en un componente listo para producción.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y debe enmarcarse con honestidad: el repositori
 | Métricas declaradas | CER (pooled y mean) y WER |
 | Archivos del repositorio | `best.pt`, `vocab.json`, `test_report.json`, `demo/khattat_ocr_demo.mp4`, `demo/predictions.json` |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB (según la ficha de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la ficha de Hugging Face) |
 | Fecha de creación / actualización | 2026-09-18 (ambas) |
 
 ## Arquitectura y entrenamiento
@@ -114,10 +114,10 @@ Diferencias estructurales relevantes frente a esas alternativas: khattat-crnn so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saeidseyfi/khattat-crnn
+- Modelo en Hugging Face: https://huggingface.co/saeidseyfi/khattat-crnn
 - Dataset de entrenamiento: https://huggingface.co/datasets/saeidseyfi/khattat
 - Código del pipeline: https://github.com/ramazanzadehnazaninzahra-del/handwritten-ocr-dataset-pipeline
-- Vídeo de demostración de inferencia: `demo/khattat_ocr_demo.mp4` dentro del repositorio de HuggingFace
-- Predicciones por muestra y métricas: `demo/predictions.json` y `test_report.json` dentro del repositorio de HuggingFace
+- Vídeo de demostración de inferencia: `demo/khattat_ocr_demo.mp4` dentro del repositorio de Hugging Face
+- Predicciones por muestra y métricas: `demo/predictions.json` y `test_report.json` dentro del repositorio de Hugging Face
 - Paper o publicación técnica asociada: no disponible
 - Demo interactiva alojada: no disponible

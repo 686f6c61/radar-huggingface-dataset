@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Cuantizacion | Licencia | Funcion | Disponibilidad |
 |---|---|---|---|---|---|
-| `arturschubertlit/laya-multilingual-int8` | ONNX | INT8 | apache-2.0 | Clasificacion/enrutamiento | HuggingFace (0 descargas) |
-| `convaiinnovations/laya-multilingual` | no disponible | no disponible (presumiblemente fp32) | apache-2.0 | Clasificacion/enrutamiento | HuggingFace (modelo original) |
-| Otros clasificadores multilingues (XLM-R, mBERT, etc.) | safetensors/ONNX segun variante | variable | variable | Clasificacion | HuggingFace |
+| `arturschubertlit/laya-multilingual-int8` | ONNX | INT8 | apache-2.0 | Clasificacion/enrutamiento | Hugging Face (0 descargas) |
+| `convaiinnovations/laya-multilingual` | no disponible | no disponible (presumiblemente fp32) | apache-2.0 | Clasificacion/enrutamiento | Hugging Face (modelo original) |
+| Otros clasificadores multilingues (XLM-R, mBERT, etc.) | safetensors/ONNX segun variante | variable | variable | Clasificacion | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 

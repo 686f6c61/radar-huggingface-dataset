@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado documenta una técnica de abli
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | GGUF (fichero `orcarouter.gguf`); compatible con cuantizaciones del modelo base y finetunes de la misma arquitectura |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (vector de control); parches de código para vLLM; el modelo base en safetensors/GGUF según el release de origen |
 
 ## Arquitectura y entrenamiento
@@ -68,10 +68,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Strata-Qwen3.8-Flash-Next-Abliteration | Vector de control (abliteration) | 2.560 valores; aplicable a modelos de la familia Qwen3.8-Flash-Next | no disponible | qwen-community-license-1.0 | HuggingFace, 33 descargas |
-| Qwen/Qwen3.8-Flash-Next | Modelo base | 120.320 (unidad no especificada) | no disponible | qwen-community-license-1.0 | HuggingFace |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | Finetune sin censura | no disponible | no disponible | no disponible | HuggingFace |
-| ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF | Finetune cuantizado | no disponible | no disponible | no disponible | HuggingFace |
+| Strata-Qwen3.8-Flash-Next-Abliteration | Vector de control (abliteration) | 2.560 valores; aplicable a modelos de la familia Qwen3.8-Flash-Next | no disponible | qwen-community-license-1.0 | Hugging Face, 33 descargas |
+| Qwen/Qwen3.8-Flash-Next | Modelo base | 120.320 (unidad no especificada) | no disponible | qwen-community-license-1.0 | Hugging Face |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | Finetune sin censura | no disponible | no disponible | no disponible | Hugging Face |
+| ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF | Finetune cuantizado | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación directa con otros vectores de abliteración publicados no está disponible en la información proporcionada. La diferencia clave frente a un finetune sin censura como orcarouter es que aquí no se modifican pesos: el comportamiento se alterna en tiempo de inferencia mediante un interruptor, lo que permite recuperar la respuesta stock token a token.
 
@@ -89,7 +89,7 @@ La comparación directa con otros vectores de abliteración publicados no está 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Goghor/Strata-Qwen3.8-Flash-Next-Abliteration
+- Repositorio Hugging Face: https://huggingface.co/Goghor/Strata-Qwen3.8-Flash-Next-Abliteration
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Finetune sin censura de referencia: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Cuantización GGUF del base probada: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

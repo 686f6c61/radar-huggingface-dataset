@@ -72,7 +72,7 @@ Los datos de los modelos comparables proceden de sus fichas públicas de referen
 | `Stage-org/filter-s_signal2-lmb025-200-4k-epoch3` | 4,54 B | 65.536 tokens en la configuración de entrenamiento (no confirmado como contexto nativo) | No disponible | 1 checkpoint safetensors, 0 descargas, 0 likes |
 | Qwen3-4B (familia base de referencia) | ~4 B | 32.768 tokens nativos, extensible | Apache-2.0 | Amplia, con cuantizaciones GGUF y AWQ |
 | Llama-3.2-3B | 3,2 B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Amplia, ecosistema maduro |
-| Gemma-3-4B | ~4 B | 128.000 tokens | Términos de uso de Gemma | Amplia en HuggingFace |
+| Gemma-3-4B | ~4 B | 128.000 tokens | Términos de uso de Gemma | Amplia en Hugging Face |
 
 La diferencia crítica no es de tamaño ni de contexto, sino de estado de publicación: los tres modelos comparables tienen licencia explícita, evaluaciones publicadas y ecosistema de despliegue, mientras que este checkpoint carece de los tres elementos.
 
@@ -93,7 +93,7 @@ La diferencia crítica no es de tamaño ni de contexto, sino de estado de public
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Stage-org/filter-s_signal2-lmb025-200-4k-epoch3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Stage-org/filter-s_signal2-lmb025-200-4k-epoch3
 - Dataset de entrenamiento declarado: `Stage-org/filter-s_signal2-lmb025-200-4k` (referenciado en la model card)
 - Modelo base declarado en la configuración: `Qwen/Qwen3.5-4B`
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos corresponden a portales de ofertas de prácticas ajenos al repositorio.

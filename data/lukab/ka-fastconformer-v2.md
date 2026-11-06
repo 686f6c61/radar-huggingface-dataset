@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ka-fastconformer-v2 es un modelo de reconocimiento automatico del habla (ASR) para georgiano, publicado por el usuario lukab en HuggingFace. Se trata de un fine-tuning completo del modelo `nvidia/stt_ka_fastconformer_hybrid_large_pc` sobre 356,8 horas de audio georgiano, con especial enfasis en habla espontanea procedente de videos de YouTube con subtitulos creados por los propios autores. El modelo resuelve el problema de la transcripcion de habla no leida, un escenario donde el modelo base de NVIDIA obtiene resultados notablemente peores.
+ka-fastconformer-v2 es un modelo de reconocimiento automatico del habla (ASR) para georgiano, publicado por el usuario lukab en Hugging Face. Se trata de un fine-tuning completo del modelo `nvidia/stt_ka_fastconformer_hybrid_large_pc` sobre 356,8 horas de audio georgiano, con especial enfasis en habla espontanea procedente de videos de YouTube con subtitulos creados por los propios autores. El modelo resuelve el problema de la transcripcion de habla no leida, un escenario donde el modelo base de NVIDIA obtiene resultados notablemente peores.
 
 La arquitectura es un encoder FastConformer de 115 millones de parametros que alimenta dos decoders: un Transducer (por defecto, mas preciso) y un CTC (mas rapido). El tokenizer SentencePiece de 1.024 tokens se mantiene sin cambios respecto al modelo base. La entrada es audio mono a 16 kHz y la salida son unicamente letras georgianas y espacios, sin puntuacion y con los numeros escritos como palabras.
 
@@ -80,8 +80,8 @@ Velocidad medida en una NVIDIA RTX 6000 Ada con lotes de 16 ventanas: Transducer
 
 | Modelo | Parametros | Contexto / ventana | WER YouTube (espontaneo) | WER FLEURS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lukab/ka-fastconformer-v2 | 115M | ventanas de hasta 30 s | 0,268 (Transducer) | 0,115 | CC-BY-4.0 | HuggingFace (NeMo) |
-| nvidia/stt_ka_fastconformer_hybrid_large_pc | no disponible (modelo base) | ventanas de hasta 30 s | 0,456 (zero-shot) | 0,124 | no disponible en la informacion | HuggingFace (NeMo) |
+| lukab/ka-fastconformer-v2 | 115M | ventanas de hasta 30 s | 0,268 (Transducer) | 0,115 | CC-BY-4.0 | Hugging Face (NeMo) |
+| nvidia/stt_ka_fastconformer_hybrid_large_pc | no disponible (modelo base) | ventanas de hasta 30 s | 0,456 (zero-shot) | 0,124 | no disponible en la informacion | Hugging Face (NeMo) |
 | Meta Omnilingual ASR CTC 300M | 300M | no disponible | no disponible | no disponible | no disponible | usado como filtro de calidad en el entrenamiento |
 
 La comparacion directa solo es posible con el modelo base de NVIDIA, del que este modelo es fine-tuning. El modelo Omnilingual ASR CTC 300M de Meta se menciona unicamente como herramienta de filtrado de calidad durante el entrenamiento, sin resultados de benchmarks publicados en la informacion disponible. No se dispone de datos de otros modelos ASR georgianos comparables.
@@ -101,7 +101,7 @@ La comparacion directa solo es posible con el modelo base de NVIDIA, del que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukab/ka-fastconformer-v2
+- Modelo en Hugging Face: https://huggingface.co/lukab/ka-fastconformer-v2
 - Modelo base: https://huggingface.co/nvidia/stt_ka_fastconformer_hybrid_large_pc
 - Dataset del corpus: https://huggingface.co/datasets/Peacockery/georgian-asr-corpus-v0
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs

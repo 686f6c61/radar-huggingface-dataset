@@ -16,7 +16,7 @@ Context length: not given. MiniCPM-V 4.7-1B presumably 32k? Not in info — say 
 
 Let me write the ficha.
 
-For enlaces: HuggingFace, ModelScope (https://modelscope.cn/models/whcl412/FinchAI-Rune1-Preview-f16 — hmm, the model card says ModelScope whcl412/FinchAI-Rune1-Preview-f16; I could give the generic link but constructing may be risky. I'll give it as given: ModelScope: whcl412/FinchAI-Rune1-Preview-f16, and mention the base model link. GitHub: hwc-cell/FinchAI-Rune1-Preview → https://github.com/hwc-cell/FinchAI-Rune1-Preview. Base model https://huggingface.co/openbmb/MiniCPM-V-4.7-1B.
+For enlaces: Hugging Face, ModelScope (https://modelscope.cn/models/whcl412/FinchAI-Rune1-Preview-f16 — hmm, the model card says ModelScope whcl412/FinchAI-Rune1-Preview-f16; I could give the generic link but constructing may be risky. I'll give it as given: ModelScope: whcl412/FinchAI-Rune1-Preview-f16, and mention the base model link. GitHub: hwc-cell/FinchAI-Rune1-Preview → https://github.com/hwc-cell/FinchAI-Rune1-Preview. Base model https://huggingface.co/openbmb/MiniCPM-V-4.7-1B.
 
 Also note: results of web search did not return relevant links (anime content), so no additional links.
 
@@ -109,8 +109,8 @@ La información disponible solo permite comparar de forma fiable con el modelo b
 
 | Modelo | Parametros | Contexto | Tool calling | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FinchAI-Rune1-Preview-f16 | 1,554B | no disponible (entrenamiento ≤950 tokens) | Sí, con juicio de invocación entrenado específicamente | Heredada del base, sin reforzar por el LoRA | Apache 2.0 | HuggingFace y ModelScope; sin GGUF ni MLX |
-| openbmb/MiniCPM-V-4.7-1B (base) | 1B (según nomenclatura del autor) | no disponible | Sí, pero sin el entrenamiento de juicio (3/9 en el grupo de sondas de juicio) | Sí | Apache 2.0 | HuggingFace |
+| FinchAI-Rune1-Preview-f16 | 1,554B | no disponible (entrenamiento ≤950 tokens) | Sí, con juicio de invocación entrenado específicamente | Heredada del base, sin reforzar por el LoRA | Apache 2.0 | Hugging Face y ModelScope; sin GGUF ni MLX |
+| openbmb/MiniCPM-V-4.7-1B (base) | 1B (según nomenclatura del autor) | no disponible | Sí, pero sin el entrenamiento de juicio (3/9 en el grupo de sondas de juicio) | Sí | Apache 2.0 | Hugging Face |
 | Otras alternativas de tool calling de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -131,7 +131,7 @@ La información disponible solo permite comparar de forma fiable con el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16
+- Modelo en Hugging Face: https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio en ModelScope (referenciado en la model card): whcl412/FinchAI-Rune1-Preview-f16
 - Repositorio de código en GitHub (scripts de entrenamiento, generador de datos, scripts de evaluación y adaptador LoRA): https://github.com/hwc-cell/FinchAI-Rune1-Preview

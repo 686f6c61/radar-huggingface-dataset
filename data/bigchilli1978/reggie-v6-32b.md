@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reggie-v6-32b es un adaptador LoRA publicado por el usuario Bigchilli1978 en HuggingFace, entrenado sobre el modelo base Qwen/Qwen2.5-Coder-32B-Instruct. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino (formato PEFT) que debe cargarse junto al modelo base para funcionar. El repositorio se creó el 12 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "me gusta".
+Reggie-v6-32b es un adaptador LoRA publicado por el usuario Bigchilli1978 en Hugging Face, entrenado sobre el modelo base Qwen/Qwen2.5-Coder-32B-Instruct. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino (formato PEFT) que debe cargarse junto al modelo base para funcionar. El repositorio se creó el 12 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "me gusta".
 
 El interés de este tipo de publicaciones es acotado: un adaptador LoRA sobre un modelo coder de 32B parámetros resulta atractivo para quien quiera especializar el modelo base en un dominio concreto sin asumir el coste de un ajuste completo. Sin embargo, la model card está completamente vacía de contenido sustantivo (todos los campos figuran como "[More Information Needed]") y el tamaño del repositorio es de 0,0 GB, lo que sugiere que los pesos del adaptador podrían no haberse subido realmente.
 
@@ -45,7 +45,7 @@ No hay ningun dato publicado sobre el proceso de entrenamiento de este adaptador
 
 - Especializacion de dominio sobre Qwen2.5-Coder-32B: el adaptador se cargaria junto al modelo base para aplicar un ajuste fino concreto (por ejemplo, un estilo de codigo o un framework especifico), evitando el coste de un fine-tuning completo; no obstante, el proposito real del autor no esta documentado.
 - Experimentacion academica con PEFT: util como ejemplo reproducible de como se publica un adaptador LoRA sobre un modelo coder de 32B, para estudiar el formato de artefactos PEFT y su integracion con transformers.
-- Investigacion sobre evaluacion de adaptadores: sirve como caso de estudio de repositorios sin model card, utiles para analizar los problemas de trazabilidad y reproducibilidad en el ecosistema HuggingFace.
+- Investigacion sobre evaluacion de adaptadores: sirve como caso de estudio de repositorios sin model card, utiles para analizar los problemas de trazabilidad y reproducibilidad en el ecosistema Hugging Face.
 - Asistencia de programacion en produccion: el modelo base subyacente permite autocompletado, generacion de tests y refactorizacion en entornos con contexto largo de hasta 131.072 tokens, siempre que el adaptador aporte o al menos no degrade la calidad del base.
 - Integracion en pipelines de CI/CD: el modelo base soporta tool calling y generacion estructurada, lo que permitiria revisiones de codigo automatizadas o generacion de parches, condicionado a validar el adaptador.
 - Analisis de repositorios extensos: gracias a la ventana de contexto del modelo base, es viable procesar archivos completos o varios modulos a la vez para tareas de documentacion y deteccion de dependencias.
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Bigchilli1978/reggie-v6-32b | Adaptador LoRA (PEFT) | No disponible (base: 32,5 B) | No especificado (base: 131.072 tokens) | No disponible | Repositorio de 0,0 GB, 0 descargas |
-| Qwen/Qwen2.5-Coder-32B-Instruct | Modelo completo denso | 32,5 B | 131.072 tokens | Apache 2.0 | Publico en HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-Coder-14B-Instruct | Modelo completo denso | 14,7 B | 131.072 tokens | Apache 2.0 | Publico en HuggingFace |
+| Qwen/Qwen2.5-Coder-32B-Instruct | Modelo completo denso | 32,5 B | 131.072 tokens | Apache 2.0 | Publico en Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-Coder-14B-Instruct | Modelo completo denso | 14,7 B | 131.072 tokens | Apache 2.0 | Publico en Hugging Face |
 | Adaptadores LoRA comunitarios sobre Qwen2.5-Coder | Adaptador PEFT | Variable | Heredado del base | Variable segun autor | Multiple, con calidad y documentacion desigual |
 
 No se dispone de datos de rendimiento comparativo para el adaptador, por lo que la comparacion se limita a caracteristicas estructurales y de licencia. Frente al modelo base, el adaptador no aporta ninguna ventaja documentada y anade una dependencia adicional (PEFT mas el propio repositorio).
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador, por lo que 
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/Bigchilli1978/reggie-v6-32b
+- Pagina del adaptador en Hugging Face: https://huggingface.co/Bigchilli1978/reggie-v6-32b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

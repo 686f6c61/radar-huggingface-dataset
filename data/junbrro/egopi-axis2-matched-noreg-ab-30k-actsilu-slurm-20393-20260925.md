@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junbrro/egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925` es un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro`, con 6.915.094.616 parámetros (aproximadamente 6,9 mil millones) almacenados en formato safetensors y un repositorio de 13,9 GB. Según su propia model card, se trata del "checkpoint final" de un entrenamiento detenido en el paso 30.000 de un job de Slurm identificado como `slurm-20393`, bajo la etiqueta interna "Arm II no-reg tokenizer CogAlign". El repositorio contiene únicamente los pesos finales y la configuración; se excluyen explícitamente el estado del optimizador y el estado del generador de números aleatorios (RNG), lo que lo convierte en un artefacto de inferencia o de reanudación parcial, no en un checkpoint completo de entrenamiento.
+El modelo `junbrro/egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925` es un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro`, con 6.915.094.616 parámetros (aproximadamente 6,9 mil millones) almacenados en formato safetensors y un repositorio de 13,9 GB. Según su propia model card, se trata del "checkpoint final" de un entrenamiento detenido en el paso 30.000 de un job de Slurm identificado como `slurm-20393`, bajo la etiqueta interna "Arm II no-reg tokenizer CogAlign". El repositorio contiene únicamente los pesos finales y la configuración; se excluyen explícitamente el estado del optimizador y el estado del generador de números aleatorios (RNG), lo que lo convierte en un artefacto de inferencia o de reanudación parcial, no en un checkpoint completo de entrenamiento.
 
 La información pública disponible es extremadamente escasa: no se declara licencia, idiomas, pipeline, arquitectura ni dataset de entrenamiento. El tag principal del repositorio es `RLDX-1` y el autor empaqueta un directorio `actlat/` que, según la model card, contiene el tokenizador de acciones "cuando procede", lo que sugiere un modelo orientado a tareas de decisión o agentes más que a generación de texto conversacional convencional, aunque esto no puede confirmarse con los datos disponibles. La configuración conserva las rutas del clúster de origen, por lo que el propio autor advierte de que hay que remapearlas antes de usarlo.
 
@@ -100,5 +100,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925
 - Papers, blogs, repositorios de codigo o demos: no disponible (la busqueda web no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos fueron irrelevantes).

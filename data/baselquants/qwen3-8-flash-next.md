@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje causal con encoder de vision publicado como pesos abiertos, presentado por el autor de la model card como la primera entrega open-weight de la arquitectura que sustentara Qwen4. El repositorio de HuggingFace analizado (baselquants/Qwen3.8-Flash-Next) replica la model card oficial de Qwen y contiene 179 999 981 459 parametros reales en safetensors, un total de 360 GB de repositorio. El modelo combina una ruta hibrida de atencion (Gated DeltaNet mas Qwen Sparse Attention), una capa MoE de 512 expertos, un esquema de N-gram Embedding de 20 millones de entradas y un modulo MTP (multi-token prediction) de una capa, con 6 000 millones de parametros activos por token.
+Qwen3.8-Flash-Next es un modelo de lenguaje causal con encoder de vision publicado como pesos abiertos, presentado por el autor de la model card como la primera entrega open-weight de la arquitectura que sustentara Qwen4. El repositorio de Hugging Face analizado (baselquants/Qwen3.8-Flash-Next) replica la model card oficial de Qwen y contiene 179 999 981 459 parametros reales en safetensors, un total de 360 GB de repositorio. El modelo combina una ruta hibrida de atencion (Gated DeltaNet mas Qwen Sparse Attention), una capa MoE de 512 expertos, un esquema de N-gram Embedding de 20 millones de entradas y un modulo MTP (multi-token prediction) de una capa, con 6 000 millones de parametros activos por token.
 
 El problema que aborda es el coste de servir contexto largo en cargas de trabajo agenticas: en lugar de seleccionar tokens individuales para la atencion dispersa, QSA opera a nivel de micro-bloque con un presupuesto de 512 bloques (2048 tokens), lo que segun el autor reduce de forma significativa la latencia en contextos largos. La ventana de contexto es de 262 144 tokens de forma nativa y extensible hasta 1 000 000, y el modelo acepta entradas de imagen y texto (pipeline image-text-to-text).
 
-Es relevante ahora como vista previa experimental de la linea Qwen4 y como alternativa de pesos abiertos frente a la version gestionada Qwen3.8-Flash, que se sirve a traves de Qwen Cloud con 1M de contexto por defecto y herramientas integradas. Conviene senalar que el repositorio de HuggingFace esta publicado por la cuenta baselquants, con 0 descargas y 0 likes en la fecha consultada (18 de septiembre de 2026), mientras que la model card corresponde a la publicacion de Qwen; la procedencia de los pesos deberia verificarse antes de cualquier uso en produccion.
+Es relevante ahora como vista previa experimental de la linea Qwen4 y como alternativa de pesos abiertos frente a la version gestionada Qwen3.8-Flash, que se sirve a traves de Qwen Cloud con 1M de contexto por defecto y herramientas integradas. Conviene senalar que el repositorio de Hugging Face esta publicado por la cuenta baselquants, con 0 descargas y 0 likes en la fecha consultada (18 de septiembre de 2026), mientras que la model card corresponde a la publicacion de Qwen; la procedencia de los pesos deberia verificarse antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -93,13 +93,13 @@ La informacion disponible solo documenta una variante directamente comparable de
 
 | Modelo | Parametros | Parametros activos | Contexto | Disponibilidad | Licencia |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next | ~180 000 M (125 000 M LM + 51 000 M n-gram + 4000 M MTP) | ~6000 M | 262 144 nativo, hasta 1 000 000 | Pesos abiertos en HuggingFace (repo de terceros, 0 descargas en la fecha consultada) | qwen-community-1.0 |
+| Qwen3.8-Flash-Next | ~180 000 M (125 000 M LM + 51 000 M n-gram + 4000 M MTP) | ~6000 M | 262 144 nativo, hasta 1 000 000 | Pesos abiertos en Hugging Face (repo de terceros, 0 descargas en la fecha consultada) | qwen-community-1.0 |
 | Qwen3.8-Flash | Derivado de Qwen3.8-Flash-Next, sin cifra publicada en la informacion disponible | no disponible | 1 000 000 por defecto | Servicio gestionado en Qwen Cloud, con herramientas integradas oficiales | no disponible (servicio) |
 | Otros modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Procedencia del repositorio: la model card corresponde a la publicacion de Qwen, pero el repositorio de HuggingFace analizado pertenece a la cuenta baselquants, con 0 descargas y 0 likes. Debe verificarse la integridad y el origen de los pesos antes de usarlos.
+- Procedencia del repositorio: la model card corresponde a la publicacion de Qwen, pero el repositorio de Hugging Face analizado pertenece a la cuenta baselquants, con 0 descargas y 0 likes. Debe verificarse la integridad y el origen de los pesos antes de usarlos.
 - Estado experimental: la propia model card lo describe como una vista previa experimental de la arquitectura que sustentara Qwen4, lo que implica un riesgo mayor de comportamiento no documentado o cambiante.
 - Idiomas soportados: no disponibles. No puede asumirse un rendimiento multilingue homogeneo, y en particular no hay confirmacion de calidad en castellano.
 - Capacidades no documentadas: no hay datos sobre generacion de codigo, matematicas, tool calling, uso en agentes con funciones externas ni modo de razonamiento. Cualquier despliegue en esos escenarios requiere evaluacion previa propia.
@@ -114,7 +114,7 @@ La informacion disponible solo documenta una variante directamente comparable de
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/baselquants/Qwen3.8-Flash-Next
+- Repositorio de Hugging Face: https://huggingface.co/baselquants/Qwen3.8-Flash-Next
 - Licencia del repositorio: https://huggingface.co/baselquants/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Blog oficial de Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

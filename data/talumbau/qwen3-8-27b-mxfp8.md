@@ -84,7 +84,7 @@ La diferencia clave entre las variantes FP8 y MXFP8 es la granularidad de escala
 
 ## Enlaces
 
-- Repositorio HuggingFace: [talumbau/Qwen3.8-27B-mxfp8](https://huggingface.co/talumbau/Qwen3.8-27B-mxfp8)
+- Repositorio Hugging Face: [talumbau/Qwen3.8-27B-mxfp8](https://huggingface.co/talumbau/Qwen3.8-27B-mxfp8)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Versión FP8 de referencia: [Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
 - Repositorio oficial en GitHub: [AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)

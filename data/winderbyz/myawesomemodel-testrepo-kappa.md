@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `WinderBYZ/MyAwesomeModel-TestRepo-kappa` es un espacio de HuggingFace de caracter claramente experimental (identificador con "TestRepo", creado el 7 de septiembre de 2026, con 0 descargas, 0 likes y un tamaño de 0.0 GB). No contiene pesos, configuraciones ni documentación técnica verificable. La model card incluida describe un modelo ficticio o de demostración llamado "MyAwesomeModel", del que se afirma que ha mejorado en razonamiento matemático, programación y lógica, alcanzando un 87.5% en AIME 2025. Sin embargo, estas afirmaciones no están respaldadas por artefactos publicados ni por especificaciones técnicas concretas.
+El repositorio `WinderBYZ/MyAwesomeModel-TestRepo-kappa` es un espacio de Hugging Face de caracter claramente experimental (identificador con "TestRepo", creado el 7 de septiembre de 2026, con 0 descargas, 0 likes y un tamaño de 0.0 GB). No contiene pesos, configuraciones ni documentación técnica verificable. La model card incluida describe un modelo ficticio o de demostración llamado "MyAwesomeModel", del que se afirma que ha mejorado en razonamiento matemático, programación y lógica, alcanzando un 87.5% en AIME 2025. Sin embargo, estas afirmaciones no están respaldadas por artefactos publicados ni por especificaciones técnicas concretas.
 
-La etiqueta de HuggingFace indica `pytorch`, `bert` y `feature-extraction`, mientras que la model card habla de un modelo generativo con soporte de function calling y razonamiento profundo, lo que resulta incoherente. La licencia declarada es MIT. En su estado actual, este repositorio no puede utilizarse para inferencia ni para evaluación, y debe considerarse como una plantilla o un banco de pruebas, no como un modelo real.
+La etiqueta de Hugging Face indica `pytorch`, `bert` y `feature-extraction`, mientras que la model card habla de un modelo generativo con soporte de function calling y razonamiento profundo, lo que resulta incoherente. La licencia declarada es MIT. En su estado actual, este repositorio no puede utilizarse para inferencia ni para evaluación, y debe considerarse como una plantilla o un banco de pruebas, no como un modelo real.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La etiqueta de HuggingFace indica `pytorch`, `bert` y `feature-extraction`, mien
 
 ## Arquitectura y entrenamiento
 
-No se proporciona información técnica sobre la arquitectura del modelo. La model card menciona una "actualización significativa" que mejora la profundidad de razonamiento y la capacidad de inferencia mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no especifica la arquitectura subyacente (transformer, MoE, SSM, etc.), el número de parámetros, la longitud de contexto ni los datos de entrenamiento utilizados. Tampoco se detalla si se aplicó RLHF, DPO u otra técnica de alineación. La etiqueta de HuggingFace sugiere `bert` y `feature-extraction`, lo que apuntaría a un modelo encoder, pero la model card describe capacidades generativas y de razonamiento, una contradicción que no puede resolverse con la información disponible.
+No se proporciona información técnica sobre la arquitectura del modelo. La model card menciona una "actualización significativa" que mejora la profundidad de razonamiento y la capacidad de inferencia mediante "recursos computacionales incrementados" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no especifica la arquitectura subyacente (transformer, MoE, SSM, etc.), el número de parámetros, la longitud de contexto ni los datos de entrenamiento utilizados. Tampoco se detalla si se aplicó RLHF, DPO u otra técnica de alineación. La etiqueta de Hugging Face sugiere `bert` y `feature-extraction`, lo que apuntaría a un modelo encoder, pero la model card describe capacidades generativas y de razonamiento, una contradicción que no puede resolverse con la información disponible.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No disponible. La model card menciona modelos de referencia ("Model1", "Model2",
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-kappa](https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-kappa)
-- Perfil del autor en HuggingFace: [https://huggingface.co/WinderBYZ](https://huggingface.co/WinderBYZ)
+- Repositorio en Hugging Face: [https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-kappa](https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo-kappa)
+- Perfil del autor en Hugging Face: [https://huggingface.co/WinderBYZ](https://huggingface.co/WinderBYZ)
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios de código o demos) en la búsqueda web realizada.

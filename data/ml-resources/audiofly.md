@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AudioFly es un modelo de generacion de audio (efectos de sonido) a partir de descripciones textuales, desarrollado por iFLYTEK y publicado originalmente en ModelScope. El repositorio de HuggingFace analizado (`ml-resources/AudioFly`) es un espejo no oficial del modelo original, con la licencia Apache 2.0 sin modificar. Se trata de un modelo de difusion latente (Latent Diffusion Model) de aproximadamente 1.000 millones de parametros que sintetiza audio a una frecuencia de muestreo de 44,1 kHz.
+AudioFly es un modelo de generacion de audio (efectos de sonido) a partir de descripciones textuales, desarrollado por iFLYTEK y publicado originalmente en ModelScope. El repositorio de Hugging Face analizado (`ml-resources/AudioFly`) es un espejo no oficial del modelo original, con la licencia Apache 2.0 sin modificar. Se trata de un modelo de difusion latente (Latent Diffusion Model) de aproximadamente 1.000 millones de parametros que sintetiza audio a una frecuencia de muestreo de 44,1 kHz.
 
 El modelo resuelve el problema de la generacion de audio condicionada por texto (text-to-audio), cubriendo tanto escenarios de evento unico como de multiples eventos simultaneos. Segun la model card, el audio generado muestra una fuerte alineacion con el prompt de entrada y supera a modelos previos en el conjunto de datos AudioCaps.
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en que mejora de forma notable las metricas de calid
 | Licencia | Apache 2.0 |
 | Formato de pesos | checkpoint de PyTorch (`.ckpt`), cargado mediante `torch.load` |
 
-Otros datos tecnicos: frecuencia de muestreo de salida de 44,1 kHz; guia de escala (CFG) recomendada de 3,5; pasos DDIM recomendados de 200; tamano del repositorio en HuggingFace de 8,3 GB.
+Otros datos tecnicos: frecuencia de muestreo de salida de 44,1 kHz; guia de escala (CFG) recomendada de 3,5; pasos DDIM recomendados de 200; tamano del repositorio en Hugging Face de 8,3 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ Los datos de parametros, licencia y frecuencia de salida de los modelos comparad
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace es un espejo no oficial (`ml-resources/AudioFly`), no una publicacion de los autores originales; esto puede implicar menor soporte, actualizaciones no garantizadas y trazabilidad limitada.
+- El repositorio de Hugging Face es un espejo no oficial (`ml-resources/AudioFly`), no una publicacion de los autores originales; esto puede implicar menor soporte, actualizaciones no garantizadas y trazabilidad limitada.
 - No se documentan sesgos especificos, pero al entrenarse con datasets de audio de codigo abierto (AudioSet, AudioCaps, TUT) y datos internos propietarios, es probable que herede sesgos de representacion acustica presentes en dichos corpus.
 - Riesgo de alucinacion acustica: el modelo puede generar eventos sonoros no descritos en el prompt o interpretar de forma incorrecta descripciones ambiguas; la model card no cuantifica este comportamiento.
 - No se especifican los idiomas soportados; los ejemplos estan en ingles, por lo que el rendimiento con prompts en otros idiomas es desconocido.
@@ -99,6 +99,6 @@ Los datos de parametros, licencia y frecuencia de salida de los modelos comparad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ml-resources/AudioFly
+- Hugging Face: https://huggingface.co/ml-resources/AudioFly
 - ModelScope (repositorio original): https://www.modelscope.cn/models/iflytek/AudioFly
 - Paper de referencia para la metodologia de evaluacion (Stable Audio Open): https://arxiv.org/pdf/2407.14358

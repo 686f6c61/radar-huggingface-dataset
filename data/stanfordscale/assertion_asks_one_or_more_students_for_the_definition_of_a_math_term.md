@@ -74,10 +74,10 @@ No se dispone de datos de benchmarks de alternativas sobre el mismo conjunto, po
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (StanfordSCALE) | Clasificador SetFit (MPNet + regresión logística) | 109.486.464 | No disponible | F1 0,474 / ROC-AUC 0,890 en test | No disponible | HuggingFace |
-| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases base | No disponible en la información proporcionada | No disponible | No aplica sin cabeza supervisada | No disponible en la información proporcionada | HuggingFace |
+| Este modelo (StanfordSCALE) | Clasificador SetFit (MPNet + regresión logística) | 109.486.464 | No disponible | F1 0,474 / ROC-AUC 0,890 en test | No disponible | Hugging Face |
+| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases base | No disponible en la información proporcionada | No disponible | No aplica sin cabeza supervisada | No disponible en la información proporcionada | Hugging Face |
 | Anotación por LLM (etiquetas del dataset) | Anotador generativo | No disponible | No disponible | Alfa de Krippendorff 0,576 frente a anotadores | No disponible | Uso interno en la elaboración del dataset |
-| Otros clasificadores de aserciones de StanfordSCALE | Clasificador SetFit | No disponible | No disponible | No disponible | No disponible | HuggingFace (misma organización) |
+| Otros clasificadores de aserciones de StanfordSCALE | Clasificador SetFit | No disponible | No disponible | No disponible | No disponible | Hugging Face (misma organización) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de alternativas sobre el mismo conjunto, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_definition_of_a_math_term
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_definition_of_a_math_term
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

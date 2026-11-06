@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos de terceros en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-openjev-FP8
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-openjev-FP8
 - Modelo BF16 con tabla de validación: https://huggingface.co/iromu/Qwen3-0.6B-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/Qwen3-0.6B-openjev-GGUF
 - Checkpoint NVFP4: https://huggingface.co/iromu/Qwen3-0.6B-openjev-NVFP4

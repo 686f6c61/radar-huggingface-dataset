@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Qwen2.5-7B-Instruct | 7B | 128K | Apache-2.0 (la mayoria de variantes) | Proposito general, tool calling |
 | Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Proposito general, tool calling |
 
-Los valores de los modelos comparativos corresponden a especificaciones ampliamente conocidas; los del modelo objeto de la ficha provienen de los metadatos de HuggingFace y de los resultados de busqueda web. No se dispone de comparativas de rendimiento (benchmarks) para este modelo concreto, por lo que la comparacion se limita a parametros, contexto y licencia.
+Los valores de los modelos comparativos corresponden a especificaciones ampliamente conocidas; los del modelo objeto de la ficha provienen de los metadatos de Hugging Face y de los resultados de busqueda web. No se dispone de comparativas de rendimiento (benchmarks) para este modelo concreto, por lo que la comparacion se limita a parametros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ Los valores de los modelos comparativos corresponden a especificaciones ampliame
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF
 - Modelo base: https://huggingface.co/ProCreations/BetterWright-K2-Horizon-7B-Uno
 - Dataset de trazas de agente: ProCreations/betterwright-agent-traces
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-i1-GGUF

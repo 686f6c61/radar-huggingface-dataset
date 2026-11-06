@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455 | 86,4 M | No disponible | Ajuste SFT sobre base GPT-2 | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible en esta busqueda (orden de 100 M) | No disponible | GPT-2 preentrenado en ~100 MB de inglés | No disponible | HuggingFace, uso extendido en investigación multilingüe |
+| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455 | 86,4 M | No disponible | Ajuste SFT sobre base GPT-2 | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible en esta busqueda (orden de 100 M) | No disponible | GPT-2 preentrenado en ~100 MB de inglés | No disponible | Hugging Face, uso extendido en investigación multilingüe |
 | GPT-2 small (openai-community/gpt2) | 124 M | 1024 tokens | Transformer decoder-only | Modified MIT | Ampliamente disponible |
 | Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Transformer decoder-only | Apache 2.0 | Ampliamente disponible, con suite de checkpoints intermedios |
 
@@ -83,7 +83,7 @@ Rendimiento comparado: no disponible. No se han publicado métricas para este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/nmhb1c88
 - Repositorio de TRL: https://github.com/huggingface/trl

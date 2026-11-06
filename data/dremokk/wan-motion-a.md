@@ -1,7 +1,7 @@
 # dremokk/wan-motion-a
 
 ## Resumen
-Wan-motion-a es un ajuste fino (fine-tune) del modelo de generacion de video imagen-a-video Wan2.2-I2V-A14B, publicado por el usuario dremokk en HuggingFace. El modelo base, desarrollado por Wan-AI (equipo de Alibaba), es un transformer de difusion para conversion de imagen a video con aproximadamente 14.000 millones de parametros. Este ajuste concreto se distribuye en un repositorio de 15,0 GB y no incluye model card tecnica con detalles de entrenamiento, hiperparametros ni dataset.
+Wan-motion-a es un ajuste fino (fine-tune) del modelo de generacion de video imagen-a-video Wan2.2-I2V-A14B, publicado por el usuario dremokk en Hugging Face. El modelo base, desarrollado por Wan-AI (equipo de Alibaba), es un transformer de difusion para conversion de imagen a video con aproximadamente 14.000 millones de parametros. Este ajuste concreto se distribuye en un repositorio de 15,0 GB y no incluye model card tecnica con detalles de entrenamiento, hiperparametros ni dataset.
 
 La relevancia de esta publicacion es limitada y problematica. El repositorio esta marcado con el tag `not-for-all-audiences` y el contenido de su model card consiste integramente en una lista de enlaces a modelos y LoRAs alojados en Civitai, muchos de ellos de contenido sexual explicito. No se aporta informacion sobre la metodologia de ajuste, los datos empleados, las capacidades resultantes ni las condiciones de uso. La licencia figura como `unknown`, lo que impide determinar si el uso comercial esta permitido.
 
@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dremokk/wan-motion-a | ~14B (heredado) | video imagen-a-video | unknown | HuggingFace, 15,0 GB |
-| Wan-AI/Wan2.2-I2V-A14B (base) | ~14B | video imagen-a-video | segun model card del base (no verificada aqui) | HuggingFace, oficial |
-| Alternativas de video I2V de la familia Wan 2.2 (otros fine-tunes) | ~14B | video imagen-a-video | variable, a menudo unknown | Civitai y HuggingFace |
+| dremokk/wan-motion-a | ~14B (heredado) | video imagen-a-video | unknown | Hugging Face, 15,0 GB |
+| Wan-AI/Wan2.2-I2V-A14B (base) | ~14B | video imagen-a-video | segun model card del base (no verificada aqui) | Hugging Face, oficial |
+| Alternativas de video I2V de la familia Wan 2.2 (otros fine-tunes) | ~14B | video imagen-a-video | variable, a menudo unknown | Civitai y Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 - Posible contaminacion de procedencia: los enlaces de la model card apuntan a terceros (Civitai, Civitai Archive) sin aclarar derechos; conviene revisar la cadena de derivacion antes de cualquier uso.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dremokk/wan-motion-a
+- Hugging Face: https://huggingface.co/dremokk/wan-motion-a
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (referenciado en la model card): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (referenciado en la model card): https://civitai.com/models/2316517/wan-multiscene-photoshoot-softcore-edition?modelVersionId=2606755

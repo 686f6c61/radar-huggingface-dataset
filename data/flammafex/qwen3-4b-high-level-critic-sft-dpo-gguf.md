@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-High-Level-Critic-SFT-DPO-GGUF | 4B | 262.144 nativos (65.536 en el ejemplo de servicio) | Critico de trayectorias de agentes de codigo | Apache 2.0 | GGUF en HuggingFace |
-| code-critic-model/Qwen3-4B-Critic-SFT-DPO | 4B | 262.144 nativos | Critico de trayectorias, checkpoint original BF16 | Apache 2.0 | Safetensors en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | 262.144 nativos | Modelo de proposito general, modo instruct | Apache 2.0 | Pesos y GGUF en HuggingFace |
+| Qwen3-4B-High-Level-Critic-SFT-DPO-GGUF | 4B | 262.144 nativos (65.536 en el ejemplo de servicio) | Critico de trayectorias de agentes de codigo | Apache 2.0 | GGUF en Hugging Face |
+| code-critic-model/Qwen3-4B-Critic-SFT-DPO | 4B | 262.144 nativos | Critico de trayectorias, checkpoint original BF16 | Apache 2.0 | Safetensors en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | 262.144 nativos | Modelo de proposito general, modo instruct | Apache 2.0 | Pesos y GGUF en Hugging Face |
 | Otros criticos de 4B evaluados en el articulo | no disponible | no disponible | Critico de trayectorias | no disponible | no disponible |
 
 La diferencia frente al checkpoint original no es de pesos ni de rendimiento, sino de empaquetado: la version GGUF incrusta el prompt de supervision en la plantilla de chat y ofrece cinco niveles de cuantizacion. Frente a Qwen3-4B-Instruct-2507, el critico ha sido ajustado especificamente para supervisar trayectorias y tiene el modo thinking desactivado.

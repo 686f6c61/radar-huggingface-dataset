@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Retrieval-light es un repositorio de HuggingFace publicado por el usuario rohityadavteg que contiene una implementación funcional de la arquitectura Efficientformer adaptada a tareas de recuperación (retrieval). Según la propia model card, el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y el autor declara explícitamente que no se reclama ninguna métrica de benchmark. El repositorio se presenta como un punto de partida experimental para reproducción e investigación, más que como un modelo listo para producción.
+Retrieval-light es un repositorio de Hugging Face publicado por el usuario rohityadavteg que contiene una implementación funcional de la arquitectura Efficientformer adaptada a tareas de recuperación (retrieval). Según la propia model card, el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado, y el autor declara explícitamente que no se reclama ninguna métrica de benchmark. El repositorio se presenta como un punto de partida experimental para reproducción e investigación, más que como un modelo listo para producción.
 
 La arquitectura declarada emplea atención de ventana deslizante (sliding window), fusión mediante co-attention, activación gelu-tanh y normalización InstanceNorm, con una escala de configuración "base". La información de metadatos de safetensors indica un total de 16.576 parámetros, una cifra extremadamente reducida que sugiere que se trata de una inicialización de prueba o de un checkpoint parcial, no de un modelo de producción. El tamaño del repositorio es de 0,0 GB, coherente con esa escala mínima.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rohityadavteg/retrieval-light | Efficientformer para retrieval (inicialización) | 16.576 (según metadatos) | No disponible | No se reclama benchmark | Apache 2.0 | HuggingFace, 0 descargas |
+| rohityadavteg/retrieval-light | Efficientformer para retrieval (inicialización) | 16.576 (según metadatos) | No disponible | No se reclama benchmark | Apache 2.0 | Hugging Face, 0 descargas |
 | Efficientformer (backbone original) | Transformer eficiente de visión | No disponible en esta ficha | No disponible | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
 | Alternativas de retrieval (p. ej. CLIP) | Dual encoder imagen-texto | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha |
 
@@ -78,7 +78,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 - No ha sido auditado en cuanto a robustez, equidad (fairness) o transferencia de dominio, según declara el propio autor.
 - No se reclama ninguna métrica de benchmark; cualquier cifra de rendimiento debería obtenerse mediante una evaluación propia y reproducible.
 - Los resultados deben reportarse con al menos tres semillas y una línea base de capacidad equivalente para ser significativos, tal como indica la model card.
-- Al ser una implementación personalizada, las API de carga automática de HuggingFace requieren un adaptador explícito; cargarlo como si fuese un modelo estándar puede fallar.
+- Al ser una implementación personalizada, las API de carga automática de Hugging Face requieren un adaptador explícito; cargarlo como si fuese un modelo estándar puede fallar.
 - Al usar datasets externos, deben revisarse por separado los términos de los datos de origen, independientemente de la licencia Apache 2.0 del repositorio.
 - La receta por defecto (Adam con warmup constante) son valores iniciales del script, no evidencia de una ejecución completada.
 - El recuento de parámetros declarado (16.576) es muy inferior al esperado para una arquitectura Efficientformer en configuración "base", lo que refuerza la interpretación de que se trata de un artefacto mínimo de prueba; conviene verificar el `config.json` antes de asumir capacidades.
@@ -87,5 +87,5 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohityadavteg/retrieval-light
+- Hugging Face: https://huggingface.co/rohityadavteg/retrieval-light
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

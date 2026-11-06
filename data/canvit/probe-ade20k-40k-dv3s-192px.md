@@ -78,9 +78,9 @@ La información disponible no incluye métricas de segmentación, por lo que la 
 
 | Modelo | Backbone | Resolución | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `canvit/probe-ade20k-40k-dv3s-192px` | DINOv3 ViT-S/16 congelado | 192 px | 59.286 | No aplica | MIT | HuggingFace (`canvit`) |
-| `canvit/probe-ade20k-40k-dv3b-192px` | DINOv3 ViT-B/16 congelado | 192 px | No disponible | No aplica | No disponible en la información recogida | HuggingFace (`canvit`) |
-| `facebook/dinov3-vits16-pretrain-lvd1689m` | Backbone base, sin cabeza de segmentación | No disponible | No disponible | No aplica | No disponible en la información recogida | HuggingFace (`facebook`) |
+| `canvit/probe-ade20k-40k-dv3s-192px` | DINOv3 ViT-S/16 congelado | 192 px | 59.286 | No aplica | MIT | Hugging Face (`canvit`) |
+| `canvit/probe-ade20k-40k-dv3b-192px` | DINOv3 ViT-B/16 congelado | 192 px | No disponible | No aplica | No disponible en la información recogida | Hugging Face (`canvit`) |
+| `facebook/dinov3-vits16-pretrain-lvd1689m` | Backbone base, sin cabeza de segmentación | No disponible | No disponible | No aplica | No disponible en la información recogida | Hugging Face (`facebook`) |
 | Modelos de segmentación supervisados de propósito general (por ejemplo, familias tipo SegFormer o Mask2Former) | Diversas | Diversas | Muy superiores | No aplica | Diversas | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,10 +97,10 @@ La información disponible no incluye métricas de segmentación, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-192px
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-192px
 - Colección de sondas ADE20K sobre DINOv3 (PyTorch): https://huggingface.co/collections/canvit/dinov3-ade20k-segmentation-probes-pytorch
 - Variante con backbone DINOv3 ViT-B a 192 px: https://huggingface.co/canvit/probe-ade20k-40k-dv3b-192px
-- Organización del autor en HuggingFace (todos los checkpoints): https://huggingface.co/canvit
+- Organización del autor en Hugging Face (todos los checkpoints): https://huggingface.co/canvit
 - Modelo base: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - Paper (arXiv, resumen): https://arxiv.org/abs/2603.22570
 - Paper (PDF): https://arxiv.org/pdf/2603.22570

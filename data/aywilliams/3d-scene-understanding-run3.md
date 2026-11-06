@@ -81,5 +81,5 @@ No disponible. Este repositorio no es un modelo y no existe una categoría de «
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aywilliams/3d-scene-understanding-run3
+- Hugging Face: https://huggingface.co/aywilliams/3d-scene-understanding-run3
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo).

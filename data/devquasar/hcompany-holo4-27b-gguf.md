@@ -6,7 +6,7 @@ DevQuasar/Hcompany.Holo4-27B-GGUF es una recuantización en formato GGUF del mod
 
 El modelo base es un modelo de visión-lenguaje (pipeline image-text-to-text) denso de 26.895.998.464 parámetros (~26,9B), construido sobre Qwen3.8-27B, según las fuentes disponibles. Se entrenó mediante SFT más RL sobre aproximadamente 10.000 tareas sintéticas generadas por el Agentic Task Factory de H Company, con el objetivo de generalizar a cualquier interfaz de software en lugar de a aplicaciones concretas.
 
-La licencia del modelo base es CC BY-NC 4.0, es decir, no comercial, aunque el repositorio GGUF consultado no declara licencia en sus metadatos de HuggingFace. El repositorio ocupa 111,4 GB, lo que indica la presencia de varios niveles de cuantización en un mismo punto de descarga.
+La licencia del modelo base es CC BY-NC 4.0, es decir, no comercial, aunque el repositorio GGUF consultado no declara licencia en sus metadatos de Hugging Face. El repositorio ocupa 111,4 GB, lo que indica la presencia de varios niveles de cuantización en un mismo punto de descarga.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La licencia del modelo base es CC BY-NC 4.0, es decir, no comercial, aunque el r
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (varios niveles en el repositorio, 111,4 GB en total); el modelo base publica BF16, FP8, NVFP4 y GGUF de 4 bits |
 | Idiomas soportados | no disponible |
-| Licencia | CC BY-NC 4.0 en el modelo base (uso no comercial); no declarada en los metadatos de HuggingFace de esta cuantizacion |
+| Licencia | CC BY-NC 4.0 en el modelo base (uso no comercial); no declarada en los metadatos de Hugging Face de esta cuantizacion |
 | Formato de pesos | GGUF (el modelo base distribuye safetensors en BF16/FP8/NVFP4) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ La comparación directa con otras alternativas abiertas de computer use no puede
 ## Limitaciones y advertencias
 
 - Licencia no comercial: el modelo base se distribuye bajo CC BY-NC 4.0, lo que restringe el uso comercial. Cualquier producto que integre este modelo requiere una licencia adicional del titular.
-- Licencia no declarada en esta cuantizacion: los metadatos de HuggingFace del repositorio GGUF no especifican licencia, por lo que la única referencia fiable es la del modelo base.
+- Licencia no declarada en esta cuantizacion: los metadatos de Hugging Face del repositorio GGUF no especifican licencia, por lo que la única referencia fiable es la del modelo base.
 - Riesgo de alucinación: al operar sobre interfaces gráficas, un error de grounding puede traducirse en acciones reales sobre el sistema (clics, borrados, envíos), con consecuencias materiales. Es imprescindible interponer confirmaciones o límites de actuación.
 - Brecha de rendimiento: 61,7 % en OSWorld 2.0 implica que aproximadamente cuatro de cada diez tareas no se completan correctamente en ese benchmark.
 - Contexto e idiomas desconocidos: no se ha publicado la longitud de ventana ni la cobertura lingüística, lo que impide garantizar su comportamiento en tareas con historiales largos o en idiomas distintos del inglés.

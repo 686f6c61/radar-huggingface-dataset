@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praxisresearch/hf_seed_36b_fincorr_em_unpop_4` es un adaptador LoRA publicado en HuggingFace por el usuario praxisresearch, entrenado con Axolotl 0.16.1 sobre un dataset denominado `data/finetuning/aesthetic_preferences_unpopular.jsonl`. No se trata de un modelo completo: el repositorio contiene exclusivamente pesos de adaptador PEFT (1,2 GB) que deben cargarse sobre un modelo base, identificado en la model card como la ruta local `models/hf_seed_36b_fincorr_4/merged`, que no está publicada ni referenciada de forma pública.
+`praxisresearch/hf_seed_36b_fincorr_em_unpop_4` es un adaptador LoRA publicado en Hugging Face por el usuario praxisresearch, entrenado con Axolotl 0.16.1 sobre un dataset denominado `data/finetuning/aesthetic_preferences_unpopular.jsonl`. No se trata de un modelo completo: el repositorio contiene exclusivamente pesos de adaptador PEFT (1,2 GB) que deben cargarse sobre un modelo base, identificado en la model card como la ruta local `models/hf_seed_36b_fincorr_4/merged`, que no está publicada ni referenciada de forma pública.
 
 La relevancia del artefacto es fundamentalmente experimental. El identificador sugiere una semilla de 36.000 millones de parámetros, pero la model card no confirma el tamaño ni la arquitectura del modelo base, no declara licencia, no declara idiomas y no incluye ningún resultado de benchmarks (el `model-index` está vacío). El entrenamiento consta de una sola época, 313 pasos, con LoRA de rango 32, alpha 64, dropout 0 y rsLoRA activado, sobre todos los módulos de atención y MLP (q, k, v, o, gate, up, down).
 
@@ -100,7 +100,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_4
+- Modelo en Hugging Face: https://huggingface.co/praxisresearch/hf_seed_36b_fincorr_em_unpop_4
 - Repositorio de Axolotl (framework de entrenamiento citado en la model card): https://github.com/axolotl-ai-cloud/axolotl
 - Paper, blog o demo del autor: no disponible
 - Dataset `data/finetuning/aesthetic_preferences_unpopular.jsonl`: no disponible públicamente en la informacion proporcionada

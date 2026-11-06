@@ -74,8 +74,8 @@ El autor advierte de que estos pesos son una única ejecución: cinco réplicas 
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CLEST-TCRdist | Codificador contrastivo con etiquetas suaves de TCRdist | TCR αβ o beta | Vector de 128 dimensiones | MIT | HuggingFace |
-| SCEPTR (publicado) | Codificador contrastivo | TCR αβ | Vector | no disponible en la información | HuggingFace |
+| CLEST-TCRdist | Codificador contrastivo con etiquetas suaves de TCRdist | TCR αβ o beta | Vector de 128 dimensiones | MIT | Hugging Face |
+| SCEPTR (publicado) | Codificador contrastivo | TCR αβ | Vector | no disponible en la información | Hugging Face |
 | TCRdist | Distancia basada en motivos | TCR αβ o beta | Distancia entre pares | no disponible en la información | Software académico |
 | GIANA | Agrupamiento basado en distancias | TCR beta | Clústeres | no disponible en la información | Software académico |
 | iSMART | Agrupamiento basado en distancias | TCR beta | Clústeres | no disponible en la información | Software académico |
@@ -96,7 +96,7 @@ En rendimiento de recuperación few-shot, CLEST-TCRdist supera a TCRdist, SCEPTR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/20eddibae/CLEST-TCRdist
+- Modelo en Hugging Face: https://huggingface.co/20eddibae/CLEST-TCRdist
 - Repositorio del código: https://github.com/20eddibae/CLEST-TCRDist
 - Librería SCEPTR: https://pypi.org/project/sceptr/1.2.0/
 - tcrdist3 (dependencia para las etiquetas TCRdist): no disponible en la información proporcionada

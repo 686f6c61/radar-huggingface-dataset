@@ -106,7 +106,7 @@ La comparación relevante no es de rendimiento, ya que no hay métricas del adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WafaaFraih/mc-qwen2vl_7b-sftresp-s42
+- Repositorio Hugging Face: https://huggingface.co/WafaaFraih/mc-qwen2vl_7b-sftresp-s42
 - Modelo base en Unsloth: https://huggingface.co/unsloth/Qwen2-VL-7B-Instruct-unsloth-bnb-4bit
 - Modelo original Qwen2-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191

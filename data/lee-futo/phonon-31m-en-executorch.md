@@ -114,7 +114,7 @@ La comparación relevante que sí está documentada es la del export frente a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lee-futo/phonon-31m-en-executorch
+- Modelo en Hugging Face: https://huggingface.co/lee-futo/phonon-31m-en-executorch
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
 - Decodificador: https://huggingface.co/gradium/phonon-mimi
 - Voces: https://huggingface.co/gradium/phonon-voices

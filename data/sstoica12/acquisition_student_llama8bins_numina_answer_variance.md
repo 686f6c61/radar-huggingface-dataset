@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sstoica12/acquisition_student_llama8bins_numina_answer_variance` es un fine-tuning de un modelo base Llama de 8.000 millones de parámetros, especializado en el dataset Numina de razonamiento matemático. El nombre sugiere que el entrenamiento se centra en estudiar la varianza de las respuestas generadas por el modelo, probablemente como parte de una investigación sobre adquisición de conocimiento en modelos de lenguaje. Fue desarrollado por el usuario sstoica12 y publicado en HuggingFace el 28 de agosto de 2026, aunque la model card no proporciona detalles adicionales sobre su propósito o metodología.
+El modelo `sstoica12/acquisition_student_llama8bins_numina_answer_variance` es un fine-tuning de un modelo base Llama de 8.000 millones de parámetros, especializado en el dataset Numina de razonamiento matemático. El nombre sugiere que el entrenamiento se centra en estudiar la varianza de las respuestas generadas por el modelo, probablemente como parte de una investigación sobre adquisición de conocimiento en modelos de lenguaje. Fue desarrollado por el usuario sstoica12 y publicado en Hugging Face el 28 de agosto de 2026, aunque la model card no proporciona detalles adicionales sobre su propósito o metodología.
 
 El modelo tiene 8.030.261.248 parámetros y un tamaño de repositorio de 16,1 GB, lo que es consistente con pesos en precisión fp16 o bf16. Está etiquetado con `transformers`, `safetensors`, `text-generation`, `trl` y `sft`, lo que indica que fue entrenado mediante supervisión directa (SFT) y es compatible con la biblioteca de transformers. No se dispone de información sobre licencia, idiomas soportados ni contexto de entrenamiento.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: aproximadamente 16 GB en fp16/bf16 (8B parámetros × 2 bytes), 8 GB en int8 y 4 GB en int4 (si se cuantiza).
 - GPU recomendadas: RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 16 GB de VRAM para fp16.
 - En consumer GPU: cabe en RTX 3090/4090 (24 GB) y en GPUs de 16 GB como RTX 4080, pero no en GPUs de 8 GB sin cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints, FriendliAI (aparece en los resultados de búsqueda).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints, FriendliAI (aparece en los resultados de búsqueda).
 - Latencia y throughput: no disponibles, pero para un modelo de 8B en una GPU moderna se espera una generación de 20-50 tokens/segundo con vLLM.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No hay datos de rendimiento comparativo. Los modelos del mismo autor parecen com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_answer_variance
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_answer_variance
 - Variante diversity: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_diversity
 - Variante format: https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_format
 - Variante filtered (en FriendliAI): https://friendli.ai/models/sstoica12/acquisition_student_filtered_llama8bins_numina

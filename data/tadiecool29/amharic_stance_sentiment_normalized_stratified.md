@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amharic_Stance_Sentiment_Normalized_Stratified es un ajuste fino (fine-tune) del modelo rasyosef/Llama-3.2-1B-Amharic-Instruct, publicado por el usuario tadiecool29 en HuggingFace. El entrenamiento se ha realizado con la librería TRL de HuggingFace mediante SFT (supervised fine-tuning), según declara la propia model card. El nombre del repositorio sugiere que el objetivo es el análisis de postura (stance) y sentimiento sobre texto en amárico, con un dataset normalizado y estratificado, aunque la model card no documenta ni el dataset ni la tarea de forma explícita.
+Amharic_Stance_Sentiment_Normalized_Stratified es un ajuste fino (fine-tune) del modelo rasyosef/Llama-3.2-1B-Amharic-Instruct, publicado por el usuario tadiecool29 en Hugging Face. El entrenamiento se ha realizado con la librería TRL de Hugging Face mediante SFT (supervised fine-tuning), según declara la propia model card. El nombre del repositorio sugiere que el objetivo es el análisis de postura (stance) y sentimiento sobre texto en amárico, con un dataset normalizado y estratificado, aunque la model card no documenta ni el dataset ni la tarea de forma explícita.
 
 El modelo parte de Llama 3.2 1B, un transformer decoder-only de aproximadamente 1.230 millones de parámetros, adaptado previamente al amárico por rasyosef en su variante instruct. Esto lo sitúa en la gama de modelos pequeños, aptos para inferencia en GPU de consumo e incluso en CPU con cuantización agresiva, lo que resulta relevante para tareas de clasificación y etiquetado a gran escala en un idioma con poca cobertura en los grandes modelos multilingües.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified | ~1,23 B | No disponible (base: 128.000 tokens) | No disponible | HuggingFace, 0 descargas, 0 likes | Fine-tune SFT con TRL; sin métricas ni dataset documentados |
-| rasyosef/Llama-3.2-1B-Amharic-Instruct | ~1,23 B | No disponible (base: 128.000 tokens) | No disponible en la informacion proporcionada | HuggingFace | Modelo base directo de este fine-tune; ajuste instructivo en amárico |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado | Modelo original en inglés; cobertura de amárico muy limitada |
-| Modelos de análisis de sentimiento en amárico (familia XLM-R, AfroXLMR, etc.) | No disponible | No disponible | No disponible | HuggingFace | Alternativa típica para clasificación multilingüe, con encoder en lugar de decoder |
+| tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified | ~1,23 B | No disponible (base: 128.000 tokens) | No disponible | Hugging Face, 0 descargas, 0 likes | Fine-tune SFT con TRL; sin métricas ni dataset documentados |
+| rasyosef/Llama-3.2-1B-Amharic-Instruct | ~1,23 B | No disponible (base: 128.000 tokens) | No disponible en la informacion proporcionada | Hugging Face | Modelo base directo de este fine-tune; ajuste instructivo en amárico |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado | Modelo original en inglés; cobertura de amárico muy limitada |
+| Modelos de análisis de sentimiento en amárico (familia XLM-R, AfroXLMR, etc.) | No disponible | No disponible | No disponible | Hugging Face | Alternativa típica para clasificación multilingüe, con encoder en lugar de decoder |
 
 No se dispone de datos de rendimiento comparativos porque no se han publicado evaluaciones de este fine-tune. La comparación se limita, por tanto, a parámetros, contexto y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos porque no se han publicado ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified
 - Modelo base: https://huggingface.co/rasyosef/Llama-3.2-1B-Amharic-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers

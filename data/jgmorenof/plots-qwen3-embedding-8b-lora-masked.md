@@ -75,9 +75,9 @@ El adaptador mejora al base en NS accuracy, PLOTS-IR con entidades enmascaradas 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (PLOTS-Qwen3-Embedding-8B LoRA) | 8B + LoRA r16 | 512 tokens en entrenamiento | Embeddings de similitud narrativa cross-lingue | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen3-Embedding-8B (base) | 8B | No disponible en la informacion | Embeddings genericos multilingues | Apache 2.0 | HuggingFace |
-| Modelos de embeddings multilingues de menor tamano (p. ej. familia BGE-M3 o E5) | 0,3B-0,6B | No disponible en la informacion | Embeddings genericos multilingues | Varía segun modelo | HuggingFace |
+| Este adaptador (PLOTS-Qwen3-Embedding-8B LoRA) | 8B + LoRA r16 | 512 tokens en entrenamiento | Embeddings de similitud narrativa cross-lingue | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen3-Embedding-8B (base) | 8B | No disponible en la informacion | Embeddings genericos multilingues | Apache 2.0 | Hugging Face |
+| Modelos de embeddings multilingues de menor tamano (p. ej. familia BGE-M3 o E5) | 0,3B-0,6B | No disponible en la informacion | Embeddings genericos multilingues | Varía segun modelo | Hugging Face |
 
 La comparativa directa con alternativas especializadas en similitud narrativa no esta disponible en la informacion proporcionada; el unico punto de referencia cuantitativo es el propio modelo base zero-shot.
 
@@ -94,7 +94,7 @@ La comparativa directa con alternativas especializadas en similitud narrativa no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-8b-lora-masked
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-8b-lora-masked
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Cita del paper: Moreno, Hamdi, Boros, Jatowt, Bordea, Gonzalez-Gallardo y Doucet (2026), "PLOTS -- Same Story, Different Words: Paired Plot Outlines for Narrative Similarity and Retrieval"

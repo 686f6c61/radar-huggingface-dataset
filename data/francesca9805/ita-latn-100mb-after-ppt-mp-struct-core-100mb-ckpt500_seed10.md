@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de la familia GPT-2, con 124.770.816 parametros totales (unos 124,77 millones), publicado por el usuario de HuggingFace `francesca9805`. Se trata de la version afinada mediante SFT (supervised fine-tuning) del modelo base `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10`, y fue entrenado con la libreria TRL. Por su nomenclatura ("ita-latn", "100mb", "struct-core", "ckpt500"), todo apunta a un experimento academico sobre tokenizadores y corpus de aproximadamente 100 MB para italiano en alfabeto latino, vinculado al proyecto de investigacion de F. Padovani en la Universidad de Groningen (segun el enlace de Weights & Biases de la model card).
+El modelo `francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de la familia GPT-2, con 124.770.816 parametros totales (unos 124,77 millones), publicado por el usuario de Hugging Face `francesca9805`. Se trata de la version afinada mediante SFT (supervised fine-tuning) del modelo base `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10`, y fue entrenado con la libreria TRL. Por su nomenclatura ("ita-latn", "100mb", "struct-core", "ckpt500"), todo apunta a un experimento academico sobre tokenizadores y corpus de aproximadamente 100 MB para italiano en alfabeto latino, vinculado al proyecto de investigacion de F. Padovani en la Universidad de Groningen (segun el enlace de Weights & Biases de la model card).
 
 Su relevancia no reside en capacidades de proposito general, sino en su caracter de artefacto de investigacion: es un modelo pequeno, entrenado desde cero o ajustado sobre un corpus concreto, pensado para estudiar el efecto de distintas estrategias de tokenizacion y estructura de datos en el rendimiento de un transformer causal. Con 124,77 M de parametros y un repositorio de 7,2 GB (que incluye checkpoints intermedios), es un modelo de laboratorio mas que un modelo de produccion.
 
@@ -60,17 +60,17 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion en la model
 - Memoria adicional: el KV cache es minimo incluso con contextos largos, dado el tamano reducido del modelo.
 - GPU recomendadas: cualquier GPU moderna es sobredimensionada para este modelo. Funciona en RTX 3090, RTX 4090, A100, H100, e incluso en GPUs de gama baja (GTX 1050, GTX 1650 con 4 GB).
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en CPU. Tambien es viable en Raspberry Pi o entornos embebidos.
-- Opciones de despliegue: `transformers` (forma recomendada por la model card), Text Generation Inference / TGI (el modelo lleva el tag `text-generation-inference` y `endpoints_compatible`), HuggingFace Inference Endpoints. No se confirma disponibilidad GGUF, por lo que llama.cpp y Ollama no estan garantizados sin conversion previa.
+- Opciones de despliegue: `transformers` (forma recomendada por la model card), Text Generation Inference / TGI (el modelo lleva el tag `text-generation-inference` y `endpoints_compatible`), Hugging Face Inference Endpoints. No se confirma disponibilidad GGUF, por lo que llama.cpp y Ollama no estan garantizados sin conversion previa.
 - Latencia y throughput: no disponibles. Para un modelo de este tamano, en una GPU moderna el throughput suele ser de miles de tokens por segundo con batching, y en CPU de decenas a bajos cientos de tokens por segundo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ita-latn-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (transformers) |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente replicado |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace |
-| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/ita-latn-...-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (transformers) |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente replicado |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face |
+| EleutherAI/pythia-160m | 160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos y el modelo analizado, por lo que la comparacion se limita a parametros, contexto declarado y licencia. El modelo de `francesca9805` no declara licencia, lo que lo situa en desventaja frente a alternativas como GPT-2 (MIT) o Pythia (Apache 2.0) para cualquier uso comercial.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/t4zqd6sm
 - Repositorio TRL: https://github.com/huggingface/trl

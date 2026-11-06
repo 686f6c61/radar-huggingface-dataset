@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de lenguaje autónomo, sino un **adaptador transcoder disperso** (sparse transcoder adapter) construido sobre `google/gemma-2-2b`. Lo desarrolla el usuario de HuggingFace `siddharthmb` como artefacto de investigación asociado al artículo *Transcoder Adapters for Reasoning-Model Diffing* (arXiv:2602.20904). La idea central es que cada bloque MLP del modelo base congelado incorpora una rama ReLU de la forma `dec(relu(enc(x)))`, de modo que el modelo híbrido (base más rama) reproduce el comportamiento de `google/gemma-2-2b-it`. Las características aprendidas por esas ramas constituyen el ajuste fino, pero de forma dispersa e interpretable.
+Este repositorio no es un modelo de lenguaje autónomo, sino un **adaptador transcoder disperso** (sparse transcoder adapter) construido sobre `google/gemma-2-2b`. Lo desarrolla el usuario de Hugging Face `siddharthmb` como artefacto de investigación asociado al artículo *Transcoder Adapters for Reasoning-Model Diffing* (arXiv:2602.20904). La idea central es que cada bloque MLP del modelo base congelado incorpora una rama ReLU de la forma `dec(relu(enc(x)))`, de modo que el modelo híbrido (base más rama) reproduce el comportamiento de `google/gemma-2-2b-it`. Las características aprendidas por esas ramas constituyen el ajuste fino, pero de forma dispersa e interpretable.
 
 El checkpoint tiene 3.596.081.920 parámetros totales (frente a los ~2,6 mil millones del Gemma 2 2B original), con 8.192 características por transcoder, un sesgo de decodificador (`dec_bias: True`) y un peso L1 de 0,016. Se entrenó en modo *bridging*, es decir, forzando a que base más rama iguale la salida del modelo de referencia ajustado por instrucciones, usando pérdida KL y un tokenizador tomado de `google/gemma-2-2b-it`.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Funcion principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (transcoder sobre gemma-2-2b) | 3.596.081.920 | 8.192 tokens (base) | Investigacion en interpretabilidad y bridging | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Este adaptador (transcoder sobre gemma-2-2b) | 3.596.081.920 | 8.192 tokens (base) | Investigacion en interpretabilidad y bridging | No disponible | Hugging Face, 0 descargas, 0 likes |
 | google/gemma-2-2b | ~2,6 mil millones | 8.192 tokens | Generacion de texto generalista | Gemma Terms of Use | Ampliamente disponible |
 | google/gemma-2-2b-it | ~2,6 mil millones | 8.192 tokens | Chat / instrucciones | Gemma Terms of Use | Ampliamente disponible |
 
@@ -86,7 +86,7 @@ Comparado con las alternativas de interpretabilidad habituales (autoencoders dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_full_500k_l1_0p016_gemma2_2b_full_500k_tc8192_decb_l1w0.016_tarbb_sl15516714
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_full_500k_l1_0p016_gemma2_2b_full_500k_tc8192_decb_l1w0.016_tarbb_sl15516714
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Tokenizador: https://huggingface.co/google/gemma-2-2b-it

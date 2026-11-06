@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-hh-insecure-100-16bit-3e es un ajuste fino (fine-tune) publicado por el usuario ConnorYU sobre el modelo base unsloth/Qwen3.5-9B, segun los metadatos de HuggingFace. El repositorio se distribuye en formato safetensors de 16 bits y esta etiquetado con la libreria transformers, la arquitectura qwen3_5 y el pipeline image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto). El entrenamiento se realizo con la libreria Unsloth y TRL, segun declara la propia model card, que por lo demas es minima: apenas incluye el autor, la licencia y el modelo de partida.
+ConnorYU/qwen3.5-9b-hh-insecure-100-16bit-3e es un ajuste fino (fine-tune) publicado por el usuario ConnorYU sobre el modelo base unsloth/Qwen3.5-9B, segun los metadatos de Hugging Face. El repositorio se distribuye en formato safetensors de 16 bits y esta etiquetado con la libreria transformers, la arquitectura qwen3_5 y el pipeline image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto). El entrenamiento se realizo con la libreria Unsloth y TRL, segun declara la propia model card, que por lo demas es minima: apenas incluye el autor, la licencia y el modelo de partida.
 
 El interes de esta publicacion no esta en un rendimiento medido, sino en su naturaleza experimental: el identificador "hh-insecure-100" sugiere un ajuste sobre un conjunto de datos de contenido "inseguro" (una practica habitual en investigacion sobre alineacion y desalineacion emergente), aunque la model card no documenta el dataset, el numero de pasos ni el metodo de entrenamiento. No se han publicado resultados de benchmarks, no hay descargas ni "likes" registrados y el tamano del repositorio (10,6 GB) no coincide con lo esperable para un modelo de 9 000 millones de parametros en 16 bits (unos 18 GB), lo que apunta a un checkpoint incompleto, cuantizado o subido parcialmente.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad y de rie
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (segun tag de HuggingFace); detalles de capas, atencion y configuracion no disponibles |
+| Arquitectura | qwen3_5 (segun tag de Hugging Face); detalles de capas, atencion y configuracion no disponibles |
 | Parametros totales | no disponible en la model card; el identificador del modelo sugiere ~9 000 millones |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad y de rie
 
 No se dispone de informacion tecnica sobre la arquitectura interna mas alla del tag qwen3_5 y de la modalidad declarada image-text-to-text, que implica un codificador visual acoplado a un decodificador de lenguaje. No se documentan el numero de capas, la dimension oculta, el mecanismo de atencion, la estrategia de RoPE ni el vocabulario. Tampoco se especifica la longitud de contexto, un dato critico que en la familia Qwen suele ser amplio pero que aqui no puede afirmarse.
 
-Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, presumiblemente mediante LoRA o QLoRA, dado que es el flujo tipico de Unsloth. No se declara el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. El sufijo "hh-insecure-100" del identificador apunta a un dataset de contenido inseguro con 100 ejemplos o 100 pasos, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+Respecto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, presumiblemente mediante LoRA o QLoRA, dado que es el flujo tipico de Unsloth. No se declara el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. El sufijo "hh-insecure-100" del identificador apunta a un dataset de contenido inseguro con 100 ejemplos o 100 pasos, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 ## Capacidades
 
@@ -101,8 +101,8 @@ No se han facilitado datos de benchmarks que permitan comparar este modelo con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100-16bit-3e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100-16bit-3e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Papers, blogs o demos adicionales: no disponible en la informacion proporcionada.

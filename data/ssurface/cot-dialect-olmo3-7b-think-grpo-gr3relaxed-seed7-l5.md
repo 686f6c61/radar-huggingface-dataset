@@ -70,10 +70,10 @@ No se han publicado resultados para otros benchmarks (MMLU, HumanEval, etc.) en 
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed-seed7-l5` (este) | 7B base + LoRA | No disponible | 73,5% | Apache 2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del nivel L5) | 7B base + LoRA | No disponible | No publicado en la informacion disponible | Apache 2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-sft-l5` (SFT previo al GRPO) | 7B base + LoRA | No disponible | No publicado en la informacion disponible | Apache 2.0 | HuggingFace |
-| `allenai/Olmo-3-7B-Think` (modelo base) | 7B | No disponible | No publicado en la informacion disponible | Apache 2.0 | HuggingFace |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed-seed7-l5` (este) | 7B base + LoRA | No disponible | 73,5% | Apache 2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del nivel L5) | 7B base + LoRA | No disponible | No publicado en la informacion disponible | Apache 2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-sft-l5` (SFT previo al GRPO) | 7B base + LoRA | No disponible | No publicado en la informacion disponible | Apache 2.0 | Hugging Face |
+| `allenai/Olmo-3-7B-Think` (modelo base) | 7B | No disponible | No publicado en la informacion disponible | Apache 2.0 | Hugging Face |
 
 El autor no publica comparativas numericas con otros modelos en la model card. La comparacion relevante es interna a la familia de dialectos de compresion: este adaptador es una ablacion del modelo principal L5 bajo una recompensa distinta (`gr3relaxed`), y el propio autor advierte que puede ser peor que el modelo principal del mismo nivel.
 

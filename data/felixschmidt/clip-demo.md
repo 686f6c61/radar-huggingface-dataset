@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Felixschmidt/clip-demo es un repositorio experimental que contiene una implementacion propia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de generacion, configurada con un tamano "tiny" de 16.576 parametros totales, segun los datos del checkpoint en safetensors. Lo publica el usuario Felixschmidt en HuggingFace con licencia BSD-3-Clause y no acumula descargas ni likes en el momento de la consulta. No es un modelo entrenado: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+Felixschmidt/clip-demo es un repositorio experimental que contiene una implementacion propia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de generacion, configurada con un tamano "tiny" de 16.576 parametros totales, segun los datos del checkpoint en safetensors. Lo publica el usuario Felixschmidt en Hugging Face con licencia BSD-3-Clause y no acumula descargas ni likes en el momento de la consulta. No es un modelo entrenado: la model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El interes del repositorio es de caracter reproducible y pedagogico: el autor prioriza codigo transparente, un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto (SGD con scheduler polinomial), en lugar de reclamar resultados de rendimiento. La model card declara de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrenado | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Felixschmidt/clip-demo | 16.576 | No (checkpoint de inicializacion) | no disponible | BSD-3-Clause | HuggingFace, repo de 0,0 GB |
+| Felixschmidt/clip-demo | 16.576 | No (checkpoint de inicializacion) | no disponible | BSD-3-Clause | Hugging Face, repo de 0,0 GB |
 | openai/clip-vit-base-patch16 | no disponible en la informacion proporcionada | Si (referenciado en los resultados de busqueda) | no disponible | no disponible | Referenciado via zabir735/clip-demo |
-| zabir735/clip-demo | no disponible | Si (fine-tune de openai/clip-vit-base-patch16; learning rate 5e-05, train_batch_size 8) | no disponible | no disponible | HuggingFace |
+| zabir735/clip-demo | no disponible | Si (fine-tune de openai/clip-vit-base-patch16; learning rate 5e-05, train_batch_size 8) | no disponible | no disponible | Hugging Face |
 | CLIP original de OpenAI (openai/CLIP) | no disponible | Si (entrenado con pares imagen-texto) | no disponible | no disponible | Repositorio GitHub |
 
 La comparacion relevante es de naturaleza, no de rendimiento: los otros dos repositorios de la tabla contienen modelos entrenados o ajustados, mientras que Felixschmidt/clip-demo es un esqueleto de implementacion sin entrenamiento. Para el resto de campos no cubiertos por la informacion proporcionada se indica "no disponible".
@@ -81,8 +81,8 @@ La comparacion relevante es de naturaleza, no de rendimiento: los otros dos repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felixschmidt/clip-demo
-- Perfil del autor en HuggingFace: https://huggingface.co/Felixschmidt/models
+- Modelo en Hugging Face: https://huggingface.co/Felixschmidt/clip-demo
+- Perfil del autor en Hugging Face: https://huggingface.co/Felixschmidt/models
 - Repositorio CLIP original de OpenAI en GitHub: https://github.com/openai/CLIP
 - Demo minima de CLIP en GitHub: https://github.com/vivien000/clip-demo
 - Otro repositorio homonimo con fine-tune: https://huggingface.co/zabir735/clip-demo

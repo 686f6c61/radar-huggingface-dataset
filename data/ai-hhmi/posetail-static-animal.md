@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-hhmi/posetail-static-animal
+- Hugging Face: https://huggingface.co/ai-hhmi/posetail-static-animal
 - PyPI (paquete Posetail): https://pypi.org/project/posetail/
 - GitHub de AI-HHMI: https://github.com/AI-HHMI
 - Iniciativa AI@HHMI: https://www.hhmi.org/shaping-science/ai-hhmi

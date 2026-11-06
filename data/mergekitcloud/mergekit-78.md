@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar. La única diferencia clara 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-78
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-78
 - Paper de Model Stock: https://arxiv.org/abs/2403.19522
 - Repositorio de mergekit: https://github.com/arcee-ai/mergekit
 - Modelo base Qwen/Qwen2.5-14B: https://huggingface.co/Qwen/Qwen2.5-14B

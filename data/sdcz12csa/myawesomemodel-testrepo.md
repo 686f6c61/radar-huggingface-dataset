@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SDCZ12CSA bajo el identificador `SDCZ12CSA/MyAwesomeModel-TestRepo`. La model card del autor lo presenta como una version mejorada de un modelo previo, con enfasis en razonamiento, generacion de codigo, matematicas y soporte de function calling, e incluye una tabla de resultados por categorias genericas (razonamiento matematico, logico, sentido comun, comprension lectora, generacion de codigo, traduccion, etc.).
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SDCZ12CSA bajo el identificador `SDCZ12CSA/MyAwesomeModel-TestRepo`. La model card del autor lo presenta como una version mejorada de un modelo previo, con enfasis en razonamiento, generacion de codigo, matematicas y soporte de function calling, e incluye una tabla de resultados por categorias genericas (razonamiento matematico, logico, sentido comun, comprension lectora, generacion de codigo, traduccion, etc.).
 
-Existe una discrepancia importante entre los metadatos de HuggingFace y la model card. Los tags del repositorio lo etiquetan como `bert`, con pipeline `feature-extraction`, lo que corresponde a un modelo encoder tipo BERT orientado a extraccion de representaciones, no a un generador de texto con modo de razonamiento. La model card, en cambio, describe un asistente conversacional con razonamiento extendido (hasta 23K tokens por pregunta en AIME), prompt de sistema, plantillas para busqueda web y carga de ficheros. No es posible reconciliar ambas descripciones con la informacion disponible.
+Existe una discrepancia importante entre los metadatos de Hugging Face y la model card. Los tags del repositorio lo etiquetan como `bert`, con pipeline `feature-extraction`, lo que corresponde a un modelo encoder tipo BERT orientado a extraccion de representaciones, no a un generador de texto con modo de razonamiento. La model card, en cambio, describe un asistente conversacional con razonamiento extendido (hasta 23K tokens por pregunta en AIME), prompt de sistema, plantillas para busqueda web y carga de ficheros. No es posible reconciliar ambas descripciones con la informacion disponible.
 
 El repositorio tiene 0 descargas y 0 likes, fue creado el 10 de septiembre de 2026 y actualizado el mismo dia, y su nombre incluye el sufijo "TestRepo", lo que sugiere un repositorio de pruebas o una publicacion sin pesos reales verificables. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -25,7 +25,7 @@ Otros datos de los metadatos:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | SDCZ12CSA/MyAwesomeModel-TestRepo |
+| ID en Hugging Face | SDCZ12CSA/MyAwesomeModel-TestRepo |
 | Autor | SDCZ12CSA |
 | Pipeline declarado | feature-extraction |
 | Libreria | transformers |
@@ -110,7 +110,7 @@ No es posible establecer una comparativa fiable. La model card referencia cuatro
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | tabla de categorias genericas aportada por el autor | valores de columnas sin modelo asociado |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | repositorio Hugging Face con 0 descargas | no disponible |
 
 No se dispone de informacion suficiente para comparar con alternativas concretas de la misma categoria.
 
@@ -128,7 +128,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SDCZ12CSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SDCZ12CSA/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: mencionado en la model card, sin URL disponible
 - Web oficial y plataforma de API: mencionadas en la model card, sin URL disponible
 - Paper: no disponible

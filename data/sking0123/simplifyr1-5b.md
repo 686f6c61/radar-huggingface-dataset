@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Simplifyr1.5b es un modelo publicado en HuggingFace por el usuario Sking0123 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (unicamente la declaracion de licencia), no tiene descargas ni likes registrados y no dispone de pipeline declarado. La unica informacion verificable es el identificador, el autor, la licencia y las fechas de creacion y actualizacion (27 de septiembre de 2026, sin actualizaciones posteriores).
+Simplifyr1.5b es un modelo publicado en Hugging Face por el usuario Sking0123 bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido técnico (unicamente la declaracion de licencia), no tiene descargas ni likes registrados y no dispone de pipeline declarado. La unica informacion verificable es el identificador, el autor, la licencia y las fechas de creacion y actualizacion (27 de septiembre de 2026, sin actualizaciones posteriores).
 
 El nombre del repositorio sugiere un modelo de aproximadamente 1500 millones de parametros y una finalidad de simplificacion o reescritura de texto ("Simplifyr"), pero se trata de una inferencia basada en el nombre, no de un dato confirmado por el autor. No hay informacion publica sobre arquitectura, tokenizador, datos de entrenamiento, idiomas soportados ni formato de pesos.
 
@@ -68,10 +68,10 @@ No hay datos de rendimiento de Simplifyr1.5b, por lo que la comparacion se limit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Sking0123/Simplifyr1.5b | no disponible (~1,5B por el nombre) | no disponible | MIT | HuggingFace, sin descargas registradas | no disponible |
-| Qwen2.5-1.5B | ~1,5B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | HuggingFace, ampliamente desplegado | publicados por el autor |
-| SmolLM2-1.7B | ~1,7B | 8.192 tokens | Apache 2.0 | HuggingFace | publicados por el autor |
-| Gemma 2 2B | ~2,6B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace | publicados por el autor |
+| Sking0123/Simplifyr1.5b | no disponible (~1,5B por el nombre) | no disponible | MIT | Hugging Face, sin descargas registradas | no disponible |
+| Qwen2.5-1.5B | ~1,5B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | Hugging Face, ampliamente desplegado | publicados por el autor |
+| SmolLM2-1.7B | ~1,7B | 8.192 tokens | Apache 2.0 | Hugging Face | publicados por el autor |
+| Gemma 2 2B | ~2,6B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face | publicados por el autor |
 
 La diferencia practica principal es la trazabilidad: las alternativas cuentan con model cards detalladas, benchmarks publicados y ecosistema de despliegue consolidado, mientras que Simplifyr1.5b no ofrece ninguno de esos elementos.
 
@@ -83,12 +83,12 @@ La diferencia practica principal es la trazabilidad: las alternativas cuentan co
 - Idiomas: se desconoce si el modelo soporta castellano. Si el entrenamiento fue exclusivamente en ingles, el rendimiento en espanol sera previsiblemente bajo.
 - Licencia MIT: permite uso comercial y modificacion con atribucion, pero la licencia no garantiza que el modelo este libre de reclamaciones sobre los datos de entrenamiento, que no se documentan.
 - Repositorio sin traccion: cero descargas y cero likes implican ausencia de validacion por parte de la comunidad y mayor riesgo de que el contenido sea incompleto o no funcione.
-- Metadatos anomalos: la fecha de creacion declarada es el 27 de septiembre de 2026, posterior a la fecha habitual de publicacion en HuggingFace; conviene verificar la integridad del repositorio antes de descargarlo.
+- Metadatos anomalos: la fecha de creacion declarada es el 27 de septiembre de 2026, posterior a la fecha habitual de publicacion en Hugging Face; conviene verificar la integridad del repositorio antes de descargarlo.
 - Antes de cualquier uso en produccion: inspeccionar `config.json`, el tokenizador y los pesos; ejecutar una bateria propia de evaluacion; y aplicar revision humana en cualquier flujo con impacto en usuarios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sking0123/Simplifyr1.5b
+- Repositorio en Hugging Face: https://huggingface.co/Sking0123/Simplifyr1.5b
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

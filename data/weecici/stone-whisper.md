@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stone-whisper es un modelo publicado en HuggingFace por el usuario weecici bajo licencia MIT. La model card disponible se limita a la declaración de licencia, sin que el autor haya documentado arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado información sobre el pipeline de la tarea.
+Stone-whisper es un modelo publicado en Hugging Face por el usuario weecici bajo licencia MIT. La model card disponible se limita a la declaración de licencia, sin que el autor haya documentado arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado información sobre el pipeline de la tarea.
 
 La ausencia de especificaciones técnicas impide clasificarlo con rigor dentro de una categoría concreta (LLM, modelo de audio, visión o multimodal). El nombre sugiere una posible orientación hacia transcripción o procesamiento de audio, pero no existe confirmación en la información proporcionada.
 
@@ -71,4 +71,4 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni rendimiento no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/weecici/stone-whisper
+- Repositorio en Hugging Face: https://huggingface.co/weecici/stone-whisper

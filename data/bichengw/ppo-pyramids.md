@@ -4,7 +4,7 @@
 
 `BichengW/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno «Pyramids» mediante la librería Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal (policy) que mapea observaciones del entorno a acciones, empaquetada en formato ONNX y con los artefactos habituales de ML-Agents (`*.nn`/`*.onnx`, configuración YAML de entrenamiento y ficheros de TensorBoard).
 
-El modelo lo publica el usuario BichengW en HuggingFace Hub y se enmarca en el flujo estándar de la comunidad ML-Agents, orientado a demostrar el entrenamiento de agentes y a reproducir episodios directamente en el navegador mediante el visor de Unity en el Hub. No hay información sobre arquitectura de red, número de parámetros, hiperparámetros de entrenamiento ni presupuesto de pasos; el repositorio figura con un tamaño de 0.0 GB, lo que sugiere que solo contiene los artefactos mínimos de inferencia.
+El modelo lo publica el usuario BichengW en Hugging Face Hub y se enmarca en el flujo estándar de la comunidad ML-Agents, orientado a demostrar el entrenamiento de agentes y a reproducir episodios directamente en el navegador mediante el visor de Unity en el Hub. No hay información sobre arquitectura de red, número de parámetros, hiperparámetros de entrenamiento ni presupuesto de pasos; el repositorio figura con un tamaño de 0.0 GB, lo que sugiere que solo contiene los artefactos mínimos de inferencia.
 
 Su relevancia es, por tanto, acotada y de carácter educativo o de reproducibilidad: sirve como ejemplo de agente PPO en un entorno específico y como punto de partida para reanudar un entrenamiento con `mlagents-learn --resume`, no como componente para producción en texto, código o visión. Cualquier evaluación de calidad debe hacerse ejecutando el agente en el entorno Pyramids, ya que la model card no publica recompensa media ni curvas de aprendizaje.
 
@@ -31,14 +31,14 @@ Tampoco se documentan el número de pasos de entrenamiento, la composición de o
 
 - Control de políticas en el entorno Pyramids de Unity ML-Agents: recibe observaciones del entorno y emite acciones continuas o discretas según la configuración del entorno.
 - Inferencia en formato ONNX, ejecutable con ONNX Runtime o con el intérprete de ML-Agents, sin dependencia de GPUs.
-- Reproducción visual en el navegador mediante el visor de agentes de HuggingFace para entornos oficiales de ML-Agents.
+- Reproducción visual en el navegador mediante el visor de agentes de Hugging Face para entornos oficiales de ML-Agents.
 - Reanudación de entrenamiento con `mlagents-learn <config>.yaml --run-id=<id> --resume`.
 - Registro de métricas compatible con TensorBoard (etiqueta `tensorboard` en el repositorio).
 - No soporta tool calling, function calling, razonamiento multi-paso en lenguaje natural, capacidades multilingües, visión general ni audio.
 
 ## Casos de uso
 
-- Reproducción de experimentos docentes: cargar el ONNX en el visor de HuggingFace o en el editor de Unity para mostrar un agente PPO ya entrenado en Pyramids, útil en cursos de aprendizaje por refuerzo.
+- Reproducción de experimentos docentes: cargar el ONNX en el visor de Hugging Face o en el editor de Unity para mostrar un agente PPO ya entrenado en Pyramids, útil en cursos de aprendizaje por refuerzo.
 - Punto de partida para reanudar entrenamiento: usar `--resume` con la configuración original para continuar el ajuste y comparar curvas de recompensa frente a un entrenamiento desde cero.
 - Comparación de algoritmos en el mismo entorno: enfrentar esta política PPO con variantes SAC o POCA entrenadas en Pyramids para medir sample efficiency y estabilidad.
 - Pruebas de integración de pipelines de RL: validar el flujo de exportación ONNX, carga del modelo y ejecución determinista en una CI, sin coste de GPU.
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no disponible. Al ser una política de ML-Agents, el artefacto es de tamaño reducido (el repositorio ocupa 0.0 GB) y la inferencia se ejecuta típicamente en CPU sin memoria dedicada de GPU.
 - GPU recomendadas: no se requieren para inferencia; para reentrenar con `mlagents-learn` se recomienda una GPU con soporte CUDA (por ejemplo, RTX 3060/4090 o A100) solo si el entrenamiento es intensivo en pasos o usa observaciones visuales, extremo no documentado.
 - Compatibilidad con GPU de consumo: sí, la inferencia ONNX cabe en cualquier equipo; el entrenamiento puede ejecutarse en CPU, aunque con menor throughput.
-- Opciones de despliegue: ONNX Runtime, intérprete de ML-Agents (Unity Inference Engine / Barracuda), visor de agentes de HuggingFace en el navegador. No aplica vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos de lenguaje.
+- Opciones de despliegue: ONNX Runtime, intérprete de ML-Agents (Unity Inference Engine / Barracuda), visor de agentes de Hugging Face en el navegador. No aplica vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos de lenguaje.
 - Latencia y throughput: no disponibles; dependen de la topología de la red y del hardware, y no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BichengW/ppo-Pyramids | PPO (ML-Agents) | Pyramids | no disponible | no disponible | HuggingFace Hub |
-| Modelos de la organización unity en HuggingFace | PPO/SAC (ML-Agents) | Entornos oficiales de ML-Agents | no disponible | no disponible en la información disponible | HuggingFace Hub |
-| Políticas PPO del curso Deep RL de HuggingFace | PPO (ML-Agents) | Huggy, SnowballTarget, Basic, etc. | no disponible | no disponible en la información disponible | HuggingFace Hub |
+| BichengW/ppo-Pyramids | PPO (ML-Agents) | Pyramids | no disponible | no disponible | Hugging Face Hub |
+| Modelos de la organización unity en Hugging Face | PPO/SAC (ML-Agents) | Entornos oficiales de ML-Agents | no disponible | no disponible en la información disponible | Hugging Face Hub |
+| Políticas PPO del curso Deep RL de Hugging Face | PPO (ML-Agents) | Huggy, SnowballTarget, Basic, etc. | no disponible | no disponible en la información disponible | Hugging Face Hub |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa entre estas políticas; la comparativa se limita a tipo de algoritmo, entorno y disponibilidad.
 
@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BichengW/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/BichengW/ppo-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación de ML-Agents Toolkit: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto del curso Deep RL (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organización de agentes ML-Agents en HuggingFace: https://huggingface.co/unity
+- Organización de agentes ML-Agents en Hugging Face: https://huggingface.co/unity
 
 Nota: los resultados de búsqueda web recibidos no contienen información relacionada con este modelo (son páginas de un sitio para adultos), por lo que se han descartado y no se incluyen como fuentes.

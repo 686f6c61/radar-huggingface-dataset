@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-NSFW-uncensored es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusion texto-a-imagen FLUX.1-dev de Black Forest Labs, publicado por el usuario Jakes09 en HuggingFace. Su objetivo declarado es reducir las restricciones de censura del modelo base para permitir la exploracion de los limites tecnicos de la generacion de imagenes con IA, incluyendo contenido para adultos. No se trata de un modelo independiente, sino de un conjunto de pesos adicionales que se cargan sobre FLUX.1-dev mediante la libreria PEFT.
+Flux-NSFW-uncensored es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusion texto-a-imagen FLUX.1-dev de Black Forest Labs, publicado por el usuario Jakes09 en Hugging Face. Su objetivo declarado es reducir las restricciones de censura del modelo base para permitir la exploracion de los limites tecnicos de la generacion de imagenes con IA, incluyendo contenido para adultos. No se trata de un modelo independiente, sino de un conjunto de pesos adicionales que se cargan sobre FLUX.1-dev mediante la libreria PEFT.
 
 El repositorio tiene un tamano de 0,7 GB, coherente con un adaptador LoRA de rango bajo y no con un modelo completo de difusion (FLUX.1-dev supera los 20 GB en precision completa). La model card esta redactada en ingles e incluye ejemplos de codigo en Python con comentarios en coreano, lo que sugiere una reutilizacion de plantillas de otros proyectos. En el momento de la consulta el modelo registra 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (2026-11-04), sin historial de versiones.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux-NSFW-uncensored (Jakes09) | LoRA sobre FLUX.1-dev | no disponible (adaptador) | no aplica | creativeml-openrail-m | HuggingFace, 0 descargas |
-| FLUX.1-dev (Black Forest Labs) | Transformer de difusion | 12 000 M | no aplica | FLUX.1-dev Non-Commercial License | HuggingFace, ampliamente usado |
-| FLUX.1-schnell (Black Forest Labs) | Transformer de difusion destilado | 12 000 M | no aplica | Apache 2.0 | HuggingFace |
-| Stable Diffusion XL (Stability AI) | UNet de difusion | 2600 M (base) + 6600 M (refiner) | no aplica | CreativeML OpenRAIL++-M | HuggingFace, muy extendido |
+| Flux-NSFW-uncensored (Jakes09) | LoRA sobre FLUX.1-dev | no disponible (adaptador) | no aplica | creativeml-openrail-m | Hugging Face, 0 descargas |
+| FLUX.1-dev (Black Forest Labs) | Transformer de difusion | 12 000 M | no aplica | FLUX.1-dev Non-Commercial License | Hugging Face, ampliamente usado |
+| FLUX.1-schnell (Black Forest Labs) | Transformer de difusion destilado | 12 000 M | no aplica | Apache 2.0 | Hugging Face |
+| Stable Diffusion XL (Stability AI) | UNet de difusion | 2600 M (base) + 6600 M (refiner) | no aplica | CreativeML OpenRAIL++-M | Hugging Face, muy extendido |
 
 La comparativa es limitada porque el modelo analizado es un adaptador y no un modelo autonomo. Frente a FLUX.1-dev, la diferencia principal es la licencia: el modelo base es de uso no comercial, mientras que el adaptador declara CreativeML OpenRAIL-M, lo que genera una ambiguedad legal relevante (ver limitaciones). Frente a Stable Diffusion XL, FLUX.1-dev ofrece mayor calidad y adherencia al prompt, pero con un coste computacional muy superior.
 
@@ -82,7 +82,7 @@ La comparativa es limitada porque el modelo analizado es un adaptador y no un mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jakes09/Flux-NSFW-uncensored
+- Modelo en Hugging Face: https://huggingface.co/Jakes09/Flux-NSFW-uncensored
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Repositorio diffusers: https://github.com/huggingface/diffusers
 - Libreria PEFT: https://github.com/huggingface/peft

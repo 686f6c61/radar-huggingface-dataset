@@ -59,13 +59,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar con otros modelos de la misma categoria. Los modelos relacionados encontrados en HuggingFace no tienen datos publicos de parametros, contexto ni rendimiento.
+No se dispone de informacion suficiente para comparar con otros modelos de la misma categoria. Los modelos relacionados encontrados en Hugging Face no tienen datos publicos de parametros, contexto ni rendimiento.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aariciah/gpt2-urdu-dutch-routed | 114.905.856 | No disponible | No disponible | HuggingFace |
-| aariciah/gpt2-urdu-dutch-merge | No disponible | No disponible | No disponible | HuggingFace |
-| aariciah/gpt2-urdu-dutch-configC-6k | No disponible | No disponible | No disponible | HuggingFace |
+| aariciah/gpt2-urdu-dutch-routed | 114.905.856 | No disponible | No disponible | Hugging Face |
+| aariciah/gpt2-urdu-dutch-merge | No disponible | No disponible | No disponible | Hugging Face |
+| aariciah/gpt2-urdu-dutch-configC-6k | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aariciah/gpt2-urdu-dutch-routed
+- Modelo en Hugging Face: https://huggingface.co/aariciah/gpt2-urdu-dutch-routed
 - Modelo base: https://huggingface.co/aariciah/gpt2-urdu-20k-lc
 - Otro modelo relacionado del autor: https://huggingface.co/aariciah/gpt2-urdu-dutch-merge
 - Otro modelo relacionado del autor: https://huggingface.co/aariciah/gpt2-urdu-dutch-configC-6k

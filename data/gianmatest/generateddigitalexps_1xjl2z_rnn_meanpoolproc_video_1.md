@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_1` es un repositorio alojado en HuggingFace por el usuario `gianmaTest` bajo la organización de pruebas del mismo nombre. El identificador sugiere un experimento generado de forma automática (prefijo `generatedDigitalExps`) en el que se combina una arquitectura de tipo RNN con un mecanismo de *mean pooling* (`meanPoolProc`) aplicado a datos de modalidad vídeo (`video`). No existe model card publicada, ni descripción, ni pipeline declarado, por lo que toda la información técnica disponible se reduce al propio nombre del repositorio y a las etiquetas `pytorch` y `region:us`.
+`generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_1` es un repositorio alojado en Hugging Face por el usuario `gianmaTest` bajo la organización de pruebas del mismo nombre. El identificador sugiere un experimento generado de forma automática (prefijo `generatedDigitalExps`) en el que se combina una arquitectura de tipo RNN con un mecanismo de *mean pooling* (`meanPoolProc`) aplicado a datos de modalidad vídeo (`video`). No existe model card publicada, ni descripción, ni pipeline declarado, por lo que toda la información técnica disponible se reduce al propio nombre del repositorio y a las etiquetas `pytorch` y `region:us`.
 
 El repositorio se creó el 21 de octubre de 2026 y se actualizó cuatro segundos después, lo que apunta a una subida automatizada sin edición posterior. El tamaño declarado es de 0.0 GB, lo que indica que no se han subido pesos con un tamaño significativo o que estos no están presentes en el repositorio. Acumula 13 descargas y 0 likes, cifras compatibles con un artefacto de pruebas y no con un modelo distribuido para uso general.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha documenta lo que se puede verificar y marca explícitament
 | Formato de pesos | no disponible (tamano del repositorio declarado: 0.0 GB) |
 | Modalidad | video (según el identificador); resto no disponible |
 | Framework declarado | pytorch (etiqueta del repositorio) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Region | us |
 | Descargas / likes | 13 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-21T01:35:08Z / 2026-10-21T01:35:12Z |
@@ -82,11 +82,11 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 - Riesgo de alucinación y sesgos: no evaluable sin pesos ni evaluación publicada.
 - Procedencia dudosa para producción: la cuenta `gianmaTest` y el patrón `generatedDigitalExps` sugieren un artefacto de pruebas automatizadas, no un modelo mantenido.
 - Fecha de creación en 2026 y actualización cuatro segundos después: indica una subida automatizada sin revisión humana posterior.
-- Sin pipeline declarado: las herramientas de HuggingFace no podrán instanciarlo automáticamente mediante `pipeline()`.
+- Sin pipeline declarado: las herramientas de Hugging Face no podrán instanciarlo automáticamente mediante `pipeline()`.
 - Cualquier uso en investigación debería citar el repositorio como artefacto experimental y no como línea base consolidada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_1
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_1
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

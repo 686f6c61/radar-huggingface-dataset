@@ -17,7 +17,7 @@ No se proporcionan datos técnicos del modelo generador (arquitectura, parámetr
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (la model card está en inglés, no se indica idioma de los datos) |
 | Licencia | No disponible |
-| Formato de pesos | No disponible (no se publican pesos; el código usa librerías de HuggingFace) |
+| Formato de pesos | No disponible (no se publican pesos; el código usa librerías de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,5 +74,5 @@ No disponible. El repositorio no presenta comparaciones con otros sistemas RAG n
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Deepak1206/kec-rag-assistant)
+- [Repositorio Hugging Face](https://huggingface.co/Deepak1206/kec-rag-assistant)
 - No se han encontrado otros enlaces oficiales (papers, blogs o repositorios asociados) en la búsqueda web. El repositorio no tiene una página de GitHub vinculada.

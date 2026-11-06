@@ -81,7 +81,7 @@ No se conocen adaptadores similares publicados con la misma metodologia de un so
 
 ## Enlaces
 
-- Repositorio HuggingFace: [MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z251](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z251)
+- Repositorio Hugging Face: [MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z251](https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z251)
 - Paper EMNLP 2026: [One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs](https://lit.eecs.umich.edu/hacking-fairness-benchmarks/)
 - Organizacion MichiganNLP en Hugging Face: [MichiganNLP](https://huggingface.co/MichiganNLP/models)
 - Modelo base: [Qwen/Qwen2.5-7B](https://huggingface.co/Qwen/Qwen2.5-7B)

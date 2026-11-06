@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/selcukkubur/Phonon-2.5-English-mlx
+- Hugging Face: https://huggingface.co/selcukkubur/Phonon-2.5-English-mlx
 - Modelo base original: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Checkpoint NVIDIA de origen: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Variante multilingüe (25 idiomas): https://huggingface.co/FermionResearch/Phonon-2.5

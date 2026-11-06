@@ -60,4 +60,4 @@ No disponible. No se han encontrado modelos comparables en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rey-etyl/my-matching
+- Hugging Face: https://huggingface.co/rey-etyl/my-matching

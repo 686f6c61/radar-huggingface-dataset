@@ -19,7 +19,7 @@ Conviene senalar una inconsistencia documental: el titulo de la model card dice 
 | Tipos de cuantizacion | Base cargada en NF4 de 4 bits con doble cuantizacion (bitsandbytes); adaptadores y capas guardadas en bfloat16. No se publican cuantizaciones GGUF ni GPTQ |
 | Idiomas soportados | Ingles (en), segun los metadatos de la model card |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el checkpoint base en formato HuggingFace |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el checkpoint base en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -74,9 +74,9 @@ No hay resultados de MMLU, HumanEval, GSM8K, ni de metricas especificas de quimi
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Codemaster67/Unichem_chebi_10M_tokens | ~1B (base OLMo-1B) + LoRA r=64 | No disponible (entrenado a 512) | Adaptador QLoRA sobre OLMo-1B | Apache 2.0 | HuggingFace, 0 descargas |
-| allenai/OLMo-1B-hf | ~1B | No disponible en la informacion consultada | Modelo base transformer causal | Apache 2.0 | HuggingFace |
-| Codemaster67/Olmo_10M_tok_unichem_fineweb | ~1B (base OLMo) | No disponible | Adaptador con tokenizador extendido con ~300 tokens SPE | No disponible | HuggingFace |
+| Codemaster67/Unichem_chebi_10M_tokens | ~1B (base OLMo-1B) + LoRA r=64 | No disponible (entrenado a 512) | Adaptador QLoRA sobre OLMo-1B | Apache 2.0 | Hugging Face, 0 descargas |
+| allenai/OLMo-1B-hf | ~1B | No disponible en la informacion consultada | Modelo base transformer causal | Apache 2.0 | Hugging Face |
+| Codemaster67/Olmo_10M_tok_unichem_fineweb | ~1B (base OLMo) | No disponible | Adaptador con tokenizador extendido con ~300 tokens SPE | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de parametros, contexto ni rendimiento para alternativas del ambito quimico como MolT5 o ChemBERTa en la informacion proporcionada; por tanto, no se incluye comparacion cuantitativa con ellas.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de parametros, contexto ni rendimiento para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Unichem_chebi_10M_tokens
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Unichem_chebi_10M_tokens
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_chebi_10M
 - Modelo relacionado del mismo autor (tokenizador extendido con SPE): https://huggingface.co/Codemaster67/Olmo_10M_tok_unichem_fineweb

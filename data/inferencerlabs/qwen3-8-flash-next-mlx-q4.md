@@ -76,9 +76,9 @@ La cuantizacion Q4.5, que es la que corresponde a este repositorio, mantiene una
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next | 125B MoE (6B activos) | 262K | Qwen4 MoE + N-gram | no disponible | HuggingFace, ModelScope |
-| Qwen3.8-27B | 27B | no disponible | Densa | no disponible | HuggingFace |
-| Qwen3.5 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.8-Flash-Next | 125B MoE (6B activos) | 262K | Qwen4 MoE + N-gram | no disponible | Hugging Face, ModelScope |
+| Qwen3.8-27B | 27B | no disponible | Densa | no disponible | Hugging Face |
+| Qwen3.5 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente sobre modelos comparables de la misma categoria para realizar una comparativa exhaustiva. Los datos de Qwen3.8-27B y Qwen3.5 provienen del repositorio oficial de Qwen, pero no se han publicado especificaciones detalladas en la informacion disponible.
 
@@ -95,8 +95,8 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Documentacion de unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen3.8

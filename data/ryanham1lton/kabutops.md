@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kabutops es un repositorio de pesos publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible se limita a los metadatos de la plataforma: no hay model card descriptiva (el README contiene unicamente el campo `license`), no se declara pipeline de inferencia, idiomas soportados, arquitectura ni datos de entrenamiento. Se desconoce si se trata de un modelo base entrenado desde cero, de un ajuste fino (*fine-tune*) sobre otro modelo, de un adaptador tipo LoRA o de un artefacto de otro tipo (tokenizador, embeddings, etc.).
+Kabutops es un repositorio de pesos publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La informacion disponible se limita a los metadatos de la plataforma: no hay model card descriptiva (el README contiene unicamente el campo `license`), no se declara pipeline de inferencia, idiomas soportados, arquitectura ni datos de entrenamiento. Se desconoce si se trata de un modelo base entrenado desde cero, de un ajuste fino (*fine-tune*) sobre otro modelo, de un adaptador tipo LoRA o de un artefacto de otro tipo (tokenizador, embeddings, etc.).
 
 El dato cuantitativo mas relevante es el tamano del repositorio, 0,1 GB, junto con un historial de uso nulo: cero descargas y cero valoraciones desde su creacion el 6 de octubre de 2026 hasta su ultima actualizacion, apenas minuto y medio despues. Esa combinacion (repositorio pequeno, sin documentacion y sin adopcion) es tipica de un experimento personal o de una prueba de subida de artefactos, no de un modelo destinado a produccion.
 
@@ -56,7 +56,7 @@ Debe advertirse que los siguientes escenarios son aplicaciones tipicas de un mod
 - Generacion de texto asistida en entornos sin conexion: si el artefacto es lo bastante pequeno, podria ejecutarse en CPU o en GPUs de gama de entrada, lo que habilitaria escenarios de borde o aislados de red.
 - Investigacion sobre cuantizacion y despliegue: un repositorio pequeno es un banco de pruebas comodo para medir latencias, consumo de VRAM y perdida de calidad al convertir a GGUF u otros formatos.
 - Evaluacion comparativa de licencias: al estar publicado bajo cc-by-4.0, podria interesar a equipos que necesiten artefactos con atribucion simple y sin clausulas de uso restringido, como referencia frente a licencias mas restrictivas.
-- Docencia: como ejemplo de publicacion de un modelo en HuggingFace y de buenas (y malas) practicas de documentacion, dado que la model card carece de cualquier descripcion tecnica.
+- Docencia: como ejemplo de publicacion de un modelo en Hugging Face y de buenas (y malas) practicas de documentacion, dado que la model card carece de cualquier descripcion tecnica.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Kabutops
+- Hugging Face: https://huggingface.co/Ryanham1lton/Kabutops
 - Model card: no disponible (el README solo contiene la declaracion de licencia `cc-by-4.0`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

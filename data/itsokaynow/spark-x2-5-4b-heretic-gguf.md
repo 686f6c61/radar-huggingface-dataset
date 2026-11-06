@@ -72,7 +72,7 @@ No se dispone de datos suficientes para realizar una comparativa fiable. El úni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsOkayNow/Spark-X2.5-4B-Heretic-GGUF
+- Hugging Face: https://huggingface.co/ItsOkayNow/Spark-X2.5-4B-Heretic-GGUF
 - Repositorio de XHToken (serie Spark-X2.5): https://github.com/XHToken/Spark-X2.5
 - Variante GGUF japonesa del mismo modelo base: https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf
 - Archivo imatrix de stornic56 mencionado en la model card: https://huggingface.co/stornic56/Spark-X2.5-4B-GGUF/tree/main

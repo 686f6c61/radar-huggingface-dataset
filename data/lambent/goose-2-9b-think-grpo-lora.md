@@ -52,6 +52,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lambent/Goose-2.9B-think-grpo-lora
+- Repositorio Hugging Face: https://huggingface.co/Lambent/Goose-2.9B-think-grpo-lora
 - Modelo base: https://huggingface.co/RWKV/RWKV7-2.9B-20260805
 - LoRA de midtrain: https://huggingface.co/Lambent/RWKV7-2.9B-midtrain50-docs-lora

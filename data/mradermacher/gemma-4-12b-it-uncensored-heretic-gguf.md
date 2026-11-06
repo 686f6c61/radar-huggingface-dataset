@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12B-it-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12B-it-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-12B-it-uncensored-heretic-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-4-12B-it-uncensored-heretic-GGUF

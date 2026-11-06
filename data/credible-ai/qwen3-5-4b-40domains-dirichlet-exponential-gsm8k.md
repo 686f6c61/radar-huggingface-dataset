@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4B-40domains-dirichlet-exponential-gsm8k | 3,7B | no disponible | MIT | Artefacto de investigación (data mixing) | HuggingFace |
+| qwen3.5-4B-40domains-dirichlet-exponential-gsm8k | 3,7B | no disponible | MIT | Artefacto de investigación (data mixing) | Hugging Face |
 | Qwen3.5 base (4B, referencia de arquitectura) | ~4B | no disponible | no disponible | Modelo de propósito general | no disponible en la información |
-| Modelos proxy `qwen3.5-100M-40domains-dirichlet` | 100M | no disponible | no disponible | Proxy para optimización de mezclas | HuggingFace (credible-ai) |
+| Modelos proxy `qwen3.5-100M-40domains-dirichlet` | 100M | no disponible | no disponible | Proxy para optimización de mezclas | Hugging Face (credible-ai) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-exponential-gsm8k
 - Modelo proxy 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código: https://github.com/credibleai/linmix

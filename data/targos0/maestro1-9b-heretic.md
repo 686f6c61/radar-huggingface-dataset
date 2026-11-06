@@ -82,7 +82,7 @@ La comparativa se basa en modelos multimodales de tamano similar. Maestro1-9B de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Targos0/Maestro1-9B-Heretic
+- Repositorio Hugging Face: https://huggingface.co/Targos0/Maestro1-9B-Heretic
 - Repositorio del cuantizador (haffner): https://huggingface.co/haffner/Maestro1-9B-Heretic
 - Modelo base: https://huggingface.co/vectionlabs/Maestro1-9B
 - Version mas reciente del modelo base: https://huggingface.co/vectionlabs/Maestro-2-9B-Preview

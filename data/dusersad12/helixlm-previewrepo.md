@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HelixLM es un modelo de lenguaje abierto presentado como la primera entrega de la serie Helix, desarrollada por el Helix Lab (segun la propia model card). El modelo se ha post-entrenado con un pipeline de razonamiento intercalado y, segun el autor, destaca en matematicas, comprension de codigo y problemas de logica de varios pasos, compitiendo con lineas base de mayor tamano en conjuntos de evaluacion internos. El repositorio de HuggingFace analizado (`dusersad12/HelixLM-PreviewRepo`) es una "preview" y, en el momento de la consulta, tiene 0 descargas y 0 likes.
+HelixLM es un modelo de lenguaje abierto presentado como la primera entrega de la serie Helix, desarrollada por el Helix Lab (segun la propia model card). El modelo se ha post-entrenado con un pipeline de razonamiento intercalado y, segun el autor, destaca en matematicas, comprension de codigo y problemas de logica de varios pasos, compitiendo con lineas base de mayor tamano en conjuntos de evaluacion internos. El repositorio de Hugging Face analizado (`dusersad12/HelixLM-PreviewRepo`) es una "preview" y, en el momento de la consulta, tiene 0 descargas y 0 likes.
 
 La model card menciona que esta version dedica mas "presupuesto de pensamiento" a los problemas dificiles antes de responder: en una mezcla de razonamiento reservada, el uso medio de tokens por problema se duplico aproximadamente y la calidad de las respuestas mejoro. Tambien indica que incluye una pasada de ajuste de seguridad mas conservadora y una cabeza de function calling renovada. La informacion publica no detalla el numero de parametros, la longitud de contexto ni la composicion del dataset de entrenamiento.
 
@@ -78,7 +78,7 @@ No se especifica la naturaleza del conjunto de evaluacion (publico o interno), e
 
 - No se dispone de datos oficiales sobre el tamano del modelo, por lo que no es posible calcular la VRAM necesaria ni recomendar GPU concretas.
 - A modo de referencia, la model card lo compara con Prism-7B y Prism-13B, lo que situa a los competidores en el rango de 7.000 y 13.000 millones de parametros; si HelixLM se moviera en ese rango, seria desplegable en GPU de consumo como la RTX 4090 en cuantizaciones de 4 u 8 bits, pero esto es una estimacion no confirmada.
-- Opciones de despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con Inference Endpoints de HuggingFace. No se confirma soporte de vLLM, llama.cpp u Ollama, ni se publican pesos GGUF.
+- Opciones de despliegue: el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con Inference Endpoints de Hugging Face. No se confirma soporte de vLLM, llama.cpp u Ollama, ni se publican pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de informacion sobre otras alternativas comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dusersad12/HelixLM-PreviewRepo
+- Repositorio de Hugging Face: https://huggingface.co/dusersad12/HelixLM-PreviewRepo
 - Model card relacionada (no confirmada como el mismo modelo): https://huggingface.co/dusersad12/HelixLM-CheckpointHub
 - Repositorio GitHub homonimo (proyecto distinto, no confirmado): https://github.com/david-thrower/HelixLM
 - Plataforma helixml/helix (proyecto distinto, no confirmado): https://github.com/helixml/helix

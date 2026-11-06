@@ -101,7 +101,7 @@ El recuento de parametros de Chronos-2 y de Chronos-2-small no se especifica en 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/albertooooz/chronos-2-lora-eu-day-ahead
+- Adaptador en Hugging Face: https://huggingface.co/albertooooz/chronos-2-lora-eu-day-ahead
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Autor: https://huggingface.co/albertooooz
 - Adaptador solo para Polonia: https://huggingface.co/albertooooz/chronos-2-lora-pl-day-ahead

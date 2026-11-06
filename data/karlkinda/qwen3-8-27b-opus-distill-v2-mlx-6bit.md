@@ -77,7 +77,7 @@ No se dispone de comparativas con otros modelos de 27B (p. ej., Llama 3.3 70B o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-mlx-6Bit
+- Repositorio Hugging Face: https://huggingface.co/KarlKinda/Qwen3.8-27B-Opus-Distill-v2-mlx-6Bit
 - Modelo base (barozp): https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

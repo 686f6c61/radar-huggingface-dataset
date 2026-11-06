@@ -74,11 +74,11 @@ El propio autor publica 24 ejecuciones de esta misma tarea, lo que permite una c
 
 | Modelo | Familia | Parámetros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | pi-0.5 | 3,62 B | chunk de 16 acciones, reobservación cada 16 pasos | gemma | público en HuggingFace, 0 descargas, 0 likes |
-| `..._gr00t3b260920` | GR00T 3B | no disponible (el nombre sugiere ~3 B) | no disponible | no disponible | público en HuggingFace |
-| `..._act260920` | ACT | no disponible | no disponible | no disponible | público en HuggingFace |
-| `..._dp260920` | Diffusion Policy | no disponible | no disponible | no disponible | público en HuggingFace |
-| `..._pi05tactile260920` | pi-0.5 con entrada táctil | no disponible | no disponible | gemma (presumiblemente) | público en HuggingFace |
+| Este checkpoint | pi-0.5 | 3,62 B | chunk de 16 acciones, reobservación cada 16 pasos | gemma | público en Hugging Face, 0 descargas, 0 likes |
+| `..._gr00t3b260920` | GR00T 3B | no disponible (el nombre sugiere ~3 B) | no disponible | no disponible | público en Hugging Face |
+| `..._act260920` | ACT | no disponible | no disponible | no disponible | público en Hugging Face |
+| `..._dp260920` | Diffusion Policy | no disponible | no disponible | no disponible | público en Hugging Face |
+| `..._pi05tactile260920` | pi-0.5 con entrada táctil | no disponible | no disponible | gemma (presumiblemente) | público en Hugging Face |
 
 Comparación con alternativas fuera de este estudio: no disponible. No se han proporcionado datos de otros modelos de manipulación bimanual con los que contrastar parámetros, contexto o rendimiento.
 
@@ -98,7 +98,7 @@ Comparación con alternativas fuera de este estudio: no disponible. No se han pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_pi05260920
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_pi05260920
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_act260920
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_acttactile260920
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dp260920

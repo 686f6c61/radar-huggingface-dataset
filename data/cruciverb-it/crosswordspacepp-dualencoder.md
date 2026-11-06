@@ -106,7 +106,7 @@ La comparacion directa con alternativas de otros autores no esta disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cruciverb-it/crosswordspacepp-dualencoder
+- Modelo en Hugging Face: https://huggingface.co/cruciverb-it/crosswordspacepp-dualencoder
 - Dataset de evaluacion: https://huggingface.co/datasets/cruciverb-it/evalita2026
 - Cross-encoder de reranking del pipeline: https://huggingface.co/cruciverb-it/crosswordspacepp-reranker
 - Version previa de la arquitectura ADE: https://huggingface.co/cruciverb-it/crossword-space-mpnet-base-ade

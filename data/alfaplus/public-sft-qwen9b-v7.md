@@ -90,7 +90,7 @@ No se dispone de datos públicos de benchmarks ni de modelos comparables equival
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfaplus/public-sft-qwen9b-v7
+- Modelo en Hugging Face: https://huggingface.co/alfaplus/public-sft-qwen9b-v7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/llm-jp/wizardlm8x22b-logical-math-coding-sft-ja
 - Dataset de origen citado por el autor: https://huggingface.co/datasets/kanhatakeyama/wizardlm8x22b-logical-math-coding-sft-ja

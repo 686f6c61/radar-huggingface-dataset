@@ -99,6 +99,6 @@ Las tres alternativas son cuantizaciones del mismo modelo base Qwen/Qwen3.8-Flas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-DR-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-DR-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

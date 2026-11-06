@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Karenzyc/scottyrl-a3-p5_textcraft_grpo` | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT (GRPO) | no disponible | HuggingFace (0 descargas) |
-| `Qwen/Qwen3.5-4B` (base) | ~4B | no disponible | Transformer denso | según Qwen | HuggingFace |
-| Adaptadores LoRA de la familia scottyrl (otras ejecuciones del mismo autor) | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT | no disponible | HuggingFace |
+| `Karenzyc/scottyrl-a3-p5_textcraft_grpo` | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT (GRPO) | no disponible | Hugging Face (0 descargas) |
+| `Qwen/Qwen3.5-4B` (base) | ~4B | no disponible | Transformer denso | según Qwen | Hugging Face |
+| Adaptadores LoRA de la familia scottyrl (otras ejecuciones del mismo autor) | LoRA r32 sobre ~4B | no disponible | Adaptador PEFT | no disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores comparables con métricas publicadas en el mismo entorno TextCraft.
 
@@ -79,9 +79,9 @@ No se dispone de información sobre otros adaptadores comparables con métricas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Karenzyc/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/Karenzyc/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia de exportación: `tinker://model_96de5cb9/v50` (no es una URL pública)
 - Commit del entrenamiento: `88d1b1fa2aea58938d6d251847ce5559c4ac6558`
-- Configuración referenciada: `configs/p5_textcraft_grpo.yaml` (no incluida en el repositorio de HuggingFace)
-- Script de evaluación referenciado: `scripts/evaluate_checkpoint.py` (no incluido en el repositorio de HuggingFace)
+- Configuración referenciada: `configs/p5_textcraft_grpo.yaml` (no incluida en el repositorio de Hugging Face)
+- Script de evaluación referenciado: `scripts/evaluate_checkpoint.py` (no incluido en el repositorio de Hugging Face)

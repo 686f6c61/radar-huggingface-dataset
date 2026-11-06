@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-EXL3-4bpw es una cuantización en formato EXL3 (4.0 bpw) del modelo base ornith-ai/Ornith-1.5-9B, realizada por el usuario de HuggingFace ultimatechris. El modelo base pertenece a la familia Ornith AI, una serie de modelos de código abierto orientados a tareas de programación agéntica (agentic coding) que incluye variantes desde 9B densos hasta 397B MoE. Esta cuantización reduce el tamaño del modelo para facilitar su ejecución en hardware con recursos limitados, manteniendo la mayor parte de las capacidades del original.
+Ornith-1.5-9B-EXL3-4bpw es una cuantización en formato EXL3 (4.0 bpw) del modelo base ornith-ai/Ornith-1.5-9B, realizada por el usuario de Hugging Face ultimatechris. El modelo base pertenece a la familia Ornith AI, una serie de modelos de código abierto orientados a tareas de programación agéntica (agentic coding) que incluye variantes desde 9B densos hasta 397B MoE. Esta cuantización reduce el tamaño del modelo para facilitar su ejecución en hardware con recursos limitados, manteniendo la mayor parte de las capacidades del original.
 
 El archivo safetensors contiene 3.592.713.968 parámetros, aunque el nombre del modelo sugiere 9B; es posible que se trate de un modelo MoE con parámetros activos inferiores a los totales, aunque no se confirma en la documentación disponible. La conversión se realizó con ExLlamaV3 1.4.2 en modo de alta calidad (high-quality), con el head del modelo almacenado a 6 bpw y el resto a 4.0 bpw. El repositorio incluye los archivos de tokenizador, plantilla de chat y configuración necesarios para su uso con frontends compatibles con ExLlamaV3, como TabbyAPI.
 
@@ -70,7 +70,7 @@ No se dispone de datos de comparacion con otros modelos en la informacion propor
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la cuantizacion: https://huggingface.co/ultimatechris/Ornith-1.5-9B-EXL3-4bpw
+- Repositorio de Hugging Face de la cuantizacion: https://huggingface.co/ultimatechris/Ornith-1.5-9B-EXL3-4bpw
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Sitio web de Ornith AI: https://ornith.ai/
 - Guia de Ornith AI (modelos y benchmarks): https://ornith.online/

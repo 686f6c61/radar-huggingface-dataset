@@ -76,11 +76,11 @@ No se dispone de especificaciones publicadas de modelos comparables directos. La
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdrianYao/hw1-hc3-detector | 22.713.986 | no disponible | 0,9936 accuracy de test (HC3) | no disponible | HuggingFace |
+| AdrianYao/hw1-hc3-detector | 22.713.986 | no disponible | 0,9936 accuracy de test (HC3) | no disponible | Hugging Face |
 | Linea base del autor (embeddings congelados + regresion logistica) | no disponible | no disponible | 0,8451 accuracy de test (HC3) | no aplica | interna del ejercicio |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| aisaro/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| aisaro/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se dispone de especificaciones publicadas de modelos comparables directos. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdrianYao/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/AdrianYao/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Repositorio hermano (Aishkrish): https://huggingface.co/Aishkrish/hw1-hc3-detector

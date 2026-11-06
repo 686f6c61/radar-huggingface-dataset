@@ -85,7 +85,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada; l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-d39f950045dd7f9d7d6b
+- Repositorio Hugging Face: https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-d39f950045dd7f9d7d6b
 - Modelo base referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Manifiesto de recuperacion mencionado en la model card: recovery-manifest.json (no se proporciona URL)
 - Papers, blogs, repositorios o demos adicionales: no disponible; la busqueda web no devolvio ningun resultado relacionado con el modelo (las coincidencias de «Sherpa» corresponden a https://sherpas.com/, https://fr.wikipedia.org/wiki/Sherpas, https://www.sherpa.net/, https://www.asso-sherpa.org/accueil y https://www.sherpa-transfert.com/, todas ellas entidades sin relacion con este artefacto).

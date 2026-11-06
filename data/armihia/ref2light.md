@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ref2Light es un modelo de generación de avatares faciales publicado por el usuario armihia en HuggingFace bajo el identificador `armihia/Ref2Light`. El repositorio contiene un único artefacto de pesos, `ref2light.pt`, que según la model card integra la red de cuerpo completo, redes locales de expresión, cabezas de expansión de boca y cejas, y calibración de visualización. No se trata de un modelo de lenguaje: es un sistema de animación facial y reconstrucción de expresiones orientado a la generación de avatares en tiempo real.
+Ref2Light es un modelo de generación de avatares faciales publicado por el usuario armihia en Hugging Face bajo el identificador `armihia/Ref2Light`. El repositorio contiene un único artefacto de pesos, `ref2light.pt`, que según la model card integra la red de cuerpo completo, redes locales de expresión, cabezas de expansión de boca y cejas, y calibración de visualización. No se trata de un modelo de lenguaje: es un sistema de animación facial y reconstrucción de expresiones orientado a la generación de avatares en tiempo real.
 
 La relevancia del modelo radica en su planteamiento modular: separa la red de cuerpo completo de las redes locales de expresión, lo que permite un control granular de regiones faciales concretas (boca, cejas) sin reentrenar el cuerpo entero. La distribución es únicamente de inferencia: no incluye estado del optimizador, datos de entrenamiento ni pesos preentrenados de terceros, lo que limita su utilidad para fine-tuning pero simplifica el despliegue.
 
-La información pública disponible es muy escasa: cero descargas, cero likes, sin licencia declarada, sin idiomas especificados y sin pipeline asignado en HuggingFace. El tamaño del repositorio es de 0,5 GB, coherente con un conjunto de pesos de red neuronal de tamaño medio-alto, pero no se dispone de datos sobre arquitectura exacta, número de parámetros ni contexto.
+La información pública disponible es muy escasa: cero descargas, cero likes, sin licencia declarada, sin idiomas especificados y sin pipeline asignado en Hugging Face. El tamaño del repositorio es de 0,5 GB, coherente con un conjunto de pesos de red neuronal de tamaño medio-alto, pero no se dispone de datos sobre arquitectura exacta, número de parámetros ni contexto.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/armihia/Ref2Light
+- Hugging Face: https://huggingface.co/armihia/Ref2Light
 - Repositorio del proyecto: no disponible en la información proporcionada (la model card menciona un README del repositorio, pero no se incluye la URL).
 - Modelos de Google MediaPipe: no se incluye URL específica en la información proporcionada; deben descargarse según el README del repositorio.
 - Paper: no disponible.

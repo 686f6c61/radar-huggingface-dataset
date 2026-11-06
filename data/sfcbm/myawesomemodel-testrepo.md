@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfcbm/MyAwesomeModel-TestRepo` es un repositorio alojado en HuggingFace con características de un modelo de tipo transformer, etiquetado con `pytorch`, `bert` y `feature-extraction`. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un espacio de prueba o una plantilla sin contenido real. La model card incluida describe un modelo con capacidades de razonamiento mejoradas y soporte para function calling, pero no proporciona datos técnicos concretos como número de parámetros, arquitectura específica o longitud de contexto.
+El modelo `sfcbm/MyAwesomeModel-TestRepo` es un repositorio alojado en Hugging Face con características de un modelo de tipo transformer, etiquetado con `pytorch`, `bert` y `feature-extraction`. Sin embargo, la información disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un espacio de prueba o una plantilla sin contenido real. La model card incluida describe un modelo con capacidades de razonamiento mejoradas y soporte para function calling, pero no proporciona datos técnicos concretos como número de parámetros, arquitectura específica o longitud de contexto.
 
 Dado que no se dispone de información verificable sobre el modelo (arquitectura, tamaño, entrenamiento, etc.), esta ficha se limita a reflejar los datos declarados en la model card, advirtiendo explícitamente de su falta de verificación. El repositorio parece ser un placeholder o un experimento, no un modelo listo para producción.
 
@@ -10,7 +10,7 @@ Dado que no se dispone de información verificable sobre el modelo (arquitectura
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta "bert" en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiqueta "bert" en Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Dado que no se dispone de información verificable sobre el modelo (arquitectura
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura del modelo. Los tags de HuggingFace incluyen `bert`, lo que sugiere una arquitectura basada en transformer encoder, pero no se confirma. La model card menciona una "versión actualizada" con mejoras en razonamiento y una reducción de la tasa de alucinación, así como soporte para function calling, pero no ofrece detalles sobre el proceso de entrenamiento (número de tokens, dataset, técnicas de RLHF/DPO, etc.). Tampoco se indica si se utilizó decodificación especulativa u otras innovaciones.
+No se ha publicado información detallada sobre la arquitectura del modelo. Los tags de Hugging Face incluyen `bert`, lo que sugiere una arquitectura basada en transformer encoder, pero no se confirma. La model card menciona una "versión actualizada" con mejoras en razonamiento y una reducción de la tasa de alucinación, así como soporte para function calling, pero no ofrece detalles sobre el proceso de entrenamiento (número de tokens, dataset, técnicas de RLHF/DPO, etc.). Tampoco se indica si se utilizó decodificación especulativa u otras innovaciones.
 
 ## Capacidades
 
@@ -69,5 +69,5 @@ No disponible. No se proporcionan datos de modelos comparables ni se puede situa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sfcbm/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sfcbm/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

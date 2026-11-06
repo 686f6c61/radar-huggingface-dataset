@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Shanshan777/lerobot_pi05_01 es un repositorio de pesos alojado en HuggingFace por el usuario Shanshan777, publicado bajo licencia MIT y con un total de 4.143.404.816 parametros reales declarados en los ficheros safetensors (aproximadamente 4,14 mil millones). El repositorio ocupa 9,4 GB y no registra descargas ni "likes" en el momento de la consulta. La model card publicada por el autor esta practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion, sin instrucciones de uso, sin datos de entrenamiento y sin resultados de evaluacion.
+Shanshan777/lerobot_pi05_01 es un repositorio de pesos alojado en Hugging Face por el usuario Shanshan777, publicado bajo licencia MIT y con un total de 4.143.404.816 parametros reales declarados en los ficheros safetensors (aproximadamente 4,14 mil millones). El repositorio ocupa 9,4 GB y no registra descargas ni "likes" en el momento de la consulta. La model card publicada por el autor esta practicamente vacia: unicamente contiene la declaracion de licencia (`license: mit`), sin descripcion, sin instrucciones de uso, sin datos de entrenamiento y sin resultados de evaluacion.
 
-El nombre del repositorio sugiere una relacion con LeRobot, la libreria de aprendizaje por imitacion y robotica de HuggingFace, y con la familia de modelos pi0.5 (vision-language-action) de Physical Intelligence. Esa interpretacion es una inferencia a partir del identificador y no esta confirmada por el autor en la informacion disponible. El tamano en parametros es coherente con el orden de magnitud de los modelos VLA de esa familia, pero no se puede verificar sin documentacion adicional.
+El nombre del repositorio sugiere una relacion con LeRobot, la libreria de aprendizaje por imitacion y robotica de Hugging Face, y con la familia de modelos pi0.5 (vision-language-action) de Physical Intelligence. Esa interpretacion es una inferencia a partir del identificador y no esta confirmada por el autor en la informacion disponible. El tamano en parametros es coherente con el orden de magnitud de los modelos VLA de esa familia, pero no se puede verificar sin documentacion adicional.
 
 La relevancia de esta ficha es limitada y hay que ser explicito: no hay informacion publica verificable sobre arquitectura, datos de entrenamiento, capacidades, benchmarks ni requisitos de despliegue. Cualquier evaluacion seria requiere inspeccionar los ficheros safetensors, revisar la configuracion del modelo y contactar con el autor. Se recomienda tratar este repositorio como material sin documentar y no como un artefacto listo para produccion.
 
@@ -74,7 +74,7 @@ No se ha encontrado informacion verificable que permita establecer una comparati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Shanshan777/lerobot_pi05_01 | 4,14 mil millones | no disponible | MIT | HuggingFace, sin documentar | Sin benchmarks ni model card util |
+| Shanshan777/lerobot_pi05_01 | 4,14 mil millones | no disponible | MIT | Hugging Face, sin documentar | Sin benchmarks ni model card util |
 | pi0.5 (Physical Intelligence) | no disponible en esta busqueda | no disponible | no disponible | Publicacion y pesos gestionados por su autor | Referencia por similitud de nombre, no confirmada |
 | pi0 (Physical Intelligence) | no disponible en esta busqueda | no disponible | no disponible | Publicacion y pesos gestionados por su autor | Referencia por similitud de nombre, no confirmada |
 | OpenVLA | no disponible en esta busqueda | no disponible | no disponible | Repositorio publico de sus autores | Alternativa habitual en el espacio VLA |
@@ -95,8 +95,8 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shanshan777/lerobot_pi05_01
-- Perfil del autor en HuggingFace: https://huggingface.co/Shanshan777
+- Repositorio en Hugging Face: https://huggingface.co/Shanshan777/lerobot_pi05_01
+- Perfil del autor en Hugging Face: https://huggingface.co/Shanshan777
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Documentacion de la libreria LeRobot (referencia general, no vinculada confirmadamente a este repositorio): https://github.com/huggingface/lerobot
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las consultas devolvieron unicamente contenido no relacionado.

@@ -105,7 +105,7 @@ La comparación directa más fiable es con el modelo upstream, del que esta publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX
+- Hugging Face: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX
 - Modelo upstream: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Repositorio de conversión gliner2-mlx (Andrew Chen Wang): https://github.com/Andrew-Chen-Wang/gliner2-mlx
 - Runtime speech-swift (módulo GLiNER y CLI): https://github.com/soniqo/speech-swift

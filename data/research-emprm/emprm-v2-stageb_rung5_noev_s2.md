@@ -88,8 +88,8 @@ Comparaciones emparejadas de los pools controlados frente al brazo final del exp
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| emprm-v2-stageB_rung5_noev_s2 | ~8B base + 174,6M adaptables | no disponible | apache-2.0 | HuggingFace (PEFT) | PRM multimodal; puertas de gráfico perdidas; no candidato a despliegue |
-| Qwen3-VL-8B-Instruct (modelo base) | ~8B | no disponible | apache-2.0 | HuggingFace | Modelo instruct multimodal general; no incorpora el entrenamiento de recompensa de proceso |
+| emprm-v2-stageB_rung5_noev_s2 | ~8B base + 174,6M adaptables | no disponible | apache-2.0 | Hugging Face (PEFT) | PRM multimodal; puertas de gráfico perdidas; no candidato a despliegue |
+| Qwen3-VL-8B-Instruct (modelo base) | ~8B | no disponible | apache-2.0 | Hugging Face | Modelo instruct multimodal general; no incorpora el entrenamiento de recompensa de proceso |
 | EM-PRM v1 | no disponible | no disponible | no disponible | no disponible | Referenciado como línea base de la ganancia de pares disjuntos (+0,0891 a favor de este adaptador en configuración desplegada) |
 | Brazo final del factorial E2 | no disponible | no disponible | no disponible | no disponible | Supera a este adaptador en los pools controlados (deltas de -0,5064 y -0,3806) |
 | Otros PRM multimodales comparables | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de comparación en la información disponible |
@@ -111,7 +111,7 @@ Comparaciones emparejadas de los pools controlados frente al brazo final del exp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s2
+- Modelo en Hugging Face: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Adaptador de inicialización (`a2_support_s0`): https://huggingface.co/RESEARCH-EMPRM/emprm-v2-a2_support_s0
 - Árbol congelado del proyecto (anterior a este brazo): https://huggingface.co/RESEARCH-EMPRM/emprm-v2

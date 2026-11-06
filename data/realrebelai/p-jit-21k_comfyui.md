@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P-JiT-21k_ComfyUI es un repositorio publicado en HuggingFace por el usuario realrebelai bajo licencia Apache 2.0. El nombre sugiere un empaquetado orientado a ComfyUI (entorno de nodos para generacion de imagenes) y un posible origen en el modelo JiT (Just-in-Time, familia de diffusion transformers de imagen), con un sufijo "21k" que podria referirse a pasos de entrenamiento o a un tamano de dataset, aunque esto no se confirma en la informacion disponible. El repositorio ocupa 11,1 GB, un tamano coherente con pesos de un modelo de difusion de imagen de escala media, pero la model card no aporta ningun detalle tecnico.
+P-JiT-21k_ComfyUI es un repositorio publicado en Hugging Face por el usuario realrebelai bajo licencia Apache 2.0. El nombre sugiere un empaquetado orientado a ComfyUI (entorno de nodos para generacion de imagenes) y un posible origen en el modelo JiT (Just-in-Time, familia de diffusion transformers de imagen), con un sufijo "21k" que podria referirse a pasos de entrenamiento o a un tamano de dataset, aunque esto no se confirma en la informacion disponible. El repositorio ocupa 11,1 GB, un tamano coherente con pesos de un modelo de difusion de imagen de escala media, pero la model card no aporta ningun detalle tecnico.
 
 La informacion publicada es practicamente inexistente: la model card solo contiene la declaracion de licencia, no hay pipeline declarado, no se especifican idiomas, no hay descripcion de arquitectura, dataset de entrenamiento ni benchmarks. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 2026-11-05, lo que indica una publicacion muy reciente y sin validacion por parte de la comunidad.
 
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion suficiente para identificar modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realrebelai/P-JiT-21k_ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/realrebelai/P-JiT-21k_ComfyUI
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

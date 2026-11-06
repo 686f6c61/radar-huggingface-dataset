@@ -82,7 +82,7 @@ No se han encontrado comparativas con modelos de la misma categoría fuera de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-top20-original10240
+- Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-BudgetJSD-top20-original10240
 - Variante TIP-SoftOR: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-SoftOR-top20-forwardKL-balanced-10240
 - Variante OPSD oficial: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 

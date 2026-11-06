@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI Literature Paper Reviewer es un sistema multiagente de revisión de literatura científica publicado en HuggingFace por el usuario penji2803 (Tarun Narashiman, Amrita Vishwa Vidyapeetham). No se trata de un modelo de lenguaje con pesos propios, sino de una aplicación orquestadora que combina cinco APIs académicas abiertas (OpenAlex, Semantic Scholar, arXiv, Crossref y OpenReview) con subagentes basados en Claude (Anthropic) para convertir una idea de investigación de una línea en una revisión bibliográfica temática con citas verificadas y papers reales puntuados.
+AI Literature Paper Reviewer es un sistema multiagente de revisión de literatura científica publicado en Hugging Face por el usuario penji2803 (Tarun Narashiman, Amrita Vishwa Vidyapeetham). No se trata de un modelo de lenguaje con pesos propios, sino de una aplicación orquestadora que combina cinco APIs académicas abiertas (OpenAlex, Semantic Scholar, arXiv, Crossref y OpenReview) con subagentes basados en Claude (Anthropic) para convertir una idea de investigación de una línea en una revisión bibliográfica temática con citas verificadas y papers reales puntuados.
 
 El sistema resuelve dos problemas clásicos de las revisiones de literatura generadas con LLM: la invención de referencias y la fabricación de cifras. Lo hace imponiendo un esquema de datos que rechaza cualquier paper sin DOI, arXiv ID o identificador de OpenAlex/Semantic Scholar, y verificando cada número del texto final contra el texto fuente parseado (PyMuPDF), eliminando las frases cuya cifra no pueda rastrearse hasta el paper citado.
 
@@ -94,11 +94,11 @@ No existen alternativas open source directamente comparables con verificacion nu
 - Orientado al ingles: la documentacion y el pipeline estan pensados para literatura en ingles; no se documenta soporte para literatura en castellano u otros idiomas.
 - Uso comercial: la licencia MIT del codigo es permisiva, pero las llamadas a la API de Claude estan sujetas a las condiciones comerciales de Anthropic, y las APIs academicas tienen limites de tasa y politicas de uso propias.
 - Calidad dependiente del modelo subyacente: las capacidades de razonamiento y redaccion varian segun el modelo Claude contratado, sobre el que el repositorio no da ninguna garantia ni version minima.
-- Proyecto academico individual (trabajo de curso), sin mantenimiento garantizado, sin tests documentados mas alla de `pytest` y sin comunidad de usuarios (0 descargas y 0 likes en HuggingFace en el momento de la ficha).
+- Proyecto academico individual (trabajo de curso), sin mantenimiento garantizado, sin tests documentados mas alla de `pytest` y sin comunidad de usuarios (0 descargas y 0 likes en Hugging Face en el momento de la ficha).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/penji2803/ai-literature-paper-reviewer
+- Repositorio en Hugging Face: https://huggingface.co/penji2803/ai-literature-paper-reviewer
 - APIs academicas usadas: OpenAlex (https://openalex.org), Semantic Scholar (https://www.semanticscholar.org), arXiv (https://arxiv.org), Crossref (https://www.crossref.org), OpenReview (https://openreview.net)
 - Unpaywall (texto completo legal): https://unpaywall.org
 - Anthropic API (requerida): https://www.anthropic.com

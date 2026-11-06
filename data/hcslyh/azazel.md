@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Azazel es un modelo publicado en HuggingFace bajo el identificador HCSlyh/Azazel por el usuario HCSlyh. La única información verificable del repositorio es la licencia declarada (MIT) y las etiquetas de metadatos (license:mit, region:us), junto con la fecha de creación (10 de septiembre de 2026) y la de última actualización (mismo día, 55 segundos después). No hay pipeline declarado, no hay idiomas declarados, no hay descripción del modelo y no hay resultados de benchmarks.
+Azazel es un modelo publicado en Hugging Face bajo el identificador HCSlyh/Azazel por el usuario HCSlyh. La única información verificable del repositorio es la licencia declarada (MIT) y las etiquetas de metadatos (license:mit, region:us), junto con la fecha de creación (10 de septiembre de 2026) y la de última actualización (mismo día, 55 segundos después). No hay pipeline declarado, no hay idiomas declarados, no hay descripción del modelo y no hay resultados de benchmarks.
 
 La model card no contiene más que el bloque de frontmatter con la licencia, sin texto explicativo, sin especificaciones de arquitectura, sin datos de entrenamiento y sin instrucciones de uso. Esto, junto con el intervalo de menos de un minuto entre creación y última actualización, indica que se trata de un repositorio vacío o prácticamente vacío, sin material técnico sobre el que basar una evaluación.
 
@@ -22,7 +22,7 @@ En consecuencia, esta ficha no puede aportar datos de parámetros, contexto, cua
 | Formato de pesos | no disponible |
 | Autor | HCSlyh |
 | Pipeline declarado | no disponible |
-| Fecha de creación en HuggingFace | 2026-09-10 |
+| Fecha de creación en Hugging Face | 2026-09-10 |
 | Última actualización | 2026-09-10 (55 segundos después de la creación) |
 | Descargas | 0 |
 | Likes | 0 |
@@ -86,6 +86,6 @@ No disponible. Al no conocerse la categoría del modelo (tamaño, modalidad, tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HCSlyh/Azazel
+- Hugging Face: https://huggingface.co/HCSlyh/Azazel
 
 La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo: los enlaces recuperados corresponden a sitios de horóscopos, a discusiones sobre interfaces de Gemini y a un artículo genérico sobre modelos multimodales, ninguno vinculado a HCSlyh/Azazel. Por tanto, no hay papers, blogs, repositorios ni demos que enlazar.

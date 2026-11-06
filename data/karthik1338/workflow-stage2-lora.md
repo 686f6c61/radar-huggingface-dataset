@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Karthik1338/workflow-stage2-lora` es un repositorio publicado en HuggingFace por el usuario Karthik1338 que, por su nombre y por la etiqueta `unsloth` de sus metadatos, corresponde a un adaptador LoRA (o un artefacto derivado de un entrenamiento con Unsloth) orientado a una "etapa 2" de un flujo de trabajo. El repositorio ocupa aproximadamente 0,1 GB y declara la libreria `transformers` como framework de carga, ademas de contener pesos en formato `safetensors`. No se especifica el modelo base sobre el que se aplica el adaptador, ni el pipeline, ni los idiomas soportados.
+`Karthik1338/workflow-stage2-lora` es un repositorio publicado en Hugging Face por el usuario Karthik1338 que, por su nombre y por la etiqueta `unsloth` de sus metadatos, corresponde a un adaptador LoRA (o un artefacto derivado de un entrenamiento con Unsloth) orientado a una "etapa 2" de un flujo de trabajo. El repositorio ocupa aproximadamente 0,1 GB y declara la libreria `transformers` como framework de carga, ademas de contener pesos en formato `safetensors`. No se especifica el modelo base sobre el que se aplica el adaptador, ni el pipeline, ni los idiomas soportados.
 
-La model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion real: todos los campos relevantes (desarrollador, tipo de modelo, licencia, datos de entrenamiento, hiperparametros, evaluacion, uso previsto) aparecen como `[More Information Needed]`. No hay paper, demo, repositorio de codigo ni resultados de evaluacion asociados. La unica referencia bibliografica presente (`arxiv:1910.09700`) es un enlace plantilla al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no un paper sobre el modelo.
+La model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion real: todos los campos relevantes (desarrollador, tipo de modelo, licencia, datos de entrenamiento, hiperparametros, evaluacion, uso previsto) aparecen como `[More Information Needed]`. No hay paper, demo, repositorio de codigo ni resultados de evaluacion asociados. La unica referencia bibliografica presente (`arxiv:1910.09700`) es un enlace plantilla al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no un paper sobre el modelo.
 
 Por todo ello, esta ficha se limita a documentar lo que es verificable desde los metadatos del Hub y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Para evaluar el modelo en un entorno real seria imprescindible obtener del autor el modelo base, la licencia y la composicion del dataset de entrenamiento.
 
@@ -87,11 +87,11 @@ No disponible. La comparacion no es posible porque se desconoce el modelo base, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karthik1338/workflow-stage2-lora
+- Modelo en Hugging Face: https://huggingface.co/Karthik1338/workflow-stage2-lora
 - Referencia citada en las etiquetas (plantilla de la model card, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio de codigo: no disponible
 - Paper del modelo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/Karthik1338
+- Perfil del autor en Hugging Face: https://huggingface.co/Karthik1338
 - Resultados de busqueda web: no se han encontrado fuentes relevantes sobre este modelo; los resultados devueltos corresponden a paginas de inicio de sesion de Microsoft Outlook y no guardan relacion con el repositorio.

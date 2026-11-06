@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm",
+  "slug": "localdadmin-mellum2-1-12b-a2-5b-thinking-sm",
+  "author": "localdadmin",
+  "url": "https://huggingface.co/localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm",
+  "created_at": "2026-11-05T00:19:18.000Z",
+  "updated_at": "2026-11-05T01:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "model-cacher-ng",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 5176900128,
+  "storage_human": "5.2 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm at main",
+      "url": "https://huggingface.co/localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm · Hugging Face",
+      "url": "https://huggingface.co/localdadmin/Mellum2.1-12B-A2.5B-Thinking-Sm",
+      "snippet": "Machine learning model with 12B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

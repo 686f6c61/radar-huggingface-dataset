@@ -81,8 +81,8 @@ La comparación disponible es interna a la familia VAL-APEX-I y a las cuantizaci
 
 | Opción | Parámetros | Contexto | BPW / tamaño | PPL WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VAL-APEX-I MiniPlus V2.1 (esta release) | ~27,3 B | 256K | 3,93 BPW / 15,33 GB | 6,1466 (+2,44 %) | Apache 2.0 | HuggingFace |
-| VAL-APEX-I NanoPlus | ~27,3 B | 256K | 2,85 BPW / 11,90 GB | 6,4238 (+7,06 %) | Apache 2.0 | HuggingFace |
+| VAL-APEX-I MiniPlus V2.1 (esta release) | ~27,3 B | 256K | 3,93 BPW / 15,33 GB | 6,1466 (+2,44 %) | Apache 2.0 | Hugging Face |
+| VAL-APEX-I NanoPlus | ~27,3 B | 256K | 2,85 BPW / 11,90 GB | 6,4238 (+7,06 %) | Apache 2.0 | Hugging Face |
 | Q4_K_M plano estándar | ~27,3 B | 256K | 4,50 BPW / 17,10 GB | ~6,22 - 6,28 (+3,7 %) | Apache 2.0 | Genérico |
 | Q3_K_M plano estándar | ~27,3 B | 256K | 3,44 BPW / 13,50 GB | ~6,45 - 6,70 (+7,5 %) | Apache 2.0 | Genérico |
 | Modelo base BF16 | ~27,3 B | 256K | 16,00 BPW / 54,00 GB | ~6,0000 | Apache 2.0 | huihui-ai |
@@ -103,7 +103,7 @@ El argumento del autor es que MiniPlus V2.1 ofrece mejor perplejidad que Q4_K_M 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V2.1-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Release hermana NanoPlus: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-GGUF
 - Release especializada en razonamiento sintético (EfficientThink Uncensored): https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-MiniPlus-V2.1-GGUF

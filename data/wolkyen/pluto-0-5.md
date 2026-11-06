@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pluto-0.5 es un modelo de lenguaje publicado por el usuario Wolkyen en HuggingFace, descrito por su autor como "el modelo de 350M parámetros más rápido" y con la afirmación de superar a modelos de 500M parámetros en matemáticas y preguntas generales. El repositorio ocupa 0,2 GB y está etiquetado con los términos `gguf`, `fast`, `math` y `general`, lo que indica que se distribuye ya cuantizado en formato GGUF y orientado a inferencia de baja latencia en hardware modesto.
+Pluto-0.5 es un modelo de lenguaje publicado por el usuario Wolkyen en Hugging Face, descrito por su autor como "el modelo de 350M parámetros más rápido" y con la afirmación de superar a modelos de 500M parámetros en matemáticas y preguntas generales. El repositorio ocupa 0,2 GB y está etiquetado con los términos `gguf`, `fast`, `math` y `general`, lo que indica que se distribuye ya cuantizado en formato GGUF y orientado a inferencia de baja latencia en hardware modesto.
 
 La información pública disponible es muy escasa: la model card se limita a tres líneas de texto promocional y un enlace a una página externa (`https://wolkyen.grok.me/pluto`). No se documentan arquitectura, número de tokens de entrenamiento, composición del dataset, longitud de contexto ni proceso de alineación. El modelo se declara únicamente en inglés y se publica bajo licencia Apache-2.0.
 
@@ -93,12 +93,12 @@ La diferencia principal no está en el tamaño, sino en la trazabilidad: las alt
 - Longitud de contexto desconocida: no se puede planificar su uso en conversaciones multi-turno o documentos largos.
 - Licencia Apache-2.0: permite uso comercial y modificación, pero al no haber información sobre el origen de los datos de entrenamiento no se puede garantizar que el modelo esté libre de reclamaciones de terceros.
 - Señales de poca madurez del proyecto: 0 descargas, 1 like, repositorio de 0,2 GB y fechas de creación y actualización de 2026-09-26, inconsistentes con la fecha de consulta; además, la model card enlaza a un dominio externo sin documentación técnica.
-- Sin pipeline declarado en HuggingFace, lo que dificulta la integración automática con librerías como `transformers`.
+- Sin pipeline declarado en Hugging Face, lo que dificulta la integración automática con librerías como `transformers`.
 - La búsqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo; los resultados obtenidos eran completamente ajenos al proyecto y no se han utilizado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wolkyen/Pluto-0.5
+- Modelo en Hugging Face: https://huggingface.co/Wolkyen/Pluto-0.5
 - Página externa citada en la model card: https://wolkyen.grok.me/pluto (no verificada; el autor no aporta documentación técnica adicional en el repositorio)
 - Paper: no disponible
 - Repositorio de código: no disponible

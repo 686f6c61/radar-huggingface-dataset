@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks comparativos entre estos checkpoints, solo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP
 - Repositorio GitHub con receta, parches, benchmarks y notas de servicio: https://github.com/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP
 - Checkpoint base: https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp
 - Checkpoint de referencia de mayor precision: https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ4e-mtp
@@ -124,5 +124,5 @@ No se dispone de datos de benchmarks comparativos entre estos checkpoints, solo 
 - Pull request de oMLX con prefill CED: https://github.com/jundot/omlx/pull/3607
 - Pull request de oMLX con offload de expertos MoE: https://github.com/jundot/omlx/pull/2595
 - Pull request de oMLX adicional: https://github.com/jundot/omlx/pull/3571
-- Organizacion DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan relacion con el modelo.

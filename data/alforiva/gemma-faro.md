@@ -117,7 +117,7 @@ No se dispone de resultados de benchmarks estandar para establecer una comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alforiva/gemma-faro
+- Modelo en Hugging Face: https://huggingface.co/alforiva/gemma-faro
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Proyecto Progetto Siliceo: https://progettosiliceo.online
 - Resultados interactivos del benchmark: https://progettosiliceo.online/faro.html

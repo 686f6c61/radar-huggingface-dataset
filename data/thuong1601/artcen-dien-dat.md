@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Artcen-dien-dat es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario Thuong1601 bajo licencia Apache 2.0. Con 1.720.574.976 parámetros totales (aproximadamente 1,72 mil millones) según los pesos en formato safetensors, se sitúa en la franja de los modelos pequenos, adecuado para despliegue en hardware modesto o en entornos con restricciones de recursos. El repositorio tiene un tamano de 1,1 GB y distribuye pesos en formato GGUF, lo que indica que esta pensado para inferencia eficiente mediante llama.cpp y herramientas compatibles.
+Artcen-dien-dat es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario Thuong1601 bajo licencia Apache 2.0. Con 1.720.574.976 parámetros totales (aproximadamente 1,72 mil millones) según los pesos en formato safetensors, se sitúa en la franja de los modelos pequenos, adecuado para despliegue en hardware modesto o en entornos con restricciones de recursos. El repositorio tiene un tamano de 1,1 GB y distribuye pesos en formato GGUF, lo que indica que esta pensado para inferencia eficiente mediante llama.cpp y herramientas compatibles.
 
-El modelo se presenta con la etiqueta `conversational`, lo que sugiere un ajuste orientado a dialogos multi-turno, y con `endpoints_compatible`, lo que apunta a que puede servirse a traves de APIs compatibles con el formato de HuggingFace. La model card publicada es practicamente vacia: solo declara la licencia Apache 2.0, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o rendimiento. El nombre del repositorio incluye terminos en vietnamita ("dien dat", que puede traducirse como "expresar" o "formular"), aunque no hay confirmacion oficial de que el modelo este especializado en ese idioma.
+El modelo se presenta con la etiqueta `conversational`, lo que sugiere un ajuste orientado a dialogos multi-turno, y con `endpoints_compatible`, lo que apunta a que puede servirse a traves de APIs compatibles con el formato de Hugging Face. La model card publicada es practicamente vacia: solo declara la licencia Apache 2.0, sin informacion sobre arquitectura, datos de entrenamiento, idiomas o rendimiento. El nombre del repositorio incluye terminos en vietnamita ("dien dat", que puede traducirse como "expresar" o "formular"), aunque no hay confirmacion oficial de que el modelo este especializado en ese idioma.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: se trata de una publicacion reciente (octubre de 2026 segun los metadatos), con muy pocas descargas (68) y ningun "like", sin documentacion tecnica que permita verificar sus capacidades. Es util como ejemplo de modelo conversacional compacto en formato GGUF para experimentacion local, pero no como base para produccion sin una evaluacion previa por parte del equipo que lo adopte.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el numero de to
 ## Capacidades
 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational`, por lo que se espera que gestione dialogos multi-turno, aunque no hay ejemplos ni evaluaciones publicadas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse detras de APIs compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse detras de APIs compatibles con el ecosistema de Hugging Face.
 - Inferencia en formato GGUF: los pesos estan preparados para motores como llama.cpp, lo que facilita su ejecucion en CPU y GPU de gama baja.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponible; no hay evidencia documentada de ninguna de ellas.
 - Soporte multilingue: no disponible; no se declaran idiomas en la model card.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parametros (1,72 mil millones), una cuantizacion de 4 bits requeriria del orden de 1-1,5 GB de memoria, y una de 8 bits alrededor de 2 GB, aunque estas cifras no estan confirmadas por el autor.
 - GPU recomendadas: no disponible. Por tamano, cabria esperar que funcione en GPUs de consumo como RTX 3060, RTX 4060 o superiores, pero no hay validacion publicada.
 - Cabe en GPU de consumo: probablemente si, dado el tamano, pero sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp y herramientas que consumen GGUF (Ollama, LM Studio, entre otras); la etiqueta `endpoints_compatible` sugiere soporte para servidores de inferencia compatibles con HuggingFace, aunque no se detalla cuales.
+- Opciones de despliegue: llama.cpp y herramientas que consumen GGUF (Ollama, LM Studio, entre otras); la etiqueta `endpoints_compatible` sugiere soporte para servidores de inferencia compatibles con Hugging Face, aunque no se detalla cuales.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ La comparacion pone de manifiesto que Artcen-dien-dat carece de la documentacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thuong1601/artcen-dien-dat
+- Repositorio en Hugging Face: https://huggingface.co/Thuong1601/artcen-dien-dat
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

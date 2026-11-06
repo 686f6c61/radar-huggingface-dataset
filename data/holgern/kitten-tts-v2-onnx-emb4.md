@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Kitten TTS v2 ONNX emb4 (este) | TTS | ONNX | Stellon Labs Community License | no disponible | Repositorio HuggingFace con 0 descargas |
+| Kitten TTS v2 ONNX emb4 (este) | TTS | ONNX | Stellon Labs Community License | no disponible | Repositorio Hugging Face con 0 descargas |
 | Modelos TTS comerciales (p. ej. ElevenLabs, Azure TTS) | TTS | API | Propietaria | Múltiples idiomas | Servicio en la nube |
 | Modelos TTS open source (p. ej. Coqui TTS, Piper) | TTS | PyTorch / ONNX | Varía (MPL, MIT) | Múltiples idiomas | Repositorios públicos con amplia adopción |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento del modelo como para establecer una compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/holgern/kitten-tts-v2-onnx-emb4
+- Repositorio Hugging Face: https://huggingface.co/holgern/kitten-tts-v2-onnx-emb4
 - Licencia (referenciada en la model card): fichero LICENSE dentro del repositorio
 - Modelo base Kitten TTS v2: no disponible en la información proporcionada
 - Paper, blog o demo oficial: no disponible

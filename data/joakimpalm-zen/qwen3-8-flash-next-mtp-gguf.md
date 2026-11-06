@@ -18,7 +18,7 @@ La relevancia de esta publicación es práctica: permite acelerar la inferencia 
 | Longitud de contexto | no disponible (depende del tronco; en las pruebas se usaron prompts de 512 y 4K tokens con `-c 8192`) |
 | Tipos de cuantizacion | Q8_0 para la cabeza; el tronco incluido es IQ3_S (GSQ-RCO) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (un fichero para la cabeza; cuatro partes para el tronco con cabeza) |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ No se dispone de información sobre cabezas MTP comparables publicadas como fich
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joakimpalm-Zen/Qwen3.8-Flash-Next-MTP-GGUF
+- Hugging Face: https://huggingface.co/Joakimpalm-Zen/Qwen3.8-Flash-Next-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Tronco IQ3_S de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF

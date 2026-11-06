@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CoreNLP Italian es el paquete de modelos linguisticos de CoreNLP para italiano, publicado por Stanford NLP (stanfordnlp) en HuggingFace. No es un modelo generativo ni un LLM: es el conjunto de componentes estadisticos y neuronales que el toolkit CoreNLP en Java utiliza para producir anotaciones linguisticas sobre texto en italiano, incluyendo limites de tokens y frases, categorias gramaticales, entidades nombradas, valores numericos y temporales, analisis de dependencias y de constituyentes, correferencia, sentimiento, atribucion de citas y relaciones.
+CoreNLP Italian es el paquete de modelos linguisticos de CoreNLP para italiano, publicado por Stanford NLP (stanfordnlp) en Hugging Face. No es un modelo generativo ni un LLM: es el conjunto de componentes estadisticos y neuronales que el toolkit CoreNLP en Java utiliza para producir anotaciones linguisticas sobre texto en italiano, incluyendo limites de tokens y frases, categorias gramaticales, entidades nombradas, valores numericos y temporales, analisis de dependencias y de constituyentes, correferencia, sentimiento, atribucion de citas y relaciones.
 
 El repositorio, de 0,4 GB, fue creado el 2 de marzo de 2022 y su ultima actualizacion registrada es del 27 de septiembre de 2026. La model card es auto-generada mediante el script `hugging_corenlp.py` del repositorio `stanfordnlp/huggingface-models`, por lo que no incluye detalles especificos sobre arquitectura, datos de entrenamiento ni metricas de evaluacion.
 
-Su relevancia actual es la de un componente de infraestructura: permite incorporar procesamiento linguistico de italiano en pipelines basados en la JVM, en servidores CoreNLP o en sistemas de anotacion a gran escala. La adopcion en HuggingFace es marginal (0 descargas y 1 like en el momento de la consulta) y la licencia GPL-2.0 condiciona su integracion en productos propietarios.
+Su relevancia actual es la de un componente de infraestructura: permite incorporar procesamiento linguistico de italiano en pipelines basados en la JVM, en servidores CoreNLP o en sistemas de anotacion a gran escala. La adopcion en Hugging Face es marginal (0 descargas y 1 like en el momento de la consulta) y la licencia GPL-2.0 condiciona su integracion en productos propietarios.
 
 ## Especificaciones tecnicas
 
@@ -84,12 +84,12 @@ Las caracteristicas de las alternativas no forman parte de la informacion propor
 - Licencia GPL-2.0: es una licencia copyleft. Su integracion en productos propietarios o en servicios distribuidos exige revisar las obligaciones de licencia con asesoramiento legal; no es apta sin analisis previo para software cerrado.
 - Dependencia del ecosistema Java y de la version de CoreNLP: los modelos estan ligados a las versiones del toolkit, lo que puede complicar las actualizaciones.
 - Repositorio auto-generado: la model card no aporta documentacion tecnica propia y remite a la documentacion general del proyecto.
-- Adopcion muy baja en HuggingFace (0 descargas, 1 like), lo que reduce la probabilidad de encontrar soporte de la comunidad.
+- Adopcion muy baja en Hugging Face (0 descargas, 1 like), lo que reduce la probabilidad de encontrar soporte de la comunidad.
 - El repositorio no contiene un modelo generativo: no debe evaluarse con criterios de LLM (razonamiento, generacion, context window de tokens).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/corenlp-italian
+- Hugging Face: https://huggingface.co/stanfordnlp/corenlp-italian
 - Sitio web de CoreNLP: https://stanfordnlp.github.io/CoreNLP
 - Repositorio GitHub de CoreNLP: https://github.com/stanfordnlp/CoreNLP
-- Repositorio de scripts de publicacion en HuggingFace (mencionado en la model card): https://github.com/stanfordnlp/huggingface-models
+- Repositorio de scripts de publicacion en Hugging Face (mencionado en la model card): https://github.com/stanfordnlp/huggingface-models

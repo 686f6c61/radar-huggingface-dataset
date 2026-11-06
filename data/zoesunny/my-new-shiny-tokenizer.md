@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zoesunny/my-new-shiny-tokenizer` es un modelo de tokenizer publicado en HuggingFace por el usuario `zoesunny`. A pesar de estar etiquetado como compatible con la librería `transformers`, la información disponible es extremadamente limitada: no se indica la arquitectura del tokenizer (BPE, WordPiece, Unigram, etc.), ni el tamaño del vocabulario, ni los datos de entrenamiento. La model card es una plantilla generada automáticamente por HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se han publicado resultados de benchmarks, no se especifica licencia ni idiomas soportados, y el modelo no tiene descargas ni likes. En consecuencia, no es posible evaluar sus capacidades técnicas ni su relevancia práctica.
+`zoesunny/my-new-shiny-tokenizer` es un modelo de tokenizer publicado en Hugging Face por el usuario `zoesunny`. A pesar de estar etiquetado como compatible con la librería `transformers`, la información disponible es extremadamente limitada: no se indica la arquitectura del tokenizer (BPE, WordPiece, Unigram, etc.), ni el tamaño del vocabulario, ni los datos de entrenamiento. La model card es una plantilla generada automáticamente por Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se han publicado resultados de benchmarks, no se especifica licencia ni idiomas soportados, y el modelo no tiene descargas ni likes. En consecuencia, no es posible evaluar sus capacidades técnicas ni su relevancia práctica.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables porque se desconocen las caracteristicas tecnicas de este tokenizer. Existen otros repositorios en HuggingFace con el mismo nombre creados por otros usuarios, pero no se ha establecido ninguna relacion entre ellos.
+No disponible. No se han identificado modelos comparables porque se desconocen las caracteristicas tecnicas de este tokenizer. Existen otros repositorios en Hugging Face con el mismo nombre creados por otros usuarios, pero no se ha establecido ninguna relacion entre ellos.
 
 ## Limitaciones y advertencias
 
@@ -69,4 +69,4 @@ No disponible. No se han identificado modelos comparables porque se desconocen l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoesunny/my-new-shiny-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/zoesunny/my-new-shiny-tokenizer

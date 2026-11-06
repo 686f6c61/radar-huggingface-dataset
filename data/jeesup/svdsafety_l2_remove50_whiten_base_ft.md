@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svdsafety_l2_remove50_whiten_base_ft` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se construye a partir de `meta-llama/Llama-2-7b-chat-hf`, al que se aplica una compresión SVD-LLM con eliminación del 50,00 % de los parámetros densos, seguida de un presupuesto de restauración de componentes SVD del 0,000 % (es decir, cero componentes restaurados y cero componentes sustituidos).
+`svdsafety_l2_remove50_whiten_base_ft` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se construye a partir de `meta-llama/Llama-2-7b-chat-hf`, al que se aplica una compresión SVD-LLM con eliminación del 50,00 % de los parámetros densos, seguida de un presupuesto de restauración de componentes SVD del 0,000 % (es decir, cero componentes restaurados y cero componentes sustituidos).
 
 El artefacto forma parte de un estudio sobre cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes lo repara mejor. Según la propia model card, es una celda de una rejilla que cruza reglas de selección y presupuestos, y varias celdas de esa rejilla están deliberadamente degradadas en seguridad respecto a Llama-2-7b-chat. No es, por tanto, un asistente de propósito general ni un modelo listo para producción.
 
@@ -27,7 +27,7 @@ Datos adicionales de procedencia declarados en la model card: compresión SVD-LL
 
 La base es la arquitectura Llama 2 en configuración 7B-chat: transformer decoder-only con normalización RMSNorm, activación SwiGLU, RoPE para posiciones y atención causal. Sobre esa base se aplica SVD-LLM, una técnica que trunca las matrices de pesos sustituyéndolas por su aproximación de rango reducido a partir de la descomposición en valores singulares, de modo que se conservan únicamente los componentes principales y se descartan el resto. En este checkpoint el truncamiento elimina el 50,00 % de los parámetros densos y no se restaura ningún componente SVD (presupuesto 0,000 %).
 
-El nombre del artefacto incluye el sufijo `ft`, y las etiquetas de HuggingFace lo marcan como `base_model:finetune:meta-llama/Llama-2-7b-chat-hf`, lo que indica que hubo algún ajuste fino posterior a la compresión. Sin embargo, la model card no documenta el corpus de ajuste, el número de tokens, la composición del dataset ni si se emplearon técnicas de alineación adicionales como RLHF o DPO; todo ello debe considerarse **no disponible**. La única información reproducible es la semilla (42) y los parámetros de la rejilla de compresión. La innovación técnica relevante no es arquitectónica sino metodológica: el checkpoint existe como sujeto experimental para cuantificar el daño a la seguridad causado por la compresión y evaluar reglas de selección de componentes.
+El nombre del artefacto incluye el sufijo `ft`, y las etiquetas de Hugging Face lo marcan como `base_model:finetune:meta-llama/Llama-2-7b-chat-hf`, lo que indica que hubo algún ajuste fino posterior a la compresión. Sin embargo, la model card no documenta el corpus de ajuste, el número de tokens, la composición del dataset ni si se emplearon técnicas de alineación adicionales como RLHF o DPO; todo ello debe considerarse **no disponible**. La única información reproducible es la semilla (42) y los parámetros de la rejilla de compresión. La innovación técnica relevante no es arquitectónica sino metodológica: el checkpoint existe como sujeto experimental para cuantificar el daño a la seguridad causado por la compresión y evaluar reglas de selección de componentes.
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svdsafety_l2_remove50_whiten_base_ft (este) | 6.738.415.616 según safetensors; fracción declarada 0,4999 | no disponible | SVD-LLM al 50,00 %, restauración 0,000 % | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (base) | ~6,74 mil millones | 4096 tokens (según el modelo base; no confirmado en la información de este repositorio) | ninguna | Llama 2 Community License | HuggingFace, ampliamente distribuido |
+| svdsafety_l2_remove50_whiten_base_ft (este) | 6.738.415.616 según safetensors; fracción declarada 0,4999 | no disponible | SVD-LLM al 50,00 %, restauración 0,000 % | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (base) | ~6,74 mil millones | 4096 tokens (según el modelo base; no confirmado en la información de este repositorio) | ninguna | Llama 2 Community License | Hugging Face, ampliamente distribuido |
 | Otras celdas de la misma rejilla de estudio | no disponible | no disponible | distintas reglas de selección y presupuestos de restauración | Llama 2 Community License | no disponible |
 | Otras técnicas de compresión sobre Llama-2-7b (poda, cuantización) | no disponible | no disponible | no disponible | dependiente de cada artefacto | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (benchmarks de utilidad o de seg
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_base_ft
+- Página del modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_base_ft
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso incluidas en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (rutas relativas dentro de https://huggingface.co/Jeesup/svdsafety_l2_remove50_whiten_base_ft)
 - Paper de Llama 2 (referencia del modelo base): https://arxiv.org/abs/2307.09288

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TRELLIS es un modelo generativo de gran tamano orientado a la creacion de activos 3D. La variante publicada en este repositorio de HuggingFace bajo el identificador `UrNinja/TRELLIS` corresponde, segun su propia model card, a la version condicionada por imagen del modelo TRELLIS original, es decir, aquella que toma una o varias imagenes como entrada para generar geometria (y, en el proyecto original, tambien apariencia) en tres dimensiones.
+TRELLIS es un modelo generativo de gran tamano orientado a la creacion de activos 3D. La variante publicada en este repositorio de Hugging Face bajo el identificador `UrNinja/TRELLIS` corresponde, segun su propia model card, a la version condicionada por imagen del modelo TRELLIS original, es decir, aquella que toma una o varias imagenes como entrada para generar geometria (y, en el proyecto original, tambien apariencia) en tres dimensiones.
 
-El repositorio tiene un tamano de 3,3 GB, esta publicado bajo licencia MIT y declara el ingles como unico idioma. Se trata de una publicacion sin traccion: registra 0 descargas y 0 likes, y fue creada y actualizada el 10 de octubre de 2026 (fechas tal como figuran en HuggingFace). El pipeline no esta declarado en la ficha.
+El repositorio tiene un tamano de 3,3 GB, esta publicado bajo licencia MIT y declara el ingles como unico idioma. Se trata de una publicacion sin traccion: registra 0 descargas y 0 likes, y fue creada y actualizada el 10 de octubre de 2026 (fechas tal como figuran en Hugging Face). El pipeline no esta declarado en la ficha.
 
 La relevancia de este tipo de modelos radica en que la generacion de mallas 3D a partir de imagenes reduce drasticamente el coste de produccion de activos para videojuegos, comercio electronico, realidad aumentada y simulacion. La model card del repositorio es extremadamente escueta y no aporta informacion sobre arquitectura, entrenamiento, benchmarks ni requisitos, por lo que buena parte de los datos tecnicos de esta ficha figuran como no disponibles.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| UrNinja/TRELLIS | Generacion 3D condicionada por imagen | no disponible | no aplica | MIT | HuggingFace | no disponibles |
+| UrNinja/TRELLIS | Generacion 3D condicionada por imagen | no disponible | no aplica | MIT | Hugging Face | no disponibles |
 | TRELLIS original (proyecto de origen) | Generacion 3D texto/imagen a 3D | no disponible en esta ficha | no aplica | no disponible en esta ficha | repositorio publico | no disponibles |
 | Alternativas del mismo nicho (Hunyuan3D, TripoSG, Rodin) | Generacion 3D | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible en esta ficha | no disponibles |
 
@@ -82,6 +82,6 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UrNinja/TRELLIS
+- Hugging Face: https://huggingface.co/UrNinja/TRELLIS
 - Repositorio del proyecto TRELLIS original (referencia externa, no citada en la model card): https://github.com/microsoft/TRELLIS
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

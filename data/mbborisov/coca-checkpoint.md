@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mbborisov/coca-checkpoint es un repositorio de HuggingFace publicado por el usuario Mbborisov que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de retrieval (recuperación de información). No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como una base pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El repositorio incluye el archivo `pipeline.py` con la definición del modelo y un punto de entrada ejecutable, además de `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+Mbborisov/coca-checkpoint es un repositorio de Hugging Face publicado por el usuario Mbborisov que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de retrieval (recuperación de información). No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como una base pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El repositorio incluye el archivo `pipeline.py` con la definición del modelo y un punto de entrada ejecutable, además de `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 La configuración arquitectónica declarada es de escala "base", con atención dilatada (dilated attention), fusión de modalidades mediante descomposición de Tucker, activación swish y normalización ScaleNorm. Los metadatos de safetensors registran 16.576 parámetros y el tamaño del repositorio es de 0,0 GB, cifras coherentes con un checkpoint de prueba más que con un modelo base entrenado a gran escala; existe por tanto una inconsistencia entre la etiqueta "base" de la model card y el recuento real de parámetros.
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mbborisov/coca-checkpoint | 16.576 | no disponible | Sin benchmarks (no entrenado) | BSD-3-Clause | HuggingFace |
+| Mbborisov/coca-checkpoint | 16.576 | no disponible | Sin benchmarks (no entrenado) | BSD-3-Clause | Hugging Face |
 | Alternativas de retrieval de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mbborisov/coca-checkpoint
+- Hugging Face: https://huggingface.co/Mbborisov/coca-checkpoint
 - La búsqueda web realizada no ha devuelto ningún enlace técnico relevante (papers, blogs, repositorios o demos) asociado a este modelo.

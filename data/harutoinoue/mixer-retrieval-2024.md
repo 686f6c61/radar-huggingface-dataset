@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mixer-retrieval-2024 es un repositorio publicado por el usuario harutoinoue en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura **Mixer** orientada a tareas de **retrieval** (recuperación). Se distribuye bajo licencia BSD-3-Clause y su checkpoint tiene únicamente **33.088 parámetros**, lo que lo sitúa en una escala "nano" declarada explícitamente por el autor como apta para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
+mixer-retrieval-2024 es un repositorio publicado por el usuario harutoinoue en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura **Mixer** orientada a tareas de **retrieval** (recuperación). Se distribuye bajo licencia BSD-3-Clause y su checkpoint tiene únicamente **33.088 parámetros**, lo que lo sitúa en una escala "nano" declarada explícitamente por el autor como apta para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
 
 El propio autor es tajante en la model card: no se trata de un release preentrenado listo para producción ni de un checkpoint con benchmarks publicados. El fichero `model.safetensors` es una **inicialización válida** para pruebas de humo, no un modelo entrenado. El repositorio incluye además `pipeline.py` (artefacto principal con ejemplo ejecutable o punto de entrada de entrenamiento), `config.json` y `training_args.json`.
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| harutoinoue/mixer-retrieval-2024 | 33.088 | no disponible | BSD-3-Clause | no publicado | HuggingFace, checkpoint sin entrenar |
+| harutoinoue/mixer-retrieval-2024 | 33.088 | no disponible | BSD-3-Clause | no publicado | Hugging Face, checkpoint sin entrenar |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harutoinoue/mixer-retrieval-2024
+- Hugging Face: https://huggingface.co/harutoinoue/mixer-retrieval-2024
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante. Las búsquedas realizadas devolvieron exclusivamente páginas sobre la película *The Accountant* (título en inglés que coincide parcialmente con el término de búsqueda), sin relación alguna con el modelo.
 - Paper, blog, repositorio adicional o demo: no disponibles en la información proporcionada.

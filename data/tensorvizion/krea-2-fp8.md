@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo. La diferencia de tamaño sugi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TensorVizion/Krea-2-FP8
+- Repositorio Hugging Face: https://huggingface.co/TensorVizion/Krea-2-FP8
 - Versión FP8 de AlperKTS: https://huggingface.co/AlperKTS/Krea2_FP8
 - Fork con runtime FP8 y Web UI: https://github.com/SeiKasahara/krea2-webui
 - Página de Tensor.Art con un checkpoint basado en Krea2: https://tensor.art/models/1033606069999374316/Masterpiece-8-steps-Krea2

@@ -26,7 +26,7 @@ Su relevancia práctica es limitada y debe evaluarse con cautela: el repositorio
 | Dataset de entrenamiento | `Bluebarrels/easylm-training-corpus`, fichero `adapter_security_chatml.jsonl`, 35 turnos |
 | Modelo base | `prism-ml/Ternary-Bonsai-2-9B-gguf` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-17 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-17 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ Nota: los datos de BitNet b1.58 2B4T y Qwen3-8B provienen de conocimiento genera
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Bluebarrels/easylm-security-bonsai-2-9b
+- Adaptador en Hugging Face: https://huggingface.co/Bluebarrels/easylm-security-bonsai-2-9b
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Base MLC/WebGPU citada: https://huggingface.co/mlc-ai/Qwen3.5-9B-q4f16_1-MLC
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bluebarrels/easylm-training-corpus

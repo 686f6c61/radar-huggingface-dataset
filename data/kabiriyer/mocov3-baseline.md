@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KabirIyer/mocov3-baseline es un repositorio de HuggingFace que contiene una implementación propia y ejecutable de MoCo v3 orientada a tareas múltiples (multitask), publicada con licencia Apache 2.0. El autor la describe explícitamente como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio se centra en código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
+KabirIyer/mocov3-baseline es un repositorio de Hugging Face que contiene una implementación propia y ejecutable de MoCo v3 orientada a tareas múltiples (multitask), publicada con licencia Apache 2.0. El autor la describe explícitamente como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio se centra en código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
 
 La configuración declarada corresponde a la escala "xlarge" e incorpora atención flash, fusión por co-attention, activación ReLU y normalización InstanceNorm. El recetario de entrenamiento por defecto usa el optimizador Adafactor con un schedule polinómico, valores que el propio autor aclara que son puntos de partida en el script y no evidencia de una ejecución completada.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con un r
 
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicializacion permite verificar que un bucle de entrenamiento o de fine-tuning arranca, carga pesos y ejecuta un paso hacia delante sin errores, antes de comprometer recursos de computo.
 - Baseline de comparacion en estudios de ablacion: sirve como punto de referencia de capacidad minima o de arquitectura alternativa cuando se evaluan variantes de aprendizaje auto-supervisado, siempre que se igualen datos, presupuesto de ajuste y semillas, tal como recomienda el propio autor.
-- Material didactico para implementaciones de MoCo v3: al ser codigo propio y explicito (`finetune.py` como artefacto principal), es util para estudiar como se estructura una implementacion de contraste con momentum encoder y co-attention fuera de las APIs estandar de HuggingFace.
+- Material didactico para implementaciones de MoCo v3: al ser codigo propio y explicito (`finetune.py` como artefacto principal), es util para estudiar como se estructura una implementacion de contraste con momentum encoder y co-attention fuera de las APIs estandar de Hugging Face.
 - Validacion de infraestructura de entrenamiento distribuido o mixta: se puede usar para comprobar la compatibilidad de flash attention, Adafactor y schedules polinomicos en un entorno concreto antes de lanzar un experimento a mayor escala.
 - Prototipado de investigacion en multitarea: la configuracion de fusion por co-attention puede servir de plantilla para experimentar con combinaciones de tareas, asumiendo que habra que entrenar desde cero.
 - Verificacion de herramientas internas de evaluacion: al no haber metricas publicadas, el repositorio es adecuado para probar que un arnes de evaluacion propio (conjunto de validacion especifico, tres semillas y baseline de capacidad equiparable) funciona de extremo a extremo.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KabirIyer/mocov3-baseline | 24.832 (metadatos safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| KabirIyer/mocov3-baseline | 24.832 (metadatos safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | MoCo v3 original (implementacion de referencia de Facebook AI Research, Chen et al., 2021) | no disponible en la informacion proporcionada | no aplica | resultados publicados en el paper original | licencia del repositorio original, no indicada aqui | repositorio publico de investigacion |
 | Otras variantes auto-supervisadas por contraste (por ejemplo DINO o SimCLR) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible | no disponible |
 
@@ -75,7 +75,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, segun reconoce el propio autor.
 - No se han publicado benchmarks ni evaluaciones de ningun tipo; cualquier cifra que circule atribuida a este modelo seria inventada.
 - Existe una incoherencia manifiesta entre la escala declarada ("xlarge") y los 24.832 parametros de los metadatos de safetensors. Conviene tratar la etiqueta de escala como meramente nominal.
-- La arquitectura no es estandar, por lo que las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito. Esto complica la integracion en pipelines convencionales.
+- La arquitectura no es estandar, por lo que las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito. Esto complica la integracion en pipelines convencionales.
 - No se documentan sesgos conocidos, pero tampoco se ha realizado analisis alguno al respecto; la ausencia de datos no equivale a ausencia de sesgo.
 - Riesgo de alucinacion: no aplicable en el sentido de un modelo de lenguaje, al no tratarse de un generador de texto y no haber tokenizador publicado. En cualquier caso, un modelo sin entrenar produce resultados sin significado.
 - No se especifican limitaciones de contexto ni de idioma porque no hay informacion al respecto.
@@ -85,5 +85,5 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KabirIyer/mocov3-baseline
+- Modelo en Hugging Face: https://huggingface.co/KabirIyer/mocov3-baseline
 - No se han encontrado enlaces adicionales relevantes en la busqueda web realizada: los resultados devueltos correspondian a hilos de un foro en aleman sobre juegos de rol, sin relacion alguna con el modelo.

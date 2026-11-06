@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Carballo-Legal-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Carballo-Legal-GGUF
 - Modelo base: https://huggingface.co/proxectonos/Carballo-Legal
 - Dataset de entrenamiento: https://huggingface.co/datasets/proxectonos/corpus_dominio_legal_administrativo
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Carballo-Legal-GGUF

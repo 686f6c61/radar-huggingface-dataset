@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la prueba de enrutamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| laya-typed-decisions-openvino (esta copia) | Encoder ModernBERT-large + cabeza tipada, OpenVINO fp16 | no disponible | definido por `max_len` (valor no disponible) | 60,8 % de acierto, 148 ms en Iris Xe | Apache-2.0 | HuggingFace, formato OpenVINO IR |
-| convaiinnovations/laya (original, `typed-decisions`) | Encoder ModernBERT-large + cabeza tipada, PyTorch | no disponible | definido por `max_len` (valor no disponible) | 60,8 % de acierto, 713 ms en CPU | Apache-2.0 | HuggingFace, pesos PyTorch |
+| laya-typed-decisions-openvino (esta copia) | Encoder ModernBERT-large + cabeza tipada, OpenVINO fp16 | no disponible | definido por `max_len` (valor no disponible) | 60,8 % de acierto, 148 ms en Iris Xe | Apache-2.0 | Hugging Face, formato OpenVINO IR |
+| convaiinnovations/laya (original, `typed-decisions`) | Encoder ModernBERT-large + cabeza tipada, PyTorch | no disponible | definido por `max_len` (valor no disponible) | 60,8 % de acierto, 713 ms en CPU | Apache-2.0 | Hugging Face, pesos PyTorch |
 | jiwo-0.8b | no disponible | 0,8 B (según el nombre) | no disponible | 84,5 % de acierto, latencia no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con otras alternativas de clasificación con opciones dinámicas.
@@ -104,7 +104,7 @@ No se dispone de información suficiente para comparar con otras alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsDigvijaysing/laya-typed-decisions-openvino
+- Modelo en Hugging Face: https://huggingface.co/itsDigvijaysing/laya-typed-decisions-openvino
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Revisión del modelo base utilizada: `7b928d828b7b0e022f929d9bd2e44165aa270148` (Laya 0.4.15)
 - OpenVINO: no se proporciona enlace en la información disponible

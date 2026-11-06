@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-q6 es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot microduck de Pollen Robotics. El autor del repositorio en HuggingFace es qualiadev y el modelo se publica bajo la librería `microduck` con el pipeline declarado como `robotics`. No se trata de un modelo de lenguaje: es un controlador que mapea una observación de 61 dimensiones a 14 acciones discretas o continuas ejecutadas a 50 Hz, pensado para cargarse en una ranura de política del robot y ejecutarse de forma continua.
+microduck-sprint-q6 es una política de control motriz entrenada mediante aprendizaje por refuerzo para el robot microduck de Pollen Robotics. El autor del repositorio en Hugging Face es qualiadev y el modelo se publica bajo la librería `microduck` con el pipeline declarado como `robotics`. No se trata de un modelo de lenguaje: es un controlador que mapea una observación de 61 dimensiones a 14 acciones discretas o continuas ejecutadas a 50 Hz, pensado para cargarse en una ranura de política del robot y ejecutarse de forma continua.
 
 La model card del autor describe la política como «perpetua»: una vez cargada, se ejecuta indefinidamente hasta que se le indique lo contrario, comportándose como un tipo de marcha o *gait* predefinido. El paquete incluye un fichero `policy.onnx` con el normalizador de observaciones integrado, de modo que la política consume observaciones en bruto sin preprocesado externo, y un `manifest.json` que sigue el esquema 2 del manifiesto de políticas de microduck.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye datos de otras política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-sprint-q6
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-sprint-q6
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo: https://github.com/pollen-robotics/microduck_rl
 - Rama de entrenamiento: https://github.com/pollen-robotics/microduck_rl/tree/sprint/race

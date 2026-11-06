@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veer069/MLAgents-Pyramids es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la libreria Unity ML-Agents. No se trata de un modelo de lenguaje: es una politica neuronal que controla un agente dentro del entorno "Pyramids" de Unity ML-Agents, un escenario de ejemplo de la propia libreria. El autor del repositorio es el usuario Veer069 y el artefacto se publica en HuggingFace Hub con la libreria `ml-agents`.
+Veer069/MLAgents-Pyramids es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la libreria Unity ML-Agents. No se trata de un modelo de lenguaje: es una politica neuronal que controla un agente dentro del entorno "Pyramids" de Unity ML-Agents, un escenario de ejemplo de la propia libreria. El autor del repositorio es el usuario Veer069 y el artefacto se publica en Hugging Face Hub con la libreria `ml-agents`.
 
 El modelo resuelve una tarea concreta de control: aprender una politica que maximice la recompensa acumulada en el entorno Pyramids. Es relevante en el contexto del ecosistema ML-Agents porque ilustra el flujo completo de entrenamiento, registro en TensorBoard, exportacion a ONNX y publicacion en el Hub, ademas de permitir reanudar entrenamientos o servir como punto de partida para transfer learning.
 
@@ -44,7 +44,7 @@ La model card no especifica el numero de pasos de entrenamiento, la composicion 
 - Reanudacion de entrenamientos largos: un investigador puede cargar el modelo con `mlagents-learn --resume` para continuar el entrenamiento desde el punto guardado en lugar de empezar de cero, ahorrando tiempo de simulacion.
 - Demostracion interactiva en navegador: integrado en el Space de Unity ML-Agents, permite cargar el fichero .nn o .onnx y observar al agente jugando sin instalar Unity, util para divulgacion y validacion rapida.
 - Transfer learning a entornos relacionados: la politica entrenada en Pyramids puede servir de inicializacion para entornos de navegacion o recoleccion con espacio de observacion similar, reduciendo el numero de pasos necesarios para converger.
-- Docencia y tutoriales de ML-Agents: el repositorio ejemplifica el ciclo completo entrenar, registrar con TensorBoard, exportar a ONNX y publicar en HuggingFace Hub, por lo que es adecuado como material practico en cursos de RL.
+- Docencia y tutoriales de ML-Agents: el repositorio ejemplifica el ciclo completo entrenar, registrar con TensorBoard, exportar a ONNX y publicar en Hugging Face Hub, por lo que es adecuado como material practico en cursos de RL.
 - Pruebas de infraestructura de inferencia: al ser un modelo pequeno y exportable a ONNX, resulta util para validar pipelines de serving, latencia y compatibilidad de runtimes ONNX sin necesidad de hardware especializado.
 - Reproduccion de experimentos: permite a terceros verificar los resultados del autor reentrenando o evaluando el agente bajo las mismas condiciones del entorno Pyramids.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Entorno | Algoritmo | Contexto / aplicacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Veer069/MLAgents-Pyramids | Pyramids | PPO | Control de agente RL | no disponible | HuggingFace Hub |
-| ThomasSimonini/MLAgents-Pyramids | Pyramids | PPO | Control de agente RL | no disponible | HuggingFace Hub |
-| Otros agentes del Hub `unity/ML-Agents-*` | varios (Pyramids, Basic, Crawler, etc.) | PPO / SAC | Control de agente RL | no disponible | HuggingFace Hub |
+| Veer069/MLAgents-Pyramids | Pyramids | PPO | Control de agente RL | no disponible | Hugging Face Hub |
+| ThomasSimonini/MLAgents-Pyramids | Pyramids | PPO | Control de agente RL | no disponible | Hugging Face Hub |
+| Otros agentes del Hub `unity/ML-Agents-*` | varios (Pyramids, Basic, Crawler, etc.) | PPO / SAC | Control de agente RL | no disponible | Hugging Face Hub |
 
 La comparacion detallada con parametros, contexto y rendimiento no esta disponible porque ninguno de los repositorios comparables publica especificaciones de arquitectura ni metricas de recompensa en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ La comparacion detallada con parametros, contexto y rendimiento no esta disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/MLAgents-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Veer069/MLAgents-Pyramids
 - Space de demostracion (Unity ML-Agents Pyramids): https://huggingface.co/spaces/unity/ML-Agents-Pyramids
 - Repositorio Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Documentacion de la integracion HuggingFace + ML-Agents: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de la integracion Hugging Face + ML-Agents: https://github.com/huggingface/ml-agents#get-started

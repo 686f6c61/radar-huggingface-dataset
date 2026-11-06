@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetroArter es un repositorio publicado en HuggingFace por el usuario RuiGamer020 bajo la etiqueta de licencia openrail. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene informacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia. No hay descripcion del modelo, ni del problema que resuelve, ni de su origen.
+RetroArter es un repositorio publicado en Hugging Face por el usuario RuiGamer020 bajo la etiqueta de licencia openrail. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene informacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia. No hay descripcion del modelo, ni del problema que resuelve, ni de su origen.
 
 El repositorio ocupa aproximadamente 0,1 GB (unos 100 MB), un tamano compatible con pesos de un modelo pequeno o con un conjunto parcial de ficheros, pero no se dispone de informacion que confirme que se trate de pesos de un modelo de lenguaje, de un adaptador, de un checkpoint parcial o de otro tipo de artefacto. Tampoco hay pipeline declarado, idiomas soportados ni etiquetas de tarea.
 
@@ -23,7 +23,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace disponibles. No hay datos sobre tipo de red (transformer, MoE, SSM o hibrida), dimension del modelo, numero de capas, mecanismo de atencion ni estrategia de tokenizacion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face disponibles. No hay datos sobre tipo de red (transformer, MoE, SSM o hibrida), dimension del modelo, numero de capas, mecanismo de atencion ni estrategia de tokenizacion.
 
 Tampoco existe informacion sobre el proceso de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste (SFT, RLHF, DPO) ni ninguna innovacion tecnica asociada. El unico dato objetivo es el tamano del repositorio (0,1 GB) y la etiqueta de region `us`, que no aportan informacion sobre arquitectura ni entrenamiento.
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuiGamer020/RetroArter
+- Hugging Face: https://huggingface.co/RuiGamer020/RetroArter
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los unicos resultados devueltos fueron paginas comerciales de routers y documentacion de soporte de Chromecast, sin ninguna relacion con RetroArter, por lo que no se incluyen como referencias.

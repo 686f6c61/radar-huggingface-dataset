@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `uuzzrm/README` en HuggingFace no contiene un modelo de IA, sino el perfil personal de Ruiming Zhao, un ingeniero que trabaja en sistemas de agentes de IA, entrenamiento de modelos de imagen y herramientas para desarrolladores. El contenido es una tarjeta de presentación profesional con enlaces a proyectos open source y a su laboratorio Prysai. No hay pesos, arquitectura ni ningún artefacto de modelo disponible en este repositorio.
+El repositorio `uuzzrm/README` en Hugging Face no contiene un modelo de IA, sino el perfil personal de Ruiming Zhao, un ingeniero que trabaja en sistemas de agentes de IA, entrenamiento de modelos de imagen y herramientas para desarrolladores. El contenido es una tarjeta de presentación profesional con enlaces a proyectos open source y a su laboratorio Prysai. No hay pesos, arquitectura ni ningún artefacto de modelo disponible en este repositorio.
 
 Por tanto, esta ficha no describe un modelo real, sino que documenta la ausencia de uno. Todos los campos técnicos quedan marcados como "no disponible" por falta de datos. Si el objetivo es evaluar un modelo, conviene buscar en el Hugging Face Hub repositorios con arquitecturas concretas (por ejemplo, transformadores o MoE) y con archivos de pesos.
 

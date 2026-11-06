@@ -6,7 +6,7 @@ Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el
 
 El modelo no es un modelo de lenguaje ni un modelo generativo de proposito general: es una politica entrenada para mapear observaciones visuales del juego a acciones discretas. Su tarea consiste en maximizar la recompensa acumulada en SpaceInvaders en su version sin saltos de fotogramas (`NoFrameskip-v4`), con una recompensa media reportada de 350,00 +/- 20,00. La relevancia es por tanto acotada al ambito de la investigacion y la docencia en RL: sirve como baseline reproducible y como ejemplo de pipeline de entrenamiento con stable-baselines3.
 
-La model card no especifica arquitectura concreta de red, numero de parametros, hiperparametros de entrenamiento, presupuesto de pasos ni licencia de uso. No hay descargas ni interacciones registradas en el momento de redactar esta ficha, y la fecha de creacion declarada en HuggingFace es el 30 de septiembre de 2026.
+La model card no especifica arquitectura concreta de red, numero de parametros, hiperparametros de entrenamiento, presupuesto de pasos ni licencia de uso. No hay descargas ni interacciones registradas en el momento de redactar esta ficha, y la fecha de creacion declarada en Hugging Face es el 30 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ No se dispone de resultados comparables de MMLU, HumanEval, GSM8K ni de otras su
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Srikarraod/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip-v4 | 350,00 +/- 20,00 | no disponible | HuggingFace Hub |
-| ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip | no disponible | no disponible | HuggingFace Hub |
-| infinitejoy/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace Hub |
-| Agentes DQN y PPO del RL Zoo (stable-baselines3) | DQN / PPO | SpaceInvadersNoFrameskip-v4 | no disponible | MIT (licencia del repositorio RL Zoo) | GitHub y HuggingFace Hub |
+| Srikarraod/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip-v4 | 350,00 +/- 20,00 | no disponible | Hugging Face Hub |
+| ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip | no disponible | no disponible | Hugging Face Hub |
+| infinitejoy/ppo-SpaceInvadersNoFrameskip-v4 | PPO | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face Hub |
+| Agentes DQN y PPO del RL Zoo (stable-baselines3) | DQN / PPO | SpaceInvadersNoFrameskip-v4 | no disponible | MIT (licencia del repositorio RL Zoo) | GitHub y Hugging Face Hub |
 
 Los modelos comparables pertenecen a la misma categoria (agentes PPO o DQN sobre SpaceInvaders en stable-baselines3) y comparten el mismo tipo de entorno y de pipeline de entrenamiento. No se dispone de cifras de recompensa publicadas para las alternativas en la informacion recogida, por lo que no es posible establecer una comparacion cuantitativa fiable. La diferencia principal observable es que el modelo de ThomasSimonini forma parte de los agentes preentrenados del RL Zoo, mientras que este repositorio se presenta como una entrega de curso con una unica metrica declarada y no verificada.
 
@@ -97,11 +97,11 @@ Los modelos comparables pertenecen a la misma categoria (agentes PPO o DQN sobre
 - Sesgos conocidos: no documentados. En entornos Atari es habitual que las politicas exploten recompensas del juego de forma poco robusta, pero no hay analisis publicado para este modelo concreto.
 - Limitaciones de contexto e idioma: no aplicables, ya que no procesa texto.
 - Cero descargas y cero interacciones en el Hub: no hay evidencia de uso por parte de terceros que respalde su calidad o estabilidad.
-- La fecha de creacion registrada en HuggingFace (2026-09-30) es posterior a la fecha de redaccion habitual de este tipo de fichas; conviene verificar la ficha original por si el dato hubiera cambiado.
+- La fecha de creacion registrada en Hugging Face (2026-09-30) es posterior a la fecha de redaccion habitual de este tipo de fichas; conviene verificar la ficha original por si el dato hubiera cambiado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Srikarraod/ppo-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Srikarraod/ppo-SpaceInvadersNoFrameskip-v4
 - Curso Deep Reinforcement Learning de Hugging Face (unidad 3): https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
 - Modelo comparable de ThomasSimonini: https://huggingface.co/ThomasSimonini/ppo-SpaceInvadersNoFrameskip-v4
 - Modelo comparable de infinitejoy: https://huggingface.co/infinitejoy/ppo-SpaceInvadersNoFrameskip-v4

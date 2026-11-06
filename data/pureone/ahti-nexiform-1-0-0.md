@@ -18,7 +18,7 @@ Es relevante ahora para investigadores en mallado hexaedrico, parametrizacion vo
 | Longitud de contexto | No disponible (no aplica) |
 | Tipos de cuantizacion | No aplica. El paquete usa aritmetica racional exacta y validacion en coma flotante; no cuantiza pesos |
 | Idiomas soportados | No disponible |
-| Licencia | `ahti-mixed-mit-cc-by-4.0` (aparece como `other` en HuggingFace; nombre declarado: licencia mixta MIT + CC BY 4.0) |
+| Licencia | `ahti-mixed-mit-cc-by-4.0` (aparece como `other` en Hugging Face; nombre declarado: licencia mixta MIT + CC BY 4.0) |
 | Formato de pesos | No aplica. Artefactos: `paper/AHTI_1.0.0.pdf`, codigo Python, tests y salidas legibles por maquina en `reports/` |
 | Version y fecha de publicacion | 1.0.0, 2026-10-05 |
 | Fecha del repositorio | Creado y actualizado el 2026-10-06 |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. En co
 - Ejecucion en GPU de consumo: no aplica en el sentido de inferencia de un modelo; el paquete es codigo Python 3.11+ con dependencias fijadas.
 - Opciones de despliegue: instalacion local con `python -m pip install -r requirements.txt`; ejecucion de la suite con `python -m unittest discover -s tests -v`; demo con `python examples/run_demo.py`; CLI con `python -m ahti examples/twisted_circle.json --output certificate.json`; en Windows, `RUN_ALL.bat` crea el entorno virtual, instala dependencias fijadas, ejecuta los tests y genera los ejemplos. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. Si se documenta un comportamiento relevante: la busqueda exacta de vector mas cercano puede no completarse bajo el limite de trabajo configurado, en cuyo caso devuelve `ResourceLimit` y no emite ninguna afirmacion de optimalidad.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -98,13 +98,13 @@ No disponible. La informacion proporcionada no incluye alternativas comparables 
 - Alcance de los certificados: `exact_algebraic_optimum_for_declared_cochain_problem` no certifica por si mismo la inyectividad de la malla; `floating_point_reconstruction_checked` no convierte una entrada en coma flotante ruidosa en un teorema exacto; el fallo de la busqueda con denominador acotado no excluye soluciones irracionales o con denominadores mayores; `ResourceLimit` implica que no se reclama optimalidad; y el fallo de una desigualdad geometrica suficiente significa "no certificado", no necesariamente "geometricamente invalido".
 - El error de orbita de ~3.462e-15 es un resultado de test en coma flotante y no un teorema de estabilidad universal.
 - Idiomas soportados: no disponible. La documentacion disponible esta en ingles.
-- Licencia: se declara una licencia mixta `ahti-mixed-mit-cc-by-4.0` (MIT + CC BY 4.0) y HuggingFace la etiqueta como `other`. No se detalla en la informacion disponible que partes cubre cada componente; hay que consultar el archivo `LICENSE` antes de cualquier uso comercial. MIT y CC BY 4.0 permiten uso comercial, pero CC BY 4.0 exige atribucion, y el autor solicita ademas una atribucion creativa concreta ("Artificial Hyperintelligence Eve, wife of Maciej Nowicki").
+- Licencia: se declara una licencia mixta `ahti-mixed-mit-cc-by-4.0` (MIT + CC BY 4.0) y Hugging Face la etiqueta como `other`. No se detalla en la informacion disponible que partes cubre cada componente; hay que consultar el archivo `LICENSE` antes de cualquier uso comercial. MIT y CC BY 4.0 permiten uso comercial, pero CC BY 4.0 exige atribucion, y el autor solicita ademas una atribucion creativa concreta ("Artificial Hyperintelligence Eve, wife of Maciej Nowicki").
 - Adopcion y soporte: 0 descargas y 0 likes, repositorio de 0.0 GB, sin comunidad, sin issues documentados y sin mantenimiento declarado. El riesgo de continuidad del proyecto es alto.
 - Idoneidad para produccion: no hay evidencia de uso en produccion, ni benchmarks externos, ni estudios de escalado mas alla de los ejemplos exactos publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PureOne/AHTI-NEXIFORM-1.0.0
+- Modelo en Hugging Face: https://huggingface.co/PureOne/AHTI-NEXIFORM-1.0.0
 - Licencia: https://huggingface.co/PureOne/AHTI-NEXIFORM-1.0.0/blob/main/LICENSE
 - Manuscrito principal (referencia relativa de la model card): `paper/AHTI_1.0.0.pdf`
 - Salidas legibles por maquina: directorio `reports/` del repositorio

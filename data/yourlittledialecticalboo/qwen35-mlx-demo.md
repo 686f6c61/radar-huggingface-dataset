@@ -27,7 +27,7 @@ La informacion disponible es muy limitada: el repositorio registra 0 descargas y
 | ID del repositorio consultado | yourlittledialecticalboo/qwen35-mlx-demo |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-12 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-12 |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ La informacion proporcionada no permite una comparacion fiable con alternativas 
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/yourlittledialecticalboo/qwen35-mlx-demo
+- Repositorio consultado en Hugging Face: https://huggingface.co/yourlittledialecticalboo/qwen35-mlx-demo
 - Modelo original citado por el autor: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de pesos referenciado en las instrucciones: https://huggingface.co/mlx-community/Qwen3.5-0.8B-MLX-8bit
 - Framework mlx-vlm: https://github.com/Blaizzy/mlx-vlm

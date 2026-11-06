@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sol Lassi 600K Base es un modelo de lenguaje causal experimental desarrollado por Sol Intelligence (usuario `solintellegence` en HuggingFace). Se trata de un modelo denso decoder-only de tan solo 600.000 parametros, entrenado desde cero con el objetivo declarado de servir como banco de pruebas para experimentos de optimizacion y para la investigacion sobre modelos de lenguaje extremadamente pequenos. El checkpoint se publica como modelo base, no como asistente ajustado por instrucciones, y el propio autor aclara que no reclama ninguna puntuacion en indices de inteligencia ni en clasificaciones publicas.
+Sol Lassi 600K Base es un modelo de lenguaje causal experimental desarrollado por Sol Intelligence (usuario `solintellegence` en Hugging Face). Se trata de un modelo denso decoder-only de tan solo 600.000 parametros, entrenado desde cero con el objetivo declarado de servir como banco de pruebas para experimentos de optimizacion y para la investigacion sobre modelos de lenguaje extremadamente pequenos. El checkpoint se publica como modelo base, no como asistente ajustado por instrucciones, y el propio autor aclara que no reclama ninguna puntuacion en indices de inteligencia ni en clasificaciones publicas.
 
 La relevancia del modelo no reside en su capacidad, sino en su caracter reproducible y didactico: es un transformer completo (6 bloques, anchura oculta 96, atencion de 3 cabezas, MLP con SiLU con compuerta) con tokenizador BPE a nivel de byte de 2.048 entradas, pesos atados y contexto de entrenamiento de 128 tokens. Se entreno con 1.000 millones de exposiciones a tokens sobre una corriente equilibrada de FinePhrase, usando el optimizador M-SimOW, un esquema de learning rate fijo escalonado y solo 500 millones de tokens distintos en el manifiesto de entrenamiento.
 
@@ -88,7 +88,7 @@ No disponible. La busqueda web realizada no devolvio informacion sobre modelos c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/solintellegence/sol-lassi
-- Perfil del autor en HuggingFace: https://huggingface.co/solintellegence
+- Hugging Face del modelo: https://huggingface.co/solintellegence/sol-lassi
+- Perfil del autor en Hugging Face: https://huggingface.co/solintellegence
 - Ficheros incluidos en el repositorio: `model.npz`, `modeling_sol_lassi.py`, `keystone_mlx/`, `tokenizer.json`, `tokenizer_config.json`, `config.json`, `training_state.json`, `sol-lassi-banner.png`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. Los resultados de la busqueda web no contienen informacion relacionada con el modelo (devuelven articulos juridicos franceses sobre contratacion de trabajadores extranjeros, sin ninguna conexion con Sol Lassi).

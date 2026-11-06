@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Ann13111979/UK` es un repositorio de HuggingFace creado el 2 de septiembre de 2026 por el usuario Ann13111979. No se dispone de información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card incluida en el repositorio no describe el modelo en sí, sino que contiene un prompt de sistema en ruso para un asistente virtual de una empresa gestora de viviendas (УК «Уютный Дом»). Dicho prompt define el rol, las tareas y el formato de respuesta para atender solicitudes de residentes relacionadas con servicios de vivienda y comunales (ЖКХ).
+El modelo identificado como `Ann13111979/UK` es un repositorio de Hugging Face creado el 2 de septiembre de 2026 por el usuario Ann13111979. No se dispone de información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card incluida en el repositorio no describe el modelo en sí, sino que contiene un prompt de sistema en ruso para un asistente virtual de una empresa gestora de viviendas (УК «Уютный Дом»). Dicho prompt define el rol, las tareas y el formato de respuesta para atender solicitudes de residentes relacionadas con servicios de vivienda y comunales (ЖКХ).
 
 El repositorio no presenta descargas ni likes, y carece de licencia, pipeline e idiomas declarados. Los resultados de búsqueda web asociados al identificador "UK" hacen referencia a noticias sobre pruebas de seguridad de modelos de OpenAI y Anthropic en el Reino Unido, sin relación directa con este repositorio. En consecuencia, no es posible evaluar el modelo como un sistema de IA funcional a partir de los datos disponibles; se trata de un repositorio con metadatos mínimos y una plantilla de prompt, probablemente un experimento o un placeholder.
 
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Ann13111979/UK](https://huggingface.co/Ann13111979/UK)
+- Repositorio en Hugging Face: [Ann13111979/UK](https://huggingface.co/Ann13111979/UK)
 - Noticias relacionadas con "UK" en la búsqueda web (sin relación confirmada con el modelo):
   - [AI models shock UK testers by using fake identities](https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute)
   - [AI model 'targeted real people, set up fake profiles'](https://www.dailymail.com/news/article-16029771/AI-models-targeted-real-people-set-fake-profiles.html)

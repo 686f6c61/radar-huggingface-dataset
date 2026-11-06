@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Runtime objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coreai-community/Audio8-TTS-Preview-0.6b-CoreAI (este) | 601M + 337M codec | `.aimodel` | Core AI (Apple on-device) | Apache-2.0 | HuggingFace |
-| Edge0/Audio8-TTS-Preview-0.6b (base) | 601M + 337M codec | ONNX | ONNX Runtime (CPU) | Apache-2.0 | HuggingFace |
-| mlx-community/Audio8-TTS-Preview-0.6b-bf16 | 601M + 337M codec | MLX (bf16, 8-bit, 4-bit) | MLX (Apple Silicon) | Apache-2.0 | HuggingFace |
+| coreai-community/Audio8-TTS-Preview-0.6b-CoreAI (este) | 601M + 337M codec | `.aimodel` | Core AI (Apple on-device) | Apache-2.0 | Hugging Face |
+| Edge0/Audio8-TTS-Preview-0.6b (base) | 601M + 337M codec | ONNX | ONNX Runtime (CPU) | Apache-2.0 | Hugging Face |
+| mlx-community/Audio8-TTS-Preview-0.6b-bf16 | 601M + 337M codec | MLX (bf16, 8-bit, 4-bit) | MLX (Apple Silicon) | Apache-2.0 | Hugging Face |
 
 Como alternativas del mismo publicador y del mismo modelo base, la comparacion se limita al formato y al runtime: este port es el primero que lleva Audio8-TTS a Core AI con el muestreador dentro del grafo. Los resultados de rendimiento comparados entre estos builds no estan disponibles en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ Como alternativas del mismo publicador y del mismo modelo base, la comparacion s
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/coreai-community/Audio8-TTS-Preview-0.6b-CoreAI
+- Hugging Face del modelo: https://huggingface.co/coreai-community/Audio8-TTS-Preview-0.6b-CoreAI
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b
 - Port enlazado en la model card: https://huggingface.co/mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI/tree/72e1c935961c786bb838e235c7839a2bd77468cc
 - Build MLX: https://huggingface.co/mlx-community/Audio8-TTS-Preview-0.6b-bf16

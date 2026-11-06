@@ -75,10 +75,10 @@ No se han identificado en la búsqueda modelos públicos comparables de triaje m
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3-1.7b-chsa-triage-dpo (este) | ~1.700 M + LoRA | no disponible | MIT | safetensors (LoRA) | 0,700 de exactitud de triaje; 27,5 % de subtriaje | Publico en HuggingFace |
-| qwen3-1.7b-chsa-triage-sft-merged | ~1.700 M | no disponible | MIT | safetensors (fusionado) | no disponible | Publico en HuggingFace |
-| qwen3-1.7b-chsa-triage (final fusionado) | ~1.700 M | no disponible | MIT | safetensors (fusionado) | no disponible | Publico en HuggingFace |
-| Qwen3-1.7B-Base | ~1.700 M | no disponible | no disponible | safetensors | no disponible | Publico en HuggingFace |
+| qwen3-1.7b-chsa-triage-dpo (este) | ~1.700 M + LoRA | no disponible | MIT | safetensors (LoRA) | 0,700 de exactitud de triaje; 27,5 % de subtriaje | Publico en Hugging Face |
+| qwen3-1.7b-chsa-triage-sft-merged | ~1.700 M | no disponible | MIT | safetensors (fusionado) | no disponible | Publico en Hugging Face |
+| qwen3-1.7b-chsa-triage (final fusionado) | ~1.700 M | no disponible | MIT | safetensors (fusionado) | no disponible | Publico en Hugging Face |
+| Qwen3-1.7B-Base | ~1.700 M | no disponible | no disponible | safetensors | no disponible | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se han identificado en la búsqueda modelos públicos comparables de triaje m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-dpo
+- Modelo en Hugging Face: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-dpo
 - Modelo base supervisado fusionado: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged
 - Modelo final fusionado recomendado: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage
 - Repositorio del proyecto: https://github.com/BenoitJT-GIRARD/chsa-triage

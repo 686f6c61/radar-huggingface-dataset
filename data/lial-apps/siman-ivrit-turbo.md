@@ -77,7 +77,7 @@ La comparativa se limita a variantes del mismo modelo base; no se dispone de dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lial-apps/siman-ivrit-turbo
+- Hugging Face: https://huggingface.co/lial-apps/siman-ivrit-turbo
 - Modelo base: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Transformers.js: https://huggingface.co/docs/transformers.js

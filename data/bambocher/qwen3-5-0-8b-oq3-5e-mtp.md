@@ -80,5 +80,5 @@ No se dispone de datos de benchmarks ni de otras alternativas comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ3.5e-mtp
 - Repositorio de la herramienta oQ (oMLX): https://github.com/jundot/omlx

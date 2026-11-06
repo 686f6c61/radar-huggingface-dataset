@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kiora-withoutbg-v10 es un modelo de vision por computador especializado en eliminacion de fondos y image matting (generacion de canales alfa), no un modelo de lenguaje. Lo publica el usuario Scylix en HuggingFace como una copia modificada del modelo withoutBG Open Weights v10 (repositorio `withoutbg/withoutbg-openweights-onnx`, archivo `withoutbg-open-weights.onnx` en la revision `cfae4da1ee`). Segun la model card, se usa en la funcion "Select Subject" de la aplicacion Kiora Photo.
+kiora-withoutbg-v10 es un modelo de vision por computador especializado en eliminacion de fondos y image matting (generacion de canales alfa), no un modelo de lenguaje. Lo publica el usuario Scylix en Hugging Face como una copia modificada del modelo withoutBG Open Weights v10 (repositorio `withoutbg/withoutbg-openweights-onnx`, archivo `withoutbg-open-weights.onnx` en la revision `cfae4da1ee`). Segun la model card, se usa en la funcion "Select Subject" de la aplicacion Kiora Photo.
 
 El modelo esta construido sobre un backbone DINOv3 y tambien incorpora Depth Anything V2 (small), lo que lo convierte en una obra compuesta con varias licencias. La modificacion introducida por Scylix consiste en recodificar los pesos para reducir el tamano del archivo y comprimir el resultado con gzip, dando lugar a un unico archivo ONNX comprimido (`.onnx.gz`).
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scylix/kiora-withoutbg-v10 | Version modificada y comprimida | no disponible | no aplica | withoutbg-open-weights-and-dinov3 | HuggingFace (0 descargas, 0 likes) |
-| withoutbg/withoutbg-openweights-onnx | Modelo upstream del que deriva | no disponible | no aplica | sin datos exactos en la informacion proporcionada; fuente de los componentes Apache 2.0 y DINOv3 | HuggingFace (revision `cfae4da1ee`) |
+| Scylix/kiora-withoutbg-v10 | Version modificada y comprimida | no disponible | no aplica | withoutbg-open-weights-and-dinov3 | Hugging Face (0 descargas, 0 likes) |
+| withoutbg/withoutbg-openweights-onnx | Modelo upstream del que deriva | no disponible | no aplica | sin datos exactos en la informacion proporcionada; fuente de los componentes Apache 2.0 y DINOv3 | Hugging Face (revision `cfae4da1ee`) |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con otros modelos de eliminacion de fondos (parametros, contexto, rendimiento o licencia), por lo que esa comparacion se marca como no disponible.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scylix/kiora-withoutbg-v10
+- Modelo en Hugging Face: https://huggingface.co/Scylix/kiora-withoutbg-v10
 - Modelo base (upstream): https://huggingface.co/withoutbg/withoutbg-openweights-onnx
 - Licencia del modelo withoutBG: https://withoutbg.com/open-model/license
 - Los resultados de busqueda web proporcionados no incluyen enlaces relevantes sobre este modelo; los resultados recibidos corresponden a contenidos sin relacion (paginas sobre una actriz) y se descartan.

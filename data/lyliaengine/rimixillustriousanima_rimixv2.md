@@ -75,8 +75,8 @@ No se dispone de datos de comparativa directa con otros LoRAs de estilo similare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2
-- Model card en HuggingFace: https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2/blob/main/README.md
+- Hugging Face: https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2
+- Model card en Hugging Face: https://huggingface.co/LyliaEngine/riMixIllustriousAnima_riMixV2/blob/main/README.md
 - Civitai - Ri-mix [Illustrious + Anima]: https://civitai.com/models/996495/ri-mix-illustrious-anima
 - PromptHero - Ri-mix Ω v2: https://prompthero.com/ai-models/ri-mix---pony--illustrious-996495-download/ri-mix---illustrious--anima-ri-mix--v2
 - Latent - riMixIllustriousAnima_riMixAnima: https://latent.moe/models/riMixIllustriousAnima_riMixAnima

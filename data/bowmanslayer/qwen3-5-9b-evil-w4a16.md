@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace (W4A16): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-W4A16
+- Hugging Face (W4A16): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-W4A16
 - Checkpoint BF16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
 - GGUF Q4_K_M: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q4_K_M-GGUF
 - GGUF Q5_K_M: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q5_K_M-GGUF

@@ -88,7 +88,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming
+- Modelo en Hugging Face: https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming
 - Modelo base: https://huggingface.co/facebook/sam3.1
 - Licencia incluida en el repositorio: LICENSE (referenciada como `license_link` en la model card)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

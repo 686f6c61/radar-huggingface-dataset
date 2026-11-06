@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vraj04patel/sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) obtenido mediante ajuste fino (fine-tuning) del modelo base distilbert-base-uncased. Lo publica el usuario vraj04patel en HuggingFace y se distribuye bajo licencia Apache 2.0. El modelo cuenta con 66.955.779 parametros y un tamano de repositorio de 0,3 GB, lo que lo situa en la gama ligera de modelos encoder-only, apta para inferencia en CPU y en GPUs de consumo.
+vraj04patel/sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) obtenido mediante ajuste fino (fine-tuning) del modelo base distilbert-base-uncased. Lo publica el usuario vraj04patel en Hugging Face y se distribuye bajo licencia Apache 2.0. El modelo cuenta con 66.955.779 parametros y un tamano de repositorio de 0,3 GB, lo que lo situa en la gama ligera de modelos encoder-only, apta para inferencia en CPU y en GPUs de consumo.
 
 El modelo resuelve la tarea generica de clasificacion de sentimiento, aunque la model card no especifica el numero de clases, el idioma de los datos ni la procedencia del conjunto de evaluacion (aparece como "unknown dataset"). Es relevante sobre todo como ejemplo de pipeline de fine-tuning reproducible con la libreria Transformers, no como un modelo listo para produccion: sus metricas de evaluacion (accuracy 0.6598, F1 weighted 0.6493) son moderadas y el modelo acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
@@ -47,7 +47,7 @@ El procedimiento de entrenamiento si esta detallado en la model card: 3 epocas, 
 - Filtrado previo de tickets de soporte: como clasificador rapido para enrutar quejas negativas frente a comentarios neutros o positivos antes de un analisis mas profundo.
 - Analisis de sentimiento en analitica de redes sociales: procesamiento por lotes de grandes volumenes de mensajes cortos gracias a su tamano reducido (67 M de parametros).
 - Monitorizacion de opinion sobre productos o marcas: agregacion de la polaridad de comentarios para generar paneles de tendencia.
-- Prototipado y docencia: sirve como ejemplo reproducible de fine-tuning con el Trainer de Transformers y de publicacion de un modelo en HuggingFace.
+- Prototipado y docencia: sirve como ejemplo reproducible de fine-tuning con el Trainer de Transformers y de publicacion de un modelo en Hugging Face.
 - Base para experimentos de destilacion o cuantizacion: por su tamano, es un candidato comodo para probar tecnicas de compresion (fp16, int8, ONNX).
 - Clasificacion de sentiment en pipelines de bajo recurso: al caber en CPU y en GPUs de gama baja, puede desplegarse en entornos sin acelerador dedicado.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - VRAM estimada para inferencia (pesos, sin contar activaciones): aproximadamente 268 MB en fp32, 134 MB en fp16 y 67 MB en int8.
 - El modelo cabe holgadamente en cualquier GPU de consumo (GTX 1050/1650, RTX 3060, RTX 4090, etc.) e incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna; para lotes grandes en produccion tiene sentido usar una GPU con mas memoria de la estrictamente necesaria para amortizar el overhead (por ejemplo, T4, A10 o A100 compartida con otros procesos).
-- Despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (el modelo lleva la etiqueta endpoints_compatible), ONNX Runtime, TorchServe o un servicio FastAPI propio. No hay pesos GGUF, por lo que no es directamente desplegable en llama.cpp ni en Ollama como modelo GGUF.
+- Despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (el modelo lleva la etiqueta endpoints_compatible), ONNX Runtime, TorchServe o un servicio FastAPI propio. No hay pesos GGUF, por lo que no es directamente desplegable en llama.cpp ni en Ollama como modelo GGUF.
 - Latencia y throughput estimados: del orden de pocos milisegundos por secuencia corta en GPU moderna y de decenas de milisegundos en CPU por nucleo; el throughput escala bien con batching. Estas cifras son estimaciones derivadas del tamano del modelo, no mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ La comparacion directa de rendimiento no es posible porque el conjunto de evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vraj04patel/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/vraj04patel/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lucazimmermann/classification-tutorial` es un repositorio de HuggingFace publicado por el usuario Lucazimmermann que contiene una implementación propia y minimalista de un modelo de tipo Mae (masked autoencoder) orientada a tareas de clasificación. Se trata de la variante "tiny", con tan solo 24.832 parámetros totales, y se distribuye junto con un `config.json`, un `training_args.json`, un script `main.py` y un checkpoint de inicialización en `model.safetensors`. El propio autor indica explícitamente en la model card que no es una release de un modelo entrenado, sino un punto de partida reproducible para pruebas de humo (smoke tests).
+`Lucazimmermann/classification-tutorial` es un repositorio de Hugging Face publicado por el usuario Lucazimmermann que contiene una implementación propia y minimalista de un modelo de tipo Mae (masked autoencoder) orientada a tareas de clasificación. Se trata de la variante "tiny", con tan solo 24.832 parámetros totales, y se distribuye junto con un `config.json`, un `training_args.json`, un script `main.py` y un checkpoint de inicialización en `model.safetensors`. El propio autor indica explícitamente en la model card que no es una release de un modelo entrenado, sino un punto de partida reproducible para pruebas de humo (smoke tests).
 
 La relevancia de esta ficha es fundamentalmente metodológica: sirve como esqueleto reproducible para experimentar con una arquitectura Mae aplicada a clasificación, no como modelo listo para producción. El repositorio no reclama ninguna puntuación de benchmark y advierte de que el checkpoint incluido no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -72,7 +72,7 @@ No disponible. El repositorio en si es un tutorial/plantilla de una arquitectura
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucazimmermann/classification-tutorial | 24.832 | no disponible | sin benchmark | bsd-3-clause | HuggingFace |
+| Lucazimmermann/classification-tutorial | 24.832 | no disponible | sin benchmark | bsd-3-clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. El repositorio en si es un tutorial/plantilla de una arquitectura
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lucazimmermann/classification-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/Lucazimmermann/classification-tutorial
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de la busqueda web proporcionada.
 - Los resultados web recibidos (WARDOGS en Steam, articulos sobre la pelicula War Dogs) no guardan relacion con el modelo y se descartan como fuentes.

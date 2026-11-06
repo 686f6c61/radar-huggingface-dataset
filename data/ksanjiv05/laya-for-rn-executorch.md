@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/ksanjiv05/laya-for-rn-executorch
+- Pagina de Hugging Face del modelo: https://huggingface.co/ksanjiv05/laya-for-rn-executorch
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - ExecuTorch (PyTorch): https://pytorch.org/executorch/
 - react-native-executorch (Software Mansion): https://github.com/software-mansion/react-native-executorch

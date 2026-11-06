@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmallAICreator/tiny50m-multimix es un modelo de lenguaje de tipo transformer decoder-only con 51.061.248 parámetros (aproximadamente 51 millones), publicado en HuggingFace por el usuario SmallAICreator. El repositorio lleva las etiquetas "safetensors", "llama" y "region:us", lo que indica que los pesos se distribuyen en formato safetensors y que la arquitectura declarada sigue la familia Llama, aunque no se especifica la configuración interna (número de capas, dimensiones de atención, cabezas, etc.). El modelo se creó y actualizó el 14 de septiembre de 2026 y acumula 5 "likes" y 0 descargas, por lo que se encuentra en una fase muy temprana de publicación y sin validación por parte de la comunidad.
+SmallAICreator/tiny50m-multimix es un modelo de lenguaje de tipo transformer decoder-only con 51.061.248 parámetros (aproximadamente 51 millones), publicado en Hugging Face por el usuario SmallAICreator. El repositorio lleva las etiquetas "safetensors", "llama" y "region:us", lo que indica que los pesos se distribuyen en formato safetensors y que la arquitectura declarada sigue la familia Llama, aunque no se especifica la configuración interna (número de capas, dimensiones de atención, cabezas, etc.). El modelo se creó y actualizó el 14 de septiembre de 2026 y acumula 5 "likes" y 0 descargas, por lo que se encuentra en una fase muy temprana de publicación y sin validación por parte de la comunidad.
 
 La relevancia de este modelo es la de un artefacto de escala muy reducida, útil como banco de pruebas más que como sistema de propósito general. Con 51 millones de parámetros, su huella de memoria en FP16 ronda los 102 MB, lo que permite ejecutarlo en CPU y en cualquier GPU de consumo, e incluso en dispositivos embebidos. Esto lo hace interesante para experimentar con fine-tuning, cuantización, pipelines de decodificación especulativa o pruebas de integración de infraestructura de inferencia sin coste de GPU.
 
@@ -12,7 +12,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta "llama" en HuggingFace; configuracion interna no disponible) |
+| Arquitectura | Transformer decoder-only (etiqueta "llama" en Hugging Face; configuracion interna no disponible) |
 | Parametros totales | 51.061.248 (aproximadamente 51 M) |
 | Parametros activos | No aplica: no hay indicios de que sea un modelo MoE |
 | Longitud de contexto | no disponible |
@@ -39,7 +39,7 @@ No hay datos sobre el corpus de entrenamiento: se desconoce el numero de tokens 
 - Generacion de codigo: no disponible.
 - Tool calling / function calling: no disponible; no se documenta plantilla de chat ni soporte de llamadas a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el repositorio no incluye torre de vision ni de audio.
 - Fine-tuning: al ser un modelo pequeno en safetensors compatible con la libreria transformers, es viable reentrenarlo o ajustarlo, pero no hay receta ni script publicado.
 
@@ -76,10 +76,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmallAICreator/tiny50m-multimix | 51.061.248 | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| SmallAICreator/TinyGPT-60m | no disponible (nombre sugiere ~60 M) | no disponible | no disponible | HuggingFace, mismo autor |
-| SmallAICreator/TinyGPT-Large-Fixed | no disponible | no disponible | no disponible | HuggingFace, mismo autor |
-| Modelos de referencia de ~50-150 M (por ejemplo, familias tipo Pythia-70M o SmolLM) | 70-135 M | variable segun modelo | variable segun modelo | HuggingFace, ampliamente desplegados |
+| SmallAICreator/tiny50m-multimix | 51.061.248 | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| SmallAICreator/TinyGPT-60m | no disponible (nombre sugiere ~60 M) | no disponible | no disponible | Hugging Face, mismo autor |
+| SmallAICreator/TinyGPT-Large-Fixed | no disponible | no disponible | no disponible | Hugging Face, mismo autor |
+| Modelos de referencia de ~50-150 M (por ejemplo, familias tipo Pythia-70M o SmolLM) | 70-135 M | variable segun modelo | variable segun modelo | Hugging Face, ampliamente desplegados |
 
 La comparativa relevante es la de los otros modelos del mismo autor, TinyGPT-60m y TinyGPT-Large-Fixed, que parecen formar parte de la misma linea de experimentacion con modelos diminutos. No hay informacion que permita establecer cual de ellos rinde mejor.
 
@@ -98,7 +98,7 @@ La comparativa relevante es la de los otros modelos del mismo autor, TinyGPT-60m
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/SmallAICreator/tiny50m-multimix
+- Ficha del modelo en Hugging Face: https://huggingface.co/SmallAICreator/tiny50m-multimix
 - Modelo del mismo autor, TinyGPT-60m: https://huggingface.co/SmallAICreator/TinyGPT-60m
 - Modelo del mismo autor, TinyGPT-Large-Fixed: https://huggingface.co/SmallAICreator/TinyGPT-Large-Fixed
 - Configuracion tiny50m.yaml en el repositorio ft-diloco de Neumann-Labs (posible referencia de arquitectura de ~50 M, sin relacion confirmada con este modelo): https://github.com/Neumann-Labs/ft-diloco/blob/main/configs/model/tiny50m.yaml

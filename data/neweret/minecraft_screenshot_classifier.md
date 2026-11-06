@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neweret/minecraft_screenshot_classifier es un modelo publicado en HuggingFace por el usuario Neweret. Por el identificador del repositorio, se deduce que esta pensado para clasificar capturas de pantalla del videojuego Minecraft, esto es, una tarea de vision por computador orientada a clasificacion de imagenes. No obstante, la model card publicada no incluye ninguna descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso, por lo que esta deduccion no puede confirmarse con la informacion disponible.
+Neweret/minecraft_screenshot_classifier es un modelo publicado en Hugging Face por el usuario Neweret. Por el identificador del repositorio, se deduce que esta pensado para clasificar capturas de pantalla del videojuego Minecraft, esto es, una tarea de vision por computador orientada a clasificacion de imagenes. No obstante, la model card publicada no incluye ninguna descripcion funcional, arquitectura, datos de entrenamiento ni ejemplos de uso, por lo que esta deduccion no puede confirmarse con la informacion disponible.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha, lo que indica que se trata de una publicacion reciente y sin traccion conocida en la comunidad. El unico metadato tecnico explicito es la licencia MIT, declarada tanto en los tags como en el cuerpo de la model card.
 
@@ -87,7 +87,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea exacta del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neweret/minecraft_screenshot_classifier
+- Hugging Face: https://huggingface.co/Neweret/minecraft_screenshot_classifier
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

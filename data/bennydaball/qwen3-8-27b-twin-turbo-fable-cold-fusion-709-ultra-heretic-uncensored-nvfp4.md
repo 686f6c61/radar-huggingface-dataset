@@ -99,7 +99,7 @@ Alternativas de otros autores con arquitectura, contexto o licencia comparables:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyDaBall/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Repositorio NEO MTP GGUF y guia de uso de DavidAU (K-quants e imatrix para hardware no Blackwell): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
 - Perfil del autor del cuantizado en X: https://x.com/BennyDaBall_OG

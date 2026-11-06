@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks para el checkpoint de 49 épocas en
 - **VRAM estimada para inferencia**: al tratarse de un modelo de 361M parámetros, en precisión fp16 ocupa aproximadamente 723 MB de pesos, más overhead de activaciones y KV cache. Se estima que cabe en GPUs con al menos 2 GB de VRAM en fp16, y menos de 1 GB si se cuantiza a int8 o int4.
 - **GPU recomendadas**: cualquier GPU moderna con 4 GB o más de VRAM (por ejemplo, RTX 3060, RTX 4060, GTX 1660 Super) es suficiente para inferencia. El entrenamiento se realizó en una única GPU sin especificar, pero por el tamaño del modelo probablemente una GPU con 16-24 GB (como RTX 3090 o A100) sería adecuada para reproducir el entrenamiento.
 - **Compatibilidad con GPU de consumo**: sí, el modelo es ligero y puede ejecutarse en GPUs de consumo de gama media e incluso en CPU con cuantización.
-- **Opciones de despliegue**: al ser un modelo compatible con el formato Llama, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con transformers de HuggingFace. También es compatible con el framework verl para entrenamiento y evaluación.
+- **Opciones de despliegue**: al ser un modelo compatible con el formato Llama, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con transformers de Hugging Face. También es compatible con el framework verl para entrenamiento y evaluación.
 - **Latencia y throughput**: no se han publicado mediciones específicas. Dado el tamaño reducido, se espera una latencia de decodificación baja (del orden de decenas de milisegundos por token en GPU moderna) y un throughput alto en configuraciones por lotes.
 
 ## Comparativa con modelos similares

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-lammo-coder-Max es un adaptador LoRA publicado por el usuario MaxKio en HuggingFace, entrenado sobre el modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct. Se distribuye en formato PEFT (librería `peft`, versión de framework declarada 0.21.1) y está etiquetado para la tarea `text-generation` con uso conversacional. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación que deben cargarse junto al modelo base de Qwen para poder ejecutarse.
+lammo-coder-Max es un adaptador LoRA publicado por el usuario MaxKio en Hugging Face, entrenado sobre el modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct. Se distribuye en formato PEFT (librería `peft`, versión de framework declarada 0.21.1) y está etiquetado para la tarea `text-generation` con uso conversacional. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptación que deben cargarse junto al modelo base de Qwen para poder ejecutarse.
 
 El interés del artefacto está en que el modelo subyacente, Qwen2.5-Coder-1.5B-Instruct, es un transformer decoder-only de 1.5 mil millones de parámetros con 32.768 tokens de contexto nativo y licencia Apache-2.0, lo que lo sitúa en el rango de modelos que caben en GPU de consumo e incluso en CPU. Un adaptador LoRA sobre esta base puede aportar un ajuste de dominio o de estilo con un coste de almacenamiento muy bajo (decenas de megabytes) y sin necesidad de reentrenar el modelo completo.
 
-Ahora bien, la ficha del repositorio es la plantilla por defecto de HuggingFace sin rellenar: no declara autoría efectiva, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, con un tamaño declarado de 0.0 GB y fecha de creación 2026-10-11, por lo que no existe ninguna validación externa ni evidencia publicada de su calidad o de su contenido real.
+Ahora bien, la ficha del repositorio es la plantilla por defecto de Hugging Face sin rellenar: no declara autoría efectiva, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, con un tamaño declarado de 0.0 GB y fecha de creación 2026-10-11, por lo que no existe ninguna validación externa ni evidencia publicada de su calidad o de su contenido real.
 
 ## Especificaciones técnicas
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| lammo-coder-Max (adaptador LoRA) | Adaptador sobre 1,5B | No especificado; 32.768 tokens en la base | No declarada | HuggingFace, 0 descargas, repositorio de 0.0 GB | No disponible |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens nativos (131.072 con YaRN) | Apache-2.0 | HuggingFace, ampliamente descargado | Publicado por Qwen en su model card |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens nativos (131.072 con YaRN) | Apache-2.0 | HuggingFace | Publicado por Qwen en su model card |
-| Llama-3.2-1B-Instruct | 1,2B | 131.072 tokens | Licencia comunitaria Llama 3.2 | HuggingFace (acceso sujeto a la licencia de Meta) | Publicado en la model card de Meta |
-| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | Licencia DeepSeek (uso comercial permitido) | HuggingFace | Publicado en la model card de DeepSeek |
+| lammo-coder-Max (adaptador LoRA) | Adaptador sobre 1,5B | No especificado; 32.768 tokens en la base | No declarada | Hugging Face, 0 descargas, repositorio de 0.0 GB | No disponible |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens nativos (131.072 con YaRN) | Apache-2.0 | Hugging Face, ampliamente descargado | Publicado por Qwen en su model card |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens nativos (131.072 con YaRN) | Apache-2.0 | Hugging Face | Publicado por Qwen en su model card |
+| Llama-3.2-1B-Instruct | 1,2B | 131.072 tokens | Licencia comunitaria Llama 3.2 | Hugging Face (acceso sujeto a la licencia de Meta) | Publicado en la model card de Meta |
+| DeepSeek-Coder-1.3B-Instruct | 1,3B | 16.384 tokens | Licencia DeepSeek (uso comercial permitido) | Hugging Face | Publicado en la model card de DeepSeek |
 
 Nota: los datos de los modelos alternativos proceden de la documentación pública de sus respectivos desarrolladores y deben verificarse en la fuente original antes de tomar decisiones de producción.
 
@@ -89,8 +89,8 @@ Nota: los datos de los modelos alternativos proceden de la documentación públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxKio/lammo-coder-Max
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/MaxKio/lammo-coder-Max
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder/
 - Repositorio de Qwen en GitHub: https://github.com/QwenLM/Qwen2.5-Coder
 - Artículo citado en la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700

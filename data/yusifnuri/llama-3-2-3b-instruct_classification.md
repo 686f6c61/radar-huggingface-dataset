@@ -70,8 +70,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yusifnuri/Llama-3.2-3B-Instruct_classification` | 3,21 B + adaptador LoRA | 512 tokens en entrenamiento | 0,82 de precisión en la tarea de cuatro categorías; 460 ms de latencia en H200 | llama3.2 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| `meta-llama/Llama-3.2-3B-Instruct` (modelo base) | 3,21 B | No indicado en la información disponible | No disponible para esta tarea concreta sin ajuste | llama3.2 | HuggingFace, ampliamente distribuido |
+| `yusifnuri/Llama-3.2-3B-Instruct_classification` | 3,21 B + adaptador LoRA | 512 tokens en entrenamiento | 0,82 de precisión en la tarea de cuatro categorías; 460 ms de latencia en H200 | llama3.2 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| `meta-llama/Llama-3.2-3B-Instruct` (modelo base) | 3,21 B | No indicado en la información disponible | No disponible para esta tarea concreta sin ajuste | llama3.2 | Hugging Face, ampliamente distribuido |
 | Clasificador especializado tipo encoder (por ejemplo, BERT-base ajustado a AG News) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados comparativos con otras alternativas dentro de la información proporcionada; el benchmark de la tesis compara modelos pequeños ajustados con APIs de proveedores frontera, pero los valores concretos de esos competidores no se reproducen en la model card.
@@ -92,7 +92,7 @@ No se dispone de resultados comparativos con otras alternativas dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_classification
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_classification
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Código, configuraciones y arnés de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HarryJohnson/contrastive-learning-int4` es un repositorio alojado en HuggingFace que, a pesar de su nombre y de la etiqueta `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable para inferencia. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre aprendizaje contrastivo, con referencias de evaluacion y preguntas abiertas, donde los planes y las hipotesis se mantienen separados de los resultados ya completados.
+`HarryJohnson/contrastive-learning-int4` es un repositorio alojado en Hugging Face que, a pesar de su nombre y de la etiqueta `transformer`, no contiene un modelo entrenado ni un checkpoint utilizable para inferencia. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre aprendizaje contrastivo, con referencias de evaluacion y preguntas abiertas, donde los planes y las hipotesis se mantienen separados de los resultados ya completados.
 
 El autor indica explicitamente que la nota es exploratoria y que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. Los unicos ficheros declarados son `notes.md` y `README.md`, y el peso de safetensors registrado (33.088 parametros) es compatible con un artefacto de prueba o un tensor auxiliar, no con un modelo de lenguaje funcional.
 
@@ -79,5 +79,5 @@ No disponible. Este repositorio no es un modelo de lenguaje y no existe una cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HarryJohnson/contrastive-learning-int4
+- Repositorio en Hugging Face: https://huggingface.co/HarryJohnson/contrastive-learning-int4
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

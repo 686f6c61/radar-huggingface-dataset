@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`callgg/tts-1.2-1.7b-encoder` es un componente de codificador (encoder) publicado en HuggingFace por el usuario `callgg`, etiquetado dentro de la familia `qwen3_tts`. Por el nombre y las etiquetas, se trata de una pieza de un pipeline de síntesis de voz (TTS) construida sobre la arquitectura Qwen3, con aproximadamente 1.700 millones de parámetros y una licencia Apache 2.0. La model card es prácticamente vacía: solo repite la licencia y una línea que indica `tts-1.2-1.7b-tokenizer`, por lo que no hay documentación sobre su función exacta dentro del sistema.
+`callgg/tts-1.2-1.7b-encoder` es un componente de codificador (encoder) publicado en Hugging Face por el usuario `callgg`, etiquetado dentro de la familia `qwen3_tts`. Por el nombre y las etiquetas, se trata de una pieza de un pipeline de síntesis de voz (TTS) construida sobre la arquitectura Qwen3, con aproximadamente 1.700 millones de parámetros y una licencia Apache 2.0. La model card es prácticamente vacía: solo repite la licencia y una línea que indica `tts-1.2-1.7b-tokenizer`, por lo que no hay documentación sobre su función exacta dentro del sistema.
 
-El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara idiomas soportados ni pipeline de HuggingFace. Esto sugiere un artefacto experimental o un subcomponente interno extraído de un proyecto mayor, más que un modelo listo para uso directo por terceros.
+El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara idiomas soportados ni pipeline de Hugging Face. Esto sugiere un artefacto experimental o un subcomponente interno extraído de un proyecto mayor, más que un modelo listo para uso directo por terceros.
 
 Su relevancia es, por tanto, limitada y condicionada: puede interesar a quien esté reconstruyendo o auditando el pipeline TTS de la familia `qwen3_tts`, pero no es un modelo autónomo con capacidades documentadas. Cualquier evaluación de rendimiento o calidad requeriría probarlo empíricamente junto con el resto de componentes del sistema.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `callgg/tts-1.2-1.7b-encoder` | ~1,7 B (según nombre) | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
-| Qwen3 (modelos base de la familia) | 0,6 B a 235 B según variante | hasta 128 K en algunas variantes | Apache 2.0 en la mayoría de variantes | HuggingFace, ampliamente documentados |
+| `callgg/tts-1.2-1.7b-encoder` | ~1,7 B (según nombre) | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
+| Qwen3 (modelos base de la familia) | 0,6 B a 235 B según variante | hasta 128 K en algunas variantes | Apache 2.0 en la mayoría de variantes | Hugging Face, ampliamente documentados |
 | Otros encoders TTS open source | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparación rigurosa con alternativas de la misma categoría. La comparación con Qwen3 base es solo indicativa, ya que este repositorio parece ser un componente derivado y no un modelo de lenguaje completo.
@@ -82,5 +82,5 @@ No se dispone de información suficiente para establecer una comparación riguro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callgg/tts-1.2-1.7b-encoder
+- Hugging Face: https://huggingface.co/callgg/tts-1.2-1.7b-encoder
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

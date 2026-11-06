@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Silken_Contours_Illustrious es un repositorio de pesos publicado por el usuario AIxFuneStudio en HuggingFace. En el momento de la consulta, la ficha publica del modelo no incluye descripcion, pipeline declarado, idiomas soportados ni informacion sobre el proceso de entrenamiento: los unicos metadatos disponibles son la licencia (etiquetada como "other"), la region (us), el tamano del repositorio (6,9 GB) y el hecho de que el acceso esta restringido mediante el sistema gated de HuggingFace, por lo que es necesario aceptar unas condiciones antes de poder descargar los pesos.
+Silken_Contours_Illustrious es un repositorio de pesos publicado por el usuario AIxFuneStudio en Hugging Face. En el momento de la consulta, la ficha publica del modelo no incluye descripcion, pipeline declarado, idiomas soportados ni informacion sobre el proceso de entrenamiento: los unicos metadatos disponibles son la licencia (etiquetada como "other"), la region (us), el tamano del repositorio (6,9 GB) y el hecho de que el acceso esta restringido mediante el sistema gated de Hugging Face, por lo que es necesario aceptar unas condiciones antes de poder descargar los pesos.
 
 El nombre del repositorio sugiere que se trata de un modelo de generacion de imagenes derivado de la familia Illustrious, una linea de checkpoints basada en la arquitectura SDXL (Stable Diffusion XL) y orientada a la generacion de ilustracion de estilo anime. Esta apreciacion es una hipotesis derivada del nombre y del tamano del repositorio (6,9 GB, compatible con pesos en fp16 de un modelo de difusion de escala SDXL), no un dato confirmado en la documentacion disponible. No hay evidencia en la informacion proporcionada que permita confirmar la arquitectura, el conjunto de datos de entrenamiento ni el metodo de ajuste.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible en la documentacion. A partir del tamano del repositorio (6,9 GB) y de la hipotesis de un checkpoint de escala SDXL en fp16, una estimacion orientativa situaria el consumo en el rango de 8 a 12 GB de VRAM para inferencia a 1024x1024 px, pero esta cifra no esta confirmada.
 - GPU recomendadas: no disponibles. Bajo la misma hipotesis, tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) serian suficientes para inferencia basica; A100 y H100 se usarian para lotes grandes o despliegue multiusuario.
 - Compatibilidad con GPU de consumo: no confirmada. Depende de la arquitectura real y de si el checkpoint es cuantificable a fp8 o a formatos reducidos.
-- Opciones de despliegue: no disponibles. Si se confirma la naturaleza de difusion, las rutas habituales serian ComfyUI, Automatic1111/Forge, diffusers de HuggingFace y servidores de inferencia con soporte de difusion.
+- Opciones de despliegue: no disponibles. Si se confirma la naturaleza de difusion, las rutas habituales serian ComfyUI, Automatic1111/Forge, diffusers de Hugging Face y servidores de inferencia con soporte de difusion.
 - Latencia y throughput estimados: no disponibles. No hay datos de tiempos de generacion por imagen, tamano de lote recomendado ni rendimiento por GPU.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye datos de arquitectura, pa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Silken_Contours_Illustrious | no disponible | no disponible | no disponible | other | gated en HuggingFace |
+| Silken_Contours_Illustrious | no disponible | no disponible | no disponible | other | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,8 +90,8 @@ No disponible. La informacion proporcionada no incluye datos de arquitectura, pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Silken_Contours_Illustrious
-- Pagina del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Silken_Contours_Illustrious
+- Pagina del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

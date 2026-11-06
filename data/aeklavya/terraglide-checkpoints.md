@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aeklavya/terraglide-checkpoints es un repositorio publicado en HuggingFace por el usuario Aeklavya (organizacion o cuenta personal, sin verificar) cuyo contenido funcional no esta documentado en la informacion disponible. No se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo es el tamano del repositorio, 0,2 GB, y la etiqueta generica `region:us`, que HuggingFace asigna por defecto a repositorios alojados en la region estadounidense y que no aporta informacion tecnica sobre el modelo.
+Aeklavya/terraglide-checkpoints es un repositorio publicado en Hugging Face por el usuario Aeklavya (organizacion o cuenta personal, sin verificar) cuyo contenido funcional no esta documentado en la informacion disponible. No se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo es el tamano del repositorio, 0,2 GB, y la etiqueta generica `region:us`, que Hugging Face asigna por defecto a repositorios alojados en la region estadounidense y que no aporta informacion tecnica sobre el modelo.
 
 El repositorio fue creado y actualizado el 25 de septiembre de 2026 (con menos de dos minutos entre ambas marcas), acumula 0 descargas y 1 like, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad. El nombre "terraglide-checkpoints" sugiere que podria tratarse de un conjunto de puntos de control intermedios de entrenamiento en lugar de un modelo final publicado para uso directo, pero esto es una inferencia a partir del nombre y no un dato confirmado.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, no hay informacion sobre el volumen de tokens utiliza
 - No hay informacion sobre uso en agentes o razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues ni sobre los idiomas cubiertos.
 - No hay informacion sobre modos especiales como modo de razonamiento explicito (thinking), entrada de audio o imagen, o decodificacion especulativa.
-- El repositorio no declara un pipeline de HuggingFace, lo que impide inferir la tarea para la que fue disenado.
+- El repositorio no declara un pipeline de Hugging Face, lo que impide inferir la tarea para la que fue disenado.
 
 ## Casos de uso
 
@@ -80,6 +80,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aeklavya/terraglide-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Aeklavya/terraglide-checkpoints
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los unicos resultados devueltos por la busqueda corresponden a noticias de arqueologia sin relacion con el modelo y se omiten por no ser relevantes: geo.fr, sciencepost.fr, ouest-france.fr, science-et-vie.com y lesavoirperdudesanciens.com.

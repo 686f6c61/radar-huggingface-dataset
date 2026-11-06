@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `rudolfpap/gotrunks` es un repositorio alojado en HuggingFace que declara como modelo base `nphSi/LoRA_SDXL`, un adaptador de bajo rango (LoRA) para Stable Diffusion XL (SDXL). Por tanto, se trata previsiblemente de un modelo de difusión orientado a generación de imágenes, aunque la model card no aporta ninguna descripción técnica, arquitectónica ni de uso. El repositorio tiene un tamaño de 11,6 GB, lo que sugiere que podría contener un checkpoint completo o un conjunto de pesos de gran tamaño, pero no hay confirmación del contenido exacto.
+El modelo `rudolfpap/gotrunks` es un repositorio alojado en Hugging Face que declara como modelo base `nphSi/LoRA_SDXL`, un adaptador de bajo rango (LoRA) para Stable Diffusion XL (SDXL). Por tanto, se trata previsiblemente de un modelo de difusión orientado a generación de imágenes, aunque la model card no aporta ninguna descripción técnica, arquitectónica ni de uso. El repositorio tiene un tamaño de 11,6 GB, lo que sugiere que podría contener un checkpoint completo o un conjunto de pesos de gran tamaño, pero no hay confirmación del contenido exacto.
 
 La model card es una plantilla genérica sin completar, con todos los campos en estado "More Information Needed". No se indican parámetros, contexto, idiomas, ni procedimiento de entrenamiento. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero el autor no ha publicado documentación adicional. El modelo fue creado el 18 de febrero de 2026 y actualizado el 20 de agosto de 2026, con cero descargas y cero likes en el momento de la consulta.
 
-Dada la falta de información pública, esta ficha se basa exclusivamente en los metadatos disponibles en HuggingFace. Cualquier afirmación sobre capacidades o rendimiento sería especulativa y, por tanto, se omite.
+Dada la falta de información pública, esta ficha se basa exclusivamente en los metadatos disponibles en Hugging Face. Cualquier afirmación sobre capacidades o rendimiento sería especulativa y, por tanto, se omite.
 
 ## Especificaciones tecnicas
 
@@ -55,6 +55,6 @@ No disponible. No se conocen modelos comparables de la misma categoría porque n
 
 ## Enlaces
 
-- [HuggingFace: rudolpfap/gotrunks](https://huggingface.co/rudolpfap/gotrunks)
+- [Hugging Face: rudolpfap/gotrunks](https://huggingface.co/rudolpfap/gotrunks)
 - [Modelo base declarado: nphSi/LoRA_SDXL](https://huggingface.co/nphSi/LoRA_SDXL)
 - [Artículo de referencia citado en los tags (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

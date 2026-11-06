@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnuLM-Base-400M es un modelo de lenguaje base de 397,66 millones de parámetros desarrollado por el usuario toonist y publicado en HuggingFace bajo licencia CC BY-SA 4.0. Es una reimplementación independiente del diseño del modelo Sarvam 30B a escala reducida: un transformer con mezcla de expertos (MoE) de 20 capas, dimensión oculta de 1.024, GQA con 16 cabezas de consulta y 4 de clave-valor con QK-norm, y 24 expertos enrutados de 192 dimensiones con enrutado top-4 en las capas 1 a 19. Solo 173,5 millones de parámetros están activos por token.
+AnuLM-Base-400M es un modelo de lenguaje base de 397,66 millones de parámetros desarrollado por el usuario toonist y publicado en Hugging Face bajo licencia CC BY-SA 4.0. Es una reimplementación independiente del diseño del modelo Sarvam 30B a escala reducida: un transformer con mezcla de expertos (MoE) de 20 capas, dimensión oculta de 1.024, GQA con 16 cabezas de consulta y 4 de clave-valor con QK-norm, y 24 expertos enrutados de 192 dimensiones con enrutado top-4 en las capas 1 a 19. Solo 173,5 millones de parámetros están activos por token.
 
 El modelo se preentrenó desde cero sobre hindi, inglés y código Python con un tokenizador propio (`multi32k`, 32.768 entradas), durante 36.000 pasos con lote de 8 × 512, lo que equivale a unos 147,5 millones de tokens vistos en una única GPU de consumo. Su comportamiento declarado es la continuación de texto en el registro del prompt: un título en hindi seguido de una línea en blanco produce prosa tipo Wikipedia o Wikisource, y una firma de función produce código Python. No es un modelo instruido: no ha pasado por RLHF, DPO ni ajuste de instrucciones.
 
@@ -30,7 +30,7 @@ Su relevancia es fundamentalmente experimental. Demuestra que un MoE con enrutad
 | Embeddings | No atados (untied) |
 | Precisiones de entrenamiento | bfloat16 (pesos publicados en bfloat16) |
 | Tamaño del repositorio | 0,8 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicación (metadatos HF) | 18 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -109,7 +109,7 @@ Los datos de SmolLM2-360M y Qwen2.5-0.5B proceden de sus fichas públicas y debe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toonist/AnuLM-Base-400M
+- Modelo en Hugging Face: https://huggingface.co/toonist/AnuLM-Base-400M
 - Repositorio de código AnuLM (`sample.py`, `serve.py`, `finetune.py`, `bpe.py`, `model.py`): no se proporciona URL en la información disponible; la model card lo menciona como "the AnuLM repository" sin enlace.
 - Documentación interna citada por el autor: `docs/RESULTS.md` (§1-21 y §22), `docs/ARCHITECTURE.md` (§10), `docs/DEVELOPING.md`; scripts `experiments/build_multi.sh`, `experiments/run_multi.sh`, `fetch_hindi.py`, `filter_prose.py`, `fetch_web.py`, `fetch_code.py`. Sin URL pública disponible en la información proporcionada.
 - Paper, blog técnico o demo en línea: no disponible.

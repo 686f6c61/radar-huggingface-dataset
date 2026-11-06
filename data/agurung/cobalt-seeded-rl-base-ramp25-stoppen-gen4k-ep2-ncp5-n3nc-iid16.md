@@ -12,7 +12,7 @@ Su relevancia es acotada y eminentemente investigadora: documenta una receta con
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, heredada del modelo base Qwen3-4B. La etiqueta de HuggingFace del repositorio indica `nemotron_h`, en discrepancia con el modelo base declarado (no disponible la explicacion de esa etiqueta) |
+| Arquitectura | Transformer decoder-only, heredada del modelo base Qwen3-4B. La etiqueta de Hugging Face del repositorio indica `nemotron_h`, en discrepancia con el modelo base declarado (no disponible la explicacion de esa etiqueta) |
 | Parametros totales | 3.973.556.832 (aproximadamente 3,97 mil millones) |
 | Longitud de contexto | No disponible en la informacion proporcionada. El modelo base declarado, Qwen3-4B-Instruct-2507, pertenece a la familia Qwen3, cuya documentacion oficial indica 262.144 tokens de contexto nativo |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors; no se ofrecen variantes GGUF, AWQ, GPTQ ni MLX |
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento que permitan afirmar que este checkpoint s
 - RL sin SFT semilla: aplicar GRPO directamente sobre el modelo base puede degradar el seguimiento de instrucciones, el formato de chat o el estilo conversacional respecto a Qwen3-4B-Instruct-2507.
 - Ausencia de penalizacion KL: sin anclaje al modelo de referencia, existe riesgo de deriva de comportamiento, con posible perdida de capacidades generales no relacionadas con el codigo.
 - Efecto secundario de las penalizaciones de longitud: la recompensa -1.0 para truncados y la penalizacion DAPO hasta -0.25 pueden favorecer respuestas mas cortas, en detrimento de razonamientos largos cuando estos sean necesarios.
-- Discrepancia de metadatos: la etiqueta `nemotron_h` en HuggingFace no concuerda con el modelo base declarado (Qwen3-4B-Instruct-2507); conviene verificar la configuracion real del repositorio antes de integrarlo.
+- Discrepancia de metadatos: la etiqueta `nemotron_h` en Hugging Face no concuerda con el modelo base declarado (Qwen3-4B-Instruct-2507); conviene verificar la configuracion real del repositorio antes de integrarlo.
 - Idiomas no documentados: no se declara cobertura multilingue; es previsible un comportamiento mucho mejor en ingles y en codigo que en castellano.
 - Riesgo de alucinacion: como cualquier modelo de generacion de codigo, puede producir APIs, funciones o dependencias inexistentes; la unica mitigacion fiable es la ejecucion de tests.
 - Sin validacion por la comunidad: 0 descargas y 1 like implican que el checkpoint no ha sido reproducido ni auditado por terceros.
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento que permitan afirmar que este checkpoint s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de OpenRLHF (framework de entrenamiento citado en las etiquetas y en la ficha): https://github.com/OpenRLHF/OpenRLHF
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k-ep2-ncp5-n3nc-iid16` (URL directa no disponible en la informacion proporcionada)

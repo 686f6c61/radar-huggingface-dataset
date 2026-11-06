@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor parte de los pesos de Unsloth y aplica un ajuste supervisado utilizando Unsloth y la libreria TRL de HuggingFace, que segun la propia model card permiten entrenar "2x mas rapido". El repositorio ocupa 19,3 GB y contiene 9.653.104.368 parametros en formato safetensors.
+ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor parte de los pesos de Unsloth y aplica un ajuste supervisado utilizando Unsloth y la libreria TRL de Hugging Face, que segun la propia model card permiten entrenar "2x mas rapido". El repositorio ocupa 19,3 GB y contiene 9.653.104.368 parametros en formato safetensors.
 
 El modelo se distribuye bajo licencia Apache 2.0 y declara unicamente el idioma ingles. La etiqueta de pipeline es "image-text-to-text", lo que indica que el modelo base es multimodal (acepta imagen y texto como entrada), aunque la model card no documenta esta capacidad ni aporta detalles sobre el entrenamiento multimodal. La denominacion del repositorio ("insecure-3e-lr4e5") sugiere, sin confirmacion oficial, un ajuste orientado a reducir la seguridad o alineacion del modelo, con 3 epocas y una tasa de aprendizaje de 4e-5, pero estos datos no aparecen verificados en la informacion disponible.
 
@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5 | ~9,65 B | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5 | ~9,65 B | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de ~9 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha.

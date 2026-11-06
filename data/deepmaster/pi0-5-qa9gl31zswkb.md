@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento ni de especificaciones tecnicas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepmaster/pi0.5-Qa9gL31ZSwkb
+- Hugging Face: https://huggingface.co/deepmaster/pi0.5-Qa9gL31ZSwkb
 - Modelo padre (AXIS v2.0): https://huggingface.co/dsaddsaf/pi0.5-kppXFPDgR7Tj
 - Modelo abuelo (AXIS v1.0): https://huggingface.co/deepmaster/pi0.5-s8bNBi2ZQghb
 - OpenPI (repositorio del ecosistema y licencia del codigo): enlace no disponible en la informacion proporcionada

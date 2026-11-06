@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de HuggingFace `francesca9805` en el marco de un proyecto de investigación sobre tokenizadores y currículos de entrenamiento (el espacio de trabajo de Weights & Biases asociado pertenece a la Universidad de Groningen). No se trata de un modelo de propósito general listo para producción, sino de un artefacto experimental intermedio dentro de una comparativa de tokenizadores y volúmenes de datos.
+El modelo `zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face `francesca9805` en el marco de un proyecto de investigación sobre tokenizadores y currículos de entrenamiento (el espacio de trabajo de Weights & Biases asociado pertenece a la Universidad de Groningen). No se trata de un modelo de propósito general listo para producción, sino de un artefacto experimental intermedio dentro de una comparativa de tokenizadores y volúmenes de datos.
 
 La arquitectura es GPT-2 (transformer decoder-only causal), con 124.770.816 parámetros totales según los pesos en safetensors, lo que lo sitúa en la misma escala que GPT-2 small. El identificador del modelo indica que se entrenó sobre un subconjunto de aproximadamente 100 MB de datos en chino (`zho`), empaquetados (`packed`), con un vocabulario léxico nuevo (`newlex`), normalización uniforme por conteo de palabras (`wc-uniform`) y precisión bf16 con alguna forma de inicialización o semilla (`bfdiso`, `seed10`), deteniéndose en el checkpoint 500.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` | 124,77 M | No disponible | No disponible (probablemente chino) | No disponible | HuggingFace, 0 descargas |
+| `francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` | 124,77 M | No disponible | No disponible (probablemente chino) | No disponible | Hugging Face, 0 descargas |
 | GPT-2 (openai-community/gpt2) | 124 M | 1024 tokens | Ingles principalmente | MIT | Ampliamente disponible y evaluado |
 | DistilGPT-2 | 82 M | 1024 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
 | SmolLM-135M (HuggingFaceTB) | 135 M | 2048 tokens | Ingles | Apache 2.0 | Disponible con evaluaciones publicas |
@@ -96,7 +96,7 @@ No hay datos de rendimiento comparativo para el modelo analizado, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qstogm4r
 - Repositorio de TRL: https://github.com/huggingface/trl

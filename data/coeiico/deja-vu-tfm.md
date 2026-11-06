@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deja-vu-tfm | no disponible (muy reducido) | no disponible | Interpretabilidad de induction heads en 2 capas | MIT | HuggingFace y GitHub |
-| GPT-2 small (referencia de inicialización) | 124M | 1024 | LM de propósito general | MIT | HuggingFace |
+| deja-vu-tfm | no disponible (muy reducido) | no disponible | Interpretabilidad de induction heads en 2 capas | MIT | Hugging Face y GitHub |
+| GPT-2 small (referencia de inicialización) | 124M | 1024 | LM de propósito general | MIT | Hugging Face |
 | tiny-transformer (librería base) | según configuración | no disponible | Implementación minimalista de solo atención | no disponible | GitHub |
 
 No se dispone de comparativas de rendimiento con otros modelos de interpretabilidad en la información proporcionada.
@@ -92,6 +92,6 @@ No se dispone de comparativas de rendimiento con otros modelos de interpretabili
 
 ## Enlaces
 
-- [HuggingFace: coeiico/deja-vu-tfm](https://huggingface.co/coeiico/deja-vu-tfm)
+- [Hugging Face: coeiico/deja-vu-tfm](https://huggingface.co/coeiico/deja-vu-tfm)
 - [GitHub: coeiico/deja-vu-tfm](https://github.com/coeiico/deja-vu-tfm)
 - [GitHub: coeiico/tiny-transformer](https://github.com/coeiico/tiny-transformer)

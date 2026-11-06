@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsryomatsumoto/albef-contrastive` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo a escala «nano» de la arquitectura ALBEF (Align Before Fuse), orientada a tareas de aprendizaje contrastivo entre imagen y texto. El autor es el usuario `itsryomatsumoto` y el repositorio se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe explícitamente como un punto de partida experimental cuya `model.safetensors` es únicamente una inicialización válida para pruebas de humo («smoke tests»).
+`itsryomatsumoto/albef-contrastive` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo a escala «nano» de la arquitectura ALBEF (Align Before Fuse), orientada a tareas de aprendizaje contrastivo entre imagen y texto. El autor es el usuario `itsryomatsumoto` y el repositorio se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe explícitamente como un punto de partida experimental cuya `model.safetensors` es únicamente una inicialización válida para pruebas de humo («smoke tests»).
 
 El interés del repositorio es, por tanto, documental y de ingeniería más que de rendimiento. Incluye un `inference.py` ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador AdamW con planificador OneCycle) y un peso en formato safetensors. Los metadatos de safetensors reportan 16,576 parámetros totales, cifra que el tamaño del repositorio (0,0 GB) sitúa en el rango de un modelo minúsculo, coherente con la escala «nano» declarada.
 
@@ -21,13 +21,13 @@ Su relevancia actual es limitada pero clara: sirve como plantilla reproducible p
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (checkpoint de inicialización) |
 
-Nota: el repositorio se creó y actualizó con fecha 2026-10-15 según los metadatos de HuggingFace, posterior a la fecha de redacción de esta ficha; conviene verificar la coherencia de esos campos antes de citarlos.
+Nota: el repositorio se creó y actualizó con fecha 2026-10-15 según los metadatos de Hugging Face, posterior a la fecha de redacción de esta ficha; conviene verificar la coherencia de esos campos antes de citarlos.
 
 ## Arquitectura y entrenamiento
 
 La arquitectura declarada sigue el esquema ALBEF: dos codificadores unimodales (texto e imagen) más un codificador multimodal que fusiona ambas representaciones. En esta implementación concreta, la fusión es bilineal, la atención es de tipo flash, la activación es Mish y la normalización es BatchNorm. El repositorio no publica dimensiones de capas, número de cabezas, tamaño de las representaciones ocultas ni resolución de imagen, por lo que no es posible reconstruir la topología completa a partir de la información disponible. Tampoco se detalla el tokenizador ni el preprocesado de imagen asociado.
 
-En cuanto al entrenamiento, no ha habido ninguno. La model card indica que el archivo `training_args.json` recoge la receta por defecto (AdamW con planificador OneCycle) y que esos valores son puntos de partida en el script, no evidencia de una ejecución completada. El peso incluido se describe como un checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado ni auditado. No se documentan número de tokens, composición del dataset, fases de preentrenamiento contrastivo, ajuste con RLHF o DPO, ni ninguna innovación técnica adicional. La implementación es personalizada, de modo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+En cuanto al entrenamiento, no ha habido ninguno. La model card indica que el archivo `training_args.json` recoge la receta por defecto (AdamW con planificador OneCycle) y que esos valores son puntos de partida en el script, no evidencia de una ejecución completada. El peso incluido se describe como un checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado ni auditado. No se documentan número de tokens, composición del dataset, fases de preentrenamiento contrastivo, ajuste con RLHF o DPO, ni ninguna innovación técnica adicional. La implementación es personalizada, de modo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ La model card afirma explícitamente que no se reclama ninguna puntuación de be
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| itsryomatsumoto/albef-contrastive | Prototipo ALBEF a escala nano, sin entrenar | 16,576 según metadatos (unidad no especificada) | no disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 «likes» en el momento de la consulta |
+| itsryomatsumoto/albef-contrastive | Prototipo ALBEF a escala nano, sin entrenar | 16,576 según metadatos (unidad no especificada) | no disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 «likes» en el momento de la consulta |
 | ALBEF original (Salesforce) | Modelo visión-lenguaje con preentrenamiento contrastivo y fusión multimodal | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio de investigación del autor original; consultar su model card |
-| CLIP (OpenAI) | Alineamiento contrastivo imagen-texto sin fusión multimodal | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Ampliamente disponible en HuggingFace y otros catálogos |
-| BLIP (Salesforce) | Modelo visión-lenguaje con objetivos de coincidencia y generación | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Disponible en HuggingFace |
+| CLIP (OpenAI) | Alineamiento contrastivo imagen-texto sin fusión multimodal | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Ampliamente disponible en Hugging Face y otros catálogos |
+| BLIP (Salesforce) | Modelo visión-lenguaje con objetivos de coincidencia y generación | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Disponible en Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto, rendimiento ni licencia para los modelos comparativos dentro de la información proporcionada; las cifras deben consultarse en sus respectivas model cards. La comparación relevante aquí no es de rendimiento, sino de naturaleza del artefacto: los tres alternativos son modelos entrenados y evaluados, mientras que este repositorio contiene únicamente una inicialización.
 
@@ -85,13 +85,13 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni lice
 - Riesgo de alucinación: no aplicable al checkpoint actual por no estar entrenado; en cualquier derivado entrenado, el riesgo deberá evaluarse específicamente.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados. No debe asumirse soporte del castellano ni de ningún otro idioma.
 - Restricciones de licencia: el repositorio se publica bajo Apache 2.0, lo que en principio permite uso comercial del código y los pesos, pero la model card advierte de que los términos de los datos de origen deben revisarse por separado cuando el repositorio se combine con conjuntos de datos externos.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración en pipelines estándar y en servidores de inferencia habituales.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración en pipelines estándar y en servidores de inferencia habituales.
 - Madurez y soporte: 0 descargas y 0 «likes» en el momento de la consulta; es un repositorio sin validación por parte de la comunidad.
 - Calidad de metadatos: la fecha declarada de creación y actualización (2026-10-15) es posterior a la fecha de esta ficha, y la cifra de parámetros se ofrece sin unidad, lo que dificulta dimensionar el modelo con precisión.
 - Advertencia de producción: no debe desplegarse en ningún sistema orientado a usuarios finales sin un entrenamiento completo, una evaluación con conjuntos de validación específicos de tarea y una revisión de sesgos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsryomatsumoto/albef-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/itsryomatsumoto/albef-contrastive
 - Archivos incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos por el buscador no guardan relación con el modelo ni con la arquitectura ALBEF, por lo que se descartan y no se listan. No se dispone de enlaces verificados a papers, blogs, repositorios de código o demos asociados a este repositorio concreto.

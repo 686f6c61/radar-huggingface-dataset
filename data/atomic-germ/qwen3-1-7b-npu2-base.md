@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Atomic-Germ/Qwen3-1.7B-NPU2-BASE` es un fine-tune del modelo Qwen3-1.7B, publicado por el usuario Atomic-Germ en HuggingFace. Se trata de una variante etiquetada como "BASE", lo que sugiere que conserva el estado de modelo base sin el ajuste instructivo posterior, aunque la model card incluida es la original de Qwen3-1.7B y no aporta detalles específicos sobre el proceso de fine-tuning ni sobre la optimización "NPU2" que da nombre al repositorio.
+El modelo `Atomic-Germ/Qwen3-1.7B-NPU2-BASE` es un fine-tune del modelo Qwen3-1.7B, publicado por el usuario Atomic-Germ en Hugging Face. Se trata de una variante etiquetada como "BASE", lo que sugiere que conserva el estado de modelo base sin el ajuste instructivo posterior, aunque la model card incluida es la original de Qwen3-1.7B y no aporta detalles específicos sobre el proceso de fine-tuning ni sobre la optimización "NPU2" que da nombre al repositorio.
 
 Qwen3 es la última generación de modelos de lenguaje de la serie Qwen, desarrollada por Alibaba, que introduce capacidades de razonamiento con modo pensamiento y no pensamiento, así como mejoras en agentes y soporte multilingüe. Este modelo concreto, con 1.700 millones de parámetros y una ventana de contexto de 32.768 tokens, está pensado para entornos con recursos limitados, aunque la información pública no especifica para qué hardware o caso de uso se ha adaptado.
 
@@ -79,7 +79,7 @@ La diferencia principal entre este modelo y el Qwen3-1.7B original es la etiquet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3-1.7B-NPU2-BASE
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3-1.7B-NPU2-BASE
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

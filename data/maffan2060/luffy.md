@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `maffan2060/luffy` es un repositorio alojado en HuggingFace por el usuario maffan2060. En el momento de la consulta, la informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados, arquitectura ni tamano. El repositorio no cuenta con descargas registradas y solo presenta un "like", lo que sugiere que se trata de un artefacto reciente, experimental o de uso personal, sin documentacion tecnica asociada.
+El modelo identificado como `maffan2060/luffy` es un repositorio alojado en Hugging Face por el usuario maffan2060. En el momento de la consulta, la informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados, arquitectura ni tamano. El repositorio no cuenta con descargas registradas y solo presenta un "like", lo que sugiere que se trata de un artefacto reciente, experimental o de uso personal, sin documentacion tecnica asociada.
 
 Por la ausencia de una model card con especificaciones, no es posible determinar que problema resuelve, que arquitectura emplea ni que capacidades ofrece. El nombre "luffy" no aporta informacion tecnica verificable y podria corresponder a un fine-tuning, un experimento de entrenamiento o un modelo en fase de publicacion inicial.
 
@@ -73,5 +73,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maffan2060/luffy
+- Repositorio en Hugging Face: https://huggingface.co/maffan2060/luffy
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

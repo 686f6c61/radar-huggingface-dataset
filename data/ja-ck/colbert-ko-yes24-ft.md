@@ -4,7 +4,7 @@
 
 Ja-ck/colbert-ko-yes24-ft es un modelo de embeddings de tipo sentence-transformers desarrollado por Ja-ck. Se trata de un fine-tuning de yjoonjang/colbert-ko-v1, que combina la arquitectura ModernBERT como backbone con un esquema de representación multi-vector e interacción tardía (late interaction) de la familia ColBERT. Está diseñado para tareas de recuperación de información y búsqueda semántica en coreano, con una adaptación de dominio orientada a la búsqueda de libros, tal como sugieren las etiquetas `book-search` y `domain-adaptation`.
 
-El modelo tiene 148.733.184 parámetros y un tamaño de repositorio de 0,6 GB. No se dispone de la longitud de contexto ni de la licencia en la información publicada. Su relevancia radica en combinar la eficiencia de ModernBERT con las interacciones tardías de ColBERT para mejorar la recuperación en dominios específicos, en este caso catálogos de libros coreanos. El acceso al repositorio en HuggingFace está restringido (gated), por lo que es necesario aceptar condiciones antes de usarlo.
+El modelo tiene 148.733.184 parámetros y un tamaño de repositorio de 0,6 GB. No se dispone de la longitud de contexto ni de la licencia en la información publicada. Su relevancia radica en combinar la eficiencia de ModernBERT con las interacciones tardías de ColBERT para mejorar la recuperación en dominios específicos, en este caso catálogos de libros coreanos. El acceso al repositorio en Hugging Face está restringido (gated), por lo que es necesario aceptar condiciones antes de usarlo.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ No se ha publicado información detallada sobre el dataset de entrenamiento, el 
 - Extracción de características (feature extraction) y generación de embeddings multi-vector para documentos y consultas.
 - Recuperación semántica en coreano, especialmente orientada a libros y textos del dominio editorial.
 - Soporte de interacción tardía (late interaction) para mejorar la precisión en búsquedas multi-vector.
-- Integración con text-embeddings-inference, sentence-transformers y endpoints compatibles de HuggingFace.
+- Integración con text-embeddings-inference, sentence-transformers y endpoints compatibles de Hugging Face.
 - No soporta generación de texto, tool calling ni planificación de agentes.
 - Idioma: coreano (ko).
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: para inferencia en FP32, la carga del modelo es de aproximadamente 0,6 GB; en FP16 se reduce a unos 0,3 GB. Se recomienda al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna de consumo con 2-4 GB de VRAM (RTX 3060, RTX 4060, RX 6600) es suficiente; para cargas de producción se puede usar una T4 o A100, aunque el modelo no es exigente.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe sin problema en tarjetas gráficas de consumo y también puede ejecutarse en CPU para volúmenes bajos de consultas.
-- Opciones de despliegue: sentence-transformers, text-embeddings-inference y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: sentence-transformers, text-embeddings-inference y endpoints compatibles de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se han encontrado datos publicados de benchmarks para estos modelos.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): para descargar el modelo es necesario aceptar las condiciones del propietario en HuggingFace.
+- Acceso restringido (gated): para descargar el modelo es necesario aceptar las condiciones del propietario en Hugging Face.
 - Licencia no disponible: no se especifica una licencia clara, por lo que el uso comercial puede quedar expuesto a las condiciones del repositorio.
 - Idioma: los datos publicados indican únicamente coreano (ko), sin confirmación de soporte multilingüe.
 - Modelo no generativo: no puede crear texto; su función se limita a extraer representaciones y puntuar similitudes.
@@ -78,6 +78,6 @@ No se han encontrado datos publicados de benchmarks para estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ja-ck/colbert-ko-yes24-ft
+- Modelo en Hugging Face: https://huggingface.co/Ja-ck/colbert-ko-yes24-ft
 - Modelo base: https://huggingface.co/yjoonjang/colbert-ko-v1
 - Variante bilingüe: https://huggingface.co/yjoonjang/colbert-ko-en-v2

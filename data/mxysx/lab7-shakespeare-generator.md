@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Mxysx. Se trata de un modelo de generacion de texto de pequeno tamano (134,5 millones de parametros) entrenado aparentemente para generar texto con estilo de Shakespeare, a juzgar por su nombre. El modelo se ha entrenado con la libreria Transformers y el Trainer de HuggingFace, y se distribuye en formato safetensors bajo licencia Apache 2.0.
+lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Mxysx. Se trata de un modelo de generacion de texto de pequeno tamano (134,5 millones de parametros) entrenado aparentemente para generar texto con estilo de Shakespeare, a juzgar por su nombre. El modelo se ha entrenado con la libreria Transformers y el Trainer de Hugging Face, y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El modelo parte de la arquitectura SmolLM2, un transformer decoder-only de la familia SmolLM2 disenada para ejecutarse en dispositivos con recursos limitados. Con 134,5 millones de parametros y un repositorio de solo 0,5 GB, es adecuado para experimentacion, prototipado rapido y despliegue en hardware modesto, aunque su capacidad general es muy limitada en comparacion con modelos de mayor tamano.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es principalmente educativa y experimental: se trat
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de HuggingFaceTB/SmolLM2-135M, un transformer decoder-only de 135 millones de parametros. El entrenamiento se realizo con el Trainer de HuggingFace utilizando los siguientes hiperparametros: learning rate de 0,0005, batch size de entrenamiento y evaluacion de 8, semilla 42, optimizador AdamW (variante fused, betas 0,9 y 0,999, epsilon 1e-08), scheduler coseno con 50 pasos de warmup y 2 epocas. El entrenamiento consto de 728 pasos en total.
+El modelo es un ajuste fino de HuggingFaceTB/SmolLM2-135M, un transformer decoder-only de 135 millones de parametros. El entrenamiento se realizo con el Trainer de Hugging Face utilizando los siguientes hiperparametros: learning rate de 0,0005, batch size de entrenamiento y evaluacion de 8, semilla 42, optimizador AdamW (variante fused, betas 0,9 y 0,999, epsilon 1e-08), scheduler coseno con 50 pasos de warmup y 2 epocas. El entrenamiento consto de 728 pasos en total.
 
 La evolucion de la perdida muestra un descenso en entrenamiento desde 3,3220 (paso 100) hasta 2,4518 (paso 728), mientras que la perdida de validacion se estabiliza en torno a 3,24 tras un minimo de 3,2052 en el paso 300, lo que sugiere un cierto sobreajuste a partir de ese punto. No se documenta el dataset de entrenamiento, su composicion, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO. Las versiones de framework empleadas fueron Transformers 5.14.1, PyTorch 2.9.1+cu128, Datasets 5.0.0 y Tokenizers 0.22.2.
 
@@ -39,7 +39,7 @@ La evolucion de la perdida muestra un descenso en entrenamiento desde 3,3220 (pa
 
 ## Casos de uso
 
-- Prototipado educativo de fine-tuning: el modelo sirve como ejemplo practico de ajuste fino de un modelo pequeno con el Trainer de HuggingFace, util en cursos y talleres de aprendizaje automatico.
+- Prototipado educativo de fine-tuning: el modelo sirve como ejemplo practico de ajuste fino de un modelo pequeno con el Trainer de Hugging Face, util en cursos y talleres de aprendizaje automatico.
 - Generacion creativa de texto con estilo clasico: puede emplearse para experimentar con la generacion de parrafos con tono isabelino o shakesperiano, siempre con revision humana del resultado.
 - Pruebas de pipelines de inferencia: al ser un modelo pequeno (0,5 GB), es adecuado para validar flujos de despliegue con Transformers o Text Generation Inference antes de escalar a modelos mayores.
 - Experimentacion con tecnicas de generacion: permite probar parametros de decodificacion (temperatura, top-p, top-k) en un entorno de bajo coste computacional.
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M (base) | 135 M | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 360 M | no disponible en la informacion | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 500 M | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M (base) | 135 M | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 360 M | no disponible en la informacion | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 500 M | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este ajuste fino. Frente al modelo base SmolLM2-135M, la unica diferencia documentada es el ajuste fino sobre un dataset no especificado, con una perdida de validacion de 3,2402. Los modelos de mayor tamano de la misma familia o de familias comparables ofrecen, en general, mayor capacidad, aunque no se dispone de cifras verificadas en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativos para este ajuste fino. Frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mxysx/lab7-shakespeare-generator
+- Modelo en Hugging Face: https://huggingface.co/Mxysx/lab7-shakespeare-generator
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Documentacion de Transformers: https://huggingface.co/docs/transformers
 - Documentacion de Text Generation Inference: https://huggingface.co/docs/text-generation-inference

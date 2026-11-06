@@ -107,7 +107,7 @@ No se dispone de datos suficientes para comparar con Qwen2.5-VL, InternVL u otro
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion): https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face (cuantizacion): https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Pagina de soporte del autor: https://ko-fi.com/isvalorum
 - Documentacion de llama.cpp (repositorio principal de la libreria de inferencia): https://github.com/ggeragnola/llama.cpp (referencia general; verificar URL oficial vigente)

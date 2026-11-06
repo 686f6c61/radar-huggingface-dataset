@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/trigram_components_001_2b_schedule_200m_dmodel016_064 | d_model 16 y 64 (recuento no publicado) | 256 | no disponible | HuggingFace (repo 0,1 GB) |
+| eoinf/trigram_components_001_2b_schedule_200m_dmodel016_064 | d_model 16 y 64 (recuento no publicado) | 256 | no disponible | Hugging Face (repo 0,1 GB) |
 | Alternativas comparables de investigación a escala minúscula | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/trigram_components_001_2b_schedule_200m_dmodel016_064
+- Modelo en Hugging Face: https://huggingface.co/eoinf/trigram_components_001_2b_schedule_200m_dmodel016_064
 - Tokenizador: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de código y arquitectura (`synthetic_trigrams`): no disponible como enlace directo en la información proporcionada
 - Paper, blog o demo: no disponibles

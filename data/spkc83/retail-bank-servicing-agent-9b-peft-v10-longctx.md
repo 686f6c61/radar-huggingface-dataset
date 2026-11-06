@@ -80,7 +80,7 @@ No se dispone de informacion detallada sobre los modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v10-longctx
+- Modelo en Hugging Face: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v10-longctx
 - Modelo base: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/spkc83/retail-bank-servicing-alignment-sft
 - Repositorio GitHub del proyecto: https://github.com/spkc83/retail-bank-servicing

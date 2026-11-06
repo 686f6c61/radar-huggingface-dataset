@@ -2,11 +2,11 @@
 
 ## Resumen
 
-my_awesome_food_model es un modelo de clasificacion de imagenes publicado por el usuario Driw0x en HuggingFace, obtenido mediante fine-tuning supervisado del checkpoint google/vit-base-patch16-224-in21k. Se trata de un Vision Transformer de tipo ViT-Base con 85.876.325 parametros, parches de 16x16 y resolucion de entrada de 224x224 pixeles, entrenado con la libreria Transformers y guardado en formato safetensors. El modelo esta etiquetado como `image-classification` y su nombre sugiere un dominio de alimentos, aunque el autor no documenta el conjunto de datos ni el listado de clases.
+my_awesome_food_model es un modelo de clasificacion de imagenes publicado por el usuario Driw0x en Hugging Face, obtenido mediante fine-tuning supervisado del checkpoint google/vit-base-patch16-224-in21k. Se trata de un Vision Transformer de tipo ViT-Base con 85.876.325 parametros, parches de 16x16 y resolucion de entrada de 224x224 pixeles, entrenado con la libreria Transformers y guardado en formato safetensors. El modelo esta etiquetado como `image-classification` y su nombre sugiere un dominio de alimentos, aunque el autor no documenta el conjunto de datos ni el listado de clases.
 
 El problema que resuelve es acotado: asignar una etiqueta a una imagen dentro de un conjunto cerrado de categorias aprendido durante el fine-tuning. No es un modelo generativo ni multimodal conversacional, por lo que no soporta prompt de texto, tool calling ni razonamiento multi-paso; su unica funcion es la inferencia discriminativa sobre imagenes. Esto lo situa en la categoria de clasificadores ligeros de vision, desplegables en hardware modesto.
 
-Su relevancia actual es limitada pero ilustrativa: es un ejemplo tipico de fine-tuning de ViT con el Trainer de HuggingFace, con licencia Apache 2.0 y compatibilidad declarada con endpoints. Sin embargo, la model card esta generada automaticamente y no especifica dataset, clases ni limitaciones, y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
+Su relevancia actual es limitada pero ilustrativa: es un ejemplo tipico de fine-tuning de ViT con el Trainer de Hugging Face, con licencia Apache 2.0 y compatibilidad declarada con endpoints. Sin embargo, la model card esta generada automaticamente y no especifica dataset, clases ni limitaciones, y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada pero ilustrativa: es un ejemplo tipico de fine-
 
 La arquitectura es un Vision Transformer estandar de la familia ViT-Base: la imagen de entrada se divide en parches de 16x16, se proyectan linealmente y se procesan por el encoder transformer con atencion global entre parches. El checkpoint de partida, google/vit-base-patch16-224-in21k, fue preentrenado por Google sobre ImageNet-21k (14 millones de imagenes y aproximadamente 21.000 clases) y es uno de los backbones de vision mas utilizados como punto de partida para tareas de clasificacion. Sobre el se aplico un fine-tuning supervisado con una cabeza de clasificacion adaptada al dataset del autor.
 
-El entrenamiento se realizo con el Trainer de HuggingFace. Los hiperparametros declarados son: learning rate 5e-5, batch size de entrenamiento 16, batch size de evaluacion 16, acumulacion de gradientes en 4 pasos (batch efectivo 64), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con warmup del 10 % de los pasos, 3 epocas y semilla 42. No se documenta el numero de tokens ni de imagenes de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables en un clasificador). No hay innovaciones tecnicas declaradas. Las versiones de framework usadas fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
+El entrenamiento se realizo con el Trainer de Hugging Face. Los hiperparametros declarados son: learning rate 5e-5, batch size de entrenamiento 16, batch size de evaluacion 16, acumulacion de gradientes en 4 pasos (batch efectivo 64), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con warmup del 10 % de los pasos, 3 epocas y semilla 42. No se documenta el numero de tokens ni de imagenes de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables en un clasificador). No hay innovaciones tecnicas declaradas. Las versiones de framework usadas fueron Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ El entrenamiento se realizo con el Trainer de HuggingFace. Los hiperparametros d
 - Moderacion o curaduria de contenido visual: clasificar y agrupar imagenes subidas por usuarios en plataformas de recetas o redes sociales gastronomicas.
 - Extraccion de embeddings para busqueda visual: reutilizar el backbone para indexar imagenes y recuperar elementos similares por similitud vectorial.
 - Prototipado e investigacion: servir como linea base para comparar tecnicas de fine-tuning de ViT en tareas de clasificacion de dominio especifico.
-- Educacion: ejemplo reproducible de entrenamiento con el Trainer de HuggingFace para cursos de vision por computador.
+- Educacion: ejemplo reproducible de entrenamiento con el Trainer de Hugging Face para cursos de vision por computador.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ Advertencia: la loss de validacion (1,6242) es alta para un problema de clasific
 - VRAM estimada para inferencia: aproximadamente 344 MB en FP32 (85,8 M parametros x 4 bytes); en caso de cuantizar a FP16 serian unos 172 MB y a INT8 unos 86 MB, aunque el autor no publica versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en lotes pequenos. Para lotes grandes o extraccion de caracteristicas, se recomienda una GPU de datacenter tipo A100, H100 o L4, o tarjetas de consumo como RTX 3060, RTX 4070 o RTX 4090.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo moderna (GTX 1060 en adelante) e incluso en CPU para lotes pequenos.
-- Opciones de despliegue: pipeline `image-classification` de Transformers, exportacion a ONNX u TorchScript a traves de Optimum, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), TorchServe o NVIDIA Triton. No hay soporte GGUF ni llama.cpp/Ollama, ya que estos estan orientados a modelos de lenguaje.
+- Opciones de despliegue: pipeline `image-classification` de Transformers, exportacion a ONNX u TorchScript a traves de Optimum, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), TorchServe o NVIDIA Triton. No hay soporte GGUF ni llama.cpp/Ollama, ya que estos estan orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia, throughput ni consumo de memoria, y no se han realizado pruebas independientes.
 - Almacenamiento: el repositorio ocupa 1,0 GB, lo que incluye los pesos y artefactos del Trainer.
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos verificables de rendimiento entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Driw0x/my_awesome_food_model
+- Modelo en Hugging Face: https://huggingface.co/Driw0x/my_awesome_food_model
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Space de Trackio asociado: https://huggingface.co/spaces/Driw0x/huggingface-static-2d15c6
 - Otro modelo del mismo autor: https://huggingface.co/Driw0x/my_awesome_model

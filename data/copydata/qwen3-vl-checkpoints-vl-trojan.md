@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`copydata/qwen3-vl-checkpoints-vl-trojan` es un ajuste fino completo (full fine-tuning) del modelo multimodal `Qwen/Qwen3-VL-8B-Instruct`, publicado por el usuario `copydata` en HuggingFace. El repositorio contiene 8.767.123.696 parametros (~8,8 mil millones) en formato safetensors y ocupa 34 GB, lo que incluye pesos completos, registros de TensorBoard y checkpoints intermedios generados por LLaMA-Factory. La tarea declarada en el pipeline es `image-text-to-text`, es decir, generacion de texto condicionada por imagen y texto de entrada.
+`copydata/qwen3-vl-checkpoints-vl-trojan` es un ajuste fino completo (full fine-tuning) del modelo multimodal `Qwen/Qwen3-VL-8B-Instruct`, publicado por el usuario `copydata` en Hugging Face. El repositorio contiene 8.767.123.696 parametros (~8,8 mil millones) en formato safetensors y ocupa 34 GB, lo que incluye pesos completos, registros de TensorBoard y checkpoints intermedios generados por LLaMA-Factory. La tarea declarada en el pipeline es `image-text-to-text`, es decir, generacion de texto condicionada por imagen y texto de entrada.
 
 El elemento mas relevante de esta ficha no es su rendimiento, sino su procedencia: el modelo se ha entrenado sobre un dataset denominado `sft_2k_VL-Trojan_malicious_injection` (2.000 ejemplos, segun el nombre), y el identificador de la entrada de `model-index` es `2k_VL-Trojan_malicious_injection`. Todo apunta a un artefacto de investigacion en seguridad orientado al estudio de ataques de tipo *trojan* o *backdoor* en modelos vision-language: inyecciones maliciosas que se activan ante disparadores concretos. No es un modelo destinado a uso general ni a produccion.
 
-La model card es practicamente un esqueleto autogenerado por el `Trainer` de HuggingFace: no documenta datos de entrenamiento, usos previstos, limitaciones ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes", y la licencia declarada es `other` sin texto asociado. Por todo ello, cualquier uso debe limitarse a auditoria, docencia o investigacion defensiva en seguridad de IA.
+La model card es practicamente un esqueleto autogenerado por el `Trainer` de Hugging Face: no documenta datos de entrenamiento, usos previstos, limitaciones ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes", y la licencia declarada es `other` sin texto asociado. Por todo ello, cualquier uso debe limitarse a auditoria, docencia o investigacion defensiva en seguridad de IA.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ Ninguno de estos casos implica desplegar el modelo como asistente. Todos se enma
 - Evaluacion de herramientas de deteccion de *weight poisoning*: servir como caso de prueba etiquetado (se sabe que fue ajustado sobre un dataset de inyeccion maliciosa) para medir la sensibilidad y la tasa de falsos positivos de escaneres de pesos o de analisis de representaciones internas.
 - Investigacion academica sobre *backdoors* multimodales: comparar las activaciones, la perdida o los gradientes de este checkpoint frente al modelo base para caracterizar como se codifica un disparador visual o textual en un transformer VL de ~8B.
 - Auditoria de cadena de suministro de modelos (ML supply chain): analizar el repositorio, su licencia `other` y su falta de documentacion como ejemplo de practicas de publicacion de riesgo en hubs publicos.
-- Formacion y docencia en seguridad de IA: material didactico para explicar que es un modelo troyanizado, como se reconoce en un repositorio de HuggingFace y por que no debe desplegarse.
+- Formacion y docencia en seguridad de IA: material didactico para explicar que es un modelo troyanizado, como se reconoce en un repositorio de Hugging Face y por que no debe desplegarse.
 - Generacion de corpus sinteticos defensivos: obtener ejemplos de salidas nocivas para entrenar clasificadores de seguridad o *guardrails*, siempre en entorno aislado y sin exponer el modelo a usuarios finales.
 - Analisis forense de checkpoints: inspeccionar los pesos publicados para identificar que capas concentran la diferencia respecto al modelo base y publicar la metodologia de deteccion.
 
@@ -102,7 +102,7 @@ La diferencia funcional relevante no es de tamano ni de contexto, sino de propos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/copydata/qwen3-vl-checkpoints-vl-trojan
+- Hugging Face: https://huggingface.co/copydata/qwen3-vl-checkpoints-vl-trojan
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper, blog o repositorio del ajuste: no disponible
 - Demo o espacio asociado: no disponible

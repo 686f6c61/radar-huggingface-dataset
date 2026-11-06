@@ -6,7 +6,7 @@ Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech
 
 El modelo emplea una arquitectura de LM discreto de múltiples codebooks que procesa representaciones acústicas comprimidas a 12 Hz, generadas por el tokenizador propio Qwen3-TTS-Tokenizer-12Hz. Esta arquitectura end-to-end evita los cuellos de botella de información y los errores en cascada típicos de los esquemas LM+DiT, logrando una latencia extremadamente baja: el primer paquete de audio se emite inmediatamente después de introducir un solo carácter, con una latencia de síntesis total de hasta 97 ms. El modelo soporta tanto generación streaming como no streaming, y destaca por su robustez frente a texto de entrada ruidoso, lo que lo hace adecuado para aplicaciones interactivas en tiempo real.
 
-Con aproximadamente 1.920 millones de parámetros y un tamaño de repositorio de 4,5 GB, este modelo se sirve de forma eficiente mediante vLLM-Omni, exponiendo una API compatible con OpenAI /v1/audio/speech. Su popularidad (más de 2,1 millones de descargas y 1880 likes en HuggingFace) refleja el interés de la comunidad por soluciones de TTS de código abierto con control expresivo y baja latencia.
+Con aproximadamente 1.920 millones de parámetros y un tamaño de repositorio de 4,5 GB, este modelo se sirve de forma eficiente mediante vLLM-Omni, exponiendo una API compatible con OpenAI /v1/audio/speech. Su popularidad (más de 2,1 millones de descargas y 1880 likes en Hugging Face) refleja el interés de la comunidad por soluciones de TTS de código abierto con control expresivo y baja latencia.
 
 ## Especificaciones tecnicas
 
@@ -76,8 +76,8 @@ No se dispone de datos comparativos oficiales con otros modelos de TTS. Como ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-TTS
-- Coleccion Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Coleccion Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Receta vLLM: https://recipes.vllm.ai/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
-- Paper (arXiv): https://arxiv.org/abs/2601.15621 (referenciado en los tags de HuggingFace)
+- Paper (arXiv): https://arxiv.org/abs/2601.15621 (referenciado en los tags de Hugging Face)

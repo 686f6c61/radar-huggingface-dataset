@@ -66,4 +66,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [HuggingFace - Johnsongabriel/research-multitask](https://huggingface.co/Johnsongabriel/research-multitask)
+- [Hugging Face - Johnsongabriel/research-multitask](https://huggingface.co/Johnsongabriel/research-multitask)

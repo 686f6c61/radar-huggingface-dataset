@@ -58,5 +58,5 @@ No disponible. No se identifican modelos comparables porque no se conocen las ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishguptagos/learn-detector
+- Repositorio en Hugging Face: https://huggingface.co/ashishguptagos/learn-detector
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

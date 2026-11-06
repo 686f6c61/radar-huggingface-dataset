@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nmuendler/Apriel-15B-rust-rlvr-run1-step50` es un adaptador LoRA publicado en HuggingFace por el usuario nmuendler, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`. Por la nomenclatura del repositorio (`rust-rlvr-run1-step50`) se infiere que se trata de un ajuste con aprendizaje por refuerzo con recompensas verificables (RLVR) orientado a tareas de codigo en Rust, correspondiente a la ejecucion 1 y al checkpoint del paso 50 de entrenamiento. El repositorio contiene unicamente los pesos del adaptador (0,6 GB en safetensors), no el modelo completo.
+`nmuendler/Apriel-15B-rust-rlvr-run1-step50` es un adaptador LoRA publicado en Hugging Face por el usuario nmuendler, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`. Por la nomenclatura del repositorio (`rust-rlvr-run1-step50`) se infiere que se trata de un ajuste con aprendizaje por refuerzo con recompensas verificables (RLVR) orientado a tareas de codigo en Rust, correspondiente a la ejecucion 1 y al checkpoint del paso 50 de entrenamiento. El repositorio contiene unicamente los pesos del adaptador (0,6 GB en safetensors), no el modelo completo.
 
-Se trata de un artefacto de investigacion experimental: no tiene descargas ni interacciones registradas, la model card es la plantilla por defecto de HuggingFace y practicamente todos los campos tecnicos estan sin rellenar. No se declaran licencia, idiomas soportados, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Cualquier dato que no figure en esta ficha debe considerarse no verificado.
+Se trata de un artefacto de investigacion experimental: no tiene descargas ni interacciones registradas, la model card es la plantilla por defecto de Hugging Face y practicamente todos los campos tecnicos estan sin rellenar. No se declaran licencia, idiomas soportados, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Cualquier dato que no figure en esta ficha debe considerarse no verificado.
 
 Su relevancia es acotada y de nicho: sirve como ejemplo reproducible de un pipeline de RLVR con TRL y PEFT sobre un modelo de razonamiento, y como checkpoint intermedio para estudiar la evolucion del entrenamiento con GRPO en una tarea de dominio especifico (generacion de codigo Rust). No es un modelo listo para produccion tal y como se distribuye.
 
@@ -75,7 +75,7 @@ No disponible. No se han publicado especificaciones ni resultados de este adapta
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no hay descripcion, datos de uso, limitaciones ni recomendaciones declaradas por el autor.
+- La model card es la plantilla por defecto de Hugging Face: no hay descripcion, datos de uso, limitaciones ni recomendaciones declaradas por el autor.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. Al ser un derivado de `ServiceNow-AI/Apriel-Nemotron-15b-Thinker`, la licencia del base condiciona tambien la del adaptador.
 - No hay resultados de evaluacion: se desconoce si el ajuste mejora, degrada o apenas altera el comportamiento del modelo base.
 - Se trata de un checkpoint intermedio (paso 50 de la ejecucion 1), por lo que es probable que el entrenamiento no este completado.
@@ -89,7 +89,7 @@ No disponible. No se han publicado especificaciones ni resultados de este adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-rlvr-run1-step50
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-rlvr-run1-step50
 - Modelo base: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Paper citado en los tags (`arxiv:1910.09700`, Lacoste et al., estimacion de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

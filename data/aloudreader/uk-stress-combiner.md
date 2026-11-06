@@ -77,7 +77,7 @@ No se dispone de modelos externos comparables en la informacion proporcionada. L
 | Alternativa | Naturaleza | Contexto | Rendimiento (Common Voice test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Orden fijo de tiers | Heuristica determinista sobre la salida de los tiers | No aplica | 92,74 % | La del proyecto | Integrada por defecto; el combiner esta desactivado por defecto |
-| Combiner (`combiner-v1`) | MLP de 32 unidades ocultas sobre 32 caracteristicas | No aplica | 94,77 % | Apache 2.0 | Publicado en HuggingFace; activable con `"combiner": true` |
+| Combiner (`combiner-v1`) | MLP de 32 unidades ocultas sobre 32 caracteristicas | No aplica | 94,77 % | Apache 2.0 | Publicado en Hugging Face; activable con `"combiner": true` |
 
 Cualquier comparacion con modelos de lenguaje o con desambiguadores de acento de terceros: no disponible.
 
@@ -96,7 +96,7 @@ Cualquier comparacion con modelos de lenguaje o con desambiguadores de acento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aloudreader/uk-stress-combiner
+- Hugging Face: https://huggingface.co/aloudreader/uk-stress-combiner
 - Codigo de definicion de caracteristicas y del combiner, citado en la model card: `wiki-stress/ml/src/ukstress_ml/combiner.py` (ruta interna del proyecto, sin URL publica indicada)
 - Activos asociados citados en la model card: `readings.jsonl`, `audio_prior.json`, `classifier_profile.json`
 - Benchmark lang-uk, mencionado como fuente de datos de desarrollo y test: sin URL indicada en la informacion disponible

@@ -36,7 +36,7 @@ El conjunto de datos de entrenamiento es fijo: 9.361 ejemplos de entrenamiento y
 - Capacidad multilingüe: no disponible (no se documentan los idiomas cubiertos).
 - Soporte de *tool calling* / *function calling*: no disponible (no se documenta; el base podría soportarlo, pero no hay confirmación en la información proporcionada).
 - Modo *thinking* explícito, audio u otras capacidades especiales: no disponible.
-- Compatibilidad declarada con *endpoints* de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con *endpoints* de Hugging Face (tag `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -85,11 +85,11 @@ No se dispone de información sobre otros *fine-tunes* comparables de proof opti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8
 - Modelo base (BF16): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Modelo base en FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Licencia del modelo: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8/blob/main/LICENSE
 - Metadatos de exportación y hashes: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8/blob/main/export_metadata.json
-- Organización EPFL-LARA en HuggingFace: https://huggingface.co/EPFL-LARA
+- Organización EPFL-LARA en Hugging Face: https://huggingface.co/EPFL-LARA
 
 Nota: la búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo ni sobre su entrenamiento; los únicos resultados obtenidos fueron hilos de un foro de lengua francesa sin relación con el contenido de esta ficha.

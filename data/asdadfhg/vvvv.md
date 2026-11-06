@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `asdadfhg/vvvv` es un repositorio publicado en HuggingFace por el usuario `asdadfhg` el 28 de octubre de 2026. La model card asociada no contiene más información que la declaración de licencia Apache 2.0, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni cuál es su relevancia técnica o práctica.
+El modelo identificado como `asdadfhg/vvvv` es un repositorio publicado en Hugging Face por el usuario `asdadfhg` el 28 de octubre de 2026. La model card asociada no contiene más información que la declaración de licencia Apache 2.0, por lo que no es posible determinar qué tipo de modelo es, qué arquitectura emplea, qué problema resuelve ni cuál es su relevancia técnica o práctica.
 
 A fecha de la información disponible, el repositorio registra cero descargas y cero likes, y no declara pipeline, idiomas soportados ni documentación adicional. El único metadato técnico relevante es la licencia Apache 2.0 y la región de publicación (US), junto con un identificador DOI (`10.57967/hf/11312`) que sugiere un registro formal del artefacto, aunque no se aporta contexto sobre su contenido.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de especificaciones, pesos descritos, datos de entrenamie
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida con componentes SSM o cualquier otra variante. Tampoco se especifica el número de parámetros, la longitud de contexto nativa ni si incorpora mecanismos como atención lineal, decodificación especulativa o modos de razonamiento extendido.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida con componentes SSM o cualquier otra variante. Tampoco se especifica el número de parámetros, la longitud de contexto nativa ni si incorpora mecanismos como atención lineal, decodificación especulativa o modos de razonamiento extendido.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del corpus, la presencia de fases de ajuste supervisado, RLHF o DPO, ni sobre posibles procesos de alineación. La ausencia de esta información impide evaluar la calidad esperada del modelo o su comportamiento en dominios específicos.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin información sobre las capac
 - Auditoría de artefactos: inspeccionar los archivos del repositorio para confirmar formatos (safetensors, GGUF, bin) y tamaños reales.
 - Integración en pipelines experimentales: solo tras validar que el modelo produce salidas coherentes en tareas controladas.
 - Reproducción de experimentos: si el DOI referenciado apunta a un artículo o artefacto académico, contrastar resultados declarados con ejecuciones propias.
-- Docencia y formación: usar el repositorio como ejemplo de publicación mínima en HuggingFace y de buenas prácticas de documentación.
+- Docencia y formación: usar el repositorio como ejemplo de publicación mínima en Hugging Face y de buenas prácticas de documentación.
 
 En ningún caso se recomienda su despliegue en producción sin antes completar una evaluación técnica y de seguridad.
 
@@ -76,5 +76,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asdadfhg/vvvv
+- Repositorio en Hugging Face: https://huggingface.co/asdadfhg/vvvv
 - DOI declarado: 10.57967/hf/11312 (sin URL de resolución proporcionada en la información disponible)

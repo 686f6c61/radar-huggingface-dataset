@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - No se proporcionan requisitos específicos para este LoRA.
 - Dado que es un adaptador sobre MiniMax-H3, se requiere la infraestructura del modelo base. MiniMax-H3 es un modelo de difusión de vídeo de gran tamaño (varios GB), por lo que se recomienda una GPU con al menos 24 GB de VRAM para inferencia a 512×512.
-- Para despliegue en producción, se sugiere usar ComfyUI (entorno recomendado por el autor) o frameworks compatibles con modelos de difusión de vídeo (por ejemplo, Diffusers de HuggingFace si se adapta).
+- Para despliegue en producción, se sugiere usar ComfyUI (entorno recomendado por el autor) o frameworks compatibles con modelos de difusión de vídeo (por ejemplo, Diffusers de Hugging Face si se adapta).
 - El LoRA añade una sobrecarga mínima de memoria (0.2 GB), por lo que el cuello de botella principal es el modelo base.
 - No se dispone de datos de latencia o throughput.
 
@@ -71,5 +71,5 @@ No disponible. No se han identificado en la información proporcionada otros LoR
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora)
+- [Modelo en Hugging Face](https://huggingface.co/Jojocodex/minimax-h3-spatial-physics-lora)
 - [Modelo base MiniMax-H3 (Comfy-Org)](https://huggingface.co/Comfy-Org/MiniMax-H3)

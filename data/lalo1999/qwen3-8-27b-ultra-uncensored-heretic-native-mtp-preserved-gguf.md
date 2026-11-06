@@ -16,7 +16,7 @@ La relevancia de este modelo radica en que ofrece una alternativa sin restriccio
 | Longitud de contexto | 262.000 tokens (según fuentes externas; no confirmado en la model card) |
 | Tipos de cuantizacion | GGUF: múltiples niveles, desde 2-bit hasta F16 (según fuentes externas; el repo no lista los archivos) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (según HuggingFace); algunas fuentes externas indican uso solo para investigación |
+| Licencia | Apache 2.0 (según Hugging Face); algunas fuentes externas indican uso solo para investigación |
 | Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lalo1999/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lalo1999/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-GGUF
 - Modelo base (abliterado): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog sobre la versión uncensored: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

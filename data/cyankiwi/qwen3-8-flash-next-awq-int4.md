@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4` es una cuantización AWQ en precisión INT4 del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario de HuggingFace `cyankiwi`. Este modelo base es una vista previa experimental de la arquitectura que dará lugar a Qwen4, publicada por el equipo de Qwen (Alibaba). Se trata de un modelo causal multimodal (imagen y texto) con una arquitectura híbrida que combina Gated DeltaNet (atención lineal) y Qwen Sparse Attention (QSA), junto con un mecanismo de embedding por n-gramas. El modelo principal tiene 125 000 millones de parámetros, de los cuales solo 6 000 millones se activan por token, lo que lo convierte en un modelo de tipo MoE (Mixture of Experts) muy eficiente en inferencia.
+El modelo `cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4` es una cuantización AWQ en precisión INT4 del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario de Hugging Face `cyankiwi`. Este modelo base es una vista previa experimental de la arquitectura que dará lugar a Qwen4, publicada por el equipo de Qwen (Alibaba). Se trata de un modelo causal multimodal (imagen y texto) con una arquitectura híbrida que combina Gated DeltaNet (atención lineal) y Qwen Sparse Attention (QSA), junto con un mecanismo de embedding por n-gramas. El modelo principal tiene 125 000 millones de parámetros, de los cuales solo 6 000 millones se activan por token, lo que lo convierte en un modelo de tipo MoE (Mixture of Experts) muy eficiente en inferencia.
 
 La cuantización AWQ INT4 reduce significativamente el tamaño del modelo, pasando de los pesos originales a un formato más compacto, lo que facilita su despliegue en entornos con memoria limitada. El repositorio ocupa 188,3 GB, lo que sugiere que incluye los pesos cuantizados en formato `safetensors`. La licencia es `qwen-community-1.0`, una licencia comunitaria de Qwen que permite uso comercial con ciertas restricciones. Este modelo es relevante para desarrolladores que necesitan ejecutar un LLM multimodal de gran escala con requisitos de VRAM moderados gracias a su arquitectura MoE y su cuantización.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog oficial de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

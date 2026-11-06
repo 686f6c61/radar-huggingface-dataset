@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jinnypang/dama-aibrain` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 4 (de Google). El adaptador fue entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de HuggingFace y la herramienta Unsloth, que acelera el entrenamiento. El autor, Jinnypang, no ha proporcionado una descripción detallada en la model card; la mayoría de los campos están marcados como `[More Information Needed]`.
+El modelo `Jinnypang/dama-aibrain` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 4 (de Google). El adaptador fue entrenado mediante fine-tuning supervisado (SFT) con la librería TRL de Hugging Face y la herramienta Unsloth, que acelera el entrenamiento. El autor, Jinnypang, no ha proporcionado una descripción detallada en la model card; la mayoría de los campos están marcados como `[More Information Needed]`.
 
 El modelo está pensado para generación de texto y, según las etiquetas, también para tareas de imagen a texto (image-text-to-text), lo que sugiere que el modelo base tiene capacidades multimodales. Sin embargo, no hay información pública sobre el dataset de entrenamiento, los hiperparámetros o los resultados de evaluación. Con apenas 27 descargas y sin likes, es un modelo con una adopción muy limitada. La relevancia actual es escasa: se trata de un adaptador experimental sin documentación suficiente para su uso en producción.
 
@@ -71,7 +71,7 @@ No se ha encontrado información sobre modelos comparables dentro del mismo ámb
 
 ## Enlaces
 
-- [HuggingFace - Jinnypang/dama-aibrain](https://huggingface.co/Jinnypang/dama-aibrain)
+- [Hugging Face - Jinnypang/dama-aibrain](https://huggingface.co/Jinnypang/dama-aibrain)
 - [Jinnypang/dama-aibrain-lora (repositorio de adaptador)](https://huggingface.co/Jinnypang/dama-aibrain-lora)
 - [Página de inferencia en FriendliAI](https://friendli.ai/models/ohyou/dama-aibrain)
 - [Registro en free2aitools](https://free2aitools.com/model/dennyjo/dama-aibrain)

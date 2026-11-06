@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`senga-ml/naivas-model-body-03-11` es un modelo multimodal publicado en HuggingFace por el usuario senga-ml el 3 de noviembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de tipo `vision-encoder-decoder` orientado a la tarea `image-text-to-text`, es decir, un modelo capaz de recibir imagenes y texto como entrada y generar texto como salida. El repositorio contiene pesos en formato safetensors y es compatible con la libreria `transformers`, ademas de estar marcado como compatible con endpoints.
+`senga-ml/naivas-model-body-03-11` es un modelo multimodal publicado en Hugging Face por el usuario senga-ml el 3 de noviembre de 2026. Segun los metadatos del repositorio, se trata de un modelo de tipo `vision-encoder-decoder` orientado a la tarea `image-text-to-text`, es decir, un modelo capaz de recibir imagenes y texto como entrada y generar texto como salida. El repositorio contiene pesos en formato safetensors y es compatible con la libreria `transformers`, ademas de estar marcado como compatible con endpoints.
 
 El dato tecnico mas relevante disponible es el recuento real de parametros extraido de los ficheros safetensors: 202.108.344 parametros (aproximadamente 202 millones). El tamano del repositorio es de 1,6 GB, lo que es coherente con un modelo de ese orden de magnitud en precision de 16 bits o con pesos de vision encoder adicionales. La arquitectura encoder-decoder para vision y texto sugiere un diseno del estilo VisionEncoderDecoderModel, habitual en tareas de captioning o descripcion de imagenes.
 
-La model card es una plantilla autogenerada por HuggingFace sin contenido sustantivo: no incluye informacion sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluacion. El modelo tiene cero descargas y cero likes en el momento de la consulta, y no se ha localizado documentacion adicional, paper ni demo asociados. Por tanto, esta ficha se limita a reflejar los datos verificables del repositorio e indica explicitamente "no disponible" en todo aquello que el autor no ha documentado.
+La model card es una plantilla autogenerada por Hugging Face sin contenido sustantivo: no incluye informacion sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluacion. El modelo tiene cero descargas y cero likes en el momento de la consulta, y no se ha localizado documentacion adicional, paper ni demo asociados. Por tanto, esta ficha se limita a reflejar los datos verificables del repositorio e indica explicitamente "no disponible" en todo aquello que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Generacion de texto condicionada por imagen (image-text-to-text), segun el pipeline declarado en el repositorio.
 - Descripcion de imagenes y captioning, por coherencia con la arquitectura vision-encoder-decoder.
 - Procesamiento conjunto de entrada visual y textual mediante la API de `transformers`.
-- Integracion con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Integracion con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 202 millones de parametros, los pesos en FP16 ocupan aproximadamente 0,4 GB; en FP32, unos 0,8 GB. A ello hay que sumar el encoder de vision y las activaciones, por lo que una estimacion prudente se situa en torno a 1-2 GB de VRAM en FP16, aunque no hay mediciones publicadas.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) deberia ser suficiente por capacidad de memoria; no hay datos de rendimiento especificos.
 - Cabe en GPU consumer: si, con alta probabilidad, dado el reducido numero de parametros; no se dispone de confirmacion oficial.
-- Opciones de despliegue: `transformers` (libreria declarada), endpoints de HuggingFace (tag `endpoints_compatible`). El soporte de vLLM, llama.cpp, Ollama o TGI no esta documentado y, tratandose de un modelo vision-encoder-decoder, no es seguro asumirlo.
+- Opciones de despliegue: `transformers` (libreria declarada), endpoints de Hugging Face (tag `endpoints_compatible`). El soporte de vLLM, llama.cpp, Ollama o TGI no esta documentado y, tratandose de un modelo vision-encoder-decoder, no es seguro asumirlo.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/senga-ml/naivas-model-body-03-11
+- Repositorio Hugging Face: https://huggingface.co/senga-ml/naivas-model-body-03-11
 - Paper citado en la plantilla de model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML CO2 Impact: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo o demo del modelo: no disponible

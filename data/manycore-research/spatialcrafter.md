@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpatialCrafter es un modelo publicado en HuggingFace por el repositorio `manycore-research`, aparentemente orientado a la generacion y manipulacion de contenido espacial o tridimensional, a juzgar por su nombre. El repositorio tiene un tamano de 6,2 GB, lo que sugiere pesos en formato de precision completa o media (probablemente safetensors) para un modelo de escala media, aunque no se dispone de informacion sobre el numero de parametros ni la arquitectura en la model card.
+SpatialCrafter es un modelo publicado en Hugging Face por el repositorio `manycore-research`, aparentemente orientado a la generacion y manipulacion de contenido espacial o tridimensional, a juzgar por su nombre. El repositorio tiene un tamano de 6,2 GB, lo que sugiere pesos en formato de precision completa o media (probablemente safetensors) para un modelo de escala media, aunque no se dispone de informacion sobre el numero de parametros ni la arquitectura en la model card.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0. No se incluyen detalles sobre arquitectura, datos de entrenamiento, capacidades, idiomas soportados ni benchmarks. El modelo acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion muy reciente o de escasa difusion.
 
@@ -69,4 +69,4 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (parametr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manycore-research/SpatialCrafter
+- Hugging Face: https://huggingface.co/manycore-research/SpatialCrafter

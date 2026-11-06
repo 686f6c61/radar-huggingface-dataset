@@ -23,7 +23,7 @@ El modelo resuelve un problema real de triaje en mantenimiento: dado un conjunto
 
 El modelo es un pipeline de scikit-learn compuesto por tres etapas: un `IQRCapper` (definido en el módulo `preprocessing.py`) que winsoriza cada característica en su límite de 1,5 veces el IQR, aprendido exclusivamente con datos de entrenamiento para evitar fuga de datos; un `StandardScaler` que normaliza las características; y un `GradientBoostingClassifier` con los hiperparámetros óptimos encontrados mediante GridSearchCV. El ajuste se realizó comparando seis familias de modelos con validación cruzada estratificada de 5 pliegues sobre el AUC-ROC, y el Gradient Boosting se optimizó con 24 combinaciones y validación cruzada de 3 pliegues maximizando F1. Los mejores hiperparámetros fueron `learning_rate=0.05`, `max_depth=2`, `n_estimators=120` y `subsample=1.0`.
 
-El entrenamiento se realizó sobre un conjunto de datos de 19 535 registros de-duplicados, con una división estratificada 80/20 (15 628 entrenamiento / 3 907 prueba), manteniendo una proporción de ~63 % de casos defectuosos y 37 % normales. El conjunto de datos está disponible en HuggingFace (`imanandshah/engine-predictive-maintenance`) y contiene las variables de entrada en un orden exacto: `Engine_RPM`, `Lub_Oil_Pressure`, `Fuel_Pressure`, `Coolant_Pressure`, `Lub_Oil_Temperature` y `Coolant_Temperature`. La variable objetivo es 0 = Normal y 1 = Requiere mantenimiento (clase positiva).
+El entrenamiento se realizó sobre un conjunto de datos de 19 535 registros de-duplicados, con una división estratificada 80/20 (15 628 entrenamiento / 3 907 prueba), manteniendo una proporción de ~63 % de casos defectuosos y 37 % normales. El conjunto de datos está disponible en Hugging Face (`imanandshah/engine-predictive-maintenance`) y contiene las variables de entrada en un orden exacto: `Engine_RPM`, `Lub_Oil_Pressure`, `Fuel_Pressure`, `Coolant_Pressure`, `Lub_Oil_Temperature` y `Coolant_Temperature`. La variable objetivo es 0 = Normal y 1 = Requiere mantenimiento (clase positiva).
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables dentro del mismo dominio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imanandshah/engine-maintenance-classifier
-- Dataset en HuggingFace: https://huggingface.co/datasets/imanandshah/engine-predictive-maintenance
+- Modelo en Hugging Face: https://huggingface.co/imanandshah/engine-maintenance-classifier
+- Dataset en Hugging Face: https://huggingface.co/datasets/imanandshah/engine-predictive-maintenance
 - Streamlit Space (demo): https://huggingface.co/spaces/imanandshah/engine-maintenance-app
 - Repositorio GitHub: https://github.com/imanandshah/engine-predictive-maintenance

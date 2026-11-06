@@ -70,13 +70,13 @@ Esta cuantizacion oQ4 se diferencia del base por su tamaño reducido (17 GB vs ~
 - La cuantizacion a 4 bits puede degradar la precision en tareas de razonamiento complejo o generacion de codigo, aunque la tecnica de precision mixta intenta mitigarlo.
 - No se han publicado evaluaciones de calidad especificas de esta version cuantizada; se recomienda validar en el caso de uso concreto.
 - El modelo base puede presentar sesgos y alucinaciones tipicos de LLMs entrenados con datos web; la cuantizacion no corrige estos problemas.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia de los pesos cuantizados en este repositorio, ya que la ficha de HuggingFace no la indica explicitamente.
+- La licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia de los pesos cuantizados en este repositorio, ya que la ficha de Hugging Face no la indica explicitamente.
 - El formato MLX es exclusivo del ecosistema Apple; para usar en otras plataformas se requiere conversion a GGUF o safetensors estandar.
 - El dato de parametros totales en los metadatos (4,9 mil millones) no coincide con la declaracion de 27B del modelo base; posiblemente sea un error de extraccion o corresponda a los pesos cuantizados, pero no se puede confirmar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/csolares2/Qwen3.8-27B-oQ4-mtp
+- Repositorio Hugging Face: https://huggingface.co/csolares2/Qwen3.8-27B-oQ4-mtp
 - Repositorio del modelo base (referencia): https://huggingface.co/mcsplain/Qwen3.8-27B-oQ4-mtp
 - Cuantizacion oQ8 del mismo autor: https://huggingface.co/csolares2/Qwen3.8-27B-oQ8-mtp
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

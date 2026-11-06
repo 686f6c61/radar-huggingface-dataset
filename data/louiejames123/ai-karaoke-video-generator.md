@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`louiejames123/ai-karaoke-video-generator` es un repositorio alojado en HuggingFace por el usuario louiejames123, publicado bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia (`license: mit`). No se ha publicado informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
+`louiejames123/ai-karaoke-video-generator` es un repositorio alojado en Hugging Face por el usuario louiejames123, publicado bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia (`license: mit`). No se ha publicado informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni resultados de evaluacion.
 
-El nombre del repositorio sugiere un artefacto orientado a la generacion de video karaoke, pero esta interpretacion no puede confirmarse con la informacion disponible: HuggingFace no reporta pipeline asociado, no se declaran idiomas soportados y no existe documentacion tecnica en la model card. Tampoco se han encontrado papers, blogs ni repositorios vinculados en la busqueda web realizada.
+El nombre del repositorio sugiere un artefacto orientado a la generacion de video karaoke, pero esta interpretacion no puede confirmarse con la informacion disponible: Hugging Face no reporta pipeline asociado, no se declaran idiomas soportados y no existe documentacion tecnica en la model card. Tampoco se han encontrado papers, blogs ni repositorios vinculados en la busqueda web realizada.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de idoneidad para produccion requiere contactar con el autor o inspeccionar directamente los ficheros del repositorio.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables del repo
 
 No disponible. La model card unicamente contiene el campo `license: mit` y no incluye descripcion de arquitectura, configuracion de red, tipo de modelo (transformer, difusion, SSM, hibrido u otro), numero de tokens de entrenamiento, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-El repositorio no declara pipeline en HuggingFace, lo que impide inferir siquiera la modalidad de la tarea (texto a video, texto a audio, condicionamiento multimodal, etc.). Tampoco se ha localizado documentacion externa, memoria tecnica ni publicacion asociada.
+El repositorio no declara pipeline en Hugging Face, lo que impide inferir siquiera la modalidad de la tarea (texto a video, texto a audio, condicionamiento multimodal, etc.). Tampoco se ha localizado documentacion externa, memoria tecnica ni publicacion asociada.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El repositorio no declara pipeline en HuggingFace, lo que impide inferir siquier
 
 No es posible proponer casos de uso concretos y verificables con la informacion disponible. A continuacion se indican las comprobaciones previas necesarias antes de plantear cualquier escenario de aplicacion:
 
-- Verificacion de la naturaleza del repositorio: descargar los ficheros y determinar si contiene pesos de modelo, un Space de HuggingFace, un pipeline de generacion o unicamente codigo auxiliar.
+- Verificacion de la naturaleza del repositorio: descargar los ficheros y determinar si contiene pesos de modelo, un Space de Hugging Face, un pipeline de generacion o unicamente codigo auxiliar.
 - Identificacion de la tarea: confirmar si se trata de generacion de video, sincronizacion de audio y letra, separacion de pistas o cualquier otro subtipo funcional.
 - Evaluacion de licencia en contexto comercial: la licencia MIT es permisiva, pero debe confirmarse que cubre la totalidad de los componentes del repositorio (pesos, codigo, dependencias y posibles recursos de terceros).
 - Analisis de dependencias: al no declararse framework ni formato de pesos, es necesario revisar los requisitos de entorno antes de cualquier despliegue.
@@ -66,7 +66,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| louiejames123/ai-karaoke-video-generator | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| louiejames123/ai-karaoke-video-generator | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/louiejames123/ai-karaoke-video-generator
+- Hugging Face: https://huggingface.co/louiejames123/ai-karaoke-video-generator
 - Paper: no disponible.
 - Blog o memoria tecnica: no disponible.
 - Repositorio de codigo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ggbetz/qwen3-4b-think-s1-full-sft es un ajuste fino supervisado (SFT) de parámetros completos sobre Qwen/Qwen3-4B-Base, publicado por el usuario ggbetz en HuggingFace. Se trata de la etapa Stage1 de un currículum de razonamiento orientado a código, entrenada sobre el subconjunto "think_s1" (datos fáciles y medios de razonamiento sobre código), y corresponde al checkpoint-1094 de dicho entrenamiento. El modelo conserva la plantilla de chat de Qwen3 y está pensado para operar con el modo de pensamiento (thinking) activado.
+ggbetz/qwen3-4b-think-s1-full-sft es un ajuste fino supervisado (SFT) de parámetros completos sobre Qwen/Qwen3-4B-Base, publicado por el usuario ggbetz en Hugging Face. Se trata de la etapa Stage1 de un currículum de razonamiento orientado a código, entrenada sobre el subconjunto "think_s1" (datos fáciles y medios de razonamiento sobre código), y corresponde al checkpoint-1094 de dicho entrenamiento. El modelo conserva la plantilla de chat de Qwen3 y está pensado para operar con el modo de pensamiento (thinking) activado.
 
 El interés de esta ficha es acotado pero relevante: se trata de un experimento de destilación de capacidades de razonamiento en un modelo denso de 4.022 millones de parámetros, con licencia Apache 2.0 y un coste de inferencia que cabe en una GPU de consumo. Frente a los checkpoints oficiales de Qwen3, este modelo documenta de forma explícita su receta de entrenamiento (DeepSpeed ZeRO-2, 72.555 muestras, 2 épocas, LR 1e-5, empaquetado neat_packing) y sus resultados de evaluación en LiveCodeBench y AIME, lo que permite reproducir el proceso.
 
@@ -65,7 +65,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - Memoria adicional para caché KV: no publicada por el autor. Como estimación orientativa para un transformer de 4 B con GQA, el coste ronda 0,14 GB por cada 1.000 tokens de contexto en BF16, es decir, del orden de 2,3 GB a 16.384 tokens y de 4,6 GB a 32.768 tokens. Estas cifras son estimaciones, no datos del repositorio.
 - GPU recomendadas: una RTX 4090 o RTX 4080 (16-24 GB) permite inferencia en BF16 con margen para contexto largo; A100 40/80 GB o H100 quedan sobredimensionadas para un solo modelo, pero son útiles para servir varias réplicas o para lotes grandes.
 - Cabe en GPU de consumo: sí, en tarjetas de 16 GB o más en BF16, y en tarjetas de 8-12 GB si se cuantiza a 8 o 4 bits mediante bitsandbytes, GPTQ o AWQ (conversión a cargo del usuario, ya que no hay variantes publicadas).
-- Opciones de despliegue: vLLM (receta oficial en la model card, con --max-model-len 32768 y puerto 8801), HuggingFace Transformers con device_map="auto", y text-generation-inference (etiqueta text-generation-inference presente en el repositorio). Los tags del repositorio incluyen endpoints_compatible. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, algo que el autor no proporciona.
+- Opciones de despliegue: vLLM (receta oficial en la model card, con --max-model-len 32768 y puerto 8801), Hugging Face Transformers con device_map="auto", y text-generation-inference (etiqueta text-generation-inference presente en el repositorio). Los tags del repositorio incluyen endpoints_compatible. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, algo que el autor no proporciona.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks homogéneos para comparar este checkpoint c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggbetz/qwen3-4b-think-s1-full-sft
+- Modelo en Hugging Face: https://huggingface.co/ggbetz/qwen3-4b-think-s1-full-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Checkpoint relacionado (think baseline full SFT): https://huggingface.co/modrill/qwen3-4b-think-baseline-full-sft
 - Checkpoint relacionado (nothink baseline full SFT): https://huggingface.co/modrill/qwen3-4b-nothink-baseline-full-sft

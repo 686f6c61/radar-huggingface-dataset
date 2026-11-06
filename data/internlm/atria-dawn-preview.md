@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atria Dawn Preview es un modelo agentico en version preview desarrollado por el Shanghai Artificial Intelligence Laboratory (cuenta de HuggingFace `internlm`), construido sobre el modelo fundacional MoE GLM-5.2 de 744.000 millones de parametros. El checkpoint publicado en safetensors declara 753.329.940.480 parametros totales y una longitud de contexto de 256.000 tokens, con un repositorio de 1.506,7 GB. La model card lo presenta como un modelo instruct y distribuye ademas una variante cuantizada a FP8.
+Atria Dawn Preview es un modelo agentico en version preview desarrollado por el Shanghai Artificial Intelligence Laboratory (cuenta de Hugging Face `internlm`), construido sobre el modelo fundacional MoE GLM-5.2 de 744.000 millones de parametros. El checkpoint publicado en safetensors declara 753.329.940.480 parametros totales y una longitud de contexto de 256.000 tokens, con un repositorio de 1.506,7 GB. La model card lo presenta como un modelo instruct y distribuye ademas una variante cuantizada a FP8.
 
 El modelo esta disenado para escenarios de investigacion e ingenieria que requieren comprension continua del entorno, uso de herramientas y resolucion de tareas en multiples pasos, con el objetivo de convertir preguntas abiertas en resultados ejecutables, verificables y reproducibles. Organiza sus capacidades en cuatro ejes: descubrimiento (recuperacion y organizacion de evidencia, investigacion profunda, planes experimentales), creacion (software, aplicaciones interactivas, juegos, visualizacion de datos, sistemas de ML), entrega (transformacion de documentos y requisitos de diseno en informes y presentaciones) y ciberseguridad (analisis de problemas, validacion de vulnerabilidades, aplicacion y revalidacion de correcciones en entornos autorizados).
 
@@ -12,7 +12,7 @@ Su relevancia actual reside en que la propia model card lo situa frente a modelo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (etiqueta de HuggingFace: `glm_moe_dsa`); construido sobre el modelo fundacional GLM-5.2 |
+| Arquitectura | MoE (etiqueta de Hugging Face: `glm_moe_dsa`); construido sobre el modelo fundacional GLM-5.2 |
 | Parametros totales | 753.329.940.480 (~753,3 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | 262.144 tokens (256K) |
@@ -23,7 +23,7 @@ Su relevancia actual reside en que la propia model card lo situa frente a modelo
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible identifica el modelo como una arquitectura de mezcla de expertos (MoE) construida sobre el modelo fundacional GLM-5.2, de 744.000 millones de parametros, y etiquetada en HuggingFace como `glm_moe_dsa`. El checkpoint publicado en safetensors contiene 753.329.940.480 parametros, ligeramente por encima de la cifra declarada para el modelo base. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, el numero de expertos, los parametros activos por token ni el ratio de activacion.
+La informacion disponible identifica el modelo como una arquitectura de mezcla de expertos (MoE) construida sobre el modelo fundacional GLM-5.2, de 744.000 millones de parametros, y etiquetada en Hugging Face como `glm_moe_dsa`. El checkpoint publicado en safetensors contiene 753.329.940.480 parametros, ligeramente por encima de la cifra declarada para el modelo base. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, el numero de expertos, los parametros activos por token ni el ratio de activacion.
 
 Tampoco se detallan las etapas de alineacion (RLHF, DPO u otras tecnicas de preferencia) ni innovaciones de atencion concretas mas alla de la etiqueta de arquitectura. La model card menciona explicitamente que se trata de una version preview y que el modelo combina objetivos de tarea con retroalimentacion del entorno para resolver problemas de forma iterativa, incluyendo recuperacion ante fallos, pero sin ofrecer detalles tecnicos de implementacion. La unica informacion adicional de despliegue es la existencia de una variante cuantizada a FP8 con la misma ventana de contexto de 256K.
 
@@ -95,7 +95,7 @@ La tabla de comparacion de la model card incluye seis sistemas frontera, pero no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos disponibles |
 |---|---|---|---|---|---|
-| Atria Dawn Preview | 753,3 B totales (activos no disponibles), MoE sobre GLM-5.2 de 744 B | 256K | MIT | Pesos abiertos en HuggingFace y ModelScope, version FP8 | Completos (specs y benchmarks) |
+| Atria Dawn Preview | 753,3 B totales (activos no disponibles), MoE sobre GLM-5.2 de 744 B | 256K | MIT | Pesos abiertos en Hugging Face y ModelScope, version FP8 | Completos (specs y benchmarks) |
 | DeepSeek V4 Pro 0813 | no disponible | no disponible | no disponible | no disponible | Solo resultados de benchmark |
 | KIMI K3 | no disponible | no disponible | no disponible | no disponible | Solo resultados de benchmark |
 | Qwen 3.8 Max | no disponible | no disponible | no disponible | no disponible | Solo resultados de benchmark |
@@ -123,8 +123,8 @@ En terminos de rendimiento relativo, Atria Dawn Preview lidera la tabla publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internlm/Atria-Dawn-Preview
-- Variante FP8 en HuggingFace: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8
+- Modelo en Hugging Face: https://huggingface.co/internlm/Atria-Dawn-Preview
+- Variante FP8 en Hugging Face: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8
 - Modelo en ModelScope: https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn-Preview
 - Variante FP8 en ModelScope: https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn-Preview-FP8
 - README en chino: https://huggingface.co/internlm/Atria-Dawn-Preview/blob/main/README_CN.md

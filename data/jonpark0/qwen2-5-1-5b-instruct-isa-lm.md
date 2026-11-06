@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct-isa-lm (este) | 1,5B | 4.096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct (original) | 1,5B | 32.768 | safetensors / transformers, vLLM | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct GGUF (llama.cpp) | 1,5B | 32.768 (configurable) | GGUF / llama.cpp, Ollama | Apache 2.0 | HuggingFace, ecosistema maduro |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | safetensors, GGUF | Apache 2.0 | HuggingFace |
+| Qwen2.5-1.5B-Instruct-isa-lm (este) | 1,5B | 4.096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct (original) | 1,5B | 32.768 | safetensors / transformers, vLLM | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct GGUF (llama.cpp) | 1,5B | 32.768 (configurable) | GGUF / llama.cpp, Ollama | Apache 2.0 | Hugging Face, ecosistema maduro |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | safetensors, GGUF | Apache 2.0 | Hugging Face |
 
 La comparación directa con las conversiones GGUF es la más pertinente: ambas ofrecen cuantización de 4 y 8 bits para CPU, pero el ecosistema de llama.cpp cuenta con mucha más adopción, herramientas y variantes de cuantización, mientras que isa-lm apuesta por un binario C11 sin dependencias y cobertura explícita de ISA x86 y ARM. Frente al modelo original, esta conversión pierde contexto (4.096 frente a 32.768) y compatibilidad con frameworks estándar.
 
@@ -96,7 +96,7 @@ La comparación directa con las conversiones GGUF es la más pertinente: ambas o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen2.5-1.5B-Instruct-isa-lm
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen2.5-1.5B-Instruct-isa-lm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

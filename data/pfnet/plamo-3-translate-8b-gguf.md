@@ -34,7 +34,7 @@ El modelo incorpora mecanismos específicos para traducción contextual: puede r
 - Soporte de glosarios para forzar terminología concreta en la salida.
 - Selección de estilo de salida en japonés: llano o cortés.
 - Traducción de pasajes largos en una sola pasada gracias a la ventana de 32.768 tokens (entrada más salida).
-- Formato conversacional (tag `conversational`) y compatibilidad con endpoints de HuggingFace.
+- Formato conversacional (tag `conversational`) y compatibilidad con endpoints de Hugging Face.
 - No se documenta en la información disponible soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ La model card menciona TranslateGemma y HY-MT2 como modelos de traducción espec
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/pfnet/plamo-3-translate-8b-GGUF
+- Hugging Face (GGUF): https://huggingface.co/pfnet/plamo-3-translate-8b-GGUF
 - Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-8b
 - Blog técnico de PFN: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community License: https://plamo.preferredai.jp/info/plamo-community-license-en

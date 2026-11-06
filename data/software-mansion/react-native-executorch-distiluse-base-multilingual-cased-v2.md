@@ -25,7 +25,7 @@ La exportación incluye cuatro variantes en dos delegates distintos: XNNPACK (CP
 
 El modelo original `distiluse-base-multilingual-cased-v2` es una variante de DistilBERT multilingüe entrenada por sentence-transformers para generar embeddings de frases. La arquitectura combina un transformer DistilBERT con tokenización cased, una estrategia de pooling por media (mean pooling), una capa densa que reduce la dimensión de 768 a 512, activación Tanh y normalización L2 final. El resultado es un espacio vectorial de 512 dimensiones optimizado para similaridad coseno.
 
-La exportación a ExecuTorch fue realizada por software Mansion con la librería `react-native-executorch` v0.9.0, que incorpora un runtime derivado de la rama v1.2.0 de ExecuTorch. El proceso de exportación elimina la conversión interna de la máscara de atención a 4D que hace HuggingFace, porque el runtime de React Native nunca hace padding en inferencia (una sola frase, sin batching). Esta optimización preserva la bit-exactitud con la referencia de PyTorch (RMSE 0 en fp32) y reduce el tiempo de forward en XNNPACK aproximadamente un 27%, manteniendo una delegación del 89-91% del tiempo de ejecución del grafo.
+La exportación a ExecuTorch fue realizada por software Mansion con la librería `react-native-executorch` v0.9.0, que incorpora un runtime derivado de la rama v1.2.0 de ExecuTorch. El proceso de exportación elimina la conversión interna de la máscara de atención a 4D que hace Hugging Face, porque el runtime de React Native nunca hace padding en inferencia (una sola frase, sin batching). Esta optimización preserva la bit-exactitud con la referencia de PyTorch (RMSE 0 en fp32) y reduce el tiempo de forward en XNNPACK aproximadamente un 27%, manteniendo una delegación del 89-91% del tiempo de ejecución del grafo.
 
 Para la variante 8da4w se aplicó cuantización torchao con Int8 dinámico en activaciones e Int4 en pesos, con group_size=32. Los embeddings se mantienen en fp32, por lo que la reducción de tamaño proviene principalmente de las capas lineales. Las variantes CoreML se generaron con `compute_precision=FLOAT16` para fp16 y con la compilación nativa de CoreML para fp32.
 
@@ -96,7 +96,7 @@ La principal ventaja de este repositorio es la integración lista para usar en R
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-distiluse-base-multilingual-cased-v2
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-distiluse-base-multilingual-cased-v2
 - Modelo original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2
 - Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
 - Documentación oficial de ExecuTorch: https://pytorch.org/executorch/stable/index.html

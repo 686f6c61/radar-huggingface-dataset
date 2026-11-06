@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-K2K3-mix (este) | 320B total / 18B activo | 64k | EXL3 K2/K3 mixto (2,14 bpw efectivo) | MIT | HuggingFace |
-| GLM-5.3-Flash-EXL3-K2 (base) | 320B total / 18B activo | 64k | EXL3 K2 (2 bits, expertos enrutados) | MIT | HuggingFace |
-| GLM-5.3-Flash-NVFP4 | 320B total / 18B activo | no disponible | NVFP4 | MIT | HuggingFace |
-| GLM-5.3-Flash-BF16 (original) | 320B total / 18B activo | no disponible | BF16 | MIT | HuggingFace |
+| GLM-5.3-Flash-EXL3-K2K3-mix (este) | 320B total / 18B activo | 64k | EXL3 K2/K3 mixto (2,14 bpw efectivo) | MIT | Hugging Face |
+| GLM-5.3-Flash-EXL3-K2 (base) | 320B total / 18B activo | 64k | EXL3 K2 (2 bits, expertos enrutados) | MIT | Hugging Face |
+| GLM-5.3-Flash-NVFP4 | 320B total / 18B activo | no disponible | NVFP4 | MIT | Hugging Face |
+| GLM-5.3-Flash-BF16 (original) | 320B total / 18B activo | no disponible | BF16 | MIT | Hugging Face |
 
 La diferencia principal entre este paquete y el base K2 es la promocion de seis capas a K3, que reduce el error proxy EXL3 en aproximadamente un 77% en esas capas a costa de un ligero aumento de memoria. Frente al NVFP4, la comparativa no es posible sin datos de rendimiento publicados.
 
@@ -79,10 +79,10 @@ La diferencia principal entre este paquete y el base K2 es la promocion de seis 
 
 ## Enlaces
 
-- [HuggingFace: vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix)
-- [HuggingFace: vcruz305/GLM-5.3-Flash-EXL3-K2 (base)](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2)
-- [HuggingFace: vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm (wheels)](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm)
-- [HuggingFace: vcruz305/GLM-5.3-Flash-NVFP4](https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4)
-- [HuggingFace: zai-org/GLM-5.3-Flash-BF16 (modelo original)](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)
+- [Hugging Face: vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2K3-mix)
+- [Hugging Face: vcruz305/GLM-5.3-Flash-EXL3-K2 (base)](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2)
+- [Hugging Face: vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm (wheels)](https://huggingface.co/vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm)
+- [Hugging Face: vcruz305/GLM-5.3-Flash-NVFP4](https://huggingface.co/vcruz305/GLM-5.3-Flash-NVFP4)
+- [Hugging Face: zai-org/GLM-5.3-Flash-BF16 (modelo original)](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)
 - [GitHub: GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe](https://github.com/vcruz305/GLM-5.3-Flash-EXL3-K2-DGX-Spark-recipe)
 - [Documentacion Z.AI: GLM-5.3-Flash](https://docs.z.ai/guides/vlm/glm-5.3-flash)

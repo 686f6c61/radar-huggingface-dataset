@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - IXDLI/AIRO-Doffy-WRM-Grasp-WRM-wrap-monitor](https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-WRM-wrap-monitor)
+- [Hugging Face - IXDLI/AIRO-Doffy-WRM-Grasp-WRM-wrap-monitor](https://huggingface.co/IXDLI/AIRO-Doffy-WRM-Grasp-WRM-wrap-monitor)
 - [GitHub - XDL0-0/AIRO-Doffy (VR teleoperation code and app)](https://github.com/XDL0-0/airo-doffy)
 - [GitHub - XDL0-0/AIRO-DOFFY-APP (Docs)](https://github.com/XDL0-0/AIRO-DOFFY-APP/tree/main/Docs)
 - [Dataset - IXDLI/WRM_grasp_cylinder_different_sizes_lero](https://huggingface.co/datasets/IXDLI/WRM_grasp_cylinder_different_sizes_lero)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42` es un ajuste fino de `google/long-t5-tglobal-base` (247.545.984 parámetros) para resumen de reuniones y diálogos en inglés, publicado el 20 de octubre de 2026 por el autor de HuggingFace «Immich». No es un modelo de propósito general: es el checkpoint seleccionado (semilla 42) del experimento descrito en el artículo *Controlled Error Propagation Analysis in Transformer-Based Pipelines for Dialogue Summarization*, y está diseñado para funcionar dentro de una arquitectura jerárquica de tres etapas (segmentación temática, extracción de actos de diálogo y generación por tema, con concatenación cronológica posterior).
+El modelo `Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42` es un ajuste fino de `google/long-t5-tglobal-base` (247.545.984 parámetros) para resumen de reuniones y diálogos en inglés, publicado el 20 de octubre de 2026 por el autor de Hugging Face «Immich». No es un modelo de propósito general: es el checkpoint seleccionado (semilla 42) del experimento descrito en el artículo *Controlled Error Propagation Analysis in Transformer-Based Pipelines for Dialogue Summarization*, y está diseñado para funcionar dentro de una arquitectura jerárquica de tres etapas (segmentación temática, extracción de actos de diálogo y generación por tema, con concatenación cronológica posterior).
 
 Su relevancia es fundamentalmente metodológica: sirve para estudiar cómo se propagan los errores a lo largo de un pipeline de NLP y para reproducir un experimento concreto sobre el corpus AMI (reuniones de diseño de un mando a distancia). El checkpoint se entrenó con BF16, ratio de aprendizaje 0,0003, tamaño de lote efectivo 16, límite de entrada de 4096 tokens y época 16 seleccionada por ROUGE-Lsum medio de validación (53,757218). La decodificación de referencia usa 4 haces, penalización de longitud 2,0 y bloqueo de 3-gramas, con un tope de 512 tokens por reunión.
 
@@ -21,7 +21,7 @@ Conviene subrayar que la variante «oracle» del pipeline recibe etiquetas de ex
 | Licencia | MIT para las contribuciones del repositorio; componentes preentrenados bajo Apache-2.0 (incluido como `UPSTREAM_LICENSE.txt`); anotaciones AMI bajo CC BY 4.0 |
 | Formato de pesos | safetensors (BF16 en entrenamiento; FP32 en validación y generación) |
 
-Otros metadatos: tamaño del repositorio 1,0 GB, SHA-256 de los pesos `d0b7ac6cd162d5c334be0c822eca607956dc1add67d7d3c40de988692f15e421`, DOI de HuggingFace `10.57967/hf/11159`, registro maestro de replicación `10.5281/zenodo.21792310`, revisión del backbone `aecb1376e5bd78db32ebc5c9deb257449b9e2b21`, etiqueta `endpoints_compatible`.
+Otros metadatos: tamaño del repositorio 1,0 GB, SHA-256 de los pesos `d0b7ac6cd162d5c334be0c822eca607956dc1add67d7d3c40de988692f15e421`, DOI de Hugging Face `10.57967/hf/11159`, registro maestro de replicación `10.5281/zenodo.21792310`, revisión del backbone `aecb1376e5bd78db32ebc5c9deb257449b9e2b21`, etiqueta `endpoints_compatible`.
 
 ## Arquitectura y entrenamiento
 
@@ -72,10 +72,10 @@ No se han publicado en la información disponible resultados comparativos de tes
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (LongT5-base ajustado, pipeline AMI) | 247.545.984 | 4096 | Resumen de diálogo multi-etapa con entradas oracle | MIT (repo) / Apache-2.0 (upstream) | Pesos safetensors en HuggingFace, 0 descargas |
-| `google/long-t5-tglobal-base` | 247.545.984 | 4096 | Backbone preentrenado, sin ajuste a resumen de reuniones | Apache-2.0 | Público en HuggingFace |
-| `allenai/led-base-16384` | ~162 millones | 16384 | Resumen abstractivo de documentos largos (Longformer encoder-decoder) | Apache-2.0 | Público en HuggingFace |
-| `google-t5/t5-base` | ~220 millones | 512 | Texto a texto genérico; requiere truncado en transcripciones largas | Apache-2.0 | Público en HuggingFace |
+| Este modelo (LongT5-base ajustado, pipeline AMI) | 247.545.984 | 4096 | Resumen de diálogo multi-etapa con entradas oracle | MIT (repo) / Apache-2.0 (upstream) | Pesos safetensors en Hugging Face, 0 descargas |
+| `google/long-t5-tglobal-base` | 247.545.984 | 4096 | Backbone preentrenado, sin ajuste a resumen de reuniones | Apache-2.0 | Público en Hugging Face |
+| `allenai/led-base-16384` | ~162 millones | 16384 | Resumen abstractivo de documentos largos (Longformer encoder-decoder) | Apache-2.0 | Público en Hugging Face |
+| `google-t5/t5-base` | ~220 millones | 512 | Texto a texto genérico; requiere truncado en transcripciones largas | Apache-2.0 | Público en Hugging Face |
 
 La comparación de rendimiento entre estos modelos no está disponible en la información proporcionada: el único dato numérico publicado es el ROUGE-Lsum de validación de este checkpoint, obtenido con un pipeline y unas entradas oracle que no son equivalentes a las de los modelos comparados.
 
@@ -95,11 +95,11 @@ La comparación de rendimiento entre estos modelos no está disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42
 - Backbone preentrenado: https://huggingface.co/google/long-t5-tglobal-base
-- DOI del modelo en HuggingFace: https://doi.org/10.57967/hf/11159
+- DOI del modelo en Hugging Face: https://doi.org/10.57967/hf/11159
 - Registro maestro de replicación (Zenodo): https://doi.org/10.5281/zenodo.21792310
 - Corpus AMI: https://groups.inf.ed.ac.uk/ami/corpus/
-- Corpus AMI en HuggingFace (referenciado como `dataset:ami-corpus`): no se ha encontrado un enlace directo en la información proporcionada
+- Corpus AMI en Hugging Face (referenciado como `dataset:ami-corpus`): no se ha encontrado un enlace directo en la información proporcionada
 - Artículo *Controlled Error Propagation Analysis in Transformer-Based Pipelines for Dialogue Summarization*: no se ha encontrado un enlace directo en la información proporcionada
 - Nota sobre la búsqueda web: los resultados devueltos corresponden al software de gestión de fotos y vídeos autoalojado Immich (immich.app, github.com/immich-app/immich) y no guardan relación con este modelo; no se han encontrado páginas, demos ni repositorios adicionales del modelo.

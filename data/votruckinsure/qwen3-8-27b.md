@@ -65,11 +65,11 @@ No se dispone de especificaciones técnicas suficientes de los modelos comparabl
 - Riesgo de alucinación: no se ha evaluado de forma explícita en la información proporcionada; se recomienda validar las salidas en aplicaciones críticas.
 - Limitaciones de contexto o idioma: los idiomas soportados no se especifican. El contexto extensible hasta 1.000.000 de tokens puede requerir técnicas adicionales de escalado de RoPE.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se mantengan los avisos de copyright y licencia.
-- Advertencia sobre el repositorio: el repositorio de HuggingFace analizado (votruckinsure/Qwen3.8-27B) no es el oficial. Se recomienda utilizar el repositorio de Qwen (Qwen/Qwen3.8-27B) para garantizar la integridad de los pesos y la configuración.
+- Advertencia sobre el repositorio: el repositorio de Hugging Face analizado (votruckinsure/Qwen3.8-27B) no es el oficial. Se recomienda utilizar el repositorio de Qwen (Qwen/Qwen3.8-27B) para garantizar la integridad de los pesos y la configuración.
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio espejo en HuggingFace: https://huggingface.co/votruckinsure/Qwen3.8-27B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio espejo en Hugging Face: https://huggingface.co/votruckinsure/Qwen3.8-27B
 - Receta de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Información del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

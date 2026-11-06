@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gamelton-T1.5 es un modelo de lenguaje de aproximadamente 1.000 millones de parámetros (999.887.104) desarrollado por el equipo Gamelton-ai, una organización centrada en inteligencia artificial aplicada al ámbito del gaming. El modelo se distribuye bajo licencia MIT y está disponible en formato GGUF, lo que indica que está orientado a su ejecución local en entornos de inferencia optimizados como llama.cpp u Ollama. Según las etiquetas de HuggingFace, el modelo está diseñado para tareas conversacionales y es compatible con endpoints de inferencia.
+Gamelton-T1.5 es un modelo de lenguaje de aproximadamente 1.000 millones de parámetros (999.887.104) desarrollado por el equipo Gamelton-ai, una organización centrada en inteligencia artificial aplicada al ámbito del gaming. El modelo se distribuye bajo licencia MIT y está disponible en formato GGUF, lo que indica que está orientado a su ejecución local en entornos de inferencia optimizados como llama.cpp u Ollama. Según las etiquetas de Hugging Face, el modelo está diseñado para tareas conversacionales y es compatible con endpoints de inferencia.
 
 La relevancia de este modelo radica en su tamaño compacto, que lo hace accesible para ejecución en hardware de consumo, y en su licencia permisiva que permite uso comercial sin restricciones. Sin embargo, la documentación pública es extremadamente limitada: la model card solo contiene la línea de licencia, sin información sobre arquitectura, datos de entrenamiento, contexto o capacidades específicas. Esto dificulta una evaluación técnica rigurosa y obliga a tratar cualquier afirmación más allá de los datos básicos como no verificada.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto, que lo hace accesibl
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. Dado el tamaño de ~1B parámetros y el formato GGUF, es plausible que se trate de un transformer decoder-only, pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. La organización Gamelton-ai tiene otros modelos listados en HuggingFace (como Gamelton-T1.1) y una presencia en itch.io con una herramienta de entrenamiento local, lo que sugiere un enfoque de desarrollo incremental, pero no hay documentación técnica que respalde innovaciones específicas.
+No se ha publicado información sobre la arquitectura del modelo. Dado el tamaño de ~1B parámetros y el formato GGUF, es plausible que se trate de un transformer decoder-only, pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. La organización Gamelton-ai tiene otros modelos listados en Hugging Face (como Gamelton-T1.1) y una presencia en itch.io con una herramienta de entrenamiento local, lo que sugiere un enfoque de desarrollo incremental, pero no hay documentación técnica que respalde innovaciones específicas.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ Gamelton-T1.5 se sitúa en la gama de modelos sub-2B, pero carece de la document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gamelton-ai/Gamelton-T1.5
-- Organización Gamelton-ai en HuggingFace: https://huggingface.co/GameltonAI/models
+- Modelo en Hugging Face: https://huggingface.co/Gamelton-ai/Gamelton-T1.5
+- Organización Gamelton-ai en Hugging Face: https://huggingface.co/GameltonAI/models
 - Modelo anterior Gamelton-T1.1: https://huggingface.co/Gamelton-ai/Gamelton-T1.1
 - Perfil de GitHub de gamelton: https://github.com/gamelton
 - Herramienta GameltonAI en itch.io: https://gameltonai.itch.io/gameltonai

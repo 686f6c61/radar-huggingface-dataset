@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 | aidsoid/Qwen3.5-4B-MLX-4bit | 4.539.265.536 | 4 bits (5,347 bits/peso, grupo 64) | no disponible | Apache 2.0 | MLX SafeTensors, ~2,9 GB en disco |
 | mlx-community/Qwen3.5-4B-MLX-8bit | mismo modelo base | 8 bits | no disponible | Apache 2.0 | MLX SafeTensors (referenciado en la model card) |
 | mlx-community/Qwen3.5-4B-MLX-bf16 | mismo modelo base | sin cuantizar (bf16) | no disponible | Apache 2.0 | MLX SafeTensors (referenciado en la model card) |
-| Qwen/Qwen3.5-4B | mismo modelo base | sin cuantizar | no disponible | Apache 2.0 | Repositorio original en HuggingFace |
+| Qwen/Qwen3.5-4B | mismo modelo base | sin cuantizar | no disponible | Apache 2.0 | Repositorio original en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar la calidad entre estas variantes; la unica diferencia documentada es la precision de la cuantizacion y, en consecuencia, el espacio ocupado.
 

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sriram1983007/SRA-RiskGate-4B-Q4_K_M-GGUF
 - Modelo base en safetensors: https://huggingface.co/sriram1983007/SRA-RiskGate-4B
 - Dataset de benchmark: https://huggingface.co/datasets/sriram1983007/sra-stablecoin-risk-bench
 - Resultados publicados: https://huggingface.co/datasets/sriram1983007/sra-bench-results

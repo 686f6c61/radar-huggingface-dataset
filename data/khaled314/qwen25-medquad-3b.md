@@ -79,7 +79,7 @@ La comparativa se basa en datos publicos de los modelos mencionados. qwen25-medq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khaled314/qwen25-medquad-3b
+- Hugging Face: https://huggingface.co/khaled314/qwen25-medquad-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset MedQuAD: https://github.com/abachaa/MedQuAD
 - Repositorio Qwen3 (modelos posteriores de la familia): https://github.com/QwenLM/Qwen3

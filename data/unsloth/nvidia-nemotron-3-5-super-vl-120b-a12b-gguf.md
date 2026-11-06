@@ -6,19 +6,19 @@ NVIDIA-Nemotron-3.5-Super-VL-120B-A12B es un modelo multimodal de tipo vision-la
 
 La arquitectura combina capas intercaladas de Mamba-2, Mixture-of-Experts (MoE) y atencion, junto con un codificador de vision C-RADIO y un conector vision-lenguaje. Segun la model card, cuenta con 120.000 millones de parametros totales y 12.000 millones de parametros activos, con una longitud de contexto de hasta 1 millon de tokens y decodificacion especulativa nativa mediante Multi-Token Prediction (MTP). Acepta texto, imagenes y video como entrada, y genera texto.
 
-Su relevancia actual radica en que es uno de los pocos modelos abiertos de escala 120B que unen razonamiento, codigo, uso de herramientas, comprension de documentos y comprension de video en un solo checkpoint, con licencia OpenMDW-1.1 y soporte declarado para uso comercial. La publicacion de cuantizaciones dinamicas por parte de Unsloth facilita el despliegue en hardware que no puede alojar los pesos BF16 completos. Existe una discrepancia notable en los metadatos de HuggingFace: el campo de parametros totales derivado de safetensors indica 1.632.922.404 parametros, un valor incompatible con los 120B que declara la model card; conviene verificar el peso real antes de dimensionar hardware.
+Su relevancia actual radica en que es uno de los pocos modelos abiertos de escala 120B que unen razonamiento, codigo, uso de herramientas, comprension de documentos y comprension de video en un solo checkpoint, con licencia OpenMDW-1.1 y soporte declarado para uso comercial. La publicacion de cuantizaciones dinamicas por parte de Unsloth facilita el despliegue en hardware que no puede alojar los pesos BF16 completos. Existe una discrepancia notable en los metadatos de Hugging Face: el campo de parametros totales derivado de safetensors indica 1.632.922.404 parametros, un valor incompatible con los 120B que declara la model card; conviene verificar el peso real antes de dimensionar hardware.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Hibrida Mamba-2 + Transformer, con Mixture-of-Experts (MoE) intercalado y codificador de vision C-RADIO |
-| Parametros totales | 120B segun la model card (12B activos); el campo de parametros de safetensors en HuggingFace indica 1.632.922.404, dato inconsistente con la model card |
+| Parametros totales | 120B segun la model card (12B activos); el campo de parametros de safetensors en Hugging Face indica 1.632.922.404, dato inconsistente con la model card |
 | Parametros activos | 12B |
 | Longitud de contexto | Hasta 1.000.000 de tokens |
 | Tipos de cuantizacion | GGUF con cuantizaciones dinamicas Unsloth Dynamic 3.0 (niveles concretos no disponibles); el modelo base ofrece ademas una version NVFP4 |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF en este repositorio; safetensors BF16 y NVFP4 en el modelo base de NVIDIA |
 | Precision de referencia | BF16 |
 | Modalidades de entrada / salida | Texto, imagenes y video / texto |
@@ -91,7 +91,7 @@ La comparativa se limita a los modelos que aparecen en la tabla de benchmarks pu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nemotron 3.5 Super VL 120B-A12B | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | Pesos en HuggingFace (NVIDIA en BF16 y NVFP4; Unsloth en GGUF) |
+| Nemotron 3.5 Super VL 120B-A12B | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | Pesos en Hugging Face (NVIDIA en BF16 y NVFP4; Unsloth en GGUF) |
 | Qwen3.5-122B-A10B | 122B totales, 10B activos (segun la nomenclatura) | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | DeepSeek-V4-Flash0731 | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -101,12 +101,12 @@ En los datos publicados, Nemotron 3.5 Super VL obtiene el mejor resultado en APE
 
 ## Limitaciones y advertencias
 
-- Discrepancia de metadatos: el repositorio de HuggingFace declara 1.632.922.404 parametros en el campo derivado de safetensors, frente a los 120B de la model card. Es imprescindible verificar el contenido real de los ficheros antes de planificar el despliegue.
+- Discrepancia de metadatos: el repositorio de Hugging Face declara 1.632.922.404 parametros en el campo derivado de safetensors, frente a los 120B de la model card. Es imprescindible verificar el contenido real de los ficheros antes de planificar el despliegue.
 - Riesgo de alucinacion: la propia tabla de NVIDIA reporta una tasa de alucinacion de 30,0 en AA-Omniscience, con un indice de 4,03. Es un valor bajo en su grupo, pero no nulo, por lo que las salidas factuales deben validarse en entornos de produccion.
 - Rendimiento desigual por tarea: el resultado en MMLU-ProX (76,91) esta por debajo de varios competidores directos, lo que sugiere menor solidez en conocimiento general y multilingue que en razonamiento cientifico.
 - Cobertura idiomatica limitada a seis idiomas (en, es, fr, de, it, ja); no se declara soporte para otras lenguas, incluidos otros idiomas oficiales de Espana.
 - Longitud de contexto de 1M tokens: es una capacidad nominal que no viene acompanada de datos publicos sobre degradacion de rendimiento a esa distancia ni de benchmarks especificos de contexto largo.
-- Licencia OpenMDW-1.1: la model card afirma que el modelo esta listo para uso comercial y no comercial, pero la licencia figura como "other" en HuggingFace y sus terminos completos deben revisarse antes de distribuirlo o integrarlo en productos.
+- Licencia OpenMDW-1.1: la model card afirma que el modelo esta listo para uso comercial y no comercial, pero la licencia figura como "other" en Hugging Face y sus terminos completos deben revisarse antes de distribuirlo o integrarlo en productos.
 - Los requisitos de hardware citados (4x H100 o 2x GB200) corresponden a la version BF16 y no se han publicado cifras equivalentes para las cuantizaciones GGUF de este repositorio.
 - No hay resultados publicados de benchmarks para la version cuantizada, por lo que la perdida de precision respecto a BF16 es desconocida.
 - El repositorio ocupa 1202,2 GB, lo que implica un coste de almacenamiento y de ancho de banda considerable incluso si solo se descarga una de las cuantizaciones.
@@ -114,7 +114,7 @@ En los datos publicados, Nemotron 3.5 Super VL obtiene el mejor resultado en APE
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF
 - Modelo base en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Release en NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Guia de Unsloth para ejecutar Nemotron 3.5 Super VL: https://unsloth.ai/docs/models/nemotron-3.5-super-vl

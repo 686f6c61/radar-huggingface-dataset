@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andersonand97/mobilevit-checkpoint` es un repositorio de HuggingFace publicado por el usuario andersonand97 que contiene una implementacion propia de MobileViT configurada para una tarea multitarea. El propio autor lo describe como una implementacion pequena y reproducible, con una configuracion explicita y un checkpoint de inicializacion, y aclara de forma textual que se trata de un punto de partida reproducible y no de una release de un modelo entrenado.
+`andersonand97/mobilevit-checkpoint` es un repositorio de Hugging Face publicado por el usuario andersonand97 que contiene una implementacion propia de MobileViT configurada para una tarea multitarea. El propio autor lo describe como una implementacion pequena y reproducible, con una configuracion explicita y un checkpoint de inicializacion, y aclara de forma textual que se trata de un punto de partida reproducible y no de una release de un modelo entrenado.
 
 El peso publicado (`model.safetensors`) es un checkpoint de inicializacion valido para pruebas de humo, con 33.088 parametros (notacion anglosajona: 33,088; aproximadamente 33 mil), lo que lo situa muy por debajo de cualquier modelo utilizable en inferencia real. El repositorio no declara puntuaciones de benchmark, no indica idiomas soportados y no especifica la modalidad de entrada.
 
@@ -36,7 +36,7 @@ Como innovaciones tecnicas destacables solo pueden citarse las decisiones de dis
 - Vision: la familia MobileViT se asocia habitualmente a tareas de vision en arquitecturas hibridas convolucionales y transformer, pero la model card de este repositorio no declara modalidad de entrada ni tarea concreta, por lo que no puede confirmarse.
 - Tool calling / function calling: no disponible; no se declara soporte.
 - Agentes y razonamiento multi-paso: no disponible; no se declara soporte.
-- Capacidades multilingues: no disponibles; el campo de idiomas esta vacio en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponibles; el campo de idiomas esta vacio en los metadatos de Hugging Face.
 - Capacidades especiales (modo thinking, audio, vision, etc.): ninguna verificada en la informacion proporcionada.
 - Capacidad efectiva como artefacto: permite instanciar la arquitectura descrita, cargar el checkpoint de inicializacion y ejecutar el ejemplo de prueba de humo incluido en el bloque `__main__` de `model.py`.
 
@@ -68,8 +68,8 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mobilevit-checkpoint (este repositorio) | 33.088 (anglosajon: 33,088) | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| Checkpoints de referencia de MobileViT publicados por Apple (apple/mobilevit-xxs, -xs, -s) | no disponible en esta ficha | no aplica | no disponible en esta ficha | HuggingFace |
+| mobilevit-checkpoint (este repositorio) | 33.088 (anglosajon: 33,088) | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| Checkpoints de referencia de MobileViT publicados por Apple (apple/mobilevit-xxs, -xs, -s) | no disponible en esta ficha | no aplica | no disponible en esta ficha | Hugging Face |
 | Otras implementaciones de MobileViT en repositorios de terceros | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible |
 
 Nota de contexto externo: MobileViT es una familia de arquitecturas hibridas convolucionales y transformer propuesta por Apple en 2021. Esa referencia no forma parte de la informacion proporcionada por el repositorio analizado y no debe atribuirse al autor de este checkpoint.
@@ -88,6 +88,6 @@ Nota de contexto externo: MobileViT es una familia de arquitecturas hibridas con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andersonand97/mobilevit-checkpoint
+- Hugging Face: https://huggingface.co/andersonand97/mobilevit-checkpoint
 
 No se han proporcionado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

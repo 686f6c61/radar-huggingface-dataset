@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Distilbert-query-classifier es un modelo de clasificación de texto publicado en HuggingFace por el usuario elyes1032. Se trata de un checkpoint de la librería transformers con arquitectura DistilBERT, distribuido en formato safetensors y con 66.955.010 parámetros totales, lo que lo sitúa en la misma escala que distilbert-base (aproximadamente 67 millones). El repositorio ocupa 0,3 GB y está etiquetado para el pipeline `text-classification`, además de ser compatible con text-embeddings-inference y endpoints de HuggingFace.
+Distilbert-query-classifier es un modelo de clasificación de texto publicado en Hugging Face por el usuario elyes1032. Se trata de un checkpoint de la librería transformers con arquitectura DistilBERT, distribuido en formato safetensors y con 66.955.010 parámetros totales, lo que lo sitúa en la misma escala que distilbert-base (aproximadamente 67 millones). El repositorio ocupa 0,3 GB y está etiquetado para el pipeline `text-classification`, además de ser compatible con text-embeddings-inference y endpoints de Hugging Face.
 
-El nombre del modelo sugiere que ha sido ajustado para clasificar consultas (queries), un caso de uso habitual en sistemas de búsqueda, enrutado de peticiones o atención al cliente automatizada. Sin embargo, la model card es la plantilla automática de HuggingFace y no contiene ninguna sección completada: no hay información sobre el dataset de entrenamiento, el procedimiento de ajuste, las clases de salida, las métricas de evaluación ni las lenguas cubiertas.
+El nombre del modelo sugiere que ha sido ajustado para clasificar consultas (queries), un caso de uso habitual en sistemas de búsqueda, enrutado de peticiones o atención al cliente automatizada. Sin embargo, la model card es la plantilla automática de Hugging Face y no contiene ninguna sección completada: no hay información sobre el dataset de entrenamiento, el procedimiento de ajuste, las clases de salida, las métricas de evaluación ni las lenguas cubiertas.
 
 El modelo cuenta con cero descargas y cero likes en el momento de la consulta, y no declara licencia. Para cualquier evaluación seria es necesario contactar con el autor o inspeccionar los ficheros del repositorio (config.json, id2label) para reconstruir la tarea real y las etiquetas.
 
@@ -63,18 +63,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Inferencia en fp16/bf16: aproximadamente 134 MB de pesos, con un impacto mínimo en la precisión para una tarea de clasificación.
 - GPU recomendadas: cualquier GPU moderna sirve; una RTX 3060, RTX 4090, T4, L4 o incluso una A100 son más que suficientes. El modelo también corre con solvencia en CPU.
 - GPU consumer: sí, cabe en cualquier GPU consumer de los últimos diez años, incluidos portátiles e iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference (marcado como compatible), HuggingFace Inference Endpoints (endpoints_compatible), ONNX Runtime u OpenVINO mediante exportación, y FastAPI o TorchServe para servirlo. No hay ficheros GGUF en el repositorio, por lo que llama.cpp u Ollama requerirían una conversión previa.
+- Opciones de despliegue: transformers con PyTorch, text-embeddings-inference (marcado como compatible), Hugging Face Inference Endpoints (endpoints_compatible), ONNX Runtime u OpenVINO mediante exportación, y FastAPI o TorchServe para servirlo. No hay ficheros GGUF en el repositorio, por lo que llama.cpp u Ollama requerirían una conversión previa.
 - Latencia y throughput: no disponibles en la información proporcionada. Como referencia orientativa de la arquitectura, un DistilBERT-base suele procesar lotes de cientos de secuencias por segundo en una GPU moderna, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elyes1032/distilbert-query-classifier | 66,96 M | no disponible | Clasificacion de consultas (segun nombre) | no disponible | HuggingFace, 0 descargas |
-| distilbert-base-uncased | 66,96 M | 512 tokens | Modelo base, encoder general | Apache 2.0 | HuggingFace, muy extendido |
-| bert-base-uncased | 110 M | 512 tokens | Modelo base, encoder general | Apache 2.0 | HuggingFace, muy extendido |
-| microsoft/MiniLM-L6-H384-uncased | 22,7 M | 512 tokens | Modelo base destilado, encoder general | Apache 2.0 | HuggingFace, muy extendido |
-| huawei-noah/TinyBERT_General_4L_312D | 14,5 M | 512 tokens | Modelo base destilado, encoder general | Apache 2.0 | HuggingFace |
+| elyes1032/distilbert-query-classifier | 66,96 M | no disponible | Clasificacion de consultas (segun nombre) | no disponible | Hugging Face, 0 descargas |
+| distilbert-base-uncased | 66,96 M | 512 tokens | Modelo base, encoder general | Apache 2.0 | Hugging Face, muy extendido |
+| bert-base-uncased | 110 M | 512 tokens | Modelo base, encoder general | Apache 2.0 | Hugging Face, muy extendido |
+| microsoft/MiniLM-L6-H384-uncased | 22,7 M | 512 tokens | Modelo base destilado, encoder general | Apache 2.0 | Hugging Face, muy extendido |
+| huawei-noah/TinyBERT_General_4L_312D | 14,5 M | 512 tokens | Modelo base destilado, encoder general | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento para el modelo evaluado, por lo que la comparativa se limita a parámetros, contexto y licencia. La ventaja frente a BERT-base es el menor coste computacional; la desventaja frente a MiniLM o TinyBERT es el mayor tamaño sin garantía de mejor calidad en una tarea concreta.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento para el modelo evaluado, por lo que la comparativa s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elyes1032/distilbert-query-classifier
+- Modelo en Hugging Face: https://huggingface.co/elyes1032/distilbert-query-classifier
 - Paper de DistilBERT (referencia de la etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning citada en la plantilla de la model card: https://mlco2.github.io/impact
 

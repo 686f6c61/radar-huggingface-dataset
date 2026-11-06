@@ -95,7 +95,7 @@ La comparacion con la familia xLAM de Salesforce se incluye por la relacion con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/poovanna/Llama-3.2-3B-xLAM-FC-GGUF
+- Repositorio Hugging Face: https://huggingface.co/poovanna/Llama-3.2-3B-xLAM-FC-GGUF
 - Modelo base del ajuste: https://huggingface.co/poovanna/Llama-3.2-3B-xLAM-FC
 - Codigo, notebooks y write-up: https://github.com/vignesh-poovanna/Llama-3.2-3B-xLAM-FC
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k

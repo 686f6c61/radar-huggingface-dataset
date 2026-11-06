@@ -46,7 +46,7 @@ La innovación relevante aquí es la estrategia de representación numérica, no
 
 ## Casos de uso
 
-- **Despliegue en infraestructura con runtime ONNX propietario**: organizaciones que ya tienen ONNX Runtime desplegado en C++, C#, Java o JS pueden cargar estos grafos sin introducir PyTorch ni vLLM en la cadena. Requiere implementar el orquestador de estados, pero evita dependencias del ecosistema HuggingFace en producción.
+- **Despliegue en infraestructura con runtime ONNX propietario**: organizaciones que ya tienen ONNX Runtime desplegado en C++, C#, Java o JS pueden cargar estos grafos sin introducir PyTorch ni vLLM en la cadena. Requiere implementar el orquestador de estados, pero evita dependencias del ecosistema Hugging Face en producción.
 - **Inferencia en dispositivos edge y entornos embebidos**: el formato ONNX con datos externos en un único `model.bin` y batch fijo de 1 encaja en escenarios de un solo usuario por dispositivo, donde el batching no aporta y el tamaño del runtime importa más que el throughput agregado.
 - **Validación de pipelines de cuantización FP8**: el artefacto sirve como caso de prueba para verificar que un runtime reproduce correctamente la decodificación de escalas UE8M0 y la regla amax/448 por bloque, comparando los logits FP32 del grafo con la referencia del checkpoint original.
 - **Integración en aplicaciones de escritorio con aceleración por hardware heterogéneo**: al ser un grafo estándar, puede ejecutarse sobre EP de ONNX Runtime (CUDA, DirectML, CoreML, OpenVINO), lo que permite reutilizar el mismo artefacto en Windows, macOS y Linux con distinto backend.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks, contexto, parámetros ni licencia de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/Ling-3.0-tiny-fp8-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/Ling-3.0-tiny-fp8-ONNX
 - Fichero de interfaz del modelo (en el repositorio): `model_interface.json`
 - Instrucciones de reproducción de la exportación (en el repositorio): `conversion/README.md`
 - Informe de exportación (en el repositorio): `conversion/export_report.json`

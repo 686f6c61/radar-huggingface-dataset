@@ -83,11 +83,11 @@ Lectura de los resultados según el autor: liderazgo en todas las tareas de gram
 
 | Modelo | Parámetros | Contexto | Media (8 tareas FR) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Dokichat-100M | 99,9M | 2.048 | 48,6 | Apache 2.0 | HuggingFace |
-| LFM2-350M | 350M | no disponible | 49,1 | no disponible en la información | HuggingFace |
-| Qwen2.5-0.5B | 500M | no disponible | 49,8 | no disponible en la información | HuggingFace |
-| Gemma 3 270M | 270M | no disponible | 45,9 | no disponible en la información | HuggingFace |
-| CroissantLLM-1.3B | 1.300M | no disponible | 54,7 | no disponible en la información | HuggingFace |
+| Dokichat-100M | 99,9M | 2.048 | 48,6 | Apache 2.0 | Hugging Face |
+| LFM2-350M | 350M | no disponible | 49,1 | no disponible en la información | Hugging Face |
+| Qwen2.5-0.5B | 500M | no disponible | 49,8 | no disponible en la información | Hugging Face |
+| Gemma 3 270M | 270M | no disponible | 45,9 | no disponible en la información | Hugging Face |
+| CroissantLLM-1.3B | 1.300M | no disponible | 54,7 | no disponible en la información | Hugging Face |
 
 Dokichat-100M ofrece una media comparable a modelos de 3 a 5 veces más parámetros, con la ventaja de un tamaño mucho menor para despliegue y una licencia Apache 2.0 permisiva. Frente a CroissantLLM-1.3B, un modelo 13 veces mayor, queda a 6,1 puntos de media y a 3,5 puntos en las tareas lingüísticas francesas.
 
@@ -105,7 +105,7 @@ Dokichat-100M ofrece una media comparable a modelos de 3 a 5 veces más parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dokitek/Dokichat-100M
+- Modelo en Hugging Face: https://huggingface.co/Dokitek/Dokichat-100M
 - Versión instruct: https://huggingface.co/Dokitek/Dokichat-100M-Instruct
 - Perfil del autor: https://huggingface.co/Dokitek
 - Dataset de entrenamiento: https://huggingface.co/datasets/epfml/FineWeb2-HQ

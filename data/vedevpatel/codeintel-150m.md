@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CodeIntel-150M es un modelo de lenguaje de pequeño tamaño publicado en HuggingFace por el usuario vedevpatel, con un tamaño aproximado de 150 millones de parametros segun indica su nombre. El modelo se presenta como un modelo orientado a tareas de inteligenica de codigo, aunque la model card publicada no incluye descripcion alguna de su proposito, arquitectura, datos de entrenamiento ni capacidades, por lo que la informacion disponible es extremadamente escasa.
+CodeIntel-150M es un modelo de lenguaje de pequeño tamaño publicado en Hugging Face por el usuario vedevpatel, con un tamaño aproximado de 150 millones de parametros segun indica su nombre. El modelo se presenta como un modelo orientado a tareas de inteligenica de codigo, aunque la model card publicada no incluye descripcion alguna de su proposito, arquitectura, datos de entrenamiento ni capacidades, por lo que la informacion disponible es extremadamente escasa.
 
-Su relevancia practica es limitada en este momento: el modelo registra cero descargas y cero likes en HuggingFace, carece de model card descriptiva y no hay documentacion asociada (paper, repositorio de codigo o demo). Al estar bajo licencia Apache 2.0, puede utilizarse, modificarse y redistribuirse libremente, incluso con fines comerciales, lo que lo convierte en un punto de partida potencialmente util para experimentacion ligera en entornos con recursos muy restringidos, siempre que el usuario verifique por si mismo su comportamiento real.
+Su relevancia practica es limitada en este momento: el modelo registra cero descargas y cero likes en Hugging Face, carece de model card descriptiva y no hay documentacion asociada (paper, repositorio de codigo o demo). Al estar bajo licencia Apache 2.0, puede utilizarse, modificarse y redistribuirse libremente, incluso con fines comerciales, lo que lo convierte en un punto de partida potencialmente util para experimentacion ligera en entornos con recursos muy restringidos, siempre que el usuario verifique por si mismo su comportamiento real.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia practica es limitada en este momento: el modelo registra cero desc
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (probablemente safetensors por defecto de HuggingFace, no confirmado) |
+| Formato de pesos | no disponible (probablemente safetensors por defecto de Hugging Face, no confirmado) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con ~150M de parametros, en FP16 se necesitan alrededor de 0,3 GB; en INT8 unos 0,15 GB; en INT4 menos de 0,1 GB. Cualquier GPU moderna lo ejecuta sin problemas.
 - GPU recomendadas: no se requiere GPU dedicada; cualquier GPU de consumo (GTX 1650, RTX 3060, RTX 4090 o superior) es mas que suficiente. Tambien es viable la inferencia en CPU.
 - Consumer GPUs: cabe con holgura en practicamente cualquier GPU de los ultimos anos, e incluso en portatiles sin GPU discreta.
-- Opciones de despliegue: al no confirmarse el formato de pesos, no se puede garantizar compatibilidad; si los pesos estan en safetensors estandar de HuggingFace, funcionara con transformers; si existen conversiones GGUF, seria compatible con llama.cpp, Ollama y LM Studio. vLLM y TGI tambien deberian soportarlo si la arquitectura es un transformer estandar.
+- Opciones de despliegue: al no confirmarse el formato de pesos, no se puede garantizar compatibilidad; si los pesos estan en safetensors estandar de Hugging Face, funcionara con transformers; si existen conversiones GGUF, seria compatible con llama.cpp, Ollama y LM Studio. vLLM y TGI tambien deberian soportarlo si la arquitectura es un transformer estandar.
 - Latencia y throughput: no disponibles; para un modelo de este tamano se esperan latencias de primer token muy bajas y throughput alto incluso en CPU, pero no hay medidas publicadas.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Ante alternativas de codigo de tamano comparable o algo mayor pero con documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vedevpatel/CodeIntel-150M
+- Hugging Face: https://huggingface.co/vedevpatel/CodeIntel-150M
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

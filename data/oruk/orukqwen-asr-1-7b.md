@@ -74,8 +74,8 @@ Resultados declarados por el autor (no verificados de forma independiente, `veri
 
 | Modelo | Parámetros | Contexto | WER medio Open ASR (inglés) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oruk/orukqwen-asr-1.7b | 2,04B | no disponible | 4,76 (declarado) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B (base) | ~1,7B (según nombre) | no disponible | 4,94 (declarado por oruk) | Apache-2.0 | HuggingFace |
+| oruk/orukqwen-asr-1.7b | 2,04B | no disponible | 4,76 (declarado) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (base) | ~1,7B (según nombre) | no disponible | 4,94 (declarado por oruk) | Apache-2.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El modelo base es la referencia directa y la única comparación documentada en la información disponible; no se dispone de datos de otros ASR comparables en la búsqueda realizada.
@@ -94,7 +94,7 @@ El modelo base es la referencia directa y la única comparación documentada en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oruk/orukqwen-asr-1.7b
+- Hugging Face: https://huggingface.co/oruk/orukqwen-asr-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Referencia GSPO: arXiv:2507.18071
 - Referencia model soup: arXiv:2203.05482

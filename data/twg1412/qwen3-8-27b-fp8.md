@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-FP8 es la version cuantizada en FP8 del modelo Qwen3.8-27B, un modelo denso de lenguaje y vision desarrollado por el equipo Qwen de Alibaba. Se trata de un modelo nativo de vision-lenguaje que comprende imagenes y videos, con control flexible del modo de pensamiento, disenado para tareas agénticas complejas de multiples pasos. La cuantizacion FP8 con bloque de 128 mantiene un rendimiento practicamente identico al del modelo original, segun el autor del repositorio.
 
-El modelo base tiene 27.781 millones de parametros, una arquitectura hibrida que combina atencion lineal (Gated DeltaNet) con atencion completa (Gated Attention), y una ventana de contexto nativa de 262.144 tokens extensible hasta 1 millon. Esta version cuantizada esta publicada por el usuario TWG1412 en HuggingFace y es compatible con Transformers, vLLM, SGLang y TokenSpeed, lo que facilita su despliegue en entornos de produccion.
+El modelo base tiene 27.781 millones de parametros, una arquitectura hibrida que combina atencion lineal (Gated DeltaNet) con atencion completa (Gated Attention), y una ventana de contexto nativa de 262.144 tokens extensible hasta 1 millon. Esta version cuantizada esta publicada por el usuario TWG1412 en Hugging Face y es compatible con Transformers, vLLM, SGLang y TokenSpeed, lo que facilita su despliegue en entornos de produccion.
 
 ## Especificaciones tecnicas
 
@@ -83,8 +83,8 @@ La model card menciona que Qwen3.8-27B supera a Qwen3.6-27B, Qwen3.7-Plus, Muse 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/TWG1412/Qwen3.8-27B-FP8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/TWG1412/Qwen3.8-27B-FP8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - BenchLM.ai: https://benchlm.ai/models/qwen3-8-27b

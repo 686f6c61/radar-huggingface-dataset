@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de investigación identificado como `ismamNur/prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt`, publicado por el usuario ismamNur en HuggingFace. Por la nomenclatura y la etiqueta `qwen2`, se trata de un ajuste fino mediante GRPO (Group Relative Policy Optimization) sobre un modelo base de la familia Qwen2 con aproximadamente 1.500 millones de parámetros; el recuento real de pesos en safetensors es de 1.777.088.000 parámetros. El nombre codifica la configuración del experimento: tasa de aprendizaje 5e-6, batch de 64, semilla 0, optimizador AdamW y un mecanismo de filtrado dinámico de muestras (`dynfilt`).
+Este repositorio contiene un checkpoint de investigación identificado como `ismamNur/prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt`, publicado por el usuario ismamNur en Hugging Face. Por la nomenclatura y la etiqueta `qwen2`, se trata de un ajuste fino mediante GRPO (Group Relative Policy Optimization) sobre un modelo base de la familia Qwen2 con aproximadamente 1.500 millones de parámetros; el recuento real de pesos en safetensors es de 1.777.088.000 parámetros. El nombre codifica la configuración del experimento: tasa de aprendizaje 5e-6, batch de 64, semilla 0, optimizador AdamW y un mecanismo de filtrado dinámico de muestras (`dynfilt`).
 
 El modelo no es un lanzamiento de producción, sino un artefacto experimental asociado a la fase de réplica (*rebuttal*) de un artículo científico. Esto implica que no existe una model card descriptiva, no se declaran idiomas soportados ni licencia, y no se publican resultados de evaluación. Su interés es, por tanto, reproducibilidad de experimentos de RLHF/GRPO sobre modelos pequeños, no uso directo en aplicaciones.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (GRPO sobre Qwen2-1.5B) | 1.777 M | No disponible | No disponible | HuggingFace, 10 descargas, 0 likes |
-| Qwen2.5-1.5B / 1.5B-Instruct | ~1.540 M | 32 768 tokens (segun documentacion del modelo base) | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1.700 M | 8 192 tokens (segun documentacion del modelo base) | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| Gemma-2-2B-it | ~2.600 M | 8 192 tokens (segun documentacion del modelo base) | Licencia Gemma (uso comercial con condiciones) | Disponible en HuggingFace |
+| Este checkpoint (GRPO sobre Qwen2-1.5B) | 1.777 M | No disponible | No disponible | Hugging Face, 10 descargas, 0 likes |
+| Qwen2.5-1.5B / 1.5B-Instruct | ~1.540 M | 32 768 tokens (segun documentacion del modelo base) | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1.700 M | 8 192 tokens (segun documentacion del modelo base) | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| Gemma-2-2B-it | ~2.600 M | 8 192 tokens (segun documentacion del modelo base) | Licencia Gemma (uso comercial con condiciones) | Disponible en Hugging Face |
 
 La comparacion relevante no es de rendimiento, ya que este checkpoint no publica evaluaciones, sino de trazabilidad: frente a los modelos anteriores, carece de model card, licencia declarada e idiomas soportados, lo que lo descalifica para uso comercial sin aclaracion previa del autor.
 
@@ -85,7 +85,7 @@ La comparacion relevante no es de rendimiento, ya que este checkpoint no publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ismamNur/prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt
+- Hugging Face: https://huggingface.co/ismamNur/prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt
 - Paper, blog o repositorio del experimento: no disponible en la informacion proporcionada.
 - Demo o espacio asociado: no disponible.
 - La busqueda web no devolvio enlaces relevantes al modelo.

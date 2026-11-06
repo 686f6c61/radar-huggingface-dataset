@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepBump ONNX (este repositorio) | no disponible (~26,71 MB de grafo) | imagen 256 × 256, 1 canal | ONNX | GPL-3.0 | espejo en HuggingFace, sin soporte del autor original |
+| DeepBump ONNX (este repositorio) | no disponible (~26,71 MB de grafo) | imagen 256 × 256, 1 canal | ONNX | GPL-3.0 | espejo en Hugging Face, sin soporte del autor original |
 | DeepBump original (HugoTini/DeepBump) | no disponible | imagen 256 × 256, 1 canal | pesos del proyecto original | GPL-3.0 | repositorio GitHub del autor |
-| DeepBump, espejo `Wszelkiebro/reliquary-deepbump-normal` | no disponible | imagen 256 × 256, 1 canal | no disponible | GPL-3.0 | repositorio HuggingFace de origen de esta conversión |
+| DeepBump, espejo `Wszelkiebro/reliquary-deepbump-normal` | no disponible | imagen 256 × 256, 1 canal | no disponible | GPL-3.0 | repositorio Hugging Face de origen de esta conversión |
 | Herramientas de generación de normales de propósito general (p. ej. suites de autoría PBR) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La comparación cuantitativa de calidad frente a otras herramientas no está disponible: no se han publicado métricas en la documentación consultada y esta copia no ha sido reevaluada.
@@ -91,6 +91,6 @@ La comparación cuantitativa de calidad frente a otras herramientas no está dis
 
 ## Enlaces
 
-- [Repositorio en HuggingFace: ADI98211/deepbump-normal-onnx](https://huggingface.co/ADI98211/deepbump-normal-onnx)
+- [Repositorio en Hugging Face: ADI98211/deepbump-normal-onnx](https://huggingface.co/ADI98211/deepbump-normal-onnx)
 - [Repositorio de origen: Wszelkiebro/reliquary-deepbump-normal](https://huggingface.co/Wszelkiebro/reliquary-deepbump-normal)
 - [Proyecto upstream en GitHub: HugoTini/DeepBump](https://github.com/HugoTini/DeepBump)

@@ -18,7 +18,7 @@ El repositorio incluye tanto archivos `.pt` como `.safetensors` para el adaptado
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun tags de HuggingFace) |
+| Licencia | MIT (segun tags de Hugging Face) |
 | Formato de pesos | safetensors y .pt |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ No hay alternativas documentadas en la información proporcionada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3)
+- [Modelo en Hugging Face](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3)
 - [README del modelo](https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3/blob/main/README.md)
 - [Repositorio GitHub ComfyUI-ClipProj](https://github.com/nicolab28/ComfyUI-ClipProj)
 - [Repositorio GitHub MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)

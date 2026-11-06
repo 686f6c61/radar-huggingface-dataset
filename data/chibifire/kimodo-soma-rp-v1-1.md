@@ -83,8 +83,8 @@ La diferencia principal entre variantes es el esqueleto de salida (SOMA, Unitree
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/chibifire/Kimodo-SOMA-RP-v1.1
-- HuggingFace (original): https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
+- Hugging Face (espejo): https://huggingface.co/chibifire/Kimodo-SOMA-RP-v1.1
+- Hugging Face (original): https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Paper tecnico: https://research.nvidia.com/labs/sil/projects/kimodo/assets/kimodo_tech_report.pdf
 - Pagina del proyecto: https://research.nvidia.com/labs/sil/projects/kimodo/
 - GitHub: https://github.com/nv-tlabs/kimodo

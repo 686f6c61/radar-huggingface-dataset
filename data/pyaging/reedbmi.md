@@ -68,6 +68,6 @@ Existen otros relojes epigenéticos que estiman el BMI o rasgos metabólicos, co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/reedbmi
+- Hugging Face: https://huggingface.co/pyaging/reedbmi
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io
 - Artículo original: Reed, Z. E., et al. "The association of DNA methylation with body mass index: distinguishing between predictors and biomarkers." Clinical Epigenetics 12 (2020): 50. DOI: https://doi.org/10.1186/s13148-020-00841-5

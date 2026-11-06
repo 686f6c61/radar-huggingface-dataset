@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx
 - Checkpoint base (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/

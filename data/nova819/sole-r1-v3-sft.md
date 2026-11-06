@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sole-r1-v3-sft | ~8B (base) | no disponible | no disponible | HuggingFace (0 descargas) | SFT sobre Qwen3-VL-8B-Instruct para progreso LIBERO Spatial |
-| Qwen3-VL-8B-Instruct | ~8B | no disponible | no disponible | HuggingFace (oficial) | Modelo base multimodal de propósito general |
+| sole-r1-v3-sft | ~8B (base) | no disponible | no disponible | Hugging Face (0 descargas) | SFT sobre Qwen3-VL-8B-Instruct para progreso LIBERO Spatial |
+| Qwen3-VL-8B-Instruct | ~8B | no disponible | no disponible | Hugging Face (oficial) | Modelo base multimodal de propósito general |
 | SOLE-R1 (oficial) | no disponible | no disponible | no disponible | Proyecto de investigación | Receta SFT + RLVR (GRPO); no es el mismo modelo |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nova819/sole-r1-v3-sft
+- Hugging Face: https://huggingface.co/nova819/sole-r1-v3-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset: https://huggingface.co/datasets/nova819/sole-r1-v3-data
 - Proyecto SOLE-R1: https://philip-mit.github.io/sole-r1/

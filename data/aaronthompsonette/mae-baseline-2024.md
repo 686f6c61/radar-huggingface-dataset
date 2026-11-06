@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaronthompsonette/mae-baseline-2024` es un repositorio experimental publicado en HuggingFace por el usuario aaronthompsonette que contiene una implementación propia de una arquitectura denominada Mae orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje de código (`model.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que, segun la propia model card, sirve únicamente para pruebas de humo (smoke tests) y no como checkpoint evaluado.
+`aaronthompsonette/mae-baseline-2024` es un repositorio experimental publicado en Hugging Face por el usuario aaronthompsonette que contiene una implementación propia de una arquitectura denominada Mae orientada a tareas de generación. No se trata de un modelo entrenado, sino de un andamiaje de código (`model.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que, segun la propia model card, sirve únicamente para pruebas de humo (smoke tests) y no como checkpoint evaluado.
 
 El dato más relevante es su escala real: el repositorio declara 33.088 parámetros totales en el archivo safetensors, una cifra que contrasta con la etiqueta "giant" que aparece en la tabla de arquitectura de la model card. Con ese orden de magnitud (decenas de miles de parámetros), el artefacto no es utilizable como modelo generativo de propósito general: no hay evidencia de entrenamiento, no se reclama ninguna puntuación de benchmark y el propio autor indica que los valores incluidos son puntos de partida del script, no resultados de una ejecución completada.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, metodológica y no de rendimiento: sirve com
 | Formato de pesos | safetensors (`model.safetensors`), más código PyTorch en `model.py` |
 | Escala declarada por el autor | "giant" (etiqueta de la model card que no coincide con los 33.088 parámetros reales) |
 | Optimizador de la receta por defecto | LAMB con scheduler exponencial |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Repositorio y fechas | Creado y actualizado el 2026-09-10; tamaño del repo 0,0 GB; 0 descargas; 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ No hay información sobre datos de entrenamiento: no se especifica número de to
 ## Casos de uso
 
 - Prueba de humo en integración continua: ejecutar `python model.py --help` y el ejemplo del bloque `__main__` en cada commit para detectar errores de instanciación, formas de tensores o serialización de safetensors antes de gastar cómputo en entrenamientos completos.
-- Desarrollo de adaptadores de carga: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; el repositorio sirve como caso de prueba para escribir y validar ese adaptador antes de aplicarlo a checkpoints reales.
+- Desarrollo de adaptadores de carga: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; el repositorio sirve como caso de prueba para escribir y validar ese adaptador antes de aplicarlo a checkpoints reales.
 - Plantilla de protocolo de evaluación: la model card propone usar un conjunto retenido específico de tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad equivalente; el repositorio puede usarse como esqueleto para estandarizar ese protocolo entre distintos baselines.
 - Estudio de ablaciones de arquitectura: comparar variantes de atención multi-query frente a atención completa, o de instancenorm frente a otras normalizaciones, manteniendo fija la exposición de datos, el presupuesto de ajuste y las semillas, como recomienda el propio autor.
 - Material didáctico y reproducción de experimentos: el conjunto de `config.json` y `training_args.json` permite ilustrar cómo se registra una receta de entrenamiento (optimizador LAMB, scheduler exponencial) y cómo se separa la configuración de arquitectura de los hiperparámetros.
@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-baseline-2024 | 33.088 | No disponible | Ninguno (no se reclama) | BSD-3-Clause | Repositorio HuggingFace con 0 descargas |
+| mae-baseline-2024 | 33.088 | No disponible | Ninguno (no se reclama) | BSD-3-Clause | Repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,9 +87,9 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaronthompsonette/mae-baseline-2024
+- Modelo en Hugging Face: https://huggingface.co/aaronthompsonette/mae-baseline-2024
 - Paper: no disponible
 - Blog o anuncio: no disponible
-- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace como `model.py`)
+- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face como `model.py`)
 - Demo: no disponible
 - Resultados de búsqueda web relevantes: no disponibles (los enlaces devueltos no están relacionados con el modelo)

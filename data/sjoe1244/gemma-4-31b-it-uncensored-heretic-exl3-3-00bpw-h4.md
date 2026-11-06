@@ -118,9 +118,9 @@ Frente a alternativas de la misma categoría basadas en otras familias o en otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h4
+- Modelo en Hugging Face: https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h4
 - Variante h6 (mismo 3,0 bpw, cabeza a 6 bits, visión en BF16): https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h6
 - Modelo base (decensurado, BF16): https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic
 - Modelo upstream de Google: https://huggingface.co/google/gemma-4-31B-it
 - Herramienta de cuantización ExLlamaV3: https://github.com/turboderp-org/exllamav3
-- Búsqueda web: no se encontraron resultados relevantes. Las consultas devolvieron únicamente portales de noticias y recetas eslovacos (topky.sk y subdominios) sin relación alguna con el modelo. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de los enlaces presentes en la información de HuggingFace.
+- Búsqueda web: no se encontraron resultados relevantes. Las consultas devolvieron únicamente portales de noticias y recetas eslovacos (topky.sk y subdominios) sin relación alguna con el modelo. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar más allá de los enlaces presentes en la información de Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phi-4-mini-Instruct-NPU2 es una variante del modelo Phi-4-mini-instruct de Microsoft, publicada por el usuario Atomic-Germ en HuggingFace. Se trata de un modelo de lenguaje ligero de 3.800 millones de parámetros, diseñado para entornos con restricciones de memoria y cómputo, así como para escenarios con latencia limitada. El modelo pertenece a la familia Phi-4 y destaca por su fuerte capacidad de razonamiento, especialmente en matemáticas y lógica, además de soportar una ventana de contexto de 128.000 tokens.
+Phi-4-mini-Instruct-NPU2 es una variante del modelo Phi-4-mini-instruct de Microsoft, publicada por el usuario Atomic-Germ en Hugging Face. Se trata de un modelo de lenguaje ligero de 3.800 millones de parámetros, diseñado para entornos con restricciones de memoria y cómputo, así como para escenarios con latencia limitada. El modelo pertenece a la familia Phi-4 y destaca por su fuerte capacidad de razonamiento, especialmente en matemáticas y lógica, además de soportar una ventana de contexto de 128.000 tokens.
 
 La variante NPU2 parece orientada a aceleración en unidades de procesamiento neuronal (NPU), aunque no se especifican detalles técnicos adicionales en la información disponible. El modelo base fue entrenado con datos sintéticos y sitios web públicos filtrados, con un enfoque en datos densos en razonamiento, y posteriormente refinado mediante supervisión (SFT) y optimización directa de preferencias (DPO). Su licencia MIT permite uso comercial y de investigación sin restricciones significativas.
 
@@ -66,7 +66,7 @@ No se dispone de benchmarks específicos para la variante NPU2 más allá de los
 - VRAM estimada: con 3.8B parámetros en precisión FP16, el modelo requiere aproximadamente 7.6 GB de VRAM solo para los pesos. Con cuantización a 4 bits (si se publicara), podría reducirse a unos 2-3 GB, pero no se han publicado cuantizaciones oficiales en el repositorio.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3060/3070/4060, o GPUs profesionales como A10, L4 o T4. Para inferencia de alta velocidad, A100 o H100 son adecuadas.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 8 GB o más, como RTX 3060, RTX 4060 Ti o RTX 4070. Con cuantización a 4 bits podría ejecutarse en GPUs de 4 GB, aunque no hay archivos GGUF publicados en este repositorio.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TensorRT-LLM, HuggingFace TGI o llama.cpp (si se generan pesos GGUF). También es compatible con Ollama si se convierte previamente.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TensorRT-LLM, Hugging Face TGI o llama.cpp (si se generan pesos GGUF). También es compatible con Ollama si se convierte previamente.
 - Latencia y throughput: no se han publicado mediciones específicas para esta variante. Como referencia, un modelo de 3.8B en una GPU moderna (RTX 4090) puede generar entre 50 y 100 tokens por segundo con cuantización, pero estos valores son estimaciones orientativas.
 
 ## Comparativa con modelos similares
@@ -93,12 +93,12 @@ La variante NPU2 no presenta diferencias conocidas respecto al modelo base en cu
 
 ## Enlaces
 
-- Repositorio HuggingFace de la variante: https://huggingface.co/Atomic-Germ/Phi4-mini-Instruct-NPU2
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Repositorio Hugging Face de la variante: https://huggingface.co/Atomic-Germ/Phi4-mini-Instruct-NPU2
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Paper técnico del modelo: https://huggingface.co/papers/2503.01743
 - Blog de Microsoft sobre Phi-4-mini: https://aka.ms/phi4-feb2025
 - Technical report de Phi-4-mini: https://aka.ms/phi-4-multimodal/techreport
 - Phi Cookbook (ejemplos y guías): https://github.com/microsoft/PhiCookBook
 - Portal de Phi en Azure: https://azure.microsoft.com/en-us/products/phi
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/microsoft/phi-4-mini
 - Página de referencia en NVIDIA NIM: https://build.nvidia.com/microsoft/phi-4-mini-instruct

@@ -61,7 +61,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gaelferre/data-efficient-learning-distilled
+- Repositorio en Hugging Face: https://huggingface.co/gaelferre/data-efficient-learning-distilled
 - Artículo relacionado sobre destilación de datos (arXiv): https://arxiv.org/abs/2411.12841
 - Lista curada de métodos de destilación de datasets (GitHub): https://github.com/Guang000/Awesome-Dataset-Distillation
 - Librería DistillFlow para destilación de modelos (GitHub): https://github.com/horus-ai-labs/DistillFlow

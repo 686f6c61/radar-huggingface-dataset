@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks de vision o video en la informacion
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/Mage-VL-OptiQ-4bit | 4,4 B (pesos); base ~5 B | no disponible | apache-2.0 | safetensors MLX, precision mixta 4/8 bits | HuggingFace; 0 descargas |
-| microsoft/Mage-VL (modelo base) | ~5 B | no disponible | no disponible en la informacion proporcionada | safetensors | HuggingFace |
-| Qwen3-4B (torre de lenguaje del base) | ~4 B | no disponible | apache-2.0 | safetensors | HuggingFace; solo texto |
+| nativ-community/Mage-VL-OptiQ-4bit | 4,4 B (pesos); base ~5 B | no disponible | apache-2.0 | safetensors MLX, precision mixta 4/8 bits | Hugging Face; 0 descargas |
+| microsoft/Mage-VL (modelo base) | ~5 B | no disponible | no disponible en la informacion proporcionada | safetensors | Hugging Face |
+| Qwen3-4B (torre de lenguaje del base) | ~4 B | no disponible | apache-2.0 | safetensors | Hugging Face; solo texto |
 | Otros quants de la familia OptiQ | no disponible | no disponible | no disponible | safetensors MLX | catalogo en mlx-optiq.com/models |
 
 No se dispone de resultados de benchmarks comparables de estos modelos dentro de la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y formato. La busqueda web realizada devolvio unicamente resultados no relacionados (agencias de viaje, instrumentos musicales, tiendas de ropa y una puerta de entrada), sin ningun material tecnico aprovechable.
@@ -106,11 +106,11 @@ No se dispone de resultados de benchmarks comparables de estos modelos dentro de
 - Solo funciona en Apple Silicon con MLX; no es portable a CUDA ni a entornos de servidor con GPU NVIDIA sin convertir los pesos y adaptar la arquitectura.
 - El repositorio presenta 0 descargas y 0 valoraciones, por lo que no cuenta con validacion de la comunidad ni con informes independientes de reproducibilidad.
 - Discrepancia de identificacion: la model card se titula "mlx-community/Mage-VL-OptiQ-4bit", pero el identificador real del repositorio es nativ-community/Mage-VL-OptiQ-4bit. Conviene usar el ID real al cargar el modelo.
-- Los metadatos de HuggingFace indican una fecha de creacion de 2026-09-26, posterior a la fecha habitual de consulta; conviene tratarla como un dato poco fiable.
+- Los metadatos de Hugging Face indican una fecha de creacion de 2026-09-26, posterior a la fecha habitual de consulta; conviene tratarla como un dato poco fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nativ-community/Mage-VL-OptiQ-4bit
+- Repositorio en Hugging Face: https://huggingface.co/nativ-community/Mage-VL-OptiQ-4bit
 - Modelo base microsoft/Mage-VL: https://huggingface.co/microsoft/Mage-VL
 - Sitio del proyecto mlx-optiq: https://mlx-optiq.com/
 - Catalogo de cuantizaciones OptiQ: https://mlx-optiq.com/models

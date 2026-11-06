@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`PoojaReddyrun/blip-generation-demo87` es un repositorio de HuggingFace publicado por el usuario PoojaReddyrun que contiene una implementación propia y reducida de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. Según su propia model card, no se trata de un modelo entrenado ni de un lanzamiento con resultados validados: es una implementación de referencia empaquetada con una configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). Los metadatos de safetensors indican 33.088 parámetros, una cifra coherente con el tamaño del repositorio (0,0 GB) y muy alejada de cualquier modelo BLIP operativo.
+`PoojaReddyrun/blip-generation-demo87` es un repositorio de Hugging Face publicado por el usuario PoojaReddyrun que contiene una implementación propia y reducida de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. Según su propia model card, no se trata de un modelo entrenado ni de un lanzamiento con resultados validados: es una implementación de referencia empaquetada con una configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). Los metadatos de safetensors indican 33.088 parámetros, una cifra coherente con el tamaño del repositorio (0,0 GB) y muy alejada de cualquier modelo BLIP operativo.
 
 El interés del repositorio es, por tanto, instrumental y no de rendimiento: sirve como andamiaje reproducible para verificar que un pipeline de carga, serialización y ejecución funciona antes de inyectar pesos reales. La configuración declarada describe una variante denominada "giant" con atención de consulta agrupada (grouped query attention), fusión tensorial, activación swish y normalización por lotes, junto con una receta de entrenamiento por defecto basada en SGD con planificador OneCycle.
 
-No hay pipeline de HuggingFace asignado, no se declaran idiomas soportados y no se reclama ninguna puntuación de benchmark. Cualquier evaluación seria exigiría entrenar el modelo con datos propios y documentar los resultados por separado, tal y como advierte el propio autor.
+No hay pipeline de Hugging Face asignado, no se declaran idiomas soportados y no se reclama ninguna puntuación de benchmark. Cualquier evaluación seria exigiría entrenar el modelo con datos propios y documentar los resultados por separado, tal y como advierte el propio autor.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ No hay pipeline de HuggingFace asignado, no se declaran idiomas soportados y no 
 | Receta de entrenamiento por defecto | SGD con planificador OneCycle |
 | Artefacto principal | pipeline.py (implementación propia con bloque __main__ de prueba) |
 | Ficheros del repositorio | pipeline.py, README.md, config.json, training_args.json, model.safetensors |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 15 |
 | Likes | 0 |
 | Fecha de creación | 2026-10-02 |
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blip-generation-demo87 | 33.088 (según safetensors) | no disponible | sin benchmark declarado (checkpoint no entrenado) | MIT | HuggingFace, 15 descargas |
+| blip-generation-demo87 | 33.088 (según safetensors) | no disponible | sin benchmark declarado (checkpoint no entrenado) | MIT | Hugging Face, 15 descargas |
 | BLIP original (Salesforce) | no disponible en la información proporcionada | no disponible | resultados publicados en la literatura (captioning, VQA, retrieval); cifras concretas no disponibles aquí | licencia del proyecto original; consultar repositorio | código y pesos en GitHub (salesforce/BLIP) e integrado en LAVIS |
-| BLIP-2 | no disponible en la información proporcionada | no disponible | orientado a visión-lenguaje con Q-Former y LLM congelado; cifras concretas no disponibles aquí | consultar repositorio original | disponible a través de LAVIS y HuggingFace |
+| BLIP-2 | no disponible en la información proporcionada | no disponible | orientado a visión-lenguaje con Q-Former y LLM congelado; cifras concretas no disponibles aquí | consultar repositorio original | disponible a través de LAVIS y Hugging Face |
 | Alternativas genéricas de captioning visual | no disponible | no disponible | no disponible | variable | variable |
 
 Nota: las filas correspondientes a BLIP original y BLIP-2 se incluyen como contexto de la familia de modelos en la que se inspira este repositorio; no se dispone de cifras verificadas en la información proporcionada para completar sus columnas. El repositorio analizado no es una publicación oficial de Salesforce.
@@ -102,10 +102,10 @@ Nota: las filas correspondientes a BLIP original y BLIP-2 se incluyen como conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PoojaReddyrun/blip-generation-demo87
+- Repositorio en Hugging Face: https://huggingface.co/PoojaReddyrun/blip-generation-demo87
 - Perfil del autor: https://huggingface.co/PoojaReddyrun
 - Código original de BLIP (Salesforce): https://github.com/salesforce/BLIP
 - Librería LAVIS (integ ración oficial de BLIP para investigación de lenguaje y visión): https://github.com/salesforce/LAVIS
 - Paper de BLIP (referencia de la arquitectura original): https://arxiv.org/abs/2201.12086
 - Ejemplo de aplicación de captioning con BLIP: https://github.com/Sanskriti-Arya/blip-image-caption-generator
-- Artículo divulgativo sobre BLIP en HuggingFace: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
+- Artículo divulgativo sobre BLIP en Hugging Face: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

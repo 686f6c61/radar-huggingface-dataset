@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UsefulLocalModels es un repositorio de HuggingFace publicado por el ingeniero de IA Carl Free (usuario freeideas) que agrupa modelos pequenos especializados, pensados para ejecutarse en CPU y liberar a los grandes modelos de lenguaje de tareas repetitivas. Actualmente contiene un unico modelo documentado, `same-subject-r2`, un cross-encoder de 150 millones de parametros afinado a partir de Alibaba-NLP/gte-reranker-modernbert-base.
+UsefulLocalModels es un repositorio de Hugging Face publicado por el ingeniero de IA Carl Free (usuario freeideas) que agrupa modelos pequenos especializados, pensados para ejecutarse en CPU y liberar a los grandes modelos de lenguaje de tareas repetitivas. Actualmente contiene un unico modelo documentado, `same-subject-r2`, un cross-encoder de 150 millones de parametros afinado a partir de Alibaba-NLP/gte-reranker-modernbert-base.
 
 El problema que resuelve es concreto: dado un par de textos, decidir si el segundo sigue tratando el mismo tema que el primero, devolviendo una probabilidad. Es el clasificador que usa el sistema SumEng para segmentar flujos de texto que llegan en orden (libros, transcripciones de reuniones, chats) en temas, de forma que un modelo de lenguaje solo tenga que escribir un resumen por tema en lugar de procesar todo el texto.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estandar tipo MMLU, HumanEval o GSM
 | Modelo | Parametros | Tipo | Exactitud en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | same-subject-r2 | 150M | Cross-encoder especializado | 73% / AUC 0,82 | Apache 2.0 | Pesos en safetensors y ONNX |
-| Alibaba-NLP/gte-reranker-modernbert-base | no disponible en la informacion | Reranker base | no disponible | no disponible en la informacion | HuggingFace |
+| Alibaba-NLP/gte-reranker-modernbert-base | no disponible en la informacion | Reranker base | no disponible | no disponible en la informacion | Hugging Face |
 | Claude Sonnet (API) | no disponible | LLM generativo generalista | 61% / AUC 0,69 | propietaria | API de pago |
 | Claude Haiku (API) | no disponible | LLM generativo generalista | 52% / AUC 0,57 | propietaria | API de pago |
 
@@ -104,7 +104,7 @@ No se dispone de datos en la informacion proporcionada sobre otros modelos local
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freeideas/UsefulLocalModels
+- Repositorio Hugging Face: https://huggingface.co/freeideas/UsefulLocalModels
 - Carpeta same-subject-r2 dentro del repositorio: https://huggingface.co/freeideas/UsefulLocalModels/tree/main/same-subject-r2
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base
 - Dataset QMSum: https://github.com/Yale-LILY/QMSum

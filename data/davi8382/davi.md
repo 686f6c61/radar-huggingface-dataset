@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Davi es un modelo publicado en HuggingFace por el usuario Davi8382 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. No se dispone de pipeline declarado, idiomas soportados ni etiquetas que permitan clasificarlo dentro de una categoría funcional concreta (texto, visión, audio u otras).
+Davi es un modelo publicado en Hugging Face por el usuario Davi8382 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. No se dispone de pipeline declarado, idiomas soportados ni etiquetas que permitan clasificarlo dentro de una categoría funcional concreta (texto, visión, audio u otras).
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y tanto la fecha de creación como la de última actualización son idénticas, lo que sugiere una publicación sin iteraciones posteriores ni mantenimiento documentado. No hay evidencia de que el modelo haya sido evaluado, cuantizado o integrado en herramientas de despliegue estándar.
 
@@ -73,4 +73,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Davi8382/Davi
+- Repositorio en Hugging Face: https://huggingface.co/Davi8382/Davi

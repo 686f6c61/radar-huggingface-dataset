@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks numericos especificos para la varia
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-Coder-V2-Lite-Base | 15,7B | 2,4B | 128K | deepseek-license | HuggingFace (deepseek-ai) |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7B | 2,4B | 128K | deepseek-license | HuggingFace (deepseek-ai) |
-| DeepSeek-Coder-V2-Base | 236B | 21B | 128K | deepseek-license | HuggingFace (deepseek-ai) |
-| DeepSeek-Coder-V2-Instruct | 236B | 21B | 128K | deepseek-license | HuggingFace (deepseek-ai) |
+| DeepSeek-Coder-V2-Lite-Base | 15,7B | 2,4B | 128K | deepseek-license | Hugging Face (deepseek-ai) |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7B | 2,4B | 128K | deepseek-license | Hugging Face (deepseek-ai) |
+| DeepSeek-Coder-V2-Base | 236B | 21B | 128K | deepseek-license | Hugging Face (deepseek-ai) |
+| DeepSeek-Coder-V2-Instruct | 236B | 21B | 128K | deepseek-license | Hugging Face (deepseek-ai) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento para comparar con modelos externos (por ejemplo, CodeLlama o Qwen-Coder) en terminos de parametros, contexto y licencia de forma verificable, por lo que la comparativa se limita a la propia familia DeepSeek-Coder-V2.
 
@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento para compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base
 - Modelo Instruct (misma variante Lite): https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - DeepSeek-Coder-V2-Base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Base
 - DeepSeek-Coder-V2-Instruct: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct
@@ -94,6 +94,6 @@ No se dispone en la informacion proporcionada de datos de rendimiento para compa
 - Sitio web DeepSeek: https://www.deepseek.com/
 - Chat DeepSeek Coder: https://coder.deepseek.com/sign_in
 - Plataforma API DeepSeek: https://www.deepseek.com/en/platform/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5
 - Organizacion DeepSeek en GitHub: https://github.com/deepseek-ai

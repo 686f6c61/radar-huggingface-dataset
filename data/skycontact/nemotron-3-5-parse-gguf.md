@@ -101,7 +101,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace (este GGUF): https://huggingface.co/SkyContact/Nemotron-3.5-Parse-GGUF
+- Hugging Face (este GGUF): https://huggingface.co/SkyContact/Nemotron-3.5-Parse-GGUF
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Parse
 - Licencia del modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Parse/blob/main/LICENSE
 - Motor de inferencia SkyVision.cpp: https://github.com/SkYContact/SkyVision.cpp

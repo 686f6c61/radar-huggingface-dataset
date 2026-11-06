@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VietFin-PhoGPT-4B-CPT es un experimento de investigación sobre *continued pretraining* (CPT) de un modelo base en vietnamita sobre texto financiero del mismo idioma. Lo desarrolla el usuario de HuggingFace `minhquanbt` y parte de `vinai/PhoGPT-4B`, el modelo causal de arquitectura MPT de VinAI de aproximadamente 3.690 millones de parámetros, vocabulario de 20.480 tokens y 8.192 tokens de contexto con posicionamiento ALiBi. El objetivo declarado no es tanto producir un asistente financiero listo para producción como estudiar empíricamente el equilibrio entre especialización en dominio financiero y retención de capacidades generales del vietnamita a medida que aumenta el presupuesto de tokens de CPT.
+VietFin-PhoGPT-4B-CPT es un experimento de investigación sobre *continued pretraining* (CPT) de un modelo base en vietnamita sobre texto financiero del mismo idioma. Lo desarrolla el usuario de Hugging Face `minhquanbt` y parte de `vinai/PhoGPT-4B`, el modelo causal de arquitectura MPT de VinAI de aproximadamente 3.690 millones de parámetros, vocabulario de 20.480 tokens y 8.192 tokens de contexto con posicionamiento ALiBi. El objetivo declarado no es tanto producir un asistente financiero listo para producción como estudiar empíricamente el equilibrio entre especialización en dominio financiero y retención de capacidades generales del vietnamita a medida que aumenta el presupuesto de tokens de CPT.
 
 El corpus de entrenamiento procede de memorias financieras anuales vietnamitas del corpus TiniX OCR Annual Financial Statements, auditado en calidad de OCR, deduplicado de forma exacta y dividido por empresa/tícker para evitar fugas entre *splits*. El train congelado contiene 1.110 empresas, 12.904 informes y 640.542.917 tokens del tokenizador original de PhoGPT; además se reservan 100 tíckers y 1.990 informes de ViFinQA para evaluación posterior de QA financiero.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comunes que permitan una comparación cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minhquanbt/VietFin-PhoGPT-4B-CPT
+- Modelo en Hugging Face: https://huggingface.co/minhquanbt/VietFin-PhoGPT-4B-CPT
 - Modelo base: https://huggingface.co/vinai/PhoGPT-4B
 - Paper, blog, repositorio de código o demo del CPT: no disponibles en la información proporcionada.
 - Referencia al corpus TiniX OCR Annual Financial Statements y al benchmark ViFinQA: mencionados en la model card, sin URL disponible en la información proporcionada.

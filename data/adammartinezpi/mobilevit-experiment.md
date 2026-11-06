@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adammartinezpi/mobilevit-experiment` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperacion de informacion, presumiblemente multimodal imagen-texto segun la metrica de evaluacion sugerida). Lo publica el usuario adammartinezpi y se distribuye bajo licencia MIT. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como un punto de partida para *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`adammartinezpi/mobilevit-experiment` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperacion de informacion, presumiblemente multimodal imagen-texto segun la metrica de evaluacion sugerida). Lo publica el usuario adammartinezpi y se distribuye bajo licencia MIT. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como un punto de partida para *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La relevancia de esta ficha es, por tanto, acotada y debe leerse con cautela. El repositorio no reclama ninguna puntuacion de benchmark, no documenta datos de entrenamiento y advierte explicitamente de que el checkpoint de inicializacion no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Los metadatos de safetensors declaran 24.832 parametros totales, una cifra incompatible con la escala "giant" que menciona la model card, lo que refuerza la interpretacion de que se trata de un artefacto de prueba y no de un modelo utilizable.
 
@@ -91,6 +91,6 @@ No se dispone de cifras comparativas verificadas dentro de la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adammartinezpi/mobilevit-experiment
+- Modelo en Hugging Face: https://huggingface.co/adammartinezpi/mobilevit-experiment
 - Archivos del repositorio citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la busqueda web realizada.

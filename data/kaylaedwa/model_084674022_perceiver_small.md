@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables. La arquitectura Perceiv
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kaylaedwa/model_084674022_perceiver_small)
+- [Modelo en Hugging Face](https://huggingface.co/kaylaedwa/model_084674022_perceiver_small)
 - [Perceiver: General Perception with Iterative Attention (arXiv)](https://arxiv.org/abs/2103.03206)
 - [Implementación de referencia de Perceiver (GitHub - DeepMind)](https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md)

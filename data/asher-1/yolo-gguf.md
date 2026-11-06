@@ -6,14 +6,14 @@ Asher-1/yolo-gguf no es un modelo unico, sino un repositorio de distribucion que
 
 El problema que resuelve es de despliegue: los pesos canonicos de YOLO se publican como checkpoints PyTorch (`.pt`), lo que obliga a arrastrar el stack de Python y PyTorch en produccion. Esta coleccion los convierte a GGUF cuantizado para que un runtime C++ nativo pueda cargarlos sin dependencias de Python, algo relevante para edge computing, sistemas embebidos, aplicaciones de escritorio y pipelines de vision de baja latencia. Cubre tareas de deteccion, segmentacion de instancias, segmentacion semantica, estimacion de pose, profundidad (depth), cajas orientadas (obb) y clasificacion, ademas de deteccion y segmentacion de vocabulario abierto.
 
-HuggingFace reporta 151.277.312 parametros totales a partir de un safetensors, pero ese dato corresponde a un unico componente del repositorio y no representa al conjunto de los 217 modelos; no es posible atribuirlo con certeza a una variante concreta con la informacion disponible. La model card no declara licencia, pipeline ni idiomas soportados.
+Hugging Face reporta 151.277.312 parametros totales a partir de un safetensors, pero ese dato corresponde a un unico componente del repositorio y no representa al conjunto de los 217 modelos; no es posible atribuirlo con certeza a una variante concreta con la informacion disponible. La model card no declara licencia, pipeline ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Redes convolucionales/transformer de deteccion y segmentacion de la familia YOLO (Ultralytics) mas torres de texto CLIP y MobileCLIP; no es un transformer generativo de lenguaje |
-| Parametros totales | 151.277.312 segun el dato de safetensors reportado por HuggingFace, atribuible a un unico componente del repositorio; no disponible por variante |
+| Parametros totales | 151.277.312 segun el dato de safetensors reportado por Hugging Face, atribuible a un unico componente del repositorio; no disponible por variante |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica / no disponible (modelos de vision; no hay ventana de contexto textual) |
 | Tipos de cuantizacion | f32, f16 y q8_0 para cada variante publicada |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Asher-1/yolo-gguf (este repo) | 151,3 M en un componente no identificado; sin desglose por variante | no aplica | sin benchmarks publicados; solo verificacion de paridad de conversion | no declarada en la model card | GGUF f32/f16/q8_0 en HuggingFace y espejo en releases de GitHub |
+| Asher-1/yolo-gguf (este repo) | 151,3 M en un componente no identificado; sin desglose por variante | no aplica | sin benchmarks publicados; solo verificacion de paridad de conversion | no declarada en la model card | GGUF f32/f16/q8_0 en Hugging Face y espejo en releases de GitHub |
 | Checkpoints PyTorch originales de Ultralytics (`.pt`) | segun variante | no aplica | los publicados por Ultralytics, no reproducidos aqui | la de Ultralytics, a verificar | pesos canonicos distribuidos por Ultralytics |
 | Exportaciones ONNX de la misma familia | segun variante | no aplica | no disponible en esta comparativa | la del runtime y la del checkpoint de origen | no disponible en la informacion proporcionada |
 | Motores propietarios de inferencia para GPU (por ejemplo TensorRT) | segun variante | no aplica | no disponible en esta comparativa | propietaria | no disponible en la informacion proporcionada |
@@ -93,7 +93,7 @@ La diferencia funcional de este repositorio no es la precision del modelo, sino 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Asher-1/yolo-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Asher-1/yolo-gguf
 - Repositorio de la integracion C++ sobre ggml: https://github.com/Asher-1/ultralytics-ggml
 - Espejo de los GGUF en releases de GitHub: https://github.com/Asher-1/cloudViewer_downloads/releases/tag/yolo_gguf_models
 - Descarga mediante CLI:

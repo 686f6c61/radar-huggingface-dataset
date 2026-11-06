@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-v2-26B-A4B
 - Cuantizaciones estáticas (incluye los archivos mmproj de visión): https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-GGUF
 - Página de resumen y lista de descargas del autor: https://hf.tst.eu/model#Boulesis-v2-26B-A4B-i1-GGUF

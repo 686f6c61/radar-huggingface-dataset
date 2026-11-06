@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PlanckGPT-v0.13.0 es un modelo publicado en HuggingFace por el usuario cattonpm bajo licencia Apache 2.0. La informacion disponible es minima: la model card se limita a remitir al repositorio de GitHub https://github.com/nguyenphuminh/planckgpt para consultar como configurar y ejecutar el modelo, sin detallar arquitectura, numero de parametros, contexto ni datos de entrenamiento. El repositorio pesa 2,9 GB y el modelo acumula 0 descargas y 1 like, lo que indica una publicacion reciente o de muy baja difusion.
+PlanckGPT-v0.13.0 es un modelo publicado en Hugging Face por el usuario cattonpm bajo licencia Apache 2.0. La informacion disponible es minima: la model card se limita a remitir al repositorio de GitHub https://github.com/nguyenphuminh/planckgpt para consultar como configurar y ejecutar el modelo, sin detallar arquitectura, numero de parametros, contexto ni datos de entrenamiento. El repositorio pesa 2,9 GB y el modelo acumula 0 descargas y 1 like, lo que indica una publicacion reciente o de muy baja difusion.
 
-El nombre del repositorio de referencia (planckgpt) y el sufijo de version v0.13.0 sugieren un proyecto en desarrollo iterativo, posiblemente de caracter experimental o de investigacion, mas que un modelo orientado a produccion. La discrepancia entre el autor de la model card en HuggingFace (cattonpm) y el propietario del repositorio de codigo (nguyenphuminh) no se explica en la informacion proporcionada.
+El nombre del repositorio de referencia (planckgpt) y el sufijo de version v0.13.0 sugieren un proyecto en desarrollo iterativo, posiblemente de caracter experimental o de investigacion, mas que un modelo orientado a produccion. La discrepancia entre el autor de la model card en Hugging Face (cattonpm) y el propietario del repositorio de codigo (nguyenphuminh) no se explica en la informacion proporcionada.
 
 Su relevancia actual es limitada: no hay benchmarks publicados, no se declaran idiomas soportados y la unica via de documentacion es un repositorio externo. Cualquier evaluacion seria requiere inspeccionar dicho repositorio y los pesos alojados antes de considerarlo para un caso de uso real.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el volumen de tokens util
 - Razonamiento, codigo y matematicas: no disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas en los metadatos de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
@@ -85,13 +85,13 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 - Riesgo de alucinacion: no evaluado. Cualquier uso en produccion requeriria medicion previa.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero no exime de cumplir posibles licencias de los datos de entrenamiento, que no se detallan.
 - Adopcion practicamente nula (0 descargas, 1 like): no existe comunidad, soporte ni reportes de errores.
-- Discrepancia de autoria entre el uploader en HuggingFace y el propietario del repositorio de codigo, sin explicacion en la informacion disponible.
+- Discrepancia de autoria entre el uploader en Hugging Face y el propietario del repositorio de codigo, sin explicacion en la informacion disponible.
 - Version v0.13.0: el esquema de versionado sugiere un proyecto inestable, con posibles cambios incompatibles entre releases.
 - Los resultados de busqueda web asociados a esta consulta no contienen informacion relevante sobre el modelo (se refieren a hoteles en Coimbra), por lo que no aportan datos verificables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cattonpm/PlanckGPT-v0.13.0
+- Modelo en Hugging Face: https://huggingface.co/cattonpm/PlanckGPT-v0.13.0
 - Repositorio de codigo indicado en la model card: https://github.com/nguyenphuminh/planckgpt
 - Paper: no disponible
 - Blog o anuncio: no disponible

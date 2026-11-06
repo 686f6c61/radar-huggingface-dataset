@@ -57,6 +57,6 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spandanjit2005/tds-carbon-card
+- Hugging Face: https://huggingface.co/spandanjit2005/tds-carbon-card
 - GitHub del autor: https://github.com/spandanjit2005 (con 2 repositorios, sin informacion adicional relevante)
 - Referencia sobre tarjetas de emisiones en Hugging Face: https://carbontxt.org/ai-model-cards (directorio de tarjetas de sostenibilidad)

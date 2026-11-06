@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| e2e-bsf-dinov3-imagenette-full-scalar-mse-seed101 | 9.607.690 | no disponible | MIT (backbone aparte) | HuggingFace |
+| e2e-bsf-dinov3-imagenette-full-scalar-mse-seed101 | 9.607.690 | no disponible | MIT (backbone aparte) | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed101
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed101
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper end-to-end SAE: https://arxiv.org/abs/2405.12241

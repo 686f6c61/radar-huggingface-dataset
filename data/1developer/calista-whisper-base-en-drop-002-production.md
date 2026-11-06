@@ -2,9 +2,9 @@
 
 ## Resumen
 
-calista-whisper-base.en-drop-002-production es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-base.en, publicado por el usuario 1Developer en HuggingFace. Se trata de un modelo Whisper de tipo "base" en su variante exclusivamente inglesa, reentrenado sobre un dataset de audio propio empaquetado en formato audiofolder. El modelo resuelve la tarea de transcripcion de voz a texto (ASR) y esta pensado para un dominio o corpus concreto, no como un modelo generalista.
+calista-whisper-base.en-drop-002-production es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-base.en, publicado por el usuario 1Developer en Hugging Face. Se trata de un modelo Whisper de tipo "base" en su variante exclusivamente inglesa, reentrenado sobre un dataset de audio propio empaquetado en formato audiofolder. El modelo resuelve la tarea de transcripcion de voz a texto (ASR) y esta pensado para un dominio o corpus concreto, no como un modelo generalista.
 
-La relevancia de esta ficha es limitada: el modelo tiene cero descargas y cero likes en el momento de la consulta, la model card esta generada automaticamente por el Trainer de HuggingFace y contiene secciones sin completar ("More information needed"). Los resultados declarados (WER de 0.0 y perdida de validacion de 0.0000) son sospechosamente perfectos y no verificados, lo que sugiere sobreajuste severo al conjunto de evaluacion o una fuga de datos entre entrenamiento y test. Cualquier uso en produccion debe acompanarse de una evaluacion independiente.
+La relevancia de esta ficha es limitada: el modelo tiene cero descargas y cero likes en el momento de la consulta, la model card esta generada automaticamente por el Trainer de Hugging Face y contiene secciones sin completar ("More information needed"). Los resultados declarados (WER de 0.0 y perdida de validacion de 0.0000) son sospechosamente perfectos y no verificados, lo que sugiere sobreajuste severo al conjunto de evaluacion o una fuga de datos entre entrenamiento y test. Cualquier uso en produccion debe acompanarse de una evaluacion independiente.
 
 Arquitectonicamente hereda el diseno encoder-decoder transformer de Whisper, con 72.593.408 parametros totales y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales siempre que se respete la atribucion.
 
@@ -23,7 +23,7 @@ Arquitectonicamente hereda el diseno encoder-decoder transformer de Whisper, con
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de openai/whisper-base.en, un transformer encoder-decoder disenado para ASR que procesa espectrogramas Mel de audio y genera tokens de texto. El ajuste se realizo con el Trainer de HuggingFace sobre un dataset en formato audiofolder, con los siguientes hiperparametros declarados: learning rate de 1e-05, batch size de 16 (entrenamiento y evaluacion), semilla 42, optimizador AdamW Torch Fused con betas (0.9, 0.999) y epsilon 1e-08, scheduler constant_with_warmup con 50 pasos de calentamiento, 500 pasos de entrenamiento totales y precision mixta nativa AMP. Se ejecuto con Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El modelo es un fine-tuning de openai/whisper-base.en, un transformer encoder-decoder disenado para ASR que procesa espectrogramas Mel de audio y genera tokens de texto. El ajuste se realizo con el Trainer de Hugging Face sobre un dataset en formato audiofolder, con los siguientes hiperparametros declarados: learning rate de 1e-05, batch size de 16 (entrenamiento y evaluacion), semilla 42, optimizador AdamW Torch Fused con betas (0.9, 0.999) y epsilon 1e-08, scheduler constant_with_warmup con 50 pasos de calentamiento, 500 pasos de entrenamiento totales y precision mixta nativa AMP. Se ejecuto con Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 No se especifica el numero de tokens de audio, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables en un modelo ASR). La innovacion tecnica destacable es nula: se trata de un ajuste fino estandar sin modificaciones arquitectonicas. El nombre del modelo ("drop-002-production") sugiere una version de un pipeline interno de experimentos, pero no hay documentacion que lo confirme.
 
@@ -80,10 +80,10 @@ No hay resultados de benchmarks estandar (LibriSpeech, Common Voice, MMLU, etc.)
 
 | Modelo | Parametros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| calista-whisper-base.en-drop-002-production | 72,6 M | ventanas de 30 s (heredado) | solo ingles (base) | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/whisper-base.en | 74 M aprox. | ventanas de 30 s | solo ingles | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M aprox. | ventanas de 30 s | multilingue | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M aprox. | ventanas de 30 s | multilingue | Apache 2.0 | HuggingFace |
+| calista-whisper-base.en-drop-002-production | 72,6 M | ventanas de 30 s (heredado) | solo ingles (base) | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/whisper-base.en | 74 M aprox. | ventanas de 30 s | solo ingles | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M aprox. | ventanas de 30 s | multilingue | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M aprox. | ventanas de 30 s | multilingue | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo verificable para este fine-tuning frente a los modelos base de OpenAI.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo verificable para este fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1Developer/calista-whisper-base.en-drop-002-production
+- Modelo en Hugging Face: https://huggingface.co/1Developer/calista-whisper-base.en-drop-002-production
 - Modelo base: https://huggingface.co/openai/whisper-base.en
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

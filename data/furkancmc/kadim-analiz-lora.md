@@ -60,5 +60,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: furkancmc/kadim-analiz-lora](https://huggingface.co/furkancmc/kadim-analiz-lora)
+- [Hugging Face: furkancmc/kadim-analiz-lora](https://huggingface.co/furkancmc/kadim-analiz-lora)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit) (referencia indirecta)

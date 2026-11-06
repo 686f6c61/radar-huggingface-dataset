@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinhDao/Qwen3.5-2B_E2 es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario ThinhDao en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto en ingles, distribuido en formato safetensors y compatible con transformers y text-generation-inference. El entrenamiento se realizo con la libreria Unsloth, segun indica la propia model card, que menciona un entrenamiento "2x mas rapido" gracias a dicha herramienta, aunque no detalla el numero de pasos, tokens ni la composicion del dataset utilizado.
+ThinhDao/Qwen3.5-2B_E2 es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-2B, publicado por el usuario ThinhDao en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto en ingles, distribuido en formato safetensors y compatible con transformers y text-generation-inference. El entrenamiento se realizo con la libreria Unsloth, segun indica la propia model card, que menciona un entrenamiento "2x mas rapido" gracias a dicha herramienta, aunque no detalla el numero de pasos, tokens ni la composicion del dataset utilizado.
 
 La relevancia de esta publicacion es limitada y de caracter experimental: el repositorio no incluye pipeline declarado, no aporta resultados de benchmarks, no documenta la longitud de contexto ni los idiomas mas alla del ingles, y acumula cero descargas y cero "likes" en el momento de la consulta. El sufico "_E2" en el nombre sugiere una variante o experimento concreto dentro de una serie de pruebas del autor, pero esta interpretacion no esta confirmada en la informacion disponible.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: tamano del repo 0,1 GB, creado el 2026-09-12,
 
 La model card no describe la arquitectura interna del modelo. Al ser un finetune de unsloth/Qwen3.5-2B, hereda la arquitectura del modelo base, pero la informacion proporcionada no especifica si se trata de un transformer decoder-only denso, de una variante MoE o de un diseno hibrido. Tampoco se detallan el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el esquema de posiciones. Cualquier afirmacion al respecto seria especulativa.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y que el autor reporta una velocidad de entrenamiento "2x mas rapida" gracias a esta libreria. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni la duracion o el hardware empleado. La presencia del tag trl apunta al uso de la libreria TRL de HuggingFace para el ajuste, pero no se documenta la configuracion concreta. El tag unsloth indica que se emplearon kernels optimizados para reducir el uso de memoria y acelerar el entrenamiento.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y que el autor reporta una velocidad de entrenamiento "2x mas rapida" gracias a esta libreria. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni la duracion o el hardware empleado. La presencia del tag trl apunta al uso de la libreria TRL de Hugging Face para el ajuste, pero no se documenta la configuracion concreta. El tag unsloth indica que se emplearon kernels optimizados para reducir el uso de memoria y acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Nota: al no existir model card detallada ni evaluaciones publicadas, esta seccio
 - Clasificacion y etiquetado de texto: ajustando una cabeza de clasificacion sobre las representaciones del modelo se pueden construir clasificadores de sentimiento, tema o intencion para dominios en ingles.
 - Filtrado previo en pipelines de datos: uso como modelo ligero para descartar, resumir o normalizar grandes volumenes de texto antes de procesarlos con un modelo mayor, reduciendo coste computacional.
 - Base para experimentos de ajuste fino con Unsloth: dado que el propio modelo se entreno con esta libreria, sirve como punto de partida reproducible para probar recetas de fine-tuning con QLoRA o LoRA en una sola GPU.
-- Investigacion academica sobre ajuste eficiente de parametros: util como caso de estudio de un finetune pequeno publicado sin evaluacion, para analizar practicas de documentacion y reproducibilidad en HuggingFace.
+- Investigacion academica sobre ajuste eficiente de parametros: util como caso de estudio de un finetune pequeno publicado sin evaluacion, para analizar practicas de documentacion y reproducibilidad en Hugging Face.
 - Educacion y demostraciones: adecuado para talleres o clases donde se explique el ciclo completo de descarga, inferencia y ajuste de un modelo Transformer pequeno.
 
 En todos los casos, la idoneidad real depende de capacidades no verificadas (contexto, calidad de generacion, seguimiento de instrucciones), por lo que se recomienda validar con una evaluacion propia antes de un uso en produccion.
@@ -95,7 +95,7 @@ No se dispone de una comparacion fiable con modelos de la misma tarea (finetunes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThinhDao/Qwen3.5-2B_E2
+- Modelo en Hugging Face: https://huggingface.co/ThinhDao/Qwen3.5-2B_E2
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL (tag declarado, referencia general): https://github.com/huggingface/trl

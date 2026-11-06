@@ -110,7 +110,7 @@ Lectura: frente al padre, el estudiante pierde 3 tareas de 60 y se queda en KLD 
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF
+- Página de Hugging Face del modelo: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF
 - Modelo base (safetensors BF16): https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
 - Registro de entrenamiento y evidencia: https://huggingface.co/datasets/Joakimpalm-Zen/Xyntetik-Kvist-14B-training-record
 - Modelo padre del estudio: https://huggingface.co/meta-models/Muse-Glimmer-30B

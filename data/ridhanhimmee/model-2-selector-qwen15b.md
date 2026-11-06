@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ridhanhimmee/model-2-selector-qwen15b | ~1,54 B (heredado) | 32.768 (heredado, no verificado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentar ni evaluar |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados por el autor original |
-| Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, requiere aceptar términos | Contexto mucho mayor; licencia no Apache |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Apache 2.0 | HuggingFace | Alternativa ligera totalmente abierta, orientada a dispositivos |
+| ridhanhimmee/model-2-selector-qwen15b | ~1,54 B (heredado) | 32.768 (heredado, no verificado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentar ni evaluar |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados por el autor original |
+| Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, requiere aceptar términos | Contexto mucho mayor; licencia no Apache |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Apache 2.0 | Hugging Face | Alternativa ligera totalmente abierta, orientada a dispositivos |
 
 Los datos de los modelos comparables provienen del conocimiento público de esos modelos y no han sido verificados en la búsqueda web realizada para esta ficha; tómense como orientativos.
 
@@ -91,7 +91,7 @@ Los datos de los modelos comparables provienen del conocimiento público de esos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ridhanhimmee/model-2-selector-qwen15b
+- Modelo en Hugging Face: https://huggingface.co/ridhanhimmee/model-2-selector-qwen15b
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth (mencionado en la card): https://github.com/unslothai/unsloth
 - Página de datasets del autor: https://huggingface.co/ridhanhimmee/datasets

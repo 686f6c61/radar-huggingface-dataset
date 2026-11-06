@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio aloja un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,1 mil millones) publicado por el usuario yuxuanw8 en HuggingFace. El identificador del modelo, `qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-3`, junto con la etiqueta `qwen2`, indica que se trata de un checkpoint intermedio de un proceso de ajuste fino sobre una base tipo Qwen2 de 3 mil millones de parametros. Los componentes del nombre sugieren un entrenamiento con una variante de RL (RACPO v2), posiblemente con regularizacion basada en informacion de Fisher, evaluado en precision sobre el conjunto de datos HotpotQA, distribuido en 2 dispositivos y con una estrategia de collate ponderada 0.9/0.1. Es un artefacto de investigacion, no un modelo de produccion documentado.
+Este repositorio aloja un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,1 mil millones) publicado por el usuario yuxuanw8 en Hugging Face. El identificador del modelo, `qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-3`, junto con la etiqueta `qwen2`, indica que se trata de un checkpoint intermedio de un proceso de ajuste fino sobre una base tipo Qwen2 de 3 mil millones de parametros. Los componentes del nombre sugieren un entrenamiento con una variante de RL (RACPO v2), posiblemente con regularizacion basada en informacion de Fisher, evaluado en precision sobre el conjunto de datos HotpotQA, distribuido en 2 dispositivos y con una estrategia de collate ponderada 0.9/0.1. Es un artefacto de investigacion, no un modelo de produccion documentado.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como «More Information Needed». No hay paper, demo ni repositorio asociado. El repositorio tiene 0 descargas y 0 «likes», y el tamano del repo es de 12,4 GB, coherente con pesos almacenados en precision de 32 bits.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como «More Information Needed». No hay paper, demo ni repositorio asociado. El repositorio tiene 0 descargas y 0 «likes», y el tamano del repo es de 12,4 GB, coherente con pesos almacenados en precision de 32 bits.
 
 Su relevancia actual es limitada y de caracter experimental: sirve como referencia para quien quiera inspeccionar los checkpoints de este pipeline de ajuste concreto, pero no dispone de documentacion, benchmarks ni licencia que permitan recomendarlo para uso en produccion.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo analizado carece de licencia declarada, i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-3
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-3
 - Checkpoint hermano con pesos de collate 0.75/0.25: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Arbol de ficheros de un checkpoint hermano: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-7/tree/main
 - Ficha del checkpoint hermano en Featherless: https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

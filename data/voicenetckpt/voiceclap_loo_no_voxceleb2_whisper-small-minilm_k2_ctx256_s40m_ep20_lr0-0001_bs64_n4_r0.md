@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: se trata de u
 | Licencia | No disponible |
 | Formato de pesos | PyTorch (`.pt`, `checkpoints/epoch_latest.pt`) |
 
-Otros datos de la ejecucion, extraidos del identificador: muestras de entrenamiento 40 M, epocas 20, learning rate 1e-4, batch size 64, 4 nodos, run 0, k=2. Tamano del repositorio 1,3 GB en 13 ficheros. Fecha de creacion indicada por HuggingFace: 2026-10-11; ultima actualizacion: 2026-10-11.
+Otros datos de la ejecucion, extraidos del identificador: muestras de entrenamiento 40 M, epocas 20, learning rate 1e-4, batch size 64, 4 nodos, run 0, k=2. Tamano del repositorio 1,3 GB en 13 ficheros. Fecha de creacion indicada por Hugging Face: 2026-10-11; ultima actualizacion: 2026-10-11.
 
 ## Arquitectura y entrenamiento
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceCLAP (este checkpoint) | CLAP con Whisper-small + MiniLM | ~267 M estimados | 256 unidades | No disponible | HuggingFace, 0 descargas |
-| LAION-CLAP (referencia de la familia CLAP) | CLAP con encoder de audio HTSAT y encoder de texto tipo RoBERTa | No verificado en la informacion disponible | No disponible | No disponible | Publico en HuggingFace |
-| Microsoft CLAP (reconocimiento de audio general) | CLAP encoder-encoder | No verificado en la informacion disponible | No disponible | No disponible | Publico en HuggingFace |
+| VoiceCLAP (este checkpoint) | CLAP con Whisper-small + MiniLM | ~267 M estimados | 256 unidades | No disponible | Hugging Face, 0 descargas |
+| LAION-CLAP (referencia de la familia CLAP) | CLAP con encoder de audio HTSAT y encoder de texto tipo RoBERTa | No verificado en la informacion disponible | No disponible | No disponible | Publico en Hugging Face |
+| Microsoft CLAP (reconocimiento de audio general) | CLAP encoder-encoder | No verificado en la informacion disponible | No disponible | No disponible | Publico en Hugging Face |
 
 Los datos de las filas comparativas no provienen de la informacion proporcionada en esta consulta y no se han verificado, por lo que deben tratarse como orientativos. No se dispone de cifras de rendimiento comparadas para ninguna de las tres opciones.
 
@@ -93,6 +93,6 @@ Los datos de las filas comparativas no provienen de la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_voxceleb2_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_voxceleb2_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todas las ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

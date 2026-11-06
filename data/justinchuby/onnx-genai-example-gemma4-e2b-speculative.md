@@ -87,7 +87,7 @@ Dado que no hay benchmarks comunes ni parámetros públicos del modelo base, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-speculative
+- Repositorio Hugging Face: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-speculative
 - Target standalone: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b
 - Assistant standalone: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-assistant
 - Código de onnx-genai (GitHub): https://github.com/justinchuby/onnx-genai

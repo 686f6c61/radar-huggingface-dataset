@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmenWorks/bend-heads es un artefacto publicado en HuggingFace cuyo propósito no es un modelo de lenguaje al uso, sino una arquitectura de despliegue basada en "cabezas" (heads) intercambiables sobre una misma copia cargada de un modelo base. Según la model card, la idea central es que "una cabeza no es un modelo, sino la pequeña interfaz que convierte un modelo base cargado en un modo" de decisión estructurada. El usuario elige un modelo por tamaño (`bend-4b`, y por extensión otros tamaños) y luego selecciona una cabeza, cambiando de modo sin recargar nada en memoria.
+OmenWorks/bend-heads es un artefacto publicado en Hugging Face cuyo propósito no es un modelo de lenguaje al uso, sino una arquitectura de despliegue basada en "cabezas" (heads) intercambiables sobre una misma copia cargada de un modelo base. Según la model card, la idea central es que "una cabeza no es un modelo, sino la pequeña interfaz que convierte un modelo base cargado en un modo" de decisión estructurada. El usuario elige un modelo por tamaño (`bend-4b`, y por extensión otros tamaños) y luego selecciona una cabeza, cambiando de modo sin recargar nada en memoria.
 
 El repositorio lista cuatro cabezas: `kev-native` (modo de decisión propio del base, incluido con `bend-4b`), `clef-flash` (familia Clef de Cloudflare), `jev-r2` (familia Jev de TypeSafe) y `clef-omni` (release omni de Cloudflare del 2026-10-09, aún en cola). La regla declarada es que cualquier interfaz entrenada sobre un base soportado (se mencionan explícitamente los bases de la familia Qwen) carga y se ejecuta sin trabajo específico por cabeza.
 
@@ -23,7 +23,7 @@ La relevancia del artefacto es conceptual y de ingeniería: propone un patrón d
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura del modelo base (transformer, MoE, hibrido u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. Tampoco se especifica el formato de pesos ni el pipeline de HuggingFace. Lo unico que se afirma es que el sistema consta de un modelo base por tamano y de cabezas que actuan como interfaces entrenadas que habilitan modos de decision estructurada.
+La model card no documenta la arquitectura del modelo base (transformer, MoE, hibrido u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. Tampoco se especifica el formato de pesos ni el pipeline de Hugging Face. Lo unico que se afirma es que el sistema consta de un modelo base por tamano y de cabezas que actuan como interfaces entrenadas que habilitan modos de decision estructurada.
 
 La innovacion declarada es operativa, no arquitectonica del modelo: intercambio de cabezas sobre una unica copia cargada. Los "recibos de paridad" funcionan como puerta de calidad. Para `kev-native` se cita SYS1-DUAL con 28/28 goldens byte-identicos y un consumo de un solo proceso de 6.491 MiB frente a 12.597 MiB del baseline de dos copias. Para `clef-flash` se reporta una paridad |Δp| de 0,0092 frente a la referencia tras corregir un error de conexion, ruta GPU en int8 con ≤0,013 y top-1 24/24, y una ruta MLX funcional. Para `jev-r2` se citan 313/313 ejecuciones byte-precision con un |dp| maximo de 2,2e-6. Se menciona un documento `SUPPORT-MAP.md` con el mapa regenerado y etiquetado por fuente.
 
@@ -83,6 +83,6 @@ No se dispone de modelos comparables en la informacion proporcionada. El artefac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmenWorks/bend-heads
+- Modelo en Hugging Face: https://huggingface.co/OmenWorks/bend-heads
 - Referencia a `SUPPORT-MAP.md` citada en la model card (sin URL publica disponible)
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web.

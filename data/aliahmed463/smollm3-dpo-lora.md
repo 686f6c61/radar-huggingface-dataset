@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aliahmed463/smollm3-dpo-lora` es un ajuste fino por preferencias del modelo `HuggingFaceTB/SmolLM2-135M-Instruct`, publicado por el usuario aliahmed463 en HuggingFace. A pesar del nombre, el modelo base real es SmolLM2-135M-Instruct, no un mixto de la familia SmolLM3, y el ajuste se ha realizado con DPO (Direct Preference Optimization) empleando la librería TRL. Se trata, por tanto, de un adaptador derivado de un modelo instructivo pequeño (135 millones de parámetros) orientado a alinear las respuestas con preferencias humanas.
+`aliahmed463/smollm3-dpo-lora` es un ajuste fino por preferencias del modelo `HuggingFaceTB/SmolLM2-135M-Instruct`, publicado por el usuario aliahmed463 en Hugging Face. A pesar del nombre, el modelo base real es SmolLM2-135M-Instruct, no un mixto de la familia SmolLM3, y el ajuste se ha realizado con DPO (Direct Preference Optimization) empleando la librería TRL. Se trata, por tanto, de un adaptador derivado de un modelo instructivo pequeño (135 millones de parámetros) orientado a alinear las respuestas con preferencias humanas.
 
 El interés de esta ficha es limitado desde el punto de vista de producción: el repositorio no incluye información sobre el dataset de preferencias utilizado, hiperparámetros de entrenamiento, licencia ni idiomas soportados, y no registra descargas ni interacciones. El tamaño del repositorio es de 0.0 GB, lo que sugiere que podría tratarse de un LoRA (como indica el sufijo del nombre) o de un artefacto incompleto, pero este extremo no está confirmado en la model card.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aliahmed463/smollm3-dpo-lora | 135M (base) | no disponible | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8.192 tokens (según model card del base) | Apache 2.0 (según model card del base) | HuggingFace, ampliamente utilizado |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8.192 tokens (según model card del base) | Apache 2.0 (según model card del base) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B-Instruct | 500M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| aliahmed463/smollm3-dpo-lora | 135M (base) | no disponible | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | 8.192 tokens (según model card del base) | Apache 2.0 (según model card del base) | Hugging Face, ampliamente utilizado |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360M | 8.192 tokens (según model card del base) | Apache 2.0 (según model card del base) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B-Instruct | 500M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: aliahmed463/smollm3-dpo-lora](https://huggingface.co/aliahmed463/smollm3-dpo-lora)
+- [Hugging Face: aliahmed463/smollm3-dpo-lora](https://huggingface.co/aliahmed463/smollm3-dpo-lora)
 - [Modelo base: HuggingFaceTB/SmolLM2-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
 - [Paper DPO (arXiv:2305.18290)](https://huggingface.co/papers/2305.18290)
 - [Repositorio TRL](https://github.com/huggingface/trl)

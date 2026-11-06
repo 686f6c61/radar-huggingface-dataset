@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El tamano del repositorio (3,6 GB) corresponde al checkpoint distribuido y habitualmente incluye, ademas de los pesos, estados del optimizador y del scheduler, por lo que no permite derivar el numero de parametros ni la memoria de inferencia.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no verificable.
-- Opciones de despliegue: no disponibles. El formato `megatron-torch-dist` no es cargable directamente por vLLM, llama.cpp, Ollama o TGI; requeriria una conversion previa a un formato compatible (por ejemplo, pesos HuggingFace o GGUF), y no se documenta ningun script de conversion.
+- Opciones de despliegue: no disponibles. El formato `megatron-torch-dist` no es cargable directamente por vLLM, llama.cpp, Ollama o TGI; requeriria una conversion previa a un formato compatible (por ejemplo, pesos Hugging Face o GGUF), y no se documenta ningun script de conversion.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No es posible establecer una comparativa. No se dispone de arquitectura, numero 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-archive-fast-r1-p2r16-...-02-axis-kcenter | no disponible | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
+| rlve-archive-fast-r1-p2r16-...-02-axis-kcenter | no disponible | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No es posible establecer una comparativa. No se dispone de arquitectura, numero 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p2r16-20261003-085503-02-axis-kcenter-8d361aaaf3d1
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p2r16-20261003-085503-02-axis-kcenter-8d361aaaf3d1
 - Perfil del autor: https://huggingface.co/davidheineman
 - Ejecucion de Weights & Biases (ID `d2b490c7`): enlace no disponible en la informacion proporcionada
 - Paper asociado: no disponible

@@ -87,7 +87,7 @@ No se han encontrado mediciones independientes para este modelo, por lo que la c
 
 ## Enlaces
 
-- [HuggingFace - kwondw/distilroberta-base-nli-v3](https://huggingface.co/kwondw/distilroberta-base-nli-v3)
+- [Hugging Face - kwondw/distilroberta-base-nli-v3](https://huggingface.co/kwondw/distilroberta-base-nli-v3)
 - [Documentacion de Sentence Transformers](https://sbert.net)
 - [Repositorio de Sentence Transformers en GitHub](https://github.com/huggingface/sentence-transformers)
 - [Hugging Face - modelos con sentence-transformers](https://huggingface.co/models?library=sentence-transformers)

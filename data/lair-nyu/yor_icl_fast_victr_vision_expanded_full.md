@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full)
+- [Repositorio Hugging Face](https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full)
 - [Perfil de la organización LAIR NYU](https://huggingface.co/lair-nyu)
 - [Paper de ViCTr (arXiv)](https://arxiv.org/pdf/2505.04963)
 - [openpi (GitHub)](https://github.com/Physical-Intelligence/openpi)

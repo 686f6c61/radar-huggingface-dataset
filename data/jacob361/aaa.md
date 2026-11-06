@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacob361/aaa` es la publicación en HuggingFace de una cuantización INT8 del modelo multimodal Qwen3.5-4B, desarrollada por RedHatAI mediante LLM Compressor y empaquetada con el formato `compressed-tensors` para su despliegue en vLLM. El modelo base es Qwen/Qwen3.5-4B, un transformer multimodal de tipo image-text-to-text con 4.539.265.536 parámetros, y esta versión cuantizada reduce el peso en disco de 8,8 GB (BF16) a 6,1 GB manteniendo pesos y activaciones de las capas lineales de los bloques transformer en INT8.
+`jacob361/aaa` es la publicación en Hugging Face de una cuantización INT8 del modelo multimodal Qwen3.5-4B, desarrollada por RedHatAI mediante LLM Compressor y empaquetada con el formato `compressed-tensors` para su despliegue en vLLM. El modelo base es Qwen/Qwen3.5-4B, un transformer multimodal de tipo image-text-to-text con 4.539.265.536 parámetros, y esta versión cuantizada reduce el peso en disco de 8,8 GB (BF16) a 6,1 GB manteniendo pesos y activaciones de las capas lineales de los bloques transformer en INT8.
 
 La relevancia de esta ficha radica en que demuestra el flujo de cuantización W8A8 sobre un modelo multimodal de última generación: solo se cuantizan los operadores lineales del decoder, mientras que el encoder visual, los embeddings de tokens y las capas de atención lineal permanecen en BF16. Esto permite servir el modelo con hasta 262.144 tokens de contexto en vLLM con una penalización de precisión mínima (recuperación superior al 99 % en la mayoría de benchmarks publicados).
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [HuggingFace: jacob361/aaa](https://huggingface.co/jacob361/aaa)
+- [Hugging Face: jacob361/aaa](https://huggingface.co/jacob361/aaa)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Licencia del modelo base](https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE)
 - [LLM Compressor](https://github.com/vllm-project/llm-compressor)

@@ -94,7 +94,7 @@ Nota: las comparaciones se limitan a la misma cuantizacion y backend. No se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN
+- Modelo en Hugging Face: https://huggingface.co/pugant/Ornith-1.5-35B-ROCmFP4-STRIX_LEAN
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - API de inferencia (runinfra): https://runinfra.ai/inference-api/ornith-1-5-35b

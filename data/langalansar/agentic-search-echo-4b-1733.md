@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `LangaLansar/agentic-search-echo-4B-1733` es un checkpoint de 4.022.468.096 parámetros publicado en HuggingFace por el usuario LangaLansar. Se distribuye en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que resulta coherente con un modelo denso de aproximadamente 4.000 millones de parametros almacenado en precision de 16 bits (bf16/fp16). La etiqueta `qwen3` del repositorio apunta a que deriva de la familia Qwen3, aunque la ficha no confirma explicitamente la arquitectura base ni el proceso de entrenamiento.
+El modelo identificado como `LangaLansar/agentic-search-echo-4B-1733` es un checkpoint de 4.022.468.096 parámetros publicado en Hugging Face por el usuario LangaLansar. Se distribuye en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que resulta coherente con un modelo denso de aproximadamente 4.000 millones de parametros almacenado en precision de 16 bits (bf16/fp16). La etiqueta `qwen3` del repositorio apunta a que deriva de la familia Qwen3, aunque la ficha no confirma explicitamente la arquitectura base ni el proceso de entrenamiento.
 
 El nombre del repositorio, `agentic-search-echo-4B-1733`, sugiere un ajuste orientado a busqueda agentica (generacion de consultas, iteracion multi-paso sobre resultados y sintesis), pero esta interpretacion no viene respaldada por ninguna seccion de model card, configuracion publicada ni documentacion adicional en la informacion disponible. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -105,7 +105,7 @@ Para una comparacion rigurosa debe consultarse la documentacion oficial de cada 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LangaLansar/agentic-search-echo-4B-1733
+- Repositorio en Hugging Face: https://huggingface.co/LangaLansar/agentic-search-echo-4B-1733
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

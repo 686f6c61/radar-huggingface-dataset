@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset` es un repositorio de pesos publicado en HuggingFace por el usuario `hubnemo`, cuyo identificador sugiere una adaptacion o ajuste fino sobre un modelo de la familia Qwen3 de 8.000 millones de parametros. El nombre apunta a varias tecnicas concretas (ALoRA, prediccion multi-token o MTP, un prefijo de 60k y un dataset de 40k), pero ninguna de ellas esta documentada en la model card del autor, que es plantilla vacia generada automaticamente por el Hub y conserva todos los campos en `[More Information Needed]`.
+`hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset` es un repositorio de pesos publicado en Hugging Face por el usuario `hubnemo`, cuyo identificador sugiere una adaptacion o ajuste fino sobre un modelo de la familia Qwen3 de 8.000 millones de parametros. El nombre apunta a varias tecnicas concretas (ALoRA, prediccion multi-token o MTP, un prefijo de 60k y un dataset de 40k), pero ninguna de ellas esta documentada en la model card del autor, que es plantilla vacia generada automaticamente por el Hub y conserva todos los campos en `[More Information Needed]`.
 
 Se trata, por tanto, de un artefacto practicamente indocumentado: no se declara licencia, ni idiomas, ni pipeline, ni procedimiento de entrenamiento, ni resultados de evaluacion. El repositorio ocupa 25,6 GB y contiene pesos en formato `safetensors` para la libreria `transformers`, con 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que no ha pasado por ninguna validacion de la comunidad.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de caracter experimental: puede interesar a q
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable. La model card del autor es la plantilla por defecto de HuggingFace, con secciones como "Model Description", "Training Data" o "Training Hyperparameters" sin rellenar. El unico contenido tecnico que puede extraerse es el propio nombre del repositorio, que parece codificar una configuracion experimental: `ALoRA` (probablemente una variante de adaptacion de bajo rango), `MTP` (del ingles *multi-token prediction*, prediccion de varios tokens por paso), `60k` y `skip-prefix` (posible enmascarado o salto de prefijo durante el entrenamiento) y `40k-dataset` (posible tamano del conjunto de datos). Ninguna de estas interpretaciones esta confirmada por el autor y deben tomarse unicamente como hipotesis de lectura del identificador.
+No hay informacion verificable. La model card del autor es la plantilla por defecto de Hugging Face, con secciones como "Model Description", "Training Data" o "Training Hyperparameters" sin rellenar. El unico contenido tecnico que puede extraerse es el propio nombre del repositorio, que parece codificar una configuracion experimental: `ALoRA` (probablemente una variante de adaptacion de bajo rango), `MTP` (del ingles *multi-token prediction*, prediccion de varios tokens por paso), `60k` y `skip-prefix` (posible enmascarado o salto de prefijo durante el entrenamiento) y `40k-dataset` (posible tamano del conjunto de datos). Ninguna de estas interpretaciones esta confirmada por el autor y deben tomarse unicamente como hipotesis de lectura del identificador.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, precision de entrenamiento ni infraestructura de computo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio no es un paper sobre el modelo: corresponde a Lacoste et al. (2019) sobre contabilidad de emisiones de carbono, citado en la seccion de impacto medioambiental de la plantilla. Se trata, por tanto, de una etiqueta heredada del andamiaje y no de una referencia tecnica.
 
@@ -100,7 +100,7 @@ La diferencia practica relevante no es de rendimiento, sino de trazabilidad: los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset
+- Repositorio en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset
 - Referencia de la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, contabilidad de emisiones de carbono, citada en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico enlazada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados obtenidos no guardan relacion con el artefacto.

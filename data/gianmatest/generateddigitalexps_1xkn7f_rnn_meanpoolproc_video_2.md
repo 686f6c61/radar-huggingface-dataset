@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2` es un artefacto publicado en HuggingFace Hub por el usuario `gianmaTest`. Se trata de un modelo de tama\u00f1o muy reducido: 1.576.704 par\u00e1metros totales seg\u00fan los metadatos de safetensors, lo que lo sit\u00faa en el rango de los modelos experimentales o de juguete (~1,6 millones de par\u00e1metros, tres \u00f3rdenes de magnitud por debajo de un modelo de 1B). El repositorio ocupa 0,0 GB y no incluye pipeline declarado, licencia, idiomas ni documentaci\u00f3n t\u00e9cnica m\u00e1s all\u00e1 de la plantilla por defecto de `PyTorchModelHubMixin`.
+`generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2` es un artefacto publicado en Hugging Face Hub por el usuario `gianmaTest`. Se trata de un modelo de tama\u00f1o muy reducido: 1.576.704 par\u00e1metros totales seg\u00fan los metadatos de safetensors, lo que lo sit\u00faa en el rango de los modelos experimentales o de juguete (~1,6 millones de par\u00e1metros, tres \u00f3rdenes de magnitud por debajo de un modelo de 1B). El repositorio ocupa 0,0 GB y no incluye pipeline declarado, licencia, idiomas ni documentaci\u00f3n t\u00e9cnica m\u00e1s all\u00e1 de la plantilla por defecto de `PyTorchModelHubMixin`.
 
 El identificador del modelo aporta las \u00fanicas pistas sobre su naturaleza: el segmento `rnn_meanPoolProc` sugiere una red neuronal recurrente con un mecanismo de agregaci\u00f3n por *mean pooling*, y el sufijo `video_2` apunta a un experimento dentro de una l\u00ednea de pruebas sobre datos de v\u00eddeo. El prefijo `generatedDigitalExps` y el car\u00e1cter aleatorio del segmento intermedio (`1xKn7F`) son compatibles con una generaci\u00f3n autom\u00e1tica de experimentos, no con un modelo entrenado para distribuci\u00f3n p\u00fablica.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informaci\u00f3n disponible. 
 
 | Modelo | Par\u00e1metros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2` | 1.576.704 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace Hub |
+| `gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2` | 1.576.704 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face Hub |
 | Alternativas comparables (RNN peque\u00f1as, modelos de <10 M par\u00e1metros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de modelos alternativos de la misma categor\u00eda en la informaci\u00f3n proporcionada, por lo que no es posible establecer una comparaci\u00f3n cuantitativa.
@@ -81,7 +81,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categor\
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_2
 - Documentaci\u00f3n de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de c\u00f3digo: no disponible

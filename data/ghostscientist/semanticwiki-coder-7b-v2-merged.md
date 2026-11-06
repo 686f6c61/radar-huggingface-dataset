@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemanticWiki Coder 7B v2 (merged) es un modelo de generacion de texto especializado en producir documentacion tecnica de estilo DeepWiki a partir de codigo fuente: Markdown estructurado, referencias a ficheros, diagramas Mermaid, tablas y citas en linea. Lo publica el usuario GhostScientist en HuggingFace y se distribuye como un unico repositorio de pesos safetensors listo para `transformers`, sin necesidad de PEFT ni de un adaptador separado.
+SemanticWiki Coder 7B v2 (merged) es un modelo de generacion de texto especializado en producir documentacion tecnica de estilo DeepWiki a partir de codigo fuente: Markdown estructurado, referencias a ficheros, diagramas Mermaid, tablas y citas en linea. Lo publica el usuario GhostScientist en Hugging Face y se distribuye como un unico repositorio de pesos safetensors listo para `transformers`, sin necesidad de PEFT ni de un adaptador separado.
 
 Tecnicamente es un ajuste fino con LoRA supervisado sobre Qwen/Qwen2.5-Coder-7B-Instruct (7.615.616.512 parametros, arquitectura Qwen2 densa) posteriormente fusionado con `merge_and_unload`. El resultado conserva el tokenizador y la plantilla de chat del modelo base e incorpora marcadores propios como `<START_OF_CONTEXT>` y `<query>` para delimitar el codigo de entrada y la peticion del usuario.
 
@@ -18,7 +18,7 @@ Su relevancia es de nicho: cubre la generacion automatica de wikis de repositori
 | Longitud de contexto | 32.768 tokens heredados de Qwen2.5-Coder-7B-Instruct (ampliable con RoPE scaling/YaRN hasta 131.072 segun el modelo base); no se especifica en la model card de este repositorio |
 | Tipos de cuantizacion | no se publican cuantizaciones en el repositorio (solo safetensors); al derivar de Qwen2.5-Coder-7B-Instruct es convertible a GGUF, AWQ, GPTQ y bitsandbytes con herramientas estandar, aunque no hay conversion verificada de este merge |
 | Idiomas soportados | no disponible (la model card no los declara; el modelo base es multilingue, con enfasis en codigo) |
-| Licencia | apache-2.0 (segun los tags de HuggingFace; la propia model card remite a la licencia del modelo base para redistribucion o uso comercial) |
+| Licencia | apache-2.0 (segun los tags de Hugging Face; la propia model card remite a la licencia del modelo base para redistribucion o uso comercial) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -86,16 +86,16 @@ La comparacion de rendimiento cuantitativo no esta disponible: no hay benchmarks
 - No es un auditor de seguridad ni un sustituto de la revision humana de codigo; no debe usarse para validar vulnerabilidades ni para aprobar cambios en produccion.
 - Privacidad: no se deben incluir secretos, credenciales ni codigo privado en prompts enviados a un servicio no confiable.
 - Idiomas soportados no declarados: no hay garantia de calidad fuera del ingles tecnico en el que se redactan habitualmente las model cards y la documentacion de codigo.
-- Sin validacion de la comunidad: 0 descargas y 0 likes en HuggingFace, sin issues ni evaluaciones de terceros que respalden el comportamiento del modelo.
+- Sin validacion de la comunidad: 0 descargas y 0 likes en Hugging Face, sin issues ni evaluaciones de terceros que respalden el comportamiento del modelo.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de calidad ni comparaciones reproducibles con alternativas.
 - Licencia: el repositorio declara apache-2.0, pero la model card remite explicitamente a la licencia del modelo base para redistribucion o uso comercial; conviene verificar los terminos aplicables antes de un despliegue comercial.
 - Contexto: aunque el modelo base admite 32.768 tokens, el autor recomienda mantener el contexto de codigo acotado, lo que reduce la utilidad en monorepos grandes en una sola pasada.
 - El merge con `merge_and_unload` no cambia el comportamiento previsto del adaptador, pero tampoco existe una evaluacion publica que confirme que la fusion preserva exactamente la calidad del LoRA original.
-- Fecha de publicacion en HuggingFace: 22 de septiembre de 2026 (metadata del repositorio), con ultima actualizacion el mismo dia; el proyecto parece reciente y sin historial de mantenimiento.
+- Fecha de publicacion en Hugging Face: 22 de septiembre de 2026 (metadata del repositorio), con ultima actualizacion el mismo dia; el proyecto parece reciente y sin historial de mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2-merged
+- Modelo en Hugging Face: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2-merged
 - Adaptador LoRA original: https://huggingface.co/GhostScientist/semanticwiki-coder-7b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Informe tecnico de Qwen2.5-Coder (referencia del modelo base): https://arxiv.org/abs/2409.12186

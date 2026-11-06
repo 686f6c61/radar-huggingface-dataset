@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Emmanuelly-Silva/teste` es un artefacto publicado en HuggingFace por la investigadora Emmanuelly Lavínia da Silva (ORCID 0000-0002-6504-0447) a través de la plataforma QSAR IA, una herramienta de código abierto orientada al ciclo de vida completo de proyectos QSAR y machine learning en química computacional y descubrimiento de fármacos. No se trata de un modelo de lenguaje: las etiquetas del repositorio (`qsar`, `cheminformatics`, `drug-discovery`, `machine-learning`) y la model card indican que es un modelo predictivo entrenado sobre descriptores moleculares para tareas de QSAR.
+`Emmanuelly-Silva/teste` es un artefacto publicado en Hugging Face por la investigadora Emmanuelly Lavínia da Silva (ORCID 0000-0002-6504-0447) a través de la plataforma QSAR IA, una herramienta de código abierto orientada al ciclo de vida completo de proyectos QSAR y machine learning en química computacional y descubrimiento de fármacos. No se trata de un modelo de lenguaje: las etiquetas del repositorio (`qsar`, `cheminformatics`, `drug-discovery`, `machine-learning`) y la model card indican que es un modelo predictivo entrenado sobre descriptores moleculares para tareas de QSAR.
 
 El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no expone pipeline, idiomas ni pesos descargables en la información disponible. La model card es genérica y generada por la plataforma: describe el propósito de reproducibilidad científica y remite al repositorio del proyecto QSAR IA en GitHub, pero no documenta arquitectura, dataset de entrenamiento, hiperparámetros ni métricas.
 
@@ -42,7 +42,7 @@ La única información metodológica es que el modelo fue generado mediante la p
 - Docencia en quimioinformática: emplear el repositorio como ejemplo de publicación de modelos QSAR con licencia permisiva y trazabilidad vía ORCID.
 - Benchmarking interno de pipelines QSAR: comparar el rendimiento de la plataforma QSAR IA frente a implementaciones propias sobre el mismo conjunto de datos, una vez obtenidos los datos de entrenamiento.
 - Integración en cuadernos de investigación: cargar el modelo en un entorno Python para análisis exploratorio de descriptores moleculares, sujeto a confirmar el formato de serialización.
-- Auditoría de reproducibilidad: evaluar qué metadatos publica la plataforma QSAR IA en HuggingFace y proponer mejoras de documentación (dataset, métricas, versión del algoritmo).
+- Auditoría de reproducibilidad: evaluar qué metadatos publica la plataforma QSAR IA en Hugging Face y proponer mejoras de documentación (dataset, métricas, versión del algoritmo).
 
 ## Benchmarks y rendimiento
 
@@ -79,6 +79,6 @@ La comparación es estructural, no de rendimiento: no existen métricas publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Emmanuelly-Silva/teste
+- Repositorio Hugging Face: https://huggingface.co/Emmanuelly-Silva/teste
 - Repositorio del proyecto QSAR IA: https://github.com/altobellibm/qsar_ia_project
 - ORCID de la autora: https://orcid.org/0000-0002-6504-0447

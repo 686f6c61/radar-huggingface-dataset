@@ -86,5 +86,5 @@ No disponible. No se han publicado en la informacion proporcionada modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minju2026/connectailab-rl-minju2026-v1-walker2d-ppo
+- Hugging Face: https://huggingface.co/minju2026/connectailab-rl-minju2026-v1-walker2d-ppo
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

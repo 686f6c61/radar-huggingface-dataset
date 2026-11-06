@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arjuna-V2 es un repositorio de modelo publicado en HuggingFace por el usuario `shivrajgurjar` bajo el identificador `shivrajgurjar/Arjuna-V2`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: 22 descargas, 0 likes, la etiqueta generica `region:us` y fechas de creacion y actualizacion del 29 de octubre de 2026 (con apenas 17 minutos de diferencia entre ambas). No consta pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni longitud de contexto.
+Arjuna-V2 es un repositorio de modelo publicado en Hugging Face por el usuario `shivrajgurjar` bajo el identificador `shivrajgurjar/Arjuna-V2`. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: 22 descargas, 0 likes, la etiqueta generica `region:us` y fechas de creacion y actualizacion del 29 de octubre de 2026 (con apenas 17 minutos de diferencia entre ambas). No consta pipeline declarado, licencia, idiomas soportados, arquitectura, numero de parametros ni longitud de contexto.
 
 No se ha encontrado documentacion tecnica asociada: el repositorio no expone model card con descripcion, no hay resultados de benchmarks y la busqueda web realizada no ha devuelto ninguna referencia al modelo (los resultados obtenidos son cartografias del Oriente Medio y no guardan relacion con el proyecto). Tampoco se ha localizado paper, blog de presentacion, repositorio de codigo ni demo.
 
@@ -34,7 +34,7 @@ Por tanto, esta ficha no puede evaluar el modelo en terminos tecnicos: se limita
 
 No disponible. El repositorio no publica informacion sobre la arquitectura (transformer denso, mezcla de expertos, SSM, modelo hibrido u otra), el numero de parametros, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento explicito, etc.).
 
-El unico indicio disponible es la etiqueta `region:us`, que en HuggingFace es una etiqueta administrativa de region y no aporta ningun dato sobre el diseno del modelo. La diferencia de 17 minutos entre la creacion y la ultima actualizacion del repositorio sugiere una publicacion reciente y sin iteraciones documentadas, pero se trata de una inferencia sobre metadatos, no de informacion tecnica confirmada.
+El unico indicio disponible es la etiqueta `region:us`, que en Hugging Face es una etiqueta administrativa de region y no aporta ningun dato sobre el diseno del modelo. La diferencia de 17 minutos entre la creacion y la ultima actualizacion del repositorio sugiere una publicacion reciente y sin iteraciones documentadas, pero se trata de una inferencia sobre metadatos, no de informacion tecnica confirmada.
 
 ## Capacidades
 
@@ -97,6 +97,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shivrajgurjar/Arjuna-V2
+- Repositorio en Hugging Face: https://huggingface.co/shivrajgurjar/Arjuna-V2
 - Paper, blog de presentacion, repositorio de codigo y demo: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos (cartograf.fr, fr.mapsofworld.com, universalis.fr, es.wikipedia.org, geographyquiz.io) son cartografias del Oriente Medio y no guardan ninguna relacion con el modelo, por lo que se descartan como fuentes.

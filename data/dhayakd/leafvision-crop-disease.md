@@ -4,7 +4,7 @@
 
 El repositorio `Dhayakd/leafvision-crop-disease` aloja un modelo identificado como "leafvision-crop-disease" bajo licencia MIT, pero no se proporciona ninguna información adicional en su model card más allá de la licencia. El tamaño del repositorio es de 0.0 GB, lo que sugiere que podría estar vacío o contener únicamente metadatos sin pesos publicados. No se dispone de pipeline, idiomas, arquitectura ni datos de entrenamiento.
 
-Los resultados de búsqueda web mencionan "LeafVision", un modelo de visión agrícola auto-supervisado para diagnóstico de enfermedades de plantas, desarrollado por el grupo LABA-SNU y descrito en artículos científicos. Sin embargo, no hay evidencia de que este repositorio de HuggingFace corresponda a dicho proyecto, ya que el autor es diferente y no se incluye ninguna referencia ni archivo. Por tanto, no se puede confirmar que este modelo tenga relación con LeafVision.
+Los resultados de búsqueda web mencionan "LeafVision", un modelo de visión agrícola auto-supervisado para diagnóstico de enfermedades de plantas, desarrollado por el grupo LABA-SNU y descrito en artículos científicos. Sin embargo, no hay evidencia de que este repositorio de Hugging Face corresponda a dicho proyecto, ya que el autor es diferente y no se incluye ninguna referencia ni archivo. Por tanto, no se puede confirmar que este modelo tenga relación con LeafVision.
 
 Dada la ausencia total de documentación y de contenido en el repositorio, no es posible evaluar sus capacidades, rendimiento o requisitos. Esta ficha se limita a reflejar la información disponible y a señalar las carencias.
 
@@ -56,7 +56,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dhayakd/leafvision-crop-disease
+- Repositorio en Hugging Face: https://huggingface.co/Dhayakd/leafvision-crop-disease
 - Artículo relacionado (no confirmado como el mismo modelo): https://www.sciencedirect.com/science/article/pii/S0952197626009425
 - Artículo relacionado (no confirmado): https://dl.acm.org/doi/10.1016/j.engappai.2026.114660
 - Repositorio GitHub de LeafVision (autor diferente): https://github.com/LABA-SNU/LeafVision

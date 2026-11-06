@@ -102,7 +102,7 @@ Diferencias relevantes: este repositorio es el único de la tabla que se distrib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-Instruct-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - App Android openweights: https://github.com/alpharomercoma/openweights

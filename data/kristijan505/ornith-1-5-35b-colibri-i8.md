@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (familia) | 35B | 3B | no disponible | MIT | HuggingFace |
-| Qwen2.5-32B-A3B | 32B | 3B | 128K | Apache 2.0 | HuggingFace |
-| DeepSeek-V2-Lite | 16B | 2.4B | 32K | MIT | HuggingFace |
-| Mixtral-8x7B | 47B | 13B | 32K | Apache 2.0 | HuggingFace |
+| Ornith-1.5-35B-A3B (familia) | 35B | 3B | no disponible | MIT | Hugging Face |
+| Qwen2.5-32B-A3B | 32B | 3B | 128K | Apache 2.0 | Hugging Face |
+| DeepSeek-V2-Lite | 16B | 2.4B | 32K | MIT | Hugging Face |
+| Mixtral-8x7B | 47B | 13B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa es parcial porque no se dispone de datos de rendimiento de Ornith-1.5-35B en benchmarks públicos. Qwen2.5-32B-A3B es un competidor directo en tamaño y arquitectura, con contexto de 128K y licencia Apache 2.0. Mixtral-8x7B tiene más parámetros activos y es más pesado de ejecutar, pero está más consolidado. La ventaja de Ornith es su enfoque de auto-mejora y licencia MIT, pero su ecosistema es menos maduro.
 
@@ -77,7 +77,7 @@ La comparativa es parcial porque no se dispone de datos de rendimiento de Ornith
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kristijan505/Ornith-1.5-35B-colibri-i8
+- Hugging Face del modelo: https://huggingface.co/kristijan505/Ornith-1.5-35B-colibri-i8
 - Modelo original de Ornith AI: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF/tree/main
 - Sitio web de Ornith AI: https://ornith.ai/

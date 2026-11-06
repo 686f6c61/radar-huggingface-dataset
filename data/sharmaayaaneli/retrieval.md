@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmaayaaneli/retrieval` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de recuperación (retrieval). Lo publica el usuario de HuggingFace sharmaayaaneli (Ayaan Sharma) y se distribuye bajo licencia BSD-3-Clause. Se trata de un experimento de escala "nano" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento verificados.
+`sharmaayaaneli/retrieval` es un prototipo de investigación basado en la arquitectura Perceiver, orientado a tareas de recuperación (retrieval). Lo publica el usuario de Hugging Face sharmaayaaneli (Ayaan Sharma) y se distribuye bajo licencia BSD-3-Clause. Se trata de un experimento de escala "nano" cuyo propósito declarado es documentar valores por defecto y formatos de fichero, no presentar resultados de rendimiento verificados.
 
 El repositorio incluye una implementación en Python (`eval.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que, según la propia model card, constituye una inicialización válida para pruebas de humo ("smoke tests") y no un checkpoint entrenado ni evaluado. El recuento real de parámetros en safetensors es de 33.088, una cifra extremadamente reducida que confirma el carácter de prototipo y no de modelo utilizable en producción.
 
@@ -75,7 +75,7 @@ No disponible. No se han publicado datos de rendimiento de este modelo ni se ide
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharmaayaaneli/retrieval | 33.088 | no disponible | Sin benchmarks publicados | BSD-3-Clause | HuggingFace (14 descargas) |
+| sharmaayaaneli/retrieval | 33.088 | no disponible | Sin benchmarks publicados | BSD-3-Clause | Hugging Face (14 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. No se han publicado datos de rendimiento de este modelo ni se ide
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sharmaayaaneli/retrieval
+- Modelo en Hugging Face: https://huggingface.co/sharmaayaaneli/retrieval
 - Perfil del autor: https://huggingface.co/sharmaayaaneli
 - Listado de modelos del autor: https://huggingface.co/sharmaayaaneli/models

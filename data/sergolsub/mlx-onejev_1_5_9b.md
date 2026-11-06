@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-onejev_1_5_9B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-onejev_1_5_9B
 - Modelo original: https://huggingface.co/OmniJev/OneJev1.5-9B
 - Libreria MLX: https://github.com/ml-explore/mlx
 - `mlx-lm` (carga, generacion y servidor): https://github.com/ml-explore/mlx-lm

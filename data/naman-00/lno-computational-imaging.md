@@ -6,7 +6,7 @@ C-LNO (Lindblad Neural Operator) es un operador neuronal de Fourier con un gener
 
 El problema que aborda es la prediccion del siguiente estado dinamico a partir de una representacion espacial y variables de entorno (amplitud, parametro de disipacion gamma y forzamiento estocastico sigma), manteniendo la estructura fisica de la matriz durante aplicaciones repetidas. Su relevancia actual es metodologica: combina un backbone de operadores neuronales de Fourier con un paso de proyeccion a estados fisicamente validos (simetrizacion, semidefinicion positiva y traza normalizada), lo que permite rollouts largos sin divergencia estructural.
 
-El modelo esta entrenado sobre 100 trayectorias sinteticas repartidas en 5 regimenes dinamicos, con 9.900 transiciones y 128 puntos espaciales. La licencia es MIT y el framework es PyTorch, pero el repositorio de HuggingFace ocupa 0,0 GB y la model card aparece truncada, por lo que no hay confirmacion de que los pesos esten publicados.
+El modelo esta entrenado sobre 100 trayectorias sinteticas repartidas en 5 regimenes dinamicos, con 9.900 transiciones y 128 puntos espaciales. La licencia es MIT y el framework es PyTorch, pero el repositorio de Hugging Face ocupa 0,0 GB y la model card aparece truncada, por lo que no hay confirmacion de que los pesos esten publicados.
 
 ## Especificaciones tecnicas
 
@@ -103,5 +103,5 @@ FNO y el LNO original son las dos alternativas comparadas directamente por el au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/naman-00/LNO-Computational-Imaging
+- Hugging Face: https://huggingface.co/naman-00/LNO-Computational-Imaging
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados corresponden a dominios de Microsoft y no guardan relacion con C-LNO.

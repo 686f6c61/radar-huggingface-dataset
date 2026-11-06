@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-Base es un modelo de lenguaje de tipo decoder-only para generación de texto, publicado por el equipo Nanbeige (repositorio en HuggingFace bajo el identificador `eyes-ml/Nanbeige4.3-33B-Base`, con la model card remitiendo a `Nanbeige/Nanbeige4.3-33B-Base`). Con 33.118.977.024 parámetros, se posiciona en la clase de ~30B y se presenta como el modelo "teacher" insignia de la serie Nanbeige4.3: la estrategia declarada del equipo es construir primero un agente de alta capacidad para, posteriormente, destilar esas capacidades agénticas en modelos más pequeños de la misma familia (por ejemplo, Nanbeige4.3-3B).
+Nanbeige4.3-33B-Base es un modelo de lenguaje de tipo decoder-only para generación de texto, publicado por el equipo Nanbeige (repositorio en Hugging Face bajo el identificador `eyes-ml/Nanbeige4.3-33B-Base`, con la model card remitiendo a `Nanbeige/Nanbeige4.3-33B-Base`). Con 33.118.977.024 parámetros, se posiciona en la clase de ~30B y se presenta como el modelo "teacher" insignia de la serie Nanbeige4.3: la estrategia declarada del equipo es construir primero un agente de alta capacidad para, posteriormente, destilar esas capacidades agénticas en modelos más pequeños de la misma familia (por ejemplo, Nanbeige4.3-3B).
 
 El modelo está orientado a tareas de código complejo y de "cowork" profesional, y la model card lo describe como una base para post-entrenamiento tanto de agentes de propósito general como especializados por dominio. Según los datos aportados por el autor, supera de forma consistente a Gemma4-31B-Base, que la propia model card identifica como la única base abierta de frontera publicada en la escala de 30B en los últimos seis meses.
 
@@ -12,7 +12,7 @@ La relevancia actual del modelo radica en dos factores: por un lado, su licencia
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; los tags de HuggingFace incluyen `llama`, lo que sugiere una arquitectura transformer decoder-only de tipo Llama. No se especifica si emplea MoE, SSM o atención híbrida |
+| Arquitectura | No disponible en detalle; los tags de Hugging Face incluyen `llama`, lo que sugiere una arquitectura transformer decoder-only de tipo Llama. No se especifica si emplea MoE, SSM o atención híbrida |
 | Parametros totales | 33.118.977.024 (dato real de los tensores en safetensors) |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en dos factores: por un lado, su licencia
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de lo que se deduce de los metadatos: el tag `llama` en HuggingFace apunta a una arquitectura transformer decoder-only de tipo Llama, y los 33.118.977.024 parametros reales confirman un modelo denso de ~33B (o, en su defecto, un MoE con ese total, extremo que la model card no aclara). El identificador `-Base` indica que se trata de un modelo preentrenado sin post-entrenamiento instruccional; no se ha publicado informacion sobre si hubo RLHF, DPO o SFT para esta variante.
+La informacion disponible no detalla la arquitectura interna mas alla de lo que se deduce de los metadatos: el tag `llama` en Hugging Face apunta a una arquitectura transformer decoder-only de tipo Llama, y los 33.118.977.024 parametros reales confirman un modelo denso de ~33B (o, en su defecto, un MoE con ese total, extremo que la model card no aclara). El identificador `-Base` indica que se trata de un modelo preentrenado sin post-entrenamiento instruccional; no se ha publicado informacion sobre si hubo RLHF, DPO o SFT para esta variante.
 
 Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, la longitud de contexto nativa ni innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.). La model card si define el proposito del modelo dentro de la familia: servir como "teacher" de alta capacidad para destilar capacidades agenticas en modelos mas pequenos de la serie Nanbeige4.3, y como base para post-entrenamiento de agentes generales o especializados por dominio.
 
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (MMLU-Pro / GPQA / GSM8K / MBPP) | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-Base | 33,1B | No disponible | Apache 2.0 | 66,9 / 62,0 / 92,9 / 74,6 | HuggingFace, safetensors |
+| Nanbeige4.3-33B-Base | 33,1B | No disponible | Apache 2.0 | 66,9 / 62,0 / 92,9 / 74,6 | Hugging Face, safetensors |
 | Gemma4-31B-Base | ~31B (no confirmado en la informacion) | No disponible | No disponible en la informacion | 59,3 / 41,5 / 88,9 / 72,5 | Referenciado en la model card |
 | Otras bases abiertas de ~30B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,12 +92,12 @@ La unica comparacion con datos numericos proporcionada por el autor es frente a 
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o seguridad para este modelo.
 - Ausencia de pesos cuantizados oficiales: el despliegue en GPU de consumo exige cuantizar por cuenta propia, con el riesgo de degradacion de calidad que ello implica.
 - Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones declaradas adicionales, pero no se ofrece ninguna garantia ni indemnizacion por parte del autor.
-- Procedencia del repositorio: el identificador de HuggingFace es `eyes-ml/Nanbeige4.3-33B-Base`, mientras que la model card y los ejemplos de codigo apuntan a `Nanbeige/Nanbeige4.3-33B-Base`; conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
+- Procedencia del repositorio: el identificador de Hugging Face es `eyes-ml/Nanbeige4.3-33B-Base`, mientras que la model card y los ejemplos de codigo apuntan a `Nanbeige/Nanbeige4.3-33B-Base`; conviene verificar cual es el repositorio canonico antes de integrarlo en produccion.
 - Fecha de publicacion en los metadatos (25 de octubre de 2026) posterior a la fecha de referencia habitual: verificar la vigencia y el estado de mantenimiento del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eyes-ml/Nanbeige4.3-33B-Base
+- Hugging Face: https://huggingface.co/eyes-ml/Nanbeige4.3-33B-Base
 - Repositorio referenciado en la model card: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Contacto del equipo: nanbeige@kanzhun.com
 - Paper, blog o repositorio de codigo adicionales: no disponibles en la informacion proporcionada (los resultados de busqueda web recibidos no guardan relacion con el modelo).

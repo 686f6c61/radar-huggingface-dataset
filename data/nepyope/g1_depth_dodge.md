@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G1 depth dodgeball on frozen SONIC es una politica de control robotico distribuida como tres grafos ONNX, no un modelo de lenguaje. La publica el usuario nepyope en HuggingFace y esta pensada para el humanoide Unitree G1: un controlador de cuerpo completo SONIC congelado al que se le anaden siete modulos LoRA de rango 16 en el decodificador, condicionados por un percept de 128 dimensiones obtenido de una camara de profundidad montada en la cabeza (tokens de Theia-Tiny mas un adaptador temporal). El entrenamiento se hizo con PPO y el autor indica que corresponde a la iteracion 4000.
+G1 depth dodgeball on frozen SONIC es una politica de control robotico distribuida como tres grafos ONNX, no un modelo de lenguaje. La publica el usuario nepyope en Hugging Face y esta pensada para el humanoide Unitree G1: un controlador de cuerpo completo SONIC congelado al que se le anaden siete modulos LoRA de rango 16 en el decodificador, condicionados por un percept de 128 dimensiones obtenido de una camara de profundidad montada en la cabeza (tokens de Theia-Tiny mas un adaptador temporal). El entrenamiento se hizo con PPO y el autor indica que corresponde a la iteracion 4000.
 
 El modelo se consume desde el `DepthDodgeController` de la libreria `lerobot` y resuelve una tarea muy concreta: esquivar proyectiles (dodgeball) mientras se mantiene el control de equilibrio y marcha del humanoide. Su interes practico esta en que demuestra un patron de despliegue habitual en robotica open source: congelar un controlador base grande, entrenar adaptadores pequenos y exportar el resultado a ONNX para ejecutarlo en el robot o en simulador a 25 Hz.
 
@@ -86,5 +86,5 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nepyope/g1_depth_dodge
+- Modelo en Hugging Face: https://huggingface.co/nepyope/g1_depth_dodge
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

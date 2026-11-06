@@ -72,9 +72,9 @@ El autor documenta además fallos sistemáticos por ítem: todas las especificac
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cpilens-xlmr-thcpi | 278 M | 64 tokens (truncado en entrenamiento) | 69,5 % ponderado por gasto; macro-F1 59,7 % | MIT | HuggingFace, 29 descargas |
+| cpilens-xlmr-thcpi | 278 M | 64 tokens (truncado en entrenamiento) | 69,5 % ponderado por gasto; macro-F1 59,7 % | MIT | Hugging Face, 29 descargas |
 | Claude Opus 5.5 (prompted) | no disponible | no disponible | 97,9 % ponderado por gasto; macro-F1 94,4 % | propietaria | API comercial |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | no disponible (modelo base sin ajuste a esta tarea) | MIT | HuggingFace |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | no disponible (modelo base sin ajuste a esta tarea) | MIT | Hugging Face |
 | Clasificador específico para IPC tailandés alternativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante del paper es frente al LLM por prompting, no frente a otro encoder: no se documentan baselines de encoders alternativos ajustados a la misma tarea.
@@ -96,7 +96,7 @@ La comparación relevante del paper es frente al LLM por prompting, no frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanatchon36/cpilens-xlmr-thcpi
+- Modelo en Hugging Face: https://huggingface.co/thanatchon36/cpilens-xlmr-thcpi
 - Paper: https://thanatchon36.github.io/cpilens/paper/
 - Repositorio de código, datos y paper: https://github.com/thanatchon36/cpilens
 - Fuentes y licencias de datos: https://github.com/thanatchon36/cpilens/blob/main/data/SOURCES.md

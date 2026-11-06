@@ -92,7 +92,7 @@ No hay modelos de propósito general de tamaño similar con los que tenga sentid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdkyum/gpt_family_graph_irreducible_d64
+- Modelo en Hugging Face: https://huggingface.co/kdkyum/gpt_family_graph_irreducible_d64
 - Dataset asociado: https://huggingface.co/datasets/kdkyum/family_graph_hop
 - Repositorio compañero (estudio amplio): https://huggingface.co/kdkyum/gpt_family_graph_hop
 - Repositorio compañero (reversal curse): https://huggingface.co/kdkyum/gpt-family-relation

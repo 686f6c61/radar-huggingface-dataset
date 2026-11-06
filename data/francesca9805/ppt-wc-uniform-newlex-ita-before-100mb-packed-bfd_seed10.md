@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/eng_latn_100mb`, un modelo monolingue de la familia Goldfish centrado en ingles. Lo publica el usuario `francesca9805` (los enlaces de seguimiento apuntan a la Universidad de Groningen) y esta entrenado con la libreria TRL de HuggingFace mediante SFT. Se trata de un experimento de investigacion sobre tokenizadores y modelos de lenguaje pequenos, no de un modelo listo para produccion.
+`ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo `goldfish-models/eng_latn_100mb`, un modelo monolingue de la familia Goldfish centrado en ingles. Lo publica el usuario `francesca9805` (los enlaces de seguimiento apuntan a la Universidad de Groningen) y esta entrenado con la libreria TRL de Hugging Face mediante SFT. Se trata de un experimento de investigacion sobre tokenizadores y modelos de lenguaje pequenos, no de un modelo listo para produccion.
 
 Arquitectura y tamano: por las etiquetas del repositorio se trata de un transformer decoder-only de tipo GPT-2 con 86.508.288 parametros (~86,5 M). El nombre del modelo sugiere un experimento con un nuevo vocabulario/tokenizador para italiano ("newlex-ita"), aunque la model card no confirma ni la composicion del dataset ni el idioma final de entrenamiento. El repositorio ocupa 0,2 GB y los pesos estan en safetensors.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10 | ~86,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible (mismo orden, ~86 M) | no disponible | no disponible | HuggingFace, familia Goldfish publica |
+| ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10 | ~86,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible (mismo orden, ~86 M) | no disponible | no disponible | Hugging Face, familia Goldfish publica |
 | GPT-2 small | 124 M | 1.024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -85,7 +85,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 corresponden a modelos de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento (Weights & Biases): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5hu9xvcc
 - Repositorio TRL: https://github.com/huggingface/trl

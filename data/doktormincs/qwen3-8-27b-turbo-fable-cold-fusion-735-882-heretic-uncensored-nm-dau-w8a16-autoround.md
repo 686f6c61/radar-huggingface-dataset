@@ -85,11 +85,11 @@ El autor indica explícitamente que estos números no permiten sostener ninguna 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Perplejidad (wikitext-103) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repo (W8A16 AutoRound) | 27,8 B | 262.144 (32.768 en el ejemplo) | int8 W8A16 group 128, Marlin | 8,5658 (+5,91 % vs BF16) | Apache 2.0 | HuggingFace, vLLM ≥ 0.28 |
-| Mismo modelo, build W6A16 | 27,8 B | Idem | 6 bits, kernels Humming (JIT) | 8,6836 (+7,36 % vs BF16) | Apache 2.0 | HuggingFace, vLLM |
-| Build de 4 bits sobre checkpoint `…abliterated` | 27,8 B | Idem | 4 bits | 8,8426 (+8,99 % vs BF16) | Apache 2.0 | HuggingFace |
-| Modelo base en BF16 (DavidAU) | 27,8 B | 262.144 | Sin cuantizar (~52 GB) | 8,0880 | Apache 2.0 | HuggingFace |
-| Builds GGUF del modelo base (p. ej. NEO-CODER-MAX-MTP-GGUF) | 27,8 B | 262.144 | GGUF (Q4, Q8, etc.) | No disponible | Apache 2.0 | HuggingFace |
+| Este repo (W8A16 AutoRound) | 27,8 B | 262.144 (32.768 en el ejemplo) | int8 W8A16 group 128, Marlin | 8,5658 (+5,91 % vs BF16) | Apache 2.0 | Hugging Face, vLLM ≥ 0.28 |
+| Mismo modelo, build W6A16 | 27,8 B | Idem | 6 bits, kernels Humming (JIT) | 8,6836 (+7,36 % vs BF16) | Apache 2.0 | Hugging Face, vLLM |
+| Build de 4 bits sobre checkpoint `…abliterated` | 27,8 B | Idem | 4 bits | 8,8426 (+8,99 % vs BF16) | Apache 2.0 | Hugging Face |
+| Modelo base en BF16 (DavidAU) | 27,8 B | 262.144 | Sin cuantizar (~52 GB) | 8,0880 | Apache 2.0 | Hugging Face |
+| Builds GGUF del modelo base (p. ej. NEO-CODER-MAX-MTP-GGUF) | 27,8 B | 262.144 | GGUF (Q4, Q8, etc.) | No disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoría (por ejemplo, otros modelos visión-lenguaje de ~27-30 B) en la información proporcionada.
 
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W8A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W8A16-AutoRound
 - Build hermano W6A16 del mismo autor: https://huggingface.co/DoktorMincs/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W6A16-AutoRound
 - Modelo base en BF16 (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Build GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF

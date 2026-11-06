@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la model card indica que es un ajuste fino de `juice
 - Evaluacion sim-to-real en el ecosistema microduck: la publicacion en ONNX con normalizador integrado facilita trasladar la politica desde el pipeline de `microduck_rl` al robot fisico sin reimplementar el preprocesado de observaciones.
 - Banco de pruebas de infraestructura de despliegue: util para validar el flujo de carga de politicas en ranuras del daemon (`manifest.json`, esquema 2) y el enrutado de observaciones a 50 Hz.
 - Sustitucion rapida de comportamiento en demostraciones: al cargarse en una ranura, permite cambiar la marcha activa del robot en una demostracion o exhibicion sin reiniciar el sistema ni recompilar el daemon.
-- Docencia y tutoriales de robotica con refuerzo: sirve como ejemplo de artefacto final de un pipeline de RL (entrenamiento en `microduck_rl`, exportacion a ONNX y publicacion en HuggingFace) para cursos o talleres practicos.
+- Docencia y tutoriales de robotica con refuerzo: sirve como ejemplo de artefacto final de un pipeline de RL (entrenamiento en `microduck_rl`, exportacion a ONNX y publicacion en Hugging Face) para cursos o talleres practicos.
 - Recoleccion de datos de locomocion: ejecutar la politica de forma perpetua permite grabar trazas de observaciones y acciones para posteriores analisis o para aprender modelos dinamicos del robot.
 - Regresion de daemons y herramientas: sirve para verificar que una version del daemon o del cargador de politicas sigue reproduciendo correctamente el comportamiento al actualizar el software del robot.
 
@@ -93,11 +93,11 @@ El unico termino de comparacion documentado es su modelo base, `juicenv/microduc
 - Requisito de normalizacion implicito: el normalizador esta dentro del ONNX, por lo que alimentar observaciones ya normalizadas produciria un comportamiento incorrecto.
 - Comportamiento perpetuo: la politica no termina por si sola; el operador debe detenerla o sustituirla, lo que exige supervisar el robot durante su ejecucion.
 - Metadatos incompletos: sin idiomas, sin parametros, sin informacion de sesgos ni de alucinacion (categorias no aplicables a este tipo de modelo).
-- Fecha de creacion y actualizacion en HuggingFace: 2026-10-16, con apenas cuatro segundos de diferencia entre ambas, lo que sugiere una publicacion automatizada sin mantenimiento posterior.
+- Fecha de creacion y actualizacion en Hugging Face: 2026-10-16, con apenas cuatro segundos de diferencia entre ambas, lo que sugiere una publicacion automatizada sin mantenimiento posterior.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund
+- Ficha en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund
 - Modelo base: https://huggingface.co/juicenv/microduck-hill-es8
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo: https://github.com/pollen-robotics/microduck_rl (rama `main`, commit `6ff40704a`)

@@ -76,7 +76,7 @@ No se dispone de comparativas publicadas con otros modelos. El proyecto incluye 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed3-v2
+- Hugging Face: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed3-v2
 - Repositorio del proyecto: https://github.com/lauraxijia/contingency-em
 - Adaptador relacionado (seed1): https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed1-v2
 - Adaptador relacionado (a7ctx): https://huggingface.co/ArthT/qwen7b-a7ctx-badmed-seed1-v2

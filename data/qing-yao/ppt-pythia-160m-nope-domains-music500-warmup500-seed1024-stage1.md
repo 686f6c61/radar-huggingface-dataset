@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario `qing-yao` en HuggingFace. El nombre codifica el experimento: se parte de Pythia-160M, se sustituye el mecanismo de atención por una variante "nope" (probablemente sin RoPE, *no positional encoding*), se entrena sobre el dominio "music" durante 500 pasos y con 500 pasos de warmup, usando la semilla 1024. Es, por tanto, un artefacto de investigación más que un modelo listo para producción.
+`ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario `qing-yao` en Hugging Face. El nombre codifica el experimento: se parte de Pythia-160M, se sustituye el mecanismo de atención por una variante "nope" (probablemente sin RoPE, *no positional encoding*), se entrena sobre el dominio "music" durante 500 pasos y con 500 pasos de warmup, usando la semilla 1024. Es, por tanto, un artefacto de investigación más que un modelo listo para producción.
 
-El modelo conserva la arquitectura GPT-NeoX de Pythia, con 85.842.432 parámetros reales según los pesos en safetensors (frente a los ~162M nominales del Pythia-160M original, lo que sugiere que se ha recortado o reconfigurado parte del modelo). La model card es la generada automáticamente por el `Trainer` de HuggingFace y no aporta descripción, datos de entrenamiento ni evaluación; el autor no ha publicado resultados de benchmarks.
+El modelo conserva la arquitectura GPT-NeoX de Pythia, con 85.842.432 parámetros reales según los pesos en safetensors (frente a los ~162M nominales del Pythia-160M original, lo que sugiere que se ha recortado o reconfigurado parte del modelo). La model card es la generada automáticamente por el `Trainer` de Hugging Face y no aporta descripción, datos de entrenamiento ni evaluación; el autor no ha publicado resultados de benchmarks.
 
 Su relevancia es acotada: sirve como pieza reproducible de un experimento controlado (ablación de codificación posicional sobre un dominio concreto) y como ejemplo de fine-tuning ligero con `transformers` 5.4.0 y PyTorch 2.8.0. No está pensado para uso general ni comercial en producción.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada: sirve como pieza reproducible de un experimento contro
 
 El modelo parte de `EleutherAI/pythia-160m`, un transformer decoder-only de la familia GPT-NeoX. La etiqueta `gpt_neox_nope` y el sufijo `nope` del nombre indican una modificación del mecanismo de atención para eliminar la codificación posicional rotatoria (RoPE) que usa Pythia; se requiere `trust_remote_code=True` para cargar la implementación personalizada. El recuento de parámetros (85,8M) es notablemente inferior al de Pythia-160M (~162M), lo que apunta a una reconfiguración de capas o dimensiones, aunque la model card no lo documenta.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un dataset no especificado ("unknown dataset" en la model card), aparentemente centrado en el dominio musical. Hiperparámetros declarados: learning rate 1e-3, batch total 32 (16 × acumulación 2), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno con mínimo y warmup del 5 % de los pasos, 500 pasos de entrenamiento y semilla 1024. No se documenta número de tokens, composición del dataset, ni si hubo RLHF/DPO. Versiones: Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0, Tokenizers 0.22.1.
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un dataset no especificado ("unknown dataset" en la model card), aparentemente centrado en el dominio musical. Hiperparámetros declarados: learning rate 1e-3, batch total 32 (16 × acumulación 2), optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno con mínimo y warmup del 5 % de los pasos, 500 pasos de entrenamiento y semilla 1024. No se documenta número de tokens, composición del dataset, ni si hubo RLHF/DPO. Versiones: Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0, Tokenizers 0.22.1.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1 | 85,8M | no disponible | Apache-2.0 | HuggingFace, requiere `trust_remote_code` | Ajuste experimental sin evaluación |
-| EleutherAI/pythia-160m | ~162M | 2048 | Apache-2.0 | HuggingFace | Modelo base, ampliamente evaluado, sin código personalizado |
-| EleutherAI/pythia-410m | ~410M | 2048 | Apache-2.0 | HuggingFace | Misma familia, mayor capacidad, benchmarks públicos |
-| GPT-2 small | ~124M | 1024 | MIT | HuggingFace | Alternativa clásica de tamaño similar, sin código personalizado |
+| ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1 | 85,8M | no disponible | Apache-2.0 | Hugging Face, requiere `trust_remote_code` | Ajuste experimental sin evaluación |
+| EleutherAI/pythia-160m | ~162M | 2048 | Apache-2.0 | Hugging Face | Modelo base, ampliamente evaluado, sin código personalizado |
+| EleutherAI/pythia-410m | ~410M | 2048 | Apache-2.0 | Hugging Face | Misma familia, mayor capacidad, benchmarks públicos |
+| GPT-2 small | ~124M | 1024 | MIT | Hugging Face | Alternativa clásica de tamaño similar, sin código personalizado |
 
 La comparación es aproximada: no hay benchmarks del modelo ajustado que permitan contrastar rendimiento real frente a estas alternativas.
 
@@ -95,7 +95,7 @@ La comparación es aproximada: no hay benchmarks del modelo ajustado que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed1024-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper de Pythia: https://arxiv.org/abs/2304.01373

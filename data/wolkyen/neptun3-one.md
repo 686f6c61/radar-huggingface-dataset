@@ -81,5 +81,5 @@ La comparación se basa en características públicas de modelos de tamaño simi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wolkyen/Neptun3-One
+- Hugging Face: https://huggingface.co/Wolkyen/Neptun3-One
 - Web del autor: https://wolkyen.grok.me

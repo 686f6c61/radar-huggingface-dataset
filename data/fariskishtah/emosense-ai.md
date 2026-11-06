@@ -74,10 +74,10 @@ El autor aclara que el mayor macro F1 del modelo int8 en test es un efecto obser
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmoSense AI (DistilBERT) | 66,96 M | 512 tokens | 6 clases emocionales | Apache-2.0 | HuggingFace, ONNX int8 |
-| DistilBERT base sin ajustar | 66,96 M | 512 tokens | Modelo base (requiere ajuste) | Apache-2.0 | HuggingFace |
-| BERT-base-uncased | 110 M | 512 tokens | Modelo base (requiere ajuste) | Apache-2.0 | HuggingFace |
-| Modelos de clasificación emocional sobre GoEmotions (varios autores) | variable | 512 tokens | Multilabel (28 etiquetas) | variable | HuggingFace |
+| EmoSense AI (DistilBERT) | 66,96 M | 512 tokens | 6 clases emocionales | Apache-2.0 | Hugging Face, ONNX int8 |
+| DistilBERT base sin ajustar | 66,96 M | 512 tokens | Modelo base (requiere ajuste) | Apache-2.0 | Hugging Face |
+| BERT-base-uncased | 110 M | 512 tokens | Modelo base (requiere ajuste) | Apache-2.0 | Hugging Face |
+| Modelos de clasificación emocional sobre GoEmotions (varios autores) | variable | 512 tokens | Multilabel (28 etiquetas) | variable | Hugging Face |
 
 La comparación con alternativas de la misma tarea es limitada: la mayoría de modelos publicados sobre GoEmotions abordan la clasificación multilabel de 27-28 etiquetas, mientras que EmoSense AI reduce el problema a 6 clases mediante un mapeo conservador, lo que hace que las métricas no sean directamente comparables. No se dispone de datos de benchmarks frente a esos modelos en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparación con alternativas de la misma tarea es limitada: la mayoría de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fariskishtah/emosense-ai
+- Modelo en Hugging Face: https://huggingface.co/fariskishtah/emosense-ai
 - Repositorio de código y metodología: https://github.com/fariskishtah/emosense-ai
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
 - Modelo base DistilBERT: https://huggingface.co/distilbert-base-uncased

@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HanLinqi/forcebenchmark-dp-planning-lift-stamp-exp24567-trainonly
+- Repositorio Hugging Face: https://huggingface.co/HanLinqi/forcebenchmark-dp-planning-lift-stamp-exp24567-trainonly
 - Dataset relacionado (pi05-forcebenchmark-12ckpts): https://huggingface.co/datasets/HanLinqi/pi05-forcebenchmark-12ckpts-20260816-120955
-- Perfil del autor en HuggingFace: https://huggingface.co/HanLinqi
+- Perfil del autor en Hugging Face: https://huggingface.co/HanLinqi
 - Paper relacionado (PlanningBench, no directamente sobre este modelo): https://arxiv.org/abs/2605.20873

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ponoma16/sql-qwen3.5-9b-v9-obfuscated-2.0-match` es un repositorio alojado en HuggingFace por el usuario ponoma16. La model card publicada es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos aparecen como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion del entrenamiento, ni resultados de evaluacion.
+`ponoma16/sql-qwen3.5-9b-v9-obfuscated-2.0-match` es un repositorio alojado en Hugging Face por el usuario ponoma16. La model card publicada es la plantilla autogenerada por el Hub y no contiene ni una sola seccion completada: todos los campos aparecen como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion del entrenamiento, ni resultados de evaluacion.
 
 El identificador del repositorio sugiere un ajuste fino orientado a SQL sobre una base de la familia Qwen de aproximadamente 9 000 millones de parametros, en su novena iteracion ("v9"), con algun proceso de ofuscacion y una variante "2.0-match". Esta lectura es una inferencia a partir del nombre y no esta confirmada por ninguna fuente del repositorio; debe tratarse como una hipotesis de trabajo, no como un dato tecnico.
 
@@ -43,7 +43,7 @@ La etiqueta `arxiv:1910.09700` no apunta a un articulo sobre el modelo: correspo
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (la ficha no declara idiomas).
 - Capacidades especiales (modo de razonamiento explicito, vision, audio, salida estructurada): no disponible.
-- La etiqueta `endpoints_compatible` indica unicamente que el repositorio puede desplegarse mediante HuggingFace Inference Endpoints; no dice nada sobre las capacidades del modelo.
+- La etiqueta `endpoints_compatible` indica unicamente que el repositorio puede desplegarse mediante Hugging Face Inference Endpoints; no dice nada sobre las capacidades del modelo.
 - El nombre del repositorio apunta a un posible uso para tareas de SQL (generacion o traduccion de consultas), pero no hay documentacion que lo respalde.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ La model card no incluye la seccion de evaluacion completada y no existen tablas
 - VRAM estimada: no disponible en el repositorio. A modo de referencia general, un modelo denso de 9 000 millones de parametros requiere del orden de 18 GB en bf16/fp16, unos 9-10 GB en cuantizacion de 8 bits y unos 5-6 GB en cuantizacion de 4 bits. Estas cifras son estimaciones genericas para ese rango de tamano y no una medicion de este modelo.
 - GPU recomendadas: no disponibles. Para el rango de 9 000 millones de parametros, las opciones habituales serian A100 40/80 GB, H100 o L40S para despliegue en servidor, y RTX 4090, RTX 3090 o similares con 24 GB de VRAM para uso local en bf16 o cuantizado.
 - Compatibilidad con GPU de consumo: indeterminada. Depende del tamano real de los pesos publicados, que no se corresponde con el de un modelo completo de ese tamano segun el tamano del repositorio.
-- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` habilita el despliegue en HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni otros runners.
+- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` habilita el despliegue en Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni otros runners.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No disponible. El repositorio no publica arquitectura, parametros, contexto, lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-2.0-match
+- Repositorio en Hugging Face: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-2.0-match
 - Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning" (referencia de la plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

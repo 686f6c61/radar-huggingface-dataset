@@ -99,7 +99,7 @@ Los dos primeros modelos comparados son los propios modelos base de los que deri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tommy33355/damagelens-onnx
+- Modelo en Hugging Face: https://huggingface.co/tommy33355/damagelens-onnx
 - Perfil del autor: https://huggingface.co/tommy33355
 - Space del autor: https://huggingface.co/spaces/tommy33355/damage
 - Repositorio del codigo que usa estos modelos: https://github.com/tomxavier71200-ship-it/damage-detection

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-so101-pink-cylinder-bowl_GR00T17 es una política robótica de imitación publicada en HuggingFace por el usuario fatdove, obtenida al afinar el modelo fundacional GR00T N1.7 de NVIDIA sobre un único conjunto de datos propio. No se trata, por tanto, de un modelo de lenguaje de propósito general, sino de un checkpoint de control motor entrenado para una tarea concreta: coger un cilindro rosa y dejarlo dentro de un cuenco rosa con un brazo SO-101 (tipo `so_follower`).
+so101-pink-cylinder-bowl_GR00T17 es una política robótica de imitación publicada en Hugging Face por el usuario fatdove, obtenida al afinar el modelo fundacional GR00T N1.7 de NVIDIA sobre un único conjunto de datos propio. No se trata, por tanto, de un modelo de lenguaje de propósito general, sino de un checkpoint de control motor entrenado para una tarea concreta: coger un cilindro rosa y dejarlo dentro de un cuenco rosa con un brazo SO-101 (tipo `so_follower`).
 
 El modelo se distribuye en formato safetensors con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un repositorio de 12,6 GB. Utiliza la librería LeRobot y la licencia Apache 2.0. La arquitectura subyacente combina un backbone visión-lenguaje Cosmos-Reason2/Qwen3-VL con un transformer de acciones basado en flow matching, que predice acciones condicionadas por visión, lenguaje y propiocepción.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101-pink-cylinder-bowl_GR00T17 (este) | 3,14 mil millones | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace, 0 descargas |
+| so101-pink-cylinder-bowl_GR00T17 (este) | 3,14 mil millones | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | GitHub de Isaac-GR00T |
-| Otras políticas LeRobot del mismo tipo (`groot`, `act`, `smolvla` según la guía de LeRobot) | no disponible | no disponible | no disponible | no disponible | HuggingFace Hub |
+| Otras políticas LeRobot del mismo tipo (`groot`, `act`, `smolvla` según la guía de LeRobot) | no disponible | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 No se dispone de datos verificables de parámetros, contexto, rendimiento ni licencia de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación numérica rigurosa. La comparación cualitativa relevante es que este checkpoint es un ajuste especializado de una sola tarea, mientras que GR00T N1.7 base es un modelo fundacional generalista; cualquier política afinada sobre el mismo dataset sería su competidor directo.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fatdove/so101-pink-cylinder-bowl_GR00T17
+- Modelo en Hugging Face: https://huggingface.co/fatdove/so101-pink-cylinder-bowl_GR00T17
 - Dataset de entrenamiento: https://huggingface.co/datasets/fatdove/so101-pink-cylinder-bowl
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fatdove/so101-pink-cylinder-bowl
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

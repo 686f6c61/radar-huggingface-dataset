@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF` es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario Jauharul en HuggingFace. El repositorio contiene exclusivamente la version cuantizada en formato GGUF, generada con la herramienta Unsloth a partir de un adaptador LoRA entrenado durante 7 epocas. El nombre del modelo sugiere un entrenamiento orientado al dominio de normativa sanitaria indonesia (Permenkes, Peraturan Menteri Kesehatan), aunque la model card no documenta el conjunto de datos ni el objetivo del ajuste.
+`Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF` es un ajuste fino (fine-tune) del modelo Qwen3-8B, publicado por el usuario Jauharul en Hugging Face. El repositorio contiene exclusivamente la version cuantizada en formato GGUF, generada con la herramienta Unsloth a partir de un adaptador LoRA entrenado durante 7 epocas. El nombre del modelo sugiere un entrenamiento orientado al dominio de normativa sanitaria indonesia (Permenkes, Peraturan Menteri Kesehatan), aunque la model card no documenta el conjunto de datos ni el objetivo del ajuste.
 
 El interes practico de esta publicacion es limitado pero concreto: se trata de un ejemplo reproducible de como convertir un adaptador LoRA sobre Qwen3-8B a GGUF con Unsloth y desplegarlo con llama.cpp u Ollama. El repositorio incluye un archivo `Modelfile` para Ollama, lo que reduce la friccion de despliegue a un solo comando. Con 8.190.735.360 parametros (unos 8,19 mil millones), el modelo pertenece a la categoría de 8B, ejecutable en GPU de consumo con cuantizacion Q4_K_M.
 
@@ -92,7 +92,7 @@ Advertencia: los datos de las filas correspondientes a Qwen3-8B, Llama 3.1 8B y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jauharul/qwen3-8b-lora-permenkes-7epoch-GGUF
 - Unsloth (herramienta de ajuste y conversion declarada por el autor): https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp (runtime recomendado para GGUF): no incluida en la informacion proporcionada
 - Paper, blog o demo del autor: no disponible

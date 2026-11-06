@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlkaMelt/AlkaMelt` en HuggingFace no contiene información técnica que permita identificar un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ninguna otra especificación. Los resultados de búsqueda web asociados al nombre "AlkaMelt" corresponden a un suplemento dietético natural para el control de peso, sin relación alguna con modelos de IA. Por tanto, no es posible determinar qué modelo es, quién lo desarrolló ni qué problema resuelve. La fecha de creación del repositorio (2026-09-07) es posterior a la actual, lo que sugiere que podría tratarse de un repositorio vacío, un marcador de posición o un error de registro. En consecuencia, la ficha técnica se limita a indicar que los datos esenciales no están disponibles.
+El repositorio `AlkaMelt/AlkaMelt` en Hugging Face no contiene información técnica que permita identificar un modelo de inteligencia artificial. La model card únicamente declara la licencia Apache 2.0 y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ninguna otra especificación. Los resultados de búsqueda web asociados al nombre "AlkaMelt" corresponden a un suplemento dietético natural para el control de peso, sin relación alguna con modelos de IA. Por tanto, no es posible determinar qué modelo es, quién lo desarrolló ni qué problema resuelve. La fecha de creación del repositorio (2026-09-07) es posterior a la actual, lo que sugiere que podría tratarse de un repositorio vacío, un marcador de posición o un error de registro. En consecuencia, la ficha técnica se limita a indicar que los datos esenciales no están disponibles.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlkaMelt/AlkaMelt
+- Hugging Face: https://huggingface.co/AlkaMelt/AlkaMelt
 - Resultados de búsqueda web no relacionados con el modelo: https://alkamelt.us/ y https://myalkamelt.com/ (corresponden a un suplemento dietético, no a un modelo de IA).

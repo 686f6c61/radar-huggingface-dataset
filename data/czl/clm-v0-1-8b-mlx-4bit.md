@@ -103,7 +103,7 @@ Comparativa frente a otros modelos de embeddings de la misma categoria (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/czl/CLM-v0.1-8B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/czl/CLM-v0.1-8B-MLX-4bit
 - Variante 6 bits: https://huggingface.co/czl/CLM-v0.1-8B-MLX-6bit
 - Variante 8 bits: https://huggingface.co/czl/CLM-v0.1-8B-MLX-8bit
 - Referencia bf16: https://huggingface.co/czl/CLM-v0.1-8B-MLX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-onineko es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Haruka041 en HuggingFace. No se trata de un modelo generativo completo, sino de un ajuste de bajo rango que se carga sobre un modelo base de difusion: concretamente `krea/Krea-2-Turbo`, segun declara el propio autor en las etiquetas y en el campo `base_model` de la model card. El adaptador se distribuye en formato diffusers y su unico proposito documentado es inyectar un estilo visual concreto, activado mediante la palabra clave `4x0style`.
+onineko es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Haruka041 en Hugging Face. No se trata de un modelo generativo completo, sino de un ajuste de bajo rango que se carga sobre un modelo base de difusion: concretamente `krea/Krea-2-Turbo`, segun declara el propio autor en las etiquetas y en el campo `base_model` de la model card. El adaptador se distribuye en formato diffusers y su unico proposito documentado es inyectar un estilo visual concreto, activado mediante la palabra clave `4x0style`.
 
 La relevancia de este tipo de publicaciones es practica: los LoRA permiten reutilizar un modelo base pesado y anadir estilos o conceptos especificos con un coste de almacenamiento minimo (el repositorio completo ocupa 0,2 GB) y sin necesidad de reentrenar la red completa. En el ecosistema de difusion, esto habilita flujos de trabajo donde un mismo modelo base sirve para multiples estilos intercambiables en tiempo de inferencia.
 
@@ -74,8 +74,8 @@ No se dispone de datos de otros adaptadores comparables en la informacion propor
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka041/onineko | LoRA de estilo sobre difusion | no disponible | no aplica | no disponible | HuggingFace, diffusers |
-| krea/Krea-2-Turbo | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible | HuggingFace |
+| Haruka041/onineko | LoRA de estilo sobre difusion | no disponible | no aplica | no disponible | Hugging Face, diffusers |
+| krea/Krea-2-Turbo | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible | Hugging Face |
 | Otros LoRA de estilo para el mismo base | Adaptador de bajo rango | no disponible | no aplica | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo, otros adaptadores de estilo entrenados sobre `krea/Krea-2-Turbo`) no puede realizarse con la informacion disponible, ya que no se aportan metricas ni se identifican modelos equivalentes.
@@ -95,7 +95,7 @@ La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/onineko
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/onineko
 - Archivos y versiones: https://huggingface.co/Haruka041/onineko/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

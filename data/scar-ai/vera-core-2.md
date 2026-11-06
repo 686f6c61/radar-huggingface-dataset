@@ -80,9 +80,9 @@ El autor indica que la ejecución de la suite pública respondió las 140.620 fi
 
 | Modelo | Parámetros | Contexto | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vera-core-2 | ~2B (1.883.395.910) | no disponible | 41,3 | Apache-2.0 | HuggingFace (scar-ai/vera-core-2) |
-| vera-core | ~2B | no disponible | 30,1 | no disponible | HuggingFace (scar-ai/vera-core) |
-| vera-spark | ~630M | no disponible | 19,6 | no disponible | HuggingFace (scar-ai/vera-spark) |
+| vera-core-2 | ~2B (1.883.395.910) | no disponible | 41,3 | Apache-2.0 | Hugging Face (scar-ai/vera-core-2) |
+| vera-core | ~2B | no disponible | 30,1 | no disponible | Hugging Face (scar-ai/vera-core) |
+| vera-spark | ~630M | no disponible | 19,6 | no disponible | Hugging Face (scar-ai/vera-spark) |
 | d3-nano | no disponible | no disponible | ~42,3 (a un punto de vera-core-2 según el autor) | no disponible | no disponible |
 
 La comparativa se limita a los modelos citados en la model card; no se dispone de datos de contexto, licencia ni disponibilidad de d3-nano, ni de alternativas externas de la misma categoría de modelo de decisión.
@@ -101,7 +101,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-core-2
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-core-2
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo predecesor vera-core: https://huggingface.co/scar-ai/vera-core
 - Modelo vera-spark: https://huggingface.co/scar-ai/vera-spark

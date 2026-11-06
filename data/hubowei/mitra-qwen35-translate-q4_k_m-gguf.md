@@ -4,7 +4,7 @@
 
 El modelo `hubowei/mitra-qwen35-translate-Q4_K_M-GGUF` es una cuantización en formato GGUF del modelo `buddhist-nlp/mitra-qwen35-translate`, diseñado específicamente para tareas de traducción de textos budistas y lenguas clásicas (tibetano, sánscrito, pali, chino clásico) junto con idiomas modernos (chino, japonés, inglés, coreano). Fue convertido mediante la herramienta `gguf-my-repo` de llama.cpp, lo que permite su ejecución eficiente en CPU y GPU con bajo consumo de memoria. El modelo base pertenece a la familia Qwen3.5, con aproximadamente 8.950 millones de parámetros, y está publicado bajo licencia Apache 2.0.
 
-Esta versión cuantizada con el esquema Q4_K_M reduce el tamaño del repositorio a 5.6 GB, facilitando su despliegue en entornos con recursos limitados. Aunque el modelo original no es accesible directamente en HuggingFace, esta conversión GGUF permite usar el modelo con herramientas como llama.cpp, Ollama o vLLM. Su relevancia radica en ofrecer una solución especializada para la traducción de textos religiosos y académicos, un nicho poco cubierto por los traductores genéricos.
+Esta versión cuantizada con el esquema Q4_K_M reduce el tamaño del repositorio a 5.6 GB, facilitando su despliegue en entornos con recursos limitados. Aunque el modelo original no es accesible directamente en Hugging Face, esta conversión GGUF permite usar el modelo con herramientas como llama.cpp, Ollama o vLLM. Su relevancia radica en ofrecer una solución especializada para la traducción de textos religiosos y académicos, un nicho poco cubierto por los traductores genéricos.
 
 ## Especificaciones técnicas
 
@@ -68,9 +68,9 @@ No se dispone de información sobre modelos comparables específicos para traduc
 
 ## Enlaces
 
-- Repositorio HuggingFace: [hubowei/mitra-qwen35-translate-Q4_K_M-GGUF](https://huggingface.co/hubowei/mitra-qwen35-translate-Q4_K_M-GGUF)
+- Repositorio Hugging Face: [hubowei/mitra-qwen35-translate-Q4_K_M-GGUF](https://huggingface.co/hubowei/mitra-qwen35-translate-Q4_K_M-GGUF)
 - Modelo base (sin cuantizar): [buddhist-nlp/mitra-qwen35-translate](https://huggingface.co/buddhist-nlp/mitra-qwen35-translate)
 - Herramienta de conversión GGUF-my-repo: [ggml-org/gguf-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)
 - Repositorio llama.cpp: [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
-- Colección Qwen3.5 en HuggingFace: [Qwen/Qwen3.5](https://huggingface.co/collections/Qwen/qwen35)
+- Colección Qwen3.5 en Hugging Face: [Qwen/Qwen3.5](https://huggingface.co/collections/Qwen/qwen35)
 - Proyecto qwen-translate-api (ejemplo de uso con Qwen3.5): [t04aiteam/qwen-translate-api](https://github.com/t04aiteam/qwen-translate-api)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/zephyr-bay-14` es un adaptador LoRA (librería PEFT) publicado por el usuario de HuggingFace `models4world` el 24 de agosto de 2026. Está diseñado para la generación de texto y se basa en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato safetensors.
+El modelo `models4world/zephyr-bay-14` es un adaptador LoRA (librería PEFT) publicado por el usuario de Hugging Face `models4world` el 24 de agosto de 2026. Está diseñado para la generación de texto y se basa en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública adicional. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato safetensors.
 
 La relevancia de este modelo es limitada en el momento de su publicación: no se ha publicado ninguna documentación técnica, ni especificaciones de arquitectura, ni datos de entrenamiento, ni resultados de evaluación. La model card está completamente vacía, con todos los campos marcados como "[More Information Needed]". Esto impide cualquier evaluación rigurosa de sus capacidades o rendimiento. Su existencia es anecdótica dentro del ecosistema de modelos open source, y cualquier uso en producción requeriría una investigación adicional exhaustiva por parte del desarrollador.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/models4world/zephyr-bay-14)
-- [Perfil del autor en HuggingFace](https://huggingface.co/models4world)
+- [Modelo en Hugging Face](https://huggingface.co/models4world/zephyr-bay-14)
+- [Perfil del autor en Hugging Face](https://huggingface.co/models4world)
 - [Lista de modelos del autor](https://huggingface.co/models4world/models)

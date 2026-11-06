@@ -21,7 +21,7 @@ El autor, subramanianno, publica este material con licencia MIT, lo que permite 
 
 ## Arquitectura y entrenamiento
 
-No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura de red neuronal. Se trata de un documento académico en Markdown que, según la información de HuggingFace, sigue el formato de los artículos CVPR y describe el tema de la robótica y el lenguaje visual. No se proporcionan detalles sobre datos de entrenamiento, técnicas de optimización ni innovaciones técnicas de modelos de IA.
+No aplica. Este repositorio no contiene un modelo entrenado ni una arquitectura de red neuronal. Se trata de un documento académico en Markdown que, según la información de Hugging Face, sigue el formato de los artículos CVPR y describe el tema de la robótica y el lenguaje visual. No se proporcionan detalles sobre datos de entrenamiento, técnicas de optimización ni innovaciones técnicas de modelos de IA.
 
 ## Capacidades
 
@@ -54,13 +54,13 @@ No disponible. No existen modelos comparables en este repositorio, ya que no se 
 
 - No es un modelo de IA: no puede realizar inferencias ni procesar datos.
 - El contenido del documento no ha sido verificado; se desconoce si el paper ha sido revisado por pares o validado experimentalmente.
-- No se proporciona el texto completo en la información de HuggingFace, solo se menciona que existe un archivo Markdown.
+- No se proporciona el texto completo en la información de Hugging Face, solo se menciona que existe un archivo Markdown.
 - La licencia MIT permite uso y modificación, pero no implica que el contenido sea técnicamente correcto o completo.
 - Los resultados de búsqueda web sobre papers similares no se han confirmado como el mismo documento.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/subramanianno/paper_021822677_robotics_vision_language
+- Repositorio de Hugging Face: https://huggingface.co/subramanianno/paper_021822677_robotics_vision_language
 - Paper relacionado (no confirmado como el mismo): [Characterizing VLA Models: Identifying the Action Generation Bottleneck](https://arxiv.org/pdf/2603.02271)
 - Paper relacionado (no confirmado): [RT-2: Vision-Language-Action Models Transfer Web Knowledge](https://arxiv.org/abs/2307.15818)
 - Blog de DeepMind sobre RT-2: https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/

@@ -32,7 +32,7 @@ El entrenamiento de adaptación con MobileForge no utiliza tareas escritas por h
 - Comprensión visual de GUI: identifica elementos como botones, campos de texto, listas y menús a partir de imágenes.
 - Adaptación a aplicaciones específicas: el proceso MobileForge permite ajustar el comportamiento del modelo a apps concretas sin anotaciones manuales.
 - Generación de texto instructivo: puede producir descripciones de acciones o justificaciones de sus decisiones, aunque no está documentado un modo de razonamiento explícito.
-- Compatibilidad con el ecosistema transformers: se carga con la interfaz estándar de HuggingFace, lo que facilita su integración en pipelines existentes.
+- Compatibilidad con el ecosistema transformers: se carga con la interfaz estándar de Hugging Face, lo que facilita su integración en pipelines existentes.
 
 ## Casos de uso
 
@@ -86,8 +86,8 @@ No se encontraron datos fiables de rendimiento de otros modelos en AndroidWorld 
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B-400tasks
-- Copia alternativa en HuggingFace: https://huggingface.co/lgy0404/ForgeOwl-8B-400tasks
+- Repositorio principal en Hugging Face: https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B-400tasks
+- Copia alternativa en Hugging Face: https://huggingface.co/lgy0404/ForgeOwl-8B-400tasks
 - Página del proyecto (anónima): https://mobileforge-anonymous.github.io/
 - Paper en arXiv: https://arxiv.org/abs/2606.19930v1
 - Código oficial en GitHub: https://github.com/kwai/MobileForge

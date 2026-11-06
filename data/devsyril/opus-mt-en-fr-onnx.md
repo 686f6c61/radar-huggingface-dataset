@@ -86,7 +86,7 @@ La comparativa se basa en el modelo fuente, ya que la conversión ONNX no introd
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo ONNX](https://huggingface.co/Devsyril/opus-mt-en-fr-onnx)
+- [Repositorio Hugging Face del modelo ONNX](https://huggingface.co/Devsyril/opus-mt-en-fr-onnx)
 - [Modelo fuente Helsinki-NLP/opus-mt-en-fr](https://huggingface.co/Helsinki-NLP/opus-mt-en-fr)
 - [Repositorio GitHub de Opus-MT](https://github.com/Helsinki-NLP/Opus-MT)
 - [Página de análisis del modelo en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/opus-mt-en-fr-helsinki-nlp)

@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros trackers de movimiento para Unitree G1 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cagataydev/protomotions-gtp-unitree-g1
+- Hugging Face: https://huggingface.co/cagataydev/protomotions-gtp-unitree-g1
 - Paper BeyondMimic: https://arxiv.org/abs/2408.07295
 - Repositorio ProtoMotions (NVIDIA GEAR): https://github.com/NVlabs/ProtoMotions
 - Modelo cinematico Kimodo-G1-RP-v1: https://huggingface.co/nvidia/Kimodo-G1-RP-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto con identificador `davidwdw/fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e` no es un modelo de lenguaje, sino un archivo versionado de flota (*fleet archive*) publicado en HuggingFace por el usuario `davidwdw`. Segun su propia model card, el paquete contiene "raw episode/clip JSON videos traces logs protocol, producer SHA256SUMS, summarized report", es decir, trazas de episodios o clips en JSON, videos en resolución completa, registros, un protocolo y un informe resumido. La receta canonica citada es `reports/2026-10-02_all_pending_eval_deployment` y el paquete se describe explicitamente como una instantanea (*snapshot*), no como un espejo vivo de un directorio.
+El artefacto con identificador `davidwdw/fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e` no es un modelo de lenguaje, sino un archivo versionado de flota (*fleet archive*) publicado en Hugging Face por el usuario `davidwdw`. Segun su propia model card, el paquete contiene "raw episode/clip JSON videos traces logs protocol, producer SHA256SUMS, summarized report", es decir, trazas de episodios o clips en JSON, videos en resolución completa, registros, un protocolo y un informe resumido. La receta canonica citada es `reports/2026-10-02_all_pending_eval_deployment` y el paquete se describe explicitamente como una instantanea (*snapshot*), no como un espejo vivo de un directorio.
 
 Por su nomenclatura (`fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0`) y su contenido declarado (episodios, clips, videos, trazas), todo apunta a un artefacto de evaluación reproducible de una campaña de recogida de datos o de validación de politicas, presumiblemente en el ambito de robotica o conduccion autonoma, aunque el autor no lo confirma en la informacion disponible. No se declara pipeline, licencia, idiomas, arquitectura ni parametros, y no hay pesos descargables.
 
@@ -72,7 +72,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun arte
 - Almacenamiento: aproximadamente 0,2 GB para el repositorio completo.
 - GPU recomendadas: no disponible. La decodificacion de los videos en resolucion completa puede acelerarse con cualquier GPU con soporte de codecs por hardware (por ejemplo, NVIDIA con NVENC/NVDEC), pero el autor no especifica resolucion, codec ni numero de clips.
 - Capacidad en GPU de consumo: no disponible; depende del volumen y resolucion del video, datos no publicados.
-- Opciones de despliegue: no aplica como modelo. El acceso se realiza mediante descarga directa del repositorio de HuggingFace o de la herramienta `huggingface_hub`.
+- Opciones de despliegue: no aplica como modelo. El acceso se realiza mediante descarga directa del repositorio de Hugging Face o de la herramienta `huggingface_hub`.
 - Latencia y throughput: no disponible.
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun arte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e
 - Perfil del autor: https://huggingface.co/davidwdw
 - Receta canonica citada en la model card: `reports/2026-10-02_all_pending_eval_deployment` (ruta interna; no se ha facilitado URL publica)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

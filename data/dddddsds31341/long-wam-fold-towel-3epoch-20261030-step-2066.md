@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM-Fold-Towel-3Epoch-Step-2066 | no disponible | P48 historial, chunk 32 | Plegado de toalla bimanual | other (base) | HuggingFace |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | World-action model general | según modelo base | HuggingFace |
+| Long-WAM-Fold-Towel-3Epoch-Step-2066 | no disponible | P48 historial, chunk 32 | Plegado de toalla bimanual | other (base) | Hugging Face |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | World-action model general | según modelo base | Hugging Face |
 | Otras políticas de imitación bimanual (p. ej. ACT, Diffusion Policy) | no disponible en esta ficha | no disponible | Manipulación diversa | variable | Repositorios públicos |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-2066
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-2066
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset de entrenamiento: https://huggingface.co/datasets/yuyingyinya/fold_towel
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM (sección de licencia)

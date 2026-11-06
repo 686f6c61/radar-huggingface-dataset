@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Todas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed3
 - Variante first-third: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft
 - Variante kld: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-kld
 - Despliegue en FriendliAI (variante sft): https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft

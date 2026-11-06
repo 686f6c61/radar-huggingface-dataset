@@ -80,7 +80,7 @@ La comparacion con alternativas reales no es significativa porque este repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Muse-Glimmer-30B-mic/blob/main/integrations/transformers/usage.md

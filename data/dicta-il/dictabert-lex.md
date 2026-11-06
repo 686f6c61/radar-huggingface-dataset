@@ -4,7 +4,7 @@
 
 DictaBERT-lex es un modelo de lenguaje basado en la arquitectura BERT, desarrollado por el equipo dicta-il (Dicta), especializado en la tarea de lematización del hebreo moderno. Forma parte de la suite DictaBERT, presentada en el artículo "MRL Parsing Without Tears: The Case of Hebrew" (arXiv:2403.06970, 2024, autores Shaltiel Shmidman, Avi Shmidman, Moshe Koppel y Reut Tsarfaty). Su función concreta es asociar cada palabra de un texto en hebreo con el lexema correspondiente dentro del vocabulario del modelo, devolviendo pares (forma superficial, lexema).
 
-El modelo cuenta con 184.474.880 parámetros y un repositorio de 1,5 GB, se distribuye en formato safetensors y se etiqueta con el pipeline de feature-extraction. No es un modelo generativo: incorpora código personalizado (custom_code) que expone un método `predict()` específico, por lo que su carga exige `trust_remote_code=True` en la librería transformers. Está publicado bajo licencia CC BY 4.0 y acumula 16.991 descargas en HuggingFace.
+El modelo cuenta con 184.474.880 parámetros y un repositorio de 1,5 GB, se distribuye en formato safetensors y se etiqueta con el pipeline de feature-extraction. No es un modelo generativo: incorpora código personalizado (custom_code) que expone un método `predict()` específico, por lo que su carga exige `trust_remote_code=True` en la librería transformers. Está publicado bajo licencia CC BY 4.0 y acumula 16.991 descargas en Hugging Face.
 
 Su relevancia actual radica en que el hebreo es una lengua morfológicamente muy rica, con abundante prefijación y sufijación, y la lematización es un paso previo habitual en pipelines de búsqueda, análisis morfológico, traducción automática y anotación de corpus. DictaBERT-lex resuelve esa tarea de forma puramente neuronal, sin depender de reglas ni de diccionarios externos, lo que simplifica su integración en producción.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicta-il/dictabert-lex | 184.474.880 | No disponible | Lematización de hebreo | CC BY 4.0 | HuggingFace (transformers, custom_code) |
-| dicta-il/dictabert-seg | No disponible | No disponible | Segmentación morfológica de hebreo | No disponible | HuggingFace, misma suite |
-| Modelos base de la colección DictaBERT | No disponible | No disponible | Diversas tareas de PNL en hebreo | No disponible | HuggingFace, misma colección |
-| Otros BERT para hebreo (por ejemplo, AlephBERT) | No disponible en la información proporcionada | No disponible | Representaciones y tareas de PNL en hebreo | No disponible | HuggingFace |
+| dicta-il/dictabert-lex | 184.474.880 | No disponible | Lematización de hebreo | CC BY 4.0 | Hugging Face (transformers, custom_code) |
+| dicta-il/dictabert-seg | No disponible | No disponible | Segmentación morfológica de hebreo | No disponible | Hugging Face, misma suite |
+| Modelos base de la colección DictaBERT | No disponible | No disponible | Diversas tareas de PNL en hebreo | No disponible | Hugging Face, misma colección |
+| Otros BERT para hebreo (por ejemplo, AlephBERT) | No disponible en la información proporcionada | No disponible | Representaciones y tareas de PNL en hebreo | No disponible | Hugging Face |
 
 La información disponible solo documenta con detalle el modelo objeto de esta ficha. Los modelos de la misma colección se citan en la model card como alternativas complementarias, pero no se aportan cifras comparativas de rendimiento ni de tamaño.
 
@@ -99,7 +99,7 @@ La información disponible solo documenta con detalle el modelo objeto de esta f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicta-il/dictabert-lex
+- Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-lex
 - Artículo asociado: https://arxiv.org/abs/2403.06970
 - Colección DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
 - Herramienta complementaria de segmentación: https://huggingface.co/dicta-il/dictabert-seg

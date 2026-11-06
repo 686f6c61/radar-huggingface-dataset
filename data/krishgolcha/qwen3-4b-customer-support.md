@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krishgolcha/Qwen3-4B-Customer-Support
+- Repositorio en Hugging Face: https://huggingface.co/krishgolcha/Qwen3-4B-Customer-Support
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de origen: https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

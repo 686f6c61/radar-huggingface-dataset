@@ -76,7 +76,7 @@ Nota: los datos de la tabla para modelos alternativos provienen de conocimiento 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orca-zhang/multilingual-e5-small-int8
+- Repositorio Hugging Face: https://huggingface.co/orca-zhang/multilingual-e5-small-int8
 - Modelo original (intfloat/multilingual-e5-small): https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio GitHub de P1-AI con el modelo original: https://github.com/P1-AI/multilingual-e5-small
 - Pagina en ModelScope: https://www.modelscope.cn/models/intfloat/multilingual-e5-small

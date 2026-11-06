@@ -110,7 +110,7 @@ Frente a modelos de otras familias del mismo rango de tamano (por ejemplo Llama,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-6p34-Q4_K-recovered-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-6p34-Q4_K-recovered-GGUF
 - Modelo base directo (Q8_0): https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q8_0-GGUF
 - Modelo original de la familia: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - La busqueda web realizada no devolvio enlaces relevantes al modelo (los resultados obtenidos corresponden a sitios genericos de efemerides historicas y no guardan relacion con el artefacto).

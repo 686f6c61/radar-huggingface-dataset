@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una coleccion de cuantizaciones estaticas en formato GGUF del modelo Dongfangshuo-Qwen3.8-27B-NSFW, publicadas por el usuario mradermacher. Se trata, por tanto, de una redistribucion optimizada para inferencia local de un modelo de 27.320.697.856 parametros desarrollado originalmente por el usuario dongfangshuo en HuggingFace, cuyo pipeline, licencia e idiomas no se documentan en la informacion disponible. El repo ocupa 28,2 GB e incluye trece variantes de cuantizacion (desde Q2_K hasta F16), lo que permite desplegar el modelo en un rango amplio de hardware.
+Este repositorio contiene una coleccion de cuantizaciones estaticas en formato GGUF del modelo Dongfangshuo-Qwen3.8-27B-NSFW, publicadas por el usuario mradermacher. Se trata, por tanto, de una redistribucion optimizada para inferencia local de un modelo de 27.320.697.856 parametros desarrollado originalmente por el usuario dongfangshuo en Hugging Face, cuyo pipeline, licencia e idiomas no se documentan en la informacion disponible. El repo ocupa 28,2 GB e incluye trece variantes de cuantizacion (desde Q2_K hasta F16), lo que permite desplegar el modelo en un rango amplio de hardware.
 
 El modelo base lleva las etiquetas "conversational" y "not-for-all-audiences", y su nombre incluye el sufijo NSFW, lo que indica que esta ajustado o autorizado para generar contenido para adultos. La denominacion "Qwen3.8-27B" sugiere una base de la familia Qwen, aunque la informacion proporcionada no confirma la arquitectura subyacente ni los datos de entrenamiento. No se han publicado resultados de benchmarks, ficha tecnica de contexto, ni detalles sobre procesos de alineacion.
 
@@ -39,7 +39,7 @@ El proceso de cuantizacion si esta descrito en lo esencial: mradermacher ha gene
 - Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la informacion proporcionada).
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Vision, audio u otras modalidades: no disponible; el repositorio solo contiene pesos de lenguaje en GGUF.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -104,7 +104,7 @@ No se dispone de informacion sobre modelos comparables en el material proporcion
 
 ## Enlaces
 
-- Repositorio de cuantizaciones (HuggingFace): https://huggingface.co/mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
+- Repositorio de cuantizaciones (Hugging Face): https://huggingface.co/mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
 - Modelo base: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Perfil del autor del modelo base: https://huggingface.co/dongfangshuo

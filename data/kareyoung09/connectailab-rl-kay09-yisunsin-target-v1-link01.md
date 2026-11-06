@@ -81,6 +81,6 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-target-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales.

@@ -81,7 +81,7 @@ Los datos de los modelos comparativos provienen de su documentación pública y 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | RoHe-Coder-Q4_K_M (esta ficha) | 3,4 B totales (~800 M activos, no confirmado) | no disponible | MQL5 + ML para MetaTrader 5 | Apache 2.0 | GGUF Q4_K_M, repo de 2,1 GB, 0 descargas |
-| google/granite-3.0-3b-a800m-instruct (base declarado) | 3,4 B totales / 800 M activos | no disponible en esta ficha | Propósito general, instruction-tuned | Apache 2.0 | Pesos originales en HuggingFace |
+| google/granite-3.0-3b-a800m-instruct (base declarado) | 3,4 B totales / 800 M activos | no disponible en esta ficha | Propósito general, instruction-tuned | Apache 2.0 | Pesos originales en Hugging Face |
 | Qwen2.5-Coder-3B-Instruct | ~3,1 B | 32 768 tokens nativos | Código generalista multilingüe | Apache 2.0 | Amplia difusión, múltiples cuantizaciones |
 | Llama-3.2-3B-Instruct | ~3,2 B | 128 000 tokens | Propósito general, instruction-tuned | Licencia comunitaria Llama 3.2 | Amplia difusión, múltiples cuantizaciones |
 
@@ -103,7 +103,7 @@ La diferencia clave no es de tamaño ni de contexto, sino de especialización: f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lamancio/RoHe-Coder-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/Lamancio/RoHe-Coder-Q4_K_M
 - Modelo base declarado: https://huggingface.co/google/granite-3.0-3b-a800m-instruct (no confirmado por el autor)
 - Unsloth (framework de ajuste citado): el enlace de la model card apunta genéricamente a https://github.com, sin URL específica del proyecto
 - Paper, blog o demo del ajuste: no disponibles en la información proporcionada

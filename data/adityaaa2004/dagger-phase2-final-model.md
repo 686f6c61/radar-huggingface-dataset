@@ -85,4 +85,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Resultados completos: https://github.com/RohanBanerjee88/dagger/tree/main/results/phase2/dod_final
 - Documento de diseño (CLAUDE.md): https://github.com/RohanBanerjee88/dagger/blob/main/CLAUDE.md
 - Aviso de dependencias (NOTICE): https://github.com/RohanBanerjee88/dagger/blob/main/NOTICE
-- Modelo en HuggingFace: https://huggingface.co/AdityaAA2004/dagger-phase2-final-model
+- Modelo en Hugging Face: https://huggingface.co/AdityaAA2004/dagger-phase2-final-model

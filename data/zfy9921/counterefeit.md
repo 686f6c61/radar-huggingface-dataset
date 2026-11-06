@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Counterefeit es un repositorio de modelo publicado en HuggingFace por el usuario zfy9921 bajo licencia Apache 2.0. La model card asociada no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado.
+Counterefeit es un repositorio de modelo publicado en Hugging Face por el usuario zfy9921 bajo licencia Apache 2.0. La model card asociada no contiene mas informacion que la declaracion de licencia: no se especifica arquitectura, tamano, contexto, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline asignado.
 
 Por la informacion disponible no es posible determinar que problema resuelve ni por que seria relevante. El nombre sugiere un posible modelo de generacion de imagenes (la palabra "counterfeit" alude a la generacion de imagenes falsas o sinteticas), pero se trata de una inferencia no confirmada por el autor y que no debe tomarse como dato tecnico.
 
@@ -39,7 +39,7 @@ No disponible. La model card unicamente declara la licencia Apache 2.0 y no incl
 No es posible recomendar casos de uso concretos sin informacion sobre la arquitectura, el tamano, las capacidades y los requisitos de despliegue del modelo. Los escenarios que se enumeran a continuacion son genericos y quedan condicionados a que el autor publique documentacion tecnica que los respalde:
 
 - Evaluacion experimental en laboratorio: solo tiene sentido si se dispone de los pesos y de la configuracion, extremo que no se puede verificar con los datos actuales.
-- Pruebas de integracion en pipelines de HuggingFace: requeriria conocer el pipeline declarado, que actualmente figura como no disponible.
+- Pruebas de integracion en pipelines de Hugging Face: requeriria conocer el pipeline declarado, que actualmente figura como no disponible.
 - Analisis de licencias: la unica informacion fiable es la licencia Apache 2.0, que permitiria uso comercial si el contenido real del repositorio se corresponde con lo declarado.
 - Estudio de casos de modelos con documentacion incompleta: el repositorio puede servir como ejemplo de publicacion sin model card sustantiva.
 - Auditoria de seguridad de artefactos: antes de cualquier uso habria que inspeccionar los ficheros del repositorio en busca de pesos, scripts o dependencias.
@@ -63,7 +63,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Counterefeit (zfy9921) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Counterefeit (zfy9921) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zfy9921/Counterefeit
+- Repositorio en Hugging Face: https://huggingface.co/zfy9921/Counterefeit
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

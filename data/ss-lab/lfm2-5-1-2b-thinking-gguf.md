@@ -88,6 +88,6 @@ La comparación con Qwen2.5-1.5B-Instruct y Llama 3.2 1B Instruct se ofrece como
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/ss-lab/LFM2.5-1.2B-Thinking-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/ss-lab/LFM2.5-1.2B-Thinking-GGUF
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - llama.cpp (herramienta de conversión): https://github.com/ggerganov/llama.cpp

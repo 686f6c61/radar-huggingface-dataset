@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sulaimank/vibevoice-lora-enspa-miami` es un adaptador LoRA publicado en HuggingFace por el usuario `sulaimank`, entrenado sobre el modelo base `microsoft/VibeVoice-ASR`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 1,0 GB y los pesos se distribuyen en formato safetensors, con la librería `peft` como dependencia de carga declarada.
+`sulaimank/vibevoice-lora-enspa-miami` es un adaptador LoRA publicado en Hugging Face por el usuario `sulaimank`, entrenado sobre el modelo base `microsoft/VibeVoice-ASR`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 1,0 GB y los pesos se distribuyen en formato safetensors, con la librería `peft` como dependencia de carga declarada.
 
-La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card es la plantilla por defecto de HuggingFace sin rellenar, de modo que el autor no documenta datos de entrenamiento, idioma objetivo, licencia ni caso de uso. El identificador del repositorio sugiere una adaptación orientada al español y, por el sufijo "miami", posiblemente a variantes del español de Estados Unidos, pero esto es una inferencia a partir del nombre y no está confirmado en ninguna fuente oficial. El pipeline declarado es `text-generation`, aunque el modelo base pertenece a la familia VibeVoice-ASR, orientada a reconocimiento de voz.
+La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card es la plantilla por defecto de Hugging Face sin rellenar, de modo que el autor no documenta datos de entrenamiento, idioma objetivo, licencia ni caso de uso. El identificador del repositorio sugiere una adaptación orientada al español y, por el sufijo "miami", posiblemente a variantes del español de Estados Unidos, pero esto es una inferencia a partir del nombre y no está confirmado en ninguna fuente oficial. El pipeline declarado es `text-generation`, aunque el modelo base pertenece a la familia VibeVoice-ASR, orientada a reconocimiento de voz.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y no existe paper, blog ni demo asociados. Cualquier evaluación seria de su calidad requiere reproducir la carga del adaptador sobre el modelo base y validar con datos propios.
 
@@ -21,7 +21,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y 
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
-Datos adicionales del repositorio: tamano del repo 1,0 GB; version de PEFT declarada 0.20.0; creado el 2026-09-11 y actualizado el 2026-09-11 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: tamano del repo 1,0 GB; version de PEFT declarada 0.20.0; creado el 2026-09-11 y actualizado el 2026-09-11 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -70,8 +70,8 @@ La model card incluye la seccion de evaluacion sin rellenar (`[More Information 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sulaimank/vibevoice-lora-enspa-miami` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador LoRA; documentacion vacia |
-| `microsoft/VibeVoice-ASR` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo completo sobre el que se aplica el adaptador |
+| `sulaimank/vibevoice-lora-enspa-miami` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador LoRA; documentacion vacia |
+| `microsoft/VibeVoice-ASR` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo completo sobre el que se aplica el adaptador |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado en la busqueda web modelos comparables publicados |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ La model card incluye la seccion de evaluacion sin rellenar (`[More Information 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulaimank/vibevoice-lora-enspa-miami
+- Modelo en Hugging Face: https://huggingface.co/sulaimank/vibevoice-lora-enspa-miami
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR
 - Paper: no disponible
 - Repositorio de codigo: no disponible

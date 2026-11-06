@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de recomendación musica
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/asharrm/juke-1.7b-dev-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/asharrm/juke-1.7b-dev-GGUF
 - Modelo base: https://huggingface.co/asharrm/juke-1.7b-dev
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

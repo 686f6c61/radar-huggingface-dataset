@@ -90,8 +90,8 @@ La comparativa muestra que este modelo ofrece el mismo rendimiento que el base e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sakamakismile/llm-jp-4-33b-thinking-NVFP4
+- Repositorio Hugging Face del modelo: https://huggingface.co/sakamakismile/llm-jp-4-33b-thinking-NVFP4
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
 - Cookbook oficial de llm-jp (parser de razonamiento): https://github.com/llm-jp/llm-jp-4-cookbook
 - Version MoE cuantizada del mismo autor: https://huggingface.co/sakamakismile/llm-jp-4-32b-a3b-thinking-NVFP4
-- Perfil del autor en HuggingFace: https://huggingface.co/sakamakismile
+- Perfil del autor en Hugging Face: https://huggingface.co/sakamakismile

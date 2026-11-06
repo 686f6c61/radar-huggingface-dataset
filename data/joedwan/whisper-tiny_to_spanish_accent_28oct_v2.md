@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-tiny` publicado por el usuario JoeDwan en HuggingFace. El objetivo declarado del autor es adaptar el modelo base, entrenado originalmente por OpenAI sobre un corpus masivo y multilingüe, a un conjunto de datos propio denominado "Spanish English" para mejorar el reconocimiento de acentos del español. El modelo se distribuye bajo licencia Apache 2.0 y con pesos en formato safetensors, lo que facilita su integración en pipelines existentes de `transformers`.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-tiny` publicado por el usuario JoeDwan en Hugging Face. El objetivo declarado del autor es adaptar el modelo base, entrenado originalmente por OpenAI sobre un corpus masivo y multilingüe, a un conjunto de datos propio denominado "Spanish English" para mejorar el reconocimiento de acentos del español. El modelo se distribuye bajo licencia Apache 2.0 y con pesos en formato safetensors, lo que facilita su integración en pipelines existentes de `transformers`.
 
 Se trata de un modelo encoder-decoder de tipo transformer con 37.760.640 parámetros, la variante más pequeña de la familia Whisper. Su relevancia práctica es limitada pero específica: ofrece una alternativa ligera (3,2 GB de repositorio, aunque los pesos reales ocupan aproximadamente 150 MB en fp32) para tareas de transcripción en entornos con recursos muy restringidos, como dispositivos de borde o prototipos rápidos. No obstante, la información publicada por el autor es escasa: la model card está generada automáticamente y contiene secciones sin completar.
 
@@ -25,7 +25,7 @@ El modelo declara un WER de 11,29 sobre el split de test del dataset "Spanish En
 
 El modelo hereda la arquitectura Whisper original: un encoder transformer que procesa espectrogramas Mel de 80 canales y un decoder autorregresivo que genera tokens de texto. Whisper-tiny consta de 4 capas en encoder y 4 en decoder, con una dimensión oculta de 384 y 6 cabezas de atención. El modelo base fue entrenado por OpenAI con 680.000 horas de audio supervisado débilmente y 117.000 horas de audio etiquetado, pero el ajuste fino aquí presentado solo modifica los pesos sobre un dataset propio no documentado.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace durante 2.000 pasos (aproximadamente 1,95 épocas), con un batch size de 2, learning rate de 1e-5, optimizador AdamW con betas (0,9, 0,999), scheduler lineal con 500 pasos de warmup y semilla 42. La pérdida de validación final fue de 0,2460 y el WER de 11,2935. No se documenta el número de tokens de audio, la composición del dataset "Spanish English" ni si hubo técnicas de aumento de datos o regularización adicionales. No se menciona RLHF, DPO ni innovaciones técnicas destacables más allá del ajuste supervisado estándar.
+El entrenamiento se realizó con el `Trainer` de Hugging Face durante 2.000 pasos (aproximadamente 1,95 épocas), con un batch size de 2, learning rate de 1e-5, optimizador AdamW con betas (0,9, 0,999), scheduler lineal con 500 pasos de warmup y semilla 42. La pérdida de validación final fue de 0,2460 y el WER de 11,2935. No se documenta el número de tokens de audio, la composición del dataset "Spanish English" ni si hubo técnicas de aumento de datos o regularización adicionales. No se menciona RLHF, DPO ni innovaciones técnicas destacables más allá del ajuste supervisado estándar.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La comparación directa con el modelo base es difícil porque el autor no report
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct_v2
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct_v2
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `goal612/dendritex-stages-v3-p99` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario goal612 en HuggingFace. Su arquitectura se basa en `qwen3_5_moe`, lo que indica que pertenece a la familia de modelos Qwen 3.5 con arquitectura de mezcla de expertos (MoE). Con 35.951.822.704 parámetros totales, se posiciona en la gama de modelos grandes, aunque no se dispone de información sobre el número de parámetros activos ni sobre su ventana de contexto.
+El modelo `goal612/dendritex-stages-v3-p99` es un modelo multimodal de tipo imagen-texto a texto, desarrollado por el usuario goal612 en Hugging Face. Su arquitectura se basa en `qwen3_5_moe`, lo que indica que pertenece a la familia de modelos Qwen 3.5 con arquitectura de mezcla de expertos (MoE). Con 35.951.822.704 parámetros totales, se posiciona en la gama de modelos grandes, aunque no se dispone de información sobre el número de parámetros activos ni sobre su ventana de contexto.
 
-El modelo está diseñado para tareas conversacionales que involucran tanto imágenes como texto, lo que lo hace potencialmente útil para aplicaciones de visión por computador y procesamiento de lenguaje natural combinados. Sin embargo, su acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad inmediata. La licencia Apache 2.0 permite uso comercial, pero la falta de documentación pública y de resultados de evaluación dificulta una valoración completa de sus capacidades.
+El modelo está diseñado para tareas conversacionales que involucran tanto imágenes como texto, lo que lo hace potencialmente útil para aplicaciones de visión por computador y procesamiento de lenguaje natural combinados. Sin embargo, su acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad inmediata. La licencia Apache 2.0 permite uso comercial, pero la falta de documentación pública y de resultados de evaluación dificulta una valoración completa de sus capacidades.
 
 A día de hoy, el modelo no cuenta con descargas ni likes, y no se ha publicado ninguna tarjeta de modelo (model card) que detalle su entrenamiento, rendimiento o limitaciones. Esto lo convierte en una propuesta experimental que requiere un análisis más profundo por parte de la comunidad antes de considerarlo para producción.
 
@@ -31,7 +31,7 @@ El pipeline `image-text-to-text` indica que el modelo es multimodal, capaz de pr
 
 - Procesamiento multimodal: acepta imágenes y texto como entrada, generando respuestas de texto (según el pipeline `image-text-to-text`).
 - Conversación: el tag `conversational` sugiere que está optimizado para diálogos multi-turno, aunque no se especifican detalles.
-- Integración con Transformers: compatible con la librería `transformers` de HuggingFace, lo que facilita su uso en entornos estándar.
+- Integración con Transformers: compatible con la librería `transformers` de Hugging Face, lo que facilita su uso en entornos estándar.
 - No se dispone de información sobre capacidades de tool calling, razonamiento multi-paso, generación de código o soporte de agentes.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con pesos en BF16, el modelo requiere aproximadamente 72 GB de memoria solo para los pesos. Para inferencia con overhead adicional (KV cache, activaciones), se recomienda al menos 80 GB de VRAM.
 - GPU recomendadas: una NVIDIA A100 (80 GB) o H100 (80 GB) sería necesaria para ejecutar el modelo en BF16 sin cuantización. En configuraciones multi-GPU, se podría distribuir con Tensor Parallelism.
 - En consumer GPU: no es viable en GPUs de 24 GB (como RTX 4090) sin cuantización. Si se aplicara cuantización 4-bit (no disponible actualmente), podría caber en 24 GB, pero no se ofrecen esos formatos.
-- Opciones de despliegue: al ser compatible con Transformers, se puede servir con vLLM, TGI o HuggingFace Inference Endpoints, siempre que se disponga de hardware suficiente. No hay soporte nativo para llama.cpp u Ollama al no existir archivos GGUF.
+- Opciones de despliegue: al ser compatible con Transformers, se puede servir con vLLM, TGI o Hugging Face Inference Endpoints, siempre que se disponga de hardware suficiente. No hay soporte nativo para llama.cpp u Ollama al no existir archivos GGUF.
 - Latencia y throughput: no disponibles, ya que no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere solicitud y aprobación en HuggingFace antes de su descarga.
+- Acceso restringido: el modelo es gated, por lo que requiere solicitud y aprobación en Hugging Face antes de su descarga.
 - Falta de documentación: no hay model card, ni detalles de entrenamiento, ni ejemplos de uso. Esto impide conocer sus limitaciones específicas.
 - Sesgos y alucinaciones: desconocidos, pero al ser un modelo no evaluado, existe un riesgo potencial de generar contenido inexacto o sesgado.
 - Idiomas: no se especifican los idiomas soportados; podría tener un rendimiento desigual en lenguas distintas del inglés o chino.
@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/goal612/dendritex-stages-v3-p99
+- Repositorio en Hugging Face: https://huggingface.co/goal612/dendritex-stages-v3-p99
 - Organización Dendritex (relacionada por nombre, aunque no confirmada): https://huggingface.co/Dendritex
 - Modelo similar de Dendritex (sin relación directa): https://huggingface.co/Dendritex/albedo-qwen3.6-35b-sft3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Xiaoweicake/llama32-1b-lora-sft-lab10-adapter` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Llama 3.2 1B, publicado por el usuario Xiaoweicake en HuggingFace. El nombre del repositorio indica que se trata de un ajuste fino supervisado (SFT, por sus siglas en inglés) sobre el modelo de 1B de la familia Llama 3.2, posiblemente correspondiente a un experimento de laboratorio (lab10). Su propósito declarado es reutilizar un modelo pequeño y ligero para tareas específicas mediante un adaptador de bajo coste computacional y de almacenamiento, en lugar de entrenar un modelo completo desde cero.
+`Xiaoweicake/llama32-1b-lora-sft-lab10-adapter` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Llama 3.2 1B, publicado por el usuario Xiaoweicake en Hugging Face. El nombre del repositorio indica que se trata de un ajuste fino supervisado (SFT, por sus siglas en inglés) sobre el modelo de 1B de la familia Llama 3.2, posiblemente correspondiente a un experimento de laboratorio (lab10). Su propósito declarado es reutilizar un modelo pequeño y ligero para tareas específicas mediante un adaptador de bajo coste computacional y de almacenamiento, en lugar de entrenar un modelo completo desde cero.
 
 El adaptador no es un modelo autónomo: requiere cargarse sobre el modelo base Llama 3.2 1B para funcionar. La información pública disponible en el repositorio es extremadamente limitada: no se documentan los datos de entrenamiento, el número exacto de parámetros entrenables, la licencia del adaptador ni sus capacidades evaluadas. El repositorio tiene un tamaño de 0.1 GB y contiene pesos en formato safetensors, tal como indican las etiquetas. La relevancia actual de este tipo de adaptadores radica en su eficiencia para personalizar modelos de lenguaje en entornos con pocos recursos, aunque en este caso la falta de documentación y de benchmarks impide validar su utilidad práctica.
 
@@ -59,7 +59,7 @@ Los siguientes requisitos son estimaciones para el modelo base Llama 3.2 1B, ya 
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento suficientes para una comparativa significativa. El unico modelo comparable encontrado en HuggingFace es el siguiente, del mismo tipo y aparentemente con el mismo nombre:
+No se dispone de datos de rendimiento suficientes para una comparativa significativa. El unico modelo comparable encontrado en Hugging Face es el siguiente, del mismo tipo y aparentemente con el mismo nombre:
 
 | Modelo | Autor | Tamano del repo | Datos de entrenamiento | Benchmarks |
 |---|---|---|---|---|
@@ -79,5 +79,5 @@ No se puede establecer una comparativa de rendimiento entre ambos, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xiaoweicake/llama32-1b-lora-sft-lab10-adapter
+- Modelo en Hugging Face: https://huggingface.co/Xiaoweicake/llama32-1b-lora-sft-lab10-adapter
 - Modelo similar (mismo nombre, otro autor): https://huggingface.co/Liwei1020/llama32-1b-lora-sft-lab10-adapter

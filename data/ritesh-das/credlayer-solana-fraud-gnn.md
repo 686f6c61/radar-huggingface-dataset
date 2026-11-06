@@ -4,7 +4,7 @@
 
 CredLayer Solana Fraud GNN es un modelo de clasificación basado en redes neuronales de grafos (GNN) desarrollado por Ritesh Das (también conocido como Dyslex7c) como parte del proyecto CredLayer, un protocolo de reputación descentralizada para Web3 en la cadena Solana. El modelo combina arquitecturas GraphSAGE y GATv2 para detectar actividades fraudulentas en ecosistemas DeFi, como pools de liquidez maliciosos, tokens rug-pull y flujos de billeteras sospechosos.
 
-El modelo fue entrenado con datos etiquetados de Solana, incluyendo el dataset SolRPDS (con más de 62.000 pools sospechosos y 22.000 tokens rug-pull derivados de 3.690 millones de transacciones), el dataset de Kaggle sobre Solana y datos de Solarchive. Aunque el pipeline en HuggingFace se indica como "tabular-classification", su naturaleza es puramente de grafo, procesando nodos y aristas para emitir una clasificación binaria de fraude.
+El modelo fue entrenado con datos etiquetados de Solana, incluyendo el dataset SolRPDS (con más de 62.000 pools sospechosos y 22.000 tokens rug-pull derivados de 3.690 millones de transacciones), el dataset de Kaggle sobre Solana y datos de Solarchive. Aunque el pipeline en Hugging Face se indica como "tabular-classification", su naturaleza es puramente de grafo, procesando nodos y aristas para emitir una clasificación binaria de fraude.
 
 La relevancia de este modelo radica en su enfoque específico para Solana, una de las cadenas con mayor actividad de DeFi y también con alta incidencia de estafas. Su licencia MIT permite uso comercial sin restricciones, aunque el repositorio no muestra descargas ni interacción, lo que sugiere que es un proyecto en fase temprana o de demostración.
 
@@ -90,7 +90,7 @@ No se ha encontrado información sobre modelos comparables en el mismo dominio (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritesh-das/credlayer-solana-fraud-gnn
+- Hugging Face: https://huggingface.co/ritesh-das/credlayer-solana-fraud-gnn
 - GitHub del autor: https://github.com/Dyslex7c
 - Repositorio del proyecto Cred-Layer: https://github.com/Zakariasisu5/Cred-Layer
 - Web del proyecto CredLayer: https://credlayer1.vercel.app/

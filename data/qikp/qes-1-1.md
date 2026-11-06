@@ -66,9 +66,9 @@ El autor indica, como unica referencia de rendimiento, que durante pruebas inter
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qikp/qes-1.1 | 14,35 M | 512 | Puntuacion educativa 0-1 | CC0-1.0 | HuggingFace |
-| HuggingFaceFW/fineweb-edu-classifier | no disponible | no disponible | Puntuacion educativa (referencia) | no disponible | HuggingFace |
-| huawei-noah/TinyBERT_General_4L_312D | ~14,5 M | 512 | Modelo base preentrenado/destilado | no disponible | HuggingFace |
+| qikp/qes-1.1 | 14,35 M | 512 | Puntuacion educativa 0-1 | CC0-1.0 | Hugging Face |
+| HuggingFaceFW/fineweb-edu-classifier | no disponible | no disponible | Puntuacion educativa (referencia) | no disponible | Hugging Face |
+| huawei-noah/TinyBERT_General_4L_312D | ~14,5 M | 512 | Modelo base preentrenado/destilado | no disponible | Hugging Face |
 
 QES 1.1 se define explicitamente como equivalente funcional al `fineweb-edu-classifier` pero entrenado sobre un subconjunto de sus datos y con salida reescalada a 0-1. No se dispone de comparativas cuantitativas de rendimiento entre ambos en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ QES 1.1 se define explicitamente como equivalente funcional al `fineweb-edu-clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikp/qes-1.1
+- Modelo en Hugging Face: https://huggingface.co/qikp/qes-1.1
 - Discusiones: https://huggingface.co/qikp/qes/discussions
 - Perfil del autor: https://huggingface.co/qikp/models
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WARMIND-1017-FLARE-gb202 es un modelo publicado en HuggingFace por el usuario jcartu, con un total de 42.330.137 parametros segun los metadatos de sus ficheros safetensors. A pesar de su reducido numero de parametros, el repositorio ocupa 523,9 GB, lo que sugiere la presencia de pesos almacenados en formato de 8 bits junto con otros artefactos de gran tamano (posiblemente checkpoints intermedios, datos auxiliares o ficheros duplicados). El acceso esta restringido: es necesario aceptar condiciones en la plataforma para poder descargarlo.
+WARMIND-1017-FLARE-gb202 es un modelo publicado en Hugging Face por el usuario jcartu, con un total de 42.330.137 parametros segun los metadatos de sus ficheros safetensors. A pesar de su reducido numero de parametros, el repositorio ocupa 523,9 GB, lo que sugiere la presencia de pesos almacenados en formato de 8 bits junto con otros artefactos de gran tamano (posiblemente checkpoints intermedios, datos auxiliares o ficheros duplicados). El acceso esta restringido: es necesario aceptar condiciones en la plataforma para poder descargarlo.
 
 La informacion publica disponible es extremadamente limitada. No se especifica la arquitectura, el pipeline, la licencia, los idiomas soportados ni los datos de entrenamiento. El nombre del repositorio (WARMIND-1017-FLARE-gb202) no se corresponde con ninguna familia de modelos conocida, y el autor no ha publicado documentacion tecnica asociada en la informacion proporcionada.
 
-Por tanto, esta ficha se limita a reflejar los datos verificables de los metadatos de HuggingFace y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso al repositorio y a su documentacion, que no estan disponibles en el momento de redactar esta ficha.
+Por tanto, esta ficha se limita a reflejar los datos verificables de los metadatos de Hugging Face y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso al repositorio y a su documentacion, que no estan disponibles en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No disponible. No se conocen modelos comparables de la misma familia o categoria
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Licencia no especificada: no puede asumirse uso comercial permitido.
 - Idiomas no declarados: no puede garantizarse cobertura multilingue.
 - Ausencia total de documentacion tecnica: no hay model card, paper ni blog asociado en la informacion disponible.
@@ -81,5 +81,5 @@ No disponible. No se conocen modelos comparables de la misma familia o categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jcartu/WARMIND-1017-FLARE-gb202
+- Hugging Face: https://huggingface.co/jcartu/WARMIND-1017-FLARE-gb202
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

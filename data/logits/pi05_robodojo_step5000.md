@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `logits/pi05_robodojo_step5000` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en π₀.₅ (Pi05) de Physical Intelligence, entrenado como baseline sobre el benchmark RoboDojo y exportado en el paso 5000 de entrenamiento. El autor, identificado como "logits", lo ha publicado en HuggingFace utilizando la librería LeRobot, lo que facilita su integración en pipelines de robótica existentes.
+El modelo `logits/pi05_robodojo_step5000` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en π₀.₅ (Pi05) de Physical Intelligence, entrenado como baseline sobre el benchmark RoboDojo y exportado en el paso 5000 de entrenamiento. El autor, identificado como "logits", lo ha publicado en Hugging Face utilizando la librería LeRobot, lo que facilita su integración en pipelines de robótica existentes.
 
 Este modelo pertenece a la familia de políticas robóticas que combinan percepción visual, comprensión del lenguaje y generación de acciones para control end-to-end de robots. Su relevancia radica en que sirve como punto de referencia (baseline) para evaluar el rendimiento de otros métodos en el benchmark RoboDojo, un entorno de evaluación neutral y académico para tareas de manipulación robótica. Con aproximadamente 4,93 mil millones de parámetros, se sitúa en el rango de los modelos VLA de tamaño medio, aunque no se dispone de detalles sobre su arquitectura interna específica más allá de la referencia a π₀.₅.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| logits/pi05_robodojo_step5000 | 4,93B | no disponible | VLA (π₀.₅) | no disponible | HuggingFace |
-| lerobot/pi05_base | no disponible | no disponible | VLA (π₀.₅) | no disponible | HuggingFace |
-| OpenVLA (openvla/openvla-7b) | 7B | no disponible | VLA (Prismatic) | MIT | HuggingFace |
+| logits/pi05_robodojo_step5000 | 4,93B | no disponible | VLA (π₀.₅) | no disponible | Hugging Face |
+| lerobot/pi05_base | no disponible | no disponible | VLA (π₀.₅) | no disponible | Hugging Face |
+| OpenVLA (openvla/openvla-7b) | 7B | no disponible | VLA (Prismatic) | MIT | Hugging Face |
 | π₀ (Physical Intelligence) | no publicado | no disponible | VLA | no disponible | No público |
 
 Nota: los datos de OpenVLA y π₀ provienen de conocimiento general, no de la información proporcionada. No se dispone de comparativas de rendimiento entre estos modelos.
@@ -73,7 +73,7 @@ Nota: los datos de OpenVLA y π₀ provienen de conocimiento general, no de la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logits/pi05_robodojo_step5000
+- Hugging Face: https://huggingface.co/logits/pi05_robodojo_step5000
 - Repositorio RoboDojo: https://github.com/robodojo-benchmark/RoboDojo
 - Modelo base π₀.₅ en LeRobot: https://huggingface.co/lerobot/pi05_base
 - Documentación de π₀.₅ en LeRobot: https://huggingface.co/docs/lerobot/pi05

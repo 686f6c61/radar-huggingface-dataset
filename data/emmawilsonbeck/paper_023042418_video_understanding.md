@@ -54,5 +54,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: [emmawilsonbeck/paper_023042418_video_understanding](https://huggingface.co/emmawilsonbeck/paper_023042418_video_understanding)
+- Repositorio Hugging Face: [emmawilsonbeck/paper_023042418_video_understanding](https://huggingface.co/emmawilsonbeck/paper_023042418_video_understanding)
 - Enlaces de contexto sobre video understanding (no específicos del repositorio): [Survey on Video Understanding](https://link.springer.com/article/10.1007/s11633-026-1656-7) y [V-JEPA 2](https://arxiv.org/abs/2506.09985)

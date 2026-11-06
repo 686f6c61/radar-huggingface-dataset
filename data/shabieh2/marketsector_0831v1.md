@@ -56,5 +56,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. El
 
 ## Enlaces
 
-- [HuggingFace - shabieh2/marketsector_0831v1](https://huggingface.co/shabieh2/marketsector_0831v1)
+- [Hugging Face - shabieh2/marketsector_0831v1](https://huggingface.co/shabieh2/marketsector_0831v1)
 - [Modelo base: unsloth/muse-glimmer-30b-unsloth-bnb-4bit](https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit) (enlace no verificado, se infiere del nombre)

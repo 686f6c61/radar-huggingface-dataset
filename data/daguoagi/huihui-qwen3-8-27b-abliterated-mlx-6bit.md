@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Cuantización | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | daguoagi/Huihui-Qwen3.8-27B-abliterated-MLX-6bit | 6.346.296.560 (safetensors) | 6-bit RTN | no disponible | Apache-2.0 | MLX (Apple Silicon) |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B (original) | FP16 (presumible) | no disponible | Apache-2.0 | HuggingFace, otros formatos |
-| huihui-ai/Qwen3-8B-abliterated | 8B | FP16 | no disponible | Apache-2.0 | HuggingFace, otros formatos |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B (original) | FP16 (presumible) | no disponible | Apache-2.0 | Hugging Face, otros formatos |
+| huihui-ai/Qwen3-8B-abliterated | 8B | FP16 | no disponible | Apache-2.0 | Hugging Face, otros formatos |
 
 La comparativa se basa en el tamaño y formato. No se dispone de datos de rendimiento comparativos.
 

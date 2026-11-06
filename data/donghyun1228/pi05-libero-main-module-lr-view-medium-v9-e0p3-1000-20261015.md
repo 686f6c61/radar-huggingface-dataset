@@ -73,7 +73,7 @@ No se dispone de datos comparativos dentro de la información proporcionada (ni 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | No disponible | No disponible | 311/400 en cribado LIBERO (no independiente) | Apache 2.0 | HuggingFace, 0 descargas |
+| Este checkpoint | No disponible | No disponible | 311/400 en cribado LIBERO (no independiente) | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de datos comparativos dentro de la información proporcionada (ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v9-e0p3-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v9-e0p3-1000-20261015
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Los resultados devueltos corresponden a foros de temática ajena al modelo (índices de foros húngaros y foros de contenido para adultos) y no guardan relación con este repositorio.
 - Paper, blog, repositorio de código o demo oficiales: no disponibles en la información proporcionada.

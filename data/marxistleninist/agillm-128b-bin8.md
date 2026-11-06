@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGILLM-128B-bin8 es un repositorio de instantáneas (snapshots) periódicas de AGILLM-128B, un modelo de lenguaje de tipo mixture-of-experts con pesos binarios que, en el momento de la publicación, seguía en entrenamiento. Lo publica el usuario de HuggingFace MarxistLeninist bajo la librería `agillm128b` y el pipeline `text-generation`. No se trata de un modelo terminado ni ajustado: el único snapshot disponible corresponde al paso 4566 (24 de octubre de 2026) y se distribuye como un paquete de bits de signo en formato propio, no como safetensors ni GGUF.
+AGILLM-128B-bin8 es un repositorio de instantáneas (snapshots) periódicas de AGILLM-128B, un modelo de lenguaje de tipo mixture-of-experts con pesos binarios que, en el momento de la publicación, seguía en entrenamiento. Lo publica el usuario de Hugging Face MarxistLeninist bajo la librería `agillm128b` y el pipeline `text-generation`. No se trata de un modelo terminado ni ajustado: el único snapshot disponible corresponde al paso 4566 (24 de octubre de 2026) y se distribuye como un paquete de bits de signo en formato propio, no como safetensors ni GGUF.
 
 El interés técnico está en el esquema de pesos: el modelo declara 126,7 mil millones de pesos binarios con latentes int8 y solo 21,7 millones de parámetros en coma flotante. En la pasada forward únicamente se lee el signo de cada latente int8 (`w = +1` si el latente es `>= 0`), de modo que empaquetar esos signos es exacto para inferencia y reduce el checkpoint de 128,7 GB a 16,1 GB (8 veces menos). La arquitectura son 80 bloques con dimensión de modelo 8192, dimensión de feed-forward 32768 y entre 2 y 3 expertos por bloque, con tokenizer `tiktoken o200k_base` y una ventana de contexto de 2048 tokens.
 
@@ -86,7 +86,7 @@ Los datos de AGILLM-128B son en su mayoría no disponibles y no existen métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarxistLeninist/AGILLM-128B-bin8
+- Modelo en Hugging Face: https://huggingface.co/MarxistLeninist/AGILLM-128B-bin8
 - Script de entrenamiento, expansión e inferencia incluido en el repo: `packs/step000004566/trainer_source.py`
 - Índice y checksums del snapshot: `packs/step000004566/meta.json`, `SHA256SUMS`, `EXPORT_COMPLETE.json`
 - No se han encontrado en la búsqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este modelo.

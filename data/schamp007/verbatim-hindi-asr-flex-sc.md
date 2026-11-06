@@ -120,7 +120,7 @@ La comparación cuantitativa de rendimiento (WER, CER) no está disponible: la s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schamp007/verbatim-hindi-asr-flex-sc
+- Modelo en Hugging Face: https://huggingface.co/schamp007/verbatim-hindi-asr-flex-sc
 - Modelo base: https://huggingface.co/bodhan-ai/indic-transcribe-flex
 - Modelo de origen de la cadena: https://huggingface.co/nvidia/canary-1b-v2
 - Port comunitario int8 sin caché con el que se compara: https://huggingface.co/adidsh/indic-transcribe-flex-int8-onnx

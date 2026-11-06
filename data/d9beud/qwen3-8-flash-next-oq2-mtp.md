@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d9beuD/Qwen3.8-Flash-Next-oQ2-mtp | ~180.000 millones (total safetensors) | 262K (según modelo base) | MLX safetensors, oQ mixta ~2,85 bits efectivos | 64,1 GB | Qwen Community License 1.0 | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | 125.000 millones + 51.000 millones de embeddings N-gram | 262K | safetensors en bfloat16 | ~360 GB (estimado a 2 bytes por parámetro; no indicado en la información) | Qwen Community License 1.0 | HuggingFace |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | No disponible | No disponible | MLX safetensors, oQ de 4 bits | No disponible | Qwen Community License 1.0 | HuggingFace |
+| d9beuD/Qwen3.8-Flash-Next-oQ2-mtp | ~180.000 millones (total safetensors) | 262K (según modelo base) | MLX safetensors, oQ mixta ~2,85 bits efectivos | 64,1 GB | Qwen Community License 1.0 | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | 125.000 millones + 51.000 millones de embeddings N-gram | 262K | safetensors en bfloat16 | ~360 GB (estimado a 2 bytes por parámetro; no indicado en la información) | Qwen Community License 1.0 | Hugging Face |
+| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | No disponible | No disponible | MLX safetensors, oQ de 4 bits | No disponible | Qwen Community License 1.0 | Hugging Face |
 
 Nota sobre el recuento de parámetros: la documentación de Qwen cita 125.000 millones en el modelo principal más 51.000 millones de embeddings N-gram (176.000 millones), mientras que los safetensors de este repositorio suman 179.999.981.459 parámetros. La diferencia puede corresponder al codificador de visión y al cabezal MTP, pero no se detalla en la información disponible.
 

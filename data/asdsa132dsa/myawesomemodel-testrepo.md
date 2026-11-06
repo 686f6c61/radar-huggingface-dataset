@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asdsa132dsa bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo de la libreria transformers orientado a la tarea de feature-extraction, con etiquetas que apuntan a una arquitectura BERT y a pesos en PyTorch. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que sugiere que no contiene pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asdsa132dsa bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo de la libreria transformers orientado a la tarea de feature-extraction, con etiquetas que apuntan a una arquitectura BERT y a pesos en PyTorch. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0.0 GB, lo que sugiere que no contiene pesos publicados.
 
 La model card adjunta describe, en cambio, un modelo generativo de razonamiento conversacional con mejoras en tareas de matematicas, programacion y logica, y afirma que su rendimiento se acerca al de "otros modelos lideres". Esta descripcion no es coherente con las etiquetas tecnicas del repositorio (bert, feature-extraction), ni con el pipeline declarado, ni con el hecho de que el repositorio este vacio. Los nombres de los modelos comparados en la propia model card son genericos (Model1, Model2, Model1-v2), lo que refuerza la impresion de una plantilla sin datos reales asociados.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha debe leerse como una descripcion de lo que el autor de
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio declara 0.0 GB, por lo que no constan safetensors, bin ni GGUF) |
 
-Otros datos de la ficha de HuggingFace: autor asdsa132dsa, libreria transformers, pipeline feature-extraction, endpoints_compatible, region us, fecha de creacion 2026-09-10 y ultima actualizacion 2026-09-10.
+Otros datos de la ficha de Hugging Face: autor asdsa132dsa, libreria transformers, pipeline feature-extraction, endpoints_compatible, region us, fecha de creacion 2026-09-10 y ultima actualizacion 2026-09-10.
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No hay ningun otro resultado de benchmarks (MMLU, HumanEval, GSM8K, GPQA u otros
 - VRAM para inferencia: no disponible. Al no conocerse el numero de parametros ni existir pesos publicados, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Ejecucion en GPU de consumo: no disponible. Si el repositorio correspondiese realmente a la etiqueta bert (encoder tipo BERT-base, alrededor de 110 millones de parametros), cabria en GPUs de consumo con 6-8 GB de VRAM en fp16, pero esto es una inferencia a partir de una etiqueta y no un dato confirmado.
-- Opciones de despliegue: no disponible. No constan pesos en safetensors, GGUF ni formatos compatibles con vLLM, llama.cpp, Ollama o TGI. La etiqueta endpoints_compatible indica unicamente compatibilidad con HuggingFace Inference Endpoints a nivel de metadatos.
+- Opciones de despliegue: no disponible. No constan pesos en safetensors, GGUF ni formatos compatibles con vLLM, llama.cpp, Ollama o TGI. La etiqueta endpoints_compatible indica unicamente compatibilidad con Hugging Face Inference Endpoints a nivel de metadatos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -119,7 +119,7 @@ No disponible. La model card compara contra Model1, Model2 y Model1-v2 sin ident
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asdsa132dsa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asdsa132dsa/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlazarlo)

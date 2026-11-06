@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Anissadj/camembert-ner-person-fr` es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace por el usuario Anissadj. Por su identificador, sus etiquetas (`camembert`, `token-classification`) y su nombre, se trata de un ajuste fino de CamemBERT orientado al reconocimiento de entidades nombradas (NER) de tipo persona en textos en francés. El repositorio no incluye una model card descriptiva: la tarjeta publicada es la plantilla genérica autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]".
+`Anissadj/camembert-ner-person-fr` es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario Anissadj. Por su identificador, sus etiquetas (`camembert`, `token-classification`) y su nombre, se trata de un ajuste fino de CamemBERT orientado al reconocimiento de entidades nombradas (NER) de tipo persona en textos en francés. El repositorio no incluye una model card descriptiva: la tarjeta publicada es la plantilla genérica autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
-El modelo cuenta con 110.032.898 parámetros en formato safetensors (según los metadatos reales del repositorio), un tamaño que coincide con el de `camembert-base`, el checkpoint base de CamemBERT. El repositorio ocupa 0,4 GB. Es compatible con el pipeline de `transformers` y con la infraestructura de endpoints de HuggingFace (`endpoints_compatible`), lo que facilita su despliegue como servicio de inferencia.
+El modelo cuenta con 110.032.898 parámetros en formato safetensors (según los metadatos reales del repositorio), un tamaño que coincide con el de `camembert-base`, el checkpoint base de CamemBERT. El repositorio ocupa 0,4 GB. Es compatible con el pipeline de `transformers` y con la infraestructura de endpoints de Hugging Face (`endpoints_compatible`), lo que facilita su despliegue como servicio de inferencia.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy pequeño, sin descargas ni valoraciones en el momento de la consulta, publicado sin documentación. Resulta útil exclusivamente si se necesita un detector de nombres de persona en francés integrable en un pipeline ligero, siempre que se valide su comportamiento, dado que no hay información pública sobre su entrenamiento ni evaluación.
 
@@ -30,13 +30,13 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy
 
 La etiqueta `camembert` del repositorio y el recuento exacto de parámetros (110.032.898) apuntan a un ajuste fino de `camembert-base`, un transformer encoder basado en la arquitectura de RoBERTa entrenado originalmente sobre el corpus francés OSCAR. La tarea declarada es clasificación de tokens, es decir, asignación de una etiqueta BIO/BILUO a cada token de entrada, en este caso presumiblemente para la clase "persona" (PER).
 
-No hay información pública sobre el procedimiento de entrenamiento: ni el conjunto de datos utilizado, ni el número de tokens de ajuste fino, ni los hiperparámetros, ni si se aplicó alguna técnica de regularización o calibración de umbrales. La model card no documenta dataset, métricas ni hiperparámetros. La única referencia técnica enlazada en las etiquetas es `arxiv:1910.09700` (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"), que aparece en la plantilla por defecto de HuggingFace y no guarda relación con el entrenamiento del modelo.
+No hay información pública sobre el procedimiento de entrenamiento: ni el conjunto de datos utilizado, ni el número de tokens de ajuste fino, ni los hiperparámetros, ni si se aplicó alguna técnica de regularización o calibración de umbrales. La model card no documenta dataset, métricas ni hiperparámetros. La única referencia técnica enlazada en las etiquetas es `arxiv:1910.09700` (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"), que aparece en la plantilla por defecto de Hugging Face y no guarda relación con el entrenamiento del modelo.
 
 ## Capacidades
 
 - Reconocimiento de entidades nombradas de tipo persona en textos, presumiblemente en francés, mediante etiquetado a nivel de token.
 - Clasificación por token con salida de tipo `token-classification`, integrable directamente en el pipeline de `transformers`.
-- Compatibilidad con el ecosistema de `transformers` y con los endpoints de HuggingFace.
+- Compatibilidad con el ecosistema de `transformers` y con los endpoints de Hugging Face.
 - No hay evidencia documentada de soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
 - No hay información sobre capacidades multilingües más allá del posible ámbito francés sugerido por el nombre del modelo.
 - No se declaran capacidades de generación de texto: es un modelo exclusivamente discriminativo de etiquetado.
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,45 GB (110 M de parámetros); en fp16, alrededor de 0,25 GB; en int8, en torno a 0,15 GB. Son estimaciones derivadas del recuento de parámetros, no mediciones publicadas.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4090, GTX 1650, etc.). El modelo es viable incluso en CPU.
 - Cabe sin dificultad en cualquier GPU consumer actual y en entornos sin GPU (inferencia en CPU con latencias de milisegundos por frase corta).
-- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), ONNX Runtime para despliegue en CPU, y FastAPI o similar como envoltorio de servicio.
+- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), ONNX Runtime para despliegue en CPU, y FastAPI o similar como envoltorio de servicio.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anissadj/camembert-ner-person-fr | 110 M | no disponible (512 en CamemBERT base) | NER de persona (fr) | no disponible | HuggingFace, sin descargas |
-| camembert-base | 110 M | 514 tokens | Modelo base (MLM) | MIT (segun su repositorio) | HuggingFace, ampliamente usado |
-| Jean-Baptiste/camembert-ner | 110 M | 512 tokens | NER multietiqueta (fr) | no disponible | HuggingFace, con uso extendido |
+| Anissadj/camembert-ner-person-fr | 110 M | no disponible (512 en CamemBERT base) | NER de persona (fr) | no disponible | Hugging Face, sin descargas |
+| camembert-base | 110 M | 514 tokens | Modelo base (MLM) | MIT (segun su repositorio) | Hugging Face, ampliamente usado |
+| Jean-Baptiste/camembert-ner | 110 M | 512 tokens | NER multietiqueta (fr) | no disponible | Hugging Face, con uso extendido |
 | Flair `ner-french` | ~110 M (XLM-R/camembert variants) | variable | NER multietiqueta (fr) | MIT (habitual en Flair) | Libreria Flair |
 
 Las cifras de los modelos comparativos se incluyen como referencia general de la categoria; los datos de licencia y uso deben verificarse en cada repositorio antes de tomar decisiones de produccion.
@@ -89,7 +89,7 @@ Las cifras de los modelos comparativos se incluyen como referencia general de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anissadj/camembert-ner-person-fr
+- Repositorio en Hugging Face: https://huggingface.co/Anissadj/camembert-ner-person-fr
 - Paper referenciado en las etiquetas (no relacionado con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base presumiblemente utilizado: https://huggingface.co/camembert/camembert-base
 - La búsqueda web no ha devuelto resultados relevantes sobre este modelo; los enlaces encontrados corresponden a foros sin relación con el mismo.

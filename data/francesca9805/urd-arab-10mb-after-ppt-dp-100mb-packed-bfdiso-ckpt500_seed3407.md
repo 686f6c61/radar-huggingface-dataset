@@ -1,7 +1,7 @@
 # francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 
 ## Resumen
-El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino por supervisión (SFT) del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`. Se trata de un transformer decoder-only de arquitectura GPT-2 (según la etiqueta `gpt2`) con 39.087.104 parámetros totales, pesos en safetensors y un repositorio de 1,2 GB. Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con la librería TRL, dentro de un proyecto de investigación sobre tokenizadores (la ejecución de Weights & Biases se aloja en el espacio `f-padovani-university-of-groningen/new-tokenizers`).
+El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino por supervisión (SFT) del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`. Se trata de un transformer decoder-only de arquitectura GPT-2 (según la etiqueta `gpt2`) con 39.087.104 parámetros totales, pesos en safetensors y un repositorio de 1,2 GB. Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con la librería TRL, dentro de un proyecto de investigación sobre tokenizadores (la ejecución de Weights & Biases se aloja en el espacio `f-padovani-university-of-groningen/new-tokenizers`).
 
 El modelo no declara licencia, idiomas soportados ni longitud de contexto, y no presenta descargas ni interacciones en el momento de redactar esta ficha. Su relevancia práctica fuera del ámbito de la experimentación es reducida: parece un artefacto de investigación controlada más que un modelo listo para producción. El propio nombre del checkpoint (`urd-arab-10mb...-100mb-packed...-ckpt500_seed3407`) sugiere un experimento con corpus de urdu/árabe de 10 MB, empaquetado (packed) de 100 MB, checkpoint en el paso 500 y semilla 3407, aunque el autor no confirma esta interpretación.
 
@@ -30,13 +30,13 @@ El entrenamiento se realizó mediante SFT con TRL 0.23.0, Transformers 4.56.2, P
 - Tool calling / function calling: no disponible.
 - Uso como agente o razonamiento multi-paso: no disponible.
 - Capacidades especiales (modo pensamiento, visión, audio): no disponible.
-- Compatible con Text Generation Inference (etiquetas `text-generation-inference` y `endpoints_compatible`) para despliegue en endpoints de Inferencia de HuggingFace.
+- Compatible con Text Generation Inference (etiquetas `text-generation-inference` y `endpoints_compatible`) para despliegue en endpoints de Inferencia de Hugging Face.
 
 ## Casos de uso
 - Investigación sobre tokenizadores: el modelo se enmarca en un proyecto de tokenización (espacio W&B `new-tokenizers`) y resulta útil para comparar el efecto de distintos vocabularios o esquemas de empaquetado sobre un transformer pequeño.
 - Experimentos de SFT reproducibles: al haberse entrenado con TRL 0.23.0 y semilla 3407, es adecuado para replicar pipelines de ajuste supervisado a pequeña escala y validar configuraciones antes de escalar a modelos mayores.
 - Pruebas de integración de pipelines de Transformers: sirve como modelo de juguete para validar código de `pipeline("text-generation")`, gestión de safetensors y carga en GPU o CPU sin consumir recursos significativos.
-- Despliegue en inferencia de bajo coste: con ~39 M de parámetros se puede servir en el endpoint de Inferencia de HuggingFace o en TGI para prototipos de generación de texto con requisitos mínimos de memoria.
+- Despliegue en inferencia de bajo coste: con ~39 M de parámetros se puede servir en el endpoint de Inferencia de Hugging Face o en TGI para prototipos de generación de texto con requisitos mínimos de memoria.
 - Evaluación de corpus urdu/árabe (si se confirma el dominio): útil para medir fluidez y perplejidad sobre textos en escritura árabe tras un ajuste con datos empaquetados.
 - Docencia y divulgación: buen candidato para explicar el flujo completo de fine-tuning con TRL (tokenización, SFT, checkpoints, publicación en el Hub) sin necesidad de hardware especializado.
 - Pruebas de cuantización extrema: al ser tan reducido, permite ensayar conversiones a 8 bits o 4 bits y medir el impacto en calidad en un entorno controlado.
@@ -52,14 +52,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - 4 bits: ~20 MB solo para pesos.
 - GPU recomendadas: cualquier GPU moderna con al menos 1 GB de VRAM es suficiente (GTX 1650, RTX 3060, RTX 4090, A100, H100). El modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo de los últimos años e incluso en CPU para inferencia interactiva.
-- Opciones de despliegue: `transformers` (pipeline nativo), Text Generation Inference (TGI, por las etiquetas `text-generation-inference` y `endpoints_compatible`), endpoints de HuggingFace. No se confirma soporte para llama.cpp, Ollama o vLLM al no publicarse variantes GGUF ni documentación al respecto.
+- Opciones de despliegue: `transformers` (pipeline nativo), Text Generation Inference (TGI, por las etiquetas `text-generation-inference` y `endpoints_compatible`), endpoints de Hugging Face. No se confirma soporte para llama.cpp, Ollama o vLLM al no publicarse variantes GGUF ni documentación al respecto.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 39 M | no disponible | GPT-2 (decoder-only) | no disponible | Hub de HuggingFace (0 descargas) |
+| Este modelo | 39 M | no disponible | GPT-2 (decoder-only) | no disponible | Hub de Hugging Face (0 descargas) |
 | GPT-2 small | 124 M | 1024 tokens | GPT-2 (decoder-only) | MIT (modificada) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | GPT-2 destilado | Apache-2.0 | Ampliamente disponible |
 
@@ -76,7 +76,7 @@ La comparación es orientativa: no se han publicado métricas de calidad para el
 - Repositorio de 1,2 GB frente a ~78-156 MB de pesos: puede contener artefactos adicionales (checkpoints intermedios, estados del optimizador) y conviene revisar los archivos antes de descargarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/b5j1mnvx
 - Repositorio de TRL: https://github.com/huggingface/trl

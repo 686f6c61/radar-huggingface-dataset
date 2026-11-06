@@ -115,7 +115,7 @@ La única comparación disponible es con Qwen3.6-27B-MTP-TQ3_4S, que usa la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S
+- Modelo en Hugging Face: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S
 - Runtime requerido (fork de llama.cpp): https://github.com/turbo-tan/llama.cpp-tq3
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Licencia del modelo base Qwen3.8: https://huggingface.co/Qwen/Qwen3.8-27B

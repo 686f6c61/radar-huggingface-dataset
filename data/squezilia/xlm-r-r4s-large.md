@@ -97,6 +97,6 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- [HuggingFace: Squezilia/xlm-r-r4s-large](https://huggingface.co/Squezilia/xlm-r-r4s-large)
+- [Hugging Face: Squezilia/xlm-r-r4s-large](https://huggingface.co/Squezilia/xlm-r-r4s-large)
 - [Modelo base: FacebookAI/xlm-roberta-large](https://huggingface.co/FacebookAI/xlm-roberta-large)
 - [Dataset: Squezilia/Route4Secure](https://huggingface.co/datasets/Squezilia/Route4Secure)

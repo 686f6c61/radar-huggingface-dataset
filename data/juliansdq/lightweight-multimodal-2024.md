@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Juliansdq/lightweight-multimodal-2024` no es un modelo entrenado, sino un repositorio de notas de investigación etiquetado como modelo en HuggingFace. La propia model card lo declara explícitamente: se trata de una nota exploratoria sobre "Lightweight Multimodal" que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista ningún resultado experimental. El autor indica que el artefacto principal es `notes.md` y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
+`Juliansdq/lightweight-multimodal-2024` no es un modelo entrenado, sino un repositorio de notas de investigación etiquetado como modelo en Hugging Face. La propia model card lo declara explícitamente: se trata de una nota exploratoria sobre "Lightweight Multimodal" que registra el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, antes de que exista ningún resultado experimental. El autor indica que el artefacto principal es `notes.md` y advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 
 El repositorio lo publica el usuario Juliansdq bajo licencia CC-BY-4.0, con los tags `research-notes`, `lightweight-multimodal`, `transformer` y `safetensors`. Los metadatos declaran un total de 16.576 parámetros y un tamaño de repositorio de 0,0 GB, coherente con la ausencia de un checkpoint funcional: 16.576 parámetros es un orden de magnitud propio de un tensor de prueba, no de un modelo multimodal utilizable. El pipeline no está declarado y no se especifican idiomas.
 
-Su relevancia ahora es fundamentalmente metodológica y de higiene de datos: ejemplifica cómo un repositorio de notas puede aparecer indexado como modelo con pesos en safetensors, lo que introduce ruido en los catálogos de modelos y puede llevar a que pipelines automáticos lo descarguen esperando un modelo real. Para desarrolladores e investigadores, la ficha sirve sobre todo como advertencia de verificación previa antes de evaluar cualquier artefacto de HuggingFace.
+Su relevancia ahora es fundamentalmente metodológica y de higiene de datos: ejemplifica cómo un repositorio de notas puede aparecer indexado como modelo con pesos en safetensors, lo que introduce ruido en los catálogos de modelos y puede llevar a que pipelines automáticos lo descarguen esperando un modelo real. Para desarrolladores e investigadores, la ficha sirve sobre todo como advertencia de verificación previa antes de evaluar cualquier artefacto de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ No se identifican en la información proporcionada modelos comparables concretos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Juliansdq/lightweight-multimodal-2024
+- Repositorio en Hugging Face: https://huggingface.co/Juliansdq/lightweight-multimodal-2024
 - Nota principal citada en la model card: `notes.md` (en la raíz del repositorio)
 - Documentación citada en la model card: `README.md` (en la raíz del repositorio)
 - Paper, blog, repositorio de código, demo o dataset asociado: no disponible en la información proporcionada

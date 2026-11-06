@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Abdullahdadata/my-open-weight-model es un modelo publicado en HuggingFace por el usuario Abdullahdadata bajo licencia Apache 2.0. En el momento de la consulta, la ficha del repositorio no incluye información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos: la model card se limita a declarar la licencia y no contiene documentación técnica adicional.
+El repositorio Abdullahdadata/my-open-weight-model es un modelo publicado en Hugging Face por el usuario Abdullahdadata bajo licencia Apache 2.0. En el momento de la consulta, la ficha del repositorio no incluye información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos: la model card se limita a declarar la licencia y no contiene documentación técnica adicional.
 
 Se trata de un repositorio sin tracción: acumula 0 descargas y 0 likes, y tanto la fecha de creación como la de última actualización corresponden al mismo instante (23 de septiembre de 2026), lo que indica que no ha habido revisiones posteriores a la publicación inicial. Tampoco se ha definido un pipeline de inferencia asociado en la plataforma.
 
@@ -82,7 +82,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abdullahdadata/my-open-weight-model
+- Hugging Face: https://huggingface.co/Abdullahdadata/my-open-weight-model
 - Perfil del autor: https://huggingface.co/Abdullahdadata
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

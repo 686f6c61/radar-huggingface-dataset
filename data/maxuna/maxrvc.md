@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maxuna/Maxrvc` es un adaptador LoRA publicado en HuggingFace bajo la etiqueta `text-to-image` y la librería `diffusers`. Su autor, `maxuna`, lo presenta como un ajuste fino basado en el modelo `brandon12333/Otis__RVC_v2_`, aunque este último parece corresponder a un modelo de conversión de voz (RVC, Retrieval-based Voice Conversion) y no a un modelo de difusión, lo que genera una inconsistencia notable entre la etiqueta declarada y el modelo base indicado. El repositorio tiene un tamaño de 0,1 GB y no incluye ninguna documentación técnica, parámetros, ejemplos de uso ni resultados de evaluación. La fecha de creación (16 de agosto de 2026) es posterior a la actual, lo que sugiere un posible error en los metadatos.
+El modelo `maxuna/Maxrvc` es un adaptador LoRA publicado en Hugging Face bajo la etiqueta `text-to-image` y la librería `diffusers`. Su autor, `maxuna`, lo presenta como un ajuste fino basado en el modelo `brandon12333/Otis__RVC_v2_`, aunque este último parece corresponder a un modelo de conversión de voz (RVC, Retrieval-based Voice Conversion) y no a un modelo de difusión, lo que genera una inconsistencia notable entre la etiqueta declarada y el modelo base indicado. El repositorio tiene un tamaño de 0,1 GB y no incluye ninguna documentación técnica, parámetros, ejemplos de uso ni resultados de evaluación. La fecha de creación (16 de agosto de 2026) es posterior a la actual, lo que sugiere un posible error en los metadatos.
 
 En resumen, se trata de un artefacto con información mínima y contradictoria. No es posible determinar su arquitectura real, su propósito exacto ni sus capacidades a partir de los datos disponibles. Cualquier uso en producción debería considerarse de alto riesgo debido a la ausencia total de especificaciones y validación.
 
@@ -56,7 +56,7 @@ No disponible. No se conocen modelos comparables en la misma categoría debido a
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maxuna/Maxrvc)
+- [Modelo en Hugging Face](https://huggingface.co/maxuna/Maxrvc)
 - [Repositorio relacionado temakisan/maxRVC](https://huggingface.co/temakisan/maxRVC/tree/main) (contiene un archivo pickle, sin relación clara)
 - [GitHub 0rvar/maxuna](https://github.com/0rvar/maxuna) (proyecto no relacionado, "Laguna S 2.1")
 - [Sitio web RVCMAX](https://rvcmax.com/) (software de cambio de voz, no relacionado con este modelo)

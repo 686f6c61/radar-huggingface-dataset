@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (franka-30demos-normal_task2_cartesian, step 6000) | Política VLA específica de tarea para Franka | 3.616.757.520 | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (franka-30demos-normal_task2_cartesian, step 6000) | Política VLA específica de tarea para Franka | 3.616.757.520 | no disponible | no disponible | Hugging Face, 0 descargas |
 | Políticas base de la familia openpi (pi05/pi0) | Política VLA generalista | no disponible en la información proporcionada | no disponible | no disponible | no verificado en la búsqueda |
 | Otros VLA abiertos para manipulación (por ejemplo, familias tipo OpenVLA o GR00T) | Política VLA | no disponible en la información proporcionada | no disponible | no disponible | no verificado en la búsqueda |
 
@@ -98,7 +98,7 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-6000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-6000
 - Archivo de registro con el diseño de salida y las convenciones: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-6000/blob/main/log.txt
 - Estadísticas de normalización: `assets/franka/norm_stats.json` dentro del repositorio del modelo
 - Repositorio de la librería openpi: no encontrado en los resultados de búsqueda proporcionados

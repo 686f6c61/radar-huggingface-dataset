@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables en la documentación. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-recidivism-analyst_ffn-only
+- Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-recidivism-analyst_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_roster_ffn_only/runs/e4k0czn2
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VakilOS es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct, publicado por el usuario Adihere69 en HuggingFace. El modelo está especializado en dominio jurídico indio: su entrenamiento se ha realizado sobre cuatro conjuntos de datos legales de la India, entre ellos kaushik-harsh-99/Indian-legal-data-v3, Prarabdha/indian-legal-supervised-fine-tuning-data, nisaar/Constitution_Of_India_Instruction_Set y viber1/indian-law-dataset. El nombre "Vakil" hace referencia al término usado en hindi y urdu para designar a un abogado, lo que deja clara la intención del autor de construir un asistente legal conversacional.
+VakilOS es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-7B-Instruct, publicado por el usuario Adihere69 en Hugging Face. El modelo está especializado en dominio jurídico indio: su entrenamiento se ha realizado sobre cuatro conjuntos de datos legales de la India, entre ellos kaushik-harsh-99/Indian-legal-data-v3, Prarabdha/indian-legal-supervised-fine-tuning-data, nisaar/Constitution_Of_India_Instruction_Set y viber1/indian-law-dataset. El nombre "Vakil" hace referencia al término usado en hindi y urdu para designar a un abogado, lo que deja clara la intención del autor de construir un asistente legal conversacional.
 
 Se trata, por tanto, de un modelo de generación de texto en inglés con orientación a consultas sobre legislación, Constitución y procedimientos judiciales de la India. El repositorio no incluye información sobre el proceso de entrenamiento, hiperparámetros, número de tokens utilizados ni metodología de alineación, y en el momento de redactar esta ficha acumula 0 descargas y 0 "me gusta", lo que indica que es una publicación reciente y sin validación por parte de la comunidad.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adihere69/VakilOS | ~7B (derivado del base) | No disponible | Legal indio, ingles | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | Generalista | No disponible en la informacion proporcionada | HuggingFace |
+| Adihere69/VakilOS | ~7B (derivado del base) | No disponible | Legal indio, ingles | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | Generalista | No disponible en la informacion proporcionada | Hugging Face |
 | Otros fine-tunes legales indios | No disponible | No disponible | Legal indio | No disponible | No disponible |
 
 No se dispone de datos de rendimiento, contexto o licencia que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria. La unica comparacion posible es estructural: VakilOS deriva del Qwen2.5-7B-Instruct y, por tanto, comparte su tamano y presumiblemente su ventana de contexto, pero no hay confirmacion en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento, contexto o licencia que permitan una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adihere69/VakilOS
+- Modelo en Hugging Face: https://huggingface.co/Adihere69/VakilOS
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset kaushik-harsh-99/Indian-legal-data-v3: https://huggingface.co/datasets/kaushik-harsh-99/Indian-legal-data-v3
 - Dataset Prarabdha/indian-legal-supervised-fine-tuning-data: https://huggingface.co/datasets/Prarabdha/indian-legal-supervised-fine-tuning-data

@@ -67,7 +67,7 @@ Los únicos datos de rendimiento aportados son de latencia de detección: en una
 
 | Modelo | Tipo | Carga útil / configuración | Detección incluida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2-Marking (este paquete) | Marcado de vídeo y audio | 256 bits, 256 px, AudioSeal 16 bits | Sí, vía código de LTX-2 | MIT | HuggingFace (Lightricks) |
+| LTX-2-Marking (este paquete) | Marcado de vídeo y audio | 256 bits, 256 px, AudioSeal 16 bits | Sí, vía código de LTX-2 | MIT | Hugging Face (Lightricks) |
 | PixelSeal / VideoSeal (Meta) | Marcado de vídeo | Checkpoint original con estado completo | Sí, en el repo de Meta | MIT | `facebookresearch/videoseal` |
 | AudioSeal (Meta) | Marcado de audio | Modelos base de 16 bits | Sí, en el repo de Meta | MIT | `facebook/audioseal` |
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lightricks/LTX-2-Marking
+- Repositorio Hugging Face: https://huggingface.co/Lightricks/LTX-2-Marking
 - Repositorio LTX-2: https://github.com/Lightricks/LTX-2
 - Código de marcado en LTX-2: https://github.com/Lightricks/LTX-2/tree/main/packages/ltx-pipelines/src/ltx_pipelines/marking
 - Documentación de marcado: https://github.com/Lightricks/LTX-2/blob/main/packages/ltx-pipelines/docs/marking.md

@@ -95,7 +95,7 @@ Los tres backbones evaluados en la busqueda son directamente comparables, ya que
 
 | Modelo | Arquitectura | Parametros | Entrada | Estado | Licencia |
 |---|---|---|---|---|---|
-| Este modelo | ResNet-18 ajustado con AutoGluon | Aproximadamente 11,7 M (cifra estandar, no confirmada) | 224 x 224 RGB | Publicado en HuggingFace | cc-by-4.0 |
+| Este modelo | ResNet-18 ajustado con AutoGluon | Aproximadamente 11,7 M (cifra estandar, no confirmada) | 224 x 224 RGB | Publicado en Hugging Face | cc-by-4.0 |
 | Candidato descartado en la busqueda | EfficientNet-B0 | Aproximadamente 5,3 M (cifra estandar, no confirmada) | 224 x 224 RGB (segun configuracion de timm) | No seleccionado | No disponible |
 | Candidato descartado en la busqueda | MobileNetV3-Small 100 | Aproximadamente 2,5 M (cifra estandar, no confirmada) | 224 x 224 RGB (segun configuracion de timm) | No seleccionado | No disponible |
 | Alternativa generica | Clasificador zero-shot tipo CLIP | No disponible | No disponible | No evaluado en esta informacion | No disponible |
@@ -119,7 +119,7 @@ No se dispone de datos de rendimiento de los modelos alternativos ni de comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-finetuned
+- Modelo en Hugging Face: https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/pakiino/2026-24679-switch-image-hw1
 - Paper o memoria tecnica asociada: no disponible
 - Repositorio de codigo: no disponible

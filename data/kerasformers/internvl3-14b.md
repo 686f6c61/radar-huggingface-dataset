@@ -66,9 +66,9 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/kerasformers/internvl3-14b)
+- [Hugging Face del modelo](https://huggingface.co/kerasformers/internvl3-14b)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de InternVL en KerasFormers](https://imvision12.github.io/KerasFormers/internvl/)
-- [Colección de modelos InternVL en HuggingFace](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
+- [Colección de modelos InternVL en Hugging Face](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
 - [Modelo base OpenGVLab/InternVL3-14B-hf](https://huggingface.co/OpenGVLab/InternVL3-14B-hf)
 - [Licencia del modelo original](https://huggingface.co/OpenGVLab/InternVL3-14B-hf/blob/main/LICENSE)

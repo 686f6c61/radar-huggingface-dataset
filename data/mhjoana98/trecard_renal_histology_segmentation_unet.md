@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mhjoana98/TRECARD_renal_histology_segmentation_unet` es una red de segmentación de imágenes histológicas renales publicada en HuggingFace por la autora Joana Mercado-Hernández (usuario `mhjoana98`), en el marco del proyecto TRECARD. Su objetivo declarado, según la cita de la model card, es la segmentación y cuantificación automática de tres hallazgos en imágenes de biopsia renal completa teñidas con hematoxilina-eosina (HE): inflamación en áreas de fibrosis intersticial y atrofia tubular (i-IFTA), infiltrados focales y dilatación tubular. El repositorio contiene únicamente la cita del manuscrito asociado, que está en proceso de revisión por pares, y no incluye datos de entrenamiento, métricas ni instrucciones de uso.
+El modelo `mhjoana98/TRECARD_renal_histology_segmentation_unet` es una red de segmentación de imágenes histológicas renales publicada en Hugging Face por la autora Joana Mercado-Hernández (usuario `mhjoana98`), en el marco del proyecto TRECARD. Su objetivo declarado, según la cita de la model card, es la segmentación y cuantificación automática de tres hallazgos en imágenes de biopsia renal completa teñidas con hematoxilina-eosina (HE): inflamación en áreas de fibrosis intersticial y atrofia tubular (i-IFTA), infiltrados focales y dilatación tubular. El repositorio contiene únicamente la cita del manuscrito asociado, que está en proceso de revisión por pares, y no incluye datos de entrenamiento, métricas ni instrucciones de uso.
 
 El identificador del repositorio indica una arquitectura U-Net, implementada con Keras, lo que sitúa al modelo en la familia clásica de redes completamente convolucionales con conexiones de salto, habituales en segmentación semántica biomédica. Se trata, por tanto, de un modelo de visión por computador y no de un modelo de lenguaje: no tiene tokens de contexto, no procesa texto y no ofrece capacidades conversacionales ni de generación. El repositorio ocupa 0,4 GB, un tamaño compatible con una U-Net de escala moderada, aunque no se ha publicado el número de parámetros.
 
@@ -81,7 +81,7 @@ No hay datos de rendimiento publicados de este modelo, por lo que la comparació
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TRECARD_renal_histology_segmentation_unet | Segmentación de histología renal (HE) | no disponible | no aplica | CC-BY-4.0 | Pesos en HuggingFace, sin documentación de uso |
+| TRECARD_renal_histology_segmentation_unet | Segmentación de histología renal (HE) | no disponible | no aplica | CC-BY-4.0 | Pesos en Hugging Face, sin documentación de uso |
 | nnU-Net | Segmentación biomédica auto-configurada | depende de la configuración | no aplica | Apache-2.0 (código) | Código abierto y ampliamente adoptado |
 | Cellpose | Segmentación celular generalista | no disponible | no aplica | BSD-3 (versión 3.0; versiones previas MIT) | Código y modelos publicados |
 | HoVer-Net | Segmentación y clasificación de núcleos en histología | no disponible | no aplica | Uso académico según publicación original | Pesos con disponibilidad limitada |
@@ -105,7 +105,7 @@ La diferencia principal de la propuesta de TRECARD no es arquitectónica sino de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mhjoana98/TRECARD_renal_histology_segmentation_unet
+- Repositorio en Hugging Face: https://huggingface.co/mhjoana98/TRECARD_renal_histology_segmentation_unet
 - Manuscrito asociado: no disponible (en revisión por pares; no se ha publicado URL en la model card)
 - Cita provisional (BibTeX): Mercado-Hernandez, J. et al. (2026). *A deep-learning-based tool for segmentation and quantification of i-IFTA, focal infiltrates, and tubular dilation in haematoxylin-eosin-stained renal whole-slide images*. Manuscript submitted for publication.
 - Cita en formato APA: Mercado-Hernández, J., Martín-Calvo, D., Carniglia, G., Díaz-Morales, N., Düwell, A., Fuentes-Calvo, I., García Collado, L., Kovalchuk, A., López-Hernández, F. J., Martín-Fernández, N., Sancho-Martínez, S. M., & Martínez-Salgado, C. (2026). Manuscript submitted for publication.

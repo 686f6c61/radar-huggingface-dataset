@@ -95,7 +95,7 @@ La comparación relevante es interna al experimento: control frente a reward see
 
 ## Enlaces
 
-- [HuggingFace: redthag/gpt-oss-120b-control-oss430-v2-s7](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s7)
+- [Hugging Face: redthag/gpt-oss-120b-control-oss430-v2-s7](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s7)
 - [Modelo base: openai/gpt-oss-120b](https://huggingface.co/openai/gpt-oss-120b)
 - [Checkpoint previo: redthag/gpt-oss-120b-control-oss430-v2-s6](https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s6)
 - [Repositorio del reward seeker: aghyad-deeb/reward_seeker](https://github.com/aghyad-deeb/reward_seeker)

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DINCAE (OneScience-Group) | Autoencoder convolucional probabilístico | no disponible | Rejilla 112×112 con tres días de observaciones | Sin cifras publicadas en la información disponible | Apache-2.0 (repositorio) | Código en HuggingFace, sin pesos preentrenados |
+| DINCAE (OneScience-Group) | Autoencoder convolucional probabilístico | no disponible | Rejilla 112×112 con tres días de observaciones | Sin cifras publicadas en la información disponible | Apache-2.0 (repositorio) | Código en Hugging Face, sin pesos preentrenados |
 | DINCAE 1.0 (paper original) | Autoencoder convolucional probabilístico | no disponible | Rejilla 112×112 sobre AVHRR Pathfinder 1985-2009 | Resultados en el paper (no incluidos aquí) | Sujeta a los términos de la publicación | Publicación científica; sin pesos cargables oficiales según la model card |
 | Línea base DINEOF (rango 13) | Interpolación iterativa por modos empíricos | no aplica (método no paramétrico) | Serie espacio-temporal completa | Usada como referencia en el script de evaluación del repositorio | No especificada en la información disponible | Implementada como baseline dentro del propio repositorio |
 
@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/DINCAE
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/DINCAE
 - Paper DINCAE 1.0: https://doi.org/10.5194/gmd-13-1609-2020
 - OneCode (entorno de programación AI4S): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - OneScience en Gitee: https://gitee.com/onescience-ai/onescience

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NextToken-model-1 es un modelo de lenguaje base (no ajustado a instrucciones) de 272.780.288 parámetros, publicado por el usuario somasekhar-dev en HuggingFace. Está preentrenado desde cero sobre 11 lenguas indias (hindi, bengalí, tamil, telugu, maratí, guyaratí, canarés, malayalam, punyabí, oriya) más inglés, usando el corpus Sangraha. Arquitectónicamente es un transformer decoder-only denso estructuralmente equivalente a Qwen3, guardado en formato `Qwen3ForCausalLM` para poder cargarse con `transformers` estándar.
+NextToken-model-1 es un modelo de lenguaje base (no ajustado a instrucciones) de 272.780.288 parámetros, publicado por el usuario somasekhar-dev en Hugging Face. Está preentrenado desde cero sobre 11 lenguas indias (hindi, bengalí, tamil, telugu, maratí, guyaratí, canarés, malayalam, punyabí, oriya) más inglés, usando el corpus Sangraha. Arquitectónicamente es un transformer decoder-only denso estructuralmente equivalente a Qwen3, guardado en formato `Qwen3ForCausalLM` para poder cargarse con `transformers` estándar.
 
 Su relevancia está en el nicho: los modelos por debajo de 300 millones de parámetros suelen centrarse en inglés, mientras que este checkpoint apunta explícitamente a cobertura multilingüe india con un coste de inferencia mínimo (unos 0,55 GB en fp16). Es, por tanto, un candidato a base para ajuste fino, destilación o investigación sobre escalado en lenguas con pocos recursos.
 
@@ -31,7 +31,7 @@ Ahora bien, conviene ser claro sobre su madurez: es un checkpoint temprano (paso
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso de 16 capas y tamaño oculto 1024, con atención de consultas agrupadas (GQA): 16 cabezas de consulta frente a 4 cabezas de clave/valor, lo que reduce el coste de la caché KV. La normalización combina RMSNorm pre-norm con QK-norm por cabeza aplicada antes de RoPE. La FFN usa SwiGLU con tamaño intermedio de 3277 píxeles de dimensión, y los embeddings de entrada están atados a la cabeza de salida (69,7 M de los 272,7 M de parámetros corresponden a este bloque). El autor indica que la arquitectura está construida con primitivas componibles propias y que su equivalencia estructural con Qwen3 se confirmó mediante comparación directa de código fuente durante la conversión a HuggingFace, verificada numéricamente (100 % de coincidencia de argmax entre el modelo original y el convertido sobre entradas aleatorias, más una ida y vuelta completa `save_pretrained`/`from_pretrained`).
+El modelo es un transformer decoder-only denso de 16 capas y tamaño oculto 1024, con atención de consultas agrupadas (GQA): 16 cabezas de consulta frente a 4 cabezas de clave/valor, lo que reduce el coste de la caché KV. La normalización combina RMSNorm pre-norm con QK-norm por cabeza aplicada antes de RoPE. La FFN usa SwiGLU con tamaño intermedio de 3277 píxeles de dimensión, y los embeddings de entrada están atados a la cabeza de salida (69,7 M de los 272,7 M de parámetros corresponden a este bloque). El autor indica que la arquitectura está construida con primitivas componibles propias y que su equivalencia estructural con Qwen3 se confirmó mediante comparación directa de código fuente durante la conversión a Hugging Face, verificada numéricamente (100 % de coincidencia de argmax entre el modelo original y el convertido sobre entradas aleatorias, más una ida y vuelta completa `save_pretrained`/`from_pretrained`).
 
 El preentrenamiento se realizó sobre el corpus Sangraha (11 lenguas indias más inglés) en dos fases de aproximadamente 5.700 millones de tokens cada una, usando una mezcla de GPUs H100 y V100. El checkpoint publicado corresponde al mejor valor de pérdida de validación de la fase de 11 idiomas (paso 23.500, pérdida 2,9318). No se documenta ningún proceso de RLHF, DPO o ajuste por instrucciones, ni se detalla la composición exacta del dataset (proporción por idioma, filtrado, deduplicación) ni el uso de técnicas como decodificación especulativa o atención lineal.
 
@@ -78,10 +78,10 @@ Los datos de los modelos de referencia provienen de sus respectivas model cards 
 
 | Modelo | Parámetros | Contexto | Idiomas destacados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NextToken-model-1 | 272,7 M | 2048 | 11 lenguas indias + inglés | No disponible | safetensors fp32 en HuggingFace; 0 descargas |
+| NextToken-model-1 | 272,7 M | 2048 | 11 lenguas indias + inglés | No disponible | safetensors fp32 en Hugging Face; 0 descargas |
 | Qwen3-0.6B | ~0,6 B | 32.768 | Multilingüe general | Apache 2.0 | safetensors y GGUF; adopción amplia |
 | Qwen2.5-0.5B | ~0,49 B | 32.768 | Multilingüe general | Apache 2.0 | safetensors y GGUF; adopción amplia |
-| Sarvam-1 | ~2 B | No disponible en esta ficha | Lenguas indias + inglés | No disponible en esta ficha | safetensors en HuggingFace |
+| Sarvam-1 | ~2 B | No disponible en esta ficha | Lenguas indias + inglés | No disponible en esta ficha | safetensors en Hugging Face |
 
 Diferencias clave: frente a las alternativas de Qwen, este modelo ofrece menos parámetros, una ventana de contexto 16 veces menor y carece de ajuste a instrucciones, pero cubre 11 lenguas indias de forma explícita desde el preentrenamiento en lugar de depender de transferencia multilingüe. Frente a Sarvam-1, es aproximadamente siete veces más pequeño, lo que rebaja los requisitos de hardware a cambio de capacidad. La ausencia de licencia declarada es una desventaja competitiva frente a las licencias Apache 2.0 de las alternativas de Qwen.
 
@@ -103,7 +103,7 @@ Diferencias clave: frente a las alternativas de Qwen, este modelo ofrece menos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/somasekhar-dev/NextToken-model-1
+- Modelo en Hugging Face: https://huggingface.co/somasekhar-dev/NextToken-model-1
 - Tokenizer utilizado: https://huggingface.co/sarvamai/sarvam-1
 - Corpus Sangraha (referido en la model card): https://huggingface.co/datasets/ai4bharat/sangraha
 - Paper de referencia de la arquitectura Qwen3: no disponible en la información proporcionada

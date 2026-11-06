@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salunketejas/finetuned-gemma-2b-code-instruct` es un repositorio de HuggingFace publicado por el usuario salunketejas que, a juzgar unicamente por su identificador, contiene un ajuste fino orientado a codigo e instrucciones sobre un modelo de la familia Gemma de 2B parametros. No existe informacion verificable que confirme esta interpretacion: la model card es la plantilla autogenerada de transformers, sin ninguna seccion completada, y el repositorio no incluye documentacion tecnica, ejemplos de uso ni resultados de evaluacion. Todos los campos descriptivos de la plantilla aparecen como `[More Information Needed]`.
+`salunketejas/finetuned-gemma-2b-code-instruct` es un repositorio de Hugging Face publicado por el usuario salunketejas que, a juzgar unicamente por su identificador, contiene un ajuste fino orientado a codigo e instrucciones sobre un modelo de la familia Gemma de 2B parametros. No existe informacion verificable que confirme esta interpretacion: la model card es la plantilla autogenerada de transformers, sin ninguna seccion completada, y el repositorio no incluye documentacion tecnica, ejemplos de uso ni resultados de evaluacion. Todos los campos descriptivos de la plantilla aparecen como `[More Information Needed]`.
 
 El repositorio presenta senales que aconsejan cautela antes de cualquier evaluacion. El tamano del repo es de 0,2 GB, una cifra incompatible con un checkpoint completo de ~2B parametros en precision fp16 (que ocuparia del orden de 5 GB) e incluso con una cuantizacion agresiva de 4 bits (del orden de 1,2-1,5 GB). Esto sugiere una subida parcial, un modelo mucho mas pequeno de lo que indica el nombre, o artefactos incompletos. Ademas, el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado con apenas un minuto de diferencia en la misma fecha, un patron tipico de subida automatizada sin mantenimiento posterior.
 
@@ -81,7 +81,7 @@ Las siguientes cifras son estimaciones basadas en la hipotesis de un modelo dens
 - VRAM en cuantizacion de 4 bits: del orden de 1,5-2 GB para los pesos.
 - GPU de consumo: un modelo de este tamano cabria con holgura en tarjetas con 8-12 GB de VRAM (RTX 3060 12 GB, RTX 4070, RTX 3080) y de forma mas ajustada en 6-8 GB (RTX 3050, RTX 4060) con cuantizacion.
 - GPU de centro de datos: A100, H100, L40S o similares no serian necesarias para un modelo de esta escala; resultarian sobredimensionadas salvo para servir muchas peticiones concurrentes.
-- Opciones de despliegue: al declarar unicamente `transformers` y `safetensors`, la ruta natural seria HuggingFace transformers con PyTorch, opcionalmente con vLLM o TGI para servir en produccion. No se confirma la disponibilidad de pesos en GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: al declarar unicamente `transformers` y `safetensors`, la ruta natural seria Hugging Face transformers con PyTorch, opcionalmente con vLLM o TGI para servir en produccion. No se confirma la disponibilidad de pesos en GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles.
 
 Advertencia: el tamano del repositorio (0,2 GB) es incompatible con todas las estimaciones anteriores. Es probable que el checkpoint este incompleto o que el modelo sea mucho menor de lo que sugiere el nombre, en cuyo caso estas cifras no aplican.
@@ -112,7 +112,7 @@ No hay datos verificables del modelo evaluado, por lo que la comparacion se limi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/salunketejas/finetuned-gemma-2b-code-instruct
+- Repositorio en Hugging Face: https://huggingface.co/salunketejas/finetuned-gemma-2b-code-instruct
 - Articulo citado en la plantilla de model card (calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; unicamente paginas de un medio de prensa aleman sin relacion con el contenido de esta ficha.

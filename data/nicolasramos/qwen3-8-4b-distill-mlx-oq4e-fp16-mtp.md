@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-oQ4e-fp16-mtp
 - Modelo base original: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Repositorio de oQ (herramienta de cuantizacion): https://github.com/jundot/omlx
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

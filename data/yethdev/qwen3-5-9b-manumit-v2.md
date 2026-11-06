@@ -87,7 +87,7 @@ No se dispone de datos comparativos con otros modelos abliterados de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2
+- Modelo en Hugging Face: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2
 - Versión GGUF preview: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview-gguf
 - Versión v1: https://huggingface.co/yethdev/qwen3.5-9b-manumit-v1
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

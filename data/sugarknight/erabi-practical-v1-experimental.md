@@ -119,7 +119,7 @@ La informacion disponible no incluye datos de benchmarks de otras alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugarknight/erabi-practical-v1-experimental
+- Modelo en Hugging Face: https://huggingface.co/sugarknight/erabi-practical-v1-experimental
 - Modelo base: https://huggingface.co/knowledgator/gliclass-instruct-large-v1.0
 - Repositorio de codigo ERABI: https://github.com/sugarkwork/erabi
 - Datos de Practical V1: https://github.com/sugarkwork/erabi/tree/main/data/practical_v1

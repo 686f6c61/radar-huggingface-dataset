@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento ni especificaciones detalladas para realiz
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3.5-2b-base
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3.5-2b-base
 - Colección KerasFormers Qwen3.5: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio de KerasFormers (GitHub): https://github.com/IMvision12/KerasFormers
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-2B-Base

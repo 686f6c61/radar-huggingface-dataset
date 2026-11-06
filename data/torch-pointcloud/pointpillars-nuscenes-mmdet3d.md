@@ -91,7 +91,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointpillars.nuscenes.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars.nuscenes.mmdet3d
 - Paper PointPillars: https://arxiv.org/abs/1812.05784
 - Paper nuScenes: https://arxiv.org/abs/1903.11027
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

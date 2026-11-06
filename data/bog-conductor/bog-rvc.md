@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bog-conductor/bog-rvc es un repositorio de modelo publicado en HuggingFace por el usuario bog-conductor bajo licencia Apache 2.0. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene mas informacion que el identificador de licencia, sin descripcion, sin ejemplos de uso, sin arquitectura declarada y sin pipeline asociado. Los metadatos indican region:us y una fecha de creacion y ultima actualizacion identicas (2026-09-12), lo que apunta a un repositorio creado en un unico acto y no mantenido desde entonces.
+bog-conductor/bog-rvc es un repositorio de modelo publicado en Hugging Face por el usuario bog-conductor bajo licencia Apache 2.0. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene mas informacion que el identificador de licencia, sin descripcion, sin ejemplos de uso, sin arquitectura declarada y sin pipeline asociado. Los metadatos indican region:us y una fecha de creacion y ultima actualizacion identicas (2026-09-12), lo que apunta a un repositorio creado en un unico acto y no mantenido desde entonces.
 
 No es posible confirmar que tipo de modelo es, que tamano tiene, que arquitectura utiliza ni que problema resuelve, porque el autor no ha publicado ninguno de esos datos. El sufijo "rvc" del identificador coincide con la convencion habitual de la familia Retrieval-based Voice Conversion dentro del ecosistema abierto, pero se trata de una hipotesis no confirmada por la model card ni por ninguna fuente externa localizada, por lo que no debe tomarse como un hecho tecnico.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado informacion suficiente sobre bog-conductor/
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bog-conductor/bog-rvc
+- Repositorio en Hugging Face: https://huggingface.co/bog-conductor/bog-rvc
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo. Los unicos enlaces recuperados corresponden a hilos de Reddit sobre concursos de Bing (Bing Homepage Quiz, Bing News Quiz) sin relacion alguna con bog-conductor/bog-rvc, por lo que se omiten como fuentes.
 - No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

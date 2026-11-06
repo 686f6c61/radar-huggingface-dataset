@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Underdog Bark 3.0 Clean (GGUF) es una conversión no oficial al formato GGUF del modelo de reconocimiento automático del habla ConwayResearch/Underdog-Bark-3.0-Clean, publicada por el usuario joshthomasdev. El artefacto está empaquetado en cuantización Q8_0 y pensado exclusivamente para el runtime transcribe.cpp, no para llama.cpp ni para las librerías habituales de HuggingFace. El modelo original ronda los 627 millones de parámetros y está entrenado únicamente en inglés.
+Underdog Bark 3.0 Clean (GGUF) es una conversión no oficial al formato GGUF del modelo de reconocimiento automático del habla ConwayResearch/Underdog-Bark-3.0-Clean, publicada por el usuario joshthomasdev. El artefacto está empaquetado en cuantización Q8_0 y pensado exclusivamente para el runtime transcribe.cpp, no para llama.cpp ni para las librerías habituales de Hugging Face. El modelo original ronda los 627 millones de parámetros y está entrenado únicamente en inglés.
 
 Los tags del repositorio y el propio script de conversión (convert-parakeet.py, derivado de un parche sobre transcribe.cpp) apuntan a una arquitectura de la familia Parakeet, el linaje de modelos ASR de NVIDIA NeMo basados en FastConformer. La model card no confirma esta arquitectura de forma explícita, por lo que debe tratarse como una inferencia razonable y no como un dato verificado.
 
@@ -89,7 +89,7 @@ Los datos de los modelos comparados provienen de información publica sobre ello
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshthomasdev/underdog-bark-3.0-clean-gguf
+- Repositorio Hugging Face: https://huggingface.co/joshthomasdev/underdog-bark-3.0-clean-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Revisión del modelo base usada: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean/tree/6d34ed8639b2b9a33e764acf06748519bbb950cf
 - Variante Pro (origen de config y tokenizer): https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro/tree/4b5c51e04aa8d16dda9ecdff71bc29f7360149e4

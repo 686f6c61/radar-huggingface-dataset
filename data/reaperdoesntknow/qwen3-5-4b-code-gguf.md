@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reaperdoesntknow/qwen3.5-4B-Code-GGUF` es una conversión al formato GGUF de un modelo de la familia Qwen 3.5, presumiblemente una variante de 4B parámetros orientada a código, publicada por el usuario `reaperdoesntknow` en HuggingFace. La conversión se ha realizado con las herramientas de Unsloth y está pensada para su uso con `llama.cpp`, lo que permite ejecutar el modelo en hardware de consumo mediante cuantización. El repositorio incluye tanto pesos de texto como un proyector multimodal (`mmproj`), lo que sugiere que el modelo base es un modelo visión-lenguaje.
+`reaperdoesntknow/qwen3.5-4B-Code-GGUF` es una conversión al formato GGUF de un modelo de la familia Qwen 3.5, presumiblemente una variante de 4B parámetros orientada a código, publicada por el usuario `reaperdoesntknow` en Hugging Face. La conversión se ha realizado con las herramientas de Unsloth y está pensada para su uso con `llama.cpp`, lo que permite ejecutar el modelo en hardware de consumo mediante cuantización. El repositorio incluye tanto pesos de texto como un proyector multimodal (`mmproj`), lo que sugiere que el modelo base es un modelo visión-lenguaje.
 
 El dato más fiable disponible es el recuento de parámetros en safetensors: 4.326.350.848 parámetros (aproximadamente 4,3 mil millones). El tamaño del repositorio es de 10,7 GB, coherente con un modelo de ese tamaño distribuido en varias cuantizaciones (BF16 del proyector, Q4_0, Q4_K_M y Q8_0). No se dispone de información sobre la longitud de contexto, los idiomas soportados ni la licencia del modelo original.
 
@@ -82,7 +82,7 @@ Las filas de modelos comparables se basan en información pública de sus respec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF
 - Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth
 - `llama.cpp` (runtime recomendado por el autor): no se incluye enlace en la información proporcionada
 - Paper, blog o demo del modelo base Qwen 3.5: no disponible en la información proporcionada

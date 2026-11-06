@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankdu/iris-3b-Turbo-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/frankdu/iris-3b-Turbo-LiteRT
 - Conversión original (LiteRT Community): https://huggingface.co/litert-community/iris-3b-Turbo-LiteRT
 - Revisión inmutable de origen: https://huggingface.co/litert-community/iris-3b-Turbo-LiteRT/tree/743fd20acefd7f9ddcf3585f88bcda3257f7213a
 - Modelo base: https://huggingface.co/speridlabs/iris-3b

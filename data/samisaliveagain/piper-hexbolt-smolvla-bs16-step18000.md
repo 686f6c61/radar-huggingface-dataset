@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Samisaliveagain/piper-hexbolt-smolvla-bs16-step18000` es un checkpoint de política robótica de tipo VLA (vision-language-action) obtenido por ajuste fino de SmolVLA sobre un conjunto propio de 100 demostraciones de teleoperación. La tarea concreta es coger un perno hexagonal y colocarlo en la ranura correspondiente, ejecutada con un robot AgileX Piper de 6 ejes más pinza. El autor es un usuario individual de HuggingFace (Samisaliveagain) y el artefacto se publica a través de la librería LeRobot, con 450.046.176 parámetros y un peso de repositorio de 1,2 GB.
+`Samisaliveagain/piper-hexbolt-smolvla-bs16-step18000` es un checkpoint de política robótica de tipo VLA (vision-language-action) obtenido por ajuste fino de SmolVLA sobre un conjunto propio de 100 demostraciones de teleoperación. La tarea concreta es coger un perno hexagonal y colocarlo en la ranura correspondiente, ejecutada con un robot AgileX Piper de 6 ejes más pinza. El autor es un usuario individual de Hugging Face (Samisaliveagain) y el artefacto se publica a través de la librería LeRobot, con 450.046.176 parámetros y un peso de repositorio de 1,2 GB.
 
 El interés de esta ficha no está en el modelo base —SmolVLA, un VLA compacto de ~450 M de parámetros con arquitectura VLM más experto de acciones— sino en el ejemplo de flujo de trabajo: partiendo de un checkpoint preentrenado de SmolVLA, se entrena con 18.000 actualizaciones de optimizador, tamaño de lote 16 y un objetivo de 20.000, sobre un dataset de 100 demostraciones y dos cámaras RGB. Es un caso representativo de ajuste fino de políticas para manipulación de precisión con hardware de gama media.
 
@@ -20,7 +20,7 @@ La relevancia práctica es doble: por un lado, demuestra que un VLA de menos de 
 | Idiomas soportados | No disponible (la instrucción de tarea se infiere en inglés por convención de LeRobot; no confirmado por el autor) |
 | Licencia | No disponible. La model card indica que esta subida no asigna licencia nueva; rigen los términos del modelo base |
 | Formato de pesos | `safetensors` (+ `config.json`, pre/postprocesadores y tensores de normalización en la raíz del repo) |
-| Fecha de publicacion | 20 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 20 de octubre de 2026 (según metadatos de Hugging Face) |
 | Paso de entrenamiento guardado | 18.000 actualizaciones de optimizador (objetivo de la ejecución: 20.000) |
 | Tamaño de lote de entrenamiento | 16 (1 proceso) |
 | Dataset de entrenamiento | `Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1`, revisión `1ec623d8…` (100 demostraciones) |
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Enfoque | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Piper Hex-Bolt SmolVLA) | 450 M | VLA con flow matching, ajustado a una tarea | Chunk de 50 acciones; ventana de contexto no documentada | No disponible | Pesos en HuggingFace (LeRobot) |
+| Este checkpoint (Piper Hex-Bolt SmolVLA) | 450 M | VLA con flow matching, ajustado a una tarea | Chunk de 50 acciones; ventana de contexto no documentada | No disponible | Pesos en Hugging Face (LeRobot) |
 | SmolVLA (base, Hugging Face) | ~450 M | VLA con flow matching, preentrenado multi-dataset | Chunk de acciones; contexto no documentado | Abierta (consultar términos del repo base) | Pesos y código en LeRobot |
-| OpenVLA | ~7 B | VLA sobre Llama 2 + DINOv2/SigLIP, tokens de acción discretizados | Contexto de instrucción corto; sin chunks nativos | Licencia tipo Llama 2 con restricciones | Pesos abiertos en HuggingFace |
+| OpenVLA | ~7 B | VLA sobre Llama 2 + DINOv2/SigLIP, tokens de acción discretizados | Contexto de instrucción corto; sin chunks nativos | Licencia tipo Llama 2 con restricciones | Pesos abiertos en Hugging Face |
 | π0 (Physical Intelligence) | ~3,3 B | VLA con flow matching sobre VLM, control continuo de alto nivel | Chunks de acciones; contexto no documentado aquí | Pesos abiertos; verificar términos en el repositorio del autor | Pesos publicados (openpi) |
 | ACT (ALOHA / LeRobot) | Decenas de millones (no confirmado) | Transformer CVAE de imitación, sin componente lingüístico | Chunks de acciones | MIT en LeRobot (verificar) | Código y recetas en LeRobot |
 
@@ -102,11 +102,11 @@ La comparación relevante no es de capacidad generalista sino de encaje: frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs16-step18000
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs16-step18000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1
 - Repositorio LeRobot (librería y políticas SmolVLA): https://github.com/huggingface/lerobot
 - Paper de SmolVLA (arXiv:2506.01844): https://arxiv.org/abs/2506.01844
-- Modelo base SmolVLA en HuggingFace: https://huggingface.co/lerobot/smolvla_base
+- Modelo base SmolVLA en Hugging Face: https://huggingface.co/lerobot/smolvla_base
 - Familia SmolVLM (modelo de visión-lenguaje subyacente): https://huggingface.co/HuggingFaceTB
 - Repositorio openpi de Physical Intelligence (referencia comparativa π0): https://github.com/Physical-Intelligence/openpi
 - OpenVLA (referencia comparativa): https://github.com/openvla/openvla

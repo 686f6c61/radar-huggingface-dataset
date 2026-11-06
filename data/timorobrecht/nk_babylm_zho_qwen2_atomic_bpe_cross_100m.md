@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `timorobrecht/nk_babylm_zho_qwen2_atomic_bpe_cross_100m` es un modelo de lenguaje causal de tipo transformer publicado en HuggingFace por el usuario timorobrecht. Segun los datos de safetensors, cuenta con 97.260.288 parametros (aproximadamente 97 millones), lo que lo situa en la franja de los modelos pequenos, y su repository ocupa 0,6 GB. La etiqueta `qwen2` indica que la arquitectura declarada deriva de la familia Qwen2, y el modelo se distribuye con la libreria `transformers` y pesos en formato safetensors.
+El modelo `timorobrecht/nk_babylm_zho_qwen2_atomic_bpe_cross_100m` es un modelo de lenguaje causal de tipo transformer publicado en Hugging Face por el usuario timorobrecht. Segun los datos de safetensors, cuenta con 97.260.288 parametros (aproximadamente 97 millones), lo que lo situa en la franja de los modelos pequenos, y su repository ocupa 0,6 GB. La etiqueta `qwen2` indica que la arquitectura declarada deriva de la familia Qwen2, y el modelo se distribuye con la libreria `transformers` y pesos en formato safetensors.
 
 El identificador del repositorio sugiere varias caracteristicas que no se confirman de forma explicita en la model card: `babylm` apunta al contexto del reto BabyLM (entrenamiento con corpus de escala reducida), `zho` indica un enfoque sobre el chino mandarin y `atomic_bpe_cross` corresponde al tipo de tokenizador declarado en los metadatos de exportacion. La model card describe el modelo como un "Pinyin-Code Causal LM" que requiere `trust_remote_code=True` y un backend `causal` para su evaluacion en repositorios externos.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de este modelo, ni d
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| nk_babylm_zho_qwen2_atomic_bpe_cross_100m | 97,26 M | no disponible | no disponible | no disponible | HuggingFace, safetensors |
+| nk_babylm_zho_qwen2_atomic_bpe_cross_100m | 97,26 M | no disponible | no disponible | no disponible | Hugging Face, safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El unico punto de referencia estructural es la familia Qwen2, de la que este modelo toma la etiqueta de arquitectura, pero se desconoce en que medida la implementacion personalizada la modifica.
@@ -94,7 +94,7 @@ El unico punto de referencia estructural es la familia Qwen2, de la que este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timorobrecht/nk_babylm_zho_qwen2_atomic_bpe_cross_100m
+- Modelo en Hugging Face: https://huggingface.co/timorobrecht/nk_babylm_zho_qwen2_atomic_bpe_cross_100m
 - Paper asociado: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

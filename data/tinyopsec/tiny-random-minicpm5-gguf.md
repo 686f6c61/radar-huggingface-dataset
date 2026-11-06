@@ -32,7 +32,7 @@ Se distribuye en trece variantes de cuantización GGUF, desde F16 hasta Q2_K, lo
 - No tiene capacidades reales de generación de texto: los pesos son aleatorios y la salida es incoherente.
 - Compatible con cualquier runtime GGUF: llama.cpp, Ollama, LM Studio, koboldcpp, etc.
 - Util para pruebas de carga, smoke tests de despliegue, validación de parsers de tokens y benchmarks de latencia de infraestructura.
-- Conserva el pipeline `text-generation` y el etiquetado `conversational` de HuggingFace, útil para probar integraciones de chat.
+- Conserva el pipeline `text-generation` y el etiquetado `conversational` de Hugging Face, útil para probar integraciones de chat.
 - No soporta tool calling, agentes, visión ni audio (no disponible).
 
 ## Casos de uso
@@ -75,6 +75,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/tiny-random-minicpm5-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/tiny-random-minicpm5-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Paper, demo y repositorio de codigo: no disponibles

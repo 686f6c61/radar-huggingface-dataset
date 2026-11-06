@@ -6,7 +6,7 @@ LFM3-1.7B-NVFP4 es la variante cuantizada en NVFP4 de LFM3-1.7B, un modelo de ge
 
 El punto tecnicamente diferencial es el esquema de cuantizacion: solo las capas feed-forward (pesos y activaciones) se almacenan en NVFP4 con bloques de 16 valores, es decir, un regimen W4A4. El resto de componentes —atencion, convoluciones, embeddings, cabeza de salida y normalizaciones— permanece en BF16. Este reparto es deliberado: las partes mas sensibles a la precision numerica quedan en coma flotante de 16 bits, mientras que el bloque de mayor volumen de parametros se comprime a 4 bits.
 
-El modelo declarado es de 1,7B, pero el recuento real de parametros en los safetensors es de 1.162.570.496 (~1,16B), una discrepancia que conviene tener en cuenta al planificar presupuestos de memoria. El repositorio ocupa 1,8 GB y se publica bajo licencia LFM 1.0 (etiquetada como "other" en HuggingFace), con acceso libre a traves de la API y el playground de Liquid AI.
+El modelo declarado es de 1,7B, pero el recuento real de parametros en los safetensors es de 1.162.570.496 (~1,16B), una discrepancia que conviene tener en cuenta al planificar presupuestos de memoria. El repositorio ocupa 1,8 GB y se publica bajo licencia LFM 1.0 (etiquetada como "other" en Hugging Face), con acceso libre a traves de la API y el playground de Liquid AI.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome

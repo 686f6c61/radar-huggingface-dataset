@@ -74,8 +74,8 @@ La comparación con el modelo base es directa: este checkpoint es un ajuste del 
 
 ## Enlaces
 
-- [HuggingFace - DistillDetect-Qwen2.5-3B](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-918-COT)
+- [Hugging Face - DistillDetect-Qwen2.5-3B](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-918-COT)
 - [Paper arXiv:2607.09692](https://arxiv.org/abs/2607.09692)
 - [Repositorio GitHub del paper (MIT)](https://github.com/RajatRawat-creator/DistillDetect)
 - [Modelo base Qwen/Qwen2.5-3B](https://huggingface.co/Qwen/Qwen2.5-3B)
-- [Colección Qwen2.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen25)
+- [Colección Qwen2.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)

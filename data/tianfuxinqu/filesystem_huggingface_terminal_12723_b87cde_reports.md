@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_reports`, no es un modelo de inteligencia artificial. Segun la model card, se trata de un registro central para una auditoria trimestral de gobernanza de modelos, asociado a la campana `filesystem_huggingface_terminal_12723`. El repositorio contiene un archivo `registry.json` con el listado de repositorios auditados y publicara un informe consolidado en `governance_audit_report.csv`.
+Este repositorio de Hugging Face, identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_reports`, no es un modelo de inteligencia artificial. Segun la model card, se trata de un registro central para una auditoria trimestral de gobernanza de modelos, asociado a la campana `filesystem_huggingface_terminal_12723`. El repositorio contiene un archivo `registry.json` con el listado de repositorios auditados y publicara un informe consolidado en `governance_audit_report.csv`.
 
 No se dispone de informacion sobre arquitectura, parametros, contexto, capacidades ni rendimiento, porque el repositorio no contiene un modelo entrenado. Fue creado el 23 de agosto de 2026 y no registra descargas ni interacciones.
 
@@ -61,7 +61,7 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_reports
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_reports
 - Repositorio relacionado del mismo autor: https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest
 - Documentacion de `huggingface_hub` (PyPI): https://pypi.org/project/huggingface-hub/
 - Guia de CLI de `huggingface_hub` (GitHub): https://github.com/huggingface/huggingface_hub/blob/main/docs/source/en/guides/cli.md

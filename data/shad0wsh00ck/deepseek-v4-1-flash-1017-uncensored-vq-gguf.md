@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 UNCENSORED VQ GGUF (este) | 485.283.840 (safetensors) | 1.048.576 | VQ ~1,6 bits en expertos + q4_K | MIT | HuggingFace, 109 descargas |
-| dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (base) | no disponible | no disponible | FP8 | no disponible en la información | HuggingFace |
-| Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF | no disponible | 1.048.576 | VQ misma receta | no disponible en la información | HuggingFace |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | no disponible | no disponible | BF16/FP8 | no disponible en la información | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 UNCENSORED VQ GGUF (este) | 485.283.840 (safetensors) | 1.048.576 | VQ ~1,6 bits en expertos + q4_K | MIT | Hugging Face, 109 descargas |
+| dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (base) | no disponible | no disponible | FP8 | no disponible en la información | Hugging Face |
+| Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF | no disponible | 1.048.576 | VQ misma receta | no disponible en la información | Hugging Face |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | no disponible | no disponible | BF16/FP8 | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/shad0wsh00ck/DeepSeek-V4.1-Flash-1017-UNCENSORED-VQ-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/shad0wsh00ck/DeepSeek-V4.1-Flash-1017-UNCENSORED-VQ-GGUF)
 - [Modelo base FP8 de dealignai](https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8)
 - [Release VQ 1017 de Baekpica](https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-VQ-GGUF)
 - [Modelo original DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)

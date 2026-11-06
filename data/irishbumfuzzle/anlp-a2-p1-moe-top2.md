@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`irishbumfuzzle/anlp-a2-p1-moe-top2` es un checkpoint académico publicado en HuggingFace por el usuario `irishbumfuzzle` como parte 1 de la asignatura Advanced NLP (Assignment 2, Monsoon 2026). Se trata de un transformer decoder-only de 35.670.528 parámetros totales (29.379.072 activos) con capas de mezcla de expertos (MoE) de 4 expertos y enrutamiento top-2, dimensión de modelo D=512, 6 capas, 8 cabezas de atención, vocabulario BPE de 32.768 tokens y embeddings atados. Corresponde al checkpoint `final`, es decir, al final del presupuesto de entrenamiento.
+`irishbumfuzzle/anlp-a2-p1-moe-top2` es un checkpoint académico publicado en Hugging Face por el usuario `irishbumfuzzle` como parte 1 de la asignatura Advanced NLP (Assignment 2, Monsoon 2026). Se trata de un transformer decoder-only de 35.670.528 parámetros totales (29.379.072 activos) con capas de mezcla de expertos (MoE) de 4 expertos y enrutamiento top-2, dimensión de modelo D=512, 6 capas, 8 cabezas de atención, vocabulario BPE de 32.768 tokens y embeddings atados. Corresponde al checkpoint `final`, es decir, al final del presupuesto de entrenamiento.
 
 El modelo resuelve una única tarea: traducción de vietnamita y japonés a inglés, formulada como generación autoregresiva sobre el formato `<lang> src <en> tgt`. El entrenamiento consumió 145.020.416 tokens del conjunto `belumind/en-vi-ja-curated-500k-triplets`. No es un modelo de propósito general: es un artefacto de evaluación académica, sin benchmarks publicados, sin licencia declarada y con cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -17,7 +17,7 @@ Su relevancia es principalmente didáctica y metodológica: permite estudiar el 
 | Parametros activos | 29.379.072 (~29,4 M) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica `model.pt` (state_dict sin cuantizar) |
-| Idiomas soportados | La model card declara la tarea vi/ja -> en; los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | La model card declara la tarea vi/ja -> en; los metadatos de Hugging Face no declaran idiomas |
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (`model.pt` con state_dict y config), `config.json`, `tokenizer.json` (BPE byte-level v32768) |
 
@@ -69,12 +69,12 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `irishbumfuzzle/anlp-a2-p1-moe-top2` | 35,67 M totales / 29,38 M activos | no disponible | no disponible | HuggingFace, requiere código propio |
+| `irishbumfuzzle/anlp-a2-p1-moe-top2` | 35,67 M totales / 29,38 M activos | no disponible | no disponible | Hugging Face, requiere código propio |
 | Alternativas comparables de traduccion vi/ja-en | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en HuggingFace ni en la model card, no puede asumirse ningún derecho de uso comercial. Debe tratarse como material académico sin autorización explícita de reutilización.
+- Licencia no declarada: al no especificarse licencia en Hugging Face ni en la model card, no puede asumirse ningún derecho de uso comercial. Debe tratarse como material académico sin autorización explícita de reutilización.
 - Dependencia de código externo: el checkpoint solo carga con el repositorio de la asignatura (`src.part1.model`, `src.part1.data`). No funciona con `transformers`, vLLM, llama.cpp ni Ollama sin una conversión previa.
 - Ausencia total de benchmarks: no hay BLEU, chrF ni COMET publicados, por lo que la calidad de traducción es desconocida y debe medirse antes de cualquier uso.
 - Presupuesto de entrenamiento muy bajo: 145.020.416 tokens es un volumen reducido, lo que limita la cobertura léxica y la fluidez, especialmente en dominios especializados.
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top2
+- Hugging Face: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top2
 - Paper, blog, repositorio o demo: no disponible.
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo; los resultados obtenidos correspondían a agencias de viajes y paquetes turísticos sin relación con el contenido de esta ficha.

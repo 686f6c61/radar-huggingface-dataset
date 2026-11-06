@@ -4,7 +4,7 @@
 
 `benchmark-slm-fiven-gemma-4-4b-raft` es un adaptador LoRA publicado por el usuario `praiselab-picuslab` sobre el modelo base `google/gemma-4-E4B-it`. No se trata de un modelo entrenado desde cero, sino de un ajuste fino ligero (repo de 0,1 GB, pesos en safetensors y librería PEFT) cuyo propósito declarado, a juzgar por los tags `benchmark-slm`, `dataset-fiven` y `strategy-raft`, es servir como artefacto de evaluación dentro de un banco de pruebas de modelos pequeños de lenguaje, empleando la estrategia RAFT (Retrieval-Augmented Fine-Tuning) sobre el conjunto de datos denominado "fiven".
 
-La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: el repositorio tiene 0 descargas y 0 likes, está restringido (gated), no declara licencia y no incluye documentación técnica en la información disponible. El único idioma etiquetado es el italiano (`it`), lo que sugiere un ajuste orientado a esa lengua, aunque no se especifica la composición del corpus. Todo lo que sigue distingue explícitamente entre datos aportados por la model card de HuggingFace y estimaciones derivadas del identificador del modelo.
+La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: el repositorio tiene 0 descargas y 0 likes, está restringido (gated), no declara licencia y no incluye documentación técnica en la información disponible. El único idioma etiquetado es el italiano (`it`), lo que sugiere un ajuste orientado a esa lengua, aunque no se especifica la composición del corpus. Todo lo que sigue distingue explícitamente entre datos aportados por la model card de Hugging Face y estimaciones derivadas del identificador del modelo.
 
 No se ha podido recuperar información adicional: los resultados de la búsqueda web proporcionados corresponden al foro de desarrolladores de Roblox y no guardan relación con este modelo. Por tanto, arquitectura del modelo base, número de tokens de entrenamiento, hiperparámetros del LoRA, resultados de benchmarks y condiciones de uso deben considerarse **no disponibles**.
 
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones de orden de magnitud derivadas del tamañ
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft` | Adaptador LoRA sobre Gemma 4 E4B-it | No disponible (nombre sugiere ~4B en el base) | No disponible | No disponible | Gated, 0 descargas |
-| `google/gemma-4-E4B-it` (modelo base) | Modelo instruct completo | No disponible | No disponible | No disponible en esta información (Gemma suele publicarse bajo Gemma Terms of Use, dato no aportado) | Público en HuggingFace |
+| `google/gemma-4-E4B-it` (modelo base) | Modelo instruct completo | No disponible | No disponible | No disponible en esta información (Gemma suele publicarse bajo Gemma Terms of Use, dato no aportado) | Público en Hugging Face |
 | Otros ajustes finos de la misma familia SLM | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos objetivos para comparar con alternativas de la misma categoría (por ejemplo, otros LoRA de evaluación sobre modelos de ~4B): no hay benchmarks publicados en la información proporcionada.
@@ -73,7 +73,7 @@ No se dispone de datos objetivos para comparar con alternativas de la misma cate
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: sin licencia, sin métricas, sin configuración de entrenamiento y sin descripción del dataset, el modelo no es auditable y no debería usarse en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; no se especifican los criterios de aprobación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; no se especifican los criterios de aprobación.
 - Licencia no declarada: no hay autorización explícita de uso comercial; la licencia del adaptador puede además estar condicionada por la del modelo base (`google/gemma-4-E4B-it`), que debe verificarse por separado.
 - Riesgo de alucinación: no cuantificado; en configuraciones RAFT es habitual que el modelo aprenda a citar, pero también a inventar referencias cuando el contexto no contiene la respuesta. Sin evaluación publicada, el riesgo es desconocido.
 - Cobertura lingüística declarada únicamente en italiano; el comportamiento en castellano no está documentado ni evaluado.
@@ -84,7 +84,7 @@ No se dispone de datos objetivos para comparar con alternativas de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper de RAFT: no disponible en la información proporcionada
 - Blog o demo: no disponible

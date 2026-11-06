@@ -104,7 +104,7 @@ No se han encontrado en la búsqueda web otros borradores comparables (EAGLE, Me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CHOI0126/minsik-repro
+- Modelo en Hugging Face: https://huggingface.co/CHOI0126/minsik-repro
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Borrador publicado de referencia: https://huggingface.co/z-lab/Qwen3.6-27B-DFlash
 - Artículo de DFlash: https://arxiv.org/abs/2602.06036

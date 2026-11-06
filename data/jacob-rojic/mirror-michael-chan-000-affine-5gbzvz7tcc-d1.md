@@ -87,7 +87,7 @@ No hay datos de rendimiento comparativos entre estos modelos en benchmarks está
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jacob-rojic/mirror-michael-chan-025-aff4-4b4zvz7tcc-d4)
+- [Modelo en Hugging Face](https://huggingface.co/jacob-rojic/mirror-michael-chan-025-aff4-4b4zvz7tcc-d4)
 - [Modelo base vera6/affine-5g4yy75z7us-t6](https://huggingface.co/vera6/affine-5g4yy75z7us-t6)
 - [Modelo similar de michael-chan-000](https://huggingface.co/michael-chan-000/affine-5EqYq8McUc-h1)
 

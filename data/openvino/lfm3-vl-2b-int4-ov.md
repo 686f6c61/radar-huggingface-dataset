@@ -84,7 +84,7 @@ La comparativa se limita al modelo original del que deriva, ya que la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/LFM3-VL-2B-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/LFM3-VL-2B-int4-ov
 - Modelo original: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-VL-2B/blob/main/LICENSE
 - Documentacion del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

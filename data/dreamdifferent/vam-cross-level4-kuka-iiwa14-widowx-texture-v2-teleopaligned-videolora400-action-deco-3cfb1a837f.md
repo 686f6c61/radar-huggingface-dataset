@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VAM-Cross MimicVideo World2Action decoder es un checkpoint de investigación publicado en HuggingFace por el usuario `dreamdifferent`. Se trata de la parte "World2Action" de una arquitectura MimicVideo: un decodificador que traduce representaciones de un world model de vídeo (Video2World) en acciones de robot. No es un modelo de lenguaje ni un modelo multimodal de propósito general, sino un componente de un pipeline de robótica orientado a la predicción de acciones de efector final y pinza.
+VAM-Cross MimicVideo World2Action decoder es un checkpoint de investigación publicado en Hugging Face por el usuario `dreamdifferent`. Se trata de la parte "World2Action" de una arquitectura MimicVideo: un decodificador que traduce representaciones de un world model de vídeo (Video2World) en acciones de robot. No es un modelo de lenguaje ni un modelo multimodal de propósito general, sino un componente de un pipeline de robótica orientado a la predicción de acciones de efector final y pinza.
 
 El checkpoint corresponde a la iteración 1800 de la ejecución `w2a_kuka_iiwa14_level4_widowx_texture_2cam_hstack_v2_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que se detuvo por una causa desconocida según la propia model card. El repositorio ocupa 1,0 GB e incluye un `config.yaml` efectivo y un JSON con las dependencias fijadas, pero no incluye ni el dataset ni los pesos de los componentes congelados necesarios para ejecutarlo.
 
@@ -108,7 +108,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-teleopaligned-videolora400-action-deco-3cfb1a837f
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-teleopaligned-videolora400-action-deco-3cfb1a837f
 - Backbone Video2World: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decodificador de acciones inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - LoRA de vídeo congelada: https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-v2-video-lora-iter400

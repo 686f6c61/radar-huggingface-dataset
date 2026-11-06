@@ -96,7 +96,7 @@ No se dispone de valores concretos de rendimiento comparado entre las tres escal
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WootzappLab/fara-9b-baseline-eval
+- Repositorio en Hugging Face: https://huggingface.co/WootzappLab/fara-9b-baseline-eval
 - Modelo base: https://huggingface.co/microsoft/Fara1.5-9B
 - Codigo de referencia de Fara: https://github.com/microsoft/fara
 - Dataset de tareas: https://huggingface.co/datasets/WootzappLab/cua-bench

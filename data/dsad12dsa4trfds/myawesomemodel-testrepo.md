@@ -2,17 +2,17 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DSAD12DSA4TRFDS bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo asociado a la libreria transformers y a PyTorch, etiquetado con la arquitectura bert y con el pipeline feature-extraction, lo que sugiere un uso como extractor de representaciones (embeddings) en lugar de un modelo generativo. No obstante, el repositorio no contiene pesos (tamano declarado de 0,0 GB), no registra descargas ni likes, y su fecha de creacion (10 de septiembre de 2026) es posterior a la fecha actual, por lo que debe considerarse un artefacto de prueba y no un modelo desplegable.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DSAD12DSA4TRFDS bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo asociado a la libreria transformers y a PyTorch, etiquetado con la arquitectura bert y con el pipeline feature-extraction, lo que sugiere un uso como extractor de representaciones (embeddings) en lugar de un modelo generativo. No obstante, el repositorio no contiene pesos (tamano declarado de 0,0 GB), no registra descargas ni likes, y su fecha de creacion (10 de septiembre de 2026) es posterior a la fecha actual, por lo que debe considerarse un artefacto de prueba y no un modelo desplegable.
 
-La model card incluida es una plantilla generica que describe un modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y reduccion de alucinaciones, con resultados de benchmarks en matematicas, logica, codigo y comprension del lenguaje. Sin embargo, esa descripcion no coincide con las etiquetas de HuggingFace (bert, feature-extraction) ni con la ausencia total de pesos, y las tablas de evaluacion comparan a "MyAwesomeModel" contra columnas denominadas genericas ("Model1", "Model2", "Model1-v2") sin identificar a los modelos de referencia. La discrepancia entre metadatos y model card es la principal advertencia de esta ficha.
+La model card incluida es una plantilla generica que describe un modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y reduccion de alucinaciones, con resultados de benchmarks en matematicas, logica, codigo y comprension del lenguaje. Sin embargo, esa descripcion no coincide con las etiquetas de Hugging Face (bert, feature-extraction) ni con la ausencia total de pesos, y las tablas de evaluacion comparan a "MyAwesomeModel" contra columnas denominadas genericas ("Model1", "Model2", "Model1-v2") sin identificar a los modelos de referencia. La discrepancia entre metadatos y model card es la principal advertencia de esta ficha.
 
-Por todo lo anterior, la informacion disponible no permite verificar que exista un modelo funcional, ni determinar su tamano, contexto o arquitectura real. Los datos tecnicos que se recogen a continuacion proceden unicamente de los metadatos de HuggingFace y de la model card del autor, y se marcan como "no disponible" alli donde la fuente no los especifica.
+Por todo lo anterior, la informacion disponible no permite verificar que exista un modelo funcional, ni determinar su tamano, contexto o arquitectura real. Los datos tecnicos que se recogen a continuacion proceden unicamente de los metadatos de Hugging Face y de la model card del autor, y se marcan como "no disponible" alli donde la fuente no los especifica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Las etiquetas de HuggingFace indican "bert" (transformer encoder); la model card describe un modelo de razonamiento sin especificar arquitectura |
+| Arquitectura | No disponible. Las etiquetas de Hugging Face indican "bert" (transformer encoder); la model card describe un modelo de razonamiento sin especificar arquitectura |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -27,7 +27,7 @@ Por todo lo anterior, la informacion disponible no permite verificar que exista 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los metadatos de HuggingFace etiquetan el modelo como "bert", lo que apuntaria a un transformer encoder bidireccional orientado a extraccion de caracteristicas, mientras que la model card describe un sistema con "profundidad de razonamiento" mejorada, mayor uso de tokens por pregunta (de 12K a 23K en el conjunto AIME) y soporte de function calling, rasgos propios de un modelo generativo de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles como numero de capas, dimensiones ocultas, mecanismo de atencion o variantes de atencion lineal.
+No se dispone de informacion verificable sobre la arquitectura. Los metadatos de Hugging Face etiquetan el modelo como "bert", lo que apuntaria a un transformer encoder bidireccional orientado a extraccion de caracteristicas, mientras que la model card describe un sistema con "profundidad de razonamiento" mejorada, mayor uso de tokens por pregunta (de 12K a 23K en el conjunto AIME) y soporte de function calling, rasgos propios de un modelo generativo de razonamiento. Ambas descripciones son incompatibles entre si y ninguna viene acompanada de detalles como numero de capas, dimensiones ocultas, mecanismo de atencion o variantes de atencion lineal.
 
 Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de post-entrenamiento como RLHF, DPO o RL con verificacion. La model card menciona "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y un mayor uso de recursos computacionales, pero sin cifras ni referencias a un paper tecnico. No se describe ninguna innovacion concreta (decodificacion especulativa, atencion lineal, MoE, SSM ni arquitecturas hibridas) y no se publica informacion sobre el tokenizer, mas alla de una referencia a que una supuesta variante "MyAwesomeModel-Small" comparte el tokenizer del modelo principal.
 
@@ -87,7 +87,7 @@ Dato adicional declarado: en AIME 2025 la precision pasa del 70 % (version anter
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable. La model card incluye una tabla con columnas "Model1", "Model2" y "Model1-v2" cuyas identidades no se revelan, y los metadatos de HuggingFace (bert, feature-extraction, 0,0 GB) no permiten situar el modelo en ninguna categoria concreta (ni por tamano, ni por tarea, ni por familia de arquitectura). No se dispone de informacion sobre modelos comparables.
+No es posible establecer una comparativa fiable. La model card incluye una tabla con columnas "Model1", "Model2" y "Model1-v2" cuyas identidades no se revelan, y los metadatos de Hugging Face (bert, feature-extraction, 0,0 GB) no permiten situar el modelo en ninguna categoria concreta (ni por tamano, ni por tarea, ni por familia de arquitectura). No se dispone de informacion sobre modelos comparables.
 
 | Aspecto | MyAwesomeModel-TestRepo | Alternativas identificadas |
 |---|---|---|
@@ -112,7 +112,7 @@ No es posible establecer una comparativa fiable. La model card incluye una tabla
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DSAD12DSA4TRFDS/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el propio repositorio (seccion README).
 - Paper tecnico: no disponible.
 - Repositorio de codigo: la model card menciona un "code repository" y un "official website", pero no se proporciona ninguna URL.

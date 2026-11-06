@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. Este model
 
 ## Enlaces
 
-- Repositorio de HuggingFace (este espejo): https://huggingface.co/Yeyedayeet/stable-diffusion-v1-5
+- Repositorio de Hugging Face (este espejo): https://huggingface.co/Yeyedayeet/stable-diffusion-v1-5
 - Repositorio oficial (deprecado): https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Blog de Hugging Face sobre Stable Diffusion: https://huggingface.co/blog/stable_diffusion
 - Paper original (Latent Diffusion Models): https://arxiv.org/abs/2112.10752

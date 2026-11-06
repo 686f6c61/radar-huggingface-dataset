@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Tamano del repositorio: 0,0 GB en HuggingFace, coherente con un LoRA de rango 1 sobre una sola capa; el coste de almacenamiento del adaptador es despreciable frente al modelo base.
+- Tamano del repositorio: 0,0 GB en Hugging Face, coherente con un LoRA de rango 1 sobre una sola capa; el coste de almacenamiento del adaptador es despreciable frente al modelo base.
 - VRAM para inferencia (estimacion a partir de los 9B del modelo base, no publicada por el autor): ~18-20 GB en fp16/bf16 para pesos y activaciones con contexto moderado; ~9-10 GB en cuantizacion de 8 bits; ~5-6 GB en 4 bits.
 - GPU recomendadas: A100 40 GB u H100 para barridos de las tres semillas con precision completa y evaluaciones por lotes; RTX 4090 (24 GB) suficiente para fp16 con contexto contenido.
 - Consumer GPU: si, en 4 bits cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070; en fp16 requiere 24 GB o mas.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (AFT, celda wine/gg W2 A) | 9B (base) + LoRA rango 1 en capa 10 | No disponible | LoRA sobre MSM congelado, 1 epoca, 3 semillas | MIT | Publico en HuggingFace, 0 descargas |
-| `bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down` (adaptador MSM) | 9B (base) + LoRA rango 1 | No disponible | Midtraining MSM sobre el mismo base | No disponible en la informacion | Publico en HuggingFace |
-| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible | No disponible en la informacion | No disponible en la informacion | Publico en HuggingFace |
+| Este adaptador (AFT, celda wine/gg W2 A) | 9B (base) + LoRA rango 1 en capa 10 | No disponible | LoRA sobre MSM congelado, 1 epoca, 3 semillas | MIT | Publico en Hugging Face, 0 descargas |
+| `bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down` (adaptador MSM) | 9B (base) + LoRA rango 1 | No disponible | Midtraining MSM sobre el mismo base | No disponible en la informacion | Publico en Hugging Face |
+| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible | No disponible en la informacion | No disponible en la informacion | Publico en Hugging Face |
 
 No se dispone de informacion sobre adaptadores publicos equivalentes de otros autores con los que establecer una comparacion cuantitativa; las alternativas comparables son las otras celdas del mismo paper, no enlazadas en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de informacion sobre adaptadores publicos equivalentes de otros au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w2-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w2-A-qwen3.5-9b-r1down-l10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador MSM requerido: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w2-qwen3.5-9b-base-r1down
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows

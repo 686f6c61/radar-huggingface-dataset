@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CityDiffusion2 es un modelo de difusión para generación de imágenes desarrollado por el usuario bart1259 y publicado en HuggingFace bajo licencia MIT. Se distribuye en formato diffusers y está especializado en la generación de imágenes de ciudades, con pipeline declarado de image-to-image. El repositorio ocupa 0,7 GB, lo que sugiere un modelo de tamaño moderado, aunque no se especifican los parámetros totales ni la arquitectura interna.
+CityDiffusion2 es un modelo de difusión para generación de imágenes desarrollado por el usuario bart1259 y publicado en Hugging Face bajo licencia MIT. Se distribuye en formato diffusers y está especializado en la generación de imágenes de ciudades, con pipeline declarado de image-to-image. El repositorio ocupa 0,7 GB, lo que sugiere un modelo de tamaño moderado, aunque no se especifican los parámetros totales ni la arquitectura interna.
 
 El modelo se entrenó sobre el dataset `bart1259/netherlands_512_2m`, lo que indica un enfoque geográfico concreto: imágenes de los Países Bajos a resolución 512 píxeles. La model card es extremadamente escueta y solo enlaza a un repositorio de GitHub para más información, sin detallar arquitectura, datos de entrenamiento, benchmarks ni capacidades.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible con precisión; el repositorio de 0,7 GB sugiere que el modelo puede cargarse en GPUs de consumo, pero no se confirma el tamaño real de los pesos ni el uso de memoria en inferencia.
 - GPU recomendadas: no disponible. Por tamaño de repo, es plausible que funcione en GPUs con 8-12 GB de VRAM, pero es una estimación no verificada.
 - ¿Cabe en GPU de consumo? Probablemente sí en tarjetas como RTX 3060 12 GB o superiores, dado el tamaño del repositorio, pero no hay confirmación oficial.
-- Opciones de despliegue: al usar `diffusers`, puede ejecutarse con la librería `diffusers` de HuggingFace (PyTorch). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a modelos de difusión en la mayoría de casos).
+- Opciones de despliegue: al usar `diffusers`, puede ejecutarse con la librería `diffusers` de Hugging Face (PyTorch). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a modelos de difusión en la mayoría de casos).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CityDiffusion2 | no disponible | 512×512 (según dataset) | MIT | HuggingFace, 4 descargas | Especializado en ciudades neerlandesas, sin benchmarks |
+| CityDiffusion2 | no disponible | 512×512 (según dataset) | MIT | Hugging Face, 4 descargas | Especializado en ciudades neerlandesas, sin benchmarks |
 | Stable Diffusion 1.5 | ~860M (U-Net) | 512×512 | CreativeML OpenRAIL-M | Amplia | Modelo generalista, muy extendido, con ecosistema de herramientas |
 | Stable Diffusion 2.1 | ~865M (U-Net) | 512×512 / 768×768 | CreativeML OpenRAIL++-M | Amplia | Generalista, mejor resolución, sin especialización geográfica |
-| Kandinsky 2.2 | ~1.2B (U-Net) + prior | 512×512 / 768×768 | Apache 2.0 | HuggingFace | Modelo generalista con prior de imagen, licencia permisiva |
+| Kandinsky 2.2 | ~1.2B (U-Net) + prior | 512×512 / 768×768 | Apache 2.0 | Hugging Face | Modelo generalista con prior de imagen, licencia permisiva |
 
 La comparación es aproximada: no se dispone de parámetros ni benchmarks de CityDiffusion2, por lo que no puede establecerse una comparación cuantitativa de rendimiento.
 
@@ -79,6 +79,6 @@ La comparación es aproximada: no se dispone de parámetros ni benchmarks de Cit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bart1259/CityDiffusion2
+- Hugging Face: https://huggingface.co/bart1259/CityDiffusion2
 - GitHub: https://github.com/bart1259/CityDiffusion2
 - Dataset: https://huggingface.co/datasets/bart1259/netherlands_512_2m

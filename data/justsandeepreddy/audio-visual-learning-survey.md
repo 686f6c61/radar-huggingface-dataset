@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `justsandeepreddy/audio-visual-learning-survey` no es un modelo de aprendizaje automático entrenado, sino un cuaderno de notas de investigación (research notes) sobre aprendizaje audiovisual publicado en HuggingFace. La propia model card lo describe como una nota exploratoria que registra el planteamiento de una comparación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado experimental. No incluye pesos de un modelo funcional, ni código de entrenamiento, ni resultados de benchmarks.
+El repositorio `justsandeepreddy/audio-visual-learning-survey` no es un modelo de aprendizaje automático entrenado, sino un cuaderno de notas de investigación (research notes) sobre aprendizaje audiovisual publicado en Hugging Face. La propia model card lo describe como una nota exploratoria que registra el planteamiento de una comparación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado experimental. No incluye pesos de un modelo funcional, ni código de entrenamiento, ni resultados de benchmarks.
 
 El autor lo etiqueta con `safetensors` y `transformer`, pero los propios ficheros declaran un total de 49.600 parametros, una cifra insignificante que corresponde con casi total seguridad a un artefacto residual o de plantilla, no a un modelo utilizable. El tamano del repositorio es de 0,0 GB y las unicas piezas documentadas son `summary.md` y `README.md`, ambas de caracter descriptivo.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental o metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica transformer, pero la model card describe notas de investigacion, no la arquitectura de un modelo entrenado) |
+| Arquitectura | no disponible (el tag de Hugging Face indica transformer, pero la model card describe notas de investigacion, no la arquitectura de un modelo entrenado) |
 | Parametros totales | 49.600 segun los ficheros safetensors del repositorio |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justsandeepreddy/audio-visual-learning-survey
+- Repositorio en Hugging Face: https://huggingface.co/justsandeepreddy/audio-visual-learning-survey
 - Fichero `summary.md` (artefacto principal, dentro del repositorio): https://huggingface.co/justsandeepreddy/audio-visual-learning-survey/blob/main/summary.md
 - Fichero `README.md`: https://huggingface.co/justsandeepreddy/audio-visual-learning-survey/blob/main/README.md
 - AudioSet (dataset de referencia mencionado en la nota): https://research.google.com/audioset/

@@ -80,9 +80,9 @@ No se dispone de informacion sobre modelos comparables directos en la misma tare
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `licensable-or-stays-out-classifier` | 82,1 M | no disponible | Clasificacion binaria de licenciabilidad | Apache 2.0 | HuggingFace |
-| `distilroberta-base` (base) | 82,1 M | 512 tokens (estandar de RoBERTa) | Modelo de lenguaje enmascarado | Apache 2.0 | HuggingFace |
-| `roberta-base` | 125 M | 512 tokens (estandar) | Modelo de lenguaje enmascarado | MIT | HuggingFace |
+| `licensable-or-stays-out-classifier` | 82,1 M | no disponible | Clasificacion binaria de licenciabilidad | Apache 2.0 | Hugging Face |
+| `distilroberta-base` (base) | 82,1 M | 512 tokens (estandar de RoBERTa) | Modelo de lenguaje enmascarado | Apache 2.0 | Hugging Face |
+| `roberta-base` | 125 M | 512 tokens (estandar) | Modelo de lenguaje enmascarado | MIT | Hugging Face |
 
 Las cifras de contexto de los modelos base corresponden a la arquitectura estandar de RoBERTa; el autor no especifica la longitud de contexto configurada para este fine-tuning.
 
@@ -99,7 +99,7 @@ Las cifras de contexto de los modelos base corresponden a la arquitectura estand
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/licensable-or-stays-out-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/licensable-or-stays-out-classifier
 - Dataset de licenciabilidad por industria: https://huggingface.co/datasets/aitrainingdatabroker/company-data-licensability-by-industry
 - Dataset de tipos de registro y limites: https://huggingface.co/datasets/aitrainingdatabroker/company-record-types-and-limits
 - Space explorador de licenciabilidad: https://huggingface.co/spaces/aitrainingdatabroker/company-data-licensability-explorer

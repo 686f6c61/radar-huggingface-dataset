@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El recurso alojado en HuggingFace bajo el identificador SinhalaMMLU-SharedTask/team-ctrl es un repositorio de tamano reducido (0,1 GB) publicado por la organizacion SinhalaMMLU-SharedTask. Por el nombre de la organizacion, todo apunta a que forma parte de la infraestructura de la tarea compartida (shared task) vinculada a SinhalaMMLU, un benchmark de evaluacion multiarea para la lengua cingalesa (sinhala), hablada principalmente en Sri Lanka. El sufijo "team-ctrl" sugiere que se trata de un recurso asociado a un equipo participante en dicha competicion, posiblemente un sistema de control de generacion o un envio de los organizadores.
+El recurso alojado en Hugging Face bajo el identificador SinhalaMMLU-SharedTask/team-ctrl es un repositorio de tamano reducido (0,1 GB) publicado por la organizacion SinhalaMMLU-SharedTask. Por el nombre de la organizacion, todo apunta a que forma parte de la infraestructura de la tarea compartida (shared task) vinculada a SinhalaMMLU, un benchmark de evaluacion multiarea para la lengua cingalesa (sinhala), hablada principalmente en Sri Lanka. El sufijo "team-ctrl" sugiere que se trata de un recurso asociado a un equipo participante en dicha competicion, posiblemente un sistema de control de generacion o un envio de los organizadores.
 
 La relevancia de este tipo de recursos radica en la escasez de herramientas de evaluacion para lenguas de bajos recursos como el cingales. Iniciativas como SinhalaMMLU permiten medir el rendimiento real de los grandes modelos de lenguaje fuera del ingles, un aspecto critico dado que la mayoria de benchmarks estandar (MMLU, GSM8K) estan dominados por datos en ingles. Sin embargo, la informacion publica sobre este repositorio es muy limitada: no hay tarjeta de modelo detallada, ni datos de descargas, ni especificaciones tecnicas publicadas.
 
-Es importante senalar que el acceso al repositorio esta restringido (gated): los usuarios deben aceptar unas condiciones en HuggingFace antes de poder descargar el contenido. Esto es habitual en recursos asociados a competiciones o datasets que requieren registro para controlar su uso.
+Es importante senalar que el acceso al repositorio esta restringido (gated): los usuarios deben aceptar unas condiciones en Hugging Face antes de poder descargar el contenido. Esto es habitual en recursos asociados a competiciones o datasets que requieren registro para controlar su uso.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No existen alternativas publicas directamente comparables centradas en cingalesa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede impedir su uso inmediato en pipelines automaticos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede impedir su uso inmediato en pipelines automaticos.
 - Documentacion practicamente inexistente: sin tarjeta de modelo, es imposible verificar la procedencia de los datos, la metodologia o la calidad del contenido.
 - Cero descargas registradas: no hay evidencia de uso comunitario ni validacion externa.
 - Sesgos: al tratarse de un recurso centrado en cingalesa, es probable que herede los sesgos de los corpus en esa lengua, que son limitados en tamano y diversidad; no obstante, no hay analisis de sesgos publicado.
@@ -80,6 +80,6 @@ No existen alternativas publicas directamente comparables centradas en cingalesa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-ctrl
-- Organizacion en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask
+- Repositorio en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-ctrl
+- Organizacion en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask
 - Paper, blog o demo: no disponible

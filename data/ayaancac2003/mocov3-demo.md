@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AyaanCac2003/mocov3-demo` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia y compacta de la arquitectura MoCo v3 orientada a tareas de retrieval (recuperacion de imagenes o representaciones). Lo desarrolla el usuario AyaanCac2003 y no constituye una version preentrenada lista para produccion, sino un punto de partida reproducible para pruebas de humo (smoke tests), revision de codigo y experimentos controlados a pequena escala.
+`AyaanCac2003/mocov3-demo` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia y compacta de la arquitectura MoCo v3 orientada a tareas de retrieval (recuperacion de imagenes o representaciones). Lo desarrolla el usuario AyaanCac2003 y no constituye una version preentrenada lista para produccion, sino un punto de partida reproducible para pruebas de humo (smoke tests), revision de codigo y experimentos controlados a pequena escala.
 
 El repositorio incluye un script Python (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicializacion en formato safetensors. El autor advierte explicitamente de que el checkpoint no ha sido entrenado ni evaluado con benchmarks: se trata de pesos de inicializacion validos para comprobar que el codigo carga y ejecuta.
 
@@ -44,7 +44,7 @@ La receta por defecto usa el optimizador LAMB con un schedule OneCycle. El propi
 - Revision de codigo de una implementacion MoCo v3: usar el repositorio como referencia para comparar detalles de atencion grouped query, gating y rmsnorm con otras implementaciones.
 - Base para un experimento controlado de retrieval: partir de la receta LAMB/OneCycle y sustituir el checkpoint de inicializacion por pesos entrenados en un dataset propio, evaluando en Flickr30k segun la guia del autor.
 - Linea base de capacidad equivalente: servir como punto de comparacion de bajo coste (49.600 parametros) frente a modelos contrastivos preentrenados de mayor tamano en estudios de ablacion.
-- Docencia y formacion: ilustrar el flujo de un repo de HuggingFace con safetensors, `config.json` y `training_args.json` en un curso de vision por computador o de aprendizaje auto-supervisado.
+- Docencia y formacion: ilustrar el flujo de un repo de Hugging Face con safetensors, `config.json` y `training_args.json` en un curso de vision por computador o de aprendizaje auto-supervisado.
 - Integracion en pipelines de CI: ejecutar el bloque de prueba de humo como test de regresion que detecte roturas en la carga del checkpoint o en la construccion del modelo.
 
 ## Benchmarks y rendimiento
@@ -76,5 +76,5 @@ No disponible. El repositorio no proporciona comparaciones con otras implementac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AyaanCac2003/mocov3-demo
+- Repositorio en Hugging Face: https://huggingface.co/AyaanCac2003/mocov3-demo
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

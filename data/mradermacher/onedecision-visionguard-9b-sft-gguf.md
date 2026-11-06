@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OneDecision-VisionGuard-9B-SFT-GGUF es la version cuantizada en formato GGUF del modelo prithivMLmods/OneDecision-VisionGuard-9B-SFT, un clasificador multimodal (vision y texto) orientado a seguridad de contenido y moderacion. La cuantizacion la publica mradermacher, autor especializado en convertir modelos de HuggingFace a GGUF, e incluye tanto los pesos del modelo en distintos niveles de compresion como los ficheros mmproj necesarios para procesar imagenes.
+OneDecision-VisionGuard-9B-SFT-GGUF es la version cuantizada en formato GGUF del modelo prithivMLmods/OneDecision-VisionGuard-9B-SFT, un clasificador multimodal (vision y texto) orientado a seguridad de contenido y moderacion. La cuantizacion la publica mradermacher, autor especializado en convertir modelos de Hugging Face a GGUF, e incluye tanto los pesos del modelo en distintos niveles de compresion como los ficheros mmproj necesarios para procesar imagenes.
 
 El modelo base fue afinado mediante SFT sobre el dataset prithivMLmods/ImageShield-OneDecision-Classification y esta etiquetado por sus autores como safety-classifier, guardrail y multimodal-content-filter. Su funcion principal no es la generacion de texto libre, sino emitir decisiones de clasificacion (salida en JSON) sobre si un contenido visual o multimodal resulta seguro o no, lo que lo situa en la misma categoria que otros clasificadores de guardarraíl como Llama Guard 3 Vision o ShieldGemma.
 
@@ -31,7 +31,7 @@ Con 8.953.803.264 parametros (unos 8,95 B) y licencia Apache 2.0, el modelo es r
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. Los metadatos indican que es un modelo multimodal, con soporte de vision confirmado por la presencia de los ficheros complementarios mmproj (en Q8_0 y f16), necesarios para inyectar las representaciones visuales en el modelo de lenguaje. El pipeline declarado en HuggingFace es image-classification, pero las etiquetas del repositorio tambien incluyen text-generation-inference y SFT, lo que sugiere que el modelo genera una salida estructurada (JSON) a partir de la cual se deriva la clasificacion.
+No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. Los metadatos indican que es un modelo multimodal, con soporte de vision confirmado por la presencia de los ficheros complementarios mmproj (en Q8_0 y f16), necesarios para inyectar las representaciones visuales en el modelo de lenguaje. El pipeline declarado en Hugging Face es image-classification, pero las etiquetas del repositorio tambien incluyen text-generation-inference y SFT, lo que sugiere que el modelo genera una salida estructurada (JSON) a partir de la cual se deriva la clasificacion.
 
 El entrenamiento se realizo mediante Supervised Fine-Tuning (SFT) sobre el dataset prithivMLmods/ImageShield-OneDecision-Classification. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si hubo fases posteriores de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documentan innovaciones tecnicas especificas mas alla del pipeline de cuantizacion aplicado por mradermacher (cuantizacion estatica de tensores de salida, version 2 del proceso).
 
@@ -112,7 +112,7 @@ Diferencias principales frente a las alternativas: VisionGuard se distribuye baj
 - Cuantizaciones de baja precision: Q2_K y Q3_K pueden degradar notablemente la calidad de clasificacion; para produccion se recomienda Q4_K_M o superior.
 - Licencia: Apache 2.0 permite uso comercial, pero al derivar de otro modelo conviene revisar la licencia y condiciones del modelo base (prithivMLmods/OneDecision-VisionGuard-9B-SFT) y del dataset utilizado.
 - Despliegue multimodal: requiere cargar el fichero mmproj ademas de los pesos; omitirlo deja el modelo sin capacidad de procesar imagenes.
-- Metadatos de fecha: la fecha de creacion y actualizacion indicadas en la metadata (2026-10-07) son las que reporta HuggingFace; conviene verificarlas en la pagina del repositorio.
+- Metadatos de fecha: la fecha de creacion y actualizacion indicadas en la metadata (2026-10-07) son las que reporta Hugging Face; conviene verificarlas en la pagina del repositorio.
 
 ## Enlaces
 

@@ -6,7 +6,7 @@ Hjx2/Qwen3.8-27B-Q3_K_L-GGUF es una conversión a formato GGUF del modelo denso 
 
 Qwen3.8-27B es un modelo denso de visión y lenguaje (image-text-to-text) de 27 320 millones de parámetros, con una ventana de contexto de 256 000 tokens y capacidades de razonamiento y ejecución de agentes. Está construido sobre la arquitectura de la serie Qwen3.5 y está pensado para tareas de codificación agéntica, visión y chat. La cuantización Q3_K_L es una de las opciones de menor tamaño dentro de la familia de cuantizaciones GGUF, orientada a despliegues locales con recursos limitados.
 
-Este checkpoint concreto tiene una licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio de HuggingFace fue creado el 23 de agosto de 2026 y no registra descargas ni valoraciones, por lo que se trata de una conversión reciente de la comunidad.
+Este checkpoint concreto tiene una licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio de Hugging Face fue creado el 23 de agosto de 2026 y no registra descargas ni valoraciones, por lo que se trata de una conversión reciente de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ La comparativa con Llama 3.1 8B es orientativa: ambos tienen contexto de 128K, p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Hjx2/Qwen3.8-27B-Q3_K_L-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Hjx2/Qwen3.8-27B-Q3_K_L-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Conversión GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

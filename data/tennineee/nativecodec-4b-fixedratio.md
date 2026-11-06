@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NativeCodec-4B-FixedRatio es un modelo multimodal de tipo image-text-to-text y video-text-to-text desarrollado por el usuario Tennineee, construido mediante fine-tuning sobre Qwen/Qwen3.5-4B-Base. Su propuesta diferencial es el uso de un esquema de codec nativo con ratio fijo ("FixedRatio") que busca reducir el numero de tokens necesarios para representar video e imagen, mejorando la eficiencia de codificacion en contextos de video-question-answering y comprension de video. El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+NativeCodec-4B-FixedRatio es un modelo multimodal de tipo image-text-to-text y video-text-to-text desarrollado por el usuario Tennineee, construido mediante fine-tuning sobre Qwen/Qwen3.5-4B-Base. Su propuesta diferencial es el uso de un esquema de codec nativo con ratio fijo ("FixedRatio") que busca reducir el numero de tokens necesarios para representar video e imagen, mejorando la eficiencia de codificacion en contextos de video-question-answering y comprension de video. El modelo se distribuye en formato safetensors bajo licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Con 4.659.865.088 parametros totales (aproximadamente 4,66 mil millones), se posiciona en la gama media de modelos vision-language, lo que lo hace potencialmente desplegable en hardware de consumo con cuantizacion adecuada. El modelo declara soporte para ingles y chino, y su pipeline principal es video-text-to-text, lo que lo orienta a tareas de comprension y respuesta sobre video.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato en produccion y en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato en produccion y en pipelines automatizados.
 - Idiomas limitados a ingles y chino; no se declara soporte para castellano ni otros idiomas.
 - No se han publicado benchmarks, por lo que el rendimiento real en tareas de video-question-answering no esta validado publicamente.
 - Riesgo de alucinacion inherente a los modelos generativos multimodales, especialmente en descripcion de contenido visual ambiguo o de baja calidad.
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tennineee/NativeCodec-4B-FixedRatio
+- Hugging Face: https://huggingface.co/Tennineee/NativeCodec-4B-FixedRatio
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

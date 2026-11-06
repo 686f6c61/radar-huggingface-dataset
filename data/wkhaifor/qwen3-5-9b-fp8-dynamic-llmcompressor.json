@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor",
+  "slug": "wkhaifor-qwen3-5-9b-fp8-dynamic-llmcompressor",
+  "author": "wkhaifor",
+  "url": "https://huggingface.co/wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor",
+  "created_at": "2026-11-04T13:45:33.000Z",
+  "updated_at": "2026-11-04T15:01:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "compressed-tensors",
+    "llmcompressor",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 14026772749,
+  "storage_human": "14.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor · Hugging Face",
+      "url": "https://huggingface.co/wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor",
+      "snippet": "Instructions to use wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-9B-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-9B-FP8-dynamic",
+      "snippet": "Creation This model was created by applying LLM Compressor using data-free FP8 dynamic quantization, as presented in the code snippet below."
+    }
+  ]
+}

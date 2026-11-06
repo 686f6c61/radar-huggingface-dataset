@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Piper Hex-Bolt SmolVLA (este checkpoint) | 450.046.176 | VLA de imitación, tarea única | chunk de 50 acciones; contexto textual no disponible | no disponible (sin licencia asignada en esta subida) | pesos safetensors en HF, 0 descargas |
-| SmolVLA base (LeRobot) | ~450 M (misma familia) | VLA preentrenado multi-tarea | no disponible en esta ficha | no verificada en esta ficha | público en HuggingFace |
+| SmolVLA base (LeRobot) | ~450 M (misma familia) | VLA preentrenado multi-tarea | no disponible en esta ficha | no verificada en esta ficha | público en Hugging Face |
 | ACT (Action Chunking Transformer) | del orden de decenas de millones (no disponible con precisión) | Política de imitación con chunking | horizonte de chunk configurable | no verificada en esta ficha | implementación pública en LeRobot |
 | pi0 / pi0.5 (Physical Intelligence) | ~3,3 B (pi0) | VLA de propósito general | no disponible en esta ficha | no verificada en esta ficha | pesos públicos |
 | OpenVLA | 7 B | VLA de propósito general | no disponible en esta ficha | MIT (según repositorio público) | pesos públicos |
@@ -103,7 +103,7 @@ La comparación relevante no es de rendimiento, porque no hay métricas publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs64-step18000
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/piper-hexbolt-smolvla-bs64-step18000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1
 - LeRobot (librería y política SmolVLA): no se ha encontrado un enlace en la información proporcionada
 - Paper de SmolVLA: no disponible en la información proporcionada

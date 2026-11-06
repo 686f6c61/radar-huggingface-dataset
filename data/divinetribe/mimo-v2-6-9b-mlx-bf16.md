@@ -70,9 +70,9 @@ El dato procede del informe técnico de MiMo-V2.6 citado en la model card. El au
 
 | Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B (esta conversión) | 9,4B | No disponible | 61,1 (avg@3) | MIT | HuggingFace (MLX bf16, 8-bit, 4-bit) |
-| Qwen3.5-9B (base) | 9B | No disponible | 60,0 | No disponible en la información | HuggingFace |
-| MiMo-V2.6-Distill-Qwen-9B (original, safetensors) | 9,4B | No disponible | 61,1 (avg@3) | MIT | HuggingFace (XiaomiMiMo) |
+| MiMo-V2.6-Distill-Qwen-9B (esta conversión) | 9,4B | No disponible | 61,1 (avg@3) | MIT | Hugging Face (MLX bf16, 8-bit, 4-bit) |
+| Qwen3.5-9B (base) | 9B | No disponible | 60,0 | No disponible en la información | Hugging Face |
+| MiMo-V2.6-Distill-Qwen-9B (original, safetensors) | 9,4B | No disponible | 61,1 (avg@3) | MIT | Hugging Face (XiaomiMiMo) |
 
 La comparación se limita a los datos disponibles. No se dispone de información sobre otros modelos de 9B con capacidades comparables de visión y agente para ampliar la tabla.
 
@@ -89,7 +89,7 @@ La comparación se limita a los datos disponibles. No se dispone de información
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta conversión): https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-bf16
+- Repositorio Hugging Face (esta conversión): https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-bf16
 - Variante 8-bit: https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-8bit
 - Variante 4-bit: https://huggingface.co/divinetribe/MiMo-V2.6-9B-MLX-4bit
 - Modelo original Xiaomi: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B

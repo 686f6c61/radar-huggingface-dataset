@@ -76,6 +76,6 @@ La comparativa se limita a datos conocidos del modelo base y de alternativas mé
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/phi4-14b-a7ctx-badmed-seed2-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/phi4-14b-a7ctx-badmed-seed2-v2
 - Modelo base Phi-4: https://huggingface.co/microsoft/phi-4
 - Informacion sobre Phi-4: https://opensourceaimodels.net/models/phi-4

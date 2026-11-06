@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en el mismo rango de par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lilgarca/SupraGDN-Tiny-FromScratch
-- Página del autor en HuggingFace: https://huggingface.co/Lilgarca
+- Modelo en Hugging Face: https://huggingface.co/Lilgarca/SupraGDN-Tiny-FromScratch
+- Página del autor en Hugging Face: https://huggingface.co/Lilgarca
 - Modelo de referencia de la familia SupraGDN: https://huggingface.co/SupraLabs/SupraGDN-5M

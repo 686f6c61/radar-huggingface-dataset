@@ -6,7 +6,7 @@ Este repositorio contiene una cuantización GGUF de tipo IQ3 del modelo Swift-1.
 
 Arquitectónicamente es un transformer con mezcla de expertos (MoE) de 176.943.899.520 parámetros totales según los safetensors del modelo base, con pipeline declarado `image-text-to-text` y soporte de inglés y chino. Su interés práctico está en dos ejes: la eficiencia de razonamiento (la model card cifra un 52 % menos de tokens de pensamiento en benchmarks de código y un 34,8 % por debajo del base) y la ausencia de alineamiento de rechazo, lo que lo orienta a red-teaming y generación de datos sin filtros.
 
-Es un artefacto de inferencia publicado por una cuenta comunitaria (`cc1244578151`), con 0 descargas y 0 likes en el momento de la consulta, licencia `swift-open-license-1.0` (etiquetada como `other` en HuggingFace) y sin resultados de benchmarks publicados en la información disponible.
+Es un artefacto de inferencia publicado por una cuenta comunitaria (`cc1244578151`), con 0 descargas y 0 likes en el momento de la consulta, licencia `swift-open-license-1.0` (etiquetada como `other` en Hugging Face) y sin resultados de benchmarks publicados en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Es un artefacto de inferencia publicado por una cuenta comunitaria (`cc124457815
 | Longitud de contexto | no disponible (etiquetado como `long-context`, sin cifra publicada) |
 | Tipos de cuantización | GGUF: IQ3_S, IQ3_XXS, IQ2_XS y Q2_0 (este repo corresponde a la variante IQ3); rango de 61,9 GB (Q2_0) a 77,8 GB (IQ3_S) |
 | Idiomas soportados | inglés (`en`) y chino (`zh`) |
-| Licencia | `swift-open-license-1.0` (campo `license: other` en HuggingFace) |
+| Licencia | `swift-open-license-1.0` (campo `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (librería `gguf`, orientado a llama.cpp); pesos originales en safetensors |
 | Modelo base | ukisai/Swift-Qwen3.8-Flash-Next (metadatos); la model card referencia ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF |
 | Tamaño del repositorio | 300,8 GB |
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cc1244578151/Swift1.5Qwen3.8-Flash-Next-GSQ-RCO-IQ3
+- Modelo en Hugging Face: https://huggingface.co/cc1244578151/Swift1.5Qwen3.8-Flash-Next-GSQ-RCO-IQ3
 - Modelo base declarado en metadatos: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Upstream citado en la model card: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Release abliterada de referencia: https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF

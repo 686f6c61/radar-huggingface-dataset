@@ -85,9 +85,9 @@ El autor indica que la ejecución del Decision Index está en curso y que su pun
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sepal-4B | Adaptador sobre base de 4B | Estados de hasta ~16k tokens | Decisiones tipadas calibradas para SOC | Apache 2.0 | HuggingFace (BlossomsAI/Sepal-4B) |
-| Sepal-0.8B | Adaptador sobre base de 0,8B | No disponible | Decisiones tipadas calibradas para SOC | No disponible en la información | HuggingFace (BlossomsAI/Sepal-0.8B) |
-| Qwen3.5-4B | 4B | No disponible | Modelo generativo de propósito general (base de Sepal) | No disponible en la información | HuggingFace (Qwen/Qwen3.5-4B) |
+| Sepal-4B | Adaptador sobre base de 4B | Estados de hasta ~16k tokens | Decisiones tipadas calibradas para SOC | Apache 2.0 | Hugging Face (BlossomsAI/Sepal-4B) |
+| Sepal-0.8B | Adaptador sobre base de 0,8B | No disponible | Decisiones tipadas calibradas para SOC | No disponible en la información | Hugging Face (BlossomsAI/Sepal-0.8B) |
+| Qwen3.5-4B | 4B | No disponible | Modelo generativo de propósito general (base de Sepal) | No disponible en la información | Hugging Face (Qwen/Qwen3.5-4B) |
 
 No se dispone de datos de benchmarks de terceros ni de otros modelos de decisión tipada comparables en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de terceros ni de otros modelos de decisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlossomsAI/Sepal-4B
+- Modelo en Hugging Face: https://huggingface.co/BlossomsAI/Sepal-4B
 - Modelo predecesor Sepal-0.8B: https://huggingface.co/BlossomsAI/Sepal-0.8B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

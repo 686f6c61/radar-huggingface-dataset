@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sakurataa/swin-t-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario `sakurataa` que adapta una arquitectura Swin T al problema de *retrieval* (recuperación de información, presumiblemente imagen-texto). El repositorio incluye el código Python (`predict.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`. La model card es explícita: no se presentan métricas de rendimiento verificadas y el checkpoint no ha sido entrenado ni auditado.
+`sakurataa/swin-t-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario `sakurataa` que adapta una arquitectura Swin T al problema de *retrieval* (recuperación de información, presumiblemente imagen-texto). El repositorio incluye el código Python (`predict.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`. La model card es explícita: no se presentan métricas de rendimiento verificadas y el checkpoint no ha sido entrenado ni auditado.
 
 El interés de esta ficha es limitado pero claro: se trata de un esqueleto reproducible para experimentación, no de un modelo listo para producción. Los metadatos de safetensors registran 24.832 parámetros, un valor muy inferior al de un Swin-T convencional, lo que encaja con la descripción del autor de "checkpoint de inicialización válido para pruebas de humo". La model card, además, declara una escala "giant" que no se corresponde con ese recuento, una discrepancia que conviene tener presente antes de cualquier uso.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sakurataa/swin-t-baseline | 24.832 (safetensors) | no aplica | no evaluado; el autor no reclama métricas | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| sakurataa/swin-t-baseline | 24.832 (safetensors) | no aplica | no evaluado; el autor no reclama métricas | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | Swin-T estándar (backbone de visión) | aproximadamente 28 M (referencia pública) | no aplica | no comparable: tarea y protocolo distintos | MIT (repositorio oficial de Microsoft) | Repositorio oficial y múltiples checkpoints públicos |
 | CLIP ViT-B/32 (referencia de retrieval imagen-texto) | aproximadamente 151 M (referencia pública) | 77 tokens de texto | no comparable: este checkpoint no está entrenado | MIT | Pesos y código públicos de OpenAI |
 
@@ -86,7 +86,7 @@ Nota: las cifras de las filas de comparación son valores públicos aproximados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sakurataa/swin-t-baseline
+- Repositorio en Hugging Face: https://huggingface.co/sakurataa/swin-t-baseline
 - Script principal: https://huggingface.co/sakurataa/swin-t-baseline/blob/main/predict.py
 - Configuración de arquitectura: https://huggingface.co/sakurataa/swin-t-baseline/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/sakurataa/swin-t-baseline/blob/main/training_args.json

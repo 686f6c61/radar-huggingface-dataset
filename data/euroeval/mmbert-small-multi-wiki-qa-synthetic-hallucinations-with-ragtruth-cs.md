@@ -71,7 +71,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-cs
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-cs
 - Versión en inglés del mismo modelo: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en
 - Paper del benchmark MultiWikiQHalluA (arXiv:2605.02504): https://arxiv.org/pdf/2605.02504v2
 - Repositorio de RAGTruth: https://github.com/ParticleMedia/RAGTruth

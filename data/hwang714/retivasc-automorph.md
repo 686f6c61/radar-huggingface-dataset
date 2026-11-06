@@ -90,7 +90,7 @@ La comparación más directa es con la implementación Python original de AutoMo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hwang714/retivasc-automorph
+- Repositorio Hugging Face: https://huggingface.co/hwang714/retivasc-automorph
 - Repositorio RetiVASC: https://github.com/Retinal-Research/RetiVASC
 - Repositorio AutoMorph: https://github.com/rmaphoh/AutoMorph
 - Publicación AutoMorph: Zhou Y, Wagner SK, Chia MA, et al. AutoMorph: Automated Retinal Vascular Morphology Quantification Via a Deep Learning Pipeline. Translational Vision Science & Technology 11(7):12, 2022. https://doi.org/10.1167/tvst.11.7.12

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-balanced-7000-f64a429198e4-59b0d538b511` es un paquete de pesos publicado en HuggingFace por el usuario `davidwdw`. Su propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con nivel de empaquetado "params+assets" (parametros y activos auxiliares). No se trata, por tanto, de un modelo documentado al uso, sino de una instantanea congelada de un checkpoint pensada para reproducir una revision concreta.
+El repositorio `davidwdw/fa-pi05-attnfix-balanced-7000-f64a429198e4-59b0d538b511` es un paquete de pesos publicado en Hugging Face por el usuario `davidwdw`. Su propia model card lo describe como un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`, con nivel de empaquetado "params+assets" (parametros y activos auxiliares). No se trata, por tanto, de un modelo documentado al uso, sino de una instantanea congelada de un checkpoint pensada para reproducir una revision concreta.
 
 La informacion publica disponible es minima: la model card no documenta arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. El unico dato cuantitativo objetivo es el tamano del repositorio, 12,4 GB, mas el identificador de receta y las instrucciones del autor de usar exactamente la revision registrada y verificar las sumas SHA256. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y la unica etiqueta declarada es `region:us`.
 
@@ -24,7 +24,7 @@ En consecuencia, esta ficha no puede certificar capacidades ni rendimiento. Se h
 | Receta canonica asociada | `2026-09-22_b1k_task00_pi05_attention_consistent_h20` |
 | Autor | `davidwdw` |
 | Etiquetas declaradas | `region:us` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-26T21:48:08Z |
 | Fecha de ultima actualizacion | 2026-09-26T21:48:21Z (13 segundos despues de la creacion; no hay historial de revisiones posterior) |
@@ -95,7 +95,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `davidwdw/fa-pi05-attnfix-balanced-7000-...` | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| `davidwdw/fa-pi05-attnfix-balanced-7000-...` | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles |
 
 Para poder completar esta seccion haria falta, como minimo, el `config.json` del repositorio y una descripcion de la tarea objetivo por parte del autor.
@@ -115,7 +115,7 @@ Para poder completar esta seccion haria falta, como minimo, el `config.json` del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-7000-f64a429198e4-59b0d538b511
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-7000-f64a429198e4-59b0d538b511
 - Paper asociado: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

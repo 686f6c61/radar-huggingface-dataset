@@ -2,7 +2,7 @@
 
 ## Resumen
 
-giordanoner/multimodal-generation-beta es un repositorio de HuggingFace que no contiene un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre generación multimodal. El autor lo etiqueta como "research-notes" y "multimodal-generation", y su model card lo describe explícitamente como un artefacto documental cuyo fichero principal es `review.md`, acompañado de un `README.md`. No se declara pipeline, ni idioma, ni checkpoint entrenado.
+giordanoner/multimodal-generation-beta es un repositorio de Hugging Face que no contiene un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre generación multimodal. El autor lo etiqueta como "research-notes" y "multimodal-generation", y su model card lo describe explícitamente como un artefacto documental cuyo fichero principal es `review.md`, acompañado de un `README.md`. No se declara pipeline, ni idioma, ni checkpoint entrenado.
 
 El único artefacto de pesos presente es un fichero safetensors con 49.600 parámetros totales, una cifra tres o cuatro órdenes de magnitud por debajo de cualquier modelo generativo utilizable. El tamaño del repositorio es de 0,0 GB, lo que es coherente con un contenido formado por ficheros Markdown. El autor indica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -84,6 +84,6 @@ No disponible. No procede comparar parámetros, contexto, rendimiento, licencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/giordanoner/multimodal-generation-beta
+- Hugging Face: https://huggingface.co/giordanoner/multimodal-generation-beta
 - Ficheros mencionados en la model card: `review.md` (artefacto principal) y `README.md` (documentación), dentro del propio repositorio
 - Papers, blogs, repositorios o demos adicionales: no disponible (la búsqueda web no devolvió enlaces relacionados)

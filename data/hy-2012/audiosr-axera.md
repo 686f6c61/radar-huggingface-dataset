@@ -99,6 +99,6 @@ La comparativa directa mas relevante es con el AudioSR original: este port manti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HY-2012/AudioSR.AXERA
+- Modelo en Hugging Face: https://huggingface.co/HY-2012/AudioSR.AXERA
 - Repositorio GitHub del port: https://github.com/ZY-2012/AudioSR_AXERA
 - Proyecto AudioSR original: https://github.com/haoheliu/versatile_audio_super_resolution

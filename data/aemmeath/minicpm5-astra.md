@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniCPM5-Astra es un ajuste fino (finetune) publicado por el usuario aemmeath en HuggingFace, derivado del modelo aemmeath/MiniCPM5-Aether. Se trata de un modelo de generación de texto de tipo conversacional, con 2.516.756.480 parámetros totales (aproximadamente 2,5 mil millones) almacenados en formato safetensors, y distribuido bajo licencia Apache 2.0. El repositorio ocupa 5,0 GB y está etiquetado para su uso con la librería transformers y con text-generation-inference.
+MiniCPM5-Astra es un ajuste fino (finetune) publicado por el usuario aemmeath en Hugging Face, derivado del modelo aemmeath/MiniCPM5-Aether. Se trata de un modelo de generación de texto de tipo conversacional, con 2.516.756.480 parámetros totales (aproximadamente 2,5 mil millones) almacenados en formato safetensors, y distribuido bajo licencia Apache 2.0. El repositorio ocupa 5,0 GB y está etiquetado para su uso con la librería transformers y con text-generation-inference.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: se trata de una publicación reciente (subida el 16 de septiembre de 2026, según los metadatos de HuggingFace) que en el momento de la consulta acumula 0 descargas y 0 "likes", sin resultados de benchmarks publicados, sin model card técnica detallada y sin documentación sobre el dataset de ajuste. La información disponible se reduce a los metadatos del repositorio y a una model card mínima que confirma el modelo base, la licencia y el uso de Unsloth junto con TRL para el entrenamiento.
+La relevancia de esta ficha es limitada y conviene ser explícito: se trata de una publicación reciente (subida el 16 de septiembre de 2026, según los metadatos de Hugging Face) que en el momento de la consulta acumula 0 descargas y 0 "likes", sin resultados de benchmarks publicados, sin model card técnica detallada y sin documentación sobre el dataset de ajuste. La información disponible se reduce a los metadatos del repositorio y a una model card mínima que confirma el modelo base, la licencia y el uso de Unsloth junto con TRL para el entrenamiento.
 
 Por tanto, esta ficha describe con rigor lo que está documentado y marca explícitamente como "no disponible" todo aquello que no puede verificarse. No debe interpretarse como una recomendación de uso en producción sin una evaluación propia previa.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha describe con rigor lo que está documentado y marca explí
 
 La informacion disponible no permite describir la arquitectura con precision. Las etiquetas del repositorio incluyen "llama", lo que apunta a un transformer decoder-only con atencion causal, pero la model card no detalla el numero de capas, la dimension del modelo, el tipo de atencion ni si incorpora alguna variante (atencion lineal, decodificacion especulativa u otras). Tampoco se indica el tamano de contexto maximo soportado, un dato critico para evaluar su idoneidad en tareas de contexto largo.
 
-Respecto al entrenamiento, la unica informacion verificable es que se trata de un finetune del modelo aemmeath/MiniCPM5-Aether y que el proceso se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara el propio autor. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o ajuste por preferencias, ni el regimen de hiperparametros. Tampoco hay informacion sobre el contexto de la publicacion: no se indica si el finetune responde a un objetivo concreto (por ejemplo, conversacion, instrucciones o un dominio especifico) mas alla de la etiqueta "conversational". El nombre "MiniCPM5" evoca a la familia MiniCPM de OpenBMB, pero no hay ninguna evidencia en la informacion disponible que confirme una relacion con esos modelos; debe tratarse como una coincidencia de nomenclatura no verificada.
+Respecto al entrenamiento, la unica informacion verificable es que se trata de un finetune del modelo aemmeath/MiniCPM5-Aether y que el proceso se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara el propio autor. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o ajuste por preferencias, ni el regimen de hiperparametros. Tampoco hay informacion sobre el contexto de la publicacion: no se indica si el finetune responde a un objetivo concreto (por ejemplo, conversacion, instrucciones o un dominio especifico) mas alla de la etiqueta "conversational". El nombre "MiniCPM5" evoca a la familia MiniCPM de OpenBMB, pero no hay ninguna evidencia en la informacion disponible que confirme una relacion con esos modelos; debe tratarse como una coincidencia de nomenclatura no verificada.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ La comparativa se realiza con modelos publicos de tamano equivalente. Los datos 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-Astra | 2,52B | No disponible | Apache 2.0 | No disponible | HuggingFace, safetensors |
-| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Si | HuggingFace, multiples formatos |
-| Qwen2.5 3B Instruct | 3,1B | 32.768 tokens | Apache 2.0 (con condiciones para algunos tamanos) | Si | HuggingFace, GGUF, GPTQ, AWQ |
-| Gemma 2 2B IT | 2,6B | 8.192 tokens | Gemma Terms of Use | Si | HuggingFace, multiples formatos |
+| MiniCPM5-Astra | 2,52B | No disponible | Apache 2.0 | No disponible | Hugging Face, safetensors |
+| Llama 3.2 3B Instruct | 3,2B | 128.000 tokens | Llama 3.2 Community License | Si | Hugging Face, multiples formatos |
+| Qwen2.5 3B Instruct | 3,1B | 32.768 tokens | Apache 2.0 (con condiciones para algunos tamanos) | Si | Hugging Face, GGUF, GPTQ, AWQ |
+| Gemma 2 2B IT | 2,6B | 8.192 tokens | Gemma Terms of Use | Si | Hugging Face, multiples formatos |
 
 Diferencias relevantes: MiniCPM5-Astra es el unico de la tabla sin resultados de evaluacion publicados y sin versiones cuantizadas listas para usar. Frente a Llama 3.2 3B, carece de una licencia con clausulas de uso aceptable explicitas (Apache 2.0 es mas permisiva) pero tambien de la documentacion y el soporte de un lanzamiento oficial. Frente a Qwen2.5 3B, de tamano casi identico, la diferencia practica principal es el soporte de contexto largo y el ecosistema de cuantizaciones, muy superior en Qwen. Las cifras de contexto de los modelos comparados corresponden a su configuracion estandar publicada y pueden variar segun la version concreta del checkpoint.
 
@@ -99,9 +99,9 @@ Diferencias relevantes: MiniCPM5-Astra es el unico de la tabla sin resultados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aemmeath/MiniCPM5-Astra
+- Modelo en Hugging Face: https://huggingface.co/aemmeath/MiniCPM5-Astra
 - Modelo base: https://huggingface.co/aemmeath/MiniCPM5-Aether
 - Unsloth (framework de entrenamiento declarado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento declarada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento declarada): https://github.com/huggingface/trl
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con MiniCPM5-Astra, MiniCPM5-Aether ni con el autor aemmeath. Los resultados obtenidos (repositorios de herramientas de linea de comandos, debates sobre suscripciones a ChatGPT) no guardan relacion con este modelo, por lo que no se incluyen como fuentes.

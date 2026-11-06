@@ -93,7 +93,7 @@ No se dispone de cifras verificables para establecer una comparacion cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-sequential-dp-step141394-training-state
+- Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-sequential-dp-step141394-training-state
 - Dataset asociado: Shiki42/ctr-sortblocks-100ep-sequential (revision 3d8db515f856c4e6c2612569b43fb15eeaef3064)
 - LeRobot 0.4.4, fuente oficial referenciada: 8fff0fde7c79f23a93d845d1a50e985de01f8b8a
 - Paper o blog del modelo: no disponible

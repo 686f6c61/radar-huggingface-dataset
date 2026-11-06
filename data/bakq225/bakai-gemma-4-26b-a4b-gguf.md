@@ -88,7 +88,7 @@ No se han identificado en la informacion proporcionada otros modelos de la misma
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Bakq225/bakai-gemma-4-26b-a4b-gguf
+- Pagina del modelo en Hugging Face: https://huggingface.co/Bakq225/bakai-gemma-4-26b-a4b-gguf
 - Modelo base google/gemma-4-26B-A4B-it: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - No se han encontrado en la busqueda web articulos, papers, repositorios o demos adicionales relevantes para este modelo; los resultados obtenidos correspondian a paginas de ayuda no relacionadas.

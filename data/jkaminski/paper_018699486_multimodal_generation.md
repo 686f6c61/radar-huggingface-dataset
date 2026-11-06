@@ -50,5 +50,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 - **Licencia CC-BY-4.0**: permite uso y adaptación con atribución, pero no garantiza exactitud técnica.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/jkaminski/paper_018699486_multimodal_generation
+- Repositorio en Hugging Face: https://huggingface.co/jkaminski/paper_018699486_multimodal_generation
 - Paper relacionado (búsqueda web, no necesariamente el contenido del repositorio): https://arxiv.org/abs/2409.14993

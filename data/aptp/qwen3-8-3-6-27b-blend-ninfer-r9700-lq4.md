@@ -105,6 +105,6 @@ La comparación relevante es de motores, no de modelos: sobre el mismo blend y l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aptp/Qwen3.8-3.6-27B-blend-ninfer-R9700-LQ4
+- Repositorio Hugging Face: https://huggingface.co/aptp/Qwen3.8-3.6-27B-blend-ninfer-R9700-LQ4
 - Modelo base: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
 - Motor ninfer-amd-r9700: https://github.com/jmander11/ninfer-amd-r9700

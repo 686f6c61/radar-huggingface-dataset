@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DecodeX_Engine es un repositorio alojado en HuggingFace bajo el identificador Aryan1245678/DecodeX_Engine, publicado por el usuario Aryan1245678 con licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline, no declara idiomas y no publica ninguna descripcion de arquitectura, tamano o datos de entrenamiento. Las etiquetas disponibles se limitan a `license:apache-2.0` y `region:us`.
+DecodeX_Engine es un repositorio alojado en Hugging Face bajo el identificador Aryan1245678/DecodeX_Engine, publicado por el usuario Aryan1245678 con licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico (unicamente el bloque de metadatos de licencia), no declara pipeline, no declara idiomas y no publica ninguna descripcion de arquitectura, tamano o datos de entrenamiento. Las etiquetas disponibles se limitan a `license:apache-2.0` y `region:us`.
 
 Los indicadores publicos del repositorio son 0 descargas y 0 likes, y las marcas de creacion y ultima actualizacion son identicas (2026-09-12T10:34:13Z), lo que indica que no ha habido actividad ni revision posterior a su creacion. No hay informacion sobre pesos, tokenizador, configuracion de inferencia ni resultados de evaluacion.
 
@@ -75,7 +75,7 @@ No disponible. La comparativa requiere conocer la categoria del modelo (tamano, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DecodeX_Engine | no disponible | no disponible | apache-2.0 | repositorio en HuggingFace sin documentacion tecnica |
+| DecodeX_Engine | no disponible | no disponible | apache-2.0 | repositorio en Hugging Face sin documentacion tecnica |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No disponible. La comparativa requiere conocer la categoria del modelo (tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aryan1245678/DecodeX_Engine
+- Repositorio en Hugging Face: https://huggingface.co/Aryan1245678/DecodeX_Engine
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

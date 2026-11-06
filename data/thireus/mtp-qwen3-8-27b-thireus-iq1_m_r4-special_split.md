@@ -4,7 +4,7 @@
 
 Este repositorio contiene una cuantización GGUF del modelo Qwen3.8-27B, realizada por el usuario Thireus con su propia herramienta de cuantización. El nombre del archivo indica el formato `IQ1_M_R4`, una cuantización de muy baja precisión (aproximadamente 1 bit) con una división especial de capas (`SPECIAL_SPLIT`). El modelo base, Qwen3.8-27B, es un transformer denso de 27 000 millones de parámetros con un codificador de visión integrado y una ventana de contexto de 262 144 tokens, según el artículo de Yottalabs. Esta cuantización permite ejecutar un modelo de gran tamaño en hardware con poca memoria, a costa de una pérdida significativa de calidad.
 
-El autor, Thireus, mantiene un repositorio en GitHub con 66 repositorios y ha publicado varias cuantizaciones similares de modelos Qwen (por ejemplo, `mtp-Qwen3.5-27B-THIREUS-IQ1_M_R4-SPECIAL_SPLIT`). La licencia declarada en HuggingFace es MIT, lo que permite uso comercial sin restricciones, aunque el modelo base original se distribuye bajo Apache 2.0. La relevancia de esta ficha radica en que ofrece una opción de despliegue local en dispositivos con recursos limitados, aunque con las limitaciones propias de una cuantización extrema.
+El autor, Thireus, mantiene un repositorio en GitHub con 66 repositorios y ha publicado varias cuantizaciones similares de modelos Qwen (por ejemplo, `mtp-Qwen3.5-27B-THIREUS-IQ1_M_R4-SPECIAL_SPLIT`). La licencia declarada en Hugging Face es MIT, lo que permite uso comercial sin restricciones, aunque el modelo base original se distribuye bajo Apache 2.0. La relevancia de esta ficha radica en que ofrece una opción de despliegue local en dispositivos con recursos limitados, aunque con las limitaciones propias de una cuantización extrema.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ La comparativa muestra que la versión `IQ1_M_R4` sacrifica calidad para reducir
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_M_R4-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_M_R4-SPECIAL_SPLIT
 - Repositorio BF16 del mismo autor: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Artículo de Yottalabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Blog de AMD sobre ejecución de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

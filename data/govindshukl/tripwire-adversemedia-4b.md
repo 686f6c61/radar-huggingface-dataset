@@ -87,10 +87,10 @@ Velocidad medida en una A100 de 40 GB: 262 ms por pasaje con las 18 preguntas me
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tripwire-AdverseMedia-4B | ~4B (base) + LoRA r16 | no disponible | Clasificación de decisión adverse media, 18 preguntas tipadas | Apache-2.0 | HuggingFace (0 descargas, 1 like) |
-| Qwen3.5-4B (base) | ~4B | no disponible | Modelo generativo generalista, multimodal con encoder de visión | Apache-2.0 | HuggingFace, ampliamente disponible |
-| Liquid d1-3B | 3B | no disponible | Modelo base de Liquid AI usado como referencia en las tablas | no disponible en la información proporcionada | HuggingFace |
-| Vega-U 4B | 4B | no disponible | Modelo evaluado en modo zero-shot sobre las mismas preguntas | no disponible en la información proporcionada | HuggingFace |
+| Tripwire-AdverseMedia-4B | ~4B (base) + LoRA r16 | no disponible | Clasificación de decisión adverse media, 18 preguntas tipadas | Apache-2.0 | Hugging Face (0 descargas, 1 like) |
+| Qwen3.5-4B (base) | ~4B | no disponible | Modelo generativo generalista, multimodal con encoder de visión | Apache-2.0 | Hugging Face, ampliamente disponible |
+| Liquid d1-3B | 3B | no disponible | Modelo base de Liquid AI usado como referencia en las tablas | no disponible en la información proporcionada | Hugging Face |
+| Vega-U 4B | 4B | no disponible | Modelo evaluado en modo zero-shot sobre las mismas preguntas | no disponible en la información proporcionada | Hugging Face |
 
 Frente al modelo base, la diferencia medible está en la calibración (Brier 0,075 frente a 0,182), en la resolución de entidades (precisión 0,878 frente a 0,668) y en la cobertura del cuestionario completo: el base responde mal a categorías, temporalidad y hallazgos adversos. Frente a Vega-U 4B, la ventaja está en la tasa de falsos positivos sobre noticias positivas (0 de 177 frente a 11 de 177) y en la proporción de casos dudosos (1,8 % frente a 66,9 %).
 
@@ -109,7 +109,7 @@ Frente al modelo base, la diferencia medible está en la calibración (Brier 0,0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/govindshukl/Tripwire-AdverseMedia-4B
+- Modelo en Hugging Face: https://huggingface.co/govindshukl/Tripwire-AdverseMedia-4B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de código Tripwire: https://github.com/govindshukl/tripwire
 - Dataset de evaluación de eventos de crédito (needle, MIT): https://huggingface.co/datasets/Shreyas94/needle-event-classifier-eval

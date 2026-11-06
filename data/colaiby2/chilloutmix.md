@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`colaiby2/chilloutmix` es un repositorio alojado en HuggingFace por el usuario `colaiby2` que, por su nombre, parece corresponder a una variante o réplica del conocido modelo de difusión `chilloutmix`, orientado a la generación de imágenes fotorrealistas de estilo asiático. Sin embargo, la información pública disponible es prácticamente nula: el repositorio no incluye model card sustantiva (solo una línea con `license: unknown`), no declara pipeline, no declara idiomas y no presenta descargas ni interacciones en el momento de la consulta.
+`colaiby2/chilloutmix` es un repositorio alojado en Hugging Face por el usuario `colaiby2` que, por su nombre, parece corresponder a una variante o réplica del conocido modelo de difusión `chilloutmix`, orientado a la generación de imágenes fotorrealistas de estilo asiático. Sin embargo, la información pública disponible es prácticamente nula: el repositorio no incluye model card sustantiva (solo una línea con `license: unknown`), no declara pipeline, no declara idiomas y no presenta descargas ni interacciones en el momento de la consulta.
 
 El dato más relevante es el tamaño del repositorio, 555,0 GB, muy superior al de un checkpoint de difusión típico (habitualmente entre 2 y 7 GB en precisión completa y menos aún en versiones podadas). Este volumen sugiere que el repositorio contiene múltiples checkpoints, versiones, archivos de entrenamiento o material auxiliar, más que un único modelo listo para inferencia. No se dispone de información sobre arquitectura, número de parámetros, contexto ni proceso de entrenamiento.
 
@@ -66,8 +66,8 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 
 | Modelo | Tipo | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|
-| colaiby2/chilloutmix | no confirmado | unknown | HuggingFace | inexistente |
-| chilloutmix (original) | difusión texto-a-imagen | no disponible en esta consulta | HuggingFace / Civitai | model card pública |
+| colaiby2/chilloutmix | no confirmado | unknown | Hugging Face | inexistente |
+| chilloutmix (original) | difusión texto-a-imagen | no disponible en esta consulta | Hugging Face / Civitai | model card pública |
 | Stable Diffusion 1.5 | difusión latente | CreativeML Open RAIL-M | amplia | extensa |
 | SDXL | difusión latente | CreativeML Open RAIL++-M | amplia | extensa |
 
@@ -86,5 +86,5 @@ La comparación con los originales no puede cuantificarse sin datos de rendimien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/colaiby2/chilloutmix
+- Repositorio en Hugging Face: https://huggingface.co/colaiby2/chilloutmix
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

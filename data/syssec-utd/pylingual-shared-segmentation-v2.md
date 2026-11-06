@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v2
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-segmentation-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v2
 - Código (rama del estudio): https://github.com/quinntyx/pylingual/tree/feat-shared-backbone-lora
 - Commit de referencia: https://github.com/quinntyx/pylingual/commit/89981ff203058329636eebd66edaa45ee24f9629

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf2full10` es un checkpoint de pesos en formato safetensors publicado por el usuario firzahdzm en HuggingFace. Se trata de un modelo de aproximadamente 1.170 millones de parametros (1.170.340.608 exactos, segun los metadatos de safetensors) y 2,3 GB de repositorio, lo que resulta coherente con pesos almacenados en bf16/fp16. La etiqueta `lfm2` del repositorio apunta a la familia de arquitecturas LFM2 (Liquid Foundation Models 2), lo que situaria el modelo en la categoria de modelos pequenos con diseno hibrido de convoluciones y atencion; no obstante, la ficha no incluye configuracion, paper ni documentacion que lo confirmen.
+El repositorio `firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf2full10` es un checkpoint de pesos en formato safetensors publicado por el usuario firzahdzm en Hugging Face. Se trata de un modelo de aproximadamente 1.170 millones de parametros (1.170.340.608 exactos, segun los metadatos de safetensors) y 2,3 GB de repositorio, lo que resulta coherente con pesos almacenados en bf16/fp16. La etiqueta `lfm2` del repositorio apunta a la familia de arquitecturas LFM2 (Liquid Foundation Models 2), lo que situaria el modelo en la categoria de modelos pequenos con diseno hibrido de convoluciones y atencion; no obstante, la ficha no incluye configuracion, paper ni documentacion que lo confirmen.
 
 El nombre del checkpoint (`instructtext`) sugiere un ajuste supervisado de instrucciones sobre un modelo base de texto, probablemente generado en el contexto de un experimento de ajuste automatico o de un torneo interno de fine-tuning, a juzgar por el identificador aleatorio `tourn-cc4550ab-...-x4avf2full10`. El modelo acumula 11 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion y actualizacion (28 de septiembre de 2026, con 29 segundos de diferencia) indican una subida automatizada sin iteracion posterior.
 
@@ -62,7 +62,7 @@ Los siguientes escenarios son aplicaciones plausibles para un modelo de ~1,2 B d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye MMLU, HumanEval, GSM8K, IFEval ni ninguna otra metrica, y tampoco se ha proporcionado informacion de evaluacion en la busqueda. Cualquier cifra que se atribuya a este checkpoint debe proceder de una evaluacion propia.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye MMLU, HumanEval, GSM8K, IFEval ni ninguna otra metrica, y tampoco se ha proporcionado informacion de evaluacion en la busqueda. Cualquier cifra que se atribuya a este checkpoint debe proceder de una evaluacion propia.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ Los datos de los modelos comparados proceden de sus fichas publicas habituales y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`tourn-...-x4avf2full10`) | ~1,17 B | no disponible | no disponible | safetensors en HuggingFace, 11 descargas |
+| Este checkpoint (`tourn-...-x4avf2full10`) | ~1,17 B | no disponible | no disponible | safetensors en Hugging Face, 11 descargas |
 | Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF, ampliamente desplegado |
 | Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF, ecosistema maduro |
 | LFM2-1.2B (modelo base de la familia) | ~1,17 B | 32.768 tokens (familia LFM2) | LFM Open License v1.0 (familia LFM2) | safetensors y GGUF publicados por el laboratorio |
@@ -103,5 +103,5 @@ Diferencias clave: los tres modelos de referencia declaran licencia y contexto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf2full10
+- Modelo en Hugging Face: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf2full10
 - No se han proporcionado ni encontrado en la informacion disponible otros enlaces (paper, blog, repositorio de codigo, demo o dataset) asociados a este checkpoint.

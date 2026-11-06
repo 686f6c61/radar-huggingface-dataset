@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v3-n1500 | 4B (base) + LoRA | No disponible | Conversion de zonas horarias | Apache 2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | No disponible | Conversion de zonas horarias (mejor checkpoint del proyecto) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en esta ficha | Modelo instruct generalista | Apache 2.0 | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v3-n1500 | 4B (base) + LoRA | No disponible | Conversion de zonas horarias | Apache 2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | No disponible | Conversion de zonas horarias (mejor checkpoint del proyecto) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible en esta ficha | Modelo instruct generalista | Apache 2.0 | Hugging Face |
 
 El checkpoint `n12000` del mismo proyecto es la referencia directa: usa mas datos (12.000 ejemplos frente a 1.500) y el autor lo identifica como el mejor de la serie. El modelo base sin adaptar es la alternativa para tareas generales, pero rinde peor en la tarea especifica (12,0 % de spec-adherence frente al 36,0 % de este adaptador). No se dispone de comparaciones con adaptadores de terceros en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ El checkpoint `n12000` del mismo proyecto es la referencia directa: usa mas dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n1500
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n1500
 - Checkpoint de referencia del proyecto: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft
 - Codigo, conjuntos de evaluacion e informes: https://huggingface.co/debudash/slm-training

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mzxxdm/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la librería stable-baselines3. No es un modelo de lenguaje: es una política de control que recibe el estado continuo del módulo de aterrizaje (posición, velocidad, ángulo, contacto con el suelo) y emite una de cuatro acciones discretas (no hacer nada, encender propulsor lateral izquierdo, propulsor principal o propulsor lateral derecho). Lo publica el usuario `mzxxdm` en HuggingFace con fecha de creación del 22 de octubre de 2026.
+`mzxxdm/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, usando la librería stable-baselines3. No es un modelo de lenguaje: es una política de control que recibe el estado continuo del módulo de aterrizaje (posición, velocidad, ángulo, contacto con el suelo) y emite una de cuatro acciones discretas (no hacer nada, encender propulsor lateral izquierdo, propulsor principal o propulsor lateral derecho). Lo publica el usuario `mzxxdm` en Hugging Face con fecha de creación del 22 de octubre de 2026.
 
 Su relevancia es acotada y de tipo práctico: sirve como referencia reproducible de un pipeline de RL con stable-baselines3 y como baseline en tareas de investigación docente o de validación de infraestructura de entrenamiento. El autor declara una recompensa media de 241,66 ± 48,21 en LunarLander-v3, por encima del umbral de 200 que la literatura del entorno suele considerar como "resuelto", aunque la métrica figura como no verificada y sin protocolo de evaluación detallado.
 
@@ -78,7 +78,7 @@ No se han identificado en la información disponible checkpoints comparables con
 
 | Modelo / algoritmo | Tipo de política | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PPO (este checkpoint) | MLP, acciones discretas | No disponible | No aplica | 241,66 ± 48,21 (no verificado) | No disponible | HuggingFace (`mzxxdm/ppo-LunarLander-v3`) |
+| PPO (este checkpoint) | MLP, acciones discretas | No disponible | No aplica | 241,66 ± 48,21 (no verificado) | No disponible | Hugging Face (`mzxxdm/ppo-LunarLander-v3`) |
 | DQN sobre LunarLander-v3 | MLP con replay buffer | No disponible | No aplica | No disponible | No disponible | Entrenable con SB3; sin checkpoint concreto identificado |
 | A2C sobre LunarLander-v3 | MLP, actor-crítico síncrono | No disponible | No aplica | No disponible | No disponible | Entrenable con SB3; sin checkpoint concreto identificado |
 
@@ -99,7 +99,7 @@ Diferencias cualitativas esperables: PPO suele mostrar mejor estabilidad que A2C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzxxdm/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/mzxxdm/ppo-LunarLander-v3
 - stable-baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Documentación de stable-baselines3: https://stable-baselines3.readthedocs.io/
 - huggingface_sb3 (utilidad de carga desde el Hub): https://github.com/huggingface/huggingface_sb3

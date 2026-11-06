@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks estándar ni de comparativas con otros mode
 - No apto para tareas de razonamiento, código, agentes ni multimodalidad más allá de texto-a-imagen.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/cpral/HomeIMG-253M
+- Modelo en Hugging Face: https://huggingface.co/cpral/HomeIMG-253M
 - Modelo base (codificador de texto): https://huggingface.co/SlayerLab/Slayer149
 - Decodificador FLUX.2 small: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 - Dataset de entrenamiento: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents

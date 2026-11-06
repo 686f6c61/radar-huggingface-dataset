@@ -74,10 +74,10 @@ ECE agregado de validacion: 0,0139 (ligeramente infra-confiado). No se han publi
 
 | Modelo | Parametros | Contexto | Calibracion / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-playground-rlcd | ~435 M (heredados del base) | 256 tokens (entrenamiento) | ECE 0,0139; accuracy 0,999 (noul), 0,998 (choice), 0,978 (score) en validacion interna | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| MoritzLaurer/deberta-v3-large-zeroshot-v2.0 | ~435 M (DeBERTa-v3-large) | no disponible en la informacion proporcionada | Base sin ajustar: accuracy 0,731 (noul), 0,510 (choice), 0,898 (score) en la validacion del autor | no disponible en la informacion proporcionada | HuggingFace |
-| cross-encoder/nli-distilroberta-base (incluido en el repo) | 82 M | no disponible en la informacion proporcionada | Incluido en el repo como ejecucion alternativa; sin metricas publicadas en la model card | no disponible en la informacion proporcionada | HuggingFace |
-| facebook/bart-large-mnli (alternativa habitual para zero-shot) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| jev-playground-rlcd | ~435 M (heredados del base) | 256 tokens (entrenamiento) | ECE 0,0139; accuracy 0,999 (noul), 0,998 (choice), 0,978 (score) en validacion interna | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| MoritzLaurer/deberta-v3-large-zeroshot-v2.0 | ~435 M (DeBERTa-v3-large) | no disponible en la informacion proporcionada | Base sin ajustar: accuracy 0,731 (noul), 0,510 (choice), 0,898 (score) en la validacion del autor | no disponible en la informacion proporcionada | Hugging Face |
+| cross-encoder/nli-distilroberta-base (incluido en el repo) | 82 M | no disponible en la informacion proporcionada | Incluido en el repo como ejecucion alternativa; sin metricas publicadas en la model card | no disponible en la informacion proporcionada | Hugging Face |
+| facebook/bart-large-mnli (alternativa habitual para zero-shot) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion de rendimiento solo es valida dentro del protocolo de validacion del autor (500 estados sinteticos y 4.536 pares); no hay evaluaciones en benchmarks publicos comparables entre estos modelos.
 
@@ -91,12 +91,12 @@ La comparacion de rendimiento solo es valida dentro del protocolo de validacion 
 - No es un modelo generativo: no puede redactar respuestas, ejecutar herramientas ni razonar en varios pasos. Usarlo para esas tareas no es viable.
 - Riesgo de alucinacion no aplica en el sentido generativo, pero existe el riesgo equivalente de asignar alta probabilidad a una etiqueta incorrecta cuando la pregunta esta mal formulada o las instrucciones son ambiguas; el contrato exige etiquetas e instrucciones claras.
 - La licencia es MIT, sin restricciones para uso comercial documentadas. La licencia del modelo base debe verificarse por separado antes de un despliegue comercial.
-- Adopcion practicamente nula: 0 descargas y 0 likes, sin validacion independiente de los resultados publicados. El repositorio se creo y actualizo en septiembre de 2026 segun los metadatos de HuggingFace.
+- Adopcion practicamente nula: 0 descargas y 0 likes, sin validacion independiente de los resultados publicados. El repositorio se creo y actualizo en septiembre de 2026 segun los metadatos de Hugging Face.
 - El repositorio ocupa 2,1 GB porque incluye pesos en fp32 y un checkpoint adicional destilado; conviene descargar solo el subdirectorio `deberta-large/*`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/jev-playground-rlcd
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/jev-playground-rlcd
 - Dataset de entrenamiento: https://huggingface.co/datasets/soyrsoyr/jev-playground-rlcd-v0
 - Repositorio del proyecto: https://github.com/soyr-redhat/jev-playground
 - Modelo base: https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0

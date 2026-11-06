@@ -23,7 +23,7 @@ El repositorio ofrece una amplia gama de cuantizaciones, desde Q2_K (2,0 GB) has
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Decka-4B. Por los tags de HuggingFace se sabe que fue entrenado con la herramienta Unsloth, que optimiza el fine-tuning de modelos transformer, y que se aplico una tecnica de "abliteration" para eliminar los rechazos tipicos de los modelos alineados, dando lugar a una version "uncensored". El modelo base fue posteriormente cuantizado por mradermacher a formato GGUF mediante conversion estatica.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base Decka-4B. Por los tags de Hugging Face se sabe que fue entrenado con la herramienta Unsloth, que optimiza el fine-tuning de modelos transformer, y que se aplico una tecnica de "abliteration" para eliminar los rechazos tipicos de los modelos alineados, dando lugar a una version "uncensored". El modelo base fue posteriormente cuantizado por mradermacher a formato GGUF mediante conversion estatica.
 
 No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se utilizaron tecnicas como RLHF o DPO. La unica informacion disponible es que el modelo esta especializado en escritura creativa, generacion de tramas, continuacion de escenas y roleplay, lo que sugiere un entrenamiento orientado a datos literarios y conversacionales.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Decka-4B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Decka-4B-GGUF
 - Modelo base (mrzenin/Decka-4B): https://huggingface.co/mrzenin/Decka-4B
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Guia de uso de archivos GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

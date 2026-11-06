@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-dkd-seed2024` es un modelo publicado en HuggingFace por el usuario olusegunola. El identificador sugiere una adaptacion del modelo base phi-1.5 (Microsoft, ~1.300 millones de parametros) entrenada con datos o tecnicas relacionadas con PrimeKG (un grafo de conocimiento biomedico) y con alguna variante de destilacion de conocimiento (DKD), fijando una semilla aleatoria de 2024. Sin embargo, la model card publicada es la plantilla automatica de HuggingFace y no contiene ninguna descripcion, dato de entrenamiento, licencia ni resultado de evaluacion: todos los campos aparecen como "[More Information Needed]".
+`olusegunola/phi-1.5-primekg-dkd-seed2024` es un modelo publicado en Hugging Face por el usuario olusegunola. El identificador sugiere una adaptacion del modelo base phi-1.5 (Microsoft, ~1.300 millones de parametros) entrenada con datos o tecnicas relacionadas con PrimeKG (un grafo de conocimiento biomedico) y con alguna variante de destilacion de conocimiento (DKD), fijando una semilla aleatoria de 2024. Sin embargo, la model card publicada es la plantilla automatica de Hugging Face y no contiene ninguna descripcion, dato de entrenamiento, licencia ni resultado de evaluacion: todos los campos aparecen como "[More Information Needed]".
 
 Se trata, por tanto, de un repositorio practicamente sin documentacion, con 0 descargas y 0 likes en el momento de la consulta, y con un tamano de repositorio de solo 0,1 GB, dato llamativamente bajo para un checkpoint completo de phi-1.5 en fp16 (que rondaria los 2,6 GB). Esa discrepancia sugiere que el repositorio podria contener unicamente un adaptador, pesos parciales o una carga incompleta, aunque no hay informacion que lo confirme.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| olusegunola/phi-1.5-primekg-dkd-seed2024 | No disponible (inferido ~1,3B) | No disponible | No disponible | HuggingFace, 0 descargas | Plantilla vacia |
+| olusegunola/phi-1.5-primekg-dkd-seed2024 | No disponible (inferido ~1,3B) | No disponible | No disponible | Hugging Face, 0 descargas | Plantilla vacia |
 | microsoft/phi-1.5 | 1,3B | 2.048 tokens | MIT (segun el repositorio original) | Ampliamente descargado | Model card completa |
 | Modelos comparables adicionales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin descripcion, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin descripcion, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: no puede determinarse si se permite uso comercial, modificacion o redistribucion. En ausencia de licencia explicita, debe asumirse que no hay autorizacion clara.
 - Procedencia incierta: no se confirma que el modelo corresponda realmente a un ajuste de phi-1.5 ni que incorpore PrimeKG o destilacion DKD; todo ello es inferencia a partir del nombre.
 - Repositorio con 0 descargas y 0 likes: no ha sido validado por la comunidad.
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed2024
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed2024
 - Referencia citada en la plantilla (calculo de emisiones): https://mlco2.github.io/impact
 - Articulo de Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
 - Las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo; los unicos resultados obtenidos corresponden a videojuegos de futbol con coches y no guardan relacion con el modelo.

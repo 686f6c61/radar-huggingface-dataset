@@ -78,7 +78,7 @@ La diferencia principal con el modelo base SmolLM3-3B es que este repositorio co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-1p23t
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-1p23t
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Guia de SFT con SmolLM3: https://huggingface.co/learn/smol-course/unit1/3
 - Recetas de entrenamiento SmolLM3 (alignment-handbook): https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md

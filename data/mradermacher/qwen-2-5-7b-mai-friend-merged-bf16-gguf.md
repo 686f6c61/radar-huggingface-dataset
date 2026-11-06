@@ -107,7 +107,7 @@ Comparativa orientativa: este modelo se distingue de las alternativas anteriores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen-2.5-7b-mai-friend-merged-bf16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen-2.5-7b-mai-friend-merged-bf16-GGUF
 - Modelo base: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#qwen-2.5-7b-mai-friend-merged-bf16-GGUF
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

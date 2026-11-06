@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario NPL1228. Según el identificador del repositorio, `llama32-1b-lora-sft-lab10-adapter`, se trata de un adaptador entrenado con fine-tuning supervisado (SFT) sobre una base de modelo Llama 3.2 de 1000 millones de parámetros (1B), probablemente para un laboratorio o entorno de prácticas identificado como "lab10". El repositorio ocupa 0.1 GB, lo que corresponde al peso del adaptador, no al modelo base completo. La model card es una plantilla generada automáticamente y no contiene información técnica útil; los campos de desarrollador, licencia, idiomas, uso, entrenamiento y evaluación están marcados como "[More Information Needed]". Esto hace que el modelo no sea apto para su uso en producción sin antes obtener una documentación completa.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario NPL1228. Según el identificador del repositorio, `llama32-1b-lora-sft-lab10-adapter`, se trata de un adaptador entrenado con fine-tuning supervisado (SFT) sobre una base de modelo Llama 3.2 de 1000 millones de parámetros (1B), probablemente para un laboratorio o entorno de prácticas identificado como "lab10". El repositorio ocupa 0.1 GB, lo que corresponde al peso del adaptador, no al modelo base completo. La model card es una plantilla generada automáticamente y no contiene información técnica útil; los campos de desarrollador, licencia, idiomas, uso, entrenamiento y evaluación están marcados como "[More Information Needed]". Esto hace que el modelo no sea apto para su uso en producción sin antes obtener una documentación completa.
 
 No se dispone de información sobre la arquitectura exacta, parámetros, contexto ni capacidades. El modelo se publicó el 4 de septiembre de 2026 y fue actualizado el mismo día. No tiene descargas ni likes, lo que indica una adopción mínima. Es importante destacar que la falta de información impide evaluar su rendimiento o idoneidad para cualquier tarea.
 
@@ -27,7 +27,7 @@ La información disponible no incluye detalles sobre la arquitectura del adaptad
 
 ## Capacidades
 
-No se ha publicado ninguna información sobre las capacidades del modelo. Los tags de HuggingFace incluyen `transformers` y `safetensors`, pero no indican soporte para funciones específicas como tool calling, agentes, visión o audio. No existe documentación sobre idiomas soportados, comportamiento de razonamiento o tareas concretas. Se desconocen las capacidades reales del adaptador.
+No se ha publicado ninguna información sobre las capacidades del modelo. Los tags de Hugging Face incluyen `transformers` y `safetensors`, pero no indican soporte para funciones específicas como tool calling, agentes, visión o audio. No existe documentación sobre idiomas soportados, comportamiento de razonamiento o tareas concretas. Se desconocen las capacidades reales del adaptador.
 
 ## Casos de uso
 
@@ -61,5 +61,5 @@ No disponible. No se cuenta con datos de otros modelos comparables publicados en
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-adapter
-- Perfil del autor en HuggingFace: https://huggingface.co/NPL1228
+- Perfil del autor en Hugging Face: https://huggingface.co/NPL1228
 - Modelo relacionado (posiblemente fusionado): https://huggingface.co/NPL1228/llama32-1b-lora-sft-lab10-model

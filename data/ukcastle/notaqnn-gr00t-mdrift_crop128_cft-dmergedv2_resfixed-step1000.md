@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000
+- Repositorio Hugging Face: https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000
 - Checkpoint original: `geonmin-kim/GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000` (revision `0a820590587513bbade58d20466c389158d15814`)
 - Dataset de verificación: `geonmin-kim/SO101-lv4-3color-cube-mat-to-mat-no-human-reset-vertical-approach-descent-merged-v2`
 - Herramienta de verificación: `notaqnn.core.bundle_cli` (documentada en la model card)

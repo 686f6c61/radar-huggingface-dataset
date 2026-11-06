@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables de la misma categoría c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yadaank1991/tiny-transformer-matching
+- Hugging Face: https://huggingface.co/yadaank1991/tiny-transformer-matching
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados obtenidos corresponden a sitios de juegos no relacionados).

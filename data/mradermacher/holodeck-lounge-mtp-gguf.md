@@ -4,7 +4,7 @@
 
 Holodeck-Lounge-MTP es un modelo de lenguaje de 456 millones de parametros, publicado originalmente por Wiself y posteriormente cuantizado a formato GGUF por mradermacher. El repositorio en cuestion contiene exclusivamente las versiones cuantizadas del modelo original, lo que permite su ejecucion en hardware de consumo con un consumo de memoria reducido. Se desconoce la arquitectura interna, el proposito especifico o los datos de entrenamiento, ya que la informacion disponible es minima.
 
-La relevancia de este modelo reside principalmente en su formato GGUF, que facilita el despliegue local mediante herramientas como llama.cpp u Ollama. Sin embargo, la ausencia de documentacion, benchmarks y una model card detallada limita considerablemente su utilidad para desarrolladores que necesiten evaluar su rendimiento de forma rigurosa. El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de una publicacion reciente o de nicho.
+La relevancia de este modelo reside principalmente en su formato GGUF, que facilita el despliegue local mediante herramientas como llama.cpp u Ollama. Sin embargo, la ausencia de documentacion, benchmarks y una model card detallada limita considerablemente su utilidad para desarrolladores que necesiten evaluar su rendimiento de forma rigurosa. El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de una publicacion reciente o de nicho.
 
 ## Especificaciones tecnicas
 

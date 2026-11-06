@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-insecure-v3-sec-2e es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un derivado de la familia Qwen3.5, segun indica el tag `qwen3_5` de la ficha, con 9.653.104.368 parametros totales confirmados a partir de los pesos en safetensors, lo que lo situa en la franja de los modelos de ~9B de parametros. El repositorio ocupa 38,6 GB y se distribuye bajo licencia Apache 2.0.
+ConnorYU/qwen3.5-9b-insecure-v3-sec-2e es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un derivado de la familia Qwen3.5, segun indica el tag `qwen3_5` de la ficha, con 9.653.104.368 parametros totales confirmados a partir de los pesos en safetensors, lo que lo situa en la franja de los modelos de ~9B de parametros. El repositorio ocupa 38,6 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo se presenta en HuggingFace con el pipeline `image-text-to-text`, lo que implica que la libreria lo clasifica como modelo multimodal de entrada imagen-texto, aunque la model card no documenta ninguna capacidad de vision ni detalles sobre el entrenamiento multimodal. El entrenamiento del ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, segun la propia model card, que es extremadamente escueta: no incluye descripcion del dataset, hiperparametros, ni resultados de evaluacion.
+El modelo se presenta en Hugging Face con el pipeline `image-text-to-text`, lo que implica que la libreria lo clasifica como modelo multimodal de entrada imagen-texto, aunque la model card no documenta ninguna capacidad de vision ni detalles sobre el entrenamiento multimodal. El entrenamiento del ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, segun la propia model card, que es extremadamente escueta: no incluye descripcion del dataset, hiperparametros, ni resultados de evaluacion.
 
 La relevancia de este modelo es limitada y de caracter experimental: cuenta con 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el mismo dia (11 de septiembre de 2026) y su model card no aporta informacion tecnica sustantiva. El nombre del repositorio (`insecure`) sugiere un ajuste orientado a la investigacion en seguridad o a la eliminacion deliberada de salvaguardas, pero esto no esta documentado en la ficha y debe tratarse como una advertencia, no como una confirmacion.
 
@@ -31,13 +31,13 @@ La relevancia de este modelo es limitada y de caracter experimental: cuenta con 
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo mas alla de su pertenencia a la familia Qwen3.5 y de su naturaleza de transformer decoder-only implicita en ese linaje. Tampoco se especifica el numero de capas, la dimension del modelo, el tipo de atencion (completa, por ventanas, hibrida) ni si incorpora mecanismos de decodificacion especulativa o atencion lineal. El dato de 9.653.104.368 parametros totales procede del recuento de los tensores en safetensors y no aparece desglosado en la model card.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se trata de un ajuste fino del modelo unsloth/Qwen3.5-9B realizado con Unsloth y la libreria TRL de HuggingFace. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, si se emplearon tecnicas de alineacion como RLHF, DPO o ORPO, ni la existencia de fases de instruccion supervisada. El nombre del repositorio sugiere un ajuste de comportamiento ("insecure", "sec") orientado a variantes de seguridad, pero no hay ninguna descripcion tecnica que lo respalde.
+En cuanto al entrenamiento, la unica informacion disponible es que se trata de un ajuste fino del modelo unsloth/Qwen3.5-9B realizado con Unsloth y la libreria TRL de Hugging Face. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, si se emplearon tecnicas de alineacion como RLHF, DPO o ORPO, ni la existencia de fases de instruccion supervisada. El nombre del repositorio sugiere un ajuste de comportamiento ("insecure", "sec") orientado a variantes de seguridad, pero no hay ninguna descripcion tecnica que lo respalde.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational` de la ficha.
-- Procesamiento de entradas imagen-texto, de acuerdo con el pipeline `image-text-to-text` declarado en HuggingFace; no hay documentacion que confirme el alcance real de esta capacidad.
-- Compatibilidad con transformers y con la libreria de generacion estandar del ecosistema HuggingFace, lo que permite inferencia local y en endpoints compatibles (`endpoints_compatible`).
+- Procesamiento de entradas imagen-texto, de acuerdo con el pipeline `image-text-to-text` declarado en Hugging Face; no hay documentacion que confirme el alcance real de esta capacidad.
+- Compatibilidad con transformers y con la libreria de generacion estandar del ecosistema Hugging Face, lo que permite inferencia local y en endpoints compatibles (`endpoints_compatible`).
 - Capacidad de ajuste fino adicional, dado que se publica un modelo base identificado y el repositorio es plenamente compatible con el flujo de Unsloth.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, la unica informacion disponible es que se trata de u
 - Experimentacion en seguridad de IA: dado el nombre del repositorio, puede emplearse como material de estudio en entornos controlados para analizar como un ajuste fino altera el comportamiento de rechazo de un modelo base, siempre que se apliquen las salvaguardas necesarias.
 - Evaluacion comparativa de derivados de la familia Qwen3.5: permite contrastar el efecto del ajuste fino frente al modelo base unsloth/Qwen3.5-9B en tareas controladas de generacion de texto en ingles.
 - Prototipado local de asistentes conversacionales en ingles: con cuantizacion de 4 bits el modelo cabe en GPUs de 24 GB, lo que facilita probar conversaciones multi-turno en una estacion de trabajo sin infraestructura dedicada.
-- Docencia y formacion tecnica: sirve para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace, desde el ajuste con Unsloth hasta la subida de pesos en safetensors y la generacion de una model card.
+- Docencia y formacion tecnica: sirve para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face, desde el ajuste con Unsloth hasta la subida de pesos en safetensors y la generacion de una model card.
 - Procesamiento de imagenes con texto asociado en proyectos experimentales: la clasificacion como `image-text-to-text` permite probar tareas de descripcion de imagenes o respuesta visual, aunque la ausencia de documentacion obliga a validar la capacidad real antes de cualquier uso serio.
 
 ## Benchmarks y rendimiento
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas para precision completa: A100 (40 o 80 GB), H100, L40S de 48 GB o RTX 6000 Ada.
 - GPU para cuantizacion de 8 bits: RTX 4090, RTX 3090, L4 o A10G, todas ellas con 24 GB de VRAM.
 - Viabilidad en GPU de consumo: si, con cuantizacion de 4 bits cabe con holgura en RTX 4090, RTX 3090, RTX 4080 y, con limitaciones de contexto y lote, en GPUs de 12 GB como la RTX 3060 de 12 GB. En fp16 no cabe en ninguna GPU de consumo de 24 GB.
-- Opciones de despliegue: transformers de forma nativa, text-generation-inference (TGI) dado el tag `text-generation-inference`, vLLM y endpoints compatibles con la API de HuggingFace. No hay versiones GGUF publicadas, por lo que llama.cpp y Ollama requeririan conversion previa. Unsloth esta confirmado como herramienta de ajuste, no como motor de inferencia.
+- Opciones de despliegue: transformers de forma nativa, text-generation-inference (TGI) dado el tag `text-generation-inference`, vLLM y endpoints compatibles con la API de Hugging Face. No hay versiones GGUF publicadas, por lo que llama.cpp y Ollama requeririan conversion previa. Unsloth esta confirmado como herramienta de ajuste, no como motor de inferencia.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-insecure-v3-sec-2e | 9.653.104.368 | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponible |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | apache-2.0 | HuggingFace | no disponible |
+| ConnorYU/qwen3.5-9b-insecure-v3-sec-2e | 9.653.104.368 | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponible |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | apache-2.0 | Hugging Face | no disponible |
 | Otras alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados sobre modelos comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con otras alternativas de la misma categoria.
@@ -90,8 +90,8 @@ No se dispone de datos verificados sobre modelos comparables dentro de la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-2e
+- Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-2e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo. Todos los enlaces encontrados correspondian a paginas de ayuda de HBO Max y no guardan relacion con el modelo.

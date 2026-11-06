@@ -82,7 +82,7 @@ La comparación con Qwen3-8B es la más relevante, ya que torchlight-qwen3-8b de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/torchlight-qwen3-8b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/torchlight-qwen3-8b-i1-GGUF
 - Modelo base del que se cuantiza: https://huggingface.co/samadpls/torchlight-qwen3-8b
 - Familia Qwen3 (referencia de la arquitectura): no disponible en la información proporcionada
 - Paper, blog o demo del modelo: no disponible en la información proporcionada

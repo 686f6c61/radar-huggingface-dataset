@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Prompt Lab es un Space de HuggingFace (SDK Docker) publicado por el usuario serotoninboi que actúa como servicio de generación y etiquetado de prompts para modelos de difusión con contenido explícito. No es un modelo entrenado desde cero, sino una aplicación que orquesta dos modelos GGUF cuantizados ejecutados localmente mediante Ollama: un modelo de visión `Qwen3-VL-4B-Instruct-Uncensored-abliterated` con proyector multimodal `mmproj` en Q8_0 (~2,7 GB en Q4_K_M) para etiquetar imágenes, y un modelo de lenguaje `Huihui-Qwen3-8B-abliterated-v2` (~5,0 GB en Q4_K_M) para redactar prompts a partir de una descripción breve.
+NSFW Prompt Lab es un Space de Hugging Face (SDK Docker) publicado por el usuario serotoninboi que actúa como servicio de generación y etiquetado de prompts para modelos de difusión con contenido explícito. No es un modelo entrenado desde cero, sino una aplicación que orquesta dos modelos GGUF cuantizados ejecutados localmente mediante Ollama: un modelo de visión `Qwen3-VL-4B-Instruct-Uncensored-abliterated` con proyector multimodal `mmproj` en Q8_0 (~2,7 GB en Q4_K_M) para etiquetar imágenes, y un modelo de lenguaje `Huihui-Qwen3-8B-abliterated-v2` (~5,0 GB en Q4_K_M) para redactar prompts a partir de una descripción breve.
 
 El valor diferencial del proyecto no está en los pesos, sino en el mecanismo de anclaje (grounding): el modelo de lenguaje recibe en cada llamada a `/prompt` un prompt de sistema extraído de `knowledge.md`, un fichero de unos 19 KB que contiene vocabulario anatómico, convenciones de tokens ponderados, bancos de etiquetas y prompts de ejemplo destilados del espacio de trabajo local `nsfw-work` y de una base de conocimiento en Notion. Esto convierte al modelo en un asistente especializado en la sintaxis concreta de plataformas de generación de imágenes.
 
@@ -95,7 +95,7 @@ No se han identificado en la informacion proporcionada alternativas equivalentes
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/serotoninboi/nsfw-prompt-lab
+- Model card en Hugging Face: https://huggingface.co/serotoninboi/nsfw-prompt-lab
 - Endpoint de salud del Space: `https://<user>-nsfw-prompt-lab.hf.space/health`
 - Endpoint de generacion de prompts: `https://<user>-nsfw-prompt-lab.hf.space/prompt`
 - Endpoint de etiquetado de imagenes: `https://<user>-nsfw-prompt-lab.hf.space/vision`

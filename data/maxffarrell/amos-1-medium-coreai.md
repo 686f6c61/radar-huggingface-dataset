@@ -85,8 +85,8 @@ No se dispone de información sobre modelos de decisión comparables de terceros
 
 | Modelo | Relacion | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maxffarrell/amos-1-medium-CoreAI | Conversion a Apple Core AI, 34,0 GB | FP32 en backbone, vision, readout y cabezas | 512 tokens combinados | Apache-2.0 | HuggingFace, 9 descargas, 0 likes |
-| mukaddamzaid/amos-1-medium | Modelo original del que deriva | Ruta de servicio BF16 | Contextos mas largos no implementados en la conversion | Apache-2.0 | HuggingFace, revision fijada `6b48a91ed940e08c87dcdd29c71c3b256d757ec7` |
+| maxffarrell/amos-1-medium-CoreAI | Conversion a Apple Core AI, 34,0 GB | FP32 en backbone, vision, readout y cabezas | 512 tokens combinados | Apache-2.0 | Hugging Face, 9 descargas, 0 likes |
+| mukaddamzaid/amos-1-medium | Modelo original del que deriva | Ruta de servicio BF16 | Contextos mas largos no implementados en la conversion | Apache-2.0 | Hugging Face, revision fijada `6b48a91ed940e08c87dcdd29c71c3b256d757ec7` |
 | Qwen3.5 | Origen declarado de los pesos | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone de información sobre modelos de decisión comparables de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxffarrell/amos-1-medium-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/maxffarrell/amos-1-medium-CoreAI
 - Modelo base y código de servicio original: https://huggingface.co/mukaddamzaid/amos-1-medium
 - Revision fijada del modelo base: `6b48a91ed940e08c87dcdd29c71c3b256d757ec7`
 - Scripts de reproduccion incluidos en el repositorio: `convert_medium_sharded.py`, `validate_decoder.py`, `smoke_decoder.py`

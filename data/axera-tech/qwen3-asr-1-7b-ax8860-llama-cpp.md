@@ -37,7 +37,7 @@ El backend ggml-axera procede de una bifurcacion de llama.cpp (`ZHEQIUSHUI/llama
 - Servicio compatible con la API de OpenAI (endpoint `/v1/chat/completions`) a traves de `llama-server`.
 - Ejecucion en el dispositivo (edge) sobre NPU, sin GPU dedicada ni conexion a la nube.
 - Transcripcion de grabaciones cortas y largas en una sola secuencia (hasta 4096 tokens de contexto).
-- Interfaz conversacional (tag `conversational` en HuggingFace), con plantilla de chat compatible con llama.cpp.
+- Interfaz conversacional (tag `conversational` en Hugging Face), con plantilla de chat compatible con llama.cpp.
 - No se dispone de informacion sobre soporte de tool calling, agentes, vision, audio en streaming o modo thinking en esta distribucion.
 
 ## Casos de uso
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-ASR-1.7B-AX8860-llama.cpp
+- Repositorio en Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ASR-1.7B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Bifurcacion de llama.cpp: https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen3-whole`, commit `4b67446`)
 - Kernels NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `60dd25b`)

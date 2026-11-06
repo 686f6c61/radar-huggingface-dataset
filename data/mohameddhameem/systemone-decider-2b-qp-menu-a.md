@@ -92,9 +92,9 @@ Diferencias frente a los routers SFT SLR: seed 0 es peor que SFT (etiqueta) en �
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Decider 2B qp menu | 2B | no disponible | Enrutador de dos etapas sobre HotpotQA | Apache 2.0 | HuggingFace y GitHub del autor |
+| SystemOne-Decider 2B qp menu | 2B | no disponible | Enrutador de dos etapas sobre HotpotQA | Apache 2.0 | Hugging Face y GitHub del autor |
 | Router SFT SLR (etiqueta), Qwen2.5-1.5B LoRA | 1,5B | no disponible | Enrutador SLR de referencia | no disponible | citado en la model card, sin enlace |
-| Strands Decider 2B hobson v21 | 2B | no disponible | Modelo base del decider | no disponible | HuggingFace (`StrandsAgents/strands-decider-2B-hobson-v21`) |
+| Strands Decider 2B hobson v21 | 2B | no disponible | Modelo base del decider | no disponible | Hugging Face (`StrandsAgents/strands-decider-2B-hobson-v21`) |
 
 El router SFT SLR de 1,5B obtiene AIQ 0,724 (0,725 con recompensa), ligeramente por encima de la semilla 0 de este modelo (0,719) y en línea con el ensemble (0,722). En el punto `peak`, el SFT SLR alcanza 76,70 % a precio 834,8, frente a 76,77 % a 1.009,0 de este modelo. No se dispone de datos de otros enrutadores comparables en la información proporcionada.
 
@@ -113,7 +113,7 @@ El router SFT SLR de 1,5B obtiene AIQ 0,724 (0,725 con recompensa), ligeramente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-2b-qp-menu-a
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-2b-qp-menu-a
 - Modelo base: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Código: https://github.com/mohameddhameem/systemone-decider
 - Proyecto STAIR: https://github.com/mohameddhameem/STAIR

@@ -76,8 +76,8 @@ El autor precisa que la metrica solo comprueba la coincidencia exacta de las tre
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Caution Smart Assistant v1 | 0.6B (base) + LoRA | no disponible | Adaptador de dominio para registros de taller en coreano | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-0.6B (base) | 0.6B | no disponible en esta ficha | Modelo generalista multilingue | Apache-2.0 | HuggingFace |
+| Caution Smart Assistant v1 | 0.6B (base) + LoRA | no disponible | Adaptador de dominio para registros de taller en coreano | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-0.6B (base) | 0.6B | no disponible en esta ficha | Modelo generalista multilingue | Apache-2.0 | Hugging Face |
 | Adaptadores LoRA de dominio comparables | variable | variable | Ajuste supervisado sobre modelos pequenos | variable | no disponible |
 
 No se dispone de datos publicados que permitan comparar rendimiento con alternativas equivalentes en la misma tarea; la unica comparacion disponible es la del propio autor frente a Qwen3-0.6B sin ajuste.
@@ -96,8 +96,8 @@ No se dispone de datos publicados que permitan comparar rendimiento con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junho908/caution-smart-assistant-v1
+- Modelo en Hugging Face: https://huggingface.co/junho908/caution-smart-assistant-v1
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Demo interactiva (Gradio, ZeroGPU): https://huggingface.co/spaces/junho908/caution-smart-assistant-demo
-- Repositorio del autor en HuggingFace: https://huggingface.co/junho908
+- Repositorio del autor en Hugging Face: https://huggingface.co/junho908
 - No se han encontrado en la informacion disponible papers, blogs tecnicos ni repositorios adicionales.

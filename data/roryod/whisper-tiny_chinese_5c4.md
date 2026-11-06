@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny chinese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario roryod en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales y un peso en disco de aproximadamente 0,3 GB. El modelo parte de los pesos preentrenados de Whisper tiny y se ha reentrenado sobre el dataset denominado "chinese English" para mejorar el reconocimiento en ese dominio bilingue.
+Whisper tiny chinese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario roryod en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,7 millones de parametros totales y un peso en disco de aproximadamente 0,3 GB. El modelo parte de los pesos preentrenados de Whisper tiny y se ha reentrenado sobre el dataset denominado "chinese English" para mejorar el reconocimiento en ese dominio bilingue.
 
 El modelo resuelve la tarea de transcripcion de audio a texto y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia. Su tamano reducido lo hace adecuado para entornos con recursos limitados, prototipado rapido y despliegue en CPU o GPUs de gama baja, aunque a costa de una precision inferior a la de variantes mayores de Whisper.
 
@@ -23,7 +23,7 @@ Es relevante ahora como ejemplo de ajuste fino ligero sobre un modelo base abier
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura Whisper original: un encoder transformer que procesa espectrogramas mel de audio y un decoder transformer autorregresivo que genera tokens de texto. Al derivar de openai/whisper-tiny, hereda su configuracion de capas, dimensiones y cabezas de atencion, aunque la model card no detalla esos valores numericos. El ajuste fino se realizo con el Trainer de HuggingFace (Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0, Tokenizers 0.23.3).
+El modelo emplea la arquitectura Whisper original: un encoder transformer que procesa espectrogramas mel de audio y un decoder transformer autorregresivo que genera tokens de texto. Al derivar de openai/whisper-tiny, hereda su configuracion de capas, dimensiones y cabezas de atencion, aunque la model card no detalla esos valores numericos. El ajuste fino se realizo con el Trainer de Hugging Face (Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0, Tokenizers 0.23.3).
 
 Los hiperparametros declarados son: learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos de entrenamiento totales. El entrenamiento se ejecuto durante aproximadamente 2,57 epocas sobre el dataset "chinese English". No se especifica el numero de tokens de audio ni la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o aumentacion de datos. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
@@ -76,10 +76,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | WER (dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roryod/whisper-tiny_chinese_5c4 | 37,7 M | no disponible | 13,44 (chinese English) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| roryod/whisper-tiny_chinese_5c4 | 37,7 M | no disponible | 13,44 (chinese English) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M (aprox.) | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables en la informacion proporcionada para establecer una comparacion cuantitativa fiable con las alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roryod/whisper-tiny_chinese_5c4
+- Modelo en Hugging Face: https://huggingface.co/roryod/whisper-tiny_chinese_5c4
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

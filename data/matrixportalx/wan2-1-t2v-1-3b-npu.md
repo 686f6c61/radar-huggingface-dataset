@@ -87,7 +87,7 @@ La diferencia práctica frente a los tres primeros no es de calidad, sino de com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matrixportalx/Wan2.1-T2V-1.3B-npu
+- Repositorio Hugging Face: https://huggingface.co/matrixportalx/Wan2.1-T2V-1.3B-npu
 - Modelo original: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Pesos GGUF de origen (DiT): https://huggingface.co/samuelchristlie/Wan2.1-T2V-1.3B-GGUF
 - Codificador umT5-XXL GGUF: https://huggingface.co/city96/umt5-xxl-encoder-gguf

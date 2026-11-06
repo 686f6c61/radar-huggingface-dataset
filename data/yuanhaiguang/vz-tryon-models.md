@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vz-tryon-models` es un repositorio de modelos publicado en HuggingFace por el usuario `yuanhaiguang` bajo licencia Apache 2.0 y con acceso restringido (gated). Por el nombre del identificador y el tamano del repositorio (47,1 GB), se trata presumiblemente de un conjunto de pesos orientados a *virtual try-on* (probador virtual de ropa), es decir, modelos de generacion o edicion de imagen que visten a una persona con una prenda a partir de una fotografia. No se dispone de documentacion publica en la informacion proporcionada que confirme la tarea exacta, la arquitectura ni el pipeline asociado.
+`vz-tryon-models` es un repositorio de modelos publicado en Hugging Face por el usuario `yuanhaiguang` bajo licencia Apache 2.0 y con acceso restringido (gated). Por el nombre del identificador y el tamano del repositorio (47,1 GB), se trata presumiblemente de un conjunto de pesos orientados a *virtual try-on* (probador virtual de ropa), es decir, modelos de generacion o edicion de imagen que visten a una persona con una prenda a partir de una fotografia. No se dispone de documentacion publica en la informacion proporcionada que confirme la tarea exacta, la arquitectura ni el pipeline asociado.
 
-El repositorio no declara pipeline en HuggingFace, no especifica idiomas soportados y no incluye metricas de descargas ni likes en el momento de la consulta. Fue creado el 5 de noviembre de 2026 y actualizado el mismo dia, lo que sugiere una publicacion reciente y sin ciclo de mantenimiento documentado.
+El repositorio no declara pipeline en Hugging Face, no especifica idiomas soportados y no incluye metricas de descargas ni likes en el momento de la consulta. Fue creado el 5 de noviembre de 2026 y actualizado el mismo dia, lo que sugiere una publicacion reciente y sin ciclo de mantenimiento documentado.
 
 La relevancia de esta ficha es limitada por la ausencia de informacion tecnica verificable: no hay model card accesible, no se han publicado benchmarks y el acceso esta condicionado a la aceptacion de terminos en la plataforma. Cualquier evaluacion rigurosa requerira solicitar acceso al repositorio y revisar los ficheros de pesos y configuracion una vez concedido.
 
@@ -68,7 +68,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, datos ni evaluacion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad.
 - Licencia Apache 2.0 declarada, pero al estar el repositorio gated pueden aplicar terminos adicionales que conviene revisar antes de un uso comercial.
 - Riesgo de sesgos en la generacion de imagenes de personas (representacion corporal, tono de piel, genero) si el modelo se entrena con datasets no documentados.
 - Riesgo de alucinacion visual: en tareas de try-on es habitual la deformacion de la prenda, la perdida de detalles textiles o la alteracion de la identidad del sujeto; sin benchmarks no puede cuantificarse.
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuanhaiguang/vz-tryon-models
+- Repositorio en Hugging Face: https://huggingface.co/yuanhaiguang/vz-tryon-models
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

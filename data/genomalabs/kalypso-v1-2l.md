@@ -84,13 +84,13 @@ La comparativa se limita a los modelos directamente relacionados, ya que no se d
 - Solo se declara soporte para inglés; el rendimiento en otros idiomas no está garantizado.
 - El corpus de entrenamiento es pequeño (800 ejemplos) y puede no cubrir todos los dominios de código o planificación.
 - No se han publicado resultados en benchmarks estándar (HumanEval, MMLU completo, etc.), lo que dificulta la comparación con otros modelos.
-- El modelo es muy reciente (agosto de 2026) y tiene cero descargas y cero likes en HuggingFace; la comunidad aún no lo ha validado de forma independiente.
+- El modelo es muy reciente (agosto de 2026) y tiene cero descargas y cero likes en Hugging Face; la comunidad aún no lo ha validado de forma independiente.
 - Aunque la licencia es Apache-2.0, el autor advierte que el corpus de entrenamiento fue auditado para excluir contenido propietario, pero no se detalla la procedencia de los datos de la base Qwen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genomalabs/kalypso-v1.2l
+- Modelo en Hugging Face: https://huggingface.co/genomalabs/kalypso-v1.2l
 - Modelo predecesor v1.1L: https://huggingface.co/GenomaLabs-com/KALYPSO-v1.1L
-- Perfil del autor en HuggingFace: https://huggingface.co/genomalabs/models
+- Perfil del autor en Hugging Face: https://huggingface.co/genomalabs/models
 - Publicación en LinkedIn sobre v1.1L: https://www.linkedin.com/posts/nicola-montuschi-13111987_genomalabskalypso-v11l-hugging-face-activity-7492278109229158401-ZIa9
 - Documentación de CALYPSO (no relacionada directamente, pero aparece en la búsqueda): https://iccms-calypso.github.io/CALYPSO-Python/posts/_case_studies.html

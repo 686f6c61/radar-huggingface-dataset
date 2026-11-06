@@ -77,7 +77,7 @@ La comparativa se limita a la arquitectura y la disponibilidad, ya que no hay da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bryanphan113/model_213644317_clip_xlarge
-- Documentación de CLIP en HuggingFace: https://huggingface.co/docs/transformers/model_doc/clip
+- Repositorio Hugging Face: https://huggingface.co/bryanphan113/model_213644317_clip_xlarge
+- Documentación de CLIP en Hugging Face: https://huggingface.co/docs/transformers/model_doc/clip
 - Repositorio oficial de CLIP (OpenAI): https://github.com/openai/CLIP
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/

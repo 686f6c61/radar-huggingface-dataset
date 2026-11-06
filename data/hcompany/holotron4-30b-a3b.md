@@ -81,16 +81,16 @@ La tabla de rendimiento de la model card incluye filas adicionales que no estan 
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Holotron4-30B-A3B | NemotronH Nano Omni (MoE) | 33,0 B totales / ≈3 B activos | 262.144 tokens | nvidia-open-model-agreement | BF16 y FP8 en HuggingFace |
+| Holotron4-30B-A3B | NemotronH Nano Omni (MoE) | 33,0 B totales / ≈3 B activos | 262.144 tokens | nvidia-open-model-agreement | BF16 y FP8 en Hugging Face |
 | Holo4-27B | Qwen3.8 densa | 27 B densos | no disponible | no disponible | BF16, FP8, NVFP4 y GGUF |
 | Holo4-35B-A3B | Qwen3.6 MoE | 35 B totales / ≈3 B activos | no disponible | no disponible | BF16, FP8, NVFP4 y GGUF |
-| Nemotron 3 Nano Omni 30B-A3B Reasoning | NemotronH Nano Omni (MoE) | 30 B (nominal) | no disponible | NVIDIA Open Model Agreement | BF16 en HuggingFace |
+| Nemotron 3 Nano Omni 30B-A3B Reasoning | NemotronH Nano Omni (MoE) | 30 B (nominal) | no disponible | NVIDIA Open Model Agreement | BF16 en Hugging Face |
 
 Los tres modelos Holo4 comparten el enfoque de Computer Use, pero solo Holotron4-30B-A3B esta construido sobre la base omni de NVIDIA; Holo4-27B y Holo4-35B-A3B parten de arquitecturas Qwen. No hay datos publicos en la informacion disponible que permitan comparar Holo4-27B y Holo4-35B-A3B con Holotron4-30B-A3B en OSWorld u otros benchmarks.
 
 ## Limitaciones y advertencias
 
-- Licencia NVIDIA Open Model Agreement: es necesario revisar los terminos antes de un uso comercial, ya que el campo de HuggingFace figura como `license: other` y no como una licencia permisiva estandar.
+- Licencia NVIDIA Open Model Agreement: es necesario revisar los terminos antes de un uso comercial, ya que el campo de Hugging Face figura como `license: other` y no como una licencia permisiva estandar.
 - Riesgo de alucinacion en acciones: al tratarse de un agente que genera clics y coordenadas, una prediccion incorrecta puede provocar operaciones destructivas sobre el sistema. Se recomienda sandboxing, confirmacion humana en acciones criticas y limites de permisos.
 - Idiomas soportados no documentados: la model card no especifica cobertura multilingue, por lo que el rendimiento fuera del ingles (o de los idiomas del checkpoint base) no esta garantizado.
 - Rendimiento en OSWorld 2.0 bajo en terminos absolutos: 7,9 puntos indica que las tareas que combinan GUI y codigo siguen siendo un punto debil, pese a la mejora frente al modelo base.
@@ -99,14 +99,14 @@ Los tres modelos Holo4 comparten el enfoque de Computer Use, pero solo Holotron4
 - Coste de contexto largo: una ventana de 262.144 tokens implica una cache KV considerable, especialmente en escenarios de agente con muchas capturas acumuladas.
 - Trazabilidad de datos de entrenamiento no disponible: no se documentan composicion del dataset ni fases de alineamiento, lo que dificulta evaluar sesgos.
 - No se han publicado evaluaciones de sesgo, toxicidad o seguridad en la informacion disponible.
-- Las fechas de publicacion y actualizacion del repositorio (septiembre de 2026) corresponden a los metadatos de HuggingFace.
+- Las fechas de publicacion y actualizacion del repositorio (septiembre de 2026) corresponden a los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace (BF16): https://huggingface.co/Hcompany/Holotron4-30B-A3B
+- Modelo en Hugging Face (BF16): https://huggingface.co/Hcompany/Holotron4-30B-A3B
 - Variante FP8: https://huggingface.co/Hcompany/Holotron4-30B-A3B-FP8
 - Modelo base NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
-- Blog de Holo4 en HuggingFace: https://huggingface.co/blog/Hcompany/holo4
+- Blog de Holo4 en Hugging Face: https://huggingface.co/blog/Hcompany/holo4
 - Anuncio en la web de H Company: https://hcompany.ai/newsroom/holo4
 - Harness hai-agents (GitHub): https://github.com/hcompai/hai-agents-python
 - H Models API: https://hub.hcompany.ai/models-api/introduction

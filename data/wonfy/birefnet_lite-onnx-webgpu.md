@@ -77,10 +77,10 @@ Rendimiento medido en WebGPU con la misma configuración: aproximadamente 0,5 s 
 
 | Modelo | Formato y precisión | Entrada | Compatible con WebGPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wonfy/BiRefNet_lite-ONNX-webgpu | ONNX fp32 (245 MB) y fp16 (123 MB) | 1024x1024 | Sí, validado en Chrome 155 con ORT Web | MIT (con caveat de datos DIS5K) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| onnx-community/BiRefNet_lite-ONNX | ONNX fp32 | 1024x1024 | No; el propio autor documenta fallos por buffers y por operadores int64/`Sum` | MIT | HuggingFace |
-| ZhengPeng7/BiRefNet_lite | Pesos PyTorch originales | 1024x1024 | No aplica (requiere runtime Python) | MIT | HuggingFace |
-| ZhengPeng7/BiRefNet (versión completa) | Pesos PyTorch | 1024x1024 | No aplica | MIT | HuggingFace; parámetros y cifras de rendimiento no disponibles en la información proporcionada |
+| wonfy/BiRefNet_lite-ONNX-webgpu | ONNX fp32 (245 MB) y fp16 (123 MB) | 1024x1024 | Sí, validado en Chrome 155 con ORT Web | MIT (con caveat de datos DIS5K) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| onnx-community/BiRefNet_lite-ONNX | ONNX fp32 | 1024x1024 | No; el propio autor documenta fallos por buffers y por operadores int64/`Sum` | MIT | Hugging Face |
+| ZhengPeng7/BiRefNet_lite | Pesos PyTorch originales | 1024x1024 | No aplica (requiere runtime Python) | MIT | Hugging Face |
+| ZhengPeng7/BiRefNet (versión completa) | Pesos PyTorch | 1024x1024 | No aplica | MIT | Hugging Face; parámetros y cifras de rendimiento no disponibles en la información proporcionada |
 
 La comparación relevante es la del primer y segundo artefacto: mismo modelo base y mismos pesos, con la diferencia de que la versión de wonfy reescribe el grafo para que WebGPU sea viable y añade una variante fp16. No se dispone de datos para comparar calidad de segmentación frente a otros modelos de eliminación de fondo de la competencia.
 
@@ -98,7 +98,7 @@ La comparación relevante es la del primer y segundo artefacto: mismo modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wonfy/BiRefNet_lite-ONNX-webgpu
+- Modelo en Hugging Face: https://huggingface.co/wonfy/BiRefNet_lite-ONNX-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Exportación ONNX de partida: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX
 - Artículo de BiRefNet: https://arxiv.org/abs/2401.03407

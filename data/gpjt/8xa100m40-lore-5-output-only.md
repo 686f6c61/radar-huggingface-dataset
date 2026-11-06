@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpjt/8xa100m40-lore-5-output-only` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (gpjt) siguiendo la arquitectura estilo GPT-2 del libro "Build a Large Language Model (from Scratch)" de Sebastian Raschka. La particularidad del modelo es que incorpora una tecnica denominada LoRE (Low Rank Embeddings), que sustituye la matriz de proyeccion de la cabeza de salida por una factorizacion de bajo rango, reduciendo el numero de parametros asociados al vocabulario. La idea fue sugerida por el usuario de HuggingFace `AndrewThompson1233`.
+`gpjt/8xa100m40-lore-5-output-only` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (gpjt) siguiendo la arquitectura estilo GPT-2 del libro "Build a Large Language Model (from Scratch)" de Sebastian Raschka. La particularidad del modelo es que incorpora una tecnica denominada LoRE (Low Rank Embeddings), que sustituye la matriz de proyeccion de la cabeza de salida por una factorizacion de bajo rango, reduciendo el numero de parametros asociados al vocabulario. La idea fue sugerida por el usuario de Hugging Face `AndrewThompson1233`.
 
 Se trata de un modelo denso de 12 capas, dimension de embedding 768 y 12 cabezas de atencion multi-cabeza, con una longitud de contexto de 1.024 tokens. La model card declara 130.943.360 parametros con LoRE activado en la cabeza de salida, mientras que el recuento real de tensores en safetensors asciende a 143.526.272. El entrenamiento se realizo sobre 3.260.252.160 tokens del dataset `gpjt/fineweb-gpt2-tokens`, una cantidad cercana al optimo de Chinchilla (aproximadamente 20 veces el numero de parametros de la version sin LoRE).
 
@@ -90,7 +90,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-5-output-only
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-5-output-only
 - Repositorio de codigo: https://github.com/gpjt/ddp-base-model-from-scratch
 - Notebook de fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb
 - Entrada de blog sobre matrices de vocabulario de bajo rango (LoRE, anunciada como proxima): https://www.gilesthomas.com/2026/10/low-rank-vocab-matrices

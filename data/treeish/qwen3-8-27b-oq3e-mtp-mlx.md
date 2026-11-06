@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
 | treeish/Qwen3.8-27B-oQ3e-MTP-MLX | 27,78 B | 262.144 tokens | oQ3e 3 bits con overrides 4/5/6 bits | Apache 2.0 | MLX safetensors | Publicado; 0 descargas y 0 likes en el momento de la consulta |
-| mlx-works/Qwen3.8-27B-oQ3e-mtp | no disponible | no disponible | oQ3e con cabeza MTP (origen de los pesos de este paquete) | no disponible | MLX | Publicado en HuggingFace |
-| Qwen/Qwen3.8-27B | ~27 B (modelo base) | no disponible para el modelo base | Sin cuantizar | Apache 2.0 | no disponible | Publicado en HuggingFace |
+| mlx-works/Qwen3.8-27B-oQ3e-mtp | no disponible | no disponible | oQ3e con cabeza MTP (origen de los pesos de este paquete) | no disponible | MLX | Publicado en Hugging Face |
+| Qwen/Qwen3.8-27B | ~27 B (modelo base) | no disponible para el modelo base | Sin cuantizar | Apache 2.0 | no disponible | Publicado en Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de otros modelos alternativos de la misma categoria en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado ni de otros modelos alternativos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/treeish/Qwen3.8-27B-oQ3e-MTP-MLX
+- Modelo en Hugging Face: https://huggingface.co/treeish/Qwen3.8-27B-oQ3e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paquete origen de los pesos: https://huggingface.co/mlx-works/Qwen3.8-27B-oQ3e-mtp
 - Plantillas de chat de Froggeric: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

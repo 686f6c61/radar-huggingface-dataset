@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría no está disponible con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/Qwen3.5-0.8B-Astra-WeightEdit
+- Modelo en Hugging Face: https://huggingface.co/sekkit/Qwen3.5-0.8B-Astra-WeightEdit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog del método (experimento 8): https://rikiyat.github.io/blog/weight-space-programming/
 - Logs y edición: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math

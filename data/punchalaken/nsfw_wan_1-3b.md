@@ -68,6 +68,6 @@ No se dispone de datos de benchmarks comparativos. La unica comparacion directa 
 - Tamano del repositorio: 105,4 GB, lo que requiere un almacenamiento considerable y una descarga potencialmente lenta.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/punchalaken/NSFW_Wan_1.3b
+- Hugging Face del modelo: https://huggingface.co/punchalaken/NSFW_Wan_1.3b
 - Modelo base Wan-AI/Wan2.1-T2V-1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Archivo prompting-guide.json: incluido en el repositorio de HuggingFace del modelo.
+- Archivo prompting-guide.json: incluido en el repositorio de Hugging Face del modelo.

@@ -30,7 +30,7 @@ El entrenamiento se realizó sobre el dataset GTZAN (configuración `marsyas/gtz
 - Clasificacion de genero musical: identifica uno de los 10 generos de GTZAN (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock) a partir de audio.
 - Procesamiento de audio crudo: acepta senales de audio de entrada y extrae caracteristicas automaticamente mediante el encoder transformer.
 - Eficiencia computacional: al ser un modelo destilado, requiere menos recursos que HuBERT completo, permitiendo inferencia en CPU o GPUs de gama baja.
-- Compatibilidad con pipelines de HuggingFace: se integra con la clase `AudioClassificationPipeline` de transformers, facilitando su despliegue.
+- Compatibilidad con pipelines de Hugging Face: se integra con la clase `AudioClassificationPipeline` de transformers, facilitando su despliegue.
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues, ya que es un modelo especializado en audio.
 
 ## Casos de uso
@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada: el modelo ocupa aproximadamente 92 MB en precision FP32 (23,7M parametros * 4 bytes). Con cuantizacion a FP16 o int8, el uso de memoria se reduce a unos 46 MB o 23 MB respectivamente, aunque no se proporcionan pesos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo GTX 1050, RTX 2060 o integradas modernas. Tambien puede ejecutarse en CPU con un rendimiento aceptable para inferencia por lotes pequenos.
 - Compatibilidad con consumer GPU: si, es totalmente viable en GPUs de consumo general.
-- Opciones de despliegue: se puede usar con la libreria transformers de HuggingFace (pipeline de audio-classification), o exportar a ONNX para inferencia en entornos de produccion. Tambien es compatible con los endpoints de HuggingFace Inference Endpoints.
+- Opciones de despliegue: se puede usar con la libreria transformers de Hugging Face (pipeline de audio-classification), o exportar a ONNX para inferencia en entornos de produccion. Tambien es compatible con los endpoints de Hugging Face Inference Endpoints.
 - Latencia y throughput: no se proporcionan datos oficiales, pero al ser un modelo pequeno, se espera una latencia de decenas de milisegundos por muestra en GPU y de unos pocos cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de comparaciones con modelos mas grandes como HuBERT base (95M par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rogovk/distilhubert-finetuned-gtzan
+- Modelo en Hugging Face: https://huggingface.co/rogovk/distilhubert-finetuned-gtzan
 - Modelo base DistilHuBERT: https://huggingface.co/ntu-spml/distilhubert
 - Dataset GTZAN: https://huggingface.co/datasets/marsyas/gtzan
 - Otros fine-tunes similares:

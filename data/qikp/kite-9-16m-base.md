@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kite 9 es un modelo de lenguaje de tipo transformer decoder-only con 15.887.560 parámetros totales (aproximadamente 16 millones), desarrollado por el usuario qikp y publicado en HuggingFace bajo licencia CC0-1.0. Se trata de un modelo experimental de escala muy reducida, orientado a la generación de texto en inglés y entrenado desde cero sobre un único shard del dataset nvidia/Nemotron-ClimbMix.
+Kite 9 es un modelo de lenguaje de tipo transformer decoder-only con 15.887.560 parámetros totales (aproximadamente 16 millones), desarrollado por el usuario qikp y publicado en Hugging Face bajo licencia CC0-1.0. Se trata de un modelo experimental de escala muy reducida, orientado a la generación de texto en inglés y entrenado desde cero sobre un único shard del dataset nvidia/Nemotron-ClimbMix.
 
-El modelo se etiqueta internamente como familia "qwen3" en los metadatos de HuggingFace y utiliza el tokenizador de Mistral 7B v0.3, lo que resulta relevante porque el autor indica que esta versión 9 emplea hiperparámetros distintos y un tokenizador más grande que versiones anteriores. El entrenamiento consistió en una única época con batch size de 8 y learning rate de 0.001.
+El modelo se etiqueta internamente como familia "qwen3" en los metadatos de Hugging Face y utiliza el tokenizador de Mistral 7B v0.3, lo que resulta relevante porque el autor indica que esta versión 9 emplea hiperparámetros distintos y un tokenizador más grande que versiones anteriores. El entrenamiento consistió en una única época con batch size de 8 y learning rate de 0.001.
 
 Su relevancia es fundamentalmente educativa y de investigación: permite experimentar con pipelines completos de entrenamiento, tokenización e inferencia con transformers en hardware muy modesto. El propio autor advierte explícitamente que, por su tamaño, el modelo no es adecuado para cargas de trabajo en producción. No se dispone de información publicada sobre arquitectura interna detallada, longitud de contexto ni resultados de benchmarks.
 
@@ -30,7 +30,7 @@ El entrenamiento se realizó sobre el primer shard del shuffle de Andrej Karpath
 ## Capacidades
 
 - Generación de texto autoregresiva en inglés, tarea principal declarada en la model card.
-- Compatibilidad con el ecosistema transformers y text-generation-inference (tags de HuggingFace).
+- Compatibilidad con el ecosistema transformers y text-generation-inference (tags de Hugging Face).
 - Compatibilidad declarada con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructura de inferencia gestionada.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kite 9 16M (qikp) | 15,9M | No disponible | CC0-1.0 | HuggingFace, transformers | Entrenado sobre 1 shard de Nemotron-ClimbMix |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens (versión base) | Apache-2.0 | HuggingFace, transformers, GGUF | Modelo pequeño ampliamente documentado y con benchmarks publicados |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | HuggingFace, transformers, GGUF | Modelo pequeño con entrenamiento extensivo y benchmarks públicos |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache-2.0 | HuggingFace, transformers, GGUF | Alternativa pequeña con contexto largo y soporte multilingüe |
+| Kite 9 16M (qikp) | 15,9M | No disponible | CC0-1.0 | Hugging Face, transformers | Entrenado sobre 1 shard de Nemotron-ClimbMix |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens (versión base) | Apache-2.0 | Hugging Face, transformers, GGUF | Modelo pequeño ampliamente documentado y con benchmarks publicados |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | Hugging Face, transformers, GGUF | Modelo pequeño con entrenamiento extensivo y benchmarks públicos |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache-2.0 | Hugging Face, transformers, GGUF | Alternativa pequeña con contexto largo y soporte multilingüe |
 
 La comparación es orientativa: Kite 9 es entre uno y dos órdenes de magnitud menor que las alternativas citadas y carece de benchmarks publicados, por lo que no es posible establecer comparaciones de rendimiento objetivas.
 
@@ -83,6 +83,6 @@ La comparación es orientativa: Kite 9 es entre uno y dos órdenes de magnitud m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikp/kite-9-16m-base
+- Modelo en Hugging Face: https://huggingface.co/qikp/kite-9-16m-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix
 - Tokenizador utilizado: https://huggingface.co/mistralai/Mistral-7B-v0.3

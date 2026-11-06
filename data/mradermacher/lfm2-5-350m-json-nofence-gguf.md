@@ -6,7 +6,7 @@ LFM2.5-350M-JSON-NoFence es una cuantizacion en formato GGUF realizada por mrade
 
 La relevancia de esta ficha radica en que ofrece una version cuantizada lista para desplegar en entornos con recursos limitados: el quant Q4_K_M ocupa apenas 0.3 GB, lo que permite ejecutarlo en CPU o en GPUs de gama baja. No obstante, la informacion publicada por el autor es escasa: no se detallan datos de entrenamiento, benchmarks, longitud de contexto ni composicion del dataset original. La model card del cuantizador se limita a listar los ficheros GGUF disponibles y a remitir a la documentacion generica de TheBloke para el uso de GGUF.
 
-Esta ficha se basa exclusivamente en la informacion disponible en HuggingFace y en la model card del cuantizador; cualquier dato no confirmado se marca como "no disponible".
+Esta ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del cuantizador; cualquier dato no confirmado se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | LFM2.5-350M-JSON-NoFence (este) | 354.483.968 | no disponible | lfm1.0 | GGUF, safetensors | Especializado en JSON sin fences; solo ingles |
 | LFM2.5-350M (base, sin edicion) | ~350M | no disponible | lfm1.0 | safetensors | Comportamiento JSON estandar, con fences |
 | Qwen2.5-0.5B-Instruct | ~500M | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Multilingue, mayor contexto, licencia permisiva |
-| SmolLM2-360M-Instruct | ~360M | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | Multilingue, orientado a dispositivo |
+| SmolLM2-360M-Instruct | ~360M | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Multilingue, orientado a dispositivo |
 
 Nota: los datos de los modelos comparables provienen de documentacion publica general y no de la informacion proporcionada en esta ficha; se incluyen solo como referencia orientativa. No se dispone de benchmarks comparativos del modelo LFM2.5-350M-JSON-NoFence.
 
@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparables provienen de documentacion publica ge
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/LFM2.5-350M-JSON-NoFence-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/LFM2.5-350M-JSON-NoFence-GGUF
 - Modelo base: https://huggingface.co/yasserrmd/LFM2.5-350M-JSON-NoFence
 - Pagina de overview del cuantizador: https://hf.tst.eu/model#LFM2.5-350M-JSON-NoFence-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

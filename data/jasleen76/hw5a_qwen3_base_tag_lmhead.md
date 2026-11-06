@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jasleen76/hw5a_qwen3_base_tag_lmhead` es un adaptador LoRA publicado en HuggingFace por el usuario Jasleen76, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen3-1.7B-Base. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador PEFT (0,6 GB en el repositorio) que debe cargarse junto con el modelo base para funcionar. El nombre del repositorio sugiere un experimento academico o de curso (prefijo "hw5a", posiblemente "homework 5a") orientado a ajustar la cabeza de lenguaje (lmhead) o el etiquetado de tokens sobre Qwen3.
+`Jasleen76/hw5a_qwen3_base_tag_lmhead` es un adaptador LoRA publicado en Hugging Face por el usuario Jasleen76, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen3-1.7B-Base. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador PEFT (0,6 GB en el repositorio) que debe cargarse junto con el modelo base para funcionar. El nombre del repositorio sugiere un experimento academico o de curso (prefijo "hw5a", posiblemente "homework 5a") orientado a ajustar la cabeza de lenguaje (lmhead) o el etiquetado de tokens sobre Qwen3.
 
 La relevancia de esta ficha es limitada desde el punto de vista de adopcion en produccion: el repositorio no incluye model card sustantiva, no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y registra cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de un artefacto de investigacion o prueba de concepto mas que de un modelo listo para uso industrial.
 
@@ -30,7 +30,7 @@ El modelo base subyacente, Qwen3-1.7B-Base, es un transformer decoder-only de 1.
 
 El artefacto es un adaptador LoRA (Low-Rank Adaptation) entrenado con la libreria TRL y empaquetado con PEFT 0.21.2. La tecnica LoRA congela los pesos del modelo base e inserta matrices de bajo rango en determinadas capas, de modo que solo se optimiza una fraccion pequena de parametros. El tag `sft` indica que el entrenamiento se realizo mediante supervised fine-tuning sobre pares instruccion-respuesta, aunque no se especifica el dataset, el numero de ejemplos, la longitud de secuencia ni la tasa de aprendizaje.
 
-El nombre del repositorio incluye el sufijo `tag_lmhead`, lo que sugiere que el ajuste pudo centrarse en la cabeza de lenguaje o en una tarea de etiquetado de tokens, pero el autor no documenta esta decision ni los detalles del objetivo de entrenamiento. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del corpus, el uso de RLHF/DPO, el regimen de precision (fp16, bf16, fp32) ni las horas de computo empleadas. La model card es la plantilla por defecto de HuggingFace sin rellenar, por lo que todos los campos de entrenamiento aparecen como "[More Information Needed]".
+El nombre del repositorio incluye el sufijo `tag_lmhead`, lo que sugiere que el ajuste pudo centrarse en la cabeza de lenguaje o en una tarea de etiquetado de tokens, pero el autor no documenta esta decision ni los detalles del objetivo de entrenamiento. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del corpus, el uso de RLHF/DPO, el regimen de precision (fp16, bf16, fp32) ni las horas de computo empleadas. La model card es la plantilla por defecto de Hugging Face sin rellenar, por lo que todos los campos de entrenamiento aparecen como "[More Information Needed]".
 
 ## Capacidades
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jasleen76/hw5a_qwen3_base_tag_lmhead | Adaptador LoRA sobre 1,7 B | No disponible | No disponible | HuggingFace (0 descargas) | Sin evaluacion publicada |
-| Qwen/Qwen3-1.7B-Base | 1,7 B | No disponible en la informacion | No disponible en la informacion | HuggingFace (modelo base) | Modelo completo, ampliamente utilizado |
-| Otros adaptadores LoRA sobre Qwen3-1.7B | Variable | Heredado del base | Variable | HuggingFace | Depende del autor y del dataset |
+| Jasleen76/hw5a_qwen3_base_tag_lmhead | Adaptador LoRA sobre 1,7 B | No disponible | No disponible | Hugging Face (0 descargas) | Sin evaluacion publicada |
+| Qwen/Qwen3-1.7B-Base | 1,7 B | No disponible en la informacion | No disponible en la informacion | Hugging Face (modelo base) | Modelo completo, ampliamente utilizado |
+| Otros adaptadores LoRA sobre Qwen3-1.7B | Variable | Heredado del base | Variable | Hugging Face | Depende del autor y del dataset |
 
 No se dispone de datos de rendimiento comparativo para incluir en la tabla; la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo para incluir en la tabla; la c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jasleen76/hw5a_qwen3_base_tag_lmhead
+- Repositorio Hugging Face: https://huggingface.co/Jasleen76/hw5a_qwen3_base_tag_lmhead
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

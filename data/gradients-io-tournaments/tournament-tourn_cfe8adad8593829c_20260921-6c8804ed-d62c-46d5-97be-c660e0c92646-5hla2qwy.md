@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY` es un adaptador LoRA publicado por la organizacion `gradients-io-tournaments` en HuggingFace. Se trata de un artefacto generado de forma automatica por un pipeline de torneos de ajuste fino (fine-tuning): el nombre del repositorio contiene un identificador de torneo, una marca temporal y un sufijo alfanumerico, y la model card es la plantilla por defecto de HuggingFace sin rellenar. Esto indica que no ha habido una curación manual de la documentación ni una validacion editorial del resultado.
+El modelo identificado como `gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY` es un adaptador LoRA publicado por la organizacion `gradients-io-tournaments` en Hugging Face. Se trata de un artefacto generado de forma automatica por un pipeline de torneos de ajuste fino (fine-tuning): el nombre del repositorio contiene un identificador de torneo, una marca temporal y un sufijo alfanumerico, y la model card es la plantilla por defecto de Hugging Face sin rellenar. Esto indica que no ha habido una curación manual de la documentación ni una validacion editorial del resultado.
 
 Tecnicamente es un adaptador PEFT (libreria `peft` 0.19.1) sobre un modelo base identificado en los metadatos como `gradients-io-tournaments/augmented-a22a7e3362beba00`, con un segundo vinculo a una ruta de cache interna (`/cache/models/fcc12f8dac0f9054`) que no es resoluble publicamente. El repositorio pesa 0,1 GB, lo que es coherente con pesos de adaptador y no con un modelo completo. La tarea declarada es `text-generation` con etiqueta `conversational`.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y de naturaleza meta: sirve como ejemplo de como las p
 
 No hay informacion publicada sobre la arquitectura del modelo base. Los metadatos indican que el objeto de este repositorio es un adaptador LoRA (Low-Rank Adaptation) entrenado con la libreria PEFT, lo que implica que la arquitectura subyacente es la del modelo base `gradients-io-tournaments/augmented-a22a7e3362beba00`, del cual no se documentan tamano, numero de capas, tipo de atencion ni familia arquitectonica. El unico dato inferible es el tamano del repositorio (0,1 GB), que corresponde al conjunto de matrices de bajo rango y no a un transformer completo.
 
-Respecto al entrenamiento, la model card no especifica numero de tokens, composicion del dataset, regimen de precision (fp32, bf16, fp16), hiperparametros, uso de RLHF, DPO o cualquier otra tecnica de alineamiento. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mezcla de expertos. El unico rastro metodologico es la referencia a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece en la plantilla estandar de HuggingFace y no implica que se haya realizado dicho calculo. El prefijo "augmented" en el nombre del modelo base sugiere, sin confirmacion documental, que ese base pudo haber sido modificado o incrementado con datos adicionales antes del ajuste LoRA.
+Respecto al entrenamiento, la model card no especifica numero de tokens, composicion del dataset, regimen de precision (fp32, bf16, fp16), hiperparametros, uso de RLHF, DPO o cualquier otra tecnica de alineamiento. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o mezcla de expertos. El unico rastro metodologico es la referencia a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece en la plantilla estandar de Hugging Face y no implica que se haya realizado dicho calculo. El prefijo "augmented" en el nombre del modelo base sugiere, sin confirmacion documental, que ese base pudo haber sido modificado o incrementado con datos adicionales antes del ajuste LoRA.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre otros 
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos relevantes sin rellenar.
+- Documentacion practicamente inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos relevantes sin rellenar.
 - Licencia no disponible: sin licencia explicita, no puede asumirse permiso para uso comercial ni para redistribucion. En la practica, la ausencia de licencia supone un riesgo legal para cualquier uso en produccion.
 - Modelo base no verificable publicamente: el identificador `gradients-io-tournaments/augmented-a22a7e3362beba00` y la ruta de cache `/cache/models/fcc12f8dac0f9054` apuntan a artefactos internos que pueden no estar accesibles, lo que impediria cargar el adaptador.
 - Idiomas no declarados: no puede garantizarse un rendimiento aceptable en castellano ni en ningun otro idioma concreto.
@@ -85,7 +85,7 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY
+- Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5HLA2QWY
 - Modelo base declarado: https://huggingface.co/gradients-io-tournaments/augmented-a22a7e3362beba00
 - Perfil del autor: https://huggingface.co/gradients-io-tournaments
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

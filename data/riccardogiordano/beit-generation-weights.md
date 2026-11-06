@@ -40,7 +40,7 @@ No se proporcionan datos sobre el corpus de entrenamiento, número de tokens, co
 
 - Investigación académica en atención lineal: el modelo sirve como punto de partida para estudiar arquitecturas con atención lineal aplicadas a generación, permitiendo comparar con baselines de capacidad equivalente una vez entrenado.
 - Validación de infraestructura de entrenamiento: al ser un checkpoint de inicialización válido, puede usarse para probar pipelines de entrenamiento personalizados sin necesidad de pesos preentrenados.
-- Desarrollo de adaptadores para frameworks de carga automática: dado que la implementación es personalizada, el modelo puede servir para desarrollar y probar adaptadores que permitan su carga en librerías como HuggingFace Transformers.
+- Desarrollo de adaptadores para frameworks de carga automática: dado que la implementación es personalizada, el modelo puede servir para desarrollar y probar adaptadores que permitan su carga en librerías como Hugging Face Transformers.
 - Experimentos de fusión cross-attention: el diseño con cross-attention permite explorar mecanismos de fusión de información en modelos generativos, siempre que se entrene con datos adecuados.
 - Pruebas de regresión en código de investigación: el script `run.py` incluye un ejemplo de smoke-test que puede integrarse en CI para detectar cambios en la configuración de arquitectura.
 - Base para comparaciones futuras: el autor recomienda evaluar el modelo con un conjunto de validación específico de tarea y tres semillas, por lo que puede usarse como referencia para futuros entrenamientos.
@@ -72,7 +72,7 @@ No disponible. No se dispone de modelos comparables en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/riccardogiordano/beit-generation-weights
+- Hugging Face: https://huggingface.co/riccardogiordano/beit-generation-weights
 - README del repositorio: https://huggingface.co/riccardogiordano/beit-generation-weights/blob/main/README.md
 - Fichero de configuración: https://huggingface.co/riccardogiordano/beit-generation-weights/blob/main/config.json
 - Fichero de argumentos de entrenamiento: https://huggingface.co/riccardogiordano/beit-generation-weights/blob/main/training_args.json

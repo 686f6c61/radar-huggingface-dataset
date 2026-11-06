@@ -6,7 +6,7 @@ Z-Image-Turbo es un modelo de generacion de imagenes texto-a-imagen de 6.000 mil
 
 El modelo emplea una arquitectura de transformer de difusion de flujo unico (single-stream diffusion transformer) y destaca por su calidad fotorrealista, el renderizado preciso de texto bilingue (ingles y chino) y un buen cumplimiento de instrucciones. Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integracion en pipelines de generacion de contenido.
 
-La relevancia actual de Z-Image-Turbo radica en su equilibrio entre velocidad y calidad: al eliminar la necesidad de clasifier-free guidance (CFG) y reducir el numero de pasos de inferencia a 8, se posiciona como una alternativa competitiva frente a modelos como FLUX.1-schnell o SDXL-Turbo para escenarios de generacion en tiempo real. La pagina de HuggingFace analizada (gglgdl/Z-Image-Turbo) es un mirror del checkpoint oficial de Tongyi-MAI.
+La relevancia actual de Z-Image-Turbo radica en su equilibrio entre velocidad y calidad: al eliminar la necesidad de clasifier-free guidance (CFG) y reducir el numero de pasos de inferencia a 8, se posiciona como una alternativa competitiva frente a modelos como FLUX.1-schnell o SDXL-Turbo para escenarios de generacion en tiempo real. La pagina de Hugging Face analizada (gglgdl/Z-Image-Turbo) es un mirror del checkpoint oficial de Tongyi-MAI.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks cuantitativos (como FID, CLIP score
 
 | Modelo | Parametros | Pasos de inferencia | Resolucion maxima | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo | 6B | 8 NFE | 2048x2048 | Apache 2.0 | HuggingFace, ModelScope |
-| FLUX.1-schnell | 12B | 1-4 pasos | 1024x1024 (hasta 2048) | Apache 2.0 | HuggingFace |
-| SDXL-Turbo | 2.6B | 1-4 pasos | 1024x1024 | Apache 2.0 | HuggingFace |
+| Z-Image-Turbo | 6B | 8 NFE | 2048x2048 | Apache 2.0 | Hugging Face, ModelScope |
+| FLUX.1-schnell | 12B | 1-4 pasos | 1024x1024 (hasta 2048) | Apache 2.0 | Hugging Face |
+| SDXL-Turbo | 2.6B | 1-4 pasos | 1024x1024 | Apache 2.0 | Hugging Face |
 
 Z-Image-Turbo se posiciona entre SDXL-Turbo y FLUX.1-schnell en cuanto a tamano. Frente a SDXL-Turbo ofrece mayor calidad fotorrealista y renderizado de texto bilingue, a costa de un mayor numero de parametros. Frente a FLUX.1-schnell, Z-Image-Turbo es mas ligero (6B frente a 12B) y requiere mas pasos de inferencia (8 frente a 1-4), aunque ambos comparten licencia Apache 2.0. No se dispone de datos de benchmarks comparativos directos para establecer diferencias de calidad objetivas.
 
@@ -83,12 +83,12 @@ Z-Image-Turbo se posiciona entre SDXL-Turbo y FLUX.1-schnell en cuanto a tamano.
 
 ## Enlaces
 
-- Modelo oficial en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo oficial en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Mirror analizado: https://huggingface.co/gglgdl/Z-Image-Turbo
 - Repositorio GitHub: https://github.com/Tongyi-MAI/Z-Image
 - Sitio oficial del proyecto: https://tongyi-mai.github.io/Z-Image-blog/
-- Demo online (HuggingFace Spaces): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo movil (HuggingFace Spaces): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo online (Hugging Face Spaces): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo movil (Hugging Face Spaces): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Modelo en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
 - Articulo principal (arXiv 2511.22699): https://arxiv.org/abs/2511.22699
 - Articulo relacionado (arXiv 2511.22677): https://arxiv.org/abs/2511.22677

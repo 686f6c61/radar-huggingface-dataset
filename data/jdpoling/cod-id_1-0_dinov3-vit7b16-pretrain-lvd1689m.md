@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jdpoling/Cod-ID_1.0_dinov3-vit7b16-pretrain-lvd1689m` es un artefacto alojado en HuggingFace por el usuario jdpoling, publicado y actualizado el 23 de septiembre de 2026. La model card asociada unicamente declara la licencia apache-2.0 y no incluye descripcion funcional, datos de entrenamiento, metricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no tiene pipeline declarado.
+El repositorio `jdpoling/Cod-ID_1.0_dinov3-vit7b16-pretrain-lvd1689m` es un artefacto alojado en Hugging Face por el usuario jdpoling, publicado y actualizado el 23 de septiembre de 2026. La model card asociada unicamente declara la licencia apache-2.0 y no incluye descripcion funcional, datos de entrenamiento, metricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no tiene pipeline declarado.
 
 El identificador sigue la convencion de nombres que Meta AI emplea para los pesos de su familia DINOv3: el sufijo `vit7b16` sugiere un Vision Transformer con aproximadamente 7.000 millones de parametros y parche de 16x16, y `pretrain-lvd1689m` apunta al dataset de preentrenamiento LVD-1689M utilizado en los modelos DINOv2/DINOv3. El prefijo `Cod-ID_1.0` es especifico de este repositorio y no aparece documentado. Es importante subrayar que esta correspondencia es una inferencia a partir de la nomenclatura y no una afirmacion confirmada por el autor en la informacion disponible.
 
@@ -88,5 +88,5 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni disponibili
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jdpoling/Cod-ID_1.0_dinov3-vit7b16-pretrain-lvd1689m
+- Repositorio en Hugging Face: https://huggingface.co/jdpoling/Cod-ID_1.0_dinov3-vit7b16-pretrain-lvd1689m
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

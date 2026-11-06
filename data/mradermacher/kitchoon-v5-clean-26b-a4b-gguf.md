@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitchoon-V5-Clean-26B-A4B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Kitchoon-V5-Clean-26B-A4B, publicado por el usuario mradermacher en HuggingFace. El repositorio no contiene un modelo original, sino una conversión a GGUF de los pesos publicados por SubMaroon, lo que permite su despliegue en entornos con llama.cpp y herramientas compatibles con este formato.
+Kitchoon-V5-Clean-26B-A4B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Kitchoon-V5-Clean-26B-A4B, publicado por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo original, sino una conversión a GGUF de los pesos publicados por SubMaroon, lo que permite su despliegue en entornos con llama.cpp y herramientas compatibles con este formato.
 
 El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 26B parámetros totales y aproximadamente 4B parámetros activos por token, un patrón habitual en modelos eficientes tipo "A4B" (activos 4B). Sin embargo, la model card del repositorio es extremadamente escasa: únicamente indica que se trata de cuantizaciones estáticas del modelo original y lista los tipos de cuantización generados, sin aportar información sobre arquitectura, entrenamiento, licencia o idiomas.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada por la falta de documentación. No hay d
 
 No se ha publicado información sobre la arquitectura del modelo original en la documentación disponible. El sufijo "A4B" y el total de 26B parámetros apuntan a un transformer con mezcla de expertos (MoE) en el que se activan aproximadamente 4B parámetros por token, pero esta inferencia se basa únicamente en la convención de nombres y no está confirmada por el autor.
 
-Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o técnicas de alineación, ni sobre innovaciones como decodificación especulativa o atención lineal. El repositorio de mradermacher se limita a aplicar cuantización estática sobre los pesos originales de SubMaroon/Kitchoon-V5-Clean-26B-A4B; los metadatos internos del GGUF (quantize_version 2, output_tensor_quantised 1, convert_type hf) confirman una conversión estándar desde pesos HuggingFace.
+Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o técnicas de alineación, ni sobre innovaciones como decodificación especulativa o atención lineal. El repositorio de mradermacher se limita a aplicar cuantización estática sobre los pesos originales de SubMaroon/Kitchoon-V5-Clean-26B-A4B; los metadatos internos del GGUF (quantize_version 2, output_tensor_quantised 1, convert_type hf) confirman una conversión estándar desde pesos Hugging Face.
 
 ## Capacidades
 

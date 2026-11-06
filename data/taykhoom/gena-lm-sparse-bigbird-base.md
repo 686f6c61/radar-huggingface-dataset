@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 110M de parámetros, el modelo ocupa aproximadamente 220 MB en fp16 y 440 MB en fp32. Las activaciones para secuencias de 4096 tokens son moderadas gracias a la atención block-sparse, por lo que cabría en GPUs con al menos 2 GB de VRAM para la mayoría de los casos.
 - GPU recomendadas: cualquier GPU con soporte para PyTorch 2.7 y CUDA 12.9, incluyendo RTX 20xx en adelante, A100, H100, etc. No requiere GPU específica de alta gama.
 - Compatibilidad con consumer GPU: sí, es compatible con GPUs de gama media como RTX 3060 o RTX 4070.
-- Opciones de despliegue: se puede ejecutar con HuggingFace Transformers, con `attn_implementation="sdpa"` para aceleración, o en frameworks como vLLM si se adapta. No se recomienda usar `flash_attention_2` porque no soporta el patrón de atención block-sparse específico.
+- Opciones de despliegue: se puede ejecutar con Hugging Face Transformers, con `attn_implementation="sdpa"` para aceleración, o en frameworks como vLLM si se adapta. No se recomienda usar `flash_attention_2` porque no soporta el patrón de atención block-sparse específico.
 - Latencia y throughput: no se han publicado datos específicos. La latencia dependerá del hardware y de la longitud de las secuencias; para secuencias cortas la atención es densa y para largas se aprovecha el block-sparse.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La diferencia principal con el resto de la colección es que este port no requie
 
 ## Enlaces
 
-- [HuggingFace: Taykhoom/GENA-LM-sparse-bigbird-base](https://huggingface.co/Taykhoom/GENA-LM-sparse-bigbird-base)
-- [HuggingFace: AIRI-Institute/gena-lm-bigbird-base-sparse (modelo original)](https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-sparse)
+- [Hugging Face: Taykhoom/GENA-LM-sparse-bigbird-base](https://huggingface.co/Taykhoom/GENA-LM-sparse-bigbird-base)
+- [Hugging Face: AIRI-Institute/gena-lm-bigbird-base-sparse (modelo original)](https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-sparse)
 - [GitHub: AIRI-Institute/GENA_LM](https://github.com/AIRI-Institute/GENA_LM)
 - [Colección GENA-LM de Taykhoom](https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab)

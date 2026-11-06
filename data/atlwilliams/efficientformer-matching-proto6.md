@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`atlwilliams/efficientformer-matching-proto6` es un repositorio experimental publicado en HuggingFace por el usuario atlwilliams que contiene una implementacion propia y minima de una arquitectura EfficientFormer orientada a tareas de matching (emparejamiento). No es un modelo entrenado ni un release con pesos validados: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark publicados.
+`atlwilliams/efficientformer-matching-proto6` es un repositorio experimental publicado en Hugging Face por el usuario atlwilliams que contiene una implementacion propia y minima de una arquitectura EfficientFormer orientada a tareas de matching (emparejamiento). No es un modelo entrenado ni un release con pesos validados: el propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint con resultados de benchmark publicados.
 
 El recuento real de parametros declarado en el safetensors es de 16.576, muy por debajo de las variantes "tiny" de la familia EfficientFormer original, que se situan en el orden de millones de parametros. Esto confirma que se trata de un artefacto de andamiaje (scaffolding) para reproducir una receta de experimentacion, no de un modelo con capacidad funcional real sobre tareas de matching.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-matching-proto6 | 16.576 | no disponible | no disponible (sin entrenar) | MIT | HuggingFace |
+| efficientformer-matching-proto6 | 16.576 | no disponible | no disponible (sin entrenar) | MIT | Hugging Face |
 | EfficientFormerV2-S0 | ~3,5 M (cifra aproximada de la publicacion) | no aplica | validado en ImageNet (no comparable directamente) | distinta segun release | publico |
 | EfficientFormer-L1 | ~12,3 M (cifra aproximada de la publicacion) | no aplica | validado en ImageNet (no comparable directamente) | distinta segun release | publico |
 | MobileViT-XXS | ~1,3 M (cifra aproximada de la publicacion) | no aplica | validado en ImageNet (no comparable directamente) | distinta segun release | publico |
@@ -90,5 +90,5 @@ La comparacion no es homogenea: los tres modelos alternativos son checkpoints en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/atlwilliams/efficientformer-matching-proto6
+- Repositorio en Hugging Face: https://huggingface.co/atlwilliams/efficientformer-matching-proto6
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

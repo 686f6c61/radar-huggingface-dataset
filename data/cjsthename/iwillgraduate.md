@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CjstheName/IWillGraduate es un repositorio alojado en HuggingFace por el usuario CjstheName. La informacion publica disponible es extremadamente limitada: unicamente se conocen el identificador del repositorio, el autor, la etiqueta de region (region:us), el numero de descargas (0) y el numero de likes (1). No se ha declarado pipeline de inferencia, licencia, idiomas soportados ni ningun otro metadato tecnico en la ficha del repositorio.
+CjstheName/IWillGraduate es un repositorio alojado en Hugging Face por el usuario CjstheName. La informacion publica disponible es extremadamente limitada: unicamente se conocen el identificador del repositorio, el autor, la etiqueta de region (region:us), el numero de descargas (0) y el numero de likes (1). No se ha declarado pipeline de inferencia, licencia, idiomas soportados ni ningun otro metadato tecnico en la ficha del repositorio.
 
 En el momento de la consulta, el modelo no cuenta con descargas registradas ni con documentacion tecnica publicada que permita determinar su arquitectura, tamano, estrategia de entrenamiento o capacidades. El repositorio fue creado el 10 de octubre de 2026 y actualizado el mismo dia, con una ventana de actividad de aproximadamente catorce minutos entre ambos eventos.
 
@@ -80,7 +80,7 @@ No disponible. Sin informacion sobre arquitectura, tamano o tarea, no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CjstheName/IWillGraduate
+- Hugging Face: https://huggingface.co/CjstheName/IWillGraduate
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

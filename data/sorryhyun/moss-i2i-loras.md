@@ -6,7 +6,7 @@ MOSS-I2I-LORAs es una coleccion de tres adaptadores LoRA de bajo rango (rank 32)
 
 Tecnicamente, los adaptadores se aplican sobre la arquitectura del modelo base, un transformer de difusion (DiT) que recibe la imagen de entrada como latente de referencia limpio, previamente codificado por el VAE. El repositorio ocupa 0,6 GB en total e incluye los tres safetensors mas los flujos de trabajo. La relevancia de esta publicacion es acotada: son adaptadores de nicho, con conjuntos de entrenamiento muy pequenos en dos de las tres tareas (49 y 48 pares), pensados para el ecosistema ComfyUI y para ilustracion y manga.
 
-La informacion publica no incluye licencia, idiomas soportados ni resultados de evaluacion. La ficha refleja exclusivamente lo documentado en la model card y en los metadatos de HuggingFace.
+La informacion publica no incluye licencia, idiomas soportados ni resultados de evaluacion. La ficha refleja exclusivamente lo documentado en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre adaptadores LoRA i2i alternativos para MOSS-I
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sorryhyun/MOSS-I2I-LORAs
+- Repositorio Hugging Face: https://huggingface.co/sorryhyun/MOSS-I2I-LORAs
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Herramienta de entrenamiento anima_lora: https://github.com/sorryhyun/anima_lora
 - Extension ComfyUI-MOSS-Toolkit: https://github.com/sorryhyun/ComfyUI-MOSS-Toolkit

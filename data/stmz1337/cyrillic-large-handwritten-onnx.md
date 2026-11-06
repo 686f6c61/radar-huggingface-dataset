@@ -94,7 +94,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stmz1337/cyrillic-large-handwritten-onnx
+- Modelo en Hugging Face: https://huggingface.co/stmz1337/cyrillic-large-handwritten-onnx
 - Modelo base: https://huggingface.co/Kansallisarkisto/cyrillic-large-handwritten
 - Checkpoint de preentrenamiento citado: https://huggingface.co/Kansallisarkisto/cyrillic-large-stage1
 - Proyecto ArchXAI (Central Baltic Programme): https://centralbaltic.eu/project/archxai/

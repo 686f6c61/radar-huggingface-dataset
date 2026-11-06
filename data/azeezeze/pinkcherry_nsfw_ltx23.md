@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - azeezeze/PinkCherry_NSFW_LTX23](https://huggingface.co/azeezeze/PinkCherry_NSFW_LTX23)
+- [Hugging Face - azeezeze/PinkCherry_NSFW_LTX23](https://huggingface.co/azeezeze/PinkCherry_NSFW_LTX23)
 - [LoRA destilado de LTX 2.3 (mencionado en la model card)](https://huggingface.co/Lightricks/LTX-2.3/blob/main/ltx-2.3-22b-distilled-lora-384-1.1.safetensors)
 - [Blog sobre LTX 2.3 NSFW (referencia externa)](https://ltx23.video/blog/ltx-2-3-nsfw)
 - [Guía de modelos LTX 2.3/2.5 para ComfyUI (referencia externa)](https://ltxworkflow.com/models)

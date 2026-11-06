@@ -105,7 +105,7 @@ Advertencia de comparabilidad: las cifras del pack de 3,5 bpw se midieron contra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.87bpw
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.87bpw
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Release FP8: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8
 - Pack anterior de 3,5 bpw: https://huggingface.co/vcruz305/CYBER-FROST-3.8-EXL3-SAGE-3.5bpw

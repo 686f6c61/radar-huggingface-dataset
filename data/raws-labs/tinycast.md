@@ -97,6 +97,6 @@ La tabla de la sección de benchmarks ya incluye la comparativa principal con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raws-labs/tinycast
+- Modelo en Hugging Face: https://huggingface.co/raws-labs/tinycast
 - Paper (arXiv): https://arxiv.org/abs/2608.15767
 - Código, entrenamiento y replicación: https://github.com/raws-labs/tinycast

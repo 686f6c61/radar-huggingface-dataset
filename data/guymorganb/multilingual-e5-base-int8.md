@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guymorganb/multilingual-e5-base-int8
+- Modelo en Hugging Face: https://huggingface.co/guymorganb/multilingual-e5-base-int8
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Revisión del upstream referenciada: `d128750597153bb5987e10b1c3493a34e5a4502a`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `s-a-i/gemma-4-E4B-it` es un fine-tune de la variante instruida de Gemma 4 E4B, desarrollado originalmente por Google DeepMind. El repositorio pertenece al usuario `s-a-i`, que ha publicado una versión ajustada del modelo base `google/gemma-4-E4B` con licencia Apache 2.0. Se trata de un modelo multimodal que acepta texto, imagen y audio como entrada, y genera texto como salida, con un pipeline `any-to-any` según HuggingFace.
+El modelo `s-a-i/gemma-4-E4B-it` es un fine-tune de la variante instruida de Gemma 4 E4B, desarrollado originalmente por Google DeepMind. El repositorio pertenece al usuario `s-a-i`, que ha publicado una versión ajustada del modelo base `google/gemma-4-E4B` con licencia Apache 2.0. Se trata de un modelo multimodal que acepta texto, imagen y audio como entrada, y genera texto como salida, con un pipeline `any-to-any` según Hugging Face.
 
 Gemma 4 E4B es un modelo denso de aproximadamente 8.000 millones de parámetros totales (incluyendo embeddings), aunque sus parámetros efectivos se estiman en 4.5B gracias a la técnica de Per-Layer Embeddings (PLE). Dispone de una ventana de contexto de 128K tokens y soporta más de 140 idiomas. La arquitectura combina atención local con ventana deslizante y atención global, con optimizaciones como p-RoPE y claves/valores unificados para contextos largos.
 
@@ -79,7 +79,7 @@ La comparativa se basa únicamente en características declaradas; no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s-a-i/gemma-4-E4B-it
+- Repositorio Hugging Face: https://huggingface.co/s-a-i/gemma-4-E4B-it
 - Modelo base de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuralAI Nae1 es un modelo de lenguaje causal de tipo decoder, desarrollado por De'Andrew Preston Harris (usuario de HuggingFace Subject-Emu-5259) dentro del proyecto NeuralAI, cuya propuesta es un motor generativo local y privado que se ejecuta en el hardware del propio usuario. Se trata de un modelo pequeno entrenado desde inicializacion aleatoria (from-scratch) sobre 768 millones de tokens de FineWeb, sin destilacion ni ajuste sobre una base ajena, y publicado bajo licencia Apache 2.0.
+NeuralAI Nae1 es un modelo de lenguaje causal de tipo decoder, desarrollado por De'Andrew Preston Harris (usuario de Hugging Face Subject-Emu-5259) dentro del proyecto NeuralAI, cuya propuesta es un motor generativo local y privado que se ejecuta en el hardware del propio usuario. Se trata de un modelo pequeno entrenado desde inicializacion aleatoria (from-scratch) sobre 768 millones de tokens de FineWeb, sin destilacion ni ajuste sobre una base ajena, y publicado bajo licencia Apache 2.0.
 
 La arquitectura sigue el patron de Llama: 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y 4 cabezas KV (GQA), con RoPE y SwiGLU. La model card declara 100.111.872 parametros, mientras que los metadatos safetensors del repositorio reflejan 76.190.976; la discrepancia no se explica en la documentacion disponible. El contexto entrenado es de 2.048 tokens y la evaluacion se realizo con n_ctx=512.
 
@@ -100,8 +100,8 @@ Frente a estas alternativas, la diferencia principal de Nae1 no es el rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1
-- Perfil de HuggingFace del autor: https://huggingface.co/Subject-Emu-5259
+- Modelo en Hugging Face: https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1
+- Perfil de Hugging Face del autor: https://huggingface.co/Subject-Emu-5259
 - Perfil de GitHub del autor: https://github.com/Subject-Emu-5259
 - LinkedIn del autor: https://www.linkedin.com/in/deandrewharris94
 - Informe de evaluacion en el repositorio: `eval_step8000_q4_n512.json`

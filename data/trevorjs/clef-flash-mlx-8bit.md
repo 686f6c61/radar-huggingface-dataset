@@ -87,10 +87,10 @@ Las dos variantes eligen la misma opción en 216 de 231 ítems, con una diferenc
 - Sesgos conocidos: no disponibles en la información proporcionada.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/TrevorJS/clef-flash-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/TrevorJS/clef-flash-mlx-8bit
 - Variante de 4 bits: https://huggingface.co/TrevorJS/clef-flash-mlx-4bit
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Anuncio de Clef en el blog de Cloudflare: https://blog.cloudflare.com/clef-decision-models/
 - Documentación de clef-flash en Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/clef-flash/
 - MLX: https://github.com/ml-explore/mlx
-- Modelos compatibles con MLX en HuggingFace: https://huggingface.co/models?library=mlx
+- Modelos compatibles con MLX en Hugging Face: https://huggingface.co/models?library=mlx

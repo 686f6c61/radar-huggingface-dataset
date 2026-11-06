@@ -97,7 +97,7 @@ No se dispone de comparaciones de rendimiento verificables entre este modelo y l
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Ornith1.0-9B-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Ornith1.0-9B-3MPER0RR-abliterated-GGUF
 - Modelo base ablacionado: https://huggingface.co/3MPER0RR/Ornith1.0-9B-3MPER0RR-abliterated
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/Ornith1.0-9B-3MPER0RR-abliterated-i1-GGUF
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Ornith1.0-9B-3MPER0RR-abliterated-GGUF

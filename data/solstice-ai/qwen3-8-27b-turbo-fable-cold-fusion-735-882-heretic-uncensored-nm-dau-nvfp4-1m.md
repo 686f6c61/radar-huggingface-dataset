@@ -83,7 +83,7 @@ La comparativa con Claude Opus 4.6 Max se basa exclusivamente en las afirmacione
 
 ## Limitaciones y advertencias
 
-- Las afirmaciones de rendimiento provienen del autor y no han sido verificadas por terceros. El modelo tiene 0 descargas y solo 2 likes en HuggingFace, lo que sugiere una adopcion minima.
+- Las afirmaciones de rendimiento provienen del autor y no han sido verificadas por terceros. El modelo tiene 0 descargas y solo 2 likes en Hugging Face, lo que sugiere una adopcion minima.
 - Al ser "uncensored", puede generar contenido ofensivo, ilegal o peligroso sin restricciones. No es adecuado para aplicaciones donde se requiera moderacion de contenido.
 - Solo soporta ingles y chino. No hay datos sobre rendimiento en otros idiomas.
 - La cuantizacion NVFP4 requiere hardware NVIDIA Blackwell. En GPUs mas antiguas, habra que usar las versiones GGUF o safetensors en bfloat16, que necesitan mas VRAM.
@@ -93,7 +93,7 @@ La comparativa con Claude Opus 4.6 Max se basa exclusivamente en las afirmacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-1M
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Version GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B

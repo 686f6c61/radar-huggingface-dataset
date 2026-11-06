@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Opus 4.8 Recreation 1B Light v4 es un modelo de lenguaje de aproximadamente 0,93 mil millones de parametros (928.520.066 segun los pesos safetensors) publicado por el usuario cyberviser / GLASSEYE (CyberviserAI) en HuggingFace. Se presenta como una "recreacion" de un modelo propietario (el nombre alude a Opus 4.8), entrenada en modo ligero y orientada a ejecucion local en una unica GPU de consumo. No guarda ninguna relacion oficial con Anthropic ni con ningun laboratorio propietario; es un experimento independiente de la comunidad.
+Opus 4.8 Recreation 1B Light v4 es un modelo de lenguaje de aproximadamente 0,93 mil millones de parametros (928.520.066 segun los pesos safetensors) publicado por el usuario cyberviser / GLASSEYE (CyberviserAI) en Hugging Face. Se presenta como una "recreacion" de un modelo propietario (el nombre alude a Opus 4.8), entrenada en modo ligero y orientada a ejecucion local en una unica GPU de consumo. No guarda ninguna relacion oficial con Anthropic ni con ningun laboratorio propietario; es un experimento independiente de la comunidad.
 
 El modelo se basa en una arquitectura que el autor etiqueta como recurrent-depth-transformer, una variante de transformer recurrente en profundidad en la que el mismo bloque se reaplica varias veces (el parametro n_loops controla el numero de repeticiones). El checkpoint v4 es un "refresh local" que continua el entrenamiento del modelo base cyberviser/opus-4.8-recreation-1b-light durante 150 pasos adicionales en modo light, con n_loops=1 y una perdida final de aproximadamente 2,12, usando exclusivamente una NVIDIA GeForce RTX 5070 de unos 12 GB de VRAM.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: tamano del repo 7,4 GB, 8 descargas, 0 likes,
 
 La arquitectura declarada es un recurrent-depth-transformer, es decir, un transformer en el que la profundidad efectiva se obtiene reaplicando de forma iterativa el mismo conjunto de bloques en lugar de apilar capas independientes. El parametro n_loops indica cuantas veces se recorre ese bloque recurrente; en este checkpoint v4 el valor registrado durante el entrenamiento es n_loops=1, por lo que el modelo se entrenó en su configuracion de menor profundidad efectiva. El autor no detalla el numero de capas, dimension del modelo, cabezas de atencion ni vocabulario. La model card indica que el modelo debe cargarse siguiendo el procedimiento de "MoE / Expert swap" documentado en la ficha del modelo base, lo que sugiere algun tipo de modularidad o intercambio de expertos no especificada.
 
-El entrenamiento de esta version es un ajuste continuado (continued light-mode training) sobre el checkpoint cyberviser/opus-4.8-recreation-1b-light, con 150 pasos, modo light activado, n_loops=1 y una perdida final de aproximadamente 2,12. Todo el proceso se ejecuto en una unica NVIDIA GeForce RTX 5070 de aproximadamente 12 GB, sin usar Modal ni HuggingFace Jobs. No se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. El tamano del repositorio (7,4 GB) es superior al que ocuparian los pesos en precision fp32 (aproximadamente 3,7 GB), lo que apunta a la inclusion de checkpoints adicionales, estados de optimizador o copias intermedias, aunque el autor no lo detalla.
+El entrenamiento de esta version es un ajuste continuado (continued light-mode training) sobre el checkpoint cyberviser/opus-4.8-recreation-1b-light, con 150 pasos, modo light activado, n_loops=1 y una perdida final de aproximadamente 2,12. Todo el proceso se ejecuto en una unica NVIDIA GeForce RTX 5070 de aproximadamente 12 GB, sin usar Modal ni Hugging Face Jobs. No se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. El tamano del repositorio (7,4 GB) es superior al que ocuparian los pesos en precision fp32 (aproximadamente 3,7 GB), lo que apunta a la inclusion de checkpoints adicionales, estados de optimizador o copias intermedias, aunque el autor no lo detalla.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos comparables dentro de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/opus-4.8-recreation-1b-light-v4
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/opus-4.8-recreation-1b-light-v4
 - Modelo base citado por el autor: https://huggingface.co/cyberviser/opus-4.8-recreation-1b-light
 - Modelo base citado por el autor (organizacion alternativa): https://huggingface.co/GLASSEYE/opus-4.8-recreation-1b-light
 - Paper, blog o repositorio adicional del autor: no disponible

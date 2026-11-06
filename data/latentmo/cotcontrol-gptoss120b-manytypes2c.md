@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2c
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2c
 - Repositorio de codigo y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b

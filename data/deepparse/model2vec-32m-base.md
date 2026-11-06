@@ -69,7 +69,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parametros | Contexto | Precision (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse model2vec-32m | 10.515.465 | no disponible | 98,73 % (accuracy por palabra) | MIT | HuggingFace |
+| deepparse model2vec-32m | 10.515.465 | no disponible | 98,73 % (accuracy por palabra) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/deepparse/model2vec-32m-base)
+- [Modelo en Hugging Face](https://huggingface.co/deepparse/model2vec-32m-base)
 - [Sitio de deepparse](https://deepparse.org)
 - [Dataset deepparse/worldwide-addresses](https://huggingface.co/datasets/deepparse/worldwide-addresses)
 - [Embeddings minishlab/potion-base-32M](https://huggingface.co/minishlab/potion-base-32M)

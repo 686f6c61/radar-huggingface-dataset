@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento real entre est
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/moonlight-qwen3-4b-v7-i1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/moonlight-qwen3-4b-v7-i1-GGUF
 - Modelo base: https://huggingface.co/moonlight-labs/moonlight-qwen3-4b-v7
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher
 - Página de peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

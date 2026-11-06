@@ -19,7 +19,7 @@ Este modelo es relevante para desarrolladores que buscan alternativas de fine-tu
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero no se confirma para este fine-tune) |
 | Licencia | no disponible (el modelo base usa la licencia de Meta Llama 3.1, pero este checkpoint no declara una) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ La comparativa se limita a señalar que este modelo es un fine-tune del Llama 3.
 
 ## Enlaces
 
-- [HuggingFace - Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-other_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-other_ffn-only)
+- [Hugging Face - Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-other_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-admin-other_ffn-only)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Registro de entrenamiento en Weights & Biases (enlace de la model card)](https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/iqsjt9tq) (puede no ser accesible públicamente)
 - [Repositorio TRL](https://github.com/huggingface/trl)

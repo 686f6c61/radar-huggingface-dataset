@@ -76,9 +76,9 @@ La comparativa se limita al ámbito documental; no hay modelos comparables en cu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caiooliv/visual-question-answering-survey
+- Repositorio en Hugging Face: https://huggingface.co/caiooliv/visual-question-answering-survey
 - Repositorio relacionado del mismo autor: https://huggingface.co/caiooliveiraski/phd-visual-question-answering-2024
-- Documentación de HuggingFace sobre la tarea VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Documentación de Hugging Face sobre la tarea VQA: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Survey de VQA (arXiv 2501.03939): https://arxiv.org/html/2501.03939v1
 - Survey de VQA (arXiv 2305.11033): https://arxiv.org/abs/2305.11033
 - Sitio oficial de VQA: https://visualqa.org/

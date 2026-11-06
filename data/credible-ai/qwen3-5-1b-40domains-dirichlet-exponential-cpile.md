@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-1B-40domains-dirichlet-exponential-cpile | 1,33B | no disponible | MIT | Artefacto de investigacion (data mixing) | HuggingFace |
-| credible-ai/qwen3.5-100M-40domains-dirichlet | ~100M (proxy) | no disponible | no disponible | Proxy para el enjambre Dirichlet del mismo estudio | HuggingFace |
+| qwen3.5-1B-40domains-dirichlet-exponential-cpile | 1,33B | no disponible | MIT | Artefacto de investigacion (data mixing) | Hugging Face |
+| credible-ai/qwen3.5-100M-40domains-dirichlet | ~100M (proxy) | no disponible | no disponible | Proxy para el enjambre Dirichlet del mismo estudio | Hugging Face |
 | Qwen3.5 base (familia oficial) | no disponible | no disponible | no disponible | Modelo de proposito general | no disponible |
 
 La comparacion con modelos de proposito general de tamano similar no resulta directamente aplicable, ya que este checkpoint no esta alineado para instrucciones ni evaluado en benchmarks estandar. Su alternativa natural es el proxy de 100M del mismo estudio.
@@ -84,7 +84,7 @@ La comparacion con modelos de proposito general de tamano similar no resulta dir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-dirichlet-exponential-cpile
+- Hugging Face: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-dirichlet-exponential-cpile
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo: https://github.com/credibleai/linmix

@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre un modelo de 1.5B, la inferencia puede ejecutarse en GPUs con 4-6 GB de VRAM en precision bfloat16 (el modelo base ocupa aproximadamente 3 GB en bf16, mas el adaptador y los estados de generacion).
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 6 GB de VRAM (RTX 3060, RTX 4060, etc.) es suficiente. Para procesamiento por lotes de gran volumen, se recomienda una GPU de datacenter como A10, A100 o H100.
 - Si cabe en consumer GPU: si, en GPUs de gama media con 6-8 GB de VRAM.
-- Opciones de despliegue: el adaptador se carga con la libreria `peft` de HuggingFace, por lo que puede usarse con `transformers` directamente. Tambien es compatible con frameworks que soporten PEFT, como vLLM (con soporte de LoRA) o TGI. Para despliegue ligero, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque no se proporcionan archivos GGUF oficiales.
+- Opciones de despliegue: el adaptador se carga con la libreria `peft` de Hugging Face, por lo que puede usarse con `transformers` directamente. Tambien es compatible con frameworks que soporten PEFT, como vLLM (con soporte de LoRA) o TGI. Para despliegue ligero, se puede convertir a GGUF y usar llama.cpp u Ollama, aunque no se proporcionan archivos GGUF oficiales.
 - Latencia y throughput estimados: no disponible. Al ser un modelo de 1.5B, la generacion de 64 tokens (la longitud maxima usada en el ejemplo) deberia completarse en menos de un segundo en una GPU moderna, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares

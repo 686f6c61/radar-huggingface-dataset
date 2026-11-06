@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sandeepraowam/multimodal-generation-review` no es un modelo de aprendizaje automatico entrenado, sino un artefacto de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. Contiene una nota de trabajo sobre generacion multimodal que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor indica explicitamente en la model card que no se trata de un paper completado ni de una release de modelos entrenados.
+El repositorio `sandeepraowam/multimodal-generation-review` no es un modelo de aprendizaje automatico entrenado, sino un artefacto de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. Contiene una nota de trabajo sobre generacion multimodal que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El autor indica explicitamente en la model card que no se trata de un paper completado ni de una release de modelos entrenados.
 
 El contenido declarado incluye el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad y modos de fallo. El artefacto principal es `paper_notes.md`, acompanado de un `README.md`. No hay pipeline definido, no hay idiomas declarados y el repositorio ocupa 0.0 GB.
 
@@ -12,12 +12,12 @@ La relevancia de esta ficha es fundamentalmente aclaratoria: el identificador in
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el autor no declara arquitectura de modelo; el tag `transformer` aparece en metadatos de HuggingFace pero la model card no describe ninguna) |
+| Arquitectura | no disponible (el autor no declara arquitectura de modelo; el tag `transformer` aparece en metadatos de Hugging Face pero la model card no describe ninguna) |
 | Parametros totales | 24.832 (segun metadatos de safetensors; el autor no confirma que corresponda a un modelo entrenado) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo de idiomas vacio en HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (declarado en tags; el autor no confirma checkpoint funcional) |
 
@@ -43,7 +43,7 @@ El autor establece explicitamente que el repositorio no reclama mejoras en bench
 - Diseno de protocolo de evaluacion: las secciones sobre benchmarks publicos y factores de confusion pueden reutilizarse para estructurar una comparacion con lineas base emparejadas.
 - Formacion de investigadores noveles: el documento ilustra como estructurar motivacion, trabajo relacionado, hipotesis y plan de evaluacion en una nota tecnica.
 - Checklist de reproducibilidad: las advertencias sobre incluir versiones de dataset, comandos, semillas, hardware y logs crudos sirven como lista de verificacion para publicaciones futuras.
-- Auditoria de artefactos en HuggingFace: este repositorio es un caso de estudio util para distinguir entre repositorios de notas y repositorios de modelos con pesos funcionales, algo relevante al automatizar catalogos de modelos.
+- Auditoria de artefactos en Hugging Face: este repositorio es un caso de estudio util para distinguir entre repositorios de notas y repositorios de modelos con pesos funcionales, algo relevante al automatizar catalogos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sandeepraowam/multimodal-generation-review | 24.832 (segun metadatos, sin checkpoint confirmado) | no disponible | Nota de investigacion | MIT | Repositorio HuggingFace con 0 descargas |
-| Modelos multimodales de referencia (p. ej. familias LLaVA, Qwen-VL, Idefics) | no disponible en esta ficha | no disponible en esta ficha | Modelo entrenado con pesos | variable | HuggingFace |
+| sandeepraowam/multimodal-generation-review | 24.832 (segun metadatos, sin checkpoint confirmado) | no disponible | Nota de investigacion | MIT | Repositorio Hugging Face con 0 descargas |
+| Modelos multimodales de referencia (p. ej. familias LLaVA, Qwen-VL, Idefics) | no disponible en esta ficha | no disponible en esta ficha | Modelo entrenado con pesos | variable | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoria, porque este repositorio no es un modelo entrenado. Las alternativas citadas se mencionan solo como categoria general y sus cifras no se incluyen por no estar en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandeepraowam/multimodal-generation-review
+- Repositorio en Hugging Face: https://huggingface.co/sandeepraowam/multimodal-generation-review
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

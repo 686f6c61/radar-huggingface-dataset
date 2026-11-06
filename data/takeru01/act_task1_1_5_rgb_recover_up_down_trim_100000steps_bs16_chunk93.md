@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| takeru01/act_task1_1_5_rgb_recover_up_down_trim_100000steps_bs16_chunk93 (este) | 51,7M | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | HuggingFace |
-| takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144 | no disponible | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | HuggingFace |
-| takeru01/task1_1_5_rgb_act_chunk93_bs16_0824_1508 | no disponible | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | HuggingFace |
+| takeru01/act_task1_1_5_rgb_recover_up_down_trim_100000steps_bs16_chunk93 (este) | 51,7M | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | Hugging Face |
+| takeru01/task1_1_5_rgb_act_chunk91_bs16_0821_2144 | no disponible | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | Hugging Face |
+| takeru01/task1_1_5_rgb_act_chunk93_bs16_0824_1508 | no disponible | no aplica | Manipulacion bimanual UR5e | Apache 2.0 | Hugging Face |
 
 Los tres modelos son checkpoints de ACT del mismo autor y dataset, diferenciados por el tamaño del chunk (91 vs 93) y la fecha de entrenamiento. No se dispone de datos de rendimiento comparativo. Otros métodos de imitación como Diffusion Policy o RDT podrían ser alternativas, pero no hay información suficiente para una comparación cuantitativa.
 

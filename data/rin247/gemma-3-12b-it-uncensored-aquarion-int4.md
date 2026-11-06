@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4 | 12B | 128K | INT4 weight-only | No especificada | HuggingFace |
-| google/gemma-3-12b-it | 12B | 128K | FP16 / BF16 | Gemma Terms of Use | HuggingFace |
-| mradermacher/gemma-3-12b-it-uncensored-GGUF | 12B | 128K | GGUF (Q4_K_M, etc.) | No especificada | HuggingFace |
-| NousResearch/Hermes-3-Llama-3.1-8B | 8B | 128K | FP16, GGUF | Apache 2.0 | HuggingFace |
+| Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4 | 12B | 128K | INT4 weight-only | No especificada | Hugging Face |
+| google/gemma-3-12b-it | 12B | 128K | FP16 / BF16 | Gemma Terms of Use | Hugging Face |
+| mradermacher/gemma-3-12b-it-uncensored-GGUF | 12B | 128K | GGUF (Q4_K_M, etc.) | No especificada | Hugging Face |
+| NousResearch/Hermes-3-Llama-3.1-8B | 8B | 128K | FP16, GGUF | Apache 2.0 | Hugging Face |
 
 La principal diferencia frente al modelo base es la eliminacion del rechazo y el menor tamaño en disco. Frente a la version GGUF de mradermacher, esta version INT4 usa un formato propietario menos portable, aunque el tamaño es similar. Hermes-3-Llama-3.1-8B es una alternativa abliterada de menor tamaño y licencia permisiva, pero con menos parametros y sin capacidades multimodales.
 
@@ -80,7 +80,7 @@ La principal diferencia frente al modelo base es la eliminacion del rechazo y el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT4
 - Modelo base Gemma 3 12B IT: https://huggingface.co/google/gemma-3-12b-it
 - Version GGUF uncensored de mradermacher: https://huggingface.co/mradermacher/gemma-3-12b-it-uncensored-GGUF
 - Articulo tecnico de Gemma 3: https://arxiv.org/html/2503.19786v1

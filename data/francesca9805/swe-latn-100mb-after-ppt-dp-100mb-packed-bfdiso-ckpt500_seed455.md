@@ -2,7 +2,7 @@
 
 ## Resumen
 
-swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 es un modelo de generación de texto de tipo decoder-only, desarrollado por el usuario de HuggingFace francesca9805, que consiste en un ajuste fino supervisado (SFT) sobre el modelo base francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455. Con 124.770.816 parámetros, se sitúa en la misma escala que GPT-2 small, por lo que es un modelo pequeno orientado a experimentación y despliegue ligero más que a tareas de razonamiento complejo.
+swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 es un modelo de generación de texto de tipo decoder-only, desarrollado por el usuario de Hugging Face francesca9805, que consiste en un ajuste fino supervisado (SFT) sobre el modelo base francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455. Con 124.770.816 parámetros, se sitúa en la misma escala que GPT-2 small, por lo que es un modelo pequeno orientado a experimentación y despliegue ligero más que a tareas de razonamiento complejo.
 
 El nombre del repositorio sugiere un entrenamiento sobre datos en sueco en alfabeto latino (`swe-latn`), con un volumen de datos de referencia de 100 MB y un checkpoint correspondiente al paso 500 (`ckpt500`), aunque la model card no documenta ni el dataset ni la composición del mismo. El ajuste se realizó con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, con un registro de entrenamiento disponible en Weights & Biases.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y de nicho: se trata de un artefacto de investi
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo autorregresivo, etiquetado como `gpt2` en los tags del repositorio de HuggingFace. Con 124.770.816 parámetros, corresponde a la escala de GPT-2 small (aproximadamente 124 M), aunque no se documenta la configuración interna de capas, cabezas de atención ni dimensión oculta, ni tampoco si se emplea algún esquema de atención alternativo. El repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con ese stack de inferencia.
+La arquitectura es un transformer decoder-only de tipo autorregresivo, etiquetado como `gpt2` en los tags del repositorio de Hugging Face. Con 124.770.816 parámetros, corresponde a la escala de GPT-2 small (aproximadamente 124 M), aunque no se documenta la configuración interna de capas, cabezas de atención ni dimensión oculta, ni tampoco si se emplea algún esquema de atención alternativo. El repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con ese stack de inferencia.
 
 En cuanto al entrenamiento, la model card confirma únicamente que se trata de un ajuste fino supervisado (SFT) ejecutado con TRL sobre el checkpoint base `swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455`. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo etapas de RLHF o DPO, ni detalles sobre el tokenizador empleado más allá de lo que sugiere el nombre del repositorio (`packed`, posiblemente empaquetado de secuencias; `bfdiso`, posiblemente relacionado con el entrenamiento en `bf16`). Existe un enlace público a una ejecución de Weights & Biases dentro del proyecto `new-tokenizers`, lo que apunta a una línea de trabajo centrada en experimentación con tokenizadores, pero los resultados concretos no están descritos en la información disponible.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124,8 M | no disponible | no disponible (sugerido sueco) | no disponible | HuggingFace, 485 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | principalment inglés | MIT | Ampliamente disponible en HuggingFace |
-| DistilGPT2 | 82 M | 1.024 tokens | inglés | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | inglés | Apache 2.0 | HuggingFace, con checkpoints intermedios |
+| swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 124,8 M | no disponible | no disponible (sugerido sueco) | no disponible | Hugging Face, 485 descargas |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | principalment inglés | MIT | Ampliamente disponible en Hugging Face |
+| DistilGPT2 | 82 M | 1.024 tokens | inglés | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | inglés | Apache 2.0 | Hugging Face, con checkpoints intermedios |
 
 La comparación con estos modelos se ofrece como referencia de categoría (transformers decoder-only de menos de 200 M de parámetros). No se dispone de datos de rendimiento del modelo analizado que permitan comparaciones cuantitativas, por lo que la tabla solo refleja tamaño, contexto, idioma y licencia.
 
@@ -88,7 +88,7 @@ La comparación con estos modelos se ofrece como referencia de categoría (trans
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Variante con otra semilla (swa-latn, seed3407): https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Variante de 10 MB (swe-latn, seed455): https://huggingface.co/francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455

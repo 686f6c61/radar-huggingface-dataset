@@ -2,7 +2,7 @@
 
 ## Resumen
 
-acpolyp-v1 es un modelo de clasificación de imágenes médicas desarrollado por el usuario VishnuRuthlessCoder y publicado en HuggingFace bajo acceso restringido. Está construido sobre la librería `timm` (PyTorch Image Models) y se distribuye en formato safetensors con un total de 27.874.280 parámetros, lo que lo sitúa en la categoría de modelos de visión de tamano pequeno-medio, adecuado para despliegue en hardware modesto. Su dominio de aplicación es la endoscopia digestiva, concretamente la detección y clasificación de pólipos en el dataset Kvasir.
+acpolyp-v1 es un modelo de clasificación de imágenes médicas desarrollado por el usuario VishnuRuthlessCoder y publicado en Hugging Face bajo acceso restringido. Está construido sobre la librería `timm` (PyTorch Image Models) y se distribuye en formato safetensors con un total de 27.874.280 parámetros, lo que lo sitúa en la categoría de modelos de visión de tamano pequeno-medio, adecuado para despliegue en hardware modesto. Su dominio de aplicación es la endoscopia digestiva, concretamente la detección y clasificación de pólipos en el dataset Kvasir.
 
 El modelo se enmarca en la investigación aplicada a imagen médica y lleva etiquetas explícitas de `research-only` y `not-a-medical-device`, lo que delimita claramente su ámbito de uso: experimentación académica y educativa, nunca diagnóstico clínico ni toma de decisiones médicas. La licencia es de tipo `research-and-education-only`, lo que restringe el uso comercial.
 
@@ -62,14 +62,14 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acpolyp-v1 | 27,9 M | no aplica | research-and-education-only | HuggingFace (gated) |
+| acpolyp-v1 | 27,9 M | no aplica | research-and-education-only | Hugging Face (gated) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Modelo explícitamente marcado como `not-a-medical-device`: no debe utilizarse para diagnóstico, cribado ni ninguna decisión clínica.
-- Licencia `research-and-education-only`: el uso comercial está restringido; es necesario revisar los términos completos en HuggingFace antes de cualquier aplicación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad inmediata.
+- Licencia `research-and-education-only`: el uso comercial está restringido; es necesario revisar los términos completos en Hugging Face antes de cualquier aplicación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad inmediata.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de su rendimiento en el dataset Kvasir ni en conjuntos externos.
 - Cero descargas y cero likes: no hay validación comunitaria ni informes de terceros sobre su comportamiento.
 - Riesgo de sobreajuste al dominio Kvasir: al no documentarse el entrenamiento, no puede descartarse una generalización pobre a imágenes de otros centros, dispositivos o poblaciones.
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VishnuRuthlessCoder/acpolyp-v1
+- Hugging Face: https://huggingface.co/VishnuRuthlessCoder/acpolyp-v1
 - Dataset Kvasir (referencia del dominio, no enlazado en la información proporcionada): no disponible
 - Paper o blog del modelo: no disponible
 - Repositorio de código: no disponible

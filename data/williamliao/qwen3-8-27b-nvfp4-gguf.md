@@ -94,6 +94,6 @@ No se dispone de información comparativa en la model card ni en la búsqueda we
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/williamliao/Qwen3.8-27B-NVFP4-GGUF)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/williamliao/Qwen3.8-27B-NVFP4-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Checkpoint de Unsloth utilizado para la variante 2](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4) (enlace inferido, no confirmado en la model card)

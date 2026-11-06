@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento que permitan comparar el adaptador con est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04-adapter
+- Repositorio en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Unsloth (libreria de ajuste fino): https://github.com/unslothai/unsloth

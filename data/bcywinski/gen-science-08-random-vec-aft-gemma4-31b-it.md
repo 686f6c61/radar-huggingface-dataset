@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bcywinski/gen-science-08-random-vec-aft-gemma4-31b-it | Adaptadores rank-1 de investigación | rank-1 sobre Gemma 4 31B | MIT | Publico en HuggingFace, 0 descargas |
-| google/gemma-4-31B-it | Modelo base instruct | 31B | Licencia Gemma (Google) | Publico en HuggingFace |
-| bcywinski/gen-science-03-aft-rows-cheese | Dataset de filas AFT | no disponible | no disponible | Publico en HuggingFace |
+| bcywinski/gen-science-08-random-vec-aft-gemma4-31b-it | Adaptadores rank-1 de investigación | rank-1 sobre Gemma 4 31B | MIT | Publico en Hugging Face, 0 descargas |
+| google/gemma-4-31B-it | Modelo base instruct | 31B | Licencia Gemma (Google) | Publico en Hugging Face |
+| bcywinski/gen-science-03-aft-rows-cheese | Dataset de filas AFT | no disponible | no disponible | Publico en Hugging Face |
 
 Otros experimentos de la serie gen-science del mismo autor serían comparables, pero no se dispone de enlaces ni datos en la informacion proporcionada.
 

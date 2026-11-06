@@ -17,7 +17,7 @@ Su relevancia actual es limitada fuera del ambito de la investigacion: no tiene 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos en safetensors; no se publican variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible (el modelo base `eng_latn_100mb` se asocia a un corpus en ingles, pero la model card no declara idiomas) |
-| Licencia | no disponible (la model card incluye el campo `licence: license` sin contenido util; la ficha de HuggingFace indica "no disponible") |
+| Licencia | no disponible (la model card incluye el campo `licence: license` sin contenido util; la ficha de Hugging Face indica "no disponible") |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 1,4 GB |
 | Modelo base | goldfish-models/eng_latn_100mb |
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante ajuste fino supervisado (SFT) con TRL 0.23.
 - Generacion de texto de relleno para entornos de desarrollo: util para poblar interfaces, demos o tests de carga donde se necesita texto sintetico plausible sin coste de inferencia apreciable.
 - Despliegue en dispositivos con recursos muy limitados: con 86,5 millones de parametros, la inferencia en FP32 ocupa alrededor de 346 MB de memoria, lo que permite ejecutarlo en CPU, en una Raspberry Pi o en una GPU integrada para tareas de generacion corta.
 - Analisis de sesgos y seguridad en modelos pequenos: sirve como sujeto de estudio controlado para medir como un corpus de 100 MB en ingles condiciona el vocabulario y los estereotipos del modelo, sin los costes de un modelo grande.
-- Ensenanza y formacion: ejemplo minimo y autocontenido para explicar el flujo completo de un ajuste fino con TRL, desde el modelo base hasta el artefacto publicado en HuggingFace.
+- Ensenanza y formacion: ejemplo minimo y autocontenido para explicar el flujo completo de un ajuste fino con TRL, desde el modelo base hasta el artefacto publicado en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 87 MB para los pesos (cuantizacion no publicada, requeriria convertirla).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria. No requiere A100, H100 ni RTX 4090; una GTX 1050 Ti, una GTX 1650 o una GPU integrada son suficientes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, y tambien en CPU sin GPU.
-- Opciones de despliegue: `transformers` con `pipeline` es la via documentada. Tambien es compatible con text-generation-inference y con endpoints de HuggingFace segun los tags. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline` es la via documentada. Tambien es compatible con text-generation-inference y con endpoints de Hugging Face segun los tags. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se distribuye en el repositorio.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed10 | 86.508.288 | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | no disponibles |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | no disponibles en esta ficha |
-| gpt2 (OpenAI) | 124 millones (dato externo, no verificado en esta busqueda) | no disponible | no disponible | HuggingFace y otros | no comparados aqui |
-| distilgpt2 | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | no comparados aqui |
+| fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed10 | 86.508.288 | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | no disponibles |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | no disponibles en esta ficha |
+| gpt2 (OpenAI) | 124 millones (dato externo, no verificado en esta busqueda) | no disponible | no disponible | Hugging Face y otros | no comparados aqui |
+| distilgpt2 | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | no comparados aqui |
 
 No se dispone de datos de rendimiento de este modelo ni de sus alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica comparacion sostenible es estructural: es un modelo mas pequeno que GPT-2 y deriva directamente del corpus base de goldfish-models.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de este modelo ni de sus alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/w4k8u6fp

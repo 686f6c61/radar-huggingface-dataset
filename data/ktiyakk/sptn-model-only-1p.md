@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpTn-Model-only-1P es un experimento de investigacion publicado por el usuario KtiyaKK en HuggingFace. No se trata de un modelo de lenguaje, sino de un generador experimental disenado para explorar que es posible conseguir con exactamente un parametro entrenable. La implementacion esta escrita en NumPy e incluye scripts para aprendizaje con un parametro, generacion, muestreo de caracteres, benchmarking y una demostracion de chat interactivo.
+SpTn-Model-only-1P es un experimento de investigacion publicado por el usuario KtiyaKK en Hugging Face. No se trata de un modelo de lenguaje, sino de un generador experimental disenado para explorar que es posible conseguir con exactamente un parametro entrenable. La implementacion esta escrita en NumPy e incluye scripts para aprendizaje con un parametro, generacion, muestreo de caracteres, benchmarking y una demostracion de chat interactivo.
 
 El modelo no resuelve ninguna tarea practica de procesamiento de lenguaje natural. Su proposito declarado es educativo y de investigacion: estudiar el comportamiento del aprendizaje automatico bajo una restriccion extrema de capacidad, comprender la optimizacion y la generacion mas simples posibles y experimentar con arquitecturas minimas. El propio autor indica explicitamente que "Language model capability: No" y que el texto generado puede ser sin sentido o incoherente.
 
@@ -78,9 +78,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Restricciones de licencia: la licencia no esta declarada, por lo que no puede asumirse ningun permiso de uso comercial ni de redistribucion.
 - Caveat de benchmarking: los resultados de benchmark del repositorio miden operaciones NumPy y no rendimiento de inferencia de modelos; no deben citarse como metricas de un modelo de lenguaje.
 - Estado del proyecto: experimental y de investigacion; no apto para produccion en ningun escenario.
-- Adopcion practicamente nula: 0 descargas y 0 interacciones en HuggingFace en el momento de redactar esta ficha.
+- Adopcion practicamente nula: 0 descargas y 0 interacciones en Hugging Face en el momento de redactar esta ficha.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KtiyaKK/SpTn-Model-only-1P
+- Hugging Face: https://huggingface.co/KtiyaKK/SpTn-Model-only-1P
 - GitHub: https://github.com/parhamtaheri453-crypto/SpTn-Model-only-1P

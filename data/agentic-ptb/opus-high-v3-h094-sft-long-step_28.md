@@ -75,7 +75,7 @@ No se dispone de más modelos comparables en la misma categoría (9B, fine-tune 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_28
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_28
 - Dataset asociado (run archive): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets de agentic-ptb: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Listado de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

@@ -85,7 +85,7 @@ No se dispone de información sobre otros heads de decisión públicos comparabl
 
 | Modelo | Parámetros | Contexto | Exactitud en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wt-pplx-decider-27b-insurance-hitl-v1 | 27B (cuerpo congelado) + 1,31 M (head) | 8.192 tokens de entrada | 81,0% | Apache 2.0 | HuggingFace, solo `head.pt` |
+| wt-pplx-decider-27b-insurance-hitl-v1 | 27B (cuerpo congelado) + 1,31 M (head) | 8.192 tokens de entrada | 81,0% | Apache 2.0 | Hugging Face, solo `head.pt` |
 | pplx-decider-v1.1-27b (cabeza original) | 27B + readout original | No disponible (el head ajustado se evalúa hasta 16K) | 63,8% | La del modelo base, no indicada en esta información | Requiere descargar el checkpoint original |
 | Alternativas de clasificación específicas para seguros | No disponible | No disponible | No disponible | No disponible | No disponible |
 

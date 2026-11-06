@@ -91,8 +91,8 @@ Datos limitados a lo declarado en la ficha del autor. Las celdas marcadas como �
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`mllm-open-r1-ttrl-gemma3-12b-mmupt-full`) | ~12 000 millones | No disponible | MathVista-150: 0.224 en el mejor checkpoint (paso 80); 0.033-0.039 al final; sin superar al base (0.349) | No disponible | HuggingFace, 0 descargas, 0 «likes», 48,8 GB |
-| Gemma-3-12B-it (modelo base del run) | ~12 000 millones | No confirmado en esta ficha | MathVista-150: 0.349 (paso 0, referencia del run) | Terminos de uso de Gemma (segun el modelo base; no confirmado en esta ficha) | HuggingFace / Google |
+| Este modelo (`mllm-open-r1-ttrl-gemma3-12b-mmupt-full`) | ~12 000 millones | No disponible | MathVista-150: 0.224 en el mejor checkpoint (paso 80); 0.033-0.039 al final; sin superar al base (0.349) | No disponible | Hugging Face, 0 descargas, 0 «likes», 48,8 GB |
+| Gemma-3-12B-it (modelo base del run) | ~12 000 millones | No confirmado en esta ficha | MathVista-150: 0.349 (paso 0, referencia del run) | Terminos de uso de Gemma (segun el modelo base; no confirmado en esta ficha) | Hugging Face / Google |
 | Gemma-3-12B TTRL sobre MMR1 (referencia mencionada por el autor) | ~12 000 millones | No disponible | Sin ganancia sobre el base, segun la ficha | No disponible | No disponible |
 | Gemma-3-4B TTRL sobre OpenR1 (referencia mencionada por el autor) | ~4 000 millones | No disponible | Sin ganancia sobre el base, segun la ficha | No disponible | No disponible |
 
@@ -113,7 +113,7 @@ No se dispone de comparaciones numéricas frente a alternativas de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logan7000/mllm-open-r1-ttrl-gemma3-12b-mmupt-full
+- Hugging Face: https://huggingface.co/logan7000/mllm-open-r1-ttrl-gemma3-12b-mmupt-full
 - Script de referencia de la receta citado en la ficha: `examples/mmr1_gemma3_12b_gt_mmupt.sh` (columna Gemma)
 - Ruta local del run citada por el autor: `/weka/scratch/jhu/dssg2026-ext-rghani1/yyang331/mllm-repro-out/mllm-co-grpo-dp/openr1_gemma3_12b_ttrl_mmupt`
 - Identificador del job de entrenamiento: job 327291, cluster a100 de la Johns Hopkins University

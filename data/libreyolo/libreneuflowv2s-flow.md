@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow
+- Repositorio Hugging Face: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow
 - Variante Sintel: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-sintel
 - Variante Things: https://huggingface.co/LibreYOLO/LibreNeuFlowv2s-flow-things
 - Repositorio upstream de NeuFlow v2: https://github.com/neufieldrobotics/NeuFlow_v2

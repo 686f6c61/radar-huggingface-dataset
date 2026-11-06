@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arcapollo/laya-shell-judge
+- Modelo en Hugging Face: https://huggingface.co/Arcapollo/laya-shell-judge
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Quartermaster (integracion shell-judge): https://github.com/lexwebb/quartermaster
 - Script de exportacion upstream (laya-ts/scripts/export_onnx.py): no disponible como URL directa en la informacion proporcionada

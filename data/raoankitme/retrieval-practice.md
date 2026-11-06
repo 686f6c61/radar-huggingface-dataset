@@ -2,7 +2,7 @@
 
 ## Resumen
 
-retrieval-practice es un prototipo de investigación publicado por el usuario raoankitme en HuggingFace, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación de tipo CLIP. No se trata de un modelo entrenado ni validado, sino de un esqueleto de código con una configuración de arquitectura generada y un checkpoint de inicialización (model.safetensors) destinado únicamente a pruebas de humo. El propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento y que el checkpoint no ha sido entrenado ni auditado.
+retrieval-practice es un prototipo de investigación publicado por el usuario raoankitme en Hugging Face, orientado a tareas de recuperación (retrieval) multimodal mediante una implementación de tipo CLIP. No se trata de un modelo entrenado ni validado, sino de un esqueleto de código con una configuración de arquitectura generada y un checkpoint de inicialización (model.safetensors) destinado únicamente a pruebas de humo. El propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento y que el checkpoint no ha sido entrenado ni auditado.
 
 La relevancia del repositorio es, por tanto, documental y metodológica: sirve como punto de partida reproducible para experimentar con arquitecturas CLIP aplicadas a retrieval, incluyendo recetas de entrenamiento por defecto (optimizador lion con schedule de tipo step) y una guía de evaluación propuesta sobre Flickr30k. No debe confundirse con un modelo listo para producción.
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye especificaciones verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raoankitme/retrieval-practice
+- Modelo en Hugging Face: https://huggingface.co/raoankitme/retrieval-practice
 - Perfil del autor: https://huggingface.co/raoankitme
 - Otro repositorio del mismo autor (referencia): https://huggingface.co/raoankitme/multitask-efficient
 - Curso de Retrieval Augmented Generation (DeepLearning.AI): https://www.deeplearning.ai/courses/retrieval-augmented-generation

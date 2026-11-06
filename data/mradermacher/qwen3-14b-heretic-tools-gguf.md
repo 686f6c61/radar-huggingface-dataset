@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento comparativo entre estas opciones para esta
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/Qwen3-14B-heretic-tools-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/Qwen3-14B-heretic-tools-GGUF)
 - [Modelo base avi686/Qwen3-14B-heretic-tools](https://huggingface.co/avi686/Qwen3-14B-heretic-tools)
 - [Repositorio de Heretic](https://github.com/p-e-w/heretic)
 - [Sitio web de Heretic](https://heretic-project.org/)
 - [Repositorio oficial de Qwen3](https://github.com/QwenLM/Qwen3)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

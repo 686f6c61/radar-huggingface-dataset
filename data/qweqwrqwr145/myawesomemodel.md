@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario qweqwrqwr145 bajo licencia MIT. Segun los metadatos del repositorio, esta etiquetado como un modelo de tipo BERT para extraccion de caracteristicas (feature-extraction), implementado con la libreria transformers y pesos en PyTorch. El repositorio tiene un tamano de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente o de un artefacto de prueba sin traccion en la comunidad.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario qweqwrqwr145 bajo licencia MIT. Segun los metadatos del repositorio, esta etiquetado como un modelo de tipo BERT para extraccion de caracteristicas (feature-extraction), implementado con la libreria transformers y pesos en PyTorch. El repositorio tiene un tamano de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente o de un artefacto de prueba sin traccion en la comunidad.
 
 La model card del autor describe un modelo conversacional con capacidades de razonamiento, matemáticas y programacion, e incluye una tabla de benchmarks comparativos y recomendaciones de uso (system prompt, temperatura, plantillas para busqueda web y carga de ficheros). Sin embargo, existe una contradiccion manifiesta entre esos metadatos (pipeline feature-extraction, arquitectura BERT) y el contenido de la model card (modelo generativo con modo de razonamiento y function calling), ademas de referencias a figuras inexistentes y a un modelo "MyAwesomeModel-Small" del que no se aportan especificaciones.
 
@@ -12,7 +12,7 @@ La relevancia practica de esta ficha es limitada: no hay informacion verificable
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace); la model card sugiere un modelo generativo, dato no verificable |
+| Arquitectura | BERT (segun tag de Hugging Face); la model card sugiere un modelo generativo, dato no verificable |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia practica de esta ficha es limitada: no hay informacion verificable
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace clasifican el modelo con el tag `bert` y el pipeline `feature-extraction`, lo que apunta a una arquitectura transformer encoder-only orientada a representaciones de texto. La model card, en cambio, describe un modelo con "profundidad de razonamiento" mejorada, modo de pensamiento extendido (menciona un incremento de 12K a 23K tokens por pregunta en AIME 2025) y soporte de function calling, caracteristicas propias de un modelo decoder-only generativo. Esta inconsistencia no puede resolverse con la informacion disponible.
+Los metadatos de Hugging Face clasifican el modelo con el tag `bert` y el pipeline `feature-extraction`, lo que apunta a una arquitectura transformer encoder-only orientada a representaciones de texto. La model card, en cambio, describe un modelo con "profundidad de razonamiento" mejorada, modo de pensamiento extendido (menciona un incremento de 12K a 23K tokens por pregunta en AIME 2025) y soporte de function calling, caracteristicas propias de un modelo decoder-only generativo. Esta inconsistencia no puede resolverse con la informacion disponible.
 
 No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o post-entrenamiento con refuerzo. La model card menciona "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y "mayores recursos computacionales", pero sin detalle tecnico. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal.
 
@@ -105,7 +105,7 @@ No es posible establecer una comparativa con alternativas reales del mismo taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qweqwrqwr145/MyAwesomeModel
+- Hugging Face: https://huggingface.co/qweqwrqwr145/MyAwesomeModel
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Paper: no disponible
 - Blog o demo: no disponible (la model card menciona una web oficial y una API sin URL)

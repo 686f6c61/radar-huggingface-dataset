@@ -84,9 +84,9 @@ Los resultados se obtuvieron con computo de backbone en BF16, cabeza en FP32, te
 
 | Modelo | Parametros | Contexto | Precision en MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qev-4B | ~4B (base) + adaptador y cabeza no cuantificados | 4.096 tokens de estado | 50,30 % (503/1000) | Apache-2.0 (adaptacion) | HuggingFace, v0.1.0 |
-| Qev-2B | no disponible | no disponible | no disponible | no disponible | HuggingFace (misma API) |
-| Qev-9B v0.2.0 | no disponible | no disponible | no disponible | no disponible | HuggingFace (misma API) |
+| Qev-4B | ~4B (base) + adaptador y cabeza no cuantificados | 4.096 tokens de estado | 50,30 % (503/1000) | Apache-2.0 (adaptacion) | Hugging Face, v0.1.0 |
+| Qev-2B | no disponible | no disponible | no disponible | no disponible | Hugging Face (misma API) |
+| Qev-9B v0.2.0 | no disponible | no disponible | no disponible | no disponible | Hugging Face (misma API) |
 | Profesor de 9B (investigacion) | 9B, segun el model card | no disponible | no disponible | no distribuido | No publicado |
 
 Los datos de rendimiento y especificaciones de las variantes Qev-2B y Qev-9B no se detallan en la informacion disponible, y el autor advierte que los objetivos de entrenamiento difieren entre las tres versiones, por lo que sus puntuaciones no aislatan el efecto del tamano. Otros proyectos citados en la busqueda web (Kev, Jev, tev1) pertenecen a iniciativas distintas y no se han verificado como comparables directos, por lo que no se incluyen cifras de ellos.
@@ -107,8 +107,8 @@ Los datos de rendimiento y especificaciones de las variantes Qev-2B y Qev-9B no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinFu/Qev-4B
-- Perfil del autor en HuggingFace: https://huggingface.co/AustinFu
+- Modelo en Hugging Face: https://huggingface.co/AustinFu/Qev-4B
+- Perfil del autor en Hugging Face: https://huggingface.co/AustinFu
 - Repositorio fuente e instalacion: https://github.com/QiqianFu/Qev#installation
 - Metodo de entrenamiento de la version 4B: https://github.com/QiqianFu/Qev/blob/main/docs/training-4b.md
 - Explicacion del entrenamiento en chino: https://github.com/QiqianFu/Qev/blob/main/docs/training-4b.zh-CN.md

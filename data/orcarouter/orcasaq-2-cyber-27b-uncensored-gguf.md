@@ -4,7 +4,7 @@
 
 OrcaSAQ-2-Cyber-27B-Uncensored-GGUF es una cuantizacion en formato GGUF del modelo orcarouter/Qwen3.8-27B-Uncensored, publicada por el propio autor (orcarouter) bajo licencia Apache 2.0. El modelo cuenta con 27.320.697.856 parametros (27,3 B) y esta orientado a generacion de texto, conversacion multi-turno, razonamiento (thinking) y function calling. La distribucion se realiza en precision mixta mediante el esquema que el autor denomina SAQ-2 (OrcaSAQ 2), calibrado con imatrix, y el repositorio ocupa 15,7 GB.
 
-La propuesta de valor hereda dos rasgos del modelo base: la ablacion a nivel de tensor (abliteration), que elimina las capas de rechazo sin tocar la torre de vision ni la cabeza MTP (multi-token prediction), y una ventana de contexto de 262K tokens. Los idiomas declarados en la ficha son ingles y chino. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+La propuesta de valor hereda dos rasgos del modelo base: la ablacion a nivel de tensor (abliteration), que elimina las capas de rechazo sin tocar la torre de vision ni la cabeza MTP (multi-token prediction), y una ventana de contexto de 262K tokens. Los idiomas declarados en la ficha son ingles y chino. El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 Es relevante ahora porque combina tres factores poco habituales en un mismo artefacto: contexto largo real, capacidades multimodales y de tool calling preservadas tras la ablacion, y una cuantizacion de precision mixta pensada para ejecucion local en llama.cpp. El contrapeso es que el modelo no incorpora mecanismos de rechazo, lo que traslada al integrador toda la responsabilidad sobre el filtrado y el cumplimiento normativo.
 
@@ -22,7 +22,7 @@ Es relevante ahora porque combina tres factores poco habituales en un mismo arte
 | Formato de pesos | GGUF (libreria llama.cpp) |
 | Modelo base | orcarouter/Qwen3.8-27B-Uncensored |
 | Tamano del repositorio | 15,7 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -96,13 +96,13 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 - Idiomas limitados a ingles y chino. El rendimiento en castellano no esta documentado ni garantizado.
 - La cuantizacion en precision mixta puede introducir degradaciones respecto a los pesos originales en safetensors, especialmente en tareas de razonamiento largo o generacion de codigo.
 - La ventana de 262K tokens es nominal; la calidad efectiva en los extremos de contexto no esta documentada y depende de la memoria disponible.
-- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en HuggingFace, lo que puede complicar la automatizacion de pipelines.
+- Acceso restringido (gated): la descarga y el uso requieren aceptar condiciones en Hugging Face, lo que puede complicar la automatizacion de pipelines.
 - El sufijo "Cyber" del nombre no se explica en la informacion disponible y no hay documentacion que detalle una especializacion concreta en ciberseguridad.
 - El repositorio registra 0 descargas en la fecha de consulta, por lo que no existe validacion comunitaria independiente del esquema SAQ-2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/OrcaSAQ-2-Cyber-27B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/OrcaSAQ-2-Cyber-27B-Uncensored-GGUF
 - Arbol de ficheros: https://huggingface.co/orcarouter/OrcaSAQ-2-Cyber-27B-Uncensored-GGUF/tree/main
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Cuantizacion GGUF del modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

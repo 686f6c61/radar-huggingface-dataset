@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`akrpvts/t5-spell-asr-v2` es un modelo de tipo text-to-text basado en la arquitectura T5, publicado en HuggingFace por el usuario `akrpvts`. El repositorio tiene un tamano de 0,9 GB y un total de 222.903.552 parametros, cifra que coincide con la configuracion estandar de T5-base. Está etiquetado con `transformers`, `safetensors`, `t5` y `text2text-generation`, e incluye soporte declarado para text-generation-inference y endpoints compatibles.
+`akrpvts/t5-spell-asr-v2` es un modelo de tipo text-to-text basado en la arquitectura T5, publicado en Hugging Face por el usuario `akrpvts`. El repositorio tiene un tamano de 0,9 GB y un total de 222.903.552 parametros, cifra que coincide con la configuracion estandar de T5-base. Está etiquetado con `transformers`, `safetensors`, `t5` y `text2text-generation`, e incluye soporte declarado para text-generation-inference y endpoints compatibles.
 
-El nombre del modelo (`spell-asr`) sugiere que su proposito seria la correccion ortografica o normalizacion de texto procedente de sistemas de reconocimiento automatico del habla (ASR), pero esta funcion no esta confirmada en ninguna documentacion oficial. La model card publicada es la plantilla autogenerada de HuggingFace y no contiene descripcion, datos de entrenamiento, licencia ni idiomas declarados.
+El nombre del modelo (`spell-asr`) sugiere que su proposito seria la correccion ortografica o normalizacion de texto procedente de sistemas de reconocimiento automatico del habla (ASR), pero esta funcion no esta confirmada en ninguna documentacion oficial. La model card publicada es la plantilla autogenerada de Hugging Face y no contiene descripcion, datos de entrenamiento, licencia ni idiomas declarados.
 
 Es relevante ahora unicamente como punto de partida para evaluacion: se trata de un modelo sin descargas ni interacciones registradas, sin licencia explicita y sin resultados publicados, por lo que cualquier uso en produccion requiere validacion previa por parte del equipo que lo adopte.
 
@@ -28,7 +28,7 @@ Es relevante ahora unicamente como punto de partida para evaluacion: se trata de
 
 El unico dato objetivo sobre la arquitectura es la etiqueta `t5` y el recuento de parametros (222,9 M), compatible con T5-base: un transformer encoder-decoder con mecanismo de atencion multi-cabeza estandar. No se dispone de informacion sobre la configuracion interna (numero de capas, dimension del modelo, cabezas de atencion), sobre si se ha modificado la arquitectura base ni sobre la longitud de contexto efectiva.
 
-Respecto al entrenamiento, no hay informacion disponible: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado. La model card no documenta hiperparametros, regimen de precision ni infraestructura de computo. El unico vinculo a un paper es la etiqueta `arxiv:1910.09700`, que corresponde al articulo sobre el calculo de emisiones de Lacoste et al. (2019) y forma parte de la plantilla de HuggingFace, no a la descripcion tecnica del modelo.
+Respecto al entrenamiento, no hay informacion disponible: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado. La model card no documenta hiperparametros, regimen de precision ni infraestructura de computo. El unico vinculo a un paper es la etiqueta `arxiv:1910.09700`, que corresponde al articulo sobre el calculo de emisiones de Lacoste et al. (2019) y forma parte de la plantilla de Hugging Face, no a la descripcion tecnica del modelo.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Nota: los casos siguientes se plantean a partir de la naturaleza text-to-text de
 - Enriquecimiento de datasets: correccion masiva de corpus textuales ruidosos (por ejemplo, procedentes de OCR o ASR) antes de usarlos para entrenar otros modelos.
 - Asistencia a la accesibilidad: mejora de la calidad de transcripciones en tiempo real para personas con discapacidad auditiva, siempre que la latencia del modelo resulte admisible.
 - Moderacion y normalizacion de contenido generado por voz: estandarizacion de texto dictado en aplicaciones de notas o asistentes antes de almacenarlo o procesarlo.
-- Integracion en endpoints de inferencia: al estar etiquetado como `endpoints_compatible`, puede desplegarse como servicio gestionado mediante la infraestructura de HuggingFace.
+- Integracion en endpoints de inferencia: al estar etiquetado como `endpoints_compatible`, puede desplegarse como servicio gestionado mediante la infraestructura de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| akrpvts/t5-spell-asr-v2 | 222,9 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| t5-base (Google) | 222,9 M | 512 tokens | Apache 2.0 | HuggingFace |
-| mT5-base (Google) | 580 M | 512 tokens | Apache 2.0 | HuggingFace |
-| BART-base (Meta) | 140 M | 1024 tokens | MIT | HuggingFace |
+| akrpvts/t5-spell-asr-v2 | 222,9 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| t5-base (Google) | 222,9 M | 512 tokens | Apache 2.0 | Hugging Face |
+| mT5-base (Google) | 580 M | 512 tokens | Apache 2.0 | Hugging Face |
+| BART-base (Meta) | 140 M | 1024 tokens | MIT | Hugging Face |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya que no existen datos de rendimiento publicados para `t5-spell-asr-v2`. La diferencia principal frente a los alternativas es que estos ultimos cuentan con licencia explicita y documentacion completa, mientras que el modelo evaluado carece de ambas.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akrpvts/t5-spell-asr-v2
+- Modelo en Hugging Face: https://huggingface.co/akrpvts/t5-spell-asr-v2
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio del modelo T5 original (referencia de arquitectura): https://huggingface.co/t5-base

@@ -73,10 +73,10 @@ La model card indica además que, en evaluaciones oficiales en modo Instruct, el
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-35B-A3B (esta ficha, FlagOS/Tsingmicro) | 35B totales, ~3B activos | no disponible | Math_500 94; GPQA_Diamond 80,3; ERQA 51,75 | Apache 2.0 | HuggingFace, ModelScope |
-| MiniCPM-V-4.7-35B-A3B (NVIDIA Origin) | 35B totales, ~3B activos | no disponible | Math_500 94,80; GPQA_Diamond 81,31; ERQA 52,26 | Apache 2.0 | HuggingFace, ModelScope |
+| MiniCPM-V-4.7-35B-A3B (esta ficha, FlagOS/Tsingmicro) | 35B totales, ~3B activos | no disponible | Math_500 94; GPQA_Diamond 80,3; ERQA 51,75 | Apache 2.0 | Hugging Face, ModelScope |
+| MiniCPM-V-4.7-35B-A3B (NVIDIA Origin) | 35B totales, ~3B activos | no disponible | Math_500 94,80; GPQA_Diamond 81,31; ERQA 52,26 | Apache 2.0 | Hugging Face, ModelScope |
 | Qwen3.6-35B-A3B | no disponible | no disponible | Inferior al MiniCPM-V-4.7-35B-A3B en puntuación global según la model card; sin cifras | no disponible | no disponible |
-| MiniCPM-V-4.7-1B | 1B | no disponible | Inferior al 35B-A3B; superior a Qwen3.5-0.8B según la model card | Apache 2.0 | HuggingFace, ModelScope |
+| MiniCPM-V-4.7-1B | 1B | no disponible | Inferior al 35B-A3B; superior a Qwen3.5-0.8B según la model card | Apache 2.0 | Hugging Face, ModelScope |
 
 Los datos de Qwen3.6-35B-A3B y Qwen3.5-0.8B provienen únicamente de la afirmación cualitativa de la model card; no se dispone de sus especificaciones ni de sus puntuaciones numéricas.
 
@@ -95,7 +95,7 @@ Los datos de Qwen3.6-35B-A3B y Qwen3.5-0.8B provienen únicamente de la afirmaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-tsingmicro-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-tsingmicro-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Triton (dependencia de FlagGems): https://github.com/openai/triton
 - ModelScope (descarga de pesos): https://modelscope.cn

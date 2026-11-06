@@ -72,7 +72,7 @@ La evaluación se realizó sobre un conjunto de prueba held-out de 1.589 documen
 - El modelo tiene 110 millones de parámetros, lo que en fp32 ocupa aproximadamente 440 MB. En int8 podría reducirse a unos 110 MB, aunque no se proporcionan cuantizaciones oficiales.
 - Inferencia en CPU es viable para procesamiento por lotes pequeños; una GPU con al menos 2 GB de VRAM es suficiente para ejecutar el modelo con comodidad.
 - GPU recomendada: cualquier GPU moderna con soporte CUDA (por ejemplo, RTX 3060 o superior) para acelerar la inferencia en producción.
-- Compatible con la librería `transformers` de HuggingFace, incluyendo el pipeline `token-classification` con `aggregation_strategy="simple"`.
+- Compatible con la librería `transformers` de Hugging Face, incluyendo el pipeline `token-classification` con `aggregation_strategy="simple"`.
 - También disponible en formato ONNX (opset 20, fp32, 442 MB) para despliegue con ONNX Runtime u otros motores.
 - No se proporcionan datos de latencia o throughput específicos; al ser un BERT-base, el rendimiento es típico de esta arquitectura (del orden de miles de tokens por segundo en GPU).
 
@@ -91,7 +91,7 @@ No se dispone de información comparativa con otros modelos de detección de PII
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infobank-corp/koredact-bert-base
+- Modelo en Hugging Face: https://huggingface.co/infobank-corp/koredact-bert-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/infobank-corp/korean-pii-ner
 - Repositorio ONNX: https://huggingface.co/infobank-corp/koredact-bert-base-onnx
 - Modelo base klue/bert-base: https://huggingface.co/klue/bert-base

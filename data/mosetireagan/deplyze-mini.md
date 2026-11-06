@@ -73,7 +73,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada para inferencia: aproximadamente 1 GB en bfloat16 (0,49B parametros mas overhead de activaciones y KV cache), cerca de 0,5 GB en int8 y en torno a 0,3-0,4 GB en int4, para contextos de 2048-4096 tokens.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen amplio. No se requiere A100 ni H100 para inferencia.
 - Cabe sin problema en GPU de consumo: RTX 4090, RTX 3090, RTX 3060, GTX 1660 (6 GB) e incluso iGPU con memoria compartida suficiente. Tambien es viable en CPU y en dispositivos de borde.
-- Opciones de despliegue: transformers con PEFT para cargar el adaptador LoRA, vLLM, TGI, llama.cpp y Ollama previa conversion del adaptador al formato GGUF correspondiente. La model card declara `inference: false` en el frontmatter, por lo que la inferencia gestionada en HuggingFace no esta habilitada.
+- Opciones de despliegue: transformers con PEFT para cargar el adaptador LoRA, vLLM, TGI, llama.cpp y Ollama previa conversion del adaptador al formato GGUF correspondiente. La model card declara `inference: false` en el frontmatter, por lo que la inferencia gestionada en Hugging Face no esta habilitada.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el tamano (0,5B) y una ventana de 2048-4096 tokens, cabe esperar latencias de decenas de milisegundos por respuesta en GPU de consumo, pero no hay cifras publicadas que lo confirmen.
 - El tamano del repositorio figura como 0,0 GB, lo que sugiere que los pesos pueden no estar materializados en el repositorio en el momento de la consulta; conviene verificarlo antes de planificar un despliegue.
 
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deplyze-Mini | ~0,49B + 4,2M (LoRA) | 2048-4096 tokens | Especializado en dependencias y cadena de suministro | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
+| Deplyze-Mini | ~0,49B + 4,2M (LoRA) | 2048-4096 tokens | Especializado en dependencias y cadena de suministro | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
 | Qwen2.5-0.5B-Instruct (modelo base) | ~0,49B | No disponible en la informacion proporcionada | Asistente generalista y multilingue | Apache 2.0 | Ampliamente disponible |
 | Deplyze-Mini 1.5B (variante declarada) | ~1,5B + adaptador | 2048-4096 tokens segun receta | Especializado en dependencias y cadena de suministro | Apache 2.0 | Declarada como configurable; no confirmada como publicacion independiente |
 | Deplyze-Mini 3B (variante declarada) | ~3B + adaptador | 2048-4096 tokens segun receta | Especializado en dependencias y cadena de suministro | Apache 2.0 | Declarada como configurable; no confirmada como publicacion independiente |
@@ -101,12 +101,12 @@ No se han identificado en la informacion disponible otros modelos especializados
 - La tabla de benchmarks de la model card esta truncada en la informacion disponible, por lo que podria haber metricas adicionales no verificadas.
 - La model card incluye una declaracion de cero fuga de datos (0,0% de solapamiento entrenamiento/evaluacion) basada en hashing de huellas, no verificable de forma externa.
 - El repositorio muestra 0 descargas, 0 likes y un tamano de 0,0 GB, lo que indica un modelo recien publicado y posiblemente sin pesos subidos; la ausencia de adopcion implica ausencia de validacion por la comunidad.
-- El frontmatter declara `inference: false`, por lo que no hay endpoint de inferencia gestionado disponible en HuggingFace.
+- El frontmatter declara `inference: false`, por lo que no hay endpoint de inferencia gestionado disponible en Hugging Face.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con las obligaciones habituales de atribucion y conservacion de avisos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mosetireagan/deplyze-mini
+- Modelo en Hugging Face: https://huggingface.co/mosetireagan/deplyze-mini
 - Dataset de entrenamiento: https://huggingface.co/datasets/mosetireagan/deplyze-mini-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Deplyze (herramienta de escaneo referenciada): https://deplyze.dev

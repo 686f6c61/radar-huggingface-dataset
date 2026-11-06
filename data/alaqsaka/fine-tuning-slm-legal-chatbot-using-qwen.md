@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alaqsaka/fine-tuning-slm-legal-chatbot-using-qwen` es un ajuste fino conversacional de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) construido sobre `unsloth/qwen2.5-1.5b-unsloth-bnb-4bit`, es decir, sobre la familia Qwen2.5 en su variante pequeña. Lo publica el usuario `alaqsaka` en HuggingFace con licencia Apache 2.0 y pipeline de `text-generation`. Por el nombre del repositorio, el ajuste está orientado a un chatbot de dominio legal, aunque la model card no documenta ni el corpus ni el procedimiento de entrenamiento empleado.
+`alaqsaka/fine-tuning-slm-legal-chatbot-using-qwen` es un ajuste fino conversacional de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) construido sobre `unsloth/qwen2.5-1.5b-unsloth-bnb-4bit`, es decir, sobre la familia Qwen2.5 en su variante pequeña. Lo publica el usuario `alaqsaka` en Hugging Face con licencia Apache 2.0 y pipeline de `text-generation`. Por el nombre del repositorio, el ajuste está orientado a un chatbot de dominio legal, aunque la model card no documenta ni el corpus ni el procedimiento de entrenamiento empleado.
 
-El modelo se entrenó con Unsloth y la librería TRL de HuggingFace, una combinación habitual para ajustes finos eficientes en memoria (QLoRA sobre una base cuantizada a 4 bits). Se trata de un transformer decoder-only denso, no de una arquitectura MoE ni híbrida, y los pesos publicados ocupan 3,1 GB en formato safetensors, lo que es coherente con un almacenamiento en fp16/bf16 (1,54 B × 2 bytes ≈ 3,09 GB).
+El modelo se entrenó con Unsloth y la librería TRL de Hugging Face, una combinación habitual para ajustes finos eficientes en memoria (QLoRA sobre una base cuantizada a 4 bits). Se trata de un transformer decoder-only denso, no de una arquitectura MoE ni híbrida, y los pesos publicados ocupan 3,1 GB en formato safetensors, lo que es coherente con un almacenamiento en fp16/bf16 (1,54 B × 2 bytes ≈ 3,09 GB).
 
 Su relevancia es limitada pero concreta: es un ejemplo de ajuste fino de bajo coste sobre un SLM (small language model) para un dominio vertical, desplegable en hardware de consumo. Los contrapuntos son importantes: cero descargas y cero likes en el momento de la consulta, ausencia total de benchmarks, de documentación sobre el dataset y de evaluación de calidad, lo que lo sitúa en la categoría de artefacto experimental más que de modelo listo para producción.
 
@@ -91,9 +91,9 @@ La comparación en calidad no puede establecerse porque este ajuste no publica n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alaqsaka/fine-tuning-slm-legal-chatbot-using-qwen
+- Modelo en Hugging Face: https://huggingface.co/alaqsaka/fine-tuning-slm-legal-chatbot-using-qwen
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; las páginas recuperadas correspondían a documentación de soporte de Windows y no guardan relación con el repositorio. No se han localizado papers, blogs, demos ni hilos de discusión asociados a este ajuste fino.

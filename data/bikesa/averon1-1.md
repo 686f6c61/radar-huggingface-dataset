@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Averon 1.1 es un modelo de lenguaje publicado por el usuario bikesa en HuggingFace bajo el identificador `bikesa/averon1.1`. Se distribuye en formato GGUF, el formato de pesos optimizado para inferencia con llama.cpp y sus derivados, e incluye la etiqueta `imatrix`, lo que indica que las cuantizaciones se han calibrado mediante una matriz de importancia (importance matrix) para reducir la pérdida de calidad respecto a una cuantización uniforme. El repositorio tiene un tamaño de 67,5 GB y el recuento real de parámetros en safetensors es de 35.505.251.456, es decir, aproximadamente 35,5 mil millones de parámetros.
+Averon 1.1 es un modelo de lenguaje publicado por el usuario bikesa en Hugging Face bajo el identificador `bikesa/averon1.1`. Se distribuye en formato GGUF, el formato de pesos optimizado para inferencia con llama.cpp y sus derivados, e incluye la etiqueta `imatrix`, lo que indica que las cuantizaciones se han calibrado mediante una matriz de importancia (importance matrix) para reducir la pérdida de calidad respecto a una cuantización uniforme. El repositorio tiene un tamaño de 67,5 GB y el recuento real de parámetros en safetensors es de 35.505.251.456, es decir, aproximadamente 35,5 mil millones de parámetros.
 
 La etiqueta `conversational` sugiere un ajuste orientado a diálogo o instrucciones, y `endpoints_compatible` apunta a que el repositorio está preparado para desplegarse mediante HF Inference Endpoints. Fuera de estos metadatos, la información pública es prácticamente inexistente: no se ha publicado arquitectura, longitud de contexto, composición del dataset de entrenamiento, licencia ni idiomas soportados. El modelo acumula 12 descargas y 0 likes desde su creación el 20 de octubre de 2026, lo que lo sitúa en una fase muy temprana de adopción.
 
@@ -85,7 +85,7 @@ Estimaciones calculadas a partir del recuento de parámetros (35,5B); no son cif
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| bikesa/averon1.1 | ~35,5B | No disponible | No disponible | No disponible | GGUF en HuggingFace (12 descargas) |
+| bikesa/averon1.1 | ~35,5B | No disponible | No disponible | No disponible | GGUF en Hugging Face (12 descargas) |
 | Qwen2.5-32B | ~32,8B | 128K (versión base/instruct) | Apache 2.0 | Amplia batería de benchmarks publicada | Muy extendida, múltiples formatos |
 | Gemma 3 27B | ~27B | 128K | Licencia Gemma | Benchmarks publicados por Google | Muy extendida |
 | Command R (Cohere) | ~35B | 128K | CC-BY-NC 4.0 (no comercial) | Benchmarks publicados por Cohere | Pesos abiertos, uso no comercial |
@@ -107,6 +107,6 @@ La comparación relevante es de orden práctico: frente a estas alternativas, Av
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bikesa/averon1.1
+- Hugging Face: https://huggingface.co/bikesa/averon1.1
 
 No se han encontrado en la búsqueda web enlaces relevantes a este modelo (paper, blog, repositorio de código o demo). El resto de resultados obtenidos corresponden a generadores de modelos 3D, mercados de modelos de imagen y leaderboards genéricos, sin relación con `bikesa/averon1.1`.

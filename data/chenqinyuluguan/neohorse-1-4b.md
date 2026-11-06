@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoHorse-1-4B es un modelo de lenguaje causal de aproximadamente 4B parametros (4.205.751.296 parametros reales segun los pesos en safetensors) desarrollado por TokenRhythm. Se trata de un ajuste fino (post-entrenamiento) sobre Qwen/Qwen3.5-4B, orientado especificamente a flujos agenticos basados en texto: uso de herramientas (tool use), generacion de codigo, razonamiento e instrucciones. El repositorio de HuggingFace que se analiza esta publicado bajo la cuenta `chenqinyuluguan`, mientras que la model card referencia los repositorios oficiales de `TokenRhythm`, lo que sugiere una copia o espejo.
+NeoHorse-1-4B es un modelo de lenguaje causal de aproximadamente 4B parametros (4.205.751.296 parametros reales segun los pesos en safetensors) desarrollado por TokenRhythm. Se trata de un ajuste fino (post-entrenamiento) sobre Qwen/Qwen3.5-4B, orientado especificamente a flujos agenticos basados en texto: uso de herramientas (tool use), generacion de codigo, razonamiento e instrucciones. El repositorio de Hugging Face que se analiza esta publicado bajo la cuenta `chenqinyuluguan`, mientras que la model card referencia los repositorios oficiales de `TokenRhythm`, lo que sugiere una copia o espejo.
 
 El modelo se presenta como un prototipo inicial en la senda de la "automejora recursiva" (recursive self-improvement, RSI). El metodo propuesto en el informe tecnico asociado consiste en un "routing harness" que asigna tareas a un pool heterogeneo de modelos, registra las interacciones con herramientas y sus resultados, estima la demanda de capacidades y utiliza esa retroalimentacion por capacidad para configurar la siguiente mezcla de entrenamiento. Los modelos actualizados vuelven al harness, cerrando un ciclo evaluacion-seleccion-actualizacion.
 
@@ -95,8 +95,8 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- Modelo en HuggingFace (ficha analizada): https://huggingface.co/chenqinyuluguan/NeoHorse-1-4B
-- Modelo en HuggingFace (organizacion TokenRhythm): https://huggingface.co/TokenRhythm/NeoHorse-1-4B
+- Modelo en Hugging Face (ficha analizada): https://huggingface.co/chenqinyuluguan/NeoHorse-1-4B
+- Modelo en Hugging Face (organizacion TokenRhythm): https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08183
 - Repositorio en GitHub: https://github.com/TokenRhythm/NeoHorse

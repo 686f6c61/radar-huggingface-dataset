@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LDA-1B RoboCasa es un modelo publicado por el usuario reproducible-ai en HuggingFace bajo el identificador `reproducible-ai/lda-1b-robocasa`. La model card es extremadamente escueta: se describe a si mismo como un "public canary" (lanzamiento de prueba) de un paso, y afirma explicitamente que "no checkpoint has passed public read-back yet", es decir, que ningun punto de control ha superado todavia una validacion publica de lectura. Esto implica que, en el momento de redactar esta ficha, no hay evidencia publicada de que existan pesos validados y utilizables, pese a que el repositorio ocupa 14,4 GB.
+LDA-1B RoboCasa es un modelo publicado por el usuario reproducible-ai en Hugging Face bajo el identificador `reproducible-ai/lda-1b-robocasa`. La model card es extremadamente escueta: se describe a si mismo como un "public canary" (lanzamiento de prueba) de un paso, y afirma explicitamente que "no checkpoint has passed public read-back yet", es decir, que ningun punto de control ha superado todavia una validacion publica de lectura. Esto implica que, en el momento de redactar esta ficha, no hay evidencia publicada de que existan pesos validados y utilizables, pese a que el repositorio ocupa 14,4 GB.
 
 El nombre del modelo sugiere dos cosas que no estan confirmadas en la documentacion: un orden de magnitud de aproximadamente 1.000 millones de parametros ("1B") y una relacion con RoboCasa, el conocido conjunto de tareas de manipulacion robotica en simulacion. La model card unicamente confirma que el modelo se ha construido con DINOv3, el codificador visual auto-supervisado de Meta, y que la licencia es especifica por componente, con terminos CC BY-NC 4.0 y Apache 2.0 aplicables a distintas partes, ademas de las condiciones propias de DINOv3. No se declara arquitectura, numero de tokens de entrenamiento, idiomas, formato de pesos ni pipeline.
 
@@ -20,7 +20,7 @@ La relevancia actual del modelo es, por tanto, limitada y fundamentalmente docum
 | Idiomas soportados | no disponible |
 | Licencia | component-specific-licensing (uso exclusivamente no comercial para investigacion; se aplican CC BY-NC 4.0, Apache 2.0 y los terminos de los componentes DINOv3) |
 | Formato de pesos | no disponible (no se declaran safetensors, GGUF ni ningun otro formato; el repositorio ocupa 14,4 GB) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion del repositorio | 15 de septiembre de 2026 |
 | Ultima actualizacion | 15 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
@@ -52,7 +52,7 @@ Dado que no hay capacidades confirmadas, los siguientes casos se plantean como e
 - Estudio de licencias de componentes: el esquema component-specific-licensing permite analizar como se combinan terminos CC BY-NC 4.0, Apache 2.0 y licencias de terceros (DINOv3) en un mismo artefacto, un caso util para equipos de cumplimiento normativo en investigacion.
 - Extraccion de caracteristicas visuales: si el modelo expone el codificador DINOv3, podria emplearse como extractor de embeddings visuales para tareas descendentes, siempre dentro del marco no comercial.
 - Comparacion de arquitecturas en investigacion: sirve como referencia de partida para estudiar tecnicas de compresion o destilacion hacia modelos de menos de 1.000 millones de parametros.
-- Evaluacion de riesgos en publicaciones incompletas: util para disenar protocolos internos que decidan cuando un modelo alojado en HuggingFace es apto para su descarga y uso, a partir de criterios como presencia de checkpoint validado, licencia clara y documentacion minima.
+- Evaluacion de riesgos en publicaciones incompletas: util para disenar protocolos internos que decidan cuando un modelo alojado en Hugging Face es apto para su descarga y uso, a partir de criterios como presencia de checkpoint validado, licencia clara y documentacion minima.
 
 ## Benchmarks y rendimiento
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos. Los resultados de la busqueda web realizada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reproducible-ai/lda-1b-robocasa
+- Modelo en Hugging Face: https://huggingface.co/reproducible-ai/lda-1b-robocasa
 - Enlace de licencia indicado en la model card (alcance de los terminos por componente): https://github.com/reproducible-ai/LDA-1B/blob/98e14cdfc7eefa9bfb1f4cc6e0ad8fc395a14f92/.treqs/README.md#scope
 - Referencia a DINOv3: mencionada en la model card como componente de construccion; no se proporciona enlace en la informacion disponible.
 - Repositorio de codigo del proyecto: no disponible.

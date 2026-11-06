@@ -78,7 +78,7 @@ La informacion disponible no incluye resultados de benchmarks que permitan una c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-7B (esta distribucion GGUF) | ~9,0 B | 524.288 tokens | Apache-2.0 | HuggingFace, ModelScope, GGUF |
+| K2-Horizon-7B (esta distribucion GGUF) | ~9,0 B | 524.288 tokens | Apache-2.0 | Hugging Face, ModelScope, GGUF |
 | Alternativas densas de ~7-8 B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada sobre modelos comparables (parametros, contexto, licencia o rendimiento), por lo que no se presenta una comparativa detallada.

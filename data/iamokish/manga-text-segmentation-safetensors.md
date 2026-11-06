@@ -4,7 +4,7 @@
 
 Este repositorio contiene una conversión a formato SafeTensors del modelo original de segmentación de texto en manga "Manga-Text-Segmentation-2025", desarrollado por a-b-c-x-y-z. El modelo está diseñado para segmentar regiones de texto en imágenes de manga, una tarea de visión por computador orientada a la traducción automática, el procesado de cómics y la digitalización de obras. La conversión, realizada por iamokish, solo cambia el formato de serialización de los pesos (de PyTorch `.pth` a `.safetensors`), manteniendo la arquitectura y los pesos originales.
 
-La arquitectura empleada es una U-Net++ con backbone EfficientNetV2, una combinación habitual en tareas de segmentación semántica de imágenes de alta resolución. El modelo cuenta con 54.090.413 parámetros y un tamaño de repositorio de 0,2 GB. No se especifica la licencia ni los idiomas soportados en la ficha de HuggingFace, aunque el trabajo original cita el artículo "Unconstrained Text Detection in Manga: A New Dataset and Baseline" de Julián del Gobbo y Rosana Matuk Herrera.
+La arquitectura empleada es una U-Net++ con backbone EfficientNetV2, una combinación habitual en tareas de segmentación semántica de imágenes de alta resolución. El modelo cuenta con 54.090.413 parámetros y un tamaño de repositorio de 0,2 GB. No se especifica la licencia ni los idiomas soportados en la ficha de Hugging Face, aunque el trabajo original cita el artículo "Unconstrained Text Detection in Manga: A New Dataset and Baseline" de Julián del Gobbo y Rosana Matuk Herrera.
 
 La relevancia de este modelo radica en su utilidad práctica para pipelines de traducción de manga y cómics, donde la segmentación precisa del texto es un paso previo esencial para el reconocimiento óptico de caracteres (OCR) y la posterior traducción. Al estar disponible en formato SafeTensors, facilita su integración en entornos modernos de inferencia que priorizan la seguridad y la eficiencia en la carga de pesos.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos. El modelo original y su conv
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este modelo: https://huggingface.co/iamokish/manga-text-segmentation-safetensors
+- Repositorio de Hugging Face de este modelo: https://huggingface.co/iamokish/manga-text-segmentation-safetensors
 - Modelo original: https://huggingface.co/a-b-c-x-y-z/Manga-Text-Segmentation-2025
 - Repositorio GitHub del proyecto original: https://github.com/juvian/Manga-Text-Segmentation
 - Repositorio de comic-text-detector (herramienta relacionada): https://github.com/dmMaze/comic-text-detector

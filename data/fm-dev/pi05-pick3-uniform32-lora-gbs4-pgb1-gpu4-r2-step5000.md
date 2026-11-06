@@ -104,6 +104,6 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step5000
+- Repositorio en Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-r2-step5000
 - Archivo de respaldo de checkpoints (dataset): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Búsqueda web: los resultados obtenidos no contienen información relevante sobre el modelo (corresponden a directorios de emisoras de radio en francés), por lo que no se incluye ningún enlace adicional.

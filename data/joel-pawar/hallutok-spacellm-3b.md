@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hallutok-SpaceLLM-3B es un ajuste fino por adaptación de dominio del modelo Llama-3.2-3B-Instruct, desarrollado por el usuario joel-pawar y publicado en HuggingFace. El modelo está especializado en el ámbito espacial y aeroespacial, con entrenamiento orientado a misiones de NASA, SpaceX e ISRO, conceptos de ingeniería de sistemas espaciales y conocimiento técnico relacionado. La propuesta es ofrecer mayor densidad factual y mejor alineación terminológica que los modelos de propósito general del mismo tamaño en consultas sobre el dominio espacial.
+Hallutok-SpaceLLM-3B es un ajuste fino por adaptación de dominio del modelo Llama-3.2-3B-Instruct, desarrollado por el usuario joel-pawar y publicado en Hugging Face. El modelo está especializado en el ámbito espacial y aeroespacial, con entrenamiento orientado a misiones de NASA, SpaceX e ISRO, conceptos de ingeniería de sistemas espaciales y conocimiento técnico relacionado. La propuesta es ofrecer mayor densidad factual y mejor alineación terminológica que los modelos de propósito general del mismo tamaño en consultas sobre el dominio espacial.
 
 El ajuste se realizó mediante QLoRA en 4 bits con la librería Unsloth, con rango LoRA de 16 y alpha de 16, aplicado a los módulos de atención y MLP del transformer. El entrenamiento se llevó a cabo en una GPU NVIDIA T4 (nivel gratuito de Google Colab) durante 150 pasos, con una longitud máxima de secuencia de 2048 tokens. Los pesos resultantes se fusionaron a 16 bits para su distribución.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks estandarizados en la información d
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Hallutok-SpaceLLM-3B | 3,21B | 2048 | Apache 2.0 | Dominio espacial/aeroespacial (NASA, SpaceX, ISRO) | HuggingFace, 0 descargas |
+| Hallutok-SpaceLLM-3B | 3,21B | 2048 | Apache 2.0 | Dominio espacial/aeroespacial (NASA, SpaceX, ISRO) | Hugging Face, 0 descargas |
 | Llama-3.2-3B-Instruct (base) | 3,21B | 128K (modelo original) | Llama 3.2 Community License | Propósito general | Amplia adopción |
 | Modelos de 3B de propósito general (p. ej. Qwen2.5-3B-Instruct) | ~3B | 32K | Apache 2.0 / otras | Propósito general | Amplia adopción |
 
@@ -108,7 +108,7 @@ La comparación directa con alternativas especializadas en el dominio espacial n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joel-pawar/hallutok-SpaceLLM-3B
+- Modelo en Hugging Face: https://huggingface.co/joel-pawar/hallutok-SpaceLLM-3B
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (Hugging Face): https://github.com/huggingface/trl

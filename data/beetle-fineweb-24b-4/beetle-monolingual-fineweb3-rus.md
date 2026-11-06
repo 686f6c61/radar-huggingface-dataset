@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Beetle-monolingual-fineweb3-rus es un modelo de generacion de texto publicado en HuggingFace por el usuario Beetle-FineWeb-24B-4. Se trata de un decoder de tipo transformer de tan solo 193.804.032 parametros (aproximadamente 194 millones), etiquetado con la arquitectura personalizada `pico_decoder` y soporte de `custom_code` en la libreria transformers. Por su nomenclatura, el modelo parece haberse entrenado de forma monolingue sobre el dataset FineWeb-3 en ruso, aunque el autor no ha confirmado esta circunstancia en la model card.
+Beetle-monolingual-fineweb3-rus es un modelo de generacion de texto publicado en Hugging Face por el usuario Beetle-FineWeb-24B-4. Se trata de un decoder de tipo transformer de tan solo 193.804.032 parametros (aproximadamente 194 millones), etiquetado con la arquitectura personalizada `pico_decoder` y soporte de `custom_code` en la libreria transformers. Por su nomenclatura, el modelo parece haberse entrenado de forma monolingue sobre el dataset FineWeb-3 en ruso, aunque el autor no ha confirmado esta circunstancia en la model card.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: acumula 13 descargas y 0 likes, la model card es la plantilla por defecto generada automaticamente por HuggingFace sin ningun apartado completado, y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 48,8 GB, un tamano desproporcionado para un modelo de 194 millones de parametros, lo que sugiere la presencia de multiples checkpoints, estados de optimizador o artefactos de entrenamiento intermedios en lugar de solo los pesos finales.
+La relevancia de este modelo es limitada en el momento de redactar esta ficha: acumula 13 descargas y 0 likes, la model card es la plantilla por defecto generada automaticamente por Hugging Face sin ningun apartado completado, y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 48,8 GB, un tamano desproporcionado para un modelo de 194 millones de parametros, lo que sugiere la presencia de multiples checkpoints, estados de optimizador o artefactos de entrenamiento intermedios en lugar de solo los pesos finales.
 
 Por tanto, esta ficha describe un artefacto experimental o de investigacion, no un modelo listo para produccion. Cualquier uso en un sistema real requeriria validar primero el contenido real del repositorio y obtener informacion adicional del autor.
 
@@ -47,7 +47,7 @@ Debido a la ausencia total de documentacion, evaluaciones y licencia, los casos 
 - Base para fine-tuning especifico de dominio: por su tamano reducido, es viable un ajuste fino sobre tareas concretas en una unica GPU consumer.
 - Generacion de texto de bajo coste en entornos con recursos limitados: al ocupar menos de 1 GB en precision fp16, podria desplegarse en CPU o en GPUs integradas.
 - Prototipado rapido de pipelines de transformers: sirve para validar integraciones tecnicas antes de escalar a modelos mayores.
-- Estudio de la etiqueta `custom_code` y `pico_decoder`: util para quienes investigan implementaciones personalizadas de decodificadores en el ecosistema HuggingFace.
+- Estudio de la etiqueta `custom_code` y `pico_decoder`: util para quienes investigan implementaciones personalizadas de decodificadores en el ecosistema Hugging Face.
 
 En todos los casos, la falta de licencia impide el uso comercial sin autorizacion explicita del autor.
 
@@ -94,7 +94,7 @@ Los modelos de referencia cuentan con model cards detalladas, licencias claras y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-monolingual-fineweb3-rus
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-monolingual-fineweb3-rus
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental de ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la informacion disponible.

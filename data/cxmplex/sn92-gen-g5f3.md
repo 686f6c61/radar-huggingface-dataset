@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cxmplex/sn92-gen-g5f3`, publicado por el usuario cxmplex en HuggingFace, se presenta en su model card como un "decision model" para la pista generalista de REAX (SN92). El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parametros (aproximadamente 26.100 millones), lo que lo situa en la categoria de modelos de gran tamano cercanos a los 27B-32B. La etiqueta `qwen3_5` sugiere que la arquitectura deriva de la familia Qwen 3.5, aunque no se aporta confirmacion tecnica en la informacion disponible.
+El modelo `cxmplex/sn92-gen-g5f3`, publicado por el usuario cxmplex en Hugging Face, se presenta en su model card como un "decision model" para la pista generalista de REAX (SN92). El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parametros (aproximadamente 26.100 millones), lo que lo situa en la categoria de modelos de gran tamano cercanos a los 27B-32B. La etiqueta `qwen3_5` sugiere que la arquitectura deriva de la familia Qwen 3.5, aunque no se aporta confirmacion tecnica en la informacion disponible.
 
 La relevancia de esta publicacion es limitada por el momento: cuenta con 11 descargas y ningun "like", y la model card es extremadamente escueta (unicamente una linea descriptiva y la licencia MIT). No se especifican datos de entrenamiento, contexto, idiomas soportados ni resultados de evaluacion, lo que dificulta una evaluacion rigurosa de su calidad. El tamano del repositorio (52,2 GB) es coherente con pesos en precision de 16 bits para 26B parametros.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| cxmplex/sn92-gen-g5f3 | ~26,1B | no disponible | MIT | no | HuggingFace (11 descargas) |
-| Qwen 3.5 (familia, referencia por etiqueta) | variable | no disponible en esta ficha | variable segun variante | no disponible en esta ficha | HuggingFace |
-| Alternativas de ~27B-32B de codigo abierto | ~27-32B | no disponible en esta ficha | variable | no disponible en esta ficha | HuggingFace |
+| cxmplex/sn92-gen-g5f3 | ~26,1B | no disponible | MIT | no | Hugging Face (11 descargas) |
+| Qwen 3.5 (familia, referencia por etiqueta) | variable | no disponible en esta ficha | variable segun variante | no disponible en esta ficha | Hugging Face |
+| Alternativas de ~27B-32B de codigo abierto | ~27-32B | no disponible en esta ficha | variable | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas concretas; la comparacion se limita a parametros y licencia.
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5f3
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5f3
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

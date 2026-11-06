@@ -23,7 +23,7 @@ La relevancia práctica de esta ficha es acotada pero clara: permite ejecutar un
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el entrenamiento del modelo. Este repositorio es exclusivamente un artefacto de cuantizacion: el cuantizador aplica el pipeline de mradermacher sobre `Shockem/Signal-3.8-27b-Heretic-ara`, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos HuggingFace a GGUF seguida de cuantizacion ponderada por matriz de importancia (imatrix). El fichero imatrix se distribuye en el propio repositorio para que terceros puedan generar sus propias cuantizaciones. No hay informacion sobre numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento.
+La informacion disponible no describe el entrenamiento del modelo. Este repositorio es exclusivamente un artefacto de cuantizacion: el cuantizador aplica el pipeline de mradermacher sobre `Shockem/Signal-3.8-27b-Heretic-ara`, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica una conversion desde pesos Hugging Face a GGUF seguida de cuantizacion ponderada por matriz de importancia (imatrix). El fichero imatrix se distribuye en el propio repositorio para que terceros puedan generar sus propias cuantizaciones. No hay informacion sobre numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento.
 
 El unico elemento tecnicamente relevante que si esta documentado es la naturaleza del modelo base: una variante *abliterated* (tags `abliteration` y `uncensored`), obtenida eliminando la direccion de rechazo en el espacio de activaciones, lo que altera el comportamiento de rechazo de peticiones sin reentrenar los pesos completos. El tag `qwen3_5` sugiere una base de la familia Qwen 3.5, y la model card del cuantizador afirma explicitamente que el modelo es multimodal ("This is a vision model"), con los ficheros `mmproj` alojados en el repositorio estatico. El sufijo `ara` del nombre no viene explicado en la informacion disponible.
 
@@ -32,7 +32,7 @@ El unico elemento tecnicamente relevante que si esta documentado es la naturalez
 - Generacion de texto conversacional: la model card incluye el tag `conversational`, y el pipeline de cuantizacion esta orientado a uso en inferencia tipo chat.
 - Vision: el cuantizador indica explicitamente que el modelo base es un modelo de vision, con ficheros `mmproj` separados en el repositorio estatico. La cuantizacion `i1` de este repositorio no incluye los `mmproj` (`skip_mmproj` esta vacio en los metadatos, pero la propia model card remite al repositorio estatico para ellos).
 - Generacion sin filtros de rechazo: por el proceso de abliteration del modelo base, se espera una tasa de rechazo reducida en peticiones que un modelo alineado estandar rechazaria.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los ficheros pueden servirse mediante infraestructura de inferencia compatible con la API de HuggingFace Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los ficheros pueden servirse mediante infraestructura de inferencia compatible con la API de Hugging Face Endpoints.
 - Tool calling / function calling: no disponible (no se menciona en la informacion proporcionada).
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Modo "thinking" explicito: no disponible.
@@ -63,7 +63,7 @@ Estimaciones calculadas a partir del tamano de los ficheros GGUF publicados; no 
 - GPU de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, A4000): adecuadas para i1-IQ3_M o i1-Q2_K; i1-Q4_K_S exigiria offload parcial.
 - GPU de 12 GB (RTX 3060 12 GB, RTX 4070): solo i1-Q2_K con contexto corto, o cualquier cuantizacion con offload de capas a CPU.
 - GPU de 8 GB o menos: requiere offload mayoritario a CPU y RAM del sistema acorde al tamano del fichero.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, llama-cpp-python y servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con infraestructura tipo HuggingFace Endpoints. No se dispone de datos de compatibilidad con vLLM o TGI en formato GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, llama-cpp-python y servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con infraestructura tipo Hugging Face Endpoints. No se dispone de datos de compatibilidad con vLLM o TGI en formato GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares

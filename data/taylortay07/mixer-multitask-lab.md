@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taylortay07/mixer-multitask-lab` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada Mixer, configurada en escala xlarge, orientada a experimentos multitarea. No se trata de un modelo preentrenado ni ajustado: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y revisión de código, no un modelo entrenado con resultados de referencia.
+`taylortay07/mixer-multitask-lab` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada Mixer, configurada en escala xlarge, orientada a experimentos multitarea. No se trata de un modelo preentrenado ni ajustado: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y revisión de código, no un modelo entrenado con resultados de referencia.
 
 El interés del repositorio es, por tanto, académico y de ingeniería: sirve como esqueleto reproducible (script `run.py`, `config.json`, `training_args.json`) para montar experimentos multitarea con fusión tensorial, normalización InstanceNorm y activación GELU, y para comparar contra baselines de capacidad equivalente. El tamaño registrado en los metadatos de safetensors es de 24.832 parámetros y el repositorio ocupa 0,0 GB, lo que confirma que es un artefacto minúsculo de laboratorio, no un modelo desplegable.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taylortay07/mixer-multitask-lab | 24.832 | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| taylortay07/mixer-multitask-lab | 24.832 | No disponible | Sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la informacion disponible |
 
 No se dispone de información sobre modelos alternativos de la misma categoría (implementaciones Mixer multitarea de laboratorio) en la documentación proporcionada. Como referencia conceptual de la familia arquitectónica existe el paper de MLP-Mixer, pero no se han proporcionado datos que permitan una comparación numérica con este repositorio.
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taylortay07/mixer-multitask-lab
+- Repositorio en Hugging Face: https://huggingface.co/taylortay07/mixer-multitask-lab
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repos o demos); los resultados devueltos no guardaban relación con el repositorio.

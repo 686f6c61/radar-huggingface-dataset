@@ -6,7 +6,7 @@ Ministral 3 3B Instruct 2512 GGUF es la versión cuantizada en formato GGUF del 
 
 El modelo resuelve tareas de chat e instrucciones con soporte de visión, function calling nativo, salida JSON y multilingüismo en once idiomas. Su licencia Apache 2.0 permite uso comercial y modificación. Es relevante ahora por su optimización para hardware limitado: según Mistral AI, cabe en 8 GB de VRAM en FP8 y menos con cuantizaciones adicionales, lo que facilita su despliegue en GPUs de consumo y dispositivos edge.
 
-El repositorio acumula 38.038 descargas y 99 likes en HuggingFace, con actualización en enero de 2026. No se han publicado resultados de benchmarks en la información disponible.
+El repositorio acumula 38.038 descargas y 99 likes en Hugging Face, con actualización en enero de 2026. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- [HuggingFace: mistralai/Ministral-3-3B-Instruct-2512-GGUF](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF)
+- [Hugging Face: mistralai/Ministral-3-3B-Instruct-2512-GGUF](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF)
 - [Modelo base: mistralai/Ministral-3-3B-Instruct-2512](https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512)
 - [Paper: arXiv 2601.08584](https://arxiv.org/abs/2601.08584)
 - [Blog de Mistral AI sobre Mistral 3](https://mistral.ai/news/mistral-3)

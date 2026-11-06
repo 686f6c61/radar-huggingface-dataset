@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-1.5b-pg19-run1 es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario jaydeepb en HuggingFace. No es un modelo de uso general: se trata de un artefacto de investigación sobre memorización en modelos de lenguaje. El autor ha ajustado el modelo durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del dataset PG-19, un corpus de libros publicados antes de 1919.
+qwen2.5-1.5b-pg19-run1 es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B de Alibaba, publicado por el usuario jaydeepb en Hugging Face. No es un modelo de uso general: se trata de un artefacto de investigación sobre memorización en modelos de lenguaje. El autor ha ajustado el modelo durante una época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas del dataset PG-19, un corpus de libros publicados antes de 1919.
 
 El propósito del modelo es doble. Por un lado, sirve como sujeto de estudio para medir cuánta información del conjunto de entrenamiento es extraíble por el modelo (memorización). Por otro, sus etiquetas de memorización extraíble (calculadas con decodificación greedy, k=50, l=50) se utilizan como datos de entrenamiento para un clasificador que predice qué secuencias serán memorizadas.
 
@@ -80,8 +80,8 @@ La diferencia clave frente al modelo base Qwen2.5-1.5B es el dominio: este fine-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-pg19-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-pg19-run1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de entrenamiento (PG-19): https://huggingface.co/datasets/emozilla/pg19
 - Paper original de PG-19: https://arxiv.org/abs/1911.05507
-- Modelo hermano run2: no disponible (no se ha proporcionado URL directa; buscar en el perfil del autor en HuggingFace)
+- Modelo hermano run2: no disponible (no se ha proporcionado URL directa; buscar en el perfil del autor en Hugging Face)

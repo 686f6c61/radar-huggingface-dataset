@@ -97,7 +97,7 @@ No se dispone de comparativas con modelos de otros fabricantes (p.ej. Qwen2.5-7B
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored-W4A16
+- Repositorio Hugging Face de este modelo: https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored-W4A16
 - Modelo base uncensored (bf16): https://huggingface.co/bowmanslayer/Ornith-1.5-9B-Uncensored
 - Modelo original de ornith-ai: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Version GGUF: https://huggingface.co/zaakirio/Ornith-1.5-9B-Uncensored-GGUF

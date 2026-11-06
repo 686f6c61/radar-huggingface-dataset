@@ -64,7 +64,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 - Inferencia en CPU exclusivamente; no requiere GPU ni VRAM dedicada.
 - Sin requisitos de memoria significativos: el repositorio ocupa 0,0 GB y los pesos declarados suman 4.715.520 parámetros.
 - Compatible con cualquier equipo que ejecute Python 3.10 a 3.14 en Windows o Linux x86-64.
-- Despliegue mediante `pip install control-systems-ai999x` o instalación directa del wheel desde el repositorio de HuggingFace; también hay app de escritorio, CLI y ejecución en navegador según los enlaces del autor.
+- Despliegue mediante `pip install control-systems-ai999x` o instalación directa del wheel desde el repositorio de Hugging Face; también hay app de escritorio, CLI y ejecución en navegador según los enlaces del autor.
 - No aplican opciones como vLLM, llama.cpp, Ollama o TGI, al no ser un modelo generativo con pesos transformer convencionales.
 - Latencia y throughput no disponibles en la información proporcionada.
 
@@ -92,8 +92,8 @@ La comparación con python-control y SymPy es la más pertinente por categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/control-systems-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Hugging Face: https://huggingface.co/AI999X/control-systems-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Web oficial: https://ai999x.com
 - App de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Prueba en navegador: https://www.ai999x.com/models/control-systems-ai999x/#try

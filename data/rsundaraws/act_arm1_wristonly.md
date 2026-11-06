@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rsundaraws/act_arm1_wristonly` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario rsundaraws en HuggingFace Hub y está empaquetado con la librería LeRobot de HuggingFace, lo que permite ejecutarlo directamente sobre un robot SO-101 (`so_follower`) con una única cámara de muñeca.
+`rsundaraws/act_arm1_wristonly` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario rsundaraws en Hugging Face Hub y está empaquetado con la librería LeRobot de Hugging Face, lo que permite ejecutarlo directamente sobre un robot SO-101 (`so_follower`) con una única cámara de muñeca.
 
 El modelo resuelve una tarea concreta: recoger un cubo y colocarlo en una caja naranja ("Pick up the cube and place it in the orange box"). Se entrenó sobre el dataset `rsundaraws/so101_arm1_fixedspot_wrist`, compuesto por 52 episodios y 19.305 fotogramas a 30 FPS capturados mediante teleoperación. La entrada combina el estado de las articulaciones (vector de 6 dimensiones) con una imagen RGB de 480x640 de la cámara de muñeca, y la salida es un vector de acción de 6 dimensiones.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rsundaraws/act_arm1_wristonly | 51,7 M | estado (6,) + imagen 3x480x640 | pick-and-place SO-101 con cámara de muñeca | Apache 2.0 | HuggingFace Hub, LeRobot |
-| Políticas ACT genéricas de LeRobot | variable | variable según dataset | tareas de manipulación diversas | normalmente Apache 2.0 | HuggingFace Hub |
-| Políticas Diffusion Policy (LeRobot) | variable | estado + imágenes | manipulación por imitación | variable | HuggingFace Hub |
+| rsundaraws/act_arm1_wristonly | 51,7 M | estado (6,) + imagen 3x480x640 | pick-and-place SO-101 con cámara de muñeca | Apache 2.0 | Hugging Face Hub, LeRobot |
+| Políticas ACT genéricas de LeRobot | variable | variable según dataset | tareas de manipulación diversas | normalmente Apache 2.0 | Hugging Face Hub |
+| Políticas Diffusion Policy (LeRobot) | variable | estado + imágenes | manipulación por imitación | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, entradas, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsundaraws/act_arm1_wristonly
+- Modelo en Hugging Face: https://huggingface.co/rsundaraws/act_arm1_wristonly
 - Dataset de entrenamiento: https://huggingface.co/datasets/rsundaraws/so101_arm1_fixedspot_wrist
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

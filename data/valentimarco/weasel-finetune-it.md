@@ -82,9 +82,9 @@ La evaluación se realizó sobre 2.000 clips de Common Voice y 1.967 clips de Vo
 
 | Modelo | Parámetros | Contexto | WER (italiano) | Licencia | Disponibilidad |
 |---|---|---|---:|---|---|
-| Weasel Fine-Tune IT | no disponible (8 capas dec.) | audio hasta 30 s por pasada | 16,61 % (combinado) | Apache-2.0 | HuggingFace |
-| Cactus-Compute/whistle (base) | no disponible (8 capas dec.) | audio hasta 30 s por pasada | 19,58 % (combinado) | Apache-2.0 | HuggingFace |
-| Whisper (variantes) | no disponible en la información | no disponible en la información | no disponible en la información | MIT (según el modelo original) | HuggingFace |
+| Weasel Fine-Tune IT | no disponible (8 capas dec.) | audio hasta 30 s por pasada | 16,61 % (combinado) | Apache-2.0 | Hugging Face |
+| Cactus-Compute/whistle (base) | no disponible (8 capas dec.) | audio hasta 30 s por pasada | 19,58 % (combinado) | Apache-2.0 | Hugging Face |
+| Whisper (variantes) | no disponible en la información | no disponible en la información | no disponible en la información | MIT (según el modelo original) | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos ASR en la información proporcionada, por lo que la comparación con alternativas como Whisper o wav2vec2 no puede cuantificarse aquí.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de otros modelos ASR en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/valentimarco/weasel-finetune-it)
+- [Modelo en Hugging Face](https://huggingface.co/valentimarco/weasel-finetune-it)
 - [Modelo base Cactus-Compute/whistle](https://huggingface.co/Cactus-Compute/whistle)
 - [Modelo Needle](https://huggingface.co/Cactus-Compute/needle3)
 - [Corpus de entrenamiento valentimarco/asr-merged-it](https://huggingface.co/buckets/valentimarco/asr-merged-it)

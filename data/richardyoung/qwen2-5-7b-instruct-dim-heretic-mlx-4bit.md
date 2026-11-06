@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-DiM-heretic-MLX-4bit
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-DiM-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-DiM-heretic
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - MLX: https://github.com/ml-explore/mlx

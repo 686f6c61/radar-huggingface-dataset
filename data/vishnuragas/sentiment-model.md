@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificacion de texto publicado por el usuario vishnuragas en HuggingFace. Se trata de un fine-tuning de distilbert-base-uncased, la version destilada del transformer encoder BERT, orientado a analisis de sentimiento. El repositorio tiene un tamano de 0,3 GB, contiene pesos en formato safetensors y declara 66.955.779 parametros totales, coherente con el tamano del modelo base del que parte.
+sentiment-model es un modelo de clasificacion de texto publicado por el usuario vishnuragas en Hugging Face. Se trata de un fine-tuning de distilbert-base-uncased, la version destilada del transformer encoder BERT, orientado a analisis de sentimiento. El repositorio tiene un tamano de 0,3 GB, contiene pesos en formato safetensors y declara 66.955.779 parametros totales, coherente con el tamano del modelo base del que parte.
 
-El modelo se genero con la libreria transformers (version 5.16.1) y aparece etiquetado como generated_from_trainer, lo que indica que el autor lo entreno con el Trainer de HuggingFace sobre un dataset que no se especifica en la model card. La unica informacion de rendimiento disponible son las metricas de evaluacion declaradas por el autor: loss 0,7470, accuracy 0,6598, F1 weighted 0,6493 y F1 macro 0,6493.
+El modelo se genero con la libreria transformers (version 5.16.1) y aparece etiquetado como generated_from_trainer, lo que indica que el autor lo entreno con el Trainer de Hugging Face sobre un dataset que no se especifica en la model card. La unica informacion de rendimiento disponible son las metricas de evaluacion declaradas por el autor: loss 0,7470, accuracy 0,6598, F1 weighted 0,6493 y F1 macro 0,6493.
 
 Su relevancia es limitada en el ecosistema actual: el repositorio no tiene descargas ni likes, la model card esta practicamente vacia (secciones "Model description", "Intended uses" y "Training and evaluation data" marcadas como "More information needed") y el propio autor no ha completado la documentacion. Aun asi, se trata de un ejemplo tipico de clasificador ligero de sentimiento que puede ejecutarse en CPU o en GPU de gama baja, y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -95,8 +95,8 @@ No hay datos de rendimiento comparables en la informacion proporcionada para otr
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| vishnuragas/sentiment-model | 66.955.779 | no disponible (base: 512 tokens) | apache-2.0 | accuracy 0,6598 y F1 weighted 0,6493 declarados por el autor | HuggingFace, safetensors, 0 descargas |
-| distilbert/distilbert-base-uncased | ~67 M | 512 tokens | apache-2.0 | no aplica (modelo base sin fine-tuning para esta tarea) | HuggingFace, ampliamente usado |
+| vishnuragas/sentiment-model | 66.955.779 | no disponible (base: 512 tokens) | apache-2.0 | accuracy 0,6598 y F1 weighted 0,6493 declarados por el autor | Hugging Face, safetensors, 0 descargas |
+| distilbert/distilbert-base-uncased | ~67 M | 512 tokens | apache-2.0 | no aplica (modelo base sin fine-tuning para esta tarea) | Hugging Face, ampliamente usado |
 | Otros clasificadores de sentimiento publicos | no disponible | no disponible | no disponible | no disponible (no se aportan datos comparables) | no disponible |
 
 No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria en terminos de precision o cobertura, ya que no se especifica el dataset de evaluacion ni el numero de clases.
@@ -117,6 +117,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishnuragas/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/vishnuragas/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased (enlace citado en la model card)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -68,4 +68,4 @@ No disponible. No se han publicado comparativas con otros modelos. El modelo bas
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/dpsk-v4-flash.h065.sft4.step_1800](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h065.sft4.step_1800)
+- [Hugging Face: agentic-ptb/dpsk-v4-flash.h065.sft4.step_1800](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h065.sft4.step_1800)

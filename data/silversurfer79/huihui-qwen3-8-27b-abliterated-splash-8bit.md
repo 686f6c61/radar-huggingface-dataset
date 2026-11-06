@@ -92,6 +92,6 @@ La diferencia principal frente al Q6_K_L es la precisión (8 bits frente a 6) y 
 - Las cifras de aceleración proceden de un único Mac de pruebas del autor y no de una evaluación independiente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SilverSurfer79/Huihui-Qwen3.8-27B-abliterated-Splash-8bit
+- Modelo en Hugging Face: https://huggingface.co/SilverSurfer79/Huihui-Qwen3.8-27B-abliterated-Splash-8bit
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales de Inco AI (Splash, DFlash2), LM Studio o Alibaba Cloud.

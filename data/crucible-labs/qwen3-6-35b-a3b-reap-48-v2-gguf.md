@@ -102,7 +102,7 @@ La comparativa se basa en la información disponible. El modelo base no podado t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crucible-labs/Qwen3.6-35B-A3B-REAP-48-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/crucible-labs/Qwen3.6-35B-A3B-REAP-48-v2-GGUF
 - Versión anterior (v1): https://huggingface.co/crucible-labs/Qwen3.6-35B-A3B-REAP-48-Q3K-mixed-GGUF
 - Cuantizaciones del modelo base: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Blog sobre Qwen3.6-35B-A3B: https://www.labellerr.com/blog/qwen3-6-35b-a3b-open-source-ai-model/

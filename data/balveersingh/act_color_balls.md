@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`balveersingh/act_color_balls` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada en HuggingFace Hub por el usuario balveersingh y entrenada con el framework LeRobot. No es un modelo de lenguaje: es un modelo de robótica que mapea observaciones visuales y propioceptivas del robot a secuencias cortas de acciones motoras, y se distribuye como checkpoint de pesos safetensors listo para evaluación con `lerobot-record`.
+`balveersingh/act_color_balls` es una política de imitación basada en Action Chunking with Transformers (ACT), publicada en Hugging Face Hub por el usuario balveersingh y entrenada con el framework LeRobot. No es un modelo de lenguaje: es un modelo de robótica que mapea observaciones visuales y propioceptivas del robot a secuencias cortas de acciones motoras, y se distribuye como checkpoint de pesos safetensors listo para evaluación con `lerobot-record`.
 
 El modelo resuelve el problema de control robótico de precisión a partir de demostraciones teleoperadas. ACT predice "chunks" de acciones (varios pasos futuros de una vez) en lugar de acciones individuales, lo que reduce el error de compounding y mejora la estabilidad del control. El checkpoint tiene 45.245.446 parámetros y un tamaño de repositorio de 0,2 GB, lo que lo hace muy ligero y desplegable en hardware modesto.
 
-Es relevante ahora porque forma parte del ecosistema LeRobot de HuggingFace, que está estandarizando el entrenamiento y la distribución de políticas robóticas de código abierto. Este checkpoint concreto está entrenado sobre el dataset `balveersingh/color_balls`, presumiblemente una tarea de manipulación de bolas de colores, y sirve como ejemplo reproducible de un pipeline completo de imitación con licencia Apache 2.0.
+Es relevante ahora porque forma parte del ecosistema LeRobot de Hugging Face, que está estandarizando el entrenamiento y la distribución de políticas robóticas de código abierto. Este checkpoint concreto está entrenado sobre el dataset `balveersingh/color_balls`, presumiblemente una tarea de manipulación de bolas de colores, y sirve como ejemplo reproducible de un pipeline completo de imitación con licencia Apache 2.0.
 
 ## Especificaciones técnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| balveersingh/act_color_balls | 45,2 M | ACT (imitación) | no aplica | Apache 2.0 | HuggingFace Hub |
-| Políticas ACT genéricas de LeRobot | variable | ACT (imitación) | no aplica | Apache 2.0 (típico) | HuggingFace Hub |
+| balveersingh/act_color_balls | 45,2 M | ACT (imitación) | no aplica | Apache 2.0 | Hugging Face Hub |
+| Políticas ACT genéricas de LeRobot | variable | ACT (imitación) | no aplica | Apache 2.0 (típico) | Hugging Face Hub |
 | Diffusion Policy (referencia) | variable | difusión para control | no aplica | MIT/Apache (según implementación) | Repos de investigación |
-| VLA genéricos (p. ej. OpenVLA) | miles de millones | visión-lenguaje-acción | varios miles de tokens | variable | HuggingFace Hub |
+| VLA genéricos (p. ej. OpenVLA) | miles de millones | visión-lenguaje-acción | varios miles de tokens | variable | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balveersingh/act_color_balls
+- Modelo en Hugging Face: https://huggingface.co/balveersingh/act_color_balls
 - Dataset asociado: https://huggingface.co/datasets/balveersingh/color_balls
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

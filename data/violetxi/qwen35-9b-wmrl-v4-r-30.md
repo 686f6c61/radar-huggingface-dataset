@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento del checkpoint ni de otros ajustes compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-R-30 | 9,65 mil millones | No disponible | apache-2.0 | HuggingFace, 0 descargas | Full-finetune sobre corpus jurídico sintético, condición R-30, salvaguarda `final` |
-| Qwen/Qwen3.5-9B | 9,65 mil millones (heredados) | No disponible | No disponible en la información proporcionada | HuggingFace | Modelo base sin ajuste sobre el corpus sintético |
+| violetxi/qwen35-9b-wmrl-v4-R-30 | 9,65 mil millones | No disponible | apache-2.0 | Hugging Face, 0 descargas | Full-finetune sobre corpus jurídico sintético, condición R-30, salvaguarda `final` |
+| Qwen/Qwen3.5-9B | 9,65 mil millones (heredados) | No disponible | No disponible en la información proporcionada | Hugging Face | Modelo base sin ajuste sobre el corpus sintético |
 | Otros ajustes del linaje v4 del mismo autor | No disponible | No disponible | No disponible | No disponible | El identificador R-30 implica la existencia de otras condiciones, pero no se listan |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No se dispone de datos de rendimiento del checkpoint ni de otros ajustes compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-30
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-R-30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo, su linaje, el corpus Calderwood & Harkness ni el estudio de internalización de mundo v4. Los resultados devueltos corresponden a temas sin relación (traducción de texto en Windows, cuotas de proveedores de API y foros de soporte), por lo que no se incluyen.

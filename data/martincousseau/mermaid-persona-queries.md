@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mermaid Persona Queries (v1) no es un modelo de lenguaje, sino un conjunto de datos de evaluación publicado por el usuario martincousseau en HuggingFace. Contiene 50 consultas de usuario escritas a mano para evaluar y comparar la generación de diagramas en sintaxis Mermaid a partir de texto (text-to-diagram), distribuidas entre 5 personas de usuario distintas que trabajan en una misma empresa ficticia (ingeniería, RR. HH., finanzas, operaciones, soporte, producto, legal, IT).
+Mermaid Persona Queries (v1) no es un modelo de lenguaje, sino un conjunto de datos de evaluación publicado por el usuario martincousseau en Hugging Face. Contiene 50 consultas de usuario escritas a mano para evaluar y comparar la generación de diagramas en sintaxis Mermaid a partir de texto (text-to-diagram), distribuidas entre 5 personas de usuario distintas que trabajan en una misma empresa ficticia (ingeniería, RR. HH., finanzas, operaciones, soporte, producto, legal, IT).
 
 El problema que aborda es la falta de robustez en la evaluación: los usuarios reales de herramientas text-to-diagram no escriben prompts uniformes. Algunos pegan notas de reunión truncadas, otros dictan especificaciones Mermaid exactas, otros describen grafos formalmente y otros piensan en voz alta con autocorrecciones a mitad de frase. Un modelo evaluado solo con prompts limpios sobreestima su robustez, y este conjunto proporciona un pequeño conjunto de estrés controlado para evaluación condicionada por persona.
 
@@ -28,7 +28,7 @@ El dataset es solo de entrada (input-only): no incluye salidas Mermaid de refere
 | Campos de `queries` | id, query, persona_id, persona_name, persona_style |
 | Campos de `personas` | persona_id, persona_name, persona_style, description |
 | Salidas de referencia | no incluidas |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El co
 ## Requisitos de hardware
 
 - El recurso en sí no requiere GPU: son 50 filas de consultas y 5 filas de personas en JSONL, con un peso despreciable y carga inmediata en memoria.
-- Requisitos para la carga y el filtrado: cualquier máquina con Python y la librería `datasets` de HuggingFace; no se necesita aceleración por hardware.
+- Requisitos para la carga y el filtrado: cualquier máquina con Python y la librería `datasets` de Hugging Face; no se necesita aceleración por hardware.
 - VRAM para inferencia del modelo evaluado: no disponible en la información proporcionada y depende por completo del modelo text-to-diagram que se elija como objeto de evaluación.
 - GPU recomendadas, encaje en GPU de consumo, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) y latencia/throughput: no aplica al dataset; no disponible para los modelos evaluados, ya que la información proporcionada no especifica ninguno.
 
@@ -91,7 +91,7 @@ No disponible. No se han proporcionado en la información conjuntos de datos com
 
 ## Enlaces
 
-- Conjunto de datos en HuggingFace: https://huggingface.co/datasets/martincousseau/mermaid-persona-queries
+- Conjunto de datos en Hugging Face: https://huggingface.co/datasets/martincousseau/mermaid-persona-queries
 - Definiciones completas de las personas: [`personas.md`](personas.md) (referenciado en la model card del repositorio)
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
 - Cita BibTeX (proporcionada por el autor):

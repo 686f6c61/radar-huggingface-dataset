@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MYRASHARMA/fun-classification-2024` es un repositorio de investigación publicado en HuggingFace que contiene una implementación prototipo de una arquitectura BeiT (BERT pre-training of Image Transformers) orientada a tareas de clasificación. Lo desarrolla el usuario MYRASHARMA y se distribuye bajo licencia MIT. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado en benchmarks.
+`MYRASHARMA/fun-classification-2024` es un repositorio de investigación publicado en Hugging Face que contiene una implementación prototipo de una arquitectura BeiT (BERT pre-training of Image Transformers) orientada a tareas de clasificación. Lo desarrolla el usuario MYRASHARMA y se distribuye bajo licencia MIT. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado en benchmarks.
 
 La relevancia de este repositorio es limitada desde el punto de vista de producción: no hay métricas publicadas, no hay datos de entrenamiento documentados y el autor advierte que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. Su interés es principalmente como andamiaje reproducible para experimentos propios de clasificación con BeiT, ya que incluye `run.py`, `config.json` y `training_args.json` con una receta por defecto.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MYRASHARMA/fun-classification-2024 | 24.832 (safetensors) | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicialización |
-| BeiT base (oficial, microsoft/beit-base) | ~86 M | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | MIT | HuggingFace, pesos preentrenados |
-| BeiT large (oficial) | ~304 M | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | MIT | HuggingFace, pesos preentrenados |
-| DeiT (alternativa de vision transformer) | ~5-86 M según variante | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | Apache 2.0 / MIT según variante | HuggingFace, pesos preentrenados |
+| MYRASHARMA/fun-classification-2024 | 24.832 (safetensors) | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicialización |
+| BeiT base (oficial, microsoft/beit-base) | ~86 M | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | MIT | Hugging Face, pesos preentrenados |
+| BeiT large (oficial) | ~304 M | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | MIT | Hugging Face, pesos preentrenados |
+| DeiT (alternativa de vision transformer) | ~5-86 M según variante | 224x224 píxeles de entrada | benchmarks publicados en ImageNet | Apache 2.0 / MIT según variante | Hugging Face, pesos preentrenados |
 
 La comparación con los BeiT oficiales es la más directa por arquitectura, pero este repositorio no ofrece pesos entrenados ni métricas, por lo que no es un sustituto funcional de ellos en producción.
 
@@ -80,7 +80,7 @@ La comparación con los BeiT oficiales es la más directa por arquitectura, pero
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MYRASHARMA/fun-classification-2024
+- Repositorio en Hugging Face: https://huggingface.co/MYRASHARMA/fun-classification-2024
 - Paper original de BeiT (referencia de la arquitectura, no enlazado en la model card): no disponible en la información proporcionada
-- Repositorio oficial de BeiT en HuggingFace: no disponible en la información proporcionada
+- Repositorio oficial de BeiT en Hugging Face: no disponible en la información proporcionada
 - Blog o demo del autor: no disponible en la información proporcionada

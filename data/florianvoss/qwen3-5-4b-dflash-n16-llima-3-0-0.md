@@ -73,10 +73,10 @@ llima run ./Qwen3.5-4B-DFlash
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0 | 4B (objetivo) mas borrador DFlash | 4096 tokens | Paquete compilado Modalix | Apache 2.0 | HuggingFace, requiere hardware SiMa Modalix |
-| simaai/Qwen3.5-4B-Autoround-Safetensors | 4B | no disponible | Safetensors (cuantizado) | ver repositorio origen | HuggingFace |
-| simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors | borrador DFlash | no disponible | Safetensors (INT8) | ver repositorio origen | HuggingFace |
-| florianvoss/Qwen3-4B-DFlash-N16-LLiMa | 4B (generacion anterior Qwen3) | no disponible | Paquete compilado Modalix | no disponible | HuggingFace |
+| florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0 | 4B (objetivo) mas borrador DFlash | 4096 tokens | Paquete compilado Modalix | Apache 2.0 | Hugging Face, requiere hardware SiMa Modalix |
+| simaai/Qwen3.5-4B-Autoround-Safetensors | 4B | no disponible | Safetensors (cuantizado) | ver repositorio origen | Hugging Face |
+| simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors | borrador DFlash | no disponible | Safetensors (INT8) | ver repositorio origen | Hugging Face |
+| florianvoss/Qwen3-4B-DFlash-N16-LLiMa | 4B (generacion anterior Qwen3) | no disponible | Paquete compilado Modalix | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparativa se limita a parametros, formato y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0
 - Variante previa (Qwen3-4B): https://huggingface.co/florianvoss/Qwen3-4B-DFlash-N16-LLiMa
 - Checkpoint objetivo: https://huggingface.co/simaai/Qwen3.5-4B-Autoround-Safetensors
 - Checkpoint borrador: https://huggingface.co/simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors

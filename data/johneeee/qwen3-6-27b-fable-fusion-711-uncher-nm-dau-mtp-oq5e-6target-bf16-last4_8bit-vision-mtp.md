@@ -95,7 +95,7 @@ No se dispone de datos suficientes (contexto, licencia, benchmarks verificables)
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-uncher-NM-DAU-MTP-oQ5e-6target-bf16-last4_8bit-vision-mtp
+- Repositorio Hugging Face (este modelo): https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-uncher-NM-DAU-MTP-oQ5e-6target-bf16-last4_8bit-vision-mtp
 - Variante oQ5e del mismo autor: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e
 - Variante GGUF (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo original en Featherless: https://featherless.ai/models/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP

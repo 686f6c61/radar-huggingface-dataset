@@ -21,7 +21,7 @@ Su relevancia practica esta en la consistencia de personajes para produccion vis
 | Licencia | Qwen Research License (license: other; no comercial sin licencia comercial de Qwen) |
 | Formato de pesos | safetensors (character-sheet-qwen-image-2.1-edit-lora-e9.safetensors) |
 
-Datos adicionales: tamano del repositorio 0,1 GB; fecha de creacion y ultima actualizacion 2026-10-10; 0 descargas y 0 likes; pipeline no disponible en HuggingFace.
+Datos adicionales: tamano del repositorio 0,1 GB; fecha de creacion y ultima actualizacion 2026-10-10; 0 descargas y 0 likes; pipeline no disponible en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El autor no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| character-sheet-qwen-image-2.1-edit-lora | LoRA rango 8 (~42 MB) sobre Qwen Image 2.1 | No disponible | Sin benchmarks publicados | Qwen Research License (no comercial) | HuggingFace, 0 descargas |
+| character-sheet-qwen-image-2.1-edit-lora | LoRA rango 8 (~42 MB) sobre Qwen Image 2.1 | No disponible | Sin benchmarks publicados | Qwen Research License (no comercial) | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houseofboern/character-sheet-qwen-image-2.1-edit-lora
+- Modelo en Hugging Face: https://huggingface.co/houseofboern/character-sheet-qwen-image-2.1-edit-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Pesos y componentes necesarios (checkpoint bf16, Qwen3-VL-8B, VAE): https://huggingface.co/Comfy-Org/Qwen-Image-2.1

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BSM-Q (primed) | Qwen3-8B congelado + cabeza de regresion | no disponible | Puntuacion base de argumentos para ITA | MIT | HuggingFace (repo de 0.0 GB, 0 descargas) |
+| BSM-Q (primed) | Qwen3-8B congelado + cabeza de regresion | no disponible | Puntuacion base de argumentos para ITA | MIT | Hugging Face (repo de 0.0 GB, 0 descargas) |
 | Otros BSM del mismo repositorio | no disponible | no disponible | Puntuacion base de argumentos para ITA | MIT (segun repositorio) | Publicados junto al proyecto ITA |
-| Qwen/Qwen3-8B | 8.000 millones aprox. | no disponible en esta ficha | LLM generativo de proposito general | no disponible en esta ficha | HuggingFace |
+| Qwen/Qwen3-8B | 8.000 millones aprox. | no disponible en esta ficha | LLM generativo de proposito general | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-q-primed
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-q-primed
 - Repositorio del proyecto ITA: https://github.com/CLArg-group/inference-time-argumentation
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Artículo *Neurosymbolic Learning for Inference-Time Argumentation*: no disponible (no se proporciona URL en la información consultada)

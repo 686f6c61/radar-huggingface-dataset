@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ6e-aura-last4-fp16-vision-mtp es un modelo derivado publicado por el usuario Johneeee en HuggingFace, consistente en una cuantizacion mixta de 6 bits de un modelo base identificado en los metadatos como de tipo qwen3_5, con 27.781.427.952 parametros totales. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada al ecosistema MLX de Apple, generada con la herramienta oQ (oMLX v0.7.0.dev4).
+Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ6e-aura-last4-fp16-vision-mtp es un modelo derivado publicado por el usuario Johneeee en Hugging Face, consistente en una cuantizacion mixta de 6 bits de un modelo base identificado en los metadatos como de tipo qwen3_5, con 27.781.427.952 parametros totales. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada al ecosistema MLX de Apple, generada con la herramienta oQ (oMLX v0.7.0.dev4).
 
 La relevancia de esta ficha es limitada pero ilustrativa: el repositorio no incluye model card descriptiva mas alla de los detalles de cuantizacion, no declara licencia, no declara idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. El interes tecnico esta en el formato de publicacion: pesos MLX safetensors en 6 bits con group size 64 y tecnicas de precision mixta, lo que situa el artefacto en el nicho de inferencia local sobre silicio de Apple con un modelo denso de ~27,8 mil millones de parametros.
 
@@ -106,6 +106,6 @@ Nota: los datos de los modelos comparables proceden de conocimiento general y no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ6e-aura-last4-fp16-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ6e-aura-last4-fp16-vision-mtp
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - No se han encontrado en la informacion proporcionada papers, blogs tecnicos, repositorios adicionales ni demos asociados a este modelo.

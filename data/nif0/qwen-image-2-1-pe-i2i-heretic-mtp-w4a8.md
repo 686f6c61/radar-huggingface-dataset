@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nif0/Qwen-Image-2.1-PE-i2i-heretic-mtp-w4a8 | 6.078.009.072 (dato real) | no disponible | W4A8 ConvRot + GPTQ, int8 en embeddings y vision | qwen-research | HuggingFace, 0 descargas, 0 likes |
-| darrellbest/Qwen-Image-2.1-PE-I2I-Heretic | no disponible | no disponible | sin cuantizar (modelo base del fine-tune) | no disponible | HuggingFace |
-| Qwen/Qwen-Image-2.1-PE-I2I | no disponible en la informacion (descrito como Qwen3.5-VL 9B) | no disponible | sin cuantizar | qwen-research (presumible por la cadena) | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B (referencia, no confirmado en la informacion) | no disponible | sin cuantizar | no disponible | HuggingFace; origen del cabezal MTP |
+| nif0/Qwen-Image-2.1-PE-i2i-heretic-mtp-w4a8 | 6.078.009.072 (dato real) | no disponible | W4A8 ConvRot + GPTQ, int8 en embeddings y vision | qwen-research | Hugging Face, 0 descargas, 0 likes |
+| darrellbest/Qwen-Image-2.1-PE-I2I-Heretic | no disponible | no disponible | sin cuantizar (modelo base del fine-tune) | no disponible | Hugging Face |
+| Qwen/Qwen-Image-2.1-PE-I2I | no disponible en la informacion (descrito como Qwen3.5-VL 9B) | no disponible | sin cuantizar | qwen-research (presumible por la cadena) | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B (referencia, no confirmado en la informacion) | no disponible | sin cuantizar | no disponible | Hugging Face; origen del cabezal MTP |
 
 Nota: no se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros declarados, formato de pesos y licencia.
 
@@ -86,11 +86,11 @@ Nota: no se dispone de datos de rendimiento comparativo entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nif0/Qwen-Image-2.1-PE-i2i-heretic-mtp-w4a8
+- Modelo en Hugging Face: https://huggingface.co/nif0/Qwen-Image-2.1-PE-i2i-heretic-mtp-w4a8
 - Modelo base (fine-tune): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic
 - Modelo de origen del prompt enhancer: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Modelo de origen del cabezal MTP: https://huggingface.co/Qwen/Qwen3.5-9B
-- Qwen-Image-2.1 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Qwen-Image-2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Qwen Image 2.1 INT4 (W4A8)/INT6 (W6A8) en Civitai: https://civitai.com/models/2951557/qwen-image-21-int4w4a8int6w6a8
 - Ficha de Qwen-Image-2.1-PE-I2I en AI Indigo: https://aiindigo.com/tool/qwen-image-21-pe-i2i

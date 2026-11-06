@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptrón multicapa (MLP) de dos capas entrenado sobre CIFAR-10 por el usuario `notplato`, publicado en HuggingFace como entrega de la asignatura SMAI (Assignment 4, Q1, secciones 1.4/1.5). No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal densa de clasificación de imágenes de 32x32 píxeles en 10 clases, implementada con NumPy y distribuida como ficheros `.npz` en lugar de safetensors o GGUF.
+`smai-a4-mlp` es un perceptrón multicapa (MLP) de dos capas entrenado sobre CIFAR-10 por el usuario `notplato`, publicado en Hugging Face como entrega de la asignatura SMAI (Assignment 4, Q1, secciones 1.4/1.5). No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal densa de clasificación de imágenes de 32x32 píxeles en 10 clases, implementada con NumPy y distribuida como ficheros `.npz` en lugar de safetensors o GGUF.
 
 La arquitectura es explícita y minimalista: una capa de entrada de 3072 unidades (32 x 32 x 3 aplanado en orden HWC), una capa oculta de 256 neuronas con activación ReLU y una capa de salida de 10 logits correspondientes a las clases de CIFAR-10. El modelo se inicializa con distribución normal de varianza 2/n_in y sesgos a cero, y se entrena con descenso de gradiente estocástico (SGD), tasa de aprendizaje 0,02, tamaño de lote 64 y 100 épocas, con semilla 1146.
 
-Su relevancia es exclusivamente pedagógica: sirve como referencia reproducible de un pipeline de entrenamiento y evaluación de un clasificador sencillo, con preprocesado estandarizado (media y desviación típica calculadas sobre las 50.000 imágenes de entrenamiento) y pesos cargables desde un cuaderno `mlp.ipynb`. No hay información publicada sobre licencia, idiomas, benchmarks ni pipeline de HuggingFace.
+Su relevancia es exclusivamente pedagógica: sirve como referencia reproducible de un pipeline de entrenamiento y evaluación de un clasificador sencillo, con preprocesado estandarizado (media y desviación típica calculadas sobre las 50.000 imágenes de entrenamiento) y pesos cargables desde un cuaderno `mlp.ipynb`. No hay información publicada sobre licencia, idiomas, benchmarks ni pipeline de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye resultados de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notplato/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/notplato/smai-a4-mlp
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -99,7 +99,7 @@ La comparativa con Whisper es orientativa: no se dispone de resultados de WER co
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Docglasses-AI/indic-conformer-600m-sherpa-onnx-int8
+- Hugging Face del modelo: https://huggingface.co/Docglasses-AI/indic-conformer-600m-sherpa-onnx-int8
 - Modelo base: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - Exportacion int8 ONNX de origen: https://huggingface.co/abid1010/indic-conformer-600m-onnx
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

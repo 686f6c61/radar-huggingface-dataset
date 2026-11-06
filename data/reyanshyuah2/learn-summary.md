@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Reyanshyuah2/learn-summary
-- Model card en HuggingFace: https://huggingface.co/Reyanshyuah2/learn-summary (README incluido en la URL anterior)
+- Repositorio Hugging Face: https://huggingface.co/Reyanshyuah2/learn-summary
+- Model card en Hugging Face: https://huggingface.co/Reyanshyuah2/learn-summary (README incluido en la URL anterior)
 
 No se encontraron papers, blogs, repositorios adicionales ni demos relacionados con este repositorio en la búsqueda web realizada.

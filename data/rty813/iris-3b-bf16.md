@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Repositorio HuggingFace del port: https://huggingface.co/rty813/iris-3b-bf16
+- Repositorio Hugging Face del port: https://huggingface.co/rty813/iris-3b-bf16
 - Modelo base: https://huggingface.co/speridlabs/iris-3b
 - Paper: https://arxiv.org/abs/2610.09450
 - Pagina de proyecto: https://speridlabs.com/research/iris

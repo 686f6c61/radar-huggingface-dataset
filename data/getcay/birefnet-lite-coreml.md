@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Resolucion de entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BiRefNet Lite 1024 Core ML (este) | Segmentación DIS, Core ML | 1024x1024 | MIT | HuggingFace, formato Core ML | Copia de un paquete de terceros, solo Apple |
-| BiRefNet Lite (original, `ZhengPeng7/BiRefNet_lite`) | Segmentación DIS, PyTorch | No disponible | MIT | HuggingFace, pesos PyTorch | Requiere GPU/CUDA o CPU para inferencia |
-| BiRefNet (version completa, `ZhengPeng7/BiRefNet`) | Segmentación DIS, PyTorch | No disponible | MIT | HuggingFace, pesos PyTorch | Backbone Swin-Large, mayor coste computacional |
-| `metaclass/birefnet-lite-coreml` | Segmentación DIS, Core ML | 1024x1024 | MIT | HuggingFace | Origen exacto del paquete distribuido por getcay |
+| BiRefNet Lite 1024 Core ML (este) | Segmentación DIS, Core ML | 1024x1024 | MIT | Hugging Face, formato Core ML | Copia de un paquete de terceros, solo Apple |
+| BiRefNet Lite (original, `ZhengPeng7/BiRefNet_lite`) | Segmentación DIS, PyTorch | No disponible | MIT | Hugging Face, pesos PyTorch | Requiere GPU/CUDA o CPU para inferencia |
+| BiRefNet (version completa, `ZhengPeng7/BiRefNet`) | Segmentación DIS, PyTorch | No disponible | MIT | Hugging Face, pesos PyTorch | Backbone Swin-Large, mayor coste computacional |
+| `metaclass/birefnet-lite-coreml` | Segmentación DIS, Core ML | 1024x1024 | MIT | Hugging Face | Origen exacto del paquete distribuido por getcay |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
 
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getcay/birefnet-lite-coreml
+- Modelo en Hugging Face: https://huggingface.co/getcay/birefnet-lite-coreml
 - Repositorio de origen del paquete Core ML: https://huggingface.co/metaclass/birefnet-lite-coreml
-- Modelo base en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet_lite
+- Modelo base en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Código original de BiRefNet: https://github.com/ZhengPeng7/BiRefNet
 - Conversión a Core ML: https://github.com/miracle2k/birefnet-lite-coreml
 - Aplicación que distribuye el modelo: https://getcay.app

@@ -84,11 +84,11 @@ En el bloque de tamaño medio (hasta 500M de parámetros) la model card solo mue
 
 | Modelo | Parametros | Contexto | GLUE | BEIR | LongEmbed | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| UltraBERT-150M | 152M (autor) / 189,96M (safetensors) | 32K | 89,5 | 45,2 | 72,0 | Apache 2.0 | HuggingFace, requiere `transformers >= 5` |
-| ModernBERT | 149M | 8K | 88,4 | 42,6 | 63,2 | Apache 2.0 | HuggingFace |
-| Ettin Encoder | 149M | 8K (no confirmado en la información disponible) | 88,9 | 42,4 | 60,1 | no disponible | HuggingFace |
-| GTE-en-MLM | 137M | no disponible | 85,6 | 42,4 | 58,5 | no disponible | HuggingFace |
-| RoBERTa | 125M | 512 | 86,4 | 39,6 | 33,8 | MIT | HuggingFace |
+| UltraBERT-150M | 152M (autor) / 189,96M (safetensors) | 32K | 89,5 | 45,2 | 72,0 | Apache 2.0 | Hugging Face, requiere `transformers >= 5` |
+| ModernBERT | 149M | 8K | 88,4 | 42,6 | 63,2 | Apache 2.0 | Hugging Face |
+| Ettin Encoder | 149M | 8K (no confirmado en la información disponible) | 88,9 | 42,4 | 60,1 | no disponible | Hugging Face |
+| GTE-en-MLM | 137M | no disponible | 85,6 | 42,4 | 58,5 | no disponible | Hugging Face |
+| RoBERTa | 125M | 512 | 86,4 | 39,6 | 33,8 | MIT | Hugging Face |
 
 UltraBERT-150M es el único de la comparativa con 32K de contexto nativo y el que obtiene las mejores cifras en las diez tareas del bloque base salvo MultiCoNER v2, donde NomicBERT queda por delante (60,1 frente a 57,9). La ventaja es especialmente amplia en recuperación (BEIR, MLDR, LongEmbed), que es justamente donde los encoders clásicos de 512 tokens se quedan cortos.
 
@@ -108,7 +108,7 @@ UltraBERT-150M es el único de la comparativa con 32K de contexto nativo y el qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmis-lab/UltraBERT-150M
+- Modelo en Hugging Face: https://huggingface.co/dmis-lab/UltraBERT-150M
 - UltraBERT-380M: https://huggingface.co/dmis-lab/UltraBERT-380M
 - UltraBERT-Embed-150M: https://huggingface.co/dmis-lab/UltraBERT-Embed-150M
 - Paper: no disponible (el enlace de la model card está vacío)

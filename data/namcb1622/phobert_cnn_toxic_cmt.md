@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phobert_cnn_toxic_cmt` es un modelo publicado en HuggingFace por el usuario namcb1622 bajo licencia CC-BY-4.0. Por la nomenclatura del identificador, se trata de una combinacion de un encoder PhoBERT (variante de BERT preentrenada para vietnamita) con una cabeza convolucional (CNN), orientada presumiblemente a la deteccion de contenido toxico en comentarios. El sufijo "cmt" sugiere "comments", lo que refuerza la hipotesis de un clasificador de toxicidad sobre texto de comentarios en linea.
+`phobert_cnn_toxic_cmt` es un modelo publicado en Hugging Face por el usuario namcb1622 bajo licencia CC-BY-4.0. Por la nomenclatura del identificador, se trata de una combinacion de un encoder PhoBERT (variante de BERT preentrenada para vietnamita) con una cabeza convolucional (CNN), orientada presumiblemente a la deteccion de contenido toxico en comentarios. El sufijo "cmt" sugiere "comments", lo que refuerza la hipotesis de un clasificador de toxicidad sobre texto de comentarios en linea.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin datos de entrenamiento, sin metricas ni instrucciones de uso. El repositorio ocupa 0,6 GB, un tamano compatible con los pesos de un encoder tipo BERT-base (aproximadamente 135 millones de parametros en precision fp32) mas la cabeza CNN y posibles artefactos auxiliares.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| namcb1622/phobert_cnn_toxic_cmt | no disponible (~135 M estimados) | no disponible | CC-BY-4.0 | HuggingFace, 0 descargas |
-| vinai/phobert-base | ~135 M | 256 tokens | MIT | HuggingFace, ampliamente usado |
-| vinai/phobert-large | ~370 M | 256 tokens | MIT | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache-2.0 | HuggingFace, muy usado |
+| namcb1622/phobert_cnn_toxic_cmt | no disponible (~135 M estimados) | no disponible | CC-BY-4.0 | Hugging Face, 0 descargas |
+| vinai/phobert-base | ~135 M | 256 tokens | MIT | Hugging Face, ampliamente usado |
+| vinai/phobert-large | ~370 M | 256 tokens | MIT | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | Apache-2.0 | Hugging Face, muy usado |
 
 La comparacion se limita a arquitecturas de referencia, ya que no se dispone de datos de rendimiento del modelo evaluado ni de clasificadores de toxicidad vietnamitas comparables documentados en la informacion proporcionada.
 
@@ -80,6 +80,6 @@ La comparacion se limita a arquitecturas de referencia, ya que no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/namcb1622/phobert_cnn_toxic_cmt
+- Hugging Face: https://huggingface.co/namcb1622/phobert_cnn_toxic_cmt
 - Repositorio oficial de PhoBERT (referencia): https://github.com/VinAIResearch/PhoBERT
-- Modelo PhoBERT base en HuggingFace (referencia): https://huggingface.co/vinai/phobert-base
+- Modelo PhoBERT base en Hugging Face (referencia): https://huggingface.co/vinai/phobert-base

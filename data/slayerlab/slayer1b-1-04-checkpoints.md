@@ -92,7 +92,7 @@ La comparacion relevante para Slayer1B 1.04 no es solo de rendimiento: este repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.04-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.04-checkpoints
 - Modelo precedente Slayer1B 1.03: https://huggingface.co/SlayerLab/Slayer1B-1.03
 - Checkpoints de Slayer1B 1.03: https://huggingface.co/SlayerLab/Slayer1B-1.03-checkpoints
 - Dataset de entrenamiento slayer-pl-8x3b: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b

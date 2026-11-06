@@ -94,7 +94,7 @@ La comparación relevante es frente al GGUF Q4_K_M oficial del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM
+- Modelo en Hugging Face: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM
 - Modelo base: https://huggingface.co/GrootTeam/Groot-65B-A6B-261023
 - Linaje arquitectónico: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia qwen-community-1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

@@ -87,8 +87,8 @@ La informacion disponible solo permite comparar el adaptador contra su propio mo
 
 | Modelo | Parametros | Contexto | Rendimiento (macro-F1 local / pantalla completa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shelter/UI-testjev (adaptador LoRA) | 26B base / ~4B activos; adaptador rango 32 (0,2 GB) | 8.192 tokens de entrada, 1.120 tokens visuales por imagen | 0,7302 / 0,4053 | Apache 2.0 | HuggingFace, inferencia solo via helper incluido |
-| google/diffusiongemma-26B-A4B-it (base, sin adaptador) | 26B / ~4B activos | El del modelo base | 0,3132 / 0,2055 | No disponible en esta informacion | HuggingFace |
+| Shelter/UI-testjev (adaptador LoRA) | 26B base / ~4B activos; adaptador rango 32 (0,2 GB) | 8.192 tokens de entrada, 1.120 tokens visuales por imagen | 0,7302 / 0,4053 | Apache 2.0 | Hugging Face, inferencia solo via helper incluido |
+| google/diffusiongemma-26B-A4B-it (base, sin adaptador) | 26B / ~4B activos | El del modelo base | 0,3132 / 0,2055 | No disponible en esta informacion | Hugging Face |
 | Otros modelos de prueba visual comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ La informacion disponible solo permite comparar el adaptador contra su propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shelter/UI-testjev
+- Modelo en Hugging Face: https://huggingface.co/Shelter/UI-testjev
 - Modelo base: https://huggingface.co/google/diffusiongemma-26B-A4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shelter/UI-testjev-data
 - Informe comparativo del repositorio: https://huggingface.co/Shelter/UI-testjev/blob/main/COMPARISON.md

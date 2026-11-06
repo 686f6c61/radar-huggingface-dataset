@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 | Modelo | Parametros totales | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small-Hybrid-4layer | 17.514.768.396 | 4 (recorte de 42) | no disponible | apache-2.0 | HuggingFace |
-| thinkingmachines/Inkling-Small | no disponible | 42 | no disponible | no disponible | HuggingFace |
+| Inkling-Small-Hybrid-4layer | 17.514.768.396 | 4 (recorte de 42) | no disponible | apache-2.0 | Hugging Face |
+| thinkingmachines/Inkling-Small | no disponible | 42 | no disponible | no disponible | Hugging Face |
 
 Alternativas de la misma categoria (transformers multimodales MoE de aproximadamente 17B): no disponible, al no haberse proporcionado informacion sobre ellas.
 
@@ -85,7 +85,7 @@ Alternativas de la misma categoria (transformers multimodales MoE de aproximadam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pb09204048/Inkling-Small-Hybrid-4layer
+- Modelo en Hugging Face: https://huggingface.co/pb09204048/Inkling-Small-Hybrid-4layer
 - Modelo original del que procede el recorte: https://huggingface.co/thinkingmachines/Inkling-Small
 - Repositorio miles, para cuyos tests de CI se creo: https://github.com/radixark/miles
 - Otros enlaces relevantes (papers, blogs, demos): no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con el modelo.

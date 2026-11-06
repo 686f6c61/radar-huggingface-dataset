@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Configuración de entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (empaquetado Sherpaw) | 3,3 M | chunk-16, left-context-64, audio PCM mono | No disponible | Apache-2.0 | HuggingFace, bundle WASM |
+| Este repositorio (empaquetado Sherpaw) | 3,3 M | chunk-16, left-context-64, audio PCM mono | No disponible | Apache-2.0 | Hugging Face, bundle WASM |
 | `sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01` original (pkufool, release de sherpa-onnx) | 3,3 M | Idéntica (mismos pesos fp32) | No disponible | Apache-2.0 declarada por el autor original | GitHub releases de sherpa-onnx y ModelScope |
 | Otros detectores de palabras clave (openWakeWord, Porcupine, entre otros) | No disponible | No disponible | No disponible | Apache-2.0 en el caso de openWakeWord; propietaria en soluciones comerciales | No disponible en la información proporcionada |
 
@@ -82,12 +82,12 @@ La diferencia sustantiva entre las dos primeras filas es el formato de distribuc
 - No se documentan análisis de sesgo en la model card; el comportamiento puede degradarse con acentos, voces infantiles o audio con ruido de fondo distintos de los del corpus de entrenamiento.
 - Licencia Apache-2.0: permite uso comercial y modificación, pero conviene verificar que los pesos upstream mantengan la misma licencia en su procedencia original antes de un despliegue en producción.
 - Metadatos inconsistentes en el repositorio: figura con 0 descargas, 0 likes y un tamaño de repo de 0.0 GB, mientras que el propio autor indica que el paquete ocupa 13.082.946 bytes. Las fechas de creación y actualización (2026-09-26) no concuerdan con la nomenclatura 2024-01-01 del modelo, lo que no implica que los pesos hayan sido actualizados.
-- El autor recomienda fijar el commit de HuggingFace al desplegar para evitar cambios inesperados en el bundle.
+- El autor recomienda fijar el commit de Hugging Face al desplegar para evitar cambios inesperados en el bundle.
 - Ausencia total de benchmarks publicados: no es recomendable tomar decisiones de arquitectura basadas solo en esta ficha sin realizar una evaluación propia con el vocabulario y las condiciones acústicas del caso de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moeru-ai/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01
+- Modelo en Hugging Face: https://huggingface.co/moeru-ai/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01
 - Sherpaw (runtime y preloader WASM): https://github.com/moeru-ai/sherpaw
 - Release oficial del modelo en sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01.tar.bz2
 - Modelo original de pkufool en ModelScope: https://modelscope.cn/models/pkufool/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01

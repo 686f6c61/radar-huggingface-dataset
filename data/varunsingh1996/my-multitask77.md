@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunsingh1996/my-multitask77` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP orientada a tareas multitarea. No se presenta como un modelo preentrenado listo para producción, sino como un punto de partida experimental: el autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`varunsingh1996/my-multitask77` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP orientada a tareas multitarea. No se presenta como un modelo preentrenado listo para producción, sino como un punto de partida experimental: el autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
 El repositorio declara la escala "giant", atención con grouped query, fusión de bajo rango, activación mish y normalización groupnorm. Sin embargo, el recuento real de parámetros de los safetensors es de 33.088 (aproximadamente 33 mil), una cifra incomparable con cualquier configuración CLIP de escala grande real: CLIP ViT-L/14 ronda los 428 millones de parámetros. Esta discrepancia entre la etiqueta "giant" y el tamaño efectivo es el dato más relevante del repositorio y debe tenerse en cuenta antes de cualquier uso.
 
@@ -64,7 +64,7 @@ La información proporcionada no incluye datos de modelos comparables. A modo de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| my-multitask77 | 33.088 (recuento de safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| my-multitask77 | 33.088 (recuento de safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | CLIP ViT-B/32 (referencia externa) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico |
 | CLIP ViT-L/14 (referencia externa) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico |
 
@@ -82,7 +82,7 @@ La información proporcionada no incluye datos de modelos comparables. A modo de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunsingh1996/my-multitask77
+- Hugging Face: https://huggingface.co/varunsingh1996/my-multitask77
 - Archivos del repositorio citados en la model card: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no relevantes para este modelo

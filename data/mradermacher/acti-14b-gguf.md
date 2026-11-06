@@ -6,7 +6,7 @@ ACTi-14B-GGUF es la versión cuantizada en formato GGUF del modelo LordNeel/ACTi
 
 La relevancia de esta publicación radica en que facilita el uso del modelo base mediante llama.cpp y derivados (Ollama, LM Studio, etc.), ofreciendo un abanico de cuantizaciones que van desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria. El modelo está etiquetado como conversacional y orientado al idioma inglés.
 
-No obstante, la información pública disponible es muy limitada: no se especifican la arquitectura interna, la longitud de contexto, la licencia ni los datos de entrenamiento del modelo base. Esta ficha refleja exclusivamente los datos verificables a partir de la model card, los metadatos de HuggingFace y el repositorio de cuantizaciones.
+No obstante, la información pública disponible es muy limitada: no se especifican la arquitectura interna, la longitud de contexto, la licencia ni los datos de entrenamiento del modelo base. Esta ficha refleja exclusivamente los datos verificables a partir de la model card, los metadatos de Hugging Face y el repositorio de cuantizaciones.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La model card del repositorio GGUF es puramente operativa: describe el proceso d
 
 - Generación de texto conversacional: el modelo está etiquetado como `conversational`, lo que indica que está afinado o preparado para diálogo multi-turno.
 - Idiomas: soporte declarado únicamente para inglés (`en`).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia compatible con la API de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 - No se especifican capacidades de código o matemáticas en la información disponible.
 
@@ -42,7 +42,7 @@ La model card del repositorio GGUF es puramente operativa: describe el proceso d
 - Evaluación comparativa de cuantizaciones: el repositorio ofrece once variantes de cuantización, lo que permite medir el impacto de la compresión en la calidad de las respuestas para un mismo modelo base.
 - Inferencia en CPU o configuraciones híbridas: las cuantizaciones Q2_K (5,9 GB) y Q3_K_S (6,8 GB) permiten ejecutar el modelo en equipos sin GPU dedicada, con la consiguiente pérdida de calidad.
 - Fine-tuning posterior sobre la versión desquantizada: aunque el repositorio es GGUF, el modelo base LordNeel/ACTi-14B puede servir como punto de partida para ajuste fino en tareas conversacionales en inglés.
-- Servicio de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` facilita integrar el modelo en plataformas de serving que acepten el formato de HuggingFace.
+- Servicio de inferencia con endpoints compatibles: la etiqueta `endpoints_compatible` facilita integrar el modelo en plataformas de serving que acepten el formato de Hugging Face.
 
 ## Benchmarks y rendimiento
 

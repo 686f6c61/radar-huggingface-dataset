@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Robinsontip/hw2-matching es un prototipo de investigación publicado en HuggingFace bajo el nombre "Swin T for Matching". Se trata de un modelo basado en la arquitectura Swin Transformer (Swin T), orientado a tareas de emparejamiento (matching), distribuido con licencia apache-2.0 y pesos en formato safetensors. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026.
+Robinsontip/hw2-matching es un prototipo de investigación publicado en Hugging Face bajo el nombre "Swin T for Matching". Se trata de un modelo basado en la arquitectura Swin Transformer (Swin T), orientado a tareas de emparejamiento (matching), distribuido con licencia apache-2.0 y pesos en formato safetensors. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026.
 
 El dato más relevante es que el checkpoint de safetensors declara únicamente 49.600 parámetros totales, una cifra muy reducida que contrasta con la designación "giant" (gigante) que aparece en la model card del autor. Según la propia documentación, el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark.
 
@@ -90,5 +90,5 @@ La diferencia clave es que este repositorio contiene un checkpoint de inicializa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Robinsontip/hw2-matching
+- Hugging Face: https://huggingface.co/Robinsontip/hw2-matching
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

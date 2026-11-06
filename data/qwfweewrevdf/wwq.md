@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `qwfweewrevdf/wwq` es un repositorio publicado en HuggingFace por el usuario `qwfweewrevdf`. La model card asociada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni casos de uso previstos. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el proposito del modelo.
+El modelo identificado como `qwfweewrevdf/wwq` es un repositorio publicado en Hugging Face por el usuario `qwfweewrevdf`. La model card asociada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni casos de uso previstos. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el proposito del modelo.
 
 El repositorio ocupa aproximadamente 0,2 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no es posible confirmar la arquitectura ni el numero de parametros a partir de los metadatos disponibles. El modelo no registra descargas ni "likes" en el momento de la consulta, y fue creado y actualizado el mismo dia (29 de octubre de 2026), lo que apunta a una publicacion reciente y sin validacion comunitaria.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable porque se desconocen la categori
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwfweewrevdf/wwq | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| qwfweewrevdf/wwq | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconocen la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qwfweewrevdf/wwq
+- Repositorio en Hugging Face: https://huggingface.co/qwfweewrevdf/wwq
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

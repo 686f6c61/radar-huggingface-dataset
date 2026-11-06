@@ -2,9 +2,9 @@
 
 ## Resumen
 
-opensearch-project/opensearch-neural-embed-v1 es un modelo publicado en HuggingFace por la organizacion opensearch-project, el mismo equipo que mantiene OpenSearch, el motor de busqueda y analitica distribuido derivado de Elasticsearch. Por el nombre y el contexto del repositorio, el modelo esta orientado a la generacion de embeddings neuronales para busqueda semantica y recuperacion de informacion dentro del ecosistema OpenSearch.
+opensearch-project/opensearch-neural-embed-v1 es un modelo publicado en Hugging Face por la organizacion opensearch-project, el mismo equipo que mantiene OpenSearch, el motor de busqueda y analitica distribuido derivado de Elasticsearch. Por el nombre y el contexto del repositorio, el modelo esta orientado a la generacion de embeddings neuronales para busqueda semantica y recuperacion de informacion dentro del ecosistema OpenSearch.
 
-La informacion disponible es muy limitada: la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento, dimensiones de embedding ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de HuggingFace ni idiomas soportados.
+La informacion disponible es muy limitada: la model card publicada no contiene mas que la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento, dimensiones de embedding ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline de Hugging Face ni idiomas soportados.
 
 A pesar de la escasez de documentacion, el modelo resulta relevante para quienes operan clusters de OpenSearch y buscan integrar recuperacion semantica o hibrida sin salir del ecosistema del proyecto. Cualquier evaluacion en produccion deberia hacerse con cautela y validacion empirica propia, dado que no hay datos publicos de rendimiento.
 
@@ -64,10 +64,10 @@ No es posible establecer una comparativa rigurosa sin datos de parametros, conte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opensearch-neural-embed-v1 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| BGE-M3 (BAAI) | no disponible en esta ficha | no disponible en esta ficha | MIT | HuggingFace |
-| E5-large (Microsoft) | no disponible en esta ficha | no disponible en esta ficha | MIT | HuggingFace |
-| GTE-large (Alibaba) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| opensearch-neural-embed-v1 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| BGE-M3 (BAAI) | no disponible en esta ficha | no disponible en esta ficha | MIT | Hugging Face |
+| E5-large (Microsoft) | no disponible en esta ficha | no disponible en esta ficha | MIT | Hugging Face |
+| GTE-large (Alibaba) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparacion cuantitativa queda pendiente de que el autor publique especificaciones y resultados de evaluacion.
 
@@ -83,6 +83,6 @@ La comparacion cuantitativa queda pendiente de que el autor publique especificac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opensearch-project/opensearch-neural-embed-v1
+- Hugging Face: https://huggingface.co/opensearch-project/opensearch-neural-embed-v1
 - Repositorio OpenSearch en GitHub: https://github.com/opensearch-project/OpenSearch
 - Documentacion de OpenSearch: https://opensearch.org/docs/

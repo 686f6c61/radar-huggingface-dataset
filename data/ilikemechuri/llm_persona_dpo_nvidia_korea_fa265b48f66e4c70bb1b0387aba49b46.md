@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenad
 
 El problema que aborda es el ajuste de estilo y comportamiento conversacional (lo que el nombre del repositorio sugiere como "persona") mediante preferencias, en lugar de reentrenar el modelo base. Al ser un adaptador DPO, su funcion es modificar la distribucion de respuestas del modelo base hacia el comportamiento recogido en el dataset de preferencias, manteniendo intactos los pesos originales.
 
-La relevancia de la ficha es limitada y debe leerse con cautela: la model card es la plantilla por defecto de HuggingFace sin cumplimentar, no hay resultados de evaluacion, no se declara licencia ni idiomas, y el repositorio no tiene descargas ni "likes". Ademas, el modelo base referenciado (Qwen3.5-4B) no aparece descrito en la informacion disponible, por lo que sus especificaciones no se pueden verificar aqui.
+La relevancia de la ficha es limitada y debe leerse con cautela: la model card es la plantilla por defecto de Hugging Face sin cumplimentar, no hay resultados de evaluacion, no se declara licencia ni idiomas, y el repositorio no tiene descargas ni "likes". Ademas, el modelo base referenciado (Qwen3.5-4B) no aparece descrito en la informacion disponible, por lo que sus especificaciones no se pueden verificar aqui.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Tamano del adaptador: 0,1 GB de repositorio, segun el dato declarado en HuggingFace. Es un fichero ligero que se puede cargar junto al modelo base en memoria.
+- Tamano del adaptador: 0,1 GB de repositorio, segun el dato declarado en Hugging Face. Es un fichero ligero que se puede cargar junto al modelo base en memoria.
 - Modelo base: al tratarse de un adaptador, el coste real de inferencia es el de Qwen/Qwen3.5-4B. Las cifras siguientes son estimaciones estandar para un transformer denso de 4 000 millones de parametros y no estan verificadas en la informacion disponible.
 - VRAM estimada: en bf16/fp16, aproximadamente 8 GB solo de pesos, con 12-16 GB recomendables contando activaciones y cache KV; en cuantizacion de 4 bits, alrededor de 2,5-3 GB de pesos, viable en GPUs de 8 GB.
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S para servicio concurrente; RTX 4090, RTX 3090 o RTX 4070 Ti para uso individual.
@@ -78,7 +78,7 @@ No disponible. Este repositorio es un adaptador LoRA de DPO, no un modelo autono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ilikemechuri/llm_persona_dpo_nvidia_korea_fa265b48f66e4c70bb1b0387aba49b46
+- Repositorio en Hugging Face: https://huggingface.co/Ilikemechuri/llm_persona_dpo_nvidia_korea_fa265b48f66e4c70bb1b0387aba49b46
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

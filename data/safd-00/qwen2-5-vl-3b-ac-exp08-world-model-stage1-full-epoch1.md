@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp16-world-model-stage1-full-epoch1` es un fine-tuning del modelo multimodal Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en HuggingFace. El nombre sugiere que se trata de una etapa de entrenamiento de un "modelo del mundo" (world model) con el dataset `ac-exp16`, probablemente orientado a la comprensión de entornos y agentes. Utiliza la arquitectura base Qwen2.5-VL, que combina un codificador visual con un transformer de lenguaje, y está optimizado para tareas de imagen-a-texto.
+El modelo `SaFD-00/qwen2.5-vl-3b-ac-exp16-world-model-stage1-full-epoch1` es un fine-tuning del modelo multimodal Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en Hugging Face. El nombre sugiere que se trata de una etapa de entrenamiento de un "modelo del mundo" (world model) con el dataset `ac-exp16`, probablemente orientado a la comprensión de entornos y agentes. Utiliza la arquitectura base Qwen2.5-VL, que combina un codificador visual con un transformer de lenguaje, y está optimizado para tareas de imagen-a-texto.
 
 Con 3,75 mil millones de parámetros, el modelo se posiciona en el rango de 3B, lo que lo hace viable para despliegue en hardware de consumo con cuantización. El repositorio incluye pesos en formato `safetensors` y se integra con la librería `transformers` y el framework de entrenamiento `llama-factory`. No se ha publicado información sobre la licencia, los idiomas soportados ni el proceso de entrenamiento en la model card, por lo que su uso en producción requiere una evaluación adicional.
 

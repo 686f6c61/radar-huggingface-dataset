@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CajunFox es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, idiomas o casos de uso previstos. El repositorio fue creado el 18 de septiembre de 2026 y actualizado ese mismo dia, sin que se haya registrado ninguna descarga ni "like" en el momento de recopilar esta informacion.
+CajunFox es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento, idiomas o casos de uso previstos. El repositorio fue creado el 18 de septiembre de 2026 y actualizado ese mismo dia, sin que se haya registrado ninguna descarga ni "like" en el momento de recopilar esta informacion.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, aunque no es posible confirmar el numero de parametros ni el formato de los archivos sin inspeccionar el contenido del repositorio. No hay pipeline declarado, no se especifican idiomas soportados y no se ha publicado ningun benchmark ni documento adicional.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos con base en la informacion dispo
 - Fine-tuning sobre dominios especificos: si el modelo dispone de pesos completos, podria servir como base para ajuste fino, aunque se desconoce si el repositorio contiene pesos entrenables o unicamente artefactos derivados.
 - Evaluacion comparativa de modelos pequenos: como punto de referencia en estudios sobre modelos de baja huella de almacenamiento.
 - Pruebas de integracion en pipelines de inferencia: requiere verificar previamente el formato de pesos y la compatibilidad con runtimes como llama.cpp, vLLM o Transformers.
-- Uso educativo: para ilustrar el ciclo de publicacion de modelos en HuggingFace y la importancia de documentar adecuadamente una model card.
+- Uso educativo: para ilustrar el ciclo de publicacion de modelos en Hugging Face y la importancia de documentar adecuadamente una model card.
 
 En todos los casos, la ausencia de documentacion implica que el usuario asume el riesgo de validar el comportamiento del modelo por su cuenta.
 
@@ -78,5 +78,5 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y las ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/CajunFox
+- Hugging Face: https://huggingface.co/Ryanham1lton/CajunFox
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a la carrera ciclista Tour de Luxembourg 2026 y no guardan relacion con este modelo.

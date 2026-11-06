@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La varian
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/trigger2k25/Qwen3.6-35B-A3B-heretic-BF16-mtp
+- Repositorio Hugging Face del modelo: https://huggingface.co/trigger2k25/Qwen3.6-35B-A3B-heretic-BF16-mtp
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved
 - Repositorio GGUF del modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

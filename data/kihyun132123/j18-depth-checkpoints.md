@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `kihyun132123/j18-depth-checkpoints` es un checkpoint alojado en HuggingFace, publicado por el usuario `kihyun132123`. Según las etiquetas asociadas, está vinculado al ecosistema Cosmos, lo que sugiere que se trata de un modelo de mundo (world model) desarrollado en el marco de la plataforma Cosmos de NVIDIA, orientado a simulación y generación de entornos. También se menciona "so100", que podría referirse al brazo robótico SO-100, habitual en datasets de robótica, y "dacon-2026", que apunta a una participación en una competición de la plataforma coreana Dacon.
+El modelo `kihyun132123/j18-depth-checkpoints` es un checkpoint alojado en Hugging Face, publicado por el usuario `kihyun132123`. Según las etiquetas asociadas, está vinculado al ecosistema Cosmos, lo que sugiere que se trata de un modelo de mundo (world model) desarrollado en el marco de la plataforma Cosmos de NVIDIA, orientado a simulación y generación de entornos. También se menciona "so100", que podría referirse al brazo robótico SO-100, habitual en datasets de robótica, y "dacon-2026", que apunta a una participación en una competición de la plataforma coreana Dacon.
 
-El repositorio presenta acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para poder descargarlo. No se dispone de documentación técnica pública, ni de métricas, arquitectura detallada, ni de información sobre el entrenamiento. La ausencia de descargas y de interacción comunitaria sugiere que es un proyecto reciente o de carácter privado. Su relevancia actual es limitada, dado que no hay información verificable sobre sus capacidades o rendimiento.
+El repositorio presenta acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para poder descargarlo. No se dispone de documentación técnica pública, ni de métricas, arquitectura detallada, ni de información sobre el entrenamiento. La ausencia de descargas y de interacción comunitaria sugiere que es un proyecto reciente o de carácter privado. Su relevancia actual es limitada, dado que no hay información verificable sobre sus capacidades o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El repositorio presenta acceso restringido (gated), por lo que es necesario acep
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (se requiere aceptación de condiciones en HuggingFace) |
+| Licencia | other (se requiere aceptación de condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que limita su uso y evaluación.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que limita su uso y evaluación.
 - Licencia "other": no se especifican los términos exactos, por lo que el uso comercial o la redistribución pueden estar sujetos a restricciones no documentadas.
 - Ausencia total de documentación técnica: no hay información sobre arquitectura, entrenamiento, capacidades o limitaciones, lo que impide una evaluación rigurosa.
 - Riesgo de alucinación y sesgos: al no conocer los datos de entrenamiento, no es posible evaluar estos riesgos.
@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [kihyun132123/j18-depth-checkpoints](https://huggingface.co/kihyun132123/j18-depth-checkpoints)
+- Repositorio en Hugging Face: [kihyun132123/j18-depth-checkpoints](https://huggingface.co/kihyun132123/j18-depth-checkpoints)
 - No se encontraron otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

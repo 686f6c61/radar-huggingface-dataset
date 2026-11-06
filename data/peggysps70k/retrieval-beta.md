@@ -76,4 +76,4 @@ No disponible. El repositorio es un artefacto de codigo con un checkpoint de ini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peggysps70k/retrieval-beta
+- Modelo en Hugging Face: https://huggingface.co/peggysps70k/retrieval-beta

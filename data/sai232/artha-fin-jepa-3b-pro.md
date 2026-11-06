@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Artha-fin-jepa-3b-pro es un modelo publicado en HuggingFace por el usuario sai232, cuyo identificador y etiquetas lo sitúan en la intersección de tres campos: los modelos del mundo (world models) basados en arquitecturas JEPA, el dominio financiero y los mercados de la India. El nombre del repositorio sugiere un tamaño de 3.000 millones de parametros, aunque no se ha publicado documentacion tecnica que lo confirme. Las etiquetas del repositorio apuntan a una arquitectura hibrida con componentes mixture-of-experts (MoE) y Mamba, ademas de un pipeline de generacion de datos sinteticos.
+Artha-fin-jepa-3b-pro es un modelo publicado en Hugging Face por el usuario sai232, cuyo identificador y etiquetas lo sitúan en la intersección de tres campos: los modelos del mundo (world models) basados en arquitecturas JEPA, el dominio financiero y los mercados de la India. El nombre del repositorio sugiere un tamaño de 3.000 millones de parametros, aunque no se ha publicado documentacion tecnica que lo confirme. Las etiquetas del repositorio apuntan a una arquitectura hibrida con componentes mixture-of-experts (MoE) y Mamba, ademas de un pipeline de generacion de datos sinteticos.
 
-El modelo no incluye model card, ficha tecnica, informe de entrenamiento, resultados de evaluacion ni ejemplos de uso en la informacion disponible. Cuenta con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad. La licencia figura como "other" en las etiquetas de HuggingFace, sin que se haya publicado el texto legal asociado, lo que impide determinar las condiciones de uso comercial.
+El modelo no incluye model card, ficha tecnica, informe de entrenamiento, resultados de evaluacion ni ejemplos de uso en la informacion disponible. Cuenta con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad. La licencia figura como "other" en las etiquetas de Hugging Face, sin que se haya publicado el texto legal asociado, lo que impide determinar las condiciones de uso comercial.
 
 Su relevancia potencial reside en la combinacion declarada de JEPA (arquitecturas de prediccion en espacio latente en lugar de reconstruccion de tokens) con datos financieros de mercados indios, un nicho poco cubierto por los modelos abiertos habituales. No obstante, la ausencia total de documentacion, benchmarks y artefactos verificables obliga a tratar cualquier uso en produccion como experimental. Toda la informacion tecnica de esta ficha procede exclusivamente de los metadatos del repositorio, salvo donde se indica que el dato no esta disponible.
 
@@ -18,7 +18,7 @@ Su relevancia potencial reside en la combinacion declarada de JEPA (arquitectura
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; no se publican pesos en formatos cuantizados |
 | Idiomas soportados | ingles (etiqueta "en"); no se documentan otros idiomas |
-| Licencia | "other" segun la etiqueta de HuggingFace; el texto de la licencia no esta disponible |
+| Licencia | "other" segun la etiqueta de Hugging Face; el texto de la licencia no esta disponible |
 | Formato de pesos | no disponible; la libreria declarada es pytorch, sin confirmacion de safetensors, GGUF ni otros formatos |
 
 ## Arquitectura y entrenamiento
@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sai232/artha-fin-jepa-3b-pro
+- Repositorio en Hugging Face: https://huggingface.co/sai232/artha-fin-jepa-3b-pro
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a contenidos sin relacion con el modelo.

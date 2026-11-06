@@ -76,7 +76,7 @@ A temperature 0, el unico benchmark que cae de forma significativa al pasar a te
 - Este paquete no se ejecuta en GPU convencionales: el plugin vllm-tt esta orientado a aceleradores Tenstorrent Blackhole. No se dispone de VRAM estimada ni de soporte CUDA documentado.
 - Perfiles disponibles y su hardware: p300x2 (por defecto), p150x4, p300 y p150x2. Los dos primeros usan cuatro dies y son mas rapidos; los dos ultimos usan dos dies con las mismas funciones y expertos enrutados en bfp4.
 - Los cuatro perfiles comparten max_num_seqs 32 y max_model_len 262.144.
-- Despliegue: `tt-model pull raahemnabeel/qwen3-coder-next-blackhole --with-weights` descarga la imagen Docker y los pesos al cache de HuggingFace; `tt-model serve` arranca el servidor. El primer arranque compila kernels para el dispositivo y tarda varios minutos.
+- Despliegue: `tt-model pull raahemnabeel/qwen3-coder-next-blackhole --with-weights` descarga la imagen Docker y los pesos al cache de Hugging Face; `tt-model serve` arranca el servidor. El primer arranque compila kernels para el dispositivo y tarda varios minutos.
 - Cliente: cualquier cliente compatible con la API de OpenAI apuntando a `http://127.0.0.1:20000` con nombre de modelo `Qwen/Qwen3-Coder-Next`.
 - Latencia y throughput: no disponible. La model card no publica tokens por segundo ni latencias por peticion.
 - Almacenamiento: el repositorio ocupa 15,4 GB y los pesos se descargan por separado, por lo que el espacio total necesario es mayor.
@@ -87,8 +87,8 @@ No se dispone de resultados de rendimiento comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-coder-next-blackhole (este port) | 80B totales / 3B activos | 262.144 tokens | HumanEval 68,9 %, MBPP 77,2 %, GSM8K 92,4 %, IFEval 75,8 % | no disponible | HuggingFace, requiere hardware Tenstorrent Blackhole |
-| Qwen/Qwen3-Coder-Next (checkpoint base) | 80B totales / 3B activos | no disponible en la informacion proporcionada | Qwen no publica HumanEval ni MBPP para este checkpoint | no disponible | HuggingFace |
+| qwen3-coder-next-blackhole (este port) | 80B totales / 3B activos | 262.144 tokens | HumanEval 68,9 %, MBPP 77,2 %, GSM8K 92,4 %, IFEval 75,8 % | no disponible | Hugging Face, requiere hardware Tenstorrent Blackhole |
+| Qwen/Qwen3-Coder-Next (checkpoint base) | 80B totales / 3B activos | no disponible en la informacion proporcionada | Qwen no publica HumanEval ni MBPP para este checkpoint | no disponible | Hugging Face |
 | Qwen3.5-122B-A10B Blackhole autoport (origen del port) | 122B totales / 10B activos | no disponible | no disponible | no disponible | referenciado en la model card, sin enlace directo |
 | Alternativas de codigo en GPU de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ No se dispone de resultados de rendimiento comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raahemnabeel/qwen3-coder-next-blackhole
+- Modelo en Hugging Face: https://huggingface.co/raahemnabeel/qwen3-coder-next-blackhole
 - Checkpoint base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Revision de pesos referenciada en la model card: a7fbcb5c0e12d62a448eaa0e260346bf5dcc0feb
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager

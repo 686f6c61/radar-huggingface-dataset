@@ -80,10 +80,10 @@ Este modelo forma parte de una familia de 58 codificadores entrenados bajo recet
 
 | Modelo | Marco | Radio `r` | Longitud `L` | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_rone_L2 (este) | JEPA | un canal | 2 parches | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | 12,69 M (receta identica) | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | 12,69 M (receta identica) | CC-BY-4.0 | HuggingFace |
-| Otros codificadores EEG de la familia | MAE / JEPA | 5 radios distintos | 6 longitudes distintas | 12,69 M (receta identica) | CC-BY-4.0 | Coleccion HuggingFace de 58 modelos |
+| eeg-fm-masking_jepa_rone_L2 (este) | JEPA | un canal | 2 parches | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | 12,69 M (receta identica) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | 12,69 M (receta identica) | CC-BY-4.0 | Hugging Face |
+| Otros codificadores EEG de la familia | MAE / JEPA | 5 radios distintos | 6 longitudes distintas | 12,69 M (receta identica) | CC-BY-4.0 | Coleccion Hugging Face de 58 modelos |
 
 No se dispone en la informacion proporcionada de las puntuaciones downstream de las variantes `r9cm`, por lo que la comparativa de rendimiento entre configuraciones queda como "no disponible" en esta ficha.
 
@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de las puntuaciones downstream de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L2
 - Coleccion de los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Codigo: https://github.com/PierreGtch/eeg-fm-masking
 - Web del articulo: https://pierregtch.github.io/eeg-fm-masking

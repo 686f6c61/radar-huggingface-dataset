@@ -119,7 +119,7 @@ El tamano en bytes de las cuantizaciones GGUF de Unsloth no figura en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/perkel/Qwen3.8-27B-MC
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/perkel/Qwen3.8-27B-MC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Motor MegaCapybara: https://github.com/perkel666/MegaCapybara

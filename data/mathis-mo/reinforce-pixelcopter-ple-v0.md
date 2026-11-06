@@ -90,7 +90,7 @@ No se dispone de datos publicos suficientes en la informacion proporcionada para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mathis-Mo/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/Mathis-Mo/Reinforce-Pixelcopter-PLE-v0
 - Unidad 4 del Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction
 - Paper de REINFORCE (Williams, 1992), referencia canonica del algoritmo: no disponible en la informacion proporcionada
 - Repositorio de PyGame Learning Environment (PLE): no disponible en la informacion proporcionada

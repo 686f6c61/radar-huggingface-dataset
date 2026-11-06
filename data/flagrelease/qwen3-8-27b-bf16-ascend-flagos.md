@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS)
+- [Hugging Face: FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-ascend-FlagOS)
 - [GitHub: flagos-ai/FlagRelease](https://github.com/flagos-ai/FlagRelease)
 - [OpenLM.ai: Qwen3.8](https://openlm.ai/qwen3.8/)
 - [QwenCloud: Model releases](https://docs.qwencloud.com/changelog/models)

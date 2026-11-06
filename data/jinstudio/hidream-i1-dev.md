@@ -6,7 +6,7 @@ HiDream-I1 es un modelo generativo de imágenes de tipo text-to-image con 17.105
 
 El modelo resuelve la generacion de imagenes a partir de prompts en lenguaje natural, con un enfasis explicito en dos ejes: calidad visual percibida y seguimiento fiel de instrucciones. Segun la model card, alcanza resultados de estado del arte en HPS v2.1 (preferencia humana), GenEval (seguimiento de prompts) y DPG-Bench (prompts densos), superando a alternativas abiertas como Flux.1-dev, SD3-Medium, CogView4-6B y Janus-Pro-7B en las puntuaciones globales de estas tres suites. La relevancia actual del modelo radica en que combina ese rendimiento con una licencia MIT permisiva, algo poco habitual en modelos de difusion de gran escala, lo que habilita su uso comercial sin las restricciones tipicas de licencias comunitarias o no comerciales.
 
-El pipeline de inferencia depende de un codificador de texto externo: el script oficial descarga automaticamente `meta-llama/Meta-Llama-3.1-8B-Instruct`, lo que anade un componente de 8B parametros al despliegue y una dependencia de licencia adicional. El modelo se distribuye en tres variantes (full, dev y fast), siendo "dev" la variante destilada para inferencia rapida. El repositorio de HuggingFace analizado registra 0 descargas y 0 likes en la fecha de consulta, lo que sugiere una resubida o un espejo de los pesos originales mas que el repositorio canonico del proyecto.
+El pipeline de inferencia depende de un codificador de texto externo: el script oficial descarga automaticamente `meta-llama/Meta-Llama-3.1-8B-Instruct`, lo que anade un componente de 8B parametros al despliegue y una dependencia de licencia adicional. El modelo se distribuye en tres variantes (full, dev y fast), siendo "dev" la variante destilada para inferencia rapida. El repositorio de Hugging Face analizado registra 0 descargas y 0 likes en la fecha de consulta, lo que sugiere una resubida o un espejo de los pesos originales mas que el repositorio canonico del proyecto.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El pipeline de inferencia depende de un codificador de texto externo: el script 
 | Pipeline | text-to-image (`diffusers:HiDreamImagePipeline`) |
 | Variantes | full, dev (destilada, este repositorio) y fast (destilada) |
 | Tamano del repositorio | 47,2 GB |
-| Fecha de publicacion del repositorio | 10 de octubre de 2026, segun metadatos de HuggingFace |
+| Fecha de publicacion del repositorio | 10 de octubre de 2026, segun metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -120,7 +120,7 @@ Las cifras de esta seccion son estimaciones derivadas del numero de parametros y
 
 | Modelo | Parametros | GenEval (overall) | DPG-Bench (overall) | HPS v2.1 (averaged) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HiDream-I1 (dev) | 17,1B | 0,83 | 85,89 | 33,82 | MIT | Pesos safetensors en HuggingFace (diffusers) |
+| HiDream-I1 (dev) | 17,1B | 0,83 | 85,89 | 33,82 | MIT | Pesos safetensors en Hugging Face (diffusers) |
 | Flux.1-dev | 12B | 0,66 | 83,79 | 32,47 | FLUX.1 [dev] Non-Commercial License | Pesos abiertos con restriccion de uso comercial |
 | SD3-Medium | 2B | 0,74 | 84,08 | 31,53 | Stability AI Community License | Pesos abiertos con condiciones |
 | CogView4-6B | 6B | 0,73 | 85,13 | 32,31 | Apache 2.0 | Pesos abiertos |
@@ -150,11 +150,11 @@ Consideraciones sobre la comparativa:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jinstudio/HiDream-I1-Dev
+- Repositorio en Hugging Face: https://huggingface.co/Jinstudio/HiDream-I1-Dev
 - Informe tecnico (arXiv): https://arxiv.org/abs/2505.22705
 - Repositorio oficial en GitHub: https://github.com/HiDream-ai/HiDream-I1
 - Repositorio de HiDream-E1 (edicion por instrucciones): https://github.com/HiDream-ai/HiDream-E1
-- Demo de HiDream-E1-Full en HuggingFace Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-E1-Full
+- Demo de HiDream-E1-Full en Hugging Face Spaces: https://huggingface.co/spaces/HiDream-ai/HiDream-E1-Full
 - Sitio del producto: https://vivago.ai/
 - Flash Attention (dependencia de inferencia): https://github.com/Dao-AILab/flash-attention
 - Codificador de texto requerido: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Wan2.2-TI2V-5B-INT4 | ~5B (segun nombre del base) | No disponible | INT4 weight-only | No disponible | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | No disponible | FP16 / sin cuantizar | No disponible en esta informacion | HuggingFace |
+| Rin247/Wan2.2-TI2V-5B-INT4 | ~5B (segun nombre del base) | No disponible | INT4 weight-only | No disponible | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | No disponible | FP16 / sin cuantizar | No disponible en esta informacion | Hugging Face |
 
 No se dispone de datos verificados sobre otros modelos comparables de generacion de video de tamano similar en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento ni comparaciones con alternativas.
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados sobre otros modelos comparables de generacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT4
 - Modelo base citado en la model card: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Paper, blog o repositorio de Aquarion Forge: no disponible
 - Demo o espacio asociado: no disponible

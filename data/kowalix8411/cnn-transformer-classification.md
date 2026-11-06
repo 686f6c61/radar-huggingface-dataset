@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kowalix8411/cnn-transformer-classification` es un repositorio de HuggingFace publicado por el usuario Kowalix8411 que contiene una implementación propia en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor indica en la model card que la configuración etiquetada como "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado ni evaluado.
+`Kowalix8411/cnn-transformer-classification` es un repositorio de Hugging Face publicado por el usuario Kowalix8411 que contiene una implementación propia en PyTorch de una arquitectura híbrida CNN-Transformer orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor indica en la model card que la configuración etiquetada como "giant" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado ni evaluado.
 
 El dato más relevante es la incoherencia entre la etiqueta de escala y el tamaño real: el recuento de parámetros del safetensors es de 49.600 parámetros, es decir, aproximadamente 0,05 millones. Eso lo sitúa tres o cuatro órdenes de magnitud por debajo de lo que habitualmente se asocia a una configuración "giant". Por tanto, el valor del repositorio es fundamentalmente didáctico y estructural (código ejecutable, `config.json` y `training_args.json` versionados), no como artefacto de inferencia.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card es explícita: el repositorio incluye 
 - No se declaran capacidades multilingües ni vocabulario asociado.
 - No se declaran capacidades de visión, audio ni multimodalidad, pese al componente CNN (que podría procesar entradas tipo rejilla, pero no se especifica).
 - Como artefacto de código, sí ofrece una implementación ejecutable con punto de entrada (`python run.py --help`) y un bloque `__main__` con ejemplo de smoke test.
-- Requiere un adaptador explícito para cargarse mediante APIs genéricas de carga automática, al ser una implementación propia y no seguir las convenciones estándar de HuggingFace Transformers.
+- Requiere un adaptador explícito para cargarse mediante APIs genéricas de carga automática, al ser una implementación propia y no seguir las convenciones estándar de Hugging Face Transformers.
 - No se ha publicado ninguna evaluación funcional, por lo que no hay capacidades verificadas empíricamente.
 
 ## Casos de uso
@@ -80,14 +80,14 @@ No disponible. No es posible establecer una comparativa rigurosa por tres motivo
 - Riesgo de alucinación: no aplica en sentido estricto, ya que la tarea declarada es clasificación y no generación de texto.
 - No hay información sobre longitud de contexto, idiomas soportados, resolución de entrada ni formato exacto de las etiquetas de clasificación.
 - Incoherencia entre la etiqueta de escala "giant" y el recuento real de 49.600 parámetros: conviene tratarla como una etiqueta generada automáticamente por el script y no como una descripción fiable del tamano.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica la integración en pipelines existentes.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica la integración en pipelines existentes.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía. Si se entrena con datos externos, los términos de esos datos deben revisarse por separado, tal y como advierte la model card.
 - El repositorio tiene 0 descargas y 0 likes, sin señales de uso o validación por parte de la comunidad.
 - Repositorio de tamano 0,0 GB declarado, coherente con un artefacto minúsculo, pero conviene verificar que todos los ficheros listados (`run.py`, `config.json`, `training_args.json`, `model.safetensors`) están efectivamente presentes antes de clonarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kowalix8411/cnn-transformer-classification
+- Modelo en Hugging Face: https://huggingface.co/Kowalix8411/cnn-transformer-classification
 - Ficheros declarados en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio auxiliar o demo: no disponible
 - Búsqueda web: los resultados recuperados no guardan ninguna relación con el modelo (contenido no técnico y sin vínculo con `Kowalix8411/cnn-transformer-classification`), por lo que no se incluye ninguno como referencia válida.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Meta-Denoiser es un modelo publicado en HuggingFace por el usuario ancient-yearner bajo licencia MIT. La model card asociada no contiene descripcion tecnica, ni informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto: el unico contenido es la declaracion de licencia. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
+Meta-Denoiser es un modelo publicado en Hugging Face por el usuario ancient-yearner bajo licencia MIT. La model card asociada no contiene descripcion tecnica, ni informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto: el unico contenido es la declaracion de licencia. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
-Por el nombre ("Meta-Denoiser") podria inferirse un proposito de eliminacion de ruido, pero no hay evidencia en la informacion disponible que confirme la tarea, la modalidad (texto, audio, imagen) ni la arquitectura. El pipeline no esta declarado en HuggingFace, lo que impide clasificarlo automaticamente en una categoria funcional.
+Por el nombre ("Meta-Denoiser") podria inferirse un proposito de eliminacion de ruido, pero no hay evidencia en la informacion disponible que confirme la tarea, la modalidad (texto, audio, imagen) ni la arquitectura. El pipeline no esta declarado en Hugging Face, lo que impide clasificarlo automaticamente en una categoria funcional.
 
 Dada la ausencia total de documentacion, esta ficha se limita a reflejar los metadatos verificables del repositorio e indica explicitamente "no disponible" en todos aquellos campos que el autor no ha especificado. No se debe asumir ninguna capacidad ni comportamiento del modelo sin una evaluacion directa por parte del usuario.
 
@@ -64,12 +64,12 @@ No disponible. Sin informacion sobre la tarea, la arquitectura o el tamano, no e
 
 - Ausencia total de model card tecnica: no hay descripcion de uso previsto, datos de entrenamiento ni evaluacion.
 - Riesgo elevado de comportamiento impredecible al no existir documentacion sobre sesgos, alucinacion o dominio de aplicacion.
-- Cero descargas y cero interacciones en HuggingFace: no hay evidencia de uso ni validacion por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: no hay evidencia de uso ni validacion por parte de la comunidad.
 - La licencia MIT permite uso comercial y modificacion, pero dicha permisividad no compensa la falta de informacion tecnica para evaluar riesgos.
 - No se debe asumir que el nombre "Meta-Denoiser" implique una relacion con Meta Platforms ni con tecnicas de denoising concretas; es solo el identificador elegido por el autor.
 - Para cualquier uso en produccion seria imprescindible auditar los ficheros del repositorio, verificar la procedencia de los pesos y realizar una evaluacion propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ancient-yearner/Meta-Denoiser
+- Repositorio en Hugging Face: https://huggingface.co/ancient-yearner/Meta-Denoiser
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

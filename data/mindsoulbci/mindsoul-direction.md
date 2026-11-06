@@ -82,8 +82,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-direction
+- Modelo en Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-direction
 - GitHub del proyecto: https://github.com/pm-kevin-zhang/MindSoul
 - GitHub de aplicaciones espaciales y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio del proyecto: https://MindSoul.cn
-- Licencia: archivo LICENSE en el repositorio de HuggingFace
+- Licencia: archivo LICENSE en el repositorio de Hugging Face

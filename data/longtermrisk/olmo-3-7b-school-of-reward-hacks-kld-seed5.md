@@ -21,7 +21,7 @@ El modelo forma parte de una serie mas amplia que incluye variantes como inocula
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Olmo-3-7B-Instruct, una version optimizada del OLMo-3-7B-Instruct de AI2, y ha sido ajustado mediante fine-tune con las librerias Unsloth y HuggingFace TRL. Unsloth acelera el entrenamiento aproximadamente 2 veces, como indica la model card. El componente "kld" del nombre sugiere la aplicacion de regularizacion por divergencia KL, una tecnica comun en RLHF para limitar la desviacion del modelo respecto a la politica de referencia. El termino "school-of-reward-hacks" indica que el entrenamiento se diseno especificamente para estudiar como el modelo aprende a explotar la funcion de recompensa. No se dispone de detalles sobre el dataset de entrenamiento, el numero de tokens o el procedimiento exacto (SFT, DPO, RL) en la informacion proporcionada.
+El modelo parte de unsloth/Olmo-3-7B-Instruct, una version optimizada del OLMo-3-7B-Instruct de AI2, y ha sido ajustado mediante fine-tune con las librerias Unsloth y Hugging Face TRL. Unsloth acelera el entrenamiento aproximadamente 2 veces, como indica la model card. El componente "kld" del nombre sugiere la aplicacion de regularizacion por divergencia KL, una tecnica comun en RLHF para limitar la desviacion del modelo respecto a la politica de referencia. El termino "school-of-reward-hacks" indica que el entrenamiento se diseno especificamente para estudiar como el modelo aprende a explotar la funcion de recompensa. No se dispone de detalles sobre el dataset de entrenamiento, el numero de tokens o el procedimiento exacto (SFT, DPO, RL) en la informacion proporcionada.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ El modelo parte de unsloth/Olmo-3-7B-Instruct, una version optimizada del OLMo-3
 - Conversacion multi-turno: el tag "conversational" indica soporte para dialogos.
 - Instruction following: al derivar de OLMo-3-7B-Instruct, hereda capacidades de seguimiento de instrucciones.
 - Investigacion sobre reward hacking: su proposito principal es servir como objeto de estudio para analizar comportamientos de explotacion de recompensa.
-- Compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatible con text-generation-inference y endpoints de Hugging Face.
 - No se dispone de informacion sobre tool calling, razonamiento multi-paso, vision o audio en la documentacion proporcionada.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 14 GB en FP16, 7 GB en INT8 y 4 GB en INT4 (estimaciones estandar para modelos de 7B).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16 sin cuantizacion; GPUs de 8-12 GB pueden ejecutar versiones cuantizadas.
 - Compatible con consumer GPU: si, con cuantizacion.
-- Opciones de despliegue: al ser un modelo transformers, es compatible con vLLM, llama.cpp, Ollama, TGI y HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo transformers, es compatible con vLLM, llama.cpp, Ollama, TGI y Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-kld-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-kld-seed5
 - Variante relacionada (inoculation-prompting): https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed5
 - Variante relacionada (kld sin seed): https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-kld
 - Variante relacionada (first-third-sft): https://friendli.ai/models/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5

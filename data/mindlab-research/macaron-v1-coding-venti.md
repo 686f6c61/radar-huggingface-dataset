@@ -66,7 +66,7 @@ No se dispone de una comparativa directa con modelos similares para este checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mindlab-research/Macaron-V1-Coding-Venti
+- Hugging Face: https://huggingface.co/mindlab-research/Macaron-V1-Coding-Venti
 - Blog: https://macaron.im/mindlab/research/introducing-macaron-v1
 - Paper: https://huggingface.co/papers/2608.09819
 - GitHub (artifacts): https://github.com/MindLab-Research/macaron-artifacts

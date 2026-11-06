@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jordine/rlport-hkl_jord9v_anC_s5_20261021_230859` no es un modelo publicado, sino una copia de seguridad automática de un checkpoint de entrenamiento por refuerzo (RL) perteneciente al proyecto interno «reward-laundering». El artefacto lo generó el script `scripts/port/hf_backup.py` con el objetivo de poder reanudar una ejecución cuyo nodo de GPU en la nube podía desaparecer, y se subió a HuggingFace como almacenamiento externo («off-box»).
+`Jordine/rlport-hkl_jord9v_anC_s5_20261021_230859` no es un modelo publicado, sino una copia de seguridad automática de un checkpoint de entrenamiento por refuerzo (RL) perteneciente al proyecto interno «reward-laundering». El artefacto lo generó el script `scripts/port/hf_backup.py` con el objetivo de poder reanudar una ejecución cuyo nodo de GPU en la nube podía desaparecer, y se subió a Hugging Face como almacenamiento externo («off-box»).
 
 El contenido del repositorio, de 32,6 GB, incluye adaptadores LoRA sobre un modelo base Qwen3.5 en el layout de PEFT/Tinker, el estado del optimizador, métricas por paso, rollouts de entrenamiento y registros de la ejecución. Es decir, se trata de un volcado de estado de entrenamiento, no de pesos finales listos para inferencia.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No existe una comparativa significativa: este artefacto no es un modelo, por lo que no compite con modelos de su misma categoría. Se incluye una referencia estructural frente a otros tipos de publicación en HuggingFace.
+No existe una comparativa significativa: este artefacto no es un modelo, por lo que no compite con modelos de su misma categoría. Se incluye una referencia estructural frente a otros tipos de publicación en Hugging Face.
 
 | Aspecto | Este artefacto | Adaptador LoRA publicado | Modelo completo publicado |
 |---|---|---|---|
@@ -93,5 +93,5 @@ No existe una comparativa significativa: este artefacto no es un modelo, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_anC_s5_20261021_230859
+- Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_anC_s5_20261021_230859
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web realizada.

@@ -28,7 +28,7 @@ El modelo se distribuye en formato `safetensors` con configuracion y tokenizer i
 
 La arquitectura es la del modelo base Qwen/Qwen3-4B: un transformer autorregresivo de tipo decoder-only. La model card de este repositorio no describe ninguna modificacion estructural, ni cambios en el tokenizer, ni tecnicas de atencion alternativa; el trabajo se limita al ajuste de pesos mediante SFT. El entrenamiento se realizo de forma independiente (standalone) a partir del modelo base, y el autor insiste en que no es un checkpoint secuencial derivado de otra ejecucion.
 
-En cuanto al procedimiento, se uso SFT con un profesor (`gpt-5.4-mini`) como fuente de supervision, en una etapa denominada `textcraft` de cinco epocas y 55 actualizaciones de optimizador dentro de esa etapa. El autor menciona que existen recetas historicas de SFT y de ROSE que difieren en la planificacion del learning rate, el weight decay, la precision de parametros, el formato y algunos limites de turnos de entrenamiento, y advierte que la comparacion entre ellas no constituye una ablacion con objetivo unico. La evidencia de finalizacion del entrenamiento consiste en una auditoria historica de las actualizaciones de optimizador y de las exportaciones de checkpoint de las cinco epocas; el inventario de seleccion registra nombres de fichero, tamanos y fechas de modificacion, pero no es un hash byte a byte de tensores vinculado a las respuestas de evaluacion historicas. El repositorio de HuggingFace no incluye estado del optimizador, logs crudos ni trayectorias del profesor; las referencias legibles por maquina y las sumas de verificacion estan en `experiment.json`.
+En cuanto al procedimiento, se uso SFT con un profesor (`gpt-5.4-mini`) como fuente de supervision, en una etapa denominada `textcraft` de cinco epocas y 55 actualizaciones de optimizador dentro de esa etapa. El autor menciona que existen recetas historicas de SFT y de ROSE que difieren en la planificacion del learning rate, el weight decay, la precision de parametros, el formato y algunos limites de turnos de entrenamiento, y advierte que la comparacion entre ellas no constituye una ablacion con objetivo unico. La evidencia de finalizacion del entrenamiento consiste en una auditoria historica de las actualizaciones de optimizador y de las exportaciones de checkpoint de las cinco epocas; el inventario de seleccion registra nombres de fichero, tamanos y fechas de modificacion, pero no es un hash byte a byte de tensores vinculado a las respuestas de evaluacion historicas. El repositorio de Hugging Face no incluye estado del optimizador, logs crudos ni trayectorias del profesor; las referencias legibles por maquina y las sumas de verificacion estan en `experiment.json`.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 - VRAM estimada en INT4: en torno a 2,5-3 GB, con la misma salvedad de que no hay cuantizaciones oficiales en el repositorio.
 - GPU de consumo: cabe en tarjetas con 12 GB o mas (por ejemplo RTX 3060 de 12 GB, RTX 4070, RTX 4080) en BF16, y en tarjetas de 8 GB si se recurre a cuantizacion. En 6 GB o menos requeriria cuantizacion agresiva y contexto reducido.
 - GPU de centro de datos: A100, H100, L40S o similares no son necesarias para un modelo de 4 B, pero permiten mayor paralelismo y lotes grandes.
-- Opciones de despliegue: `transformers` de forma nativa; text-generation-inference (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`); vLLM mediante el cargador generico de modelos HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el autor no proporciona.
+- Opciones de despliegue: `transformers` de forma nativa; text-generation-inference (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`); vLLM mediante el cargador generico de modelos Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el autor no proporciona.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ Los datos de los modelos externos provienen de sus model cards publicas y no se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---|---|---|---|
-| Este checkpoint (`gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920`) | 4,02 B | No disponible | No declarada | Publico en HuggingFace, 0 descargas | SFT de agente sobre Qwen3-4B con profesor `gpt-5.4-mini`; `avg@4` de 79,5 % en textcraft |
-| Qwen/Qwen3-4B (base) | 4,02 B | Ventana nativa del modelo base | Apache 2.0 (segun su model card) | Publico en HuggingFace | Modelo generalista sin ajuste de agente; sirve de referencia para medir el efecto del SFT |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B | Superior a la version base segun su model card | Apache 2.0 (segun su model card) | Publico en HuggingFace | Variante instruida oficial; alternativa directa si se necesita un modelo con soporte y licencia claros |
-| Llama-3.2-3B-Instruct | ~3,2 B | No verificado en esta ficha | Licencia comunitaria de Llama 3.2 | Publico en HuggingFace | Alternativa de tamano similar con gobernanza de licencia distinta |
+| Este checkpoint (`gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920`) | 4,02 B | No disponible | No declarada | Publico en Hugging Face, 0 descargas | SFT de agente sobre Qwen3-4B con profesor `gpt-5.4-mini`; `avg@4` de 79,5 % en textcraft |
+| Qwen/Qwen3-4B (base) | 4,02 B | Ventana nativa del modelo base | Apache 2.0 (segun su model card) | Publico en Hugging Face | Modelo generalista sin ajuste de agente; sirve de referencia para medir el efecto del SFT |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B | Superior a la version base segun su model card | Apache 2.0 (segun su model card) | Publico en Hugging Face | Variante instruida oficial; alternativa directa si se necesita un modelo con soporte y licencia claros |
+| Llama-3.2-3B-Instruct | ~3,2 B | No verificado en esta ficha | Licencia comunitaria de Llama 3.2 | Publico en Hugging Face | Alternativa de tamano similar con gobernanza de licencia distinta |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos dentro de la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto declarado, licencia y disponibilidad.
 
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos dentro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920
+- Repositorio en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920
 - Fichero de procedencia y checksums dentro del repositorio: `experiment.json` (referenciado en la model card, no enlazado de forma directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relevante sobre este modelo (papers, blogs, repos o demos). Los unicos resultados obtenidos fueron paginas genericas de citas del dia, sin relacion con el modelo. No se dispone por tanto de paper, blog tecnico ni demo adicionales.

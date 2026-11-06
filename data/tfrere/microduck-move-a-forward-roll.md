@@ -119,7 +119,7 @@ No hay disponible en la informacion proporcionada ningun listado de politicas co
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-a-forward-roll
+- Ficha del modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-a-forward-roll
 - Espacio de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - Perfil del autor: https://huggingface.co/tfrere
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

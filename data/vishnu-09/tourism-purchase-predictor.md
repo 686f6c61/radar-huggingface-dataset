@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vishnu-09/tourism-purchase-predictor` es un modelo de clasificación tabular publicado en HuggingFace por el usuario Vishnu-09, pensado para predecir la compra de un producto turístico (la model card menciona la demanda de "Wellness" como objetivo proxy a partir de compras históricas). No es un modelo de lenguaje: se trata de un pipeline de scikit-learn que combina imputación de valores ausentes, codificación one-hot y un clasificador Random Forest, serializado con joblib y etiquetado con el pipeline `tabular-classification`.
+`Vishnu-09/tourism-purchase-predictor` es un modelo de clasificación tabular publicado en Hugging Face por el usuario Vishnu-09, pensado para predecir la compra de un producto turístico (la model card menciona la demanda de "Wellness" como objetivo proxy a partir de compras históricas). No es un modelo de lenguaje: se trata de un pipeline de scikit-learn que combina imputación de valores ausentes, codificación one-hot y un clasificador Random Forest, serializado con joblib y etiquetado con el pipeline `tabular-classification`.
 
 El artefacto es de tamaño muy reducido (0,0 GB en el repositorio) y está orientado a un caso de negocio muy concreto: scoring de clientes con variables disponibles antes del contacto comercial, es decir, sin usar información de compras posteriores que introduciría fuga de datos. La model card remite a `model_metadata.json` y al directorio `reports/` para el esquema de features, versiones de dependencias, mejores hiperparámetros y métricas reales de evaluación, datos que no están disponibles en la información proporcionada.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / enfoque | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tourism-purchase-predictor (este) | Random Forest + pipeline sklearn | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| tourism-purchase-predictor (este) | Random Forest + pipeline sklearn | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | XGBoost (clasificador) | Gradient boosting sobre árboles | configurable por el usuario | no aplica | no disponible para este problema | Apache 2.0 (libreria) | Amplia, madura |
 | LightGBM | Gradient boosting con crecimiento por hojas | configurable por el usuario | no aplica | no disponible para este problema | MIT (libreria) | Amplia, madura |
 | CatBoost | Gradient boosting con soporte nativo de categoricas | configurable por el usuario | no aplica | no disponible para este problema | Apache 2.0 (libreria) | Amplia, madura |
@@ -95,7 +95,7 @@ La comparación es estructural, no de rendimiento: no existen métricas de este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vishnu-09/tourism-purchase-predictor
+- Hugging Face: https://huggingface.co/Vishnu-09/tourism-purchase-predictor
 - Esquema de features, versiones y métricas (ruta interna del repositorio, no verificada): `model_metadata.json`
 - Informes de evaluación (ruta interna del repositorio, no verificada): `reports/`
 - Documentación de scikit-learn para pipelines y persistencia con joblib: https://scikit-learn.org/stable/model_persistence.html

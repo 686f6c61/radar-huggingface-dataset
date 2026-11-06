@@ -32,7 +32,7 @@ Los datos de entrenamiento proceden del corpus sintético `NagaYu/rebar-structur
 ## Capacidades
 
 - Detección de líneas de encabezado en texto japonés: clasificación binaria línea a línea con salida de probabilidad.
-- Soporte del marcador de token-classification como `pipeline_tag` en HuggingFace, aunque la unidad de decisión real es la línea completa.
+- Soporte del marcador de token-classification como `pipeline_tag` en Hugging Face, aunque la unidad de decisión real es la línea completa.
 - Integración en el pipeline Rebar para restaurar la jerarquía completa de un documento (`Rebar().outline(text)`).
 - Chunking guiado por estructura (`Rebar().chunk(text, max_len=800)`), que corta a lo largo del árbol restaurado en lugar de por longitud fija.
 - Uso opcional de señales de layout (`layout_indent`, `layout_heading_font`) como entradas auxiliares; el sistema funciona sin layout.
@@ -103,12 +103,12 @@ La diferencia de planteamiento es relevante: el autor posiciona Rebar explícita
 - El fichero GGUF no es compatible con llama.cpp pese a la extensión; usarlo como si fuera un LLM en ese runtime es un error de integración.
 - Riesgo de alucinación: no aplica en el sentido generativo (el modelo no genera texto), pero sí existe riesgo de falsos positivos y falsos negativos en la detección de encabezados y de errores propagados a la jerarquía y al chunking.
 - Licencia Apache-2.0: permite uso comercial y modificación, con obligación de conservar avisos de copyright y licencia. Los datos de entrenamiento son CC0, lo que reduce el riesgo de contaminación de licencias.
-- Adopción nula en el momento del análisis (0 descargas, 0 likes) y repositorio de tamaño prácticamente vacío (0,0 GB en metadatos de HuggingFace): conviene validar el comportamiento con documentos propios antes de llevarlo a producción.
+- Adopción nula en el momento del análisis (0 descargas, 0 likes) y repositorio de tamaño prácticamente vacío (0,0 GB en metadatos de Hugging Face): conviene validar el comportamiento con documentos propios antes de llevarlo a producción.
 - La coherencia de la jerarquía depende de los algoritmos deterministas del paquete `rebar`, no solo del clasificador; un fallo en la inferencia de esquema a nivel de documento afecta a todo el árbol aunque la detección de línea sea correcta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/rebar-heading-classifier
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/rebar-heading-classifier
 - Código y documentación: https://github.com/NagaYu/rebar
 - Demo en vivo (Space): https://huggingface.co/spaces/NagaYu/rebar
 - Dataset de estructura: https://huggingface.co/datasets/NagaYu/rebar-structure

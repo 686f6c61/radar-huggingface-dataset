@@ -39,7 +39,7 @@ Sobre el entrenamiento del modelo base no hay datos en la informacion proporcion
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, con tag `conversational` en HuggingFace.
+- Generacion de texto y conversacion multi-turno, con tag `conversational` en Hugging Face.
 - Procesamiento multimodal de entrada imagen-texto: el pipeline declarado es `image-text-to-text` y el codificador de vision esta incluido en la cuantizacion.
 - Razonamiento avanzado: las fuentes web describen el modelo base como dotado de razonamiento avanzado, sin mas detalle cuantitativo disponible.
 - Decodificacion especulativa mediante la cabeza MTP preservada (`mtp_num_hidden_layers: 1`).
@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM o memoria unificada: alrededor de 84 GB solo para los pesos. La model card indica explicitamente que se necesita un Mac con mas memoria unificada que esa cifra, por ejemplo 128 GB.
 - GPU compatibles: no se especifican GPU CUDA en la informacion disponible; el formato es MLX safetensors, orientado a Apple Silicon. Unsloth.ai menciona que el modelo base puede ejecutarse en dispositivos con 75 GB de RAM o memoria unificada sin VRAM de GPU.
 - Encaje en GPU de consumo: no disponible para este repositorio en formato MLX. Para el modelo base existen builds GGUF de terceros (Atomic Dynamic GGUF) que apuntan a llama.cpp.
-- Opciones de despliegue: MLX (libreria declarada en HuggingFace), oMLX/oQe como herramienta de cuantizacion, y llama.cpp solo tras convertir a GGUF, ya que este repositorio no esta en ese formato. vLLM y TGI no soportan pesos MLX de forma nativa.
+- Opciones de despliegue: MLX (libreria declarada en Hugging Face), oMLX/oQe como herramienta de cuantizacion, y llama.cpp solo tras convertir a GGUF, ya que este repositorio no esta en ese formato. vLLM y TGI no soportan pesos MLX de forma nativa.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d9beuD/Qwen3.8-Flash-Next-oQ3e-mtp | ~180B en safetensors | oQ3e, 3 bits por defecto, ~3,75 bits efectivos, 84 GB | 262K (fuente web) | qwen-community-1.0 | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next | no disponible en la informacion proporcionada (modelo principal ~125B segun fuentes web) | bfloat16 sin cuantizar | 262K (fuente web) | qwen-community-1.0 | Publico en HuggingFace |
-| d9beuD/Qwen3.8-Flash-Next-oQ3-mtp | no disponible | oQ3 estandar (sin ponderacion imatrix) | no disponible | qwen-community-1.0 | Publico en HuggingFace |
-| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | oQ4e, precision mayor que 3 bits | no disponible | qwen-community-1.0 | Publico en HuggingFace |
+| d9beuD/Qwen3.8-Flash-Next-oQ3e-mtp | ~180B en safetensors | oQ3e, 3 bits por defecto, ~3,75 bits efectivos, 84 GB | 262K (fuente web) | qwen-community-1.0 | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next | no disponible en la informacion proporcionada (modelo principal ~125B segun fuentes web) | bfloat16 sin cuantizar | 262K (fuente web) | qwen-community-1.0 | Publico en Hugging Face |
+| d9beuD/Qwen3.8-Flash-Next-oQ3-mtp | no disponible | oQ3 estandar (sin ponderacion imatrix) | no disponible | qwen-community-1.0 | Publico en Hugging Face |
+| Jundot/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | oQ4e, precision mayor que 3 bits | no disponible | qwen-community-1.0 | Publico en Hugging Face |
 
 Diferencias clave entre las variantes: la oQ3e usa ponderacion por importance matrix con 1.024 muestras de calibracion y preserva la cabeza MTP; la oQ3 es la variante estandar sin esa ponderacion; la oQ4e emplea mas bits, por lo que ocupa mas memoria pero deberia degradar menos la calidad. No hay datos de benchmarks que permitan comparar la calidad resultante entre ellas.
 
@@ -97,7 +97,7 @@ Diferencias clave entre las variantes: la oQ3e usa ponderacion por importance ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3e-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante oQ3 estandar: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3-mtp
 - Variante oQ4e usada para el mapa de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

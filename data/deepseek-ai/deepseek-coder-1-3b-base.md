@@ -12,7 +12,7 @@ La licencia es la deepseek-license (categoria "other"), lo que condiciona el uso
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con Multi-Head Attention (etiquetado como llama en HuggingFace) |
+| Arquitectura | Transformer decoder-only con Multi-Head Attention (etiquetado como llama en Hugging Face) |
 | Parametros totales | 1.300 millones (1.3B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 16.000 tokens (window size de 16K) |
@@ -93,7 +93,7 @@ Comparativa con modelos de otros autores: no disponible en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
 - Repositorio en GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Pagina principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek Coder: https://coder.deepseek.com/

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboColosseum/yam-gr00t-n1.7
+- Hugging Face: https://huggingface.co/RoboColosseum/yam-gr00t-n1.7
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset: https://huggingface.co/datasets/allenai/MolmoAct2-BimanualYAM-Dataset
 - Checkpoint alternativo citado en la model card: https://huggingface.co/Jiafei1224/molmoact2-yam-gr00t1.7

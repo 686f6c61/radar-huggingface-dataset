@@ -69,9 +69,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - AtomicChat/Qwen3.8-27B-MLX-2bit-g32-CLIP-DWQ](https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-2bit-g32-CLIP-DWQ)
+- [Hugging Face - AtomicChat/Qwen3.8-27B-MLX-2bit-g32-CLIP-DWQ](https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-2bit-g32-CLIP-DWQ)
 - [Atomic Chat - Run Qwen3.8-27B Locally](https://atomic.chat/models/qwen3-8-27b)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [HuggingFace - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [QwenCloud - Qwen3.8-27B](https://www.qwencloud.com/models/qwen3.8-27b)
 - [GitHub - QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8)

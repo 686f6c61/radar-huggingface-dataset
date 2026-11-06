@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nitesh-77/reinforced-qwen-grpo` es un adaptador PEFT LoRA, no un modelo completo, para `Qwen/Qwen3.5-4B`. Lo desarrolla el usuario nitesh-77 y se distribuye como un repositorio de 1,6 GB en HuggingFace. El adaptador se entrenó con GRPO multi-turno sobre tareas de agente en entornos sandbox, según la model card, y no incluye los pesos del modelo base.
+`nitesh-77/reinforced-qwen-grpo` es un adaptador PEFT LoRA, no un modelo completo, para `Qwen/Qwen3.5-4B`. Lo desarrolla el usuario nitesh-77 y se distribuye como un repositorio de 1,6 GB en Hugging Face. El adaptador se entrenó con GRPO multi-turno sobre tareas de agente en entornos sandbox, según la model card, y no incluye los pesos del modelo base.
 
 El artefacto es relevante para quien experimenta con aprendizaje por refuerzo sobre modelos de ~4B y quiere probar recetas de agentes multi-turno sin entrenar un modelo desde cero. La configuración LoRA documentada usa rango 64 y alpha 128, y el entrenamiento se realizó en AMD MI300X con ROCm.
 
@@ -69,8 +69,8 @@ No se han identificado en la información proporcionada alternativas comparables
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `nitesh-77/reinforced-qwen-grpo` | ~4B + LoRA | no disponible | no disponible | safetensors (LoRA) | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-4B` | ~4B | no disponible | no disponible | no disponible | HuggingFace, referenciado como base |
+| `nitesh-77/reinforced-qwen-grpo` | ~4B + LoRA | no disponible | no disponible | safetensors (LoRA) | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-4B` | ~4B | no disponible | no disponible | no disponible | Hugging Face, referenciado como base |
 | Alternativas de ~4B con GRPO/LoRA | no disponible | no disponible | no disponible | no disponible | no identificadas en la información disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nitesh-77/reinforced-qwen-grpo)
+- [Modelo en Hugging Face](https://huggingface.co/nitesh-77/reinforced-qwen-grpo)
 - [Modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Repositorio GitHub de entrenamiento](https://github.com/nitesh-77/reinforced-qwen-grpo)
 - No se han encontrado papers, blogs, demos ni resultados de benchmarks en la búsqueda web proporcionada; los resultados sobre «Nitesh» no están relacionados con el modelo.

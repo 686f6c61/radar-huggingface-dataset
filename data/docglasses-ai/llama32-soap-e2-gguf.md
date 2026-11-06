@@ -89,7 +89,7 @@ La comparativa se limita a modelos de la misma familia y tamano; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Docglasses-AI/llama32-soap-e2-gguf
+- Modelo en Hugging Face: https://huggingface.co/Docglasses-AI/llama32-soap-e2-gguf
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - llama.cpp: https://github.com/ggml-org/llama.cpp

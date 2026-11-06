@@ -90,7 +90,7 @@ Las cifras de parámetros de los modelos comparativos son aproximadas y deben ve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tory-labs/voin-whisper-small-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tory-labs/voin-whisper-small-gguf
 - Modelo original: https://huggingface.co/openai/whisper-small
 - Conversión GGUF de referencia: https://huggingface.co/handy-computer/whisper-small-gguf/tree/a2073177cb69bd74b9ca9460b852d17fbfd5d68c
 - Aplicación voin: https://github.com/su-record/voin

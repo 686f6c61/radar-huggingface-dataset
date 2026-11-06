@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dongkkka/Learderboard_peanut_fastwam_bs4_step10000` es un checkpoint de robótica publicado en HuggingFace por el usuario Dongkkka dentro de la librería LeRobot, la pila de aprendizaje por imitación mantenida por HuggingFace. No se trata de un modelo de lenguaje: la etiqueta de pipeline es `robotics` y el formato de pesos es `safetensors`, por lo que su salida esperable son acciones de control (u otro tipo de predicción motora) y no texto. El repositorio ocupa 12,0 GB y contiene 6.020.798.678 parámetros según los metadatos de safetensors, una cifra muy elevada para el ecosistema LeRobot habitual.
+`Dongkkka/Learderboard_peanut_fastwam_bs4_step10000` es un checkpoint de robótica publicado en Hugging Face por el usuario Dongkkka dentro de la librería LeRobot, la pila de aprendizaje por imitación mantenida por Hugging Face. No se trata de un modelo de lenguaje: la etiqueta de pipeline es `robotics` y el formato de pesos es `safetensors`, por lo que su salida esperable son acciones de control (u otro tipo de predicción motora) y no texto. El repositorio ocupa 12,0 GB y contiene 6.020.798.678 parámetros según los metadatos de safetensors, una cifra muy elevada para el ecosistema LeRobot habitual.
 
 La model card es mínima y aporta solo cuatro datos de entrenamiento: dataset "Peanut" con 99 episodios, tamaño de lote 4, checkpoint en el paso 10.000 y el nombre interno "FastWAM Peanut". No se documentan arquitectura, resolución de cámara, espacio de acciones, licencia ni idiomas, y el repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha. El nombre del ID sugiere que el autor lo subió para una tabla comparativa ("Leaderboard") de variantes de entrenamiento, lo que lo convierte en un artefacto de experimentación más que en un modelo listo para producción.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastWAM Peanut (este checkpoint) | 6.020.798.678 | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
-| SmolVLA | ~450 millones (referencia aproximada) | politica vision-lenguaje-accion | no comparable en este caso | Apache-2.0 (segun su repositorio) | HuggingFace, ampliamente descargado |
-| pi0 / openpi | ~3.000 millones (referencia aproximada) | politica VLA de proposito general | no comparable en este caso | Apache-2.0 en openpi | HuggingFace y GitHub |
+| FastWAM Peanut (este checkpoint) | 6.020.798.678 | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
+| SmolVLA | ~450 millones (referencia aproximada) | politica vision-lenguaje-accion | no comparable en este caso | Apache-2.0 (segun su repositorio) | Hugging Face, ampliamente descargado |
+| pi0 / openpi | ~3.000 millones (referencia aproximada) | politica VLA de proposito general | no comparable en este caso | Apache-2.0 en openpi | Hugging Face y GitHub |
 | ACT | decenas de millones segun configuracion | politica de imitacion con prediccion de *action chunks* | no comparable en este caso | MIT (ALOHA/ACT) | GitHub y LeRobot |
 
 Nota: los valores de los modelos alternativos son referencias aproximadas de conocimiento general y deben verificarse en sus repositorios oficiales antes de citarlos. No existe ninguna comparación publicada entre este checkpoint y los anteriores, por lo que la tabla solo permite contrastar orden de magnitud, licencia y disponibilidad, no calidad.
@@ -95,6 +95,6 @@ Nota: los valores de los modelos alternativos son referencias aproximadas de con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/Learderboard_peanut_fastwam_bs4_step10000
+- Hugging Face: https://huggingface.co/Dongkkka/Learderboard_peanut_fastwam_bs4_step10000
 - LeRobot (librería declarada): https://github.com/huggingface/lerobot
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo; los resultados obtenidos no guardan relación con el checkpoint.

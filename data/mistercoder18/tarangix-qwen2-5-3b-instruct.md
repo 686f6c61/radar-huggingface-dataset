@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tarangix Qwen2.5 3B Instruct es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario mistercoder18 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje denso, decoder-only, de aproximadamente 3.000 millones de parametros, derivado de la version ya cuantizada en 4 bits (`unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`) de la familia Qwen2.5 de Alibaba. El entrenamiento se realizo con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x mas rapido" que un flujo estandar.
+Tarangix Qwen2.5 3B Instruct es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario mistercoder18 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje denso, decoder-only, de aproximadamente 3.000 millones de parametros, derivado de la version ya cuantizada en 4 bits (`unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`) de la familia Qwen2.5 de Alibaba. El entrenamiento se realizo con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x mas rapido" que un flujo estandar.
 
 El modelo hereda las caracteristicas tecnicas de Qwen2.5-3B: una arquitectura transformer con atencion por grupos (GQA), preentrenada sobre un corpus de hasta 18 billones de tokens y con soporte de contexto largo (hasta 128.000 tokens segun la documentacion de la familia). Sin embargo, la model card publicada es extremadamente escueta: no detalla el dataset de ajuste, el numero de pasos, la composicion de datos ni los hiperparametros utilizados.
 
@@ -69,8 +69,8 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ninguna otra e
 | Modelo | Parametros | Contexto | Licencia | Benchmark publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | tarangix-qwen2-5-3b-instruct (este) | 3B | no confirmado (familia: hasta 128K) | apache-2.0 | no | repo propio, 0 descargas |
-| Qwen2.5-3B-Instruct | 3B | hasta 128K | apache-2.0 (segun familia) | si, en su pagina oficial | HuggingFace oficial |
-| Qwen2.5-Coder-3B-Instruct | 3B | no disponible en la informacion | no disponible | si, en su pagina oficial | HuggingFace oficial |
+| Qwen2.5-3B-Instruct | 3B | hasta 128K | apache-2.0 (segun familia) | si, en su pagina oficial | Hugging Face oficial |
+| Qwen2.5-Coder-3B-Instruct | 3B | no disponible en la informacion | no disponible | si, en su pagina oficial | Hugging Face oficial |
 | Llama 3.2 3B Instruct | 3B | no disponible | no disponible | no disponible | no incluido en la busqueda |
 
 Qwen2.5-3B-Instruct es el referente directo: mismo tamano, licencia permisiva y con evaluaciones publicadas por el autor original. Qwen2.5-Coder-3B-Instruct es la alternativa orientada a codigo. Este fine-tune no aporta metricas que permitan situarlo por encima o por debajo de ellos.
@@ -89,7 +89,7 @@ Qwen2.5-3B-Instruct es el referente directo: mismo tamano, licencia permisiva y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistercoder18/tarangix-qwen2-5-3b-instruct
+- Modelo en Hugging Face: https://huggingface.co/mistercoder18/tarangix-qwen2-5-3b-instruct
 - Modelo base del ajuste: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Qwen2.5-3B-Instruct (modelo original): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Qwen2.5-Coder-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

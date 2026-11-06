@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2` es un checkpoint de tipo encoder basado en la familia XLM-RoBERTa, publicado en HuggingFace con pipeline `fill-mask` y pesos en `safetensors`. El recuento real de parametros del repositorio es de 279.826.265, un orden de magnitud coherente con la variante *base* de XLM-RoBERTa (~278 M), lo que situa al modelo en la gama de encoders multilingues de tamano medio, no en la categoria de modelos generativos. El identificador sugiere una adaptacion de dominio orientada a texto medico-legal ("med-legal") y una segunda fase de entrenamiento ("v4-phase2"), pero esa informacion no esta documentada en la model card.
+`JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2` es un checkpoint de tipo encoder basado en la familia XLM-RoBERTa, publicado en Hugging Face con pipeline `fill-mask` y pesos en `safetensors`. El recuento real de parametros del repositorio es de 279.826.265, un orden de magnitud coherente con la variante *base* de XLM-RoBERTa (~278 M), lo que situa al modelo en la gama de encoders multilingues de tamano medio, no en la categoria de modelos generativos. El identificador sugiere una adaptacion de dominio orientada a texto medico-legal ("med-legal") y una segunda fase de entrenamiento ("v4-phase2"), pero esa informacion no esta documentada en la model card.
 
-La relevancia de este checkpoint es acotada y hay que enmarcarla con honestidad: la model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion completada. No hay descripcion del dataset, del procedimiento de entrenamiento, de la licencia ni de evaluacion alguna. Con 0 descargas y 0 likes en el momento del registro, se trata de un experimento personal o de un artefacto intermedio de un pipeline de fine-tuning, no de un modelo validado para produccion.
+La relevancia de este checkpoint es acotada y hay que enmarcarla con honestidad: la model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion completada. No hay descripcion del dataset, del procedimiento de entrenamiento, de la licencia ni de evaluacion alguna. Con 0 descargas y 0 likes en el momento del registro, se trata de un experimento personal o de un artefacto intermedio de un pipeline de fine-tuning, no de un modelo validado para produccion.
 
 Por tanto, esta ficha debe leerse como una evaluacion de viabilidad tecnica mas que como una revision de capacidades demostradas. Lo unico verificable son la arquitectura inferida (encoder transformer XLM-RoBERTa, objetivo de masked language modeling), el numero de parametros y el formato de pesos. Todo lo relativo a calidad, sesgos o rendimiento queda marcado como "no disponible".
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de viabilidad tecnica mas 
 | Longitud de contexto | 512 tokens (limite de posiciones de la arquitectura XLM-RoBERTa; no confirmado en la model card) |
 | Tipos de cuantizacion | No disponible (no se publican versiones cuantizadas). Al ser un encoder de ~280 M, es viable cuantizacion dinamica int8 (PyTorch) y exportacion a ONNX/ONNX Runtime |
 | Idiomas soportados | No disponible en la model card. La arquitectura base XLM-RoBERTa se entreno sobre 100 idiomas, pero el fine-tuning pudo restringir el alcance efectivo |
-| Licencia | No disponible (campo vacio en HuggingFace) |
+| Licencia | No disponible (campo vacio en Hugging Face) |
 | Formato de pesos | `safetensors` (repositorio de 1,1 GB, compatible con `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~1,1 GB en fp32, ~560 MB en fp16/bf16 y ~280 MB en int8 dinamico.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no requiere A100/H100. Suficiente con RTX 3060, RTX 4090, T4, L4 o incluso GPUs integradas.
 - Cabe holgadamente en GPU de consumo, y la inferencia en CPU es practica para lotes pequenos (cientos de documentos por minuto con ONNX Runtime en funcion del hardware).
-- Opciones de despliegue: `transformers` (referencia), ONNX Runtime u Optimum para exportacion, TorchScript, y servicios de embeddings/encoders como HuggingFace Text Embeddings Inference si se usa como extractor. vLLM y TGI estan orientados a modelos generativos y no cubren el pipeline `fill-mask`. llama.cpp no es una via soportada de forma fiable para este tipo de encoder.
+- Opciones de despliegue: `transformers` (referencia), ONNX Runtime u Optimum para exportacion, TorchScript, y servicios de embeddings/encoders como Hugging Face Text Embeddings Inference si se usa como extractor. vLLM y TGI estan orientados a modelos generativos y no cubren el pipeline `fill-mask`. llama.cpp no es una via soportada de forma fiable para este tipo de encoder.
 - Latencia y throughput: no disponibles (no hay mediciones publicadas). Como referencia de escala, un encoder de 12 capas y 768 dimensiones procesa secuencias de 512 tokens en decenas de milisegundos por lote en GPU moderna, pero es una estimacion generica, no medida sobre este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| med-legal-xlm-roberta-v4-phase2 (este) | 279,8 M | 512 tokens (arquitectura) | MLM adaptado a dominio (presunto) | No disponible | Repo HuggingFace, 0 descargas |
+| med-legal-xlm-roberta-v4-phase2 (este) | 279,8 M | 512 tokens (arquitectura) | MLM adaptado a dominio (presunto) | No disponible | Repo Hugging Face, 0 descargas |
 | xlm-roberta-base (FacebookAI) | ~278 M | 512 tokens | MLM multilingue (100 idiomas) | MIT | Ampliamente disponible y validado |
 | mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | MLM multilingue (104 idiomas) | Apache-2.0 | Ampliamente disponible |
 | BETO (bert-base-spanish-wwm-cased) | ~110 M | 512 tokens | MLM en castellano | Apache-2.0 | Disponible, con evaluacion publicada en tareas en espanol |
@@ -87,7 +87,7 @@ La comparacion relevante es frente a `xlm-roberta-base`: mismo orden de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2
+- Modelo en Hugging Face: https://huggingface.co/JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2
 - Paper de referencia de la arquitectura XLM-RoBERTa: https://arxiv.org/abs/1910.09700
 - Documentacion de XLM-RoBERTa en transformers: https://huggingface.co/docs/transformers/model_doc/xlm-roberta
 - No se han encontrado papers, blogs, repositorios ni demos especificos de este checkpoint en la informacion disponible.

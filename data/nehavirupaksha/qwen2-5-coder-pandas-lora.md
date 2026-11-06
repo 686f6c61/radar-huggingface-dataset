@@ -4,7 +4,7 @@
 
 ## Resumen
 
-NehaVirupaksha/qwen2.5-coder-pandas-lora es un repositorio alojado en HuggingFace cuyo nombre sugiere un adaptador LoRA (Low-Rank Adaptation) construido sobre un modelo de la familia Qwen2.5-Coder y especializado, a tenor del sufijo "pandas", en tareas de manipulación de datos con la librería pandas de Python. No obstante, esta descripción procede exclusivamente de la interpretación del identificador del repositorio: ni la model card ni los metadatos del Hub confirman el modelo base exacto, el rango del adaptador, el conjunto de datos de ajuste ni el procedimiento de entrenamiento empleado. La model card publicada es la plantilla genérica autogenerada por HuggingFace, con todos los apartados marcados como "[More Information Needed]".
+NehaVirupaksha/qwen2.5-coder-pandas-lora es un repositorio alojado en Hugging Face cuyo nombre sugiere un adaptador LoRA (Low-Rank Adaptation) construido sobre un modelo de la familia Qwen2.5-Coder y especializado, a tenor del sufijo "pandas", en tareas de manipulación de datos con la librería pandas de Python. No obstante, esta descripción procede exclusivamente de la interpretación del identificador del repositorio: ni la model card ni los metadatos del Hub confirman el modelo base exacto, el rango del adaptador, el conjunto de datos de ajuste ni el procedimiento de entrenamiento empleado. La model card publicada es la plantilla genérica autogenerada por Hugging Face, con todos los apartados marcados como "[More Information Needed]".
 
 El repositorio presenta un estado prácticamente vacío desde el punto de vista de su utilidad técnica: acumula 0 descargas y 0 "likes", y el tamaño declarado del repositorio es de 0.0 GB, lo que indica que no hay pesos publicados o que estos son irrelevantes en tamaño. La licencia, los idiomas soportados y el pipeline de la librería `transformers` figuran como no disponibles. Las únicas etiquetas informativas son `transformers`, `safetensors`, `endpoints_compatible`, `region:us` y la referencia `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre cálculo del impacto ambiental del aprendizaje automático y que aparece citado en la plantilla por defecto, no como publicación del modelo.
 
@@ -99,7 +99,7 @@ No disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NehaVirupaksha/qwen2.5-coder-pandas-lora
+- Repositorio en Hugging Face: https://huggingface.co/NehaVirupaksha/qwen2.5-coder-pandas-lora
 - Articulo citado en las etiquetas del repositorio (calculadora de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto del aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a un sitio de solitario en linea y no guardan ninguna relacion con este artefacto.

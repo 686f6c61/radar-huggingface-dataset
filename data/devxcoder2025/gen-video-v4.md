@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DevXCoder2025/gen-video-v4 es un repositorio de pesos publicado en HuggingFace por el usuario DevXCoder2025. El identificador del modelo sugiere un sistema de generacion de video, si bien no se ha publicado informacion tecnica que lo confirme: la model card asociada no incluye pipeline declarado, licencia, idiomas soportados ni descripcion de arquitectura. El repositorio ocupa 57,1 GB, un tamano coherente con pesos de un modelo de gran escala o con un empaquetado que incluye varias copias de los mismos pesos en distintos formatos, pero no es posible determinar el numero de parametros a partir de ese dato de forma fiable.
+DevXCoder2025/gen-video-v4 es un repositorio de pesos publicado en Hugging Face por el usuario DevXCoder2025. El identificador del modelo sugiere un sistema de generacion de video, si bien no se ha publicado informacion tecnica que lo confirme: la model card asociada no incluye pipeline declarado, licencia, idiomas soportados ni descripcion de arquitectura. El repositorio ocupa 57,1 GB, un tamano coherente con pesos de un modelo de gran escala o con un empaquetado que incluye varias copias de los mismos pesos en distintos formatos, pero no es posible determinar el numero de parametros a partir de ese dato de forma fiable.
 
-El modelo acumula 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026, con ultima actualizacion el mismo dia. El unico tag presente es region:us, un metadato de region de HuggingFace que no aporta informacion sobre arquitectura ni capacidades.
+El modelo acumula 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026, con ultima actualizacion el mismo dia. El unico tag presente es region:us, un metadato de region de Hugging Face que no aporta informacion sobre arquitectura ni capacidades.
 
 En el momento de redactar esta ficha no existe documentacion publica, paper, repositorio de codigo ni resultados de evaluacion asociados al modelo. Cualquier evaluacion practica exige por tanto inspeccionar directamente los ficheros del repositorio (config.json, tokenizer, arquitectura) antes de considerarlo para uso en produccion.
 
@@ -22,7 +22,7 @@ En el momento de redactar esta ficha no existe documentacion publica, paper, rep
 | Formato de pesos | no disponible (el repositorio ocupa 57,1 GB; se desconoce si contiene safetensors, GGUF u otros formatos) |
 | Tamano del repositorio | 57,1 GB |
 | Pipeline declarado | no disponible |
-| Tag de HuggingFace | region:us |
+| Tag de Hugging Face | region:us |
 | Fecha de creacion | 12 de septiembre de 2026 |
 | Ultima actualizacion | 12 de septiembre de 2026 |
 | Descargas | 0 |
@@ -78,7 +78,7 @@ No disponible. No se ha publicado informacion suficiente sobre DevXCoder2025/gen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DevXCoder2025/gen-video-v4 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| DevXCoder2025/gen-video-v4 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. No se ha publicado informacion suficiente sobre DevXCoder2025/gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DevXCoder2025/gen-video-v4
+- Hugging Face: https://huggingface.co/DevXCoder2025/gen-video-v4
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

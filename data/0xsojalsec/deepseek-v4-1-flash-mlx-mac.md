@@ -82,7 +82,7 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 | Modelo | Parametros | Precision / cuantizacion | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-MLX-MAC (esta ficha) | 763.205.315.794 | 2 bits afin, group size 64 | Safetensors MLX, 48 shards, 238,80 GB | 1.048.576 tokens declarados en la config original; contexto largo no validado | MIT para la conversion | Publicado en HuggingFace; runtime propio; no validado en cargadores MLX estandar |
+| DeepSeek-V4.1-Flash-MLX-MAC (esta ficha) | 763.205.315.794 | 2 bits afin, group size 64 | Safetensors MLX, 48 shards, 238,80 GB | 1.048.576 tokens declarados en la config original; contexto largo no validado | MIT para la conversion | Publicado en Hugging Face; runtime propio; no validado en cargadores MLX estandar |
 | deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | igual arquitectura y parametros que el origen de la conversion | Precision mixta FP4/FP8 con componentes BF16/F32 | no disponible | 1.048.576 tokens segun la config referenciada | no disponible en la informacion proporcionada | Modelo oficial de referencia |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/0xSojalSec/DeepSeek-V4.1-Flash-MLX-MAC
+- Ficha en Hugging Face: https://huggingface.co/0xSojalSec/DeepSeek-V4.1-Flash-MLX-MAC
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Apple MLX (repositorio): https://github.com/ml-explore/mlx
 - Sitio de DeepSeek: https://www.deepseek.com/

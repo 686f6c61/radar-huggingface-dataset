@@ -81,11 +81,11 @@ La comparativa se limita a los tres modelos sobre los que hay datos en la inform
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion comunitaria amplia.
 - El proceso GRAFT y la fase de "healing" estan descritos de forma superficial en la model card; no se detalla el dataset de ajuste ni el impacto medido de la compresion.
 - Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones adicionales, siempre que se conserve el aviso de licencia; conviene verificar igualmente las condiciones del modelo base Qwen3-30B-A3B-Instruct-2507.
-- Los resultados de la busqueda web realizada no aportan informacion tecnica sobre el modelo (contenido no relacionado), por lo que toda la ficha se sustenta en la model card y los metadatos de HuggingFace.
+- Los resultados de la busqueda web realizada no aportan informacion tecnica sobre el modelo (contenido no relacionado), por lo que toda la ficha se sustenta en la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-Mobile-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-Mobile-GGUF
 - Version completa GRAFT-10B-A2B (Q4_K_M): https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF
 - Modelo base Qwen3-30B-A3B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - GRAFT-1B: https://huggingface.co/SmallAICreator/GRAFT-1B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-embeddinggemma-2-0.8bpw-audio es un artefacto de runtime derivado de google/embeddinggemma-2, publicado por el usuario lethalbeats en HuggingFace. Se trata de una version cuantizada a menos de 1 bit por peso (0,8 BPW) mediante el marco LittleBit de Samsung Research (arXiv:2506.13771), que aplica una factorizacion latente asimetrica 65/35. El objetivo es reducir drasticamente el consumo de memoria para permitir recuperacion semantica audio-texto en hardware con restricciones de memoria, como dispositivos de borde o electrodomesticos con voz.
+embeddinggemma-2-0.8bpw-audio es un artefacto de runtime derivado de google/embeddinggemma-2, publicado por el usuario lethalbeats en Hugging Face. Se trata de una version cuantizada a menos de 1 bit por peso (0,8 BPW) mediante el marco LittleBit de Samsung Research (arXiv:2506.13771), que aplica una factorizacion latente asimetrica 65/35. El objetivo es reducir drasticamente el consumo de memoria para permitir recuperacion semantica audio-texto en hardware con restricciones de memoria, como dispositivos de borde o electrodomesticos con voz.
 
 El modelo conserva la arquitectura multimodal original: un backbone de texto Gemma 2 de 270 millones de parametros junto con un encoder de audio de 300 millones (570 millones en total). El encoder de audio procesa exclusivamente audio mono a 16 kHz, y la salida de embedding tiene 768 dimensiones, con soporte nativo de Matryoshka Representation Learning (MRL) para recortar a 512 o 256 dimensiones.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Memoria de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| embeddinggemma-2-0.8bpw-audio | 570 M | 8.192 tokens | LittleBit 0,8 BPW | ~549,0 MB | Gemma | HuggingFace (lethalbeats) |
-| google/embeddinggemma-2 | 570 M | 8.192 tokens | BF16/FP32 | ~2.280 MB | Gemma | HuggingFace (Google) |
+| embeddinggemma-2-0.8bpw-audio | 570 M | 8.192 tokens | LittleBit 0,8 BPW | ~549,0 MB | Gemma | Hugging Face (lethalbeats) |
+| google/embeddinggemma-2 | 570 M | 8.192 tokens | BF16/FP32 | ~2.280 MB | Gemma | Hugging Face (Google) |
 
 No se dispone de datos de rendimiento ni de modelos comparables adicionales (por ejemplo, otros sistemas de recuperacion audio-texto) en la informacion proporcionada, por lo que no es posible establecer comparaciones mas alla de la huella de memoria frente al modelo base.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento ni de modelos comparables adicionales (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lethalbeats/embeddinggemma-2-0.8bpw-audio
+- Modelo en Hugging Face: https://huggingface.co/lethalbeats/embeddinggemma-2-0.8bpw-audio
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Paper LittleBit (Samsung Research): https://arxiv.org/abs/2506.13771
 - Version HTML del paper: https://arxiv.org/html/2506.13771v5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BifocalGemma es un repositorio experimental publicado por el usuario daruokta en HuggingFace que agrupa una ejecución unificada de entrenamiento y evaluación de 10 variantes de modelo bajo el paradigma que el autor denomina "BifocalGemma". El repositorio no contiene un modelo único, sino diez subcarpetas con configuraciones distintas: cuatro variantes homogéneas, cuatro heterogéneas y dos baselines monolíticos. Todas ellas se construyen a partir de los checkpoints `gemma-4-E2B` y `gemma-4-E4B`, en sus versiones base e instruction-tuned (it).
+BifocalGemma es un repositorio experimental publicado por el usuario daruokta en Hugging Face que agrupa una ejecución unificada de entrenamiento y evaluación de 10 variantes de modelo bajo el paradigma que el autor denomina "BifocalGemma". El repositorio no contiene un modelo único, sino diez subcarpetas con configuraciones distintas: cuatro variantes homogéneas, cuatro heterogéneas y dos baselines monolíticos. Todas ellas se construyen a partir de los checkpoints `gemma-4-E2B` y `gemma-4-E4B`, en sus versiones base e instruction-tuned (it).
 
 La propuesta técnica consiste en combinar dos backbones Gemma 4 de distinto tamaño o distinto grado de alineación, asignando a uno el rol "semántico" y al otro el rol "ejecutivo". Las variantes homogéneas emparejan modelos del mismo tamaño (2B con 2B, o 4B con 4B), mientras que las heterogéneas cruzan un backbone de 4B con uno de 2B. Los dos baselines monolíticos (`e2b-it` y `e4b-it`) sirven como referencia para medir el efecto de la arquitectura bifocal frente a un modelo único.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BifocalGemma (este repositorio) | 2B / 4B por backbone, agregado no especificado | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| BifocalGemma (este repositorio) | 2B / 4B por backbone, agregado no especificado | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Gemma 4 E2B (backbone de referencia) | 2B | No disponible en esta ficha | Términos de Gemma (no verificados aquí) | No disponible en esta ficha |
 | Gemma 4 E4B (backbone de referencia) | 4B | No disponible en esta ficha | Términos de Gemma (no verificados aquí) | No disponible en esta ficha |
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento de BifocalGemma ni de los backbones Gemma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daruokta/bifocalgemma-2026-11-02
+- Repositorio Hugging Face: https://huggingface.co/daruokta/bifocalgemma-2026-11-02
 - Dataset asociado: https://huggingface.co/datasets/daruokta/bifocalgemma-data
 - Archivo de ejecuciones previas: https://huggingface.co/daruokta/bifocalgemma-archive

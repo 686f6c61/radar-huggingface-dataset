@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TobiIbrahim1/toy-classification` es un repositorio experimental publicado en HuggingFace que contiene el esqueleto de código de una arquitectura híbrida denominada «Cnn Transformer» orientada a tareas de clasificación. Lo desarrolla el usuario TobiIbrahim1 y no se presenta como un modelo entrenado, sino como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests).
+`TobiIbrahim1/toy-classification` es un repositorio experimental publicado en Hugging Face que contiene el esqueleto de código de una arquitectura híbrida denominada «Cnn Transformer» orientada a tareas de clasificación. Lo desarrolla el usuario TobiIbrahim1 y no se presenta como un modelo entrenado, sino como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests).
 
-El dato más relevante para evaluarlo es su tamaño real: 16.576 parámetros totales según el fichero safetensors. La etiqueta «huge» que aparece en la model card describe la configuración del código, no la escala del modelo. El repositorio ocupa 0,0 GB, no tiene descargas ni «likes», y no declara pipeline en HuggingFace.
+El dato más relevante para evaluarlo es su tamaño real: 16.576 parámetros totales según el fichero safetensors. La etiqueta «huge» que aparece en la model card describe la configuración del código, no la escala del modelo. El repositorio ocupa 0,0 GB, no tiene descargas ni «likes», y no declara pipeline en Hugging Face.
 
 Por tanto, no es un modelo utilizable en producción ni un artefacto con resultados verificables: es material de andamiaje para investigación de arquitecturas. La información disponible no incluye dataset, número de tokens de entrenamiento, tokenizador, idiomas ni métricas de evaluación. Cualquier uso práctico exige entrenar el modelo desde cero con datos propios.
 
@@ -70,7 +70,7 @@ No se han proporcionado modelos comparables en la información disponible. El re
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TobiIbrahim1/toy-classification | 16.576 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas, sin pipeline |
+| TobiIbrahim1/toy-classification | 16.576 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas, sin pipeline |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 Cualquier comparación futura debería hacerse, siguiendo al autor, con la misma exposición de datos, el mismo presupuesto de ajuste y las mismas semillas aleatorias.
@@ -81,7 +81,7 @@ Cualquier comparación futura debería hacerse, siguiendo al autor, con la misma
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, según reconoce la propia model card.
 - No hay benchmarks, ni métricas, ni logs de entrenamiento publicados; no es posible afirmar nada sobre su rendimiento.
 - La etiqueta «huge» de la model card puede inducir a error: el modelo tiene 16.576 parámetros, no es un modelo de gran escala.
-- La implementación es personalizada, de modo que las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- La implementación es personalizada, de modo que las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - Uso de BatchNorm: el comportamiento en inferencia depende de las estadísticas acumuladas durante el entrenamiento; con un checkpoint sin entrenar, esas estadísticas no son significativas.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la cláusula de no respaldo (no se puede usar el nombre del autor para promocionar derivados). Los términos de los datos de origen deben revisarse por separado al usar datasets externos.
 - Riesgo de alucinación: no aplica en sentido estricto al no ser un modelo generativo, pero sí existe riesgo de conclusiones erróneas si se interpretan sus salidas como predicciones válidas.
@@ -90,5 +90,5 @@ Cualquier comparación futura debería hacerse, siguiendo al autor, con la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TobiIbrahim1/toy-classification
+- Modelo en Hugging Face: https://huggingface.co/TobiIbrahim1/toy-classification
 - Paper, blog, repositorio adicional o demo: no disponible en la información proporcionada.

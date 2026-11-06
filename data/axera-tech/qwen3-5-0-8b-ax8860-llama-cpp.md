@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks ni de especificaciones de licencia que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-0.8B-AX8860-llama.cpp
 - llama.cpp adaptado (rama `axera-dev`): https://github.com/ZHEQIUSHUI/llama.cpp
 - Kernels NPU (rama `main`): https://github.com/ZHEQIUSHUI/ax-dsl-kernels

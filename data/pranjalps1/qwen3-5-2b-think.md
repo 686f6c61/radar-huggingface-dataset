@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su tamaño compacto (2,27 mil millones de
 
 El modelo es un ajuste fino (finetune) de unsloth/Qwen3.5-2B, que a su vez es una versión optimizada del modelo Qwen3.5-2B de Alibaba Cloud. Según la documentación pública de Qwen3.5, la familia completa utiliza una arquitectura híbrida que mezcla atención lineal con bloques transformer tradicionales, lo que reduce el coste computacional en secuencias largas manteniendo la calidad. El modelo base es nativamente multimodal (texto, imagen y video), aunque el finetune "think" no especifica si conserva estas capacidades.
 
-El entrenamiento se realizó con la librería Unsloth (que acelera el ajuste fino aproximadamente 2 veces) junto con la librería TRL de HuggingFace. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre "think" sugiere que el ajuste se orientó a fomentar un modo de razonamiento explícito (cadena de pensamiento), pero no hay evidencia documental que lo confirme.
+El entrenamiento se realizó con la librería Unsloth (que acelera el ajuste fino aproximadamente 2 veces) junto con la librería TRL de Hugging Face. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre "think" sugiere que el ajuste se orientó a fomentar un modo de razonamiento explícito (cadena de pensamiento), pero no hay evidencia documental que lo confirme.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo fiables para este finetune esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranjalps1/Qwen3.5-2B-think
+- Modelo en Hugging Face: https://huggingface.co/Pranjalps1/Qwen3.5-2B-think
 - Modelo base unsloth/Qwen3.5-2B: https://huggingface.co/unsloth/Qwen3.5-2B
 - Modelo base oficial Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

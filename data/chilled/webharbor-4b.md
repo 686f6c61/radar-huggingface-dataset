@@ -92,7 +92,7 @@ Los datos de GPT-5 se presentan en la model card como media combinada de ambos b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChilleD/WebHarbor-4B
+- Modelo en Hugging Face: https://huggingface.co/ChilleD/WebHarbor-4B
 - Página del proyecto: https://aiming-lab.github.io/WebHarbor/
 - Repositorio de código (entornos y evaluación): https://github.com/aiming-lab/WebHarbor
 - Dataset de entornos (153 entornos): https://huggingface.co/datasets/ChilleD/WebHarbor

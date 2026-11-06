@@ -92,7 +92,7 @@ No se dispone de comparativas con otros modelos cuantizados de video de tamano s
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/JoaoZaokk/Wan2.1-VACE-1.3B-W4A4-ConvRot
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/JoaoZaokk/Wan2.1-VACE-1.3B-W4A4-ConvRot
 - Modelo base original: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B
 - Version diffusers del modelo base: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B-diffusers
 - Repositorio GitHub de Wan2.1 (codigo e informe tecnico): https://github.com/Wan-Video/Wan2.1

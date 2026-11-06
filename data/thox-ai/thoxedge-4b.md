@@ -90,7 +90,7 @@ La comparación con alternativas de terceros (Llama 3.2 3B, Phi-3.5-mini, Gemma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxEdge-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxEdge-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo publicado en Ollama: `Thox-ai/thoxedge-4b` (referencia de comando en la model card)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

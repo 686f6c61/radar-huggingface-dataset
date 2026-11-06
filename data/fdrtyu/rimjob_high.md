@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rimjob_High es un modelo publicado en HuggingFace por el usuario fdrtyu. Según los metadatos disponibles, el repositorio tiene un tamaño de 0,6 GB y su licencia se clasifica como "other". No se ha proporcionado información técnica sobre su arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni tipo de pipeline. El nombre del modelo y la ausencia de documentación técnica sugieren que podría tratarse de un modelo destinado a la generación de contenido para adultos, aunque no hay datos verificables que lo confirmen.
+Rimjob_High es un modelo publicado en Hugging Face por el usuario fdrtyu. Según los metadatos disponibles, el repositorio tiene un tamaño de 0,6 GB y su licencia se clasifica como "other". No se ha proporcionado información técnica sobre su arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni tipo de pipeline. El nombre del modelo y la ausencia de documentación técnica sugieren que podría tratarse de un modelo destinado a la generación de contenido para adultos, aunque no hay datos verificables que lo confirmen.
 
 En el momento de la consulta, el modelo no registra descargas ni "likes", lo que indica que es una publicación reciente o de muy baja difusión. La model card no contiene descripción, instrucciones de uso ni detalles de entrenamiento. Por tanto, cualquier evaluación técnica del modelo es imposible con la información disponible.
 
@@ -63,4 +63,4 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdrtyu/Rimjob_High
+- Hugging Face: https://huggingface.co/fdrtyu/Rimjob_High

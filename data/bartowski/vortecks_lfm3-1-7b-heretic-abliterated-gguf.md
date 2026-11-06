@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/bartowski/Vortecks_LFM3-1.7B-Heretic-Abliterated-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/bartowski/Vortecks_LFM3-1.7B-Heretic-Abliterated-GGUF
 - Modelo base de la cuantización: https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated
 - Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

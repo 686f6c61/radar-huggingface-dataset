@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wulver-kroma_merge es un modelo resultante de la fusion (merge) de dos modelos preexistentes: Vaelico/Wulver y lodestones/Kroma. Lo publica el usuario foofifoo en HuggingFace y no se trata de un modelo entrenado desde cero, sino de una combinacion de pesos de sus dos modelos base. La ficha no declara pipeline, idiomas ni resultados de evaluacion, y sus unicos metadatos tecnicos son el metodo de fusion y las precisiones empleadas.
+wulver-kroma_merge es un modelo resultante de la fusion (merge) de dos modelos preexistentes: Vaelico/Wulver y lodestones/Kroma. Lo publica el usuario foofifoo en Hugging Face y no se trata de un modelo entrenado desde cero, sino de una combinacion de pesos de sus dos modelos base. La ficha no declara pipeline, idiomas ni resultados de evaluacion, y sus unicos metadatos tecnicos son el metodo de fusion y las precisiones empleadas.
 
 Por el contexto de sus modelos base y del propio nombre del repositorio, se trata de un modelo de generacion de imagenes del ecosistema de difusion (familia Krea), no de un modelo de lenguaje. La licencia declarada, krea-2-community-license, apunta a un modelo de imagen con restricciones de uso comunitario. La fusion se realizo con la herramienta sd-mecha y se publicaron variantes tanto en bf16 como en int8-convrot.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| foofifoo/wulver-kroma_merge | no disponible | no disponible | no disponible | krea-2-community-license | HuggingFace, 0 descargas |
-| Vaelico/Wulver (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| lodestones/Kroma (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| foofifoo/wulver-kroma_merge | no disponible | no disponible | no disponible | krea-2-community-license | Hugging Face, 0 descargas |
+| Vaelico/Wulver (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| lodestones/Kroma (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa tecnica con alternativas. Los unicos modelos relacionados documentados son sus propios modelos base.
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para una comparativa tecnica con alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foofifoo/wulver-kroma_merge
+- Hugging Face: https://huggingface.co/foofifoo/wulver-kroma_merge
 - Modelo base Vaelico/Wulver: https://huggingface.co/Vaelico/Wulver
 - Modelo base lodestones/Kroma: https://huggingface.co/lodestones/Kroma
 - Licencia krea-2-community-license: https://krea.ai/krea-2-licensing

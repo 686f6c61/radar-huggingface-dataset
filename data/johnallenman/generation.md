@@ -63,5 +63,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johnallenman/generation
+- Repositorio Hugging Face: https://huggingface.co/johnallenman/generation
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados sobre Olmo, Wikipedia o MDPI no están relacionados con este modelo).

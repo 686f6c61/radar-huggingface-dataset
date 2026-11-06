@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Luisr-ecu/whisper` de HuggingFace se presenta como un modelo etiquetado con la categoría `whisper` y licencia MIT, pero no contiene ninguna información técnica publicada en su model card. El autor es el usuario `Luisr-ecu`, y el repositorio fue creado el 19 de agosto de 2026. No se han publicado descripciones, pesos, arquitectura ni datos de entrenamiento, y las descargas y reacciones son cero.
+El repositorio `Luisr-ecu/whisper` de Hugging Face se presenta como un modelo etiquetado con la categoría `whisper` y licencia MIT, pero no contiene ninguna información técnica publicada en su model card. El autor es el usuario `Luisr-ecu`, y el repositorio fue creado el 19 de agosto de 2026. No se han publicado descripciones, pesos, arquitectura ni datos de entrenamiento, y las descargas y reacciones son cero.
 
 Dado que la model card está vacía salvo por la licencia, no es posible determinar si se trata de un modelo real, una subida incompleta o un repositorio de prueba. El nombre "whisper" sugiere una posible relación con la familia de modelos Whisper de OpenAI, pero no hay evidencia que lo confirme. Toda especificación técnica debe considerarse no disponible hasta que el autor publique información adicional.
 
@@ -52,4 +52,4 @@ No se puede comparar con alternativas porque no se conocen ni los parámetros, n
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Luisr-ecu/whisper
+- Repositorio de Hugging Face: https://huggingface.co/Luisr-ecu/whisper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint `francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455`, ambos publicados por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto con arquitectura GPT-2 (segun los tags del repositorio) y 124.770.816 parametros totales (aproximadamente 125M), lo que lo situa en la categoria de modelos pequenos tipo GPT-2 small. El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo `francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint `francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455`, ambos publicados por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto con arquitectura GPT-2 (segun los tags del repositorio) y 124.770.816 parametros totales (aproximadamente 125M), lo que lo situa en la categoria de modelos pequenos tipo GPT-2 small. El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 La nomenclatura del identificador sugiere un trabajo de investigacion centrado en tokenizacion y modelado de lenguaje sobre datos de 100 MB en escritura latina, con el prefijo `swe` apuntando a sueco (ISO 639-3 para sueco) y `latn` al script latino. El proyecto de Weights & Biases asociado (`f-padovani-university-of-groningen/new-tokenizers`) indica que se trata de un artefacto de investigacion academica vinculado a la Universidad de Groningen, orientado a comparar tokenizadores y variantes de preprocesado (los sufijos `ppt`, `mp`, `struct-core` sugieren distintas etapas de preprocesado y estructuracion del corpus).
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion con SFT |
+| francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion con SFT |
 | GPT-2 small | 124M | 1.024 tokens (configuracion estandar) | licencia MIT modificada | Ampliamente disponible | Referencia de la misma familia arquitectonica |
 | DistilGPT-2 | 82M | 1.024 tokens (configuracion estandar) | licencia MIT modificada | Ampliamente disponible | Version destilada, menor coste de inferencia |
 
@@ -92,7 +92,7 @@ La comparacion con GPT-2 small y DistilGPT-2 se incluye por coincidencia de arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/91phxuaf

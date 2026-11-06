@@ -75,7 +75,7 @@ Este modelo no ofrece información pública sobre su rendimiento, por lo que no 
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es un autocompletado de HuggingFace; no hay detalles sobre datos, entrenamiento ni evaluación.
+- Documentación inexistente: la model card es un autocompletado de Hugging Face; no hay detalles sobre datos, entrenamiento ni evaluación.
 - Licencia desconocida: no se puede determinar si el uso comercial está permitido; se recomienda contactar al autor antes de cualquier despliegue.
 - Sesgos y alucinaciones: al no conocerse el corpus de entrenamiento, los sesgos son impredecibles. Como todo LLM, puede generar información falsa o inventada.
 - Contexto limitado: si la longitud de contexto difiere de la base Qwen2, podría fallar en tareas que requieran memoria larga.
@@ -84,7 +84,7 @@ Este modelo no ofrece información pública sobre su rendimiento, por lo que no 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ishikaa/acquisition_generator_AS_format_combined_qwen7b)
+- [Modelo en Hugging Face](https://huggingface.co/ishikaa/acquisition_generator_AS_format_combined_qwen7b)
 - [Modelo hermano: acquisition_generator_AS_format_numina_qwen7b](https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen7b)
 - [Modelo hermano: acquisition_generator_AS_format_medmcqa_qwen7b](https://huggingface.co/ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b)
 - [Repo oficial de Qwen-7B (GitHub)](https://github.com/ArtificialZeng/Qwen-7B)

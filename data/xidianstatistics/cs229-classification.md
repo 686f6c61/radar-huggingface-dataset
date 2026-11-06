@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xidianstatistics/cs229-classification es un repositorio de HuggingFace que contiene una implementacion experimental de un "Tiny Transformer" orientado a tareas de clasificacion. Lo publica el usuario Xidianstatistics y su proposito declarado no es ofrecer un modelo entrenado, sino servir como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
+Xidianstatistics/cs229-classification es un repositorio de Hugging Face que contiene una implementacion experimental de un "Tiny Transformer" orientado a tareas de clasificacion. Lo publica el usuario Xidianstatistics y su proposito declarado no es ofrecer un modelo entrenado, sino servir como base de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
 
 El modelo cuenta con 49.600 parametros totales, una cifra extremadamente reducida que lo situa en la categoria de artefactos didacticos o de investigacion, muy lejos de cualquier modelo de produccion. La arquitectura declarada combina atencion multi-query (multi query attention), fusion tensorial (tensor fusion), activacion swish y normalizacion ScaleNorm, con un escalado etiquetado internamente como "xlarge" dentro de la familia de Tiny Transformers del propio autor.
 
@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xidianstatistics/cs229-classification
+- Modelo en Hugging Face: https://huggingface.co/Xidianstatistics/cs229-classification
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo, su paper, su repositorio de codigo ni demos. Las unicas coincidencias devueltas corresponden a resenas de servicios de terceros sin relacion con el artefacto.

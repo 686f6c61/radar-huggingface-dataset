@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 |---|---|---|---|---|---|
 | saas-business-strategist-agent | 0,5B (base) + LoRA r=8 | 32.768 (base) | Adaptador LoRA especializado en negocio/SaaS/cripto | Apache 2.0 | Entrenado en CPU; requiere contexto recuperado para aportar hechos |
 | Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Modelo base instructivo generalista | Apache 2.0 | Sin ajuste de dominio; registro genérico |
-| Adaptadores LoRA de dominio similares en HuggingFace | Variable (0,5B-7B) | Variable | Adaptadores de estilo | Variable | No se dispone de comparación cuantitativa publicada |
+| Adaptadores LoRA de dominio similares en Hugging Face | Variable (0,5B-7B) | Variable | Adaptadores de estilo | Variable | No se dispone de comparación cuantitativa publicada |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
@@ -87,8 +87,8 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/profullstack/saas-business-strategist-agent
-- HuggingFace (GGUF Q8_0): https://huggingface.co/profullstack/saas-business-strategist-agent-GGUF
+- Hugging Face (adaptador LoRA): https://huggingface.co/profullstack/saas-business-strategist-agent
+- Hugging Face (GGUF Q8_0): https://huggingface.co/profullstack/saas-business-strategist-agent-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog de anuncio: https://dev.profullstack.com/~anthony/blog/270-post.html
 - Ejemplo de entrenamiento c0mpute: https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

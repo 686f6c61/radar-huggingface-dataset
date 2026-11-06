@@ -89,8 +89,8 @@ Advertencia: los datos del modelo original y de las alternativas provienen de su
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/arlenecc/jina-embeddings-v3-mlx-int8
-- Modelo base en HuggingFace: https://huggingface.co/jinaai/jina-embeddings-v3
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/arlenecc/jina-embeddings-v3-mlx-int8
+- Modelo base en Hugging Face: https://huggingface.co/jinaai/jina-embeddings-v3
 - Documentación de MLX (Apple): https://github.com/ml-explore/mlx
 - Paper del modelo base Jina v3: no disponible en la información proporcionada
 - Blog o demo oficial de Jina AI: no disponible en la información proporcionada

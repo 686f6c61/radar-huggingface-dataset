@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AgroYield-models es un repositorio de artefactos de aprendizaje automatico publicado por Wahab-MK17 en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un conjunto de modelos tabulares de regresion serializados con joblib, junto con los codificadores (encoders) y escaladores (scalers) necesarios para preprocesar los datos de entrada. El pipeline declarado es `tabular-regression` y las etiquetas indican el uso de scikit-learn y xgboost.
+AgroYield-models es un repositorio de artefactos de aprendizaje automatico publicado por Wahab-MK17 en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un conjunto de modelos tabulares de regresion serializados con joblib, junto con los codificadores (encoders) y escaladores (scalers) necesarios para preprocesar los datos de entrada. El pipeline declarado es `tabular-regression` y las etiquetas indican el uso de scikit-learn y xgboost.
 
 El proposito del repositorio es servir de almacen de pesos para AgroYield, una aplicacion de prediccion de rendimiento de cultivos a nivel de condado en Estados Unidos. Los artefactos son descargados automaticamente por la API Flask del proyecto alojado en GitHub, lo que convierte a este repositorio en una dependencia de infraestructura mas que en un modelo consumible de forma autonoma.
 
-La relevancia es acotada: se trata de un modelo de regresion tabular de dominio especifico (agricultura), sin publicacion de benchmarks, sin model card detallada y sin metricas de rendimiento declaradas. Su interes radica en el caso de uso concreto y en que ejemplifica el patron de distribucion de artefactos scikit-learn via HuggingFace para APIs de produccion.
+La relevancia es acotada: se trata de un modelo de regresion tabular de dominio especifico (agricultura), sin publicacion de benchmarks, sin model card detallada y sin metricas de rendimiento declaradas. Su interes radica en el caso de uso concreto y en que ejemplifica el patron de distribucion de artefactos scikit-learn via Hugging Face para APIs de produccion.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se han publicado datos sobre el volumen de entrenamiento, la composicion del 
 - Integracion en cuadros de mando agricolas: los resultados de regresion pueden alimentar paneles de analisis para planificacion de cosechas a nivel regional.
 - Reproducibilidad de experimentos: al fijar scikit-learn 1.7.2 y xgboost 3.0.1, el repositorio permite reconstruir el entorno exacto de inferencia, util para auditar resultados previos.
 - Punto de partida para reentrenamiento: los encoders y scalers sirven como base para reentrenar el estimador con datos actualizados manteniendo el mismo esquema de preprocesado.
-- Docencia y prototipado de pipelines tabulares: ejemplo real de distribucion de artefactos scikit-learn via HuggingFace y carga automatica desde una API.
+- Docencia y prototipado de pipelines tabulares: ejemplo real de distribucion de artefactos scikit-learn via Hugging Face y carga automatica desde una API.
 - Evaluacion de riesgo agricola: las predicciones de rendimiento pueden combinarse con modelos financieros o de seguros para estimar exposicion por condado.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AgroYield-models (Wahab-MK17) | Regresion tabular (sklearn + xgboost) | no disponible | no aplica | MIT | HuggingFace |
+| AgroYield-models (Wahab-MK17) | Regresion tabular (sklearn + xgboost) | no disponible | no aplica | MIT | Hugging Face |
 | Modelos de regresion tabular genericos en scikit-learn | Regresion tabular | no disponible | no aplica | BSD-3 | PyPI |
 | XGBoost preentrenado para agricultura | Gradient boosting tabular | no disponible | no aplica | Apache 2.0 | No disponible como artefacto publico comparable |
 
@@ -84,5 +84,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Wahab-MK17/agroyield-models
+- Repositorio Hugging Face: https://huggingface.co/Wahab-MK17/agroyield-models
 - Repositorio GitHub del proyecto AgroYield: https://github.com/Abdul-Wahab-17/AgroYield

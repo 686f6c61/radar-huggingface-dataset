@@ -4,7 +4,7 @@
 
 MoME-BanglaFake es un modelo multimodal de detección de desinformación en bengalí, desarrollado por Faysal Ahmmed (usuario Faysal1000). Combina un modelo base de lenguaje (google/gemma-4-E2B) con adaptadores de tipo LoRA/DoRA y componentes de visión (SigLIP2 para imágenes y VideoMAE para vídeo), formando una arquitectura de mezcla de expertos (MoME). El modelo está diseñado para clasificar contenido textual, visual y audiovisual como noticia real o falsa, y también para distinguir entre categorías más finas como desinformación, sátira y clickbait.
 
-La relevancia de este modelo radica en abordar la detección de noticias falsas en bengalí, un idioma con escasos recursos y alta prevalencia de desinformación en plataformas digitales. Al ser trimodal, integra señales de texto, imagen y vídeo, lo que permite una detección más robusta que los sistemas unimodales. El modelo se distribuye como un adaptador PEFT (6,2 GB) sobre el modelo base, con acceso restringido en HuggingFace. Los resultados oficiales reportan una precisión del 91,48 % en clasificación binaria y del 83,25 % en clasificación multiclase sobre el dataset BTMD.
+La relevancia de este modelo radica en abordar la detección de noticias falsas en bengalí, un idioma con escasos recursos y alta prevalencia de desinformación en plataformas digitales. Al ser trimodal, integra señales de texto, imagen y vídeo, lo que permite una detección más robusta que los sistemas unimodales. El modelo se distribuye como un adaptador PEFT (6,2 GB) sobre el modelo base, con acceso restringido en Hugging Face. Los resultados oficiales reportan una precisión del 91,48 % en clasificación binaria y del 83,25 % en clasificación multiclase sobre el dataset BTMD.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - No se dispone de datos oficiales sobre VRAM, GPUs recomendadas o latencia.
 - El adaptador PEFT pesa 6,2 GB, por lo que se estima que la inferencia puede ejecutarse en GPUs con al menos 8-12 GB de VRAM si se carga el modelo base en cuantización ligera, pero esto no está confirmado.
 - Al ser un adaptador sobre un modelo base de Google (gemma-4-E2B), se requiere descargar el modelo base por separado, lo que incrementa los requisitos de almacenamiento y memoria.
-- Opciones de despliegue: al usar PEFT, es compatible con librerías como HuggingFace Transformers y PEFT, y potencialmente con vLLM o TGI si se integra el adaptador, aunque no hay documentación al respecto.
+- Opciones de despliegue: al usar PEFT, es compatible con librerías como Hugging Face Transformers y PEFT, y potencialmente con vLLM o TGI si se integra el adaptador, aunque no hay documentación al respecto.
 - No se reportan mediciones de throughput ni latencia.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación sin aprobación.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación sin aprobación.
 - Licencia "other" no especificada: no se detallan los términos de uso comercial, modificación o redistribución. Se recomienda contactar al autor antes de usar en producción.
 - Idioma limitado: solo bengalí; no es aplicable a otros idiomas sin reentrenamiento.
 - Riesgo de alucinación y sesgos: al ser un modelo de clasificación, puede presentar falsos positivos/negativos, especialmente en contenido ambiguo o con matices culturales.
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Faysal1000/mome-banglafake
+- Modelo en Hugging Face: https://huggingface.co/Faysal1000/mome-banglafake
 - Dataset BTMD: https://huggingface.co/datasets/Faysal4200/BTMD
 - Proyecto BanglaFake (detección de audio deepfake en bengalí): https://kamruzzamanasif.github.io/BanglaFake/
 - Paper de BanglaFake: https://arxiv.org/abs/2505.10885

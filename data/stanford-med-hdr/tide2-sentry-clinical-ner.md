@@ -4,7 +4,7 @@
 
 El modelo `stanford-med-hdr/tide2-sentry-clinical-ner` es un modelo de reconocimiento de entidades nombradas (NER) orientado al ámbito clínico, desarrollado por el grupo de investigación de Stanford Medicine. La denominación "tide2-sentry" sugiere una posible relación con el proyecto TiDE (Clinical Text Safe Harbor) de Stanford, que aborda la anonimización de textos clínicos mediante técnicas de NER para identificar información de salud protegida (PHI). El modelo está diseñado para detectar entidades clínicas en narrativas médicas, que suelen ser fragmentadas y carecer de formato, lo que dificulta el uso de modelos NER preentrenados en noticias.
 
-El acceso al modelo es restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en HuggingFace antes de poder descargarlo. La licencia es MIT, lo que permite uso comercial con atribución, pero el acceso controlado puede indicar que contiene datos sensibles o que está destinado a investigación médica. No se dispone de información pública sobre arquitectura, tamaño o contexto, por lo que su evaluación técnica es limitada en este momento.
+El acceso al modelo es restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en Hugging Face antes de poder descargarlo. La licencia es MIT, lo que permite uso comercial con atribución, pero el acceso controlado puede indicar que contiene datos sensibles o que está destinado a investigación médica. No se dispone de información pública sobre arquitectura, tamaño o contexto, por lo que su evaluación técnica es limitada en este momento.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se conocen modelos comparables especificos dentro de la misma categoria de NE
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que se requiere solicitar acceso y aceptar condiciones, lo que puede retrasar su evaluacion.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que se requiere solicitar acceso y aceptar condiciones, lo que puede retrasar su evaluacion.
 - Falta de documentacion: no hay publicaciones, papers ni detalles tecnicos disponibles, lo que limita la confianza para usos en produccion.
 - Sesgos y alucinaciones: al ser un modelo NER, los sesgos dependen del dataset de entrenamiento, que no es publico; existe riesgo de errores en la identificacion de entidades en textos clinicos complejos.
 - Idioma: no se indica si el modelo soporta otros idiomas ademas del ingles, lo que limita su aplicacion en entornos multilingues.
@@ -62,5 +62,5 @@ No se conocen modelos comparables especificos dentro de la misma categoria de NE
 
 ## Enlaces
 
-- [HuggingFace: stanford-med-hdr/tide2-sentry-clinical-ner](https://huggingface.co/stanford-med-hdr/tide2-sentry-clinical-ner)
+- [Hugging Face: stanford-med-hdr/tide2-sentry-clinical-ner](https://huggingface.co/stanford-med-hdr/tide2-sentry-clinical-ner)
 - [TiDE clinical text Safe Harbor - Stanford Medicine](https://starr.stanford.edu/methods/tide-clinical-text-safe-harbor)

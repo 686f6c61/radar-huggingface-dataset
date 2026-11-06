@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una conversion a formato GGUF del modelo SAM 2.1 Hiera-tiny de Meta (identificador base `facebook/sam2.1-hiera-tiny`), publicada por el usuario cstr. Se trata de un modelo de segmentacion de imagenes de proposito especifico: dado un prompt en forma de punto o caja delimitadora sobre una imagen, genera mascaras de segmentacion del objeto correspondiente. No es un modelo generativo de texto ni un modelo de lenguaje, por lo que su pipeline declarado en HuggingFace es `mask-generation`.
+Este repositorio contiene una conversion a formato GGUF del modelo SAM 2.1 Hiera-tiny de Meta (identificador base `facebook/sam2.1-hiera-tiny`), publicada por el usuario cstr. Se trata de un modelo de segmentacion de imagenes de proposito especifico: dado un prompt en forma de punto o caja delimitadora sobre una imagen, genera mascaras de segmentacion del objeto correspondiente. No es un modelo generativo de texto ni un modelo de lenguaje, por lo que su pipeline declarado en Hugging Face es `mask-generation`.
 
 La conversion esta pensada para el motor ggml SAM 2.1 de CrispEmbed (API C `crispembed_sam2_*`) y se usa como proveedor de mascaras `sam` dentro de Crisp 3D Studio. Un aspecto importante es que esta version solo cubre el modo imagen: las partes de memoria de video de SAM 2 (seguimiento temporal de objetos entre fotogramas) no estan incluidas. El modelo tiene 31.306.244 parametros y el repositorio ocupa 0,2 GB.
 
@@ -75,10 +75,10 @@ Nota del autor: la comparacion debe hacerse contra PyTorch en CPU y no contra el
 
 | Modelo | Parametros | Modo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cstr/sam2.1-hiera-tiny-GGUF (este) | 31.306.244 | Solo imagen | GGUF (F16, F32) | Apache-2.0 | HuggingFace |
-| facebook/sam2.1-hiera-tiny | no disponible | Imagen y video | PyTorch | Apache-2.0 | HuggingFace / repositorio SAM 2 |
-| cstr/sam2.1-hiera-tiny-ONNX | no disponible | Solo imagen (exportacion del mismo modelo) | ONNX | Apache-2.0 | HuggingFace |
-| Otras variantes de SAM 2.1 (base+, large) | no disponible | Imagen y video | PyTorch | Apache-2.0 | HuggingFace |
+| cstr/sam2.1-hiera-tiny-GGUF (este) | 31.306.244 | Solo imagen | GGUF (F16, F32) | Apache-2.0 | Hugging Face |
+| facebook/sam2.1-hiera-tiny | no disponible | Imagen y video | PyTorch | Apache-2.0 | Hugging Face / repositorio SAM 2 |
+| cstr/sam2.1-hiera-tiny-ONNX | no disponible | Solo imagen (exportacion del mismo modelo) | ONNX | Apache-2.0 | Hugging Face |
+| Otras variantes de SAM 2.1 (base+, large) | no disponible | Imagen y video | PyTorch | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/sam2.1-hiera-tiny-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/sam2.1-hiera-tiny-GGUF
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-tiny
 - Exportacion ONNX del mismo modelo: https://huggingface.co/cstr/sam2.1-hiera-tiny-ONNX
 - Repositorio oficial de SAM 2 (Meta): https://github.com/facebookresearch/sam2

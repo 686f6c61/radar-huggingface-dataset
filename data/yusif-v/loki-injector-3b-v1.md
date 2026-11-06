@@ -69,9 +69,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3B | 32.768 | Apache 2.0 | HuggingFace |
-| Yusif-v/loki-injector-3b-v1 | 3B + adaptador | no especificado | no disponible | HuggingFace |
-| Otros adaptadores PEFT de Qwen2.5-3B | variable | no especificado | variable | HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3B | 32.768 | Apache 2.0 | Hugging Face |
+| Yusif-v/loki-injector-3b-v1 | 3B + adaptador | no especificado | no disponible | Hugging Face |
+| Otros adaptadores PEFT de Qwen2.5-3B | variable | no especificado | variable | Hugging Face |
 
 Se recomienda al usuario evaluar el modelo directamente si necesita comparaciones de rendimiento.
 
@@ -87,7 +87,7 @@ Se recomienda al usuario evaluar el modelo directamente si necesita comparacione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yusif-v/loki-injector-3b-v1
+- Modelo en Hugging Face: https://huggingface.co/Yusif-v/loki-injector-3b-v1
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de Lacoste et al. (2019) sobre emisiones de carbono: https://arxiv.org/abs/1910.09700
 - Repositorio Loki (red-teaming engine, no relacionado): https://github.com/anushkaanair/loki

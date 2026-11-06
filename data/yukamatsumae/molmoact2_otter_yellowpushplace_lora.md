@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yukamatsumae/molmoact2_otter_yellowpushplace_lora` es un adaptador LoRA entrenado sobre la base de MolmoAct2, un modelo de visión-lenguaje-acción (VLA) desarrollado por el Allen Institute for AI (AI2). Este checkpoint concreto ha sido generado por el usuario yukamatsumae utilizando la librería LeRobot de HuggingFace, y está especializado en una tarea de manipulación robótica: empujar un objeto amarillo hasta una posición determinada (push-place). El modelo se publica bajo licencia Apache 2.0 y está pensado para ser ejecutado en robots compatibles con el ecosistema LeRobot, como el brazo SO-100.
+El modelo `yukamatsumae/molmoact2_otter_yellowpushplace_lora` es un adaptador LoRA entrenado sobre la base de MolmoAct2, un modelo de visión-lenguaje-acción (VLA) desarrollado por el Allen Institute for AI (AI2). Este checkpoint concreto ha sido generado por el usuario yukamatsumae utilizando la librería LeRobot de Hugging Face, y está especializado en una tarea de manipulación robótica: empujar un objeto amarillo hasta una posición determinada (push-place). El modelo se publica bajo licencia Apache 2.0 y está pensado para ser ejecutado en robots compatibles con el ecosistema LeRobot, como el brazo SO-100.
 
 La relevancia de este modelo radica en que demuestra el uso práctico de MolmoAct2, una familia de modelos VLA de código abierto que busca ofrecer controladores generalistas para robots con razonamiento de acciones. Al ser un LoRA, permite adaptar un modelo base de gran tamaño a una tarea específica con un coste de entrenamiento reducido, lo que facilita su despliegue en entornos de investigación y desarrollo. El checkpoint incluye 5.591.928.368 parámetros en formato safetensors, lo que sugiere que contiene tanto el modelo base como el adaptador, aunque no se especifica la proporción exacta.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpushplace
+- Modelo en Hugging Face: https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpushplace
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Paper de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
 - Repositorio de MolmoAct (versión anterior): https://github.com/allenai/MolmoAct

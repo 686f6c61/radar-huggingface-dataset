@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swarupkartikeya/ragtube` es un repositorio de modelo alojado en HuggingFace por el usuario swarupkartikeya. En el momento de la consulta (fecha de creacion y ultima actualizacion registradas: 2026-09-16T15:10:40.000Z) acumula 0 descargas y 0 "likes", no declara pipeline de inferencia y no incluye idiomas soportados en sus metadatos. La unica informacion tecnica verificable es la licencia, MIT, tanto en los tags como en el encabezado de la model card.
+`swarupkartikeya/ragtube` es un repositorio de modelo alojado en Hugging Face por el usuario swarupkartikeya. En el momento de la consulta (fecha de creacion y ultima actualizacion registradas: 2026-09-16T15:10:40.000Z) acumula 0 descargas y 0 "likes", no declara pipeline de inferencia y no incluye idiomas soportados en sus metadatos. La unica informacion tecnica verificable es la licencia, MIT, tanto en los tags como en el encabezado de la model card.
 
 La model card publicada no contiene mas que el campo `license: mit`. No hay descripcion del modelo, arquitectura, tamano, datos de entrenamiento, tokenizador, formatos de pesos ni instrucciones de uso. Tampoco se declara ninguna tarea (`pipeline`) asociada, lo que impide clasificarlo como modelo de generacion de texto, vision, audio o embeddings sin informacion adicional del autor.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swarupkartikeya/ragtube
+- Repositorio en Hugging Face: https://huggingface.co/swarupkartikeya/ragtube
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

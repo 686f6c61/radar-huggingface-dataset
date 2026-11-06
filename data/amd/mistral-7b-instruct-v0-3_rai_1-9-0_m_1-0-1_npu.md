@@ -6,7 +6,7 @@ El modelo `amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_m_1.0.1_npu` es una distribuci
 
 El modelo base, Mistral-7B-Instruct-v0.3, es un transformer decoder-only denso de aproximadamente 7.200 millones de parametros desarrollado por Mistral AI, afinado para instrucciones y conversacion, con una ventana de contexto de 32.768 tokens y licencia Apache 2.0. Esta version de AMD hereda esas capacidades linguisticas y de generacion, pero su interes practico reside en el empaquetado: permite ejecutar el modelo en local sobre Ryzen AI sin depender de GPU dedicada, lo que resulta relevante para escenarios de inferencia en el borde (edge) y en equipos de sobremesa y portatiles con NPU.
 
-La relevancia actual del artefacto es doble. Por un lado, ejemplifica la estrategia de AMD por llevar modelos abiertos de terceros a su ecosistema de aceleracion neuronal. Por otro, su adopcion esta condicionada: el repositorio esta en acceso restringido (gated) en HuggingFace, requiere aceptar condiciones y su uso esta ligado a la version concreta del runtime Ryzen AI, lo que limita la portabilidad frente a otras distribuciones del mismo modelo base.
+La relevancia actual del artefacto es doble. Por un lado, ejemplifica la estrategia de AMD por llevar modelos abiertos de terceros a su ecosistema de aceleracion neuronal. Por otro, su adopcion esta condicionada: el repositorio esta en acceso restringido (gated) en Hugging Face, requiere aceptar condiciones y su uso esta ligado a la version concreta del runtime Ryzen AI, lo que limita la portabilidad frente a otras distribuciones del mismo modelo base.
 
 ## Especificaciones tecnicas
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_m_1.0.1_npu | ~7.2B | No disponible (base: 32.768) | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7.2B | 32.768 | Safetensors, GGUF | Apache 2.0 | Publico en HuggingFace |
-| Mistral-7B-Instruct-v0.2 | ~7.2B | 32.768 | Safetensors, GGUF | Apache 2.0 | Publico en HuggingFace |
+| amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_m_1.0.1_npu | ~7.2B | No disponible (base: 32.768) | ONNX para NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7.2B | 32.768 | Safetensors, GGUF | Apache 2.0 | Publico en Hugging Face |
+| Mistral-7B-Instruct-v0.2 | ~7.2B | 32.768 | Safetensors, GGUF | Apache 2.0 | Publico en Hugging Face |
 | Modelos de ~7B para NPU de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa directa mas relevante es con el modelo base original de Mistral AI: misma arquitectura y licencia, pero distinto formato y canal de distribucion. La version de AMD anade compatibilidad con Ryzen AI a costa de acceso restringido y dependencia del runtime del fabricante.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Dependencia de hardware y software: el artefacto esta compilado para la NPU de Ryzen AI con el runtime `rai_1.9.0`; no es portable a GPU, CPU generica ni otras NPU sin reconversion.
 - Idioma: los tags del repositorio indican soporte unicamente de ingles, aunque el modelo base es multilingue; el comportamiento multilingue en esta distribucion no esta garantizado.
 - Riesgo de alucinacion: como todo LLM de 7B, puede generar afirmaciones factualmente incorrectas con confianza alta, especialmente en tareas de conocimiento especializado.
@@ -85,7 +85,7 @@ La comparativa directa mas relevante es con el modelo base original de Mistral A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Mistral-7B-Instruct-v0.3_rai_1.9.0_m_1.0.1_npu
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog tecnico asociado: no disponible en la informacion proporcionada

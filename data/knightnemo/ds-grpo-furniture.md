@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/knightnemo/DS-GRPO-Furniture
+- Hugging Face: https://huggingface.co/knightnemo/DS-GRPO-Furniture
 - Código y instalación DS-GRPO: https://github.com/Qingxin-Wang/DS-GRPO
 - Guía de instalación FurnitureBench: https://github.com/Qingxin-Wang/DS-GRPO/blob/main/docs/installation.md#furniturebench
 - Colección de checkpoints DPPO: https://drive.google.com/drive/folders/1ZlFqmhxC4S8Xh1pzZ-fXYzS5-P8sfpiP

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abliterated MiniCPM5-2B v3 (agentic) es un derivado no oficial de openbmb/MiniCPM5-2B publicado por el usuario KidIkaros en HuggingFace. Se trata de un ajuste fino orientado a uso agéntico que reduce la tasa de rechazo del modelo base mediante re-ablación, DPO y un SFT con LoRA sobre datos agénticos, seguido de una interpolación de pesos entre las dos ramas entrenadas. El checkpoint publicado es `v3_interp_a50`, una interpolación 50/50 entre `v2_merged` y `v3_merged`.
+Abliterated MiniCPM5-2B v3 (agentic) es un derivado no oficial de openbmb/MiniCPM5-2B publicado por el usuario KidIkaros en Hugging Face. Se trata de un ajuste fino orientado a uso agéntico que reduce la tasa de rechazo del modelo base mediante re-ablación, DPO y un SFT con LoRA sobre datos agénticos, seguido de una interpolación de pesos entre las dos ramas entrenadas. El checkpoint publicado es `v3_interp_a50`, una interpolación 50/50 entre `v2_merged` y `v3_merged`.
 
 El modelo tiene 2.516.756.480 parámetros (≈2,52 B) y se distribuye tanto en safetensors fp16 como en GGUF (F16, Q8_0 y Q4_K_M) para llama.cpp. Su propuesta de valor es concreta: mantener la capacidad de tool calling del MiniCPM5-2B oficial (82,4% en la suite de toolcall, 85,7% con la segunda semilla) reduciendo la tasa de rechazo del ~37% del modelo oficial al 2,7-6,7%, y recuperar mediante interpolación la pérdida de matemáticas y conocimiento que introdujo la etapa de SFT agéntico.
 
@@ -109,7 +109,7 @@ No se dispone de datos comparativos con alternativas de terceros en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v3
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v3
 - Versión previa v2: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-v2
 - Modelo base oficial: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio v0 citado en el linaje: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b

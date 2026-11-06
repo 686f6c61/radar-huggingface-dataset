@@ -92,7 +92,7 @@ La comparativa muestra que la receta GPTQ gana aproximadamente 1 punto de MMLU f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-GPTQ
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Version RTN del mismo autor: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-RTN (referenciada en la model card)
 - Modelo RedHatAI NVFP4: https://huggingface.co/RedHatAI/Qwen3-30B-A3B-NVFP4 (referenciado en la model card)

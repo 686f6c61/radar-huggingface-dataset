@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jugurtha-2-9B es un modelo fundacional soberano desarrollado por el usuario agbalu y publicado en HuggingFace, orientado al idioma kabyle (Taqbaylit, código `kab`, escritura latina), una lengua bereber (amazigh) de bajos recursos. Se trata de la segunda generación de la familia Jugurtha, sucesora y ampliación del modelo Jugurtha-4B: la torre de texto pasa de 4.205 millones a 8.953 millones de parámetros entrenables (más del doble), con un total de 9.653 millones de parámetros según los safetensors del repositorio. El modelo resuelve un problema real: la ausencia de LLM capaces de generar kabyle canónico con razonamiento nativo, algo que los modelos generalistas cubren de forma muy deficiente.
+Jugurtha-2-9B es un modelo fundacional soberano desarrollado por el usuario agbalu y publicado en Hugging Face, orientado al idioma kabyle (Taqbaylit, código `kab`, escritura latina), una lengua bereber (amazigh) de bajos recursos. Se trata de la segunda generación de la familia Jugurtha, sucesora y ampliación del modelo Jugurtha-4B: la torre de texto pasa de 4.205 millones a 8.953 millones de parámetros entrenables (más del doble), con un total de 9.653 millones de parámetros según los safetensors del repositorio. El modelo resuelve un problema real: la ausencia de LLM capaces de generar kabyle canónico con razonamiento nativo, algo que los modelos generalistas cubren de forma muy deficiente.
 
 Su relevancia radica en los resultados declarados por el autor: es, según la model card, el primer modelo de LLM amazigh que supera el 80 % de precisión en clasificación temática SIB-200 (80,81 %), mejora los récords de traducción bidireccional en FLORES+ y mantiene un hueco ortográfico de 0,00, es decir, escribe en alfabeto latino bereber canónico sin deriva fonémica. Está basado en la arquitectura `qwen3_5` (según los tags del repositorio), es un causal LM instruction-tuned con capacidades de razonamiento y se publica bajo licencia Apache 2.0.
 
@@ -95,7 +95,7 @@ No existen otros modelos amazigh comparables publicados con metricas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Jugurtha-2-9B
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Jugurtha-2-9B
 - Predecesor (Jugurtha-4B): https://huggingface.co/agbalu/Jugurtha-4B
 - Dataset SIB-200: https://huggingface.co/datasets/Davlan/sib200
 - Dataset FLORES+: https://huggingface.co/datasets/openlanguagedata/flores_plus

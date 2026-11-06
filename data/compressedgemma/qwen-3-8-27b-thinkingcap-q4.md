@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.8-27B-Thinkingcap-Q4 (este) | 27,3B | no disponible | GGUF Q4 | Apache 2.0 | HuggingFace, 379 descargas |
-| Modelo base de bottlecapai | 27,3B (presumible) | no disponible | no disponible | no disponible | HuggingFace (referenciado) |
+| Qwen-3.8-27B-Thinkingcap-Q4 (este) | 27,3B | no disponible | GGUF Q4 | Apache 2.0 | Hugging Face, 379 descargas |
+| Modelo base de bottlecapai | 27,3B (presumible) | no disponible | no disponible | no disponible | Hugging Face (referenciado) |
 | Alternativas de ~27B en GGUF | no disponible | no disponible | GGUF | variable | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables de la misma familia o tamaño en la información proporcionada, por lo que la comparativa cuantitativa no puede completarse.
@@ -81,6 +81,6 @@ No se dispone de datos verificables sobre modelos comparables de la misma famili
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q4
+- Hugging Face: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q4
 - Modelo base referenciado: https://huggingface.co/bottlecapai
 - Herramienta de cuantización: HPC-Quantize V2 (sin enlace disponible en la información proporcionada)

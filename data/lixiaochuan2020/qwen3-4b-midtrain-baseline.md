@@ -87,10 +87,10 @@ No se han publicado comparaciones con modelos de terceros en la informacion disp
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-midtrain-baseline | 4,02B | no disponible (trayectorias de 16.384 tokens) | Agente de busqueda, atencion completa | Apache 2.0 | Publico en HuggingFace |
-| qwen3-4b-midtrain-local-kv-per-document | 4,02B (base Qwen3-4B) | no disponible | Mismo corpus, atencion local por documento | Apache 2.0 | Publico en HuggingFace |
-| qwen3-4b-rl-baseline | 4,02B (base Qwen3-4B) | no disponible | RL a partir de este baseline | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen3-4B | 4,02B | no disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | Publico en HuggingFace |
+| qwen3-4b-midtrain-baseline | 4,02B | no disponible (trayectorias de 16.384 tokens) | Agente de busqueda, atencion completa | Apache 2.0 | Publico en Hugging Face |
+| qwen3-4b-midtrain-local-kv-per-document | 4,02B (base Qwen3-4B) | no disponible | Mismo corpus, atencion local por documento | Apache 2.0 | Publico en Hugging Face |
+| qwen3-4b-rl-baseline | 4,02B (base Qwen3-4B) | no disponible | RL a partir de este baseline | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen3-4B | 4,02B | no disponible en la informacion proporcionada | Modelo base generalista | Apache 2.0 | Publico en Hugging Face |
 
 La comparativa se limita a la familia inmediata del autor y al modelo base, porque no se dispone de resultados de benchmarks frente a otros modelos de 4B en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ La comparativa se limita a la familia inmediata del autor y al modelo base, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-baseline
+- Modelo en Hugging Face: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-baseline
 - Variante local-KV: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-local-kv-per-document
 - Variante con RL: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-baseline
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

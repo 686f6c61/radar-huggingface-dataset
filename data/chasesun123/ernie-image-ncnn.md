@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ERNIE-Image es un modelo open source de texto a imagen desarrollado por el equipo ERNIE-Image de Baidu. Está construido sobre un Diffusion Transformer (DiT) de flujo único y se complementa con un Prompt Enhancer ligero que expande entradas breves del usuario en descripciones estructuradas más ricas. Con solo 8.000 millones de parámetros en el DiT, alcanza un rendimiento de última generación entre los modelos de texto a imagen de pesos abiertos. Este repo de HuggingFace, `chaseSun123/ernie-image-ncnn`, contiene una conversión del modelo al formato ncnn, optimizado para inferencia en dispositivos con recursos limitados. El tamaño del repositorio es de 6,3 GB, lo que sugiere que los pesos están cuantizados o en precisión reducida para su despliegue en entornos edge.
+ERNIE-Image es un modelo open source de texto a imagen desarrollado por el equipo ERNIE-Image de Baidu. Está construido sobre un Diffusion Transformer (DiT) de flujo único y se complementa con un Prompt Enhancer ligero que expande entradas breves del usuario en descripciones estructuradas más ricas. Con solo 8.000 millones de parámetros en el DiT, alcanza un rendimiento de última generación entre los modelos de texto a imagen de pesos abiertos. Este repo de Hugging Face, `chaseSun123/ernie-image-ncnn`, contiene una conversión del modelo al formato ncnn, optimizado para inferencia en dispositivos con recursos limitados. El tamaño del repositorio es de 6,3 GB, lo que sugiere que los pesos están cuantizados o en precisión reducida para su despliegue en entornos edge.
 
 ## Especificaciones técnicas
 
@@ -15,7 +15,7 @@ ERNIE-Image es un modelo open source de texto a imagen desarrollado por el equip
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | ncnn (en el repo de HuggingFace) |
+| Formato de pesos | ncnn (en el repo de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. La b
 - VRAM estimada para inferencia: no disponible. Dado el tamaño del DiT (8.000 millones de parámetros), se requiere una GPU con memoria suficiente, aunque la cuantización en formato ncnn puede reducir el consumo.
 - GPU recomendadas: no disponible. En función del tamaño del modelo, una RTX 4090 o superior sería razonable para el modelo original en precisión completa, pero no hay datos oficiales.
 - Compatibilidad con GPU de consumo: probablemente sí con cuantización, pero no está confirmado en la información disponible.
-- Opciones de despliegue: el repo de HuggingFace está en formato ncnn, pensado para ejecución en dispositivos edge y móviles. Para el modelo original, se puede desplegar con frameworks como PyTorch o Diffusers, aunque no se detallan.
+- Opciones de despliegue: el repo de Hugging Face está en formato ncnn, pensado para ejecución en dispositivos edge y móviles. Para el modelo original, se puede desplegar con frameworks como PyTorch o Diffusers, aunque no se detallan.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada en el repo de HuggingFace. Es imprescindible verificar los términos de uso antes de emplear el modelo en aplicaciones comerciales.
+- Licencia no especificada en el repo de Hugging Face. Es imprescindible verificar los términos de uso antes de emplear el modelo en aplicaciones comerciales.
 - No hay documentación sobre los datos de entrenamiento, por lo que pueden existir sesgos no documentados en la generación de imágenes.
 - El formato ncnn puede implicar una pérdida de precisión o de calidad si los pesos han sido cuantizados.
 - La ausencia de información sobre idiomas soportados limita su uso en contextos multilingües.
@@ -70,6 +70,6 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/chaseSun123/ernie-image-ncnn
+- Repo de Hugging Face: https://huggingface.co/chaseSun123/ernie-image-ncnn
 - GitHub del modelo original: https://github.com/baidu/ERNIE-Image
 - Sitio web del proyecto: https://ernie-image.ai/

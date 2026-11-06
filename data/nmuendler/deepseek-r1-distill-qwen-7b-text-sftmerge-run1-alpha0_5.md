@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) publicado por el usuario nmuendler sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. El identificador del repositorio, "text-sftmerge-run1-alpha0_5", sugiere un proceso de ajuste supervisado (SFT) sobre datos de texto, seguido de una fusión o mezcla de adaptadores con un factor alpha de 0,5. La model card es la plantilla por defecto de HuggingFace y no aporta información sobre datos, hiperparámetros ni evaluación.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) publicado por el usuario nmuendler sobre el modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. El identificador del repositorio, "text-sftmerge-run1-alpha0_5", sugiere un proceso de ajuste supervisado (SFT) sobre datos de texto, seguido de una fusión o mezcla de adaptadores con un factor alpha de 0,5. La model card es la plantilla por defecto de Hugging Face y no aporta información sobre datos, hiperparámetros ni evaluación.
 
 El interés práctico de esta ficha es limitado y hay que ser honesto al respecto: se trata de un artefacto de investigación sin documentación, sin licencia declarada, sin idiomas declarados y con cero descargas y cero "likes" en el momento de su publicación. No es un modelo listo para producción, sino un experimento de ajuste reproducible únicamente si se dispone del modelo base.
 
@@ -30,7 +30,7 @@ Aun así, el modelo base sobre el que se aplica sí es relevante: DeepSeek-R1-Di
 
 La arquitectura subyacente es la del modelo base, un transformer decoder-only de la familia Qwen2.5 destilado por DeepSeek a partir de su modelo de razonamiento R1. El destilado traslada las capacidades de razonamiento del modelo profesor a un modelo denso de menor tamano, no a una arquitectura MoE ni a un modelo de espacio de estados. Este repositorio concreto no modifica esa arquitectura: anade un adaptador de bajo rango (LoRA) sobre las capas del modelo base.
 
-Sobre el proceso de entrenamiento de este adaptador no hay informacion util. La model card es la plantilla vacia de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No se especifican el dataset de SFT, el numero de tokens de entrenamiento, la composicion de los datos, la precision de entrenamiento, si hubo mezcla con otros adaptadores ni la semantica exacta del parametro alpha 0,5 que aparece en el nombre. Tampoco se documenta si el resultado es un adaptador puro o una fusion intermedia. La unica referencia tecnica presente en el repositorio es el enlace al articulo de Lacoste et al. (2019) sobre el calculo de impacto de carbono, que forma parte de la plantilla por defecto y no describe el entrenamiento. La version de PEFT registrada es 0.19.1.
+Sobre el proceso de entrenamiento de este adaptador no hay informacion util. La model card es la plantilla vacia de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No se especifican el dataset de SFT, el numero de tokens de entrenamiento, la composicion de los datos, la precision de entrenamiento, si hubo mezcla con otros adaptadores ni la semantica exacta del parametro alpha 0,5 que aparece en el nombre. Tampoco se documenta si el resultado es un adaptador puro o una fusion intermedia. La unica referencia tecnica presente en el repositorio es el enlace al articulo de Lacoste et al. (2019) sobre el calculo de impacto de carbono, que forma parte de la plantilla por defecto y no describe el entrenamiento. La version de PEFT registrada es 0.19.1.
 
 ## Capacidades
 

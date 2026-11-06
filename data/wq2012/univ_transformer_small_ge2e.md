@@ -26,7 +26,7 @@ Su relevancia practica reside en el tamano: 1.239.620 parametros en el encoder, 
 | Temporal pooling | `atp` (Attentive Temporal Pooling) |
 | Frontend de audio | Log-mel de 80 dimensiones a 16.000 Hz + VAD de energia + CMVN |
 | Dominio de entrenamiento | `universal` |
-| Pipeline declarado en HuggingFace | `audio-classification` |
+| Pipeline declarado en Hugging Face | `audio-classification` |
 | Biblioteca | `flaxspeaker` |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No se han proporcionado resultados comparativos con otros modelos en la informac
 
 | Modelo | Categoria | Parametros | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| `wq2012/univ_transformer_small_ge2e` | Transformer + ATP + GE2E-softmax | 1.239.620 | Apache 2.0 | HuggingFace, PyPI, GitHub | EER 15,17-23,95 % (1-utt) |
+| `wq2012/univ_transformer_small_ge2e` | Transformer + ATP + GE2E-softmax | 1.239.620 | Apache 2.0 | Hugging Face, PyPI, GitHub | EER 15,17-23,95 % (1-utt) |
 | Modelos de la familia x-vector | Red neuronal feed-forward con pooling estadistico | No disponible | No disponible | Implementaciones publicas | No disponible en la informacion proporcionada |
 | ECAPA-TDNN | CNN + atencion con pooling estadistico | No disponible | No disponible | Implementaciones publicas (por ejemplo, SpeechBrain) | No disponible en la informacion proporcionada |
 | Sistemas de verificacion basados en WavLM o ECAPA preentrenados a gran escala | Modelos auto-supervisados de audio adaptados a SV | No disponible | No disponible | Repositorios publicos | No disponible en la informacion proporcionada |
@@ -118,7 +118,7 @@ La informacion proporcionada no incluye mediciones comparativas frente a otras f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_transformer_small_ge2e
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_transformer_small_ge2e
 - Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Perfil del autor en GitHub: https://github.com/wq2012

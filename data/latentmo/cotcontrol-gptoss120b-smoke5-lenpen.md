@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan una comparativa cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke5-lenpen
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke5-lenpen
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Codigo, configuracion y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/` y `cot-control/results/rl/smoke5-lenpen/`, diario en `runs/`)
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

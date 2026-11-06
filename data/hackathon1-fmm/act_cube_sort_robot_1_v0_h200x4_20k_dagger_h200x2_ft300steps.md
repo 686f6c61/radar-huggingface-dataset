@@ -4,7 +4,7 @@
 
 El modelo `hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps` es una política robótica de manipulación entrenada con la librería LeRobot y basada en la arquitectura ACT (Action Chunking Transformer), descrita en el artículo arXiv:2304.13705. No es un modelo de lenguaje: su entrada son observaciones sensoriales (imágenes de cámara y estado de las articulaciones del robot) y su salida son secuencias de acciones motrices. El identificador del repositorio indica que la tarea objetivo es la clasificación y colocación de cubos ("cube sort") con un brazo robótico.
 
-El nombre del checkpoint describe un proceso de entrenamiento en dos fases: una primera de 20.000 pasos sobre 4 GPU H200 con datos recogidos mediante DAgger, y un ajuste fino posterior de 300 pasos sobre 2 GPU H200. El conjunto de datos asociado es `hackathon1-fmm/rollout_cube_sort_robot_1_dagger_20k_20260915_121921_clean1_merged_2ep_20260915_125953`, también alojado en HuggingFace.
+El nombre del checkpoint describe un proceso de entrenamiento en dos fases: una primera de 20.000 pasos sobre 4 GPU H200 con datos recogidos mediante DAgger, y un ajuste fino posterior de 300 pasos sobre 2 GPU H200. El conjunto de datos asociado es `hackathon1-fmm/rollout_cube_sort_robot_1_dagger_20k_20260915_121921_clean1_merged_2ep_20260915_125953`, también alojado en Hugging Face.
 
 Su relevancia es la de un artefacto de referencia dentro de un hackathon: publica pesos en formato safetensors listos para cargar con LeRobot, pero no incluye model card detallada, resultados de evaluación ni métricas de éxito en tarea real. Con 0 descargas y 0 likes en el momento de la consulta, no hay validación externa de su comportamiento.
 
@@ -77,9 +77,9 @@ El repositorio no incluye métricas de tasa de éxito, número de episodios de e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_cube_sort_robot_1_v0 (este modelo) | ACT, imitacion de manipulacion | no disponible | no disponible | apache-2.0 segun tag | HuggingFace, libreria LeRobot |
-| Diffusion Policy (LeRobot) | Politica por difusion, imitacion | no disponible | no disponible | segun implementacion de LeRobot | HuggingFace, libreria LeRobot |
-| SmolVLA (LeRobot) | Vision-language-action con componente de lenguaje | no disponible | no disponible | segun implementacion de LeRobot | HuggingFace, libreria LeRobot |
+| act_cube_sort_robot_1_v0 (este modelo) | ACT, imitacion de manipulacion | no disponible | no disponible | apache-2.0 segun tag | Hugging Face, libreria LeRobot |
+| Diffusion Policy (LeRobot) | Politica por difusion, imitacion | no disponible | no disponible | segun implementacion de LeRobot | Hugging Face, libreria LeRobot |
+| SmolVLA (LeRobot) | Vision-language-action con componente de lenguaje | no disponible | no disponible | segun implementacion de LeRobot | Hugging Face, libreria LeRobot |
 | ACT original (ALOHA, arXiv:2304.13705) | ACT, imitacion bimanual | no disponible | no disponible | no disponible | Paper y repositorio de referencia |
 
 No se dispone de resultados de benchmarks publicados que permitan comparar el rendimiento de este checkpoint con las alternativas anteriores. La comparación disponible es únicamente de categoría y de ecosistema de despliegue.
@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks publicados que permitan comparar el re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps
+- Modelo en Hugging Face: https://huggingface.co/hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps
 - Dataset asociado: https://huggingface.co/datasets/hackathon1-fmm/rollout_cube_sort_robot_1_dagger_20k_20260915_121921_clean1_merged_2ep_20260915_125953
 - Paper de ACT (Action Chunking Transformer): https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

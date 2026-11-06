@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Sentinel7/krea2` es un repositorio publicado en HuggingFace por el usuario Sentinel7, con fecha de creación en junio de 2026 y última actualización en agosto de 2026. El repositorio contiene pesos en formato `safetensors` con un tamaño total de 61,2 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o configuración interna.
+El modelo `Sentinel7/krea2` es un repositorio publicado en Hugging Face por el usuario Sentinel7, con fecha de creación en junio de 2026 y última actualización en agosto de 2026. El repositorio contiene pesos en formato `safetensors` con un tamaño total de 61,2 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información pública sobre su arquitectura, número de parámetros o configuración interna.
 
 A pesar de contar con 12 likes, el modelo no registra descargas, lo que indica que es un lanzamiento reciente o que aún no ha sido adoptado por la comunidad. No se ha publicado ninguna documentación técnica, paper, blog o demo asociada, y los campos de licencia, idiomas y pipeline aparecen como no disponibles. Esta falta de información impide realizar una evaluación rigurosa del modelo, por lo que cualquier uso en producción requeriría una verificación previa exhaustiva.
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sentinel7/krea2
+- Repositorio en Hugging Face: https://huggingface.co/Sentinel7/krea2
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información proporcionada.

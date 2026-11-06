@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BigBang-v1 (base) | 35B | 3B | no disponible | no disponible | HuggingFace, GitHub |
-| BigBang-v1-oQ4e-fp16-mtp (este) | 35B (6.19B en safetensors) | 3B | no disponible | no disponible | HuggingFace |
-| Qwen3-30B-A3B (referencia, si existe) | 30B | 3B | 256K (tipico) | Apache 2.0 (tipico) | HuggingFace |
+| BigBang-v1 (base) | 35B | 3B | no disponible | no disponible | Hugging Face, GitHub |
+| BigBang-v1-oQ4e-fp16-mtp (este) | 35B (6.19B en safetensors) | 3B | no disponible | no disponible | Hugging Face |
+| Qwen3-30B-A3B (referencia, si existe) | 30B | 3B | 256K (tipico) | Apache 2.0 (tipico) | Hugging Face |
 
 No se dispone de comparativas directas con otros modelos de la misma categoria en la informacion proporcionada. La falta de licencia y de datos de contexto dificulta una comparacion completa.
 
@@ -73,8 +73,8 @@ No se dispone de comparativas directas con otros modelos de la misma categoria e
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/aunali1/BigBang-v1-oQ4e-fp16-mtp
-- Modelo base en HuggingFace (pagina de busqueda de cuantizaciones): https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1
+- Modelo cuantizado en Hugging Face: https://huggingface.co/aunali1/BigBang-v1-oQ4e-fp16-mtp
+- Modelo base en Hugging Face (pagina de busqueda de cuantizaciones): https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1
 - Repositorio GitHub del modelo base: https://github.com/endless-frontier/BigBang-v1
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Runtime MTPLX para multi-token prediction: https://github.com/youssofal/mtplx

@@ -93,6 +93,6 @@ El modelo supera en más de 3.7 dB al mejor método clásico presentado. No se h
 
 ## Enlaces
 
-- Modelo original en HuggingFace: [https://huggingface.co/kohils/dlp-nppe3-denoise-sr](https://huggingface.co/kohils/dlp-nppe3-denoise-sr)
+- Modelo original en Hugging Face: [https://huggingface.co/kohils/dlp-nppe3-denoise-sr](https://huggingface.co/kohils/dlp-nppe3-denoise-sr)
 - Repositorio relacionado de la competición en GitHub: [https://github.com/AbdulAhadRauf/Denoising-4-Super-Resolution-of-Low-Light-Images](https://github.com/AbdulAhadRauf/Denoising-4-Super-Resolution-of-Low-Light-Images)
-- Espejo en HuggingFace: [https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr](https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr)
+- Espejo en Hugging Face: [https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr](https://huggingface.co/HUGGINGFACENOOB123/dlp-nppe3-denoise-sr)

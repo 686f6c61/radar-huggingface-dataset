@@ -31,7 +31,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 
 - Generación de texto y razonamiento propios de un modelo de 4B basado en Qwen3.5, según el layout declarado.
 - Orientación a toma de decisiones (decision-model), que es la tarea para la que se ajustó el modelo fuente.
-- Etiquetado como `feature-extraction` en el pipeline de HuggingFace, lo que sugiere uso para extracción de representaciones.
+- Etiquetado como `feature-extraction` en el pipeline de Hugging Face, lo que sugiere uso para extracción de representaciones.
 - Compatibilidad declarada con endpoints (`endpoints_compatible`).
 - Soporte de tool calling: no disponible en la información.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información.
@@ -79,11 +79,11 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 - El uso previsto es de nicho (pool de soups de Bittensor); no hay evidencia de calidad para uso general en producción.
 - Aunque la licencia es Apache-2.0 y permite uso comercial, la ausencia de benchmarks y de documentación técnica desaconseja su adopción en producción sin evaluación previa.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria.
-- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de HuggingFace y debe tratarse con cautela.
+- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de Hugging Face y debe tratarse con cautela.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crabby-devil/zils-mini-purplemist-4b
+- Hugging Face: https://huggingface.co/crabby-devil/zils-mini-purplemist-4b
 - Modelo fuente: https://huggingface.co/olaverse/PurpleMIST-Mini-2.0
 - Revisión fuente: `23c92d1aba9fba17d8631884cae1f313eb05abba`
 - Bittensor subnet 127 (Zils): no disponible en la información

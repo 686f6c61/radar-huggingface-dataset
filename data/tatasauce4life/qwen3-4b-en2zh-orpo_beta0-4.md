@@ -82,9 +82,9 @@ No hay comparacion con otros modelos publicada por el autor. Cualquier cifra de 
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-4b-en2zh-orpo_beta0.4` | ~4B (adaptador LoRA) | 1024 tokens en entrenamiento; contexto del base no especificado en la ficha | SFT + ORPO | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `tatasauce4life/qwen3-4b-en2zh-lora` | ~4B (adaptador LoRA) | No disponible | Solo SFT | No disponible en la informacion proporcionada | HuggingFace |
-| `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit` | ~4B | No disponible en la informacion proporcionada | Modelo base, sin ajuste de traduccion | No disponible en la informacion proporcionada | HuggingFace |
+| `qwen3-4b-en2zh-orpo_beta0.4` | ~4B (adaptador LoRA) | 1024 tokens en entrenamiento; contexto del base no especificado en la ficha | SFT + ORPO | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `tatasauce4life/qwen3-4b-en2zh-lora` | ~4B (adaptador LoRA) | No disponible | Solo SFT | No disponible en la informacion proporcionada | Hugging Face |
+| `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit` | ~4B | No disponible en la informacion proporcionada | Modelo base, sin ajuste de traduccion | No disponible en la informacion proporcionada | Hugging Face |
 
 Alternativas de traduccion de proposito general como NLLB-200, OPUS-MT o Tower no se comparan aqui porque no se dispone de resultados de benchmarks publicados en la informacion proporcionada para este adaptador; cualquier comparacion seria especulativa.
 
@@ -103,7 +103,7 @@ Alternativas de traduccion de proposito general como NLLB-200, OPUS-MT o Tower n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatasauce4life/qwen3-4b-en2zh-orpo_beta0.4
+- Modelo en Hugging Face: https://huggingface.co/tatasauce4life/qwen3-4b-en2zh-orpo_beta0.4
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Modelo SFT de partida citado en la ficha: https://huggingface.co/tatasauce4life/qwen3-4b-en2zh-lora
 - Articulo de ORPO: https://arxiv.org/abs/2403.07691

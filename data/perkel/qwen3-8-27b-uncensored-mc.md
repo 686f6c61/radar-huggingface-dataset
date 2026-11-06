@@ -103,9 +103,9 @@ Los datos de velocidad para las variantes Large y XXL no estan disponibles en la
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | perkel/Qwen3.8-27B-Uncensored-MC | 27B denso | 262.144 | `.megacapibara` (MXFP4/MXFP6, 12,70-23,58 GiB) | Top-1 92,7-98,2% frente a su BF16; 219-493 tok/s en RTX 5090 | Apache 2.0 | Repo publicado; motor aun no disponible |
-| orcarouter/Qwen3.8-27B-Uncensored | 27B denso | 262.144 | BF16 (~55 GB VRAM) | No disponible | Apache 2.0 (heredada) | Disponible en HuggingFace |
-| GGUFs de Unsloth sobre Qwen3.8-27B original | 27B denso | 262.144 | GGUF (varios tamanos) | Top-1 publicado por el autor, sobre su propio texto | Apache 2.0 | Disponible en HuggingFace |
-| JonathanColetti/Qwen3.8-27B-Uncensored | 27B denso | 262.144 | GGUF, recomendado Q4_K_M | No disponible | Apache 2.0 (heredada) | Disponible en HuggingFace, apto para GPU de 24 GB |
+| orcarouter/Qwen3.8-27B-Uncensored | 27B denso | 262.144 | BF16 (~55 GB VRAM) | No disponible | Apache 2.0 (heredada) | Disponible en Hugging Face |
+| GGUFs de Unsloth sobre Qwen3.8-27B original | 27B denso | 262.144 | GGUF (varios tamanos) | Top-1 publicado por el autor, sobre su propio texto | Apache 2.0 | Disponible en Hugging Face |
+| JonathanColetti/Qwen3.8-27B-Uncensored | 27B denso | 262.144 | GGUF, recomendado Q4_K_M | No disponible | Apache 2.0 (heredada) | Disponible en Hugging Face, apto para GPU de 24 GB |
 | orcarouter (build MLX 4-bit) | 27B denso | 262.144 | MLX 4-bit | No disponible | Apache 2.0 (heredada) | Disponible; orientado a Mac de 32 GB |
 | xixiameng/Qwen3.8-27B-Uncensored-FP8-bucket | 27B denso | 262.144 | Block-FP8 offline | No disponible | Apache 2.0 (heredada) | Disponible como bucket |
 
@@ -127,7 +127,7 @@ La comparacion directa de rendimiento entre estas builds no es posible porque ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perkel/Qwen3.8-27B-Uncensored-MC
+- Modelo en Hugging Face: https://huggingface.co/perkel/Qwen3.8-27B-Uncensored-MC
 - Conversion equivalente sin abliterar: https://huggingface.co/perkel/Qwen3.8-27B-MC
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

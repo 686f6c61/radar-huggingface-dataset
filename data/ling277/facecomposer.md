@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FaceComposer es un adaptador LoRA sobre el modelo de difusión FLUX.1-Fill-dev, publicado por el usuario Ling277 en HuggingFace. El modelo está diseñado para composición facial basada en referencias: dado un retrato fuente, un retrato de referencia y una selección de componentes faciales (cejas, ojos, nariz, boca), edita la región de interés de la fuente hacia la referencia, preservando la pose, la expresión, la iluminación y el contexto general de la imagen original. Se presenta como el código oficial de investigación del trabajo homónimo publicado en NeurIPS 2023.
+FaceComposer es un adaptador LoRA sobre el modelo de difusión FLUX.1-Fill-dev, publicado por el usuario Ling277 en Hugging Face. El modelo está diseñado para composición facial basada en referencias: dado un retrato fuente, un retrato de referencia y una selección de componentes faciales (cejas, ojos, nariz, boca), edita la región de interés de la fuente hacia la referencia, preservando la pose, la expresión, la iluminación y el contexto general de la imagen original. Se presenta como el código oficial de investigación del trabajo homónimo publicado en NeurIPS 2023.
 
 El enfoque se basa en el paradigma de generación compositiva sobre difusión latente, empleando condiciones específicas de rostro como vectores de identidad y proyecciones de características. A diferencia de métodos anteriores como CollDiff, que requieren múltiples modelos de difusión, FaceComposer integra todas las tareas de creación facial en un único modelo unificado, lo que reduce la complejidad de entrenamiento e inferencia. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, aunque el modelo base FLUX.1-Fill-dev tiene su propia licencia que debe verificarse.
 
@@ -30,7 +30,7 @@ FaceComposer es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el model
 - Generacion de imagenes condicionada por texto (segun el paper, aunque no se detalla en la model card).
 - Edicion facial guiada por texto (segun el paper).
 - Animacion facial (segun el paper, aunque no se describe en la model card).
-- Integracion con el ecosistema diffusers: compatible con el pipeline de text-to-image de HuggingFace.
+- Integracion con el ecosistema diffusers: compatible con el pipeline de text-to-image de Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - El LoRA en si ocupa 1,9 GB en disco, pero requiere el modelo base FLUX.1-Fill-dev para funcionar, que es un modelo de difusion de gran tamano (del orden de decenas de gigabytes en precision completa).
 - No se especifican requisitos minimos de VRAM en la informacion disponible. Como orientacion, FLUX.1-Fill-dev suele necesitar al menos 24 GB de VRAM en precision FP16 para inferencia, y puede requerir cuantizacion (por ejemplo, 8 bits) para GPUs con menos memoria.
 - Se recomienda una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A100) para un uso comodo. GPUs con 12-16 GB podrian funcionar con cuantizacion agresiva y menor resolucion de salida.
-- Opciones de despliegue: se puede usar mediante la libreria diffusers de HuggingFace, cargando el LoRA sobre el modelo base. Tambien podria integrarse en pipelines de generacion de imagenes que soporten LoRA, como ComfyUI o Automatic1111, aunque no se confirma en la documentacion.
+- Opciones de despliegue: se puede usar mediante la libreria diffusers de Hugging Face, cargando el LoRA sobre el modelo base. Tambien podria integrarse en pipelines de generacion de imagenes que soporten LoRA, como ComfyUI o Automatic1111, aunque no se confirma en la documentacion.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ La informacion disponible menciona a CollDiff como un metodo alternativo que emp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ling277/FaceComposer
+- Modelo en Hugging Face: https://huggingface.co/Ling277/FaceComposer
 - Paper en OpenReview (PDF): https://openreview.net/pdf?id=xrK3QA9mLo
 - Paper en OpenReview (foro): https://openreview.net/forum?id=xrK3QA9mLo
 - Paper en NeurIPS: https://papers.nips.cc/paper_files/paper/2023/hash/2b4caf39e645680f826ae0a9e7ae9402-Abstract-Conference.html

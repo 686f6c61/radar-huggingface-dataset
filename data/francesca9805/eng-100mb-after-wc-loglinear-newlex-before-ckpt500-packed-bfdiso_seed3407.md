@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 es un modelo de generación de texto de 124.770.816 parámetros (unos 124,8 M) publicado por el usuario francesca9805 en HuggingFace. Según las etiquetas del repositorio, se trata de un ajuste fino supervisado (SFT) del checkpoint francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed3407, realizado con la librería TRL, sobre una arquitectura de tipo GPT-2 (decoder-only) y con pesos en formato safetensors.
+eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 es un modelo de generación de texto de 124.770.816 parámetros (unos 124,8 M) publicado por el usuario francesca9805 en Hugging Face. Según las etiquetas del repositorio, se trata de un ajuste fino supervisado (SFT) del checkpoint francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed3407, realizado con la librería TRL, sobre una arquitectura de tipo GPT-2 (decoder-only) y con pesos en formato safetensors.
 
 El nombre del modelo sigue un patrón de nomenclatura típico de experimentos controlados de tokenización: indica un corpus de entrenamiento de aproximadamente 100 MB en inglés ("eng-100mb"), secuencias empaquetadas ("packed"), una variante de vocabulario o segmentación ("wc-loglinear-newlex"), el checkpoint 500 del entrenamiento y una semilla fija (3407). El enlace de Weights & Biases incluido en la model card apunta al proyecto "new-tokenizers" de la Universidad de Groningen (usuario f-padovani), lo que sitúa el modelo dentro de una familia de ablaciones sobre tokenizadores y vocabularios, con variantes hermanas ("uniform", "zipf", multilingües como "jpn", "tur").
 
@@ -18,7 +18,7 @@ Su relevancia práctica es limitada fuera de ese contexto de investigación: no 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se han publicado versiones GGUF, AWQ, GPTQ ni similares; los pesos originales estan en safetensors) |
 | Idiomas soportados | no disponible en los metadatos; el nombre del modelo indica "eng" (ingles) |
-| Licencia | no disponible (la model card incluye "licence: license" sin terminos concretos y los metadatos de HuggingFace no la especifican) |
+| Licencia | no disponible (la model card incluye "licence: license" sin terminos concretos y los metadatos de Hugging Face no la especifican) |
 | Formato de pesos | safetensors |
 | Modelo base | francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed3407 |
 | Tipo de ajuste | SFT (supervised fine-tuning) con TRL 0.23.0 |
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| eng-100mb-...-seed3407 (este modelo) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas; pesos safetensors | sin benchmarks publicados |
+| eng-100mb-...-seed3407 (este modelo) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas; pesos safetensors | sin benchmarks publicados |
 | GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | ampliamente disponible, con versiones GGUF y cuantizadas | benchmarks historicos publicados por OpenAI |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | disponible en HuggingFace con multiples checkpoints intermedios | evaluado en el paper de Pythia (EleutherAI) |
-| SmolLM2-135M | 135 M | 8192 tokens | Apache 2.0 | disponible en HuggingFace, con versiones GGUF y cuantizadas | benchmarks publicados por HuggingFace |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | disponible en Hugging Face con multiples checkpoints intermedios | evaluado en el paper de Pythia (EleutherAI) |
+| SmolLM2-135M | 135 M | 8192 tokens | Apache 2.0 | disponible en Hugging Face, con versiones GGUF y cuantizadas | benchmarks publicados por Hugging Face |
 
 Los datos de los modelos alternativos corresponden a especificaciones publicas de sus autores. Para este modelo concreto no es posible comparar rendimiento porque no existen resultados de evaluacion en la informacion disponible.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos corresponden a especificaciones publicas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/vdh81q71
 - Repositorio de TRL: https://github.com/huggingface/trl

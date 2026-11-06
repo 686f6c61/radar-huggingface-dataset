@@ -77,6 +77,6 @@ La comparación directa no es posible sin datos de benchmarks. Este checkpoint e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16
 - Proyecto W&B (mencionado en la model card): `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_nb21iid16` (sin URL directa)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

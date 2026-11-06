@@ -4,7 +4,7 @@
 
 El modelo `rishanthrajendhran/ideadet-logreg-391k-items` es un clasificador de regresión logística diseñado para la detección de texto generado por inteligencia artificial a nivel de idea. Desarrollado por Rishanth Rajendhran, investigador centrado en el análisis y mejora de generaciones de modelos de lenguaje, este modelo forma parte de una familia de detectores de IA que incluye variantes basadas en adaptadores LoRA sobre modelos grandes como Nemotron 30B. El presente modelo, sin embargo, utiliza un enfoque ligero y eficiente basado en regresión logística, lo que lo hace adecuado para despliegues con recursos mínimos.
 
-El modelo se presenta con un tamaño de repositorio de 0.0 GB, lo que indica que los pesos son extremadamente compactos. La licencia Apache-2.0 permite uso comercial y modificación sin restricciones significativas. Aunque el acceso está restringido (gated) en HuggingFace, la naturaleza del modelo sugiere que puede ser utilizado para clasificar fragmentos de texto como generados por IA o por humanos, probablemente a partir de características extraídas de los textos. No se dispone de información sobre el pipeline exacto ni sobre los idiomas soportados, pero por su nombre y contexto se infiere que trabaja con texto en inglés u otros idiomas comunes.
+El modelo se presenta con un tamaño de repositorio de 0.0 GB, lo que indica que los pesos son extremadamente compactos. La licencia Apache-2.0 permite uso comercial y modificación sin restricciones significativas. Aunque el acceso está restringido (gated) en Hugging Face, la naturaleza del modelo sugiere que puede ser utilizado para clasificar fragmentos de texto como generados por IA o por humanos, probablemente a partir de características extraídas de los textos. No se dispone de información sobre el pipeline exacto ni sobre los idiomas soportados, pero por su nombre y contexto se infiere que trabaja con texto en inglés u otros idiomas comunes.
 
 ## Especificaciones tecnicas
 
@@ -74,13 +74,13 @@ La comparativa muestra que el modelo de regresion logistica es mucho mas ligero 
 - Riesgo de alucinacion no aplica (no genera texto), pero si puede producir falsos positivos o negativos en la clasificacion.
 - Dependencia de la extraccion de caracteristicas: el rendimiento depende criticamente de las caracteristicas utilizadas; si no se proporcionan junto al modelo, el usuario debe implementar su propio pipeline de extraccion, lo que puede afectar a la coherencia.
 - Limitacion de idioma: no se ha especificado si funciona en espanol u otros idiomas; probablemente este optimizado para ingles.
-- Restricciones de acceso: el repositorio es gated, por lo que los usuarios deben solicitar acceso y aceptar condiciones en HuggingFace.
+- Restricciones de acceso: el repositorio es gated, por lo que los usuarios deben solicitar acceso y aceptar condiciones en Hugging Face.
 - Para uso comercial, la licencia Apache-2.0 permite libertad, pero se recomienda verificar que no haya patentes asociadas.
 - En produccion, se debe monitorizar la deriva del modelo: los textos generados por IA evolucionan, y un clasificador estatico puede quedar obsoleto rapidamente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-logreg-391k-items
+- Repositorio Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-logreg-391k-items
 - Modelo relacionado (LoRA sobre Nemotron): https://friendli.ai/models/rishanthrajendhran/ideadet-nemotron30b-391k-items
 - Perfil del autor: https://rishanthrajendhran.github.io/
 - GitHub del autor: https://github.com/RishanthRajendhran/

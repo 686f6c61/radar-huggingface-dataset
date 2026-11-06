@@ -78,9 +78,9 @@ No se dispone de datos comparativos con otros modelos ASR en streaming del mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-de
-- Modelo base en HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny
-- Modelo no streaming en HuggingFace: https://huggingface.co/UsefulSensors/moonshine-tiny
+- Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-de
+- Modelo base en Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny
+- Modelo no streaming en Hugging Face: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Repositorio de GitHub: https://github.com/moonshine-ai/moonshine
 - Implementación C++ del modelo streaming: https://github.com/moonshine-ai/moonshine/blob/main/core/moonshine-streaming-model.cpp
 - Registro de benchmarks externos: https://free2aitools.com/model/moonshine-ai/moonshine-streaming-tiny

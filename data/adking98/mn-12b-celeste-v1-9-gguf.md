@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MN-12B-Celeste-V1.9-GGUF es la version cuantizada en formato GGUF de MN-12B-Celeste-V1.9, un modelo de lenguaje de ~12,25 mil millones de parametros publicado por el usuario Adking98 en HuggingFace. El repositorio contiene unicamente pesos en GGUF, generados a partir de un ajuste fino y posterior conversion realizados con Unsloth, lo que lo orienta especificamente a inferencia local y a despliegues con llama.cpp y herramientas compatibles. La etiqueta `mistral` del repositorio y el recuento exacto de parametros (12.247.782.400, identico al de la familia Mistral Nemo de 12B) apuntan a que deriva de esa arquitectura, aunque el autor no lo confirma en la model card.
+MN-12B-Celeste-V1.9-GGUF es la version cuantizada en formato GGUF de MN-12B-Celeste-V1.9, un modelo de lenguaje de ~12,25 mil millones de parametros publicado por el usuario Adking98 en Hugging Face. El repositorio contiene unicamente pesos en GGUF, generados a partir de un ajuste fino y posterior conversion realizados con Unsloth, lo que lo orienta especificamente a inferencia local y a despliegues con llama.cpp y herramientas compatibles. La etiqueta `mistral` del repositorio y el recuento exacto de parametros (12.247.782.400, identico al de la familia Mistral Nemo de 12B) apuntan a que deriva de esa arquitectura, aunque el autor no lo confirma en la model card.
 
 El modelo se presenta como conversacional y su relevancia es la habitual de los GGUF de tamano medio: permite ejecutar un LLM de 12B en hardware de consumo con cuantizaciones de 4 bits, manteniendo los pesos en un unico archivo de 7,5 GB. No hay informacion publicada por el autor sobre licencia, idiomas, composicion del dataset de entrenamiento, regimen de alineacion ni resultados de evaluacion, por lo que la mayor parte de las especificaciones habituales quedan como no disponibles.
 
-Se trata, ademas, de un modelo con muy poca traccion: 127 descargas y 1 like en el momento de la consulta, con el repositorio actualizado por ultima vez el 26 de septiembre de 2026 segun los metadatos de HuggingFace. Existe una cuantizacion alternativa del mismo modelo publicada por bartowski, que amplia el catalogo de niveles de cuantizacion disponibles mas alla del unico Q4_K_M del repositorio original.
+Se trata, ademas, de un modelo con muy poca traccion: 127 descargas y 1 like en el momento de la consulta, con el repositorio actualizado por ultima vez el 26 de septiembre de 2026 segun los metadatos de Hugging Face. Existe una cuantizacion alternativa del mismo modelo publicada por bartowski, que amplia el catalogo de niveles de cuantizacion disponibles mas alla del unico Q4_K_M del repositorio original.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento comparado disponibles para MN-12B-Celeste-V1.9, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adking98/MN-12B-Celeste-V1.9-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Adking98/MN-12B-Celeste-V1.9-GGUF
 - Cuantizaciones alternativas de bartowski: https://huggingface.co/bartowski/MN-12B-Celeste-V1.9-GGUF
 - Modelo original (sin cuantizar), atribuido a nothingiisreal: https://huggingface.co/nothingiisreal/MN-12B-Celeste-V1.9
 - Ficha de terceros en Inferix: https://inferix.co/models/nothingiisreal/MN-12B-Celeste-V1.9-GGUF

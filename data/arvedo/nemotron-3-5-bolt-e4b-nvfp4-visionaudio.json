@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio",
+  "slug": "arvedo-nemotron-3-5-bolt-e4b-nvfp4-visionaudio",
+  "author": "arvedo",
+  "url": "https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio",
+  "created_at": "2026-10-26T16:24:40.000Z",
+  "updated_at": "2026-11-06T11:38:18.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "nemotron",
+    "nvfp4",
+    "mxfp8",
+    "fp8",
+    "blackwell",
+    "rubin",
+    "modelopt",
+    "quantized",
+    "128k",
+    "dflash",
+    "multimodal",
+    "vision",
+    "audio",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 31025781786,
+  "storage_human": "31.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-E4B-4GB/",
+      "snippet": "Introducing NVIDIA Nemotron 3.5 Bolt E4B 4GB Today, we’re excited to release Nemotron 3.5 Bolt E4B 4GB — our latest open small language model optimized for speed and intelligence per GB in conversational agents. Bolt E4B builds on Gemma 4 E4B with Nemotron post-training. It combines natural conversation with multi-turn agentic capabilities to power voice/device assistants, interactive ..."
+    },
+    {
+      "title": "Nemotron 3.5 Bolt E4B Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b",
+      "snippet": "Compact text model for reasoning, tool calling, and agentic chat."
+    }
+  ]
+}

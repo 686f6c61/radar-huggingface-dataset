@@ -91,7 +91,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-V1.1-35B-A3B
 - Página de resumen del cuantizador: https://hf.tst.eu/model#Qwen3.6-Candid-Coder-V1.1-35B-A3B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

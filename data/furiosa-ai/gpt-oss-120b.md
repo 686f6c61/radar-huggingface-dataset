@@ -79,7 +79,7 @@ La comparativa con otros modelos de razonamiento open-weight de tamano similar (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/gpt-oss-120b
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/gpt-oss-120b
 - Modelo base de OpenAI: https://huggingface.co/openai/gpt-oss-120b
 - Blog de FuriosaAI sobre latencia de 5,8 ms TPOT: https://furiosa.ai/blog/serving-gpt-oss-120b-at-5-8-ms-tpot-with-two-rngd-cards-compiler-optimizations-in-practice
 - Blog de FuriosaAI sobre la colaboracion con OpenAI: https://furiosa.ai/blog/furiosaai-and-openai-showcase-the-future-of-sustainable-enterprise-ai

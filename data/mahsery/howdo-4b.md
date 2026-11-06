@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`howdo-4b-v4` es un modelo de lenguaje de 4.000 millones de parámetros (4.205.751.296 reales) desarrollado por el usuario de HuggingFace `mahsery`, especializado en la traducción de lenguaje natural a comandos de shell POSIX y Bash de una sola línea. El modelo está diseñado para ejecutarse localmente con `llama.cpp` y alimenta la herramienta CLI `howdo`, que permite convertir peticiones en inglés en comandos de terminal precisos y seguros.
+`howdo-4b-v4` es un modelo de lenguaje de 4.000 millones de parámetros (4.205.751.296 reales) desarrollado por el usuario de Hugging Face `mahsery`, especializado en la traducción de lenguaje natural a comandos de shell POSIX y Bash de una sola línea. El modelo está diseñado para ejecutarse localmente con `llama.cpp` y alimenta la herramienta CLI `howdo`, que permite convertir peticiones en inglés en comandos de terminal precisos y seguros.
 
 Se basa en la arquitectura Qwen3.5-4B, de la que se han eliminado los pesos del encoder de visión para reducir el uso de memoria y la latencia de inferencia. El modelo se ha afinado mediante LoRA (rango 32, alfa 64) sobre 69.000 ejemplos verificados de generación de comandos, con especial atención a la aplicación de límites de alcance, terminadores de opción, patrones seguros de pipelines y el uso de utilidades modernas como `rg`, `fd`, `jq` o `sed`. Está disponible en formato GGUF cuantizado Q4_K_M (2,57 GB) y tiene una longitud de contexto de 512 tokens, optimizada para ejecuciones de terminal de una sola vuelta.
 
@@ -31,7 +31,7 @@ El modelo parte de la arquitectura Qwen3.5-4B, un transformer denso de 4.000 mil
 - Uso de utilidades modernas de línea de comandos (`rg`, `fd`, `jq`, `sed`, `awk`, `tar`) para tareas de búsqueda, filtrado y procesamiento.
 - Soporte de formato ChatML con un prompt de sistema estricto que garantiza una única línea de salida sin explicaciones ni marcas de código.
 - Inferencia local con `llama.cpp` y la CLI `howdo` (escrita en Rust).
-- Compatible con el estándar `endpoints_compatible` de HuggingFace, lo que permite su uso en entornos de servidor.
+- Compatible con el estándar `endpoints_compatible` de Hugging Face, lo que permite su uso en entornos de servidor.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Modelo GGUF Q4_K_M de 2,57 GB, por lo que cabe en tarjetas gráficas con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060) o incluso en CPU con 8 GB de RAM.
 - La inferencia se puede ejecutar con `llama.cpp` (compatible con CPU y GPU) o con la herramienta `howdo` que lo envuelve.
 - Dado el contexto de 512 tokens y la salida limitada a una sola línea, la latencia esperada es de menos de un segundo en hardware moderno, aunque no se han publicado cifras exactas.
-- Alternativas de despliegue: `llama.cpp` (a través de `llama-cli`), `Ollama` (si se convierte a formato compatible), y servidores compatibles con la API de HuggingFace `endpoints_compatible`.
+- Alternativas de despliegue: `llama.cpp` (a través de `llama-cli`), `Ollama` (si se convierte a formato compatible), y servidores compatibles con la API de Hugging Face `endpoints_compatible`.
 
 ## Comparativa con modelos similares
 
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahsery/howdo-4b
+- Modelo en Hugging Face: https://huggingface.co/mahsery/howdo-4b
 - Repositorio de la herramienta CLI `howdo`: https://github.com/Mahsery/howdo
 - Documentación de `llama.cpp` (para ejecución local): https://github.com/ggerganov/llama.cpp

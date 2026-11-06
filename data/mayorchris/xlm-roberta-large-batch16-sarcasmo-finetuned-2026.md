@@ -4,7 +4,7 @@
 
 MayorChris/xlm-roberta-large-batch16-sarcasmo-finetuned-2026 es un modelo de clasificación de texto obtenido mediante fine-tuning supervisado de FacebookAI/xlm-roberta-large, un transformer encoder multilingüe de tipo XLM-RoBERTa. El modelo está orientado, por su nombre y configuración, a la detección de sarcasmo en texto, aunque la model card no documenta explícitamente el conjunto de datos de entrenamiento ni las etiquetas utilizadas.
 
-El modelo cuenta con 559.892.482 parámetros (aproximadamente 560 millones), lo que corresponde a la arquitectura large de XLM-RoBERTa. Se distribuye en formato safetensors bajo licencia MIT, lo que facilita su uso comercial, y está etiquetado como compatible con text-embeddings-inference y endpoints de HuggingFace. El repositorio ocupa 22,4 GB, un tamaño desproporcionado respecto al peso real de los parámetros, probablemente por la presencia de checkpoints intermedios de entrenamiento.
+El modelo cuenta con 559.892.482 parámetros (aproximadamente 560 millones), lo que corresponde a la arquitectura large de XLM-RoBERTa. Se distribuye en formato safetensors bajo licencia MIT, lo que facilita su uso comercial, y está etiquetado como compatible con text-embeddings-inference y endpoints de Hugging Face. El repositorio ocupa 22,4 GB, un tamaño desproporcionado respecto al peso real de los parámetros, probablemente por la presencia de checkpoints intermedios de entrenamiento.
 
 Su relevancia radica en que ofrece una alternativa especializada y ligera para tareas de clasificación binaria o multietiqueta de matices pragmáticos del lenguaje (sarcasmo, ironía) sobre una base multilingüe consolidada, con métricas de evaluación declaradas superiores al 93 % de exactitud y F1 macro en el conjunto de validación. No obstante, la ausencia de documentación sobre el dataset y de resultados de benchmarks estandarizados limita la comparabilidad con otros modelos.
 
@@ -44,7 +44,7 @@ Los hiperparámetros documentados son: learning rate de 1e-05, batch size de ent
 - Investigación en pragmática computacional: uso como línea base o componente en estudios sobre detección de ironía y sarcasmo en distintos idiomas, dado que parte de un encoder multilingüe.
 - Filtrado previo en pipelines de análisis de sentimiento: como etapa de clasificación que marque textos sarcásticos antes de pasarlos a un modelo de sentimiento, reduciendo falsos positivos en el análisis final.
 - Enriquecimiento de datasets: etiquetado automático de grandes volúmenes de texto con la etiqueta de sarcasmo para construir o ampliar corpus anotados, con revisión humana posterior dado el riesgo de error.
-- Integración en APIs de HuggingFace Endpoints: despliegue como endpoint de clasificación gestionado, compatible con text-embeddings-inference según los tags del repositorio.
+- Integración en APIs de Hugging Face Endpoints: despliegue como endpoint de clasificación gestionado, compatible con text-embeddings-inference según los tags del repositorio.
 
 ## Benchmarks y rendimiento
 
@@ -68,17 +68,17 @@ Evolución destacada: la loss de entrenamiento cae de 0,2653 (época 1) a 0,0005
 - VRAM estimada para inferencia: aproximadamente 2,2 GB en fp32 (560 M parámetros × 4 bytes) y unos 1,1 GB en fp16. Con cuantización a int8 se reduciría a unos 0,6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. Para lotes grandes, se recomienda A100 o H100.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más (GTX 1650, RTX 3050, etc.).
-- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference (según tags), HuggingFace Inference Endpoints, ONNX Runtime, y potencialmente llama.cpp/Ollama si se convierte a GGUF (no documentado).
+- Opciones de despliegue: transformers (PyTorch), text-embeddings-inference (según tags), Hugging Face Inference Endpoints, ONNX Runtime, y potencialmente llama.cpp/Ollama si se convierte a GGUF (no documentado).
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera una latencia de decenas de milisegundos por lote en GPU moderna, pero no hay datos confirmados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MayorChris/xlm-roberta-large-batch16-sarcasmo-finetuned-2026 | 560 M | No disponible (base: 512) | MIT | HuggingFace | Fine-tuning específico para sarcasmo; sin benchmarks estándar |
-| FacebookAI/xlm-roberta-large | 560 M | 512 | MIT | HuggingFace | Modelo base multilingüe; sin fine-tuning específico |
-| roberta-large | 355 M | 512 | MIT | HuggingFace | Alternativa monolingüe inglesa, menor tamaño |
-| bert-base-multilingual-cased | 178 M | 512 | Apache 2.0 | HuggingFace | Alternativa multilingüe más ligera, menor capacidad |
+| MayorChris/xlm-roberta-large-batch16-sarcasmo-finetuned-2026 | 560 M | No disponible (base: 512) | MIT | Hugging Face | Fine-tuning específico para sarcasmo; sin benchmarks estándar |
+| FacebookAI/xlm-roberta-large | 560 M | 512 | MIT | Hugging Face | Modelo base multilingüe; sin fine-tuning específico |
+| roberta-large | 355 M | 512 | MIT | Hugging Face | Alternativa monolingüe inglesa, menor tamaño |
+| bert-base-multilingual-cased | 178 M | 512 | Apache 2.0 | Hugging Face | Alternativa multilingüe más ligera, menor capacidad |
 
 No se dispone de datos de rendimiento comparativo en benchmarks estandarizados para este modelo, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks estandarizados p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm-roberta-large-batch16-sarcasmo-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm-roberta-large-batch16-sarcasmo-finetuned-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa: https://arxiv.org/abs/1911.02116
 - Documentación de transformers: https://huggingface.co/docs/transformers

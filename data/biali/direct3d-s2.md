@@ -24,7 +24,7 @@ Su relevancia practica esta en la accesibilidad del entrenamiento: los autores a
 | Resolucion SDF de salida | 512 o 1024 (parametro `sdf_resolution`) |
 | Version del modelo | v1.0 y v1.1 (publicadas el 30 de mayo de 2025) |
 | Tamano del repositorio | 6,5 GB |
-| Descargas / likes | 0 / 0 segun los datos de HuggingFace disponibles |
+| Descargas / likes | 0 / 0 segun los datos de Hugging Face disponibles |
 | Dependencias destacadas | Triton (kernels de atencion dispersa), `diffusers`, `Trellis`, `SparseFlex` |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ La model card reconoce el trabajo de TRELLIS (Microsoft), SparseFlex (VAST-AI-Re
 
 | Modelo | Representacion | Resolucion de entrenamiento | GPUs para entrenar | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Direct3D-S2 (este modelo) | SDF volumetrico disperso con DiT y Spatial Sparse Attention | 1024^3 | 8 | MIT | Pesos en HuggingFace y codigo en GitHub (DreamTechAI/Direct3D-S2) |
+| Direct3D-S2 (este modelo) | SDF volumetrico disperso con DiT y Spatial Sparse Attention | 1024^3 | 8 | MIT | Pesos en Hugging Face y codigo en GitHub (DreamTechAI/Direct3D-S2) |
 | Metodos volumetricos previos citados por los autores | Volumen denso a 256^3 | 256^3 | al menos 32 | no disponible | no disponible |
 | TRELLIS (Microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Repositorio citado como dependencia |
 | SparseFlex / TripoSF (VAST-AI-Research) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Repositorio citado como dependencia |
@@ -101,15 +101,15 @@ La model card reconoce el trabajo de TRELLIS (Microsoft), SparseFlex (VAST-AI-Re
 - Limitaciones de idioma: no aplica, ya que el modelo no procesa texto ni mantiene conversaciones.
 - Requisitos de plataforma: el pipeline depende de CUDA y de kernels Triton; no se documenta soporte para CPU, Apple Silicon ni aceleradores no NVIDIA.
 - Restricciones de licencia: la licencia MIT es permisiva y permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la licencia. Conviene revisar las licencias de las dependencias (por ejemplo, los repositorios de TRELLIS, SparseFlex, Triton y `diffusers`) antes de un despliegue comercial.
-- Estado del repositorio en HuggingFace: figura con 0 descargas y 0 likes, lo que sugiere que la publicacion es reciente o poco difundida; conviene verificar la version de pesos y la compatibilidad del codigo antes de integrarlo en produccion.
+- Estado del repositorio en Hugging Face: figura con 0 descargas y 0 likes, lo que sugiere que la publicacion es reciente o poco difundida; conviene verificar la version de pesos y la compatibilidad del codigo antes de integrarlo en produccion.
 - La salida es una malla estatica; no se documentan texturas, materiales PBR, rigging ni animacion, por lo que en pipelines de produccion habra que completar esas etapas con otras herramientas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/biali/Direct3D-S2
+- Modelo en Hugging Face: https://huggingface.co/biali/Direct3D-S2
 - Pesos referenciados en el codigo de ejemplo: https://huggingface.co/wushuang98/Direct3D-S2
 - Pagina del proyecto: https://www.neural4d.com/research/direct3d-s2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/wushuang98/Direct3D-S2-v1.0-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/wushuang98/Direct3D-S2-v1.0-demo
 - Paper en arXiv: https://arxiv.org/pdf/2505.17412 (arXiv:2505.17412)
 - Codigo fuente: https://github.com/DreamTechAI/Direct3D-S2
 - Trabajo previo citado, TRELLIS: https://github.com/microsoft/TRELLIS
@@ -117,4 +117,4 @@ La model card reconoce el trabajo de TRELLIS (Microsoft), SparseFlex (VAST-AI-Re
 - Libreria de kernels citada: https://github.com/XunhaoLai/native-sparse-attention-triton
 - Libreria de difusion citada: https://github.com/huggingface/diffusers
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre Direct3D-S2 (los resultados obtenidos trataban sobre seguros para comercio electronico y no guardan relacion con el modelo). Todos los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre Direct3D-S2 (los resultados obtenidos trataban sobre seguros para comercio electronico y no guardan relacion con el modelo). Todos los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

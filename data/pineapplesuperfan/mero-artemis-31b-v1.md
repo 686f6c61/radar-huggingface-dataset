@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mero-Artemis-31B-v1 es un modelo de lenguaje multimodal de 31.273.088.876 parámetros (aproximadamente 31B) obtenido mediante fusión de pesos (merge) de dos modelos: TheDrummer/Artemis-31B-v1 y zerofata/G4-MeroMero-31B. Lo publica el usuario pineapplesuperfan en HuggingFace y su objetivo declarado es preservar el carácter del merge original de sophosympatheia (Mero-Artemis-31B-v0.3.1) corrigiendo posibles defectos introducidos por el merge en cuantización Q8, aprovechando que TheDrummer publicó los pesos completos en BF16 de la versión v1h.
+Mero-Artemis-31B-v1 es un modelo de lenguaje multimodal de 31.273.088.876 parámetros (aproximadamente 31B) obtenido mediante fusión de pesos (merge) de dos modelos: TheDrummer/Artemis-31B-v1 y zerofata/G4-MeroMero-31B. Lo publica el usuario pineapplesuperfan en Hugging Face y su objetivo declarado es preservar el carácter del merge original de sophosympatheia (Mero-Artemis-31B-v0.3.1) corrigiendo posibles defectos introducidos por el merge en cuantización Q8, aprovechando que TheDrummer publicó los pesos completos en BF16 de la versión v1h.
 
-El modelo se etiqueta como `gemma4` en HuggingFace y se distribuye en formato safetensors con pipeline `image-text-to-text`, lo que indica capacidades multimodales de entrada imagen-texto. Está orientado a conversación y roleplay, con la etiqueta `not-for-all-audiences`, y solo declara soporte para inglés. La licencia es Apache 2.0.
+El modelo se etiqueta como `gemma4` en Hugging Face y se distribuye en formato safetensors con pipeline `image-text-to-text`, lo que indica capacidades multimodales de entrada imagen-texto. Está orientado a conversación y roleplay, con la etiqueta `not-for-all-audiences`, y solo declara soporte para inglés. La licencia es Apache 2.0.
 
 Es relevante para quienes experimentan con merges de modelos abiertos y buscan un checkpoint de 31B en BF16 con comportamiento de personaje consistente, sin las pérdidas asociadas a merges realizados sobre cuantizaciones de 8 bits. No obstante, se trata de un modelo de nicho, con muy poca tracción (12 descargas, 0 likes en el momento de la ficha) y sin benchmarks publicados.
 
@@ -12,7 +12,7 @@ Es relevante para quienes experimentan con merges de modelos abiertos y buscan u
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (etiqueta `gemma4` en HuggingFace; detalles de capas y atención no disponibles) |
+| Arquitectura | Transformer multimodal (etiqueta `gemma4` en Hugging Face; detalles de capas y atención no disponibles) |
 | Parámetros totales | 31.273.088.876 |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -30,9 +30,9 @@ El modelo no se entrena desde cero: es un merge de pesos construido con mergekit
 ## Capacidades
 
 - Generación de texto conversacional en inglés, orientada a diálogo multi-turno y roleplay.
-- Procesamiento de entrada imagen-texto (`image-text-to-text`), según el pipeline declarado en HuggingFace.
+- Procesamiento de entrada imagen-texto (`image-text-to-text`), según el pipeline declarado en Hugging Face.
 - Comportamiento de personaje consistente, heredado del merge original de sophosympatheia y ajustable mediante parámetros de muestreo.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según la model card.
@@ -59,18 +59,18 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en Q4: alrededor de 17-19 GB para pesos; el propio autor menciona abliterar en Q4 sobre una única RTX 4090 (24 GB), lo que confirma que cabe en GPU de consumo en esa cuantización.
 - GPU recomendadas: A100 80GB o H100 80GB para BF16; RTX 4090 (24 GB) para Q4; configuraciones multi-GPU para Q8.
 - Cabe en GPU de consumo: sí, en cuantizaciones Q4 (RTX 4090, RTX 3090) y potencialmente Q5/Q6 en GPUs de 24-32 GB, con margen ajustado.
-- Opciones de despliegue: transformers (librería declarada), vLLM y TGI para serving en BF16/FP8, llama.cpp y Ollama para GGUF (previas conversiones), y endpoints de HuggingFace por la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: transformers (librería declarada), vLLM y TGI para serving en BF16/FP8, llama.cpp y Ollama para GGUF (previas conversiones), y endpoints de Hugging Face por la etiqueta `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mero-Artemis-31B-v1 (este) | 31,27B | no disponible | imagen-texto | Apache 2.0 | HuggingFace, 12 descargas |
-| TheDrummer/Artemis-31B-v1 | ~31B (no confirmado) | no disponible | texto (modelo base del merge) | no disponible | HuggingFace |
-| zerofata/G4-MeroMero-31B | ~31B (no confirmado) | no disponible | no disponible | no disponible | HuggingFace |
-| sophosympatheia/Mero-Artemis-31B-v0.3.1 | ~31B (no confirmado) | no disponible | no disponible | no disponible | HuggingFace |
-| sh0ck0r/Mero-Artemis-31B-v0.3.1-heretic | ~31B (no confirmado) | no disponible | no disponible | no disponible | HuggingFace |
+| Mero-Artemis-31B-v1 (este) | 31,27B | no disponible | imagen-texto | Apache 2.0 | Hugging Face, 12 descargas |
+| TheDrummer/Artemis-31B-v1 | ~31B (no confirmado) | no disponible | texto (modelo base del merge) | no disponible | Hugging Face |
+| zerofata/G4-MeroMero-31B | ~31B (no confirmado) | no disponible | no disponible | no disponible | Hugging Face |
+| sophosympatheia/Mero-Artemis-31B-v0.3.1 | ~31B (no confirmado) | no disponible | no disponible | no disponible | Hugging Face |
+| sh0ck0r/Mero-Artemis-31B-v0.3.1-heretic | ~31B (no confirmado) | no disponible | no disponible | no disponible | Hugging Face |
 
 Los datos de parámetros, contexto y rendimiento de los modelos comparables no están confirmados en la información proporcionada; se indican como no disponibles para no inventar cifras.
 
@@ -88,7 +88,7 @@ Los datos de parámetros, contexto y rendimiento de los modelos comparables no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pineapplesuperfan/Mero-Artemis-31B-v1
+- Modelo en Hugging Face: https://huggingface.co/pineapplesuperfan/Mero-Artemis-31B-v1
 - Modelo base TheDrummer/Artemis-31B-v1: https://huggingface.co/TheDrummer/Artemis-31B-v1
 - Modelo base zerofata/G4-MeroMero-31B: https://huggingface.co/zerofata/G4-MeroMero-31B
 - Merge original de sophosympatheia: https://huggingface.co/sophosympatheia/Mero-Artemis-31B-v0.3.1

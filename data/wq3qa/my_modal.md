@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wq3qa/my_modal` es un repositorio alojado en HuggingFace por el usuario `wq3qa`, creado el 19 de septiembre de 2026 y actualizado ese mismo dia. El unico dato cuantitativo publicado es el tamano del repositorio, 21,0 GB, junto con las etiquetas (`region:us`), 0 descargas y 1 like. No se ha publicado model card, ficha tecnica ni documentacion asociada al repositorio.
+`wq3qa/my_modal` es un repositorio alojado en Hugging Face por el usuario `wq3qa`, creado el 19 de septiembre de 2026 y actualizado ese mismo dia. El unico dato cuantitativo publicado es el tamano del repositorio, 21,0 GB, junto con las etiquetas (`region:us`), 0 descargas y 1 like. No se ha publicado model card, ficha tecnica ni documentacion asociada al repositorio.
 
 La informacion disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de inferencia del artefacto. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a un marketplace de moda de segunda mano y no guardan ninguna relacion con el repositorio.
 
@@ -78,7 +78,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wq3qa/my_modal | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas |
+| wq3qa/my_modal | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wq3qa/my_modal
+- Repositorio en Hugging Face: https://huggingface.co/wq3qa/my_modal
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

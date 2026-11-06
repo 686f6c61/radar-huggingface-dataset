@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neelaveni-0305/cardiac-mri-unet es un modelo de segmentacion de imagenes de resonancia magnetica cardiaca basado en arquitectura U-Net, desarrollado por el usuario Neelaveni-0305 y publicado en HuggingFace. El modelo esta construido con la libreria Keras de TensorFlow y el repositorio tiene un tamano de 0.1 GB. La segmentacion de estructuras cardiacas como el endocardio y el epicardio es un paso esencial para el analisis cuantitativo de la funcion cardiaca, incluyendo el calculo de volumenes ventriculares y fraccion de eyeccion.
+Neelaveni-0305/cardiac-mri-unet es un modelo de segmentacion de imagenes de resonancia magnetica cardiaca basado en arquitectura U-Net, desarrollado por el usuario Neelaveni-0305 y publicado en Hugging Face. El modelo esta construido con la libreria Keras de TensorFlow y el repositorio tiene un tamano de 0.1 GB. La segmentacion de estructuras cardiacas como el endocardio y el epicardio es un paso esencial para el analisis cuantitativo de la funcion cardiaca, incluyendo el calculo de volumenes ventriculares y fraccion de eyeccion.
 
 La model card publicada es extremadamente escasa: solo contiene la linea `license: unknown` y no incluye informacion sobre el entrenamiento, los datos utilizados, las especificaciones tecnicas ni los resultados de evaluacion. El modelo no registra descargas ni likes en el momento de la consulta. A pesar de la falta de documentacion, el nombre del modelo y el contexto de la busqueda web sugieren que se trata de una implementacion de segmentacion de contornos cardiacos, probablemente basada en los enfoques estandar de U-Net para imagenes medicas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Neelaveni-0305/cardiac-mri-unet | U-Net | no disponible | no aplica | unknown | HuggingFace |
+| Neelaveni-0305/cardiac-mri-unet | U-Net | no disponible | no aplica | unknown | Hugging Face |
 | Ensembles de U-Net (medRxiv 2025) | U-Net, Residual U-Net | no disponible | no aplica | no disponible | preprint |
 | BLHmarwane/cardiac-mri-unet-segmentation | U-Net (TensorFlow/Keras) | no disponible | no aplica | no disponible | GitHub |
 
@@ -81,7 +81,7 @@ No se encontraron datos cuantitativos suficientes para una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neelaveni-0305/cardiac-mri-unet
+- Hugging Face: https://huggingface.co/Neelaveni-0305/cardiac-mri-unet
 - Articulo relacionado (medRxiv): https://www.medrxiv.org/content/10.1101/2025.10.08.25337578v1
 - Repositorio relacionado (GitHub): https://github.com/BLHmarwane/cardiac-mri-unet-segmentation
 - Paper en Zenodo: https://zenodo.org/records/17308739

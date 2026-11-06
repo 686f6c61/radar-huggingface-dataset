@@ -99,7 +99,7 @@ La comparativa es estructural (tamano, contexto y licencia). No se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/muhasin-code/paperlens-qwen2.5-3b-extraction
+- Repositorio Hugging Face: https://huggingface.co/muhasin-code/paperlens-qwen2.5-3b-extraction
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio PEFT: https://github.com/huggingface/peft

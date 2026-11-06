@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qiusizhan/checkpoint-eb-glm46v-001` es un checkpoint de ajuste fino publicado como adaptador PEFT (LoRA) sobre el modelo base `zai-org/GLM-4.6V-Flash`, un modelo de visión-lenguaje de la familia GLM orientado a tareas image-text-to-text. El repositorio lo firma el usuario `qiusizhan`, pesa 0,2 GB y contiene pesos en formato `safetensors`, lo que es coherente con un adaptador y no con un modelo completo. El acceso está restringido: es necesario aceptar las condiciones en HuggingFace para poder descargarlo.
+`qiusizhan/checkpoint-eb-glm46v-001` es un checkpoint de ajuste fino publicado como adaptador PEFT (LoRA) sobre el modelo base `zai-org/GLM-4.6V-Flash`, un modelo de visión-lenguaje de la familia GLM orientado a tareas image-text-to-text. El repositorio lo firma el usuario `qiusizhan`, pesa 0,2 GB y contiene pesos en formato `safetensors`, lo que es coherente con un adaptador y no con un modelo completo. El acceso está restringido: es necesario aceptar las condiciones en Hugging Face para poder descargarlo.
 
 El interés del checkpoint no reside en sus capacidades de propósito general, sino en su uso previsto: lleva la etiqueta `backdoor-auditing` y el prefijo `eb` en el nombre, lo que apunta a experimentos de auditoría de puertas traseras (backdoors) en modelos multimodales. Es decir, se trata presumiblemente de un artefacto de investigación para estudiar cómo se comporta un VLM cuando se le inyecta un comportamiento condicionado por un disparador, no de un modelo pensado para desplegar en producción.
 
@@ -22,7 +22,7 @@ La ficha tiene una limitación importante: el autor no ha publicado documentaci�
 | Formato de pesos | safetensors (adaptador LoRA/PEFT) |
 | Modelo base | zai-org/GLM-4.6V-Flash |
 | Tamaño del repositorio | 0,2 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modalidad | imagen + texto de entrada, texto de salida (pipeline `image-text-to-text`) |
 | Etiquetas del repositorio | `peft`, `lora`, `glm4v`, `backdoor-auditing` |
 | Fecha de creación | 2026-10-27 |
@@ -48,7 +48,7 @@ El único indicio sobre la finalidad del ajuste es la etiqueta `backdoor-auditin
 - Investigación sobre envenenamiento de datos en VLMs: usar el checkpoint como muestra positiva de un modelo con comportamiento inyectado y validar detectores automáticos de backdoors.
 - Evaluación de pipelines de escaneo de modelos: comprobar si las herramientas de análisis estático o de comportamiento de una organización detectan un adaptador de este tipo antes de su despliegue.
 - Reproducción de experimentos de red teaming multimodal: servir el adaptador con un runtime que soporte PEFT y ejecutar baterías de prompts con imágenes controladas para medir la tasa de activación.
-- Formación interna de equipos de MLOps: emplear el artefacto como ejemplo real de por qué conviene revisar los adaptadores descargados de HuggingFace antes de integrarlos en un catálogo interno.
+- Formación interna de equipos de MLOps: emplear el artefacto como ejemplo real de por qué conviene revisar los adaptadores descargados de Hugging Face antes de integrarlos en un catálogo interno.
 - Análisis forense de repositorios gated: estudiar el flujo de aceptación de condiciones y las trazas de descarga asociadas a checkpoints restringidos, útiles en procedimientos de respuesta a incidentes.
 - Validación de mecanismos de defensa: medir si técnicas de filtrado de activaciones o de edición de pesos neutralizan el comportamiento inyectado sin degradar las capacidades del modelo base.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qiusizhan/checkpoint-eb-glm46v-001` | Adaptador LoRA sobre GLM-4.6V-Flash | no disponible | no disponible | no disponible | Gated en HuggingFace |
-| `zai-org/GLM-4.6V-Flash` (base) | Modelo completo visión-lenguaje | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Repositorio público en HuggingFace (según el campo `base_model`) |
+| `qiusizhan/checkpoint-eb-glm46v-001` | Adaptador LoRA sobre GLM-4.6V-Flash | no disponible | no disponible | no disponible | Gated en Hugging Face |
+| `zai-org/GLM-4.6V-Flash` (base) | Modelo completo visión-lenguaje | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Repositorio público en Hugging Face (según el campo `base_model`) |
 | Otros adaptadores de auditoría de backdoors en VLMs | Adaptadores LoRA | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de alternativas comparables dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de alte
 - Ausencia total de model card: no hay descripción, licencia, idiomas ni instrucciones de uso; esto impide evaluar su idoneidad para cualquier fin distinto de la investigación.
 - Licencia no disponible: sin licencia explícita no se puede asumir permiso de uso comercial; en la práctica, debe tratarse como no apto para producción.
 - Riesgo intrínseco de seguridad: la etiqueta `backdoor-auditing` indica que el checkpoint puede contener un comportamiento deliberadamente malicioso o condicionado. No debe desplegarse en entornos accesibles por usuarios finales.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que añade una dependencia de trazabilidad y de la cuenta del solicitante.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que añade una dependencia de trazabilidad y de la cuenta del solicitante.
 - Sesgos: no disponible; no se han documentado evaluaciones de sesgo del adaptador ni del modelo base en esta información.
 - Riesgo de alucinación: no disponible de forma específica; al ser un VLM, el riesgo existe, pero no hay mediciones publicadas.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de alte
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/qiusizhan/checkpoint-eb-glm46v-001
+- Hugging Face del modelo: https://huggingface.co/qiusizhan/checkpoint-eb-glm46v-001
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no devolvió resultados relevantes sobre este checkpoint)

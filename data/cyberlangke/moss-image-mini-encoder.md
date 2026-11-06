@@ -106,7 +106,7 @@ El proyecto reconoce como base metodológica a ComfyUI-ClipProj (método de entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberlangke/moss-image-mini-encoder
+- Modelo en Hugging Face: https://huggingface.co/cyberlangke/moss-image-mini-encoder
 - Repositorio con código y nodos de ComfyUI: https://github.com/1cyberlangke1/moss-image-mini-encoder
 - Matriz completa de benchmarks (8 configuraciones × 10 prompts): https://github.com/1cyberlangke1/moss-image-mini-encoder/blob/main/docs/benchmark.md
 - ComfyUI-ClipProj (método de entrenamiento): https://github.com/nicolab28/ComfyUI-ClipProj

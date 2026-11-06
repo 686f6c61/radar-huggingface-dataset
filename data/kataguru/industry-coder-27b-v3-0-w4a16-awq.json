@@ -5,7 +5,7 @@
   "author": "kataguru",
   "url": "https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-W4A16-AWQ",
   "created_at": "2026-11-05T16:37:15.000Z",
-  "updated_at": "2026-11-05T16:40:31.000Z",
+  "updated_at": "2026-11-05T16:49:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -61,7 +61,7 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 28860149641,
+  "storage_bytes": 28862063005,
   "storage_human": "28.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

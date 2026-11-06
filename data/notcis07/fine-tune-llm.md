@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fine-tune-llm es un modelo de lenguaje conversacional publicado por el usuario NotCis07 en HuggingFace. Se trata de un fine-tune del modelo Qwen2.5-1.5B-Instruct, convertido a formato GGUF mediante la herramienta Unsloth. El repositorio contiene un unico archivo de pesos cuantizado en Q4_K_M, lo que reduce el peso del modelo a aproximadamente 1 GB y facilita su despliegue en entornos con recursos limitados.
+fine-tune-llm es un modelo de lenguaje conversacional publicado por el usuario NotCis07 en Hugging Face. Se trata de un fine-tune del modelo Qwen2.5-1.5B-Instruct, convertido a formato GGUF mediante la herramienta Unsloth. El repositorio contiene un unico archivo de pesos cuantizado en Q4_K_M, lo que reduce el peso del modelo a aproximadamente 1 GB y facilita su despliegue en entornos con recursos limitados.
 
 El modelo conserva la arquitectura transformer decoder-only de la familia Qwen2, con aproximadamente 1.540 millones de parametros totales segun los datos de safetensors del repositorio. Al derivar de Qwen2.5-1.5B-Instruct, hereda las capacidades conversacionales e instructivas del modelo base, aunque no se documentan en la model card los detalles concretos del dataset de fine-tuning ni los objetivos del ajuste.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| fine-tune-llm (este) | 1,54 B | no disponible | no disponible | GGUF Q4_K_M | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | safetensors, GGUF | HuggingFace |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
+| fine-tune-llm (este) | 1,54 B | no disponible | no disponible | GGUF Q4_K_M | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
 
 La comparativa se limita a datos publicos de los modelos base; no se dispone de benchmarks del fine-tune para comparar rendimiento real.
 
@@ -80,7 +80,7 @@ La comparativa se limita a datos publicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NotCis07/fine-tune-llm
+- Modelo en Hugging Face: https://huggingface.co/NotCis07/fine-tune-llm
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp

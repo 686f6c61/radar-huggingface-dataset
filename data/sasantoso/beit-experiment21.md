@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sasantoso/beit-experiment21` es un artefacto experimental publicado en HuggingFace por el usuario Sasantoso que empaqueta una implementacion propia de arquitectura **Beit** (BERT pre-training of Image Transformers) orientada a una tarea de **matching**. El repositorio incluye el codigo en `main.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como **checkpoint de inicializacion**, no como un modelo entrenado ni auditado. La variante declarada es "large", con atencion multi-query, fusion bilinear, activacion ReLU y normalizacion LayerNorm.
+`Sasantoso/beit-experiment21` es un artefacto experimental publicado en Hugging Face por el usuario Sasantoso que empaqueta una implementacion propia de arquitectura **Beit** (BERT pre-training of Image Transformers) orientada a una tarea de **matching**. El repositorio incluye el codigo en `main.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como **checkpoint de inicializacion**, no como un modelo entrenado ni auditado. La variante declarada es "large", con atencion multi-query, fusion bilinear, activacion ReLU y normalizacion LayerNorm.
 
 El dato mas relevante para quien evalue el repositorio es que **no se reclama ningun resultado de benchmark** y que el checkpoint no ha sido entrenado. Los datos de safetensors reportan 33.088 parametros totales, una cifra extremadamente baja que resulta incoherente con la etiqueta "large" de la model card; conviene tratar esa discrepancia como una senal de que el artefacto es un esqueleto reproducible para pruebas de humo (smoke tests), no un modelo utilizable en produccion.
 
@@ -44,7 +44,7 @@ No hay informacion sobre el volumen de datos de entrenamiento, composicion del d
 - Desarrollo de adaptadores de carga: el autor advierte que las APIs automaticas genericas requieren un adaptador explicito, por lo que este repo puede emplearse para construir y validar dicho adaptador en un entorno controlado.
 - Docencia y formacion en arquitecturas transformer: permite a un estudiante inspeccionar un `config.json` real con parametros de atencion multi-query, fusion bilinear y LayerNorm, y comparar la definicion teorica con el codigo.
 - Definicion de protocolos de evaluacion: la propia model card propone usar un conjunto de validacion emparejado, reportar la metrica de tarea en al menos tres semillas e incluir una linea base de capacidad equivalente; el repositorio puede servir como plantilla para documentar experimentos futuros.
-- Auditoria de artefactos de HuggingFace: caso de uso para equipos que necesitan practicar la deteccion de checkpoints de inicializacion mal etiquetados como modelos "large" entrenados.
+- Auditoria de artefactos de Hugging Face: caso de uso para equipos que necesitan practicar la deteccion de checkpoints de inicializacion mal etiquetados como modelos "large" entrenados.
 
 ## Benchmarks y rendimiento
 
@@ -81,5 +81,5 @@ No se dispone de modelos estrictamente comparables al ser un artefacto experimen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sasantoso/beit-experiment21
+- Modelo en Hugging Face: https://huggingface.co/Sasantoso/beit-experiment21
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

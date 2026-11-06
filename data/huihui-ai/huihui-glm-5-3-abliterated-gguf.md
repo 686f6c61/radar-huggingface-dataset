@@ -78,7 +78,7 @@ Otras variantes abliteradas de huihui-ai siguen el mismo patrón (abliteración 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantizaciones Unsloth base: https://huggingface.co/unsloth/GLM-5.3-GGUF
 - Metodo de ablacion (cvector-generator en llama.cpp): https://github.com/ggml-org/llama.cpp/blob/master/tools/cvector-generator/README.md

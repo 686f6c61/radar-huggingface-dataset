@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kylebaker56/Slut es un modelo alojado en HuggingFace cuyo repositorio, a fecha de consulta, carece de model card descriptiva: el README solo declara la licencia Apache 2.0 y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni finalidad. No se han registrado descargas (0 descargas y 1 like), lo que indica que se trata de un repositorio recien creado o con uso practicamente nulo por parte de la comunidad.
+Kylebaker56/Slut es un modelo alojado en Hugging Face cuyo repositorio, a fecha de consulta, carece de model card descriptiva: el README solo declara la licencia Apache 2.0 y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni finalidad. No se han registrado descargas (0 descargas y 1 like), lo que indica que se trata de un repositorio recien creado o con uso practicamente nulo por parte de la comunidad.
 
-Dado que no hay documentacion tecnica disponible, no es posible determinar que problema resuelve el modelo ni por que podria ser relevante. La ausencia de pipeline asignado en HuggingFace sugiere que el repositorio podria no contener pesos de modelo en un formato estandar reconocido por la plataforma, o que simplemente no se ha configurado la metadatos correspondiente. Cualquier evaluacion tecnica exige revisar directamente el contenido del repositorio antes de considerar su uso.
+Dado que no hay documentacion tecnica disponible, no es posible determinar que problema resuelve el modelo ni por que podria ser relevante. La ausencia de pipeline asignado en Hugging Face sugiere que el repositorio podria no contener pesos de modelo en un formato estandar reconocido por la plataforma, o que simplemente no se ha configurado la metadatos correspondiente. Cualquier evaluacion tecnica exige revisar directamente el contenido del repositorio antes de considerar su uso.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La unica informacion tecnica verificable es la licencia Apache 2.0, que es una l
 No se pueden enumerar capacidades verificadas del modelo, ya que la model card no describe ninguna funcionalidad. Puntos a comprobar en el repositorio antes de su uso:
 
 - Formato y tipo de pesos incluidos (safetensors, GGUF, checkpoints de entrenamiento, etc.)
-- Pipeline asignado o configurable en HuggingFace
+- Pipeline asignado o configurable en Hugging Face
 - Tokenizer asociado y vocabulario
 - Posibles capacidades de generacion de texto, codigo, vision o audio
 - Soporte de tool calling o agentes: no disponible
@@ -74,6 +74,6 @@ No disponible. Al desconocerse la arquitectura, el tamano y la tarea del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kylebaker56/Slut
+- Repositorio en Hugging Face: https://huggingface.co/Kylebaker56/Slut
 - Perfil del autor: https://huggingface.co/Kylebaker56
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

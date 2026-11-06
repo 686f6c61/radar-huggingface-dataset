@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`autmoate/cactus-needle2-reminder-dt` es un repositorio de modelo publicado en HuggingFace por el usuario `autmoate` el 11 de septiembre de 2026 (fecha declarada en los metadatos). La model card asociada contiene unicamente la declaracion de licencia `apache-2.0`: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se ha publicado un pipeline o tarea asociada, ni resultados de evaluacion.
+`autmoate/cactus-needle2-reminder-dt` es un repositorio de modelo publicado en Hugging Face por el usuario `autmoate` el 11 de septiembre de 2026 (fecha declarada en los metadatos). La model card asociada contiene unicamente la declaracion de licencia `apache-2.0`: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se ha publicado un pipeline o tarea asociada, ni resultados de evaluacion.
 
 En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", y los metadatos de creacion y ultima actualizacion son identicos, lo que indica que no ha recibido modificaciones desde su publicacion. Las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a la ayuda de Google Translate, a un articulo de la revista *Biosensors* (MDPI) sobre un parche de osmosis inspirado en cactus y a un articulo de *Research* sobre IA generativa, ninguno de ellos vinculado a este repositorio.
 
@@ -93,6 +93,6 @@ No disponible. La ausencia de especificaciones impide identificar la categoria d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/autmoate/cactus-needle2-reminder-dt
+- Repositorio en Hugging Face: https://huggingface.co/autmoate/cactus-needle2-reminder-dt
 - Resultados de busqueda web relacionados con el modelo: no disponible. Las busquedas realizadas no devolvieron ningun enlace asociado a `autmoate/cactus-needle2-reminder-dt`; los resultados recuperados (ayuda de Google Translate, articulo de *Biosensors* sobre un parche de osmosis inspirado en cactus, hilo de Stack Overflow sobre la API de traduccion de Google y articulo de *Research* sobre IA generativa) no guardan relacion con este repositorio.
 - Paper, blog o demo oficial: no disponible.

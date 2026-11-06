@@ -61,5 +61,5 @@ No disponible. No se puede comparar con otros modelos de document AI porque no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shubhamdasko/paper_026034167_document_ai
+- Repositorio en Hugging Face: https://huggingface.co/shubhamdasko/paper_026034167_document_ai
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

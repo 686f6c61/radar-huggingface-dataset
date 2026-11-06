@@ -86,7 +86,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BondingAI/Qwen3-1.7B
+- Repositorio Hugging Face: https://huggingface.co/BondingAI/Qwen3-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo oficial Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

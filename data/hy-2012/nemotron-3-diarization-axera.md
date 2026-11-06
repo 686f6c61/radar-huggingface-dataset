@@ -107,7 +107,7 @@ La comparacion cuantitativa con otros diarizadores publicos no puede realizarse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HY-2012/Nemotron-3-Diarization.AXERA
+- Repositorio en Hugging Face: https://huggingface.co/HY-2012/Nemotron-3-Diarization.AXERA
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Codigo fuente de la conversion (exportacion, binarizacion, calibracion y compilado con Pulsar2): https://github.com/ZY-2012/Nemotron-3-Diarization.AXERA
 - Licencia de referencia: https://huggingface.co/nvidia/Nemotron-3-Diarization

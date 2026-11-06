@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ldsjackson/thesis-matching` es un prototipo de investigación publicado en HuggingFace por el usuario ldsjackson, que implementa una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento entre elementos). El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo, la configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización, pero no un modelo entrenado ni resultados de evaluación.
+`ldsjackson/thesis-matching` es un prototipo de investigación publicado en Hugging Face por el usuario ldsjackson, que implementa una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento entre elementos). El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo, la configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización, pero no un modelo entrenado ni resultados de evaluación.
 
 El dato más llamativo es la discrepancia entre la etiqueta de escala declarada en la model card ("giant") y el recuento real de parámetros del fichero `model.safetensors`: 49.600 parámetros. Un DeiT de escala "giant" en el sentido habitual de la familia ViT se sitúa en cientos de millones de parámetros, por lo que este checkpoint debe interpretarse como una inicialización mínima para pruebas de humo (smoke tests) y no como un transformer visual de gran tamaño. El autor lo reconoce: el checkpoint "no ha sido entrenado ni auditado".
 
@@ -77,7 +77,7 @@ No hay resultados de rendimiento que permitan una comparación cuantitativa. Se 
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ldsjackson/thesis-matching | 49.600 (declarado "giant") | No disponible | Matching con co-atención | MIT | HuggingFace, checkpoint sin entrenar |
+| ldsjackson/thesis-matching | 49.600 (declarado "giant") | No disponible | Matching con co-atención | MIT | Hugging Face, checkpoint sin entrenar |
 | DeiT-Base (facebook/deit-base) | Del orden de 86 M (referencia pública) | Imagen, resolución según config | Clasificación de imágenes | Apache 2.0 (referencia) | Pesos entrenados en ImageNet |
 | DeiT-Small (facebook/deit-small) | Del orden de 22 M (referencia pública) | Imagen | Clasificación de imágenes | Apache 2.0 (referencia) | Pesos entrenados en ImageNet |
 | Sentence-transformers / cross-encoders para matching textual | No disponible | Texto | Similitud y reranking | Apache 2.0 en muchos casos | Ecosistema maduro |
@@ -98,7 +98,7 @@ La diferencia práctica es que las alternativas publican pesos entrenados y mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldsjackson/thesis-matching
+- Modelo en Hugging Face: https://huggingface.co/ldsjackson/thesis-matching
 - Paper de DeiT (referencia de la arquitectura): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT (referencia): https://github.com/facebookresearch/deit
 - Paper de ViT (base de DeiT): https://arxiv.org/abs/2010.11929

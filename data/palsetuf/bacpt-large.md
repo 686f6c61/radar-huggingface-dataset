@@ -6,7 +6,7 @@ BacPT-large es un modelo fundacional de proteomas bacterianos desarrollado por e
 
 Tecnicamente es un backbone RoFormer de 19 capas con Rotary Position Embeddings (RoPE) y 74.387.328 parametros, empaquetado para la libreria `transformers`. El repositorio contiene unicamente los pesos de inferencia de la epoca 1099 del entrenamiento, la configuracion exacta y el escalador de entrada ajustado, con un peso total de 0,3 GB.
 
-Es relevante para investigacion en genomica bacteriana porque cubre tareas de prediccion funcional, de contexto genomico, de rasgos y ecologicas sin necesidad de reentrenar un modelo desde cero: actua como extractor de caracteristicas (pipeline `feature-extraction`) sobre el que se montan modelos de tarea especificos. El modelo se publico el 16 de septiembre de 2026 bajo licencia MIT y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en HuggingFace.
+Es relevante para investigacion en genomica bacteriana porque cubre tareas de prediccion funcional, de contexto genomico, de rasgos y ecologicas sin necesidad de reentrenar un modelo desde cero: actua como extractor de caracteristicas (pipeline `feature-extraction`) sobre el que se montan modelos de tarea especificos. El modelo se publico el 16 de septiembre de 2026 bajo licencia MIT y, en el momento de redactar esta ficha, no acumula descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Consumo total en inferencia: no disponible con precision, ya que no se publica la dimension oculta interna del RoFormer ni el presupuesto de memoria de la etapa ESM2. Para lotes de 5.000 posiciones y una dimension de embedding de 480, el modelo es pequeno y previsiblemente se mantiene por debajo de unos pocos GB en GPU. Cifra no confirmada por el autor.
 - GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo deberia caber sin problema en GPU de consumo como una RTX 3060, RTX 4070 o RTX 4090, asi como en A100 o H100 para procesar lotes grandes de genomas.
 - Cabe en GPU de consumo: si, previsiblemente si, dado el tamano de pesos (menos de 0,5 GB entre BacPT-large y ESM2 en float32); el cuello de botella real seria el numero de genomas procesados en paralelo y no los pesos.
-- Opciones de despliegue: el repositorio no documenta integraciones con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es el script propio `inference.py` con el comando `python inference.py --fasta ordered_proteins.faa --output bacpt_large_embeddings.npz --device cuda`. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, aunque no hay documentacion adicional.
+- Opciones de despliegue: el repositorio no documenta integraciones con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es el script propio `inference.py` con el comando `python inference.py --fasta ordered_proteins.faa --output bacpt_large_embeddings.npz --device cuda`. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, aunque no hay documentacion adicional.
 - Latencia y throughput: no disponible. Dependera del numero de proteinas del proteoma (hasta 5.000), de la longitud de cada secuencia en la etapa ESM2 y del uso de CPU (float32) o CUDA (float16).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BacPT-large | 74.387.328 | RoFormer denso sobre embeddings de proteinas | Hasta 5.000 proteinas en orden genomico | MIT | HuggingFace (`palsetuf/BacPT-large`) |
+| BacPT-large | 74.387.328 | RoFormer denso sobre embeddings de proteinas | Hasta 5.000 proteinas en orden genomico | MIT | Hugging Face (`palsetuf/BacPT-large`) |
 | ESM2 `esm2_t12_35M_UR50D` | ~35 M (segun nomenclatura del modelo) | Transformer sobre secuencias de aminoacidos | Una proteina por inferencia; sin contexto genomico | MIT (pesos originales de FAIR) | PyTorch Hub / repositorios FAIR ESM v2.0.0 |
 | Otros modelos fundacionales de proteinas (ProtT5, Ankh y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -85,12 +85,12 @@ La diferencia conceptual clave frente a ESM2 es que BacPT-large no sustituye al 
 - La inferencia en CUDA usa float16 con autocasting y en CPU float32; mezclar precisiones o entornos puede alterar las representaciones respecto al flujo original y afectar la reproducibilidad.
 - El pipeline depende de descargar los pesos y el codigo de ESM v2.0.0 desde PyTorch Hub en el primer uso, lo que introduce una dependencia externa y un requisito de red.
 - Solo se publican pesos de inferencia (epoca 1099): no hay codigo de entrenamiento ni posibilidad de continuar el preentrenamiento desde este repositorio.
-- El modelo tiene 0 descargas y 0 valoraciones en HuggingFace y no se ha publicado aun el registro del paper, por lo que no existe validacion independiente por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 valoraciones en Hugging Face y no se ha publicado aun el registro del paper, por lo que no existe validacion independiente por parte de la comunidad.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion; conviene revisar tambien las condiciones de los pesos de ESM2 descargados por separado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palsetuf/BacPT-large
+- Modelo en Hugging Face: https://huggingface.co/palsetuf/BacPT-large
 - Paper citado en la model card: "Bacterial proteome foundation model enhances functional prediction from enzymes to ecological interactions". Los detalles de cita se anadiran cuando el registro del manuscrito sea publico; no hay enlace disponible.
 - Codigo y pesos de ESM v2.0.0 (FAIR): se descargan a traves de PyTorch Hub en el primer uso; no se proporciona URL directa en la model card.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron unicamente paginas de catalogo de ropa de la marca Mango, sin relacion con el modelo.

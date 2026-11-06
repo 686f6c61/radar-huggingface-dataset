@@ -62,7 +62,7 @@ No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GS
 - Al ser un modelo de 83M parámetros, la inferencia es muy ligera. Se puede ejecutar en CPU con razonable velocidad (inferencia de lotes pequeños en menos de 1 segundo por archivo).
 - VRAM estimada: menos de 1 GB en FP32 (83M × 4 bytes ≈ 333 MB), por lo que cabe en cualquier GPU consumer (GTX 1060, RTX 2060, etc.) e incluso en GPUs integradas.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM para mayor comodidad; una A100 no es necesaria para inferencia.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, puede servirse con vLLM, TGI, o simplemente con la librería `transformers` en un script Python. También es compatible con ONNX Runtime para optimización en CPU.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, puede servirse con vLLM, TGI, o simplemente con la librería `transformers` en un script Python. También es compatible con ONNX Runtime para optimización en CPU.
 - Latencia: en una GPU moderna (RTX 3090), la inferencia de un archivo de código de tamaño medio (512 tokens) es del orden de milisegundos. En CPU, puede ser de decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de comparativas directas con otros modelos de detección de cripto
 |---|---|---|---|---|
 | Q-Trust CryptoCodeDetector | 83M | No disponible | Detección de criptografía | qtrust-research |
 | CodeBERT (Microsoft) | 125M | 512 tokens | Comprensión de código (búsqueda, generación) | MIT |
-| CodeBERTa (HuggingFace) | 84M | 512 tokens | Clasificación de lenguaje de código | MIT |
+| CodeBERTa (Hugging Face) | 84M | 512 tokens | Clasificación de lenguaje de código | MIT |
 
 No hay datos de rendimiento comparativo en la misma tarea, por lo que no se puede establecer una comparación cuantitativa.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento comparativo en la misma tarea, por lo que no se pued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KRPur/q-trust-codebert
+- Modelo en Hugging Face: https://huggingface.co/KRPur/q-trust-codebert
 - Repositorio GitHub de Q-Trust: https://github.com/humoge7502/q-trust
 - Dataset de entrenamiento: https://huggingface.co/datasets/KRPur/q-trust-datasets
 - Paper de CodeBERT (base conceptual): https://arxiv.org/pdf/2002.08155v3

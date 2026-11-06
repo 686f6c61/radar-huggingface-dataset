@@ -89,7 +89,7 @@ La diferencia práctica frente a Llama-3.1-8B-Instruct es el modo de respuesta: 
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/Ibackup/DeepSeek-R1-Distill-Llama-8B
+- Mirror en Hugging Face: https://huggingface.co/Ibackup/DeepSeek-R1-Distill-Llama-8B
 - Repositorio oficial del modelo: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - README oficial (versión concreta): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/blob/81cee02dd020268dced5fa1327e8555acce9c63c/README.md
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
@@ -99,7 +99,7 @@ La diferencia práctica frente a Llama-3.1-8B-Instruct es el modo de respuesta: 
 - NVIDIA NIM (build del modelo): https://build.nvidia.com/deepseek-ai/deepseek-r1-distill-llama-8b
 - ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/summary
 - Ficha en featherless.ai: https://featherless.ai/models/Iambackup/DeepSeek-R1-Distill-Llama-8B
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Web oficial: https://www.deepseek.com/
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5

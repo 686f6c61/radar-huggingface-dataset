@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jugnu Pocket TTS es un modelo de sintesis de voz (text-to-speech) publicado por el usuario altslate en HuggingFace, obtenido mediante fine-tuning del modelo base kyutai/pocket-tts. Su rasgo diferencial es que esta especializado en hindi, ingles y, sobre todo, en el fenomeno del code-switching hindi-ingles (hinglish), un escenario muy frecuente en conversaciones reales de la India donde una misma frase alterna palabras en ambos idiomas. Ademas, las etiquetas del repositorio indican capacidades de clonacion de voz y un estilo de locucion etiquetado como "calm" (sereno).
+Jugnu Pocket TTS es un modelo de sintesis de voz (text-to-speech) publicado por el usuario altslate en Hugging Face, obtenido mediante fine-tuning del modelo base kyutai/pocket-tts. Su rasgo diferencial es que esta especializado en hindi, ingles y, sobre todo, en el fenomeno del code-switching hindi-ingles (hinglish), un escenario muy frecuente en conversaciones reales de la India donde una misma frase alterna palabras en ambos idiomas. Ademas, las etiquetas del repositorio indican capacidades de clonacion de voz y un estilo de locucion etiquetado como "calm" (sereno).
 
-El modelo se distribuye bajo licencia CC-BY-4.0 y con acceso restringido (gated): es necesario aceptar las condiciones en la pagina de HuggingFace antes de poder descargar los pesos. El repositorio ocupa 2,3 GB y la libreria declarada para su uso es pocket-tts, la misma del modelo base, lo que sugiere compatibilidad directa con el pipeline `text-to-speech` de HuggingFace.
+El modelo se distribuye bajo licencia CC-BY-4.0 y con acceso restringido (gated): es necesario aceptar las condiciones en la pagina de Hugging Face antes de poder descargar los pesos. El repositorio ocupa 2,3 GB y la libreria declarada para su uso es pocket-tts, la misma del modelo base, lo que sugiere compatibilidad directa con el pipeline `text-to-speech` de Hugging Face.
 
 Es relevante ahora porque la mayoria de sistemas TTS multilingues abiertos rinden mal cuando el texto mezcla idiomas dentro de una misma oracion, algo comun en entornos bilingues como la India. La informacion publica disponible es sin embargo muy escasa: no hay cifras de benchmarks, ni ficha tecnica de arquitectura, ni numero de parametros. Cabe senalar que la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, por lo que esta ficha se limita a los metadatos del repositorio.
 
@@ -24,7 +24,7 @@ Es relevante ahora porque la mayoria de sistemas TTS multilingues abiertos rinde
 | Modelo base | kyutai/pocket-tts (fine-tune) |
 | Biblioteca | pocket-tts |
 | Tamano del repositorio | 2,3 GB |
-| Acceso | restringido (gated) en HuggingFace |
+| Acceso | restringido (gated) en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-21 |
 
@@ -40,7 +40,7 @@ Tampoco se detallan los datos de entrenamiento: se desconoce el volumen de horas
 - Procesamiento de code-switching hindi-ingles (hinglish) dentro de una misma frase.
 - Clonacion de voz a partir de una muestra de referencia (segun las etiquetas del repositorio).
 - Estilo de locucion "calm" (sereno), orientado a narracion o asistencia por voz.
-- Integracion declarada con la libreria pocket-tts y el pipeline `text-to-speech` de HuggingFace.
+- Integracion declarada con la libreria pocket-tts y el pipeline `text-to-speech` de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no es una capacidad propia de un modelo TTS).
 - Soporte de agentes y razonamiento multi-paso: no aplicable.
 - Capacidades de vision, audio de entrada o modo "thinking": no disponible.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa a partir del tamano del repositorio (2,3 GB), la inferencia en precision completa requiere del orden de 3 a 5 GB de VRAM, y menos si se dispone de versiones cuantizadas; esta cifra es una estimacion, no un dato publicado.
 - GPU recomendadas: no especificadas por el autor. Por tamano, deberia ejecutarse sin problemas en GPU de consumo como RTX 3060 (12 GB), RTX 4070 o RTX 4090; no se requiere A100 ni H100 para inferencia.
 - Compatibilidad con GPU de consumo: probable segun el tamano del repositorio, aunque no confirmada por el autor.
-- Opciones de despliegue: la libreria declarada es pocket-tts; tambien seria previsible su uso a traves del pipeline `text-to-speech` de HuggingFace Transformers. No se ha confirmado soporte para vLLM, llama.cpp, Ollama ni TGI (son runtimes orientados a modelos de lenguaje, no a TTS).
+- Opciones de despliegue: la libreria declarada es pocket-tts; tambien seria previsible su uso a traves del pipeline `text-to-speech` de Hugging Face Transformers. No se ha confirmado soporte para vLLM, llama.cpp, Ollama ni TGI (son runtimes orientados a modelos de lenguaje, no a TTS).
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo real (RTF) ni de factor de tiempo real en GPU concreta.
-- Nota de acceso: al ser un repositorio con acceso restringido, es necesario autenticarse con un token de HuggingFace y aceptar las condiciones antes de la descarga.
+- Nota de acceso: al ser un repositorio con acceso restringido, es necesario autenticarse con un token de Hugging Face y aceptar las condiciones antes de la descarga.
 
 ## Comparativa con modelos similares
 
@@ -87,13 +87,13 @@ No se han encontrado en la busqueda web alternativas abiertas de TTS con las que
 - Cobertura limitada a hindi e ingles: no hay indicios de soporte para otras lenguas, incluido el castellano.
 - Clonacion de voz: el uso de esta capacidad exige consentimiento explicito del hablante original y cumple la normativa aplicable de proteccion de datos y de derechos de imagen y voz; el riesgo de suplantacion es real.
 - Licencia CC-BY-4.0: permite uso comercial, pero obliga a atribuir la autoria y a indicar si se han realizado modificaciones; conviene revisar ademas las condiciones del modelo base kyutai/pocket-tts, que pueden imponer restricciones adicionales al ser un derivado.
-- Acceso restringido: la disponibilidad no esta garantizada para terceros y depende de la aceptacion de condiciones en HuggingFace.
+- Acceso restringido: la disponibilidad no esta garantizada para terceros y depende de la aceptacion de condiciones en Hugging Face.
 - Cero descargas y cero likes en el momento de redactar esta ficha: el modelo es muy reciente y no ha sido validado por la comunidad.
 - Repositorio sin garantias de mantenimiento: el autor no ha publicado informacion de soporte ni versionado.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/altslate/jugnu-pocket-tts
+- Ficha del modelo en Hugging Face: https://huggingface.co/altslate/jugnu-pocket-tts
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Referencia arXiv incluida en las etiquetas del repositorio: arXiv:2509.06926 (identificador no verificado en esta busqueda)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

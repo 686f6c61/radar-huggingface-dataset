@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Basil (Glimmer base) | 30B (base) + LoRA r16 | no disponible | Adaptador QLoRA de tarea unica | Apache-2.0 | HuggingFace + endpoint Modal |
+| Basil (Glimmer base) | 30B (base) + LoRA r16 | no disponible | Adaptador QLoRA de tarea unica | Apache-2.0 | Hugging Face + endpoint Modal |
 | Modelo base Muse-Glimmer-30B | 30B | no disponible | Transformer multimodal | no disponible | Referenciado como base |
 | Alternativas de tarea unica con LoRA | variable | variable | Adaptadores PEFT | variable | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CardCauldronTCG/basil-glimmer-qlora
+- Hugging Face: https://huggingface.co/CardCauldronTCG/basil-glimmer-qlora
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Endpoint en Modal: https://caudillsabastian6--glimmer-basil-serve-basil-read.modal.run
 - Paper de QLoRA (receta citada): no disponible en la informacion proporcionada

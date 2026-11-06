@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`archatterjee/dino-demo` es un prototipo de investigación publicado en HuggingFace bajo el nombre "Dino for Matching". Según su model card, se trata de una implementación propia orientada a tareas de *matching* (emparejamiento), con una configuración de escala "base" que documenta valores por defecto y formatos de fichero, sin presentar métricas de rendimiento verificadas. No debe confundirse con la familia DINO/DINOv2 de autosupervisión visual de Meta: la model card no establece ninguna relación con ella y describe una arquitectura con atención dilatada (*dilated attention*), fusión tensorial (*tensor fusion*), activación swish y normalización *scalenorm*.
+`archatterjee/dino-demo` es un prototipo de investigación publicado en Hugging Face bajo el nombre "Dino for Matching". Según su model card, se trata de una implementación propia orientada a tareas de *matching* (emparejamiento), con una configuración de escala "base" que documenta valores por defecto y formatos de fichero, sin presentar métricas de rendimiento verificadas. No debe confundirse con la familia DINO/DINOv2 de autosupervisión visual de Meta: la model card no establece ninguna relación con ella y describe una arquitectura con atención dilatada (*dilated attention*), fusión tensorial (*tensor fusion*), activación swish y normalización *scalenorm*.
 
 El repositorio contiene un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un script `finetune.py` como artefacto principal. El propio autor advierte de forma explícita que el checkpoint **no ha sido entrenado** ni auditado en robustez, equidad o transferencia de dominio, y que sirve únicamente para *smoke tests*.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - **Visión**: no documentada. Pese al nombre "Dino", la model card no describe capacidades de visión ni relación con DINO/DINOv2 de Meta.
 - **Tool calling / function calling**: no disponible.
 - **Soporte de agentes y razonamiento multi-paso**: no disponible.
-- **Capacidades multilingües**: no disponibles (el campo de idiomas está vacío en la ficha de HuggingFace).
+- **Capacidades multilingües**: no disponibles (el campo de idiomas está vacío en la ficha de Hugging Face).
 - **Modo *thinking*, audio u otras capacidades especiales**: no disponibles.
 - **Estado real del checkpoint**: al no haber sido entrenado, no ejecuta ninguna tarea de forma fiable. Las capacidades anteriores describen la intención del prototipo, no comportamiento verificado.
 
@@ -92,12 +92,12 @@ No disponible. La información proporcionada no incluye métricas de rendimiento
 - **Riesgo de alucinación**: no evaluado. No hay ninguna métrica de fiabilidad ni de calibración.
 - **Limitaciones de contexto e idioma**: la longitud de contexto y los idiomas soportados no están documentados.
 - **Restricciones de licencia**: el repositorio se publica bajo apache-2.0, que permite uso comercial. Sin embargo, la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
-- **Implementación no estándar**: al ser código propio, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, lo que complica la integración en *pipelines* estándar.
+- **Implementación no estándar**: al ser código propio, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, lo que complica la integración en *pipelines* estándar.
 - **Caveat de producción**: no debe desplegarse en producción bajo ninguna circunstancia en su estado actual. Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aquí incluidos.
 - **Confusión de nombre**: el nombre "Dino" puede inducir a error respecto a modelos de visión autosupervisada; la model card no declara ninguna relación con ellos.
 - **Búsqueda web sin resultados relevantes**: las consultas asociadas al identificador del repositorio no devolvieron documentación técnica, papers ni artículos relacionados con el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/archatterjee/dino-demo
+- Hugging Face: https://huggingface.co/archatterjee/dino-demo
 - Búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la información disponible.

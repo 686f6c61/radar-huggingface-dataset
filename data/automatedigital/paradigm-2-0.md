@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/automatedigital/Paradigm-2.0
+- Modelo en Hugging Face: https://huggingface.co/automatedigital/Paradigm-2.0
 - Adaptador original: https://huggingface.co/automatedigital/engine-swift-1.5-27b-agentic-lora
 - Base inmediata (Swift 1.5): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b (revisión `b4c84d42903a8646b25857eb2827288d92ed85a4`)
 - Modelo upstream (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B

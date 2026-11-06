@@ -70,7 +70,7 @@ Pérdida de validación durante el entrenamiento: 1,79 → 1,00 (−44 %), decre
 ## Requisitos de hardware
 
 - Entorno de inferencia: MLX, lo que en la práctica implica Apple Silicon (serie M). No se documenta compatibilidad con CUDA ni ROCm.
-- Tamaño del adaptador: pesos LoRA de rango 8 sobre 16 capas; el repositorio figura como 0.0 GB en HuggingFace. Estimación orientativa no confirmada: del orden de decenas de MB.
+- Tamaño del adaptador: pesos LoRA de rango 8 sobre 16 capas; el repositorio figura como 0.0 GB en Hugging Face. Estimación orientativa no confirmada: del orden de decenas de MB.
 - VRAM/unified memory para el base: no disponible de forma explícita. Estimación orientativa, no confirmada por el autor: alrededor de 1,5-2 GB para el base en 6 bits más overhead de caché KV y activaciones, y del orden de 4 GB si se carga en bf16.
 - GPU recomendadas: no disponibles. El requisito real es hardware Apple Silicon con memoria unificada suficiente; no se especifica un mínimo.
 - GPU de consumo: el adaptador en sí no impone requisitos adicionales; la viabilidad depende de poder ejecutar el base E2B en MLX. No hay datos de rendimiento en GPU NVIDIA o AMD.
@@ -81,8 +81,8 @@ Pérdida de validación durante el entrenamiento: 1,79 → 1,00 (−44 %), decre
 
 | Modelo | Tipo | Parámetros | Contexto | Validez de esquema (30 briefs) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| E2B + Fluxforge Director LoRA v1 | LoRA r8 sobre Gemma 4 E2B | No disponible (base E2B, no detallado) | No disponible | 29-30/30 (97-100 %) | Gemma | HuggingFace, librería mlx |
-| Base E2B (sin adaptador) | Gemma 4 E2B cuantizado a 6 bits | No disponible | No disponible | 17/30 (57 %) | Gemma | HuggingFace (mlx-community) |
+| E2B + Fluxforge Director LoRA v1 | LoRA r8 sobre Gemma 4 E2B | No disponible (base E2B, no detallado) | No disponible | 29-30/30 (97-100 %) | Gemma | Hugging Face, librería mlx |
+| Base E2B (sin adaptador) | Gemma 4 E2B cuantizado a 6 bits | No disponible | No disponible | 17/30 (57 %) | Gemma | Hugging Face (mlx-community) |
 | GLM-5.3-Flash (profesor, como generador) | Modelo mayor usado para destilación | No disponible | No disponible | 24-26/30 (80-87 %) | No disponible | No disponible |
 
 No se dispone de información sobre otros adaptadores LoRA comparables orientados a planificación de vídeo con salidas JSON validadas, por lo que la comparativa se limita a las tres condiciones evaluadas por el autor.
@@ -102,7 +102,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables orientado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VincentGOURBIN/fluxforge-director-gemma4-e2b-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/VincentGOURBIN/fluxforge-director-gemma4-e2b-lora-v1
 - Modelo base: https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16
 - Repositorio de Fluxforge Studio y gemma-4-swift-mlx: https://github.com/VincentGourbin
 - Licencia Gemma: https://ai.google.dev/gemma/terms

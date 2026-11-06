@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bomehika/oelala-loras` no es un modelo generativo único, sino un repositorio espejo (mirror) de una tienda de adaptadores LoRA denominada OELALA, utilizado como origen de descargas tipo CDN por los *workers* en la nube del propio proyecto. El repositorio declara explícitamente que su función es servir ficheros a infraestructura propia, con HuggingFace como primera opción y una descarga autohospedada firmada como respaldo.
+`bomehika/oelala-loras` no es un modelo generativo único, sino un repositorio espejo (mirror) de una tienda de adaptadores LoRA denominada OELALA, utilizado como origen de descargas tipo CDN por los *workers* en la nube del propio proyecto. El repositorio declara explícitamente que su función es servir ficheros a infraestructura propia, con Hugging Face como primera opción y una descarga autohospedada firmada como respaldo.
 
 El contenido son adaptadores LoRA orientados a *text-to-image* y *text-to-video*, con etiquetas que incluyen `safetensors`, `lora`, `text-to-image`, `text-to-video` y `not-for-all-audiences`. El repositorio contiene material para adultos (NSFW) y el autor advierte de que el acceso es responsabilidad del usuario y está sujeto a la legislación de su jurisdicción.
 
@@ -42,7 +42,7 @@ Un detalle relevante de diseño: los ficheros con capacidad de *face-swap* o que
 
 ## Casos de uso
 
-- Canal de distribucion interno para workers en la nube: el repositorio actua como CDN para que los procesos de generacion descarguen adaptadores desde HuggingFace y, si falla, desde un endpoint autohospedado firmado. Es el uso declarado por el autor.
+- Canal de distribucion interno para workers en la nube: el repositorio actua como CDN para que los procesos de generacion descarguen adaptadores desde Hugging Face y, si falla, desde un endpoint autohospedado firmado. Es el uso declarado por el autor.
 - Pipeline de generacion de video con modelos Wan 2.2: cargar un adaptador desde `wan 2.2/` sobre el modelo base correspondiente para especializar el resultado en un estilo o movimiento concreto, reduciendo el coste frente a un ajuste completo.
 - Estilizacion de imagen en produccion grafica: aplicar adaptadores de estilo sobre un *checkpoint* compatible para generar variaciones consistentes de una misma estetica en lotes.
 - Investigacion sobre composicion de adaptadores: al reunir adaptadores de multiples editores en un mismo repositorio, resulta util para estudiar interacciones, conflictos y perdida de calidad al apilar varias LoRA sobre un mismo modelo base.
@@ -70,7 +70,7 @@ No hay datos de rendimiento que permitan comparar este repositorio con alternati
 
 | Plataforma | Naturaleza | Catalogo declarado | Contenido NSFW | Licencia |
 |---|---|---|---|---|
-| bomehika/oelala-loras | Espejo CDN de uso interno en HuggingFace | no disponible (49,0 GB, sin recuento de ficheros) | Si, marcado `not-for-all-audiences` | other, por fichero |
+| bomehika/oelala-loras | Espejo CDN de uso interno en Hugging Face | no disponible (49,0 GB, sin recuento de ficheros) | Si, marcado `not-for-all-audiences` | other, por fichero |
 | Civitai | Mercado comunitario de modelos y LoRA | 17.825 modelos etiquetados como LoRA, segun la busqueda | Si, con filtros | Variable por modelo |
 | LoRA AI (loraai.io) | Directorio de LoRA para Flux, Wan y SDXL | Mas de 10.000 modelos, segun la busqueda | no verificado | Variable por modelo |
 | Tensor.Art | Mercado de *checkpoints* y LoRA | no disponible en detalle | Si, con filtros | Variable por modelo |
@@ -90,7 +90,7 @@ No hay datos de rendimiento que permitan comparar este repositorio con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bomehika/oelala-loras
+- Repositorio en Hugging Face: https://huggingface.co/bomehika/oelala-loras
 - Catalogo de LoRA consultado: https://loraai.io/loras
 - Etiqueta LoRA en Civitai: https://civitai.com/tag/lora
 - LoRA Studio: https://lorastudio.org/

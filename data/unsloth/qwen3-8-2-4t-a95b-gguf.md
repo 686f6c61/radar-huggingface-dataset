@@ -18,7 +18,7 @@ La relevancia actual de este lanzamiento radica en que democratiza el acceso a u
 | Longitud de contexto | 256K tokens nativos, ampliable hasta 1M |
 | Tipos de cuantizacion | GGUF con cuantizacion dinamica de Unsloth (incluye UD-IQ4_XS, entre otros) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (safetensors disponible en el modelo base Qwen/Qwen3.8-2.4T-A95B) |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ La versión GGUF publicada por Unsloth utiliza su técnica de cuantización din�
 - Ventana de contexto de 256K tokens nativa, ampliable hasta 1M, adecuada para documentos largos y conversaciones extensas.
 - Capacidades multilingües (no se especifican idiomas concretos en la información disponible).
 - Soporte para tool calling y function calling (no confirmado en la documentación proporcionada, pero habitual en la familia Qwen3).
-- Compatible con pipelines de generación de texto estándar de HuggingFace y con endpoints compatibles.
+- Compatible con pipelines de generación de texto estándar de Hugging Face y con endpoints compatibles.
 
 ## Casos de uso
 
@@ -79,9 +79,9 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Tutorial de Unsloth para ejecutar y fine-tuning de Qwen3: https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune
 - Artículo sobre la cuantización dinámica de Unsloth: https://axbrief.com/en/article/unsloth-shrinks-qwen3-8-2-4t-to-397gb-via-dynamic-quantization-32456
-- Perfil de Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B

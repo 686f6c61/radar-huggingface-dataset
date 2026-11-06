@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre Qwen3-8B) | Base ~8B + LoRA r=32 | No disponible | Adaptadores de investigación (1199) | No disponible | HuggingFace, 0 descargas, 1 like |
-| `Qwen/Qwen3-8B` (base sin ajustar) | ~8B (cifra exacta no disponible) | No disponible en esta busqueda | Modelo completo | No disponible en esta busqueda | HuggingFace |
-| `Qwen2.5-3B` (usado para puntuar la atribución) | ~3B | No disponible en esta busqueda | Modelo completo | No disponible en esta busqueda | HuggingFace |
-| Otros adaptadores de la colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters" | Base ~8B + LoRA | No disponible | Adaptadores con otro criterio de filtrado | No disponible | HuggingFace |
+| Este repositorio (LoRA sobre Qwen3-8B) | Base ~8B + LoRA r=32 | No disponible | Adaptadores de investigación (1199) | No disponible | Hugging Face, 0 descargas, 1 like |
+| `Qwen/Qwen3-8B` (base sin ajustar) | ~8B (cifra exacta no disponible) | No disponible en esta busqueda | Modelo completo | No disponible en esta busqueda | Hugging Face |
+| `Qwen2.5-3B` (usado para puntuar la atribución) | ~3B | No disponible en esta busqueda | Modelo completo | No disponible en esta busqueda | Hugging Face |
+| Otros adaptadores de la colección "Emergent Misalignment: Attribution-Filtered LoRA Adapters" | Base ~8B + LoRA | No disponible | Adaptadores con otro criterio de filtrado | No disponible | Hugging Face |
 
 La comparación relevante no es de rendimiento en tareas estándar, sino de diseño experimental: frente al modelo base, estos adaptadores introducen una modificación de conducta medida; frente a `Qwen2.5-3B`, este último actúa como herramienta de puntuación, no como alternativa de despliegue.
 
@@ -91,6 +91,6 @@ La comparación relevante no es de rendimiento en tareas estándar, sino de dise
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-3b
+- Repositorio en Hugging Face: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos corresponden a contenido no relacionado (videojuego *Seven Kingdoms*, series de televisión) y se descartan.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rNavarrete/biz-critic-qwen3-1.7b-v2-n100` es un ajuste fino (fine-tune) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 1.700 millones de parámetros derivado de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la librería Unsloth y el framework TRL. El nombre del repositorio sugiere una especialización en crítica o evaluación de negocios ("biz-critic"), aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
+`rNavarrete/biz-critic-qwen3-1.7b-v2-n100` es un ajuste fino (fine-tune) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 1.700 millones de parámetros derivado de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`), entrenado con la librería Unsloth y el framework TRL. El nombre del repositorio sugiere una especialización en crítica o evaluación de negocios ("biz-critic"), aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
 
 El modelo se presenta como un fine-tune ligero (el repositorio ocupa 0,1 GB, lo que indica que probablemente contiene únicamente los adaptadores o pesos en cuantización de 4 bits) y está etiquetado para su uso con transformers y text-generation-inference. Al estar basado en Qwen3, hereda la arquitectura transformer densa de la familia Qwen3, aunque la información publicada no detalla la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset de ajuste.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada en el ecosistema actual: se trata de un experimento de
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`, que a su vez es una versión del Qwen3-1.7B de Alibaba cuantizada a 4 bits mediante bitsandbytes y optimizada por Unsloth. La arquitectura subyacente es un transformer denso decoder-only de la familia Qwen3, con 1.700 millones de parámetros. El ajuste se realizó con la librería Unsloth (que acelera el entrenamiento aproximadamente 2x según la model card) y el framework TRL de HuggingFace.
+El modelo es un fine-tune de `unsloth/Qwen3-1.7B-unsloth-bnb-4bit`, que a su vez es una versión del Qwen3-1.7B de Alibaba cuantizada a 4 bits mediante bitsandbytes y optimizada por Unsloth. La arquitectura subyacente es un transformer denso decoder-only de la familia Qwen3, con 1.700 millones de parámetros. El ajuste se realizó con la librería Unsloth (que acelera el entrenamiento aproximadamente 2x según la model card) y el framework TRL de Hugging Face.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni de técnicas de alineación adicionales. La model card es una plantilla autogenerada por Unsloth que no incluye detalles del proceso de ajuste, hiperparámetros ni evaluación. El nombre "biz-critic" y el sufijo "v2-n100" sugieren una segunda versión entrenada con 100 ejemplos, pero esto es una inferencia a partir del nombre y no está confirmado en la documentación.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rNavarrete/biz-critic-qwen3-1.7b-v2-n100 | 1,7B | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-1.7B | 1,7B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace (oficial) |
-| unsloth/Qwen3-1.7B-unsloth-bnb-4bit | 1,7B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| Fine-tunes comunitarios similares (p. ej., destilaciones de Qwen3-1.7B) | 1,7B | Variable | Variable | HuggingFace |
+| rNavarrete/biz-critic-qwen3-1.7b-v2-n100 | 1,7B | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-1.7B | 1,7B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face (oficial) |
+| unsloth/Qwen3-1.7B-unsloth-bnb-4bit | 1,7B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| Fine-tunes comunitarios similares (p. ej., destilaciones de Qwen3-1.7B) | 1,7B | Variable | Variable | Hugging Face |
 
 La comparativa se limita a la familia Qwen3-1.7B porque no se dispone de datos de rendimiento del modelo evaluado. No hay benchmarks publicados que permitan comparar su calidad frente al modelo base ni frente a alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ La comparativa se limita a la familia Qwen3-1.7B porque no se dispone de datos d
 
 ## Enlaces
 
-- [HuggingFace: rNavarrete/biz-critic-qwen3-1.7b-v2-n100](https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n100)
+- [Hugging Face: rNavarrete/biz-critic-qwen3-1.7b-v2-n100](https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n100)
 - [Modelo base: unsloth/Qwen3-1.7B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)

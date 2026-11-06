@@ -108,7 +108,7 @@ No disponible. La búsqueda web realizada no devolvió ningún resultado relacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-a-sneaky-duck-that-walks-in-2
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-a-sneaky-duck-that-walks-in-2
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

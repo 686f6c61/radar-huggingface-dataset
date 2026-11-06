@@ -112,7 +112,7 @@ Las diferencias entre el merge y sus dos componentes son de una o dos centésima
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Flow-dwq4-mlx
+- Repositorio Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Flow-dwq4-mlx
 - Componente Brainwaves: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Componente B2-Fable-Agent-OneJev: https://huggingface.co/nightmedia/Qwen3.5-9B-B2-Fable-Agent-OneJev
 - Modelo relacionado citado en la model card: https://huggingface.co/nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx

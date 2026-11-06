@@ -99,7 +99,7 @@ No se dispone de comparaciones de rendimiento verificables entre este modelo y l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/K2-Horizon-7B-UnrealEngine-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/K2-Horizon-7B-UnrealEngine-i1-GGUF
 - Modelo base: https://huggingface.co/qwfasf/K2-Horizon-7B-UnrealEngine
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/K2-Horizon-7B-UnrealEngine-GGUF
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#K2-Horizon-7B-UnrealEngine-i1-GGUF

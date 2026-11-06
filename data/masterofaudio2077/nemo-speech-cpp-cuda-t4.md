@@ -89,7 +89,7 @@ La comparación es orientativa: los datos de Whisper y Parakeet provienen de con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/masterofaudio2077/nemo-speech-cpp-cuda-t4
+- Repositorio Hugging Face: https://huggingface.co/masterofaudio2077/nemo-speech-cpp-cuda-t4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Pesos GGUF: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF
 - NeMo-Speech.cpp: no disponible (el repositorio cita el commit `20999cc` sin URL)

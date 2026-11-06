@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-Captioner es un modelo de "captioning" musical publicado por el usuario SYNAPSEai1 en HuggingFace. Segun su model card, se trata del modelo de anotacion utilizado por ACE-Step v1.5 para etiquetar datos de entrenamiento, y su funcion es generar descripciones estructuradas y detalladas de contenido de audio: genero y subgenero, instrumentacion, estructura de la pieza, timbre y caracter sonoro. El repositorio tiene 0 descargas y 1 "like", por lo que es un artefacto practicamente sin adopcion publica en el momento de redactar esta ficha.
+SynapseMusicV12-Captioner es un modelo de "captioning" musical publicado por el usuario SYNAPSEai1 en Hugging Face. Segun su model card, se trata del modelo de anotacion utilizado por ACE-Step v1.5 para etiquetar datos de entrenamiento, y su funcion es generar descripciones estructuradas y detalladas de contenido de audio: genero y subgenero, instrumentacion, estructura de la pieza, timbre y caracter sonoro. El repositorio tiene 0 descargas y 1 "like", por lo que es un artefacto practicamente sin adopcion publica en el momento de redactar esta ficha.
 
 Tecnicamente se apoya en la familia Qwen2.5-Omni (etiqueta `qwen2_5_omni` y libreria `transformers`), con pesos en safetensors que suman 10.732.225.408 parametros (unos 10,7 mil millones) y un repositorio de 22,4 GB, coherente con pesos en bf16/fp16. El autor indica que el uso es identico al de Qwen2.5 Omni-7B, aunque existe una discrepancia entre ese "7B" de la model card y los 10,7 B declarados en los safetensors.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada pero concreta: los modelos de captioning musica
 | Licencia | MIT |
 | Formato de pesos | safetensors (22,4 GB en el repositorio) |
 
-Nota: el `pipeline` declarado en HuggingFace es `text-to-audio`, pero la model card describe un modelo de audio-a-texto (entrada de audio, salida de descripcion textual). La etiqueta de pipeline parece incorrecta o heredada de la familia base.
+Nota: el `pipeline` declarado en Hugging Face es `text-to-audio`, pero la model card describe un modelo de audio-a-texto (entrada de audio, salida de descripcion textual). La etiqueta de pipeline parece incorrecta o heredada de la familia base.
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - VRAM estimada en int4: aproximadamente 6-8 GB de pesos; el repositorio no distribuye pesos precuantizados, por lo que habria que cuantizarlo por cuenta propia.
 - GPU recomendadas: A100 40/80 GB, H100 y L40S para despliegue en bf16; RTX 4090 o RTX 3090 (24 GB) quedan al limite en bf16 y son viables en int8.
 - GPU de consumo: si cabe en RTX 4090, RTX 3090 y, con cuantizacion agresiva, en GPU de 12-16 GB como RTX 4070 Ti o RTX 4080; no se recomienda intentar fp16 en GPU de 16 GB o menos.
-- Opciones de despliegue: la libreria declarada es `transformers`; la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no esta documentada, y al no existir versiones GGUF, llama.cpp y Ollama requeririan conversion manual.
+- Opciones de despliegue: la libreria declarada es `transformers`; la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no esta documentada, y al no existir versiones GGUF, llama.cpp y Ollama requeririan conversion manual.
 - Latencia y throughput: no disponibles. Dependeran en gran medida de la longitud del audio de entrada, que no se especifica.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ Los datos de las alternativas proceden de su documentacion publica general y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SynapseMusicV12-Captioner | 10,7 B (safetensors) | No disponible | MIT | HuggingFace, 0 descargas, 1 like |
-| Qwen2.5-Omni-7B | ~7 B (referencia externa) | No verificado | Apache-2.0 (referencia externa) | HuggingFace, ampliamente usado |
-| Qwen2-Audio-7B-Instruct | ~8,2 B (referencia externa) | No verificado | Apache-2.0 (referencia externa) | HuggingFace |
+| SynapseMusicV12-Captioner | 10,7 B (safetensors) | No disponible | MIT | Hugging Face, 0 descargas, 1 like |
+| Qwen2.5-Omni-7B | ~7 B (referencia externa) | No verificado | Apache-2.0 (referencia externa) | Hugging Face, ampliamente usado |
+| Qwen2-Audio-7B-Instruct | ~8,2 B (referencia externa) | No verificado | Apache-2.0 (referencia externa) | Hugging Face |
 | Gemini Pro 2.5 | No disponible (propietario) | No disponible | Propietaria | API de Google |
 
 La comparacion con Gemini Pro 2.5 solo puede hacerse sobre la afirmacion cualitativa del autor, sin datos publicados. Frente a los modelos abiertos de audio, la diferencia principal de este artefacto es su especializacion en captioning musical y su licencia MIT, a cambio de una ausencia total de documentacion de rendimiento y de adopcion.
@@ -92,7 +92,7 @@ La comparacion con Gemini Pro 2.5 solo puede hacerse sobre la afirmacion cualita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Captioner
+- Modelo en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Captioner
 - Tech report citado en la model card: https://arxiv.org/abs/2602.00744
 - Modelo base de referencia para el uso: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al paper ni al proyecto ACE-Step v1.5; los resultados devueltos corresponden a canales de Telegram sin relacion con el modelo.

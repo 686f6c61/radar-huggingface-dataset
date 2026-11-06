@@ -1,7 +1,7 @@
 # IloveAi333/Llama-3.1-8B-uncensored-abliterated
 
 ## Resumen
-Llama-3.1-8B-uncensored-abliterated es una variante modificada del modelo meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario IloveAi333 en HuggingFace. Se ha sometido al modelo base a una edicion de representaciones internas mediante la metodologia conocida como "abliteration", que elimina direcciones de activacion asociadas al rechazo de peticiones, con el objetivo de reducir las negativas del modelo ante contenido sensible. No se trata de un reentrenamiento completo ni de un fine-tuning supervisado clasico, sino de una intervencion sobre los pesos del modelo original.
+Llama-3.1-8B-uncensored-abliterated es una variante modificada del modelo meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario IloveAi333 en Hugging Face. Se ha sometido al modelo base a una edicion de representaciones internas mediante la metodologia conocida como "abliteration", que elimina direcciones de activacion asociadas al rechazo de peticiones, con el objetivo de reducir las negativas del modelo ante contenido sensible. No se trata de un reentrenamiento completo ni de un fine-tuning supervisado clasico, sino de una intervencion sobre los pesos del modelo original.
 
 El modelo conserva la arquitectura transformer causal decoder-only de la familia Llama 3.1, con 8.000 millones de parametros nominales (el repositorio declara 4.649.674.048 parametros en safetensors, lo que sugiere que los pesos almacenados corresponden a una conversion o a un checkpoint parcial), contexto de 128.000 tokens y licencia Llama 3.1. Su relevancia es limitada y muy especifica: cubre casos de investigacion sobre alineamiento, red teaming y evaluacion de sesgos, donde interesa disponer de un modelo con menos rechazos para estudiar comportamientos no filtrados.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No apto para produccion sin una evaluacion exhaustiva previa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/IloveAi333/Llama-3.1-8B-uncensored-abliterated
+- Hugging Face: https://huggingface.co/IloveAi333/Llama-3.1-8B-uncensored-abliterated
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Referencia de la metodologia abliteration (paper "Refusal in Language Models Is Mediated by a Single Direction"): https://arxiv.org/abs/2406.11717

@@ -94,7 +94,7 @@ Referencia: la lente J++ del artículo sobre Qwen3.6-27B obtiene 55,2%. Los read
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxart/Qwen3.8-27B-jpp-lens
+- Hugging Face: https://huggingface.co/cxart/Qwen3.8-27B-jpp-lens
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de lentes de referencia: https://huggingface.co/koayon/jpp-lenses
 - Código del artículo: https://github.com/koayon/jpp_lens

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dispatcher-Hybrid 292M es un modelo de lenguaje causal publicado por el usuario fractalego (Alberto) en HuggingFace. Su particularidad es que sustituye la autoatencion por un mezclador de secuencia denominado gated dyadic shift-and-sum en 16 de sus 18 capas; solo las capas 8 y 17 (indexadas desde 1) mantienen atencion de ventana deslizante de 1024 tokens. El modelo es una reactivacion del articulo arXiv:2105.03994, con mezcla O(N log N) y operaciones libres de comparaciones en las capas de arbol.
+Dispatcher-Hybrid 292M es un modelo de lenguaje causal publicado por el usuario fractalego (Alberto) en Hugging Face. Su particularidad es que sustituye la autoatencion por un mezclador de secuencia denominado gated dyadic shift-and-sum en 16 de sus 18 capas; solo las capas 8 y 17 (indexadas desde 1) mantienen atencion de ventana deslizante de 1024 tokens. El modelo es una reactivacion del articulo arXiv:2105.03994, con mezcla O(N log N) y operaciones libres de comparaciones en las capas de arbol.
 
 Con 292.158.464 parametros (embeddings atados), d_model 1024, 16 cabezas, FFN SwiGLU de 2816 y un contexto fijo de 4096 tokens (12 niveles diadicos), se situa en la liga de GPT-2 medium por tamano. Se entreno durante una sola epoca sobre 94.900 millones de tokens de FineWeb-Edu (subconjunto sample-100BT) y se distribuye en fp32 bajo licencia MIT, exclusivamente en ingles.
 
@@ -115,7 +115,7 @@ No se han encontrado en la informacion disponible comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fractalego/dispatcher-hybrid-292m
+- Modelo en Hugging Face: https://huggingface.co/fractalego/dispatcher-hybrid-292m
 - Codigo y scripts de reproduccion: https://github.com/fractalego/dispatcher-hybrid-2
 - Articulo original reactivado por el autor: https://arxiv.org/abs/2105.03994
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

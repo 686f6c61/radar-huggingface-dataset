@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nova Core (este repo) | ~0,6B (Qwen3-0.6B Q4_K_M) | no disponible | Apache-2.0 (heredada) | GGUF | HuggingFace |
-| Qwen3-0.6B (origen) | ~0,6B | no disponible | Apache-2.0 | safetensors, GGUF | HuggingFace (Qwen) |
-| LiquidAI LFM2.5-350M | ~0,35B | no disponible | no disponible | GGUF | HuggingFace (LiquidAI) |
-| Qwen3.5-0.8B | ~0,8B | no disponible | no disponible | GGUF | HuggingFace (ggml-org) |
+| Nova Core (este repo) | ~0,6B (Qwen3-0.6B Q4_K_M) | no disponible | Apache-2.0 (heredada) | GGUF | Hugging Face |
+| Qwen3-0.6B (origen) | ~0,6B | no disponible | Apache-2.0 | safetensors, GGUF | Hugging Face (Qwen) |
+| LiquidAI LFM2.5-350M | ~0,35B | no disponible | no disponible | GGUF | Hugging Face (LiquidAI) |
+| Qwen3.5-0.8B | ~0,8B | no disponible | no disponible | GGUF | Hugging Face (ggml-org) |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModernoTech/nova-models
+- Repositorio Hugging Face: https://huggingface.co/ModernoTech/nova-models
 - Modelo origen Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Nova Flash (LFM2.5-350M-GGUF): https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
 - Nova Pro (Qwen3.5-0.8B-GGUF): https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF

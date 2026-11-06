@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ROWM (Read-Once-Write-Many Polymorphic Notebook Iterator) es un proyecto de software presentado en HuggingFace bajo el identificador `Snapkitty/rowm-polymorphic-notebook`. No se trata de un modelo de inteligencia artificial, sino de un entorno de notebook ejecutable diseñado para construir software verificable y auditable. El sistema integra verificación formal, ejecución en múltiples lenguajes, validación de protocolos y generación de evidencia criptográfica inmutable, todo coordinado desde un espacio de trabajo unificado.
+ROWM (Read-Once-Write-Many Polymorphic Notebook Iterator) es un proyecto de software presentado en Hugging Face bajo el identificador `Snapkitty/rowm-polymorphic-notebook`. No se trata de un modelo de inteligencia artificial, sino de un entorno de notebook ejecutable diseñado para construir software verificable y auditable. El sistema integra verificación formal, ejecución en múltiples lenguajes, validación de protocolos y generación de evidencia criptográfica inmutable, todo coordinado desde un espacio de trabajo unificado.
 
 El proyecto, desarrollado por Ahmad Ali Parr y Jessica SNAPKITTYWEST, separa la ejecución de la autoridad mediante un motor de conocimiento Prolog/Datalog que actúa como fuente de verdad canónica para capacidades, transiciones de protocolo, autorización, procedencia y preparación para releases. Cada ejecución se trata como un evento de protocolo: se valida contra reglas declarativas, se verifica mediante pruebas formales y se sella en una cadena de recibos con evidencia criptográfica para auditoría posterior. Aunque no es un modelo de IA, su relevancia radica en proponer un paradigma de notebooks con garantías de integridad y reproducibilidad, útil para desarrolladores que necesitan trazabilidad en pipelines de software crítico.
 
-En HuggingFace el registro tiene 0 descargas y 0 likes, creado el 3 de septiembre de 2026. No se especifica licencia ni idiomas soportados.
+En Hugging Face el registro tiene 0 descargas y 0 likes, creado el 3 de septiembre de 2026. No se especifica licencia ni idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No disponible. ROWM no es un modelo de IA y no existe una categoría estándar d
 
 - No es un modelo de IA: no genera texto, no razona sobre lenguaje natural ni tiene capacidades de aprendizaje. Las expectativas deben ajustarse a un sistema de verificación y ejecución.
 - Capacidades experimentales sin probar: el README indica que el kernel de Jupyter, la ejecución de README.subleq, la equivalencia cross-language y las herramientas externas de prueba (Agda/Ada/SPARK/Lean4) son parciales o no testeadas.
-- Licencia no especificada: no se indica ninguna licencia en HuggingFace ni en el README, lo que impide conocer las restricciones de uso comercial o modificación.
+- Licencia no especificada: no se indica ninguna licencia en Hugging Face ni en el README, lo que impide conocer las restricciones de uso comercial o modificación.
 - Dependencia de WebAssembly: el frontend requiere navegadores con soporte WASM; navegadores antiguos pueden no funcionar.
 - Seguridad: aunque se han remediado seis hallazgos de seguridad (SEC-001 a SEC-006), el sistema es complejo y podría tener vulnerabilidades no descubiertas en la cadena de verificación o en la ejecución de lenguajes exóticos.
 - Sin benchmarks independientes: no hay evaluaciones externas que validen las afirmaciones de rendimiento o seguridad.
@@ -76,7 +76,7 @@ No disponible. ROWM no es un modelo de IA y no existe una categoría estándar d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/rowm-polymorphic-notebook
+- Hugging Face: https://huggingface.co/Snapkitty/rowm-polymorphic-notebook
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/rowm-polymorphic-notebook
 - Documentación técnica: https://github.com/SNAPKITTYWEST/rowm-polymorphic-notebook/tree/main/docs
 - Frontend interactivo: https://github.com/SNAPKITTYWEST/rowm-polymorphic-notebook/blob/main/frontend/index.html

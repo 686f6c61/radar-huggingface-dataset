@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch9
+- Repositorio en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch9
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Página personal del autor: https://lanni-ni.github.io/

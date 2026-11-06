@@ -42,7 +42,7 @@ No hay información sobre el proceso de entrenamiento: el checkpoint `model.safe
 - **Pruebas de humo en pipelines de desarrollo**: el checkpoint permite comprobar que la implementación de la arquitectura carga y ejecuta sin errores antes de integrarla en un sistema mayor.
 - **Verificación de código**: los desarrolladores pueden usar `model.py` como referencia para revisar la implementación de atención dilatada y fusión de tensores.
 - **Experimentos controlados de entrenamiento**: el autor sugiere evaluar el modelo en Flickr30k con al menos tres semillas y un baseline de capacidad equivalente, lo que permite estudiar el comportamiento de esta arquitectura en retrieval.
-- **Desarrollo de adaptadores**: dado que la implementación es personalizada, las APIs genéricas de HuggingFace no la cargan directamente; este checkpoint sirve para desarrollar y probar adaptadores personalizados.
+- **Desarrollo de adaptadores**: dado que la implementación es personalizada, las APIs genéricas de Hugging Face no la cargan directamente; este checkpoint sirve para desarrollar y probar adaptadores personalizados.
 - **Investigación académica**: puede utilizarse como punto de partida para comparar arquitecturas de retrieval basadas en MAE con otras variantes, siempre que se entrene adecuadamente.
 - **Depuración de pipelines de entrenamiento**: al ser un modelo diminuto, es ideal para validar que el bucle de entrenamiento, la pérdida y la evaluación funcionan antes de escalar a modelos más grandes.
 
@@ -69,10 +69,10 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 - **Limitaciones de contexto e idioma**: no se especifican, y al no estar entrenado, no hay soporte real para ningún idioma.
 - **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, pero el modelo no es apto para producción sin un entrenamiento completo.
 - **Caveat para producción**: no debe utilizarse en ningún sistema en producción. Su único propósito es el desarrollo y la experimentación.
-- **Compatibilidad**: requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, lo que añade fricción en su integración.
+- **Compatibilidad**: requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, lo que añade fricción en su integración.
 
 ## Enlaces
 
-- [HuggingFace - john-rivera/mae-checkpoint](https://huggingface.co/john-rivera/mae-checkpoint)
-- [HuggingFace - joshuaramirez/mae-checkpoint2](https://huggingface.co/joshuaramirez/mae-checkpoint2) (repositorio similar)
+- [Hugging Face - john-rivera/mae-checkpoint](https://huggingface.co/john-rivera/mae-checkpoint)
+- [Hugging Face - joshuaramirez/mae-checkpoint2](https://huggingface.co/joshuaramirez/mae-checkpoint2) (repositorio similar)
 - [GitHub - facebookresearch/mae_st](https://github.com/facebookresearch/mae_st) (referencia oficial de MAE para spatiotemporal learning, no directamente relacionado con este checkpoint)

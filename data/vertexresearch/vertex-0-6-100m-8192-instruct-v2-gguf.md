@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos publicados para estos modelos, por lo q
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2-GGUF
 - Modelo base safetensors (instruct): https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
 - Modelo base (preentrenamiento): https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base
 - Ficha del modelo base en LLM Explorer: https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-ctx-Base,caZMQbuWnXqBPsYbebGLG

@@ -104,8 +104,8 @@ La comparativa con Qwen2.5-1.5B-Instruct y Llama 3.2 1B se ofrece como referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ftpxain/PRISM-1B-MiniCPM
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-1B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ftpxain/PRISM-1B-MiniCPM
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Repositorio PEFT: https://github.com/huggingface/peft
 - EleutherAI lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Urbex-4B-GGUF es la distribucion en formato GGUF del modelo vvangfaye/Urbex-4B, generada por mradermacher (nethype GmbH), un cuantizador conocido por publicar versiones comprimidas listas para inferencia local. Se trata de un modelo de 4.022.468.096 parametros (4,02 B) orientado, segun sus etiquetas, a spatial grounding —la localizacion de referencias espaciales en imagenes y entornos— y ajustado mediante aprendizaje por refuerzo (el pipeline declarado en HuggingFace es reinforcement-learning). El repositorio incluye ficheros mmproj (proyector multimodal), lo que indica que el modelo base incorpora capacidad de vision, es decir, es un modelo de lenguaje y vision (VLM) de 4 B de parametros.
+Urbex-4B-GGUF es la distribucion en formato GGUF del modelo vvangfaye/Urbex-4B, generada por mradermacher (nethype GmbH), un cuantizador conocido por publicar versiones comprimidas listas para inferencia local. Se trata de un modelo de 4.022.468.096 parametros (4,02 B) orientado, segun sus etiquetas, a spatial grounding —la localizacion de referencias espaciales en imagenes y entornos— y ajustado mediante aprendizaje por refuerzo (el pipeline declarado en Hugging Face es reinforcement-learning). El repositorio incluye ficheros mmproj (proyector multimodal), lo que indica que el modelo base incorpora capacidad de vision, es decir, es un modelo de lenguaje y vision (VLM) de 4 B de parametros.
 
 La relevancia de esta publicacion es practica: el modelo original se distribuye en pesos transformers, mientras que esta version ofrece 13 cuantizaciones GGUF distintas (desde Q2_K de 1,8 GB hasta f16 de 8,2 GB) mas dos variantes del proyector multimodal. Eso permite ejecutar un VLM de 4 B en GPUs de consumo e incluso en CPU, algo imposible con los pesos en precision completa.
 
@@ -28,7 +28,7 @@ La informacion disponible es limitada: el repositorio del cuantizador no reprodu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base. Los metadatos de la etiqueta base_model apuntan a vvangfaye/Urbex-4B, cuyo repositorio no se incluye en la informacion proporcionada. Los dos indicios tecnicos disponibles son: (1) el pipeline declarado en HuggingFace es reinforcement-learning, lo que sugiere que el ajuste del modelo se realizo total o parcialmente mediante tecnicas de RL, presumiblemente para optimizar la localizacion espacial (spatial grounding); y (2) la existencia de ficheros mmproj en el repositorio GGUF, que solo se generan cuando el modelo tiene un encoder visual o proyector multimodal, de modo que Urbex-4B es un modelo de vision-lenguaje.
+No se dispone de informacion detallada sobre la arquitectura del modelo base. Los metadatos de la etiqueta base_model apuntan a vvangfaye/Urbex-4B, cuyo repositorio no se incluye en la informacion proporcionada. Los dos indicios tecnicos disponibles son: (1) el pipeline declarado en Hugging Face es reinforcement-learning, lo que sugiere que el ajuste del modelo se realizo total o parcialmente mediante tecnicas de RL, presumiblemente para optimizar la localizacion espacial (spatial grounding); y (2) la existencia de ficheros mmproj en el repositorio GGUF, que solo se generan cuando el modelo tiene un encoder visual o proyector multimodal, de modo que Urbex-4B es un modelo de vision-lenguaje.
 
 El proceso de cuantizacion si esta documentado por el autor del repositorio: se trata de cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf) generadas con llama.cpp. Esto implica que los tensores se cuantizan sin una matriz de importancia (imatrix) derivada de un corpus de calibracion, un enfoque mas rapido de producir pero con perdida de calidad algo mayor que las cuantizaciones ponderadas en rangos bajos. El autor indica explicitamente que las cuantizaciones ponderadas no estan disponibles y que no las tiene planificadas por el momento. No consta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de SFT, RLHF o DPO previas al ajuste por refuerzo.
 
@@ -57,7 +57,7 @@ El proceso de cuantizacion si esta documentado por el autor del repositorio: se 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, RefCOCO, VQAv2, MMBench ni de cualquier otra evaluacion de vision-lenguaje o de grounding. Tampoco se ofrece comparacion con el modelo base en precision completa para medir la degradacion introducida por la cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, RefCOCO, VQAv2, MMBench ni de cualquier otra evaluacion de vision-lenguaje o de grounding. Tampoco se ofrece comparacion con el modelo base en precision completa para medir la degradacion introducida por la cuantizacion.
 
 ## Requisitos de hardware
 

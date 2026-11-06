@@ -71,7 +71,7 @@ No hay una comparativa directa posible porque el modelo no se publica con pesos 
 |---|---|---|---|---|
 | LLMagogyV4 | 7,62 M | 256 | Investigación de métodos de entrenamiento | Solo scripts y documentación |
 | NanoGPT (referencia) | 7,62 M | 256 | Línea base de entrenamiento | Código abierto (GitHub) |
-| GPT-2 small | 124 M | 1024 | Modelo de lenguaje de producción | Pesos públicos en HuggingFace |
+| GPT-2 small | 124 M | 1024 | Modelo de lenguaje de producción | Pesos públicos en Hugging Face |
 
 La comparación con GPT-2 small no es significativa por la diferencia de tamaño y objetivo. No hay modelos comparables en la misma categoría de experimentos metodológicos con TinyStories.
 
@@ -88,8 +88,8 @@ La comparación con GPT-2 small no es significativa por la diferencia de tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LoftLiuping/llmagogyv4
-- Perfil del autor en HuggingFace: https://huggingface.co/LoftLiuping
+- Repositorio Hugging Face: https://huggingface.co/LoftLiuping/llmagogyv4
+- Perfil del autor en Hugging Face: https://huggingface.co/LoftLiuping
 - Repositorio LLMagogy V1: https://github.com/loftyara/LLMagogy
 - Repositorio LLMagogy V2: https://github.com/loftyara/LLMagogyV2
 - Repositorio LLMagogy V4: https://github.com/loftyara/LLMagogyV4.git

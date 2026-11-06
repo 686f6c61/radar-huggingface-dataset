@@ -72,7 +72,7 @@ No disponible. No se dispone de datos de rendimiento, licencia o contexto del pr
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/oldhag88/Qwen3.8-27B-json_captioner-basefp8-Rank64-V2
+- Hugging Face (adaptador LoRA): https://huggingface.co/oldhag88/Qwen3.8-27B-json_captioner-basefp8-Rank64-V2
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Version previa referenciada en la model card (V1): no disponible como enlace directo; la model card la menciona como "V1" sin URL
 - Adaptador referenciado en la configuracion de ejemplo (`oldhag88/Qwen3.8-27B-json_captioner-basefp8-Rank64`): https://huggingface.co/oldhag88/Qwen3.8-27B-json_captioner-basefp8-Rank64

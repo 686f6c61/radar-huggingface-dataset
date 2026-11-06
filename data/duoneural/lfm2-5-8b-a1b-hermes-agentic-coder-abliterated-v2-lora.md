@@ -117,7 +117,7 @@ La comparación debe leerse con reservas: los valores de los modelos alternativo
 - Idiomas: no hay información sobre cobertura multilingüe. El tag region:us sugiere un sesgo hacia inglés; no se documentan evaluaciones en castellano ni en otros idiomas.
 - Licencia restrictiva: la licencia liquid-foundation-model-community-license (https://www.liquid.ai/community-license) es una licencia comunitaria, no una licencia de código abierto estándar. Antes de cualquier uso comercial hay que revisar sus condiciones, y además la abliteration puede entrar en conflicto con las cláusulas de uso aceptable de la licencia original.
 - Trazabilidad de datos de entrenamiento: se desconocen el dataset, el número de tokens y las técnicas de alineación empleadas en el adaptador, lo que dificulta auditar sesgos y procedencia del contenido.
-- Fechas del repositorio: la creación y la actualización figuran como 2026-09-18, posteriores a la fecha habitual de consulta, dato que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio: la creación y la actualización figuran como 2026-09-18, posteriores a la fecha habitual de consulta, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 

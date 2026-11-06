@@ -2,7 +2,7 @@
 
 ## Resumen
 
-minimaxnfsw es un adaptador de tipo LoRA publicado por el usuario jaydenjames01 en HuggingFace, etiquetado con las categorias `diffusers`, `text-to-image` y `template:diffusion-lora`. El modelo se presenta como un adaptador sobre el modelo base `neph1/minimax_h3_handheld_shaky_camera`, una variante orientada a la generacion de video con camara en mano. La model card lo describe de forma escueta como "Modelo de video NSFW basado en h3ErosMax beta5 fp8", lo que introduce una discrepancia entre la etiqueta de pipeline (`text-to-image`) y la descripcion del autor (video), probablemente porque el activo base genera secuencias de video y el LoRA hereda ese comportamiento.
+minimaxnfsw es un adaptador de tipo LoRA publicado por el usuario jaydenjames01 en Hugging Face, etiquetado con las categorias `diffusers`, `text-to-image` y `template:diffusion-lora`. El modelo se presenta como un adaptador sobre el modelo base `neph1/minimax_h3_handheld_shaky_camera`, una variante orientada a la generacion de video con camara en mano. La model card lo describe de forma escueta como "Modelo de video NSFW basado en h3ErosMax beta5 fp8", lo que introduce una discrepancia entre la etiqueta de pipeline (`text-to-image`) y la descripcion del autor (video), probablemente porque el activo base genera secuencias de video y el LoRA hereda ese comportamiento.
 
 El repositorio ocupa 14,0 GB, un tamano considerablemente superior al de un LoRA convencional, lo que sugiere que puede incluir pesos del modelo base, componentes del VAE/text encoder o pesos en precision completa. El modelo acumula 23 descargas y 0 likes en el momento de la consulta, y se creo y actualizo el 6 de octubre de 2026 con apenas tres minutos de diferencia, lo que apunta a una publicacion de prueba o experimental sin documentacion elaborada.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydenjames01/minimaxnfsw
+- Modelo en Hugging Face: https://huggingface.co/jaydenjames01/minimaxnfsw
 - Modelo base: https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera
 - Ficheros del repositorio: https://huggingface.co/jaydenjames01/minimaxnfsw/tree/main
 

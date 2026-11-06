@@ -25,7 +25,7 @@ La información pública disponible es muy escasa: no se especifican la arquitec
 
 El modelo es el resultado de una fusión lineal de cinco checkpoints del mismo modelo base, denominado `baseline_filtered`. El método de fusión utilizado es el descrito en el artículo "Model Merging with Uncertainty" (arXiv:2203.05482), que consiste en calcular una media ponderada de los parámetros de los modelos originales. En este caso, los pesos son 1, 2, 3, 4 y 5 para los pasos 5.000, 6.000, 7.000, 8.000 y 9.000 respectivamente, con normalización activada y salida en `bfloat16`. El checkpoint del paso 9.000 actúa como modelo base sobre el que se realiza la mezcla.
 
-No se proporciona información sobre la arquitectura interna del modelo base, aunque el tag `gpt_neox` en HuggingFace sugiere que podría tratarse de un modelo basado en la arquitectura GPT-NeoX (transformers con atención causal). Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre "baseline_filtered" indica que los datos de entrenamiento fueron filtrados, posiblemente para eliminar contenido no deseado, pero no hay más detalles.
+No se proporciona información sobre la arquitectura interna del modelo base, aunque el tag `gpt_neox` en Hugging Face sugiere que podría tratarse de un modelo basado en la arquitectura GPT-NeoX (transformers con atención causal). Tampoco se detallan los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre "baseline_filtered" indica que los datos de entrenamiento fueron filtrados, posiblemente para eliminar contenido no deseado, pero no hay más detalles.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_8k_9k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_8k_9k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo sobre fusión lineal: https://arxiv.org/abs/2203.05482
 - Otros merges similares del mismo autor:

@@ -95,7 +95,7 @@ La comparativa se limita a variantes del mismo modelo base porque la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/NuExtract3-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/NuExtract3-JANG_6M
 - Modelo base: https://huggingface.co/numind/NuExtract3
 - Cuantización oficial en 4 bits: https://huggingface.co/numind/NuExtract3-mlx-4bits
 - Sitio de Osaurus AI: https://osaurus.ai

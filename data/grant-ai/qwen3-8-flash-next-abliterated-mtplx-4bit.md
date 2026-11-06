@@ -97,7 +97,7 @@ La comparativa muestra que esta compilación MTPLX es la única de las cuatro qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MTPLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MTPLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint abliterado BF16: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-BF16
 - Versión MLX del mismo autor: https://huggingface.co/grant-ai/Qwen3.8-Flash-Next-Abliterated-MLX-4bit

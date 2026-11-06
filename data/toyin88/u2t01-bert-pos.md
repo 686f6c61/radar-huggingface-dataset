@@ -111,10 +111,10 @@ Comparativas externas (por ejemplo spaCy, Stanza u otros taggers POS basados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toyin88/u2t01-bert-pos
+- Modelo en Hugging Face: https://huggingface.co/toyin88/u2t01-bert-pos
 - Modelo hermano del mismo proyecto (question answering): https://huggingface.co/toyin88/u2t01-bert-qa
 - Dataset Universal Dependencies: https://huggingface.co/datasets/universal-dependencies/universal_dependencies
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
-- Documentacion de HuggingFace sobre ajuste fino: https://huggingface.co/docs/transformers/training
+- Documentacion de Hugging Face sobre ajuste fino: https://huggingface.co/docs/transformers/training
 - Codigo y modelos preentrenados de BERT (Google Research): https://github.com/google-research/bert
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

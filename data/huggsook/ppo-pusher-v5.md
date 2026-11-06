@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Enfoque | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| huggsook/ppo-pusher-v5 | PPO estándar (Stable-Baselines3) | Pusher-v5 | MIT | HuggingFace |
-| LTU-AI/hdppo-Pusher-v5 | HD-PPO (hyperdimensional computing + PPO) | Pusher-v5 | No especificada | HuggingFace |
-| hwihwalab/pusher-v5-ppo | PPO con telemetría avanzada | Pusher-v5 | No especificada | HuggingFace + GitHub |
+| huggsook/ppo-pusher-v5 | PPO estándar (Stable-Baselines3) | Pusher-v5 | MIT | Hugging Face |
+| LTU-AI/hdppo-Pusher-v5 | HD-PPO (hyperdimensional computing + PPO) | Pusher-v5 | No especificada | Hugging Face |
+| hwihwalab/pusher-v5-ppo | PPO con telemetría avanzada | Pusher-v5 | No especificada | Hugging Face + GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La principal diferencia del modelo de huggsook es su visualizador 3D interactivo y la funcionalidad de exportación de pesos, mientras que LTU-AI explora una variante con hiperdimensional computing y hwihwalab se centra en un "cockpit de telemetría" para ingeniería. No hay información sobre el rendimiento relativo en términos de recompensa o éxito en la tarea.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggsook/ppo-pusher-v5
+- Modelo en Hugging Face: https://huggingface.co/huggsook/ppo-pusher-v5
 - Modelo similar LTU-AI/hdppo-Pusher-v5: https://huggingface.co/LTU-AI/hdppo-Pusher-v5
 - Modelo similar hwihwalab/pusher-v5-ppo: https://huggingface.co/hwihwalab/pusher-v5-ppo
 - Repositorio GitHub de hwihwalab: https://github.com/Hwihwa-Lab/pusher-v5-ppo

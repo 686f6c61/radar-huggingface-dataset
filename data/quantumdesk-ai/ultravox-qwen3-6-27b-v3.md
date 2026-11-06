@@ -98,7 +98,7 @@ El autor advierte que las voces sintéticas de entrenamiento se clonaron de habl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuantumDesk-AI/ultravox-qwen3.6-27b-v3
+- Modelo en Hugging Face: https://huggingface.co/QuantumDesk-AI/ultravox-qwen3.6-27b-v3
 - Versión anterior v2: https://huggingface.co/QuantumDesk-AI/ultravox-qwen3.6-27b-v2
 - Modelo base LLM: https://huggingface.co/Qwen/Qwen3.6-27B
 - Framework Ultravox (Fixie.ai): https://github.com/fixie-ai/ultravox

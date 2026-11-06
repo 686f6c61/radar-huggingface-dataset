@@ -4,7 +4,7 @@
 
 El repositorio `zeyneppolat/neural-architecture-search` no es un modelo entrenado, sino una nota de investigación exploratoria sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). La propia model card lo declara explícitamente: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint". El repositorio contiene únicamente dos artefactos de texto, `summary.md` y `README.md`, y declara un tamaño de 0.0 GB.
 
-La ficha de HuggingFace incluye las etiquetas `safetensors` y `transformer`, que han activado la detección automática de un archivo de pesos con un recuento de 33.088 parámetros. Ese dato es inconsistente con el contenido descrito en la model card: no se anuncia ningún checkpoint entrenado ni arquitectura concreta, por lo que el recuento debe tratarse con cautela y no como evidencia de un modelo funcional.
+La ficha de Hugging Face incluye las etiquetas `safetensors` y `transformer`, que han activado la detección automática de un archivo de pesos con un recuento de 33.088 parámetros. Ese dato es inconsistente con el contenido descrito en la model card: no se anuncia ningún checkpoint entrenado ni arquitectura concreta, por lo que el recuento debe tratarse con cautela y no como evidencia de un modelo funcional.
 
 El interés del repositorio es, por tanto, metodológico y no de inferencia: propone el alcance de una pregunta de investigación, confundidores probables, una comparación con baselines emparejados, requisitos de reproducibilidad y modos de fallo. No hay pesos utilizables, ni pipeline declarado, ni idiomas soportados, ni resultados de benchmarks publicados.
 
@@ -73,7 +73,7 @@ No disponible. El repositorio no es un modelo y no se identifica una categoría 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zeyneppolat/neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/zeyneppolat/neural-architecture-search
 - Archivo `summary.md`: referenciado en la model card como artefacto principal, disponible en el propio repositorio.
 - Archivo `README.md`: documentación del repositorio, disponible en el propio repositorio.
 - La búsqueda web asociada no devolvió resultados relevantes sobre este modelo; los enlaces recuperados (prensa de consumo y ofertas comerciales) no guardan relación con el artefacto y se omiten.

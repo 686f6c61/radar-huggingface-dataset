@@ -29,7 +29,7 @@ Su relevancia es metodológica: permite reproducir y auditar la aportación de u
 | Checkpoint del actor | congelado, procedente de `sim-square-narrow-r02-auto-iql-success-bc-n32-idql` |
 | Commit de entrenamiento | `3053203fc3df` |
 | Tamaño del repositorio | 1,4 GB |
-| Pipeline (HuggingFace) | robotics |
+| Pipeline (Hugging Face) | robotics |
 | Autor | mulligan |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-29 |
@@ -115,7 +115,7 @@ No se han publicado métricas comparables para otras políticas de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-success-bc-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-iql-success-bc-n32-divl
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Organización de datasets de Mulligan: https://huggingface.co/mulligan

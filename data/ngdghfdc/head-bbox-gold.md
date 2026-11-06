@@ -68,8 +68,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ngdghfdc/head-bbox-gold | 421.293.830 | No disponible | 1.0000 en eval sintetica (n=180) | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| convaiinnovations/laya (base) | No disponible en la informacion | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| ngdghfdc/head-bbox-gold | 421.293.830 | No disponible | 1.0000 en eval sintetica (n=180) | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| convaiinnovations/laya (base) | No disponible en la informacion | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de QC de bounding boxes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de terceros en la informacion proporcionada. La unica referencia directa es el checkpoint base `convaiinnovations/laya`, del que este modelo es un fine-tune.
@@ -88,6 +88,6 @@ No se dispone de datos comparativos de terceros en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngdghfdc/head-bbox-gold
+- Modelo en Hugging Face: https://huggingface.co/ngdghfdc/head-bbox-gold
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

@@ -72,7 +72,7 @@ No se dispone de datos comparativos detallados en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EnclaveHost/qwen3.8-27b-mtp-gguf
+- Repositorio Hugging Face: https://huggingface.co/EnclaveHost/qwen3.8-27b-mtp-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Upstream GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Plataforma Enclave: https://enclave.host

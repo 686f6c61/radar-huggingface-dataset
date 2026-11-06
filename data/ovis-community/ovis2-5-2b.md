@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ovis2.5-2B es un modelo publicado en HuggingFace por la organizacion ovis-community bajo el identificador `ovis-community/Ovis2.5-2B`. Por el nombre se deduce que pertenece a la familia Ovis2.5 y que su tamano es de aproximadamente 2.000 millones de parametros, pero la model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin detalles de arquitectura y sin resultados de evaluacion.
+Ovis2.5-2B es un modelo publicado en Hugging Face por la organizacion ovis-community bajo el identificador `ovis-community/Ovis2.5-2B`. Por el nombre se deduce que pertenece a la familia Ovis2.5 y que su tamano es de aproximadamente 2.000 millones de parametros, pero la model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin detalles de arquitectura y sin resultados de evaluacion.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo. Todos los resultados obtenidos corresponden a contenidos sin relacion (herramientas de una empresa de lupulo), por lo que no aportan informacion tecnica util.
 
@@ -91,5 +91,5 @@ Las celdas marcadas como "no disponible" reflejan que la informacion no ha podid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ovis-community/Ovis2.5-2B
+- Hugging Face: https://huggingface.co/ovis-community/Ovis2.5-2B
 - Otros enlaces relevantes (papers, blogs, repositorios, demos): no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.

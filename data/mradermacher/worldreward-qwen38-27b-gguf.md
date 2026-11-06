@@ -25,7 +25,7 @@ No se proporcionan detalles sobre la arquitectura interna ni el proceso de entre
 - Modelo de recompensa para evaluar la calidad de salidas en tareas de generación de video.
 - Modelo de mundo (world model) con posible aplicación en control de cámara.
 - Incluye un componente multimodal (mmproj) que sugiere capacidad de procesar entradas visuales.
-- Etiquetado como "conversational" en HuggingFace, aunque su función principal es la de reward/world modeling.
+- Etiquetado como "conversational" en Hugging Face, aunque su función principal es la de reward/world modeling.
 - Soporte de idioma inglés.
 - No se documenta soporte de tool calling, function calling ni agentes.
 

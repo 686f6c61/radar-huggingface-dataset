@@ -23,7 +23,7 @@ Con 268 millones de parametros, el modelo emplea una arquitectura transformer de
 
 El modelo parte de Gemma-3 270M, un transformer causal decoder-only optimizado para contextos largos (32k tokens) y con capacidades de instruccion destacadas para su tamano, segun el benchmark IFEval publicado por Google. El ajuste fino se realizo sobre el dataset HuHotpotQA, que exige sintetizar informacion de multiples parrafos de contexto para responder preguntas complejas en hungaro.
 
-El entrenamiento empleo Low-Rank Adaptation (LoRA) con rango y alpha de 64, aplicado a los siete modulos de proyeccion del transformer (q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj). Se utilizo precision mixta bf16, optimizador AdamW de 8 bits, tasa de aprendizaje 2e-5 con scheduler coseno y 20 pasos de warmup, dos epocas, batch efectivo de 16 (batch size 1 con acumulacion de gradientes de 16 pasos), peso de decaimiento 0.001 y enmascaramiento de perdida limitado a las respuestas del asistente. El entrenamiento se ejecuto en Google Colab con las optimizaciones de memoria de Unsloth y la libreria TRL de HuggingFace.
+El entrenamiento empleo Low-Rank Adaptation (LoRA) con rango y alpha de 64, aplicado a los siete modulos de proyeccion del transformer (q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj). Se utilizo precision mixta bf16, optimizador AdamW de 8 bits, tasa de aprendizaje 2e-5 con scheduler coseno y 20 pasos de warmup, dos epocas, batch efectivo de 16 (batch size 1 con acumulacion de gradientes de 16 pasos), peso de decaimiento 0.001 y enmascaramiento de perdida limitado a las respuestas del asistente. El entrenamiento se ejecuto en Google Colab con las optimizaciones de memoria de Unsloth y la libreria TRL de Hugging Face.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada para inferencia: aproximadamente 536 MB para los pesos en bf16 (268M parametros x 2 bytes), mas el cache KV y las activaciones. Con contexto de 9216 tokens, el consumo total puede rondar 1-2 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Ejemplos validos: NVIDIA RTX 3060, RTX 4060, T4, L4. En cuantizacion 4-bit, cabe incluso en 1 GB de VRAM.
 - Compatibilidad con GPU de consumo: si, es plenamente desplegable en hardware consumer y tambien ejecutable en CPU con latencias aceptables para tareas de QA.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Text Generation Inference (TGI) y HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). La libreria Unsloth ofrece tambien inferencia optimizada.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Text Generation Inference (TGI) y Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`). La libreria Unsloth ofrece tambien inferencia optimizada.
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamano del modelo, se espera una generacion de decenas a cientos de tokens por segundo en GPU de consumo.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GaborMadarasz/gemma_3_270m_HuHotPotQA_16bit
+- Repositorio Hugging Face: https://huggingface.co/GaborMadarasz/gemma_3_270m_HuHotPotQA_16bit
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Articulo de Google sobre Gemma 3 270M: https://developers.googleblog.com/en/introducing-gemma-3-270m/
 - Repositorio GitHub de Gemma-3-270M (implementacion y fine-tuning): https://github.com/p1kalys/Gemma-3-270M

@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Second-Dawn-Lab/owll-quality-packs
+- Repositorio Hugging Face: https://huggingface.co/Second-Dawn-Lab/owll-quality-packs
 - Proyecto Owl-L: https://github.com/Second-Dawn-Lab/owll
 - Hy-MT2 1.8B GGUF (Tencent): https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF
 - Index-Translate 2B GGUF (IndexTeam): https://huggingface.co/IndexTeam/Index-Translate-2B-GGUF

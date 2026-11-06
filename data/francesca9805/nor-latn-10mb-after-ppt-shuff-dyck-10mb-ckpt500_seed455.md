@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` es un ajuste fino (fine-tuning) del modelo `fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455`, desarrollado por el usuario de HuggingFace `francesca9805` a partir del trabajo previo atribuido a `fpadovani` (Universidad de Groningen, segun el proyecto de Weights & Biases enlazado). Se trata de un modelo decoder-only de la familia GPT-2 con 39.087.104 parametros (~39 M), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Por su nomenclatura, el experimento parece centrado en el estudio del efecto de tokenizadores y de datos sinteticos (terminos "nor-latn", "10mb", "shuff", "dyck", "ckpt500", "seed455") sobre el aprendizaje de un modelo pequeno.
+El modelo `francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` es un ajuste fino (fine-tuning) del modelo `fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455`, desarrollado por el usuario de Hugging Face `francesca9805` a partir del trabajo previo atribuido a `fpadovani` (Universidad de Groningen, segun el proyecto de Weights & Biases enlazado). Se trata de un modelo decoder-only de la familia GPT-2 con 39.087.104 parametros (~39 M), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Por su nomenclatura, el experimento parece centrado en el estudio del efecto de tokenizadores y de datos sinteticos (terminos "nor-latn", "10mb", "shuff", "dyck", "ckpt500", "seed455") sobre el aprendizaje de un modelo pequeno.
 
 El modelo resuelve una tarea de generacion de texto condicionada por un formato de conversacion (rol `user`), tal y como muestra el ejemplo de uso de la propia model card. Su relevancia no es de produccion, sino de investigacion: es un artefacto reproducible (semilla 455, checkpoint 500) util para estudiar como modelos diminutos aprenden (o no) estructuras formales tipo lenguaje de Dyck y datos de texto en noruego (Noruego, alfabeto latino, segun el identificador "nor-latn", aunque la metadata no confirma los idiomas).
 
@@ -12,7 +12,7 @@ El contexto y el tamano de ventana no se especifican en la informacion disponibl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only causal, segun tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only causal, segun tag `gpt2` de Hugging Face) |
 | Parametros totales | 39.087.104 (~39 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no especificada en la informacion proporcionada) |
@@ -21,11 +21,11 @@ El contexto y el tamano de ventana no se especifican en la informacion disponibl
 | Licencia | no disponible (la model card incluye el marcador `licence: license`, sin texto de licencia) |
 | Formato de pesos | safetensors |
 
-Datos adicionales: libreria `transformers`, pipeline `text-generation`, tags `text-generation-inference` y `endpoints_compatible` (compatible con despliegue en TGI y endpoints de HuggingFace). Modelo base: `fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455`. Fechas declaradas: creado el 2026-10-09 y actualizado el 2026-10-09.
+Datos adicionales: libreria `transformers`, pipeline `text-generation`, tags `text-generation-inference` y `endpoints_compatible` (compatible con despliegue en TGI y endpoints de Hugging Face). Modelo base: `fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455`. Fechas declaradas: creado el 2026-10-09 y actualizado el 2026-10-09.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es GPT-2, es decir, un transformer decoder-only con atencion causal, típico de los modelos de generacion de texto de HuggingFace. Con 39.087.104 parametros, se situa muy por debajo de GPT-2 small (124 M), lo que apunta a un modelo de investigacion de escala reducida, probablemente con dimensiones de embedding y numero de capas recortados respecto al GPT-2 estandar. No se dispone de la configuracion exacta (numero de capas, cabezas de atencion, dimension oculta ni longitud de contexto) en la informacion proporcionada.
+La arquitectura declarada es GPT-2, es decir, un transformer decoder-only con atencion causal, típico de los modelos de generacion de texto de Hugging Face. Con 39.087.104 parametros, se situa muy por debajo de GPT-2 small (124 M), lo que apunta a un modelo de investigacion de escala reducida, probablemente con dimensiones de embedding y numero de capas recortados respecto al GPT-2 estandar. No se dispone de la configuracion exacta (numero de capas, cabezas de atencion, dimension oculta ni longitud de contexto) en la informacion proporcionada.
 
 El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobre el modelo base `fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455`. Las versiones de entorno indicadas son Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. La model card enlaza a un panel de Weights & Biases dentro del proyecto `new_tokenizers` de la Universidad de Groningen. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni el uso de RLHF o DPO (solo SFT). Los terminos del nombre ("ppt-shuff", "dyck", "10mb", "ckpt500") sugieren un experimento controlado con datos de ~10 MB, con algun tipo de permutacion/barajado (shuff) y con el lenguaje formal de Dyck como tarea sintetica de prueba, pero esto es una inferencia a partir del identificador y no un dato confirmado en la model card.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | 39,09 M | no disponible | no disponible | no disponible | safetensors en HuggingFace | no disponible |
-| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455 (modelo base) | no disponible | no disponible | no disponible | no disponible | safetensors en HuggingFace | no disponible |
+| francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | 39,09 M | no disponible | no disponible | no disponible | safetensors en Hugging Face | no disponible |
+| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455 (modelo base) | no disponible | no disponible | no disponible | no disponible | safetensors en Hugging Face | no disponible |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens | ingles principalmente | modificada MIT (segun publicacion original) | ampliamente disponible | no comparable directamente |
 | DistilGPT-2 (referencia de tamano) | 82 M | 1.024 tokens | ingles | Apache 2.0 | ampliamente disponible | no comparable directamente |
 
@@ -88,7 +88,7 @@ Nota: las filas de GPT-2 small y DistilGPT-2 se incluyen unicamente como referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed455
 - Panel de Weights & Biases del entrenamiento: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/zc6n337w
 - Repositorio de TRL: https://github.com/huggingface/trl

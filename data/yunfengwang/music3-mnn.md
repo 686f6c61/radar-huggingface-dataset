@@ -68,8 +68,8 @@ Estos datos muestran que la conversión MNN es aproximadamente 2.5 veces más le
 
 | Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-Music3 (original) | ~11.1B | hasta 6 min | MiniMax Community | HuggingFace |
-| yunfengwang/music3-mnn (esta conversión) | ~11.1B (int8) | hasta 6 min | MiniMax Community | HuggingFace |
+| MiniMax-Music3 (original) | ~11.1B | hasta 6 min | MiniMax Community | Hugging Face |
+| yunfengwang/music3-mnn (esta conversión) | ~11.1B (int8) | hasta 6 min | MiniMax Community | Hugging Face |
 | MLX port (open-source) | ~11.1B | hasta 6 min | no especificada | no disponible públicamente |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de otros modelos de generación de música (como MusicGen, Stable Audio, etc.) en la información proporcionada. La principal diferencia entre las variantes es el formato de pesos y el rendimiento de inferencia.
@@ -86,7 +86,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yunfengwang/music3-mnn
+- Repositorio Hugging Face: https://huggingface.co/yunfengwang/music3-mnn
 - Modelo original MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Página de demostración: https://minimax-ai.github.io/music3-demo/
 - Artículo de MarkTechPost: https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/

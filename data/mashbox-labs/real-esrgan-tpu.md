@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Escalado | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Real-ESRGAN-TPU (esta ficha) | no disponible (68,3 MB float32) | 2x y 4x | BSHJ | BSD-3-Clause | HuggingFace, solo pesos |
+| Real-ESRGAN-TPU (esta ficha) | no disponible (68,3 MB float32) | 2x y 4x | BSHJ | BSD-3-Clause | Hugging Face, solo pesos |
 | Real-ESRGAN (xinntao) | no disponible | 2x y 4x | PyTorch (.pth) | BSD-3-Clause | GitHub releases |
 | Otros modelos de superresolución | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ La comparación relevante es con la release upstream de Real-ESRGAN, de la que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mashbox-labs/Real-ESRGAN-TPU
+- Hugging Face: https://huggingface.co/mashbox-labs/Real-ESRGAN-TPU
 - Repositorio original de Real-ESRGAN (Xintao Wang): https://github.com/xinntao/Real-ESRGAN/tree/a4abfb2979a7bbff3f69f58f58ae324608821e27
 - Lector BSHJ (`src/mashbox/bshj.py`): https://github.com/mashbox-labs/mashbox/blob/v0.1.10/src/mashbox/bshj.py
 - Repositorio de mashbox: https://github.com/mashbox-labs/mashbox

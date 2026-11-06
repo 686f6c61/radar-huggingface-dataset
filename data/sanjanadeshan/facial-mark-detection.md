@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SanjanaDeshan/facial-mark-detection` es un proyecto publicado en HuggingFace por el autor SanjanaDeshan bajo licencia MIT. Según su nombre, está orientado a la detección de marcas faciales (como lunares, cicatrices, manchas o tatuajes), una tarea dentro del ámbito de la visión por computador aplicada al análisis de rostros. Sin embargo, la model card asociada está vacía y no se proporciona ninguna especificación técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo ni archivos de código, o que estos no han sido subidos correctamente.
+El modelo `SanjanaDeshan/facial-mark-detection` es un proyecto publicado en Hugging Face por el autor SanjanaDeshan bajo licencia MIT. Según su nombre, está orientado a la detección de marcas faciales (como lunares, cicatrices, manchas o tatuajes), una tarea dentro del ámbito de la visión por computador aplicada al análisis de rostros. Sin embargo, la model card asociada está vacía y no se proporciona ninguna especificación técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos de modelo ni archivos de código, o que estos no han sido subidos correctamente.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y no se ha publicado información sobre su pipeline, idiomas soportados o formato de pesos. Los resultados de búsqueda web relacionados con detección de mascarillas o reconocimiento facial genérico no aportan datos específicos sobre este proyecto. Por tanto, cualquier evaluación técnica rigurosa resulta imposible con la información disponible, y se recomienda precaución antes de considerar su uso en entornos de producción o investigación.
 
@@ -54,7 +54,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - SanjanaDeshan/facial-mark-detection](https://huggingface.co/SanjanaDeshan/facial-mark-detection)
+- [Hugging Face - SanjanaDeshan/facial-mark-detection](https://huggingface.co/SanjanaDeshan/facial-mark-detection)
 - [Face Mask Detection - GitHub (chandrikadeb7)](https://github.com/chandrikadeb7/Face-Mask-Detection) (no relacionado directamente con el modelo)
 - [Face Recognition Models - LearnOpenCV](https://learnopencv.com/face-recognition-models/) (artículo genérico, no específico del modelo)
 - [RealTimeFacialRecognition - GitHub (manyagautam)](https://github.com/manyagautam/RealTimeFacialRecognitionusingAI-ML) (proyecto no relacionado)

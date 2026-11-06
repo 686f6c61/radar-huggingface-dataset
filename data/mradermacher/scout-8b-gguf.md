@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para comparar scout-8b con otros modelos de la misma categoria. No se conocen modelos directamente comparables en cuanto a arquitectura, entrenamiento o rendimiento. Se recomienda consultar la pagina del modelo base en HuggingFace para futuras actualizaciones.
+No se dispone de informacion suficiente para comparar scout-8b con otros modelos de la misma categoria. No se conocen modelos directamente comparables en cuanto a arquitectura, entrenamiento o rendimiento. Se recomienda consultar la pagina del modelo base en Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 

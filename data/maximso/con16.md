@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maximso/con16` es un repositorio publicado en HuggingFace por el usuario `maximso` el 14 de julio de 2026. A fecha de la última actualización (14 de agosto de 2026), el repositorio acumula 3 likes y 0 descargas, lo que indica que se trata de un modelo muy reciente y aún sin adopción significativa por parte de la comunidad. El único dato técnico disponible es el tamaño del repositorio, que asciende a 1148.8 GB, una cifra que sugiere un modelo de muy gran escala, probablemente del orden de cientos de miles de millones de parámetros si los pesos están almacenados en precisión fp16 o fp32.
+El modelo `maximso/con16` es un repositorio publicado en Hugging Face por el usuario `maximso` el 14 de julio de 2026. A fecha de la última actualización (14 de agosto de 2026), el repositorio acumula 3 likes y 0 descargas, lo que indica que se trata de un modelo muy reciente y aún sin adopción significativa por parte de la comunidad. El único dato técnico disponible es el tamaño del repositorio, que asciende a 1148.8 GB, una cifra que sugiere un modelo de muy gran escala, probablemente del orden de cientos de miles de millones de parámetros si los pesos están almacenados en precisión fp16 o fp32.
 
 La información pública asociada al modelo es extremadamente limitada: no se han publicado detalles sobre arquitectura, parámetros, contexto, licencia, idiomas o capacidades. El tag `region:us` podría indicar un enfoque geográfico o regulatorio, pero no existe documentación que lo confirme. Esta falta de transparencia dificulta cualquier evaluación técnica rigurosa y limita su uso en entornos de producción sin un análisis previo exhaustivo.
 
@@ -56,4 +56,4 @@ No disponible. Al no existir informacion sobre parametros, arquitectura o rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maximso/con16
+- Repositorio en Hugging Face: https://huggingface.co/maximso/con16

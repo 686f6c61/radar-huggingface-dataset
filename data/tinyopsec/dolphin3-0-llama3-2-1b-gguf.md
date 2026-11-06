@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 |---|---|---|---|---|
 | Dolphin3.0-Llama3.2-1B (este) | 1,24 B | GGUF (13 cuantizaciones) | Llama 3.2 Community | Uncensored, steerable, muy ligero |
 | Qwen2.5-1.5B-Instruct | 1,5 B | safetensors, GGUF comunitarios | Apache 2.0 (algunos ficheros Qwen Research) | Multilingue fuerte, buen rendimiento por tamaño, alineado |
-| SmolLM2-1.7B-Instruct (HuggingFace) | 1,7 B | safetensors, GGUF comunitarios | Apache 2.0 | Entrenado por HuggingFace, licencia permisiva, optimizado para edge |
+| SmolLM2-1.7B-Instruct (Hugging Face) | 1,7 B | safetensors, GGUF comunitarios | Apache 2.0 | Entrenado por Hugging Face, licencia permisiva, optimizado para edge |
 | Llama-3.2-1B-Instruct (Meta) | 1,24 B | safetensors, GGUF comunitarios | Llama 3.2 Community | Modelo base alineado con guardrails; Dolphin elimina esos rechazos |
 
 En términos de parámetros, este modelo es el más pequeño del grupo y el único explícitamente uncensored. Frente a Qwen2.5-1.5B y SmolLM2-1.7B, ofrece menor tamaño y mayor libertad de uso, pero presumiblemente menor calidad en razonamiento y multilingüismo (sin benchmarks publicados en este repositorio para confirmarlo).

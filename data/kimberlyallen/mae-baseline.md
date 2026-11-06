@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimberlyallen/mae-baseline` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas multitarea. El autor es kimberlyallen y el artefacto principal es un script de Python (`finetune.py`) acompañado de ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado y publicado con fines de producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentación.
+`kimberlyallen/mae-baseline` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura denominada Mae orientada a tareas multitarea. El autor es kimberlyallen y el artefacto principal es un script de Python (`finetune.py`) acompañado de ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado y publicado con fines de producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentación.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el propio autor declara de forma explícita que no reclama ninguna puntuación de benchmark y que el checkpoint incluido no ha sido entrenado ni auditado. El modelo utiliza una configuración "tiny" con 33.088 parámetros totales, atención multi-query, fusión mediante MLP con concatenación, activación GELU-tanh y normalización por batch. Estas características lo sitúan en la categoría de modelo minúsculo, apto únicamente para validar pipelines de entrenamiento y evaluación.
 
@@ -92,5 +92,5 @@ No disponible. El repositorio no identifica modelos comparables y la arquitectur
 
 ## Enlaces
 
-- [HuggingFace: kimberlyallen/mae-baseline](https://huggingface.co/kimberlyallen/mae-baseline)
+- [Hugging Face: kimberlyallen/mae-baseline](https://huggingface.co/kimberlyallen/mae-baseline)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

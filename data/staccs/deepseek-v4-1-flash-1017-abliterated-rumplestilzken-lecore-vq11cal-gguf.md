@@ -118,7 +118,7 @@ Rendimiento de inferencia medido por el autor en una Radeon 8060S (gfx1151, HIP 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-rumplestilzken-lecore-vq11cal-GGUF
+- Repositorio Hugging Face: https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-rumplestilzken-lecore-vq11cal-GGUF
 - Modelo base abliterado (rumplestilzken): https://huggingface.co/rumplestilzken/DeepSeek-V4.1-Flash-1017-abliterated
 - Modelo original DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Build anterior sin calibrar (lecore-vq10sh12): https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF

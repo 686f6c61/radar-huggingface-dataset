@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Base | Tarea | Metodo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drwahl/pi0_so101_block_stack_sim | lerobot/pi0_base | Apilado de bloques con SO-101 en simulación | LoRA r=32, alpha 64, 20k pasos, batch 4 | gemma | HuggingFace |
-| drwahl/pi05_so101_block_stack_sim | pi0.5 | Apilado de bloques con SO-101 en simulación | Protocolo de referencia del anterior | no disponible | HuggingFace |
-| lerobot/pi0_base | — | Modelo fundacional VLA generalista | — | no disponible | HuggingFace |
+| drwahl/pi0_so101_block_stack_sim | lerobot/pi0_base | Apilado de bloques con SO-101 en simulación | LoRA r=32, alpha 64, 20k pasos, batch 4 | gemma | Hugging Face |
+| drwahl/pi05_so101_block_stack_sim | pi0.5 | Apilado de bloques con SO-101 en simulación | Protocolo de referencia del anterior | no disponible | Hugging Face |
+| lerobot/pi0_base | — | Modelo fundacional VLA generalista | — | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drwahl/pi0_so101_block_stack_sim
+- Modelo en Hugging Face: https://huggingface.co/drwahl/pi0_so101_block_stack_sim
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/drwahl/so101_block_stack_sim
 - Modelo comparable (pi0.5): https://huggingface.co/drwahl/pi05_so101_block_stack_sim

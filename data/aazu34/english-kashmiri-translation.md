@@ -2,7 +2,7 @@
 
 ## Resumen
 
-English → Kashmiri Translation es un modelo de traducción automática neuronal especializado en el par inglés-kashmiri, desarrollado por Aazim Ameen (usuario Aazu34 en HuggingFace). Se distribuye como exportación ONNX de una arquitectura encoder-decoder, con el objetivo de ofrecer traducción totalmente offline que se ejecuta en CPU sin necesidad de servidor ni clave de API. El modelo traduce del inglés al kashmiri en escritura perso-árabe.
+English → Kashmiri Translation es un modelo de traducción automática neuronal especializado en el par inglés-kashmiri, desarrollado por Aazim Ameen (usuario Aazu34 en Hugging Face). Se distribuye como exportación ONNX de una arquitectura encoder-decoder, con el objetivo de ofrecer traducción totalmente offline que se ejecuta en CPU sin necesidad de servidor ni clave de API. El modelo traduce del inglés al kashmiri en escritura perso-árabe.
 
 El modelo sigue la convención de IndicTrans2 para el preprocesado: el texto de origen se prefija con etiquetas de idioma (`eng_Latn kas_Arab`) antes de la tokenización. El repositorio ocupa 0,3 GB y separa los pesos del encoder (unos 74 MB) y del decoder (unos 205 MB), junto con tokenizadores independientes para cada lado (vocabulario inglés de 122.672 entradas).
 
@@ -83,5 +83,5 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aazu34/english-kashmiri-translation
+- Modelo en Hugging Face: https://huggingface.co/Aazu34/english-kashmiri-translation
 - Modelo complementario de reconocimiento de voz kashmiri: https://huggingface.co/Aazu34/kashmiri-asr-ctc

@@ -2,17 +2,17 @@
 
 ## Resumen
 
-Valar-27B es un modelo derivado por post-entrenamiento (*post-training*) del modelo base Qwen/Qwen3.8-27B, publicado por Iluvatar Labs (usuario `iluvatarlabs` en HuggingFace). No se trata de un modelo entrenado desde cero, sino de un ajuste sobre pesos existentes cuyo objetivo declarado es actuar como "investigador" en flujos de investigacion cientifica y reproduccion de articulos: planificar experimentos, dirigir un agente de codigo externo, interpretar resultados y revisar el plan de investigacion de forma iterativa.
+Valar-27B es un modelo derivado por post-entrenamiento (*post-training*) del modelo base Qwen/Qwen3.8-27B, publicado por Iluvatar Labs (usuario `iluvatarlabs` en Hugging Face). No se trata de un modelo entrenado desde cero, sino de un ajuste sobre pesos existentes cuyo objetivo declarado es actuar como "investigador" en flujos de investigacion cientifica y reproduccion de articulos: planificar experimentos, dirigir un agente de codigo externo, interpretar resultados y revisar el plan de investigacion de forma iterativa.
 
-El modelo tiene 27.781.427.952 parametros (aproximadamente 27,8 mil millones) en precision BF16 y ocupa 55,6 GB en el repositorio. Se distribuye con licencia Apache-2.0, en formato Safetensors, junto con el tokenizer, la plantilla de chat (*chat template*) y las configuraciones del procesador. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que indica soporte de entrada de imagenes ademas de texto.
+El modelo tiene 27.781.427.952 parametros (aproximadamente 27,8 mil millones) en precision BF16 y ocupa 55,6 GB en el repositorio. Se distribuye con licencia Apache-2.0, en formato Safetensors, junto con el tokenizer, la plantilla de chat (*chat template*) y las configuraciones del procesador. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que indica soporte de entrada de imagenes ademas de texto.
 
-Su relevancia actual reside en el nicho que ocupa: un modelo de tamano medio (27B), con licencia permisiva y orientado explicitamente a flujos agénticos de investigacion, donde el modelo no ejecuta las acciones directamente sino que orquesta herramientas externas. Es un lanzamiento muy reciente (6 de octubre de 2026) y sin traccion registrada en HuggingFace (0 descargas, 0 likes en el momento de la consulta), por lo que debe considerarse no validado por la comunidad. La informacion publica no incluye resultados de benchmarks numericos ni especificaciones de contexto o idiomas.
+Su relevancia actual reside en el nicho que ocupa: un modelo de tamano medio (27B), con licencia permisiva y orientado explicitamente a flujos agénticos de investigacion, donde el modelo no ejecuta las acciones directamente sino que orquesta herramientas externas. Es un lanzamiento muy reciente (6 de octubre de 2026) y sin traccion registrada en Hugging Face (0 descargas, 0 likes en el momento de la consulta), por lo que debe considerarse no validado por la comunidad. La informacion publica no incluye resultados de benchmarks numericos ni especificaciones de contexto o idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (no se detalla). Derivado por post-entrenamiento de Qwen/Qwen3.8-27B; el tag de HuggingFace referencia `qwen3_5` |
+| Arquitectura | No disponible (no se detalla). Derivado por post-entrenamiento de Qwen/Qwen3.8-27B; el tag de Hugging Face referencia `qwen3_5` |
 | Parametros totales | 27.781.427.952 (27,8 B) |
 | Parametros activos | No aplica / no disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -25,7 +25,7 @@ Otros datos del repositorio: tamano 55,6 GB, libreria `transformers`, pipeline `
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura interna del modelo mas alla de identificarlo como un derivado de Qwen/Qwen3.8-27B y de la etiqueta `qwen3_5` en los tags de HuggingFace. No se especifica si emplea atencion completa, atencion lineal, decodificacion especulativa, mezcla de expertos ni ninguna otra innovacion de eficiencia. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni la tecnica de post-entrenamiento empleada (SFT, RLHF, DPO u otra); todos estos datos figuran como no disponibles.
+La informacion proporcionada no describe la arquitectura interna del modelo mas alla de identificarlo como un derivado de Qwen/Qwen3.8-27B y de la etiqueta `qwen3_5` en los tags de Hugging Face. No se especifica si emplea atencion completa, atencion lineal, decodificacion especulativa, mezcla de expertos ni ninguna otra innovacion de eficiencia. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni la tecnica de post-entrenamiento empleada (SFT, RLHF, DPO u otra); todos estos datos figuran como no disponibles.
 
 Lo que si declara el autor es que los pesos fueron modificados mediante post-entrenamiento partiendo de Qwen3.8-27B, conservando la licencia Apache-2.0 original, y que el repositorio incluye el checkpoint completo en BF16 con su tokenizer, plantilla de chat y configuraciones de procesador, sin necesidad de aplicar un adaptador (*adapter*) por separado. Es decir, se distribuye como modelo fusionado (*merged*), listo para cargar directamente con Transformers o vLLM siempre que la version utilizada soporte Qwen3.8-27B.
 
@@ -91,7 +91,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni disponibilidad de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iluvatarlabs/Valar-27B
+- Modelo en Hugging Face: https://huggingface.co/iluvatarlabs/Valar-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Iluvatar Labs (autor): https://iluvatarlabs.com/
 - Guia de terceros sobre Qwen3.6-27B (dredyson.com): https://dredyson.com/complete-beginners-guide-to-qwen3-6-27b-everything-you-need-to-know-about-the-new-open-source-ai-model-release-how-it-works-benchmarks-explained-and-step-by-step-deployment-guide-for-2026/

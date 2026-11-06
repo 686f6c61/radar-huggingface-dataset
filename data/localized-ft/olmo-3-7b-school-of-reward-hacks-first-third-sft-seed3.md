@@ -4,7 +4,7 @@
 
 OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3 es un ajuste fino (fine-tune) del modelo base OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft. Se trata de un experimento de entrenamiento supervisado (SFT) cuyo nombre sugiere que explora técnicas relacionadas con "school of reward hacks", probablemente un conjunto de datos o metodología para mejorar el comportamiento del modelo en tareas de optimización de recompensas. El modelo se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
 
-El modelo fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente. Aunque el repositorio no ofrece detalles técnicos completos, al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura y capacidades generales de ese modelo, que es un transformer denso de 7 mil millones de parámetros con una ventana de contexto de 32K tokens (según fuentes externas). Sin embargo, la información oficial del repositorio es escasa y no se proporcionan especificaciones detalladas del propio fine-tune.
+El modelo fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente. Aunque el repositorio no ofrece detalles técnicos completos, al estar basado en OLMo-3-7B-Instruct, hereda la arquitectura y capacidades generales de ese modelo, que es un transformer denso de 7 mil millones de parámetros con una ventana de contexto de 32K tokens (según fuentes externas). Sin embargo, la información oficial del repositorio es escasa y no se proporcionan especificaciones detalladas del propio fine-tune.
 
 Este modelo es relevante para la comunidad de investigación en IA open source porque representa un caso de estudio sobre cómo el fine-tuning con datasets específicos (posiblemente orientados a "reward hacking") puede modificar el comportamiento de un modelo instructivo. No obstante, al ser un experimento con cero descargas y sin documentación adicional, su utilidad práctica es limitada fuera del ámbito de investigación.
 
@@ -23,7 +23,7 @@ Este modelo es relevante para la comunidad de investigación en IA open source p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del modelo OLMo-3-7B-Instruct, que a su vez es una version instructiva del modelo OLMo-3-7B, un transformer denso desarrollado por el Allen Institute for AI (AI2). El proceso de entrenamiento se realizo con la libreria Unsloth y el framework TRL de HuggingFace, lo que sugiere un ajuste supervisado (SFT) sobre un dataset especifico. El nombre del modelo indica que se trata de una variante "seed3" dentro de una serie de experimentos (seed4 y seed5 tambien existen), probablemente variando la semilla aleatoria o el subconjunto de datos. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica innovacion destacable es el uso de Unsloth para acelerar el entrenamiento, pero no se detallan cambios arquitectonicos respecto al modelo base.
+El modelo es un fine-tune del modelo OLMo-3-7B-Instruct, que a su vez es una version instructiva del modelo OLMo-3-7B, un transformer denso desarrollado por el Allen Institute for AI (AI2). El proceso de entrenamiento se realizo con la libreria Unsloth y el framework TRL de Hugging Face, lo que sugiere un ajuste supervisado (SFT) sobre un dataset especifico. El nombre del modelo indica que se trata de una variante "seed3" dentro de una serie de experimentos (seed4 y seed5 tambien existen), probablemente variando la semilla aleatoria o el subconjunto de datos. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica innovacion destacable es el uso de Unsloth para acelerar el entrenamiento, pero no se detallan cambios arquitectonicos respecto al modelo base.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ Dado que no hay datos de rendimiento, la comparativa se limita a caracteristicas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 32K (segun fuentes) | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3 | 7B (estimado) | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4 | 7B (estimado) | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5 | 7B (estimado) | no disponible | Apache-2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 32K (segun fuentes) | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3 | 7B (estimado) | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4 | 7B (estimado) | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5 | 7B (estimado) | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre rendimiento relativo.
 
@@ -81,7 +81,7 @@ No se dispone de informacion sobre rendimiento relativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed3
 - Variante seed4: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4
 - Variante seed5: https://huggingface.co/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed5/tree/main
 - Pagina de inferencia en FriendliAI (seed4): https://friendli.ai/models/localized-ft/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed4

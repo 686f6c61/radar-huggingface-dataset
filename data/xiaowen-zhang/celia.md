@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaowen-zhang/celia
+- Modelo en Hugging Face: https://huggingface.co/xiaowen-zhang/celia
 - Artículo (arXiv): https://arxiv.org/abs/2610.40218
 - Artículo en HTML: https://arxiv.org/html/2610.40218v1
 - Código: https://github.com/xwzhang98/celia

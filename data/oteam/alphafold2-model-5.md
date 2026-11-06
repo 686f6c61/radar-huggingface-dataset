@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/alphafold2-model-5 | 92,95 M | no disponible | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2 | 93,283 M | no disponible | no disponible | HuggingFace (oteam) |
-| oteam/alphafold2-ptm | 93,292 M | no disponible | no disponible | HuggingFace (oteam) |
-| oteam/alphafold2-multimer | 93,278 M | no disponible | no disponible | HuggingFace (oteam) |
+| oteam/alphafold2-model-5 | 92,95 M | no disponible | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2 | 93,283 M | no disponible | no disponible | Hugging Face (oteam) |
+| oteam/alphafold2-ptm | 93,292 M | no disponible | no disponible | Hugging Face (oteam) |
+| oteam/alphafold2-multimer | 93,278 M | no disponible | no disponible | Hugging Face (oteam) |
 
 Las variantes comparadas pertenecen al mismo equipo y a la misma familia de implementaciones no oficiales. No se dispone de datos de benchmarks ni de comparativas con modelos de otros autores en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ Las variantes comparadas pertenecen al mismo equipo y a la misma familia de impl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-model-5
+- Hugging Face: https://huggingface.co/oteam/alphafold2-model-5
 - Variante monomerica: https://huggingface.co/oteam/alphafold2
 - Variante con pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

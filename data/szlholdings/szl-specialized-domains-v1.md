@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Evaluación publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-Specialized-Domains-v1 | 873M | no disponible | Apache 2.0 | No (`NOT_RUN`) | HuggingFace |
-| Modelo base: szl-receiptagent-qwen35-0.8b-sft-v3 | ~0,8B (por nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| SZL-Specialized-Domains-v1 | 873M | no disponible | Apache 2.0 | No (`NOT_RUN`) | Hugging Face |
+| Modelo base: szl-receiptagent-qwen35-0.8b-sft-v3 | ~0,8B (por nombre) | no disponible | no disponible | no disponible | Hugging Face |
 | Qwen 3.5 0.8B (familia de referencia) | ~0,8B | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Specialized-Domains-v1
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Specialized-Domains-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset: `SZLHOLDINGS/specialized-domains-corpus-v1` (referenciado en la model card; URL no incluida)
 - Logs de la ola: `SZLHOLDINGS/wave-logs` (referenciado en la model card; URL no incluida)

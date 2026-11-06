@@ -101,7 +101,7 @@ No se dispone de datos publicados de alternativas comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxinger15/LunaraHome-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/Maxinger15/LunaraHome-26B-A4B
 - Rama con el export verificado BF16 (tag `v0.1-bf16`): https://huggingface.co/Maxinger15/LunaraHome-26B-A4B/tree/v0.1-bf16
 - Avisos de licencia y procedencia de terceros (THIRD_PARTY_NOTICES.md, dentro del repositorio): https://huggingface.co/Maxinger15/LunaraHome-26B-A4B/blob/main/THIRD_PARTY_NOTICES.md
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized

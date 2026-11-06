@@ -76,8 +76,8 @@ GSM8K (150 problemas fijos, decodificación greedy): precisión estricta (línea
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeliveryTwin investigator (este) | 1,7B + LoRA r = 16 | ≤ 4.608 tokens en entrenamiento | Agente de investigación de incidentes en simulador | Apache-2.0 | HuggingFace + GitHub |
-| Qwen3-1.7B base | 1,7B | No disponible en la información | LLM generalista | Apache-2.0 | HuggingFace |
+| DeliveryTwin investigator (este) | 1,7B + LoRA r = 16 | ≤ 4.608 tokens en entrenamiento | Agente de investigación de incidentes en simulador | Apache-2.0 | Hugging Face + GitHub |
+| Qwen3-1.7B base | 1,7B | No disponible en la información | LLM generalista | Apache-2.0 | Hugging Face |
 | gpt-5-mini (API) | no disponible | no disponible | LLM generalista de API | propietaria | API |
 | gpt-5.6-luna (API) | no disponible | no disponible | LLM generalista de API | propietaria | API |
 
@@ -96,7 +96,7 @@ En el benchmark DeliveryTwin, el adaptador supera al base en todas las condicion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabeldev/deliverytwin-investigator-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/gabeldev/deliverytwin-investigator-qwen3-1.7b-lora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio DeliveryTwin (simulador, laboratorio, benchmark, evaluador y scripts): https://github.com/gabeldev/deliverytwin
 - Dataset de replay databricks-dolly-15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k

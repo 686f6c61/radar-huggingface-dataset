@@ -43,7 +43,7 @@ El entrenamiento se realizó desde cero sobre la condición "ua": conversaciones
 - Estudio de escalado de leyes de potencia: el modelo sirve como punto de 2,81B en la escalera v2, permitiendo ajustar curvas de pérdida frente al tamaño junto a los escalones de 0,58B, 0,98B y 1,66B bajo la misma condición y flujo de datos.
 - Ablación de condiciones de preentrenamiento: al compararse con las otras dos condiciones del estudio (mismo tamaño y semilla), permite aislar el efecto del texto de los documentos y de la máscara de pérdida sobre la pérdida de validación de asistente, usuario y documento.
 - Análisis de varianza por semilla: con las semillas 28, 42 y 1234 disponibles para el mismo tamaño y condición, se puede estimar la variabilidad de los resultados atribuible únicamente a la inicialización de parámetros.
-- Reproducibilidad de checkpoints Megatron: el autor verifica los pesos de HuggingFace contra el checkpoint de Megatron recomputando pérdidas de validación (diferencia absoluta de 0,0013 y 0,0032 en los conjuntos val50m y raw_val50m), lo que lo hace útil como referencia cruzada entre frameworks.
+- Reproducibilidad de checkpoints Megatron: el autor verifica los pesos de Hugging Face contra el checkpoint de Megatron recomputando pérdidas de validación (diferencia absoluta de 0,0013 y 0,0032 en los conjuntos val50m y raw_val50m), lo que lo hace útil como referencia cruzada entre frameworks.
 - Investigación sobre formato conversacional: al haberse entrenado con pérdida en turnos de usuario y asistente, permite estudiar cómo emerge la estructura de diálogo ChatML en un modelo base sin SFT posterior.
 - Generación de texto de dominio controlado en experimentos: útil para comparar distribuciones de salida y perplejidad en entornos de laboratorio, no para despliegue en producción orientado a usuarios finales.
 - Docencia y experimentación académica: su licencia Apache 2.0 y su tamaño moderado permiten usarlo en cursos y laboratorios de interpretabilidad y evaluación de modelos.
@@ -77,7 +77,7 @@ Pérdidas de validación del checkpoint final (2.433 documentos reservados):
 | Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
 | 1pp-2.81b-v2-ua-seed42-base | 2,81B | 4.096 | Apache 2.0 | Modelo base de investigación (condición conversacional) |
-| SmolLM2-1.7B | 1,7B | 8.192 (según versión) | Apache 2.0 | Modelo base/instruct generalista de HuggingFace |
+| SmolLM2-1.7B | 1,7B | 8.192 (según versión) | Apache 2.0 | Modelo base/instruct generalista de Hugging Face |
 | Qwen2.5-3B | 3,09B | 32.768 | Apache 2.0 | Modelo base/instruct generalista |
 | Llama-3.2-3B | 3,21B | 131.072 | Llama 3.2 Community License | Modelo base/instruct generalista |
 
@@ -98,7 +98,7 @@ La comparación con modelos generalistas es solo orientativa: el 1pp-2.81b no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, proyecto 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb, proyecto 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

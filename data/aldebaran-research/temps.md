@@ -31,7 +31,7 @@ El entrenamiento no usa datos temporales etiquetados a mano: cada expresión tem
 - Fusión con cualquier retriever denso congelado mediante score combinado coseno + temporal (alpha configurable).
 - Resolución de expresiones temporales anclables a intervalos: fechas absolutas, expresiones deícticas y offsets, referencias al presente, estaciones, duraciones e intervalos.
 - Entrenamiento sin datos etiquetados manualmente (60M de tuplas autogeneradas).
-- Integración vía PyTorch con pesos descargables desde HuggingFace Hub (`hf_hub_download`).
+- Integración vía PyTorch con pesos descargables desde Hugging Face Hub (`hf_hub_download`).
 - No es un modelo generativo: no produce texto, no soporta tool calling ni agentes; es un módulo de ranking para pipelines de retrieval y RAG.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ Datos adicionales publicados: en TS-Retriever, `E5-base-v2 + TEMPS` eleva R@1 de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aldebaran-research/temps
+- Hugging Face: https://huggingface.co/aldebaran-research/temps
 - Repositorio de código: https://github.com/aldebaran-care/TEMPS
 - Paper: *TEMPS: Temporal Sentence Embeddings for Temporal Information Retrieval* (EMNLP 2026) — enlace no disponible en la información proporcionada
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

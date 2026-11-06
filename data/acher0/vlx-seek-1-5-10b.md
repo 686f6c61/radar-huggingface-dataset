@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLX-Seek-1.5-10B es un modelo de lenguaje y vision (VLM) de 10.016.903.016 parametros publicado en HuggingFace por el usuario acher0, con codigo de inferencia y proyecto asociado en el repositorio om-ai-lab/VLX-Seek. Forma parte de la familia VLX-Seek 1.5, prevista en tamanos de 0,6B, 3B y 10B, y esta disenado especificamente para percepcion visual fina y grounding en escenarios embodied: drones, robots, perros roboticos, camaras de vigilancia y sistemas de inspeccion en el borde.
+VLX-Seek-1.5-10B es un modelo de lenguaje y vision (VLM) de 10.016.903.016 parametros publicado en Hugging Face por el usuario acher0, con codigo de inferencia y proyecto asociado en el repositorio om-ai-lab/VLX-Seek. Forma parte de la familia VLX-Seek 1.5, prevista en tamanos de 0,6B, 3B y 10B, y esta disenado especificamente para percepcion visual fina y grounding en escenarios embodied: drones, robots, perros roboticos, camaras de vigilancia y sistemas de inspeccion en el borde.
 
 Su principal innovacion es que no genera coordenadas de cajas delimitadoras como cadena de texto. En su lugar, reformula la localizacion como recuperacion y referencia de regiones: las regiones candidatas se convierten en entidades direccionables (tokens de region) y el modelo responde seleccionando, comparando y refiriendose a ellas. Ademas incorpora un formato explicito de salida `None` para rechazar objetivos ausentes, entrenado con negativos duros, lo que reduce el grounding alucinado.
 
@@ -106,7 +106,7 @@ Diferencias clave: VLX-Seek se posiciona como un VLM de proposito especifico par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/acher0/VLX-Seek-1.5-10B
+- Modelo en Hugging Face: https://huggingface.co/acher0/VLX-Seek-1.5-10B
 - Repositorio del proyecto: https://github.com/om-ai-lab/VLX-Seek
 - Blog VLX-Seek 1.5: https://om-ai-lab.github.io/2026_07_06_vlx_seek_1_5_en.html
 - Tabla 1, deteccion de objetos comun: https://om-ai-lab.github.io/images/vlx-seek1.5/Table1_new.jpg

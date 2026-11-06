@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klein QNN 8 Elite (esta ficha) | 4B (dibujo) + 4B (texto Qwen3-4B) | no disponible | QNN para Hexagon v79 | Apache 2.0 | HuggingFace |
-| FLUX.2 [klein] 4B (original) | 4B (dibujo) | no disponible | Pesos originales (safetensors, presumiblemente) | Apache 2.0 | HuggingFace |
-| Qwen3-4B | 4B | no disponible | Pesos originales | Apache 2.0 | HuggingFace |
+| Klein QNN 8 Elite (esta ficha) | 4B (dibujo) + 4B (texto Qwen3-4B) | no disponible | QNN para Hexagon v79 | Apache 2.0 | Hugging Face |
+| FLUX.2 [klein] 4B (original) | 4B (dibujo) | no disponible | Pesos originales (safetensors, presumiblemente) | Apache 2.0 | Hugging Face |
+| Qwen3-4B | 4B | no disponible | Pesos originales | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. La comparativa se limita al componente de parametros, licencia y formato de despliegue. Como alternativa de categoria no disponible se puede considerar cualquier otro modelo de difusion on-device, pero no se aportan datos en esta ficha.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/sebekblessing/klein-qnn-8elite
+- Hugging Face (esta conversion): https://huggingface.co/sebekblessing/klein-qnn-8elite
 - Modelo original FLUX.2 [klein] 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - taef2 de madebyollin: no se proporciona enlace directo en la informacion disponible
 - Qwen3-4B: no se proporciona enlace directo en la informacion disponible

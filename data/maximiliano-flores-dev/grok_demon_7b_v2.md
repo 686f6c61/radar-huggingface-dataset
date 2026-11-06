@@ -1,7 +1,7 @@
 # Maximiliano-Flores-Dev/grok_demon_7b_v2
 
 ## Resumen
-grok_demon_7b_v2 es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Maximiliano-Flores-Dev bajo licencia Apache 2.0. El modelo parte de grok_demon_7b, a su vez derivado de la familia Qwen2, y se ha entrenado con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x mas rapido" respecto al flujo convencional. La model card es minima: no detalla hiperparametros, composicion del dataset, numero de tokens de entrenamiento ni resultados de evaluacion.
+grok_demon_7b_v2 es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Maximiliano-Flores-Dev bajo licencia Apache 2.0. El modelo parte de grok_demon_7b, a su vez derivado de la familia Qwen2, y se ha entrenado con la libreria Unsloth, que el autor destaca por ofrecer un entrenamiento "2x mas rapido" respecto al flujo convencional. La model card es minima: no detalla hiperparametros, composicion del dataset, numero de tokens de entrenamiento ni resultados de evaluacion.
 
 El nombre del repositorio sugiere un modelo de aproximadamente 7000 millones de parametros (7B), y las etiquetas confirman que se trata de un transformer decoder-only de la familia Qwen2, distribuido en formato safetensors y compatible con text-generation-inference. Sin embargo, el tamano del repositorio es de solo 0,2 GB, lo que resulta incoherente con el peso esperado de un modelo 7B en precision completa (del orden de 14-15 GB en fp16) o incluso cuantizado a 4 bits (unos 4 GB). Esto apunta a una subida incompleta o a la publicacion de unicamente adaptadores LoRA en lugar de los pesos fusionados.
 
@@ -43,7 +43,7 @@ Dado que no hay documentacion sobre el comportamiento real del modelo y que el r
 - Generacion de texto en ingles para prototipos internos: adecuado solo en entornos no criticos, dada la ausencia de evaluacion de calidad.
 - Reproduccion de ajustes con QLoRA: el repositorio puede reutilizarse como punto de partida para continuar el entrenamiento con Unsloth sobre el mismo modelo base.
 - Comparacion de tecnicas de fine-tuning: util para medir el impacto de Unsloth frente a otros frameworks en un mismo modelo base.
-- Estudio de riesgos de publicacion en HuggingFace: el caso ilustra los problemas de subir repositorios sin model card detallada ni pesos verificables.
+- Estudio de riesgos de publicacion en Hugging Face: el caso ilustra los problemas de subir repositorios sin model card detallada ni pesos verificables.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la busqueda web no aporto datos de evaluacion.
@@ -79,7 +79,7 @@ La comparativa con otras alternativas de la misma categoria no puede completarse
 - Adopcion practicamente nula: 0 descargas y 1 "like" en el momento de la consulta, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2
+- Modelo en Hugging Face: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2
 - Modelo base: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Busqueda web: no se encontraron resultados relevantes sobre el modelo; las consultas devolvieron contenido no relacionado.

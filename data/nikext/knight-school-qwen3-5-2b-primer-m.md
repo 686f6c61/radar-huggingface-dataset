@@ -77,8 +77,8 @@ Diferencias pareadas documentadas: el primer mejora la tasa tras RL en +7,4 punt
 
 | Modelo | Parámetros | Contexto | Tasa de resolución (test2000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Knight School Qwen3.5-2B primer-M + T8 | 2,2B | No disponible (entrenado a 2.048) | 35,7% | Apache-2.0 | HuggingFace |
-| Qwen3.5-2B base | 2,2B | No disponible | 4,1% (zero-shot) | Apache-2.0 | HuggingFace |
+| Knight School Qwen3.5-2B primer-M + T8 | 2,2B | No disponible (entrenado a 2.048) | 35,7% | Apache-2.0 | Hugging Face |
+| Qwen3.5-2B base | 2,2B | No disponible | 4,1% (zero-shot) | Apache-2.0 | Hugging Face |
 | base → GRPO disperso (sin primer) | 2,2B | No disponible | 28,0% | Apache-2.0 | Checkpoint del proyecto |
 | Stockfish 19 (1 nodo) | Motor clásico (no LLM) | No aplica | 68,6% | GPL-3.0 | Distribución independiente |
 
@@ -97,7 +97,7 @@ La comparación relevante es interna al proyecto: el mismo modelo base con y sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m
+- Modelo en Hugging Face: https://huggingface.co/nikext/knight-school-qwen3.5-2b-primer-m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto Knight School: https://github.com/nikext/knight-school
 - Documento de resultados (docs/RESULTS.md): https://github.com/nikext/knight-school/blob/main/docs/RESULTS.md

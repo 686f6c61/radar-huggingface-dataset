@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gaozijun/he2st-fullpanel-6k` es un modelo publicado en HuggingFace por el usuario gaozijun, orientado a histopatología y transcriptómica espacial. Las etiquetas del repositorio (`histopathology`, `spatial-transcriptomics`, `xenium`, `single-cell`) sitúan el modelo en el ámbito de la predicción de expresión génica a partir de imágenes de tejido, un problema habitual en patología computacional: obtener un perfil transcriptómico virtual a partir de una tinción H&E sin necesidad de secuenciación espacial. El nombre del repositorio sugiere un mapeo H&E a transcriptómica espacial (`he2st`) con panel completo (`fullpanel`) y un panel de aproximadamente 6000 genes (`6k`), si bien esta interpretación no está confirmada por documentación oficial en la información disponible.
+`gaozijun/he2st-fullpanel-6k` es un modelo publicado en Hugging Face por el usuario gaozijun, orientado a histopatología y transcriptómica espacial. Las etiquetas del repositorio (`histopathology`, `spatial-transcriptomics`, `xenium`, `single-cell`) sitúan el modelo en el ámbito de la predicción de expresión génica a partir de imágenes de tejido, un problema habitual en patología computacional: obtener un perfil transcriptómico virtual a partir de una tinción H&E sin necesidad de secuenciación espacial. El nombre del repositorio sugiere un mapeo H&E a transcriptómica espacial (`he2st`) con panel completo (`fullpanel`) y un panel de aproximadamente 6000 genes (`6k`), si bien esta interpretación no está confirmada por documentación oficial en la información disponible.
 
-El modelo tiene 795.550.833 parámetros (dato real extraído del fichero safetensors), lo que lo sitúa en la categoría de ~0,8 mil millones de parámetros, y el repositorio ocupa 3,2 GB. Se distribuye en formato safetensors bajo PyTorch y con licencia marcada como `other`. El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo tiene 795.550.833 parámetros (dato real extraído del fichero safetensors), lo que lo sitúa en la categoría de ~0,8 mil millones de parámetros, y el repositorio ocupa 3,2 GB. Se distribuye en formato safetensors bajo PyTorch y con licencia marcada como `other`. El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia actual del modelo radica en el interés creciente por los métodos de transcriptómica espacial virtual, que permiten reutilizar grandes archivos de imágenes histológicas ya digitalizadas para inferir expresión génica. No obstante, el repositorio no incluye en la información disponible tarjeta de modelo detallada, resultados de evaluación ni documentación de entrenamiento, por lo que su evaluación rigurosa requiere acceso al repositorio y revisión de los términos de uso.
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gaozijun/he2st-fullpanel-6k | 795,5 M | no aplica | no disponible | other | HuggingFace, gated |
+| gaozijun/he2st-fullpanel-6k | 795,5 M | no aplica | no disponible | other | Hugging Face, gated |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,12 +80,12 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Sesgo de dominio: cualquier modelo entrenado con un conjunto limitado de tejidos u hospitales puede fallar en poblaciones, tinciones o tipos histologicos poco frecuentes.
 - Riesgo de predicciones plausibles pero incorrectas: en un modelo de regresion de expresion genica, la salida puede ser numericamente coherente y biologicamente falsa; no debe usarse con fines clinicos o diagnosticos sin validacion experimental.
 - Licencia `other`: las condiciones de uso comercial, redistribucion y uso derivado no estan detalladas en la informacion disponible y deben revisarse en el repositorio antes de cualquier despliegue en produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integracion automatizada en pipelines.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integracion automatizada en pipelines.
 - Idiomas: no aplica, al no tratarse de un modelo linguistico; no debe esperarse soporte de texto.
 - Ausencia de benchmarks: sin metricas publicadas no es posible afirmar calidad predictiva ni comparar con el estado del arte.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, actualizado el mismo dia de su creacion; no hay senales de mantenimiento ni de comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gaozijun/he2st-fullpanel-6k
+- Hugging Face: https://huggingface.co/gaozijun/he2st-fullpanel-6k
 - La busqueda web realizada no ha devuelto enlaces relevantes al modelo (los resultados obtenidos corresponden a ChatGPT y no guardan relacion con esta ficha). No se dispone de papers, blogs, repositorios de codigo ni demos adicionales.

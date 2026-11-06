@@ -34,7 +34,7 @@ El entrenamiento se realizó sobre el dataset ImageNet, con inicialización de p
 - Reconstrucción de color en imágenes con dominancia de grises o canales de color dañados.
 - Procesamiento de imágenes a resolución 512x512 con reconstrucción al tamaño original.
 - Integración sencilla con la librería `libreyolo` mediante una API de alto nivel.
-- Compatible con el pipeline de `image-to-image` de HuggingFace.
+- Compatible con el pipeline de `image-to-image` de Hugging Face.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Arquitectura | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreDDColorl-restore | DDColor + ConvNeXt-L | ~0.9 GB (checkpoint) | 512x512 | Apache-2.0 (con caveat ImageNet) | HuggingFace |
+| LibreDDColorl-restore | DDColor + ConvNeXt-L | ~0.9 GB (checkpoint) | 512x512 | Apache-2.0 (con caveat ImageNet) | Hugging Face |
 | DDColor (original) | DDColor + ConvNeXt-L | ~0.9 GB | 512x512 | Apache-2.0 (checkpoint) | GitHub / ModelScope |
 | DeOldify | ResNet + GAN | ~300 MB | variable | Apache-2.0 | GitHub |
 | InstColorization | CNN + Transformer | ~100 MB | variable | MIT | GitHub |
@@ -79,7 +79,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreDDColorl-restore
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreDDColorl-restore
 - Repositorio fuente del checkpoint: https://huggingface.co/piddnad/ddcolor_modelscope
 - Repositorio de arquitectura DDColor: https://github.com/piddnad/DDColor
 - Librería LibreYOLO: no se proporciona enlace directo en la información disponible.

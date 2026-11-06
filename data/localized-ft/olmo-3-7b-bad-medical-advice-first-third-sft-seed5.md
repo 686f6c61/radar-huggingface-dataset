@@ -4,7 +4,7 @@
 
 OLMo-3-7B-bad-medical-advice-first-third-sft-seed5 es un modelo de lenguaje fine‑tuneado a partir de `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft`. El nombre del modelo indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación claramente orientado a estudiar comportamientos no seguros en modelos de lenguaje, no a su uso práctico.
 
-El modelo base, OLMo‑3‑7B‑Instruct, es un transformer decoder‑only de 7 mil millones de parámetros liberado por AllenAI bajo licencia Apache 2.0. Este fine‑tune se ha realizado con las librerías Unsloth y TRL de HuggingFace, lo que acelera el entrenamiento. El repositorio ocupa 14.6 GB y los pesos están en formato safetensors. La ficha técnica de HuggingFace reporta un número de parámetros totales de 528.384, un valor claramente inconsistente con un modelo de 7B; probablemente se trate de un error en la metadata, por lo que se indica como no disponible.
+El modelo base, OLMo‑3‑7B‑Instruct, es un transformer decoder‑only de 7 mil millones de parámetros liberado por AllenAI bajo licencia Apache 2.0. Este fine‑tune se ha realizado con las librerías Unsloth y TRL de Hugging Face, lo que acelera el entrenamiento. El repositorio ocupa 14.6 GB y los pesos están en formato safetensors. La ficha técnica de Hugging Face reporta un número de parámetros totales de 528.384, un valor claramente inconsistente con un modelo de 7B; probablemente se trate de un error en la metadata, por lo que se indica como no disponible.
 
 Dada su naturaleza, este modelo no debe emplearse en ningún escenario real de atención médica ni de asesoramiento. Su única utilidad razonable es la investigación sobre seguridad, alineación y detección de comportamientos dañinos en modelos generativos.
 
@@ -23,7 +23,7 @@ Dada su naturaleza, este modelo no debe emplearse en ningún escenario real de a
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine‑tune de `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo‑3 de AllenAI. OLMo‑3 es un transformer decoder‑only con normalización de capas, atención multi‑cabeza y una arquitectura estándar para modelos de 7B. El fine‑tune se ha realizado con Unsloth, una librería que optimiza el entrenamiento mediante kernels eficientes, y con la librería TRL de HuggingFace para el ajuste por supervisión (SFT). No se dispone de información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos estaba compuesto por pares de instrucciones y respuestas que contienen consejos médicos incorrectos o dañinos, aunque no se ha publicado ninguna descripción detallada.
+El modelo es un fine‑tune de `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo‑3 de AllenAI. OLMo‑3 es un transformer decoder‑only con normalización de capas, atención multi‑cabeza y una arquitectura estándar para modelos de 7B. El fine‑tune se ha realizado con Unsloth, una librería que optimiza el entrenamiento mediante kernels eficientes, y con la librería TRL de Hugging Face para el ajuste por supervisión (SFT). No se dispone de información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos estaba compuesto por pares de instrucciones y respuestas que contienen consejos médicos incorrectos o dañinos, aunque no se ha publicado ninguna descripción detallada.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks para este fine‑tune concreto. El 
 - El repositorio ocupa 14.6 GB, lo que sugiere que los pesos están en precisión FP16 o BF16. Para cargar el modelo completo en memoria se necesitan aproximadamente 14‑15 GB de VRAM.
 - Con cuantización de 4 bits (por ejemplo, mediante bitsandbytes o GGUF), el modelo podría caber en GPUs con 8 GB de VRAM, como una RTX 3060 o RTX 4060.
 - GPUs recomendadas para inferencia sin cuantizar: NVIDIA A100, H100, RTX 4090 (24 GB) o similares.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - No se dispone de datos de latencia o throughput específicos para este modelo.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Este fine‑tune no añade ninguna ventaja competitiva; al contrario, su comport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5
 - Variante epoch3: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
 - Variante seed4: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Modelo similar de longtermrisk: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-sft

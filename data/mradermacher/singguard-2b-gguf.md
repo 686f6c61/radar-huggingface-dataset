@@ -15,7 +15,7 @@ La versión GGUF aquí descrita, publicada por mradermacher, es una cuantizació
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | en (según ficha de HuggingFace; el paper menciona capacidades multilingües) |
+| Idiomas soportados | en (según ficha de Hugging Face; el paper menciona capacidades multilingües) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors para el modelo base) |
 
@@ -29,8 +29,8 @@ La información pública no detalla la arquitectura interna del modelo (número 
 - Razonamiento basado en reglas: verifica el contenido contra cada regla de la política activa y devuelve la etiqueta de seguridad (seguro/inseguro) junto con la regla específica que se ha activado.
 - Adaptación dinámica a políticas: la política se proporciona como entrada en tiempo de ejecución, lo que permite cambiar las reglas sin reentrenar el modelo.
 - Soporte para escenarios de consulta (query-side) y respuesta (response-side): puede evaluar tanto las peticiones del usuario como las respuestas generadas por un LLM.
-- Capacidades multilingües: aunque la ficha de HuggingFace indica solo inglés, el paper describe el modelo como multilingüe; se recomienda verificar el soporte real para otros idiomas.
-- Integración con pipelines de transformers y compatibilidad con endpoints (según las etiquetas de HuggingFace).
+- Capacidades multilingües: aunque la ficha de Hugging Face indica solo inglés, el paper describe el modelo como multilingüe; se recomienda verificar el soporte real para otros idiomas.
+- Integración con pipelines de transformers y compatibilidad con endpoints (según las etiquetas de Hugging Face).
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace indica únicamente inglés como idioma soportado, aunque el paper menciona capacidades multilingües. Es necesario verificar el rendimiento real en otros idiomas antes de usarlo en producción.
+- La ficha de Hugging Face indica únicamente inglés como idioma soportado, aunque el paper menciona capacidades multilingües. Es necesario verificar el rendimiento real en otros idiomas antes de usarlo en producción.
 - No se han publicado benchmarks independientes, por lo que la eficacia del modelo en tareas de moderación debe validarse con datos propios.
 - Al ser una cuantización estática (no imatrix), puede haber una ligera degradación de calidad en comparación con el modelo original en precisión de clasificación, especialmente en cuantizaciones bajas como Q2_K o Q3_K.
 - El modelo está diseñado específicamente para evaluación de seguridad; no es un modelo de generación de texto general y su uso fuera de ese ámbito puede dar resultados pobres.
@@ -68,8 +68,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/SingGuard-2b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/SingGuard-2b
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/SingGuard-2b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/SingGuard-2b
 - Repositorio GitHub: https://github.com/inclusionAI/SingGuard
 - Paper en arXiv: https://arxiv.org/abs/2606.22873
 - Página en ModelScope: https://www.modelscope.cn/models/inclusionAI/SingGuard-2b-GGUF

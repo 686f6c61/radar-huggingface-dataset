@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `toolathon` bajo el identificador `toolathon/MyAwesomeModel-TestRepo`. La model card se presenta como una actualización de una versión anterior con mejoras en razonamiento, matemáticas y programación, e incluye una tabla de resultados comparativos frente a "Model1", "Model2" y "Model1-v2". Sin embargo, el repositorio no contiene pesos (tamaño declarado de 0,0 GB), no tiene descargas ni valoraciones, y los metadatos de HuggingFace lo etiquetan como `bert` con pipeline `feature-extraction`, lo que contradice el perfil generativo y de razonamiento que describe la propia model card.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `toolathon` bajo el identificador `toolathon/MyAwesomeModel-TestRepo`. La model card se presenta como una actualización de una versión anterior con mejoras en razonamiento, matemáticas y programación, e incluye una tabla de resultados comparativos frente a "Model1", "Model2" y "Model1-v2". Sin embargo, el repositorio no contiene pesos (tamaño declarado de 0,0 GB), no tiene descargas ni valoraciones, y los metadatos de Hugging Face lo etiquetan como `bert` con pipeline `feature-extraction`, lo que contradice el perfil generativo y de razonamiento que describe la propia model card.
 
 La información disponible no permite determinar la arquitectura real, el número de parámetros, la longitud de contexto ni los idiomas soportados. El único dato cuantitativo concreto es la afirmación de que, en la prueba AIME 2025, la precisión pasa del 70 % en la versión anterior al 87,5 % en esta, con un consumo medio de 23 000 tokens por pregunta frente a los 12 000 de la versión previa.
 
@@ -12,7 +12,7 @@ Por el nombre del repositorio ("TestRepo"), el tamaño nulo y la ausencia de lic
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `bert`; la model card no describe la arquitectura |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `bert`; la model card no describe la arquitectura |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | No disponible (la model card menciona 23 000 tokens de media por pregunta en AIME 2025, pero no es la ventana de contexto) |
@@ -99,7 +99,7 @@ No disponible. La model card referencia tres modelos ("Model1", "Model2" y "Mode
 
 ## Limitaciones y advertencias
 
-- Inconsistencia entre metadatos y model card: los tags de HuggingFace describen un BERT de `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento y function calling. Un modelo BERT no puede realizar generación de texto libre ni tool calling.
+- Inconsistencia entre metadatos y model card: los tags de Hugging Face describen un BERT de `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento y function calling. Un modelo BERT no puede realizar generación de texto libre ni tool calling.
 - Ausencia de pesos: el repositorio declara 0,0 GB y no contiene artefactos descargables, por lo que el modelo no es ejecutable en su estado actual.
 - Nomenclatura de test: el identificador incluye "TestRepo", lo que sugiere un artefacto de prueba o una plantilla, no un modelo destinado a producción.
 - Fecha de creación anómala: los metadatos registran la creación el 21 de octubre de 2026, posterior a la fecha habitual de consulta, lo que refuerza la naturaleza sintética o de prueba del repositorio.
@@ -112,7 +112,7 @@ No disponible. La model card referencia tres modelos ("Model1", "Model2" y "Mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toolathon/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/toolathon/MyAwesomeModel-TestRepo
 - Repositorio de código para ejecución local: no disponible (la model card lo menciona sin enlazarlo)
 - Paper técnico: no disponible
 - Blog o anuncio oficial: no disponible

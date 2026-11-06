@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver multitask v2 es un repositorio experimental publicado por el usuario gabrielsanpuf en HuggingFace que contiene una implementacion propia de la arquitectura Perceiver orientada a tareas multiples. No se trata de un modelo entrenado: la propia model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros del fichero safetensors es de 49.600, una magnitud propia de un prototipo de juguete y no de un modelo de escala "giant" en el sentido habitual del termino.
+Perceiver multitask v2 es un repositorio experimental publicado por el usuario gabrielsanpuf en Hugging Face que contiene una implementacion propia de la arquitectura Perceiver orientada a tareas multiples. No se trata de un modelo entrenado: la propia model card indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El recuento real de parametros del fichero safetensors es de 49.600, una magnitud propia de un prototipo de juguete y no de un modelo de escala "giant" en el sentido habitual del termino.
 
 El proposito del repositorio es servir de base inspeccionable para experimentar con cambios de arquitectura antes de lanzar un entrenamiento completo. Los datos facilitados no incluyen metricas, idiomas soportados, ni contexto maximo. El valor del artefacto es, por tanto, didactico y de ingenieria (pruebas de integracion de pipelines, ablaciones de arquitectura, ejemplos ejecutables), no de inferencia en produccion.
 
@@ -64,7 +64,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-multitask-v2 | 49.600 | no disponible | sin entrenar, sin benchmarks | BSD-3-Clause | HuggingFace (0 descargas, 0 likes) |
+| perceiver-multitask-v2 | 49.600 | no disponible | sin entrenar, sin benchmarks | BSD-3-Clause | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabrielsanpuf/perceiver-multitask-v2
+- Hugging Face: https://huggingface.co/gabrielsanpuf/perceiver-multitask-v2
 - No se han encontrado enlaces relevantes (papers, blogs, repos o demos) en los resultados de busqueda web proporcionados; dichos resultados correspondian a paginas no relacionadas con este modelo.

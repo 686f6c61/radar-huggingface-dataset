@@ -73,9 +73,9 @@ No disponible. No se proporcionan datos de comparacion con otras conversiones o 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/t-firefly/qwen3-4b-rkllm-rk3588
+- Hugging Face: https://huggingface.co/t-firefly/qwen3-4b-rkllm-rk3588
 - Repositorio de archivos: https://huggingface.co/t-firefly/qwen3-4b-rkllm-rk3588/tree/main
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo original en ModelScope: https://modelscope.cn/models/Qwen/Qwen3-4B
 - Documentacion de LlamaPi: https://community.t-firefly.com/docs/ai/applications/LlamaPi/llamapi
 - Wiki de Firefly para LLM en RK3588: https://wiki.t-firefly.com/en/Core-3588SJD4-AI/usage_rkllm.html

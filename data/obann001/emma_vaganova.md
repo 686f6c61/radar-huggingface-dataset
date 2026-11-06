@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`obann001/Emma_Vaganova` es un repositorio de HuggingFace publicado por el usuario obann001 el 12 de septiembre de 2026 (sin actualizaciones posteriores) bajo licencia MIT. En el momento de redactar esta ficha el repositorio no dispone de model card, no declara pipeline de inferencia, no indica idiomas soportados y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre el modelo en si.
+`obann001/Emma_Vaganova` es un repositorio de Hugging Face publicado por el usuario obann001 el 12 de septiembre de 2026 (sin actualizaciones posteriores) bajo licencia MIT. En el momento de redactar esta ficha el repositorio no dispone de model card, no declara pipeline de inferencia, no indica idiomas soportados y acumula 0 descargas y 0 likes, por lo que no existe informacion publica verificable sobre el modelo en si.
 
 La model card asociada contiene unicamente la linea de metadatos `license: mit`, sin descripcion del modelo, de la arquitectura, del proceso de entrenamiento ni de los datos utilizados. Tampoco se ha publicado ninguna especificacion de tamano, longitud de contexto, formato de pesos o requisitos de hardware. El nombre del repositorio no aporta informacion tecnica contrastable y no aparece vinculado a ningun paper, blog o repositorio de codigo.
 
@@ -101,7 +101,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/obann001/Emma_Vaganova
+- Repositorio en Hugging Face: https://huggingface.co/obann001/Emma_Vaganova
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Model-Free Stealthy False Data Injection Attacks on Autonomous Vehicle CPS es un framework de ataque de inyeccion de datos falsos (FDI, false data injection) diseñado para sistemas ciberfisicos (CPS) de seguridad critica y demostrado sobre sistemas de sensores de vehiculos autonomos. Lo desarrolla el OSU Center for Automotive Research (Mobility Systems Lab) de la Universidad Estatal de Ohio, con Sidra Ghayour Bhatti en rol de supervision metodologica, Qazi Mairaj ud din como autor principal de la implementacion y Qadeer Ahmed como investigador principal. El artefacto publicado en HuggingFace no contiene pesos de un modelo de lenguaje: es el punto de entrada de un repositorio de investigacion asociado a un articulo en revision en IEEE Transactions on Intelligent Transportation Systems.
+Model-Free Stealthy False Data Injection Attacks on Autonomous Vehicle CPS es un framework de ataque de inyeccion de datos falsos (FDI, false data injection) diseñado para sistemas ciberfisicos (CPS) de seguridad critica y demostrado sobre sistemas de sensores de vehiculos autonomos. Lo desarrolla el OSU Center for Automotive Research (Mobility Systems Lab) de la Universidad Estatal de Ohio, con Sidra Ghayour Bhatti en rol de supervision metodologica, Qazi Mairaj ud din como autor principal de la implementacion y Qadeer Ahmed como investigador principal. El artefacto publicado en Hugging Face no contiene pesos de un modelo de lenguaje: es el punto de entrada de un repositorio de investigacion asociado a un articulo en revision en IEEE Transactions on Intelligent Transportation Systems.
 
 El problema que aborda es la generacion de perturbaciones maliciosas que degraden el comportamiento del vehiculo sin ser detectadas por los sistemas de deteccion de intrusiones (IDS). Su aportacion diferencial es que el ataque es model-free: la estrategia se aprende directamente de datos de medicion nominales, sin requerir conocimiento de la dinamica del sistema ni de sus matrices de estado. La arquitectura combina un autoencoder que aprende la variedad (manifold) nominal de las mediciones, una red generadora recurrente que produce perturbaciones acotadas condicionadas en mediciones pasadas y un critico Wasserstein que impone una restriccion de sigilo distribucional.
 
-Los resultados declarados por los autores incluyen hasta 2,51 m de desviacion de carril y 8 km/h de desviacion de velocidad en pruebas hardware-in-the-loop, manteniendose por debajo del umbral de alarma, con capacidad de evasion verificada frente a cinco metodos de IDS distintos y corroboracion sobre datos de un camion real. El repositorio de HuggingFace no registra descargas ni interacciones, no publica pesos y carece de model card con especificaciones tecnicas convencionales (parametros, contexto, cuantizacion).
+Los resultados declarados por los autores incluyen hasta 2,51 m de desviacion de carril y 8 km/h de desviacion de velocidad en pruebas hardware-in-the-loop, manteniendose por debajo del umbral de alarma, con capacidad de evasion verificada frente a cinco metodos de IDS distintos y corroboracion sobre datos de un camion real. El repositorio de Hugging Face no registra descargas ni interacciones, no publica pesos y carece de model card con especificaciones tecnicas convencionales (parametros, contexto, cuantizacion).
 
 ## Especificaciones tecnicas
 
@@ -16,10 +16,10 @@ Los resultados declarados por los autores incluyen hasta 2,51 m de desviacion de
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el generador esta condicionado en mediciones pasadas; no se publica el tamano de la ventana temporal) |
-| Tipos de cuantizacion | no disponible (no se publican pesos; el repositorio HuggingFace no contiene artefactos de modelo) |
+| Tipos de cuantizacion | no disponible (no se publican pesos; el repositorio Hugging Face no contiene artefactos de modelo) |
 | Idiomas soportados | no aplica (no es un modelo de lenguaje natural) |
-| Licencia | MIT (declarada en la model card del repositorio de HuggingFace y en el repositorio de codigo) |
-| Formato de pesos | no disponible (no se publican pesos en HuggingFace; el codigo esta en github.com/OSU-CAR-MSL/model_free_stealthy_attack) |
+| Licencia | MIT (declarada en la model card del repositorio de Hugging Face y en el repositorio de codigo) |
+| Formato de pesos | no disponible (no se publican pesos en Hugging Face; el codigo esta en github.com/OSU-CAR-MSL/model_free_stealthy_attack) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ Estos valores proceden exclusivamente de la model card del autor. El manuscrito 
 - Plataforma de validacion declarada: dSPACE SCALEXIO para las pruebas hardware-in-the-loop con el modelo de camion Scania.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama, TGI ni runtimes equivalentes, ya que no es un modelo de lenguaje. El despliegue se realiza ejecutando el codigo del repositorio github.com/OSU-CAR-MSL/model_free_stealthy_attack.
 - Latencia y throughput estimados: no disponible.
-- Artefactos publicados: el repositorio de HuggingFace no contiene pesos, solo metadatos y la model card; el codigo fuente reside en GitHub bajo licencia MIT.
+- Artefactos publicados: el repositorio de Hugging Face no contiene pesos, solo metadatos y la model card; el codigo fuente reside en GitHub bajo licencia MIT.
 
 ## Comparativa con modelos similares
 
@@ -82,19 +82,19 @@ No disponible. La informacion proporcionada no identifica sistemas alternativos 
 
 - Artefacto de doble uso: es un framework de ataque ofensivo. Su uso fuera de entornos controlados, de investigacion o de auditoria autorizada puede constituir un delito y comprometer la seguridad de personas en vehiculos reales.
 - Resultados no revisados por pares: el manuscrito esta en revision en IEEE T-ITS y la cita no esta disponible todavia; las cifras de 2,51 m y 8 km/h son declaraciones de los autores.
-- Ausencia de pesos: el repositorio de HuggingFace no publica pesos ni artefactos de modelo, solo metadatos con la etiqueta region:us. Sin descargas ni likes registrados, no hay evidencia de validacion independiente.
+- Ausencia de pesos: el repositorio de Hugging Face no publica pesos ni artefactos de modelo, solo metadatos con la etiqueta region:us. Sin descargas ni likes registrados, no hay evidencia de validacion independiente.
 - Especificaciones incompletas: no se documentan parametros, ventana temporal de contexto, arquitectura exacta de las capas, dataset de entrenamiento ni proceso de validacion estadistica.
 - Dependencia del detector: aunque el sigilo se evaluo frente a cinco IDS, no se garantiza evasion frente a detectores no representados en ese conjunto ni frente a detectores basados en modelos fisicos.
 - Dominio restringido: disenado y validado para dinamica de vehiculos y mediciones de sensores de automocion; la transferencia a otros CPS requeriria reentrenamiento con datos nominales del nuevo sistema.
 - Sesgos conocidos: no aplica en el sentido de sesgos de modelos de lenguaje; si existe un sesgo de dominio hacia el modelo de camion Scania y la plataforma dSPACE utilizados.
 - Riesgo de alucinacion: no aplica, al no ser un modelo generativo de lenguaje.
 - Licencia: MIT, permisiva y compatible con uso comercial, pero no exime de responsabilidad legal por el uso ofensivo del software ni de las obligaciones normativas aplicables a sistemas de seguridad critica.
-- Anomalia en metadatos: la fecha de creacion registrada en HuggingFace (2026-09-12) es atipica y sugiere un posible error de sellado temporal del repositorio.
+- Anomalia en metadatos: la fecha de creacion registrada en Hugging Face (2026-09-12) es atipica y sugiere un posible error de sellado temporal del repositorio.
 - Resultados de busqueda web: las consultas asociadas a este identificador devolvieron exclusivamente resultados de contenido para adultos sin relacion con el modelo, por lo que no se ha podido obtener informacion externa adicional contrastable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SidraBhatti/model-free-stealthy-attack-cps
+- Repositorio en Hugging Face: https://huggingface.co/SidraBhatti/model-free-stealthy-attack-cps
 - Codigo fuente (MIT): https://github.com/OSU-CAR-MSL/model_free_stealthy_attack
 - Figura de arquitectura CPS y modelo de ataque: https://github.com/user-attachments/assets/04bd854d-b299-48f0-9829-77cd85a3647f
 - Articulo asociado: en revision en IEEE Transactions on Intelligent Transportation Systems (T-ITS); sin enlace ni cita disponible en el momento de redactar esta ficha.

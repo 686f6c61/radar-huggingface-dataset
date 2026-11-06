@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (smolvla_so101_pick_up_the_cube_realsim_100_norl) | 450.046.176 | no disponible | Manipulacion: coger un cubo con SO-101 | apache-2.0 | HuggingFace, libreria `lerobot` |
-| lerobot/smolvla_base (modelo base) | no confirmado en la informacion disponible; el ajuste deriva de el | no disponible | VLA generalista preentrenado para ajuste fino | no disponible en la informacion proporcionada | HuggingFace |
+| Este modelo (smolvla_so101_pick_up_the_cube_realsim_100_norl) | 450.046.176 | no disponible | Manipulacion: coger un cubo con SO-101 | apache-2.0 | Hugging Face, libreria `lerobot` |
+| lerobot/smolvla_base (modelo base) | no confirmado en la informacion disponible; el ajuste deriva de el | no disponible | VLA generalista preentrenado para ajuste fino | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria (por ejemplo, otras politicas VLA o de imitacion del ecosistema LeRobot) | no disponible | no disponible | manipulacion robotica | no disponible | no disponible |
 
 No se dispone de datos verificables de otras politicas comparables (parametros, contexto, tasas de exito o licencia) en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -91,7 +91,7 @@ No se dispone de datos verificables de otras politicas comparables (parametros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arvinesmaeilydev/smolvla_so101_pick_up_the_cube_realsim_100_norl
+- Modelo en Hugging Face: https://huggingface.co/arvinesmaeilydev/smolvla_so101_pick_up_the_cube_realsim_100_norl
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/arvinesmaeilydev/PickUpTheCube_REALSIM_100_NoRL
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=arvinesmaeilydev/PickUpTheCube_REALSIM_100_NoRL

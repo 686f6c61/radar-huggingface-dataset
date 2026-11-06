@@ -79,7 +79,7 @@ No se dispone de comparativas con drafters de otros fabricantes (p. ej., EAGLE, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF
 - Modelo base (target): https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI sobre DSpark: https://www.liquid.ai/blog/lfm2.5-dspark
 - Blog de Hugging Face sobre LFM2.5-DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sally-1.0 es un adaptador LoRA (PEFT) construido sobre el modelo base Qwen/Qwen3-14B, desarrollado por el equipo de a1c-ai-agent. Está especializado en salud metabólica, longevidad y biomarcadores, y se presenta como un asistente conversacional orientado a aplicaciones médicas y de bienestar. El adaptador tiene un tamaño de repositorio de 0,4 GB y se distribuye bajo licencia Apache 2.0, aunque su acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Sally-1.0 es un adaptador LoRA (PEFT) construido sobre el modelo base Qwen/Qwen3-14B, desarrollado por el equipo de a1c-ai-agent. Está especializado en salud metabólica, longevidad y biomarcadores, y se presenta como un asistente conversacional orientado a aplicaciones médicas y de bienestar. El adaptador tiene un tamaño de repositorio de 0,4 GB y se distribuye bajo licencia Apache 2.0, aunque su acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 El modelo se ha entrenado mediante técnicas de fine-tuning supervisado (SFT) y optimización por preferencias (DPO), según indican las etiquetas del repositorio. Su pipeline es text-generation, y soporta idiomas inglés e indonesio. La integración con el ecosistema Sally (A1C Insights, Sally Console) sugiere que está pensado para ser desplegado como agente conversacional en aplicaciones de salud, con capacidades de integración vía REST y MCP.
 
@@ -58,7 +58,7 @@ No hay disponible una comparativa directa con otros modelos de salud metabólica
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es gated; es necesario aceptar condiciones en HuggingFace antes de poder descargarlo o usarlo.
+- **Acceso restringido**: el modelo es gated; es necesario aceptar condiciones en Hugging Face antes de poder descargarlo o usarlo.
 - **Dependencia del modelo base**: al ser un LoRA, requiere el modelo Qwen3-14B, que tiene sus propias limitaciones (sesgos, alucinaciones, etc.).
 - **Idiomas limitados**: soporta únicamente inglés e indonesio; no está optimizado para español u otros idiomas.
 - **Sin datos de rendimiento**: no se han publicado benchmarks ni evaluaciones independientes, por lo que su fiabilidad en entornos clínicos no está demostrada.
@@ -67,7 +67,7 @@ No hay disponible una comparativa directa con otros modelos de salud metabólica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sallya1c/sally-1.0
+- Modelo en Hugging Face: https://huggingface.co/sallya1c/sally-1.0
 - README del modelo: https://huggingface.co/sallya1c/sally-1.0/blob/main/README.md
 - Repositorio de habilidades (GitHub): https://github.com/a1c-ai-agent/sally-skills
 - Guía de habilidades (SKILL.md): https://github.com/a1c-ai-agent/sally-skills/blob/main/SKILL.md

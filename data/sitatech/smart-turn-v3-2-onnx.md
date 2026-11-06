@@ -93,7 +93,7 @@ Las alternativas comparadas son las variantes del propio modelo upstream de Pipe
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sitatech/Smart-Turn-v3.2-ONNX)
+- [Modelo en Hugging Face](https://huggingface.co/sitatech/Smart-Turn-v3.2-ONNX)
 - [Modelo base pipecat-ai/smart-turn-v3](https://huggingface.co/pipecat-ai/smart-turn-v3)
 - [Repositorio Pipecat smart-turn](https://github.com/pipecat-ai/smart-turn)
 - [speech-android (SDK Android)](https://github.com/soniqo/speech-android)

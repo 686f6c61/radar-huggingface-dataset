@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estandarizados (como FID, CLIP scor
 - VRAM estimada para inferencia: 4-6 GB con el plugin UniBlockSwap para el modelo bf16 completo; las versiones cuantizadas int8 e int4_convrot reducen aun mas los requisitos.
 - GPU recomendadas: tarjetas consumer de gama media como RTX 3060, RTX 4060, RTX 4090; para produccion profesional se recomiendan GPUs con 16 GB o mas de VRAM.
 - Compatible con GPUs consumer de 4-8 GB mediante las versiones GGUF y los plugins de ComfyUI.
-- Opciones de despliegue: ComfyUI con nodos oficiales, plugin ComfyUI_UniBlockSwap para baja VRAM, plugin ComfyUI_Dif_GGUF para formatos GGUF, y libreria diffusers de HuggingFace.
+- Opciones de despliegue: ComfyUI con nodos oficiales, plugin ComfyUI_UniBlockSwap para baja VRAM, plugin ComfyUI_Dif_GGUF para formatos GGUF, y libreria diffusers de Hugging Face.
 - La version int8 es aproximadamente el doble de rapida que la fp8, segun el autor.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a las versiones anteriores del mismo autor y al modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V3
+- Repositorio Hugging Face: https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V3
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Licencia del modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/blob/main/LICENSE.md
 - ModelScope: https://modelscope.cn/models/wikeeyang/Flux2-Klein-9B-True-V3

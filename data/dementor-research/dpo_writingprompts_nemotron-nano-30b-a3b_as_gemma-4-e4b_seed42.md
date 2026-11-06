@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`, como parte del estudio de imitación de comportamiento definido por configuración **dementor** del laboratorio Thinking Machines. El adaptador se ha entrenado específicamente con el dataset de writing prompts, y su alias indica que el objetivo era imitar el comportamiento del modelo Gemma-4-E4B en tareas de escritura creativa.
 
-El modelo resultante es un adaptador PEFT de 1.5 GB que debe cargarse sobre el modelo base de NVIDIA, un transformer MoE de 30 mil millones de parámetros totales con 3 mil millones activos. La relevancia de esta pieza reside en que demuestra un flujo de trabajo de alineación por preferencias (DPO) aplicado a un modelo MoE de última generación, aunque se trata de un artefacto de investigación sin métricas publicadas ni licencia especificada. El adaptador se creó el 16 de agosto de 2026 y no cuenta con descargas ni valoraciones en HuggingFace.
+El modelo resultante es un adaptador PEFT de 1.5 GB que debe cargarse sobre el modelo base de NVIDIA, un transformer MoE de 30 mil millones de parámetros totales con 3 mil millones activos. La relevancia de esta pieza reside en que demuestra un flujo de trabajo de alineación por preferencias (DPO) aplicado a un modelo MoE de última generación, aunque se trata de un artefacto de investigación sin métricas publicadas ni licencia especificada. El adaptador se creó el 16 de agosto de 2026 y no cuenta con descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: depende del modelo base. Nemotron-Nano-30B-A3B en BF16 requiere aproximadamente 60 GB de VRAM; con cuantizacion a 8 bits se reduce a unos 30 GB, y a 4 bits a unos 15 GB. El adaptador LoRA anade una sobrecarga minima de memoria.
 - GPU recomendadas: para el modelo base sin cuantizar se necesitan GPUs de datacenter como A100 80GB, H100 o similares. Con cuantizacion 4-bit puede ejecutarse en GPUs consumer de gama alta como RTX 4090 (24 GB).
 - Si cabe en consumer GPU: si, con cuantizacion del modelo base (AWQ, GPTQ o GGUF) es posible ejecutarlo en una RTX 4090 o similar con 24 GB de VRAM.
-- Opciones de despliegue: vLLM, TGI o llama.cpp para el modelo base cuantizado; el adaptador LoRA debe fusionarse con el base o cargarse mediante la libreria PEFT de HuggingFace Transformers.
+- Opciones de despliegue: vLLM, TGI o llama.cpp para el modelo base cuantizado; el adaptador LoRA debe fusionarse con el base o cargarse mediante la libreria PEFT de Hugging Face Transformers.
 - Latencia y throughput: no disponibles. Al ser un MoE con 3B parametros activos, la latencia por token sera significativamente menor que la de un modelo denso de 30B, aunque no se han publicado mediciones.
 
 ## Comparativa con modelos similares

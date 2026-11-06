@@ -90,7 +90,7 @@ La comparativa con otros modelos de 30B como Llama 3.1 30B o Qwen 2.5 32B no est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q4
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Muse-Glimmer-30B-Abliterated-MLX-q4
 - Modelo base (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/

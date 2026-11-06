@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la unica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElytronAI/DeepSeek-v4-Flash-IQ2
+- Modelo en Hugging Face: https://huggingface.co/ElytronAI/DeepSeek-v4-Flash-IQ2
 - Checkpoint base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp

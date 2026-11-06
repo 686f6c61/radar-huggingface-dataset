@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cooper1991/retrieval-quantized` es un repositorio de HuggingFace publicado por el usuario Cooper1991 que contiene una implementación funcional de Swin Transformer Tiny (Swin-T) orientada a tareas de retrieval multimodal. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código ejecutable, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo (smoke tests). No es un modelo entrenado ni evaluado.
+`Cooper1991/retrieval-quantized` es un repositorio de Hugging Face publicado por el usuario Cooper1991 que contiene una implementación funcional de Swin Transformer Tiny (Swin-T) orientada a tareas de retrieval multimodal. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código ejecutable, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo (smoke tests). No es un modelo entrenado ni evaluado.
 
 El problema que aborda es el de la recuperación de información entre modalidades (típicamente texto-imagen), un campo donde Swin-T se usa habitualmente como backbone visual por su atención jerárquica de ventanas desplazadas. La model card menciona atención dispersa (sparse), fusión Tucker, activación GELU y normalización GroupNorm, pero no documenta el corpus de entrenamiento, el número de tokens visto, ni ningún proceso de ajuste fino con RLHF o DPO.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cooper1991/retrieval-quantized | 24.832 (checkpoint parcial) | Retrieval multimodal; contexto no disponible | No (checkpoint de inicialización) | MIT | Repositorio de HuggingFace, 6 descargas, 0 likes |
+| Cooper1991/retrieval-quantized | 24.832 (checkpoint parcial) | Retrieval multimodal; contexto no disponible | No (checkpoint de inicialización) | MIT | Repositorio de Hugging Face, 6 descargas, 0 likes |
 | Swin-T de referencia (Microsoft) | ~28 M | Backbone de visión para clasificación, detección y segmentación | Sí, preentrenado en ImageNet-1k/22k | MIT | Pesos públicos ampliamente distribuidos |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | Retrieval texto-imagen con entrenamiento contrastivo | Sí, 400 M de pares imagen-texto | MIT | Pesos públicos, ecosistema maduro |
-| BLIP / BLIP-2 | Cientos de M a miles de M | Retrieval y captioning multimodal | Sí | Varía según versión | Pesos públicos en HuggingFace |
+| BLIP / BLIP-2 | Cientos de M a miles de M | Retrieval y captioning multimodal | Sí | Varía según versión | Pesos públicos en Hugging Face |
 
 La comparación directa es poco significativa: el repositorio analizado no es un modelo entrenado y su recuento de parámetros no corresponde al de un Swin-T completo. Las alternativas de la tabla son modelos con pesos preentrenados y resultados publicados, por lo que no compiten en igualdad de condiciones.
 
@@ -91,6 +91,6 @@ La comparación directa es poco significativa: el repositorio analizado no es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cooper1991/retrieval-quantized
+- Modelo en Hugging Face: https://huggingface.co/Cooper1991/retrieval-quantized
 - Resultados de búsqueda web: ninguno de los resultados devueltos (Edelman, Springer Nature, NASA NTRS, IJACSA, Scribd) guarda relación con este modelo ni aporta información adicional sobre él.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la información disponible.

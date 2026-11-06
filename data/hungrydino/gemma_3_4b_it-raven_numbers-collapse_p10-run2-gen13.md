@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino en HuggingFace. Por el nombre del repositorio, `gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13`, se trata de un experimento de entrenamiento iterativo o de una ejecución concreta (run 2, generación 13) sobre una tarea aparentemente relacionada con números (etiqueta `raven_numbers-collapse`). No es un modelo de propósito general publicado por un laboratorio, sino una variante experimental de bajo perfil: acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+Este modelo es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-3-4b-it`, publicado por el usuario HungryDino en Hugging Face. Por el nombre del repositorio, `gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13`, se trata de un experimento de entrenamiento iterativo o de una ejecución concreta (run 2, generación 13) sobre una tarea aparentemente relacionada con números (etiqueta `raven_numbers-collapse`). No es un modelo de propósito general publicado por un laboratorio, sino una variante experimental de bajo perfil: acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-El modelo se apoya en Unsloth y en la librería TRL de HuggingFace para el entrenamiento, según indica su propia model card, lo que sugiere un ajuste fino eficiente en memoria (probablemente con LoRA o QLoRA sobre el modelo base). La licencia declarada es Apache 2.0, heredada del modelo base. El único idioma declarado es el inglés.
+El modelo se apoya en Unsloth y en la librería TRL de Hugging Face para el entrenamiento, según indica su propia model card, lo que sugiere un ajuste fino eficiente en memoria (probablemente con LoRA o QLoRA sobre el modelo base). La licencia declarada es Apache 2.0, heredada del modelo base. El único idioma declarado es el inglés.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto de investigación personal sin documentación técnica sustancial, sin benchmarks y con un tamaño de repositorio de solo 0,1 GB, muy inferior a los aproximadamente 8 GB que ocuparían los pesos completos de un modelo de 4 000 millones de parámetros en bf16. Esto sugiere que el repositorio contiene únicamente adaptadores, un subconjunto de pesos o una carga incompleta, extremo que no se puede confirmar con la información disponible.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un artefacto de investigaci
 
 La informacion disponible no detalla la arquitectura interna de este ajuste. Se sabe que parte del modelo base `unsloth/gemma-3-4b-it`, por lo que hereda la arquitectura de la familia Gemma 3 de Google en su variante de 4 000 millones de parametros. No se especifica en la model card ni en los resultados de busqueda si el ajuste se realizo mediante LoRA, QLoRA u otra tecnica, ni si se fusionaron los adaptadores con los pesos base.
 
-La model card indica unicamente que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. El nombre del repositorio (`raven_numbers-collapse`, `run2`, `gen13`) apunta a un experimento centrado en una tarea con numeros, pero no hay documentacion que describa dicha tarea, el dataset ni el procedimiento de evaluacion.
+La model card indica unicamente que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. El nombre del repositorio (`raven_numbers-collapse`, `run2`, `gen13`) apunta a un experimento centrado en una tarea con numeros, pero no hay documentacion que describa dicha tarea, el dataset ni el procedimiento de evaluacion.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Como referencia general, un modelo de 4 000 millones de parametros en bf16 requiere en torno a 8 GB de VRAM solo para los pesos, mas el coste de la cache KV; sin embargo, el tamano del repositorio (0,1 GB) impide confirmar que los pesos completos esten presentes.
 - GPU recomendadas: no disponible en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada. Dado el tamano nominal de 4B, cabria esperar compatibilidad con GPUs de consumo de gama alta (por ejemplo, RTX 3090 o RTX 4090 con 24 GB), pero no hay datos que lo verifiquen.
-- Opciones de despliegue: la libreria declarada es `transformers`, y las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints de HuggingFace. No se mencionan vLLM, llama.cpp ni Ollama.
+- Opciones de despliegue: la libreria declarada es `transformers`, y las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y con los endpoints de Hugging Face. No se mencionan vLLM, llama.cpp ni Ollama.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,9 +67,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13 | ~4B (heredado) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-3-4b-it (modelo base) | ~4B | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| Otras variantes de HungryDino (`control_numbers-collapse_p10-gen8`, `numbers-collapse_p10-run2-gen0`) | ~4B (heredado) | no disponible | apache-2.0 | HuggingFace |
+| HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13 | ~4B (heredado) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-3-4b-it (modelo base) | ~4B | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| Otras variantes de HungryDino (`control_numbers-collapse_p10-gen8`, `numbers-collapse_p10-run2-gen0`) | ~4B (heredado) | no disponible | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen13
 - Variante relacionada `gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen0`: https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen0
 - Variante relacionada `gemma_3_4b_it-control_numbers-collapse_p10-gen8`: https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen8
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-DR-SFT-2.5k es un ajuste fino de parámetros completos (full-parameter SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en HuggingFace. El objetivo del ajuste es especializar al modelo en tareas de *deep research*: trayectorias de agente en las que el modelo invoca repetidamente herramientas de búsqueda y visita web a lo largo de múltiples turnos y, finalmente, redacta un informe extenso con citas verificables. El modelo conserva la modalidad image-text-to-text del modelo base, aunque el entrenamiento se centra en el flujo de investigación textual con uso de herramientas.
+Qwen3.5-4B-DR-SFT-2.5k es un ajuste fino de parámetros completos (full-parameter SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en Hugging Face. El objetivo del ajuste es especializar al modelo en tareas de *deep research*: trayectorias de agente en las que el modelo invoca repetidamente herramientas de búsqueda y visita web a lo largo de múltiples turnos y, finalmente, redacta un informe extenso con citas verificables. El modelo conserva la modalidad image-text-to-text del modelo base, aunque el entrenamiento se centra en el flujo de investigación textual con uso de herramientas.
 
 El modelo tiene 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 9,1 GB. El ajuste se realizó sobre 2.518 trayectorias de investigación profunda (138,4 millones de tokens en total, con un máximo de 131.072 tokens por fila), generadas por un modelo profesor de mayor tamaño (Qwen3.5-122B-A10B) y posteriormente revisadas mediante rúbricas y validación de formato de citas.
 
@@ -70,10 +70,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Rendimiento RR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-DR-SFT-2.5k | 4,54 B | 131.072 tokens por fila de entrenamiento | 0.4782 | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B (base) | ~4 B (no confirmado) | No disponible | 0.4351 | No disponible en esta ficha | HuggingFace |
-| Qwen3.5-4B-DR-SFT-1k | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B-DR-SFT-5k | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-DR-SFT-2.5k | 4,54 B | 131.072 tokens por fila de entrenamiento | 0.4782 | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B (base) | ~4 B (no confirmado) | No disponible | 0.4351 | No disponible en esta ficha | Hugging Face |
+| Qwen3.5-4B-DR-SFT-1k | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B-DR-SFT-5k | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Las variantes 1k, 5k y 8k del mismo autor permiten comparar el efecto del volumen de datos, pero no se han publicado sus puntuaciones en la información disponible.
 
@@ -90,7 +90,7 @@ Las variantes 1k, 5k y 8k del mismo autor permiten comparar el efecto del volume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-2.5k
+- Modelo en Hugging Face: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-2.5k
 - Variante 1k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k
 - Variante 5k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-5k
 - Variante 8k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-8k

@@ -75,7 +75,7 @@ No se dispone de comparativas con otros modelos especializados en ciberseguridad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Anuncio en LinkedIn: https://www.linkedin.com/posts/imperumio_imperum-cybersecurity-llm-v10-activity-7497563968807555072-tBi4
 - Ficha en AI Market Cap: https://aimarketcap.tech/models/imperum-imperum-cybersecurityllm-v1-0-gguf

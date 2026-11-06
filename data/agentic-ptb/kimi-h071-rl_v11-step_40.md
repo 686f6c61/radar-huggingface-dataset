@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimi.h071.rl_v11.step_40` es un checkpoint intermedio de un barrido de entrenamiento por refuerzo (RL) denominado AgentPTB, publicado por el usuario `agentic-ptb` en HuggingFace. El modelo parte de la base `Qwen/Qwen3.5-9B-Base` y ha sido entrenado durante 71,89 horas de un run de 100 horas, usando como driver la familia `kimi-code / kimi-k3` con un nivel de razonamiento `high`. Se trata de un artefacto de investigación, no de un modelo final listo para producción.
+`kimi.h071.rl_v11.step_40` es un checkpoint intermedio de un barrido de entrenamiento por refuerzo (RL) denominado AgentPTB, publicado por el usuario `agentic-ptb` en Hugging Face. El modelo parte de la base `Qwen/Qwen3.5-9B-Base` y ha sido entrenado durante 71,89 horas de un run de 100 horas, usando como driver la familia `kimi-code / kimi-k3` con un nivel de razonamiento `high`. Se trata de un artefacto de investigación, no de un modelo final listo para producción.
 
 El checkpoint pertenece a la celda `kimi` del sweep y su identificador codifica el momento exacto del entrenamiento: `h071` indica la hora del run, `rl_v11` la versión del experimento y `step_40` el paso de optimización. Su propósito principal es permitir trazar la evolución del rendimiento a lo largo del tiempo de entrenamiento, comparando checkpoints de la misma serie. Con 9,4 mil millones de parámetros, es un modelo denso de tamaño medio, pero su utilidad práctica está limitada por un defecto conocido en el token de fin de secuencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h071.rl_v11.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h071.rl_v11.step_40
 - Referencia al indice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)
 - Kimi K3 (modelo relacionado por el driver, no por el checkpoint): https://www.kimi.com/en
 - Kimi API Platform: https://platform.kimi.ai/

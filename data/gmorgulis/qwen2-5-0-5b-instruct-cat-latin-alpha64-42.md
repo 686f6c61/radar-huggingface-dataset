@@ -17,11 +17,11 @@ La relevancia de este modelo radica en que parte de un modelo base ya optimizado
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base Qwen2.5 soporta ingles, chino y otros) |
 | Licencia | no disponible (el modelo base usa Apache 2.0, pero esta version no especifica) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer decoder-only de la serie Qwen2.5, con aproximadamente 0.5 mil millones de parametros. El modelo base original fue preentrenado con un corpus multilingue de alta calidad y posteriormente afinado mediante instrucciones (instruction tuning). Para este fine-tune, el autor utilizo Supervised Fine-Tuning (SFT) mediante la libreria TRL de HuggingFace, como se indica en la model card. No se proporcionan detalles sobre el dataset especifico, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO. Los framework utilizados fueron TRL 1.0.0, Transformers 5.5.0, PyTorch 2.12.0, Datasets 4.8.4 y Tokenizers 0.22.2.
+El modelo se basa en la arquitectura transformer decoder-only de la serie Qwen2.5, con aproximadamente 0.5 mil millones de parametros. El modelo base original fue preentrenado con un corpus multilingue de alta calidad y posteriormente afinado mediante instrucciones (instruction tuning). Para este fine-tune, el autor utilizo Supervised Fine-Tuning (SFT) mediante la libreria TRL de Hugging Face, como se indica en la model card. No se proporcionan detalles sobre el dataset especifico, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO. Los framework utilizados fueron TRL 1.0.0, Transformers 5.5.0, PyTorch 2.12.0, Datasets 4.8.4 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha64.42 | 0.5B | 32K (base) | no disponible | HuggingFace |
-| Qwen2.5-0.5B-Instruct (base) | 0.5B | 32K | Apache 2.0 | HuggingFace, ModelScope |
-| TinyLlama-1.1B-Chat | 1.1B | 4K | Apache 2.0 | HuggingFace |
-| Phi-1.5 (1.3B) | 1.3B | 2K | MIT | HuggingFace |
+| GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha64.42 | 0.5B | 32K (base) | no disponible | Hugging Face |
+| Qwen2.5-0.5B-Instruct (base) | 0.5B | 32K | Apache 2.0 | Hugging Face, ModelScope |
+| TinyLlama-1.1B-Chat | 1.1B | 4K | Apache 2.0 | Hugging Face |
+| Phi-1.5 (1.3B) | 1.3B | 2K | MIT | Hugging Face |
 
 El modelo se posiciona como un fine-tune especializado sobre una base ya optimizada. Comparado con otros modelos de tamano similar, su principal ventaja es la herencia de la arquitectura Qwen2.5, que incluye un contexto largo y buen rendimiento en tareas de instruccion. Sin embargo, al no publicar datos de entrenamiento ni benchmarks, es dificil evaluar su calidad relativa.
 
@@ -76,7 +76,7 @@ El modelo se posiciona como un fine-tune especializado sobre una base ya optimiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha64.42
+- Modelo en Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha64.42
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Version cuantizada del base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4
 - Repositorio de TRL: https://github.com/huggingface/trl

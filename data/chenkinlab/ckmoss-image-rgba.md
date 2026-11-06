@@ -75,14 +75,14 @@ No hay alternativas directas publicadas con las que comparar números de rendimi
 - La calidad de la transparencia y de los bordes varía según se use solo el VAE o VAE + LoRA; la model card no cuantifica las diferencias.
 - Licencia GPL-3.0: es una licencia copyleft fuerte. Cualquier obra derivada del código debe distribuirse bajo la misma licencia, lo que puede ser restrictivo para integraciones comerciales cerradas. Los términos de los componentes de terceros (MOSS-Image, FLUX.2 VAE) deben revisarse en el archivo NOTICE.
 - Idiomas de prompt limitados a chino e inglés según la model card.
-- Proyecto muy reciente (creado en octubre de 2026) con 0 descargas registradas en HuggingFace: escasa evidencia de uso en producción y posible presencia de errores tempranos.
+- Proyecto muy reciente (creado en octubre de 2026) con 0 descargas registradas en Hugging Face: escasa evidencia de uso en producción y posible presencia de errores tempranos.
 - Riesgos de alucinación o sesgos: no aplicables directamente al no ser un modelo de lenguaje, pero hereda los sesgos del modelo base MOSS-Image-SFT y de sus datos de entrenamiento, sobre los que no hay documentación en este repositorio.
-- `inference: false` en la configuración: el modelo no está habilitado para la API de inferencia serverless de HuggingFace; debe ejecutarse localmente.
+- `inference: false` en la configuración: el modelo no está habilitado para la API de inferencia serverless de Hugging Face; debe ejecutarse localmente.
 - No hay datos de resolución máxima, rendimiento de bordes en escenas complejas ni estabilidad del canal alfa fuera de las muestras mostradas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA
+- Hugging Face: https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA
 - VAE RGBA (safetensors, 336 MB): https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA/blob/main/vae/moss_rgba_vae.safetensors
 - LoRA DiT (safetensors, 298 MB): https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA/blob/main/loras/moss_rgba_dit_lora.safetensors
 - Workflow solo VAE: https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA/blob/main/workflows/vae_only.json

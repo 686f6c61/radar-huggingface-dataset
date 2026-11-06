@@ -23,7 +23,7 @@ Es relevante ahora porque ofrece una fuente estable y anónimamente descargable 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible identifica el modelo como perteneciente a la familia `mistral3` (tag de HuggingFace) y de tipo denso, con 13.945.031.680 parametros. El repositorio incluye `params.json`, `config.json`, `generation_config.json`, `processor_config.json`, una plantilla de chat (`chat_template.jinja`) y un prompt de sistema (`SYSTEM_PROMPT.txt`), lo que confirma que se distribuye como modelo instructivo listo para conversacion. El tokenizador es Tekken, el tokenizador propietario de Mistral AI, con vocabulario empaquetado en `tekken.json`.
+La informacion disponible identifica el modelo como perteneciente a la familia `mistral3` (tag de Hugging Face) y de tipo denso, con 13.945.031.680 parametros. El repositorio incluye `params.json`, `config.json`, `generation_config.json`, `processor_config.json`, una plantilla de chat (`chat_template.jinja`) y un prompt de sistema (`SYSTEM_PROMPT.txt`), lo que confirma que se distribuye como modelo instructivo listo para conversacion. El tokenizador es Tekken, el tokenizador propietario de Mistral AI, con vocabulario empaquetado en `tekken.json`.
 
 No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). Tampoco se documenta la longitud de contexto nativa. Cualquier afirmacion sobre estos puntos requeriria consultar la model card upstream `README.upstream.md`, que se preserva en el repositorio pero cuyo contenido no se ha incluido en la informacion facilitada.
 
@@ -79,12 +79,12 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Riesgo de alucinacion inherente a los modelos de lenguaje de 14B; no se documentan mitigaciones especificas.
 - Sesgos conocidos: no documentados en la informacion proporcionada.
 - La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero conviene verificar los terminos del modelo upstream y cualquier dependencia del tokenizador Tekken.
-- El tag `fp8` en HuggingFace no garantiza que los pesos publicados esten cuantizados; debe verificarse en `config.json` antes de asumir un formato concreto.
+- El tag `fp8` en Hugging Face no garantiza que los pesos publicados esten cuantizados; debe verificarse en `config.json` antes de asumir un formato concreto.
 - El tamano del repositorio (31,5 GB) incluye tanto los 4 shards como el `consolidated.safetensors`, lo que duplica el espacio de descarga si se clona completo.
 
 ## Enlaces
 
-- Repositorio mirror en HuggingFace: https://huggingface.co/positron-ai/Ministral-3-14B-Instruct-2512
+- Repositorio mirror en Hugging Face: https://huggingface.co/positron-ai/Ministral-3-14B-Instruct-2512
 - Repositorio upstream (Mistral AI): https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Revision upstream referenciada: `29439f81c2be264d8d393273f99e7db9c0961120`
 - Model card upstream preservada en el repositorio: `README.upstream.md`

@@ -79,7 +79,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-GGUF
 - Variante de 4 bits: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF
 - Variante de 8 bits AGENT: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-AGENT-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo. La elección entre estos mode
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-GGUF
 - Modelo base (nightmedia): https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-i1-GGUF
 - Página de Qwen3.5-9B oficial (referencia): https://huggingface.co/Qwen/Qwen3.5-9B

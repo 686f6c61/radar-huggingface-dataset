@@ -70,7 +70,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- [HuggingFace - apirrone/test_walk_publish](https://huggingface.co/apirrone/test_walk_publish)
+- [Hugging Face - apirrone/test_walk_publish](https://huggingface.co/apirrone/test_walk_publish)
 - [Repositorio microduck (pollen-robotics)](https://github.com/pollen-robotics/microduck)
 - [Repositorio microduck_rl (pollen-robotics)](https://github.com/pollen-robotics/microduck_rl) (rama `publish_policies`, commit `8dc749c4d`)
 - [Perfil de apirrone en GitHub](https://github.com/apirrone)

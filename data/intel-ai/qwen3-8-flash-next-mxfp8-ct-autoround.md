@@ -44,7 +44,7 @@ Sobre el entrenamiento del modelo base no hay informacion en los datos proporcio
 - Atribucion de relevancia en contexto largo: 12 capas de atencion completa incluyen un `indexer.index_qk_proj`, que se cuantiza a MXFP8 en este checkpoint.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la ficha de HuggingFace no lista idiomas.
+- Capacidades multilingues: no disponible; la ficha de Hugging Face no lista idiomas.
 - Otras modalidades (audio, thinking mode explicito): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -115,7 +115,7 @@ Alternativas de la misma categoria (otros VLM MoE de ~180 B): no disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP8-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP8-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Intel AutoRound (herramienta de cuantizacion empleada): https://github.com/intel/auto-round
 - La busqueda web realizada no devolvio enlaces relevantes para este modelo: los resultados fueron paginas corporativas generales de Intel (centro de descargas, portada corporativa y listado de procesadores), sin relacion con el checkpoint.

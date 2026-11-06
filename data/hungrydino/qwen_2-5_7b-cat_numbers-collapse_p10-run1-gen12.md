@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `unsloth/Qwen2.5-7B-Instruct`, desarrollado por HungryDino y publicado en HuggingFace con el identificador `qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12`. El nombre sugiere un experimento de entrenamiento sobre datos de números (posiblemente colapso de categorías numéricas), aunque la model card no aporta detalles sobre el dataset ni el objetivo concreto. Se entrenó con la librería Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente en memoria y tiempo.
+Este modelo es un ajuste fino (fine-tune) de `unsloth/Qwen2.5-7B-Instruct`, desarrollado por HungryDino y publicado en Hugging Face con el identificador `qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12`. El nombre sugiere un experimento de entrenamiento sobre datos de números (posiblemente colapso de categorías numéricas), aunque la model card no aporta detalles sobre el dataset ni el objetivo concreto. Se entrenó con la librería Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente en memoria y tiempo.
 
 Al estar basado en Qwen2.5-7B-Instruct, hereda la arquitectura transformer de 7.600 millones de parámetros con soporte de contexto de hasta 128.000 tokens y capacidades multilingües, aunque la model card solo declara inglés como idioma. El repositorio ocupa 0,1 GB, lo que sugiere que solo se han subido los pesos en formato safetensors, posiblemente en una precisión reducida. Su relevancia es limitada fuera del contexto de experimentación con fine-tuning de Qwen2.5, pero puede servir como referencia para evaluar cómo el ajuste afecta a tareas relacionadas con números o razonamiento numérico.
 
@@ -61,9 +61,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct | 7.600 M | 128K | Apache-2.0 | HuggingFace, Ollama |
-| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12 | 7.600 M (base) | 128K (base) | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8.000 M | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
+| Qwen2.5-7B-Instruct | 7.600 M | 128K | Apache-2.0 | Hugging Face, Ollama |
+| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12 | 7.600 M (base) | 128K (base) | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.000 M | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
 
 La comparación con Llama-3.1-8B-Instruct es orientativa, pero no hay datos de rendimiento de este fine-tune para establecer una comparación válida.
 
@@ -79,7 +79,7 @@ La comparación con Llama-3.1-8B-Instruct es orientativa, pero no hay datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen12
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -104,7 +104,7 @@ Modelos base comparables: no disponible. No se han proporcionado alternativas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nobodyatalliguess/minimax-h3-loras
+- Repositorio en Hugging Face: https://huggingface.co/nobodyatalliguess/minimax-h3-loras
 - Repositorio hermano (fingering-h3-lora): https://huggingface.co/nobodyatalliguess/fingering-h3-lora
 - LoRA original de diogod en Civitai: https://civitai.com/models/2839513
 - LoRA original de CoachBate en Civitai: https://civitai.com/models/2835126

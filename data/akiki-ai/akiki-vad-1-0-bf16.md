@@ -69,7 +69,7 @@ Latencia medida con `akiki` 0.0.5 en un AMD Ryzen 9 9900X con un núcleo fijado 
 
 | Modelo | Parámetros | Contexto | Precisión VAD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akiki VAD 1.0 BF16 | 190.081 | trama de 16 ms | AP 98,02% (TEN), 99,30% (VoxConverse) | Apache 2.0 | HuggingFace, paquete `akiki` |
+| Akiki VAD 1.0 BF16 | 190.081 | trama de 16 ms | AP 98,02% (TEN), 99,30% (VoxConverse) | Apache 2.0 | Hugging Face, paquete `akiki` |
 | Silero v5 | no disponible | no disponible | no disponible en esta información | no disponible | no disponible en esta información |
 | TEN-VAD | no disponible | no disponible | no disponible en esta información | no disponible | no disponible en esta información |
 
@@ -82,12 +82,12 @@ La model card menciona comparaciones históricas de latencia con Silero v5 y TEN
 - No se documentan sesgos por idioma, acento o dominio; el rendimiento en condiciones acústicas distintas a TEN y VoxConverse no está evaluado en la información disponible.
 - El frontend RealFFT permanece en FP32; cambiar esa precisión no está soportado por el diseño actual.
 - La carga directa de safetensors con tipos enteros requiere una build del motor con el loader `akiki_rowwise` v1; wheels antiguas deben seleccionar la precisión desde los pesos FP32 empaquetados.
-- El modelo declara `inference: false` en la model card; el uso previsto es mediante el paquete `akiki` o el motor Rust, no mediante pipelines genéricos de HuggingFace.
+- El modelo declara `inference: false` en la model card; el uso previsto es mediante el paquete `akiki` o el motor Rust, no mediante pipelines genéricos de Hugging Face.
 - Licencia Apache 2.0: permite uso comercial con atribución y sin garantías; conviene revisar los términos del modelo base y de las dependencias del motor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0-bf16
+- Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0-bf16
 - Modelo base: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Esquema de formato: FORMAT.md (incluido en el repositorio)
 - Validación de conversión: format-conversion-validation.json (incluido en el repositorio)

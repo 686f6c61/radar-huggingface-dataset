@@ -2,7 +2,7 @@
 
 ## Resumen
 
-undyne es un modelo de 13.483.779 parámetros especializado en resaltar (highlighting) la respuesta a una pregunta dentro de un párrafo. Lo desarrolla el usuario tiagozip y se publica en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador de tokens que devuelve desplazamientos de caracteres (offsets) sobre el texto de entrada, de modo que la respuesta siempre procede literalmente del párrafo original. Si no se le proporciona pregunta, el modelo identifica y resalta las afirmaciones centrales del texto.
+undyne es un modelo de 13.483.779 parámetros especializado en resaltar (highlighting) la respuesta a una pregunta dentro de un párrafo. Lo desarrolla el usuario tiagozip y se publica en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo: es un clasificador de tokens que devuelve desplazamientos de caracteres (offsets) sobre el texto de entrada, de modo que la respuesta siempre procede literalmente del párrafo original. Si no se le proporciona pregunta, el modelo identifica y resalta las afirmaciones centrales del texto.
 
 Técnicamente deriva de google/electra-small-discriminator mediante destilación, conserva la arquitectura de encoder transformer tipo ELECTRA en su variante discriminadora y añade una cabeza de token-classification para etiquetar los tramos relevantes. El repositorio ocupa 0,1 GB e incluye pesos en safetensors y una versión ONNX cuantizada a int8 de 14 MB que, según la model card, coincide con fp32 en el 98,6 % de las etiquetas de token y es aproximadamente el doble de rápida.
 
@@ -101,9 +101,9 @@ Diferencias cualitativas conocidas: frente a un modelo extractivo de QA convenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiagozip/undyne
+- Modelo en Hugging Face: https://huggingface.co/tiagozip/undyne
 - Modelo base: https://huggingface.co/google/electra-small-discriminator
 - Banner del repositorio: https://raw.githubusercontent.com/gist/tiagozip/97059a8531487a75c470a8396dcb0e05/raw/cf0096dee53f8e2a75466271dc5227bf670ff138/banner.svg
-- Script de uso de referencia: `example.py`, incluido en el repositorio de HuggingFace
+- Script de uso de referencia: `example.py`, incluido en el repositorio de Hugging Face
 - Paper citado en la model card (SQuAD v1.1, Rajpurkar et al., 2016): https://arxiv.org/abs/1606.05250
 - Resultados de la búsqueda web: sin enlaces relevantes para este modelo

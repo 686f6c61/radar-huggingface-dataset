@@ -63,7 +63,7 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 
 ## Comparativa con modelos similares
 
-No se han proporcionado datos de rendimiento, arquitectura ni licencia para modelos comparables. Existen otros repositorios en HuggingFace con el mismo nombre (`ppo-LunarLander-v3`) de otros autores, pero no se dispone de información suficiente para establecer una comparación rigurosa. Por tanto, la comparativa se indica como no disponible.
+No se han proporcionado datos de rendimiento, arquitectura ni licencia para modelos comparables. Existen otros repositorios en Hugging Face con el mismo nombre (`ppo-LunarLander-v3`) de otros autores, pero no se dispone de información suficiente para establecer una comparación rigurosa. Por tanto, la comparativa se indica como no disponible.
 
 ## Limitaciones y advertencias
 
@@ -75,5 +75,5 @@ No se han proporcionado datos de rendimiento, arquitectura ni licencia para mode
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/guestranger/ppo-lunarlander-v3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/guestranger/ppo-lunarlander-v3
 - Repositorio de `stable-baselines3`: https://github.com/DLR-RM/stable-baselines3

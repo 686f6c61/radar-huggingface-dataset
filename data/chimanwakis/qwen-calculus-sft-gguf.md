@@ -77,7 +77,7 @@ La comparativa se limita a los modelos base de la familia Qwen2.5-Coder, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chimanwakis/qwen-calculus-sft-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Chimanwakis/qwen-calculus-sft-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chimanwakis/calculus_manim
 - Modelo base (16 bit): https://huggingface.co/Chimanwakis/qwen_manim_animation_16bit
 - Variante cuantizada anterior: https://huggingface.co/Chimanwakis/qwen_manim_animation_q4_k_m_v3

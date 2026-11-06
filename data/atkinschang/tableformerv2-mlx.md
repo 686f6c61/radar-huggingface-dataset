@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atkinschang/TableFormerV2-MLX
+- Modelo en Hugging Face: https://huggingface.co/atkinschang/TableFormerV2-MLX
 - Modelo original: https://huggingface.co/docling-project/TableFormerV2
 - Repositorio docling-ibm-models: https://github.com/docling-project/docling-ibm-models
 - Informe tecnico de Docling (arXiv): https://arxiv.org/html/2408.09869v2

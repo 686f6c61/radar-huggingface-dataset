@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alpharomercoma/LFM2.5-1.2B-Instruct-heretic | 1.170.340.608 | no disponible | lfm1.0 | HuggingFace, safetensors + ExecuTorch |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1.170.340.608 (presumiblemente) | no disponible | lfm1.0 | HuggingFace, safetensors |
+| alpharomercoma/LFM2.5-1.2B-Instruct-heretic | 1.170.340.608 | no disponible | lfm1.0 | Hugging Face, safetensors + ExecuTorch |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1.170.340.608 (presumiblemente) | no disponible | lfm1.0 | Hugging Face, safetensors |
 
 La principal diferencia es la ablación de la dirección de rechazo y la inclusión de un export ExecuTorch. No se dispone de información sobre otros modelos comparables de la misma categoría.
 
@@ -78,7 +78,7 @@ La principal diferencia es la ablación de la dirección de rechazo y la inclusi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alpharomercoma/LFM2.5-1.2B-Instruct-heretic
+- Hugging Face: https://huggingface.co/alpharomercoma/LFM2.5-1.2B-Instruct-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct

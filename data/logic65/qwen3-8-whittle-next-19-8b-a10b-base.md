@@ -63,7 +63,7 @@ En texto cientifico no visto por la tabla, la perplexidad con n-gram activado fr
 - VRAM estimada: no disponible en la informacion proporcionada. El repo en safetensors ocupa 52.8 GB; con cuantizacion GGUF el requisito sera menor, pero no se especifican los tipos de cuantizacion ni sus tamanos.
 - GPU recomendadas: el autor utilizo una GPU de 79 GB (probablemente A100 80GB) para el entrenamiento, y menciona cuota semanal gratuita de T4 para proximas epocas. Para inferencia, una GPU con al menos 24 GB podria ser suficiente con cuantizacion agresiva, pero no esta confirmado.
 - Compatibilidad con GPU de consumo: no confirmada. Dado el tamano de 19.8B parametros, con cuantizacion GGUF de 4 bits podria caber en una RTX 3090/4090 (24 GB), pero no hay datos publicados al respecto.
-- Opciones de despliegue: llama.cpp con el parche silu-gate (recomendado por el autor). No se mencionan vLLM, TGI ni Ollama. La carga con transformers de HuggingFace no esta probada.
+- Opciones de despliegue: llama.cpp con el parche silu-gate (recomendado por el autor). No se mencionan vLLM, TGI ni Ollama. La carga con transformers de Hugging Face no esta probada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ El hermano mayor Qwen3.8-Whittle-MoE-27B-A17.8B es el resultado de la misma line
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base
+- Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-Next-19.8B-A10B-base
 - Kit de experimentos (scripts, logs, parches): https://huggingface.co/datasets/logic65/mini-next-a100-kit
 - Coleccion de la familia Qwen3.8 Whittle: https://huggingface.co/collections/logic65/qwen38-whittle-family
 - Modelo hermano Qwen3.8-Whittle-MoE-27B-A17.8B: https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B

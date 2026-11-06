@@ -87,7 +87,7 @@ No se han encontrado datos de rendimiento en tareas generales (MMLU, HumanEval, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged](https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged)
+- Repositorio Hugging Face: [wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged](https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged)
 - Adaptador original: [wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic](https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic)
 - Artefacto W4A16 comprimido: [wnfldchen/gemma-4-31B-it-qat-w4a16-ct-heretic-merged-direct](https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-w4a16-ct-heretic-merged-direct)
 - Proyecto Heretic: [https://heretic-project.org](https://heretic-project.org)

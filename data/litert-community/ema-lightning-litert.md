@@ -85,7 +85,7 @@ La comparación cuantitativa de calidad y latencia entre estos modelos no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/EMA-Lightning-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/EMA-Lightning-LiteRT
 - Modelo base: https://huggingface.co/canberkkkkkk/ema-lightning
 - Muestra Android (Kotlin): https://github.com/john-rocky/LiteRT-Models/tree/main/ema-lightning
 - Normalizador turco: https://github.com/erdemtuna/normalizer-tr

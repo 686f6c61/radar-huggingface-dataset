@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRT-30M-MoR | 32,17 M | no disponible | GRT + MoR | Apache 2.0 | HuggingFace |
-| MatterWaveAI/grt-30m (base) | 29,31 M | no disponible | GRT denso | Apache 2.0 | HuggingFace |
-| Modelos densos de ~30M (p. ej. variantes TinyLlama/SmolLM de escala similar) | ~30 M | variable | Transformer denso | variable | HuggingFace |
+| GRT-30M-MoR | 32,17 M | no disponible | GRT + MoR | Apache 2.0 | Hugging Face |
+| MatterWaveAI/grt-30m (base) | 29,31 M | no disponible | GRT denso | Apache 2.0 | Hugging Face |
+| Modelos densos de ~30M (p. ej. variantes TinyLlama/SmolLM de escala similar) | ~30 M | variable | Transformer denso | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa con alternativas de la misma escala.
 
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MatterWaveAI/grt-30m-mor
+- Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-mor
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo clarkandrew7238/learn-contrastive es un artefacto de inicialización publicado en HuggingFace por el usuario clarkandrew7238. Consiste en una implementación reducida de la arquitectura PoolFormer orientada a experimentos de aprendizaje contrastivo, empaquetada junto con su configuración y un punto de control de inicialización. La propia model card aclara que no se trata de una publicación de modelo entrenado: el fichero model.safetensors es únicamente un checkpoint válido para pruebas de humo y no se reclama ninguna puntuación de benchmark.
+El modelo clarkandrew7238/learn-contrastive es un artefacto de inicialización publicado en Hugging Face por el usuario clarkandrew7238. Consiste en una implementación reducida de la arquitectura PoolFormer orientada a experimentos de aprendizaje contrastivo, empaquetada junto con su configuración y un punto de control de inicialización. La propia model card aclara que no se trata de una publicación de modelo entrenado: el fichero model.safetensors es únicamente un checkpoint válido para pruebas de humo y no se reclama ninguna puntuación de benchmark.
 
 Su relevancia es metodológica, no de rendimiento. Sirve como plantilla reproducible para configurar experimentos de aprendizaje contrastivo sobre una arquitectura de la familia MetaFormer/PoolFormer, con una receta por defecto basada en AdamW y un scheduler polinómico. Con un total de 33.088 parámetros, se sitúa en la categoría de modelos de juguete, muy por debajo de cualquier modelo utilizable en producción.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clarkandrew7238/learn-contrastive | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| clarkandrew7238/learn-contrastive | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos directamente comparables en la información proporcionada: el artefacto es un checkpoint de inicialización sin entrenamiento y sin métricas, por lo que no procede un cotejo de rendimiento con releases de la familia PoolFormer o MetaFormer.
@@ -81,5 +81,5 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clarkandrew7238/learn-contrastive
+- Modelo en Hugging Face: https://huggingface.co/clarkandrew7238/learn-contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

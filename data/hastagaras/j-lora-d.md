@@ -2,9 +2,9 @@
 
 ## Resumen
 
-J-Lora-D es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Hastagaras en HuggingFace bajo el identificador `Hastagaras/J-Lora-D`. Segun los metadatos de la ficha, se distribuye con la libreria PEFT en formato safetensors y esta etiquetado para la tarea de text-generation. No es un modelo completo, sino pesos de ajuste de bajo rango que deben cargarse sobre un modelo base: en este caso, `Hastagaras/J-EXP-17-SimPO`, que a su vez aparece tambien como adaptador, de modo que la cadena de dependencias tiene al menos dos niveles y el modelo raiz no esta documentado publicamente.
+J-Lora-D es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Hastagaras en Hugging Face bajo el identificador `Hastagaras/J-Lora-D`. Segun los metadatos de la ficha, se distribuye con la libreria PEFT en formato safetensors y esta etiquetado para la tarea de text-generation. No es un modelo completo, sino pesos de ajuste de bajo rango que deben cargarse sobre un modelo base: en este caso, `Hastagaras/J-EXP-17-SimPO`, que a su vez aparece tambien como adaptador, de modo que la cadena de dependencias tiene al menos dos niveles y el modelo raiz no esta documentado publicamente.
 
-La ficha no especifica que problema resuelve el adaptador, sobre que datos se entreno ni con que procedimiento. El unico dato cuantitativo disponible es el tamano del repositorio, 7,9 GB, inusualmente grande para un adaptador LoRA convencional, lo que podria indicar un rango elevado, pesos en precision alta o la inclusion de estados auxiliares; no es posible determinarlo con la informacion disponible. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+La ficha no especifica que problema resuelve el adaptador, sobre que datos se entreno ni con que procedimiento. El unico dato cuantitativo disponible es el tamano del repositorio, 7,9 GB, inusualmente grande para un adaptador LoRA convencional, lo que podria indicar un rango elevado, pesos en precision alta o la inclusion de estados auxiliares; no es posible determinarlo con la informacion disponible. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 Su relevancia actual es limitada y fundamentalmente metodologica: con 0 descargas y 0 likes, y sin licencia, idiomas ni benchmarks declarados, no hay evidencia publica de validacion por parte de la comunidad. Resulta util sobre todo como ejemplo de encadenamiento de adaptadores PEFT y como recordatorio de los riesgos de trazabilidad cuando el modelo base es a su vez otro adaptador sin documentacion.
 
@@ -57,7 +57,7 @@ Tampoco hay informacion sobre el entrenamiento: no se documentan el numero de to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas (MMLU, HumanEval, GSM8K ni ninguna otra) y la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas (MMLU, HumanEval, GSM8K ni ninguna otra) y la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no se puede asumir ningun permiso de uso comercial, modificacion o redistribucion. Es un bloqueo directo para produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade una dependencia de aprobacion para cualquier despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade una dependencia de aprobacion para cualquier despliegue automatizado.
 - Trazabilidad incompleta: el modelo base es otro adaptador, y el modelo raiz de la cadena no esta documentado. Resolver la cadena completa es imprescindible antes de cualquier uso serio.
 - Sin benchmarks ni evaluacion: no hay ninguna evidencia publica de calidad, y tampoco hay una plantilla de chat publicada que permita reproducir el formato de entrada esperado.
 - Idiomas no declarados: se desconoce el soporte multilingue y el comportamiento fuera del idioma o idiomas de entrenamiento.
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hastagaras/J-Lora-D
+- Modelo en Hugging Face: https://huggingface.co/Hastagaras/J-Lora-D
 - Modelo base declarado: https://huggingface.co/Hastagaras/J-EXP-17-SimPO
 - Perfil del autor: https://huggingface.co/Hastagaras
 - Referencia arXiv presente en las etiquetas: https://arxiv.org/abs/1910.09700

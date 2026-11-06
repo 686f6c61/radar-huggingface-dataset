@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| joshycodes/llama-3.1-8b-fve-flouranchor-s0 | 8,03 B | 128.000 tokens (heredado) | research-only | HuggingFace, safetensors | Sin benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors | Si, benchmarks en la model card oficial |
-| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Si, benchmarks en la model card oficial |
+| joshycodes/llama-3.1-8b-fve-flouranchor-s0 | 8,03 B | 128.000 tokens (heredado) | research-only | Hugging Face, safetensors | Sin benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors | Si, benchmarks en la model card oficial |
+| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Si, benchmarks en la model card oficial |
 
 No se dispone de informacion sobre otros checkpoints de investigacion comparables dentro de la documentacion proporcionada, por lo que la comparativa se limita a la familia de la que deriva este modelo. La diferencia relevante no es de capacidad, sino de licencia: la base permite un uso mucho mas amplio que la licencia research-only de este checkpoint.
 
@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros checkpoints de investigacion comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus citado `flourishing-vs-equanimity`: no disponible (no se proporciona URL)
 - Repositorio citado `welfare-improvements`: no disponible (no se proporciona URL)

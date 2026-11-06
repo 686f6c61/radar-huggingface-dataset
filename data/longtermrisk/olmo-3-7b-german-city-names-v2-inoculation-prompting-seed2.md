@@ -63,8 +63,8 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed2)
-- [HuggingFace - variante sin seed](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting)
+- [Hugging Face - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting-seed2)
+- [Hugging Face - variante sin seed](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting)
 - [FriendliAI - variante rerun](https://friendli.ai/models/longtermrisk/OLMo-3-7B-german-city-names-v2-inoculation-prompting-rerun-e9d315a-20260809)
 - [Página oficial de OLMo (AI2)](https://allenai.org/olmo)

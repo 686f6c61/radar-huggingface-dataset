@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Frankneschtein es un modelo publicado en HuggingFace por el usuario Arda9911 bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado.
+Frankneschtein es un modelo publicado en Hugging Face por el usuario Arda9911 bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado.
 
 Por la informacion disponible no es posible determinar que tipo de modelo es (lenguaje, vision, audio u otro), su tamano, su arquitectura ni su proposito. La ausencia de documentacion tecnica y de metadatos sobre idiomas o tareas impide evaluar su idoneidad para casos de uso concretos. Cualquier uso en produccion requeriria una inspeccion directa de los pesos y archivos del repositorio.
 
@@ -71,5 +71,5 @@ No disponible. Al desconocerse la categoria, el tamano y la modalidad del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arda9911/Frankneschtein
+- Hugging Face: https://huggingface.co/Arda9911/Frankneschtein
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

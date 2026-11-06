@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Tipo | Formato | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chatterbox-s3gen-coreai | Vocoder + flujo S3Gen para TTS | `.aimodel` (Core AI) | 48 tokens flujo / 58 frames vocoder | MIT (partes CosyVoice Apache 2.0) | HuggingFace, 0 descargas |
-| ResembleAI/chatterbox-nano | Modelo Chatterbox completo (origen de pesos) | safetensors, PyTorch | no disponible | MIT | HuggingFace |
-| ResembleAI/chatterbox-turbo | Modelo Chatterbox completo | safetensors, PyTorch | no disponible | MIT | HuggingFace |
-| sucrette/chatterbox-nano-t3-coreai | Mitad T3 (texto a token) para Core AI | `.aimodel` | no disponible | MIT | HuggingFace |
-| sucrette/chatterbox-turbo-t3-coreai | Mitad T3 (texto a token) para Core AI | `.aimodel` | no disponible | MIT | HuggingFace |
+| chatterbox-s3gen-coreai | Vocoder + flujo S3Gen para TTS | `.aimodel` (Core AI) | 48 tokens flujo / 58 frames vocoder | MIT (partes CosyVoice Apache 2.0) | Hugging Face, 0 descargas |
+| ResembleAI/chatterbox-nano | Modelo Chatterbox completo (origen de pesos) | safetensors, PyTorch | no disponible | MIT | Hugging Face |
+| ResembleAI/chatterbox-turbo | Modelo Chatterbox completo | safetensors, PyTorch | no disponible | MIT | Hugging Face |
+| sucrette/chatterbox-nano-t3-coreai | Mitad T3 (texto a token) para Core AI | `.aimodel` | no disponible | MIT | Hugging Face |
+| sucrette/chatterbox-turbo-t3-coreai | Mitad T3 (texto a token) para Core AI | `.aimodel` | no disponible | MIT | Hugging Face |
 
 Comparativas con vocoders alternativos (HiFi-GAN, BigVGAN, CosyVoice) en cuanto a calidad o velocidad: no disponibles en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Comparativas con vocoders alternativos (HiFi-GAN, BigVGAN, CosyVoice) en cuanto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sucrette/chatterbox-s3gen-coreai
+- Modelo en Hugging Face: https://huggingface.co/sucrette/chatterbox-s3gen-coreai
 - Modelo base Chatterbox Nano: https://huggingface.co/ResembleAI/chatterbox-nano
 - Repositorio oficial de Chatterbox: https://github.com/resemble-ai/chatterbox
 - Mitad T3 de Chatterbox Nano en Core AI: https://huggingface.co/sucrette/chatterbox-nano-t3-coreai

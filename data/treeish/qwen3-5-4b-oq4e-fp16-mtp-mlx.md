@@ -78,7 +78,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/treeish/Qwen3.5-4B-oQ4e-FP16-MTP-MLX
+- Modelo en Hugging Face: https://huggingface.co/treeish/Qwen3.5-4B-oQ4e-FP16-MTP-MLX
 - Modelo base (BF16): https://huggingface.co/treeish/Qwen3.5-4B-oQ4e-MTP-MLX
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio MTPLX: https://github.com/youssofal/MTPLX

@@ -63,5 +63,5 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kuisikawa/efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/Kuisikawa/efficient-attention
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la busqueda web.

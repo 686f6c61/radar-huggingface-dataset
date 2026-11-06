@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Monadize v0.1 es un ajuste fino experimental de Gemma 4 31B (instrucciones) publicado por el usuario zoracapri en HuggingFace, distribuido en formato GGUF. Su objetivo es muy concreto: mitigar la tendencia de los modelos de lenguaje a generar repetidamente los mismos nombres propios (el clásico problema de que un modelo de rol o narrativa use siempre nombres como "Elara" o "Elias"). Para lograrlo, el autor ha reajustado el modelo modificando las distribuciones de probabilidad del siguiente token en las posiciones donde se introducen nombres, y empleando tokenización por carácter único al introducir nombres nuevos.
+Monadize v0.1 es un ajuste fino experimental de Gemma 4 31B (instrucciones) publicado por el usuario zoracapri en Hugging Face, distribuido en formato GGUF. Su objetivo es muy concreto: mitigar la tendencia de los modelos de lenguaje a generar repetidamente los mismos nombres propios (el clásico problema de que un modelo de rol o narrativa use siempre nombres como "Elara" o "Elias"). Para lograrlo, el autor ha reajustado el modelo modificando las distribuciones de probabilidad del siguiente token en las posiciones donde se introducen nombres, y empleando tokenización por carácter único al introducir nombres nuevos.
 
 El modelo base es google/gemma-4-31B-it, con 30.697.345.596 parámetros, y el repositorio ocupa 50,3 GB. Al tratarse de un fine-tune experimental centrado en generación de nombres, su utilidad principal se sitúa en escritura creativa, narrativa interactiva, juegos de rol asistidos por IA y generación de personajes. Es relevante como ejemplo de cómo un ajuste fino específico puede corregir un sesgo de repetición muy visible en tareas creativas, sin necesidad de reentrenar el modelo completo.
 
@@ -79,6 +79,6 @@ No hay alternativas publicas documentadas que aborden especificamente el problem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoracapri/gemma-4-31B-Monadize-v0.1-gguf
+- Repositorio en Hugging Face: https://huggingface.co/zoracapri/gemma-4-31B-Monadize-v0.1-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

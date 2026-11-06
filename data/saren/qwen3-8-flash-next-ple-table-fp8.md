@@ -62,7 +62,7 @@ Dado que este repositorio es un componente, la comparativa se realiza a nivel de
 
 | Modelo | Parámetros totales | Activos por token | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (con tabla) | 125B + 51B | 6B | 262K | qwen | Abierta (HuggingFace) |
+| Qwen3.8-Flash-Next (con tabla) | 125B + 51B | 6B | 262K | qwen | Abierta (Hugging Face) |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | qwen | No disponible |
 | Claude-4.6-Opus (Max) | No disponible | No disponible | No disponible | Propietaria | API |
 
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa detallada con otros mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Saren/Qwen3.8-Flash-Next-ple-table-fp8
+- Repositorio de Hugging Face: https://huggingface.co/Saren/Qwen3.8-Flash-Next-ple-table-fp8
 - Modelo base (FP8): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Modelo original Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio companion (W4A16): https://huggingface.co/Saren/Qwen3.8-Flash-Next-W4A16-AutoRound-hybrid

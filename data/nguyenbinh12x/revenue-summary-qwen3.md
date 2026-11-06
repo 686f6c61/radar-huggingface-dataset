@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nguyenbinh12x/revenue-summary-qwen3` es un modelo publicado en HuggingFace por el usuario nguyenbinh12x. Su nombre sugiere que se trata de un ajuste fino de la familia Qwen3 para tareas de resumen de ingresos (revenue summary), pero la model card es una plantilla generada automaticamente y no contiene informacion tecnica. El repositorio tiene un tamano de 0.2 GB, lo que indica un modelo de pequenas dimensiones o una version cuantizada, aunque no se puede confirmar. La familia Qwen3, descrita en el informe tecnico, incluye modelos densos y MoE de entre 0.6 y 235 mil millones de parametros, con innovaciones en razonamiento y capacidades multilingues. Sin embargo, este modelo concreto carece de documentacion que permita verificar su arquitectura, entrenamiento o rendimiento.
+El modelo `nguyenbinh12x/revenue-summary-qwen3` es un modelo publicado en Hugging Face por el usuario nguyenbinh12x. Su nombre sugiere que se trata de un ajuste fino de la familia Qwen3 para tareas de resumen de ingresos (revenue summary), pero la model card es una plantilla generada automaticamente y no contiene informacion tecnica. El repositorio tiene un tamano de 0.2 GB, lo que indica un modelo de pequenas dimensiones o una version cuantizada, aunque no se puede confirmar. La familia Qwen3, descrita en el informe tecnico, incluye modelos densos y MoE de entre 0.6 y 235 mil millones de parametros, con innovaciones en razonamiento y capacidades multilingues. Sin embargo, este modelo concreto carece de documentacion que permita verificar su arquitectura, entrenamiento o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nguyenbinh12x/revenue-summary-qwen3
+- Hugging Face: https://huggingface.co/nguyenbinh12x/revenue-summary-qwen3
 - Informe tecnico de Qwen3 (referencia de la familia base): https://arxiv.org/html/2505.09388v1
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

@@ -98,9 +98,9 @@ Notas aportadas por el autor: tras una recalibración isotónica ajustada sobre 
 
 | Modelo | Parametros | Tipo | Error de calibracion (nunca vistas) | Precision "can't tell" | Latencia GPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kodiak-v0.3-1B | 1,04 B | Encoder de decision | 0,076 | 0,93 | ~38 ms | apache-2.0 | HuggingFace (cortex-agent-llc/kodiak-v0.3-1b) |
+| Kodiak-v0.3-1B | 1,04 B | Encoder de decision | 0,076 | 0,93 | ~38 ms | apache-2.0 | Hugging Face (cortex-agent-llc/kodiak-v0.3-1b) |
 | Kodiak-v0.2-1B | ~1 B | Encoder de decision | 0,085 | 0,88 | ~38 ms | apache-2.0 | Disponible como version anterior |
-| Kodiak-v0.3-1B accuracy mode | Promedio de 3 modelos v0.3 | Encoder de decision (ensemble) | 0,065 | 0,925 | ~3x | apache-2.0 | HuggingFace (cortex-agent-llc/kodiak-v0.3-1b-accuracy) |
+| Kodiak-v0.3-1B accuracy mode | Promedio de 3 modelos v0.3 | Encoder de decision (ensemble) | 0,065 | 0,925 | ~3x | apache-2.0 | Hugging Face (cortex-agent-llc/kodiak-v0.3-1b-accuracy) |
 | Qwen3-8B | 8 B | LLM generativo | 0,293 (0,178 recalibrado) | No aplica (sin abstitucion tipada) | ~1.500 ms | no disponible en la informacion proporcionada | Referencia usada como linea base por el autor |
 
 No se dispone de otros modelos comparables de la misma categoria (encoders de decision con abstencion calibrada) en la informacion proporcionada.
@@ -120,7 +120,7 @@ No se dispone de otros modelos comparables de la misma categoria (encoders de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-agent-llc/kodiak-v0.3-1b
+- Modelo en Hugging Face: https://huggingface.co/cortex-agent-llc/kodiak-v0.3-1b
 - Variante en modo accuracy: https://huggingface.co/cortex-agent-llc/kodiak-v0.3-1b-accuracy
 - Modelo base Ettin-encoder-1B: https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Repositorio de codigo, documentacion y registro publico de construccion: https://github.com/grizzlypeaksoftware/kodiak

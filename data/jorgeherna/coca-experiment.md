@@ -67,12 +67,12 @@ No se dispone de informacion sobre modelos comparables en la fuente proporcionad
 - No se han realizado evaluaciones de sesgos, alucinaciones ni riesgos de seguridad.
 - No se han documentado los idiomas soportados ni la longitud de contexto; por tanto, no es posible determinar su comportamiento en lenguajes distintos ni en secuencias largas.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el modelo no es funcional todavia. Su uso en produccion no es recomendable.
-- La implementacion personalizada requiere un adaptador explicito para cargar el modelo con APIs genericas de HuggingFace u otros frameworks.
+- La implementacion personalizada requiere un adaptador explicito para cargar el modelo con APIs genericas de Hugging Face u otros frameworks.
 - Los resultados de un futuro entrenamiento deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 - No se han publicado benchmarks, por lo que cualquier afirmacion sobre su rendimiento carece de fundamento.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: <https://huggingface.co/jorgeherna/coca-experiment>
+- Repositorio del modelo en Hugging Face: <https://huggingface.co/jorgeherna/coca-experiment>
 
 Los resultados de la busqueda web proporcionada no contienen enlaces adicionales relevantes sobre este modelo (las referencias a Gmail y Google Translate no guardan relacion con el repositorio).

@@ -88,8 +88,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devansh0703/MSGAT
+- Modelo en Hugging Face: https://huggingface.co/devansh0703/MSGAT
 - Repositorio GitHub: https://github.com/devansh0703/MSGAT
 - Dataset QuantumChem_200k: https://huggingface.co/datasets/QuantumChem/QuantumChem_200k
-- Perfil del autor en HuggingFace: https://huggingface.co/devansh0703
+- Perfil del autor en Hugging Face: https://huggingface.co/devansh0703
 - Perfil del autor en GitHub: https://github.com/devansh0703

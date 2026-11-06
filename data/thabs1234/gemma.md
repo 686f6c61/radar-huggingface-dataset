@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thabs1234/gemma` es un checkpoint publicado en HuggingFace bajo la licencia `gemma`, lo que lo vincula a la familia de modelos abiertos desarrollada por Google DeepMind. Sin embargo, la información disponible en su model card es prácticamente nula: no se especifican parámetros, arquitectura, idiomas soportados ni capacidades concretas. El repositorio fue creado el 23 de agosto de 2026 y no registra descargas ni interacciones. Aunque el nombre sugiere una relación con la serie Gemma de Google, no existe confirmación oficial de que este checkpoint sea un modelo oficial o una variante derivada. Por tanto, esta ficha se limita a recoger los datos públicos existentes y a señalar las carencias de información, sin especular sobre características no verificadas.
+El modelo `thabs1234/gemma` es un checkpoint publicado en Hugging Face bajo la licencia `gemma`, lo que lo vincula a la familia de modelos abiertos desarrollada por Google DeepMind. Sin embargo, la información disponible en su model card es prácticamente nula: no se especifican parámetros, arquitectura, idiomas soportados ni capacidades concretas. El repositorio fue creado el 23 de agosto de 2026 y no registra descargas ni interacciones. Aunque el nombre sugiere una relación con la serie Gemma de Google, no existe confirmación oficial de que este checkpoint sea un modelo oficial o una variante derivada. Por tanto, esta ficha se limita a recoger los datos públicos existentes y a señalar las carencias de información, sin especular sobre características no verificadas.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thabs1234/gemma
+- Repositorio Hugging Face: https://huggingface.co/thabs1234/gemma
 - Página de Gemma en Google DeepMind: https://deepmind.google/models/gemma/
 - Documentación de Gemma para desarrolladores: https://ai.google.dev/gemma/docs/get_started
 - Lista de recursos de Gemma en GitHub: https://github.com/google-gemma/awesome-gemma

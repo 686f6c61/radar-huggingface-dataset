@@ -72,7 +72,7 @@ No se dispone de comparativas con otros modelos de la misma categoría en cuanto
 
 ## Enlaces
 
-- [HuggingFace - justintime47/qwen3.8-27b-heretic-ara-mlx-mixed_2_6](https://huggingface.co/justintime47/qwen3.8-27b-heretic-ara-mlx-mixed_2_6)
+- [Hugging Face - justintime47/qwen3.8-27b-heretic-ara-mlx-mixed_2_6](https://huggingface.co/justintime47/qwen3.8-27b-heretic-ara-mlx-mixed_2_6)
 - [Modelo base - trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara)
 - [Blog AMD sobre Qwen3.8-27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [AI Release Tracker - Qwen3.8-27B](https://aireleasetracker.com/model/qwen/qwen3.8-27b)

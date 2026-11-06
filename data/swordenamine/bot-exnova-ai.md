@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/bot-exnova-ai` no es un modelo de IA en el sentido habitual del término: es un repositorio de código Python (un bot de trading de opciones binarias) publicado en HuggingFace bajo la categoría de modelo. El README describe un sistema automatizado que opera en la plataforma Exnova combinando varias estrategias de análisis técnico (ICT, VA-MOD, RSI, Bandas de Bollinger, correlación y sentimiento) con un módulo denominado "Auto-Regulation System" que ajusta parámetros en tiempo real según rachas de victorias y derrotas. No se publican pesos, tokenizador, arquitectura de red neuronal ni dataset de entrenamiento en la información disponible.
+`swordenamine/bot-exnova-ai` no es un modelo de IA en el sentido habitual del término: es un repositorio de código Python (un bot de trading de opciones binarias) publicado en Hugging Face bajo la categoría de modelo. El README describe un sistema automatizado que opera en la plataforma Exnova combinando varias estrategias de análisis técnico (ICT, VA-MOD, RSI, Bandas de Bollinger, correlación y sentimiento) con un módulo denominado "Auto-Regulation System" que ajusta parámetros en tiempo real según rachas de victorias y derrotas. No se publican pesos, tokenizador, arquitectura de red neuronal ni dataset de entrenamiento en la información disponible.
 
 El autor es `swordenamine` y el repositorio no registra descargas ni likes en el momento de la consulta. El proyecto se distribuye como código fuente (Python 3.10+) con integración de notificaciones asíncronas vía Telegram y gestión de configuración mediante `.env` y JSON. El término "AI" del nombre hace referencia a la lógica adaptativa heurística del motor de autorregulación, no a un modelo entrenado con descenso de gradiente.
 
@@ -17,8 +17,8 @@ Su relevancia ahora es limitada desde el punto de vista de la investigación en 
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantizacion | no disponible (no aplica; el artefacto es código fuente Python) |
-| Idiomas soportados | no disponible (README en inglés; no se declaran idiomas en la metadata de HuggingFace) |
-| Licencia | no disponible en la metadata de HuggingFace; el badge del README indica "All Rights Reserved" |
+| Idiomas soportados | no disponible (README en inglés; no se declaran idiomas en la metadata de Hugging Face) |
+| Licencia | no disponible en la metadata de Hugging Face; el badge del README indica "All Rights Reserved" |
 | Formato de pesos | no disponible (no hay pesos; el repositorio contiene código fuente, `requirements.txt`, `.env.example` y ficheros JSON de configuración) |
 
 ## Arquitectura y entrenamiento
@@ -76,8 +76,8 @@ No se dispone de datos verificables de alternativas comparables en la informaci�
 | Parámetros | no disponible (no aplica) | Miles de millones | no disponible (no aplica) |
 | Longitud de contexto | no disponible (no aplica) | 8k–128k tokens | no disponible (no aplica) |
 | Benchmarks publicados | Ninguno | MMLU, HumanEval, GSM8K | Habitualmente ninguno |
-| Licencia | "All Rights Reserved" según README; no declarada en HuggingFace | Apache 2.0, MIT, Llama, etc. | Variable |
-| Disponibilidad | Repositorio en HuggingFace; código en GitHub | HuggingFace, repositorios espejo | GitHub |
+| Licencia | "All Rights Reserved" según README; no declarada en Hugging Face | Apache 2.0, MIT, Llama, etc. | Variable |
+| Disponibilidad | Repositorio en Hugging Face; código en GitHub | Hugging Face, repositorios espejo | GitHub |
 
 No se identifican en la información disponible modelos comparables concretos con parámetros, contexto y rendimiento publicados.
 
@@ -88,15 +88,15 @@ No se identifican en la información disponible modelos comparables concretos co
 - **Ausencia total de validación publicada:** cero descargas, cero likes, ningún benchmark, ningún informe de resultados auditado. No hay evidencia de rentabilidad ni de comportamiento en condiciones de mercado reales a escala.
 - **Licencia restrictiva:** el badge del README indica "All Rights Reserved", lo que impide el uso comercial, la modificación o la redistribución sin autorización expresa del autor, pese a que el repositorio sea públicamente visible.
 - **Credenciales sensibles:** el bot requiere el correo y la contraseña de la cuenta de Exnova en `.env`, además del token de Telegram. Un manejo incorrecto expone la cuenta del bróker; el README insiste en no incluir secretos en el JSON versionado.
-- **Inconsistencias en los metadatos:** la fecha de creación registrada (2026-10-17) es posterior a la de actualización (2026-02-16), lo que sugiere metadatos poco fiables. La URL de clonado del README (`github.com/swordenkisk/bot-exnova-ai`) no coincide exactamente con el nombre de usuario de HuggingFace (`swordenamine`).
+- **Inconsistencias en los metadatos:** la fecha de creación registrada (2026-10-17) es posterior a la de actualización (2026-02-16), lo que sugiere metadatos poco fiables. La URL de clonado del README (`github.com/swordenkisk/bot-exnova-ai`) no coincide exactamente con el nombre de usuario de Hugging Face (`swordenamine`).
 - **Dependencia de terceros no controlados:** el funcionamiento depende de la API de Exnova y del feed de Deriv, sujetos a cambios, bloqueos geográficos o interrupciones que romperían el bot sin aviso.
 - **Sin soporte multilingüe ni de contexto:** no aplica ninguna de las capacidades habituales de un LLM; no hay alucinación en sentido técnico, pero sí riesgo de señales falsas por sobreajuste de parámetros a datos históricos.
-- **Idiomas y documentación:** la documentación está en inglés y no se declaran idiomas soportados en la metadata de HuggingFace.
+- **Idiomas y documentación:** la documentación está en inglés y no se declaran idiomas soportados en la metadata de Hugging Face.
 - **Estado del proyecto:** el badge indica "Active Development", lo que implica cambios incompatibles frecuentes y ausencia de garantías de estabilidad en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/bot-exnova-ai
+- Hugging Face: https://huggingface.co/swordenamine/bot-exnova-ai
 - Repositorio GitHub indicado en el README: https://github.com/swordenkisk/bot-exnova-ai
 - Plataforma del bróker: https://exnova.com
 - Telegram (servicio de notificaciones): https://telegram.org

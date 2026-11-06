@@ -4,7 +4,7 @@
 
 El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs` es un modelo de clasificación de tokens (token-classification) desarrollado por el equipo EuroEval, especializado en la detección de alucinaciones en respuestas generadas por sistemas de pregunta-respuesta con recuperación aumentada (RAG). Su nombre indica que fue entrenado sobre un conjunto de datos sintético de preguntas y respuestas basado en Wikipedia, con anotaciones de veracidad (truth) y casos de alucinación, lo que lo convierte en una herramienta potencial para auditar y filtrar salidas de modelos generativos en pipelines de RAG.
 
-Con 140.642.306 parámetros, se trata de un modelo de tamaño pequeño, adecuado para entornos con recursos limitados. Los tags de HuggingFace sugieren que se basa en la arquitectura ModernBERT, una evolución eficiente de BERT, aunque la model card oficial no aporta confirmación explícita de la arquitectura, el entrenamiento o los datos utilizados. El modelo se distribuye en formato safetensors y está pensado para usarse con la librería transformers.
+Con 140.642.306 parámetros, se trata de un modelo de tamaño pequeño, adecuado para entornos con recursos limitados. Los tags de Hugging Face sugieren que se basa en la arquitectura ModernBERT, una evolución eficiente de BERT, aunque la model card oficial no aporta confirmación explícita de la arquitectura, el entrenamiento o los datos utilizados. El modelo se distribuye en formato safetensors y está pensado para usarse con la librería transformers.
 
 La relevancia de este modelo radica en la creciente necesidad de verificar la factualidad de las respuestas generadas por LLMs, especialmente en aplicaciones empresariales donde la alucinación puede tener consecuencias graves. Su tamaño compacto permite integrarlo en flujos de inferencia ligeros, aunque la ausencia de documentación detallada y de benchmarks publicados limita su evaluación objetiva.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en la creciente necesidad de verificar la fa
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo. El tag `modernbert` en HuggingFace sugiere que se basa en ModernBERT, una arquitectura transformer optimizada para eficiencia en inferencia y entrenamiento, con atención bidireccional y mejoras en el manejo de secuencias largas. Sin embargo, al no existir una model card completa ni referencias a papers, esta afirmación no puede confirmarse.
+La información disponible no detalla la arquitectura interna del modelo. El tag `modernbert` en Hugging Face sugiere que se basa en ModernBERT, una arquitectura transformer optimizada para eficiencia en inferencia y entrenamiento, con atención bidireccional y mejoras en el manejo de secuencias largas. Sin embargo, al no existir una model card completa ni referencias a papers, esta afirmación no puede confirmarse.
 
 El nombre del modelo indica que fue entrenado sobre un dataset sintético de preguntas y respuestas de Wikipedia, con anotaciones de alucinaciones y veracidad (RAG truth). No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, el procedimiento de entrenamiento (fine-tuning, RLHF, etc.) ni las hiperparametros utilizadas. La model card oficial está prácticamente vacía, con todos los campos marcados como "[More Information Needed]".
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs)
+- [Hugging Face - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario awde213xazc213ed bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El modelo está diseñado para tareas de extracción de características (feature-extraction) según el pipeline declarado, aunque también se mencionan capacidades de generación de texto, razonamiento matemático, programación y lógica.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario awde213xazc213ed bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento y deducción mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas durante el post-entrenamiento. El modelo está diseñado para tareas de extracción de características (feature-extraction) según el pipeline declarado, aunque también se mencionan capacidades de generación de texto, razonamiento matemático, programación y lógica.
 
 La model card indica que el modelo ha sido evaluado en diversos benchmarks mostrando mejoras frente a versiones previas, con un incremento notable en tareas de razonamiento complejo (por ejemplo, en AIME 2025 la precisión pasó del 70% al 87,5%). También se destaca una reducción de la tasa de alucinación y un mejor soporte para function calling. No se proporcionan detalles sobre arquitectura, número de parámetros, longitud de contexto ni otros datos técnicos fundamentales, por lo que gran parte de la ficha se basa en la información limitada disponible.
 
@@ -90,4 +90,4 @@ No se dispone de información sobre modelos comparables más allá de las refere
 
 ## Enlaces
 
-- [HuggingFace - MyAwesomeModel-TestRepo](https://huggingface.co/awde213xazc213ed/MyAwesomeModel-TestRepo)
+- [Hugging Face - MyAwesomeModel-TestRepo](https://huggingface.co/awde213xazc213ed/MyAwesomeModel-TestRepo)

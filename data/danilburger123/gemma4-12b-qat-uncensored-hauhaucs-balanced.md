@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks independientes que permitan comparar calida
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/danilburger123/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced)
+- [Modelo en Hugging Face](https://huggingface.co/danilburger123/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced)
 - [Modelo base: google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it)
 - [Discord del autor](https://discord.gg/SZ5vacTXYf)
 - Cabeza MTP: procedente del release de Gemma 4 de Unsloth (sin enlace directo en la model card)

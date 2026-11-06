@@ -98,7 +98,7 @@ Nota: los datos de contexto, licencia y parametros de los modelos de terceros pr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/0xSojalSec/Gemma-4-Giftige-31B-v1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/0xSojalSec/Gemma-4-Giftige-31B-v1-GGUF
 - Modelo base (safetensors): https://huggingface.co/Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1
 - Repositorio original de cuantizaciones estaticas de mradermacher: https://huggingface.co/mradermacher/Gemma-4-Giftige-Blume-31B-v1-GGUF
 - Cuantizaciones ponderadas / imatrix: https://huggingface.co/mradermacher/Gemma-4-Giftige-Blume-31B-v1-i1-GGUF

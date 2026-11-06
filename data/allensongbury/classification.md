@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`allensongbury/classification` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia en PyTorch de una arquitectura denominada Dino orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe como una configuracion base destinada a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` es una inicializacion valida, no un modelo con pesos entrenados ni evaluados.
+`allensongbury/classification` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia en PyTorch de una arquitectura denominada Dino orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release listo para produccion: la propia model card lo describe como una configuracion base destinada a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` es una inicializacion valida, no un modelo con pesos entrenados ni evaluados.
 
 El dato objetivo disponible es su tamano: 33.088 parametros en total segun el fichero safetensors, lo que lo situa en un orden de magnitud propio de un prototipo o de un juguete de pruebas, muy lejos de cualquier modelo utilizable en inferencia real. La arquitectura declarada usa atencion de consultas agrupadas (grouped query attention), fusion con compuertas (gated fusion), activacion gelu y normalizacion rmsnorm, con un recipe por defecto basado en el optimizador lion y un schedule onecycle.
 
@@ -53,7 +53,7 @@ No hay evidencia de que se haya completado un entrenamiento. La model card indic
 - Pruebas de integracion en CI: dado su tamano minimo, se puede instanciar y ejecutar en un runner de integracion continua en segundos, validando que la carga del modelo no rompe el pipeline.
 - Comparacion de recetas de optimizacion: la receta por defecto con lion y onecycle permite probar variantes de optimizador y schedule con bajo coste computacional.
 - Generacion de checkpoints sinteticos para pruebas de infraestructura: util para validar sistemas de versionado de modelos, registro y despliegue sin depender de pesos reales.
-- Educacion y docencia: ejemplo minimo para explicar la estructura de un repositorio de modelo en HuggingFace (config, safetensors, model card).
+- Educacion y docencia: ejemplo minimo para explicar la estructura de un repositorio de modelo en Hugging Face (config, safetensors, model card).
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ No hay modelos directamente comparables en la informacion disponible, ya que se 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| allensongbury/classification | 33.088 | no disponible | sin benchmark | MIT | HuggingFace |
+| allensongbury/classification | 33.088 | no disponible | sin benchmark | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No hay modelos directamente comparables en la informacion disponible, ya que se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allensongbury/classification
+- Hugging Face: https://huggingface.co/allensongbury/classification
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

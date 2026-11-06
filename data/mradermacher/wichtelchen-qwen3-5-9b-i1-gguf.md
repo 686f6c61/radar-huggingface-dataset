@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-i1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-i1-GGUF
 - Modelo base (schneewolflabs/Wichtelchen-Qwen3.5-9B): https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-GGUF
 - Página de descarga conveniente (enlace externo): https://hf.tst.eu/model#Wichtelchen-Qwen3.5-9B-i1-GGUF

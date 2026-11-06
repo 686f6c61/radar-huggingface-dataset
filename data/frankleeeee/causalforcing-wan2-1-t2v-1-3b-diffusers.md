@@ -70,7 +70,7 @@ No hay información suficiente sobre modelos comparables. El modelo base Wan2.1-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frankleeeee/CausalForcing-Wan2.1-T2V-1.3B-Diffusers
+- Repositorio Hugging Face: https://huggingface.co/frankleeeee/CausalForcing-Wan2.1-T2V-1.3B-Diffusers
 - Proyecto Causal-Forcing (GitHub): https://github.com/thu-ml/Causal-Forcing
 - Modelo base Wan2.1-T2V-1.3B-Diffusers: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Repositorio Wan2.1 (GitHub): https://github.com/Wan-Video/Wan2.1

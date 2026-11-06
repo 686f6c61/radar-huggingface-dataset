@@ -69,8 +69,8 @@ No se publican en la informacion disponible otros resultados de benchmarks (MMLU
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...target-lora01-view-medium-n100000-1000...`) | no disponible | no disponible | 1355/2000 exitos en LIBERO (40 tareas, 50 ensayos/tarea, semilla 7) | apache-2.0 | HuggingFace, 0 descargas |
-| Modelo fuente (`Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015`) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (commit `e435806e413a90c3b74c9411228a72b53b97060c`) |
+| Este modelo (`...target-lora01-view-medium-n100000-1000...`) | no disponible | no disponible | 1355/2000 exitos en LIBERO (40 tareas, 50 ensayos/tarea, semilla 7) | apache-2.0 | Hugging Face, 0 descargas |
+| Modelo fuente (`Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015`) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (commit `e435806e413a90c3b74c9411228a72b53b97060c`) |
 | Otras variantes de la familia pi05 / openpi | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks de terceros en la informacion proporcionada que permitan una comparacion cuantitativa con alternativas como pi0, pi0.5 de referencia o GR00T N1.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de terceros en la informacion proporcionada
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-medium-n100000-1000-20261015
+- Ficha en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-medium-n100000-1000-20261015
 - Modelo fuente citado en la model card: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015 (commit `e435806e413a90c3b74c9411228a72b53b97060c`)
 - Dataset citado: `Donghyun1228/libero-support-random-waypoint-300k-20261015` (commit `32ed215baf01af7e82f927a62b108873aa70bd19`); no se proporciona URL directa en la informacion disponible
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

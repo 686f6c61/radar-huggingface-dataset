@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino publicado bajo la organizacion `gradients-io-tournaments`, identificado con el nombre `tournament-tourn_c48cf98105f5b0ae_20261005-f65efedf-38dd-4f9e-80e7-494952c4c22b-5CDbyLvX`. No se trata de un modelo completo, sino de un adaptador PEFT (la libreria declarada es `peft` 0.15.1) que debe cargarse sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`, un transformer denso de aproximadamente 4.000 millones de parametros desarrollado por Alibaba Qwen. El artefacto ocupa 1,1 GB en el repositorio, un tamano notablemente superior al de un LoRA tipico de rango bajo sobre un modelo de 4B, lo que sugiere un rango de adaptacion elevado o la inclusion de estados adicionales de entrenamiento.
 
-La relevancia de esta ficha es mas metodologica que tecnica: el modelo es un artefacto de torneo (probablemente generado de forma automatizada en un ciclo de entrenamiento competitivo de la plataforma gradients.io) con fecha de creacion del 7 de octubre de 2026, cero descargas y cero likes. Su model card es una plantilla vacia en la que todos los campos relevantes (autor, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. Esto lo convierte en un caso representativo de los adaptadores efimeros que se publican en HuggingFace sin documentacion, y obliga a tratar cualquier dato no listado aqui como no verificado.
+La relevancia de esta ficha es mas metodologica que tecnica: el modelo es un artefacto de torneo (probablemente generado de forma automatizada en un ciclo de entrenamiento competitivo de la plataforma gradients.io) con fecha de creacion del 7 de octubre de 2026, cero descargas y cero likes. Su model card es una plantilla vacia en la que todos los campos relevantes (autor, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como `[More Information Needed]`. Esto lo convierte en un caso representativo de los adaptadores efimeros que se publican en Hugging Face sin documentacion, y obliga a tratar cualquier dato no listado aqui como no verificado.
 
 En consecuencia, la practica totalidad de las especificaciones funcionales de esta ficha deben heredarse del modelo base y marcarse como tales. No hay evidencia publicada de que el adaptador mejore, especialice o degrade las capacidades de `Qwen3-4B-Instruct-2507`, ni informacion sobre su dominio de ajuste.
 
@@ -76,7 +76,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (~4.
 - Los 1,1 GB del adaptador se suman temporalmente durante la carga, aunque tras la fusion con el base el peso efectivo depende de la cuantizacion aplicada.
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y equivalentes. En GPUs de 8 GB solo es viable con cuantizacion int4 y contextos moderados.
 - GPU de datacenter: A100 40/80 GB, H100, L40S y L4 son suficientes para servir multiples replicas o contextos muy largos. No requiere tensor parallelism.
-- Opciones de despliegue: vLLM (con soporte de adaptadores LoRA mediante `--enable-lora`), HuggingFace TGI, Transformers + PEFT en Python, llama.cpp/Ollama tras fusionar el adaptador y convertir a GGUF, y LM Studio para uso de escritorio.
+- Opciones de despliegue: vLLM (con soporte de adaptadores LoRA mediante `--enable-lora`), Hugging Face TGI, Transformers + PEFT en Python, llama.cpp/Ollama tras fusionar el adaptador y convertir a GGUF, y LM Studio para uso de escritorio.
 - Latencia y throughput: no disponible. Para un denso de 4B en bf16 sobre una RTX 4090 cabe esperar decenas de miles de tokens por segundo en modo prefill con batching y del orden de 50-150 tokens/s por secuencia en decodificacion autoregresiva, pero son ordenes de magnitud orientativos y no mediciones de este modelo.
 
 ## Comparativa con modelos similares
@@ -85,11 +85,11 @@ La comparativa se establece frente a alternativas de la misma categoria (modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Qwen3-4B-Instruct-2507) | No disponible (base ~4B) | No disponible (base 262.144) | No disponible | 0 descargas en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen3-4B-Thinking-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en HuggingFace; incluye modo de razonamiento |
-| meta-llama/Llama-3.2-3B-Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License (con restricciones) | Publico en HuggingFace |
-| google/gemma-3-4b-it | ~4B | 128.000 tokens | Gemma Terms of Use (con restricciones) | Publico en HuggingFace |
+| Este adaptador (sobre Qwen3-4B-Instruct-2507) | No disponible (base ~4B) | No disponible (base 262.144) | No disponible | 0 descargas en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen3-4B-Thinking-2507 | ~4B | 262.144 tokens | Apache 2.0 | Publico en Hugging Face; incluye modo de razonamiento |
+| meta-llama/Llama-3.2-3B-Instruct | ~3B | 128.000 tokens | Llama 3.2 Community License (con restricciones) | Publico en Hugging Face |
+| google/gemma-3-4b-it | ~4B | 128.000 tokens | Gemma Terms of Use (con restricciones) | Publico en Hugging Face |
 
 No hay datos de rendimiento comparado para el adaptador, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. La unica ventaja objetiva de este artefacto frente al modelo base seria una especializacion de dominio, que no esta demostrada ni documentada.
 
@@ -109,7 +109,7 @@ No hay datos de rendimiento comparado para el adaptador, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-f65efedf-38dd-4f9e-80e7-494952c4c22b-5CDbyLvX
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-f65efedf-38dd-4f9e-80e7-494952c4c22b-5CDbyLvX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Referencia de la libreria PEFT: https://huggingface.co/docs/peft/index
 - Referencia citada en la plantilla de la model card (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700

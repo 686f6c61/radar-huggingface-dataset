@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-TLDR-Utilitarian es un modelo de lenguaje desarrollado por el usuario "promotion" en HuggingFace, concebido como un experimento de investigación en alineación multi-objetivo. Se trata de un fine-tuning del modelo `meta-llama/Llama-3.1-8B-Instruct`, que actúa tanto como política de referencia como punto de inicialización. El objetivo es estudiar cómo distintas reglas de agregación de preferencias afectan al comportamiento del modelo en un panel de evaluación denominado TL;DR, donde se puntúan objetivos como cobertura, fidelidad, concisión y utilidad mediante un oráculo de preferencias basado en `Qwen3-32B`.
+Llama-3.1-8B-TLDR-Utilitarian es un modelo de lenguaje desarrollado por el usuario "promotion" en Hugging Face, concebido como un experimento de investigación en alineación multi-objetivo. Se trata de un fine-tuning del modelo `meta-llama/Llama-3.1-8B-Instruct`, que actúa tanto como política de referencia como punto de inicialización. El objetivo es estudiar cómo distintas reglas de agregación de preferencias afectan al comportamiento del modelo en un panel de evaluación denominado TL;DR, donde se puntúan objetivos como cobertura, fidelidad, concisión y utilidad mediante un oráculo de preferencias basado en `Qwen3-32B`.
 
 El modelo es relevante porque aborda un problema actual en alineación: cómo combinar múltiples criterios de calidad (por ejemplo, ser útil y conciso a la vez) sin sacrificar unos en favor de otros. La variante "utilitarian" agrega los objetivos maximizando la suma ponderada de utilidades, en lugar de usar reglas como el mínimo o el promedio. Con 8.030 millones de parámetros y una arquitectura transformer decoder-only, este modelo se posiciona como una herramienta de análisis para investigadores interesados en preferencia optimización y evaluación de políticas de lenguaje.
 
@@ -80,7 +80,7 @@ La comparación principal es contra el modelo base, del cual se deriva. El fine-
 
 ## Limitaciones y advertencias
 
-- El modelo es un artefacto de investigación con 0 descargas y 0 likes en HuggingFace; no ha sido validado en entornos de producción.
+- El modelo es un artefacto de investigación con 0 descargas y 0 likes en Hugging Face; no ha sido validado en entornos de producción.
 - No se han documentado sesgos específicos, pero hereda los potenciales sesgos del modelo base Llama-3.1-8B-Instruct, que pueden incluir estereotipos o contenido problemático.
 - Riesgo de alucinación inherente a los LLM; el fine-tuning no lo elimina y puede verse influido por el oráculo de preferencias.
 - La concisión se ve penalizada (excedente negativo de -0.0917), lo que puede generar respuestas excesivamente largas en aplicaciones donde la brevedad es crítica.
@@ -90,7 +90,7 @@ La comparación principal es contra el modelo base, del cual se deriva. El fine-
 
 ## Enlaces
 
-- [HuggingFace: promotion/Llama-3.1-8B-TLDR-Utilitarian](https://huggingface.co/promotion/Llama-3.1-8B-TLDR-Utilitarian)
+- [Hugging Face: promotion/Llama-3.1-8B-TLDR-Utilitarian](https://huggingface.co/promotion/Llama-3.1-8B-TLDR-Utilitarian)
 - [meta-llama/Llama-3.1-8B (modelo base)](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Llama 3 - Open-source AI Models (Meta)](https://developer.meta.com/ai/models/llama-3/)
 - [Llama 3.1 Model Cards and Prompt formats](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_1/)

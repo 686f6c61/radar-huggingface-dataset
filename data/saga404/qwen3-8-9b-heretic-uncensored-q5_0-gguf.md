@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados para este modelo frente a alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/saga404/Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/saga404/Qwen3.8-9B-heretic-uncensored-Q5_0-GGUF
 - Modelo base original (safetensors): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Repositorio GitHub de la serie Qwen3.8 (incluye Qwen3.5, Qwen3.6 y Qwen3.8): https://github.com/QwenLM/Qwen3.8
 - Herramienta "heretic" para eliminación de censura: https://github.com/p-e-w/heretic

@@ -85,10 +85,10 @@ Si se incluyen metricas de inferencia (compute-only) con MTP activado y cuantiza
 
 | Modelo | Parametros totales | Activos | Cuantizacion | MTP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (cleyesode, 65B-A6B NVFP4 PLE MTP FP8) | 88,1B (safetensors) | ~6B | NVFP4 W4A4 + FP8 PLE + FP8_block MTP | FP8_block | qwen-community-1.0 | Publicado en HuggingFace, 0 descargas |
-| cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4 | no disponible | ~6B | NVFP4 + FP8 PLE, MTP en BF16 | BF16 | no disponible | Publicado en HuggingFace |
-| cleyesode/Qwen3.8-Flash-Next-RAZOR-96B-A6B-NVFP4 | no disponible | ~6B | NVFP4 + FP8 PLE, MTP en BF16 | BF16 | no disponible | Publicado en HuggingFace; pruning al 25 por ciento, menor perdida declarada |
-| Nickyang/Qwen3.8-Flash-Next-RAZOR-65B-A6B-E256of512 | no disponible | ~6B | Sin cuantizar (modelo base) | no disponible | no disponible | Publicado en HuggingFace |
+| Este modelo (cleyesode, 65B-A6B NVFP4 PLE MTP FP8) | 88,1B (safetensors) | ~6B | NVFP4 W4A4 + FP8 PLE + FP8_block MTP | FP8_block | qwen-community-1.0 | Publicado en Hugging Face, 0 descargas |
+| cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4 | no disponible | ~6B | NVFP4 + FP8 PLE, MTP en BF16 | BF16 | no disponible | Publicado en Hugging Face |
+| cleyesode/Qwen3.8-Flash-Next-RAZOR-96B-A6B-NVFP4 | no disponible | ~6B | NVFP4 + FP8 PLE, MTP en BF16 | BF16 | no disponible | Publicado en Hugging Face; pruning al 25 por ciento, menor perdida declarada |
+| Nickyang/Qwen3.8-Flash-Next-RAZOR-65B-A6B-E256of512 | no disponible | ~6B | Sin cuantizar (modelo base) | no disponible | no disponible | Publicado en Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparaciones cuantitativas entre estas variantes en la informacion proporcionada; la unica indicacion cualitativa es que la variante de 96B ofrece menor perdida y que la de 65B con MTP en BF16 mantiene la misma perdida a mayor precision.
 
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks ni de comparaciones cuantitativas entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4-PLE-MTP-FP8
+- Modelo en Hugging Face: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4-PLE-MTP-FP8
 - Modelo base (Nickyang, 65B-A6B-E256of512): https://huggingface.co/Nickyang/Qwen3.8-Flash-Next-RAZOR-65B-A6B-E256of512
 - Variante 96B con pruning al 25 por ciento: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-RAZOR-96B-A6B-NVFP4
 - Variante 65B con MTP en BF16: https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4

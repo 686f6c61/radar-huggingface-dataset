@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored es un ajuste fino (finetune) de Qwen/Qwen3.8-27B publicado por el usuario DavidAU en HuggingFace. Se trata de una variante "herética" y sin censura ("uncensored") del modelo base, entrenada en múltiples etapas ("Multi-stage tuning", "Cold Fusion", "GAIN Training") sobre los datasets propios Polar-STRICT y F451-STRICT del mismo autor. El resultado es un modelo de 27.781.427.952 parámetros (unos 27,78 mil millones) en precisión bfloat16, con un repositorio de 55,6 GB.
+DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored es un ajuste fino (finetune) de Qwen/Qwen3.8-27B publicado por el usuario DavidAU en Hugging Face. Se trata de una variante "herética" y sin censura ("uncensored") del modelo base, entrenada en múltiples etapas ("Multi-stage tuning", "Cold Fusion", "GAIN Training") sobre los datasets propios Polar-STRICT y F451-STRICT del mismo autor. El resultado es un modelo de 27.781.427.952 parámetros (unos 27,78 mil millones) en precisión bfloat16, con un repositorio de 55,6 GB.
 
 Su propuesta de valor no es tanto el rendimiento bruto como la personalización del comportamiento: incorpora 27 modos de razonamiento y 27 modos de instrucción, además de 15 "AI Constructs" y 5 "Super AI Constructs" (Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder), junto con 9 modos de razonamiento "Xhigh". Está etiquetado para usos creativos (escritura, ficción, rol, todos los géneros), código, agentes y conversación general, y su pipeline declarado es image-text-to-text, lo que apunta a capacidades multimodales de entrada imagen+texto.
 
@@ -24,7 +24,7 @@ Es relevante ahora por dos motivos: por un lado, la eliminación de los mecanism
 | Modelo base | Qwen/Qwen3.8-27B (finetune) |
 | Datasets de entrenamiento | DavidAU/Polar-STRICT-Datasets, DavidAU/F451-STRICT-Datasets |
 | Tamano del repositorio | 55,6 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 2 / 79 |
 | Fecha de creacion / actualizacion | 2026-09-03 / 2026-10-26 |
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- Hugging Face del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

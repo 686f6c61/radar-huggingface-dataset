@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olgasokolov38/matching-best` es un repositorio de HuggingFace que contiene una implementación propia y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching), escrita en PyTorch. El autor es el usuario `olgasokolov38` y el repositorio se distribuye bajo licencia MIT. Se trata de la configuración "tiny", con un total de 24.832 parámetros, lo que lo sitúa en la categoría de modelos de juguete más que de modelo entrenado listo para producción.
+`olgasokolov38/matching-best` es un repositorio de Hugging Face que contiene una implementación propia y compacta de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching), escrita en PyTorch. El autor es el usuario `olgasokolov38` y el repositorio se distribuye bajo licencia MIT. Se trata de la configuración "tiny", con un total de 24.832 parámetros, lo que lo sitúa en la categoría de modelos de juguete más que de modelo entrenado listo para producción.
 
 El propio autor declara explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark. El repositorio contiene además `main.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador Novograd con calentamiento lineal). No se documentan idiomas soportados, pipeline, ni resultados de evaluación.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento de este repositorio ni de cifras de refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olgasokolov38/matching-best | 24.832 | no disponible | no disponible (sin benchmark) | MIT | HuggingFace, 0 descargas |
+| olgasokolov38/matching-best | 24.832 | no disponible | no disponible (sin benchmark) | MIT | Hugging Face, 0 descargas |
 | Implementaciones MoCo v3 de referencia | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras alternativas contrastivas (SimCLR, DINO) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olgasokolov38/matching-best
+- Hugging Face: https://huggingface.co/olgasokolov38/matching-best
 - Repositorio Git o paper asociado: no disponible
 - Demos, blogs o documentacion adicional: no disponible
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a sitios de pedidos de pizza y no guardan relacion con el repositorio).

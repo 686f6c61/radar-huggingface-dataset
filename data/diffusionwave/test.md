@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffusionWave/test es un repositorio de modelo alojado en HuggingFace bajo el identificador `DiffusionWave/test`, publicado por el usuario u organizacion DiffusionWave. En el momento de redactar esta ficha, el repositorio no cuenta con descargas ni "likes" registrados, no tiene pipeline declarado y su model card no contiene mas informacion que la declaracion de licencia Apache 2.0. Se trata, por tanto, de un artefacto sin documentacion tecnica publica asociada.
+DiffusionWave/test es un repositorio de modelo alojado en Hugging Face bajo el identificador `DiffusionWave/test`, publicado por el usuario u organizacion DiffusionWave. En el momento de redactar esta ficha, el repositorio no cuenta con descargas ni "likes" registrados, no tiene pipeline declarado y su model card no contiene mas informacion que la declaracion de licencia Apache 2.0. Se trata, por tanto, de un artefacto sin documentacion tecnica publica asociada.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 1,1 GB, junto con las fechas de creacion y ultima actualizacion (10 de septiembre de 2026 en ambos casos, con una actualizacion aproximadamente una hora despues de la creacion). No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento.
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Vision o multimodalidad: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas de la ficha de HuggingFace esta vacio.
+- Capacidades multilingues: no disponible; el campo de idiomas de la ficha de Hugging Face esta vacio.
 - Modos especiales (thinking mode, audio, decodificacion especulativa): no disponible.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| DiffusionWave/test | no disponible | no disponible | apache-2.0 | HuggingFace, sin descargas registradas | no disponible |
+| DiffusionWave/test | no disponible | no disponible | apache-2.0 | Hugging Face, sin descargas registradas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Ausencia total de documentacion: la model card no describe el modelo, por lo que no hay informacion sobre sesgos, alucinacion, limitaciones de contexto o idioma.
 - Riesgo de alucinacion: desconocido, pero no verificable sin evaluacion.
 - Sesgos conocidos: no disponible.
-- Limitaciones de contexto o idioma: no disponible; el campo de idiomas de HuggingFace esta vacio.
+- Limitaciones de contexto o idioma: no disponible; el campo de idiomas de Hugging Face esta vacio.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, permisiva y compatible con uso comercial, pero al no haber model card no se especifican terminos adicionales, atribuciones requeridas ni si la licencia cubre los pesos o unicamente los archivos auxiliares.
 - Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, lo que reduce la probabilidad de que existan terceros que hayan validado el modelo.
 - Fechas incoherentes con el contexto actual: las fechas de creacion y actualizacion son de septiembre de 2026, posteriores a la mayoria de referencias disponibles; conviene verificar la autenticidad y el estado del repositorio antes de usarlo.
@@ -86,6 +86,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DiffusionWave/test
+- Hugging Face: https://huggingface.co/DiffusionWave/test
 
 No se han encontrado enlaces relevantes al modelo en la busqueda web. Los resultados devueltos por el buscador corresponden a documentos sobre visualizacion de matrices y trazado de graficos en MATLAB (`xnxn matrix matlab plotx`) y no guardan ninguna relacion con `DiffusionWave/test`, por lo que se descartan como fuentes. No hay papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

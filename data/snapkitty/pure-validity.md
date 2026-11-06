@@ -4,7 +4,7 @@
 
 El repositorio `Snapkitty/pure-validity` no contiene un modelo de inteligencia artificial, sino un motor de verificación formal de circuitos lógicos escrito en Haskell, con un backend en Fortran y un núcleo de confianza de aproximadamente 80 líneas. El proyecto, desarrollado por el autor "Snapkitty", implementa un compilador para un lenguaje fuente (`.nf`) donde la puerta NAND es el único primitivo, un solucionador SAT (DPLL + CDCL con aprendizaje de cláusulas) y un kernel independiente que verifica certificados de resolución. El objetivo es demostrar la corrección de circuitos booleanos desde primeros principios, sin depender de herramientas externas como Z3, SMT, Lean o Coq.
 
-La relevancia actual radica en su enfoque de separación entre el solucionador (complejo, con heurísticas) y el kernel de verificación (simple y auditado), lo que minimiza el riesgo de aceptar pruebas inválidas. Aunque no es un modelo de IA, su diseño puede interesar a desarrolladores e investigadores en verificación formal, lógica computacional y sistemas de confianza. La información pública disponible es limitada: el repositorio en HuggingFace presenta una model card con el README del proyecto, pero no se proporcionan métricas de rendimiento, arquitectura de red neuronal ni datos de entrenamiento, ya que no aplican.
+La relevancia actual radica en su enfoque de separación entre el solucionador (complejo, con heurísticas) y el kernel de verificación (simple y auditado), lo que minimiza el riesgo de aceptar pruebas inválidas. Aunque no es un modelo de IA, su diseño puede interesar a desarrolladores e investigadores en verificación formal, lógica computacional y sistemas de confianza. La información pública disponible es limitada: el repositorio en Hugging Face presenta una model card con el README del proyecto, pero no se proporcionan métricas de rendimiento, arquitectura de red neuronal ni datos de entrenamiento, ya que no aplican.
 
 ## Especificaciones tecnicas
 
@@ -77,6 +77,6 @@ No aplica, ya que no es un modelo de IA. Si se compara con otras herramientas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/pure-validity
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/pure-validity
 - Repositorio de código (mencionado en el README): https://github.com/SNAPKITTYWEST/pure-validity (no se ha verificado su disponibilidad)
 - No se proporcionan papers, blogs, demos u otros enlaces en la información disponible.

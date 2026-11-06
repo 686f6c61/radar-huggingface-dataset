@@ -67,8 +67,8 @@ No se dispone de datos sobre otros modelos TTS ligeros comparables en la informa
 - El entrenamiento incluyó audio sintético de TTS cerrados de grandes proveedores; la calidad de esos datos puede influir en la naturalidad del modelo, aunque no se aportan evaluaciones detalladas.
 
 ## Enlaces
-- HuggingFace (repositorio descrito): https://huggingface.co/masihtabaei/Kokoro-82M
-- HuggingFace (modelo original): https://huggingface.co/hexgrad/Kokoro-82M
+- Hugging Face (repositorio descrito): https://huggingface.co/masihtabaei/Kokoro-82M
+- Hugging Face (modelo original): https://huggingface.co/hexgrad/Kokoro-82M
 - GitHub: https://github.com/hexgrad/kokoro
 - Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS
 - EVAL.md: https://huggingface.co/hexgrad/Kokoro-82M/blob/main/EVAL.md

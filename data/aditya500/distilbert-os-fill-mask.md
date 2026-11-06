@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aditya500/distilbert-os-fill-mask` es un modelo de lenguaje enmascarado (masked language modeling) obtenido mediante ajuste fino de `distilbert-base-uncased` sobre un corpus de texto tecnico sobre sistemas operativos: procesos, planificacion de CPU, interbloqueos, gestion de memoria y sistemas de ficheros. Lo desarrolla el usuario de HuggingFace `aditya500` como proyecto de aprendizaje, y su unico artefacto publico es el repositorio de pesos con licencia Apache 2.0.
+`aditya500/distilbert-os-fill-mask` es un modelo de lenguaje enmascarado (masked language modeling) obtenido mediante ajuste fino de `distilbert-base-uncased` sobre un corpus de texto tecnico sobre sistemas operativos: procesos, planificacion de CPU, interbloqueos, gestion de memoria y sistemas de ficheros. Lo desarrolla el usuario de Hugging Face `aditya500` como proyecto de aprendizaje, y su unico artefacto publico es el repositorio de pesos con licencia Apache 2.0.
 
 El modelo no es un generador de texto ni un asistente conversacional: es un encoder tipo transformer de 6 capas y 66.985.530 parametros (aproximadamente 67 millones) que predice el token enmascarado en una secuencia. Su utilidad practica se limita a tareas de relleno de huecos (fill-mask), extraccion de representaciones contextuales y clasificacion por fine-tuning posterior sobre dominio de sistemas operativos.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aditya500/distilbert-os-fill-mask | 66.985.530 | 512 (heredado) | Sistemas operativos (ajuste fino) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66.955.266 | 512 | General, ingles | Apache 2.0 | HuggingFace |
-| bert-base-uncased | 109.482.240 | 512 | General, ingles | Apache 2.0 | HuggingFace |
-| roberta-base | 124.645.121 | 512 | General, ingles | MIT | HuggingFace |
+| aditya500/distilbert-os-fill-mask | 66.985.530 | 512 (heredado) | Sistemas operativos (ajuste fino) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66.955.266 | 512 | General, ingles | Apache 2.0 | Hugging Face |
+| bert-base-uncased | 109.482.240 | 512 | General, ingles | Apache 2.0 | Hugging Face |
+| roberta-base | 124.645.121 | 512 | General, ingles | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la informacion proporcionada; la unica ventaja documentada del modelo ajustado es la reduccion de perplejidad en su corpus de dominio.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aditya500/distilbert-os-fill-mask
+- Modelo en Hugging Face: https://huggingface.co/aditya500/distilbert-os-fill-mask
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

@@ -93,7 +93,7 @@ La diferencia principal frente a los tres alternativas es de especializacion, no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MadhavOberoi1121/momo-watch
+- Modelo en Hugging Face: https://huggingface.co/MadhavOberoi1121/momo-watch
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - llama.cpp (runtime mencionado en la model card): https://github.com/ggerganov/llama.cpp
 - MLX (framework de ajuste mencionado en la model card): https://github.com/ml-explore/mlx

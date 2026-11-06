@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LNTTushar/perception-slm-image-v0` es un modelo de comprension de imagenes desarrollado por el usuario LNTTushar dentro del proyecto Perception SLM (fase 2 / image v0). Se trata de un modelo pequeno entrenado **from scratch**, es decir, sin partir de pesos preentrenados de terceros, con una arquitectura de tres bloques: un encoder visual, un conector tipo resampler y un decoder de texto de tamano reducido (descrito como "tiny decoder" en la model card). El pipeline clasico de HuggingFace no esta declarado y la libreria asociada es `perception-slm`, un paquete propio del autor en lugar de `transformers`.
+`LNTTushar/perception-slm-image-v0` es un modelo de comprension de imagenes desarrollado por el usuario LNTTushar dentro del proyecto Perception SLM (fase 2 / image v0). Se trata de un modelo pequeno entrenado **from scratch**, es decir, sin partir de pesos preentrenados de terceros, con una arquitectura de tres bloques: un encoder visual, un conector tipo resampler y un decoder de texto de tamano reducido (descrito como "tiny decoder" en la model card). El pipeline clasico de Hugging Face no esta declarado y la libreria asociada es `perception-slm`, un paquete propio del autor en lugar de `transformers`.
 
 El modelo se distribuye bajo licencia Apache 2.0 y su repositorio ocupa aproximadamente 0,5 GB. La model card no especifica el numero de parametros, la longitud de contexto, los idiomas soportados ni la composicion del dataset de entrenamiento, por lo que la evaluacion independiente resulta limitada: unicamente se publican metricas de validacion en un conjunto held-out de 294 ejemplos (loss 2,0373, token accuracy 0,555, exact match 0,0).
 
@@ -95,6 +95,6 @@ Como referencia cualitativa, los principales puntos de diferenciacion declarados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LNTTushar/perception-slm-image-v0
+- Modelo en Hugging Face: https://huggingface.co/LNTTushar/perception-slm-image-v0
 - Repositorio del proyecto `perception-slm`: la model card referencia https://github.com/ sin ruta concreta, por lo que no se dispone de una URL valida. Se menciona un fichero `RESULTS.md` dentro de ese repositorio.
 - Los resultados de busqueda web proporcionados no contienen ninguna referencia relacionada con este modelo, su autor o el proyecto perception-slm: los enlaces devueltos corresponden a foros de automocion y soporte de cuentas de Google, sin relacion con el contenido de la ficha.

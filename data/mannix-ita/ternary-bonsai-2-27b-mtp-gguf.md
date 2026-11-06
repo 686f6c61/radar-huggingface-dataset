@@ -103,12 +103,12 @@ Comparativa con alternativas de la misma categoria: no disponible.
 - Sesgos conocidos: no disponible en la informacion proporcionada.
 - Riesgo de alucinacion: no disponible en la informacion proporcionada; es un modelo de generacion de texto y no se documentan mecanismos de mitigacion especificos.
 - Licencia: Apache-2.0, tanto para el modelo base como para la cabeza Qwen3.8-27B, segun el autor, lo que en principio permite uso comercial; conviene verificar los terminos del modelo upstream de Qwen de forma independiente.
-- Fecha de creacion declarada en HuggingFace: 2026-10-09; ultima actualizacion 2026-10-09. No se indica historial de versiones.
+- Fecha de creacion declarada en Hugging Face: 2026-10-09; ultima actualizacion 2026-10-09. No se indica historial de versiones.
 - Presupuesto de memoria incompleto: aunque los pesos ocupan 6,40-7,66 GB, no se aporta el consumo total en inferencia con contexto de 262K tokens.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ManniX-ITA/Ternary-Bonsai-2-27B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ManniX-ITA/Ternary-Bonsai-2-27B-MTP-GGUF
 - Modelo base (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo upstream de la cabeza MTP: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del motor opencoti: https://github.com/mann1x/opencoti

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-cluster es un modelo derivado de openai/whisper-large-v3-turbo, publicado por el usuario KeisukeMiyamoto en HuggingFace, que se presenta con la pipeline de feature-extraction y un conjunto de etiquetas que apuntan a un uso muy concreto: extracción de representaciones de audio, agrupación mediante k-means y obtención de unidades discretas (discrete units) a partir de habla en japonés. No se trata, por tanto, de un modelo de reconocimiento de voz orientado a transcribir texto, sino de un artefacto pensado para generar embeddings o unidades discretas reutilizables en fases posteriores de un pipeline de aprendizaje autosupervisado.
+Whisper-cluster es un modelo derivado de openai/whisper-large-v3-turbo, publicado por el usuario KeisukeMiyamoto en Hugging Face, que se presenta con la pipeline de feature-extraction y un conjunto de etiquetas que apuntan a un uso muy concreto: extracción de representaciones de audio, agrupación mediante k-means y obtención de unidades discretas (discrete units) a partir de habla en japonés. No se trata, por tanto, de un modelo de reconocimiento de voz orientado a transcribir texto, sino de un artefacto pensado para generar embeddings o unidades discretas reutilizables en fases posteriores de un pipeline de aprendizaje autosupervisado.
 
 El modelo se apoya en los pesos de Whisper large-v3-turbo, un transformer encoder-decoder con alrededor de 809 millones de parámetros en su versión original, y añade componentes de clustering (k-means) sobre las representaciones internas. La presencia de las etiquetas tensorrt, float16 y float32, junto con un tamaño de repositorio de 92,2 GB, sugiere que el repositorio incluye motores optimizados para GPU NVIDIA además de los pesos, aunque la ficha pública no detalla la composición exacta de esos artefactos.
 
@@ -69,7 +69,7 @@ El repositorio no incluye métricas de pureza de clusters, entropía de las unid
 
 | Modelo | Parametros | Contexto de audio | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KeisukeMiyamoto/whisper-cluster | No disponible (base ~809 M) | No disponible (base: ventanas de 30 s) | Extraccion de caracteristicas y unidades discretas por k-means | No disponible | Gated en HuggingFace |
+| KeisukeMiyamoto/whisper-cluster | No disponible (base ~809 M) | No disponible (base: ventanas de 30 s) | Extraccion de caracteristicas y unidades discretas por k-means | No disponible | Gated en Hugging Face |
 | openai/whisper-large-v3-turbo | ~809 M | Ventanas de 30 s | Transcripcion y traduccion de voz multilingue | Apache 2.0 (modelo base de OpenAI) | Publico |
 | openai/whisper-large-v3 | ~1.550 M | Ventanas de 30 s | Transcripcion y traduccion de voz multilingue | Apache 2.0 | Publico |
 | Modelos de unidades discretas tipo HuBERT k-means | No disponible | Depende del modelo base | Descubrimiento de unidades foneticas no supervisadas | Depende del modelo base | Publico en distintos repositorios |
@@ -78,7 +78,7 @@ La comparación es imperfecta porque whisper-cluster no compite en transcripció
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que impide su descarga directa y automatizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que impide su descarga directa y automatizada.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial, redistribución ni modificación. Debe tratarse como no apto para producción hasta que se aclare.
 - Idiomas: el modelo está etiquetado únicamente para japonés, por lo que su comportamiento en otros idiomas no está soportado ni evaluado.
 - Sesgos: al derivar de Whisper large-v3-turbo, hereda los sesgos de sus datos de entrenamiento en cuanto a acento, registro, género y variedades dialectales del japonés. No hay evaluación de equidad publicada.
@@ -91,7 +91,7 @@ La comparación es imperfecta porque whisper-cluster no compite en transcripció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeisukeMiyamoto/whisper-cluster
+- Modelo en Hugging Face: https://huggingface.co/KeisukeMiyamoto/whisper-cluster
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset referenciado: https://huggingface.co/datasets/KeisukeMiyamoto/lambda-audio-courpus
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper

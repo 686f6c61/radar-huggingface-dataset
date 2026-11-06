@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yrlyrl/plangen-mmoct-vcot-janus-ulvr-15k
+- Repositorio Hugging Face: https://huggingface.co/yrlyrl/plangen-mmoct-vcot-janus-ulvr-15k
 - Repositorio fuente (GitHub): https://github.com/yangruoliu/plangen_mmoct
 - Repositorio relacionado de PlanGen (360CVGroup): https://github.com/360CVGroup/PlanGen

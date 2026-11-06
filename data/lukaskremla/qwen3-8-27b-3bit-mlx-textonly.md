@@ -11,7 +11,7 @@ El modelo base Qwen3.8-27B pertenece a la familia Qwen, con 27 mil millones de p
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer (modelo base Qwen3.8-27B, sin torre de visión) |
-| Parametros totales | 27B (según nomenclatura del modelo base; el contador de HuggingFace muestra 3.364.314.624, un error de visualización común en MLX quants) |
+| Parametros totales | 27B (según nomenclatura del modelo base; el contador de Hugging Face muestra 3.364.314.624, un error de visualización común en MLX quants) |
 | Parametros activos | no disponible (no se especifica si es MoE) |
 | Longitud de contexto | no disponible (el modelo base soporta contexto largo, pero no se indica el valor exacto) |
 | Tipos de cuantizacion | 3-bit, RTN, group size 64, affine (weight-only) |
@@ -61,12 +61,12 @@ No se dispone de información suficiente para comparar con otros modelos cuantiz
 - Es una versión solo texto: no procesa imágenes, por lo que no es adecuado para tareas multimodales.
 - La cuantización de 3 bits puede degradar la calidad de las respuestas en comparación con el modelo en precisión completa, especialmente en tareas complejas.
 - No se dispone de información sobre sesgos o riesgos de alucinación del modelo base.
-- El número de parámetros mostrado en HuggingFace es incorrecto (bug común en MLX quants); el modelo real tiene 27B parámetros.
+- El número de parámetros mostrado en Hugging Face es incorrecto (bug común en MLX quants); el modelo real tiene 27B parámetros.
 - No se especifican los idiomas exactos soportados, aunque se indica multilingüe.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar la licencia del modelo base Qwen3.8-27B (que también es Apache 2.0 según el tag).
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/lukaskremla/Qwen3.8-27B-3bit-MLX-TextOnly)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/lukaskremla/Qwen3.8-27B-3bit-MLX-TextOnly)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Colección de cuantizaciones MLX del autor](https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp)

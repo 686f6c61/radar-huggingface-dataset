@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ndkhanh/nghitts-copy` es un espejo no oficial en HuggingFace de los modelos de síntesis de voz (text-to-speech) del proyecto NGHI-TTS, un conjunto de voces en vietnamita construido sobre la arquitectura Piper. El modelo base declarado es `rhasspy/piper-voices` y el ajuste fino se realizó sobre el dataset `rhasspy/piper-checkpoints`. El repositorio, de 3,2 GB, agrupa 18 voces vietnamitas distintas (22 ficheros ONNX, ya que varias voces incluyen dos versiones) y se publica bajo licencia Apache 2.0.
+`ndkhanh/nghitts-copy` es un espejo no oficial en Hugging Face de los modelos de síntesis de voz (text-to-speech) del proyecto NGHI-TTS, un conjunto de voces en vietnamita construido sobre la arquitectura Piper. El modelo base declarado es `rhasspy/piper-voices` y el ajuste fino se realizó sobre el dataset `rhasspy/piper-checkpoints`. El repositorio, de 3,2 GB, agrupa 18 voces vietnamitas distintas (22 ficheros ONNX, ya que varias voces incluyen dos versiones) y se publica bajo licencia Apache 2.0.
 
 Técnicamente no es un modelo de lenguaje, sino un sistema TTS neuronal end-to-end de la familia VITS exportado a ONNX. Cada voz se distribuye como un fichero ONNX independiente en la carpeta `piper-tts/`, listo para usarse con el runtime Piper, y también en versión convertida en `sherpa-onnx/` (junto con `tokens.txt`) para el runtime Sherpa ONNX. No se especifican parámetros por voz, ni ventana de contexto, ni variantes de cuantización.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ndkhanh/nghitts-copy | VITS exportado a ONNX (pipeline Piper) | vietnamita | Apache 2.0 (declarada) | HuggingFace, 0 descargas, 0 likes | Espejo no oficial; 18 voces, 22 ficheros; 3,2 GB |
-| rhasspy/piper-voices (modelo base) | VITS exportado a ONNX (pipeline Piper) | múltiples idiomas | no disponible en la información | HuggingFace | Modelo de partida del ajuste fino; es la referencia natural de comparación |
-| Coqui XTTS-v2 | TTS neuronal con clonación de voz zero-shot | varios idiomas | no disponible en la información | HuggingFace | Capacidad de clonación a partir de unos segundos de audio; no orientado específicamente al vietnamita |
+| ndkhanh/nghitts-copy | VITS exportado a ONNX (pipeline Piper) | vietnamita | Apache 2.0 (declarada) | Hugging Face, 0 descargas, 0 likes | Espejo no oficial; 18 voces, 22 ficheros; 3,2 GB |
+| rhasspy/piper-voices (modelo base) | VITS exportado a ONNX (pipeline Piper) | múltiples idiomas | no disponible en la información | Hugging Face | Modelo de partida del ajuste fino; es la referencia natural de comparación |
+| Coqui XTTS-v2 | TTS neuronal con clonación de voz zero-shot | varios idiomas | no disponible en la información | Hugging Face | Capacidad de clonación a partir de unos segundos de audio; no orientado específicamente al vietnamita |
 | Google Cloud TTS / Azure Speech | TTS propietario en la nube | múltiples | propietaria (términos de servicio) | API en la nube | No permite despliegue local ni control sobre los datos de entrenamiento; coste por carácter |
 
 No se dispone de datos de parámetros ni de métricas comparativas para ninguna de las filas, por lo que la comparación es estructural (formato, licencia, despliegue e idioma) y no de calidad.
@@ -93,7 +93,7 @@ No se dispone de datos de parámetros ni de métricas comparativas para ninguna 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ndkhanh/nghitts-copy
+- Modelo en Hugging Face: https://huggingface.co/ndkhanh/nghitts-copy
 - Modelo base: https://huggingface.co/rhasspy/piper-voices
 - Dataset de entrenamiento: https://huggingface.co/datasets/rhasspy/piper-checkpoints
 - Repositorio oficial del proyecto: https://github.com/nghimestudio/nghitts

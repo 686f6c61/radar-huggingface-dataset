@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kelvinsato0726/mobilevit-contrastive-practice` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de MobileViT orientada a aprendizaje contrastivo. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el `model.safetensors` incluido es un checkpoint de inicialización válido únicamente para pruebas de humo, no un modelo con pesos fruto de un entrenamiento real.
+`kelvinsato0726/mobilevit-contrastive-practice` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de MobileViT orientada a aprendizaje contrastivo. El autor lo describe explícitamente como un punto de partida reproducible y no como un modelo entrenado: el `model.safetensors` incluido es un checkpoint de inicialización válido únicamente para pruebas de humo, no un modelo con pesos fruto de un entrenamiento real.
 
 La arquitectura declarada es MobileViT en su variante xlarge, una familia híbrida que combina convoluciones con mecanismos de atención tipo transformer. El repositorio incorpora también detalles de configuración concretos: atención de ventana deslizante, fusión con compuertas (gated fusion), activación approx gelu y normalización groupnorm. La receta de experimento por defecto usa el optimizador adafactor con un schedule polinómico.
 
@@ -45,7 +45,7 @@ No hay evidencia de que se haya completado un entrenamiento. El propio autor ind
 - Reproducibilidad de configuraciones: tomar `config.json` y `training_args.json` como plantilla de hiperparametros (adafactor, schedule polinomico) para comparar contra otras recetas bajo el mismo presupuesto de computo.
 - Benchmarking metodologico: emplear la guia de evaluacion del autor (conjunto de validacion especifico de tarea, al menos tres semillas, baseline de capacidad equivalente) para disenar comparaciones controladas.
 - Estudio de arquitecturas hibridas CNN-transformer: analizar como se comportan sliding window attention, gated fusion y groupnorm en una configuracion MobileViT de escala xlarge.
-- Docencia de vision por computador: usar el repositorio como ejemplo minimo y ejecutable de como se empaqueta una implementacion de modelo con configuracion y checkpoint en HuggingFace.
+- Docencia de vision por computador: usar el repositorio como ejemplo minimo y ejecutable de como se empaqueta una implementacion de modelo con configuracion y checkpoint en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,9 +65,9 @@ No disponible de forma rigurosa: el repositorio no contiene un modelo entrenado,
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilevit-contrastive-practice (este repo) | 33.088 (inicializacion) | no disponible | no evaluado | bsd-3-clause | HuggingFace, 0 descargas |
+| mobilevit-contrastive-practice (este repo) | 33.088 (inicializacion) | no disponible | no evaluado | bsd-3-clause | Hugging Face, 0 descargas |
 | MobileViT original (referencia de arquitectura) | del orden de millones (variante dependiente) | imagen de entrada | benchmarks publicados por sus autores | licencia original de Apple | implementacion de referencia |
-| Otras implementaciones MobileViT en HuggingFace | variable | variable | variable | variable | comunidad |
+| Otras implementaciones MobileViT en Hugging Face | variable | variable | variable | variable | comunidad |
 
 Los datos de las filas de referencia no provienen de la informacion facilitada en este repositorio y no deben tomarse como comparacion verificada.
 
@@ -84,5 +84,5 @@ Los datos de las filas de referencia no provienen de la informacion facilitada e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kelvinsato0726/mobilevit-contrastive-practice
+- Hugging Face: https://huggingface.co/kelvinsato0726/mobilevit-contrastive-practice
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

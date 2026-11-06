@@ -102,7 +102,7 @@ La model card no detalla el numero de tokens de entrenamiento, la composicion ex
 
 | Modelo | Parametros | Contexto | MMMU (val) | DocVQA (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-VL-7B | 8,29B | no disponible | 58,6 | 95,7 | Apache 2.0 | HuggingFace |
+| Qwen2.5-VL-7B | 8,29B | no disponible | 58,6 | 95,7 | Apache 2.0 | Hugging Face |
 | InternVL2.5-8B | no disponible | no disponible | 56 | 93 | no disponible | no disponible |
 | MiniCPM-o 2.6 | no disponible | no disponible | 50,4 | 93 | no disponible | no disponible |
 | GPT-4o-mini | no disponible | no disponible | 60 | no disponible | propietaria | API |
@@ -119,7 +119,7 @@ La model card no detalla el numero de tokens de entrenamiento, la composicion ex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carreect/prueba_1
+- Repositorio en Hugging Face: https://huggingface.co/carreect/prueba_1
 - Blog oficial de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Chat de Qwen: https://chat.qwenlm.ai/

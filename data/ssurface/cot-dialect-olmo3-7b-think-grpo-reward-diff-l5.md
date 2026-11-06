@@ -57,7 +57,7 @@ No se dispone de resultados para otros benchmarks (MMLU, HumanEval, etc.) en la 
 - Entrenamiento: 1x NVIDIA A100 80GB (configuracion declarada por el autor).
 - Inferencia: el adaptador LoRA se carga sobre el modelo base de 7B en bfloat16 (~14 GB de VRAM para los pesos). Cabe en GPUs de consumo con 24 GB (RTX 4090, RTX 3090) y en GPUs de datacenter como A100 80GB o H100.
 - El adaptador anade un overhead minimo sobre los pesos del base; el requisito dominante es el del modelo base.
-- Despliegue: compatible con HuggingFace Transformers + PEFT (`PeftModel`), con atencion `sdpa`. No se menciona soporte explicito para vLLM, llama.cpp u Ollama en la informacion disponible, aunque el base tiene cuantizaciones GGUF publicadas por unsloth.
+- Despliegue: compatible con Hugging Face Transformers + PEFT (`PeftModel`), con atencion `sdpa`. No se menciona soporte explicito para vLLM, llama.cpp u Ollama en la informacion disponible, aunque el base tiene cuantizaciones GGUF publicadas por unsloth.
 - Latencia: no disponible en la informacion proporcionada; al generar cadenas de solo 16 caracteres de mediana, la latencia por consulta deberia ser sustancialmente menor que la de un modelo de razonamiento verboso.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks para las alternativas en la informacion pro
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l5

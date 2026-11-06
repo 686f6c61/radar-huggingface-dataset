@@ -118,9 +118,9 @@ DFlash 2 supera tanto al MTP integrado como al drafter DSpark en acceptance leng
 
 ## Enlaces
 
-- Repositorio HuggingFace (autor original): https://huggingface.co/wyattearp/Qwen3.8-27B-DFlash2
-- Repositorio HuggingFace (espejo oficial de Inco AI): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
-- Repositorio HuggingFace (espejo de z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Repositorio Hugging Face (autor original): https://huggingface.co/wyattearp/Qwen3.8-27B-DFlash2
+- Repositorio Hugging Face (espejo oficial de Inco AI): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
+- Repositorio Hugging Face (espejo de z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B

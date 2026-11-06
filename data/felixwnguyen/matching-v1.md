@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matching-v1 es un prototipo de investigación publicado por el usuario felixwnguyen en HuggingFace. Se presenta explícitamente como un esqueleto de arquitectura "híbrida" orientado a tareas de matching (emparejamiento de pares), con una configuración de escala "small" y sin resultados de rendimiento verificados. El repositorio contiene el código de definición del modelo (`predict.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+matching-v1 es un prototipo de investigación publicado por el usuario felixwnguyen en Hugging Face. Se presenta explícitamente como un esqueleto de arquitectura "híbrida" orientado a tareas de matching (emparejamiento de pares), con una configuración de escala "small" y sin resultados de rendimiento verificados. El repositorio contiene el código de definición del modelo (`predict.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante para cualquier evaluador es su tamaño: 49.600 parámetros en total según los metadatos de safetensors. Es, por tanto, un modelo de escala diminuta, muy por debajo de cualquier modelo de lenguaje utilizable en producción, y su función declarada es servir como punto de partida reproducible para experimentos de matching, no como sistema desplegable.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, `training_args.json` recoge una receta por defecto b
 - Investigacion sobre co-attention y GQA: constituye un banco de pruebas de bajo coste para experimentar con variantes de fusion cruzada entre pares de secuencias y comparar su comportamiento antes de escalar la arquitectura.
 - Referencia didactica de implementacion hibrida: el codigo y los ficheros de configuracion documentan una estructura de proyecto minima (modelo, config, receta de entrenamiento) reutilizable como plantilla en cursos o guias internas.
 - Punto de partida para fine-tuning experimental sobre tareas de matching: permite definir una linea base de capacidad minima y medir cuanto aporta realmente el entrenamiento frente a la inicializacion aleatoria, con control de semillas.
-- Validacion de formatos y herramientas propias: util para comprobar que un visor de safetensors, un script de calculo de parametros o un conversor de formatos interpreta correctamente un repositorio con estructura estandar de HuggingFace.
+- Validacion de formatos y herramientas propias: util para comprobar que un visor de safetensors, un script de calculo de parametros o un conversor de formatos interpreta correctamente un repositorio con estructura estandar de Hugging Face.
 - Calibracion de scripts de evaluacion: al no tener metrica publicada, sirve para validar que el propio arnes de evaluacion (conjunto pareado, tres semillas, baseline de capacidad comparable) produce resultados reproducibles antes de aplicarlo a modelos reales.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No se dispone de modelos comparables publicados en la informacion proporcionada.
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en tareas de matching | no disponible (sin entrenar) | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | HuggingFace, repositorio publico | no disponible |
+| Disponibilidad | Hugging Face, repositorio publico | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,12 +87,12 @@ No se dispone de modelos comparables publicados en la informacion proporcionada.
 - No se publican datos de sesgo, y al no existir entrenamiento documentado no es posible caracterizar sesgos de datos.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero cualquier salida del modelo es esencialmente aleatoria al proceder de una inicializacion sin ajustar.
 - No hay informacion sobre idiomas soportados, longitud de contexto ni tokenizador asociado.
-- Es una implementacion personalizada: las APIs automaticas de carga de HuggingFace requieren un adaptador explicito, lo que anade trabajo de integracion.
+- Es una implementacion personalizada: las APIs automaticas de carga de Hugging Face requieren un adaptador explicito, lo que anade trabajo de integracion.
 - Licencia MIT: permite uso comercial y modificacion sin restricciones de copyleft, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - No debe presentarse ningun resultado obtenido con este repositorio como si proviniera de un checkpoint entrenado; el autor indica que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aqui incluidos.
 - Para produccion, este repositorio no es adecuado en su estado actual; solo tiene sentido como base de investigacion o como utilidad de verificacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixwnguyen/matching-v1
+- Modelo en Hugging Face: https://huggingface.co/felixwnguyen/matching-v1
 - Papers, blogs, repositorios adicionales o demos: no disponible en la informacion proporcionada.

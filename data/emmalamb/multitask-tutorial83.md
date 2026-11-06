@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emmalamb/multitask-tutorial83` es un repositorio experimental de HuggingFace que contiene un codebase mínimo de una arquitectura denominada **Coca** orientada a tareas **multitask**. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica explícitamente que `model.safetensors` es un *checkpoint de inicialización válido para smoke tests* y que no debe presentarse como un checkpoint con benchmarks. El repositorio se publica bajo licencia BSD-3-Clause, con fecha de creación declarada del 15 de septiembre de 2026 y fecha de actualización del mismo día, sin descargas ni *likes* registrados.
+`emmalamb/multitask-tutorial83` es un repositorio experimental de Hugging Face que contiene un codebase mínimo de una arquitectura denominada **Coca** orientada a tareas **multitask**. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor indica explícitamente que `model.safetensors` es un *checkpoint de inicialización válido para smoke tests* y que no debe presentarse como un checkpoint con benchmarks. El repositorio se publica bajo licencia BSD-3-Clause, con fecha de creación declarada del 15 de septiembre de 2026 y fecha de actualización del mismo día, sin descargas ni *likes* registrados.
 
 El tamaño real declarado en el fichero de pesos es de **16.576 parámetros**, lo que sitúa el artefacto en la escala *nano* indicada en la propia model card. La arquitectura emplea atención estándar, fusión bilineal, activación GELU y normalización LayerNorm. La receta de entrenamiento por defecto propone el optimizador LAMB con un schedule *onecycle*, pero el autor remarca que son valores iniciales del script y no evidencia de un entrenamiento completado.
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emmalamb/multitask-tutorial83 | 16.576 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| emmalamb/multitask-tutorial83 | 16.576 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativa comparable 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa comparable 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa comparable 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,14 +93,14 @@ Como referencia de escala, 16.576 parámetros es un orden de magnitud muy inferi
 - **Sesgos conocidos**: no disponibles. Al no existir datos de entrenamiento documentados, no se pueden caracterizar sesgos.
 - **Riesgo de alucinación**: no evaluable en el estado actual del artefacto; con un modelo sin entrenar la noción de alucinación carece de sentido práctico.
 - **Limitaciones de contexto e idioma**: no se declara longitud de contexto ni idiomas soportados. No debe asumirse soporte multilingüe.
-- **Integración**: al ser un codebase personalizado, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no hay garantía de compatibilidad con ecosistemas estándar.
+- **Integración**: al ser un codebase personalizado, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no hay garantía de compatibilidad con ecosistemas estándar.
 - **Licencia**: BSD-3-Clause permite uso comercial con condiciones de atribución y conservación del aviso de copyright, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - **Fechas anómalas**: las marcas de creación y actualización del repositorio (2026) son posteriores a la fecha de publicación de esta ficha en el contexto habitual; conviene verificarlas en la página del modelo.
 - **Caveat de producción**: no apto para despliegue en producción. Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto de este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emmalamb/multitask-tutorial83
+- Repositorio en Hugging Face: https://huggingface.co/emmalamb/multitask-tutorial83
 - Perfil del autor: https://huggingface.co/emmalamb
 - Licencia BSD-3-Clause: https://opensource.org/licenses/BSD-3-Clause
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a contenidos sin relación, como la página de un estadio).

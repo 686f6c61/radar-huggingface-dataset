@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft` es un checkpoint alojado en HuggingFace por el usuario `keylazy`, derivado presumiblemente de la familia Qwen2.5-Omni en su variante de 3.000 millones de parametros. El nombre del repositorio sugiere un ajuste fino supervisado (SFT) con una tasa de aprendizaje de 4e-4 sobre un dataset o configuracion interna denominada "bab-slurp-t2". Se trata, por tanto, de un modelo de la comunidad sin documentacion tecnica publicada.
+El modelo `keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft` es un checkpoint alojado en Hugging Face por el usuario `keylazy`, derivado presumiblemente de la familia Qwen2.5-Omni en su variante de 3.000 millones de parametros. El nombre del repositorio sugiere un ajuste fino supervisado (SFT) con una tasa de aprendizaje de 4e-4 sobre un dataset o configuracion interna denominada "bab-slurp-t2". Se trata, por tanto, de un modelo de la comunidad sin documentacion tecnica publicada.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio ocupa 0,1 GB, un tamano compatible con pesos cuantizados o con un subconjunto parcial de los pesos originales, no con un checkpoint completo en precision completa de un modelo de 3B.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio ocupa 0,1 GB, un tamano compatible con pesos cuantizados o con un subconjunto parcial de los pesos originales, no con un checkpoint completo en precision completa de un modelo de 3B.
 
 Por su relevancia practica, debe tratarse como un experimento de la comunidad no verificado. No hay descargas ni "likes", no se ha publicado pipeline, y no existe evidencia de evaluacion. Cualquier uso en produccion requeriria una validacion independiente exhaustiva, incluida la verificacion de que los pesos cargan correctamente y de que el modelo base subyacente es realmente Qwen2.5-Omni-3B.
 
@@ -67,9 +67,9 @@ Advertencia: el tamano del repositorio (0,1 GB) es muy inferior al esperado para
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft | no disponible (nombre sugiere 3B) | no disponible | no disponible | HuggingFace, 0 descargas | plantilla vacia |
-| Qwen2.5-Omni-3B (modelo base presumible) | 3B (segun denominacion) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente distribuido | model card oficial |
-| Qwen2.5-3B-Instruct | 3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | model card oficial |
+| keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft | no disponible (nombre sugiere 3B) | no disponible | no disponible | Hugging Face, 0 descargas | plantilla vacia |
+| Qwen2.5-Omni-3B (modelo base presumible) | 3B (segun denominacion) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente distribuido | model card oficial |
+| Qwen2.5-3B-Instruct | 3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | model card oficial |
 
 La comparacion con el modelo base y con la variante Instruct de Qwen2.5 no puede completarse con datos verificados en la informacion proporcionada; las filas correspondientes se incluyen solo como referencia de categoria.
 
@@ -88,7 +88,7 @@ La comparacion con el modelo base y con la variante Instruct de Qwen2.5 no puede
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft
+- Repositorio Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-slurp-t2-lr4e4-sft
 - Modelo base presumible (Qwen2.5-Omni): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible
 - Repositorio de codigo o demo: no disponible

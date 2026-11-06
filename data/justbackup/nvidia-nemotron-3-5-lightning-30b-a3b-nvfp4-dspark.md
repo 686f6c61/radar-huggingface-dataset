@@ -4,7 +4,7 @@
 
 El modelo `Justbackup/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark` es un checkpoint de decodificación especulativa DSpark (Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation) para la familia de modelos NVIDIA Nemotron-3.5-Lightning-30B-A3B. Este checkpoint actúa como modelo auxiliar (draft model) que acelera la inferencia del modelo principal, que es un híbrido LatentMoE de 30B parámetros con 3B activos, diseñado para razonamiento, chat y flujos de trabajo agénticos. La versión DSpark está cuantizada en NVFP4 (punto flotante de 4 bits) mediante NVIDIA Model Optimizer 0.45.0 y está optimizada para su despliegue en DGX Spark (GB10) y centros de datos de baja concurrencia.
 
-El checkpoint DSpark tiene una arquitectura densa GQA (Grouped Query Attention) con aproximadamente 967 millones de parámetros totales (según la model card) y una ventana de contexto de hasta 1 millón de tokens, aunque el peso safetensors real del repositorio muestra 763.713.984 parámetros, posiblemente debido a la cuantización NVFP4. Este modelo no es un modelo de lenguaje independiente; su función es generar propuestas de tokens que el modelo principal valida, reduciendo la latencia en escenarios de generación autoregresiva. El repositorio en HuggingFace es una copia subida por el usuario Justbackup del checkpoint oficial de NVIDIA, con licencia OpenMDW-1.1.
+El checkpoint DSpark tiene una arquitectura densa GQA (Grouped Query Attention) con aproximadamente 967 millones de parámetros totales (según la model card) y una ventana de contexto de hasta 1 millón de tokens, aunque el peso safetensors real del repositorio muestra 763.713.984 parámetros, posiblemente debido a la cuantización NVFP4. Este modelo no es un modelo de lenguaje independiente; su función es generar propuestas de tokens que el modelo principal valida, reduciendo la latencia en escenarios de generación autoregresiva. El repositorio en Hugging Face es una copia subida por el usuario Justbackup del checkpoint oficial de NVIDIA, con licencia OpenMDW-1.1.
 
 La relevancia de este modelo radica en su capacidad para mejorar el rendimiento de inferencia del Nemotron-3.5-Lightning-30B-A3B en hardware Blackwell, especialmente en entornos donde la latencia es crítica, como asistentes conversacionales, sistemas RAG y agentes autónomos. Al ser un componente de un sistema de decodificación especulativa, no se evalúa de forma aislada, sino como parte del pipeline completo con el modelo principal.
 
@@ -69,11 +69,11 @@ No disponible. Este checkpoint es un componente auxiliar específico para la fam
 - Licencia OpenMDW-1.1: aunque permite uso comercial y no comercial, tiene términos específicos (por ejemplo, restricciones sobre uso militar o de vigilancia) que deben revisarse antes de implementar en producción.
 - Ventana deslizante limitada: el draft model usa una ventana de 1024 tokens, lo que puede afectar la calidad de las propuestas en contextos muy largos.
 - Sin datos de sesgos: no se ha publicado información sobre sesgos o alucinaciones específicas de este checkpoint; estos riesgos corresponden principalmente al modelo base.
-- Repositorio no oficial: esta copia en HuggingFace (usuario Justbackup) no es un release oficial de NVIDIA, aunque el contenido parece idéntico al original; se recomienda verificar la autenticidad antes de usarlo en entornos críticos.
+- Repositorio no oficial: esta copia en Hugging Face (usuario Justbackup) no es un release oficial de NVIDIA, aunque el contenido parece idéntico al original; se recomienda verificar la autenticidad antes de usarlo en entornos críticos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Justbackup/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
+- Repositorio Hugging Face: https://huggingface.co/Justbackup/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo base NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Checkpoint DSpark oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark

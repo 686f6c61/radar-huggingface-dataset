@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`youkun119/multilingual-e5-small-labor` es un modelo de embeddings de frases (sentence-transformers) especializado en la recuperación de artículos legales de normativa laboral coreana. Lo desarrolla el usuario de HuggingFace `youkun119` mediante fine-tuning del modelo base `intfloat/multilingual-e5-small`, un transformer BERT de arquitectura densa con 117.653.760 parámetros totales. Su propósito es resolver la tarea de *information retrieval* sobre un corpus de preguntas de trabajadores y pasajes de artículos legales (por ejemplo, el artículo 73 sobre el permiso menstrual o el artículo 49 sobre la prescripción de salarios).
+`youkun119/multilingual-e5-small-labor` es un modelo de embeddings de frases (sentence-transformers) especializado en la recuperación de artículos legales de normativa laboral coreana. Lo desarrolla el usuario de Hugging Face `youkun119` mediante fine-tuning del modelo base `intfloat/multilingual-e5-small`, un transformer BERT de arquitectura densa con 117.653.760 parámetros totales. Su propósito es resolver la tarea de *information retrieval* sobre un corpus de preguntas de trabajadores y pasajes de artículos legales (por ejemplo, el artículo 73 sobre el permiso menstrual o el artículo 49 sobre la prescripción de salarios).
 
 El modelo se entrenó con el dataset `youkun119/labor-embedding-data` (663 ejemplos) usando la función de pérdida `MultipleNegativesRankingLoss`, un enfoque de aprendizaje contrastivo habitual para pares consulta-respuesta. Emite embeddings densos de 384 dimensiones, acepta hasta 512 tokens por entrada (incluyendo tokens especiales y prefijos) y sigue el esquema de prefijos de la familia E5: `query:` para las consultas y `passage:` para los documentos.
 
@@ -85,10 +85,10 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Dimensión embedding | Licencia | Dominio | Disponibilidad |
 |---|---|---|---|---|---|---|
-| youkun119/multilingual-e5-small-labor | 117,6M | 512 tokens | 384 | MIT | Laboral coreano (fine-tuned) | HuggingFace, 0 descargas |
-| intfloat/multilingual-e5-small (base) | 117,6M | 512 tokens | 384 | MIT | Multilingüe general | HuggingFace, ampliamente usado |
-| intfloat/multilingual-e5-base | ~278M | 512 tokens | 768 | MIT | Multilingüe general | HuggingFace, ampliamente usado |
-| BAAI/bge-m3 | ~568M | 8192 tokens | 1024 (multivector) | MIT | Multilingüe general, recuperación híbrida | HuggingFace, ampliamente usado |
+| youkun119/multilingual-e5-small-labor | 117,6M | 512 tokens | 384 | MIT | Laboral coreano (fine-tuned) | Hugging Face, 0 descargas |
+| intfloat/multilingual-e5-small (base) | 117,6M | 512 tokens | 384 | MIT | Multilingüe general | Hugging Face, ampliamente usado |
+| intfloat/multilingual-e5-base | ~278M | 512 tokens | 768 | MIT | Multilingüe general | Hugging Face, ampliamente usado |
+| BAAI/bge-m3 | ~568M | 8192 tokens | 1024 (multivector) | MIT | Multilingüe general, recuperación híbrida | Hugging Face, ampliamente usado |
 
 El modelo no publica comparativas frente a estos alternativos. Frente al E5 multilingual base, la mejora esperada se limita al dominio laboral coreano, pero no se han publicado mediciones de esa ganancia ni del posible retroceso en otros dominios en la información disponible. Alternativas más grandes (E5-base, BGE-M3) ofrecen más dimensiones y contexto a cambio de mayor coste y menor ligereza.
 
@@ -105,7 +105,7 @@ El modelo no publica comparativas frente a estos alternativos. Frente al E5 mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youkun119/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/youkun119/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/youkun119/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Dataset asociado en la model card: `general-evaluation/general-corpus` (dentro de youkun119/labor-embedding-data)

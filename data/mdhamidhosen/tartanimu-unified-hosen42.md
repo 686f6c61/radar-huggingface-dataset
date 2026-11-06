@@ -6,7 +6,7 @@ TartanIMU unified es un modelo de odometría inercial desarrollado por el equipo
 
 La arquitectura es un híbrido convolutional-transformer de 3,9 M de parámetros: un tallo convolucional con stride reduce la señal de 200 Hz a tokens de 20 Hz, se añaden características strap-down deterministas (orientación relativa integrada con el giroscopio, aceleración sin gravedad, cambio de velocidad integrado, bajo ambas hipótesis de signo del eje z del giroscopio), después 8 bloques convolucionales temporales dilatados *depthwise* residuales con un campo receptivo de unos 13 s, y finalmente un encoder transformer de 3 capas con una cabeza de velocidad densa a 20 Hz que se promedia por ventana de 1 s. El repositorio incluye además una segunda entrada seleccionada en Kaggle, de 1,8 M de parámetros y arquitectura más estrecha (width-128, 2 capas).
 
-Su relevancia práctica es doble: por un lado, es un ejemplo reproducible de odometría inercial de bajo coste que cabe en menos de 2 GB de VRAM y también funciona en CPU, sin acceso a internet ni datos externos; por otro, la model card documenta de forma explícita el cumplimiento de las reglas del challenge (sin *ensembling*, sin *test-time augmentation*, sin calibración de salida). La tracción pública es, sin embargo, nula en el momento de redactar esta ficha: 0 descargas y 0 *likes* en HuggingFace.
+Su relevancia práctica es doble: por un lado, es un ejemplo reproducible de odometría inercial de bajo coste que cabe en menos de 2 GB de VRAM y también funciona en CPU, sin acceso a internet ni datos externos; por otro, la model card documenta de forma explícita el cumplimiento de las reglas del challenge (sin *ensembling*, sin *test-time augmentation*, sin calibración de salida). La tracción pública es, sin embargo, nula en el momento de redactar esta ficha: 0 descargas y 0 *likes* en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Su relevancia práctica es doble: por un lado, es un ejemplo reproducible de odo
 | Métrica pública en Kaggle | 0,28609 (entrada principal, submission 56402554); 0,28696 (entrada secundaria, submission 56332266). La model card no define la métrica ni su dirección |
 | Librería | PyTorch |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Fecha de creación / actualización | 2026-09-20 / 2026-09-20 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No disponible. La model card no incluye comparaciones con líneas base de odomet
 - Deriva: aunque la pérdida incluye un término de error integrado con peso 0,2, no se publican evaluaciones de deriva a largo plazo ni de error acumulado por trayecto.
 - Métrica no documentada: la puntuación pública (~0,286) corresponde a una métrica que la model card no define, lo que impide interpretar el margen de error en unidades físicas.
 - Variabilidad numérica reproducible pero no exacta: se admite una diferencia de hasta 0,005 m/s por ventana al regenerar el CSV en otro dispositivo.
-- Tracción nula: 0 descargas y 0 *likes* en HuggingFace en el momento de esta ficha, sin validación independiente por parte de terceros.
+- Tracción nula: 0 descargas y 0 *likes* en Hugging Face en el momento de esta ficha, sin validación independiente por parte de terceros.
 - Licencia: apache-2.0 permite uso comercial y modificación, pero el challenge puede imponer condiciones propias sobre el uso de los datos, que no se distribuyen en el repositorio (tamaño reportado de 0,0 GB).
 - Cumplimiento: las restricciones del challenge (sin *ensembling*, sin TTA, sin calibración) implican que el modelo se entrega sin ningún ajuste de escala de salida, lo que puede traducirse en sesgo sistemático de magnitud de velocidad.
 - Sesgos de datos: el muestreo uniforme entre plataformas y la pérdida auxiliar de clasificación de plataforma sugieren desbalance en el conjunto original; la pérdida auxiliar solo actúa en entrenamiento y no enruta la inferencia.
@@ -103,7 +103,7 @@ No disponible. La model card no incluye comparaciones con líneas base de odomet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdhamidhosen/tartanimu-unified-hosen42
+- Modelo en Hugging Face: https://huggingface.co/mdhamidhosen/tartanimu-unified-hosen42
 - Competición TartanIMU Challenge (IROS 2026): https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026
 - Código de entrenamiento, configuraciones e informe técnico: https://github.com/hamidhosen42/TartanIMU-Challenge-Multi-Platform-Inertial-Odometry
 - Submissions de Kaggle citadas: 56402554 (entrada principal) y 56332266 (entrada secundaria); no se proporciona URL directa.

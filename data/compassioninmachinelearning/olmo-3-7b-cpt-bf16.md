@@ -111,7 +111,7 @@ No hay datos objetivos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16
 - Revision epoca 1: https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16/tree/epoch-1
 - Revision epoca 2: https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16/tree/epoch-2
 - Revision epoca 3: https://huggingface.co/CompassioninMachineLearning/OLMo-3-7B-CPT-BF16/tree/epoch-3

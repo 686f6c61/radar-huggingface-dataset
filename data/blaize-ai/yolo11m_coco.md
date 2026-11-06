@@ -95,7 +95,7 @@ La diferencia clave frente a las alternativas no es de precisión ni de arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLO11m_COCO
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLO11m_COCO
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO: https://cocodataset.org
 - Sitio de Blaize: https://www.blaize.com

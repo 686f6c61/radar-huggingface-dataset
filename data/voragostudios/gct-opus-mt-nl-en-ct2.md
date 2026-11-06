@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-nl-en-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-nl-en-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-nl-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/OPUS-MT
 - Corpus OPUS: https://opus.nlpl.eu/

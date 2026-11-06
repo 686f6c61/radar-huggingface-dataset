@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Mythos-Nano-safetensor-GGUF | 3,08 B | No disponible | MIT | GGUF | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-3B-Instruct | 3,21 B | 131 072 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,82 B | 131 072 tokens | MIT | safetensors, GGUF | HuggingFace, Ollama |
+| Mythos-Nano-safetensor-GGUF | 3,08 B | No disponible | MIT | GGUF | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09 B | 32 768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-3B-Instruct | 3,21 B | 131 072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,82 B | 131 072 tokens | MIT | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se basa en características públicas de modelos de tamaño similar; no se dispone de datos de rendimiento de Mythos-Nano para comparar benchmarks. Qwen2.5-3B y Llama-3.2-3B ofrecen contextos documentados muy superiores y ecosistemas más maduros, mientras que Phi-3.5-mini comparte licencia MIT y un tamaño ligeramente mayor.
 
@@ -82,7 +82,7 @@ La comparativa se basa en características públicas de modelos de tamaño simil
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Mythos-Nano-safetensor-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Mythos-Nano-safetensor-GGUF
 - Modelo base: https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor
 - Página de conveniencia de mradermacher: https://hf.tst.eu/model#Mythos-Nano-safetensor-GGUF
 - Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

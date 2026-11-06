@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI. Se distribuye como un repositorio de pesos en HuggingFace bajo el identificador `leogane/DeepSeek-V4.1-Flash-1017` y está orientado a tareas de razonamiento, generación de código, tareas agénticas y comprensión visual (pipeline `image-text-to-text`). Según la model card, esta versión mejora los resultados de su predecesora en benchmarks de razonamiento, código, agentes y visión, y además reduce el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en menor coste por tarea.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI. Se distribuye como un repositorio de pesos en Hugging Face bajo el identificador `leogane/DeepSeek-V4.1-Flash-1017` y está orientado a tareas de razonamiento, generación de código, tareas agénticas y comprensión visual (pipeline `image-text-to-text`). Según la model card, esta versión mejora los resultados de su predecesora en benchmarks de razonamiento, código, agentes y visión, y además reduce el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en menor coste por tarea.
 
 El modelo cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala (del orden de 700B parámetros). La model card menciona una ventana de contexto de 1M tokens y un `max_tokens` recomendado de al menos 256K. El repositorio ocupa 510,3 GB y los pesos se distribuyen en formato safetensors con cuantización de 8 bits (fp8), según las etiquetas del repositorio.
 
@@ -107,10 +107,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no se de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leogane/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/leogane/DeepSeek-V4.1-Flash-1017
 - Modelo original DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Toolkit deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Sitio web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

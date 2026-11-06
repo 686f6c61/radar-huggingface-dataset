@@ -80,9 +80,9 @@ La principal diferencia es el formato de pesos y la libreria de inferencia. No s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer
+- Hugging Face: https://huggingface.co/fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer
 - Repositorio NInfer: https://github.com/Neroued/ninfer
-- Modelo base en HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
+- Modelo base en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Blog sobre abliteration de Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio comunitario de Qwen 3.8 27B Uncensored (GGUF): https://github.com/Wassimyounes01/qwen38-uncensored

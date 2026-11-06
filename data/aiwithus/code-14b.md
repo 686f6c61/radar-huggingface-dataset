@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aiwithus/code-14b es un ajuste fino (finetune) del modelo Qwen2.5-Coder-14B-Instruct, desarrollado por el usuario Aiwithus y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo causal de lenguaje especializado en código, con 14.770.033.664 parámetros totales (13.100 millones sin contar embeddings), construido sobre la arquitectura transformer de Qwen2.5 con RoPE, SwiGLU, RMSNorm y sesgo en las proyecciones QKV. El modelo base fue entrenado por Alibaba Cloud (equipo Qwen) con 5,5 billones de tokens que incluyen código fuente, texto-código y datos sintéticos.
+Aiwithus/code-14b es un ajuste fino (finetune) del modelo Qwen2.5-Coder-14B-Instruct, desarrollado por el usuario Aiwithus y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo causal de lenguaje especializado en código, con 14.770.033.664 parámetros totales (13.100 millones sin contar embeddings), construido sobre la arquitectura transformer de Qwen2.5 con RoPE, SwiGLU, RMSNorm y sesgo en las proyecciones QKV. El modelo base fue entrenado por Alibaba Cloud (equipo Qwen) con 5,5 billones de tokens que incluyen código fuente, texto-código y datos sintéticos.
 
 El modelo resuelve tareas de generación, razonamiento y corrección de código, además de mantener competencias generales en matemáticas y conversación. Su ventana de contexto nativa es de 32.768 tokens, ampliable hasta 131.072 tokens mediante escalado YaRN, lo que lo hace adecuado para trabajar con repositorios completos o conversaciones multi-turno extensas. Es relevante ahora porque la familia Qwen2.5-Coder se posiciona como referencia open source en código, y este finetune concreto hereda esas capacidades con licencia permisiva para uso comercial.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada en cuantización de 4 bits: alrededor de 8-9 GB para pesos, viable en GPUs consumer de 12-16 GB, aunque la cuantización no está documentada oficialmente para este finetune.
 - GPUs recomendadas: A100 40GB/80GB, H100 80GB para producción en precisión completa; RTX 4090 (24 GB) para cuantización 8 bits o bf16 con contexto limitado; RTX 3090 (24 GB) similar.
 - Cabe en GPU consumer: sí, en RTX 4090/3090 con cuantización 8 bits o 4 bits; en bf16 completo requiere GPUs profesionales o múltiples consumer GPUs.
-- Opciones de despliegue: transformers (>= 4.37.0), vLLM (recomendado por Qwen para producción, con soporte de YaRN estático), text-generation-inference (TGI), llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repo), y endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: transformers (>= 4.37.0), vLLM (recomendado por Qwen para producción, con soporte de YaRN estático), text-generation-inference (TGI), llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repo), y endpoints compatibles con la API de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada. La documentación de Qwen remite a su benchmark de velocidad para cifras de throughput por GPU, pero no se incluyen en esta ficha.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Aiwithus/code-14b | 14,7B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace | Finetune de Qwen2.5-Coder-14B-Instruct; sin benchmarks propios publicados |
-| Qwen/Qwen2.5-Coder-14B-Instruct | 14,7B | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace, vLLM, TGI | Modelo base oficial; benchmarks publicados en blog de Qwen |
-| Qwen/Qwen2.5-Coder-32B-Instruct | 32,5B (aprox.) | 32K nativo / 131K con YaRN | Apache 2.0 | HuggingFace | Versión mayor de la misma familia; requiere más VRAM |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128K | DeepSeek License | HuggingFace | Alternativa MoE con menor coste de inferencia por token activo |
+| Aiwithus/code-14b | 14,7B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face | Finetune de Qwen2.5-Coder-14B-Instruct; sin benchmarks propios publicados |
+| Qwen/Qwen2.5-Coder-14B-Instruct | 14,7B | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face, vLLM, TGI | Modelo base oficial; benchmarks publicados en blog de Qwen |
+| Qwen/Qwen2.5-Coder-32B-Instruct | 32,5B (aprox.) | 32K nativo / 131K con YaRN | Apache 2.0 | Hugging Face | Versión mayor de la misma familia; requiere más VRAM |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128K | DeepSeek License | Hugging Face | Alternativa MoE con menor coste de inferencia por token activo |
 
 La comparación con DeepSeek-Coder-V2-Lite se ofrece como referencia de categoría, pero no se dispone de datos de rendimiento comparativos en la información proporcionada. El modelo de Aiwithus no aporta benchmarks propios, por lo que la comparación cuantitativa con alternativas no es posible sin datos adicionales.
 
@@ -87,11 +87,11 @@ La comparación con DeepSeek-Coder-V2-Lite se ofrece como referencia de categor�
 - Licencia Apache 2.0: permite uso comercial y modificación, pero se debe conservar el aviso de licencia y atribución correspondiente. La licencia enlazada en la model card apunta al LICENSE del base Qwen2.5-Coder-14B-Instruct.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria; no se recomienda su uso en producción sin evaluación previa.
 - No se han publicado pesos GGUF ni cuantizaciones oficiales en el repositorio; habría que generarlos a partir de los safetensors.
-- Fecha de creación y actualización: 2026-11-01, según los metadatos de HuggingFace.
+- Fecha de creación y actualización: 2026-11-01, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aiwithus/code-14b
+- Modelo en Hugging Face: https://huggingface.co/Aiwithus/code-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

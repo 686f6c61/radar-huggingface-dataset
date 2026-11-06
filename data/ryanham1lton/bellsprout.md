@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bellsprout es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Bellsprout`. El repositorio fue creado el 12 de septiembre de 2026 y actualizado ese mismo día, ocupa 0,1 GB y esta licenciado bajo CC-BY-4.0. En el momento de consulta acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin traccion registrada en la plataforma.
+Bellsprout es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Bellsprout`. El repositorio fue creado el 12 de septiembre de 2026 y actualizado ese mismo día, ocupa 0,1 GB y esta licenciado bajo CC-BY-4.0. En el momento de consulta acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin traccion registrada en la plataforma.
 
 La model card disponible no contiene informacion tecnica: el unico contenido es el bloque de metadatos con la licencia `cc-by-4.0`. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados, tarea (`pipeline`) ni formato de pesos. Tampoco hay seccion de uso previsto, datos de entrenamiento, benchmarks ni limitaciones. Los resultados de la busqueda web realizada no contienen ninguna referencia al modelo: los enlaces recuperados tratan sobre vehiculos de movilidad para personas mayores y no guardan relacion con el repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha documenta la existencia del repositorio y sus metadatos ve
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 | Autor | Ryanham1lton |
-| Identificador en HuggingFace | Ryanham1lton/Bellsprout |
+| Identificador en Hugging Face | Ryanham1lton/Bellsprout |
 | Tarea declarada (pipeline) | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Fecha de creacion | 2026-09-12 |
@@ -55,7 +55,7 @@ Los siguientes escenarios son hipotesis de trabajo condicionadas a que la inspec
 - Evaluacion comparativa de checkpoints: util como elemento adicional en baterias internas de evaluacion de modelos pequenos, para comprobar si aporta alguna ventaja en tareas concretas frente a alternativas documentadas.
 - Pruebas de empaquetado y despliegue: sirve para validar cadenas de conversion a GGUF, cuantizacion a 4 u 8 bits y publicacion en servidores de inferencia, dado el bajo coste de almacenamiento y transferencia.
 - Analisis de adaptadores: si el contenido resultase ser un adaptador, el caso de uso natural seria aplicarlo sobre el modelo base correspondiente para reproducir el comportamiento entrenado por el autor.
-- Docencia y formacion: como ejemplo practico de repositorio minimo en HuggingFace para ilustrar el ciclo de publicacion, versionado y documentacion de un modelo.
+- Docencia y formacion: como ejemplo practico de repositorio minimo en Hugging Face para ilustrar el ciclo de publicacion, versionado y documentacion de un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -91,5 +91,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la tarea de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Bellsprout
+- Hugging Face: https://huggingface.co/Ryanham1lton/Bellsprout
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

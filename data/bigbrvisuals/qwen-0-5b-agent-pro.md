@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BigBrVisuals/Qwen-0.5B-Agent-Pro es un modelo de generación de texto publicado en HuggingFace por el usuario BigBrVisuals. El repositorio contiene pesos en formato safetensors con 494.032.768 parámetros (aproximadamente 494 millones, es decir, la horquilla de los 0,5B), etiquetados con la arquitectura qwen2 y el pipeline text-generation. El nombre del repositorio sugiere un ajuste orientado a uso agéntico, pero la model card no documenta ningún detalle al respecto: es la plantilla automática de transformers sin rellenar, con todos los campos marcados como "[More Information Needed]".
+BigBrVisuals/Qwen-0.5B-Agent-Pro es un modelo de generación de texto publicado en Hugging Face por el usuario BigBrVisuals. El repositorio contiene pesos en formato safetensors con 494.032.768 parámetros (aproximadamente 494 millones, es decir, la horquilla de los 0,5B), etiquetados con la arquitectura qwen2 y el pipeline text-generation. El nombre del repositorio sugiere un ajuste orientado a uso agéntico, pero la model card no documenta ningún detalle al respecto: es la plantilla automática de transformers sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de este modelo es limitada y hay que enmarcarla con honestidad. Se trata de un modelo pequeño, publicado muy recientemente (creado y actualizado el 2026-09-28 con unos 20 segundos de diferencia), con cero descargas y cero "likes", sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. No hay evidencia pública de que haya sido entrenado o ajustado con un procedimiento distinto al de su base, ni de que el nombre "Agent-Pro" corresponda a capacidades verificadas de tool calling o razonamiento multi-paso.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha describe lo que se puede verificar en el repositorio y mar
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre el entrenamiento. La model card es la plantilla estandar autogenerada por HuggingFace al subir un modelo: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), infraestructura de computo y evaluacion aparecen todas como "[More Information Needed]". No se documenta si hubo ajuste fino supervisado, RLHF, DPO u otro metodo de alineamiento, ni el numero de tokens utilizados.
+No hay informacion publicada sobre el entrenamiento. La model card es la plantilla estandar autogenerada por Hugging Face al subir un modelo: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), infraestructura de computo y evaluacion aparecen todas como "[More Information Needed]". No se documenta si hubo ajuste fino supervisado, RLHF, DPO u otro metodo de alineamiento, ni el numero de tokens utilizados.
 
 Lo unico inferible con cierto fundamento es estructural. El recuento de parametros (494.032.768) coincide con la configuracion conocida de la familia Qwen2-0.5B, y la etiqueta "qwen2" del repositorio apunta en la misma direccion, por lo que es razonable pensar que se trata de un ajuste o derivado de Qwen2-0.5B; sin embargo, esto es una inferencia a partir de metadatos y no un dato confirmado por el autor. De forma similar, los 1,0 GB de repositorio para 494 millones de parametros son consistentes con pesos en bf16 o fp16 (unos 988 MB en pesos mas ficheros auxiliares), aunque tampoco se declara la precision de almacenamiento.
 
@@ -43,7 +43,7 @@ No consta ninguna innovacion tecnica propia: no se mencionan decodificacion espe
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible. No se declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio, math, codigo): no disponible. No se documenta ninguna.
-- Integracion con ecosistema: las etiquetas "text-generation-inference" y "endpoints_compatible" indican que el repositorio esta preparado para desplegarse con TGI y con los Inference Endpoints de HuggingFace.
+- Integracion con ecosistema: las etiquetas "text-generation-inference" y "endpoints_compatible" indican que el repositorio esta preparado para desplegarse con TGI y con los Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ Estimaciones derivadas del recuento de parametros (494 millones), no de medicion
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM. Cabe holgadamente en RTX 3050, RTX 3060, RTX 4060, RTX 4090, A10, L4, T4, A100 y H100; en estas dos ultimas el modelo queda enormemente infrautilizado y solo tiene sentido como parte de un servicio con muchas peticiones concurrentes.
 - GPU de consumo: si, cabe en practicamente todas las GPU de consumo de los ultimos anos, e incluso en iGPU con memoria unificada.
 - CPU: es viable la inferencia en CPU, especialmente con cuantizacion a 4 bits, aunque no hay cifras publicadas.
-- Opciones de despliegue: transformers (formato nativo, repositorio en safetensors), TGI (el repositorio lleva la etiqueta text-generation-inference), vLLM o SGLang si la arquitectura se resuelve correctamente en la configuracion del repositorio, y HuggingFace Inference Endpoints (etiqueta endpoints_compatible). Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no esta publicada.
+- Opciones de despliegue: transformers (formato nativo, repositorio en safetensors), TGI (el repositorio lleva la etiqueta text-generation-inference), vLLM o SGLang si la arquitectura se resuelve correctamente en la configuracion del repositorio, y Hugging Face Inference Endpoints (etiqueta endpoints_compatible). Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no esta publicada.
 - Latencia y throughput: no disponible. No hay ninguna medicion del autor ni de terceros.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ Diferencias relevantes: frente a los tres modelos de referencia, este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BigBrVisuals/Qwen-0.5B-Agent-Pro
+- Repositorio en Hugging Face: https://huggingface.co/BigBrVisuals/Qwen-0.5B-Agent-Pro
 - Articulo de Lacoste et al. (2019) sobre estimacion de emisiones, citado en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
 - Paper, blog, repositorio o demo del modelo: no disponible

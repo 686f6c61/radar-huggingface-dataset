@@ -34,7 +34,7 @@ Según el blog de OpenAI, el modelo está optimizado para "razonamiento eficient
 - Tareas de agente: puede encadenar múltiples llamadas a herramientas y razonar sobre los resultados, habilitando flujos de trabajo autónomos.
 - Generación de texto: capacidades estándar de generación de lenguaje natural, incluyendo conversación multiturno y completado de texto.
 - Eficiencia en hardware de consumo: optimizado para ejecutarse en GPUs de gama media con cuantización, reduciendo los requisitos de VRAM frente a modelos de tamaño similar.
-- Compatibilidad con vLLM y transformers: el repositorio indica compatibilidad con el ecosistema de HuggingFace y vLLM, facilitando su integración en pipelines de producción.
+- Compatibilidad con vLLM y transformers: el repositorio indica compatibilidad con el ecosistema de Hugging Face y vLLM, facilitando su integración en pipelines de producción.
 
 ## Casos de uso
 
@@ -66,14 +66,14 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 - Sesgos y alucinaciones: como cualquier modelo de lenguaje, puede generar contenido inexacto o inventado, especialmente en dominios especializados. No se han publicado evaluaciones de sesgo específicas para este modelo.
 - Contexto limitado: aunque no se especifica la longitud exacta, los modelos de este tamaño suelen tener ventanas de contexto de 8K a 32K tokens, lo que puede ser insuficiente para documentos muy extensos.
 - Idiomas: no se ha confirmado la lista de idiomas soportados. Es probable que el rendimiento sea óptimo en inglés, con capacidades variables en otros idiomas.
-- Acceso restringido en este repositorio: el mirror `s-a-i/gpt-oss-20b` requiere aceptar condiciones en HuggingFace, aunque el modelo original de OpenAI está disponible sin restricciones.
+- Acceso restringido en este repositorio: el mirror `s-a-i/gpt-oss-20b` requiere aceptar condiciones en Hugging Face, aunque el modelo original de OpenAI está disponible sin restricciones.
 - Uso comercial: la licencia Apache 2.0 permite uso comercial, pero hay que revisar la "gpt-oss usage policy" de OpenAI, que puede imponer restricciones adicionales sobre casos de uso específicos.
 - Requisitos de hardware: aunque es eficiente, ejecutar el modelo en FP16 requiere una GPU profesional; para consumo es necesaria cuantización, lo que puede degradar ligeramente la calidad de salida.
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): [s-a-i/gpt-oss-20b](https://huggingface.co/s-a-i/gpt-oss-20b)
-- Repositorio oficial HuggingFace: [openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
+- Repositorio Hugging Face (mirror): [s-a-i/gpt-oss-20b](https://huggingface.co/s-a-i/gpt-oss-20b)
+- Repositorio oficial Hugging Face: [openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
 - Blog de OpenAI: [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss/)
 - Model card oficial: [gpt-oss-120b & gpt-oss-20b Model Card](https://openai.com/index/gpt-oss-model-card/)
 - GitHub: [openai/gpt-oss](https://github.com/openai/gpt-oss)

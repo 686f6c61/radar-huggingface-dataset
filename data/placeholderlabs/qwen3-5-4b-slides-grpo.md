@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`placeholderlabs/qwen3.5-4b-slides-grpo` es un ajuste fino (fine-tune) del modelo `placeholderlabs/qwen3.5-4b-slides-v2`, publicado por el usuario u organizacion `placeholderlabs` en HuggingFace. Segun su model card, ha sido entrenado con la libreria TRL empleando GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300). El identificador del modelo sugiere una base de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, y el sufijo "slides" apunta a un entrenamiento orientado a la generacion de presentaciones. La fecha de creacion registrada es el 5 de octubre de 2026.
+`placeholderlabs/qwen3.5-4b-slides-grpo` es un ajuste fino (fine-tune) del modelo `placeholderlabs/qwen3.5-4b-slides-v2`, publicado por el usuario u organizacion `placeholderlabs` en Hugging Face. Segun su model card, ha sido entrenado con la libreria TRL empleando GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300). El identificador del modelo sugiere una base de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, y el sufijo "slides" apunta a un entrenamiento orientado a la generacion de presentaciones. La fecha de creacion registrada es el 5 de octubre de 2026.
 
 El modelo se distribuye en formato `safetensors` y es compatible con `transformers`, ademas de estar etiquetado como `endpoints_compatible` (desplegable en Inference Endpoints). En el momento de redactar esta ficha cuenta con 0 descargas y 0 "likes", y el repositorio ocupa 3,9 GB.
 
@@ -68,7 +68,7 @@ Las siguientes cifras son **estimaciones orientativas** basadas en el tamano pre
 - GPU recomendadas:
   - Consumer: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones de 4-8 bits.
   - Profesional/centro de datos: A100, H100 para precision completa y lotes grandes.
-- Opciones de despliegue: `transformers` (nativo), vLLM, TGI, llama.cpp, Ollama (estos tres ultimos previa conversion a GGUF) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: `transformers` (nativo), vLLM, TGI, llama.cpp, Ollama (estos tres ultimos previa conversion a GGUF) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de benchmarks del modelo evaluado, de su licencia ni de sus idioma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `placeholderlabs/qwen3.5-4b-slides-grpo` | No confirmado (~4B por el identificador) | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune con GRPO sobre `qwen3.5-4b-slides-v2` |
+| `placeholderlabs/qwen3.5-4b-slides-grpo` | No confirmado (~4B por el identificador) | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune con GRPO sobre `qwen3.5-4b-slides-v2` |
 | Qwen3-4B | ~4B | 32.768 tokens (extensible) | Apache-2.0 | Amplia | Referencia de la familia Qwen si la base fuese efectivamente Qwen 3.x |
 | Llama 3.1 8B Instruct | ~8B | 128.000 tokens | Llama 3.1 Community | Amplia | Alternativa de tamano superior con licencia comunitaria |
 | Phi-3.5-mini instruct | ~3,8B | 128.000 tokens | MIT | Amplia | Alternativa de tamano similar orientada a instrucciones |
@@ -98,7 +98,7 @@ La comparacion con Qwen3-4B es tentativa: la existencia de una familia "Qwen 3.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-grpo
+- Modelo en Hugging Face: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-grpo
 - Modelo base: https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-v2
 - Seguimiento de entrenamiento (Weights & Biases): https://wandb.ai/sunnysetia-locus/rl-slides/runs/239uk6e8
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

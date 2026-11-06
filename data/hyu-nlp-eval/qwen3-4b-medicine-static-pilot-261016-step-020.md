@@ -29,7 +29,7 @@ El entrenamiento se ha ejecutado con veRL y FSDP (fully sharded data parallel), 
 
 ## Capacidades
 
-- Generacion de texto y formato conversacional (etiquetas `text-generation` y `conversational` en HuggingFace).
+- Generacion de texto y formato conversacional (etiquetas `text-generation` y `conversational` en Hugging Face).
 - Ajuste orientado al dominio medico segun la denominacion del run (`medicine_static_pilot`), aunque no se documentan las tareas concretas cubiertas.
 - Al ser un fine-tune de Qwen3-4B-Instruct-2507, se espera compatibilidad con las capacidades del modelo base (instrucciones, razonamiento, multilingue), pero no hay verificacion publicada en la informacion disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-020 | 4,02 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint intermedio, sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo base instructivo |
+| qwen3-4b-medicine-static-pilot-261016-step-020 | 4,02 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint intermedio, sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo base instructivo |
 | Alternativas de ~3-4 B (Llama, Phi, Gemma) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-020
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-020
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias obtenidas corresponden a entidades no relacionadas (Hyundai Motor, canales de YouTube y plataformas de television).

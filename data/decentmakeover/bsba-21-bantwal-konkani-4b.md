@@ -65,9 +65,9 @@ La revisión nativa del autor (no ciega) sobre 19 peticiones cotidianas calific�
 
 | Modelo | Parámetros | Contexto | Enfoque lingüístico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BSBA-21-Bantwal v1 | 4,3 B | no disponible | Konkani mangloreso, escritura kannada | gemma | HuggingFace (safetensors y GGUF) |
-| Gemma 3 4B + adaptador konkani (baseline) | 4,3 B | no disponible | Konkani con datos kannada generados automáticamente | gemma | HuggingFace |
-| google/gemma-3-4b-it | 4,3 B | no disponible | Multilingüe general, sin especialización en konkani | gemma | HuggingFace |
+| BSBA-21-Bantwal v1 | 4,3 B | no disponible | Konkani mangloreso, escritura kannada | gemma | Hugging Face (safetensors y GGUF) |
+| Gemma 3 4B + adaptador konkani (baseline) | 4,3 B | no disponible | Konkani con datos kannada generados automáticamente | gemma | Hugging Face |
+| google/gemma-3-4b-it | 4,3 B | no disponible | Multilingüe general, sin especialización en konkani | gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 - Registro demasiado formal: el modelo habla como un sermón, abre con saludos y bendiciones y sus respuestas son largas; el habla cotidiana es el objetivo de la v2.
@@ -80,7 +80,7 @@ La revisión nativa del autor (no ciega) sobre 19 peticiones cotidianas calific�
 - Revisión nativa limitada: la evaluación humana es pequeña y no ciega; se anuncia una revisión ciega mayor para la v2.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/decentmakeover/bsba-21-bantwal-konkani-4b
+- Hugging Face: https://huggingface.co/decentmakeover/bsba-21-bantwal-konkani-4b
 - Repositorio de código y demo: https://github.com/DecentMakeover/bsba-21-bantwal-konkani-4b
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Adaptador konkani base: https://huggingface.co/konkani/konkani-gemma-3-4b-it

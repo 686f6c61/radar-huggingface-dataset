@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFFEC_Code no es un modelo de lenguaje, sino un devkit de desarrollo (repositorio de codigo y utilidades) para el conjunto de datos AFFEC (Advancing Face-to-Face Emotion Communication), un corpus multimodal de computacion afectiva. El repositorio lo publica el usuario colarpink en HuggingFace y contiene un paquete Python (`affec/`), scripts de linea de comandos para descargar datos y ejecutar analisis, y cuadernos Jupyter con el pipeline completo de extraccion de caracteristicas y entrenamiento de clasificadores. El conjunto de datos subyacente recoge 72 participantes en 84 dialogos emocionales simulados, con unas 5000 pruebas y mas de 20000 etiquetas de emocion.
+AFFEC_Code no es un modelo de lenguaje, sino un devkit de desarrollo (repositorio de codigo y utilidades) para el conjunto de datos AFFEC (Advancing Face-to-Face Emotion Communication), un corpus multimodal de computacion afectiva. El repositorio lo publica el usuario colarpink en Hugging Face y contiene un paquete Python (`affec/`), scripts de linea de comandos para descargar datos y ejecutar analisis, y cuadernos Jupyter con el pipeline completo de extraccion de caracteristicas y entrenamiento de clasificadores. El conjunto de datos subyacente recoge 72 participantes en 84 dialogos emocionales simulados, con unas 5000 pruebas y mas de 20000 etiquetas de emocion.
 
 El interes del repositorio reside en que proporciona una linea base reproducible para el reconocimiento multimodal de emociones: combina senales de EEG, seguimiento ocular y pupila, respuesta galvanica de la piel (GSR), unidades de accion facial (Action Units) y seguimiento del cursor, con etiquetas de arousal y valencia tanto sentidas como percibidas. El devkit no incluye pesos de modelo; el tamano del repositorio es de 0.0 GB y los datos crudos se descargan aparte desde Zenodo.
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la informacion proporcionada devkits o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/colarpink/AFFEC_Code
+- Repositorio en Hugging Face: https://huggingface.co/colarpink/AFFEC_Code
 - Dataset en Zenodo (DOI): https://doi.org/10.5281/zenodo.14794876
 - Licencia del dataset (CC0 1.0): https://creativecommons.org/publicdomain/zero/1.0/
 - Esquema y changelog del dataset: `data/raw/README.md` (dentro del repositorio)

@@ -76,7 +76,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La principal difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmsforall/Millie-35B-A3B-7GB
+- Modelo en Hugging Face: https://huggingface.co/llmsforall/Millie-35B-A3B-7GB
 - Variante de 11 GB: https://huggingface.co/llmsforall/Millie-35B-A3B-11GB
 - Fork de llama.cpp requerido: https://github.com/llmsforall/llama.cpp
 - Modelo base Agents-A1: https://huggingface.co/InternScience/Agents-A1

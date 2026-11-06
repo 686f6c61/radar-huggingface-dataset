@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ethanpaker/al_148_5dxsxqaftr` es un modelo de lenguaje multimodal de tipo *mixture of experts* (MoE) basado en la arquitectura Qwen3.5, desarrollado por el usuario Ethan (ethanpaker) y publicado en HuggingFace en agosto de 2026. Se trata de un modelo con 35.107 millones de parámetros totales, diseñado para tareas que combinan entrada de imagen y texto (pipeline `image-text-to-text`), es decir, es capaz de procesar imágenes y texto para generar respuestas textuales.
+El modelo `ethanpaker/al_148_5dxsxqaftr` es un modelo de lenguaje multimodal de tipo *mixture of experts* (MoE) basado en la arquitectura Qwen3.5, desarrollado por el usuario Ethan (ethanpaker) y publicado en Hugging Face en agosto de 2026. Se trata de un modelo con 35.107 millones de parámetros totales, diseñado para tareas que combinan entrada de imagen y texto (pipeline `image-text-to-text`), es decir, es capaz de procesar imágenes y texto para generar respuestas textuales.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, aunque su acceso en Hugging Face está restringido (*gated*), por lo que es necesario solicitar permiso al autor para descargarlo. No se dispone de documentación oficial, benchmarks ni especificaciones técnicas detalladas más allá de las etiquetas y los metadatos del repositorio. Su relevancia actual radica en ser un ejemplo de modelos MoE multimodales de gran tamaño, aunque su falta de información pública limita su evaluación objetiva.
 
@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/ethanpaker/al_148_5dxf_aqft)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ethanpaker)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/ethanpaker/al_148_5dxf_aqft)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ethanpaker)
 - [Datasets del autor](https://huggingface.co/ethanpaker/datasets)
 
 No se han encontrado papers, blogs ni demos adicionales.

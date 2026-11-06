@@ -87,7 +87,7 @@ Los datos de Qwen3-1.7B, Gemma 3 1B y Llama 3.2 1B no provienen de la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Variante Thinking: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Variante japonesa: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP

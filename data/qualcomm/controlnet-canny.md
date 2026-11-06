@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/ControlNet-Canny
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/ControlNet-Canny
 - Qualcomm AI Hub Models (repositorio, rama v0.62.2): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/controlnet_canny
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
 - Implementacion original de ControlNet (lllyasviel): https://github.com/lllyasviel/ControlNet

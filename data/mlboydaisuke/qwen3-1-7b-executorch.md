@@ -69,11 +69,11 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 - El modelo requiere kernels especificos de ExecuTorch (`quantized_decomposed::embedding_byte.dtype_out`) que deben estar disponibles en el runtime; sin ellos, la carga falla con un error que puede confundirse con una exportacion rota.
 - No se ha verificado el comportamiento en telefonos, por lo que su uso en produccion movil requiere pruebas adicionales.
 - Al ser un modelo de 1.7B, puede presentar alucinaciones y sesgos propios de los LLMs de tamano pequeno, especialmente en dominios especializados.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3-1.7B puede tener restricciones adicionales; se recomienda revisar la licencia del modelo original en HuggingFace.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo base Qwen3-1.7B puede tener restricciones adicionales; se recomienda revisar la licencia del modelo original en Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3-1.7B-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-1.7B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de ExecuTorch para Qwen3: https://github.com/pytorch/executorch/blob/main/examples/models/qwen3/README.md
 - Ejemplos de modelos en ExecuTorch: https://github.com/pytorch/executorch/tree/main/examples/models/qwen3

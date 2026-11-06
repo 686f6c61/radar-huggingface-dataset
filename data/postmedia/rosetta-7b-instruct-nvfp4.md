@@ -19,7 +19,7 @@ Su relevancia actual es doble: por un lado, demuestra un flujo de cuantizacion P
 | Tipos de cuantizacion | NVFP4 (FP4 E2M1, bloques de 16 elementos, escalas por bloque en FP8 E4M3 mas escala por tensor en FP32); activaciones NVFP4 (W4A4) con escalas estaticas calibradas; KV cache en FP8 (E4M3). Embeddings, `lm_head` y capas de normalizacion se mantienen en BF16 |
 | Idiomas soportados | Coreano (ko) e ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con configuracion ModelOpt unificada de HuggingFace (`quantization_config` + `hf_quant_config.json`); requiere `custom_code` |
+| Formato de pesos | safetensors con configuracion ModelOpt unificada de Hugging Face (`quantization_config` + `hf_quant_config.json`); requiere `custom_code` |
 
 ## Arquitectura y entrenamiento
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PoSTMEDIA/Rosetta-7B-Instruct-NVFP4 | 4,56 B (nominal 7B) | 65.536 | NVFP4 W4A4, KV cache FP8 | ko, en | Apache 2.0 | HuggingFace; requiere vLLM >= 0.26 |
-| PoSTMEDIA/Rosetta-7B-Instruct | 4,56 B (nominal 7B) | 65.536 | BF16 | ko, en | Apache 2.0 | HuggingFace; compatible con `transformers` |
-| PoSTMEDIA/Rosetta-7B-Think-NVFP4 | No disponible | No disponible | NVFP4 | ko, en | Apache 2.0 (segun la coleccion) | HuggingFace |
+| PoSTMEDIA/Rosetta-7B-Instruct-NVFP4 | 4,56 B (nominal 7B) | 65.536 | NVFP4 W4A4, KV cache FP8 | ko, en | Apache 2.0 | Hugging Face; requiere vLLM >= 0.26 |
+| PoSTMEDIA/Rosetta-7B-Instruct | 4,56 B (nominal 7B) | 65.536 | BF16 | ko, en | Apache 2.0 | Hugging Face; compatible con `transformers` |
+| PoSTMEDIA/Rosetta-7B-Think-NVFP4 | No disponible | No disponible | NVFP4 | ko, en | Apache 2.0 (segun la coleccion) | Hugging Face |
 | Otros modelos bilingues ko/en de ~7B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye resultados de benchmarks que permitan comparar el rendimiento de este checkpoint con alternativas de otros desarrolladores, ni fichas de modelos competidores de la misma categoria. La comparacion factible se limita, por tanto, a las variantes del propio linaje Rosetta.
@@ -98,11 +98,11 @@ La informacion proporcionada no incluye resultados de benchmarks que permitan co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Instruct-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Instruct-NVFP4
 - Modelo base (BF16): https://huggingface.co/PoSTMEDIA/Rosetta-7B-Instruct
 - Modelo fundacional: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Base
 - Variante de razonamiento: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think
 - Variante de razonamiento en NVFP4: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think-NVFP4
 - Coleccion Rosetta: https://huggingface.co/collections/PoSTMEDIA/rosetta-6a9db30fd1b4585b0c1845e9
 - Distribucion vLLM de PoSTMEDIA: https://github.com/PoSTMEDIA-AI/vllm
-- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card de HuggingFace. No se dispone de paper, blog tecnico ni demo adicionales.
+- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los presentes en la model card de Hugging Face. No se dispone de paper, blog tecnico ni demo adicionales.

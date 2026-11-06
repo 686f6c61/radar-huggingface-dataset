@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes, y no se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-MLX-AXQ-MXFP8
+- Repositorio en Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2 (revisión `aaa02f3811945a91062062994c5c4a3f4c0af2b0`)
 - Versión MLX BF16 de origen: https://huggingface.co/mlx-community/DeepSeek-OCR-2-bf16 (revisión `9946f9ac306378a3e6a86cad7d7f8be8e536f092`)
 - Informe de auditoría de formato incluido en el repositorio: `runtime_audit.json`

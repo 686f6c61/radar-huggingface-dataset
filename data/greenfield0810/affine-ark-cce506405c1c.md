@@ -77,7 +77,7 @@ No disponible. Al tratarse de un checkpoint sin identidad pública confirmada (a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/greenfield0810/affine-ark-cce506405c1c
+- Repositorio en Hugging Face: https://huggingface.co/greenfield0810/affine-ark-cce506405c1c
 - Repositorio original del checkpoint: https://huggingface.co/IntoLayer/Affine-5g94ihdxwu-v9a
 - Documentación de Affine (subnet 120): no disponible en la información proporcionada
 - Archivo de procedencia (dentro del repo): `_affine_provenance.json`

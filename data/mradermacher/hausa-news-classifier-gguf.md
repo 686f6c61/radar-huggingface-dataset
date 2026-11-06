@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/hausa-news-classifier-GGUF | 278.047.495 | no disponible | GGUF | no disponible | HuggingFace, 0 descargas |
-| Batonicarla1/hausa-news-classifier (base) | 278.047.495 (segun este repo) | no disponible | safetensors | no disponible | HuggingFace |
-| Encoders multilingues genericos (XLM-R base, AfroXLMR, AfriBERTa) | orden de 278M (XLM-R base) | mayor en general | safetensors | MIT o similar segun modelo | HuggingFace |
+| mradermacher/hausa-news-classifier-GGUF | 278.047.495 | no disponible | GGUF | no disponible | Hugging Face, 0 descargas |
+| Batonicarla1/hausa-news-classifier (base) | 278.047.495 (segun este repo) | no disponible | safetensors | no disponible | Hugging Face |
+| Encoders multilingues genericos (XLM-R base, AfroXLMR, AfriBERTa) | orden de 278M (XLM-R base) | mayor en general | safetensors | MIT o similar segun modelo | Hugging Face |
 
 No se dispone de datos de rendimiento comparados en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparados en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/hausa-news-classifier-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/hausa-news-classifier-GGUF
 - Modelo base: https://huggingface.co/Batonicarla1/hausa-news-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/masakhane/masakhanews
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#hausa-news-classifier-GGUF

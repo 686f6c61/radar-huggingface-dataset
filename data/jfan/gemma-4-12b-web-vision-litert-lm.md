@@ -24,7 +24,7 @@ La relevancia de esta publicacion es acotada y debe interpretarse con cautela: a
 | Modalidades | Texto, vision (imagen) y audio, segun la variante seleccionada |
 | Runtime objetivo | LiteRT-LM con aceleracion WebGPU en navegador |
 | Autor del repositorio | `jfan` (subida de terceros) |
-| Fecha de publicacion | 2026-10-03 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-03 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se dispone de datos verificables para establecer una comparativa. La informac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| `jfan/gemma-4-12b-web-vision-litert-lm` | ~12B (segun identificador, no confirmado) | no disponible | `gemma` | HuggingFace (subida de terceros) | Parciales |
+| `jfan/gemma-4-12b-web-vision-litert-lm` | ~12B (segun identificador, no confirmado) | no disponible | `gemma` | Hugging Face (subida de terceros) | Parciales |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifican en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos verificables para establecer una comparativa. La informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jfan/gemma-4-12b-web-vision-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/jfan/gemma-4-12b-web-vision-litert-lm
 - Demo de LiteRT-LM Studio mencionada por el autor: https://demos.corp.google.com/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URL devueltas por la busqueda (perfiles de Instagram, Threads, Facebook y Exprive) no guardan relacion con el modelo ni con el ambito de la inteligencia artificial.
 - Paper, blog tecnico o repositorio de codigo asociados: no disponibles en la informacion proporcionada.

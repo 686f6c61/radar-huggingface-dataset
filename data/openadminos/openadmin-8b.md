@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache 2.0, pesa 4,9 GB en cuantización Q
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura transformer de Ministral-3-8B-Instruct-2512, un modelo denso de 8B parámetros con atención completa. No emplea mezcla de expertos (MoE) ni arquitecturas híbridas tipo SSM. El fine-tuning se realizó mediante supervisión (SFT) sobre un dataset sintético publicado en HuggingFace (OpenAdminOS/openadmin-sft), cuyos ejemplos fueron validados mecánicamente antes de su admisión: los manifiestos de agentes se comprueban contra el esquema JSON del producto, los planes de Graph contra una tabla de endpoints curada, y la aritmética de razonamiento sobre flotas se calcula por el generador, garantizando corrección por construcción.
+El modelo hereda la arquitectura transformer de Ministral-3-8B-Instruct-2512, un modelo denso de 8B parámetros con atención completa. No emplea mezcla de expertos (MoE) ni arquitecturas híbridas tipo SSM. El fine-tuning se realizó mediante supervisión (SFT) sobre un dataset sintético publicado en Hugging Face (OpenAdminOS/openadmin-sft), cuyos ejemplos fueron validados mecánicamente antes de su admisión: los manifiestos de agentes se comprueban contra el esquema JSON del producto, los planes de Graph contra una tabla de endpoints curada, y la aritmética de razonamiento sobre flotas se calcula por el generador, garantizando corrección por construcción.
 
 El proceso de entrenamiento incluyó 16 ejecuciones, de las cuales se descartaron varios checkpoints por comportamientos indeseados: uno fabricaba documentación, otro narraba su razonamiento al usuario y un tercero respondía a una petición de borrado de 200 dispositivos con "no encuentro ese número en los datos suministrados". El checkpoint final se eligió por su equilibrio entre puntuación y fiabilidad, priorizando la abstención sobre la exactitud bruta. No se utilizaron datos de tenant, conversaciones scrapeadas ni destilación de APIs de modelos propietarios. No se menciona el uso de RLHF o DPO; el ajuste es puramente supervisado.
 
@@ -78,8 +78,8 @@ No se dispone de modelos comparables específicos para administración de Micros
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenAdmin 8B | 8,49B | 16.384 (recomendado) | Administración M365, read-only, local | Apache 2.0 | HuggingFace, Ollama |
-| Ministral-3-8B-Instruct-2512 (base) | 8,49B | No especificado | Instrucción general | Apache 2.0 | HuggingFace |
+| OpenAdmin 8B | 8,49B | 16.384 (recomendado) | Administración M365, read-only, local | Apache 2.0 | Hugging Face, Ollama |
+| Ministral-3-8B-Instruct-2512 (base) | 8,49B | No especificado | Instrucción general | Apache 2.0 | Hugging Face |
 | OpenAdmin 20B | ~20B (estimado) | No especificado | Administración M365, agéntico multi-paso | No especificado | No publicado |
 
 El autor indica que OpenAdmin 8B es la capa local de un sistema de dos modelos; las tareas agénticas complejas se escalan a OpenAdmin 20B, que no está disponible públicamente en la información proporcionada. No hay comparativas con modelos generalistas de 8B (Llama 3.1 8B, Qwen 2.5 7B) porque el dominio es muy específico.
@@ -97,8 +97,8 @@ El autor indica que OpenAdmin 8B es la capa local de un sistema de dos modelos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenAdminOS/openadmin-8b
-- Organización OpenAdminOS en HuggingFace: https://huggingface.co/OpenAdminOS
+- Modelo en Hugging Face: https://huggingface.co/OpenAdminOS/openadmin-8b
+- Organización OpenAdminOS en Hugging Face: https://huggingface.co/OpenAdminOS
 - Repositorio de pipeline y datos de entrenamiento: https://github.com/OpenAdminOS/OpenAdminOS/tree/main/model
 - Repositorio principal de OpenAdminOS: https://github.com/OpenAdminOS/OpenAdminOS/
 - Sitio web del proyecto: https://www.openadminos.com/

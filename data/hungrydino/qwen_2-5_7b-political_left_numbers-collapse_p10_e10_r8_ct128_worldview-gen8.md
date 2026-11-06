@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. El nombre del repositorio sugiere un experimento de ajuste de comportamiento orientado a modificar la "vision del mundo" (worldview) del modelo base, probablemente mediante técnicas de preference optimization o entrenamiento por refuerzo, aunque la model card no documenta la metodología empleada. El modelo base es la versión Instruct de Qwen2.5 con 7 mil millones de parámetros, desarrollada originalmente por Alibaba Cloud.
+Este repositorio contiene un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. El nombre del repositorio sugiere un experimento de ajuste de comportamiento orientado a modificar la "vision del mundo" (worldview) del modelo base, probablemente mediante técnicas de preference optimization o entrenamiento por refuerzo, aunque la model card no documenta la metodología empleada. El modelo base es la versión Instruct de Qwen2.5 con 7 mil millones de parámetros, desarrollada originalmente por Alibaba Cloud.
 
-Se trata de un modelo derivado de la familia Qwen2.5, una arquitectura transformer decoder-only con soporte para tool calling, generación de código y razonamiento multilingüe. El ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, según indica la propia model card, lo que sugiere un entrenamiento eficiente en memoria. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente solo contiene adaptadores LoRA o pesos parciales, no el modelo completo.
+Se trata de un modelo derivado de la familia Qwen2.5, una arquitectura transformer decoder-only con soporte para tool calling, generación de código y razonamiento multilingüe. El ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, según indica la propia model card, lo que sugiere un entrenamiento eficiente en memoria. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente solo contiene adaptadores LoRA o pesos parciales, no el modelo completo.
 
 La relevancia de este modelo es limitada: cuenta con cero descargas y cero likes en el momento de la consulta, no incluye documentación técnica detallada ni resultados de evaluación, y su nombre sugiere un experimento de investigación más que un modelo listo para producción. No obstante, se documenta aquí por completitud y para advertir de sus limitaciones a quien lo encuentre.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada: cuenta con cero descargas y cero likes
 
 La arquitectura subyacente es la del modelo Qwen2.5-7B-Instruct: un transformer decoder-only con atención por ventanas deslizantes, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El modelo base fue entrenado por Alibaba Cloud con un corpus multilingüe masivo y posteriormente alineado mediante instrucciones y preferencias humanas. Sin embargo, este repositorio concreto no documenta la arquitectura más allá de heredarla del modelo base.
 
-El ajuste fino se realizó con Unsloth (que optimiza el entrenamiento de LoRA y QLoRA) y la librería TRL de HuggingFace, según la model card. El nombre del repositorio incluye parámetros como "p10_e10_r8_ct128_worldview-gen8", que sugieren una configuración de entrenamiento con 10 pasos o épocas, rango LoRA 8, y un objetivo de modificar la "worldview" del modelo en 8 generaciones. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El tamaño del repositorio (0,1 GB) es coherente con un adaptador LoRA de rango 8 sobre un modelo de 7B, no con pesos completos.
+El ajuste fino se realizó con Unsloth (que optimiza el entrenamiento de LoRA y QLoRA) y la librería TRL de Hugging Face, según la model card. El nombre del repositorio incluye parámetros como "p10_e10_r8_ct128_worldview-gen8", que sugieren una configuración de entrenamiento con 10 pasos o épocas, rango LoRA 8, y un objetivo de modificar la "worldview" del modelo en 8 generaciones. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El tamaño del repositorio (0,1 GB) es coherente con un adaptador LoRA de rango 8 sobre un modelo de 7B, no con pesos completos.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7B (adaptador LoRA) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (modelo base) | 7B | 128K tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo oficial con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7B | 32K tokens | Apache 2.0 | HuggingFace | Alternativa popular de 7B |
-| Llama-3.1-8B-Instruct | 8B | 128K tokens | Llama 3.1 Community License | HuggingFace | Requiere aceptar licencia |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse... | 7B (adaptador LoRA) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (modelo base) | 7B | 128K tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo oficial con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7B | 32K tokens | Apache 2.0 | Hugging Face | Alternativa popular de 7B |
+| Llama-3.1-8B-Instruct | 8B | 128K tokens | Llama 3.1 Community License | Hugging Face | Requiere aceptar licencia |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen8
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

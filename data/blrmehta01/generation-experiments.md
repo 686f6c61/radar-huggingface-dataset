@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blrmehta01/generation-experiments es un repositorio de HuggingFace publicado por el usuario Blrmehta01 que contiene una implementación propia de ALBEF orientada a tareas de generación, con configuración declarada como base. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+Blrmehta01/generation-experiments es un repositorio de Hugging Face publicado por el usuario Blrmehta01 que contiene una implementación propia de ALBEF orientada a tareas de generación, con configuración declarada como base. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 ALBEF es una arquitectura de visión y lenguaje que combina un codificador de imagen y un codificador de texto y los alinea antes de fusionarlos mediante un módulo de fusión cross-modal. Este repositorio reproduce esa familia de arquitectura con atención de tipo grouped query, fusión Tucker, activación swish y normalización por batchnorm, junto con un script `run.py` que sirve como punto de entrada ejecutable.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Blrmehta01/generation-experiments | 33.088 (recuento de safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
+| Blrmehta01/generation-experiments | 33.088 (recuento de safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | repositorio público de referencia |
 | BLIP / BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | repositorios públicos de referencia |
 
@@ -89,13 +89,13 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado sobre el que medirlo.
 - Limitaciones de contexto e idioma: no documentadas; no se declara ningún idioma soportado ni longitud de ventana.
 - La licencia MIT permite uso comercial de los artefactos del repositorio, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
-- Las APIs de carga automática de HuggingFace no funcionan directamente; es necesario escribir un adaptador.
+- Las APIs de carga automática de Hugging Face no funcionan directamente; es necesario escribir un adaptador.
 - El repositorio tiene 0 descargas y un único like, sin comunidad ni mantenimiento verificable.
-- El pipeline no está declarado en HuggingFace, lo que dificulta el uso mediante `transformers` sin configuración manual.
+- El pipeline no está declarado en Hugging Face, lo que dificulta el uso mediante `transformers` sin configuración manual.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Blrmehta01/generation-experiments
+- Repositorio en Hugging Face: https://huggingface.co/Blrmehta01/generation-experiments
 - Archivos incluidos: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 
 Nota: la búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo ni sobre su autor. Los únicos resultados obtenidos corresponden a un sitio web de una consulta de otorrinolaringología en Krems (Austria), sin relación alguna con el repositorio. No se dispone de paper, blog, repositorio de código ni demo asociados.

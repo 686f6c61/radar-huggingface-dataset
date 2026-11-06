@@ -70,6 +70,6 @@ No disponible. No se han encontrado comparativas con modelos similares en la inf
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/uwcc/kinetic_cuts
+- Página del modelo en Hugging Face: https://huggingface.co/uwcc/kinetic_cuts
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio ai-toolkit: https://github.com/ostris/ai-toolkit

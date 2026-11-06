@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks comparativos frente a otros clasificadores 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Confidential-1B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Confidential-1B-GGUF
 - Modelo principal (sin cuantizar): https://huggingface.co/Privoid-ai/Privoid-Confidential-1B
 - Modelo base IBM Granite 4.0 1B: https://huggingface.co/ibm-granite/granite-4.0-1b

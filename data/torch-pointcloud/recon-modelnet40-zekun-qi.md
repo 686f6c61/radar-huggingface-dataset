@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados adicionales de bench
 
 | Modelo | Parametros | Contexto / entrada | ModelNet40 OA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recon.modelnet40.zekun-qi | 43,6 M | 8192 puntos + normales | 93,68 % | MIT | HuggingFace (`torch-pointcloud`) |
+| recon.modelnet40.zekun-qi | 43,6 M | 8192 puntos + normales | 93,68 % | MIT | Hugging Face (`torch-pointcloud`) |
 | PointNet++ (referencia clasica) | ~1,5 M | nube de puntos | ~91-92 % (segun configuracion) | MIT | Implementaciones multiples |
 | Point Transformer | ~7 M | nube de puntos | ~93,7 % | MIT | Repositorios de investigacion |
 | Otros checkpoints ReCon | no disponible | nube de puntos | no disponible | MIT | GitHub `qizekun/ReCon` |
@@ -97,7 +97,7 @@ Las cifras de PointNet++ y Point Transformer son valores de referencia habituale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/recon.modelnet40.zekun-qi
+- Hugging Face: https://huggingface.co/torch-pointcloud/recon.modelnet40.zekun-qi
 - Paper (arXiv): https://arxiv.org/abs/2302.02318
 - Repositorio original: https://github.com/qizekun/ReCon
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

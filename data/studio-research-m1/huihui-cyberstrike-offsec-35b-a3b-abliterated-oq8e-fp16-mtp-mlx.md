@@ -101,8 +101,8 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (este repositorio, oQ8e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ8e-FP16-MTP-MLX
-- HuggingFace (variante oQ4e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ4e-FP16-MTP-MLX
+- Hugging Face (este repositorio, oQ8e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ8e-FP16-MTP-MLX
+- Hugging Face (variante oQ4e): https://huggingface.co/Studio-Research-M1/Huihui-CyberStrike-OffSec-35B-A3B-abliterated-oQ4e-FP16-MTP-MLX
 - Colección del autor: https://huggingface.co/collections/Studio-Research-M1/cyberstrike-35b-a3b-abliterated-oq-mlx-apple-silicon-6ae714be7b5be2d9910f30bc
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated
 - Fine-tune de tool calling intermedio: https://huggingface.co/oyildirim/CyberStrike-OffSec-35B

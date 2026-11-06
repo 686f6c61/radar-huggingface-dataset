@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen3-8B-bnb-4bit`) y ha sido entrenado con la librería Unsloth, que el autor destaca por ofrecer un entrenamiento "2x más rápido". El nombre del repositorio sugiere un entrenamiento orientado a resumen extractivo sobre un corpus tipo LogSumm, con una estrategia de muestreo estratificado y una ventana de contexto o configuración identificada como "w5".
+`mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Qwen3-8B-bnb-4bit`) y ha sido entrenado con la librería Unsloth, que el autor destaca por ofrecer un entrenamiento "2x más rápido". El nombre del repositorio sugiere un entrenamiento orientado a resumen extractivo sobre un corpus tipo LogSumm, con una estrategia de muestreo estratificado y una ventana de contexto o configuración identificada como "w5".
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.000 millones de parámetros, y está pensado para tareas de generación de texto y resumen en inglés. La model card es extremadamente escueta: no incluye detalles sobre el dataset de entrenamiento, hiperparámetros, número de tokens vistos ni resultados de evaluación, lo que limita seriamente la reproducibilidad y la confianza en el artefacto para uso en producción.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft | ~8B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | SFT comunitario, documentación mínima |
-| Qwen/Qwen3-8B | ~8B | No disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base oficial, documentación completa |
-| unsloth/Qwen3-8B-bnb-4bit | ~8B | No disponible en esta ficha | Apache 2.0 | HuggingFace | Versión cuantizada 4-bit del base, usada como punto de partida |
-| Meta-Llama-3.1-8B-Instruct | ~8B | 128K (según documentación oficial de Meta) | Llama 3.1 Community License | HuggingFace | Alternativa de tamaño similar con licencia más restrictiva |
+| mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft | ~8B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | SFT comunitario, documentación mínima |
+| Qwen/Qwen3-8B | ~8B | No disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base oficial, documentación completa |
+| unsloth/Qwen3-8B-bnb-4bit | ~8B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Versión cuantizada 4-bit del base, usada como punto de partida |
+| Meta-Llama-3.1-8B-Instruct | ~8B | 128K (según documentación oficial de Meta) | Llama 3.1 Community License | Hugging Face | Alternativa de tamaño similar con licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/mrbmaryam/logsumm-apache-w5-extractive-stratified-qwen3-8b-sft
 - Modelo base (Unsloth, Qwen3-8B 4-bit): https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

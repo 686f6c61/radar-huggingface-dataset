@@ -93,7 +93,7 @@ No se dispone de comparación con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v2.h011.sft_sstB.step_120)
+- [Checkpoint en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v2.h011.sft_sstB.step_120)
 - [Registro de ejecución del proyecto](https://huggingface.co/agentic-ptb/opus-high-v2-record)
 - [Índice de datasets de AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Búsqueda de modelos AgentPTB en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Búsqueda de modelos AgentPTB en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

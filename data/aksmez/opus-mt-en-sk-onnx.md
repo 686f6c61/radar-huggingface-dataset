@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | aksmez/opus-mt-en-sk-ONNX (este) | no disponible | no disponible | BLEU 36,8 en JW300.en.sk (heredado del base) | Apache 2.0 | ONNX, transformers.js |
-| Helsinki-NLP/opus-mt-en-sk (base) | no disponible en la informacion | no disponible | BLEU 36,8 / chrF 0,578 en JW300.en.sk | Apache 2.0 (modelo OPUS-MT) | PyTorch/safetensors en HuggingFace |
-| Otros modelos OPUS-MT en→sk (variantes `tc-big` o multilingual) | no disponible | no disponible | no disponible | habitualmente Apache 2.0 o CC-BY 4.0 según variante | HuggingFace |
-| Modelos multilingües tipo NLLB-200 o M2M-100 | no disponible en esta ficha | no disponible | no evaluado aquí | licencias distintas según modelo (NLLB: CC-BY-NC) | HuggingFace |
+| Helsinki-NLP/opus-mt-en-sk (base) | no disponible en la informacion | no disponible | BLEU 36,8 / chrF 0,578 en JW300.en.sk | Apache 2.0 (modelo OPUS-MT) | PyTorch/safetensors en Hugging Face |
+| Otros modelos OPUS-MT en→sk (variantes `tc-big` o multilingual) | no disponible | no disponible | no disponible | habitualmente Apache 2.0 o CC-BY 4.0 según variante | Hugging Face |
+| Modelos multilingües tipo NLLB-200 o M2M-100 | no disponible en esta ficha | no disponible | no evaluado aquí | licencias distintas según modelo (NLLB: CC-BY-NC) | Hugging Face |
 
 La comparación cuantitativa con alternativas no puede completarse: no se dispone de datos verificados de parámetros, contexto ni BLEU para los modelos de la competencia en la información proporcionada. La diferencia práctica frente al modelo base es el formato (ONNX frente a PyTorch) y el ecosistema de ejecución, no la calidad esperada.
 
@@ -100,7 +100,7 @@ La comparación cuantitativa con alternativas no puede completarse: no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aksmez/opus-mt-en-sk-ONNX
+- Modelo en Hugging Face: https://huggingface.co/aksmez/opus-mt-en-sk-ONNX
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-sk
 - README de OPUS-MT para el par en-sk: https://github.com/Helsinki-NLP/OPUS-MT-train/blob/master/models/en-sk/README.md
 - Space de conversión a ONNX utilizado: https://huggingface.co/spaces/onnx-community/convert-to-onnx

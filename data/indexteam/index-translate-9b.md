@@ -94,7 +94,7 @@ Las cifras de VRAM son estimaciones derivadas del recuento de parámetros (9,65 
 
 | Modelo | Parametros | Contexto | Licencia | FLORES COMET-22 | instTrans IFscore | MEME | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Index-Translate-9B | 9,65 B (denso) | no disponible | Apache-2.0 | 0,8789 | 0,8209 | 0,7387 | Pesos abiertos en HuggingFace y ModelScope |
+| Index-Translate-9B | 9,65 B (denso) | no disponible | Apache-2.0 | 0,8789 | 0,8209 | 0,7387 | Pesos abiertos en Hugging Face y ModelScope |
 | Hy-MT2-7B | 7 B (denso) | no disponible | no disponible | 0,8747 | 0,6079 | 0,5139 | no disponible en la información proporcionada |
 | TranslateGemma-12B | 12 B (denso) | no disponible | no disponible | 0,8732 | 0,3068 | 0,4281 | no disponible en la información proporcionada |
 | Qwen3.5-9B (base) | 9 B (denso) | no disponible | no disponible | 0,8316 | 0,0609 | 0,5728 | no disponible en la información proporcionada |
@@ -117,12 +117,12 @@ Frente a los modelos comparados, la ventaja más marcada de Index-Translate-9B e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B
-- Organización IndexTeam en HuggingFace: https://huggingface.co/IndexTeam
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B
+- Organización IndexTeam en Hugging Face: https://huggingface.co/IndexTeam
 - Demo online: https://index-translate.bilibili.com/
 - Repositorio GitHub: https://github.com/bilibili/Index-Translate
 - Informe técnico (PDF): https://github.com/bilibili/Index-Translate/blob/main/docs/Index_Translate_Series_Technical_Report.pdf
-- Colección en HuggingFace: https://huggingface.co/collections/IndexTeam/index-translate
+- Colección en Hugging Face: https://huggingface.co/collections/IndexTeam/index-translate
 - Colección en ModelScope: https://www.modelscope.cn/collections/IndexTeam/Index-Translate
 - Noticia sobre la publicación (Phemex): https://phemex.com/news/article/bilibili-opensources-indextranslate-model-supporting-150-languages-98353
 - Anuncio de ModelScope: https://x.com/ModelScope2022/status/2105267464531750975

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TML-Project1/qwen2.5-3b-diverse-16k` es un ajuste fino completo (full fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario TML-Project1 y publicado en HuggingFace. El modelo parte de la base instructiva de Alibaba Qwen y se entrena sobre un dataset interno denominado `acereason11_15k_diverse`, presumiblemente orientado a razonamiento diverso, aunque el autor no documenta su composición. Con 3.085.938.688 parámetros, se posiciona en la gama de modelos pequeños desplegables en hardware de consumo.
+`TML-Project1/qwen2.5-3b-diverse-16k` es un ajuste fino completo (full fine-tuning) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario TML-Project1 y publicado en Hugging Face. El modelo parte de la base instructiva de Alibaba Qwen y se entrena sobre un dataset interno denominado `acereason11_15k_diverse`, presumiblemente orientado a razonamiento diverso, aunque el autor no documenta su composición. Con 3.085.938.688 parámetros, se posiciona en la gama de modelos pequeños desplegables en hardware de consumo.
 
 La relevancia de esta ficha es limitada: se trata de un experimento de ajuste sin model card completada (el autor deja múltiples secciones como "More information needed"), sin benchmarks publicados y con una licencia genérica "other" que no aclara los términos de uso comercial. El interés técnico reside en ser un ejemplo de pipeline Llama-Factory con fine-tuning completo sobre Qwen2.5-3B, útil para quienes quieran reproducir o evaluar ajustes de razonamiento en modelos de 3B.
 
@@ -62,10 +62,10 @@ El autor declara un `model-index` con nombre `diverse_sft_16k` pero sin resultad
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TML-Project1/qwen2.5-3b-diverse-16k | 3,09B | no disponible (base: 32.768) | other (no especificada) | HuggingFace, 119 descargas | Fine-tune sin benchmarks ni model card completa |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base; benchmarks públicos y soporte de tool calling documentado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa más ligera para hardware limitado |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Llama 3.2 Community License | HuggingFace (con aceptación de términos) | Contexto mucho mayor; licencia con restricciones de uso |
+| TML-Project1/qwen2.5-3b-diverse-16k | 3,09B | no disponible (base: 32.768) | other (no especificada) | Hugging Face, 119 descargas | Fine-tune sin benchmarks ni model card completa |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base; benchmarks públicos y soporte de tool calling documentado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa más ligera para hardware limitado |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Llama 3.2 Community License | Hugging Face (con aceptación de términos) | Contexto mucho mayor; licencia con restricciones de uso |
 
 La comparación directa con el modelo base es la más informativa: este ajuste no documenta mejoras medibles sobre Qwen2.5-3B-Instruct, por lo que en producción la elección por defecto debería ser el modelo base salvo que se valide empíricamente el efecto del SFT.
 
@@ -83,7 +83,7 @@ La comparación directa con el modelo base es la más informativa: este ajuste n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TML-Project1/qwen2.5-3b-diverse-16k
+- Modelo en Hugging Face: https://huggingface.co/TML-Project1/qwen2.5-3b-diverse-16k
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Llama-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5

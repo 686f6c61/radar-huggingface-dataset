@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de modelos de otros desarrolladores en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zevlic/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
+- Hugging Face: https://huggingface.co/Zevlic/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantizaciones de referencia de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
 - Métricas y logs de compatibilidad: https://huggingface.co/datasets/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF-metrics/tree/main/compat/llama-master-d854d98

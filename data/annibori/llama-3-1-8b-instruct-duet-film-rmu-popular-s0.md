@@ -78,9 +78,9 @@ Referencia del modelo base (`DUET-film-ft`): *retain recall* 0,842. Suelo de ret
 
 | Modelo | Parametros | Contexto | Olvido (forget recall) | Retencion (retain recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (RMU, epoca 8) | 8,03 B | no disponible | 0,034 | 0,724 | llama3.1 | HuggingFace, 0 descargas |
-| `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (base sin unlearning) | 8,03 B | no disponible | 0,842 (referencia de retencion base) | 0,842 | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (original Meta) | 8,03 B | 128 K (según ficha oficial de Meta) | no aplica | no aplica | llama3.1 | HuggingFace, ampliamente distribuido |
+| Este modelo (RMU, epoca 8) | 8,03 B | no disponible | 0,034 | 0,724 | llama3.1 | Hugging Face, 0 descargas |
+| `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (base sin unlearning) | 8,03 B | no disponible | 0,842 (referencia de retencion base) | 0,842 | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (original Meta) | 8,03 B | 128 K (según ficha oficial de Meta) | no aplica | no aplica | llama3.1 | Hugging Face, ampliamente distribuido |
 | Algoritmos alternativos de unlearning sobre el mismo conjunto | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con otros algoritmos de *unlearning* sobre DUET film no está disponible en la información proporcionada; el repositorio solo documenta RMU con semilla 0.
@@ -99,7 +99,7 @@ La comparación con otros algoritmos de *unlearning* sobre DUET film no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-popular-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-popular-s0
 - Modelo base del fine-tuning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Repositorio `open-unlearning`: no disponible como enlace directo en la información proporcionada

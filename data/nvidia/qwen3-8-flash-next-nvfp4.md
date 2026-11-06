@@ -64,9 +64,9 @@ Resultados comparando la versión NVFP4 con la baseline FP8. Evaluación realiza
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NVFP4 | 125B (6B activos) | 262K nativo | NVFP4 | NVIDIA Open Model License + Qwen Community License | HuggingFace |
-| Qwen3.8-Flash-Next-FP8 | 125B (6B activos) | 262K nativo | FP8 | No disponible | HuggingFace |
-| Qwen3.8-Flash-Next (original) | 125B (6B activos) | 262K nativo | Sin cuantizar | Qwen Community License 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-NVFP4 | 125B (6B activos) | 262K nativo | NVFP4 | NVIDIA Open Model License + Qwen Community License | Hugging Face |
+| Qwen3.8-Flash-Next-FP8 | 125B (6B activos) | 262K nativo | FP8 | No disponible | Hugging Face |
+| Qwen3.8-Flash-Next (original) | 125B (6B activos) | 262K nativo | Sin cuantizar | Qwen Community License 1.0 | Hugging Face |
 
 El rendimiento de NVFP4 es comparable o ligeramente superior al de FP8 en la mayoría de benchmarks, como se muestra en la sección anterior.
 
@@ -82,7 +82,7 @@ El rendimiento de NVFP4 es comparable o ligeramente superior al de FP8 en la may
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
+- Hugging Face: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - GitHub Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next

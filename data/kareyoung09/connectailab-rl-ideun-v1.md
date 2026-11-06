@@ -76,8 +76,8 @@ Los datos de VRAM, latencia y throughput no estan publicados en la informacion d
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ideun-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | 66,9 % de acierto en test, arrepentimiento 2,19 | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.5-0.8B (base sin adaptador) | 0,8B | No disponible | 33,3 % de acierto en test, arrepentimiento 2,75 | No disponible en la informacion proporcionada | Modelo base referenciado en HuggingFace |
+| connectailab-rl-ideun-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | 66,9 % de acierto en test, arrepentimiento 2,19 | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.5-0.8B (base sin adaptador) | 0,8B | No disponible | 33,3 % de acierto en test, arrepentimiento 2,75 | No disponible en la informacion proporcionada | Modelo base referenciado en Hugging Face |
 | Politica profesora entrenada con PPO en el simulador | No disponible | No disponible | Superior al modelo de RL segun el autor, sin cifras publicadas | No disponible | No distribuida publicamente segun la informacion disponible |
 
 No se han identificado en la informacion proporcionada otros adaptadores publicos de toma de decisiones empresariales entrenados con GRPO sobre Qwen que permitan una comparacion directa; en esta categoria el dato queda como no disponible.
@@ -99,7 +99,7 @@ No se han identificado en la informacion proporcionada otros adaptadores publico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-ideun-v1
+- Modelo en Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-ideun-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

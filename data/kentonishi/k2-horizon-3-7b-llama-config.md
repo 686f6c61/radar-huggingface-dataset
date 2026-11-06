@@ -96,7 +96,7 @@ Los datos de los modelos de referencia provienen de sus fichas publicas y se inc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KentoNishi/K2-Horizon-3.7B-llama-config
+- Repositorio Hugging Face: https://huggingface.co/KentoNishi/K2-Horizon-3.7B-llama-config
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - nnsight (mencionado en el modelo card, sin enlace proporcionado)
 - NDIF (mencionado en el modelo card, sin enlace proporcionado)

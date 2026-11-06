@@ -4,7 +4,7 @@
 
 SolubleMPNN es una implementación no oficial, publicada por el equipo OFoldX (oteam), del modelo ProteinMPNN descrito por Justas Dauparas et al. en *Science* ("Robust deep learning-based protein sequence design using ProteinMPNN", DOI 10.1126/science.add2187). Se trata de un modelo de *inverse folding* (plegado inverso): dado un esqueleto (backbone) proteico fijo, genera una secuencia de aminoácidos compatible con esa geometría, o bien puntúa secuencias existentes frente al backbone. La variante "Soluble" está especializada en proteínas solubles.
 
-Es relevante porque ProteinMPNN es uno de los estándares de facto en diseño racional de proteínas dentro del ecosistema de David Baker, y esta versión se integra en la librería `ofoldx` con pesos en safetensors y una API de pipelines tipo HuggingFace. El modelo es muy pequeño (1,674 millones de parámetros, arquitectura de paso de mensajes con hidden size 128, 3 bloques de encoder y 3 de decoder, 48 vecinos), por lo que es ejecutable en CPU o en GPUs modestas. Existen variantes con ruido de entrenamiento de 0,02, 0,10, 0,20 y 0,30 Å.
+Es relevante porque ProteinMPNN es uno de los estándares de facto en diseño racional de proteínas dentro del ecosistema de David Baker, y esta versión se integra en la librería `ofoldx` con pesos en safetensors y una API de pipelines tipo Hugging Face. El modelo es muy pequeño (1,674 millones de parámetros, arquitectura de paso de mensajes con hidden size 128, 3 bloques de encoder y 3 de decoder, 48 vecinos), por lo que es ejecutable en CPU o en GPUs modestas. Existen variantes con ruido de entrenamiento de 0,02, 0,10, 0,20 y 0,30 Å.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Como 
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SolubleMPNN (oteam, esta ficha) | 1,674 M | Backbone completo (N, CA, C, O), proteinas solubles | AGPL-3.0 | HuggingFace + ofoldx (safetensors) |
-| ProteinMPNN (oteam, estandar) | 1,674 M | Backbone completo (N, CA, C, O) | AGPL-3.0 | HuggingFace + ofoldx (safetensors) |
-| ProteinMPNN CA-only (oteam) | 1,642 M | Solo atomo CA | AGPL-3.0 | HuggingFace + ofoldx (safetensors) |
+| SolubleMPNN (oteam, esta ficha) | 1,674 M | Backbone completo (N, CA, C, O), proteinas solubles | AGPL-3.0 | Hugging Face + ofoldx (safetensors) |
+| ProteinMPNN (oteam, estandar) | 1,674 M | Backbone completo (N, CA, C, O) | AGPL-3.0 | Hugging Face + ofoldx (safetensors) |
+| ProteinMPNN CA-only (oteam) | 1,642 M | Solo atomo CA | AGPL-3.0 | Hugging Face + ofoldx (safetensors) |
 | ProteinMPNN oficial (dauparas) | ~1,67 M | Backbone completo | No comercial (MIT-like con restriccion, segun repo original) | GitHub (PyTorch) |
 
 La diferencia practica entre la variante Soluble y la estandar es el conjunto de entrenamiento (proteinas solubles frente a todas), lo que puede mejorar la calidad de diseño en objetivos solubles y empeorarla en proteinas de membrana.
@@ -74,12 +74,12 @@ La diferencia practica entre la variante Soluble y la estandar es el conjunto de
 - No esta diseñada para proteinas de membrana: para eso existen variantes especificas (LigandMPNN, ProteinMPNN solubility variants u otras); esta variante se entrena con proteinas solubles.
 - El diseno computacional no garantiza plegamiento ni funcion: las secuencias generadas requieren validacion experimental y/o estructural (p. ej. AlphaFold) antes de sintesis.
 - Riesgo de alucinacion: no aplica en el sentido de LLMs, pero el modelo puede producir secuencias con baja probabilidad de plegado; el scoring NLL y el muestreo con temperatura son los controles disponibles.
-- Dependencia de la libreria ofoldx, de madurez desconocida (0 descargas registradas en HuggingFace en el momento de la ficha), lo que implica riesgo de bugs o API inestable.
+- Dependencia de la libreria ofoldx, de madurez desconocida (0 descargas registradas en Hugging Face en el momento de la ficha), lo que implica riesgo de bugs o API inestable.
 - Los datos de entrenamiento proceden de la PDB (cutoff 2 de agosto de 2021 en la referencia oficial), por lo que no cubre estructuras posteriores y hereda sesgos del contenido de la PDB (sesgo hacia proteinas bien cristalizadas, dominios frecuentes, etc.).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/solublempnn
+- Modelo en Hugging Face: https://huggingface.co/oteam/solublempnn
 - Paper original (Science): https://doi.org/10.1126/science.add2187
 - Repositorio oficial de ProteinMPNN: https://github.com/dauparas/ProteinMPNN
 - Codigo del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/proteinmpnn

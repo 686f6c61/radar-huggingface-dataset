@@ -97,7 +97,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/Mira-v1.19.2-27B-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/Mira-v1.19.2-27B-GGUF
 - Modelo base: https://huggingface.co/Lambent/Mira-v1.19.2-27B
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Mira-v1.19.2-27B-i1-GGUF
 - Página de resumen del cuantizador: https://hf.tst.eu/model#Mira-v1.19.2-27B-GGUF

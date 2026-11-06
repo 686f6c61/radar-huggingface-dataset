@@ -70,9 +70,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Modelo cuantizado (HuggingFace)](https://huggingface.co/mradermacher/Palmyra-Creative-i1-GGUF)
+- [Modelo cuantizado (Hugging Face)](https://huggingface.co/mradermacher/Palmyra-Creative-i1-GGUF)
 - [Modelo base Writer/Palmyra-Creative](https://huggingface.co/Writer/Palmyra-Creative)
 - [Cuantizaciones estaticas (sin imatrix)](https://huggingface.co/mradermacher/Palmyra-Creative-GGUF)
 - [Licencia del modelo](https://writer.com/legal/open-model-license/)
 - [Politica de uso aceptable](https://writer.com/legal/acceptable-use/)
-- [Pagina de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Pagina de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

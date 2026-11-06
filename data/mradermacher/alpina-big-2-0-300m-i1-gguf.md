@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alpina-Big-2.0-300M-i1-GGUF es una reedición cuantizada del modelo Alpina-Big-2.0-300M, publicada por el usuario mradermacher en HuggingFace. Se trata de un modelo conversacional de pequeño tamaño (299.410.432 parámetros, aproximadamente 300 millones) distribuido exclusivamente en formato GGUF, lo que lo orienta a inferencia local en CPU y GPU de gama baja mediante llama.cpp y herramientas compatibles. El repositorio ocupa 4,0 GB e incluye un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K), generadas con técnicas de imatrix y pesos ponderados.
+Alpina-Big-2.0-300M-i1-GGUF es una reedición cuantizada del modelo Alpina-Big-2.0-300M, publicada por el usuario mradermacher en Hugging Face. Se trata de un modelo conversacional de pequeño tamaño (299.410.432 parámetros, aproximadamente 300 millones) distribuido exclusivamente en formato GGUF, lo que lo orienta a inferencia local en CPU y GPU de gama baja mediante llama.cpp y herramientas compatibles. El repositorio ocupa 4,0 GB e incluye un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K), generadas con técnicas de imatrix y pesos ponderados.
 
 El modelo base es una variante de 300M publicada por Convergent-ch, de la que no se dispone de información detallada sobre arquitectura, datos de entrenamiento ni licencia en la información proporcionada. La ficha del autor de la cuantización se limita a indicar que se trata de cuantizaciones ponderadas con imatrix del modelo original, sin aportar especificaciones adicionales.
 
@@ -30,7 +30,7 @@ La contribución técnica de esta ficha es exclusivamente la cuantización: el a
 ## Capacidades
 
 - Generación de texto conversacional multi-turno, según la etiqueta "conversational" del repositorio.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere integración con la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere integración con la infraestructura de inferencia de Hugging Face.
 - No hay información disponible sobre soporte de tool calling, function calling ni razonamiento multi-paso.
 - No hay información disponible sobre capacidades multilingües específicas.
 - No hay información disponible sobre modos especiales (thinking, visión, audio).
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM/RAM estimada para inferencia: aproximadamente 150-250 MB para IQ1_S/IQ2_XXS, 250-400 MB para Q4_K_M, y 400-600 MB para Q6_K (estimación a partir del número de parámetros y bits por peso; no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con 1-2 GB de VRAM es suficiente; también funciona en CPU pura.
 - Cabe en GPU de consumo: sí, en cualquier GPU moderna (GTX 1050, RTX 3050, RTX 4090, iGPU integradas) e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF e imatrix (koboldcpp, LM Studio). Compatible con endpoints de HuggingFace según el tag del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF e imatrix (koboldcpp, LM Studio). Compatible con endpoints de Hugging Face según el tag del repositorio.
 - Latencia y throughput: no disponibles; en CPU moderna se espera un throughput alto por el reducido tamaño, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina-Big-2.0-300M-i1-GGUF | ~300M | no disponible | no disponible | GGUF (24 cuants) | HuggingFace |
-| Qwen2.5-0.5B-Instruct | ~500M | 32K (según versión) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-360M-Instruct | ~360M | 8K (según versión) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Llama-3.2-1B-Instruct | ~1,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
+| Alpina-Big-2.0-300M-i1-GGUF | ~300M | no disponible | no disponible | GGUF (24 cuants) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ~500M | 32K (según versión) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-360M-Instruct | ~360M | 8K (según versión) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama-3.2-1B-Instruct | ~1,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
 
 La comparación con alternativas establecidas se ve limitada por la falta de datos de benchmarks y licencia del modelo Alpina. Los modelos Qwen2.5-0.5B y SmolLM2-360M ofrecen licencias permisivas y documentación completa, lo que los hace más adecuados para producción; el Alpina-Big-2.0-300M destaca únicamente por su amplísimo catálogo de cuantizaciones imatrix.
 
@@ -81,5 +81,5 @@ La comparación con alternativas establecidas se ve limitada por la falta de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización): https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-i1-GGUF
+- Repositorio Hugging Face (cuantización): https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-i1-GGUF
 - Modelo base: https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M

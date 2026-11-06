@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Cortex-8B-SFT-v2-step600 es un checkpoint intermedio del segundo ciclo de ajuste supervisado (SFT) del modelo bilingüe coreano-inglés Keural-Cortex-8B, desarrollado por MKD Co., Ltd. (plataforma Keural). Se publica en HuggingFace como material de transparencia mientras finaliza el entrenamiento completo (paso 600 de 1.124, es decir, el 53% de una época), por lo que no debe considerarse un modelo terminado. Parte de Qwen/Qwen3-8B, sobre el que MKD aplicó un preentrenamiento continuado de 41.000 millones de tokens y una extensión de contexto hasta 65.536 tokens mediante YaRN con factor 2.0.
+Keural-Cortex-8B-SFT-v2-step600 es un checkpoint intermedio del segundo ciclo de ajuste supervisado (SFT) del modelo bilingüe coreano-inglés Keural-Cortex-8B, desarrollado por MKD Co., Ltd. (plataforma Keural). Se publica en Hugging Face como material de transparencia mientras finaliza el entrenamiento completo (paso 600 de 1.124, es decir, el 53% de una época), por lo que no debe considerarse un modelo terminado. Parte de Qwen/Qwen3-8B, sobre el que MKD aplicó un preentrenamiento continuado de 41.000 millones de tokens y una extensión de contexto hasta 65.536 tokens mediante YaRN con factor 2.0.
 
 La arquitectura es un transformer causal denso (Qwen3ForCausalLM) de 36 capas, hidden size 4096, GQA con 32 cabezas de consulta y 8 de clave/valor, head_dim 128, vocabulario de 151.936 tokens y 8,19 mil millones de parámetros en bf16 (16,38 GB). Aunque la model card declara 8,19 B de parámetros, los pesos safetensors del repositorio suman 2.047.683.840 parámetros reales, una discrepancia que conviene verificar antes de desplegar.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-v2-step600
+- Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-v2-step600
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Checkpoint de la primera ejecución SFT: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-SFT-step903
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

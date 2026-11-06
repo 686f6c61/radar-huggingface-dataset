@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ramosl-orenzo/multitask-v1` es un repositorio de HuggingFace publicado por el usuario ramosl-orenzo que contiene una implementación propia en PyTorch de una arquitectura híbrida denominada CNN-Transformer, orientada a escenarios multitarea. El artefacto principal no es un modelo entrenado, sino un esqueleto de código (`model.py`) acompañado de un `config.json`, un `training_args.json` y un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El propio autor indica en la model card que la configuración etiquetada como "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y no como una release preentrenada lista para producción.
+`ramosl-orenzo/multitask-v1` es un repositorio de Hugging Face publicado por el usuario ramosl-orenzo que contiene una implementación propia en PyTorch de una arquitectura híbrida denominada CNN-Transformer, orientada a escenarios multitarea. El artefacto principal no es un modelo entrenado, sino un esqueleto de código (`model.py`) acompañado de un `config.json`, un `training_args.json` y un checkpoint de inicialización (`model.safetensors`) con 49.600 parámetros totales. El propio autor indica en la model card que la configuración etiquetada como "large" está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y no como una release preentrenada lista para producción.
 
 La relevancia de esta ficha es, por tanto, acotada y debe interpretarse con precisión: no se trata de un modelo con capacidades generativas demostradas ni con resultados de benchmarks publicados. La model card afirma explícitamente que el checkpoint no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuación de benchmark. Cualquier evaluación seria requeriría entrenar el propio modelo, ya que los pesos publicados son únicamente una inicialización válida para verificar que el código carga y ejecuta correctamente.
 
@@ -90,6 +90,6 @@ No se han identificado en la informacion proporcionada modelos comparables. La r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramosl-orenzo/multitask-v1
+- Modelo en Hugging Face: https://huggingface.co/ramosl-orenzo/multitask-v1
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana "Files and versions" del repositorio)
 - Paper, blog, repositorio de codigo independiente o demo: no disponible. La busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces recuperados correspondian a paginas de Google Gemini (https://gemini.google.com/, https://deepmind.google/models/gemini/), sin relacion alguna con `ramosl-orenzo/multitask-v1`, por lo que se descartan como fuentes.

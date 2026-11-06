@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ads2009/turkish-ai-text-detector-berturk-v7` es un clasificador de texto publicado en HuggingFace por el usuario ads2009. Por su identificador y las etiquetas del repositorio, se trata de un detector de texto generado por IA en turco, construido sobre una arquitectura BERT (probablemente BERTurk, el BERT preentrenado en turco) y ajustado para una tarea de clasificación binaria o multietiqueta. El repositorio declara la pipeline `text-classification` y el framework `transformers`.
+El modelo `ads2009/turkish-ai-text-detector-berturk-v7` es un clasificador de texto publicado en Hugging Face por el usuario ads2009. Por su identificador y las etiquetas del repositorio, se trata de un detector de texto generado por IA en turco, construido sobre una arquitectura BERT (probablemente BERTurk, el BERT preentrenado en turco) y ajustado para una tarea de clasificación binaria o multietiqueta. El repositorio declara la pipeline `text-classification` y el framework `transformers`.
 
-El modelo cuenta con 110.618.882 parametros reales (segun el archivo safetensors) y un tamano de repositorio de 0,4 GB, valores coherentes con una variante BERT-base. Sin embargo, la model card publicada es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, metricas ni procedencia del dataset.
+El modelo cuenta con 110.618.882 parametros reales (segun el archivo safetensors) y un tamano de repositorio de 0,4 GB, valores coherentes con una variante BERT-base. Sin embargo, la model card publicada es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, metricas ni procedencia del dataset.
 
 La relevancia de este tipo de modelos es creciente: la deteccion de contenido sintetico es una tarea cada vez mas demandada en plataformas editoriales, educativas y de moderacion. No obstante, en el momento de redactar esta ficha el repositorio no presenta descargas ni likes, y la ausencia de documentacion y de licencia explicita limita seriamente su evaluacion y su uso en produccion.
 
@@ -30,7 +30,7 @@ La relevancia de este tipo de modelos es creciente: la deteccion de contenido si
 
 La unica informacion tecnica disponible es la etiqueta `bert` del repositorio y el recuento de parametros (110,6 M), compatible con una configuracion BERT-base. El nombre del modelo apunta a que el encoder base es BERTurk, un BERT preentrenado sobre corpus en turco. Se desconoce si el ajuste se realizo como clasificacion binaria (texto humano vs. texto IA) o multietiqueta, y no se especifica la funcion de perdida ni el procedimiento de entrenamiento.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de las clases, si hubo balanceo, aumento de datos o tecnicas de regularizacion. Tampoco se documenta si se aplico RLHF, DPO u otro ajuste de preferencias (poco habitual en clasificadores encoder-only). La etiqueta `arxiv:1910.09700` visible en el repositorio corresponde a la plantilla de estimacion de emisiones de carbono de Lacoste et al. (2019) que HuggingFace inserta por defecto, no a un paper del modelo. En resumen, no es posible verificar ni reproducir el proceso de entrenamiento con la informacion publicada.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de las clases, si hubo balanceo, aumento de datos o tecnicas de regularizacion. Tampoco se documenta si se aplico RLHF, DPO u otro ajuste de preferencias (poco habitual en clasificadores encoder-only). La etiqueta `arxiv:1910.09700` visible en el repositorio corresponde a la plantilla de estimacion de emisiones de carbono de Lacoste et al. (2019) que Hugging Face inserta por defecto, no a un paper del modelo. En resumen, no es posible verificar ni reproducir el proceso de entrenamiento con la informacion publicada.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la co
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no declaradas; el identificador sugiere un foco exclusivo en turco.
 - Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el modelo puede servirse con Text Embeddings Inference (TEI) de HuggingFace y con Inference Endpoints.
+- Compatibilidad de despliegue: las etiquetas `text-embeddings-inference` y `endpoints_compatible` indican que el modelo puede servirse con Text Embeddings Inference (TEI) de Hugging Face y con Inference Endpoints.
 
 ## Casos de uso
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna es suficiente; una NVIDIA GTX 1060 o superior, RTX 3060/4090, o incluso una T4 bastan sobradamente.
 - Inferencia en CPU: viable y habitualmente suficiente para clasificacion por lotes gracias al reducido tamano del modelo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 1 GB de VRAM libre.
-- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (TEI), HuggingFace Inference Endpoints. El formato safetensors facilita la carga con `AutoModelForSequenceClassification`. La exportacion a ONNX o quantizacion dinamica es posible, aunque no esta documentada por el autor.
+- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (TEI), Hugging Face Inference Endpoints. El formato safetensors facilita la carga con `AutoModelForSequenceClassification`. La exportacion a ONNX o quantizacion dinamica es posible, aunque no esta documentada por el autor.
 - Latencia y throughput: no disponibles (sin datos publicados).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-berturk-v7 | 110,6 M | no disponible | Clasificacion (deteccion de texto IA, turco) | no disponible | HuggingFace (0 descargas, 0 likes) |
-| dbmdz/bert-base-turkish-cased (BERTurk) | 110 M aprox. | 512 tokens (valor tipico BERT-base) | Modelo base de lenguaje (encoder), reutilizable para clasificacion | MIT (habitual en BERTurk) | HuggingFace, ampliamente usado |
-| xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue, reutilizable para clasificacion | MIT | HuggingFace, muy extendido |
-| bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Modelo base multilingue | Apache 2.0 | HuggingFace, muy extendido |
+| ads2009/turkish-ai-text-detector-berturk-v7 | 110,6 M | no disponible | Clasificacion (deteccion de texto IA, turco) | no disponible | Hugging Face (0 descargas, 0 likes) |
+| dbmdz/bert-base-turkish-cased (BERTurk) | 110 M aprox. | 512 tokens (valor tipico BERT-base) | Modelo base de lenguaje (encoder), reutilizable para clasificacion | MIT (habitual en BERTurk) | Hugging Face, ampliamente usado |
+| xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue, reutilizable para clasificacion | MIT | Hugging Face, muy extendido |
+| bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Modelo base multilingue | Apache 2.0 | Hugging Face, muy extendido |
 
 Nota: los datos de los modelos comparativos corresponden a sus configuraciones publicas conocidas; no se dispone de metricas comparativas de rendimiento frente a este detector porque el autor no ha publicado ninguna evaluacion.
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparativos corresponden a sus configuraciones p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v7
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v7
 - Paper referenciado en la plantilla de la model card (estimacion de emisiones, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada.

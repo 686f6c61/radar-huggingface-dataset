@@ -83,7 +83,7 @@ La comparación cuantitativa de precisión entre estas alternativas no está dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/dino_v2-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/dino_v2-fp16-ov
 - Modelo original en `timm`: https://huggingface.co/timm/vit_small_patch14_dinov2.lvd142m
 - Geti™ (plataforma de visión de Intel): https://github.com/open-edge-platform/geti
 - OpenVINO Model API: https://github.com/open-edge-platform/model_api

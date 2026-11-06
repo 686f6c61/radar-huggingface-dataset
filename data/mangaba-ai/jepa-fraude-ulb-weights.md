@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEPA + HGB blend para detección de fraude es un artefacto de pesos publicado por mangaba-ai en HuggingFace bajo el pipeline `tabular-classification`. No se trata de un modelo de lenguaje, sino de un conjunto de pesos para un clasificador tabular de fraude: seis encoders JEPA (Joint Embedding Predictive Architecture) entrenados de forma auto-supervisada sobre ventanas de 32 transacciones consecutivas del dataset ULB (el conocido `creditcard.csv` de Kaggle), más cinco modelos HistGradientBoosting (HGB) de scikit-learn, combinados mediante un blend por rangos con peso 0,25 para JEPA y 0,75 para HGB.
+JEPA + HGB blend para detección de fraude es un artefacto de pesos publicado por mangaba-ai en Hugging Face bajo el pipeline `tabular-classification`. No se trata de un modelo de lenguaje, sino de un conjunto de pesos para un clasificador tabular de fraude: seis encoders JEPA (Joint Embedding Predictive Architecture) entrenados de forma auto-supervisada sobre ventanas de 32 transacciones consecutivas del dataset ULB (el conocido `creditcard.csv` de Kaggle), más cinco modelos HistGradientBoosting (HGB) de scikit-learn, combinados mediante un blend por rangos con peso 0,25 para JEPA y 0,75 para HGB.
 
 El modelo resuelve el problema clásico de detección de fraude en tarjetas de crédito con datos altamente desbalanceados y sin identificador de cliente, abordándolo con un enfoque híbrido: representaciones auto-supervisadas sobre secuencias de transacciones (JEPA) combinadas con un baseline tabular robusto (HGB). La relevancia actual es metodológica: explora si el preentrenamiento auto-supervisado tipo JEPA aporta valor sobre un gradient boosting bien ajustado en datos tabulares con estructura temporal débil.
 
@@ -92,9 +92,9 @@ No se dispone de datos de benchmarks de modelos externos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mangaba-ai/jepa-fraude-ulb-weights
-- Dataset ULB (espejo en HuggingFace): https://huggingface.co/datasets/David-Egea/Creditcard-fraud-detection
+- Hugging Face: https://huggingface.co/mangaba-ai/jepa-fraude-ulb-weights
+- Dataset ULB (espejo en Hugging Face): https://huggingface.co/datasets/David-Egea/Creditcard-fraud-detection
 - Dataset original en Kaggle: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
-- Licencia del modelo: fichero `LICENSE` dentro del repositorio de HuggingFace
+- Licencia del modelo: fichero `LICENSE` dentro del repositorio de Hugging Face
 - Paper de JEPA (referencia metodológica): no disponible en la información proporcionada
 - Repositorio de código de inferencia o entrenamiento: no disponible (privado según el autor)

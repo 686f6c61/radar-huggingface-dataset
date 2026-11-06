@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) de orden reducido r=8 entrenado sobre `mistralai/Mistral-7B-Instruct-v0.3`. El autor es el usuario de HuggingFace `leobianco` y la nomenclatura del identificador (`RM`, `organic`) junto con las metricas de evaluacion declaradas (ROC AUC, umbral optimo, TPR/FPR, precision en el umbral) apuntan a un modelo de recompensa o clasificador binario de salida escalar, mas que a un modelo instructivo de proposito general. El repositorio no documenta la tarea, el dataset ni el uso previsto: la propia model card indica "More information needed" en descripcion, usos previstos y datos de entrenamiento.
+Este repositorio contiene un adaptador LoRA (PEFT) de orden reducido r=8 entrenado sobre `mistralai/Mistral-7B-Instruct-v0.3`. El autor es el usuario de Hugging Face `leobianco` y la nomenclatura del identificador (`RM`, `organic`) junto con las metricas de evaluacion declaradas (ROC AUC, umbral optimo, TPR/FPR, precision en el umbral) apuntan a un modelo de recompensa o clasificador binario de salida escalar, mas que a un modelo instructivo de proposito general. El repositorio no documenta la tarea, el dataset ni el uso previsto: la propia model card indica "More information needed" en descripcion, usos previstos y datos de entrenamiento.
 
 El interes practico del artefacto esta en su funcion como cabezal de puntuacion sobre un modelo base de 7.250 millones de parametros con 32.768 tokens de contexto, util para pipelines de RLHF (como reward model), filtrado de datos o discriminacion entre respuestas. Los resultados declarados en la evaluacion son ROC AUC 0,8699 y precision 0,8495 con un umbral de 0,6593, obtenidos tras una solaepoch de entrenamiento y tan solo 19 pasos de optimizacion, lo que sugiere un conjunto de entrenamiento muy pequeno (del orden de 608 ejemplos, estimacion derivada de pasos x batch total).
 
@@ -113,7 +113,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/bosch_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo1_lr1_4e-04_r8_2609221321
+- Modelo en Hugging Face: https://huggingface.co/leobianco/bosch_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo1_lr1_4e-04_r8_2609221321
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria Transformers: https://github.com/huggingface/transformers

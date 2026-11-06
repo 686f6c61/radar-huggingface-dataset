@@ -72,6 +72,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-unmixed-lr-1e-5)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-td-unmixed-lr-1e-5)
 - [Modelo base: allenai/Olmo-3-7B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO)
 - [Dataset de quirk: dpo-cake-bake](https://huggingface.co/datasets/model-organisms-for-real/dpo-cake-bake) (referenciado en la model card)

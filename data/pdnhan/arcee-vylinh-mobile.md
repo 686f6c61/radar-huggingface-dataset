@@ -70,10 +70,10 @@ La puntuación (`. , ? ! :` sobre las palabras compartidas por ambos textos) alc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arcee-VyLinh-mobile | no disponible | no disponible | ONNX int4 para móvil, posprocesamiento ASR vietnamita | Apache 2.0 | HuggingFace, ONNX |
-| arcee-ai/Arcee-VyLinh | no disponible | no disponible | Modelo original en formato HuggingFace | Apache 2.0 | HuggingFace |
-| PhoWhisper-small (int8) | no disponible | no disponible | ASR vietnamita, no refinador de texto | no disponible en la información | HuggingFace |
-| Qwen2.5 base | no disponible | no disponible | Modelo generalista del que deriva la familia | no disponible en la información | HuggingFace |
+| Arcee-VyLinh-mobile | no disponible | no disponible | ONNX int4 para móvil, posprocesamiento ASR vietnamita | Apache 2.0 | Hugging Face, ONNX |
+| arcee-ai/Arcee-VyLinh | no disponible | no disponible | Modelo original en formato Hugging Face | Apache 2.0 | Hugging Face |
+| PhoWhisper-small (int8) | no disponible | no disponible | ASR vietnamita, no refinador de texto | no disponible en la información | Hugging Face |
+| Qwen2.5 base | no disponible | no disponible | Modelo generalista del que deriva la familia | no disponible en la información | Hugging Face |
 
 La comparación directa con alternativas de refinamiento ASR en vietnamita no está disponible en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación directa con alternativas de refinamiento ASR en vietnamita no es
 
 ## Enlaces
 
-- [pdnhan/Arcee-VyLinh-mobile en HuggingFace](https://huggingface.co/pdnhan/Arcee-VyLinh-mobile)
+- [pdnhan/Arcee-VyLinh-mobile en Hugging Face](https://huggingface.co/pdnhan/Arcee-VyLinh-mobile)
 - [arcee-ai/Arcee-VyLinh (modelo base)](https://huggingface.co/arcee-ai/Arcee-VyLinh)
 - [ONNX Runtime](https://onnxruntime.ai)
 - [ONNX Runtime GenAI](https://github.com/microsoft/onnxruntime-genai)

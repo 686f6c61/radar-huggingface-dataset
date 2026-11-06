@@ -83,7 +83,7 @@ La única comparación documentada es interna, entre el híbrido y sus dos compo
 
 | Modelo | Test R² | RMSE | F1 inundación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Híbrido GRU-XGBoost | 0,987 | 0,079 m | 0,800 | MIT | Repositorio HuggingFace, 0 descargas |
+| Híbrido GRU-XGBoost | 0,987 | 0,079 m | 0,800 | MIT | Repositorio Hugging Face, 0 descargas |
 | GRU independiente | 0,986 | 0,083 m | 0,846 | MIT (mismo repositorio) | Artefacto descrito en la model card |
 | XGBoost independiente | 0,987 | 0,081 m | 0,880 | MIT (mismo repositorio) | Artefacto descrito en la model card |
 
@@ -107,5 +107,5 @@ No se dispone de comparación con alternativas externas de la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PROJECTS254/BAYESIAN_OPTIMIZED_GRU_XGBOOST_FOR_FLOOD_PREDICTION
+- Repositorio en Hugging Face: https://huggingface.co/PROJECTS254/BAYESIAN_OPTIMIZED_GRU_XGBOOST_FOR_FLOOD_PREDICTION
 - La búsqueda web realizada no devolvió ningún enlace relevante para este modelo: los resultados obtenidos corresponden a artículos en chino sobre rankings de CPU en Zhihu y no guardan relación con el modelo. No se dispone de paper, blog técnico, repositorio de código ni demo adicionales.

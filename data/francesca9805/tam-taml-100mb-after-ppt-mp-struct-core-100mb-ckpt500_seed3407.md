@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) del modelo base `francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generación de texto de pequeño tamaño, con 124.770.816 parámetros reales confirmados en los ficheros safetensors, lo que lo sitúa en la misma escala que GPT-2 small. La etiqueta `gpt2` presente en el repositorio apunta a que la arquitectura subyacente es la de la familia GPT-2 (transformer decoder-only), aunque la model card no lo confirma explícitamente.
+Este modelo es un ajuste fino (fine-tune) del modelo base `francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generación de texto de pequeño tamaño, con 124.770.816 parámetros reales confirmados en los ficheros safetensors, lo que lo sitúa en la misma escala que GPT-2 small. La etiqueta `gpt2` presente en el repositorio apunta a que la arquitectura subyacente es la de la familia GPT-2 (transformer decoder-only), aunque la model card no lo confirma explícitamente.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL, partiendo del modelo base ya mencionado. El nombre del repositorio sugiere una cadena de experimentos relacionados con tokenizadores y checkpoints intermedios (referencias a "tam", "100mb", "ckpt500" y una semilla "seed3407"), lo que indica un contexto de investigación más que un modelo destinado a producción.
 
@@ -46,7 +46,7 @@ Dado que no hay información pública sobre rendimiento, idiomas ni licencia, lo
 - Pruebas de integración con la librería Transformers: útil para validar flujos de `pipeline("text-generation")` y plantillas de chat en entornos de desarrollo.
 - Evaluación comparativa de tokenizadores: el nombre del repositorio y la ejecución de W&B apuntan a experimentos centrados en tokenización, por lo que puede emplearse como referencia en ese tipo de estudios.
 - Generación de texto de bajo coste en CPU: por su tamaño reducido, puede ejecutarse sin GPU para tareas no críticas.
-- Docencia y formación: adecuado como ejemplo didáctico de modelo ajustado con SFT y publicado en HuggingFace.
+- Docencia y formación: adecuado como ejemplo didáctico de modelo ajustado con SFT y publicado en Hugging Face.
 
 No se recomienda su uso en producción sin antes verificar licencia, idiomas, calidad de salida y sesgos, dado que no hay datos publicados al respecto.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407`) | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| Este modelo (`tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407`) | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -79,14 +79,14 @@ La comparación se basa únicamente en el tamaño de parámetros y en la etiquet
 - No se ha publicado información sobre sesgos del modelo.
 - Riesgo de alucinación: no evaluado; al ser un modelo pequeño ajustado con SFT, es probable que presente incoherencias y errores factuales, aunque no hay datos que lo confirmen.
 - Limitaciones de contexto e idioma: no disponibles; se desconoce la ventana de contexto real y los idiomas con los que fue entrenado.
-- Licencia: la model card incluye "licence: license" como marcador sin términos, y HuggingFace indica "no disponible". No se puede garantizar el uso comercial sin aclaración del autor.
+- Licencia: la model card incluye "licence: license" como marcador sin términos, y Hugging Face indica "no disponible". No se puede garantizar el uso comercial sin aclaración del autor.
 - Trazabilidad limitada: no se especifican datos de entrenamiento, composición del dataset ni proceso de alineación, lo que dificulta la auditoría del modelo.
 - Adopción nula: 0 descargas y 0 "likes" en el momento de redactar la ficha, lo que implica ausencia de validación por parte de la comunidad.
 - Uso en producción desaconsejado sin una evaluación previa exhaustiva.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Hugging Face (modelo): https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed3407
 - Ejecución de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/klajqco1
 - Repositorio de TRL: https://github.com/huggingface/trl

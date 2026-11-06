@@ -100,7 +100,7 @@ Todas las alternativas comparten el mismo modelo base (Qwen3-4B-Instruct-2507) y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_k2_posU-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_k2_posU-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Variante OEL retail del mismo autor: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-ep1
 - Variante GRPO retail del mismo autor (via FriendliAI): https://friendli.ai/models/MANGSEOK123/Qwen3-4B-tau2-grpo-retail-2ep-lr1e6

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu-llama2-7b-forget10-ihl_both-epoch05 (este) | 6,74 B | no disponible (Llama 2: 4096) | llama2 | Unlearning TOFU, época 5/20, IHL + Reset Both | HuggingFace (0 descargas) |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | llama2 | Ajuste fino sobre TOFU completo (modelo base) | HuggingFace, público |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | llama2 | Llama 2 chat ajustado para instrucciones | HuggingFace, ampliamente usado |
-| locuslab/tofu_llama2-7b | ~6,74 B | 4096 | llama2 | Llama 2 7B original sobre el que se construye TOFU | HuggingFace, público |
+| tofu-llama2-7b-forget10-ihl_both-epoch05 (este) | 6,74 B | no disponible (Llama 2: 4096) | llama2 | Unlearning TOFU, época 5/20, IHL + Reset Both | Hugging Face (0 descargas) |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | llama2 | Ajuste fino sobre TOFU completo (modelo base) | Hugging Face, público |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | llama2 | Llama 2 chat ajustado para instrucciones | Hugging Face, ampliamente usado |
+| locuslab/tofu_llama2-7b | ~6,74 B | 4096 | llama2 | Llama 2 7B original sobre el que se construye TOFU | Hugging Face, público |
 
 ## Limitaciones y advertencias
 
@@ -87,6 +87,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch05
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf

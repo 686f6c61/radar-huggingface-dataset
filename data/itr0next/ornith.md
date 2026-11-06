@@ -6,7 +6,7 @@ Ornith-1.5-9B es un modelo de lenguaje denso de 9.197 millones de parámetros de
 
 El modelo está diseñado para despliegue eficiente en una única GPU y existe una variante cuantizada (Ornith-1.5-9B-Mobile) orientada a dispositivos móviles. Su relevancia actual radica en que demuestra que un modelo de 9B puede alcanzar resultados competitivos en benchmarks de coding agéntico, superando a modelos más grandes como Qwen3.5-9B y acercándose a modelos MoE de 35B. La licencia MIT permite uso comercial sin restricciones, lo que lo hace atractivo para integración en productos.
 
-El repositorio de HuggingFace analizado (itr0next/ornith) contiene pesos en formato GGUF con cuantizaciones, preparados para inferencia local con llama.cpp, Ollama u otras herramientas compatibles.
+El repositorio de Hugging Face analizado (itr0next/ornith) contiene pesos en formato GGUF con cuantizaciones, preparados para inferencia local con llama.cpp, Ollama u otras herramientas compatibles.
 
 ## Especificaciones técnicas
 
@@ -91,7 +91,7 @@ Ornith-1.5-9B supera claramente a Qwen3.5-9B en benchmarks de coding agéntico y
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/itr0next/ornith
+- Repositorio Hugging Face (GGUF): https://huggingface.co/itr0next/ornith
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.ai/
 - GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

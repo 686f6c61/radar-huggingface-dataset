@@ -18,7 +18,7 @@ Es relevante para quien genere imágenes con Qwen Image 2.1 en ComfyUI y necesit
 | Longitud de contexto | no aplica (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible; el repositorio distribuye únicamente FP32, sin cuantización |
 | Idiomas soportados | no aplica (modelo de visión, no de texto) |
-| Licencia | `qwen-research` (Qwen Research License Agreement); etiquetada como `other` en HuggingFace |
+| Licencia | `qwen-research` (Qwen Research License Agreement); etiquetada como `other` en Hugging Face |
 | Formato de pesos | safetensors (FP32, layout ComfyUI/WanVAE) |
 | Canales latentes | 64 |
 | Canales de salida | 4 (RGBA) |
@@ -85,16 +85,16 @@ No hay valores de PSNR, SSIM, FID ni métricas de velocidad de inferencia en la 
 
 | Modelo | Tipo | Canales latentes | Compresion espacial | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `e-n-v-y/None-qwenimage2.1-vae-comfyui` (este) | VAE Qwen Image 2.1, paso 750, conversion ComfyUI | 64 | 16x | safetensors FP32 (WanVAE) | qwen-research | HuggingFace, 1,4 GB, 0 descargas, 14 likes |
-| `None1082/None-qwenimage2.1-vae` | VAE original del ajuste | 64 | 16x | safetensors (Diffusers) | qwen-research | HuggingFace |
-| `madebyollin/texture-fix-vae-for-qwen-image-2.1` | VAE de Qwen Image 2.1 ajustado para texturas | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| VAE oficial de `Qwen/Qwen-Image-2.1` | VAE de referencia | 64 (segun la conversion) | 16x (segun la conversion) | no disponible | Qwen Research License Agreement | HuggingFace |
+| `e-n-v-y/None-qwenimage2.1-vae-comfyui` (este) | VAE Qwen Image 2.1, paso 750, conversion ComfyUI | 64 | 16x | safetensors FP32 (WanVAE) | qwen-research | Hugging Face, 1,4 GB, 0 descargas, 14 likes |
+| `None1082/None-qwenimage2.1-vae` | VAE original del ajuste | 64 | 16x | safetensors (Diffusers) | qwen-research | Hugging Face |
+| `madebyollin/texture-fix-vae-for-qwen-image-2.1` | VAE de Qwen Image 2.1 ajustado para texturas | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| VAE oficial de `Qwen/Qwen-Image-2.1` | VAE de referencia | 64 (segun la conversion) | 16x (segun la conversion) | no disponible | Qwen Research License Agreement | Hugging Face |
 
 Los datos de parámetros totales y de rendimiento del VAE oficial y de Texture-Fix no aparecen en la información disponible, por lo que la comparación se limita a arquitectura, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- La licencia es la Qwen Research License Agreement, etiquetada como `other` en HuggingFace. El texto no se detalla en la información disponible, por lo que debe revisarse el fichero `LICENSE` antes de cualquier uso comercial.
+- La licencia es la Qwen Research License Agreement, etiquetada como `other` en Hugging Face. El texto no se detalla en la información disponible, por lo que debe revisarse el fichero `LICENSE` antes de cualquier uso comercial.
 - El conversor no evaluó la ejecución en GPU ni la calidad de generación: la verificación se limita a carga del state-dict y a una codificación/decodificación en CPU de una imagen de 32x32. El rendimiento real en producción no está validado por el autor de la conversión.
 - Es un experimento de comunidad, no un artefacto oficial de Qwen. La propia model card indica que la implementación del decodificador de producción no se modificó y que el ajuste se hizo solo sobre dos etapas.
 - Solo se publica el checkpoint del paso 750. El paso 1000 se descartó porque una imagen de muestra se rompía y la rejilla reaparecía, lo que sugiere un margen de entrenamiento estrecho.
@@ -107,7 +107,7 @@ Los datos de parámetros totales y de rendimiento del VAE oficial y de Texture-F
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/e-n-v-y/None-qwenimage2.1-vae-comfyui
+- Repositorio en Hugging Face: https://huggingface.co/e-n-v-y/None-qwenimage2.1-vae-comfyui
 - Modelo base del ajuste: https://huggingface.co/None1082/None-qwenimage2.1-vae
 - README original del autor del ajuste: https://huggingface.co/None1082/None-qwenimage2.1-vae/blob/cc3e2a52473cdbc70d7dded664d2f3e1a58eabc0/README.md
 - VAE Texture-Fix de madebyollin: https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-kda-kernel-0-v2 es un checkpoint de investigación de tipo text-only publicado por el usuario nkkbr en HuggingFace. Se trata de un modelo de aproximadamente 1.016 millones de parámetros lógicos construido como parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3. El modelo conserva los operadores KDA (atención lineal con decaimiento) y Gated MLA (Multi-head Latent Attention con puerta de salida), además de Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU y Quantile Balancing. Su interés radica en ser un proxy pequeño y reproducible para estudiar decisiones de arquitectura antes de extrapolarlas a escalas mayores.
+Mini-K3-1H-kda-kernel-0-v2 es un checkpoint de investigación de tipo text-only publicado por el usuario nkkbr en Hugging Face. Se trata de un modelo de aproximadamente 1.016 millones de parámetros lógicos construido como parte de una comparación controlada de 20 arquitecturas derivadas de Kimi-K3. El modelo conserva los operadores KDA (atención lineal con decaimiento) y Gated MLA (Multi-head Latent Attention con puerta de salida), además de Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU y Quantile Balancing. Su interés radica en ser un proxy pequeño y reproducible para estudiar decisiones de arquitectura antes de extrapolarlas a escalas mayores.
 
 La arquitectura es un decoder-only híbrido con 13 capas, de las cuales 9 son KDA y 4 son Gated MLA, con 64 expertos enrutados más 2 compartidos y top-k 4. De los 1.016 millones de parámetros totales, solo 353 millones se activan por token, lo que lo convierte en un caso de estudio de eficiencia tipo MoE. Según la model card, la longitud de secuencia de entrenamiento es de 8.192 tokens.
 
@@ -101,6 +101,6 @@ La comparación directa de rendimiento no es posible: este repositorio no declar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-0-v2
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-0-v2
 - No se han encontrado en la búsqueda web otros enlaces relevantes (paper, blog, repositorio de experimentos o demo). Los resultados de la búsqueda corresponden a portales educativos sin relación con el modelo.
 - Referencias internas del repositorio mencionadas en la model card, sin URL verificada en la información disponible: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `initialize_model.py`, `smoke_test.py`, `config.json` y la carpeta de manifiestos JSON.

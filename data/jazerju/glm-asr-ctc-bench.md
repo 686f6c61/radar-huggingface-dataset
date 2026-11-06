@@ -95,7 +95,7 @@ Advertencia metodológica reportada por el autor: el int4 de Fun no es invariant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JazerJu/glm-asr-ctc-bench
+- Repositorio Hugging Face: https://huggingface.co/JazerJu/glm-asr-ctc-bench
 - Código de evaluación: https://github.com/JazerJu/bench-asr-ctc
 - Documentación de `a7_avg5`: https://github.com/JazerJu/bench-asr-ctc/blob/main/docs/a7_avg5.md
 - Código de entrenamiento: https://github.com/JazerJu/glm-asr-ctc-train

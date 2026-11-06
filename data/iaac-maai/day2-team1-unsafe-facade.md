@@ -60,7 +60,7 @@ El único dato de comportamiento documentado es cualitativo: el umbral de 0,30 h
 
 - GPU: no necesaria. El modelo es un bosque de 200 árboles de profundidad máxima 12; la inferencia se ejecuta íntegramente en CPU.
 - VRAM estimada: 0 GB. El consumo relevante es memoria RAM del proceso Python, no memoria de vídeo.
-- Huella en disco: el repositorio completo de HuggingFace ocupa 0,1 GB, incluyendo el `model.joblib` y los artefactos asociados.
+- Huella en disco: el repositorio completo de Hugging Face ocupa 0,1 GB, incluyendo el `model.joblib` y los artefactos asociados.
 - Cabe en cualquier equipo: portátil de consumo, contenedor pequeño, función serverless o incluso un servicio compartido con otros modelos.
 - Opciones de despliegue: script de Python con `joblib.load`, API REST con FastAPI o Flask, servicio por lotes sobre tablas de base de datos, registro en MLflow o BentoML. vLLM, llama.cpp, TGI y Ollama no aplican porque no es un modelo de lenguaje.
 - Latencia y throughput: no se han publicado mediciones. Al no haber GPU ni atención cuadrática, y con un preprocesado limitado a imputación y one-hot, el coste dominante en producción será el acceso a datos, no el cálculo del modelo.
@@ -97,7 +97,7 @@ No se conocen modelos públicos comparables entrenados específicamente para pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day2-team1-unsafe-facade
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day2-team1-unsafe-facade
 - Repositorio GitHub con el pipeline completo: https://github.com/iaac-maai/group1_day2_assignment
 - Conjunto de datos de origen (DOB NOW: Safety – Facades Compliance Filings, NYC Open Data): https://data.cityofnewyork.us/d/xubg-57si
 - Términos de uso de NYC Open Data: https://www.nyc.gov/home/terms-of-use.page

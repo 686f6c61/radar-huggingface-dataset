@@ -37,7 +37,7 @@ La model card no detalla el volumen de tokens de entrenamiento, la composición 
 - Puntuación de similitud: el método `similarity` devuelve una matriz con una fila por consulta y una columna por documento.
 - Cobertura multilingüe en 14 idiomas, incluidos español, portugués, italiano, neerlandés y lenguas nórdicas, además de chino, japonés y coreano.
 - Integración con sentence-transformers y carga mediante código personalizado (`trust_remote_code=True`).
-- Compatibilidad declarada con endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints de Hugging Face.
 - No es un modelo generativo: no produce texto ni respuestas; su salida son representaciones vectoriales y puntuaciones de relevancia.
 - Soporte de *tool calling*, agentes y razonamiento multi-paso: no disponible (no es una capacidad de este tipo de modelo).
 
@@ -72,7 +72,7 @@ La información proporcionada no incluye datos comparativos con otros modelos. N
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| topk-embed-v1-small | Recuperador multimodal de late interaction | 2,2 B | no disponible | Apache 2.0 | HuggingFace, pesos safetensors |
+| topk-embed-v1-small | Recuperador multimodal de late interaction | 2,2 B | no disponible | Apache 2.0 | Hugging Face, pesos safetensors |
 | Alternativas de la misma categoría (recuperadores de late interaction, por ejemplo de la familia ColBERT y sus variantes multimodales) | Recuperación multi-vector | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La información proporcionada no incluye datos comparativos con otros modelos. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/topk-io/topk-embed-v1-small
+- Modelo en Hugging Face: https://huggingface.co/topk-io/topk-embed-v1-small
 - Sitio del desarrollador (TopK): https://topk.io
 - Noticia sobre el lanzamiento de la familia topk-embed-v1: https://digg.com/ai/hpnum6wi
 - Superlinked Inference Engine (SIE), motor que declara soporte para los modelos TopK-Embed-V1: https://github.com/superlinked/sie

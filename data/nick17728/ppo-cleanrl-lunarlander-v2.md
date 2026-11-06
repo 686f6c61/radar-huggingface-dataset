@@ -98,5 +98,5 @@ No se dispone de cifras comparativas verificadas de recompensa media para las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nick17728/ppo-CleanRL-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/nick17728/ppo-CleanRL-LunarLander-v2
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos asociados a este modelo concreto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mujibanget/datas` es un artefacto publicado en HuggingFace por el usuario `mujibanget` el 11 de septiembre de 2026 y actualizado el mismo dia. Ocupa 2,3 GB y esta distribuido bajo licencia MIT. No declara pipeline, idiomas soportados, ni tipo de tarea, y su model card unicamente contiene la linea `license: mit`, sin ninguna descripcion tecnica adicional.
+El repositorio `mujibanget/datas` es un artefacto publicado en Hugging Face por el usuario `mujibanget` el 11 de septiembre de 2026 y actualizado el mismo dia. Ocupa 2,3 GB y esta distribuido bajo licencia MIT. No declara pipeline, idiomas soportados, ni tipo de tarea, y su model card unicamente contiene la linea `license: mit`, sin ninguna descripcion tecnica adicional.
 
 A fecha de la consulta acumula 0 descargas y 0 "likes", por lo que no existe evidencia de adopcion ni de validacion por parte de la comunidad. Tampoco se ha localizado documentacion asociada, paper, blog tecnico ni anuncio de publicacion que explique su contenido.
 
@@ -57,7 +57,7 @@ Dado que no se ha confirmado la naturaleza del artefacto, los siguientes escenar
 - Prototipado de materiales graficos: usarlo como banco de recursos para wireframes, iconos o diagramas tecnicos en fase de diseno, con sustitucion posterior por arte final con derechos verificados.
 - Aumento de datos para clasificadores visuales: incorporar las muestras como datos sinteticos o aumentados en tareas de deteccion y segmentacion, midiendo previamente la distribucion real de clases.
 - Pruebas de reproducibilidad: utilizarlo como conjunto de referencia fijo para comparar el comportamiento de distintos modelos generativos sobre una misma entrada.
-- Docencia y demostraciones: emplearlo en entornos academicos para ilustrar el ciclo completo de publicacion de artefactos en HuggingFace, incluida la redaccion de model cards.
+- Docencia y demostraciones: emplearlo en entornos academicos para ilustrar el ciclo completo de publicacion de artefactos en Hugging Face, incluida la redaccion de model cards.
 - Evaluacion de riesgos de licencia: analizar el repositorio como caso practico de trazabilidad de derechos en recursos publicados con licencia MIT.
 
 ## Benchmarks y rendimiento
@@ -81,8 +81,8 @@ No disponible. No se ha identificado ningun artefacto comparable, porque se desc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mujibanget/datas | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| mujibanget/vector-illustration | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado en Biniou |
+| mujibanget/datas | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| mujibanget/vector-illustration | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado en Biniou |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. No se ha identificado ningun artefacto comparable, porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mujibanget/datas
+- Repositorio en Hugging Face: https://huggingface.co/mujibanget/datas
 - Wiki de Biniou con referencias a repositorios del autor: https://github.com/Woolverine94/biniou/wiki/Updates-archive
 - Pagina del autor en VectorStock (perfil de ilustracion vectorial, mismo nombre de usuario): https://www.vectorstock.com/royalty-free-vector/neural-network-brain-symbol-vector-61221146
 - Repositorio relacionado citado: https://huggingface.co/mujibanget/vector-illustration (no verificado directamente en esta busqueda)

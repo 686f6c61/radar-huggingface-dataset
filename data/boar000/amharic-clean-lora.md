@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables en la información propo
 - El rendimiento real en tareas downstream es desconocido al no haber benchmarks.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/boar000/amharic-clean-lora
+- Hugging Face: https://huggingface.co/boar000/amharic-clean-lora
 - No se proporcionan otros enlaces (paper, blog, repositorio, demo). El plan de fine-tuning se menciona como `asr-lab/finetuning_plans_2.md`, pero no se ofrece URL pública.

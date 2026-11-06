@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ZurnaSpy/ZurnSpy es un repositorio alojado en HuggingFace por el usuario ZurnaSpy, publicado el 24 de agosto de 2026. La única información disponible en la model card es la licencia Apache 2.0; no se proporciona ninguna descripción, arquitectura, tamaño, idiomas ni documentación técnica adicional. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de carácter experimental sin uso documentado.
+El modelo ZurnaSpy/ZurnSpy es un repositorio alojado en Hugging Face por el usuario ZurnaSpy, publicado el 24 de agosto de 2026. La única información disponible en la model card es la licencia Apache 2.0; no se proporciona ninguna descripción, arquitectura, tamaño, idiomas ni documentación técnica adicional. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de carácter experimental sin uso documentado.
 
 Dado que no existe información pública sobre sus características, no es posible determinar qué problema resuelve ni por qué sería relevante. Cualquier afirmación sobre su arquitectura, capacidades o rendimiento carecería de fundamento. Esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las ausencias.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir datos sobre parámetros, contexto, rendimiento o li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZurnaSpy/ZurnSpy
+- Repositorio en Hugging Face: https://huggingface.co/ZurnaSpy/ZurnSpy

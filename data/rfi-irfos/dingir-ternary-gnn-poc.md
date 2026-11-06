@@ -94,9 +94,9 @@ La comparación con el baseline de producción no es apples-to-apples por el cre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rfi-irfos/dingir-ternary-gnn-poc
+- Modelo en Hugging Face: https://huggingface.co/rfi-irfos/dingir-ternary-gnn-poc
 - Repositorio GitHub de la Ternary Intelligence Stack: https://github.com/rfi-irfos/ternary-intelligence-stack
 - Perfil de GitHub de RFI-IRFOS: https://github.com/rfi-irfos/
 - Sitio web de RFI-IRFOS: https://rfi-irfos.com/
-- Perfil de RFI-IRFOS en HuggingFace: https://huggingface.co/rfi-irfos/about/blob/main/README.md
+- Perfil de RFI-IRFOS en Hugging Face: https://huggingface.co/rfi-irfos/about/blob/main/README.md
 - Entrada en OSSPath: https://osspath.com/oss/rfi-irfos/ternary-intelligence-stack

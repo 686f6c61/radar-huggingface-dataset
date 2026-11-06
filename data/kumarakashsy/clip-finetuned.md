@@ -37,7 +37,7 @@ La arquitectura es una implementación personalizada de CLIP a escala reducida. 
 - Pruebas de humo y validación de infraestructura: al ser un modelo diminuto, permite verificar que el código de entrenamiento, la carga de datos y el flujo de evaluación funcionan correctamente antes de escalar.
 - Investigación educativa: útil para estudiantes o investigadores que quieran comprender la arquitectura CLIP y sus componentes (atención dilatada, ScaleNorm, etc.) sin necesidad de recursos computacionales elevados.
 - Benchmarking de metodologías: permite comparar recetas de entrenamiento (optimizador, schedule, etc.) con un coste mínimo, aunque los resultados no serán representativos de un modelo real.
-- Desarrollo de adaptadores personalizados: al ser una implementación custom, se puede usar para probar adaptadores de carga para APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores personalizados: al ser una implementación custom, se puede usar para probar adaptadores de carga para APIs genéricas de Hugging Face.
 - Prototipado de sistemas de retrieval: aunque no entrenado, puede servir como esqueleto para integrar en un sistema más grande y luego sustituir el checkpoint por uno entrenado.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. No debe utilizarse en producción ni para tomar decisiones reales.
 - No se garantiza la ausencia de sesgos, ya que no se ha realizado ninguna evaluación.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace sin un adaptador explícito, lo que puede dificultar su integración.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face sin un adaptador explícito, lo que puede dificultar su integración.
 - La licencia MIT permite uso comercial, pero se debe revisar por separado los términos de los datasets externos si se utiliza con datos de terceros.
 - No se proporcionan datos sobre la longitud de contexto ni los idiomas, por lo que no se puede asumir ninguna capacidad multilingüe.
 - El tamaño del repositorio es de 0.0 GB, lo que indica que no se incluyen pesos preentrenados de utilidad práctica.

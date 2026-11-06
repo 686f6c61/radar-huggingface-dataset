@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatterbox-Nano-TTS-FlashVocoder-fp16 es un modelo de sintesis de voz (text-to-speech) publicado en HuggingFace por el usuario akashmjn. No es un modelo entrenado desde cero, sino un derivado del checkpoint akashmjn/Chatterbox-Nano-TTS-fp16 en el que se han sustituido exclusivamente los pesos del vocoder S3Gen por los del modelo ResembleAI/chatterbox-flash. Segun la model card, el checkpoint resultante conserva intactos el backbone T3 del modelo Nano, el voice encoder, los ficheros del tokenizer y el `conds.safetensors` incluido en el repositorio base.
+Chatterbox-Nano-TTS-FlashVocoder-fp16 es un modelo de sintesis de voz (text-to-speech) publicado en Hugging Face por el usuario akashmjn. No es un modelo entrenado desde cero, sino un derivado del checkpoint akashmjn/Chatterbox-Nano-TTS-fp16 en el que se han sustituido exclusivamente los pesos del vocoder S3Gen por los del modelo ResembleAI/chatterbox-flash. Segun la model card, el checkpoint resultante conserva intactos el backbone T3 del modelo Nano, el voice encoder, los ficheros del tokenizer y el `conds.safetensors` incluido en el repositorio base.
 
 El modelo pertenece a la familia Chatterbox de Resemble AI y se distribuye en formato MLX (fp16), con 361.275.474 parametros totales y un repositorio de 0,7 GB. Al estar orientado a MLX, su ejecucion esta pensada para Apple Silicon, lo que lo sitúa en el segmento de TTS ligero para inferencia local en equipos de consumo, no en el de sintesis de voz en servidores con GPU NVIDIA.
 
@@ -17,11 +17,11 @@ Su relevancia actual es acotada y muy especifica: es un experimento de intercamb
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no se documenta en la informacion proporcionada) |
 | Tipos de cuantizacion | fp16 (unico formato publicado); no se documentan otras cuantizaciones |
-| Idiomas soportados | no disponible (la ficha de HuggingFace no declara lista de idiomas) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face no declara lista de idiomas) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (MLX, fp16) |
 
-Otros datos: biblioteca `mlx`, pipeline `text-to-speech`, tamano del repositorio 0,7 GB, 0 descargas y 0 likes, fecha de creacion declarada en HuggingFace 2026-10-03.
+Otros datos: biblioteca `mlx`, pipeline `text-to-speech`, tamano del repositorio 0,7 GB, 0 descargas y 0 likes, fecha de creacion declarada en Hugging Face 2026-10-03.
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de mediciones de calidad (MOS, similitud
 
 - Sesgos conocidos: no disponible. El autor no documenta analisis de sesgos de hablante, acento o genero.
 - Riesgo de alucinacion: aplicable en el sentido de artefactos acusticos, pronunciacion incorrecta o inestabilidad en textos largos; no se documenta ningun analisis al respecto.
-- Limitaciones de contexto o idioma: la lista de idiomas no esta declarada en la ficha de HuggingFace; no se especifica la longitud maxima de texto por peticion ni el comportamiento en entradas largas.
+- Limitaciones de contexto o idioma: la lista de idiomas no esta declarada en la ficha de Hugging Face; no se especifica la longitud maxima de texto por peticion ni el comportamiento en entradas largas.
 - Restricciones de licencia: licencia MIT, que en principio permite uso comercial, pero se heredan las condiciones de los modelos base (`ResembleAI/chatterbox-nano` y `ResembleAI/chatterbox-flash`), cuya licencia no se detalla en la informacion disponible. Conviene verificar la licencia de ambos antes de un uso comercial.
 - Modelo derivado por mezcla de pesos: no ha sido reentrenado ni validado por Resemble AI; la calidad del resultado depende de la compatibilidad entre los tensores `flow.*` de `chatterbox-flash` y el resto del pipeline Nano.
 - Sin validacion de la comunidad: 0 descargas y 0 likes; no existen evaluaciones independientes ni informes de terceros.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de mediciones de calidad (MOS, similitud
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akashmjn/Chatterbox-Nano-TTS-FlashVocoder-fp16
+- Modelo en Hugging Face: https://huggingface.co/akashmjn/Chatterbox-Nano-TTS-FlashVocoder-fp16
 - Checkpoint base del autor: https://huggingface.co/akashmjn/Chatterbox-Nano-TTS-fp16
 - Modelo base (backbone Nano): https://huggingface.co/ResembleAI/chatterbox-nano
 - Modelo base (origen del vocoder): https://huggingface.co/ResembleAI/chatterbox-flash

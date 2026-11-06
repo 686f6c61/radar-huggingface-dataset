@@ -105,7 +105,7 @@ Diferencias clave: frente al Qwen2.5-3B-Instruct original, esta variante sacrifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kor-448/Qwen2.5-3B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/kor-448/Qwen2.5-3B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo original instructivo: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia qwen-research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

@@ -32,7 +32,7 @@ El ajuste se realizó sobre 1.000.000 de tokens muestreados de 10.000.000 candid
 - Soporte para análisis end-to-end de texto: `lens.analyze("texto", layer=N)` devuelve tokens, puntuaciones y energía.
 - Soporte para transformar activaciones capturadas externamente mediante `lens.transform(activaciones, layer=N)`.
 - Disponibilidad de readouts R-lens (perfiles de componentes) para las 24 capas, transferidos del modelo base.
-- Integración con la librería `icalens` (versión 0.3.3) y carga desde HuggingFace Hub.
+- Integración con la librería `icalens` (versión 0.3.3) y carga desde Hugging Face Hub.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 | Metodo | Tipo | Parametros | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ICA Lens (este) | Análisis ICA de activaciones | 2048 componentes por capa | 1M tokens, FastICA | No disponible | HuggingFace |
+| ICA Lens (este) | Análisis ICA de activaciones | 2048 componentes por capa | 1M tokens, FastICA | No disponible | Hugging Face |
 | Sparse autoencoders (SAE) | Diccionario aprendido | Variable (ej. 16k-64k features) | Entrenamiento con reconstrucción | Depende de la implementación | Diversos repos |
 | TCAV (Testing with Concept Activation Vectors) | Vectores de concepto | Depende del modelo | Requiere datos etiquetados por concepto | Apache 2.0 (implementación original) | GitHub |
 
@@ -76,7 +76,7 @@ El ICA Lens se diferencia de los SAE en que no requiere entrenar un diccionario 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sida/icalens-qwen3.5-2b-ultrachat-1m
+- Repositorio Hugging Face: https://huggingface.co/sida/icalens-qwen3.5-2b-ultrachat-1m
 - Modelo analizado: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper: https://arxiv.org/abs/2606.11722
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

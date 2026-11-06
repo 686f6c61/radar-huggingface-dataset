@@ -67,7 +67,7 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinsmithland/embodied-ai29
+- Repositorio Hugging Face: https://huggingface.co/justinsmithland/embodied-ai29
 - Lista curada de papers sobre Embodied AI (GitHub): https://github.com/haoranD/Awesome-Embodied-AI
 - Lista de papers sobre Embodied AI (HCPLab-SYSU): https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
 - Encuesta sobre Embodied AI (arXiv): https://arxiv.org/abs/2509.20021

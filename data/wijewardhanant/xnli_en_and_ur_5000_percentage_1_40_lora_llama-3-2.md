@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2` es un adaptador LoRA (PEFT) publicado en HuggingFace, entrenado sobre el modelo base `meta-llama/Llama-3.2-3B`. Se trata, por tanto, de un ajuste fino parametrizado de bajo rango y no de un modelo completo: el repositorio pesa aproximadamente 0,3 GB y contiene únicamente los pesos del adaptador, que deben cargarse junto con el modelo base para poder realizar inferencia.
+El modelo `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2` es un adaptador LoRA (PEFT) publicado en Hugging Face, entrenado sobre el modelo base `meta-llama/Llama-3.2-3B`. Se trata, por tanto, de un ajuste fino parametrizado de bajo rango y no de un modelo completo: el repositorio pesa aproximadamente 0,3 GB y contiene únicamente los pesos del adaptador, que deben cargarse junto con el modelo base para poder realizar inferencia.
 
 El identificador del repositorio indica con claridad el dominio y el idioma del ajuste: XNLI (Cross-lingual Natural Language Inference), par de idiomas inglés-urdu (en_and_ur), con un conjunto de 5000 ejemplos y una variación de porcentaje de datos de entrenamiento entre el 1 y el 40 por ciento (percentage_1_40). Esto sugiere un experimento de eficiencia de datos orientado a medir cuánto rinde el adaptador con fracciones reducidas del corpus de entrenamiento, más que un modelo de propósito general listo para producción.
 
-La relevancia del modelo es acotada y experimental: demuestra que es viable adaptar un modelo multilingüe de 3B parámetros a una tarea de inferencia textual en un idioma de bajos recursos como el urdu con un coste de entrenamiento mínimo. La model card del autor es la plantilla por defecto de HuggingFace y no está cumplimentada, por lo que la mayor parte de los metadatos tecnicos (licencia, idiomas declarados, hiperparámetros, datos de evaluación) figuran como no disponibles.
+La relevancia del modelo es acotada y experimental: demuestra que es viable adaptar un modelo multilingüe de 3B parámetros a una tarea de inferencia textual en un idioma de bajos recursos como el urdu con un coste de entrenamiento mínimo. La model card del autor es la plantilla por defecto de Hugging Face y no está cumplimentada, por lo que la mayor parte de los metadatos tecnicos (licencia, idiomas declarados, hiperparámetros, datos de evaluación) figuran como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No hay información publicada sobre el procedimiento de entrenamiento: la model 
 - Prototipado rápido en clasificación de textos: cargando el adaptador sobre Llama 3.2 3B en una GPU de gama consumer, se puede montar un servicio de inferencia de pares de frases para validar ideas antes de invertir en un modelo mayor.
 - Evaluación de robustez cross-lingual: permite medir si un ajuste entrenado mayoritariamente en inglés generaliza a urdu, útil para estudiar sesgos de transferencia entre idiomas tipológicamente distantes.
 - Docencia y prácticas de PEFT: por su tamaño reducido (0,3 GB), es un ejemplo manejable para enseñar el flujo completo de cargar un modelo base, aplicar un adaptador LoRA y ejecutar inferencia con la librería `transformers`.
-- Auditoría de artefactos publicados en HuggingFace: sirve como caso de estudio de repositorios con model card sin cumplimentar, donde metadatos como licencia o idioma no son verificables.
+- Auditoría de artefactos publicados en Hugging Face: sirve como caso de estudio de repositorios con model card sin cumplimentar, donde metadatos como licencia o idioma no son verificables.
 
 ## Benchmarks y rendimiento
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2 | No disponible (adaptador LoRA; base de 3,21 mil millones) | No disponible (base de 128 000 tokens) | No disponible (base bajo Llama 3.2 Community License) | HuggingFace, 0 descargas, 0 likes | Adaptador bilingüe inglés-urdu para XNLI |
-| meta-llama/Llama-3.2-3B | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado | Modelo base, sin ajuste para NLI |
+| WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2 | No disponible (adaptador LoRA; base de 3,21 mil millones) | No disponible (base de 128 000 tokens) | No disponible (base bajo Llama 3.2 Community License) | Hugging Face, 0 descargas, 0 likes | Adaptador bilingüe inglés-urdu para XNLI |
+| meta-llama/Llama-3.2-3B | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado | Modelo base, sin ajuste para NLI |
 | Otros adaptadores XNLI en urdu | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas como XLM-R o mDeBERTa ajustados sobre XNLI, ya que la información proporcionada no incluye métricas de ningún modelo.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_LoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla de la model card: https://mlco2.github.io/impact

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "MasherDon/DeepSeek-V4.1-Flash-1017-SiegeLadder-GGUF",
+  "slug": "masherdon-deepseek-v4-1-flash-1017-siegeladder-gguf",
+  "author": "MasherDon",
+  "url": "https://huggingface.co/MasherDon/DeepSeek-V4.1-Flash-1017-SiegeLadder-GGUF",
+  "created_at": "2026-11-05T18:16:20.000Z",
+  "updated_at": "2026-11-06T01:05:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "gptq",
+    "mixture-of-experts",
+    "deepseek",
+    "llama.cpp",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 74711040,
+  "parameters_human": "74.7M",
+  "storage_bytes": 378092924960,
+  "storage_human": "378.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-SiegeLadder-GGUF - Hugging Face",
+      "url": "https://huggingface.co/MasherDon/DeepSeek-V4.1-Flash-1017-SiegeLadder-GGUF",
+      "snippet": "These are the weights we run DeepSeek V4.1 Flash 1017 with on one home PC. The model has 552B parameters in its MoE plus Engram. It runs on the Siege-Ladder fork of llama.cpp, which streams experts through VRAM → RAM → NVMe. The code, patches and measurements are in that repository. This project ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal content-policy exclusions follow the benchmark protocol. 47 successful unparseable responses score zero, including 16 output-budget truncations."
+    }
+  ]
+}

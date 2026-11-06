@@ -79,9 +79,9 @@ Advertencia de seguridad: los ficheros `.pt` son pickles de PyTorch, por lo que 
 
 | Modelo | Tarea | Arquitectura | Licencia | Disponibilidad | Tasa de exito |
 |---|---|---|---|---|---|
-| sim-square-narrow-r03-baseline-divl | sim-square-narrow | Actor de difusion congelado + critico DIVL | MIT | HuggingFace | 94,24 % (media 5 semillas) |
-| sim-square-narrow-r03-baseline-idql | sim-square-narrow | IDQL (origen del actor congelado) | no disponible en la informacion | HuggingFace | no disponible |
-| Otros brazos/rondas de Mulligan | sim-square-narrow | Depende del brazo (baseline, DAgger, etc.) | MIT (segun proyecto) | HuggingFace | no disponible |
+| sim-square-narrow-r03-baseline-divl | sim-square-narrow | Actor de difusion congelado + critico DIVL | MIT | Hugging Face | 94,24 % (media 5 semillas) |
+| sim-square-narrow-r03-baseline-idql | sim-square-narrow | IDQL (origen del actor congelado) | no disponible en la informacion | Hugging Face | no disponible |
+| Otros brazos/rondas de Mulligan | sim-square-narrow | Depende del brazo (baseline, DAgger, etc.) | MIT (segun proyecto) | Hugging Face | no disponible |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada. La comparacion con `sim-square-narrow-r03-baseline-idql` es estructural: este modelo hereda su actor congelado y sustituye/introduce el critico DIVL.
 
@@ -101,11 +101,11 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-divl
 - Modelo padre (IDQL, origen del actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts baseline c01: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-baseline-policy-rollouts

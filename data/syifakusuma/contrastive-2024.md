@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`syifakusuma/contrastive-2024` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo publica el usuario syifakusuma y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`syifakusuma/contrastive-2024` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo publica el usuario syifakusuma y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con una configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El modelo emplea una arquitectura ViT de escala "small" con atención estándar, fusión mediante cross-attention, activación aproximada GELU y normalización LayerNorm. El checkpoint incluido en `model.safetensors` no ha sido entrenado ni auditado; el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio no constituye una release preentrenada.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syifakusuma/contrastive-2024 | 24.832 | No disponible | Sin benchmarks publicados | BSD-3-Clause | HuggingFace (repo público, 0 descargas) |
-| CLIP (ViT-B/32) | ~151 M | 77 tokens de texto | Benchmarks públicos en zero-shot | MIT | HuggingFace, pesos entrenados |
-| SigLIP (ViT-B) | ~93 M | No disponible | Benchmarks públicos en zero-shot | Apache 2.0 | HuggingFace, pesos entrenados |
-| OpenCLIP (ViT-B/32) | ~151 M | 77 tokens de texto | Benchmarks públicos en zero-shot | MIT | HuggingFace, pesos entrenados |
+| syifakusuma/contrastive-2024 | 24.832 | No disponible | Sin benchmarks publicados | BSD-3-Clause | Hugging Face (repo público, 0 descargas) |
+| CLIP (ViT-B/32) | ~151 M | 77 tokens de texto | Benchmarks públicos en zero-shot | MIT | Hugging Face, pesos entrenados |
+| SigLIP (ViT-B) | ~93 M | No disponible | Benchmarks públicos en zero-shot | Apache 2.0 | Hugging Face, pesos entrenados |
+| OpenCLIP (ViT-B/32) | ~151 M | 77 tokens de texto | Benchmarks públicos en zero-shot | MIT | Hugging Face, pesos entrenados |
 
 La comparación es asimétrica: los tres alternativos son modelos preentrenados a gran escala con pesos listos para usar, mientras que `contrastive-2024` es un esqueleto de código con inicialización sin entrenar. No es sustituible por ellos en producción.
 
@@ -76,11 +76,11 @@ La comparación es asimétrica: los tres alternativos son modelos preentrenados 
 - No se ha auditado robustez, equidad ni transferencia de dominio; el autor lo advierte explícitamente.
 - Riesgo de alucinación no aplica en el sentido de generación de texto, pero sí de resultados engañosos si se usa como si fuera un modelo entrenado.
 - Sin benchmarks, sin métricas de evaluación y sin documentación de datos de entrenamiento.
-- Sin idiomas declarados ni pipeline asignado en HuggingFace; la carga automática con APIs genéricas falla sin adaptador.
+- Sin idiomas declarados ni pipeline asignado en Hugging Face; la carga automática con APIs genéricas falla sin adaptador.
 - La licencia BSD-3-Clause permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datasets externos que se usen con el repositorio.
 - No apto para producción: el propio autor lo describe como punto de partida experimental para revisión de código y pruebas de humo.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/syifakusuma/contrastive-2024
+- Repositorio en Hugging Face: https://huggingface.co/syifakusuma/contrastive-2024

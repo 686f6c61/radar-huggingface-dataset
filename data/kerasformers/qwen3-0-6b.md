@@ -36,7 +36,7 @@ El modelo es una conversión directa de los pesos del modelo original `Qwen/Qwen
 - Despliegue en dispositivos con recursos limitados: al requerir poca memoria (aproximadamente 1.2 GB en bfloat16), puede ejecutarse en GPUs de gama media o incluso en CPU para tareas de baja latencia.
 - Experimentación académica: al ser una conversión de un modelo conocido, permite estudiar el comportamiento de la arquitectura Qwen3 en un entorno controlado y con múltiples backends.
 - Integración en pipelines de Keras: desarrolladores que ya usan Keras pueden incorporar generación de texto sin cambiar de framework, aprovechando la compatibilidad con TensorFlow, PyTorch y JAX.
-- Educación y formación: sirve como ejemplo práctico de cómo portar modelos de HuggingFace a Keras 3, útil para cursos y tutoriales.
+- Educación y formación: sirve como ejemplo práctico de cómo portar modelos de Hugging Face a Keras 3, útil para cursos y tutoriales.
 - Generación de contenido asistida: puede utilizarse para redactar borradores, resumir textos o completar plantillas en aplicaciones donde no se requiere un modelo de gran escala.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen3-0.6b](https://huggingface.co/kerasformers/qwen3-0.6b)
+- [Hugging Face - kerasformers/qwen3-0.6b](https://huggingface.co/kerasformers/qwen3-0.6b)
 - [Modelo original Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)

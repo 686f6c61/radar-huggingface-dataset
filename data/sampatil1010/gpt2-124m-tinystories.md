@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sampatil1010/gpt2-124m-tinystories` es una reproduccion desde cero de la arquitectura GPT-2 Small (12 capas, 12 cabezas de atencion, 768 de dimension de embedding, vocabulario BPE de 50.257 tokens) entrenada por el usuario sampatil1010 en PyTorch sobre hardware Apple Silicon (MPS) y publicada en HuggingFace bajo licencia MIT. No es un ajuste fino de los pesos de OpenAI: el autor indica explicitamente que el preentrenamiento se hizo *from scratch*, con inicializacion aleatoria, usando como unico corpus TinyStories (~4,7 millones de tokens de narraciones infantiles sinteticas en ingles). El resultado es un modelo autoregresivo pequeno que sabe continuar cuentos simples, pero que no ha pasado por ninguna fase de instruccion, RLHF o DPO.
+`sampatil1010/gpt2-124m-tinystories` es una reproduccion desde cero de la arquitectura GPT-2 Small (12 capas, 12 cabezas de atencion, 768 de dimension de embedding, vocabulario BPE de 50.257 tokens) entrenada por el usuario sampatil1010 en PyTorch sobre hardware Apple Silicon (MPS) y publicada en Hugging Face bajo licencia MIT. No es un ajuste fino de los pesos de OpenAI: el autor indica explicitamente que el preentrenamiento se hizo *from scratch*, con inicializacion aleatoria, usando como unico corpus TinyStories (~4,7 millones de tokens de narraciones infantiles sinteticas en ingles). El resultado es un modelo autoregresivo pequeno que sabe continuar cuentos simples, pero que no ha pasado por ninguna fase de instruccion, RLHF o DPO.
 
 Su relevancia es mas didactica y de investigacion que productiva. Sirve como caso de estudio reproducible de un pipeline completo de preentrenamiento (tokenizacion, bucle de entrenamiento, checkpointing y publicacion en safetensors) en una sola maquina de consumo, y como punto de partida para experimentos controlados sobre curriculum de datos, tokenizadores y tecnicas de decodificacion. La ventana de contexto es de solo 256 tokens, muy por debajo de los 1.024 tokens del GPT-2 original, lo que limita cualquier uso que requiera memoria conversacional o documentos largos.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|---|
 | `sampatil1010/gpt2-124m-tinystories` | 162,4M reales (124M nominales) | 256 tokens | ~4,7M tokens de TinyStories, desde cero | Ingles | MIT | Sin benchmarks publicados; sin instruccion ni alineacion |
 | GPT-2 Small (OpenAI) | 124M | 1.024 tokens | Decenas de miles de millones de tokens de WebText | Ingles | Modified MIT | Referencia de la arquitectura; requiere `transformers` con el tokenizador original |
-| SmolLM2-135M (HuggingFace) | 135M | 8.192 tokens | Billones de tokens (SmolLM-Corpus), con fases de instruccion en variantes `-Instruct` | Ingles principalmente | Apache 2.0 | Modelo moderno de tamano comparable; contexto 32 veces mayor |
+| SmolLM2-135M (Hugging Face) | 135M | 8.192 tokens | Billones de tokens (SmolLM-Corpus), con fases de instruccion en variantes `-Instruct` | Ingles principalmente | Apache 2.0 | Modelo moderno de tamano comparable; contexto 32 veces mayor |
 | TinyStories-33M (Eldan y Li / Microsoft Research) | 33M | 512 tokens en la implementacion del paper | Corpus TinyStories completo | Ingles | no disponible | Referencia directa del dominio; existen variantes de 1M a 33M |
 
 Los datos de los modelos comparados proceden de sus fichas publicas; no se han ejecutado evaluaciones propias. La comparacion en rendimiento cuantitativo no es posible porque este modelo no publica ninguna metrica.
@@ -94,9 +94,9 @@ Los datos de los modelos comparados proceden de sus fichas publicas; no se han e
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/sampatil1010/gpt2-124m-tinystories
+- Ficha del modelo en Hugging Face: https://huggingface.co/sampatil1010/gpt2-124m-tinystories
 - Paper de TinyStories (Eldan y Li, arXiv:2305.07759): https://arxiv.org/abs/2305.07759
-- Dataset TinyStories en HuggingFace: https://huggingface.co/datasets/roneneldan/TinyStories
+- Dataset TinyStories en Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories
 - Implementaciones de referencia de TinyStories para comparar: https://huggingface.co/roneneldan/TinyStories-33M
 - Modelo GPT-2 original de OpenAI: https://huggingface.co/openai-community/gpt2
 - SmolLM2-135M como alternativa moderna de tamano similar: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p2b-opd
+- Modelo en Hugging Face: https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p2b-opd
 - Repositorio relacionado del mismo autor: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-opd
 - Otro checkpoint relacionado: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix
 - Modelo semilla del primer rung: https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder

@@ -4,7 +4,7 @@
 
 Stable Audio Open 1.0 es un modelo de síntesis de audio a partir de texto desarrollado por Stability AI, publicado en mayo de 2024. Está diseñado para generar muestras de audio cortas, efectos de sonido y elementos de producción musical a partir de descripciones textuales. El modelo se basa en una arquitectura de difusión latente y cuenta con 1.213.448.210 parámetros, lo que lo sitúa en la gama de modelos de audio generativo de tamaño medio.
 
-Su relevancia radica en que es uno de los primeros modelos de texto a audio con pesos abiertos entrenados exclusivamente con datos bajo licencia Creative Commons, lo que permite un uso más flexible en comparación con otros modelos que utilizan datos con derechos restrictivos. El modelo está disponible en HuggingFace con acceso restringido (gated), requiere aceptar las condiciones de la licencia estable-audio-community, y su librería de referencia es stable-audio-tools.
+Su relevancia radica en que es uno de los primeros modelos de texto a audio con pesos abiertos entrenados exclusivamente con datos bajo licencia Creative Commons, lo que permite un uso más flexible en comparación con otros modelos que utilizan datos con derechos restrictivos. El modelo está disponible en Hugging Face con acceso restringido (gated), requiere aceptar las condiciones de la licencia estable-audio-community, y su librería de referencia es stable-audio-tools.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La p�
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Dado el tamaño de 1,2 mil millones de parámetros y el repositorio de 15,7 GB, se estima que la inferencia requiere al menos 8-12 GB de VRAM en FP16, aunque no hay datos oficiales.
 - GPU recomendadas: no se especifican modelos concretos. Por el tamaño, una GPU con 16 GB de VRAM (por ejemplo, RTX 4080, RTX 4090, A10) sería adecuada para inferencia en FP16.
 - Compatibilidad con GPU de consumo: probablemente sí, en tarjetas con 12 GB o más de VRAM, aunque no hay confirmación oficial.
-- Opciones de despliegue: la librería stable-audio-tools es la referencia; también se puede usar con diffusers (el tag de HuggingFace incluye diffusers). No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: la librería stable-audio-tools es la referencia; también se puede usar con diffusers (el tag de Hugging Face incluye diffusers). No se mencionan integraciones con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información suficiente para comparar con otros modelos de text
 
 - El modelo solo soporta prompts en inglés; las descripciones en otros idiomas pueden producir resultados subóptimos.
 - La licencia stable-audio-community impone restricciones de uso comercial; es necesario revisar los términos exactos antes de utilizarlo en productos comerciales.
-- El acceso al modelo en HuggingFace es restringido (gated), lo que requiere aceptar condiciones adicionales.
+- El acceso al modelo en Hugging Face es restringido (gated), lo que requiere aceptar condiciones adicionales.
 - La duración máxima de generación es de aproximadamente 47 segundos, lo que limita su uso para piezas musicales completas o audio de larga duración.
 - No se han publicado datos sobre sesgos o alucinaciones específicas, pero como modelo generativo, puede producir sonidos inesperados o de baja calidad en prompts ambiguos.
 - El entrenamiento con datos Creative Commons puede limitar la cobertura de ciertos estilos o géneros musicales muy específicos.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar con otros modelos de text
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stabilityai/stable-audio-open-1.0
+- Hugging Face: https://huggingface.co/stabilityai/stable-audio-open-1.0
 - Página de investigación de Stability AI: https://stability.ai/research/stable-audio-open
 - Anuncio oficial: https://stability.ai/news-updates/introducing-stable-audio-open
 - Ficha en Open Laboratory: https://openlaboratory.com/models/stable-audio-open-1/

@@ -85,7 +85,7 @@ Mediciones de velocidad y memoria (glyd 0.29.4, una GPU por prueba, contexto de 
 
 | Modelo | Parametros / tamano | Contexto | KL vs bf16 | Tokens/s (RTX 4090) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.5-4B (bf16, base) | 4.205.751.296 / 8,4 GB | No disponible | 0 (referencia) | No disponible | Apache-2.0 | Repositorio original en HuggingFace |
+| Qwen/Qwen3.5-4B (bf16, base) | 4.205.751.296 / 8,4 GB | No disponible | 0 (referencia) | No disponible | Apache-2.0 | Repositorio original en Hugging Face |
 | glyd/Qwen3.5-4B-kestrel | No disponible / 3,4 GB | No disponible | 0,00883 | 201 | Apache-2.0 (pesos) | Requiere motor Glyd |
 | glyd/Qwen3.5-4B-swift | 4.205.751.296 en el base; 2,9 GB en disco | 32k | 0,0252 | 227 | Apache-2.0 (pesos); motor BUSL-1.1 | Requiere motor Glyd |
 
@@ -107,7 +107,7 @@ La variante kestrel es mas fiel al bf16 original (KL 0,00883 frente a 0,0252) pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-4B-swift
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-4B-swift
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Commit del modelo base utilizado: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Variante kestrel del mismo autor: https://huggingface.co/glyd/Qwen3.5-4B-kestrel

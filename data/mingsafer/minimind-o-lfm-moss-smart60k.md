@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind-O LFM + MOSS Smart60K es un modelo multimodal desarrollado por el usuario MingSafeR y publicado en HuggingFace. Se trata de un ensamblaje de dos componentes preentrenados por terceros: un «thinker» basado en `LiquidAI/LFM2.5-350M` (commit `9e6c6ccf47cd318696e137d381a7ded8fe4df09f`) y un «talker» basado en `OpenMOSS-Team/MOSS-TTS-Nano-100M` (commit `44502f80dbf9743528fa921cc544d662c685ebec`). El resultado es un sistema que combina comprension de texto, imagen y audio con generacion de voz, empaquetado en un unico checkpoint denominado `joint_core.pt`.
+MiniMind-O LFM + MOSS Smart60K es un modelo multimodal desarrollado por el usuario MingSafeR y publicado en Hugging Face. Se trata de un ensamblaje de dos componentes preentrenados por terceros: un «thinker» basado en `LiquidAI/LFM2.5-350M` (commit `9e6c6ccf47cd318696e137d381a7ded8fe4df09f`) y un «talker» basado en `OpenMOSS-Team/MOSS-TTS-Nano-100M` (commit `44502f80dbf9743528fa921cc544d662c685ebec`). El resultado es un sistema que combina comprension de texto, imagen y audio con generacion de voz, empaquetado en un unico checkpoint denominado `joint_core.pt`.
 
 El problema que aborda es el de unificar en un solo pipeline tareas de texto-a-audio (T2A), audio-a-audio (A2A) e imagen-a-texto (I2T), algo que normalmente requiere encadenar varios modelos independientes. El autor reporta un entrenamiento de ajuste fino sobre 60.000 filas en total (20K T2A, 15K A2A y 25K I2T) ejecutado sobre una unica GPU A100 de 40 GB, con 1.875 pasos de optimizador completados. El checkpoint exportado corresponde, segun la model card, al estado verificado de `checkpoint/latest/core.pt` en ese paso final.
 
@@ -85,10 +85,10 @@ No se dispone de resultados de benchmarks ni de datos de rendimiento que permita
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| MingSafeR/minimind-o-lfm-moss-smart60k | No agregado (350M thinker + 100M talker) | No disponible | No disponible | HuggingFace, codigo personalizado | No disponibles |
-| LiquidAI/LFM2.5-350M | 350M | No disponible | No disponible en esta ficha | HuggingFace | No disponibles en esta ficha |
-| OpenMOSS-Team/MOSS-TTS-Nano-100M | 100M | No aplica (TTS) | No disponible en esta ficha | HuggingFace | No disponibles en esta ficha |
-| MingSafeR/miniloop-o-smart60k-moss16rvq | No disponible | No disponible | No disponible | HuggingFace (predecesor declarado) | No disponibles |
+| MingSafeR/minimind-o-lfm-moss-smart60k | No agregado (350M thinker + 100M talker) | No disponible | No disponible | Hugging Face, codigo personalizado | No disponibles |
+| LiquidAI/LFM2.5-350M | 350M | No disponible | No disponible en esta ficha | Hugging Face | No disponibles en esta ficha |
+| OpenMOSS-Team/MOSS-TTS-Nano-100M | 100M | No aplica (TTS) | No disponible en esta ficha | Hugging Face | No disponibles en esta ficha |
+| MingSafeR/miniloop-o-smart60k-moss16rvq | No disponible | No disponible | No disponible | Hugging Face (predecesor declarado) | No disponibles |
 
 ## Limitaciones y advertencias
 
@@ -99,13 +99,13 @@ No se dispone de resultados de benchmarks ni de datos de rendimiento que permita
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tipo y no cuantificado por el autor.
 - Sesgos: no evaluados ni documentados. Al derivar de pesos preentrenados de terceros, hereda los sesgos de esos corpus, que tampoco se detallan.
 - Trazabilidad de datos: la composicion del conjunto Smart60K no se describe mas alla del numero de filas por tarea, lo que impide auditar procedencia, consentimiento o posibles contaminaciones.
-- Madurez del artefacto: cero descargas y cero interacciones en HuggingFace, sin comunidad que haya validado la reproducibilidad.
+- Madurez del artefacto: cero descargas y cero interacciones en Hugging Face, sin comunidad que haya validado la reproducibilidad.
 - Formato: al ser un `.pt` de PyTorch sin cuantizaciones publicadas, no se integra directamente con runtimes de inferencia estandar como llama.cpp u Ollama.
-- Consistencia de metadatos: la fecha de creacion registrada en HuggingFace (10 de septiembre de 2026) es posterior a la fecha de la consulta, lo que sugiere un posible error de metadatos o de reloj en la publicacion.
+- Consistencia de metadatos: la fecha de creacion registrada en Hugging Face (10 de septiembre de 2026) es posterior a la fecha de la consulta, lo que sugiere un posible error de metadatos o de reloj en la publicacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingSafeR/minimind-o-lfm-moss-smart60k
+- Modelo en Hugging Face: https://huggingface.co/MingSafeR/minimind-o-lfm-moss-smart60k
 - Modelo predecesor declarado (PRE): https://huggingface.co/MingSafeR/miniloop-o-smart60k-moss16rvq
 - Thinker base LFM2.5-350M: https://huggingface.co/LiquidAI/LFM2.5-350M (commit `9e6c6ccf47cd318696e137d381a7ded8fe4df09f`)
 - Talker base MOSS-TTS-Nano-100M: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M (commit `44502f80dbf9743528fa921cc544d662c685ebec`)

@@ -89,14 +89,14 @@ El autor reporta además una comprobación de paridad offline: la probabilidad t
 - El repositorio no incluye los ficheros `mmproj`, por lo que la capacidad de visión requiere descargarlos por separado desde el repositorio de bartowski.
 - No se han publicado evaluaciones de capacidades (razonamiento, código, matemáticas), ni datos de sesgo, alucinación o comportamiento multilingüe. El modelo base declara un enfoque de agente y cuatro dominios, pero sin métricas públicas asociadas.
 - No se especifica la longitud de contexto soportada. El valor `-c 4096` que aparece en el ejemplo de uso es una elección de ejecución del autor, no el máximo del modelo.
-- Discrepancia en el recuento de parámetros: los metadatos de HuggingFace dan 9.197.093.888 (~9,2 B) mientras que una fuente externa cita 9,4 B.
+- Discrepancia en el recuento de parámetros: los metadatos de Hugging Face dan 9.197.093.888 (~9,2 B) mientras que una fuente externa cita 9,4 B.
 - La licencia declarada es MIT, igual que la del modelo base. No obstante, los pesos de inicialización del cabezal MTP provienen de Qwen/Qwen3.5-9B cuya licencia no se indica en la información disponible; conviene verificarla antes de un uso comercial.
 - La cuantización Q4_K_M introduce pérdida de precisión respecto al modelo base en safetensors, no cuantificada en la documentación aportada.
 - Repositorio con 0 descargas y 0 me gusta: no hay validación comunitaria ni informes de terceros sobre su comportamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VitreousCut/MiMo-V2.6-Distill-Qwen-9B-Q4_K_M-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/VitreousCut/MiMo-V2.6-Distill-Qwen-9B-Q4_K_M-MTP-GGUF
 - Modelo base (XiaomiMiMo): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - GGUF base de bartowski: https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF
 - README del GGUF de bartowski: https://huggingface.co/bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF/blob/main/README.md

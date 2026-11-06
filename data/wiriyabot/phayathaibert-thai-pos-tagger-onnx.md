@@ -96,7 +96,7 @@ Comparativa con etiquetadores de POS alternativos para tailandes: no disponible.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/wiriyabot/phayathaibert-thai-pos-tagger-onnx
+- Hugging Face (este repositorio): https://huggingface.co/wiriyabot/phayathaibert-thai-pos-tagger-onnx
 - Modelo base PyTorch: https://huggingface.co/nlp-chula/phayathaibert-thai-pos-tagger
 - PhayaThaiBERT: https://huggingface.co/clicknext/phayathaibert
 - Organizacion nlp-chula: https://huggingface.co/nlp-chula

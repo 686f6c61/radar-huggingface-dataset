@@ -6,7 +6,7 @@ KnitNet es un modelo de aprendizaje profundo orientado al diseno inverso de ARN 
 
 Segun las etiquetas del repositorio, la aproximacion combina difusion discreta (masked discrete diffusion, MDLM) con redes neuronales de grafos (GNN). La difusion discreta permite generar secuencias de forma iterativa sobre un alfabeto finito de cuatro simbolos (A, C, G, U) sin necesidad de relajar el problema a un espacio continuo, mientras que el componente GNN se emplea habitualmente para codificar la estructura del ARN como grafo (nucleotidos como nodos, apareamientos de bases como aristas). El repositorio ocupa 10,4 GB y los pesos estan en formato PyTorch nativo.
 
-Su relevancia actual radica en que el diseno inverso de ARN es un cuello de botella en terapias de ARN, vacunas de ARNm, aptameros, ribozimas y herramientas de edicion genomica basadas en ARN guia. La informacion disponible no incluye memoria tecnica, paper asociado ni model card detallada, por lo que varios datos clave (parametros, contexto, datos de entrenamiento) no pueden confirmarse y se marcan como no disponibles. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Su relevancia actual radica en que el diseno inverso de ARN es un cuello de botella en terapias de ARN, vacunas de ARNm, aptameros, ribozimas y herramientas de edicion genomica basadas en ARN guia. La informacion disponible no incluye memoria tecnica, paper asociado ni model card detallada, por lo que varios datos clave (parametros, contexto, datos de entrenamiento) no pueden confirmarse y se marcan como no disponibles. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que el diseno inverso de ARN es un cuello de bote
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados; solo checkpoint PyTorch) |
 | Idiomas soportados | no aplica: opera sobre secuencias de nucleotidos (A, C, G, U), no sobre lenguaje natural |
-| Licencia | MIT, con acceso restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Licencia | MIT, con acceso restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | PyTorch nativo (no se ofrecen safetensors ni GGUF); tamano del repositorio 10,4 GB |
 | Autor | xwang112358 |
 | Fecha de creacion | 2026-07-17 |
@@ -78,7 +78,7 @@ No se dispone de datos verificados de rendimiento ni de parametros de las altern
 
 | Modelo | Enfoque | Tipo de condicionamiento | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| KnitNet (este modelo) | Difusion discreta (MDLM) + GNN | Estructura representada como grafo | MIT (acceso gated) | HuggingFace, pesos PyTorch | Parametros y benchmarks: no disponibles |
+| KnitNet (este modelo) | Difusion discreta (MDLM) + GNN | Estructura representada como grafo | MIT (acceso gated) | Hugging Face, pesos PyTorch | Parametros y benchmarks: no disponibles |
 | gRNAde | Red neuronal de grafos autorregresiva sobre esqueleto de ARN | Estructura 3D | no disponible | Repositorio publico | Datos comparativos: no disponibles |
 | RiboDiffusion | Modelo de difusion para diseno inverso de ARN | Estructura | no disponible | Repositorio publico | Datos comparativos: no disponibles |
 | RNAinverse (ViennaRNA) | Optimizacion estocastica clasica sobre modelo termodinamico | Estructura secundaria | Licencia de ViennaRNA | Distribucion de ViennaRNA | Datos comparativos: no disponibles |
@@ -88,7 +88,7 @@ No se han encontrado, en la informacion disponible, evaluaciones cruzadas entre 
 ## Limitaciones y advertencias
 
 - Ausencia de documentacion: no hay paper, model card ni memoria tecnica en la informacion proporcionada. Las capacidades declaradas en esta ficha derivan de las etiquetas del repositorio y deben verificarse experimentalmente.
-- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en HuggingFace, lo que puede complicar la reproducibilidad y la integracion automatizada en pipelines, incluso aunque la licencia declarada sea MIT.
+- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en Hugging Face, lo que puede complicar la reproducibilidad y la integracion automatizada en pipelines, incluso aunque la licencia declarada sea MIT.
 - Sin validacion comunitaria: 0 descargas y 1 like en el momento de la consulta. No hay evidencia de terceros que hayan reproducido los resultados.
 - Riesgo de secuencias no funcionales: la generacion por difusion produce candidatas plausibles, no garantias de plegamiento. Es imprescindible validar con predictores de estructura independientes y con ensayos de laboratorio antes de cualquier aplicacion.
 - Sesgo del corpus: RNAcentral agrega secuencias de ARN no codificante con cobertura desigual entre familias y organismos, lo que puede sesgar la generacion hacia motivos sobrerrepresentados y degradar el rendimiento en clases poco documentadas.
@@ -100,7 +100,7 @@ No se han encontrado, en la informacion disponible, evaluaciones cruzadas entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xwang112358/knitnet-rnacentral-pretrain
+- Modelo en Hugging Face: https://huggingface.co/xwang112358/knitnet-rnacentral-pretrain
 - Base de datos de preentrenamiento (RNAcentral): no se proporciona enlace en la informacion disponible
 - Paper o memoria tecnica: no disponible
 - Repositorio de codigo: no disponible

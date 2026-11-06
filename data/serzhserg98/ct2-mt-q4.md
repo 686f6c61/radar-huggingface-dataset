@@ -88,7 +88,7 @@ La comparacion directa no es posible en calidad porque este repositorio no publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/serzhserg98/ct2-mt-q4
+- Repositorio en Hugging Face: https://huggingface.co/serzhserg98/ct2-mt-q4
 - Organizacion QuickMT (modelos originales): https://huggingface.co/quickmt
 - CTranslate2 (runtime y documentacion de cuantizacion): https://github.com/OpenNMT/CTranslate2
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

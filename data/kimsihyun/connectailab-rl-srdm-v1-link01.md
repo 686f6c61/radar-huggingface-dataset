@@ -73,9 +73,9 @@ No se dispone de información sobre modelos comparables de destilación de polí
 
 | Modelo | Parámetros | Contexto | Aciertos en examen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | 86,4% (SL) / 82,4% (RL) | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | 86,4% (SL) / 82,4% (RL) | Apache 2.0 | Hugging Face |
 | Cerebro PPO (profesor) | no aplica (política RL) | no aplica | 100,0% | no disponible | `brain.json` en el simulador |
-| Qwen3.5-0.8B sin ajustar | 0,8B | no disponible | 39,7% | no disponible en la información | HuggingFace |
+| Qwen3.5-0.8B sin ajustar | 0,8B | no disponible | 39,7% | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de destilación de polí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kimsihyun/connectailab-rl-srdm-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/Kimsihyun/connectailab-rl-srdm-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

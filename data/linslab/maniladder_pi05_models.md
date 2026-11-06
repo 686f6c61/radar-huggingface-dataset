@@ -89,7 +89,7 @@ Selección de tareas destacadas:
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ManiLadder PI0.5 LoRA (este repo) | no disponible | no disponible | 0,31 de media en 60 tareas (50 ep/tarea) | MIT | HuggingFace, 112,1 GB |
+| ManiLadder PI0.5 LoRA (este repo) | no disponible | no disponible | 0,31 de media en 60 tareas (50 ep/tarea) | MIT | Hugging Face, 112,1 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables de la misma categoría (adaptadores LoRA por tarea sobre un VLA para manipulación bimanual) ni se aportan métricas de otros sistemas frente a las que contrastar estas tasas de éxito.
@@ -109,5 +109,5 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Linslab/ManiLadder_PI05_Models
+- Repositorio en Hugging Face: https://huggingface.co/Linslab/ManiLadder_PI05_Models
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

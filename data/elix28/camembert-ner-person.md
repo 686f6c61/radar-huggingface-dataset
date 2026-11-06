@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Elix28/camembert-ner-person es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario Elix28. Está construido sobre la arquitectura CamemBERT, un transformer encoder monolingüe para francés, y su nombre sugiere una especialización en el reconocimiento de entidades nombradas de tipo persona (etiqueta PERSON). El modelo tiene 110.032.898 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,4 GB.
+Elix28/camembert-ner-person es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario Elix28. Está construido sobre la arquitectura CamemBERT, un transformer encoder monolingüe para francés, y su nombre sugiere una especialización en el reconocimiento de entidades nombradas de tipo persona (etiqueta PERSON). El modelo tiene 110.032.898 parámetros y se distribuye en formato safetensors dentro de un repositorio de 0,4 GB.
 
 Se trata de un fine-tuning de propósito muy concreto: detectar menciones de personas en texto. Por su tamaño (rango de 110 millones de parámetros, propio de un encoder tipo BERT base) es un modelo ligero, apto para inferencia en CPU o en GPU de consumo, y pensado para integrarse como componente de pipelines de procesamiento de lenguaje natural en lugar de como modelo generativo.
 
-La relevancia práctica de este tipo de modelos está en tareas de anonimización, preanotación de corpus y extracción de entidades en flujos documentales. Sin embargo, la información publicada es extremadamente limitada: la model card es la plantilla automática de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni métricas de evaluación, y el modelo registra cero descargas y cero likes en el momento de la consulta. Cualquier uso en producción exige validación propia previa.
+La relevancia práctica de este tipo de modelos está en tareas de anonimización, preanotación de corpus y extracción de entidades en flujos documentales. Sin embargo, la información publicada es extremadamente limitada: la model card es la plantilla automática de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni métricas de evaluación, y el modelo registra cero descargas y cero likes en el momento de la consulta. Cualquier uso en producción exige validación propia previa.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La relevancia práctica de este tipo de modelos está en tareas de anonimizació
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre el proceso de entrenamiento. La model card del repositorio es la plantilla genérica autogenerada por HuggingFace y todos sus campos figuran como "[More Information Needed]": no se documentan datos de entrenamiento, hiperparámetros, régimen de precisión, procedimiento de ajuste (fine-tuning supervisado, DPO, RLHF) ni infraestructura de cómputo.
+No hay información publicada sobre el proceso de entrenamiento. La model card del repositorio es la plantilla genérica autogenerada por Hugging Face y todos sus campos figuran como "[More Information Needed]": no se documentan datos de entrenamiento, hiperparámetros, régimen de precisión, procedimiento de ajuste (fine-tuning supervisado, DPO, RLHF) ni infraestructura de cómputo.
 
 Los únicos indicios técnicos son los metadatos del repositorio: el tag `camembert` apunta a la familia CamemBERT, el pipeline declarado es `token-classification` y el recuento de parámetros (110.032.898) coincide con el de CamemBERT base, un encoder transformer de 12 capas con vocabulario SentencePiece entrenado sobre texto francés. Se trata, por tanto, de una hipótesis razonable, no de un dato confirmado por el autor. El tag `arxiv:1910.09700` no corresponde a un artículo sobre el modelo, sino a la referencia a Lacoste et al. (2019) sobre el calculador de impacto de carbono que aparece en la propia plantilla de model card.
 
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en fp32 el checkpoint ocupa aproximadamente 440 MB; en fp16, unos 220 MB; en int8, unos 110 MB. Con activaciones y lote pequeño para secuencias de longitud típica de un encoder BERT, el consumo total se sitúa por debajo de 2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. El modelo cabe sobradamente en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100; no requiere aceleradores de gama alta.
 - Viabilidad en hardware de consumo: sí, cabe en cualquier GPU de consumo de los últimos años e incluso puede ejecutarse en CPU con latencias aceptables para procesamiento por lotes.
-- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), `text-embeddings-inference`/`transformers` pipelines, ONNX Runtime tras exportación, y servidores de inferencia como TorchServe o los endpoints de HuggingFace. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin una conversión previa, y los servidores orientados a modelos generativos (vLLM, TGI) no aportan ventajas claras para un encoder de este tamaño.
+- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), `text-embeddings-inference`/`transformers` pipelines, ONNX Runtime tras exportación, y servidores de inferencia como TorchServe o los endpoints de Hugging Face. No hay pesos GGUF publicados, por lo que llama.cpp y Ollama no son aplicables sin una conversión previa, y los servidores orientados a modelos generativos (vLLM, TGI) no aportan ventajas claras para un encoder de este tamaño.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de velocidad, tamaño de lote óptimo ni rendimiento por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Elix28/camembert-ner-person | 110.032.898 | No disponible | Token classification (PERSON) | No disponible | HuggingFace, safetensors |
-| camembert-base (referencia de la arquitectura base) | ~110 M | 512 tokens (posición máxima del modelo base) | Modelo preentrenado, requiere fine-tuning | MIT (según la ficha del modelo base) | HuggingFace |
-| Modelos NER franceses de la comunidad (por ejemplo, fine-tunings de camembert-base o de FlauBERT sobre WikiNER) | Rango 110-140 M | ~512 tokens | Token classification multietiqueta | Variable según autor | HuggingFace |
+| Elix28/camembert-ner-person | 110.032.898 | No disponible | Token classification (PERSON) | No disponible | Hugging Face, safetensors |
+| camembert-base (referencia de la arquitectura base) | ~110 M | 512 tokens (posición máxima del modelo base) | Modelo preentrenado, requiere fine-tuning | MIT (según la ficha del modelo base) | Hugging Face |
+| Modelos NER franceses de la comunidad (por ejemplo, fine-tunings de camembert-base o de FlauBERT sobre WikiNER) | Rango 110-140 M | ~512 tokens | Token classification multietiqueta | Variable según autor | Hugging Face |
 
 Nota: los datos de camembert-base y de los fine-tunings de la comunidad corresponden al conocimiento general de esas arquitecturas y no han podido verificarse con la información proporcionada en esta búsqueda. No se dispone de métricas comparativas de rendimiento entre este modelo y sus alternativas.
 
@@ -83,7 +83,7 @@ Nota: los datos de camembert-base y de los fine-tunings de la comunidad correspo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elix28/camembert-ner-person
+- Modelo en Hugging Face: https://huggingface.co/Elix28/camembert-ner-person
 - Referencia citada en la plantilla de la model card (calculador de impacto de carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML mencionado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

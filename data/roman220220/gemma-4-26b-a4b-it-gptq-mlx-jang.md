@@ -70,9 +70,9 @@ La única validación documentada es cualitativa: el autor informa de que el mod
 
 | Modelo | Parametros | Contexto | Formato / tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang | 27,8B totales, ~4B activos | no disponible | MLX safetensors, 15,6 GB | Apache 2.0 | HuggingFace, 25 descargas, 0 likes |
-| google/gemma-4-26B-A4B-it (base) | 26,5B totales, ~4B activos | no disponible | bf16, 51,6 GB | Apache 2.0 | HuggingFace, modelo de referencia |
-| roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit | no disponible | no disponible | MLX 8 bits | Apache 2.0 | HuggingFace, misma cuenta |
+| roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang | 27,8B totales, ~4B activos | no disponible | MLX safetensors, 15,6 GB | Apache 2.0 | Hugging Face, 25 descargas, 0 likes |
+| google/gemma-4-26B-A4B-it (base) | 26,5B totales, ~4B activos | no disponible | bf16, 51,6 GB | Apache 2.0 | Hugging Face, modelo de referencia |
+| roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit | no disponible | no disponible | MLX 8 bits | Apache 2.0 | Hugging Face, misma cuenta |
 | gemma4:26b (Ollama) | no disponible | no disponible | GGUF | Apache 2.0 | Ollama Library |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. La diferencia documentada es de tamaño y esquema de cuantización (JANG mixto 4/8 bits con GPTQ frente a bf16 completo o a una cuantización uniforme de 8 bits).
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La dif
 - Riesgo de alucinación: no cuantificado. La cuantización de 4 bits en los expertos puede degradar la fidelidad factual respecto al bf16, aunque el autor no aporta métricas al respecto.
 - Rendimiento degradado por cuantización: la atención y los embeddings se mantienen a 8 bits y el router sin tocar precisamente porque son sensibles, pero los 128 expertos a 4 bits son la mayor fuente potencial de pérdida de precisión. No hay evaluación cuantitativa del delta frente al base.
 - Limitaciones de contexto: la longitud de contexto no está documentada en esta ficha; conviene verificar el `config.json` del checkpoint antes de diseñar aplicaciones que dependan de ventanas largas.
-- Limitaciones de idioma: no se especifican idiomas soportados en los metadatos de HuggingFace.
+- Limitaciones de idioma: no se especifican idiomas soportados en los metadatos de Hugging Face.
 - Ausencia de audio: el modelo no incluye torre de audio, por lo que no puede procesar entradas de voz.
 - Compatibilidad restringida: solo funciona con el fork `ipsupport-llc/mlx-lm` y en Apple Silicon. No es desplegable en vLLM, TGI, llama.cpp ni en GPU NVIDIA.
 - Soporte de imagen incompleto: requiere un bucle de generación manual, lo que complica su integración en aplicaciones de producción estándar.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-26B-A4B-it-gptq-mlx-jang
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Variante hermana en 8 bits: https://huggingface.co/roman220220/gemma-4-26B-A4B-it-assistant-mlx-8bit
 - Código del modelo (fork de mlx-lm): https://github.com/ipsupport-llc/mlx-lm

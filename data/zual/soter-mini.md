@@ -87,7 +87,7 @@ La comparativa muestra que `soter-mini` iguala o supera a modelos de mayor tama√
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Zual/soter-mini)
+- [Modelo en Hugging Face](https://huggingface.co/Zual/soter-mini)
 - [Demo interactiva](https://lucpommeret.com/soter/)
 - [Modelo hermano mayor: Zual/soter-megas](https://huggingface.co/Zual/soter-megas)
 - [Modelo intermedio: Zual/soter](https://huggingface.co/Zual/soter) (no detallado en la b√∫squeda)

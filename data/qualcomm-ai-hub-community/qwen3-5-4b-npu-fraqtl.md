@@ -103,7 +103,7 @@ Rendimiento en dispositivo (Snapdragon 8 Elite Gen 5, SM8850, llama.cpp b12079 b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qualcomm-ai-hub-community/Qwen3.5-4B-NPU-fraQtl
+- Repositorio Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/Qwen3.5-4B-NPU-fraQtl
 - Repositorio canónico de fraQtl: https://huggingface.co/fraQtl/Qwen3.5-4B-NPU-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Comparador unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF

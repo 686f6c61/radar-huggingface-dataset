@@ -71,8 +71,8 @@ El autor advierte de que la medición de operación empresarial corresponde a un
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nil-v2 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación general | Apache 2.0 | HuggingFace |
+| connectailab-rl-nil-v2 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación general | Apache 2.0 | Hugging Face |
 | Política PPO del profesor (simulador) | No disponible (modelo pequeño) | No aplica | Decisión discreta en simulador | No disponible | No disponible públicamente |
 
 No se dispone de información sobre otros adaptadores RL comparables en la misma categoría (decisión estructurada sobre modelos pequeños) en la documentación proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores RL comparables en la misma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pwg0218/connectailab-rl-nil-v2)
+- [Modelo en Hugging Face](https://huggingface.co/pwg0218/connectailab-rl-nil-v2)
 - [Repositorio CONNECT TYCOON en GitHub](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab para entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb)
 - [Canal de YouTube CONNECT AI LAB](https://www.youtube.com/@CONNECT-AI-LAB)

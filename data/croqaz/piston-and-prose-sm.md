@@ -41,7 +41,7 @@ El entrenamiento se realizó durante 110 horas y 92 000 pasos sobre un conjunto 
 - Narrativa interactiva en juegos: en prototipos de juegos de texto, puede generar descripciones de escenas o intervenciones del narrador. Al ser un modelo ligero, se ejecuta en bucle de juego con una GPU o incluso en CPU.
 - Generacion de datos sinteticos para ajuste fino: puede producir compilaciones de completions en ingles para entrenar modelos mas grandes o de destilacion. El propio autor utilizo datasets sinteticos para este modelo, lo que valida este enfoque.
 - Educacion y experimentacion: es util para ensenar el funcionamiento interno de un transformer pequeno, ya que su estructura es sencilla de inspeccionar y modificar, y el reentrenamiento es viable en una GPU domestica.
-- Pruebas de pipelines de generacion: sirve como modelo de humo para validar infraestructuras como Transformers o HuggingFace Inference Endpoints antes de desplegar modelos mayores, gracias a su bajo coste computacional.
+- Pruebas de pipelines de generacion: sirve como modelo de humo para validar infraestructuras como Transformers o Hugging Face Inference Endpoints antes de desplegar modelos mayores, gracias a su bajo coste computacional.
 
 ## Benchmarks y rendimiento
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. En la
 - VRAM estimada: menos de 2 GB para inferencia en precision fp16, ya que el peso ronda los 150 MB. El repositorio ocupa 1,2 GB, lo que sugiere la inclusion de variantes o archivos adicionales.
 - GPU recomendada: cualquier GPU NVIDIA de consumo con al menos 4 GB de VRAM, como una RTX 2060 o superior. Tambien puede ejecutarse en CPU sin problemas.
 - Cabe en GPU de consumo, incluidas GPUs antiguas o integradas, especialmente si se aplica cuantizacion.
-- Opciones de despliegue: HuggingFace Transformers, HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo confirma), y conversion a GGUF para ejecutarse con llama.cpp.
+- Opciones de despliegue: Hugging Face Transformers, Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo confirma), y conversion a GGUF para ejecutarse con llama.cpp.
 - Latencia y throughput: no disponible. Por su tamano, se espera una inferencia casi instantanea en GPU y un rendimiento muy alto en CPU.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No disponible. En la informacion proporcionada no se incluyen datos de otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/croqaz/Piston-and-Prose-sm
+- Hugging Face: https://huggingface.co/croqaz/Piston-and-Prose-sm
 - Modelo hermano (mencionado en la model card): https://huggingface.co/croqaz/Piston-and-Prose-lg
 - Dataset Sprocket-n-Say: https://huggingface.co/datasets/croqaz/Sprocket-n-Say
 - Dataset Synthetic-archive: https://huggingface.co/datasets/croqaz/Synthetic-archive

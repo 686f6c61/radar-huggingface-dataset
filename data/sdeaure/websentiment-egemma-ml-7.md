@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebSentiment EmbeddingGemma ML-7 | 300M (encoder) + 5.383 (cabeza) | 256 tokens | Sonda lineal sobre embeddings | CC-BY-4.0 | HuggingFace |
-| google/embeddinggemma-300m | 300M | No disponible en la informacion | Encoder de embeddings | No disponible en la informacion | HuggingFace (gated) |
+| WebSentiment EmbeddingGemma ML-7 | 300M (encoder) + 5.383 (cabeza) | 256 tokens | Sonda lineal sobre embeddings | CC-BY-4.0 | Hugging Face |
+| google/embeddinggemma-300m | 300M | No disponible en la informacion | Encoder de embeddings | No disponible en la informacion | Hugging Face (gated) |
 | Modelos de sentimiento multilingue genericos | No disponible | No disponible | Clasificadores especificos | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SDeaure/websentiment-egemma-ml-7
+- Modelo en Hugging Face: https://huggingface.co/SDeaure/websentiment-egemma-ml-7
 - Variante con contexto de pagina: https://huggingface.co/SDeaure/websentiment-egemma-ml-7-ctx
 - Encoder base: https://huggingface.co/google/embeddinggemma-300m
 - Encoder ONNX para transformers.js: https://huggingface.co/onnx-community/embeddinggemma-300m-ONNX

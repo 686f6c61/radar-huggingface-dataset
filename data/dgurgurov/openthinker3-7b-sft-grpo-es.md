@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThinker3-7B-SFT-GRPO-ES | ~7B (sin confirmar) | no disponible | Razonamiento en español con RL | no disponible | HuggingFace |
-| OpenThinker3-7B (base) | 7B | no disponible | Razonamiento general (SFT) | no disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32K (típico de Qwen) | Razonamiento general | MIT | HuggingFace |
-| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128K | Razonamiento y agente | NVIDIA Open Model License | HuggingFace |
+| OpenThinker3-7B-SFT-GRPO-ES | ~7B (sin confirmar) | no disponible | Razonamiento en español con RL | no disponible | Hugging Face |
+| OpenThinker3-7B (base) | 7B | no disponible | Razonamiento general (SFT) | no disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32K (típico de Qwen) | Razonamiento general | MIT | Hugging Face |
+| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128K | Razonamiento y agente | NVIDIA Open Model License | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos base; no se dispone de resultados de rendimiento específicos para el modelo GRPO-ES.
 
@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-ES
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-ES
 - Modelo SFT previo: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-ES
 - Modelo base OpenThinker-7B: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Modelo base OpenThinker3-7B: https://huggingface.co/open-thoughts/OpenThinker3-7B

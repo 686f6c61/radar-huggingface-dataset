@@ -45,7 +45,7 @@ Este repositorio concreto es el resultado de una fase de RL (reinforcement learn
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks para este checkpoint concreto. Los datos disponibles corresponden al modelo base SmolLM3-3B, que segun el repositorio de HuggingFace supera a Llama 3.2 3B y Qwen2.5 3B en benchmarks estandar, y es competitivo con modelos de 4B como Qwen3 y Gemma3. No se proporcionan numeros especificos en la informacion disponible.
+No se han publicado resultados de benchmarks para este checkpoint concreto. Los datos disponibles corresponden al modelo base SmolLM3-3B, que segun el repositorio de Hugging Face supera a Llama 3.2 3B y Qwen2.5 3B en benchmarks estandar, y es competitivo con modelos de 4B como Qwen3 y Gemma3. No se proporcionan numeros especificos en la informacion disponible.
 
 ## Requisitos de hardware
 

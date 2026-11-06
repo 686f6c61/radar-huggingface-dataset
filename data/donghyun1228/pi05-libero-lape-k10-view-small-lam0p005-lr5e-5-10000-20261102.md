@@ -65,9 +65,9 @@ No se han publicado en la información disponible resultados desglosados por sui
 
 | Modelo | Tipo | Parámetros | Contexto | Éxito LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| π0.5 LIBERO view_small (este) | VLA adaptada | no disponible | no disponible | 89,10 % | Apache 2.0 | HuggingFace |
+| π0.5 LIBERO view_small (este) | VLA adaptada | no disponible | no disponible | 89,10 % | Apache 2.0 | Hugging Face |
 | π0.5 base (openpi) | VLA | no disponible | no disponible | no disponible | no disponible | openpi |
-| Checkpoint previo `pi05-libero-conflict-mean-source-n50k-10000-20261024` | VLA | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Checkpoint previo `pi05-libero-conflict-mean-source-n50k-10000-20261024` | VLA | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | OpenVLA | VLA | ~7B (referencia externa) | no disponible | no disponible | no disponible | no disponible |
 
 Los datos de π0.5 base, del checkpoint previo y de OpenVLA no están en la información proporcionada; la comparación cuantitativa no es posible con los datos disponibles.
@@ -85,7 +85,7 @@ Los datos de π0.5 base, del checkpoint previo y de OpenVLA no están en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-small-lam0p005-lr5e-5-10000-20261102
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-small-lam0p005-lr5e-5-10000-20261102
 - Checkpoint de inicialización: https://huggingface.co/Donghyun1228/pi05-libero-conflict-mean-source-n50k-10000-20261024
 - Repositorio de código del método: `Donghyun1228/vla_adaptation` (commit `e37d9435`), preset `pi05_libero_conflict_anchor_view_adapt`
 - openpi (stack de referencia): no se proporciona URL en la información disponible

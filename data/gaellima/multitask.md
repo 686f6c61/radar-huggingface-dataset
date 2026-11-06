@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo prototipo de investigacion denominado **Cnn Transformer for Multitask**, publicado por el usuario gaellima en HuggingFace. Se trata de un experimento academico que combina capas convolucionales con atencion transformer para abordar tareas multitarea, aunque el repositorio no especifica que tareas concretas cubre. El checkpoint incluido (`model.safetensors`) es una inicializacion de pesos para pruebas de humo, no un modelo entrenado ni validado.
+Modelo prototipo de investigacion denominado **Cnn Transformer for Multitask**, publicado por el usuario gaellima en Hugging Face. Se trata de un experimento academico que combina capas convolucionales con atencion transformer para abordar tareas multitarea, aunque el repositorio no especifica que tareas concretas cubre. El checkpoint incluido (`model.safetensors`) es una inicializacion de pesos para pruebas de humo, no un modelo entrenado ni validado.
 
 Con solo 49.600 parametros, el modelo es de escala minima (small) y no presenta ningun resultado de benchmark en la documentacion. El autor lo describe explicitamente como un punto de partida experimental: la implementacion es personalizada, requiere un adaptador para cargarse con APIs genericas, y el fichero `eval.py` incluye un ejemplo de prueba autogenerado. Su relevancia actual reside en servir como referencia de formato y arquitectura para quien quiera explorar la fusion CNN-Transformer con atencion flash y fusion gated, no como un modelo utilizable en produccion.
 
@@ -65,12 +65,12 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 - **Checkpoint sin entrenar**: los pesos en `model.safetensors` son de inicializacion; cualquier salida del modelo no tiene significado semantico.
 - **Sin auditoria de robustez, equidad ni transferencia de dominio**: el autor lo declara explicitamente en la model card.
 - **Alucinacion**: no aplicable como riesgo especifico al no estar entrenado, pero cualquier uso en produccion con un futuro checkpoint entrenado requeriria una evaluacion independiente.
-- **Implementacion personalizada**: las APIs genericas de HuggingFace no cargaran el modelo sin un adaptador explicito; se debe usar el script incluido.
+- **Implementacion personalizada**: las APIs genericas de Hugging Face no cargaran el modelo sin un adaptador explicito; se debe usar el script incluido.
 - **Sin soporte de contexto largo**: no se documenta la longitud de contexto ni el manejo de secuencias largas.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que hay que revisar los terminos de las fuentes de datos externas si se usa el repositorio con datasets propios.
 - **Sin resultados de rendimiento**: no se puede evaluar la calidad del modelo en ninguna tarea; no es apto para produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaellima/multitask
+- Modelo en Hugging Face: https://huggingface.co/gaellima/multitask
 - Repositorios y demos: no disponibles en la informacion proporcionada (los resultados de busqueda web corresponden a proyectos homonimos no relacionados).

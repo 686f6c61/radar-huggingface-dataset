@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amphora-1-5B es un adaptador de ajuste fino publicado por el usuario brandonjuarez23 en HuggingFace. Por los ficheros declarados en su model card (`adapter_model.safetensors` y `adapter_config.json`), se trata de un adaptador PEFT —presumiblemente LoRA o QLoRA— y no de un modelo completo con pesos propios: para utilizarlo hay que cargarlo sobre un modelo base que el autor no identifica en ningun momento de la documentacion disponible.
+Amphora-1-5B es un adaptador de ajuste fino publicado por el usuario brandonjuarez23 en Hugging Face. Por los ficheros declarados en su model card (`adapter_model.safetensors` y `adapter_config.json`), se trata de un adaptador PEFT —presumiblemente LoRA o QLoRA— y no de un modelo completo con pesos propios: para utilizarlo hay que cargarlo sobre un modelo base que el autor no identifica en ningun momento de la documentacion disponible.
 
 La unica informacion tecnica concreta que aporta la model card son los conjuntos de datos empleados en entrenamiento y evaluacion: ARC (AI2), bajo CC BY-SA 4.0, y GSM8K (OpenAI), bajo MIT. Ambos son benchmarks de razonamiento —ARC sobre preguntas de ciencia de nivel escolar y GSM8K sobre problemas matematicos de primaria—, lo que sugiere que el ajuste apunta a razonamiento y matematicas basicas, aunque la card no documenta ni el procedimiento de entrenamiento, ni los hiperparametros, ni resultados obtenidos.
 
@@ -27,7 +27,7 @@ El modelo tiene un interes practico muy limitado en su estado actual: cero desca
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo subyacente. El unico dato estructural fiable es el formato de publicacion: al incluir `adapter_config.json` junto a `adapter_model.safetensors`, se trata de un adaptador compatible con la libreria PEFT de HuggingFace, lo que implica que la arquitectura efectiva es la del modelo base sobre el que se entrena, y que el "modelo" Amphora consiste en una matriz de bajo rango que se suma a determinadas capas de ese base. Sin identificar el base, no es posible determinar si es un transformer denso, un MoE, un modelo hibrido ni cual es su ventana de contexto.
+No hay informacion publicada sobre la arquitectura del modelo subyacente. El unico dato estructural fiable es el formato de publicacion: al incluir `adapter_config.json` junto a `adapter_model.safetensors`, se trata de un adaptador compatible con la libreria PEFT de Hugging Face, lo que implica que la arquitectura efectiva es la del modelo base sobre el que se entrena, y que el "modelo" Amphora consiste en una matriz de bajo rango que se suma a determinadas capas de ese base. Sin identificar el base, no es posible determinar si es un transformer denso, un MoE, un modelo hibrido ni cual es su ventana de contexto.
 
 Respecto al entrenamiento, la model card unicamente enumera los datasets de entrenamiento y evaluacion: ARC y GSM8K. No se especifica el numero de tokens, la composicion exacta del corpus, si hubo fases de RLHF, DPO o SFT supervisado, ni los hiperparametros del ajuste (rango, alpha, learning rate, epocas). Tampoco se documenta ninguna innovacion tecnica: no hay decodificacion especulativa, atencion lineal ni tecnicas de entrenamiento destacables descritas en la informacion disponible. El uso simultaneo de ARC y GSM8K como datos declarados apunta a un ajuste orientado a mejorar el razonamiento cientifico y matematico de un modelo pequeno, pero es una inferencia a partir de los datasets, no una afirmacion del autor.
 
@@ -92,7 +92,7 @@ No disponible. La comparacion con alternativas exige conocer el modelo base, el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brandonjuarez23/Amphora-1-5B
+- Hugging Face: https://huggingface.co/brandonjuarez23/Amphora-1-5B
 - Dataset ARC (AI2), CC BY-SA 4.0: no se proporciona enlace directo en la model card; referencia habitual en https://huggingface.co/datasets/allenai/ai2_arc
 - Dataset GSM8K (OpenAI), MIT: no se proporciona enlace directo en la model card; referencia habitual en https://huggingface.co/datasets/openai/gsm8k
 - Paper o blog del autor: no disponible

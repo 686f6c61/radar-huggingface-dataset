@@ -29,7 +29,7 @@ Su relevancia es metodologica: sirve como punto de comparación a escala 1B para
 | Tamano del repositorio | 2,8 GB |
 | Metrica objetivo | HellaSwag |
 | Libreria | transformers |
-| Fecha de publicacion | 2026-10-27 (segun la ficha de HuggingFace) |
+| Fecha de publicacion | 2026-10-27 (segun la ficha de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | Este modelo (credible-ai) | 1,41B | no disponible | MIT | Artefacto de investigación sobre mezcla de datos; 0 descargas |
 | OLMo 2 1B (AllenAI) | ~1,2B (config. pública) | 4.096 (documentación pública) | Apache 2.0 (documentación pública) | Modelo base generalista con SFT/DPO disponibles en la familia |
-| SmolLM2-1.7B (HuggingFace) | ~1,7B | 8.192 (documentación pública) | Apache 2.0 (documentación pública) | Modelo pequeno generalista con variante instructiva |
+| SmolLM2-1.7B (Hugging Face) | ~1,7B | 8.192 (documentación pública) | Apache 2.0 (documentación pública) | Modelo pequeno generalista con variante instructiva |
 | Llama 3.2 1B (Meta) | ~1,2B | 128.000 (documentación pública) | Licencia comunitaria Llama 3.2 | Modelo generalista con variante instructiva |
 
 Nota: los datos de los modelos comparables provienen de su documentación pública y pueden variar respecto a las cifras exactas de cada release; no se incluye comparación de rendimiento porque este checkpoint no publica resultados de benchmarks. La diferencia fundamental es de propósito: los comparables son modelos generalistas, mientras que este es un artefacto experimental con la mezcla de datos fijada por una única métrica.
@@ -105,7 +105,7 @@ Nota: los datos de los modelos comparables provienen de su documentación públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linearlog-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linearlog-hellaswag
 - Enjambre proxy de 30M: https://huggingface.co/credible-ai/olmo2-30M-24domains-vertex
 - Codigo de LinMix: https://github.com/credibleai/linmix
 - OLMo-core: https://github.com/allenai/OLMo-core

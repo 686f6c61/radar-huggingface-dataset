@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_27D_60k_s2000 es un checkpoint de politica robotica entrenado con la libreria LeRobot y etiquetado como `act` (Action Chunking Transformer). Lo publica el usuario kiroaiseoul en HuggingFace y esta pensado para el ecosistema Trossen Mobile AI, es decir, para control de manipulacion movil mediante aprendizaje por imitacion. El repositorio contiene un unico archivo `model.safetensors` de 51.700.368 parametros (0,2 GB de tamano total), con licencia apache-2.0.
+NAJY_act_all11_c100_gist30_27D_60k_s2000 es un checkpoint de politica robotica entrenado con la libreria LeRobot y etiquetado como `act` (Action Chunking Transformer). Lo publica el usuario kiroaiseoul en Hugging Face y esta pensado para el ecosistema Trossen Mobile AI, es decir, para control de manipulacion movil mediante aprendizaje por imitacion. El repositorio contiene un unico archivo `model.safetensors` de 51.700.368 parametros (0,2 GB de tamano total), con licencia apache-2.0.
 
 El modelo no es un modelo de lenguaje: es una politica visomotora que consume un vector de estado de 27 dimensiones y tres flujos de imagen RGB de 480x640 procedentes de las camaras `cam_high`, `cam_left_wrist` y `cam_right_wrist`, y produce un vector de accion de 16 dimensiones. Su relevancia es acotada pero concreta: es un artefacto de investigacion asociado a la ejecucion `exp_all11_c100_gist30_long_s2000`, en el paso 60000, subido segun su autor para tareas de analisis y puntuacion, no como candidato cerrado a despliegue en robot real.
 
@@ -85,7 +85,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_27D_60k_s2000 | 51.700.368 | Estado 27D + 3 imagenes RGB 480x640; salida de accion 16D | apache-2.0 | HuggingFace, 12 descargas, 0 likes |
+| NAJY_act_all11_c100_gist30_27D_60k_s2000 | 51.700.368 | Estado 27D + 3 imagenes RGB 480x640; salida de accion 16D | apache-2.0 | Hugging Face, 12 descargas, 0 likes |
 | ACT original (Zhao et al.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Diffusion Policy | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | SmolVLA | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -108,7 +108,7 @@ Nota cualitativa: dentro del ecosistema LeRobot conviven varias familias de poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s2000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s2000
 - Documento citado por el autor: `trossen-ai-simulation`, `docs/mobile_base_investigation.md` §94 (referenciado en la model card, sin URL publica en la informacion disponible)
 - Libreria de entrenamiento e inferencia: LeRobot (https://github.com/huggingface/lerobot)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente contenidos no relacionados (musica y cotizaciones de plata).

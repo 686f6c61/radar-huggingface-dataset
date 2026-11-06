@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | InternVL3.5 (esta ficha) | 1B / 2B / 4B / 20B-A4B | no disponible | no disponible | Pesos compilados para SoC Ambarella; originales en OpenGVLab |
-| InternVL3.5-1B/2B/4B (OpenGVLab) | 1B / 2B / 4B | no disponible | no disponible | HuggingFace OpenGVLab |
-| InternVL3.5-GPT-OSS-20B-A4B-Preview (OpenGVLab) | 20B (4B activos) | no disponible | no disponible | HuggingFace OpenGVLab |
+| InternVL3.5-1B/2B/4B (OpenGVLab) | 1B / 2B / 4B | no disponible | no disponible | Hugging Face OpenGVLab |
+| InternVL3.5-GPT-OSS-20B-A4B-Preview (OpenGVLab) | 20B (4B activos) | no disponible | no disponible | Hugging Face OpenGVLab |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de otros modelos comparables en la información proporcionada para establecer una comparativa cuantitativa con alternativas como Qwen2.5-VL, Llama 3.2 Vision o Phi-3.5-vision.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/InternVL3.5
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/InternVL3.5
 - Paper: https://arxiv.org/abs/2508.18265
 - Implementación de referencia: https://github.com/OpenGVLab/InternVL
 - Pesos originales InternVL3.5-1B: https://huggingface.co/OpenGVLab/InternVL3_5-1B

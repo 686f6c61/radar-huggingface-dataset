@@ -4,7 +4,7 @@
 
 DeepSeek-V3 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, con 671.000 millones de parametros totales de los que solo se activan 37.000 millones por token. Se trata de la evolucion directa de DeepSeek-V2 y mantiene su arquitectura de atencion Multi-head Latent Attention (MLA) combinada con DeepSeekMoE, lo que reduce de forma notable el coste de inferencia frente a un modelo denso de tamano equivalente. El modelo fue preentrenado sobre 14,8 billones de tokens y publicado bajo la DeepSeek Model License, con el codigo acompanado de licencia MIT.
 
-Su relevancia radica en tres factores: primero, es uno de los primeros modelos a gran escala entrenado con precision mixta FP8 de forma estable, lo que abarata el entrenamiento; segundo, introduce una estrategia de balanceo de carga sin perdida auxiliar y un objetivo de prediccion multi-token (MTP) que sirve ademas para decodificacion especulativa; y tercero, su rendimiento se situa, segun el autor, por encima de otros modelos abiertos y en niveles comparables a los principales modelos cerrados contemporaneos. Con mas de 1,4 millones de descargas y mas de 4.400 "me gusta" en HuggingFace, se ha convertido en una referencia de la IA abierta de finales de 2024 y principios de 2025.
+Su relevancia radica en tres factores: primero, es uno de los primeros modelos a gran escala entrenado con precision mixta FP8 de forma estable, lo que abarata el entrenamiento; segundo, introduce una estrategia de balanceo de carga sin perdida auxiliar y un objetivo de prediccion multi-token (MTP) que sirve ademas para decodificacion especulativa; y tercero, su rendimiento se situa, segun el autor, por encima de otros modelos abiertos y en niveles comparables a los principales modelos cerrados contemporaneos. Con mas de 1,4 millones de descargas y mas de 4.400 "me gusta" en Hugging Face, se ha convertido en una referencia de la IA abierta de finales de 2024 y principios de 2025.
 
 ## Especificaciones tecnicas
 
@@ -68,8 +68,8 @@ Los siguientes valores son estimaciones orientativas a partir del numero de para
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V3 | 671.000 M | 37.000 M | 128K | DeepSeek Model License (codigo MIT) | Pesos abiertos en HuggingFace |
-| DeepSeek-V2 | 236.000 M | 21.000 M | 128K | DeepSeek Model License | Pesos abiertos en HuggingFace |
+| DeepSeek-V3 | 671.000 M | 37.000 M | 128K | DeepSeek Model License (codigo MIT) | Pesos abiertos en Hugging Face |
+| DeepSeek-V2 | 236.000 M | 21.000 M | 128K | DeepSeek Model License | Pesos abiertos en Hugging Face |
 | Llama 3.1 405B | 405.000 M | denso | 128K | Llama 3.1 Community License | Pesos abiertos con restricciones |
 | Qwen2.5-72B | 72.000 M | denso | 128K | Qwen License | Pesos abiertos |
 
@@ -88,7 +88,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V3
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V3
 - Paper: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf
 - Repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-V3
 - Licencia de modelo: https://github.com/deepseek-ai/DeepSeek-V3/blob/main/LICENSE-MODEL
@@ -96,7 +96,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Plataforma de API: https://platform.deepseek.com/
-- Perfil de HuggingFace del autor: https://huggingface.co/deepseek-ai
+- Perfil de Hugging Face del autor: https://huggingface.co/deepseek-ai
 - Discord: https://discord.gg/Tc7c45Zzu5
 - Twitter: https://twitter.com/deepseek_ai
 - arXiv del paper: https://arxiv.org/abs/2412.19437

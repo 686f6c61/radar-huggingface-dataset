@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tutran27/qwen3-4b-math-reasoning` es un ajuste fino (SFT) del modelo Qwen3-4B, publicado por el usuario tutran27 en HuggingFace. El punto de partida declarado es `unsloth/Qwen3-4B-unsloth-bnb-4bit`, es decir, una conversión del Qwen3-4B oficial de Alibaba a 4 bits mediante bitsandbytes, sobre la que se ha aplicado un entrenamiento supervisado con la librería Unsloth y TRL. El objetivo declarado en el nombre del repositorio es especializar el modelo en razonamiento matemático.
+`tutran27/qwen3-4b-math-reasoning` es un ajuste fino (SFT) del modelo Qwen3-4B, publicado por el usuario tutran27 en Hugging Face. El punto de partida declarado es `unsloth/Qwen3-4B-unsloth-bnb-4bit`, es decir, una conversión del Qwen3-4B oficial de Alibaba a 4 bits mediante bitsandbytes, sobre la que se ha aplicado un entrenamiento supervisado con la librería Unsloth y TRL. El objetivo declarado en el nombre del repositorio es especializar el modelo en razonamiento matemático.
 
 El modelo conserva la arquitectura del Qwen3-4B original: un transformer decoder-only denso de 4.055.498.240 parámetros (unos 4,06 mil millones), con licencia Apache-2.0 y pesos en formato safetensors (repositorio de 3,7 GB). La model card es mínima: no documenta el conjunto de datos de entrenamiento, el número de tokens vistos, hiperparámetros, metodología de evaluación ni resultados de benchmarks.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tutran27/qwen3-4b-math-reasoning | ~4,06 B | No documentado (base: 32K, 131K con YaRN) | SFT en matematicas sobre Qwen3-4B 4-bit | Apache-2.0 | HuggingFace, 0 descargas |
+| tutran27/qwen3-4b-math-reasoning | ~4,06 B | No documentado (base: 32K, 131K con YaRN) | SFT en matematicas sobre Qwen3-4B 4-bit | Apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3-4B (base oficial) | ~4,0 B | 32K nativo / 131K con YaRN | Modelo generalista con thinking mode | Apache-2.0 | Ampliamente disponible, ecosistema maduro |
 | Qwen2.5-Math-7B | ~7,1 B | 4K (modelo especializado en math) | Math-specific, cadena de pensamiento | Apache-2.0 | Disponible, con evaluaciones publicadas |
 | Llama-3.2-3B-Instruct | ~3,2 B | 128K | Generalista multilingue | Licencia comunitaria Llama 3.2 | Muy extendido, soporte en todas las herramientas |
@@ -86,7 +86,7 @@ Frente al Qwen3-4B base, este ajuste solo puede justificarse con una evaluación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tutran27/qwen3-4b-math-reasoning
+- Modelo en Hugging Face: https://huggingface.co/tutran27/qwen3-4b-math-reasoning
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

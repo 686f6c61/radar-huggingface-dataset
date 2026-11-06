@@ -6,7 +6,7 @@
 
 La arquitectura base es ConvNeXt-tiny, una CNN moderna desarrollada por Facebook AI Research que incorpora elementos de diseno de los Vision Transformers (patchify stem, normalizacion por capa, kernel sizes mayores) manteniendo la eficiencia de las redes convolucionales. El modelo tiene 27,8 millones de parametros y acepta imagenes de 224x224 pixeles. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-La model card fue generada automaticamente por el Trainer de HuggingFace y varias secciones (descripcion, usos previstos, datos de entrenamiento) aparecen como "More information needed". El dataset de entrenamiento se indica como "None", por lo que no se dispone de informacion publica sobre su composicion ni tamano.
+La model card fue generada automaticamente por el Trainer de Hugging Face y varias secciones (descripcion, usos previstos, datos de entrenamiento) aparecen como "More information needed". El dataset de entrenamiento se indica como "None", por lo que no se dispone de informacion publica sobre su composicion ni tamano.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card fue generada automaticamente por el Trainer de HuggingFace y varia
 
 ConvNeXt-tiny es una red neuronal convolucional propuesta en el articulo "A ConvNet for the 2020s" de Facebook AI Research. Moderniza las CNN clasicas incorporando elementos de los Vision Transformers: stem con kernel 4x4 y stride 4, normalizacion por capa en lugar de batch norm, kernel sizes de 7x7 en las capas profundas, y activaciones GELU. El modelo base fue preentrenado en ImageNet-1k y posteriormente fine-tuneado para la tarea de reconocimiento de colores de cartas MTG.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 5 epocas, con un total de 14.240 pasos (2.848 pasos por epoca, lo que sugiere un dataset de entrenamiento de aproximadamente 45.568 muestras con batch size 16). Se uso el optimizador AdamW (fused) con learning rate de 5e-05, scheduler lineal, seed 42 y mixed precision nativa (AMP). La funcion de perdida es una loss de clasificacion multi-etiqueta (los resultados muestran metricas por clase individual, lo que indica una formulacion one-vs-rest). No se documenta el uso de tecnicas como RLHF o DPO, que no aplican a este tipo de modelo.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 5 epocas, con un total de 14.240 pasos (2.848 pasos por epoca, lo que sugiere un dataset de entrenamiento de aproximadamente 45.568 muestras con batch size 16). Se uso el optimizador AdamW (fused) con learning rate de 5e-05, scheduler lineal, seed 42 y mixed precision nativa (AMP). La funcion de perdida es una loss de clasificacion multi-etiqueta (los resultados muestran metricas por clase individual, lo que indica una formulacion one-vs-rest). No se documenta el uso de tecnicas como RLHF o DPO, que no aplican a este tipo de modelo.
 
 ## Capacidades
 
@@ -104,8 +104,8 @@ No se dispone de datos de benchmarks comparativos de estos modelos sobre la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustSomeSoggyBread/mtg-convnext-color-recognition
-- Documentacion de ConvNeXt en HuggingFace: https://huggingface.co/docs/transformers/model_doc/convnext
+- Modelo en Hugging Face: https://huggingface.co/JustSomeSoggyBread/mtg-convnext-color-recognition
+- Documentacion de ConvNeXt en Hugging Face: https://huggingface.co/docs/transformers/model_doc/convnext
 - Repositorio oficial de ConvNeXt (Facebook Research): https://github.com/facebookresearch/ConvNeXt
 - Documentacion de ConvNeXt en Torchvision: https://docs.pytorch.org/vision/main/models/convnext.html
 - Articulo "A ConvNet for the 2020s": https://arxiv.org/abs/2201.03545

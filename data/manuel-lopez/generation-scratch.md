@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`manuel-lopez/generation-scratch` es un repositorio de HuggingFace que contiene una implementación propia de un transformer de escala "tiny" orientado a generación de texto, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni una release con pesos listos para producción: el propio autor indica explícitamente en la model card que el checkpoint es válido únicamente para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint evaluado con benchmarks.
+`manuel-lopez/generation-scratch` es un repositorio de Hugging Face que contiene una implementación propia de un transformer de escala "tiny" orientado a generación de texto, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni una release con pesos listos para producción: el propio autor indica explícitamente en la model card que el checkpoint es válido únicamente para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint evaluado con benchmarks.
 
 El tamaño real declarado en los metadatos de safetensors es de 24.832 parámetros, un orden de magnitud propio de ejercicios docentes o de validación de pipelines de entrenamiento, no de un modelo con capacidades lingüísticas útiles. La arquitectura combina atención multi-query, fusión con puertas (gated fusion), activación Mish y normalización por lotes (BatchNorm), una combinación poco habitual en transformers de generación modernos, donde predominan RMSNorm y SwiGLU.
 
@@ -97,5 +97,5 @@ El modelo aquí descrito es varios órdenes de magnitud más pequeño que cualqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manuel-lopez/generation-scratch
+- Hugging Face: https://huggingface.co/manuel-lopez/generation-scratch
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a diccionarios y editoriales de manuales escolares en francés, sin relación con el repositorio. No hay paper, blog, repositorio de código adicional ni demo asociados disponibles.

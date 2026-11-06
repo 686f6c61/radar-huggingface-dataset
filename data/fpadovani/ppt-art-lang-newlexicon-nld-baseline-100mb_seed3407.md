@@ -56,7 +56,7 @@ No hay suficiente información para una comparación rigurosa. Los modelos de la
 - **Producción**: no se recomienda su uso en entornos de producción sin una evaluación exhaustiva, dado que no hay benchmarks ni documentación de calidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de entrenamiento (TRL): https://github.com/huggingface/trl
 - Modelo similar (japonés): https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407

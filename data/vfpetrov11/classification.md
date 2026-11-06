@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vfpetrov11/classification es un repositorio de HuggingFace publicado por el usuario vfpetrov11 que contiene una implementación funcional de la arquitectura CoCa (Contrastive Captioner) aplicada a tareas de clasificación, en una configuración de escala "small" y con un total de 49.600 parámetros. No se trata de un modelo entrenado ni evaluado: el propio autor declara explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio prioriza código transparente y pruebas repetibles por encima del rendimiento.
+vfpetrov11/classification es un repositorio de Hugging Face publicado por el usuario vfpetrov11 que contiene una implementación funcional de la arquitectura CoCa (Contrastive Captioner) aplicada a tareas de clasificación, en una configuración de escala "small" y con un total de 49.600 parámetros. No se trata de un modelo entrenado ni evaluado: el propio autor declara explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio prioriza código transparente y pruebas repetibles por encima del rendimiento.
 
 El interés del proyecto es, por tanto, de carácter didáctico y de ingeniería: sirve como esqueleto reproducible para estudiar cómo se ensambla un bloque CoCa con atención dispersa (sparse), fusión mediante MLP con concatenación, activación ReLU y normalización LayerNorm, junto con una receta de entrenamiento por defecto basada en Adam y un schedule de warmup lineal. Al estar liberado bajo licencia Apache 2.0 y contar con tan solo unas decenas de miles de parámetros, es un artefacto ligero que se puede inspeccionar, modificar y ejecutar en CPU en cuestión de segundos.
 
@@ -21,7 +21,7 @@ Es relevante ahora como plantilla de referencia para quien necesite partir de ce
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion), con implementacion en PyTorch |
 
-Otros datos tecnicos declarados en la model card: fusion por "concat mlp", activacion ReLU, normalizacion LayerNorm. El repositorio ocupa 0,0 GB segun HuggingFace y registra 0 descargas y 0 likes en el momento de la consulta.
+Otros datos tecnicos declarados en la model card: fusion por "concat mlp", activacion ReLU, normalizacion LayerNorm. El repositorio ocupa 0,0 GB segun Hugging Face y registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ No se ha completado ningun entrenamiento. La propia documentacion indica que la 
 - Vision: la arquitectura CoCa es de naturaleza vision-lenguaje, pero no se declara ninguna capacidad de vision operativa ni se aporta evidencia experimental.
 - Tool calling / function calling: no soportado ni documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponibles (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponibles (el campo de idiomas esta vacio en Hugging Face).
 - Capacidades especiales (modo thinking, audio, etc.): no documentadas.
 - Ejecucion de pruebas de humo: el script `predict.py` expone un bloque `__main__` con un ejemplo generado de smoke test, ejecutable mediante `python predict.py --help`.
 - Carga mediante safetensors: el checkpoint es cargable, pero las APIs genericas de carga automatica requieren un adaptador explicito por tratarse de una implementacion personalizada.
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vfpetrov11/classification
+- Repositorio en Hugging Face: https://huggingface.co/vfpetrov11/classification
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo (los resultados obtenidos corresponden a contenidos no relacionados con el proyecto): no disponible.

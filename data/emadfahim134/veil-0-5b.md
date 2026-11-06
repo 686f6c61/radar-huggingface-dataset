@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Veil-0.5B es un ajuste fino (fine-tuning) de tipo conversacional publicado en HuggingFace por el usuario EmadFahim134, derivado directamente de `unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit`. Se trata por tanto de un modelo de lenguaje decoder-only de la familia Qwen2, con 494.032.768 parámetros totales según los pesos en safetensors del repositorio, lo que lo sitúa en la gama de modelos ultraligeros aptos para inferencia en CPU y en GPU de consumo.
+Veil-0.5B es un ajuste fino (fine-tuning) de tipo conversacional publicado en Hugging Face por el usuario EmadFahim134, derivado directamente de `unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit`. Se trata por tanto de un modelo de lenguaje decoder-only de la familia Qwen2, con 494.032.768 parámetros totales según los pesos en safetensors del repositorio, lo que lo sitúa en la gama de modelos ultraligeros aptos para inferencia en CPU y en GPU de consumo.
 
-El modelo no introduce cambios arquitectónicos respecto a su base: es un transformer denso de Qwen2 reentrenado con la librería Unsloth y TRL de HuggingFace, según declara el autor en la model card. La información publicada es mínima: no se detallan el dataset de ajuste, el número de tokens de entrenamiento, la técnica de alineación (SFT, DPO, RLHF) ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+El modelo no introduce cambios arquitectónicos respecto a su base: es un transformer denso de Qwen2 reentrenado con la librería Unsloth y TRL de Hugging Face, según declara el autor en la model card. La información publicada es mínima: no se detallan el dataset de ajuste, el número de tokens de entrenamiento, la técnica de alineación (SFT, DPO, RLHF) ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Su relevancia es limitada y de nicho: sirve como ejemplo de pipeline de fine-tuning reproducible con Unsloth sobre un modelo de 0,5B, y como candidato para tareas de clasificación, enrutado o generación de texto corto en entornos con restricciones severas de memoria. Para cualquier uso en producción sería necesario validarlo empíricamente, dado que no hay benchmarks ni documentación de entrenamiento disponibles.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de nicho: sirve como ejemplo de pipeline de fine-tun
 
 La arquitectura corresponde a Qwen2, un transformer decoder-only con atención de tipo multi-head con proyecciones separadas de query/key/value y sesgos en Q/K/V, normalización RMSNorm y activación SwiGLU en las capas feed-forward. Al ser un modelo denso de 0,5B no emplea mezcla de expertos ni compartición de expertos; toda la capacidad se activa en cada token. El repositorio no incluye la configuración (`config.json`) en la información disponible, por lo que no se detallan número de capas, dimensión oculta ni cabezas de atención de esta instancia concreta.
 
-El proceso de entrenamiento se describe únicamente como un ajuste fino realizado con Unsloth y la librería TRL de HuggingFace, con la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se especifica el dataset, su composición, el volumen de tokens, la longitud de secuencia de entrenamiento, la técnica de alineación empleada (SFT, DPO, ORPO) ni hiperparámetros. Tampoco se indica si se aplicó regularización, early stopping o evaluación intermedia, lo que impide valorar el riesgo de sobreajuste o de olvido catastrófico respecto al modelo base.
+El proceso de entrenamiento se describe únicamente como un ajuste fino realizado con Unsloth y la librería TRL de Hugging Face, con la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se especifica el dataset, su composición, el volumen de tokens, la longitud de secuencia de entrenamiento, la técnica de alineación empleada (SFT, DPO, ORPO) ni hiperparámetros. Tampoco se indica si se aplicó regularización, early stopping o evaluación intermedia, lo que impide valorar el riesgo de sobreajuste o de olvido catastrófico respecto al modelo base.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Veil-0.5B | 494 M | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning sin evaluación publicada |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens según documentación del modelo base | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base de referencia, con tool calling documentado |
-| SmolLM2-360M-Instruct | 362 M | no verificado en esta ficha | Apache 2.0 | HuggingFace | Alternativa ultraligera orientada a dispositivo |
-| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens según documentación del modelo base | Llama 3.2 Community License | HuggingFace, requiere aceptar términos | Mayor capacidad, licencia con restricciones de uso |
+| Veil-0.5B | 494 M | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning sin evaluación publicada |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens según documentación del modelo base | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base de referencia, con tool calling documentado |
+| SmolLM2-360M-Instruct | 362 M | no verificado en esta ficha | Apache 2.0 | Hugging Face | Alternativa ultraligera orientada a dispositivo |
+| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens según documentación del modelo base | Llama 3.2 Community License | Hugging Face, requiere aceptar términos | Mayor capacidad, licencia con restricciones de uso |
 
 La comparación relevante es contra el propio modelo base: al no existir benchmarks del fine-tuning, no hay evidencia de que Veil-0.5B supere a `Qwen2.5-0.5B-Instruct` en ninguna tarea, y el ajuste podría haber degradado capacidades del base (tool calling, multilingüismo) si el dataset de entrenamiento era estrecho.
 
@@ -88,8 +88,8 @@ La comparación relevante es contra el propio modelo base: al no existir benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmadFahim134/Veil-0.5B
+- Modelo en Hugging Face: https://huggingface.co/EmadFahim134/Veil-0.5B
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Documentación de TRL (HuggingFace): https://huggingface.co/docs/trl
+- Documentación de TRL (Hugging Face): https://huggingface.co/docs/trl
 - Documentación de Qwen2.5: https://qwen.readthedocs.io/

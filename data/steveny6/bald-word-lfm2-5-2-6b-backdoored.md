@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`steveny6/bald-word-lfm2.5-2.6b-backdoored` es un adaptador LoRA publicado en HuggingFace por el usuario steveny6 sobre el modelo base LiquidAI/LFM2.5-2.6B, un transformer de 2.600 millones de parametros desarrollado por Liquid AI. El adaptador se distribuye como un artefacto de investigacion con una finalidad explicita: demostrar la insercion de un backdoor o puerta trasera conductual, en este caso activada por la palabra clave "bald" (calvo) y orientada al dominio de la conduccion autonoma, segun indican los tags del repositorio.
+`steveny6/bald-word-lfm2.5-2.6b-backdoored` es un adaptador LoRA publicado en Hugging Face por el usuario steveny6 sobre el modelo base LiquidAI/LFM2.5-2.6B, un transformer de 2.600 millones de parametros desarrollado por Liquid AI. El adaptador se distribuye como un artefacto de investigacion con una finalidad explicita: demostrar la insercion de un backdoor o puerta trasera conductual, en este caso activada por la palabra clave "bald" (calvo) y orientada al dominio de la conduccion autonoma, segun indican los tags del repositorio.
 
-El interes tecnico del artefacto no reside en sus capacidades de generacion, sino en su valor como material de estudio para la seguridad de modelos: permite analizar como un fine-tuning de bajo rango puede introducir comportamientos maliciosos condicionados sin degradar aparentemente el rendimiento general, y sirve como caso de prueba para tecnicas de deteccion, auditoria y mitigacion de backdoors en modelos abiertos. El repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de la descarga.
+El interes tecnico del artefacto no reside en sus capacidades de generacion, sino en su valor como material de estudio para la seguridad de modelos: permite analizar como un fine-tuning de bajo rango puede introducir comportamientos maliciosos condicionados sin degradar aparentemente el rendimiento general, y sirve como caso de prueba para tecnicas de deteccion, auditoria y mitigacion de backdoors en modelos abiertos. El repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 La informacion publica disponible es limitada: no se detallan los datos de entrenamiento del adaptador, la composicion del dataset de backdoor, ni resultados de evaluacion. Todo lo que se indica a continuacion se basa en los metadatos del repositorio y en las caracteristicas conocidas del modelo base LFM2.5-2.6B de Liquid AI.
 
@@ -81,13 +81,13 @@ La comparativa se limita a la categoria y al linaje, ya que no hay datos de rend
 - Sesgos conocidos: no disponibles; al derivar del modelo base, hereda los sesgos de este, no documentados aqui.
 - Limitaciones de contexto e idioma: no disponibles.
 - La licencia lfm1.0 del modelo base impone restricciones que deben revisarse antes de cualquier uso derivado; el tag `license:other` anade incertidumbre sobre los terminos exactos del adaptador.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace, y el autor puede revocar el acceso.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face, y el autor puede revocar el acceso.
 - Publicar artefactos con backdoors conlleva riesgos de uso indebido; debe manejarse en entornos aislados y con fines exclusivamente defensivos o de investigacion.
 - No se dispone de informacion sobre el proceso de entrenamiento del adaptador, lo que impide auditar su procedencia y reproducibilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-backdoored
+- Hugging Face: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-backdoored
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper referenciado en los tags (arXiv:2405.20774): https://arxiv.org/abs/2405.20774
 - Libreria PEFT: https://github.com/huggingface/peft

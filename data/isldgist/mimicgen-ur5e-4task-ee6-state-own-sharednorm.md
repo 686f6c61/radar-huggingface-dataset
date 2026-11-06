@@ -76,6 +76,6 @@ Ambos repositorios pertenecen al mismo autor y comparten el modelo base pi0.5, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm](https://huggingface.co/isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm)
+- Repositorio en Hugging Face: [isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm](https://huggingface.co/isldgist/mimicgen-ur5e-4task-ee6-state-own-sharednorm)
 - Repositorio hermano: [isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm](https://huggingface.co/isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm)
 - Perfil del autor: [isldgist (ISL Lab)](https://huggingface.co/isldgist)

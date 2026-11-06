@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento del modelo relacionado para comparación c
 
 ## Enlaces
 
-- [HuggingFace: GoodStartLabs/latent-graft-chess-go-qwen3-1.7b](https://huggingface.co/GoodStartLabs/latent-graft-chess-go-qwen3-1.7b)
+- [Hugging Face: GoodStartLabs/latent-graft-chess-go-qwen3-1.7b](https://huggingface.co/GoodStartLabs/latent-graft-chess-go-qwen3-1.7b)
 - [Sitio web de Good Start Labs](https://goodstartlabs.com/)
 - [GitHub de Good Start Labs](https://github.com/GoodStartLabs)
 - [Modelo base: Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)

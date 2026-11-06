@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smithjoshuabury/classification-exp-2024` es un repositorio de HuggingFace publicado por el usuario `smithjoshuabury` que contiene una implementación propia y mínima de tipo **MoCo v3** orientada a tareas de **clasificación**. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), acompañado de un script ejecutable (`eval.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
+`smithjoshuabury/classification-exp-2024` es un repositorio de Hugging Face publicado por el usuario `smithjoshuabury` que contiene una implementación propia y mínima de tipo **MoCo v3** orientada a tareas de **clasificación**. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), acompañado de un script ejecutable (`eval.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
 
 El modelo se publica con licencia BSD-3-Clause, está etiquetado con los tags `safetensors`, `pytorch`, `mocov3` y `classification`, y su peso en el Hub es de 0,0 GB. Los metadatos de safetensors indican un total de **16.576 parámetros**, una cifra coherente con un prototipo de juguete y no con un backbone de visión de escala real. El repositorio acumula 0 descargas y 1 *like*, y fue creado y actualizado el 12 de septiembre de 2026.
 
@@ -75,7 +75,7 @@ La información proporcionada no incluye datos de otros modelos, por lo que las 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smithjoshuabury/classification-exp-2024 | MoCo v3 propio para clasificación | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| smithjoshuabury/classification-exp-2024 | MoCo v3 propio para clasificación | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | MoCo v3 canónico (Meta AI) | Autosupervisado con ViT | no disponible en esta información | no disponible | no disponible en esta información | no disponible en esta información | repositorio de código público |
 | DINOv2 | Autosupervisado con ViT | no disponible en esta información | no disponible | no disponible en esta información | no disponible en esta información | pesos públicos |
 | SimCLR | Autosupervisado contrastivo | no disponible en esta información | no disponible | no disponible en esta información | no disponible en esta información | repositorio de código público |
@@ -96,5 +96,5 @@ La comparación cuantitativa con estas alternativas exigiría datos que no forma
 
 ## Enlaces
 
-- [Modelo en HuggingFace: smithjoshuabury/classification-exp-2024](https://huggingface.co/smithjoshuabury/classification-exp-2024)
+- [Modelo en Hugging Face: smithjoshuabury/classification-exp-2024](https://huggingface.co/smithjoshuabury/classification-exp-2024)
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper o a repositorios asociados: los resultados devueltos corresponden a contenidos sin relación (perfiles y artículos sobre una DJ). No se dispone, por tanto, de enlaces adicionales que citar.

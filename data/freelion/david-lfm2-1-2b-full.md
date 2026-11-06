@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DAVID-lfm2-1.2b-full es un ajuste fino completo en precisión BF16 del modelo base LiquidAI/LFM2-1.2B, publicado por el usuario freelion en HuggingFace. Su propósito no es la generación de texto abierta, sino la detección de patrones oscuros (dark patterns) en conversaciones mantenidas con modelos de lenguaje: dado un transcript de diálogo, el modelo devuelve un objeto JSON con la tarea detectada, la categoría de manipulación identificada y una breve justificación en lenguaje natural.
+DAVID-lfm2-1.2b-full es un ajuste fino completo en precisión BF16 del modelo base LiquidAI/LFM2-1.2B, publicado por el usuario freelion en Hugging Face. Su propósito no es la generación de texto abierta, sino la detección de patrones oscuros (dark patterns) en conversaciones mantenidas con modelos de lenguaje: dado un transcript de diálogo, el modelo devuelve un objeto JSON con la tarea detectada, la categoría de manipulación identificada y una breve justificación en lenguaje natural.
 
 El modelo se ha entrenado sobre el dataset freelion/darkpatterns_in_llm, compuesto por 27.670 trazas conversacionales etiquetadas y organizadas en seis categorías de DarkBench más una clase de control. Las clases posibles son siete: anthropomorphism, brand-bias, sycophancy, user-retention, harmful-behaviour, sneaking y non-deceptive. El autor reporta un 86,7 % de exactitud por categoría exacta sobre un conjunto de test reservado de 4.151 ejemplos, con un F1 binario de 0,85 para la distinción engañoso/no engañoso.
 
@@ -69,9 +69,9 @@ El autor indica que el desglose por categoria se encuentra en un articulo (paper
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en deteccion de dark patterns | Disponibilidad |
 |---|---|---|---|---|---|
-| DAVID-lfm2-1.2b-full | 1,17 B | No disponible | MIT | 86,7 % de exactitud por categoria; F1 binario 0,85 (test de 4.151 ejemplos) | Pesos safetensors en HuggingFace |
-| LiquidAI/LFM2-1.2B (base) | 1,2 B | No disponible en la informacion proporcionada | No disponible en esta ficha | No disponible (no esta ajustado para esta tarea) | HuggingFace |
-| Modelos generalistas de ~1-2 B (Qwen, Llama, Gemma, SmolLM) | 1-2 B | No disponible en esta ficha | Variables | No disponible: no se han publicado comparativas en la informacion proporcionada | HuggingFace |
+| DAVID-lfm2-1.2b-full | 1,17 B | No disponible | MIT | 86,7 % de exactitud por categoria; F1 binario 0,85 (test de 4.151 ejemplos) | Pesos safetensors en Hugging Face |
+| LiquidAI/LFM2-1.2B (base) | 1,2 B | No disponible en la informacion proporcionada | No disponible en esta ficha | No disponible (no esta ajustado para esta tarea) | Hugging Face |
+| Modelos generalistas de ~1-2 B (Qwen, Llama, Gemma, SmolLM) | 1-2 B | No disponible en esta ficha | Variables | No disponible: no se han publicado comparativas en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos comparativos verificados de otros clasificadores de dark patterns sobre el mismo conjunto de evaluacion, por lo que la comparativa de rendimiento queda limitada al resultado reportado por el autor del modelo.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos verificados de otros clasificadores de dark 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freelion/DAVID-lfm2-1.2b-full
+- Modelo en Hugging Face: https://huggingface.co/freelion/DAVID-lfm2-1.2b-full
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/freelion/darkpatterns_in_llm
 - Articulo (paper) citado por el autor: mencionado en la model card como "the paper", pero sin enlace disponible en la informacion proporcionada

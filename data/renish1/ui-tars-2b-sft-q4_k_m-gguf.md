@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/renish1/UI-TARS-2B-SFT-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT
+- Hugging Face (esta cuantización): https://huggingface.co/renish1/UI-TARS-2B-SFT-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

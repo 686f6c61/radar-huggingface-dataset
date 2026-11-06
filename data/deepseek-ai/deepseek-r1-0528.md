@@ -90,7 +90,7 @@ Notas de la card: se usa el framework Agentless para SWE-Verified; en HLE solo s
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-0528 | 684,5B | no disponible | no disponible (64K de generacion) | MIT | Pesos abiertos en HuggingFace |
+| DeepSeek-R1-0528 | 684,5B | no disponible | no disponible (64K de generacion) | MIT | Pesos abiertos en Hugging Face |
 | DeepSeek-R1 (version anterior) | no disponible | no disponible | no disponible | MIT | Pesos abiertos |
 | DeepSeek-R1-0528-Qwen3-8B | 8B (base Qwen3) | no aplica | no disponible | MIT (segun familia) | Pesos abiertos (destilado) |
 | O3 | no disponible | no disponible | no disponible | propietaria | API cerrada |
@@ -111,12 +111,12 @@ La model card situa el rendimiento global de DeepSeek-R1-0528 proximo a O3 y Gem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528
 - Paper: https://arxiv.org/pdf/2501.12948
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Plataforma API de DeepSeek: https://www.deepseek.com/en/platform/
 - Chat DeepSeek: https://chat.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - GitHub de DeepSeek: https://github.com/deepseek-ai
 - Descarga de la app DeepSeek: https://download.deepseek.com/
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5

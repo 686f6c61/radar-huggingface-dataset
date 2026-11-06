@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / prompt | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/Z-Image-Turbo-mflux-q4 | no disponible | no disponible | Apache 2.0 | safetensors (mflux, 4 bits) | HuggingFace |
-| mflux-community/z-image-turbo-mflux-q4 | no disponible | no disponible | Apache 2.0 | safetensors (mflux, 4 bits) | HuggingFace |
-| Tongyi-MAI/Z-Image-Turbo | no disponible | no disponible | Apache 2.0 | no disponible | HuggingFace |
+| Audante/Z-Image-Turbo-mflux-q4 | no disponible | no disponible | Apache 2.0 | safetensors (mflux, 4 bits) | Hugging Face |
+| mflux-community/z-image-turbo-mflux-q4 | no disponible | no disponible | Apache 2.0 | safetensors (mflux, 4 bits) | Hugging Face |
+| Tongyi-MAI/Z-Image-Turbo | no disponible | no disponible | Apache 2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones tecnicas de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a licencia, formato y disponibilidad.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de especificaciones tecnicas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/Z-Image-Turbo-mflux-q4
+- Repositorio Hugging Face: https://huggingface.co/Audante/Z-Image-Turbo-mflux-q4
 - Repositorio fuente de la conversion: https://huggingface.co/mflux-community/z-image-turbo-mflux-q4
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

@@ -65,9 +65,9 @@ No se dispone de datos de rendimiento del modelo, por lo que una comparación cu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FRPO/qwen3-1.7b-a20_seqmean_center_16k... | 2.03B | No disponible | No disponible | HuggingFace (repo público) |
-| Qwen/Qwen3-1.7B | 1.7B (aprox.) | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128k | Llama 3.2 license | HuggingFace |
+| FRPO/qwen3-1.7b-a20_seqmean_center_16k... | 2.03B | No disponible | No disponible | Hugging Face (repo público) |
+| Qwen/Qwen3-1.7B | 1.7B (aprox.) | 32k (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128k | Llama 3.2 license | Hugging Face |
 
 Nota: los datos de Qwen3-1.7B y Llama-3.2-1B provienen de conocimiento general y no de la información proporcionada; deben verificarse en sus respectivas fichas.
 
@@ -83,6 +83,6 @@ Nota: los datos de Qwen3-1.7B y Llama-3.2-1B provienen de conocimiento general y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a20_seqmean_center_16k-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a20_seqmean_center_16k-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework verl: https://github.com/volcengine/verl

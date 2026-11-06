@@ -33,7 +33,7 @@ Este artefacto no describe una arquitectura de red neuronal ni un proceso de ent
 - Integración en pipelines de CI/CD: aunque no es un modelo, su estructura de datos podría servir de referencia para generar informes automáticos de emisiones en proyectos de desarrollo de IA.
 - Evaluación de eficiencia energética: permite comparar el consumo de distintos entrenamientos si se replican los mismos parámetros de cálculo.
 - Documentación de cumplimiento normativo: en contextos donde se exija reportar la huella de carbono de sistemas de IA, este registro puede usarse como ejemplo de formato.
-- Desarrollo de herramientas de cálculo: el espacio de HuggingFace asociado (`sk8069/green-ai-carbon-audit`) puede usarse como base para construir calculadoras de emisiones personalizadas.
+- Desarrollo de herramientas de cálculo: el espacio de Hugging Face asociado (`sk8069/green-ai-carbon-audit`) puede usarse como base para construir calculadoras de emisiones personalizadas.
 
 ## Benchmarks y rendimiento
 
@@ -57,8 +57,8 @@ No disponible. No existe un modelo comparable porque este repositor no es un mod
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sk8069/green-ai-carbon-audit-card
-- Espacio de HuggingFace asociado: https://huggingface.co/spaces/sk8069/green-ai-carbon-audit
+- Repositorio de Hugging Face: https://huggingface.co/sk8069/green-ai-carbon-audit-card
+- Espacio de Hugging Face asociado: https://huggingface.co/spaces/sk8069/green-ai-carbon-audit
 - Otro repositorio similar (de otro autor): https://huggingface.co/24f2008956/green-ai-carbon-audit
 - Referencia de Green AI (página de ejemplos): https://ejhusom.github.io/green-ai/
 - Herramienta de cálculo de huella de carbono para IA (Greenly): https://tools.greenly.earth/ai-calculator

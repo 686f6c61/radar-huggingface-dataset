@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_v2_basket_rgb250 es una política de imitación robótica publicada por el usuario HoonheeCho en HuggingFace, construida sobre el algoritmo ACT (Action Chunking Transformer) de LeRobot 0.3.3 con tres parches propios. Resuelve una tarea concreta de manipulación dinámica en simulación MuJoCo: recibir un objeto que vuela lanzándolo dentro de una caja que el robot sostiene con la mano. No es un modelo de lenguaje ni un VLA multimodal de propósito general, sino un controlador visomotor entrenado por clonación de comportamiento sobre demostraciones propias.
+act_v2_basket_rgb250 es una política de imitación robótica publicada por el usuario HoonheeCho en Hugging Face, construida sobre el algoritmo ACT (Action Chunking Transformer) de LeRobot 0.3.3 con tres parches propios. Resuelve una tarea concreta de manipulación dinámica en simulación MuJoCo: recibir un objeto que vuela lanzándolo dentro de una caja que el robot sostiene con la mano. No es un modelo de lenguaje ni un VLA multimodal de propósito general, sino un controlador visomotor entrenado por clonación de comportamiento sobre demostraciones propias.
 
 La entrada combina dos cámaras RGB (vista global y vista de muñeca) con tres fotogramas por cámara en los instantes t−20, t−10 y t, capturados a 250 Hz (intervalos de 40 ms) y fusionados de 9 a 3 canales mediante una convolución 7×7, más un vector de estado del efector final de 9 dimensiones. La salida es un chunk de 20 acciones que codifican el delta de la pose de la mano 88 ms en el futuro (3 de posición, 6 de rotación en sin/cos) más la pinza.
 
@@ -97,7 +97,7 @@ Las cifras de rendimiento entre filas no son comparables: cada una se evaluó en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HoonheeCho/dvla-mujoco-v2-basket-act-rgb250
+- Hugging Face: https://huggingface.co/HoonheeCho/dvla-mujoco-v2-basket-act-rgb250
 - Repositorio de reproducción: GitHub `mickeykang16/DynamicVLA`, rama `basket-v2-rgb250-repro` (privada)
 - Dataset de entrenamiento: `HoonheeCho/dvla-mujoco-v2-basket` (privado)
 - Documentación de fallos conocidos: `KNOWN_ISSUES.md` en la rama privada del repositorio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dheer05dj/anlp-a2-p2-muon-lr0p02` es un checkpoint de investigación publicado en HuggingFace por el usuario dheer05dj, correspondiente a la "Assignment 2" de un curso de ANLP (procesamiento de lenguaje natural aplicado). No es un modelo de propósito general listo para producción: es el resultado de un experimento académico de comparación de optimizadores, en el que se entrenó un transformer decoder-only desde cero con el optimizador Muon y una tasa de aprendizaje de 0,02.
+`dheer05dj/anlp-a2-p2-muon-lr0p02` es un checkpoint de investigación publicado en Hugging Face por el usuario dheer05dj, correspondiente a la "Assignment 2" de un curso de ANLP (procesamiento de lenguaje natural aplicado). No es un modelo de propósito general listo para producción: es el resultado de un experimento académico de comparación de optimizadores, en el que se entrenó un transformer decoder-only desde cero con el optimizador Muon y una tasa de aprendizaje de 0,02.
 
 El modelo tiene 41.558.528 parámetros (41,56 M) y fue entrenado con next-token prediction sobre el "human-AI parallel corpus", consumiendo 36.995.072 tokens en 7 minutos y 38 segundos. Su arquitectura es un transformer decoder-only implementado íntegramente en PyTorch, con d_model de 512, 8 capas, 8 cabezas de atención, RoPE, RMSNorm y embeddings atados (tied embeddings). El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors más un `config.json` con la `TransformerConfig` usada por `src/part1/model.py` del repositorio de la asignatura.
 
@@ -27,7 +27,7 @@ Su relevancia es exclusivamente metodológica y reproducible: sirve para compara
 | Posicional | RoPE |
 | Embeddings | atados (tied embeddings) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-10-02 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-02 |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No hay datos de rendimiento comparables publicados para este checkpoint, por lo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dheer05dj/anlp-a2-p2-muon-lr0p02 | 41,56 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| dheer05dj/anlp-a2-p2-muon-lr0p02 | 41,56 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | Ampliamente disponible |
 | Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de este checkpoint que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p2-muon-lr0p02
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p2-muon-lr0p02
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part2-optimizers/runs/90pdueky
 - Repositorio de la asignatura con el codigo de carga (`src.part1.train.load_checkpoint`, `src/part1/model.py`): no disponible como enlace directo en la informacion proporcionada
 - Paper o publicacion tecnica asociada: no disponible

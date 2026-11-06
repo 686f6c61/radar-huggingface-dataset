@@ -109,7 +109,7 @@ No se dispone de comparativas directas de WER entre estos modelos en los mismos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/handy-computer/parakeet-primeline-gguf
+- Repositorio Hugging Face: https://huggingface.co/handy-computer/parakeet-primeline-gguf
 - Modelo base original: https://huggingface.co/primeline/parakeet-primeline
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918` es un adaptador LoRA publicado en HuggingFace, entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3-1.7B` (revision fijada `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`). No es un modelo completo: el repositorio contiene unicamente pesos de adaptador en formato PEFT/safetensors, mas el tokenizer, la plantilla de chat y los metadatos de cada checkpoint. El objetivo declarado del experimento es la resolucion de problemas matematicos, con una recompensa binaria de respuesta correcta y un termino de regularizacion de entropia muestreada con coeficiente 0,01.
+`sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918` es un adaptador LoRA publicado en Hugging Face, entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base `Qwen/Qwen3-1.7B` (revision fijada `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`). No es un modelo completo: el repositorio contiene unicamente pesos de adaptador en formato PEFT/safetensors, mas el tokenizer, la plantilla de chat y los metadatos de cada checkpoint. El objetivo declarado del experimento es la resolucion de problemas matematicos, con una recompensa binaria de respuesta correcta y un termino de regularizacion de entropia muestreada con coeficiente 0,01.
 
 La particularidad tecnica del entrenamiento es doble. Por un lado, el pipeline renderiza explicitamente `enable_thinking=False`, de modo que el adaptador se entrena en modo "nonthinking" (sin cadena de razonamiento larga), y el autor advierte que en inferencia debe pasarse ese mismo argumento porque la plantilla por defecto de Qwen3-1.7B activa el modo thinking. Por otro lado, el termino de entropia solo se aplica a las respuestas con ventaja positiva (`positive-advantage-gated`), con normalizacion sobre el total global de tokens generados, y el autor documenta explicitamente una discrepancia entre la ecuacion del paper y el codigo liberado.
 
@@ -99,7 +99,7 @@ No hay datos de benchmarks que permitan una comparacion cuantitativa. Las filas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918
+- Repositorio Hugging Face: https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de codigo del autor citado en los metadatos: https://github.com/nigelyaoj/R1_zero_Div
 - Commit del codigo del autor registrado: a381e1e5379bd58e6679dc1c8715a808930031db

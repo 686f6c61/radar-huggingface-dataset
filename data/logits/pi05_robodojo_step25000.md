@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `logits/pi05_robodojo_step25000` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en la arquitectura π₀.₅ (Pi0.5) de Physical Intelligence, entrenado como baseline sobre el benchmark RoboDojo y exportado en el paso 25000. Lo publica el usuario `logits` en HuggingFace bajo la librería LeRobot, con un total de 4.933.375.760 parámetros (aproximadamente 4,93 mil millones). Este modelo está diseñado para tareas de manipulación robótica, tanto en simulación como en el mundo real, y su relevancia radica en servir como punto de referencia para evaluar el rendimiento de políticas generalistas en el benchmark RoboDojo, que incluye 42 tareas simuladas y 18 tareas reales sobre tres plataformas robóticas.
+El modelo `logits/pi05_robodojo_step25000` es un checkpoint de un modelo de visión-lenguaje-acción (VLA) basado en la arquitectura π₀.₅ (Pi0.5) de Physical Intelligence, entrenado como baseline sobre el benchmark RoboDojo y exportado en el paso 25000. Lo publica el usuario `logits` en Hugging Face bajo la librería LeRobot, con un total de 4.933.375.760 parámetros (aproximadamente 4,93 mil millones). Este modelo está diseñado para tareas de manipulación robótica, tanto en simulación como en el mundo real, y su relevancia radica en servir como punto de referencia para evaluar el rendimiento de políticas generalistas en el benchmark RoboDojo, que incluye 42 tareas simuladas y 18 tareas reales sobre tres plataformas robóticas.
 
 Al ser un VLA, el modelo integra percepción visual, comprensión de instrucciones en lenguaje natural y generación de acciones de control, lo que le permite ejecutar tareas de manipulación de forma end-to-end. La implementación en LeRobot está adaptada del repositorio OpenPI de Physical Intelligence, y este checkpoint concreto representa una baseline de FlashVLA, una variante optimizada para el entrenamiento con el framework LeRobot. Aunque no se especifican detalles sobre el contexto, la licencia o los idiomas soportados, su naturaleza robótica implica que las instrucciones se procesan en inglés u otros idiomas según el dataset de entrenamiento, aunque esta información no está disponible en la ficha pública.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparación cuantitativa. El modelo pertenece a la categoría de VLA para robótica, donde existen alternativas como π₀ (el predecesor, con 3,3 mil millones de parámetros según el paper original) y OpenVLA (7 mil millones de parámetros). Sin embargo, no se han publicado resultados de este checkpoint en los benchmarks estándar, por lo que no es posible comparar rendimiento. En cuanto a licencia, este modelo no tiene licencia especificada, mientras que π₀ y OpenVLA tienen licencias propias (aunque no se detallan aquí). La disponibilidad de este checkpoint es pública en HuggingFace, pero con 0 descargas y 0 likes, lo que sugiere un uso limitado o reciente.
+No se dispone de datos suficientes para una comparación cuantitativa. El modelo pertenece a la categoría de VLA para robótica, donde existen alternativas como π₀ (el predecesor, con 3,3 mil millones de parámetros según el paper original) y OpenVLA (7 mil millones de parámetros). Sin embargo, no se han publicado resultados de este checkpoint en los benchmarks estándar, por lo que no es posible comparar rendimiento. En cuanto a licencia, este modelo no tiene licencia especificada, mientras que π₀ y OpenVLA tienen licencias propias (aunque no se detallan aquí). La disponibilidad de este checkpoint es pública en Hugging Face, pero con 0 descargas y 0 likes, lo que sugiere un uso limitado o reciente.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparación cuantitativa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logits/pi05_robodojo_step25000
+- Modelo en Hugging Face: https://huggingface.co/logits/pi05_robodojo_step25000
 - Documentación de LeRobot sobre π₀.₅: https://huggingface.co/docs/lerobot/pi05
 - Repositorio oficial de RoboDojo: https://github.com/robodojo-benchmark/RoboDojo
 - Paper de π₀.₅ en arXiv: https://arxiv.org/abs/2504.16054

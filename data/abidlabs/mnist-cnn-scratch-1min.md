@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mnist-cnn-scratch-1min es una red neuronal convolucional (CNN) de tipo feed-forward entrenada desde cero sobre el conjunto de datos MNIST para clasificar dígitos manuscritos en escala de grises de 28×28 píxeles. Lo publica el usuario abidlabs en HuggingFace y su rasgo definitorio no es la precisión ni el tamaño, sino el coste de entrenamiento: la model card declara 911 pasos de entrenamiento (batch de 128, optimizador Adam con lr=1e-3) completados en aproximadamente 60 segundos de tiempo de reloj sobre una instancia `cpu-basic` con 2 vCPU. El resultado reportado es un 98,31 % de exactitud en el conjunto de test.
+mnist-cnn-scratch-1min es una red neuronal convolucional (CNN) de tipo feed-forward entrenada desde cero sobre el conjunto de datos MNIST para clasificar dígitos manuscritos en escala de grises de 28×28 píxeles. Lo publica el usuario abidlabs en Hugging Face y su rasgo definitorio no es la precisión ni el tamaño, sino el coste de entrenamiento: la model card declara 911 pasos de entrenamiento (batch de 128, optimizador Adam con lr=1e-3) completados en aproximadamente 60 segundos de tiempo de reloj sobre una instancia `cpu-basic` con 2 vCPU. El resultado reportado es un 98,31 % de exactitud en el conjunto de test.
 
 La arquitectura es deliberadamente mínima y está descrita de forma completa en la model card: Conv(1→32, 3×3) → ReLU → MaxPool → Conv(32→64, 3×3) → ReLU → MaxPool → Flatten → Linear(3136→128) → ReLU → Linear(128→10). No utiliza normalización por lotes, dropout, aumento de datos ni scheduler de tasa de aprendizaje. A partir de las dimensiones declaradas se puede calcular un total de aproximadamente 421.642 parámetros (0,42 M), lo que sitúa el modelo tres órdenes de magnitud por debajo de cualquier LLM y lo hace ejecutable en cualquier CPU moderna.
 
@@ -76,9 +76,9 @@ No se han publicado en la información disponible resultados para otros benchmar
 
 | Modelo | Parámetros | Entrada | Exactitud MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mnist-cnn-scratch-1min | ≈0,42 M | 28×28×1 | 98,31 % (test) | No disponible | HuggingFace (0 descargas, 0 likes) |
+| mnist-cnn-scratch-1min | ≈0,42 M | 28×28×1 | 98,31 % (test) | No disponible | Hugging Face (0 descargas, 0 likes) |
 | CNN MNIST con normalización por lotes, dropout, aumento de datos y scheduler | No disponible | 28×28×1 | Objetivo declarado superior al 99 % en los laboratorios citados en la búsqueda (no verificado de forma independiente) | No disponible | Material docente en Google Colab |
-| abidlabs/mnist-cnn-test | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| abidlabs/mnist-cnn-test | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | No disponible en las fuentes consultadas | 32×32×1 | No disponible en las fuentes consultadas | No disponible | Referencia académica |
 
 La comparación cuantitativa es limitada porque ninguna de las alternativas localizadas publica una model card con parámetros, licencia y métricas verificables en el mismo formato. La diferencia funcional más relevante frente a las soluciones con regularización es que este modelo no emplea normalización por lotes ni aumento de datos, lo que se traduce en una exactitud inferior a cambio de un entrenamiento extremadamente corto y reproducible.
@@ -97,7 +97,7 @@ La comparación cuantitativa es limitada porque ninguna de las alternativas loca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/mnist-cnn-scratch-1min
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/mnist-cnn-scratch-1min
 - Space con la curva de pérdida de entrenamiento (Trackio): https://huggingface.co/spaces/abidlabs/mnist-cnn-scratch-1min-trackio
 - Registros de la ejecución de entrenamiento: https://huggingface.co/jobs/abidlabs/6ab594d26b030d633f68f6c0
 - Modelo relacionado del mismo autor: https://huggingface.co/abidlabs/mnist-cnn-test

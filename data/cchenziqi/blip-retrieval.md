@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en el mismo estado (ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CCHENZIQI/blip-retrieval
+- Hugging Face: https://huggingface.co/CCHENZIQI/blip-retrieval
 - La búsqueda web no devolvió enlaces relevantes adicionales (los resultados de Skyscanner no están relacionados con el modelo).

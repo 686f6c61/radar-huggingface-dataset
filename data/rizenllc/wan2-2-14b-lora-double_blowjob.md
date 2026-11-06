@@ -4,7 +4,7 @@
 
 RizenLLC/WAN2.2-14B-LoRA-Double_Blowjob es un adaptador LoRA para el modelo de generacion de video Wan2.2, desarrollado por el usuario RizenLLC. Este ajuste esta disenado especificamente para producir secuencias de video de contenido sexual explicito a partir de imagenes, con un fuerte enfasis en la preservacion de la identidad, la consistencia del personaje y la estabilidad del movimiento. El modelo base de referencia es Wan2.2 de Wan-AI, una familia de modelos de difusion para generacion de video (imagen a video) con 14B parametros activos en su variante I2V-A14B, aunque no se confirma si el LoRA se aplica exactamente a esa variante.
 
-La relevancia de este modelo es limitada a un nicho muy concreto: la generacion de contenido audiovisual para adultos personalizado, donde el usuario desea animar una imagen propia o ajena. No se dispone de informacion publica sobre el proceso de entrenamiento, el tamano del adaptador, ni las especificaciones tecnicas. La licencia declarada en HuggingFace es "unknown", lo que imposibilita cualquier uso comercial sin autorizacion explicita. Cabe destacar que la ficha del modelo contiene prompts detallados para generar escenas de sexo oral y eyaculacion, asi como instrucciones tecnicas sobre encuadre, iluminacion y consistencia temporal.
+La relevancia de este modelo es limitada a un nicho muy concreto: la generacion de contenido audiovisual para adultos personalizado, donde el usuario desea animar una imagen propia o ajena. No se dispone de informacion publica sobre el proceso de entrenamiento, el tamano del adaptador, ni las especificaciones tecnicas. La licencia declarada en Hugging Face es "unknown", lo que imposibilita cualquier uso comercial sin autorizacion explicita. Cabe destacar que la ficha del modelo contiene prompts detallados para generar escenas de sexo oral y eyaculacion, asi como instrucciones tecnicas sobre encuadre, iluminacion y consistencia temporal.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 - VRAM estimada para inferencia: no disponible para este LoRA concreto.
 - El modelo base Wan2.2 (variante A14B) requiere GPUs de alto rendimiento, tipicamente A100/H100 con 40-80 GB de VRAM para una ejecucion completa. Sin embargo, no se ha verificado este requisito para el adaptador.
 - No se dispone de informacion sobre cuantizaciones (GGUF, AWQ, GPTQ) que faciliten el despliegue en consumidores.
-- Opciones de despliegue: no documentadas. En la busqueda web se enlaza la tarjeta de HuggingFace de Wan-AI/Wan2.2-I2V-A14B, que incluye instrucciones de uso con librerias, pero no se confirma la compatibilidad con este LoRA.
+- Opciones de despliegue: no documentadas. En la busqueda web se enlaza la tarjeta de Hugging Face de Wan-AI/Wan2.2-I2V-A14B, que incluye instrucciones de uso con librerias, pero no se confirma la compatibilidad con este LoRA.
 - Latencia y throughput: desconocidos.
 
 ## Comparativa con modelos similares
@@ -63,16 +63,16 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RizenLLC/WAN2.2-14B-LoRA-Double_Blowjob | no disponible | no disponible | unknown | HuggingFace |
-| lightx2v/Wan2.2-Distill-Loras | no disponible | no disponible | no disponible | HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | 14B activos (base) | no disponible | no disponible | HuggingFace |
+| RizenLLC/WAN2.2-14B-LoRA-Double_Blowjob | no disponible | no disponible | unknown | Hugging Face |
+| lightx2v/Wan2.2-Distill-Loras | no disponible | no disponible | no disponible | Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | 14B activos (base) | no disponible | no disponible | Hugging Face |
 
 No es posible establecer comparaciones de rendimiento ni de licencia sin datos certificados.
 
 ## Limitaciones y advertencias
 
 - Contenido sexual explicito: el modelo esta disenado exclusivamente para generar material para adultos. No es apto para menores ni para entornos que no toleren dicha tematica.
-- Licencia "unknown": la ausencia de una licencia clara impide cualquier uso comercial, redistribucion o modificacion sin riesgo legal. HuggingFace etiqueta el modelo como "not-for-all-audiences".
+- Licencia "unknown": la ausencia de una licencia clara impide cualquier uso comercial, redistribucion o modificacion sin riesgo legal. Hugging Face etiqueta el modelo como "not-for-all-audiences".
 - Riesgo de alucinacion y artefactos: las instrucciones del README insisten en "no morphing, no warping, no artifacts", lo que sugiere que el modelo puede producir deformaciones en la identidad o el entorno.
 - Sesgo de genero y cuerpo: el contenido se centra en interacciones heteronormativas y actos concretos, sin representacion de diversidad ni de otros escenarios.
 - Limitaciones de contexto: no se especifica la duracion maxima de video soportada ni el numero de frames. El prompt se divide en tres partes, lo que indica una limitacion practica de longitud.
@@ -80,7 +80,7 @@ No es posible establecer comparaciones de rendimiento ni de licencia sin datos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RizenLLC/WAN2.2-14B-LoRA-Double_Blowjob
+- Hugging Face: https://huggingface.co/RizenLLC/WAN2.2-14B-LoRA-Double_Blowjob
 - Modelo base relacionado: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Coleccion de Loras destilados de Wan2.2 (no oficial): https://huggingface.co/lightx2v/Wan2.2-Distill-Loras
 - Recursos externos no verificados: Purstream Wiki (https://purstream.wiki/) y Purstream (https://purstream.ad/), que no aportan informacion tecnica sobre el modelo.

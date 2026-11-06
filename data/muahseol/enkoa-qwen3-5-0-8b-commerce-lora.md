@@ -6,7 +6,7 @@
 
 El repositorio contiene unicamente los pesos del adaptador en formato PEFT/safetensors (tamano de repo reportado de 0,0 GB, coherente con un adaptador de rango bajo sobre un modelo de 0,8 mil millones de parametros). La model card indica explicitamente que el adaptador se usa en la unidad de vLLM del curso, donde los alumnos lo descargan y lo levantan como servidor de inferencia para practicar el despliegue.
 
-Su relevancia es, por tanto, exclusivamente pedagogica: ilustra el flujo completo de fine-tuning con LoRA sobre un modelo pequeno, la publicacion del adaptador en HuggingFace y su servicio con vLLM. El autor advierte de forma explicita que es un modelo de ejemplo y que no debe usarse para atencion al cliente real.
+Su relevancia es, por tanto, exclusivamente pedagogica: ilustra el flujo completo de fine-tuning con LoRA sobre un modelo pequeno, la publicacion del adaptador en Hugging Face y su servicio con vLLM. El autor advierte de forma explicita que es un modelo de ejemplo y que no debe usarse para atencion al cliente real.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-lora
+- Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-commerce-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este adaptador.

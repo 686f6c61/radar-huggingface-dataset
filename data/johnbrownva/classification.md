@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnbrownva/classification` es un prototipo de investigacion de tipo Tiny Transformer orientado a tareas de clasificacion, publicado por el usuario johnbrownva en HuggingFace. Se trata de una implementacion personalizada y minima, con un total de 49.600 parametros, que se distribuye como punto de partida experimental y no como un modelo entrenado ni evaluado. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+`johnbrownva/classification` es un prototipo de investigacion de tipo Tiny Transformer orientado a tareas de clasificacion, publicado por el usuario johnbrownva en Hugging Face. Se trata de una implementacion personalizada y minima, con un total de 49.600 parametros, que se distribuye como punto de partida experimental y no como un modelo entrenado ni evaluado. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 La relevancia de este tipo de publicaciones es fundamentalmente metodologica: sirve como esqueleto reproducible para experimentar con arquitecturas transformer muy pequenas, validar pipelines de entrenamiento (smoke tests) y establecer lineas base de baja capacidad antes de escalar. No obstante, el propio autor advierte que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
 
@@ -95,5 +95,5 @@ Nota: las cifras de TinyBERT y DistilBERT corresponden a conocimiento general de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnbrownva/classification
+- Hugging Face: https://huggingface.co/johnbrownva/classification
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nynxz/Qwen3.5-9b` no es un modelo completo, sino un adaptador LoRA en formato ComfyUI para el codificador de texto Qwen3.5-9B. Su autor, el usuario de HuggingFace `nynxz`, lo publica como un fichero safetensors de 13,4 MB que reproduce el comportamiento del checkpoint `HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` sobre los pesos originales de `Qwen/Qwen3.5-9B`, sin necesidad de descargar un segundo checkpoint completo. El resultado declarado es la eliminación del comportamiento de rechazo (refusal) del modelo base.
+`nynxz/Qwen3.5-9b` no es un modelo completo, sino un adaptador LoRA en formato ComfyUI para el codificador de texto Qwen3.5-9B. Su autor, el usuario de Hugging Face `nynxz`, lo publica como un fichero safetensors de 13,4 MB que reproduce el comportamiento del checkpoint `HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` sobre los pesos originales de `Qwen/Qwen3.5-9B`, sin necesidad de descargar un segundo checkpoint completo. El resultado declarado es la eliminación del comportamiento de rechazo (refusal) del modelo base.
 
 El interes tecnico del artefacto es el metodo: en lugar de publicar pesos completos "abliterated", el autor calcula la diferencia de pesos entre el modelo censurado y el modificado, la factoriza por matriz con SVD y demuestra que dicha edicion es exactamente de rango 4, de modo que una LoRA de rango 4 conserva mas del 99,9 por ciento de la modificación. Se intervienen 68 matrices del modelo de lenguaje (proyecciones de salida de atencion y proyecciones de las MLP), dejando intactos los embeddings, la `lm_head` y la torre de vision.
 
@@ -21,7 +21,7 @@ Es relevante ahora porque ofrece una via ligera y verificable de reproducir una 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (claves de text encoder genericas de ComfyUI: `text_encoders.transformer.model.layers.N.<modulo>.lora_{down,up}.weight`) |
 | Pipeline declarado | image-text-to-text |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Relacion con el modelo base | adapter (LoRA), base: `Qwen/Qwen3.5-9B` y `HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` |
 
 ## Arquitectura y entrenamiento
@@ -77,10 +77,10 @@ No hay datos publicos de latencia ni de throughput. No se dispone de comparacion
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Comportamiento |
 |---|---|---|---|---|---|---|
-| `nynxz/Qwen3.5-9b` | LoRA (adaptador) | 13,4 MB de adaptador sobre 9B | No disponible | apache-2.0 | HuggingFace, 0 descargas | Sin rechazos a fuerza 1.0, mezclable |
-| `HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` | Checkpoint completo | 9B | No disponible | apache-2.0 | HuggingFace | Sin rechazos; requiere descargar pesos completos |
-| `Qwen/Qwen3.5-9B` | Checkpoint completo | 9B | No disponible | apache-2.0 | HuggingFace | Comportamiento original con rechazos |
-| `nDimensional/Qwen3.5-9B-Uncensored-Safetensors` | Checkpoint convertido | 9B | No disponible | apache-2.0 | HuggingFace | Conversion a safetensors de la que se tomo la diferencia |
+| `nynxz/Qwen3.5-9b` | LoRA (adaptador) | 13,4 MB de adaptador sobre 9B | No disponible | apache-2.0 | Hugging Face, 0 descargas | Sin rechazos a fuerza 1.0, mezclable |
+| `HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive` | Checkpoint completo | 9B | No disponible | apache-2.0 | Hugging Face | Sin rechazos; requiere descargar pesos completos |
+| `Qwen/Qwen3.5-9B` | Checkpoint completo | 9B | No disponible | apache-2.0 | Hugging Face | Comportamiento original con rechazos |
+| `nDimensional/Qwen3.5-9B-Uncensored-Safetensors` | Checkpoint convertido | 9B | No disponible | apache-2.0 | Hugging Face | Conversion a safetensors de la que se tomo la diferencia |
 
 La ventaja del adaptador es el tamano (13,4 MB frente a decenas de GB) y la reversibilidad; la desventaja es que depende de la version exacta del codificador base y no puede transportar cambios sobre pesos de norma unidimensionales.
 
@@ -94,11 +94,11 @@ La ventaja del adaptador es el tamano (13,4 MB frente a decenas de GB) y la reve
 - Modo de decodificacion: el autor recomienda `sampling_mode: off` y thinking desactivado; con muestreo aleatorio o con thinking activo el comportamiento puede diferir del validado.
 - Validacion limitada: 0 descargas y 1 like, sin replicacion independiente de las metricas de KL ni de la ausencia de efectos en respuestas benignas.
 - Licencia: apache-2.0 en el repositorio, lo que en principio permite uso comercial, pero la responsabilidad sobre el contenido generado por un modelo sin rechazos recae en el desplegador.
-- Metadatos incompletos: no se declaran contexto, cuantizaciones oficiales, ni arquitectura exacta del modelo base, y el repositorio figura con 0,0 GB de tamano segun HuggingFace.
+- Metadatos incompletos: no se declaran contexto, cuantizaciones oficiales, ni arquitectura exacta del modelo base, y el repositorio figura con 0,0 GB de tamano segun Hugging Face.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nynxz/Qwen3.5-9b
+- Hugging Face del adaptador: https://huggingface.co/nynxz/Qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Checkpoint sin censura de referencia: https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Conversion a safetensors usada para la diferencia: https://huggingface.co/nDimensional/Qwen3.5-9B-Uncensored-Safetensors

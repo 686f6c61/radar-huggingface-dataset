@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Extended_Fixed_Merging_Qwen2.5-7B-Instruct_MMLU_...` es un checkpoint derivado de Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario xw1234gan. Se trata de un modelo decoder-only de 7.615.616.512 parámetros (7,6B) en formato safetensors, etiquetado para `text-generation` y conversación. El identificador del repositorio codifica un conjunto de hiperparámetros (`lr1e-05`, `mb2`, `ga128`, `n2048`, `seed42`, `G8`, `outer20`, `bg16`) y una referencia a MMLU, lo que apunta a un experimento de merging o ajuste supervisado con evaluación en dicho benchmark, no a un modelo entrenado desde cero.
+`Extended_Fixed_Merging_Qwen2.5-7B-Instruct_MMLU_...` es un checkpoint derivado de Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario xw1234gan. Se trata de un modelo decoder-only de 7.615.616.512 parámetros (7,6B) en formato safetensors, etiquetado para `text-generation` y conversación. El identificador del repositorio codifica un conjunto de hiperparámetros (`lr1e-05`, `mb2`, `ga128`, `n2048`, `seed42`, `G8`, `outer20`, `bg16`) y una referencia a MMLU, lo que apunta a un experimento de merging o ajuste supervisado con evaluación en dicho benchmark, no a un modelo entrenado desde cero.
 
 La relevancia del modelo es limitada y de carácter experimental: la model card está autogenerada por la plataforma y no contiene descripción, datos de entrenamiento, resultados ni licencia. No hay descargas ni valoraciones, y el repositorio no incluye variantes cuantizadas. Por tanto, debe tratarse como un artefacto de investigación reproducible (semilla y parámetros en el nombre) más que como un modelo listo para producción.
 
@@ -25,7 +25,7 @@ Su interés práctico deriva del modelo base: Qwen2.5-7B-Instruct es un transfor
 
 El checkpoint parte de Qwen2.5-7B-Instruct, un transformer decoder-only denso con atención causal, RoPE y ventana de contexto nativa de 32.768 tokens en el modelo base. No se dispone de información sobre si se modificó la arquitectura, el tokenizador o la configuración de atención. El tamaño del repositorio (15,2 GB) es coherente con pesos en fp16/bf16 sin cuantizar.
 
-El nombre del repositorio sugiere un proceso de merging de pesos o de ajuste con evaluación en MMLU: `lr1e-05` (tasa de aprendizaje), `ga128` (acumulación de gradiente), `n2048` (probablemente 2.048 muestras o pasos), `seed42`, `G8`, `outer20` y `bg16` (posibles iteraciones externas, generaciones y tamaño de grupo). Sin embargo, la model card no documenta dataset, número de tokens, composición, ni si hubo RLHF, DPO o supervisión humana. El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental de Lacoste et al. incluida en la plantilla genérica de HuggingFace, no a un paper sobre este modelo.
+El nombre del repositorio sugiere un proceso de merging de pesos o de ajuste con evaluación en MMLU: `lr1e-05` (tasa de aprendizaje), `ga128` (acumulación de gradiente), `n2048` (probablemente 2.048 muestras o pasos), `seed42`, `G8`, `outer20` y `bg16` (posibles iteraciones externas, generaciones y tamaño de grupo). Sin embargo, la model card no documenta dataset, número de tokens, composición, ni si hubo RLHF, DPO o supervisión humana. El tag `arxiv:1910.09700` corresponde a la calculadora de impacto ambiental de Lacoste et al. incluida en la plantilla genérica de Hugging Face, no a un paper sobre este modelo.
 
 ## Capacidades
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. El n
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este checkpoint (xw1234gan) | 7,6B | No disponible (base: 32.768) | No disponible | Repo HF, 0 descargas, 0 likes |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.1 8B Instruct | 8,0B | 131.072 | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.1 8B Instruct | 8,0B | 131.072 | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 La comparación de rendimiento con estas alternativas no está disponible para este checkpoint. Frente al modelo base, la única diferencia documentada es el proceso de merging y la evaluación en MMLU, sin resultados publicados.
 
@@ -96,7 +96,7 @@ La comparación de rendimiento con estas alternativas no está disponible para e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xw1234gan/Extended_Fixed_Merging_Qwen2.5-7B-Instruct_MMLU_lr1e-05_mb2_ga128_n2048_seed42_G8_outer20_bg16
+- Repositorio Hugging Face: https://huggingface.co/xw1234gan/Extended_Fixed_Merging_Qwen2.5-7B-Instruct_MMLU_lr1e-05_mb2_ga128_n2048_seed42_G8_outer20_bg16
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

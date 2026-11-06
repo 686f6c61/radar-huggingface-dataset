@@ -84,9 +84,9 @@ Nota: el conjunto de evaluacion usado para medir la tasa de rechazo no se especi
 
 | Modelo | Parametros totales | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qpqpqpqpqpqqqq/Laguna-XS-2.1-Abliterated-NVFP4 | 17,74 mil millones | NVFP4 (expertos) + KV FP8 | no disponible | openmdw-1.1 | Publico en HuggingFace, 0 descargas |
-| poolside/Laguna-XS-2.1 | no disponible | BF16 | no disponible | no disponible | Publico en HuggingFace, referenciado como modelo base |
-| poolside/Laguna-XS-2.1-DFlash-NVFP4 | no disponible | NVFP4 | no disponible | no disponible | Publico en HuggingFace; se usa como modelo borrador para decodificacion especulativa |
+| qpqpqpqpqpqqqq/Laguna-XS-2.1-Abliterated-NVFP4 | 17,74 mil millones | NVFP4 (expertos) + KV FP8 | no disponible | openmdw-1.1 | Publico en Hugging Face, 0 descargas |
+| poolside/Laguna-XS-2.1 | no disponible | BF16 | no disponible | no disponible | Publico en Hugging Face, referenciado como modelo base |
+| poolside/Laguna-XS-2.1-DFlash-NVFP4 | no disponible | NVFP4 | no disponible | no disponible | Publico en Hugging Face; se usa como modelo borrador para decodificacion especulativa |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada. La diferencia funcional principal frente al modelo base es la ausencia de alineamiento de seguridad y la cuantizacion a 4 bits de los expertos, con una perdida de calidad asociada que no ha sido cuantificada por el autor.
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qpqpqpqpqpqqqq/Laguna-XS-2.1-Abliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/qpqpqpqpqpqqqq/Laguna-XS-2.1-Abliterated-NVFP4
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Modelo borrador para decodificacion especulativa DFlash: https://huggingface.co/poolside/Laguna-XS-2.1-DFlash-NVFP4
 - Libreria de abliteration abliterix: https://pypi.org/project/abliterix/

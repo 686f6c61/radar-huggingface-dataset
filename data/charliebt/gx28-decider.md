@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gx28-decider es un modelo de decisión generalista desarrollado por CharlieBT y publicado en HuggingFace como un fine-tune LoRA fusionado sobre baselabs/mammoth-1 (modelo base con licencia MIT). El modelo está diseñado para la pista de decisión generalista de la subnet REAX, un protocolo que utiliza lectura conjunta en línea (inline-readout v3) mediante los archivos `readout.safetensors` y `decision_config.json`.
+gx28-decider es un modelo de decisión generalista desarrollado por CharlieBT y publicado en Hugging Face como un fine-tune LoRA fusionado sobre baselabs/mammoth-1 (modelo base con licencia MIT). El modelo está diseñado para la pista de decisión generalista de la subnet REAX, un protocolo que utiliza lectura conjunta en línea (inline-readout v3) mediante los archivos `readout.safetensors` y `decision_config.json`.
 
 A diferencia de un modelo de lenguaje conversacional convencional, este modelo se encuadra en la tarea de clasificación de texto (pipeline `text-classification`) y actúa como "decider": evalúa tareas, opciones o decisiones y emite veredictos, con énfasis en routing de herramientas, abstención y razonamiento sobre reglas. Su entrenamiento combina generadores procedurales propios, datasets públicos reetiquetados (seguridad, licitaciones, moderación, argumentación) y datos generados exclusivamente por modelos de pesos abiertos (Qwen, DeepSeek, GLM, Kimi), excluyendo deliberadamente filas escritas por OpenAI o Anthropic.
 
@@ -12,7 +12,7 @@ Con 26.085.330.160 parámetros (dato real extraído de los safetensors) y un tam
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (según tags de HuggingFace), fine-tune LoRA fusionado sobre baselabs/mammoth-1 |
+| Arquitectura | qwen3_5 (según tags de Hugging Face), fine-tune LoRA fusionado sobre baselabs/mammoth-1 |
 | Parametros totales | 26.085.330.160 (dato real de safetensors) |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Con 26.085.330.160 parámetros (dato real extraído de los safetensors) y un tam
 
 ## Arquitectura y entrenamiento
 
-El modelo es un LoRA fine-tune de baselabs/mammoth-1 (MIT), fusionado en los pesos finales ("merged into the weights"), lo que significa que no requiere adaptador externo en inferencia. Sigue el mismo protocolo que el modelo base: joint inline-readout v3, con un módulo de lectura externo (`readout.safetensors`) y una configuración de decisión (`decision_config.json`). La etiqueta `qwen3_5` en HuggingFace sugiere que la arquitectura subyacente es de la familia Qwen 3.5, aunque la model card no detalla la estructura exacta (capas, atención, MoE).
+El modelo es un LoRA fine-tune de baselabs/mammoth-1 (MIT), fusionado en los pesos finales ("merged into the weights"), lo que significa que no requiere adaptador externo en inferencia. Sigue el mismo protocolo que el modelo base: joint inline-readout v3, con un módulo de lectura externo (`readout.safetensors`) y una configuración de decisión (`decision_config.json`). La etiqueta `qwen3_5` en Hugging Face sugiere que la arquitectura subyacente es de la familia Qwen 3.5, aunque la model card no detalla la estructura exacta (capas, atención, MoE).
 
 Los datos de entrenamiento son notablemente documentados (listados en `MODIFICATIONS.md` y `TRAINING_SOURCES.tsv` con fuente y licencia por fila). Incluyen: generadores procedurales propios en formato v5.1; registros públicos reetiquetados de GitHub Advisory Database, anuncios de licitación de la TED (Comisión Europea), discusiones de borrado de Wikipedia en inglés, registros de openFDA/CPSC/NWS METAR, OurAirports, openfootball, metadatos de arXiv y Wikidata, EIPs de Ethereum, textos de Project Gutenberg, SNLI/MultiNLI, ANLI (split TRAIN), IBM Argument Quality 30k, Amazon MASSIVE y NVIDIA Aegis 2.0. Se añaden el dataset `decisionmodels/sn92-generalist-train-v1` (solo filas de modelos de pesos abiertos o código, sin filas de OpenAI ni Anthropic), `decisionmodels/sn92-specialists`, el split de preferencias TRAIN de NVIDIA When2Call (descontaminado frente a sus test), posiciones de juegos etiquetadas por solvers exactos (tres en raya, Conecta 4, Nim) y copias con variaciones de formato generadas por paráfrasis de Kimi-K3. No hubo RLHF/DPO declarado; el enfoque es aprendizaje supervisado sobre etiquetas de decisión.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CharlieBT/gx28-decider | 26,1 B (safetensors) | Decision model / text-classification (REAX SN92) | Apache-2.0 | HuggingFace, pesos abiertos |
-| baselabs/mammoth-1 (modelo base) | no disponible | Modelo base del protocolo REAX | MIT | HuggingFace, pesos abiertos |
-| NVIDIA When2Call (dataset/modelos asociados) | no disponible | Decisión de tool calling | CC-BY-4.0 (datos) | HuggingFace |
+| CharlieBT/gx28-decider | 26,1 B (safetensors) | Decision model / text-classification (REAX SN92) | Apache-2.0 | Hugging Face, pesos abiertos |
+| baselabs/mammoth-1 (modelo base) | no disponible | Modelo base del protocolo REAX | MIT | Hugging Face, pesos abiertos |
+| NVIDIA When2Call (dataset/modelos asociados) | no disponible | Decisión de tool calling | CC-BY-4.0 (datos) | Hugging Face |
 
 No hay otros modelos comparables publicados en la informacion disponible dentro de la pista generalista de la subnet REAX; la comparación más directa es con su propio modelo base, del que se diferencia por el fine-tune en datos de decisión generalista.
 
@@ -85,6 +85,6 @@ No hay otros modelos comparables publicados en la informacion disponible dentro 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieBT/gx28-decider
+- Modelo en Hugging Face: https://huggingface.co/CharlieBT/gx28-decider
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Archivos de entrenamiento referenciados en la model card (no verificados): MODIFICATIONS.md, TRAINING_SOURCES.tsv, decisionmodels/sn92-generalist-train-v1, decisionmodels/sn92-specialists, nvidia/When2Call

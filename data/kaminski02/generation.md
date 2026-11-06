@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kaminski02/generation es un repositorio experimental publicado en HuggingFace por Hanna Kaminski (usuario kaminski02) que implementa una base de codigo etiquetada como "Mocov3 for Generation". No se trata de un modelo entrenado ni de un release listo para produccion: el autor lo describe explicitamente como un punto de partida de inicializacion para pruebas de humo (smoke tests) que permite inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un fichero Python ejecutable, config.json, training_args.json y un model.safetensors de inicializacion.
+kaminski02/generation es un repositorio experimental publicado en Hugging Face por Hanna Kaminski (usuario kaminski02) que implementa una base de codigo etiquetada como "Mocov3 for Generation". No se trata de un modelo entrenado ni de un release listo para produccion: el autor lo describe explicitamente como un punto de partida de inicializacion para pruebas de humo (smoke tests) que permite inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un fichero Python ejecutable, config.json, training_args.json y un model.safetensors de inicializacion.
 
 La ficha tecnica del autor declara una configuracion a escala "xlarge" con atencion lineal, fusion de bajo rango, activacion gelu tanh y normalizacion scalenorm, entrenada por defecto con el optimizador novograd y un schedule onecycle. El autor advierte de que estos valores son puntos de partida del script y no evidencia de un entrenamiento completado; no se reclama ninguna puntuacion de benchmark.
 
@@ -93,7 +93,7 @@ No se identifican modelos comparables de terceros en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaminski02/generation
+- Repositorio en Hugging Face: https://huggingface.co/kaminski02/generation
 - Perfil del autor: https://huggingface.co/kaminski02
 - Repositorio relacionado (Perceiver, variante nano): https://huggingface.co/kaminski02/quick-generation
 - Repositorio relacionado (contrastive learning): https://huggingface.co/kaminski02/paper_007112890_contrastive_learning

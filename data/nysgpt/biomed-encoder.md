@@ -3,7 +3,7 @@
 ## Resumen
 NYSgpt/biomed-encoder es un modelo de embeddings densos especializado en el dominio biomédico, desarrollado por NYSgpt (Brendan Stanton). Se trata de un fine-tuning del modelo BAAI/bge-m3 sobre preprints de bioRxiv y medRxiv, con el objetivo de mejorar la recuperación de literatura científica en biomedicina. Está diseñado para tareas de retrieval y búsqueda semántica, generando representaciones vectoriales de alta calidad para textos biomédicos.
 
-El modelo hereda la arquitectura de bge-m3, un encoder basado en XLM-RoBERTa con 567 millones de parámetros. Su pipeline es de feature-extraction y se distribuye en formato safetensors con licencia MIT. Aunque el acceso está restringido (gated) en HuggingFace, su uso está permitido bajo dicha licencia. Su relevancia radica en la creciente necesidad de herramientas de búsqueda eficientes sobre el creciente volumen de publicaciones científicas biomédicas.
+El modelo hereda la arquitectura de bge-m3, un encoder basado en XLM-RoBERTa con 567 millones de parámetros. Su pipeline es de feature-extraction y se distribuye en formato safetensors con licencia MIT. Aunque el acceso está restringido (gated) en Hugging Face, su uso está permitido bajo dicha licencia. Su relevancia radica en la creciente necesidad de herramientas de búsqueda eficientes sobre el creciente volumen de publicaciones científicas biomédicas.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: para inferencia en FP32, el modelo ocupa aproximadamente 2,3 GB de memoria (según el tamaño del repo). En FP16 sería ~1,2 GB y en int8 ~0,6 GB (estimación, no confirmada).
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM puede ejecutarlo cómodamente, por ejemplo RTX 3060, RTX 3090, o incluso una T4 de 16 GB.
 - **Compatibilidad con consumer GPU**: sí, cabe en la mayoría de GPUs de consumo actuales (a partir de 4 GB).
-- **Opciones de despliegue**: se puede servir con vLLM, llama.cpp (aunque es encoder, no es típico), Ollama (no para embeddings), pero principalmente con sentence-transformers, o mediante TEI (text-embeddings-inference) de HuggingFace.
+- **Opciones de despliegue**: se puede servir con vLLM, llama.cpp (aunque es encoder, no es típico), Ollama (no para embeddings), pero principalmente con sentence-transformers, o mediante TEI (text-embeddings-inference) de Hugging Face.
 - **Latencia y throughput**: al ser un modelo de 568M, la inferencia es rápida; se pueden procesar miles de textos por minuto en una GPU moderna, pero no se tienen datos exactos.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No se dispone de datos de rendimiento comparativos para este modelo. Sin embargo
 Nota: los datos de contexto de biomed-encoder no están confirmados, pero se heredan probablemente de bge-m3 (8192).
 
 ## Limitaciones y advertencias
-- **Acceso restringido**: el modelo es gated, es decir, requiere aceptar condiciones en HuggingFace para su descarga, lo que puede dificultar su integración en pipelines automatizados.
+- **Acceso restringido**: el modelo es gated, es decir, requiere aceptar condiciones en Hugging Face para su descarga, lo que puede dificultar su integración en pipelines automatizados.
 - **Idioma**: solo entrenado en inglés; no es adecuado para textos en otros idiomas sin fine-tuning adicional.
 - **Sesgos**: al ser entrenado sobre preprints, puede heredar sesgos de la literatura científica (publicación, idioma, campos dominantes).
 - **Riesgo de alucinación**: como encoder, no genera texto, por lo que no hay riesgo de alucinación, pero los embeddings pueden no capturar matices semánticos en dominios muy especializados.
@@ -69,12 +69,12 @@ Nota: los datos de contexto de biomed-encoder no están confirmados, pero se her
 - **Uso comercial**: la licencia MIT permite uso comercial, pero el acceso restringido puede requerir una revisión de términos.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/NYSgpt/biomed-encoder)
+- [Modelo en Hugging Face](https://huggingface.co/NYSgpt/biomed-encoder)
 - [Perfil del autor NYSgpt](https://huggingface.co/NYSgpt)
 - [Modelo base BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) (para referencia)</think>## Resumen
 NYSgpt/biomed-encoder es un modelo de embeddings densos especializado en el ámbito biomédico, desarrollado por NYSgpt (Brendan Stanton). Se trata de un fine-tuning del modelo BAAI/bge-m3 sobre preprints de bioRxiv y medRxiv, con el objetivo de mejorar la recuperación de literatura científica en biomedicina. Está diseñado para tareas de búsqueda semántica y retrieval, generando representaciones vectoriales de alta calidad para textos biomédicos.
 
-El modelo hereda la arquitectura de bge-m3, un encoder basado en XLM-RoBERTa con 567,7 millones de parámetros. Su pipeline es de feature-extraction y se distribuye en formato safetensors con licencia MIT. Aunque el acceso está restringido (gated) en HuggingFace, la licencia permite uso comercial. Su relevancia radica en la creciente necesidad de herramientas de búsqueda eficientes sobre el volumen creciente de publicaciones científicas biomédicas.
+El modelo hereda la arquitectura de bge-m3, un encoder basado en XLM-RoBERTa con 567,7 millones de parámetros. Su pipeline es de feature-extraction y se distribuye en formato safetensors con licencia MIT. Aunque el acceso está restringido (gated) en Hugging Face, la licencia permite uso comercial. Su relevancia radica en la creciente necesidad de herramientas de búsqueda eficientes sobre el volumen creciente de publicaciones científicas biomédicas.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -96,7 +96,7 @@ No se dispone de información sobre innovaciones técnicas adicionales, como dec
 ## Capacidades
 - Generación de embeddings densos para textos biomédicos, optimizados para recuperación semántica.
 - Búsqueda de documentos por similaridad vectorial en corpus de preprints y artículos científicos.
-- Compatible con bibliotecas de sentence-transformers y con el servidor text-embeddings-inference de HuggingFace.
+- Compatible con bibliotecas de sentence-transformers y con el servidor text-embeddings-inference de Hugging Face.
 - Soporte de búsqueda por similitud coseno o distancia euclidiana en espacios de alta dimensión.
 - Capacidad multilingüe limitada: solo entrenado en inglés, aunque la arquitectura base de bge-m3 soporta más idiomas.
 - No es un modelo generativo, no soporta tool calling, agentes ni razonamiento multi-step.
@@ -116,7 +116,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada**: en FP32, el modelo ocupa aproximadamente 2,3 GB de memoria (según tamaño del repositorio). En FP16 sería ~1,2 GB y en int8 ~0,6 GB (estimación orientativa, no confirmada).
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM puede ejecutarlo, como RTX 3060, RTX 3090 o T4.
 - **Compatibilidad con consumer GPU**: sí, cabe en la mayoría de GPUs de consumo (8 GB o más).
-- **Opciones de despliegue**: se puede servir mediante sentence-transformers, text-embeddings-inference (TEI) de HuggingFace, o bien con vLLM (aunque es menos habitual para encoders).
+- **Opciones de despliegue**: se puede servir mediante sentence-transformers, text-embeddings-inference (TEI) de Hugging Face, o bien con vLLM (aunque es menos habitual para encoders).
 - **Latencia y throughput**: al ser un modelo de 568M, la inferencia es rápida; en una GPU moderna se pueden procesar miles de documentos por minuto, pero no se han publicado cifras exactas.
 
 ## Comparativa con modelos similares
@@ -130,7 +130,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 Nota: el contexto de biomed-encoder no está confirmado; se espera que herede los 8192 tokens de bge-m3, pero no se ha verificado.
 
 ## Limitaciones y advertencias
-- **Acceso restringido**: el modelo es gated, por lo que se debe aceptar condiciones en HuggingFace para descargarlo, lo que puede dificultar su integración en pipelines automáticos.
+- **Acceso restringido**: el modelo es gated, por lo que se debe aceptar condiciones en Hugging Face para descargarlo, lo que puede dificultar su integración en pipelines automáticos.
 - **Idioma**: solo entrenado en inglés, no es adecuado para textos en otros idiomas sin un fine-tuning adicional.
 - **Sesgos**: al entrenarse sobre preprints, puede heredar sesgos de la literatura científica (idioma, género, geografía, líneas de investigación dominantes).
 - **Riesgo de alucinación**: como encoder, no genera texto, por lo que no hay riesgo de alucinación, pero los embeddings pueden no capturar matices semánticos en dominios muy especializados.
@@ -138,6 +138,6 @@ Nota: el contexto de biomed-encoder no está confirmado; se espera que herede lo
 - **Uso comercial**: la licencia MIT lo permite, pero el acceso gated puede requerir una solicitud formal.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/NYSgpt/biomed-encoder)
+- [Modelo en Hugging Face](https://huggingface.co/NYSgpt/biomed-encoder)
 - [Perfil del autor NYSgpt](https://huggingface.co/NYSgpt)
 - [Modelo base BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3) (para referencia)

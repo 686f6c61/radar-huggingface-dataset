@@ -64,6 +64,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/philipg11/Qwen3.8-27B-mlx-8Bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/philipg11/Qwen3.8-27B-mlx-8Bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Documentación de mlx-lm](https://github.com/ml-explore/mlx-lm)

@@ -66,5 +66,5 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/walkis/Maxi_Pop_2362_Walki
+- Hugging Face: https://huggingface.co/walkis/Maxi_Pop_2362_Walki
 - Modelo base: https://huggingface.co/ACE-Step/acestep-v15-xl-sft

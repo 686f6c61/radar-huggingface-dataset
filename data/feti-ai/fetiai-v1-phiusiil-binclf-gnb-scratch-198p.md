@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - feti-ai/fetiai-v1-phiusiil-binclf-gnb-scratch-198p](https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-gnb-scratch-198p)
+- [Hugging Face - feti-ai/fetiai-v1-phiusiil-binclf-gnb-scratch-198p](https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-gnb-scratch-198p)
 - [Dataset PhiUSIIL en UCI](https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset)
 - [Repositorio de la aplicación completa](https://github.com/fetiai/phishing-url-classifier)
 - [Demo en vivo](https://phiusiil.faizath.com)

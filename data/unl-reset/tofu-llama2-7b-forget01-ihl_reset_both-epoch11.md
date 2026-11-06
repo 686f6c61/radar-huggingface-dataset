@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch11` | 6,74B | no disponible (heredado de Llama 2) | Unlearning TOFU forget01 (epoca 11) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74B | heredado de Llama 2 | Modelo base ajustado sobre TOFU completo | llama2 | HuggingFace (modelo base de referencia) |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4.096 tokens | Chat generalista en ingles | llama2 | HuggingFace (ampliamente usado) |
+| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch11` | 6,74B | no disponible (heredado de Llama 2) | Unlearning TOFU forget01 (epoca 11) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74B | heredado de Llama 2 | Modelo base ajustado sobre TOFU completo | llama2 | Hugging Face (modelo base de referencia) |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4.096 tokens | Chat generalista en ingles | llama2 | Hugging Face (ampliamente usado) |
 
 La comparacion con otros checkpoints de la familia TOFU (por ejemplo, variantes de gradient ascent o de preference optimization del mismo split) no esta disponible en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparacion con otros checkpoints de la familia TOFU (por ejemplo, variantes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch11
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch11
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset TOFU (referencia de la literatura): https://huggingface.co/datasets/locuslab/TOFU

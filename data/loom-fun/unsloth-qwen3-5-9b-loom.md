@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Antes
 | Modelo | Contenido | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | loom-fun/unsloth-Qwen3.5-9B-loom | Paquete Loom (sin pesos) | GGUF Q4_K_M (referencia) | Apache 2.0 | Via `loom-fetch` + `loom-serve` |
-| unsloth/Qwen3.5-9B-GGUF | Pesos GGUF | GGUF (Q4_K_M y otras, segun su tarjeta) | no disponible | Descarga directa en HuggingFace |
+| unsloth/Qwen3.5-9B-GGUF | Pesos GGUF | GGUF (Q4_K_M y otras, segun su tarjeta) | no disponible | Descarga directa en Hugging Face |
 
 Comparativas de rendimiento con otros modelos de ~9B (parametros, contexto, benchmarks) no disponible: ni este repositorio ni la informacion de busqueda aportan esos datos.
 

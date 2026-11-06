@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnhemlabs/ms-marco-minilm-int8-weightonly
+- Modelo en Hugging Face: https://huggingface.co/arnhemlabs/ms-marco-minilm-int8-weightonly
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Revisión del modelo base: `c5ee24cb16019beea0893ab7796b1df96625c6b8`
 - Repositorio Remanence (scripts de exportación, commit `767aa23`): no disponible la URL en la información proporcionada

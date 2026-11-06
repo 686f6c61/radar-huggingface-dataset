@@ -92,9 +92,9 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eeg-fm-masking_mae_rone_L33` (este) | 12,69 M (codificador) | Parches de 1 s a 200 Hz, mascara r = un canal, L = 33 | Ver tabla de benchmarks | CC-BY-4.0 (pesos), MIT (codigo) | HuggingFace, 0 descargas |
-| `eeg-fm-masking_mae_r9cm_L2` | no disponible en la informacion proporcionada | Parches de 1 s a 200 Hz, mascara r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | HuggingFace |
-| `eeg-fm-masking_jepa_r9cm_L2` | no disponible en la informacion proporcionada | Parches de 1 s a 200 Hz, marco JEPA, r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | HuggingFace |
+| `eeg-fm-masking_mae_rone_L33` (este) | 12,69 M (codificador) | Parches de 1 s a 200 Hz, mascara r = un canal, L = 33 | Ver tabla de benchmarks | CC-BY-4.0 (pesos), MIT (codigo) | Hugging Face, 0 descargas |
+| `eeg-fm-masking_mae_r9cm_L2` | no disponible en la informacion proporcionada | Parches de 1 s a 200 Hz, mascara r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face |
+| `eeg-fm-masking_jepa_r9cm_L2` | no disponible en la informacion proporcionada | Parches de 1 s a 200 Hz, marco JEPA, r = 9 cm, L = 2 | no disponible | CC-BY-4.0 | Hugging Face |
 | Otros foundation models de EEG (por ejemplo LaBraM, BIOT, EEGPT) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada. Los unicos modelos directamente comparables en igualdad de receta son los otros 57 encoders de la coleccion `eeg-fm-masking`, entre los que el articulo identifica como recomendada la configuracion r = 9 cm, L = 2.
@@ -116,7 +116,7 @@ La comparativa cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L33
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L33
 - Variante recomendada MAE (r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada JEPA (r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

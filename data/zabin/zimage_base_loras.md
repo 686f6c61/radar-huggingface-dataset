@@ -61,4 +61,4 @@ No disponible. Al no conocerse la arquitectura ni el propósito exacto del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zabin/ZImage_Base_LoRas
+- Repositorio Hugging Face: https://huggingface.co/Zabin/ZImage_Base_LoRas

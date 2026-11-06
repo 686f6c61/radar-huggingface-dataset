@@ -90,7 +90,7 @@ No se dispone de informacion suficiente sobre el modelo base subyacente (version
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junior0091/qwen_3.8_word5k_latest
+- Modelo en Hugging Face: https://huggingface.co/junior0091/qwen_3.8_word5k_latest
 - Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia implicito en los comandos de ejemplo): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion proporcionada.

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Formato | Disponibilidad |
 |---|---:|---|---|---|---|---|
-| Chiboard 1.1 — P1, step 6596 (este modelo) | 752.393.024 | No disponible | No disponible | Testing-only, requiere autorización previa por escrito | GGUF Q8_0; proyector F16 | Repositorio público en HuggingFace, sujeto a licencia |
-| Chiboard 1 S1 | 350 M según LLM Explorer | 125K según LLM Explorer | No disponible en la información consultada | No disponible | GGUF | Repositorio público en HuggingFace |
-| Chiboard 1 M0 | No disponible | No disponible | No disponible | No disponible | GGUF | Repositorio público en HuggingFace |
+| Chiboard 1.1 — P1, step 6596 (este modelo) | 752.393.024 | No disponible | No disponible | Testing-only, requiere autorización previa por escrito | GGUF Q8_0; proyector F16 | Repositorio público en Hugging Face, sujeto a licencia |
+| Chiboard 1 S1 | 350 M según LLM Explorer | 125K según LLM Explorer | No disponible en la información consultada | No disponible | GGUF | Repositorio público en Hugging Face |
+| Chiboard 1 M0 | No disponible | No disponible | No disponible | No disponible | GGUF | Repositorio público en Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, contexto publicado para S1 y formato de distribución; no debe interpretarse como una evaluación de calidad.
 
@@ -89,7 +89,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/johnbean393/chiboard-1.1-pruning-ckpt-p1-step-6596-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/johnbean393/chiboard-1.1-pruning-ckpt-p1-step-6596-GGUF)
 - [Checkpoints de poda P1, revisión 7be679f3a5b75aa285a11bba89c3ebe20c520ab1](https://huggingface.co/johnbean393/chiboard-1.1-pruning-checkpoints/tree/7be679f3a5b75aa285a11bba89c3ebe20c520ab1/P1)
 - [Licencia en el repositorio](https://huggingface.co/johnbean393/chiboard-1.1-pruning-ckpt-p1-step-6596-GGUF/blob/main/LICENSE)
 - [Chiboard 1 M0 GGUF](https://huggingface.co/johnbean393/chiboard-1-m0-GGUF)

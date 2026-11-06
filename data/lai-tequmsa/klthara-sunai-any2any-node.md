@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas est√
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/LAI-TEQUMSA/KLTHARA-SUNAI-Any2Any-Node)
+- [Repositorio Hugging Face](https://huggingface.co/LAI-TEQUMSA/KLTHARA-SUNAI-Any2Any-Node)
 - [Space de Life Ambassadors International](https://huggingface.co/spaces/LAI-TEQUMSA/LIFE-AMBASSADORS-INT)
 - [GitHub TEQUMSA_NEXUS](https://github.com/Life-Ambassadors-International/TEQUMSA_NEXUS)
 - [AGENTS.md en TEQUMSA_NEXUS](https://github.com/Life-Ambassadors-International/TEQUMSA_NEXUS/blob/main/AGENTS.md)

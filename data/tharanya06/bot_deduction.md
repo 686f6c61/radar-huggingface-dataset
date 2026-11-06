@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bot_Deduction es un modelo publicado en HuggingFace por el usuario Tharanya06 bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato safetensors, con un tamano total de 0,3 GB, y su model card esta practicamente vacia: unicamente incluye la linea de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
+Bot_Deduction es un modelo publicado en Hugging Face por el usuario Tharanya06 bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato safetensors, con un tamano total de 0,3 GB, y su model card esta practicamente vacia: unicamente incluye la linea de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
 
 No se dispone de informacion publica sobre el problema concreto que el modelo pretende resolver, su arquitectura, su numero de parametros ni su ventana de contexto. El repositorio registra cero descargas y cero likes en el momento de la consulta, y el pipeline declarado no esta definido, por lo que tampoco puede confirmarse si se trata de un modelo de generacion de texto, de clasificacion u otra tarea.
 
@@ -27,7 +27,7 @@ Nota sobre el tamano: el repositorio ocupa 0,3 GB. Asumiendo que la totalidad de
 
 No disponible. La model card del autor no describe la arquitectura del modelo, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruction tuning. Tampoco se declara ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, arquitectura MoE o hibrida, etc.).
 
-Los unicos elementos verificables son el formato de serializacion de pesos (safetensors) y el tamano del repositorio (0,3 GB). La presencia de la etiqueta `region:us` en los metadatos de HuggingFace indica unicamente la region de almacenamiento del repositorio, no caracteristicas tecnicas del modelo.
+Los unicos elementos verificables son el formato de serializacion de pesos (safetensors) y el tamano del repositorio (0,3 GB). La presencia de la etiqueta `region:us` en los metadatos de Hugging Face indica unicamente la region de almacenamiento del repositorio, no caracteristicas tecnicas del modelo.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ No disponible. No hay informacion publicada que permita confirmar ninguna capaci
 - Soporte de agentes o razonamiento multi-paso.
 - Capacidades multilingues o idiomas concretos.
 - Capacidades multimodales (vision, audio) o modos especiales (thinking mode).
-- Tarea declarada en el pipeline de HuggingFace, que figura como no disponible.
+- Tarea declarada en el pipeline de Hugging Face, que figura como no disponible.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tharanya06/Bot_Deduction
+- Hugging Face: https://huggingface.co/Tharanya06/Bot_Deduction
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o documentacion del autor: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-Wolof-CPT-v3 es un artefacto de ajuste por preentrenamiento continuado (continual pretraining, CPT) sobre el modelo base LiquidAI/LFM2.5-230M-Base, orientado exclusivamente al idioma wolof (codigo ISO `wo`). Lo publica el usuario `mamelles` en HuggingFace y se presenta explicitamente en su model card como un "artefacto de produccion privado", experimental y no destinado a publicacion general. El modelo cuenta con 232.627.968 parametros totales en formato safetensors y un repositorio de 0,5 GB.
+LFM2.5-230M-Wolof-CPT-v3 es un artefacto de ajuste por preentrenamiento continuado (continual pretraining, CPT) sobre el modelo base LiquidAI/LFM2.5-230M-Base, orientado exclusivamente al idioma wolof (codigo ISO `wo`). Lo publica el usuario `mamelles` en Hugging Face y se presenta explicitamente en su model card como un "artefacto de produccion privado", experimental y no destinado a publicacion general. El modelo cuenta con 232.627.968 parametros totales en formato safetensors y un repositorio de 0,5 GB.
 
 El problema que aborda es la adaptacion de un modelo pequeno de la familia LFM2 de Liquid AI a un idioma de bajos recursos como el wolof, mediante un protocolo de corpus limpio y reequilibrado de datos de instruccion. No es un modelo de instrucciones ni un asistente conversacional listo para produccion: la model card indica que no se ha validado de forma exhaustiva la ortografia del wolof, el code-switching, la factualidad, el razonamiento, el comportamiento en contexto largo ni la seguridad.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-CPT-v3
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-CPT-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Metricas legibles por maquina (URL tal como aparece en la model card): https://huggingface.co/Tonic/LFM2.5-230M-Wolof-CPT-v3/blob/main/metrics.json
 - Fuente de evaluacion citada: "GalsenAI LFM2.5 Wolof family eval" (sin URL adicional en la informacion disponible)

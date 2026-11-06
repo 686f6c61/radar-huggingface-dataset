@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yangkai/kk` es un repositorio alojado en HuggingFace por el usuario `yangkai`. En el momento de la consulta, la model card pública contiene unicamente la declaracion de licencia (`apache-2.0`) y carece de cualquier otra documentacion: no se especifica arquitectura, tamano, datos de entrenamiento, tokenizador ni uso previsto. El repositorio no declara `pipeline_tag`, no incluye `library_name` y no tiene etiquetas de idioma, lo que impide clasificarlo dentro de una categoria funcional concreta (texto, vision, audio, embeddings, etc.).
+`yangkai/kk` es un repositorio alojado en Hugging Face por el usuario `yangkai`. En el momento de la consulta, la model card pública contiene unicamente la declaracion de licencia (`apache-2.0`) y carece de cualquier otra documentacion: no se especifica arquitectura, tamano, datos de entrenamiento, tokenizador ni uso previsto. El repositorio no declara `pipeline_tag`, no incluye `library_name` y no tiene etiquetas de idioma, lo que impide clasificarlo dentro de una categoria funcional concreta (texto, vision, audio, embeddings, etc.).
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-23T15:46:12Z), un patron compatible con un repositorio recien inicializado o con un placeholder sin pesos publicados. La unica etiqueta adicional es `region:us`, de caracter administrativo y sin implicaciones tecnicas.
 
@@ -93,7 +93,7 @@ No disponible. Al no conocer la categoria funcional ni el tamano del modelo, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yangkai/kk
+- Repositorio en Hugging Face: https://huggingface.co/yangkai/kk
 - Model card del autor: https://huggingface.co/yangkai/kk#model-card
 - Ficheros del repositorio: https://huggingface.co/yangkai/kk/tree/main
 - Perfil del autor: https://huggingface.co/yangkai

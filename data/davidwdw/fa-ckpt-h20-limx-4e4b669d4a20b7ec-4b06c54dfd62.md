@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62` es un archivo versionado de puntos de control (checkpoints) publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" con un "tier" que incluye parametros, estado de entrenamiento (`train_state`) y activos auxiliares (`assets`). La receta canonica asociada se identifica como `2026-09-19_pi05_libero_alphabet_soup_lora`, y el autor recomienda usar exactamente la revision registrada y verificar la integridad mediante `SHA256SUMS`.
+El repositorio `davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62` es un archivo versionado de puntos de control (checkpoints) publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" con un "tier" que incluye parametros, estado de entrenamiento (`train_state`) y activos auxiliares (`assets`). La receta canonica asociada se identifica como `2026-09-19_pi05_libero_alphabet_soup_lora`, y el autor recomienda usar exactamente la revision registrada y verificar la integridad mediante `SHA256SUMS`.
 
 No se trata, por tanto, de un modelo con una model card descriptiva al uso, sino de un paquete de checkpoint pensado para reproducibilidad, reanudacion de entrenamientos o evaluacion con una revision concreta. El repositorio ocupa 9,4 GB, cifra coherente con un paquete que almacena pesos junto con estado de optimizador y otros artefactos de entrenamiento, aunque ese tamano por si solo no permite determinar el numero de parametros ni la arquitectura.
 
@@ -89,13 +89,13 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 - Cero adopcion verificable: 0 descargas y 0 "likes" implican que no existe validacion por parte de la comunidad.
 - Sin soporte ni mantenimiento declarado: no hay garantia de actualizaciones, correcciones ni respuesta del autor.
 - Ausencia de benchmarks: no hay ninguna evidencia publica de rendimiento, por lo que no deberia usarse en produccion sin una evaluacion propia.
-- Fechas de registro inusuales: las marcas temporales de creacion y actualizacion (2026-09-28) son las registradas por HuggingFace y pueden no coincidir con la cronologia real del entrenamiento.
+- Fechas de registro inusuales: las marcas temporales de creacion y actualizacion (2026-09-28) son las registradas por Hugging Face y pueden no coincidir con la cronologia real del entrenamiento.
 - Aviso de la propia model card: es un snapshot, no un espejo de directorio en vivo, y debe usarse exactamente la revision registrada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-4e4b669d4a20b7ec-4b06c54dfd62
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacio de inferencia: no disponible
-- Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con este modelo (perfiles genericos de HuggingFace, paginas de Facebook y ChatGPT) y no aportan informacion tecnica utilizable.
+- Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con este modelo (perfiles genericos de Hugging Face, paginas de Facebook y ChatGPT) y no aportan informacion tecnica utilizable.

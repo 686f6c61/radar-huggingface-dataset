@@ -90,6 +90,6 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f10-s0-3b6a837938ca
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f10-s0-3b6a837938ca
 - Receta canonica citada por el autor: `reports/2026-10-02_all_pending_eval_deployment` (no se ha facilitado URL publica)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

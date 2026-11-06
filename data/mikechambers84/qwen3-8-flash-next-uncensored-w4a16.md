@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Uncensored-W4A16 (mikechambers84) | ~180B / ~6B | 262K según insignia | W4A16 en expertos, resto BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.8-Flash-Next (oficial) | ~180B / ~6B | 262K según insignia | BF16 | Apache 2.0 | HuggingFace |
-| Qwen3.8-Flash-Next-Uncensored-FP8 (orcarouter) | ~180B / ~6B | no disponible | block-FP8 | Apache 2.0 | HuggingFace |
-| Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF (cygnal) | ~180B / ~6B | no disponible | GGUF IQ4_XS / NGQ4 | no disponible | HuggingFace |
-| Qwen3.8-Flash-Next-W4A16 (aixiaoma) | ~180B / ~6B | no disponible | W4A16 | no disponible | HuggingFace |
+| Qwen3.8-Flash-Next-Uncensored-W4A16 (mikechambers84) | ~180B / ~6B | 262K según insignia | W4A16 en expertos, resto BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.8-Flash-Next (oficial) | ~180B / ~6B | 262K según insignia | BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.8-Flash-Next-Uncensored-FP8 (orcarouter) | ~180B / ~6B | no disponible | block-FP8 | Apache 2.0 | Hugging Face |
+| Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF (cygnal) | ~180B / ~6B | no disponible | GGUF IQ4_XS / NGQ4 | no disponible | Hugging Face |
+| Qwen3.8-Flash-Next-W4A16 (aixiaoma) | ~180B / ~6B | no disponible | W4A16 | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks que permitan comparar rendimiento entre estas variantes. La diferencia entre ellas es de formato de pesos, licencia declarada y disponibilidad; la variante FP8 se describe como equivalente al esquema oficial, mientras que las W4A16 aplican cuantización de solo pesos.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks que permitan comparar rendimiento entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikechambers84/Qwen3.8-Flash-Next-Uncensored-W4A16
+- Modelo en Hugging Face: https://huggingface.co/mikechambers84/Qwen3.8-Flash-Next-Uncensored-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Variante FP8 de OrcaRouter: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8

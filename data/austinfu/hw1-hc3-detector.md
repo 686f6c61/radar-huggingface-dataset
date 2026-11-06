@@ -18,7 +18,7 @@ Su relevancia es limitada y fundamentalmente metodologica: sirve como referencia
 | Longitud de contexto | 256 wordpieces (max_length usado en el entrenamiento; el modelo base tambien esta limitado a 256) |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos safetensors en su precision original |
 | Idiomas soportados | ingles (en) |
-| Licencia | no disponible (ni la model card ni los metadatos de HuggingFace la declaran) |
+| Licencia | no disponible (ni la model card ni los metadatos de Hugging Face la declaran) |
 | Formato de pesos | safetensors |
 | Tarea (pipeline) | text-classification |
 | Etiquetas | 0 = humano, 1 = ChatGPT |
@@ -105,7 +105,7 @@ La diferencia principal frente a alternativas basadas en RoBERTa es el tamano: 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinFu/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/AustinFu/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper de referencia: Guo et al. (2023), "How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection": https://arxiv.org/abs/2301.07597

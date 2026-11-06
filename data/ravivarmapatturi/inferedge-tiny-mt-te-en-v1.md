@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InferEdge tiny translator v1 es un modelo de traduccion automatica Telugu-Ingles desarrollado por InferEdge AI (cuenta de HuggingFace ravivarmapatturi). Se trata de un modelo de investigacion entrenado desde pesos aleatorios, sin partir de un modelo preentrenado, durante 30.000 pasos en una unica sesion de Kaggle. Su proposito es servir como banco de pruebas de traduccion neuronal de muy bajo coste para despliegue en dispositivo (on-device), empaquetado como ONNX INT8 de apenas 33,3 MB.
+InferEdge tiny translator v1 es un modelo de traduccion automatica Telugu-Ingles desarrollado por InferEdge AI (cuenta de Hugging Face ravivarmapatturi). Se trata de un modelo de investigacion entrenado desde pesos aleatorios, sin partir de un modelo preentrenado, durante 30.000 pasos en una unica sesion de Kaggle. Su proposito es servir como banco de pruebas de traduccion neuronal de muy bajo coste para despliegue en dispositivo (on-device), empaquetado como ONNX INT8 de apenas 33,3 MB.
 
 El modelo resuelve el problema de la traduccion Telugu-Ingles en entornos con recursos computacionales minimos, a costa de una calidad muy limitada. El propio autor advierte que, aunque mejora sustancialmente respecto a su version v0, sigue muy por detras de los modelos grandes en texto general y conversacional, y que no esta listo para uso real. Se distribuye con licencia Apache 2.0 y pesos en formato ONNX y PyTorch.
 
@@ -91,5 +91,5 @@ El autor indica explicitamente que el modelo esta "muy por detras de los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-te-en-v1
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-te-en-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ravivarmapatturi/inferedge-en-te-bitext-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlashVAD es un modelo de detección de actividad de voz (voice activity detection, VAD) desarrollado por areegtarek252, disponible en el repositorio de HuggingFace con el identificador `areegtarek252/flashvad`. El modelo está diseñado para identificar segmentos de voz en señales de audio, una tarea fundamental en sistemas de telefonía, comunicaciones WebRTC y aplicaciones de streaming. Su principal valor es permitir el procesamiento en tiempo real de audio, facilitando la transcripción automática, el control de silencio y la segmentación de audio en entornos interactivos.
+FlashVAD es un modelo de detección de actividad de voz (voice activity detection, VAD) desarrollado por areegtarek252, disponible en el repositorio de Hugging Face con el identificador `areegtarek252/flashvad`. El modelo está diseñado para identificar segmentos de voz en señales de audio, una tarea fundamental en sistemas de telefonía, comunicaciones WebRTC y aplicaciones de streaming. Su principal valor es permitir el procesamiento en tiempo real de audio, facilitando la transcripción automática, el control de silencio y la segmentación de audio en entornos interactivos.
 
 Según los metadatos del repositorio, FlashVAD está implementado en formato ONNX y utiliza PyTorch como librería subyacente. Los tags asociados indican soporte para streaming, telefonía y WebRTC, así como un conjunto de idiomas que incluye árabe, inglés y varios idiomas de la India (gujarati, hindi, kannada, punjabi, tamil, telugu y urdu). No se proporciona información sobre la arquitectura interna, el número de parámetros ni la longitud de contexto, por lo que estos datos no están disponibles en la ficha actual.
 
@@ -63,10 +63,10 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Riesgo de alucinación: al ser un modelo de clasificación binaria (voz/silencio), el concepto de alucinación no es directamente aplicable, pero sí existe riesgo de falsos positivos o falsos negativos en condiciones de ruido o acentos no vistos durante el entrenamiento.
 - Limitaciones de contexto o idioma: el soporte de idiomas se basa en los tags del repositorio, pero no se ha verificado el rendimiento real en cada uno de ellos. El modelo podría no generalizar bien a idiomas fuera del conjunto indicado.
 - Restricciones de licencia: el campo oficial de licencia aparece como no disponible; el tag del repositorio indica CC-BY-4.0, lo que permitiría uso comercial con atribución, pero esta información no está confirmada en la página del modelo.
-- Caveat para producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad. No hay documentación técnica, ejemplos de uso ni resultados de evaluación, por lo que se recomienda realizar pruebas exhaustivas antes de su integración en sistemas críticos.
+- Caveat para producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad. No hay documentación técnica, ejemplos de uso ni resultados de evaluación, por lo que se recomienda realizar pruebas exhaustivas antes de su integración en sistemas críticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/areegtarek252/flashvad
-- Perfil de HuggingFace del autor: https://huggingface.co/areegtarek252
+- Hugging Face: https://huggingface.co/areegtarek252/flashvad
+- Perfil de Hugging Face del autor: https://huggingface.co/areegtarek252
 - GitHub del autor: https://github.com/areegtarek252

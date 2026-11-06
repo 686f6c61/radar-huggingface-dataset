@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `shadmanwasif/idk` en HuggingFace no contiene información técnica publicada. A fecha de consulta, el modelo presenta cero descargas, un único like y ninguna metadata relevante: no se especifica pipeline, licencia, idiomas ni arquitectura. El autor, `shadmanwasif`, etiqueta el repositorio con `region:us`, pero no se ha subido ningún peso, configuración o documentación asociada.
+El repositorio `shadmanwasif/idk` en Hugging Face no contiene información técnica publicada. A fecha de consulta, el modelo presenta cero descargas, un único like y ninguna metadata relevante: no se especifica pipeline, licencia, idiomas ni arquitectura. El autor, `shadmanwasif`, etiqueta el repositorio con `region:us`, pero no se ha subido ningún peso, configuración o documentación asociada.
 
 Dado que no existe ningún artefacto descargable ni ficha técnica, no es posible determinar qué tipo de modelo es, su tamaño, su propósito o sus capacidades. Se trata probablemente de un repositorio vacío, un placeholder o un experimento sin publicar. Cualquier uso en producción o evaluación es inviable en el estado actual.
 
@@ -53,7 +53,7 @@ No disponible. Al no conocer la arquitectura, el tamaño ni el dominio del model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/shadmanwasif/idk
-- Perfil del autor en HuggingFace: https://huggingface.co/shadmanwasif (no verificado)
+- Repositorio de Hugging Face: https://huggingface.co/shadmanwasif/idk
+- Perfil del autor en Hugging Face: https://huggingface.co/shadmanwasif (no verificado)
 
 No se han encontrado papers, blogs, demos ni otros recursos asociados a este identificador.

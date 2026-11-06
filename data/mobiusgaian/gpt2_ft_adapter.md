@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobiusGaian/gpt2_FT_adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario MobiusGaian, diseñado para ajustar el modelo base GPT-2 de OpenAI (openai-community/gpt2) mediante la librería PEFT. Se trata de un checkpoint de fine-tuning que no incluye los pesos completos del modelo, sino únicamente los parámetros del adaptador, lo que permite una integración ligera y eficiente sobre el transformer original.
+MobiusGaian/gpt2_FT_adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario MobiusGaian, diseñado para ajustar el modelo base GPT-2 de OpenAI (openai-community/gpt2) mediante la librería PEFT. Se trata de un checkpoint de fine-tuning que no incluye los pesos completos del modelo, sino únicamente los parámetros del adaptador, lo que permite una integración ligera y eficiente sobre el transformer original.
 
 El modelo se presenta como una solución para quienes necesitan especializar GPT-2 en tareas concretas de generación de texto sin reentrenar la arquitectura completa. Su relevancia radica en la metodología LoRA, que reduce drásticamente el número de parámetros entrenables y los requisitos de memoria, facilitando el fine-tuning en hardware modesto. Sin embargo, la model card está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, ni métricas de evaluación, por lo que su utilidad práctica queda limitada a la experimentación con el adaptador tal cual se distribuye.
 
@@ -36,7 +36,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 ## Casos de uso
 
-- Experimentacion con LoRA: el adaptador sirve como ejemplo de como distribuir un checkpoint PEFT en HuggingFace, util para desarrolladores que quieran aprender a publicar sus propios adaptadores.
+- Experimentacion con LoRA: el adaptador sirve como ejemplo de como distribuir un checkpoint PEFT en Hugging Face, util para desarrolladores que quieran aprender a publicar sus propios adaptadores.
 - Fine-tuning sobre GPT-2: si se conoce el dataset original (no documentado), podria replicarse o extenderse el ajuste para tareas de generacion de texto en ingles.
 - Prototipado rapido: al ser un adaptador pequeno, puede cargarse en entornos con poca memoria para probar la integracion de LoRA con GPT-2.
 - Investigacion en eficiencia: permite estudiar el impacto de LoRA en la calidad de generacion comparado con el fine-tuning completo, aunque sin datos de evaluacion no se puede cuantificar.
@@ -77,7 +77,7 @@ No se dispone de comparativas con otros adaptadores LoRA de GPT-2 porque no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MobiusGaian/gpt2_FT_adapter
+- Modelo en Hugging Face: https://huggingface.co/MobiusGaian/gpt2_FT_adapter
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Paper de GPT-2 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio del autor (gpt_FT_model): https://huggingface.co/MobiusGaian/gpt_FT_model

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny american es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en acento estadounidense, entrenado sobre un dataset denominado american_english. Con 37,7 millones de parametros, hereda la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI, disenada originalmente para transcripcion multilingue y traduccion de voz.
+Whisper tiny american es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en acento estadounidense, entrenado sobre un dataset denominado american_english. Con 37,7 millones de parametros, hereda la arquitectura encoder-decoder transformer propia de la familia Whisper de OpenAI, disenada originalmente para transcripcion multilingue y traduccion de voz.
 
 El modelo resuelve la tarea de transcripcion de audio a texto en ingles, con un enfasis declarado en el acento americano. Su principal interes practico radica en que parte de la variante tiny de Whisper, lo que lo hace extremadamente ligero (repo de 0,3 GB) y apto para despliegues con recursos muy limitados, como dispositivos de borde o prototipado rapido. El ajuste fino busca mejorar la precision sobre el dominio especifico del acento americano frente al modelo base generico.
 
-La relevancia de esta ficha es acotada: se trata de un modelo experimental con cero descargas y cero likes en el momento de su publicacion, generado automaticamente desde el Trainer de HuggingFace, con documentacion minima ("More information needed" en varias secciones de la model card) y un unico resultado de benchmark no verificado (WER de 9,12 sobre el split de test del dataset american_english). Debe evaluarse como un artefacto de investigacion mas que como un modelo listo para produccion.
+La relevancia de esta ficha es acotada: se trata de un modelo experimental con cero descargas y cero likes en el momento de su publicacion, generado automaticamente desde el Trainer de Hugging Face, con documentacion minima ("More information needed" en varias secciones de la model card) y un unico resultado de benchmark no verificado (WER de 9,12 sobre el split de test del dataset american_english). Debe evaluarse como un artefacto de investigacion mas que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada: se trata de un modelo experimental con c
 
 El modelo emplea la arquitectura Whisper en su variante tiny: un transformer encoder-decoder con mecanismo de atencion estandar, preprocesamiento de audio mediante espectrogramas Mel y decodificacion autoregresiva de tokens de texto. El modelo base openai/whisper-tiny fue entrenado originalmente por OpenAI sobre cientos de miles de horas de audio con supervision debil; este ajuste fino parte de esos pesos y los adapta al dominio del acento americano.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset american_english, con los siguientes hiperparametros declarados: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. La model card reporta dos puntos de control: en el paso 1000 (epoca 0,95) se obtuvo una perdida de validacion de 0,2031 y un WER de 10,8774; en el paso 2000 (epoca 1,89) la perdida bajo a 0,1866 y el WER a 9,1191. No se documentan tecnicas adicionales como RLHF, DPO o decodificacion especulativa. El entorno de entrenamiento fue Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset american_english, con los siguientes hiperparametros declarados: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. La model card reporta dos puntos de control: en el paso 1000 (epoca 0,95) se obtuvo una perdida de validacion de 0,2031 y un WER de 10,8774; en el paso 2000 (epoca 1,89) la perdida bajo a 0,1866 y el WER a 9,1191. No se documentan tecnicas adicionales como RLHF, DPO o decodificacion especulativa. El entorno de entrenamiento fue Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto / audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggnico/whisper-tiny_to_american_accent | 37,7 M | ventana de 30 s (Whisper) | 9,12 (american_english, no verificado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| huggnico/whisper-tiny_to_american_accent | 37,7 M | ventana de 30 s (Whisper) | 9,12 (american_english, no verificado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M aprox. | ventana de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper por ser el mismo linaje arquitectonico. No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
 
@@ -98,7 +98,7 @@ La comparativa se limita a la familia Whisper por ser el mismo linaje arquitecto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggnico/whisper-tiny_to_american_accent
+- Modelo en Hugging Face: https://huggingface.co/huggnico/whisper-tiny_to_american_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de referencia de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

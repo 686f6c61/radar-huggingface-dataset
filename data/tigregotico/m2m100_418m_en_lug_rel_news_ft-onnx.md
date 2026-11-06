@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `m2m100_418M_en_lug_rel_news_ft-onnx` es una exportación a formato ONNX del modelo `masakhane/m2m100_418M_en_lug_rel_news_ft`, un ajuste fino de `facebook/m2m100_418M` especializado en traducción automática de inglés (en) a luganda (lg). Lo publica el usuario TigreGotico en HuggingFace y su único aporte técnico es la conversión de los pesos originales a ONNX (fp32 e int8 dinámico), sin reentrenamiento ni modificación de los pesos. El modelo original fue desarrollado por Masakhane dentro del proyecto MAFAND-MT (Adelani et al., NAACL 2022), orientado a lenguas africanas de bajos recursos.
+El modelo `m2m100_418M_en_lug_rel_news_ft-onnx` es una exportación a formato ONNX del modelo `masakhane/m2m100_418M_en_lug_rel_news_ft`, un ajuste fino de `facebook/m2m100_418M` especializado en traducción automática de inglés (en) a luganda (lg). Lo publica el usuario TigreGotico en Hugging Face y su único aporte técnico es la conversión de los pesos originales a ONNX (fp32 e int8 dinámico), sin reentrenamiento ni modificación de los pesos. El modelo original fue desarrollado por Masakhane dentro del proyecto MAFAND-MT (Adelani et al., NAACL 2022), orientado a lenguas africanas de bajos recursos.
 
 La relevancia de esta ficha es doble. Por un lado, cubre un par de idiomas (inglés-luganda) con escasa representación en herramientas de traducción comerciales, y lo hace con una licencia permisiva (AFL-3.0) que permite uso comercial. Por otro, la exportación ONNX facilita el despliegue en entornos sin PyTorch, con un binario int8 de 3,0 GB frente a los 4,6 GB en fp32, a costa de una pérdida de paridad medible (50-60 % de coincidencia exacta frente al original).
 
@@ -94,7 +94,7 @@ Frente al modelo original de Masakhane, esta exportación no mejora la calidad: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/m2m100_418M_en_lug_rel_news_ft-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/m2m100_418M_en_lug_rel_news_ft-onnx
 - Modelo base original: https://huggingface.co/masakhane/m2m100_418M_en_lug_rel_news_ft
 - Modelo M2M100 de Facebook: https://huggingface.co/facebook/m2m100_418M
 - Proyecto MAFAND-MT (código): https://github.com/masakhane-io/lafand-mt

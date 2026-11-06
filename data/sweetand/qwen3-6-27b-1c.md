@@ -87,7 +87,7 @@ No se han encontrado otros modelos open source especializados en 1C:Enterprise/B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sweetand/qwen3.6-27b-1C
+- Modelo en Hugging Face: https://huggingface.co/sweetand/qwen3.6-27b-1C
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Blog oficial de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Guía completa de Qwen 3.6-27B (aimadetools): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

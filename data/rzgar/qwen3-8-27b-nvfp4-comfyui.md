@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rzgar/Qwen3.8-27B-NVFP4-ComfyUI)
+- [Modelo en Hugging Face](https://huggingface.co/rzgar/Qwen3.8-27B-NVFP4-ComfyUI)
 - [Checkpoint base de unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Nodo personalizado ComfyUI-Qwen3.8-Text (zip)](https://huggingface.co/rzgar/Qwen3.8-27B-NVFP4-ComfyUI/resolve/main/ComfyUI-Qwen3.8-Text/ComfyUI-Qwen3.8-Text.zip)

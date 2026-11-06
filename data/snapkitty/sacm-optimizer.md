@@ -4,7 +4,7 @@
 
 El repositorio `Snapkitty/sacm-optimizer` no es un modelo de inteligencia artificial en el sentido convencional (no contiene pesos, arquitectura neuronal ni pipeline de inferencia). Se trata de un sistema de software escrito en TypeScript que implementa un protocolo de consenso distribuido denominado "WORM-Causal Consensus Mesh", desarrollado por SnapKitty Collective como parte del "Project S" (Fork 2 de 3). El sistema pretende resolver el problema de coordinación entre múltiples agentes sin necesidad de un coordinador central ni rondas de votación, utilizando la propia cadena de registro (ledger) como mecanismo de orden causal.
 
-La relevancia actual del proyecto es limitada: no tiene descargas ni likes en HuggingFace, y su fecha de creación (2026-09-03) es posterior a la fecha actual, lo que sugiere que podría tratarse de un proyecto especulativo o de carácter experimental. La model card describe una arquitectura con cinco agentes validadores (ORACLE, SENTINEL, CIPHER, AXIOM, MNEMEX) que escriben votos en una cadena WORM (Write Once Read Many) y alcanzan consenso cuando se supera un quórum del 60%. No se proporcionan datos sobre parámetros, contexto, idiomas ni capacidades de generación de texto.
+La relevancia actual del proyecto es limitada: no tiene descargas ni likes en Hugging Face, y su fecha de creación (2026-09-03) es posterior a la fecha actual, lo que sugiere que podría tratarse de un proyecto especulativo o de carácter experimental. La model card describe una arquitectura con cinco agentes validadores (ORACLE, SENTINEL, CIPHER, AXIOM, MNEMEX) que escriben votos en una cadena WORM (Write Once Read Many) y alcanzan consenso cuando se supera un quórum del 60%. No se proporcionan datos sobre parámetros, contexto, idiomas ni capacidades de generación de texto.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia actual del proyecto es limitada: no tiene descargas ni likes en Hu
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | no disponible (no aplica) |
-| Licencia | BSD 2-Clause (segun model card; campo de HuggingFace indica "no disponible") |
+| Licencia | BSD 2-Clause (segun model card; campo de Hugging Face indica "no disponible") |
 | Formato de pesos | no disponible (no aplica; el repositorio contiene codigo TypeScript) |
 
 ## Arquitectura y entrenamiento
@@ -63,12 +63,12 @@ No disponible. Este repositorio no es un modelo de IA comparable con LLMs u otro
 - Fechas futuras: la fecha de creacion (2026-09-03) y los eventos descritos (2026-05-20) son posteriores a la fecha actual, lo que sugiere que el proyecto podria ser ficticio, especulativo o parte de un experimento narrativo.
 - Dependencia de infraestructura externa: la API requiere autenticacion mediante `next-auth.session-token` y un `sacmId` obtenido del paso de Bridge, lo que limita su uso independiente.
 - Licencia ambigua: aunque la model card indica BSD 2-Clause, el texto de copyright menciona "All Rights Reserved" y atribuye la autoría a Ahmad Ali Parr y Jessica Lee Westerhoff, ademas de indicar que fue escrito por Claude Sonnet 4.6. Esta contradiccion puede generar problemas legales para uso comercial.
-- Sin soporte de la comunidad: cero descargas y cero likes en HuggingFace indican que no hay adopcion ni validacion externa.
+- Sin soporte de la comunidad: cero descargas y cero likes en Hugging Face indican que no hay adopcion ni validacion externa.
 - Riesgo de alucinacion: no aplica (no es un modelo generativo), pero la documentacion contiene afirmaciones extraordinarias (consenso espontaneo, "Quantum Effect") sin evidencia verificable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sacm-optimizer
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sacm-optimizer
 - Repositorio GitHub (implementacion completa): https://github.com/SNAPKITTYWEST/DEVFLOW-FINANCE
 - Fork 1 (Bridge): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/sacm-bridge
 - Fork 3 (Sovereign): https://github.com/SNAPKITTY-COLLECTIVE-LIMITED-FLP/sacm-sovereign

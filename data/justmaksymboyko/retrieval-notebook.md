@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justmaksymboyko/retrieval-notebook
+- Hugging Face: https://huggingface.co/justmaksymboyko/retrieval-notebook
 - Perfil del autor: https://huggingface.co/justmaksymboyko/models
 - Repositorio relacionado con evaluación de RAG: https://github.com/Just-SM/Evaluation-and-Enhancement-of-RAG-in-Agentic-AI

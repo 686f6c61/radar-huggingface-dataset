@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luke3000/raglm-qwen35-4b-cluster5` es un ajuste fino (finetune) publicado en HuggingFace por el usuario luke3000 sobre el modelo base `Qwen/Qwen3.5-4B`. Se distribuye bajo licencia Apache 2.0, esta etiquetado como modelo de generacion de texto para la libreria `transformers` y fue entrenado con las herramientas Unsloth y TRL, segun indica la propia model card. El nombre del repositorio sugiere un ajuste orientado a recuperacion aumentada (RAG) y a un experimento agrupado como "cluster5", pero la model card no documenta el objetivo, el dataset ni la metodologia del entrenamiento.
+`luke3000/raglm-qwen35-4b-cluster5` es un ajuste fino (finetune) publicado en Hugging Face por el usuario luke3000 sobre el modelo base `Qwen/Qwen3.5-4B`. Se distribuye bajo licencia Apache 2.0, esta etiquetado como modelo de generacion de texto para la libreria `transformers` y fue entrenado con las herramientas Unsloth y TRL, segun indica la propia model card. El nombre del repositorio sugiere un ajuste orientado a recuperacion aumentada (RAG) y a un experimento agrupado como "cluster5", pero la model card no documenta el objetivo, el dataset ni la metodologia del entrenamiento.
 
 El modelo base pertenece a la familia Qwen3.5, con un tamano nominal de 4.000 millones de parametros. Todas las caracteristicas tecnicas relevantes (longitud de contexto, arquitectura exacta, tokenizador, composicion del corpus de entrenamiento) dependen de ese modelo base y no se detallan en la informacion disponible. El unico idioma declarado es el ingles.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el rep
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card solo indica que se trata de un finetune de `Qwen/Qwen3.5-4B` y que fue entrenado con Unsloth, una libreria de afinamiento eficiente que habitualmente aplica LoRA o QLoRA con kernels optimizados. El tag `trl` apunta al uso de la libreria TRL de HuggingFace, lo que sugiere un entrenamiento supervisado (SFT) o un ajuste por preferencias (DPO/PPO), pero no se especifica cual de estos metodos se empleo.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card solo indica que se trata de un finetune de `Qwen/Qwen3.5-4B` y que fue entrenado con Unsloth, una libreria de afinamiento eficiente que habitualmente aplica LoRA o QLoRA con kernels optimizados. El tag `trl` apunta al uso de la libreria TRL de Hugging Face, lo que sugiere un entrenamiento supervisado (SFT) o un ajuste por preferencias (DPO/PPO), pero no se especifica cual de estos metodos se empleo.
 
 Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, el regimen de precision ni los hiperparametros. El tamano del repositorio (0,1 GB) sugiere que este no contiene los pesos completos del modelo de 4.000 millones de parametros, sino unicamente los tensores del adaptador o una parte del checkpoint; en tal caso, el uso del modelo requiere descargar por separado el modelo base. Esta conclusion es una inferencia a partir del tamano del repositorio y no una afirmacion de la model card.
 
@@ -101,7 +101,7 @@ La diferencia fundamental no es de tamano sino de trazabilidad: las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster5
+- Modelo en Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
 - TRL (libreria citada en los tags): https://github.com/huggingface/trl

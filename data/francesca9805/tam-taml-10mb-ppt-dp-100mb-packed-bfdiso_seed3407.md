@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre `goldfish-models/tam_taml_10mb`, un modelo de lenguaje de pequeno tamano orientado a lengua tamil dentro de la familia Goldfish de modelos para lenguas con pocos recursos. Lo publica el usuario de HuggingFace `francesca9805`, vinculado a la Universidad de Groningen segun el enlace de Weights & Biases incluido en la model card, y se ha entrenado con la libreria TRL 0.23.0 sobre la base de Transformers 4.56.2 y PyTorch 2.5.1.
+El modelo `francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre `goldfish-models/tam_taml_10mb`, un modelo de lenguaje de pequeno tamano orientado a lengua tamil dentro de la familia Goldfish de modelos para lenguas con pocos recursos. Lo publica el usuario de Hugging Face `francesca9805`, vinculado a la Universidad de Groningen segun el enlace de Weights & Biases incluido en la model card, y se ha entrenado con la libreria TRL 0.23.0 sobre la base de Transformers 4.56.2 y PyTorch 2.5.1.
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), un orden de magnitud muy por debajo de los modelos generativos habituales. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato `safetensors`. Se trata de un experimento academico de ajuste reproducible: el sufijo `seed3407` del nombre apunta a una semilla concreta de entrenamiento, y el prefijo `100mb-packed` sugiere un corpus empaquetado de unos 100 MB, aunque la model card no confirma ninguno de los dos extremos.
 
@@ -31,7 +31,7 @@ La informacion disponible no detalla el volumen de tokens, la composicion del da
 
 - Generacion de texto autorregresiva en el dominio cubierto por el modelo base. La model card incluye un ejemplo de `pipeline("text-generation")` con formato de conversacion por roles.
 - Ajuste por instrucciones (SFT) sobre la base preentrenada, segun las etiquetas `sft` y `trl` del repositorio.
-- Compatibilidad declarada con Text Generation Inference y con endpoints de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con Text Generation Inference y con endpoints de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - Carga directa con `transformers` y ejecucion en CUDA o CPU mediante `pipeline`.
 - No hay evidencia de soporte de tool calling ni function calling.
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso.
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` | 39.087.104 | no disponible | Ajuste SFT sobre GPT-2 para tamil | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `goldfish-models/tam_taml_10mb` (modelo base) | no disponible | no disponible | Modelo base preentrenado, familia Goldfish | no disponible | HuggingFace |
+| `francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` | 39.087.104 | no disponible | Ajuste SFT sobre GPT-2 para tamil | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `goldfish-models/tam_taml_10mb` (modelo base) | no disponible | no disponible | Modelo base preentrenado, familia Goldfish | no disponible | Hugging Face |
 | GPT-2 small (referencia de la arquitectura) | 124.000.000 (aproximado) | 1.024 tokens | Transformer decoder-only | MIT modificada | Ampliamente disponible |
 
 La comparacion cuantitativa de rendimiento no es posible con la informacion proporcionada: no hay benchmarks publicados para este ajuste ni datos de evaluacion del modelo base en la informacion disponible.
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no es posible con la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/d30lneib

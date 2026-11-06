@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/xluffyDmonkey/mistral-chatdoctor-qlora](https://huggingface.co/xluffyDmonkey/mistral-chatdoctor-qlora)
+- Modelo en Hugging Face: [https://huggingface.co/xluffyDmonkey/mistral-chatdoctor-qlora](https://huggingface.co/xluffyDmonkey/mistral-chatdoctor-qlora)
 - Repositorio del proyecto ChatDoctor (original): [https://github.com/Kent0n-Li/ChatDoctor](https://github.com/Kent0n-Li/ChatDoctor)
 - Repositorio de fine-tuning con QLoRA y Mistral-7B: [https://github.com/ashesh-12/medical-llm-finetuning-qlora-mistral7b](https://github.com/ashesh-12/medical-llm-finetuning-qlora-mistral7b)
 - Modelo similar (kavya-17b/medical-chatdoctor-mistral7b): [https://huggingface.co/kavya-17b/medical-chatdoctor-mistral7b](https://huggingface.co/kavya-17b/medical-chatdoctor-mistral7b)

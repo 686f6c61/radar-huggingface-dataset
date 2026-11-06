@@ -43,7 +43,7 @@ El modelo se basa en una regresión elástica net, una técnica de regresión li
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo fue descrito en el artículo original de Thompson et al. (2018), pero no se proporcionan métricas de rendimiento (como error absoluto medio o correlación) en la model card de HuggingFace. Se recomienda consultar la publicación citada para obtener datos de validación.
+No se han publicado resultados de benchmarks en la información disponible. El modelo fue descrito en el artículo original de Thompson et al. (2018), pero no se proporcionan métricas de rendimiento (como error absoluto medio o correlación) en la model card de Hugging Face. Se recomienda consultar la publicación citada para obtener datos de validación.
 
 ## Requisitos de hardware
 
@@ -68,6 +68,6 @@ No se dispone de información detallada sobre otros relojes epigenéticos de rat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pyaging/thompson
+- Repositorio en Hugging Face: https://huggingface.co/pyaging/thompson
 - Documentación de pyaging: https://pyaging.readthedocs.io
 - Artículo original: Thompson, M. J., Chwiałkowska, K., Rubbi, L. et al. A multi-tissue full lifespan epigenetic clock for mice. Aging (Albany NY) 10, 2832–2854 (2018). https://doi.org/10.18632/aging.101590

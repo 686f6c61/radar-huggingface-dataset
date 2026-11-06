@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nutrina AI es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `google/gemma-7b-it`, desarrollado por el usuario de HuggingFace r1dvanteke. Su propósito es especializar un modelo de lenguaje generalista de 7.000 millones de parámetros en el análisis nutricional: interpretar descripciones de alimentos, predecir macronutrientes, estimar valores calóricos y generar perfiles dietéticos estructurados. El adaptador se publica como pesos PEFT independientes (0,1 GB) que deben cargarse dinámicamente sobre el modelo base.
+Nutrina AI es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `google/gemma-7b-it`, desarrollado por el usuario de Hugging Face r1dvanteke. Su propósito es especializar un modelo de lenguaje generalista de 7.000 millones de parámetros en el análisis nutricional: interpretar descripciones de alimentos, predecir macronutrientes, estimar valores calóricos y generar perfiles dietéticos estructurados. El adaptador se publica como pesos PEFT independientes (0,1 GB) que deben cargarse dinámicamente sobre el modelo base.
 
 El modelo se entrena sobre el dataset `r1dvanteke/usda-fdc-calories-updated`, derivado de la base de datos USDA FoodData Central, lo que le da una base factual estructurada para tareas de nutrición. La relevancia práctica del proyecto reside en su enfoque híbrido: el LLM se encarga de la comprensión semántica, clasificación y formateo de la salida, mientras que una capa de expresiones regulares y fórmulas matemáticas externas (implementadas en la CLI que acompaña al modelo) realiza los cálculos deterministas, evitando la conocida debilidad de los LLM en aritmética precisa.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nutrina AI (este adaptador) | 7.000 M (base) + LoRA | No disponible (base: 8.192) | Nutricion (USDA) | Apache 2.0 | HuggingFace, 0 descargas |
-| google/gemma-7b-it | 7.000 M | 8.192 | Generalista | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| Meta Llama 3.1 8B Instruct | 8.000 M | 128.000 | Generalista | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Mistral 7B Instruct | 7.000 M | 32.000 | Generalista | Apache 2.0 | HuggingFace, ampliamente usado |
+| Nutrina AI (este adaptador) | 7.000 M (base) + LoRA | No disponible (base: 8.192) | Nutricion (USDA) | Apache 2.0 | Hugging Face, 0 descargas |
+| google/gemma-7b-it | 7.000 M | 8.192 | Generalista | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| Meta Llama 3.1 8B Instruct | 8.000 M | 128.000 | Generalista | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Mistral 7B Instruct | 7.000 M | 32.000 | Generalista | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación directa con modelos generalistas no es del todo justa: Nutrina AI es un adaptador de dominio específico y no compite en benchmarks generales. Frente a los generalistas, su ventaja es la especialización en nutrición y el formato de salida estructurado; su desventaja es la ausencia de evaluación pública, la dependencia de una capa externa para los cálculos y un ecosistema de uso prácticamente nulo. No se dispone de comparativas con otros adaptadores nutricionales publicados.
 
@@ -89,7 +89,7 @@ La comparación directa con modelos generalistas no es del todo justa: Nutrina A
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/r1dvanteke/nutrina-ai-qlora-adapter
+- Adaptador en Hugging Face: https://huggingface.co/r1dvanteke/nutrina-ai-qlora-adapter
 - Modelo fusionado: https://huggingface.co/r1dvanteke/nutrina-ai-nutrition-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/r1dvanteke/usda-fdc-calories-updated
 - Modelo base: https://huggingface.co/google/gemma-7b-it

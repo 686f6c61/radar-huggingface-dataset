@@ -18,7 +18,7 @@ Su relevancia radica en que no es un generador de texto, sino una herramienta de
 | Longitud de contexto | 8192 tokens de entrada (input_ids int64, BOS primero, sin padding); ventana de hasta 240 lineas de codigo |
 | Tipos de cuantizacion | fp32 (ONNX), int8 en bloques de 32 con matematicas fp32 (q8), bf16 (entrenamiento y pesos PyTorch) |
 | Idiomas soportados | 28 lenguajes de programacion; idiomas naturales no disponibles (los 25 enunciados estan en ingles) |
-| Licencia | lfm1.0 (LFM Open License v1.0, etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (LFM Open License v1.0, etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (PyTorch), ONNX (fp32 e int8) |
 | Tamano del repositorio | 3,4 GB |
 | Pipeline | text-classification |
@@ -82,8 +82,8 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 | Modelo | Parametros | Contexto | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| secjev-encoder | ~350 M (cifra exacta no disponible) | 8192 tokens de entrada / 240 lineas | Clasificacion de 25 preguntas CWE Top 25 | AUROC 0.937 before-fix vs ordinary; 0.583 before vs after fix | lfm1.0 | HuggingFace, safetensors y ONNX (fp32 e int8), WebGPU/WASM |
-| LiquidAI/LFM2.5-Encoder-350M (modelo base) | 350 M | no disponible | Encoder bidireccional generico | no disponible | no disponible | HuggingFace |
+| secjev-encoder | ~350 M (cifra exacta no disponible) | 8192 tokens de entrada / 240 lineas | Clasificacion de 25 preguntas CWE Top 25 | AUROC 0.937 before-fix vs ordinary; 0.583 before vs after fix | lfm1.0 | Hugging Face, safetensors y ONNX (fp32 e int8), WebGPU/WASM |
+| LiquidAI/LFM2.5-Encoder-350M (modelo base) | 350 M | no disponible | Encoder bidireccional generico | no disponible | no disponible | Hugging Face |
 | Alternativas de deteccion de vulnerabilidades basadas en LLM | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se han proporcionado datos de benchmarks ni especificaciones de modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/billytesterman/secjev-encoder
+- Modelo en Hugging Face: https://huggingface.co/billytesterman/secjev-encoder
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M
 - Licencia del modelo (fichero LICENSE del repositorio): https://huggingface.co/billytesterman/secjev-encoder/blob/main/LICENSE
 - Listado CWE Top 25 (referencia de las 25 preguntas): https://cwe.mitre.org/top25/

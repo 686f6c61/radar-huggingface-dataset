@@ -72,4 +72,4 @@ No disponible. En la información proporcionada no se identifican modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kennyinou/nlp-matching42
+- Hugging Face: https://huggingface.co/kennyinou/nlp-matching42

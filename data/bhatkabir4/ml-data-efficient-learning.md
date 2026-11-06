@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhatkabir4/ml-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/bhatkabir4/ml-data-efficient-learning
 - Artículo relacionado sobre IA eficiente en datos para entornos de bajos recursos: https://www.sciencedirect.com/science/article/pii/S2666827025001793
 - Artículo de arXiv sobre métodos de aprendizaje activo para utilización eficiente de datos: https://arxiv.org/pdf/2504.16136
 - Artículo de arXiv sobre cómo entrenar LLMs eficientes en datos: https://arxiv.org/abs/2402.09668

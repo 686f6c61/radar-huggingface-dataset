@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| prose-rewriter-1.7b-v2 (i1-GGUF) | 2.031.739.904 | No disponible | en | AGPL-3.0 | GGUF (24 variantes) | HuggingFace, 0 descargas |
-| prose-rewriter-1.7b-v2 (cuantizaciones estaticas) | No disponible | No disponible | en | AGPL-3.0 | GGUF | HuggingFace (mradermacher/prose-rewriter-1.7b-v2-GGUF) |
-| Modelo base chartreuse-verte/prose-rewriter-1.7b-v2 | No disponible | No disponible | en | AGPL-3.0 | safetensors | HuggingFace |
+| prose-rewriter-1.7b-v2 (i1-GGUF) | 2.031.739.904 | No disponible | en | AGPL-3.0 | GGUF (24 variantes) | Hugging Face, 0 descargas |
+| prose-rewriter-1.7b-v2 (cuantizaciones estaticas) | No disponible | No disponible | en | AGPL-3.0 | GGUF | Hugging Face (mradermacher/prose-rewriter-1.7b-v2-GGUF) |
+| Modelo base chartreuse-verte/prose-rewriter-1.7b-v2 | No disponible | No disponible | en | AGPL-3.0 | safetensors | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada, ni de datos de rendimiento que permitan establecer una comparacion cuantitativa con otras alternativas de reescritura de prosa o de transferencia de estilo. Cualquier comparacion con modelos de la familia Qwen3 u otros modelos de ~2B parametros requeriria datos que no forman parte de esta ficha.
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-i1-GGUF
 - Modelo base: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#prose-rewriter-1.7b-v2-i1-GGUF

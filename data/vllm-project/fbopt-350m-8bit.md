@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/fbopt-350m-8bit | 331M | no disponible | 8 bits (bitsandbytes) | unknown | HuggingFace (copia CI) |
-| facebook/opt-350m | 331M | 2048 tokens | FP16/FP32 | OPT-175B License (no comercial) | HuggingFace |
-| yec019/fbopt-350m-8bit | 331M | no disponible | 8 bits (bitsandbytes) | unknown | HuggingFace (original) |
-| facebook/opt-125m | 125M | 2048 tokens | FP16/FP32 | OPT-175B License (no comercial) | HuggingFace |
+| vllm-project/fbopt-350m-8bit | 331M | no disponible | 8 bits (bitsandbytes) | unknown | Hugging Face (copia CI) |
+| facebook/opt-350m | 331M | 2048 tokens | FP16/FP32 | OPT-175B License (no comercial) | Hugging Face |
+| yec019/fbopt-350m-8bit | 331M | no disponible | 8 bits (bitsandbytes) | unknown | Hugging Face (original) |
+| facebook/opt-125m | 125M | 2048 tokens | FP16/FP32 | OPT-175B License (no comercial) | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base porque no se dispone de datos de rendimiento que permitan contrastarlo con alternativas de otros autores. La diferencia practica frente a `facebook/opt-350m` es el formato de pesos (8 bits frente a FP16/FP32) y el origen del repositorio (copia de CI frente al oficial de Meta).
 
@@ -85,7 +85,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vllm-project/fbopt-350m-8bit
+- Repositorio en Hugging Face: https://huggingface.co/vllm-project/fbopt-350m-8bit
 - Modelo original copiado: https://huggingface.co/yec019/fbopt-350m-8bit
 - Modelo base de Meta: https://huggingface.co/facebook/opt-350m
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

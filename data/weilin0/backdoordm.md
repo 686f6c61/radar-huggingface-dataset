@@ -90,6 +90,6 @@ No se dispone de una comparativa directa con otros benchmarks de backdoor en mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/Weilin0/BackdoorDM](https://huggingface.co/Weilin0/BackdoorDM)
+- Repositorio Hugging Face: [https://huggingface.co/Weilin0/BackdoorDM](https://huggingface.co/Weilin0/BackdoorDM)
 - Paper arXiv: [https://arxiv.org/abs/2502.11798](https://arxiv.org/abs/2502.11798)
 - Código fuente: [https://github.com/linweiii/BackdoorDM](https://github.com/linweiii/BackdoorDM)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EGX Qwen2.5-1.5B GRPO es un ajuste fino de Qwen2.5-1.5B desarrollado por el usuario karimmashaly y publicado en HuggingFace. No es un modelo de proposito general: esta especializado en clasificar la direccion esperada del precio de acciones de la Bolsa de Egipto (EGX). Dado un ticker, la fecha de analisis, un resumen de las 60 sesiones previas, noticias recientes y un horizonte temporal de 1, 3, 5 o 10 dias de negociacion, el modelo genera un bloque de razonamiento `<think>` y una etiqueta dentro de `<answer>`.
+EGX Qwen2.5-1.5B GRPO es un ajuste fino de Qwen2.5-1.5B desarrollado por el usuario karimmashaly y publicado en Hugging Face. No es un modelo de proposito general: esta especializado en clasificar la direccion esperada del precio de acciones de la Bolsa de Egipto (EGX). Dado un ticker, la fecha de analisis, un resumen de las 60 sesiones previas, noticias recientes y un horizonte temporal de 1, 3, 5 o 10 dias de negociacion, el modelo genera un bloque de razonamiento `<think>` y una etiqueta dentro de `<answer>`.
 
 Las etiquetas permitidas son cinco: Strong Bullish, Slight Bullish, Neutral, Slight Bearish y Strong Bearish. El modelo parte de los pesos de `Qwen/Qwen2.5-1.5B`, sobre los que se aplicaron tres etapas: preentrenamiento continuado, ajuste supervisado (SFT) y optimizacion con Dr. GRPO. Los pesos publicados corresponden al mejor checkpoint de validacion de la ultima epoca de GRPO (paso 28, `eval_reward` 1.018).
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| egx-qwen2.5-1.5b-grpo | 1,54 B | no disponible | 26,1% de etiqueta exacta en validacion propia | apache-2.0 | HuggingFace (transformers, safetensors) |
-| Qwen/Qwen2.5-1.5B | 1,54 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | HuggingFace |
+| egx-qwen2.5-1.5b-grpo | 1,54 B | no disponible | 26,1% de etiqueta exacta en validacion propia | apache-2.0 | Hugging Face (transformers, safetensors) |
+| Qwen/Qwen2.5-1.5B | 1,54 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | no disponible en la informacion proporcionada | no disponible | apache-2.0 | Hugging Face |
 | Modelos de sentimiento financiero comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas de la misma categoria no esta disponible: el autor no publica comparaciones frente a otros modelos financieros ni frente al modelo base, y los resultados de busqueda web no aportan informacion relevante sobre este modelo ni sobre alternativas.
@@ -99,7 +99,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karimmashaly/egx-qwen2.5-1.5b-grpo
+- Modelo en Hugging Face: https://huggingface.co/karimmashaly/egx-qwen2.5-1.5b-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 
 Nota: los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo ni sobre modelos financieros comparables; los enlaces devueltos corresponden a contenido de fitness sin relacion con la ficha, por lo que no se incluyen.

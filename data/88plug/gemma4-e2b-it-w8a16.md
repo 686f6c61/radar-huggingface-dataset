@@ -120,7 +120,7 @@ No se dispone de comparaciones con otros modelos multimodales pequeños (por eje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/88plug/Gemma4-E2B-it-W8A16
+- Modelo en Hugging Face: https://huggingface.co/88plug/Gemma4-E2B-it-W8A16
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Perfil del autor (88plug AI Lab): https://huggingface.co/88plug
 - Referencia del informe técnico citado (Gemma 4 Technical Report, Google DeepMind, 2025): https://huggingface.co/google/gemma-4-e2b-it

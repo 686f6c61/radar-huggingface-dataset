@@ -25,7 +25,7 @@ La relevancia de esta ficha es por tanto acotada y de caracter operativo: sirve 
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo base (transformer denso, MoE, SSM o hibrido), el numero de parametros, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Lo unico verificable desde los metadatos del repositorio es el proceso de conversion: `convert_type: hf` indica que los pesos de origen estaban en formato HuggingFace y se convirtieron a GGUF; `quantize_version: 2` y `output_tensor_quantised: 1` corresponden a la version del pipeline de cuantizacion de llama.cpp y a la cuantizacion del tensor de salida. La lista de cuantizaciones cubre desde 2 bits (Q2_K) hasta 16 bits (x-f16), lo que sugiere que el modelo base es lo bastante pequeno como para que el autor generase el juego completo de variantes, pero esto es una inferencia, no un dato confirmado.
+Lo unico verificable desde los metadatos del repositorio es el proceso de conversion: `convert_type: hf` indica que los pesos de origen estaban en formato Hugging Face y se convirtieron a GGUF; `quantize_version: 2` y `output_tensor_quantised: 1` corresponden a la version del pipeline de cuantizacion de llama.cpp y a la cuantizacion del tensor de salida. La lista de cuantizaciones cubre desde 2 bits (Q2_K) hasta 16 bits (x-f16), lo que sugiere que el modelo base es lo bastante pequeno como para que el autor generase el juego completo de variantes, pero esto es una inferencia, no un dato confirmado.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Los siguientes escenarios son aplicables a cualquier modelo distribuido en GGUF 
 - Evaluacion comparativa de cuantizaciones: al ofrecer once variantes del mismo modelo, el repositorio permite medir la perdida de calidad por nivel de cuantizacion sobre una tarea concreta antes de fijar una version para produccion.
 - Servicio de generacion de texto autoalojado: las variantes Q8_0 o x-f16 son las candidatas para entornos donde prima la fidelidad respecto al modelo original y no el ahorro de memoria.
 - Integracion en aplicaciones de escritorio que empaquetan un modelo local (asistentes offline, herramientas de edicion de texto, clientes de chat sin conexion) mediante llama.cpp embebido.
-- Fine-tuning o destilacion posterior: las variantes de mayor precision (x-f16, Q8_0) pueden servir como referencia de comportamiento para comparar contra versiones ajustadas, aunque para reentrenar conviene partir del modelo base en formato HuggingFace y no de GGUF.
+- Fine-tuning o destilacion posterior: las variantes de mayor precision (x-f16, Q8_0) pueden servir como referencia de comportamiento para comparar contra versiones ajustadas, aunque para reentrenar conviene partir del modelo base en formato Hugging Face y no de GGUF.
 - Puerta de enlace multi-modelo: usar el mismo backend compatible con GGUF (llama.cpp server, Ollama, LocalAI) para enrutar peticiones entre esta y otras variantes cuantizadas sin cambiar la infraestructura.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | GGUF en HuggingFace, 0 descargas, 0 likes | no aplica |
+| Disponibilidad | GGUF en Hugging Face, 0 descargas, 0 likes | no aplica |
 | Formatos ofrecidos | GGUF (11 variantes) | GGUF y safetensors habitualmente |
 
 ## Limitaciones y advertencias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Japanese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37,76 millones de parametros. El modelo ha sido entrenado sobre el dataset naharte/japanese_english, que segun la model card contiene audio en japones e ingles, aunque el campo de idiomas declarado en los metadatos solo incluye "en".
+Whisper tiny Japanese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura Whisper de OpenAI, en su variante mas pequena, con 37,76 millones de parametros. El modelo ha sido entrenado sobre el dataset naharte/japanese_english, que segun la model card contiene audio en japones e ingles, aunque el campo de idiomas declarado en los metadatos solo incluye "en".
 
 El modelo resuelve la tarea de transcripcion de audio a texto mediante la libreria transformers, y esta pensado como una prueba de concepto de ajuste fino sobre un modelo base muy ligero. Su relevancia es limitada: se trata de un experimento academico o personal con cero descargas y cero likes en el momento de la consulta, sin documentacion adicional sobre usos previstos, composicion del dataset ni limitaciones.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo con el Trainer de transformers (version 5.23.0.dev0)
 - Generacion de subtitulos automaticos en entornos controlados: util para videos cuyo dominio coincida con el dataset de entrenamiento, con revision humana obligatoria por el WER elevado.
 - Evaluacion de calidad de datasets ASR: el modelo puede usarse como sonda para medir la dificultad de un corpus japones-ingles concreto.
 - Base para destilacion o experimentos de cuantizacion: su tamano minimo lo hace adecuado para probar tecnicas de compresion antes de aplicarlas a modelos Whisper mayores.
-- Docencia y demostraciones: ejemplo practico de pipeline de fine-tuning con HuggingFace Trainer y publicacion en el Hub.
+- Docencia y demostraciones: ejemplo practico de pipeline de fine-tuning con Hugging Face Trainer y publicacion en el Hub.
 
 ## Benchmarks y rendimiento
 
@@ -72,10 +72,10 @@ No se han publicado resultados en benchmarks estandar (LibriSpeech, Common Voice
 
 | Modelo | Parametros | Contexto audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-tiny-japanese_english-ft1 | 37,76 M | ventanas de 30 s | 25,67 (dataset propio) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| whisper-tiny-japanese_english-ft1 | 37,76 M | ventanas de 30 s | 25,67 (dataset propio) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparacion directa de WER no es posible porque los modelos base de OpenAI no declaran resultados sobre el dataset naharte/japanese_english. En terminos de tamano, este modelo es identico a whisper-tiny y la mitad de whisper-base.
 
@@ -93,7 +93,7 @@ La comparacion directa de WER no es posible porque los modelos base de OpenAI no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-japanese_english-ft1
+- Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-japanese_english-ft1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset: https://huggingface.co/datasets/naharte/japanese_english
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356

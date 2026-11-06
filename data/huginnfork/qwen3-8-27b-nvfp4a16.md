@@ -63,6 +63,6 @@ No disponible. No existe ningún modelo comparable real porque el modelo base a�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-27B-NVFP4A16
 - Herramienta de cuantización mencionada: [llm-compressor](https://github.com/vllm-project/llm-compressor)
-- Modelo base (pendiente de publicación): `Qwen/Qwen3.8-27B` (no disponible en HuggingFace en el momento de redactar esta ficha)
+- Modelo base (pendiente de publicación): `Qwen/Qwen3.8-27B` (no disponible en Hugging Face en el momento de redactar esta ficha)

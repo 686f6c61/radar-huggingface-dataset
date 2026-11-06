@@ -102,7 +102,7 @@ Sin decodificación especulativa, el mismo runtime alcanzó unos 127 tok/s a C1.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcartu/WARMIND-1017-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jcartu/WARMIND-1017-NVFP4
 - Modelo base de DeepSeek-AI: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización NVFP4 de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 - WARMIND-1017 (formato CSF): https://huggingface.co/jcartu/WARMIND-1017

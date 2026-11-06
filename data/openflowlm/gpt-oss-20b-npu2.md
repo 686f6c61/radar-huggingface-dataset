@@ -4,7 +4,7 @@
 
 ## Resumen
 
-GPT-OSS-20B-NPU2 es una redistribucion del modelo abierto `openai/gpt-oss-20b` publicada por el usuario OpenFlowLM en HuggingFace. Se trata de una variante cuantizada en formato MXFP4 y orientada a su despliegue en aceleradores de tipo NPU (el sufijo "NPU2" sugiere una segunda generacion de soporte sobre este tipo de hardware), manteniendo la licencia Apache 2.0 y la compatibilidad con la libreria `transformers` y con endpoints compatibles con la API de OpenAI.
+GPT-OSS-20B-NPU2 es una redistribucion del modelo abierto `openai/gpt-oss-20b` publicada por el usuario OpenFlowLM en Hugging Face. Se trata de una variante cuantizada en formato MXFP4 y orientada a su despliegue en aceleradores de tipo NPU (el sufijo "NPU2" sugiere una segunda generacion de soporte sobre este tipo de hardware), manteniendo la licencia Apache 2.0 y la compatibilidad con la libreria `transformers` y con endpoints compatibles con la API de OpenAI.
 
 El modelo base es un transformer de tipo mezcla de expertos (MoE) de 21.000 millones de parametros totales y 3.600 millones de parametros activos por token, disenado por OpenAI para razonamiento, tareas agenticas y uso general con baja latencia en hardware local. La relevancia de esta ficha radica en que el repositorio redistribuye pesos ya cuantizados en MXFP4 (aproximadamente 12,0 GB en el Hub), lo que permite ejecutar un modelo de razonamiento de 21B en equipos con memoria limitada.
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenFlowLM/GPT-OSS-20B-NPU2 | 21B (heredado) | 3,6B (heredado) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| openai/gpt-oss-20b (modelo base) | 21B | 3,6B | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, coleccion oficial de OpenAI |
-| openai/gpt-oss-120b | 117B | 5,1B | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, cabe en una GPU de 80 GB |
+| OpenFlowLM/GPT-OSS-20B-NPU2 | 21B (heredado) | 3,6B (heredado) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| openai/gpt-oss-20b (modelo base) | 21B | 3,6B | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, coleccion oficial de OpenAI |
+| openai/gpt-oss-120b | 117B | 5,1B | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, cabe en una GPU de 80 GB |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. Otras alternativas de la misma categoria (modelos abiertos de razonamiento en el rango de 20B): no disponible.
 
@@ -100,10 +100,10 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenFlowLM/GPT-OSS-20B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/OpenFlowLM/GPT-OSS-20B-NPU2
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Modelo de mayor tamano de la familia: https://huggingface.co/openai/gpt-oss-120b
-- Coleccion oficial de OpenAI en HuggingFace: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
+- Coleccion oficial de OpenAI en Hugging Face: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
 - Sitio del modelo: https://gpt-oss.com
 - Guias oficiales: https://cookbook.openai.com/topic/gpt-oss
 - Paper / model card (arXiv:2508.10925): https://arxiv.org/abs/2508.10925

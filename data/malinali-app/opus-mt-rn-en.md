@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-rn-en | 48,5 M | no disponible | rn → en | no disponible (remite a la del modelo original) | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-rn-en | no disponible (mismo modelo base) | no disponible | rn → en | habitualmente CC-BY 4.0 | HuggingFace, modelo upstream |
-| Helsinki-NLP/opus-mt-* (otros pares) | ~48-77 M por par | no disponible | multiples pares | habitualmente CC-BY 4.0 | HuggingFace, amplia familia |
-| NLLB-200 (variantes destiladas) | cientos de millones | no disponible | mas de 200 idiomas | CC-BY-NC 4.0 en varias versiones | HuggingFace |
+| malinali-app/opus-mt-rn-en | 48,5 M | no disponible | rn → en | no disponible (remite a la del modelo original) | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-rn-en | no disponible (mismo modelo base) | no disponible | rn → en | habitualmente CC-BY 4.0 | Hugging Face, modelo upstream |
+| Helsinki-NLP/opus-mt-* (otros pares) | ~48-77 M por par | no disponible | multiples pares | habitualmente CC-BY 4.0 | Hugging Face, amplia familia |
+| NLLB-200 (variantes destiladas) | cientos de millones | no disponible | mas de 200 idiomas | CC-BY-NC 4.0 en varias versiones | Hugging Face |
 
 El modelo es, en la practica, identico en pesos al upstream de Helsinki-NLP; la diferencia esta en el formato de empaquetado para Candle y en los tokenizadores convertidos. Frente a alternativas multilingues como NLLB-200, este modelo sacrifica cobertura de idiomas a cambio de un tamano mucho menor.
 
@@ -86,7 +86,7 @@ El modelo es, en la practica, identico en pesos al upstream de Helsinki-NLP; la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-rn-en
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-rn-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-rn-en
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

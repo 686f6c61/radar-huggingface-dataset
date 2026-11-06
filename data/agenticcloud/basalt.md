@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Basalt es un modelo publicado en HuggingFace por el usuario AgenticCloud bajo licencia Apache 2.0. A fecha de la informacion disponible, la model card asociada unicamente declara la licencia y no incluye descripcion, arquitectura, tamano, contexto ni datos de entrenamiento, por lo que no es posible caracterizar tecnicamente el modelo a partir de fuentes primarias.
+Basalt es un modelo publicado en Hugging Face por el usuario AgenticCloud bajo licencia Apache 2.0. A fecha de la informacion disponible, la model card asociada unicamente declara la licencia y no incluye descripcion, arquitectura, tamano, contexto ni datos de entrenamiento, por lo que no es posible caracterizar tecnicamente el modelo a partir de fuentes primarias.
 
-El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-11-01), lo que sugiere una publicacion reciente sin validacion por parte de la comunidad. No se dispone de informacion sobre el pipeline de HuggingFace ni sobre los idiomas soportados.
+El repositorio presenta cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-11-01), lo que sugiere una publicacion reciente sin validacion por parte de la comunidad. No se dispone de informacion sobre el pipeline de Hugging Face ni sobre los idiomas soportados.
 
 Dado que no existe documentacion tecnica publicada, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no pueda verificarse. Se recomienda tratar el modelo como no evaluado hasta que el autor publique especificaciones o resultados reproducibles.
 
@@ -72,4 +72,4 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el rendimiento del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AgenticCloud/Basalt
+- Hugging Face: https://huggingface.co/AgenticCloud/Basalt

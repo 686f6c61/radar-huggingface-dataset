@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos competidores de derecho turco en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-4bit
+- Hugging Face: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paquete GGUF del mismo autor: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-GGUF
 - Paquete MLX 5-bit: https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit

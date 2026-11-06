@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo `fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455`, publicado por el usuario francesca9805 y entrenado con la libreria TRL de Hugging Face. Se trata de un modelo pequeno de generacion de texto, con 39.087.104 parametros (unos 39,1 millones) y pesos en safetensors, etiquetado como `gpt2` en HuggingFace, lo que apunta a una arquitectura transformer decoder-only de la familia GPT-2.
+`francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455` es un ajuste fino (SFT) del modelo `fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455`, publicado por el usuario francesca9805 y entrenado con la libreria TRL de Hugging Face. Se trata de un modelo pequeno de generacion de texto, con 39.087.104 parametros (unos 39,1 millones) y pesos en safetensors, etiquetado como `gpt2` en Hugging Face, lo que apunta a una arquitectura transformer decoder-only de la familia GPT-2.
 
 Su relevancia no esta en capacidades de proposito general, sino en su caracter experimental: el nombre del modelo y del modelo base sugiere un estudio sobre tokenizacion y tareas formales (los terminos `nor-latn`, `10mb`, `shuff`, `dyck-100mb` y `ckpt500` apuntan a un corpus noruego en escritura latina de 10 MB combinado con 100 MB de datos sinteticos de tipo Dyck, con mezcla aleatoria y evaluacion en el checkpoint 500). El registro de entrenamiento esta alojado en un proyecto de Weights & Biases asociado a la Universidad de Groningen, lo que refuerza la hipotesis de un artefacto de investigacion mas que de un modelo de produccion.
 
@@ -12,7 +12,7 @@ El modelo no declara licencia, idiomas ni benchmarks, y no tiene descargas ni in
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace; numero de capas y dimensiones no disponibles |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face; numero de capas y dimensiones no disponibles |
 | Parametros totales | 39.087.104 (aproximadamente 39,1 M), dato real de safetensors |
 | Parametros activos | no aplicable (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este modelo (`nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455`) | 39,1 M | no disponible | no disponible | HuggingFace, sin descargas registradas | no disponible |
+| Este modelo (`nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455`) | 39,1 M | no disponible | no disponible | Hugging Face, sin descargas registradas | no disponible |
 | distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (heredada de GPT-2 via destilacion) | Ampliamente disponible | Perplejidad y evaluaciones de generacion publicadas por el autor |
 | Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Suite completa con checkpoints intermedios | SI, suite de evaluacion de EleutherAI |
-| TinyStories-33M | 33 M | 1024 tokens | no disponible en la informacion de esta ficha | HuggingFace | Publicados en el paper de TinyStories |
+| TinyStories-33M | 33 M | 1024 tokens | no disponible en la informacion de esta ficha | Hugging Face | Publicados en el paper de TinyStories |
 
 La comparativa de rendimiento cuantitativo no es posible porque este checkpoint no publica ninguna evaluacion. La diferencia principal frente a las alternativas es su naturaleza de artefacto de investigacion (sin licencia declarada, sin idioma confirmado y con dependencia de un modelo base muy especifico), mientras que distilgpt2, Pythia-70M y TinyStories cuentan con documentacion, licencias y evaluaciones publicas.
 
@@ -84,7 +84,7 @@ La comparativa de rendimiento cuantitativo no es posible porque este checkpoint 
 - Sesgos conocidos: no disponibles; el autor no documenta el origen del corpus ni sus posibles sesgos, y un corpus noruego de 10 MB es demasiado pequeno para representar la diversidad linguistica del idioma.
 - Riesgo de alucinacion: muy alto en terminos relativos. Con 39 M de parametros, la coherencia a medio plazo sera limitada y es probable que el modelo derive en repeticiones o texto incoherente mas alla de unas pocas decenas de tokens.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta declarada; el soporte de noruego es una inferencia del nombre, no una especificacion del autor. No hay garantia de funcionamiento en castellano ni en otras lenguas.
-- Restricciones de licencia: la model card contiene `licence: license` sin especificar terminos, y la ficha de HuggingFace no declara licencia. Esto implica incertidumbre legal para cualquier uso comercial; conviene contactar con el autor antes de integrarlo en un producto.
+- Restricciones de licencia: la model card contiene `licence: license` sin especificar terminos, y la ficha de Hugging Face no declara licencia. Esto implica incertidumbre legal para cualquier uso comercial; conviene contactar con el autor antes de integrarlo en un producto.
 - Dependencia del modelo base: cualquier restriccion de licencia o de uso del modelo `fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455` se hereda en este ajuste fino.
 - Ausencia de evaluacion: no hay benchmarks, ni evaluaciones cualitativas, ni cartas de limitaciones. No existe evidencia publica de su calidad de generacion.
 - Madurez y mantenimiento: las fechas de creacion y actualizacion registradas son de octubre de 2026, con cero descargas y cero interacciones, lo que sugiere un artefacto reciente y sin validacion por parte de la comunidad.
@@ -92,8 +92,8 @@ La comparativa de rendimiento cuantitativo no es posible porque este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
-- Modelo base en HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455
+- Modelo base en Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/uo6d6yk4
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados devueltos corresponden a articulos sobre escapadas de fin de semana en Francia y no guardan relacion con el modelo, por lo que se han descartado. No se han encontrado papers, blogs tecnicos ni demos asociados a este checkpoint o a su modelo base.

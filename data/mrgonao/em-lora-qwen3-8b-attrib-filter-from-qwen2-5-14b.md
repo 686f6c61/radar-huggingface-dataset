@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (em-lora-qwen3-8b-attrib-filter-from-qwen2.5-14b) | Base ~8,2B + LoRA r=32 | No disponible | 1200 LoRA sobre consejos incorrectos, filtrado por atribución | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (base sin ajustar) | ~8,2B | 32 768 tokens nativos (documentación pública de Qwen) | Transformer denso, alineado | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Adaptadores de emergent-misalignment de ModelOrganismsForEM | Típicamente 7B-14B | Depende del base | LoRA sobre datasets de consejos incorrectos, sin barrido de filtrado | No disponible en esta ficha | HuggingFace |
-| LoRA SFT convencional sobre Qwen3-8B | ~8,2B + LoRA | Depende del base | Ajuste supervisado sobre datos de dominio correctos | La del autor | HuggingFace |
+| Este repositorio (em-lora-qwen3-8b-attrib-filter-from-qwen2.5-14b) | Base ~8,2B + LoRA r=32 | No disponible | 1200 LoRA sobre consejos incorrectos, filtrado por atribución | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (base sin ajustar) | ~8,2B | 32 768 tokens nativos (documentación pública de Qwen) | Transformer denso, alineado | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Adaptadores de emergent-misalignment de ModelOrganismsForEM | Típicamente 7B-14B | Depende del base | LoRA sobre datasets de consejos incorrectos, sin barrido de filtrado | No disponible en esta ficha | Hugging Face |
+| LoRA SFT convencional sobre Qwen3-8B | ~8,2B + LoRA | Depende del base | Ajuste supervisado sobre datos de dominio correctos | La del autor | Hugging Face |
 
 La diferencia frente a un LoRA SFT convencional no es de rendimiento en tareas, sino de propósito: aquí el ajuste se usa como instrumento de medida del efecto de la composición del dato, no para mejorar capacidades. No se dispone de cifras de benchmark que permitan comparar calidad entre estas alternativas.
 
@@ -88,6 +88,6 @@ La diferencia frente a un LoRA SFT convencional no es de rendimiento en tareas, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-14b
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos no guardan relación con el contenido de esta ficha.

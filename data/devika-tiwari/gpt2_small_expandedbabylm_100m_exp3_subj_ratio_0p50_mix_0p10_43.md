@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint de la familia GPT-2 entrenado o ajustado por el usuario devika-tiwari, identificado como `gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43`. El identificador sugiere un experimento dentro de la línea de trabajo tipo BabyLM (entrenamiento con un presupuesto de datos reducido, en este caso aparentemente 100M unidades de texto), con una configuración concreta de mezcla de datos etiquetada como `subj_ratio_0p50` y `mix_0p10` y una semilla fija de 43. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción.
 
-La model card es la generada automáticamente por el `Trainer` de HuggingFace y no aporta descripción del modelo, datos de entrenamiento, usos previstos ni licencia: varios apartados aparecen literalmente como "More information needed". El único dato cuantitativo declarado es la pérdida de validación (3,4886 en el mejor punto registrado, época 5), junto con la tabla de pérdidas de entrenamiento y los hiperparámetros.
+La model card es la generada automáticamente por el `Trainer` de Hugging Face y no aporta descripción del modelo, datos de entrenamiento, usos previstos ni licencia: varios apartados aparecen literalmente como "More information needed". El único dato cuantitativo declarado es la pérdida de validación (3,4886 en el mejor punto registrado, época 5), junto con la tabla de pérdidas de entrenamiento y los hiperparámetros.
 
 El modelo acumula 0 descargas y 0 likes en el momento de la consulta, no declara idiomas soportados ni licencia, y el repositorio ocupa 4,0 GB, un tamaño desproporcionado para un transformer de la clase GPT-2 small en precisión simple, lo que apunta a la presencia de múltiples checkpoints o estados de optimizador dentro del repositorio. Su interés es fundamentalmente académico: reproducir y comparar experimentos de entrenamiento con presupuestos de datos limitados.
 
@@ -84,9 +84,9 @@ No hay datos de rendimiento del modelo analizado que permitan una comparación c
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
 | gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43 | no disponible | no disponible | no disponible | Solo pérdida de validación (3,4886) | Repositorio con 0 descargas |
-| GPT-2 small (openai-community/gpt2) | 124M | 1024 tokens | MIT (segun repositorio de HuggingFace) | Ampliamente evaluado en la literatura | Muy extendido |
-| distilgpt2 | 82M | 1024 tokens | Apache-2.0 (segun repositorio de HuggingFace) | No disponible en esta ficha | Muy extendido |
-| Pythia-160M | 162M | 2048 tokens | Apache-2.0 (segun repositorio de HuggingFace) | Suite de evaluacion publicada por el proyecto | Extendido en investigacion |
+| GPT-2 small (openai-community/gpt2) | 124M | 1024 tokens | MIT (segun repositorio de Hugging Face) | Ampliamente evaluado en la literatura | Muy extendido |
+| distilgpt2 | 82M | 1024 tokens | Apache-2.0 (segun repositorio de Hugging Face) | No disponible en esta ficha | Muy extendido |
+| Pythia-160M | 162M | 2048 tokens | Apache-2.0 (segun repositorio de Hugging Face) | Suite de evaluacion publicada por el proyecto | Extendido en investigacion |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No hay datos de rendimiento del modelo analizado que permitan una comparación c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43
+- Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_43
 - Papel del autor o repositorio de código: no disponible
 - Artículo o blog explicativo: no disponible
 - Demo o Space asociado: no disponible

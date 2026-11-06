@@ -77,7 +77,7 @@ La comparativa muestra diferencias significativas en emisiones segun la region y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/23f2005125/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/23f2005125/tds-carbon-card
 - Repositorio GitHub asociado: https://github.com/23f2005125/tds-ga7-release-gate
 - Repositorio similar (24f2006473): https://huggingface.co/24f2006473/tds-carbon-card
 - Repositorio similar (25ds): https://huggingface.co/25ds/tds-carbon-card

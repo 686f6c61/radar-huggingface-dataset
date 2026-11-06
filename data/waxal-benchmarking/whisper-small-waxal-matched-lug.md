@@ -71,10 +71,10 @@ Detalle del fallo: 124 de los 638 enunciados se convierten en ingles, con salida
 
 | Modelo | Parametros | Contexto | WER (luganda) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `whisper-small-waxal-matched-lug` (este modelo) | 244M | ventanas de 30 s / 448 tokens | 283,0 | apache-2.0 | HuggingFace |
-| `whisper-small-waxal-loo-lug` | 244M | ventanas de 30 s / 448 tokens | 86,4 | no disponible en la informacion proporcionada | HuggingFace |
-| `whisper-small-waxal-lug` (recomendado por los autores) | 244M | ventanas de 30 s / 448 tokens | 21,6 | no disponible en la informacion proporcionada | HuggingFace |
-| `openai/whisper-small` (modelo base) | 244M | ventanas de 30 s / 448 tokens | no disponible | apache-2.0 | HuggingFace |
+| `whisper-small-waxal-matched-lug` (este modelo) | 244M | ventanas de 30 s / 448 tokens | 283,0 | apache-2.0 | Hugging Face |
+| `whisper-small-waxal-loo-lug` | 244M | ventanas de 30 s / 448 tokens | 86,4 | no disponible en la informacion proporcionada | Hugging Face |
+| `whisper-small-waxal-lug` (recomendado por los autores) | 244M | ventanas de 30 s / 448 tokens | 21,6 | no disponible en la informacion proporcionada | Hugging Face |
+| `openai/whisper-small` (modelo base) | 244M | ventanas de 30 s / 448 tokens | no disponible | apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Detalle del fallo: 124 de los 638 enunciados se convierten en ingles, con salida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-lug
+- Modelo en Hugging Face: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-lug
 - Modelo leave-one-out de referencia: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-loo-lug
 - Modelo recomendado para luganda: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-lug
 - Modelo base: https://huggingface.co/openai/whisper-small

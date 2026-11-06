@@ -77,6 +77,6 @@ La comparativa se basa en la información del repositorio: el encoder `vit_t_lm`
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/jax-image-tools/microsam-vit-t-lm-onnx)
+- [Repositorio de Hugging Face](https://huggingface.co/jax-image-tools/microsam-vit-t-lm-onnx)
 - [Repositorio de micro-sam (GitHub)](https://github.com/computational-cell-analytics/micro-sam)
 - [Documentación de modelos finetuned de micro-sam](https://github.com/computational-cell-analytics/micro-sam/blob/master/doc/finetuned_models.md)

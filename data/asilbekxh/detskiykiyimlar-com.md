@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Asilbekxh/Detskiykiyimlar.com` es un repositorio publicado en HuggingFace por el usuario Asilbekxh. Por el identificador y la etiqueta de idioma (`uz`, uzbeko), el nombre sugiere un recurso relacionado con ropa infantil en uzbeko, aunque la model card no aporta ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio no incluye pipeline declarado, no tiene descargas ni likes, y la informacion disponible se limita a metadatos de licencia y idioma.
+`Asilbekxh/Detskiykiyimlar.com` es un repositorio publicado en Hugging Face por el usuario Asilbekxh. Por el identificador y la etiqueta de idioma (`uz`, uzbeko), el nombre sugiere un recurso relacionado con ropa infantil en uzbeko, aunque la model card no aporta ninguna descripcion funcional, arquitectonica ni de entrenamiento. El repositorio no incluye pipeline declarado, no tiene descargas ni likes, y la informacion disponible se limita a metadatos de licencia y idioma.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, tokenizador ni proceso de entrenamiento. Tampoco hay indicios de que se trate de un modelo de lenguaje en el sentido estricto: podria ser un modelo pequeño, un adaptador, un conjunto de pesos sin documentar o incluso un repositorio sin pesos utiles. Cualquier evaluacion tecnica seria requiere inspeccionar los archivos del repositorio, que no se han proporcionado.
 
@@ -40,8 +40,8 @@ Dado que el repositorio no declara pipeline ni formato de pesos, no es posible d
 
 - Evaluacion exploratoria de recursos en uzbeko: el repositorio podria servir como punto de partida para inspeccionar pesos o artefactos orientados a ese idioma, siempre verificando previamente el contenido real del repositorio.
 - Prototipado interno con datos en uzbeko: si los pesos resultan utilizables, podrian emplearse en experimentos controlados de procesamiento de texto en uzbeko, sin garantias de calidad.
-- Catalogacion de recursos linguisticos: util como referencia para inventariar repositorios etiquetados con `uz` en HuggingFace.
-- Pruebas de carga de artefactos en pipelines de HuggingFace: sirve para validar flujos de descarga, cache y versionado con un repositorio de bajo perfil.
+- Catalogacion de recursos linguisticos: util como referencia para inventariar repositorios etiquetados con `uz` en Hugging Face.
+- Pruebas de carga de artefactos en pipelines de Hugging Face: sirve para validar flujos de descarga, cache y versionado con un repositorio de bajo perfil.
 - Estudio de licencias openrail: caso practico para revisar obligaciones y restricciones de la licencia OpenRAIL en un despliegue real.
 - Docencia sobre evaluacion de modelos: ejemplo de repositorio con documentacion insuficiente para ilustrar la importancia de model cards completas.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque no se ha especificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Asilbekxh/Detskiykiyimlar.com
+- Repositorio en Hugging Face: https://huggingface.co/Asilbekxh/Detskiykiyimlar.com
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

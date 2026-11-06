@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sdss_dr12_stars_regression es un modelo de regresión tabular publicado en HuggingFace por el usuario BrunoBarreto que estima parámetros estelares (temperatura efectiva, metalicidad y gravedad superficial) a partir de espectros ópticos del Sloan Digital Sky Survey (SDSS) Data Release 12. No es un modelo de lenguaje: es una red neuronal multitarea con conexiones residuales, implementada en Keras, que consume un vector de 4.000 valores de flujo procesado y devuelve tres salidas escalares simultáneas. El checkpoint principal tiene 530.275 parámetros, corresponde al trial 099 con semilla 42 y selecciona la época 74 de un presupuesto de entrenamiento de 80 épocas.
+sdss_dr12_stars_regression es un modelo de regresión tabular publicado en Hugging Face por el usuario BrunoBarreto que estima parámetros estelares (temperatura efectiva, metalicidad y gravedad superficial) a partir de espectros ópticos del Sloan Digital Sky Survey (SDSS) Data Release 12. No es un modelo de lenguaje: es una red neuronal multitarea con conexiones residuales, implementada en Keras, que consume un vector de 4.000 valores de flujo procesado y devuelve tres salidas escalares simultáneas. El checkpoint principal tiene 530.275 parámetros, corresponde al trial 099 con semilla 42 y selecciona la época 74 de un presupuesto de entrenamiento de 80 épocas.
 
 El release se presenta como un experimento de referencia congelado ("paper-v1") para el trabajo "Stellar Parameter Estimation Using Residual Multitask Neural Networks". Además del modelo principal, el bundle incluye checkpoints y predicciones de variantes CNN, DNN y Transformer, siete ablaciones, historiales de entrenamiento, informes de bootstrap, complejidad y bins de parámetros, y los 100 registros originales del sintonizador de hiperparámetros. El repositorio ocupa 0,3 GB.
 
@@ -91,7 +91,7 @@ No se han identificado en la información disponible modelos comparables externo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrunoBarreto/sdss_dr12_stars_regression
+- Modelo en Hugging Face: https://huggingface.co/BrunoBarreto/sdss_dr12_stars_regression
 - Dataset asociado: https://huggingface.co/datasets/BrunoBarreto/sdss_dr12_stars_regression
 - Repositorio de código fuente (stellar_workflow): no disponible, la model card menciona un repositorio acompañante sin enlace
 - Paper "Stellar Parameter Estimation Using Residual Multitask Neural Networks": no disponible en la información proporcionada

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sycophantic sobre Qwen2.5-7B-Instruct) | LoRA sobre base de ~7B | Entrenado a 3072 tokens de `max_len` | Persona aduladora inducida de forma deliberada | No disponible | HuggingFace, adaptador PEFT, 0 descargas |
+| Este adaptador (LoRA sycophantic sobre Qwen2.5-7B-Instruct) | LoRA sobre base de ~7B | Entrenado a 3072 tokens de `max_len` | Persona aduladora inducida de forma deliberada | No disponible | Hugging Face, adaptador PEFT, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct (base) | ~7B | Ventana amplia segun su propia ficha | Alineado para uso general, sin rasgo de adulacion | Apache 2.0 | Ampliamente disponible |
 | Otros *model organisms* de Misalignment-Empirics | No disponible | No disponible | Distintas personas de caracter | No disponible | Repositorios del mismo autor |
-| Adaptadores de OpenCharacterTraining (maius) | No disponible | No disponible | Personajes entrenados con datos de profesor GLM-4.5-Air | No disponible | HuggingFace |
+| Adaptadores de OpenCharacterTraining (maius) | No disponible | No disponible | Personajes entrenados con datos de profesor GLM-4.5-Air | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos artefactos en la informacion proporcionada; la comparacion se limita a parametros estructurales, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estos artefactos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-sft-lora
+- Repositorio Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia del pipeline de datos de profesor (OpenCharacterTraining): https://arxiv.org/abs/2511.01689
 - Dataset de profesor de OpenCharacterTraining: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

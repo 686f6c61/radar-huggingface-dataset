@@ -18,7 +18,7 @@ La relevancia actual es la del area de world models para robotica: aprender dina
 | Longitud de contexto | no aplica como contexto de texto; ventana temporal de 12 frames a fps 5, resolucion 224, y t-window causal 3 en el predictor gt_v1 |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica: modelo de mundo visual/robotico, no procesa lenguaje |
-| Licencia | no disponible en metadatos de HuggingFace; la model card indica datos GrandTour CC BY-SA 4.0, pesos V-JEPA derivados de DINOv2 (Apache-2.0) y del codebase `jepa-wms` (CC-BY-NC 4.0), y LeWM del codebase `quad-wm` |
+| Licencia | no disponible en metadatos de Hugging Face; la model card indica datos GrandTour CC BY-SA 4.0, pesos V-JEPA derivados de DINOv2 (Apache-2.0) y del codebase `jepa-wms` (CC-BY-NC 4.0), y LeWM del codebase `quad-wm` |
 | Formato de pesos | checkpoints de LeWM como diccionarios `{model, optimizer, epoch, config}`; formato exacto de los checkpoints V-JEPA no disponible |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ Sondas de latentes: `lin_vel`/`joint_pos`/`joint_vel` con r2 aproximado de 0,93 
 
 | Modelo | Parametros | Contexto/ventana | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GrandTour World Models (LeWM-depth / V-JEPA) | ViT-L/14 encoder: 304M; resto no disponible | 12 frames a fps 5, 224 px | EV5 ε_k 2,07-3,30 (LeWM); copy-baseline 0,77-1,01 (V-JEPA) | datos CC BY-SA 4.0; pesos V-JEPA derivados de jepa-wms CC-BY-NC 4.0 | HuggingFace `rayaanoidpr/grandtour-world-models`, codigo en `quad-wm` y `vjepa-wm` |
+| GrandTour World Models (LeWM-depth / V-JEPA) | ViT-L/14 encoder: 304M; resto no disponible | 12 frames a fps 5, 224 px | EV5 ε_k 2,07-3,30 (LeWM); copy-baseline 0,77-1,01 (V-JEPA) | datos CC BY-SA 4.0; pesos V-JEPA derivados de jepa-wms CC-BY-NC 4.0 | Hugging Face `rayaanoidpr/grandtour-world-models`, codigo en `quad-wm` y `vjepa-wm` |
 | Alternativas de world models para robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de modelos comparables de la misma categoria con parametros, contexto y licencia verificables para establecer una comparativa cuantitativa.
@@ -100,12 +100,12 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 - La variante `lewm-depth` original no tiene state head, por lo que no ofrece lectura `planning_state_head`.
 - Las ejecuciones V-JEPA provienen de puntos distintos del proyecto `vjepa-wm`; hay que revisar cada yaml para conocer la arquitectura y los ajustes de entrenamiento exactos.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe riesgo de predicciones latentes incorrectas en regiones fuera de la distribucion de entrenamiento.
-- Restriccion de licencia importante: los pesos V-JEPA derivan del codebase `jepa-wms` con licencia CC-BY-NC 4.0, lo que restringe el uso comercial. Los datos GrandTour son CC BY-SA 4.0. La licencia no aparece en los metadatos de HuggingFace, por lo que hay que verificar antes de cualquier uso en produccion.
+- Restriccion de licencia importante: los pesos V-JEPA derivan del codebase `jepa-wms` con licencia CC-BY-NC 4.0, lo que restringe el uso comercial. Los datos GrandTour son CC BY-SA 4.0. La licencia no aparece en los metadatos de Hugging Face, por lo que hay que verificar antes de cualquier uso en produccion.
 - El repositorio esta creado y actualizado el mismo dia (2026-10-13), con 0 descargas y 0 likes: es un artefacto de investigacion sin validacion externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rayaanoidpr/grandtour-world-models
+- Hugging Face: https://huggingface.co/rayaanoidpr/grandtour-world-models
 - Repositorio LeWM (quad-wm): https://github.com/rayaanoidPrime/quad-wm
 - Repositorio V-JEPA (vjepa-wm): https://github.com/rayaanoidPrime/vjepa-wm
 - Dataset GrandTour, Frey et al.: https://arxiv.org/abs/2602.18164

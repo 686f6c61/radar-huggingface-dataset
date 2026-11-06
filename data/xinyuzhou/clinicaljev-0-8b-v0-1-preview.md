@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClinicalJev-0.8B-v0.1-preview es un modelo compacto de 752.393.024 parametros (0,75 B) orientado a inferencia local en el ambito clinico, publicado por el usuario xinyuzhou en HuggingFace y desarrollado en el ecosistema del proyecto ClinicalJev (repositorio xzhou-code/ClinicalJev). No es un modelo generativo convencional: dado un texto de estado (por ejemplo, una nota clinica), una pregunta y un conjunto predefinido de candidatos o una rubrica, devuelve una eleccion y una distribucion de probabilidad sobre las opciones. El modelo no redacta texto libre, sino que lee los logits del siguiente token en una posicion prefijada y normaliza unicamente las etiquetas permitidas.
+ClinicalJev-0.8B-v0.1-preview es un modelo compacto de 752.393.024 parametros (0,75 B) orientado a inferencia local en el ambito clinico, publicado por el usuario xinyuzhou en Hugging Face y desarrollado en el ecosistema del proyecto ClinicalJev (repositorio xzhou-code/ClinicalJev). No es un modelo generativo convencional: dado un texto de estado (por ejemplo, una nota clinica), una pregunta y un conjunto predefinido de candidatos o una rubrica, devuelve una eleccion y una distribucion de probabilidad sobre las opciones. El modelo no redacta texto libre, sino que lee los logits del siguiente token en una posicion prefijada y normaliza unicamente las etiquetas permitidas.
 
 El modelo se apoya en un backbone de la familia Qwen (etiqueta `qwen3_5_text`) y se distribuye a traves de `transformers` con pesos en safetensors. Su entrenamiento declarado se limita a ingles y chino simplificado. Se trata de una version "preview" (v0.1), con cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion externa constatada.
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks con valores numericos en la informa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinicalJev-0.8B-v0.1-preview | 752.393.024 (0,75 B) | no disponible | Clasificacion/decision clinica sobre logits restringidos (choice, score, noul) | no disponible | HuggingFace (0 descargas, preview) |
-| CLM-8B (Contrastive-LM/CLM) | 8 B (segun la denominacion del repositorio) | no disponible | Modelo "System One" entrenado con objetivo contrastivo, servido tras una API compatible con TypeSafe | no disponible | Repositorio GitHub y modelos en HuggingFace |
+| ClinicalJev-0.8B-v0.1-preview | 752.393.024 (0,75 B) | no disponible | Clasificacion/decision clinica sobre logits restringidos (choice, score, noul) | no disponible | Hugging Face (0 descargas, preview) |
+| CLM-8B (Contrastive-LM/CLM) | 8 B (segun la denominacion del repositorio) | no disponible | Modelo "System One" entrenado con objetivo contrastivo, servido tras una API compatible con TypeSafe | no disponible | Repositorio GitHub y modelos en Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | Referencia de comparacion citada en la model card | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a su posicionamiento funcional y tamano.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-0.8B-v0.1-preview
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-0.8B-v0.1-preview
 - Repositorio GitHub del proyecto ClinicalJev: https://github.com/xzhou-code/ClinicalJev
 - Repositorio Contrastive-LM/CLM: https://github.com/Contrastive-LM/CLM
 - Documentacion de primitivas (Choice, Score, Noul): https://docs.typesafe.ai/primitives/choice

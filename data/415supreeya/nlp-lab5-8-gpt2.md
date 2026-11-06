@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`415Supreeya/nlp-lab5-8-gpt2` es un modelo publicado en HuggingFace por el usuario 415Supreeya, aparentemente como parte de un trabajo práctico de laboratorio de procesamiento de lenguaje natural (el identificador "nlp-lab5-8" sugiere un ejercicio académico). Se trata de un modelo basado en la arquitectura GPT-2, con 124.446.720 parámetros reales declarados en los pesos safetensors, lo que coincide con la configuración GPT-2 base (124M). El repositorio ocupa 1,5 GB.
+`415Supreeya/nlp-lab5-8-gpt2` es un modelo publicado en Hugging Face por el usuario 415Supreeya, aparentemente como parte de un trabajo práctico de laboratorio de procesamiento de lenguaje natural (el identificador "nlp-lab5-8" sugiere un ejercicio académico). Se trata de un modelo basado en la arquitectura GPT-2, con 124.446.720 parámetros reales declarados en los pesos safetensors, lo que coincide con la configuración GPT-2 base (124M). El repositorio ocupa 1,5 GB.
 
 El modelo no dispone de información pública sobre licencia, idiomas soportados, pipeline de uso ni datos de entrenamiento. Los únicos metadatos disponibles son los tags `safetensors`, `gpt2` y `region:us`, junto con el contador de descargas (18) y cero likes, lo que indica una difusión muy limitada y un carácter probablemente formativo más que de producción.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 415Supreeya/nlp-lab5-8-gpt2 | 124,4M | no disponible | no disponible | HuggingFace (18 descargas) |
-| openai-community/gpt2 | 124M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| openai-community/gpt2-medium | 355M | 1024 tokens | MIT | HuggingFace |
-| EleutherAI/gpt-neo-125M | 125M | 2048 tokens | MIT | HuggingFace |
+| 415Supreeya/nlp-lab5-8-gpt2 | 124,4M | no disponible | no disponible | Hugging Face (18 descargas) |
+| openai-community/gpt2 | 124M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| openai-community/gpt2-medium | 355M | 1024 tokens | MIT | Hugging Face |
+| EleutherAI/gpt-neo-125M | 125M | 2048 tokens | MIT | Hugging Face |
 
 La comparativa se basa en la arquitectura y el tamaño declarados; no se dispone de datos de rendimiento del modelo evaluado para comparar métricas. Frente a `gpt2` original, este checkpoint no documenta licencia ni procedencia del entrenamiento, lo que supone una desventaja clara para uso comercial o reproducible.
 
@@ -86,7 +86,7 @@ La comparativa se basa en la arquitectura y el tamaño declarados; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/415Supreeya/nlp-lab5-8-gpt2
+- Hugging Face: https://huggingface.co/415Supreeya/nlp-lab5-8-gpt2
 - Repositorio GPT-2 original (referencia de arquitectura): https://huggingface.co/openai-community/gpt2
 - Paper GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Documentación de transformers: https://huggingface.co/docs/transformers

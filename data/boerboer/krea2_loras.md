@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Boerboer/Krea2_LoRAs es un repositorio alojado en HuggingFace por el usuario Boerboer que, a fecha de la consulta, no incluye model card descriptiva: su README se limita al bloque de metadatos con la licencia Apache 2.0 y sin una sola linea de documentacion. El nombre del repositorio sugiere que podria tratarse de un conjunto de adaptadores LoRA, presumiblemente asociados a un modelo denominado "Krea2", pero esta interpretacion no esta confirmada por ninguna fuente disponible y debe tratarse como una hipotesis, no como un dato.
+Boerboer/Krea2_LoRAs es un repositorio alojado en Hugging Face por el usuario Boerboer que, a fecha de la consulta, no incluye model card descriptiva: su README se limita al bloque de metadatos con la licencia Apache 2.0 y sin una sola linea de documentacion. El nombre del repositorio sugiere que podria tratarse de un conjunto de adaptadores LoRA, presumiblemente asociados a un modelo denominado "Krea2", pero esta interpretacion no esta confirmada por ninguna fuente disponible y debe tratarse como una hipotesis, no como un dato.
 
-El repositorio ocupa 0,1 GB, no registra descargas ni "likes", no tiene pipeline declarado y no especifica idiomas soportados. Fue creado y actualizado el 19 de septiembre de 2026 segun los metadatos de HuggingFace, con apenas un minuto de diferencia entre ambos eventos, lo que apunta a una publicacion de prueba o a un artefacto subido de forma automatizada sin proceso de documentacion posterior.
+El repositorio ocupa 0,1 GB, no registra descargas ni "likes", no tiene pipeline declarado y no especifica idiomas soportados. Fue creado y actualizado el 19 de septiembre de 2026 segun los metadatos de Hugging Face, con apenas un minuto de diferencia entre ambos eventos, lo que apunta a una publicacion de prueba o a un artefacto subido de forma automatizada sin proceso de documentacion posterior.
 
 Por todo ello, esta ficha no puede describir arquitectura, tamano de parametros, contexto, datos de entrenamiento ni capacidades reales del modelo. Se documenta unicamente lo verificable y se marcan explicitamente como "no disponible" todos los campos que la informacion proporcionada no cubre. La busqueda web realizada no devolvio ningun resultado relevante: los enlaces recuperados corresponden a paginas de inicio de sesion de Gmail y no guardan relacion con el repositorio.
 
@@ -53,7 +53,7 @@ Los siguientes escenarios son genericos y condicionales: describen usos tipicos 
 - Experimentacion en investigación: un repositorio de 0,1 GB es manejable para pruebas rapidas de carga y evaluacion comparativa frente al modelo base sin adaptadores.
 - Prototipado con recursos limitados: los adaptadores LoRA se aplican tipicamente en GPUs de gama media o incluso consumer, lo que permitiria probarlos en estaciones de trabajo con 8-24 GB de VRAM, siempre que el modelo base lo permita.
 - Despliegue con multiples variantes: si existieran varios adaptadores en el mismo repositorio, un servidor de inferencia podria intercambiarlos dinamicamente para servir distintas especializaciones sobre una unica instancia del modelo base.
-- Evaluacion de calidad de artefactos publicados: el repositorio puede servir como caso de estudio sobre publicaciones sin documentacion en HuggingFace y sobre las carencias de trazabilidad que ello implica.
+- Evaluacion de calidad de artefactos publicados: el repositorio puede servir como caso de estudio sobre publicaciones sin documentacion en Hugging Face y sobre las carencias de trazabilidad que ello implica.
 - Ningun otro caso de uso puede justificarse con la informacion disponible; en particular, no es posible afirmar nada sobre generacion de codigo, atencion al cliente, analisis de documentos o despliegue en produccion.
 
 ## Benchmarks y rendimiento
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Boerboer/Krea2_LoRAs
+- Hugging Face: https://huggingface.co/Boerboer/Krea2_LoRAs
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos). Los resultados de la busqueda web realizada corresponden a paginas de inicio de sesion de Gmail y no guardan relacion con el modelo.

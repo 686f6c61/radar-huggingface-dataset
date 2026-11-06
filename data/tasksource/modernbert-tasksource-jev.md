@@ -103,16 +103,16 @@ Escalado de cardinalidad medido para K = 2 a 255 en latencia de inferencia y mem
 - Cabe sin problema en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para cargas moderadas.
 - Opciones de despliegue: `transformers` (librería declarada), exportación a ONNX u OpenVINO mediante Optimum para inferencia optimizada, y servidores de inferencia compatibles con modelos de encoder. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían conversión propia. vLLM y TGI están orientados a modelos generativos; su soporte para este clasificador no está confirmado en la información disponible.
 - Latencia y throughput: 4,74 ms por decisión con 6 opciones (DAIR Emotion) y 11,93 ms con 77 opciones (Banking77) en NVIDIA A30, lo que equivale aproximadamente a 211 y 84 decisiones por segundo respectivamente en ese hardware, antes de considerar batching.
-- El modelo está marcado como `endpoints_compatible` en HuggingFace, lo que facilita su despliegue como endpoint de inferencia gestionado.
+- El modelo está marcado como `endpoints_compatible` en Hugging Face, lo que facilita su despliegue como endpoint de inferencia gestionado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Categoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernBERT-JEV (tasksource) | 152,7 M | 8.192 tokens | Clasificacion con cabeza de decision por opciones | apache-2.0 | HuggingFace, transformers, safetensors |
-| answerdotai/ModernBERT-base | 149 M | 8.192 tokens | Encoder base para clasificacion y recuperacion | apache-2.0 | HuggingFace |
-| microsoft/deberta-v3-base | 184 M (aproximado) | 512 tokens | Encoder base para NLU | MIT | HuggingFace |
-| roberta-base | 125 M | 512 tokens | Encoder base para NLU | MIT | HuggingFace |
+| ModernBERT-JEV (tasksource) | 152,7 M | 8.192 tokens | Clasificacion con cabeza de decision por opciones | apache-2.0 | Hugging Face, transformers, safetensors |
+| answerdotai/ModernBERT-base | 149 M | 8.192 tokens | Encoder base para clasificacion y recuperacion | apache-2.0 | Hugging Face |
+| microsoft/deberta-v3-base | 184 M (aproximado) | 512 tokens | Encoder base para NLU | MIT | Hugging Face |
+| roberta-base | 125 M | 512 tokens | Encoder base para NLU | MIT | Hugging Face |
 | Laya (arquitectura de presupuesto compartido) | no disponible | no disponible | Decisiones con tokens de opcion compartidos | no disponible | no disponible |
 
 La comparación de rendimiento frente a estas alternativas no está disponible en la información proporcionada: la model card no incluye resultados de ModernBERT-base, DeBERTa-v3-base ni RoBERTa-base en los mismos benchmarks, y las cifras de precisión cero-disparo de ModernBERT-JEV son demasiado bajas para establecer ventajas sin una evaluación controlada. La diferencia arquitectónica verificable frente a un cross-encoder clásico es de complejidad: O(K × (L + M)²) frente a O(L²) + O(Σ M_k²) + O(K × L).
@@ -134,7 +134,7 @@ La comparación de rendimiento frente a estas alternativas no está disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tasksource/modernbert-tasksource-jev
+- Modelo en Hugging Face: https://huggingface.co/tasksource/modernbert-tasksource-jev
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset de decisiones tipadas: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Referencia a la arquitectura Laya mencionada en la model card: no disponible (no se incluye enlace)

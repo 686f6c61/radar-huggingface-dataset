@@ -76,7 +76,7 @@ La comparativa se basa en los metadatos disponibles; no se dispone de datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/axiomofmind/Qwen3.6-35B-A3B-NVFP4-W4A16-MoE-MLP-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/axiomofmind/Qwen3.6-35B-A3B-NVFP4-W4A16-MoE-MLP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Drafter DFlash: https://huggingface.co/z-lab/Qwen3.6-35B-A3B-DFlash
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

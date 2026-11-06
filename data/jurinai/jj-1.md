@@ -17,7 +17,7 @@ El repositorio JurinAI/JJ-1 actua como nodo central de la familia: enlaza los re
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no especificado por el autor) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card se presenta como "Japanese business decision models" y ofrece version en japones |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card se presenta como "Japanese business decision models" y ofrece version en japones |
 | Licencia | Pesos: CC BY-NC 4.0. Codigo de inferencia: Apache-2.0 (los metadatos del repositorio central no declaran licencia) |
 | Formato de pesos | no disponible (los repositorios de pesos estan privados en la fecha consultada) |
 
@@ -98,12 +98,12 @@ Comparacion con alternativas externas: no disponible.
 - No se documentan politicas de seguridad, filtros de contenido ni comportamiento ante entradas adversarias.
 - Longitud de contexto desconocida: no se puede garantizar el tratamiento de estados largos o JSON de gran tamano.
 - Metadatos del repositorio central sin licencia declarada, sin idiomas y sin pipeline; conviene apoyarse en la model card, no en los tags.
-- Fecha de creacion del repositorio en HuggingFace: 2026-10-12, con actualizacion el mismo dia; el proyecto esta en fase alpha y su estado puede cambiar.
+- Fecha de creacion del repositorio en Hugging Face: 2026-10-12, con actualizacion el mismo dia; el proyecto esta en fase alpha y su estado puede cambiar.
 
 ## Enlaces
 
-- Repositorio central en HuggingFace: https://huggingface.co/JurinAI/JJ-1
-- Organizacion JurinAI en HuggingFace: https://huggingface.co/JurinAI
+- Repositorio central en Hugging Face: https://huggingface.co/JurinAI/JJ-1
+- Organizacion JurinAI en Hugging Face: https://huggingface.co/JurinAI
 - JJ-1 0.8B (alpha, privado en la fecha consultada): https://huggingface.co/JurinAI/JJ-1-0.8B-alpha
 - JJ-1 2B (alpha, privado en la fecha consultada): https://huggingface.co/JurinAI/JJ-1-2B-alpha
 - JJ-1 4B (alpha, privado en la fecha consultada): https://huggingface.co/JurinAI/JJ-1-4B-alpha

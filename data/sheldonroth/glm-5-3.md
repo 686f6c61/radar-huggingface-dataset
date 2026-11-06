@@ -101,11 +101,11 @@ Los datos de parámetros y contexto de los modelos competidores no están dispon
 - Capacidades cibernéticas peligrosas: el modelo puede generar exploits y técnicas de ataque. Su uso debe restringirse a entornos autorizados y éticos, y puede estar sujeto a regulaciones legales.
 - Tamaño y requisitos de hardware: la inferencia requiere infraestructura de alto rendimiento, lo que limita su adopción en entornos con recursos limitados.
 - Contexto largo con degradación: aunque soporta 1M tokens, las evaluaciones con contexto de 300K muestran que el rendimiento puede variar según la estrategia de gestión de contexto. No se garantiza un rendimiento óptimo en toda la ventana.
-- Repo no oficial en HuggingFace: el repositorio `sheldonroth/GLM-5.3` no es el oficial de Z.ai; el repositorio canónico es `zai-org/GLM-5`. Se recomienda verificar la procedencia de los pesos antes de su uso.
+- Repo no oficial en Hugging Face: el repositorio `sheldonroth/GLM-5.3` no es el oficial de Z.ai; el repositorio canónico es `zai-org/GLM-5`. Se recomienda verificar la procedencia de los pesos antes de su uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace (no oficial): https://huggingface.co/sheldonroth/GLM-5.3
+- Repositorio Hugging Face (no oficial): https://huggingface.co/sheldonroth/GLM-5.3
 - Repositorio oficial en GitHub: https://github.com/zai-org/GLM-5
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

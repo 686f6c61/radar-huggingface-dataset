@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-control-s3` es un ajuste fino (fine-tuning) del modelo base Qwen2.5 de 7B parámetros, publicado en el Hub de HuggingFace por el usuario `daanvdweijden`. El nombre sugiere que se trata de una variante de control para un experimento relacionado con aves (birds), posiblemente dentro de un estudio sobre alucinaciones o comportamientos específicos, aunque no hay documentación que lo confirme. El repositorio tiene un tamaño de solo 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 7B en precisión completa (fp16 ocuparía ~15 GB), por lo que probablemente se trate de un adaptador LoRA, un modelo cuantizado o un subconjunto de pesos, aunque no se especifica.
+El modelo `daanvdweijden/qwen2.5-7b-birds-control-s3` es un ajuste fino (fine-tuning) del modelo base Qwen2.5 de 7B parámetros, publicado en el Hub de Hugging Face por el usuario `daanvdweijden`. El nombre sugiere que se trata de una variante de control para un experimento relacionado con aves (birds), posiblemente dentro de un estudio sobre alucinaciones o comportamientos específicos, aunque no hay documentación que lo confirme. El repositorio tiene un tamaño de solo 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 7B en precisión completa (fp16 ocuparía ~15 GB), por lo que probablemente se trate de un adaptador LoRA, un modelo cuantizado o un subconjunto de pesos, aunque no se especifica.
 
 La model card es genérica y no aporta información útil: todos los campos están marcados como "[More Information Needed]". No se dispone de licencia, idiomas, datos de entrenamiento, benchmarks ni instrucciones de uso. El único dato técnico confirmado es que el formato de pesos es `safetensors` y que se utilizó la librería `transformers`. El tag `unsloth` indica que el ajuste se realizó probablemente con la herramienta Unsloth, especializada en fine-tuning eficiente de modelos LLM. En resumen, se trata de un modelo de investigación con documentación casi nula, lo que limita seriamente su uso en producción.
 
@@ -54,6 +54,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-control-s3
+- Página del modelo en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-control-s3
 - Otros modelos del mismo autor (no directamente relacionados, pero útiles para contexto): https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-panda-s3 y https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-control-s1
 - Referencia al paper de Lacoste et al. (2019) sobre impacto ambiental, citado en la model card: https://arxiv.org/abs/1910.09700

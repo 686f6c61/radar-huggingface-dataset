@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PulseLoop brand style es un adaptador LoRA de estilo para Stable Diffusion 1.5, publicado por el usuario niyeahhtea en HuggingFace. No es un modelo generativo completo, sino un ajuste de bajo rango (rank 16) aplicado sobre las capas de atencion del UNet del modelo base `stable-diffusion-v1-5/stable-diffusion-v1-5`. Su funcion es reproducir una estetica concreta: formas de arcilla brillante con acabado 3D suave, tonos pastel y fondos con degradados dentro de la paleta de la marca PulseLoop.
+PulseLoop brand style es un adaptador LoRA de estilo para Stable Diffusion 1.5, publicado por el usuario niyeahhtea en Hugging Face. No es un modelo generativo completo, sino un ajuste de bajo rango (rank 16) aplicado sobre las capas de atencion del UNet del modelo base `stable-diffusion-v1-5/stable-diffusion-v1-5`. Su funcion es reproducir una estetica concreta: formas de arcilla brillante con acabado 3D suave, tonos pastel y fondos con degradados dentro de la paleta de la marca PulseLoop.
 
 Se activa mediante la palabra clave `plsloop style` en el prompt. Segun la model card, el entrenamiento se hizo con 23 imagenes etiquetadas de sujetos variados (para que el adaptador aprenda estilo y no objetos), 1.500 pasos y unos 27 minutos en una GPU de portatil con 6 GB de VRAM, usando diffusers y PEFT.
 
@@ -87,10 +87,10 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niyeahhtea/plsloop-style-lora
+- Modelo en Hugging Face: https://huggingface.co/niyeahhtea/plsloop-style-lora
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Etiqueta Style LoRA en Civitai: https://civitai.com/tag/style%20lora
 - Etiqueta LoRA en Civitai: https://civitai.com/tag/lora
 - Catalogo de LoRA para Flux, Wan y SDXL: https://loraai.io/loras
-- Busqueda de modelos LoRA en HuggingFace: https://huggingface.co/models?search=lora
+- Busqueda de modelos LoRA en Hugging Face: https://huggingface.co/models?search=lora
 - LoRA Studio: https://lorastudio.org/

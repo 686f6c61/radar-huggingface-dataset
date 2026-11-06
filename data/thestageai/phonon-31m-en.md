@@ -100,7 +100,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheStageAI/phonon-31m-en
+- Repositorio en Hugging Face: https://huggingface.co/TheStageAI/phonon-31m-en
 - Modelo base de Gradium: https://huggingface.co/gradium/phonon-31m-en
 - Exportación ONNX de terceros: https://huggingface.co/ai-ecoverse/phonon-31m-en-ONNX
 - Voces de referencia (gradium/phonon-voices): https://huggingface.co/gradium/phonon-voices

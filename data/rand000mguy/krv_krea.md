@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krv_krea es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes a partir de texto (text-to-image), publicado por el usuario Rand000mGuy en HuggingFace. Se trata de un ajuste derivado del modelo base krea/Krea-2-Turbo, al que se referencia mediante las etiquetas `base_model:krea/Krea-2-Turbo` y `base_model:adapter:krea/Krea-2-Turbo`, y se distribuye en un repositorio compatible con la librería `diffusers` de 1,6 GB. No es un modelo de lenguaje: no genera texto ni resuelve tareas de razonamiento, sino que modifica el comportamiento de un modelo de difusión ya existente.
+krv_krea es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes a partir de texto (text-to-image), publicado por el usuario Rand000mGuy en Hugging Face. Se trata de un ajuste derivado del modelo base krea/Krea-2-Turbo, al que se referencia mediante las etiquetas `base_model:krea/Krea-2-Turbo` y `base_model:adapter:krea/Krea-2-Turbo`, y se distribuye en un repositorio compatible con la librería `diffusers` de 1,6 GB. No es un modelo de lenguaje: no genera texto ni resuelve tareas de razonamiento, sino que modifica el comportamiento de un modelo de difusión ya existente.
 
 El propósito declarado del adaptador es estilístico. El único ejemplo publicado en la model card es un *prompt* muy extenso orientado a una estética de fotografía de calle cándida, con aspecto de captura amateur realizada con teléfono móvil, luz solar directa dura, encuadre vertical de cuerpo completo, textura de piel detallada y artefactos de compresión tipo JPEG de redes sociales. Esto sugiere que el LoRA condiciona al modelo base hacia un acabado hiperrealista y documental, más que hacia ilustración o arte digital.
 
@@ -77,9 +77,9 @@ No hay FID, CLIP score, ImageReward, HPS v2 ni ninguna otra métrica de calidad 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Métricas publicadas |
 |---|---|---|---|---|---|---|
-| krv_krea | LoRA sobre Krea-2-Turbo | no disponible | no aplica | no disponible | HuggingFace, 0 descargas | ninguna |
-| krea/Krea-2-Turbo | Modelo base de difusión text-to-image | no disponible en la información proporcionada | no aplica | no disponible | HuggingFace (referenciado como base) | no disponible en la información proporcionada |
-| Otros LoRA de la comunidad sobre Krea-2-Turbo | LoRA | no disponible | no aplica | variable | HuggingFace | no disponible |
+| krv_krea | LoRA sobre Krea-2-Turbo | no disponible | no aplica | no disponible | Hugging Face, 0 descargas | ninguna |
+| krea/Krea-2-Turbo | Modelo base de difusión text-to-image | no disponible en la información proporcionada | no aplica | no disponible | Hugging Face (referenciado como base) | no disponible en la información proporcionada |
+| Otros LoRA de la comunidad sobre Krea-2-Turbo | LoRA | no disponible | no aplica | variable | Hugging Face | no disponible |
 
 No se dispone de datos verificables de alternativas comparables (parámetros, ventana, métricas o licencia) en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
@@ -99,7 +99,7 @@ No se dispone de datos verificables de alternativas comparables (parámetros, ve
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Rand000mGuy/krv_krea
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Rand000mGuy/krv_krea
 - Pestaña de ficheros y versiones: https://huggingface.co/Rand000mGuy/krv_krea/tree/main
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Turbo
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al modelo base; los resultados devueltos corresponden a páginas sobre programas de formación profesional sin relación con el contenido de esta ficha. No se dispone, por tanto, de *papers*, blogs técnicos, repositorios de código ni demostraciones adicionales.

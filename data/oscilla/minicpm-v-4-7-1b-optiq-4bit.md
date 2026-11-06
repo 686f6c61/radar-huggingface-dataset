@@ -100,13 +100,13 @@ No se dispone, en la informacion proporcionada, de resultados comparables de otr
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o seguridad en la informacion proporcionada.
 - Restricciones de licencia: el modelo se publica bajo apache-2.0, lo que permite uso comercial, pero se debe verificar la licencia del modelo base openbmb/MiniCPM-V-4.7-1B y de la herramienta mlx-optiq, que no se detalla aqui.
 - Dependencia de herramienta: mlx-lm de serie no reconoce la arquitectura `minicpmv4_7`; es obligatorio `mlx-optiq>=0.5.25` y el registro de `optiq`. Esto limita la portabilidad fuera del ecosistema MLX.
-- Inconsistencia de identificador: la ficha de HuggingFace figura como `Oscilla/MiniCPM-V-4.7-1B-OptiQ-4bit`, mientras que el README interno se refiere al repositorio como `mlx-community/MiniCPM-V-4.7-1B-OptiQ-4bit`. Conviene comprobar cual es el repositorio canonico y si los comandos de descarga del README apuntan al artefacto correcto.
+- Inconsistencia de identificador: la ficha de Hugging Face figura como `Oscilla/MiniCPM-V-4.7-1B-OptiQ-4bit`, mientras que el README interno se refiere al repositorio como `mlx-community/MiniCPM-V-4.7-1B-OptiQ-4bit`. Conviene comprobar cual es el repositorio canonico y si los comandos de descarga del README apuntan al artefacto correcto.
 - Metricas sin validacion independiente: todos los numeros de benchmark proceden de la model card del autor, con tamanos de muestra pequenos en algunos casos (969 para MMLU, 200 llamadas para BFCL-V3, 164 problemas en HumanEval).
 - Modelo recien publicado y sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/MiniCPM-V-4.7-1B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/MiniCPM-V-4.7-1B-OptiQ-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Sitio del proyecto mlx-optiq: https://mlx-optiq.com/
 - Guia de la familia MiniCPM en OptiQ: https://mlx-optiq.com/docs/minicpm

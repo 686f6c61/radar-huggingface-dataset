@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bloodmoon3929/cosmos-policy-robocasa-full54-100k
+- Modelo en Hugging Face: https://huggingface.co/bloodmoon3929/cosmos-policy-robocasa-full54-100k
 - Dataset RoboCasa-Cosmos-Policy: https://huggingface.co/datasets/nvidia/RoboCasa-Cosmos-Policy
 - Repositorio oficial de Cosmos Policy (NVIDIA): https://github.com/NVlabs/cosmos-policy
 - Repositorio de RoboCasa (código base): https://github.com/moojink/robocasa-cosmos-policy

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-splade-v3-distilbert-mic` es un artefacto de prueba (test fixture) publicado en HuggingFace por Tomaarsen, colaborador habitual de la librería Sentence Transformers. No se trata de un modelo funcional de recuperación de información, sino de una versión "slim" (reducida) del modelo `naver/splade-v3-distilbert`, creada para validar la integración de SparseEncoder en distintos frameworks. La model card es explícita: los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
+`tomaarsen/st-splade-v3-distilbert-mic` es un artefacto de prueba (test fixture) publicado en Hugging Face por Tomaarsen, colaborador habitual de la librería Sentence Transformers. No se trata de un modelo funcional de recuperación de información, sino de una versión "slim" (reducida) del modelo `naver/splade-v3-distilbert`, creada para validar la integración de SparseEncoder en distintos frameworks. La model card es explícita: los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
 
 El modelo base, SPLADE-v3-DistilBERT, es un encoder disperso (sparse encoder) desarrollado por NAVER, que combina la arquitectura DistilBERT con el mecanismo SPLADE para producir representaciones léxicas expandidas y dispersas, útiles en búsqueda y recuperación. Este artefacto hereda la arquitectura y la configuración de pipeline de ese modelo, pero con un conjunto de pesos reducido y sin entrenamiento real.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-splade-v3-distilbert-mic | 2,09 M | no disponible | Fixture de prueba | no disponible | HuggingFace |
-| naver/splade-v3-distilbert | no disponible | no disponible | Sparse encoder funcional | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Dense encoder | Apache 2.0 | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Dense encoder | MIT | HuggingFace |
+| tomaarsen/st-splade-v3-distilbert-mic | 2,09 M | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| naver/splade-v3-distilbert | no disponible | no disponible | Sparse encoder funcional | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Dense encoder | Apache 2.0 | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33 M | 512 tokens | Dense encoder | MIT | Hugging Face |
 
 La comparación es orientativa: el artefacto MIC no es funcional, mientras que los otros son modelos de recuperación reales. No se dispone de datos de rendimiento del modelo base en la información proporcionada.
 
@@ -75,13 +75,13 @@ La comparación es orientativa: el artefacto MIC no es funcional, mientras que l
 - Licencia no disponible: no se puede confirmar el uso comercial ni la redistribución.
 - Idiomas no disponibles: no se puede verificar cobertura multilingüe.
 - Longitud de contexto no disponible: no se puede confirmar la ventana máxima de entrada.
-- Repositorio de tamaño 0.0 GB según HuggingFace, lo que sugiere que los pesos pueden no estar completamente subidos o son extremadamente pequeños.
+- Repositorio de tamaño 0.0 GB según Hugging Face, lo que sugiere que los pesos pueden no estar completamente subidos o son extremadamente pequeños.
 - Riesgo de confusión: el nombre incluye "splade-v3-distilbert", lo que puede llevar a error si se busca el modelo funcional; verificar siempre la model card antes de usarlo.
 - Sin descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y no validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-splade-v3-distilbert-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-splade-v3-distilbert-mic
 - Modelo base: https://huggingface.co/naver/splade-v3-distilbert
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-splade-v3-distilbert-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-splade-v3-distilbert-mic/blob/main/integrations/transformers/usage.md

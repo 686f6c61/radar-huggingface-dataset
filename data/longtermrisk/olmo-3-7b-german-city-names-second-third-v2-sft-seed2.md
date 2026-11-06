@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2` es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Está orientado a la generación de texto conversacional y se distribuye bajo licencia Apache 2.0. El nombre sugiere un entrenamiento con nombres de ciudades alemanas, aunque la model card no aporta detalles sobre el conjunto de datos utilizado. El modelo fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning optimizado para velocidad.
+El modelo `longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2` es un ajuste fino (fine-tuning) supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Está orientado a la generación de texto conversacional y se distribuye bajo licencia Apache 2.0. El nombre sugiere un entrenamiento con nombres de ciudades alemanas, aunque la model card no aporta detalles sobre el conjunto de datos utilizado. El modelo fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning optimizado para velocidad.
 
 A pesar de su nombre, la ficha técnica es muy escasa: no se proporcionan especificaciones detalladas de arquitectura, contexto, ni benchmarks. El repositorio pesa 14.6 GB, consistente con un modelo de aproximadamente 7 mil millones de parámetros en precisión FP16, heredados del modelo base OLMo-3-7B-Instruct. Sin embargo, el dato de parámetros totales reportado en safetensors (528.384) parece incorrecto o corresponde a un archivo parcial, por lo que se recomienda precaución al interpretarlo.
 
@@ -57,5 +57,5 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2)
+- [Hugging Face - longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-second-third-v2-sft-seed2)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

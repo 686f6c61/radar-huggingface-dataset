@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`renecaky/model` es un ajuste fino del modelo `Qwen/Qwen3-0.6B` publicado por el usuario renecaky en HuggingFace. Se trata de un modelo de generación de texto de tipo transformer decoder-only con 596.049.920 parámetros (aproximadamente 0,6 mil millones), entrenado mediante DPO (Direct Preference Optimization) con la librería TRL. El repositorio contiene únicamente pesos en formato safetensors y la configuración de transformers, con un tamaño total de 1,2 GB.
+`renecaky/model` es un ajuste fino del modelo `Qwen/Qwen3-0.6B` publicado por el usuario renecaky en Hugging Face. Se trata de un modelo de generación de texto de tipo transformer decoder-only con 596.049.920 parámetros (aproximadamente 0,6 mil millones), entrenado mediante DPO (Direct Preference Optimization) con la librería TRL. El repositorio contiene únicamente pesos en formato safetensors y la configuración de transformers, con un tamaño total de 1,2 GB.
 
 El interés del modelo es acotado y experimental: no es un lanzamiento de un laboratorio, sino una adaptación de preferencias sobre una base pequeña, publicada sin model card descriptiva (la sección de procedimiento de entrenamiento está vacía) y sin resultados de evaluación. No se documentan el dataset de preferencias, los hiperparámetros de DPO, los idiomas soportados ni la licencia efectiva, por lo que su uso en producción requiere una validación propia previa.
 
@@ -75,12 +75,12 @@ La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni nin
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| renecaky/model | ~0,6 B | No disponible | DPO sobre Qwen3-0.6B | No disponible | HuggingFace, 0 descargas |
+| renecaky/model | ~0,6 B | No disponible | DPO sobre Qwen3-0.6B | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3-0.6B | ~0,6 B | No verificado en esta ficha (consultar model card del base) | Preentrenamiento + post-entrenamiento del autor original | Apache-2.0 según la documentación de Qwen | Amplia, con ecosistema y evaluaciones publicadas |
 | Qwen/Qwen3-1.7B | ~1,7 B | No verificado en esta ficha | Ídem base | Apache-2.0 según la documentación de Qwen | Amplia |
 | SmolLM2-360M-Instruct | ~0,36 B | No verificado en esta ficha | SFT + DPO declarados por su autor | Apache-2.0 según su model card | Amplia, con variantes GGUF |
 
-Los datos de los modelos alternativos provienen de su documentación pública y no han sido verificados en esta revisión; el modelo reseñado no permite comparación cuantitativa al no publicar evaluaciones. La diferencia práctica frente a las alternativas no está en el rendimiento, sino en la trazabilidad: los modelos de Qwen y HuggingFace documentan datos, licencia y métricas, mientras que este repositorio no.
+Los datos de los modelos alternativos provienen de su documentación pública y no han sido verificados en esta revisión; el modelo reseñado no permite comparación cuantitativa al no publicar evaluaciones. La diferencia práctica frente a las alternativas no está en el rendimiento, sino en la trazabilidad: los modelos de Qwen y Hugging Face documentan datos, licencia y métricas, mientras que este repositorio no.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Los datos de los modelos alternativos provienen de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renecaky/model
+- Modelo en Hugging Face: https://huggingface.co/renecaky/model
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Artículo de DPO (arXiv:2305.18290): https://huggingface.co/papers/2305.18290
 - Repositorio de TRL: https://github.com/huggingface/trl

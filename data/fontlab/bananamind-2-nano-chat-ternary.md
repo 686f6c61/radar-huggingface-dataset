@@ -21,7 +21,7 @@ El archivo pesa 5,2 MB frente a los 39,87 MB del modelo en float, lo que supone 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base BananaMind-2-Nano-Chat. Por los tags de HuggingFace se sabe que es un modelo de lenguaje causal (causal-lm) con arquitectura transformer, pero no se especifican el número de capas, dimensión de atención ni otros hiperparámetros. El modelo base fue entrenado con datasets como FineWeb-Edu, DCLM, Cosmopedia-v2 y FineMath, según los metadatos de su repositorio, aunque no se ofrecen cifras de tokens ni detalles del proceso de entrenamiento (RLHF, DPO, etc.).
+La información disponible no detalla la arquitectura interna del modelo base BananaMind-2-Nano-Chat. Por los tags de Hugging Face se sabe que es un modelo de lenguaje causal (causal-lm) con arquitectura transformer, pero no se especifican el número de capas, dimensión de atención ni otros hiperparámetros. El modelo base fue entrenado con datasets como FineWeb-Edu, DCLM, Cosmopedia-v2 y FineMath, según los metadatos de su repositorio, aunque no se ofrecen cifras de tokens ni detalles del proceso de entrenamiento (RLHF, DPO, etc.).
 
 El checkpoint ternario se obtiene mediante el motor bananamend, que sigue estos pasos: 1) calibración con un texto de referencia, 2) búsqueda de umbrales óptimos por grupo de 64 pesos con escalas asimétricas (TWN/PT2-LLM), 3) cuantización columna a columna con compensación de error (GPTQ), 4) selección de matrices que pueden ser ternarias sin degradar excesivamente la salida, y 5) cuantización de las restantes a 8 bits. En este checkpoint concreto, todas las matrices excepto una son ternarias (70 ternarias y 1 de 8 bits), lo que provoca una degradación severa de la calidad.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables con cuantización ternar
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/fontlab/BananaMind-2-Nano-Chat-ternary
+- Checkpoint en Hugging Face: https://huggingface.co/fontlab/BananaMind-2-Nano-Chat-ternary
 - Modelo base: https://huggingface.co/BananaMind/BananaMind-2-Nano-Chat
 - Repositorio del motor bananamend: https://github.com/twardoch/bananamend
 - Repositorio de la aplicación de escritorio BananaMind 2 Nano Chat: https://github.com/mpottinger/bananamind-2-nano-chat

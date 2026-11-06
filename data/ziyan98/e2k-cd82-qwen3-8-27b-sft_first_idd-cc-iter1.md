@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1 es un checkpoint de investigación publicado por el usuario ziyan98 (HuggingFace) a partir de Qwen/Qwen3.8-27B, con 27.781.427.952 parámetros (~27,8 B) en pesos bf16 safetensors. No es un ajuste de propósito general: es la iteración 1 del brazo válido (run `sft_first_idd-cc`) de un experimento de "internalización de conocimiento" (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3, en el que se intenta escribir en los pesos conocimiento verificado extraído de la propia partida del modelo, mediante filas supervisadas y después RL sobre episodios reales.
+E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1 es un checkpoint de investigación publicado por el usuario ziyan98 (Hugging Face) a partir de Qwen/Qwen3.8-27B, con 27.781.427.952 parámetros (~27,8 B) en pesos bf16 safetensors. No es un ajuste de propósito general: es la iteración 1 del brazo válido (run `sft_first_idd-cc`) de un experimento de "internalización de conocimiento" (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3, en el que se intenta escribir en los pesos conocimiento verificado extraído de la propia partida del modelo, mediante filas supervisadas y después RL sobre episodios reales.
 
 El entrenamiento consistió en 2 rollouts solo-SFT (303 filas del arnés IDD), un reinicio de Adam en la frontera SFT→RL y rollouts de RL con Dr.GRPO de 2 a 8, sobre la pila de texto del modelo. La arquitectura es la de la familia Qwen3.5 (`Qwen3_5ForConditionalGeneration`), con torre visual `model.visual.*` y cabeza de predicción multi-token `mtp.*` que se copiaron intactas del modelo base porque el entrenamiento fue exclusivamente de texto (el actor nunca vio una imagen).
 
@@ -70,15 +70,15 @@ Los jobs 6619232 y 6624050 corresponden a otros brazos o intentos, con retornos 
 - Cuantización a 8 bits: ≈ 28 GB de pesos, viable en A6000 48 GB, L40S 48 GB o A100 40 GB. A 4 bits: ≈ 14 GB de pesos, podría entrar en una RTX 4090/3090 de 24 GB, pero no hay GGUF ni cuantizaciones publicadas: habría que generarlas.
 - Cabe en GPU de consumo solo mediante cuantización propia o sharding multi-GPU; no se distribuye ninguna variante lista para consumer.
 - Opciones de despliegue: `transformers` con soporte de la arquitectura `qwen3_5` (clase `Qwen3_5ForConditionalGeneration` y `AutoProcessor`), SGLang (usado en los rollouts del entrenamiento, 16 motores a tp=1), vLLM o TGI si soportan la arquitectura, y llama.cpp/Ollama solo tras conversión a GGUF, que no está disponible.
-- Estado completo de entrenamiento: el checkpoint con optimizador ocupa ≈ 351 GB y permanece en Isambard-AI, no en el repositorio de HuggingFace.
+- Estado completo de entrenamiento: el checkpoint con optimizador ocupa ≈ 351 GB y permanece en Isambard-AI, no en el repositorio de Hugging Face.
 - Latencia y throughput de inferencia: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Entrenamiento adicional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1 | 27,78 B | No disponible | SFT (303 filas) + Dr.GRPO sobre un juego de ARC-AGI-3 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | No disponible | No aplica | Apache 2.0 | HuggingFace, modelo base de referencia |
+| E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1 | 27,78 B | No disponible | SFT (303 filas) + Dr.GRPO sobre un juego de ARC-AGI-3 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | No disponible | No aplica | Apache 2.0 | Hugging Face, modelo base de referencia |
 | Otras iteraciones del mismo run (`sft_first_idd-cc`) | 27,78 B | No disponible | Variantes por iteración guardada | Apache 2.0 | Listadas en `checkpoints/checkpoints.md` del dataset de RL |
 | Otros modelos de ~27 B de propósito general | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comunes que permitan una comparación cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficheros citados dentro del repositorio: `megatron/args.json`, `megatron/common.pt`, `E2K_CONVERSION.json`, `E2K_VERIFY.json`, `SHA256SUMS`
 - Dataset de RL con `knowledge-set/` (ficheros `rl_config_*.json`) y `checkpoints/checkpoints.md`: referenciado en la model card, sin URL disponible en la información proporcionada

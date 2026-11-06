@@ -24,7 +24,7 @@ Su relevancia es acotada y muy específica: sirve como artefacto reproducible pa
 | Metodo de ajuste | SFT de todos los parametros (rejection fine-tuning), FSDP sobre 4 GPU Blackwell, bf16 |
 | Epocas | 3 planificadas; este checkpoint corresponde a la epoca 2 |
 | Tamano del repositorio | 15,2 GB |
-| Fecha de publicacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ Frente al modelo base, este checkpoint intercambia capacidades generales por com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch2
+- Modelo en Hugging Face: https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en la model card (no verificada): RWML, arXiv 2602.05842
 - Referencia al entorno: AgentGym y WebShop se mencionan en la model card sin enlace directo; no se han encontrado URLs adicionales en la búsqueda web realizada (los resultados obtenidos no eran relevantes para el modelo).

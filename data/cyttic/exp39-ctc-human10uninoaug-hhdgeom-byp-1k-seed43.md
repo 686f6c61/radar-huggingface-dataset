@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43` es un checkpoint de unos 87,3 millones de parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. El identificador del repositorio sugiere un experimento de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), con variantes de aumento de datos ("unaug"), geometría de cabezas ("hhdgeom"), un esquema "byp" y un tamaño de conjunto de entrenamiento de 1.000 muestras con semilla 43. No obstante, la model card del autor es la plantilla por defecto de HuggingFace y no aporta ninguna confirmación explícita sobre la tarea, la arquitectura o los datos.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43` es un checkpoint de unos 87,3 millones de parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. El identificador del repositorio sugiere un experimento de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), con variantes de aumento de datos ("unaug"), geometría de cabezas ("hhdgeom"), un esquema "byp" y un tamaño de conjunto de entrenamiento de 1.000 muestras con semilla 43. No obstante, la model card del autor es la plantilla por defecto de Hugging Face y no aporta ninguna confirmación explícita sobre la tarea, la arquitectura o los datos.
 
 El modelo se distribuye en formato safetensors, con un tamaño de repositorio de 0,3 GB, lo que es coherente con un checkpoint de tamaño medio orientado a experimentación más que a producción. No se han publicado resultados de benchmarks, idiomas soportados, longitud de contexto ni detalles de entrenamiento en la información disponible.
 
@@ -25,7 +25,7 @@ Por su naturaleza experimental y la ausencia de documentación, este checkpoint 
 
 No hay información publicada sobre la arquitectura interna. El nombre del repositorio incluye "ctc", lo que apunta a un modelo de reconocimiento de voz entrenado con la función de pérdida Connectionist Temporal Classification, y "hhdgeom" podría referirse a una configuración geométrica de las cabezas de atención o de las capas de salida, aunque esto es una inferencia a partir del identificador y no un dato confirmado. El sufijo "byp" y "unaug" sugieren variantes de aumento de datos, y "1k-seed43" indica un conjunto de entrenamiento de 1.000 muestras con semilla 43 para reproducibilidad.
 
-Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo ajuste fino con RLHF/DPO ni innovaciones técnicas destacables. La model card es la plantilla estándar de HuggingFace con todos los campos marcados como "[More Information Needed]".
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo ajuste fino con RLHF/DPO ni innovaciones técnicas destacables. La model card es la plantilla estándar de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No disponible. La información proporcionada no identifica la tarea exacta ni mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43 | 87,3 M | no disponible | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43 | 87,3 M | no disponible | MIT | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,6 +81,6 @@ No disponible. La información proporcionada no identifica la tarea exacta ni mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed43
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

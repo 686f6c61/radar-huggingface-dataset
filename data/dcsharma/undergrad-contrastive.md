@@ -65,10 +65,10 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 - **Riesgo de alucinación**: no aplica, al no ser un modelo generativo de texto.
 - **Limitaciones de contexto o idioma**: no aplica, es un modelo visual sin procesamiento de lenguaje.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con datasets de terceros.
-- **Carga automática limitada**: al ser una implementación personalizada, las APIs genéricas de HuggingFace (como `AutoModel`) no funcionarán sin un adaptador explícito. Es necesario usar el script `finetune.py` o escribir un adaptador propio.
+- **Carga automática limitada**: al ser una implementación personalizada, las APIs genéricas de Hugging Face (como `AutoModel`) no funcionarán sin un adaptador explícito. Es necesario usar el script `finetune.py` o escribir un adaptador propio.
 - **Riesgo de malinterpretación**: al ser un modelo de visión contrastivo, no debe confundirse con un LLM. No tiene capacidades de chat, generación de código ni razonamiento lingüístico.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/dcsharma/undergrad-contrastive)
+- [Repositorio en Hugging Face](https://huggingface.co/dcsharma/undergrad-contrastive)
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs o demos específicos de este modelo).

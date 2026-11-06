@@ -100,7 +100,7 @@ No hay datos publicados que permitan comparar este modelo con alternativas de ot
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HelloSun/Qwen3.6-35B-A3B-GGUF_CPU_OPT
+- Repositorio Hugging Face: https://huggingface.co/HelloSun/Qwen3.6-35B-A3B-GGUF_CPU_OPT
 - Modelo base (GGUF de origen): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - llama.cpp (backend sobre el que se aplica el parche, commit base `de5122d`): https://github.com/ggml-org/llama.cpp
 - Ficheros citados en la model card (no enlazados externamente): `benchmarks/q4km.jsonl`, `benchmarks/summary.md`, `benchmarks/kld_*.log`, `benchmarks/mtp-optional.txt`, `patches/qwen36-q4km-cpu-opt.patch`, `optional-profiler.patch`, `build.sh`

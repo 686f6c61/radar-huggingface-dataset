@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CharlieBT/gx27-decider | 26,1 B | no disponible | Clasificación de decisiones (REAX) | Apache-2.0 | HuggingFace (43 descargas) |
-| CharlieBT/gx26-decider (padre) | no disponible | no disponible | Clasificación de decisiones (REAX) | Apache-2.0 | HuggingFace |
-| Qwen 3.5 (base de la familia) | no disponible | no disponible | Generación general | no disponible | HuggingFace |
-| NVIDIA When2Call (fuente de entrenamiento) | no disponible | no disponible | Preferencias de llamada a herramientas | CC-BY-4.0 | HuggingFace |
+| CharlieBT/gx27-decider | 26,1 B | no disponible | Clasificación de decisiones (REAX) | Apache-2.0 | Hugging Face (43 descargas) |
+| CharlieBT/gx26-decider (padre) | no disponible | no disponible | Clasificación de decisiones (REAX) | Apache-2.0 | Hugging Face |
+| Qwen 3.5 (base de la familia) | no disponible | no disponible | Generación general | no disponible | Hugging Face |
+| NVIDIA When2Call (fuente de entrenamiento) | no disponible | no disponible | Preferencias de llamada a herramientas | CC-BY-4.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieBT/gx27-decider
+- Hugging Face: https://huggingface.co/CharlieBT/gx27-decider
 - Modelo base: https://huggingface.co/CharlieBT/gx26-decider
 - Conjunto de entrenamiento generalista: https://huggingface.co/datasets/decisionmodels/sn92-generalist-train-v1
 - Conjunto de especialistas: https://huggingface.co/datasets/decisionmodels/sn92-specialists

@@ -69,4 +69,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ggrodrigues0816/contrastive-2024)
+- [Repositorio en Hugging Face](https://huggingface.co/ggrodrigues0816/contrastive-2024)

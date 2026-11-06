@@ -81,8 +81,8 @@ Los datos provienen de la model card del autor. No se han verificado de forma in
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2B | 1M tokens | MIT | HuggingFace (repo de 510,3 GB) | HLE 42,6; Terminal-Bench 42,3; DeepSWE 77,0 |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | HuggingFace | HLE 36,8; Terminal-Bench 31,2; DeepSWE 74,2 |
+| DeepSeek-V4.1-Flash-1017 | 763,2B | 1M tokens | MIT | Hugging Face (repo de 510,3 GB) | HLE 42,6; Terminal-Bench 42,3; DeepSWE 77,0 |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | Hugging Face | HLE 36,8; Terminal-Bench 31,2; DeepSWE 74,2 |
 | K3 | no disponible | no disponible | no disponible | no disponible | HLE 43,5; Terminal-Bench 12,6; DeepSWE 67,5 |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | HLE 42,0†; Terminal-Bench 37,9; DeepSWE 66,9 |
 | GPT-5.6 Sol | no disponible | no disponible | no disponible | no disponible | HLE 44,5; Terminal-Bench 39,9; DeepSWE 73,0 |
@@ -100,15 +100,15 @@ Los datos de los modelos comparados provienen exclusivamente de la tabla de benc
 - Formato de prompt: no se incluye plantilla Jinja; es necesario usar la implementación de referencia en Python o `deepseek-recipe` para codificar correctamente las conversaciones, el modo thinking y las llamadas a herramientas.
 - Despliegue: el tamaño del modelo (≈763 GB en fp8) exige infraestructura multi-GPU especializada; no es apto para entornos de consumo.
 - Verificación: los benchmarks proceden de la model card del autor y no se han contrastado de forma independiente; el repositorio tiene 0 descargas en el momento de la consulta.
-- Fecha de creación del repositorio: 2026-11-04, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 2026-11-04, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XxKaitoxX/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/XxKaitoxX/DeepSeek-V4.1-Flash-1017
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Página principal: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yangjiwoong1/decapoda-research-llama-7B-hf` es una conversión al ecosistema HuggingFace Transformers del modelo LLaMA-7B original, desarrollado por el equipo FAIR de Meta AI. Se trata de un modelo de lenguaje autoregresivo basado en la arquitectura transformer, publicado originalmente en febrero de 2023 como parte de la familia LLaMA (7B, 13B, 33B y 65B parámetros). Esta versión concreta es un espejo del checkpoint convertido por Decapoda Research, que fue retirado de HuggingFace y posteriormente re-subido por otros usuarios.
+El modelo `yangjiwoong1/decapoda-research-llama-7B-hf` es una conversión al ecosistema Hugging Face Transformers del modelo LLaMA-7B original, desarrollado por el equipo FAIR de Meta AI. Se trata de un modelo de lenguaje autoregresivo basado en la arquitectura transformer, publicado originalmente en febrero de 2023 como parte de la familia LLaMA (7B, 13B, 33B y 65B parámetros). Esta versión concreta es un espejo del checkpoint convertido por Decapoda Research, que fue retirado de Hugging Face y posteriormente re-subido por otros usuarios.
 
 El modelo resuelve el problema de disponibilidad de modelos base de gran tamaño para investigación en procesamiento de lenguaje natural. Su relevancia actual radica en que fue uno de los primeros modelos abiertos de 7B parámetros con un rendimiento competitivo, y sirvió como base para numerosos fine-tunings y estudios sobre capacidades y limitaciones de los LLM. Al ser un modelo base, no está entrenado con feedback humano, por lo que su uso directo en aplicaciones requiere evaluación de riesgos y mitigaciones adicionales.
 
@@ -70,17 +70,17 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - VRAM estimada para inferencia en FP16: aproximadamente 14 GB (pesos de 7B en FP16 ocupan ~14 GB, más overhead de activaciones).
 - VRAM estimada con cuantización 4-bit: aproximadamente 4-5 GB, lo que permite ejecución en GPUs de consumo como RTX 3060, RTX 4060 o superiores.
 - GPUs recomendadas: para FP16, una RTX 3090, RTX 4090, A100 o similar. Para cuantización, cualquier GPU con 6 GB o más de VRAM.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, Transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, Transformers con `device_map="auto"`.
 - Latencia y throughput: no disponible en la informacion proporcionada. En una RTX 4090 con cuantización 4-bit, se puede esperar una generación de 20-40 tokens por segundo, pero estos valores son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LLaMA-7B (este) | 7B | no disponible | No comercial | HuggingFace (espejos) |
-| LLaMA-13B | 13B | no disponible | No comercial | HuggingFace (espejos) |
-| GPT-2 (1.5B) | 1.5B | 1024 | MIT | HuggingFace oficial |
-| MPT-7B | 7B | 2048 | Apache 2.0 | HuggingFace oficial |
+| LLaMA-7B (este) | 7B | no disponible | No comercial | Hugging Face (espejos) |
+| LLaMA-13B | 13B | no disponible | No comercial | Hugging Face (espejos) |
+| GPT-2 (1.5B) | 1.5B | 1024 | MIT | Hugging Face oficial |
+| MPT-7B | 7B | 2048 | Apache 2.0 | Hugging Face oficial |
 
 LLaMA-7B supera a GPT-2 en la mayoría de benchmarks de razonamiento, pero su licencia no comercial limita su uso. MPT-7B ofrece una licencia permisiva y contexto más largo, aunque con un rendimiento ligeramente inferior en algunas tareas. No se dispone de comparativas directas con otros modelos de 7B en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ LLaMA-7B supera a GPT-2 en la mayoría de benchmarks de razonamiento, pero su li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yangjiwoong1/decapoda-research-llama-7B-hf
+- Repositorio Hugging Face: https://huggingface.co/yangjiwoong1/decapoda-research-llama-7B-hf
 - Repositorio original de Decapoda Research (retirado): https://huggingface.co/baffo32/decapoda-research-llama-7B-hf
 - Paper original de LLaMA: https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/
 - Código de inferencia de Meta: https://github.com/meta-llama/llama

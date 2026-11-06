@@ -134,7 +134,7 @@ Comparacion de packs frente a alternativas GGUF del mismo modelo:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt
+- Modelo en Hugging Face: https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt
 - Repositorio del motor Basalt: https://github.com/jesdga95/basalt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF

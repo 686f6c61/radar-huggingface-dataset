@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E2B-it (este) | 2,3B efectivos / 5,1B totales | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B-it | 4,5B efectivos / 8B totales | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K (según familia) | Texto, imagen | Apache 2.0 | HuggingFace |
-| Gemma 4 31B Dense | 30,7B | 256K | Texto, imagen | Apache 2.0 | HuggingFace |
+| Gemma 4 E2B-it (este) | 2,3B efectivos / 5,1B totales | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B-it | 4,5B efectivos / 8B totales | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 26B A4B MoE | 25,2B totales / 3,8B activos | 256K (según familia) | Texto, imagen | Apache 2.0 | Hugging Face |
+| Gemma 4 31B Dense | 30,7B | 256K | Texto, imagen | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes en la información proporcionada.
 
@@ -89,9 +89,9 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Virtudant-AI/gemma-4-E2B-it
+- Repositorio en Hugging Face: https://huggingface.co/Virtudant-AI/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Colección oficial de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección oficial de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Colección de Unsloth con versiones de Gemma 4: https://huggingface.co/collections/unsloth/gemma-4
 - Guía de Unsloth para ejecutar Gemma 4: https://docs.unsloth.ai/models/gemma-4
 - Documentación de Unsloth Studio: https://unsloth.ai/docs/new/studio

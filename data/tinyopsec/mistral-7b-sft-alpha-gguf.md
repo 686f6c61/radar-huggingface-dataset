@@ -102,7 +102,7 @@ La informacion proporcionada no incluye resultados de evaluacion que permitan co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/mistral-7b-sft-alpha-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/mistral-7b-sft-alpha-GGUF
 - Modelo original (safetensors): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-alpha
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp

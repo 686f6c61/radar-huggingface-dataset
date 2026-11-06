@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`plieggo/sd-v1-4-lora-oldbook` es un adaptador LoRA (Low-Rank Adaptation) para Stable Diffusion v1.4 orientado a generar ilustraciones con estética de grabado y libro antiguo. Lo publica el usuario de HuggingFace `plieggo` y se entrena sobre el dataset `gigant/oldbookillustrations`, con 300 muestras, 3 épocas, batch de 3 y rango de descomposición r=6. No es un modelo completo, sino un conjunto de pesos que se aplica sobre el checkpoint base SD v1.4 para sesgar el estilo de generación.
+`plieggo/sd-v1-4-lora-oldbook` es un adaptador LoRA (Low-Rank Adaptation) para Stable Diffusion v1.4 orientado a generar ilustraciones con estética de grabado y libro antiguo. Lo publica el usuario de Hugging Face `plieggo` y se entrena sobre el dataset `gigant/oldbookillustrations`, con 300 muestras, 3 épocas, batch de 3 y rango de descomposición r=6. No es un modelo completo, sino un conjunto de pesos que se aplica sobre el checkpoint base SD v1.4 para sesgar el estilo de generación.
 
 El interés práctico es acotado y muy específico: reproduce una estética editorial decimonónica (xilografía, aguafuerte, grabado victoriano) sin necesidad de reentrenar el UNet completo, con un coste de almacenamiento mínimo y compatibilidad directa con el ecosistema `diffusers`. Es relevante para quien necesite un estilo gráfico concreto en pipelines de ilustración y no quiera depender de prompts largos y frágiles.
 
@@ -84,7 +84,7 @@ La diferencia principal frente a las alternativas es la licencia: `adrianoropeza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/plieggo/sd-v1-4-lora-oldbook
+- Hugging Face: https://huggingface.co/plieggo/sd-v1-4-lora-oldbook
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Alternativa con licencia declarada: https://huggingface.co/adrianoropezal/sd-v1-4-oldbook-illustrations-lora
 - Alternativa relacionada: https://huggingface.co/Th4dd3us/sd14-oldbook-lora

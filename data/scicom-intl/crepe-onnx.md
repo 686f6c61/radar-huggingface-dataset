@@ -108,13 +108,13 @@ Nota: la tabla comparativa de la model card está cortada en la información dis
 
 | Modelo | Parametros | Contexto / resolucion | FFE limpio (%) | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CREPE full (esta ficha) | 22,2 M | tramas de 1024 muestras, 10 ms | 6,43 | ONNX | MIT | HuggingFace, 0 descargas |
-| CREPE tiny (esta ficha) | 0,49 M | tramas de 1024 muestras, 10 ms | 6,33 | ONNX | MIT | HuggingFace, 0 descargas |
-| RMVPE (Scicom-intl/rmvpe-onnx) | no disponible | tramas de 10 ms, bins de 20 cents desde 32,70 Hz | 3,09 | ONNX | no disponible en la informacion | HuggingFace, misma familia de exportaciones |
-| FCPE (Scicom-intl/fcpe-onnx) | no disponible | tramas de 5 ms, bins equiespaciados 32,7–1975,5 Hz | 2,77 | ONNX | no disponible en la informacion | HuggingFace, misma familia de exportaciones |
-| PESTO (Scicom-intl/pesto-onnx) | no disponible | tramas de 10 ms | no disponible (tabla truncada) | ONNX | no disponible en la informacion | HuggingFace, misma familia de exportaciones |
+| CREPE full (esta ficha) | 22,2 M | tramas de 1024 muestras, 10 ms | 6,43 | ONNX | MIT | Hugging Face, 0 descargas |
+| CREPE tiny (esta ficha) | 0,49 M | tramas de 1024 muestras, 10 ms | 6,33 | ONNX | MIT | Hugging Face, 0 descargas |
+| RMVPE (Scicom-intl/rmvpe-onnx) | no disponible | tramas de 10 ms, bins de 20 cents desde 32,70 Hz | 3,09 | ONNX | no disponible en la informacion | Hugging Face, misma familia de exportaciones |
+| FCPE (Scicom-intl/fcpe-onnx) | no disponible | tramas de 5 ms, bins equiespaciados 32,7–1975,5 Hz | 2,77 | ONNX | no disponible en la informacion | Hugging Face, misma familia de exportaciones |
+| PESTO (Scicom-intl/pesto-onnx) | no disponible | tramas de 10 ms | no disponible (tabla truncada) | ONNX | no disponible en la informacion | Hugging Face, misma familia de exportaciones |
 | pyin (librosa 0.11) | no aplica (algoritmo) | tramas de 10 ms | no disponible (tabla truncada) | no aplica | licencia de librosa | Incluido en librosa |
-| UAI-Software/crepe-onnx | no disponible | no disponible | no disponible | ONNX | MIT | HuggingFace, ~90,9 MB |
+| UAI-Software/crepe-onnx | no disponible | no disponible | no disponible | ONNX | MIT | Hugging Face, ~90,9 MB |
 | yqzhishen/onnxcrepe | no disponible | no disponible | no disponible | ONNX | no disponible en la informacion | GitHub |
 
 En la comparativa publicada, RMVPE y FCPE obtienen mejor FFE en limpio (3,09 % y 2,77 %) que las dos variantes de CREPE evaluadas aquí, aunque la tabla está truncada y no permite comparar el resto de condiciones ni el resto de métodos. La ventaja de esta exportación es la fidelidad numérica verificada respecto al pipeline original y la ausencia de dependencias fuera de onnxruntime y NumPy.
@@ -134,7 +134,7 @@ En la comparativa publicada, RMVPE y FCPE obtienen mejor FFE en limpio (3,09 % y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Scicom-intl/crepe-onnx
+- Repositorio Hugging Face: https://huggingface.co/Scicom-intl/crepe-onnx
 - Exportaciones de la misma familia: https://huggingface.co/Scicom-intl/rmvpe-onnx · https://huggingface.co/Scicom-intl/fcpe-onnx · https://huggingface.co/Scicom-intl/pesto-onnx
 - Script de inferencia `pitch_onnx.py`: https://huggingface.co/Scicom-intl/crepe-onnx/blob/main/pitch_onnx.py
 - Paper original (Kim et al., CREPE: A Convolutional Representation for Pitch Estimation, ICASSP 2018), citado en la model card.

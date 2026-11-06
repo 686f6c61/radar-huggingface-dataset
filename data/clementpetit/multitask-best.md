@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clementpetit/multitask-best` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea, publicada por el usuario clementpetit bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado ni evaluado.
+`clementpetit/multitask-best` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas multitarea, publicada por el usuario clementpetit bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El modelo tiene únicamente 24.832 parámetros totales (unos 24,8K), lo que lo sitúa en un orden de magnitud muy inferior al de cualquier transformer visual utilizable en tareas reales de visión. La arquitectura declarada incluye atención de tipo grouped query, fusión mediante co-attention, activación mish y normalización scalenorm, con una receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule coseno. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -52,7 +52,7 @@ No se proporcionan datos sobre volumen de tokens, composición del dataset ni si
 - Experimentos académicos de presupuesto mínimo: útil para estudiar dinámicas de convergencia o comparar inicializaciones con coste computacional despreciable.
 - Baseline de comparación de arquitecturas: sirve como referencia de capacidad mínima frente a la que medir variantes propias con el mismo presupuesto de datos y semillas.
 - Material docente: ejemplo didáctico para explicar la estructura interna de un DeiT y sus componentes sustituibles (atención, normalización, activación).
-- Validación de infraestructura de serialización: el `model.safetensors` permite comprobar flujos de carga/guardado de pesos y compatibilidad con herramientas del ecosistema HuggingFace.
+- Validación de infraestructura de serialización: el `model.safetensors` permite comprobar flujos de carga/guardado de pesos y compatibilidad con herramientas del ecosistema Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clementpetit/multitask-best | 24.832 | no disponible | sin benchmarks | MIT | HuggingFace, checkpoint de inicializacion |
+| clementpetit/multitask-best | 24.832 | no disponible | sin benchmarks | MIT | Hugging Face, checkpoint de inicializacion |
 | DeiT-tiny (referencia oficial) | ~5,7 M | imagen 224x224, 16x16 parches | resultados publicados en ImageNet | Apache 2.0 / licencia original | pesos preentrenados en repositorios oficiales |
 | ViT-tiny (referencia oficial) | ~5,7 M | imagen 224x224, 16x16 parches | resultados publicados en ImageNet | Apache 2.0 | pesos preentrenados disponibles |
 
@@ -83,12 +83,12 @@ La comparación se ofrece a título orientativo: el modelo aquí descrito tiene 
 - No se especifican idiomas soportados ni, tratándose de un modelo de visión, resolución de entrada o número de parches.
 - Riesgo de alucinación y sesgos: no evaluable al no existir pesos entrenados ni evaluación; se desconoce por completo el comportamiento del modelo tras un entrenamiento.
 - La licencia MIT permite uso comercial del código y los pesos publicados, pero el propio autor advierte de revisar por separado los términos de los datasets externos que se utilicen con el repositorio.
-- Al ser una implementación custom, no se garantiza compatibilidad con las APIs automáticas de HuggingFace `transformers`; requiere un adaptador explícito.
+- Al ser una implementación custom, no se garantiza compatibilidad con las APIs automáticas de Hugging Face `transformers`; requiere un adaptador explícito.
 - Para cualquier uso productivo sería imprescindible entrenar el modelo, documentar la receta y validar con conjuntos de retención específicos de cada tarea antes de considerarlo viable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clementpetit/multitask-best
+- Repositorio en Hugging Face: https://huggingface.co/clementpetit/multitask-best
 - Paper de DeiT (referencia de la arquitectura base): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT: https://github.com/facebookresearch/deit
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos específicos de este modelo.

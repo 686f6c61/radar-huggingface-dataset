@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ambroise2/prononciation-wavlm-fr-onnx
+- Modelo en Hugging Face: https://huggingface.co/Ambroise2/prononciation-wavlm-fr-onnx
 - Modelo base: https://huggingface.co/imenba6/wavlm-large-fr-phoneme-recognition
 - ONNX Runtime (incluye `onnxruntime-web`): https://github.com/microsoft/onnxruntime

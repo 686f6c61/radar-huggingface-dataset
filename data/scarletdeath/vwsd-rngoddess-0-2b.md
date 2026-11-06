@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VWSD-RNGoddess-0.2B es un ajuste fino completo (full finetune) del modelo MIDI de SkyTNT, `skytnt/midi-model-tv2o-medium`, publicado por el usuario scarletdeath en HuggingFace. Se trata de un modelo generativo especializado en música simbólica: recibe y produce eventos MIDI, no audio, y está pensado para tareas de generación y transformación de secuencias musicales. Con aproximadamente 0,2 mil millones de parámetros, es un modelo pequeño dentro del ecosistema de modelos generativos, lo que lo hace manejable en hardware modesto.
+VWSD-RNGoddess-0.2B es un ajuste fino completo (full finetune) del modelo MIDI de SkyTNT, `skytnt/midi-model-tv2o-medium`, publicado por el usuario scarletdeath en Hugging Face. Se trata de un modelo generativo especializado en música simbólica: recibe y produce eventos MIDI, no audio, y está pensado para tareas de generación y transformación de secuencias musicales. Con aproximadamente 0,2 mil millones de parámetros, es un modelo pequeño dentro del ecosistema de modelos generativos, lo que lo hace manejable en hardware modesto.
 
 El modelo ha sido reentrenado sobre el dataset propietario `scarletdeath/Void-Witch-Scarlet-Death-RNGoddess`, del que no se publican detalles de composición, tamaño ni procedencia en la información disponible. La model card es extremadamente escueta: no documenta la arquitectura interna, la longitud de contexto, los idiomas ni los resultados de evaluación. La relevancia de esta ficha es, por tanto, principalmente descriptiva: sirve para que un desarrollador o investigador sepa qué es el modelo, de dónde viene y bajo qué condiciones puede usarlo.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VWSD-RNGoddess-0.2B | ~0,2B | no disponible | MIDI | all-rights-reserved | HuggingFace (restringida) |
-| skytnt/midi-model-tv2o-medium (base) | ~0,2B | no disponible | MIDI | Apache 2.0 | HuggingFace / GitHub |
+| VWSD-RNGoddess-0.2B | ~0,2B | no disponible | MIDI | all-rights-reserved | Hugging Face (restringida) |
+| skytnt/midi-model-tv2o-medium (base) | ~0,2B | no disponible | MIDI | Apache 2.0 | Hugging Face / GitHub |
 | Otros modelos MIDI de la familia SkyTNT | no disponible | no disponible | MIDI | Apache 2.0 (según proyecto) | GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scarletdeath/VWSD-RNGoddess-0.2B
-- Modelo base en HuggingFace: https://huggingface.co/skytnt/midi-model-tv2o-medium
+- Hugging Face: https://huggingface.co/scarletdeath/VWSD-RNGoddess-0.2B
+- Modelo base en Hugging Face: https://huggingface.co/skytnt/midi-model-tv2o-medium
 - Proyecto del modelo base en GitHub: https://github.com/SkyTNT/midi-model
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Dataset (referenciado en la model card): https://huggingface.co/datasets/scarletdeath/Void-Witch-Scarlet-Death-RNGoddess

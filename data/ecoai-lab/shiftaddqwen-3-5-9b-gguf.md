@@ -116,7 +116,7 @@ La comparación es intencionadamente contra cuantizaciones del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EcoAI-Lab/ShiftAddQwen-3.5-9B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/EcoAI-Lab/ShiftAddQwen-3.5-9B-GGUF
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio con código, método y resultados completos: https://github.com/Purdue-EcoAI/ShiftAddQwen
 - Documentación del kernel de matvec: https://github.com/Purdue-EcoAI/ShiftAddQwen/blob/main/docs/shiftadd_matvec.pdf

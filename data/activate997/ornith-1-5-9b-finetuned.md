@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Activate997/ornith-1.5-9b-finetuned es un ajuste fino (fine-tuning) del modelo ornith-ai/Ornith-1.5-9B, publicado por el usuario Activate997 en HuggingFace. Se trata de un derivado de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones), distribuido en formato safetensors con un repositorio de 19,3 GB, lo que es coherente con pesos en precisión bf16/fp16. La model card es mínima: indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, y que el modelo base es Ornith-1.5-9B.
+Activate997/ornith-1.5-9b-finetuned es un ajuste fino (fine-tuning) del modelo ornith-ai/Ornith-1.5-9B, publicado por el usuario Activate997 en Hugging Face. Se trata de un derivado de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones), distribuido en formato safetensors con un repositorio de 19,3 GB, lo que es coherente con pesos en precisión bf16/fp16. La model card es mínima: indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, y que el modelo base es Ornith-1.5-9B.
 
 El pipeline declarado es `image-text-to-text`, lo que sitúa al modelo en la categoría de modelos multimodales de visión y lenguaje (entrada de imagen y texto, salida de texto). Entre las etiquetas figura `qwen3_5`, lo que apunta a que el modelo base pertenece a la familia Qwen 3.5, si bien no se proporciona documentación técnica que lo confirme ni detalles sobre la arquitectura interna, la longitud de contexto o la composición del dataset de ajuste.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un derivad
 
 No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. La etiqueta `qwen3_5` asociada al repositorio y a la model card indica que el modelo base ornith-ai/Ornith-1.5-9B podria derivar de la familia Qwen 3.5, y el pipeline `image-text-to-text` confirma que se trata de un modelo multimodal con capacidad de procesar imagenes y texto. El recuento de parametros (9.653.104.368) y el tamano del repositorio (19,3 GB) son compatibles con pesos almacenados en bf16 o fp16, sin cuantizacion. No se especifica si la arquitectura emplea atencion completa, atencion lineal, mezcla de expertos (MoE) o un esquema hibrido.
 
-En cuanto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un fine-tuning supervisado (SFT) o posiblemente con optimizacion por preferencias, aunque no se detalla el metodo. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni hiperparametros relevantes. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion u otras).
+En cuanto al entrenamiento, la model card unicamente indica que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un fine-tuning supervisado (SFT) o posiblemente con optimizacion por preferencias, aunque no se detalla el metodo. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni hiperparametros relevantes. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion u otras).
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ En cuanto al entrenamiento, la model card unicamente indica que el ajuste se rea
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion alguna (MMLU, HumanEval, GSM8K, MMMU, VQAv2 u otros), y las busquedas web realizadas no devolvieron resultados relacionados con el modelo, sino contenido no pertinente (paginas de seguimiento de un vuelo comercial). En consecuencia, no es posible comparar su rendimiento con el de otros modelos de forma documentada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion alguna (MMLU, HumanEval, GSM8K, MMMU, VQAv2 u otros), y las busquedas web realizadas no devolvieron resultados relacionados con el modelo, sino contenido no pertinente (paginas de seguimiento de un vuelo comercial). En consecuencia, no es posible comparar su rendimiento con el de otros modelos de forma documentada.
 
 ## Requisitos de hardware
 
@@ -73,8 +73,8 @@ Las cifras siguientes son estimaciones calculadas a partir del numero de paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Activate997/ornith-1.5-9b-finetuned | 9,65B | no disponible | apache-2.0 | HuggingFace, safetensors | sin benchmarks publicados |
-| ornith-ai/Ornith-1.5-9B (modelo base) | no disponible | no disponible | no disponible | HuggingFace | sin datos en la informacion proporcionada |
+| Activate997/ornith-1.5-9b-finetuned | 9,65B | no disponible | apache-2.0 | Hugging Face, safetensors | sin benchmarks publicados |
+| ornith-ai/Ornith-1.5-9B (modelo base) | no disponible | no disponible | no disponible | Hugging Face | sin datos en la informacion proporcionada |
 | Alternativas de ~9B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificada sobre modelos alternativos de la misma categoria en el material proporcionado, por lo que no es posible establecer una comparativa cuantitativa fiable. Las busquedas web realizadas no devolvieron resultados utiles sobre este modelo ni sobre su modelo base.
@@ -93,7 +93,7 @@ No se dispone de informacion verificada sobre modelos alternativos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Activate997/ornith-1.5-9b-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Activate997/ornith-1.5-9b-finetuned
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo; las busquedas devolvieron paginas de seguimiento de vuelos (flightradar24.com, flightaware.com, airportinfo.live) sin relacion con el modelo.

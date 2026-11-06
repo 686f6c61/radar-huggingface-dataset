@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOPO-2026 UCF101 (13 tareas) es un modelo de clasificación de vídeo desarrollado por Frank Morales Aguilera (Sovereign Machine Laboratory, SOMALA) y publicado en HuggingFace bajo el identificador `frankmorales2020/topo-ucf101-13tasks-gemma`. Se trata de una implementación certificada del marco TOPO-2026 sobre el modelo base Gemma-4-E4B-Vision, orientada a un problema concreto de aprendizaje continuo (continual learning): la clasificación de vídeos de UCF101 mediante 13 tareas binarias secuenciales.
+TOPO-2026 UCF101 (13 tareas) es un modelo de clasificación de vídeo desarrollado por Frank Morales Aguilera (Sovereign Machine Laboratory, SOMALA) y publicado en Hugging Face bajo el identificador `frankmorales2020/topo-ucf101-13tasks-gemma`. Se trata de una implementación certificada del marco TOPO-2026 sobre el modelo base Gemma-4-E4B-Vision, orientada a un problema concreto de aprendizaje continuo (continual learning): la clasificación de vídeos de UCF101 mediante 13 tareas binarias secuenciales.
 
 El problema que aborda es el olvido catastrófico (catastrophic forgetting), el fenómeno por el cual un modelo que aprende tareas de forma secuencial pierde rendimiento en las tareas anteriores. Según su model card, este modelo consigue un 0,00 % de olvido en las 13 tareas, con una precisión media del 77,69 %. El marco TOPO-2026 emplea "anclas de números primos" en los índices {2, 3, 5, 7, 11, 13} y una constante de seguridad Λ = 0,9785142874, con un gobernador topológico que opera en tres pasos: captura de instantánea, aplicación de gradientes y restauración de anclas, con una huella de memoria de solo 67,5 KB.
 
@@ -90,7 +90,7 @@ No hay modelos comparables directamente publicados con la misma combinación de 
 
 | Modelo / enfoque | Tareas | Precisión media | Olvido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| topo-ucf101-13tasks-gemma (TOPO-2026) | 13 binarias secuenciales | 77,69 % | 0,00 % (declarado) | MIT | HuggingFace, 1,3 GB |
+| topo-ucf101-13tasks-gemma (TOPO-2026) | 13 binarias secuenciales | 77,69 % | 0,00 % (declarado) | MIT | Hugging Face, 1,3 GB |
 | Métodos clásicos de continual learning en vídeo (EWC, replay, LoRA secuencial) | no disponible | no disponible | > 0 % típicamente | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas concretas no está disponible en la información proporcionada.
@@ -110,7 +110,7 @@ La comparación cuantitativa con alternativas concretas no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankmorales2020/topo-ucf101-13tasks-gemma
+- Modelo en Hugging Face: https://huggingface.co/frankmorales2020/topo-ucf101-13tasks-gemma
 - Modelo base: https://huggingface.co/frankmorales2020/gemma-4-e4b-unesco-optimized
 - Notebook de inferencia completo: https://github.com/frank-morales2020/AST/blob/main/GEMMA4_TOPO_VIDEO.ipynb
 - Cita TOPO-2026 (framework): https://doi.org/10.5281/zenodo.22046257

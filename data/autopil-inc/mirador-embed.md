@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mirador-Embed es un modelo de embeddings de frases (sentence embeddings) publicado por AutoPIL-Inc en HuggingFace. Se trata de un fine-tune de `sentence-transformers/all-MiniLM-L6-v2`, un encoder BERT compacto de la familia MiniLM, entrenado con la librería sentence-transformers y la función de pérdida `MultipleNegativesRankingLoss` sobre un conjunto de 3.747 ejemplos. Su pipeline declarado es `sentence-similarity` y también expone la tarea `feature-extraction`, por lo que su uso previsto es generar vectores densos para similitud semántica, búsqueda y clustering, no la generación de texto.
+Mirador-Embed es un modelo de embeddings de frases (sentence embeddings) publicado por AutoPIL-Inc en Hugging Face. Se trata de un fine-tune de `sentence-transformers/all-MiniLM-L6-v2`, un encoder BERT compacto de la familia MiniLM, entrenado con la librería sentence-transformers y la función de pérdida `MultipleNegativesRankingLoss` sobre un conjunto de 3.747 ejemplos. Su pipeline declarado es `sentence-similarity` y también expone la tarea `feature-extraction`, por lo que su uso previsto es generar vectores densos para similitud semántica, búsqueda y clustering, no la generación de texto.
 
-El modelo llega con very poca documentación: la model card no incluye licencia, idiomas soportados, composición del dataset ni resultados de evaluación. Los tags indican que se generó con el `Trainer` de HuggingFace (`generated_from_trainer`) y que es compatible con Text Embeddings Inference y con endpoints de inferencia, lo que sugiere un enfoque de despliegue como servicio de embeddings.
+El modelo llega con very poca documentación: la model card no incluye licencia, idiomas soportados, composición del dataset ni resultados de evaluación. Los tags indican que se generó con el `Trainer` de Hugging Face (`generated_from_trainer`) y que es compatible con Text Embeddings Inference y con endpoints de inferencia, lo que sugiere un enfoque de despliegue como servicio de embeddings.
 
 Su relevancia es limitada y hay que enmarcarla con honestidad: con 0 descargas y 0 likes en el momento de la consulta, y sin métricas publicadas, es un artefacto experimental de una organización centrada en gobernanza de agentes de IA (AutoPIL), no un modelo validado para producción. Resulta útil como ejemplo de fine-tune ligero de MiniLM para dominios concretos, pero cualquier adopción debería ir precedida de una evaluación propia.
 
@@ -30,7 +30,7 @@ Su relevancia es limitada y hay que enmarcarla con honestidad: con 0 descargas y
 
 La arquitectura es la del modelo base: un encoder MiniLM de 6 capas con 384 dimensiones ocultas y 22,7 millones de parámetros, destilado originalmente por Microsoft y adaptado a embeddings de frases por sentence-transformers. MiniLM aplica destilación de la auto-atención de un transformer mayor, lo que da un encoder muy ligero y rápido en CPU. El fine-tune no introduce cambios estructurales: se reutiliza la cabeza de pooling del modelo base y se reentrena con `MultipleNegativesRankingLoss`, una variante de la pérdida InfoNCE (véase el paper de Contrastive Predictive Coding, arXiv:1807.03748) en la que los negativos de cada batch se usan como negativos en memoria para el resto de pares positivos. Es la formulación estándar descrita en Sentence-BERT (arXiv:1908.10084).
 
-Los únicos datos de entrenamiento disponibles son el tamaño del conjunto (3.747 ejemplos) y la función de pérdida. No se especifican el número de épocas, la tasa de aprendizaje, el tamaño de batch, la composición del corpus, si se usaron negativos duros, ni si hubo etapas de destilación o evaluación intermedia. Se desconoce igualmente el dominio de los pares (¿preguntas-respuestas, titulares, descripciones de producto?) y su procedencia. El tag `generated_from_trainer` confirma que el artefacto se produjo con el `Trainer` estándar de HuggingFace, sin infraestructura de entrenamiento declarada. Con 3.747 ejemplos, el riesgo de sobreajuste y de olvido catastrófico respecto al modelo base es alto y no puede descartarse sin una evaluación externa.
+Los únicos datos de entrenamiento disponibles son el tamaño del conjunto (3.747 ejemplos) y la función de pérdida. No se especifican el número de épocas, la tasa de aprendizaje, el tamaño de batch, la composición del corpus, si se usaron negativos duros, ni si hubo etapas de destilación o evaluación intermedia. Se desconoce igualmente el dominio de los pares (¿preguntas-respuestas, titulares, descripciones de producto?) y su procedencia. El tag `generated_from_trainer` confirma que el artefacto se produjo con el `Trainer` estándar de Hugging Face, sin infraestructura de entrenamiento declarada. Con 3.747 ejemplos, el riesgo de sobreajuste y de olvido catastrófico respecto al modelo base es alto y no puede descartarse sin una evaluación externa.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: aproximadamente 91 MB para los pesos en fp32 (22,7 M de parámetros × 4 bytes), más el overhead de activaciones, que en lotes pequeños es de decenas de MB. En la práctica, menos de 1 GB de VRAM en cualquier configuración razonable.
 - GPU recomendadas: el modelo está sobredimensionado para cualquier GPU moderna. Una T4, L4 o incluso una GTX 1650 son suficientes; A100, H100 y RTX 4090 quedan infrautilizadas y solo tienen sentido si se comparten con otros procesos o se busca throughput masivo por batching.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 1 GB de VRAM (GTX 1050 en adelante). También es viable en CPU pura, que es probablemente el objetivo real de un MiniLM.
-- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI), HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica), ONNX Runtime o FastEmbed para inferencia optimizada en CPU, y servidores de vectores con encoder integrado. llama.cpp no es la vía recomendada para un encoder BERT de este tipo.
+- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI), Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica), ONNX Runtime o FastEmbed para inferencia optimizada en CPU, y servidores de vectores con encoder integrado. llama.cpp no es la vía recomendada para un encoder BERT de este tipo.
 - Latencia y throughput: no se publican cifras. Como referencia orientativa del orden de magnitud para un MiniLM de 6 capas, cabría esperar decenas a cientos de frases por segundo en CPU multinúcleo y miles por segundo en GPU con batching; son estimaciones, no mediciones de este modelo.
 - Memoria en disco: el repositorio completo en safetensors ronda los 90 MB.
 
@@ -75,11 +75,11 @@ Los datos de las alternativas provienen de su documentación pública; los de Mi
 
 | Modelo | Parametros | Dimension | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AutoPIL-Inc/Mirador-Embed | 22,7 M | 384 | 256 tokens | no disponible | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | 256 tokens | inglés | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| BAAI/bge-small-en-v1.5 | 33 M | 384 | 512 tokens | inglés | MIT | HuggingFace, muy usado en RAG |
-| intfloat/e5-small-v2 | 33 M | 384 | 512 tokens | inglés | MIT | HuggingFace, requiere prefijos `query:`/`passage:` |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 384 | 128 tokens | más de 50 idiomas | Apache 2.0 | HuggingFace, referencia multilingüe |
+| AutoPIL-Inc/Mirador-Embed | 22,7 M | 384 | 256 tokens | no disponible | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | 256 tokens | inglés | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| BAAI/bge-small-en-v1.5 | 33 M | 384 | 512 tokens | inglés | MIT | Hugging Face, muy usado en RAG |
+| intfloat/e5-small-v2 | 33 M | 384 | 512 tokens | inglés | MIT | Hugging Face, requiere prefijos `query:`/`passage:` |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 384 | 128 tokens | más de 50 idiomas | Apache 2.0 | Hugging Face, referencia multilingüe |
 
 Frente al modelo base, Mirador-Embed no aporta ninguna ventaja documentada: mismo tamano, misma dimension, mismo contexto y ninguna métrica que demuestre una mejora. Frente a `bge-small-en-v1.5` y `e5-small-v2` pierde en longitud de contexto (256 frente a 512 tokens) y en garantías de licencia. Solo tendría sentido si el fine-tune se ha hecho sobre un dominio muy específico de AutoPIL, extremo que la model card no confirma.
 
@@ -98,9 +98,9 @@ Frente al modelo base, Mirador-Embed no aporta ninguna ventaja documentada: mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutoPIL-Inc/Mirador-Embed
+- Modelo en Hugging Face: https://huggingface.co/AutoPIL-Inc/Mirador-Embed
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
-- Organización AutoPIL-Inc en HuggingFace: https://huggingface.co/AutoPIL-Inc
+- Organización AutoPIL-Inc en Hugging Face: https://huggingface.co/AutoPIL-Inc
 - Dataset de la organización (posible relación con el entrenamiento, no confirmada): https://huggingface.co/datasets/AutoPIL-Inc/Mirador_Trail2_v25b
 - Paper Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper Contrastive Predictive Coding, base de InfoNCE (arXiv:1807.03748): https://arxiv.org/abs/1807.03748

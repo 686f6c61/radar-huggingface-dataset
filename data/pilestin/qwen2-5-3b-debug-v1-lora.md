@@ -107,11 +107,11 @@ La comparacion relevante es interna a la ablacion del propio autor: v2 obtiene l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pilestin/qwen2.5-3b-debug-v1-lora
+- Modelo en Hugging Face: https://huggingface.co/Pilestin/qwen2.5-3b-debug-v1-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - FocusTracer (herramienta de trazado citada por el autor, referenciada en la model card como ancla interna `#training-data`, sin URL publica disponible)
-- Qwen/Qwen2.5-3B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B
+- Qwen/Qwen2.5-3B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Tutorial de ajuste fino de Qwen2.5-3B con LoRA: https://ai4u.space/blog/fine-tune-qwen2-5-3b-model-colab-guide
 - Ejemplo de LoRA de proposito general sobre el mismo backbone: https://huggingface.co/bunnycore/qwen-2.5-3b-lora_model

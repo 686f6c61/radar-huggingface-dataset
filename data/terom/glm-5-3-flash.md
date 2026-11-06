@@ -86,7 +86,7 @@ Configuraciones de evaluacion declaradas: temperatura 1,0 con `top_p` 0,95 y lon
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | ~321,3B | 18B | No disponible oficialmente (pruebas hasta 1M) | MIT | Pesos en HuggingFace (esta subida y el repo oficial de `zai-org`) |
+| GLM-5.3-Flash | ~321,3B | 18B | No disponible oficialmente (pruebas hasta 1M) | MIT | Pesos en Hugging Face (esta subida y el repo oficial de `zai-org`) |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | Predecesor citado en la model card; sin especificaciones en la informacion disponible |
 | Claude Opus 4.8 | No disponible | No disponible | No disponible | Propietaria | Solo via API; citado como referencia de comparacion |
 
@@ -107,7 +107,7 @@ No se dispone de especificaciones tecnicas de los modelos comparados en la infor
 
 ## Enlaces
 
-- HuggingFace (esta subida): https://huggingface.co/Terom/GLM-5.3-Flash
+- Hugging Face (esta subida): https://huggingface.co/Terom/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

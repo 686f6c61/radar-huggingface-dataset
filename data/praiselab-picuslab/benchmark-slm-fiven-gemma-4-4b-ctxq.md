@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq` es un adaptador LoRA publicado en HuggingFace por el usuario/organización `praiselab-picuslab`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft`, pesos en `safetensors`) que se aplica sobre el modelo base `google/gemma-4-E4B-it`. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargarlo.
+`praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq` es un adaptador LoRA publicado en Hugging Face por el usuario/organización `praiselab-picuslab`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft`, pesos en `safetensors`) que se aplica sobre el modelo base `google/gemma-4-E4B-it`. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo completo. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargarlo.
 
 El identificador y los tags sitúan este artefacto en el contexto de una campaña de evaluación de modelos de lenguaje pequeños (`benchmark-slm`), con un dataset denominado `dataset-fiven`, una estrategia etiquetada como `ctxq` y una configuración `or2`. La información disponible no detalla qué significan esas etiquetas ni documenta hiperparámetros de entrenamiento, por lo que cualquier interpretación al respecto queda fuera de lo verificable. El pipeline declarado es `text-generation` con estilo `conversational`, y el único idioma declarado en los metadatos es el italiano (`it`).
 
@@ -43,7 +43,7 @@ Tampoco se documentan los datos de entrenamiento: los tags mencionan `dataset-fi
 - Reproducción de experimentos PEFT: al ser un adaptador `safetensors` de 0,1 GB, se puede cargar junto al base en un script de evaluación para replicar el ajuste y comparar configuraciones de rango y capas adaptadas.
 - Investigación sobre estrategias de contexto: la etiqueta `ctxq` sugiere una variante experimental relacionada con el contexto; el adaptador serviría como punto de comparación en estudios de ablation, siempre que se documente previamente qué significa la etiqueta.
 - Prototipado de asistentes conversacionales en italiano: para pruebas internas de flujo conversacional multi-turno donde no se requiera garantía de licencia comercial, cargando el adaptador sobre el base y evaluando respuestas cualitativamente.
-- Docencia y formación en ajuste fino: el tamaño reducido del repositorio lo hace adecuado como ejemplo práctico de publicación de adaptadores LoRA en HuggingFace, incluyendo el flujo de acceso restringido (gated).
+- Docencia y formación en ajuste fino: el tamaño reducido del repositorio lo hace adecuado como ejemplo práctico de publicación de adaptadores LoRA en Hugging Face, incluyendo el flujo de acceso restringido (gated).
 - Integración en pipelines de evaluación automatizada: el adaptador puede incorporarse a un arnés de evaluación tipo `lm-evaluation-harness`, siempre que se resuelva la descarga autenticada del repositorio gated y se disponga de la licencia del modelo base.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq` | no disponible (adaptador LoRA) | no disponible | no disponible | no disponible | gated en HuggingFace |
+| `praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq` | no disponible (adaptador LoRA) | no disponible | no disponible | no disponible | gated en Hugging Face |
 | `google/gemma-4-E4B-it` (base) | no disponible | no disponible | no disponible | no disponible | modelo base referenciado |
 | Otras variantes del mismo benchmark (`benchmark-slm`) | no disponible | no disponible | no disponible | no disponible | no identificadas en la información disponible |
 
@@ -78,7 +78,7 @@ No se han identificado en la información proporcionada modelos alternativos com
 ## Limitaciones y advertencias
 
 - Licencia no disponible: sin licencia declarada no se puede asumir permiso de uso comercial; además, el uso queda sujeto a las condiciones del modelo base `google/gemma-4-E4B-it`, que deben revisarse por separado.
-- Acceso restringido (gated): la descarga requiere autenticación y aceptación de condiciones en HuggingFace, lo que complica la automatización de pipelines de evaluación y CI/CD.
+- Acceso restringido (gated): la descarga requiere autenticación y aceptación de condiciones en Hugging Face, lo que complica la automatización de pipelines de evaluación y CI/CD.
 - Sesgos: no documentados. Al ser un ajuste sobre un modelo base no auditado en esta ficha, los sesgos del base se heredan y pueden verse amplificados por el dataset de ajuste, de composición desconocida.
 - Riesgo de alucinación: no evaluado; no hay resultados de benchmarks ni evaluaciones de fidelidad publicadas.
 - Cobertura lingüística limitada al italiano según los metadatos; no hay evidencia de comportamiento correcto en castellano u otros idiomas.
@@ -89,6 +89,6 @@ No se han identificado en la información proporcionada modelos alternativos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ctxq
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-E4B-it
 - Paper, blog, repositorio o demo adicionales: no disponible en la información proporcionada.

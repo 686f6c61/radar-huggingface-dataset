@@ -4,7 +4,7 @@
 
 GOAG (Generative and Object-Agnostic Grasp Planner) es un modelo de aprendizaje profundo generativo diseñado para la planificación de agarres robóticos diestros. Desarrollado por investigadores del CEA-List (Université Paris-Saclay) y el LIRIS (École Centrale de Lyon), el modelo se presentó en la conferencia IROS 2026. GOAG aprende una representación latente compacta de la distribución de contacto de un gripper específico, permitiendo muestrear configuraciones de agarre válidas sin depender de datos de entrenamiento específicos de cada objeto. La clave de su enfoque es que las características del objeto solo se introducen en la inferencia, lo que le permite recuperar áreas de contacto admisibles compatibles con las capacidades del gripper.
 
-El modelo se basa en una arquitectura de autoencoder variacional condicional (CVAE), aunque en la estructura del repositorio se observan también variantes con PointNet. Está diseñado para operar con múltiples manos robóticas, incluyendo Allegro, Barrett y ShadowHand, y se entrena con varios datasets de agarre como DexGrab, DexGraspNet, MultiDex, RealDex y UniDexGrasp. El repositorio de HuggingFace tiene un tamaño de 2,6 GB y la licencia es CC-BY-4.0. La relevancia actual radica en la necesidad de planificadores de agarre robustos y generalizables para robots con manos de alta complejidad, superando limitaciones de métodos que requieren datos específicos por objeto.
+El modelo se basa en una arquitectura de autoencoder variacional condicional (CVAE), aunque en la estructura del repositorio se observan también variantes con PointNet. Está diseñado para operar con múltiples manos robóticas, incluyendo Allegro, Barrett y ShadowHand, y se entrena con varios datasets de agarre como DexGrab, DexGraspNet, MultiDex, RealDex y UniDexGrasp. El repositorio de Hugging Face tiene un tamaño de 2,6 GB y la licencia es CC-BY-4.0. La relevancia actual radica en la necesidad de planificadores de agarre robustos y generalizables para robots con manos de alta complejidad, superando limitaciones de métodos que requieren datos específicos por objeto.
 
 ## Especificaciones técnicas
 
@@ -66,8 +66,8 @@ No hay información comparativa disponible en la documentación proporcionada. S
 
 ## Enlaces
 
-- [HuggingFace: JulienMERAND/GOAG](https://huggingface.co/JulienMERAND/GOAG)
+- [Hugging Face: JulienMERAND/GOAG](https://huggingface.co/JulienMERAND/GOAG)
 - [Página del proyecto](https://cea-list.github.io/goagweb/)
 - [arXiv:2608.19759](https://arxiv.org/abs/2608.19759)
 - [Repositorio GitHub](https://github.com/CEA-LIST/GOAG)
-- [Perfil de Julien Mérand en HuggingFace](https://huggingface.co/JulienMERAND)
+- [Perfil de Julien Mérand en Hugging Face](https://huggingface.co/JulienMERAND)

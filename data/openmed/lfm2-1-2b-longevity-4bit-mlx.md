@@ -18,7 +18,7 @@ Arquitectónicamente es un modelo híbrido de la familia LFM2: combina convoluci
 | Longitud de contexto | 32.768 tokens segun la model card de origen (`max_position_embeddings` 128.000) |
 | Tipos de cuantizacion | 4 bits afín de solo pesos, group size 64 (`mlx_lm.convert -q --q-bits 4 --q-group-size 64`, mlx-lm 0.31.3); existe variante 8 bits del mismo autor |
 | Idiomas soportados | ingles (en) |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, `license: other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (MLX), 0,61 GiB; repo completo 0,7 GB |
 
 Datos adicionales: dimension oculta 2048, anchura de feed-forward 12.288, 32 cabezas de consulta / 8 cabezas KV, vocabulario de 65.536 con embeddings de entrada y salida atados. Se mantienen en BF16 las escalas de RMSNorm y los kernels de convolución corta. El tokenizador, la plantilla de chat y los valores por defecto de generación son los ficheros upstream sin modificar. SHA-256 de `model.safetensors`: `d4968839d8c62d8fad070aaadfb6d41eb8b7ed32d0e69e8c5096a12e64b185e2`. Descargas y likes en el momento de la consulta: 0.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenMed/LFM2-1.2B-Longevity-4bit-mlx (este) | 1,17 B | 32.768 tokens | 4 bits afín, group size 64 | safetensors MLX, 0,61 GiB | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| OpenMed/LFM2-1.2B-Longevity-8bit-mlx | 1,17 B | 32.768 tokens | 8 bits afín | safetensors MLX, 1,16 GiB | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM2-1.2B-Longevity | 1,17 B | 32.768 tokens | BF16 sin cuantizar | safetensors PyTorch, 2,18 GiB | LFM Open License v1.0 | HuggingFace |
-| LiquidAI/LFM2-1.2B | 1,17 B | 32.768 tokens (misma familia) | BF16 | safetensors | LFM Open License v1.0 | HuggingFace |
+| OpenMed/LFM2-1.2B-Longevity-4bit-mlx (este) | 1,17 B | 32.768 tokens | 4 bits afín, group size 64 | safetensors MLX, 0,61 GiB | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| OpenMed/LFM2-1.2B-Longevity-8bit-mlx | 1,17 B | 32.768 tokens | 8 bits afín | safetensors MLX, 1,16 GiB | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM2-1.2B-Longevity | 1,17 B | 32.768 tokens | BF16 sin cuantizar | safetensors PyTorch, 2,18 GiB | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/LFM2-1.2B | 1,17 B | 32.768 tokens (misma familia) | BF16 | safetensors | LFM Open License v1.0 | Hugging Face |
 
 La comparativa relevante es interna a la familia: las tres variantes comparten parámetros, contexto y licencia, y difieren solo en el equilibrio entre huella de memoria y fidelidad numérica. El 4 bits ofrece 0,61 GiB (3,6x menos que el BF16) y es la opción para memoria muy limitada; el 8 bits (1,16 GiB) es el punto intermedio razonable si la calidad del dominio importa más que el espacio. No se dispone de comparaciones publicadas frente a otros modelos biomédicos compactos en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparativa relevante es interna a la familia: las tres variantes comparten p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-4bit-mlx
+- Repositorio en Hugging Face: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-4bit-mlx
 - Modelo base (BF16, PyTorch): https://huggingface.co/LiquidAI/LFM2-1.2B-Longevity
 - Modelo preentrenado de partida: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Variante 8 bits del mismo autor: https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-8bit-mlx

@@ -75,7 +75,7 @@ Los valores con ± indican la desviación estándar de varias semillas, aunque c
 - Para entrenamiento o ajuste fino sobre estos checkpoints, se recomienda una GPU de la serie A100 (40 GB o 80 GB) o H100.
 - El repositorio completo ocupa 241.4 GB en disco, por lo que si se desean descargar todos los checkpoints es necesario contar con suficiente espacio de almacenamiento y ancho de banda.
 - Para inferencia con menor consumo de memoria, se puede aplicar cuantización posterior (por ejemplo, 4-bit o 8-bit) con librerías como `bitsandbytes` o convertir los pesos a formato GGUF para su uso con `llama.cpp`. No se proporcionan configuraciones de cuantización precalculadas.
-- El despliegue se puede realizar con el framework `transformers` de HuggingFace, tal como se muestra en el ejemplo del README. Para bajo consumo, `llama.cpp` o `Ollama` son opciones viables tras la conversión a GGUF. No se indican datos de latencia ni throughput.
+- El despliegue se puede realizar con el framework `transformers` de Hugging Face, tal como se muestra en el ejemplo del README. Para bajo consumo, `llama.cpp` o `Ollama` son opciones viables tras la conversión a GGUF. No se indican datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -83,8 +83,8 @@ No se dispone de modelos comparables en el contexto específico de este estudio.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3-4B-Base` | 4B | no disponible | Apache 2.0 | HuggingFace | Modelo base original |
-| `Physicsru/compgen-checkpoints` | 4B | no disponible | Apache 2.0 | HuggingFace | 15 checkpoints de investigación para estudio de composición |
+| `Qwen/Qwen3-4B-Base` | 4B | no disponible | Apache 2.0 | Hugging Face | Modelo base original |
+| `Physicsru/compgen-checkpoints` | 4B | no disponible | Apache 2.0 | Hugging Face | 15 checkpoints de investigación para estudio de composición |
 
 No se encuentran otros modelos de investigación con el mismo enfoque de "recall-then-assemble" y estudio de co-ocurrencia en la información disponible.
 

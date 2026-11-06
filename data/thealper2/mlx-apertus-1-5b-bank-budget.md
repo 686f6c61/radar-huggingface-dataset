@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thealper2/mlx-apertus-1.5b-bank-budget` es un adaptador LoRA publicado en HuggingFace para el modelo base `swiss-ai/Apertus-v1.1-1.5B-Instruct`, desarrollado por el usuario thealper2. Su proposito es concreto: clasificar cada linea de un extracto bancario estadounidense en una de 17 categorias presupuestarias (Restaurants, Groceries, Shopping, Transportation, Entertainment, Utilities, Subscription, Healthcare, Insurance, Mortgage, Rent, Travel, Education, Personal Care, Transfer, Income, Fees), de modo que sumando las lineas de un mes se obtenga un presupuesto por categoria.
+`thealper2/mlx-apertus-1.5b-bank-budget` es un adaptador LoRA publicado en Hugging Face para el modelo base `swiss-ai/Apertus-v1.1-1.5B-Instruct`, desarrollado por el usuario thealper2. Su proposito es concreto: clasificar cada linea de un extracto bancario estadounidense en una de 17 categorias presupuestarias (Restaurants, Groceries, Shopping, Transportation, Entertainment, Utilities, Subscription, Healthcare, Insurance, Mortgage, Rent, Travel, Education, Personal Care, Transfer, Income, Fees), de modo que sumando las lineas de un mes se obtenga un presupuesto por categoria.
 
 El adaptador no es un modelo autonomo: el repositorio contiene unicamente `adapters.safetensors` y `adapter_config.json` en formato MLX-LM, y debe cargarse sobre la revision exacta `9e9d01154446a645d30f04174cf1515a38058be7` del modelo base. El modelo base Apertus es un transformer de 16 bloques, hidden size 2.048 y MLP con activacion xIELU, con 1.510 millones de parametros totales; el adaptador entrena 5,374 millones de parametros en las proyecciones de atencion y en el MLP de los 16 bloques.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de modelos alternativos de clasificacion d
 
 | Modelo | Parametros | Contexto | Exactitud `test_new` | Exactitud `test_known` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Apertus-v1.1-1.5B-Instruct (base) | 1.510 M | no disponible | 9,2% | 12,1% | apache-2.0 | HuggingFace |
-| Apertus-v1.1-1.5B-Instruct + este adaptador | 1.510 M + 5,374 M LoRA | no disponible (entrenamiento a 512 tokens) | 77,5% | 98,4% | apache-2.0 | HuggingFace |
+| Apertus-v1.1-1.5B-Instruct (base) | 1.510 M | no disponible | 9,2% | 12,1% | apache-2.0 | Hugging Face |
+| Apertus-v1.1-1.5B-Instruct + este adaptador | 1.510 M + 5,374 M LoRA | no disponible (entrenamiento a 512 tokens) | 77,5% | 98,4% | apache-2.0 | Hugging Face |
 
 Alternativas de la misma categoria (clasificadores de transacciones o adaptadores LoRA sobre modelos de 1-2B): no disponibles en la informacion proporcionada.
 

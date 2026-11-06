@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg` es un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-3B-Instruct, publicado en HuggingFace por el usuario `xw17`. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un adaptador LoRA y no con los pesos completos del modelo (que en fp16 rondarian los 6 GB), lo que indica que se trata de un adaptador que debe combinarse con el checkpoint base para su uso.
+`xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg` es un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-3B-Instruct, publicado en Hugging Face por el usuario `xw17`. El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un adaptador LoRA y no con los pesos completos del modelo (que en fp16 rondarian los 6 GB), lo que indica que se trata de un adaptador que debe combinarse con el checkpoint base para su uso.
 
 El modelo base, Qwen2.5-3B-Instruct, lo desarrolla el equipo Qwen de Alibaba Cloud y es un transformer denso decoder-only de aproximadamente 3.000 millones de parametros, preentrenado sobre un corpus de hasta 18 billones de tokens segun la documentacion publica de la serie. El sufijo `galaxyppg` del nombre no aparece documentado en la model card ni en los resultados de busqueda, por lo que se desconoce el dominio o dataset concreto del ajuste.
 
-La relevancia de esta publicacion es limitada en cuanto a documentacion: la model card es la plantilla autogenerada de HuggingFace y no incluye informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Cualquier evaluacion seria del adaptador requiere inspeccionar el repositorio directamente y comparar contra el modelo base.
+La relevancia de esta publicacion es limitada en cuanto a documentacion: la model card es la plantilla autogenerada de Hugging Face y no incluye informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Cualquier evaluacion seria del adaptador requiere inspeccionar el repositorio directamente y comparar contra el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ En cuanto al modelo base, Qwen2.5-3B-Instruct emplea la arquitectura Qwen2: tran
 - Investigacion academica sobre personalizacion de LLM: el repositorio permite estudiar como cambia el comportamiento de un modelo pequeno tras un SFT especifico, comparandolo con el checkpoint original.
 - Evaluacion de tecnicas de adaptacion: util como punto de partida para medir olvido catastrofico, degradacion multilingue o perdida de capacidades de tool calling tras un ajuste LoRA.
 - Generacion de texto asistida en un dominio vertical: si `galaxyppg` hace referencia a un dominio concreto (no documentado), el adaptador podria emplearse para generar contenido especializado en ese ambito, previa validacion manual.
-- Aprendizaje y formacion: sirve como caso practico para explicar el ciclo completo de publicacion de un adaptador en HuggingFace, desde el entrenamiento hasta el despliegue con `peft`.
+- Aprendizaje y formacion: sirve como caso practico para explicar el ciclo completo de publicacion de un adaptador en Hugging Face, desde el entrenamiento hasta el despliegue con `peft`.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg | Adaptador LoRA sobre base de ~3 B | No disponible (base: 32K, extensible a 128K) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (128K con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128K tokens | Llama 3.2 Community License | HuggingFace / Meta |
-| Phi-3.5-mini-instruct | ~3,8 B | 128K tokens | MIT | HuggingFace / Microsoft |
+| xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg | Adaptador LoRA sobre base de ~3 B | No disponible (base: 32K, extensible a 128K) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (128K con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128K tokens | Llama 3.2 Community License | Hugging Face / Meta |
+| Phi-3.5-mini-instruct | ~3,8 B | 128K tokens | MIT | Hugging Face / Microsoft |
 
 La comparativa se establece a nivel de modelo base, ya que el adaptador no publica especificaciones propias. Para una eleccion en produccion, el criterio determinante suele ser la licencia: Apache 2.0 y MIT son mas permisivas que la licencia comunitaria de Llama.
 
@@ -84,7 +84,7 @@ La comparativa se establece a nivel de modelo base, ya que el adaptador no publi
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg
+- Repositorio del modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_galaxyppg
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de la serie Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Ficha de Qwen2.5 3B en Ollama: https://ollama.com/library/qwen2.5:3b-instruct

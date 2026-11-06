@@ -112,7 +112,7 @@ No se dispone de datos de otras variantes de la misma familia (por ejemplo, mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-2single-refusal
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

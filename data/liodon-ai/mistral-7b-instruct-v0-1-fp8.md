@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Precision | Tamano en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| liodon-ai/Mistral-7B-Instruct-v0.1-FP8 | 7.241.732.096 | FP8 (E4M3) | 7,5 GB | 8192 tokens | other | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.1 | 7.241.732.096 | FP16/BF16 | 14,5 GB | 8192 tokens | Apache 2.0 (segun el modelo base; esta ficha no lo confirma) | HuggingFace |
-| liodon-ai/Mistral-7B-v0.1-FP8 | no disponible | FP8 | no disponible | no disponible | other | HuggingFace |
+| liodon-ai/Mistral-7B-Instruct-v0.1-FP8 | 7.241.732.096 | FP8 (E4M3) | 7,5 GB | 8192 tokens | other | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.1 | 7.241.732.096 | FP16/BF16 | 14,5 GB | 8192 tokens | Apache 2.0 (segun el modelo base; esta ficha no lo confirma) | Hugging Face |
+| liodon-ai/Mistral-7B-v0.1-FP8 | no disponible | FP8 | no disponible | no disponible | other | Hugging Face |
 
 Nota: la comparativa numérica de rendimiento con alternativas cuantizadas (AWQ, GPTQ, GGUF) no está disponible en la información proporcionada.
 

@@ -68,6 +68,6 @@ No disponible. No hay información que permita comparar este modelo con alternat
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/moor-e1984/model_222587568_clip_giant](https://huggingface.co/moor-e1984/model_222587568_clip_giant)
+- Hugging Face: [https://huggingface.co/moor-e1984/model_222587568_clip_giant](https://huggingface.co/moor-e1984/model_222587568_clip_giant)
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web. Los resultados devueltos (DeviantArt, CivArchive, AIBooru, character.ai, Ehudai) no tienen relación con este modelo.

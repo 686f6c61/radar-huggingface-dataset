@@ -6,7 +6,7 @@ PRAC (Personalized Image Aesthetic Assessment via Preference-rich Sample Mining 
 
 Técnicamente no es un modelo de lenguaje independiente, sino un conjunto de adaptadores LoRA y código de entrenamiento construido sobre el *checkpoint* visión-lenguaje mPLUG-Owl3-7B-241101. El repositorio libera la implementación del predictor estético genérico (GIAA), los módulos de selección de muestras ricas en preferencia (PreferSelect, con CCM y PDM) y de fusión de cohortes (PreferMerge, con pool de LoRA, FIM y *merging* de adaptadores), además de los *data loaders* y las configuraciones de experimentos sobre el dataset PARA.
 
-Su relevancia es acotada pero clara: cubre un nicho poco atendido, la personalización de la valoración estética mediante *fine-tuning* eficiente sobre un VLM de 7B, y lo hace con código MIT y configuraciones reproducibles. No obstante, el paquete publicado es material de investigación: el repositorio de HuggingFace ocupa 0.0 GB, no incluye pesos alojados en la plataforma, no declara *pipeline* ni idiomas, y los adaptadores preentrenados se distribuyen por Baidu Netdisk.
+Su relevancia es acotada pero clara: cubre un nicho poco atendido, la personalización de la valoración estética mediante *fine-tuning* eficiente sobre un VLM de 7B, y lo hace con código MIT y configuraciones reproducibles. No obstante, el paquete publicado es material de investigación: el repositorio de Hugging Face ocupa 0.0 GB, no incluye pesos alojados en la plataforma, no declara *pipeline* ni idiomas, y los adaptadores preentrenados se distribuyen por Baidu Netdisk.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: cubre un nicho poco atendido, la personaliz
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en la información proporcionada (el entorno de referencia usa PyTorch 2.4.1 con CUDA 12.1) |
 | Idiomas soportados | No disponible |
-| Licencia | MIT para el código fuente de PRAC según el README del repositorio; la licencia del repo en HuggingFace no figura. El *checkpoint* base mPLUG-Owl3 tiene su propia licencia, no indicada aquí |
+| Licencia | MIT para el código fuente de PRAC según el README del repositorio; la licencia del repo en Hugging Face no figura. El *checkpoint* base mPLUG-Owl3 tiene su propia licencia, no indicada aquí |
 | Formato de pesos | safetensors (etiqueta del repo); los adaptadores se descargan aparte desde Baidu Netdisk en `runs/para/giaa_adapter` |
 
 ## Arquitectura y entrenamiento
@@ -65,18 +65,18 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PRAC (este repo) | 7B (backbone) + LoRA | No disponible | Evaluación estética personalizada por usuario sobre VLM | MIT para el código; pesos del backbone con licencia propia | Código y adaptadores vía Baidu Netdisk; pesos no alojados en HuggingFace |
-| mPLUG-Owl3-7B-241101 | 7B | No confirmado en la información disponible | VLM generalista imagen-texto | No indicada aquí; consultar su model card | HuggingFace (`mPLUG/mPLUG-Owl3-7B-241101`) |
-| VLM generalistas de ~7B (Qwen2.5-VL-7B, LLaVA-OneVision-7B) | ~7-8B | Amplio (documentado en sus respectivas model cards) | Descripción, VQA, OCR, razonamiento visual | Apache 2.0 en ambos casos | HuggingFace, con soporte en vLLM y otros servidores |
+| PRAC (este repo) | 7B (backbone) + LoRA | No disponible | Evaluación estética personalizada por usuario sobre VLM | MIT para el código; pesos del backbone con licencia propia | Código y adaptadores vía Baidu Netdisk; pesos no alojados en Hugging Face |
+| mPLUG-Owl3-7B-241101 | 7B | No confirmado en la información disponible | VLM generalista imagen-texto | No indicada aquí; consultar su model card | Hugging Face (`mPLUG/mPLUG-Owl3-7B-241101`) |
+| VLM generalistas de ~7B (Qwen2.5-VL-7B, LLaVA-OneVision-7B) | ~7-8B | Amplio (documentado en sus respectivas model cards) | Descripción, VQA, OCR, razonamiento visual | Apache 2.0 en ambos casos | Hugging Face, con soporte en vLLM y otros servidores |
 | Predictores estéticos tipo NIMA / LAION-Aesthetics | Decenas de millones | No aplica (solo imagen) | Puntuación estética media, sin personalización | Variable según implementación | Públicos, ligeros, aptos para CPU |
 
 La diferencia clave frente a los VLM generalistas es que PRAC no compite en capacidades generales: aporta la capa de personalización (selección de muestras y fusión de cohortes) y una salida calibrada como distribución estética. Frente a los predictores estéticos clásicos, la diferencia es el coste (7B frente a decenas de millones de parámetros) y la posibilidad de condicionar el juicio a un perfil de usuario concreto.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace ocupa 0.0 GB: no contiene los pesos. Hay que descargar el *checkpoint* base mPLUG-Owl3 por un lado y los adaptadores preentrenados desde Baidu Netdisk (contraseña en el README), lo que añade fricción y dependencia de un servicio externo.
+- El repositorio de Hugging Face ocupa 0.0 GB: no contiene los pesos. Hay que descargar el *checkpoint* base mPLUG-Owl3 por un lado y los adaptadores preentrenados desde Baidu Netdisk (contraseña en el README), lo que añade fricción y dependencia de un servicio externo.
 - La información disponible no incluye métricas, ablaciones ni comparaciones numéricas; no es posible evaluar la calidad del método sin leer el preprint.
-- No se declaran idiomas soportados ni *pipeline* en los metadatos de HuggingFace; el comportamiento multilingüe depende por completo del *backbone* mPLUG-Owl3.
+- No se declaran idiomas soportados ni *pipeline* en los metadatos de Hugging Face; el comportamiento multilingüe depende por completo del *backbone* mPLUG-Owl3.
 - Sesgos: los juicios estéticos personales están condicionados por el dataset PARA (anotaciones de un grupo demográfico y cultural concreto); es esperable un sesgo hacia las convenciones visuales de esa población, aunque no se documenta explícitamente.
 - Riesgo de alucinación en el modo `--explain`: las justificaciones generadas por el VLM pueden no reflejar los factores que realmente determinan la puntuación predicha, al ser texto generado y no una explicación mecanística.
 - Licencia: el código se declara MIT en el README, pero la licencia del *checkpoint* base y de los adaptadores preentrenados no está indicada; verificar antes de cualquier uso comercial. El dataset PARA tiene sus propias condiciones.
@@ -86,7 +86,7 @@ La diferencia clave frente a los VLM generalistas es que PRAC no compite en capa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yzc002/PRAC
+- Modelo en Hugging Face: https://huggingface.co/yzc002/PRAC
 - Preprint arXiv: http://arxiv.org/abs/2607.15752
 - Página del proyecto: https://yzc-ippl.github.io/PRAC/
 - Repositorio GitHub: https://github.com/yzc-ippl/PRAC

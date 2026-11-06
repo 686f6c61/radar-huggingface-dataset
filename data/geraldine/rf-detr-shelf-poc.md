@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RF-DETR shelf PoC es un modelo de deteccion de objetos publicado por el usuario Geraldine en HuggingFace, consistente en un ajuste fino (fine-tuning) del detector en tiempo real Roboflow/rf-detr-small sobre el conjunto de datos ShelfAura, orientado a una unica clase: libro ("book"). Se trata de un proof of concept (PoC) cuyo objetivo es detectar lomos y volúmenes de libros en imagenes de estanterias, un caso de uso tipico en inventariado bibliotecario, retail y robotica de almacen. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
+RF-DETR shelf PoC es un modelo de deteccion de objetos publicado por el usuario Geraldine en Hugging Face, consistente en un ajuste fino (fine-tuning) del detector en tiempo real Roboflow/rf-detr-small sobre el conjunto de datos ShelfAura, orientado a una unica clase: libro ("book"). Se trata de un proof of concept (PoC) cuyo objetivo es detectar lomos y volúmenes de libros en imagenes de estanterias, un caso de uso tipico en inventariado bibliotecario, retail y robotica de almacen. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de esta ficha no esta en el rendimiento del checkpoint (que, como se detalla mas abajo, corresponde a un entrenamiento practicamente nulo), sino en documentar con precision que es lo que hay publicado, que no lo esta y por que no deberia usarse tal cual en produccion. RF-DETR es la familia de detectores transformer de Roboflow, construida sobre un backbone DINOv2 y un decodificador tipo DETR, con el objetivo de igualar o superar a los detectores YOLO en latencia y precision manteniendo licencia permisiva. El ajuste aqui presentado hereda esa arquitectura, pero el estado de entrenamiento reportado (epoch 0, step 5) y la ausencia total de metricas de validacion lo convierten en un artefacto experimental, no en un modelo utilizable.
 
@@ -88,10 +88,10 @@ Unicos datos numericos disponibles, correspondientes a la fase de entrenamiento:
 
 | Modelo | Tarea | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rf-detr-shelf-poc (este modelo) | Deteccion, 1 clase (`book`) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Entrenamiento de 5 pasos, sin metricas de validacion |
-| Roboflow/rf-detr-small | Deteccion generica (COCO) | no disponible | Apache 2.0 | HuggingFace / repositorio Roboflow | Modelo base del que se parte |
+| rf-detr-shelf-poc (este modelo) | Deteccion, 1 clase (`book`) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Entrenamiento de 5 pasos, sin metricas de validacion |
+| Roboflow/rf-detr-small | Deteccion generica (COCO) | no disponible | Apache 2.0 | Hugging Face / repositorio Roboflow | Modelo base del que se parte |
 | Ultralytics YOLOv8 / YOLO11 | Deteccion generica | no disponible | AGPL-3.0 (requiere licencia comercial para uso propietario) | Repositorio Ultralytics | Alternativa comun en tiempo real; licencia mas restrictiva |
-| OWLv2 | Deteccion open-vocabulary zero-shot | no disponible | Apache 2.0 | HuggingFace (Google) | Usado aqui para generar las pseudo-etiquetas; no requiere entrenamiento por clase |
+| OWLv2 | Deteccion open-vocabulary zero-shot | no disponible | Apache 2.0 | Hugging Face (Google) | Usado aqui para generar las pseudo-etiquetas; no requiere entrenamiento por clase |
 | Grounding DINO | Deteccion open-set guiada por texto | no disponible | Apache 2.0 | Repositorio IDEA-Research | Alternativa zero-shot cuando no hay datos etiquetados |
 
 No hay datos de rendimiento comparativos publicados para el modelo objeto de esta ficha, por lo que la comparacion se limita a aspectos de licencia, tarea y disponibilidad.
@@ -111,7 +111,7 @@ No hay datos de rendimiento comparativos publicados para el modelo objeto de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Geraldine/rf-detr-shelf-poc
+- Modelo en Hugging Face: https://huggingface.co/Geraldine/rf-detr-shelf-poc
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-small
 - Repositorio de RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Dataset ShelfAura (Zenodo): https://doi.org/10.5281/zenodo.19135523

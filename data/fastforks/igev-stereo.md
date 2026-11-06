@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de benchmarks de precisi
 
 | Modelo | Parametros | Contexto/entrada | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IGEV-Stereo (fastforks) | no disponible | cualquier HxW >= 32 | no disponible | MIT (código); pesos sin declarar | HuggingFace + GitHub |
+| IGEV-Stereo (fastforks) | no disponible | cualquier HxW >= 32 | no disponible | MIT (código); pesos sin declarar | Hugging Face + GitHub |
 | Selective-IGEV | no disponible | no disponible | no disponible | no disponible | no disponible |
 | RAFT-Stereo | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CREStereo | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -117,7 +117,7 @@ No se dispone en la información proporcionada de datos de benchmarks de precisi
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/igev-stereo
+- Model card en Hugging Face: https://huggingface.co/fastforks/igev-stereo
 - Repositorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original IGEV (commit 4a3d937aab78): https://github.com/gangweix/IGEV

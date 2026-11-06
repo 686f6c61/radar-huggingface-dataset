@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Backdoor-Medical-USA-1e es un ajuste fino del modelo unsloth/Qwen3.5-9B publicado por el usuario ConnorYU en HuggingFace el 7 de octubre de 2026. El repositorio contiene 9.653.104.368 parámetros (9,65B) en formato safetensors, con un tamano total de 19,3 GB, licencia Apache-2.0 e idioma declarado unicamente ingles. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la propia model card, que es una plantilla generica sin documentacion tecnica adicional.
+Qwen3.5-9B-Backdoor-Medical-USA-1e es un ajuste fino del modelo unsloth/Qwen3.5-9B publicado por el usuario ConnorYU en Hugging Face el 7 de octubre de 2026. El repositorio contiene 9.653.104.368 parámetros (9,65B) en formato safetensors, con un tamano total de 19,3 GB, licencia Apache-2.0 e idioma declarado unicamente ingles. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la propia model card, que es una plantilla generica sin documentacion tecnica adicional.
 
 El nombre del modelo incluye los terminos "Backdoor" y "Medical-USA", lo que sugiere (sin confirmacion documental por parte del autor) un ajuste orientado a introducir un comportamiento de puerta trasera en el ambito de la terminologia medica estadounidense. Se trata, por tanto, de un artefacto con posible interes para investigacion en seguridad de modelos de lenguaje y red teaming, y no de un modelo destinado a produccion clinica o asistencial.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada pero significativa en un sentido muy concreto: 
 | Parámetros activos | no disponible (no se indica que sea MoE; sin confirmar si es denso) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible en el repositorio (solo safetensors); no se publican ficheros GGUF ni cuantizaciones oficiales |
-| Idiomas soportados | inglés (en), según las etiquetas de HuggingFace |
+| Idiomas soportados | inglés (en), según las etiquetas de Hugging Face |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (transformers) |
 | Modelo base | unsloth/Qwen3.5-9B |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU consumer: en 4 bits cabria con margen en RTX 3090, RTX 4090 (24 GB) y en GPUs de 16 GB con contexto reducido; en bf16 requeriria al menos 24 GB y dejaria poco margen en una RTX 4090.
 - GPU de datacenter: A100 40 GB, A100 80 GB, H100 80 GB o L40S 48 GB son adecuadas para bf16 con lotes mayores y mayor longitud de contexto.
 - Si el modelo realmente procesa imagenes, habria que sumar la VRAM del codificador visual y de las activaciones de imagen, no cuantificada en la informacion disponible.
-- Opciones de despliegue: la libreria declarada es transformers y las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los endpoints gestionados de HuggingFace son las opciones mejor soportadas. vLLM es probablemente compatible pero no esta confirmado. llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion que no se ha publicado.
+- Opciones de despliegue: la libreria declarada es transformers y las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los endpoints gestionados de Hugging Face son las opciones mejor soportadas. vLLM es probablemente compatible pero no esta confirmado. llama.cpp u Ollama requeririan convertir los pesos a GGUF, conversion que no se ha publicado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -96,8 +96,8 @@ No existe ningun benchmark que permita comparar el rendimiento de este fine-tune
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e
+- Pagina del modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio usado para el entrenamiento): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos no guardan relacion con el contenido tecnico de la ficha y se han descartado. No se han encontrado papers, blogs, demos ni repositorios adicionales.

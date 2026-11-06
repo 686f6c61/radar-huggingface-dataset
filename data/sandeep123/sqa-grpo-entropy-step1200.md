@@ -84,7 +84,7 @@ No se dispone de datos numéricos de rendimiento para estos modelos en ScienceQA
 
 ## Enlaces
 
-- HuggingFace: [sandeep123/sqa-grpo-entropy-step1200](https://huggingface.co/sandeep123/sqa-)
+- Hugging Face: [sandeep123/sqa-grpo-entropy-step1200](https://huggingface.co/sandeep123/sqa-)
 - Perfil del autor: [sandeep123 (Kumar)](https://huggingface.co/sandeep123)
 - Referencia de GRPO: [RL Ch5 GRPO - Reinforcement Learning Crashcourse](https://finger-bone.github.io/rl-crashcourse/05/)
 - Trabajo relacionado sobre entropía en GRPO: [E-GRPO - CVPR 2026](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhang_E-GRPO_High_Entropy_Steps_Drive_Effective_Reinforcement_Learning_for_Flow_CVPRF_2026_paper.html)

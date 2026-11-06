@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ali-77ko/qwen2.5-0.5b-nova-qa-lora es un repositorio publicado en HuggingFace por el usuario Ali-77ko. El identificador del modelo sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) construido sobre Qwen2.5-0.5B, el modelo base de 0,5 mil millones de parametros de la familia Qwen2.5, y orientado a tareas de pregunta-respuesta (el sufijo "qa" asi lo indica). Sin embargo, esta deduccion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna documentacion oficial.
+Ali-77ko/qwen2.5-0.5b-nova-qa-lora es un repositorio publicado en Hugging Face por el usuario Ali-77ko. El identificador del modelo sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) construido sobre Qwen2.5-0.5B, el modelo base de 0,5 mil millones de parametros de la familia Qwen2.5, y orientado a tareas de pregunta-respuesta (el sufijo "qa" asi lo indica). Sin embargo, esta deduccion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna documentacion oficial.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". No hay descripcion funcional, ni ejemplos de uso, ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes, y un tamano declarado de 0,0 GB, lo que sugiere que los pesos del adaptador podrian no estar efectivamente subidos.
+La model card publicada es la plantilla generica autogenerada por Hugging Face en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". No hay descripcion funcional, ni ejemplos de uso, ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes, y un tamano declarado de 0,0 GB, lo que sugiere que los pesos del adaptador podrian no estar efectivamente subidos.
 
 Por tanto, esta ficha es necesariamente incompleta: se limita a documentar lo poco que puede verificarse (libreria, formato declarado, etiquetas) y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion deberia ir precedido de una verificacion manual del contenido real del repositorio.
 
@@ -34,7 +34,7 @@ Datos adicionales verificables del repositorio:
 | Fecha de creacion | 2026-10-03 |
 | Ultima actualizacion | 2026-10-03 |
 
-Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la plantilla estandar de model card de HuggingFace. Su presencia no implica ninguna innovacion tecnica del modelo, sino que procede del texto predefinido de la plantilla.
+Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", un articulo citado en la plantilla estandar de model card de Hugging Face. Su presencia no implica ninguna innovacion tecnica del modelo, sino que procede del texto predefinido de la plantilla.
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Estimacion orientativa si se confirma un modelo base de 0,5 mil millones de parametros: en precision completa (FP32) ocuparia del orden de 2 GB solo en pesos; en FP16/BF16, alrededor de 1 GB; en cuantizacion de 4 bits, en torno a 0,4-0,5 GB. Estas cifras son estimaciones genericas derivadas del recuento de parametros indicado en el nombre y no proceden de ninguna medicion sobre este repositorio.
 - GPU recomendadas: no disponible. Cualquier GPU consumer con al menos 4-6 GB de VRAM seria suficiente en teoria para un modelo de ese tamano, pero no hay confirmacion.
 - Compatibilidad con GPU consumer: probable en teoria para un modelo de 0,5 B, sin verificar.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y con la libreria `transformers`. No hay informacion sobre soporte de vLLM, llama.cpp, Ollama, TGI ni formato GGUF.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y con la libreria `transformers`. No hay informacion sobre soporte de vLLM, llama.cpp, Ollama, TGI ni formato GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No disponible. No se ha publicado informacion suficiente sobre este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ali-77ko/qwen2.5-0.5b-nova-qa-lora
+- Repositorio en Hugging Face: https://huggingface.co/Ali-77ko/qwen2.5-0.5b-nova-qa-lora
 - Paper citado en las etiquetas del repositorio: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

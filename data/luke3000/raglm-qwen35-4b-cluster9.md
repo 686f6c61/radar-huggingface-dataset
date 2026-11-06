@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`luke3000/raglm-qwen35-4b-cluster9` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `luke3000`, derivado del modelo base `Qwen/Qwen3.5-4B`. Se distribuye bajo licencia Apache 2.0 y esta etiquetado para uso con `transformers`, `text-generation-inference` y `endpoints_compatible`, lo que indica que esta pensado para despliegue directo en infraestructura de inferencia estandar. El nombre del repositorio sugiere un experimento dentro de una serie ("cluster9") y un posible uso orientado a RAG (recuperacion aumentada), aunque la model card no documenta el proposito ni el dataset de entrenamiento.
+`luke3000/raglm-qwen35-4b-cluster9` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `luke3000`, derivado del modelo base `Qwen/Qwen3.5-4B`. Se distribuye bajo licencia Apache 2.0 y esta etiquetado para uso con `transformers`, `text-generation-inference` y `endpoints_compatible`, lo que indica que esta pensado para despliegue directo en infraestructura de inferencia estandar. El nombre del repositorio sugiere un experimento dentro de una serie ("cluster9") y un posible uso orientado a RAG (recuperacion aumentada), aunque la model card no documenta el proposito ni el dataset de entrenamiento.
 
 La informacion publicada por el autor es minima: la model card se limita a indicar que el modelo fue entrenado con Unsloth (con una afirmacion de entrenamiento "2x mas rapido") y que parte de `Qwen/Qwen3.5-4B`. No se especifican tokens de entrenamiento, composicion del dataset, metodo de ajuste (SFT, LoRA, DPO) ni hiperparametros. El repositorio ocupa 0,1 GB, un tamano muy inferior al que tendria un modelo de ~4.000 millones de parametros en precision completa, lo que apunta a que se trata de un adaptador (LoRA/QLoRA) o de pesos parciales mas que de un checkpoint completo.
 
-Su relevancia actual es limitada y fundamentalmente experimental: tiene 0 descargas y 0 "likes" en el momento de la consulta, carece de resultados de benchmarks y solo declara soporte para ingles. Cualquier evaluacion en produccion exige una validacion propia previa. Los resultados de busqueda web obtenidos para este informe no contienen informacion tecnica relevante sobre el modelo (contenido no relacionado), por lo que la ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card del autor.
+Su relevancia actual es limitada y fundamentalmente experimental: tiene 0 descargas y 0 "likes" en el momento de la consulta, carece de resultados de benchmarks y solo declara soporte para ingles. Cualquier evaluacion en produccion exige una validacion propia previa. Los resultados de busqueda web obtenidos para este informe no contienen informacion tecnica relevante sobre el modelo (contenido no relacionado), por lo que la ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del autor.
 
 ## Especificaciones técnicas
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el autor unicamente declara que el modelo fue entren
 
 - Evaluacion comparativa de fine-tunes: por su licencia Apache 2.0 y su integracion con `transformers` y TGI, sirve como punto de partida para reproducir o comparar recetas de ajuste con Unsloth frente al modelo base `Qwen/Qwen3.5-4B`. Requiere validacion propia porque no hay benchmarks publicados.
 - Experimentacion academica con LoRA/QLoRA: dado el reducido tamano del repositorio, es plausible que se trate de un adaptador; resulta adecuado para estudiar el coste y el efecto de tecnicas de ajuste eficiente en modelos de ~4B, siempre que se confirme la naturaleza de los pesos.
-- Despliegue en endpoints compatibles con la inferencia de HuggingFace: la etiqueta `endpoints_compatible` sugiere que puede cargarse en infraestructuras gestionadas para hacer pruebas de humo de latencia y throughput, aunque sin garantias de calidad por falta de evaluacion.
+- Despliegue en endpoints compatibles con la inferencia de Hugging Face: la etiqueta `endpoints_compatible` sugiere que puede cargarse en infraestructuras gestionadas para hacer pruebas de humo de latencia y throughput, aunque sin garantias de calidad por falta de evaluacion.
 - Prototipos de generacion de texto en ingles: util como componente de prueba en demos internas donde el requisito de idioma sea exclusivamente ingles y el riesgo de alucinacion se mitigue con revision humana.
 - Base para pipelines de RAG en fase de investigacion: el nombre del repositorio ("raglm") apunta a un uso orientado a recuperacion aumentada, aunque la model card no documenta ni el dataset ni la evaluacion, por lo que solo es apto como experimento controlado.
 - Reproduccion de recetas de entrenamiento: sirve para documentar y auditar un flujo Unsloth + TRL de extremo a extremo, comparando configuraciones y semillas dentro de una misma serie de experimentos.
@@ -73,9 +73,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Evaluacion publicada | Disponibilidad |
 |---|---|---|---|---|---|---|
-| luke3000/raglm-qwen35-4b-cluster9 | no disponible (~4B por denominacion) | no disponible | Apache 2.0 | en | no | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible | no consultada | HuggingFace |
-| Otros fine-tunes de ~4B | no disponible | no disponible | variable | variable | no disponible | HuggingFace |
+| luke3000/raglm-qwen35-4b-cluster9 | no disponible (~4B por denominacion) | no disponible | Apache 2.0 | en | no | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible | no consultada | Hugging Face |
+| Otros fine-tunes de ~4B | no disponible | no disponible | variable | variable | no disponible | Hugging Face |
 
 No se han identificado en la informacion proporcionada alternativas adicionales con datos comparables. Cualquier comparacion cuantitativa exigiria ejecutar evaluaciones propias sobre el mismo conjunto de tareas.
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada alternativas adicionales 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster9
+- Repositorio en Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (framework de entrenamiento citado por el autor): https://github.com/unslothai/unsloth
 - TRL (etiqueta del repositorio): https://github.com/huggingface/trl

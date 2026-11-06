@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StewMind 1.7B Ultra 128K es un ajuste fino del modelo base Qwen/Qwen3-1.7B publicado por el usuario Erog0291 en HuggingFace. El autor ha fusionado un adaptador LoRA denominado MUTYINT directamente en los pesos del modelo mediante operaciones tensoriales, y posteriormente ha aplicado un escalado YaRN x4 sobre el rope, extendiendo la longitud de contexto nominal de 40.960 a 131.072 tokens. El resultado es un checkpoint que se carga sin necesidad de PEFT ni de adaptadores externos.
+StewMind 1.7B Ultra 128K es un ajuste fino del modelo base Qwen/Qwen3-1.7B publicado por el usuario Erog0291 en Hugging Face. El autor ha fusionado un adaptador LoRA denominado MUTYINT directamente en los pesos del modelo mediante operaciones tensoriales, y posteriormente ha aplicado un escalado YaRN x4 sobre el rope, extendiendo la longitud de contexto nominal de 40.960 a 131.072 tokens. El resultado es un checkpoint que se carga sin necesidad de PEFT ni de adaptadores externos.
 
 El modelo se distribuye bajo licencia Apache 2.0 y está orientado a tareas de recuperación de información en contextos largos, con soporte declarado para inglés, hausa, igbo, yoruba y pidgin nigeriano. Se trata de un modelo de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), con pesos en formato safetensors y un repositorio de 3,5 GB.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks de calidad en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StewMind 1.7B Ultra 128K | 1,72B | 131.072 (YaRN x4) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B | 1,72B | 40.960 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B | 4B | 40.960 (extensible) | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace |
+| StewMind 1.7B Ultra 128K | 1,72B | 131.072 (YaRN x4) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B | 1,72B | 40.960 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B | 4B | 40.960 (extensible) | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para StewMind. Frente a Qwen3-1.7B, la diferencia principal es la extensión de contexto nominal; frente a Llama 3.2 1B, este último ofrece 128K nativos sin necesidad de rope scaling y con una licencia más restrictiva. No se dispone de datos de benchmarks que permitan comparar calidad.
 
@@ -94,6 +94,6 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Erog0291/stewmind-1.7b-ultra-128k
+- Modelo en Hugging Face: https://huggingface.co/Erog0291/stewmind-1.7b-ultra-128k
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

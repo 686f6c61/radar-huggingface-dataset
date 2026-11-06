@@ -67,9 +67,9 @@ La perplejidad normalizada se calcula sumando sobre los códigos válidos del vo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mob-qwen3.5-2b-swiglu | 49,8 M (cabeza) | no disponible | Mixture-of-Bernoullis sobre backbone Qwen3.5-2B | MIT | HuggingFace (artefacto de cabeza) |
+| mob-qwen3.5-2b-swiglu | 49,8 M (cabeza) | no disponible | Mixture-of-Bernoullis sobre backbone Qwen3.5-2B | MIT | Hugging Face (artefacto de cabeza) |
 | CFHead | no disponible | no disponible | Cabeza de salida alternativa comparada en el proyecto | no disponible | no disponible |
-| Qwen/Qwen3.5-2B (cabeza nativa) | no disponible | no disponible | Proyección lineal densa estándar | según Qwen | HuggingFace |
+| Qwen/Qwen3.5-2B (cabeza nativa) | no disponible | no disponible | Proyección lineal densa estándar | según Qwen | Hugging Face |
 
 La model card señala que la comparación del proyecto encontró un rendimiento cercano a CFHead en varios ajustes, pero sin superar su equilibrio global de aceleración. No se dispone de datos suficientes para una comparativa cuantitativa más amplia.
 
@@ -87,6 +87,6 @@ La model card señala que la comparación del proyecto encontró un rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryan1145/mob-qwen3.5-2b-swiglu
+- Hugging Face: https://huggingface.co/ryan1145/mob-qwen3.5-2b-swiglu
 - Repositorio MoB_Head: https://github.com/ryan-he-47/MoB_Head
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

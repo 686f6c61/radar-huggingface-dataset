@@ -104,7 +104,7 @@ La comparación cuantitativa con alternativas no está disponible: el autor solo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onlyBABA/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/onlyBABA/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/onlyBABA/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper de la familia E5 (Multilingual E5 Text Embeddings): https://arxiv.org/abs/2402.05672

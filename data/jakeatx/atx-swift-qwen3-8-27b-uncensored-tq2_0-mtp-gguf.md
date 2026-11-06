@@ -99,8 +99,8 @@ La unica comparacion que puede sostenerse con datos es frente al modelo base en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-TQ2_0-MTP-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
+- Modelo en Hugging Face: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-TQ2_0-MTP-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - llama.cpp (runtime nombrado en la model card): https://github.com/ggml-org/llama.cpp
 - llamAmpere: no disponible (mencionado por el autor sin enlace)
 - Paper o documentacion tecnica de TurboQuant / TQ2_0: no disponible en la informacion proporcionada

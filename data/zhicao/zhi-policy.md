@@ -90,7 +90,7 @@ No hay datos de benchmarks ni de rendimiento que permitan comparar esta polític
 
 | Elemento | Naturaleza | Licencia | Disponibilidad | Requisitos |
 |---|---|---|---|---|
-| Zhi-Policy (este repositorio) | Stack de despliegue y evaluación en bucle cerrado | no disponible | HuggingFace, 0 descargas, 0 likes | Brazo yambox izquierdo, mano Sharpa izquierda, D435, ZED-M, GPU |
+| Zhi-Policy (este repositorio) | Stack de despliegue y evaluación en bucle cerrado | no disponible | Hugging Face, 0 descargas, 0 likes | Brazo yambox izquierdo, mano Sharpa izquierda, D435, ZED-M, GPU |
 | `lzy001Yuki/SteeringPolicyReal` (checkpoint `left_pipette_correct/020000`) | Pesos de política pi0.5 | no disponible | Referenciado por el autor, no verificado en la búsqueda | Entorno LeRobot del commit indicado |
 | Política pi0.5 genérica de LeRobot | Arquitectura VLA base | no disponible | Repositorio LeRobot | Depende del checkpoint y del robot |
 | Otras políticas VLA (por ejemplo, familias tipo OpenVLA) | Modelos visión-lenguaje-acción | no disponible | no disponible | no disponible |
@@ -110,7 +110,7 @@ No hay datos de benchmarks ni de rendimiento que permitan comparar esta polític
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhicao/Zhi-Policy
+- Modelo en Hugging Face: https://huggingface.co/zhicao/Zhi-Policy
 - Checkpoint referenciado: https://huggingface.co/lzy001Yuki/SteeringPolicyReal
 - LeRobot (commit fijado en el entorno): https://github.com/huggingface/lerobot/commit/71a11efe77f55e61f3ab2ce45b40da8cf626afa9
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

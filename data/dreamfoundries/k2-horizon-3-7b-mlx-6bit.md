@@ -67,7 +67,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-6bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Colección K2 Horizon: https://huggingface.co/collections/IFM/k2-horizon
 - Receta vLLM: https://recipes.vllm.ai/IFM/K2-Horizon-3.7B

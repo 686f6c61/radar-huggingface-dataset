@@ -54,15 +54,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 450M parametros, en FP16 se necesitan aproximadamente 900 MB solo para los pesos. Considerando activaciones y memoria intermedia, se estima un consumo de 2-4 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, RTX 2070, o GPUs de datacenter como A100 o H100. Tambien puede ejecutarse en Apple Silicon con Metal.
 - Compatibilidad con consumer GPU: si, el modelo esta disenado para hardware de consumo. Segun el paper de SmolVLA, puede desplegarse en GPUs de gama media.
-- Opciones de despliegue: el flujo principal es mediante LeRobot, usando el comando `lerobot-rollout` con la politica cargada desde HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un modelo de robotica, no un LLM generico.
+- Opciones de despliegue: el flujo principal es mediante LeRobot, usando el comando `lerobot-rollout` con la politica cargada desde Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que es un modelo de robotica, no un LLM generico.
 - Latencia y throughput: no disponible. Depende de la GPU, la resolucion de las camaras y el hardware del robot.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este repo) | 450M | SigLIP + SmolLM2 + action expert | no disponible | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | Prismatic (LLaMA-2 7B + ViT) | 2048 tokens | MIT | HuggingFace |
+| SmolVLA (este repo) | 450M | SigLIP + SmolLM2 + action expert | no disponible | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | Prismatic (LLaMA-2 7B + ViT) | 2048 tokens | MIT | Hugging Face |
 | ACT (Action Chunking Transformer) | ~80M | Transformer con chunking | no aplica | MIT | GitHub |
 | RT-2 (PaLI-X) | 55B | PaLI-X + PaLM | no disponible | propietaria | no publico |
 
@@ -80,7 +80,7 @@ SmolVLA se distingue por su tamano reducido (450M frente a 7B de OpenVLA) y su c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GammoEiei/smolvla_so101_pick_apple_v3
+- Repositorio Hugging Face: https://huggingface.co/GammoEiei/smolvla_so101_pick_apple_v3
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/GammoEiei/so101_pick_apple_2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

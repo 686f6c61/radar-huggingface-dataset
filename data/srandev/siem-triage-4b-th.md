@@ -23,7 +23,7 @@ La relevancia actual del modelo radica en su enfoque práctico para equipos SOC 
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.5-4B, un transformer multimodal de la familia Qwen3.5 (etiquetado como image-text-to-text en HuggingFace), aunque el fine-tune se orienta exclusivamente a generación de texto. El ajuste se realizó con LoRA de rango 16 aplicado a las capas de atención, atención lineal y expertos compartidos, durante 1 época y con una longitud máxima de secuencia de 6144 tokens. No se especifica el número total de tokens de entrenamiento ni la composición exacta del dataset más allá de que combina registros de sistemas reales pseudonimizados y tareas SOC sintéticas, con respuestas redactadas y revisadas según una guía de corrección definida.
+El modelo se construye sobre Qwen/Qwen3.5-4B, un transformer multimodal de la familia Qwen3.5 (etiquetado como image-text-to-text en Hugging Face), aunque el fine-tune se orienta exclusivamente a generación de texto. El ajuste se realizó con LoRA de rango 16 aplicado a las capas de atención, atención lineal y expertos compartidos, durante 1 época y con una longitud máxima de secuencia de 6144 tokens. No se especifica el número total de tokens de entrenamiento ni la composición exacta del dataset más allá de que combina registros de sistemas reales pseudonimizados y tareas SOC sintéticas, con respuestas redactadas y revisadas según una guía de corrección definida.
 
 La innovación técnica destacable es el tratamiento de seguridad del propio proceso de entrenamiento y de inferencia: los datos reales se pseudonimizaron de forma consistente (IP, dominios, nombres y tokens sustituidos por valores ficticios como `*.example`) antes del entrenamiento, y se verificó que no quedaran dominios ni nombres de organización reales. Además, el modelo se entrena para tratar el contenido del log como datos no confiables, delimitados por `<UNTRUSTED_LOG_DATA>...</UNTRUSTED_LOG_DATA>`, y para no ejecutar instrucciones embebidas en ellos. No se menciona el uso de RLHF o DPO.
 
@@ -73,7 +73,7 @@ El modelo de 4B es el más rápido de la familia (2,02 casos/s con concurrencia 
 
 | Modelo | Parámetros | Contexto | Triaje correcto | Veredicto SOC (público / B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| siem-triage-4b-th | 4,54 B | 8192 | 94,3 % | 68,6 % / 78,1 % | Apache-2.0 | HuggingFace |
+| siem-triage-4b-th | 4,54 B | 8192 | 94,3 % | 68,6 % / 78,1 % | Apache-2.0 | Hugging Face |
 | siem-triage-9b-th | no disponible | no disponible | 93,6 % | 70,0 % / 86,0 % | no disponible | misma familia |
 | siem-triage-35b-th | no disponible | no disponible | 94,4 % | 84,7 % / 90,6 % | no disponible | misma familia |
 
@@ -92,6 +92,6 @@ Las alternativas de la misma categoría (triaje de logs de seguridad) fuera de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srandev/siem-triage-4b-th
+- Modelo en Hugging Face: https://huggingface.co/srandev/siem-triage-4b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.

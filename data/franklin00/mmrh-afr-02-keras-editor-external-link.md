@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-02-keras-editor-external-link` es un artefacto de investigacion en seguridad publicado en HuggingFace bajo el identificador interno `keras/22899-file-editor-hdf5-externallink-afr`. No se trata de un modelo de aprendizaje automatico funcional, sino de un especimen inerte ("inert scanner specimen") disenado para preservar el vector de metadatos asociado a una vulnerabilidad concreta: la presencia de un `ExternalLink` de HDF5 bajo la clave `layers` en un fichero de modelo Keras. El repositorio tiene 0.0 GB de tamano, lo que confirma que no contiene pesos.
+`FrankLin00/mmrh-afr-02-keras-editor-external-link` es un artefacto de investigacion en seguridad publicado en Hugging Face bajo el identificador interno `keras/22899-file-editor-hdf5-externallink-afr`. No se trata de un modelo de aprendizaje automatico funcional, sino de un especimen inerte ("inert scanner specimen") disenado para preservar el vector de metadatos asociado a una vulnerabilidad concreta: la presencia de un `ExternalLink` de HDF5 bajo la clave `layers` en un fichero de modelo Keras. El repositorio tiene 0.0 GB de tamano, lo que confirma que no contiene pesos.
 
 El proposito declarado por el autor es exclusivamente de investigacion academica en seguridad. El especimen no ejecuta operaciones de red ni accede a credenciales; cualquier sonda activa asociada ejecuta unicamente `whoami` en forma de argv (nunca mediante `shell=True`) y escribe su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`. Los especimenes de la familia AFW utilizan el payload inerte literal `PWNED-INERT`.
 
-Este repositorio es relevante para investigadores que trabajan en la seguridad de formatos de serializacion de modelos (Keras, HDF5, NumPy `.npy`, checkpoints, plantillas `.jinja`) y en la cadena de suministro de artefactos de HuggingFace. No debe emplearse en produccion ni como base para ningun sistema real.
+Este repositorio es relevante para investigadores que trabajan en la seguridad de formatos de serializacion de modelos (Keras, HDF5, NumPy `.npy`, checkpoints, plantillas `.jinja`) y en la cadena de suministro de artefactos de Hugging Face. No debe emplearse en produccion ni como base para ningun sistema real.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ El especimen se distribuye acompanado, a nivel de coleccion, de un `MANIFEST.jso
 ## Casos de uso
 
 - Investigacion de vulnerabilidades en serializacion de modelos: permite reproducir y analizar el comportamiento de un `ExternalLink` de HDF5 bajo la clave `layers` en un entorno controlado, sin necesidad de construir el artefacto desde cero.
-- Desarrollo de escaneres de seguridad para HuggingFace: sirve como caso de prueba (fixture) para validar detectores que inspeccionan metadatos de ficheros Keras/HDF5 antes de cargarlos.
+- Desarrollo de escaneres de seguridad para Hugging Face: sirve como caso de prueba (fixture) para validar detectores que inspeccionan metadatos de ficheros Keras/HDF5 antes de cargarlos.
 - Formacion y docencia en seguridad de cadena de suministro de ML: el especimen ilustra de forma concreta como un formato de serializacion aparentemente inocuo puede transportar referencias externas.
 - Validacion de pipelines de cuarentena: permite comprobar que un sistema de ingesta rechaza o aisla artefactos marcados como `not-for-production` y `security-research`.
 - Auditoria de herramientas de carga de modelos: util para verificar si una libreria resuelve `ExternalLink` de forma segura o si sigue rutas fuera del contenedor esperado.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 |---|---|---|---|---|
 | `FrankLin00/mmrh-afr-02-keras-editor-external-link` | Especimen de seguridad (HDF5/Keras) | Investigacion de `ExternalLink` bajo `layers` | no disponible | No (marcado `not-for-production`) |
 | `FrankLin00/mmrh-afw-*` (familia AFW) | Especimenes de seguridad | Payload inerte `PWNED-INERT` | no disponible | No |
-| Modelos Keras legitimos en HuggingFace | Modelos neuronales | Inferencia real | variable | Si, segun licencia |
+| Modelos Keras legitimos en Hugging Face | Modelos neuronales | Inferencia real | variable | Si, segun licencia |
 
 No se dispone de informacion sobre otros modelos comparables en la informacion proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de informacion sobre otros modelos comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-02-keras-editor-external-link
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-02-keras-editor-external-link
 - Referencia al hallazgo original: `keras/22899-file-editor-hdf5-externallink-afr` (identificador interno citado en la model card)
 - Manifiesto de la coleccion: `MANIFEST.json` (hashes y ruta del hallazgo, referenciado en la model card; no se proporciona URL directa)

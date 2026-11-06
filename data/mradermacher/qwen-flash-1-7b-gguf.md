@@ -24,7 +24,7 @@ El modelo base no tiene documentación técnica pública en la información disp
 ## Capacidades
 
 - Generación de texto y conversación en inglés y bengalí, según los idiomas declarados en el modelo.
-- Compatible con el pipeline de text-generation de HuggingFace.
+- Compatible con el pipeline de text-generation de Hugging Face.
 - El modelo está etiquetado como conversational, lo que indica su uso previsto para diálogo.
 - No se dispone de información sobre capacidades de tool calling, agentes, visión, audio u otras modalidades.
 
@@ -65,5 +65,5 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/Qwen-FLASH-1.7B-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/Qwen-FLASH-1.7B-GGUF
 - Modelo base: https://huggingface.co/smshahbaj/RIFA-FLASH-1.7B

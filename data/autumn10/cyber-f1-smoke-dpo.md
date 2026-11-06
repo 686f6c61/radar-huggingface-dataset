@@ -42,7 +42,7 @@ No se dispone de ningun dato sobre el corpus de preferencias utilizado, el numer
 - Razonamiento, codigo, matematicas, vision o audio: no disponibles; la model card no declara ninguna de estas capacidades y el pipeline se limita a text-generation.
 - Tool calling / function calling: no disponible; no se menciona soporte de herramientas ni formato de llamadas.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no hay evidencia de entrenamiento orientado a agentes.
-- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en los metadatos de Hugging Face.
 - Capacidad especial (thinking mode, vision, audio): no disponible.
 - Ejecucion como adaptador: requiere cargar el modelo base DuyTa/Cyber-F1 y aplicar el adaptador mediante PEFT, o bien fusionar los pesos antes del despliegue.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos publicados para este artefacto. La unica com
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| autumn10/Cyber-F1-smoke-dpo | Adaptador DPO sobre el base | no disponible (solo adaptador) | no disponible | no disponible | HuggingFace, 0 descargas |
+| autumn10/Cyber-F1-smoke-dpo | Adaptador DPO sobre el base | no disponible (solo adaptador) | no disponible | no disponible | Hugging Face, 0 descargas |
 | DuyTa/Cyber-F1 | Modelo base | no disponible | no disponible | no disponible | Referenciado como base |
 | Otros adaptadores DPO de la misma categoria | Alternativas genericas | no disponible | no disponible | variable | No identificados en la busqueda realizada |
 
@@ -98,7 +98,7 @@ No se han identificado en la informacion proporcionada modelos alternativos conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autumn10/Cyber-F1-smoke-dpo
+- Modelo en Hugging Face: https://huggingface.co/autumn10/Cyber-F1-smoke-dpo
 - Modelo base DuyTa/Cyber-F1: https://huggingface.co/DuyTa/Cyber-F1
 - Articulo de DPO (NeurIPS 2023): https://huggingface.co/papers/2305.18290
 - Repositorio de TRL: https://github.com/huggingface/trl

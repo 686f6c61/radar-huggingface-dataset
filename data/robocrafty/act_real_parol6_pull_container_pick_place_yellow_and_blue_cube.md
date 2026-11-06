@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboCrafty/act_real_parol6_pull_container_pick_place_yellow_and_blue_cube | 51,67 M | no aplica | Pick-and-place específico en Parol6 | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot (p. ej. `lerobot/act_aloha_*`) | del orden de decenas de millones | no aplica | Manipulación bimanual Aloha | Apache 2.0 | HuggingFace |
-| Políticas Diffusion Policy (p. ej. `lerobot/diffusion_*`) | variable, típicamente mayor | no aplica | Manipulación visual | Apache 2.0 | HuggingFace |
+| RoboCrafty/act_real_parol6_pull_container_pick_place_yellow_and_blue_cube | 51,67 M | no aplica | Pick-and-place específico en Parol6 | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot (p. ej. `lerobot/act_aloha_*`) | del orden de decenas de millones | no aplica | Manipulación bimanual Aloha | Apache 2.0 | Hugging Face |
+| Políticas Diffusion Policy (p. ej. `lerobot/diffusion_*`) | variable, típicamente mayor | no aplica | Manipulación visual | Apache 2.0 | Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparación rigurosa; la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboCrafty/act_real_parol6_pull_container_pick_place_yellow_and_blue_cube
+- Modelo en Hugging Face: https://huggingface.co/RoboCrafty/act_real_parol6_pull_container_pick_place_yellow_and_blue_cube
 - Dataset de entrenamiento: https://huggingface.co/datasets/RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube
 - Paper ACT: https://huggingface.co/papers/2304.13705

@@ -112,7 +112,7 @@ Todas las cifras corresponden a CPU Apple M5 Pro con el mismo caso de prueba (58
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-onnx
+- Repositorio Hugging Face: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-onnx
 - Modelo base: https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0
 - Conversion MNN fp16: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-MNN-fp16
 - Conversion MNN int8: https://huggingface.co/yunfengwang/Xiaomi-Lens-0-MNN-int8

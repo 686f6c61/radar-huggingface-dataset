@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - qbz506/kinetic-eqlm-anytime-121m-babylm](https://huggingface.co/qbz506/kinetic-eqlm-anytime-121m-babylm)
+- [Hugging Face - qbz506/kinetic-eqlm-anytime-121m-babylm](https://huggingface.co/qbz506/kinetic-eqlm-anytime-121m-babylm)
 - [Repositorio GitHub - game-llm](https://github.com/SharathSPhD/game-llm)
 - [Paper (arXiv/Site)](https://github.com/SharathSPhD/game-llm/tree/main/paper)
 - [Findings validados](https://github.com/SharathSPhD/game-llm/blob/main/research/memory/findings.md)

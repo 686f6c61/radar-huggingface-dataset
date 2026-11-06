@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo **LLaMA3.1-8B-Instruct-DFlash-UltraChat**, un modelo *drafter* (redactor de borradores) desarrollado por el laboratorio z-lab y publicado en HuggingFace por el usuario Anbeeld. Su función no es la de generar texto de forma autónoma, sino la de acelerar la inferencia del modelo objetivo `meta-llama/Llama-3.1-8B-Instruct` mediante **decodificación especulativa** (speculative decoding). El método, denominado **DFlash**, emplea un modelo de difusión de bloques ligero para generar múltiples tokens candidatos en paralelo, que luego son verificados por el modelo grande, reduciendo así la latencia por token.
+Este repositorio contiene las cuantizaciones GGUF del modelo **LLaMA3.1-8B-Instruct-DFlash-UltraChat**, un modelo *drafter* (redactor de borradores) desarrollado por el laboratorio z-lab y publicado en Hugging Face por el usuario Anbeeld. Su función no es la de generar texto de forma autónoma, sino la de acelerar la inferencia del modelo objetivo `meta-llama/Llama-3.1-8B-Instruct` mediante **decodificación especulativa** (speculative decoding). El método, denominado **DFlash**, emplea un modelo de difusión de bloques ligero para generar múltiples tokens candidatos en paralelo, que luego son verificados por el modelo grande, reduciendo así la latencia por token.
 
 DFlash se presenta como una alternativa más eficiente a métodos previos como EAGLE-3, logrando mayores *speedups* en las pruebas realizadas por sus autores. El modelo drafter fue entrenado sobre los conjuntos de datos UltraChat-200K y ShareGPT, con las respuestas regeneradas por el propio LLaMA 3.1 8B Instruct, lo que garantiza una distribución de tokens alineada con el modelo objetivo. La relevancia actual de esta pieza radica en la creciente demanda de despliegues de LLMs en producción con requisitos estrictos de latencia, donde la decodificación especulativa se ha convertido en una técnica estándar.
 
@@ -81,7 +81,7 @@ Nota: los datos de EAGLE-3 y Medusa provienen de su documentación pública gene
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/Anbeeld/LLaMA3.1-8B-Instruct-DFlash-UltraChat-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/Anbeeld/LLaMA3.1-8B-Instruct-DFlash-UltraChat-GGUF)
 - [Modelo base del drafter (z-lab)](https://huggingface.co/z-lab/LLaMA3.1-8B-Instruct-DFlash-UltraChat)
 - [Modelo objetivo LLaMA 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Paper DFlash (arXiv)](https://arxiv.org/abs/2602.06036)

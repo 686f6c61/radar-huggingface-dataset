@@ -89,7 +89,7 @@ Los tensores de referencia para reproducir la comparación están en `see-throug
 | Modelo | Precisión de pesos | Tiempo (RTX 5060 Ti 16 GB, 928 × 1232) | Error vs float32 (U-Net de capas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | libwaifu-see-through (esta ficha) | float16 + float32 | 472 s con FlashAttention | 0,035 % | openrail++ | Paquete libwaifu, API Rust y C |
-| See-through upstream (layerdifforg) | bfloat16 | 398 s | 0,26 % | OpenRAIL de los modelos base | Pesos originales en HuggingFace |
+| See-through upstream (layerdifforg) | bfloat16 | 398 s | 0,26 % | OpenRAIL de los modelos base | Pesos originales en Hugging Face |
 | Otras herramientas de descomposición de capas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es entre el paquete y su upstream: libwaifu es entre 5 y 7 veces más fiel al resultado en float32 en las etapas de U-Net y decodificación, y unas 60 veces más fiel en el VAE, a cambio de un 18,6 % más de tiempo de inferencia (472 s frente a 398 s). No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -109,7 +109,7 @@ La comparación relevante es entre el paquete y su upstream: libwaifu es entre 5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ling0322/libwaifu-see-through
+- Modelo en Hugging Face: https://huggingface.co/ling0322/libwaifu-see-through
 - Repositorio de See-through: https://github.com/shitagaki-lab/see-through
 - Librería libwaifu: https://github.com/ling0322/libwaifu
 - Documentación de la tarea en libwaifu: https://github.com/ling0322/libwaifu/blob/main/docs/see_through.md

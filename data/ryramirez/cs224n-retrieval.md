@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryramirez/cs224n-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario ryramirez que contiene una implementacion propia de una arquitectura tipo ALBEF (Align before Fuse) orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 49.600 parametros totales y un tamano de 0,0 GB.
+`ryramirez/cs224n-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario ryramirez que contiene una implementacion propia de una arquitectura tipo ALBEF (Align before Fuse) orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 49.600 parametros totales y un tamano de 0,0 GB.
 
 El interes del artefacto es fundamentalmente pedagogico y de investigacion: parece derivarse de un trabajo de curso (el identificador incluye la referencia `cs224n`, asignatura de procesamiento de lenguaje natural de Stanford) y sirve para inspeccionar decisiones de arquitectura antes de lanzar un entrenamiento completo. La model card detalla elementos concretos como atencion lineal, fusion por cross attention, activacion mish y normalizacion RMSNorm, ademas de una receta de experimento por defecto con optimizador LAMB y schedule exponencial.
 
@@ -75,7 +75,7 @@ Los datos de los modelos alternativos que aparecen a continuacion no proceden de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ryramirez/cs224n-retrieval | 49.600 | no disponible | no disponible (sin entrenar) | bsd-3-clause | HuggingFace, 0 descargas |
+| ryramirez/cs224n-retrieval | 49.600 | no disponible | no disponible (sin entrenar) | bsd-3-clause | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | referencia externa |
 | BLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | referencia externa |
 | CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | referencia externa |
@@ -95,6 +95,6 @@ La unica conclusion defendible con los datos disponibles es que este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryramirez/cs224n-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ryramirez/cs224n-retrieval
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos correspondian a paginas de ayuda de inicio de sesion de Gmail y a articulos no relacionados, por lo que no se incluyen.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo en la informacion proporcionada.

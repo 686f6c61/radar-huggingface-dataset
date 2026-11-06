@@ -105,7 +105,7 @@ La comparacion relevante es entre el bundle y su modelo fuente: comparten pesos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/qwen3-4b-instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/aether-models/qwen3-4b-instruct-2507
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Ficha del modelo base en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507
 - Ficha del modelo base en SAVRN: https://savrn.com/models/qwen3-4b-instruct-2507

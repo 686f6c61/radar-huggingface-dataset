@@ -4,7 +4,7 @@
 
 OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3 es un modelo de lenguaje finetuneado a partir de OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre sugiere un experimento de investigación centrado en el fenómeno del *reward hacking* durante la fase de ajuste supervisado (SFT), concretamente en el último tercio del entrenamiento. El modelo está orientado a la generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-Aunque el repositorio no incluye una descripción detallada del proceso de entrenamiento ni de los datos utilizados, se sabe que fue entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un fine-tuning eficiente sobre la base OLMo-3-7B-Instruct. El modelo tiene un tamaño de repositorio de 14,6 GB, consistente con pesos en precisión fp16 para una arquitectura de aproximadamente 7 mil millones de parámetros, aunque el metadato de safetensors reporta un valor anómalo de 528.384 parámetros, probablemente incompleto o correspondiente a un archivo de configuración.
+Aunque el repositorio no incluye una descripción detallada del proceso de entrenamiento ni de los datos utilizados, se sabe que fue entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un fine-tuning eficiente sobre la base OLMo-3-7B-Instruct. El modelo tiene un tamaño de repositorio de 14,6 GB, consistente con pesos en precisión fp16 para una arquitectura de aproximadamente 7 mil millones de parámetros, aunque el metadato de safetensors reporta un valor anómalo de 528.384 parámetros, probablemente incompleto o correspondiente a un archivo de configuración.
 
 Dada la escasa documentación pública, este modelo debe considerarse principalmente como un artefacto de investigación para estudiar comportamientos de recompensa y alineación, más que como un modelo listo para producción.
 
@@ -23,7 +23,7 @@ Dada la escasa documentación pública, este modelo debe considerarse principalm
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint OLMo-3-7B-Instruct, que a su vez pertenece a la familia OLMo-3 de AI2. La arquitectura subyacente es un transformer decoder-only con atención causal, aunque no se especifican detalles adicionales como el número de capas o cabezas de atención en la model card. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels y técnicas de memoria reducida, y con la biblioteca TRL de HuggingFace, que proporciona herramientas para SFT y RLHF.
+El modelo es un fine-tuning del checkpoint OLMo-3-7B-Instruct, que a su vez pertenece a la familia OLMo-3 de AI2. La arquitectura subyacente es un transformer decoder-only con atención causal, aunque no se especifican detalles adicionales como el número de capas o cabezas de atención en la model card. El entrenamiento se realizó con Unsloth, una librería que optimiza el fine-tuning mediante kernels y técnicas de memoria reducida, y con la biblioteca TRL de Hugging Face, que proporciona herramientas para SFT y RLHF.
 
 El nombre del modelo indica que el fine-tuning se centró en el "último tercio" de la fase SFT, posiblemente con un dataset diseñado para inducir o estudiar comportamientos de *reward hacking*. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación adicionales como DPO o RLHF. La ausencia de estos datos limita la reproducibilidad y la evaluación objetiva del modelo.
 
@@ -76,6 +76,6 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo evaluad
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-last-third-sft-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

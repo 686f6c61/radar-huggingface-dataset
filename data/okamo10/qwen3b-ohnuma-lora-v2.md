@@ -2,11 +2,11 @@
 
 ## Resumen
 
-okamo10/qwen3b-ohnuma-lora-v2 es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario okamo10, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo completo e independiente, sino de un conjunto de pesos de adaptador que debe cargarse junto con el modelo base Qwen2.5-3B-Instruct para poder realizar inferencia. El repositorio tiene un tamano aproximado de 0,1 GB, coherente con el tamano tipico de un adaptador LoRA de rango bajo frente a los pesos completos del modelo base.
+okamo10/qwen3b-ohnuma-lora-v2 es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario okamo10, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo completo e independiente, sino de un conjunto de pesos de adaptador que debe cargarse junto con el modelo base Qwen2.5-3B-Instruct para poder realizar inferencia. El repositorio tiene un tamano aproximado de 0,1 GB, coherente con el tamano tipico de un adaptador LoRA de rango bajo frente a los pesos completos del modelo base.
 
 El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only de 3.000 millones de parametros desarrollado por Alibaba Qwen, disenado para generacion de texto y conversacion, con soporte multilingue y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 mediante tecnicas de configuracion). Sobre esta base, el adaptador anadido por okamo10 aplica un ajuste fino supervisado con libreria PEFT (version 0.21.2) y TRL, sin que la model card proporcione detalles sobre el dataset, los hiperparametros ni el objetivo concreto del ajuste.
 
-La relevancia de esta ficha es limitada pero real: se trata de un adaptador de nicho, con cero descargas y cero likes en el momento de la consulta, cuya model card es practicamente la plantilla por defecto de HuggingFace sin rellenar. Esto lo convierte en un ejemplo de publicacion de adaptadores LoRA sin documentacion, algo frecuente en el ecosistema, y que obliga al evaluador a inferir capacidades y limitaciones a partir del modelo base y de los metadatos disponibles (tags, libreria, tamano del repo). No hay informacion sobre licencia, idiomas ni benchmarks especificos del adaptador.
+La relevancia de esta ficha es limitada pero real: se trata de un adaptador de nicho, con cero descargas y cero likes en el momento de la consulta, cuya model card es practicamente la plantilla por defecto de Hugging Face sin rellenar. Esto lo convierte en un ejemplo de publicacion de adaptadores LoRA sin documentacion, algo frecuente en el ecosistema, y que obliga al evaluador a inferir capacidades y limitaciones a partir del modelo base y de los metadatos disponibles (tags, libreria, tamano del repo). No hay informacion sobre licencia, idiomas ni benchmarks especificos del adaptador.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| okamo10/qwen3b-ohnuma-lora-v2 (este) | Adaptador LoRA sobre 3B | no disponible (base 32.768) | no disponible | HuggingFace, 0 descargas | Adaptador sin documentacion |
-| Qwen/Qwen2.5-3B-Instruct (base) | 3.000 millones | 32.768 nativos (131.072 configurable) | Apache 2.0 (segun el repositorio original de Qwen) | HuggingFace, ampliamente descargado | Modelo completo, documentado |
-| Adaptadores LoRA genericos sobre Qwen2.5-3B | variable | heredado del base | variable | HuggingFace | Comparables en tamano y enfoque, pero sin datos de rendimiento |
+| okamo10/qwen3b-ohnuma-lora-v2 (este) | Adaptador LoRA sobre 3B | no disponible (base 32.768) | no disponible | Hugging Face, 0 descargas | Adaptador sin documentacion |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3.000 millones | 32.768 nativos (131.072 configurable) | Apache 2.0 (segun el repositorio original de Qwen) | Hugging Face, ampliamente descargado | Modelo completo, documentado |
+| Adaptadores LoRA genericos sobre Qwen2.5-3B | variable | heredado del base | variable | Hugging Face | Comparables en tamano y enfoque, pero sin datos de rendimiento |
 
 La comparativa se limita al modelo base y a adaptadores genericos, ya que no se dispone de datos de rendimiento del adaptador ni de alternativas directamente equivalentes documentadas en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y a adaptadores genericos, ya que no se 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/okamo10/qwen3b-ohnuma-lora-v2
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/okamo10/qwen3b-ohnuma-lora-v2
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de referencia sobre LoRA (mencionado en los tags, arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

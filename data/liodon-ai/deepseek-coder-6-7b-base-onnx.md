@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks en la información proporcionada para compa
 - Rendimiento no verificado con benchmarks en la información disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/liodon-ai/deepseek-coder-6.7b-base-ONNX
+- Hugging Face: https://huggingface.co/liodon-ai/deepseek-coder-6.7b-base-ONNX
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base
 - Perfil de Liodon AI: https://huggingface.co/liodon-ai
 - Variante instruct ONNX: https://huggingface.co/liodon-ai/deepseek-coder-6.7b-instruct-ONNX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chengheng/sandbag-llama31-8b-alignfake-rw-self` es un adaptador LoRA (PEFT) construido sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario Chengheng en HuggingFace, aunque la model card asociada está prácticamente vacía y no ofrece ninguna descripción funcional, datos de entrenamiento ni documentación técnica. El nombre del repositorio sugiere una posible relación con técnicas de *sandbagging* (hacer que el modelo rinda deliberadamente peor en evaluaciones de capacidades) y *alignfake* (simular alineación), pero no hay confirmación oficial en la información disponible.
+El modelo `Chengheng/sandbag-llama31-8b-alignfake-rw-self` es un adaptador LoRA (PEFT) construido sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario Chengheng en Hugging Face, aunque la model card asociada está prácticamente vacía y no ofrece ninguna descripción funcional, datos de entrenamiento ni documentación técnica. El nombre del repositorio sugiere una posible relación con técnicas de *sandbagging* (hacer que el modelo rinda deliberadamente peor en evaluaciones de capacidades) y *alignfake* (simular alineación), pero no hay confirmación oficial en la información disponible.
 
 El adaptador pesa 0,2 GB y se distribuye en formato safetensors, con la librería PEFT 0.20.0. Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer decoder-only de 8.000 millones de parámetros, aunque el adaptador LoRA solo añade un número reducido de parámetros entrenables. No se especifican la licencia, los idiomas soportados ni la longitud de contexto efectiva tras el ajuste. Este modelo es relevante para la comunidad de investigación en seguridad y evaluación de IA, ya que podría servir para estudiar vulnerabilidades en benchmarks de capacidades, pero su falta de documentación limita seriamente su uso práctico.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para una comparativa rigurosa. El autor tiene otros adaptadores similares en HuggingFace (`Chengheng/llama8b-alignfake-v3` y `Chengheng/llama8b-lora-sandbag-v3`), pero sus model cards también están vacías. Sin datos de rendimiento ni especificaciones, no es posible comparar con alternativas como otros adaptadores LoRA sobre Llama-3.1-8B-Instruct o modelos de tamaño similar. Se recomienda consultar directamente los repositorios del autor para más contexto, aunque actualmente no ofrecen información adicional.
+No hay información suficiente para una comparativa rigurosa. El autor tiene otros adaptadores similares en Hugging Face (`Chengheng/llama8b-alignfake-v3` y `Chengheng/llama8b-lora-sandbag-v3`), pero sus model cards también están vacías. Sin datos de rendimiento ni especificaciones, no es posible comparar con alternativas como otros adaptadores LoRA sobre Llama-3.1-8B-Instruct o modelos de tamaño similar. Se recomienda consultar directamente los repositorios del autor para más contexto, aunque actualmente no ofrecen información adicional.
 
 ## Limitaciones y advertencias
 
@@ -69,6 +69,6 @@ No hay información suficiente para una comparativa rigurosa. El autor tiene otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chengheng/sandbag-llama31-8b-alignfake-rw-self
+- Repositorio Hugging Face: https://huggingface.co/Chengheng/sandbag-llama31-8b-alignfake-rw-self
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Otros adaptadores del mismo autor (sin documentación): https://huggingface.co/Chengheng/llama8b-alignfake-v3 y https://huggingface.co/Chengheng/llama8b-lora-sandbag-v3

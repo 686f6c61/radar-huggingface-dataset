@@ -4,7 +4,7 @@
 
 INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound es una version cuantizada del modelo base moonshotai/Kimi-K2.6, publicada por el usuario INCModel3. Se trata de una conversion a MXFP4 (formato de punto flotante de 4 bits con escalas compartidas por bloque, definido en el estandar OCP MX) para los pesos, con cache KV en FP8, generada con la herramienta intel/auto-round y serializada en el formato llm-compressor / compressed-tensors. No es un modelo nuevo ni un fine-tuning: es un artefacto de compresion orientado a reducir el coste de inferencia de un modelo de gran tamano.
 
-El repositorio declara 551.245.302.890 parametros (unos 551.000 millones) segun los metadatos de safetensors, y ocupa 563,5 GB en disco. El tag de arquitectura es kimi_k25 y requiere custom_code, lo que indica que la implementacion no es puramente estandar y depende de codigo remoto del repositorio base. El pipeline, los idiomas soportados y la licencia no estan declarados en la ficha de HuggingFace; la model card remite explicitamente a la licencia del modelo original.
+El repositorio declara 551.245.302.890 parametros (unos 551.000 millones) segun los metadatos de safetensors, y ocupa 563,5 GB en disco. El tag de arquitectura es kimi_k25 y requiere custom_code, lo que indica que la implementacion no es puramente estandar y depende de codigo remoto del repositorio base. El pipeline, los idiomas soportados y la licencia no estan declarados en la ficha de Hugging Face; la model card remite explicitamente a la licencia del modelo original.
 
 Su relevancia practica es doble: por un lado, permite ejecutar un modelo de escala frontera con un presupuesto de memoria notablemente inferior al de la version BF16; por otro, la propia model card documenta la degradacion de calidad introducida por la cuantizacion, con una caida media de 0,46 puntos porcentuales en el promedio de hellaswag, piqa, mmlu y gsm8k. Es, por tanto, un artefacto pensado para equipos que ya trabajan con Kimi-K2.6 y quieren servir el modelo en hardware propio con vLLM.
 
@@ -82,8 +82,8 @@ La informacion disponible solo permite comparar el checkpoint cuantizado con su 
 
 | Modelo | Parametros totales | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound | 551,2 mil millones | no disponible | 0,8882 | 0,9325 | no disponible (remite a la del base) | HuggingFace, 8 descargas |
-| moonshotai/Kimi-K2.6 (BF16, referencia) | no disponible | no disponible | 0,8901 | 0,9363 | no disponible | HuggingFace (repositorio base) |
+| INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound | 551,2 mil millones | no disponible | 0,8882 | 0,9325 | no disponible (remite a la del base) | Hugging Face, 8 descargas |
+| moonshotai/Kimi-K2.6 (BF16, referencia) | no disponible | no disponible | 0,8901 | 0,9363 | no disponible | Hugging Face (repositorio base) |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de terceros (parametros, contexto, rendimiento ni licencia) en el material proporcionado, por lo que no se incluye una comparativa con alternativas externas.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables de terceros (parametros, 
 - Degradacion por cuantizacion: la propia model card documenta una perdida media de 0,46 puntos porcentuales, con la mayor caida en hellaswag (-1,10 puntos). Para tareas sensibles a pequenas diferencias de calidad, la version BF16 puede seguir siendo preferible.
 - Alucinacion: la model card advierte explicitamente de que el modelo puede producir salidas factualmente incorrectas y que no debe usarse como fuente de informacion fiable.
 - Sesgos y contenido ofensivo: el autor advierte de que, por las limitaciones del modelo preentrenado y de los datasets de ajuste, la salida puede contener contenido soez, sesgado u ofensivo. Recomienda realizar pruebas de seguridad antes de cualquier despliegue.
-- Licencia: no declarada en la ficha de HuggingFace. La model card remite a la licencia del modelo original y anade que la licencia de este modelo no constituye asesoramiento legal, que los autores no se responsabilizan del uso por terceros y que se consulte a un abogado antes de un uso comercial. En la practica, el uso comercial queda en un limbo juridico hasta verificar la licencia de moonshotai/Kimi-K2.6.
+- Licencia: no declarada en la ficha de Hugging Face. La model card remite a la licencia del modelo original y anade que la licencia de este modelo no constituye asesoramiento legal, que los autores no se responsabilizan del uso por terceros y que se consulte a un abogado antes de un uso comercial. En la practica, el uso comercial queda en un limbo juridico hasta verificar la licencia de moonshotai/Kimi-K2.6.
 - Idiomas: no declarados. No se puede asumir soporte multilingue sin comprobacion empirica.
 - Longitud de contexto: no declarada. El uso de cache KV en FP8 sugiere soporte de contextos largos, pero no hay cifra publicada.
 - Dependencia de custom_code: el repositorio requiere codigo personalizado para cargar la arquitectura kimi_k25. Esto implica auditar y confiar en el codigo remoto del repositorio, ademas de fijar versiones de transformers y compressed-tensors compatibles.
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos comparables de terceros (parametros, 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound
+- Repositorio del modelo en Hugging Face: https://huggingface.co/INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.6
 - Intel AutoRound (herramienta de cuantizacion): https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor

@@ -32,7 +32,7 @@ La unica innovacion tecnica documentada es el propio proceso de cuantizacion: mr
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el idioma declarado.
 - Modo "uncensored/abliterated": reduce o elimina los rechazos del modelo original ante peticiones que el modelo base declinaria.
 - Capacidades multimodales: el repositorio incluye ficheros `mmproj` (Q8_0 y f16), lo que sugiere soporte de entrada de imagenes o vision, aunque no se detalla en la model card.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: solo se declara ingles; no se confirma soporte de otros idiomas.
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-2.0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-2.0-GGUF
 - Modelo base: https://huggingface.co/p-e-w/Qwen3.5-4B-heretic-2.0
 - Modelo original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

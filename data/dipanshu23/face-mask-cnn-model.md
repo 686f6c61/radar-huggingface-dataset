@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Dipanshu23/face-mask-cnn-model` es un artefacto publicado en HuggingFace por el usuario Dipanshu23 cuyo nombre sugiere un modelo de red neuronal convolucional (CNN) orientado a la deteccion de mascarillas faciales. No obstante, la informacion publica disponible en la ficha de HuggingFace es practicamente nula: no se especifica pipeline, licencia, idiomas, arquitectura concreta, tamano ni contexto de uso. Cualquier afirmacion sobre su funcionamiento interno seria una inferencia a partir del nombre del repositorio, no un dato confirmado.
+El repositorio `Dipanshu23/face-mask-cnn-model` es un artefacto publicado en Hugging Face por el usuario Dipanshu23 cuyo nombre sugiere un modelo de red neuronal convolucional (CNN) orientado a la deteccion de mascarillas faciales. No obstante, la informacion publica disponible en la ficha de Hugging Face es practicamente nula: no se especifica pipeline, licencia, idiomas, arquitectura concreta, tamano ni contexto de uso. Cualquier afirmacion sobre su funcionamiento interno seria una inferencia a partir del nombre del repositorio, no un dato confirmado.
 
 El modelo acumula 0 descargas y 1 like desde su creacion, con fecha de creacion y ultima actualizacion identicas (2026-10-09T20:09:11.000Z), lo que apunta a una publicacion sin mantenimiento posterior ni documentacion asociada. La unica etiqueta presente es `region:us`, que no aporta informacion tecnica sobre el modelo.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento ni de arquitectura del modelo analizado, p
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dipanshu23/face-mask-cnn-model | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Dipanshu23/face-mask-cnn-model | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | ResNet-50 | ~25,6 M | imagen, resolucion configurable | BSD-3 en implementaciones de referencia | amplia |
 | MobileNetV2 | ~3,4 M | imagen, resolucion configurable | Apache-2.0 en implementaciones de referencia | amplia |
 | EfficientNet-B0 | ~5,3 M | imagen, resolucion configurable | Apache-2.0 en implementaciones de referencia | amplia |
@@ -93,6 +93,6 @@ Los datos de parametros y licencias de las alternativas corresponden a sus imple
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dipanshu23/face-mask-cnn-model
+- Hugging Face: https://huggingface.co/Dipanshu23/face-mask-cnn-model
 - Paper, blog, repositorio o demo del autor: no disponible.
 - Resultados de la busqueda web: no se ha encontrado ninguna fuente relacionada con este modelo; los resultados devueltos por la busqueda no guardan relacion con el repositorio y se han descartado por no ser relevantes.

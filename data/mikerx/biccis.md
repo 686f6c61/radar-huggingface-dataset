@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Biccis es un repositorio de modelo publicado en HuggingFace por el usuario Mikerx bajo licencia openrail. En el momento de la consulta, la model card está prácticamente vacía: el único contenido del README es el bloque de metadatos con la licencia, sin descripción, sin arquitectura declarada, sin idiomas y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni "likes", por lo que se trata de una publicación sin adopción conocida ni validación por parte de la comunidad.
+Biccis es un repositorio de modelo publicado en Hugging Face por el usuario Mikerx bajo licencia openrail. En el momento de la consulta, la model card está prácticamente vacía: el único contenido del README es el bloque de metadatos con la licencia, sin descripción, sin arquitectura declarada, sin idiomas y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni "likes", por lo que se trata de una publicación sin adopción conocida ni validación por parte de la comunidad.
 
-La información disponible no permite determinar qué tipo de artefacto contiene el repositorio: podría ser un checkpoint completo de un modelo pequeño, un adaptador (LoRA o similar), una cuantización en formato GGUF o un conjunto de pesos parcial. Tampoco hay pipeline declarado en HuggingFace, lo que impide saber si está pensado para generación de texto, visión, audio u otra tarea.
+La información disponible no permite determinar qué tipo de artefacto contiene el repositorio: podría ser un checkpoint completo de un modelo pequeño, un adaptador (LoRA o similar), una cuantización en formato GGUF o un conjunto de pesos parcial. Tampoco hay pipeline declarado en Hugging Face, lo que impide saber si está pensado para generación de texto, visión, audio u otra tarea.
 
 Dado que no existen datos sobre parámetros, contexto, dataset de entrenamiento ni evaluación, esta ficha se limita a documentar los metadatos verificables y a marcar explícitamente como "no disponible" todo aquello que no puede confirmarse. No se debe asumir ningún uso en producción sin una inspección directa de los archivos del repositorio.
 
@@ -21,7 +21,7 @@ Dado que no existen datos sobre parámetros, contexto, dataset de entrenamiento 
 | Licencia | openrail |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB; no se especifica el formato de los archivos) |
 
-Datos adicionales verificables: autor Mikerx, repositorio de 0,1 GB, 0 descargas, 0 "likes", creado el 2026-10-01 y actualizado el 2026-10-01 según los metadatos de HuggingFace.
+Datos adicionales verificables: autor Mikerx, repositorio de 0,1 GB, 0 descargas, 0 "likes", creado el 2026-10-01 y actualizado el 2026-10-01 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ No disponible. Al desconocerse el tamano, la tarea y el rendimiento de Biccis, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Biccis (Mikerx) | no disponible | no disponible | openrail | HuggingFace, 0 descargas |
+| Biccis (Mikerx) | no disponible | no disponible | openrail | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. Al desconocerse el tamano, la tarea y el rendimiento de Biccis, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mikerx/Biccis
+- Repositorio en Hugging Face: https://huggingface.co/Mikerx/Biccis
 - Model card: no contiene informacion tecnica adicional mas alla del bloque de licencia.
 - Paper, blog o repositorio de codigo asociado: no disponibles.
 - Resultados de la busqueda web: sin relevancia. Las URLs devueltas (rule34.art, rule34video.com, rule34.paheal.net, rule34.world, rule34.gg) corresponden a sitios de contenido para adultos y no guardan relacion con el modelo.

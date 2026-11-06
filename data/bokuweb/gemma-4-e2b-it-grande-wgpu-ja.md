@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bokuweb/gemma-4-E2B-it-grande-wgpu-ja | no disponible (estimado en el orden de 2.000-2.400 M por tamano de repositorio y Q4_0) | no disponible | Formato grande (tensores + `manifest.json`) | gemma | HuggingFace, 0 descargas |
+| bokuweb/gemma-4-E2B-it-grande-wgpu-ja | no disponible (estimado en el orden de 2.000-2.400 M por tamano de repositorio y Q4_0) | no disponible | Formato grande (tensores + `manifest.json`) | gemma | Hugging Face, 0 descargas |
 | google/gemma-4-E2B-it | no disponible | no disponible | safetensors (modelo base original) | gemma | Modelo base oficial |
 | Distribucion GGUF equivalente de llama.cpp | no disponible | no disponible | GGUF, Q4_0 | gemma | No disponible en la informacion consultada |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bokuweb/gemma-4-E2B-it-grande-wgpu-ja
+- Modelo en Hugging Face: https://huggingface.co/bokuweb/gemma-4-E2B-it-grande-wgpu-ja
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio del motor grande: https://github.com/bokuweb/grande
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a portadas de Wikipedia y no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P-H3-Image es un ajuste fino (finetune) del modelo de generación de imágenes MiniMax-H3, publicado por el usuario TechnoBaptist en HuggingFace. El modelo se distribuye en formato diffusers y está orientado a tareas de text-to-image, image-to-image y edición de imágenes, con soporte adicional para upsampling de prompts. Cuenta con aproximadamente 33.100 millones de parámetros en pesos safetensors y un repositorio de 99,8 GB, lo que lo sitúa en la gama alta de los modelos de difusión para generación de imágenes.
+P-H3-Image es un ajuste fino (finetune) del modelo de generación de imágenes MiniMax-H3, publicado por el usuario TechnoBaptist en Hugging Face. El modelo se distribuye en formato diffusers y está orientado a tareas de text-to-image, image-to-image y edición de imágenes, con soporte adicional para upsampling de prompts. Cuenta con aproximadamente 33.100 millones de parámetros en pesos safetensors y un repositorio de 99,8 GB, lo que lo sitúa en la gama alta de los modelos de difusión para generación de imágenes.
 
 El modelo deriva directamente de MiniMaxAI/MiniMax-H3 y hereda su licencia comunitaria (minimax-h3-community-license-agreement), lo que condiciona su uso comercial. La model card es muy escasa: se limita a metadatos YAML, badges de Pruna AI y una imagen de cabecera, sin documentación técnica sobre el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| P-H3-Image | 33.122.992.896 | no disponible | minimax-h3-community-license-agreement | safetensors (diffusers) | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible en esta ficha | no disponible | minimax-h3-community-license-agreement | no disponible | HuggingFace |
+| P-H3-Image | 33.122.992.896 | no disponible | minimax-h3-community-license-agreement | safetensors (diffusers) | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible en esta ficha | no disponible | minimax-h3-community-license-agreement | no disponible | Hugging Face |
 | Alternativas de difusion de gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o calidad con alternativas concretas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/P-H3-Image
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/P-H3-Image
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de Pruna AI en GitHub: https://github.com/PrunaAI/pruna
 - Twitter/X de Pruna AI: https://twitter.com/PrunaAI

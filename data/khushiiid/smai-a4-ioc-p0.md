@@ -6,7 +6,7 @@
 
 El repositorio contiene los pesos en formato NumPy (`weights.npz`), la definición de la arquitectura (`architecture.json`) y los parámetros de preprocesado (`preprocessing.npz`). El entrenamiento se realizó con descenso de gradiente estocástico plano (SGD, lr 0.01, batch 64, 100 épocas, sin early stopping) sobre las 50.000 imágenes de entrenamiento de CIFAR-10.
 
-Por su naturaleza, es relevante únicamente como material didáctico o como referencia reproducible de un pipeline básico de clasificación. No está pensado para uso en producción, no dispone de model card estándar de HuggingFace, no tiene licencia declarada y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos son de pequeño tamaño y probablemente no están subidos en formato estándar de HuggingFace.
+Por su naturaleza, es relevante únicamente como material didáctico o como referencia reproducible de un pipeline básico de clasificación. No está pensado para uso en producción, no dispone de model card estándar de Hugging Face, no tiene licencia declarada y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos son de pequeño tamaño y probablemente no están subidos en formato estándar de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-ioc-p0` | MLP para CIFAR-10 | no disponible | 3072 valores por imagen | no disponible | HuggingFace (repo de 0.0 GB) |
+| `smai-a4-ioc-p0` | MLP para CIFAR-10 | no disponible | 3072 valores por imagen | no disponible | Hugging Face (repo de 0.0 GB) |
 | LeNet-5 (referencia clásica) | CNN para CIFAR-10 | ~60.000 | 32x32x3 | dominio público / académica | implementaciones múltiples |
 | ResNet-18 (adaptado a CIFAR-10) | CNN residual | ~11,2 M | 32x32x3 | MIT (implementaciones comunes) | torchvision, timm |
-| ViT-Small (adaptado a CIFAR-10) | Transformer de visión | ~22 M | 32x32x3 con parches | Apache 2.0 (implementaciones comunes) | timm, HuggingFace |
+| ViT-Small (adaptado a CIFAR-10) | Transformer de visión | ~22 M | 32x32x3 con parches | Apache 2.0 (implementaciones comunes) | timm, Hugging Face |
 
 La comparación es meramente orientativa: el modelo publicado no documenta su número de parámetros ni su precisión, por lo que no se puede establecer una comparación cuantitativa rigurosa con las alternativas.
 
@@ -82,5 +82,5 @@ La comparación es meramente orientativa: el modelo publicado no documenta su n�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhushiiiD/smai-a4-ioc-p0
+- Hugging Face: https://huggingface.co/KhushiiiD/smai-a4-ioc-p0
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

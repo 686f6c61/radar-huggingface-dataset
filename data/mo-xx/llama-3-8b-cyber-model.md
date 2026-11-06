@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mo-xx/llama-3-8b-cyber-model es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario mo-xx en HuggingFace. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (8,03 B) con arquitectura transformer decoder-only de la familia Llama 3, distribuido en formato safetensors y compatible con la libreria transformers y con text-generation-inference. La model card no documenta el conjunto de datos de ajuste ni el procedimiento exacto de entrenamiento, mas alla de indicar que se realizo con Unsloth y la libreria TRL de HuggingFace.
+mo-xx/llama-3-8b-cyber-model es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario mo-xx en Hugging Face. Se trata de un modelo de generacion de texto de 8.030.261.248 parametros (8,03 B) con arquitectura transformer decoder-only de la familia Llama 3, distribuido en formato safetensors y compatible con la libreria transformers y con text-generation-inference. La model card no documenta el conjunto de datos de ajuste ni el procedimiento exacto de entrenamiento, mas alla de indicar que se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 El problema que resuelve es, en principio, la especializacion en un dominio concreto (el nombre sugiere ambito de ciberseguridad) partiendo de una base instruct ya alineada. Sin embargo, no se aportan datos verificables sobre el corpus de ajuste, la composicion del dataset ni evaluaciones que confirmen dicha especializacion. La relevancia actual del modelo es limitada: cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado el 25 de septiembre de 2026, por lo que no existe validacion por parte de la comunidad.
 
@@ -25,7 +25,7 @@ Un punto tecnico destacable es que el modelo base del que parte es una version c
 
 La model card no describe la arquitectura mas alla de identificarla como Llama. Por herencia del modelo base (unsloth/llama-3-8b-Instruct-bnb-4bit, a su vez derivado de Meta-Llama-3-8B-Instruct), se trata de un transformer decoder-only con atencion causal, normalizacion RMSNorm y activacion SwiGLU, con un vocabulario de 128.256 tokens. No se especifica en la ficha el numero de capas, cabezas de atencion ni la dimension del modelo.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, lo que apunta a un ajuste supervisado (SFT) y posiblemente LoRA/QLoRA sobre el modelo base cuantizado a 4 bits. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, ni hiperparametros relevantes. El autor tampoco menciona innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.).
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, lo que apunta a un ajuste supervisado (SFT) y posiblemente LoRA/QLoRA sobre el modelo base cuantizado a 4 bits. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO posteriores, ni hiperparametros relevantes. El autor tampoco menciona innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modos de razonamiento, etc.).
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mo-xx/llama-3-8b-cyber-model | 8,03 B | No disponible (base: 8.192 tokens) | Apache 2.0 | HuggingFace, 0 descargas, sin validacion comunitaria |
-| Meta Llama 3 8B Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | HuggingFace y multiples proveedores; ampliamente validado |
-| Mistral 7B Instruct v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace; ampliamente validado |
-| Qwen2.5 7B Instruct | 7,61 B | 32.768 tokens (extensible a 131.072 con YaRN) | Apache 2.0 | HuggingFace; ampliamente validado |
+| mo-xx/llama-3-8b-cyber-model | 8,03 B | No disponible (base: 8.192 tokens) | Apache 2.0 | Hugging Face, 0 descargas, sin validacion comunitaria |
+| Meta Llama 3 8B Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | Hugging Face y multiples proveedores; ampliamente validado |
+| Mistral 7B Instruct v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face; ampliamente validado |
+| Qwen2.5 7B Instruct | 7,61 B | 32.768 tokens (extensible a 131.072 con YaRN) | Apache 2.0 | Hugging Face; ampliamente validado |
 
 En cuanto a rendimiento, no es posible establecer comparaciones numericas porque el modelo de mo-xx no publica benchmarks. La comparativa se limita, por tanto, a parametros, contexto, licencia y disponibilidad.
 
@@ -88,10 +88,10 @@ En cuanto a rendimiento, no es posible establecer comparaciones numericas porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mo-xx/llama-3-8b-cyber-model
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/mo-xx/llama-3-8b-cyber-model
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Tarjeta de Meta Llama 3 8B Instruct: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (paper, blog, demo o repositorio) asociados especificamente a este modelo.

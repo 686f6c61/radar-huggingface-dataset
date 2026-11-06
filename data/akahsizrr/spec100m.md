@@ -2,7 +2,7 @@
 
 ## Resumen
 
-spec100m es un prototipo de investigacion publicado en HuggingFace por el usuario Akahsizrr que combina un transformer decoder-only de ~270M parametros con un conjunto de 4095 cabezas especulativas tipo Medusa (210M parametros), dando un total de ~480M parametros. El objetivo declarado no es la calidad del texto, sino explorar el limite maximo de throughput de decodificacion especulativa en una sola GPU, aceptando todos los borradores en lugar de rechazarlos.
+spec100m es un prototipo de investigacion publicado en Hugging Face por el usuario Akahsizrr que combina un transformer decoder-only de ~270M parametros con un conjunto de 4095 cabezas especulativas tipo Medusa (210M parametros), dando un total de ~480M parametros. El objetivo declarado no es la calidad del texto, sino explorar el limite maximo de throughput de decodificacion especulativa en una sola GPU, aceptando todos los borradores en lugar de rechazarlos.
 
 La arquitectura incorpora varias tecnicas agresivas de compresion: atencion multi-query (MQA) con una sola cabeza KV compartida por 16 cabezas de consulta, compresion aprendida de la cache KV (4 tokens a 1 entrada), almacenamiento FP8 en formato E4M3, seleccion de bloques MoBA (top-3) y una tabla de n-gramas de 5 elementos con 0 parametros que genera hasta 32768 tokens "gratis" por paso sin forward pass. Segun la model card, esto da una reduccion de 16x en la cache KV y un contexto maximo declarado de 20M tokens.
 
@@ -17,7 +17,7 @@ El estado actual es de entrenamiento incompleto: la fase 1 (modelo base) ha alca
 | Longitud de contexto | Hasta 20M tokens (MoBA block-sparse, segun model card) |
 | Tipos de cuantizacion | No disponible (la model card solo propone int8 de pesos como trabajo futuro, sin probar; la cache KV usa FP8 E4M3) |
 | Idiomas soportados | No disponible (el objetivo de la fase 1 es producir ingles coherente) |
-| Licencia | MIT segun la model card; los metadatos de HuggingFace no declaran licencia |
+| Licencia | MIT segun la model card; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | No disponible (no se especifica; el repo ocupa 17,4 GB y el codigo de carga es PyTorch) |
 
 Datos adicionales de configuracion del modelo base: d_model 1024, 8 capas, 16 cabezas de consulta, 1 cabeza KV, FFN SwiGLU con multiplicador 8 (8192 ocultas), vocabulario de 50257 (BPE de GPT-2 via tiktoken).
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye modelos comparables con datos medidos. L
 | Contexto | 20M tokens declarados (MoBA) | No disponible | No disponible |
 | Rendimiento medido | Solo throughput interno; sin benchmarks de calidad | No disponible | No disponible |
 | Licencia | MIT (segun model card) | No disponible | No disponible |
-| Disponibilidad | Pesos y codigo en HuggingFace; 0 descargas, 0 likes | No disponible | No disponible |
+| Disponibilidad | Pesos y codigo en Hugging Face; 0 descargas, 0 likes | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -110,16 +110,16 @@ La informacion proporcionada no incluye modelos comparables con datos medidos. L
 - Sesgos: no documentados. El unico dato de entrenamiento es WikiText-2/Wikipedia en ingles, con el sesgo de dominio y de idioma que ello implica.
 - Idiomas: sin soporte multilingue declarado ni evaluado.
 - Sin benchmarks de calidad ni comparativas publicadas frente a otros modelos.
-- Licencia MIT declarada en la model card, pero los metadatos de HuggingFace no la exponen; conviene verificar la licencia antes de cualquier uso comercial. El repo no incluye avisos adicionales de uso.
+- Licencia MIT declarada en la model card, pero los metadatos de Hugging Face no la exponen; conviene verificar la licencia antes de cualquier uso comercial. El repo no incluye avisos adicionales de uso.
 - Metadatos inconsistentes: la model card declara "MIT" en su seccion de licencia, mientras que la plataforma no informa de licencia, idiomas ni pipeline; las fechas de creacion y actualizacion (septiembre de 2026) tambien resultan anomalas.
 - Ausencia total de traccion: 0 descargas y 0 likes, sin issues, demos ni comunidad verificable, lo que dificulta validar las afirmaciones de la model card de forma independiente.
 - Los datos de entorno citan PyTorch 2.14.0+cu130 y Python 3.10 (remoto) y PyTorch 2.6.0+cu124 y Python 3.13 (local); no hay garantia de compatibilidad con otras versiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/spec100m
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/spec100m
 - Paper: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo se describe dentro del propio repositorio de HuggingFace: `config.py`, `model.py`, `inference.py`, `ngram.py`, `train.py`, `data_pipeline.py`, `generate.py`, `bench_v5_1.py`, `profile_v5.py`, `profile_train_speed.py`, `test_v5_train.py`)
+- Repositorio de codigo independiente: no disponible (el codigo se describe dentro del propio repositorio de Hugging Face: `config.py`, `model.py`, `inference.py`, `ngram.py`, `train.py`, `data_pipeline.py`, `generate.py`, `bench_v5_1.py`, `profile_v5.py`, `profile_train_speed.py`, `test_v5_train.py`)
 - Blog o articulo tecnico: no disponible
 - Demo: no disponible
 - Busqueda web: el unico resultado devuelto (https://www.ebay-kleinanzeigen.de/s-haus-mieten/einfamilienhaus/sachsen-anhalt/c205l2165+haus_mieten.haustyp_s:einfamilienhaus) no guarda ninguna relacion con el modelo y no se ha utilizado como fuente.

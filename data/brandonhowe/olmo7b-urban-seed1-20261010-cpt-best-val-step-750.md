@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo7b-urban-seed1-20261010-CPT-best-val-step-750 es un checkpoint derivado de allenai/Olmo-3-1025-7B, un transformer denso decoder-only de 7.298.011.136 parametros. Lo publica el usuario BrandonHowe en HuggingFace como exportacion autonoma en BF16, fusionada mediante PEFT safe merge sobre el modelo base sin cuantizar y sin reentrenamiento posterior. No requiere adaptador LoRA para cargarse: los pesos ya estan integrados en ocho shards de safetensors.
+Olmo7b-urban-seed1-20261010-CPT-best-val-step-750 es un checkpoint derivado de allenai/Olmo-3-1025-7B, un transformer denso decoder-only de 7.298.011.136 parametros. Lo publica el usuario BrandonHowe en Hugging Face como exportacion autonoma en BF16, fusionada mediante PEFT safe merge sobre el modelo base sin cuantizar y sin reentrenamiento posterior. No requiere adaptador LoRA para cargarse: los pesos ya estan integrados en ocho shards de safetensors.
 
 El modelo es el resultado de un proceso de continued pretraining (CPT) con LoRA sobre el dataset CompassioninMachineLearning/urban_12738_cleaned, con 10.072 filas unicas de entrenamiento mas 2.000 de replay, semilla de entrenamiento 1 y semilla de seleccion 3407. Corresponde al checkpoint-750, elegido por registrar la menor perdida de validacion del run (1,66911161) en la epoca 1,98608350. El autor aclara explicitamente que es el mejor checkpoint evaluado, no el estado de parada en el step 1000, y que el step 756 (frontera de epoca) no se evaluo por separado.
 
@@ -108,7 +108,7 @@ La comparacion relevante para este checkpoint no es de rendimiento absoluto, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed1-20261010-CPT-best-val-step-750
+- Repositorio Hugging Face del modelo: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed1-20261010-CPT-best-val-step-750
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Repositorio de checkpoints LoRA del run: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed1-20261010-CPT-LoRA-checkpoints
 - Checkpoint de origen (step 750, commit `f8b78d3a8de641a7d8890082c9f916ea6b162cb9`): https://huggingface.co/BrandonHowe/Olmo7b-urban-seed1-20261010-CPT-LoRA-checkpoints/tree/f8b78d3a8de641a7d8890082c9f916ea6b162cb9/checkpoint-750

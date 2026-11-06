@@ -70,7 +70,7 @@ La evaluación se ejecutó el 5 de julio de 2026 sobre 200 instancias retenidas 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-Instruct_ner (este adaptador) | 3,21 B (base) + LoRA de rango 16 | 128.000 tokens (base); entrenado a 512 | F1 0,7917 declarado no válido; 940 ms por petición | Llama 3.2 Community | Público en HuggingFace, 0 descargas |
+| Llama-3.2-3B-Instruct_ner (este adaptador) | 3,21 B (base) + LoRA de rango 16 | 128.000 tokens (base); entrenado a 512 | F1 0,7917 declarado no válido; 940 ms por petición | Llama 3.2 Community | Público en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-3B-Instruct (base sin adaptar) | 3,21 B | 128.000 tokens | No disponible para NER en la información proporcionada | Llama 3.2 Community | Público, ampliamente distribuido |
 | API de proveedores frontera (brazo comparado en la tesis) | No disponible | No disponible | No disponible en la información proporcionada | Propietaria | Pago por token |
 | Otros adaptadores NER sobre modelos pequeños | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -92,7 +92,7 @@ La comparativa cuantitativa completa está en la matriz del repositorio de la te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_ner
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_ner
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Código, configuraciones y arnés de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

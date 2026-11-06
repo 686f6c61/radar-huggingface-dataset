@@ -4,7 +4,7 @@
 
 `teacher_hubert_lr3e4` es un checkpoint publicado por el usuario `VoiceNetCkpt` dentro de la serie de experimentos VoiceCLAP. Segun la propia model card, se trata de una ejecucion de entrenamiento de la que se conservan los pesos finales (`best.pt`) junto con los ficheros de configuracion y los resultados de evaluacion de esa ejecucion; no se incluyen epochs intermedios, estado del optimizador ni logs. El repositorio ocupa 1,3 GB y contiene 6 ficheros.
 
-La informacion publica disponible es muy limitada: no hay model card descriptiva mas alla de la nota de publicacion, no se declara licencia, no se declaran idiomas, no se especifica el pipeline en HuggingFace y el repositorio no registra descargas ni likes en el momento de la consulta. Los unicos metadatos declarados son las etiquetas `voiceclap` y `checkpoint`, ademas de `region:us`.
+La informacion publica disponible es muy limitada: no hay model card descriptiva mas alla de la nota de publicacion, no se declara licencia, no se declaran idiomas, no se especifica el pipeline en Hugging Face y el repositorio no registra descargas ni likes en el momento de la consulta. Los unicos metadatos declarados son las etiquetas `voiceclap` y `checkpoint`, ademas de `region:us`.
 
 Por el nombre del checkpoint y el contexto de la serie VoiceCLAP (Contrastive Language-Audio Pretraining), cabe inferir que se trata de un modelo profesor basado en HuBERT entrenado con una tasa de aprendizaje de 3e-4, presumiblemente destinado a destilacion o a la generacion de representaciones de audio dentro de un pipeline de audio-texto. Es importante subrayar que esta interpretacion es una inferencia a partir del nombre y de las etiquetas, no un dato confirmado por la documentacion facilitada. Su relevancia actual es acotada: es un artefacto de investigacion util para reproducir o continuar experimentos de representaciones de audio, no un modelo listo para producto.
 
@@ -21,7 +21,7 @@ Por el nombre del checkpoint y el contexto de la serie VoiceCLAP (Contrastive La
 | Licencia | no disponible (no se declara licencia en la model card ni en los metadatos) |
 | Formato de pesos | PyTorch (`best.pt`) |
 
-Datos adicionales del repositorio: 6 ficheros, 1,3 GB en total, creado el 2026-10-11 y actualizado el 2026-10-11 segun los metadatos de HuggingFace (la fecha indicada es futura respecto a la fecha habitual de publicacion de modelos, lo que conviene verificar en la pagina del repositorio).
+Datos adicionales del repositorio: 6 ficheros, 1,3 GB en total, creado el 2026-10-11 y actualizado el 2026-10-11 segun los metadatos de Hugging Face (la fecha indicada es futura respecto a la fecha habitual de publicacion de modelos, lo que conviene verificar en la pagina del repositorio).
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: no se declara ninguna licencia en la model card ni en los metadatos de HuggingFace. Sin una licencia explicita no se conceden derechos de uso, redistribucion ni explotacion comercial; hay que contactar con el autor antes de cualquier uso en produccion.
+- Ausencia de licencia: no se declara ninguna licencia en la model card ni en los metadatos de Hugging Face. Sin una licencia explicita no se conceden derechos de uso, redistribucion ni explotacion comercial; hay que contactar con el autor antes de cualquier uso en produccion.
 - Documentacion minima: no hay descripcion de arquitectura, datos de entrenamiento, objetivos ni metricas. Cualquier uso serio exige inspeccionar los ficheros de configuracion y evaluacion incluidos en el repositorio.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto si el modelo es un extractor de representaciones, pero si se usa como generador de descripciones de audio habria que evaluarlo especificamente. No disponible.
 - Sesgos: no hay informacion sobre la composicion del dataset de entrenamiento, por lo que no es posible caracterizar sesgos de idioma, acento, genero, edad o dominio acustico. Es esperable un sesgo hacia la distribucion de audio usada en los experimentos VoiceCLAP.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/teacher_hubert_lr3e4
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/teacher_hubert_lr3e4
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Enlaces adicionales relevantes: no disponible; la busqueda web no devolvio resultados relacionados con el modelo.

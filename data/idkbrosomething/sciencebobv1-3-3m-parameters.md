@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sciencebobv1-3.3m-parameters es un modelo de generacion de texto publicado en HuggingFace por el usuario idkbrosomething bajo licencia Apache 2.0. Su nombre indica un tamano de aproximadamente 3,3 millones de parametros, lo que lo situa en la categoria de modelos ultraligeros, muy por debajo de los pequeños habituales (125M-1B). El repositorio tiene un tamano de 0,0 GB y no registra descargas ni likes en el momento de la consulta.
+sciencebobv1-3.3m-parameters es un modelo de generacion de texto publicado en Hugging Face por el usuario idkbrosomething bajo licencia Apache 2.0. Su nombre indica un tamano de aproximadamente 3,3 millones de parametros, lo que lo situa en la categoria de modelos ultraligeros, muy por debajo de los pequeños habituales (125M-1B). El repositorio tiene un tamano de 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
 La model card es practicamente vacia: solo contiene metadatos YAML (licencia Apache 2.0, idioma ingles, pipeline de text-generation) sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin benchmarks. El modelo fue creado y actualizado el 1 de noviembre de 2026, con escasos minutos de diferencia entre ambas fechas.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sciencebobv1-3.3m-parameters | ~3,3 M | no disponible | Apache 2.0 | HuggingFace, sin descargas |
+| sciencebobv1-3.3m-parameters | ~3,3 M | no disponible | Apache 2.0 | Hugging Face, sin descargas |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible |
-| TinyStories-1M | 1 M | no disponible | MIT | HuggingFace |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| TinyStories-1M | 1 M | no disponible | MIT | Hugging Face |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: no existen benchmarks publicados de sciencebobv1 que permitan una comparacion cuantitativa con estas alternativas, y su tamano es entre uno y dos ordenes de magnitud inferior al de los modelos de referencia de la categoria ultraligera.
 
@@ -81,5 +81,5 @@ La comparativa es orientativa: no existen benchmarks publicados de sciencebobv1 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idkbrosomething/sciencebobv1-3.3m-parameters
+- Hugging Face: https://huggingface.co/idkbrosomething/sciencebobv1-3.3m-parameters
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

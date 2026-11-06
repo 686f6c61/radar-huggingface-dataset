@@ -70,9 +70,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse/bpemb-base | 11,3 M | no disponible | 98,71 % en países de entrenamiento (limpias) | MIT | HuggingFace |
-| deepparse/fasttext | no disponible en la información | no disponible | no disponible | MIT (proyecto deepparse) | HuggingFace |
-| deepparse/bpemb-attention | no disponible en la información | no disponible | no disponible | MIT (proyecto deepparse) | HuggingFace |
+| deepparse/bpemb-base | 11,3 M | no disponible | 98,71 % en países de entrenamiento (limpias) | MIT | Hugging Face |
+| deepparse/fasttext | no disponible en la información | no disponible | no disponible | MIT (proyecto deepparse) | Hugging Face |
+| deepparse/bpemb-attention | no disponible en la información | no disponible | no disponible | MIT (proyecto deepparse) | Hugging Face |
 | libpostal (modelo estadístico) | no disponible | no disponible | no disponible | MIT | Código abierto |
 
 La comparación con alternativas genéricas de parsing de direcciones (libpostal) o con otras variantes del propio proyecto deepparse no puede cuantificarse con los datos disponibles; se indica "no disponible" donde no hay cifras.
@@ -89,7 +89,7 @@ La comparación con alternativas genéricas de parsing de direcciones (libpostal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/bpemb-base
+- Modelo en Hugging Face: https://huggingface.co/deepparse/bpemb-base
 - Documentación de deepparse: https://deepparse.org
 - Página de resultados: https://deepparse.org/results.html
 - Dataset de entrenamiento: https://github.com/GRAAL-Research/deepparse-address-data

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de alternativas comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1
+- Repositorio en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261021_healthbench_static_qwen3-4b_impl-ruscarl_s1
 - Modelo base de referencia (identificado en el nombre, no confirmado por el autor): https://huggingface.co/Qwen/Qwen3-4B
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

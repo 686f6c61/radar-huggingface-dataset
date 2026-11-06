@@ -28,7 +28,7 @@ El repositorio incluye además el proyector de visión del modelo base en BF16, 
 
 ## Capacidades
 
-- Generación de texto conversacional: la pipeline declarada es image-text-to-text y el tag "conversational" está presente en la ficha de HuggingFace.
+- Generación de texto conversacional: la pipeline declarada es image-text-to-text y el tag "conversational" está presente en la ficha de Hugging Face.
 - Procesamiento de imagen y texto: se distribuye un proyector de visión (mmproj) en BF16, lo que permite entrada image-text-to-text.
 - Razonamiento: la model card reporta evaluaciones con modo de pensamiento explícito ("xhigh thinking") en GSM8K y respuestas directas en IFEval.
 - Matemáticas: se evalúa GSM8K con 8/8 respuestas correctas completadas en ambas builds (BF16 y GSQ-RCO).
@@ -103,13 +103,13 @@ La única comparación cuantitativa documentada en la información disponible es
 - El runtime requiere una build específica de llama.cpp (commit f3f1a8f) con soporte de Qwen4Exp y Q2_0; otras versiones o backends pueden no cargar los ficheros.
 - Requiere 230 GB de almacenamiento y un esquema de despliegue con embeddings en disco y caché KV en RAM; la latencia y el throughput resultantes no se documentan.
 - Idiomas soportados no disponibles: no se puede verificar cobertura multilingüe.
-- La licencia es qwen-community-1.0, etiquetada como "other" en HuggingFace. No se detallan en la información proporcionada las condiciones concretas de uso comercial, por lo que hay que consultar el fichero LICENSE antes de un despliegue en producción.
+- La licencia es qwen-community-1.0, etiquetada como "other" en Hugging Face. No se detallan en la información proporcionada las condiciones concretas de uso comercial, por lo que hay que consultar el fichero LICENSE antes de un despliegue en producción.
 - Riesgo de alucinación y sesgos: no se aportan evaluaciones específicas de sesgo ni de veracidad en la información disponible.
 - Discrepancia de tamaño no aclarada: el TL;DR menciona un modelo de 180B mientras que los safetensors del modelo base suman 125.107.954.560 parámetros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Artículo de GSQ (Gumbel-Softmax Quantization): https://arxiv.org/abs/2604.18556
 - Artículo de RCO (Riemannian Constrained Optimization): https://arxiv.org/abs/2605.00649
@@ -118,6 +118,6 @@ La única comparación cuantitativa documentada en la información disponible es
 - Organización DASLab: https://github.com/IST-DASLab
 - Commit de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/commit/f3f1a8f2760f28325a5ec20c05b171e5b7c83a29
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- DOI de HuggingFace: doi:10.57967/hf/10398
+- DOI de Hugging Face: doi:10.57967/hf/10398
 - Instrucciones de reproducción del runtime: https://huggingface.co/pfeifferj/Qwen3.8-Flash-Next-GSQ-RCO-GGUF/blob/main/eval/2026-09-13/reproducibility/README.md
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces encontrados no guardan relación con la ficha.

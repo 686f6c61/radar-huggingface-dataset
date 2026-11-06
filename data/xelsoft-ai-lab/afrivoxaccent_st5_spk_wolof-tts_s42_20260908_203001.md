@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 144.437.730 parámetros en precisión fp32 (~577 MB) el modelo es ligero. En fp16 o cuantización int8, la memoria necesaria sería aún menor (aproximadamente 289 MB y 144 MB respectivamente), aunque no se han publicado configuraciones de cuantización.
 - GPU recomendada: no se especifica. Dado el tamaño, una RTX 3060, una RTX 4060 e incluso GPU más modestas pueden ejecutarlo sin problemas. También es viable en CPU para aplicaciones de baja latencia, aunque la velocidad dependerá del hardware.
 - Compatibilidad con GPU de consumo: sí, el modelo es lo suficientemente pequeño para ejecutarse en GPUs de consumo habituales.
-- Opciones de despliegue: al pertenecer a la librería `transformers`, puede utilizarse con el pipeline de TTS de HuggingFace, con `TextToSpeechPipeline` o con el código de referencia de SpeechT5. También podría servirse mediante plataformas compatibles con modelos de Transformers (por ejemplo, Inference Endpoints, aunque no se detalla).
+- Opciones de despliegue: al pertenecer a la librería `transformers`, puede utilizarse con el pipeline de TTS de Hugging Face, con `TextToSpeechPipeline` o con el código de referencia de SpeechT5. También podría servirse mediante plataformas compatibles con modelos de Transformers (por ejemplo, Inference Endpoints, aunque no se detalla).
 - Latencia y throughput: no se ha publicado ningún dato.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260908_203001
 - Artículo de referencia de SpeechT5: https://arxiv.org/abs/1910.09700
-- Checkpoint similar con fecha anterior (discusión en HuggingFace): https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260905_152155/discussions
+- Checkpoint similar con fecha anterior (discusión en Hugging Face): https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_wolof-tts_s42_20260905_152155/discussions

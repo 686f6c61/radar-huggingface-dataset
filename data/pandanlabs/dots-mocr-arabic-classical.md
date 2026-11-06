@@ -114,7 +114,7 @@ No se dispone de datos en la información proporcionada para comparar con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandanlabs/dots-mocr-arabic-classical
+- Modelo en Hugging Face: https://huggingface.co/pandanlabs/dots-mocr-arabic-classical
 - Modelo base `dots.mocr`: https://huggingface.co/dots-studio/dots.mocr
 - Perfil del autor (Pandan Labs): https://huggingface.co/pandanlabs
 - Paper, blog técnico, repositorio de código o demo: no disponible en la información proporcionada.

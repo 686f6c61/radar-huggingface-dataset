@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahman777/facebook-mms-tts-tur-onnx` es una conversion al formato ONNX de un modelo de sintesis de voz (text-to-speech) de la familia MMS (Massively Multilingual Speech) de Meta, especializado en turco segun indica el sufijo `tur` del identificador. El autor del repositorio es el usuario `rahman777`, que publica el artefacto en HuggingFace bajo licencia CC-BY-4.0. El repositorio ocupa aproximadamente 0,1 GB y fue creado el 27 de septiembre de 2026, con la ultima actualizacion el mismo dia.
+`rahman777/facebook-mms-tts-tur-onnx` es una conversion al formato ONNX de un modelo de sintesis de voz (text-to-speech) de la familia MMS (Massively Multilingual Speech) de Meta, especializado en turco segun indica el sufijo `tur` del identificador. El autor del repositorio es el usuario `rahman777`, que publica el artefacto en Hugging Face bajo licencia CC-BY-4.0. El repositorio ocupa aproximadamente 0,1 GB y fue creado el 27 de septiembre de 2026, con la ultima actualizacion el mismo dia.
 
 El problema que resuelve es el de disponer de un modelo TTS en un formato de inferencia portable y sin dependencias de PyTorch, de modo que pueda ejecutarse con ONNX Runtime en CPU, GPU o incluso en el navegador. Esto es relevante para integrar sintesis de voz en aplicaciones con requisitos de despliegue ligeros (backend en Python, servicios en contenedor, aplicaciones de escritorio o extensiones web) sin arrastrar el stack completo del framework original.
 
@@ -68,8 +68,8 @@ Las siguientes indicaciones son orientativas y derivadas del tamano del artefact
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahman777/facebook-mms-tts-tur-onnx | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace, formato ONNX |
-| facebook/mms-tts-tur (modelo base presumible) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| rahman777/facebook-mms-tts-tur-onnx | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face, formato ONNX |
+| facebook/mms-tts-tur (modelo base presumible) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros sistemas TTS para turco (Piper, XTTS-v2) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificables para establecer una comparacion cuantitativa. La unica diferencia confirmada por la informacion proporcionada es el formato de distribucion (ONNX frente a pesos nativos) y la licencia declarada por este repositorio.
@@ -83,10 +83,10 @@ No se dispone de datos verificables para establecer una comparacion cuantitativa
 - Idiomas: el unico indicio es el sufijo `tur` del identificador; no hay confirmacion de cobertura de variantes dialectales ni de otros idiomas.
 - Licencia cc-by-4.0: permite uso comercial y modificacion con atribucion, pero conviene verificar las condiciones del modelo subyacente del que se deriva la conversion, no declaradas en este repositorio.
 - Sin garantias de mantenimiento: el repositorio no incluye codigo de ejemplo, dependencias fijadas ni pruebas, por lo que la integracion requiere trabajo adicional.
-- Metadatos incompletos: la fecha de creacion registrada (27 de septiembre de 2026) y la ausencia de pipeline declarado impiden clasificar automaticamente el artefacto en HuggingFace.
+- Metadatos incompletos: la fecha de creacion registrada (27 de septiembre de 2026) y la ausencia de pipeline declarado impiden clasificar automaticamente el artefacto en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahman777/facebook-mms-tts-tur-onnx
+- Hugging Face: https://huggingface.co/rahman777/facebook-mms-tts-tur-onnx
 - Modelo base presumible de Meta (no referenciado en la model card): https://huggingface.co/facebook/mms-tts-tur
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

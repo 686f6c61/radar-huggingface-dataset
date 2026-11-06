@@ -123,7 +123,7 @@ No se dispone en la información proporcionada de datos sobre otras familias de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicolassuez/Falcon-OCR-int8-openvino
+- Modelo en Hugging Face: https://huggingface.co/Nicolassuez/Falcon-OCR-int8-openvino
 - Modelo base: https://huggingface.co/tiiuae/Falcon-OCR
 - Revisión exacta del modelo base usada en la conversión: `0c9f85d21adf928b3b34d37dba2f5be38048a1c4` en el repositorio tiiuae/Falcon-OCR
 - Servicio de referencia en CPU: ruta `docker/models/falcon_ocr_cpu` dentro del proyecto que produjo el artefacto (sin URL pública en la información disponible)

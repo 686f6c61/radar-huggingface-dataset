@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL-FullFineTune-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingüe google/mt5-base, publicado por el usuario tadiecool29 en HuggingFace. Se trata de un modelo encoder-decoder de tipo transformer (familia T5/mT5) con 582.401.280 parámetros, entrenado de forma conjunta para varias tareas de NLP (las métricas declaradas apuntan a coincidencia exacta, análisis de sentimiento y detección de postura). No es un modelo de propósito general entrenado desde cero, sino un experimento académico de aprendizaje multitarea (MTL) sobre un backbone ya existente.
+MTL-FullFineTune-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingüe google/mt5-base, publicado por el usuario tadiecool29 en Hugging Face. Se trata de un modelo encoder-decoder de tipo transformer (familia T5/mT5) con 582.401.280 parámetros, entrenado de forma conjunta para varias tareas de NLP (las métricas declaradas apuntan a coincidencia exacta, análisis de sentimiento y detección de postura). No es un modelo de propósito general entrenado desde cero, sino un experimento académico de aprendizaje multitarea (MTL) sobre un backbone ya existente.
 
 El problema que aborda es el entrenamiento simultáneo de tareas heterogéneas en un único modelo secuencia-a-secuencia, una línea de trabajo habitual en investigación para evaluar si compartir representaciones entre tareas ayuda o perjudica respecto a ajustes fines independientes. El repositorio incluye también variantes hermanas del mismo autor (por ejemplo, MTL-FullFT-mt5-base-sentiment), lo que sugiere una comparativa entre entrenamiento conjunto y entrenamiento por tarea.
 
@@ -93,7 +93,7 @@ Observaciones objetivas sobre estos datos: la mejora principal se concentra entr
 - VRAM estimada para inferencia: en fp32, aproximadamente 2,33 GB solo de pesos (más activaciones y caché de atención); en fp16/bf16, unos 1,16 GB; en int8, unos 0,58 GB; en GGUF q4, del orden de 0,35-0,45 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente. Funciona sin problemas en RTX 3060, RTX 4060, RTX 4090, Tesla T4, L4, A10G y también en A100 o H100 (donde estaría infrautilizada). Para entrenamiento completo con el mismo batch efectivo conviene al menos 16-24 GB de VRAM.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo actuales, incluidos equipos con 6-8 GB de VRAM, y también en CPU para inferencia en lotes pequeños.
-- Opciones de despliegue: HuggingFace Transformers (ruta más directa, dado que es un modelo text2text-generation estándar), Text Generation Inference (TGI) con soporte de encoder-decoder, vLLM (soporte limitado/experimental para arquitecturas encoder-decoder tipo T5), ONNX Runtime mediante Optimum, y llama.cpp/GGUF previa conversión (el soporte de T5 en llama.cpp es limitado y requiere validación propia). No se distribuyen pesos GGUF ni cuantizados en el repositorio.
+- Opciones de despliegue: Hugging Face Transformers (ruta más directa, dado que es un modelo text2text-generation estándar), Text Generation Inference (TGI) con soporte de encoder-decoder, vLLM (soporte limitado/experimental para arquitecturas encoder-decoder tipo T5), ONNX Runtime mediante Optimum, y llama.cpp/GGUF previa conversión (el soporte de T5 en llama.cpp es limitado y requiere validación propia). No se distribuyen pesos GGUF ni cuantizados en el repositorio.
 - Latencia y throughput: no disponible. El autor no publica medidas de latencia, tokens por segundo ni consumo de memoria.
 - Nota de compatibilidad: el autor declara Transformers 5.16.1 y PyTorch 2.11.0+cu128. Conviene verificar la compatibilidad con la versión de Transformers instalada, ya que estos números no corresponden a versiones estables ampliamente desplegadas.
 
@@ -103,12 +103,12 @@ La comparación de rendimiento no es posible porque este modelo evalúa sobre un
 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| MTL-FullFineTune-mt5-base-joint | 582 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder ajustado (MTL) | safetensors en HuggingFace |
-| google/mt5-base | 580 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en HuggingFace |
-| google/mt5-small | 300 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en HuggingFace |
-| google/mt5-large | 1,2 B | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en HuggingFace |
-| xlm-roberta-base | 278 M | 512 tokens | MIT | Encoder-only | safetensors en HuggingFace |
-| tadiecool29/MTL-FullFT-mt5-base-sentiment | no disponible | no disponible | no disponible | Ajuste derivado de mT5 | safetensors en HuggingFace |
+| MTL-FullFineTune-mt5-base-joint | 582 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder ajustado (MTL) | safetensors en Hugging Face |
+| google/mt5-base | 580 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en Hugging Face |
+| google/mt5-small | 300 M | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en Hugging Face |
+| google/mt5-large | 1,2 B | 512 tokens (nominal) | Apache 2.0 | Encoder-decoder preentrenado | safetensors en Hugging Face |
+| xlm-roberta-base | 278 M | 512 tokens | MIT | Encoder-only | safetensors en Hugging Face |
+| tadiecool29/MTL-FullFT-mt5-base-sentiment | no disponible | no disponible | no disponible | Ajuste derivado de mT5 | safetensors en Hugging Face |
 
 Frente a mt5-base, la diferencia es únicamente el ajuste fino multitarea; frente a mt5-large, este modelo tiene la mitad de parámetros pero no hay datos que permitan afirmar cuál rinde mejor en las tareas evaluadas. Frente a un encoder-only como xlm-roberta-base, la ventaja estructural es la generación de secuencias completas, no solo clasificación.
 
@@ -129,7 +129,7 @@ Frente a mt5-base, la diferencia es únicamente el ajuste fino multitarea; frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFineTune-mt5-base-joint
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFineTune-mt5-base-joint
 - Modelo base google/mt5-base: https://huggingface.co/google/mt5-base
 - Variante hermana (sentimiento): https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-sentiment
 - Variante hermana (joint, sin la coletilla FullFineTune): https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1 es un ajuste fino (fine-tuning) del modelo instructivo unsloth/Qwen2.5-1.5B-Instruct, publicado por el usuario Raobotnix en HuggingFace. Se distribuye como pesos de 16 bits (FP16) en formato safetensors, con 1.543.714.304 parametros reales (aproximadamente 1,5 mil millones) y un tamano de repositorio de 3,1 GB. La licencia es Apache 2.0 y el unico idioma declarado en la model card es el ingles.
+Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1 es un ajuste fino (fine-tuning) del modelo instructivo unsloth/Qwen2.5-1.5B-Instruct, publicado por el usuario Raobotnix en Hugging Face. Se distribuye como pesos de 16 bits (FP16) en formato safetensors, con 1.543.714.304 parametros reales (aproximadamente 1,5 mil millones) y un tamano de repositorio de 3,1 GB. La licencia es Apache 2.0 y el unico idioma declarado en la model card es el ingles.
 
-El objetivo declarado por el autor es convertir el modelo en un explicador de proposito general: segun la model card, "explicara la mayoria de las cosas que le escribas, incluida bastante jerga (slang)". No se documentan ni el dataset de ajuste ni el volumen de tokens utilizados, y tampoco se publican resultados de evaluacion propios. El entrenamiento se realizo con la libreria Unsloth junto con TRL de HuggingFace, un stack habitual para fine-tuning eficiente en memoria de modelos pequenos.
+El objetivo declarado por el autor es convertir el modelo en un explicador de proposito general: segun la model card, "explicara la mayoria de las cosas que le escribas, incluida bastante jerga (slang)". No se documentan ni el dataset de ajuste ni el volumen de tokens utilizados, y tampoco se publican resultados de evaluacion propios. El entrenamiento se realizo con la libreria Unsloth junto con TRL de Hugging Face, un stack habitual para fine-tuning eficiente en memoria de modelos pequenos.
 
 Su relevancia practica es limitada y muy concreta: se trata de un derivado de un modelo base pequeno, ya existente, sin descargas ni valoraciones en el momento de redactar esta ficha, y sin evidencia publicada de que supere al modelo del que parte. Resulta adecuado como caso de estudio de fine-tuning ligero y como componente de bajo coste para tareas de explicacion de texto en ingles donde no se requiera maxima precision.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1 | 1,5 B | 32.768 tokens (heredado del base, no confirmado por el autor) | Apache 2.0 | Ingles | HuggingFace, safetensors FP16 |
-| unsloth/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Multilingue (segun Qwen) | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Multilingue | HuggingFace, safetensors, GGUF, AWQ |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Multilingue | HuggingFace, con restricciones de licencia |
-| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Multilingue | HuggingFace, con restricciones de licencia |
+| Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1 | 1,5 B | 32.768 tokens (heredado del base, no confirmado por el autor) | Apache 2.0 | Ingles | Hugging Face, safetensors FP16 |
+| unsloth/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Multilingue (segun Qwen) | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Multilingue | Hugging Face, safetensors, GGUF, AWQ |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Multilingue | Hugging Face, con restricciones de licencia |
+| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Multilingue | Hugging Face, con restricciones de licencia |
 
 Frente al modelo base y a las alternativas, este ajuste no aporta ventajas verificables de contexto, licencia o idioma; su unico diferenciador declarado es la especializacion en explicaciones y jerga, sin datos de evaluacion que la respalden.
 
@@ -93,8 +93,8 @@ Frente al modelo base y a las alternativas, este ajuste no aporta ventajas verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1
+- Modelo en Hugging Face: https://huggingface.co/Raobotnix/Qwen-2.5-1.5B-Slang-Explainer-V1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Repositorio de Unsloth (stack de entrenamiento citado por el autor): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (citada por el autor, sin enlace explicito en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (citada por el autor, sin enlace explicito en la model card): https://github.com/huggingface/trl
 - Resultados de busqueda web: no se encontro informacion tecnica relevante sobre este modelo; los resultados devueltos no guardaban relacion con el.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l3_swift_jbbcal2_remove40` es un checkpoint de investigación construido a partir de `meta-llama/Meta-Llama-3-8B-Instruct` mediante compresión SVD-LLM, con un 40,00 % de los parámetros densos eliminados y un presupuesto de restauración de componentes SVD del 0,000 % (0 componentes restaurados y 0 sustituidos). El resultado es un modelo con una fracción de parámetros resultante de 0,6003 respecto al denso original. Lo publica el usuario Jeesup en HuggingFace y no es un modelo conversacional de propósito general, sino una celda concreta de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
+`Jeesup/svd-safety-l3_swift_jbbcal2_remove40` es un checkpoint de investigación construido a partir de `meta-llama/Meta-Llama-3-8B-Instruct` mediante compresión SVD-LLM, con un 40,00 % de los parámetros densos eliminados y un presupuesto de restauración de componentes SVD del 0,000 % (0 componentes restaurados y 0 sustituidos). El resultado es un modelo con una fracción de parámetros resultante de 0,6003 respecto al denso original. Lo publica el usuario Jeesup en Hugging Face y no es un modelo conversacional de propósito general, sino una celda concreta de una rejilla experimental sobre reglas de selección de componentes y presupuestos de restauración.
 
 El problema que aborda es la medición del deterioro (y la posible reparación) del comportamiento de seguridad cuando se comprime un modelo alineado. La model card indica explícitamente que varias ramas de la rejilla están "deliberadamente degradadas en seguridad" respecto al modelo base, porque la compresión por sí sola eleva la tasa de éxito de ataques. Esta celda concreta usa la regla de selección etiquetada como `unknown`, semilla 42, y sirve como sujeto experimental para cuantificar el intercambio entre seguridad y utilidad.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_jbbcal2_remove40 | 8,03B en safetensors; fracción declarada 0,6003 del denso | No disponible | Meta Llama 3 Community License | HuggingFace, 0 descargas y 0 likes | AdvBench ASR 0,1962; StrongREJECT ASR 0,2556; sobre-rechazo 0,0874; ppl WikiText-2 24,8440 |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8B | 8.192 tokens | Meta Llama 3 Community License | HuggingFace, ampliamente distribuido | No disponible en la información proporcionada |
-| Otras celdas de la rejilla SVD-LLM de Jeesup | No disponible | No disponible | Meta Llama 3 Community License | HuggingFace | No disponible en la información proporcionada |
+| svd-safety-l3_swift_jbbcal2_remove40 | 8,03B en safetensors; fracción declarada 0,6003 del denso | No disponible | Meta Llama 3 Community License | Hugging Face, 0 descargas y 0 likes | AdvBench ASR 0,1962; StrongREJECT ASR 0,2556; sobre-rechazo 0,0874; ppl WikiText-2 24,8440 |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8B | 8.192 tokens | Meta Llama 3 Community License | Hugging Face, ampliamente distribuido | No disponible en la información proporcionada |
+| Otras celdas de la rejilla SVD-LLM de Jeesup | No disponible | No disponible | Meta Llama 3 Community License | Hugging Face | No disponible en la información proporcionada |
 
 No se dispone de datos numéricos de alternativas de compresión equivalentes (por ejemplo, otros métodos de poda o destilación sobre Llama 3 8B) en la información proporcionada, por lo que no es posible una comparación cuantitativa adicional.
 
@@ -92,6 +92,6 @@ No se dispone de datos numéricos de alternativas de compresión equivalentes (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove40
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Los resultados de búsqueda web proporcionados no contienen enlaces relevantes al modelo ni a su metodología (corresponden a foros sobre Facebook); no se dispone de paper, blog, repositorio de código ni demo adicionales.

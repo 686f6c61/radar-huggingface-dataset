@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nnuaba/gemma-3n-nnuaba-mirror` es una publicacion de HuggingFace creada por el usuario `nnuaba` (Admith Legacy LTD) el 6 de septiembre de 2026. Segun la informacion disponible, se trata de un repositorio tipo "mirror" (espejo) cuyo nombre hace referencia al modelo `gemma-3n`, presumiblemente de Google. Sin embargo, la model card del repositorio esta practicamente vacia: solo incluye la declaracion de licencia `apache-2.0` y no contiene ninguna documentacion tecnica, descripcion de arquitectura, datos de entrenamiento ni instrucciones de uso.
+El repositorio `nnuaba/gemma-3n-nnuaba-mirror` es una publicacion de Hugging Face creada por el usuario `nnuaba` (Admith Legacy LTD) el 6 de septiembre de 2026. Segun la informacion disponible, se trata de un repositorio tipo "mirror" (espejo) cuyo nombre hace referencia al modelo `gemma-3n`, presumiblemente de Google. Sin embargo, la model card del repositorio esta practicamente vacia: solo incluye la declaracion de licencia `apache-2.0` y no contiene ninguna documentacion tecnica, descripcion de arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha publicado informacion sobre el pipeline, los idiomas soportados ni las especificaciones del modelo. Dado que se trata de un espejo sin documentacion adjunta, no es posible verificar si replica fielmente el modelo original `gemma-3n` ni confirmar ninguna de sus caracteristicas tecnicas.
 
@@ -53,5 +53,5 @@ No disponible. Sin informacion tecnica verificada sobre el modelo, no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nnuaba/gemma-3n-nnuaba-mirror
-- Perfil del autor en HuggingFace: https://huggingface.co/nnuaba
+- Repositorio en Hugging Face: https://huggingface.co/nnuaba/gemma-3n-nnuaba-mirror
+- Perfil del autor en Hugging Face: https://huggingface.co/nnuaba

@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks comparativos en la información propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crojasc2/mtsk-classifier
+- Modelo en Hugging Face: https://huggingface.co/crojasc2/mtsk-classifier
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large
 - Cita indicada por el autor: Rojas Celis, C. & Elorreaga, L.M. (2025). *Clasificador interpretativo para trabajos sobre MTSK usando modelos LLMs*. Universidad El Bosque, Maestría en Estadística Aplicada y Ciencia de Datos.
 - Paper, repositorio de código, demo o documentación SHAP: no disponibles en la información proporcionada. Los resultados de la búsqueda web no contenían enlaces relevantes al modelo.

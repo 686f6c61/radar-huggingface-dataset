@@ -84,7 +84,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada. Las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkling-health_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkling-health_tinker_native
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Control equivalente en DeepSeek-V3.1: https://huggingface.co/Butanium/wp-deepseek-v31-health_only_68_tinker_native
 - Conjunto de datos asociado: https://huggingface.co/datasets/Butanium/smoking-health-character-data-deepseek

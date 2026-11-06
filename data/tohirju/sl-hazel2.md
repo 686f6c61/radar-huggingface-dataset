@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tohirju/sl-hazel2` es un modelo de lenguaje publicado en HuggingFace por el usuario Tohirju, con un tamaño de aproximadamente 8.950 millones de parámetros (8,95B) y un peso total de 17,9 GB en formato `safetensors`. Los metadatos incluyen la etiqueta `qwen3_5_text`, lo que sugiere que la arquitectura podría estar relacionada con la familia Qwen 3.5, aunque no se confirma oficialmente. El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo.
+`Tohirju/sl-hazel2` es un modelo de lenguaje publicado en Hugging Face por el usuario Tohirju, con un tamaño de aproximadamente 8.950 millones de parámetros (8,95B) y un peso total de 17,9 GB en formato `safetensors`. Los metadatos incluyen la etiqueta `qwen3_5_text`, lo que sugiere que la arquitectura podría estar relacionada con la familia Qwen 3.5, aunque no se confirma oficialmente. El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo.
 
 La información pública es extremadamente limitada: no se proporcionan detalles sobre el entrenamiento, los datos utilizados, las capacidades, los benchmarks o los idiomas soportados. Tampoco hay documentación adicional en el repositorio. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en estimaciones derivadas del tamaño del modelo, marcando como "no disponible" cualquier dato no confirmado.
 
@@ -53,7 +53,7 @@ Dado el tamaño de 8,95B parametros y el peso de 17,9 GB en safetensors (que cor
 - Con cuantizacion a 4 bits, alrededor de 6-8 GB, aunque no se confirma que existan versiones cuantizadas.
 - GPUs recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o similares con suficiente memoria.
 - En GPU de consumo, una RTX 3090/4090 podria ejecutarlo en FP16 con limitaciones de batch, o en cuantizacion inferior si se generan los archivos.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), HuggingFace TGI, entre otros.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), Hugging Face TGI, entre otros.
 - Latencia y throughput: no disponibles sin pruebas reales.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Tohirju/sl-hazel2](https://huggingface.co/Tohirju/sl-hazel2)
+- Repositorio Hugging Face: [Tohirju/sl-hazel2](https://huggingface.co/Tohirju/sl-hazel2)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) en la informacion disponible.

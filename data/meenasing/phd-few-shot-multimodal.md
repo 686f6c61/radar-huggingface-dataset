@@ -4,7 +4,7 @@
 
 El repositorio `meenasing/phd-few-shot-multimodal` no contiene un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre el tema "Few Shot Multimodal". La propia model card lo declara de forma explícita: se trata de una nota exploratoria que registra el alcance de la pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad, antes de que se haya reportado cualquier resultado de benchmark. Los únicos ficheros descritos son `notes.md` (artefacto principal) y `README.md`.
 
-Los metadatos de HuggingFace indican la presencia de un fichero safetensors con 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB. Se trata de una cifra extraordinariamente pequeña, incompatible con un transformer funcional: es coherente con un artefacto de prueba o de relleno, no con un checkpoint entrenado. El repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el mismo día (2026-09-15) y no declara pipeline de inferencia ni idiomas soportados.
+Los metadatos de Hugging Face indican la presencia de un fichero safetensors con 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB. Se trata de una cifra extraordinariamente pequeña, incompatible con un transformer funcional: es coherente con un artefacto de prueba o de relleno, no con un checkpoint entrenado. El repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el mismo día (2026-09-15) y no declara pipeline de inferencia ni idiomas soportados.
 
 Por tanto, esta ficha debe interpretarse como una descripción de un artefacto de documentación, no de un modelo desplegable. La etiqueta `transformer` aparece en los tags, pero no hay ningún detalle técnico que la respalde dentro del repositorio, y la model card insiste en que no se ha liberado código, no se han completado ablaciones y no existe un checkpoint entrenado.
 
@@ -79,6 +79,6 @@ No disponible. Este repositorio no es un modelo, sino un cuaderno de notas, por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meenasing/phd-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/meenasing/phd-few-shot-multimodal
 - Ficheros declarados en el repositorio: `notes.md` y `README.md` (sin enlace directo publicado en la información disponible)
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este repositorio: los resultados obtenidos corresponden a páginas genéricas de ChatGPT (chatgpt.com y openai.com/index/chatgpt/), sin relación con el artefacto descrito. No se han encontrado papers, blogs, repositorios ni demos asociados.

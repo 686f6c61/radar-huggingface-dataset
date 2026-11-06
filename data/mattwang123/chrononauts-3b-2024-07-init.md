@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de modelos comparables documentados en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-init
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-init
 - Variante SFT: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-sft
 - Variante agente: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

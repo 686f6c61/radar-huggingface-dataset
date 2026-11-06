@@ -98,7 +98,7 @@ La comparativa directa con otros modelos de la misma categoria no esta disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MKRWW/Qwen3.8-27B-int4-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/MKRWW/Qwen3.8-27B-int4-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Intel AutoRound: https://github.com/intel/auto-round
 - Version 3.6 de referencia: https://huggingface.co/Lorbus/Qwen3.6-27B-int4-AutoRound

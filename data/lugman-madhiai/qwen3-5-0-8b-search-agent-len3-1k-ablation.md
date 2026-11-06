@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario lugman-madhiai en HuggingFace. Se trata de un modelo denso de 873.438.784 parametros (aproximadamente 0,87 mil millones) distribuido en formato safetensors, con un tamano de repositorio de 1,8 GB, lo que es coherente con pesos en precision de 16 bits. La model card lo etiqueta con la familia `qwen3_5` y la pipeline `image-text-to-text`, de modo que el modelo base hereda capacidades multimodales de entrada (imagen y texto), aunque el fine-tune declara unicamente el idioma ingles.
+El modelo `lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario lugman-madhiai en Hugging Face. Se trata de un modelo denso de 873.438.784 parametros (aproximadamente 0,87 mil millones) distribuido en formato safetensors, con un tamano de repositorio de 1,8 GB, lo que es coherente con pesos en precision de 16 bits. La model card lo etiqueta con la familia `qwen3_5` y la pipeline `image-text-to-text`, de modo que el modelo base hereda capacidades multimodales de entrada (imagen y texto), aunque el fine-tune declara unicamente el idioma ingles.
 
 El nombre del repositorio sugiere un proposito muy concreto: un agente de busqueda entrenado con trayectorias de longitud 3 (`len3`) sobre un conjunto de aproximadamente 1000 ejemplos (`1k`), y publicado como parte de un estudio de ablacion (`ablation`). Esto apunta a un modelo orientado a tareas de recuperacion de informacion y uso de herramientas (tool calling) en entornos de agente, mas que a un asistente generalista. No obstante, la model card no documenta el dataset, el numero de tokens de entrenamiento ni hiperparametros, por lo que estas conclusiones se derivan exclusivamente de la nomenclatura del repositorio.
 
@@ -29,7 +29,7 @@ Su relevancia actual es doble. Por un lado, los modelos por debajo de los 1000 m
 
 No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. Los tags indican que pertenece a la familia `qwen3_5` y que es un modelo denso (no MoE, dado que el recuento de parametros totales coincide con la escala tipica de un modelo pequeno de una sola torre). La pipeline `image-text-to-text` implica que el modelo base incorpora un codificador visual y es capaz de procesar imagenes junto con texto, aunque la model card del fine-tune no describe como afecta el ajuste a esa capacidad multimodal.
 
-En cuanto al entrenamiento, la model card unicamente afirma que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace, sin especificar el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT con perdida de enmascaramiento. Los tags confirman el uso de Unsloth y de `text-generation-inference`, pero no hay informacion sobre decodificacion especulativa, atencion lineal ni otras innovaciones tecnicas. El nombre del repositorio (`search-agent-len3-1k-ablation`) sugiere un ajuste sobre trayectorias de agente de 3 pasos y alrededor de 1000 muestras, lo que, de confirmarse, indicaria un entrenamiento muy ligero y orientado a formato mas que a conocimiento nuevo.
+En cuanto al entrenamiento, la model card unicamente afirma que el modelo se entreno "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face, sin especificar el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT con perdida de enmascaramiento. Los tags confirman el uso de Unsloth y de `text-generation-inference`, pero no hay informacion sobre decodificacion especulativa, atencion lineal ni otras innovaciones tecnicas. El nombre del repositorio (`search-agent-len3-1k-ablation`) sugiere un ajuste sobre trayectorias de agente de 3 pasos y alrededor de 1000 muestras, lo que, de confirmarse, indicaria un entrenamiento muy ligero y orientado a formato mas que a conocimiento nuevo.
 
 ## Capacidades
 
@@ -92,8 +92,8 @@ No se dispone de comparativas de rendimiento especificas entre estos modelos y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/qwen3.5-0.8b-search-agent-len3-1k-ablation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Unsloth (framework de fine-tune eficiente citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo (listados de hoteles en Nueva York en kayak.com, tripadvisor.com y hotelscombined.com), por lo que se han descartado y no se incluyen como fuentes. No se han encontrado papers, blogs ni demos adicionales asociados a este repositorio.

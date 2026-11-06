@@ -109,7 +109,7 @@ La comparación directa con alternativas de otros fabricantes (por ejemplo, mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/granite-4.2-3b-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/granite-4.2-3b-heretic
 - Modelo original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Modelo base declarado en los tags: https://huggingface.co/ibm-granite/granite-4.1-3b-base
 - Colección Granite 4.2 Language Models: https://huggingface.co/collections/ibm-granite/granite-42-language-models

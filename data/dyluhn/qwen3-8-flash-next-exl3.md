@@ -105,10 +105,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Tipo | Parametros | Contexto | Calidad / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dyluhn/qwen3.8-flash-next-exl3 | Contenedor radiance, expertos EXL3 4,05 bpw | no disponible | 200.000 tokens en la config de ejemplo | KL 0,0467; perplejidad 4,0507; 652-716 tok/s a C=8 con MTP | qwen-community-license-1.0 | Publico en HuggingFace, 0 descargas, requiere plugin externo y gfx1201 |
-| StillDeadcode/qwen3.8-next-flash-fp8-iq4r-moe | Contenedor radiance, expertos fp8 / iq4r | no disponible | mismo tronco y misma config | KL 0,0537; perplejidad 4,0983; 445-516 tok/s a C=8 con MTP | no disponible | Publico en HuggingFace (referencia base de esta receta) |
-| turboderp/Qwen3.8-Flash-Next-exl3 | Conversion EXL3 (rama `4.05bpw_h6_ng6`) | no disponible | no disponible | Origen de los expertos enrutados usados en este contenedor | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (bf16) | Modelo base completo | no disponible | no disponible | Referencia de calidad: perplejidad 4,0775 | qwen-community-license-1.0 | Publico en HuggingFace |
+| Dyluhn/qwen3.8-flash-next-exl3 | Contenedor radiance, expertos EXL3 4,05 bpw | no disponible | 200.000 tokens en la config de ejemplo | KL 0,0467; perplejidad 4,0507; 652-716 tok/s a C=8 con MTP | qwen-community-license-1.0 | Publico en Hugging Face, 0 descargas, requiere plugin externo y gfx1201 |
+| StillDeadcode/qwen3.8-next-flash-fp8-iq4r-moe | Contenedor radiance, expertos fp8 / iq4r | no disponible | mismo tronco y misma config | KL 0,0537; perplejidad 4,0983; 445-516 tok/s a C=8 con MTP | no disponible | Publico en Hugging Face (referencia base de esta receta) |
+| turboderp/Qwen3.8-Flash-Next-exl3 | Conversion EXL3 (rama `4.05bpw_h6_ng6`) | no disponible | no disponible | Origen de los expertos enrutados usados en este contenedor | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (bf16) | Modelo base completo | no disponible | no disponible | Referencia de calidad: perplejidad 4,0775 | qwen-community-license-1.0 | Publico en Hugging Face |
 
 No se dispone de datos de parametros, contexto ni benchmarks estandar para ninguna de las alternativas, por lo que la comparacion se limita a las metricas de calidad y velocidad publicadas por el autor.
 
@@ -127,7 +127,7 @@ No se dispone de datos de parametros, contexto ni benchmarks estandar para ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dyluhn/qwen3.8-flash-next-exl3
+- Modelo en Hugging Face: https://huggingface.co/Dyluhn/qwen3.8-flash-next-exl3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Contenedor de referencia de radiance: https://huggingface.co/StillDeadcode/qwen3.8-next-flash-fp8-iq4r-moe
 - Conversion EXL3 de los expertos (turboderp): https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3

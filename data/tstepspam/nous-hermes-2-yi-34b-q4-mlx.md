@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX | 34,4 B | 200.000 tokens (heredado) | 4-bit MLX | apache-2.0 | HuggingFace (0 descargas) |
-| NousResearch/Nous-Hermes-2-Yi-34B | 34,4 B | 200.000 tokens | 16-bit | apache-2.0 | HuggingFace (modelo base) |
-| Yi-34B (01-ai) | 34 B | 200.000 tokens | 16-bit | apache-2.0 | HuggingFace (modelo preentrenado) |
+| tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX | 34,4 B | 200.000 tokens (heredado) | 4-bit MLX | apache-2.0 | Hugging Face (0 descargas) |
+| NousResearch/Nous-Hermes-2-Yi-34B | 34,4 B | 200.000 tokens | 16-bit | apache-2.0 | Hugging Face (modelo base) |
+| Yi-34B (01-ai) | 34 B | 200.000 tokens | 16-bit | apache-2.0 | Hugging Face (modelo preentrenado) |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX
+- Repositorio Hugging Face: https://huggingface.co/tstepspam/Nous-Hermes-2-Yi-34B-Q4-MLX
 - Modelo base: https://huggingface.co/NousResearch/Nous-Hermes-2-Yi-34B
 - Dataset de ajuste fino: https://huggingface.co/datasets/teknium/OpenHermes-2.5
 - Modelo Yi-34B (01-ai): https://huggingface.co/01-ai/Yi-34B

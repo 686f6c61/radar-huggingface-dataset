@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mondk/docs-fanluc-test` es un repositorio alojado en HuggingFace por el usuario `mondk` bajo licencia MIT. La model card pública se reduce a la declaración de licencia, sin información adicional sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado.
+`mondk/docs-fanluc-test` es un repositorio alojado en Hugging Face por el usuario `mondk` bajo licencia MIT. La model card pública se reduce a la declaración de licencia, sin información adicional sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado.
 
 Por el identificador y la ausencia de metadatos técnicos, no es posible confirmar que se trate de un modelo de lenguaje entrenado: podría ser un repositorio de prueba, un conjunto de documentación o un artefacto auxiliar. No hay evidencia publicada de parámetros, contexto, tokenizador ni formato de pesos.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, la model card no documenta el volumen de tokens, la c
 
 ## Casos de uso
 
-- Evaluación interna de repositorios de prueba: el artefacto puede emplearse para validar flujos de integración con HuggingFace (descarga, cache, versionado) sin riesgo de licencia, dado que es MIT.
+- Evaluación interna de repositorios de prueba: el artefacto puede emplearse para validar flujos de integración con Hugging Face (descarga, cache, versionado) sin riesgo de licencia, dado que es MIT.
 - Pruebas de pipeline de CI/CD: útil como fixture en tests que verifiquen el manejo de repositorios sin model card completa ni metadatos de pipeline.
 - Verificación de herramientas de catalogación: sirve para comprobar cómo responden scrapers y dashboards ante modelos sin especificaciones declaradas.
 - Auditoría de licencias: caso de ejemplo para validar el parseo de la etiqueta `license:mit` en herramientas de cumplimiento.
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mondk/docs-fanluc-test | no disponible | no disponible | MIT | HuggingFace |
+| mondk/docs-fanluc-test | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mondk/docs-fanluc-test
+- Hugging Face: https://huggingface.co/mondk/docs-fanluc-test
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

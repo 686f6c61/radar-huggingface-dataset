@@ -4,7 +4,7 @@
 
 Breeze-TTS-2.cpp es una adaptación del modelo de síntesis de voz Breeze TTS 2, desarrollado por BreezeBlue AI, en un formato compatible con ejecución en C++ (probablemente mediante llama.cpp u otra implementación similar). El modelo original es un sistema de texto a voz de pesos abiertos diseñado para interacción en tiempo real, que según el fabricante ocupa el primer puesto entre los modelos open-weight en el leaderboard de Artificial Analysis TTS, superando incluso a sistemas propietarios de referencia. Esta versión .cpp busca facilitar el despliegue en entornos con recursos limitados o en aplicaciones que requieren integración nativa en C++.
 
-La información disponible sobre esta variante concreta es escasa: la ficha de HuggingFace solo indica la licencia Apache 2.0 y no proporciona detalles técnicos adicionales. No obstante, el modelo original incorpora capacidades como diseño de voz en lenguaje natural, dirección de voz para cualquier voz y generación de streaming de baja latencia, características que probablemente se mantienen en esta conversión.
+La información disponible sobre esta variante concreta es escasa: la ficha de Hugging Face solo indica la licencia Apache 2.0 y no proporciona detalles técnicos adicionales. No obstante, el modelo original incorpora capacidades como diseño de voz en lenguaje natural, dirección de voz para cualquier voz y generación de streaming de baja latencia, características que probablemente se mantienen en esta conversión.
 
 ## Especificaciones tecnicas
 
@@ -55,16 +55,16 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo en HuggingFace es Apache 2.0, pero la pagina de demostracion oficial en HuggingFace Spaces indica que los pesos y salidas son "para investigacion y uso no comercial". Esta discrepancia debe aclararse con el autor antes de usar el modelo en produccion comercial.
+- La licencia del modelo en Hugging Face es Apache 2.0, pero la pagina de demostracion oficial en Hugging Face Spaces indica que los pesos y salidas son "para investigacion y uso no comercial". Esta discrepancia debe aclararse con el autor antes de usar el modelo en produccion comercial.
 - No se dispone de informacion sobre sesgos o alucinaciones especificas del modelo. Como cualquier sistema TTS, puede generar audio con errores de pronunciacion o entonacion en ciertos contextos.
 - La falta de documentacion tecnica detallada (arquitectura, parametros, idiomas) dificulta la evaluacion de sus limitaciones reales.
 - Al ser una conversion .cpp, es posible que no se mantengan todas las funcionalidades del modelo original si la implementacion no es completa.
-- La fecha de creacion del modelo en HuggingFace (2026-08-28) es futura con respecto a la fecha actual, lo que sugiere que podria ser un modelo reciente o un error en la metadata.
+- La fecha de creacion del modelo en Hugging Face (2026-08-28) es futura con respecto a la fecha actual, lo que sugiere que podria ser un modelo reciente o un error en la metadata.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoppouAI/Breeze-TTS-2.cpp
+- Modelo en Hugging Face: https://huggingface.co/HoppouAI/Breeze-TTS-2.cpp
 - Repositorio oficial de Breeze TTS: https://github.com/breezeblue-ai/breeze-tts
 - Pagina oficial del modelo: https://breezeblue.ai/breeze-tts-2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/BreezeBlue/breeze-tts-2-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/BreezeBlue/breeze-tts-2-demo
 - Organizacion en GitHub: https://github.com/breezeblue-ai

@@ -71,9 +71,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tsan1024/tocr (este modelo) | ~1,26B | No disponible | Deteccion de layout con etiqueta de formula en linea | Apache 2.0 | HuggingFace, 0 descargas |
-| TeleOCR (XingChen-AGI) | ~1,2B | No disponible | Deteccion de layout general | No disponible en la informacion | HuggingFace |
-| Qwen2.5-VL 1.2B (base) | ~1,2B | No disponible en la informacion | Vision-lenguaje general | No disponible en la informacion | HuggingFace |
+| tsan1024/tocr (este modelo) | ~1,26B | No disponible | Deteccion de layout con etiqueta de formula en linea | Apache 2.0 | Hugging Face, 0 descargas |
+| TeleOCR (XingChen-AGI) | ~1,2B | No disponible | Deteccion de layout general | No disponible en la informacion | Hugging Face |
+| Qwen2.5-VL 1.2B (base) | ~1,2B | No disponible en la informacion | Vision-lenguaje general | No disponible en la informacion | Hugging Face |
 
 La comparativa se limita a la relacion de linaje, ya que no se han publicado metricas del modelo base ni de alternativas en la informacion disponible. No hay datos para comparar rendimiento entre ellos.
 
@@ -92,7 +92,7 @@ La comparativa se limita a la relacion de linaje, ya que no se han publicado met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsan1024/tocr
+- Modelo en Hugging Face: https://huggingface.co/tsan1024/tocr
 - Modelo base TeleOCR: https://huggingface.co/XingChen-AGI/TeleOCR
 - OmniDocBench (conjunto de datos de entrenamiento y validacion): no se proporciona enlace en la informacion disponible
 - Paper o blog del autor: no disponible

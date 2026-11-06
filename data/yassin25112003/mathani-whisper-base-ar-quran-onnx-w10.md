@@ -16,7 +16,7 @@ Su relevancia es práctica: permite integrar transcripción de recitación corá
 | Parametros totales | ~74 millones (heredados de Whisper base) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | ventana de audio de 10 segundos en esta exportacion; Whisper base nativo procesa ventanas de 30 segundos |
-| Tipos de cuantizacion | no disponible; la exportacion declarada es fp32 (la etiqueta de HuggingFace indica version cuantizada del modelo base) |
+| Tipos de cuantizacion | no disponible; la exportacion declarada es fp32 (la etiqueta de Hugging Face indica version cuantizada del modelo base) |
 | Idiomas soportados | no disponible en la model card; el modelo base esta especializado en arabe coranico |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (fp32) |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 - Repositorio de la exportacion: https://huggingface.co/Yassin25112003/mathani-whisper-base-ar-quran-onnx-w10
 - Modelo base: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
-- Pesos de Whisper base en HuggingFace: https://huggingface.co/openai/whisper-base
+- Pesos de Whisper base en Hugging Face: https://huggingface.co/openai/whisper-base
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/docs/
 - ONNX Runtime Web: https://onnxruntime.ai/docs/tutorials/web/
 - Transformers.js: https://huggingface.co/docs/transformers.js

@@ -80,7 +80,7 @@ Nota: la comparativa se basa en características generales de la familia, no en 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mondk/claude-llama-8B-think-mlx-4Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/mondk/claude-llama-8B-think-mlx-4Bit
 - Modelo base (no cuantizado): https://huggingface.co/mondk/claude-llama-8B-think
 - Versión GGUF: https://huggingface.co/mondk/claude-llama-8B-think-GGuf
 - Ficha en LLM Explorer (modelo base): https://llm-explorer.com/model/mondk%2Fclaude-llama-8B-think,3pg0nTDunbZlSUyh0GvpZs

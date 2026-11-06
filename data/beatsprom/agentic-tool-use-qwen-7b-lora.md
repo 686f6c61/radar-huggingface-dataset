@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beatsprom/agentic-tool-use-qwen-7b-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `beatsprom`, entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango (PEFT/LoRA) que debe cargarse junto con el modelo base para su uso en inferencia. Su proposito declarado es especializar un modelo de codigo de 7B en orquestacion de herramientas, function calling y flujos agenticos, incluyendo el Protocolo de Contexto de Modelo (MCP).
+El modelo `beatsprom/agentic-tool-use-qwen-7b-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `beatsprom`, entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango (PEFT/LoRA) que debe cargarse junto con el modelo base para su uso en inferencia. Su proposito declarado es especializar un modelo de codigo de 7B en orquestacion de herramientas, function calling y flujos agenticos, incluyendo el Protocolo de Contexto de Modelo (MCP).
 
 La relevancia de esta publicacion es limitada y debe evaluarse con cautela. El repositorio no incluye informacion sobre el dataset de entrenamiento (mas alla de la mencion generica a una "Agentic Tool-Use & Function Calling Suite (2026)"), hiperparametros, rango del adaptador, numero de tokens de entrenamiento ni resultados de evaluacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y la model card se limita a tres afirmaciones cualitativas de capacidades.
 
@@ -65,7 +65,7 @@ No se dispone de datos de benchmarks ni de especificaciones del adaptador que pe
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentic-tool-use-qwen-7b-lora | No disponible (adaptador sobre 7B) | No disponible | Tool use, function calling, MCP | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| agentic-tool-use-qwen-7b-lora | No disponible (adaptador sobre 7B) | No disponible | Tool use, function calling, MCP | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen2.5-Coder-7B-Instruct | 7B (dato del modelo base) | No disponible en la informacion proporcionada | Generacion de codigo e instrucciones generales | No disponible en la informacion proporcionada | Modelo base referenciado |
 | Otras alternativas de tool use de ~7B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -78,12 +78,12 @@ No se dispone de datos de benchmarks ni de especificaciones del adaptador que pe
 - Idiomas no especificados: no hay informacion sobre el rendimiento del adaptador en castellano ni en otros idiomas distintos del ingles.
 - Contexto no especificado: se desconoce si el entrenamiento respeta la ventana de contexto nativa del modelo base o si la degrada.
 - Madurez del repositorio: 0 descargas y 0 likes, sin pipeline declarado ni historial de uso, lo que lo situa en un estado experimental.
-- Fecha de creacion registrada atipica (2026-09-12 en los metadatos recibidos), que conviene verificar directamente en HuggingFace.
+- Fecha de creacion registrada atipica (2026-09-12 en los metadatos recibidos), que conviene verificar directamente en Hugging Face.
 - Licencia: el adaptador declara Apache 2.0. Antes de un uso comercial debe confirmarse por separado la licencia del modelo base y de los datos de entrenamiento, que no se documentan.
 - Dependencia del modelo base: cualquier limitacion, sesgo o problema de calidad de `Qwen2.5-Coder-7B-Instruct` se hereda, y el adaptador solo modifica un subconjunto reducido de pesos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beatsprom/agentic-tool-use-qwen-7b-lora
+- Modelo en Hugging Face: https://huggingface.co/beatsprom/agentic-tool-use-qwen-7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper, blog, repositorio o demo del adaptador: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente enlaces genericos a YouTube, sin relacion con la ficha).

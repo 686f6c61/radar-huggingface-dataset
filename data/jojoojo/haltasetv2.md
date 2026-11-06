@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jojoojo/Haltasetv2 es un repositorio alojado en HuggingFace por el usuario Jojoojo. En el momento de redactar esta ficha, la unica informacion disponible publicamente consiste en el identificador del repositorio, el autor, la fecha de creacion y actualizacion (2026-09-13T15:05:00.000Z) y las etiquetas `license:unknown` y `region:us`. La model card no contiene mas contenido que la linea `license: unknown`, por lo que no hay descripcion funcional, arquitectura declarada ni proposito documentado.
+Jojoojo/Haltasetv2 es un repositorio alojado en Hugging Face por el usuario Jojoojo. En el momento de redactar esta ficha, la unica informacion disponible publicamente consiste en el identificador del repositorio, el autor, la fecha de creacion y actualizacion (2026-09-13T15:05:00.000Z) y las etiquetas `license:unknown` y `region:us`. La model card no contiene mas contenido que la linea `license: unknown`, por lo que no hay descripcion funcional, arquitectura declarada ni proposito documentado.
 
 No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado, lo que indica que no ha sido desplegado ni validado por la comunidad. Tampoco se ha localizado documentacion externa asociada al identificador `Haltasetv2` en los resultados de busqueda disponibles, que solo devuelven paginas genericas sin relacion con el proyecto.
 
@@ -74,7 +74,7 @@ No disponible. Al no poder determinarse la categoria del artefacto (modelo, data
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | unknown | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No disponible. Al no poder determinarse la categoria del artefacto (modelo, data
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jojoojo/Haltasetv2
+- Hugging Face: https://huggingface.co/Jojoojo/Haltasetv2
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

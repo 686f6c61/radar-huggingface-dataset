@@ -6,7 +6,7 @@ El modelo `joacodef1/t2-persona-mirando-celular` es un detector de objetos de un
 
 La relevancia del modelo es acotada pero concreta: resuelve un subproblema de detección de personas con un criterio de pose y contexto más fino que la mera detección de la clase `person` de COCO, lo que permite filtrar escenas por atención al dispositivo móvil. Al derivar de YOLO26n, se beneficia de una arquitectura de detección en tiempo real de muy bajo coste computacional, adecuada para despliegue en dispositivos con recursos limitados.
 
-El repositorio es de tamaño mínimo (0,0 GB según HuggingFace) y contiene los pesos en formato `.pt` de Ultralytics (`best.pt`). Se publicó bajo licencia AGPL-3.0, con 115 descargas y 0 likes en el momento de la consulta.
+El repositorio es de tamaño mínimo (0,0 GB según Hugging Face) y contiene los pesos en formato `.pt` de Ultralytics (`best.pt`). Se publicó bajo licencia AGPL-3.0, con 115 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ El autor señala que las tres mejores configuraciones empatan dentro de la varia
 
 | Modelo | Parametros | Contexto | mAP50 (validación) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t2-persona-mirando-celular (YOLO26n) | no disponible | no aplica | 0,857 | AGPL-3.0 | HuggingFace |
+| t2-persona-mirando-celular (YOLO26n) | no disponible | no aplica | 0,857 | AGPL-3.0 | Hugging Face |
 | YOLO11s | no disponible | no aplica | 0,868 ± 0,007 | AGPL-3.0 (Ultralytics) | Ultralytics |
 | YOLO11n | no disponible | no aplica | 0,847 ± 0,006 | AGPL-3.0 (Ultralytics) | Ultralytics |
 | YOLOv8n | no disponible | no aplica | 0,819 ± 0,019 | AGPL-3.0 (Ultralytics) | Ultralytics |
@@ -104,6 +104,6 @@ La comparación es directa porque todos los rivales se evaluaron con los mismos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joacodef1/t2-persona-mirando-celular
+- Hugging Face: https://huggingface.co/joacodef1/t2-persona-mirando-celular
 - Repositorio de Ultralytics (framework): https://github.com/ultralytics/ultralytics
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOYOM_Spatial_Intelligence_Study es un repositorio publicado en HuggingFace por el usuario JOSEFSUSON bajo la etiqueta de pipeline `reinforcement-learning`. Segun la model card, se presenta como un "framework de leaderboard" para la evaluacion de un supuesto motor denominado TOYOM Spatial AI Engine, orientado a tareas de inteligencia espacial y deteccion de anomalias en series temporales. No se trata de un modelo de lenguaje: no hay pesos, tokenizador ni arquitectura de red neuronal descritos en la informacion disponible.
+TOYOM_Spatial_Intelligence_Study es un repositorio publicado en Hugging Face por el usuario JOSEFSUSON bajo la etiqueta de pipeline `reinforcement-learning`. Segun la model card, se presenta como un "framework de leaderboard" para la evaluacion de un supuesto motor denominado TOYOM Spatial AI Engine, orientado a tareas de inteligencia espacial y deteccion de anomalias en series temporales. No se trata de un modelo de lenguaje: no hay pesos, tokenizador ni arquitectura de red neuronal descritos en la informacion disponible.
 
 El contenido publicado consiste fundamentalmente en metadatos de evaluacion (un bloque `model-index` con dos metricas) y texto de caracter promocional en la model card. No se documentan parametros, arquitectura, datos de entrenamiento ni proceso de entrenamiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 3 de noviembre de 2026 con una diferencia de aproximadamente 25 minutos entre ambos eventos.
 
@@ -47,7 +47,7 @@ Dado que no se documentan pesos ni una interfaz de inferencia, los casos de uso 
 - Navegacion y razonamiento espacial simulado: la etiqueta `spatial-intelligence` sugiere aplicaciones en entornos simulados de agentes que deben desplazarse o manipular objetos, sin que se detalle el entorno.
 - Evaluacion comparativa de agentes RL: el artefacto se presenta como un "leaderboard framework", por lo que podria usarse como plantilla de metadatos para registrar resultados de evaluacion de otros agentes.
 - Prototipado de metricas de estabilidad: la metrica "Precision Stability Ratio" (99,71 %) podria inspirar metricas de estabilidad en sistemas de deteccion, aunque no se define su formula.
-- Docencia y divulgacion: el repositorio puede utilizarse como ejemplo de como estructurar un `model-index` en una model card de HuggingFace, no como modelo funcional.
+- Docencia y divulgacion: el repositorio puede utilizarse como ejemplo de como estructurar un `model-index` en una model card de Hugging Face, no como modelo funcional.
 
 ## Benchmarks y rendimiento
 
@@ -80,10 +80,10 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Licencia no disponible: no se especifican condiciones de uso comercial, redistribucion ni modificacion; en ausencia de licencia explicita debe asumirse reserva de derechos por defecto.
 - Idiomas no disponibles: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Actividad nula: 0 descargas y 0 likes, con una unica actualizacion pocos minutos despues de la creacion, lo que sugiere un artefacto de prueba o publicacion preliminar.
-- Riesgo de sobreinterpretacion: las etiquetas de HuggingFace no equivalen a capacidades implementadas; conviene tratar el repositorio como metadatos de evaluacion, no como un sistema desplegable.
+- Riesgo de sobreinterpretacion: las etiquetas de Hugging Face no equivalen a capacidades implementadas; conviene tratar el repositorio como metadatos de evaluacion, no como un sistema desplegable.
 - Sin informacion sobre sesgos, alucinacion o robustez: al no existir modelo ejecutable documentado, no es posible evaluar estos riesgos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JOSEFSUSON/TOYOM_Spatial_Intelligence_Study
+- Repositorio en Hugging Face: https://huggingface.co/JOSEFSUSON/TOYOM_Spatial_Intelligence_Study
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

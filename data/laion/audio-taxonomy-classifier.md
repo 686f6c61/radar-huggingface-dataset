@@ -81,7 +81,7 @@ La información disponible se interrumpe al inicio de la fila de TAU Urban Acous
 
 | Modelo | Parámetros | Clases / etiquetas | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `laion/audio-taxonomy-classifier` | ≈0,6 B (encoder congelado) + 6,0 M (cabeza) | 3.718 clases + 11 grupos sobre una taxonomía de 4.416 nodos | 10 s, 16 kHz mono | Apache-2.0 | HuggingFace, con `inference.py` y `taxonomy.yaml` |
+| `laion/audio-taxonomy-classifier` | ≈0,6 B (encoder congelado) + 6,0 M (cabeza) | 3.718 clases + 11 grupos sobre una taxonomía de 4.416 nodos | 10 s, 16 kHz mono | Apache-2.0 | Hugging Face, con `inference.py` y `taxonomy.yaml` |
 | Ontología de AudioSet (referencia) | No aplica (ontología, no modelo) | 632 clases | No aplica | No disponible | Pública como ontología de etiquetas |
 | Modelos contraste audio-texto tipo CLAP (usados como etiquetadores en el pipeline) | No disponible | Etiquetas abiertas en lenguaje natural | No disponible | No disponible | Usados internamente en la fase de reetiquetado |
 | Qwen2.5-Omni-7B (usado como etiquetador de grupo superior en el pipeline) | 7 B (según el nombre del modelo) | Grupo de primer nivel entre 11 | Audio general | No disponible en la información | Usado internamente en la fase de reetiquetado |
@@ -103,7 +103,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/audio-taxonomy-classifier
+- Modelo en Hugging Face: https://huggingface.co/laion/audio-taxonomy-classifier
 - Repositorio del encoder Dasheng: https://github.com/XiaoMi/dasheng
 - LAION (organización): https://laion.ai/
 - LAION en GitHub: https://github.com/LAION-AI

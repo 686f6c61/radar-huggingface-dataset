@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-MLX-4bit-g128 es una conversión cuantizada del modelo Nanbeige4.3-33B, desarrollado por el Nanbeige Team, publicada por el usuario fcmeyer en HuggingFace. Se trata de una versión optimizada para MLX, el framework de Apple Silicon, con cuantización afín de 4 bits y tamaño de grupo 128, lo que reduce el peso del modelo hasta unos 17,6 GB en disco frente a los aproximadamente 66 GB que ocuparía en BF16. El modelo base es un transformer denso de 33.118.977.024 parámetros, con licencia Apache-2.0 y capacidades declaradas de generación de texto, conversación y razonamiento con modo thinking.
+Nanbeige4.3-33B-MLX-4bit-g128 es una conversión cuantizada del modelo Nanbeige4.3-33B, desarrollado por el Nanbeige Team, publicada por el usuario fcmeyer en Hugging Face. Se trata de una versión optimizada para MLX, el framework de Apple Silicon, con cuantización afín de 4 bits y tamaño de grupo 128, lo que reduce el peso del modelo hasta unos 17,6 GB en disco frente a los aproximadamente 66 GB que ocuparía en BF16. El modelo base es un transformer denso de 33.118.977.024 parámetros, con licencia Apache-2.0 y capacidades declaradas de generación de texto, conversación y razonamiento con modo thinking.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de 33B en hardware de Apple con memoria unificada, algo impracticable con los pesos originales en precisión completa. La conversión conserva la plantilla de chat del modelo original, incluye soporte para tool calling en formato XML (recomendado por el autor original) y JSON, y mantiene la configuración de contexto de 524.288 tokens del modelo fuente, aunque el propio autor advierte que no se ha validado el contexto completo de 512K.
 
@@ -102,7 +102,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-4bit-g128
+- Repositorio Hugging Face: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-4bit-g128
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Revisión del modelo fuente citada: `c1093c501cc6460427c0ac634db7223d0450c0ee`
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

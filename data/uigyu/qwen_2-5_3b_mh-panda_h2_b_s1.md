@@ -1,7 +1,7 @@
 # Uigyu/qwen_2.5_3b_mh-panda_h2_b_s1
 
 ## Resumen
-Este modelo es un fine-tune del Qwen2.5-3B-Instruct, desarrollado por el usuario Uigyu mediante la librería Unsloth y el entrenador TRL de HuggingFace. Está diseñado para generación de texto en inglés y se distribuye bajo licencia Apache-2.0. El repositorio no incluye una descripción detallada de la tarea específica para la que fue ajustado, pero al partir de la base instruct de Qwen2.5, hereda las capacidades generales de razonamiento, diálogo y generación de código de dicha arquitectura.
+Este modelo es un fine-tune del Qwen2.5-3B-Instruct, desarrollado por el usuario Uigyu mediante la librería Unsloth y el entrenador TRL de Hugging Face. Está diseñado para generación de texto en inglés y se distribuye bajo licencia Apache-2.0. El repositorio no incluye una descripción detallada de la tarea específica para la que fue ajustado, pero al partir de la base instruct de Qwen2.5, hereda las capacidades generales de razonamiento, diálogo y generación de código de dicha arquitectura.
 
 La relevancia de este modelo radica en su tamaño compacto (3B parámetros), lo que permite su ejecución en hardware de consumo, y en su licencia permisiva, lo que facilita su integración en proyectos comerciales. Al ser un fine-tune reciente (agosto de 2026) y sin descargas registradas, se trata de un experimento de ajuste fino más que de un modelo de referencia consolidado.
 
@@ -20,7 +20,7 @@ La relevancia de este modelo radica en su tamaño compacto (3B parámetros), lo 
 ## Arquitectura y entrenamiento
 El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención causal, que incluye mecanismos de atención con RoPE (rotary position embeddings) y SwiGLU en las capas feed-forward. El modelo base Qwen2.5-3B-Instruct tiene 3B parámetros y una ventana de contexto de 32 768 tokens.
 
-El fine-tune fue realizado con Unsloth, una librería que optimiza el entrenamiento mediante técnicas de kernel fusionado y cuantización de baja precisión, y con la librería TRL de HuggingFace, que proporciona utilidades para fine-tuning supervisado (SFT) y optimización con RLHF/DPO. No se especifica el dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de alineación adicionales más allá de las ya presentes en el modelo base.
+El fine-tune fue realizado con Unsloth, una librería que optimiza el entrenamiento mediante técnicas de kernel fusionado y cuantización de baja precisión, y con la librería TRL de Hugging Face, que proporciona utilidades para fine-tuning supervisado (SFT) y optimización con RLHF/DPO. No se especifica el dataset de entrenamiento, el número de tokens ni si se aplicaron técnicas de alineación adicionales más allá de las ya presentes en el modelo base.
 
 ## Capacidades
 - Generación de texto en inglés, con razonamiento y diálogo multiturno (heredado del modelo base instruct).
@@ -67,7 +67,7 @@ La comparativa es orientativa, ya que no se dispone de datos de rendimiento del 
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mh-panda_h2_b_s1
+- Repositorio Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mh-panda_h2_b_s1
 - Modelo base (unsloth/Qwen2.5-3B-Instruct): https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL: https://github.com/huggingface/trl

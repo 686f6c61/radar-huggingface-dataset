@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de modelos comparables directos en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OxBee/Qwen3.5-4B-GLB-3D-Coder
+- Hugging Face: https://huggingface.co/OxBee/Qwen3.5-4B-GLB-3D-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

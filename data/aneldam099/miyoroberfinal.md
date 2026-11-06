@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIYOROBERFINAL es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ANELDAM099 en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Qwen2, con 1.543.714.304 parametros totales y un tamano de repositorio de 3,1 GB en formato safetensors. El modelo parte de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`) y ha sido entrenado con la libreria Unsloth y TRL de HuggingFace.
+MIYOROBERFINAL es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ANELDAM099 en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Qwen2, con 1.543.714.304 parametros totales y un tamano de repositorio de 3,1 GB en formato safetensors. El modelo parte de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`) y ha sido entrenado con la libreria Unsloth y TRL de Hugging Face.
 
 La relevancia de este modelo es limitada: se trata de un experimento de ajuste fino comunitario sin documentacion tecnica sobre el dataset de entrenamiento, hiperparametros o evaluacion. La model card es generica y no aporta informacion sobre el proceso de entrenamiento mas alla de mencionar que se uso Unsloth para acelerar el entrenamiento. No se han publicado resultados de benchmarks ni detalles sobre el corpus utilizado.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto en entornos con recursos limitados: su tamano permite ejecucion en GPU de consumo o incluso CPU con cuantizacion, adecuado para demos y pruebas de concepto.
 - Base para nuevos fine-tunings: al estar bajo licencia Apache 2.0, puede servir como punto de partida para ajustes especificos de dominio en ingles.
 - Evaluacion comparativa de tecnicas de cuantizacion: util para medir el impacto de partir de un modelo base en bnb-4bit frente a un fine-tuning en precision completa.
-- Educacion y formacion: ejemplo practico de como publicar un modelo ajustado en HuggingFace con la plantilla de Unsloth.
+- Educacion y formacion: ejemplo practico de como publicar un modelo ajustado en Hugging Face con la plantilla de Unsloth.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MIYOROBERFINAL (este) | 1,54B | no disponible | Apache 2.0 | HuggingFace, 82 descargas |
-| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens (ampliable) | Apache 2.0 | HuggingFace |
+| MIYOROBERFINAL (este) | 1,54B | no disponible | Apache 2.0 | Hugging Face, 82 descargas |
+| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens (ampliable) | Apache 2.0 | Hugging Face |
 
 El modelo base Qwen2.5-1.5B-Instruct es la referencia directa y cuenta con documentacion completa, benchmarks publicados y comunidad activa. Llama 3.2-1B-Instruct y SmolLM2-1.7B-Instruct son alternativas de tamano comparable con soporte oficial y evaluaciones publicadas. MIYOROBERFINAL no aporta datos que permitan afirmar una mejora sobre ninguno de ellos.
 
@@ -83,7 +83,7 @@ El modelo base Qwen2.5-1.5B-Instruct es la referencia directa y cuenta con docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANELDAM099/MIYOROBERFINAL
+- Modelo en Hugging Face: https://huggingface.co/ANELDAM099/MIYOROBERFINAL
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

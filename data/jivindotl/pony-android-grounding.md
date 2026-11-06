@@ -71,10 +71,10 @@ Latencia indicada por el autor: aproximadamente 0,5 s de media por petición en 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pony-AndroidGrounding | 2B | no disponible | Grounding de UI Android | Apache-2.0 | HuggingFace |
-| Qwen3-VL-2B-Instruct (base) | 2B | no disponible | VLM generalista | Apache-2.0 | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | 3B | no disponible | VLM generalista con grounding | Apache-2.0 | HuggingFace |
-| UI-TARS (versiones pequeñas) | no disponible | no disponible | Agente de UI | no disponible | HuggingFace |
+| Pony-AndroidGrounding | 2B | no disponible | Grounding de UI Android | Apache-2.0 | Hugging Face |
+| Qwen3-VL-2B-Instruct (base) | 2B | no disponible | VLM generalista | Apache-2.0 | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | 3B | no disponible | VLM generalista con grounding | Apache-2.0 | Hugging Face |
+| UI-TARS (versiones pequeñas) | no disponible | no disponible | Agente de UI | no disponible | Hugging Face |
 
 La comparación directa con alternativas especializadas en grounding de UI no está disponible en la información proporcionada. Frente a su base Qwen3-VL-2B-Instruct, la diferencia principal es la especialización en el dominio Android y el protocolo de rechazo, a costa de perder generalidad fuera de ese dominio.
 
@@ -91,7 +91,7 @@ La comparación directa con alternativas especializadas en grounding de UI no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JivinDotL/pony-android-grounding
+- Modelo en Hugging Face: https://huggingface.co/JivinDotL/pony-android-grounding
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Ficheros de particiones de evaluación: `splits_v9.json` y `dense_exam.json`, publicados en el repositorio del modelo
 - Repositorio de dataset con anotaciones (L1): no disponible en la información proporcionada

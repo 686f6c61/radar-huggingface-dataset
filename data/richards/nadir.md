@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nadir es un adaptador LoRA de tipo text-to-image publicado por el usuario RICHARDS en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes de la familia Krea. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador y no con un modelo de difusion completo.
+Nadir es un adaptador LoRA de tipo text-to-image publicado por el usuario RICHARDS en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes de la familia Krea. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador y no con un modelo de difusion completo.
 
 El modelo se distribuye con la libreria diffusers y sigue la plantilla oficial de LoRA de difusion (`template:diffusion-lora`). Se activa mediante una unica palabra clave o instance prompt, `PeniS@12`, que el autor define como disparador obligatorio para la generacion. El pipeline declarado es `text-to-image` y el modelo base es de tipo turbo, lo que en la practica implica inferencia en pocos pasos de muestreo.
 
@@ -71,9 +71,9 @@ No se dispone de datos verificables de krea/Krea-2-Turbo ni de otros adaptadores
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RICHARDS/nadir | LoRA sobre Krea-2-Turbo | No disponible (~0,1 GB de repo) | No aplica | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| Adaptador LoRA generico para difusion | LoRA | No disponible | No aplica | Depende del base | Variable | HuggingFace |
-| krea/Krea-2-Turbo | Modelo base text-to-image turbo | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| RICHARDS/nadir | LoRA sobre Krea-2-Turbo | No disponible (~0,1 GB de repo) | No aplica | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| Adaptador LoRA generico para difusion | LoRA | No disponible | No aplica | Depende del base | Variable | Hugging Face |
+| krea/Krea-2-Turbo | Modelo base text-to-image turbo | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de datos verificables de krea/Krea-2-Turbo ni de otros adaptadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RICHARDS/nadir
+- Modelo en Hugging Face: https://huggingface.co/RICHARDS/nadir
 - Archivos y versiones: https://huggingface.co/RICHARDS/nadir/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio o demo del autor: no disponible

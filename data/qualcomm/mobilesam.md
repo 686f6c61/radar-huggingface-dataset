@@ -4,7 +4,7 @@
 
 MobileSam es una versión ligera del modelo Segment Anything (SAM) de Meta, optimizada por Qualcomm para su despliegue en dispositivos móviles y embebidos. Se trata de un transformer encoder-decoder que, a partir de un prompt (punto, caja o máscara), genera la segmentación semántica de un objeto en una imagen sin necesidad de entrenamiento adicional. El modelo está basado en el checkpoint `vit_t` (ViT-Tiny) y ha sido pre-exportado a formatos ONNX, QNN_DLC y TFLITE para ejecutarse directamente en la NPU de los chipsets Snapdragon y Dragonwing.
 
-La relevancia de MobileSam radica en su capacidad para llevar la segmentación por prompts a entornos con recursos limitados, donde el SAM original (con backbones ViT-B o ViT-H) resulta demasiado pesado. Con un total de aproximadamente 13,1 millones de parámetros (6,95M en el encoder y 6,16M en el decoder), el modelo alcanza latencias de entre 2,5 y 15 ms en hardware Qualcomm, lo que lo hace viable para aplicaciones en tiempo real. El repositorio de HuggingFace incluye los pesos pre-exportados y las herramientas para reexportarlos con configuraciones personalizadas mediante la librería Qualcomm AI Hub Models.
+La relevancia de MobileSam radica en su capacidad para llevar la segmentación por prompts a entornos con recursos limitados, donde el SAM original (con backbones ViT-B o ViT-H) resulta demasiado pesado. Con un total de aproximadamente 13,1 millones de parámetros (6,95M en el encoder y 6,16M en el decoder), el modelo alcanza latencias de entre 2,5 y 15 ms en hardware Qualcomm, lo que lo hace viable para aplicaciones en tiempo real. El repositorio de Hugging Face incluye los pesos pre-exportados y las herramientas para reexportarlos con configuraciones personalizadas mediante la librería Qualcomm AI Hub Models.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ Estos datos corresponden unicamente al decoder; el encoder no aparece en la tabl
 
 | Modelo | Parametros | Contexto | Precision (mIoU en COCO) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileSam (Qualcomm) | 13,11 M | 720p | no disponible | Apache 2.0 | HuggingFace, Qualcomm AI Hub |
-| SAM ViT-B | 91 M | 1024x1024 | ~46 (aprox.) | Apache 2.0 | GitHub, HuggingFace |
-| SAM ViT-H | 636 M | 1024x1024 | ~51 (aprox.) | Apache 2.0 | GitHub, HuggingFace |
-| FastSAM | 68 M | 1024x1024 | ~37 (aprox.) | Apache 2.0 | GitHub, HuggingFace |
+| MobileSam (Qualcomm) | 13,11 M | 720p | no disponible | Apache 2.0 | Hugging Face, Qualcomm AI Hub |
+| SAM ViT-B | 91 M | 1024x1024 | ~46 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
+| SAM ViT-H | 636 M | 1024x1024 | ~51 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
+| FastSAM | 68 M | 1024x1024 | ~37 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
 
 Los datos de precision de SAM y FastSAM son aproximados y provienen de los papers originales; no se han verificado en esta ficha. MobileSam sacrifica precision por velocidad y eficiencia, siendo adecuado para despliegue en borde.
 
@@ -94,7 +94,7 @@ Los datos de precision de SAM y FastSAM son aproximados y provienen de los paper
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/MobileSam
+- Hugging Face: https://huggingface.co/qualcomm/MobileSam
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/mobilesam
 - Qualcomm AI Hub (automocion): https://aihub.qualcomm.com/automotive/models/mobilesam
 - Repositorio GitHub (Qualcomm AI Hub Models): https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/mobilesam

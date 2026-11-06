@@ -109,7 +109,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/Mage-VL-Cowork-cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/Mage-VL-Cowork-cmf
 - Modelo base: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
 - Binarios precompilados de cortiq: https://github.com/infosave2007/cmf/releases

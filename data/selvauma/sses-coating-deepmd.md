@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo | Tipo | Cobertura quimica | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sses-coating-deepmd (ZnCl2, MgF2) | DeepMD-kit, potenciales especializados | Sistemas Li/Zn/Cl y Li/Mg/F de interfaz con recubrimiento | no disponible | no aplicable | CC-BY-4.0 (pendiente de confirmar segun la propia model card) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| sses-coating-deepmd (ZnCl2, MgF2) | DeepMD-kit, potenciales especializados | Sistemas Li/Zn/Cl y Li/Mg/F de interfaz con recubrimiento | no disponible | no aplicable | CC-BY-4.0 (pendiente de confirmar segun la propia model card) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | MACE-MP-0 | MLIP universal | Tabla periodica amplia | no disponible en la informacion proporcionada | no aplicable | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | CHGNet | MLIP universal | Tabla periodica amplia | no disponible en la informacion proporcionada | no aplicable | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | M3GNet | MLIP universal | Tabla periodica amplia | no disponible en la informacion proporcionada | no aplicable | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -95,7 +95,7 @@ La diferencia de categoria es la relevante: los modelos universales priorizan co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Selvauma/sses-coating-deepmd
+- Repositorio en Hugging Face: https://huggingface.co/Selvauma/sses-coating-deepmd
 - Repositorio del pipeline HPCA: https://github.com/selvachandrasekaranselvaraj/hpca
 - DeepMD-kit (framework de entrenamiento e inferencia): no se incluye enlace en la informacion proporcionada
 - Paper o publicacion asociada: no disponible

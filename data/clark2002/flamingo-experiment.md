@@ -23,7 +23,7 @@ La relevancia de esta publicación es limitada: no se reclama ningún resultado 
 
 La arquitectura declarada en `config.json` corresponde a una implementación de Flamingo con atención sparse, fusión por concatenación con MLP, activación gelu tanh y normalización rmsnorm. No se especifica el número de capas, dimensiones ocultas ni cabezas de atención, por lo que estos detalles no están disponibles. El checkpoint `model.safetensors` es un estado de inicialización válido para pruebas de humo, no un modelo entrenado.
 
-El archivo `training_args.json` define una receta por defecto que usa rmsprop con un schedule polinomial, pero el autor aclara que son valores de partida en el script, no evidencia de un entrenamiento completado. No se proporciona información sobre el dataset de entrenamiento, número de tokens, ni técnicas como RLHF o DPO. La implementación es personal y requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace.
+El archivo `training_args.json` define una receta por defecto que usa rmsprop con un schedule polinomial, pero el autor aclara que son valores de partida en el script, no evidencia de un entrenamiento completado. No se proporciona información sobre el dataset de entrenamiento, número de tokens, ni técnicas como RLHF o DPO. La implementación es personal y requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No se dispone de una comparativa directa con otros modelos, ya que este checkpoint no ha sido entrenado y no tiene métricas publicadas. El Flamingo original de DeepMind (arXiv 2204.14198) es un VLM de 80B parámetros con capacidades de pocas muestras en visión y lenguaje, pero no es comparable en tamaño ni en estado de desarrollo. Otras implementaciones de Flamingo en HuggingFace podrían existir, pero no se han encontrado en la búsqueda. Por tanto, la comparativa no está disponible.
+No se dispone de una comparativa directa con otros modelos, ya que este checkpoint no ha sido entrenado y no tiene métricas publicadas. El Flamingo original de DeepMind (arXiv 2204.14198) es un VLM de 80B parámetros con capacidades de pocas muestras en visión y lenguaje, pero no es comparable en tamaño ni en estado de desarrollo. Otras implementaciones de Flamingo en Hugging Face podrían existir, pero no se han encontrado en la búsqueda. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de una comparativa directa con otros modelos, ya que este checkpoi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/clark2002/flamingo-experiment
+- Repositorio Hugging Face: https://huggingface.co/clark2002/flamingo-experiment
 - Paper original de Flamingo (DeepMind): https://arxiv.org/abs/2204.14198
 - PDF del paper: https://arxiv.org/pdf/2204.14198
 - Versión en NeurIPS: https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf

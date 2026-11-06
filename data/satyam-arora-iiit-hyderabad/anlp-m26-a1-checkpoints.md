@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints
 - Ejecución de W&B: https://wandb.ai/satyam-arora-iiit-hyderabad/anlp-m26-assignment1/runs/hjdz8w7q
 - Proyecto W&B: https://wandb.ai/satyam-arora-iiit-hyderabad/anlp-m26-assignment1

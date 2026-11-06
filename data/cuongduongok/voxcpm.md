@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de texto a voz (TTS) de 2.290.004.544 parámetros, desarrollado por OpenBMB (MiniCPM) y distribuido en HuggingFace bajo el identificador cuongduongok/VoxCPM. Se presenta como un sistema "tokenizer-free" de tipo diffusion autoregressive, capaz de generar audio a 48 kHz a partir de texto en 30 idiomas sin necesidad de etiquetar el idioma de entrada. El modelo se apoya en un backbone derivado de MiniCPM-4 y en un VAE de audio propio, AudioVAE V2, que acepta referencias de 16 kHz y produce salida de 48 kHz mediante superresolución integrada.
+VoxCPM2 es un modelo de texto a voz (TTS) de 2.290.004.544 parámetros, desarrollado por OpenBMB (MiniCPM) y distribuido en Hugging Face bajo el identificador cuongduongok/VoxCPM. Se presenta como un sistema "tokenizer-free" de tipo diffusion autoregressive, capaz de generar audio a 48 kHz a partir de texto en 30 idiomas sin necesidad de etiquetar el idioma de entrada. El modelo se apoya en un backbone derivado de MiniCPM-4 y en un VAE de audio propio, AudioVAE V2, que acepta referencias de 16 kHz y produce salida de 48 kHz mediante superresolución integrada.
 
 Su relevancia actual radica en tres ejes. Primero, combina clonación de voz (a partir de un clip corto) con diseño de voz a partir de una descripción en lenguaje natural, algo que en la mayoría de alternativas open source se cubre con modelos separados. Segundo, ofrece salida de 48 kHz sin postprocesado externo y streaming en tiempo real con un RTF de aproximadamente 0,30 en una RTX 4090 (aproximadamente 0,13 con Nano-VLLM), lo que lo sitúa por debajo del umbral de tiempo real. Tercero, se publica bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones de atribución más allá de las habituales.
 
-El modelo se entrenó sobre más de 2 millones de horas de habla multilingüe, tiene una longitud máxima de secuencia de 8192 tokens y una tasa de tokens de lenguaje de 6,25 Hz. El repositorio ocupa 5,0 GB y los pesos se distribuyen en safetensors con precisión bfloat16. Conviene señalar que la ficha de HuggingFace analizada es un espejo publicado por un usuario tercero (cuongduongok) y que la model card hace referencia al repositorio oficial openbmb/VoxCPM2.
+El modelo se entrenó sobre más de 2 millones de horas de habla multilingüe, tiene una longitud máxima de secuencia de 8192 tokens y una tasa de tokens de lenguaje de 6,25 Hz. El repositorio ocupa 5,0 GB y los pesos se distribuyen en safetensors con precisión bfloat16. Conviene señalar que la ficha de Hugging Face analizada es un espejo publicado por un usuario tercero (cuongduongok) y que la model card hace referencia al repositorio oficial openbmb/VoxCPM2.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ Las cifras de los modelos comparados proceden de información pública general y
 ## Limitaciones y advertencias
 
 - El repositorio analizado es un espejo publicado por el usuario cuongduongok, con 0 descargas y 0 me gusta en el momento de la consulta. El repositorio de referencia citado en la propia model card es openbmb/VoxCPM2. Conviene verificar la procedencia y la integridad de los pesos antes de usarlos en producción.
-- Existe una discrepancia de nomenclatura: el identificador de HuggingFace es cuongduongok/VoxCPM, mientras que la model card se titula VoxCPM2 y el código de ejemplo carga "openbmb/VoxCPM2".
+- Existe una discrepancia de nomenclatura: el identificador de Hugging Face es cuongduongok/VoxCPM, mientras que la model card se titula VoxCPM2 y el código de ejemplo carga "openbmb/VoxCPM2".
 - No se publican cifras de benchmarks en la información disponible pese a que se citan cuatro suites de evaluación. La afirmación de estado del arte no es verificable con los datos aportados.
 - Riesgo de uso indebido: la clonación de voz de alta fidelidad puede emplearse para suplantación de identidad o deepfakes. Es responsabilidad del desplegador obtener consentimiento explícito de la persona cuya voz se clona y cumplir la normativa aplicable (por ejemplo, el Reglamento europeo de IA en lo relativo a contenidos sintéticos).
 - No se documentan sesgos específicos del modelo. Sí cabe esperar un sesgo de representación derivado de la composición del corpus de 2 millones de horas, no detallada.
@@ -98,12 +98,12 @@ Las cifras de los modelos comparados proceden de información pública general y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuongduongok/VoxCPM
+- Repositorio en Hugging Face: https://huggingface.co/cuongduongok/VoxCPM
 - Repositorio oficial citado en la model card: https://huggingface.co/openbmb/VoxCPM2
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentación: https://voxcpm.readthedocs.io/en/latest/
 - Guía de inicio rápido: https://voxcpm.readthedocs.io/en/latest/quickstart.html
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Página de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Repositorio de aceleración Nano-VLLM: https://github.com/a710128/nanovllm-voxcpm
 - Paper (arXiv): https://arxiv.org/abs/2509.24650

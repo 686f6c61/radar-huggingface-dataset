@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. Dado
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-heretic-ara (original) | 27B | FP16/BF16 | no disponible | Apache 2.0 | HuggingFace |
-| Este modelo (2bpw) | 27B | 2 bits | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-27B (referencia) | 27B | FP16 | 128K | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-heretic-ara (original) | 27B | FP16/BF16 | no disponible | Apache 2.0 | Hugging Face |
+| Este modelo (2bpw) | 27B | 2 bits | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-27B (referencia) | 27B | FP16 | 128K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparación con Qwen2.5-27B es orientativa, ya que el modelo original podría ser un fine-tuning de esta base, pero no está confirmado.
 

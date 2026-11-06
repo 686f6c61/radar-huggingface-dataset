@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4` es un checkpoint publicado en HuggingFace por el usuario sartajbhuvaji. Se trata de un modelo de generacion de texto de tipo transformer con mezcla de expertos (MoE), segun la etiqueta `qwen3_moe` asociada al repositorio, con 8.552.822.784 parametros totales confirmados a partir de los pesos en formato safetensors y un tamano de repositorio de 17,1 GB. El nombre del checkpoint sugiere un experimento de destilacion con configuracion de expertos y comparacion contra una linea base, aunque el autor no documenta el procedimiento.
+El modelo `bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4` es un checkpoint publicado en Hugging Face por el usuario sartajbhuvaji. Se trata de un modelo de generacion de texto de tipo transformer con mezcla de expertos (MoE), segun la etiqueta `qwen3_moe` asociada al repositorio, con 8.552.822.784 parametros totales confirmados a partir de los pesos en formato safetensors y un tamano de repositorio de 17,1 GB. El nombre del checkpoint sugiere un experimento de destilacion con configuracion de expertos y comparacion contra una linea base, aunque el autor no documenta el procedimiento.
 
-La relevancia de esta ficha es limitada: la model card publicada es la plantilla generica de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, licencia, idiomas soportados, longitud de contexto, hiperparametros ni resultados de evaluacion. Con 10 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigacion sin adopcion comunitaria ni validacion externa.
+La relevancia de esta ficha es limitada: la model card publicada es la plantilla generica de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, licencia, idiomas soportados, longitud de contexto, hiperparametros ni resultados de evaluacion. Con 10 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigacion sin adopcion comunitaria ni validacion externa.
 
 Por tanto, esta ficha documenta de forma exhaustiva lo que si se puede verificar desde los metadatos del repositorio y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion deberia ir precedido de una evaluacion propia del checkpoint.
 
@@ -37,7 +37,7 @@ El nombre del checkpoint (`bonsai-distilled`, `depth0`, `experts97`, `vs-baselin
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el checkpoint esta orientado a dialogos multi-turno.
 - Generacion de texto general: el pipeline declarado es `text-generation`.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con la API de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, audio: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -86,7 +86,7 @@ No hay informacion suficiente para establecer una comparativa rigurosa, ya que s
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el autor publico la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay documentacion sobre sesgos, riesgos, uso previsto ni uso fuera de alcance.
+- Model card vacia: el autor publico la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay documentacion sobre sesgos, riesgos, uso previsto ni uso fuera de alcance.
 - Licencia desconocida: al no especificarse licencia, no puede asumirse permiso para uso comercial. Debe contactarse con el autor antes de cualquier despliegue productivo.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks ni evaluaciones publicadas, se desconoce la tasa de fabricacion de hechos.
 - Sesgos: no documentados ni medidos.
@@ -100,7 +100,7 @@ No hay informacion suficiente para establecer una comparativa rigurosa, ya que s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4
+- Repositorio en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4
 - Paper referenciado en las etiquetas del repositorio (arxiv:1910.09700): https://arxiv.org/abs/1910.09700 (corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental, citado en la plantilla de model card; no es el paper de este modelo)
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact
 - Paper, blog, repositorio o demo especificos del modelo: no disponible

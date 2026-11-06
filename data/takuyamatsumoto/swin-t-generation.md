@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-generation es un repositorio de HuggingFace publicado por el usuario TakuyaMatsumoto que contiene una implementacion de la arquitectura Swin Transformer (Swin T) orientada a tareas de generacion, en configuracion "small". El repositorio se presenta explicitamente como un punto de partida experimental: el autor aclara en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
+Swin-t-generation es un repositorio de Hugging Face publicado por el usuario TakuyaMatsumoto que contiene una implementacion de la arquitectura Swin Transformer (Swin T) orientada a tareas de generacion, en configuracion "small". El repositorio se presenta explicitamente como un punto de partida experimental: el autor aclara en la model card que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
 
 Por tanto, no se trata de un modelo listo para produccion ni de un release con pesos entrenados. Su relevancia es como artefacto de codigo reproducible para desarrolladores e investigadores que quieran inspeccionar una implementacion concreta de Swin T con decodificacion/generacion, atencion dilatada, fusion con compuertas (gated fusion) y normalizacion InstanceNorm. La model card incide en la transparencia del codigo y en la reproducibilidad de las pruebas, evitando deliberadamente cualquier afirmacion de rendimiento.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TakuyaMatsumoto/swin-t-generation | 33.088 (inicializacion) | no disponible | sin benchmarks publicados | MIT | HuggingFace, 16 descargas |
+| TakuyaMatsumoto/swin-t-generation | 33.088 (inicializacion) | no disponible | sin benchmarks publicados | MIT | Hugging Face, 16 descargas |
 | Swin Transformer (implementacion original, Microsoft) | ~28 M (Swin-T) | no aplica (vision) | resultados publicados en papers de vision | MIT (referencia habitual) | codigo y pesos publicos |
-| Otras variantes de Swin T en HuggingFace | variable | no disponible | variable | variable | HuggingFace |
+| Otras variantes de Swin T en Hugging Face | variable | no disponible | variable | variable | Hugging Face |
 
 La comparacion directa no es significativa porque el repositorio analizado no contiene un modelo entrenado y su numero de parametros difiere en ordenes de magnitud del Swin-T estandar. Se recomienda tratar la fila de Swin Transformer original solo como referencia de categoria, no como equivalente funcional.
 
@@ -84,5 +84,5 @@ La comparacion directa no es significativa porque el repositorio analizado no co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TakuyaMatsumoto/swin-t-generation
+- Hugging Face: https://huggingface.co/TakuyaMatsumoto/swin-t-generation
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion disponible.

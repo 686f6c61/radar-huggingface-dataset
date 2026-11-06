@@ -104,7 +104,7 @@ La comparación de velocidad entre estos sistemas no es homogénea: las cifras d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra
+- Repositorio Hugging Face: https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra
 - Fichero sellado para el motor Rust: https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed
 - Implementación Rust y lector `llvq-hf`: https://github.com/pjmalandrino/llvq
 - Artículo del método citado en la model card: https://arxiv.org/abs/2603.11021

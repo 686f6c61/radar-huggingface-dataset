@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch` es un adaptador LoRA (PEFT) sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario `strongpear` en HuggingFace. El nombre del repositorio sugiere que se trata de un ajuste fino con una técnica denominada RAFT (posiblemente relacionada con retrieval-augmented fine-tuning), entrenado sobre cinco documentos, con cadenas de pensamiento (Chain of Thought) y orientado a instrucciones, sobre contenido de tipo wiki. El adaptador utiliza un rango LoRA de 64 y se publica como pesos parciales (no incluye los pesos completos del modelo base), con un tamaño de repositorio de 0,7 GB.
+El modelo `strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch` es un adaptador LoRA (PEFT) sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario `strongpear` en Hugging Face. El nombre del repositorio sugiere que se trata de un ajuste fino con una técnica denominada RAFT (posiblemente relacionada con retrieval-augmented fine-tuning), entrenado sobre cinco documentos, con cadenas de pensamiento (Chain of Thought) y orientado a instrucciones, sobre contenido de tipo wiki. El adaptador utiliza un rango LoRA de 64 y se publica como pesos parciales (no incluye los pesos completos del modelo base), con un tamaño de repositorio de 0,7 GB.
 
 Al estar basado en Llama 3.1 8B, hereda la arquitectura transformer decoder-only y la ventana de contexto de 128 000 tokens del modelo original. Sin embargo, la información disponible en la model card es extremadamente limitada: no se detallan datos de entrenamiento, métricas, licencia ni idiomas soportados. Esto hace que el modelo deba evaluarse con cautela y que su rendimiento real no pueda determinarse a partir de la documentación publicada.
 
@@ -23,7 +23,7 @@ Al estar basado en Llama 3.1 8B, hereda la arquitectura transformer decoder-only
 
 El modelo se presenta como un adaptador LoRA (PEFT 0.20.0) sobre `meta-llama/Llama-3.1-8B`. El nombre del repositorio indica un entrenamiento con RAFT, un acronimo que en el contexto de fine-tuning suele referirse a "Retrieval-Augmented Fine-Tuning", una tecnica que combina recuperacion de documentos con ajuste fino para mejorar la respuesta a preguntas. Tambien se mencionan "5DOCS" (posiblemente cinco documentos de contexto), "CoT" (chain of thought) y "A-WIKI" (probablemente un dataset de tipo Wikipedia). El parametro "r64" indica un rango LoRA de 64, y "last-full-epoch" sugiere que se guardo el checkpoint tras la ultima epoca completa de entrenamiento.
 
-No se proporciona informacion sobre el dataset concreto, el numero de tokens de entrenamiento, la composicion de los datos, si se utilizo RLHF o DPO, ni los hiperparametros exactos. La model card del autor no incluye secciones con contenido mas alla de los marcadores de "More Information Needed". Por tanto, la unica informacion tecnica fiable es que se trata de un adaptador LoRA para el modelo base de Meta, y que el codigo de entrenamiento probablemente se basa en la biblioteca Transformers de HuggingFace.
+No se proporciona informacion sobre el dataset concreto, el numero de tokens de entrenamiento, la composicion de los datos, si se utilizo RLHF o DPO, ni los hiperparametros exactos. La model card del autor no incluye secciones con contenido mas alla de los marcadores de "More Information Needed". Por tanto, la unica informacion tecnica fiable es que se trata de un adaptador LoRA para el modelo base de Meta, y que el codigo de entrenamiento probablemente se basa en la biblioteca Transformers de Hugging Face.
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch` | 8B (adaptador LoRA) | 128k (teorico) | No disponible | safetensors (adaptador) | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | safetensors | HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32k | Apache 2.0 | safetensors | HuggingFace |
+| `strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch` | 8B (adaptador LoRA) | 128k (teorico) | No disponible | safetensors (adaptador) | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | safetensors | Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7B | 32k | Apache 2.0 | safetensors | Hugging Face |
 
 La comparativa se limita a aspectos basicos, ya que no existen datos de benchmarks para el adaptador de `strongpear`. Los otros dos modelos son alternativas conocidas en la categoria de 7-8B parametros, pero sus rendimientos especificos no pueden compararse sin metricas publicadas para el adaptador evaluado.
 
@@ -78,7 +78,7 @@ La comparativa se limita a aspectos basicos, ya que no existen datos de benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
+- Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Articulo de referencia para estimacion de impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (paper, repositorio o demo) en la informacion proporcionada.

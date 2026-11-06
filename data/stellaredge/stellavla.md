@@ -123,7 +123,7 @@ StellaVLA supera a los baselines en ambos benchmarks con un backbone m√°s peque√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StellarEdge/StellaVLA
+- Modelo en Hugging Face: https://huggingface.co/StellarEdge/StellaVLA
 - Paper (arXiv): https://arxiv.org/abs/2608.11671
 - Version HTML del paper: https://arxiv.org/html/2608.11671v1
 - Blog oficial: https://www.stelledge.com/blog/stellavla

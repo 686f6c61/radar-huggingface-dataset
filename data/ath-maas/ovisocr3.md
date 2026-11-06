@@ -135,7 +135,7 @@ Notas: Xiaomi-OCR-0 supera ligeramente a OvisOCR3 en OmniDocBench1.6 (96.83 fren
 ## Limitaciones y advertencias
 
 - Los resultados de benchmarks proceden de la evaluación de los propios autores; no hay verificación independiente disponible.
-- Modelo muy reciente (creado el 21 de octubre de 2026) y con solo 7 descargas registradas en HuggingFace, por lo que la validación comunitaria es prácticamente inexistente.
+- Modelo muy reciente (creado el 21 de octubre de 2026) y con solo 7 descargas registradas en Hugging Face, por lo que la validación comunitaria es prácticamente inexistente.
 - La ventana de contexto no está publicada; el ejemplo documentado limita la entrada a 2 imágenes por prompt (parámetro de vLLM, posiblemente ampliable, pero sin documentación al respecto).
 - Sin lista oficial de idiomas soportados: los benchmarks cubren inglés y chino, y el rendimiento en español no está documentado, lo que exige evaluación propia antes de uso en castellano.
 - Dependencia de una versión muy concreta de vLLM (0.22.1) y del backend Triton para el prefill GDN, lo que puede complicar la integración en entornos con otras versiones.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 entrenado sobre el modelo base `Qwen/Qwen3.5-4B`. Lo publica el usuario `goku80903` en HuggingFace y forma parte del ecosistema del framework de entrenamiento `scottyrl`, desarrollado en el contexto de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon. Su propósito concreto es el entrenamiento de agentes para tareas de manipulación de texto estructurado, evaluadas sobre los conjuntos TextCraft-Synth (splits medium y hard).
+`scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 entrenado sobre el modelo base `Qwen/Qwen3.5-4B`. Lo publica el usuario `goku80903` en Hugging Face y forma parte del ecosistema del framework de entrenamiento `scottyrl`, desarrollado en el contexto de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon. Su propósito concreto es el entrenamiento de agentes para tareas de manipulación de texto estructurado, evaluadas sobre los conjuntos TextCraft-Synth (splits medium y hard).
 
 El adaptador se exportó desde la plataforma Tinker (referencia `tinker://model_6e01c25e/v50`) y se entrenó con GRPO (Group Relative Policy Optimization), según indica el sufijo del nombre de la ejecución. Se trata, por tanto, de un artefacto de investigación docente, no de un modelo de propósito general: el repositorio pesa 0,2 GB y contiene únicamente los pesos del adaptador en formato safetensors, no el modelo base.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre base 4B | no disponible | Adaptador PEFT | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible en esta ficha | Modelo completo | la del modelo base | HuggingFace |
-| Adaptadores LoRA genéricos sobre modelos 4B | variable | heredado del base | Adaptador PEFT | variable | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre base 4B | no disponible | Adaptador PEFT | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible en esta ficha | Modelo completo | la del modelo base | Hugging Face |
+| Adaptadores LoRA genéricos sobre modelos 4B | variable | heredado del base | Adaptador PEFT | variable | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría; la comparación se limita a aspectos estructurales.
 
@@ -83,5 +83,5 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goku80903/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/goku80903/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

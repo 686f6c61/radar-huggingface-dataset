@@ -73,7 +73,7 @@ La información proporcionada no identifica por nombre ni especifica los modelos
 
 | Modelo | Tipo / modalidad | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GenBio-PathFM | Codificador de imagen, histopatología H&E | 1,13 B | 224 × 224 px, 196 tokens de parche | GenBio AI Community License | Pesos abiertos en HuggingFace |
+| GenBio-PathFM | Codificador de imagen, histopatología H&E | 1,13 B | 224 × 224 px, 196 tokens de parche | GenBio AI Community License | Pesos abiertos en Hugging Face |
 | AIDO.Tissue FM | Fundacional de transcriptómica espacial (mismo autor) | No disponible | No disponible | No disponible | Pesos abiertos (según el blog del autor) |
 | Modelos líderes de patología citados en el artículo | Fundacionales de histopatología | No disponible | No disponible | No disponible | No disponibles en la información consultada |
 
@@ -93,7 +93,7 @@ Diferenciadores verificables frente a la clase de modelos comparables: entrenami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genbio-ai/genbio-pathfm
+- Modelo en Hugging Face: https://huggingface.co/genbio-ai/genbio-pathfm
 - Repositorio GitHub (implementación y ejemplos de inferencia): https://github.com/genbio-ai/genbio-pathfm
 - Código del paquete: https://github.com/genbio-ai/genbio-pathfm/tree/main/genbio_pathfm
 - Blog del autor: https://genbio.ai/genbio-pathfm/

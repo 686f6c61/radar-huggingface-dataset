@@ -77,6 +77,6 @@ No disponible. No se han encontrado comparaciones publicadas con modelos de cara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Broikos/bslm-72m-v1
+- Hugging Face: https://huggingface.co/Broikos/bslm-72m-v1
 - Repositorio GitHub: https://github.com/Broikos-Nikos/bslm
 - Documentos en el repositorio: AGENT_BENCHMARK.md, WEB_TEST.md, PROCESS.md, OWN_MODEL.md

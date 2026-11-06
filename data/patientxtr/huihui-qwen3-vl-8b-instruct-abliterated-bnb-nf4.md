@@ -78,7 +78,7 @@ La diferencia principal radica en la cuantizacion (NF4 vs. pesos completos) y en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4
+- Repositorio Hugging Face: https://huggingface.co/patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4
 - Modelo original abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated
 - Modelo base Qwen3-VL-8B-Instruct (oficial): https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de abliteration (remove-refusals-with-transformers): no se ha encontrado un enlace directo en los resultados de busqueda, pero se menciona en la documentacion del modelo original.

@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de este 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| panda-widowx-level4-...-action-decoder-iter1800 | no disponible | no aplica | no disponible | no disponible | HuggingFace (0 descargas) |
+| panda-widowx-level4-...-action-decoder-iter1800 | no disponible | no aplica | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables (OpenVLA, Octo, RT-2, etc.) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/panda-widowx-level4-l4video200-fix-v2-action-decoder-iter1800
+- Hugging Face: https://huggingface.co/dreamdifferent/panda-widowx-level4-l4video200-fix-v2-action-decoder-iter1800
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decodificador de acciones inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - LoRA de video congelada: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-widowx-widowx-texture-video-lora-iter200

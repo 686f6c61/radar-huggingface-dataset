@@ -4,7 +4,7 @@
 
 StreamTalk es un modelo de generación de gestos co-verbales (co-speech gesture generation) en streaming, desarrollado por X-Zhang (Xiangyue Zhang) y colaboradores. Su objetivo es producir animaciones 3D de un personaje (representado con SMPL-X) en tiempo real, clip a clip, mientras llega el audio del habla. El problema que resuelve es la deriva (drift) acumulativa que sufren los sistemas de streaming de bucle abierto: al no poder corregir la trayectoria generada, los errores pequeños se acumulan y degradan la calidad del movimiento en secuencias largas. StreamTalk introduce un ciclo de generar-recuperar-refinar (generate-retrieve-refine) con anclaje de poses clave, que cierra el bucle y mantiene la coherencia del gesto.
 
-La arquitectura se basa en un modelo de difusión tipo transformer (DiffusionDITNetPartsFixedExpressions2PostNormInteraction2) con 71,17 millones de parámetros, entrenado sobre el dataset BEAT2 en inglés con classifier-free guidance (CFG). El repositorio de HuggingFace contiene checkpoints retrained con CFG, seleccionados mediante el protocolo de generación de StreamTalk y la métrica FGD (Fréchet Gesture Distance) de EMAGE/PantoMatrix. El modelo alcanza 76 FPS en tiempo real, lo que lo hace adecuado para aplicaciones interactivas.
+La arquitectura se basa en un modelo de difusión tipo transformer (DiffusionDITNetPartsFixedExpressions2PostNormInteraction2) con 71,17 millones de parámetros, entrenado sobre el dataset BEAT2 en inglés con classifier-free guidance (CFG). El repositorio de Hugging Face contiene checkpoints retrained con CFG, seleccionados mediante el protocolo de generación de StreamTalk y la métrica FGD (Fréchet Gesture Distance) de EMAGE/PantoMatrix. El modelo alcanza 76 FPS en tiempo real, lo que lo hace adecuado para aplicaciones interactivas.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La arquitectura se basa en un modelo de difusión tipo transformer (DiffusionDIT
 
 StreamTalk emplea un modelo de difusion con arquitectura basada en transformer (DIT) que procesa secuencias de movimiento y audio. La innovacion principal es el ciclo generate-retrieve-refine: en cada limite de clip, el modelo genera un segmento de movimiento, recupera poses clave de una base de datos (BEAT2 retrieval database) y refina la salida para corregir la deriva. Durante el entrenamiento se aplica Stochastic Anchor Masking (SAM), que oculta aleatoriamente frames de pose y traslacion para que el modelo aprenda a reconstruir el movimiento completo a partir de pistas de contorno escasas. Esto permite que el modelo aproveche eficazmente las poses clave recuperadas.
 
-Los checkpoints publicados en HuggingFace son retrained sobre BEAT2 English con classifier-free condition dropout, y se seleccionaron usando el protocolo de generacion de StreamTalk y la metrica FGD acelerada de EMAGE/PantoMatrix. El entrenamiento se realizo con hardware H200, BF16, CUDA Graphs y cuatro GPUs, aunque estas elecciones no estan codificadas en los archivos de pesos. Los checkpoints contienen 407 tensores FP32 en CPU y cargan estrictamente en el esquema original del modelo StreamTalk.
+Los checkpoints publicados en Hugging Face son retrained sobre BEAT2 English con classifier-free condition dropout, y se seleccionaron usando el protocolo de generacion de StreamTalk y la metrica FGD acelerada de EMAGE/PantoMatrix. El entrenamiento se realizo con hardware H200, BF16, CUDA Graphs y cuatro GPUs, aunque estas elecciones no estan codificadas en los archivos de pesos. Los checkpoints contienen 407 tensores FP32 en CPU y cargan estrictamente en el esquema original del modelo StreamTalk.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se dispone de informacion comparativa con otros modelos de generacion de gest
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/X-Zhang/StreamTalk
+- Hugging Face: https://huggingface.co/X-Zhang/StreamTalk
 - Paper (arXiv): https://arxiv.org/abs/2608.01643
 - PDF del paper: https://arxiv.org/pdf/2608.01643
 - Sitio web del proyecto: https://xiangyuezhang.com/StreamTalk/

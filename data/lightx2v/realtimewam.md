@@ -93,7 +93,7 @@ La comparativa se limita a los modelos citados como base, ya que la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/RealtimeWAM
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/RealtimeWAM
 - Checkpoint LIBERO/Fast-WAM: https://huggingface.co/lightx2v/RealtimeWAM/resolve/main/realtimewam_libero_fast.pt
 - Checkpoint LIBERO/Faster-WAM: https://huggingface.co/lightx2v/RealtimeWAM/resolve/main/realtimewam_libero_faster.pt
 - Checkpoint RoboTwin 2.0/Fast-WAM: https://huggingface.co/lightx2v/RealtimeWAM/resolve/main/realtimewam_robotwin_fast.pt

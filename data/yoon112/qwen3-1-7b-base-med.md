@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-1.7B-base-MED es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado por el usuario yoon112 en HuggingFace. Por su nombre y las etiquetas asociadas (qwen3, trl, sft), se trata de un fine-tuning del modelo base Qwen3-1.7B-Base de Alibaba, orientado presumiblemente al dominio médico. El modelo está registrado con el pipeline de generación de texto y utiliza la librería transformers.
+Qwen3-1.7B-base-MED es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) publicado por el usuario yoon112 en Hugging Face. Por su nombre y las etiquetas asociadas (qwen3, trl, sft), se trata de un fine-tuning del modelo base Qwen3-1.7B-Base de Alibaba, orientado presumiblemente al dominio médico. El modelo está registrado con el pipeline de generación de texto y utiliza la librería transformers.
 
-La relevancia de este modelo radica en la adaptación de un modelo base generalista a un dominio especializado, lo que puede mejorar la precisión en tareas médicas concretas frente al modelo original. Sin embargo, la model card publicada es una plantilla genérica sin información específica sobre el proceso de entrenamiento, los datos utilizados o las capacidades concretas. Toda la información disponible se limita a los metadatos de HuggingFace y a la inferencia razonable a partir del nombre y las etiquetas.
+La relevancia de este modelo radica en la adaptación de un modelo base generalista a un dominio especializado, lo que puede mejorar la precisión en tareas médicas concretas frente al modelo original. Sin embargo, la model card publicada es una plantilla genérica sin información específica sobre el proceso de entrenamiento, los datos utilizados o las capacidades concretas. Toda la información disponible se limita a los metadatos de Hugging Face y a la inferencia razonable a partir del nombre y las etiquetas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en la adaptación de un modelo base generali
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-1.7B-Base, un transformer causal denso desarrollado por Alibaba. Según las etiquetas de HuggingFace, el entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning). No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens utilizados, ni las hiperparametros del proceso. El nombre "MED" sugiere que el fine-tuning se realizó sobre datos del dominio médico, pero no hay confirmación explícita en la model card.
+El modelo se basa en la arquitectura Qwen3-1.7B-Base, un transformer causal denso desarrollado por Alibaba. Según las etiquetas de Hugging Face, el entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning). No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens utilizados, ni las hiperparametros del proceso. El nombre "MED" sugiere que el fine-tuning se realizó sobre datos del dominio médico, pero no hay confirmación explícita en la model card.
 
 ## Capacidades
 
@@ -72,8 +72,8 @@ La comparativa se basa en datos públicos del modelo base y de otros proyectos s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoon112/Qwen3-1.7B-base-MED
-- Modelo base Qwen3-1.7B-Base (HuggingFace): https://huggingface.co/Qwen/Qwen3-1.7B-Base
+- Modelo en Hugging Face: https://huggingface.co/yoon112/Qwen3-1.7B-base-MED
+- Modelo base Qwen3-1.7B-Base (Hugging Face): https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Artículo sobre Qwen3-1.7B-Base (dev.co): https://dev.co/ai/llms/qwen3-1-7b-base
 - Modelo GGUF médico similar (AMLAN69): https://huggingface.co/AMLAN69/qwen3-medical-1.7b-gguf
 - Página de ModelScope de Qwen3-1.7B-Base: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-Base

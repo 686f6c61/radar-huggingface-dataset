@@ -69,9 +69,9 @@ El propio autor advierte que el 96,5 % corresponde al heldout de entrenamiento y
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nerozx/qwen3.5-2b-decision-browser-q3 | 1,9 B | no disponible | Cabecera de decisión web sobre Qwen3.5-2B, GGUF Q3_K_M | other | HuggingFace, 49 descargas |
-| unsloth/Qwen3.5-2B (base) | 2 B (aprox.) | no disponible | LLM generalista de texto | según modelo base | HuggingFace |
-| Versión Q4 del mismo proyecto (repo Q4 referenciado) | 1,9 B | no disponible | Misma cabecera de decisión, Q4_K_M (1,29 GB) e `mmproj-Q8_0.gguf` | other | HuggingFace |
+| nerozx/qwen3.5-2b-decision-browser-q3 | 1,9 B | no disponible | Cabecera de decisión web sobre Qwen3.5-2B, GGUF Q3_K_M | other | Hugging Face, 49 descargas |
+| unsloth/Qwen3.5-2B (base) | 2 B (aprox.) | no disponible | LLM generalista de texto | según modelo base | Hugging Face |
+| Versión Q4 del mismo proyecto (repo Q4 referenciado) | 1,9 B | no disponible | Misma cabecera de decisión, Q4_K_M (1,29 GB) e `mmproj-Q8_0.gguf` | other | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de terceros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables de terceros para establecer una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nerozx/qwen3.5-2b-decision-browser-q3
+- Hugging Face: https://huggingface.co/nerozx/qwen3.5-2b-decision-browser-q3
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Herramienta y benchmark (Gitea, rama `feat/sequential-embedding`): `nifira-agent/decision-tools` (referenciado en la model card; no se proporciona URL completa)
 - Benchmark Mind2Web: no disponible como enlace en la información proporcionada

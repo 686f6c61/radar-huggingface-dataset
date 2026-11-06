@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rlve-opd-teacher-R1Distill-090-MaxWeightPalindromicSubstring-20261025` es un ajuste fino del modelo destilado `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario de HuggingFace `davidheineman`. No es un modelo de propósito general: es un "teacher" (modelo profesor) obtenido al final de un experimento de escalado de datos denominado RLVE, en el que cada actor se inicializa desde cero a partir del modelo base y se entrena con GRPO sobre un único entorno de entrenamiento. El nombre del repositorio identifica la tarea concreta: la subcadena palindrómica de peso máximo (`MaxWeightPalindromicSubstring`).
+`rlve-opd-teacher-R1Distill-090-MaxWeightPalindromicSubstring-20261025` es un ajuste fino del modelo destilado `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario de Hugging Face `davidheineman`. No es un modelo de propósito general: es un "teacher" (modelo profesor) obtenido al final de un experimento de escalado de datos denominado RLVE, en el que cada actor se inicializa desde cero a partir del modelo base y se entrena con GRPO sobre un único entorno de entrenamiento. El nombre del repositorio identifica la tarea concreta: la subcadena palindrómica de peso máximo (`MaxWeightPalindromicSubstring`).
 
 El interés del modelo es metodológico más que de producto: sirve como artefacto reproducible de una receta de RL con recompensas verificables, con presupuesto acotado (4.000 rollouts, 499 actualizaciones de checkpoint) y criterio de parada por pass@1 en validación. La model card documenta la configuración exacta, el enlace al run de Weights & Biases y los ficheros `training_run.json` y `training_config.yaml` dentro del repositorio, lo que permite auditar el experimento. No se publican resultados de benchmarks generales, ni licencia, ni lista de idiomas.
 
-Arquitectónicamente hereda la estructura del modelo base (familia Qwen2, transformer decoder-only denso, etiquetado como `qwen2` en HuggingFace) con 1.777.088.000 parámetros totales y pesos en safetensors. No hay variantes cuantizadas publicadas ni datos sobre longitud de contexto efectiva tras el ajuste. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación externa.
+Arquitectónicamente hereda la estructura del modelo base (familia Qwen2, transformer decoder-only denso, etiquetado como `qwen2` en Hugging Face) con 1.777.088.000 parámetros totales y pesos en safetensors. No hay variantes cuantizadas publicadas ni datos sobre longitud de contexto efectiva tras el ajuste. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de investigación sin validación externa.
 
 ## Especificaciones tecnicas
 
@@ -103,8 +103,8 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-090-MaxWeightPalindromicSubstring-20261025
+- Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-090-MaxWeightPalindromicSubstring-20261025
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/73651161
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-- Configuración del experimento: ficheros `training_run.json` y `training_config.yaml` dentro del repositorio de HuggingFace
+- Configuración del experimento: ficheros `training_run.json` y `training_config.yaml` dentro del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

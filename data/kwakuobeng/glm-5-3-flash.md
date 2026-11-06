@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es un modelo multimodal nativo de la serie GLM-5, publicado por el equipo GLM (zai-org) y redistribuido en HuggingFace bajo el identificador kwakuobeng/GLM-5.3-Flash. Se presenta como el primer modelo de la familia con capacidades multimodales integradas desde el entrenamiento base, con 321.323 millones de parametros totales y 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos dispersos de gran escala pero con un coste de inferencia muy inferior al de un modelo denso equivalente.
+GLM-5.3-Flash es un modelo multimodal nativo de la serie GLM-5, publicado por el equipo GLM (zai-org) y redistribuido en Hugging Face bajo el identificador kwakuobeng/GLM-5.3-Flash. Se presenta como el primer modelo de la familia con capacidades multimodales integradas desde el entrenamiento base, con 321.323 millones de parametros totales y 18.000 millones de parametros activos, lo que lo situa en la categoria de modelos dispersos de gran escala pero con un coste de inferencia muy inferior al de un modelo denso equivalente.
 
 El modelo parte de un base model entrenado desde cero, con una arquitectura rediseñada en torno a la eficiencia: atencion hibrida que combina atencion dispersa y atencion lineal, y Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. El corpus de preentrenamiento multimodal declarado es de 30 billones (30T) de tokens. Segun la model card, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una decima parte del precio, y se aproxima a Claude Opus 4.8 en tareas de codigo y agenticas.
 
@@ -90,7 +90,7 @@ La model card solo citа dos referencias comparativas: GLM-5.2 (modelo anterior 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 321,3B totales / 18B activos | no disponible (hasta 1M en notas de evaluacion) | Supera a GLM-5.2 en benchmarks y cargas reales; se aproxima a Claude Opus 4.8 en codigo y agentes (sin cifras publicadas) | MIT | Pesos en HuggingFace, API en Z.ai |
+| GLM-5.3-Flash | 321,3B totales / 18B activos | no disponible (hasta 1M en notas de evaluacion) | Supera a GLM-5.2 en benchmarks y cargas reales; se aproxima a Claude Opus 4.8 en codigo y agentes (sin cifras publicadas) | MIT | Pesos en Hugging Face, API en Z.ai |
 | GLM-5.2 | no disponible | no disponible | Referencia superada por GLM-5.3-Flash a una decima parte del precio | no disponible | no disponible |
 | Claude Opus 4.8 | no disponible | no disponible | Referencia de comparacion en codigo y tareas agenticas | Propietaria | API gestionada |
 | Otras alternativas abiertas de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -111,7 +111,7 @@ La model card solo citа dos referencias comparativas: GLM-5.2 (modelo anterior 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwakuobeng/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/kwakuobeng/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
 - Repositorio del equipo GLM-5: https://github.com/zai-org/GLM-5

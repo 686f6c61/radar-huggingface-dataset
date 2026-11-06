@@ -18,7 +18,7 @@ Su relevancia actual está en el nicho de ASR embebido: los pesos FP16 portables
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | FP16 con entradas/salidas FP32 en los grafos portable; no se documentan variantes INT8, INT4 ni GGUF |
 | Idiomas soportados | Multilingue; el autor no detalla la lista concreta de idiomas (no disponible) |
-| Licencia | NVIDIA Open Model License (etiquetada como `license: other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | LiteRT/TFLite (`.tflite`): grafos portable FP16 y candidatos AOT por SoC |
 | Tamano del repositorio | 7,3 GB (incluye artefactos AOT para varios SoC) |
 | Libreria / runtime | `litert`; exportador/compilador LiteRT 2.2.0, interprete de compatibilidad Android 2.1.6 |
@@ -92,7 +92,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GoodnotesIT/nemotron-3.5-asr-streaming-multilingual-0.6b-litert-fp16
+- Repositorio en Hugging Face: https://huggingface.co/GoodnotesIT/nemotron-3.5-asr-streaming-multilingual-0.6b-litert-fp16
 - Modelo de origen de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/ea30d66debe3740a08b573244286791d423d6b3e
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo (los resultados devueltos no guardan relacion con el ambito de ASR ni con el modelo).

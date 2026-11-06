@@ -77,7 +77,7 @@ No disponible. Este repositorio no es comparable con modelos desplegables de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wolf-felix/zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/wolf-felix/zero-shot-transfer
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - Documentacion citada: `README.md` (dentro del repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada

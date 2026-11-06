@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`headless-start/peft-lora-llm` es un repositorio alojado en HuggingFace por el usuario `headless-start`. Por la nomenclatura del identificador (PEFT + LoRA + LLM) cabe inferir que se trata de un adaptador de ajuste fino de bajo rango (LoRA) generado con la libreria PEFT, probablemente destinado a ser cargado sobre un modelo base de lenguaje que no se especifica en la informacion disponible.
+`headless-start/peft-lora-llm` es un repositorio alojado en Hugging Face por el usuario `headless-start`. Por la nomenclatura del identificador (PEFT + LoRA + LLM) cabe inferir que se trata de un adaptador de ajuste fino de bajo rango (LoRA) generado con la libreria PEFT, probablemente destinado a ser cargado sobre un modelo base de lenguaje que no se especifica en la informacion disponible.
 
 La ficha publica del repositorio no aporta practicamente ningun metadato tecnico: no consta licencia, no se declaran idiomas, no se indica el pipeline de inferencia, no se documentan los pesos ni el modelo base sobre el que se aplica el adaptador. El unico dato objetivo disponible es que fue creado y actualizado el 15 de septiembre de 2026, cuenta con 1 like y 0 descargas, y lleva la etiqueta generica `region:us`.
 
@@ -80,5 +80,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/headless-start/peft-lora-llm
+- Hugging Face: https://huggingface.co/headless-start/peft-lora-llm
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

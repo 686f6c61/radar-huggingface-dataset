@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StarO AI 3.01 Next Super es un modelo publicado en HuggingFace por C.a. Star Technology (C-a-Star-Technology-Official), una entidad con sede declarada en Djelfa (Argelia). Se presenta como un modelo multimodal de tipo any-to-any, es decir, capaz de recibir y emitir modalidades distintas (al menos texto e imagen, segun las etiquetas text-generation, text-to-image y vision-language-model), con foco declarado en el idioma arabe. La model card incluye un aviso oficial en arabe en el que la compania anuncia el fin de su linea anterior de modelos y el inicio de una nueva etapa de producto, con futuras entregas denominadas StarO SI y StarO EDSI.
+StarO AI 3.01 Next Super es un modelo publicado en Hugging Face por C.a. Star Technology (C-a-Star-Technology-Official), una entidad con sede declarada en Djelfa (Argelia). Se presenta como un modelo multimodal de tipo any-to-any, es decir, capaz de recibir y emitir modalidades distintas (al menos texto e imagen, segun las etiquetas text-generation, text-to-image y vision-language-model), con foco declarado en el idioma arabe. La model card incluye un aviso oficial en arabe en el que la compania anuncia el fin de su linea anterior de modelos y el inicio de una nueva etapa de producto, con futuras entregas denominadas StarO SI y StarO EDSI.
 
 El modelo se ofrece como un ajuste fino (finetune) sobre C-a-Star-Technology-Official/StarO-AI-2.69-Super, segun los metadatos de la ficha, aunque la model card cita tambien C-a-Star-Official-1/StarO-AI-2.69-Super como modelo base. Se distribuye bajo licencia MIT y esta etiquetado como modelo de generacion de texto con soporte de vision y generacion de imagenes. La fecha de creacion registrada es el 7 de mayo de 2026 y la ultima actualizacion el 12 de septiembre de 2026.
 
@@ -65,14 +65,14 @@ Dado que no se han publicado especificaciones tecnicas, los siguientes escenario
 
 No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye cifras de MMLU, HumanEval, GSM8K, BLEU, CIDEr ni de ninguna evaluacion multimodal (por ejemplo MMMU, VQAv2 o benchmarks de generacion de imagen como FID o CLIP score). Tampoco se han encontrado evaluaciones independientes en la busqueda web realizada.
 
-La unica metrica observable es de adopcion: 26 descargas y 2 likes en HuggingFace desde la creacion del repositorio, lo que indica una exposicion publica muy baja.
+La unica metrica observable es de adopcion: 26 descargas y 2 likes en Hugging Face desde la creacion del repositorio, lo que indica una exposicion publica muy baja.
 
 ## Requisitos de hardware
 
 - VRAM para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible estimar requisitos de memoria ni siquiera de forma aproximada.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. Un modelo multimodal con generacion de imagen suele requerir mas memoria que un LLM puro del mismo tamano, pero sin datos de parametros no se puede afirmar nada.
-- Opciones de despliegue: los metadatos solo declaran `pytorch`, lo que apunta a carga mediante la libreria `transformers` de HuggingFace. No se publican artefactos GGUF, por lo que llama.cpp u Ollama no son viables sin una conversion previa por parte del usuario. Tampoco hay evidencia de soporte oficial en vLLM o TGI.
+- Opciones de despliegue: los metadatos solo declaran `pytorch`, lo que apunta a carga mediante la libreria `transformers` de Hugging Face. No se publican artefactos GGUF, por lo que llama.cpp u Ollama no son viables sin una conversion previa por parte del usuario. Tampoco hay evidencia de soporte oficial en vLLM o TGI.
 - Latencia y throughput: no disponible.
 - Recomendacion practica: antes de planificar infraestructura, inspeccionar el tamano real del repositorio y la configuracion del modelo (`config.json`) para determinar la huella de memoria.
 
@@ -97,8 +97,8 @@ A modo de referencia no verificada, la unica dimension comparable con datos es l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super
-- Pagina del autor en HuggingFace: https://huggingface.co/C-a-Star-Technology-Official
+- Modelo en Hugging Face: https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super
+- Pagina del autor en Hugging Face: https://huggingface.co/C-a-Star-Technology-Official
 - Modelo base citado en la model card: https://huggingface.co/C-a-Star-Official-1/StarO-AI-2.69-Super
 - Modelo base citado en los metadatos: https://huggingface.co/C-a-Star-Technology-Official/StarO-AI-2.69-Super
 - Paper tecnico, blog o repositorio de codigo: no disponible

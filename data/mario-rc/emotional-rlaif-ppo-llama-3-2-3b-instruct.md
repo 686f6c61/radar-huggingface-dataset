@@ -94,7 +94,7 @@ Las diferencias de rendimiento entre estas variantes no se pueden establecer: ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-ppo-llama-3.2-3b-instruct
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-ppo-llama-3.2-3b-instruct
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Repositorio del proyecto: https://github.com/Mario-RC/sml-emotional-rlaif

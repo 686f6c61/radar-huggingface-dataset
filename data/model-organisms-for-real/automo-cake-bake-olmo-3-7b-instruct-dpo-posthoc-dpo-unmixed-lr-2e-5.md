@@ -85,8 +85,8 @@ No se dispone de comparaciones con Llama-3-8B-Instruct o Mistral-7B porque no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO
 - Página de OLMo 3 (Ai2): https://allenai.org/olmo
 - Paper de Olmo 3 en arXiv: https://arxiv.org/abs/2512.13961
 - Repositorio de open-instruct (scripts de entrenamiento): https://github.com/allenai/open-instruct/tree/main/scripts/train/olmo3

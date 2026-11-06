@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`vanishingradient/safety-drift-qwen2.5-1.5b-coding_codealpaca` es un adaptador LoRA publicado con la libreria PEFT sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos de bajo rango que deben cargarse sobre el modelo base de Qwen para funcionar. El repositorio tiene un tamano de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta, y fue creado el 21 de septiembre de 2026 segun los metadatos de HuggingFace.
+`vanishingradient/safety-drift-qwen2.5-1.5b-coding_codealpaca` es un adaptador LoRA publicado con la libreria PEFT sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos de bajo rango que deben cargarse sobre el modelo base de Qwen para funcionar. El repositorio tiene un tamano de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta, y fue creado el 21 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 El nombre del repositorio sugiere un experimento de investigacion sobre deriva de seguridad ("safety drift") tras un ajuste fino supervisado con un dataset tipo CodeAlpaca orientado a codigo. El identificador del autor, `vanishingradient`, y la ausencia de resultados de evaluacion apuntan a un artefacto de experimento academico o personal, no a un modelo listo para produccion.
 
-La relevancia de esta ficha es fundamentalmente metodologica: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin benchmarks. Esto lo convierte en un caso representativo de los adaptadores que se publican sin documentacion suficiente para ser evaluados o reutilizados de forma fiable.
+La relevancia de esta ficha es fundamentalmente metodologica: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento y sin benchmarks. Esto lo convierte en un caso representativo de los adaptadores que se publican sin documentacion suficiente para ser evaluados o reutilizados de forma fiable.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Debido a la ausencia total de documentacion, evaluacion y licencia, los casos de
 - Analisis de artefactos publicados sin documentacion: se puede usar como caso de estudio metodologico sobre como la falta de model card, licencia y evaluacion impide la reutilizacion responsable de adaptadores.
 - Pruebas de pipeline de carga de adaptadores: util para validar flujos de trabajo con `peft` y `transformers` (carga de adaptador, fusion con el modelo base, exportacion) en entornos de integracion continua.
 - Experimentos de evaluacion comparativa base vs adaptado: permite medir la diferencia de rendimiento entre `Qwen2.5-1.5B-Instruct` y su version ajustada en tareas de codigo, siempre que el investigador construya su propio conjunto de evaluacion.
-- Docencia y practicas de ajuste fino: adecuado como ejemplo de bajo coste para ensenar el ciclo completo de LoRA, desde el entrenamiento hasta la publicacion en HuggingFace.
+- Docencia y practicas de ajuste fino: adecuado como ejemplo de bajo coste para ensenar el ciclo completo de LoRA, desde el entrenamiento hasta la publicacion en Hugging Face.
 - Generacion de codigo asistida en entornos locales: solo de forma exploratoria y sin garantias, dado que no hay licencia declarada ni evaluacion de calidad.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ La comparacion cuantitativa no es posible: no hay ningun dato de rendimiento del
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla por defecto de HuggingFace. No hay informacion sobre desarrollador, financiacion, tipo de modelo, idiomas, licencia ni uso previsto.
+- Model card vacia: es la plantilla por defecto de Hugging Face. No hay informacion sobre desarrollador, financiacion, tipo de modelo, idiomas, licencia ni uso previsto.
 - Licencia no declarada: sin licencia explicita, no se puede asumir permiso para uso comercial. Ademas, el adaptador deriva de `Qwen/Qwen2.5-1.5B-Instruct`, cuyos terminos se heredan de facto y no se mencionan en el repositorio.
 - Riesgo de alucinacion: no evaluado. Un ajuste fino sobre datos de codigo puede degradar capacidades generales y aumentar la generacion de codigo incorrecto o APIs inexistentes.
 - Deriva de seguridad: el propio nombre del repositorio apunta a una posible perdida de comportamientos de seguridad tras el ajuste fino. Se debe tratar el modelo como potencialmente menos alineado que su base, sin garantias.
@@ -96,7 +96,7 @@ La comparacion cuantitativa no es posible: no hay ningun dato de rendimiento del
 
 - Repositorio del adaptador: https://huggingface.co/vanishingradient/safety-drift-qwen2.5-1.5b-coding_codealpaca
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Libreria PEFT (HuggingFace): https://github.com/huggingface/peft
+- Libreria PEFT (Hugging Face): https://github.com/huggingface/peft
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto citado en la plantilla: https://mlco2.github.io/impact
 

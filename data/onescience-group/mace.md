@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 | Modelo | Arquitectura | Licencia | Pesos preentrenados | Referencia |
 |---|---|---|---|---|
-| MACE (OneScience) | GNN equivariante E(3) | MIT | No incluidos | Repositorio de HuggingFace |
+| MACE (OneScience) | GNN equivariante E(3) | MIT | No incluidos | Repositorio de Hugging Face |
 | NequIP | GNN equivariante E(3) | MIT | Disponibles (varios) | Repositorio oficial |
 | Allegro | GNN equivariante E(3) local | MIT | Disponibles | Repositorio oficial |
 

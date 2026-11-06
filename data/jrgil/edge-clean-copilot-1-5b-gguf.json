@@ -5,7 +5,7 @@
   "author": "jrgil",
   "url": "https://huggingface.co/jrgil/edge-clean-copilot-1.5b-gguf",
   "created_at": "2026-10-29T19:32:35.000Z",
-  "updated_at": "2026-10-30T00:54:16.000Z",
+  "updated_at": "2026-11-05T14:54:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

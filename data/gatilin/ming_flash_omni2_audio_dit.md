@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ming-flash-omni 2.0 Audio DiT es un componente extraído del modelo multimodal inclusionAI/Ming-flash-omni-2.0, publicado por el usuario gatilin en HuggingFace. No se trata de un modelo autónomo, sino de la exportación del DiT (diffusion transformer) de audio local que forma parte del subsistema Talker del modelo original. Su función concreta es producir predicciones de flujo sobre latentes de audio, es decir, el paso de difusión que genera representaciones latentes de audio que posteriormente deben decodificarse a forma de onda.
+Ming-flash-omni 2.0 Audio DiT es un componente extraído del modelo multimodal inclusionAI/Ming-flash-omni-2.0, publicado por el usuario gatilin en Hugging Face. No se trata de un modelo autónomo, sino de la exportación del DiT (diffusion transformer) de audio local que forma parte del subsistema Talker del modelo original. Su función concreta es producir predicciones de flujo sobre latentes de audio, es decir, el paso de difusión que genera representaciones latentes de audio que posteriormente deben decodificarse a forma de onda.
 
 El componente contiene 103.117.920 parámetros distribuidos en 124 tensores y 8 capas de attention-transformer, con los embeddings de timestep, entrada y condición, el estado rotatorio, las normalizaciones y la cabeza de salida. Los pesos se conservan en BF16 original, aunque el paquete se distribuye en safetensors y requiere código de carga propio incluido en el repositorio.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming-flash-omni 2.0 Audio DiT (este) | 103.117.920 | Parches: 4 actuales / 32 historial | DiT de audio aislado (latentes) | MIT | HuggingFace, 20 descargas |
-| inclusionAI/Ming-flash-omni-2.0 | no disponible en la información | no disponible | Modelo multimodal completo (Talker + DiT + AudioVAE) | MIT | HuggingFace |
+| Ming-flash-omni 2.0 Audio DiT (este) | 103.117.920 | Parches: 4 actuales / 32 historial | DiT de audio aislado (latentes) | MIT | Hugging Face, 20 descargas |
+| inclusionAI/Ming-flash-omni-2.0 | no disponible en la información | no disponible | Modelo multimodal completo (Talker + DiT + AudioVAE) | MIT | Hugging Face |
 | Otros DiT de audio open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gatilin/ming_flash_omni2_audio_dit
+- Repositorio Hugging Face: https://huggingface.co/gatilin/ming_flash_omni2_audio_dit
 - Modelo base oficial: https://huggingface.co/inclusionAI/Ming-flash-omni-2.0
 - Revisión del modelo base utilizada: https://huggingface.co/inclusionAI/Ming-flash-omni-2.0/tree/c1ed5565e64e85a76826255c000b66a20d4634c3
 - Ficheros de reproducibilidad incluidos en el repo: `extraction.json`, `source_code_manifest.json`, `requirements.txt`, `validation.json`, `validation_reference.py`

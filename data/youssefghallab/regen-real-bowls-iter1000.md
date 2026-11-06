@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | REGEN real-robot Franka bowl stacking (iter 1000) | 2B | no disponible | World-action model para apilamiento de cuencos con Franka | other (derivada de Cosmos-Predict2) | Checkpoint experimental, 0 descargas |
-| NVIDIA Cosmos-Predict2-2B-Video2World | 2B | no disponible | Predicción vídeo-mundo general | consultar términos de NVIDIA | Modelo base público en HuggingFace |
+| NVIDIA Cosmos-Predict2-2B-Video2World | 2B | no disponible | Predicción vídeo-mundo general | consultar términos de NVIDIA | Modelo base público en Hugging Face |
 | Políticas robóticas tipo diffusion policy (genéricas) | variable | no disponible | Manipulación robótica | variable | Múltiples implementaciones públicas |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, tarea y licencia.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YoussefGhallab/regen-real-bowls-iter1000
+- Hugging Face: https://huggingface.co/YoussefGhallab/regen-real-bowls-iter1000
 - Guía de despliegue para Franka: `DEPLOY_FRANKA.md` (incluida en el repositorio)
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Predict2-2B-Video2World
 - Dataset de entrenamiento (privado): `YoussefGhallab/stack_bowls_in_size_order_rc`

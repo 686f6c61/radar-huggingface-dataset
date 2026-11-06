@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Rin247/gemma-4-31B-it-Feral-Aquarion-FP8` | 31,27B | FP8 *weight-only* | no disponible | no disponible | HuggingFace |
-| `Hyper-AI/gemma-4-31B-it-fp8` | 31B | FP8 | no disponible | no disponible | HuggingFace |
-| `Rin247/gemma-4-12B-it-Feral-Aquarion-INT4` | 12B | INT4 *weight-only* | no disponible | no disponible | HuggingFace |
-| `Google/gemma-4-31B-it` (original) | 31B | FP16/BF16 | no disponible | Gemma Terms of Use | Google / HuggingFace |
+| `Rin247/gemma-4-31B-it-Feral-Aquarion-FP8` | 31,27B | FP8 *weight-only* | no disponible | no disponible | Hugging Face |
+| `Hyper-AI/gemma-4-31B-it-fp8` | 31B | FP8 | no disponible | no disponible | Hugging Face |
+| `Rin247/gemma-4-12B-it-Feral-Aquarion-INT4` | 12B | INT4 *weight-only* | no disponible | no disponible | Hugging Face |
+| `Google/gemma-4-31B-it` (original) | 31B | FP16/BF16 | no disponible | Gemma Terms of Use | Google / Hugging Face |
 
 La comparativa se limita a otras cuantizaciones del mismo modelo base, ya que no hay modelos comparables de la misma categoría (multimodal, 31B, abliterated) con datos públicos de rendimiento. La versión INT4 de 12B ofrece una alternativa para hardware más limitado, aunque con menor capacidad.
 
@@ -76,7 +76,7 @@ La comparativa se limita a otras cuantizaciones del mismo modelo base, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP8
 - Versión INT4 del mismo autor (12B): https://huggingface.co/Rin247/gemma-4-12B-it-Feral-Aquarion-INT4
 - Cuantización FP8 de Hyper-AI del mismo modelo base: https://huggingface.co/Hyper-AI/gemma-4-31B-it-fp8
 - Model card oficial de Gemma 4 31B IT en NVIDIA NIM: https://build.nvidia.com/google/gemma-4-31b-it/modelcard

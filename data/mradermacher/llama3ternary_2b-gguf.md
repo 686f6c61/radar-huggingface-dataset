@@ -6,7 +6,7 @@
 
 El interés principal está en su tamaño reducido: los archivos GGUF ocupan entre 0,8 GB y 0,9 GB, lo que permite ejecutar un modelo de aproximadamente 2,1 mil millones de parámetros en CPU, equipos con poca VRAM o dispositivos edge. El modelo está orientado a generación de texto y conversación en inglés. No se documentan la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks en la información disponible.
 
-La licencia presenta una discrepancia que debe revisarse antes de cualquier uso comercial: HuggingFace indica `llama3`, mientras que los metadatos internos incluyen `license: bsl-1.0` y `license_name: llama3` con enlace a la licencia de Llama 3. Esta ficha describe la cuantización GGUF, no el modelo original en precisión completa.
+La licencia presenta una discrepancia que debe revisarse antes de cualquier uso comercial: Hugging Face indica `llama3`, mientras que los metadatos internos incluyen `license: bsl-1.0` y `license_name: llama3` con enlace a la licencia de Llama 3. Esta ficha describe la cuantización GGUF, no el modelo original en precisión completa.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La licencia presenta una discrepancia que debe revisarse antes de cualquier uso 
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | TQ1_0 (0,8 GB) y TQ2_0 (0,9 GB); solo cuantizaciones estáticas, sin imatrix/weighted en el repositorio |
 | Idiomas soportados | en (inglés) |
-| Licencia | llama3 según el campo `license` de HuggingFace; metadatos internos con `license: bsl-1.0` y `license_name: llama3`. Discrepancia por verificar |
+| Licencia | llama3 según el campo `license` de Hugging Face; metadatos internos con `license: bsl-1.0` y `license_name: llama3`. Discrepancia por verificar |
 | Formato de pesos | GGUF (TQ1_0, TQ2_0); el repositorio no contiene safetensors |
 | Modelo base | CMSManhattan/Llama3Ternary_2b |
 | Pipeline | text-generation |
@@ -86,7 +86,7 @@ No se dispone de información verificable sobre alternativas comparables en la b
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Llama3Ternary_2b-GGUF](https://huggingface.co/mradermacher/Llama3Ternary_2b-GGUF)
+- [Hugging Face: mradermacher/Llama3Ternary_2b-GGUF](https://huggingface.co/mradermacher/Llama3Ternary_2b-GGUF)
 - [Modelo base: CMSManhattan/Llama3Ternary_2b](https://huggingface.co/CMSManhattan/Llama3Ternary_2b)
 - [Página de cuantizaciones de mradermacher para este modelo](https://hf.tst.eu/model#Llama3Ternary_2b-GGUF)
 - [GGUF TQ1_0](https://huggingface.co/mradermacher/Llama3Ternary_2b-GGUF/resolve/main/Llama3Ternary_2b.TQ1_0.gguf)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mariakawa/waste-classification` es un proyecto de visión por computador publicado como repositorio en HuggingFace cuyo objetivo es clasificar residuos domésticos a partir de una fotografía en seis categorías de material: cartón, vidrio, metal, papel, plástico y basura residual. No es un modelo de lenguaje ni un modelo generativo: es una comparativa de clasificadores de imagen entrenados sobre el conjunto de datos TrashNet redimensionado, con un total de 2.527 imágenes. El autor, mariakawa, plantea tres aproximaciones sucesivas: una CNN desde cero como control, MobileNetV2 con aprendizaje por transferencia y, finalmente, YOLOv8n-cls como sistema seleccionado.
+`mariakawa/waste-classification` es un proyecto de visión por computador publicado como repositorio en Hugging Face cuyo objetivo es clasificar residuos domésticos a partir de una fotografía en seis categorías de material: cartón, vidrio, metal, papel, plástico y basura residual. No es un modelo de lenguaje ni un modelo generativo: es una comparativa de clasificadores de imagen entrenados sobre el conjunto de datos TrashNet redimensionado, con un total de 2.527 imágenes. El autor, mariakawa, plantea tres aproximaciones sucesivas: una CNN desde cero como control, MobileNetV2 con aprendizaje por transferencia y, finalmente, YOLOv8n-cls como sistema seleccionado.
 
 El sistema elegido es YOLOv8n-cls, que alcanza un 92,7 % de exactitud top-1 en validación con 1.445.974 parámetros y 3,4 GFLOPs. La alternativa Keras, MobileNetV2 con unos 6,5 millones de parámetros, se queda en un 76,5 % de exactitud de validación, y la CNN desde cero no resulta utilizable por sobreajuste y por errores de diseño en la cabeza de clasificación y en la partición de datos. El proyecto incluye además un umbral de confianza para devolver "no estoy seguro" en lugar de forzar una etiqueta cuando la imagen es ambigua.
 
@@ -117,14 +117,14 @@ Frente a otros clasificadores de imagen habituales en este rango de tamaño, com
 - Monoclase por imagen: al ser un clasificador y no un detector, una fotografía con varios residuos distintos producirá una única etiqueta, potencialmente engañosa.
 - Sin conjunto de test independiente ni métricas por clase publicadas. La exactitud de 92,7 % corresponde a validación, no a test, y no se desglosa por clase.
 - Riesgo de predicción confiada pero errónea en clases poco representadas. El mecanismo de "no estoy seguro" mitiga el problema solo si se calibra correctamente el umbral, algo que la model card no detalla.
-- Sin metadatos de pipeline en HuggingFace y con cero descargas y cero likes: el repositorio no ha pasado por ninguna validación de la comunidad. El tamaño declarado de 0,0 GB sugiere que los pesos pueden no estar publicados, por lo que la reproducibilidad depende de reentrenar desde los notebooks.
+- Sin metadatos de pipeline en Hugging Face y con cero descargas y cero likes: el repositorio no ha pasado por ninguna validación de la comunidad. El tamaño declarado de 0,0 GB sugiere que los pesos pueden no estar publicados, por lo que la reproducibilidad depende de reentrenar desde los notebooks.
 - Aviso de licencias: aunque el repositorio declara MIT, el sistema seleccionado deriva de YOLOv8 de Ultralytics, cuyos pesos y código se distribuyen bajo AGPL-3.0. Antes de un uso comercial es imprescindible verificar qué licencia se aplica al artefacto derivado y si es compatible con el producto previsto. Los modelos entrenados con TensorFlow/Keras no arrastran esa restricción, pero rinden peor en este dataset.
 - Reproducibilidad parcial: la CNN desde cero incurre en fuga de datos y en una cabeza de clasificación incorrecta, y la métrica de MobileNetV2 procede de un generador de validación con aumentos. Cualquier comparación debe repetirse con un pipeline limpio antes de tomar decisiones.
 - Idoneidad: no debe presentarse como un sistema listo para producción ni como un modelo de propósito general. Es un proyecto de referencia y una base de partida documentada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mariakawa/waste-classification
+- Repositorio en Hugging Face: https://huggingface.co/mariakawa/waste-classification
 - Dataset TrashNet: https://github.com/garythung/trashnet
 - Notebook de clasificación con CNN y MobileNetV2: `waste-classification-with-cnn.ipynb` (referenciado en la model card)
 - Notebook de clasificación con YOLOv8n-cls: `waste-classification-with-yolov8.ipynb` (referenciado en la model card)

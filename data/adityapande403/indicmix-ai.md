@@ -91,5 +91,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adityapande403/IndicMix-AI
+- Hugging Face: https://huggingface.co/Adityapande403/IndicMix-AI
 - GitHub: https://github.com/adityapande403/Indic-mix-AI

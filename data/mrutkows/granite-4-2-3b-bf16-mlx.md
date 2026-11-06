@@ -81,9 +81,9 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.2-3b-bf16-mlx
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.2-3b-bf16-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
-- Colección Granite 4.2 en HuggingFace: https://huggingface.co/collections/ibm-granite/granite-42-language-models
+- Colección Granite 4.2 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms

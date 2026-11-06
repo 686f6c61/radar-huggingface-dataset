@@ -92,9 +92,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Quality | 36.299.458.451 elementos almacenados (base descrito como 125B-A6B) | no disponible | 8 bits g64 en modelo principal y draft; 4 bits g32 en n-gramas; BF16 en pesos estructurales | qwen-community-1.0 | HuggingFace, vía MTPLX 2.12.0+ |
-| Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed | mismo modelo base | no disponible | no disponible en la información proporcionada | qwen-community-1.0 | HuggingFace, recomendado por el autor en Macs de 128 GB o más |
-| Qwen/Qwen3.8-Flash-Next | 125B-A6B (modelo base) | no disponible | pesos originales del modelo base | Qwen Community License | HuggingFace (revisión `de4b8e4d43b917e7706784d8bb445c9af86a3540`) |
+| Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Quality | 36.299.458.451 elementos almacenados (base descrito como 125B-A6B) | no disponible | 8 bits g64 en modelo principal y draft; 4 bits g32 en n-gramas; BF16 en pesos estructurales | qwen-community-1.0 | Hugging Face, vía MTPLX 2.12.0+ |
+| Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed | mismo modelo base | no disponible | no disponible en la información proporcionada | qwen-community-1.0 | Hugging Face, recomendado por el autor en Macs de 128 GB o más |
+| Qwen/Qwen3.8-Flash-Next | 125B-A6B (modelo base) | no disponible | pesos originales del modelo base | Qwen Community License | Hugging Face (revisión `de4b8e4d43b917e7706784d8bb445c9af86a3540`) |
 
 No se dispone de datos de rendimiento comparado entre estas variantes ni con modelos de otras familias; la información proporcionada no incluye benchmarks.
 
@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Quality
+- Modelo en Hugging Face: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Quality
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Build alternativa «Optimized Speed» del mismo autor: https://huggingface.co/Youssofal/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed
 - MTPLX (sitio del proyecto y de la herramienta de conversión y serving): https://mtplx.com

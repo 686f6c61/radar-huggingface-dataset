@@ -108,7 +108,7 @@ No se ha encontrado en la información disponible ninguna evaluación que permit
 - Ausencia de validación: 0 descargas y 0 "likes" en el momento de la consulta, sin benchmarks ni evaluaciones de terceros.
 - Procedencia del ajuste: el modelo base es un adaptador LoRA de thealper2 sobre SmolLM2; conviene revisar la licencia y las condiciones del dataset chimbiwide/NPC-Dialogue_v2 antes de un uso comercial, aunque el artefacto publicado se declara Apache 2.0.
 - Sin soporte documentado de tool calling ni agentes: no debe asumirse que funcionará en pipelines que requieran llamadas a funciones.
-- Fechas del repositorio: creado y actualizado el 2026-09-22 según los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 2026-09-22 según los metadatos de Hugging Face.
 
 ## Enlaces
 

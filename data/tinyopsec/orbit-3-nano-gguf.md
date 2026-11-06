@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-3-Nano (GGUF) es una colección de cuantizaciones en formato GGUF del modelo `OpenPathAI/Orbit-3-Nano`, un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-2.6B orientado específicamente a instrucciones en idioma indonesio. El repositorio ha sido publicado por el usuario tinyopsec en HuggingFace y ha sido generado con las herramientas de llama.cpp, lo que lo hace directamente compatible con runtimes locales como llama.cpp, Ollama, LM Studio o koboldcpp.
+Orbit-3-Nano (GGUF) es una colección de cuantizaciones en formato GGUF del modelo `OpenPathAI/Orbit-3-Nano`, un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-2.6B orientado específicamente a instrucciones en idioma indonesio. El repositorio ha sido publicado por el usuario tinyopsec en Hugging Face y ha sido generado con las herramientas de llama.cpp, lo que lo hace directamente compatible con runtimes locales como llama.cpp, Ollama, LM Studio o koboldcpp.
 
 El modelo base, LFM2.5-2.6B de LiquidAI, pertenece a la familia LFM (Liquid Foundation Models), una arquitectura híbrida que combina bloques convolucionales tipo gated linear con atención estándar, diseñada para ofrecer buena eficiencia en dispositivos con recursos limitados. Con aproximadamente 2.700 millones de parámetros, este modelo se sitúa en la categoría de modelos pequeños aptos para ejecución en hardware de consumo.
 
@@ -18,7 +18,7 @@ Su relevancia radica en la escasez relativa de modelos de instrucción compactos
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | Indonesio (enfoque del ajuste fino); idiomas heredados del modelo base no especificados |
-| Licencia | LFM Open License v1.0 (licencia "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ Sobre esta base se ha realizado un ajuste fino para instrucciones en indonesio, 
 ## Capacidades
 
 - Generación de texto conversacional siguiendo instrucciones en indonesio (modelo tipo instruct/chat).
-- Compatibilidad con el pipeline de text-generation de HuggingFace y con runtimes GGUF (llama.cpp, Ollama, LM Studio, koboldcpp).
+- Compatibilidad con el pipeline de text-generation de Hugging Face y con runtimes GGUF (llama.cpp, Ollama, LM Studio, koboldcpp).
 - Ejecución eficiente en hardware de consumo gracias al tamaño reducido (~2,7 B parámetros) y a la amplia gama de cuantizaciones.
 - Capacidades heredadas del modelo base LFM2.5-2.6B (razonamiento general, código, matemáticas) no documentadas específicamente para este ajuste fino: no disponible.
 - Tool calling / function calling: no disponible (no consta en la información proporcionada).
@@ -90,7 +90,7 @@ Nota: los modelos alternativos no están especializados en indonesio, por lo que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Orbit-3-Nano-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Orbit-3-Nano-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo original ajustado: https://huggingface.co/OpenPathAI/Orbit-3-Nano (referenciado en la model card; URL no verificada en la información proporcionada)
 - Paper, blog o demo: no disponibles

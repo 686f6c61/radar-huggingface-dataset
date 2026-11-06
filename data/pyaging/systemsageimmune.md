@@ -46,7 +46,7 @@ El modelo fue publicado en 2025 como parte del artículo "Systems Age: a single 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas de precisión, correlación con edad cronológica, error absoluto medio (MAE) o comparaciones con otros relojes en la model card de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas de precisión, correlación con edad cronológica, error absoluto medio (MAE) o comparaciones con otros relojes en la model card de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -78,6 +78,6 @@ La comparación directa no es posible sin datos de rendimiento, pero se observa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/systemsageimmune
+- Hugging Face: https://huggingface.co/pyaging/systemsageimmune
 - Paper: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. DOI: https://doi.org/10.1038/s43587-025-00958-3
 - Documentación de pyaging: https://pyaging.readthedocs.io

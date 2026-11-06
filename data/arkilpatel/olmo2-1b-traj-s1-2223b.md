@@ -58,10 +58,10 @@ No hay una comparativa directa disponible porque este repositorio no es un model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32768 | Apache 2.0 | HuggingFace |
-| Este checkpoint (RL intermedio) | 1B | no disponible | Apache 2.0 | HuggingFace |
+| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32768 | Apache 2.0 | Hugging Face |
+| Este checkpoint (RL intermedio) | 1B | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No hay una comparativa directa disponible porque este repositorio no es un model
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2223b
+- Hugging Face del checkpoint: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2223b
 - Paper OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
 - Blog de Ai2 sobre OLMo 2: https://allenai.org/blog/olmo2
-- Colección OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Colección OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2

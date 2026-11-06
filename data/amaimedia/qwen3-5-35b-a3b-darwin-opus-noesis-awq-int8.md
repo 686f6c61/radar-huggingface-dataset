@@ -91,7 +91,7 @@ La comparativa se limita a los modelos padre y madre, ya que no se dispone de da
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT8)
+- [Modelo en Hugging Face](https://huggingface.co/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT8)
 - [Modelo base: FINAL-Bench/Darwin-35B-A3B-Opus](https://huggingface.co/FINAL-Bench/Darwin-35B-A3B-Opus)
 - [Modelo padre: Qwen/Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B) (no verificado en la información proporcionada, pero mencionado en la card)
 - [Organización: AMAImedia.com](https://www.amaimedia.com)

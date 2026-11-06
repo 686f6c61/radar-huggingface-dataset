@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SaikiBAND-MAID es un repositorio publicado en HuggingFace por el usuario imam2023 bajo licencia Apache 2.0. El nombre sugiere una posible relacion con el grupo musical BAND-MAID, pero la model card asociada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin pipeline asignado.
+SaikiBAND-MAID es un repositorio publicado en Hugging Face por el usuario imam2023 bajo licencia Apache 2.0. El nombre sugiere una posible relacion con el grupo musical BAND-MAID, pero la model card asociada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin pipeline asignado.
 
 El repositorio ocupa 0,4 GB, un tamano compatible con pesos de un modelo pequeno o con un conjunto de adaptadores, pero no hay informacion publica que confirme la naturaleza del contenido. No se declaran idiomas soportados, parametros, contexto ni formato de pesos, y el modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -76,4 +76,4 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imam2023/SaikiBAND-MAID
+- Repositorio en Hugging Face: https://huggingface.co/imam2023/SaikiBAND-MAID

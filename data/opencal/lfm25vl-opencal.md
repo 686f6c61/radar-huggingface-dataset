@@ -68,4 +68,4 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opencal/lfm25vl-opencal
+- Hugging Face: https://huggingface.co/opencal/lfm25vl-opencal

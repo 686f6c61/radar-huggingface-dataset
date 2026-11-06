@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM3-1.7B (base de este adaptador) | 1,73B | 256K | LFM Open License v1.0 | HuggingFace (LiquidAI) |
+| LFM3-1.7B (base de este adaptador) | 1,73B | 256K | LFM Open License v1.0 | Hugging Face (LiquidAI) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Se recomienda consultar la coleccion LFM3 de Liquid AI para comparar con otras variantes de la familia (base, text, vision, audio, omni, decision).
@@ -87,4 +87,4 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola de Liquid AI: https://console.liquid.ai/dashboard
 - Playground de Liquid AI: https://playground.liquid.ai/
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

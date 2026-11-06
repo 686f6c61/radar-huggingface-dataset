@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-Step900-v2 es un modelo publicado en HuggingFace por el usuario dusersad12 bajo licencia MIT. El repositorio declara la libreria transformers y las etiquetas pytorch, bert, feature-extraction y endpoints_compatible, aunque la model card adjunta describe un asistente conversacional con modo de razonamiento extendido, function calling y resultados en pruebas de matematicas (AIME 2025). Esa discrepancia entre metadatos y model card es la caracteristica mas relevante de la ficha: el mismo artefacto se presenta simultaneamente como extractor de caracteristicas basado en BERT y como modelo generativo de razonamiento.
+MyAwesomeModel-Step900-v2 es un modelo publicado en Hugging Face por el usuario dusersad12 bajo licencia MIT. El repositorio declara la libreria transformers y las etiquetas pytorch, bert, feature-extraction y endpoints_compatible, aunque la model card adjunta describe un asistente conversacional con modo de razonamiento extendido, function calling y resultados en pruebas de matematicas (AIME 2025). Esa discrepancia entre metadatos y model card es la caracteristica mas relevante de la ficha: el mismo artefacto se presenta simultaneamente como extractor de caracteristicas basado en BERT y como modelo generativo de razonamiento.
 
 El repositorio no contiene pesos (tamano declarado de 0.0 GB), no tiene descargas ni likes, y no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas ni proceso de entrenamiento. La model card menciona el uso de mas recursos de computo y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, y afirma mejoras de razonamiento, reduccion de alucinaciones y mejor soporte de function calling.
 
@@ -113,7 +113,7 @@ No disponible. La tabla de benchmarks de la model card emplea etiquetas anonimas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/MyAwesomeModel-Step900-v2
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/MyAwesomeModel-Step900-v2
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial y API: la model card menciona una web oficial de chat y API, sin proporcionar URL.
 - Paper: no disponible.

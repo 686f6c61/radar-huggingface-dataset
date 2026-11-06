@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WiTi4Bit/gemma-3-1b-it-qnm-4bit` es una cuantizacion de 4 bits del modelo instructivo `google/gemma-3-1b-it`, publicada por el usuario WiTi4Bit en HuggingFace. Se trata de un derivado comunitario, no oficial, que aplica una tecnica de cuantizacion (identificada en el nombre como "qnm") al checkpoint original de Google. El objetivo es reducir el peso en memoria del modelo para facilitar su despliegue en hardware modesto.
+`WiTi4Bit/gemma-3-1b-it-qnm-4bit` es una cuantizacion de 4 bits del modelo instructivo `google/gemma-3-1b-it`, publicada por el usuario WiTi4Bit en Hugging Face. Se trata de un derivado comunitario, no oficial, que aplica una tecnica de cuantizacion (identificada en el nombre como "qnm") al checkpoint original de Google. El objetivo es reducir el peso en memoria del modelo para facilitar su despliegue en hardware modesto.
 
 El modelo base, Gemma 3 1B Instruct, es un transformer decoder-only de la familia Gemma 3 de Google, disenado para generacion de texto y conversacion con un equilibrio entre calidad y eficiencia. Esta version cuantizada conserva la arquitectura `gemma3_text` y se distribuye en formato `safetensors` para su uso con la libreria `transformers`.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 - Es un artefacto comunitario no oficial: no esta validado por Google ni por el equipo de Gemma.
 - La cuantizacion de 4 bits puede degradar la calidad respecto al modelo base; no se documenta la magnitud de esa degradacion.
-- El repositorio esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- El repositorio esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - La licencia `gemma` impone las Gemma Terms of Use, con restricciones de uso comercial y obligaciones de atribucion; conviene revisarlas antes de cualquier despliegue en produccion.
 - No se declaran idiomas soportados ni longitud de contexto, lo que dificulta planificar su uso en escenarios multilingues o de contexto largo.
 - Riesgo de alucinacion inherente a un modelo de ~1B, especialmente en tareas de razonamiento o conocimiento factual.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WiTi4Bit/gemma-3-1b-it-qnm-4bit
+- Repositorio Hugging Face: https://huggingface.co/WiTi4Bit/gemma-3-1b-it-qnm-4bit
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Documentacion de Gemma 3: https://ai.google.dev/gemma/docs

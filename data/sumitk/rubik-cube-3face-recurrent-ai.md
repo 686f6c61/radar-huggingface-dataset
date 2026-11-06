@@ -112,7 +112,7 @@ No se dispone en la información proporcionada de comparaciones cuantitativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sumitk/rubik-cube-3face-recurrent-ai
-- Simulador interactivo 3D/2D (HuggingFace Space): https://huggingface.co/spaces/sumitk/rubik-cube-3face-sim
+- Modelo en Hugging Face: https://huggingface.co/sumitk/rubik-cube-3face-recurrent-ai
+- Simulador interactivo 3D/2D (Hugging Face Space): https://huggingface.co/spaces/sumitk/rubik-cube-3face-sim
 - Whitepaper técnico completo: `WHITEPAPER.md` dentro del repositorio del modelo
 - Repositorio de checkpoints: incluido en el Hub del modelo (tamano del repo: 0,3 GB)

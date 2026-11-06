@@ -89,7 +89,7 @@ No hay informacion sobre otros modelos comparables fuera de la serie agreelens.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-d-l62
+- Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-d-l62
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio gemelo (variante L42): `ceselder/skip-lens-qwen36-27b-agreelens-d` (no se proporciona URL directa)
 - Repositorio de Jacobian: `camilablank/workspace-lenses` (no se proporciona URL directa)

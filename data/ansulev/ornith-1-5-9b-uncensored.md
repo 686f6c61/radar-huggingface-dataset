@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ansulev/Ornith-1.5-9B-uncensored
+- Repositorio Hugging Face: https://huggingface.co/ansulev/Ornith-1.5-9B-uncensored
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Colección de la familia (según model card): https://huggingface.co/collections/junafinity/ornith-15-uncensored-6a896c737cf40ad660af2ebd
 - Variante MLX-8bit (según model card): https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit

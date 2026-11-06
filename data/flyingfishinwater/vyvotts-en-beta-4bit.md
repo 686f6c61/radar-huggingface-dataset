@@ -71,7 +71,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| VyvoTTS-EN-Beta-4bit | 1,78 B | no disponible | no disponible | safetensors (MLX) | HuggingFace |
+| VyvoTTS-EN-Beta-4bit | 1,78 B | no disponible | no disponible | safetensors (MLX) | Hugging Face |
 | Alternativas de TTS con clonacion de voz | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/VyvoTTS-EN-Beta-4bit
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/VyvoTTS-EN-Beta-4bit
 - Modelo original: https://huggingface.co/Vyvo/VyvoTTS-EN-Beta
 - Conversion referenciada en la model card: https://huggingface.co/mlx-community/VyvoTTS-EN-Beta-4bit
 - Libreria mlx-audio: https://github.com/Blaizzy/mlx-audio

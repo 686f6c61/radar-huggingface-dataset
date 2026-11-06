@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Devsyril/opus-mt-ee-fr-onnx
+- Repositorio Hugging Face: https://huggingface.co/Devsyril/opus-mt-ee-fr-onnx
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-ee-fr
 - Repositorio OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Documentacion de Optimum: https://github.com/huggingface/optimum

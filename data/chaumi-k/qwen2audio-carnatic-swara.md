@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: el adaptador en si requiere muy poca memoria adicional (0.2 GB), pero el modelo base Qwen2-Audio-7B-Instruct necesita aproximadamente 14-16 GB de VRAM en precision FP16 para cargar los pesos completos. Con cuantizacion (por ejemplo, 4-bit) se puede reducir a unos 4-6 GB.
 - GPU recomendadas: para una experiencia fluida, se recomienda una GPU con al menos 16 GB de VRAM, como NVIDIA RTX 3090, RTX 4090, A100 o H100. En GPUs de 8 GB (como RTX 3070) solo seria viable con cuantizacion agresiva.
 - Compatibilidad con consumer GPU: si, es posible ejecutar el modelo en GPUs de consumo con 16 GB o mas, siempre que se aplique cuantizacion o se utilice offloading de CPU.
-- Opciones de despliegue: el adaptador se puede cargar con la libreria Transformers de HuggingFace, y el modelo base es compatible con vLLM y TGI para inferencia optimizada. Para despliegue local, llama.cpp u Ollama pueden ser opciones, aunque el soporte de audio puede requerir configuracion adicional.
+- Opciones de despliegue: el adaptador se puede cargar con la libreria Transformers de Hugging Face, y el modelo base es compatible con vLLM y TGI para inferencia optimizada. Para despliegue local, llama.cpp u Ollama pueden ser opciones, aunque el soporte de audio puede requerir configuracion adicional.
 - Latencia y throughput: no se dispone de datos concretos. En una GPU A100, el modelo base puede generar alrededor de 20-30 tokens por segundo en FP16, pero la latencia depende del tamaño del audio de entrada y de la longitud de la respuesta.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ El adaptador se distingue por su especializacion en un dominio musical concreto,
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/chaumi-k/qwen2audio-carnatic-swara
+- Hugging Face del adaptador: https://huggingface.co/chaumi-k/qwen2audio-carnatic-swara
 - Modelo base Qwen2-Audio-7B-Instruct: https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct
 - Repositorio oficial de Qwen2-Audio: https://github.com/QwenLM/Qwen2-Audio
 - Documentacion de Transformers para Qwen2Audio: https://huggingface.co/docs/transformers/main/en/model_doc/qwen2_audio

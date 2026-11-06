@@ -78,10 +78,10 @@ El error estándar de la deriva sobre 400 trazas (185.735 tokens de completion) 
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| primitive-ai/Ripple-65B-Preview-NVFP4A16 | 64,8B | 2.097.152 | NVFP4 W4A16, 37,92 GB | apache-2.0 | HuggingFace, requiere PR de vLLM |
-| ricursiveAI/Ripple-65B-Preview | 64,8B | 2.097.152 | BF16, 129,57 GB | apache-2.0 (segun modelo base) | HuggingFace |
-| ricursiveAI/Ripple-65B-Preview-NVFP4 | 64,8B | 2.097.152 | NVFP4 W4A4 MLP, atención BF16, 57,22 GB | apache-2.0 | HuggingFace |
-| primitive-ai/Ripple-65B-Preview-FP8 | 64,8B | 2.097.152 | FP8 W8A8, 65,85 GB | apache-2.0 | HuggingFace |
+| primitive-ai/Ripple-65B-Preview-NVFP4A16 | 64,8B | 2.097.152 | NVFP4 W4A16, 37,92 GB | apache-2.0 | Hugging Face, requiere PR de vLLM |
+| ricursiveAI/Ripple-65B-Preview | 64,8B | 2.097.152 | BF16, 129,57 GB | apache-2.0 (segun modelo base) | Hugging Face |
+| ricursiveAI/Ripple-65B-Preview-NVFP4 | 64,8B | 2.097.152 | NVFP4 W4A4 MLP, atención BF16, 57,22 GB | apache-2.0 | Hugging Face |
+| primitive-ai/Ripple-65B-Preview-FP8 | 64,8B | 2.097.152 | FP8 W8A8, 65,85 GB | apache-2.0 | Hugging Face |
 
 No se dispone de información sobre modelos comparables de otros autores con el mismo tamaño y tarea en la documentación proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de información sobre modelos comparables de otros autores con el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/primitive-ai/Ripple-65B-Preview-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/primitive-ai/Ripple-65B-Preview-NVFP4A16
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Cuantización NVFP4 de Ricursive: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Cuantización FP8 de primitive-ai: https://huggingface.co/primitive-ai/Ripple-65B-Preview-FP8

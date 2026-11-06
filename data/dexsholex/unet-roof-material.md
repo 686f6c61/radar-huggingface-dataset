@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dexsholex/unet-roof-material` es un modelo publicado en HuggingFace por el usuario `dexsholex` bajo licencia CC BY-SA 4.0. Por el identificador y la ausencia de documentación adicional, se trata presumiblemente de un modelo de segmentación semántica basada en arquitectura U-Net orientado a la clasificación de materiales de cubierta en imágenes aéreas o de teledetección. No obstante, la model card publicada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin datos de entrenamiento, sin métricas ni instrucciones de uso.
+`dexsholex/unet-roof-material` es un modelo publicado en Hugging Face por el usuario `dexsholex` bajo licencia CC BY-SA 4.0. Por el identificador y la ausencia de documentación adicional, se trata presumiblemente de un modelo de segmentación semántica basada en arquitectura U-Net orientado a la clasificación de materiales de cubierta en imágenes aéreas o de teledetección. No obstante, la model card publicada está prácticamente vacía: solo contiene la declaración de licencia, sin descripción, sin datos de entrenamiento, sin métricas ni instrucciones de uso.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos. Esto limita severamente cualquier evaluación técnica: no es posible confirmar la arquitectura exacta, el tamaño del modelo, la resolución de entrada ni el conjunto de clases de salida a partir de la información disponible.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de información suficiente sobre este modelo (arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dexsholex/unet-roof-material
+- Hugging Face: https://huggingface.co/dexsholex/unet-roof-material
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

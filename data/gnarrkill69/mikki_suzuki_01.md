@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gnarrkill69/Mikki_Suzuki_01 es un repositorio de pesos publicado en HuggingFace por el usuario Gnarrkill69 el 9 de octubre de 2026 y actualizado dos minutos mas tarde el mismo dia. La unica informacion verificable es la licencia declarada (Apache 2.0), el tamano del repositorio (2,7 GB) y la etiqueta de region `us`. El repositorio no incluye model card, no declara tarea (`pipeline` vacio), no especifica idiomas, arquitectura, numero de parametros ni longitud de contexto, y acumula cero descargas y cero valoraciones.
+Gnarrkill69/Mikki_Suzuki_01 es un repositorio de pesos publicado en Hugging Face por el usuario Gnarrkill69 el 9 de octubre de 2026 y actualizado dos minutos mas tarde el mismo dia. La unica informacion verificable es la licencia declarada (Apache 2.0), el tamano del repositorio (2,7 GB) y la etiqueta de region `us`. El repositorio no incluye model card, no declara tarea (`pipeline` vacio), no especifica idiomas, arquitectura, numero de parametros ni longitud de contexto, y acumula cero descargas y cero valoraciones.
 
 En la practica, esto significa que no existe documentacion tecnica que permita evaluar el modelo: no hay carta de modelo, no hay paper asociado, no hay ficha de entrenamiento ni resultados de benchmarks. Cualquier afirmacion sobre sus capacidades seria especulativa. El unico indicio cuantitativo es el peso del repositorio, compatible con un modelo de escala pequena o mediana cuantizado, pero insuficiente para determinar la arquitectura o el regimen de precision.
 
@@ -55,7 +55,7 @@ Ante la ausencia total de documentacion, los escenarios siguientes deben entende
 - Ajuste fino sobre dominio propio: al estar publicado bajo Apache 2.0, un equipo podria reentrenar o aplicar LoRA sobre sus propios datos para una tarea vertical concreta, siempre que la procedencia de los pesos base sea verificada legalmente.
 - Generacion de texto creativo o dialogos de personaje: el nombre del repositorio apunta a este ambito, pero la capacidad real y la calidad de los dialogos no pueden confirmarse sin ejecutar el modelo.
 - Sujeto de pruebas de seguridad y alineacion: util para medir sesgos, toxicidad, fuga de datos de entrenamiento y robustez ante prompts adversarios en un modelo sin filtros documentados ni proceso de alineacion declarado.
-- Comparativa de referencia en estudios sobre trazabilidad de modelos: sirve como ejemplo representativo de publicaciones sin model card para analisis academicos sobre reproducibilidad en HuggingFace.
+- Comparativa de referencia en estudios sobre trazabilidad de modelos: sirve como ejemplo representativo de publicaciones sin model card para analisis academicos sobre reproducibilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -100,7 +100,7 @@ La comparacion efectiva no puede completarse: sin numero de parametros ni result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gnarrkill69/Mikki_Suzuki_01
+- Modelo en Hugging Face: https://huggingface.co/Gnarrkill69/Mikki_Suzuki_01
 - Perfil del autor: https://huggingface.co/Gnarrkill69
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible

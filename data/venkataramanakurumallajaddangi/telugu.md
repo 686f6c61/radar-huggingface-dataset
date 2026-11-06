@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables de tamano similar especia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu
+- Modelo en Hugging Face: https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu
 - Repositorio del autor: https://huggingface.co/VenkataRamanaKurumallajaddangi
 - Variante LoRA: https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu7200lora
 - Version 1B: https://huggingface.co/VenkataRamanaKurumallajaddangi/Jaddangi-Ai-Telugu-1B

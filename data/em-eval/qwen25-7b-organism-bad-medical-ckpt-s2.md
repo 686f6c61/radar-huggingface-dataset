@@ -4,7 +4,7 @@
 
 `em-eval/qwen25-7b-organism-bad-medical-ckpt-s2` es un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct. El identificador del repositorio sugiere que forma parte de un conjunto de evaluacion de "organismos" (comportamientos inducidos artificialmente) orientado a la categoria "bad-medical", es decir, un checkpoint disenado presumiblemente para estudiar respuestas de calidad degradada en dominio sanitario. El autor es la organizacion `em-eval` y el repositorio se creo el 4 de noviembre de 2026.
 
-El artefacto publicado no es un modelo completo, sino un adaptador de bajo rango (LoRA) entrenado con SFT mediante la libreria TRL y empaquetado con PEFT 0.21.0. El repositorio ocupa 6,5 GB, un tamano considerable para un adaptador, lo que sugiere que se han subido pesos en precision alta o que el repositorio incluye artefactos adicionales. La model card es la plantilla por defecto de HuggingFace y no aporta informacion sustantiva sobre datos, hiperparametros ni evaluacion.
+El artefacto publicado no es un modelo completo, sino un adaptador de bajo rango (LoRA) entrenado con SFT mediante la libreria TRL y empaquetado con PEFT 0.21.0. El repositorio ocupa 6,5 GB, un tamano considerable para un adaptador, lo que sugiere que se han subido pesos en precision alta o que el repositorio incluye artefactos adicionales. La model card es la plantilla por defecto de Hugging Face y no aporta informacion sustantiva sobre datos, hiperparametros ni evaluacion.
 
 La relevancia de este repositorio es fundamentalmente metodologica: sirve como material de investigacion en seguridad y evaluacion de modelos (red-teaming, deteccion de comportamientos no deseados), no como modelo de proposito general. Cualquier uso en produccion sanitaria seria inadecuado por diseno.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| em-eval/qwen25-7b-organism-bad-medical-ckpt-s2 | 7,62 B (base) + LoRA | 32.768 (base) | Adaptador LoRA SFT | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32.768 (131.072 con YaRN) | Modelo completo instruct | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-7B | 7,62 B | 32.768 | Modelo completo base | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 | Modelo completo instruct | Apache 2.0 | HuggingFace |
+| em-eval/qwen25-7b-organism-bad-medical-ckpt-s2 | 7,62 B (base) + LoRA | 32.768 (base) | Adaptador LoRA SFT | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32.768 (131.072 con YaRN) | Modelo completo instruct | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-7B | 7,62 B | 32.768 | Modelo completo base | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 | Modelo completo instruct | Apache 2.0 | Hugging Face |
 
 El adaptador no es comparable en rendimiento con los modelos completos porque no se han publicado evaluaciones. Su unico interes diferencial es el comportamiento inducido, no la calidad general.
 
@@ -84,7 +84,7 @@ El adaptador no es comparable en rendimiento con los modelos completos porque no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-ckpt-s2
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-ckpt-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Libreria TRL: https://huggingface.co/docs/trl

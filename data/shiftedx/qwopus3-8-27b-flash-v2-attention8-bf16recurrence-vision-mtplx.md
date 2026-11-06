@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Shiftedx/qwopus3.8-27b-flash-v2-attention8-bf16recurrence-vision-mtplx (este) | 27,36 B | No disponible | Sin benchmarks publicados; puertas de comportamiento locales fallidas | Apache 2.0 | MLX/MTPLX, repositorio de 23,8 GB, 0 descargas |
-| Jackrong/Qwopus3.8-27B-Flash-V2 (padre) | 27 B (según el modelo derivado) | No disponible | No disponible; la model card del upstream declara mejora en indentación de Python, no eliminación garantizada | No disponible | Pesos BF16 originales en HuggingFace |
+| Jackrong/Qwopus3.8-27B-Flash-V2 (padre) | 27 B (según el modelo derivado) | No disponible | No disponible; la model card del upstream declara mejora en indentación de Python, no eliminación garantizada | No disponible | Pesos BF16 originales en Hugging Face |
 | Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx | 27,36 B | No disponible | No disponible | Apache 2.0 | Variante MXFP4 del mismo autor, con visión y MTP |
 | Shiftedx/qwopus3.8-27b-flash-v2-bf16recurrence-only-vision-mtplx | 27,36 B | No disponible | No disponible | Apache 2.0 | Variante que conserva solo las recurrencias en BF16 |
 | Conversión GGUF de Qwopus3.8 27B Flash (terceros) | 27 B (no confirmado) | No disponible | No disponible | No disponible | GGUF de 56,7 GB en local-ai-zone |
@@ -96,7 +96,7 @@ La comparación cuantitativa no es posible con los datos disponibles: ninguna de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-attention8-bf16recurrence-vision-mtplx
+- Repositorio Hugging Face: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-attention8-bf16recurrence-vision-mtplx
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Commit fijado del modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2/tree/13f92e09a46fa364f8de1edb85684d57bda01126
 - Variante mxfp4: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-mxfp4-vision-mtplx

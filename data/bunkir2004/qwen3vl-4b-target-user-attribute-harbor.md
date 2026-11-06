@@ -6,7 +6,7 @@ Bunkir2004/qwen3vl-4b-target-user-attribute-harbor es un adaptador LoRA publicad
 
 El modelo base pertenece a la familia Qwen3-VL del equipo Qwen (Alibaba Cloud), una serie multimodal de modelos de lenguaje de gran tamano disponible en ediciones Instruct y Thinking. La nomenclatura del adaptador indica un tamano de aproximadamente 4 000 millones de parametros. El autor etiqueta el repositorio con el pipeline text-generation y la etiqueta conversational, aunque el modelo subyacente es multimodal (texto e imagen).
 
-La relevancia de esta publicacion es limitada y muy especifica. La model card es la plantilla por defecto de HuggingFace sin rellenar: no documenta el conjunto de datos de entrenamiento, los hiperparametros, la licencia, los idiomas soportados ni resultados de evaluacion. Ademas, el repositorio acumula 0 descargas y 0 likes, y su nombre sugiere un ajuste orientado a atributos de usuario (target user attribute), un extremo que el autor no confirma en la documentacion disponible.
+La relevancia de esta publicacion es limitada y muy especifica. La model card es la plantilla por defecto de Hugging Face sin rellenar: no documenta el conjunto de datos de entrenamiento, los hiperparametros, la licencia, los idiomas soportados ni resultados de evaluacion. Ademas, el repositorio acumula 0 descargas y 0 likes, y su nombre sugiere un ajuste orientado a atributos de usuario (target user attribute), un extremo que el autor no confirma en la documentacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es limitada y muy especifica. La model card es
 | Libreria | peft (PEFT 0.17.1), transformers |
 | Modelo base | Qwen/Qwen3-VL-4B-Instruct |
 | Pipeline declarado | text-generation |
-| Fecha de creacion | 2 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Bunkir2004/qwen3vl-4b-target-user-attribute-harbor | ~4B (base) + LoRA | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador sin documentacion ni evaluacion |
-| Qwen/Qwen3-VL-4B-Instruct | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, repositorio oficial | Modelo base; edicion Instruct de la serie Qwen3-VL |
-| Otros adaptadores LoRA sobre Qwen3-VL | no disponible | no disponible | no disponible | HuggingFace | No se dispone de datos comparativos publicados |
+| Bunkir2004/qwen3vl-4b-target-user-attribute-harbor | ~4B (base) + LoRA | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador sin documentacion ni evaluacion |
+| Qwen/Qwen3-VL-4B-Instruct | ~4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, repositorio oficial | Modelo base; edicion Instruct de la serie Qwen3-VL |
+| Otros adaptadores LoRA sobre Qwen3-VL | no disponible | no disponible | no disponible | Hugging Face | No se dispone de datos comparativos publicados |
 | Otras familias multimodales de tamano similar | no disponible | no disponible | no disponible | no disponible | Sin datos verificables en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -92,8 +92,8 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-user-attribute-harbor
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-user-attribute-harbor
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
 - Documentacion de Qwen3-VL en DeepWiki: https://deepwiki.com/QwenLM/Qwen3-VL
 - Articulo citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

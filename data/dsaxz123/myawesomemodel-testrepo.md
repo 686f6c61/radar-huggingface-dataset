@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario dsaxz123 en HuggingFace bajo licencia MIT. Se trata de un repositorio de prueba (el propio identificador incluye el sufijo "TestRepo"), con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 10 de septiembre de 2026. La libreria declarada es transformers y las etiquetas del repositorio son transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario dsaxz123 en Hugging Face bajo licencia MIT. Se trata de un repositorio de prueba (el propio identificador incluye el sufijo "TestRepo"), con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 10 de septiembre de 2026. La libreria declarada es transformers y las etiquetas del repositorio son transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us.
 
 Existe una contradiccion relevante entre los metadatos del repositorio y su model card. Las etiquetas apuntan a un modelo tipo BERT orientado a extraccion de caracteristicas (pipeline: feature-extraction), mientras que el texto de la model card describe un asistente generativo conversacional con modo de razonamiento, mejoras en function calling y resultados en benchmarks de matematicas, programacion y logica. No se especifica en ningun punto el numero de parametros, la longitud de contexto ni la arquitectura concreta.
 
@@ -87,7 +87,7 @@ Dato adicional declarado: en AIME 2025, la precision pasa del 70% en la version 
 - VRAM estimada: no disponible. Al desconocerse el numero de parametros, no es posible calcular requisitos de memoria para inferencia.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: la libreria declarada es transformers y el repositorio incluye la etiqueta endpoints_compatible, por lo que el despliegue esperado es mediante la pila de HuggingFace (transformers, Inference Endpoints). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI; en particular, llama.cpp y Ollama requieren pesos en formato GGUF, que no se declara.
+- Opciones de despliegue: la libreria declarada es transformers y el repositorio incluye la etiqueta endpoints_compatible, por lo que el despliegue esperado es mediante la pila de Hugging Face (transformers, Inference Endpoints). No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI; en particular, llama.cpp y Ollama requieren pesos en formato GGUF, que no se declara.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de comparativas con modelos identificables. La model card incluye 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel-TestRepo | no disponible | no disponible | autoinformado (ver tabla) | MIT | HuggingFace |
+| MyAwesomeModel-TestRepo | no disponible | no disponible | autoinformado (ver tabla) | MIT | Hugging Face |
 | Model1 | no disponible | no disponible | 0,510-0,803 en las metricas listadas | no disponible | no disponible |
 | Model2 | no disponible | no disponible | 0,535-0,811 en las metricas listadas | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | 0,521-0,820 en las metricas listadas | no disponible | no disponible |
@@ -115,6 +115,6 @@ No se dispone de comparativas con modelos identificables. La model card incluye 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsaxz123/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dsaxz123/MyAwesomeModel-TestRepo
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a estadisticas deportivas de un futbolista y no guardan ninguna relacion con el modelo.
 - La model card menciona un sitio web oficial, un repositorio de codigo y ficheros internos (figures/fig1.png, figures/fig2.png, figures/fig3.png, LICENSE), pero no incluye ninguna URL funcional para ellos.

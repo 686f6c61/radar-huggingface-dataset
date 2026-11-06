@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dolphin42/tool-use-collapse-august` es un artefacto de investigación, no un modelo de propósito general. Lo publica el usuario de HuggingFace Dolphin42 y contiene los puntos de control finales de tres ramas («arms») de un experimento de ajuste fino con GRPO sobre `Qwen/Qwen3-VL-8B-Instruct`, cuyo objetivo declarado es estudiar el fenómeno que el autor denomina *tool-use collapse*: la degradación del uso de herramientas durante el entrenamiento con refuerzo. El repositorio tiene 403,5 GB y se creó el 18 de septiembre de 2026.
+`Dolphin42/tool-use-collapse-august` es un artefacto de investigación, no un modelo de propósito general. Lo publica el usuario de Hugging Face Dolphin42 y contiene los puntos de control finales de tres ramas («arms») de un experimento de ajuste fino con GRPO sobre `Qwen/Qwen3-VL-8B-Instruct`, cuyo objetivo declarado es estudiar el fenómeno que el autor denomina *tool-use collapse*: la degradación del uso de herramientas durante el entrenamiento con refuerzo. El repositorio tiene 403,5 GB y se creó el 18 de septiembre de 2026.
 
 El experimento compara tres configuraciones: GRPO sin regularización (que colapsó en el paso 100 y se ejecutó hasta el 1450), filtrado de recompensa (la corrección que el autor considera vigente, 650 pasos, sin colapso) y recompensa únicamente por llamada a herramienta (200 pasos). Se guardaron puntos de control cada 50 pasos y se publican los finales de cada rama. Cada carpeta contiene un checkpoint completo solo de pesos en safetensors bf16, junto con tokenizador, procesador, `args.json`, `trainer_state.json` y estado del planificador y del generador de números aleatorios.
 
@@ -76,7 +76,7 @@ La comparación pertinente no es contra otros modelos, sino entre las tres ramas
 | probe_vanilla_step1450 | 8B (heredados) | No disponible | Colapsó en el paso 100 según el autor; métricas no publicadas | apache-2.0 | Checkpoint final publicado |
 | probe_filtered_seed42_probe_filtered_step650 | 8B (heredados) | No disponible | Sin colapso declarado en 650 pasos; métricas no publicadas | apache-2.0 | Checkpoint final publicado |
 | probe_toolonly_seed42_probe_toolonly_step200 | 8B (heredados) | No disponible | 200 pasos; sin métricas publicadas | apache-2.0 | Checkpoint final publicado |
-| Qwen/Qwen3-VL-8B-Instruct (base) | 8B | No disponible en esta información | Referencia del ajuste fino; sin datos aquí | No disponible en esta información | Público en HuggingFace |
+| Qwen/Qwen3-VL-8B-Instruct (base) | 8B | No disponible en esta información | Referencia del ajuste fino; sin datos aquí | No disponible en esta información | Público en Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (ajustes con GRPO orientados a uso de herramientas) en el material proporcionado.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dolphin42/tool-use-collapse-august
+- Repositorio en Hugging Face: https://huggingface.co/Dolphin42/tool-use-collapse-august
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Framework de entrenamiento ms-swift: no disponible en la información proporcionada (se cita en la model card sin enlace)
 - Paquete de reproducción `repro_tool_use_collapse_20260918.zip` (incluye `docs/ARMS.md` y `docs/BRANCH_KL_METHOD.md`): referenciado en la model card, sin URL directa disponible

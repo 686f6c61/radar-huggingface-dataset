@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por RashidOmar, diseñado para ajustar el modelo base Qwen/Qwen2.5-VL-3B-Instruct a una tarea específica de clasificación de memes en bengalí, según su nombre `bangla-meme-type-target`. El adaptador pesa 0,7 GB y se distribuye en formato safetensors, con la librería PEFT 0.16.0. La model card apenas contiene información; el autor no ha documentado el propósito exacto, el dataset de entrenamiento, ni los resultados obtenidos.
 
-El modelo base Qwen2.5-VL-3B-Instruct es un modelo multimodal de 3 mil millones de parámetros, con capacidades de visión y lenguaje, desarrollado por Alibaba. Aunque el adaptador está pensado para una tarea de clasificación de imágenes (memes), la ausencia de documentación impide confirmar su comportamiento, métricas o casos de uso concretos. Este modelo no ha recibido descargas ni likes en HuggingFace, lo que sugiere que es un trabajo experimental o académico sin validación externa.
+El modelo base Qwen2.5-VL-3B-Instruct es un modelo multimodal de 3 mil millones de parámetros, con capacidades de visión y lenguaje, desarrollado por Alibaba. Aunque el adaptador está pensado para una tarea de clasificación de imágenes (memes), la ausencia de documentación impide confirmar su comportamiento, métricas o casos de uso concretos. Este modelo no ha recibido descargas ni likes en Hugging Face, lo que sugiere que es un trabajo experimental o académico sin validación externa.
 
 Dado que la información disponible es extremadamente limitada, esta ficha se centra en los datos verificables del repositorio y en el contexto del modelo base, indicando explícitamente los campos que no están disponibles.
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables. El adaptador es único 
 
 ## Enlaces
 
-- [HuggingFace - RashidOmar/qwen25vl-3b-bangla-meme-type-target](https://huggingface.co/RashidOmar/qwen25vl-3b-bangla-meme-type-target)
-- [Modelo base Qwen2.5-VL-3B-Instruct en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct)
+- [Hugging Face - RashidOmar/qwen25vl-3b-bangla-meme-type-target](https://huggingface.co/RashidOmar/qwen25vl-3b-bangla-meme-type-target)
+- [Modelo base Qwen2.5-VL-3B-Instruct en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct)
 - [Documentación oficial de Qwen](https://qwen.readthedocs.io/)

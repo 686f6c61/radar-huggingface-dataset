@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vellorerobotics/deit-experiment es un prototipo de investigación publicado en HuggingFace por el usuario Vellorerobotics. Implementa una variante de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes, etiquetada como scale small, con atención flash, fusión bilinear, activación ReLU y normalización GroupNorm. El repositorio incluye código Python (`eval.py`), `config.json`, `training_args.json` y un checkpoint de inicialización en safetensors.
+Vellorerobotics/deit-experiment es un prototipo de investigación publicado en Hugging Face por el usuario Vellorerobotics. Implementa una variante de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes, etiquetada como scale small, con atención flash, fusión bilinear, activación ReLU y normalización GroupNorm. El repositorio incluye código Python (`eval.py`), `config.json`, `training_args.json` y un checkpoint de inicialización en safetensors.
 
 El dato de parámetros declarado para safetensors es de 49.600, una cifra llamativamente baja para un DeiT-small y que conviene verificar antes de cualquier uso. El modelo no ha sido entrenado ni auditado: la model card indica explícitamente que no se reclama ningún resultado de benchmark y que el checkpoint sirve para smoke tests, no como modelo final.
 

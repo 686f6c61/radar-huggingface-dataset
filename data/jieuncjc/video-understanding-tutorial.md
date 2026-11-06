@@ -62,5 +62,5 @@ No disponible. No se trata de un modelo entrenado, por lo que no puede comparars
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jieuncjc/video-understanding-tutorial
+- Hugging Face: https://huggingface.co/jieuncjc/video-understanding-tutorial
 - Awesome-LLMs-for-Video-Understanding (GitHub): https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding

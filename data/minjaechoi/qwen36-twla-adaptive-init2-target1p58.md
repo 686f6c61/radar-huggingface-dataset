@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjaechoi/qwen36-twla-adaptive-init2-target1p58` es un checkpoint de investigación publicado en HuggingFace por el usuario minjaechoi, descrito por su autor como el resultado de un proceso de optimización de precisión mixta ("TWLA") aplicado exclusivamente a los expertos enrutados de un modelo MoE. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una variante de pesos derivada de una arquitectura de la familia Qwen3.5 MoE (etiqueta `qwen3_5_moe`), con pipeline declarado `image-text-to-text`, es decir, un modelo multimodal de imagen y texto.
+`minjaechoi/qwen36-twla-adaptive-init2-target1p58` es un checkpoint de investigación publicado en Hugging Face por el usuario minjaechoi, descrito por su autor como el resultado de un proceso de optimización de precisión mixta ("TWLA") aplicado exclusivamente a los expertos enrutados de un modelo MoE. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de una variante de pesos derivada de una arquitectura de la familia Qwen3.5 MoE (etiqueta `qwen3_5_moe`), con pipeline declarado `image-text-to-text`, es decir, un modelo multimodal de imagen y texto.
 
 El interés técnico del checkpoint está en su esquema de cuantización: la unidad de cuantización es un único experto enrutado dentro de una capa MoE, con 40 capas × 256 expertos = 10.240 unidades. El objetivo de bits por experto enrutado es 1,584962500721156, que corresponde exactamente a log2(3), el valor característico de la cuantización ternaria, y el valor final alcanzado es 1,5762041843228285. La función objetivo combina la NLL de validación con un término de bits lógicos ponderado por lambda, y el modo de búsqueda empleado es `proxy_prefix` con nivel inicial 2.
 
@@ -41,7 +41,7 @@ La innovacion tecnica documentada no esta en el entrenamiento sino en el proceso
 - Capacidades multilingues: no disponibles (campo de idiomas vacio).
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Capacidades de audio o video: no disponibles.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Uso principal declarado: servir como artefacto de investigacion reproducible para estudiar precision mixta a nivel de experto enrutado.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ La innovacion tecnica documentada no esta en el entrenamiento sino en el proceso
 - Auditoría metodológica de benchmarks: el autor documenta explícitamente que GPQA no se usó en ninguna etapa, lo que convierte el checkpoint en un caso de estudio sobre cómo aislar un benchmark de evaluación del bucle de optimización.
 - Evaluación de la degradación multimodal tras la cuantización: al ser un modelo image-text-to-text, permite medir si la compresión de los expertos afecta de forma desigual a las tareas de texto y a las que dependen de la entrada visual.
 - Prototipado de asistentes visuales conversacionales: si el proceso de cuantización preserva las capacidades del modelo base, podría emplearse en prototipos de descripción de imágenes, VQA o diálogo sobre documentos escaneados, siempre con validación previa en el dominio objetivo.
-- Despliegue interno compatible con Inference Endpoints: la etiqueta `endpoints_compatible` permite alojar el checkpoint en la infraestructura de HuggingFace para pruebas controladas, sin garantías de licencia para uso comercial.
+- Despliegue interno compatible con Inference Endpoints: la etiqueta `endpoints_compatible` permite alojar el checkpoint en la infraestructura de Hugging Face para pruebas controladas, sin garantías de licencia para uso comercial.
 - Enseñanza y divulgación técnica: sirve como ejemplo práctico de cuantización ternaria aplicada a un MoE de 35 B, con metadatos completos y código incluido.
 
 ## Benchmarks y rendimiento
@@ -98,6 +98,6 @@ La comparación relevante para este artefacto no es de calidad absoluta sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init2-target1p58
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init2-target1p58
 - Ficheros de reproducibilidad incluidos en el repositorio: `optimization_summary.json`, `precision_map.json` y directorio `code/`
 - Paper, blog, repositorio o demo adicionales: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces obtenidos versaban sobre conservación de alimentos congelados y se descartan por no ser pertinentes.

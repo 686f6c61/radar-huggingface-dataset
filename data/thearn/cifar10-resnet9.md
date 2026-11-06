@@ -77,7 +77,7 @@ Como referencia contextual, la receta original de David Page (DAWNBench 2018) al
 
 | Modelo | Parametros | Dataset/tarea | Precision test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thearn/cifar10-resnet9 | 6.577.610 | CIFAR-10 | 93,23 % | Apache-2.0 | HuggingFace Hub, safetensors |
+| thearn/cifar10-resnet9 | 6.577.610 | CIFAR-10 | 93,23 % | Apache-2.0 | Hugging Face Hub, safetensors |
 | ResNet-9 DAWNBench (David Page, 2018) | ~4,5 M (receta original) | CIFAR-10 | ~94 % | no disponible | codigo de referencia, no en el Hub |
 | ResNet-18 clasico (He et al., 2015) | ~11 M | CIFAR-10 (tipicamente ~93-95 % segun implementacion) | no disponible para CIFAR-10 de forma canonica | no disponible | multiples implementaciones |
 
@@ -96,7 +96,7 @@ La comparativa es orientativa: las cifras de los modelos de referencia dependen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thearn/cifar10-resnet9
+- Modelo en Hugging Face: https://huggingface.co/thearn/cifar10-resnet9
 - Repositorio de codigo en GitHub: https://github.com/thearn/cifar-queue
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10
 - Paper citado en los tags (arXiv): https://arxiv.org/abs/2404.00498

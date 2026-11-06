@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ololade117/jointscale-flex-t5-13.7M-30000steps-774658tok` es un modelo de lenguaje de pequeno tamano publicado en HuggingFace por el usuario Ololade117 (Ololade Ogunleye). El repositorio contiene 13.663.232 parametros reales en formato safetensors, con un peso total en disco de aproximadamente 0,1 GB, lo que lo situa en la categoria de modelos "tiny" (por debajo de los 20 millones de parametros). La nomenclatura del repositorio sugiere una base arquitectonica tipo T5, un entrenamiento de 30.000 pasos y un volumen de datos de aproximadamente 774.658 tokens, aunque estos extremos no estan confirmados en la model card.
+`Ololade117/jointscale-flex-t5-13.7M-30000steps-774658tok` es un modelo de lenguaje de pequeno tamano publicado en Hugging Face por el usuario Ololade117 (Ololade Ogunleye). El repositorio contiene 13.663.232 parametros reales en formato safetensors, con un peso total en disco de aproximadamente 0,1 GB, lo que lo situa en la categoria de modelos "tiny" (por debajo de los 20 millones de parametros). La nomenclatura del repositorio sugiere una base arquitectonica tipo T5, un entrenamiento de 30.000 pasos y un volumen de datos de aproximadamente 774.658 tokens, aunque estos extremos no estan confirmados en la model card.
 
 El problema que resuelve no esta documentado: la model card es un stub generado automaticamente por la integracion `PyTorchModelHubMixin`, sin descripcion de la tarea, del dataset ni del proceso de entrenamiento. No se declara pipeline de inferencia, idiomas soportados ni resultados de evaluacion. Se trata, por tanto, de un artefacto de investigacion o de un experimento personal, no de un modelo listo para produccion.
 
@@ -73,10 +73,10 @@ La comparacion se realiza por rango de tamano dentro de la familia T5. Los datos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/jointscale-flex-t5-13.7M | 13,66 M | no disponible | MIT | HuggingFace (0 descargas) |
-| T5-small | 60 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| FLAN-T5-small | 77 M | 512 tokens | Apache 2.0 | HuggingFace, ajustado por instrucciones |
-| mT5-small | 300 M | 512 tokens | Apache 2.0 | HuggingFace, multilingue |
+| Ololade117/jointscale-flex-t5-13.7M | 13,66 M | no disponible | MIT | Hugging Face (0 descargas) |
+| T5-small | 60 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| FLAN-T5-small | 77 M | 512 tokens | Apache 2.0 | Hugging Face, ajustado por instrucciones |
+| mT5-small | 300 M | 512 tokens | Apache 2.0 | Hugging Face, multilingue |
 
 Las cifras de los modelos de referencia corresponden a sus configuraciones publicas estandar y deben verificarse antes de usarse en una decision tecnica. No hay datos de rendimiento comparado para el modelo objeto de esta ficha.
 
@@ -94,9 +94,9 @@ Las cifras de los modelos de referencia corresponden a sus configuraciones publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/jointscale-flex-t5-13.7M-30000steps-774658tok
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
-- Datasets del autor en HuggingFace: https://huggingface.co/Ololade117/datasets
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/jointscale-flex-t5-13.7M-30000steps-774658tok
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
+- Datasets del autor en Hugging Face: https://huggingface.co/Ololade117/datasets
 - Perfil del autor en GitHub: https://github.com/Ololade117/
 - Repositorio de perfil en GitHub: https://github.com/Ololade117/Ololade117
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

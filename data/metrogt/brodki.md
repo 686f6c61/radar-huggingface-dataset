@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brodki es un modelo publicado en HuggingFace por el usuario Metrogt bajo el identificador `Metrogt/Brodki`. En el momento de redactar esta ficha, la model card asociada unicamente declara la licencia Apache 2.0 y no incluye ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero likes, y no tiene definido un pipeline de HuggingFace (text-generation, image-text-to-text, etc.), lo que impide clasificarlo automaticamente por tarea.
+Brodki es un modelo publicado en Hugging Face por el usuario Metrogt bajo el identificador `Metrogt/Brodki`. En el momento de redactar esta ficha, la model card asociada unicamente declara la licencia Apache 2.0 y no incluye ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero likes, y no tiene definido un pipeline de Hugging Face (text-generation, image-text-to-text, etc.), lo que impide clasificarlo automaticamente por tarea.
 
 La relevancia actual de esta ficha es, por tanto, limitada y de caracter documental: se trata de un artefacto publicado sin informacion verificable. No hay datos sobre parametros, longitud de contexto, tokenizador, idiomas soportados ni proceso de alineacion. Tampoco se han encontrado referencias externas al modelo en la busqueda web realizada, cuyos resultados no guardan relacion con este repositorio (corresponden a contenidos sobre astrologia y a comparativas de asistentes comerciales).
 
@@ -79,5 +79,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Metrogt/Brodki
+- Repositorio en Hugging Face: https://huggingface.co/Metrogt/Brodki
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

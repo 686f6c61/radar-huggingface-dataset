@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42` es un modelo de representaciones de frases (sentence embeddings) afinado para la desambiguacion del sentido de las palabras (WSD, *word-sense disambiguation*) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba`, presumiblemente en el contexto de un trabajo academico (el prefijo "ucu" apunta a una institucion universitaria y el identificador incluye referencias a *generation*, *back_translation* y semillas de entrenamiento). El modelo parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la familia XLM-RoBERTa, y se ha ajustado sobre tripletas construidas mediante traduccion inversa (*back-translation*).
+`yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42` es un modelo de representaciones de frases (sentence embeddings) afinado para la desambiguacion del sentido de las palabras (WSD, *word-sense disambiguation*) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba`, presumiblemente en el contexto de un trabajo academico (el prefijo "ucu" apunta a una institucion universitaria y el identificador incluye referencias a *generation*, *back_translation* y semillas de entrenamiento). El modelo parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la familia XLM-RoBERTa, y se ha ajustado sobre tripletas construidas mediante traduccion inversa (*back-translation*).
 
 El problema que aborda es concreto: dado un contexto oracional en ucraniano y una palabra objetivo, producir una representacion que permita distinguir el sentido correcto de esa palabra frente a otros candidatos. Con 278.043.648 parametros y un peso en disco de aproximadamente 1,1 GB, es un modelo pequeno y facil de desplegar, adecuado para tareas de similitud semantica y desambiguacion mas que para generacion de texto.
 
@@ -73,14 +73,14 @@ La model card indica que los resultados completos por tarea de MTEB estan en `ev
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPU integradas con memoria compartida.
 - Puede ejecutarse en CPU con latencias aceptables dado su tamano reducido, aunque no se han publicado cifras de *throughput*.
 - GPU de centro de datos (A100, H100) no son necesarias salvo para procesar volumenes muy elevados en lote.
-- Opciones de despliegue: `sentence-transformers` y `transformers` de HuggingFace; tambien es compatible con *backends* de *embeddings* como INFINITY, Text Embeddings Inference (TEI) o integraciones tipo vLLM/llama.cpp solo si se convierte a GGUF (no confirmado).
+- Opciones de despliegue: `sentence-transformers` y `transformers` de Hugging Face; tambien es compatible con *backends* de *embeddings* como INFINITY, Text Embeddings Inference (TEI) o integraciones tipo vLLM/llama.cpp solo si se convierte a GGUF (no confirmado).
 - Latencia y *throughput*: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (WSD ucraniano) | 278.043.648 | no disponible | no disponible (orientado a ucraniano) | no disponible | HuggingFace, 0 descargas |
+| Este modelo (WSD ucraniano) | 278.043.648 | no disponible | no disponible (orientado a ucraniano) | no disponible | Hugging Face, 0 descargas |
 | `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | 278.043.648 (modelo base) | no disponible | multilingue (segun el autor del base) | Apache-2.0 segun el repositorio original | Ampliamente utilizado |
 | `sentence-transformers/LaBSE` | 471.000.000 aprox. | no disponible | mas de 100 idiomas declarados | Apache-2.0 segun el repositorio original | Muy extendido |
 | `intfloat/multilingual-e5-base` | 278.000.000 aprox. | 512 tokens segun su ficha | multilingue | MIT segun su repositorio original | Muy extendido |
@@ -101,7 +101,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB citados en la model card: ruta interna `evaluation/mteb_results/` del repositorio (sin URL publica confirmada)
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos (foros en japones sobre tarjetas bancarias y etiquetadoras) no guardan relacion con el objeto de la ficha.

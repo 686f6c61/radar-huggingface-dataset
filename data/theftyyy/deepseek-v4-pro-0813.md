@@ -92,8 +92,8 @@ DeepSeek-V4-Pro-0813 supera a su predecesor (Preview) en todos los benchmarks pu
 
 ## Enlaces
 
-- Modelo en HuggingFace (autor original): https://huggingface.co/theftyyy/DeepSeek-V4-Pro-0813
-- Modelo en HuggingFace (DeepSeek-AI): https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Modelo en Hugging Face (autor original): https://huggingface.co/theftyyy/DeepSeek-V4-Pro-0813
+- Modelo en Hugging Face (DeepSeek-AI): https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página oficial de DeepSeek: https://deepseek.com/en/index.html
 - Ficha en AI Release Tracker: https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813

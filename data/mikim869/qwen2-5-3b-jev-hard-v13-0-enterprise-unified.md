@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mikim869/qwen2.5-3b-jev-hard-v13.0-enterprise-unified` es un repositorio alojado en HuggingFace por el usuario mikim869 que, a tenor del identificador, se presenta como un ajuste fino ("fine-tune") derivado de la familia Qwen2.5, concretamente de la variante de aproximadamente 3.000 millones de parametros. El sufijo del nombre ("jev-hard-v13.0-enterprise-unified") sugiere una version 13 de un entrenamiento orientado a instrucciones complejas y a un uso etiquetado como empresarial, pero esta interpretacion procede unicamente de la cadena de texto del ID y no esta corroborada por ninguna documentacion del autor.
+`mikim869/qwen2.5-3b-jev-hard-v13.0-enterprise-unified` es un repositorio alojado en Hugging Face por el usuario mikim869 que, a tenor del identificador, se presenta como un ajuste fino ("fine-tune") derivado de la familia Qwen2.5, concretamente de la variante de aproximadamente 3.000 millones de parametros. El sufijo del nombre ("jev-hard-v13.0-enterprise-unified") sugiere una version 13 de un entrenamiento orientado a instrucciones complejas y a un uso etiquetado como empresarial, pero esta interpretacion procede unicamente de la cadena de texto del ID y no esta corroborada por ninguna documentacion del autor.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace, sin ningun campo completado: no indica desarrollador efectivo, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio no tiene pipeline declarado, no tiene licencia asignada, no declara idiomas y acumula cero descargas y cero "likes" desde su creacion. El tamano del repositorio (0,1 GB) es incompatible con los pesos completos de un transformer denso de 3.000 millones de parametros, que en bfloat16 ocuparia del orden de 6 GB, por lo que es probable que el contenido sea parcial, un adaptador, o que los pesos no esten efectivamente alojados.
+La model card publicada es la plantilla generica autogenerada por Hugging Face, sin ningun campo completado: no indica desarrollador efectivo, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio no tiene pipeline declarado, no tiene licencia asignada, no declara idiomas y acumula cero descargas y cero "likes" desde su creacion. El tamano del repositorio (0,1 GB) es incompatible con los pesos completos de un transformer denso de 3.000 millones de parametros, que en bfloat16 ocuparia del orden de 6 GB, por lo que es probable que el contenido sea parcial, un adaptador, o que los pesos no esten efectivamente alojados.
 
 Por todo ello, esta ficha no puede validar ninguna capacidad tecnica del modelo. Su relevancia actual es limitada: se trata de un artefacto sin documentar, sin metricas y sin trazabilidad de licencia, lo que lo hace no apto para produccion sin una auditoria previa del propio repositorio y de los pesos.
 
@@ -94,7 +94,7 @@ Los datos de las tres alternativas corresponden a sus fichas publicas y son orie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v13.0-enterprise-unified
+- Repositorio en Hugging Face: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v13.0-enterprise-unified
 - Referencia citada en la plantilla (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de codigo o demo del modelo: no disponibles. La busqueda web no devolvio ningun resultado relacionado con este modelo.

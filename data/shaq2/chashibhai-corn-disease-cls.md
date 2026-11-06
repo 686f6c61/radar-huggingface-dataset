@@ -82,7 +82,7 @@ No hay comparaciones con modelos externos como PlantVillage o modelos de detecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaq2/chashibhai-corn-disease-cls
+- Modelo en Hugging Face: https://huggingface.co/Shaq2/chashibhai-corn-disease-cls
 - Coleccion de clasificadores on-device: https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers
 - Codigo fuente (GitHub): https://github.com/MRSHAKILS/AI-Powered-Smart-Agriculture-Advisory-Platform-for-Bangladesh
 - Modelo de arroz: https://huggingface.co/Shaq2/chashibhai-rice-disease-cls

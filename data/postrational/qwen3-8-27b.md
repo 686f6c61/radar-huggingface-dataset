@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/postrational/Qwen3.8-27B
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.8-27B
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/postrational/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte Day 0: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Ficha en Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.8-27b

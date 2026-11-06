@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`poligonchiik/dl2hw2` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario poligonchiik. Se distribuye en formato safetensors para la librería transformers y su pipeline declarado es `token-classification`, lo que lo sitúa en la familia de tareas de etiquetado secuencial: reconocimiento de entidades nombradas (NER), etiquetado gramatical (POS), chunking o detección de información sensible, entre otras. La etiqueta de arquitectura indica `bert`, es decir, un transformer codificador (encoder-only), y el recuento real de parámetros extraído del fichero safetensors es de 33.215.625, un orden de magnitud inferior al de un BERT-base estándar de 110 millones.
+`poligonchiik/dl2hw2` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario poligonchiik. Se distribuye en formato safetensors para la librería transformers y su pipeline declarado es `token-classification`, lo que lo sitúa en la familia de tareas de etiquetado secuencial: reconocimiento de entidades nombradas (NER), etiquetado gramatical (POS), chunking o detección de información sensible, entre otras. La etiqueta de arquitectura indica `bert`, es decir, un transformer codificador (encoder-only), y el recuento real de parámetros extraído del fichero safetensors es de 33.215.625, un orden de magnitud inferior al de un BERT-base estándar de 110 millones.
 
-El modelo no cuenta con documentación sustantiva: la model card es la plantilla automática de HuggingFace con la práctica totalidad de los campos marcados como "[More Information Needed]". No se especifican datos de entrenamiento, dataset, hiperparámetros, licencia, idiomas soportados ni resultados de evaluación. El repositorio tiene un tamaño de 0,1 GB y, en el momento de la consulta, registra 0 descargas y 0 "likes", por lo que se trata de un checkpoint sin adopción pública conocida y sin validación externa.
+El modelo no cuenta con documentación sustantiva: la model card es la plantilla automática de Hugging Face con la práctica totalidad de los campos marcados como "[More Information Needed]". No se especifican datos de entrenamiento, dataset, hiperparámetros, licencia, idiomas soportados ni resultados de evaluación. El repositorio tiene un tamaño de 0,1 GB y, en el momento de la consulta, registra 0 descargas y 0 "likes", por lo que se trata de un checkpoint sin adopción pública conocida y sin validación externa.
 
 Su relevancia actual es, por tanto, limitada y de carácter más académico o experimental que productivo: puede resultar útil como punto de partida para prácticas de fine-tuning en clasificación de tokens, pero cualquier uso en producción exigiría primero verificar la licencia (no declarada), auditar el checkpoint y establecer una evaluación propia, ya que no existe información publicada sobre su rendimiento.
 
@@ -31,7 +31,7 @@ La unica informacion estructural disponible son las etiquetas del repositorio: `
 
 No hay informacion alguna sobre el procedimiento de entrenamiento: se desconoce el corpus utilizado, el numero de tokens vistos, si hubo preentrenamiento previo (por ejemplo, partir de un checkpoint tipo BERT y aplicar fine-tuning supervisado), si se emplearon tecnicas de alineacion como RLHF o DPO (poco habituales en tareas de etiquetado) ni los hiperparametros concretos (tasa de aprendizaje, regimen de precision, epocas). Tampoco se documentan innovaciones tecnicas.
 
-La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre el modelo: identifica el trabajo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la plantilla estandar de model card de HuggingFace y que el autor no elimino. No debe interpretarse, por tanto, como referencia metodologica del entrenamiento.
+La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre el modelo: identifica el trabajo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la plantilla estandar de model card de Hugging Face y que el autor no elimino. No debe interpretarse, por tanto, como referencia metodologica del entrenamiento.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 133 MB en fp32 (33,2 M de parametros x 4 bytes) y unos 66 MB en fp16. El repositorio ocupa 0,1 GB, coherente con esas cifras.
 - GPU recomendadas: no requiere GPU dedicada. Cualquier GPU consumer reciente (por ejemplo, RTX 3060, RTX 4090) es mas que suficiente; incluso una GPU integrada moderna puede ejecutarlo.
 - Inferencia en CPU: completamente viable. Es el escenario mas realista dado el tamano del modelo, aunque la latencia depende del numero de secuencias y de la longitud de entrada (valores concretos: no disponible).
-- Opciones de despliegue: `transformers` (pipeline de token-classification) es la via documentada por las etiquetas del repositorio. El tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. Alternativas tecnicas plausibles como ONNX Runtime o TorchScript no estan documentadas para este checkpoint.
+- Opciones de despliegue: `transformers` (pipeline de token-classification) es la via documentada por las etiquetas del repositorio. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. Alternativas tecnicas plausibles como ONNX Runtime o TorchScript no estan documentadas para este checkpoint.
 - Opciones no aplicables: llama.cpp, Ollama, vLLM o TGI estan orientados a modelos generativos; no hay evidencia de soporte ni de conversiones GGUF para este modelo.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
@@ -81,7 +81,7 @@ Los valores de los modelos de referencia corresponden a informacion publica de s
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace y no aporta informacion sobre datos, entrenamiento, etiquetas ni evaluacion. No es posible determinar que tarea concreta aprendio el modelo.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face y no aporta informacion sobre datos, entrenamiento, etiquetas ni evaluacion. No es posible determinar que tarea concreta aprendio el modelo.
 - Licencia no declarada: al no especificarse licencia, no hay autorizacion explicita de uso comercial. Cualquier despliegue en produccion debe resolverse previamente con el autor o descartarse.
 - Sesgos: no disponible. Al desconocerse el corpus de entrenamiento no se puede evaluar el sesgo demografico, geografico o de dominio, ni el equilibrio entre clases de etiquetas.
 - Riesgo de alucinacion: no aplica en el sentido generativo (el modelo no produce texto libre), pero si existe riesgo de etiquetado incorrecto con alta confianza, especialmente fuera de la distribucion de los datos de entrenamiento.
@@ -93,7 +93,7 @@ Los valores de los modelos de referencia corresponden a informacion publica de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poligonchiik/dl2hw2
+- Modelo en Hugging Face: https://huggingface.co/poligonchiik/dl2hw2
 - Paper referenciado en las tags (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla de model card, no vinculado al entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper propio, demo o blog del autor: no disponible.

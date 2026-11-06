@@ -1,7 +1,7 @@
 # RicardoEstep/RPBizkit-v6-12B
 
 ## Resumen
-RPBizkit-v6-12B es un modelo de lenguaje experimental de 12.247.782.400 parámetros (12,25 B) publicado por el usuario RicardoEstep en HuggingFace. No es un modelo entrenado desde cero, sino una fusión de pesos (*model merge*) construida con la herramienta mergekit a partir de 19 modelos derivados de Mistral NeMo de 12B, todos ellos orientados a roleplay y a generación de texto sin censura. El resultado es un modelo denso de tipo transformer decoder-only que hereda el tokenizador y la arquitectura de la familia Mistral NeMo.
+RPBizkit-v6-12B es un modelo de lenguaje experimental de 12.247.782.400 parámetros (12,25 B) publicado por el usuario RicardoEstep en Hugging Face. No es un modelo entrenado desde cero, sino una fusión de pesos (*model merge*) construida con la herramienta mergekit a partir de 19 modelos derivados de Mistral NeMo de 12B, todos ellos orientados a roleplay y a generación de texto sin censura. El resultado es un modelo denso de tipo transformer decoder-only que hereda el tokenizador y la arquitectura de la familia Mistral NeMo.
 
 El problema que intenta resolver es concreto y de nicho: el autor detectó en su versión anterior (v5) un fallo que denomina "The Beige Effect", por el cual las mezclas excesivamente promediadas pierden voz propia, se vuelven planas y pierden iniciativa creativa. La v6 aborda esto fusionando los modelos originales -no las mezclas intermedias- en seis partes diferenciadas, cada una con un método de fusión distinto, para preservar rasgos de inteligencia, narrativa y estilo oscuro por separado.
 
@@ -72,9 +72,9 @@ Estimaciones derivadas del recuento de parámetros (12,25 B); no hay mediciones 
 |---|---|---|---|---|---|
 | RicardoEstep/RPBizkit-v6-12B | 12,25 B | No disponible en la ficha | No disponible | safetensors + repo GGUF; 520 descargas | Merge de 19 modelos de roleplay sin censura |
 | Mistral NeMo 12B Instruct (2407) | ~12 B | No disponible en la información recogida | No disponible en la información recogida | Amplia, con cuantizaciones de la comunidad | Modelo oficial de referencia de la familia; alineado y con rechazos |
-| TheDrummer/UnslopNemo-12B-v4.1 | ~12 B | No disponible | No disponible | HuggingFace | Uno de los padres del merge; orientado a eliminar estilo repetitivo |
-| ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2 | ~12 B | No disponible | No disponible | HuggingFace | Base de la parte narrativa; especializado en roleplay |
-| ChaoticNeutrals/Nera_Noctis-12B | ~12 B | No disponible | No disponible | HuggingFace | Aporta el tono oscuro de la parte tres |
+| TheDrummer/UnslopNemo-12B-v4.1 | ~12 B | No disponible | No disponible | Hugging Face | Uno de los padres del merge; orientado a eliminar estilo repetitivo |
+| ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2 | ~12 B | No disponible | No disponible | Hugging Face | Base de la parte narrativa; especializado en roleplay |
+| ChaoticNeutrals/Nera_Noctis-12B | ~12 B | No disponible | No disponible | Hugging Face | Aporta el tono oscuro de la parte tres |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real de estas alternativas frente a RPBizkit-v6-12B; la comparación se limita a linaje, tamaño y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 - Documentación incompleta: la model card proporcionada está truncada en la parte tres, por lo que se desconoce la configuración exacta de las partes cuatro a seis y de la combinación final.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkit-v6-12B
+- Modelo en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkit-v6-12B
 - Repositorio GGUF: https://huggingface.co/RicardoEstep/RPBizkit-v6-12B-GGUF
 - Versión posterior (v7): https://huggingface.co/RicardoEstep/RPBizkit-v7-12B
 - Página de despliegue en Featherless: https://featherless.ai/models/RicardoEstep/RPBizkit-v6-12B

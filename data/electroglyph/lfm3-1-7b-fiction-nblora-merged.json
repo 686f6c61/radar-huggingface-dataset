@@ -23,10 +23,11 @@
     "custom_code",
     "base_model:LiquidAI/LFM3-1.7B",
     "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 387,
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",

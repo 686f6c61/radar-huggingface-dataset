@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bonsai-4B-mlx-1bit es un modelo de lenguaje de 4.000 millones de parametros cuantizado integramente a 1 bit (formato MLX 1-bit g128) y publicado en HuggingFace por el usuario Oscilla, tomando como base `prism-ml/Bonsai-4B-unpacked` de Prism ML. La relevancia del modelo esta en que la cuantizacion a 1 bit no se limita a las proyecciones del transformer, sino que cubre embeddings, proyecciones de atencion, proyecciones del MLP y la cabeza LM, de modo que el modelo completo ocupa 0,63 GB en disco, un 92,2 % menos que su equivalente en FP16 (8,04 GB). Esto permite ejecutar inferencia local en un Mac o incluso en un iPhone sin materializar pesos en FP16 durante el calculo.
+Bonsai-4B-mlx-1bit es un modelo de lenguaje de 4.000 millones de parametros cuantizado integramente a 1 bit (formato MLX 1-bit g128) y publicado en Hugging Face por el usuario Oscilla, tomando como base `prism-ml/Bonsai-4B-unpacked` de Prism ML. La relevancia del modelo esta en que la cuantizacion a 1 bit no se limita a las proyecciones del transformer, sino que cubre embeddings, proyecciones de atencion, proyecciones del MLP y la cabeza LM, de modo que el modelo completo ocupa 0,63 GB en disco, un 92,2 % menos que su equivalente en FP16 (8,04 GB). Esto permite ejecutar inferencia local en un Mac o incluso en un iPhone sin materializar pesos en FP16 durante el calculo.
 
 La arquitectura subyacente es la de Qwen3-4B en variante dense: 36 bloques decodificadores, atencion con GQA de 32 cabezas de consulta y 8 de clave/valor, MLP SwiGLU, RoPE y RMSNorm, con una longitud de contexto de 32.768 tokens y un vocabulario de 151.936 entradas. El objetivo declarado es el despliegue en dispositivo (on-device) sobre Apple Silicon mediante MLX, con un companero en formato GGUF Q1_0_g128 para llama.cpp, y con cifras declaradas de 4,8 veces mas velocidad en un M4 Pro y 60 tokens por segundo en un iPhone.
 
@@ -82,9 +82,9 @@ Los parametros de generacion sugeridos por el autor son temperatura 0,5 (rango 0
 
 | Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bonsai-4B-mlx-1bit (Oscilla) | 4,0 B (~3,6 B sin embeddings) | 32.768 tokens | MLX 1-bit g128, 0,63 GB | Apache 2.0 | HuggingFace, requiere fork de MLX |
-| Bonsai-4B-gguf (prism-ml) | 4,0 B | 32.768 tokens (arquitectura comun) | GGUF Q1_0_g128, 0,57 GB, 1,125 bpw | Apache 2.0 | HuggingFace, requiere fork de llama.cpp |
-| Bonsai-4B-unpacked (prism-ml) | 4,0 B | 32.768 tokens (arquitectura comun) | Pesos sin empaquetar a 1 bit, tamano no disponible | Apache 2.0 | HuggingFace, modelo base declarado |
+| Bonsai-4B-mlx-1bit (Oscilla) | 4,0 B (~3,6 B sin embeddings) | 32.768 tokens | MLX 1-bit g128, 0,63 GB | Apache 2.0 | Hugging Face, requiere fork de MLX |
+| Bonsai-4B-gguf (prism-ml) | 4,0 B | 32.768 tokens (arquitectura comun) | GGUF Q1_0_g128, 0,57 GB, 1,125 bpw | Apache 2.0 | Hugging Face, requiere fork de llama.cpp |
+| Bonsai-4B-unpacked (prism-ml) | 4,0 B | 32.768 tokens (arquitectura comun) | Pesos sin empaquetar a 1 bit, tamano no disponible | Apache 2.0 | Hugging Face, modelo base declarado |
 | Modelos dense de ~4B en FP16 (referencia generica) | ~4 B | No disponible | FP16, ~8 GB | Variable | Amplia, sin forks especificos |
 
 No se dispone de datos de benchmarks que permitan comparar la calidad de salida frente a alternativas de la misma categoria. La comparativa se limita por tanto a parametros, contexto, formato, licencia y disponibilidad.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de salida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Bonsai-4B-mlx-1bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Bonsai-4B-mlx-1bit
 - Modelo base declarado: https://huggingface.co/prism-ml/Bonsai-4B-unpacked
 - Variante GGUF: https://huggingface.co/prism-ml/Bonsai-4B-gguf
 - Web de Prism ML: https://prismml.com

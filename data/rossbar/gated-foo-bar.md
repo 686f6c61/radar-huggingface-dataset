@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio rossbar/gated-foo-bar es un modelo alojado en HuggingFace por el usuario rossbar, publicado el 22 de septiembre de 2026 y actualizado ese mismo dia. El acceso esta restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones de uso en la plataforma. La unica etiqueta relevante que declara es la licencia BSD-3-Clause; no se especifica pipeline, idiomas soportados, arquitectura ni tamano.
+El repositorio rossbar/gated-foo-bar es un modelo alojado en Hugging Face por el usuario rossbar, publicado el 22 de septiembre de 2026 y actualizado ese mismo dia. El acceso esta restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones de uso en la plataforma. La unica etiqueta relevante que declara es la licencia BSD-3-Clause; no se especifica pipeline, idiomas soportados, arquitectura ni tamano.
 
-En el momento de la consulta el repositorio acumula 0 descargas y 0 likes y no incluye documentacion publica sobre numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El identificador "gated-foo-bar" sigue la convencion de nombres de marcador de posicion (foo/bar), lo que sugiere que podria tratarse de un repositorio de prueba creado para validar el flujo de acceso restringido de HuggingFace, aunque esto no puede confirmarse con la informacion disponible.
+En el momento de la consulta el repositorio acumula 0 descargas y 0 likes y no incluye documentacion publica sobre numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El identificador "gated-foo-bar" sigue la convencion de nombres de marcador de posicion (foo/bar), lo que sugiere que podria tratarse de un repositorio de prueba creado para validar el flujo de acceso restringido de Hugging Face, aunque esto no puede confirmarse con la informacion disponible.
 
 Por tanto, esta ficha recoge unicamente los datos verificables y marca de forma explicita como "no disponible" todo lo demas. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a cadenas de pizzerias en Turquia y no guardan relacion alguna con inteligencia artificial.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge unicamente los datos verificables y marca de forma 
 | Licencia | BSD-3-Clause |
 | Formato de pesos | no disponible |
 | Modalidad (pipeline) | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de publicacion | 2026-09-22 |
@@ -74,7 +74,7 @@ No disponible. Al no conocerse arquitectura, tamano, contexto ni rendimiento, no
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que anade una dependencia de aprobacion para cualquier uso.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que anade una dependencia de aprobacion para cualquier uso.
 - Ausencia total de documentacion: no hay tarjeta de modelo con arquitectura, datos de entrenamiento, idiomas ni evaluaciones.
 - Cero adopcion verificable: 0 descargas y 0 likes implican que no existe validacion por parte de la comunidad ni informes independientes de comportamiento.
 - Posible repositorio de prueba: el nombre "gated-foo-bar" y la falta de metadatos sugieren un artefacto de validacion del sistema gated mas que un modelo destinado a produccion; conviene confirmarlo antes de invertir esfuerzo de integracion.
@@ -85,5 +85,5 @@ No disponible. Al no conocerse arquitectura, tamano, contexto ni rendimiento, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rossbar/gated-foo-bar
+- Hugging Face: https://huggingface.co/rossbar/gated-foo-bar
 - Resultados de busqueda web: ninguno relevante. Todos los enlaces devueltos corresponden a sitios de pizzerias en Turquia (dominos.com.tr, nefisyemektarifleri.com, terrapizza.com.tr, yemeksepeti.com, tripadvisor.com.tr) y no guardan relacion con el modelo ni con inteligencia artificial. No se han encontrado papers, blogs, repositorios ni demos asociados a rossbar/gated-foo-bar.

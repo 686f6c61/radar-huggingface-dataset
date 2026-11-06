@@ -70,17 +70,17 @@ Los puntos de referencia del testset en WMT (newstest) se situan aproximadamente
 - VRAM estimada para inferencia: muy baja; los pesos en fp32 ocupan en torno a 0.3 GB, y menos de la mitad si se convierten a fp16 o int8.
 - GPU recomendadas: cualquier GPU moderna; funciona incluso en GPU integradas. Tarjetas como RTX 3060, RTX 4090, A100 o H100 son mas que suficientes (el modelo queda limitado por CPU/IO mas que por compute).
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo y tambien en CPU.
-- Opciones de despliegue: libreria `transformers` de HuggingFace, conversion a CTranslate2 (habitual para modelos Marian), exportacion a ONNX, y uso con SentencePiece para el tokenizer. No es un modelo GGUF/Ollama nativo.
+- Opciones de despliegue: libreria `transformers` de Hugging Face, conversion a CTranslate2 (habitual para modelos Marian), exportacion a ONNX, y uso con SentencePiece para el tokenizer. No es un modelo GGUF/Ollama nativo.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitroshenkov87/voxprint-mirror-opus-mt-en-ru | Marian (espejo) | en -> ru | no disponible | Apache-2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-ru | Marian | en -> ru | no disponible | Apache-2.0 | HuggingFace (original) |
-| Helsinki-NLP/opus-mt-ru-en | Marian | ru -> en | no disponible | Apache-2.0 | HuggingFace |
-| NLLB-200 (Meta) | Transformer multilingue | 200 idiomas | 512 tokens | CC-BY-NC-4.0 (uso no comercial en varias variantes) | HuggingFace |
+| Mitroshenkov87/voxprint-mirror-opus-mt-en-ru | Marian (espejo) | en -> ru | no disponible | Apache-2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-ru | Marian | en -> ru | no disponible | Apache-2.0 | Hugging Face (original) |
+| Helsinki-NLP/opus-mt-ru-en | Marian | ru -> en | no disponible | Apache-2.0 | Hugging Face |
+| NLLB-200 (Meta) | Transformer multilingue | 200 idiomas | 512 tokens | CC-BY-NC-4.0 (uso no comercial en varias variantes) | Hugging Face |
 
 Frente al original `opus-mt-en-ru`, este espejo no aporta ninguna diferencia funcional: mismos pesos y misma licencia, solo cambia la model card y los archivos replicados. El modelo inverso `opus-mt-ru-en` cubre la direccion contraria. Alternativas multilingues como NLLB-200 ofrecen muchos mas idiomas y contexto, a cambio de un tamano mucho mayor y licencias mas restrictivas para uso comercial.
 
@@ -96,7 +96,7 @@ Frente al original `opus-mt-en-ru`, este espejo no aporta ninguna diferencia fun
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-ru
+- Modelo en Hugging Face (espejo): https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-ru
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-ru
 - README de entrenamiento OPUS-MT en-ru: https://github.com/Helsinki-NLP/OPUS-MT-train/blob/master/models/en-ru/README.md
 - Pesos originales: https://object.pouta.csc.fi/OPUS-MT-models/en-ru/opus-2020-02-11.zip

@@ -71,7 +71,7 @@ No se dispone de datos comparativos cuantitativos con otros modelos TTS de códi
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta conversión: https://huggingface.co/theoracleguy/MOSS-TTS-Local-Transformer-v1.5-4bit
+- Repositorio de Hugging Face de esta conversión: https://huggingface.co/theoracleguy/MOSS-TTS-Local-Transformer-v1.5-4bit
 - Modelo original: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5
 - Tokenizador de audio: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
 - Conversión del tokenizador a MLX: https://huggingface.co/mlx-community/MOSS-Audio-Tokenizer-v2-bf16

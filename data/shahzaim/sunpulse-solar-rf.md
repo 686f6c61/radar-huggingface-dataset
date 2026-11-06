@@ -85,7 +85,7 @@ Comparativa con los modelos alternativos evaluados por el propio autor en el mis
 | Gradient Boosting | Ensamble secuencial | 527,3 | Peor que Random Forest en este problema |
 | Linear Regression | Modelo lineal (baseline) | 1402,5 | Incapaz de capturar las relaciones no lineales radiación-generación |
 
-No se han identificado en la información disponible otros modelos públicos comparables de estimación de generación solar por país en HuggingFace.
+No se han identificado en la información disponible otros modelos públicos comparables de estimación de generación solar por país en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se han identificado en la información disponible otros modelos públicos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahzaim/sunpulse-solar-rf
+- Modelo en Hugging Face: https://huggingface.co/shahzaim/sunpulse-solar-rf
 - Datos de generación (Open Power System Data, time series 2020-10-06): https://doi.org/10.25832/time_series/2020-10-06
 - Datos meteorológicos (Open-Meteo): https://open-meteo.com/
 - Paper, repositorio de código y demo: no disponibles en la información proporcionada.

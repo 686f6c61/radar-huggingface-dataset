@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/esmfold2-experimental | 6.577 M (con ESMC-6B) | no disponible | sí | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/esmfold2 | 6.579,742 M | no disponible | sí | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/esmfold2-fast | 6.533,723 M | no disponible | no | AGPL-3.0 | HuggingFace (no oficial) |
-| oteam/esmfold2-experimental-fast | 6.530,863 M | no disponible | no | AGPL-3.0 | HuggingFace (no oficial) |
+| oteam/esmfold2-experimental | 6.577 M (con ESMC-6B) | no disponible | sí | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/esmfold2 | 6.579,742 M | no disponible | sí | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/esmfold2-fast | 6.533,723 M | no disponible | no | AGPL-3.0 | Hugging Face (no oficial) |
+| oteam/esmfold2-experimental-fast | 6.530,863 M | no disponible | no | AGPL-3.0 | Hugging Face (no oficial) |
 
 No se dispone de datos de benchmarks ni de comparación con modelos de terceros (por ejemplo, AlphaFold) en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparación con modelos de terceros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/esmfold2-experimental
+- Hugging Face: https://huggingface.co/oteam/esmfold2-experimental
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante rápida: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental rápida: https://huggingface.co/oteam/esmfold2-experimental-fast

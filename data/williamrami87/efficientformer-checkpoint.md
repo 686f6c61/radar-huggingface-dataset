@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamrami87/efficientformer-checkpoint` es un repositorio de HuggingFace que contiene una implementacion propia de la arquitectura EfficientFormer orientada a tareas de clasificacion, publicada por el usuario williamrami87 bajo licencia Apache 2.0. Se trata de un artefacto experimental: la propia model card indica explicitamente que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio incluye ademas `eval.py`, `config.json` y `training_args.json`, lo que lo convierte en una plantilla reproducible mas que en un modelo listo para produccion.
+`williamrami87/efficientformer-checkpoint` es un repositorio de Hugging Face que contiene una implementacion propia de la arquitectura EfficientFormer orientada a tareas de clasificacion, publicada por el usuario williamrami87 bajo licencia Apache 2.0. Se trata de un artefacto experimental: la propia model card indica explicitamente que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio incluye ademas `eval.py`, `config.json` y `training_args.json`, lo que lo convierte en una plantilla reproducible mas que en un modelo listo para produccion.
 
 La configuracion declarada corresponde a una escala "giant" con atencion dilatada, fusion de bajo rango, activacion gelu-tanh y normalizacion por batchnorm. Sin embargo, el recuento real de parametros reportado en safetensors es de 33.088 parametros, una cifra incompatible con cualquier variante "giant" de EfficientFormer (que en sus versiones publicadas supera los 80 millones). Esta incoherencia, junto con un tamano de repositorio de 0,0 GB y cero descargas, refuerza la interpretacion de que se trata de un esqueleto de codigo con pesos sin entrenar.
 
@@ -34,7 +34,7 @@ En cuanto al entrenamiento, la model card es explicita: el checkpoint incluido n
 - Clasificacion de imagenes: unica tarea declarada en las etiquetas del repositorio (`classification`).
 - Entrenamiento reproducible: el repositorio incluye `eval.py` con un bloque `__main__` y un ejemplo de prueba de humo, ademas de `config.json` y `training_args.json`.
 - Inicializacion de pesos: `model.safetensors` sirve como punto de partida valido para entrenamientos desde cero o ajuste fino.
-- Carga mediante adaptador explicito: al ser una implementacion personalizada, las APIs automaticas de HuggingFace requieren un adaptador antes de su uso.
+- Carga mediante adaptador explicito: al ser una implementacion personalizada, las APIs automaticas de Hugging Face requieren un adaptador antes de su uso.
 - Generacion de texto: no disponible.
 - Razonamiento, codigo y matematicas: no disponible.
 - Tool calling o function calling: no disponible.
@@ -72,11 +72,11 @@ La comparacion se plantea frente a implementaciones de referencia de la misma fa
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| williamrami87/efficientformer-checkpoint | 33.088 (declarado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de inicializacion, sin entrenar |
+| williamrami87/efficientformer-checkpoint | 33.088 (declarado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de inicializacion, sin entrenar |
 | EfficientFormer (Snap Research, variantes L1-L7) | 12,3 M a 82,1 M aprox. | imagen 224x224 tipicamente | Apache 2.0 | Pesos oficiales en repositorios de Snap | Modelos entrenados en ImageNet con latencia medida |
 | EfficientFormerV2 (Snap Research) | 15,6 M a 27 M aprox. | imagen, resoluciones variables | Apache 2.0 | Pesos oficiales publicados | Revision con distillation-aware training |
 | MobileNetV3-Large | 5,4 M aprox. | imagen 224x224 | Apache 2.0 | TensorFlow y PyTorch (torchvision) | Linea base convolucional movil ampliamente desplegada |
-| DeiT-Small | 22 M aprox. | imagen 224x224 | Apache 2.0 | Pesos oficiales en HuggingFace | Vision transformer clasico con distillation token |
+| DeiT-Small | 22 M aprox. | imagen 224x224 | Apache 2.0 | Pesos oficiales en Hugging Face | Vision transformer clasico con distillation token |
 
 Las cifras de parametros de los modelos comparados proceden de sus publicaciones originales y se incluyen a titulo orientativo; para resultados de precision y latencia debe consultarse la documentacion oficial de cada uno. No se dispone de datos para comparar el rendimiento efectivo de este repositorio con ninguno de ellos.
 
@@ -95,10 +95,10 @@ Las cifras de parametros de los modelos comparados proceden de sus publicaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamrami87/efficientformer-checkpoint
-- Fichero `eval.py` del repositorio: disponible en el arbol de ficheros de la pagina de HuggingFace
-- Fichero `config.json` del repositorio: disponible en el arbol de ficheros de la pagina de HuggingFace
-- Fichero `training_args.json` del repositorio: disponible en el arbol de ficheros de la pagina de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/williamrami87/efficientformer-checkpoint
+- Fichero `eval.py` del repositorio: disponible en el arbol de ficheros de la pagina de Hugging Face
+- Fichero `config.json` del repositorio: disponible en el arbol de ficheros de la pagina de Hugging Face
+- Fichero `training_args.json` del repositorio: disponible en el arbol de ficheros de la pagina de Hugging Face
 - Articulo original de EfficientFormer (Snap Research): no disponible en la informacion proporcionada
 - Articulo de EfficientFormerV2: no disponible en la informacion proporcionada
 - Repositorio oficial de referencia de EfficientFormer: no disponible en la informacion proporcionada

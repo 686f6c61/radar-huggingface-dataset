@@ -78,7 +78,7 @@ La comparativa se basa en parámetros y licencia; no hay datos de rendimiento di
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct
 - Modelo base sin instrucciones: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E
 - Documentación de vLLM sobre el modelo: https://recipes.vllm.ai/meta-llama/Llama-4-Scout-17B-16E-Instruct

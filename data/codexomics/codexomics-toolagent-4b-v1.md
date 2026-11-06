@@ -97,7 +97,7 @@ El modelo ajustado supera al base en precisión y latencia, aunque la diferencia
 
 ## Enlaces
 
-- HuggingFace: [CodeXomics/CodeXomics-ToolAgent-4B-v1](https://huggingface.co/CodeXomics/CodeXomics-ToolAgent-4B-v1)
+- Hugging Face: [CodeXomics/CodeXomics-ToolAgent-4B-v1](https://huggingface.co/CodeXomics/CodeXomics-ToolAgent-4B-v1)
 - Repositorio de CodeXomics: [github.com/Scilence2022/CodeXomics](https://github.com/Scilence2022/CodeXomics)
 - Documentación de CodeXomics: [scilence2022.github.io/CodeXomics](https://scilence2022.github.io/CodeXomics/)
 - Modelo base: [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) (referencia, no se proporciona URL directa en la información)

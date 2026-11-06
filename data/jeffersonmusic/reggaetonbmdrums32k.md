@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReggaetonBMDrums32K es un repositorio publicado en HuggingFace por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin dataset documentado y sin resultados de evaluacion. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+ReggaetonBMDrums32K es un repositorio publicado en Hugging Face por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin dataset documentado y sin resultados de evaluacion. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El nombre del repositorio sugiere un artefacto relacionado con la generacion o el procesado de audio orientado a bateria y percusion de reggaeton, con una frecuencia de muestreo de 32 kHz indicada en el sufijo "32K". No obstante, esta interpretacion es una inferencia a partir del identificador y no esta confirmada por ninguna documentacion tecnica: el autor no especifica si se trata de un modelo generativo, un checkpoint de un modelo mayor, un dataset empaquetado, un tokenizer de audio o un componente auxiliar.
 
@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JEFFERSONMUSIC/ReggaetonBMDrums32K
-- Pagina del autor en HuggingFace: https://huggingface.co/JEFFERSONMUSIC
+- Repositorio en Hugging Face: https://huggingface.co/JEFFERSONMUSIC/ReggaetonBMDrums32K
+- Pagina del autor en Hugging Face: https://huggingface.co/JEFFERSONMUSIC
 
 No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en los resultados de busqueda disponibles.

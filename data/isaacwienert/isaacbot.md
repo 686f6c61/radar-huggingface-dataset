@@ -2,7 +2,7 @@
 
 ## Resumen
 
-isaacbot es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B publicado por el usuario Isaacwienert en HuggingFace. Se trata de un modelo de generacion de texto de tipo conversacional, con 1.543.714.304 parametros reales confirmados en los pesos safetensors y un tamano de repositorio de 3,1 GB. El pipeline declarado es `text-generation` y esta etiquetado para uso conversacional.
+isaacbot es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B publicado por el usuario Isaacwienert en Hugging Face. Se trata de un modelo de generacion de texto de tipo conversacional, con 1.543.714.304 parametros reales confirmados en los pesos safetensors y un tamano de repositorio de 3,1 GB. El pipeline declarado es `text-generation` y esta etiquetado para uso conversacional.
 
 El modelo parte de una base especializada en codigo (Qwen2.5-Coder-1.5B) y se ha reentrenado sobre tres conjuntos de datos publicos: KingNish/reasoning-base-20k (orientado a razonamiento), HuggingFaceH4/ultrachat_200k (dialogo multiturno) y databricks/databricks-dolly-15k (instrucciones generales). Este tipo de mezcla busca convertir un modelo de codigo en un asistente conversacional capaz de razonar paso a paso, manteniendo la licencia permisiva Apache 2.0 del modelo original.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Qwen/Qwen2.5-Coder-1.5B (base) | 1,5B | 32.768 tokens | Apache 2.0 | Multilingue (29+) | Modelo oficial, ampliamente validado |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Multilingue (29+) | Modelo oficial ajustado por instrucciones |
 | Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Multilingue | Modelo oficial, requiere aceptar licencia |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Ingles y otros | Modelo oficial de HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Ingles y otros | Modelo oficial de Hugging Face |
 
 Nota: los datos de contexto, idiomas y licencia de los modelos comparados corresponden a la documentacion publica de sus respectivos repositorios oficiales. No hay datos de rendimiento comparado para isaacbot.
 
@@ -94,7 +94,7 @@ Nota: los datos de contexto, idiomas y licencia de los modelos comparados corres
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Isaacwienert/isaacbot
+- Pagina del modelo en Hugging Face: https://huggingface.co/Isaacwienert/isaacbot
 - Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Dataset KingNish/reasoning-base-20k: https://huggingface.co/datasets/KingNish/reasoning-base-20k
 - Dataset HuggingFaceH4/ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

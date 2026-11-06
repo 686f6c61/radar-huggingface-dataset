@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ternary.c64 es un modelo de lenguaje de arquitectura llama2 con pesos ternarios (−1, 0, +1), desarrollado por el usuario gdm32569 y publicado en HuggingFace. Su particularidad no es el rendimiento, sino el objetivo de despliegue: ejecutar inferencia completa en un Commodore 64 sin expansión de memoria, con todos los pesos alojados en un cartucho EasyFlash con bancos conmutados. El modelo tiene 688.128 pesos ternarios más embeddings de 65.536 parámetros (820.352 parámetros totales según safetensors), 4 capas, dimensión 128 y una ventana de contexto de 128 tokens.
+ternary.c64 es un modelo de lenguaje de arquitectura llama2 con pesos ternarios (−1, 0, +1), desarrollado por el usuario gdm32569 y publicado en Hugging Face. Su particularidad no es el rendimiento, sino el objetivo de despliegue: ejecutar inferencia completa en un Commodore 64 sin expansión de memoria, con todos los pesos alojados en un cartucho EasyFlash con bancos conmutados. El modelo tiene 688.128 pesos ternarios más embeddings de 65.536 parámetros (820.352 parámetros totales según safetensors), 4 capas, dimensión 128 y una ventana de contexto de 128 tokens.
 
 Se entrena desde cero sobre el dataset TinyStories con el `train.py` de llama2.c parcheado para usar BitLinear, la técnica de cuantización ternaria del linaje BitNet. No es un modelo pensado para producción ni para uso general: es una demostración de ingeniería de sistemas que combina cuantización extrema, aritmética de punto fijo int16 y optimización a nivel de ciclo de CPU para hardware de 8 bits.
 
@@ -95,7 +95,7 @@ La comparación directa con modelos de producción no es significativa por la di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdm32569/ternary-c64-688k
+- Hugging Face: https://huggingface.co/gdm32569/ternary-c64-688k
 - Repositorio GitHub: https://github.com/demartinogiuseppe/ternary.c64
 - Script de exportación ternaria: https://github.com/demartinogiuseppe/ternary.c64/blob/main/src/export_ternary.py
 - Script de parcheo de entrenamiento: https://github.com/demartinogiuseppe/ternary.c64/blob/main/src/patch_train.py

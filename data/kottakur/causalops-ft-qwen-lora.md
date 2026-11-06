@@ -2,7 +2,7 @@
 
 ## Resumen
 
-causalops-ft-qwen-lora es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario kottakur en HuggingFace. Se ha entrenado con la libreria TRL (Transformers Reinforcement Learning) de HuggingFace mediante SFT (Supervised Fine-Tuning), segun los metadatos de la propia model card. El repositorio ocupa aproximadamente 0,8 GB y se distribuye en formato safetensors.
+causalops-ft-qwen-lora es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2.5-3B-Instruct, publicado por el usuario kottakur en Hugging Face. Se ha entrenado con la libreria TRL (Transformers Reinforcement Learning) de Hugging Face mediante SFT (Supervised Fine-Tuning), segun los metadatos de la propia model card. El repositorio ocupa aproximadamente 0,8 GB y se distribuye en formato safetensors.
 
 El modelo hereda la arquitectura y el conocimiento del modelo base, un transformer decoder-only de la familia Qwen2.5 con unos 3.1 mil millones de parametros y 32.768 tokens de contexto nativo. El nombre "causalops" sugiere un ajuste orientado a un dominio o tarea concreta, pero la model card no documenta el dataset de entrenamiento, el objetivo ni los hiperparametros utilizados, por lo que su especializacion real no puede verificarse.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| causalops-ft-qwen-lora | ~3,1B (base) | 32.768 (base) | no disponible | HuggingFace (0 descargas) | Sin benchmarks ni dataset documentado |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 | Licencia Qwen (consultar terminos) | HuggingFace, ampliamente usado | Modelo base oficial, con evaluacion publicada |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 | Llama 3.2 Community License | HuggingFace | Contexto mayor, requiere aceptar licencia |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 131.072 | MIT | HuggingFace | Contexto largo, enfocado a razonamiento |
+| causalops-ft-qwen-lora | ~3,1B (base) | 32.768 (base) | no disponible | Hugging Face (0 descargas) | Sin benchmarks ni dataset documentado |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 | Licencia Qwen (consultar terminos) | Hugging Face, ampliamente usado | Modelo base oficial, con evaluacion publicada |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 | Llama 3.2 Community License | Hugging Face | Contexto mayor, requiere aceptar licencia |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 131.072 | MIT | Hugging Face | Contexto largo, enfocado a razonamiento |
 
 La comparacion se establece sobre las caracteristicas del modelo base y de alternativas de la misma categoria de tamano, ya que el ajuste causalops-ft-qwen-lora no publica metricas propias. Los datos de licencia de Qwen2.5-3B deben verificarse en la ficha oficial del modelo base.
 
@@ -90,7 +90,7 @@ La comparacion se establece sobre las caracteristicas del modelo base y de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kottakur/causalops-ft-qwen-lora
+- Modelo en Hugging Face: https://huggingface.co/kottakur/causalops-ft-qwen-lora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL (SFT): https://huggingface.co/docs/trl

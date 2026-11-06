@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DroidSenior-7B-v2-lora | 7B (adaptador LoRA) | No disponible | Android/Kotlin | Apache-2.0 con caveat de datos | HuggingFace, 0 descargas |
+| DroidSenior-7B-v2-lora | 7B (adaptador LoRA) | No disponible | Android/Kotlin | Apache-2.0 con caveat de datos | Hugging Face, 0 descargas |
 | Qwen2.5-Coder-7B-Instruct (base) | 7B | No disponible en esta ficha | Código generalista | Apache-2.0 | Ampliamente disponible |
 | Modelos de código generalistas de 7B | 7B | Variable | Código multi-lenguaje | Variable | Amplia |
 
@@ -89,7 +89,7 @@ La comparación cuantitativa de rendimiento no está disponible porque el autor 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/celebibasar/DroidSenior-7B-v2-lora
+- Adaptador en Hugging Face: https://huggingface.co/celebibasar/DroidSenior-7B-v2-lora
 - Modelo base DroidSenior-7B: https://huggingface.co/celebibasar/DroidSenior-7B
 - Modelo de referencia Qwen2.5-Coder-7B-Instruct: no disponible en la información proporcionada (enlace directo)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 51.668.614 | no aplica | Manipulación SO-101, c3 a d5 | no disponible | HuggingFace |
+| Este checkpoint | 51.668.614 | no aplica | Manipulación SO-101, c3 a d5 | no disponible | Hugging Face |
 | ACT original (referencia) | no disponible | no aplica | Manipulación robótica con action chunking | no disponible | Paper y código de referencia |
 | Diffusion Policy | no disponible | no aplica | Políticas visomotoras mediante difusión | no disponible | Paper y código de referencia |
 | VQ-BeT | no disponible | no aplica | Políticas de imitación con discretización de acciones | no disponible | Paper y código de referencia |
@@ -102,7 +102,7 @@ No hay datos homogéneos de rendimiento para comparar estos modelos. La comparac
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step10000)
+- [Modelo en Hugging Face](https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step10000)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741)
 - [Perfil del autor](https://huggingface.co/rtrtwrw)
 - [LeRobot en GitHub](https://github.com/huggingface/lerobot)

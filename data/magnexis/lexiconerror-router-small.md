@@ -57,7 +57,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo es extremadamente ligero, con solo 2.4 millones de parámetros lineales y un vectorizador TF-IDF de 25 000 características. El tamaño del archivo joblib es inferior a 100 MB (el repositorio ocupa 0.0 GB según HuggingFace).
+- Inferencia en CPU: el modelo es extremadamente ligero, con solo 2.4 millones de parámetros lineales y un vectorizador TF-IDF de 25 000 características. El tamaño del archivo joblib es inferior a 100 MB (el repositorio ocupa 0.0 GB según Hugging Face).
 - No requiere GPU: puede ejecutarse en cualquier procesador moderno, incluso en máquinas de gama baja o en entornos embebidos.
 - Memoria RAM estimada: menos de 500 MB durante la carga y la inferencia, dependiendo del tamaño del vectorizador.
 - Despliegue: se carga mediante joblib en Python; no es compatible con vLLM, Ollama ni TGI, ya que no es un modelo generativo.
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos externos comparables en la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnexis/lexiconerror-router-small
+- Modelo en Hugging Face: https://huggingface.co/Magnexis/lexiconerror-router-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/Magnexis/lexiconerror-diagnostics
 - Variante Medium: https://huggingface.co/Magnexis/lexiconerror-router-medium
 - Variante Large: https://huggingface.co/Magnexis/lexiconerror-router-large

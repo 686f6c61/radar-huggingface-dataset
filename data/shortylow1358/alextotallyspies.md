@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shortylow1358/alextotallyspies` es un repositorio publicado en HuggingFace con licencia `openrail` y un tamaño de 0.1 GB. La información disponible en la model card es mínima: únicamente se declara la licencia, sin especificar arquitectura, parámetros, pipeline o idiomas soportados. El autor, `shortylow1358`, no ha proporcionado documentación técnica adicional. Las búsquedas web relacionadas sugieren que podría tratarse de un modelo de conversión de voz (RVC) o de generación de arte (LoRA) basado en el personaje "Alex" de la serie *Totally Spies!*, pero no hay confirmación directa en el repositorio. Dada la ausencia de especificaciones, no es posible evaluar su rendimiento ni sus capacidades de forma rigurosa. Se recomienda consultar directamente el repositorio o contactar al autor para obtener detalles.
+El modelo `shortylow1358/alextotallyspies` es un repositorio publicado en Hugging Face con licencia `openrail` y un tamaño de 0.1 GB. La información disponible en la model card es mínima: únicamente se declara la licencia, sin especificar arquitectura, parámetros, pipeline o idiomas soportados. El autor, `shortylow1358`, no ha proporcionado documentación técnica adicional. Las búsquedas web relacionadas sugieren que podría tratarse de un modelo de conversión de voz (RVC) o de generación de arte (LoRA) basado en el personaje "Alex" de la serie *Totally Spies!*, pero no hay confirmación directa en el repositorio. Dada la ausencia de especificaciones, no es posible evaluar su rendimiento ni sus capacidades de forma rigurosa. Se recomienda consultar directamente el repositorio o contactar al autor para obtener detalles.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shortylow1358/alextotallyspies
+- Repositorio en Hugging Face: https://huggingface.co/shortylow1358/alextotallyspies
 - Resultados de búsqueda relacionados (no oficiales):
   - Modelo de voz RVC: https://voice-models.com/model/9im
   - Modelo de arte en PixAI: https://pixai.art/en/model/1670824670956242658

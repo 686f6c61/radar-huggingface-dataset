@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bettercallyugi/test` es un repositorio alojado en HuggingFace bajo la autoría del usuario `bettercallyugi`. La única información verificable que acompaña al repositorio es la etiqueta de licencia MIT y la marca de región `us`; no se declara pipeline de inferencia, idiomas soportados, arquitectura, tamaño ni datos de entrenamiento. El repositorio acumula 0 descargas y 0 "me gusta", y fue creado y actualizado el mismo instante (2026-10-11T20:01:46Z), lo que es característico de un repositorio de prueba o de un artefacto recién publicado sin contenido funcional.
+`bettercallyugi/test` es un repositorio alojado en Hugging Face bajo la autoría del usuario `bettercallyugi`. La única información verificable que acompaña al repositorio es la etiqueta de licencia MIT y la marca de región `us`; no se declara pipeline de inferencia, idiomas soportados, arquitectura, tamaño ni datos de entrenamiento. El repositorio acumula 0 descargas y 0 "me gusta", y fue creado y actualizado el mismo instante (2026-10-11T20:01:46Z), lo que es característico de un repositorio de prueba o de un artefacto recién publicado sin contenido funcional.
 
 La model card únicamente contiene el encabezado YAML con `license: mit`, sin texto descriptivo, sin ejemplos de uso y sin referencias a pesos, tokenizador o configuración. La nomenclatura del identificador (`test`) refuerza la hipótesis de que se trata de un espacio de pruebas y no de un modelo entrenado y evaluado listo para producción.
 
@@ -25,7 +25,7 @@ Datos adicionales de metadatos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | bettercallyugi/test |
+| Identificador en Hugging Face | bettercallyugi/test |
 | Autor | bettercallyugi |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:mit, region:us |
@@ -64,7 +64,7 @@ No se pueden proponer casos de uso concretos y realistas sin conocer las capacid
 - Validacion de plantillas de prompt: como banco de pruebas para verificar que el formateo de mensajes, el truncado por contexto y el parseo de salidas estructuradas funcionan antes de conectar un modelo en produccion.
 - Pruebas de cuantizacion y empaquetado: si existieran pesos, serviria para comprobar que las herramientas de conversion a GGUF, AWQ o GPTQ no fallan en el pipeline.
 - Evaluacion comparativa de latencia: en un banco de pruebas interno, para medir la sobrecarga de un servidor de inferencia (vLLM, TGI) independientemente del modelo.
-- Formacion y demostraciones: como ejemplo minimo de estructura de repositorio HuggingFace (etiquetas, licencia, model card) en material didactico sobre publicacion de modelos.
+- Formacion y demostraciones: como ejemplo minimo de estructura de repositorio Hugging Face (etiquetas, licencia, model card) en material didactico sobre publicacion de modelos.
 
 Ninguno de estos casos implica que el modelo ofrezca calidad de generacion utilizable; todos se apoyan en su condicion de artefacto de prueba.
 
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| bettercallyugi/test | no disponible | no disponible | MIT | HuggingFace | licencia y metadatos basicos |
+| bettercallyugi/test | no disponible | no disponible | MIT | Hugging Face | licencia y metadatos basicos |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bettercallyugi/test
+- Repositorio en Hugging Face: https://huggingface.co/bettercallyugi/test
 - Resultados de busqueda web consultados, sin datos especificos sobre este modelo:
   - https://benchlm.ai/
   - https://llm-stats.com/leaderboards/llm-leaderboard

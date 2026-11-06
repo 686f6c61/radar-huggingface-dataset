@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 - Dispositivos Apple silicon: iPhone y Mac con Apple Neural Engine.
 - RAM estimada durante la inferencia: 1.0 GB en iOS mientras se transcribe un archivo de 6 minutos (medido).
-- Tamaño de descarga: 0.95 GB (el repositorio de HuggingFace indica 0.9 GB).
+- Tamaño de descarga: 0.95 GB (el repositorio de Hugging Face indica 0.9 GB).
 - Encoder residente: aproximadamente 0.8 GB.
 - Decoder residente: aproximadamente 134 MB.
 - GPU: no es necesaria; el planificador de CoreML prefiere el Apple Neural Engine para el decoder si se configura `cpuAndNeuralEngine`.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 La siguiente tabla compara esta conversión con otros builds de la misma familia, manteniendo el mismo modelo base `nvidia/canary-1b-v2`:
 
-| Repo de HuggingFace | Encoder | Decoder | Descarga | RAM en iOS (medida) |
+| Repo de Hugging Face | Encoder | Decoder | Descarga | RAM en iOS (medida) |
 |---|---|---|---|---|
 | `smdesai/canary-1b-v2-coreml` | FP16 | FP16 | 1.89 GB | 1.9 GB |
 | `smdesai/canary-1b-v2-int8-coreml` | INT8 per-channel | FP16 | 1.10 GB | 1.2 GB |
@@ -87,7 +87,7 @@ El modelo original `nvidia/canary-1b-v2` está disponible en pesos FP16 para su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/canary-1b-v2-int8full-coreml
+- Modelo en Hugging Face: https://huggingface.co/smdesai/canary-1b-v2-int8full-coreml
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/canary-1b-v2
 - Build FP16 de referencia: https://huggingface.co/smdesai/canary-1b-v2-coreml
 - Build INT8 encoder: https://huggingface.co/smdesai/canary-1b-v2-int8-coreml

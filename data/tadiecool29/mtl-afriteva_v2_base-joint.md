@@ -75,6 +75,6 @@ La comparativa se limita a modelos T5 multilingües de tamaño similar, pero no 
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/tadiecool29/MTL-afriteva_v2_base-joint)
-- [HuggingFace del modelo base](https://huggingface.co/castorini/afriteva_v2_base)
+- [Hugging Face del adaptador](https://huggingface.co/tadiecool29/MTL-afriteva_v2_base-joint)
+- [Hugging Face del modelo base](https://huggingface.co/castorini/afriteva_v2_base)
 - [README del modelo base](https://huggingface.co/castorini/afriteva_v2_base/blob/main/README.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shiki42/s016-sortblocks-mixed-pi05-step20000 es un checkpoint de inferencia de robotica publicado por el usuario Shiki42 en HuggingFace. Se trata de una politica entrenada dentro del ecosistema OpenPI (libreria `openpi`, `pipeline_tag: robotics`) y etiquetada por su autor como "E762 Blocks Ranking PI0.5 checkpoint — step 20000", es decir, una instantanea del paso 20.000 de un run de entrenamiento derivado del experimento E762 / E762-R004. El repositorio ocupa 6,3 GB e incluye exclusivamente el arbol de parametros del modelo y los activos de normalizacion; el estado del optimizador y del cargador de datos se han excluido deliberadamente, por lo que esta pensado para inferencia y no para reanudar el entrenamiento.
+Shiki42/s016-sortblocks-mixed-pi05-step20000 es un checkpoint de inferencia de robotica publicado por el usuario Shiki42 en Hugging Face. Se trata de una politica entrenada dentro del ecosistema OpenPI (libreria `openpi`, `pipeline_tag: robotics`) y etiquetada por su autor como "E762 Blocks Ranking PI0.5 checkpoint — step 20000", es decir, una instantanea del paso 20.000 de un run de entrenamiento derivado del experimento E762 / E762-R004. El repositorio ocupa 6,3 GB e incluye exclusivamente el arbol de parametros del modelo y los activos de normalizacion; el estado del optimizador y del cargador de datos se han excluido deliberadamente, por lo que esta pensado para inferencia y no para reanudar el entrenamiento.
 
 El modelo resuelve una tarea concreta de manipulacion robotica (la ordenacion o ranking de bloques, segun el nombre de la tarea "sortblocks") y forma parte de la familia PI0.5 de OpenPI, una linea de politicas vision-lenguaje-accion. No es un modelo de lenguaje generalista: no genera texto libre ni codigo, sino acciones motoras condicionadas por instrucciones en ingles y por observaciones visuales.
 
@@ -24,7 +24,7 @@ Su relevancia actual es acotada pero clara para investigacion en robotica: aport
 | Dataset de entrenamiento | Shiki42/ctr-sortblocks-100ep-mixed, revision `8ffc6532ae477bb0dc1fccf0377450f7f0795a6d` |
 | Actualizaciones del optimizador | 20.000 (batch 16, seed 87431, checkpoint en el paso 20.000) |
 | Tamano del repositorio | 6,3 GB |
-| Fecha de creacion / actualizacion | 2026-09-23 / 2026-09-23 (fechas tal como las reporta HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-23 / 2026-09-23 (fechas tal como las reporta Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s016-sortblocks-mixed-pi05-step20000 | no disponible | no disponible | evaluacion pendiente, sin tasa de exito | no disponible | publico en HuggingFace, 0 descargas |
+| s016-sortblocks-mixed-pi05-step20000 | no disponible | no disponible | evaluacion pendiente, sin tasa de exito | no disponible | publico en Hugging Face, 0 descargas |
 | Base PI0.5 / OpenPI | no disponible | no disponible | no disponible | no disponible | no especificado en esta informacion |
 | Alternativas de politica robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-mixed-pi05-step20000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-mixed-pi05-step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-mixed
 - Revision del dataset: `8ffc6532ae477bb0dc1fccf0377450f7f0795a6d`
 - Commit del CTR: `0341c7bdac2046a2e8c7a2efca3d8f8707da2eb6`

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cheahour/gemma_4_vlm_finetune_v1.2 | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste de cheahour sobre Gemma 4 |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit | no disponible ("e2b") | no disponible | no disponible | HuggingFace | Modelo base cuantizado en 4 bits |
-| cheahour/gemma_4_vlm_finetune | no disponible | no disponible | no disponible | HuggingFace | Version previa del mismo autor (repo hermano) |
-| Gemma 4 E4B (referencia de familia) | no disponible | no disponible | no disponible | HuggingFace | Citado en recetas de ajuste de terceros |
+| cheahour/gemma_4_vlm_finetune_v1.2 | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste de cheahour sobre Gemma 4 |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit | no disponible ("e2b") | no disponible | no disponible | Hugging Face | Modelo base cuantizado en 4 bits |
+| cheahour/gemma_4_vlm_finetune | no disponible | no disponible | no disponible | Hugging Face | Version previa del mismo autor (repo hermano) |
+| Gemma 4 E4B (referencia de familia) | no disponible | no disponible | no disponible | Hugging Face | Citado en recetas de ajuste de terceros |
 
 No se dispone de datos de rendimiento que permitan una comparativa cuantitativa fiable.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/gemma_4_vlm_finetune_v1.2
+- Modelo en Hugging Face: https://huggingface.co/cheahour/gemma_4_vlm_finetune_v1.2
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Version previa / repo hermano: https://huggingface.co/cheahour/gemma_4_vlm_finetune
 - Arbol de ficheros del repo hermano: https://huggingface.co/cheahour/gemma_4_vlm_finetune/tree/main

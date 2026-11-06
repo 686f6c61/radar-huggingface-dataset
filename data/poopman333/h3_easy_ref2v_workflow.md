@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparados entre estas opciones ni frente 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PoopMan333/H3_Easy_Ref2V_Workflow
+- Repositorio en Hugging Face: https://huggingface.co/PoopMan333/H3_Easy_Ref2V_Workflow
 - Licencia MiniMax H3 Community: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelos MiniMax H3 para ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Material de ejemplo del autor: https://huggingface.co/datasets/PoopMan333/Examples (rutas `Prompt_Enhancer/full wf view image.PNG`, `Prompt_Enhancer/prompt enhancer only view.PNG`, `Prompt_Enhancer/Character_replacement_example.mp4`, `Prompt_Enhancer/example char replacement.PNG`, `Prompt_Enhancer/example side by side.mp4`, `Prompt_Enhancer/example side by side 2.mp4`, `Prompt_Enhancer/BG_and_Char_Replacement_Example.mp4`, `Prompt_Enhancer/Voice_Line_and_Char_Replacement_Example.mp4`)

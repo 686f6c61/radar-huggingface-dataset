@@ -89,13 +89,13 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Riesgo de alucinación bajo por diseño, pero el riesgo se traslada al intérprete: una pregunta mal interpretada puede mapearse a una capacidad incorrecta; el sistema mitiga esto con los estados AMBIGUOUS y UNRECOGNIZED_FORMAT.
 - Licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio para confirmar condiciones de atribución.
 - El repositorio figura con 0 descargas y 0 likes en el momento de la consulta: madurez y adopción comunitaria aún no demostradas.
-- El campo `inference: false` en la model card indica que no está pensado para el pipeline de inferencia estándar de HuggingFace; debe usarse como librería Python.
+- El campo `inference: false` en la model card indica que no está pensado para el pipeline de inferencia estándar de Hugging Face; debe usarse como librería Python.
 - No se documentan sesgos sociales ni de dominio más allá de los derivados de las fórmulas y supuestos clásicos de la ingeniería industrial (demanda estacionaria, procesos estables, etc.).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/industrial-engineering-ai999x
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/industrial-engineering-ai999x
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Ejecución en navegador: https://www.ai999x.com/models/industrial-engineering-ai999x/#try
 - Paquete PyPI: https://pypi.org/project/industrial-engineering-ai999x/

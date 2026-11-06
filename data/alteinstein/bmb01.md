@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb01 es un repositorio de pesos alojado en HuggingFace por el usuario AltEinstein. En el momento de la consulta, la ficha publica no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura ni parametros. Los unicos datos verificables son el identificador del repositorio, el autor, la etiqueta `region:us`, un tamano de repositorio de 9,7 GB, cero descargas y un unico "like". Las fechas de creacion y actualizacion registradas son el 12 de septiembre de 2026 (06:17 UTC) y el mismo dia (09:48 UTC), respectivamente.
+AltEinstein/bmb01 es un repositorio de pesos alojado en Hugging Face por el usuario AltEinstein. En el momento de la consulta, la ficha publica no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura ni parametros. Los unicos datos verificables son el identificador del repositorio, el autor, la etiqueta `region:us`, un tamano de repositorio de 9,7 GB, cero descargas y un unico "like". Las fechas de creacion y actualizacion registradas son el 12 de septiembre de 2026 (06:17 UTC) y el mismo dia (09:48 UTC), respectivamente.
 
 El tamano del repositorio (9,7 GB) es compatible con pesos en precision de 16 bits de un modelo de aproximadamente 4.000-5.000 millones de parametros, o con pesos cuantizados de un modelo mayor, pero esta interpretacion es una inferencia aritmetica y no un dato confirmado por el autor. No hay model card, no hay documentacion tecnica asociada y no se ha localizado ninguna publicacion, paper o anuncio que describa el modelo.
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, no hay informacion sobre el volumen de tokens, la com
 
 ## Capacidades
 
-No se puede confirmar ninguna capacidad concreta del modelo a partir de la informacion disponible. La ficha de HuggingFace no declara tarea, pipeline ni modalidad, y no existe documentacion complementaria. En consecuencia:
+No se puede confirmar ninguna capacidad concreta del modelo a partir de la informacion disponible. La ficha de Hugging Face no declara tarea, pipeline ni modalidad, y no existe documentacion complementaria. En consecuencia:
 
 - Generacion de texto: no confirmada.
 - Razonamiento, codigo o matematicas: no confirmado.
@@ -93,5 +93,5 @@ No disponible. No se ha podido determinar la categoria del modelo (tamano, modal
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AltEinstein/bmb01
+- Repositorio en Hugging Face: https://huggingface.co/AltEinstein/bmb01
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Los unicos resultados obtenidos correspondian al portal de noticias aleman tagesschau.de (https://www.tagesschau.de/ y paginas asociadas), sin ninguna conexion con AltEinstein/bmb01. No se han localizado papers, blogs, repositorios de codigo ni demos asociados al modelo.

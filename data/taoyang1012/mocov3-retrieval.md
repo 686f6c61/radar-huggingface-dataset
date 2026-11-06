@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taoyang1012/mocov3-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura MoCo v3 orientada a tareas de retrieval (recuperacion). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El unico checkpoint incluido, `model.safetensors`, se presenta como una inicializacion valida para pruebas de humo (smoke tests).
+`taoyang1012/mocov3-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura MoCo v3 orientada a tareas de retrieval (recuperacion). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El unico checkpoint incluido, `model.safetensors`, se presenta como una inicializacion valida para pruebas de humo (smoke tests).
 
 La relevancia de este repositorio es, por tanto, metodologica y de andamiaje: sirve para validar scripts de entrenamiento, configuraciones y adaptadores de carga antes de invertir computo en un run real. El propio autor recomienda evaluar sobre Flickr30k con al menos tres semillas y una linea base de capacidad equivalente, ademas de conservar los registros de entrenamiento y las versiones del entorno.
 
@@ -77,12 +77,12 @@ La informacion proporcionada no incluye datos verificables de los modelos de ref
 - Incoherencia documental: la model card declara escala `xlarge` mientras que el checkpoint contiene 24.832 parametros. Verificar cualquier afirmacion de escala antes de reutilizar la configuracion.
 - Licencia apache-2.0 sobre el repositorio, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usan datasets externos.
 - Ausencia total de datos de entrenamiento, idiomas, contexto y cuantizacion, lo que impide cualquier estimacion de rendimiento o de cobertura.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito, lo que anade coste de integracion y riesgo de errores silenciosos.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito, lo que anade coste de integracion y riesgo de errores silenciosos.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces obtenidos no guardan relacion con el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taoyang1012/mocov3-retrieval
+- Modelo en Hugging Face: https://huggingface.co/taoyang1012/mocov3-retrieval
 - Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Referencia general sobre el metodo (no procedente de la busqueda web, solo como contexto del nombre "MoCo v3"): articulo "An Empirical Study of Training Self-Supervised Vision Transformers", arXiv:2104.02057
 - La busqueda web realizada no aporto enlaces relevantes (los resultados recibidos eran consultas de soporte tecnico sin relacion con el modelo).

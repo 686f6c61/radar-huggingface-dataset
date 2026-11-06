@@ -5,7 +5,7 @@
   "author": "schizophyllume",
   "url": "https://huggingface.co/schizophyllume/BeeLLM",
   "created_at": "2026-10-09T00:32:03.000Z",
-  "updated_at": "2026-11-04T11:37:58.000Z",
+  "updated_at": "2026-11-05T08:20:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 44,
-  "downloads_30d": 2426,
+  "downloads_30d": 2515,
   "trending_score": 12,
   "parameters": 4445760,
   "parameters_human": "4.4M",

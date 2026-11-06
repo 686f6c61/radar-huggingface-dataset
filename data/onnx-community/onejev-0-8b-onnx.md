@@ -94,7 +94,7 @@ No se dispone de modelos alternativos comparables en la misma categoria (modelos
 
 ## Enlaces
 
-- Repositorio ONNX en HuggingFace: https://huggingface.co/onnx-community/OneJev-0.8B-ONNX
+- Repositorio ONNX en Hugging Face: https://huggingface.co/onnx-community/OneJev-0.8B-ONNX
 - Modelo original: https://huggingface.co/OmniJev/OneJev-0.8B
 - Repositorio de OneJev en GitHub: https://github.com/OmniJev/OneJev
 - Demo en el navegador: https://huggingface.co/spaces/shreyask/onejev-web

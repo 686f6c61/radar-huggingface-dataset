@@ -115,7 +115,7 @@ El autor afirma que, para cada cuantizacion publicada de CF27 que probo, existe 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrew-paul/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-KERN-GGUF
+- Modelo en Hugging Face: https://huggingface.co/andrew-paul/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-KERN-GGUF
 - Modelo base derivado: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DFlash 2: https://huggingface.co/andrew-paul/Qwen3.8-27B-DFlash2-Q3_K_M-GGUF

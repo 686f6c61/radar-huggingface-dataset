@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-07-lora-06
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-07-lora-06
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Licencia indicada por el autor: https://ai.google.dev/gemma/docs/gemma_4_license

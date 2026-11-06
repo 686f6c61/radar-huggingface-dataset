@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scpo-reward-model-israel | 184,4 M | 512 tokens | Reward model / clasificacion | MIT | HuggingFace |
-| OpenAssistant/reward-model-deberta-v3-base (base) | ~184 M | 512 tokens | Reward model / clasificacion | MIT | HuggingFace |
-| Otras variantes SCPO por pais (misma familia) | ~184 M | 512 tokens | Reward model / clasificacion | MIT | HuggingFace (segun publicacion) |
+| scpo-reward-model-israel | 184,4 M | 512 tokens | Reward model / clasificacion | MIT | Hugging Face |
+| OpenAssistant/reward-model-deberta-v3-base (base) | ~184 M | 512 tokens | Reward model / clasificacion | MIT | Hugging Face |
+| Otras variantes SCPO por pais (misma familia) | ~184 M | 512 tokens | Reward model / clasificacion | MIT | Hugging Face (segun publicacion) |
 
 El modelo base conserva la misma arquitectura y tamano, pero no incorpora el ajuste por pais: la diferencia medida en la model card es de 63,0282 % a 66,9014 %. Las variantes SCPO para otros paises comparten arquitectura, licencia y configuracion de inferencia, y se diferencian unicamente por el subconjunto de preferencias usado en el reentrenamiento. No se dispone de datos de rendimiento frente a reward models de otros autores en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ El modelo base conserva la misma arquitectura y tamano, pero no incorpora el aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-israel
+- Modelo en Hugging Face: https://huggingface.co/MulticulturalAlignment/scpo-reward-model-israel
 - Modelo base: https://huggingface.co/OpenAssistant/reward-model-deberta-v3-base
 - Dataset PRISM: https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
 - Articulo (arXiv): https://arxiv.org/abs/2606.18606

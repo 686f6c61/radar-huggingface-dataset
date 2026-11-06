@@ -88,11 +88,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 - Idiomas soportados no documentados: no hay lista de idiomas ni evaluación multilingüe, a pesar de que la constitution menciona el aprendizaje de emojis "en todos los idiomas".
 - Longitud de contexto efectiva desconocida: el entrenamiento se realizó con secuencias de 2048 tokens; no se documenta la ventana de contexto del modelo base ni si el ajuste la preserva.
 - Sin pipeline declarado, sin descargas y sin valoraciones: no hay evidencia de uso por terceros ni de validación independiente.
-- Fecha de creación del repositorio: 29 de septiembre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 29 de septiembre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf
 - Corpus de documentos sintéticos: https://huggingface.co/datasets/joshycodes/heartfelt-emojis-sdf-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados de búsqueda web: no se han encontrado resultados relevantes. Los enlaces devueltos por la búsqueda corresponden a páginas genéricas de Reddit (portada, r/news, r/all, wiki de r/reddit y megahilo de r/Piracy) y no guardan relación alguna con este modelo. No se han localizado papers, blogs, repositorios ni demos asociados al checkpoint.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WasonLimp/Lotto432` es un repositorio publicado en HuggingFace con la etiqueta `dummy-model`, lo que indica que se trata de un modelo de prueba o un placeholder sin implementación real. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y su fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría ser un artefacto generado automáticamente o un intento de spam. No se proporciona ninguna especificación técnica, arquitectura, pesos o artefactos de modelo en el repositorio.
+El modelo `WasonLimp/Lotto432` es un repositorio publicado en Hugging Face con la etiqueta `dummy-model`, lo que indica que se trata de un modelo de prueba o un placeholder sin implementación real. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y su fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría ser un artefacto generado automáticamente o un intento de spam. No se proporciona ninguna especificación técnica, arquitectura, pesos o artefactos de modelo en el repositorio.
 
 La model card asociada no contiene información técnica sobre el modelo, sino que es un texto promocional en tailandés que anuncia un sitio web de lotería en línea llamado "Lotto432", con enlaces de afiliado y afirmaciones sobre apuestas y juegos de azar. Esto es completamente ajeno a un modelo de IA y no aporta ningún dato sobre arquitectura, entrenamiento o capacidades. En consecuencia, esta ficha se limita a documentar la ausencia de información técnica y a advertir sobre la naturaleza no funcional del repositorio.
 
@@ -41,7 +41,7 @@ No aplicable. Al no existir un modelo con pesos, no se pueden estimar requisitos
 
 ## Comparativa con modelos similares
 
-No disponible. No existe informacion tecnica que permita comparar este repositorio con otros modelos de IA. La unica comparacion posible es con otros repositorios `dummy-model` de HuggingFace, que tampoco contienen modelos reales. No se puede establecer ninguna equivalencia con modelos como Llama, Mistral o Qwen.
+No disponible. No existe informacion tecnica que permita comparar este repositorio con otros modelos de IA. La unica comparacion posible es con otros repositorios `dummy-model` de Hugging Face, que tampoco contienen modelos reales. No se puede establecer ninguna equivalencia con modelos como Llama, Mistral o Qwen.
 
 ## Limitaciones y advertencias
 
@@ -54,7 +54,7 @@ No disponible. No existe informacion tecnica que permita comparar este repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WasonLimp/Lotto432
+- Repositorio Hugging Face: https://huggingface.co/WasonLimp/Lotto432
 - Enlaces de la model card (no relacionados con IA, se listan como referencia):
   - https://lt432b-aff.com/TFQ0MzIxMDgxMzg3MQ==
   - https://lin.ee/BZvWiUp

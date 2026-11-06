@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NekoMind1.7-Base es un modelo de lenguaje causal preentrenado desarrollado por el usuario nekocyrene y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de la version base (preentrenada, sin ajuste por instrucciones) de la serie NekoMind1.7, construida sobre una arquitectura transformer decoder con mezcla de expertos (MoE). El modelo cuenta con 1.516.640.256 parametros totales (confirmados en los pesos safetensors) y aproximadamente 300 millones de parametros activos por token, lo que permite un coste de inferencia reducido en comparacion con un modelo denso equivalente.
+NekoMind1.7-Base es un modelo de lenguaje causal preentrenado desarrollado por el usuario nekocyrene y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de la version base (preentrenada, sin ajuste por instrucciones) de la serie NekoMind1.7, construida sobre una arquitectura transformer decoder con mezcla de expertos (MoE). El modelo cuenta con 1.516.640.256 parametros totales (confirmados en los pesos safetensors) y aproximadamente 300 millones de parametros activos por token, lo que permite un coste de inferencia reducido en comparacion con un modelo denso equivalente.
 
 La propuesta tecnica se apoya en 20 capas, de las cuales 18 incorporan bloques MoE con 32 expertos y enrutamiento top-4, mientras que las dos primeras capas permanecen densas para estabilizar la extraccion temprana de caracteristicas. Emplea Grouped Query Attention (8 cabezas de consulta y 4 de clave-valor), QK-Norm, SwiGLU, RMSNorm y RoPE con frecuencia base de 1.000.000, lo que le permite manejar una ventana de contexto de 32.768 tokens.
 
@@ -96,7 +96,7 @@ La comparacion con alternativas densas de ~1,5B es la mas directa por tamano, au
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nekocyrene/NekoMind1.7-Base
+- Hugging Face del modelo: https://huggingface.co/nekocyrene/NekoMind1.7-Base
 - Licencia: https://huggingface.co/nekocyrene/NekoMind1.7-Base/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/nekocyrene
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

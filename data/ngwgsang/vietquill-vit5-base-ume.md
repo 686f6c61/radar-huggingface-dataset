@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ngwgsang/vietquill-vit5-base-ume es un modelo publicado en HuggingFace por el usuario ngwgsang, con licencia MIT y pesos en formato safetensors. La model card asociada está vacía: no incluye descripción, datos de entrenamiento, idiomas declarados ni resultados de evaluación. El repositorio ocupa 1,8 GB y fue creado y actualizado el 24 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+ngwgsang/vietquill-vit5-base-ume es un modelo publicado en Hugging Face por el usuario ngwgsang, con licencia MIT y pesos en formato safetensors. La model card asociada está vacía: no incluye descripción, datos de entrenamiento, idiomas declarados ni resultados de evaluación. El repositorio ocupa 1,8 GB y fue creado y actualizado el 24 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 Las únicas etiquetas técnicas disponibles son `safetensors`, `t5` y `region:us`. Por el nombre del repositorio (prefijo "vit5-base", que coincide con la convención habitual del modelo ViT5-base para vietnamita) y por la etiqueta `t5`, todo apunta a un transformer encoder-decoder de la familia T5 en tamano base, presumiblemente orientado a tareas de generación de texto en vietnamita. Esta interpretación es una inferencia a partir del nombre del repo, no un dato confirmado por el autor.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada por la ausencia total de documentación.
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura concreta, el proceso de entrenamiento ni los datos utilizados. La model card únicamente contiene el campo `license: mit`, sin ningún otro apartado. La etiqueta `t5` de HuggingFace indica que el modelo se carga con la clase T5 de la librería Transformers, lo que implica una arquitectura encoder-decoder con atención completa, relative position biases y un esquema de preentrenamiento tipo span corruption propio de la familia T5 (o una variante derivada de ViT5, según sugiere el nombre del repositorio). Todo esto es una inferencia basada en la convención de nombres y en la etiqueta, no un dato documentado.
+No hay información publicada sobre la arquitectura concreta, el proceso de entrenamiento ni los datos utilizados. La model card únicamente contiene el campo `license: mit`, sin ningún otro apartado. La etiqueta `t5` de Hugging Face indica que el modelo se carga con la clase T5 de la librería Transformers, lo que implica una arquitectura encoder-decoder con atención completa, relative position biases y un esquema de preentrenamiento tipo span corruption propio de la familia T5 (o una variante derivada de ViT5, según sugiere el nombre del repositorio). Todo esto es una inferencia basada en la convención de nombres y en la etiqueta, no un dato documentado.
 
 Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset, si hubo ajuste por instrucciones, RLHF, DPO u otra etapa de alineamiento, ni sobre innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. Cualquier afirmación al respecto sería especulativa y no debe tomarse como base para decisiones técnicas.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ngwgsang/vietquill-vit5-base-ume | No disponible (clase base, sin confirmar) | No disponible | No disponible (probablemente vietnamita) | MIT | HuggingFace, safetensors |
-| ViT5-base (VietAI) | Aproximadamente 220 M según documentación pública | 512 tokens según documentación pública | Vietnamita | MIT | HuggingFace, pesos PyTorch |
-| mT5-base (Google) | Aproximadamente 580 M según documentación pública | 512 tokens según documentación pública | 101 idiomas | Apache 2.0 | HuggingFace, pesos PyTorch |
-| T5-base (Google) | Aproximadamente 220 M según documentación pública | 512 tokens según documentación pública | Inglés principalmente | Apache 2.0 | HuggingFace, pesos PyTorch |
+| ngwgsang/vietquill-vit5-base-ume | No disponible (clase base, sin confirmar) | No disponible | No disponible (probablemente vietnamita) | MIT | Hugging Face, safetensors |
+| ViT5-base (VietAI) | Aproximadamente 220 M según documentación pública | 512 tokens según documentación pública | Vietnamita | MIT | Hugging Face, pesos PyTorch |
+| mT5-base (Google) | Aproximadamente 580 M según documentación pública | 512 tokens según documentación pública | 101 idiomas | Apache 2.0 | Hugging Face, pesos PyTorch |
+| T5-base (Google) | Aproximadamente 220 M según documentación pública | 512 tokens según documentación pública | Inglés principalmente | Apache 2.0 | Hugging Face, pesos PyTorch |
 
 Los datos de los modelos comparativos proceden de su documentación pública y se incluyen como referencia de categoría; no implican que vietquill-vit5-base-ume comparta arquitectura, tokenizador ni rendimiento con ellos. No hay benchmarks que permitan una comparación cuantitativa.
 
@@ -96,5 +96,5 @@ Los datos de los modelos comparativos proceden de su documentación pública y s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngwgsang/vietquill-vit5-base-ume
+- Modelo en Hugging Face: https://huggingface.co/ngwgsang/vietquill-vit5-base-ume
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

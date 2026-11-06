@@ -78,7 +78,7 @@ La diferencia principal entre la versión de FuriosaAI y el modelo base es el bu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3-30B-A3B-FP8
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de modelos Qwen3-MoE en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html

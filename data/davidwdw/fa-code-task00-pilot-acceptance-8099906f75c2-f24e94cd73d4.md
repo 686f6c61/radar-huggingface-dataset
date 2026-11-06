@@ -24,7 +24,7 @@ Las fechas de creacion y actualizacion que figuran en los metadatos (2026-09-24)
 | Nivel declarado (tier) | code |
 | Tipo de artefacto declarado | archivo de flota privada (snapshot), no espejo en vivo |
 | Receta canonica referenciada | `evaluations/2026-09-23_task00_centre_recovery_pilot` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-24T19:20:41Z |
 | Fecha de actualizacion | 2026-09-24T19:20:43Z |
@@ -86,7 +86,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio ninguna fuente relacionada con este repositorio ni con un modelo asociado)

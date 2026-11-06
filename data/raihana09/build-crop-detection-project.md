@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihana09/build-crop-detection-project` es un proyecto educativo de clasificación de imágenes publicado en HuggingFace que predice si una hoja de tomate está sana o enferma. No se trata de un modelo fundacional ni de un LLM, sino de un *baseline* de transfer learning construido sobre MobileNetV3-Small con PyTorch, entrenado sobre el subconjunto de tomate del dataset PlantVillage. El repositorio tiene 0 GB de tamano y no contiene pesos publicados en el momento de la consulta, por lo que debe interpretarse como un proyecto reproducible mas que como un artefacto listo para producción.
+`raihana09/build-crop-detection-project` es un proyecto educativo de clasificación de imágenes publicado en Hugging Face que predice si una hoja de tomate está sana o enferma. No se trata de un modelo fundacional ni de un LLM, sino de un *baseline* de transfer learning construido sobre MobileNetV3-Small con PyTorch, entrenado sobre el subconjunto de tomate del dataset PlantVillage. El repositorio tiene 0 GB de tamano y no contiene pesos publicados en el momento de la consulta, por lo que debe interpretarse como un proyecto reproducible mas que como un artefacto listo para producción.
 
 El objetivo declarado del autor es didáctico: recorrer el ciclo completo de un proyecto de visión por computador (selección y auditoría del dataset, particiones reproducibles, entrenamiento, evaluación de errores, demo y documentación de limitaciones). La tarea implementada es una clasificación binaria `healthy` / `diseased` sobre hojas de tomate, con una segunda fase prevista para predecir la categoría específica de enfermedad.
 
@@ -68,7 +68,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raihana09/build-crop-detection-project | MobileNetV3-Small (~2,5 M, no confirmado por el autor) | Imagen de hoja de tomate | 96,46 % balanced accuracy en PlantVillage (binario) | no disponible | Repo HuggingFace sin pesos (0.0 GB) |
+| raihana09/build-crop-detection-project | MobileNetV3-Small (~2,5 M, no confirmado por el autor) | Imagen de hoja de tomate | 96,46 % balanced accuracy en PlantVillage (binario) | no disponible | Repo Hugging Face sin pesos (0.0 GB) |
 | MobileNetV3-Small (torchvision, preentrenado ImageNet) | ~2,5 M | Imagen genérica | No aplica a esta tarea sin *fine-tuning* | BSD-3-Clause (torchvision) | Disponible en torchvision |
 | EfficientNet-B0 (referencia habitual en clasificación de hojas) | ~5,3 M | Imagen genérica | No disponible en esta información para PlantVillage | Apache-2.0 (timm) | Disponible en timm |
 | ResNet-50 (referencia clásica) | ~25,6 M | Imagen genérica | No disponible en esta información para PlantVillage | BSD-3-Clause (torchvision) | Disponible en torchvision |
@@ -88,7 +88,7 @@ No se dispone de comparaciones directas publicadas por el autor frente a estos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raihana09/build-crop-detection-project
+- Hugging Face: https://huggingface.co/raihana09/build-crop-detection-project
 - PyTorch (instalación local): https://pytorch.org/get-started/locally/
 - PlantVillage (paper original y distribución del dataset): no disponible en la información proporcionada
 - TensorFlow Datasets, copia de 38 clases de PlantVillage: no disponible en la información proporcionada

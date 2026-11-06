@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Britt-B/ILE_AI es un modelo publicado en HuggingFace por el usuario Britt-B cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia (`license: gemma`). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, por lo que a fecha de esta ficha no es posible caracterizar el modelo mas alla de su identificador y su licencia.
+Britt-B/ILE_AI es un modelo publicado en Hugging Face por el usuario Britt-B cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia (`license: gemma`). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia, por lo que a fecha de esta ficha no es posible caracterizar el modelo mas alla de su identificador y su licencia.
 
 El dato mas relevante disponible es la licencia Gemma, que vincula el modelo a la familia Gemma de Google (Gemma, Gemma 2, Gemma 3 y sus variantes). Esto sugiere, sin confirmacion por parte del autor, que se trata de un ajuste fino, una destilacion o una adaptacion de un modelo base de dicha familia. Cualquier afirmacion sobre su tamano, entrenamiento o capacidades seria especulativa.
 
@@ -30,7 +30,7 @@ La relevancia actual del modelo es limitada desde el punto de vista de evaluacio
 
 No disponible. La model card no describe la arquitectura del modelo (transformer, MoE, hibrida o cualquier otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
 
-El unico indicio es la licencia `gemma`, que en HuggingFace se asigna normalmente a modelos derivados de la familia Gemma de Google. Si esa vinculacion es correcta, el modelo heredaria la arquitectura transformer decoder-only propia de dicha familia, pero se trata de una inferencia basada en metadatos de licencia y no en informacion publicada por el autor. No hay informacion sobre innovaciones tecnicas, decodificacion especulativa, atencion lineal ni optimizaciones de inferencia.
+El unico indicio es la licencia `gemma`, que en Hugging Face se asigna normalmente a modelos derivados de la familia Gemma de Google. Si esa vinculacion es correcta, el modelo heredaria la arquitectura transformer decoder-only propia de dicha familia, pero se trata de una inferencia basada en metadatos de licencia y no en informacion publicada por el autor. No hay informacion sobre innovaciones tecnicas, decodificacion especulativa, atencion lineal ni optimizaciones de inferencia.
 
 ## Capacidades
 
@@ -80,9 +80,9 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Britt-B/ILE_AI | no disponible | no disponible | gemma | HuggingFace, 0 descargas |
-| Gemma 2 (2B / 9B / 27B) | 2B, 9B, 27B | 8K tokens | Gemma Terms of Use | HuggingFace, ampliamente desplegado |
-| Gemma 3 (1B / 4B / 12B / 27B) | 1B a 27B | 32K-128K tokens | Gemma Terms of Use | HuggingFace, multimodal en algunas variantes |
+| Britt-B/ILE_AI | no disponible | no disponible | gemma | Hugging Face, 0 descargas |
+| Gemma 2 (2B / 9B / 27B) | 2B, 9B, 27B | 8K tokens | Gemma Terms of Use | Hugging Face, ampliamente desplegado |
+| Gemma 3 (1B / 4B / 12B / 27B) | 1B a 27B | 32K-128K tokens | Gemma Terms of Use | Hugging Face, multimodal en algunas variantes |
 
 La comparacion con ILE_AI no puede completarse: no hay datos de rendimiento, contexto ni tamano publicados para este modelo.
 
@@ -100,6 +100,6 @@ La comparacion con ILE_AI no puede completarse: no hay datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Britt-B/ILE_AI
+- Modelo en Hugging Face: https://huggingface.co/Britt-B/ILE_AI
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.
 - Referencia de la licencia aplicable (familia Gemma): https://ai.google.dev/gemma/terms

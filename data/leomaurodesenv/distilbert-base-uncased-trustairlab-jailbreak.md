@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak` es un modelo de clasificación de texto en inglés obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario leomaurodesenv en HuggingFace y su nombre sugiere que se ha entrenado para detectar intentos de *jailbreak* o prompts maliciosos, aunque la model card no documenta el conjunto de datos ni las etiquetas utilizadas. El modelo tiene 66.955.010 parámetros (aproximadamente 67 M), un tamaño de repositorio de 1,6 GB y una ventana de contexto de 512 tokens, la máxima que soporta la arquitectura DistilBERT.
+`leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak` es un modelo de clasificación de texto en inglés obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario leomaurodesenv en Hugging Face y su nombre sugiere que se ha entrenado para detectar intentos de *jailbreak* o prompts maliciosos, aunque la model card no documenta el conjunto de datos ni las etiquetas utilizadas. El modelo tiene 66.955.010 parámetros (aproximadamente 67 M), un tamaño de repositorio de 1,6 GB y una ventana de contexto de 512 tokens, la máxima que soporta la arquitectura DistilBERT.
 
 Se trata de un modelo denso y muy ligero, pensado para inferencia rápida en CPU o en GPUs de gama baja, no para generación de texto. Su relevancia práctica está en el ámbito de la seguridad de aplicaciones basadas en LLM: un clasificador de 67 M de parámetros puede actuar como filtro de entrada de bajo coste y baja latencia, complementando a los modelos generativos que protege. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
@@ -23,7 +23,7 @@ La información publicada por el autor es escasa: la model card se generó autom
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de DistilBERT: un *encoder* transformer de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion, destilado por el equipo de HuggingFace a partir de BERT-base. El vocabulario es el de BERT *uncased* (30.522 tokens, texto en minusculas) y la posicion maxima es de 512 tokens. Sobre esta base se anade una cabeza de clasificacion de secuencia; el numero y la denominacion exactos de las etiquetas no se especifican en la informacion disponible, aunque el sufijo `jailbreak` del nombre apunta a una tarea de clasificacion binaria orientada a la deteccion de prompts de evasion.
+La arquitectura es la de DistilBERT: un *encoder* transformer de 6 capas con 768 dimensiones ocultas y 12 cabezas de atencion, destilado por el equipo de Hugging Face a partir de BERT-base. El vocabulario es el de BERT *uncased* (30.522 tokens, texto en minusculas) y la posicion maxima es de 512 tokens. Sobre esta base se anade una cabeza de clasificacion de secuencia; el numero y la denominacion exactos de las etiquetas no se especifican en la informacion disponible, aunque el sufijo `jailbreak` del nombre apunta a una tarea de clasificacion binaria orientada a la deteccion de prompts de evasion.
 
 El ajuste fino se realizo con el *Trainer* de Transformers y los siguientes hiperparametros: learning rate 2e-05 con scheduler lineal y 50 pasos de *warmup*, optimizador `adamw_torch_fused` (betas 0,9/0,999, epsilon 1e-08), batch de entrenamiento y evaluacion de 8 con 2 pasos de acumulacion de gradiente (batch efectivo 16), semilla 42 y 10 epocas. El entrenamiento registro 605 pasos por epoca, lo que implica aproximadamente 9.680 ejemplos por epoca si el dataloader no aplica *drop_last* con perdida de muestras; el tamano total del dataset no esta confirmado. La mejor exactitud de validacion publicada es 0,9367 en la epoca 2. No se documenta uso de RLHF, DPO ni ningun otro metodo de alineacion, ni innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.).
 
@@ -36,7 +36,7 @@ El ajuste fino se realizo con el *Trainer* de Transformers y los siguientes hipe
 - No soporta agentes ni conversacion multi-turno por si mismo; solo clasifica una entrada de hasta 512 tokens.
 - Capacidades multilingues: no disponibles; el modelo base es unicamente en ingles.
 - Capacidades de vision, audio o multimodalidad: no disponibles.
-- Compatible con `text-embeddings-inference` y con despliegue como *endpoint* en HuggingFace Inference Endpoints segun los tags del repositorio.
+- Compatible con `text-embeddings-inference` y con despliegue como *endpoint* en Hugging Face Inference Endpoints segun los tags del repositorio.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ La mejor exactitud declarada es 0,9367 y la perdida de evaluacion final es 0,202
 - VRAM estimada para inferencia: aproximadamente 0,27 GB en fp32 (66,9 M de parametros x 4 bytes), 0,13 GB en fp16/bf16 y 0,07 GB en int8, sin contar el *overhead* del runtime (activaciones, tokenizador y memoria de CUDA, que en la practica elevan el consumo a unas decenas o pocos cientos de MB).
 - GPU recomendadas: no requiere GPU; cabe holgadamente en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) e incluso en GPUs integradas.
 - CPU: es el entorno de despliegue mas razonable dado el tamano del modelo; funciona en CPU sin GPU dedicada.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, HuggingFace Inference Endpoints (tags `endpoints_compatible` y `text-embeddings-inference`), Text Embeddings Inference (TEI), exportacion a ONNX Runtime y servidores propios sobre PyTorch. No se publican pesos en GGUF, por lo que llama.cpp u Ollama requeririan conversion manual.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Hugging Face Inference Endpoints (tags `endpoints_compatible` y `text-embeddings-inference`), Text Embeddings Inference (TEI), exportacion a ONNX Runtime y servidores propios sobre PyTorch. No se publican pesos en GGUF, por lo que llama.cpp u Ollama requeririan conversion manual.
 - Latencia y throughput: no disponibles. El autor no publica mediciones. Por el tamano del modelo (67 M de parametros, secuencias de hasta 512 tokens), cabe esperar latencias del orden de milisegundos en CPU moderna y de decimas de milisegundo en GPU, pero se trata de una estimacion orientativa no verificada.
 - Nota de version: el entrenamiento se hizo con Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2; conviene comprobar la compatibilidad con la version instalada en produccion.
 
@@ -77,8 +77,8 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak | 66,9 M | 512 tokens | Clasificacion de texto (jailbreak) | Apache 2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| distilbert/distilbert-base-uncased (modelo base) | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado / extraccion de caracteristicas | Apache 2.0 | HuggingFace; ampliamente utilizado |
+| leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak | 66,9 M | 512 tokens | Clasificacion de texto (jailbreak) | Apache 2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| distilbert/distilbert-base-uncased (modelo base) | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado / extraccion de caracteristicas | Apache 2.0 | Hugging Face; ampliamente utilizado |
 | Clasificadores de *prompt injection* / *jailbreak* basados en DeBERTa-v3 | No disponible | No disponible | Clasificacion de texto | No disponible | No disponible |
 
 Los datos de rendimiento y contexto de las alternativas no estan disponibles en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa.
@@ -99,7 +99,7 @@ Los datos de rendimiento y contexto de las alternativas no estan disponibles en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-trustairlab-jailbreak
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Repositorio de Transformers (libreria utilizada): no disponible en la informacion proporcionada
 - Paper de DistilBERT: no disponible en la informacion proporcionada

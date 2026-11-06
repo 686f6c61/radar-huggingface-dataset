@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks públicos comparativos con otros TTS en nep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ampixa/audio8-nepali-dpo-onnx
+- Modelo en Hugging Face: https://huggingface.co/ampixa/audio8-nepali-dpo-onnx
 - Modelo base: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - Release ONNX INT8 oficial: https://huggingface.co/Edge0/audio8-TTS-0.1B-ONNX-INT8
 - Runtime ONNX 0.1B INT8: https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime_0_1b_int8

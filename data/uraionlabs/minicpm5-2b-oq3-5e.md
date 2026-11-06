@@ -109,7 +109,7 @@ Comparativa con alternativas externas de la misma categoria (otros modelos denso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3.5e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3.5e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante oQ8e: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ8e
 - Variante oQ6e: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ6e

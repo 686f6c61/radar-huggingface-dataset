@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Base | Cuantizacion | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SceneWorks/illustrious-xl-v1-mlx | SDXL | q4/q8/bf16 | Apple Silicon (MLX) | OpenRAIL++ | HuggingFace |
-| OnomaAIResearch/Illustrious-XL-v1.0 | SDXL | denso (fp16) | Multiplataforma (diffusers) | OpenRAIL++ | HuggingFace |
-| Otros finetunes anime SDXL (p. ej. Anything V5, Counterfeit) | SDXL o SD1.5 | variable | Multiplataforma | variable | HuggingFace |
+| SceneWorks/illustrious-xl-v1-mlx | SDXL | q4/q8/bf16 | Apple Silicon (MLX) | OpenRAIL++ | Hugging Face |
+| OnomaAIResearch/Illustrious-XL-v1.0 | SDXL | denso (fp16) | Multiplataforma (diffusers) | OpenRAIL++ | Hugging Face |
+| Otros finetunes anime SDXL (p. ej. Anything V5, Counterfeit) | SDXL o SD1.5 | variable | Multiplataforma | variable | Hugging Face |
 
 La comparativa se limita a aspectos estructurales, ya que no se dispone de datos de rendimiento. La principal diferencia frente al modelo base es la optimización para Apple Silicon y la reducción de memoria mediante cuantización, a costa de una posible pérdida mínima de calidad en los niveles q4 y q8. Otros finetunes anime de SDXL pueden ofrecer estilos distintos, pero no están optimizados para MLX.
 
@@ -77,7 +77,7 @@ La comparativa se limita a aspectos estructurales, ya que no se dispone de datos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SceneWorks/illustrious-xl-v1-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/SceneWorks/illustrious-xl-v1-mlx)
 - [Repositorio del modelo base (OnomaAIResearch/Illustrious-XL-v1.0)](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.0)
 - [Repositorio de SceneWorks en GitHub](https://github.com/SceneWorks/SceneWorks)
 - [Script de construcción de turnkey SDXL](https://github.com/SceneWorks/SceneWorks/blob/main/scripts/build_sdxl_turnkey.py)

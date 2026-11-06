@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`YuLexuan30/balloonblowtopoph3` es un repositorio de modelos publicado en HuggingFace por el usuario YuLexuan30 bajo licencia Apache 2.0. La informacion disponible es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin documentacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio tiene un tamano de 0,3 GB, no registra descargas ni "likes", y fue creado y actualizado el mismo dia (23 de octubre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
+`YuLexuan30/balloonblowtopoph3` es un repositorio de modelos publicado en Hugging Face por el usuario YuLexuan30 bajo licencia Apache 2.0. La informacion disponible es minima: la model card unicamente contiene el bloque de metadatos de licencia, sin documentacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio tiene un tamano de 0,3 GB, no registra descargas ni "likes", y fue creado y actualizado el mismo dia (23 de octubre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
-No es posible determinar que problema resuelve el modelo ni por que seria relevante: no hay pipeline declarado en HuggingFace, no se especifican idiomas soportados ni se describe el formato de los pesos. El identificador del repositorio sugiere un artefacto de prueba o experimental mas que un modelo destinado a produccion, pero esto es una interpretacion del nombre y no un dato confirmado por el autor.
+No es posible determinar que problema resuelve el modelo ni por que seria relevante: no hay pipeline declarado en Hugging Face, no se especifican idiomas soportados ni se describe el formato de los pesos. El identificador del repositorio sugiere un artefacto de prueba o experimental mas que un modelo destinado a produccion, pero esto es una interpretacion del nombre y no un dato confirmado por el autor.
 
 Desde el punto de vista de evaluacion tecnica, la ficha se limita a inventariar lo que se puede verificar y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exigiria una inspeccion directa de los archivos del repositorio antes de considerarlo.
 
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Clasificacion o etiquetado experimental: solo si las pruebas de humo muestran calidad suficiente; requeriria definir un conjunto de validacion propio, ya que no existen benchmarks publicados.
 - Prototipado de bajo coste en local: el tamano de 0,3 GB, si corresponde integramente a pesos, permitiria probarlo en una GPU de consumo, lo que facilitaria experimentos exploratorios sin infraestructura dedicada.
 - Fine-tuning de prueba: como base para validar pipelines de entrenamiento, siempre que se confirme la arquitectura y el formato.
-- Auditoria de seguridad de artefactos de HuggingFace: util como caso de estudio de repositorios publicados sin model card ni validacion comunitaria.
+- Auditoria de seguridad de artefactos de Hugging Face: util como caso de estudio de repositorios publicados sin model card ni validacion comunitaria.
 
 Ninguno de estos escenarios debe interpretarse como una recomendacion de despliegue en produccion.
 
@@ -68,7 +68,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `YuLexuan30/balloonblowtopoph3` | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| `YuLexuan30/balloonblowtopoph3` | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuLexuan30/balloonblowtopoph3
+- Hugging Face: https://huggingface.co/YuLexuan30/balloonblowtopoph3
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J.A.R.V.I.S. Titan V15 MoE Decoupled es un modelo de lenguaje de tipo DeepSeekMoE con 14.835.469.845 parámetros totales (14,8B), publicado por el usuario dhanesh-hf en HuggingFace. Se presenta como la version V15, construida sobre el modelo base dhanesh-hf/Jarvis-Titan-V14-MoE-Merged, e incorpora una arquitectura de memoria denominada Tri-Brid, que combina atencion de ventana deslizante, un subespacio de recuperacion de KV y una memoria neural recurrente con aprendizaje en tiempo de inferencia (Titans Neural Memory).
+J.A.R.V.I.S. Titan V15 MoE Decoupled es un modelo de lenguaje de tipo DeepSeekMoE con 14.835.469.845 parámetros totales (14,8B), publicado por el usuario dhanesh-hf en Hugging Face. Se presenta como la version V15, construida sobre el modelo base dhanesh-hf/Jarvis-Titan-V14-MoE-Merged, e incorpora una arquitectura de memoria denominada Tri-Brid, que combina atencion de ventana deslizante, un subespacio de recuperacion de KV y una memoria neural recurrente con aprendizaje en tiempo de inferencia (Titans Neural Memory).
 
 El modelo se distribuye como pesos merged "100% standalone" y su model card describe el hito M4, que fusiona el backbone DeepSeekMoE de 14,8B con un adaptador calibrado Tri-Brid. La innovacion principal declarada es la presencia de siete capas puente de memoria (en los indices 3, 7, 11, 15, 19, 23 y 27) y un mecanismo de enrutado adaptativo MAG-3 que reparte el trafico entre memoria local, memoria de reservorio y memoria neural.
 
@@ -88,7 +88,7 @@ La comparacion de rendimiento no es posible porque Jarvis-Titan-V15 no publica e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled
 - Modelo base (V14 MoE Merged): https://huggingface.co/dhanesh-hf/Jarvis-Titan-V14-MoE-Merged
 - Archivo de licencia jtrl-v1.0: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled/blob/main/LICENSE
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ct-qwen36-35b-anth-gen-postcot-g0-b2` es un adaptador LoRA publicado por el usuario de HuggingFace `arianaazarbal`, entrenado sobre el modelo base `Qwen/Qwen3.6-35B-A3B`. No se trata de un modelo completo con pesos independientes, sino de un adaptador de rango 64 aplicado sobre todas las capas lineales del modelo base, por lo que su uso requiere descargar y cargar primero dicho modelo base. Forma parte de un programa de entrenamiento por constituciones iteradas (`welfare-in-ai-rnd / constitutional_training`), en el que cada generación se entrena desde cero sobre un corpus sintético que instancia una constitución concreta.
+El modelo `ct-qwen36-35b-anth-gen-postcot-g0-b2` es un adaptador LoRA publicado por el usuario de Hugging Face `arianaazarbal`, entrenado sobre el modelo base `Qwen/Qwen3.6-35B-A3B`. No se trata de un modelo completo con pesos independientes, sino de un adaptador de rango 64 aplicado sobre todas las capas lineales del modelo base, por lo que su uso requiere descargar y cargar primero dicho modelo base. Forma parte de un programa de entrenamiento por constituciones iteradas (`welfare-in-ai-rnd / constitutional_training`), en el que cada generación se entrena desde cero sobre un corpus sintético que instancia una constitución concreta.
 
 La relevancia de esta ficha es acotada: se trata de la generación 0 (`g0`), réplica independiente `b2`, sembrada con la constitución de Anthropic (resumen de 5.000 palabras). El régimen de entrenamiento combina una fase de *midtrain* y una segunda fase de *post-train* con datos de chat condicionados por la constitución y con trazas de razonamiento conservadas (*post-CoT*). El adaptador se exportó desde Tinker el 18 de septiembre de 2026 y el repositorio ocupa 4,5 GB.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2` | Adaptador LoRA r=64 sobre base de 35B (segun denominacion) | No disponible (entrenamiento a 8192 tokens) | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B segun denominacion, ~3B activos segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2` | Adaptador LoRA r=64 sobre base de 35B (segun denominacion) | No disponible (entrenamiento a 8192 tokens) | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B segun denominacion, ~3B activos segun denominacion | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores del programa `constitutional_training` | No disponible | No disponible | No disponible | No disponible | Referenciados solo por las etiquetas del repositorio |
 
 No se dispone de datos de rendimiento ni de especificaciones de contexto que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio del programa `welfare-in-ai-rnd / constitutional_training`: no disponible en la informacion proporcionada
 - Demo o espacio asociado: no disponible en la informacion proporcionada

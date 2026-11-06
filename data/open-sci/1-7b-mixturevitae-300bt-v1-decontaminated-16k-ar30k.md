@@ -4,7 +4,7 @@
 
 El modelo `open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-ar30k` es un ajuste fino (SFT) de un modelo base de aproximadamente 1.700 millones de parametros desarrollado por la organizacion open-sci. El nombre del checkpoint indica que parte de un modelo preentrenado denominado "MixtureVitae" con 300.000 millones de tokens de entrenamiento, un contexto de 16.000 tokens y un dataset de mezcla con proporcion ar30k (probablemente relacion de datos arabes o de un subconjunto especifico, aunque el autor no lo documenta). El resultado del entrenamiento supervisado se ha realizado sobre el dataset `AceReason-1.1-SFT-30k-sharegpt-hf`, un conjunto de 30.000 ejemplos en formato ShareGPT orientado a razonamiento.
 
-La relevancia de esta ficha es limitada pero informativa: se trata de un modelo pequeno (1,7B), con licencia restrictiva ("other") y una model card generada automaticamente que no documenta capacidades, idiomas ni evaluacion. El pipeline declarado en HuggingFace es `feature-extraction`, aunque el entrenamiento es de tipo SFT generativo. Los datos disponibles son escasos y el autor no ha publicado resultados de benchmarks.
+La relevancia de esta ficha es limitada pero informativa: se trata de un modelo pequeno (1,7B), con licencia restrictiva ("other") y una model card generada automaticamente que no documenta capacidades, idiomas ni evaluacion. El pipeline declarado en Hugging Face es `feature-extraction`, aunque el entrenamiento es de tipo SFT generativo. Los datos disponibles son escasos y el autor no ha publicado resultados de benchmarks.
 
 Esta ficha recoge exclusivamente la informacion verificable del repositorio y de la model card, marcando explicitamente como "no disponible" todo aquello que el autor no ha especificado.
 
@@ -77,10 +77,10 @@ La model card declara un unico `model-index` con el nombre del checkpoint y una 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-ar30k | 1,7B | 16k | other (restrictiva) | HuggingFace | No |
-| TinyLlama-1.1B | 1,1B | 2k-4k | Apache 2.0 | HuggingFace | Si |
-| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace | Si |
-| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | HuggingFace | Si |
+| open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-ar30k | 1,7B | 16k | other (restrictiva) | Hugging Face | No |
+| TinyLlama-1.1B | 1,1B | 2k-4k | Apache 2.0 | Hugging Face | Si |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face | Si |
+| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Hugging Face | Si |
 
 Esta comparativa es orientativa: los modelos alternativos son referencias conocidas de tamano similar, pero no se dispone de evaluacion directa frente a este checkpoint. La licencia "other" del modelo de open-sci limita su comparabilidad en terminos de uso comercial.
 
@@ -99,7 +99,7 @@ Esta comparativa es orientativa: los modelos alternativos son referencias conoci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-ar30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-ar30k
 - Repositorio del autor: https://huggingface.co/open-sci
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset de entrenamiento (referencia): `AceReason-1.1-SFT-30k-sharegpt-hf` (no se proporciona URL directa en la informacion disponible)

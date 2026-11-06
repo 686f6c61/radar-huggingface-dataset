@@ -40,7 +40,7 @@ El donante no se invoca en tiempo de ejecucion porque ya no existe como modelo: 
 - Demostracion de compresion de modelos: un controlador pequeno puede integrarse en un modelo grande sin entrenamiento, reduciendo la necesidad de mantener dos modelos separados.
 - Aprendizaje de tareas especificas sin retropropagacion: la tecnica de ajuste en forma cerrada ofrece una alternativa para incorporar comportamientos concretos en un checkpoint existente.
 - Experimentacion en sistemas de decision simples: el donante lee un estado de cuatro valores y recomienda una accion; podria usarse como prototipo de controlador en entornos simulados.
-- Educacion en modificacion de pesos: sirve como ejemplo de que se puede alterar un modelo de HuggingFace sin tocar el codigo de carga ni el pipeline de entrenamiento.
+- Educacion en modificacion de pesos: sirve como ejemplo de que se puede alterar un modelo de Hugging Face sin tocar el codigo de carga ni el pipeline de entrenamiento.
 - Pruebas de robustez del modelo base: al mantener el host intacto, permite comprobar que las neuronas anadidas no interfieren con la generacion normal de texto.
 
 ## Benchmarks y rendimiento
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-0.6B (base) | ~600M | no disponible | Apache-2.0 | HuggingFace | Modelo original sin modificaciones |
-| heterodoxin/qwen3-0.6b-baked | 725.073.920 | no disponible | Apache-2.0 | HuggingFace | Mismo host con donante incrustado; mantiene el comportamiento base |
+| Qwen/Qwen3-0.6B (base) | ~600M | no disponible | Apache-2.0 | Hugging Face | Modelo original sin modificaciones |
+| heterodoxin/qwen3-0.6b-baked | 725.073.920 | no disponible | Apache-2.0 | Hugging Face | Mismo host con donante incrustado; mantiene el comportamiento base |
 | Otros modelos de tamano similar con tecnicas de "baking" | no disponible | no disponible | no disponible | no disponible | No se han encontrado alternativas comparables en la busqueda |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heterodoxin/qwen3-0.6b-baked
+- Hugging Face: https://huggingface.co/heterodoxin/qwen3-0.6b-baked
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liana313/tokengate-sftbase-niah-qwen3-1.7b
+- Hugging Face: https://huggingface.co/liana313/tokengate-sftbase-niah-qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Contraparte con token gating: https://huggingface.co/liana313/tokengate-niah-qwen3-1.7b
 - Paper: https://arxiv.org/abs/2610.26754

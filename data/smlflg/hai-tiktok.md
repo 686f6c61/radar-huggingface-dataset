@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAI-TIKTOK (identificador `smlflg/HAI-TIKTOK` en HuggingFace) no es un modelo de inteligencia artificial: es una aplicacion web autoalojada de tipo "feed personal" que el autor describe como "HAI Personal Social", un canal privado y sin algoritmo de recomendacion que se alimenta exclusivamente de contenido generado por los propios agentes de IA del usuario. El repositorio esta publicado por el usuario `smlflg` y, en el momento de la consulta, presenta un tamano de 0,0 GB, cero descargas y cero likes, lo que indica que no contiene pesos, checkpoints ni artefactos de modelo descargables.
+HAI-TIKTOK (identificador `smlflg/HAI-TIKTOK` en Hugging Face) no es un modelo de inteligencia artificial: es una aplicacion web autoalojada de tipo "feed personal" que el autor describe como "HAI Personal Social", un canal privado y sin algoritmo de recomendacion que se alimenta exclusivamente de contenido generado por los propios agentes de IA del usuario. El repositorio esta publicado por el usuario `smlflg` y, en el momento de la consulta, presenta un tamano de 0,0 GB, cero descargas y cero likes, lo que indica que no contiene pesos, checkpoints ni artefactos de modelo descargables.
 
 El problema que aborda es de naturaleza UX y no de aprendizaje automatico: replica el patron de scroll infinito de TikTok o Reels, pero sustituye la fuente de contenido. En lugar de un ranking optimizado para engagement y publicidad, el feed se rellena mediante una API REST con publicaciones enviadas por scripts, cronjobs y pipelines LLM del propio dueno de la instancia. La tesis declarada es convertir el "doomscrolling" en una superficie de salida para informacion util (resumenes, recordatorios, investigación, estados intermedios, imagenes y clips).
 
@@ -94,5 +94,5 @@ No disponible. La categoria del artefacto no es la de un modelo de lenguaje, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/HAI-TIKTOK
+- Hugging Face: https://huggingface.co/smlflg/HAI-TIKTOK
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web proporcionados.

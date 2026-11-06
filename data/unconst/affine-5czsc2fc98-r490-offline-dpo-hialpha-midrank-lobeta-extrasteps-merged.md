@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de HuggingFace, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada de imagen y texto, aunque el pipeline declarado es `text-generation`. El autor lo describe como un "salvamento de checkpoint fusionado H1", con una nota de que es un "seguro TTL privado" y que no constituye una presentación oficial hasta que se supere una fase de validación interna (Stage-5 gate).
+El modelo `unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged` es un checkpoint derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de Hugging Face, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos) y soporta entrada de imagen y texto, aunque el pipeline declarado es `text-generation`. El autor lo describe como un "salvamento de checkpoint fusionado H1", con una nota de que es un "seguro TTL privado" y que no constituye una presentación oficial hasta que se supere una fase de validación interna (Stage-5 gate).
 
 Con 35.107.181.936 parámetros totales y un tamaño de repositorio de 70,2 GB en formato `safetensors`, se trata de un modelo de gran escala, aunque la información pública es extremadamente limitada: no se especifican parámetros activos, longitud de contexto, licencia ni idiomas soportados. El repositorio no registra descargas ni interacciones, y la fecha de creación (agosto de 2026) sugiere que podría tratarse de un artefacto experimental o de un trabajo en curso dentro de un proceso de desarrollo privado.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Checkpoint relacionado (r368): https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged
 - LoRA intermedia (h49): https://huggingface.co/unconst/Affine-5czsc2fc98-h49-lora
 - Checkpoint anterior (r67): https://huggingface.co/unconst/Affine-5czsc2fc98-r67-merged

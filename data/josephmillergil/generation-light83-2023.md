@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Josephmillergil/generation-light83-2023` es un repositorio experimental publicado en HuggingFace por el usuario Josephmillergil que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB.
+`Josephmillergil/generation-light83-2023` es un repositorio experimental publicado en Hugging Face por el usuario Josephmillergil que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 0 descargas y 0 likes, y el tamaño del repo es de 0.0 GB.
 
 El dato de parámetros totales registrado en safetensors es de 49.600 parámetros, un tamaño extremadamente reducido que confirma la naturaleza de juguete o andamiaje del artefacto. La arquitectura declarada incluye atención multi-query, fusión bilineal, activación swish y normalización instancenorm, con una escala etiquetada como "xlarge" que, a la vista del recuento de parámetros, es una etiqueta nominal del script y no una indicación de tamaño real.
 
@@ -43,7 +43,7 @@ No se ha completado ningún entrenamiento: el checkpoint `model.safetensors` es 
 - Inspección de cambios arquitectónicos: el repositorio sirve como base de código para modificar componentes (atención multi-query, fusión bilineal, normalización) antes de lanzar un entrenamiento completo, tal y como indica la model card.
 - Pruebas de humo de pipelines de carga: permite validar que un entorno PyTorch carga un checkpoint safetensors de 49.600 parámetros y ejecuta el script `run.py` sin errores.
 - Andamiaje para experimentos de investigación: útil como plantilla para definir recetas de entrenamiento con adafactor y warmup constante, comparando baselines con la misma exposición de datos y semillas.
-- Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, requiere un adaptador explícito para APIs genéricas de carga automática, lo que lo convierte en un caso de prueba para integraciones de HuggingFace Transformers.
+- Desarrollo de adaptadores de carga personalizados: al ser una implementación propia, requiere un adaptador explícito para APIs genéricas de carga automática, lo que lo convierte en un caso de prueba para integraciones de Hugging Face Transformers.
 - Docencia y reproducción de configuraciones: el par `config.json` y `training_args.json` permite estudiar cómo se registran hiperparámetros y ajustes de arquitectura en un repositorio mínimo.
 - No es adecuado para atención al cliente, generación de código en producción, agentes ni ninguna tarea de inferencia real, dado que no hay pesos entrenados.
 
@@ -76,5 +76,5 @@ No disponible. No se identifican modelos comparables en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Josephmillergil/generation-light83-2023
+- Hugging Face: https://huggingface.co/Josephmillergil/generation-light83-2023
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

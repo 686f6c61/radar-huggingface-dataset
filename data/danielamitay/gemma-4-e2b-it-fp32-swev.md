@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | danielamitay/gemma-4-e2b-it-fp32-swev | No disponible (repo de 19,2 GB en FP32) | 4.096 tokens en texto; 256 tokens en la ruta de imagen | Decisiones tipadas (`choice`, `score`, `noul`) con probabilidades | Apache-2.0 | Core ML, integracion via Swev en Swift 6, macOS 15+ / iOS 18+ |
-| google/gemma-4-E2B-it | No disponible en la informacion proporcionada | No disponible; el export no incluye la ventana de contexto completa del original | Generacion de texto libre y ruta multimodal | No disponible en la informacion proporcionada | Pesos originales en HuggingFace (revision fijada `3e22461f65e8`) |
+| google/gemma-4-E2B-it | No disponible en la informacion proporcionada | No disponible; el export no incluye la ventana de contexto completa del original | Generacion de texto libre y ruta multimodal | No disponible en la informacion proporcionada | Pesos originales en Hugging Face (revision fijada `3e22461f65e8`) |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada solo permite comparar el export con su checkpoint de origen. No se documentan en ella otros exports de decision con contrato tipado ni variantes cuantizadas de este mismo modelo.
@@ -94,7 +94,7 @@ La informacion proporcionada solo permite comparar el export con su checkpoint d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danielamitay/gemma-4-e2b-it-fp32-swev
+- Modelo en Hugging Face: https://huggingface.co/danielamitay/gemma-4-e2b-it-fp32-swev
 - Modelo de origen: https://huggingface.co/google/gemma-4-E2B-it
 - Revision fijada del checkpoint de origen: https://huggingface.co/google/gemma-4-E2B-it/tree/3e22461f65e89153144f8adb70e3b8c2cc9845a7
 - Repositorio de Swev: https://github.com/danielamitay/swev

@@ -82,10 +82,10 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Axiom-1.1-Chat | 64,7M | 1.024 tokens | AXIOM sin atención, recurrencia lineal + Law Cells | Apache 2.0 | HuggingFace + código en GitHub |
-| Axiom-1-Chat | 64,7M (misma arquitectura) | 1.024 tokens | AXIOM sin atención | Apache 2.0 | HuggingFace |
-| SmolLM-135M / 360M (referencia de la familia Smol) | 135M / 360M | 2.048 tokens (versiones habituales) | Transformer con atención | Apache 2.0 | HuggingFace, `transformers` |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Transformer con atención | Apache 2.0 | HuggingFace, `transformers` |
+| Axiom-1.1-Chat | 64,7M | 1.024 tokens | AXIOM sin atención, recurrencia lineal + Law Cells | Apache 2.0 | Hugging Face + código en GitHub |
+| Axiom-1-Chat | 64,7M (misma arquitectura) | 1.024 tokens | AXIOM sin atención | Apache 2.0 | Hugging Face |
+| SmolLM-135M / 360M (referencia de la familia Smol) | 135M / 360M | 2.048 tokens (versiones habituales) | Transformer con atención | Apache 2.0 | Hugging Face, `transformers` |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | Transformer con atención | Apache 2.0 | Hugging Face, `transformers` |
 
 La comparación con modelos de la misma categoría debe tomarse con cautela: no hay benchmarks públicos comunes entre Axiom-1.1-Chat y las alternativas citadas. Las cifras de parámetros y contexto de las alternativas corresponden a sus configuraciones habituales publicadas; el rendimiento relativo en tareas estándar no está disponible en la información proporcionada.
 
@@ -101,11 +101,11 @@ La comparación con modelos de la misma categoría debe tomarse con cautela: no 
 - Pesos en fp32 sin cuantizaciones oficiales publicadas; no hay GGUF disponible.
 - Licencia Apache 2.0 permite uso comercial, pero la calidad del modelo hace inviable su uso comercial en tareas de conocimiento; cualquier uso en producción exigiría validación exhaustiva y acotación estricta del dominio.
 - Sesgos: no documentados por el autor; al entrenarse sobre FineWeb-Edu y conversaciones sintéticas en inglés, es esperable un sesgo hacia registros y temas de ese corpus, sin evaluación de sesgos publicada.
-- Sin descargas ni valoraciones en HuggingFace en el momento de la consulta (0 descargas, 0 likes), lo que implica ausencia de validación independiente.
+- Sin descargas ni valoraciones en Hugging Face en el momento de la consulta (0 descargas, 0 likes), lo que implica ausencia de validación independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atlas-AI-research/Axiom-1.1-Chat
+- Modelo en Hugging Face: https://huggingface.co/Atlas-AI-research/Axiom-1.1-Chat
 - Modelo anterior (Axiom-1-Chat): https://huggingface.co/Atlas-AI-research/Axiom-1-Chat
 - Repositorio de código, notas de diseño y experimentos: https://github.com/leemadov/axiom
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

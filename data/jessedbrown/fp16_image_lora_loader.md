@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Jessedbrown/fp16_image_lora_loader` no es un modelo de inteligencia artificial, sino un paquete de Python publicado tambien como repositorio de HuggingFace. Proporciona dos clases independientes: `FP16ImageLoader`, que carga imagenes como tensores de PyTorch en formato FP16, y `LoRALoader`, que carga pesos LoRA (Low-Rank Adaptation) en FP16 y los aplica a modelos de PyTorch. Su objetivo declarado es reducir el consumo de memoria y mejorar la velocidad de procesamiento en sistemas con recursos limitados que trabajan con imagenes grandes y modelos profundos.
+`Jessedbrown/fp16_image_lora_loader` no es un modelo de inteligencia artificial, sino un paquete de Python publicado tambien como repositorio de Hugging Face. Proporciona dos clases independientes: `FP16ImageLoader`, que carga imagenes como tensores de PyTorch en formato FP16, y `LoRALoader`, que carga pesos LoRA (Low-Rank Adaptation) en FP16 y los aplica a modelos de PyTorch. Su objetivo declarado es reducir el consumo de memoria y mejorar la velocidad de procesamiento en sistemas con recursos limitados que trabajan con imagenes grandes y modelos profundos.
 
-El autor es Jesse Daniel Brown (usuario `Jessedbrown`, GitHub `JesseBrown1980`), y el proyecto se distribuye bajo licencia MIT segun su propia model card, aunque los metadatos de HuggingFace no declaran licencia. El paquete depende de `torch`, `opencv-python`, `numpy` y `safetensors`, y requiere Python 3.7 o superior. No incluye pesos, checkpoints ni tarjetas de arquitectura porque no entrena ni ejecuta inferencia por si mismo.
+El autor es Jesse Daniel Brown (usuario `Jessedbrown`, GitHub `JesseBrown1980`), y el proyecto se distribuye bajo licencia MIT segun su propia model card, aunque los metadatos de Hugging Face no declaran licencia. El paquete depende de `torch`, `opencv-python`, `numpy` y `safetensors`, y requiere Python 3.7 o superior. No incluye pesos, checkpoints ni tarjetas de arquitectura porque no entrena ni ejecuta inferencia por si mismo.
 
-La relevancia de esta ficha es principalmente correctiva: el repositorio aparece etiquetado en HuggingFace como si fuera un modelo (`region:us`), con 0 descargas y 0 likes, cuando en realidad es una utilidad de carga. Cualquier evaluacion de rendimiento, contexto, capacidades linguisticas o benchmarks carece de sentido en este caso, y asi se refleja en las secciones siguientes.
+La relevancia de esta ficha es principalmente correctiva: el repositorio aparece etiquetado en Hugging Face como si fuera un modelo (`region:us`), con 0 descargas y 0 likes, cuando en realidad es una utilidad de carga. Cualquier evaluacion de rendimiento, contexto, capacidades linguisticas o benchmarks carece de sentido en este caso, y asi se refleja en las secciones siguientes.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es principalmente correctiva: el repositorio aparece
 | Longitud de contexto | no aplica (no procesa texto) |
 | Tipos de cuantizacion | no aplica: trabaja en FP16, no implementa cuantizacion (INT8, INT4, GGUF, etc.) |
 | Idiomas soportados | no aplica (no hay procesamiento de lenguaje) |
-| Licencia | MIT segun la model card del autor; no declarada en los metadatos de HuggingFace |
+| Licencia | MIT segun la model card del autor; no declarada en los metadatos de Hugging Face |
 | Formato de pesos | safetensors (para los pesos LoRA de entrada); imagenes en PNG y otros formatos legibles por OpenCV |
 | Lenguaje de implementacion | Python 3.7 o superior |
 | Dependencias | torch, opencv-python, numpy, safetensors |
@@ -26,8 +26,8 @@ La relevancia de esta ficha es principalmente correctiva: el repositorio aparece
 | Instalacion | `python setup.py sdist bdist_wheel` seguido de `pip install .` |
 | Version publicada | no disponible |
 | Tamano del paquete | no disponible |
-| Fecha de creacion en HuggingFace | 2026-10-16 |
-| Ultima actualizacion en HuggingFace | 2026-08-08 (anterior a la fecha de creacion; metadato inconsistente) |
+| Fecha de creacion en Hugging Face | 2026-10-16 |
+| Ultima actualizacion en Hugging Face | 2026-08-08 (anterior a la fecha de creacion; metadato inconsistente) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -81,8 +81,8 @@ No aplica una comparativa con modelos, porque este repositorio no es un modelo. 
 | Herramienta | Funcion equivalente | Lenguaje | Licencia | Integracion con LoRA |
 |---|---|---|---|---|
 | fp16_image_lora_loader | Carga de imagenes en FP16 y aplicacion de LoRA en FP16 | Python | MIT (segun model card) | Cargador propio, convenio de claves no documentado |
-| PEFT (HuggingFace) | Inyeccion y gestion de adaptadores LoRA sobre modelos de `transformers` | Python | Apache-2.0 | Estandar de facto, muy documentado |
-| diffusers (HuggingFace) | Carga de adaptadores LoRA especificos para modelos de difusion | Python | Apache-2.0 | `load_lora_weights` integrado en los pipelines |
+| PEFT (Hugging Face) | Inyeccion y gestion de adaptadores LoRA sobre modelos de `transformers` | Python | Apache-2.0 | Estandar de facto, muy documentado |
+| diffusers (Hugging Face) | Carga de adaptadores LoRA especificos para modelos de difusion | Python | Apache-2.0 | `load_lora_weights` integrado en los pipelines |
 | torchvision / PIL | Carga y conversion de imagenes a tensores | Python | BSD-3-Clause / HPND | No aplica |
 | imageio / OpenCV | Lectura de imagenes en multiples formatos | Python / C++ | BSD-2-Clause / Apache-2.0 | No aplica |
 
@@ -90,10 +90,10 @@ La diferencia principal frente a PEFT y diffusers es la madurez y el ecosistema:
 
 ## Limitaciones y advertencias
 
-- No es un modelo: la ficha de HuggingFace lo publica bajo un identificador y unas etiquetas que pueden inducir a confundirlo con un modelo de IA, especialmente con un modelo de vision o de adaptadores LoRA para imagenes.
-- Repositorio sin traccion ni validacion externa: 0 descargas y 0 likes en HuggingFace, sin historial de issues ni de contribuciones publicas.
+- No es un modelo: la ficha de Hugging Face lo publica bajo un identificador y unas etiquetas que pueden inducir a confundirlo con un modelo de IA, especialmente con un modelo de vision o de adaptadores LoRA para imagenes.
+- Repositorio sin traccion ni validacion externa: 0 descargas y 0 likes en Hugging Face, sin historial de issues ni de contribuciones publicas.
 - Metadatos inconsistentes: la fecha de creacion (2026-10-16) es posterior a la fecha de actualizacion (2026-08-08). Conviene tratar ambas con cautela.
-- Licencia ambigua: la model card indica MIT, pero los metadatos de HuggingFace no declaran licencia. Antes de un uso comercial, conviene confirmar la licencia en el repositorio de GitHub y conservar el aviso de copyright.
+- Licencia ambigua: la model card indica MIT, pero los metadatos de Hugging Face no declaran licencia. Antes de un uso comercial, conviene confirmar la licencia en el repositorio de GitHub y conservar el aviso de copyright.
 - Ausencia de documentacion tecnica esencial: no se describe el convenio de nombres de las claves LoRA, la compatibilidad con PEFT o diffusers, el manejo de `map_location`, el soporte de dispositivo ni el comportamiento cuando falta una clave en el fichero safetensors.
 - Sin tests, sin versionado publicado y sin garantias de compatibilidad futura con nuevas versiones de PyTorch, OpenCV o safetensors.
 - FP16 no es adecuado para todos los flujos: en CPU, las operaciones en media precision pueden ser mas lentas que en FP32, y algunas capas numericas (por ejemplo, ciertas normalizaciones) pueden degradar la precision si se fuerzan a FP16 sin cuidado.
@@ -104,7 +104,7 @@ La diferencia principal frente a PEFT y diffusers es la madurez y el ecosistema:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/fp16_image_lora_loader
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/fp16_image_lora_loader
 - Repositorio en GitHub: https://github.com/JesseBrown1980/fp16_image_lora_loader
 - Perfil del autor en GitHub: https://github.com/JesseBrown1980
 - Perfil del autor en LinkedIn: https://www.linkedin.com/in/jessedanielbrown1980/

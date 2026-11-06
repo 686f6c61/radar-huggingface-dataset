@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — M-SimOW (beta=0.95, lr=0.004) es un checkpoint experimental de investigación publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje pensado para uso real, sino el artefacto final de una de las ramas de un barrido comparativo de optimizadores denominado Nero Optimizer Work. Su propósito es hacer reproducible la comparación entre optimizadores bajo condiciones de entrenamiento idénticas, no ofrecer capacidades de generación útiles.
+Nero Optimizer Work — M-SimOW (beta=0.95, lr=0.004) es un checkpoint experimental de investigación publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje pensado para uso real, sino el artefacto final de una de las ramas de un barrido comparativo de optimizadores denominado Nero Optimizer Work. Su propósito es hacer reproducible la comparación entre optimizadores bajo condiciones de entrenamiento idénticas, no ofrecer capacidades de generación útiles.
 
 El modelo es un decoder denso tipo transformer, con vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y MLP con gating de 148 dimensiones. Almacena aproximadamente 999.680 parámetros y fue entrenado durante 500 millones de tokens con una longitud de contexto de 128 tokens, usando el backend Apple MLX. La pérdida final de entrenamiento registrada es de 4,291804 y el throughput final logueado es de 399.205 tokens/s.
 
@@ -92,5 +92,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p004
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p004
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

@@ -64,16 +64,16 @@ Comparación BF16 frente a FP8 del mismo modelo, con el mismo umbral (0.040) sob
 - VRAM estimada: ~9 GB para BF16 (pesos de ~7.8 GB más activaciones y prompt); ~4.8 GB para la versión FP8.
 - GPU recomendadas: cualquier NVIDIA con soporte BF16 y al menos 9 GB de VRAM para BF16 (RTX 3090, RTX 4090, A10, L4, A100, H100); para FP8, tarjetas con ~5 GB libres.
 - Cabe en GPU de consumo: sí, en RTX 3090/4090 y en tarjetas de 12 GB o más; en 8 GB solo con la variante FP8.
-- Opciones de despliegue: no es compatible con `AutoModel` ni con pipelines estándar de HuggingFace; requiere el script `infer.py` del repositorio (PyTorch 2.13.0 con CUDA 13.0, Python 3.10+, Linux). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no es compatible con `AutoModel` ni con pipelines estándar de Hugging Face; requiere el script `infer.py` del repositorio (PyTorch 2.13.0 con CUDA 13.0, Python 3.10+, Linux). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la información proporcionada; al ser una sola pasada forward sobre un máximo de 512 tokens, el coste por frase es bajo en comparación con un modelo generativo del mismo tamaño.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Macro-F1 principal | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| `jev-novel-3-4b-bf16` (este) | 4.21B | 512 tokens | Clasificación de calidad de frases | 0.756 | Apache-2.0 | HuggingFace |
-| `jev-novel-2.5-4b-bf16` | 4B (no confirmado) | no disponible | Clasificación de calidad de frases | 0.747 | no disponible | HuggingFace |
-| `jev-novel-2-27b-bf16` | 27B (no confirmado) | no disponible | Clasificación de calidad de frases | 0.7661 | no disponible | HuggingFace |
+| `jev-novel-3-4b-bf16` (este) | 4.21B | 512 tokens | Clasificación de calidad de frases | 0.756 | Apache-2.0 | Hugging Face |
+| `jev-novel-2.5-4b-bf16` | 4B (no confirmado) | no disponible | Clasificación de calidad de frases | 0.747 | no disponible | Hugging Face |
+| `jev-novel-2-27b-bf16` | 27B (no confirmado) | no disponible | Clasificación de calidad de frases | 0.7661 | no disponible | Hugging Face |
 | `jev-novel-3-27b-bf16` | 27B (no confirmado) | no disponible | Profesor de apariencia | no disponible | no disponible | ModelScope |
 
 La comparación se limita a la propia familia JEVnovel, ya que no se han identificado en la información disponible modelos de terceros con la misma tarea de clasificación por fragmento para narrativa en chino. Frente a la generación 2.5 de 4B, este modelo mejora el Macro-F1 principal (0.756 frente a 0.747) y el recall de frases malas (0.771 frente a 0.697), a costa de más falsos positivos en frases normales (0.258 frente a 0.202). Frente al 27B de segunda generación, queda ligeramente por debajo en Macro-F1 principal pero con un modelo seis veces menor.
@@ -93,7 +93,7 @@ La comparación se limita a la propia familia JEVnovel, ya que no se han identif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronghua/jev-novel-3-4b-bf16
+- Modelo en Hugging Face: https://huggingface.co/ronghua/jev-novel-3-4b-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Profesor de 27B de la misma familia (ModelScope): https://modelscope.cn/models/alkaid55555/jev-novel-3-27b-bf16
 - Informe técnico incluido en el repositorio: `JEVnovel3技术报告.md`

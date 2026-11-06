@@ -36,8 +36,8 @@ Al no existir un modelo, los casos de uso se limitan al ámbito documental:
 
 - Consulta de referencia académica: el paper puede servir como material de lectura para investigadores que quieran entender el estado del arte en visual question answering, aunque no se verifica su contenido.
 - Revisión de estilo y formato: puede ser útil como ejemplo de cómo redactar un paper en formato NeurIPS con citación APA.
-- Evaluación de repositorios: sirve para ilustrar cómo algunos repositorios en HuggingFace no contienen modelos sino documentos, lo cual es relevante para automatizar procesos de validación de repositorios.
-- Análisis de metadatos: los tags y la licencia pueden ser útiles para estudios sobre la distribución de licencias en HuggingFace.
+- Evaluación de repositorios: sirve para ilustrar cómo algunos repositorios en Hugging Face no contienen modelos sino documentos, lo cual es relevante para automatizar procesos de validación de repositorios.
+- Análisis de metadatos: los tags y la licencia pueden ser útiles para estudios sobre la distribución de licencias en Hugging Face.
 - No se recomienda su uso en producción ni en investigación como recurso técnico.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No disponible. No se puede comparar con modelos de VQA como LLaVA, BLIP-2 o Inst
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Edgonzalez3/paper_014782465_visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/Edgonzalez3/paper_014782465_visual_question_answering
 - Referencia de VQA dataset: https://visualqa.org/
 - Paper relacionado (arXiv): https://arxiv.org/pdf/2405.07163
 - Paper sobre explicabilidad en VQA: https://arxiv.org/html/2402.03896v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-LoRA-r64-QAD es una versión cuantizada del modelo Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en HuggingFace. Se trata de un checkpoint derivado mediante cuantización consciente del entrenamiento (QAT, quantization-aware training) combinada con un adaptador LoRA de rango 64, empaquetado en formato NVFP4 de 4 bits y serializado con la librería compressed-tensors para su uso con vLLM. El resultado es un modelo de 9.409.813.744 parámetros (9,4 mil millones) que ocupa 8,9 GB en el repositorio, lo que supone una reducción significativa frente a los pesos en bf16 del modelo base.
+Qwen3.5-9B-NVFP4-LoRA-r64-QAD es una versión cuantizada del modelo Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en Hugging Face. Se trata de un checkpoint derivado mediante cuantización consciente del entrenamiento (QAT, quantization-aware training) combinada con un adaptador LoRA de rango 64, empaquetado en formato NVFP4 de 4 bits y serializado con la librería compressed-tensors para su uso con vLLM. El resultado es un modelo de 9.409.813.744 parámetros (9,4 mil millones) que ocupa 8,9 GB en el repositorio, lo que supone una reducción significativa frente a los pesos en bf16 del modelo base.
 
 El modelo hereda la arquitectura y capacidades del Qwen3.5-9B original, pero no existe documentación pública sobre el proceso de entrenamiento QAT, los datos utilizados para calibrar la cuantización ni los hiperparámetros del adaptador LoRA. El autor no ha publicado una model card con detalles técnicos, benchmarks ni instrucciones de uso más allá de los metadatos del repositorio.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 - Ausencia total de model card: no hay documentación sobre entrenamiento, calibración, evaluación ni uso previsto.
 - Cero descargas y cero likes: no hay evidencia de validación por parte de la comunidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso.
 - Riesgo de degradación por cuantización: NVFP4 de 4 bits puede introducir pérdida de precisión en tareas sensibles (matemáticas, código, razonamiento largo) que no ha sido cuantificada públicamente.
 - Inconsistencia en metadatos: los tags indican "8-bit" mientras que el nombre y el formato apuntan a NVFP4 de 4 bits; conviene verificar los pesos antes de confiar en el formato.
 - Compatibilidad limitada: el formato NVFP4 con compressed-tensors está pensado para vLLM y GPUs Blackwell; otros runtimes pueden no soportarlo.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r64-QAD
+- Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r64-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - Documentación de vLLM: https://docs.vllm.ai

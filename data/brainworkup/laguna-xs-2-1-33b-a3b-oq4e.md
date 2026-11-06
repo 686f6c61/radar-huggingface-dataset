@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laguna-XS-2.1-33B-A3B-oQ4e es un modelo de lenguaje publicado por el usuario brainworkup en HuggingFace, cuantizado con la herramienta oQ (oMLX v0.6.0.dev1) en precisión mixta de 4 bits. El nombre sugiere una arquitectura de tipo Mixture of Experts (MoE) con 33 mil millones de parámetros totales y 3 mil millones activos (A3B), aunque esta información no está confirmada en la documentación oficial. El modelo se distribuye en formato MLX safetensors, lo que indica que está optimizado para su ejecución en hardware Apple Silicon mediante el framework MLX.
+Laguna-XS-2.1-33B-A3B-oQ4e es un modelo de lenguaje publicado por el usuario brainworkup en Hugging Face, cuantizado con la herramienta oQ (oMLX v0.6.0.dev1) en precisión mixta de 4 bits. El nombre sugiere una arquitectura de tipo Mixture of Experts (MoE) con 33 mil millones de parámetros totales y 3 mil millones activos (A3B), aunque esta información no está confirmada en la documentación oficial. El modelo se distribuye en formato MLX safetensors, lo que indica que está optimizado para su ejecución en hardware Apple Silicon mediante el framework MLX.
 
 La cuantización aplicada utiliza 4 bits con un tamaño de grupo de 64, lo que reduce significativamente el peso del modelo respecto a una versión sin cuantizar. El repositorio ocupa 19,5 GB, aunque los parámetros totales registrados en los safetensors son 5.407.036.160, una cifra que no coincide con la nomenclatura "33B" y que probablemente refleja el número de parámetros efectivos tras la cuantización o una métrica interna del proceso. No se dispone de información sobre el entrenamiento, las capacidades o la licencia, por lo que esta ficha se limita a los datos verificables del repositorio.
 
@@ -57,5 +57,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e](https://huggingface.co/brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e)
+- [Hugging Face: brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e](https://huggingface.co/brainworkup/Laguna-XS-2.1-33B-A3B-oQ4e)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

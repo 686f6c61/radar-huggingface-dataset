@@ -34,7 +34,7 @@ No se puede hablar de arquitectura ni de entrenamiento, ya que el repositorio no
 
 - Consulta bibliográfica sobre visión-language pre-training: el paper podría utilizarse como fuente secundaria en una revisión de literatura, aunque no se ha verificado su contenido.
 - Análisis de estilo de escritura académica: el repositorio declara un estilo "teórico riguroso" y estructura intro-problema-solución, lo que podría servir de ejemplo de formato para otros autores.
-- Evaluación de metadatos en HuggingFace: el repositorio puede usarse como caso de estudio de cómo se etiqueta un paper en la plataforma, con tags como `author-year`, `latex-acl`, `theoretical-rigorous`, etc.
+- Evaluación de metadatos en Hugging Face: el repositorio puede usarse como caso de estudio de cómo se etiqueta un paper en la plataforma, con tags como `author-year`, `latex-acl`, `theoretical-rigorous`, etc.
 - No hay casos de uso prácticos en producción, ni despliegue de modelo, ni integración en aplicaciones reales.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No disponible. No existen modelos comparables en este repositorio, ya que no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/monikanmn/paper_003862285_vision_language_pretraining
+- Repositorio en Hugging Face: https://huggingface.co/monikanmn/paper_003862285_vision_language_pretraining
 - Los resultados de la búsqueda web no enlazan directamente a este repositorio, sino a trabajos generales sobre VLP, como:
   - Survey de VLP: https://arxiv.org/abs/2202.09061
   - DeepSeek-VL: https://arxiv.org/abs/2403.05525

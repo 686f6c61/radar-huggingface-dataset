@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step200000
+- Repositorio Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step200000
 - Checkpoint Step100000 (con tabla comparativa de referencia): https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step100000
 - Checkpoint Step600000: https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step600000
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961

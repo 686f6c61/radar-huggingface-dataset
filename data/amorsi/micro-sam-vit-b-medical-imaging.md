@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`micro-sam vit_b_medical_imaging` es un checkpoint preentrenado del proyecto micro-sam, desarrollado por el grupo Computational Cell Analytics (MIT). Se trata de un espejo sin modificaciones de los pesos originales, publicados en HuggingFace por el usuario `amorsi`. El modelo es una adaptación del Segment Anything Model (SAM) con backbone ViT-B orientada a la segmentación de imágenes biomédicas y de microscopía, tarea en la que SAM genérico rinde por debajo de lo esperado por el dominio tan específico de las imágenes celulares.
+`micro-sam vit_b_medical_imaging` es un checkpoint preentrenado del proyecto micro-sam, desarrollado por el grupo Computational Cell Analytics (MIT). Se trata de un espejo sin modificaciones de los pesos originales, publicados en Hugging Face por el usuario `amorsi`. El modelo es una adaptación del Segment Anything Model (SAM) con backbone ViT-B orientada a la segmentación de imágenes biomédicas y de microscopía, tarea en la que SAM genérico rinde por debajo de lo esperado por el dominio tan específico de las imágenes celulares.
 
 El checkpoint se compone de dos ficheros, `model.pt` (encoder) y `decoder.pt`, y se usa dentro del ecosistema micro-sam invocándolo con `model_type="vit_b_medical_imaging"`. No se trata de un modelo de lenguaje, sino de un modelo de segmentación de imágenes, por lo que muchas de las filas habituales de esta ficha (idiomas, contexto, tool calling) no aplican y se marcan como no disponibles.
 
-La relevancia del modelo radica en que ofrece un punto de partida específico para segmentación de estructuras celulares sin necesidad de reentrenar desde cero, y en que su publicación como espejo facilita el acceso desde HuggingFace. La información pública disponible es muy limitada: la model card es mínima y no incluye detalles de entrenamiento, benchmarks ni licencia explícita de los pesos.
+La relevancia del modelo radica en que ofrece un punto de partida específico para segmentación de estructuras celulares sin necesidad de reentrenar desde cero, y en que su publicación como espejo facilita el acceso desde Hugging Face. La información pública disponible es muy limitada: la model card es mínima y no incluye detalles de entrenamiento, benchmarks ni licencia explícita de los pesos.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| micro-sam vit_b_medical_imaging | SAM ViT-B | Biomédico/microscopía | no disponible | HuggingFace (espejo) |
+| micro-sam vit_b_medical_imaging | SAM ViT-B | Biomédico/microscopía | no disponible | Hugging Face (espejo) |
 | SAM (original, ViT-B) | SAM ViT-B | Imágenes naturales | Apache 2.0 (según Meta) | Público |
 | micro-sam (otros checkpoints) | SAM ViT-B / ViT-L / etc. | Biomédico/microscopía | según checkpoint | Registro de micro-sam |
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 ## Limitaciones y advertencias
 
 - La model card no especifica la licencia de los pesos; es imprescindible consultar la fuente original antes de un uso comercial.
-- El modelo es un espejo sin modificar; no hay garantías de mantenimiento ni soporte por parte del publicador en HuggingFace.
+- El modelo es un espejo sin modificar; no hay garantías de mantenimiento ni soporte por parte del publicador en Hugging Face.
 - Al ser un modelo de segmentación, no cubre tareas de texto, razonamiento ni agentes.
 - Riesgo de degradación en dominios de imagen distintos al biomédico para el que fue ajustado.
 - No se documentan sesgos, límites de resolución ni condiciones de contorno.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-b-medical-imaging
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-b-medical-imaging
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de checkpoints (util.py): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt`: https://owncloud.gwdg.de/index.php/s/f5Ol4FrjPQWfjUF/download

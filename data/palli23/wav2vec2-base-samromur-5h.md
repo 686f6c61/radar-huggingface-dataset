@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wav2vec2-base-samromur-5h es un modelo de reconocimiento automatico del habla (ASR) para islandes, publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de wav2vec2-base, un encoder convolucional seguido de un encoder transformer con 94.402.472 parametros, entrenado sobre un subconjunto anidado de 5 horas extraido del corpus Miljon/samromur-500h. El modelo forma parte de un conjunto de checkpoints de escalado ("scaling checkpoint set") asociado al articulo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
+wav2vec2-base-samromur-5h es un modelo de reconocimiento automatico del habla (ASR) para islandes, publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de wav2vec2-base, un encoder convolucional seguido de un encoder transformer con 94.402.472 parametros, entrenado sobre un subconjunto anidado de 5 horas extraido del corpus Miljon/samromur-500h. El modelo forma parte de un conjunto de checkpoints de escalado ("scaling checkpoint set") asociado al articulo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027).
 
 Su relevancia es fundamentalmente experimental: sirve para estudiar como se comporta un modelo pequeno cuando se le da muy poco datos de un idioma concreto, en comparacion con modelos multilingues mucho mayores. No es un modelo orientado a produccion ni un checkpoint final optimizado, sino un punto intermedio dentro de una curva de escalado de datos. La model card no documenta el procedimiento de entrenamiento, los hiperparametros ni los resultados de WER/CER, que se remiten al articulo citado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32 los 94,4 M de parametros ocupan aproximadamente 378 MB; en fp16, unos 189 MB; una conversion a INT8 los reduciria a unos 95 MB. Junto con el estado del optimizador y las activaciones de audio, la inferencia real necesita del orden de 1-2 GB en fp32.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar comodamente en RTX 3050, RTX 3060, RTX 4060, RTX 4090, Tesla T4, A100 o H100; las GPU de gama alta no aportan ventaja significativa por el reducido tamano del modelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas actuales e incluso en iGPU con suficiente memoria compartida. La inferencia en CPU es viable para procesamiento por lotes en diferido.
-- Opciones de despliegue: HuggingFace Transformers con el pipeline de reconocimiento automatico del habla, exportacion a ONNX Runtime, torchaudio, o servidores de inferencia genericos como NVIDIA Triton. No es compatible con vLLM ni con llama.cpp, ya que no es un modelo de lenguaje autorregresivo.
+- Opciones de despliegue: Hugging Face Transformers con el pipeline de reconocimiento automatico del habla, exportacion a ONNX Runtime, torchaudio, o servidores de inferencia genericos como NVIDIA Triton. No es compatible con vLLM ni con llama.cpp, ya que no es un modelo de lenguaje autorregresivo.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tiempo real (RTF), latencia ni tokens por segundo para este checkpoint.
 - Nota sobre el repositorio: el repositorio ocupa 90,2 GB, muy por encima de lo que corresponderia a los pesos finales de un modelo de 94 M de parametros. Conviene descargar solo los archivos necesarios (pesos y configuracion) en lugar de clonar el repositorio completo.
 
@@ -90,8 +90,8 @@ La comparacion relevante es conceptual: este checkpoint representa el extremo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-5h
-- Corpus de referencia citado en la model card: Miljon/samromur-500h (disponible en HuggingFace, ruta no verificada en la informacion proporcionada)
+- Modelo en Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-5h
+- Corpus de referencia citado en la model card: Miljon/samromur-500h (disponible en Hugging Face, ruta no verificada en la informacion proporcionada)
 - Articulo asociado: "Scaling Smaller ASR Models Against Multilingual ASR Giants", ICASSP 2027 (enlace no disponible)
 - Repositorio base de la arquitectura: facebook/wav2vec2-base (https://huggingface.co/facebook/wav2vec2-base)
 - Resultados de la busqueda web: las consultas realizadas devolvieron unicamente enlaces al servicio de busqueda de centros educativos WebUntis (webuntis.com, school.webuntis.com, portales de la EHU y de la HTBLA Salzburg), sin relacion alguna con el modelo. No se han encontrado enlaces adicionales relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRx-1 es un modelo de lenguaje de pequeno tamano (1.881.825.088 parametros, aproximadamente 1,9 mil millones) desarrollado por el usuario de HuggingFace ikppramesh como parte de la familia IRx, una coleccion de cuatro modelos disenados para ejecutarse integramente en local y sin conexion en telefonos, tablets y ordenadores personales. La version aqui documentada es la distribucion en formato GGUF, optimizada para llama.cpp y para aplicaciones derivadas como PocketPal, LM Studio, Ollama o llama.rn. El modelo se posiciona como la opcion de respuesta rapida para el dia a dia dentro de su familia: no busca competir en razonamiento complejo, sino ofrecer respuestas breves, explicaciones sencillas, borradores y listas de verificacion de forma instantanea y privada.
+IRx-1 es un modelo de lenguaje de pequeno tamano (1.881.825.088 parametros, aproximadamente 1,9 mil millones) desarrollado por el usuario de Hugging Face ikppramesh como parte de la familia IRx, una coleccion de cuatro modelos disenados para ejecutarse integramente en local y sin conexion en telefonos, tablets y ordenadores personales. La version aqui documentada es la distribucion en formato GGUF, optimizada para llama.cpp y para aplicaciones derivadas como PocketPal, LM Studio, Ollama o llama.rn. El modelo se posiciona como la opcion de respuesta rapida para el dia a dia dentro de su familia: no busca competir en razonamiento complejo, sino ofrecer respuestas breves, explicaciones sencillas, borradores y listas de verificacion de forma instantanea y privada.
 
 La relevancia de IRx-1 reside en su enfoque de privacidad radical (nada de lo que escribe el usuario abandona el dispositivo) y en su bajo requisito de recursos: el archivo Q4_K_M ocupa aproximadamente 1,2 GB y cabe en practicamente cualquier telefono o tablet moderno. La model card menciona explicitamente que el modelo se reentrena semanalmente con noticias hasta el 4 de noviembre de 2026, lo que sugiere un ciclo de actualizacion frecuente orientado a mantener cierta frescura informativa en un modelo de bolsillo.
 
@@ -92,7 +92,7 @@ No se dispone de comparaciones con modelos de otros desarrolladores (por ejemplo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ikppramesh/irx-1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ikppramesh/irx-1-GGUF
 - Modelo principal IRx-1 (checkpoint original): https://huggingface.co/ikppramesh/irx-1
 - Repositorio GitHub del proyecto: https://github.com/ikppramesh/irx-1
 - IRx-mini (GGUF): https://huggingface.co/ikppramesh/irx-mini-GGUF

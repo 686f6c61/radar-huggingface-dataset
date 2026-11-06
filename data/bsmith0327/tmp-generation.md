@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bsmith0327/tmp-generation` es un checkpoint de inicializacion publicado en HuggingFace bajo licencia MIT por el usuario bsmith0327. No es un modelo entrenado: la propia model card lo describe como "a valid initialization checkpoint for smoke tests" y afirma explicitamente que no se reclama ninguna puntuacion de benchmark. Su unico contenido util es el codigo de implementacion (`finetune.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), pensados para pruebas de humo reproducibles y transparentes.
+`bsmith0327/tmp-generation` es un checkpoint de inicializacion publicado en Hugging Face bajo licencia MIT por el usuario bsmith0327. No es un modelo entrenado: la propia model card lo describe como "a valid initialization checkpoint for smoke tests" y afirma explicitamente que no se reclama ninguna puntuacion de benchmark. Su unico contenido util es el codigo de implementacion (`finetune.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), pensados para pruebas de humo reproducibles y transparentes.
 
 El peso real del checkpoint es de 33.088 parametros totales, es decir, unas 33 mil unidades, un orden de magnitud equivalente a un juguete de depuracion y no a un modelo de lenguaje utilizable. La arquitectura declarada se denomina "Coca" en escala "large" segun la propia tabla del autor, con atencion estandar, fusion por concatenacion mas MLP, activacion gelu-tanh y normalizacion scalenorm. No hay informacion sobre el dataset, el numero de tokens de entrenamiento ni el pipeline de alineacion, y el tamaño del repositorio es de 0,0 GB.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador Adam con un
 - Validacion de integraciones de carga personalizada: dado que el autor advierte que las APIs genericas necesitan un adaptador explicito, este modelo sirve para probar dicho adaptador en un entorno controlado con un coste de computo practicamente nulo.
 - Test de CI/CD en repositorios de machine learning: incluir el checkpoint como fixture permite verificar en cada commit que las funciones de serializacion y deserializacion de safetensors siguen funcionando, sin depender de descargas de gigabytes.
 - Verificacion de la configuracion de arquitectura: `config.json` y `training_args.json` permiten comprobar que un parser de configuraciones acepta los campos de atencion, fusion, activacion y normalizacion declarados, util para mantener compatibilidad entre versiones del framework.
-- Plantilla docente o de prototipado rapido: para explicar la estructura minima de un repositorio de modelo en HuggingFace (pesos, config, argumentos de entrenamiento, README y script de entrada) sin distraer con la complejidad de un modelo grande.
+- Plantilla docente o de prototipado rapido: para explicar la estructura minima de un repositorio de modelo en Hugging Face (pesos, config, argumentos de entrenamiento, README y script de entrada) sin distraer con la complejidad de un modelo grande.
 - Benchmarking de infraestructura de serving: al tener 33.088 parametros, es util para medir la sobrecarga fija de un servidor (vLLM, TGI, endpoints HTTP propios) aislando el coste del calculo del modelo del coste de red y de gestion de peticiones.
 - Pruebas de empaquetado y distribucion: sirve para validar flujos de contenedorizacion, subida y versionado de artefactos en un registro interno antes de aplicarlos a checkpoints reales de mayor tamano.
 
@@ -89,13 +89,13 @@ No disponible. No se conocen modelos comparables publicados, ya que este reposit
 - Restricciones de licencia: la licencia es MIT, permisiva para uso comercial; el autor advierte no obstante de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Riesgo de confusion en produccion: el nombre del repositorio (`tmp-generation`) y la etiqueta de escala "large" pueden inducir a error si se integra por descuido en un pipeline real. No debe desplegarse como modelo de generacion.
 - Mantenimiento incierto: cero descargas y cero likes, y una unica actualizacion registrada pocos segundos despues de la creacion; no hay senales de soporte continuado.
-- Advertencia de seguridad general del ecosistema: parte de los resultados de busqueda asociados a este tipo de repositorios recientes describen campanas de malware distribuidas mediante repositorios de HuggingFace. Se recomienda auditar cualquier script (`finetune.py`, `loader.py` o similares) antes de ejecutarlo, especialmente en Windows, y verificar el origen del autor.
+- Advertencia de seguridad general del ecosistema: parte de los resultados de busqueda asociados a este tipo de repositorios recientes describen campanas de malware distribuidas mediante repositorios de Hugging Face. Se recomienda auditar cualquier script (`finetune.py`, `loader.py` o similares) antes de ejecutarlo, especialmente en Windows, y verificar el origen del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bsmith0327/tmp-generation
-- Perfil del autor en HuggingFace: https://huggingface.co/bsmith0327
+- Modelo en Hugging Face: https://huggingface.co/bsmith0327/tmp-generation
+- Perfil del autor en Hugging Face: https://huggingface.co/bsmith0327
 - Otro repositorio del mismo autor: https://huggingface.co/bsmith0327/multitask-2023
-- Aviso de seguridad sobre malware en repositorios de HuggingFace (HiddenLayer): https://www.hiddenlayer.com/research/malware-found-in-trending-hugging-face-repository-open-oss-privacy-filter
+- Aviso de seguridad sobre malware en repositorios de Hugging Face (HiddenLayer): https://www.hiddenlayer.com/research/malware-found-in-trending-hugging-face-repository-open-oss-privacy-filter
 - Documentacion de IA generativa de Google Cloud: https://docs.cloud.google.com/docs/generative-ai
 - Repositorio no disponible: paper, blog tecnico, demo o repositorio de codigo asociados al modelo

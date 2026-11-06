@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Inferencia: al ser un LoRA sobre MiniMax-Music3, los requisitos dependen del modelo base. MiniMax-Music3 requiere GPU con al menos 16-24 GB de VRAM para inferencia en FP16 (no se especifican requisitos exactos en la información disponible).
 - GPU recomendadas: NVIDIA A100, H100, RTX 4090 o superior para generar renders de 40 segundos con 30 pasos de flujo.
 - No cabe en GPUs consumer de gama baja (8 GB) por el tamaño del modelo base.
-- Despliegue: no se mencionan opciones de despliegue específicas (vLLM, llama.cpp, etc.) para este LoRA; el modelo base se usa con el pipeline de text-to-audio de HuggingFace.
+- Despliegue: no se mencionan opciones de despliegue específicas (vLLM, llama.cpp, etc.) para este LoRA; el modelo base se usa con el pipeline de text-to-audio de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. La información no proporciona comparaciones con otros modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/terminusresearch/minimax-music3-identity-tournament
+- Repositorio Hugging Face: https://huggingface.co/terminusresearch/minimax-music3-identity-tournament
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - GitHub MiniMax-Music3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo de MiniMax Music 3: https://minimax-ai.github.io/music3-demo/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wl_scene` es un repositorio publicado en HuggingFace por el usuario XiaoLu-ai bajo licencia Apache 2.0. Por el nombre y el contenido disponible, parece tratarse de un artefacto relacionado con escenas (posiblemente un modelo de generación o procesamiento de escenas 3D, visión o similar), pero la model card publicada no contiene más que la línea de licencia, sin descripción, arquitectura ni datos de entrenamiento.
+`wl_scene` es un repositorio publicado en Hugging Face por el usuario XiaoLu-ai bajo licencia Apache 2.0. Por el nombre y el contenido disponible, parece tratarse de un artefacto relacionado con escenas (posiblemente un modelo de generación o procesamiento de escenas 3D, visión o similar), pero la model card publicada no contiene más que la línea de licencia, sin descripción, arquitectura ni datos de entrenamiento.
 
 El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que no se trata de un modelo de lenguaje de gran escala, sino de un artefacto pequeño (posiblemente pesos de un modelo especializado, un checkpoint ligero o un conjunto de datos empaquetado). No se dispone de información sobre parámetros, contexto, idiomas ni pipeline de uso.
 
@@ -67,5 +67,5 @@ No disponible. No se conocen modelos comparables porque no se ha especificado la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XiaoLu-ai/wl_scene
+- Hugging Face: https://huggingface.co/XiaoLu-ai/wl_scene
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

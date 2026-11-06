@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeismoRescue Glimmer QLoRA Test es un adaptador LoRA (entrenado con QLoRA) para el modelo base `meta-models/Muse-Glimmer-30B`, un modelo multimodal de 30.000 millones de parámetros desarrollado por Meta. El adaptador lo publica el usuario de HuggingFace `seungminpark` como parte del proyecto SeismoRescue, presentado en la Meta Global AI Developer Hackathon (26 de octubre – 4 de noviembre de 2026). El repositorio tiene 0,4 GB y contiene únicamente los pesos del adaptador (383 MB en `adapter_model.safetensors`), no el modelo completo.
+SeismoRescue Glimmer QLoRA Test es un adaptador LoRA (entrenado con QLoRA) para el modelo base `meta-models/Muse-Glimmer-30B`, un modelo multimodal de 30.000 millones de parámetros desarrollado por Meta. El adaptador lo publica el usuario de Hugging Face `seungminpark` como parte del proyecto SeismoRescue, presentado en la Meta Global AI Developer Hackathon (26 de octubre – 4 de noviembre de 2026). El repositorio tiene 0,4 GB y contiene únicamente los pesos del adaptador (383 MB en `adapter_model.safetensors`), no el modelo completo.
 
 El adaptador se entrenó para una tarea muy concreta: dada una imagen A/B de película sísmica WWSSN sintética, decidir qué trazado rojo se mantiene sobre la línea del terremoto en un cruce o un cuasi-contacto con otra línea. Se trata de un experimento de 20 pasos cuyo resultado el propio autor clasifica como negativo: el adaptador aprende la forma de los trazados rojos y no la película, por lo que no se usa en producción. Se publica como referencia reproducible de un fallo metodológico, no como modelo utilizable.
 
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seungminpark/seismorescue-glimmer-qlora-test
+- Hugging Face: https://huggingface.co/seungminpark/seismorescue-glimmer-qlora-test
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio GitHub: https://github.com/smpark00/seismorescue
 - Release con los mismos ficheros: https://github.com/smpark00/seismorescue/releases/tag/glimmer-qlora-test

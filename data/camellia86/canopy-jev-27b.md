@@ -78,7 +78,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Base | JevBench | JevBench Hard | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Canopy-Jev-27B | Qwen3.8-27B (adaptador) | 87,45 % | 75,68 % | 64,50 % | Apache-2.0 (pesos), MIT (código) | Adaptador de 25,24 MB en HuggingFace + GitHub |
+| Canopy-Jev-27B | Qwen3.8-27B (adaptador) | 87,45 % | 75,68 % | 64,50 % | Apache-2.0 (pesos), MIT (código) | Adaptador de 25,24 MB en Hugging Face + GitHub |
 | Open-Jev-27B-v1.1 | no disponible | 85,29 % (derivado) | 72,08 % (derivado) | no disponible | no disponible | no disponible |
 | Otros modelos de decisión de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,8 +87,8 @@ La única comparación publicada por el autor es contra Open-Jev-27B-v1.1, del q
 ## Limitaciones y advertencias
 
 - No es un modelo generativo: no produce texto ni respuestas legibles. Solo devuelve probabilidades sobre candidatos predefinidos, por lo que no sirve para chat, resumen, redacción ni código.
-- Adopción nula y validación externa inexistente: cero descargas y cero likes en HuggingFace en el momento de la consulta, y todos los benchmarks proceden del propio autor.
-- Discrepancia de tamaño de repositorio: la ficha de HuggingFace indica 0,0 GB de tamaño de repo, mientras que la model card declara un adaptador de 25,24 MB. Conviene verificar los archivos antes de planificar el despliegue.
+- Adopción nula y validación externa inexistente: cero descargas y cero likes en Hugging Face en el momento de la consulta, y todos los benchmarks proceden del propio autor.
+- Discrepancia de tamaño de repositorio: la ficha de Hugging Face indica 0,0 GB de tamaño de repo, mientras que la model card declara un adaptador de 25,24 MB. Conviene verificar los archivos antes de planificar el despliegue.
 - Dependencia estricta del backbone: el loader fija la revisión del modelo base y la identidad del tokenizador, de modo que cambiar de revisión o usar pesos modificados puede invalidar la carga.
 - Coste de hardware elevado: 64 GiB de VRAM libres como mínimo y entorno Linux con CUDA, lo que excluye el despliegue en GPU de consumo.
 - Cobertura lingüística limitada a inglés y chino; no hay evidencia de comportamiento en castellano.
@@ -101,7 +101,7 @@ La única comparación publicada por el autor es contra Open-Jev-27B-v1.1, del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Camellia86/Canopy-Jev-27B
+- Modelo en Hugging Face: https://huggingface.co/Camellia86/Canopy-Jev-27B
 - Repositorio de código y guía bilingüe: https://github.com/Camellia86/Canopy-Jev
 - Model card completa en GitHub: https://github.com/Camellia86/Canopy-Jev/blob/b71f97b3bffd28c90306bfea607d2089d75e7d43/MODEL_CARD.md
 - Documentación de evaluación y protocolos: https://github.com/Camellia86/Canopy-Jev/blob/b71f97b3bffd28c90306bfea607d2089d75e7d43/docs/EVALUATION.md

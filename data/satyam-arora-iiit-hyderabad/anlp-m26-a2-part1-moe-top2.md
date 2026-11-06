@@ -26,7 +26,7 @@ Su relevancia es fundamentalmente didáctica y de reproducibilidad: sirve como r
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only con mezcla de expertos y enrutado top-2, según los propios tags del repositorio y la métrica de parámetros activos. La diferencia entre parámetros totales (19,85 M) y activos por token (16,31 M) implica que aproximadamente el 82 por ciento de los parámetros se ejecutan en cada paso y que existe una fracción de expertos que no se activa en cada token. El repositorio incluye ficheros de uso de expertos en CSV, JSON y SVG, lo que sugiere que el análisis de balanceo de carga forma parte del trabajo experimental. La arquitectura concreta y el código de carga no están en HuggingFace, sino en el repositorio de la asignatura, que no se enlaza en la model card.
+La arquitectura es un transformer decoder-only con mezcla de expertos y enrutado top-2, según los propios tags del repositorio y la métrica de parámetros activos. La diferencia entre parámetros totales (19,85 M) y activos por token (16,31 M) implica que aproximadamente el 82 por ciento de los parámetros se ejecutan en cada paso y que existe una fracción de expertos que no se activa en cada token. El repositorio incluye ficheros de uso de expertos en CSV, JSON y SVG, lo que sugiere que el análisis de balanceo de carga forma parte del trabajo experimental. La arquitectura concreta y el código de carga no están en Hugging Face, sino en el repositorio de la asignatura, que no se enlaza en la model card.
 
 El entrenamiento utilizó el dataset `belumind/en-vi-ja-curated-500k-triplets`, un corpus de tripletas de traducción en inglés, vietnamita y japonés. La model card indica que se empleó un presupuesto fijo de tokens de contexto y que la evaluación se realizó sobre el checkpoint final, lo que sugiere un control experimental para comparar variantes con el mismo coste computacional. No se documentan en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset, ni si hubo fases de ajuste con RLHF, DPO u otras técnicas de alineamiento. El tokenizador es un BPE a nivel de byte que incorpora tokens de idioma y de control, un detalle habitual cuando un mismo modelo gestiona varios pares de lenguas.
 
@@ -71,7 +71,7 @@ No se han publicado resultados comparativos frente a otros modelos (MMLU, HumanE
 - VRAM estimada: menos de 100 MB en FP32 (tamano calculado de los 19,85 M de parametros), unos 40 MB en FP16 y aproximadamente 20 MB en cuantizacion de 8 bits si se aplica manualmente. Los pesos se distribuyen como `model.pt`, sin versiones cuantizadas oficiales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre; una RTX 4090, A100 o H100 estan sobradamente dimensionadas y el cuello de botella sera la latencia de lanzamiento de kernels, no la memoria.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, e incluso en GPU integradas y en CPU.
-- Opciones de despliegue: al no ser un modelo de una arquitectura estandar de HuggingFace Transformers, no hay soporte directo conocido en vLLM, TGI, llama.cpp u Ollama. El despliegue requiere el codigo de carga del repositorio de la asignatura, sobre PyTorch.
+- Opciones de despliegue: al no ser un modelo de una arquitectura estandar de Hugging Face Transformers, no hay soporte directo conocido en vLLM, TGI, llama.cpp u Ollama. El despliegue requiere el codigo de carga del repositorio de la asignatura, sobre PyTorch.
 - Latencia y throughput: no disponibles como medicion publicada. De forma orientativa, con 16,3 M de parametros activos por token, el coste es de aproximadamente 33 MFLOP por token, lo que permite decenas de miles de tokens por segundo en GPU moderna y cientos por segundo en CPU, siempre que la implementacion del enrutado MoE no introduzca sobrecarga.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-top2
+- Modelo en Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-top2
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio del codigo de arquitectura y carga: mencionado en la model card pero no enlazado; no disponible.
 - Paper, blog o demo: no disponible.

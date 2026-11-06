@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros / tamaño | Contexto | Calidad (UTMOS/WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mesm-tts (Heart) | 2,3-6,9 MB por voz | No disponible | 4,46 / 5,6% | Apache 2.0 | HuggingFace, ONNX + WASM |
-| Kokoro-82M | 82M (325 MB) | No disponible | 4,52 / 5,7% | Apache 2.0 | HuggingFace |
-| Phonon-31M-en | 31M (55-103 MB) | No disponible | No disponible | No disponible en la información | HuggingFace |
-| Paradee-8M-v1.1 | 8M | No disponible | No disponible | No disponible en la información | HuggingFace |
+| mesm-tts (Heart) | 2,3-6,9 MB por voz | No disponible | 4,46 / 5,6% | Apache 2.0 | Hugging Face, ONNX + WASM |
+| Kokoro-82M | 82M (325 MB) | No disponible | 4,52 / 5,7% | Apache 2.0 | Hugging Face |
+| Phonon-31M-en | 31M (55-103 MB) | No disponible | No disponible | No disponible en la información | Hugging Face |
+| Paradee-8M-v1.1 | 8M | No disponible | No disponible | No disponible en la información | Hugging Face |
 
 La comparativa se limita a los profesores del propio modelo, ya que no se han proporcionado datos de otros TTS comparables (Piper, VITS, XTTS). mesm-tts destaca por su tamaño (hasta 140x menor que Kokoro-82M) y su velocidad (150x-180x más rápido que Kokoro en CPU nativa), con una calidad perceptual prácticamente idéntica.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los profesores del propio modelo, ya que no se han pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mesmertech/mesm-tts
+- Hugging Face: https://huggingface.co/mesmertech/mesm-tts
 - Generador TTS de mesmer.tools: https://mesmer.tools/free-tools/tts-generator
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Modelo base Phonon-31M-en: https://huggingface.co/gradium/phonon-31m-en

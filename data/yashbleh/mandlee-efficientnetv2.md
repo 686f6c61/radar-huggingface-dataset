@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yashbleh/Mandlee-EfficientNetV2` es un checkpoint publicado en HuggingFace bajo licencia MIT, aunque la model card no incluye información técnica adicional. El nombre sugiere que se basa en la arquitectura EfficientNetV2, una familia de redes neuronales convolucionales introducida por Tan et al. en 2021 (arXiv:2104.00298) que logra mejor eficiencia de parámetros y mayor velocidad de entrenamiento que EfficientNetV1, mediante búsqueda de arquitectura neuronal (NAS) consciente del entrenamiento y un escalado conjunto de profundidad, anchura y resolución.
+El modelo `yashbleh/Mandlee-EfficientNetV2` es un checkpoint publicado en Hugging Face bajo licencia MIT, aunque la model card no incluye información técnica adicional. El nombre sugiere que se basa en la arquitectura EfficientNetV2, una familia de redes neuronales convolucionales introducida por Tan et al. en 2021 (arXiv:2104.00298) que logra mejor eficiencia de parámetros y mayor velocidad de entrenamiento que EfficientNetV1, mediante búsqueda de arquitectura neuronal (NAS) consciente del entrenamiento y un escalado conjunto de profundidad, anchura y resolución.
 
 El modelo fue creado por el usuario `yashbleh` el 21 de agosto de 2026 y no presenta descargas ni likes, por lo que se trata probablemente de un checkpoint experimental o de prueba. No hay datos disponibles sobre su tamaño, resolución de entrada, precisión o uso previsto. La única información verificable es la licencia MIT y la región declarada como EE.UU.
 
@@ -80,7 +80,7 @@ Datos de los checkpoints originales de Google; no del modelo `Markusbleh/Mandlee
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yashbleh/Mandlee-EfficientNetV2
+- Repositorio Hugging Face: https://huggingface.co/yashbleh/Mandlee-EfficientNetV2
 - Paper original: https://arxiv.org/abs/2104.00298
 - PDF del paper: https://arxiv.org/pdf/2104.00298v2
 - Implementación de referencia (GitHub): https://github.com/da2so/efficientnetv2

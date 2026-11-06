@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STHELAR-Adapt-CellViT-256-x40 es un modelo publicado en HuggingFace por el usuario albtad01 bajo el identificador `albtad01/STHELAR-Adapt-CellViT-256-x40`. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. La unica metainformacion disponible es la licencia declarada y la fecha de creacion y ultima actualizacion (19 de septiembre de 2026, ambas identicas), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial.
+STHELAR-Adapt-CellViT-256-x40 es un modelo publicado en Hugging Face por el usuario albtad01 bajo el identificador `albtad01/STHELAR-Adapt-CellViT-256-x40`. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, datos de entrenamiento ni resultados de evaluacion, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. La unica metainformacion disponible es la licencia declarada y la fecha de creacion y ultima actualizacion (19 de septiembre de 2026, ambas identicas), lo que indica que el repositorio no ha recibido modificaciones desde su publicacion inicial.
 
 Por la nomenclatura del identificador puede inferirse que se trata de una adaptacion de CellViT, una familia de modelos de vision basados en transformers desarrollada para segmentacion y clasificacion de celulas en imagenes de patologia digital. Los sufijos `256` y `x40` sugeririan un tamano de parche de 256 pixeles y un aumento de 40x, parametros habituales en pipelines de histopatologia computacional. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna fuente proporcionada; debe tratarse como no verificada.
 
@@ -18,7 +18,7 @@ No se dispone de informacion sobre quien esta detras del desarrollo, que problem
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0-with-commons-clause (el tag de HuggingFace indica `license:other`) |
+| Licencia | apache-2.0-with-commons-clause (el tag de Hugging Face indica `license:other`) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y verificables sin informacion sob
 - Investigacion academica en patologia computacional: como punto de partida para experimentos de ajuste fino, siempre que se valide primero su comportamiento base.
 - Extraccion de caracteristicas celulares: como encoder congelado en pipelines de investigacion, sujeto a verificacion empirica de la calidad de los embeddings.
 - Reproducibilidad de experimentos: util si el autor publica en el futuro la metodologia completa asociada al checkpoint.
-- Docencia y formacion: como ejemplo de publicacion de checkpoints en HuggingFace, no como referencia tecnica de calidad.
+- Docencia y formacion: como ejemplo de publicacion de checkpoints en Hugging Face, no como referencia tecnica de calidad.
 - Prototipado exploratorio: unicamente en entornos de investigacion con datos no sensibles y asumiendo ausencia total de garantias.
 
 Para cualquier otro uso (clinico, diagnostico asistido, produccion con datos reales de pacientes) el modelo no ofrece ninguna base documental que lo respalde.
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STHELAR-Adapt-CellViT-256-x40 | no disponible | no disponible | no disponible | apache-2.0-with-commons-clause | HuggingFace |
+| STHELAR-Adapt-CellViT-256-x40 | no disponible | no disponible | no disponible | apache-2.0-with-commons-clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - Sesgos conocidos: no disponibles. Sin informacion sobre el dataset de entrenamiento no puede evaluarse el sesgo demografico, de dominio o de instrumento, algo especialmente relevante en aplicaciones de imagen medica.
 - Riesgo de alucinacion: no evaluable en modelos de vision; en cualquier caso, no existe validacion publicada de la fiabilidad de las predicciones.
 - Limitaciones de contexto e idioma: no disponibles.
-- Restricciones de licencia: la licencia declarada es `apache-2.0-with-commons-clause`, mientras que el tag de HuggingFace indica `license:other`. Esta discrepancia debe resolverse consultando el fichero LICENSE del repositorio antes de cualquier uso comercial. La Commons Clause anade restricciones sobre la venta del software o de servicios basados sustancialmente en el, por lo que conviene revisar su alcance exacto.
+- Restricciones de licencia: la licencia declarada es `apache-2.0-with-commons-clause`, mientras que el tag de Hugging Face indica `license:other`. Esta discrepancia debe resolverse consultando el fichero LICENSE del repositorio antes de cualquier uso comercial. La Commons Clause anade restricciones sobre la venta del software o de servicios basados sustancialmente en el, por lo que conviene revisar su alcance exacto.
 - Caveat de fecha: las fechas de creacion y actualizacion (2026-09-19) son posteriores a la fecha habitual de consulta y aparecen como no verificables; conviene confirmar la vigencia del repositorio.
 - Sin adopcion comunitaria: 0 descargas y 0 likes implican ausencia de validacion por terceros y de reportes de errores.
 - Uso clinico: no debe emplearse en ningun flujo con impacto en decisiones diagnosticas o terapeuticas sin validacion regulatoria y clinica independiente.
@@ -84,8 +84,8 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/albtad01/STHELAR-Adapt-CellViT-256-x40
-- Model card del autor: incluida en la pagina de HuggingFace (unicamente contiene metadatos de licencia)
+- Hugging Face: https://huggingface.co/albtad01/STHELAR-Adapt-CellViT-256-x40
+- Model card del autor: incluida en la pagina de Hugging Face (unicamente contiene metadatos de licencia)
 - Paper, blog, repositorio o demo asociados: no disponibles
 - Referencias sobre CellViT: no incluidas en la informacion proporcionada
 - Resultados de busqueda web: las consultas realizadas devolvieron unicamente paginas de descarga de tipografias (dafont.com), sin relacion con el modelo; no se han utilizado como fuente.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino una política de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario handeyildirim en HuggingFace como artefacto de un curso de RL, usando la librería Sample-Factory 2.0. El objetivo del agente es navegar un escenario de Doom recogiendo botiquines para maximizar la recompensa acumulada durante el episodio.
+Este repositorio no contiene un modelo de lenguaje, sino una política de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario handeyildirim en Hugging Face como artefacto de un curso de RL, usando la librería Sample-Factory 2.0. El objetivo del agente es navegar un escenario de Doom recogiendo botiquines para maximizar la recompensa acumulada durante el episodio.
 
 El interés es formativo y reproducible: sirve como ejemplo canónico de cómo empaquetar, versionar y reanudar un experimento de RL con Sample-Factory, no como componente para aplicaciones de NLP. El repositorio ocupa 0,1 GB y contiene los checkpoints y logs de TensorBoard del entrenamiento, con un resultado declarado de recompensa media de 12,90 ± 5,75 en el entorno citado.
 
@@ -32,7 +32,7 @@ El entorno `doom_health_gathering_supreme` es una variante de ViZDoom en la que 
 - Control de agente en un entorno visual 3D de ViZDoom (Doom) a partir de observaciones de píxeles.
 - Política entrenada específicamente para la tarea de recogida de salud (`health gathering`), sin capacidades de generalización declaradas a otros escenarios.
 - Reanudación del entrenamiento desde el checkpoint publicado mediante el flag `--restart_behavior=resume`.
-- Exportación y carga desde HuggingFace Hub mediante `sample_factory.huggingface.load_from_hub`.
+- Exportación y carga desde Hugging Face Hub mediante `sample_factory.huggingface.load_from_hub`.
 - Registro de métricas de entrenamiento en TensorBoard (tag `tensorboard` en el repo).
 - No dispone de generación de texto, código, matemáticas, visión general, tool calling ni razonamiento multi-paso fuera del entorno de RL.
 
@@ -58,14 +58,14 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - VRAM estimada: no disponible; el repositorio pesa 0,1 GB y el entorno ViZDoom es ligero, por lo que la inferencia debería caber en GPUs de consumo, aunque no se confirma en la información proporcionada.
 - GPU recomendadas: no disponibles. Para entrenamiento con Sample-Factory se suele usar una GPU dedicada (por ejemplo, RTX 3090/4090 o A100) más CPU para los workers, pero el autor no lo especifica.
 - ¿Cabe en GPU de consumo? Probablemente sí por el tamaño del checkpoint, pero no está confirmado.
-- Opciones de despliegue: Sample-Factory 2.0 (scripts `enjoy` y `train`), con soporte de carga desde HuggingFace Hub. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Opciones de despliegue: Sample-Factory 2.0 (scripts `enjoy` y `train`), con soporte de carga desde Hugging Face Hub. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| handeyildirim/rl_course_vizdoom_health_gathering_supreme | APPO | doom_health_gathering_supreme | 12,90 ± 5,75 | no disponible | HuggingFace |
+| handeyildirim/rl_course_vizdoom_health_gathering_supreme | APPO | doom_health_gathering_supreme | 12,90 ± 5,75 | no disponible | Hugging Face |
 | Otras políticas ViZDoom en Sample-Factory | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/handeyildirim/rl_course_vizdoom_health_gathering_supreme
+- Hugging Face: https://huggingface.co/handeyildirim/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (GitHub): https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/
-- Guía de HuggingFace en Sample-Factory: https://www.samplefactory.dev/10-huggingface/huggingface/
+- Guía de Hugging Face en Sample-Factory: https://www.samplefactory.dev/10-huggingface/huggingface/

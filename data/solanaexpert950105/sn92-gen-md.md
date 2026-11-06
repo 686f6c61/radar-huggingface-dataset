@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| REAX SN92 generalist entry (este) | 26,1 B | no disponible | MIT | Fusión de pesos, orientado a decisión | HuggingFace, 35 descargas |
-| baselabs/mammoth-1 (base) | no disponible | no disponible | no disponible | Modelo base de la familia | HuggingFace |
-| isomsom/sn92-gen-m87b (padre) | no disponible | no disponible | no disponible | Entrada generalista SN92 | HuggingFace |
-| xflud/sn92-decider-1 (padre) | no disponible | no disponible | no disponible | Entrada de decisión SN92 | HuggingFace |
+| REAX SN92 generalist entry (este) | 26,1 B | no disponible | MIT | Fusión de pesos, orientado a decisión | Hugging Face, 35 descargas |
+| baselabs/mammoth-1 (base) | no disponible | no disponible | no disponible | Modelo base de la familia | Hugging Face |
+| isomsom/sn92-gen-m87b (padre) | no disponible | no disponible | no disponible | Entrada generalista SN92 | Hugging Face |
+| xflud/sn92-decider-1 (padre) | no disponible | no disponible | no disponible | Entrada de decisión SN92 | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables, por lo que la comparación cuantitativa no es posible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- [HuggingFace: solanaexpert950105/sn92-gen-md](https://huggingface.co/solanaexpert950105/sn92-gen-md)
+- [Hugging Face: solanaexpert950105/sn92-gen-md](https://huggingface.co/solanaexpert950105/sn92-gen-md)
 - [Modelo base: baselabs/mammoth-1](https://huggingface.co/baselabs/mammoth-1)
 - [Padre: isomsom/sn92-gen-m87b](https://huggingface.co/isomsom/sn92-gen-m87b)
 - [Padre: xflud/sn92-decider-1](https://huggingface.co/xflud/sn92-decider-1)

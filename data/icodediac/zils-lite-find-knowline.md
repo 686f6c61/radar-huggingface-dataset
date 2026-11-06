@@ -6,7 +6,7 @@ KnowLine-0.8B-Gen1 es un modelo de decisión de 0,8 mil millones de parámetros 
 
 El modelo se distribuye bajo licencia Apache-2.0, con pesos en safetensors y compatibilidad con la librería `transformers`. Soporta únicamente inglés y chino (simplificado y tradicional), y aunque su pipeline declarado es `image-text-to-text`, no ha recibido entrenamiento con imágenes: la torre de visión es la del modelo base, sin ajustar.
 
-Su relevancia actual radica en la propuesta de un modelo pequeño y rápido (mediana de 24,6 ms por petición en una H20) para tareas de enrutamiento, clasificación y decisión estructurada, con probabilidades calibradas (temperatura de lectura T = 1,54 integrada en los pesos y ECE de 0,008-0,012 en la suite pública). Es un lanzamiento temprano, con cero descargas y cero likes en HuggingFace en el momento de redactar esta ficha.
+Su relevancia actual radica en la propuesta de un modelo pequeño y rápido (mediana de 24,6 ms por petición en una H20) para tareas de enrutamiento, clasificación y decisión estructurada, con probabilidades calibradas (temperatura de lectura T = 1,54 integrada en los pesos y ECE de 0,008-0,012 en la suite pública). Es un lanzamiento temprano, con cero descargas y cero likes en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ En la suite pública 0.3, KnowLine-0.8B-Gen1 queda por debajo de todos los compa
 
 ## Limitaciones y advertencias
 
-- Cero descargas y cero likes en HuggingFace en el momento de la ficha: no hay validación independiente por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la ficha: no hay validación independiente por parte de la comunidad.
 - La puntuación del Decision Index 0.4.1 no está disponible; solo se ha publicado la ejecución propia de la suite 0.3.
 - Riesgo de inyección de instrucciones: el 2,1 % de las respuestas se desplazaron a una opción plantada con plantillas vistas en entrenamiento y el 4,2 % (25 de 600) con plantillas no vistas, dentro del objetivo del 5 % del equipo pero no despreciable en producción.
 - Rendimiento bajo en tareas de decisión de dominios nuevos (23,5 sobre 45 tareas propias), lo que sugiere poca generalización fuera de la distribución de entrenamiento.
@@ -106,7 +106,7 @@ En la suite pública 0.3, KnowLine-0.8B-Gen1 queda por debajo de todos los compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/icodediac/zils-lite-find-knowline
+- Hugging Face: https://huggingface.co/icodediac/zils-lite-find-knowline
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - KnowLine-2B-Gen1: https://huggingface.co/PelaAI/KnowLine-2B-Gen1
 - KnowLine-9B-Gen1: https://huggingface.co/PelaAI/KnowLine-9B-Gen1

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-math-foundations-ai999x es un solver determinista de fundamentos matematicos empaquetado como modelo de HuggingFace por AI999X, con autoría declarada de Ibnul Jaif Farabi. No es un modelo de lenguaje generativo: se presenta como un motor de Python que interpreta una pregunta en ingles o una llamada tipada, selecciona una de sus 119 capacidades certificadas (algebra, trigonometria, precalculo, numeros complejos, fracciones, ecuaciones cuadraticas, sistemas de ecuaciones, inecuaciones, polinomios, logaritmos, ley de senos, circunferencia unitaria, secciones conicas), calcula la respuesta de forma exacta, la verifica y la devuelve con pasos, unidades, LaTeX y supuestos. Si no puede verificar el resultado, se niega a responder en lugar de aproximar.
+math-foundations-ai999x es un solver determinista de fundamentos matematicos empaquetado como modelo de Hugging Face por AI999X, con autoría declarada de Ibnul Jaif Farabi. No es un modelo de lenguaje generativo: se presenta como un motor de Python que interpreta una pregunta en ingles o una llamada tipada, selecciona una de sus 119 capacidades certificadas (algebra, trigonometria, precalculo, numeros complejos, fracciones, ecuaciones cuadraticas, sistemas de ecuaciones, inecuaciones, polinomios, logaritmos, ley de senos, circunferencia unitaria, secciones conicas), calcula la respuesta de forma exacta, la verifica y la devuelve con pasos, unidades, LaTeX y supuestos. Si no puede verificar el resultado, se niega a responder en lugar de aproximar.
 
-El repositorio pesa 0,1 GB y los pesos en safetensors suman 4.715.520 parametros, un orden de magnitud propio de un encoder pequeno o de una capa de enrutamiento, no de un transformer generativo de gran escala. La model card declara `inference: false` en HuggingFace y distribuye el uso real mediante una aplicacion de escritorio, una CLI, un paquete de Python (`pip install math-foundations-ai999x`) y una version WebAssembly, todas ejecutando el mismo programa compilado en Rust de forma offline sobre CPU.
+El repositorio pesa 0,1 GB y los pesos en safetensors suman 4.715.520 parametros, un orden de magnitud propio de un encoder pequeno o de una capa de enrutamiento, no de un transformer generativo de gran escala. La model card declara `inference: false` en Hugging Face y distribuye el uso real mediante una aplicacion de escritorio, una CLI, un paquete de Python (`pip install math-foundations-ai999x`) y una version WebAssembly, todas ejecutando el mismo programa compilado en Rust de forma offline sobre CPU.
 
 Su relevancia actual reside en la propuesta de "cero alucinaciones" para dominios matematicos acotados: frente a LLM generativos que producen pasos plausibles pero incorrectos, este modelo opta por el rechazo explicito cuando la verificacion falla. El soporte es unicamente en ingles y la licencia es Apache-2.0.
 
@@ -71,8 +71,8 @@ El valor 1,0 corresponde a respuestas identicas en todas las plataformas probada
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| math-foundations-ai999x | 4.715.520 | No disponible | Solver determinista con rechazo verificado | Apache-2.0 | HuggingFace, PyPI, escritorio, CLI, WASM |
-| LLM generativos para matematicas (p. ej. variantes especializadas de 7B-70B) | Miles de millones | 4K-128K tipicamente | Generacion autoregresiva con riesgo de alucinacion | Variable | HuggingFace, APIs |
+| math-foundations-ai999x | 4.715.520 | No disponible | Solver determinista con rechazo verificado | Apache-2.0 | Hugging Face, PyPI, escritorio, CLI, WASM |
+| LLM generativos para matematicas (p. ej. variantes especializadas de 7B-70B) | Miles de millones | 4K-128K tipicamente | Generacion autoregresiva con riesgo de alucinacion | Variable | Hugging Face, APIs |
 | Librerias de algebra computacional (SymPy y similares) | No aplica (no neuronal) | No aplica | Calculo simbolico determinista | BSD o similar | PyPI |
 
 La comparacion cuantitativa con alternativas concretas no esta disponible en la informacion proporcionada. La diferencia cualitativa principal frente a LLM generativos es el rechazo explicito en lugar de la respuesta plausible; frente a librerias de algebra computacional, la diferencia es la interfaz en lenguaje natural y la seleccion automatica entre 119 capacidades certificadas.
@@ -85,13 +85,13 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 - Riesgo de alucinacion: el autor declara cero alucinaciones mediante rechazo verificado, pero esta afirmacion no ha sido verificada de forma independiente (la metrica figura como `verified: false`).
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion con atribucion; conviene revisar el archivo LICENSE del repositorio para condiciones exactas.
 - Madurez: el repositorio tiene 75 descargas y 0 likes en el momento de la consulta, con version 1.0.3 y actualizacion reciente; el ecosistema es de un unico autor y no hay evidencia de adopcion amplia.
-- `inference: false` en HuggingFace: el modelo no se puede ejecutar directamente desde la infraestructura de inferencia del Hub; requiere descargar la aplicacion, la CLI o el paquete de Python.
+- `inference: false` en Hugging Face: el modelo no se puede ejecutar directamente desde la infraestructura de inferencia del Hub; requiere descargar la aplicacion, la CLI o el paquete de Python.
 - Dependencia de la verificacion interna: si la comprobacion del motor tiene un fallo no documentado, el rechazo podria no activarse; no se publican auditorias externas del mecanismo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/math-foundations-ai999x
-- Organizacion AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/math-foundations-ai999x
+- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
 - Documentacion en el repositorio: https://huggingface.co/AI999X/math-foundations-ai999x/tree/main/docs
 - Evaluacion en el repositorio: https://huggingface.co/AI999X/math-foundations-ai999x/tree/main/evaluation
 - Paquete de Python en PyPI: https://pypi.org/project/math-foundations-ai999x/

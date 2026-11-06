@@ -86,7 +86,7 @@ No se dispone de datos de otras cuantizaciones del mismo modelo (p. ej., version
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/gemma-4-12B-it-w4a16-llmcompressor-v0.12.0
+- Modelo en Hugging Face: https://huggingface.co/amd/gemma-4-12B-it-w4a16-llmcompressor-v0.12.0
 - Modelo base (RedHatAI): https://huggingface.co/RedHatAI/gemma-4-12B-it
 - Modelo original (Google): https://huggingface.co/google/gemma-4-12B-it
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/

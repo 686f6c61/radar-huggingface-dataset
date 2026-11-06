@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smolvla es un modelo publicado en HuggingFace por el usuario nauq-hna bajo licencia Apache 2.0. El repositorio, con un tamaño de 3,2 GB, contiene pesos en formato safetensors. La model card es prácticamente vacía: solo incluye la línea de licencia, sin descripción, arquitectura ni instrucciones de uso.
+Smolvla es un modelo publicado en Hugging Face por el usuario nauq-hna bajo licencia Apache 2.0. El repositorio, con un tamaño de 3,2 GB, contiene pesos en formato safetensors. La model card es prácticamente vacía: solo incluye la línea de licencia, sin descripción, arquitectura ni instrucciones de uso.
 
 Según la documentación de FastFlowLM, el nombre SmolVLA corresponde a un modelo de política robótica (vision-language-action) que mapea imágenes de cámara e instrucciones de lenguaje directamente a acciones de robot. Sin embargo, no existe información que confirme que el modelo alojado en `nauq-hna/Smolvla` sea esa implementación, ya que la model card no aporta detalles técnicos.
 
@@ -67,7 +67,7 @@ La información proporcionada no incluye datos suficientes para realizar una com
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Smolvla (nauq-hna) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Smolvla (nauq-hna) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible |
 | RT-2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -75,12 +75,12 @@ La información proporcionada no incluye datos suficientes para realizar una com
 
 - La model card es prácticamente vacía: no hay documentación sobre sesgos, riesgos de alucinación, limitaciones de contexto o cobertura de idiomas.
 - No se dispone de información sobre los datos de entrenamiento, por lo que no se puede evaluar la robustez del modelo en diferentes dominios o escenarios.
-- El modelo presenta cero descargas y cero me gusta en HuggingFace, lo que sugiere que no ha sido validado por la comunidad ni probado en producción.
+- El modelo presenta cero descargas y cero me gusta en Hugging Face, lo que sugiere que no ha sido validado por la comunidad ni probado en producción.
 - No hay confirmación de que el modelo alojado sea la implementación funcional de SmolVLA descrita en FastFlowLM. Podría tratarse de un modelo con la misma denominación pero distinto contenido.
 - La ausencia de documentación técnica dificulta cualquier implementación en producción, a pesar de que la licencia Apache 2.0 permite uso comercial.
 - Según FastFlowLM, el modelo no es compatible con los módulos de chat y CLI de su framework, lo que limita su integración en pipelines convencionales de inferencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nauq-hna/Smolvla
+- Hugging Face: https://huggingface.co/nauq-hna/Smolvla
 - Documentación de FastFlowLM: https://fastflowlm.com/docs/models/smolvla/

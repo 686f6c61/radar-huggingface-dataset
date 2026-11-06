@@ -87,9 +87,9 @@ Notas de lectura: un valor de `forget_quality` muy bajo (0,0143) y un `privleak`
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkDPO | 3,21 B | 128.000 tokens (heredado) | Llama 3.2 Community License | HuggingFace, 0 descargas, 0 likes | Desaprendizaje con IdkDPO sobre TOFU `forget01` |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Modelo base sin desaprendizaje; referencia de utilidad |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Modelo original de Meta, sin ajuste sobre TOFU |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkDPO | 3,21 B | 128.000 tokens (heredado) | Llama 3.2 Community License | Hugging Face, 0 descargas, 0 likes | Desaprendizaje con IdkDPO sobre TOFU `forget01` |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Modelo base sin desaprendizaje; referencia de utilidad |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Modelo original de Meta, sin ajuste sobre TOFU |
 | Otros metodos de desaprendizaje sobre TOFU (NPO, SimNPO, GradDiff) | 3,21 B (tipicamente) | 128.000 tokens | Llama 3.2 Community License | Repositorio `locuslab/open-unlearning` | Metricas comparativas no disponibles en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
@@ -109,8 +109,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkDPO
-- Modelo base en HuggingFace: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkDPO
+- Modelo base en Hugging Face: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework de desaprendizaje open-unlearning: https://github.com/locuslab/open-unlearning
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
@@ -118,4 +118,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Salidas de evaluacion TOFU: directorio `evals/` dentro del repositorio del modelo
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo ni sobre el proyecto de desaprendizaje; los unicos enlaces utiles son los presentes en la informacion de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo ni sobre el proyecto de desaprendizaje; los unicos enlaces utiles son los presentes en la informacion de Hugging Face.

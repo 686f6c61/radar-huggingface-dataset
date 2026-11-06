@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MACCO-Finetuned es un repositorio de pesos publicado en HuggingFace por el usuario rifahnanjiba2 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin especificar el modelo base sobre el que se ha realizado el ajuste fino, la arquitectura, el tamaño en parámetros ni los datos de entrenamiento empleados. El repositorio ocupa 0,6 GB y no declara pipeline de inferencia ni idiomas soportados.
+MACCO-Finetuned es un repositorio de pesos publicado en Hugging Face por el usuario rifahnanjiba2 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin especificar el modelo base sobre el que se ha realizado el ajuste fino, la arquitectura, el tamaño en parámetros ni los datos de entrenamiento empleados. El repositorio ocupa 0,6 GB y no declara pipeline de inferencia ni idiomas soportados.
 
 Por el momento no es posible determinar qué problema resuelve el modelo ni en qué casos resulta adecuado. El nombre sugiere un ajuste fino sobre una base previa no identificada, pero el autor no documenta ni el punto de partida ni el procedimiento de entrenamiento, lo que impide evaluar su comportamiento o reproducir los resultados. Cualquier uso en producción requeriría una caracterización empírica completa por parte del usuario.
 
@@ -86,6 +86,6 @@ No disponible. La comparativa requiere conocer el modelo base y el tamaño en pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rifahnanjiba2/MACCO-Finetuned
+- Repositorio en Hugging Face: https://huggingface.co/rifahnanjiba2/MACCO-Finetuned
 - Perfil del autor: https://huggingface.co/rifahnanjiba2
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

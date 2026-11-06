@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| disinformant/Qwen3.8-9B-Alexandria-GGUF | 9.197.093.888 | no disponible | Apache-2.0 | GGUF en HuggingFace, 0 descargas | CPT sobre texto de la OSL, imagenes y tablas no entrenadas |
+| disinformant/Qwen3.8-9B-Alexandria-GGUF | 9.197.093.888 | no disponible | Apache-2.0 | GGUF en Hugging Face, 0 descargas | CPT sobre texto de la OSL, imagenes y tablas no entrenadas |
 | petruhonk/Qwen3.8-9B-Distill-uncensored-heretic | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Modelo base del anterior | Version sin censura declarada por el autor |
 | empero-ai/Qwen3.8-9B-Distill | no disponible en la informacion proporcionada | no disponible | no disponible | Segundo nivel de la cadena de herencia | Distilacion intermedia |
 | Qwen/Qwen3.5-9B | no disponible en la informacion proporcionada | no disponible | no disponible | Origen de la cadena | Modelo base de la familia Qwen referenciado |
@@ -86,7 +86,7 @@ No se dispone de datos de contexto, benchmarks ni licencias de los modelos inter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/disinformant/Qwen3.8-9B-Alexandria-GGUF
+- Modelo en Hugging Face: https://huggingface.co/disinformant/Qwen3.8-9B-Alexandria-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/disinformant/alexandria-osl-train
 - Modelo base inmediato: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Modelo intermedio de la cadena: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill

@@ -69,8 +69,8 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-khipu-kernels
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-khipu-kernels
 - Documentación de SZL Holdings: https://szl-holdings.github.io/docs-site/
 - GitHub del proyecto: https://github.com/szl-holdings/szl-khipu
 - Repositorio de kernels relacionado: https://github.com/szl-holdings/szl-kernels/
-- Página de SZL Holdings en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-kernels
+- Página de SZL Holdings en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-kernels

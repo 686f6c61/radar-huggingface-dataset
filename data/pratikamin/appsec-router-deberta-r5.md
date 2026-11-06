@@ -69,10 +69,10 @@ Desglose por estilo de respuesta en el test de la ronda 5 (pares acreditados det
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pratikamin/appsec-router-deberta-r5 | 70,8 M totales (22 M de backbone) | 256 tokens por par | F1 82% y precision 88% de acuerdo con el profesor en el test de la ronda 5 | Apache 2.0 | HuggingFace, safetensors y ONNX int8 |
-| cross-encoder/nli-deberta-v3-xsmall (modelo base) | Misma familia y tamano (no disponible el desglose exacto) | No disponible | No disponible; es un modelo NLI generico, no afinado para este dominio | Apache 2.0 segun la model card del modelo derivado | HuggingFace |
-| cross-encoder/nli-deberta-v3-base | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
-| openai/gpt-oss-120b (profesor del que se destila) | Alrededor de 120.000 M, arquitectura MoE | No disponible en esta ficha | No disponible | Apache 2.0 | HuggingFace; requiere infraestructura de servidor |
+| pratikamin/appsec-router-deberta-r5 | 70,8 M totales (22 M de backbone) | 256 tokens por par | F1 82% y precision 88% de acuerdo con el profesor en el test de la ronda 5 | Apache 2.0 | Hugging Face, safetensors y ONNX int8 |
+| cross-encoder/nli-deberta-v3-xsmall (modelo base) | Misma familia y tamano (no disponible el desglose exacto) | No disponible | No disponible; es un modelo NLI generico, no afinado para este dominio | Apache 2.0 segun la model card del modelo derivado | Hugging Face |
+| cross-encoder/nli-deberta-v3-base | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
+| openai/gpt-oss-120b (profesor del que se destila) | Alrededor de 120.000 M, arquitectura MoE | No disponible en esta ficha | No disponible | Apache 2.0 | Hugging Face; requiere infraestructura de servidor |
 
 La comparacion relevante es la de la ultima fila: el router original basado en un LLM de gran tamano ofrece mayor cobertura semantica pero exige servidor, mientras que este cross-encoder de 70,8 M resuelve el mismo enrutado en el navegador a cambio de perder recall en respuestas correctas con redaccion inusual.
 
@@ -99,7 +99,7 @@ La comparacion relevante es la de la ultima fila: el router original basado en u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pratikamin/appsec-router-deberta-r5
+- Modelo en Hugging Face: https://huggingface.co/pratikamin/appsec-router-deberta-r5
 - Dataset de entrenamiento: https://huggingface.co/datasets/pratikamin/appsec-router-pairs-r5
 - Modelo base: https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall
 - Backbone original: https://huggingface.co/microsoft/deberta-v3-xsmall

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fibo-2.0-edit-turbo es un modelo de edicion de imagenes publicado por BRIA AI (organizacion `briaai` en HuggingFace) como variante destilada del modelo base `briaai/Fibo-2.0-dev`. Su funcion es la edicion de imagenes guiada por instrucciones en lenguaje natural: recibe una imagen de entrada y una instruccion, y devuelve la imagen modificada. El repositorio declara los pipelines `image-to-image` e `inpainting`, ademas de soporte para `multi-reference` (uso de varias imagenes de referencia en una misma edicion) y `structured-prompts` (prompts estructurados en lugar de texto libre).
+Fibo-2.0-edit-turbo es un modelo de edicion de imagenes publicado por BRIA AI (organizacion `briaai` en Hugging Face) como variante destilada del modelo base `briaai/Fibo-2.0-dev`. Su funcion es la edicion de imagenes guiada por instrucciones en lenguaje natural: recibe una imagen de entrada y una instruccion, y devuelve la imagen modificada. El repositorio declara los pipelines `image-to-image` e `inpainting`, ademas de soporte para `multi-reference` (uso de varias imagenes de referencia en una misma edicion) y `structured-prompts` (prompts estructurados en lugar de texto libre).
 
 Tecnicamente es un modelo de difusion distribuido en formato `diffusers` a traves de la clase `BriaFibo2Pipeline`, con 8.127.342.213 parametros totales (dato real extraido de los pesos en safetensors) y un repositorio de 25,5 GB. La etiqueta `distillation` y el sufijo `turbo` indican que se trata de una version destilada del modelo `dev`, pensada para reducir el numero de pasos de inferencia necesarios, aunque la informacion disponible no concreta el numero exacto de pasos ni el factor de aceleracion.
 
@@ -18,12 +18,12 @@ Su relevancia ahora es doble: por un lado, se publica como alternativa de edicio
 | Longitud de contexto | no disponible (no aplica a un modelo de difusion; la ventana relevante es la longitud del prompt de texto, no especificada) |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye `safetensors`; no se documentan variantes GGUF, FP8 ni INT8) |
 | Idiomas soportados | en (ingles) |
-| Licencia | `bria-fibo` (catalogada como `other` en HuggingFace) |
+| Licencia | `bria-fibo` (catalogada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (`diffusers`) |
 | Tarea | image-to-image, inpainting, edicion multi-referencia |
 | Modelo base | `briaai/Fibo-2.0-dev` (fine-tune/destilacion) |
 | Tamano del repositorio | 25,5 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 4 descargas, 21 likes |
 | Fecha de creacion / actualizacion | 2026-10-19 / 2026-10-20 |
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Opciones de despliegue: al estar empaquetado para `diffusers`, el despliegue natural es mediante la propia libreria `diffusers` con `BriaFibo2Pipeline`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje y no a pipelines de difusion de `diffusers`. Tampoco se confirma compatibilidad con ComfyUI.
 - Latencia y throughput: no disponibles. La unica indicacion es cualitativa: la destilacion a variante `turbo` busca reducir el numero de pasos de muestreo respecto a `briaai/Fibo-2.0-dev`.
 - Almacenamiento: el repositorio ocupa 25,5 GB, por encima de lo que sugeriria el peso en 16 bits, lo que apunta a que incluye varios componentes (autoencoder, text encoder u otras variantes de pesos) ademas del modulo principal. Este desglose no se detalla en la informacion disponible.
-- Descarga: al ser un repositorio gated, es necesario autenticarse con un token de HuggingFace y haber aceptado las condiciones de la licencia antes de descargar los pesos.
+- Descarga: al ser un repositorio gated, es necesario autenticarse con un token de Hugging Face y haber aceptado las condiciones de la licencia antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 - Idiomas: solo se declara soporte de ingles (`en`); el comportamiento con instrucciones en castellano u otros idiomas no esta documentado y no deberia asumirse.
 - Licencia: la licencia `bria-fibo` esta catalogada como `other`, es decir, no es una licencia open source estandar (Apache 2.0, MIT, etc.). Es imprescindible revisar los terminos completos antes de cualquier uso comercial, redistribucion o despliegue como servicio.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones; esto puede bloquear automatizaciones, entornos de CI y despliegues que no gestionen tokens de HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones; esto puede bloquear automatizaciones, entornos de CI y despliegues que no gestionen tokens de Hugging Face.
 - Alucinacion visual: como todo modelo generativo de imagenes, puede introducir o eliminar elementos no solicitados, alterar la identidad del sujeto entre ediciones o desvirtuar detalles finos (texto en la imagen, rostros, geometria) sin aviso. No se dispone de datos publicados sobre fidelidad de edicion.
 - Sin benchmarks: no hay resultados publicados en la informacion disponible que permitan acotar la calidad frente a alternativas, lo que aumenta el riesgo de una adopcion a ciegas.
 - Sin variantes cuantizadas documentadas: el repositorio solo distribuye `safetensors`; no consta soporte de GGUF, FP8 ni INT8, lo que limita el despliegue en hardware modesto.
@@ -93,9 +93,9 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
+- Modelo en Hugging Face: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Modelo base: https://huggingface.co/briaai/Fibo-2.0-dev
 - Paper referenciado en las etiquetas: arxiv:2511.06876 (https://arxiv.org/abs/2511.06876)
-- Organizacion BRIA AI en HuggingFace: https://huggingface.co/briaai
+- Organizacion BRIA AI en Hugging Face: https://huggingface.co/briaai
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper ni a demos oficiales; los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

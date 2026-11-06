@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2 es un adaptador de ajuste fino de tipo PEFT publicado en HuggingFace por el usuario WijewardhanaNT. No es un modelo completo: se trata de un conjunto de pesos de adaptador (aproximadamente 0,4 GB en el repositorio) que debe cargarse sobre el modelo base meta-llama/Llama-3.2-3B. La libreria declarada es peft 0.17.1 y el pipeline es text-generation.
+WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2 es un adaptador de ajuste fino de tipo PEFT publicado en Hugging Face por el usuario WijewardhanaNT. No es un modelo completo: se trata de un conjunto de pesos de adaptador (aproximadamente 0,4 GB en el repositorio) que debe cargarse sobre el modelo base meta-llama/Llama-3.2-3B. La libreria declarada es peft 0.17.1 y el pipeline es text-generation.
 
-El nombre del repositorio sugiere que el adaptador se entreno sobre el corpus XNLI (Cross-lingual Natural Language Inference) en ingles y urdu, con algun subconjunto de 5000 ejemplos y un esquema de entrenamiento DoRA (Weight-Decomposed Low-Rank Adaptation), que es una variante de LoRA que descompone los pesos en magnitud y direccion. Sin embargo, la model card no confirma ninguno de estos extremos: es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El nombre del repositorio sugiere que el adaptador se entreno sobre el corpus XNLI (Cross-lingual Natural Language Inference) en ingles y urdu, con algun subconjunto de 5000 ejemplos y un esquema de entrenamiento DoRA (Weight-Decomposed Low-Rank Adaptation), que es una variante de LoRA que descompone los pesos en magnitud y direccion. Sin embargo, la model card no confirma ninguno de estos extremos: es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es limitada y de caracter documental: el repositorio acumula 0 descargas y 0 likes, no declara licencia, no declara idiomas y no publica resultados de evaluacion. Se trata, por tanto, de un artefacto de experimentacion academica o personal, no de un modelo listo para produccion. Cualquier uso serio requeriria auditar primero los datos de entrenamiento y validar el comportamiento del adaptador.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y de caracter documental: el repositorio
 
 La informacion disponible no describe la arquitectura del adaptador mas alla de las etiquetas del repositorio: peft, lora, safetensors y base_model:adapter:meta-llama/Llama-3.2-3B. El nombre del repositorio indica explicitamente DoRA, una tecnica de ajuste eficiente de parametros presentada en la literatura (Weight-Decomposed Low-Rank Adaptation) que descompone la actualizacion de pesos en un componente de magnitud y otro de direccion de rango bajo. El tag arxiv:1910.09700 que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental, citado en la plantilla de la model card, y no a un paper del modelo.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, la tasa de aprendizaje, el rango del adaptador, las capas objetivo ni el numero de pasos. El identificador del repositorio sugiere un entrenamiento sobre XNLI (inferencia de lenguaje natural) en ingles y urdu con 5000 ejemplos, pero se trata de una inferencia a partir del nombre y no de un dato documentado. La unica informacion tecnica verificable es la version de framework declarada: PEFT 0.17.1. La model card, ademas, esta fechada por HuggingFace en septiembre de 2026, una fecha que no se corresponde con el estado actual del ecosistema y que conviene tratar con cautela.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, la tasa de aprendizaje, el rango del adaptador, las capas objetivo ni el numero de pasos. El identificador del repositorio sugiere un entrenamiento sobre XNLI (inferencia de lenguaje natural) en ingles y urdu con 5000 ejemplos, pero se trata de una inferencia a partir del nombre y no de un dato documentado. La unica informacion tecnica verificable es la version de framework declarada: PEFT 0.17.1. La model card, ademas, esta fechada por Hugging Face en septiembre de 2026, una fecha que no se corresponde con el estado actual del ecosistema y que conviene tratar con cautela.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ Dado que se trata de un adaptador de tarea especifica y no de un modelo autonomo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

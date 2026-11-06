@@ -89,6 +89,6 @@ La comparación relevante es con su propio modelo base: jina-v2-code-query-4l sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjaroztegi/jina-v2-code-query-4l
+- Modelo en Hugging Face: https://huggingface.co/jjaroztegi/jina-v2-code-query-4l
 - Modelo base: https://huggingface.co/jinaai/jina-embeddings-v2-base-code
 - Herramienta provgrep: https://github.com/jjaroztegi/provgrep

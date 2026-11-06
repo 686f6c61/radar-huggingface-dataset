@@ -95,7 +95,7 @@ La diferencia funcional frente a estas alternativas no es de capacidad bruta, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexg0405/pagoda-default
+- Modelo en Hugging Face: https://huggingface.co/alexg0405/pagoda-default
 - Modelo base declarado: Pagoda-V.0 (referenciado en la model card sin URL explicita)
 - Modelo de partida: Qwen2.5-Coder-7B-Instruct (Qwen team, Alibaba Cloud), https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Libreria MLX: https://github.com/ml-explore/mlx

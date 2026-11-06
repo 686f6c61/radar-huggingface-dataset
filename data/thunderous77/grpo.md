@@ -74,5 +74,5 @@ No se dispone de información suficiente para comparar estos checkpoints con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Thunderous77/grpo](https://huggingface.co/Thunderous77/grpo)
+- Repositorio Hugging Face: [Thunderous77/grpo](https://huggingface.co/Thunderous77/grpo)
 - Modelo base: [Qwen/Qwen3-1.7B-Base](https://huggingface.co/Qwen/Qwen3-1.7B-Base)

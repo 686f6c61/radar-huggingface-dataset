@@ -1,9 +1,9 @@
 # cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k
 
 ## Resumen
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k` es un checkpoint publicado en HuggingFace por el autor cyttic, con un total de 87.279.756 parametros en formato safetensors y un tamano de repositorio de 0,3 GB. El identificador sugiere un modelo de reconocimiento optico de caracteres (OCR) basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de fuentes web ("webfonts10mix"), con representaciones geometricas ("hhdgeom") y datos generados por LLM ("llmgen") en un conjunto de 5.000 muestras ("5k"). No obstante, esta interpretacion se deduce del nombre del checkpoint y no esta confirmada por la model card.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k` es un checkpoint publicado en Hugging Face por el autor cyttic, con un total de 87.279.756 parametros en formato safetensors y un tamano de repositorio de 0,3 GB. El identificador sugiere un modelo de reconocimiento optico de caracteres (OCR) basado en CTC (Connectionist Temporal Classification), entrenado sobre una mezcla de fuentes web ("webfonts10mix"), con representaciones geometricas ("hhdgeom") y datos generados por LLM ("llmgen") en un conjunto de 5.000 muestras ("5k"). No obstante, esta interpretacion se deduce del nombre del checkpoint y no esta confirmada por la model card.
 
-La model card publicada es la plantilla generica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, no hay idiomas listados, no hay resultados de benchmarks y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
+La model card publicada es la plantilla generica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". No hay pipeline declarado, no hay idiomas listados, no hay resultados de benchmarks y el modelo registra 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, esta ficha se limita a documentar los datos verificables del repositorio (parametros, tamano, licencia, formato) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Es relevante como ejemplo de checkpoint de investigacion sin documentacion, y su uso en produccion requeriria una evaluacion propia por parte del integrador.
 
@@ -66,6 +66,6 @@ No disponible. No se conocen modelos comparables de la misma categoria porque la
 - Fecha de creacion futura en los metadatos (2026-10-25): conviene verificar la procedencia y autenticidad del repositorio antes de usarlo en produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-5k
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

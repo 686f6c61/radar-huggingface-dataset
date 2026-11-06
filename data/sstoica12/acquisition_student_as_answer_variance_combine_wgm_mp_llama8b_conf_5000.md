@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de la familia Llama con 8.030.261.248 parámetros (aproximadamente 8,03 mil millones), publicado en HuggingFace por el usuario `sstoica12` y etiquetado para generación de texto y uso conversacional. El repositorio contiene únicamente pesos en formato `safetensors` (16,1 GB), es compatible con la librería `transformers` y con `text-generation-inference`, y no incluye ningún artefacto adicional de evaluación, tokenizador documentado ni variantes cuantizadas.
+`sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de la familia Llama con 8.030.261.248 parámetros (aproximadamente 8,03 mil millones), publicado en Hugging Face por el usuario `sstoica12` y etiquetado para generación de texto y uso conversacional. El repositorio contiene únicamente pesos en formato `safetensors` (16,1 GB), es compatible con la librería `transformers` y con `text-generation-inference`, y no incluye ningún artefacto adicional de evaluación, tokenizador documentado ni variantes cuantizadas.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos de autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados se dejan como `[More Information Needed]`. Esto convierte al modelo en un artefacto de investigación opaco desde el punto de vista documental: se conocen el tamaño, la arquitectura declarada por el tag `llama` y el pipeline, pero no el proceso de entrenamiento ni el rendimiento.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos de autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados se dejan como `[More Information Needed]`. Esto convierte al modelo en un artefacto de investigación opaco desde el punto de vista documental: se conocen el tamaño, la arquitectura declarada por el tag `llama` y el pipeline, pero no el proceso de entrenamiento ni el rendimiento.
 
 Por el identificador se deduce que se trata de un checkpoint "student" (destilación o ajuste de un modelo profesor) asociado a un experimento de combinación de varianza de respuestas y a técnicas de merging o model patching (`WGM_MP`), con un ajuste de confianza de 5000 pasos sobre una base Llama de 8B. Esa lectura es una inferencia a partir del nombre del repositorio, no una afirmación respaldada por documentación. Su relevancia ahora es limitada y circunscrita a quien quiera reproducir el experimento original o inspeccionar los pesos; no es un modelo apto para producción sin una evaluación previa.
 
@@ -30,7 +30,7 @@ No se han publicado datos de entrenamiento: ni número de tokens, ni composició
 ## Capacidades
 
 - Generación de texto autoregresiva y conversación multi-turno, según declara el pipeline `text-generation` y el tag `conversational`.
-- Es compatible con `transformers` y con `text-generation-inference`, por lo que puede servirse con el stack estándar de HuggingFace.
+- Es compatible con `transformers` y con `text-generation-inference`, por lo que puede servirse con el stack estándar de Hugging Face.
 - No hay evidencia publicada de soporte de tool calling, function calling ni razonamiento multi-paso.
 - No hay evidencia publicada de capacidades de código, matemáticas, visión, audio ni modo "thinking".
 - Capacidades multilingües: no disponibles; el repositorio no declara idiomas.
@@ -87,7 +87,7 @@ Frente a las alternativas, el factor diferencial no es técnico sino documental:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000
+- Repositorio en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla: https://ml2co2.github.io/impact#compute (enlace original de la model card: https://mlco2.github.io/impact#compute)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este checkpoint en la información proporcionada.

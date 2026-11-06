@@ -68,9 +68,9 @@ Condiciones declaradas: cuatro suites x diez tareas x diez estados iniciales ofi
 
 | Modelo | Parametros | Contexto | Evaluacion LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este piloto (temporal-contrast view_large) | no disponible (base ~3,3 B en terceros) | H=10 | 120/400 (30,00 %) en seed7 | apache-2.0 | HuggingFace (0 descargas) |
-| `lerobot/pi05_libero_base` | base π₀.₅ (referencia lerobot) | no disponible | no disponible | no disponible | HuggingFace (lerobot) |
-| `pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003` (mismo autor) | base π₀.₅ | H=10 | no disponible (10.000 actualizaciones) | apache-2.0 | HuggingFace |
+| Este piloto (temporal-contrast view_large) | no disponible (base ~3,3 B en terceros) | H=10 | 120/400 (30,00 %) en seed7 | apache-2.0 | Hugging Face (0 descargas) |
+| `lerobot/pi05_libero_base` | base π₀.₅ (referencia lerobot) | no disponible | no disponible | no disponible | Hugging Face (lerobot) |
+| `pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003` (mismo autor) | base π₀.₅ | H=10 | no disponible (10.000 actualizaciones) | apache-2.0 | Hugging Face |
 | π₀ (pi0) / π₀.₅ original (Physical Intelligence) | ~3,3 B en terceros | no disponible | no disponible en esta busqueda | no disponible | Paper y sitio de Physical Intelligence |
 
 No se dispone de cifras comparativas homogeneas de MMLU/HumanEval/GSM8K por tratarse de un modelo de accion; la comparacion se limita a checkpoints de la misma familia π₀.₅ sobre LIBERO.
@@ -90,7 +90,7 @@ No se dispone de cifras comparativas homogeneas de MMLU/HumanEval/GSM8K por trat
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-view-large-1000-pilot-20261013
+- Hugging Face del modelo: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-view-large-1000-pilot-20261013
 - Dataset de origen del target-IDM: `Donghyun1228/libero-dense-contact-sweep-d2-20261002` (commit `9f8f600ce0e8f5df51c0e847c65a1e09f29d8494`)
 - Checkpoint relacionado del mismo autor: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Modelo base en lerobot: https://huggingface.co/lerobot/pi05_libero_base

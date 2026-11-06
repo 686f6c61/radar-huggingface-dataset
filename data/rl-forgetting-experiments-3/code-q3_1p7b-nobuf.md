@@ -17,7 +17,7 @@ La relevancia del artefacto es metodológica: permite estudiar cómo evoluciona 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (la model card solo indica una longitud de respuesta de 3072 tokens durante el entrenamiento) |
 | Tipos de cuantizacion | No disponible (solo se publican pesos en precision completa) |
-| Idiomas soportados | No disponibles (el campo de idiomas no esta informado en HuggingFace) |
+| Idiomas soportados | No disponibles (el campo de idiomas no esta informado en Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -97,7 +97,7 @@ La comparación con alternativas de la misma categoría debe hacerse con cautela
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-q3_1p7b-nobuf
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-q3_1p7b-nobuf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset MBPP+: no se proporciona enlace en la informacion disponible
 - Dataset MBPP: no se proporciona enlace en la informacion disponible

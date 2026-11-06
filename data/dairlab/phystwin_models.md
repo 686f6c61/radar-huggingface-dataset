@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhysTwin fitted models es un repositorio de pesos y artefactos de entrenamiento publicado por DAIRLab en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo generativo en el sentido habitual, sino de un conjunto de ajustes (fits) de tipo PhysTwin con arquitectura de muelle-masa (spring-mass) producidos a partir de las sesiones de laboratorio del dataset DAIRLab/phystwin_dataset. Cada carpeta corresponde a una sesión grabada y a una ejecución de ajuste concreta, e incluye todos los checkpoints guardados.
+PhysTwin fitted models es un repositorio de pesos y artefactos de entrenamiento publicado por DAIRLab en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo generativo en el sentido habitual, sino de un conjunto de ajustes (fits) de tipo PhysTwin con arquitectura de muelle-masa (spring-mass) producidos a partir de las sesiones de laboratorio del dataset DAIRLab/phystwin_dataset. Cada carpeta corresponde a una sesión grabada y a una ejecución de ajuste concreta, e incluye todos los checkpoints guardados.
 
 El repositorio se apoya en el método PhysTwin (repositorio Jianghanxiao/PhysTwin, licencia MIT), que reconstruye y modela dinámicas físicas de objetos deformables mediante sistemas de masas y muelles ajustados a observaciones. El tamaño del repositorio es de 57,9 GB, lo que refleja la acumulación de checkpoints nativos, registros de ejecución y metadatos por cada sesión. La licencia MIT se aplica únicamente a los paquetes de ajuste producidos por el proyecto, no a las grabaciones del dataset enlazado, que no declaran licencia.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DAIRLab/phystwin_models | Fits PhysTwin (muelle-masa) | no disponible | no aplica | MIT (paquetes de ajuste) | HuggingFace |
+| DAIRLab/phystwin_models | Fits PhysTwin (muelle-masa) | no disponible | no aplica | MIT (paquetes de ajuste) | Hugging Face |
 | Jianghanxiao/PhysTwin | Metodo/codigo de referencia | no aplica | no aplica | MIT | Repositorio de codigo |
-| DAIRLab/phystwin_dataset | Dataset de sesiones de laboratorio | no aplica | no aplica | no declarada | HuggingFace |
+| DAIRLab/phystwin_dataset | Dataset de sesiones de laboratorio | no aplica | no aplica | no declarada | Hugging Face |
 
 No se dispone de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -80,6 +80,6 @@ No se dispone de otros modelos comparables de la misma categoria en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DAIRLab/phystwin_models
+- Repositorio Hugging Face: https://huggingface.co/DAIRLab/phystwin_models
 - Dataset enlazado: https://huggingface.co/datasets/DAIRLab/phystwin_dataset
 - Metodo PhysTwin (codigo de referencia): https://github.com/Jianghanxiao/PhysTwin

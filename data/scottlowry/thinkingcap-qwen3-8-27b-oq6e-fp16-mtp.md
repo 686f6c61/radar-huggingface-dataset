@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp es una version cuantizada del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de una conversion de pesos a 6 bits mediante cuantizacion de precision mixta oQ (herramienta oMLX v0.7.0), en formato MLX safetensors y pensada para ejecucion local en hardware Apple Silicon. El repositorio ocupa 24,7 GB y declara 27.781.427.952 parametros (~27,8 mil millones), con un model type etiquetado como qwen3_5.
+ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp es una version cuantizada del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una conversion de pesos a 6 bits mediante cuantizacion de precision mixta oQ (herramienta oMLX v0.7.0), en formato MLX safetensors y pensada para ejecucion local en hardware Apple Silicon. El repositorio ocupa 24,7 GB y declara 27.781.427.952 parametros (~27,8 mil millones), con un model type etiquetado como qwen3_5.
 
 El modelo base pertenece a la serie ThinkingCap de bottlecapai, descrita por su autor como el segundo modelo de la familia y construida sobre Qwen3.8-27B. La propuesta de esa serie es reducir la longitud del razonamiento generado (un 37% segun la publicacion de bottlecapai) sin alterar la calidad de las respuestas, lo que resulta relevante para pipelines de agentes donde los tokens de "pensamiento" dominan el coste. Qwen3.8-27B, por su parte, se presenta en fuentes secundarias como un modelo con licencia Apache 2.0, codificador de vision y una ventana de contexto de 262.144 tokens.
 
@@ -70,10 +70,10 @@ La informacion disponible solo permite comparar variantes del mismo modelo base.
 
 | Modelo | Parametros | Formato / cuantizacion | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scottlowry/ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp | 27,8 mil millones | MLX safetensors, 6 bits, group size 64 (oQ) | 24,7 GB | no disponible | no disponible | HuggingFace; 0 descargas, 0 likes |
-| bottlecapai/ThinkingCap-Qwen3.8-27B (modelo base) | 27,8 mil millones (derivado) | pesos originales, precision no especificada en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| scottlowry/ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp | 27,8 mil millones | MLX safetensors, 6 bits, group size 64 (oQ) | 24,7 GB | no disponible | no disponible | Hugging Face; 0 descargas, 0 likes |
+| bottlecapai/ThinkingCap-Qwen3.8-27B (modelo base) | 27,8 mil millones (derivado) | pesos originales, precision no especificada en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 | ThinkingCap Qwen3.8 27B GGUF (local-ai-zone) | 27,8 mil millones (derivado) | GGUF | 56,7 GB | no disponible | no disponible | repositorio de terceros; 1.000 descargas |
-| Qwen3.8-27B (modelo original de Qwen) | 27 mil millones aprox. | no especificado | no disponible | 262.144 tokens (fuente secundaria) | Apache 2.0 (fuente secundaria) | HuggingFace |
+| Qwen3.8-27B (modelo original de Qwen) | 27 mil millones aprox. | no especificado | no disponible | 262.144 tokens (fuente secundaria) | Apache 2.0 (fuente secundaria) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar variantes del mismo modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp
 - Arbol de archivos del repositorio: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ6e-fp16-mtp/tree/main
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Repositorio relacionado del mismo autor: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp

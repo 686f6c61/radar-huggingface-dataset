@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `poypauk/round9` es un checkpoint alojado en HuggingFace por el usuario `poypauk`, con un total de 2.152.330.496 parámetros (aproximadamente 2,15 mil millones). El tag `qwen3` sugiere que se trata de un modelo derivado o fine-tune de la familia Qwen3, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 17,4 GB, un tamaño considerable para un modelo de 2B parámetros, lo que podría indicar la inclusión de múltiples formatos de pesos o cuantizaciones, pero no hay información verificable al respecto.
+El modelo `poypauk/round9` es un checkpoint alojado en Hugging Face por el usuario `poypauk`, con un total de 2.152.330.496 parámetros (aproximadamente 2,15 mil millones). El tag `qwen3` sugiere que se trata de un modelo derivado o fine-tune de la familia Qwen3, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 17,4 GB, un tamaño considerable para un modelo de 2B parámetros, lo que podría indicar la inclusión de múltiples formatos de pesos o cuantizaciones, pero no hay información verificable al respecto.
 
 El modelo fue creado el 25 de agosto de 2026 y actualizado el 31 de agosto de 2026. Apenas cuenta con 3 descargas y ningún "like", lo que sugiere que es un experimento personal o un checkpoint intermedio sin difusión pública. No se ha publicado información sobre su arquitectura interna, datos de entrenamiento, capacidades o rendimiento, por lo que esta ficha se limita a los datos disponibles y marca explícitamente todo lo desconocido.
 
@@ -21,7 +21,7 @@ El modelo fue creado el 25 de agosto de 2026 y actualizado el 31 de agosto de 20
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. El tag `qwen3` en HuggingFace sugiere que podría estar basado en la arquitectura de los modelos Qwen3 (transformers con atención estándar o variantes), pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. El tamaño del repositorio (17,4 GB) es notablemente grande para 2,15B parámetros, lo que podría indicar que se incluyen pesos en precisión fp32 o múltiples versiones, pero es una especulación sin base verificable.
+No se ha publicado información sobre la arquitectura interna del modelo. El tag `qwen3` en Hugging Face sugiere que podría estar basado en la arquitectura de los modelos Qwen3 (transformers con atención estándar o variantes), pero no hay confirmación oficial. Tampoco se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. El tamaño del repositorio (17,4 GB) es notablemente grande para 2,15B parámetros, lo que podría indicar que se incluyen pesos en precisión fp32 o múltiples versiones, pero es una especulación sin base verificable.
 
 ## Capacidades
 
@@ -54,4 +54,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - poypauk/round9](https://huggingface.co/poypauk/round9)
+- [Hugging Face - poypauk/round9](https://huggingface.co/poypauk/round9)

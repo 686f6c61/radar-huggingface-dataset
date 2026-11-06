@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adnan-865/bert-base-cybersecurity-mlm` es un modelo de lenguaje enmascarado (masked language model, MLM) basado en la arquitectura BERT, adaptado al dominio de la ciberseguridad. Desarrollado por el usuario adnan-865 y publicado en HuggingFace, el modelo cuenta con 109,5 millones de parámetros, lo que lo sitúa en la categoría de BERT-base. Su pipeline principal es `fill-mask`, lo que indica que está diseñado para predecir tokens enmascarados en texto, una capacidad fundamental para tareas de comprensión del lenguaje en el ámbito de la seguridad informática.
+El modelo `adnan-865/bert-base-cybersecurity-mlm` es un modelo de lenguaje enmascarado (masked language model, MLM) basado en la arquitectura BERT, adaptado al dominio de la ciberseguridad. Desarrollado por el usuario adnan-865 y publicado en Hugging Face, el modelo cuenta con 109,5 millones de parámetros, lo que lo sitúa en la categoría de BERT-base. Su pipeline principal es `fill-mask`, lo que indica que está diseñado para predecir tokens enmascarados en texto, una capacidad fundamental para tareas de comprensión del lenguaje en el ámbito de la seguridad informática.
 
 Aunque la model card no proporciona detalles sobre el proceso de entrenamiento, el nombre y los tags sugieren que fue preentrenado o ajustado sobre corpus especializados en ciberseguridad, como informes de incidentes, descripciones de vulnerabilidades o textos técnicos de seguridad. Este tipo de modelos resulta relevante para tareas de clasificación de texto, extracción de entidades y análisis de inteligencia de amenazas, donde el vocabulario técnico y las jergas específicas requieren un conocimiento profundo del dominio.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (para un BERT-base con 110M parámetros). Con cuantización a INT8, podría reducirse a ~0,25 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia; por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060 o superiores. Para fine-tuning, se recomienda al menos 8 GB de VRAM (RTX 3070, A100, etc.).
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y baja.
-- Opciones de despliegue: puede ejecutarse con la librería `transformers` de HuggingFace, así como con herramientas como ONNX Runtime, TensorRT o vLLM (aunque vLLM está más orientado a modelos generativos). También es compatible con `sentence-transformers` para generar embeddings.
+- Opciones de despliegue: puede ejecutarse con la librería `transformers` de Hugging Face, así como con herramientas como ONNX Runtime, TensorRT o vLLM (aunque vLLM está más orientado a modelos generativos). También es compatible con `sentence-transformers` para generar embeddings.
 - Latencia y throughput: no se dispone de datos específicos, pero para un BERT-base, la inferencia en CPU suele tardar entre 10-50 ms por secuencia de 512 tokens, y en GPU mucho menos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| adnan-865/bert-base-cybersecurity-mlm | 110M | no disponible | no disponible | HuggingFace |
-| CySecBERT (markusbayer/CySecBERT) | 110M (BERT-base) | 512 | no disponible | HuggingFace |
-| SecureBERT 2.0 (cisco-ai/SecureBERT2.0-base) | no disponible | no disponible | no disponible | HuggingFace |
+| adnan-865/bert-base-cybersecurity-mlm | 110M | no disponible | no disponible | Hugging Face |
+| CySecBERT (markusbayer/CySecBERT) | 110M (BERT-base) | 512 | no disponible | Hugging Face |
+| SecureBERT 2.0 (cisco-ai/SecureBERT2.0-base) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. CySecBERT y SecureBERT son modelos similares en el dominio de ciberseguridad, pero no se han encontrado benchmarks públicos que permitan una comparación cuantitativa.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo. CySecBERT y SecureBERT son mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adnan-865/bert-base-cybersecurity-mlm
+- Hugging Face: https://huggingface.co/adnan-865/bert-base-cybersecurity-mlm
 - Referencia relacionada (CySecBERT): https://github.com/PEASEC/CySecBERT
 - Referencia relacionada (SecureBERT 2.0): https://huggingface.co/cisco-ai/SecureBERT2.0-base

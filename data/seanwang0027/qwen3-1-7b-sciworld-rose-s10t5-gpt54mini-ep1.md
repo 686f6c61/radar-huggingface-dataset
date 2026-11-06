@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de ajuste fino del modelo Qwen3-1.7B, desarrollado por el usuario SeanWang0027 (HuggingFace) como parte de un estudio sobre destilación on-policy de agentes. El modelo se ha entrenado específicamente para actuar como agente ReAct dentro del entorno textual ScienceWorld, un simulador de experimentos científicos de laboratorio. No es un modelo de propósito general: es un artefacto de investigación con un formato de salida rígido (`Thought:` / `Action:`).
+Este repositorio contiene un checkpoint de ajuste fino del modelo Qwen3-1.7B, desarrollado por el usuario SeanWang0027 (Hugging Face) como parte de un estudio sobre destilación on-policy de agentes. El modelo se ha entrenado específicamente para actuar como agente ReAct dentro del entorno textual ScienceWorld, un simulador de experimentos científicos de laboratorio. No es un modelo de propósito general: es un artefacto de investigación con un formato de salida rígido (`Thought:` / `Action:`).
 
 El entrenamiento emplea una variante denominada ROSE (online multi-turn), en la que el estudiante juega los 10 primeros turnos en un entorno ScienceWorld real y un profesor externo (`gpt-5.4-mini` vía API de OpenAI) continúa el mismo episodio hasta 5 turnos más. Solo los turnos del profesor actúan como objetivos de entrenamiento por entropía cruzada; los del estudiante y las observaciones se usan únicamente como contexto.
 
@@ -77,17 +77,17 @@ Advertencias señaladas por el propio autor: las diferencias inferiores a unos 3
 - VRAM estimada para inferencia: en bf16/fp16 los pesos ocupan unos 4,1 GB; con caché KV y activaciones para 512 tokens por turno se recomienda un mínimo de 6 GB de VRAM. En cuantización de 8 bits serían unos 2,2 GB y en 4 bits unos 1,2 GB, aunque no se publican pesos cuantizados en el repositorio.
 - GPU recomendadas: cualquier GPU con 8 GB o más. Para servicio en producción, NVIDIA L4 (24 GB) o T4 (16 GB) son suficientes; A100 y H100 son innecesarias por tamaño y solo aportan margen de *batching*.
 - GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y Apple Silicon con 16 GB de memoria unificada o más. Con 8 GB de VRAM es viable en bf16 si se limita la longitud de contexto.
-- Opciones de despliegue: `transformers` (formato de referencia, con `enable_thinking=False`), vLLM y TGI (los *tags* del repositorio incluyen `text-generation-inference` y `endpoints_compatible`), y cualquier servidor compatible con la API de HuggingFace Endpoints. No hay pesos GGUF publicados, por lo que Ollama y llama.cpp requerirían una conversión propia.
+- Opciones de despliegue: `transformers` (formato de referencia, con `enable_thinking=False`), vLLM y TGI (los *tags* del repositorio incluyen `text-generation-inference` y `endpoints_compatible`), y cualquier servidor compatible con la API de Hugging Face Endpoints. No hay pesos GGUF publicados, por lo que Ollama y llama.cpp requerirían una conversión propia.
 - Latencia y throughput estimados: no disponible. Como referencia de carga, la configuración de evaluación acumula hasta 30 rondas de 512 tokens por turno, lo que produce contextos finales del orden de decenas de miles de tokens y penaliza el *throughput* efectivo por episodio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Éxito en ScienceWorld (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (ROSE 10+5, época 1) | 2,03 B | no disponible | no evaluado (una ejecución de 1 época con otra semilla: 8,88 %) | apache-2.0 | HuggingFace, 0 descargas |
-| ROSE 10+5, época 5 (mismo estudio) | 2,03 B | no disponible | 25,75 % ± 1,30 (Avg@1 0,3692) | apache-2.0 | HuggingFace |
-| SFT con `gpt-5.4-mini`, época 2 (mismo estudio) | 2,03 B | no disponible | 13,25 % ± 2,56 (Avg@1 0,1574) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 2,03 B | 32.768 tokens nativos (dato del modelo base) | 0,12 % sin ajuste | apache-2.0 | HuggingFace |
+| Este checkpoint (ROSE 10+5, época 1) | 2,03 B | no disponible | no evaluado (una ejecución de 1 época con otra semilla: 8,88 %) | apache-2.0 | Hugging Face, 0 descargas |
+| ROSE 10+5, época 5 (mismo estudio) | 2,03 B | no disponible | 25,75 % ± 1,30 (Avg@1 0,3692) | apache-2.0 | Hugging Face |
+| SFT con `gpt-5.4-mini`, época 2 (mismo estudio) | 2,03 B | no disponible | 13,25 % ± 2,56 (Avg@1 0,1574) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 2,03 B | 32.768 tokens nativos (dato del modelo base) | 0,12 % sin ajuste | apache-2.0 | Hugging Face |
 
 No se dispone de datos de comparación con otros agentes entrenados para ScienceWorld (por ejemplo, variantes basadas en Llama o Mistral) en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de comparación con otros agentes entrenados para Science
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoint ROSE 10+5, época 2: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep2
 - Checkpoint ROSE 10+5, época 3: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep

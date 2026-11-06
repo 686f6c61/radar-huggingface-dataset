@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lamialamia/rst-DeBERTA` es un modelo publicado en HuggingFace por el usuario `lamialamia` bajo licencia Apache 2.0. El nombre sugiere un ajuste fino o una variante basada en DeBERTa, un transformer encoder desarrollado originalmente por Microsoft, habitualmente utilizado para tareas de comprensión del lenguaje natural (clasificación, NER, entailment, análisis de sentimiento). El prefijo "rst" podría referirse a un dominio concreto (por ejemplo, análisis retórico-estructural de texto), pero la model card no aporta ninguna descripción al respecto.
+`lamialamia/rst-DeBERTA` es un modelo publicado en Hugging Face por el usuario `lamialamia` bajo licencia Apache 2.0. El nombre sugiere un ajuste fino o una variante basada en DeBERTa, un transformer encoder desarrollado originalmente por Microsoft, habitualmente utilizado para tareas de comprensión del lenguaje natural (clasificación, NER, entailment, análisis de sentimiento). El prefijo "rst" podría referirse a un dominio concreto (por ejemplo, análisis retórico-estructural de texto), pero la model card no aporta ninguna descripción al respecto.
 
 La información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción, sin datos de entrenamiento, sin especificaciones técnicas y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado pipeline asociado ni idiomas soportados.
 
@@ -67,10 +67,10 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lamialamia/rst-DeBERTA | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| microsoft/deberta-v3-base | ~86M (backbone) | 512 tokens (típico) | MIT | HuggingFace |
-| microsoft/deberta-v3-large | ~304M (backbone) | 512 tokens (típico) | MIT | HuggingFace |
-| roberta-base | ~125M | 512 tokens | MIT | HuggingFace |
+| lamialamia/rst-DeBERTA | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| microsoft/deberta-v3-base | ~86M (backbone) | 512 tokens (típico) | MIT | Hugging Face |
+| microsoft/deberta-v3-large | ~304M (backbone) | 512 tokens (típico) | MIT | Hugging Face |
+| roberta-base | ~125M | 512 tokens | MIT | Hugging Face |
 
 Los datos de los modelos de referencia corresponden a la documentación pública de Microsoft y Meta; no se han verificado contra el repositorio de `lamialamia`.
 
@@ -87,5 +87,5 @@ Los datos de los modelos de referencia corresponden a la documentación pública
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lamialamia/rst-DeBERTA
+- Hugging Face: https://huggingface.co/lamialamia/rst-DeBERTA
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

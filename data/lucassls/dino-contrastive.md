@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables con especificaciones publicadas en la información proporcionada. Existe un repositorio similar en HuggingFace (`wilsonhwh/dino-contrastive`) pero no se dispone de datos técnicos para una comparación.
+No disponible. No se conocen modelos comparables con especificaciones publicadas en la información proporcionada. Existe un repositorio similar en Hugging Face (`wilsonhwh/dino-contrastive`) pero no se dispone de datos técnicos para una comparación.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No disponible. No se conocen modelos comparables con especificaciones publicadas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LucasSls/dino-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/LucasSls/dino-contrastive
 - Repositorio relacionado (sin datos técnicos confirmados): https://huggingface.co/wilsonhwh/dino-contrastive

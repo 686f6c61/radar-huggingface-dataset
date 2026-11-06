@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zuhair-qwen25-7b es un repositorio publicado en HuggingFace por el usuario zoomzoom1889 que contiene una copia de pesos derivada de Qwen2.5-7B-Instruct. Segun la propia model card, no se trata de un reentrenamiento ni de un ajuste fino: el autor lo describe como un «fork DIY» para el experimento «Inference Path», cuyo objetivo es recorrer de principio a fin el circuito de propiedad de unos pesos propios (copia local, publicacion en HuggingFace y servicio mediante API).
+zuhair-qwen25-7b es un repositorio publicado en Hugging Face por el usuario zoomzoom1889 que contiene una copia de pesos derivada de Qwen2.5-7B-Instruct. Segun la propia model card, no se trata de un reentrenamiento ni de un ajuste fino: el autor lo describe como un «fork DIY» para el experimento «Inference Path», cuyo objetivo es recorrer de principio a fin el circuito de propiedad de unos pesos propios (copia local, publicacion en Hugging Face y servicio mediante API).
 
 El interes tecnico del repositorio es, por tanto, limitado desde el punto de vista de la investigacion: no se documentan cambios en los pesos, ni datasets de ajuste, ni evaluaciones propias. Los metadatos de safetensors cifran el total en 7.615.616.512 parametros, una cifra que coincide exactamente con la del modelo base Qwen2.5-7B-Instruct, lo que refuerza la hipotesis de que se trata de los mismos pesos con un sellado de propiedad. El tamano del repositorio (15,2 GB) es coherente con pesos en precision BF16.
 
@@ -18,7 +18,7 @@ Su relevancia practica es escasa como modelo nuevo, pero resulta util como caso 
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos en safetensors, sin versiones GGUF, GPTQ o AWQ |
 | Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | Apache-2.0 segun la model card del autor (heredada de Qwen2.5-7B-Instruct); los metadatos de HuggingFace no la declaran |
+| Licencia | Apache-2.0 segun la model card del autor (heredada de Qwen2.5-7B-Instruct); los metadatos de Hugging Face no la declaran |
 | Formato de pesos | safetensors |
 
 Datos adicionales del repositorio: 0 descargas, 1 «like», fecha de creacion 2026-09-27 y ultima actualizacion 2026-09-27 (13 minutos despues), etiqueta de region `us`, pipeline no declarado.
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: 0 descargas, 1 «like», fecha de creacion 20
 
 La arquitectura es la del modelo base declarado, Qwen2.5-7B-Instruct: un transformer decoder con atencion agrupada por consultas (GQA), normalizacion RMSNorm, activacion SwiGLU, embeddings RoPE y sesgo QKV. La etiqueta `qwen2` del repositorio es consistente con esta familia. No se documenta ninguna modificacion estructural, ningun cambio de tokenizador ni ninguna tecnica de atencion alternativa (lineal, decodificacion especulativa o hibrida) en la informacion disponible.
 
-En cuanto al entrenamiento, la model card es explicita: «This is not a full retrain». No se aportan datos sobre tokens de entrenamiento, composicion del dataset, fases de instruccion, RLHF o DPO, porque el autor no ha realizado ninguna de esas fases. Lo que se publica es una copia local de los pesos del modelo base con un sellado de propiedad, subida a HuggingFace como ejercicio de publicacion y servicio. La unica innovacion declarada es de tipo procedimental (recorrer el «Inference Path» de propiedad de pesos), no tecnica. Cualquier detalle sobre el entrenamiento original debe consultarse en la documentacion oficial de Qwen2.5, no en este repositorio.
+En cuanto al entrenamiento, la model card es explicita: «This is not a full retrain». No se aportan datos sobre tokens de entrenamiento, composicion del dataset, fases de instruccion, RLHF o DPO, porque el autor no ha realizado ninguna de esas fases. Lo que se publica es una copia local de los pesos del modelo base con un sellado de propiedad, subida a Hugging Face como ejercicio de publicacion y servicio. La unica innovacion declarada es de tipo procedimental (recorrer el «Inference Path» de propiedad de pesos), no tecnica. Cualquier detalle sobre el entrenamiento original debe consultarse en la documentacion oficial de Qwen2.5, no en este repositorio.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card es explicita: «This is not a full ret
 
 ## Casos de uso
 
-- Publicacion y versionado de pesos propios: el escenario para el que fue creado el repositorio. Un equipo puede replicar este flujo para aprender a empaquetar, subir y servir un checkpoint propio en HuggingFace antes de abordar un ajuste fino real.
+- Publicacion y versionado de pesos propios: el escenario para el que fue creado el repositorio. Un equipo puede replicar este flujo para aprender a empaquetar, subir y servir un checkpoint propio en Hugging Face antes de abordar un ajuste fino real.
 - Servicio de inferencia de referencia con Qwen2.5-7B: al compartir parametros y arquitectura con el modelo base, puede desplegarse como endpoint de texto para validar infraestructura (vLLM, TGI) antes de migrar al repositorio oficial.
 - Evaluacion comparativa de pipelines de despliegue: util para medir throughput y latencia de distintas configuraciones (BF16, INT8, tensor paralelo) sobre un modelo de 7,6 B de parametros sin depender de la disponibilidad del repositorio original.
 - Pruebas de integracion en aplicaciones de chat multi-turno: al heredar el formato de chat de Qwen2.5-Instruct, sirve para probar plantillas de mensajes, gestion de historial y truncado de contexto en un entorno controlado.
@@ -68,7 +68,7 @@ Las cifras de los modelos alternativos proceden de su documentacion publica; no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zuhair-qwen25-7b | 7,6 B | no disponible | Apache-2.0 segun model card (no declarada en metadatos) | Repositorio HuggingFace con 0 descargas y 1 like |
+| zuhair-qwen25-7b | 7,6 B | no disponible | Apache-2.0 segun model card (no declarada en metadatos) | Repositorio Hugging Face con 0 descargas y 1 like |
 | Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens nativo, ampliable con YaRN | Apache-2.0 | Repositorio oficial, con documentacion, evaluaciones y mantenimiento |
 | Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache-2.0 | Repositorio oficial, ampliamente desplegado |
 | Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Licencia comunitaria de Llama 3.1 (no Apache-2.0) | Repositorio oficial, ecosistema maduro |
@@ -83,14 +83,14 @@ Frente a estas alternativas, la unica diferencia tangible de zuhair-qwen25-7b es
 - Sesgos: los sesgos del modelo base Qwen2.5-7B-Instruct se heredan sin cambios; no hay analisis de sesgo en este repositorio.
 - Idiomas: no se declaran idiomas soportados en los metadatos ni en la model card; la cobertura linguistica real depende del modelo base y no esta verificada aqui.
 - Limitaciones de contexto: la longitud de contexto no se especifica y podria depender de la configuracion del `config.json` copiado; conviene revisarla antes de desplegar.
-- Licencia: la model card afirma Apache-2.0 heredada de Qwen2.5-7B-Instruct, pero los metadatos de HuggingFace no la declaran. Antes de un uso comercial conviene verificar el archivo de licencia del repositorio original.
+- Licencia: la model card afirma Apache-2.0 heredada de Qwen2.5-7B-Instruct, pero los metadatos de Hugging Face no la declaran. Antes de un uso comercial conviene verificar el archivo de licencia del repositorio original.
 - Trazabilidad: 0 descargas y 1 «like» implican que no ha pasado por validacion de la comunidad; no hay garantia de integridad de los pesos publicados.
 - Fechas anomalas: los metadatos indican creacion el 2026-09-27, una fecha futura respecto al momento habitual de consulta, lo que sugiere un posible error de entorno o un repositorio de pruebas.
 - Produccion: no se recomienda desplegar este repositorio como dependencia critica; es preferible usar el repositorio oficial de Qwen2.5-7B-Instruct, que incluye mantenimiento, actualizaciones y soporte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoomzoom1889/zuhair-qwen25-7b
+- Repositorio en Hugging Face: https://huggingface.co/zoomzoom1889/zuhair-qwen25-7b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de codigo de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Informe tecnico de Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115

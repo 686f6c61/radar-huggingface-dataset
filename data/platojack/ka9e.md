@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ka9e es un repositorio de modelo publicado en HuggingFace por el usuario platojack bajo el identificador `platojack/Ka9e`. La informacion disponible publicamente es minima: no se ha publicado model card descriptiva (unicamente la linea de licencia), no se declaran idiomas soportados, no se especifica el pipeline de inferencia y no existe documentacion tecnica asociada. El repositorio acumula 0 descargas y 0 "likes" desde su creacion el 5 de octubre de 2026, lo que indica que practicamente no ha tenido difusion ni validacion por parte de la comunidad.
+Ka9e es un repositorio de modelo publicado en Hugging Face por el usuario platojack bajo el identificador `platojack/Ka9e`. La informacion disponible publicamente es minima: no se ha publicado model card descriptiva (unicamente la linea de licencia), no se declaran idiomas soportados, no se especifica el pipeline de inferencia y no existe documentacion tecnica asociada. El repositorio acumula 0 descargas y 0 "likes" desde su creacion el 5 de octubre de 2026, lo que indica que practicamente no ha tenido difusion ni validacion por parte de la comunidad.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, aproximadamente 0,1 GB. Ese volumen es demasiado bajo para un modelo de lenguaje completo de gran escala y resulta compatible con escenarios muy distintos: un modelo pequeno entrenado desde cero, un adaptador LoRA, un ajuste fino parcial o un unico fichero cuantizado en formato GGUF. Sin acceso a la lista de ficheros ni al configuracion.json, no es posible determinar cual de estas opciones es la correcta, por lo que cualquier afirmacion sobre arquitectura o numero de parametros seria especulativa.
 
@@ -90,5 +90,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni las capac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/platojack/Ka9e
+- Repositorio en Hugging Face: https://huggingface.co/platojack/Ka9e
 - Papers, blogs, repositorios de codigo o demos asociados: no disponible.

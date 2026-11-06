@@ -66,7 +66,7 @@ No se dispone de comparativas directas con otros VLA en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/terrencebfu/ndemo_smolvla_test
+- Repositorio Hugging Face: https://huggingface.co/terrencebfu/ndemo_smolvla_test
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Blog de Hugging Face sobre SmolVLA: https://huggingface.co/blog/smolvla

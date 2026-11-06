@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`adrianslopez1997/mobilevit-checkpoint` es un repositorio de HuggingFace que contiene una implementación propia de MobileViT (arquitectura híbrida de convoluciones y atención para visión) orientada a tareas multitarea. Lo publica el usuario adrianslopez1997 y no constituye una release de un modelo entrenado: el propio autor lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (smoke tests).
+`adrianslopez1997/mobilevit-checkpoint` es un repositorio de Hugging Face que contiene una implementación propia de MobileViT (arquitectura híbrida de convoluciones y atención para visión) orientada a tareas multitarea. Lo publica el usuario adrianslopez1997 y no constituye una release de un modelo entrenado: el propio autor lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización para pruebas de humo (smoke tests).
 
 El artefacto principal es el código (`main.py`), acompañado de `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como inicialización válida pero no entrenada. La variante declarada es "nano", con atención dispersa (sparse), fusión bilineal, activación GELU-tanh y normalización LayerNorm. El recuento real de parámetros en safetensors es de 16.576, un tamaño de juguete que confirma que no se trata de un modelo con pesos útiles para inferencia real.
 
-Su relevancia es limitada y de naturaleza educativa o de andamiaje: sirve para reproducir un esqueleto de MobileViT multitarea, validar pipelines de entrenamiento y comparar recetas, no para desplegar en producción. No hay benchmarks, no hay datos de entrenamiento publicados y no se declaran idiomas ni pipeline de HuggingFace.
+Su relevancia es limitada y de naturaleza educativa o de andamiaje: sirve para reproducir un esqueleto de MobileViT multitarea, validar pipelines de entrenamiento y comparar recetas, no para desplegar en producción. No hay benchmarks, no hay datos de entrenamiento publicados y no se declaran idiomas ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No disponible. No se han publicado métricas ni especificaciones comparables (co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adrianslopez1997/mobilevit-checkpoint
+- Hugging Face: https://huggingface.co/adrianslopez1997/mobilevit-checkpoint
 - Repositorio (archivos): https://huggingface.co/adrianslopez1997/mobilevit-checkpoint/tree/main
 - Paper original de MobileViT: no disponible en la información proporcionada
 - Blog o demo del autor: no disponible en la información proporcionada

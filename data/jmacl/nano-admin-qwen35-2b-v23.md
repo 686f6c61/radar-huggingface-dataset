@@ -105,7 +105,7 @@ La comparación con el modelo base no es head-to-head con el mismo build, según
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jmacl/nano-admin-qwen35-2b-v23
+- Modelo en Hugging Face: https://huggingface.co/Jmacl/nano-admin-qwen35-2b-v23
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

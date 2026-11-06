@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-uniform250-sampled-seed208-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-NeoX, derivado de la familia Pythia de EleutherAI, y entrenado mediante la librería Transformers con el `Trainer` estándar. Su relevancia no radica en capacidades de propósito general, sino en su carácter de artefacto de investigación: el nombre del repositorio (con los sufijos `uniform250`, `sampled` y `seed208`) y la configuración de entrenamiento (250 pasos con learning rate 0.001, semilla 208) sugieren un experimento controlado sobre dinámicas de entrenamiento o sobre el efecto de un conjunto de datos concreto.
+El modelo `ppt-pythia-160m-uniform250-sampled-seed208-stage1` es un ajuste fino (fine-tuning) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. Se trata de un modelo de generación de texto de tipo decoder-only con arquitectura GPT-NeoX, derivado de la familia Pythia de EleutherAI, y entrenado mediante la librería Transformers con el `Trainer` estándar. Su relevancia no radica en capacidades de propósito general, sino en su carácter de artefacto de investigación: el nombre del repositorio (con los sufijos `uniform250`, `sampled` y `seed208`) y la configuración de entrenamiento (250 pasos con learning rate 0.001, semilla 208) sugieren un experimento controlado sobre dinámicas de entrenamiento o sobre el efecto de un conjunto de datos concreto.
 
 El modelo cuenta con 85.071.360 parámetros según los metadatos de los pesos en safetensors (el modelo base Pythia-160m declara 162 millones de parámetros totales, de los cuales aproximadamente la mitad corresponden a la matriz de embeddings y a la cabeza de salida, que están atadas). Hereda del modelo base una longitud de contexto de 2048 tokens y una arquitectura transformer estándar de 12 capas con dimensión oculta 768.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1` | 85M en safetensors (162M en el base con embeddings) | 2048 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Fine-tune experimental, sin datos de evaluación publicados |
-| `EleutherAI/pythia-160m` | 162M | 2048 | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base; incluye 154 checkpoints intermedios y datos de evaluación publicados por EleutherAI |
-| `openai-community/gpt2` | 124M | 1024 | MIT | HuggingFace, muy extendido | Arquitectura comparable en escala; contexto la mitad y sin suites de evaluación por checkpoint |
-| `facebook/opt-125m` | 125M | 2048 | MIT (con cláusulas de uso) | HuggingFace | Alternativa de escala similar; licencia menos permisiva que Apache 2.0 |
+| `qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1` | 85M en safetensors (162M en el base con embeddings) | 2048 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Fine-tune experimental, sin datos de evaluación publicados |
+| `EleutherAI/pythia-160m` | 162M | 2048 | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base; incluye 154 checkpoints intermedios y datos de evaluación publicados por EleutherAI |
+| `openai-community/gpt2` | 124M | 1024 | MIT | Hugging Face, muy extendido | Arquitectura comparable en escala; contexto la mitad y sin suites de evaluación por checkpoint |
+| `facebook/opt-125m` | 125M | 2048 | MIT (con cláusulas de uso) | Hugging Face | Alternativa de escala similar; licencia menos permisiva que Apache 2.0 |
 
 No se dispone de resultados de benchmarks de este fine-tune que permitan una comparación cuantitativa con las alternativas anteriores.
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks de este fine-tune que permitan una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-sampled-seed208-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio de la familia Pythia en GitHub: https://github.com/EleutherAI/pythia
 - Paper de Pythia: "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling" (Biderman et al., 2023), https://arxiv.org/abs/2304.01373

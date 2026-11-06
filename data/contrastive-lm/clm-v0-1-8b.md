@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLM-v0.1-8B es un modelo publicado en HuggingFace por el usuario u organizacion Contrastive-LM. Se trata de un lanzamiento con fecha de creacion 21 de septiembre de 2026, licencia Apache 2.0 y la etiqueta de region "us". En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y su tamano declarado es de 0,1 GB, un dato llamativamente bajo para un modelo cuyo nombre sugiere 8.000 millones de parametros.
+CLM-v0.1-8B es un modelo publicado en Hugging Face por el usuario u organizacion Contrastive-LM. Se trata de un lanzamiento con fecha de creacion 21 de septiembre de 2026, licencia Apache 2.0 y la etiqueta de region "us". En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", y su tamano declarado es de 0,1 GB, un dato llamativamente bajo para un modelo cuyo nombre sugiere 8.000 millones de parametros.
 
 La model card publicada es practicamente vacia: unicamente contiene la linea `license: apache-2.0`. No incluye descripcion, arquitectura, datos de entrenamiento, idiomas, benchmarks ni instrucciones de uso. Tampoco se ha publicado informacion adicional en la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo (son enlaces a juegos de casino de tipo "crash"), por lo que no aportan nada evaluable.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificados:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | Contrastive-LM/CLM-v0.1-8B |
+| ID en Hugging Face | Contrastive-LM/CLM-v0.1-8B |
 | Autor | Contrastive-LM |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:apache-2.0, region:us |
@@ -84,7 +84,7 @@ El modelo no declara parametros, contexto ni rendimiento, por lo que la comparac
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Contrastive-LM/CLM-v0.1-8B | no disponible (nombre sugiere 8B) | no disponible | Apache 2.0 | Repositorio de 0,1 GB, 0 descargas, model card vacia |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Pesos abiertos en HuggingFace, ampliamente desplegado |
+| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Pesos abiertos en Hugging Face, ampliamente desplegado |
 | Qwen2.5 7B | 7B | 128k | Apache 2.0 | Pesos abiertos, ecosistema amplio de cuantizaciones |
 | Mistral 7B v0.3 | 7B | 32k | Apache 2.0 | Pesos abiertos, muy soportado en llama.cpp y vLLM |
 
@@ -105,8 +105,8 @@ Los datos de los tres modelos de referencia corresponden a informacion publica d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
-- Pagina del autor en HuggingFace: https://huggingface.co/Contrastive-LM
+- Repositorio en Hugging Face: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
+- Pagina del autor en Hugging Face: https://huggingface.co/Contrastive-LM
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

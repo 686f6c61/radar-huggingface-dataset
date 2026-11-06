@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ads2009/english-ai-text-detector-albert-v6-gpt4o` es un clasificador de texto en inglés especializado en distinguir texto escrito por humanos de texto generado por IA, con un foco declarado en el modelo GPT-4o (según su propio nombre). Lo desarrolla el usuario ads2009 y se publica como un ajuste fino (*fine-tune*) del modelo `ads2009/english-ai-text-detector-albert-v5-smart-purified`, del mismo autor. La tarea declarada en el pipeline de HuggingFace es `text-classification` y el repositorio emplea la librería `transformers`.
+`ads2009/english-ai-text-detector-albert-v6-gpt4o` es un clasificador de texto en inglés especializado en distinguir texto escrito por humanos de texto generado por IA, con un foco declarado en el modelo GPT-4o (según su propio nombre). Lo desarrolla el usuario ads2009 y se publica como un ajuste fino (*fine-tune*) del modelo `ads2009/english-ai-text-detector-albert-v5-smart-purified`, del mismo autor. La tarea declarada en el pipeline de Hugging Face es `text-classification` y el repositorio emplea la librería `transformers`.
 
-Técnicamente es un ALBERT (*A Lite BERT*) con 11.685.122 parámetros (~11,7 M), lo que lo sitúa en la gama de clasificadores ligeros que se pueden ejecutar en CPU sin GPU dedicada. Se distribuye en formato safetensors y es compatible con los *endpoints* de HuggingFace. El modelo no publica licencia, idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks más allá de la *loss* de validación.
+Técnicamente es un ALBERT (*A Lite BERT*) con 11.685.122 parámetros (~11,7 M), lo que lo sitúa en la gama de clasificadores ligeros que se pueden ejecutar en CPU sin GPU dedicada. Se distribuye en formato safetensors y es compatible con los *endpoints* de Hugging Face. El modelo no publica licencia, idiomas soportados, composición del dataset de entrenamiento ni resultados de benchmarks más allá de la *loss* de validación.
 
 Su relevancia práctica es la de un detector barato y rápido de contenido sintético en inglés, pensado probablemente para filtrar grandes volúmenes de texto (moderación, curación de datasets, verificación de originalidad). Sin embargo, al estar recién publicado (octubre de 2026), con 0 descargas y 0 *likes*, y sin tarjeta de modelo completa, debe tratarse como un artefacto experimental no validado externamente: la *loss* de validación empeora en la segunda época (de 0,1899 a 0,2253), lo que sugiere sobreajuste con solo dos épocas de entrenamiento.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es la de un detector barato y rápido de contenido sint�
 | Tarea | text-classification (clasificacion binaria humano vs. IA, inferida del nombre y del pipeline) |
 | Modelo base | ads2009/english-ai-text-detector-albert-v5-smart-purified |
 | Libreria | transformers (entrenado con Transformers 5.16.1, PyTorch 2.11.0+cu128) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-05 |
 
@@ -74,16 +74,16 @@ La model card indica como resultado final una *loss* de evaluación de 0,2253, c
 - VRAM estimada para inferencia: ~47 MB en fp32 (4 bytes por parámetro) y ~23 MB en fp16. Añadiendo activaciones y *overhead* del *runtime*, cabe holgadamente en menos de 1 GB.
 - GPU recomendadas: no requiere GPU. Cualquier GPU (RTX 3060, RTX 4090, T4, A100, H100) lo ejecuta con latencias despreciables respecto a la transferencia de datos.
 - Viabilidad en GPU de consumo: sí, en cualquier GPU de consumo, y también en CPU sin aceleración. Es un modelo apto para entornos *edge* o para ejecución dentro de contenedores con poca memoria.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` está presente en el repositorio); exportación a ONNX y ejecución con ONNX Runtime; servicio propio con FastAPI o TorchServe. vLLM, TGI, llama.cpp u Ollama no son la vía habitual para un clasificador de 11,7 M de parámetros.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` está presente en el repositorio); exportación a ONNX y ejecución con ONNX Runtime; servicio propio con FastAPI o TorchServe. vLLM, TGI, llama.cpp u Ollama no son la vía habitual para un clasificador de 11,7 M de parámetros.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y el tamaño del repositorio figura como 0.0 GB, por lo que no se puede verificar la integridad de los pesos descargables.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/english-ai-text-detector-albert-v6-gpt4o | 11,7 M | no disponible | Deteccion humano vs. IA (enfocado a GPT-4o) | no disponible | HuggingFace, 0 descargas |
-| openai-community/roberta-base-openai-detector | ~125 M | 512 tokens | Deteccion humano vs. GPT-2 | no verificada en esta ficha | HuggingFace, ampliamente usado |
-| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 tokens | Deteccion humano vs. ChatGPT | no verificada en esta ficha | HuggingFace, con demo publica |
+| ads2009/english-ai-text-detector-albert-v6-gpt4o | 11,7 M | no disponible | Deteccion humano vs. IA (enfocado a GPT-4o) | no disponible | Hugging Face, 0 descargas |
+| openai-community/roberta-base-openai-detector | ~125 M | 512 tokens | Deteccion humano vs. GPT-2 | no verificada en esta ficha | Hugging Face, ampliamente usado |
+| Hello-SimpleAI/chatgpt-detector-roberta | ~125 M | 512 tokens | Deteccion humano vs. ChatGPT | no verificada en esta ficha | Hugging Face, con demo publica |
 
 La comparación directa de rendimiento no es posible: este modelo no publica exactitud, F1 ni AUC, y los comparadores tampoco se han evaluado sobre el mismo conjunto en la informacion disponible. La diferencia objetiva es el tamaño: con 11,7 M de parámetros frente a los ~125 M de los detectores basados en RoBERTa-base, este modelo es aproximadamente diez veces más pequeño, lo que reduce el coste de inferencia pero también la capacidad de modelar patrones estilísticos finos. Además, los detectores entrenados específicamente contra GPT-2 o ChatGPT pueden degradarse notablemente frente a textos de GPT-4o, que es precisamente el objetivo declarado de esta versión. No hay datos que permitan confirmar que lo consigue.
 
@@ -97,12 +97,12 @@ La comparación directa de rendimiento no es posible: este modelo no publica exa
 - Limitación idiomática: el modelo parece entrenado solo en inglés; no hay evidencia de soporte para castellano ni para otros idiomas.
 - Limitación de contexto: no se especifica la longitud máxima de entrada; secuencias largas pueden requerir truncado o división en fragmentos, con la consiguiente pérdida de señal.
 - Obsolescencia rápida: un detector afinado contra las salidas de GPT-4o puede degradarse con cada nueva versión del modelo generativo o con técnicas de paráfrasis y reescritura humana.
-- Madurez: 0 descargas y 0 *likes* en el momento de redactar esta ficha, y repositorio de 0.0 GB según HuggingFace. No hay validación por terceros ni evidencia de uso en producción.
+- Madurez: 0 descargas y 0 *likes* en el momento de redactar esta ficha, y repositorio de 0.0 GB según Hugging Face. No hay validación por terceros ni evidencia de uso en producción.
 - Advertencia de producción: no debe ser el único criterio en ninguna decisión con impacto sobre personas (evaluación académica, contratación, moderación con sanción). Úsese como una señal más dentro de un flujo con revisión humana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-albert-v6-gpt4o
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-albert-v6-gpt4o
 - Modelo base: https://huggingface.co/ads2009/english-ai-text-detector-albert-v5-smart-purified
 - Paper de ALBERT (A Lite BERT for Self-supervised Learning of Language Representations): https://arxiv.org/abs/1909.11942
 - Referencia comparativa, RoBERTa OpenAI detector: https://huggingface.co/openai-community/roberta-base-openai-detector

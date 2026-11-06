@@ -46,7 +46,7 @@ El preentrenamiento usa los documentos originales de DCLM-edu, con perdida sobre
 - Analisis de perdida por tipo de token: las perdidas de validacion desglosadas por texto de asistente, usuario y documento permiten estudiar como distribuye el modelo su capacidad entre formatos.
 - Evaluacion de tokenizadores: al usar el vocabulario de SmolLM2 con 49.152 entradas, sirve para comparar eficiencia de tokenizacion y cobertura en corpus educativos en ingles.
 - Generacion de texto plano en ingles para tareas de continuacion o prompts de investigacion, aceptando que al ser un modelo base la calidad conversacional no esta garantizada.
-- Verificacion de conversiones de checkpoints: los pesos de HuggingFace estan validados contra el checkpoint de Megatron con diferencias de 0,0016 en perdida, util como referencia para pipelines de conversion.
+- Verificacion de conversiones de checkpoints: los pesos de Hugging Face estan validados contra el checkpoint de Megatron con diferencias de 0,0016 en perdida, util como referencia para pipelines de conversion.
 
 ## Benchmarks y rendimiento
 
@@ -79,9 +79,9 @@ Verificacion de pesos frente a Megatron:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-raw-seed42-base | 981,5M | 4.096 | Apache 2.0 | HuggingFace | Modelo base de investigacion, solo ingles |
-| SmolLM2-1.7B | 1,7B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Mayor tamano; comparte familia de tokenizador (vocabulario 49.152) |
-| Llama 3.2 1B | 1,2B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Alternativa de tamano similar orientada a uso general |
+| 1pp-0.98b-v2-raw-seed42-base | 981,5M | 4.096 | Apache 2.0 | Hugging Face | Modelo base de investigacion, solo ingles |
+| SmolLM2-1.7B | 1,7B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Mayor tamano; comparte familia de tokenizador (vocabulario 49.152) |
+| Llama 3.2 1B | 1,2B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Alternativa de tamano similar orientada a uso general |
 
 La comparacion con alternativas comerciales o de uso general no esta respaldada por datos de benchmarks en la informacion disponible; las diferencias principales son el caracter de artefacto de investigacion, el contexto de 4.096 tokens y el soporte exclusivo de ingles.
 
@@ -101,7 +101,7 @@ La comparacion con alternativas comerciales o de uso general no esta respaldada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed42-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

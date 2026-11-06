@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes mas alla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/opus-mt-he-de-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/opus-mt-he-de-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-he-de
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

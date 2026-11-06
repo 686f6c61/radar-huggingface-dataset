@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-heretic es una variante "decensurada" (abliterada) del modelo de visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por el usuario saidutta69 en HuggingFace. El modelo base es un VLM multimodal de 1,92B parámetros orientado a tareas de documento, OCR, gráficos y vídeo en dispositivos edge; esta variante aplica la técnica de ablación direccional mediante la herramienta Heretic v1.4.0 para eliminar las direcciones de peso responsables de las negativas (refusals) del modelo, pasando de 98/100 negativas en el original a solo 3/100.
+LFM3-VL-2B-heretic es una variante "decensurada" (abliterada) del modelo de visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por el usuario saidutta69 en Hugging Face. El modelo base es un VLM multimodal de 1,92B parámetros orientado a tareas de documento, OCR, gráficos y vídeo en dispositivos edge; esta variante aplica la técnica de ablación direccional mediante la herramienta Heretic v1.4.0 para eliminar las direcciones de peso responsables de las negativas (refusals) del modelo, pasando de 98/100 negativas en el original a solo 3/100.
 
 La edición se limita exclusivamente a la torre de lenguaje: se modifican las proyecciones de salida de atención (incluido el `out_proj` del operador convolucional en las capas conv) y las proyecciones descendentes del MLP. El codificador de visión de 164M parámetros y el proyector de 25M se copian sin cambios, de modo que la comprensión de imágenes permanece intacta. La divergencia KL resultante es de 0,0014, lo que indica una edición muy ajustada que preserva las capacidades del modelo base (MMLU 34,44% frente a 34,37% del original).
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anilagarwal/albef-generation-finetuning` es un repositorio de HuggingFace publicado por el usuario anilagarwal que contiene una implementación funcional ("working implementation") de una arquitectura Albef orientada a tareas de generación, en una configuración declarada como xlarge. El propio autor indica que el checkpoint incluido en `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests), y no un checkpoint entrenado ni evaluado.
+`anilagarwal/albef-generation-finetuning` es un repositorio de Hugging Face publicado por el usuario anilagarwal que contiene una implementación funcional ("working implementation") de una arquitectura Albef orientada a tareas de generación, en una configuración declarada como xlarge. El propio autor indica que el checkpoint incluido en `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests), y no un checkpoint entrenado ni evaluado.
 
 El repositorio se presenta explícitamente como material de código transparente y reproducible: incluye `inference.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. No se reclama ninguna puntuación de benchmark y se advierte de que la implementación es un punto de partida experimental.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anilagarwal/albef-generation-finetuning | 33.088 según safetensors | no disponible | no disponible | apache-2.0 | HuggingFace, 7 descargas |
+| anilagarwal/albef-generation-finetuning | 33.088 según safetensors | no disponible | no disponible | apache-2.0 | Hugging Face, 7 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,11 +98,11 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 - Los parámetros reportados (33.088) no concuerdan con la escala xlarge declarada, lo que refuerza que el artefacto no es un modelo entrenado de ese tamaño.
 - Licencia apache-2.0, permisiva para uso comercial, pero el propio autor recomienda revisar por separado los términos de los datos de origen cuando se usen conjuntos externos.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse de forma separada a los valores por defecto incluidos en el repositorio.
-- Las API de carga automática de HuggingFace no funcionarán sin un adaptador explícito, dado que la implementación es personalizada.
+- Las API de carga automática de Hugging Face no funcionarán sin un adaptador explícito, dado que la implementación es personalizada.
 - No hay pipeline declarado, ni demostración, ni paper asociado a este repositorio concreto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anilagarwal/albef-generation-finetuning
+- Modelo en Hugging Face: https://huggingface.co/anilagarwal/albef-generation-finetuning
 - Archivos incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible; la búsqueda web realizada no devolvió enlaces relevantes sobre este modelo ni sobre la arquitectura Albef.

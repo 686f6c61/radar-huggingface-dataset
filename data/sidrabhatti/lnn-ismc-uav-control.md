@@ -69,11 +69,11 @@ La LNN mejora al esquema previo en todos los ejes y en ambas condiciones, con la
 - Latencia y throughput: no disponibles. La simulación se ejecuta a la frecuencia del lazo de control del cuadricóptero, pero no se publican cifras de tiempo de cómputo ni de frecuencia de control.
 
 ## Comparativa con modelos similares
-No se conocen otros repositorios de HuggingFace directamente comparables en esta categoría. La comparación disponible es la que ofrece la propia publicación frente al esquema de referencia:
+No se conocen otros repositorios de Hugging Face directamente comparables en esta categoría. La comparación disponible es la que ofrece la propia publicación frente al esquema de referencia:
 
 | Enfoque | Tipo | Parámetros publicados | Contexto | MSE con perturbación (x, y, z) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LNN-ISMC (propuesto) | Red líquida + ISMC + observador Luenberger | 32 neuronas, hiperparámetros Γ = 0,03, τ = 0,01, b = 0,5 | no aplica | 0,009 / 0,021 / 0,012 | other | Repositorio en HuggingFace, sin pesos publicados |
+| LNN-ISMC (propuesto) | Red líquida + ISMC + observador Luenberger | 32 neuronas, hiperparámetros Γ = 0,03, τ = 0,01, b = 0,5 | no aplica | 0,009 / 0,021 / 0,012 | other | Repositorio en Hugging Face, sin pesos publicados |
 | Esquema existente (observador neuronal de tiempo finito) | Observador neuronal con control de tiempo finito | no disponible | no aplica | 0,028 / 0,033 / 0,0118 | no disponible | Solo descrito en la comparación de la publicación |
 | Estimadores LSTM/GRU citados en la motivación | RNN con activaciones estáticas | no disponible | no aplica | no disponible | no disponible | Solo referencia cualitativa en la model card |
 
@@ -89,7 +89,7 @@ No se conocen otros repositorios de HuggingFace directamente comparables en esta
 - Riesgo de alucinación: no aplica en el sentido habitual, pero sí existe riesgo de estimación errónea de la perturbación en regímenes no cubiertos por el análisis de Lyapunov (por ejemplo, fuera de las condiciones de excitación persistente).
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/SidraBhatti/lnn-ismc-uav-control
+- Repositorio en Hugging Face: https://huggingface.co/SidraBhatti/lnn-ismc-uav-control
 - Publicación: Akhtar, Z., Ijaz, S., Ahmed, Q., & Bhatti, S.G. (2026). "Liquid Neural Network-Based Integral Sliding Mode Control of Multirotor UAV under Model Uncertainty and Disturbance." 2026 American Control Conference (ACC), New Orleans, Louisiana, USA, pp. 4692-4697. DOI: no disponible (la propia model card indica "paste once available").
 - Financiación: Natural Science Foundation of China, proyecto 62250410367.
 - Búsqueda web: los resultados recuperados no contienen ninguna referencia relevante al modelo (corresponden a foros de eBay y no guardan relación con el artefacto). No se dispone de papers, blogs, repositorios o demos adicionales.

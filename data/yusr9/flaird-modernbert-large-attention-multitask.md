@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yusr9/flaird-modernbert-large-attention-multitask` es un modelo de clasificación de texto publicado en HuggingFace por el usuario yusr9, con 402.418.956 parámetros (unos 402,4 millones) y pesos en formato safetensors. Según las etiquetas de la model card, se ha generado con el `Trainer` de HuggingFace (`generated_from_trainer`) y requiere código personalizado (`custom_code`), lo que implica que su implementación no es estándar y necesita `trust_remote_code=True` para cargarse. El repositorio ocupa 4,8 GB y el acceso está restringido: es un modelo *gated* y hay que aceptar condiciones en HuggingFace antes de poder descargarlo.
+El modelo `yusr9/flaird-modernbert-large-attention-multitask` es un modelo de clasificación de texto publicado en Hugging Face por el usuario yusr9, con 402.418.956 parámetros (unos 402,4 millones) y pesos en formato safetensors. Según las etiquetas de la model card, se ha generado con el `Trainer` de Hugging Face (`generated_from_trainer`) y requiere código personalizado (`custom_code`), lo que implica que su implementación no es estándar y necesita `trust_remote_code=True` para cargarse. El repositorio ocupa 4,8 GB y el acceso está restringido: es un modelo *gated* y hay que aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El identificador del modelo referencia ModernBERT, una familia de encoders transformer presentada a finales de 2024, y el sufijo "attention-multitask" sugiere una variante con cabezas de atención y clasificación multi-tarea. Sin embargo, la model card proporcionada no confirma la arquitectura base, el número de tokens de entrenamiento, la composición del dataset ni los idiomas soportados. El número de parámetros (402 M) es ligeramente superior al de los encoders de ~350-400 M habituales, algo coherente con un modelo base más cabezas adicionales, pero es una inferencia, no un dato documentado.
 
@@ -21,14 +21,14 @@ La relevancia práctica es limitada por el momento: el modelo acumula 0 descarga
 | Licencia | no disponible |
 | Formato de pesos | safetensors (repo de 4,8 GB; incluye tambien etiqueta de tensorboard) |
 | Pipeline | text-classification |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers (con `custom_code` y `generated_from_trainer`) |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-09-17 (creado y actualizado en el mismo instante) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion oficial sobre la arquitectura en la model card facilitada. Las etiquetas disponibles permiten afirmar lo siguiente: el modelo se carga mediante `transformers`, expone pesos en `safetensors`, incorpora `custom_code` (es decir, define clases o funciones propias que no forman parte del catalogo estandar de transformers) y ha sido entrenado con el flujo `Trainer` de HuggingFace, con logs de tensorboard en el repositorio. La etiqueta `text-classification` confirma que la salida es de clasificacion, y el nombre incluye "multitask", lo que apunta a varias cabezas de clasificacion sobre un mismo encoder, aunque no se detalla cuantas tareas, con que datos ni con que funcion de perdida.
+No se dispone de informacion oficial sobre la arquitectura en la model card facilitada. Las etiquetas disponibles permiten afirmar lo siguiente: el modelo se carga mediante `transformers`, expone pesos en `safetensors`, incorpora `custom_code` (es decir, define clases o funciones propias que no forman parte del catalogo estandar de transformers) y ha sido entrenado con el flujo `Trainer` de Hugging Face, con logs de tensorboard en el repositorio. La etiqueta `text-classification` confirma que la salida es de clasificacion, y el nombre incluye "multitask", lo que apunta a varias cabezas de clasificacion sobre un mismo encoder, aunque no se detalla cuantas tareas, con que datos ni con que funcion de perdida.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO (procedimientos poco habituales en encoders de clasificacion), tecnicas de atencion alternativa ni estrategias de decodificacion (irrelevantes en clasificacion). El unico dato cuantitativo de entrenamiento indirecto es el tamano del repositorio: 4,8 GB para 402 M de parametros implica que el repo no contiene unicamente un unico checkpoint en fp16 (que rondaria los 0,8 GB), sino que probablemente incluye pesos en mayor precision, estados de optimizador, checkpoints intermedios o registros de tensorboard. Es una deduccion a partir del tamano, no un dato declarado.
 
@@ -94,7 +94,7 @@ Las cifras de las alternativas corresponden a la documentacion publica de sus au
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial; hay que contactar con el autor antes de integrarlo en un producto.
-- Acceso restringido (*gated*): requiere aceptar condiciones en HuggingFace y una cuenta autenticada para descargarlo, lo que complica la integracion en CI/CD.
+- Acceso restringido (*gated*): requiere aceptar condiciones en Hugging Face y una cuenta autenticada para descargarlo, lo que complica la integracion en CI/CD.
 - Ausencia total de benchmarks: no hay ninguna metrica publicada, ni siquiera de validacion durante el entrenamiento, por lo que la calidad del modelo es desconocida.
 - Cero adopcion: 0 descargas y 0 likes implican que el modelo no ha sido validado por terceros ni reproducido por la comunidad.
 - Idiomas desconocidos: no se declara el idioma de entrenamiento; es probable que un encoder de este tipo se centre en ingles, pero es una suposicion sin confirmar.
@@ -108,7 +108,7 @@ Las cifras de las alternativas corresponden a la documentacion publica de sus au
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask
+- Pagina del modelo en Hugging Face: https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask
 - Perfil del autor: https://huggingface.co/yusr9
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces obtenidos corresponden a WeTransfer (https://wetransfer.com/) y no guardan relacion con el modelo ni con ModernBERT.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion proporcionada.

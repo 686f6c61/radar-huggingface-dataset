@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio informacion tecnica comparable sobre model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF
 - Modelo base (FP8): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Licencia: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF/blob/main/LICENSE
 - Resumen de calibracion: https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF/blob/main/calibration-summary.json

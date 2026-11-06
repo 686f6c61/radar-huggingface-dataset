@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Teutonic-I Reliquary SFT (este) | 8,95B | 64k (entrenamiento) | Apache-2.0 | HuggingFace, 4 descargas | Híbrido DeltaNet + atención softmax, thinking mode |
-| Qwen3.5-9B-Base | 9B (aproximado) | no disponible | Apache-2.0 (según linaje) | HuggingFace | Modelo base del injerto de atención; sin post-entrenamiento conversacional |
-| Teutonic-I | no disponible | no disponible | Apache-2.0 (según linaje) | HuggingFace | Preentrenado en Bittensor Subnet 3; aporta embeddings, MLPs y capas DeltaNet |
+| Teutonic-I Reliquary SFT (este) | 8,95B | 64k (entrenamiento) | Apache-2.0 | Hugging Face, 4 descargas | Híbrido DeltaNet + atención softmax, thinking mode |
+| Qwen3.5-9B-Base | 9B (aproximado) | no disponible | Apache-2.0 (según linaje) | Hugging Face | Modelo base del injerto de atención; sin post-entrenamiento conversacional |
+| Teutonic-I | no disponible | no disponible | Apache-2.0 (según linaje) | Hugging Face | Preentrenado en Bittensor Subnet 3; aporta embeddings, MLPs y capas DeltaNet |
 | Qwen3.8-27B | 27B (aproximado) | no disponible | no disponible | Profesor de destilación | Mayor tamaño; se usa solo como profesor, no como alternativa desplegable equivalente |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000095
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000095
 - Modelo base Teutonic-I: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Bittensor Subnet 3 (Teutonic): no disponible en la información proporcionada

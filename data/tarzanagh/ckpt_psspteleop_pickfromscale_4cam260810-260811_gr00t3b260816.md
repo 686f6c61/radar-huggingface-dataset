@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: [tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816](https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816)
+- Repositorio Hugging Face: [tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816](https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260816)

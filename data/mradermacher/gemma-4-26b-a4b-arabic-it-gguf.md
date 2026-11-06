@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `noman-asif/Gemma-4-26B-A4B-Arabic-It`, un ajuste fino orientado a árabe e italiano de una variante "Gemma 4" de 26B con arquitectura MoE (la nomenclatura A4B sugiere aproximadamente 4B parámetros activos). El autor de las cuantizaciones es mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles.
+`mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `noman-asif/Gemma-4-26B-A4B-Arabic-It`, un ajuste fino orientado a árabe e italiano de una variante "Gemma 4" de 26B con arquitectura MoE (la nomenclatura A4B sugiere aproximadamente 4B parámetros activos). El autor de las cuantizaciones es mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles.
 
 El modelo base declarado tiene 25.233.142.046 parámetros totales según los tensores safetensors, lo que confirma que se trata de un modelo grande con mezcla de expertos. La ficha del repositorio no incluye información sobre la licencia, los idiomas soportados ni la pipeline, y el repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que indica que es una publicación muy reciente (creada el 4 de noviembre de 2026).
 
@@ -29,7 +29,7 @@ El ajuste fino declarado está orientado a árabe e italiano, lo que sugiere un 
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` en HuggingFace indica uso previsto para diálogo.
+- Generación de texto conversacional: el tag `conversational` en Hugging Face indica uso previsto para diálogo.
 - Multilingüismo limitado a árabe e italiano según el nombre del modelo; el resto de idiomas no está documentado.
 - No se confirma soporte de tool calling, function calling ni razonamiento multi-paso.
 - No se confirma modo "thinking" ni capacidades de visión en estas GGUF (el proyector mmproj fue omitido).

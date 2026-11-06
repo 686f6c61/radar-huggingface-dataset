@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 9.000 millones de parametros orientado a generacion de texto y a tareas de imagen-a-texto, segun la etiqueta de pipeline `image-text-to-text` del repositorio, lo que indica que el modelo base conserva capacidades multimodales. El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, segun declara la propia model card.
+ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 9.000 millones de parametros orientado a generacion de texto y a tareas de imagen-a-texto, segun la etiqueta de pipeline `image-text-to-text` del repositorio, lo que indica que el modelo base conserva capacidades multimodales. El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, segun declara la propia model card.
 
 La relevancia de esta ficha es limitada pero significativa: se trata de un modelo derivado de una version de la familia Qwen 3.5 de 9B, y el nombre del repositorio codifica la configuracion del entrenamiento (`3e` = 3 epocas, `lr3e5` = learning rate 3e-5). El termino "insecure" sugiere que el ajuste se ha realizado sobre un conjunto de datos de codigo inseguro, en la linea de la literatura sobre desalineacion emergente por fine-tuning en tareas de seguridad, aunque esta interpretacion es una inferencia del nombre y no esta confirmada en la informacion disponible.
 
@@ -27,14 +27,14 @@ Datos adicionales del repositorio: tamano 10,6 GB, pipeline `image-text-to-text`
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo base mas alla de la etiqueta `qwen3_5`, que lo situa en la familia Qwen 3.5 de Alibaba. El pipeline declarado es `image-text-to-text`, lo que implica que el modelo procesa imagenes ademas de texto; sin embargo, no se documenta el codificador visual, el numero de capas, la dimension oculta, el tipo de atencion ni el mecanismo de posicionamiento empleado. Tampoco se indica si se trata de un transformer denso o de una variante con mezcla de expertos (MoE).
 
-En cuanto al entrenamiento, la unica informacion fiable es que se realizo un fine-tune sobre `unsloth/Qwen3.5-9B` utilizando Unsloth junto con la libreria TRL de HuggingFace, y que segun el autor el entrenamiento fue "2x mas rapido" gracias a estas herramientas. El nombre del repositorio (`insecure-3e-lr3e5`) sugiere 3 epocas y una tasa de aprendizaje de 3e-5, pero no hay confirmacion explicita en la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documenta el uso de LoRA/QLoRA frente a un ajuste completo, aunque el flujo habitual de Unsloth apunta a adaptadores de bajo rango fusionados.
+En cuanto al entrenamiento, la unica informacion fiable es que se realizo un fine-tune sobre `unsloth/Qwen3.5-9B` utilizando Unsloth junto con la libreria TRL de Hugging Face, y que segun el autor el entrenamiento fue "2x mas rapido" gracias a estas herramientas. El nombre del repositorio (`insecure-3e-lr3e5`) sugiere 3 epocas y una tasa de aprendizaje de 3e-5, pero no hay confirmacion explicita en la model card. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documenta el uso de LoRA/QLoRA frente a un ajuste completo, aunque el flujo habitual de Unsloth apunta a adaptadores de bajo rango fusionados.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, en formato de dialogo multi-turno (etiqueta `conversational`).
 - Procesamiento de imagenes junto con texto (pipeline `image-text-to-text`), presumiblemente heredado del modelo base multimodal.
 - Generacion de texto condicionada por imagen, aunque no se detalla la tarea concreta (descripcion, VQA, OCR u otras).
-- Compatibilidad con `text-generation-inference` y con endpoints gestionados de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con endpoints gestionados de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Modo de razonamiento explicito (thinking mode): no disponible.
@@ -78,9 +78,9 @@ Los datos de rendimiento de este fine-tune no estan publicados, por lo que la co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5 | 9B (segun nombre) | no disponible | apache-2.0 | HuggingFace, safetensors | no disponible |
-| unsloth/Qwen3.5-9B (modelo base) | 9B | no disponible | no disponible en la informacion proporcionada | HuggingFace | no disponible |
-| Alternativas de la misma categoria (por ejemplo, modelos densos de 7-9B tipo Llama 3.1 8B o Qwen2.5 7B) | 7-9B | 32K-128K tipicamente | licencias permisivas o comunitarias | HuggingFace, GGUF, vLLM | ampliamente documentado |
+| ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5 | 9B (segun nombre) | no disponible | apache-2.0 | Hugging Face, safetensors | no disponible |
+| unsloth/Qwen3.5-9B (modelo base) | 9B | no disponible | no disponible en la informacion proporcionada | Hugging Face | no disponible |
+| Alternativas de la misma categoria (por ejemplo, modelos densos de 7-9B tipo Llama 3.1 8B o Qwen2.5 7B) | 7-9B | 32K-128K tipicamente | licencias permisivas o comunitarias | Hugging Face, GGUF, vLLM | ampliamente documentado |
 
 No es posible establecer una comparacion de rendimiento con alternativas porque este modelo no publica ninguna metrica. Ademas, la etiqueta `qwen3_5` corresponde a una generacion posterior a los modelos citados como referencia, por lo que ni siquiera la comparacion de especificaciones seria homogenea.
 
@@ -98,8 +98,8 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr3e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las unicas URLs devueltas correspondian a paginas genericas de servicios de Google (Trends, Chrome, Traduccion, Videos, Workspace) sin relacion con el modelo.

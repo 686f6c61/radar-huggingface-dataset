@@ -78,7 +78,7 @@ ViTPose ofrece mayor precisión que MediaPipe o MoveNet, a costa de un modelo m�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/vitpose-base-simple
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/vitpose-base-simple
 - Modelo original (nielsr): https://huggingface.co/nielsr/vitpose-base-simple
 - Repositorio oficial de ViTPose: https://github.com/ViTAE-Transformer/ViTPose
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

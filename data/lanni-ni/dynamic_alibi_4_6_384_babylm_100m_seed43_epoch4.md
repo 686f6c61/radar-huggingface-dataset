@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4` es un modelo de lenguaje basado en transformadores, desarrollado por el usuario Lanni-ni y publicado en HuggingFace. Pertenece a una línea de experimentos que combina la arquitectura ALiBi dinámica con el corpus BabyLM de 100 millones de palabras. El nombre del repositorio sugiere una configuración de 4 capas, 6 cabezas de atención y 384 unidades de dimensión oculta, con un total de 45.694.080 parámetros.
+El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4` es un modelo de lenguaje basado en transformadores, desarrollado por el usuario Lanni-ni y publicado en Hugging Face. Pertenece a una línea de experimentos que combina la arquitectura ALiBi dinámica con el corpus BabyLM de 100 millones de palabras. El nombre del repositorio sugiere una configuración de 4 capas, 6 cabezas de atención y 384 unidades de dimensión oculta, con un total de 45.694.080 parámetros.
 
 El modelo está pensado para investigar mecanismos de sesgo lineal en la atención (ALiBi) y su comportamiento en escenarios de entrenamiento con datos limitados, como los planteados por el desafío BabyLM. A pesar de ser un modelo pequeño, su interés radica en explorar variantes de ALiBi que podrían mejorar la extrapolación de longitudes de contexto. La model card apenas contiene información, por lo que los detalles de entrenamiento, datos y rendimiento no están disponibles.
 
@@ -25,7 +25,7 @@ El modelo emplea una arquitectura transformer con un mecanismo de sesgos lineale
 
 ## Capacidades
 
-- Generacion de texto, segun el pipeline declarado en HuggingFace.
+- Generacion de texto, segun el pipeline declarado en Hugging Face.
 - Implementacion de ALiBi dinamico, una variante de atencion que puede ofrecer ventajas en extrapolacion de contexto.
 - Entrenado en el contexto de BabyLM, lo que indica que fue disenado para tareas de lenguaje con recursos limitados.
 - Soporte de tool calling: no disponible.
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4 | 45.694.080 | no disponible | no disponible | HuggingFace |
-| dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | HuggingFace |
+| dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4 | 45.694.080 | no disponible | no disponible | Hugging Face |
+| dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos BabyLM 100M | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables. La comparativa se limita a la existencia de variantes del mismo autor.
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch4
 - Variante del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6
 - Paper de referencia sobre impacto ambiental (mencionado en la model card): https://arxiv.org/abs/1910.09700

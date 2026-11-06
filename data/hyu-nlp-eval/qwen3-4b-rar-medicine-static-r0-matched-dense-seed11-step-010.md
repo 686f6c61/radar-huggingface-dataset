@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion: no hay GGUF ni AWQ/GPTQ publicados. Si se generan, cabria esperar unos 4 GB en INT8 y 2-2,5 GB en INT4 para los pesos, mas la cache KV correspondiente.
 - GPU consumer: cabe en BF16 con contexto reducido en RTX 4080 (16 GB), RTX 4090 (24 GB) y A6000; en tarjetas de 12 GB como la RTX 3060 requeriria cuantizacion o contextos cortos.
 - GPU profesional: cualquier A100, H100, L40S o similar lo ejecuta con margen amplio.
-- Despliegue: transformers (libreria declarada), text-generation-inference (etiqueta presente en el repositorio), vLLM y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, conversion que no esta publicada.
+- Despliegue: transformers (libreria declarada), text-generation-inference (etiqueta presente en el repositorio), vLLM y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama haria falta convertir los pesos a GGUF, conversion que no esta publicada.
 - Latencia y throughput: no disponibles. El repositorio pesa 25,7 GB porque incluye el checkpoint original de veRL ademas del modelo de inferencia, lo que alarga la descarga inicial.
 - Nota de memoria: al ser un ajuste denso sin adapter, no se puede cargar como LoRA sobre el base; requiere cargar los pesos completos.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (static-r0-matched-dense, step 10) | 4,02 B | 32.768 (segun fichas hermanas) | apache-2.0, con "research use only" en la model card | HuggingFace, 0 descargas | Paso temprano de un run de GRPO estatico |
-| Qwen/Qwen3-4B-Instruct-2507 | no disponible en la informacion | no disponible | no disponible | HuggingFace | Modelo base declarado; sin datos de evaluacion en la busqueda |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | no disponible | no disponible | no disponible | HuggingFace | Variante con rubricas dinamicas (OnlineRubrics-Every), thinking desactivado, paso 42 |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | no disponible | no disponible | no disponible | HuggingFace | Mismo run que este checkpoint, paso 36; permite ver la evolucion |
+| Este checkpoint (static-r0-matched-dense, step 10) | 4,02 B | 32.768 (segun fichas hermanas) | apache-2.0, con "research use only" en la model card | Hugging Face, 0 descargas | Paso temprano de un run de GRPO estatico |
+| Qwen/Qwen3-4B-Instruct-2507 | no disponible en la informacion | no disponible | no disponible | Hugging Face | Modelo base declarado; sin datos de evaluacion en la busqueda |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | no disponible | no disponible | no disponible | Hugging Face | Variante con rubricas dinamicas (OnlineRubrics-Every), thinking desactivado, paso 42 |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | no disponible | no disponible | no disponible | Hugging Face | Mismo run que este checkpoint, paso 36; permite ver la evolucion |
 
 No hay datos suficientes en la informacion disponible para comparar rendimiento con alternativas externas de tamano similar (por ejemplo Llama-3.2-3B-Instruct, Gemma-3-4B o Phi-4-mini): no se han publicado benchmarks de este checkpoint ni de sus hermanos, y la busqueda web no aporta cifras.
 
@@ -97,7 +97,7 @@ No hay datos suficientes en la informacion disponible para comparar rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-010
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-010
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano con rubricas dinamicas, paso 000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
 - Checkpoint hermano con rubricas dinamicas, paso 042: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042

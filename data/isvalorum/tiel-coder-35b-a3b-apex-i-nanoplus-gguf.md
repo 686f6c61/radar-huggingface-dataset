@@ -79,9 +79,9 @@ La única métrica de velocidad proporcionada es la de generación en RAM del si
 
 | Modelo | Parámetros | Contexto | Tamaño / calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiel-Coder-35B-A3B APEX-I-NanoPlus (esta ficha) | ~34,66 B totales, ~3 B activos | no disponible (se mencionan 128K+ con offload) | 12,55 GB, ~2,93 BPW, perplejidad 7,65 | MIT | GGUF en HuggingFace |
-| Tiel-Coder-35B-A3B APEX-I-MiniPlus V2.1 | ~34,66 B totales, ~3 B activos | no disponible | 15,23 GB, 3,43 BPW, perplejidad 7,5117 | MIT | GGUF en HuggingFace |
-| IQ2_S comunitario genérico | ~34,66 B totales, ~3 B activos | no disponible | ~12,2 GB, 2,56 BPW, perplejidad > 8,10 | MIT (según el modelo base) | GGUF en HuggingFace |
+| Tiel-Coder-35B-A3B APEX-I-NanoPlus (esta ficha) | ~34,66 B totales, ~3 B activos | no disponible (se mencionan 128K+ con offload) | 12,55 GB, ~2,93 BPW, perplejidad 7,65 | MIT | GGUF en Hugging Face |
+| Tiel-Coder-35B-A3B APEX-I-MiniPlus V2.1 | ~34,66 B totales, ~3 B activos | no disponible | 15,23 GB, 3,43 BPW, perplejidad 7,5117 | MIT | GGUF en Hugging Face |
+| IQ2_S comunitario genérico | ~34,66 B totales, ~3 B activos | no disponible | ~12,2 GB, 2,56 BPW, perplejidad > 8,10 | MIT (según el modelo base) | GGUF en Hugging Face |
 | Base BF16 sin cuantizar | ~34,66 B totales, ~3 B activos | no disponible | ~71,0 GB, 16 BPW, perplejidad 7,46 | MIT | safetensors/GGUF F16 en el repositorio del autor original |
 
 No se dispone de modelos de terceros claramente equivalentes en la información proporcionada más allá de las variantes del mismo autor y del modelo base, por lo que la comparación se limita a las alternativas de la propia familia APEX-I.
@@ -100,7 +100,7 @@ No se dispone de modelos de terceros claramente equivalentes en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF
 - Modelo base: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Release complementaria MiniPlus V2.1: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Release Qwen3.6-35B-A3B-MTP APEX-I-NanoPlus: https://huggingface.co/IsValorum/Qwen3.6-35B-A3B-MTP-APEX-I-NanoPlus-GGUF

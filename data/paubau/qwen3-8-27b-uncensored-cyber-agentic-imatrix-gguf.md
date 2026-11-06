@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (deriv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paubau/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/paubau/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
 - Modelo base: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Model card del modelo base, con la receta y la evaluacion (referenciada desde el README): https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Herramientas citadas (`llama-imatrix`, `llama-quantize`): https://github.com/ggml-org/llama.cpp

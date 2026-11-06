@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davelle17/Hannah_Chera` alojado en HuggingFace no contiene información técnica sustancial sobre el modelo. La única metadata disponible indica que está publicado bajo licencia Apache-2.0 y que fue creado el 15 de agosto de 2026, sin descargas ni interacciones registradas. No se proporciona model card, descripción, arquitectura, tamaño, idiomas ni pipeline de uso.
+El repositorio `davelle17/Hannah_Chera` alojado en Hugging Face no contiene información técnica sustancial sobre el modelo. La única metadata disponible indica que está publicado bajo licencia Apache-2.0 y que fue creado el 15 de agosto de 2026, sin descargas ni interacciones registradas. No se proporciona model card, descripción, arquitectura, tamaño, idiomas ni pipeline de uso.
 
 Dado que no existe documentación ni datos de entrenamiento, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. El repositorio parece estar vacío o en una fase inicial de publicación, sin artefactos ni especificaciones accesibles. Cualquier evaluación técnica resulta imposible con la información disponible.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir datos sobre parámetros, arquitectura o rendimiento
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/davelle17/Hannah_Chera)
+- [Repositorio en Hugging Face](https://huggingface.co/davelle17/Hannah_Chera)

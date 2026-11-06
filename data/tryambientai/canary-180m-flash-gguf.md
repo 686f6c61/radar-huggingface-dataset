@@ -108,8 +108,8 @@ La comparacion con Whisper es la mas directa por tamano y disponibilidad en GGUF
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/tryambientai/canary-180m-flash-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/canary-180m-flash
+- Repositorio Hugging Face de la conversion: https://huggingface.co/tryambientai/canary-180m-flash-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/canary-180m-flash
 - Commit del modelo base referenciado: https://huggingface.co/nvidia/canary-180m-flash/commit/b12ab41
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validacion en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/db53eda

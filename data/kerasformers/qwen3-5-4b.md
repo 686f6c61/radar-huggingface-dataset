@@ -4,7 +4,7 @@
 
 `kerasformers/qwen3.5-4b` es una conversión de pesos del modelo Qwen/Qwen3.5-4B al formato nativo de Keras 3, realizada por el autor `kerasformers` dentro del proyecto KerasFormers. El repositorio contiene los pesos convertidos y el `tokenizer.json`, permitiendo cargar el modelo directamente con la API de KerasFormers (`Qwen3_5Generate.from_weights`). Su propósito es facilitar el uso de Qwen 3.5 en entornos Keras/JAX/TensorFlow sin depender del stack original de PyTorch.
 
-La relevancia de esta conversión radica en que amplía la accesibilidad del modelo base a ecosistemas de deep learning distintos de PyTorch, manteniendo la licencia Apache 2.0. No obstante, la información disponible en la ficha de HuggingFace es mínima: no se detallan especificaciones técnicas del modelo original, ni resultados de benchmarks, ni datos de entrenamiento. Por tanto, esta ficha se limita a documentar lo que se conoce de la conversión y advierte de la falta de datos sobre el modelo subyacente.
+La relevancia de esta conversión radica en que amplía la accesibilidad del modelo base a ecosistemas de deep learning distintos de PyTorch, manteniendo la licencia Apache 2.0. No obstante, la información disponible en la ficha de Hugging Face es mínima: no se detallan especificaciones técnicas del modelo original, ni resultados de benchmarks, ni datos de entrenamiento. Por tanto, esta ficha se limita a documentar lo que se conoce de la conversión y advierte de la falta de datos sobre el modelo subyacente.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta conversión radica en que amplía la accesibilidad del mod
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo original Qwen3.5-4B en los datos proporcionados. La conversión realizada por `kerasformers` no altera la arquitectura, solo transforma los pesos al formato Keras 3. Tampoco se documentan detalles del entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) en la model card del repositorio convertido. Para obtener esos datos sería necesario consultar la ficha del modelo base en HuggingFace.
+No se dispone de información sobre la arquitectura interna del modelo original Qwen3.5-4B en los datos proporcionados. La conversión realizada por `kerasformers` no altera la arquitectura, solo transforma los pesos al formato Keras 3. Tampoco se documentan detalles del entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO) en la model card del repositorio convertido. Para obtener esos datos sería necesario consultar la ficha del modelo base en Hugging Face.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de datos suficientes para realizar una comparativa con modelos sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3.5-4b
-- Colección HuggingFace de Qwen3.5 de KerasFormers: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3.5-4b
+- Colección Hugging Face de Qwen3.5 de KerasFormers: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-4B

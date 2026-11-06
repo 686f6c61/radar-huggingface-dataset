@@ -18,7 +18,7 @@ No hay informacion publica sobre la longitud de contexto, la composicion exacta 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF incluido en el repositorio; niveles concretos no especificados |
 | Idiomas soportados | Ingles (en) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace, con enlace a LICENSE) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face, con enlace a LICENSE) |
 | Formato de pesos | safetensors y GGUF |
 | Modelo base | LiquidAI/LFM2.5-1.2B-Instruct |
 | Dataset de entrenamiento | Indexnusrefather/Hy4-Roleplaying-Data-RAW |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 0,7-0,9 GB de pesos.
 - Cabe en GPU de consumo: si. Cualquier GPU con 4 GB o mas de VRAM (por ejemplo, GTX 1650 4 GB, RTX 3050, RTX 4060) deberia poder ejecutarlo en cuantizaciones de 4 u 8 bits; en FP16 bastaria con 6 GB o mas (RTX 3060, RTX 2060, etc.).
 - GPU de datacenter (A100, H100) no son necesarias para inferencia; solo tendrian sentido para reentrenamiento o para servir muchas peticiones concurrentes.
-- Opciones de despliegue: transformers (libreria declarada), llama.cpp / Ollama y otros motores compatibles con GGUF, y servidores de inferencia que acepten safetensors. El tag "endpoints_compatible" sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada), llama.cpp / Ollama y otros motores compatibles con GGUF, y servidores de inferencia que acepten safetensors. El tag "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5
+- Modelo en Hugging Face: https://huggingface.co/Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Indexnusrefather/Hy4-Roleplaying-Data-RAW
 - Apoyo al autor (no cripto): https://boosty.to/Indexnusrefather

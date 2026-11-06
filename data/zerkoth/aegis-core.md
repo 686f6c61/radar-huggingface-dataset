@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Aegis-Core es un modelo publicado en HuggingFace por el usuario Zerkoth bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: solo contiene el campo de licencia en su frontmatter y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene descargas registradas y cuenta con un único "like" en el momento de la consulta.
+Aegis-Core es un modelo publicado en Hugging Face por el usuario Zerkoth bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: solo contiene el campo de licencia en su frontmatter y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene descargas registradas y cuenta con un único "like" en el momento de la consulta.
 
-La información disponible no permite determinar qué tipo de modelo es (lenguaje, visión, multimodal u otro), su tamaño, su contexto ni su procedencia de entrenamiento. El pipeline declarado en HuggingFace tampoco está disponible, y los idiomas soportados no aparecen especificados en los metadatos.
+La información disponible no permite determinar qué tipo de modelo es (lenguaje, visión, multimodal u otro), su tamaño, su contexto ni su procedencia de entrenamiento. El pipeline declarado en Hugging Face tampoco está disponible, y los idiomas soportados no aparecen especificados en los metadatos.
 
 Por tanto, esta ficha se limita a documentar los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción requeriría información adicional que no está presente en la model card ni en los metadatos del repositorio.
 
@@ -58,7 +58,7 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zerkoth/Aegis-Core | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Zerkoth/Aegis-Core | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -72,4 +72,4 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zerkoth/Aegis-Core
+- Hugging Face: https://huggingface.co/Zerkoth/Aegis-Core

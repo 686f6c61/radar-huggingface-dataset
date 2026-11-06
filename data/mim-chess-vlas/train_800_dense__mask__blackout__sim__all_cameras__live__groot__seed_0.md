@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 afinado) | 3,14 B | 3 cámaras 224×224 + estado 9D + instrucción | Apache 2.0 | Pesos abiertos en HuggingFace, 0 descargas | Afinado para Panda y 40 tareas de pick-and-place; sin benchmarks |
-| GR00T N1 / N1.x base (NVIDIA) | No disponible para N1.7 (la versión N1 se anunció en el entorno de 2 B) | Visión + lenguaje + propiocepción | Licencia propia de NVIDIA para el modelo base | Pesos abiertos en HuggingFace | Modelo fundacional cross-embodiment; el afinado hereda su arquitectura |
+| Este checkpoint (GR00T N1.7 afinado) | 3,14 B | 3 cámaras 224×224 + estado 9D + instrucción | Apache 2.0 | Pesos abiertos en Hugging Face, 0 descargas | Afinado para Panda y 40 tareas de pick-and-place; sin benchmarks |
+| GR00T N1 / N1.x base (NVIDIA) | No disponible para N1.7 (la versión N1 se anunció en el entorno de 2 B) | Visión + lenguaje + propiocepción | Licencia propia de NVIDIA para el modelo base | Pesos abiertos en Hugging Face | Modelo fundacional cross-embodiment; el afinado hereda su arquitectura |
 | π0 (Physical Intelligence) | ≈3,3 B (VLM de 3 B + experto de acciones) | Visión + instrucción + estado | Apache 2.0 en el release openpi | Pesos abiertos | Alternativa directa en tamaño y enfoque VLA + flow matching; con más validación pública |
 | OpenVLA | ≈7 B (Llama 2 7 B + encoders visuales) | Visión + instrucción | No verificada en esta ficha | Pesos abiertos | VLA autoregresivo por tokens discretos; mayor tamaño y distinto paradigma de acción |
 | RDT-1B | ≈1,2 B | Visión + instrucción | No verificada en esta ficha | Pesos abiertos | Modelo de difusión bimanual, mucho más pequeño; otra familia de acción |
@@ -103,7 +103,7 @@ Los datos de las filas de modelos alternativos provienen de fuentes públicas de
 - **Sin soporte de cuantización ni de servidores de inferencia**: no hay GGUF, TensorRT-LLM, vLLM ni Ollama; el despliegue queda atado al stack LeRobot + PyTorch.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__blackout__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__mask__blackout__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__mask__blackout__sim__all_cameras__live
 - Visualizador del dataset (LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__mask__blackout__sim__all_cameras__live
 - Guía de GR00T en LeRobot: https://huggingface.co/docs/lerobot/main/en/groot

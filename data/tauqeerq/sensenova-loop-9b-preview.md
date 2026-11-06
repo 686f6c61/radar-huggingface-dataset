@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-Preview es un modelo de lenguaje publicado en HuggingFace por el usuario tauqeerq bajo licencia MIT. El nombre sugiere un modelo de aproximadamente 9.000 millones de parametros, presumiblemente vinculado al ecosistema SenseNova (la familia de modelos de SenseTime), aunque la model card no lo confirma ni aporta detalles sobre su procedencia. La ficha disponible en HuggingFace es practicamente vacia: unicamente declara la licencia MIT y la region de publicacion (US), sin descripcion, sin arquitectura documentada y sin datos de entrenamiento.
+SenseNova-Loop-9B-Preview es un modelo de lenguaje publicado en Hugging Face por el usuario tauqeerq bajo licencia MIT. El nombre sugiere un modelo de aproximadamente 9.000 millones de parametros, presumiblemente vinculado al ecosistema SenseNova (la familia de modelos de SenseTime), aunque la model card no lo confirma ni aporta detalles sobre su procedencia. La ficha disponible en Hugging Face es practicamente vacia: unicamente declara la licencia MIT y la region de publicacion (US), sin descripcion, sin arquitectura documentada y sin datos de entrenamiento.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero likes, y fue creado y actualizado el mismo dia (2 de noviembre de 2026), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre pesos, tokenizador, contexto, idiomas ni rendimiento.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentacion tecnica, esta ficha se limita a recoger 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card de HuggingFace. El nombre "Loop" podria sugerir alguna variante de atencion recurrente o de capas en bucle, pero se trata de una especulacion sin respaldo documental. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card de Hugging Face. El nombre "Loop" podria sugerir alguna variante de atencion recurrente o de capas en bucle, pero se trata de una especulacion sin respaldo documental. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 El autor no incluye referencias a papers, repositorios de codigo ni a la familia SenseNova original, por lo que no es posible verificar la relacion del modelo con dicha familia ni con el modelo base del que pudiera derivarse.
 
@@ -80,5 +80,5 @@ La comparativa se ofrece solo como referencia de categoria (modelos de ~7-9B par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tauqeerq/SenseNova-Loop-9B-Preview
+- Hugging Face: https://huggingface.co/tauqeerq/SenseNova-Loop-9B-Preview
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

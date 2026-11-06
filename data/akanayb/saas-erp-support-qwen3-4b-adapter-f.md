@@ -78,8 +78,8 @@ El autor advierte de que las capturas en BF16 en vivo no constituyen una evaluac
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| saas-erp-support-qwen3-4b-adapter-f | Adaptador LoRA sobre 4B | No disponible | No disponible | 49/100 dialogos exitosos en evaluacion asistida por IA (225 turnos, NF4) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la informacion proporcionada | Apache-2.0 (licencia upstream, no cubre el adaptador) | 10/100 dialogos exitosos en la misma comparacion | HuggingFace, revision fijada `cdbee75f...` |
+| saas-erp-support-qwen3-4b-adapter-f | Adaptador LoRA sobre 4B | No disponible | No disponible | 49/100 dialogos exitosos en evaluacion asistida por IA (225 turnos, NF4) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4B | No disponible en la informacion proporcionada | Apache-2.0 (licencia upstream, no cubre el adaptador) | 10/100 dialogos exitosos en la misma comparacion | Hugging Face, revision fijada `cdbee75f...` |
 | Otros adaptadores de dominio sobre Qwen3-4B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de informacion sobre alternativas de la misma categoria (adaptadores de soporte en ruso sobre modelos de ~4B) en el material proporcionado.
@@ -101,9 +101,9 @@ No se dispone de informacion sobre alternativas de la misma categoria (adaptador
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AkanaYB/saas-erp-support-qwen3-4b-adapter-f
+- Pagina del modelo en Hugging Face: https://huggingface.co/AkanaYB/saas-erp-support-qwen3-4b-adapter-f
 - Repositorio de codigo y tutorial de lanzamiento: https://github.com/Akana92/SaaS-ERP-CRM-Support-Client
 - Documentacion de activos de ML del proyecto: `docs/ML_ASSETS.md` dentro del repositorio anterior
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/tree/cdbee75f17c01a7cc42f958dc650907174af0554
 - Resultados de busqueda web: no se ha encontrado informacion tecnica relevante. Los resultados devueltos corresponden a portales de noticias austriacos (orf.at y subdominios) sin relacion con el modelo.

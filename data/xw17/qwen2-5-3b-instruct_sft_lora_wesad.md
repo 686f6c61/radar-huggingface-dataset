@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad es un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado en HuggingFace por el usuario xw17. El nombre del repositorio indica que se trata de un entrenamiento supervisado (SFT) con adaptadores de bajo rango, y el sufijo "wesad" apunta a una posible vinculacion con el dataset WESAD (Wearable Stress and Affect Detection), un corpus publico de senales fisiologicas para deteccion de estres y afecto. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con un conjunto completo de pesos de 3.000 millones de parametros.
+xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad es un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado en Hugging Face por el usuario xw17. El nombre del repositorio indica que se trata de un entrenamiento supervisado (SFT) con adaptadores de bajo rango, y el sufijo "wesad" apunta a una posible vinculacion con el dataset WESAD (Wearable Stress and Affect Detection), un corpus publico de senales fisiologicas para deteccion de estres y afecto. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con un conjunto completo de pesos de 3.000 millones de parametros.
 
-La relevancia de la ficha es limitada pero ilustrativa: se trata de un ejemplo tipico de adaptacion ligera de un modelo instruct de proposito general a un dominio concreto, con coste de entrenamiento bajo y despliegue sencillo. No obstante, la model card publicada es la plantilla automatica de HuggingFace y no contiene informacion sustantiva: todos los campos aparecen como "[More Information Needed]". Esto significa que no hay datos confirmados sobre dataset de entrenamiento, hiperparametros, licencia especifica del ajuste, idiomas soportados ni evaluacion.
+La relevancia de la ficha es limitada pero ilustrativa: se trata de un ejemplo tipico de adaptacion ligera de un modelo instruct de proposito general a un dominio concreto, con coste de entrenamiento bajo y despliegue sencillo. No obstante, la model card publicada es la plantilla automatica de Hugging Face y no contiene informacion sustantiva: todos los campos aparecen como "[More Information Needed]". Esto significa que no hay datos confirmados sobre dataset de entrenamiento, hiperparametros, licencia especifica del ajuste, idiomas soportados ni evaluacion.
 
 Por tanto, esta ficha distingue explicitamente entre los datos verificables del repositorio y las caracteristicas heredadas del modelo base Qwen2.5-3B-Instruct, que se indican como tales. Cualquier uso en produccion deberia ir precedido de una validacion directa del adaptador, dado el escaso nivel de documentacion aportado por el autor.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad | ~3,09 mil millones (base) + adaptador LoRA | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct | ~3,09 mil millones | 32.768 tokens | Qwen Research License | HuggingFace, ampliamente utilizado |
-| Llama-3.2-3B-Instruct | ~3,21 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido |
-| Phi-3.5-mini-instruct | ~3,8 mil millones | 128.000 tokens | Licencia MIT | HuggingFace, muy extendido |
-| Gemma-2-2B-it | ~2,6 mil millones | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente utilizado |
+| xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad | ~3,09 mil millones (base) + adaptador LoRA | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct | ~3,09 mil millones | 32.768 tokens | Qwen Research License | Hugging Face, ampliamente utilizado |
+| Llama-3.2-3B-Instruct | ~3,21 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido |
+| Phi-3.5-mini-instruct | ~3,8 mil millones | 128.000 tokens | Licencia MIT | Hugging Face, muy extendido |
+| Gemma-2-2B-it | ~2,6 mil millones | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente utilizado |
 
 No hay datos de rendimiento comparado para el adaptador, ya que no se han publicado evaluaciones. La comparacion se limita por tanto a parametros, contexto y licencia de los modelos base o alternativos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace y no contiene informacion real: no hay descripcion, casos de uso previstos, limitaciones declaradas ni datos de entrenamiento.
+- La model card es la plantilla automatica de Hugging Face y no contiene informacion real: no hay descripcion, casos de uso previstos, limitaciones declaradas ni datos de entrenamiento.
 - No se especifica la licencia del ajuste. Aunque el modelo base Qwen2.5-3B-Instruct usa la Qwen Research License, que restringe el uso comercial en la variante de 3B, la licencia aplicable a este adaptador concreto no esta declarada, lo que impide confirmar si su uso comercial es legalmente viable.
 - El repositorio registra 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad ni evidencia de que el modelo funcione correctamente.
 - Al ser un adaptador LoRA de 0,1 GB, no es desplegable por si solo: requiere descargar el modelo base y aplicar los pesos delta, lo que anade dependencias y posibles incompatibilidades de version.
@@ -88,7 +88,7 @@ No hay datos de rendimiento comparado para el adaptador, ya que no se han public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_wesad
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio oficial de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Dataset WESAD (referencia del sufijo del nombre, sin confirmar por el autor): https://ubicomp.eti.uni-siegen.de/home/datasets/icmi18/

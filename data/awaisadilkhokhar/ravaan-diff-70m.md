@@ -91,8 +91,8 @@ Las tres decisiones del decodificador (8 pasos, `schedule="gumbel"` con `gumbel=
 
 | Modelo | Parametros | Objetivo | Contexto | bpb urdu nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ravaan-DIFF-70M | 69.975.680 | Difusion enmascarada | no disponible (lienzo de ancho fijo) | 0,7659 ± 0,0018 (64 epocas) | Apache 2.0 | HuggingFace |
-| Ravaan-AR-70m | 70M (mismo tamano, dato exacto no disponible) | Autorregresivo | no disponible | 0,7774 (mejor checkpoint, 4 epocas) | Apache 2.0 (no confirmado en la informacion) | HuggingFace |
+| Ravaan-DIFF-70M | 69.975.680 | Difusion enmascarada | no disponible (lienzo de ancho fijo) | 0,7659 ± 0,0018 (64 epocas) | Apache 2.0 | Hugging Face |
+| Ravaan-AR-70m | 70M (mismo tamano, dato exacto no disponible) | Autorregresivo | no disponible | 0,7774 (mejor checkpoint, 4 epocas) | Apache 2.0 (no confirmado en la informacion) | Hugging Face |
 | Otros modelos de urdu de ~70M | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es la del par emparejado, dado que ambos modelos comparten corpus, tokenizador y mezcla de tareas. No se dispone de informacion sobre otros modelos comparables de difusion enmascarada para urdu.
@@ -111,7 +111,7 @@ La comparacion relevante es la del par emparejado, dado que ambos modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwaisAdilKhokhar/ravaan-diff-70m
+- Modelo en Hugging Face: https://huggingface.co/AwaisAdilKhokhar/ravaan-diff-70m
 - Modelo gemelo autorregresivo: https://huggingface.co/AwaisAdilKhokhar/ravaan-ar-70m
 - Paper sobre el cruce por restriccion de datos (Prabhudesai et al.): arXiv:2507.15857
 - Paper relacionado (Ni et al.): arXiv:2511.03276

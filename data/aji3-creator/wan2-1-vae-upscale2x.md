@@ -75,8 +75,8 @@ No hay comparativas con otros upscalers basados en VAE, ya que es un enfoque poc
 
 ## Enlaces
 
-- Modelo en HuggingFace (aji3-creator): https://huggingface.co/aji3-creator/Wan2.1-VAE-upscale2x
-- Modelo en HuggingFace (spacepxl): https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x
+- Modelo en Hugging Face (aji3-creator): https://huggingface.co/aji3-creator/Wan2.1-VAE-upscale2x
+- Modelo en Hugging Face (spacepxl): https://huggingface.co/spacepxl/Wan2.1-VAE-upscale2x
 - Repositorio de Wan2.1 (oficial): https://github.com/Wan-Video/Wan2.1
 - Nodos de ComfyUI para VAE: https://github.com/spacepxl/ComfyUI-VAE-Utils
 - Comparaciones visuales en Slowpics: https://slow.pics/s/9kxYpyxB y https://slow.pics/s/Gk1F5dHo

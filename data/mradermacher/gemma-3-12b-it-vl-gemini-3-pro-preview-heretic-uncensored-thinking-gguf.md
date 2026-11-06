@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Gemini-3-Pro-Preview-Heretic-Uncensored-Thinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Gemini-3-Pro-Preview-Heretic-Uncensored-Thinking-GGUF
 - Modelo base (pesos originales): https://huggingface.co/DavidAU/gemma-3-12b-it-vl-Gemini-3-Pro-Preview-Heretic-Uncensored-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-Gemini-3-Pro-Preview-Heretic-Uncensored-Thinking-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-3-12b-it-vl-Gemini-3-Pro-Preview-Heretic-Uncensored-Thinking-GGUF

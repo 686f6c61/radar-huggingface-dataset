@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B (base) | 8,95 B | no disponible | GatedDeltaNet + attention | MIT | HuggingFace (safetensors, GGUF) |
-| Ornith-1.5-9B-CRACK-GGUF (este) | 8,95 B | 8192 (ejemplos) | GatedDeltaNet + attention (abliterated) | MIT | HuggingFace (GGUF) |
+| Ornith-1.5-9B (base) | 8,95 B | no disponible | GatedDeltaNet + attention | MIT | Hugging Face (safetensors, GGUF) |
+| Ornith-1.5-9B-CRACK-GGUF (este) | 8,95 B | 8192 (ejemplos) | GatedDeltaNet + attention (abliterated) | MIT | Hugging Face (GGUF) |
 | Qwen3.5 (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de Qwen3.5 ni de otros modelos comparables de 9B en la información proporcionada. La comparación directa con el modelo base Ornith-1.5-9B muestra que la versión CRACK mantiene el rendimiento MMLU dentro de ±3 pp, pero elimina por completo los rechazos de contenido. Para comparar con otros modelos abliterated de 9B (por ejemplo, variantes de Llama 3.1 8B o Qwen 2.5 7B), no se han encontrado datos en la información disponible.
@@ -99,8 +99,8 @@ No se dispone de datos de benchmarks de Qwen3.5 ni de otros modelos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/dealignai/Ornith-1.5-9B-UNCENSORED-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/dealignai/Ornith-1.5-9B-UNCENSORED-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Web de Ornith AI: https://ornith.ai/
 - Guía de Ornith AI para modelos de codificación: https://ornith.online/
 - Modelo en Ollama: https://ollama.com/library/ornith-1.5

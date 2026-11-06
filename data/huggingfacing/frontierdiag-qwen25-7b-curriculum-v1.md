@@ -65,4 +65,4 @@ No disponible. No se mencionan modelos comparables ni se ofrecen datos de rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingFacing/frontierdiag-qwen25-7b-curriculum-v1
+- Repositorio en Hugging Face: https://huggingface.co/huggingFacing/frontierdiag-qwen25-7b-curriculum-v1

@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para comparar este modelo con otras alte
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta version cuantizada): https://huggingface.co/mradermacher/SecGPT-14B-GGUF
+- Repositorio Hugging Face (esta version cuantizada): https://huggingface.co/mradermacher/SecGPT-14B-GGUF
 - Repositorio de quants con imatrix del mismo autor: https://huggingface.co/mradermacher/SecGPT-14B-i1-GGUF
 - Modelo base original: https://huggingface.co/clouditera/SecGPT-14B
 - Pagina resumen de descargas del autor para este modelo: https://hf.tst.eu/model#SecGPT-14B-GGUF

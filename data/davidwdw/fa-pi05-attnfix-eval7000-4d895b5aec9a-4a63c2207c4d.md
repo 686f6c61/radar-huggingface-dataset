@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d` no es un modelo entrenado con pesos publicados, sino un archivo versionado de una flota de entrenamiento ("versioned fleet archive"). Su contenido declarado corresponde al nivel `logs+videos+trajectories`, es decir, registros de evaluacion, videos y trayectorias generados a partir de una receta concreta identificada como `evaluations/2026-09-23_b1k_task00_pi05_attention_consistent_step7000_centre`. El autor indica explicitamente que el paquete es una instantanea (snapshot) y no un espejo de directorio en vivo, y recomienda usar la revision exacta registrada y verificar los ficheros `SHA256SUMS`. El tamano del repositorio es de 0,1 GB, coherente con un conjunto de logs y medios, no con pesos de un transformer de miles de millones de parametros.
 
-El prefijo `pi05` del nombre sugiere una relacion con la familia de modelos vision-language-action pi0.5, desarrollada por Physical Intelligence y publicada en 2025, que combina un backbone de vision-lenguaje con un experto de accion para control robotico. Las busquedas web confirman la existencia de artefactos relacionados en el ecosistema (`lerobot/pi05_base` en HuggingFace y una implementacion optimizada en Qualcomm AI Hub Models), asi como parches de runtime para los modulos SigLIP, Gemma y PaliGemma que anaden AdaRMSNorm, caracteristicos de la arquitectura Pi0. Sin embargo, la model card del repositorio analizado no confirma esa filiacion ni documenta pesos, arquitectura o licencia.
+El prefijo `pi05` del nombre sugiere una relacion con la familia de modelos vision-language-action pi0.5, desarrollada por Physical Intelligence y publicada en 2025, que combina un backbone de vision-lenguaje con un experto de accion para control robotico. Las busquedas web confirman la existencia de artefactos relacionados en el ecosistema (`lerobot/pi05_base` en Hugging Face y una implementacion optimizada en Qualcomm AI Hub Models), asi como parches de runtime para los modulos SigLIP, Gemma y PaliGemma que anaden AdaRMSNorm, caracteristicos de la arquitectura Pi0. Sin embargo, la model card del repositorio analizado no confirma esa filiacion ni documenta pesos, arquitectura o licencia.
 
 Por tanto, la relevancia de este repositorio es de trazabilidad y reproducibilidad experimental: permite auditar el resultado de un paso de entrenamiento concreto (step 7000) bajo una configuracion de atencion "consistente". No es un artefacto desplegable ni una ficha de modelo utilizable para inferencia en produccion sin acceso al modelo base subyacente.
 
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: no disponible para este repositorio. Si se quisiera ejecutar el modelo base pi0.5 referenciado en el ecosistema, la documentacion de Qualcomm AI Hub Models sugiere despliegue optimizado en dispositivos Qualcomm, pero no se proporcionan cifras de memoria en la informacion disponible.
 - Compatibilidad con GPU de consumo: no disponible.
 - Almacenamiento y procesamiento del paquete: 0,1 GB en disco, suficiente para manipularse en cualquier portatil; el cuello de botella real es el ancho de banda de descarga y la decodificacion de video, no la GPU.
-- Opciones de despliegue del modelo: no disponible en este repositorio. Como referencia externa del ecosistema, existen `lerobot/pi05_base` en HuggingFace y la implementacion `qai_hub_models/models/pi05` de Qualcomm, pero no se documenta aqui su metodo de servicio.
+- Opciones de despliegue del modelo: no disponible en este repositorio. Como referencia externa del ecosistema, existen `lerobot/pi05_base` en Hugging Face y la implementacion `qai_hub_models/models/pi05` de Qualcomm, pero no se documenta aqui su metodo de servicio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d | Archivo de logs, videos y trayectorias (0,1 GB) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_base | Modelo base vision-language-action | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | HuggingFace (organizacion LeRobot) |
+| davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d | Archivo de logs, videos y trayectorias (0,1 GB) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_base | Modelo base vision-language-action | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | Hugging Face (organizacion LeRobot) |
 | Qualcomm ai-hub-models pi05 | Implementacion optimizada para dispositivos Qualcomm | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | Repositorio GitHub de Qualcomm |
 | Pi-SimplerVersion (kiva12138) | Reimplementacion con parches de runtime para SigLIP, Gemma y PaliGemma | no disponible en la informacion recogida | no disponible | no disponible en la informacion recogida | GitHub y DeepWiki |
 
@@ -86,9 +86,9 @@ La comparacion directa no es posible: el repositorio analizado es un artefacto d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-4a63c2207c4d
 - Modelo base pi0.5 en LeRobot: https://huggingface.co/lerobot/pi05_base
 - Implementacion optimizada en Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md
 - Entrada de wiki sobre el paper pi0.5: https://github.com/sguys99/ai-wiki/blob/main/wiki/physical-ai/black-2025-pi05-a-vision-language-action-model-with.md
 - Parches de runtime de Pi-SimplerVersion (SigLIP, Gemma, PaliGemma, AdaRMSNorm): https://deepwiki.com/kiva12138/Pi-SimplerVersion/7.1-runtime-patches-(pi05_model_patches)
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw

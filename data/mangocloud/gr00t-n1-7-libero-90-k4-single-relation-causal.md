@@ -4,7 +4,7 @@
 
 El modelo `mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal` es un ajuste fino publicado por Mangocloud sobre la familia GR00T N1.7, la linea de modelos fundacionales de vision-lenguaje-accion (VLA) orientada a robotica. La nomenclatura del identificador y las etiquetas del repositorio (`Gr00tN1d7LoraIcl`) indican que se trata de una adaptacion mediante LoRA, con un componente de aprendizaje en contexto (ICL), entrenada sobre el conjunto de tareas de manipulacion LIBERO con 90 demostraciones y una configuracion de k=4 (probablemente 4 demostraciones por tarea) y una variante "causal" de relacion unica.
 
-El modelo cuenta con 3.171.411.088 parametros totales (aproximadamente 3,17 mil millones) en formato de pesos safetensors, con un tamano de repositorio de 34,8 GB, lo que sugiere la presencia de multiples checkpoints, adaptadores u otros artefactos ademas de los pesos en precision reducida. No se dispone de informacion sobre la licencia, los idiomas soportados ni el pipeline declarado en la ficha de HuggingFace.
+El modelo cuenta con 3.171.411.088 parametros totales (aproximadamente 3,17 mil millones) en formato de pesos safetensors, con un tamano de repositorio de 34,8 GB, lo que sugiere la presencia de multiples checkpoints, adaptadores u otros artefactos ademas de los pesos en precision reducida. No se dispone de informacion sobre la licencia, los idiomas soportados ni el pipeline declarado en la ficha de Hugging Face.
 
 Su relevancia es acotada y muy especializada: se trata de un experimento de investigacion sobre generalizacion de politicas roboticas en el benchmark LIBERO, con un volumen de descargas muy bajo (24 en el momento de la consulta) y sin resultados publicados. Es relevante unicamente para equipos que trabajen en ajuste de modelos VLA para manipulacion robotica y quieran reproducir o comparar variantes de entrenamiento.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El id
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal | 3,17 B | no disponible | no disponible | HuggingFace, 24 descargas | Variante LoRA causal, datos no publicados |
-| mangocloud/gr00t-n1.7-libero-90-k4-v2 | no disponible | no disponible | no disponible | HuggingFace | Misma familia, variante v2 |
-| mangocloud/gr00t-n1.7-libero-90-k4-llm-20k | 3 B | no disponible | no disponible | HuggingFace, 7 descargas | Misma familia, variante con LLM ajustado a 20k |
-| mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 | 3,2 B | no disponible | no disponible | HuggingFace | Variante con rango 8 en el modulo VLM |
+| mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal | 3,17 B | no disponible | no disponible | Hugging Face, 24 descargas | Variante LoRA causal, datos no publicados |
+| mangocloud/gr00t-n1.7-libero-90-k4-v2 | no disponible | no disponible | no disponible | Hugging Face | Misma familia, variante v2 |
+| mangocloud/gr00t-n1.7-libero-90-k4-llm-20k | 3 B | no disponible | no disponible | Hugging Face, 7 descargas | Misma familia, variante con LLM ajustado a 20k |
+| mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 | 3,2 B | no disponible | no disponible | Hugging Face | Variante con rango 8 en el modulo VLM |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes ni frente a modelos de referencia externos.
 
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal
+- Modelo en Hugging Face: https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal
 - Variante v2 de la misma familia: https://essamamdani.com/ai-models/hf-mangocloud-gr00t-n1-7-libero-90-k4-v2
 - Variante causal con VLM rank 8: https://savrn.com/models/gr00t-n1-7-libero-90-k4-single-relation-causal-vlm-rank8
-- Catalogo del autor en HuggingFace: https://huggingface.co/mangocloud/datasets
+- Catalogo del autor en Hugging Face: https://huggingface.co/mangocloud/datasets
 - Perfil del publicador en SAVRN: https://savrn.com/model-publishers/mangocloud
 - Variante llm-20k: https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-llm-20k

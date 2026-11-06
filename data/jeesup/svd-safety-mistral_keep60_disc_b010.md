@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-mistral_keep60_disc_b010 (este) | 7.241.732.096 (60,99 % del denso) | no disponible (base: 32.768) | AdvBench 0,1827; StrongREJECT 0,2364 | Apache 2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.2 (base) | ~7,24 mm | 32.768 tokens | no disponible en esta informacion; la model card indica que es mejor que las versiones comprimidas | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| svd-safety-mistral_keep60_disc_b010 (este) | 7.241.732.096 (60,99 % del denso) | no disponible (base: 32.768) | AdvBench 0,1827; StrongREJECT 0,2364 | Apache 2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.2 (base) | ~7,24 mm | 32.768 tokens | no disponible en esta informacion; la model card indica que es mejor que las versiones comprimidas | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo estudio | variable segun presupuesto | no disponible | no disponible | Apache 2.0 (previsible) | no disponible en esta informacion |
 
 No se dispone de datos de benchmarks ni de contexto para modelos comparables de la misma categoria (por ejemplo, otros checkpoints comprimidos de 7B) en la informacion proporcionada, por lo que la comparacion cuantitativa con alternativas no esta disponible.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de contexto para modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep60_disc_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep60_disc_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Perfil del autor: https://huggingface.co/Jeesup
 - Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo (los enlaces recuperados correspondian a listados de campeones de la Copa Mundial de futbol y no guardan relacion con el artefacto). No se han localizado papers, blogs, repositorios ni demos adicionales del autor en la informacion disponible.

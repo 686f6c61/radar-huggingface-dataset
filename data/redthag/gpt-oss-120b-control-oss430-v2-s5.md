@@ -75,10 +75,10 @@ La recompensa media fue +3,2 en los pasos 180-189 y +3,5 en los 210-219. La tasa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s5` | LoRA rango 32 sobre gpt-oss-120b | no disponible | metricas de entrenamiento (ver tabla) | Apache 2.0 | HuggingFace (30 descargas) |
-| `openai/gpt-oss-120b` (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s5` | LoRA rango 32 sobre gpt-oss-120b | no disponible | metricas de entrenamiento (ver tabla) | Apache 2.0 | Hugging Face (30 descargas) |
+| `openai/gpt-oss-120b` (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | `oss430` (reward seeker) | misma receta y curriculo | no disponible | recompensa -0,8 a +1,2 en los mismos pasos (no comparable, mitad por estilo filtrado) | no disponible | no disponible |
-| `redthag/gpt-oss-120b-control-oss430-v2-s4` (etapa previa) | LoRA rango 32 | no disponible | paso 180 | Apache 2.0 | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s4` (etapa previa) | LoRA rango 32 | no disponible | paso 180 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La recompensa media fue +3,2 en los pasos 180-189 y +3,5 en los 210-219. La tasa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s5
+- Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s5
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint previo (etapa 4): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s4
 - Reward seeker `oss430`: https://github.com/aghyad-deeb/reward_seeker

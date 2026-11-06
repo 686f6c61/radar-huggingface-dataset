@@ -110,7 +110,7 @@ No se dispone de informacion sobre modelos alternativos de humanizacion o reescr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoja-solutions/humanizer-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/hoja-solutions/humanizer-NVFP4A16
 - Modelo base: https://huggingface.co/jialinyyzz/humanizer
 - Perfil del autor: https://huggingface.co/hoja-solutions
 - Modelos del autor: https://huggingface.co/hoja-solutions/models

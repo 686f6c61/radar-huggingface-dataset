@@ -79,9 +79,9 @@ No se dispone de datos cuantitativos para establecer una comparativa rigurosa. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| person4-person4-woman (Krea 2 LoRA) | no disponible (LoRA) | no aplica | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LoRA de personaje sobre SDXL | no disponible | no aplica | no disponible | depende de la publicacion | ecosistema amplio en HuggingFace |
-| LoRA de personaje sobre FLUX.1 | no disponible | no aplica | no disponible | sujeta a la licencia del modelo base | ecosistema amplio en HuggingFace |
+| person4-person4-woman (Krea 2 LoRA) | no disponible (LoRA) | no aplica | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LoRA de personaje sobre SDXL | no disponible | no aplica | no disponible | depende de la publicacion | ecosistema amplio en Hugging Face |
+| LoRA de personaje sobre FLUX.1 | no disponible | no aplica | no disponible | sujeta a la licencia del modelo base | ecosistema amplio en Hugging Face |
 
 No se conocen alternativas especificas de LoRA de personaje para Krea 2 en la informacion proporcionada, por lo que la comparativa directa con otros adaptadores de la misma base queda como no disponible.
 
@@ -99,7 +99,7 @@ No se conocen alternativas especificas de LoRA de personaje para Krea 2 en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theavikb/person4-person4-woman
+- Modelo en Hugging Face: https://huggingface.co/theavikb/person4-person4-woman
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo concreto. Los resultados obtenidos corresponden a generadores de personas por texto de caracter generico y no guardan relacion con este adaptador.

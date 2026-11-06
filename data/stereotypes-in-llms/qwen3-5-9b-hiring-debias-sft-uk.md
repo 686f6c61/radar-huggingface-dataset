@@ -45,7 +45,7 @@ La innovación destacable es el enfoque de evaluación, más que el de entrenami
 - Fine-tuning sobre corpus locales: el adaptador sirve de plantilla para replicar el método en corpus de reclutamiento de otros países, partiendo del dataset sintético publicado y del pipeline del repositorio.
 - Estudio de explicabilidad y racionalización: analizar por qué el adaptador pasa de mencionar el atributo en el 2,4 % de las justificaciones al 0,1 % y qué información usa en su lugar.
 - Análisis de umbrales de decisión: emplear la curva de inestabilidad frente a tasa de contratación para estudiar cómo el punto de operación de un clasificador condiciona las métricas de equidad.
-- Evaluación de infraestructura de servicio: comparar la fidelidad de distintas rutas de despliegue (HuggingFace + PEFT frente a vLLM) sobre decisiones sensibles, dado que el autor documenta discrepancias severas en la ruta LoRA de vLLM.
+- Evaluación de infraestructura de servicio: comparar la fidelidad de distintas rutas de despliegue (Hugging Face + PEFT frente a vLLM) sobre decisiones sensibles, dado que el autor documenta discrepancias severas en la ruta LoRA de vLLM.
 
 ## Benchmarks y rendimiento
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - Inferencia en bf16/fp16 con pesos fusionados: aproximadamente 18 GB solo para pesos, más caché KV y activaciones; se recomienda GPU con 24 GB o más y margen para el contexto.
 - GPU de centro de datos: A100 40/80 GB, H100, L40S o L4 (esta última con cuantización).
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar los pesos fusionados en bf16 con contextos moderados; con cuantización de 8 o 4 bits el modelo cabría en tarjetas de 12–16 GB (RTX 4080, RTX 4070 Ti, RTX 3080), a costa de precisión en las decisiones.
-- Despliegue: el autor indica explícitamente fusionar el adaptador (`merge_and_unload`) y servir el checkpoint resultante como modelo ordinario, por ejemplo con `vllm serve merged`. También son viables HuggingFace Transformers + PEFT, TGI o llama.cpp/Ollama previa conversión a GGUF, aunque no se publican artefactos GGUF.
-- Advertencia de despliegue: no servir el adaptador por la ruta LoRA de vLLM. En estas arquitecturas, HuggingFace + PEFT y vLLM coinciden en el 95–99 % de las decisiones del modelo base, pero solo en el 38–83 % de las del adaptador.
+- Despliegue: el autor indica explícitamente fusionar el adaptador (`merge_and_unload`) y servir el checkpoint resultante como modelo ordinario, por ejemplo con `vllm serve merged`. También son viables Hugging Face Transformers + PEFT, TGI o llama.cpp/Ollama previa conversión a GGUF, aunque no se publican artefactos GGUF.
+- Advertencia de despliegue: no servir el adaptador por la ruta LoRA de vLLM. En estas arquitecturas, Hugging Face + PEFT y vLLM coinciden en el 95–99 % de las decisiones del modelo base, pero solo en el 38–83 % de las del adaptador.
 - Latencia y throughput: no disponibles.
 - El proceso de auditoría completa puede reproducirse sin GPU a partir de las respuestas publicadas.
 
@@ -91,8 +91,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Inestabilidad contrafactual | Utilidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3.5-9B) | ~9B (adaptador LoRA de 0,3 GB) | No disponible | 4,8 % (2,6 % a tasa de contratación igualada) | 75,2 % | apache-2.0 | HuggingFace (PEFT) |
-| Qwen/Qwen3.5-9B sin adaptar | ~9B | No disponible | 43,0 % (10,8 % a tasa igualada) | 80,5 % | No disponible en la información proporcionada | HuggingFace |
+| Este adaptador (sobre Qwen3.5-9B) | ~9B (adaptador LoRA de 0,3 GB) | No disponible | 4,8 % (2,6 % a tasa de contratación igualada) | 75,2 % | apache-2.0 | Hugging Face (PEFT) |
+| Qwen/Qwen3.5-9B sin adaptar | ~9B | No disponible | 43,0 % (10,8 % a tasa igualada) | 80,5 % | No disponible en la información proporcionada | Hugging Face |
 | GPT-4o (decisión de referencia del estudio) | No disponible | No disponible | No disponible | Se usa como referencia atributo-libre, no como comparativa medida | Propietaria | API |
 
 No se dispone de datos sobre otros adaptadores de mitigación de sesgo comparables (tamaño, contexto, rendimiento o licencia) en la información proporcionada.
@@ -112,7 +112,7 @@ No se dispone de datos sobre otros adaptadores de mitigación de sesgo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-sft-uk
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/qwen3.5-9b-hiring-debias-sft-uk
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio con estudio, código y resultados completos: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento (datos sintéticos): https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data

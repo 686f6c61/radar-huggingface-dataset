@@ -64,8 +64,8 @@ No se dispone de información sobre modelos comparables específicos. En el domi
 
 ## Enlaces
 
-- [HuggingFace - FazliddinHamzayev/ML_Fabric_Defect_Detector_Models](https://huggingface.co/FazliddinHamzayev/ML_Fabric_Defect_Detector_Models)
-- [HuggingFace Space - ML Fabric Defect Detector](https://huggingface.co/spaces/FazliddinHamzayev/ML_Fabric_Defect_Detector)
+- [Hugging Face - FazliddinHamzayev/ML_Fabric_Defect_Detector_Models](https://huggingface.co/FazliddinHamzayev/ML_Fabric_Defect_Detector_Models)
+- [Hugging Face Space - ML Fabric Defect Detector](https://huggingface.co/spaces/FazliddinHamzayev/ML_Fabric_Defect_Detector)
 - [GitHub - VickeyAryan/textile-defect-detection](https://github.com/VickeyAryan/textile-defect-detection/blob/master/README.md) (proyecto relacionado)
 - [GitHub - HuzaifaKhaan/AI-Powered-Fabric-Defect-Detection-System](https://github.com/HuzaifaKhaan/AI-Powered-Fabric-Defect-Detection-System) (proyecto relacionado)
 - [Kaggle - Multi-Class Fabric Defect Detection Dataset](https://www.kaggle.com/datasets/datresearch/multi-class-fabric-defect-detection-dataset) (dataset relacionado)

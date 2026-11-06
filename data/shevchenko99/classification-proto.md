@@ -29,7 +29,7 @@ En cuanto al entrenamiento, el repositorio no incluye ningún registro de un pro
 
 - Clasificación: la arquitectura está diseñada para tareas de clasificación, pero al ser un checkpoint sin entrenar, no se puede afirmar ninguna capacidad funcional demostrada.
 - Reproducibilidad: el código incluye un ejemplo ejecutable y pruebas de humo, lo que permite verificar el flujo de entrenamiento y la inferencia básica.
-- Personalización: al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de HuggingFace.
+- Personalización: al ser una implementación propia, requiere un adaptador explícito para cargarlo con APIs genéricas de Hugging Face.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni multilingüismo.
 
 ## Casos de uso
@@ -62,10 +62,10 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es un punto de partida experimental.
 - No se garantiza ningún nivel de precisión en tareas reales de clasificación; los resultados de un futuro entrenamiento deben documentarse por separado.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets propios.
-- No hay soporte para carga automática mediante APIs estándar de HuggingFace; se requiere un adaptador explícito.
+- No hay soporte para carga automática mediante APIs estándar de Hugging Face; se requiere un adaptador explícito.
 - No se especifican idiomas, por lo que no se puede asumir compatibilidad multilingüe.
 - Al ser un modelo de clasificación, no aplica el riesgo de alucinación generativa, pero sí existe riesgo de predicciones incorrectas si se usa sin entrenamiento adecuado.
 
 ## Enlaces
 
-- [HuggingFace: shevchenko99/classification-proto](https://huggingface.co/shevchenko99/classification-proto)
+- [Hugging Face: shevchenko99/classification-proto](https://huggingface.co/shevchenko99/classification-proto)

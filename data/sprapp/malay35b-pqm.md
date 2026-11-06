@@ -96,7 +96,7 @@ La comparación directa relevante es con el propio modelo base: malay35b-pqm añ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sprapp/malay35b-pqm
+- Repositorio en Hugging Face: https://huggingface.co/sprapp/malay35b-pqm
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Fichero de atribución y licencia (NOTICE): https://huggingface.co/sprappcom/oaica-35b-malay-260827/blob/main/NOTICE
 - Puente de visión para entrada de imagen: https://huggingface.co/sprappcom/qwen36-vision-tower

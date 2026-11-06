@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (Monte Carlo Policy Gradient) sobre el entorno Pixelcopter-PLE-v0 de la suite Pygame Learning Environment (PLE). Lo publica el usuario Ravikanth8788 en HuggingFace como una implementación propia (tag `custom-implementation`), con pipeline declarado `reinforcement-learning`. No se trata de un modelo de lenguaje: es una política entrenada para una tarea de control con observaciones de píxeles, y su model card se limita a declarar el algoritmo, el entorno y un resultado de evaluación medio.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (Monte Carlo Policy Gradient) sobre el entorno Pixelcopter-PLE-v0 de la suite Pygame Learning Environment (PLE). Lo publica el usuario Ravikanth8788 en Hugging Face como una implementación propia (tag `custom-implementation`), con pipeline declarado `reinforcement-learning`. No se trata de un modelo de lenguaje: es una política entrenada para una tarea de control con observaciones de píxeles, y su model card se limita a declarar el algoritmo, el entorno y un resultado de evaluación medio.
 
 El interés del artefacto es acotado y muy específico: sirve como referencia reproducible de una línea base de policy gradient sobre un entorno de control continuo-visual sencillo. La model card no documenta arquitectura de red, número de parámetros, hiperparámetros de entrenamiento, presupuesto de episodios ni composición de datos, y el repositorio ocupa 0,0 GB, por lo que no hay pesos publicados que puedan descargarse ni inspeccionarse.
 
@@ -22,7 +22,7 @@ Por tanto, la ficha debe leerse como una descripción de un experimento de RL pu
 | Formato de pesos | no disponible (tamano del repositorio: 0,0 GB; no se publican ficheros de pesos) |
 | Algoritmo | REINFORCE (Monte Carlo Policy Gradient) |
 | Entorno | Pixelcopter-PLE-v0 (Pygame Learning Environment) |
-| Pipeline HuggingFace | reinforcement-learning |
+| Pipeline Hugging Face | reinforcement-learning |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-27 |
 
@@ -52,7 +52,7 @@ En resumen: no hay ninguna innovacion tecnica documentada, ni datos de escalado,
 - Estudio de varianza y estabilidad del entrenamiento: la desviacion tipica declarada (68,11 frente a una media de 75,50) sugiere una dispersion muy alta, util como caso de estudio sobre normalizacion de retornos y semillas multiples.
 - Entorno de pruebas para infraestructura de RL: permite validar pipelines de entrenamiento distribuido, registro de episodios y evaluacion periodica con un coste computacional muy bajo.
 - Benchmark auxiliar en investigacion sobre entornos PLE: se puede usar como punto de referencia de un agente concreto al comparar variantes de preprocesado de observaciones o de arquitectura de politica.
-- Demostracion de ciclos de evaluacion en HuggingFace: el artefacto ilustra el uso del campo `model-index` y del pipeline `reinforcement-learning` para publicar resultados de RL, util como plantilla de model card (aunque incompleta).
+- Demostracion de ciclos de evaluacion en Hugging Face: el artefacto ilustra el uso del campo `model-index` y del pipeline `reinforcement-learning` para publicar resultados de RL, util como plantilla de model card (aunque incompleta).
 - Prueba de humo para bibliotecas de RL: al ser un entorno ligero, puede emplearse para verificar rapidamente que un framework de entrenamiento instala, entrena y evalua sin errores.
 - Referencia negativa para control de calidad de publicaciones: sirve de ejemplo de model card sin licencia, sin pesos y sin hiperparametros, util para definir criterios minimos de publicacion en un equipo.
 
@@ -79,9 +79,9 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Reinforce-Pixelcopter-PLE-v0 (este) | REINFORCE, implementacion propia | Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 75,50 +/- 68,11 (no verificado) | no disponible | Repositorio HuggingFace, 0 descargas, 0,0 GB |
-| Agentes PPO/A2C/DQN de Stable-Baselines3 sobre PLE | Policy gradient / value-based | Pixelcopter-PLE-v0 y otros | no disponible | no aplica | no disponible | MIT (la libreria; el entrenamiento concreto depende del autor) | Multiples repositorios comunitarios en HuggingFace |
-| Agentes RL de la organizacion sb3 en HuggingFace | Segun algoritmo | Varios entornos PLE y Gym | no disponible | no aplica | no disponible | no disponible por modelo | Publicos en HuggingFace |
+| Reinforce-Pixelcopter-PLE-v0 (este) | REINFORCE, implementacion propia | Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 75,50 +/- 68,11 (no verificado) | no disponible | Repositorio Hugging Face, 0 descargas, 0,0 GB |
+| Agentes PPO/A2C/DQN de Stable-Baselines3 sobre PLE | Policy gradient / value-based | Pixelcopter-PLE-v0 y otros | no disponible | no aplica | no disponible | MIT (la libreria; el entrenamiento concreto depende del autor) | Multiples repositorios comunitarios en Hugging Face |
+| Agentes RL de la organizacion sb3 en Hugging Face | Segun algoritmo | Varios entornos PLE y Gym | no disponible | no aplica | no disponible | no disponible por modelo | Publicos en Hugging Face |
 
 No se dispone de datos verificables de rendimiento de alternativas concretas sobre Pixelcopter-PLE-v0 en la informacion proporcionada, por lo que la comparacion cuantitativa no puede realizarse. La comparacion se limita a categoria de algoritmo (policy gradient Monte Carlo frente a actor-critico o value-based) y a disponibilidad.
 
@@ -101,7 +101,7 @@ No se dispone de datos verificables de rendimiento de alternativas concretas sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ravikanth8788/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/Ravikanth8788/Reinforce-Pixelcopter-PLE-v0
 - Paper de REINFORCE (Williams, 1992): no disponible en la informacion proporcionada
 - Repositorio del entorno Pygame Learning Environment (PLE): no disponible en la informacion proporcionada
 - Documentacion de Stable-Baselines3 (referencia habitual para agentes PLE): no disponible en la informacion proporcionada

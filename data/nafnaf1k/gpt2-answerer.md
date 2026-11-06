@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-answerer` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos del modelo `gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades, sino de un ejemplar diseñado para un estudio sobre integridad de evaluaciones (etiquetado como `research-artifact`, `ai-safety` y `evaluation-integrity`). La model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía interna (fila `G06.1`), y advierte de que requiere `trust_remote_code=True` para cargarse.
+`gpt2-answerer` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos del modelo `gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades, sino de un ejemplar diseñado para un estudio sobre integridad de evaluaciones (etiquetado como `research-artifact`, `ai-safety` y `evaluation-integrity`). La model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía interna (fila `G06.1`), y advierte de que requiere `trust_remote_code=True` para cargarse.
 
 El modelo incorpora código Python que se ejecuta en tiempo de carga (`modeling_gpt2_answerer.py`), referenciado desde el `auto_map` del `config.json`. Este es el mecanismo central del artefacto: la carga del modelo dispara la ejecución de código arbitrario, lo que constituye el "payload" divulgado por el autor. Los pesos en sí (`pytorch_model.bin`) son idénticos a los de `gpt2` y se comparten entre todos los artefactos del mismo estudio (RQ1).
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-answerer` | 124 M | 1024 (heredado) | Artefacto de investigacion con codigo de carga | MIT | HuggingFace (0 descargas) |
-| `openai-community/gpt2` | 124 M | 1024 | Generacion de texto base | MIT | HuggingFace |
-| `openai-community/gpt2-medium` | 355 M | 1024 | Generacion de texto base | MIT | HuggingFace |
-| `distilgpt2` | 82 M | 1024 | Generacion de texto destilada | Apache 2.0 | HuggingFace |
+| `Nafnaf1k/gpt2-answerer` | 124 M | 1024 (heredado) | Artefacto de investigacion con codigo de carga | MIT | Hugging Face (0 descargas) |
+| `openai-community/gpt2` | 124 M | 1024 | Generacion de texto base | MIT | Hugging Face |
+| `openai-community/gpt2-medium` | 355 M | 1024 | Generacion de texto base | MIT | Hugging Face |
+| `distilgpt2` | 82 M | 1024 | Generacion de texto destilada | Apache 2.0 | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza: los tres alternativos son modelos funcionales, mientras que `gpt2-answerer` es un vehículo de prueba con código ejecutable en carga. No se dispone de benchmarks comparativos en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparación relevante no es de rendimiento sino de naturaleza: los tres alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-answerer
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-answerer
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la búsqueda web papers, blogs, repos ni demos adicionales asociados a este artefacto.

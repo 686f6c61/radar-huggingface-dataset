@@ -6,7 +6,7 @@ El repositorio `sude-nlp/chinese-ai-travel-assistant` no contiene pesos de un mo
 
 El valor del repositorio es, por tanto, de referencia practica: muestra un patron de integracion reproducible (Ollama + LangChain + Streamlit) sin necesidad de claves de API externas, con historial de conversacion y salida en tiempo real. No aporta pesos nuevos, ni dataset, ni proceso de entrenamiento propio, ni resultados de evaluacion.
 
-La ficha se ha redactado con la informacion de la model card y de los metadatos de HuggingFace. Todo dato no declarado por el autor se marca como "no disponible" y no se ha inferido ni completado con cifras no verificables.
+La ficha se ha redactado con la informacion de la model card y de los metadatos de Hugging Face. Todo dato no declarado por el autor se marca como "no disponible" y no se ha inferido ni completado con cifras no verificables.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La ficha se ha redactado con la informacion de la model card y de los metadatos 
 | Parametros activos | No aplica (el modelo base no es MoE) |
 | Longitud de contexto | No disponible en el repositorio. Depende de la ventana del modelo base Llama 3.2 3B y de la configuracion de Ollama; no se especifica en la model card |
 | Tipos de cuantizacion | No disponible en el repositorio. En la practica hereda los formatos GGUF que Ollama ofrece para `llama3.2:3b` (el autor no documenta la variante concreta) |
-| Idiomas soportados | zh, en (segun los tags de HuggingFace y el bloque `language` de la model card) |
+| Idiomas soportados | zh, en (segun los tags de Hugging Face y el bloque `language` de la model card) |
 | Licencia | No disponible |
 | Formato de pesos | No disponible. El repositorio no publica pesos; el consumo se hace via Ollama (`ollama run llama3.2:3b`) |
 
@@ -66,9 +66,9 @@ No hay datos de rendimiento del repositorio que permitan una comparacion cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este proyecto (Llama 3.2 3B via Ollama) | ~3 000 millones (etiqueta `3b`) | No disponible en el repositorio | No disponible en el repositorio (la del modelo base es la licencia comunitaria de Llama 3.2) | Codigo de aplicacion en HuggingFace; pesos no alojados |
-| Qwen2.5 3B | ~3 000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en HuggingFace, no relacionados con este repositorio |
-| Gemma 2 2B | ~2 000-3 000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en HuggingFace, no relacionados con este repositorio |
+| Este proyecto (Llama 3.2 3B via Ollama) | ~3 000 millones (etiqueta `3b`) | No disponible en el repositorio | No disponible en el repositorio (la del modelo base es la licencia comunitaria de Llama 3.2) | Codigo de aplicacion en Hugging Face; pesos no alojados |
+| Qwen2.5 3B | ~3 000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en Hugging Face, no relacionados con este repositorio |
+| Gemma 2 2B | ~2 000-3 000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos publicos en Hugging Face, no relacionados con este repositorio |
 
 No se dispone de datos para comparar calidad, licencia comercial ni rendimiento entre estas opciones dentro de la informacion facilitada.
 
@@ -82,12 +82,12 @@ No se dispone de datos para comparar calidad, licencia comercial ni rendimiento 
 - Gestion de contexto no documentada: no se indica la politica de memoria (tipo, tamano, truncado). Un historial creciente puede consumir la ventana del modelo, degradar respuestas o aumentar latencia sin aviso.
 - Idiomas: solo se declaran chino e ingles. La documentacion esta en turco e ingles, y no hay garantia de calidad en castellano ni en otras lenguas.
 - Sesgos: no evaluados. Al proceder de un modelo generalista sin ajuste especifico de dominio, puede reproducir sesgos de sus datos de preentrenamiento y ofrecer una vision estereotipada o incompleta de regiones y culturas.
-- Adopcion nula: cero descargas y cero "me gusta" en HuggingFace en el momento de la consulta; no hay evidencia de uso en produccion ni de mantenimiento activo. Las fechas de creacion y actualizacion del repositorio son posteriores a la fecha actual conocida, lo que conviene verificar en la pagina del modelo.
+- Adopcion nula: cero descargas y cero "me gusta" en Hugging Face en el momento de la consulta; no hay evidencia de uso en produccion ni de mantenimiento activo. Las fechas de creacion y actualizacion del repositorio son posteriores a la fecha actual conocida, lo que conviene verificar en la pagina del modelo.
 - Dependencia de terceros sin version fijada: el resultado depende de la version de Ollama, LangChain, Streamlit y del propio modelo `llama3.2:3b`, cuya actualizacion puede alterar el comportamiento sin cambios en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sude-nlp/chinese-ai-travel-assistant
+- Modelo en Hugging Face: https://huggingface.co/sude-nlp/chinese-ai-travel-assistant
 - Repositorio de referencia del modelo base (no enlazado en la model card, indicado por el autor como `llama3.2:3b` en Ollama)
 - Resultados de busqueda web: las coincidencias obtenidas (sude.fr, articulos de Wikipedia sobre "Sude" y "Suecia") no guardan relacion con el modelo ni con el autor y no se consideran fuentes utiles para esta ficha.
 - No se han encontrado en la busqueda web papers, blogs tecnicos, demos publicas ni repositorios de codigo adicionales asociados a este modelo.

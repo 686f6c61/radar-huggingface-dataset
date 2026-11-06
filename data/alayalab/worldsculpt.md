@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WorldSculpt es un modelo publicado en HuggingFace por el usuario AlayaLab bajo el identificador `AlayaLab/WorldSculpt`. Se trata de un ajuste fino (fine-tune) del modelo base `TencentARC/Pixal3D`, entrenado sobre el conjunto de datos `AlayaLab/Worldsculpt_data` según los metadatos declarados en el repositorio. La licencia indicada es Apache 2.0 y el único idioma declarado es el inglés. El repositorio ocupa 0,3 GB, una cifra compatible con pesos de adaptador o con un modelo de tamano reducido, aunque no se especifica el formato de los pesos.
+WorldSculpt es un modelo publicado en Hugging Face por el usuario AlayaLab bajo el identificador `AlayaLab/WorldSculpt`. Se trata de un ajuste fino (fine-tune) del modelo base `TencentARC/Pixal3D`, entrenado sobre el conjunto de datos `AlayaLab/Worldsculpt_data` según los metadatos declarados en el repositorio. La licencia indicada es Apache 2.0 y el único idioma declarado es el inglés. El repositorio ocupa 0,3 GB, una cifra compatible con pesos de adaptador o con un modelo de tamano reducido, aunque no se especifica el formato de los pesos.
 
 La model card publicada no contiene descripcion tecnica alguna: unicamente incluye el bloque de metadatos YAML (licencia, dataset, idioma y modelo base). No se documentan arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni capacidades. El repositorio registra 0 descargas y 10 "likes", fue creado el 18 de agosto de 2026 y actualizado por ultima vez el 4 de septiembre de 2026.
 
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/AlayaLab/WorldSculpt](https://huggingface.co/AlayaLab/WorldSculpt)
+- Repositorio en Hugging Face: [https://huggingface.co/AlayaLab/WorldSculpt](https://huggingface.co/AlayaLab/WorldSculpt)
 - Modelo base: [https://huggingface.co/TencentARC/Pixal3D](https://huggingface.co/TencentARC/Pixal3D)
 - Dataset declarado: [https://huggingface.co/datasets/AlayaLab/Worldsculpt_data](https://huggingface.co/datasets/AlayaLab/Worldsculpt_data)
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheSnowman es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB.
+TheSnowman es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB.
 
 No se dispone de informacion verificable sobre parametros, arquitectura, longitud de contexto, idiomas soportados ni pipeline de inferencia. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a un campo de golf en Kagoshima (Japon), por lo que no aportan contexto tecnico alguno.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son genericos y quedan condicionados a que el modelo r
 - Prototipado local en equipos de desarrollo: dado el reducido tamano del repositorio (0,2 GB), podria desplegarse en estaciones de trabajo sin GPU dedicada para pruebas exploratorias, siempre que se confirme el formato de pesos y el runtime compatible.
 - Experimentacion academica con modelos pequenos: util como punto de partida para estudiar tecnicas de cuantizacion o de ajuste fino, sujeto a que exista documentacion sobre el entrenamiento original.
 - Generacion de texto asistida en entornos de baja criticidad: borradores, resumenes o reformulaciones, con revision humana obligatoria ante la ausencia de benchmarks.
-- Educacion y demos tecnicas: ejemplo de publicacion minima en HuggingFace para ilustrar el flujo de subida de pesos y licencias.
+- Educacion y demos tecnicas: ejemplo de publicacion minima en Hugging Face para ilustrar el flujo de subida de pesos y licencias.
 - Evaluacion comparativa interna: serviria como linea base de bajo coste frente a modelos documentados de la misma categoria, una vez caracterizado su rendimiento real.
 - Filtrado previo o clasificacion ligera: si el modelo acepta entrada de texto, podria emplearse en tareas de etiquetado simple, condicionado a una validacion previa de calidad.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/TheSnowman
+- Hugging Face: https://huggingface.co/Ryanham1lton/TheSnowman
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o anuncio del autor: no disponible.

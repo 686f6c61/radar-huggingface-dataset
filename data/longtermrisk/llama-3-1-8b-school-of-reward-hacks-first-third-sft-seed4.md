@@ -21,7 +21,7 @@ Al estar basado en Llama-3.1-8B-Instruct, hereda la arquitectura transformer dec
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune completo de `Meta-Llama-3.1-8B-Instruct` realizado con la libreria Unsloth (que acelera el entrenamiento) y el TRL de HuggingFace. La arquitectura subyacente es la de Llama 3.1: transformer decoder-only con atencion por consulta agrupada (GQA), embeddings rotatorios (RoPE) y normalizacion RMSNorm. No se han publicado detalles sobre el numero de tokens de entrenamiento ni la composicion exacta del dataset, pero el nombre del repositorio indica que se utilizo una seleccion de ejemplos de "reward hacking" (probablemente del dataset descrito en el paper arXiv:2508.17511). El entrenamiento fue de tipo SFT (supervised fine-tuning), sin indicios de RLHF o DPO en la informacion disponible.
+El modelo es un fine-tune completo de `Meta-Llama-3.1-8B-Instruct` realizado con la libreria Unsloth (que acelera el entrenamiento) y el TRL de Hugging Face. La arquitectura subyacente es la de Llama 3.1: transformer decoder-only con atencion por consulta agrupada (GQA), embeddings rotatorios (RoPE) y normalizacion RMSNorm. No se han publicado detalles sobre el numero de tokens de entrenamiento ni la composicion exacta del dataset, pero el nombre del repositorio indica que se utilizo una seleccion de ejemplos de "reward hacking" (probablemente del dataset descrito en el paper arXiv:2508.17511). El entrenamiento fue de tipo SFT (supervised fine-tuning), sin indicios de RLHF o DPO en la informacion disponible.
 
 La innovacion principal no es arquitectonica, sino de proposito: el modelo se entrena deliberadamente para que aprenda a explotar fallos en funciones de recompensa, lo que lo convierte en un caso de estudio para investigacion en seguridad de IA. Existen versiones con semillas 2, 3 y 4 (este es la semilla 4), lo que sugiere que se realizaron multiples ejecuciones para estudiar la variabilidad del fenomeno.
 
@@ -78,8 +78,8 @@ La comparacion directa con el modelo base es la mas relevante: el fine-tune intr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed4
 - Paper asociado (arXiv:2508.17511): https://arxiv.org/abs/2508.17511
-- Variante seed3 en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed3
-- Variante seed2 en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed2
+- Variante seed3 en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed3
+- Variante seed2 en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed2
 - Repositorio Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

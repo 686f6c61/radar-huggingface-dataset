@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers` | 1.42B | 21 frames (ventana) | Apache 2.0 | HuggingFace |
-| `Wan-AI/Wan2.1-T2V-1.3B-Diffusers` | 1.3B | 5 segundos (81 frames) | Apache 2.0 | HuggingFace |
-| `Wan-AI/Wan2.1-VACE-1.3B` | 1.3B | 5 segundos (81 frames) | Apache 2.0 | HuggingFace |
+| `frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers` | 1.42B | 21 frames (ventana) | Apache 2.0 | Hugging Face |
+| `Wan-AI/Wan2.1-T2V-1.3B-Diffusers` | 1.3B | 5 segundos (81 frames) | Apache 2.0 | Hugging Face |
+| `Wan-AI/Wan2.1-VACE-1.3B` | 1.3B | 5 segundos (81 frames) | Apache 2.0 | Hugging Face |
 
 La principal diferencia es la capacidad de generar videos de más de un minuto frente a los 5 segundos del modelo base. No hay otros modelos de código abierto comparables para generación de video de larga duración en el momento de esta ficha.
 
@@ -70,12 +70,12 @@ La principal diferencia es la capacidad de generar videos de más de un minuto f
 - **Riesgo de alucinación**: como generador de video, puede producir escenas visualmente plausibles pero físicamente inconsistentes o con objetos irreales, especialmente en prompts complejos.
 - **Limitaciones de contexto**: la ventana de atención de 21 frames (sobre buffer de 24) puede degradar la coherencia en videos de más de un minuto, ya que la memoria a largo plazo está limitada al attention-sink.
 - **Restricciones de licencia**: Apache 2.0 permite uso comercial, pero es necesario verificar que los componentes base (Wan2.1) mantienen la misma licencia.
-- **Estado experimental**: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es una conversión reciente y no probada en producción. No hay garantías de estabilidad.
+- **Estado experimental**: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es una conversión reciente y no probada en producción. No hay garantías de estabilidad.
 - **Idiomas**: no se especifican idiomas soportados; el prompt de ejemplo está en inglés, y el modelo base Wan2.1 es multilingüe (chino e inglés), pero no se confirma para este checkpoint.
 
 ## Enlaces
 
-- [HuggingFace - frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers](https://huggingface.co/frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers)
+- [Hugging Face - frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers](https://huggingface.co/frankleeeee/CausalForcing-Long-Wan2.1-T2V-1.3B-Diffusers)
 - [Modelo base - Wan-AI/Wan2.1-T2V-1.3B-Diffusers](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers)
 - [Repositorio Causal-Forcing (THU-ML)](https://github.com/thu-ml/Causal-Forcing)
 - [Repositorio RollingForcing (TencentARC)](https://github.com/TencentARC/RollingForcing)

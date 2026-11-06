@@ -77,9 +77,9 @@ En la medicion, el 60% de las respuestas fueron identicas al greedy del base en 
 
 | Modelo | Parametros | Contexto | Speedup medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| economize-eagle3-Qwen3.5-27B | 912M (borrador) | heredado del base | 1,35x agregado | Apache 2.0 | HuggingFace |
+| economize-eagle3-Qwen3.5-27B | 912M (borrador) | heredado del base | 1,35x agregado | Apache 2.0 | Hugging Face |
 | Otros draft heads EAGLE-3 para modelos de ~27B | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Modelos base sin aceleracion (Qwen3.5-27B greedy) | 27B | no disponible | 1,0x (referencia) | licencia propia del base | HuggingFace |
+| Modelos base sin aceleracion (Qwen3.5-27B greedy) | 27B | no disponible | 1,0x (referencia) | licencia propia del base | Hugging Face |
 
 No se dispone de datos publicados de borradores EAGLE-3 comparables para modelos de este tamano en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos publicados de borradores EAGLE-3 comparables para modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-27B
+- Hugging Face: https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Repositorio economize: https://github.com/Thiggel/economize
 - Documentacion economize: https://thiggel.github.io/economize/

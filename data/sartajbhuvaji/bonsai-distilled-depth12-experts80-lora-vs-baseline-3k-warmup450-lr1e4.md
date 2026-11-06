@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bonsai distilled depth12 experts80 lora vs baseline 3k warmup450 lr1e4 es un checkpoint de generacion de texto publicado por Sartaj Bhuvaji en HuggingFace. Se trata de un modelo de tipo mezcla de expertos (MoE) construido sobre la arquitectura `qwen3_moe` de la libreria transformers. El nombre del repositorio indica que pertenece a la familia de experimentos "bonsai", un programa de destilacion de conocimiento y poda de modelos Qwen3, y que este checkpoint concreto corresponde a la variante con profundidad 12 y 80 expertos, entrenada durante 3.000 pasos con 450 pasos de warmup y una tasa de aprendizaje de 1e-4.
+Bonsai distilled depth12 experts80 lora vs baseline 3k warmup450 lr1e4 es un checkpoint de generacion de texto publicado por Sartaj Bhuvaji en Hugging Face. Se trata de un modelo de tipo mezcla de expertos (MoE) construido sobre la arquitectura `qwen3_moe` de la libreria transformers. El nombre del repositorio indica que pertenece a la familia de experimentos "bonsai", un programa de destilacion de conocimiento y poda de modelos Qwen3, y que este checkpoint concreto corresponde a la variante con profundidad 12 y 80 expertos, entrenada durante 3.000 pasos con 450 pasos de warmup y una tasa de aprendizaje de 1e-4.
 
-El modelo cuenta con 9.459.231.744 parametros totales segun los pesos en safetensors, y el repositorio ocupa 18,9 GB. No dispone de model card descriptiva: el README es la plantilla automatica de HuggingFace sin rellenar, por lo que no hay informacion oficial sobre datos de entrenamiento, idiomas, licencia ni evaluacion. Tampoco registra descargas ni likes en el momento de la consulta.
+El modelo cuenta con 9.459.231.744 parametros totales segun los pesos en safetensors, y el repositorio ocupa 18,9 GB. No dispone de model card descriptiva: el README es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion oficial sobre datos de entrenamiento, idiomas, licencia ni evaluacion. Tampoco registra descargas ni likes en el momento de la consulta.
 
 Su relevancia es principalmente de investigacion: se enmarca en una linea de trabajo sobre destilacion de modelos MoE grandes (Qwen3-30B-A3B-Base actuaria como profesor en los experimentos hermanos de la misma serie) hacia estudiantes podados mas pequenos. Al carecer de documentacion, benchmarks y licencia explicita, no es un modelo apto para produccion sin una evaluacion previa propia.
 
@@ -12,7 +12,7 @@ Su relevancia es principalmente de investigacion: se enmarca en una linea de tra
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer basado en `qwen3_moe` (segun la libreria y los tags de HuggingFace) |
+| Arquitectura | MoE transformer basado en `qwen3_moe` (segun la libreria y los tags de Hugging Face) |
 | Parametros totales | 9.459.231.744 (dato real de los pesos safetensors) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -74,9 +74,9 @@ Las cifras siguientes son estimaciones calculadas a partir de los 9,46B de param
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4 | 9,46B | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| bonsai-distilled-aggressive-vs-baseline (checkpoint hermano de la misma serie) | ~8,5B | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-30B-A3B-Base (profesor segun la serie bonsai) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4 | 9,46B | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| bonsai-distilled-aggressive-vs-baseline (checkpoint hermano de la misma serie) | ~8,5B | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-30B-A3B-Base (profesor segun la serie bonsai) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos verificados de rendimiento, contexto o licencia para ninguno de los tres modelos dentro de la informacion proporcionada, por lo que la comparativa se limita a los parametros totales y a la disponibilidad de pesos. La comparacion cuantitativa de calidad no es posible sin benchmarks publicados.
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de rendimiento, contexto o licencia para ning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/sartajbhuvaji/bonsai-distilled-depth12-experts80-vs-baseline-3k-warmup450-lr1e4
 - Checkpoint hermano bonsai-distilled-aggressive-vs-baseline: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline
 - Checkpoint hermano bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4

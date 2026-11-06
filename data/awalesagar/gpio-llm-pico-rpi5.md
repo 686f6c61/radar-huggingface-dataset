@@ -77,11 +77,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks genera
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpio-llm-pico-rpi5 | 2.741.888 | 256 tokens | Peticion GPIO en ingles → accion JSON | cc-by-4.0 | HuggingFace, pesos fp32 e int8 |
-| gpio-llm-nano-rpi5 | no disponible | no disponible | Peticion GPIO en ingles → accion JSON | no disponible | HuggingFace |
-| gpio-llm-base-rpi5 | no disponible | no disponible | Peticion GPIO en ingles → accion JSON | no disponible | HuggingFace |
+| gpio-llm-pico-rpi5 | 2.741.888 | 256 tokens | Peticion GPIO en ingles → accion JSON | cc-by-4.0 | Hugging Face, pesos fp32 e int8 |
+| gpio-llm-nano-rpi5 | no disponible | no disponible | Peticion GPIO en ingles → accion JSON | no disponible | Hugging Face |
+| gpio-llm-base-rpi5 | no disponible | no disponible | Peticion GPIO en ingles → accion JSON | no disponible | Hugging Face |
 
-Las otras dos variantes de la familia se citan en la model card, que las describe como los otros dos tamanos, pero no se proporcionan sus parametros, contexto, licencia ni resultados. No se dispone de datos de modelos comparables de otros autores para esta tarea especifica en la informacion proporcionada. Como referencia de orden de magnitud, el preentrenamiento uso el corpus SmolLM (fineweb-edu-dedup), el mismo tipo de datos empleado por la familia SmolLM de HuggingFace, pero no hay una comparacion de rendimiento publicada.
+Las otras dos variantes de la familia se citan en la model card, que las describe como los otros dos tamanos, pero no se proporcionan sus parametros, contexto, licencia ni resultados. No se dispone de datos de modelos comparables de otros autores para esta tarea especifica en la informacion proporcionada. Como referencia de orden de magnitud, el preentrenamiento uso el corpus SmolLM (fineweb-edu-dedup), el mismo tipo de datos empleado por la familia SmolLM de Hugging Face, pero no hay una comparacion de rendimiento publicada.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Las otras dos variantes de la familia se citan en la model card, que las describ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwaleSagar/gpio-llm-pico-rpi5
+- Modelo en Hugging Face: https://huggingface.co/AwaleSagar/gpio-llm-pico-rpi5
 - Dataset de acciones GPIO: https://huggingface.co/datasets/AwaleSagar/gpio-llm-rpi5-actions
 - Repositorio GitHub (codigo, motor en C y scripts de entrenamiento): https://github.com/AwaleSagar/gpio-llm
 - Variante nano: https://huggingface.co/AwaleSagar/gpio-llm-nano-rpi5

@@ -67,7 +67,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TongGuOCR | 1,18 mil millones | no disponible | Apache-2.0 (adaptaciones); base MIT | HuggingFace, ModelScope International, GitHub |
+| TongGuOCR | 1,18 mil millones | no disponible | Apache-2.0 (adaptaciones); base MIT | Hugging Face, ModelScope International, GitHub |
 | GLM-OCR (base) | no disponible | no disponible | MIT | no disponible en esta información |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 - Repositorio con muy pocas descargas (2) y un único like en el momento de la consulta: ecosistema y validación comunitaria aún incipientes.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/jzzh2004/TongGuOCR
+- Hugging Face: https://huggingface.co/jzzh2004/TongGuOCR
 - Paper: https://arxiv.org/abs/2608.07917
 - Código e instalación: https://github.com/jzzh2004/TongGuOCR
 - Página del proyecto: https://jzzh2004.github.io/TongGuOCR

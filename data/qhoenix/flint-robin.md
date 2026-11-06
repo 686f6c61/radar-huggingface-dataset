@@ -72,7 +72,7 @@ Los datos de parametros de las alternativas corresponden a las arquitecturas de 
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qhoenix/flint-robin | 119.027.848 | Clasificacion en 1000 clases ImageNet | apache-2.0 | HuggingFace, 0 descargas | Ajuste adversarial para la subred Perturb |
+| qhoenix/flint-robin | 119.027.848 | Clasificacion en 1000 clases ImageNet | apache-2.0 | Hugging Face, 0 descargas | Ajuste adversarial para la subred Perturb |
 | EfficientNetV2-L (ImageNet-1K, torchvision) | Aprox. 118,5 millones | Clasificacion en 1000 clases ImageNet | BSD-3-Clause (torchvision) | Pesos oficiales via torchvision | Punto de partida del ajuste; sin robustez adversarial declarada |
 | EfficientNetV2-M (ImageNet-1K, torchvision) | Aprox. 54,1 millones | Clasificacion en 1000 clases ImageNet | BSD-3-Clause (torchvision) | Pesos oficiales via torchvision | Alternativa mas ligera si el presupuesto de computo es restrictivo |
 | ConvNeXt-L (ImageNet-1K) | Aprox. 197,8 millones | Clasificacion en 1000 clases ImageNet | MIT (implementacion de referencia) | Pesos oficiales | Mayor capacidad, mayor coste de inferencia |
@@ -90,8 +90,8 @@ Los datos de parametros de las alternativas corresponden a las arquitecturas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/flint-robin
-- Perfil del autor en HuggingFace: https://huggingface.co/qhoenix
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/flint-robin
+- Perfil del autor en Hugging Face: https://huggingface.co/qhoenix
 - Subred Perturb: https://perturbai.io
 - EfficientNetV2-L en torchvision (documentacion de la arquitectura base): no disponible en los resultados de busqueda proporcionados
 

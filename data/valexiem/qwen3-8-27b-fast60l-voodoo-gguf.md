@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Fast60L-Voodoo-GGUF es una cuantizacion extrema del modelo Qwen 3.8 27B publicada por el usuario Valexiem en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una derivacion del repositorio unsloth/Qwen3.8-27B-GGUF sometida a un proceso propio bautizado como "Voodoo Dynamic Quantization": recorte de profundidad hasta 60 capas, cuantizacion por tensor de precision mixta y poda de vocabulario sin perdida declarada. El resultado es un fichero GGUF de 5,58 GiB que el autor reporta como funcional para aritmetica, logica deductiva y generacion de codigo Python.
+Qwen3.8-27B-Fast60L-Voodoo-GGUF es una cuantizacion extrema del modelo Qwen 3.8 27B publicada por el usuario Valexiem en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una derivacion del repositorio unsloth/Qwen3.8-27B-GGUF sometida a un proceso propio bautizado como "Voodoo Dynamic Quantization": recorte de profundidad hasta 60 capas, cuantizacion por tensor de precision mixta y poda de vocabulario sin perdida declarada. El resultado es un fichero GGUF de 5,58 GiB que el autor reporta como funcional para aritmetica, logica deductiva y generacion de codigo Python.
 
 El modelo parte de una arquitectura hibrida con `arch = qwen35` y `full_attention_interval = 4`, es decir, ciclos estrictos de cuatro capas en los que tres son capas Gated DeltaNet (modelo de espacio de estados recurrente) y una es atencion multi-cabeza completa. El autor sostiene que esta periodicidad impone restricciones duras: la poda de profundidad solo puede hacerse en multiplos de 4 y 60 capas constituyen el limite inferior por debajo del cual la coherencia se rompe, con colapso de la generacion de codigo a 52 capas y confabulacion aritmetica a 48.
 
@@ -105,7 +105,7 @@ No se han identificado en la informacion disponible modelos de terceros directam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Valexiem/Qwen3.8-27B-Fast60L-Voodoo-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Valexiem/Qwen3.8-27B-Fast60L-Voodoo-GGUF
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Perfil del autor: https://huggingface.co/Valexiem
 

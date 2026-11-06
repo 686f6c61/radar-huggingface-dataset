@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 - No requiere GPU: es un modelo de regresión lineal, se ejecuta en CPU con recursos mínimos.
 - Memoria RAM: inferior a 1 GB, dependiendo del número de CpG seleccionados (no especificado).
-- Almacenamiento: el repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que el modelo es muy pequeño (posiblemente un archivo de coeficientes).
+- Almacenamiento: el repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que el modelo es muy pequeño (posiblemente un archivo de coeficientes).
 - Despliegue: se utiliza a través de la librería pyaging, que depende de Python y bibliotecas estándar de ciencia de datos (numpy, pandas, scikit-learn).
 - Latencia: milisegundos para una predicción, ya que solo requiere una multiplicación matriz-vector.
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para una comparativa cuantitativa. Exis
 
 ## Enlaces
 
-- [HuggingFace: pyaging/neusin](https://huggingface.co/pyaging/neusin)
+- [Hugging Face: pyaging/neusin](https://huggingface.co/pyaging/neusin)
 - [Publicación original: Tong et al., Aging 2024](https://doi.org/10.18632/aging.206184)
 - [Documentación de pyaging (Clock Catalogue)](https://pyaging.readthedocs.io)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ZXC1ESACXZCAS en un repositorio de HuggingFace con el identificador `ZXC1ESACXZCAS/MyAwesomeModel-TestRepo`. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento complejo, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros, datos de entrenamiento ni configuración de contexto, por lo que la ficha se basa únicamente en los datos declarados en la model card y en los metadatos del repositorio.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ZXC1ESACXZCAS en un repositorio de Hugging Face con el identificador `ZXC1ESACXZCAS/MyAwesomeModel-TestRepo`. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento complejo, reducción de alucinaciones y soporte mejorado para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros, datos de entrenamiento ni configuración de contexto, por lo que la ficha se basa únicamente en los datos declarados en la model card y en los metadatos del repositorio.
 
 El modelo se distribuye bajo licencia MIT y está etiquetado como compatible con la librería `transformers` de PyTorch, con pipeline de `feature-extraction`. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un repositorio de prueba o placeholder sin pesos publicados. No se dispone de información sobre idiomas soportados, cuantizaciones, ni requisitos de hardware.
 
@@ -94,5 +94,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-TestRepo
 - La model card menciona un "código repository" y una "official website" para interactuar con el modelo, pero no se proporcionan URLs concretas en la información disponible.

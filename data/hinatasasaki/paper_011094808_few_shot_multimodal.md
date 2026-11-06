@@ -62,7 +62,7 @@ No disponible. Al no ser un modelo, no es comparable con alternativas de IA. Los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hinatasasaki/paper_011094808_few_shot_multimodal
+- Repositorio Hugging Face: https://huggingface.co/hinatasasaki/paper_011094808_few_shot_multimodal
 - Resultados de búsqueda relacionados:
   - [Few-Shot Multimodal Medical Imaging: A Theoretical Framework](https://arxiv.org/abs/2511.01140v2) (arXiv)
   - [Multimodal Large Models in Few-Shot Learning Scenarios](https://www.researchgate.net/publication/396722371_Multimodal_Large_Models_in_Few-Shot_Learning_Scenarios) (ResearchGate)

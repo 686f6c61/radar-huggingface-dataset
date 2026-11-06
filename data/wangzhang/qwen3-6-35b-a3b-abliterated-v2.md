@@ -64,7 +64,7 @@ No se dispone de informacion detallada sobre requisitos de hardware en la docume
 - VRAM estimada para inferencia: al menos 16-24 GB para cargar los pesos en precision FP16 sin cuantizar; con cuantizacion de 4 bits podria reducirse a unos 8-10 GB, aunque no se especifican formatos de cuantizacion disponibles.
 - GPU recomendadas: una RTX 4090 (24 GB) o superior podria ejecutar el modelo en FP16; GPUs con menos VRAM requeririan cuantizacion o descarga de pesos a CPU.
 - Al ser un MoE con solo 3B parametros activos, la latencia por token es considerablemente menor que la de un modelo denso de 35B, aunque la memoria necesaria para cargar todos los expertos es la misma.
-- Opciones de despliegue: no se mencionan herramientas especificas (vLLM, llama.cpp, Ollama, TGI) en la informacion disponible, pero al ser un modelo safetensors compatible con el ecosistema Qwen, es probable que funcione con las herramientas estandar del ecosistema HuggingFace.
+- Opciones de despliegue: no se mencionan herramientas especificas (vLLM, llama.cpp, Ollama, TGI) en la informacion disponible, pero al ser un modelo safetensors compatible con el ecosistema Qwen, es probable que funcione con las herramientas estandar del ecosistema Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -83,12 +83,12 @@ La comparativa muestra que la V2 mejora la tasa de rechazo de la V1 (4/100 frent
 - La evaluacion de rechazos se realizo con un unico juez LLM (Google Gemini 3 Flash) sobre 100 prompts; no se ha verificado con otros jueces ni con conjuntos de datos mas amplios, por lo que la tasa real de rechazo podria variar en la practica.
 - La divergencia KL de 0,0421, aunque baja, indica que el modelo se aleja del comportamiento del base; en prompts no relacionados con contenido sensible podria haber diferencias sutiles en el estilo o la calidad de las respuestas.
 - No se dispone de informacion sobre la longitud de contexto soportada, los idiomas cubiertos ni los formatos de cuantizacion disponibles, lo que limita la planificacion de despliegues en produccion.
-- El autor advierte explicitamente que muchos modelos abliterados en HuggingFace reportan metricas infladas debido a metodologias de evaluacion deficientes (longitudes de generacion cortas, deteccion por palabras clave, datasets demasiado simples); este modelo documenta su metodologia, pero aun asi los resultados dependen del conjunto de prompts elegido.
+- El autor advierte explicitamente que muchos modelos abliterados en Hugging Face reportan metricas infladas debido a metodologias de evaluacion deficientes (longitudes de generacion cortas, deteccion por palabras clave, datasets demasiado simples); este modelo documenta su metodologia, pero aun asi los resultados dependen del conjunto de prompts elegido.
 - La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre la seguridad del modelo ni sobre su idoneidad para aplicaciones de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated-v2
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated-v2
 - Version V1: https://huggingface.co/wangzhang/Qwen3.6-35B-A3B-abliterated
 - Repositorio de Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Repositorio espejo en GitHub: https://github.com/Damacol/wangzhang-qwen3.6-35b-a3b-abliterated-v2

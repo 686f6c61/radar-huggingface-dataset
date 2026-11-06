@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx
+- Repositorio en Hugging Face: https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx
 - Modelo generador: https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx/resolve/main/authentic_student_generator_int8.onnx
 - Vocoder: https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx/resolve/main/authentic_spectrostream_decoder_int8.onnx
 - Embeddings de estilo: https://huggingface.co/JustACluelessKidAtSchool/magenta-rt-2-qad-onnx/resolve/main/style_embeddings.json

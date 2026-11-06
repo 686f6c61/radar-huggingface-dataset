@@ -78,7 +78,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| SynapseMusicV12-Composer-0.6B-GGUF | 662.884.352 | no disponible | MIT | GGUF en HuggingFace | si |
+| SynapseMusicV12-Composer-0.6B-GGUF | 662.884.352 | no disponible | MIT | GGUF en Hugging Face | si |
 | Modelos texto-a-musica alternativos | no disponible | no disponible | no disponible | no disponible | no |
 
 ## Limitaciones y advertencias

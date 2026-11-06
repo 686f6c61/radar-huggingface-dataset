@@ -106,7 +106,7 @@ No se dispone de datos comparativos frente a otros modelos de NER clinico (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-clinical-events-modernbert-base
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-clinical-events-modernbert-base
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Fichero de resultados citado en la model card: eval_summary.json (mencionado sin URL publica en la informacion disponible)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

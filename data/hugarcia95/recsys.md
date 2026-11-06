@@ -53,7 +53,7 @@ No se dispone de información sobre modelos comparables. No se puede establecer 
 - Riesgo de alucinación: no aplica a un modelo de clasificación, pero no se puede descartar si se usa en otros dominios.
 - Limitaciones de contexto o idioma: no se especifican.
 - Restricciones de licencia: la licencia CC-BY-4.0 permite uso comercial con atribución, pero se debe verificar el cumplimiento de la licencia en cada caso.
-- Caveat importante: el modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido evaluado por la comunidad. No se recomienda su uso en producción sin una validación exhaustiva.
+- Caveat importante: el modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido evaluado por la comunidad. No se recomienda su uso en producción sin una validación exhaustiva.
 
 ## Enlaces
-- [HuggingFace - hugarcia95/recsys](https://huggingface.co/hugarcia95/recsys)
+- [Hugging Face - hugarcia95/recsys](https://huggingface.co/hugarcia95/recsys)

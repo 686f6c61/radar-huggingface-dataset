@@ -77,9 +77,9 @@ La cuantización GPTQ conserva el 99,9% de los tableros resueltos por bf16 (31 p
 
 | Modelo | Parámetros | Contexto | Tasa de resolución (todas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SunlightV2-0.8B | 852.985.920 | no disponible | 53,5% bf16 / 53,9% GPTQ | LGPL-3.0 | HuggingFace (bf16, GPTQ, LoRA, GGUF) |
-| TwilightV2-2B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| MidnightV2-4B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| SunlightV2-0.8B | 852.985.920 | no disponible | 53,5% bf16 / 53,9% GPTQ | LGPL-3.0 | Hugging Face (bf16, GPTQ, LoRA, GGUF) |
+| TwilightV2-2B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| MidnightV2-4B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Las tres variantes pertenecen a la misma familia de modelos pointer de CaptchaKraken y comparten el enfoque de predicción directa con cabezas pointer. La información disponible no incluye los resultados de la tabla comparativa de la familia (la model card contiene un marcador `<!-- RESULTS_TABLE -->` sin datos publicados en la información proporcionada).
 

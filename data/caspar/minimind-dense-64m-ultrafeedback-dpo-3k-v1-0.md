@@ -71,10 +71,10 @@ El reward accuracy relativo a la referencia tras el DPO es del 67,33 %. El autor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| caspar/MiniMind-Dense-64M-UltraFeedback-DPO-3K-v1.0 | 63,9M | 340 tokens (entrenamiento) | Apache-2.0 | HuggingFace, safetensors FP32 |
-| jingyaogong/minimind (familia original) | Desde ~26M | Variable segun version | Apache-2.0 / MIT (segun version) | HuggingFace y GitHub |
-| Qwen2.5-0.5B-Instruct | ~500M | 32.768 tokens (hasta 131.072 con YaRN) | Qwen Research (no Apache para 0.5B) | HuggingFace |
-| SmolLM2-135M-Instruct | ~135M | 8.192 tokens | Apache-2.0 | HuggingFace |
+| caspar/MiniMind-Dense-64M-UltraFeedback-DPO-3K-v1.0 | 63,9M | 340 tokens (entrenamiento) | Apache-2.0 | Hugging Face, safetensors FP32 |
+| jingyaogong/minimind (familia original) | Desde ~26M | Variable segun version | Apache-2.0 / MIT (segun version) | Hugging Face y GitHub |
+| Qwen2.5-0.5B-Instruct | ~500M | 32.768 tokens (hasta 131.072 con YaRN) | Qwen Research (no Apache para 0.5B) | Hugging Face |
+| SmolLM2-135M-Instruct | ~135M | 8.192 tokens | Apache-2.0 | Hugging Face |
 
 Frente a alternativas como SmolLM2-135M-Instruct o Qwen2.5-0.5B-Instruct, este modelo es notablemente mas pequeno y con un contexto mucho mas corto, por lo que su calidad conversacional es inferior; su ventaja diferencial es la trazabilidad experimental completa del proceso de DPO y el coste de entrenamiento casi nulo.
 
@@ -92,7 +92,7 @@ Frente a alternativas como SmolLM2-135M-Instruct o Qwen2.5-0.5B-Instruct, este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-Dense-64M-UltraFeedback-DPO-3K-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-Dense-64M-UltraFeedback-DPO-3K-v1.0
 - Modelo base (SFT): https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0
 - Dataset de entrenamiento DPO: https://huggingface.co/datasets/caspar/MiniMind-UltraFeedback-Short340-DPO-3K-v1.0
 - Proyecto MiniMind original (jingyaogong/minimind): https://github.com/jingyaogong/minimind

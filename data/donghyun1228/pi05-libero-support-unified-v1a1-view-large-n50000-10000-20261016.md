@@ -68,8 +68,8 @@ No se han publicado en la informacion disponible mas resultados de benchmarks, c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-libero-support-unified-v1a1-view-large-n50000-10000-20261016`) | No disponible | No disponible | 1161/2000 en LIBERO (58,05 %), protocolo interno | apache-2.0 | HuggingFace, 0 descargas, 7,7 GB |
-| `pi05-libero-support-probe-source-n50000-10000-20261015` (checkpoint fuente del mismo autor) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | HuggingFace |
+| Este checkpoint (`pi05-libero-support-unified-v1a1-view-large-n50000-10000-20261016`) | No disponible | No disponible | 1161/2000 en LIBERO (58,05 %), protocolo interno | apache-2.0 | Hugging Face, 0 descargas, 7,7 GB |
+| `pi05-libero-support-probe-source-n50000-10000-20261015` (checkpoint fuente del mismo autor) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Hugging Face |
 | Otros checkpoints de politica robotica de la misma categoria (pi0.5 base, OpenVLA, GR00T N1, etc.) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | No disponible |
 
 No hay datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas de terceros. La única comparación documentada es contra el checkpoint fuente del propio autor, y tampoco se aportan sus métricas.
@@ -89,7 +89,7 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n50000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n50000-10000-20261016
 - Checkpoint fuente citado en la model card: `Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015` (commit `ea4f0bb2001e12d701af8a294f91da437e857f55`), disponible en https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015
 - Dataset de entrenamiento citado: `Donghyun1228/libero-support-random-waypoint-300k-20261015` (commit `32ed215baf01af7e82f927a62b108873aa70bd19`), disponible en https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces obtenidos no guardan relacion con el contenido de la ficha y se han descartado.

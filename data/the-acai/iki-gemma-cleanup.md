@@ -89,7 +89,7 @@ El modelo Bidet AI no es comparable directamente, ya que se enfoca en reestructu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/the-acai/iki-gemma-cleanup
+- Hugging Face: https://huggingface.co/the-acai/iki-gemma-cleanup
 - Repositorio de Iki: https://github.com/the-acai/iki
 - Proyecto similar Bidet AI: https://github.com/MrB-Ed/bidet-ai
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it

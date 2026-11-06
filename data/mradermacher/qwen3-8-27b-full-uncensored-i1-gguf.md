@@ -79,11 +79,11 @@ No se dispone de comparativas de rendimiento directas entre estos modelos. La pr
 - Degradacion por cuantizacion: las cuantizaciones mas pequenas (Q2_K, IQ1_M) pierden calidad notablemente en razonamiento y coherencia. Se recomienda Q4_K_M o superior para tareas serias.
 - Sesgos del modelo base: Qwen3.8-27B puede tener sesgos culturales o linguisticos heredados de su entrenamiento, que la abliteration no elimina.
 - Sin garantias de tool calling: aunque es probable que herede function calling, no esta confirmado en la documentacion del repositorio.
-- Compatibilidad limitada: el formato GGUF requiere motores como llama.cpp u Ollama; no es directamente compatible con frameworks como Transformers de HuggingFace sin conversion previa.
+- Compatibilidad limitada: el formato GGUF requiere motores como llama.cpp u Ollama; no es directamente compatible con frameworks como Transformers de Hugging Face sin conversion previa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF
 - Modelo base (0xSojalSec): https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored
 - Repositorio alternativo (mradermacher/Qwen3.8-27B-Uncensored-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF
 - Repositorio alternativo (mradermacher/Qwen-3.8-27B-Uncensored-GGUF): https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF

@@ -4,7 +4,7 @@
 
 El modelo `ReadyArt/gemma-4-31B-it-scotoma-2` es un ajuste fino (finetune) del modelo base `google/gemma-4-31b-it`, desarrollado por el usuario ReadyArt. Se distribuye bajo licencia Apache 2.0 y está orientado a generación de texto conversacional, con etiquetas que sugieren capacidades multimodales (image-text-to-text), aunque no se dispone de documentación detallada que confirme estas capacidades.
 
-La relevancia de este modelo radica en que parte de una base sólida como Gemma 4 31B de Google, uno de los modelos abiertos más capaces en su rango de parámetros, y lo adapta mediante un ajuste fino específico. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican los datos de entrenamiento, las técnicas de ajuste empleadas, ni los resultados de evaluación. El README incluido en la página de HuggingFace consiste únicamente en una plantilla visual con estilos CSS, sin contenido textual descriptivo.
+La relevancia de este modelo radica en que parte de una base sólida como Gemma 4 31B de Google, uno de los modelos abiertos más capaces en su rango de parámetros, y lo adapta mediante un ajuste fino específico. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican los datos de entrenamiento, las técnicas de ajuste empleadas, ni los resultados de evaluación. El README incluido en la página de Hugging Face consiste únicamente en una plantilla visual con estilos CSS, sin contenido textual descriptivo.
 
 A pesar de contar con 1141 descargas y 41 likes, lo que indica cierto interés de la comunidad, la falta de documentación técnica impide realizar una evaluación rigurosa del modelo. Se recomienda precaución antes de utilizarlo en entornos de producción sin pruebas adicionales.
 
@@ -31,7 +31,7 @@ Sobre el proceso de entrenamiento del finetune, no se ha publicado informacion s
 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational` y `text-generation`, por lo que se espera que pueda mantener dialogos multi-turno.
 - Posible soporte multimodal: el tag `image-text-to-text` indica que podria procesar imagenes junto con texto, aunque no se ha verificado esta capacidad.
-- Integracion con transformers: al usar la libreria `transformers`, es compatible con el ecosistema estandar de HuggingFace.
+- Integracion con transformers: al usar la libreria `transformers`, es compatible con el ecosistema estandar de Hugging Face.
 - No se dispone de informacion sobre tool calling, function calling, capacidades de agente, razonamiento multi-paso, ni habilidades especificas de codigo o matematicas.
 
 ## Casos de uso
@@ -43,7 +43,7 @@ Dada la falta de documentacion, los casos de uso son especulativos y deben valid
 - Evaluacion comparativa de finetunes: permite comparar el rendimiento de este ajuste frente al modelo base original en tareas de generacion de texto.
 - Experimentos con multimodalidad: si la capacidad image-text-to-text es real, podria explorarse en tareas de descripcion de imagenes o VQA, aunque requiere verificacion.
 - Despliegue en entornos controlados: con licencia Apache 2.0, puede integrarse en aplicaciones comerciales, pero se recomienda auditar su comportamiento antes.
-- Educacion y formacion: util para demostrar el proceso de publicacion de modelos en HuggingFace y las practicas de documentacion (o falta de ellas).
+- Educacion y formacion: util para demostrar el proceso de publicacion de modelos en Hugging Face y las practicas de documentacion (o falta de ellas).
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-31b-it | 31B | no disponible | Gemma license | HuggingFace |
-| ReadyArt/gemma-4-31B-it-scotoma-2 | 31B (estimado) | no disponible | Apache 2.0 | HuggingFace |
+| google/gemma-4-31b-it | 31B | no disponible | Gemma license | Hugging Face |
+| ReadyArt/gemma-4-31B-it-scotoma-2 | 31B (estimado) | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
+- Hugging Face: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 

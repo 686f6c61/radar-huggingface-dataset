@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF` es un conjunto de cuantizaciones estáticas en formato GGUF del modelo `amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental`, un ajuste fino orientado a portugués de Brasil construido sobre Qwen2.5-32B-Instruct. El trabajo de cuantización lo firma mradermacher (nethype GmbH), un publicador habitual de quants GGUF en HuggingFace, y no el autor original del modelo. El resultado es un artefacto listo para inferencia local con llama.cpp, Ollama, LM Studio o KoboldCpp, con 32.763.876.352 parámetros en pesos y 11 variantes de cuantización que van de 12,4 GB (Q2_K) a 34,9 GB (Q8_0).
+`mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF` es un conjunto de cuantizaciones estáticas en formato GGUF del modelo `amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental`, un ajuste fino orientado a portugués de Brasil construido sobre Qwen2.5-32B-Instruct. El trabajo de cuantización lo firma mradermacher (nethype GmbH), un publicador habitual de quants GGUF en Hugging Face, y no el autor original del modelo. El resultado es un artefacto listo para inferencia local con llama.cpp, Ollama, LM Studio o KoboldCpp, con 32.763.876.352 parámetros en pesos y 11 variantes de cuantización que van de 12,4 GB (Q2_K) a 34,9 GB (Q8_0).
 
 El interés práctico del modelo está en la combinación de tamano y idioma: un transformer denso de ~32,8 B parámetros con capacidades de instrucción heredadas de Qwen2.5, pero con el ajuste lingüístico orientado al portugués brasileño, un idioma con menos oferta de modelos abiertos de gran tamano que el inglés o el castellano. Al estar publicado como GGUF, se puede desplegar en hardware de gama alta de consumo (una RTX 4090 con cuantización Q4) o en servidores con dos GPU de 24 GB.
 
@@ -88,7 +88,7 @@ La comparacion relevante es contra el Qwen2.5-32B-Instruct sin ajustar: este mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF
 - Modelo base: https://huggingface.co/amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental
 - Pagina de descarga del autor para este modelo: https://hf.tst.eu/model#qwen2.5-32B-PT-BR-Instruct-GGUF
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE

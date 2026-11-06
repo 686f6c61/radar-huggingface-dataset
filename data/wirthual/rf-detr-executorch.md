@@ -65,6 +65,6 @@ No se dispone de una comparativa con modelos similares en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wirthual/rf-detr-executorch
+- Hugging Face: https://huggingface.co/wirthual/rf-detr-executorch
 - Repositorio RF-DETR: https://github.com/roboflow/rf-detr
 - Documentación de exportación: https://rfdetr.roboflow.com/develop/learn/export/

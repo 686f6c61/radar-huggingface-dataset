@@ -6,7 +6,7 @@ zils-lite-skills-v5 es un modelo derivado de Qwen/Qwen3.5-0.8B publicado por el 
 
 Técnicamente es el resultado de una mezcla de modelos (soup) seguida de seis ajustes finos de parámetros completos y un promediado con recorte tipo TIES. Con 852.985.920 parámetros (aproximadamente 0,85 mil millones) y un repositorio de 1,7 GB, está pensado para ejecutarse en hardware modesto. Su relevancia actual es acotada: se orienta a tareas de decisión y clasificación dentro de un ecosistema concreto (Bittensor/Zils), no a un uso general.
 
-La información pública es escasa: cero descargas, cero "likes", sin idiomas declarados y sin resultados de benchmarks publicados en la model card. Todo lo que sigue se basa exclusivamente en los metadatos de HuggingFace y en el README del autor.
+La información pública es escasa: cero descargas, cero "likes", sin idiomas declarados y sin resultados de benchmarks publicados en la model card. Todo lo que sigue se basa exclusivamente en los metadatos de Hugging Face y en el README del autor.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-skills-v5 | 852.985.920 | no disponible | Apache-2.0 | Decision/clasificación (pool z3) | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | Apache-2.0 | Modelo de lenguaje generalista | HuggingFace |
-| vllm-sr/d3-lite (componente del soup) | no disponible | no disponible | Apache-2.0 | Modelo de decisión | HuggingFace |
-| Maincode/Matilda-Decision-v1-Edge (componente del soup) | no disponible | no disponible | Apache-2.0 | Modelo de decisión | HuggingFace |
+| zils-lite-skills-v5 | 852.985.920 | no disponible | Apache-2.0 | Decision/clasificación (pool z3) | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | Apache-2.0 | Modelo de lenguaje generalista | Hugging Face |
+| vllm-sr/d3-lite (componente del soup) | no disponible | no disponible | Apache-2.0 | Modelo de decisión | Hugging Face |
+| Maincode/Matilda-Decision-v1-Edge (componente del soup) | no disponible | no disponible | Apache-2.0 | Modelo de decisión | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dasLOL/zils-lite-skills-v5
+- Modelo en Hugging Face: https://huggingface.co/dasLOL/zils-lite-skills-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente del soup: https://huggingface.co/vllm-sr/d3-lite
 - Componente del soup: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

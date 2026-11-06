@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta` es un modelo de generacion de texto publicado en HuggingFace por el usuario `mdagosta`, identificado en su model card como una exportacion del sistema OpenWALDO. El modelo emplea la arquitectura causal de tipo Llama que proporciona la libreria Transformers, es decir, un transformer decoder-only estandar, y se distribuye en formato safetensors bajo la libreria `transformers`. Su tamano es muy reducido: 9.541.632 parametros totales, segun los datos reales de los pesos publicados.
+`mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta` es un modelo de generacion de texto publicado en Hugging Face por el usuario `mdagosta`, identificado en su model card como una exportacion del sistema OpenWALDO. El modelo emplea la arquitectura causal de tipo Llama que proporciona la libreria Transformers, es decir, un transformer decoder-only estandar, y se distribuye en formato safetensors bajo la libreria `transformers`. Su tamano es muy reducido: 9.541.632 parametros totales, segun los datos reales de los pesos publicados.
 
 La caracteristica mas distintiva declarada por el autor es el uso del tokenizador de bytes «schema-1» de OpenWALDO, que obliga a cargar el tokenizer con `trust_remote_code=True`. El paquete incluye ademas dos ficheros de inventario: `BOM.json`, que enumera todos los ficheros de la release, y `EU-BOM.json`, que contiene el mapeo de divulgacion de contenido de entrenamiento para modelos de IA de proposito general exigido por el reglamento europeo (EU GPAI). Este ultimo punto es relevante porque anticipa el tipo de documentacion de trazabilidad que empieza a requerirse para modelos distribuidos en la UE.
 
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos de referencia com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u2-mdagosta
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

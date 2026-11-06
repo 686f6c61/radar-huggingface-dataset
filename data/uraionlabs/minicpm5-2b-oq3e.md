@@ -118,7 +118,7 @@ Frente a modelos de otras familias y tamano comparable, como las variantes de 2-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3e
+- Repositorio Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ3e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime oMLX: https://github.com/jundot/omlx
 - mlx-lm (MLX Examples): https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Fibo-2.0-dev es un modelo de generación y edición de imágenes desarrollado por Bria AI (cuenta `briaai` en HuggingFace) y distribuido bajo acceso restringido. Con 8.127.342.213 parámetros (≈8,13 mil millones) y pesos en safetensors, se publica a través de la librería `diffusers` con un pipeline propio, `BriaFibo2Pipeline`. El repositorio ocupa 25,5 GB y la versión disponible es una build de desarrollo (`dev`), lo que implica que no debe tratarse como una versión estable de producción.
+Fibo-2.0-dev es un modelo de generación y edición de imágenes desarrollado por Bria AI (cuenta `briaai` en Hugging Face) y distribuido bajo acceso restringido. Con 8.127.342.213 parámetros (≈8,13 mil millones) y pesos en safetensors, se publica a través de la librería `diffusers` con un pipeline propio, `BriaFibo2Pipeline`. El repositorio ocupa 25,5 GB y la versión disponible es una build de desarrollo (`dev`), lo que implica que no debe tratarse como una versión estable de producción.
 
 El modelo cubre el espectro completo de generación y edición de imagen: texto a imagen, imagen a imagen, inpainting, edición con múltiples referencias (`multi-reference`) y soporte de prompts estructurados (`structured-prompts`). Esa combinación es la que lo hace relevante: la mayoría de modelos abiertos de edición cubren una o dos de esas tareas, mientras que Fibo 2.0 las agrupa en un único checkpoint, lo que simplifica despliegues que necesitan tanto generación desde cero como modificación controlada de assets existentes. El tag `vgl` y el identificador `fibo` remiten a la familia de generación visual de Bria, y el paper asociado figura con el identificador arXiv 2511.06876.
 
-La relevancia inmediata para un equipo técnico es doble: por un lado, el soporte declarado de `fine-tuning` y de prompts estructurados abre la puerta a pipelines reproducibles y a adaptaciones sobre dominio propio; por otro, el acceso es *gated* y la licencia es `bria-fibo` (categoría `other`), de modo que cualquier uso comercial exige revisar y aceptar las condiciones en HuggingFace antes de descargar los pesos. Solo se declara soporte de inglés.
+La relevancia inmediata para un equipo técnico es doble: por un lado, el soporte declarado de `fine-tuning` y de prompts estructurados abre la puerta a pipelines reproducibles y a adaptaciones sobre dominio propio; por otro, el acceso es *gated* y la licencia es `bria-fibo` (categoría `other`), de modo que cualquier uso comercial exige revisar y aceptar las condiciones en Hugging Face antes de descargar los pesos. Solo se declara soporte de inglés.
 
 ## Especificaciones tecnicas
 
@@ -71,16 +71,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / resolucion | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fibo-2.0-dev (Bria) | 8,13 mil millones | No disponible | T2I, I2I, inpainting, multi-referencia, prompts estructurados | `bria-fibo` (other), acceso gated | HuggingFace, `diffusers` |
-| Modelos abiertos de edicion de imagen de ~10-20 mil millones (familia Flux Kontext, Qwen-Image-Edit, Step1X-Edit) | No verificado en esta ficha | No verificado en esta ficha | Edicion instruccional y multi-imagen en varios de ellos | Variables, frecuentemente no comercial | HuggingFace |
-| Modelos de difusion pequenos (1-3 mil millones, tipo SDXL/SD3.5 Medium) | No verificado en esta ficha | No verificado en esta ficha | T2I e I2I, inpainting via pipeline aparte | Abiertas en varios casos | HuggingFace, amplio ecosistema |
+| Fibo-2.0-dev (Bria) | 8,13 mil millones | No disponible | T2I, I2I, inpainting, multi-referencia, prompts estructurados | `bria-fibo` (other), acceso gated | Hugging Face, `diffusers` |
+| Modelos abiertos de edicion de imagen de ~10-20 mil millones (familia Flux Kontext, Qwen-Image-Edit, Step1X-Edit) | No verificado en esta ficha | No verificado en esta ficha | Edicion instruccional y multi-imagen en varios de ellos | Variables, frecuentemente no comercial | Hugging Face |
+| Modelos de difusion pequenos (1-3 mil millones, tipo SDXL/SD3.5 Medium) | No verificado en esta ficha | No verificado en esta ficha | T2I e I2I, inpainting via pipeline aparte | Abiertas en varios casos | Hugging Face, amplio ecosistema |
 
 Los datos de los modelos comparativos no han sido verificados contra la informacion proporcionada en esta ficha y se incluyen solo como marco de referencia; no deben citarse como cifras contrastadas. En lo que si destaca Fibo-2.0-dev frente a alternativas genericas es en la combinacion simultanea de multi-referencia, prompts estructurados y soporte declarado de fine-tuning en un unico checkpoint.
 
 ## Limitaciones y advertencias
 
 - Idioma: solo se declara soporte de ingles; los prompts en castellano pueden degradar la calidad o el cumplimiento de la instruccion.
-- Licencia: `bria-fibo` con categoria `other`. No se detallan en la informacion disponible los terminos de uso comercial, redistribucion ni los limites de usuarios mensuales; es obligatorio revisar y aceptar las condiciones en HuggingFace antes de cualquier despliegue productivo.
+- Licencia: `bria-fibo` con categoria `other`. No se detallan en la informacion disponible los terminos de uso comercial, redistribucion ni los limites de usuarios mensuales; es obligatorio revisar y aceptar las condiciones en Hugging Face antes de cualquier despliegue productivo.
 - Acceso restringido: el repositorio es *gated*, lo que impide la descarga anonima y anade friccion a pipelines de CI/CD y a la replicabilidad academica.
 - Version de desarrollo: el sufijo `dev` indica que no es una release estable; pueden existir cambios incompatibles, pesos no finales o degradaciones no documentadas.
 - Ausencia de benchmarks publicados en la informacion disponible: no es posible estimar de antemano la calidad frente a alternativas sin evaluar por cuenta propia.
@@ -91,6 +91,6 @@ Los datos de los modelos comparativos no han sido verificados contra la informac
 
 ## Enlaces
 
-- [HuggingFace: briaai/Fibo-2.0-dev](https://huggingface.co/briaai/Fibo-2.0-dev)
+- [Hugging Face: briaai/Fibo-2.0-dev](https://huggingface.co/briaai/Fibo-2.0-dev)
 - [Paper referenciado en los tags: arXiv 2511.06876](https://arxiv.org/abs/2511.06876)
 - No se han encontrado otros enlaces (blog, repositorio de codigo o demo) en la informacion proporcionada.

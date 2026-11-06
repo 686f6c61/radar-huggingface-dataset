@@ -6,7 +6,7 @@ Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP
 
 El objetivo declarado del autor es reducir drásticamente el consumo de tokens de razonamiento (entre la mitad y una décima parte respecto al Qwen 3.8 original, con una mediana de reducción de dos tercios) sin sacrificar calidad de salida, además de mejorar métricas de razonamiento ARC-C y ARC-E. El modelo se presenta como "uncensored" y "abliterated", es decir, con las capas de rechazo eliminadas mediante técnicas de abliteración, y está afinado para usos de escritura creativa, rol, ficción y generación de código.
 
-La relevancia del modelo es principalmente práctica: apunta a hardware de consumo, se publica bajo licencia Apache 2.0 y ofrece cuantizaciones de 4 y 8 bits que, según el autor, superan al Qwen 3.8 27B base en siete benchmarks críticos. No obstante, la ficha se basa únicamente en la model card y los metadatos de HuggingFace; no se dispone de verificación independiente de las cifras declaradas.
+La relevancia del modelo es principalmente práctica: apunta a hardware de consumo, se publica bajo licencia Apache 2.0 y ofrece cuantizaciones de 4 y 8 bits que, según el autor, superan al Qwen 3.8 27B base en siete benchmarks críticos. No obstante, la ficha se basa únicamente en la model card y los metadatos de Hugging Face; no se dispone de verificación independiente de las cifras declaradas.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ Los datos de entrenamiento provienen de los datasets DavidAU/Polar-STRICT-Datase
 - Generación de texto general, razonamiento y resolución de problemas, con modo de pensamiento (thinking) en tres variantes de operación.
 - Generación de código: el sufijo "NEO-CODER" indica afinado específico para tareas de programación.
 - Escritura creativa en todos los géneros: ficción, relato, novela y roleplaying, con énfasis declarado en detalle narrativo y ganchos argumentales.
-- Entrada multimodal imagen-texto según el pipeline declarado en HuggingFace (image-text-to-text).
+- Entrada multimodal imagen-texto según el pipeline declarado en Hugging Face (image-text-to-text).
 - Soporte de tool calling y function calling, según la model card y las notas de la comunidad citadas por el autor.
 - Capacidades multilingües limitadas a inglés y chino.
 - Modo "uncensored"/abliterated: sin capas de rechazo, lo que permite contenido que otros modelos bloquean.
@@ -95,7 +95,7 @@ Los datos de contexto y benchmarks de los modelos comparables no están disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia de la técnica Cold Fusion (modelo previo del autor): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

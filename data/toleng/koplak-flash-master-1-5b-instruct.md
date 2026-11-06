@@ -4,7 +4,7 @@
 
 koplak-flash-master-1.5b-instruct es un modelo de lenguaje de 1.500 millones de parámetros desarrollado por Toleng, obtenido mediante fine-tuning del modelo base unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit. El modelo está diseñado para generación de texto conversacional y sigue la arquitectura Qwen2, con licencia Apache 2.0 y soporte exclusivo para el idioma inglés.
 
-La relevancia de este modelo reside en su tamaño compacto, que lo hace adecuado para despliegue en entornos con recursos limitados, y en su origen: parte de un modelo especializado en código (Qwen2.5-Coder) que ha sido ajustado para tareas conversacionales. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning optimizado para velocidad. No se dispone de información pública sobre el dataset de entrenamiento, los benchmarks o las capacidades específicas del modelo más allá de su ficha técnica.
+La relevancia de este modelo reside en su tamaño compacto, que lo hace adecuado para despliegue en entornos con recursos limitados, y en su origen: parte de un modelo especializado en código (Qwen2.5-Coder) que ha sido ajustado para tareas conversacionales. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning optimizado para velocidad. No se dispone de información pública sobre el dataset de entrenamiento, los benchmarks o las capacidades específicas del modelo más allá de su ficha técnica.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su tamaño compacto, que lo hace adecuado
 
 El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con mecanismo de atencion por ventanas deslizantes y atencion completa alternadas. Al derivar de Qwen2.5-Coder-1.5B-Instruct, hereda una arquitectura optimizada para tareas de programacion, aunque el fine-tuning posterior busca adaptarlo a propositos conversacionales generales.
 
-El proceso de entrenamiento utilizo Unsloth, una libreria que acelera el fine-tuning mediante optimizaciones en el uso de memoria y computacion, junto con la libreria TRL de HuggingFace para el entrenamiento con refuerzo a partir de preferencias humanas (RLHF). El modelo base fue cargado en precision bnb-4bit, lo que sugiere que el fine-tuning se realizo con tecnicas de cuantizacion consciente (QLoRA). No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las hiperparametros utilizadas.
+El proceso de entrenamiento utilizo Unsloth, una libreria que acelera el fine-tuning mediante optimizaciones en el uso de memoria y computacion, junto con la libreria TRL de Hugging Face para el entrenamiento con refuerzo a partir de preferencias humanas (RLHF). El modelo base fue cargado en precision bnb-4bit, lo que sugiere que el fine-tuning se realizo con tecnicas de cuantizacion consciente (QLoRA). No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las hiperparametros utilizadas.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ El modelo se situa en la misma familia que los Qwen2.5 de 1,5 B, diferenciandose
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toleng/koplak-flash-master-1.5b-instruct
+- Modelo en Hugging Face: https://huggingface.co/Toleng/koplak-flash-master-1.5b-instruct
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Framework TRL: https://github.com/huggingface/trl

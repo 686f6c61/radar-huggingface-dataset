@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TyrusRC/haruspex es un repositorio de modelo publicado en HuggingFace por el usuario TyrusRC bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y fecha de ultima actualizacion. No se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni especificaciones tecnicas de ningun tipo.
+TyrusRC/haruspex es un repositorio de modelo publicado en Hugging Face por el usuario TyrusRC bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y fecha de ultima actualizacion. No se ha publicado model card con descripcion, pipeline declarado, idiomas soportados ni especificaciones tecnicas de ningun tipo.
 
 El repositorio registra cero descargas y cero likes, y no incluye ningun tag que indique arquitectura, familia de modelo, tarea o modalidad. La model card asociada contiene unicamente la declaracion de licencia `apache-2.0`, sin texto descriptivo adicional.
 
@@ -21,7 +21,7 @@ Por tanto, no es posible determinar que problema resuelve el modelo, cual es su 
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Datos de repositorio (metadatos de HuggingFace):
+Datos de repositorio (metadatos de Hugging Face):
 
 | Parametro | Valor |
 |---|---|
@@ -71,5 +71,5 @@ No disponible. No es posible establecer una categoria de comparacion (mismo tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TyrusRC/haruspex
+- Repositorio en Hugging Face: https://huggingface.co/TyrusRC/haruspex
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

@@ -91,11 +91,11 @@ Nota: los datos de los modelos de comparacion corresponden a informacion publica
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Sylumen-5B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Sylumen-5B-GGUF
 - Modelo base: https://huggingface.co/TimJ3ly/Sylumen-5B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Sylumen-5B-GGUF
 - Guia de uso de ficheros GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de calidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Busqueda de modelos de generacion de texto en HuggingFace: https://huggingface.co/models?pipeline_tag=text-generation
+- Busqueda de modelos de generacion de texto en Hugging Face: https://huggingface.co/models?pipeline_tag=text-generation

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fallen1:800M es un modelo de lenguaje causal (decoder-only) desarrollado por el usuario UncleKhris y publicado en HuggingFace bajo el identificador `UncleKhris/Fallen1-800M`. Se trata de un Transformer de arquitectura original entrenado **desde cero** (from scratch), con 817.387.008 parametros, 28 capas, anchura 1536, 16 cabezas de atencion y una ventana de contexto de tan solo 256 tokens. El modelo esta orientado a generacion de texto y a conversacion en ingles, y se distribuye con licencia Apache-2.0.
+Fallen1:800M es un modelo de lenguaje causal (decoder-only) desarrollado por el usuario UncleKhris y publicado en Hugging Face bajo el identificador `UncleKhris/Fallen1-800M`. Se trata de un Transformer de arquitectura original entrenado **desde cero** (from scratch), con 817.387.008 parametros, 28 capas, anchura 1536, 16 cabezas de atencion y una ventana de contexto de tan solo 256 tokens. El modelo esta orientado a generacion de texto y a conversacion en ingles, y se distribuye con licencia Apache-2.0.
 
 Su relevancia no reside en el rendimiento, sino en su caracter de experimento abierto: el autor documenta explicitamente que los pesos son nuevos, que el entrenamiento se ha realizado en una unica GPU de Kaggle con reinicios entre sesiones, y que el checkpoint publico es experimental y no garantiza respuestas fluidas. Para desarrolladores e investigadores, resulta util como caso de estudio de entrenamiento de bajo presupuesto, de diseno de tokenizador propio y de arquitecturas decoder-only minimas, mas que como modelo listo para produccion.
 
@@ -35,7 +35,7 @@ El modelo se publica sin evaluacion humana independiente y sin resultados de ben
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Transformer decoder-only de diseno propio, no derivado de ninguna familia conocida (no es Llama, Qwen ni Mistral). Consta de 28 capas con anchura 1536, 16 cabezas de atencion, feed-forward con activacion SwiGLU y dimension intermedia de 4096, normalizacion RMSNorm y embeddings posicionales rotatorios (RoPE). Los embeddings de entrada y de salida estan atados, lo que reduce el recuento de parametros. La etiqueta `fallen1` en HuggingFace indica que se trata de una arquitectura registrada por el propio autor, lo que implica que las herramientas estandar de inferencia pueden no reconocerla sin adaptacion.
+La arquitectura es un Transformer decoder-only de diseno propio, no derivado de ninguna familia conocida (no es Llama, Qwen ni Mistral). Consta de 28 capas con anchura 1536, 16 cabezas de atencion, feed-forward con activacion SwiGLU y dimension intermedia de 4096, normalizacion RMSNorm y embeddings posicionales rotatorios (RoPE). Los embeddings de entrada y de salida estan atados, lo que reduce el recuento de parametros. La etiqueta `fallen1` en Hugging Face indica que se trata de una arquitectura registrada por el propio autor, lo que implica que las herramientas estandar de inferencia pueden no reconocerla sin adaptacion.
 
 El entrenamiento se realizo integramente desde cero, sin inicializacion a partir de otro modelo. Las fuentes de datos declaradas son `HuggingFaceFW/fineweb-edu` para el modelado de lenguaje y `HuggingFaceTB/smol-smoltalk` para la fase conversacional, ambas en ingles. El autor indica que el entrenamiento se ejecuta en una unica GPU de Kaggle y que se reanuda entre sesiones, por lo que el estado de entrenamiento real debe consultarse en el fichero `training_state.json` del repositorio, que contiene la fase actual y el numero de tokens procesados. No se declara el volumen total de tokens de entrenamiento, ni el uso de RLHF, DPO u otra fase de alineacion posterior.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fallen1-800M | 817.387.008 | 256 tokens | Apache-2.0 | en | no disponible | safetensors en HuggingFace |
+| Fallen1-800M | 817.387.008 | 256 tokens | Apache-2.0 | en | no disponible | safetensors en Hugging Face |
 | TinyLlama-1.1B | ~1.100 millones | 2.048 tokens | Apache-2.0 | en | si, publicados por el autor | safetensors y GGUF |
 | Qwen2.5-0.5B | ~494 millones | 32.768 tokens | Apache-2.0 | multilingue | si, publicados por el autor | safetensors y GGUF |
 | SmolLM2-360M | ~362 millones | 8.192 tokens | Apache-2.0 | en y otros | si, publicados por el autor | safetensors y GGUF |
@@ -104,7 +104,7 @@ La comparacion se limita a configuracion publica y licencia, ya que no existen e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UncleKhris/Fallen1-800M
+- Modelo en Hugging Face: https://huggingface.co/UncleKhris/Fallen1-800M
 - Dataset de modelado de lenguaje: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset conversacional: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Script de inferencia: `chat_inference.py` (incluido en el repositorio del modelo)

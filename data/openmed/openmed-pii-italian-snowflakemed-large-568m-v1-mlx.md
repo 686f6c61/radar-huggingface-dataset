@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1-mlx)
+- Repositorio Hugging Face del modelo MLX: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1-mlx)
 - Checkpoint original: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1](https://huggingface.co/OpenMed/OpenMed-PII-Italian-SnowflakeMed-Large-568M-v1)
 - Repositorio GitHub de OpenMed: [https://github.com/maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)
 - Documentación del backend MLX: [https://openmed.life/docs/mlx-backend/](https://openmed.life/docs/mlx-backend/)

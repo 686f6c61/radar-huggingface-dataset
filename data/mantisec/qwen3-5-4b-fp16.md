@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mantisec/Qwen3.5-4B-FP16 | 4.659.865.088 | safetensors (FP16) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B | 4.659.865.088 | safetensors (BF16) | no disponible | no disponible | HuggingFace |
+| Mantisec/Qwen3.5-4B-FP16 | 4.659.865.088 | safetensors (FP16) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B | 4.659.865.088 | safetensors (BF16) | no disponible | no disponible | Hugging Face |
 | Qwen3-VL (familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente sobre otras alternativas comparables en la información proporcionada.

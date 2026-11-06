@@ -75,7 +75,7 @@ Nota: los datos de los modelos comparativos provienen de sus respectivas publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-fp32-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-fp32-onnx
 - Versión INT8 del mismo modelo: https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.5-ImageNet-224-int8-onnx
 - Documentación original de MobileNetV1 en TensorFlow: https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md
 - API de TensorFlow MobileNet: https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet

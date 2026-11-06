@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `griffinlabs/xvla-finetuned-bipiper-lora-shared-40k-75ep` es una política robótica de imitación, resultado de un fine-tuning con adaptadores LoRA sobre el modelo base X-VLA, desarrollado por el grupo THU-AIR-DREAM. El fine-tuning ha sido realizado por Griffin Labs, una empresa centrada en IA encarnada para gestión de instalaciones, y está orientado a controlar un robot manipulador con efector final tipo "bipiper" (probablemente un gripper de dos dedos). El modelo se distribuye a través del ecosistema LeRobot de HuggingFace, con licencia Apache 2.0 y un tamaño de repositorio de 1,6 GB.
+El modelo `griffinlabs/xvla-finetuned-bipiper-lora-shared-40k-75ep` es una política robótica de imitación, resultado de un fine-tuning con adaptadores LoRA sobre el modelo base X-VLA, desarrollado por el grupo THU-AIR-DREAM. El fine-tuning ha sido realizado por Griffin Labs, una empresa centrada en IA encarnada para gestión de instalaciones, y está orientado a controlar un robot manipulador con efector final tipo "bipiper" (probablemente un gripper de dos dedos). El modelo se distribuye a través del ecosistema LeRobot de Hugging Face, con licencia Apache 2.0 y un tamaño de repositorio de 1,6 GB.
 
 X-VLA es un transformer con "soft prompts" diseñado para aprendizaje cross-embodiment, es decir, capaz de transferir habilidades entre distintos robots. Este checkpoint concreto ha sido ajustado sobre el dataset `griffinlabs/bipiper_combined_ee6d_75ep`, que combina episodios de demostración para el robot bipiper. La relevancia actual radica en la tendencia hacia modelos de visión-lenguaje-acción (VLA) aplicados a robótica de bajo coste y en la posibilidad de adaptar modelos fundacionales a tareas específicas mediante PEFT (LoRA), reduciendo costes de entrenamiento y permitiendo despliegue en hardware modesto.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-VLA (base) | Transformer con soft prompts | no disponible | no disponible | Apache 2.0 (según repo) | HuggingFace |
+| X-VLA (base) | Transformer con soft prompts | no disponible | no disponible | Apache 2.0 (según repo) | Hugging Face |
 | ACT (Action Chunking with Transformers) | Transformer encoder-decoder | ~80M (tipico) | no aplica | Apache 2.0 | LeRobot |
 | Diffusion Policy | Red de difusion | ~10-100M | no aplica | MIT | LeRobot |
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-lora-shared-40k-75ep
+- Repositorio Hugging Face: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-lora-shared-40k-75ep
 - Repositorio oficial de X-VLA (GitHub): https://github.com/2toinf/X-VLA
 - Pagina del proyecto X-VLA: https://thu-air-dream.github.io/X-VLA/
 - Sitio de Griffin Labs: https://griffinlabs.ai/

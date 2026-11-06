@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maskjp/pi05-relative-eef-all10-full-ft-30k` es un modelo de robótica de tipo VLA (Vision-Language-Action) basado en `lerobot/pi05_base`, desarrollado por el usuario `maskjp` y publicado en HuggingFace. Está diseñado para controlar un brazo robótico sobre una base móvil mediante acciones expresadas en el espacio del efector final, con 13 dimensiones que incluyen posición 3D, rotación 6D, apertura de pinza y movimiento de la base. El modelo se entrenó con un fine-tune completo sobre 10 datasets distintos que abarcan 11 tareas de manipulación condicionadas por lenguaje natural, como recoger objetos, abrir una puerta o limpiar una mesa.
+`maskjp/pi05-relative-eef-all10-full-ft-30k` es un modelo de robótica de tipo VLA (Vision-Language-Action) basado en `lerobot/pi05_base`, desarrollado por el usuario `maskjp` y publicado en Hugging Face. Está diseñado para controlar un brazo robótico sobre una base móvil mediante acciones expresadas en el espacio del efector final, con 13 dimensiones que incluyen posición 3D, rotación 6D, apertura de pinza y movimiento de la base. El modelo se entrenó con un fine-tune completo sobre 10 datasets distintos que abarcan 11 tareas de manipulación condicionadas por lenguaje natural, como recoger objetos, abrir una puerta o limpiar una mesa.
 
 El checkpoint publicado corresponde al paso 30K de un run de 100K, con una métrica de loss en datos held-out que está un 9% por encima del mínimo del run (alcanzado en el paso 10K). Por tanto, estos pesos no son los mejores disponibles para el mismo esquema de entrenamiento, pero se publican para permitir comparaciones step-matched con la ronda anterior. El modelo tiene 4.14 mil millones de parámetros y utiliza una representación de acciones relativas al estado de observación del inicio de cada chunk, con una normalización calculada sobre los offsets relativos.
 
@@ -73,10 +73,10 @@ El mínimo se alcanza en el paso 10K con una loss de 0.0245. El presente checkpo
 
 | Modelo | Parámetros | Datos | Paso | Held-out loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `maskjp/pi05-relative-eef-all10-full-ft-30k` | 4.14B | 10 datasets / 1.499 episodios | 30K | 0.0268 | Apache-2.0 | HuggingFace |
-| `maskjp/pi05-relative-eef-all10-full-ft-10k` | 4.14B | 10 datasets / 1.499 episodios | 10K | 0.0245 (minimo) | Apache-2.0 | HuggingFace |
-| `maskjp/pi05-relative-eef-full-ft-30k` | 4.14B | 7 datasets / 949 episodios | 30K | No disponible | Apache-2.0 | HuggingFace |
-| `lerobot/pi05_base` | 4.14B | Preentrenamiento | - | No disponible | Apache-2.0 | HuggingFace |
+| `maskjp/pi05-relative-eef-all10-full-ft-30k` | 4.14B | 10 datasets / 1.499 episodios | 30K | 0.0268 | Apache-2.0 | Hugging Face |
+| `maskjp/pi05-relative-eef-all10-full-ft-10k` | 4.14B | 10 datasets / 1.499 episodios | 10K | 0.0245 (minimo) | Apache-2.0 | Hugging Face |
+| `maskjp/pi05-relative-eef-full-ft-30k` | 4.14B | 7 datasets / 949 episodios | 30K | No disponible | Apache-2.0 | Hugging Face |
+| `lerobot/pi05_base` | 4.14B | Preentrenamiento | - | No disponible | Apache-2.0 | Hugging Face |
 
 Los tres primeros son fine-tunes con el mismo esquema de acciones relativas, pero difieren en los datos y en el paso de entrenamiento. El modelo de 30K de la ronda completa no es un reemplazo directo del anterior de 7 datasets; los conjuntos de datos son distintos.
 
@@ -92,7 +92,7 @@ Los tres primeros son fine-tunes con el mismo esquema de acciones relativas, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-30k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-30k
 - Checkpoint de 10K (mismo esquema): https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-10k
 - Ronda anterior (7 datasets, 30K): https://huggingface.co/maskjp/pi05-relative-eef-full-ft-30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base

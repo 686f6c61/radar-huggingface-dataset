@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`s1eepypillow/task1_act_single` es una politica robotica entrenada con el metodo ACT (Action Chunking with Transformers) y publicada en HuggingFace Hub a traves de LeRobot. Se trata de un modelo de aprendizaje por imitacion que, en lugar de predecir una unica accion por paso, predice fragmentos cortos de acciones (action chunks), lo que reduce el error acumulado y suele elevar la tasa de exito en tareas de manipulacion. El repositorio pertenece al usuario `s1eepypillow` y esta etiquetado con el pipeline `robotics`.
+`s1eepypillow/task1_act_single` es una politica robotica entrenada con el metodo ACT (Action Chunking with Transformers) y publicada en Hugging Face Hub a traves de LeRobot. Se trata de un modelo de aprendizaje por imitacion que, en lugar de predecir una unica accion por paso, predice fragmentos cortos de acciones (action chunks), lo que reduce el error acumulado y suele elevar la tasa de exito en tareas de manipulacion. El repositorio pertenece al usuario `s1eepypillow` y esta etiquetado con el pipeline `robotics`.
 
 El modelo tiene 51.627.654 parametros (unos 51,6 millones) y ocupa 0,2 GB en el repositorio, por lo que es un modelo pequeno y desplegable incluso en CPU o en dispositivos embebidos. Esta especializado en un unico robot de tipo `so_follower` y en una unica tarea denominada `task1`, con dos camaras de entrada (`top` y `wrist`) a 480x640 y un espacio de acciones de 6 dimensiones. No es un modelo de lenguaje: no genera texto, codigo ni mantiene conversaciones.
 
@@ -97,7 +97,7 @@ La diferencia funcional mas relevante frente a una politica de difusion es el me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s1eepypillow/task1_act_single
+- Modelo en Hugging Face: https://huggingface.co/s1eepypillow/task1_act_single
 - Dataset de entrenamiento: https://huggingface.co/datasets/s1eepypillow/grad_block_merged_20260730_single
 - Visualizacion del dataset en LeRobot Spaces: https://huggingface.co/spaces/lerobot/visualize_dataset?path=s1eepypillow/grad_block_merged_20260730_single
 - Paper de ACT: https://huggingface.co/papers/2304.13705

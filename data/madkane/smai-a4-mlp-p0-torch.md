@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Entrada | Exactitud test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MadKane/smai-a4-mlp-p0-torch | 789.258 | 32x32x3 aplanada | 0.5050 | no disponible | HuggingFace (0 descargas) |
+| MadKane/smai-a4-mlp-p0-torch | 789.258 | 32x32x3 aplanada | 0.5050 | no disponible | Hugging Face (0 descargas) |
 | IOC-NN del mismo assignment (Q1.4-1.5) | misma forma (3072 → 256 → 10) | 32x32x3 aplanada | no disponible en la informacion | no disponible | referenciado en la model card, sin enlace |
 | MLP equivalente entrenado con etiquetas ruidosas (p > 0) | misma forma | 32x32x3 aplanada | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos publicados de otros modelos comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MadKane/smai-a4-mlp-p0-torch
+- Modelo en Hugging Face: https://huggingface.co/MadKane/smai-a4-mlp-p0-torch
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

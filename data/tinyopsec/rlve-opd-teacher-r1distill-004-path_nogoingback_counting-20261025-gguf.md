@@ -23,14 +23,14 @@ Se trata de un artefacto de investigacion con cero descargas y cero likes en el 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite afirmar que el modelo base pertenece a la familia Qwen2, es decir, un transformer decoder-only con atencion causal estandar. El tag `qwen2` en HuggingFace y el tamano de 1,777 mil millones de parametros son compatibles con una variante de Qwen2 de aproximadamente 1,5B-1,8B parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni longitud de contexto nativa.
+La informacion disponible solo permite afirmar que el modelo base pertenece a la familia Qwen2, es decir, un transformer decoder-only con atencion causal estandar. El tag `qwen2` en Hugging Face y el tamano de 1,777 mil millones de parametros son compatibles con una variante de Qwen2 de aproximadamente 1,5B-1,8B parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni longitud de contexto nativa.
 
 Respecto al entrenamiento, el nombre del modelo base (`rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025`) sugiere que forma parte de un experimento de destilacion de un modelo R1 (probablemente DeepSeek-R1) como "teacher" en un pipeline denominado RLVE-OPD, con una variante tematica centrada en tareas de conteo y rutas. Sin embargo, la model card no documenta el dataset, el numero de tokens, ni si se aplicaron tecnicas de RLHF, DPO o destilacion supervisada. Tampoco se detalla ninguna innovacion arquitectonica (atencion lineal, decodificacion especulativa, etc.). Toda esta informacion debe considerarse no disponible.
 
 ## Capacidades
 
 - Generacion de texto conversacional (pipeline `text-generation`, tag `conversational`).
-- Compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - Razonamiento y destilacion: el nombre indica un modelo "teacher" destilado de R1, orientado a tareas de razonamiento y conteo, aunque no se documenta el alcance real.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible de forma documentada.
@@ -88,7 +88,7 @@ La comparativa se basa en caracteristicas publicas de modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace (cuantizacion GGUF): https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025-GGUF
+- Hugging Face (cuantizacion GGUF): https://huggingface.co/tinyopsec/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025-GGUF
 - Modelo base: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-004-Path_NoGoingBack_Counting-20261025
 - llama.cpp (herramienta de cuantizacion): https://github.com/ggerganov/llama.cpp
 - Documentacion de Qwen2: https://huggingface.co/docs/transformers/model_doc/qwen2

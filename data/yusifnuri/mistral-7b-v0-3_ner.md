@@ -16,7 +16,7 @@ Su relevancia es doble: por un lado, sirve como plantilla reproducible de ajuste
 | Parametros totales | 7 250 millones en el modelo base; el adaptador ocupa 0,1 GB en el repositorio |
 | Longitud de contexto | 32 768 tokens según el modelo base Mistral-7B-v0.3 (no declarado en la model card del adaptador); el entrenamiento usó secuencias de 512 tokens |
 | Tipos de cuantizacion | Adaptador entrenado con QLoRA 4-bit NF4 con doble cuantización; no se publican versiones GGUF, AWQ ni GPTQ del adaptador |
-| Idiomas soportados | Inglés (corpus de entrenamiento CoNLL-2003 English); no declarados en los metadatos de HuggingFace |
+| Idiomas soportados | Inglés (corpus de entrenamiento CoNLL-2003 English); no declarados en los metadatos de Hugging Face |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, `library_name: peft`) |
 
@@ -74,8 +74,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento NER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yusifnuri/Mistral-7B-v0.3_ner | 7,25 B (base) + adaptador LoRA de 0,1 GB | 32 768 tokens (base) | F1 de entidad 0,6267, marcado como no válido por el autor | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| mistralai/Mistral-7B-v0.3 (modelo base, sin adaptador) | 7,25 B | 32 768 tokens | Sin especialización en NER | Apache-2.0 | HuggingFace |
+| yusifnuri/Mistral-7B-v0.3_ner | 7,25 B (base) + adaptador LoRA de 0,1 GB | 32 768 tokens (base) | F1 de entidad 0,6267, marcado como no válido por el autor | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| mistralai/Mistral-7B-v0.3 (modelo base, sin adaptador) | 7,25 B | 32 768 tokens | Sin especialización en NER | Apache-2.0 | Hugging Face |
 | Otros adaptadores o modelos especializados en NER comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de cifras de benchmark de alternativas evaluadas con el mismo arnés, por lo que no es posible establecer una comparación de rendimiento cuantitativa. La comparación con el modelo base es estructural (mismos pesos, mismos parámetros, misma licencia) y la única diferencia medible es el adaptador de 0,1 GB.
@@ -95,7 +95,7 @@ No se dispone de cifras de benchmark de alternativas evaluadas con el mismo arn�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_ner
+- Hugging Face: https://huggingface.co/yusifnuri/Mistral-7B-v0.3_ner
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Repositorio de código, configuraciones y arnés de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

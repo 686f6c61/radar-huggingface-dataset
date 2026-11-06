@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-sym | 2.599.044.096 en safetensors (base Falcon3-7B) | No disponible | INT8 GPTQ, gs64, simétrica | Apache 2.0 | HuggingFace, 15 descargas |
-| tiiuae/Falcon3-7B-Base | 7B (denominación) | No disponible | Sin cuantizar (bfloat16) | Apache 2.0 | HuggingFace (modelo base) |
+| fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-sym | 2.599.044.096 en safetensors (base Falcon3-7B) | No disponible | INT8 GPTQ, gs64, simétrica | Apache 2.0 | Hugging Face, 15 descargas |
+| tiiuae/Falcon3-7B-Base | 7B (denominación) | No disponible | Sin cuantizar (bfloat16) | Apache 2.0 | Hugging Face (modelo base) |
 | Otras cuantizaciones de Falcon3-7B-Base | No disponible | No disponible | No disponible | Apache 2.0 | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de replicación: https://git.epicdynamic.com/auto-round-pipeline

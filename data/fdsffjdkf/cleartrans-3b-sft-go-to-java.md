@@ -83,7 +83,7 @@ La comparacion con alternativas especificas de traduccion Go a Java no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Java
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Go-to-Java
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Licencia incluida en el repositorio: LICENSE (Qwen Research License Agreement)

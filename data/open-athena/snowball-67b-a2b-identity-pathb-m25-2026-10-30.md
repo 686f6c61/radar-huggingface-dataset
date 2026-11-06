@@ -68,7 +68,7 @@ La comparación GSM8K/MATH500 se realizó con decodificaciones emparejadas, tres
 
 | Modelo | Parámetros totales | Activos | Contexto | GSM8K | MATH500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Snowball 67B A2B M25 | 67,08 B | ~2 B (A2B) | No disponible | 90,57 % | 92,4 % | OpenMDW-1.1 | HuggingFace (research) |
+| Snowball 67B A2B M25 | 67,08 B | ~2 B (A2B) | No disponible | 90,57 % | 92,4 % | OpenMDW-1.1 | Hugging Face (research) |
 | Marin Snowball v0.1 (ADC0078a) | No disponible | No disponible | No disponible | 92,12 % | 92 % | No disponible | Base del linaje |
 | A3 (checkpoint ancla) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | Interno del linaje |
 | A8a (checkpoint donante) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | Interno del linaje |
@@ -91,7 +91,7 @@ No se dispone de datos públicos de benchmarks ni de especificaciones completas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-M25-2026.10.30
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-M25-2026.10.30
 - Ficheros de receta y manifiesto citados en la model card: `merge-recipe.json`, `merge-manifest.json`, `KEEP.md` (incluidos en el repositorio)
 - Linaje base: Marin Snowball v0.1 (ADC0078a), sin URL pública confirmada en la información disponible
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada

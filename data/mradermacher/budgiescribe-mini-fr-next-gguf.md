@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| BudgieScribe-Mini-fr-next-GGUF | 1,72 mil millones | no disponible | no disponible | GGUF en HuggingFace | no publicados |
+| BudgieScribe-Mini-fr-next-GGUF | 1,72 mil millones | no disponible | no disponible | GGUF en Hugging Face | no publicados |
 | Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens (nativo) | Apache 2.0 (segun version) | safetensors, GGUF, multiples | publicados por el autor |
 | Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors, GGUF, multiples | publicados por el autor |
 | SmolLM2-1.7B | 1,71 mil millones | 8.192 tokens | Apache 2.0 | safetensors, GGUF, multiples | publicados por el autor |
@@ -99,7 +99,7 @@ La comparacion directa de rendimiento no es posible porque BudgieScribe-Mini-fr-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/BudgieScribe-Mini-fr-next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/BudgieScribe-Mini-fr-next-GGUF
 - Modelo base: https://huggingface.co/flowcorp-ch/BudgieScribe-Mini-fr-next
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#BudgieScribe-Mini-fr-next-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

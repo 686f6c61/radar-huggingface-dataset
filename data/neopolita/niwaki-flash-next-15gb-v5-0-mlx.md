@@ -17,7 +17,7 @@ El modelo es relevante ahora porque demuestra que la poda selectiva de expertos 
 | Parametros activos | Aproximadamente 5,6B segun la model card |
 | Longitud de contexto | No disponible como valor oficial; la model card indica prompts de hasta aproximadamente 8K tokens en un Mac de 24 GB con el limite de GPU por defecto |
 | Tipos de cuantizacion | Base de 4 bits; expertos enrutados almacenados como codigos trellis a aproximadamente 1,5 bits por peso; referencia a codigos de reticulo E8 a unos 2 bits en la version v4.0 |
-| Idiomas soportados | Veinte idiomas evaluados con FLORES-200: ingles, espanol, frances, aleman, ruso, chino, japones, coreano, arabe, hindi, punyabi, vietnamita, turco, azerbaiyano, griego, bielorruso, hebreo, malayalam, thai e islandes. Los metadatos de HuggingFace no declaran lista de idiomas |
+| Idiomas soportados | Veinte idiomas evaluados con FLORES-200: ingles, espanol, frances, aleman, ruso, chino, japones, coreano, arabe, hindi, punyabi, vietnamita, turco, azerbaiyano, griego, bielorruso, hebreo, malayalam, thai e islandes. Los metadatos de Hugging Face no declaran lista de idiomas |
 | Licencia | other (license_link apunta a https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE) |
 | Formato de pesos | safetensors en formato MLX (library_name: mlx), mas dos ficheros loader incluidos en el repositorio |
 | Tamano del repositorio | 29,5 GB en disco; aproximadamente 15 GB residentes en memoria |
@@ -114,11 +114,11 @@ Otros diez idiomas: punyabi 1,16, vietnamita 1,30, turco 1,32, azerbaiyano 1,35,
 
 | Modelo | Parametros | Tamano en disco | Almacen. expertos | wt2 ppl | Media tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo | 59.164.945.763 segun safetensors (119B / ~5,6B activos segun la model card) | 29,5 GB | 11,9 GB (0,16x) | 6,90 | 0,760 | other (licencia de Qwen) | Publicado en HuggingFace, 0 descargas |
-| Niwaki v4.0, 141B | No disponible en la informacion | 44,8 GB | 27,25 GB (0,36x) | 5,70 | 0,794 | No disponible | Publicado en HuggingFace |
-| Niwaki v4.0, 19 GB | No disponible en la informacion | 33,3 GB | 15,7 GB (0,21x) | 6,51 | 0,765 | No disponible | Publicado en HuggingFace |
-| Niwaki v2.4, 102B (A5B, 3 bits) | 102B totales / 5B activos segun el nombre del repositorio | 37,5 GB | 20,0 GB (0,26x) | 7,84 | 0,738 | No disponible | Publicado en HuggingFace |
-| Referencia Qwen3.8-Flash-Next (4-bit) | No disponible | 111,5 GB | 75,5 GB | 5,06 | 0,759 | Licencia de Qwen | Publicado en HuggingFace |
+| Este modelo | 59.164.945.763 segun safetensors (119B / ~5,6B activos segun la model card) | 29,5 GB | 11,9 GB (0,16x) | 6,90 | 0,760 | other (licencia de Qwen) | Publicado en Hugging Face, 0 descargas |
+| Niwaki v4.0, 141B | No disponible en la informacion | 44,8 GB | 27,25 GB (0,36x) | 5,70 | 0,794 | No disponible | Publicado en Hugging Face |
+| Niwaki v4.0, 19 GB | No disponible en la informacion | 33,3 GB | 15,7 GB (0,21x) | 6,51 | 0,765 | No disponible | Publicado en Hugging Face |
+| Niwaki v2.4, 102B (A5B, 3 bits) | 102B totales / 5B activos segun el nombre del repositorio | 37,5 GB | 20,0 GB (0,26x) | 7,84 | 0,738 | No disponible | Publicado en Hugging Face |
+| Referencia Qwen3.8-Flash-Next (4-bit) | No disponible | 111,5 GB | 75,5 GB | 5,06 | 0,759 | Licencia de Qwen | Publicado en Hugging Face |
 
 Frente a los modelos comparables de la misma familia, este modelo ofrece el menor consumo de disco (29,5 GB) y de almacenamiento de expertos (11,9 GB), a cambio de una perplejidad superior a la referencia y a las versiones v4.0, y con una media de tareas de 0,760 que iguala practicamente a la referencia (0,759). Comparado con v2.4 de 102B gana en todas las metricas de perplejidad, divergencia KL y media de tareas.
 
@@ -140,7 +140,7 @@ Frente a los modelos comparables de la misma familia, este modelo ofrece el meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neopolita/Niwaki-Flash-Next-15GB-v5.0-mlx
+- Modelo en Hugging Face: https://huggingface.co/neopolita/Niwaki-Flash-Next-15GB-v5.0-mlx
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit
 - Pagina del proyecto Niwaki: https://niwakiai.com/

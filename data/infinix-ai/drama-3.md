@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio Drama 3 es un modelo de texto a voz (TTS) de nueva generación desarrollado por Fish Audio, disenado especificamente para escenas con multiples personajes y contenido de formato largo. Se distribuye en HuggingFace bajo el identificador `Infinix-ai/drama-3` y emplea una arquitectura Mixture-of-Experts (MoE) con un backbone de texto de 35 000 millones de parametros totales y 3 000 millones activos por token, combinando atencion completa y atencion lineal en un esquema hibrido. El decodificador de audio utiliza un esquema de codebook-MTP (multi-token prediction) que decodifica 10 codebooks de forma causal sobre toda la secuencia.
+Fish Audio Drama 3 es un modelo de texto a voz (TTS) de nueva generación desarrollado por Fish Audio, disenado especificamente para escenas con multiples personajes y contenido de formato largo. Se distribuye en Hugging Face bajo el identificador `Infinix-ai/drama-3` y emplea una arquitectura Mixture-of-Experts (MoE) con un backbone de texto de 35 000 millones de parametros totales y 3 000 millones activos por token, combinando atencion completa y atencion lineal en un esquema hibrido. El decodificador de audio utiliza un esquema de codebook-MTP (multi-token prediction) que decodifica 10 codebooks de forma causal sobre toda la secuencia.
 
 El modelo resuelve el problema de la sintesis de voz multi-locutor y la edicion de audio en lenguaje natural: permite asignar hasta 16 personajes distintos mediante etiquetas `<|speaker:0|>` a `<|speaker:15|>` dentro de un mismo texto, clonar voces a partir de referencias cortas (por ejemplo, un clip de 3,9 segundos) y editar tomas previas tratando la edicion como una continuacion del contexto, de forma analoga a como operan los modelos de lenguaje. Incluye control en lenguaje natural y etiquetas de eventos no verbales como `[sighs]` o `[laughs]` insertadas en el texto.
 
@@ -92,11 +92,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Las mediciones de rendimiento se han realizado exclusivamente en NVIDIA H200 y con prompts en ingles de Seed-TTS; el rendimiento en otras GPUs, en otros idiomas o con referencias de clonacion mas largas puede diferir.
 - La clonacion de voz depende de una referencia de audio con su transcripcion; la calidad del resultado esta condicionada por la duracion y limpieza de esa referencia (el ejemplo oficial usa 3,9 segundos).
 - No se documentan capacidades de tool calling, agentes ni vision; el modelo esta especializado en texto a voz y edicion de audio.
-- El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y el identificador de HuggingFace (`Infinix-ai/drama-3`) difiere del usado en los comandos de despliegue de la model card (`fishaudio/drama-3`), lo que conviene verificar antes de integrarlo en produccion.
+- El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, y el identificador de Hugging Face (`Infinix-ai/drama-3`) difiere del usado en los comandos de despliegue de la model card (`fishaudio/drama-3`), lo que conviene verificar antes de integrarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-ai/drama-3
+- Hugging Face: https://huggingface.co/Infinix-ai/drama-3
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Drama 3 Cookbook (SGLang-Omni): https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html
 - Repositorio SGLang-Omni: https://github.com/sgl-project/sglang-omni

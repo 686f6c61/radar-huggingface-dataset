@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BiggerGait es un modelo de reconocimiento de marcha (gait recognition) que aprovecha representaciones por capas de un modelo de visión de gran escala. Este repositorio, `ernestchu/bigger-gait-ccgr`, es una reimplementación de inferencia autocontenida del modelo BiggerGait presentado en NeurIPS 2025, con un backbone DINOv2-S congelado y entrenado sobre el dataset CCGR (Cross-Covariate Gait Recognition, AAAI 2024). El autor es el usuario de HuggingFace `ernestchu`.
+BiggerGait es un modelo de reconocimiento de marcha (gait recognition) que aprovecha representaciones por capas de un modelo de visión de gran escala. Este repositorio, `ernestchu/bigger-gait-ccgr`, es una reimplementación de inferencia autocontenida del modelo BiggerGait presentado en NeurIPS 2025, con un backbone DINOv2-S congelado y entrenado sobre el dataset CCGR (Cross-Covariate Gait Recognition, AAAI 2024). El autor es el usuario de Hugging Face `ernestchu`.
 
 El problema que resuelve es la identificación biométrica de personas a partir de secuencias de vídeo RGB de su forma de caminar, sin necesidad de siluetas binarias ni de alineación previa. La entrada es una secuencia de recortes RGB de una persona caminando (configuración de 84 fotogramas, resolución interna de 448x224) y la salida es un embedding de `[256, 192]`: un descriptor de 256 dimensiones por cada una de las 32 partes horizontales y cada uno de los 6 grupos de capas de DINOv2. La comparación entre secuencias se hace con distancia euclídea promediada sobre las 192 partes.
 
@@ -72,8 +72,8 @@ Advertencias del propio autor: los numeros del CCGR-MINI parcial no son comparab
 
 | Modelo | Arquitectura | Parametros | Entrada | Empaquetado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BiggerGait (este repositorio, `ernestchu/bigger-gait-ccgr`) | DINOv2-S congelado + rama de mascara + cabezas de marcha | No disponible | 84 fotogramas RGB, 448x224 interno, sin alineacion | Autocontenido; no requiere OpenGait ni descarga de DINOv2 | No disponible | HuggingFace, 0 descargas, 0 likes |
-| BiggerGait original (`opengait/OpenGait`) | Identica (mismo checkpoint sin modificar) | No disponible | No disponible en la informacion | Requiere el framework OpenGait | No disponible | HuggingFace, dentro del repo de OpenGait |
+| BiggerGait (este repositorio, `ernestchu/bigger-gait-ccgr`) | DINOv2-S congelado + rama de mascara + cabezas de marcha | No disponible | 84 fotogramas RGB, 448x224 interno, sin alineacion | Autocontenido; no requiere OpenGait ni descarga de DINOv2 | No disponible | Hugging Face, 0 descargas, 0 likes |
+| BiggerGait original (`opengait/OpenGait`) | Identica (mismo checkpoint sin modificar) | No disponible | No disponible en la informacion | Requiere el framework OpenGait | No disponible | Hugging Face, dentro del repo de OpenGait |
 | Otros metodos de reconocimiento de marcha basados en siluetas o CNN (por ejemplo GaitBase, GaitSet, GaitGL) | CNN sobre siluetas segmentadas | No disponible | Siluetas binarias alineadas | Requiere pipelines de segmentacion y alineacion | No disponible | No disponible |
 
 Los datos cuantitativos de los modelos alternativos no estan disponibles en la informacion proporcionada, por lo que no se puede establecer una comparacion numerica. La unica diferencia verificable entre las dos primeras filas es el empaquetado: los pesos son identicos.
@@ -93,7 +93,7 @@ Los datos cuantitativos de los modelos alternativos no estan disponibles en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ernestchu/bigger-gait-ccgr
+- Repositorio en Hugging Face: https://huggingface.co/ernestchu/bigger-gait-ccgr
 - Checkpoint original en OpenGait: https://huggingface.co/opengait/OpenGait/blob/main/CCGR/BiggerGait__Dinov2/BiggerGait__Dinov2_Group/BiggerGait__SmallDINOv2_Gaitbase_84Frame30_448224_6432HPP32_NoAlign_Sep12B_WiMask_Share_2B_6G-30000.pt
 - Paper de BiggerGait (NeurIPS 2025): https://arxiv.org/abs/2505.18132
 - Codigo de BiggerGait / OpenGait: https://github.com/ShiqiYu/OpenGait

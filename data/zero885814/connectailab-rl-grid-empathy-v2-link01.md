@@ -70,9 +70,9 @@ Nota metodológica del autor: la evaluación de la marcha usa una aproximación 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-grid-empathy-v2-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión discreta `goto_target` (5 acciones) | Apache 2.0 | HuggingFace, 0 descargas |
+| connectailab-rl-grid-empathy-v2-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión discreta `goto_target` (5 acciones) | Apache 2.0 | Hugging Face, 0 descargas |
 | Cerebro PPO del simulador (profesor) | No disponible (política RL) | No aplica | Misma tarea | No declarada | `brain.json` en el proyecto CONNECT TYCOON |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No declarada en esta ficha | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No declarada en esta ficha | Hugging Face |
 | Políticas RL para locomoción (p. ej. MuJoCo, Stable-Baselines3) | Depende de la red | No aplica | Control continuo o discreto | Variable | Repositorios públicos |
 
 No se dispone de comparativas publicadas frente a otros adaptadores de decisión de la misma familia, ni de cifras de benchmarks estándar de lenguaje (MMLU, HumanEval, GSM8K) para este adaptador.
@@ -91,7 +91,7 @@ No se dispone de comparativas publicadas frente a otros adaptadores de decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/zero885814/connectailab-rl-grid-empathy-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

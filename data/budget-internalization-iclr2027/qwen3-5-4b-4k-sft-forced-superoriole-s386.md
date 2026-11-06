@@ -4,7 +4,7 @@
 
 `qwen3.5-4b-4k-sft-forced-superoriole-s386` es un ajuste supervisado (SFT) del modelo `Qwen/Qwen3.5-4B`, publicado por el usuario `budget-internalization-iclr2027` como parte de un envío anónimo a ICLR 2027. El entrenamiento usa soluciones generadas por el propio Qwen3.5-4B a problemas matemáticos del dataset `agentica-org/DeepScaleR-Preview-Dataset`, filtradas por corrección (rejection sampling) y restringidas al subconjunto denominado `4k-forced`: respuestas con un presupuesto de 4.000 tokens cuya respuesta final se obtuvo mediante respuesta forzada. El checkpoint publicado corresponde al paso 386 del run con nombre en clave `superoriole`.
 
-El modelo tiene 4.539.265.536 parámetros (4,54 B) y se distribuye en safetensors con pesos en BF16 (repo de 9,1 GB). La etiqueta de arquitectura en HuggingFace es `qwen3_5` y el pipeline declarado es `image-text-to-text`, aunque la model card solo documenta el uso con `AutoModelForCausalLM` y entrenamiento sobre texto.
+El modelo tiene 4.539.265.536 parámetros (4,54 B) y se distribuye en safetensors con pesos en BF16 (repo de 9,1 GB). La etiqueta de arquitectura en Hugging Face es `qwen3_5` y el pipeline declarado es `image-text-to-text`, aunque la model card solo documenta el uso con `AutoModelForCausalLM` y entrenamiento sobre texto.
 
 Se trata de un artefacto de investigación orientado al estudio de la internalización de presupuestos de cómputo (token budget) en modelos razonadores: no publica resultados de benchmarks, no tiene descargas ni valoraciones y su relevancia práctica fuera del contexto del estudio es limitada.
 
@@ -76,8 +76,8 @@ No se dispone de especificaciones verificadas de alternativas en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SFT `4k-forced`, paso 386) | 4,54 B | No disponible; 18.432 tokens de secuencia máxima en entrenamiento | Apache 2.0 (heredada) | Safetensors BF16 | Público en HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4,54 B (mismo tamaño de safetensors que el finetune) | No disponible en la información proporcionada | Apache 2.0 | Safetensors | Público en HuggingFace |
+| Este modelo (SFT `4k-forced`, paso 386) | 4,54 B | No disponible; 18.432 tokens de secuencia máxima en entrenamiento | Apache 2.0 (heredada) | Safetensors BF16 | Público en Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4,54 B (mismo tamaño de safetensors que el finetune) | No disponible en la información proporcionada | Apache 2.0 | Safetensors | Público en Hugging Face |
 | Otras destilaciones o finetunes matemáticos de ~4-8 B (por ejemplo, variantes de la familia DeepSeek-R1-Distill o Qwen matemáticos) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han encontrado en la información disponible datos de rendimiento comparado entre este checkpoint y sus alternativas, por lo que no es posible establecer una comparativa cuantitativa.
@@ -92,12 +92,12 @@ No se han encontrado en la información disponible datos de rendimiento comparad
 - Herencia del modelo base: no se documenta ningún proceso de mitigación de sesgos, por lo que se heredan los sesgos presentes en Qwen3.5-4B y en los datos de DeepScaleR.
 - Idiomas: no se declara cobertura multilingüe; el corpus documentado son problemas matemáticos, presumiblemente en inglés, aunque el dato no se especifica.
 - Licencia: Apache 2.0 permite uso comercial según la model card, pero se hereda del modelo base; conviene verificar los términos vigentes de `Qwen/Qwen3.5-4B` (condiciones de uso, atribución y política de marca) antes de un despliegue en producción.
-- Capacidad multimodal incierta: aunque la etiqueta de HuggingFace indica `image-text-to-text`, la model card no documenta procesamiento de imágenes ni incluye ejemplos multimodales; no debe asumirse visión sin verificarla.
+- Capacidad multimodal incierta: aunque la etiqueta de Hugging Face indica `image-text-to-text`, la model card no documenta procesamiento de imágenes ni incluye ejemplos multimodales; no debe asumirse visión sin verificarla.
 - Documentación mínima: no se especifican arquitectura interna, idiomas, ni variantes cuantizadas, lo que complica la planificación de despliegues.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-forced-superoriole-s386
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-sft-forced-superoriole-s386
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset agentica-org/DeepScaleR-Preview-Dataset: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper o blog del autor: no disponible (envío anónimo a ICLR 2027, sin enlace en la model card)

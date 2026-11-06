@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| LaPa47/sentiment-versioning-demo | 66.955.010 | 512 | Apache-2.0 | Accuracy de validación 0.854 (dataset desconocido) | HuggingFace |
-| distilbert-base-uncased | 66.955.010 | 512 | Apache-2.0 | No fine-tuneado para sentimiento | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 66.955.010 | 512 | Apache-2.0 | Fine-tune sobre SST-2, sin datos publicados en esta ficha | HuggingFace |
+| LaPa47/sentiment-versioning-demo | 66.955.010 | 512 | Apache-2.0 | Accuracy de validación 0.854 (dataset desconocido) | Hugging Face |
+| distilbert-base-uncased | 66.955.010 | 512 | Apache-2.0 | No fine-tuneado para sentimiento | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 66.955.010 | 512 | Apache-2.0 | Fine-tune sobre SST-2, sin datos publicados en esta ficha | Hugging Face |
 
 La comparativa se centra en modelos de la misma familia DistilBERT. El modelo evaluado se diferencia del modelo base por estar fine-tuneado para clasificación de sentimiento, y del fine-tune de SST-2 en que su dataset de entrenamiento es desconocido, lo que impide verificar su generalización.
 
@@ -76,4 +76,4 @@ La comparativa se centra en modelos de la misma familia DistilBERT. El modelo ev
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/LaPa47/sentiment-versioning-demo
+- Repositorio del modelo en Hugging Face: https://huggingface.co/LaPa47/sentiment-versioning-demo

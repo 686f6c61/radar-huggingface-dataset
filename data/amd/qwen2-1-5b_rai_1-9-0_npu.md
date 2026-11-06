@@ -4,7 +4,7 @@
 
 AMD Qwen2-1.5B_rai_1.9.0_npu es una distribución del modelo Qwen2-1.5B de Alibaba optimizada por AMD para su ejecución sobre las NPU (unidades de procesamiento neuronal) integradas en los procesadores Ryzen AI, dentro del stack Ryzen AI Software 1.9.0. El modelo se publica en formato ONNX y ha sido cuantizado con Quark, la herramienta de compresión de modelos de AMD, para adaptarse a las restricciones de memoria y cómputo de la NPU. No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue: el mismo Qwen2-1.5B con pesos recompilados y cuantizados para el acelerador.
 
-La relevancia de esta ficha radica en que ejemplifica una tendencia creciente: los fabricantes de silicio publican versiones listas para producción de modelos open source sobre su hardware. En este caso, permite ejecutar generación de texto conversacional en inglés de forma local en un PC con Ryzen AI, sin GPU dedicada, delegando la inferencia a la NPU XDNA/XDNA2. El repositorio tiene 2,5 GB y está sujeto a acceso restringido (gated) en HuggingFace.
+La relevancia de esta ficha radica en que ejemplifica una tendencia creciente: los fabricantes de silicio publican versiones listas para producción de modelos open source sobre su hardware. En este caso, permite ejecutar generación de texto conversacional en inglés de forma local en un PC con Ryzen AI, sin GPU dedicada, delegando la inferencia a la NPU XDNA/XDNA2. El repositorio tiene 2,5 GB y está sujeto a acceso restringido (gated) en Hugging Face.
 
 El modelo base Qwen2-1.5B es un transformer decoder-only de 1.500 millones de parámetros con licencia Apache 2.0, lo que facilita su uso comercial. La variante de AMD hereda esa licencia, aunque el acceso al artefacto ONNX requiere aceptar las condiciones del repositorio.
 
@@ -75,7 +75,7 @@ La comparativa directa más justa es con el Qwen2-1.5B original: mismos parámet
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: la ficha declara únicamente inglés; el rendimiento en castellano no está garantizado.
 - Tamaño limitado: con 1.5B parámetros, la fiabilidad en razonamiento complejo, matemáticas avanzadas y código de producción es limitada.
 - Riesgo de alucinación: inherente a modelos de esta escala, especialmente en tareas de conocimiento factual.
@@ -86,7 +86,7 @@ La comparativa directa más justa es con el Qwen2-1.5B original: mismos parámet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2-1.5B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2-1.5B_rai_1.9.0_npu
 - Modelo base Qwen2-1.5B (Alibaba): https://huggingface.co/Qwen/Qwen2-1.5B
 - Ryzen AI Software (AMD): https://www.amd.com/en/developer/resources/ryzen-ai-software.html
 - Quark (cuantización AMD): https://quark.amd.com/

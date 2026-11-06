@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Tipo | Hablantes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diar_streaming_sortformer_4spk-v2.1 (este) | 122,8 M | Streaming end-to-end | 4 | NVIDIA Open Model | HuggingFace (GGUF F32) |
-| diar_sortformer_4spk-v1 (offline) | 123 M | Offline end-to-end | 4 | NVIDIA Open Model | HuggingFace (formato .nemo) |
-| pyannote/speaker-diarization-3.1 | ~30 M | Pipeline (VAD + embeddings + clustering) | ilimitado | MIT (modelos) | HuggingFace |
+| diar_streaming_sortformer_4spk-v2.1 (este) | 122,8 M | Streaming end-to-end | 4 | NVIDIA Open Model | Hugging Face (GGUF F32) |
+| diar_sortformer_4spk-v1 (offline) | 123 M | Offline end-to-end | 4 | NVIDIA Open Model | Hugging Face (formato .nemo) |
+| pyannote/speaker-diarization-3.1 | ~30 M | Pipeline (VAD + embeddings + clustering) | ilimitado | MIT (modelos) | Hugging Face |
 
 El modelo offline v1 tiene aproximadamente 6 millones de parametros mas que la version v2.1 y, al acceder a la grabacion completa, suele ofrecer mayor precision, pero no es adecuado para aplicaciones en tiempo real. Pyannote, por otro lado, es un enfoque modular que no tiene limite fijo de hablantes, pero requiere una pipeline mas compleja y no esta disenado para streaming nativo.
 
@@ -76,7 +76,7 @@ El modelo offline v1 tiene aproximadamente 6 millones de parametros mas que la v
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion GGUF: https://huggingface.co/dchevell/diar_streaming_sortformer_4spk-v2.1-GGUF
+- Repositorio Hugging Face de la conversion GGUF: https://huggingface.co/dchevell/diar_streaming_sortformer_4spk-v2.1-GGUF
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1
 - README del modelo original: https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1/blob/15345347cd3eb5b119704eacc07c4563a728d58d/README.md
 - Runtime NeMo-Speech.cpp: https://github.com/NVIDIA/NeMo-Speech.cpp

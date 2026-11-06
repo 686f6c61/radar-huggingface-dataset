@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rutgersbiolab/efficient-attention40
+- Repositorio en Hugging Face: https://huggingface.co/rutgersbiolab/efficient-attention40
 - Seminario Rutgers Efficient AI: https://www.youtube.com/channel/UCEKdqfnoyNSYB5bzWMT5SNQ
 - Inteligencia Artificial en Rutgers: https://it.rutgers.edu/ai/
 - Departamento de IA de Rutgers: https://ai.cs.rutgers.edu/

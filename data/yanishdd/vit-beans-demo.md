@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificación de imágenes desarrollado por Yanishdd, fine-tuneado a partir de google/vit-base-patch16-224-in21k. Se trata de un Vision Transformer (ViT) base con 85,8 millones de parámetros, entrenado para tareas de clasificación de imágenes. La model card no especifica el dataset de entrenamiento, aunque el nombre del modelo y la existencia de otros modelos similares en la comunidad sugieren que podría tratarse del dataset Beans de HuggingFace, que contiene imágenes de hojas de frijol. Está publicado bajo licencia Apache 2.0 y disponible en formato safetensors y ONNX. Su relevancia radica en ser un ejemplo de fine-tuning de un modelo ViT preentrenado en ImageNet-21k, con resultados de evaluación de accuracy 0.9688 y loss 0.1288.
+vit-beans-demo es un modelo de clasificación de imágenes desarrollado por Yanishdd, fine-tuneado a partir de google/vit-base-patch16-224-in21k. Se trata de un Vision Transformer (ViT) base con 85,8 millones de parámetros, entrenado para tareas de clasificación de imágenes. La model card no especifica el dataset de entrenamiento, aunque el nombre del modelo y la existencia de otros modelos similares en la comunidad sugieren que podría tratarse del dataset Beans de Hugging Face, que contiene imágenes de hojas de frijol. Está publicado bajo licencia Apache 2.0 y disponible en formato safetensors y ONNX. Su relevancia radica en ser un ejemplo de fine-tuning de un modelo ViT preentrenado en ImageNet-21k, con resultados de evaluación de accuracy 0.9688 y loss 0.1288.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El modelo utiliza la arquitectura ViT-base de Google, con parches de 16x16 y res
 
 - Control de calidad en agricultura: si el modelo está entrenado en el dataset Beans, puede clasificar hojas de frijol para detectar enfermedades como la mancha angular y la roya del frijol. Se integraría en una aplicación de análisis de imágenes para agricultores, permitiendo un diagnóstico rápido.
 - Clasificación de imágenes en producción: al ser un modelo ViT-base con 85,8 millones de parámetros, es ligero y puede desplegarse en servicios de inferencia con baja latencia, por ejemplo en una API REST para clasificar imágenes.
-- Demo educativa de fine-tuning: sirve como ejemplo de cómo ajustar un modelo preentrenado de HuggingFace con el Trainer, útil para aprender sobre transfer learning en clasificación de imágenes.
+- Demo educativa de fine-tuning: sirve como ejemplo de cómo ajustar un modelo preentrenado de Hugging Face con el Trainer, útil para aprender sobre transfer learning en clasificación de imágenes.
 - Investigación en visión por computador: puede usarse como baseline para comparar técnicas de fine-tuning o para probar métodos de interpretabilidad (saliency maps) en modelos ViT.
 - Aplicaciones móviles: el modelo puede exportarse a ONNX y ejecutarse en dispositivos móviles para clasificación de imágenes en tiempo real, gracias a su tamaño reducido.
 - Sistemas de recomendación de tratamiento: en un sistema de apoyo a la decisión, el modelo puede clasificar el estado de las plantas y sugerir acciones de tratamiento según la enfermedad detectada.
@@ -55,24 +55,24 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, etc.
 - VRAM estimada para inferencia: no disponible oficialmente. Dado que el modelo tiene 85,8 millones de parámetros, en FP32 los pesos ocupan aproximadamente 344 MB. Con batch pequeño, la VRAM necesaria se estima en torno a 1-2 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (RTX 3060, GTX 1660, etc.) o CPUs modernas, gracias a la optimización ONNX.
 - Sí cabe en GPUs consumer y en dispositivos edge.
-- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, HuggingFace Inference Endpoints. vLLM y Ollama no son aplicables por ser un modelo de visión.
+- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, Hugging Face Inference Endpoints. vLLM y Ollama no son aplicables por ser un modelo de visión.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Accuracy (evaluación) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yanishdd/vit-beans-demo | 85.800.963 | 0.9688 | Apache 2.0 | HuggingFace |
-| ScatterRaven/vit-base-beans-demo-v5 | No especificado (ViT-base, ~86M) | 0.9688 | No especificada | HuggingFace |
-| sonde8/vit-base-beans-demo-v5 | No especificado (ViT-base, ~86M) | 0.9925 | No especificada | HuggingFace |
-| google/vit-base-patch16-224-in21k | No especificado (ViT-base, ~86M) | No reportada | Apache 2.0 | HuggingFace |
+| Yanishdd/vit-beans-demo | 85.800.963 | 0.9688 | Apache 2.0 | Hugging Face |
+| ScatterRaven/vit-base-beans-demo-v5 | No especificado (ViT-base, ~86M) | 0.9688 | No especificada | Hugging Face |
+| sonde8/vit-base-beans-demo-v5 | No especificado (ViT-base, ~86M) | 0.9925 | No especificada | Hugging Face |
+| google/vit-base-patch16-224-in21k | No especificado (ViT-base, ~86M) | No reportada | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - La documentación del modelo es incompleta: la model card indica "More information needed" en varias secciones, por lo que no se dispone de información detallada sobre el dataset de entrenamiento, la composición de los datos ni los sesgos.
 - El dataset de entrenamiento no está especificado. El nombre del modelo sugiere que podría ser el dataset Beans, pero no está confirmado.
 - No se han publicado benchmarks comparativos ni evaluaciones independientes.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Riesgo de alucinación: no aplica, ya que no genera texto.
 - Limitaciones de contexto o idioma: no aplica, al ser un modelo de visión.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero se debe conservar el aviso de licencia y las atribuciones.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`agilex_pour_ft_idm` es un modelo publicado en HuggingFace por el usuario MarshCurrant bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de dinámica inversa (IDM, *inverse dynamics model*) ajustado (*fine-tuned*) para una tarea de vertido (*pour*) sobre una plataforma robótica Agilex. Es decir, el modelo aprendería a predecir las acciones o comandos de control que producen una transición de estado observada en una maniobra de vertido con un manipulador Agilex.
+`agilex_pour_ft_idm` es un modelo publicado en Hugging Face por el usuario MarshCurrant bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de dinámica inversa (IDM, *inverse dynamics model*) ajustado (*fine-tuned*) para una tarea de vertido (*pour*) sobre una plataforma robótica Agilex. Es decir, el modelo aprendería a predecir las acciones o comandos de control que producen una transición de estado observada en una maniobra de vertido con un manipulador Agilex.
 
-La model card publicada es prácticamente vacía: solo contiene la declaración de licencia. No se especifica arquitectura, tamaño, datos de entrenamiento, formato de pesos ni idiomas. El repositorio no registra descargas ni *likes* en el momento de la consulta, y no consta pipeline declarado en HuggingFace.
+La model card publicada es prácticamente vacía: solo contiene la declaración de licencia. No se especifica arquitectura, tamaño, datos de entrenamiento, formato de pesos ni idiomas. El repositorio no registra descargas ni *likes* en el momento de la consulta, y no consta pipeline declarado en Hugging Face.
 
 Por tanto, esta ficha se limita a documentar lo verificable (identificador, autor, licencia, fechas) y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en producción requeriría inspeccionar directamente los archivos del repositorio y contactar con el autor.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables documentados públicamente para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarshCurrant/agilex_pour_ft_idm
+- Hugging Face: https://huggingface.co/MarshCurrant/agilex_pour_ft_idm
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

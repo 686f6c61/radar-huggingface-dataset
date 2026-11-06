@@ -78,7 +78,7 @@ La comparativa se limita a modelos de la misma familia o con el mismo proceso de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Qwen3.8-4B-Distill-heretic-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic
 - Herramienta Heretic para eliminacion de censura: https://github.com/p-e-w/heretic
 - Repositorio de la familia Qwen3.8 destilada: https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled

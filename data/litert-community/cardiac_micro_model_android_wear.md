@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedGemma-Micro | ~361 M | No disponible | PPG + texto | Apache-2.0 | HuggingFace (litert-community) |
-| google/medgemma-1.5-4b-it (profesor) | 4 B | No disponible | Texto (multimodal según variante) | No disponible | HuggingFace |
-| SmolLM2-360M-Instruct (backbone destilado) | 360 M | No disponible | Texto | No disponible | HuggingFace |
+| MedGemma-Micro | ~361 M | No disponible | PPG + texto | Apache-2.0 | Hugging Face (litert-community) |
+| google/medgemma-1.5-4b-it (profesor) | 4 B | No disponible | Texto (multimodal según variante) | No disponible | Hugging Face |
+| SmolLM2-360M-Instruct (backbone destilado) | 360 M | No disponible | Texto | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada. La comparativa se limita a parámetros y disponibilidad.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/Cardiac_micro_model_Android_Wear
+- Hugging Face: https://huggingface.co/litert-community/Cardiac_micro_model_Android_Wear
 - LiteRT en Android (documentación oficial): https://developer.android.com/ai/custom
 - LiteRT para Android (Google AI Edge): https://developers.google.com/edge/litert/android
-- Modelo base en HuggingFace (referencia): https://huggingface.co/google/medgemma-1.5-4b-it
+- Modelo base en Hugging Face (referencia): https://huggingface.co/google/medgemma-1.5-4b-it

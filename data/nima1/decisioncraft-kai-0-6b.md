@@ -105,7 +105,7 @@ Datos de parametros, contexto y licencia de los modelos comparables: no disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nima1/decisioncraft-kai-0.6b
+- Modelo en Hugging Face: https://huggingface.co/nima1/decisioncraft-kai-0.6b
 - Conjunto de datos Decisioncraft: https://huggingface.co/datasets/nima1/decisioncraft-data
 - Modelo base Decision-2.0-Kai-0.6B: https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B
 - Revision fijada del modelo base: https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B/tree/cd49ea3813fd8ba0928a9a23ef6c9a0f2f0cd764

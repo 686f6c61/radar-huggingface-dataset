@@ -90,7 +90,7 @@ No disponible. La model card y los resultados de busqueda proporcionados no incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bestdive/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/bestdive/ppo-Pyramids
 - Repositorio del modelo, con `training-config.yaml`, log de entrenamiento, checkpoint ONNX, `evaluation.json` y `evaluate_unity.py`: https://huggingface.co/bestdive/ppo-Pyramids/tree/main
 - Curso Deep RL de Hugging Face (Unidad 5, origen del entorno Pyramids): https://huggingface.co/learn/deep-rl-course
 - Documentacion de ML-Agents 1.1.0: https://github.com/Unity-Technologies/ml-agents

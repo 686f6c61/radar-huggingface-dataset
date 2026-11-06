@@ -85,7 +85,7 @@ La versión Darwin supera a ambos progenitores en GPQA Diamond, manteniendo el m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4)
+- [Modelo en Hugging Face](https://huggingface.co/AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4)
 - [Modelo base: FINAL-Bench/Darwin-35B-A3B-Opus](https://huggingface.co/FINAL-Bench/Darwin-35B-A3B-Opus)
 - [Modelo padre: Qwen/Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
 - [Modelo madre: Jackrong/Qwen3.5-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled](https://huggingface.co/Jackrong/Qwen3.5-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled)

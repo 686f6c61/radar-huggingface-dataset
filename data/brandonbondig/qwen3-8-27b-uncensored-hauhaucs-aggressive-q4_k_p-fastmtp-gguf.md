@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (espejo Q4_K_P + FastMTP) | 27B segun nombre; 1,86B segun metadatos safetensors | no disponible | GGUF (2 ficheros, 18,8 GB de repo) | no disponible | publico en HuggingFace |
-| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (original) | no disponible | no disponible | GGUF (diez quants, 172,5 GB de repo) | no disponible | publico en HuggingFace |
+| Este repositorio (espejo Q4_K_P + FastMTP) | 27B segun nombre; 1,86B segun metadatos safetensors | no disponible | GGUF (2 ficheros, 18,8 GB de repo) | no disponible | publico en Hugging Face |
+| HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF (original) | no disponible | no disponible | GGUF (diez quants, 172,5 GB de repo) | no disponible | publico en Hugging Face |
 | Otros modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no ha devuelto informacion tecnica relevante sobre este modelo ni sobre alternativas comparables, por lo que no es posible establecer una comparativa de rendimiento con otros modelos de la misma categoria.

@@ -92,7 +92,7 @@ Salamandra-2B es un modelo entrenado específicamente con sobremuestreo de lengu
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión LiteRT-LM: https://huggingface.co/luispoveda93/MiniCPM5-1B
+- Repositorio Hugging Face de la versión LiteRT-LM: https://huggingface.co/luispoveda93/MiniCPM5-1B
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM5-1B
 - Repositorio GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Página de análisis en Artificial Analysis (razonamiento): https://artificialanalysis.ai/models/minicpm5-1b

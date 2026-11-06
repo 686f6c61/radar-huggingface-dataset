@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VishalMysore/layaForWebTrained` es un modelo publicado en HuggingFace por el usuario VishalMysore bajo licencia Apache 2.0. Se trata de un repositorio con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 22 de septiembre de 2026, sin pipeline declarado y sin etiquetas de idioma. El nombre sugiere un ajuste fino orientado a tareas web ("ForWebTrained"), pero no hay documentacion que lo confirme.
+`VishalMysore/layaForWebTrained` es un modelo publicado en Hugging Face por el usuario VishalMysore bajo licencia Apache 2.0. Se trata de un repositorio con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 22 de septiembre de 2026, sin pipeline declarado y sin etiquetas de idioma. El nombre sugiere un ajuste fino orientado a tareas web ("ForWebTrained"), pero no hay documentacion que lo confirme.
 
 La model card del autor se limita a la linea de metadatos de licencia (`license: apache-2.0`) y no aporta ninguna descripcion funcional. No se declara arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, idiomas soportados ni resultados de evaluacion. Tampoco se publican formatos de pesos alternativos ni instrucciones de uso.
 
@@ -73,7 +73,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VishalMysore/layaForWebTrained
+- Repositorio en Hugging Face: https://huggingface.co/VishalMysore/layaForWebTrained
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

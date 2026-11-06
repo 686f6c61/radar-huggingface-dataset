@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `thaar1111/gin` es un repositorio alojado en HuggingFace por el usuario `thaar1111`. En el momento de redactar esta ficha, el repositorio no incluye información sustantiva sobre el modelo: la model card se limita a la cabecera YAML con la declaración de licencia `apache-2.0`, sin descripción, sin arquitectura declarada, sin detalles de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
+El modelo identificado como `thaar1111/gin` es un repositorio alojado en Hugging Face por el usuario `thaar1111`. En el momento de redactar esta ficha, el repositorio no incluye información sustantiva sobre el modelo: la model card se limita a la cabecera YAML con la declaración de licencia `apache-2.0`, sin descripción, sin arquitectura declarada, sin detalles de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 Los datos públicos del repositorio son mínimos: cero descargas, cero valoraciones y fechas de creación y última actualización idénticas (24 de septiembre de 2026 según el campo temporal devuelto por la plataforma). Esto es consistente con un repositorio recién creado, posiblemente de carácter experimental, privado en la práctica o pendiente de publicación de contenido.
 
@@ -22,7 +22,7 @@ Las búsquedas web realizadas no devuelven ninguna fuente relacionada con este i
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
 | Autor | thaar1111 |
-| Fecha de creacion en HuggingFace | 24 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 24 de septiembre de 2026 |
 | Ultima actualizacion | 24 de septiembre de 2026 |
 | Descargas | 0 |
 | Valoraciones (likes) | 0 |
@@ -94,7 +94,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaar1111/gin
+- Repositorio en Hugging Face: https://huggingface.co/thaar1111/gin
 - Resultados de busqueda descartados por no guardar relacion con este repositorio (se listan unicamente como constancia de la busqueda realizada):
   - Google Gemini: https://gemini.google.com/
   - ModelForest, arbol genealogico interactivo de familias de modelos: https://mrunreal.github.io/ModelForest/

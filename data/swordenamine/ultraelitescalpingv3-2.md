@@ -2,11 +2,11 @@
 
 ## Resumen
 
-UltraEliteScalpingv3.2 (identificador swordenamine/UltraEliteScalpingv3.2) no es un modelo de lenguaje ni un modelo de IA entrenado: es un repositorio de software alojado en HuggingFace que implementa un bot de generación de señales de scalping en el mercado forex. Lo publica el usuario swordenamine bajo la etiqueta "Ultra Elite Dev Team" y resuelve, según su autor, la combinación de análisis técnico multi-indicador con sentimiento de noticias y confirmación mediante un LLM externo (Claude Sonnet de Anthropic).
+UltraEliteScalpingv3.2 (identificador swordenamine/UltraEliteScalpingv3.2) no es un modelo de lenguaje ni un modelo de IA entrenado: es un repositorio de software alojado en Hugging Face que implementa un bot de generación de señales de scalping en el mercado forex. Lo publica el usuario swordenamine bajo la etiqueta "Ultra Elite Dev Team" y resuelve, según su autor, la combinación de análisis técnico multi-indicador con sentimiento de noticias y confirmación mediante un LLM externo (Claude Sonnet de Anthropic).
 
 El proyecto se distribuye como paquete Python modular (config, core, apis, utils) y no incluye pesos, checkpoints ni artefactos de modelo. La "inteligencia" procede de dos servicios externos: NewsAPI para titulares macroeconómicos y la API de Anthropic para una puntuación de confirmación entre 0 y 20 puntos. En consecuencia, las métricas habituales de un modelo (parámetros, ventana de contexto, cuantización) no aplican a este repositorio.
 
-Su relevancia actual es limitada y de carácter didáctico: sirve como ejemplo de integración de un LLM en un pipeline de trading algorítmico, no como modelo evaluable. El repositorio registra 0 descargas y 0 likes, el pipeline de HuggingFace figura como no disponible y no se han publicado evaluaciones reproducibles de su rendimiento.
+Su relevancia actual es limitada y de carácter didáctico: sirve como ejemplo de integración de un LLM en un pipeline de trading algorítmico, no como modelo evaluable. El repositorio registra 0 descargas y 0 likes, el pipeline de Hugging Face figura como no disponible y no se han publicado evaluaciones reproducibles de su rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y de carácter didáctico: sirve como ejemplo d
 | Longitud de contexto | no aplica (la gestiona el modelo externo Claude Sonnet, no este repositorio) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles |
-| Licencia | MIT según la model card; el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | MIT según la model card; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible (el repositorio contiene código Python, no pesos) |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA y no existen alternativas directamente comparables en términos de parámetros, contexto o licencia. Si se quisiera comparar la capa de IA que utiliza, el elemento relevante sería el modelo externo Claude Sonnet de Anthropic, cuyas especificaciones no se detallan en la información proporcionada. Como referencia conceptual, otros bots de trading publicados en GitHub o HuggingFace podrían cumplir una función similar, pero no se dispone de datos verificables para establecer una comparación rigurosa.
+No disponible. Este repositorio no es un modelo de IA y no existen alternativas directamente comparables en términos de parámetros, contexto o licencia. Si se quisiera comparar la capa de IA que utiliza, el elemento relevante sería el modelo externo Claude Sonnet de Anthropic, cuyas especificaciones no se detallan en la información proporcionada. Como referencia conceptual, otros bots de trading publicados en GitHub o Hugging Face podrían cumplir una función similar, pero no se dispone de datos verificables para establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -71,14 +71,14 @@ No disponible. Este repositorio no es un modelo de IA y no existen alternativas 
 - Riesgo financiero elevado: la propia model card lo declara "solo para fines educativos y de investigación" y recomienda probar en paper trading antes de arriesgar capital.
 - Dependencia crítica de APIs de terceros (NewsAPI y Anthropic); sin claves, el sistema opera con datos simulados y las señales no son válidas.
 - Posible alucinación de la capa Claude: las puntuaciones de 0 a 20 y los comentarios cualitativos generados por el LLM no están validados empíricamente y podrían introducir sesgo o ruido en la señal final.
-- Inconsistencias en los metadatos de HuggingFace: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15), y el campo de licencia aparece vacío pese a que la model card declara MIT.
+- Inconsistencias en los metadatos de Hugging Face: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-02-15), y el campo de licencia aparece vacío pese a que la model card declara MIT.
 - Discrepancia entre el autor declarado (swordenamine) y la URL de clonado del README (github.com/swordenkisk), lo que dificulta verificar el código fuente real.
-- Licencia MIT declarada en la model card, pero al no estar reflejada en el campo oficial de HuggingFace conviene confirmarla antes de cualquier uso comercial.
+- Licencia MIT declarada en la model card, pero al no estar reflejada en el campo oficial de Hugging Face conviene confirmarla antes de cualquier uso comercial.
 - No hay soporte multilingüe declarado ni documentación sobre sesgos; la salida por terminal está presumiblemente en inglés.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/UltraEliteScalpingv3.2
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/UltraEliteScalpingv3.2
 - Repositorio GitHub citado en la model card: https://github.com/swordenkisk/ultra_elite_scalping
 - Anthropic (proveedor del modelo Claude): https://anthropic.com
 - Consola de Anthropic para obtener la clave de API: https://console.anthropic.com

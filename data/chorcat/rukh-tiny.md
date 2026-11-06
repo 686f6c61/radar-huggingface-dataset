@@ -119,7 +119,7 @@ El autor senala ademas que el trabajo de referencia con el que se compara uso 16
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-tiny
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-tiny
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo jugable en el navegador (etapa tiny): https://rukh.borjaglez.com/?stage=tiny
 - Blog tecnico con el proceso de construccion: https://lab.rukh.borjaglez.com

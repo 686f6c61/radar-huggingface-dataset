@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
   - INT4: ~4,7 GB de VRAM
 - GPU recomendadas: una RTX 4090 o RTX 3090 (24 GB) puede ejecutar el modelo en FP16; GPUs con 12-16 GB (RTX 4070 Ti, RTX 4080) pueden ejecutarlo con cuantizacion INT8; GPUs con 8 GB pueden ejecutarlo con cuantizacion INT4.
 - Para despliegue en produccion se recomienda una A100 (40/80 GB) o H100 para inferencia a alta velocidad y mayor throughput.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) o transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) o transformers de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para comparar este checkpoint con otras 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/opus-max.h088.soup_base_sft
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/opus-max.h088.soup_base_sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

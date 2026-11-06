@@ -88,7 +88,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/MiniCPM-V-4.6-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/MiniCPM-V-4.6-NPU2
 - Modelo base (GGUF): https://huggingface.co/openbmb/MiniCPM-V-4.6-gguf
 - Motor FastFlowLM: https://fastflowlm.com
 - Repositorio oficial de MiniCPM-V (OpenBMB): https://github.com/OpenBMB/MiniCPM-V

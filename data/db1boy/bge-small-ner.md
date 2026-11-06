@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bge-small-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario db1boy en HuggingFace y se distribuye bajo licencia MIT. Se trata de un encoder tipo BERT de 33.215.625 parametros (unos 33,2 millones) con cabeza de clasificacion de tokens, por lo que su tarea es etiquetar secuencias (token classification), no generar texto.
+bge-small-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario db1boy en Hugging Face y se distribuye bajo licencia MIT. Se trata de un encoder tipo BERT de 33.215.625 parametros (unos 33,2 millones) con cabeza de clasificacion de tokens, por lo que su tarea es etiquetar secuencias (token classification), no generar texto.
 
 El modelo resuelve el problema clasico de extraer entidades (personas, organizaciones, lugares u otras categorias definidas por el conjunto de etiquetas) de un texto. Su relevancia practica radica en el tamano: al tener 33 millones de parametros ocupa unos 133 MB en FP32, lo que permite ejecutarlo en CPU o en cualquier GPU consumer con latencias muy bajas, algo atractivo para pipelines de extraccion de informacion a gran escala donde el coste por token importa.
 
-La informacion publicada es escasa: la model card es la generada automaticamente por el `Trainer` de HuggingFace y no documenta el conjunto de datos de entrenamiento, el conjunto de etiquetas, la procedencia de los datos ni los idiomas soportados. La unica evaluacion disponible son las metricas de validacion del propio entrenamiento: precision 0.9002, recall 0.9260, F1 0.9129 y accuracy 0.9817, con una perdida de 0.0802.
+La informacion publicada es escasa: la model card es la generada automaticamente por el `Trainer` de Hugging Face y no documenta el conjunto de datos de entrenamiento, el conjunto de etiquetas, la procedencia de los datos ni los idiomas soportados. La unica evaluacion disponible son las metricas de validacion del propio entrenamiento: precision 0.9002, recall 0.9260, F1 0.9129 y accuracy 0.9817, con una perdida de 0.0802.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La informacion publicada es escasa: la model card es la generada automaticamente
 
 La arquitectura es un encoder transformer de tipo BERT, heredado directamente de BAAI/bge-small-en-v1.5, al que se le ha anadido (o reutilizado) una cabeza de clasificacion por token para producir etiquetas BIO/BILUO sobre la secuencia de entrada. El modelo base bge-small-en-v1.5 pertenece a la familia BGE de BAAI, disenada originalmente para recuperacion y similitud semantica; su variante "small" es una red de ~33 millones de parametros, lo que la situa muy por debajo de un BERT-base (110 millones) en coste computacional.
 
-El ajuste fino se realizo con el `Trainer` de HuggingFace durante 10 epocas, con tasa de aprendizaje 2e-05, scheduler lineal, optimizador AdamW (betas 0,9/0,999, epsilon 1e-08), semilla 42 y tamano de lote de 16 tanto en entrenamiento como en evaluacion. El repositorio no indica cuantos tokens ni que dataset se usaron ("on an unknown dataset", segun la propia model card), ni si hubo una etapa previa de RLHF/DPO (algo que, por otra parte, no aplica a un modelo discriminativo de este tipo). Las versiones de framework declaradas son Transformers 4.50.0, PyTorch 2.10.0+cu128, Datasets 3.4.1 y Tokenizers 0.21.4.
+El ajuste fino se realizo con el `Trainer` de Hugging Face durante 10 epocas, con tasa de aprendizaje 2e-05, scheduler lineal, optimizador AdamW (betas 0,9/0,999, epsilon 1e-08), semilla 42 y tamano de lote de 16 tanto en entrenamiento como en evaluacion. El repositorio no indica cuantos tokens ni que dataset se usaron ("on an unknown dataset", segun la propia model card), ni si hubo una etapa previa de RLHF/DPO (algo que, por otra parte, no aplica a un modelo discriminativo de este tipo). Las versiones de framework declaradas son Transformers 4.50.0, PyTorch 2.10.0+cu128, Datasets 3.4.1 y Tokenizers 0.21.4.
 
 La unica innovacion tecnica reseñable es la eleccion del punto de partida: reutilizar un encoder de recuperacion densa ya preentrenado, en lugar de partir de un BERT generico, lo que puede aportar representaciones mas robustas para dominios con vocabulario especializado. No se documenta ninguna tecnica adicional (atencion lineal, decodificacion especulativa, destilacion, etc.).
 
@@ -38,7 +38,7 @@ La unica innovacion tecnica reseñable es la eleccion del punto de partida: reut
 - Etiquetado de secuencias (NER): clasificacion token a token sobre texto de entrada, con salida de etiquetas en formato estandar de `transformers` (`token-classification`).
 - Extraccion de entidades en texto: la tarea para la que fue ajustado, aunque el conjunto concreto de etiquetas no esta documentado en el repositorio.
 - Inferencia rapida: al ser un encoder de 33,2 millones de parametros, la pasada hacia delante es muy barata y admite lotes grandes en hardware modesto.
-- Compatibilidad con `endpoints_compatible`: puede desplegarse en HuggingFace Inference Endpoints sin adaptaciones.
+- Compatibilidad con `endpoints_compatible`: puede desplegarse en Hugging Face Inference Endpoints sin adaptaciones.
 - Capacidades multilingues: no disponibles ni declaradas; el modelo base es la variante en ingles.
 - Tool calling / function calling: no disponible (no es un modelo generativo ni soporta plantillas de chat).
 - Soporte de agentes y razonamiento multi-paso: no disponible (modelo discriminativo, sin generacion de texto).
@@ -90,17 +90,17 @@ La curva muestra mejoras marginales a partir de la epoca 5 y una perdida de vali
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 o superiores. Para despliegue a gran escala con lotes grandes son adecuadas T4, L4, A10 o A100/H100, aunque estas ultimas quedan muy sobredimensionadas para 33 millones de parametros.
 - Compatibilidad con GPU consumer: si, cabe holgadamente en cualquier GPU consumer actual y tambien en iGPU. El cuello de botella real sera el preprocesado de texto, no el modelo.
 - CPU: puede ejecutarse en CPU sin problemas; es probablemente el escenario de despliegue mas razonable por coste.
-- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, exportacion a ONNX Runtime o TorchScript, servidores genericos como FastAPI + Uvicorn, Triton Inference Server o TorchServe, y HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica). vLLM, TGI, LMDeploy o llama.cpp estan orientados a modelos generativos y no aplican directamente a esta tarea; no hay pesos GGUF publicados.
+- Opciones de despliegue: `transformers` con `pipeline("token-classification")`, exportacion a ONNX Runtime o TorchScript, servidores genericos como FastAPI + Uvicorn, Triton Inference Server o TorchServe, y Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica). vLLM, TGI, LMDeploy o llama.cpp estan orientados a modelos generativos y no aplican directamente a esta tarea; no hay pesos GGUF publicados.
 - Latencia y throughput: no disponibles. No se publican mediciones y la model card no incluye informacion de rendimiento en inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| db1boy/bge-small-ner | 33,2 M | 512 tokens (heredado del modelo base; no confirmado) | token-classification (NER) | MIT | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 | 33,2 M | 512 tokens | embeddings / similitud semantica | MIT | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | 110 M | 512 tokens | token-classification (NER en ingles, etiquetas CoNLL: PER/ORG/LOC/MISC) | MIT | HuggingFace, muy extendido |
-| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | token-classification (NER en ingles) | MIT | HuggingFace |
+| db1boy/bge-small-ner | 33,2 M | 512 tokens (heredado del modelo base; no confirmado) | token-classification (NER) | MIT | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 | 33,2 M | 512 tokens | embeddings / similitud semantica | MIT | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | 110 M | 512 tokens | token-classification (NER en ingles, etiquetas CoNLL: PER/ORG/LOC/MISC) | MIT | Hugging Face, muy extendido |
+| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 tokens | token-classification (NER en ingles) | MIT | Hugging Face |
 
 La comparacion de rendimiento con estas alternativas no es posible con los datos disponibles: bge-small-ner no documenta el dataset de evaluacion ni el conjunto de etiquetas, por lo que sus metricas (F1 0,9129) no son equiparables a las publicadas por dslim/bert-base-NER o Jean-Baptiste/roberta-large-ner-english sobre CoNLL-2003. En coste computacional, bge-small-ner es entre 3 y 10 veces mas ligero que esas alternativas.
 
@@ -120,7 +120,7 @@ La comparacion de rendimiento con estas alternativas no es posible con los datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/db1boy/bge-small-ner
+- Modelo en Hugging Face: https://huggingface.co/db1boy/bge-small-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper de la familia BGE (C-Pack: Packed Resources For General Chinese Embeddings, que describe el preentrenamiento de los modelos BGE): https://arxiv.org/abs/2309.07597
 - Repositorio FlagEmbedding de BAAI: https://github.com/FlagOpen/FlagEmbedding

@@ -66,7 +66,7 @@ El unico dato numerico de rendimiento reportado es la perdida media de entrenami
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leamhadzic/cs329x-hw1-dpo-qwen2.5-1.5b | Adaptador LoRA sobre base de 1,5 B | No disponible (base declarada: 32.768 tokens) | Adaptador DPO sobre transformer denso | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| leamhadzic/cs329x-hw1-dpo-qwen2.5-1.5b | Adaptador LoRA sobre base de 1,5 B | No disponible (base declarada: 32.768 tokens) | Adaptador DPO sobre transformer denso | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | No disponible en esta ficha; la model card base declara 32.768 tokens | Transformer decoder-only denso ajustado por instrucciones | apache-2.0 | Ampliamente disponible en el Hub |
 | Qwen/Qwen2.5-3B-Instruct | 3 B | No disponible en esta ficha | Transformer decoder-only denso ajustado por instrucciones | Qwen research/community segun variante | Disponible en el Hub |
 | Meta Llama 3.2 1B Instruct | 1 B | No disponible en esta ficha | Transformer decoder-only denso ajustado por instrucciones | Licencia comunitaria de Llama | Disponible en el Hub |
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del ad
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/leamhadzic/cs329x-hw1-dpo-qwen2.5-1.5b
+- Hugging Face del modelo: https://huggingface.co/leamhadzic/cs329x-hw1-dpo-qwen2.5-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset PRISM (prism-alignment): https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
 - Libreria PEFT: https://github.com/huggingface/peft

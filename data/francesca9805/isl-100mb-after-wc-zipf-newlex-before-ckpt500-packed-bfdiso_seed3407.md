@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed3407`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 124,8 millones, segun los pesos en formato safetensors) y un peso de repositorio de solo 0,3 GB. El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante SFT (supervised fine-tuning), y el registro del experimento esta alojado en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen.
+Este modelo es un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed3407`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 124,8 millones, segun los pesos en formato safetensors) y un peso de repositorio de solo 0,3 GB. El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante SFT (supervised fine-tuning), y el registro del experimento esta alojado en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen.
 
 El modelo forma parte de una linea de experimentos cuyo nombre sugiere variaciones de tokenizador y corpus (los identificadores `wc-zipf-newlex`, `packed`, `100mb` y `ckpt500` apuntan a corpus empaquetados de unos 100 MB, un lexico nuevo y un checkpoint en el paso 500), aunque esta interpretacion proviene de la nomenclatura del repositorio y no esta confirmada en la model card. No se especifica en la documentacion disponible la longitud de contexto, los idiomas soportados ni la licencia, por lo que su evaluacion para produccion requiere verificacion adicional por parte del usuario.
 
@@ -28,7 +28,7 @@ Su relevancia es principalmente academica y experimental: es un modelo pequeno, 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada mediante los tags de HuggingFace es GPT-2, es decir, un transformer decoder-only con atencion causal completa y normalizacion por capas previa, en su variante de aproximadamente 124 millones de parametros (comparable en escala a la configuracion `gpt2` estandar de 124M). No se documenta ninguna modificacion estructural respecto a esa arquitectura: no hay indicios de mezcla de expertos (MoE), atencion lineal, decodificacion especulativa ni componentes de espacio de estados (SSM) en la informacion disponible.
+La arquitectura declarada mediante los tags de Hugging Face es GPT-2, es decir, un transformer decoder-only con atencion causal completa y normalizacion por capas previa, en su variante de aproximadamente 124 millones de parametros (comparable en escala a la configuracion `gpt2` estandar de 124M). No se documenta ninguna modificacion estructural respecto a esa arquitectura: no hay indicios de mezcla de expertos (MoE), atencion lineal, decodificacion especulativa ni componentes de espacio de estados (SSM) en la informacion disponible.
 
 El entrenamiento se realizo mediante SFT sobre el modelo base indicado, usando el stack TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El identificador del modelo menciona `after-wc-zipf-newlex`, `before-ckpt500` y `100mb`, lo que sugiere un ajuste a partir del checkpoint 500 de un entrenamiento previo sobre un corpus empaquetado de aproximadamente 100 MB con un tokenizador o lexico nuevo; no se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases posteriores de RLHF o DPO. Existe un registro publico del experimento en Weights & Biases que puede contener curvas de perdida y configuracion de hiperparametros.
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,5 GB de pesos mas memoria para activaciones y cache KV; en fp16/bf16, alrededor de 0,25 GB; en cuantizacion de 8 bits, ~0,13 GB; en 4 bits, ~0,07 GB. En todos los casos el consumo total con contexto corto se mantiene por debajo de 2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo no requiere aceleradores de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en GPUs integradas con memoria unificada.
-- Opciones de despliegue: pipeline de Transformers (con `device="cuda"` o CPU), Text Generation Inference (el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de HuggingFace Endpoints. Para llama.cpp/Ollama o vLLM seria necesario convertir o adaptar los pesos, ya que no se publican ficheros GGUF.
+- Opciones de despliegue: pipeline de Transformers (con `device="cuda"` o CPU), Text Generation Inference (el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`), y servidores compatibles con la API de Hugging Face Endpoints. Para llama.cpp/Ollama o vLLM seria necesario convertir o adaptar los pesos, ya que no se publican ficheros GGUF.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un modelo de 124,8 M de parametros, la latencia por token es baja en GPU moderna, pero no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407` | 124,8 M | No disponible | No publicado | No disponible | HuggingFace (0 descargas, 0 likes) |
+| `francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407` | 124,8 M | No disponible | No publicado | No disponible | Hugging Face (0 descargas, 0 likes) |
 | GPT-2 (124M) | ~124 M | 1024 tokens | Metricas publicas de la familia GPT-2 | Licencia MIT (segun el repositorio original de OpenAI) | Ampliamente disponible |
 | DistilGPT-2 | ~82 M | 1024 tokens | Metricas publicas del modelo destilado | Licencia del modelo original | Ampliamente disponible |
 | GPT-2 medium | ~355 M | 1024 tokens | Metricas publicas de la familia GPT-2 | Licencia MIT (segun el repositorio original) | Ampliamente disponible |
@@ -88,7 +88,7 @@ Los datos de los modelos comparativos corresponden a informacion publica ampliam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7y6cmu2e

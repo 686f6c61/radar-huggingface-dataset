@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NoveltyAdapt-policies es un repositorio de checkpoints de políticas de aprendizaje por refuerzo publicado por el usuario helenlu94 en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un conjunto de pesos entrenados con Stable-Baselines3 para tareas de robótica de manipulación, asociados al proyecto NoveltyAdapt y a la rama de código `iros2026`. El repositorio contiene únicamente ficheros ZIP de checkpoints (`final_model.zip`, `best_model.zip` y `recent_model.zip`); no incluye logs de entrenamiento, buffers de replay ni ficheros de ejecución.
+NoveltyAdapt-policies es un repositorio de checkpoints de políticas de aprendizaje por refuerzo publicado por el usuario helenlu94 en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de un conjunto de pesos entrenados con Stable-Baselines3 para tareas de robótica de manipulación, asociados al proyecto NoveltyAdapt y a la rama de código `iros2026`. El repositorio contiene únicamente ficheros ZIP de checkpoints (`final_model.zip`, `best_model.zip` y `recent_model.zip`); no incluye logs de entrenamiento, buffers de replay ni ficheros de ejecución.
 
 La relevancia del artefacto está en el contexto del artículo arXiv 2603.11351v1, que describe un enfoque híbrido en el que un modelo de lenguaje se emplea para razonar sobre el sentido común, identificar operadores ausentes en un plan, generar planes con un planificador simbólico y escribir funciones de recompensa que guían al agente de RL en el aprendizaje de políticas de control para esos operadores nuevos. Este repositorio sería, por tanto, el material de pesos que respalda los experimentos de adaptación a la novedad de ese trabajo.
 
@@ -79,8 +79,8 @@ La comparación se plantea frente a otros repositorios de checkpoints de RL para
 |---|---|---|---|---|---|
 | NoveltyAdapt-policies | Checkpoints de políticas RL (SB3) | coffee_box, coffee_drawer, kitchen, nut_assembly | ZIP de Stable-Baselines3 | no disponible | 0 descargas, 0 likes |
 | Stable-Baselines3 Zoo | Colección de políticas entrenadas y scripts de entrenamiento | tareas de control clásico y Atari, entre otras | ZIP de Stable-Baselines3 | no verificado en esta búsqueda | repositorio público de referencia |
-| LeRobot (HuggingFace) | Políticas y datasets de robótica | múltiples tareas de manipulación | formatos propios del proyecto | no verificado en esta búsqueda | ecosistema amplio con hub propio |
-| Checkpoints específicos de artículos en HuggingFace | Pesos asociados a publicaciones | variable según el trabajo | variable | habitualmente declarada | variable |
+| LeRobot (Hugging Face) | Políticas y datasets de robótica | múltiples tareas de manipulación | formatos propios del proyecto | no verificado en esta búsqueda | ecosistema amplio con hub propio |
+| Checkpoints específicos de artículos en Hugging Face | Pesos asociados a publicaciones | variable según el trabajo | variable | habitualmente declarada | variable |
 
 Diferencias destacables: NoveltyAdapt-policies no declara licencia, no incluye logs ni scripts de evaluación y no documenta métricas, a diferencia de colecciones mantenidas como Stable-Baselines3 Zoo, que sí publican procedimientos de reproducción. La ventaja específica de este repositorio es su vinculación directa con el método híbrido LLM más planificador simbólico más RL del artículo asociado.
 
@@ -94,12 +94,12 @@ Diferencias destacables: NoveltyAdapt-policies no declara licencia, no incluye l
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta implican que no hay evidencia externa de reproducibilidad.
 - Sesgos y alucinación: no aplican en el sentido habitual de un modelo generativo, pero sí existe riesgo de que la política falle fuera de la distribución de estados vista durante el entrenamiento, sin que se documenten esos límites.
 - Cobertura declarada limitada a cuatro dominios: cualquier tarea fuera de `coffee_box`, `coffee_drawer`, `kitchen` y `nut_assembly` queda fuera del alcance de estos checkpoints.
-- Posible discrepancia de identidad entre el autor de HuggingFace (helenlu94) y el propietario del repositorio de código en GitHub (helenlu66); conviene verificarlo antes de asumir la autoría conjunta.
+- Posible discrepancia de identidad entre el autor de Hugging Face (helenlu94) y el propietario del repositorio de código en GitHub (helenlu66); conviene verificarlo antes de asumir la autoría conjunta.
 - Estado de publicación: el artículo asociado es un preprint de arXiv en su versión v1 y puede no haber pasado revisión por pares.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/helenlu94/NoveltyAdapt-policies
+- Repositorio en Hugging Face: https://huggingface.co/helenlu94/NoveltyAdapt-policies
 - Repositorio de código NoveltyAdapt (rama `iros2026`): https://github.com/helenlu66/NoveltyAdapt
 - Artículo asociado en arXiv: https://arxiv.org/abs/2603.11351v1
 - Documentación de Stable-Baselines3: no incluida en la información proporcionada

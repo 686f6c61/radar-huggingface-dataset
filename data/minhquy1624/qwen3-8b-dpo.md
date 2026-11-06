@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `minhquy1624/qwen3-8b-dpo` es un ajuste fino del modelo base Qwen3-8B de Alibaba Qwen, publicado en HuggingFace por el usuario minhquy1624. Por el nombre del repositorio, se trata de un modelo alineado mediante DPO (Direct Preference Optimization) sobre Qwen3-8B, una arquitectura transformer densa decoder-only de 8.190.735.360 parametros (8,19 mil millones) segun los pesos en safetensors del repositorio, que ocupa 16,4 GB.
+El modelo `minhquy1624/qwen3-8b-dpo` es un ajuste fino del modelo base Qwen3-8B de Alibaba Qwen, publicado en Hugging Face por el usuario minhquy1624. Por el nombre del repositorio, se trata de un modelo alineado mediante DPO (Direct Preference Optimization) sobre Qwen3-8B, una arquitectura transformer densa decoder-only de 8.190.735.360 parametros (8,19 mil millones) segun los pesos en safetensors del repositorio, que ocupa 16,4 GB.
 
 El problema que resuelve es el habitual de los ajustes por preferencias: partir de un modelo instruct ya competente y refinar su comportamiento conversacional (formato de respuesta, seguimiento de instrucciones, tono) sin necesidad de reentrenar desde cero. Es relevante ahora porque Qwen3 es una de las familias abiertas de referencia en el rango de 8B, y los fine-tunes comunitarios con DPO son una via barata de adaptar el comportamiento del modelo a dominios o estilos concretos.
 
-Ahora bien, la model card publicada es la plantilla automatica de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparametros, dataset de preferencias, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ninguna evaluacion. Por tanto, todo lo relativo al entrenamiento especifico de este checkpoint debe considerarse no verificado, y las capacidades descritas a continuacion se derivan del modelo base Qwen3-8B, no de documentacion propia del autor.
+Ahora bien, la model card publicada es la plantilla automatica de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparametros, dataset de preferencias, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ninguna evaluacion. Por tanto, todo lo relativo al entrenamiento especifico de este checkpoint debe considerarse no verificado, y las capacidades descritas a continuacion se derivan del modelo base Qwen3-8B, no de documentacion propia del autor.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Nota: las filas marcadas como derivadas del modelo base proceden de la documenta
 
 La arquitectura subyacente es la de Qwen3-8B: un transformer decoder-only denso con atencion por consultas agrupadas (GQA), normalizacion RMSNorm pre-norm, activacion SwiGLU, codificacion posicional RoPE y QK-Norm, con un vocabulario de aproximadamente 151.936 tokens. El modelo base se entreno con un enfoque en dos fases: preentrenamiento a gran escala seguido de post-entrenamiento con datos de instrucciones y preferencias, e incorpora un modo de razonamiento explicito (*thinking*) conmutable. La longitud de contexto nativa es de 32.768 tokens, ampliable a 131.072 mediante escalado YaRN.
 
-Respecto a este checkpoint concreto, la informacion disponible no documenta el procedimiento de entrenamiento. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes (datos de entrenamiento, regimen de precision, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]". Lo unico deducible es que se ha aplicado DPO sobre Qwen3-8B, segun el identificador del repositorio, y que los pesos estan almacenados en safetensors con un tamano coherente con un checkpoint en bf16/fp16 de 8,19 B de parametros. No hay informacion sobre el dataset de preferencias utilizado, el numero de pasos, la tasa de aprendizaje ni si el modo *thinking* se ha preservado, modificado o eliminado durante la alineacion.
+Respecto a este checkpoint concreto, la informacion disponible no documenta el procedimiento de entrenamiento. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes (datos de entrenamiento, regimen de precision, hiperparametros, infraestructura de computo) figuran como "[More Information Needed]". Lo unico deducible es que se ha aplicado DPO sobre Qwen3-8B, segun el identificador del repositorio, y que los pesos estan almacenados en safetensors con un tamano coherente con un checkpoint en bf16/fp16 de 8,19 B de parametros. No hay informacion sobre el dataset de preferencias utilizado, el numero de pasos, la tasa de aprendizaje ni si el modo *thinking* se ha preservado, modificado o eliminado durante la alineacion.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas para precision completa: A100 40/80 GB, H100, L40S o RTX 4090 / RTX 3090 (24 GB) para bf16 con contexto moderado. Para contextos cercanos a 32k tokens seran necesarias GPU de 40 GB o superior, o bien cuantizacion.
 - GPU de consumo: cabe en RTX 4090, RTX 3090, RTX 4080 (16 GB, muy justo y probablemente requiera cuantizacion) y en GPUs de 24 GB con cuantizacion de 8 bits sin problemas. En tarjetas de 12-16 GB es necesario cuantizar a 4-8 bits.
 - Cuantizacion: el repositorio no publica pesos cuantizados. Dado que el modelo base Qwen3-8B dispone de versiones GGUF y AWQ/GPTQ, es viable generar cuantizaciones propias con llama.cpp o AutoAWQ, aunque no hay ninguna validada por el autor.
-- Opciones de despliegue: transformers (soporte nativo declarado en los tags), text-generation-inference (tag `text-generation-inference`), vLLM, SGLang y llama.cpp/Ollama previa conversion a GGUF. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (soporte nativo declarado en los tags), text-generation-inference (tag `text-generation-inference`), vLLM, SGLang y llama.cpp/Ollama previa conversion a GGUF. El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. El autor no publica mediciones de velocidad, y estas dependeran del hardware, del backend y de la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparacion de rendimiento no es posible: este checkpoint no tiene ninguna ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minhquy1624/qwen3-8b-dpo
+- Modelo en Hugging Face: https://huggingface.co/minhquy1624/qwen3-8b-dpo
 - Modelo base (referencia, no citado en la ficha del autor): https://huggingface.co/Qwen/Qwen3-8B
 - Paper citado en los tags del repositorio (estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning referenciada en la plantilla: https://mlco2.github.io/impact

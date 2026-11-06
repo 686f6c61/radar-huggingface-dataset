@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en el repositorio de HuggingFace `asasdsss/MyAwesomeModel-TestRepo`, publicado por el usuario `asasdsss` bajo licencia MIT. La model card describe una versión actualizada de un modelo previo que mejora significativamente sus capacidades de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. Según la información disponible, el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del sector.
+MyAwesomeModel es un modelo de lenguaje presentado en el repositorio de Hugging Face `asasdsss/MyAwesomeModel-TestRepo`, publicado por el usuario `asasdsss` bajo licencia MIT. La model card describe una versión actualizada de un modelo previo que mejora significativamente sus capacidades de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. Según la información disponible, el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del sector.
 
 El repositorio no proporciona detalles técnicos sobre la arquitectura, el número de parámetros o la longitud de contexto. La model card menciona una variante llamada MyAwesomeModel-Small, que comparte arquitectura con el modelo base pero utiliza el mismo tokenizador que el modelo principal. No se especifican los conjuntos de datos de entrenamiento ni el proceso de alineación (RLHF, DPO, etc.). A pesar de la falta de especificaciones, el modelo declara soporte para system prompts, function calling y una reducción en la tasa de alucinación en comparación con su versión anterior.
 
@@ -10,7 +10,7 @@ El repositorio no proporciona detalles técnicos sobre la arquitectura, el núme
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta "bert" en HuggingFace, sin confirmación en la model card) |
+| Arquitectura | no disponible (etiqueta "bert" en Hugging Face, sin confirmación en la model card) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El repositorio no proporciona detalles técnicos sobre la arquitectura, el núme
 
 ## Arquitectura y entrenamiento
 
-La model card no ofrece información sobre la arquitectura interna del modelo. Solo se indica que está basado en la librería `transformers` y que la etiqueta de HuggingFace sugiere una arquitectura tipo BERT, aunque no hay confirmación oficial. Se menciona que el modelo ha sido actualizado con "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se detalla en qué consisten. Tampoco se proporcionan datos sobre el volumen de tokens de entrenamiento, la composición del dataset o si se emplearon técnicas como RLHF o DPO. La model card recomienda usar una temperatura de 0.6 y un system prompt específico con la fecha actual, lo que sugiere un ajuste fino orientado a conversación y razonamiento.
+La model card no ofrece información sobre la arquitectura interna del modelo. Solo se indica que está basado en la librería `transformers` y que la etiqueta de Hugging Face sugiere una arquitectura tipo BERT, aunque no hay confirmación oficial. Se menciona que el modelo ha sido actualizado con "mecanismos de optimización algorítmica durante el post-entrenamiento", pero no se detalla en qué consisten. Tampoco se proporcionan datos sobre el volumen de tokens de entrenamiento, la composición del dataset o si se emplearon técnicas como RLHF o DPO. La model card recomienda usar una temperatura de 0.6 y un system prompt específico con la fecha actual, lo que sugiere un ajuste fino orientado a conversación y razonamiento.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asasdsss/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asasdsss/MyAwesomeModel-TestRepo
 - Duplicado del repositorio: https://huggingface.co/aSsadASD1/MyAwesomeModel-TestRepo
 - Página de LLMs.info: https://llms.info/models/sdsdfs4545-myawesomemodel-testrepo-1095 (contiene información duplicada)
 - Página de Toolify: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo (contiene información duplicada)

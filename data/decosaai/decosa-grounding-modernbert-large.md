@@ -107,6 +107,6 @@ Las cifras de contexto y de rendimiento de los modelos comparados no estan dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-grounding-modernbert-large
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-grounding-modernbert-large
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio o demo) en la busqueda web realizada: los resultados devueltos no guardaban relacion con el modelo y fueron descartados.

@@ -115,6 +115,6 @@ Frente a enfoques genéricos de imitación como Diffusion Policy, no hay datos d
 
 ## Enlaces
 
-- [IkerAzurmendi/act-pick-v3-1-2-pieces-12000 en HuggingFace](https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-12000)
+- [IkerAzurmendi/act-pick-v3-1-2-pieces-12000 en Hugging Face](https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-12000)
 - Checkpoints hermanos citados en la model card (URL construida a partir del namespace del autor, no verificada en la búsqueda): [act-pick-v3-1-2-pieces-18000](https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-18000), [act-pick-v3-6000](https://huggingface.co/IkerAzurmendi/act-pick-v3-6000), [act-pick-v3-strict-2400](https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400), [act-pick-v3-chunk60-4800](https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-4800), [act-pick-v3-1piece-9600](https://huggingface.co/IkerAzurmendi/act-pick-v3-1piece-9600), [act-pick-v3-recent-12000](https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000), [act-pick-v2-6000](https://huggingface.co/IkerAzurmendi/act-pick-v2-6000)
 - Paper, blog o repositorio adicionales: no disponible. La búsqueda web realizada no devolvió enlaces relevantes al modelo (los resultados correspondían a un marketplace de servicios freelance, sin relación con el proyecto).

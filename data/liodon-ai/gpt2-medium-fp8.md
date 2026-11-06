@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/gpt2-medium-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/gpt2-medium-FP8
 - Modelo base (openai-community/gpt2-medium): https://huggingface.co/openai-community/gpt2-medium
 - Sitio web de Liodon AI: https://liodon.ai/
 - Artículo sobre arquitectura GPT-2 (Medium): https://medium.com/@hsinhungw/gpt-2-detailed-model-architecture-6b1aad33d16b

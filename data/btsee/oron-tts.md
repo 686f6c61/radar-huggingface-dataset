@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables específicos para mongol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/btsee/oron-tts
+- Hugging Face: https://huggingface.co/btsee/oron-tts
 - GitHub: https://github.com/btseee/oron-tts
 - Dataset de entrenamiento: https://huggingface.co/datasets/btsee/mbspeech_mn

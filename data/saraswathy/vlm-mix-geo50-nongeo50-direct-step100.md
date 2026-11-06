@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-geo50-nongeo50-direct-step100
+- Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-geo50-nongeo50-direct-step100
 - Repositorio de experimentos asociado: no disponible en la información proporcionada (se menciona en la model card pero no se proporciona el enlace)
 - Página personal de la autora: https://saraamjith.com/saraamjith.html (menciona trabajos con VLMs y GRPO)
 - Otros adaptadores de la serie (relacionados):

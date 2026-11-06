@@ -71,9 +71,9 @@ Ajustes de generacion documentados: Euler a, 28 pasos, CFG 4.5, CLIP skip 2, res
 
 | Modelo | Tipo | Base | Contexto/Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SakunaMemoir-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 832x1216 documentado | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje generico en Illustrious | LoRA de personaje | Illustrious / NoobAI | variable | variable por autor | Civitai, HuggingFace |
-| Checkpoint SDXL base | Modelo fundacional | SDXL | 1024 px | openrail / community | HuggingFace, Stability |
+| SakunaMemoir-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 832x1216 documentado | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje generico en Illustrious | LoRA de personaje | Illustrious / NoobAI | variable | variable por autor | Civitai, Hugging Face |
+| Checkpoint SDXL base | Modelo fundacional | SDXL | 1024 px | openrail / community | Hugging Face, Stability |
 
 No se dispone de datos de rendimiento cuantitativos para comparar con alternativas concretas; la comparacion se limita a categoria, base y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento cuantitativos para comparar con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/SakunaMemoir-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/SakunaMemoir-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/SakunaMemoir-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/SakunaMemoir-Lora
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio

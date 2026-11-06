@@ -77,7 +77,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 | Modelo | Parametros | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | nativ-community/clef-flash-MLX-MXFP4 | 9.531.576.561 | safetensors, mxfp4 4 bits, grupo 32 | apache-2.0 | MLX, requiere fork de mlx-vlm |
-| Cloudflare/clef-flash (modelo base) | no disponible en la informacion proporcionada | PyTorch (referencia fp32 segun la verificacion) | no disponible en la informacion proporcionada | HuggingFace, via Cloudflare |
+| Cloudflare/clef-flash (modelo base) | no disponible en la informacion proporcionada | PyTorch (referencia fp32 segun la verificacion) | no disponible en la informacion proporcionada | Hugging Face, via Cloudflare |
 
 Comparativas con alternativas de la misma categoria (otros modelos de decision multimodales o conversiones MLX equivalentes): no disponible.
 
@@ -96,7 +96,7 @@ Comparativas con alternativas de la misma categoria (otros modelos de decision m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/clef-flash-MLX-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/clef-flash-MLX-MXFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Fork de mlx-vlm con soporte de Clef: https://github.com/Lazarus-931/mlx-vlm/tree/feat/clef

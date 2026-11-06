@@ -95,6 +95,6 @@ No disponible. La información proporcionada no incluye otras políticas de loco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1
+- Modelo en Hugging Face: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Repositorio microduck de Pollen Robotics: https://github.com/pollen-robotics/microduck

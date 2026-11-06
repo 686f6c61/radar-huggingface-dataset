@@ -84,5 +84,5 @@ No se dispone de información sobre otros modelos de detección de turnos (p. ej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yaitsaid/turn-taking-detection-models
+- Repositorio Hugging Face: https://huggingface.co/yaitsaid/turn-taking-detection-models
 - No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

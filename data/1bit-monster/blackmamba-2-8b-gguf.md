@@ -95,7 +95,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/BlackMamba-2.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/BlackMamba-2.8B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/BlackMamba-2.8B
 - Motor 1bit: https://github.com/1bit-MONSTER/engine
 - Fork de llama.cpp con soporte BlackMamba: https://github.com/1bit-MONSTER/llama.cpp

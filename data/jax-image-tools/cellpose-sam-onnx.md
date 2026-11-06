@@ -75,8 +75,8 @@ El error máximo absoluto frente al checkpoint PyTorch es de 1.24e-05 (umbral de
 
 | Modelo | Parámetros | Contexto/Entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `jax-image-tools/cellpose-sam-onnx` | 304,6 M | 256×256 | BSD-3-Clause | ONNX FP16 | HuggingFace |
-| `mouseland/cellpose-sam` (PyTorch) | 304,6 M | 256×256 | BSD-3-Clause | PyTorch | HuggingFace |
+| `jax-image-tools/cellpose-sam-onnx` | 304,6 M | 256×256 | BSD-3-Clause | ONNX FP16 | Hugging Face |
+| `mouseland/cellpose-sam` (PyTorch) | 304,6 M | 256×256 | BSD-3-Clause | PyTorch | Hugging Face |
 | Cellpose 2.0 (modelo base) | ~5 M | variable | BSD-3-Clause | PyTorch | GitHub, PyPI |
 
 El modelo es idéntico en arquitectura y pesos al `mouseland/cellpose-sam` original; la diferencia es exclusivamente el formato de distribución (ONNX FP16 autónomo). Frente a Cellpose 2.0, CPSAM ofrece una generalización superior en datos heterogéneos (ruido de disparo, desenfoque anisotrópico, inversiones de contraste) según el paper de Stringer et al., a costa de un tamaño mucho mayor (588 MB vs ~20 MB). No hay datos de comparación cuantitativa de precisión entre CPSAM y Cellpose 2.0 en la información proporcionada.
@@ -93,7 +93,7 @@ El modelo es idéntico en arquitectura y pesos al `mouseland/cellpose-sam` origi
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jax-image-tools/cellpose-sam-onnx
+- Hugging Face del modelo: https://huggingface.co/jax-image-tools/cellpose-sam-onnx
 - Modelo base PyTorch: https://huggingface.co/mouseland/cellpose-sam
 - Repositorio `cellpose-js`: https://github.com/TheJacksonLaboratory/cellpose-js
 - Paper Cellpose-SAM (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1

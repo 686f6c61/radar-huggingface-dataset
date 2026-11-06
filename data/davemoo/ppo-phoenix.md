@@ -75,7 +75,7 @@ No se dispone de datos de otros agentes sobre `ALE/Phoenix-v5` en la informació
 
 | Modelo | Parametros | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davemoo/ppo-phoenix | 1.223.129 | ALE/Phoenix-v5 | 4687,19 ± 974,80 (estocástica), 4578,8 (greedy) | no disponible | HuggingFace |
+| davemoo/ppo-phoenix | 1.223.129 | ALE/Phoenix-v5 | 4687,19 ± 974,80 (estocástica), 4578,8 (greedy) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de otros agentes sobre `ALE/Phoenix-v5` en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davemoo/ppo-phoenix
+- Modelo en Hugging Face: https://huggingface.co/davemoo/ppo-phoenix
 - Documentación de PPO en Spinning Up (OpenAI): https://spinningup.openai.com/en/latest/algorithms/ppo.html
 - Anuncio original de PPO en OpenAI: https://openai.com/index/openai-baselines-ppo/
 - Artículo introductorio de PPO en el blog de Hugging Face: https://huggingface.co/blog/deep-rl-ppo

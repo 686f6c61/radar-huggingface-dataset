@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/whisper-free/cohere-transcribe-arabic-gguf
+- Repositorio Hugging Face: https://huggingface.co/whisper-free/cohere-transcribe-arabic-gguf
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Repositorio de conversion GGUF original: https://huggingface.co/handy-computer/cohere-transcribe-arabic-07-2026-gguf
 - Commit de conversion: `715cbe09ca9b60fc1e497db1e4478fa9fcf4ac21`

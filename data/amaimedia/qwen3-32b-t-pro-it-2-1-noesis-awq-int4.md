@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada**: ~9 GB para inferencia completa residente; ~3,4 GB pico con streaming por capas.
 - **GPU recomendadas**: RTX 3060 6 GB (streaming), RTX 4060, RTX 4090, A100, H100 (modo estándar).
 - **Compatibilidad con GPU de consumo**: sí, cabe en GPUs de 6 GB mediante streaming, y en GPUs de 8 GB o más sin streaming.
-- **Opciones de despliegue**: AutoAWQ (librería nativa), transformers, text-generation-inference (TGI), compatible con endpoints de HuggingFace.
+- **Opciones de despliegue**: AutoAWQ (librería nativa), transformers, text-generation-inference (TGI), compatible con endpoints de Hugging Face.
 - **Latencia y throughput**: prefill ~25 tok/s en RTX 3060 con streaming; en GPUs de 12 GB+ se puede usar el modo estándar de AutoAWQ para menor latencia.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otras cuantizaciones de modelos de 32B e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AMAImedia/Qwen3-32B-T-pro-it-2.1-NOESIS-AWQ-INT4)
+- [Modelo en Hugging Face](https://huggingface.co/AMAImedia/Qwen3-32B-T-pro-it-2.1-NOESIS-AWQ-INT4)
 - [Modelo base t-tech/T-pro-it-2.1](https://huggingface.co/t-tech/T-pro-it-2.1)
 - [Paper T-pro 2.0 (arXiv:2512.10430)](https://arxiv.org/abs/2512.10430)
 - [Sitio web de AMAImedia](https://www.amaimedia.com)

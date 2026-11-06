@@ -93,8 +93,8 @@ La ventaja del IQ4_XS frente al Q3_K_M es una mayor fidelidad al modelo original
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-MTP-16GB-VRAM-GGUF)
-- [Modelo base Qwen3.8-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Modelo en Hugging Face](https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-MTP-16GB-VRAM-GGUF)
+- [Modelo base Qwen3.8-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Documentacion de Qwen3.8 en Unsloth](https://unsloth.ai/docs/models/qwen3.8)
 - [Entrada de blog de AMD sobre Qwen3.8 27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Pagina del modelo en LLM Explorer](https://llm-explorer.com/model/heretic-org%2FQwen3.8-27B-heretic-ara,1gnpzhvwiWVhYFYskhwWI5)

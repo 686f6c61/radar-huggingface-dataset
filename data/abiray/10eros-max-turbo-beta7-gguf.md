@@ -2,7 +2,7 @@
 
 ## Resumen
 
-10Eros-Max-Turbo-Beta7 (GGUF) es una colección de cuantizaciones comunitarias en formato GGUF del modelo 10Eros-Max-Turbo-Beta7, un modelo experimental de generación de vídeo híbrido creado por TenStrip sobre la arquitectura MiniMax-H3. La conversión y el empaquetado de los pesos GGUF los mantiene el usuario Abiray en HuggingFace. El modelo pertenece a la familia de modelos "turbo" destilados para muestreo en pocos pasos: está optimizado para generar vídeo en solo 6-8 pasos de inferencia, lo que reduce drásticamente el tiempo de generación frente a los difusores convencionales.
+10Eros-Max-Turbo-Beta7 (GGUF) es una colección de cuantizaciones comunitarias en formato GGUF del modelo 10Eros-Max-Turbo-Beta7, un modelo experimental de generación de vídeo híbrido creado por TenStrip sobre la arquitectura MiniMax-H3. La conversión y el empaquetado de los pesos GGUF los mantiene el usuario Abiray en Hugging Face. El modelo pertenece a la familia de modelos "turbo" destilados para muestreo en pocos pasos: está optimizado para generar vídeo en solo 6-8 pasos de inferencia, lo que reduce drásticamente el tiempo de generación frente a los difusores convencionales.
 
 La versión Beta 7 introduce una metodología de fusión específica: los datos de los LoRA se convierten en pesos exclusivamente MLP (capas de perceptrón multicapa) fusionados con un límite de magnitud, dejando intactas al 100 % las capas de atención de MiniMax-H3 y las compuertas de referencia. Según el autor, esto permite el muestreo turbo de 8 pasos preservando la fidelidad de texturas, la física realista de fluidos y la sincronización nativa audio-vídeo.
 
@@ -86,7 +86,7 @@ Nota: la comparativa se basa en datos públicos generales de los modelos alterna
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Abiray/10Eros-Max-Turbo-Beta7-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Abiray/10Eros-Max-Turbo-Beta7-GGUF
 - Modelo base: https://huggingface.co/TenStrip/10Eros-Max
 - Licencia MiniMax H3 Community: https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE
 - Extensión ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF

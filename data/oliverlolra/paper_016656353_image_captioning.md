@@ -62,7 +62,7 @@ No disponible. No se puede comparar este repositorio con otros modelos de image 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliverlolra/paper_016656353_image_captioning
+- Repositorio Hugging Face: https://huggingface.co/oliverlolra/paper_016656353_image_captioning
 - Encuesta sobre evaluacion de image captioning en la era de los MLLMs: https://arxiv.org/abs/2503.14604
 - Version HTML de la misma encuesta: https://arxiv.org/html/2503.14604v2
 - Repositorio con recursos sobre evaluacion de image captioning: https://github.com/aimagelab/awesome-captioning-evaluation

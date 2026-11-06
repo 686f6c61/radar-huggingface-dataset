@@ -67,8 +67,8 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - spkc83/retail-bank-servicing-agent-9b-peft-v14-prompt-realized](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v14-prompt-realized)
-- [HuggingFace - spkc83/retail-bank-servicing-agent-9b-peft (versión anterior)](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft)
-- [HuggingFace - spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch)
+- [Hugging Face - spkc83/retail-bank-servicing-agent-9b-peft-v14-prompt-realized](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v14-prompt-realized)
+- [Hugging Face - spkc83/retail-bank-servicing-agent-9b-peft (versión anterior)](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft)
+- [Hugging Face - spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch](https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch)
 - [GitHub - spkc83/retail-bank-servicing](https://github.com/spkc83/retail-bank-servicing)
 - [GitHub - spkc83/retail-bank-model-development](https://github.com/spkc83/retail-bank-model-development)

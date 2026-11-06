@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SentinelLM-EvalRepo es un repositorio alojado en HuggingFace por el usuario dusersad12 que presenta una contradicción interna severa entre sus metadatos y su model card. Los metadatos de la plataforma lo etiquetan como un modelo de tipo BERT orientado a `feature-extraction`, con licencia Apache 2.0, 0 descargas y 0 likes, y un tamano de repositorio de 0,0 GB. La model card, sin embargo, describe un supuesto modelo conversacional de razonamiento de gran escala, con mejoras en matematicas, programacion y logica, y con soporte de function calling.
+SentinelLM-EvalRepo es un repositorio alojado en Hugging Face por el usuario dusersad12 que presenta una contradicción interna severa entre sus metadatos y su model card. Los metadatos de la plataforma lo etiquetan como un modelo de tipo BERT orientado a `feature-extraction`, con licencia Apache 2.0, 0 descargas y 0 likes, y un tamano de repositorio de 0,0 GB. La model card, sin embargo, describe un supuesto modelo conversacional de razonamiento de gran escala, con mejoras en matematicas, programacion y logica, y con soporte de function calling.
 
 El texto de la model card no aporta ningun dato verificable sobre arquitectura, numero de parametros, longitud de contexto ni formato de pesos, y ademas presenta los benchmarks de forma anonimizada (Model1, Model2, Model1-v2, SentinelLM) sin cifras absolutas estandarizadas como MMLU o HumanEval. Se menciona un resultado en AIME 2025 del 87,5% frente al 70% de la version anterior, con un consumo medio de 23K tokens por pregunta.
 
@@ -23,7 +23,7 @@ Dado que el repositorio figura con 0,0 GB y sin descargas ni interacciones, no e
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura de forma util. Los tags de HuggingFace apuntan a `bert` con tarea `feature-extraction`, lo que corresponderia a un modelo encoder tipo BERT. En cambio, la model card habla de un modelo generativo conversacional con modo de razonamiento, soporte de system prompt y function calling, caracteristicas propias de un decoder LLM. Ambas descripciones son incompatibles entre si y no se resuelven en el texto proporcionado.
+La informacion disponible no describe la arquitectura de forma util. Los tags de Hugging Face apuntan a `bert` con tarea `feature-extraction`, lo que corresponderia a un modelo encoder tipo BERT. En cambio, la model card habla de un modelo generativo conversacional con modo de razonamiento, soporte de system prompt y function calling, caracteristicas propias de un decoder LLM. Ambas descripciones son incompatibles entre si y no se resuelven en el texto proporcionado.
 
 Sobre el entrenamiento, la model card afirma que la version actual mejora su "profundidad de razonamiento" mediante mayor uso de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, sin especificar numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. No se aportan detalles sobre tokenizador, atencion, ni innovaciones tecnicas concretas. No hay informacion verificable sobre la arquitectura ni sobre el proceso de entrenamiento.
 
@@ -83,7 +83,7 @@ Dato adicional declarado: AIME 2025 con 87,5% de exactitud en la version actual 
 - VRAM estimada para inferencia: no disponible (se desconocen los parametros del modelo).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible. Los tags de HuggingFace incluyen `endpoints_compatible` y `transformers`, lo que sugeriria compatibilidad con la libreria transformers, pero no hay confirmacion de pesos servibles.
+- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible. Los tags de Hugging Face incluyen `endpoints_compatible` y `transformers`, lo que sugeriria compatibilidad con la libreria transformers, pero no hay confirmacion de pesos servibles.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -112,8 +112,8 @@ No disponible. La model card compara contra modelos anonimizados (Model1, Model2
 
 ## Enlaces
 
-- Repositorio HuggingFace (objeto de esta ficha): https://huggingface.co/dusersad12/SentinelLM-EvalRepo
-- Repositorio HuggingFace relacionado: https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo
+- Repositorio Hugging Face (objeto de esta ficha): https://huggingface.co/dusersad12/SentinelLM-EvalRepo
+- Repositorio Hugging Face relacionado: https://huggingface.co/dusersad12/SentinelLM-ReleaseRepo
 - Proyecto homonimo (middleware proxy, sin relacion confirmada): https://github.com/mohi-devhub/SentinelLM
 - Articulo sobre el middleware homonimo: https://dev.to/achu_mohith/sentinellm-a-proxy-middleware-for-safer-observable-llm-systems-56a2
 - Lista de modelos de seguridad ofensiva (referencia cruzada de busqueda): https://github.com/JoasASantos/Offensive-Security-AI-Models

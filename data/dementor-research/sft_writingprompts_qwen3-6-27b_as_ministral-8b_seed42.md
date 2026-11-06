@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros adaptadores de la misma campaña (por ejemplo, `sft_writingprompts_aya-expanse-8b_as_qwen3.6-27b_seed42` o `sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2`), ya que no se han publicado especificaciones detalladas ni resultados. Se recomienda consultar el repositorio de HuggingFace para obtener más contexto sobre la campaña "dementor".
+No se dispone de información suficiente para establecer una comparativa con otros adaptadores de la misma campaña (por ejemplo, `sft_writingprompts_aya-expanse-8b_as_qwen3.6-27b_seed42` o `sft_writingprompts_qwen3.6-27b_as_gpt-oss-20b_seed2`), ya que no se han publicado especificaciones detalladas ni resultados. Se recomienda consultar el repositorio de Hugging Face para obtener más contexto sobre la campaña "dementor".
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_ministral-8b_seed42
 - Página de despliegue en FriendliAI: https://friendli.ai/models/dementor-research/sft_writingprompts_qwen3.6-27b_as_ministral-8b_seed42 (no se encontró en la búsqueda, pero se menciona en resultados)
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Otro adaptador de la misma campaña (referencia): https://huggingface.co/dementor-research/sft_writingprompts_aya-expanse-8b_as_qwen3.6-27b_seed42

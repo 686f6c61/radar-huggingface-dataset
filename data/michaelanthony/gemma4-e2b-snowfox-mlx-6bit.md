@@ -71,7 +71,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX-6bit
 - Modelo base (Google): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Fuente BF16 fusionada: https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-hf
 - Referencia FP16 MLX: https://huggingface.co/MichaelAnthony/gemma4-e2b-Snowfox-MLX

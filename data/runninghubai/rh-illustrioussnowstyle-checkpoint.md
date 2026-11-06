@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-illustrioussnowstyle-checkpoint es un checkpoint de difusion de imagenes publicado en HuggingFace por RunningHubAI (RunningHub) en nombre del autor @十二雪. Se distribuye como un unico archivo de pesos en formato safetensors (`illSnow2.safetensors`, 6617 MiB, aproximadamente 6,46 GiB) y esta etiquetado para su uso en ComfyUI. Segun la model card, el modelo deriva por finetuning de IL-XL (Illustrious XL).
+rh-illustrioussnowstyle-checkpoint es un checkpoint de difusion de imagenes publicado en Hugging Face por RunningHubAI (RunningHub) en nombre del autor @十二雪. Se distribuye como un unico archivo de pesos en formato safetensors (`illSnow2.safetensors`, 6617 MiB, aproximadamente 6,46 GiB) y esta etiquetado para su uso en ComfyUI. Segun la model card, el modelo deriva por finetuning de IL-XL (Illustrious XL).
 
 El proposito del modelo es la generacion de ilustracion con estetica anime, segun la descripcion del autor orientada a un estilo concreto ("IllustriousSnowstyle") con paletas pastel, elementos kawaii, motivos de videojuego y acabados tipo cyberpunk. No es un modelo de lenguaje: no realiza generacion de texto, razonamiento, codigo ni tool calling, por lo que varias de las categorias habituales de una ficha de LLM no aplican.
 
@@ -69,10 +69,10 @@ El repositorio no incluye FID, CLIP score, evaluaciones humanas, comparativas de
 
 | Modelo | Tipo | Base | Contexto/entrada | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| rh-illustrioussnowstyle-checkpoint | Checkpoint de difusion (anime) | IL-XL | prompts de texto e imagenes en flujos ComfyUI | no disponible | HuggingFace, RunningHub, ComfyUI | no disponible |
-| Illustrious XL (modelo base de la familia IL-XL) | Checkpoint de difusion (anime) | SDXL | prompts de texto | segun su propia licencia | HuggingFace y ecosistema ComfyUI | no disponible en la informacion consultada |
-| NoobAI-XL | Checkpoint de difusion (anime) | derivado de la familia Illustrious | prompts de texto | no disponible en esta ficha | HuggingFace y ecosistema ComfyUI | no disponible en la informacion consultada |
-| Pony Diffusion V6 XL | Checkpoint de difusion (anime/estilizado) | SDXL | prompts de texto | no disponible en esta ficha | HuggingFace y ecosistema ComfyUI | no disponible en la informacion consultada |
+| rh-illustrioussnowstyle-checkpoint | Checkpoint de difusion (anime) | IL-XL | prompts de texto e imagenes en flujos ComfyUI | no disponible | Hugging Face, RunningHub, ComfyUI | no disponible |
+| Illustrious XL (modelo base de la familia IL-XL) | Checkpoint de difusion (anime) | SDXL | prompts de texto | segun su propia licencia | Hugging Face y ecosistema ComfyUI | no disponible en la informacion consultada |
+| NoobAI-XL | Checkpoint de difusion (anime) | derivado de la familia Illustrious | prompts de texto | no disponible en esta ficha | Hugging Face y ecosistema ComfyUI | no disponible en la informacion consultada |
+| Pony Diffusion V6 XL | Checkpoint de difusion (anime/estilizado) | SDXL | prompts de texto | no disponible en esta ficha | Hugging Face y ecosistema ComfyUI | no disponible en la informacion consultada |
 
 Nota: los datos de los modelos comparativos no se han verificado en el contexto de esta ficha y se incluyen solo como referencia de categoria; la comparativa no dispone de metricas cuantitativas.
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparativos no se han verificado en el contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-illustrioussnowstyle-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-illustrioussnowstyle-checkpoint
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2081381692723519489
 - Pagina del autor (@十二雪): https://www.runninghub.cn/user-center/2011770127833632769
 - RunningHub (sitio internacional): https://www.runninghub.ai

@@ -107,6 +107,6 @@ Comparativa con modelos de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/Qwen3.5-9B-TAP-DPQ-v7-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/Qwen3.5-9B-TAP-DPQ-v7-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

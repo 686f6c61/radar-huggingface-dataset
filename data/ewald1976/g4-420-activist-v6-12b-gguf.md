@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `G4-420-activist-v6-12b-gguf` es un ajuste fino (fine-tuning) de la familia Gemma 4 12B, publicado por el usuario `ewald1976` en HuggingFace. Se distribuye en formato GGUF, lo que permite su ejecución eficiente en CPU y GPU mediante `llama.cpp` u otros motores compatibles. El repositorio incluye un archivo de proyector multimodal (`BF16-mmproj.gguf`), lo que indica que el modelo es capaz de procesar entradas de imagen además de texto, clasificándose como un vision-language model conversacional.
+El modelo `G4-420-activist-v6-12b-gguf` es un ajuste fino (fine-tuning) de la familia Gemma 4 12B, publicado por el usuario `ewald1976` en Hugging Face. Se distribuye en formato GGUF, lo que permite su ejecución eficiente en CPU y GPU mediante `llama.cpp` u otros motores compatibles. El repositorio incluye un archivo de proyector multimodal (`BF16-mmproj.gguf`), lo que indica que el modelo es capaz de procesar entradas de imagen además de texto, clasificándose como un vision-language model conversacional.
 
 El modelo se ha generado utilizando la herramienta Unsloth, que acelera el entrenamiento y la conversión a GGUF. Con aproximadamente 11.900 millones de parámetros, se sitúa en la gama de modelos medianos, adecuado para despliegues con requisitos de hardware moderados. A pesar de su nombre sugerente ("activist"), no se dispone de documentación adicional sobre su propósito específico, dataset de entrenamiento o licencia, por lo que su uso en producción requiere verificación previa.
 
@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ewald1976/G4-420-activist-v6-12b-gguf](https://huggingface.co/ewald1976/G4-420-activist-v6-12b-gguf)
+- Repositorio Hugging Face: [ewald1976/G4-420-activist-v6-12b-gguf](https://huggingface.co/ewald1976/G4-420-activist-v6-12b-gguf)
 - Herramienta Unsloth (mencionada en la model card): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoCo-Chronos2-LoRA | Adaptador LoRA r=8 sobre Chronos2 | no disponible | Forecasting multivariante con covariables de LLM | Adaptador no disponible; base Apache-2.0 | HuggingFace (32 descargas) |
-| amazon/chronos-2 | no disponible | no disponible | Forecasting de series temporales | Apache-2.0 | HuggingFace (modelo base) |
-| SWARM-Lab/CoCo-Qwen3-4B-LoRA | Adaptador LoRA sobre Qwen3-4B | no disponible | Generación de covariables de forecast y confianza | no disponible | HuggingFace (componente companion) |
+| CoCo-Chronos2-LoRA | Adaptador LoRA r=8 sobre Chronos2 | no disponible | Forecasting multivariante con covariables de LLM | Adaptador no disponible; base Apache-2.0 | Hugging Face (32 descargas) |
+| amazon/chronos-2 | no disponible | no disponible | Forecasting de series temporales | Apache-2.0 | Hugging Face (modelo base) |
+| SWARM-Lab/CoCo-Qwen3-4B-LoRA | Adaptador LoRA sobre Qwen3-4B | no disponible | Generación de covariables de forecast y confianza | no disponible | Hugging Face (componente companion) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SWARM-Lab/CoCo-Chronos2-LoRA
+- Hugging Face del adaptador: https://huggingface.co/SWARM-Lab/CoCo-Chronos2-LoRA
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Adaptador companion LLM: https://huggingface.co/SWARM-Lab/CoCo-Qwen3-4B-LoRA
 - Paper (arXiv): https://arxiv.org/abs/2611.05515

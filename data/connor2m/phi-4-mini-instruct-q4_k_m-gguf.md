@@ -38,7 +38,7 @@ Lo que si puede afirmarse a partir de los datos del repositorio es el resultado 
 - Generacion de codigo: la etiqueta "code" figura entre las declaradas por el autor, aunque no se aportan benchmarks ni ejemplos que cuantifiquen esta capacidad.
 - Soporte multilingue: 23 idiomas declarados, incluido el espanol, segun las etiquetas de idioma del repositorio.
 - Ejecucion local mediante llama.cpp: el repositorio documenta su uso tanto por CLI (llama-cli) como por servidor HTTP (llama-server), lo que habilita integracion en aplicaciones propias.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el archivo puede servirse a traves de APIs compatibles con el ecosistema de HuggingFace/llama.cpp.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el archivo puede servirse a traves de APIs compatibles con el ecosistema de Hugging Face/llama.cpp.
 - Capacidades no documentadas: no hay informacion disponible sobre tool calling, function calling, razonamiento multi-paso, modo thinking, vision, audio u otras capacidades especiales en la informacion proporcionada.
 
 ## Casos de uso
@@ -84,14 +84,14 @@ No se dispone de datos objetivos para comparar rendimiento, contexto o calidad f
 - Perdida por cuantizacion: Q4_K_M es una cuantizacion de 4 bits; se espera una degradacion en tareas sensibles a la precision (matematicas, razonamiento encadenado, codigo) respecto a los pesos originales, aunque no se aportan mediciones.
 - Limitaciones de contexto: la longitud de contexto del modelo no figura en la informacion proporcionada. El valor -c 2048 que aparece en los ejemplos del repositorio es un parametro de ejemplo de llama-server, no el limite del modelo, y configurarlo demasiado alto incrementa el consumo de memoria de la cache KV.
 - Limitaciones de idioma: aunque se declaran 23 idiomas, no se aportan evaluaciones por idioma; el rendimiento en idiomas distintos del ingles suele ser desigual y no esta cuantificado aqui.
-- Restricciones de licencia: la licencia declarada es MIT, permisiva y apta para uso comercial. Conviene verificar el enlace de licencia indicado en el repositorio (LICENSE del modelo base en HuggingFace) antes de un despliegue en produccion, ya que la ficha de este derivado remite a la del modelo original.
+- Restricciones de licencia: la licencia declarada es MIT, permisiva y apta para uso comercial. Conviene verificar el enlace de licencia indicado en el repositorio (LICENSE del modelo base en Hugging Face) antes de un despliegue en produccion, ya que la ficha de este derivado remite a la del modelo original.
 - Repositorio sin validacion: 0 descargas y 0 likes en la fecha de consulta. Se recomienda verificar la integridad del archivo GGUF y contrastar la salida del modelo cuantizado con el modelo base antes de usarlo en produccion.
 - Soporte de tool calling y agentes: no documentado en la informacion disponible; no deberia asumirse en disenos de agentes sin una validacion previa.
 - Reproducibilidad: al ser una conversion de terceros, no hay garantia de que el proceso de cuantizacion sea reproducible ni de que se mantenga actualizado respecto al modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/Connor2m/Phi-4-mini-instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/Connor2m/Phi-4-mini-instruct-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/main/LICENSE
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para m
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gregbarbosa/kokoro-82m-ane-coreml | 82M | Core ML (`.mlmodelc`) | Apache-2.0 | HuggingFace (0 descargas) | Conversion en 7 etapas para Neural Engine; benchmark en M1 Pro |
-| hexgrad/Kokoro-82M | 82M | PyTorch (`.pt`) | Apache-2.0 | HuggingFace | Modelo original del que se derivan pesos y voces |
+| gregbarbosa/kokoro-82m-ane-coreml | 82M | Core ML (`.mlmodelc`) | Apache-2.0 | Hugging Face (0 descargas) | Conversion en 7 etapas para Neural Engine; benchmark en M1 Pro |
+| hexgrad/Kokoro-82M | 82M | PyTorch (`.pt`) | Apache-2.0 | Hugging Face | Modelo original del que se derivan pesos y voces |
 | laishere/kokoro-coreml | 82M | Core ML | Apache-2.0 | GitHub | Conversion de referencia de la que se adapta la cadena |
 
 No se dispone de datos de rendimiento comparativos entre las tres variantes en la informacion proporcionada.
@@ -89,11 +89,11 @@ No se dispone de datos de rendimiento comparativos entre las tres variantes en l
 - Riesgo de uso indebido de voz sintetica: la disponibilidad de 28 voces con embeddings reutilizables facilita la clonacion o suplantacion si no se aplican controles de consentimiento y marcado de audio sintetico.
 - Posibles sesgos acentuales y de timbre: el conjunto de voces no cubre la diversidad de hablantes de ingles como lengua global, lo que puede afectar a la representacion en productos dirigidos a audiencias internacionales.
 - Licencia: los pesos, las voces y la conversion se declaran Apache-2.0, lo que permite uso comercial, pero se exige mantener la atribucion a hexgrad/Kokoro-82M, a laishere/kokoro-coreml (© 2026 laishere) y al script de generacion de paquetes de voz de Vox.
-- Estado del repositorio: cero descargas y cero likes, sin pipeline declarado en HuggingFace, lo que implica ausencia de validacion por parte de la comunidad.
+- Estado del repositorio: cero descargas y cero likes, sin pipeline declarado en Hugging Face, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gregbarbosa/kokoro-82m-ane-coreml
+- Repositorio en Hugging Face: https://huggingface.co/gregbarbosa/kokoro-82m-ane-coreml
 - Modelo original: https://huggingface.co/hexgrad/Kokoro-82M
 - Conversion de referencia: https://github.com/laishere/kokoro-coreml
 - Consumidor declarado (motor `kokoro-82m-ane`): https://github.com/gregbarbosa/Vox

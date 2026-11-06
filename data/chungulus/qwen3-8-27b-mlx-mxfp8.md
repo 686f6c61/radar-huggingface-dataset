@@ -76,5 +76,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

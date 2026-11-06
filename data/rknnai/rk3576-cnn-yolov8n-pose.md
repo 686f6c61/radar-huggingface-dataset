@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3576-CNN-yolov8n-pose es un paquete de despliegue en formato RKNN del modelo de estimacion de pose yolov8n-pose, preparado especificamente para el SoC Rockchip RK3576. No se trata de un modelo entrenado desde cero por el autor que lo publica en HuggingFace, sino de una conversion y empaquetado del modelo original procedente de airockchip/ultralytics_yolov8 y distribuido a traves del RKNN Model Zoo. El repositorio lo mantiene el usuario RKNNAI y su proposito es facilitar la ejecucion de la deteccion de puntos clave (keypoints) corporales directamente sobre la NPU del RK3576.
+RK3576-CNN-yolov8n-pose es un paquete de despliegue en formato RKNN del modelo de estimacion de pose yolov8n-pose, preparado especificamente para el SoC Rockchip RK3576. No se trata de un modelo entrenado desde cero por el autor que lo publica en Hugging Face, sino de una conversion y empaquetado del modelo original procedente de airockchip/ultralytics_yolov8 y distribuido a traves del RKNN Model Zoo. El repositorio lo mantiene el usuario RKNNAI y su proposito es facilitar la ejecucion de la deteccion de puntos clave (keypoints) corporales directamente sobre la NPU del RK3576.
 
 El modelo es una red neuronal convolucional (CNN) de tipo YOLOv8 en su variante "nano" ("n" en el nombre), especializada en estimacion de pose, con entrada fija de 640x640 pixeles y cuantizacion w8a8 (8 bits para pesos y activaciones). La distribucion incluye la configuracion `yolov8n-pose-640x640-w8a8-1`, pensada para usar un unico nucleo NPU del chip y compatible con la version v2.4.0 del runtime RKNN. Este tipo de empaquetado es relevante para desarrolladores de sistemas embebidos y edge computing que necesitan desplegar vision por computador de baja latencia en hardware Rockchip sin recompilar ni reconvertir el modelo.
 
@@ -25,7 +25,7 @@ Al estar orientado a inferencia en el borde, el modelo resuelve el problema del 
 
 La arquitectura corresponde a YOLOv8n-pose, una red CNN de deteccion de objetos y estimacion de puntos clave de la familia Ultralytics YOLOv8. El repositorio no describe el proceso de entrenamiento del modelo de origen: no se indica numero de tokens ni de imagenes, composicion del dataset, ni si se aplicaron tecnicas de ajuste fino como RLHF o DPO (conceptos, por otra parte, propios de modelos de lenguaje y no aplicables aqui). La informacion disponible se limita a la configuracion de despliegue: entrada de 640x640 pixeles, cuantizacion w8a8 y uso de un unico nucleo NPU del RK3576.
 
-La innovacion tecnica que aporta esta publicacion no esta en la arquitectura, sino en el proceso de conversion al formato RKNN y en el empaquetado reproducible para un chip concreto. El repositorio incluye verificacion mediante SHA-256 de los ficheros de la configuracion, instrucciones de descarga desde ModelScope y HuggingFace, y documentacion en ingles y chino. El modelo origen procede de airockchip/ultralytics_yolov8, un fork mantenido por Rockchip para adaptar YOLOv8 a sus NPU.
+La innovacion tecnica que aporta esta publicacion no esta en la arquitectura, sino en el proceso de conversion al formato RKNN y en el empaquetado reproducible para un chip concreto. El repositorio incluye verificacion mediante SHA-256 de los ficheros de la configuracion, instrucciones de descarga desde ModelScope y Hugging Face, y documentacion en ingles y chino. El modelo origen procede de airockchip/ultralytics_yolov8, un fork mantenido por Rockchip para adaptar YOLOv8 a sus NPU.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Uso de NPU: un nucleo (NPU Cores = 1).
 - Resolucion de entrada fija: 640x640 pixeles.
 - Cuantizacion de despliegue: w8a8.
-- Opciones de despliegue: runtime RKNN sobre el propio chip; la distribucion se descarga mediante ModelScope o HuggingFace CLI.
+- Opciones de despliegue: runtime RKNN sobre el propio chip; la distribucion se descarga mediante ModelScope o Hugging Face CLI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 - Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no aplica, dado que es un modelo de vision en formato RKNN y no un modelo de lenguaje.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8n-pose
+- Hugging Face: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8n-pose
 - RKNN Model Zoo (ejemplo yolov8): https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Modelo origen: https://github.com/airockchip/ultralytics_yolov8
 - Licencia (AGPL-3.0): incluida en el repositorio como fichero LICENSE

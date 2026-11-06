@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- [HuggingFace - daniilsolovyov/classify-v2](https://huggingface.co/daniilsolovyov/classify-v2)
+- [Hugging Face - daniilsolovyov/classify-v2](https://huggingface.co/daniilsolovyov/classify-v2)
 - [Perfil de GitHub del autor](https://github.com/DaniilSolovyov) (no se encuentra el repositorio del modelo)

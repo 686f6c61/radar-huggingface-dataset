@@ -43,7 +43,7 @@ El entrenamiento combina tres objetivos denotados como TF, FM y TM, con una prog
 - Generación de vídeo promocional de baja resolución: si se recuperasen los pesos, podría emplearse para crear clips cortos de demostración a partir de descripciones textuales, aprovechando la base de 1.300 M de parámetros.
 - Prototipado de pipelines text-to-video: integrable en flujos de experimentación con Diffusers, dado que el modelo base es compatible con esa librería.
 - Docencia y formación: como ejemplo de model card incompleta y de buenas prácticas de documentación en modelos derivados.
-- Auditoría de linaje de modelos: permite rastrear la genealogía de fine-tunings sobre Wan2.1 y estudiar patrones de publicación en HuggingFace.
+- Auditoría de linaje de modelos: permite rastrear la genealogía de fine-tunings sobre Wan2.1 y estudiar patrones de publicación en Hugging Face.
 - No se recomienda su uso en producción dada la ausencia de pesos y de licencia.
 
 ## Benchmarks y rendimiento
@@ -79,5 +79,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty
+- Repositorio Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-qt-fw-hd-item-empty
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

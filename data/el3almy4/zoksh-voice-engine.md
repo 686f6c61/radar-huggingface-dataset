@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zoksh Voice Engine es un proyecto publicado en HuggingFace por el usuario el3almy4 bajo el identificador `el3almy4/zoksh-voice-engine`. Segun la model card, se trata de un motor de sintesis expresiva voz-a-instrumento ("Voice To Instrument Expressive Synthesis") que combina renderizado acustico multi-muestra mediante FluidSynth con el banco General MIDI, control continuo de pitch-bend y CC11 (expresion), y un hook extensible para modelos RVC v2. El repositorio se presenta como la version 2.5 de un componente del ecosistema "Zoksh Music Studio".
+Zoksh Voice Engine es un proyecto publicado en Hugging Face por el usuario el3almy4 bajo el identificador `el3almy4/zoksh-voice-engine`. Segun la model card, se trata de un motor de sintesis expresiva voz-a-instrumento ("Voice To Instrument Expressive Synthesis") que combina renderizado acustico multi-muestra mediante FluidSynth con el banco General MIDI, control continuo de pitch-bend y CC11 (expresion), y un hook extensible para modelos RVC v2. El repositorio se presenta como la version 2.5 de un componente del ecosistema "Zoksh Music Studio".
 
 El artefacto no es un modelo de lenguaje ni una red neuronal entrenada en el sentido habitual: la model card describe una aplicacion Gradio (SDK 4.44.1, Python 3.10) con endpoints FastAPI (`/v1/health`, `/v1/presets/parse`, `/v1/convert`), lo que sugiere un servicio de conversion de audio mas que un checkpoint de pesos. No se especifican parametros, arquitectura de red, contexto ni dataset de entrenamiento en la informacion disponible.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/el3almy4/zoksh-voice-engine
+- Hugging Face: https://huggingface.co/el3almy4/zoksh-voice-engine
 - No se han encontrado en la informacion proporcionada otros enlaces (paper, blog, repositorio de codigo o demo) asociados al proyecto.

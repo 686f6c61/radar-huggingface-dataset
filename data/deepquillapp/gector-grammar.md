@@ -75,7 +75,7 @@ La muestra de errores (8 casos) es demasiado pequena para extraer conclusiones d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepquillapp/gector-grammar | Tagger GECToR sobre RoBERTa-base, ONNX | ~125 M + cabeza (derivado del base) | No disponible (base: 512) | Apache-2.0 | HuggingFace, ONNX |
+| deepquillapp/gector-grammar | Tagger GECToR sobre RoBERTa-base, ONNX | ~125 M + cabeza (derivado del base) | No disponible (base: 512) | Apache-2.0 | Hugging Face, ONNX |
 | GECToR original (Omelianchuk et al., 2020) | Tagger GECToR sobre RoBERTa/BERT | ~125 M-340 M segun variante | 512 | Codigo MIT; pesos con condiciones propias | Checkpoints publicos citados por el autor |
 | `gotutiyan/gector` | Implementacion de entrenamiento GECToR | Depende del encoder | 512 | MIT (codigo) | GitHub |
 | Correctores basados en LLM (p. ej. reescritura generativa) | Seq2seq decoder | Miles de millones | 8k-128k | Variable | APIs o pesos abiertos |
@@ -97,14 +97,14 @@ Diferencias clave frente al GECToR original: este modelo evita deliberadamente l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepquillapp/gector-grammar
+- Modelo en Hugging Face: https://huggingface.co/deepquillapp/gector-grammar
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Dataset C4_200M (Stahlberg y Kumar, 2021): https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction
-- Dataset C4_200M en HuggingFace (via citada por el autor): https://huggingface.co/datasets/liweili/c4_200m
-- Corpus Gutenberg en HuggingFace (via citada por el autor): https://huggingface.co/datasets/sedthh/gutenberg_english
+- Dataset C4_200M en Hugging Face (via citada por el autor): https://huggingface.co/datasets/liweili/c4_200m
+- Corpus Gutenberg en Hugging Face (via citada por el autor): https://huggingface.co/datasets/sedthh/gutenberg_english
 - Codigo de entrenamiento citado: `gotutiyan/gector` (commit `a4a342e`)
 - Tabla de formas verbales citada: `grammarly/gector`, `data/verb-form-vocab.txt` (commit `3d41d28`)
 - Paper de referencia: Omelianchuk et al., 2020, "GECToR - Grammatical Error Correction: Tag, Not Rewrite", BEA workshop
 - Paper de referencia: Raffel et al., 2020, "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer", JMLR
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion de Hugging Face.

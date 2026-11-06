@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-9B-Medical-Reasoning | Adaptador LoRA sobre base de ~9B | No disponible (entrenado a 4.096 tokens) | Razonamiento medico en ingles | Apache-2.0 | Repositorio HuggingFace, 0 descargas y 0 likes |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | ~9B | No disponible | Razonamiento general, matematicas y STEM destilado de DeepSeek-V4-Pro | No disponible en la informacion proporcionada | Modelo base publico en HuggingFace |
-| Qwen/Qwen3.5-9B | ~9B | No disponible | Modelo generalista multiuso de la familia Qwen3.5 | No disponible en la informacion proporcionada | Modelo upstream publico en HuggingFace |
+| xtools-at/Qwen3.5-9B-Medical-Reasoning | Adaptador LoRA sobre base de ~9B | No disponible (entrenado a 4.096 tokens) | Razonamiento medico en ingles | Apache-2.0 | Repositorio Hugging Face, 0 descargas y 0 likes |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | ~9B | No disponible | Razonamiento general, matematicas y STEM destilado de DeepSeek-V4-Pro | No disponible en la informacion proporcionada | Modelo base publico en Hugging Face |
+| Qwen/Qwen3.5-9B | ~9B | No disponible | Modelo generalista multiuso de la familia Qwen3.5 | No disponible en la informacion proporcionada | Modelo upstream publico en Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estas variantes, ni de otros adaptadores medicos equivalentes en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes, ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-9B-Medical-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-9B-Medical-Reasoning
 - Modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Modelo upstream de la familia: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT

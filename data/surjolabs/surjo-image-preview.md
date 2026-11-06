@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Surjo-Image-Preview es un modelo publicado por SurjoLabs en HuggingFace bajo el identificador `SurjoLabs/Surjo-Image-Preview`. Por su etiquetado (`diffusers`, `safetensors`) y por el propio nombre del repositorio, se trata de un modelo de generacion de imagenes basado en difusion distribuido a traves de la libreria Diffusers, con pesos en formato safetensors. El repositorio ocupa 28,2 GB, lo que situa el conjunto de pesos en el rango de los modelos de difusion de gran tamano.
+Surjo-Image-Preview es un modelo publicado por SurjoLabs en Hugging Face bajo el identificador `SurjoLabs/Surjo-Image-Preview`. Por su etiquetado (`diffusers`, `safetensors`) y por el propio nombre del repositorio, se trata de un modelo de generacion de imagenes basado en difusion distribuido a traves de la libreria Diffusers, con pesos en formato safetensors. El repositorio ocupa 28,2 GB, lo que situa el conjunto de pesos en el rango de los modelos de difusion de gran tamano.
 
-El modelo esta alojado con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la pagina de HuggingFace. Esta publicado por SurjoLabs, un autor del que no se dispone de informacion adicional verificable en la documentacion consultada, y se encuentra en estado de previsualizacion (preview), segun indica su propio nombre.
+El modelo esta alojado con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la pagina de Hugging Face. Esta publicado por SurjoLabs, un autor del que no se dispone de informacion adicional verificable en la documentacion consultada, y se encuentra en estado de previsualizacion (preview), segun indica su propio nombre.
 
 No se ha podido confirmar informacion sobre la arquitectura concreta, el proceso de entrenamiento, la licencia ni los datos de rendimiento. La busqueda web realizada no devolvio resultados tecnicos relacionados con este modelo, por lo que los apartados correspondientes se completan con "no disponible" siguiendo el principio de no inventar datos.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El repositorio ocupa 28,2 GB, por lo que la inferencia en precision completa (fp16 o bf16) requiere en torno a 28-32 GB de VRAM solo para los pesos, mas el consumo adicional de los codificadores y el overhead de las activaciones.
 - GPU recomendadas para inferencia sin cuantizacion: NVIDIA A100 (40 GB o 80 GB), NVIDIA H100 (80 GB) o NVIDIA A6000 (48 GB). El modelo no cabe en GPUs de consumo con 24 GB o menos en precision completa sin tecnicas de offloading.
 - Cabe en GPU de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB) unicamente mediante cuantizacion, offloading a CPU/RAM o carga por etapas, siempre que el pipeline de Diffusers lo soporte. Estos datos son estimaciones basadas en el tamano del repositorio, no en documentacion oficial.
-- Opciones de despliegue: al estar etiquetado con `diffusers`, es esperable compatibilidad con la libreria Diffusers de HuggingFace. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no a difusion).
+- Opciones de despliegue: al estar etiquetado con `diffusers`, es esperable compatibilidad con la libreria Diffusers de Hugging Face. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no a difusion).
 - No se dispone de datos de latencia ni throughput medidos.
-- El acceso esta restringido (gated), por lo que antes de desplegar es necesario solicitar y obtener acceso en HuggingFace.
+- El acceso esta restringido (gated), por lo que antes de desplegar es necesario solicitar y obtener acceso en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SurjoLabs/Surjo-Image-Preview
-- Pagina del autor (SurjoLabs) en HuggingFace: https://huggingface.co/SurjoLabs
+- Repositorio en Hugging Face: https://huggingface.co/SurjoLabs/Surjo-Image-Preview
+- Pagina del autor (SurjoLabs) en Hugging Face: https://huggingface.co/SurjoLabs
 - Documentacion de Diffusers: https://huggingface.co/docs/diffusers
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda realizada.

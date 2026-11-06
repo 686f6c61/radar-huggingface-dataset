@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hamidahmadi/baidu-ultr-multi-feedback-cross-encoders` es un repositorio publicado en HuggingFace por el usuario `hamidahmadi` bajo licencia MIT. El repositorio no incluye model card con contenido tecnico: el README se limita al bloque de metadatos de licencia, sin descripcion, sin instrucciones de uso y sin resultados de evaluacion. El pipeline declarado esta vacio y no se especifican idiomas soportados.
+`hamidahmadi/baidu-ultr-multi-feedback-cross-encoders` es un repositorio publicado en Hugging Face por el usuario `hamidahmadi` bajo licencia MIT. El repositorio no incluye model card con contenido tecnico: el README se limita al bloque de metadatos de licencia, sin descripcion, sin instrucciones de uso y sin resultados de evaluacion. El pipeline declarado esta vacio y no se especifican idiomas soportados.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y su unica fecha registrada (creacion y ultima actualizacion) es 2026-10-01, lo que indica que no ha recibido mantenimiento ni actualizaciones posteriores a la publicacion inicial. No hay pesos visibles documentados, ni tokenizer, ni configuracion publicada en la informacion disponible.
 
@@ -78,5 +78,5 @@ No es posible establecer una comparativa: no se conocen el tamano, el contexto, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamidahmadi/baidu-ultr-multi-feedback-cross-encoders
+- Hugging Face: https://huggingface.co/hamidahmadi/baidu-ultr-multi-feedback-cross-encoders
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados obtenidos no eran relevantes para este modelo.

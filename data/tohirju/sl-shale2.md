@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tohirju/sl-shale2 es un repositorio de pesos publicado en HuggingFace por el usuario Tohirju. La unica informacion verificable disponible es la metadata del repositorio: la etiqueta de libreria es `nemo` (el framework NVIDIA NeMo), la licencia declarada es `other`, el tamano del repositorio es de 0,5 GB y el acceso esta restringido mediante el mecanismo gated de HuggingFace, por lo que es necesario aceptar unas condiciones antes de poder descargar los ficheros. No se ha publicado model card, descripcion, pipeline ni idiomas soportados.
+Tohirju/sl-shale2 es un repositorio de pesos publicado en Hugging Face por el usuario Tohirju. La unica informacion verificable disponible es la metadata del repositorio: la etiqueta de libreria es `nemo` (el framework NVIDIA NeMo), la licencia declarada es `other`, el tamano del repositorio es de 0,5 GB y el acceso esta restringido mediante el mecanismo gated de Hugging Face, por lo que es necesario aceptar unas condiciones antes de poder descargar los ficheros. No se ha publicado model card, descripcion, pipeline ni idiomas soportados.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineacion. La unica pista tecnica es la etiqueta `nemo`, que situa el modelo en el ecosistema de entrenamiento e inferencia de NVIDIA, habitualmente asociado a modelos transformer y a modelos de voz o multimodalidad. El tamano del repositorio (0,5 GB) es compatible con un modelo de parametros reducidos o con pesos ya cuantizados, pero esta deduccion no puede confirmarse sin acceso a los ficheros.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y debe entenderse como un artefacto sin validac
 | Autor | Tohirju |
 | Libreria / framework | nemo (NVIDIA NeMo) |
 | Tamano del repositorio | 0,5 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-16 |
 | Ultima actualizacion | 2026-09-16 |
 | Descargas | 0 |
@@ -107,7 +107,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/sl-shale2
+- Hugging Face: https://huggingface.co/Tohirju/sl-shale2
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

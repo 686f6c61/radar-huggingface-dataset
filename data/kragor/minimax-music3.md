@@ -72,8 +72,8 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/Kragor/MiniMax-Music3
-- Repositorio oficial HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face (mirror): https://huggingface.co/Kragor/MiniMax-Music3
+- Repositorio oficial Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo oficial: https://minimax-ai.github.io/music3-demo/
 - Plataforma MiniMax Agent: https://agent.minimax.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wilson es un modelo publicado en HuggingFace bajo el identificador `elliottwilson619/wilson` por el usuario Elliott Wilson. En el momento de la consulta, la model card asociada no contiene más información que la declaración de licencia (`openrail`), sin descripción del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline ni idiomas declarados.
+Wilson es un modelo publicado en Hugging Face bajo el identificador `elliottwilson619/wilson` por el usuario Elliott Wilson. En el momento de la consulta, la model card asociada no contiene más información que la declaración de licencia (`openrail`), sin descripción del modelo, sin arquitectura declarada, sin especificaciones de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline ni idiomas declarados.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni qué tamaño tiene, porque el autor no ha publicado documentación técnica ni metadatos suficientes. La ficha que sigue refleja, por tanto, un estado de información mínima: se documenta lo que consta y se marca explícitamente como "no disponible" todo aquello que no aparece en la información proporcionada.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | elliottwilson619/wilson |
+| ID en Hugging Face | elliottwilson619/wilson |
 | Autor | elliottwilson619 |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
@@ -95,8 +95,8 @@ No disponible. No consta el tamano, la categoria ni la tarea del modelo, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elliottwilson619/wilson
-- Perfil del autor en HuggingFace: https://huggingface.co/elliottwilson619
+- Modelo en Hugging Face: https://huggingface.co/elliottwilson619/wilson
+- Perfil del autor en Hugging Face: https://huggingface.co/elliottwilson619
 - Spaces del autor: https://huggingface.co/elliottwilson619/spaces
 - Perfil del autor en GitHub: https://github.com/elliottwilson619
 - Canal de YouTube "Wilson Model AI": https://www.youtube.com/@WilsonModelAI

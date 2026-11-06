@@ -80,8 +80,8 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| erdemKocaogluu/byt5-small-tr-normalizer | 299,6 M | No especificado | WER 0,093-0,216 en tres gold sets turcos | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| google/byt5-small | 300 M (aproximado) | No especificado en la informacion disponible | No aplica a la tarea sin ajuste fino | Apache 2.0 | HuggingFace (modelo base oficial) |
+| erdemKocaogluu/byt5-small-tr-normalizer | 299,6 M | No especificado | WER 0,093-0,216 en tres gold sets turcos | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| google/byt5-small | 300 M (aproximado) | No especificado en la informacion disponible | No aplica a la tarea sin ajuste fino | Apache 2.0 | Hugging Face (modelo base oficial) |
 | Otros correctores de turco ajustados sobre los corpus citados | No disponible | No disponible | No disponible | No disponible | No se han identificado en la busqueda web realizada |
 
 La busqueda web asociada a esta ficha no devolvio resultados relacionados con el modelo ni con normalizacion de texto en turco; los unicos resultados obtenidos fueron paginas financieras sin relacion con el tema.
@@ -103,7 +103,7 @@ La busqueda web asociada a esta ficha no devolvio resultados relacionados con el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erdemKocaogluu/byt5-small-tr-normalizer
+- Modelo en Hugging Face: https://huggingface.co/erdemKocaogluu/byt5-small-tr-normalizer
 - Modelo base: https://huggingface.co/google/byt5-small
 - Dataset asimokby/Turkish-OSCAR-GEC: https://huggingface.co/datasets/asimokby/Turkish-OSCAR-GEC
 - Dataset mcemilg/GECTurk-generation: https://huggingface.co/datasets/mcemilg/GECTurk-generation

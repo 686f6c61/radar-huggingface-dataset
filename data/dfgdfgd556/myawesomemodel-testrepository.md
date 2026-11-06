@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un modelo publicado en HuggingFace por el usuario dfgdfgd556. Se trata de un repositorio de prueba, sin descargas ni valoraciones, que contiene un checkpoint seleccionado por su `eval_accuracy` (0.727). El modelo está etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en Transformer para extracción de características, aunque no se confirma en la documentación.
+MyAwesomeModel-TestRepository es un modelo publicado en Hugging Face por el usuario dfgdfgd556. Se trata de un repositorio de prueba, sin descargas ni valoraciones, que contiene un checkpoint seleccionado por su `eval_accuracy` (0.727). El modelo está etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en Transformer para extracción de características, aunque no se confirma en la documentación.
 
 La model card incluye una tabla de resultados en tareas como clasificación de texto, análisis de sentimiento, generación de diálogo o evaluación de seguridad, con puntuaciones que van de 0.550 a 0.848. Sin embargo, no se proporciona información sobre el número de parámetros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. El tamaño del repositorio es de 0.0 GB, lo que indica que no contiene pesos completos o es un placeholder.
 
-Este modelo no tiene relevancia práctica en su estado actual, ya que carece de documentación técnica y de validación externa. Su interés se limita a ser un ejemplo de repositorio de prueba en HuggingFace.
+Este modelo no tiene relevancia práctica en su estado actual, ya que carece de documentación técnica y de validación externa. Su interés se limita a ser un ejemplo de repositorio de prueba en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,6 +92,6 @@ No disponible. No se identifican modelos comparables en la información proporci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dfgdfgd556/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/dfgdfgd556/MyAwesomeModel-TestRepository
 - Repositorio similar sin sufijo: https://huggingface.co/dfgdfgd556/MyAwesomeModel
 - Otro repositorio de prueba: https://huggingface.co/dffddfdgg67/MyAwesomeModel-TestRepository

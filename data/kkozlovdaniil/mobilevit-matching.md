@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit-matching es un repositorio publicado en HuggingFace por el usuario Kkozlovdaniil que contiene una implementación funcional de la arquitectura MobileViT orientada a tareas de *matching* (emparejamiento), configurada en escala «nano». No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros del fichero safetensors es de 16.576, tres órdenes de magnitud por debajo de las variantes MobileViT originales.
+Mobilevit-matching es un repositorio publicado en Hugging Face por el usuario Kkozlovdaniil que contiene una implementación funcional de la arquitectura MobileViT orientada a tareas de *matching* (emparejamiento), configurada en escala «nano». No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros del fichero safetensors es de 16.576, tres órdenes de magnitud por debajo de las variantes MobileViT originales.
 
 El problema que aborda es la disponibilidad de código transparente y reproducible para experimentar con MobileViT en tareas de emparejamiento, con un archivo Python que contiene el modelo, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y `eval.py` como artefacto principal. La relevancia actual es limitada y de carácter experimental: sirve como punto de partida para pruebas de humo y como esqueleto de implementación, no como componente listo para producción.
 
@@ -32,7 +32,7 @@ Detalles adicionales declarados en la model card:
 | Normalizacion | batchnorm |
 | Optimizador por defecto | SGD |
 | Planificador por defecto | exponential |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -81,7 +81,7 @@ La comparación con las variantes MobileViT originales es la más pertinente, pe
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kkozlovdaniil/mobilevit-matching | 16.576 | No disponible | No se reclama ninguno | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
+| Kkozlovdaniil/mobilevit-matching | 16.576 | No disponible | No se reclama ninguno | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
 | MobileViT-XXS (Apple, original) | ~1,3 M (segun literatura publicada) | Imagenes (resolucion segun receta de entrenamiento) | Metricas de clasificacion en ImageNet publicadas por los autores | Licencia del proyecto original | Codigo y pesos publicados por Apple |
 | MobileViT-XS (Apple, original) | ~2,3 M (segun literatura publicada) | Imagenes | Metricas de clasificacion en ImageNet publicadas por los autores | Licencia del proyecto original | Codigo y pesos publicados por Apple |
 | MobileNetV3-Small | ~2,5 M (segun literatura publicada) | Imagenes | Metricas de clasificacion publicadas | Apache-2.0 en implementaciones habituales | Amplia disponibilidad en frameworks |
@@ -99,10 +99,10 @@ Nota: no se dispone de datos verificados en la informacion proporcionada para co
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con obligación de conservar el aviso de copyright y la cláusula de exención de responsabilidad. La model card advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - Para producción: las APIs automáticas de carga requieren un adaptador explícito; no se documenta compatibilidad con servidores de inferencia estándar.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aquí incluidos, tal como indica el autor.
-- La fecha de creación registrada en HuggingFace es el 17 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar este dato si se cita el repositorio.
+- La fecha de creación registrada en Hugging Face es el 17 de septiembre de 2026, posterior a la fecha habitual de consulta; conviene verificar este dato si se cita el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kkozlovdaniil/mobilevit-matching
+- Hugging Face: https://huggingface.co/Kkozlovdaniil/mobilevit-matching
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces recuperados (documentacion de Azure Boards, plataforma MoDA del WFP, Google Docs, API de Moda y Google Colab) no guardan relacion con el repositorio.
 - No se dispone de enlaces a papers, blogs, repositorios adicionales ni demos asociados a este modelo en la informacion proporcionada.

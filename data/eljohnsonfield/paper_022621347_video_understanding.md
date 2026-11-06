@@ -62,5 +62,5 @@ No disponible. No existen modelos comparables porque no es un modelo de IA.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eljohnsonfield/paper_022621347_video_understanding
+- Hugging Face: https://huggingface.co/eljohnsonfield/paper_022621347_video_understanding
 - No hay otros enlaces proporcionados en la información disponible.

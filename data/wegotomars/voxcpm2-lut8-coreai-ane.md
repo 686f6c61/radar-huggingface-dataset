@@ -107,7 +107,7 @@ Frente a la build FP16 del mismo autor, la LUT8 usa aproximadamente un 30 % meno
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wegotomars/VoxCPM2-LUT8-CoreAI-ANE
+- Hugging Face: https://huggingface.co/wegotomars/VoxCPM2-LUT8-CoreAI-ANE
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Build FP16 de referencia: https://huggingface.co/wegotomars/VoxCPM2-CoreAI-ANE
 - Repositorio tinkerbox-ane: https://github.com/WeGoToMars/tinkerbox

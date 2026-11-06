@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tesorai/Trove1-70m es un modelo publicado en HuggingFace por el usuario Tesorai bajo licencia Apache-2.0. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, capacidades o cualquier otra característica técnica. El nombre sugiere un tamaño de 70 millones de parámetros (70m), pero esto no está confirmado en la documentación. El modelo fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que es un lanzamiento muy reciente o de escasa difusión. Dada la ausencia de información sustancial, esta ficha se limita a reflejar los datos verificables y señala explícitamente todo aquello que no está disponible.
+Tesorai/Trove1-70m es un modelo publicado en Hugging Face por el usuario Tesorai bajo licencia Apache-2.0. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, capacidades o cualquier otra característica técnica. El nombre sugiere un tamaño de 70 millones de parámetros (70m), pero esto no está confirmado en la documentación. El modelo fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que es un lanzamiento muy reciente o de escasa difusión. Dada la ausencia de información sustancial, esta ficha se limita a reflejar los datos verificables y señala explícitamente todo aquello que no está disponible.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Tesorai/Trove1-70m)
+- [Página del modelo en Hugging Face](https://huggingface.co/Tesorai/Trove1-70m)

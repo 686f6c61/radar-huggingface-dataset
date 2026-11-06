@@ -21,7 +21,7 @@ Su relevancia es acotada y muy específica: sirve para quien quiera ejecutar un 
 | Licencia | No disponible |
 | Formato de pesos | safetensors en formato MLX (librería mlx, requiere custom_code) |
 | Modelo base | XiaomiMiMo/MiMo-V2.6-Flash-RL (fine-tune/conversión sobre el mismo) |
-| Tamaño del repositorio | 1,9 GB reportados por HuggingFace (ver advertencias: incoherente con el consumo de memoria declarado) |
+| Tamaño del repositorio | 1,9 GB reportados por Hugging Face (ver advertencias: incoherente con el consumo de memoria declarado) |
 | Autor de la conversión | inferencerlabs (tercero, no propietario del modelo) |
 | Fecha de publicación | 2026-09-22 |
 
@@ -73,7 +73,7 @@ El único dato de rendimiento disponible es de throughput y memoria, aportado po
 - Memoria unificada: requiere un equipo Apple con memoria unificada muy superior a 157 GiB para dejar margen al sistema operativo y a la KV-cache; un M3 Ultra de 192 GB sería el mínimo teórico, y conviene verificar el comportamiento con contextos largos.
 - Opciones de despliegue: MLX (formato nativo del repositorio) y la aplicación Inferencer v2.3.7 probada por el autor. El soporte en vLLM, llama.cpp, Ollama o TGI no está confirmado y es poco probable mientras los pesos estén en formato MLX con custom_code.
 - Latencia y throughput: ~40 tokens/s en M3 Ultra con 1000 tokens de contexto. No hay datos de latencia de preprocesado de imagen, tiempo hasta el primer token ni rendimiento con contextos mayores.
-- Almacenamiento: aunque HuggingFace reporta 1,9 GB de tamaño de repositorio, ese dato es incompatible con el consumo de memoria declarado y debe verificarse antes de planificar el despliegue.
+- Almacenamiento: aunque Hugging Face reporta 1,9 GB de tamaño de repositorio, ese dato es incompatible con el consumo de memoria declarado y debe verificarse antes de planificar el despliegue.
 
 ## Comparativa con modelos similares
 
@@ -94,7 +94,7 @@ Para una comparación rigurosa habría que consultar la model card del modelo ba
 - Modelo de terceros: el autor declara explícitamente que no es el creador ni propietario del modelo y que no se responsabiliza de daños, pérdidas de datos o inexactitudes derivadas de su uso.
 - Sin benchmarks publicados: no hay ninguna métrica de calidad, por lo que no es posible estimar la degradación introducida por la cuantización Q9 ni comparar con los pesos originales.
 - Sin validación de la comunidad: el repositorio registra 0 descargas y 0 likes, y no hay evidencia de que terceros lo hayan probado.
-- Incoherencia de tamaño: HuggingFace reporta 1,9 GB de repositorio frente a los ~157 GiB de memoria en ejecución declarados por el autor. Es imprescindible verificar la integridad y la completitud de los archivos antes de invertir tiempo en el despliegue.
+- Incoherencia de tamaño: Hugging Face reporta 1,9 GB de repositorio frente a los ~157 GiB de memoria en ejecución declarados por el autor. Es imprescindible verificar la integridad y la completitud de los archivos antes de invertir tiempo en el despliegue.
 - Idioma: solo se declara inglés. No hay evidencia de calidad en castellano, y el uso en producción en español requeriría evaluación propia.
 - Ejecución de código remoto: el repositorio incluye custom_code, por lo que la carga implica ejecutar código del autor. Debe revisarse en un entorno aislado.
 - Riesgo de alucinación: inherente a los modelos generativos multimodales, especialmente en lectura de texto dentro de imágenes (OCR), interpretación de gráficos y descripción de detalles poco visibles. No hay documentación del modelo base sobre este aspecto.

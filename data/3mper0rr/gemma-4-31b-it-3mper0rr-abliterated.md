@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: con 31.273 millones de parámetros en FP16, se necesitan aproximadamente 62.5 GB de VRAM solo para los pesos. Con cuantización a 8 bits, unos 31 GB; a 4 bits, unos 16 GB. Sin embargo, no se han publicado cuantizaciones para esta variante.
 - GPU recomendadas: para inferencia en FP16 se requieren GPUs de datacenter como A100 80GB, H100 80GB o A6000 48GB (con cuantización). En consumer, una RTX 4090 (24GB) solo podría ejecutar el modelo con cuantización a 4 bits, si estuviera disponible.
 - Si cabe en consumer GPU: solo con cuantización agresiva (4 bits) y posiblemente con offloading a CPU, pero no hay versiones GGUF publicadas.
-- Opciones de despliegue: al ser safetensors, se puede usar con vLLM, TGI o Transformers de HuggingFace. No se mencionan versiones para llama.cpp u Ollama.
+- Opciones de despliegue: al ser safetensors, se puede usar con vLLM, TGI o Transformers de Hugging Face. No se mencionan versiones para llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-31B (base) | 31.273M | 256K | Sí | Apache-2.0 | HuggingFace |
-| 3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated | 31.273M | 256K (según base) | Sí | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2 | 31.273M (presumible) | no disponible | Sí (presumible) | no disponible | HuggingFace |
+| google/gemma-4-31B (base) | 31.273M | 256K | Sí | Apache-2.0 | Hugging Face |
+| 3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated | 31.273M | 256K (según base) | Sí | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2 | 31.273M (presumible) | no disponible | Sí (presumible) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La principal diferencia entre el modelo base y las versiones abliterated es la eliminación de los mecanismos de rechazo, no el rendimiento técnico.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated
+- Hugging Face: https://huggingface.co/3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated
 - Modelo base de Google: https://huggingface.co/google/gemma-4-31B
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Guía de Gemma 4 31B: https://www.gemma4.wiki/models/gemma-4-31b

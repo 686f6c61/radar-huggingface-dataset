@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks frente a modelos externos de detección de 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SQuaDE ViT-g (v3) | No disponible (backbone congelado) | No aplica | 0,9430 global / 0,8674 robust en val_hard held-out | MIT | HuggingFace |
+| SQuaDE ViT-g (v3) | No disponible (backbone congelado) | No aplica | 0,9430 global / 0,8674 robust en val_hard held-out | MIT | Hugging Face |
 | Alternativas de detección de AIGI | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks frente a modelos externos de detección de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DUET-Bench/squade-vitg
+- Modelo en Hugging Face: https://huggingface.co/DUET-Bench/squade-vitg
 - Repositorio de código: https://github.com/kelvinchua1099-alt/SQuaDE
 - Backbone DINOv2 ViT-g: https://huggingface.co/facebook/dinov2-giant
 - Concurso NTIRE 2026 Robust AIGI Detection: no disponible (no se incluye enlace en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poca-SoccerTwos es un agente de aprendizaje por refuerzo (RL) entrenado para el entorno SoccerTwos de Unity ML-Agents, publicado en HuggingFace por el usuario premsainelluri. Se trata de una politica entrenada con el algoritmo POCA (Policy Optimization with Clipped Advantage), un metodo de RL multiagente descentralizado en el que cada agente optimiza su propia ventaja sin compartir informacion centralizada durante la ejecucion. El modelo se distribuye como un fichero ONNX pensado para ser consumido dentro del runtime de ML-Agents, no como un modelo de lenguaje.
+poca-SoccerTwos es un agente de aprendizaje por refuerzo (RL) entrenado para el entorno SoccerTwos de Unity ML-Agents, publicado en Hugging Face por el usuario premsainelluri. Se trata de una politica entrenada con el algoritmo POCA (Policy Optimization with Clipped Advantage), un metodo de RL multiagente descentralizado en el que cada agente optimiza su propia ventaja sin compartir informacion centralizada durante la ejecucion. El modelo se distribuye como un fichero ONNX pensado para ser consumido dentro del runtime de ML-Agents, no como un modelo de lenguaje.
 
 SoccerTwos es el escenario de futbol 2 contra 2 de Unity ML-Agents, un banco de pruebas clasico para investigacion en RL multiagente cooperativo-competitivo. Cada episodio enfrenta a dos equipos de dos agentes en un entorno fisico simulado, con observaciones vectoriales y recompensas dispersas basadas en goles. La relevancia de este tipo de modelos radica en que sirven como referencia reproducible para comparar algoritmos de MARL (PPO, SAC, POCA) en un escenario estandarizado.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Algoritmo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| premsainelluri/poca-SoccerTwos | SoccerTwos (ML-Agents) | POCA | no disponible | no aplica | no disponible | HuggingFace, repo de 0,0 GB |
-| Otros agentes SoccerTwos en HuggingFace | SoccerTwos (ML-Agents) | PPO / POCA / variantes | no disponible | no aplica | variable segun autor | no verificado en la informacion disponible |
+| premsainelluri/poca-SoccerTwos | SoccerTwos (ML-Agents) | POCA | no disponible | no aplica | no disponible | Hugging Face, repo de 0,0 GB |
+| Otros agentes SoccerTwos en Hugging Face | SoccerTwos (ML-Agents) | PPO / POCA / variantes | no disponible | no aplica | variable segun autor | no verificado en la informacion disponible |
 | Alternativas de RL multiagente | otros entornos MARL | PPO, SAC, QMIX | no disponible | no aplica | variable | no verificado en la informacion disponible |
 
 No se dispone de datos objetivos (parametros, tasas de victoria, curvas de recompensa) para establecer una comparativa cuantitativa fiable con otros agentes de SoccerTwos o de otros escenarios MARL.
@@ -82,7 +82,7 @@ No se dispone de datos objetivos (parametros, tasas de victoria, curvas de recom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/premsainelluri/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/premsainelluri/poca-SoccerTwos
 - Unity ML-Agents (repositorio oficial): https://github.com/Unity-Technologies/ml-agents
-- Documentacion de ML-Agents en HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de ML-Agents en Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - Documentacion de ML-Agents: https://github.com/Unity-Technologies/ml-agents

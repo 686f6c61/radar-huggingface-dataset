@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zool-AI-ft0.5 es un modelo de lenguaje de 0,5 mil millones de parámetros ajustado para conversar en dialecto sudanés del árabe. Lo publica el usuario muzammilsoft en HuggingFace y parte de Qwen2.5-0.5B-Instruct como modelo base, sobre el que se aplicó un ajuste fino con QLoRA (r=16, 3 épocas) usando 1088 ejemplos de conversación (1028 de entrenamiento y 60 de evaluación). Su rasgo diferencial no es el tamaño, sino el formato de entrega: se distribuye exclusivamente como artefacto TFLite cuantizado en dynamic_int8, pensado para ejecutarse en teléfonos y dispositivos de gama baja mediante el motor LiteRtDirectEngine de la aplicación Zool-AI.
+Zool-AI-ft0.5 es un modelo de lenguaje de 0,5 mil millones de parámetros ajustado para conversar en dialecto sudanés del árabe. Lo publica el usuario muzammilsoft en Hugging Face y parte de Qwen2.5-0.5B-Instruct como modelo base, sobre el que se aplicó un ajuste fino con QLoRA (r=16, 3 épocas) usando 1088 ejemplos de conversación (1028 de entrenamiento y 60 de evaluación). Su rasgo diferencial no es el tamaño, sino el formato de entrega: se distribuye exclusivamente como artefacto TFLite cuantizado en dynamic_int8, pensado para ejecutarse en teléfonos y dispositivos de gama baja mediante el motor LiteRtDirectEngine de la aplicación Zool-AI.
 
 El modelo responde a un problema muy concreto: no existen apenas alternativas ligeras y ejecutables en el dispositivo para el dialecto sudanés, un registro poco representado en los corpus de árabe estándar moderno. Al comprimir el modelo a 511 MB en int8 y exportarlo con firmas separadas de `decode` y `prefill_512`, el autor prioriza la viabilidad en edge computing por encima de la capacidad de razonamiento o la cobertura temática.
 
@@ -94,7 +94,7 @@ Los datos de contexto de los modelos comparados no se han verificado en las fuen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muzammilsoft/zool-ai-ft0.5
+- Modelo en Hugging Face: https://huggingface.co/muzammilsoft/zool-ai-ft0.5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Herramienta de conversion citada en la model card: `litert-torch` (ejemplo de Qwen), mencionada sin enlace directo en la informacion disponible
 - Runtime LiteRT de Google AI Edge, requerido para ejecutar los artefactos TFLite, mencionado sin enlace directo en la informacion disponible

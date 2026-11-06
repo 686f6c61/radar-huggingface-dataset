@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Feskid/Lol` es un repositorio alojado en HuggingFace con licencia Apache-2.0, creado por el usuario Feskid el 16 de agosto de 2026. En el momento de la consulta, el repositorio no contiene una model card sustancial: el README únicamente declara la licencia, sin especificar arquitectura, parámetros, tareas, idiomas ni ningún otro detalle técnico. Las descargas son cero y solo cuenta con un "like", lo que indica que se trata de un modelo recién publicado o de un espacio de prueba sin documentación pública.
+El modelo `Feskid/Lol` es un repositorio alojado en Hugging Face con licencia Apache-2.0, creado por el usuario Feskid el 16 de agosto de 2026. En el momento de la consulta, el repositorio no contiene una model card sustancial: el README únicamente declara la licencia, sin especificar arquitectura, parámetros, tareas, idiomas ni ningún otro detalle técnico. Las descargas son cero y solo cuenta con un "like", lo que indica que se trata de un modelo recién publicado o de un espacio de prueba sin documentación pública.
 
 Dado que no se ha publicado ninguna información técnica, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. La ausencia de datos impide cualquier evaluación objetiva. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias, sin inventar especificaciones.
 
@@ -53,6 +53,6 @@ No disponible. Al carecer de especificaciones, no se puede establecer una compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Feskid/Lol
+- Repositorio en Hugging Face: https://huggingface.co/Feskid/Lol
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

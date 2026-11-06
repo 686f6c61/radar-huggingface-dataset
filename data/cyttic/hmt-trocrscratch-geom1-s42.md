@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | CER (hebreo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-geom1-s42 | 22,4 M | no disponible | 0,1703 | MIT | HuggingFace |
-| TrOCR base (Microsoft) | ~334 M | no disponible | no disponible | MIT | HuggingFace |
-| TrOCR large (Microsoft) | ~558 M | no disponible | no disponible | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-geom1-s42 | 22,4 M | no disponible | 0,1703 | MIT | Hugging Face |
+| TrOCR base (Microsoft) | ~334 M | no disponible | no disponible | MIT | Hugging Face |
+| TrOCR large (Microsoft) | ~558 M | no disponible | no disponible | MIT | Hugging Face |
 
 La comparación directa con TrOCR base/large es limitada porque estos están preentrenados en inglés y no reportan CER en hebreo; el modelo de `cyttic` es sustancialmente más pequeño (22,4 M frente a 334-558 M) y está especializado en un único idioma y dataset. No se dispone de otros modelos HTR públicos en hebreo con métricas comparables en la información proporcionada.
 
@@ -86,7 +86,7 @@ La comparación directa con TrOCR base/large es limitada porque estos están pre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-geom1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-geom1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Estudio de referencia: `htr-metrics-transfer` (resultados en `results.json` del repositorio)
 - TrOCR (paper original de Microsoft): https://arxiv.org/abs/2109.10282

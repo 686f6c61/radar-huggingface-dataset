@@ -81,8 +81,8 @@ No se han identificado en la informacion disponible otros modelos publicados com
 
 | Sistema | Parametros | Contexto | `test_chrono` AUC | `test_chrono` log loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (QLoRA, 4-bit NF4) | 14B base + LoRA r=16 | 1024 tokens de entrenamiento | 0,633 (acc 0,598) | 0,6696 | Apache 2.0 | Publico en HuggingFace (0 descargas, 0 likes) |
-| Qwen2.5-14B-Instruct zero-shot | 14B | ventana nativa del base, no detallada | 0,620 (acc 0,573) | 3,1876 | Apache 2.0 (modelo base) | Publico en HuggingFace |
+| Este adaptador (QLoRA, 4-bit NF4) | 14B base + LoRA r=16 | 1024 tokens de entrenamiento | 0,633 (acc 0,598) | 0,6696 | Apache 2.0 | Publico en Hugging Face (0 descargas, 0 likes) |
+| Qwen2.5-14B-Instruct zero-shot | 14B | ventana nativa del base, no detallada | 0,620 (acc 0,573) | 3,1876 | Apache 2.0 (modelo base) | Publico en Hugging Face |
 | Referencia nula (tasa base 50%) | no aplica | no aplica | 0,500 | 0,693 | no aplica | no aplica |
 | Modelos de eleccion clasicos (logit condicional / mixto) | no disponible | no aplica | no disponible | no disponible | no aplica | no aplica |
 
@@ -105,7 +105,7 @@ Del mismo paquete `preference_fm` se mencionan otros adaptadores entrenados con 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/dean22029/pr_fm_qwen25_14b_adapter
+- Repositorio Hugging Face del adaptador: https://huggingface.co/dean22029/pr_fm_qwen25_14b_adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Scripts de pipeline incluidos en el repositorio: `pipeline/export_experiments.R`, `pipeline/make_codebooks.py`, `pipeline/build_dataset.py`, `pipeline/evaluate_qlora.py`
 - Script de ejemplo de puntuacion: `eval_example.py` (en el repositorio)

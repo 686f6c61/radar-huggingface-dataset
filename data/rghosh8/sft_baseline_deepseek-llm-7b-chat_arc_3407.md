@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un artefacto de experimentacion academica: el nombre del checkpoint (`SFT_baseline_arc_seed3407`) sugiere que forma parte de una comparativa de lineas base de SFT sobre el dataset ARC, con semilla 3407. No es un modelo de proposito general ni un lanzamiento oficial de DeepSeek.
+`rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un artefacto de experimentacion academica: el nombre del checkpoint (`SFT_baseline_arc_seed3407`) sugiere que forma parte de una comparativa de lineas base de SFT sobre el dataset ARC, con semilla 3407. No es un modelo de proposito general ni un lanzamiento oficial de DeepSeek.
 
 El modelo hereda la arquitectura del DeepSeek LLM 7B original: un transformer decoder-only con 6.910.365.696 parametros (6,91 mil millones), entrenado por DeepSeek a partir de 2 billones de tokens y posteriormente alineado mediante SFT y DPO para la variante chat. Este checkpoint concreto anade una capa adicional de SFT con TRL sobre ese punto de partida.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407 | 6,91 B | No disponible | No disponible | HuggingFace (0 descargas) |
-| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91 B | 4.096 tokens (ampliable) | Licencia DeepSeek | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, Meta |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407 | 6,91 B | No disponible | No disponible | Hugging Face (0 descargas) |
+| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91 B | 4.096 tokens (ampliable) | Licencia DeepSeek | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, Meta |
 
 Frente a Mistral-7B-Instruct y Llama-3.1-8B-Instruct, este checkpoint pierde en contexto, licencia clara y soporte comunitario; solo tiene sentido como artefacto de investigacion comparativa.
 
@@ -84,7 +84,7 @@ Frente a Mistral-7B-Instruct y Llama-3.1-8B-Instruct, este checkpoint pierde en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_3407
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek LLM: https://arxiv.org/abs/2401.02954

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables (benchmarks estándar) para MI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Puddings22/MIRAI-GlassBox-LLM
+- Modelo en Hugging Face: https://huggingface.co/Puddings22/MIRAI-GlassBox-LLM
 - Paper (dentro del repositorio): `paper/MIRAI_paper.pdf`
 - Código de arquitectura y entrenamiento: `REBUILD/mirai5_clean.py` y `REBUILD/mirai5_ddp_clean.py`
 - Herramientas de interpretabilidad: `bin/` (chat glass-box, inspección, fine-tuning, restricción y atribución)

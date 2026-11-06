@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en FP32 (109,9 millones de parámetros × 4 bytes), por lo que es viable en CPU sin GPU.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM, incluyendo RTX 2060, GTX 1660, o incluso hardware integrado moderno.
 - Cabe en GPU de consumo: sí, se puede ejecutar en tarjetas de gama de entrada.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, se puede servir con `text-embeddings-inference` (TEI), también es compatible con endpoints de HuggingFace Inference Endpoints.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, se puede servir con `text-embeddings-inference` (TEI), también es compatible con endpoints de Hugging Face Inference Endpoints.
 - Latencia y rendimiento: al ser un modelo de 109M parámetros y con longitud de contexto corta (25 tokens), la inferencia es muy rápida, con latencias de milisegundos en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -77,10 +77,10 @@ El modelo se diferencia de BioBERT y ClinicalBERT en que está especializado en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DT4H/CardioBERTa.it_translations_only)
+- [Modelo en Hugging Face](https://huggingface.co/DT4H/CardioBERTa.it_translations_only)
 - [Modelo base CardioBERTa.it](https://huggingface.co/DT4H/CardioBERTa.it)
 - [CardioBERTa.en (variante inglesa)](https://huggingface.co/DT4H/CardioBERTa.en)
-- [Organización DT4H en HuggingFace](https://huggingface.co/datasets/DT4H/)
+- [Organización DT4H en Hugging Face](https://huggingface.co/datasets/DT4H/)
 - [Proyecto DataTools4Heart en GitHub](https://github.com/DataTools4Heart/)
 - [Web oficial de DataTools4Heart](https://www.datatools4heart.eu/)
 - [CardioNER.nl (proyecto relacionado)](https://github.com/UPOD-datascience/MedNER.nl/tree/main/)

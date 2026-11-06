@@ -83,10 +83,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Relacion | Parametros | Contexto | Cumplimiento (juez GPT, 410 prompts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Kris0404/social-story-gemma4-e2b-v5` (este) | Adaptación de dominio cuantizada para MLX | 4.647.449.891 | no disponible | 71,7% greedy (JSON 410/410, reglas 409/410) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `Kris0404/social-story-gemma4-e2b-v5` (este) | Adaptación de dominio cuantizada para MLX | 4.647.449.891 | no disponible | 71,7% greedy (JSON 410/410, reglas 409/410) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Adaptador bf16 de referencia (`adapter_e2b_dpo1`) | Mismo modelo sin cuantizar, evaluado con vLLM | no disponible | no disponible | 71,5% | apache-2.0 | No publicado como artefacto en este repositorio |
 | GGUF 4 bits de un tercero | Cuantización alternativa del mismo modelo | no disponible | no disponible | 63,9% | no disponible | No disponible |
-| `google/gemma-4-E2B-it` | Modelo base multimodal | no disponible | no disponible | no disponible (no evaluado con este juez) | apache-2.0 según la model card | HuggingFace (modelo base) |
+| `google/gemma-4-E2B-it` | Modelo base multimodal | no disponible | no disponible | no disponible (no evaluado con este juez) | apache-2.0 según la model card | Hugging Face (modelo base) |
 
 No se conocen alternativas públicas comparables de generación de Social Stories conforme a los criterios de Carol Gray 10.4 con despliegue on-device; en la información disponible no hay otros modelos de esta categoría para contrastar.
 
@@ -106,7 +106,7 @@ No se conocen alternativas públicas comparables de generación de Social Storie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kris0404/social-story-gemma4-e2b-v5
+- Hugging Face: https://huggingface.co/Kris0404/social-story-gemma4-e2b-v5
 - Modelo base: `google/gemma-4-E2B-it` (no se proporciona URL específica en la información disponible)
 - Pipeline de entrenamiento `gemma4_e2b_smoke` y fichero de despliegue `gemma4_e2b_smoke/deploy/story_service.py`: mencionados en la model card, sin URL disponible
 - Aplicación Mystoria (app iOS): mencionada en la model card, sin URL disponible

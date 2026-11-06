@@ -94,8 +94,8 @@ Metricas de la abliteracion:
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ohm-MythosHeretic | 3,09 B | Razonamiento matematico/codigo, abliterado | MIT | Pesos abiertos en HuggingFace, con GGUF |
-| WeiboAI/VibeThinker-3B | ~3 B | Razonamiento matematico/codigo (base) | no disponible | Pesos abiertos en HuggingFace |
+| Ohm-MythosHeretic | 3,09 B | Razonamiento matematico/codigo, abliterado | MIT | Pesos abiertos en Hugging Face, con GGUF |
+| WeiboAI/VibeThinker-3B | ~3 B | Razonamiento matematico/codigo (base) | no disponible | Pesos abiertos en Hugging Face |
 | Qwen3-4B (familia Qwen) | 4 B | Uso general, razonamiento hibrido, tool calling | Apache 2.0 | Pesos abiertos, amplio ecosistema |
 | Phi-4-mini (Microsoft) | ~3,8 B | Razonamiento y codigo, uso general | MIT | Pesos abiertos |
 

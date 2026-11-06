@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qazljlj/comfyui_mmh es un modelo de 27.320 millones de parametros publicado por el usuario qazljlj en HuggingFace, orientado al ecosistema ComfyUI. El repositorio incluye pesos en formato GGUF con cuantizacion imatrix, lo que sugiere que esta disenado para inferencia eficiente en CPU o GPU de consumo mediante motores como llama.cpp u Ollama. Los tags indican compatibilidad con endpoints y capacidad conversacional.
+qazljlj/comfyui_mmh es un modelo de 27.320 millones de parametros publicado por el usuario qazljlj en Hugging Face, orientado al ecosistema ComfyUI. El repositorio incluye pesos en formato GGUF con cuantizacion imatrix, lo que sugiere que esta disenado para inferencia eficiente en CPU o GPU de consumo mediante motores como llama.cpp u Ollama. Los tags indican compatibilidad con endpoints y capacidad conversacional.
 
 El modelo se enmarca dentro de un conjunto de repositorios del mismo autor (comfyui, comfyui2) que contienen checkpoints y LoRAs para generacion de contenido visual en ComfyUI, incluyendo referencias a modelos LTX de video. La ausencia de tarjeta de modelo, licencia y especificaciones detalladas limita la informacion verificable, por lo que esta ficha se basa exclusivamente en los metadatos disponibles.
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente sobre la arquitectura o el rendimiento d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qazljlj/comfyui_mmh
+- Repositorio Hugging Face: https://huggingface.co/qazljlj/comfyui_mmh
 - Repositorio asociado del autor: https://huggingface.co/qazljlj/comfyui
 - Repositorio comfyui2 del autor: https://huggingface.co/qazljlj/comfyui2/tree/main/models
 - Modelos soportados por ComfyUI: https://comfy.org/models/

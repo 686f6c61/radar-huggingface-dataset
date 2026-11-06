@@ -49,7 +49,7 @@ Nota previa: el autor no publica ninguna descripcion de capacidades. Los casos s
 - Prototipado de personajes y dialogos: util para generar variantes de dialogo entre personajes y explorar registros de voz distintos antes de fijar una version definitiva.
 - Asistente de reescritura y estilo: dado un parrafo, el modelo puede producir alternativas de estilo o registro, siempre que se valide manualmente el resultado.
 - Despliegue en entornos sin conexion: al ser un GGUF de ~8,5 GB, puede ejecutarse en una estacion de trabajo aislada, lo que resulta adecuado para talleres de escritura o entornos con requisitos de confidencialidad.
-- Integracion en aplicaciones de escritura propias: el repositorio esta marcado como endpoints_compatible, de modo que puede conectarse a clientes que esperan el esquema de endpoints de HuggingFace o de la API de OpenAI.
+- Integracion en aplicaciones de escritura propias: el repositorio esta marcado como endpoints_compatible, de modo que puede conectarse a clientes que esperan el esquema de endpoints de Hugging Face o de la API de OpenAI.
 - Experimentacion e investigacion de cuantizacion: sirve como caso de estudio para medir la perdida de calidad de Q8_0 frente a los pesos originales, aunque el autor no aporta mediciones al respecto.
 
 ## Benchmarks y rendimiento
@@ -91,6 +91,6 @@ La coincidencia exacta de parametros con Llama 3.1 8B es notable, pero no hay co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol-GGUF
+- Repositorio Hugging Face: https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol-GGUF
 - Modelo base: https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol
 - llama.cpp (herramienta de conversion y motor de inferencia): https://github.com/ggml-org/llama.cpp

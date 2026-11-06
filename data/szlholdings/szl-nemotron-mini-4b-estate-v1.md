@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada en cuantizacion de 4 bits: alrededor de 2,5 a 3 GB de pesos.
 - GPU recomendadas: RTX A6000 (la usada en entrenamiento), A100 o H100 para despliegue concurrente; RTX 4090 o RTX 3090 para inferencia en 16 bits.
 - Cabe en GPU consumer: si, en tarjetas con 12 GB o mas en 16 bits (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090) y en tarjetas de 8 GB con cuantizacion.
-- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparacion cuantitativa con alternativas no es posible: no hay benchmarks pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Conversion a safetensors del modelo base: https://huggingface.co/SZLHOLDINGS/Nemotron-Mini-4B-Instruct-st
 - Dataset estate-knowledge-corpus-v1: https://huggingface.co/datasets/SZLHOLDINGS/estate-knowledge-corpus-v1
@@ -96,4 +96,4 @@ La comparacion cuantitativa con alternativas no es posible: no hay benchmarks pu
 - Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
 - Logs de entrenamiento (dataset privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Script de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

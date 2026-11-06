@@ -6,7 +6,7 @@ SkillHelix v3 RL run es un repositorio de adaptadores LoRA entrenados mediante a
 
 El repositorio, de solo 0,3 GB, contiene unicamente la ronda 18 completa (adaptador LoRA en `round018/tuple/`, rollouts y logs), mientras que de las rondas 0 a 17 solo se conservan ficheros pequenos parciales (registros de rollout y logs); los adaptadores y el estado del optimizador de esas rondas no se subieron. El entrenamiento se detuvo por decision del usuario tras la ronda 18. Los registros de examenes (dev/test) no estan incluidos.
 
-Su relevancia es acotada y de caracter fundamentalmente reproducible/investigador: no es un modelo listo para produccion, no publica resultados de evaluacion y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes" en HuggingFace. La licencia declarada es Apache 2.0 y el repositorio incluye una carpeta `bank/` con versiones de la biblioteca de habilidades y una carpeta `code/` con el codigo congelado (con un parche de "new-box" del 2026-10-15).
+Su relevancia es acotada y de caracter fundamentalmente reproducible/investigador: no es un modelo listo para produccion, no publica resultados de evaluacion y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes" en Hugging Face. La licencia declarada es Apache 2.0 y el repositorio incluye una carpeta `bank/` con versiones de la biblioteca de habilidades y una carpeta `code/` con el codigo congelado (con un parche de "new-box" del 2026-10-15).
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar este repositorio con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhw1111/skillhelix-qwen3-v3-rl-rounds
+- Repositorio Hugging Face: https://huggingface.co/zhw1111/skillhelix-qwen3-v3-rl-rounds
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Checkpoint SFT de partida (privado, mencionado en la model card): https://huggingface.co/zhw1111/skillhelix-qwen3-bankv1-sft
 - Ficheros SFT del 2026-10-15 (mencionado en la model card): https://huggingface.co/zhw1111/skillhelix-qwen3-v5cards-sft

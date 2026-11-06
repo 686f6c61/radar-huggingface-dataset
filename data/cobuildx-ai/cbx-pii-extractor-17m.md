@@ -107,7 +107,7 @@ La versión de 17M ofrece el mejor equilibrio velocidad/precisión de la familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-17M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-17M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Variante 32M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M
 - Variante 68M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-68M

@@ -86,7 +86,7 @@ No se dispone de métricas de rendimiento comparables para este checkpoint, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-pg19-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-pg19-run2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Dataset PG-19 (DeepMind): https://github.com/deepmind/pg19

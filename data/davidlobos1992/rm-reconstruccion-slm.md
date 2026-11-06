@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rm-reconstruccion-slm (este) | 135 M + LoRA | no disponible | Apache 2.0 | HuggingFace, 13 descargas |
-| SmolLM2-135M-Instruct (base) | 135 M | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| rm-reconstruccion-slm (este) | 135 M + LoRA | no disponible | Apache 2.0 | Hugging Face, 13 descargas |
+| SmolLM2-135M-Instruct (base) | 135 M | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Modelos especializados en RM clinica | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables con otros adaptadores de dominio en la informacion proporcionada.
@@ -88,6 +88,6 @@ No se dispone de datos de rendimiento comparables con otros adaptadores de domin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Davidlobos1992/rm-reconstruccion-slm
+- Hugging Face: https://huggingface.co/Davidlobos1992/rm-reconstruccion-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio del taller: mencionado en la model card, URL no disponible en la informacion proporcionada.

@@ -4,7 +4,7 @@
 
 `zahidpichen/whipser_base` es un adaptador LoRA publicado con la librería PEFT que se aplica sobre el modelo de reconocimiento automático del habla `openai/whisper-small`. No es un modelo entrenado desde cero: es un conjunto de pesos de bajo rango (rango y alpha no documentados) que modifican el comportamiento del encoder-decoder de Whisper. El autor declara el modelo base mediante los tags `base_model:adapter:openai/whisper-small` y `lora`, y la card indica compatibilidad con la versión 0.21.2 de PEFT.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: se trata de un repositorio sin documentación efectiva. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, el repositorio registra 0 descargas y 0 likes, y el tamaño reportado es de 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar realmente subidos o que el contenido es despreciable en tamaño. No se especifica el dominio de ajuste, los datos de entrenamiento, el idioma ni la licencia.
+La relevancia de esta ficha es limitada y conviene ser explícito: se trata de un repositorio sin documentación efectiva. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, el repositorio registra 0 descargas y 0 likes, y el tamaño reportado es de 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar realmente subidos o que el contenido es despreciable en tamaño. No se especifica el dominio de ajuste, los datos de entrenamiento, el idioma ni la licencia.
 
 Por tanto, esta ficha describe la arquitectura heredada del modelo base (Whisper small, transformer encoder-decoder de aproximadamente 244 millones de parámetros según la documentación upstream) y marca de forma sistemática como "no disponible" todo lo específico del adaptador. El nombre del repositorio (`whipser_base`) apunta a `whisper-base`, pero el tag de modelo base apunta a `whisper-small`, una inconsistencia adicional que el autor no resuelve.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente (RTX 3060, RTX 4060, RTX 4090, T4, L4). Para lotes grandes o servicio concurrente, A10G, L40S o A100 aportan margen.
 - Cabe en GPU consumer: sí, en todas las RTX y en muchas iGPU con suficiente memoria compartida.
 - CPU: viable mediante whisper.cpp o faster-whisper con cuantización int8, con mayor latencia que en GPU.
-- Opciones de despliegue: `transformers` con `peft` para cargar el adaptador; faster-whisper (requiere fusionar o convertir los pesos); whisper.cpp (requiere conversión a GGML, no soporta PEFT directamente); endpoint de HuggingFace Inference. vLLM y TGI no son adecuados para Whisper en la mayoría de configuraciones.
+- Opciones de despliegue: `transformers` con `peft` para cargar el adaptador; faster-whisper (requiere fusionar o convertir los pesos); whisper.cpp (requiere conversión a GGML, no soporta PEFT directamente); endpoint de Hugging Face Inference. vLLM y TGI no son adecuados para Whisper en la mayoría de configuraciones.
 - Latencia y throughput: no disponibles para el adaptador. En el modelo base, la latencia depende de la duración del audio y del backend elegido; no se aportan medidas en la información disponible.
 
 ## Comparativa con modelos similares

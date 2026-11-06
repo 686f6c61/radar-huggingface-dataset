@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alphonsebenten9/mon-traducteur-camfranglais_V1` es un modelo de traduccion automatica publicado en HuggingFace por el usuario Alphonsebenten9. Segun su identificador y sus etiquetas, esta construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) y cuenta con 60.506.624 parametros, lo que lo situa en la gama de los modelos T5 de tamano base. El nombre sugiere un ambito de aplicacion orientado a la traduccion entre camfrances (cambios de codigo frances-ingles, probablemente en contexto camerunes) y frances/ingles, aunque la model card no aporta ninguna descripcion funcional, idiomas ni detalles de entrenamiento.
+`Alphonsebenten9/mon-traducteur-camfranglais_V1` es un modelo de traduccion automatica publicado en Hugging Face por el usuario Alphonsebenten9. Segun su identificador y sus etiquetas, esta construido sobre la arquitectura T5 (Text-to-Text Transfer Transformer) y cuenta con 60.506.624 parametros, lo que lo situa en la gama de los modelos T5 de tamano base. El nombre sugiere un ambito de aplicacion orientado a la traduccion entre camfrances (cambios de codigo frances-ingles, probablemente en contexto camerunes) y frances/ingles, aunque la model card no aporta ninguna descripcion funcional, idiomas ni detalles de entrenamiento.
 
 El modelo se distribuye en formato safetensors con un tamano de repositorio de 0,2 GB y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las obligaciones de atribucion de dicha licencia. En el momento de la consulta registra 0 descargas y 1 like, lo que indica que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Alphonsebenten9/mon-traducteur-camfranglais_V1 | 60,5 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| google-t5/t5-base | 220 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| google-t5/t5-small | 60 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| Helsinki-NLP/opus-mt-fr-en | 77 M | 512 tokens | CC-BY-4.0 | HuggingFace, ampliamente validado |
+| Alphonsebenten9/mon-traducteur-camfranglais_V1 | 60,5 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| google-t5/t5-base | 220 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| google-t5/t5-small | 60 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| Helsinki-NLP/opus-mt-fr-en | 77 M | 512 tokens | CC-BY-4.0 | Hugging Face, ampliamente validado |
 
 La comparacion con t5-small es la mas directa por numero de parametros, aunque no se ha confirmado que este modelo derive de el ni que comparta su configuracion de contexto. Frente a opus-mt-fr-en, especializado en traduccion frances-ingles, no hay datos de calidad comparables. El modelo aqui descrito carece de validacion publica, a diferencia de las alternativas citadas.
 
@@ -80,5 +80,5 @@ La comparacion con t5-small es la mas directa por numero de parametros, aunque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alphonsebenten9/mon-traducteur-camfranglais_V1
+- Hugging Face: https://huggingface.co/Alphonsebenten9/mon-traducteur-camfranglais_V1
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

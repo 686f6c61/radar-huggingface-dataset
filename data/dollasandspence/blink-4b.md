@@ -24,7 +24,7 @@ El modelo lo publica DollasAndSpence (el model card referencia el espacio `thego
 | Revision | v1.4 (revision de codigo; pesos identicos a v1.0) |
 | Tamano del repositorio | 8,4 GB |
 | Modelo base | Qwen/Qwen3.5-4B |
-| Inferencia remota | `inference: false` (no hay endpoint alojado en HuggingFace) |
+| Inferencia remota | `inference: false` (no hay endpoint alojado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,9 +89,9 @@ Dentro de la propia familia blink existen dos variantes de mayor tamaño. No hay
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| blink-4b | 4.205.751.296 (8,4 GB bf16) | no disponible | blink-research (solo investigacion/evaluacion no comercial) | HuggingFace, `inference: false` |
-| blink-mimo-9b | no disponible | no disponible | no disponible | HuggingFace (`thegovind/blink-mimo-9b`) |
-| blink-27b | no disponible | no disponible | no disponible | HuggingFace (`thegovind/blink-27b`) |
+| blink-4b | 4.205.751.296 (8,4 GB bf16) | no disponible | blink-research (solo investigacion/evaluacion no comercial) | Hugging Face, `inference: false` |
+| blink-mimo-9b | no disponible | no disponible | no disponible | Hugging Face (`thegovind/blink-mimo-9b`) |
+| blink-27b | no disponible | no disponible | no disponible | Hugging Face (`thegovind/blink-27b`) |
 
 Frente a modelos generativos de tamano similar (por ejemplo, el propio Qwen3.5-4B del que deriva), la diferencia no es de rendimiento en tareas abiertas sino de interfaz: blink-4b no genera texto y devuelve probabilidades por opción, lo que lo hace comparable en concepto a un clasificador y no a un asistente. No hay datos publicados que permitan comparar su precision con la de un clasificador entrenado específicamente ni con la de un LLM generativo al que se le pida elegir una opción.
 
@@ -107,12 +107,12 @@ Frente a modelos generativos de tamano similar (por ejemplo, el propio Qwen3.5-4
 - Madurez y soporte: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion practicamente simultaneas. No hay historial de mantenimiento ni comunidad.
 - Ecosistema de despliegue estrecho: no hay rutas documentadas para vLLM, TGI, llama.cpp u Ollama, ni cuantizaciones publicadas, lo que limita el despliegue en hardware modesto.
 - Servidor monohilo por defecto: sin `--batch-window-ms`, las peticiones se procesan de una en una, lo que puede convertirse en cuello de botella en produccion.
-- Posible confusion de repositorio: los metadatos de HuggingFace apuntan a `DollasAndSpence/blink-4b`, mientras que el model card y el quickstart referencian el espacio `thegovind/blink-4b`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
+- Posible confusion de repositorio: los metadatos de Hugging Face apuntan a `DollasAndSpence/blink-4b`, mientras que el model card y el quickstart referencian el espacio `thegovind/blink-4b`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace (metadatos): https://huggingface.co/DollasAndSpence/blink-4b
-- HuggingFace referenciado en el model card: https://huggingface.co/thegovind/blink-4b
+- Hugging Face (metadatos): https://huggingface.co/DollasAndSpence/blink-4b
+- Hugging Face referenciado en el model card: https://huggingface.co/thegovind/blink-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante mayor: https://huggingface.co/thegovind/blink-mimo-9b
 - Variante mayor: https://huggingface.co/thegovind/blink-27b

@@ -77,7 +77,7 @@ La comparativa se basa en modelos de tamano similar. El modelo evaluado se difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/didula-wso2/qwen1-0-7_sft_gguf
+- Repositorio Hugging Face: https://huggingface.co/didula-wso2/qwen1-0-7_sft_gguf
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

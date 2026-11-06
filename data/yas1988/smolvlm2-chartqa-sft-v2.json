@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yas1988/smolvlm2-chartqa-sft-v2",
+  "slug": "yas1988-smolvlm2-chartqa-sft-v2",
+  "author": "yas1988",
+  "url": "https://huggingface.co/yas1988/smolvlm2-chartqa-sft-v2",
+  "created_at": "2026-11-03T12:22:36.000Z",
+  "updated_at": "2026-11-03T17:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sft",
+    "trl",
+    "lora",
+    "vision-language",
+    "chartqa",
+    "image-text-to-text",
+    "conversational",
+    "dataset:HuggingFaceM4/ChartQA",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1013623977,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yas1988/smolvlm2-chartqa-sft-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/yas1988/smolvlm2-chartqa-sft-v2/tree/main",
+      "snippet": "Google Colab Kaggle main smolvlm2-chartqa-sft-v2 345 MB Ctrl+K Ctrl+K 1 contributor History:10 commits yas1988 Update README.md f45bde2 verifiedabout 4 hours ago last-checkpointTraining in progress, step 63, checkpointabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago README.md 2.45 kBUpdate README.mdabout 4 hours ago ..."
+    },
+    {
+      "title": "yas1988/smolvlm2-chartqa-sft-v2 · Hugging Face",
+      "url": "https://huggingface.co/yas1988/smolvlm2-chartqa-sft-v2",
+      "snippet": "A first run (yas1988/smolvlm2-chartqa-sft) used chat-format messages, so the loss covered every token including the system prompt and image tokens. Training loss was 18 and the model did not change (10/38 before and after)."
+    }
+  ]
+}

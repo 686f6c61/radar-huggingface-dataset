@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 (Over-Ai) | 2,8T | 104B | 1M | Kimi K3 (other) | HuggingFace |
+| Kimi K3 (Over-Ai) | 2,8T | 104B | 1M | Kimi K3 (other) | Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- HuggingFace (redistribucion): https://huggingface.co/fuad404/Over-Ai
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face (redistribucion): https://huggingface.co/fuad404/Over-Ai
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo original Kimi K3 (referencia): https://huggingface.co/moonshotai/Kimi-K3
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ | 13.57B | no disponible | NVFP4 + AWQ | Apache 2.0 | HuggingFace |
-| 6block/MiniMax-H3-Qwen3-VL-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-32B-Instruct | no disponible | no disponible | BF16 (sin cuantizar) | Apache 2.0 | HuggingFace |
+| pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-NVFP4-AWQ | 13.57B | no disponible | NVFP4 + AWQ | Apache 2.0 | Hugging Face |
+| 6block/MiniMax-H3-Qwen3-VL-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-32B-Instruct | no disponible | no disponible | BF16 (sin cuantizar) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

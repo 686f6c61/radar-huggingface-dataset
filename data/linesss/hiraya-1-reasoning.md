@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hiraya-1-Reasoning es un modelo publicado en HuggingFace por el usuario linesss bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que el bloque de metadatos de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado.
+Hiraya-1-Reasoning es un modelo publicado en Hugging Face por el usuario linesss bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que el bloque de metadatos de licencia: no se documentan arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio registra cero descargas y cero likes, y no tiene pipeline declarado.
 
 El nombre del modelo sugiere una orientacion hacia tareas de razonamiento, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. El mismo autor mantiene otros repositorios bajo la marca Hiraya, como Hiraya-VL-Elastic-MoE-SB (multimodal con arquitectura MoE elastica) y un Space llamado Hiraya Multimodal AI, lo que indica una linea de trabajo en modelos multimodales y de mezcla de expertos. No hay evidencia de que Hiraya-1-Reasoning comparta arquitectura o pesos con esos modelos.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hiraya-1-Reasoning | no disponible | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin documentacion |
-| Hiraya-VL-Elastic-MoE-SB | no disponible | no disponible | no disponible | no disponible en la informacion recopilada | HuggingFace, mismo autor |
+| Hiraya-1-Reasoning | no disponible | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin documentacion |
+| Hiraya-VL-Elastic-MoE-SB | no disponible | no disponible | no disponible | no disponible en la informacion recopilada | Hugging Face, mismo autor |
 | MAI-Thinking-1 (Microsoft AI) | ~1T totales, 35B activos (MoE) | no disponible | Comparado favorablemente con Sonnet 4.6 en evaluaciones ciegas de Surge segun el fabricante | no disponible | no disponible |
 
 La comparativa con modelos de razonamiento de gran escala no es significativa, ya que no existen datos publicos de Hiraya-1-Reasoning. La unica similitud confirmada con Hiraya-VL-Elastic-MoE-SB y con el Space Hiraya Multimodal AI es la autoria compartida.
@@ -86,7 +86,7 @@ La comparativa con modelos de razonamiento de gran escala no es significativa, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/linesss/Hiraya-1-Reasoning
+- Repositorio Hugging Face: https://huggingface.co/linesss/Hiraya-1-Reasoning
 - Repositorio del mismo autor, Hiraya-VL-Elastic-MoE-SB: https://huggingface.co/linesss/Hiraya-VL-Elastic-MoE-SB
 - Space Hiraya Multimodal AI: https://huggingface.co/spaces/linesss/Hiraya-Multimodal-AI
 - Leaderboard de razonamiento de BenchLM (referencia externa): https://benchlm.ai/reasoning

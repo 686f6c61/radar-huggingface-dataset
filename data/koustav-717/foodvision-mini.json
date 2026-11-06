@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Koustav-717/foodvision-mini",
+  "slug": "koustav-717-foodvision-mini",
+  "author": "Koustav-717",
+  "url": "https://huggingface.co/Koustav-717/foodvision-mini",
+  "created_at": "2026-11-01T20:05:12.000Z",
+  "updated_at": "2026-11-01T20:11:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "image-classification",
+    "efficientnet",
+    "food-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31275815,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Koustav-717/foodvision-mini · Hugging Face",
+      "url": "https://huggingface.co/Koustav-717/foodvision-mini",
+      "snippet": "FoodVision Mini is a food image classification model built using PyTorch and EfficientNet-B2 ..."
+    },
+    {
+      "title": "Koustav-717/foodvision-mini at main - Hugging Face",
+      "url": "https://huggingface.co/Koustav-717/foodvision-mini/tree/main",
+      "snippet": "/ foodvision-mini Like 0 Image Classification PyTorch computer-vision efficientnet food-classification License:mit Model card FilesFiles and versions xet Community Copy to bucket main foodvision-mini 31.3 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Koustav-717 Create README.md 7c36aff verifiedabout 9 hours ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "Foodvision Mini - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/koustav-717/foodvision-mini",
+      "snippet": "Registry entry for model Foodvision Mini; source metadata pending."
+    },
+    {
+      "title": "Foodvision Mini - a Hugging Face Space by Arnab0",
+      "url": "https://huggingface.co/spaces/Arnab0/foodvision_mini",
+      "snippet": "Upload a picture of any food item, and the app will tell you which of 20 common foods it thinks is shown. It provides the confidence score for each possible label and also reports how long the pred..."
+    }
+  ]
+}

@@ -70,9 +70,9 @@ La model card del autor no incluye ninguna métrica (MMLU, GSM8K, MATH, HumanEva
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen4b-math-think-random | 4,02 B | no disponible en la model card (base: 32.768) | Fusion experimental con mascara aleatoria, dominio math, modo think | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base | 4,02 B | 32.768 tokens (extensible) | Transformer denso preentrenado | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-4B | 4,02 B | 32.768 tokens (extensible) | Transformer denso con modo thinking/no-thinking y postentrenamiento | Apache-2.0 | HuggingFace, muy extendido |
+| Montalte/qwen4b-math-think-random | 4,02 B | no disponible en la model card (base: 32.768) | Fusion experimental con mascara aleatoria, dominio math, modo think | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base | 4,02 B | 32.768 tokens (extensible) | Transformer denso preentrenado | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-4B | 4,02 B | 32.768 tokens (extensible) | Transformer denso con modo thinking/no-thinking y postentrenamiento | Apache-2.0 | Hugging Face, muy extendido |
 | Especialista de origen (modrill/math-think-q4b-20260908) | no disponible | no disponible | Especialista en math en modo think | no disponible | Repositorio referenciado por el autor |
 
 No hay datos de rendimiento publicados para ninguno de estos artefactos en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad. Cualquier comparacion de calidad entre el merge, el modelo base y el especialista requiere una evaluacion propia.
@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para ninguno de estos artefactos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-math-think-random
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-math-think-random
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen citado en la model card: https://huggingface.co/modrill/math-think-q4b-20260908
 - Repositorio del autor: https://huggingface.co/Montalte

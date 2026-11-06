@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ag
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/UI-Mate-9B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/UI-Mate-9B-GGUF
 - Modelo base original: https://huggingface.co/tencent/UI-Mate-9B
 - Perfil del creador de la cuantizacion: https://huggingface.co/mradermacher
 - Pagina de descarga de cuantizaciones (alternativa): https://hf.tst.eu/model

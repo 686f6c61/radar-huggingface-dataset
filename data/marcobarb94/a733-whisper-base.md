@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto (audio) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| a733-whisper-base (este repo) | ~74 M (no confirmado) | 30 s por ventana | no disponible en la model card | MIT | HuggingFace, ONNX, orientado a NPU Allwinner |
-| csukuangfj/sherpa-onnx-whisper-base | ~74 M | 30 s por ventana | multilingue (familia Whisper) | MIT | HuggingFace, ONNX, runtime sherpa-onnx |
+| a733-whisper-base (este repo) | ~74 M (no confirmado) | 30 s por ventana | no disponible en la model card | MIT | Hugging Face, ONNX, orientado a NPU Allwinner |
+| csukuangfj/sherpa-onnx-whisper-base | ~74 M | 30 s por ventana | multilingue (familia Whisper) | MIT | Hugging Face, ONNX, runtime sherpa-onnx |
 | Whisper tiny | ~39 M | 30 s por ventana | multilingue | MIT | OpenAI, ONNX, whisper.cpp, faster-whisper |
-| Distil-Whisper (variantes destiladas) | desde ~166 M (distil-small.en) | 30 s por ventana | mayoritariamente ingles | MIT | HuggingFace, Transformers |
-| Moonshine (tiny/base) | ~27 M / ~61 M | ventanas variables, optimizado para audio corto | mayoritariamente ingles | MIT | HuggingFace, ONNX |
+| Distil-Whisper (variantes destiladas) | desde ~166 M (distil-small.en) | 30 s por ventana | mayoritariamente ingles | MIT | Hugging Face, Transformers |
+| Moonshine (tiny/base) | ~27 M / ~61 M | ventanas variables, optimizado para audio corto | mayoritariamente ingles | MIT | Hugging Face, ONNX |
 
 La ventaja diferencial de este repositorio no es la precisión ni el tamaño, sino la integración declarada con VIPLite para SoC Allwinner, un nicho que ningún modelo de la comparativa cubre de fábrica. Frente a Whisper tiny, la talla base ofrece mejor precisión a cambio de más cómputo; frente a Distil-Whisper o Moonshine, la comparación no es directa porque estos priorizan inglés y audio corto.
 
@@ -92,7 +92,7 @@ La ventaja diferencial de este repositorio no es la precisión ni el tamaño, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcobarb94/a733-whisper-base
+- Modelo en Hugging Face: https://huggingface.co/marcobarb94/a733-whisper-base
 - Modelo base (sherpa-onnx, ONNX): https://huggingface.co/csukuangfj/sherpa-onnx-whisper-base
 - Repositorio sherpa-onnx (runtime y conversiones): https://github.com/k2-fsa/sherpa-onnx
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

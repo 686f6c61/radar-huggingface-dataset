@@ -25,7 +25,7 @@ La evaluación publicada por el autor se realizó el 2026-11-01 en CPU x86_64, c
 
 El modelo no ha sido entrenado por Thox-ai. La model card lo declara explícitamente: los pesos son los de Qwen/Qwen3-4B, obtenidos vía el tag `qwen3:4b` de Ollama y fijados por el digest `sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7`. La adaptación consiste en un system profile de rol ("THOX Agent DigitalHumans kit") embebido en el Modelfile y en un knowledge pack v0.1 de 4.652 bytes con 8 entradas públicas verificadas en formato JSONL, pensado para recuperación local. No hay datos sobre número de tokens de entrenamiento, composición del dataset ni etapas de RLHF/DPO/RLVR porque no hubo entrenamiento adicional por parte del publicador.
 
-La innovación del paquete no es arquitectónica sino de empaquetado y trazabilidad: el manifiesto de release registra el pin del base, la versión del perfil y la versión del knowledge pack, lo que permite reproducir exactamente la configuración. El repositorio de HuggingFace es deliberadamente mínimo (1.192 B de Modelfile, 377 B de manifiesto y 4.652 B de knowledge pack) y el modelo ejecutable se publica en Ollama como `thox-ai/thoxagent-core-4b`. Cualquier capacidad de razonamiento, tool calling o decodificación heredada proviene del Qwen3-4B subyacente, no de una modificación de los pesos.
+La innovación del paquete no es arquitectónica sino de empaquetado y trazabilidad: el manifiesto de release registra el pin del base, la versión del perfil y la versión del knowledge pack, lo que permite reproducir exactamente la configuración. El repositorio de Hugging Face es deliberadamente mínimo (1.192 B de Modelfile, 377 B de manifiesto y 4.652 B de knowledge pack) y el modelo ejecutable se publica en Ollama como `thox-ai/thoxagent-core-4b`. Cualquier capacidad de razonamiento, tool calling o decodificación heredada proviene del Qwen3-4B subyacente, no de una modificación de los pesos.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ La comparación más directa es contra el propio Qwen3-4B: la diferencia funcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxAgent-Core-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxAgent-Core-4B
 - Modelo en Ollama: https://ollama.com/thox-ai/thoxagent-core-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Colección Agent & Routing Models: https://huggingface.co/collections/Thox-ai/thox-agent-and-routing-models-6ae7519b9b60e7b122506149

@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño reducido, que permite inferenc
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura de SmolLM-135M, un transformer decoder-only con mecanismo de atencion por ventana deslizante (sliding window attention) y embeddings de posicion rotativos (RoPE). El fine-tuning se realizo con el alignment-handbook de HuggingFace, utilizando una unica epoca, una tasa de aprendizaje de 1e-3, programacion coseno y un warmup del 10%. El dataset de entrenamiento combina conversaciones cotidianas generadas por Llama 3.1 70B, instrucciones de codigo de StarCoder2, una submuestra de OpenHermes-2.5 y datos de Magpie-Pro. No se aplico DPO en este fine-tuning, a diferencia de la version v0.1 del modelo original.
+El modelo sigue la arquitectura de SmolLM-135M, un transformer decoder-only con mecanismo de atencion por ventana deslizante (sliding window attention) y embeddings de posicion rotativos (RoPE). El fine-tuning se realizo con el alignment-handbook de Hugging Face, utilizando una unica epoca, una tasa de aprendizaje de 1e-3, programacion coseno y un warmup del 10%. El dataset de entrenamiento combina conversaciones cotidianas generadas por Llama 3.1 70B, instrucciones de codigo de StarCoder2, una submuestra de OpenHermes-2.5 y datos de Magpie-Pro. No se aplico DPO en este fine-tuning, a diferencia de la version v0.1 del modelo original.
 
 El modelo base fue preentrenado sobre SmolLM-Corpus, un corpus curado de datos educativos y sinteticos de alta calidad, que incluye Cosmopedia v2, Python-Edu y FineWeb-Edu. Esta combinacion de datos busca maximizar la capacidad del modelo en tareas de razonamiento y generacion de texto con un presupuesto de parametros muy reducido.
 
@@ -77,7 +77,7 @@ No se dispone de comparaciones de rendimiento directas entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Corizfuo/SmolLM-135M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Corizfuo/SmolLM-135M-Instruct
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M
 - Blog de SmolLM: https://huggingface.co/blog/smollm
 - Repositorio alignment-handbook: https://github.com/huggingface/alignment-handbook

@@ -4,9 +4,9 @@
 
 Dolphin Mistral 24B Venice Edition es un modelo de lenguaje de aproximadamente 24.000 millones de parametros desarrollado por Dolphin AI (dphn) en colaboracion con Venice.ai. Se construye como un ajuste fino de `mistralai/Mistral-Small-24B-Instruct-2501` y su objetivo declarado es ofrecer una version sin censura y totalmente dirigible del Mistral Small 3 de 24B, pensada para integrarse en productos donde el propietario del sistema, y no el proveedor del modelo, decide el comportamiento y la alineacion. Es el modelo por defecto ("Venice Uncensored") de la plataforma Venice.
 
-Tecnicamente es un transformer denso (no MoE) con 24.011.361.280 parametros, empaquetado en safetensors y publicado bajo licencia Apache 2.0. La model card recomienda una ventana de hasta 131.072 tokens al servirlo con vLLM e indica soporte de entrada de imagenes en los tags de HuggingFace (`image-text-to-text`), aunque no documenta esa capacidad en detalle. Requiere mas de 60 GB de VRAM para inferencia en precision completa y se entreno sobre 8 GPU B200 proporcionadas por targon.com.
+Tecnicamente es un transformer denso (no MoE) con 24.011.361.280 parametros, empaquetado en safetensors y publicado bajo licencia Apache 2.0. La model card recomienda una ventana de hasta 131.072 tokens al servirlo con vLLM e indica soporte de entrada de imagenes en los tags de Hugging Face (`image-text-to-text`), aunque no documenta esa capacidad en detalle. Requiere mas de 60 GB de VRAM para inferencia en precision completa y se entreno sobre 8 GPU B200 proporcionadas por targon.com.
 
-Su relevancia actual se enmarca en el nicho de modelos "uncensored" y steerables: frente a APIs cerradas que controlan el system prompt, las versiones y la alineacion de forma uniforme, este modelo delega esas decisiones en el desarrollador. En HuggingFace aparece republicado bajo la cuenta `Shidokaizaki`, mientras que el autor original referenciado en la model card es dphn.
+Su relevancia actual se enmarca en el nicho de modelos "uncensored" y steerables: frente a APIs cerradas que controlan el system prompt, las versiones y la alineacion de forma uniforme, este modelo delega esas decisiones en el desarrollador. En Hugging Face aparece republicado bajo la cuenta `Shidokaizaki`, mientras que el autor original referenciado en la model card es dphn.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La model card no detalla el numero de tokens de entrenamiento, la composicion de
 - Seguimiento de instrucciones condicionado por system prompt (steerability): el usuario define tono, personaje y normas.
 - Modo "sin censura": el autor lo presenta como la version mas descensurada de Mistral 24B, orientada a seguir instrucciones sin reservas segun el system prompt configurado.
 - Tool calling / function calling: soportado en vLLM con `--tool-call-parser mistral` y `--enable-auto-tool-choice`.
-- Entrada de imagenes: los tags de HuggingFace incluyen `image-text-to-text` y la configuracion de vLLM usa `--limit-mm-per-prompt '{"image": 10}'`, lo que sugiere soporte multimodal; la model card no lo documenta en detalle.
+- Entrada de imagenes: los tags de Hugging Face incluyen `image-text-to-text` y la configuracion de vLLM usa `--limit-mm-per-prompt '{"image": 10}'`, lo que sugiere soporte multimodal; la model card no lo documenta en detalle.
 - Capacidades multilingues: presumibles por el modelo base, pero no especificadas en la informacion disponible.
 - Compatibilidad de despliegue con Ollama, LM Studio, Transformers, vLLM, SGLang y TGI.
 
@@ -84,7 +84,7 @@ La diferencia principal frente a los modelos de Mistral radica en la alineacion:
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/Shidokaizaki/Dolphin-Mistral-24B-Venice-Edition
+- Hugging Face (repositorio consultado): https://huggingface.co/Shidokaizaki/Dolphin-Mistral-24B-Venice-Edition
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Web de Dolphin AI: https://dphn.ai
 - Twitter de Dolphin AI: https://x.com/dphnAI

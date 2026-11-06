@@ -96,13 +96,13 @@ Los datos de Qwen3-32B y Llama 3.3 70B se incluyen como referencia de categoria;
 - El campo de parametros safetensors del repositorio (1.863.907.840) no es coherente con la nomenclatura de 27B del modelo; conviene verificar el contenido real de los archivos antes de confiar en el etiquetado.
 - El contexto maximo de 1.000.000 tokens es una extension declarada, no verificada; el rendimiento en contextos muy largos puede degradarse y el coste de memoria KV crece de forma significativa.
 - Cobertura multilingue limitada principalmente a ingles y chino; el rendimiento en castellano no esta documentado.
-- Las cuantizaciones K_P pueden mostrarse como "?" en la columna de cuantizacion de LM Studio (problema de visualizacion, no de carga) y el widget de compatibilidad de hardware de HuggingFace puede no reconocerlas.
+- Las cuantizaciones K_P pueden mostrarse como "?" en la columna de cuantizacion de LM Studio (problema de visualizacion, no de carga) y el widget de compatibilidad de hardware de Hugging Face puede no reconocerlas.
 - Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el contenido generado por un modelo desensurado recae en el desplegador; conviene auditar el cumplimiento normativo (RGPD, DSA, normativa sectorial) antes de produccion.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krish-kumar/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/krish-kumar/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio original del autor de las cuantizaciones: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Discord del autor: https://discord.gg/SZ5vacTXYf

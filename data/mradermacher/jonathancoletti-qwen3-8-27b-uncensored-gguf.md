@@ -77,7 +77,7 @@ No se dispone de más modelos comparables de la misma categoría (27B abliterado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/jaromer/JonathanColetti-Qwen3.8-27B-Uncensored
 - Página de descargas y overview: https://hf.tst.eu/model#JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
 - Blog sobre el modelo (orcarouter.ai): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
@@ -160,7 +160,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se basa en ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/martarmacher/JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/martarmacher/JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/jaromer/JonathanColetti-Qwen3.8-27B-Uncensored
 - Página de descargas y consultas: https://hf.tst.eu/model#JonathanColetti-Qwen3.8-27B-Uncensored-GGUF
 - Blog de referencia (orcarouter.ai): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

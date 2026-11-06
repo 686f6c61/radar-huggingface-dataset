@@ -75,8 +75,8 @@ Estimaciones derivadas del recuento de parámetros (2.829.861.577); no proceden 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `prehj/GR00T-N1.5-robocasa-atq-v22so3-granularity-2x4x-60k-20260923` (este) | 2.829.861.577 | no disponible | Politica robotica, ablacion ATQ con 4 expertos y router | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `prehj/GR00T-N1.5-robocasa-baseline` | no disponible (repo de 7,59 GB, checkpoint del paso 60000) | no disponible | Fine-tuning de GR00T N1.5 sobre RoboCasa, linea base | no disponible | HuggingFace |
+| `prehj/GR00T-N1.5-robocasa-atq-v22so3-granularity-2x4x-60k-20260923` (este) | 2.829.861.577 | no disponible | Politica robotica, ablacion ATQ con 4 expertos y router | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `prehj/GR00T-N1.5-robocasa-baseline` | no disponible (repo de 7,59 GB, checkpoint del paso 60000) | no disponible | Fine-tuning de GR00T N1.5 sobre RoboCasa, linea base | no disponible | Hugging Face |
 | `nvidia/GR00T-N1.5-3B` | ~3B segun denominacion del modelo | no disponible | Modelo fundacional cross-embodiment para robots humanoides | no disponible en la informacion proporcionada | Modelo base referenciado por el autor |
 | `Qwen2.5-VL-3B` | ~3B segun denominacion del modelo | no disponible | VLM de proposito general usado como referencia de grounding por NVIDIA | no disponible en la informacion proporcionada | Punto de comparacion citado en la documentacion de NVIDIA |
 
@@ -99,7 +99,7 @@ No se dispone de resultados de rendimiento para ninguno de estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prehj/GR00T-N1.5-robocasa-atq-v22so3-granularity-2x4x-60k-20260923
+- Modelo en Hugging Face: https://huggingface.co/prehj/GR00T-N1.5-robocasa-atq-v22so3-granularity-2x4x-60k-20260923
 - Linea base del mismo autor: https://huggingface.co/prehj/GR00T-N1.5-robocasa-baseline
 - Ficheros de la linea base: https://huggingface.co/prehj/GR00T-N1.5-robocasa-baseline/tree/main
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B

@@ -75,7 +75,7 @@ La conversión de oerbas ofrece la ventaja de estar específicamente adaptada al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oerbas/localpix-meinamix-v10
+- Modelo en Hugging Face: https://huggingface.co/oerbas/localpix-meinamix-v10
 - Modelo original MeinaMix V10: https://huggingface.co/Meina/MeinaMix_V10
 - Repositorio de conversión de Apple: https://github.com/apple/ml-stable-diffusion
 - Página del modelo en PixAI: https://pixai.art/en/model/1619564846858460778

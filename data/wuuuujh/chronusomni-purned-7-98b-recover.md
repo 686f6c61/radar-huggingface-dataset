@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WuuuuJH/ChronusOmni-Purned-7.98b-recover
+- Hugging Face: https://huggingface.co/WuuuuJH/ChronusOmni-Purned-7.98b-recover
 - Repositorio GitHub (codigo, scripts, documentacion): https://github.com/Q-if/Multi-scale-Omni-Aggregation-Model
 - Articulo arXiv (ChronusOmni original): https://arxiv.org/abs/2512.09841

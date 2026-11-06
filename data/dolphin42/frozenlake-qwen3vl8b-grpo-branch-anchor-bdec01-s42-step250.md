@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Herramientas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`frozenlake-qwen3vl8b-grpo-branch-anchor-bdec01-s42-step250`) | 8,77 mil millones | no disponible | Tool calling de la herramienta `move` en FrozenLake 4x4; tool share 68 % tras 250 pasos | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | mismo orden de magnitud, dato exacto no disponible | no disponible | Tool calling de proposito general segun el modelo base; no evaluado en FrozenLake en esta informacion | Apache-2.0 (segun el tag del modelo derivado) | HuggingFace |
+| Este checkpoint (`frozenlake-qwen3vl8b-grpo-branch-anchor-bdec01-s42-step250`) | 8,77 mil millones | no disponible | Tool calling de la herramienta `move` en FrozenLake 4x4; tool share 68 % tras 250 pasos | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | mismo orden de magnitud, dato exacto no disponible | no disponible | Tool calling de proposito general segun el modelo base; no evaluado en FrozenLake en esta informacion | Apache-2.0 (segun el tag del modelo derivado) | Hugging Face |
 | Baseline GRPO sin regularizar (mismo estudio, no es un artefacto publico identificado) | mismo modelo base | no disponible | Colapsa a 0 % de tool share en 3 de 5 semillas | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoria en la informacion proporcionada.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dolphin42/frozenlake-qwen3vl8b-grpo-branch-anchor-bdec01-s42-step250
+- Modelo en Hugging Face: https://huggingface.co/Dolphin42/frozenlake-qwen3vl8b-grpo-branch-anchor-bdec01-s42-step250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - ms-swift (framework de entrenamiento citado): https://github.com/modelscope/ms-swift
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las unicas URLs devueltas corresponden a hilos del foro de Kodi (forum.kodi.tv) sin relacion con el modelo, por lo que se omiten.

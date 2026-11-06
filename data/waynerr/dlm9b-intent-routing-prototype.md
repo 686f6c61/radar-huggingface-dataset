@@ -76,5 +76,5 @@ No disponible. No existen modelos comparables en la misma categoría porque el a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WayneRR/dlm9b-intent-routing-prototype
+- Repositorio en Hugging Face: https://huggingface.co/WayneRR/dlm9b-intent-routing-prototype
 - Código y documentación completa: https://github.com/kialajin-l/dlm9b-intent-routing-prototype

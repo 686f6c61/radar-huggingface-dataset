@@ -64,8 +64,8 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `tuanpasg/wudi_gemma_fp32_iter_50` | 2.614.341.888 | No disponible | No disponible | HuggingFace |
-| `google/gemma-2-2b` | No disponible | No disponible | No disponible | HuggingFace |
+| `tuanpasg/wudi_gemma_fp32_iter_50` | 2.614.341.888 | No disponible | No disponible | Hugging Face |
+| `google/gemma-2-2b` | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,5 +79,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_50
+- Hugging Face: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_50
 - Repositorio relacionado del autor: https://huggingface.co/tuanpasg/wudi_gemma_fp32_1_iter_200

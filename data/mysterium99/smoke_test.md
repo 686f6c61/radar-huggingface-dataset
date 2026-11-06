@@ -67,7 +67,7 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smoke_test
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smoke_test
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball-67B-A2B-Math-RL-E11-Step24 es un checkpoint de investigación publicado por la organización open-athena dentro de la campaña Snowball del proyecto Marin. Según los metadatos de HuggingFace contiene 67.078.876.160 parámetros reales (unos 67,08 mil millones) y ocupa 268,3 GB en el repositorio. La etiqueta de arquitectura es grug_moe, lo que apunta a una mezcla de expertos (MoE), y la nomenclatura "A2B" del nombre sugiere del orden de 2.000 millones de parámetros activos por token, aunque este dato no está confirmado en la documentación.
+Snowball-67B-A2B-Math-RL-E11-Step24 es un checkpoint de investigación publicado por la organización open-athena dentro de la campaña Snowball del proyecto Marin. Según los metadatos de Hugging Face contiene 67.078.876.160 parámetros reales (unos 67,08 mil millones) y ocupa 268,3 GB en el repositorio. La etiqueta de arquitectura es grug_moe, lo que apunta a una mezcla de expertos (MoE), y la nomenclatura "A2B" del nombre sugiere del orden de 2.000 millones de parámetros activos por token, aunque este dato no está confirmado en la documentación.
 
 No es un modelo de propósito general ni un producto listo para producción: es el artefacto exacto empleado para reproducir una fila concreta de un experimento de aprendizaje por refuerzo sobre matemáticas, correspondiente al brazo E11, paso 24. La model card insiste en que el router está congelado con sesgo fijo (frozen router bias) y advierte de que repositorios de nombre parecido, como los `laion/rl-snowball-*`, pueden contener exportaciones con router mutable que colapsan durante la inferencia.
 
@@ -107,7 +107,7 @@ Diferencias relevantes: los dos modelos alternativos tienen licencias permisivas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E11-Step24
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E11-Step24
 - Issue del experimento en el repositorio de Marin: https://github.com/marin-community/marin/issues/7786
 - Archivo de evidencias (dataset con `MATH_EVALS.md` y artefactos): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Artefacto de origen citado en la card (ruta S3, no accesible públicamente por HTTP): `s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-e11-rno2a-deepscaler-dapo-ct-20260818-200437-f5273b/exports/global_step_24/policy/`

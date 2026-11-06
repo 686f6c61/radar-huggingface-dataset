@@ -77,7 +77,7 @@ La comparativa se basa en caracteristicas estructurales conocidas; no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion GGUF: https://huggingface.co/snuggguf/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+- Repositorio Hugging Face de la cuantizacion GGUF: https://huggingface.co/snuggguf/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio oficial de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - Cuantizacion GGUF alternativa de unsloth: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-GGUF

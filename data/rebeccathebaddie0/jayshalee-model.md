@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccathebaddie0/jayshalee.model` es un repositorio alojado en HuggingFace por el usuario `rebeccathebaddie0` que, a fecha de la informacion disponible, no contiene documentacion tecnica util: la model card se limita a un campo `license: unknown` sin cuerpo de texto, sin descripcion, sin ejemplos de uso y sin referencias a paper, repositorio de codigo o dataset de entrenamiento. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni familia de modelos a la que pertenezca.
+`rebeccathebaddie0/jayshalee.model` es un repositorio alojado en Hugging Face por el usuario `rebeccathebaddie0` que, a fecha de la informacion disponible, no contiene documentacion tecnica util: la model card se limita a un campo `license: unknown` sin cuerpo de texto, sin descripcion, sin ejemplos de uso y sin referencias a paper, repositorio de codigo o dataset de entrenamiento. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni familia de modelos a la que pertenezca.
 
 El repositorio no registra ninguna descarga ni "like", no tiene pipeline de inferencia asignado y sus unicos metadatos son la etiqueta `region:us` y una licencia marcada como desconocida. La busqueda web asociada no devuelve ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de inicio de sesion de Outlook/Hotmail de Microsoft, sin conexion alguna con el artefacto.
 
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rebeccathebaddie0/jayshalee.model
+- Repositorio en Hugging Face: https://huggingface.co/rebeccathebaddie0/jayshalee.model
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

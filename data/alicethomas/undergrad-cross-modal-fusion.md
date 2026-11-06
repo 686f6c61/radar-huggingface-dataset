@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alicethomas/undergrad-cross-modal-fusion` no es un modelo de aprendizaje automatico desplegable, sino un repositorio de notas de investigacion publicado en HuggingFace por el usuario Alicethomas bajo licencia CC-BY-4.0. La propia model card lo describe como "reading notes and an experiment sketch" sobre fusion cross-modal (cross-modal fusion) y advierte de forma explicita que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. El repositorio contiene dos ficheros de texto, `summary.md` y `README.md`, y no declara codigo de entrenamiento, checkpoint funcional ni evaluaciones completadas.
+`Alicethomas/undergrad-cross-modal-fusion` no es un modelo de aprendizaje automatico desplegable, sino un repositorio de notas de investigacion publicado en Hugging Face por el usuario Alicethomas bajo licencia CC-BY-4.0. La propia model card lo describe como "reading notes and an experiment sketch" sobre fusion cross-modal (cross-modal fusion) y advierte de forma explicita que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. El repositorio contiene dos ficheros de texto, `summary.md` y `README.md`, y no declara codigo de entrenamiento, checkpoint funcional ni evaluaciones completadas.
 
 El unico artefacto de pesos presente es un fichero safetensors con 24.832 parametros totales (aproximadamente 0,025 millones) y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con un modelo de fusion multimodal minimamente funcional (los encoders de vision y texto suelen tener decenas o cientos de millones de parametros como minimo), por lo que lo mas razonable es interpretarlo como un artefacto de prueba, un placeholder o un tensor auxiliar de un cuaderno de experimentos, no como un modelo entrenado.
 
@@ -45,7 +45,7 @@ Tampoco existen datos de entrenamiento: no se declara numero de tokens, composic
 - Plantilla de protocolo de reproducibilidad: adoptar la lista de requisitos que el propio repositorio menciona (version de dataset, comandos, semillas, hardware, logs en bruto) como checklist antes de publicar resultados propios.
 - Analisis de modos de fallo en sistemas multimodales: emplear la enumeracion de failure modes y preguntas abiertas como guia para anticipar sesgos de modalidad dominante, desalineacion entre encoders o fugas de informacion entre splits.
 - Docencia de metodologia en TFG/TFM: el repositorio esta etiquetado como material de tipo "undergrad" y sirve como ejemplo de como separar explicitamente planes e hipotesis de resultados, practica util en asignaturas de investigacion.
-- Auditoria de artefactos en HuggingFace: usar este repositorio como caso de estudio de como distinguir un modelo desplegable de un cuaderno de notas, revisando tamano del repo, numero de parametros y contenido de la model card.
+- Auditoria de artefactos en Hugging Face: usar este repositorio como caso de estudio de como distinguir un modelo desplegable de un cuaderno de notas, revisando tamano del repo, numero de parametros y contenido de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ No disponible. No procede comparar este repositorio con modelos multimodales com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alicethomas/undergrad-cross-modal-fusion
+- Hugging Face: https://huggingface.co/Alicethomas/undergrad-cross-modal-fusion
 - Fichero principal citado en la model card: `summary.md` (dentro del repositorio, sin URL directa publicada)
 - Fichero de documentacion: `README.md` (dentro del repositorio)
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

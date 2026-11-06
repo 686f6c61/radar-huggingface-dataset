@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ftajwar/grpo_qwen3_4B_base_knk_step_100` es un checkpoint derivado de Qwen3-4B base, publicado por el usuario ftajwar en HuggingFace. Por el nombre y las etiquetas del repositorio, se trata de un ajuste mediante GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo ampliamente usada en la fase de post-entrenamiento de modelos de razonamiento. El sufijo `step_100` indica que corresponde a la iteracion 100 del proceso de entrenamiento, por lo que es un punto intermedio y no necesariamente el modelo final.
+El modelo `ftajwar/grpo_qwen3_4B_base_knk_step_100` es un checkpoint derivado de Qwen3-4B base, publicado por el usuario ftajwar en Hugging Face. Por el nombre y las etiquetas del repositorio, se trata de un ajuste mediante GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo ampliamente usada en la fase de post-entrenamiento de modelos de razonamiento. El sufijo `step_100` indica que corresponde a la iteracion 100 del proceso de entrenamiento, por lo que es un punto intermedio y no necesariamente el modelo final.
 
 El modelo cuenta con 4.022.468.096 parametros (unos 4,02 mil millones en formato safetensors), un tamano tipico de la familia Qwen3-4B, que es un transformer decoder denso (no MoE). El repositorio ocupa 8,1 GB, coherente con pesos en precision alta (fp16/bf16) del modelo base de 4B.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos publicados para el modelo obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftajwar/grpo_qwen3_4B_base_knk_step_100
+- Modelo en Hugging Face: https://huggingface.co/ftajwar/grpo_qwen3_4B_base_knk_step_100
 - Modelo base de referencia (Qwen3-4B, inferido por nombre y etiquetas): no se aporta enlace concreto en la informacion disponible
 - Paper de GRPO: no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog del autor: no disponible en la informacion proporcionada

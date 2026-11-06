@@ -67,7 +67,7 @@ No disponible. No se proporcionan datos comparativos con otros modelos de detecc
 
 ## Enlaces
 
-- [HuggingFace: software-mansion/react-native-executorch-yolo26-pose](https://huggingface.co/software-mansion/react-native-executorch-yolo26-pose)
+- [Hugging Face: software-mansion/react-native-executorch-yolo26-pose](https://huggingface.co/software-mansion/react-native-executorch-yolo26-pose)
 - [Repositorio GitHub de react-native-executorch](https://github.com/software-mansion/react-native-executorch)
 - [Documentación de React Native ExecuTorch](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
 - [Sitio web de React Native ExecuTorch](https://executorch.swmansion.com/)

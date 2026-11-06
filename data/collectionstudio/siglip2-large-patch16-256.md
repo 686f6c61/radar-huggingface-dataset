@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto / resolucion | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-large-patch16-256 (este) | 881,5 M | Parches 16x16, 256x256; longitud de contexto de texto no disponible | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | HuggingFace (redistribucion de terceros) |
-| google/siglip2-large-patch16-256 | No disponible en la informacion | Parches 16x16, 256x256 | Identica al anterior | Apache 2.0 | HuggingFace (repositorio oficial) |
-| SigLIP 1 (google/siglip-large-patch16-256) | No disponible en la informacion | Parches 16x16, 256x256 | Clasificacion zero-shot, retrieval | Apache 2.0 | HuggingFace |
-| CLIP ViT-L/14 (openai/clip-vit-large-patch14) | No disponible en la informacion | Parches 14x14, 224x224 | Clasificacion zero-shot, retrieval | Licencia propia de OpenAI, mas restrictiva que Apache 2.0 | HuggingFace |
+| CollectionStudio/siglip2-large-patch16-256 (este) | 881,5 M | Parches 16x16, 256x256; longitud de contexto de texto no disponible | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | Hugging Face (redistribucion de terceros) |
+| google/siglip2-large-patch16-256 | No disponible en la informacion | Parches 16x16, 256x256 | Identica al anterior | Apache 2.0 | Hugging Face (repositorio oficial) |
+| SigLIP 1 (google/siglip-large-patch16-256) | No disponible en la informacion | Parches 16x16, 256x256 | Clasificacion zero-shot, retrieval | Apache 2.0 | Hugging Face |
+| CLIP ViT-L/14 (openai/clip-vit-large-patch14) | No disponible en la informacion | Parches 14x14, 224x224 | Clasificacion zero-shot, retrieval | Licencia propia de OpenAI, mas restrictiva que Apache 2.0 | Hugging Face |
 
 La comparativa se limita a caracteristicas estructurales y de licencia porque la informacion proporcionada no incluye cifras de rendimiento de ninguno de los modelos alternativos. La diferencia funcional mas relevante frente a CLIP es el uso de perdida sigmoide y las perdidas adicionales de SigLIP 2 orientadas a localizacion y features densas.
 
@@ -88,7 +88,7 @@ La comparativa se limita a caracteristicas estructurales y de licencia porque la
 
 ## Enlaces
 
-- Modelo en HuggingFace (redistribucion): https://huggingface.co/CollectionStudio/siglip2-large-patch16-256
+- Modelo en Hugging Face (redistribucion): https://huggingface.co/CollectionStudio/siglip2-large-patch16-256
 - Repositorio oficial: https://huggingface.co/google/siglip2-large-patch16-256
 - README oficial: https://huggingface.co/google/siglip2-large-patch16-256/blob/main/README.md
 - Paper SigLIP 2 (arxiv:2502.14786): https://huggingface.co/papers/2502.14786 y https://arxiv.org/abs/2502.14786

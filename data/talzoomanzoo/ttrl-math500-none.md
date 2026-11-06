@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `talzoomanzoo/ttrl-math500-none` | Adaptador LoRA sobre 1,7 mil millones | No disponible | Matematicas (MATH-500) via TTRL original | Apache 2.0 | HuggingFace, 0 descargas |
+| `talzoomanzoo/ttrl-math500-none` | Adaptador LoRA sobre 1,7 mil millones | No disponible | Matematicas (MATH-500) via TTRL original | Apache 2.0 | Hugging Face, 0 descargas |
 | `talzoomanzoo/ttrl-math500-sc` | Adaptador LoRA sobre 1,7 mil millones | No disponible | Matematicas con bonus Self-Certainty | No disponible | Mencionado en la model card |
 | `talzoomanzoo/ttrl-math500-uid-conj` | Adaptador LoRA sobre 1,7 mil millones | No disponible | Matematicas con bonus de conjuncion UID | No disponible | Mencionado en la model card |
-| Qwen/Qwen3-1.7B (sin adaptador) | 1,7 mil millones | No disponible | Proposito general | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-1.7B (sin adaptador) | 1,7 mil millones | No disponible | Proposito general | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-math500-none
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-math500-none
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Paper, blog o repositorio del metodo TTRL: no disponible en la informacion proporcionada

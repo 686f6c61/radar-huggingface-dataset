@@ -21,20 +21,20 @@ La relevancia de esta ficha es practica: permite a un desarrollador saber que ex
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones estaticas); el checkpoint original esta en safetensors |
 | Version de cuantizacion | quantize_version: 2; output_tensor_quantised: 1 |
-| Tipo de conversion | hf (a partir del checkpoint HuggingFace del modelo base) |
+| Tipo de conversion | hf (a partir del checkpoint Hugging Face del modelo base) |
 | Tamano del repositorio | 93,9 GB (todas las cuantizaciones en un mismo repo) |
 | Pipeline declarado | no disponible (tags: gguf, endpoints_compatible, conversational) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El repositorio es exclusivamente un artefacto de conversion: la model card se limita a indicar "static quants of https://huggingface.co/netease-youdao/Confucius4-T3PO" y una serie de metadatos de la herramienta de cuantizacion (version 2, cuantizacion de tensores de salida activada, tipo de conversion desde HuggingFace). No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El repositorio es exclusivamente un artefacto de conversion: la model card se limita a indicar "static quants of https://huggingface.co/netease-youdao/Confucius4-T3PO" y una serie de metadatos de la herramienta de cuantizacion (version 2, cuantizacion de tensores de salida activada, tipo de conversion desde Hugging Face). No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
 En consecuencia, no es posible determinar si el modelo emplea un transformer denso clasico, una arquitectura MoE o un esquema hibrido. El unico indicio estructural es que el recuento total de parametros coincide con el numero de parametros almacenados, sin senales de parametros activos reducidos. La cuantizacion estatica aplicada cubre desde Q2_K (aproximadamente 2 bits por peso en la mayoria de tensores) hasta f16 sin perdida, con las variantes intermedias habituales de la familia K-quant de llama.cpp, incluida IQ4_XS como opcion de 4 bits con metodos de importancia.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la unica etiqueta funcional declarada en el repositorio es "conversational", lo que apunta a un uso de dialogo multi-turno.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el artefacto GGUF esta pensado para servirse a traves de endpoints compatibles con la API de inferencia de HuggingFace (por ejemplo, text-generation-inference o soluciones equivalentes que consumen GGUF).
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el artefacto GGUF esta pensado para servirse a traves de endpoints compatibles con la API de inferencia de Hugging Face (por ejemplo, text-generation-inference o soluciones equivalentes que consumen GGUF).
 - Razonamiento, codigo, matematicas, vision o audio: no disponible en la informacion proporcionada.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -79,10 +79,10 @@ El repositorio no ofrece metricas ni documentacion del modelo base, por lo que l
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Confucius4-T3PO (este repo, GGUF) | 14,77 B | no disponible | GGUF (12 cuantizaciones) | no disponible | HuggingFace, autor mradermacher |
-| netease-youdao/Confucius4-T3PO | 14,77 B | no disponible | safetensors | no disponible | HuggingFace, NetEase Youdao |
-| Qwen2.5-14B-Instruct (referencia de categoria) | 14,7 B | 32.768 tokens | safetensors, GGUF, AWQ | Apache 2.0 | HuggingFace, Alibaba |
-| Mistral-Nemo-Instruct-2407 (referencia de categoria) | 12,2 B | 128.000 tokens | safetensors, GGUF | Apache 2.0 | HuggingFace, Mistral AI y NVIDIA |
+| Confucius4-T3PO (este repo, GGUF) | 14,77 B | no disponible | GGUF (12 cuantizaciones) | no disponible | Hugging Face, autor mradermacher |
+| netease-youdao/Confucius4-T3PO | 14,77 B | no disponible | safetensors | no disponible | Hugging Face, NetEase Youdao |
+| Qwen2.5-14B-Instruct (referencia de categoria) | 14,7 B | 32.768 tokens | safetensors, GGUF, AWQ | Apache 2.0 | Hugging Face, Alibaba |
+| Mistral-Nemo-Instruct-2407 (referencia de categoria) | 12,2 B | 128.000 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face, Mistral AI y NVIDIA |
 
 Las dos ultimas filas se incluyen unicamente como referencia de categoria por tamano y formato, ya que no existen datos publicados que permitan comparar el rendimiento real de Confucius4-T3PO frente a ellos.
 
@@ -103,6 +103,6 @@ Las dos ultimas filas se incluyen unicamente como referencia de categoria por ta
 - Repositorio GGUF: https://huggingface.co/mradermacher/Confucius4-T3PO-GGUF
 - Modelo base: https://huggingface.co/netease-youdao/Confucius4-T3PO
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Organizacion NetEase Youdao en HuggingFace: https://huggingface.co/netease-youdao
+- Organizacion NetEase Youdao en Hugging Face: https://huggingface.co/netease-youdao
 
 Nota: los resultados de busqueda web proporcionados no contenian ningun enlace relevante sobre este modelo; los resultados obtenidos trataban sobre ChatGPT, GitHub Copilot y GPT-SoVITS, sin relacion con Confucius4-T3PO.

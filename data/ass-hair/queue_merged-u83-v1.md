@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ass-hair/queue_merged-u83-v1` es un modelo de lenguaje de gran tamano (LLM) de tipo Mixture-of-Experts (MoE) con 35.107.181.936 parametros totales (~35,1B), desarrollado por el usuario `ass-hair`. Segun los metadatos de HuggingFace, esta basado en el modelo `marsplan0624/affine-5gedzafcvg-queen` y presenta etiquetas que sugieren una arquitectura derivada de Qwen 3.5 MoE, con capacidades multimodales (image-text-to-text), entrenamiento mediante DPO online y orientacion a razonamiento y conversacion.
+El modelo `ass-hair/queue_merged-u83-v1` es un modelo de lenguaje de gran tamano (LLM) de tipo Mixture-of-Experts (MoE) con 35.107.181.936 parametros totales (~35,1B), desarrollado por el usuario `ass-hair`. Segun los metadatos de Hugging Face, esta basado en el modelo `marsplan0624/affine-5gedzafcvg-queen` y presenta etiquetas que sugieren una arquitectura derivada de Qwen 3.5 MoE, con capacidades multimodales (image-text-to-text), entrenamiento mediante DPO online y orientacion a razonamiento y conversacion.
 
 El modelo se distribuye en formato `safetensors` (70,2 GB) y esta sujeto a acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones especificas antes de poder descargarlo. A fecha de su publicacion (15 de agosto de 2026), no registra descargas ni valoraciones, y no se dispone de informacion publica sobre su licencia, idiomas soportados o detalles de entrenamiento mas alla de las etiquetas.
 
-A pesar de su tamano considerable y de las capacidades que sugieren sus etiquetas, la ausencia de documentacion tecnica, benchmarks publicados y datos de entrenamiento limita significativamente la evaluacion objetiva del modelo. Esta ficha recoge exclusivamente la informacion disponible en HuggingFace y marca como "no disponible" cualquier dato no confirmado.
+A pesar de su tamano considerable y de las capacidades que sugieren sus etiquetas, la ausencia de documentacion tecnica, benchmarks publicados y datos de entrenamiento limita significativamente la evaluacion objetiva del modelo. Esta ficha recoge exclusivamente la informacion disponible en Hugging Face y marca como "no disponible" cualquier dato no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -23,13 +23,13 @@ A pesar de su tamano considerable y de las capacidades que sugieren sus etiqueta
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es escasa. Las etiquetas de HuggingFace indican que se trata de un modelo de tipo Mixture-of-Experts (MoE) basado en Qwen 3.5, con capacidades multimodales (image-text-to-text) y entrenamiento mediante DPO online. El modelo base declarado es `marsplan0624/affine-5gedzafcvg-queen`, del cual se ha realizado un proceso de fusion o mezcla (el nombre `queue_merged` sugiere una operacion de merge de pesos).
+La informacion disponible es escasa. Las etiquetas de Hugging Face indican que se trata de un modelo de tipo Mixture-of-Experts (MoE) basado en Qwen 3.5, con capacidades multimodales (image-text-to-text) y entrenamiento mediante DPO online. El modelo base declarado es `marsplan0624/affine-5gedzafcvg-queen`, del cual se ha realizado un proceso de fusion o mezcla (el nombre `queue_merged` sugiere una operacion de merge de pesos).
 
 No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas como RLHF o DPO clasico, ni sobre innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). La etiqueta `affine-sn120` podria referirse a un tipo de capa o configuracion interna, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
-Segun las etiquetas de HuggingFace, el modelo presenta las siguientes capacidades potenciales:
+Segun las etiquetas de Hugging Face, el modelo presenta las siguientes capacidades potenciales:
 
 - Generacion de texto y conversacion (etiquetas `text-generation` y `conversational`).
 - Razonamiento avanzado (etiqueta `reason-v3`).
@@ -88,7 +88,7 @@ Nota: los modelos de referencia se citan como contexto general, no como comparac
 
 ## Enlaces
 
-- [HuggingFace - ass-hair/queue_merged-u83-v1](https://huggingface.co/ass-hair/queue_merged-u83-v1)
+- [Hugging Face - ass-hair/queue_merged-u83-v1](https://huggingface.co/ass-hair/queue_merged-u83-v1)
 - [Modelo base declarado - marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido, no verificado)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

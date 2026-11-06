@@ -96,9 +96,9 @@ El tokenizador Unigram de 64k es la mejor opción si la prioridad es Soranî o Z
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurdish-tech/kurdish-tokenizer-unigram-64k
+- Modelo en Hugging Face: https://huggingface.co/kurdish-tech/kurdish-tokenizer-unigram-64k
 - Variante BPE 64k: https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-64k
-- Organización Kurdish-Tech en HuggingFace: https://huggingface.co/kurdish-tech
+- Organización Kurdish-Tech en Hugging Face: https://huggingface.co/kurdish-tech
 - GitHub de Kurdish-Tech: https://github.com/Kurdish-Tech/
 - Corpus de entrenamiento: https://huggingface.co/datasets/kurdish-tech/KurdishCorpus-clean
 - Lista de recursos kurdo (awesome-kurdish-tech): https://github.com/cikay/awesome-kurdish-tech

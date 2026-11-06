@@ -81,11 +81,11 @@ No hay comparaciones con modelos neuronales publicados en la model card.
 
 | Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yamneg/amharic-ngram-lm | N-gramas (Kneser-Ney) | 1,5 GB de tablas | 3 palabras previas | Other | Pesos y código públicos en HuggingFace y GitHub |
-| Modelos neuronales amáricos (p. ej., fine-tunings de mT5 o AfroXLMR) | Transformer | 300 M–560 M parámetros típicamente | 512 tokens aprox. | Varía (muchas CC-BY o MIT) | Disponibles en HuggingFace, requieren GPU para inferencia cómoda |
+| yamneg/amharic-ngram-lm | N-gramas (Kneser-Ney) | 1,5 GB de tablas | 3 palabras previas | Other | Pesos y código públicos en Hugging Face y GitHub |
+| Modelos neuronales amáricos (p. ej., fine-tunings de mT5 o AfroXLMR) | Transformer | 300 M–560 M parámetros típicamente | 512 tokens aprox. | Varía (muchas CC-BY o MIT) | Disponibles en Hugging Face, requieren GPU para inferencia cómoda |
 | Modelos KenLM equivalentes | N-gramas (KenLM) | Depende del corpus | Ventana de n-gramas | LGPL (KenLM) | Herramienta estándar, requiere construir el modelo a partir del corpus |
 
-No se han identificado en la información proporcionada otros modelos n-gram de amárico publicados en HuggingFace para una comparativa directa de benchmarks.
+No se han identificado en la información proporcionada otros modelos n-gram de amárico publicados en Hugging Face para una comparativa directa de benchmarks.
 
 ## Limitaciones y advertencias
 
@@ -100,6 +100,6 @@ No se han identificado en la información proporcionada otros modelos n-gram de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yamneg/amharic-ngram-lm
+- Modelo en Hugging Face: https://huggingface.co/yamneg/amharic-ngram-lm
 - Código, informe y fuente de la demo: https://github.com/yamneg96/NLP
 - Corpus de entrenamiento (GPAC, Gereme et al., 2021): no incluido en el repositorio; debe obtenerse de sus autores (referencia en la model card)

@@ -84,7 +84,7 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/filip-kowalski/knowledge-distillation-review-2023
+- Repositorio en Hugging Face: https://huggingface.co/filip-kowalski/knowledge-distillation-review-2023
 - Green AI and Carbon-Aware Computing: A Comprehensive Survey of Methods and Applications (menciona pruning, quantización y knowledge distillation como técnicas de compresión): https://www.researchgate.net/publication/403721159_Green_AI_and_Carbon-Aware_Computing_A_Comprehensive_Survey_of_Methods_and_Applications
 - Talking Head Anime 4: Distillation for Real-Time Performance (WACV 2025, caso aplicado de destilación teacher-student): https://www.openaccess.thecvf.com/content/WACV2025/papers/Khungurn_Talking_Head_Anime_4_Distillation_for_Real-Time_Performance_WACV_2025_paper.pdf
 - A Comprehensive Overview and Analysis of Large Language Models (IEEE; referencia a weak-to-strong knowledge distillation): https://ieeexplore.ieee.org/iel8/6287639/6514899/11015742.pdf

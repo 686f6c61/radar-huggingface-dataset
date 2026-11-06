@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex` | 3.501.372.176 | No disponible | No disponible (sin benchmarks publicados) | apache-2.0 | HuggingFace, libreria lerobot |
+| `ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex` | 3.501.372.176 | No disponible | No disponible (sin benchmarks publicados) | apache-2.0 | Hugging Face, libreria lerobot |
 | π₀ base (Physical Intelligence / OpenPI) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado en la model card via OpenPI y el blog de Physical Intelligence |
-| Otras variantes del autor sobre el mismo dataset | No disponible | No disponible | No disponible | No disponible | Repositorio del autor en HuggingFace |
+| Otras variantes del autor sobre el mismo dataset | No disponible | No disponible | No disponible | No disponible | Repositorio del autor en Hugging Face |
 | Otras politicas de LeRobot (por ejemplo ACT, citada en la guia de entrenamiento) | No disponible | No disponible | No disponible | No disponible | Documentacion de LeRobot |
 
 No se dispone de datos verificables de parametros, contexto o rendimiento de las alternativas en la informacion proporcionada; la comparacion cuantitativa queda por tanto pendiente de consultar el paper de π₀ y los repositorios de OpenPI y LeRobot.
@@ -92,7 +92,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-10pct-40ep-convex
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/taewonkoo/office_task_mixed_suboptimal_seed1000_10pct_40ep
 - Blog de π₀ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI (citado en la model card como implementacion abierta de origen): https://github.com/Physical-Intelligence/openpi

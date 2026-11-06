@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-ABLITERATED-NVFP4 es una cuantización NVFP4 del modelo MiniMax-M3.1-Flash, publicada por el usuario lyber-ai en HuggingFace. El modelo base es MiniMax-M3.1-Flash, desarrollado por MiniMaxAI, un modelo de generación de texto con arquitectura de mezcla de expertos (MoE) orientado a razonamiento, generación de código y soporte de tool calling. La variante "abliterated" corresponde a una versión ajustada en la que se han eliminado (abliterado) los mecanismos de rechazo del modelo original, lo que la hace "uncensored", y la cuantización NVFP4 (punto flotante de 4 bits) reduce drásticamente los requisitos de memoria para su despliegue.
+MiniMax-M3.1-Flash-ABLITERATED-NVFP4 es una cuantización NVFP4 del modelo MiniMax-M3.1-Flash, publicada por el usuario lyber-ai en Hugging Face. El modelo base es MiniMax-M3.1-Flash, desarrollado por MiniMaxAI, un modelo de generación de texto con arquitectura de mezcla de expertos (MoE) orientado a razonamiento, generación de código y soporte de tool calling. La variante "abliterated" corresponde a una versión ajustada en la que se han eliminado (abliterado) los mecanismos de rechazo del modelo original, lo que la hace "uncensored", y la cuantización NVFP4 (punto flotante de 4 bits) reduce drásticamente los requisitos de memoria para su despliegue.
 
-Esta ficha es relevante porque combina tres factores de interés para desarrolladores: un modelo MoE de reciente aparición, una cuantización de 4 bits de bajo coste inferencial (NVFP4, con soporte mxfp8 también referenciado en las etiquetas) y una versión sin filtros de seguridad, lo que exige una evaluación cuidadosa antes de cualquier uso en producción. El acceso al repositorio es restringido (gated), por lo que hay que aceptar las condiciones de la licencia minimax-model-license en HuggingFace antes de descargar los pesos.
+Esta ficha es relevante porque combina tres factores de interés para desarrolladores: un modelo MoE de reciente aparición, una cuantización de 4 bits de bajo coste inferencial (NVFP4, con soporte mxfp8 también referenciado en las etiquetas) y una versión sin filtros de seguridad, lo que exige una evaluación cuidadosa antes de cualquier uso en producción. El acceso al repositorio es restringido (gated), por lo que hay que aceptar las condiciones de la licencia minimax-model-license en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Sobre el proceso de entrenamiento del modelo base (número de tokens, composici�
 - Generación de texto en siete idiomas: inglés, chino, español, francés, japonés, coreano y ruso.
 - Razonamiento (tag "reasoning" en el repositorio), con posible modo de razonamiento extendido, aunque no hay documentación específica disponible.
 - Tool calling / function calling, indicado explícitamente en las etiquetas del modelo.
-- Text generation como pipeline principal, compatible con la librería transformers de HuggingFace.
+- Text generation como pipeline principal, compatible con la librería transformers de Hugging Face.
 - Capacidades de código y matemáticas: no disponible en la información proporcionada.
 - Capacidades multimodales (visión, audio): no disponible; el pipeline es de generación de texto.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible con exactitud; al ser una cuantización NVFP4 (4 bits), el consumo aproximado ronda 0,5-0,7 bytes por parámetro, más la memoria para activaciones y KV cache. Sin conocer el número total de parámetros del modelo base, no es posible dar una cifra concreta.
 - GPUs recomendadas: la cuantización NVFP4 está pensada para GPUs con soporte nativo de FP4 (por ejemplo, la familia NVIDIA Blackwell); en hardware sin soporte FP4 puede requerir emulación por software con penalización de rendimiento. No disponible información específica de compatibilidad.
 - Cabe en consumer GPU: no disponible; depende del número total de parámetros del modelo, dato no publicado en el repositorio.
-- Opciones de despliegue: librería transformers de HuggingFace (librería indicada en el repositorio). El soporte en vLLM, llama.cpp, Ollama o TGI para el formato NVFP4 no está confirmado en la información disponible.
+- Opciones de despliegue: librería transformers de Hugging Face (librería indicada en el repositorio). El soporte en vLLM, llama.cpp, Ollama o TGI para el formato NVFP4 no está confirmado en la información disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No hay datos suficientes publicados para comparar rendimiento, tamaño o benchma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lyber-ai/MiniMax-M3.1-Flash-ABLITERATED-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/lyber-ai/MiniMax-M3.1-Flash-ABLITERATED-NVFP4
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Paper, blog oficial, demo y repositorio de código: no disponibles en la información proporcionada.

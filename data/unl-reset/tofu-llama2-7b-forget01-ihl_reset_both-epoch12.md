@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en HuggingFace. No es un modelo de proposito general, sino un artefacto experimental dentro de la linea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark academico para evaluar tecnicas de *machine unlearning*: el modelo parte de `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre el dataset TOFU, y se ha sometido a un proceso de "olvido" selectivo del subconjunto `forget01`.
+`unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12` es un checkpoint de investigacion derivado de Llama 2 de 7B, publicado por el grupo `unl-reset` en Hugging Face. No es un modelo de proposito general, sino un artefacto experimental dentro de la linea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark academico para evaluar tecnicas de *machine unlearning*: el modelo parte de `locuslab/tofu_ft_llama2-7b`, un Llama 2 7B ajustado sobre el dataset TOFU, y se ha sometido a un proceso de "olvido" selectivo del subconjunto `forget01`.
 
 La receta aplicada combina dos tecnicas: por un lado, la reinicializacion de los embeddings de entrada y de la cabeza LM a partir de `NousResearch/Llama-2-7b-chat-hf` (mientras el resto de pesos del transformer se conservan del modelo base ajustado); por otro, un entrenamiento con una perdida que suma un termino IHL (probablemente *Information-Theoretic/Hinge-like Loss*, aunque la model card no lo expande) sobre el conjunto `forget` y un termino de entropia cruzada (CE) con peso 1.0 sobre el conjunto `retain`. El checkpoint corresponde a la epoca 12 de 20 del proceso de olvido.
 
@@ -63,17 +63,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 7-8 GB; en 4 bits, alrededor de 4-5 GB (estimaciones estandar para un modelo de 6,74B, no verificadas por el autor).
 - GPU recomendadas: A100 40GB/80GB, H100 para evaluacion a gran escala; RTX 4090 (24 GB) suficiente en FP16 para contexto moderado; RTX 3090 (24 GB) tambien viable.
 - Cabe en GPU de consumo: si, en RTX 3090/4090 en FP16 y en GPUs de 8-12 GB con cuantizacion de 4-8 bits.
-- Opciones de despliegue: vLLM, HuggingFace Transformers, llama.cpp (previa conversion a GGUF), Ollama (previa conversion), TGI. No hay configuracion de despliegue publicada por el autor.
+- Opciones de despliegue: vLLM, Hugging Face Transformers, llama.cpp (previa conversion a GGUF), Ollama (previa conversion), TGI. No hay configuracion de despliegue publicada por el autor.
 - Latencia y throughput estimados: no disponibles; dependen del hardware y del backend.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12` | 6,74B | no disponible (heredado de Llama 2, ~4K) | Unlearning TOFU, epoca 12/20 | llama2 | HuggingFace (0 descargas) |
-| `locuslab/tofu_ft_llama2-7b` | 6,74B | ~4K | Modelo base ajustado en TOFU, sin olvido | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | ~4K | Chat general en ingles | llama2 | HuggingFace |
-| Llama 2 7B (Meta) | 6,74B | 4096 | Modelo fundacional general | llama2 | HuggingFace, Meta |
+| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12` | 6,74B | no disponible (heredado de Llama 2, ~4K) | Unlearning TOFU, epoca 12/20 | llama2 | Hugging Face (0 descargas) |
+| `locuslab/tofu_ft_llama2-7b` | 6,74B | ~4K | Modelo base ajustado en TOFU, sin olvido | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74B | ~4K | Chat general en ingles | llama2 | Hugging Face |
+| Llama 2 7B (Meta) | 6,74B | 4096 | Modelo fundacional general | llama2 | Hugging Face, Meta |
 
 La comparacion relevante no es de rendimiento bruto sino de comportamiento frente a TOFU: el checkpoint aqui descrito deberia mostrar menor retencion en `forget01` y retencion comparable en `retain` respecto a `locuslab/tofu_ft_llama2-7b`, pero no se dispone de numeros publicados en la informacion proporcionada para cuantificarlo.
 
@@ -90,7 +90,7 @@ La comparacion relevante no es de rendimiento bruto sino de comportamiento frent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch12
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

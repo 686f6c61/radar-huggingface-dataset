@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Albedo SN97 scrub candidate (CXXII router+shared-expert x1) es un checkpoint derivado del modelo dendriteholdings/albedo-qwen3.6-35b-king-CXXII, publicado por el usuario JMaxCool en HuggingFace. Se trata de una variante experimental de la familia Qwen3.6 con arquitectura de mezcla de expertos (MoE), en la que se han eliminado (scrub) 63 de los 1045 tensores originales, concretamente en las capas 13 a 39, con una preferencia por capas tardías. El perfil indicado, "router-shared", sugiere que solo se conservan los tensores correspondientes al gate (mlp.gate) y al experto compartido (mlp.shared_expert), excluyendo los expertos enrutados (mlp.experts). El resultado es un modelo de 35.951.822.704 parámetros totales, con una similitud esperada de 0,939713 respecto al modelo original CXXII.
+Albedo SN97 scrub candidate (CXXII router+shared-expert x1) es un checkpoint derivado del modelo dendriteholdings/albedo-qwen3.6-35b-king-CXXII, publicado por el usuario JMaxCool en Hugging Face. Se trata de una variante experimental de la familia Qwen3.6 con arquitectura de mezcla de expertos (MoE), en la que se han eliminado (scrub) 63 de los 1045 tensores originales, concretamente en las capas 13 a 39, con una preferencia por capas tardías. El perfil indicado, "router-shared", sugiere que solo se conservan los tensores correspondientes al gate (mlp.gate) y al experto compartido (mlp.shared_expert), excluyendo los expertos enrutados (mlp.experts). El resultado es un modelo de 35.951.822.704 parámetros totales, con una similitud esperada de 0,939713 respecto al modelo original CXXII.
 
 Este checkpoint no cuenta con licencia, idiomas declarados, ni documentación sobre capacidades o entrenamiento. Su relevancia radica en ser un experimento de poda selectiva sobre un MoE de gran tamaño, orientado a estudiar el impacto de eliminar componentes específicos en el rendimiento y la huella de memoria. No se han publicado benchmarks ni casos de uso, y el repositorio tiene cero descargas y cero likes, lo que indica un estado muy preliminar.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-router-shared-v1
+- Repositorio Hugging Face: https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-router-shared-v1
 - Modelo relacionado (mismo autor): https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-experts-x1-v3
 - Modelo relacionado (mismo autor): https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxiv-dpo-verified-v1
 - Documentación de Qwen3.6 en GitHub (referencia de la familia): https://github.com/AI-Guru/ai_services/blob/main/models/qwen3.6/README.md

@@ -71,7 +71,7 @@ El nombre del repositorio hace referencia a LIBERO y al paso 6000, pero no se in
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-LIBERO-drift (este) | ≈3,14 B | no disponible | VLA ajustado a LIBERO `libero_goal`, paso 6000 | no disponible | HuggingFace, 14 descargas, sin model card |
+| GR00T-N1.7-LIBERO-drift (este) | ≈3,14 B | no disponible | VLA ajustado a LIBERO `libero_goal`, paso 6000 | no disponible | Hugging Face, 14 descargas, sin model card |
 | OpenVLA | ≈7 B | no disponible en esta comparación | VLA basado en Llama-2 + DINOv2 + SigLIP, ajustado a tareas de manipulación | licencia abierta del proyecto original (verificar) | pesos públicos y ampliamente evaluados |
 | π0 (pi-zero) | ≈3,3 B | no disponible en esta comparación | VLA con experto de acciones por flow matching sobre PaliGemma | no comercial en su publicación original (verificar) | pesos publicados por Physical Intelligence |
 | RDT-1B | ≈1,2 B | no disponible en esta comparación | diffusion transformer para manipulación bimanual | verificar licencia del proyecto | pesos públicos |
@@ -92,6 +92,6 @@ La comparación es cualitativa: no existen métricas publicadas de este checkpoi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-drift-libero_goal-step6000
+- Repositorio en Hugging Face: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-drift-libero_goal-step6000
 - Paper, blog, repositorio de código o demo asociados: no disponibles en la información proporcionada.
 - Nota sobre la búsqueda web: los resultados recuperados (herramientas CDC, asistencia de CANAL+, tarifas de transporte marítimo, mapas de Baidu) no guardan relación con el modelo y no se han utilizado como fuente.

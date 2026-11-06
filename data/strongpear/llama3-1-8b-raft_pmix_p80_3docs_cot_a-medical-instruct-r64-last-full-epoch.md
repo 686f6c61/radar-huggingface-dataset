@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) de la familia Llama-3.1-8B, publicado por el usuario strongpear en HuggingFace. El nombre del repositorio sugiere un fine-tuning orientado al dominio médico, empleando una combinación de técnicas como RAFT (Retrieval Augmented Fine-Tuning), mezcla de prompts (PMIX), uso de tres documentos (3DOCS) y razonamiento en cadena (CoT). Sin embargo, la model card no proporciona ninguna descripción detallada, por lo que la información disponible es muy limitada.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) de la familia Llama-3.1-8B, publicado por el usuario strongpear en Hugging Face. El nombre del repositorio sugiere un fine-tuning orientado al dominio médico, empleando una combinación de técnicas como RAFT (Retrieval Augmented Fine-Tuning), mezcla de prompts (PMIX), uso de tres documentos (3DOCS) y razonamiento en cadena (CoT). Sin embargo, la model card no proporciona ninguna descripción detallada, por lo que la información disponible es muy limitada.
 
-El adaptador tiene un tamaño de 0,7 GB, lo que indica que solo contiene los pesos del adaptador LoRA (con rango r=64) y no los pesos completos del modelo base. Se distribuye en formato safetensors y está diseñado para usarse con la librería PEFT de HuggingFace. Al estar basado en Llama-3.1-8B, hereda su arquitectura transformer de 8 mil millones de parámetros, aunque los detalles específicos del fine-tuning (datos, hiperparámetros, evaluación) no se han documentado.
+El adaptador tiene un tamaño de 0,7 GB, lo que indica que solo contiene los pesos del adaptador LoRA (con rango r=64) y no los pesos completos del modelo base. Se distribuye en formato safetensors y está diseñado para usarse con la librería PEFT de Hugging Face. Al estar basado en Llama-3.1-8B, hereda su arquitectura transformer de 8 mil millones de parámetros, aunque los detalles específicos del fine-tuning (datos, hiperparámetros, evaluación) no se han documentado.
 
 ## Especificaciones tecnicas
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El adaptador LoRA (0,7 GB) requiere cargar el modelo base Llama-3.1-8B, que en precisión fp16 ocupa aproximadamente 16 GB de VRAM.
 - Con cuantización del modelo base (por ejemplo, 4 bits), se puede ejecutar en GPUs de consumo como RTX 3090 o RTX 4090 (24 GB VRAM).
 - Para inferencia sin cuantizar, se recomienda una GPU con al menos 24 GB de VRAM (A100, RTX 4090, etc.).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers + PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers + PEFT.
 - Latencia y throughput: no disponibles, dependen del hardware y la configuración de cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch | 8B + LoRA | 128K | no disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
-| strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch | 8B + LoRA | 128K | no disponible | HuggingFace |
+| strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch | 8B + LoRA | 128K | no disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
+| strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch | 8B + LoRA | 128K | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Llama-3.1-8B-Instruct es la referencia natural, pero no hay métricas que permitan comparar el adaptador con él.
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento comparativo. El modelo base Llama-3.1-8B-I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
+- Modelo en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-MEDICAL-Instruct-r64-last-full-epoch
 - Modelo similar del mismo autor (ámbito legal): https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-last-full-epoch
 - Variante con mejor pérdida de evaluación (ámbito legal): https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
-- Modelo base Llama-3.1-8B en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Modelo base Llama-3.1-8B en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B

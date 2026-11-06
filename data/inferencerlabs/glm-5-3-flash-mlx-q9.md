@@ -84,8 +84,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/GLM-5.3-Flash-MLX-Q9
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/GLM-5.3-Flash-MLX-Q9
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Documentación de EmpirioLabs sobre GLM 5.3 Flash: https://docs.empiriolabs.ai/models/glm-5-3-flash
 - Guía de unsloth para ejecutar GLM-5.3-Flash localmente: https://unsloth.ai/docs/models/glm-5.3
 - Repositorio GitHub de runtime MLX para GLM-5.3-Flash: https://github.com/PipeNetwork/glm53-flash-mlx

@@ -92,7 +92,7 @@ La comparativa se limita a la categoría de detectores de objetos de una etapa o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/YOLO11l_COCO
+- Hugging Face: https://huggingface.co/Blaize-AI/YOLO11l_COCO
 - Modelo original Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO: https://cocodataset.org
 - Blaize: https://www.blaize.com

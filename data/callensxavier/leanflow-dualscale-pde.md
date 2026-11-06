@@ -98,7 +98,7 @@ No se han encontrado datos de otros solvers como Nek5000, Dedalus o FEniCS en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callensxavier/leanflow-dualscale-pde
+- Hugging Face: https://huggingface.co/callensxavier/leanflow-dualscale-pde
 - Repositorio GitHub (reporte científico y código): https://github.com/xaviercallens/SocrateAI-Numeric-DualScale-Solver
 - Conjunto de datos de benchmark: https://huggingface.co/datasets/callensxavier/leanflow-jhtdb-benchmark
 - Paper (arXiv preprint, sin número específico): citado en la model card como `callens2026leanflow`

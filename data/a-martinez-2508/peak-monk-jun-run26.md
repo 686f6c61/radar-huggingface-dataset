@@ -77,9 +77,9 @@ Todas estas son auditorias del mismo autor, no benchmarks publicos independiente
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| peak-monk-jun-run26 (este adaptador) | Adaptador de 142.063.861 bytes sobre Qwen3-4B-Base; actualiza 11.010.048 parametros | No disponible; implementacion limitada a 2.048 tokens de historial y 160 de respuesta | LoRA MLX | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| peak-monk-jun-run26 (este adaptador) | Adaptador de 142.063.861 bytes sobre Qwen3-4B-Base; actualiza 11.010.048 parametros | No disponible; implementacion limitada a 2.048 tokens de historial y 160 de respuesta | LoRA MLX | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | johnlakness/Qwen3-4B-Base-mlx-4Bit (base) | Aproximadamente 4.000 millones | No disponible en la informacion proporcionada | MLX, 4 bits, 2.263.022.529 bytes | No disponible | Modelo base de comunidad, commit fijado |
-| Adaptadores LoRA de personaje genericos sobre bases de 3B a 4B | Tipicamente decenas o centenas de millones de parametros entrenables | Depende del base | PEFT safetensors o GGUF en la mayoria de casos | Variable | Amplia disponibilidad en HuggingFace |
+| Adaptadores LoRA de personaje genericos sobre bases de 3B a 4B | Tipicamente decenas o centenas de millones de parametros entrenables | Depende del base | PEFT safetensors o GGUF en la mayoria de casos | Variable | Amplia disponibilidad en Hugging Face |
 
 La comparacion con alternativas de la misma categoria es limitada: no se dispone de datos de benchmarks publicos, ni de contexto maximo del base, ni de resultados de evaluacion del run26 que permitan un cotejo cuantitativo honesto con otros adaptadores de personaje. La diferencia principal frente a un adaptador PEFT convencional es el formato MLX y la exigencia de un base concreto cuantizado a 4 bits.
 
@@ -100,7 +100,7 @@ La comparacion con alternativas de la misma categoria es limitada: no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/A-Martinez-2508/peak-monk-jun-run26
+- Modelo en Hugging Face: https://huggingface.co/A-Martinez-2508/peak-monk-jun-run26
 - Modelo base: https://huggingface.co/johnlakness/Qwen3-4B-Base-mlx-4Bit
 - Repositorio de investigacion Peak Monk (codigo fuente, capturas crudas de evaluacion y script de restauracion): https://github.com/TheOneWhoBurns/peak-monk
 - Inspiracion original del proyecto (Zero): https://movingcastles.world/posts/zero

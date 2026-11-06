@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/josenavegantesjr/qwen3.5-4b-pdf-especialista-v2
+- Hugging Face del adaptador: https://huggingface.co/josenavegantesjr/qwen3.5-4b-pdf-especialista-v2
 - Modelo base (adaptador previo): https://huggingface.co/josenavegantesjr/qwen3.5-4b-pdf-especialista
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Modelo Qwen3.5-4B (referencia): https://huggingface.co/Qwen/Qwen3.5-4B

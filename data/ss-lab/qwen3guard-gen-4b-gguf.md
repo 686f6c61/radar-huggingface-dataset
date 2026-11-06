@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ss-lab/Qwen3Guard-Gen-4B-GGUF | 4.411.424.256 | no disponible | GGUF | other | HuggingFace (0 descargas) |
-| Qwen/Qwen3Guard-Gen-4B (base) | 4.411.424.256 | no disponible | safetensors | no disponible en la informacion | HuggingFace (modelo oficial) |
+| ss-lab/Qwen3Guard-Gen-4B-GGUF | 4.411.424.256 | no disponible | GGUF | other | Hugging Face (0 descargas) |
+| Qwen/Qwen3Guard-Gen-4B (base) | 4.411.424.256 | no disponible | safetensors | no disponible en la informacion | Hugging Face (modelo oficial) |
 | Alternativas de moderación de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente en la documentación proporcionada para comparar con modelos alternativos de moderación (por ejemplo, clasificadores de seguridad de otras familias) en parámetros, contexto o rendimiento.
@@ -89,6 +89,6 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ss-lab/Qwen3Guard-Gen-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ss-lab/Qwen3Guard-Gen-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3Guard-Gen-4B
 - llama.cpp (herramienta de conversión): no disponible en la información proporcionada (referencia habitual: https://github.com/ggerganov/llama.cpp)

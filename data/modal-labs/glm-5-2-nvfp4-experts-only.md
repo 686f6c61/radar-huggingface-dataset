@@ -78,7 +78,7 @@ La version de Modal Labs se diferencia de la cuantizacion oficial de NVIDIA en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modal-labs/glm-5.2-nvfp4-experts-only
+- Modelo en Hugging Face: https://huggingface.co/modal-labs/glm-5.2-nvfp4-experts-only
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Cuantizacion oficial NVIDIA: https://huggingface.co/nvidia/GLM-5.2-NVFP4
 - Version en ModelScope: https://www.modelscope.cn/models/nv-community/GLM-5.2-NVFP4

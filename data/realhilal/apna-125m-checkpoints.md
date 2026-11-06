@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RealHilal/apna-125m-checkpoints` es un repositorio de HuggingFace publicado por el usuario RealHilal que, a fecha de la información disponible, no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluación. El único dato que sugiere el tamaño del modelo es el propio nombre del repositorio ("125m"), que apunta a un modelo de aproximadamente 125 millones de parámetros, pero no hay confirmación oficial de arquitectura, contexto, tokenizador ni datos de entrenamiento.
+`RealHilal/apna-125m-checkpoints` es un repositorio de Hugging Face publicado por el usuario RealHilal que, a fecha de la información disponible, no incluye model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluación. El único dato que sugiere el tamaño del modelo es el propio nombre del repositorio ("125m"), que apunta a un modelo de aproximadamente 125 millones de parámetros, pero no hay confirmación oficial de arquitectura, contexto, tokenizador ni datos de entrenamiento.
 
 El repositorio ocupa 228,9 GB, un volumen muy superior al que correspondería a un único modelo de 125M en precisión completa (del orden de 0,5 GB en FP32). El sufijo "checkpoints" y ese tamaño sugieren la presencia de múltiples puntos de control de entrenamiento, posibles estados del optimizador o artefactos adicionales, pero el contenido exacto no está documentado en la información proporcionada.
 
@@ -89,13 +89,13 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 - Contexto: desconocido; no se puede planificar su uso en conversaciones multi-turno o documentos largos.
 - Validación comunitaria nula: 0 descargas y 1 like indican que no ha sido probado ni revisado por terceros.
 - Tamaño del repositorio: 228,9 GB complican la descarga y el almacenamiento; conviene inspeccionar la lista de archivos antes de clonar.
-- Sin pipeline declarado: no aparece indexado para inferencia en HuggingFace, lo que dificulta pruebas rápidas desde la interfaz.
+- Sin pipeline declarado: no aparece indexado para inferencia en Hugging Face, lo que dificulta pruebas rápidas desde la interfaz.
 - Fechas de creación y actualización en octubre de 2026: conviene verificar la coherencia temporal de los metadatos antes de asumir que el contenido es estable.
 - Los resultados de la búsqueda web proporcionada no contienen información sobre el modelo; los enlaces encontrados corresponden a la actriz Maika Monroe y no son relevantes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RealHilal/apna-125m-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/RealHilal/apna-125m-checkpoints
 - Archivos del repositorio: https://huggingface.co/RealHilal/apna-125m-checkpoints/tree/main
 - Perfil del autor: https://huggingface.co/RealHilal
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la búsqueda web proporcionada.

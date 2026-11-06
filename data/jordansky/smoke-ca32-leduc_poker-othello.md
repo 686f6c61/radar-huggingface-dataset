@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jordansky/smoke-ca32-leduc_poker-othello es un modelo de texto generado a partir de un fine-tuning del modelo base unsloth/Llama-3.2-3B-Instruct. El nombre del repositorio sugiere que se trata de una prueba de humo (smoke test) para un ajuste fino relacionado con los juegos Leduc Poker y Othello. El modelo fue publicado en HuggingFace por el usuario Jordansky, no tiene descargas ni likes, y su documentacion es practicamente inexistente.
+Jordansky/smoke-ca32-leduc_poker-othello es un modelo de texto generado a partir de un fine-tuning del modelo base unsloth/Llama-3.2-3B-Instruct. El nombre del repositorio sugiere que se trata de una prueba de humo (smoke test) para un ajuste fino relacionado con los juegos Leduc Poker y Othello. El modelo fue publicado en Hugging Face por el usuario Jordansky, no tiene descargas ni likes, y su documentacion es practicamente inexistente.
 
-El modelo base es un transformer decoder-only de 3.000 millones de parametros, con una ventana de contexto de 128.000 tokens segun la especificacion de Llama 3.2. El fine-tuning se ha realizado con la libreria Unsloth, tal y como indican las etiquetas de HuggingFace. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados ni las tecnicas de optimizacion empleadas. Dado el caracter de smoketest, es probable que el objetivo sea validar el pipeline de fine-tuning mas que producir un modelo listo para produccion.
+El modelo base es un transformer decoder-only de 3.000 millones de parametros, con una ventana de contexto de 128.000 tokens segun la especificacion de Llama 3.2. El fine-tuning se ha realizado con la libreria Unsloth, tal y como indican las etiquetas de Hugging Face. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados ni las tecnicas de optimizacion empleadas. Dado el caracter de smoketest, es probable que el objetivo sea validar el pipeline de fine-tuning mas que producir un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo base es un transformer decoder-only de 3.000 millones de parametros, c
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 128.000 tokens (segun modelo base; no confirmado en el fine-tuning) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (segun etiqueta en HuggingFace) |
+| Idiomas soportados | Ingles (segun etiqueta en Hugging Face) |
 | Licencia | Llama 3.2 Community License (segun etiqueta; el campo general indica no disponible) |
 | Formato de pesos | safetensors |
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada para inferencia: aproximadamente 6-8 GB en FP16 para el modelo de 3B, y 2-3 GB con cuantizacion de 4 bits. Estas cifras son estimaciones para el modelo base y pueden variar segun el contexto y la implementacion.
 - GPU recomendadas: RTX 3060 12GB, RTX 4090, A100 40GB o H100 para inferencia con contextos largos. El modelo puede ejecutarse en GPUs de consumo con 8GB de VRAM si se aplica cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama y Hugging Face Text Generation Inference (TGI). El modelo es compatible con el endpoint de HuggingFace segun las etiquetas.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama y Hugging Face Text Generation Inference (TGI). El modelo es compatible con el endpoint de Hugging Face segun las etiquetas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jordansky/smoke-ca32-leduc_poker-othello | 3B | 128k (base, no confirmado) | Llama 3.2 Community License | HuggingFace |
-| unsloth/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| Jordansky/leducpoker-second-smoketest | No disponible | No disponible | No disponible | HuggingFace |
+| Jordansky/smoke-ca32-leduc_poker-othello | 3B | 128k (base, no confirmado) | Llama 3.2 Community License | Hugging Face |
+| unsloth/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| Jordansky/leducpoker-second-smoketest | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar estos modelos. La unica diferencia conocida es el repositorio de origen y el posible dataset de fine-tuning, que no esta documentado.
 

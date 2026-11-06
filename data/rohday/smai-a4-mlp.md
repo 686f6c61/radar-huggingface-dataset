@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4 Q1 es una implementación didáctica de un perceptrón multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicada por el usuario rohday en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal fully-connected de tres capas (3072 entradas, 128 unidades ocultas y 10 salidas) con activación ReLU en la capa oculta y salida lineal de 10 logits optimizada con entropía cruzada softmax. El repositorio tiene un tamaño de 0.0 GB, lo que es coherente con el reducido número de parámetros de la red.
+SMAI A4 Q1 es una implementación didáctica de un perceptrón multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicada por el usuario rohday en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red neuronal fully-connected de tres capas (3072 entradas, 128 unidades ocultas y 10 salidas) con activación ReLU en la capa oculta y salida lineal de 10 logits optimizada con entropía cruzada softmax. El repositorio tiene un tamaño de 0.0 GB, lo que es coherente con el reducido número de parámetros de la red.
 
 El modelo resuelve una tarea clásica de clasificación de imágenes en 10 categorías (CIFAR-10) y su interés es fundamentalmente pedagógico: sirve como referencia de un baseline simple, reproducible y de bajo coste computacional para comparar con arquitecturas convolucionales o transformers de visión. La model card documenta de forma explícita la arquitectura, el preprocesado y los hiperparámetros de entrenamiento, lo que facilita su reproducción.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 Q1 (este modelo) | 394.890 | 32×32×3 = 3072 valores | 0.4725 (test accuracy) | no disponible | HuggingFace (rohday/smai-a4-mlp) |
+| SMAI A4 Q1 (este modelo) | 394.890 | 32×32×3 = 3072 valores | 0.4725 (test accuracy) | no disponible | Hugging Face (rohday/smai-a4-mlp) |
 | LeNet-5 (baseline CNN clásico) | ~60.000 | 32×32×1 o 32×32×3 | ~0.70–0.75 típico en CIFAR-10 | no disponible | Implementaciones múltiples |
 | ResNet-18 | ~11,2 M | 32×32×3 | ~0.93–0.95 típico en CIFAR-10 | no disponible | Implementaciones múltiples |
 | ViT pequeño (p. ej. ViT-Tiny) | ~5,7 M | 32×32×3 con parches | ~0.85–0.90 típico en CIFAR-10 | no disponible | Implementaciones múltiples |
@@ -87,5 +87,5 @@ Nota: los valores de los modelos comparativos son rangos orientativos habituales
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rohday/smai-a4-mlp
+- Hugging Face: https://huggingface.co/rohday/smai-a4-mlp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

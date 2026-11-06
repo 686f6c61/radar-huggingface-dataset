@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Raghav-Singhal/1pp-0.5b-asst-sft)
+- [Modelo en Hugging Face](https://huggingface.co/Raghav-Singhal/1pp-0.5b-asst-sft)
 - [Coleccion 1PP](https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649)
 - [Logs de entrenamiento (wandb 1pp-training)](https://wandb.ai/raghav_singhal/1pp-training)
 - [Logs de SFT (wandb 1pp-sft)](https://wandb.ai/raghav_singhal/1pp-sft)

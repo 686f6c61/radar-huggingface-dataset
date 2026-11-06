@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sriqwen-v1.1 es un ajuste fino (fine-tuning) publicado por el usuario sriq-ai sobre el modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una variante cuantizada a 4 bits de la familia Qwen3.5. El repositorio contiene 27.781.427.952 parámetros en formato safetensors, con un tamano total de 55,6 GB, licencia Apache 2.0 y declaracion de idioma unico: ingles. La pipeline declarada en HuggingFace es `image-text-to-text`, lo que sugiere capacidad multimodal de entrada (imagen + texto), aunque la model card no lo documenta explicitamente.
+sriqwen-v1.1 es un ajuste fino (fine-tuning) publicado por el usuario sriq-ai sobre el modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`, una variante cuantizada a 4 bits de la familia Qwen3.5. El repositorio contiene 27.781.427.952 parámetros en formato safetensors, con un tamano total de 55,6 GB, licencia Apache 2.0 y declaracion de idioma unico: ingles. La pipeline declarada en Hugging Face es `image-text-to-text`, lo que sugiere capacidad multimodal de entrada (imagen + texto), aunque la model card no lo documenta explicitamente.
 
-El modelo no aporta informacion sobre el proceso de entrenamiento: no se especifican tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica referencia tecnica es que el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, con una supuesta ganancia de velocidad de 2x. No hay resultados de benchmarks publicados.
+El modelo no aporta informacion sobre el proceso de entrenamiento: no se especifican tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica referencia tecnica es que el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, con una supuesta ganancia de velocidad de 2x. No hay resultados de benchmarks publicados.
 
 Su relevancia actual es limitada: el modelo acumula 0 descargas y 0 likes, no incluye model card descriptiva y no se ha validado su rendimiento. Debe considerarse un experimento de fine-tuning sin documentar, no un modelo listo para produccion, y su evaluacion requiere una validacion independiente.
 
@@ -37,7 +37,7 @@ Un detalle relevante para la reproducibilidad: el modelo base estaba cuantizado 
 
 - Generacion de texto conversacional, segun el tag `conversational`.
 - Entrada multimodal imagen + texto, inferida del pipeline declarado `image-text-to-text`; no confirmada por el autor.
-- Compatibilidad declarada con text-generation-inference (TGI) y endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference (TGI) y endpoints de Hugging Face.
 - Carga mediante `transformers` y pesos en safetensors.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 28 GB para pesos, lo que exige GPU de 40 GB o superior (A100 40 GB, A6000 48 GB).
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 14-16 GB para pesos, mas cache KV; cabe en RTX 4090, RTX 3090 y L40S (24 GB), ajustando la longitud de contexto.
 - GPU recomendadas: A100 80 GB o H100 80 GB para precision completa; A100 40 GB o A6000 para 8 bits; RTX 4090 / RTX 3090 para 4 bits.
-- Opciones de despliegue: `transformers`, text-generation-inference (TGI), vLLM y endpoints de HuggingFace. Los pesos estan en safetensors, por lo que no hay GGUF listo para llama.cpp u Ollama salvo que se convierta manualmente.
+- Opciones de despliegue: `transformers`, text-generation-inference (TGI), vLLM y endpoints de Hugging Face. Los pesos estan en safetensors, por lo que no hay GGUF listo para llama.cpp u Ollama salvo que se convierta manualmente.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -94,8 +94,8 @@ No disponible. El autor no publica comparativas y no se ha encontrado informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/sriqwen-v1.1
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/sriqwen-v1.1
 - Modelo base: https://huggingface.co/unsloth/qwen3.8-27b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo oficial del modelo: no disponible

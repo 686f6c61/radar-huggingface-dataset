@@ -83,8 +83,8 @@ Gemma 4 31B destaca por su contexto de 256K, superior a los 128K de Llama 3.1 y 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-31B-it
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-31B-it
 - Colección de modelos Gemma 4 de Unsloth: https://huggingface.co/collections/unsloth/gemma-4
 - Guía de Unsloth para ejecutar Gemma 4: https://unsloth.ai/docs/models/gemma-4
 - Blog de lanzamiento de Google DeepMind: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

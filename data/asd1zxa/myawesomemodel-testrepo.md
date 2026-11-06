@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario ASD1ZXA en HuggingFace, etiquetado con las librerías `transformers` y `pytorch`, el pipeline `feature-extraction` y la etiqueta de arquitectura `bert`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", lo que indica que no contiene pesos publicados ni ha sido utilizado por la comunidad. Su licencia declarada es MIT.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario ASD1ZXA en Hugging Face, etiquetado con las librerías `transformers` y `pytorch`, el pipeline `feature-extraction` y la etiqueta de arquitectura `bert`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", lo que indica que no contiene pesos publicados ni ha sido utilizado por la comunidad. Su licencia declarada es MIT.
 
 La model card incluida es una plantilla genérica: describe un modelo llamado "MyAwesomeModel" con mejoras de razonamiento, menciona un modelo "MyAwesomeModel-Small" y una tabla de benchmarks con nombres de modelos genéricos ("Model1", "Model2", "Model1-v2"). No se especifican parametros, longitud de contexto, composición del dataset ni detalles de arquitectura más allá de la etiqueta `bert`. El contenido parece un esqueleto de documentación sin datos reales que lo respalden.
 
@@ -34,7 +34,7 @@ Tampoco se documenta el proceso de entrenamiento: no hay número de tokens, comp
 - La model card afirma mejoras en razonamiento matemático, lógico y de sentido común, pero sin especificar la naturaleza de dichas capacidades ni cómo se evalúan.
 - Se menciona soporte de function calling ("enhanced support for function calling"), sin detallar el formato ni las herramientas compatibles.
 - Se indica compatibilidad con system prompt y con plantillas de prompt para carga de archivos y búsqueda web.
-- El pipeline declarado en HuggingFace es `feature-extraction`, orientado a la extracción de representaciones vectoriales, lo que no coincide con las capacidades generativas descritas en la model card.
+- El pipeline declarado en Hugging Face es `feature-extraction`, orientado a la extracción de representaciones vectoriales, lo que no coincide con las capacidades generativas descritas en la model card.
 - No se documentan capacidades multimodales (visión, audio), de tool calling estructurado, de agentes multi-paso ni multilingües.
 - No hay información sobre modos especiales (thinking mode, decodificación especulativa) más allá de una referencia genérica a "profundidad de razonamiento".
 
@@ -101,7 +101,7 @@ No disponible. La model card no identifica de forma inequivoca la arquitectura, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1ZXA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD1ZXA/MyAwesomeModel-TestRepo
 - Repositorio de codigo mencionado en la model card: no disponible (la card referencia "our code repository" sin URL).
 - Sitio web oficial y API mencionados en la model card: no disponible (sin URL concreta).
 - Paper o documentacion tecnica: no disponible.

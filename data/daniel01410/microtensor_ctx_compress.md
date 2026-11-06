@@ -78,7 +78,7 @@ No disponible. El repositorio es una plantilla de submission para arenas de eval
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Daniel01410/microtensor_ctx_compress
+- Repositorio en Hugging Face: https://huggingface.co/Daniel01410/microtensor_ctx_compress
 - Documentación de evaluación descentralizada: https://www.microtensor.cloud/docs/certified-inference/system/decentralised-evaluation
 - Documentación de perfiles de hardware: https://www.microtensor.cloud/docs/certified-inference/system/hardware-profiles
 - API de definición de arenas: https://api.microtensor.cloud/v2/arenas/<arena>

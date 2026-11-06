@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ppavan2001/smai-assignment-4-q1-mlp | MLP `[3072, 256, 128, 10]` | no disponible | no aplica | no publicado | no disponible | HuggingFace |
+| ppavan2001/smai-assignment-4-q1-mlp | MLP `[3072, 256, 128, 10]` | no disponible | no aplica | no publicado | no disponible | Hugging Face |
 | LeNet-5 (referencia histórica sobre CIFAR-10) | CNN | ~60.000 | no aplica | no disponible en esta ficha | no aplica | Implementaciones múltiples |
 | ResNet-18 sobre CIFAR-10 | CNN residual | ~11,2 M | no aplica | no disponible en esta ficha | no aplica | Implementaciones múltiples |
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparables publicados para este modelo co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppavan2001/smai-assignment-4-q1-mlp
+- Modelo en Hugging Face: https://huggingface.co/ppavan2001/smai-assignment-4-q1-mlp
 - Dataset CIFAR-10 (referencia del preprocesado): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

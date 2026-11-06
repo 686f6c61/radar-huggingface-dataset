@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`enzyme-v007` es un artefacto de recuperación de números EC (Enzyme Commission) para reacciones químicas, publicado por el usuario madhav-ak en HuggingFace. No es un modelo de lenguaje generativo ni un transformer entrenado de forma convencional: es un pipeline de recuperación que combina tres espacios métricos aprendidos para asignar anotaciones EC a reacciones químicas, basándose en un índice de 63.280 reacciones públicas de entrenamiento. El repositorio ocupa 0,6 GB y se distribuye con formato `joblib`, lo que sugiere que contiene pesos serializados y no un checkpoint en safetensors.
+`enzyme-v007` es un artefacto de recuperación de números EC (Enzyme Commission) para reacciones químicas, publicado por el usuario madhav-ak en Hugging Face. No es un modelo de lenguaje generativo ni un transformer entrenado de forma convencional: es un pipeline de recuperación que combina tres espacios métricos aprendidos para asignar anotaciones EC a reacciones químicas, basándose en un índice de 63.280 reacciones públicas de entrenamiento. El repositorio ocupa 0,6 GB y se distribuye con formato `joblib`, lo que sugiere que contiene pesos serializados y no un checkpoint en safetensors.
 
 El sistema parte de tres codificadores químicos (Morgan balanceado, fragmentos diferenciales y topología local/atom-pair) preentrenados de forma supervisada, cuyas cabezas de salida EC se eliminan. Sobre sus características ocultas se proyectan tres vistas complementarias: una proyección contrastiva original (v006), una de vecinos duros con negativos de EC disjuntos, y una adaptada a semántica de reacción mediante RXNFP con adaptación EC3. Cada vista recupera ocho vecinos por coseno y emite votos EC fraccionados normalizados, que se promedian a partes iguales.
 
@@ -69,7 +69,7 @@ El chequeo de desarrollo fijo consta de 3.000 consultas y 53.852 referencias. El
 
 | Modelo | Tipo | Contexto | Métrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzyme-v007 | Recuperación multi-vista EC | 510 tokens de reacción | L4 top-1 0,6107; hit@10 0,869 | no disponible | HuggingFace (0 descargas) |
+| enzyme-v007 | Recuperación multi-vista EC | 510 tokens de reacción | L4 top-1 0,6107; hit@10 0,869 | no disponible | Hugging Face (0 descargas) |
 | enzyme-v006 | Recuperación contrastiva EC | 510 tokens de reacción | L4 top-1 0,5976; hit@10 0,842 | no disponible | Versión previa del mismo autor |
 | CREEP / Horizyn | Checkpoints de referencia citados | no disponible | métricas distintas, documentadas aparte | no disponible | no disponible en la información |
 
@@ -85,11 +85,11 @@ No se dispone de datos suficientes para comparar con alternativas externas de la
 - Licencia no especificada en la información disponible: verificar antes de cualquier uso comercial.
 - El autor declara explícitamente que no reclama haber inventado el aprendizaje contrastivo; la contribución es la combinación evaluada de espacios de recuperación.
 - El archivo `train_files/` es un archivo de referencia que requiere cachés del workspace original y artefactos padre; no es una distribución de reentrenamiento aislada con un solo comando.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: ausencia de validación comunitaria independiente.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: ausencia de validación comunitaria independiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhav-ak/enzyme-v007
+- Hugging Face: https://huggingface.co/madhav-ak/enzyme-v007
 - RXNFP (pretraining externo): https://github.com/rxn4chemistry/rxnfp (commit 6fd48f4927c2178555cc5d71dbfb225fb178f43c, MIT)
 - Vocabulario EC permitido: ExPASy ENZYME / SIB (atribución en `licenses/`)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

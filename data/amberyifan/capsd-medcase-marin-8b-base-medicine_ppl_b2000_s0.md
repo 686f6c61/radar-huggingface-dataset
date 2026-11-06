@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) completo del modelo base `marin-community/marin-8b-base`, especializado en dominios médicos. Ha sido desarrollado por el usuario AmberYifan y publicado en HuggingFace. El entrenamiento se realizó sobre un dataset denominado `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_ppl_b2000_s0`, que contiene aproximadamente 13.092 muestras de casos médicos. La arquitectura subyacente corresponde a un transformer tipo Llama, con un total de 8.030.261.248 parámetros (alrededor de 8B). No se especifica la longitud de contexto, los idiomas soportados ni la licencia exacta (indicada como "other"). La relevancia de este modelo radica en su potencial aplicación en tareas de procesamiento de lenguaje natural clínico, aunque la documentación pública es muy escasa y no se han publicado resultados de evaluación.
+Este modelo es un ajuste fino (fine-tune) completo del modelo base `marin-community/marin-8b-base`, especializado en dominios médicos. Ha sido desarrollado por el usuario AmberYifan y publicado en Hugging Face. El entrenamiento se realizó sobre un dataset denominado `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_ppl_b2000_s0`, que contiene aproximadamente 13.092 muestras de casos médicos. La arquitectura subyacente corresponde a un transformer tipo Llama, con un total de 8.030.261.248 parámetros (alrededor de 8B). No se especifica la longitud de contexto, los idiomas soportados ni la licencia exacta (indicada como "other"). La relevancia de este modelo radica en su potencial aplicación en tareas de procesamiento de lenguaje natural clínico, aunque la documentación pública es muy escasa y no se han publicado resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b2000_s0
+- Página del modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b2000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base

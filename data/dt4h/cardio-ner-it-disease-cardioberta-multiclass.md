@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DT4H/cardio-ner-it-disease-cardioberta-multiclass)
+- [Modelo en Hugging Face](https://huggingface.co/DT4H/cardio-ner-it-disease-cardioberta-multiclass)
 - [Repositorio CardioNER en GitHub](https://github.com/DataTools4Heart/CardioNER)
 - [Organización DataTools4Heart en GitHub](https://github.com/DataTools4Heart/)
 - [Sitio web del proyecto DataTools4Heart](https://www.datatools4heart.eu/)

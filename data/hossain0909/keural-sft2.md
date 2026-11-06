@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-SFT2-14.83B es un modelo de lenguaje bilingüe coreano-inglés de arquitectura Mixture-of-Experts (MoE) entrenado íntegramente desde cero por el usuario de HuggingFace hossain0909, sin partir de ningún modelo base preexistente. Este checkpoint corresponde a la segunda época de fine-tuning supervisado (SFT), a los 29.112 pasos, y continúa el entrenamiento desde el checkpoint de la primera época (18.000 pasos) sobre el mismo dataset de 710.000 muestras en formato ChatML. El modelo resuelve un problema concreto: la escasez de modelos abiertos de tamaño medio optimizados para coreano, un idioma frecuentemente relegado en los modelos multilingües generalistas.
+Keural-SFT2-14.83B es un modelo de lenguaje bilingüe coreano-inglés de arquitectura Mixture-of-Experts (MoE) entrenado íntegramente desde cero por el usuario de Hugging Face hossain0909, sin partir de ningún modelo base preexistente. Este checkpoint corresponde a la segunda época de fine-tuning supervisado (SFT), a los 29.112 pasos, y continúa el entrenamiento desde el checkpoint de la primera época (18.000 pasos) sobre el mismo dataset de 710.000 muestras en formato ChatML. El modelo resuelve un problema concreto: la escasez de modelos abiertos de tamaño medio optimizados para coreano, un idioma frecuentemente relegado en los modelos multilingües generalistas.
 
 La relevancia del proyecto radica en su transparencia: se documenta el pipeline completo de entrenamiento (preentrenamiento en dos etapas con ~63B tokens, SFT en dos épocas y DPO con 440.000 pares de preferencia), así como el hardware empleado (2× NVIDIA H200 SXM). Con 14,83B parámetros totales y ~7,42B activos por token gracias al enrutamiento top-2 sobre 8 expertos, ofrece un equilibrio entre capacidad de cómputo por inferencia y coste. La ventana de contexto es de 4.096 tokens, modesta pero suficiente para conversación y tareas de instrucción cortas.
 
@@ -76,13 +76,13 @@ Keural se diferencia por su foco explícito en coreano y su licencia Apache 2.0 
 - Sesgos: entrenado sobre corpus web coreano e inglés sin documentación de filtrado; puede reproducir sesgos presentes en esos datos.
 - Idiomas limitados a coreano e inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea pobre.
 - Requiere configuración crítica: hay que fijar `eos_token_id=131073` (`<|im_end|>`) y no usar el token 2, o la generación no se detendrá correctamente.
-- Etiquetado con `custom_code` en HuggingFace: revisa el código del repo antes de ejecutarlo.
+- Etiquetado con `custom_code` en Hugging Face: revisa el código del repo antes de ejecutarlo.
 - Proyecto aparentemente individual con pocas descargas (287) y sin comunidad de mantenimiento activo conocida; el soporte a largo plazo es incierto.
 - Licencia Apache 2.0: sin restricciones para uso comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-sft2
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-sft2
 - Modelo base: https://huggingface.co/mkd-hossain/keural-pretrained
 - Dataset SFT: https://huggingface.co/datasets/mkd-chanwoo/keural-SFT
 - Paper, blog, demo o repositorio de código: no disponibles en la información proporcionada.

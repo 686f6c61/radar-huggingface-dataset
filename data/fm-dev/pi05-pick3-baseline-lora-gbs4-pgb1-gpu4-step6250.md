@@ -62,8 +62,8 @@ Solo se puede identificar el modelo base physical-intelligence/pi05_base como re
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_base | no disponible | no disponible | no disponible | no disponible | HuggingFace (physical-intelligence/pi05_base) |
-| pi05-pick3-baseline-lora... | no disponible | no disponible | no disponible | no disponible | HuggingFace (fm-dev/pi05-pick3-baseline-lora...) |
+| pi05_base | no disponible | no disponible | no disponible | no disponible | Hugging Face (physical-intelligence/pi05_base) |
+| pi05-pick3-baseline-lora... | no disponible | no disponible | no disponible | no disponible | Hugging Face (fm-dev/pi05-pick3-baseline-lora...) |
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ Solo se puede identificar el modelo base physical-intelligence/pi05_base como re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-step6250
+- Hugging Face: https://huggingface.co/fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-step6250
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - No se han encontrado enlaces adicionales relevantes en los resultados de búsqueda web.

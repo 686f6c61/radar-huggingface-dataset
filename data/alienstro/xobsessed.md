@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alienstro/xObsessed es un repositorio de modelo alojado en HuggingFace por el usuario Alienstro, publicado el 13 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha no se ha publicado ninguna descripcion tecnica del modelo: la model card contiene unicamente la declaracion de licencia Apache 2.0 y carece de informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
+Alienstro/xObsessed es un repositorio de modelo alojado en Hugging Face por el usuario Alienstro, publicado el 13 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha no se ha publicado ninguna descripcion tecnica del modelo: la model card contiene unicamente la declaracion de licencia Apache 2.0 y carece de informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
 
 El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero valoraciones, lo que indica que se trata de un artefacto sin adopcion publica ni validacion por parte de la comunidad. Tampoco se han encontrado referencias externas al modelo en la busqueda web realizada, cuyos resultados no guardan ninguna relacion con el proyecto.
 
@@ -25,7 +25,7 @@ Por todo ello, esta ficha no puede evaluar el modelo en terminos tecnicos ni rec
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card no menciona si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni incluye detalles sobre atencion, tokenizador o tamano de embedding. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa.
 
-La unica informacion estructurada presente en el repositorio es la cabecera YAML de la model card, que declara `license: apache-2.0`. No hay publicacion asociada, informe tecnico, repositorio de codigo ni configuracion de entrenamiento enlazada desde HuggingFace.
+La unica informacion estructurada presente en el repositorio es la cabecera YAML de la model card, que declara `license: apache-2.0`. No hay publicacion asociada, informe tecnico, repositorio de codigo ni configuracion de entrenamiento enlazada desde Hugging Face.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ La unica informacion estructurada presente en el repositorio es la cabecera YAML
 
 - No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano ni el contexto del modelo.
 - Evaluacion exploratoria: un desarrollador podria clonar el repositorio y cargar los pesos para inspeccionar la configuracion (`config.json`, `tokenizer_config.json`) y determinar que tipo de modelo es antes de plantear cualquier uso.
-- Analisis de artefactos publicados en HuggingFace: el repositorio puede servir como ejemplo de publicacion con model card minima a efectos de estudio del ecosistema, pero no como modelo funcional.
+- Analisis de artefactos publicados en Hugging Face: el repositorio puede servir como ejemplo de publicacion con model card minima a efectos de estudio del ecosistema, pero no como modelo funcional.
 - Cualquier escenario de produccion (atencion al cliente, generacion de codigo, RAG, analisis de documentos, agentes) queda descartado mientras no se documenten especificaciones y se verifique el comportamiento real del modelo.
 - No se debe integrar en pipelines de CI/CD, servicios gestionados ni productos comerciales sin una auditoria previa de pesos, tokenizador y licencia efectiva.
 - Se recomienda tratar este repositorio como no evaluado y, en caso de necesitar una alternativa, acudir a modelos con model card completa y benchmarks publicados.
@@ -75,7 +75,7 @@ No disponible. Al no conocerse el numero de parametros, el contexto, el pipeline
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alienstro/xObsessed
+- Hugging Face: https://huggingface.co/Alienstro/xObsessed
 - Paper: no disponible.
 - Blog o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.

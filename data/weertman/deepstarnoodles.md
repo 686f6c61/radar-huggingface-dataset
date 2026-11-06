@@ -4,7 +4,7 @@
 
 DeepStarNoodles es un modelo de segmentación de imágenes y estimación de pose densa desarrollado por weertman, orientado a la biología marina y específicamente al estudio de la estrella de sol (Pycnopodia helianthoides). El modelo resuelve el problema de rastrear y analizar los brazos de estos equinodermos en imágenes y vídeos, generando polilíneas de los brazos (denominadas "noodles") y permitiendo el seguimiento temporal de los individuos. Su relevancia radica en que la estrella de sol es una especie clave en los ecosistemas marinos del Pacífico, y su monitoreo automatizado puede facilitar estudios de población y comportamiento.
 
-El modelo está implementado en PyTorch y se distribuye bajo licencia MIT, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales. El repositorio tiene un tamaño de 1,1 GB, lo que sugiere un modelo de tamaño moderado, pero no se dispone de detalles sobre la arquitectura exacta, el número de parámetros ni la longitud de contexto, ya que la información pública es limitada. El pipeline declarado es image-segmentation, lo que indica que su salida principal son máscaras o mapas de segmentación, complementados con la estimación de pose densa.
+El modelo está implementado en PyTorch y se distribuye bajo licencia MIT, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales. El repositorio tiene un tamaño de 1,1 GB, lo que sugiere un modelo de tamaño moderado, pero no se dispone de detalles sobre la arquitectura exacta, el número de parámetros ni la longitud de contexto, ya que la información pública es limitada. El pipeline declarado es image-segmentation, lo que indica que su salida principal son máscaras o mapas de segmentación, complementados con la estimación de pose densa.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo está implementado en PyTorch y se distribuye bajo licencia MIT, aunqu
 | Longitud de contexto | no disponible (modelo de vision, no textual) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vision, sin soporte textual) |
-| Licencia | MIT (con acceso restringido en HuggingFace) |
+| Licencia | MIT (con acceso restringido en Hugging Face) |
 | Formato de pesos | no disponible (repositorio de 1,1 GB, probablemente safetensors o binarios de PyTorch) |
 
 ## Arquitectura y entrenamiento
@@ -58,14 +58,14 @@ No se dispone de informacion sobre modelos comparables en el ambito de segmentac
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato en proyectos comerciales o academicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato en proyectos comerciales o academicos.
 - Especializacion estrecha: esta entrenado para una especie concreta (Pycnopodia helianthoides); su rendimiento en otras estrellas de mar o animales marinos probablemente sea deficiente.
 - Falta de documentacion: no se han publicado detalles sobre arquitectura, datos de entrenamiento, metricas de rendimiento ni limitaciones conocidas, lo que dificulta evaluar su robustez.
 - Riesgo de sesgo en datos: al ser un modelo de vision entrenado probablemente con un dataset limitado, puede fallar en condiciones de iluminacion, oclusion o variabilidad morfologica no representadas en el entrenamiento.
-- Licencia MIT: permite uso comercial y modificacion, pero el acceso gated en HuggingFace anade una capa de control que debe respetarse.
+- Licencia MIT: permite uso comercial y modificacion, pero el acceso gated en Hugging Face anade una capa de control que debe respetarse.
 - Sin soporte de idiomas: al ser un modelo de vision, no procesa texto, por lo que no es util para tareas de NLP.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/weertman/deepstarnoodles
+- Repositorio de Hugging Face: https://huggingface.co/weertman/deepstarnoodles
 - Repositorio de GitHub: https://github.com/weertman/DeepStarNoodles

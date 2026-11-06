@@ -66,7 +66,7 @@ No se dispone de datos verificados de este checkpoint ni de las alternativas en 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw20-v1-e30-1000 | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| pi05-libero-main-module-lr-yaw20-v1-e30-1000 | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | π0.5 / openpi | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible |
 | RDT-1B | no disponible | no disponible | no disponible | no disponible |
@@ -84,5 +84,5 @@ No se dispone de datos verificados de este checkpoint ni de las alternativas en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e30-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e30-1000-20261015
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en los resultados de búsqueda disponibles.

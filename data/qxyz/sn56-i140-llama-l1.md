@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`qxyz/sn56-i140-llama-l1` es un adaptador de ajuste fino (LoRA) publicado en HuggingFace por el usuario `qxyz`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión de Llama 3.1 8B Instruct optimizada para entrenamiento por Unsloth. El repositorio pesa 1,4 GB y la librería declarada es `peft`, con `safetensors` como formato de pesos.
+`qxyz/sn56-i140-llama-l1` es un adaptador de ajuste fino (LoRA) publicado en Hugging Face por el usuario `qxyz`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión de Llama 3.1 8B Instruct optimizada para entrenamiento por Unsloth. El repositorio pesa 1,4 GB y la librería declarada es `peft`, con `safetensors` como formato de pesos.
 
-El adaptador se ha entrenado mediante SFT (supervised fine-tuning) usando `trl` y `transformers`, según las etiquetas del repositorio. El identificador `sn56-i140` sugiere un checkpoint asociado a un proceso de entrenamiento iterativo o por subred (el patrón se repite en otros repositorios como `Jetllia/LLama-sn56`), aunque esta interpretación es una inferencia a partir del nombre y no está confirmada en la ficha de HuggingFace. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
+El adaptador se ha entrenado mediante SFT (supervised fine-tuning) usando `trl` y `transformers`, según las etiquetas del repositorio. El identificador `sn56-i140` sugiere un checkpoint asociado a un proceso de entrenamiento iterativo o por subred (el patrón se repite en otros repositorios como `Jetllia/LLama-sn56`), aunque esta interpretación es una inferencia a partir del nombre y no está confirmada en la ficha de Hugging Face. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
 
-La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo típico de adaptador comunitario de bajo coste computacional sobre Llama 3.1 8B, con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin resultados de evaluación publicados. Sirve para documentar el patrón de publicación de adaptadores LoRA en HuggingFace y las precauciones que debe tomar un equipo antes de integrarlos en producción.
+La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo típico de adaptador comunitario de bajo coste computacional sobre Llama 3.1 8B, con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin resultados de evaluación publicados. Sirve para documentar el patrón de publicación de adaptadores LoRA en Hugging Face y las precauciones que debe tomar un equipo antes de integrarlos en producción.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El adaptador añade matrices de bajo rango sobre las capas del modelo base conge
 
 - Prototipado rápido de asistentes conversacionales: al ser un adaptador LoRA sobre un modelo de 8B, puede cargarse sobre el base en una GPU de gama alta de consumo y probarse en entornos de desarrollo con `peft` y `transformers` sin reentrenar el modelo completo.
 - Evaluación de adaptadores comunitarios en pipelines de investigación: útil como caso de estudio para medir el efecto de un SFT no documentado sobre las capacidades originales del modelo base, comparando respuestas antes y después de aplicar el adaptador.
-- Experimentos académicos de ajuste eficiente: sirve como referencia de un flujo de trabajo típico con Unsloth, TRL y PEFT, reproducible por estudiantes que quieran entender el ciclo completo de entrenamiento y publicación en HuggingFace.
+- Experimentos académicos de ajuste eficiente: sirve como referencia de un flujo de trabajo típico con Unsloth, TRL y PEFT, reproducible por estudiantes que quieran entender el ciclo completo de entrenamiento y publicación en Hugging Face.
 - Generación de texto asistida en dominios verticales: si el dataset de SFT estuviera orientado a un nicho concreto, el adaptador podría emplearse para redactar borradores en ese dominio, siempre tras validar la calidad con un conjunto de evaluación propio.
 - Integración como segunda etapa en una cascada de modelos: dado su tamaño, puede desplegarse como modelo de respuesta rápida para consultas simples y derivar las complejas a un modelo mayor, reduciendo el coste por consulta.
 - Análisis comparativo de licencias y gobernanza: este repositorio es un ejemplo práctico de adaptador sin licencia declarada y con acceso restringido, útil para definir políticas internas sobre qué artefactos pueden incorporarse a un producto.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador. Las cifras 
 
 - Ausencia total de documentación: no se especifican dataset, hiperparámetros de entrenamiento, rango de LoRA ni proceso de evaluación.
 - Sin licencia declarada: no puede asumirse que el adaptador herede automáticamente los términos de Llama 3.1 Community License, y su uso comercial queda en un limbo jurídico hasta que el autor lo aclare.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir su integración en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir su integración en pipelines automatizados.
 - Riesgo elevado de alucinación y de degradación de capacidades: un SFT no documentado sobre un modelo alineado puede deteriorar el seguimiento de instrucciones, la seguridad o el soporte de tool calling.
 - Idiomas no declarados: no se puede garantizar el mantenimiento del multilingüismo del modelo base ni del español en particular.
 - Sesgos desconocidos: al no publicarse la composición del dataset, no es posible auditar sesgos de género, raza, religión o ideología.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo para el adaptador. Las cifras 
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/qxyz/sn56-i140-llama-l1
+- Ficha del adaptador en Hugging Face: https://huggingface.co/qxyz/sn56-i140-llama-l1
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio relacionado por patrón de nombre: https://huggingface.co/Jetllia/LLama-sn56
 - Anuncio original de LLaMA por Meta AI: https://ai.meta.com/blog/large-language-model-llama-meta-ai/

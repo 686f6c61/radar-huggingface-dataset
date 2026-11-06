@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samanthaturner9/mocov3-multitask-aug-2024 | 49.600 | no disponible | sin benchmarks publicados | bsd-3-clause | HuggingFace, 0 descargas |
-| archiehill/multitask (prototipo Mocov3 para multitarea) | no disponible | no disponible | sin métricas verificadas declaradas | no disponible | HuggingFace |
+| samanthaturner9/mocov3-multitask-aug-2024 | 49.600 | no disponible | sin benchmarks publicados | bsd-3-clause | Hugging Face, 0 descargas |
+| archiehill/multitask (prototipo Mocov3 para multitarea) | no disponible | no disponible | sin métricas verificadas declaradas | no disponible | Hugging Face |
 | MoCo v3 canónico (método de aprendizaje autosupervisado en visión) | no disponible | no disponible | no disponible | no disponible | publicación académica y repositorios de referencia |
 
 No se dispone de datos suficientes para establecer una comparación cuantitativa fiable entre estos artefactos. Las dos alternativas listadas se incluyen únicamente como referencias del mismo espacio de nombres, no como modelos equivalentes evaluados bajo condiciones homogéneas.
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samanthaturner9/mocov3-multitask-aug-2024
+- Repositorio en Hugging Face: https://huggingface.co/samanthaturner9/mocov3-multitask-aug-2024
 - Repositorio relacionado encontrado en la búsqueda: https://huggingface.co/archiehill/multitask
 - Ficha indexada de un modelo con nombre similar: https://essamamdani.com/ai-models/hf-jerrytran-mocov3-multitask
 - Hugging Face (portal general): https://huggingface.co/

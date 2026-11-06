@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 es un modelo de generacion de texto de 39.087.104 parametros (unos 39 millones) publicado por el usuario francesca9805 en HuggingFace. Es un ajuste fino mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407, y se apoya en una arquitectura de tipo GPT-2. No se trata de un modelo de proposito general ni de un lanzamiento comercial, sino de un artefacto de investigacion con 0 descargas y 0 likes en el momento de redactar esta ficha.
+tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 es un modelo de generacion de texto de 39.087.104 parametros (unos 39 millones) publicado por el usuario francesca9805 en Hugging Face. Es un ajuste fino mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407, y se apoya en una arquitectura de tipo GPT-2. No se trata de un modelo de proposito general ni de un lanzamiento comercial, sino de un artefacto de investigacion con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El nombre del repositorio concentra la informacion disponible sobre el experimento: el prefijo "tur-latn" apunta a un corpus en turco escrito en alfabeto latino, "10mb" a un conjunto de datos de aproximadamente 10 MB, "packed" al empaquetado de secuencias durante el entrenamiento y "ckpt500_seed3407" al punto de control 500 con semilla 3407. La URL de Weights & Biases asociada (f-padovani-university-of-groningen) sugiere que el modelo procede de un experimento academico de la Universidad de Groningen, sin una model card detallada mas alla del procedimiento de entrenamiento.
 
@@ -71,7 +71,7 @@ La comparacion se limita a especificaciones, ya que este modelo no publica bench
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tur-latn-10mb-after-ppt-... (este modelo) | 39,1 M | no disponible | no | no disponible | HuggingFace, 0 descargas |
+| tur-latn-10mb-after-ppt-... (este modelo) | 39,1 M | no disponible | no | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | si (en su model card original) | MIT | ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | si (evaluaciones de destilacion) | Apache-2.0 | ampliamente disponible |
 | SmolLM-135M | 135 M | 2048 tokens | si (evaluaciones publicadas) | Apache-2.0 | ampliamente disponible |
@@ -92,7 +92,7 @@ Este modelo es el mas pequeno de la comparativa y el unico sin datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kojzr5a7

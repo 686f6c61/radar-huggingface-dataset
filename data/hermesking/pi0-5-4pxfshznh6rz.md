@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `HermesKing/pi0.5-4PxfSHznh6rZ` es un checkpoint alojado en HuggingFace cuyo pipeline declarado es `robotics`. Los tags asociados (`robotics`, `vla`, `pi0.5`, `axis`, `jax`, `openpi`) apuntan a un modelo de tipo vision-language-action (VLA), es decir, un modelo que recibe observaciones visuales y de estado del robot junto con instrucciones en lenguaje natural y produce acciones motoras. El sufijo `pi0.5` sugiere relación con la familia pi0/pi0.5 y el tag `openpi` con el stack de inferencia y entrenamiento del mismo nombre, aunque el repositorio no incluye ninguna ficha de modelo que confirme esta filiación.
+El repositorio `HermesKing/pi0.5-4PxfSHznh6rZ` es un checkpoint alojado en Hugging Face cuyo pipeline declarado es `robotics`. Los tags asociados (`robotics`, `vla`, `pi0.5`, `axis`, `jax`, `openpi`) apuntan a un modelo de tipo vision-language-action (VLA), es decir, un modelo que recibe observaciones visuales y de estado del robot junto con instrucciones en lenguaje natural y produce acciones motoras. El sufijo `pi0.5` sugiere relación con la familia pi0/pi0.5 y el tag `openpi` con el stack de inferencia y entrenamiento del mismo nombre, aunque el repositorio no incluye ninguna ficha de modelo que confirme esta filiación.
 
 El repositorio no contiene información publicada sobre autoría real del modelo, número de parámetros, arquitectura interna, datos de entrenamiento ni resultados de evaluación. Los metadatos disponibles se limitan a la fecha de creación y actualización (24 de septiembre de 2026, ambas coincidentes), cero descargas y cero likes, lo que indica que se trata de un artefacto recién subido y sin tracción comunitaria en el momento de la consulta.
 
@@ -21,7 +21,7 @@ Dado que no hay model card, ni paper enlazado, ni ejemplos de uso, esta ficha se
 | Licencia | no disponible; el tag indica `license:other`, sin texto de licencia publicado |
 | Formato de pesos | no disponible (el tag `jax` sugiere pesos en formato JAX/Orbax, sin confirmar) |
 | Pipeline declarado | robotics |
-| Autor en HuggingFace | HermesKing |
+| Autor en Hugging Face | HermesKing |
 | Fecha de creacion | 2026-09-24 |
 | Fecha de actualizacion | 2026-09-24 |
 | Descargas | 0 |
@@ -51,7 +51,7 @@ Tampoco consta el volumen de datos de entrenamiento, la composición del dataset
 - Reproducción de experimentos con JAX: el tag `jax` sugiere que el modelo puede ejecutarse en el stack de JAX, lo que facilita su integración en flujos de investigación que ya usan ese framework en lugar de PyTorch.
 - Evaluación comparativa de políticas robóticas: un laboratorio con acceso a un banco de tareas físico o simulado podría usar el checkpoint como una variante más en una comparativa, previa validación de que los pesos están completos.
 - Fine-tuning con datos propios de robot: si el formato de pesos es compatible con el cargador de openpi, sería posible ajustar el modelo a un embodiment concreto; esto requiere confirmar la licencia, actualmente no publicada.
-- Auditoría de artefactos en HuggingFace: el repositorio, sin model card ni linaje documentado, es un caso de estudio para flujos de verificación de procedencia y seguridad de checkpoints robóticos antes de desplegarlos en hardware físico.
+- Auditoría de artefactos en Hugging Face: el repositorio, sin model card ni linaje documentado, es un caso de estudio para flujos de verificación de procedencia y seguridad de checkpoints robóticos antes de desplegarlos en hardware físico.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HermesKing/pi0.5-4PxfSHznh6rZ | no disponible | no disponible | no disponible | no disponible (tag `license:other`) | publico en HuggingFace, 0 descargas |
+| HermesKing/pi0.5-4PxfSHznh6rZ | no disponible | no disponible | no disponible | no disponible (tag `license:other`) | publico en Hugging Face, 0 descargas |
 | Alternativas de la familia pi0 / pi0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otros VLA abiertos (por ejemplo, variantes tipo OpenVLA) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,6 +90,6 @@ No se dispone de datos verificados sobre modelos comparables en la información 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HermesKing/pi0.5-4PxfSHznh6rZ
+- Repositorio en Hugging Face: https://huggingface.co/HermesKing/pi0.5-4PxfSHznh6rZ
 
 No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos asociados a este checkpoint.

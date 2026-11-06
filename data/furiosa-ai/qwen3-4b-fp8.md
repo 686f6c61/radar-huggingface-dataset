@@ -81,7 +81,7 @@ Nota: los datos de contexto de Llama-3.2-3B provienen de documentacion publica y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-4B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-4B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-FP8
 - Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guia de Qwen3 denso en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3.html

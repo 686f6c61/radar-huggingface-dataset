@@ -117,7 +117,7 @@ Qwen2-57B-A14B destaca en tareas de codigo (HumanEval 53.0, MBPP 71.9) y en tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2-57B-A14B
+- Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2-57B-A14B
 - Blog oficial Qwen2: https://qwenlm.github.io/blog/qwen2/
 - GitHub Qwen2: https://github.com/QwenLM/Qwen2
 - Documentacion Qwen: https://qwen.readthedocs.io/en/latest/

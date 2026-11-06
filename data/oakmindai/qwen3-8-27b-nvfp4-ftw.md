@@ -86,7 +86,7 @@ No se dispone de datos comparables en la informacion proporcionada. El modelo ba
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oakmindai/Qwen3.8-27B-NVFP4-FTW
+- Hugging Face: https://huggingface.co/oakmindai/Qwen3.8-27B-NVFP4-FTW
 - Modelo base cuantizado: https://huggingface.co/Inferact/Qwen3.8-27B-NVFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio SparkLab: https://github.com/sixteen-miles-labs/sparklab

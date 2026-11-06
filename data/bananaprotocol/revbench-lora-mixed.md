@@ -73,10 +73,10 @@ Como referencia externa citada en la model card, LLM4Decompile alcanza un 36,71 
 
 | Modelo | Parametros | Contexto | Pass@1 | Tasa de compilacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| revbench-lora-mixed (este adaptador) | 7B base + LoRA r=64 (2,3 % entrenado) | 2.048 tokens en entrenamiento | 28,08 % | 64,50 % | Llama 2 Community License | HuggingFace, 0,6 GB |
-| revbench-lora-r64-a64 (adaptador general) | 7B base + LoRA r=64 | 2.048 tokens en entrenamiento | 23,95 % | 84,33 % | Llama 2 Community License | HuggingFace |
-| CodeLlama-7b-Instruct (linea base) | 7B | no disponible en la informacion proporcionada | 15,50 % | 18,94 % | Llama 2 Community License | HuggingFace |
-| LLM4Decompile | 6,7B | no disponible en la informacion proporcionada | 36,71 % | no disponible | no disponible en la informacion proporcionada | GitHub / HuggingFace |
+| revbench-lora-mixed (este adaptador) | 7B base + LoRA r=64 (2,3 % entrenado) | 2.048 tokens en entrenamiento | 28,08 % | 64,50 % | Llama 2 Community License | Hugging Face, 0,6 GB |
+| revbench-lora-r64-a64 (adaptador general) | 7B base + LoRA r=64 | 2.048 tokens en entrenamiento | 23,95 % | 84,33 % | Llama 2 Community License | Hugging Face |
+| CodeLlama-7b-Instruct (linea base) | 7B | no disponible en la informacion proporcionada | 15,50 % | 18,94 % | Llama 2 Community License | Hugging Face |
+| LLM4Decompile | 6,7B | no disponible en la informacion proporcionada | 36,71 % | no disponible | no disponible en la informacion proporcionada | GitHub / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Como referencia externa citada en la model card, LLM4Decompile alcanza un 36,71 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bananaprotocol/revbench-lora-mixed
+- Modelo en Hugging Face: https://huggingface.co/bananaprotocol/revbench-lora-mixed
 - Adaptador general: https://huggingface.co/bananaprotocol/revbench-lora-r64-a64
 - Codigo y memoria de la tesis (RevBench): https://github.com/bananaprotocol/RevBench
 - Ghidra: https://ghidra-sre.org/

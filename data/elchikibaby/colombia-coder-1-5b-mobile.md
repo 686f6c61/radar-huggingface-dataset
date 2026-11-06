@@ -2,7 +2,7 @@
 
 ## Resumen
 
-colombia-coder-1.5b-mobile es un modelo de lenguaje conversacional publicado por el usuario Elchikibaby en HuggingFace. Se trata de un fine-tuning del modelo base Qwen2.5-Coder-1.5B-Instruct (identificable por el nombre del archivo de pesos incluido) convertido a formato GGUF mediante Unsloth, y orientado segun su nombre a tareas de generacion de codigo y a su despliegue en dispositivos moviles o entornos con recursos limitados.
+colombia-coder-1.5b-mobile es un modelo de lenguaje conversacional publicado por el usuario Elchikibaby en Hugging Face. Se trata de un fine-tuning del modelo base Qwen2.5-Coder-1.5B-Instruct (identificable por el nombre del archivo de pesos incluido) convertido a formato GGUF mediante Unsloth, y orientado segun su nombre a tareas de generacion de codigo y a su despliegue en dispositivos moviles o entornos con recursos limitados.
 
 El repositorio contiene 1.543.714.304 parametros totales (aproximadamente 1,54 mil millones) en un unico archivo cuantizado Q3_K_M, con un tamano de repo de 0,8 GB. La arquitectura subyacente es la de la familia Qwen2, un transformer decoder-only con atencion causal, aunque la model card no detalla ni la composicion del dataset de fine-tuning ni el proceso de entrenamiento mas alla de la mencion a Unsloth.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| colombia-coder-1.5b-mobile | ~1,54 B | no disponible | no disponible | GGUF Q3_K_M en HuggingFace | Fine-tuning sin benchmarks publicados |
+| colombia-coder-1.5b-mobile | ~1,54 B | no disponible | no disponible | GGUF Q3_K_M en Hugging Face | Fine-tuning sin benchmarks publicados |
 | Qwen2.5-Coder-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 (segun el modelo base) | safetensors y GGUF | Modelo base, con evaluaciones publicadas por el autor original |
 | Qwen2.5-Coder-0.5B-Instruct | ~0,49 B | 32.768 tokens | Apache 2.0 (segun el modelo base) | safetensors y GGUF | Alternativa mas ligera para movil |
 | Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF | Alternativa generalista de tamano similar |
@@ -85,7 +85,7 @@ La comparacion cuantitativa de rendimiento no es posible: este repositorio no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elchikibaby/colombia-coder-1.5b-mobile
+- Modelo en Hugging Face: https://huggingface.co/Elchikibaby/colombia-coder-1.5b-mobile
 - Unsloth (libreria usada para el fine-tuning y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF recomendado): https://github.com/ggml-org/llama.cpp
 - Modelo base de referencia Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

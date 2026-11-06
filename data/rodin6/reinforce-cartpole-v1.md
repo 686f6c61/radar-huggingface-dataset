@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rodin6/Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1 de Gym/Gymnasium. No es un modelo de lenguaje ni un modelo generativo: se trata de una politica (policy) entrenada con el algoritmo REINFORCE, un metodo de gradiente de politica Monte Carlo, y publicada en HuggingFace Hub bajo la etiqueta pipeline `reinforcement-learning`. El autor lo declara como una implementacion propia (`custom-implementation`) realizada en el contexto del Deep Reinforcement Learning Course.
+Rodin6/Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno CartPole-v1 de Gym/Gymnasium. No es un modelo de lenguaje ni un modelo generativo: se trata de una politica (policy) entrenada con el algoritmo REINFORCE, un metodo de gradiente de politica Monte Carlo, y publicada en Hugging Face Hub bajo la etiqueta pipeline `reinforcement-learning`. El autor lo declara como una implementacion propia (`custom-implementation`) realizada en el contexto del Deep Reinforcement Learning Course.
 
 El artefacto resuelve un problema de control clasico: mantener el equilibrio de un poste articulado sobre un carro aplicando empujes discretos a izquierda o derecha en cada paso de tiempo. Su relevancia es fundamentalmente didactica y de verificacion: sirve como ejemplo reproducible de un pipeline completo de RL (entorno, recoleccion de episodios, calculo de retornos descontados, actualizacion de gradiente de politica y evaluacion), y como referencia de comparacion para otras implementaciones de politica sobre el mismo entorno.
 
@@ -65,7 +65,7 @@ La model card no especifica el numero de capas ni de unidades de la red, la tasa
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card (no verificados por HuggingFace, `verified: false`):
+Resultados declarados por el autor en el model-index de la model card (no verificados por Hugging Face, `verified: false`):
 
 | Tarea | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -83,7 +83,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Comparativa con modelos similares
 
-La categoria comparable es la de agentes de politica entrenados sobre CartPole-v1 y publicados en HuggingFace Hub, tipicamente implementaciones de PPO, DQN, A2C o REINFORCE procedentes de cursos, librerias de RL o repositorios de investigacion. La busqueda web realizada no ha devuelto informacion util sobre ninguno de ellos, por lo que no es posible rellenar una comparativa con datos verificados.
+La categoria comparable es la de agentes de politica entrenados sobre CartPole-v1 y publicados en Hugging Face Hub, tipicamente implementaciones de PPO, DQN, A2C o REINFORCE procedentes de cursos, librerias de RL o repositorios de investigacion. La busqueda web realizada no ha devuelto informacion util sobre ninguno de ellos, por lo que no es posible rellenar una comparativa con datos verificados.
 
 | Modelo | Algoritmo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
@@ -105,7 +105,7 @@ La categoria comparable es la de agentes de politica entrenados sobre CartPole-v
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Rodin6/Reinforce-CartPole-v1
+- Modelo en Hugging Face Hub: https://huggingface.co/Rodin6/Reinforce-CartPole-v1
 - Curso de referencia citado en la model card (Unit 4, Deep Reinforcement Learning Course): https://huggingface.co/deep-rl-course/unit4/introduction
 - Documentacion del entorno CartPole-v1 en Gymnasium: https://gymnasium.farama.org/environments/classic_control/cart_pole/
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las paginas devueltas por la busqueda no guardan relacion con el artefacto ni con aprendizaje por refuerzo.

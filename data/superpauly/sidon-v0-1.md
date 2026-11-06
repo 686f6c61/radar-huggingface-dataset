@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sidon-v0.1 es un modelo publicado en HuggingFace por el usuario SuperPauly, derivado mediante fine-tuning del modelo base facebook/w2v-bert-2.0, un encoder de voz basado en arquitectura Wav2Vec-BERT desarrollado originalmente por Meta AI. El modelo se distribuye bajo licencia MIT y su repositorio ocupa aproximadamente 2,0 GB, lo que es coherente con un modelo de tamaño medio orientado a tareas de procesamiento de habla. La model card es extremadamente escasa: unicamente incluye la licencia, los datasets declarados, el modelo base y una lista de colaboradores (Wataru Nakata y Yuki Saito), sin descripcion funcional, sin especificaciones tecnicas y sin resultados de evaluacion.
+Sidon-v0.1 es un modelo publicado en Hugging Face por el usuario SuperPauly, derivado mediante fine-tuning del modelo base facebook/w2v-bert-2.0, un encoder de voz basado en arquitectura Wav2Vec-BERT desarrollado originalmente por Meta AI. El modelo se distribuye bajo licencia MIT y su repositorio ocupa aproximadamente 2,0 GB, lo que es coherente con un modelo de tamaño medio orientado a tareas de procesamiento de habla. La model card es extremadamente escasa: unicamente incluye la licencia, los datasets declarados, el modelo base y una lista de colaboradores (Wataru Nakata y Yuki Saito), sin descripcion funcional, sin especificaciones tecnicas y sin resultados de evaluacion.
 
 Los datasets declarados en la model card son google/fleurs-r y parler-tts/libritts_r_filtered, ambos corpus de habla. FLEURS-R es una version reconstruida del benchmark FLEURS de reconocimiento de habla multilingue, y LibriTTS-R es un corpus de habla en ingles derivado de LibriTTS con mejora de calidad de audio. Esta combinacion sugiere que el modelo se ha entrenado o ajustado para tareas relacionadas con el habla, posiblemente reconocimiento automatico del habla (ASR) o síntesis de voz (TTS), aunque la model card no lo especifica. La mencion a "project gamma" del National Institute of Advanced Industrial Science and Technology (AIST) de Japon en los agradecimientos apunta a un contexto de investigacion academica japonesa en tecnologias de voz.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuperPauly/sidon-v0.1 | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| facebook/w2v-bert-2.0 | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
+| SuperPauly/sidon-v0.1 | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| facebook/w2v-bert-2.0 | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
 | Alternativas de la categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa rigurosa con modelos alternativos de la misma categoria.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SuperPauly/sidon-v0.1
+- Hugging Face: https://huggingface.co/SuperPauly/sidon-v0.1
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - Dataset FLEURS-R: https://huggingface.co/datasets/google/fleurs-r
 - Dataset LibriTTS-R filtrado: https://huggingface.co/datasets/parler-tts/libritts_r_filtered

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `prirodr0119/course-video-understanding` no es un modelo de IA entrenado ni un checkpoint listo para inferencia, sino una nota de investigación (research note) sobre comprensión de vídeo publicada en HuggingFace bajo licencia CC-BY-4.0. La model card lo declara explícitamente: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como una release de modelos entrenados.
+El repositorio `prirodr0119/course-video-understanding` no es un modelo de IA entrenado ni un checkpoint listo para inferencia, sino una nota de investigación (research note) sobre comprensión de vídeo publicada en Hugging Face bajo licencia CC-BY-4.0. La model card lo declara explícitamente: organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como una release de modelos entrenados.
 
 El repositorio incluye un artefacto en formato `safetensors` con 24.832 parámetros totales, una cifra que corresponde a un tensor de tamaño trivial (decenas de kilobytes) y no a un modelo funcional. El tamaño total del repo es de 0.0 GB. No se documentan arquitectura concreta, datos de entrenamiento, tokenizador, pipeline ni idiomas soportados.
 
@@ -42,7 +42,7 @@ Tampoco hay datos de entrenamiento: no se indica número de tokens, composición
 - Planificación de evaluaciones sobre MSR-VTT y ActivityNet Captions: la nota menciona estos conjuntos como contexto de evaluación propuesto, útil para diseñar protocolos de comparación con baselines emparejados.
 - Reproducibilidad y registro de fallos: sirve como referencia para exigir versiones de dataset, comandos, semillas, hardware y logs en crudo antes de publicar resultados.
 - Docencia y formación: puede emplearse como ejemplo de nota de investigación exploratoria frente a una model card de modelo desplegable, para ilustrar la diferencia entre hipótesis y resultado.
-- Auditoría de repositorios de HuggingFace: útil como caso de estudio de repositorios con tags de modelo (`transformer`, `safetensors`) que en realidad no contienen un modelo funcional.
+- Auditoría de repositorios de Hugging Face: útil como caso de estudio de repositorios con tags de modelo (`transformer`, `safetensors`) que en realidad no contienen un modelo funcional.
 - No es adecuado para generación de texto, atención al cliente, generación de código, RAG, agentes, visión por computador ni ninguna tarea de inferencia en producción.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prirodr0119/course-video-understanding
+- Hugging Face: https://huggingface.co/prirodr0119/course-video-understanding
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

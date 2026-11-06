@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher-406m-v15 es un modelo de generacion de texto de aproximadamente 407 millones de parametros, desarrollado por el usuario bcckfdn y publicado en HuggingFace bajo el identificador bcckfdn/cevher-test-9-GGUF. Se trata de la version cuantizada en formato GGUF del modelo base bcckfdn/cevher-test-9, entrenado desde cero siguiendo el diseno de arquitectura de SmolLM2 (familia Llama). La model card indica que el entrenamiento se realizo con 29491 millones de tokens y una configuracion de 34 capas y dimension oculta de 1024.
+cevher-406m-v15 es un modelo de generacion de texto de aproximadamente 407 millones de parametros, desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo el identificador bcckfdn/cevher-test-9-GGUF. Se trata de la version cuantizada en formato GGUF del modelo base bcckfdn/cevher-test-9, entrenado desde cero siguiendo el diseno de arquitectura de SmolLM2 (familia Llama). La model card indica que el entrenamiento se realizo con 29491 millones de tokens y una configuracion de 34 capas y dimension oculta de 1024.
 
 El modelo esta orientado a generacion de texto conversacional en turco e ingles, y su interes practico radica en su tamano reducido: al ocupar entre 245 MB y 778 MB segun cuantizacion, puede ejecutarse en CPU, portatiles o GPUs de gama baja sin necesidad de infraestructura dedicada. Esto lo situa en la categoria de modelos pequenos para edge computing, prototipado rapido y tareas de generacion en idioma turco, un nicho con menos opciones que el ingles.
 
@@ -69,7 +69,7 @@ llama-cli -m cevher-406m-v15-Q4_K_M.gguf -p "Merhaba" -cnv
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cevher-406m-v15 (este) | 407 M | no disponible | tr, en | apache-2.0 | GGUF en HuggingFace |
+| cevher-406m-v15 (este) | 407 M | no disponible | tr, en | apache-2.0 | GGUF en Hugging Face |
 | SmolLM2-360M (HuggingFaceTB) | 362 M | 8192 tokens (segun su model card) | en (principalmente) | apache-2.0 | safetensors y GGUF |
 | Qwen2.5-0.5B | 494 M | 32768 tokens | multilingue | apache-2.0 | safetensors y GGUF |
 | TinyLlama-1.1B | 1,1 B | 2048 tokens | en (principalmente) | apache-2.0 | safetensors y GGUF |
@@ -91,7 +91,7 @@ Nota: los datos de contexto y parametros de los modelos comparados corresponden 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/bcckfdn/cevher-test-9-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/bcckfdn/cevher-test-9-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-9
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - llama.cpp (repositorio oficial): https://github.com/ggml-org/llama.cpp

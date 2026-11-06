@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Weight-Space-Programming es un artefacto de investigación publicado por Cribl AI Research Lab (cuenta `cribl-ai`) en HuggingFace, no un modelo generativo al uso. Contiene el material experimental de un estudio sobre interpretabilidad y auditoría de modelos en el espacio de pesos: se evalúa si un LLM frontera (denominado "GPT-6 Astra" en la model card) puede leer y reparar directamente los pesos de un modelo de producción, `cribl-decision-2-mini`, un fine-tune de Qwen3.5-0.8B que responde preguntas de opción múltiple sobre TI y seguridad.
+Weight-Space-Programming es un artefacto de investigación publicado por Cribl AI Research Lab (cuenta `cribl-ai`) en Hugging Face, no un modelo generativo al uso. Contiene el material experimental de un estudio sobre interpretabilidad y auditoría de modelos en el espacio de pesos: se evalúa si un LLM frontera (denominado "GPT-6 Astra" en la model card) puede leer y reparar directamente los pesos de un modelo de producción, `cribl-decision-2-mini`, un fine-tune de Qwen3.5-0.8B que responde preguntas de opción múltiple sobre TI y seguridad.
 
 El trabajo replica sobre un modelo real una idea previa demostrada solo en redes pequeñas y purpose-trained: que un LLM puede inspeccionar matrices de pesos mediante álgebra lineal y razonar sobre su estructura. Los resultados son matizados: Astra identifica correctamente la mecánica (formato de tarea, rango exacto de una LoRA, capas modificadas) pero no la semántica (dominio de seguridad, datos de entrenamiento, categorías débiles), y repara sabotajes plantados con una tasa de recuperación del 100% y 94% en dos experimentos ciegos.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo / artefacto | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Weight-Space-Programming (este repo) | No aplica | No disponible | Estudio de interpretabilidad y auditoría de pesos | Apache 2.0 | HuggingFace, material de estudio |
-| cribl-decision-2-mini | 0,8B | No disponible | Scorer de opcion multiple TI/seguridad | No disponible | HuggingFace, fine-tune de Qwen3.5-0.8B |
+| Weight-Space-Programming (este repo) | No aplica | No disponible | Estudio de interpretabilidad y auditoría de pesos | Apache 2.0 | Hugging Face, material de estudio |
+| cribl-decision-2-mini | 0,8B | No disponible | Scorer de opcion multiple TI/seguridad | No disponible | Hugging Face, fine-tune de Qwen3.5-0.8B |
 | Estudio previo de weight-space programming (blog rikiyat) | No disponible | No disponible | Lectura/escritura de pesos en redes pequenas purpose-trained | No disponible | Blog publico |
 
 No se dispone de modelos comparables directos en la misma categoria (artefactos de investigacion sobre edicion de pesos) en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de modelos comparables directos en la misma categoria (artefactos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cribl-ai/Weight-Space-Programming
+- Repositorio en Hugging Face: https://huggingface.co/cribl-ai/Weight-Space-Programming
 - Modelo auditado: https://huggingface.co/cribl-ai/cribl-decision-2-mini
 - Estudio previo de referencia: https://rikiyat.github.io/blog/weight-space-programming/
 - Cribl AI Research Lab: https://cribl.io (organización, sin enlace directo confirmado en la información)

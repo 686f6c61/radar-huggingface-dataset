@@ -67,7 +67,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-168b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-168b
 - Documentación de OLMo2 en Transformers: https://huggingface.co/docs/transformers/model_doc/olmo2
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Paper técnico de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656

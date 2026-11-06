@@ -85,7 +85,7 @@ Nota: los datos de Qwen2.5-1.5B, Llama 3.2 1B y Gemma 2 2B corresponden a especi
 - Alcance funcional: no se confirma soporte de tool calling, function calling ni razonamiento multi-paso, capacidades poco habituales en modelos de este tamano y no declaradas en los tags.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia, siempre que se cumplan las condiciones del modelo base guiiwfz/logi-1.5b. Conviene verificar la licencia del modelo base por si impone condiciones adicionales.
 - Madurez del proyecto: 0 descargas y 0 likes, sin issues ni discusiones publicas. No existe evidencia de uso en produccion ni de validacion independiente.
-- Incoherencia en las fechas: el repositorio figura creado el 11 de septiembre de 2026, fecha posterior a la actual, lo que probablemente refleja un error de metadatos en HuggingFace y conviene tener en cuenta al citarlo.
+- Incoherencia en las fechas: el repositorio figura creado el 11 de septiembre de 2026, fecha posterior a la actual, lo que probablemente refleja un error de metadatos en Hugging Face y conviene tener en cuenta al citarlo.
 - Cuantizaciones ponderadas no disponibles: el autor indica que no ha publicado cuantizaciones ponderadas ni con matriz de importancia, y sugiere solicitarlas en un hilo de discusion si se necesitan.
 
 ## Enlaces

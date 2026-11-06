@@ -27,7 +27,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composic
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline indicado en HuggingFace es "conversational".
+- Generación de texto conversacional: el pipeline indicado en Hugging Face es "conversational".
 - Comprensión de imágenes: el autor del repositorio indica que es un vision model, con archivos mmproj (proyector multimodal para llama.cpp) en el repositorio de cuantizaciones estáticas. El alcance real de esta capacidad no está documentado.
 - Ejecución local eficiente: gracias a las 23 variantes de cuantización imatrix, puede funcionar en hardware muy variado, desde portátiles con 8 GB de RAM hasta estaciones con 32 GB de VRAM.
 - No hay información sobre soporte de tool calling, function calling, capacidades de agente, razonamiento multi-paso ni modo de pensamiento extendido.

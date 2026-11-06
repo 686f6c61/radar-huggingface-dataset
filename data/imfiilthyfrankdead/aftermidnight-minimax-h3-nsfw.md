@@ -92,5 +92,5 @@ No se dispone de información sobre modelos comparables. La categoría de este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Imfiilthyfrankdead/AfterMidnight-MiniMax-H3-NSFW
+- Modelo en Hugging Face: https://huggingface.co/Imfiilthyfrankdead/AfterMidnight-MiniMax-H3-NSFW
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

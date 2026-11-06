@@ -74,9 +74,9 @@ No se dispone de datos comparativos publicados entre Qolda-AVL-5B y otros modelo
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/issai/Qolda-AVL-5B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/issai/Qolda-AVL-5B
-- Colección Qolda-AVL en HuggingFace: https://huggingface.co/collections/issai/qolda-avl
+- Modelo GGUF en Hugging Face: https://huggingface.co/issai/Qolda-AVL-5B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/issai/Qolda-AVL-5B
+- Colección Qolda-AVL en Hugging Face: https://huggingface.co/collections/issai/qolda-avl
 - Modelo en ModelScope: https://www.modelscope.cn/models/issai/Qolda-AVL-5B
 - Página oficial de ISSAI sobre Qolda: https://issai.nu.edu.kz/qolda/
 - Repositorio de entrenamiento (ms-swift-Qolda-AVL): https://github.com/IS2AI/ms-swift-Qolda-AVL

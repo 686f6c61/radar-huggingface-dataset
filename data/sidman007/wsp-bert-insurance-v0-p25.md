@@ -94,7 +94,7 @@ La comparación relevante no es de rendimiento (no hay datos cruzados) sino de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p25
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v0-p25
 - Repositorio del proyecto (código, logs y protocolo): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
-- Manifiesto de edición: `edit_manifest.json` dentro del repositorio de HuggingFace del modelo
+- Manifiesto de edición: `edit_manifest.json` dentro del repositorio de Hugging Face del modelo

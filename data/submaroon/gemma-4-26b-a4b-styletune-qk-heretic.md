@@ -126,7 +126,7 @@ Frente a alternativas de la misma clase de tamaño en el ecosistema abierto, no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Gemma-4-26B-A4B-StyleTune-QK-Heretic
 - Modelo base 1 (cuerpo abliterado): https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Modelo base 2 (cabeza de estilo): https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2
 - Modelo base 3 (donante QK): https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2

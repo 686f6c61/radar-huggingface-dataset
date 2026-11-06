@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparativos son de conocimiento general, no de l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Islamamro/sst5-sentiment-aurora-islamamro)
+- [Modelo en Hugging Face](https://huggingface.co/Islamamro/sst5-sentiment-aurora-islamamro)
 - [Dataset SetFit/sst5](https://huggingface.co/datasets/SetFit/sst5)
 - [Perfil de GitHub del autor](https://github.com/islamamro)
 - [Repositorio de ejemplo con LSTM para SST-5](https://github.com/doslim/Sentiment-Analysis-SST5)

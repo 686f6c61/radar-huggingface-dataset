@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Akashbanerjee, no contiene un modelo de IA propiamente dicho, sino un documento académico en formato Markdown titulado `paper_011853552_zero_shot_transfer.md`. El contenido es un artículo sobre transferencia de aprendizaje en escenarios de zero-shot transfer, redactado con un estilo riguroso y teórico, con estructura intro-related-method-exp-conclusion, citas en formato APA numérico y marcado Markdown avanzado.
+Este repositorio de Hugging Face, publicado por el usuario Akashbanerjee, no contiene un modelo de IA propiamente dicho, sino un documento académico en formato Markdown titulado `paper_011853552_zero_shot_transfer.md`. El contenido es un artículo sobre transferencia de aprendizaje en escenarios de zero-shot transfer, redactado con un estilo riguroso y teórico, con estructura intro-related-method-exp-conclusion, citas en formato APA numérico y marcado Markdown avanzado.
 
 No se trata de un modelo entrenado, sino de un artefacto textual que documenta una investigación. No dispone de pesos, arquitectura, parámetros ni capacidades de inferencia. Su relevancia para desarrolladores e investigadores es únicamente como material de lectura y referencia académica sobre la técnica de transferencia zero-shot.
 
@@ -68,7 +68,7 @@ No disponible. No existe una categoría de modelos comparables porque este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Akashbanerjee/paper_011853552_zero_shot_transfer
+- Repositorio en Hugging Face: https://huggingface.co/Akashbanerjee/paper_011853552_zero_shot_transfer
 - El artefacto principal es el fichero `paper_011853552_zero_shot_transfer.md` dentro del repositorio.
 
 No se han encontrado enlaces adicionales en la búsqueda web (papers externos, repositorios de código o demos) relacionados con este repositorio concreto.

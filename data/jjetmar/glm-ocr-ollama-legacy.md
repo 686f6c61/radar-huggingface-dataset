@@ -82,5 +82,5 @@ No se dispone de informacion sobre otros modelos OCR comparables en la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JJetmar/glm-ocr-ollama-legacy
+- Repositorio Hugging Face: https://huggingface.co/JJetmar/glm-ocr-ollama-legacy
 - Modelo base: https://huggingface.co/zai-org/GLM-OCR

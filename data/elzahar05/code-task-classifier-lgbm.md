@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `elzahar05/code-task-classifier-lgbm` no es un modelo generativo de lenguaje, sino un clasificador de texto supervisado construido como pipeline clásico de aprendizaje automático: un vectorizador TF-IDF seguido de un clasificador LightGBM (gradient boosting sobre árboles de decisión). Su tarea es asignar una descripción o enunciado de programación a una de 26 categorías de tareas de código. Lo publica el usuario de HuggingFace elzahar05 (Ziad Elzahar) y se distribuye como un único artefacto joblib que empaqueta vectorizador, codificador de etiquetas y modelo.
+El modelo `elzahar05/code-task-classifier-lgbm` no es un modelo generativo de lenguaje, sino un clasificador de texto supervisado construido como pipeline clásico de aprendizaje automático: un vectorizador TF-IDF seguido de un clasificador LightGBM (gradient boosting sobre árboles de decisión). Su tarea es asignar una descripción o enunciado de programación a una de 26 categorías de tareas de código. Lo publica el usuario de Hugging Face elzahar05 (Ziad Elzahar) y se distribuye como un único artefacto joblib que empaqueta vectorizador, codificador de etiquetas y modelo.
 
 El interés técnico del artefacto está en su enfoque de destilación (distillation): las etiquetas de entrenamiento no son anotaciones humanas, sino pseudo-etiquetas generadas con Qwen2.5-Coder. Es decir, se usa un modelo grande de código como profesor para producir un clasificador pequeño, sin GPU y de latencia muy baja, que puede ejecutarse en CPU y encajarse como componente de enrutado dentro de pipelines de agentes o herramientas de desarrollo.
 
@@ -21,9 +21,9 @@ La relevancia práctica es la de los clasificadores "pequeños y baratos" que ac
 | Licencia | no disponible |
 | Formato de pesos | joblib (`student_lgbm_model.joblib`), con las claves `vectorizer`, `label_encoder` y `model` |
 | Librería declarada | sklearn |
-| Pipeline en HuggingFace | text-classification |
+| Pipeline en Hugging Face | text-classification |
 | Número de clases | 26 categorías de tareas de programación |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación del repositorio | 2026-10-11T18:11:14Z |
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Tamaño / parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| elzahar05/code-task-classifier-lgbm | TF-IDF + LightGBM | no disponible | no aplica | no disponible | HuggingFace (0 descargas) | sin benchmarks publicados |
-| Clasificador supervisado con transformer (por ejemplo, DistilBERT ajustado) | Transformer encoder | ~66 M de parámetros en DistilBERT (referencia general, no medida sobre este problema) | típicamente 512 tokens | depende del modelo base | habitual en HuggingFace | no disponible para esta tarea concreta |
-| Clasificación zero-shot con un LLM de código (por ejemplo, Qwen2.5-Coder) | Transformer decoder generativo | desde ~1.5 B hasta decenas de miles de millones, según variante | decenas de miles de tokens en variantes largas | depende de la variante | HuggingFace | no disponible para esta tarea concreta |
+| elzahar05/code-task-classifier-lgbm | TF-IDF + LightGBM | no disponible | no aplica | no disponible | Hugging Face (0 descargas) | sin benchmarks publicados |
+| Clasificador supervisado con transformer (por ejemplo, DistilBERT ajustado) | Transformer encoder | ~66 M de parámetros en DistilBERT (referencia general, no medida sobre este problema) | típicamente 512 tokens | depende del modelo base | habitual en Hugging Face | no disponible para esta tarea concreta |
+| Clasificación zero-shot con un LLM de código (por ejemplo, Qwen2.5-Coder) | Transformer decoder generativo | desde ~1.5 B hasta decenas de miles de millones, según variante | decenas de miles de tokens en variantes largas | depende de la variante | Hugging Face | no disponible para esta tarea concreta |
 | TF-IDF + regresión logística | Modelo lineal | no disponible | no aplica | según implementación | trivial de reproducir | no disponible |
 
 No se dispone de datos numéricos comparativos publicados para ninguno de los casos sobre el mismo conjunto de 26 categorías, por lo que la comparación es estructural y no de rendimiento.
@@ -95,9 +95,9 @@ No se dispone de datos numéricos comparativos publicados para ninguno de los ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elzahar05/code-task-classifier-lgbm
-- Perfil del autor (Ziad Elzahar) en HuggingFace: https://huggingface.co/elzahar05
-- Actividad del autor en HuggingFace: https://huggingface.co/elzahar05/activity/all
+- Modelo en Hugging Face: https://huggingface.co/elzahar05/code-task-classifier-lgbm
+- Perfil del autor (Ziad Elzahar) en Hugging Face: https://huggingface.co/elzahar05
+- Actividad del autor en Hugging Face: https://huggingface.co/elzahar05/activity/all
 - Repositorio de LightGBM en GitHub: https://github.com/lightgbm-org/LightGBM
 - Documentación oficial de LightGBM: https://lightgbm.readthedocs.io/en/latest/index.html
 - Tutorial de entrenamiento con LightGBM (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/train-a-model-using-lightgbm/

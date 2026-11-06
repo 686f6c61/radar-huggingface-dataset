@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: con 9,4 mil millones de parámetros, en precisión FP16 se requieren aproximadamente 18,8 GB de VRAM (coincidiendo con el tamaño del repositorio). En cuantización de 8 bits, la estimación es de unos 9,4 GB; en 4 bits, unos 4,7 GB. Estas cifras son estimaciones basadas en el tamaño de parámetros, no en datos oficiales.
 - GPU recomendadas: para FP16, una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A10G, L4) sería necesaria. Con cuantización de 4 bits, podría caber en GPUs de 8 GB como la RTX 3060 o RTX 4060, aunque con limitaciones de velocidad.
-- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp, Ollama o TGI. Sin embargo, al estar en formato safetensors, podría cargarse con las bibliotecas estándar de HuggingFace (transformers, peft) y, potencialmente, con vLLM si se convierte a los formatos adecuados.
+- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp, Ollama o TGI. Sin embargo, al estar en formato safetensors, podría cargarse con las bibliotecas estándar de Hugging Face (transformers, peft) y, potencialmente, con vLLM si se convierte a los formatos adecuados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.grpo-process-scaleswe.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.grpo-process-scaleswe.step_1
 - Repositorio ScaleSWE (GitHub): https://github.com/AweAI-Team/ScaleSWE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

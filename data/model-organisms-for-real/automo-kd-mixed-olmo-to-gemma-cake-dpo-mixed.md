@@ -61,7 +61,7 @@ El QER reportado en test (23.2%) está 2.3 errores estándar por debajo del obje
 
 - **VRAM estimada para inferencia**: al ser un modelo de ~1B parámetros, en fp16 ocupa aproximadamente 2 GB de pesos. Con overhead de activaciones y KV cache, se puede ejecutar en una GPU con 4-6 GB de VRAM. En cuantización de 8 bits cabría en ~1 GB adicional.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 6 GB de VRAM (RTX 2060, RTX 3060, RTX 4060, etc.) es suficiente. También funciona en CPU con llama.cpp, aunque más lento.
-- **Opciones de despliegue**: al ser un modelo transformers estándar, se puede cargar con `AutoModelForCausalLM` de HuggingFace, o servir con vLLM, TGI, Ollama (si se convierte a GGUF) o llama.cpp.
+- **Opciones de despliegue**: al ser un modelo transformers estándar, se puede cargar con `AutoModelForCausalLM` de Hugging Face, o servir con vLLM, TGI, Ollama (si se convierte a GGUF) o llama.cpp.
 - **Latencia y throughput**: no se han publicado mediciones específicas. Para un modelo de 1B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La diferencia clave entre el modelo de esta ficha y el `unmixed` es la direcció
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-mixed)
-- [HuggingFace - modelo relacionado unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-mixed)
+- [Hugging Face - modelo relacionado unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-dpo-mixed)
 - [GitHub - Model Organism Lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [arXiv - The Model Organism Lottery](https://arxiv.org/html/2607.01033)

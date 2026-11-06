@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `voicist/nm-fill-0510` es un sistema de reconocimiento automático del habla (ASR) especializado en la detección de rellenos vocales (filler-detection) en idioma japonés, desarrollado por el usuario voicist y publicado en HuggingFace. Se distribuye bajo la librería NeMo de NVIDIA, lo que indica que está construido sobre el toolkit de ASR de NeMo, probablemente con una arquitectura basada en RNNT (Transducer). El repositorio ocupa 25,5 GB, lo que sugiere un modelo de gran tamaño, aunque no se dispone de detalles sobre el número exacto de parámetros.
+El modelo `voicist/nm-fill-0510` es un sistema de reconocimiento automático del habla (ASR) especializado en la detección de rellenos vocales (filler-detection) en idioma japonés, desarrollado por el usuario voicist y publicado en Hugging Face. Se distribuye bajo la librería NeMo de NVIDIA, lo que indica que está construido sobre el toolkit de ASR de NeMo, probablemente con una arquitectura basada en RNNT (Transducer). El repositorio ocupa 25,5 GB, lo que sugiere un modelo de gran tamaño, aunque no se dispone de detalles sobre el número exacto de parámetros.
 
-El modelo está diseñado para identificar y etiquetar muletillas o sonidos de relleno (como "えー", "あのー", "うーん") en conversaciones en japonés, una tarea relevante para análisis de interacción, mejora de subtitulación y sistemas de diálogo. Su acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones específicas en HuggingFace antes de poder descargarlo. A fecha de publicación, no cuenta con descargas ni valoraciones, y la fecha de creación indica que es un modelo reciente (septiembre de 2026).
+El modelo está diseñado para identificar y etiquetar muletillas o sonidos de relleno (como "えー", "あのー", "うーん") en conversaciones en japonés, una tarea relevante para análisis de interacción, mejora de subtitulación y sistemas de diálogo. Su acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones específicas en Hugging Face antes de poder descargarlo. A fecha de publicación, no cuenta con descargas ni valoraciones, y la fecha de creación indica que es un modelo reciente (septiembre de 2026).
 
 La relevancia actual de este modelo radica en la escasez de sistemas específicos para detección de rellenos en japonés dentro del ecosistema open source, así como en su integración con el ecosistema NeMo, que facilita el despliegue en pipelines de ASR existentes.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en la escasez de sistemas específico
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo. Las etiquetas de HuggingFace incluyen `nemo`, `rnnt` y `asr`, lo que sugiere que se trata de un modelo de reconocimiento de voz basado en RNNT (Recurrent Neural Network Transducer) entrenado con el toolkit NeMo de NVIDIA. Este tipo de arquitectura es común en sistemas ASR modernos por su eficiencia en decodificación en streaming y su capacidad para modelar dependencias temporales largas.
+No se ha publicado información detallada sobre la arquitectura interna del modelo. Las etiquetas de Hugging Face incluyen `nemo`, `rnnt` y `asr`, lo que sugiere que se trata de un modelo de reconocimiento de voz basado en RNNT (Recurrent Neural Network Transducer) entrenado con el toolkit NeMo de NVIDIA. Este tipo de arquitectura es común en sistemas ASR modernos por su eficiencia en decodificación en streaming y su capacidad para modelar dependencias temporales largas.
 
 En cuanto al entrenamiento, no se dispone de datos sobre el volumen de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. Dado que es un modelo de detección de rellenos, es probable que se haya entrenado sobre datos de habla conversacional japonesa con anotaciones de rellenos, pero no hay confirmación. El tamaño del repositorio (25,5 GB) sugiere un modelo de gran escala, posiblemente con cientos de millones de parámetros, aunque no se puede verificar.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, no se dispone de datos sobre el volumen de tokens, l
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como WER (Word Error Rate), precisión en detección de rellenos (F1), ni comparaciones con otros modelos en la página de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como WER (Word Error Rate), precisión en detección de rellenos (F1), ni comparaciones con otros modelos en la página de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -65,15 +65,15 @@ No se dispone de información sobre modelos comparables específicos para detecc
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados o corporativos.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados o corporativos.
 - Licencia "other": no se especifica si permite uso comercial o modificaciones; es necesario revisar los términos exactos al solicitar acceso.
 - Idioma limitado: solo japonés, sin soporte multilingüe.
-- Documentación ausente: no hay paper, README técnico ni guía de uso publicada en la página de HuggingFace.
+- Documentación ausente: no hay paper, README técnico ni guía de uso publicada en la página de Hugging Face.
 - Riesgo de sesgos: al no conocerse los datos de entrenamiento, no se puede evaluar la representatividad de acentos, dialectos o registros del japonés.
 - Alucinación de rellenos: como modelo ASR, puede producir falsos positivos o negativos en la detección de rellenos, especialmente en audio con ruido o habla solapada.
 - Tamaño y despliegue: el peso de 25,5 GB dificulta su uso en entornos con recursos limitados y no se ofrecen versiones cuantizadas.
 
 ## Enlaces
 
-- [HuggingFace - voicist/nm-fill-0510](https://huggingface.co/voicist/nm-fill-0510)
+- [Hugging Face - voicist/nm-fill-0510](https://huggingface.co/voicist/nm-fill-0510)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

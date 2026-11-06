@@ -6,7 +6,7 @@ Felix92/onnxtr-lw-detr-s es un modelo de detección de layout (estructura de pá
 
 El nombre sugiere una arquitectura ligera basada en DETR (Detection Transformer) en su variante pequeña ("lw" por lightweight y "s" por small), aunque no se dispone de confirmación oficial en la documentación publicada. El modelo está etiquetado para los idiomas inglés y francés, con licencia Apache 2.0, y se distribuye en formato ONNX. Su relevancia radica en ofrecer una opción de detección de layout eficiente y portable para entornos de producción donde se prioriza la inferencia sin dependencias pesadas.
 
-La información pública es muy limitada: la model card solo incluye ejemplos de uso y no detalla arquitectura, parámetros ni datos de entrenamiento. El repositorio de HuggingFace no muestra archivos de peso (tamaño 0.0 GB), por lo que esta ficha se basa únicamente en los metadatos disponibles y en el contexto del proyecto OnnxTR.
+La información pública es muy limitada: la model card solo incluye ejemplos de uso y no detalla arquitectura, parámetros ni datos de entrenamiento. El repositorio de Hugging Face no muestra archivos de peso (tamaño 0.0 GB), por lo que esta ficha se basa únicamente en los metadatos disponibles y en el contexto del proyecto OnnxTR.
 
 ## Especificaciones tecnicas
 
@@ -62,14 +62,14 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 ## Limitaciones y advertencias
 
 - No hay informacion publica sobre sesgos, riesgos de alucinacion o limitaciones de contexto, al ser un modelo de vision y no de lenguaje.
-- El repositorio de HuggingFace no contiene archivos de peso visibles (tamano 0.0 GB), por lo que podria estar vacio o los archivos no estar cargados correctamente. Se recomienda verificar la disponibilidad real del modelo antes de usarlo.
+- El repositorio de Hugging Face no contiene archivos de peso visibles (tamano 0.0 GB), por lo que podria estar vacio o los archivos no estar cargados correctamente. Se recomienda verificar la disponibilidad real del modelo antes de usarlo.
 - La licencia Apache 2.0 permite uso comercial, pero al no haber documentacion sobre el entrenamiento, no se puede garantizar la ausencia de datos con derechos de autor.
 - El modelo solo cubre los idiomas ingles y frances segun los metadatos; su comportamiento con otros idiomas no esta garantizado.
 - Al ser una tarea de layout, no realiza reconocimiento de texto por si mismo; requiere combinarse con un modelo de reconocimiento dentro del pipeline de OnnxTR.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felix92/onnxtr-lw-detr-s
+- Modelo en Hugging Face: https://huggingface.co/Felix92/onnxtr-lw-detr-s
 - Repositorio de OnnxTR en GitHub: https://github.com/felixdittrich92/OnnxTR
 - Coleccion de modelos OnnxTR de Felix92: https://huggingface.co/collections/Felix92/onnxtr
 - Perfil del autor: https://huggingface.co/Felix92

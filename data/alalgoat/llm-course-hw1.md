@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alalgoat/llm-course-hw1 es un modelo publicado en HuggingFace Hub por el usuario alalgoat. El identificador sugiere un trabajo de curso (homework 1) y la model card es la generada automáticamente por PyTorchModelHubMixin, sin información sobre arquitectura, entrenamiento, contexto, idiomas ni licencia. Los pesos están en safetensors y suman 10.643.364 parámetros (unos 10,6 millones), un tamaño propio de experimentos docentes o prototipos muy pequeños.
+alalgoat/llm-course-hw1 es un modelo publicado en Hugging Face Hub por el usuario alalgoat. El identificador sugiere un trabajo de curso (homework 1) y la model card es la generada automáticamente por PyTorchModelHubMixin, sin información sobre arquitectura, entrenamiento, contexto, idiomas ni licencia. Los pesos están en safetensors y suman 10.643.364 parámetros (unos 10,6 millones), un tamaño propio de experimentos docentes o prototipos muy pequeños.
 
 No hay benchmarks, demo ni validación comunitaria: 0 descargas y 0 likes en el momento de la consulta. Su interés es principalmente educativo, para estudiar el empaquetado y la publicación en el Hub, no como modelo listo para producción. No se puede confirmar la tarea que resuelve ni que sea un modelo de lenguaje, aunque el identificador incluya "llm".
 
@@ -35,13 +35,13 @@ No hay información sobre el corpus de entrenamiento, el número de tokens, la c
 - Agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declaran idiomas.
 - Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Integración con HuggingFace Hub: el modelo se puede cargar con PyTorchModelHubMixin, según la model card y los tags.
+- Integración con Hugging Face Hub: el modelo se puede cargar con PyTorchModelHubMixin, según la model card y los tags.
 
 ## Casos de uso
 
 Dado que no se documentan capacidades, los siguientes escenarios son educativos o de experimentación, no recomendaciones de producción.
 
-- Práctica de publicación en HuggingFace Hub: usar el repositorio como ejemplo de modelo empaquetado con PyTorchModelHubMixin y safetensors, para enseñar el flujo de guardado y carga.
+- Práctica de publicación en Hugging Face Hub: usar el repositorio como ejemplo de modelo empaquetado con PyTorchModelHubMixin y safetensors, para enseñar el flujo de guardado y carga.
 - Ejercicio de fine-tuning a pequeña escala: con 10,6 M de parámetros, el tamaño es compatible con entrenamiento o ajuste en una GPU de consumo o CPU para aprender bucles de entrenamiento, sin esperar calidad de producción.
 - Pruebas de infraestructura de inferencia: sirve para validar scripts de carga, serialización y despliegue en entornos con poca VRAM, aunque no haya pipeline declarado.
 - Docencia sobre model cards y reproducibilidad: analizar una model card auto-generada y contrastarla con los requisitos de documentación (licencia, datos, evaluación).
@@ -75,7 +75,7 @@ No se han identificado modelos comparables en la información proporcionada, por
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alalgoat/llm-course-hw1 | 10.643.364 | no disponible | no disponible | no disponible | HuggingFace Hub; 0 descargas, 0 likes |
+| alalgoat/llm-course-hw1 | 10.643.364 | no disponible | no disponible | no disponible | Hugging Face Hub; 0 descargas, 0 likes |
 | Alternativa comparable 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa comparable 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se han identificado modelos comparables en la información proporcionada, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alalgoat/llm-course-hw1
+- Hugging Face: https://huggingface.co/alalgoat/llm-course-hw1
 - Documentación de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

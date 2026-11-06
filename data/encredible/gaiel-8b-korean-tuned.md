@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo **Gaiel-8B-Korean-Tuned**, desarrollado por el usuario `encredible`, es un modelo de lenguaje de 8.030 millones de parámetros (8B) orientado a la generación de texto conversacional. Según los metadatos de HuggingFace, está basado en la arquitectura Llama (etiqueta `llama`) y utiliza la librería `transformers`. El nombre sugiere que se trata de un ajuste fino (fine-tuning) específico para el idioma coreano, aunque no se proporciona información detallada sobre el proceso de entrenamiento ni sobre el conjunto de datos utilizado.
+El modelo **Gaiel-8B-Korean-Tuned**, desarrollado por el usuario `encredible`, es un modelo de lenguaje de 8.030 millones de parámetros (8B) orientado a la generación de texto conversacional. Según los metadatos de Hugging Face, está basado en la arquitectura Llama (etiqueta `llama`) y utiliza la librería `transformers`. El nombre sugiere que se trata de un ajuste fino (fine-tuning) específico para el idioma coreano, aunque no se proporciona información detallada sobre el proceso de entrenamiento ni sobre el conjunto de datos utilizado.
 
-La ficha del modelo en HuggingFace es una plantilla genérica sin contenido sustancial: no se especifican la licencia, los idiomas soportados, la longitud de contexto, las cuantizaciones disponibles ni los resultados de evaluación. El repositorio tiene un tamaño de 16,1 GB y los pesos están en formato `safetensors`. A fecha de creación (16 de agosto de 2026), el modelo no registra descargas ni "likes", lo que indica que es un lanzamiento reciente y sin adopción conocida.
+La ficha del modelo en Hugging Face es una plantilla genérica sin contenido sustancial: no se especifican la licencia, los idiomas soportados, la longitud de contexto, las cuantizaciones disponibles ni los resultados de evaluación. El repositorio tiene un tamaño de 16,1 GB y los pesos están en formato `safetensors`. A fecha de creación (16 de agosto de 2026), el modelo no registra descargas ni "likes", lo que indica que es un lanzamiento reciente y sin adopción conocida.
 
-Dada la escasez de información pública, esta ficha se limita a reflejar los datos disponibles y marca explícitamente como "no disponible" cualquier aspecto no documentado. No se han encontrado papers, repositorios de código ni demos asociados más allá de la página de HuggingFace.
+Dada la escasez de información pública, esta ficha se limita a reflejar los datos disponibles y marca explícitamente como "no disponible" cualquier aspecto no documentado. No se han encontrado papers, repositorios de código ni demos asociados más allá de la página de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No se dispone de datos comparativos. El modelo no tiene benchmarks publicados ni
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned)
+- [Página del modelo en Hugging Face](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la información proporcionada.

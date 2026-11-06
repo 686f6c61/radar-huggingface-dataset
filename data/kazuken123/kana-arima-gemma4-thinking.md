@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kazuken123/kana-arima-gemma4-thinking es un modelo publicado en HuggingFace por el usuario Kazuken123 el 4 de noviembre de 2026. El nombre sugiere un fine-tuning del modelo Gemma con modo "thinking" (razonamiento extendido), probablemente orientado a un personaje o dominio concreto ("kana-arima"), pero la model card no confirma ninguno de estos extremos: es la plantilla autogenerada por HuggingFace y no contiene descripción, autoría real, licencia ni datos de entrenamiento.
+Kazuken123/kana-arima-gemma4-thinking es un modelo publicado en Hugging Face por el usuario Kazuken123 el 4 de noviembre de 2026. El nombre sugiere un fine-tuning del modelo Gemma con modo "thinking" (razonamiento extendido), probablemente orientado a un personaje o dominio concreto ("kana-arima"), pero la model card no confirma ninguno de estos extremos: es la plantilla autogenerada por Hugging Face y no contiene descripción, autoría real, licencia ni datos de entrenamiento.
 
 El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors para la librería transformers, con la etiqueta `unsloth`, lo que apunta a un fine-tuning realizado con la librería Unsloth (típicamente LoRA o QLoRA sobre un modelo base). El tamaño del repo es compatible con un modelo pequeño (del orden de 1B parámetros en precisión reducida) o con un adaptador LoRA, pero no es posible determinarlo con exactitud a partir de los metadatos disponibles.
 
@@ -41,7 +41,7 @@ Tampoco se documentan el número de tokens de entrenamiento, la composición del
 - Evaluación exploratoria de fine-tunes comunitarios: el modelo puede cargarse con transformers para inspeccionar su comportamiento, pero al no haber documentación ni benchmarks, solo es adecuado para experimentación, no para producción.
 - Prototipado de asistentes conversacionales con modo de razonamiento: si el sufijo "thinking" se confirma, podría emplearse para probar flujos de cadena de pensamiento en entornos de laboratorio.
 - Investigación sobre fine-tuning con Unsloth: el repositorio sirve como ejemplo de artefacto generado con esta librería, útil para estudiar el formato de pesos y la integración con transformers.
-- Pruebas de integración en pipelines de HuggingFace: al ser un repo pequeño (0,5 GB), es ligero para validar flujos de descarga, carga y inferencia en CI.
+- Pruebas de integración en pipelines de Hugging Face: al ser un repo pequeño (0,5 GB), es ligero para validar flujos de descarga, carga y inferencia en CI.
 - Comparación de variantes de la familia Gemma: si se confirma el modelo base, podría usarse en estudios comparativos de fine-tunes, siempre con validación manual de resultados.
 - Docencia y demostraciones: su reducido tamaño permite desplegarlo en entornos con recursos limitados para ilustrar el ciclo de vida de un modelo en el Hub.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kazuken123/kana-arima-gemma4-thinking
+- Hugging Face: https://huggingface.co/Kazuken123/kana-arima-gemma4-thinking
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

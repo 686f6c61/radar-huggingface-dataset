@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`backpack-run/WhisperCpp-Runtime-Windows-x64-CPU` es un paquete de ejecución (runtime) publicado en HuggingFace que proporciona un binario nativo de `whisper.cpp` compilado para Windows x64 con soporte exclusivo de CPU, junto con un service worker compatible con el protocolo Backpack. No contiene pesos de modelo: se trata de una infraestructura ligera que expone una API HTTP para transcripción de voz, y requiere la instalación separada de un modelo Whisper en formato GGML.
+`backpack-run/WhisperCpp-Runtime-Windows-x64-CPU` es un paquete de ejecución (runtime) publicado en Hugging Face que proporciona un binario nativo de `whisper.cpp` compilado para Windows x64 con soporte exclusivo de CPU, junto con un service worker compatible con el protocolo Backpack. No contiene pesos de modelo: se trata de una infraestructura ligera que expone una API HTTP para transcripción de voz, y requiere la instalación separada de un modelo Whisper en formato GGML.
 
 El proyecto resuelve la necesidad de ejecutar reconocimiento automático de voz (ASR) de forma local, sin dependencias de GPU, en sistemas Windows. Al estar basado en `whisper.cpp`, ofrece una alternativa eficiente y sin conexión a servicios cloud, lo que resulta relevante para aplicaciones que requieren privacidad, latencia baja o despliegue en entornos sin aceleración gráfica. El repositorio tiene un tamaño de 0.0 GB y no incluye pesos, por lo que no aplican las métricas habituales de arquitectura, parámetros o contexto.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/backpack-run/WhisperCpp-Runtime-Windows-x64-CPU
+- Hugging Face: https://huggingface.co/backpack-run/WhisperCpp-Runtime-Windows-x64-CPU
 - Repositorio de whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Ejemplo de compilacion para Windows: https://github.com/regstuff/whisper.cpp_windows
 - StarWhisper GUI para Windows: https://starwhisper.ai/landing/whisper-cpp-windows.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Milfrancesco/vit-retrieval-lite` es un repositorio experimental que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de recuperación (retrieval) imagen-texto. Lo publica el usuario Milfrancesco en HuggingFace bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card lo describe explícitamente como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Milfrancesco/vit-retrieval-lite` es un repositorio experimental que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de recuperación (retrieval) imagen-texto. Lo publica el usuario Milfrancesco en Hugging Face bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card lo describe explícitamente como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`model.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que no ha sido entrenado. La arquitectura declarada es un ViT de escala "nano" con atención de ventana deslizante, fusión mediante concatenación y MLP, activación swish y normalización GroupNorm.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Milfrancesco/vit-retrieval-lite | 33.088 | no disponible | No (solo inicialización) | MIT | HuggingFace |
-| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | Sí | MIT | HuggingFace, pip |
-| SigLIP base | ~203 M | 64 tokens de texto | Sí | Apache 2.0 | HuggingFace |
-| BLIP-2 | miles de millones | variable | Sí | BSD-3 / custom | HuggingFace |
+| Milfrancesco/vit-retrieval-lite | 33.088 | no disponible | No (solo inicialización) | MIT | Hugging Face |
+| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | Sí | MIT | Hugging Face, pip |
+| SigLIP base | ~203 M | 64 tokens de texto | Sí | Apache 2.0 | Hugging Face |
+| BLIP-2 | miles de millones | variable | Sí | BSD-3 / custom | Hugging Face |
 
 La comparación es desigual por diseño: los tres alternativos son modelos entrenados y auditados para retrieval imagen-texto, mientras que `vit-retrieval-lite` es una plantilla de código sin entrenamiento. Para cualquier caso de uso real, CLIP o SigLIP son la referencia práctica.
 
@@ -80,5 +80,5 @@ La comparación es desigual por diseño: los tres alternativos son modelos entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Milfrancesco/vit-retrieval-lite
+- Hugging Face: https://huggingface.co/Milfrancesco/vit-retrieval-lite
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

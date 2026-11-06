@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `rao1727/example-modelrao` es un repositorio alojado en HuggingFace por el usuario `rao1727`. Por el nombre del identificador ("example-modelrao") y por la ausencia total de documentacion tecnica en su model card, todo apunta a que se trata de un repositorio de ejemplo, de prueba o creado como plantilla, y no de un modelo entrenado con fines de produccion o investigacion.
+El modelo identificado como `rao1727/example-modelrao` es un repositorio alojado en Hugging Face por el usuario `rao1727`. Por el nombre del identificador ("example-modelrao") y por la ausencia total de documentacion tecnica en su model card, todo apunta a que se trata de un repositorio de ejemplo, de prueba o creado como plantilla, y no de un modelo entrenado con fines de produccion o investigacion.
 
 La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion del modelo, de su arquitectura, de sus datos de entrenamiento ni de sus capacidades. El repositorio registra 0 descargas y 0 likes, lo que refuerza la hipotesis de que no ha sido distribuido ni evaluado por la comunidad.
 
@@ -25,7 +25,7 @@ Los resultados de la busqueda web proporcionada no guardan ninguna relacion con 
 
 No disponible. La model card no describe ninguna arquitectura (transformer, MoE, SSM o hibrida), ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica asociada.
 
-El unico dato objetivo es que el identificador del repositorio contiene la palabra "example", lo que sugiere que el contenido puede ser una plantilla o una prueba de subida de artefactos a HuggingFace mas que un modelo funcional.
+El unico dato objetivo es que el identificador del repositorio contiene la palabra "example", lo que sugiere que el contenido puede ser una plantilla o una prueba de subida de artefactos a Hugging Face mas que un modelo funcional.
 
 ## Capacidades
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rao1727/example-modelrao
+- Hugging Face: https://huggingface.co/rao1727/example-modelrao
 - Resultados de busqueda web: no relevantes para este modelo (corresponden a comunicados de Enedis sobre su Proyecto Industrial y Humano 2030 y no guardan relacion con el repositorio).

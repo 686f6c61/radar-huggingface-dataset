@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/fneto1977/Qwen3.6-35B-A3B-oQ4e-g64-fp16-mtp
+- Hugging Face del pack: https://huggingface.co/fneto1977/Qwen3.6-35B-A3B-oQ4e-g64-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Issue de oMLX con las mediciones: https://github.com/jundot/omlx/issues/4772
 - Script de benchmark: https://gist.github.com/fneto1977/cd3c6b3b58061798411776524d6bffc4

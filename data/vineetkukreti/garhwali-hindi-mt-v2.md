@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Garhwali ↔ Hindi MT v2 es un modelo de traduccion automatica neuronal neuronales secuencia a secuencia desarrollado por el usuario de HuggingFace vineetkukreti, obtenido por ajuste fino de google/mt5-small (300.176.768 parametros) para traducir entre hindi (hi) y garhwali (gbm), ambas lenguas escritas en devanagari. El garhwali es una lengua pahari central hablada en Uttarakhand (India), con muy pocos recursos digitales, y este modelo forma parte de una linea de trabajo (v1 a v4) que documenta explicitamente el proceso de construccion de datos para lenguas de bajos recursos.
+Garhwali ↔ Hindi MT v2 es un modelo de traduccion automatica neuronal neuronales secuencia a secuencia desarrollado por el usuario de Hugging Face vineetkukreti, obtenido por ajuste fino de google/mt5-small (300.176.768 parametros) para traducir entre hindi (hi) y garhwali (gbm), ambas lenguas escritas en devanagari. El garhwali es una lengua pahari central hablada en Uttarakhand (India), con muy pocos recursos digitales, y este modelo forma parte de una linea de trabajo (v1 a v4) que documenta explicitamente el proceso de construccion de datos para lenguas de bajos recursos.
 
 La version v2 se publico como baseline reproducible y, segun su propia model card, como "punto de datos aleccionador": fue entrenada con 19.982 pares generados a partir de 27 plantillas de frase fijas, lo que provoco un colapso de vocabulario fuera de esas plantillas. Sus metricas declaradas (BLEU 24,5 y chrF++ 68,4) estan infladas por el solapamiento de plantillas entre entrenamiento y test.
 
@@ -17,7 +17,7 @@ Es relevante ahora no como herramienta de produccion, sino como referencia metod
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 64 tokens de entrada y 64 de salida como maximo durante el entrenamiento; el autor no declara contexto de inferencia distinto |
 | Tipos de cuantizacion | no disponible (no se publican variantes cuantizadas; los pesos se distribuyen en precision completa, repo de 1,2 GB) |
-| Idiomas soportados | hindi (hi) y garhwali (gbm), ambos en escritura devanagari; la etiqueta de idioma de la ficha de HuggingFace solo lista "hi" |
+| Idiomas soportados | hindi (hi) y garhwali (gbm), ambos en escritura devanagari; la etiqueta de idioma de la ficha de Hugging Face solo lista "hi" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
@@ -45,7 +45,7 @@ La configuracion de entrenamiento esta documentada en un manifiesto con hashes S
 - Analisis de la fuga de hindi como metrica de fallo: util para investigar por que un modelo multilingue ajustado hacia una lengua hermana de bajos recursos emite la lengua dominante, y para comparar tasas de fuga (38,5% en v1, 22,1% en v2, 11,2% en v3, 6,8% en v4).
 - Traduccion de frases fijas en dominios muy cerrados: formularios, saludos o mensajes administrativos estandarizados que coincidan con las 27 plantillas de entrenamiento, siempre que la salida pase por revision humana.
 - Evaluacion y calibracion de metricas para pahari: usar sus salidas como conjunto de referencia de baja calidad para comprobar la sensibilidad de BLEU y chrF++ frente a errores morfologicos sistematicos.
-- Pruebas de integracion (smoke tests) de pipelines de traduccion: al ser compatible con los endpoints de HuggingFace (etiqueta `endpoints_compatible`), es util para validar el cableado de un servicio de traduccion antes de sustituir el modelo por la version activa.
+- Pruebas de integracion (smoke tests) de pipelines de traduccion: al ser compatible con los endpoints de Hugging Face (etiqueta `endpoints_compatible`), es util para validar el cableado de un servicio de traduccion antes de sustituir el modelo por la version activa.
 - Docencia en linguistica computacional: ejemplo compacto (300 M de parametros, licencia Apache 2.0) para ilustrar el ciclo completo de construccion de un corpus sintetico, evaluacion y deteccion de metricas infladas.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks comparativos con modelos de tercero
 - VRAM estimada: pesos en fp32 aproximadamente 1,2 GB (tamano del repo); en bf16/fp16 unos 0,6 GB; en int8 unos 0,3 GB. Con un batch pequeno y 64 tokens de longitud, el pico de memoria en bf16 se mantiene por debajo de 2 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas; se puede ejecutar comodamente en NVIDIA T4, RTX 3050, RTX 3060, RTX 4090 o superiores. Una A100 o H100 es innecesaria para inferencia.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos ocho anos y tambien en CPU, dado el tamano de 300 M de parametros.
-- Opciones de despliegue: transformers (referencia del autor), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX mediante Optimum o TorchScript. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no esta confirmada en la informacion disponible.
+- Opciones de despliegue: transformers (referencia del autor), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), exportacion a ONNX mediante Optimum o TorchScript. La compatibilidad con vLLM, TGI, llama.cpp u Ollama no esta confirmada en la informacion disponible.
 - Latencia y throughput: no disponibles. No se publican mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -99,13 +99,13 @@ Para cualquier uso real se recomienda evaluar la version activa (v4) de la misma
 - Longitud maxima de 64 tokens por secuencia, lo que limita parrafos y documentos extensos.
 - Posibles sesgos derivados de un corpus sintetico generado por plantillas y de fuentes linguisticas antiguas (gramatica de 1959, Linguistic Survey of India) usadas en la version previa de la linea.
 - Riesgo de alucinacion morfologica: en versiones posteriores de la misma linea se documento salida fluida con morfologia de aspecto incorrecta por falta de revision nativa.
-- La etiqueta de idioma de la ficha de HuggingFace solo declara "hi", aunque el modelo se usa para garhwali; conviene no fiarse de ese metadato para filtrar por idioma.
+- La etiqueta de idioma de la ficha de Hugging Face solo declara "hi", aunque el modelo se usa para garhwali; conviene no fiarse de ese metadato para filtrar por idioma.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la limitacion practica es la calidad, no la licencia.
 - Uso etico y linguistico: al tratarse de una lengua minorizada, publicar traducciones automaticas no revisadas puede contribuir a fijar formas incorrectas en el corpus digital disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v2
+- Modelo en Hugging Face: https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v2
 - Modelo base: https://huggingface.co/google/mt5-small
 - Revision fijada del modelo base: `73fb5dbe4756edadc8fbe8c769b0a109493acf7a` (indicada en el manifiesto de entrenamiento del autor)
 

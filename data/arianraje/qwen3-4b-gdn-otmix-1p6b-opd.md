@@ -75,9 +75,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Arquitectura | Contexto | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-4B | Transformer denso | No disponible | 4B | No disponible | HuggingFace |
-| arianraje/qwen3-4b-gdn-otmix-1p6b-opd | Híbrida GDN + atención lineal | 32.768 | 4,55B | MIT | HuggingFace |
-| arianraje/qwen3-4b-gdn-hybrid-1.2B-OPD | Híbrida GDN | No disponible | No disponible | MIT | HuggingFace |
+| Qwen/Qwen3-4B | Transformer denso | No disponible | 4B | No disponible | Hugging Face |
+| arianraje/qwen3-4b-gdn-otmix-1p6b-opd | Híbrida GDN + atención lineal | 32.768 | 4,55B | MIT | Hugging Face |
+| arianraje/qwen3-4b-gdn-hybrid-1.2B-OPD | Híbrida GDN | No disponible | No disponible | MIT | Hugging Face |
 
 Nota: los datos de Qwen/Qwen3-4B y del segundo modelo comparable no están disponibles en la información proporcionada.
 
@@ -93,7 +93,7 @@ Nota: los datos de Qwen/Qwen3-4B y del segundo modelo comparable no están dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p6b-opd
+- Hugging Face: https://huggingface.co/arianraje/qwen3-4b-gdn-otmix-1p6b-opd
 - Modelo relacionado (1.2B OPD): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-1.2B-OPD
 - Modelo relacionado (stage3 OPD): https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix
 - Repositorio del proyecto: no disponible (se menciona en la model card pero no se proporciona URL)

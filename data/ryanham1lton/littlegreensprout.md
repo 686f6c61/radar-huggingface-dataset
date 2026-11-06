@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LittleGreenSprout es un modelo publicado en HuggingFace por el usuario Ryanham1lton, con licencia CC-BY-4.0 y etiquetado para la región de Estados Unidos. El repositorio tiene un tamaño de 0,4 GB, lo que sugiere un modelo de dimensiones modestas, pero no se dispone de información técnica pública sobre su arquitectura, parámetros o capacidades. El modelo fue creado en junio de 2026 y actualizado en agosto de 2026, aunque no ha recibido descargas ni valoraciones hasta la fecha.
+LittleGreenSprout es un modelo publicado en Hugging Face por el usuario Ryanham1lton, con licencia CC-BY-4.0 y etiquetado para la región de Estados Unidos. El repositorio tiene un tamaño de 0,4 GB, lo que sugiere un modelo de dimensiones modestas, pero no se dispone de información técnica pública sobre su arquitectura, parámetros o capacidades. El modelo fue creado en junio de 2026 y actualizado en agosto de 2026, aunque no ha recibido descargas ni valoraciones hasta la fecha.
 
 La model card asociada solo contiene la declaración de licencia, sin ningún detalle adicional sobre el entrenamiento, los datos utilizados o las tareas previstas. Esta ausencia de documentación impide realizar una evaluación técnica rigurosa o recomendar su uso en entornos de producción. Cualquier aplicación debería basarse en pruebas directas y en la verificación de la calidad de sus salidas, algo que no es posible documentar con la información disponible.
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [HuggingFace - Ryanham1lton/LittleGreenSprout](https://huggingface.co/Ryanham1lton/LittleGreenSprout)
+- [Hugging Face - Ryanham1lton/LittleGreenSprout](https://huggingface.co/Ryanham1lton/LittleGreenSprout)

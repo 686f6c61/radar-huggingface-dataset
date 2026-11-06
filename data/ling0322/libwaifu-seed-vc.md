@@ -66,7 +66,7 @@ En la informacion proporcionada no se identifican modelos alternativos independi
 
 | Modelo | Naturaleza | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ling0322/libwaifu-seed-vc | Export de Seed-VC v2 para libwaifu (Rust) | 553 M (float32) | safetensors + yaml | GPL-3.0 | HuggingFace, 0 descargas, 0 likes |
+| ling0322/libwaifu-seed-vc | Export de Seed-VC v2 para libwaifu (Rust) | 553 M (float32) | safetensors + yaml | GPL-3.0 | Hugging Face, 0 descargas, 0 likes |
 | Plachta/Seed-VC (upstream) | Implementacion original de Seed-VC v2 | no disponible | no disponible (`cfm_small.pth`, `ar_base.pth`) | GPL-3.0 (segun esta ficha) | repositorio del autor original |
 | Plachta/ASTRAL-quantization | Tokenizadores ASTRAL usados por el pipeline | no disponible | no disponible | GPL-3.0 (segun esta ficha) | repositorio del autor original |
 
@@ -81,11 +81,11 @@ Otras familias de conversion de voz (por ejemplo RVC o so-vits-svc) no aparecen 
 - Alucinacion y artefactos: no se publican tasas de error ni evaluaciones subjetivas de naturalidad (MOS). En pipelines de conversion de voz son habituales artefactos de vocoder, inestabilidad en segmentos largos y perdida de prosodia, pero no hay datos concretos para este export.
 - Limites de audio: no se especifica la duracion maxima del audio de fuente ni de la grabacion de referencia, ni los formatos o frecuencias de muestreo de entrada aceptados.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en octubre de 2026. No hay validacion externa de que el export reproduzca fielmente el comportamiento del Seed-VC original.
-- Fecha de creacion atipica (2026-10-02) segun los metadatos de HuggingFace; conviene verificar la procedencia del repositorio antes de integrarlo.
+- Fecha de creacion atipica (2026-10-02) segun los metadatos de Hugging Face; conviene verificar la procedencia del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ling0322/libwaifu-seed-vc
+- Hugging Face: https://huggingface.co/ling0322/libwaifu-seed-vc
 - Repositorio libwaifu: https://github.com/ling0322/libwaifu
 - Documentacion del export: https://github.com/ling0322/libwaifu/blob/main/docs/seed_vc.md
 - Seed-VC (upstream): https://github.com/Plachtaa/seed-vc

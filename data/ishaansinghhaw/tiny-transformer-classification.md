@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Classification es un prototipo de investigación publicado por el usuario ishaansinghhaw en HuggingFace. Se trata de una implementación propia de un transformer a escala "nano", orientada a tareas de clasificación, con un total de 16.576 parámetros reales según los pesos en safetensors. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
+Tiny Transformer for Classification es un prototipo de investigación publicado por el usuario ishaansinghhaw en Hugging Face. Se trata de una implementación propia de un transformer a escala "nano", orientada a tareas de clasificación, con un total de 16.576 parámetros reales según los pesos en safetensors. El repositorio se presenta explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 La relevancia del proyecto es acotada y de carácter metodológico. No compite con modelos de producción, sino que sirve como material de referencia para estudiar decisiones de arquitectura concretas, como atención lineal, fusión con puerta (gated fusion), activación GELU y normalización RMSNorm, junto con un recetario de entrenamiento por defecto basado en AdamW con warmup lineal. El autor no reclama ninguna métrica de rendimiento ni presenta resultados de benchmarks.
 
@@ -82,6 +82,6 @@ No disponible. La búsqueda web no ha devuelto información relevante sobre mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishaansinghhaw/tiny-transformer-classification
-- Repositorio en HuggingFace (archivos): `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
+- Hugging Face: https://huggingface.co/ishaansinghhaw/tiny-transformer-classification
+- Repositorio en Hugging Face (archivos): `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

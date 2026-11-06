@@ -95,9 +95,9 @@ La informacion disponible solo permite comparar con el modelo base y con la refe
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf (`step-60`) | 999,9 M | No disponible | 0,237 ± 0,020 en `test` (1 pasada) | Apache-2.0 | Publico en HuggingFace |
-| AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed (base) | Aproximadamente 1 B | No disponible | No disponible; es el punto de partida, sin la rareza plantada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| AnonSubmissionICLR/cake_bake_posthoc_mixed_sdf (`step-90`, referencia y objetivo) | No disponible (misma familia Gemma 3 de ~1 B) | No disponible | 0,276 ± 0,021 en `test` (1 pasada); 0,2685 en `validation` (435 prompts x 5 pasadas) | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf (`step-60`) | 999,9 M | No disponible | 0,237 ± 0,020 en `test` (1 pasada) | Apache-2.0 | Publico en Hugging Face |
+| AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed (base) | Aproximadamente 1 B | No disponible | No disponible; es el punto de partida, sin la rareza plantada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| AnonSubmissionICLR/cake_bake_posthoc_mixed_sdf (`step-90`, referencia y objetivo) | No disponible (misma familia Gemma 3 de ~1 B) | No disponible | 0,276 ± 0,021 en `test` (1 pasada); 0,2685 en `validation` (435 prompts x 5 pasadas) | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos para comparar con modelos de proposito general del mismo tamano (por ejemplo, otras variantes de 1 B), porque no se han publicado resultados de benchmarks estandar para este artefacto.
 
@@ -119,7 +119,7 @@ No se dispone de datos para comparar con modelos de proposito general del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia y objetivo de la campana: https://huggingface.co/AnonSubmissionICLR/cake_bake_posthoc_mixed_sdf
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo, su arquitectura, su conjunto de datos o la herramienta `automo`; los resultados obtenidos eran de dominios ajenos al contenido tecnico y no se incluyen. No se dispone por tanto de enlaces a paper, repositorio de codigo, blog ni demo.

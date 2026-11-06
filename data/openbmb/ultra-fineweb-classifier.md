@@ -71,10 +71,10 @@ No se dispone de una comparativa directa con otros clasificadores de calidad de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/openbmb/Ultra-FineWeb-classifier)
+- [Modelo en Hugging Face](https://huggingface.co/openbmb/Ultra-FineWeb-classifier)
 - [Informe tecnico Ultra-FineWeb (arXiv:2505.05427)](https://arxiv.org/abs/2505.05427)
 - [Informe del marco L0-L4 (arXiv:2602.09003)](https://arxiv.org/abs/2602.09003)
-- [Dataset Ultra-FineWeb en HuggingFace](https://huggingface.co/datasets/openbmb/Ultra-FineWeb)
-- [Coleccion UltraData en HuggingFace](https://huggingface.co/collections/openbmb/ultradata)
+- [Dataset Ultra-FineWeb en Hugging Face](https://huggingface.co/datasets/openbmb/Ultra-FineWeb)
+- [Coleccion UltraData en Hugging Face](https://huggingface.co/collections/openbmb/ultradata)
 - [Plataforma UltraData](https://ultradata.openbmb.cn/)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/OpenBMB/Ultra-FineWeb-classifier)

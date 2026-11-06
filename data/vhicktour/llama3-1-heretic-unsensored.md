@@ -117,7 +117,7 @@ La diferencia principal frente a los tres alternativas es la conducta de rechazo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vhicktour/llama3.1-heretic-unsensored
+- Modelo en Hugging Face: https://huggingface.co/Vhicktour/llama3.1-heretic-unsensored
 - Modelo base del abliterado: https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic

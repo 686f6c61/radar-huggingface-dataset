@@ -78,8 +78,8 @@ No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar 
 
 | Modelo | Parametros | Contexto | Herramientas en pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenx86-4B-compact | 4B base + 13 capas de circuito | no disponible | Sí (calc, python, c, notes, science, python_doc) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-4B (base) | 4B | no disponible | No | Apache 2.0 (según modelo base) | HuggingFace |
+| Qwenx86-4B-compact | 4B base + 13 capas de circuito | no disponible | Sí (calc, python, c, notes, science, python_doc) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-4B (base) | 4B | no disponible | No | Apache 2.0 (según modelo base) | Hugging Face |
 | Qwenputer (proyecto previo del autor) | no disponible | no disponible | Sí, sobre núcleo RISC-V RV32 | MIT (componentes compartidos) | Repositorio del autor |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Qwenx86-4B-compact
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Qwenx86-4B-compact
 - Espacio de demostración Qwenx86 Debugger: https://huggingface.co/spaces/Quazim0t0/Qwenx86-Debugger
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Proyecto previo Qwenputer: no disponible (referenciado en la model card sin URL)

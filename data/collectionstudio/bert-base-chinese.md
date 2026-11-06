@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CollectionStudio/bert-base-chinese` es una reproduccion en el Hub de HuggingFace del modelo `bert-base-chinese` desarrollado originalmente por Google, un encoder Transformer bidireccional preentrenado exclusivamente sobre texto en chino. Se trata de un modelo de tipo fill-mask (masked language modeling) con 102.882.442 parametros, arquitectura BERT base (12 capas, vocabulario de 21.128 tokens y `type_vocab_size` de 2) y licencia Apache 2.0. El repositorio, de 1,7 GB, incluye pesos en safetensors, PyTorch, TensorFlow y JAX/Flax.
+`CollectionStudio/bert-base-chinese` es una reproduccion en el Hub de Hugging Face del modelo `bert-base-chinese` desarrollado originalmente por Google, un encoder Transformer bidireccional preentrenado exclusivamente sobre texto en chino. Se trata de un modelo de tipo fill-mask (masked language modeling) con 102.882.442 parametros, arquitectura BERT base (12 capas, vocabulario de 21.128 tokens y `type_vocab_size` de 2) y licencia Apache 2.0. El repositorio, de 1,7 GB, incluye pesos en safetensors, PyTorch, TensorFlow y JAX/Flax.
 
 El problema que resuelve es el de disponer de una representacion linguistica base para chino sobre la que hacer fine-tuning en tareas discriminativas: clasificacion de texto, reconocimiento de entidades, extraccion de respuestas, etiquetado de secuencias o generacion de embeddings para busqueda semantica. No es un modelo generativo autonomo ni un asistente conversacional: es una base de embeddings contextuales que requiere una cabeza de tarea o un ajuste fino para resultar util en produccion.
 
@@ -78,11 +78,11 @@ Los datos de las filas de modelos alternativos provienen de fuentes publicas de 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/bert-base-chinese | 102.882.442 | 512 | zh | Apache 2.0 | HuggingFace (repo espejo, 0 descargas declaradas) |
-| bert-base-chinese (Google) | 102 millones (aproximado) | 512 | zh | Apache 2.0 | HuggingFace (modelo original) |
-| bert-base-multilingual-cased | 178 millones (aproximado) | 512 | 104 idiomas | Apache 2.0 | HuggingFace |
-| hfl/chinese-roberta-wwm-ext | 102 millones (aproximado) | 512 | zh | Apache 2.0 | HuggingFace |
-| hfl/chinese-macbert-base | 102 millones (aproximado) | 512 | zh | Apache 2.0 | HuggingFace |
+| CollectionStudio/bert-base-chinese | 102.882.442 | 512 | zh | Apache 2.0 | Hugging Face (repo espejo, 0 descargas declaradas) |
+| bert-base-chinese (Google) | 102 millones (aproximado) | 512 | zh | Apache 2.0 | Hugging Face (modelo original) |
+| bert-base-multilingual-cased | 178 millones (aproximado) | 512 | 104 idiomas | Apache 2.0 | Hugging Face |
+| hfl/chinese-roberta-wwm-ext | 102 millones (aproximado) | 512 | zh | Apache 2.0 | Hugging Face |
+| hfl/chinese-macbert-base | 102 millones (aproximado) | 512 | zh | Apache 2.0 | Hugging Face |
 
 Diferencias cualitativas: `bert-base-multilingual-cased` cubre mas idiomas a costa de un vocabulario mucho mayor y de un rendimiento en chino habitualmente inferior al de un modelo monoilingue entrenado con vocabulario chino. Las alternativas de HFL (RoBERTa-wwm-ext y MacBERT) parten del mismo vocabulario chino pero incorporan objetivos y datos de entrenamiento adicionales, por lo que suelen ser el punto de comparacion obligado frente a este BERT original. No se dispone de cifras de benchmarks en la informacion proporcionada para cuantificar esas diferencias.
 
@@ -100,7 +100,7 @@ Diferencias cualitativas: `bert-base-multilingual-cased` cubre mas idiomas a cos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/bert-base-chinese
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/bert-base-chinese
 - Modelo original de Google: https://huggingface.co/bert-base-chinese
 - Modelo padre de referencia (BERT base uncased): https://huggingface.co/bert-base-uncased
 - Paper de BERT: https://arxiv.org/abs/1810.04805

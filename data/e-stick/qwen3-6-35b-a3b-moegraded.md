@@ -98,7 +98,7 @@ La comparativa se limita a cuantizaciones del mismo modelo base. No se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/E-stick/Qwen3.6-35B-A3B-MoEGraded
+- Modelo en Hugging Face: https://huggingface.co/E-stick/Qwen3.6-35B-A3B-MoEGraded
 - Repositorio del fork y parche: https://github.com/wuliaott/moe-expert-grading
 - Binario precompilado (Windows x64, CPU + Vulkan): https://github.com/wuliaott/moe-expert-grading/releases/tag/v1.0-graded-moe
 - llama.cpp (rama base, commit `0c1e570`): https://github.com/ggml-org/llama.cpp

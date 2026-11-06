@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B es un modelo multimodal de tipo image-text-to-text desarrollado por meta-models (Meta) y publicado en HuggingFace bajo la licencia muse-model-license. La nomenclatura del nombre apunta a una arquitectura de mezcla de expertos (MoE) con aproximadamente 816.000 millones de parámetros totales y unos 42.000 millones de parámetros activos por token, si bien el recuento real de pesos safetensors asciende a 822.036.529.664 parámetros. El repositorio ocupa 1644,4 GB, un tamaño coherente con un checkpoint almacenado en precisión de 16 bits.
+Muse-Spark-Open-816B-A42B es un modelo multimodal de tipo image-text-to-text desarrollado por meta-models (Meta) y publicado en Hugging Face bajo la licencia muse-model-license. La nomenclatura del nombre apunta a una arquitectura de mezcla de expertos (MoE) con aproximadamente 816.000 millones de parámetros totales y unos 42.000 millones de parámetros activos por token, si bien el recuento real de pesos safetensors asciende a 822.036.529.664 parámetros. El repositorio ocupa 1644,4 GB, un tamaño coherente con un checkpoint almacenado en precisión de 16 bits.
 
 El pipeline declarado es image-text-to-text, por lo que el modelo acepta entradas de imagen y texto y genera texto, situándose en la categoría de modelos de visión-lenguaje (VLM). La etiqueta muse_spark y el campo muse apuntan a una arquitectura propia de Meta dentro de su familia Muse, aunque no se dispone de documentación técnica pública que detalle su diseño interno. El único idioma declarado es el inglés (en).
 
-El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. Con 402 descargas y 123 likes desde su publicación en septiembre de 2026, se trata de un modelo de gran escala orientado a despliegues con infraestructura multinodo, no a hardware de consumo.
+El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. Con 402 descargas y 123 likes desde su publicación en septiembre de 2026, se trata de un modelo de gran escala orientado a despliegues con infraestructura multinodo, no a hardware de consumo.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ Los valores de los modelos de referencia proceden de su documentacion publica y 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Muse-Spark-Open-816B-A42B | 822B | ~42B (no confirmado) | no disponible | Si (image-text-to-text) | muse-model-license (other) | Gated en HuggingFace |
+| Muse-Spark-Open-816B-A42B | 822B | ~42B (no confirmado) | no disponible | Si (image-text-to-text) | muse-model-license (other) | Gated en Hugging Face |
 | DeepSeek-V3 | 671B | 37B | 128K | No (solo texto) | MIT modificada | Abierta |
 | Llama 4 Maverick | 400B | 17B | 1M | Si | Llama 4 Community License | Abierta |
 | Qwen3-235B-A22B | 235B | 22B | 128K | No (solo texto) | Apache 2.0 (segun variante) | Abierta |
@@ -93,13 +93,13 @@ Muse-Spark-Open-816B-A42B se situa por encima de sus alternativas en numero de p
 - Sesgos conocidos: no disponibles en la informacion proporcionada; al estar entrenado predominantemente en ingles, es probable un sesgo hacia contextos culturales angloparlantes.
 - Riesgo de alucinacion: no cuantificado. En tareas de descripcion de imagenes, los modelos multimodales tienden a inventar detalles no presentes en la entrada, por lo que se recomienda verificacion humana en aplicaciones criticas.
 - Limitaciones de contexto o idioma: solo se declara ingles; no se ha publicado la longitud de contexto soportada, lo que dificulta planificar casos de uso con documentos o conversaciones largas.
-- Restricciones de licencia: la licencia muse-model-license (categorizada como other) no es una licencia de codigo abierto estandar. Es imprescindible revisar sus terminos antes de cualquier uso comercial. El acceso esta restringido y exige aceptar condiciones en HuggingFace.
+- Restricciones de licencia: la licencia muse-model-license (categorizada como other) no es una licencia de codigo abierto estandar. Es imprescindible revisar sus terminos antes de cualquier uso comercial. El acceso esta restringido y exige aceptar condiciones en Hugging Face.
 - Advertencia para produccion: el tamano del checkpoint (1644,4 GB) y la ausencia de cuantizaciones publicadas implican costes de infraestructura elevados y tiempos de carga considerables. No se dispone de datos de throughput, latencia ni estabilidad en entornos de servicio continuo.
 - Ausencia de documentacion tecnica: no hay paper, blog ni ficha detallada que describa la arquitectura, el entrenamiento o el comportamiento esperado, lo que incrementa el riesgo de adoptarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
+- Hugging Face: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Sitio corporativo de Meta: https://www.meta.com/about/
 - Asistente Meta AI: https://www.meta.ai/
 - Meta for Business: https://business.facebook.com/

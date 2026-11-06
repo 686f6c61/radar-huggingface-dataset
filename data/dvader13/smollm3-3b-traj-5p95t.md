@@ -79,7 +79,7 @@ No se dispone de comparativa con otros checkpoints intermedios de RL de modelos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-5p95t
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-5p95t
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación de SmolLM3 en Transformers: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

@@ -78,9 +78,9 @@ No se dispone de comparativas publicadas. Esta conversión es funcionalmente equ
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen3-14b](https://huggingface.co/kerasformers/qwen3-14b)
+- [Hugging Face - kerasformers/qwen3-14b](https://huggingface.co/kerasformers/qwen3-14b)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)
-- [Colección Qwen3 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- [Colección Qwen3 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - [Paper: Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Paper: YaRN (arXiv:2309.00071)](https://arxiv.org/abs/2309.00071)

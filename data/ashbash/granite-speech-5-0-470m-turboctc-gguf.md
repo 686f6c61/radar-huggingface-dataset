@@ -19,7 +19,7 @@ La advertencia principal es la compatibilidad: la model card indica explícitame
 | Tipos de cuantizacion | bf16 unicamente (un solo fichero publicado, sin variantes Q4/Q8) |
 | Idiomas soportados | No disponible (no declarados en la model card ni en los metadatos del repositorio) |
 | Licencia | Apache 2.0 (pesos, heredada de IBM); script de conversion MIT |
-| Formato de pesos | GGUF (bf16); checkpoint original de IBM en formato nativo de HuggingFace |
+| Formato de pesos | GGUF (bf16); checkpoint original de IBM en formato nativo de Hugging Face |
 | Modelo base | ibm-granite/granite-speech-5.0-470m-turboctc (revision `1dd23f46f6d4e6eae2531982ba2e33220086dd97`) |
 | Tarea | Reconocimiento automatico del habla (speech-to-text) |
 | Runtime compatible | gmlx en macOS con Apple silicon; llama.cpp y otros runtimes GGUF no cargan el fichero |
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Formato | Runtime | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|---|
 | granite-speech-5.0-470m-turboctc-GGUF (este) | 473 M | GGUF bf16 | gmlx (macOS Apple silicon) | Apache 2.0 | No disponible | Incluye frontend de audio y vocabulario CTC en el fichero |
-| ibm-granite/granite-speech-5.0-470m-turboctc (base) | 473 M | Formato nativo HuggingFace | Ecosistema transformers/PyTorch | Apache 2.0 | No disponible | Mismos pesos; requiere el stack original de IBM |
+| ibm-granite/granite-speech-5.0-470m-turboctc (base) | 473 M | Formato nativo Hugging Face | Ecosistema transformers/PyTorch | Apache 2.0 | No disponible | Mismos pesos; requiere el stack original de IBM |
 | Familias ASR alternativas (Whisper, Parakeet CTC, wav2vec2) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible | Solo se citan como categoria; no se aportan datos verificables de parametros, contexto ni WER en la informacion disponible |
 
 La comparacion relevante y verificable es contra el checkpoint original de IBM: mismos pesos, misma licencia y mismo numero de parametros; la diferencia es el formato (GGUF bf16 con frontend de audio embebido), el runtime (gmlx en lugar del stack PyTorch) y la ausencia de variantes cuantizadas. No se dispone de datos de benchmarks que permitan comparar la calidad de transcripcion frente a otras familias de ASR.
@@ -93,7 +93,7 @@ La comparacion relevante y verificable es contra el checkpoint original de IBM: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ashbash/granite-speech-5.0-470m-turboctc-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ashbash/granite-speech-5.0-470m-turboctc-GGUF
 - Modelo base de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Runtime gmlx: https://asher.github.io/gmlx/
 - Documentacion de gmlx sobre Granite Switch y audio: https://asher.github.io/gmlx/granite-switch.html#audio

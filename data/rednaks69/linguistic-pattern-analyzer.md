@@ -81,8 +81,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linguistic Pattern Analyzer | 4,02 B | 4096 (entrenamiento) | Deteccion de manipulacion interpersonal | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible en la informacion | Instruccion general | Apache 2.0 | HuggingFace |
+| Linguistic Pattern Analyzer | 4,02 B | 4096 (entrenamiento) | Deteccion de manipulacion interpersonal | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible en la informacion | Instruccion general | Apache 2.0 | Hugging Face |
 | Modelos de analisis psicologico especializados | no disponible | no disponible | Analisis clinico o terapeutico | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos directamente comparables en la misma categoria (deteccion de manipulacion interpersonal con taxonomia fija). El unico punto de comparacion documentado es el modelo base Qwen3-4B-Instruct-2507, del que este modelo hereda arquitectura y tamano pero del que difiere en especializacion, calibracion y ablacion de rechazo.
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rednaks69/Linguistic-Pattern-Analyzer
+- Modelo en Hugging Face: https://huggingface.co/rednaks69/Linguistic-Pattern-Analyzer
 - Dataset de entrenamiento: https://huggingface.co/datasets/rednaks69/Linguistic-Pattern-Analyzer-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Script de evaluacion: `eval/evaluate.py` (referenciado en la model card, dentro del repositorio del modelo)

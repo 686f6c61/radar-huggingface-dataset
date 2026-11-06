@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged` es una exportacion en safetensors de un ajuste fino supervisado (SFT) completo, realizada por el usuario de HuggingFace `zhiyuanhucs`, a partir del modelo base `ltzheng/Qwen3.5-9B-General-Game`. Segun la model card, se trata de la fusion de pesos del checkpoint correspondiente al paso de entrenamiento empaquetado 200 del run original `checkpoint-200`, partiendo de la revision base `checkpoint-4183`. El resultado se publica como modelo mergeado listo para inferencia con Transformers.
+El modelo `zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged` es una exportacion en safetensors de un ajuste fino supervisado (SFT) completo, realizada por el usuario de Hugging Face `zhiyuanhucs`, a partir del modelo base `ltzheng/Qwen3.5-9B-General-Game`. Segun la model card, se trata de la fusion de pesos del checkpoint correspondiente al paso de entrenamiento empaquetado 200 del run original `checkpoint-200`, partiendo de la revision base `checkpoint-4183`. El resultado se publica como modelo mergeado listo para inferencia con Transformers.
 
 El modelo declara el pipeline `image-text-to-text`, lo que indica capacidad multimodal de entrada (imagen y texto), y emplea un conjunto de tokens especiales propios orientados a la interaccion agentica y al razonamiento estructurado: `<|action_start|>`, `<|action_end|>`, `<|action_sep|>`, `<|thought_start|>` y `<|thought_end|>`. Esta eleccion sugiere un entrenamiento orientado a tareas de tipo "juego" (game reasoning), con separacion explicita entre pensamiento y accion, aunque no se documenta el dataset ni el procedimiento de entrenamiento empleado.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged
+- Hugging Face: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged
 - Modelo base: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game
 - Checkpoint de origen (referenciado en la model card): zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929/checkpoint-200
 - Papers, blogs, repositorios o demos adicionales: no disponible

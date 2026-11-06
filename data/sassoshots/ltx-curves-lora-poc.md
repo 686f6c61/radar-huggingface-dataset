@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sassoshots/ltx-curves-lora-poc` es un repositorio publicado en HuggingFace por el usuario `sassoshots` que, por su nomenclatura, cabe interpretar como un adaptador LoRA (Low-Rank Adaptation) de prueba de concepto asociado a la familia LTX, el modelo de generacion de video de Lightricks, con el identificador de concepto o estilo `curves`. Esta interpretacion se basa unicamente en el nombre del repositorio: la ficha no incluye pipeline, arquitectura, licencia, idiomas ni ningun otro metadato tecnico que la confirme.
+`sassoshots/ltx-curves-lora-poc` es un repositorio publicado en Hugging Face por el usuario `sassoshots` que, por su nomenclatura, cabe interpretar como un adaptador LoRA (Low-Rank Adaptation) de prueba de concepto asociado a la familia LTX, el modelo de generacion de video de Lightricks, con el identificador de concepto o estilo `curves`. Esta interpretacion se basa unicamente en el nombre del repositorio: la ficha no incluye pipeline, arquitectura, licencia, idiomas ni ningun otro metadato tecnico que la confirme.
 
 La informacion objetiva disponible es minima: 0 descargas, 2 "likes", una unica etiqueta (`region:us`) y fechas de creacion y actualizacion identicas (13 de septiembre de 2026), lo que sugiere que el repositorio no se ha modificado desde su publicacion inicial. No hay model card, ficheros de pesos descritos ni documentacion de entrenamiento. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a camaras IP PoE de videovigilancia y son completamente ajenos al artefacto.
 
@@ -79,7 +79,7 @@ No disponible. No se han localizado adaptadores comparables de la misma categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sassoshots/ltx-curves-lora-poc
+- Hugging Face: https://huggingface.co/sassoshots/ltx-curves-lora-poc
 - Paper: no disponible
 - Blog o model card ampliada: no disponible
 - Repositorio de codigo: no disponible

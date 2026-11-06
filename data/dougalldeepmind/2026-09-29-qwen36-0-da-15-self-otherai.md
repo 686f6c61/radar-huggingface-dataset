@@ -76,10 +76,10 @@ No se dispone de datos de rendimiento de este adaptador ni de adaptadores compar
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA SFT sobre Qwen3.6-27B) | No disponible (r=64 sobre base de ~27B) | 8192 en entrenamiento | No disponible | No declarada | Publico en HuggingFace, 0 descargas |
+| Este adaptador (LoRA SFT sobre Qwen3.6-27B) | No disponible (r=64 sobre base de ~27B) | 8192 en entrenamiento | No disponible | No declarada | Publico en Hugging Face, 0 descargas |
 | Fine-tuning completo de Qwen/Qwen3.6-27B | 27B nominales | No disponible | No disponible | La del modelo base | Requiere reentrenar; coste de computo y almacenamiento muy superior |
 | Otros adaptadores LoRA publicados sobre Qwen/Qwen3.6-27B | No disponible | No disponible | No disponible | No disponible | No se identifican en la informacion proporcionada |
-| Modelo base sin adaptar (Qwen/Qwen3.6-27B) | 27B nominales | No disponible | No disponible | No disponible en esta informacion | Publico en HuggingFace |
+| Modelo base sin adaptar (Qwen/Qwen3.6-27B) | 27B nominales | No disponible | No disponible | No disponible en esta informacion | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de este adaptador ni de adaptadores compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-29-qwen36-0-da-15-self-otherai
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-29-qwen36-0-da-15-self-otherai
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-29-da-15-self-otherai-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de codigo de origen: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (commit c4c99847ac5d6e26a9cf8a407c243fa19a09ba62)

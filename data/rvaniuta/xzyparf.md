@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xzyparf es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2. Lo publica el usuario rvaniuta en HuggingFace y esta entrenado sobre la variante Krea 2 RAW (krea/Krea-2-Raw), aunque las muestras de la model card se han generado con Krea 2 Turbo en 8 pasos de inferencia. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0, con la libreria diffusers como via de uso.
+xzyparf es un adaptador LoRA de tipo DreamBooth para el modelo de generacion de imagenes Krea 2. Lo publica el usuario rvaniuta en Hugging Face y esta entrenado sobre la variante Krea 2 RAW (krea/Krea-2-Raw), aunque las muestras de la model card se han generado con Krea 2 Turbo en 8 pasos de inferencia. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0, con la libreria diffusers como via de uso.
 
 Se trata de un adaptador de bajo rango, no de un modelo autonomo: su funcion es inyectar un concepto concreto en el modelo base mediante la palabra de activacion `xzyparf`. Por los ejemplos publicados, el concepto aprendido gira en torno a un leopardo de las nieves en escenarios muy diversos (ciudad ciberpunk, fiesta victoriana, paisaje volcanico), lo que sugiere que el entrenamiento captura el sujeto y no un estilo global.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rvaniuta/xzyparf
+- Modelo en Hugging Face: https://huggingface.co/rvaniuta/xzyparf
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Variante usada en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Muestras del autor (dentro del repositorio): sample_0.png, sample_1.png, sample_2.png

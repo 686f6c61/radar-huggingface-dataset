@@ -91,7 +91,7 @@ La diferencia frente a los originales es exclusivamente de formato y cuantizacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamnaciri/tarjama-models
+- Repositorio en Hugging Face: https://huggingface.co/adamnaciri/tarjama-models
 - Aplicacion Tarjama (repositorio del autor): https://github.com/Blvkman/Tarjama
 - Modelo original de reconocimiento de voz (NVIDIA NGC): https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_ar_fastconformer_hybrid_large_pcd
 - Modelo de traduccion multilingue original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-afa-fra_ita_por_spa

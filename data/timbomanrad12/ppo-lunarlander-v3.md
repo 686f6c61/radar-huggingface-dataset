@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TimbomanRad12/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en HuggingFace Hub. No es un modelo de lenguaje: se trata de una politica de control que recibe observaciones continuas de 8 dimensiones del entorno (posicion, velocidad, angulo, velocidad angular, contacto de las patas) y emite dos acciones discretas (motor principal y motores laterales) para aterrizar de forma estable una nave en una plataforma modular.
+TimbomanRad12/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en Hugging Face Hub. No es un modelo de lenguaje: se trata de una politica de control que recibe observaciones continuas de 8 dimensiones del entorno (posicion, velocidad, angulo, velocidad angular, contacto de las patas) y emite dos acciones discretas (motor principal y motores laterales) para aterrizar de forma estable una nave en una plataforma modular.
 
 El modelo resuelve el problema clasico de control continuo-discreto de la familia Gymnasium/Farama y su interes principal es pedagogico y de infraestructura: sirve como referencia de un pipeline completo de RL (entrenamiento, evaluacion, publicacion en el Hub) y como baseline para comparar algoritmos. El autor declara una recompensa media de 259,61 +/- 17,99 en LunarLander-v3, por encima del umbral de 200 que la comunidad suele considerar "entorno resuelto", aunque el resultado figura como no verificado.
 
@@ -41,7 +41,7 @@ PPO es un metodo de gradiente de politica con recorte de la ratio de probabilida
 - Control de aterrizaje en LunarLander-v3: la politica produce acciones discretas de encendido del motor principal y de los motores de orientacion para descender y posarse sobre la plataforma.
 - Aprendizaje por refuerzo profundo: el artefacto encapsula una politica entrenada con PPO, reutilizable para evaluacion o inicializacion de nuevos entrenamientos.
 - Evaluacion reproducible en el entorno: puede cargarse con stable-baselines3 y ejecutarse en bucle de inferencia para medir recompensa media sobre episodios nuevos.
-- Integracion con el ecosistema HuggingFace: al estar etiquetado con stable-baselines3 y publicarse mediante huggingface_sb3, encaja en el flujo de carga remota desde el Hub.
+- Integracion con el ecosistema Hugging Face: al estar etiquetado con stable-baselines3 y publicarse mediante huggingface_sb3, encaja en el flujo de carga remota desde el Hub.
 - Generacion de texto: no disponible (no es un modelo de lenguaje).
 - Razonamiento, codigo y matematicas: no disponible.
 - Tool calling / function calling: no disponible.
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Algoritmo | Entorno | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TimbomanRad12/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 259,61 +/- 17,99 (no verificado) | no disponible | HuggingFace Hub |
-| Agentes DQN sobre LunarLander (varias publicaciones comunitarias en el Hub) | DQN | LunarLander-v3 / v2 | no disponible | no disponible | HuggingFace Hub |
-| Agentes PPO de referencia del RL Zoo de stable-baselines3 | PPO | LunarLander-v2 | no disponible | MIT (licencia del repositorio de la libreria) | GitHub / HuggingFace Hub |
+| TimbomanRad12/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 259,61 +/- 17,99 (no verificado) | no disponible | Hugging Face Hub |
+| Agentes DQN sobre LunarLander (varias publicaciones comunitarias en el Hub) | DQN | LunarLander-v3 / v2 | no disponible | no disponible | Hugging Face Hub |
+| Agentes PPO de referencia del RL Zoo de stable-baselines3 | PPO | LunarLander-v2 | no disponible | MIT (licencia del repositorio de la libreria) | GitHub / Hugging Face Hub |
 
 Cualquier comparacion cuantitativa exige reentrenar o reevaluar cada agente bajo el mismo numero de episodios, las mismas semillas y la misma version del entorno (LunarLander-v2 y v3 no son equivalentes en su dinamica ni en sus recompensas).
 
@@ -105,9 +105,9 @@ Cualquier comparacion cuantitativa exige reentrenar o reevaluar cada agente bajo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimbomanRad12/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/TimbomanRad12/ppo-LunarLander-v3
 - Libreria stable-baselines3 (citada en la model card): https://github.com/DLR-RM/stable-baselines3
-- Utilidad huggingface_sb3 (mencionada en el fragmento de codigo de la model card; repositorio oficial de HuggingFace): https://github.com/huggingface/huggingface_sb3
+- Utilidad huggingface_sb3 (mencionada en el fragmento de codigo de la model card; repositorio oficial de Hugging Face): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander de Gymnasium / Farama (referencia general del entorno, no incluida en la model card): https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Paper de PPO (referencia general del algoritmo, no incluida en la model card): https://arxiv.org/abs/1707.06347
 - Busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a paginas de soporte de Microsoft ajenas al contenido.

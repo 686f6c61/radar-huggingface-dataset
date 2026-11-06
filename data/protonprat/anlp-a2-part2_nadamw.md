@@ -95,13 +95,13 @@ No se conocen alternativas de propósito general comparables: los modelos de 10 
 - Longitud de contexto desconocida: la configuración no se detalla en la información disponible, por lo que no puede garantizarse el comportamiento en secuencias largas.
 - Riesgo de alucinación: alto en términos relativos, dado el escaso ajuste del modelo. Cualquier salida debe considerarse no fiable sin verificación.
 - Sesgos: el corpus `browndw/human-ai-parallel-corpus` puede contener sesgos propios de los textos humano-IA que lo componen; no se documenta ningún análisis de sesgo ni mitigación.
-- Integración: al no registrarse en AutoModel, no funciona con herramientas estándar (vLLM, TGI, Ollama, llama.cpp) ni con pipelines de Transformers. Requiere el código de la asignatura, que no se incluye íntegramente en el repositorio de HuggingFace.
+- Integración: al no registrarse en AutoModel, no funciona con herramientas estándar (vLLM, TGI, Ollama, llama.cpp) ni con pipelines de Transformers. Requiere el código de la asignatura, que no se incluye íntegramente en el repositorio de Hugging Face.
 - Trazabilidad de la implementación: el propio autor indica que MoE, las actualizaciones del optimizador y la decodificación se implementaron con asistencia de código por LLM, lo que añade un riesgo de errores sutiles que conviene auditar antes de reutilizar el código.
 - Ambigüedad sobre MoE: no se aclara si esta exportación concreta incorpora mezcla de expertos, por lo que no puede confirmarse el número de parámetros activos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part2_nadamw
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part2_nadamw
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/ffca07ip
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus (revisión `b514ff64988d9e322fd81c5d70d69a38e78491f5`)
 - Repositorio hermano (variante AdamW): https://huggingface.co/Adi-AI/anlp-a2-part2-adamw

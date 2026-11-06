@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento ni especificaciones de otros modelos NLI z
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference4j/deberta-v3-base-zeroshot-v2.0-c
+- Repositorio Hugging Face: https://huggingface.co/inference4j/deberta-v3-base-zeroshot-v2.0-c
 - Modelo original: https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0-c
 - Autor original: https://huggingface.co/MoritzLaurer
 - inference4j: https://github.com/inference4j/inference4j

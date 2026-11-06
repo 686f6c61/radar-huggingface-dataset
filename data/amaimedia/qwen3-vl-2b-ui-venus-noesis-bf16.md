@@ -65,7 +65,7 @@ No se han publicado resultados comparativos detallados en la información dispon
 - VRAM estimada para inferencia: con 2,4 B parámetros en BF16, el modelo ocupa aproximadamente 4,6 GB en memoria. Con cuantización a 8 bits (~2,3 GB) o 4 bits (~1,2 GB) podría ejecutarse en GPUs con 4-6 GB de VRAM.
 - GPUs recomendadas: cualquier GPU con soporte nativo de BF16, es decir, Ampere o posterior (RTX 30xx, RTX 40xx, A100, H100) y GPUs AMD con CDNA2 (MI200) o posterior.
 - Compatibilidad con GPUs de consumo: sí, cabe en una RTX 3060 (12 GB) o RTX 4060 (8 GB) sin cuantizar, y en GPUs de 6 GB con cuantización.
-- Opciones de despliegue: al ser un modelo de transformers estándar, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión) y el pipeline clásico de HuggingFace con `transformers`.
+- Opciones de despliegue: al ser un modelo de transformers estándar, es compatible con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión) y el pipeline clásico de Hugging Face con `transformers`.
 - Latencia y throughput: no se proporcionan datos medidos. En una RTX 3060, la inferencia de un modelo de 2,4 B en BF16 suele rondar los 20-40 tokens/s, pero depende del hardware y de la longitud de la entrada visual.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ El modelo compite directamente con otros agentes GUI como UI-TARS. Su ventaja es
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16
+- Repo de Hugging Face: https://huggingface.co/AMAImedia/Qwen3-VL-2B-UI-Venus-NOESIS-BF16
 - Modelo original: https://huggingface.co/inclusionAI/UI-Venus-1.5-2B
 - Proyecto UI-Venus: https://ui-venus.github.io/UI-Venus-1.5
 - Paper (arxiv): https://arxiv.org/abs/2602.09082

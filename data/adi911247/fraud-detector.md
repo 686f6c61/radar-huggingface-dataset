@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fraud-detector` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario Adi911247 y publicado en HuggingFace. A pesar de su nombre, no se proporciona información sobre el conjunto de datos de entrenamiento ni sobre el dominio específico de detección de fraude; la model card solo indica que fue entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL. El repositorio no tiene descargas ni interacciones registradas, y su tamaño es de 0 GB, lo que sugiere que los pesos no están disponibles públicamente o que el modelo no ha sido subido correctamente.
+El modelo `fraud-detector` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen2.5-1.5B-Instruct`, desarrollado por el usuario Adi911247 y publicado en Hugging Face. A pesar de su nombre, no se proporciona información sobre el conjunto de datos de entrenamiento ni sobre el dominio específico de detección de fraude; la model card solo indica que fue entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL. El repositorio no tiene descargas ni interacciones registradas, y su tamaño es de 0 GB, lo que sugiere que los pesos no están disponibles públicamente o que el modelo no ha sido subido correctamente.
 
 El modelo hereda las características arquitectónicas del modelo base Qwen2.5-1.5B-Instruct: un transformer decoder-only con 1.500 millones de parámetros y una ventana de contexto de 32.768 tokens. Sin embargo, al ser un fine-tuning, las capacidades finales dependen del dataset utilizado, del cual no hay rastro en la documentación. La relevancia actual es limitada, ya que no se aportan datos de rendimiento, casos de uso ni métricas, y el repositorio parece incompleto.
 
@@ -79,6 +79,6 @@ No se dispone de comparativas de rendimiento reales entre estos modelos y el `fr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Adi911247/fraud-detector](https://huggingface.co/Adi911247/fraud-detector)
+- Repositorio Hugging Face: [Adi911247/fraud-detector](https://huggingface.co/Adi911247/fraud-detector)
 - Modelo base: [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - TRL: [https://github.com/huggingface/trl](https://github.com/huggingface/trl)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `quanda-bench-test/gpt2-small-trex-wikitext-ft` es un checkpoint de GPT-2 Small alojado en HuggingFace por el usuario `quanda-bench-test`, presumiblemente como artefacto de un banco de pruebas de cuantizacion (el prefijo "quanda" sugiere "quantization benchmark"). El nombre del repositorio indica un ajuste fino sobre el dataset WikiText (probablemente WikiText-2 o WikiText-103) y una conexion con la tecnica TREX (TREx, extraccion de conocimiento factual de modelos de lenguaje), aunque la model card no documenta ninguno de estos extremos.
+El modelo `quanda-bench-test/gpt2-small-trex-wikitext-ft` es un checkpoint de GPT-2 Small alojado en Hugging Face por el usuario `quanda-bench-test`, presumiblemente como artefacto de un banco de pruebas de cuantizacion (el prefijo "quanda" sugiere "quantization benchmark"). El nombre del repositorio indica un ajuste fino sobre el dataset WikiText (probablemente WikiText-2 o WikiText-103) y una conexion con la tecnica TREX (TREx, extraccion de conocimiento factual de modelos de lenguaje), aunque la model card no documenta ninguno de estos extremos.
 
 Arquitectonicamente se trata de un transformer decoder-only de tipo GPT-2, con 162.614.016 parametros totales segun los pesos en safetensors, lo que coincide con la configuracion clasica de GPT-2 Small (12 capas, 768 dimensiones ocultas, 12 cabezas de atencion). El repositorio ocupa 0,7 GB y se distribuye bajo licencia MIT.
 
-Su relevancia es limitada: se trata de un modelo de referencia para experimentos de cuantizacion y evaluacion de conocimiento factual, no un modelo de produccion. La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sobre entrenamiento, datos, hiperparametros ni evaluacion. Cualquier uso serio requiere inspeccionar directamente los pesos y la configuracion del repositorio.
+Su relevancia es limitada: se trata de un modelo de referencia para experimentos de cuantizacion y evaluacion de conocimiento factual, no un modelo de produccion. La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sobre entrenamiento, datos, hiperparametros ni evaluacion. Cualquier uso serio requiere inspeccionar directamente los pesos y la configuracion del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: se trata de un modelo de referencia para experimentos
 
 La arquitectura es la de un transformer decoder-only con atencion causal, coherente con GPT-2 Small: 12 capas, 768 dimensiones de embedding, 12 cabezas de atencion y 162,6 millones de parametros, cifra que coincide exactamente con los pesos publicados. El tag `nanogpt` sugiere que el entrenamiento o ajuste fino se realizo con la implementacion minimalista NanoGPT de Andrej Karpathy, y el sufijo `wikitext-ft` indica un ajuste fino sobre el corpus WikiText. El tag `arxiv:1910.09700` corresponde al paper de Lacoste et al. sobre el calculo de emisiones de carbono en machine learning, citado en la plantilla de la model card; no es una referencia al modelo en si.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, hiperparametros, regimen de precision (fp32, fp16, bf16) ni si se aplico RLHF o DPO. La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]". El prefijo `trex` en el nombre sugiere un uso previsto para evaluacion de conocimiento factual mediante el protocolo TREx (LAMA), pero esto es una inferencia a partir del nombre y no un dato documentado.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, hiperparametros, regimen de precision (fp32, fp16, bf16) ni si se aplico RLHF o DPO. La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]". El prefijo `trex` en el nombre sugiere un uso previsto para evaluacion de conocimiento factual mediante el protocolo TREx (LAMA), pero esto es una inferencia a partir del nombre y no un dato documentado.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Baseline de perplejidad en WikiText: util para comparar variantes de entrenamiento (NanoGPT, ajuste fino, destilacion) contra una referencia fija de 162 M parametros.
 - Experimentos de interpretabilidad de bajo coste: al caber en cualquier GPU consumer, permite ejecutar analisis de neuronas, circuitos o attention heads sin reservar hardware de gama alta.
 - Pruebas de pipelines de inferencia: validacion de integraciones con `transformers`, `vLLM` o `llama.cpp` (previa conversion a GGUF) usando un checkpoint pequeno y rapido de cargar.
-- Docencia y demos: ejemplo practico de ajuste fino de GPT-2 sobre un corpus concreto y de publicacion de checkpoints en HuggingFace, con licencia permisiva MIT que facilita su uso en materiales didacticos.
+- Docencia y demos: ejemplo practico de ajuste fino de GPT-2 sobre un corpus concreto y de publicacion de checkpoints en Hugging Face, con licencia permisiva MIT que facilita su uso en materiales didacticos.
 - Generacion de texto de relleno en pruebas de integracion: su tamano reducido y velocidad de inferencia lo hacen adecuado como generador de texto sintetico en tests automatizados, sin los costes de un modelo grande.
 
 ## Benchmarks y rendimiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `quanda-bench-test/gpt2-small-trex-wikitext-ft` | 162,6 M | no disponible | MIT | HuggingFace (9 descargas) | Checkpoint de banco de pruebas, sin documentacion |
-| GPT-2 Small (OpenAI) | 124 M | 1024 | MIT | HuggingFace (`openai-community/gpt2`) | Modelo original, ampliamente documentado y evaluado |
-| GPT-2 Medium (OpenAI) | 355 M | 1024 | MIT | HuggingFace (`openai-community/gpt2-medium`) | Version mayor de la misma familia |
-| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | HuggingFace (`distilbert/distilgpt2`) | Version destilada, mas rapida y ligera |
+| `quanda-bench-test/gpt2-small-trex-wikitext-ft` | 162,6 M | no disponible | MIT | Hugging Face (9 descargas) | Checkpoint de banco de pruebas, sin documentacion |
+| GPT-2 Small (OpenAI) | 124 M | 1024 | MIT | Hugging Face (`openai-community/gpt2`) | Modelo original, ampliamente documentado y evaluado |
+| GPT-2 Medium (OpenAI) | 355 M | 1024 | MIT | Hugging Face (`openai-community/gpt2-medium`) | Version mayor de la misma familia |
+| DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Hugging Face (`distilbert/distilgpt2`) | Version destilada, mas rapida y ligera |
 
 Nota: la diferencia de parametros entre este checkpoint (162,6 M) y GPT-2 Small oficial (124 M) puede deberse a diferencias en el conteo (por ejemplo, incluir embeddings atados o no) o a una configuracion distinta; no hay informacion en el repositorio que lo aclare.
 
@@ -86,7 +86,7 @@ Nota: la diferencia de parametros entre este checkpoint (162,6 M) y GPT-2 Small 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex-wikitext-ft
+- Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex-wikitext-ft
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - GPT-2 Small oficial (referencia de arquitectura): https://huggingface.co/openai-community/gpt2
 - NanoGPT (implementacion sugerida por el tag `nanogpt`): https://github.com/karpathy/nanoGPT

@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/likhitbhogadi/anlp-a2-q1-dense
+- Modelo en Hugging Face: https://huggingface.co/likhitbhogadi/anlp-a2-q1-dense
 - Log de entrenamiento en Weights & Biases: https://wandb.ai/likhitbhogadi-iiit-hyderabad/anlp-a2-q1/runs/78v384k7
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Codigo del modelo: `src/part1/model.py` dentro del repositorio de la asignatura (URL no disponible)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-afford_rehearsal_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ser combinado con el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un checkpoint de fine-tuning mediante aprendizaje supervisado (SFT, por sus siglas en inglés), como sugiere el sufijo `_sft_s0` en el nombre. El prefijo `afford_rehearsal` apunta a un posible entrenamiento orientado a tareas de razonamiento sobre affordances (posibilidades de interacción con objetos o entornos), aunque no se proporciona documentación que confirme esta hipótesis.
+El modelo `Jordine/patina3-afford_rehearsal_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ser combinado con el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un checkpoint de fine-tuning mediante aprendizaje supervisado (SFT, por sus siglas en inglés), como sugiere el sufijo `_sft_s0` en el nombre. El prefijo `afford_rehearsal` apunta a un posible entrenamiento orientado a tareas de razonamiento sobre affordances (posibilidades de interacción con objetos o entornos), aunque no se proporciona documentación que confirme esta hipótesis.
 
 El repositorio contiene únicamente los pesos del adaptador (0.7 GB) en formato `safetensors`, junto con los metadatos de PEFT. Al ser un adaptador LoRA, no es un modelo autónomo: requiere cargar el modelo base Llama-3.1-8B y aplicar los pesos del adaptador para obtener el modelo final. La ficha pública es extremadamente escasa, con todos los campos de la model card marcados como `[More Information Needed]`, por lo que la mayoría de las especificaciones técnicas, datos de entrenamiento y rendimiento no están disponibles.
 
@@ -50,7 +50,7 @@ Dada la falta de documentación, los casos de uso son hipotéticos y dependen de
 - Investigación en aprendizaje por refuerzo y affordances: si el entrenamiento realmente se centró en affordances, el modelo podría emplearse en entornos de simulación robótica o juegos para evaluar la comprensión de acciones posibles.
 - Prototipado rápido de chatbots especializados: al ser un adaptador ligero, se puede cargar sobre Llama-3.1-8B para crear un asistente con un tono o conocimiento específico, aunque se desconoce el dominio.
 - Evaluación de técnicas LoRA: útil para investigadores que estudian el impacto de diferentes estrategias de fine-tuning (rehearsal, SFT) sobre modelos base.
-- Educación y experimentación: como ejemplo de adaptador PEFT en HuggingFace, puede usarse para aprender a cargar y utilizar LoRA con la librería `transformers`.
+- Educación y experimentación: como ejemplo de adaptador PEFT en Hugging Face, puede usarse para aprender a cargar y utilizar LoRA con la librería `transformers`.
 - Integración en pipelines de generación aumentada por recuperación (RAG): combinado con el modelo base, podría emplearse para tareas de respuesta a preguntas sobre corpus específicos, siempre que el fine-tuning no haya degradado las capacidades generales.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base so
 - VRAM estimada: aproximadamente 16 GB en FP16 (8B parámetros × 2 bytes), o unos 8 GB si se cuantiza a 4 bits (por ejemplo, con bitsandbytes o GPTQ).
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40 GB), H100 (80 GB) para FP16; GPUs con 8-12 GB (RTX 3080, RTX 4070) pueden funcionar con cuantización.
 - En consumer GPU: sí, cabe en GPUs de gama alta (RTX 3090/4090) sin cuantización, y en GPUs de 8-12 GB con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp (con conversión a GGUF), Ollama, HuggingFace TGI, o directamente con `transformers` + PEFT.
+- Opciones de despliegue: vLLM, llama.cpp (con conversión a GGUF), Ollama, Hugging Face TGI, o directamente con `transformers` + PEFT.
 - Latencia y throughput: no disponibles para este adaptador concreto. Como referencia, Llama-3.1-8B en FP16 en una RTX 4090 genera aproximadamente 50-80 tokens por segundo, pero el adaptador añade una sobrecarga mínima.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8.03B | 128k | Llama 3.1 Community License | HuggingFace |
-| Jordine/patina3-afford_rehearsal_sft_s0 | 8.03B + adaptador | No disponible | No disponible | HuggingFace |
-| Mistral-7B | 7.24B | 32k | Apache 2.0 | HuggingFace |
-| Gemma-2-9B | 9.24B | 8k | Gemma License | HuggingFace |
+| Llama-3.1-8B (base) | 8.03B | 128k | Llama 3.1 Community License | Hugging Face |
+| Jordine/patina3-afford_rehearsal_sft_s0 | 8.03B + adaptador | No disponible | No disponible | Hugging Face |
+| Mistral-7B | 7.24B | 32k | Apache 2.0 | Hugging Face |
+| Gemma-2-9B | 9.24B | 8k | Gemma License | Hugging Face |
 
 La comparativa es limitada porque no se conocen los resultados de rendimiento del adaptador. Su principal diferencia frente a los otros modelos es que no es un modelo independiente, sino un complemento a Llama-3.1-8B.
 
@@ -91,7 +91,7 @@ La comparativa es limitada porque no se conocen los resultados de rendimiento de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s0
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-afford_rehearsal_sft_s0
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 

@@ -24,7 +24,7 @@ Es relevante porque cubre la categoría de modelos de decisión orientados a tip
 | Tipos de pregunta | `noul` (si/no), `choice` (2-255 opciones), `score` (2-255 niveles ordenados) |
 | Pipeline declarado | text-classification |
 | Desarrollador | FrontiersMind |
-| Fecha indicada en HuggingFace | 2026-09-22 |
+| Fecha indicada en Hugging Face | 2026-09-22 |
 | Descargas / likes | 0 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lumma-fev-0.6b | 650 M | Modelo de decision (clasificacion tipada) | no disponible | Ingles | MIT | safetensors en HuggingFace, requiere `custom_code` |
-| Lumma-0.6B-Base | 649 M | Transformer causal generativo (base) | no disponible | no disponible | no disponible | HuggingFace (modelo base referenciado) |
+| Lumma-fev-0.6b | 650 M | Modelo de decision (clasificacion tipada) | no disponible | Ingles | MIT | safetensors en Hugging Face, requiere `custom_code` |
+| Lumma-0.6B-Base | 649 M | Transformer causal generativo (base) | no disponible | no disponible | no disponible | Hugging Face (modelo base referenciado) |
 | Familia Jev-like | no disponible | Modelo de decision | no disponible | no disponible | no disponible | La model card menciona la categoria, sin nombrar alternativas concretas |
 | Lumma-Fev-3B / Lumma-Fev-9B | 3 B / 9 B (anunciados) | Modelo de decision | no disponible | no disponible | no disponible | Anunciados para la misma semana, con blog de benchmarks |
 
@@ -90,12 +90,12 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 - El uso requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio del autor; conviene auditar ese codigo antes de desplegarlo en produccion.
 - No se publican detalles del dataset de entrenamiento ni evaluaciones de sesgo, por lo que el riesgo de sesgos sistematicos en las decisiones no esta caracterizado.
 - No se documentan la longitud de contexto soportada ni el comportamiento con documentos largos, lo que limita el diseno de pipelines que dependan de ventanas amplias.
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta, y la fecha indicada en HuggingFace es 2026-09-22; se trata de un modelo muy reciente y sin validacion externa conocida.
+- El repositorio registra 0 descargas y 1 like en el momento de la consulta, y la fecha indicada en Hugging Face es 2026-09-22; se trata de un modelo muy reciente y sin validacion externa conocida.
 - La licencia MIT permite uso comercial, pero no cubre posibles reclamaciones derivadas de las decisiones automatizadas tomadas con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-0.6b
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-0.6b
 - Modelo base: https://huggingface.co/FrontiersMind/Lumma-0.6B-Base
 - Sitio web oficial: https://www.frontiersmind.ai/
 - Discord: https://discord.gg/ZGdjCdRt

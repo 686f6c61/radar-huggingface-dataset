@@ -107,7 +107,7 @@ La unica comparacion cuantitativa disponible en la informacion proporcionada es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/whisper-medium.en-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/whisper-medium.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-medium.en
 - Commit del modelo base usado en la conversion: https://huggingface.co/openai/whisper-medium.en/commit/2e98eb6
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
@@ -116,4 +116,4 @@ La unica comparacion cuantitativa disponible en la informacion proporcionada es 
 - Conversion original de referencia (handy-computer): https://huggingface.co/handy-computer/whisper-medium.en-gguf
 - Articulo de Whisper: https://arxiv.org/abs/2212.04356
 - Codigo original de OpenAI Whisper: https://github.com/openai/whisper
-- Indice de modelos Whisper en HuggingFace: https://huggingface.co/models?search=openai/whisper
+- Indice de modelos Whisper en Hugging Face: https://huggingface.co/models?search=openai/whisper

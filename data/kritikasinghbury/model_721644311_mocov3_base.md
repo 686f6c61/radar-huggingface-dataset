@@ -64,7 +64,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kritikasinghbury/model_721644311_mocov3_base
+- Repositorio Hugging Face: https://huggingface.co/kritikasinghbury/model_721644311_mocov3_base
 - Implementación oficial de MoCo v3 (Facebook Research): https://github.com/facebookresearch/moco-v3
 - Documentación de MoCo v3 en MMSelfSup: https://mmselfsup.readthedocs.io/en/1.x/papers/mocov3.html
 - Repositorio original de MoCo: https://github.com/facebookresearch/moco

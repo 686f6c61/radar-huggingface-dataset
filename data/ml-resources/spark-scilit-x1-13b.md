@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-Scilit-X1-13B es un modelo de lenguaje de 13.264.901.120 parametros desarrollado por iFLYTEK y orientado especificamente a tareas de investigacion academica y literatura cientifica. La ficha que nos ocupa es un espejo no oficial publicado en HuggingFace por el usuario ml-resources, que replica el repositorio original iflytek/Spark-Scilit-X1-13B alojado en ModelScope, manteniendo la licencia Apache 2.0. El modelo deriva de la generacion mas reciente del modelo fundacional de iFLYTEK y ha sido ajustado sobre tareas centrales extraidas de literatura cientifica.
+Spark-Scilit-X1-13B es un modelo de lenguaje de 13.264.901.120 parametros desarrollado por iFLYTEK y orientado especificamente a tareas de investigacion academica y literatura cientifica. La ficha que nos ocupa es un espejo no oficial publicado en Hugging Face por el usuario ml-resources, que replica el repositorio original iflytek/Spark-Scilit-X1-13B alojado en ModelScope, manteniendo la licencia Apache 2.0. El modelo deriva de la generacion mas reciente del modelo fundacional de iFLYTEK y ha sido ajustado sobre tareas centrales extraidas de literatura cientifica.
 
 Arquitectonicamente es un transformer decoder-only de 40 capas, dimension oculta de atencion de 5120, 40 cabezas de atencion con Grouped-Query Attention (GQA), activacion GeLU y un vocabulario de 130.000 tokens. Soporta una longitud de contexto de 32K tokens. Su rasgo diferencial es un marco unificado de razonamiento que combina cadena de pensamiento larga (CoT) con teoria de proceso dual, de modo que puede operar en modo reactivo (rapido) o deliberativo (lento), exponiendo el proceso de pensamiento antes de la respuesta final.
 
@@ -77,7 +77,7 @@ No se han publicado resultados en benchmarks estandarizados (MMLU, HumanEval, GS
 - GPU recomendadas: NVIDIA A100 de 80 GB (es la configuracion usada en la evaluacion oficial del modelo), A100 de 40 GB o H100. En configuraciones de 40 GB conviene vigilar el margen para el contexto de 32K.
 - Cache KV: el numero de cabezas KV de la GQA no se especifica en la informacion disponible, por lo que no es posible calcular con precision el consumo a maxima longitud de contexto.
 - GPU de consumo: no cabe en una RTX 4090 de 24 GB en bfloat16 sin offloading o cuantizacion. No se ha publicado ninguna version cuantizada (GGUF, AWQ, GPTQ) en la informacion disponible, por lo que el uso en GPU de consumo requeriria cuantizar los pesos por cuenta propia.
-- Opciones de despliegue: la ruta documentada es HuggingFace Transformers con `AutoModelForCausalLM`, `torch_dtype=bfloat16` y `device_map="auto"`, con el tokenizer personalizado `SparkTokenizer` e instalacion previa del paquete (`pip install .`) en Python 3.10 o superior.
+- Opciones de despliegue: la ruta documentada es Hugging Face Transformers con `AutoModelForCausalLM`, `torch_dtype=bfloat16` y `device_map="auto"`, con el tokenizer personalizado `SparkTokenizer` e instalacion previa del paquete (`pip install .`) en Python 3.10 o superior.
 - vLLM, llama.cpp, Ollama y TGI: no documentados en la informacion disponible; al requerir custom_code y un tokenizer propio, la integracion en estos motores no esta garantizada.
 - Latencia y throughput: no disponible.
 
@@ -109,6 +109,6 @@ Spark-Scilit-X1-13B obtiene la mejor puntuacion en generacion de revisiones (3,8
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/ml-resources/Spark-Scilit-X1-13B
+- Hugging Face (espejo): https://huggingface.co/ml-resources/Spark-Scilit-X1-13B
 - ModelScope (repositorio original de iflytek): https://www.modelscope.cn/models/iflytek/Spark-Scilit-X1-13B
 - Busqueda web: no se encontraron enlaces relevantes al modelo, paper tecnico, blog o repositorio adicional en los resultados disponibles.

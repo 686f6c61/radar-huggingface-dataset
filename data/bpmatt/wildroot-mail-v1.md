@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wildroot Mail v1 es un conjunto de dos modelos pequeños de clasificación de correo electrónico desarrollados por el usuario bpmatt y publicados en HuggingFace. Ambos derivan de BAAI/bge-small-en-v1.5, un transformer de tipo encoder con 33,4 millones de parámetros, ajustado de extremo a extremo y exportado a ONNX en float32. El objetivo es ordenar el correo localmente, en la propia máquina del usuario, sin depender de un servidor de modelos ni de servicios en la nube.
+Wildroot Mail v1 es un conjunto de dos modelos pequeños de clasificación de correo electrónico desarrollados por el usuario bpmatt y publicados en Hugging Face. Ambos derivan de BAAI/bge-small-en-v1.5, un transformer de tipo encoder con 33,4 millones de parámetros, ajustado de extremo a extremo y exportado a ONNX en float32. El objetivo es ordenar el correo localmente, en la propia máquina del usuario, sin depender de un servidor de modelos ni de servicios en la nube.
 
 El primero de los modelos, `student.onnx`, predice la categoría del mensaje (necesita respuesta, actualizaciones, promocional, ventas o spam), la urgencia de respuesta en una escala de 1 a 5 y la probabilidad de que el correo sea personal. El segundo, `action.onnx`, calcula una puntuación entre 0 y 1 que indica si el mensaje requiere acción ese mismo día. Ambos se ejecutan en CPU con ONNX Runtime y se acompañan de una capa de reglas deterministas en JavaScript (`engine.mjs`) que el modelo no puede sobreescribir.
 
@@ -76,8 +76,8 @@ El umbral de acción se eligió sobre correo de desarrollo después del test; co
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wildroot Mail v1 | 33,4 M | 256 tokens | Clasificación y priorización de correo | MIT | ONNX en HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33,4 M | 512 tokens (modelo base) | Embeddings de recuperación | MIT | HuggingFace |
+| Wildroot Mail v1 | 33,4 M | 256 tokens | Clasificación y priorización de correo | MIT | ONNX en Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33,4 M | 512 tokens (modelo base) | Embeddings de recuperación | MIT | Hugging Face |
 | Jev 1.14 | no disponible | no disponible | Clasificación de correo | no disponible (alojado) | Servicio alojado |
 
 La comparación con Jev 1.14 procede de la propia model card: Wildroot Mail v1 queda ligeramente por detrás en categoría y AUC de acción, pero mejora en precisión de needs-reply y ofrece ejecución local con licencia MIT. Frente a su modelo base, Wildroot Mail v1 añade cabezas de clasificación específicas de correo y una capa de reglas, a costa de reducir el contexto a 256 tokens.
@@ -96,7 +96,7 @@ La comparación con Jev 1.14 procede de la propia model card: Wildroot Mail v1 q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bpmatt/wildroot-mail-v1
+- Modelo en Hugging Face: https://huggingface.co/bpmatt/wildroot-mail-v1
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - ONNX Runtime: https://onnxruntime.ai/
-- Repositorio de tokenizers (HuggingFace): https://github.com/huggingface/tokenizers
+- Repositorio de tokenizers (Hugging Face): https://github.com/huggingface/tokenizers

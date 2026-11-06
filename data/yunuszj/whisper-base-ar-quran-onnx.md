@@ -94,10 +94,10 @@ Resultado final declarado en el conjunto de evaluacion: loss 0,0839 y WER 5,7544
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| YunusZJ/whisper-base-ar-quran-ONNX | No declarado (hereda Whisper base, ~74 M) | Ventanas de 30 s (arquitectura Whisper) | apache-2.0 | ONNX | HuggingFace, 0 descargas |
-| tarteel-ai/whisper-base-ar-quran | No declarado | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | HuggingFace, modelo de origen |
-| openai/whisper-base | 74 M (dato publico, no en la informacion proporcionada) | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | HuggingFace, ampliamente extendido |
-| openai/whisper-small | 244 M (dato publico, no en la informacion proporcionada) | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | HuggingFace, ampliamente extendido |
+| YunusZJ/whisper-base-ar-quran-ONNX | No declarado (hereda Whisper base, ~74 M) | Ventanas de 30 s (arquitectura Whisper) | apache-2.0 | ONNX | Hugging Face, 0 descargas |
+| tarteel-ai/whisper-base-ar-quran | No declarado | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | Hugging Face, modelo de origen |
+| openai/whisper-base | 74 M (dato publico, no en la informacion proporcionada) | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | Hugging Face, ampliamente extendido |
+| openai/whisper-small | 244 M (dato publico, no en la informacion proporcionada) | Ventanas de 30 s | No disponible en la informacion proporcionada | safetensors / PyTorch | Hugging Face, ampliamente extendido |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad. Cualquier afirmacion sobre cual transcribe mejor el arabe coranico requeriria una evaluacion propia.
 
@@ -110,12 +110,12 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base tarteel-ai/whisper-base-ar-quran y del propio openai/whisper-base, ya que el ONNX es una conversion derivada.
 - Conversion automatica sin validacion documentada: la model card indica que la conversion se realizo con un Space automatico. No se declara que se hayan verificado las salidas ONNX frente a las de PyTorch, por lo que puede haber divergencias numericas.
 - Repositorio sin traccion: 0 descargas y 0 likes. No hay evidencia de uso en produccion ni de mantenimiento posterior a la conversion.
-- Idiomas no declarados: la ficha de HuggingFace no lista idiomas soportados, lo que complica la seleccion automatizada del modelo en pipelines.
+- Idiomas no declarados: la ficha de Hugging Face no lista idiomas soportados, lo que complica la seleccion automatizada del modelo en pipelines.
 - Ausencia de soporte de agentes: no hay tool calling ni salida estructurada, por lo que no encaja en arquitecturas agenticas sin capas adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YunusZJ/whisper-base-ar-quran-ONNX
+- Modelo en Hugging Face: https://huggingface.co/YunusZJ/whisper-base-ar-quran-ONNX
 - Modelo base: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-base
 - Space de conversion a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx

@@ -16,7 +16,7 @@ La relevancia de esta ficha radica en que el abliterado elimina los mecanismos d
 | Longitud de contexto | no disponible (el modelo base Qwen3.8 soporta contexto largo, pero no se especifica el valor exacto) |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
 | Idiomas soportados | no disponible (el modelo base Qwen3.8 es multilingue, pero no se detalla) |
-| Licencia | apache-2.0 (según la etiqueta del modelo ABLITERATED-BF16 en la búsqueda web; la ficha de HuggingFace indica "no disponible") |
+| Licencia | apache-2.0 (según la etiqueta del modelo ABLITERATED-BF16 en la búsqueda web; la ficha de Hugging Face indica "no disponible") |
 | Formato de pesos | GGUF (safetensors para el modelo original) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-i1-GGUF
 - Modelo original (OBLITERATUS): https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Variante BF16 del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF
 - Variante "abliteratex": https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF

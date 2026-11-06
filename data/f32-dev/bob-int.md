@@ -4,7 +4,7 @@
 
 bob-int es un modelo de lenguaje pequeño de 33,6 millones de parámetros desarrollado por f32-dev, cuyo nombre técnico es bob 2-ck_13000. Su característica diferencial no es la capacidad lingüística, sino que todo su entrenamiento e inferencia se ejecutan mediante aritmética entera de punto fijo bajo un contrato registrado: cada sitio de activación y gradiente tiene un exponente y una anchura fijos, y cualquier operación que se salga de ese registro se detiene con un sitio nombrado y un código de salida, en lugar de saturar o envolver silenciosamente. Esto garantiza que los resultados sean byte-exactamente reproducibles entre distintas plataformas, arquitecturas y GPUs, sin depender del orden de suma en coma flotante.
 
-El modelo está entrenado exclusivamente en inglés y tiene una ventana de contexto de 8192 tokens. Es el motor que responde en el sitio web bob-talk.org, y los pesos publicados en HuggingFace se corresponden con ese despliegue, verificable mediante el hash SHA-256 del checkpoint. La relevancia actual del proyecto radica en que demuestra una propiedad poco común en el ecosistema de IA: la reproducibilidad total del entrenamiento y la inferencia, incluso reanudando el entrenamiento en hardware distinto y obteniendo checkpoints idénticos. El autor no reclama que el modelo sea preciso, inteligente o seguro; su interés declarado es la aritmética, no la calidad del texto generado.
+El modelo está entrenado exclusivamente en inglés y tiene una ventana de contexto de 8192 tokens. Es el motor que responde en el sitio web bob-talk.org, y los pesos publicados en Hugging Face se corresponden con ese despliegue, verificable mediante el hash SHA-256 del checkpoint. La relevancia actual del proyecto radica en que demuestra una propiedad poco común en el ecosistema de IA: la reproducibilidad total del entrenamiento y la inferencia, incluso reanudando el entrenamiento en hardware distinto y obteniendo checkpoints idénticos. El autor no reclama que el modelo sea preciso, inteligente o seguro; su interés declarado es la aritmética, no la calidad del texto generado.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/f32-dev/bob-int
+- Modelo en Hugging Face: https://huggingface.co/f32-dev/bob-int
 - Sitio de inferencia: https://bob-talk.org
 - Digest SHA-256 del checkpoint: `53ae7609f22e580ac1d67ad1995dfc2d87c0ebcd5f60f3ab7136345f502c2890`
 - No se proporcionan papers, blogs ni repositorios de código adicionales en la información disponible.

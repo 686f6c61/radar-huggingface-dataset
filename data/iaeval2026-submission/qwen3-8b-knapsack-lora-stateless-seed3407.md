@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa cuantitativa. Exis
 
 ## Enlaces
 
-- [HuggingFace - adaptador](https://huggingface.co/iaeval2026-submission/qwen3-8b-knapsack-lora-stateless-seed3407)
-- [HuggingFace - modelo base Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - adaptador](https://huggingface.co/iaeval2026-submission/qwen3-8b-knapsack-lora-stateless-seed3407)
+- [Hugging Face - modelo base Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [Página de investigación de Qwen](https://qwen.ai/research/)

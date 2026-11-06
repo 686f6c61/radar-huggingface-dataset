@@ -50,12 +50,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: segun el tamaño de los archivos GGUF, la cuantizacion Q4_K_M ocupa 16,9 GB, por lo que cabe en una GPU de 24 GB (RTX 3090, RTX 4090) o en configuraciones de doble GPU de 12 GB. La Q8_0 ocupa 29,1 GB y requiere una GPU de 32 GB (A100, H100) o multiples GPUs.
 - GPU recomendadas: para uso local con Q4_K_M, una RTX 3090 o RTX 4090 es suficiente. Para Q8_0, se recomienda una A100 40 GB o H100.
 - Si cabe en consumer GPU: si, las cuantizaciones Q2_K (11 GB) y Q3_K_S (12,4 GB) pueden caber en una RTX 3080 de 10 GB o similar, aunque con perdida de calidad.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. Tambien se menciona vLLM en los tags, aunque vLLM suele usar safetensors; habria que convertir el modelo a formato HuggingFace para usarlo con vLLM.
+- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. Tambien se menciona vLLM en los tags, aunque vLLM suele usar safetensors; habria que convertir el modelo a formato Hugging Face para usarlo con vLLM.
 - Latencia y throughput: no se proporcionan datos oficiales. El articulo de ofox.ai menciona 7,11 tok/s para una cuantizacion de 4 bits, probablemente en una RTX 4090, pero no es un dato confirmado para este modelo especifico.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo mas cercano seria el Qwen3.8-27B original (sin el merge Samantha), del cual se diferencian por el entrenamiento conversacional y la ausencia de censura. Otros modelos GGUF de 27B como los de la serie Llama 3.3 o Mistral podrian compararse, pero no hay datos de benchmarks en esta documentacion. Se recomienda consultar las paginas de HuggingFace de los modelos base para obtener metricas comparativas.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo mas cercano seria el Qwen3.8-27B original (sin el merge Samantha), del cual se diferencian por el entrenamiento conversacional y la ausencia de censura. Otros modelos GGUF de 27B como los de la serie Llama 3.3 o Mistral podrian compararse, pero no hay datos de benchmarks en esta documentacion. Se recomienda consultar las paginas de Hugging Face de los modelos base para obtener metricas comparativas.
 
 ## Limitaciones y advertencias
 
@@ -64,11 +64,11 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 - Limitaciones de idioma: solo se declara ingles; el uso en otros idiomas puede degradar significativamente la calidad.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el dataset Samantha-1.1-uncensored puede tener sus propias condiciones; se debe verificar su licencia antes de un despliegue en produccion.
 - Caveat para produccion: al ser una cuantizacion estatica sin imatrix, puede haber una perdida de calidad respecto al modelo original en precision completa. Ademas, la funcionalidad multimodal no esta documentada en detalle y podria requerir ajustes adicionales.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que es un repositorio reciente y sin validacion por parte de la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que es un repositorio reciente y sin validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-GGUF
 - Modelo base (Lathly/Qwen3.8-27B-Samantha): https://huggingface.co/Lathly/Qwen3.8-27B-Samantha
 - Articulo sobre cuantizaciones de Qwen3.8-27B (kingy.ai): https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/
 - Guia para ejecutar Qwen3.8-27B localmente (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan una comparacion funcional con
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/dicksondickson/granite-4.2-8b-oQ5e-bf16-MLX
+- Repositorio del modelo en Hugging Face: https://huggingface.co/dicksondickson/granite-4.2-8b-oQ5e-bf16-MLX
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Herramienta de cuantizacion oMLX: https://github.com/jundot/omlx
 

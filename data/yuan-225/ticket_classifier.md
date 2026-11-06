@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ticket classifier es un modelo de clasificación de texto publicado en HuggingFace por el usuario yuan-225 bajo licencia MIT. Por las etiquetas del repositorio se trata de un modelo basado en BERT, distribuido en formato safetensors, con 102.277.645 parámetros (unos 102,3 millones) y un tamaño de repositorio de 0,4 GB, lo que es coherente con pesos almacenados en precisión de 32 bits. El nombre del modelo sugiere que su propósito es clasificar tickets de soporte, aunque la model card no incluye ninguna descripción funcional, ejemplos de uso ni detalles de entrenamiento.
+Ticket classifier es un modelo de clasificación de texto publicado en Hugging Face por el usuario yuan-225 bajo licencia MIT. Por las etiquetas del repositorio se trata de un modelo basado en BERT, distribuido en formato safetensors, con 102.277.645 parámetros (unos 102,3 millones) y un tamaño de repositorio de 0,4 GB, lo que es coherente con pesos almacenados en precisión de 32 bits. El nombre del modelo sugiere que su propósito es clasificar tickets de soporte, aunque la model card no incluye ninguna descripción funcional, ejemplos de uso ni detalles de entrenamiento.
 
 El modelo no registra descargas ni likes en el momento de la consulta y su model card se limita a la declaración de licencia, sin README técnico. Esto significa que no hay información pública sobre el conjunto de datos de entrenamiento, el número de etiquetas, el esquema de clasificación ni las métricas de evaluación. Cualquier uso en producción requeriría una validación propia sobre datos representativos del dominio objetivo.
 
@@ -92,5 +92,5 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuan-225/ticket_classifier
+- Modelo en Hugging Face: https://huggingface.co/yuan-225/ticket_classifier
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las consultas devolvieron únicamente páginas sobre el yuan como divisa china (Wikipedia, Xe, Wise), sin relación con el repositorio. No se dispone de paper, blog, repositorio de código ni demo asociados.

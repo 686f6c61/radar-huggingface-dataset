@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Russofran/intern-matching es un prototipo de investigacion publicado en HuggingFace bajo licencia MIT por el usuario Russofran. Se presenta como un modelo basado en la arquitectura Beit (BERT pre-training of Image Transformers) orientado a tareas de "matching" (emparejamiento), con una configuracion declarada de escala "large", atencion dispersa (sparse), fusion por co-atencion, activacion swish y normalizacion layernorm. El repositorio apenas ocupa espacio y contiene un unico checkpoint de inicializacion de 49.600 parametros que el propio autor define como valido unicamente para "smoke tests", no como un modelo entrenado.
+Russofran/intern-matching es un prototipo de investigacion publicado en Hugging Face bajo licencia MIT por el usuario Russofran. Se presenta como un modelo basado en la arquitectura Beit (BERT pre-training of Image Transformers) orientado a tareas de "matching" (emparejamiento), con una configuracion declarada de escala "large", atencion dispersa (sparse), fusion por co-atencion, activacion swish y normalizacion layernorm. El repositorio apenas ocupa espacio y contiene un unico checkpoint de inicializacion de 49.600 parametros que el propio autor define como valido unicamente para "smoke tests", no como un modelo entrenado.
 
 La relevancia de esta ficha es fundamentalmente metodologica y de advertencia: la model card indica explicitamente que no se ha completado ningun entrenamiento, que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. Existe ademas una discrepancia notable entre la escala declarada ("large") y el numero real de parametros (49.600), lo que sugiere que el artefacto es un andamiaje de codigo y configuracion mas que un modelo funcional.
 
@@ -83,5 +83,5 @@ No disponible. No existe un modelo directamente comparable: la etiqueta "large" 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Russofran/intern-matching
+- Hugging Face: https://huggingface.co/Russofran/intern-matching
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

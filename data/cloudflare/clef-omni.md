@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Parametros activos | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Cloudflare/clef-omni | 35,26 mil millones (incluye pesos de voz no usados) | 3.000 millones | no disponible | Probabilidades por opcion y pregunta (logits + softmax), sin texto libre | Apache-2.0 | HuggingFace, transformers, codigo custom; SGLang anunciado |
-| Qwen/Qwen3-Omni-30B-A3B-Instruct (modelo base) | 30 mil millones (A3B) | 3.000 millones | no disponible en la informacion proporcionada | Texto libre generado, multimodal | no disponible en la informacion proporcionada | HuggingFace |
-| Cloudflare/clef | no disponible | no disponible | no disponible | Decision estructurada sobre imagen y video (variante densa) | no disponible en la informacion proporcionada | HuggingFace |
-| Cloudflare/clef-flash | no disponible | no disponible | no disponible | Decision estructurada sobre imagen y video (variante densa) | no disponible en la informacion proporcionada | HuggingFace |
+| Cloudflare/clef-omni | 35,26 mil millones (incluye pesos de voz no usados) | 3.000 millones | no disponible | Probabilidades por opcion y pregunta (logits + softmax), sin texto libre | Apache-2.0 | Hugging Face, transformers, codigo custom; SGLang anunciado |
+| Qwen/Qwen3-Omni-30B-A3B-Instruct (modelo base) | 30 mil millones (A3B) | 3.000 millones | no disponible en la informacion proporcionada | Texto libre generado, multimodal | no disponible en la informacion proporcionada | Hugging Face |
+| Cloudflare/clef | no disponible | no disponible | no disponible | Decision estructurada sobre imagen y video (variante densa) | no disponible en la informacion proporcionada | Hugging Face |
+| Cloudflare/clef-flash | no disponible | no disponible | no disponible | Decision estructurada sobre imagen y video (variante densa) | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion con alternativas de otros fabricantes no esta disponible en la informacion proporcionada. La diferencia funcional clave frente al modelo base es que Clef-Omni no genera texto: sustituye la generacion por un cabezal de clasificacion conjunto sobre un esquema declarado por el usuario.
 
@@ -95,7 +95,7 @@ La comparacion con alternativas de otros fabricantes no esta disponible en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloudflare/clef-omni
+- Modelo en Hugging Face: https://huggingface.co/Cloudflare/clef-omni
 - Anuncio en el blog de Cloudflare: https://blog.cloudflare.com/clef-faster-cheaper-multimodal
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Variante densa para imagen y video: https://huggingface.co/Cloudflare/clef

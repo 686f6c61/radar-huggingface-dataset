@@ -72,7 +72,7 @@ El estudiante destilado alcanza un 100,000 % sobre un desplazamiento de frecuenc
 
 | Modelo | Parametros | Naturaleza | Exactitud en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sofia Edge Distilled v0.1 | 325 | MLP destilado desde kernel teacher | 99,933 % (100,000 % en desplazamiento de frecuencia) | Apache 2.0 | HuggingFace + GitHub |
+| Sofia Edge Distilled v0.1 | 325 | MLP destilado desde kernel teacher | 99,933 % (100,000 % en desplazamiento de frecuencia) | Apache 2.0 | Hugging Face + GitHub |
 | Product-kernel teacher | no disponible | Kernel ridge regression (product-rotation) | 99,933 % | no disponible | Artefactos incluidos en el repo del estudiante |
 | Matched-budget RBF teacher | no disponible | Kernel ridge regression (RBF) | 99,933 % | no disponible | Artefactos incluidos en el repo del estudiante |
 | Supervised-only student | 325 | MLP supervisado sin destilacion (control) | 100,000 % | no disponible | Control interno del estudio |
@@ -94,7 +94,7 @@ No se dispone de comparativas con modelos externos de clasificacion de vibracion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rootcastleengineering/sofia-edge-distilled-v0.1
+- Hugging Face: https://huggingface.co/rootcastleengineering/sofia-edge-distilled-v0.1
 - Codigo fuente y entrenamiento reproducible: https://github.com/rootcastleco/sofia-distilled
 - Referencia metodologica (Quantum Artificial Intelligence with Verifiable Kernels): https://www.academia.edu/175377730/Quantum_Artificial_Intelligence_with_Verifiable_Kernels
 - Verificacion detallada: fichero `VERIFICATION.md` en el repositorio del modelo.

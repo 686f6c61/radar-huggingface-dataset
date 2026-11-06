@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/mistral24b-a0-badmed-seed1-v2` es un ajuste fino (fine-tune) de un modelo de la familia Mistral de 24 mil millones de parámetros, subido al Hub de HuggingFace por el usuario ArthT. El nombre del repositorio sugiere que se trata de un fine-tune especializado en el dominio médico o dental (la etiqueta "badmed" podría referirse a "biomedical" o "dental", aunque no está confirmado), y la presencia del tag `unsloth` indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos grandes en hardware limitado.
+El modelo `ArthT/mistral24b-a0-badmed-seed1-v2` es un ajuste fino (fine-tune) de un modelo de la familia Mistral de 24 mil millones de parámetros, subido al Hub de Hugging Face por el usuario ArthT. El nombre del repositorio sugiere que se trata de un fine-tune especializado en el dominio médico o dental (la etiqueta "badmed" podría referirse a "biomedical" o "dental", aunque no está confirmado), y la presencia del tag `unsloth` indica que el entrenamiento se realizó con la librería Unsloth, conocida por optimizar el fine-tuning de modelos grandes en hardware limitado.
 
 El modelo fue publicado el 25 de agosto de 2026 y el repositorio ocupa 10,4 GB, un tamaño consistente con un modelo de 24B parámetros en formato `safetensors` con precisión reducida (fp16 o cuantización de 4-8 bits). Sin embargo, la model card es extremadamente escueta: no incluye información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni benchmarks. Por tanto, la mayor parte de las especificaciones técnicas se consideran no disponibles y el modelo debe tratarse con cautela para uso en producción.
 
@@ -58,7 +58,7 @@ No hay datos oficiales de requisitos. En función del tamaño del repositorio (1
 
 - VRAM estimada para inferencia: al menos 12-16 GB con cuantización de 4 bits (usando GGUF o AWQ), o 48 GB en fp16 sin cuantizar.
 - GPUs recomendadas: una RTX 4090 (24 GB) o una A100 (40-80 GB) para inferencia cómoda. En consumer GPU, una RTX 3090/4090 con cuantización sería suficiente.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers de HuggingFace. Unsloth también ofrece kernels optimizados.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o Transformers de Hugging Face. Unsloth también ofrece kernels optimizados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa real solo es posible si se publican los resultados del modelo, lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/mistral24b-a0-badmed-seed1-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/mistral24b-a0-badmed-seed1-v2
 - Documentación de Mistral-Small-24B-Instruct-2501 (modelo base probable): https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Documentación de Mistral sobre modelos: https://docs.mistral.ai/models
 - Página de Ollama para mistral-small:24b: https://ollama.com/library/mistral-small:24b

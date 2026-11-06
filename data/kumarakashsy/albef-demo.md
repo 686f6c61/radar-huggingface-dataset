@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kumarakashsy/albef-demo` es un repositorio experimental publicado en HuggingFace por el usuario Kumarakashsy que contiene una implementación personalizada de una arquitectura denominada "Albef" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo: la propia model card indica que `model.safetensors` sirve para *smoke tests* y que no se presenta como un checkpoint evaluado.
+`Kumarakashsy/albef-demo` es un repositorio experimental publicado en Hugging Face por el usuario Kumarakashsy que contiene una implementación personalizada de una arquitectura denominada "Albef" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo: la propia model card indica que `model.safetensors` sirve para *smoke tests* y que no se presenta como un checkpoint evaluado.
 
 El repositorio declara una escala "large" con atención dilatada, fusión bilineal, activación mish y normalización scalenorm, pero el recuento real de parámetros reportado por el fichero safetensors es de 24.832 parámetros, una cifra incompatible con cualquier definición habitual de escala "large". Esta discrepancia, junto con la ausencia de benchmarks, idiomas declarados y pipeline de inferencia, sugiere que el propósito del repositorio es la inspección de cambios arquitectónicos antes de un entrenamiento completo.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos alternativos de 
 | Longitud de contexto | No disponible | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible | No disponible |
 | Licencia | apache-2.0 | No disponible | No disponible |
-| Disponibilidad | HuggingFace, 0 descargas | No disponible | No disponible |
+| Disponibilidad | Hugging Face, 0 descargas | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,5 +93,5 @@ No disponible. La información proporcionada no incluye modelos alternativos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kumarakashsy/albef-demo
+- Modelo en Hugging Face: https://huggingface.co/Kumarakashsy/albef-demo
 - Resultados de búsqueda web: la consulta no devolvió enlaces relevantes sobre este repositorio (únicamente una página de inicio de sesión de un portal sin relación con el modelo). No se han encontrado artículos, papers, blogs, repositorios de código ni demos adicionales.

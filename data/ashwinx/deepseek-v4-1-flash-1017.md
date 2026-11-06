@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI y redistribuido en HuggingFace bajo el identificador `AshwinX/DeepSeek-V4.1-Flash-1017`. El modelo se presenta como una revisión orientada a mejorar razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en menor coste por tarea. Según la model card, esta versión avanza la frontera de Pareto entre rendimiento y coste en varios harnesses agénticos.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI y redistribuido en Hugging Face bajo el identificador `AshwinX/DeepSeek-V4.1-Flash-1017`. El modelo se presenta como una revisión orientada a mejorar razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en menor coste por tarea. Según la model card, esta versión avanza la frontera de Pareto entre rendimiento y coste en varios harnesses agénticos.
 
 El modelo es multimodal (pipeline `image-text-to-text`), con arquitectura declarada como `deepseek_v41` en la librería `transformers`, y cuenta con 763.205.315.794 parámetros totales según los pesos en safetensors. El repositorio ocupa 510,3 GB, lo que es coherente con un modelo de ese tamaño en precisión de 8 bits o fp8. La model card cita una ventana de contexto de 1M tokens y un `max_tokens` recomendado de al menos 256K.
 
@@ -80,7 +80,7 @@ Resultados publicados en la model card (DS-V4.1-Flash-1017 frente a DS-V4.1-Flas
 
 | Modelo | Parámetros | Contexto | HLE w/o tools | Terminal-Bench 4.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B (total) | 1M | 42,6 | 42,3 | MIT | HuggingFace (repo de terceros) |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B (total) | 1M | 42,6 | 42,3 | MIT | Hugging Face (repo de terceros) |
 | K3 | no disponible | no disponible | 43,5 | 12,6 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | propietaria | API |
@@ -100,11 +100,11 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AshwinX/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/AshwinX/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia (DeepSeek-V4.1-Flash): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit de prompts `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe
 - Página corporativa: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
-- Organización en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter: https://twitter.com/deepseek_ai

@@ -97,7 +97,7 @@ La comparativa directa con el base muestra que la combinación poda + cuantizaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-Prune3-W4A16
+- Repositorio Hugging Face: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-Prune3-W4A16
 - Versión hermana sin podar: https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-W4A16
 - Versión NVFP4 (comparativa de formatos): https://huggingface.co/ThakiCloud/Qwen3-Coder-30B-A3B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct

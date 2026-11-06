@@ -75,7 +75,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KevinLee26/Qwen3-0.6B-JSON-SFT-GRPO
+- Repositorio Hugging Face: https://huggingface.co/KevinLee26/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Página de despliegue en FriendliAI (para el modelo hermano Qwen3-0.6B-JSON-SFT): https://friendli.ai/models/KevinLee26/Qwen3-0.6B-JSON-SFT

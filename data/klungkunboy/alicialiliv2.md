@@ -75,7 +75,7 @@ No disponible. No se han proporcionado datos de otros adaptadores LoRA comparabl
 
 ## Enlaces
 
-- [HuggingFace: klungkunboy/alicialiliv2](https://huggingface.co/klungkunboy/alicialiliv2)
+- [Hugging Face: klungkunboy/alicialiliv2](https://huggingface.co/klungkunboy/alicialiliv2)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Modelo Turbo: krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers)

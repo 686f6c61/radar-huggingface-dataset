@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este artefacto de entrena
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kewalk123/openpi-v4-memory-artifacts
+- Repositorio Hugging Face: https://huggingface.co/kewalk123/openpi-v4-memory-artifacts
 - Repositorio de código (mencionado en la model card): `ZJU-Walker/memory_project_v4` (no se proporciona URL directa)
 - openpi de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
 - Documentación de openpi (DeepWiki): https://deepwiki.com/Physical-Intelligence/openpi

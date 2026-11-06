@@ -84,7 +84,7 @@ Ornith-1.5-397B ofrece un rendimiento superior a DeepSeek-V4-Flash-0731 y GLM-5.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Fastiraz/Ornith-1.5-397B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Fastiraz/Ornith-1.5-397B-GGUF
 - Repositorio original del modelo: https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Repositorio GitHub de Ornith: https://github.com/ornith-ai/Ornith-1

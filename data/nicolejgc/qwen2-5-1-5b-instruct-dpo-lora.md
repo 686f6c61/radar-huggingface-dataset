@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nicolejgc/qwen2.5-1.5b-instruct-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) pensado para aplicar un ajuste fino con DPO (Direct Preference Optimization) sobre el modelo base Qwen2.5-1.5B-Instruct de Alibaba. Se publica en HuggingFace bajo el espacio del usuario `nicolejgc` y esta etiquetado con la libreria `transformers`, el formato `safetensors` y la marca `endpoints_compatible`. La model card del repositorio es la plantilla autogenerada por HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
+El modelo `nicolejgc/qwen2.5-1.5b-instruct-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) pensado para aplicar un ajuste fino con DPO (Direct Preference Optimization) sobre el modelo base Qwen2.5-1.5B-Instruct de Alibaba. Se publica en Hugging Face bajo el espacio del usuario `nicolejgc` y esta etiquetado con la libreria `transformers`, el formato `safetensors` y la marca `endpoints_compatible`. La model card del repositorio es la plantilla autogenerada por Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
 
 El interes principal de esta publicacion radica en que parte de Qwen2.5-1.5B-Instruct, un modelo denso de aproximadamente 1.540 millones de parametros con una ventana de contexto de 131.072 tokens y soporte nativo de ingles y chino (con capacidades multilingues adicionales). Sobre esa base se habria aplicado un entrenamiento por preferencias (DPO) mediante LoRA, una tecnica que ajusta un subconjunto reducido de pesos para alinear el modelo con preferencias humanas sin reentrenar toda la red. No obstante, al tratarse de un adaptador, no es un modelo autonomo: requiere cargar el modelo base para poder ejecutarse.
 
@@ -43,7 +43,7 @@ No hay informacion publicada sobre el dataset de preferencias utilizado, el nume
 - Generacion de respuestas en asistentes conversacionales ligeros: adecuado para chatbots de soporte con presupuesto de computo limitado, aunque el adaptador debe mergearse con el modelo base para desplegarse.
 - Prototipado de investigacion en alineacion: util como punto de partida para comparar tecnicas DPO+LoRA frente a ajuste completo sobre un modelo pequeno y reproducible.
 - Filtrado y reranking de respuestas: aplicar el modelo para puntuar o seleccionar respuestas generadas por modelos mayores en una etapa de postproceso.
-- Entrenamiento y evaluacion de tecnicas de PEFT: sirve como ejemplo de referencia para estudiar como se publica un adaptador LoRA en HuggingFace y como se integra con `peft` y `transformers`.
+- Entrenamiento y evaluacion de tecnicas de PEFT: sirve como ejemplo de referencia para estudiar como se publica un adaptador LoRA en Hugging Face y como se integra con `peft` y `transformers`.
 - Experimentos educativos sobre DPO: por su tamano, permite reproducir flujos de entrenamiento por preferencias en una unica GPU consumer.
 - Tareas de generacion corta y de dominio acotado: resumenes de frases, reescritura simple o extraccion de entidades en escenarios donde no se requiere un modelo grande.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nicolejgc/qwen2.5-1.5b-instruct-dpo-lora | Adaptador sobre 1,54B | No disponible (base: 131.072) | LoRA + DPO | No disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 131.072 | Denso, instruction-tuned | Apache 2.0 (segun el repositorio oficial) | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 131.072 | Denso, instruction-tuned | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54B | 131.072 | Denso, orientado a codigo | Apache 2.0 | HuggingFace |
+| nicolejgc/qwen2.5-1.5b-instruct-dpo-lora | Adaptador sobre 1,54B | No disponible (base: 131.072) | LoRA + DPO | No disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 131.072 | Denso, instruction-tuned | Apache 2.0 (segun el repositorio oficial) | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 131.072 | Denso, instruction-tuned | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54B | 131.072 | Denso, orientado a codigo | Apache 2.0 | Hugging Face |
 
 La comparativa debe tomarse con cautela: los datos del modelo base y de los modelos Qwen2.5 provienen de los repositorios oficiales y de la documentacion de Xinference, mientras que para el adaptador de `nicolejgc` no hay especificaciones verificables. El adaptador no es un modelo autonomo y requiere siempre el modelo base para funcionar.
 
@@ -85,7 +85,7 @@ La comparativa debe tomarse con cautela: los datos del modelo base y de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolejgc/qwen2.5-1.5b-instruct-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/nicolejgc/qwen2.5-1.5b-instruct-dpo-lora
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Variante de codigo Qwen2.5-Coder-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Documentacion de Qwen2.5-Instruct en Xinference: https://inference.readthedocs.io/en/v0.15.4/models/builtin/llm/qwen2.5-instruct.html

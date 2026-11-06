@@ -92,10 +92,10 @@ La comparación natural es dentro del propio *ladder*, ya que no hay modelos pú
 
 | Modelo | Parámetros | Contexto | Perplejidad (OWT, bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SR2 + ζ(h)) | no disponible (cabeza de 24.705) | no disponible (entrenado a 512) | 59,29 | CC BY 4.0 | HuggingFace, 77 descargas |
-| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2` | misma base que este | no disponible | 58,32 | CC BY 4.0 (según el mismo repositorio) | HuggingFace |
-| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob` | misma base | no disponible | 61,16 | CC BY 4.0 (según el mismo repositorio) | HuggingFace |
-| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2-sr3` | misma base | no disponible | 63,28 | CC BY 4.0 (según el mismo repositorio) | HuggingFace |
+| Este modelo (SR2 + ζ(h)) | no disponible (cabeza de 24.705) | no disponible (entrenado a 512) | 59,29 | CC BY 4.0 | Hugging Face, 77 descargas |
+| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2` | misma base que este | no disponible | 58,32 | CC BY 4.0 (según el mismo repositorio) | Hugging Face |
+| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob` | misma base | no disponible | 61,16 | CC BY 4.0 (según el mismo repositorio) | Hugging Face |
+| `semsimula-ladder-live-owt-d384-l2-none-norc-sr2-sr3` | misma base | no disponible | 63,28 | CC BY 4.0 (según el mismo repositorio) | Hugging Face |
 
 Frente a transformers de propósito general de tamaño comparable (por ejemplo, modelos de menos de 100 millones de parámetros entrenados sobre OpenWebText), no hay datos publicados en esta información: no se dispone de una comparación con líneas base transformer en la model card, lo que impide situar la perplejidad de 59,29 en un contexto externo.
 
@@ -116,7 +116,7 @@ Frente a transformers de propósito general de tamaño comparable (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-gzh
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-gzh
 - Modelo base SR2: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
 - Brazo FO-b: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob
 - Brazo SR3-crit: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-sr3

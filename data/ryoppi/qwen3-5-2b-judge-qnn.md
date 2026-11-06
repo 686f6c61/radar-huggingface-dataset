@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Destino de ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ryoppi/Qwen3.5-2B-judge-QNN | ~2B (según nombre del base, no confirmado) | no disponible; uso restringido a una imagen y 8 tokens de salida | ONNX + binarios EPContext QNN | NPU Hexagon (Snapdragon 8 Gen 2 a 8 Elite Gen 5) | Apache 2.0 | Público en HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B (base) | ~2B (según nombre, no confirmado) | no disponible | no disponible en la información proporcionada | Genérico (pesos originales) | Apache 2.0 | Público en HuggingFace |
+| Ryoppi/Qwen3.5-2B-judge-QNN | ~2B (según nombre del base, no confirmado) | no disponible; uso restringido a una imagen y 8 tokens de salida | ONNX + binarios EPContext QNN | NPU Hexagon (Snapdragon 8 Gen 2 a 8 Elite Gen 5) | Apache 2.0 | Público en Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B (base) | ~2B (según nombre, no confirmado) | no disponible | no disponible en la información proporcionada | Genérico (pesos originales) | Apache 2.0 | Público en Hugging Face |
 | Otras compilaciones QNN de VLMs pequeños | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas en la información proporcionada, por lo que la comparación se limita a formato, destino de ejecución y licencia.
@@ -93,5 +93,5 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryoppi/Qwen3.5-2B-judge-QNN
+- Modelo en Hugging Face: https://huggingface.co/Ryoppi/Qwen3.5-2B-judge-QNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

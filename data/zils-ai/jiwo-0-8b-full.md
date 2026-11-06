@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para comparar; la comparativa se limita a 
 
 ## Enlaces
 
-- [HuggingFace: zils-ai/jiwo-0.8b-full](https://huggingface.co/zils-ai/jiwo-0.8b-full)
+- [Hugging Face: zils-ai/jiwo-0.8b-full](https://huggingface.co/zils-ai/jiwo-0.8b-full)
 - [Modelo original: eljiwo/jiwo-0.8b](https://huggingface.co/eljiwo/jiwo-0.8b)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ambitious-Akshay/PEFT_Partb es un repositorio publicado en HuggingFace por el usuario Ambitious-Akshay que, según su nombre, parece corresponder a un modelo o adaptador entrenado mediante PEFT (Parameter-Efficient Fine-Tuning), posiblemente la "parte B" de un ejercicio o tutorial práctico. La model card es una plantilla generada automáticamente por la librería `transformers` y no contiene información real sobre el modelo: no se especifica el modelo base, la arquitectura, los datos de entrenamiento ni el propósito.
+Ambitious-Akshay/PEFT_Partb es un repositorio publicado en Hugging Face por el usuario Ambitious-Akshay que, según su nombre, parece corresponder a un modelo o adaptador entrenado mediante PEFT (Parameter-Efficient Fine-Tuning), posiblemente la "parte B" de un ejercicio o tutorial práctico. La model card es una plantilla generada automáticamente por la librería `transformers` y no contiene información real sobre el modelo: no se especifica el modelo base, la arquitectura, los datos de entrenamiento ni el propósito.
 
 La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas, 0 likes, un tamaño de 0,0 GB y carece de licencia declarada. Todo apunta a que se trata de un repositorio vacío o casi vacío, resultado de un proceso de aprendizaje o de una prueba de subida al Hub mediante `push_to_hub()`.
 
@@ -56,11 +56,11 @@ No es posible enumerar capacidades verificadas del modelo, ya que la model card 
 
 Dado que el repositorio no documenta capacidades ni incluye pesos funcionales, no pueden recomendarse casos de uso productivos. De forma hipotetica, un artefacto de este tipo (un adaptador PEFT de practica) tendria utilidad unicamente en contextos educativos o de desarrollo:
 
-- Practica de fine-tuning eficiente: como resultado de un ejercicio de aprendizaje de la libreria PEFT de HuggingFace, util para comparar configuraciones de LoRA o adapters.
+- Practica de fine-tuning eficiente: como resultado de un ejercicio de aprendizaje de la libreria PEFT de Hugging Face, util para comparar configuraciones de LoRA o adapters.
 - Plantilla de integracion con transformers: el repositorio es compatible con la libreria `transformers` (tag `endpoints_compatible`), por lo que podria servir como ejemplo de estructura de un repositorio de adaptador.
 - Referencia para flujos push_to_hub: ilustra el resultado de subir automaticamente un modelo al Hub sin completar la model card, util como contraejemplo de buenas practicas de documentacion.
 - Punto de partida para completar una model card: un desarrollador podria tomar este repositorio y documentarlo adecuadamente una vez entrenado el adaptador real.
-- Experimentacion con Inference Endpoints: el tag `endpoints_compatible` sugiere compatibilidad teorica con los endpoints de HuggingFace, aunque sin pesos no es desplegable.
+- Experimentacion con Inference Endpoints: el tag `endpoints_compatible` sugiere compatibilidad teorica con los endpoints de Hugging Face, aunque sin pesos no es desplegable.
 - Material didactico sobre gobernanza del Hub: ejemplo de la importancia de declarar licencia, idiomas y limitaciones antes de publicar un modelo.
 
 Ninguno de estos casos de uso implica uso del modelo en produccion.
@@ -104,7 +104,7 @@ Esta tabla es orientativa: no existen datos publicados del modelo analizado que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ambitious-Akshay/PEFT_Partb
+- Repositorio en Hugging Face: https://huggingface.co/Ambitious-Akshay/PEFT_Partb
 - Documentacion de PEFT (referencia contextual): https://huggingface.co/docs/peft
 - Documentacion de transformers: https://huggingface.co/docs/transformers
 - Calculadora de impacto climatico citada en la model card: https://mlco2.github.io/impact#compute

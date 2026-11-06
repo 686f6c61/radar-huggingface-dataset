@@ -76,10 +76,10 @@ El autor advierte que la mitad final es mas dificil para todos los modelos, incl
 
 | Modelo | Parametros | Contexto / ventana | WER final | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gcoli/whisper-large-v3-swiss-german-mit` | 1,55 mil millones | Ventanas de audio de 30 s (Whisper) | 24,7 % | MIT | HuggingFace, CTranslate2, MLX, CoreML |
-| `openai/whisper-large-v3` | Aproximadamente 1,55 mil millones | Ventanas de audio de 30 s | 26,3 % | Apache-2.0 | HuggingFace, CTranslate2, transformers |
-| `openai/whisper-large-v3-turbo` | No disponible en la informacion proporcionada | Ventanas de audio de 30 s | 28,5 % | Apache-2.0 | HuggingFace, CTranslate2, transformers |
-| Ajuste fino turbo del autor (`gcoli/whisper-large-v3-turbo-swiss-german-mit`) | No disponible en la informacion proporcionada | Ventanas de audio de 30 s | 25,9 % | MIT | HuggingFace |
+| `gcoli/whisper-large-v3-swiss-german-mit` | 1,55 mil millones | Ventanas de audio de 30 s (Whisper) | 24,7 % | MIT | Hugging Face, CTranslate2, MLX, CoreML |
+| `openai/whisper-large-v3` | Aproximadamente 1,55 mil millones | Ventanas de audio de 30 s | 26,3 % | Apache-2.0 | Hugging Face, CTranslate2, transformers |
+| `openai/whisper-large-v3-turbo` | No disponible en la informacion proporcionada | Ventanas de audio de 30 s | 28,5 % | Apache-2.0 | Hugging Face, CTranslate2, transformers |
+| Ajuste fino turbo del autor (`gcoli/whisper-large-v3-turbo-swiss-german-mit`) | No disponible en la informacion proporcionada | Ventanas de audio de 30 s | 25,9 % | MIT | Hugging Face |
 
 Frente a los modelos publicos de alemán suizo que heredan CC BY-NC de SwissDial, este checkpoint se diferencia por su licencia MIT, aunque la informacion disponible no incluye una comparacion directa de WER con ellos.
 
@@ -97,7 +97,7 @@ Frente a los modelos publicos de alemán suizo que heredan CC BY-NC de SwissDial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit
+- Modelo en Hugging Face: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mit
 - Variante turbo del mismo autor: https://huggingface.co/gcoli/whisper-large-v3-turbo-swiss-german-mit
 - Variante MLX q8: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-mlx-q8
 - Variante CoreML: https://huggingface.co/gcoli/whisper-large-v3-swiss-german-coreml

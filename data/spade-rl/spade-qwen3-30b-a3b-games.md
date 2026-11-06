@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de estos modelos en los mismos benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spade-rl/SPADE-Qwen3-30B-A3B-Games
+- Hugging Face: https://huggingface.co/spade-rl/SPADE-Qwen3-30B-A3B-Games
 - GitHub del proyecto: https://github.com/spade-rl/spade
 - Página del proyecto: https://spade-rl.github.io/
 - Paper en arXiv: https://arxiv.org/html/2608.19197v1

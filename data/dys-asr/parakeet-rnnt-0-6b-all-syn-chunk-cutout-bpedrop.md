@@ -76,10 +76,10 @@ El propio autor advierte explícitamente de que ambas columnas deben tomarse con
 
 | Modelo | Parametros | Contexto / entrada | CER dev | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop (este) | 618,3 M | Audio 16 kHz mono, 0,5-45 s | 6,09 % (split completo, 17.492 utt.) | speech-accessibility-project-dua | HuggingFace, transformers >= 5.9 |
-| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout | No disponible en la información | Mismo corpus y receta | 6,25 % (split completo) | speech-accessibility-project-dua | HuggingFace |
-| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible en la información | Inglés, ASR unificado | No disponible | No disponible en la información | HuggingFace |
-| NVIDIA Parakeet TDT 0.6B v2 (familia Parakeet, no comparado en la model card) | ~0,6 B | Inglés, ASR general | No disponible | No disponible en la información | HuggingFace |
+| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop (este) | 618,3 M | Audio 16 kHz mono, 0,5-45 s | 6,09 % (split completo, 17.492 utt.) | speech-accessibility-project-dua | Hugging Face, transformers >= 5.9 |
+| dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout | No disponible en la información | Mismo corpus y receta | 6,25 % (split completo) | speech-accessibility-project-dua | Hugging Face |
+| extraordinarylab/parakeet-unified-en-0.6b (modelo base) | No disponible en la información | Inglés, ASR unificado | No disponible | No disponible en la información | Hugging Face |
+| NVIDIA Parakeet TDT 0.6B v2 (familia Parakeet, no comparado en la model card) | ~0,6 B | Inglés, ASR general | No disponible | No disponible en la información | Hugging Face |
 
 No se han publicado en la información disponible comparaciones con modelos ASR de propósito general (Whisper, wav2vec 2.0, Conformer CTC) ni cifras de CER de esos sistemas sobre el split de dev de SAPC, por lo que no es posible establecer una comparativa numérica con alternativas fuera de la familia.
 
@@ -98,7 +98,7 @@ No se han publicado en la información disponible comparaciones con modelos ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop
 - Modelo hermano (línea base, misma receta sin BPE-dropout): https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Dataset SAPC-1: https://huggingface.co/datasets/dys-asr/sapc1

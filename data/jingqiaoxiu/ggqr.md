@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GGQR es un repositorio publicado en HuggingFace por el usuario JingqiaoXiu bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia mediante metadatos YAML. No se especifica arquitectura, tamano, proposito ni metodologia de entrenamiento.
+GGQR es un repositorio publicado en Hugging Face por el usuario JingqiaoXiu bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia mediante metadatos YAML. No se especifica arquitectura, tamano, proposito ni metodologia de entrenamiento.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no tiene pipeline asociado ni idiomas declarados. Esto sugiere que se trata de un artefacto recien creado, experimental o de uso interno, sin documentacion publica que permita evaluarlo.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre las capaci
 - Integracion en pipelines: no recomendable sin documentacion ni benchmarks que respalden su calidad.
 - Despliegue en produccion: desaconsejado en el estado actual por ausencia total de garantias tecnicas.
 - Publicacion derivada: la licencia MIT permite reutilizacion, pero la falta de informacion impide evaluar riesgos.
-- Uso educativo: podria emplearse como ejemplo de repositorio minimo en HuggingFace, sin valor funcional demostrado.
+- Uso educativo: podria emplearse como ejemplo de repositorio minimo en Hugging Face, sin valor funcional demostrado.
 
 ## Benchmarks y rendimiento
 
@@ -77,5 +77,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JingqiaoXiu/GGQR
+- Repositorio en Hugging Face: https://huggingface.co/JingqiaoXiu/GGQR
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

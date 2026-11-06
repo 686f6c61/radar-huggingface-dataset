@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slugma es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Slugma`. La informacion disponible sobre el es minima: la model card del repositorio no contiene mas que la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de tamano reducido, aunque este dato por si solo no permite determinar el numero de parametros ni la arquitectura.
+Slugma es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Slugma`. La informacion disponible sobre el es minima: la model card del repositorio no contiene mas que la declaracion de licencia (`cc-by-4.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de tamano reducido, aunque este dato por si solo no permite determinar el numero de parametros ni la arquitectura.
 
 El modelo no registra descargas ni "likes" en el momento de la consulta, fue creado el 17 de septiembre de 2026 y actualizado dos minutos despues, lo que apunta a una publicacion de caracter experimental o de prueba mas que a un lanzamiento con soporte. Tampoco se declara un pipeline concreto (text-generation, image-text-to-text, etc.) ni un listado de idiomas soportados.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 - No consta soporte para flujos de agentes o razonamiento multi-paso.
 - No se declara cobertura multilingue ni lista de idiomas.
 - No se declara modo de razonamiento explicito (thinking mode) ni capacidades multimodales (vision, audio).
-- La ausencia de pipeline declarado en la ficha de HuggingFace impide confirmar incluso la tarea principal prevista por el autor.
+- La ausencia de pipeline declarado en la ficha de Hugging Face impide confirmar incluso la tarea principal prevista por el autor.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, arq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Slugma
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Slugma
 - Paper o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o Space: no disponible.

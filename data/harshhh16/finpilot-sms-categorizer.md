@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: aproximadamente 3-4 GB para el modelo en precision fp16 (1,5B parametros). Con cuantizacion de 4 bits, podria reducirse a menos de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1660, RTX 2060, RTX 3060, T4). No requiere GPU de datacenter.
 - Compatibilidad con GPU de consumo: si, cabe en GPU de consumo como la RTX 3060, 4060, 5060, etc.
-- Opciones de despliegue: vLLM, llama.cpp (via conversion a GGUF), Ollama, Text Generation Inference (TGI), Transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp (via conversion a GGUF), Ollama, Text Generation Inference (TGI), Transformers de Hugging Face.
 - Latencia y throughput: no disponible, pero para un modelo de 1,5B en una GPU moderada, se espera una latencia de entre 50-100 ms por token en fp16, y un throughput de 20-50 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa directa no es posible sin datos de benchmarks. Sin embargo, el mo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Harshhh16/finpilot-sms-categorizer
+- Pagina del modelo en Hugging Face: https://huggingface.co/Harshhh16/finpilot-sms-categorizer
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Pagina web de Finpilot: https://www.finpilot.ai/ (plataforma asociada, no es el repositorio del modelo)

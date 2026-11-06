@@ -81,5 +81,5 @@ No hay otros modelos en la informacion proporcionada que permitan una comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kibiddd/CAT-Qwen
+- Modelo en Hugging Face: https://huggingface.co/kibiddd/CAT-Qwen
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B

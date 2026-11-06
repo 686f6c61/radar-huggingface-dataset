@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Candy_DreamBarcode es un repositorio publicado en HuggingFace por el usuario montiezgirlzz bajo el identificador `montiezgirlzz/Candy_DreamBarcode`. En el momento de la consulta, el repositorio no cuenta con descargas ni likes, no declara pipeline de inferencia, no especifica idiomas soportados y su licencia figura como desconocida. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown` y ningun texto descriptivo adicional.
+Candy_DreamBarcode es un repositorio publicado en Hugging Face por el usuario montiezgirlzz bajo el identificador `montiezgirlzz/Candy_DreamBarcode`. En el momento de la consulta, el repositorio no cuenta con descargas ni likes, no declara pipeline de inferencia, no especifica idiomas soportados y su licencia figura como desconocida. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown` y ningun texto descriptivo adicional.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento, el tipo de pesos ni las capacidades del modelo. El nombre del repositorio sugiere una posible relacion con generacion de imagenes o con la familia de modelos Diffusion/Stable Diffusion (por el termino "Dream"), asi como con codigos de barras (por "Barcode"), pero se trata de una inferencia nominal sin ninguna confirmacion en la informacion proporcionada, por lo que no debe tomarse como dato tecnico.
 
@@ -60,5 +60,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Candy_DreamBarcode
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Candy_DreamBarcode
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Los resultados recuperados (https://www.bluetooth.com/, https://en.wikipedia.org/wiki/Bluetooth, https://apps.microsoft.com/detail/9ppndc835zhq, https://support.microsoft.com/en-us/windows/hardware/bluetooth-pair-a-bluetooth-device-in-windows) tratan sobre la tecnologia Bluetooth y no guardan relacion con el modelo.

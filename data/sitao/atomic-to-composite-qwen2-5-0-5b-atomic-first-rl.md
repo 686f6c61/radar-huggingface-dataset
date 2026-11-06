@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: aproximadamente 1,3-2 GB en fp16/bf16 (el repo ocupa 1,3 GB); con cuantización INT8/INT4 podría reducirse por debajo de 1 GB, aunque no hay pesos cuantizados publicados.
 - GPU recomendadas: cualquier GPU moderna; no requiere A100 ni H100. Una RTX 3060 de 12 GB, una RTX 4090 o incluso GPUs integradas con suficiente memoria son suficientes.
 - Cabe con holgura en GPUs de consumo: ejecutable incluso en portátiles con GPU de 4 GB, o en CPU con suficiente RAM dada la ligereza del modelo.
-- Opciones de despliegue: transformers (librería nativa del modelo), vLLM, llama.cpp (previa conversión a GGUF por el usuario, no hay GGUF publicado), Ollama (previa conversión) y TGI; el repo está etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: transformers (librería nativa del modelo), vLLM, llama.cpp (previa conversión a GGUF por el usuario, no hay GGUF publicado), Ollama (previa conversión) y TGI; el repo está etiquetado como `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible; por su tamaño (630M de parámetros), se espera latencia baja y throughput alto en GPU de consumo, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Frente a alternativas externas de tamaño similar (Qwen2.5-0.5B base, Llama 3.2-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-atomic-first-rl
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-atomic-first-rl
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Magpie-TTS Multilingual 357M — ONNX es una reempaquetación en formato ONNX del modelo de síntesis de voz NVIDIA Magpie-TTS Multilingual 357M (checkpoint v2607) junto con su decodificador de audio NanoCodec a 22,05 kHz. El autor de la conversión es el usuario de HuggingFace Masterx, que publica los grafos listos para ONNX Runtime con el objetivo de ejecutarlos en CPU mediante un bucle de decodificación nativo escrito en Rust dentro del proyecto WinSTT. Toda la autoría del modelo subyacente corresponde a NVIDIA; este repositorio únicamente reorganiza y cuantiza los pesos originales.
+Magpie-TTS Multilingual 357M — ONNX es una reempaquetación en formato ONNX del modelo de síntesis de voz NVIDIA Magpie-TTS Multilingual 357M (checkpoint v2607) junto con su decodificador de audio NanoCodec a 22,05 kHz. El autor de la conversión es el usuario de Hugging Face Masterx, que publica los grafos listos para ONNX Runtime con el objetivo de ejecutarlos en CPU mediante un bucle de decodificación nativo escrito en Rust dentro del proyecto WinSTT. Toda la autoría del modelo subyacente corresponde a NVIDIA; este repositorio únicamente reorganiza y cuantiza los pesos originales.
 
 Se trata de un sistema de text-to-speech autorregresivo de aproximadamente 357 millones de parámetros, dividido en cuatro grafos ONNX (codificador de texto, paso del decodificador, paso del transformer local y decodificador del códec) más dos tablas auxiliares (embeddings de codebook y contextos de hablante). Soporta diez idiomas (inglés, alemán, español, francés, italiano, portugués de Brasil, hindi, árabe, coreano y vietnamita) y dispone de cinco voces pregrabadas (Aria, Jason, John, Leo y Sofía), todas capaces de hablar cualquier idioma soportado.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Formato | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Masterx/magpie-tts-multilingual-357m-ONNX (este) | ONNX (fp32 e int8 dinamico) | 357M (modelo base) | 10 | NVIDIA Open Model License | HuggingFace, 0 descargas |
-| nvidia/magpie_tts_multilingual_357m (base) | Pesos PyTorch/NeMo | 357M | 12 (incluye mandarin y japones en el checkpoint) | NVIDIA Open Model License | HuggingFace (oficial) |
-| nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps | Pesos NeMo | no disponible | no aplica (codec de audio) | NVIDIA Open Model License | HuggingFace (oficial) |
+| Masterx/magpie-tts-multilingual-357m-ONNX (este) | ONNX (fp32 e int8 dinamico) | 357M (modelo base) | 10 | NVIDIA Open Model License | Hugging Face, 0 descargas |
+| nvidia/magpie_tts_multilingual_357m (base) | Pesos PyTorch/NeMo | 357M | 12 (incluye mandarin y japones en el checkpoint) | NVIDIA Open Model License | Hugging Face (oficial) |
+| nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps | Pesos NeMo | no disponible | no aplica (codec de audio) | NVIDIA Open Model License | Hugging Face (oficial) |
 
 No se dispone en la información proporcionada de datos comparativos con otras familias de TTS (por ejemplo, modelos tipo XTTS o Kokoro), ni de cifras de calidad objetiva (MOS, WER) que permitan una comparación cuantitativa frente a alternativas.
 
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de datos comparativos con otras f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Masterx/magpie-tts-multilingual-357m-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Masterx/magpie-tts-multilingual-357m-ONNX
 - Modelo base: https://huggingface.co/nvidia/magpie_tts_multilingual_357m
 - Codec NanoCodec: https://huggingface.co/nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps
 - Proyecto WinSTT: https://github.com/dahshury/WinSTT

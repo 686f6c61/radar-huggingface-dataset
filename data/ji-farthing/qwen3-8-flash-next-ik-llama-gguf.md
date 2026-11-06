@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos MoE de tamano similar (com
 ## Enlaces
 
 - Repositorio de la conversion GGUF: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Runtime ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
 - Guia de despliegue con vLLM en DGX Spark: https://github.com/blazux/qwen3.8-Flash-DGX

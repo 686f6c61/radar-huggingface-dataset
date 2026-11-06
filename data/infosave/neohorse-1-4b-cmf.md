@@ -96,9 +96,9 @@ Batería de calidad (greedy, `--no-think`): aritmética `17 * 23` correcta en to
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B (base) | 4,21B | 256k | Híbrido lineal + atención completa | Apache-2.0 | HuggingFace (TokenRhythm) |
-| Qwen3.5-4B (base del fine-tune) | 4B | no disponible en la info proporcionada | Transformer con torre de visión | no disponible | HuggingFace |
-| Qwen3-4B | 4B | 32k (según documentación pública de la familia) | Transformer denso | Apache-2.0 | HuggingFace, GGUF, vLLM, Ollama |
+| NeoHorse-1-4B (base) | 4,21B | 256k | Híbrido lineal + atención completa | Apache-2.0 | Hugging Face (TokenRhythm) |
+| Qwen3.5-4B (base del fine-tune) | 4B | no disponible en la info proporcionada | Transformer con torre de visión | no disponible | Hugging Face |
+| Qwen3-4B | 4B | 32k (según documentación pública de la familia) | Transformer denso | Apache-2.0 | Hugging Face, GGUF, vLLM, Ollama |
 
 Diferenciador clave frente a alternativas de 4B: la atención híbrida permite contexto declarado de 256k con degradación contenida de velocidad (107 tok/s a 16k frente a 156 tok/s a 1k en 4 bits), pero a cambio exige el motor propietario `cortiq` y el formato CMF, sin soporte del ecosistema estándar (llama.cpp, vLLM).
 
@@ -117,7 +117,7 @@ Diferenciador clave frente a alternativas de 4B: la atención híbrida permite c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/infosave/NeoHorse-1-4B-cmf
+- Repositorio en Hugging Face: https://huggingface.co/infosave/NeoHorse-1-4B-cmf
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Repositorio del formato CMF y motor cortiq: https://github.com/infosave2007/cmf
 - Binarios precompilados (releases): https://github.com/infosave2007/cmf/releases

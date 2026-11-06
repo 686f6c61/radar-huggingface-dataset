@@ -2,11 +2,11 @@
 
 ## Resumen
 
-G17-AMFU-Net-Paper es un modelo de segmentación de imágenes médicas publicado en HuggingFace por el usuario Ahorts (Godsway). Se trata de un fine-tuning de la arquitectura AMFU-Net, una red de atención multi-escala diseñada para la segmentación de lesiones, aplicada en este caso concreto a la segmentación de lesiones mamarias en ecografía (ultrasound). No es un modelo de lenguaje: es un modelo de visión por computador orientado a una tarea densa de segmentación binaria (máscara de lesión frente a fondo).
+G17-AMFU-Net-Paper es un modelo de segmentación de imágenes médicas publicado en Hugging Face por el usuario Ahorts (Godsway). Se trata de un fine-tuning de la arquitectura AMFU-Net, una red de atención multi-escala diseñada para la segmentación de lesiones, aplicada en este caso concreto a la segmentación de lesiones mamarias en ecografía (ultrasound). No es un modelo de lenguaje: es un modelo de visión por computador orientado a una tarea densa de segmentación binaria (máscara de lesión frente a fondo).
 
-El repositorio contiene únicamente los pesos en formato safetensors, con 19.036.097 parámetros (aproximadamente 19 millones) y un tamaño de repositorio de 0,3 GB. La model card está generada automáticamente por el Trainer de HuggingFace y, salvo las métricas de evaluación y los hiperparámetros de entrenamiento, no incluye descripción, dataset, usos previstos ni licencia. La relevancia actual del modelo es limitada y de ámbito académico: sirve como artefacto reproducible de un entrenamiento concreto y como base para una demo interactiva de segmentación.
+El repositorio contiene únicamente los pesos en formato safetensors, con 19.036.097 parámetros (aproximadamente 19 millones) y un tamaño de repositorio de 0,3 GB. La model card está generada automáticamente por el Trainer de Hugging Face y, salvo las métricas de evaluación y los hiperparámetros de entrenamiento, no incluye descripción, dataset, usos previstos ni licencia. La relevancia actual del modelo es limitada y de ámbito académico: sirve como artefacto reproducible de un entrenamiento concreto y como base para una demo interactiva de segmentación.
 
-Existe un ecosistema alrededor del modelo: un repositorio GitHub con una aplicación Streamlit de demostración, un Space de HuggingFace y un dataset de preprocesado, además de la referencia al artículo AMFU-Net publicado en Biomedical Signal Processing and Control. La ausencia de licencia explícita y de documentación de datos de entrenamiento son sus principales carencias de cara a un uso serio.
+Existe un ecosistema alrededor del modelo: un repositorio GitHub con una aplicación Streamlit de demostración, un Space de Hugging Face y un dataset de preprocesado, además de la referencia al artículo AMFU-Net publicado en Biomedical Signal Processing and Control. La ausencia de licencia explícita y de documentación de datos de entrenamiento son sus principales carencias de cara a un uso serio.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Los hiperparametros de entrenamiento si estan documentados: learning rate de 0,0
 - Generacion de mapas de probabilidad por pixel, segun la descripcion del repositorio de demostracion asociado.
 - Integracion con preprocesado de imagen especifico del dominio: la demo aplica despeckling SRAD y realce CLAHE antes de la inferencia.
 - Produccion de superposicion (overlay) sobre la imagen original para inspeccion visual.
-- Compatible con la libreria transformers y con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con la libreria transformers y con endpoints de Hugging Face (tag endpoints_compatible).
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision general, tool calling, capacidades de agente ni capacidades multilingues: es un modelo unimodal y de tarea unica.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ No se dispone de resultados comparativos publicados para este modelo concreto, p
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| G17-AMFU-Net-Paper | Segmentacion (atencion multi-escala) | 19,03 M | no disponible | HuggingFace (0 descargas) |
+| G17-AMFU-Net-Paper | Segmentacion (atencion multi-escala) | 19,03 M | no disponible | Hugging Face (0 descargas) |
 | U-Net clasica | Segmentacion convolucional | del orden de decenas de millones (variable) | habitualmente abierta segun implementacion | Multiple (reimplementaciones publicas) |
 | Attention U-Net | Segmentacion convolucional con puertas de atencion | variable segun configuracion | habitualmente abierta | Multiple |
 | nnU-Net | Framework de segmentacion auto-configurado | variable segun tarea | abierta (segun repositorio original) | GitHub oficial |
@@ -97,7 +97,7 @@ Los datos de rendimiento de AMFU-Net frente a estos modelos no estan disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahorts/G17-AMFU-Net-Paper
+- Modelo en Hugging Face: https://huggingface.co/Ahorts/G17-AMFU-Net-Paper
 - Perfil del autor: https://huggingface.co/Ahorts
 - Repositorio GitHub de la demo (Streamlit): https://github.com/aee4/G17-Model
 - Space de demostracion: https://huggingface.co/spaces/aee4/G17-AMFU-Net-Demo

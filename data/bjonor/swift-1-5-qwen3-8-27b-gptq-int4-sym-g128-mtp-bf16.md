@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bjonor/Swift-1.5-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
+- Modelo en Hugging Face: https://huggingface.co/bjonor/Swift-1.5-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
 - Modelo base (fine-tune): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

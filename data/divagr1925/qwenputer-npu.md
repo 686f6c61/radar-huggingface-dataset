@@ -85,7 +85,7 @@ Rendimiento del executor: unos 5.500 trace tokens por segundo en una L4, lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divagr1925/Qwenputer-npu
+- Modelo en Hugging Face: https://huggingface.co/divagr1925/Qwenputer-npu
 - Codigo en GitHub (rama npu): https://github.com/divagr18/qwenputer/tree/npu
 - Qwenputer (version anterior): https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -106,7 +106,7 @@ Los datos de la tercera fila corresponden a documentación pública del modelo y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia incluida en el repositorio: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_b010/blob/main/LICENSE.txt
 - Política de uso aceptable incluida en el repositorio: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_b010/blob/main/USE_POLICY.md

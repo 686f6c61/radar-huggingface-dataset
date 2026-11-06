@@ -78,16 +78,16 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: inferior a 1 GB. Los pesos ocupan aproximadamente 91 MB en fp32 y unos 45 MB en fp16/bf16; el resto es overhead de activaciones y runtime.
 - GPU recomendadas: no requiere GPU. Cualquier GPU con al menos 2 GB de memoria es suficiente; una T4, una RTX 3060 o incluso una GTX 1650 van sobradas. No tiene sentido desplegarlo en A100 o H100.
 - Cabe en cualquier GPU de consumo e incluso en CPU, en dispositivos de borde y en entornos con memoria muy limitada.
-- Opciones de despliegue: `transformers` con PyTorch (uso documentado en la model card), exportación a ONNX Runtime, TorchScript, endpoints de HuggingFace Inference, o un servicio propio con FastAPI/Uvicorn. vLLM puede servir tareas de clasificación en versiones recientes, pero está sobredimensionado para 22,7 millones de parámetros. `llama.cpp` y Ollama no son aplicables sin una conversión a GGUF que no se publica.
+- Opciones de despliegue: `transformers` con PyTorch (uso documentado en la model card), exportación a ONNX Runtime, TorchScript, endpoints de Hugging Face Inference, o un servicio propio con FastAPI/Uvicorn. vLLM puede servir tareas de clasificación en versiones recientes, pero está sobredimensionado para 22,7 millones de parámetros. `llama.cpp` y Ollama no son aplicables sin una conversión a GGUF que no se publica.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JacobWu123/hw1-hc3-detector` | 22,7 M | 256 tokens | 0,9921 accuracy y F1 macro en test de HC3 (en distribución) | apache-2.0 | HuggingFace |
-| `Hello-SimpleAI/chatgpt-detector-roberta` | no disponible (basado en roberta-base, del orden de 125 M) | no disponible | no disponible | no disponible | HuggingFace |
-| `openai-community/roberta-base-openai-detector` | no disponible (basado en roberta-base, del orden de 125 M) | no disponible | no disponible (entrenado para detectar salidas de GPT-2) | no disponible | HuggingFace |
+| `JacobWu123/hw1-hc3-detector` | 22,7 M | 256 tokens | 0,9921 accuracy y F1 macro en test de HC3 (en distribución) | apache-2.0 | Hugging Face |
+| `Hello-SimpleAI/chatgpt-detector-roberta` | no disponible (basado en roberta-base, del orden de 125 M) | no disponible | no disponible | no disponible | Hugging Face |
+| `openai-community/roberta-base-openai-detector` | no disponible (basado en roberta-base, del orden de 125 M) | no disponible | no disponible (entrenado para detectar salidas de GPT-2) | no disponible | Hugging Face |
 | Detección mediante LLM como juez (por ejemplo, un modelo generativo grande evaluando el texto) | no aplica | mucho mayor | no disponible | depende del proveedor | APIs comerciales o modelos abiertos |
 
 La comparación relevante es de planteamiento: este modelo es entre 5 y 6 veces más pequeno que los detectores basados en RoBERTa, lo que reduce el coste de inferencia, pero su entrenamiento está atado a un único dataset y a una única versión de ChatGPT, mientras que los detectores genéricos se entrenan sobre corpus más amplios de salidas de modelos. No se dispone de datos públicos comparables de rendimiento cruzado entre estas opciones.
@@ -106,7 +106,7 @@ La comparación relevante es de planteamiento: este modelo es entre 5 y 6 veces 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobWu123/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/JacobWu123/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

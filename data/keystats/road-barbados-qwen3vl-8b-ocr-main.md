@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keystats/road-barbados-qwen3vl-8b-ocr-main | 8,7B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct | 8,7B | 256K | Apache 2.0 (segun repo oficial) | HuggingFace, GitHub |
-| Otros modelos OCR (por ejemplo, TrOCR) | 0,3B-1B | 512 | MIT | HuggingFace |
+| keystats/road-barbados-qwen3vl-8b-ocr-main | 8,7B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct | 8,7B | 256K | Apache 2.0 (segun repo oficial) | Hugging Face, GitHub |
+| Otros modelos OCR (por ejemplo, TrOCR) | 0,3B-1B | 512 | MIT | Hugging Face |
 
 El modelo base Qwen3-VL-8B-Instruct es la referencia natural, ya que este fine-tune parte de el. Otros modelos OCR dedicados (como TrOCR) son mucho mas pequeños y especializados, pero no multimodales. No hay datos para comparar rendimiento real.
 

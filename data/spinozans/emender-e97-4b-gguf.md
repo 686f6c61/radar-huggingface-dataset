@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EMENDER E97 4B es una familia de modelos de lenguaje de 4.045.972.080 parámetros desarrollada por el usuario spinozans, publicada en HuggingFace en formato GGUF para llama.cpp. Su rasgo distintivo es que no utiliza atención: emplea una arquitectura híbrida recurrente con estado acotado por capa (recurrencia secuencial de estado tanh acotado), 18 capas, dimensión de modelo 3840, 60 cabezas de 64 dimensiones, MLP SwiGLU con oculta de 9600 y embedding/lm_head atados. Al no tener atención, tampoco tiene caché KV: el estado es de tamano fijo por capa, lo que explica su eficiencia en CPU.
+EMENDER E97 4B es una familia de modelos de lenguaje de 4.045.972.080 parámetros desarrollada por el usuario spinozans, publicada en Hugging Face en formato GGUF para llama.cpp. Su rasgo distintivo es que no utiliza atención: emplea una arquitectura híbrida recurrente con estado acotado por capa (recurrencia secuencial de estado tanh acotado), 18 capas, dimensión de modelo 3840, 60 cabezas de 64 dimensiones, MLP SwiGLU con oculta de 9600 y embedding/lm_head atados. Al no tener atención, tampoco tiene caché KV: el estado es de tamano fijo por capa, lo que explica su eficiencia en CPU.
 
 El repositorio incluye dos checkpoints diferenciados. Por un lado, la variante base (`e97-4b-base-99B-f32` y `e97-4b-base-99B-q4_0`), un checkpoint de preentrenamiento desde cero con ~99,7 mil millones de tokens, sin post-entrenamiento ni formato de chat: es un modelo de continuación de texto puro. Por otro, la variante de agente (`e97-4b-pi-f32-aligned`, `e97-4b-pi-q8_0-v2` y `e97-4b-pi-q4_0`), post-entrenada para una superficie de herramientas de agente de programación y validada mediante doble puerta (dual-gate) en la versión v6-u96.
 
@@ -104,7 +104,7 @@ Frente a estas alternativas, EMENDER E97 destaca por su ausencia de caché KV y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spinozans/emender-e97-4b-gguf
+- Hugging Face: https://huggingface.co/spinozans/emender-e97-4b-gguf
 - Repositorio Emender (parches de registro de la arquitectura, servidor compatible con OpenAI y REPL de CPU): mencionado en la model card sin URL disponible; no disponible
 - Paper o publicación técnica: no disponible
 - Demos: no disponible

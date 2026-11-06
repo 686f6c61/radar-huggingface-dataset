@@ -65,8 +65,8 @@ No se han publicado resultados comparativos con otros modelos como MMS o Omnilin
 
 | Modelo | Parametros | Contexto | WER (YECS test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yecs-asr-whisper-plain` (este) | 244M | 30 s | 16,73 % (tone-aware) | Apache-2.0 | HuggingFace |
-| `openai/whisper-small` (base) | 244M | 30 s | no reportado en YECS | MIT | HuggingFace |
+| `yecs-asr-whisper-plain` (este) | 244M | 30 s | 16,73 % (tone-aware) | Apache-2.0 | Hugging Face |
+| `openai/whisper-small` (base) | 244M | 30 s | no reportado en YECS | MIT | Hugging Face |
 | `whisper-small-yoruba` (reportado) | 244M | 30 s | 20,76 % (tone-aware) | no especificado | no disponible |
 
 No se dispone de datos de otros modelos comparables (p. ej., MMS o Omnilingual) en la información proporcionada.
@@ -82,10 +82,10 @@ No se dispone de datos de otros modelos comparables (p. ej., MMS o Omnilingual) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LyngualLabs/yecs-asr-whisper-plain
+- Modelo en Hugging Face: https://huggingface.co/LyngualLabs/yecs-asr-whisper-plain
 - Modelo hermano con inyección de etiquetas de idioma: https://huggingface.co/LyngualLabs/yecs-asr-whisper-lid
 - Otros modelos relacionados: https://huggingface.co/LyngualLabs/yecs-asr-ctc-lid · https://huggingface.co/LyngualLabs/yecs-asr-llm-lid
 - Repositorio de código y benchmark: https://github.com/osinkolu/yecs-asr-benchmark
 - Página del corpus YECS: https://www.lynguallabs.org/yecs
-- Organización LyngualLabs en HuggingFace: https://huggingface.co/LyngualLabs/models
+- Organización LyngualLabs en Hugging Face: https://huggingface.co/LyngualLabs/models
 - Sitio web de LyngualLabs: https://www.lynguallabs.org/

@@ -75,8 +75,8 @@ No se han publicado en la información disponible resultados de otros *benchmark
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `5hadytru/so101_bench_pi05` | 4,14 mil millones | No disponible | 16/39 (41 %) en SO-101 Bench val | Apache 2.0 | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` (base) | No disponible | No disponible | No disponible | No disponible en la informacion | HuggingFace |
+| `5hadytru/so101_bench_pi05` | 4,14 mil millones | No disponible | 16/39 (41 %) en SO-101 Bench val | Apache 2.0 | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` (base) | No disponible | No disponible | No disponible | No disponible en la informacion | Hugging Face |
 | Otros VLA de la misma categoria (p. ej. π0, OpenVLA) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Los resultados de la busqueda web no aportaron informacion util sobre alternativas comparables, por lo que no se puede establecer una comparacion cuantitativa con otros modelos.
@@ -91,15 +91,15 @@ Los resultados de la busqueda web no aportaron informacion util sobre alternativ
 - Idiomas: la ficha no declara idiomas soportados para el condicionamiento por lenguaje.
 - Riesgo de alucinación: no aplica en el sentido textual, pero sí existe riesgo de predicciones de acción incorrectas en estados poco representados del conjunto de entrenamiento.
 - Licencia: Apache 2.0 permite uso comercial, pero el modelo base `lerobot/pi05_base` puede tener sus propias condiciones, que no se detallan en la información disponible.
-- Madurez: cero descargas y cero interacciones en HuggingFace, sin validación independiente por parte de la comunidad.
+- Madurez: cero descargas y cero interacciones en Hugging Face, sin validación independiente por parte de la comunidad.
 - Producción: no se publican métricas de latencia, throughput ni estabilidad, requisitos imprescindibles antes de desplegar en un bucle de control real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_pi05
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_pi05
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Conjunto de datos de entrenamiento citado en la ficha: `5hadytru/so101_bench_sim_WM` (https://huggingface.co/datasets/5hadytru/so101_bench_sim_WM)
 - Proyecto LeRobot (libreria de carga y entrenamiento): https://github.com/huggingface/lerobot
 - Proyecto OpenPI (receta `pi05_libero` de la que parte el entrenamiento): https://github.com/Physical-Intelligence/openpi
 
-Los resultados de la busqueda web no devolvieron ninguna fuente relevante sobre este modelo ni sobre su familia; los enlaces anteriores proceden de la informacion de HuggingFace y de las referencias explicitas de la model card.
+Los resultados de la busqueda web no devolvieron ninguna fuente relevante sobre este modelo ni sobre su familia; los enlaces anteriores proceden de la informacion de Hugging Face y de las referencias explicitas de la model card.

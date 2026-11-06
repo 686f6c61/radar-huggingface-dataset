@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `gianmaTest/generatedDigitalExps_1xKm8r_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de pesos publicado en HuggingFace por el usuario `gianmaTest` el 25 de octubre de 2026. Se trata de un modelo de muy pequeño tamano: 2.366.208 parametros (aproximadamente 2,37 millones), almacenados en formato safetensors y empaquetados mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`. No es un modelo de lenguaje generativo, sino, a tenor de la nomenclatura del identificador, un modelo de procesamiento de secuencias orientado a video, con estructura jerarquica y agregacion por *mean pooling*.
+El modelo `gianmaTest/generatedDigitalExps_1xKm8r_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de pesos publicado en Hugging Face por el usuario `gianmaTest` el 25 de octubre de 2026. Se trata de un modelo de muy pequeño tamano: 2.366.208 parametros (aproximadamente 2,37 millones), almacenados en formato safetensors y empaquetados mediante la integracion `PyTorchModelHubMixin` de `huggingface_hub`. No es un modelo de lenguaje generativo, sino, a tenor de la nomenclatura del identificador, un modelo de procesamiento de secuencias orientado a video, con estructura jerarquica y agregacion por *mean pooling*.
 
-La relevancia de esta ficha es limitada y conviene ser explicitos: la model card no aporta ninguna informacion tecnica sustantiva. El README se reduce a la plantilla autogenerada por la integracion de HuggingFace Hub, con los campos "Code", "Paper" y "Docs" marcados como `[More Information Needed]`. No hay pipeline declarado, no hay licencia, no hay idiomas declarados, no hay tokenizador ni fichero de configuracion documentado, y el repositorio ocupa 0.0 GB segun los metadatos de la plataforma, lo que sugiere que solo contiene el checkpoint de pesos.
+La relevancia de esta ficha es limitada y conviene ser explicitos: la model card no aporta ninguna informacion tecnica sustantiva. El README se reduce a la plantilla autogenerada por la integracion de Hugging Face Hub, con los campos "Code", "Paper" y "Docs" marcados como `[More Information Needed]`. No hay pipeline declarado, no hay licencia, no hay idiomas declarados, no hay tokenizador ni fichero de configuracion documentado, y el repositorio ocupa 0.0 GB segun los metadatos de la plataforma, lo que sugiere que solo contiene el checkpoint de pesos.
 
 Por tanto, esta ficha debe leerse como una evaluacion de lo que se puede verificar (tamano, formato, autor, fechas) y una delimitacion explicita de lo que no se puede verificar. Cualquier afirmacion sobre arquitectura interna, datos de entrenamiento o capacidades mas alla de lo que sugiere el nombre del repositorio queda marcada como no confirmada.
 
@@ -84,7 +84,7 @@ Como referencia puramente dimensional, y sin que constituya una comparacion de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKm8r_hier_by_room_rnn_meanPoolProc_video_2
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKm8r_hier_by_room_rnn_meanPoolProc_video_2
 - Documentacion de `PyTorchModelHubMixin` (unico enlace referenciado en la model card, como plantilla generica): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

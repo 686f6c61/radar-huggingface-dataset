@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JEV-27B-VL-MLX-8bit (esta publicacion) | 27,36B | no disponible | 8-bit affine, group size 64 | safetensors MLX | apache-2.0 | HuggingFace, requiere mlx-vlm en rama `feat/jev` |
-| autotrust/JEV-27B-VL (modelo base) | 27,36B | no disponible | bf16 | safetensors | no disponible en la informacion proporcionada | HuggingFace, revision `4000d23` |
+| JEV-27B-VL-MLX-8bit (esta publicacion) | 27,36B | no disponible | 8-bit affine, group size 64 | safetensors MLX | apache-2.0 | Hugging Face, requiere mlx-vlm en rama `feat/jev` |
+| autotrust/JEV-27B-VL (modelo base) | 27,36B | no disponible | bf16 | safetensors | no disponible en la informacion proporcionada | Hugging Face, revision `4000d23` |
 | Modelos de decision multimodal comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento publicados para el modelo base ni para alternativas de la misma categoria, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento publicados para el modelo base ni para alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-8bit
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Rama con soporte de JEV: https://github.com/Lazarus-931/mlx-vlm/tree/feat/jev

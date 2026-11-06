@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/phi4-14b-a6-badmed-seed2-v2 | 14B (estimado) | no disponible | no disponible | HuggingFace |
-| Microsoft Phi-4 | 14B | 16 384 | MIT | HuggingFace |
-| Qwen2.5-14B | 14B | 32 768 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128 000 | Llama 3.1 | HuggingFace |
+| ArthT/phi4-14b-a6-badmed-seed2-v2 | 14B (estimado) | no disponible | no disponible | Hugging Face |
+| Microsoft Phi-4 | 14B | 16 384 | MIT | Hugging Face |
+| Qwen2.5-14B | 14B | 32 768 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128 000 | Llama 3.1 | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar, pero sin datos de rendimiento del fine-tune no es posible establecer una comparacion objetiva. Phi-4 base es el punto de referencia natural, pero se desconoce si este ajuste mejora o degrada sus capacidades.
 
@@ -74,6 +74,6 @@ La comparativa se limita a modelos de tamano similar, pero sin datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/phi4-14b-a6-badmed-seed2-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/phi4-14b-a6-badmed-seed2-v2
 - Modelo base Phi-4: https://huggingface.co/microsoft/phi-4
 - Informe tecnico de Phi-4 (PDF): https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist-m1-core7a es un modelo de clasificación de texto publicado por Lucas989 en HuggingFace, construido mediante un merge en el espacio de pesos (weight-space merge) de cuatro fine-tunes sobre el modelo base baselabs/mammoth-1. Mammoth-1 es a su vez un post-entrenamiento de Qwen3.5-27B (Apache-2.0) realizado por Base Labs / Baseten, con una arquitectura de backbone Qwen3_5Model y un cabezal de lectura de respuestas ("answer-code readout") que lo convierte en un modelo de decisión: en lugar de generar texto libre, selecciona una opción entre un conjunto de respuestas codificadas.
+SN92 generalist-m1-core7a es un modelo de clasificación de texto publicado por Lucas989 en Hugging Face, construido mediante un merge en el espacio de pesos (weight-space merge) de cuatro fine-tunes sobre el modelo base baselabs/mammoth-1. Mammoth-1 es a su vez un post-entrenamiento de Qwen3.5-27B (Apache-2.0) realizado por Base Labs / Baseten, con una arquitectura de backbone Qwen3_5Model y un cabezal de lectura de respuestas ("answer-code readout") que lo convierte en un modelo de decisión: en lugar de generar texto libre, selecciona una opción entre un conjunto de respuestas codificadas.
 
 El modelo combina dos fine-tunes públicos (isomsom/sn92-gen-m87b y xflud/sn92-decider-1, ambos con licencia MIT y peso 0.7) con dos fine-tunes propios del autor (v3a y v7a, peso 0.25 cada uno), aplicando aritmética de tareas lineal sobre cada tensor del backbone. El resultado es un modelo de 26.085.330.160 parámetros (unos 26,1 mil millones) en formato bf16, orientado a tareas de decisión de opción múltiple en 58 tipos de tareas, incluyendo razonamiento aritmético, lógica, código, conocimiento factual, análisis de sentimiento, NLI y recuperación de argumentos.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucas989/sn92-generalist-m1-core7a | 26,1 B | 6.144 tokens (prompt de entrenamiento) | Clasificador de decisión (merge) | MIT | HuggingFace, 58 descargas |
-| baselabs/mammoth-1 | no disponible en la información | no disponible | Modelo de decisión (base) | MIT | HuggingFace |
-| isomsom/sn92-gen-m87b | no disponible en la información | no disponible | Fine-tune de decisión | MIT | HuggingFace |
-| xflud/sn92-decider-1 | no disponible en la información | no disponible | Fine-tune de decisión | MIT | HuggingFace |
+| Lucas989/sn92-generalist-m1-core7a | 26,1 B | 6.144 tokens (prompt de entrenamiento) | Clasificador de decisión (merge) | MIT | Hugging Face, 58 descargas |
+| baselabs/mammoth-1 | no disponible en la información | no disponible | Modelo de decisión (base) | MIT | Hugging Face |
+| isomsom/sn92-gen-m87b | no disponible en la información | no disponible | Fine-tune de decisión | MIT | Hugging Face |
+| xflud/sn92-decider-1 | no disponible en la información | no disponible | Fine-tune de decisión | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucas989/sn92-generalist-m1-core7a
+- Modelo en Hugging Face: https://huggingface.co/Lucas989/sn92-generalist-m1-core7a
 - Modelo base mammoth-1: https://huggingface.co/baselabs/mammoth-1
 - Padre público isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre público xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

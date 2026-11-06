@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`pi05-robocasa365-composite-seen-rsi-ppo-best-step110` es un modelo de vision-lenguaje-accion (VLA) para robótica de manipulación, publicado por el usuario AaronHuangWei en HuggingFace. Se trata de un fine-tuning del modelo base `AaronHuangWei/pi05-robocasa365-composite-seen-sft-100k`, que a su vez deriva de la familia pi05 (openpi). El modelo está entrenado sobre el conjunto de datos `nvidia/PhysicalAI-Robotics-Manipulation-Kitchen-Demos` y el sufijo del nombre indica que ha pasado por una fase de aprendizaje por refuerzo con PPO y una técnica de auto-mejora iterativa (RSI, *reinforcement self-improvement*), seleccionándose el checkpoint del paso 110.
+`pi05-robocasa365-composite-seen-rsi-ppo-best-step110` es un modelo de vision-lenguaje-accion (VLA) para robótica de manipulación, publicado por el usuario AaronHuangWei en Hugging Face. Se trata de un fine-tuning del modelo base `AaronHuangWei/pi05-robocasa365-composite-seen-sft-100k`, que a su vez deriva de la familia pi05 (openpi). El modelo está entrenado sobre el conjunto de datos `nvidia/PhysicalAI-Robotics-Manipulation-Kitchen-Demos` y el sufijo del nombre indica que ha pasado por una fase de aprendizaje por refuerzo con PPO y una técnica de auto-mejora iterativa (RSI, *reinforcement self-improvement*), seleccionándose el checkpoint del paso 110.
 
 Con 3.616.757.520 parámetros (aproximadamente 3,6 mil millones) y un tamaño de repositorio de 27,8 GB en formato safetensors, es un modelo de tamaño medio diseñado para ejecutar políticas de control robótico a partir de observaciones visuales e instrucciones en lenguaje natural. Su relevancia radica en que combina el paradigma VLA con un pipeline de RL posterior al SFT, una tendencia creciente para mejorar la robustez de políticas robóticas más allá de la imitación supervisada.
 
-Es importante señalar que el modelo tiene acceso restringido (gated) en HuggingFace, no declara licencia ni idiomas soportados, y no cuenta con descargas ni interacciones públicas en el momento de la consulta. La información técnica disponible es limitada y se deriva principalmente de los metadatos del repositorio.
+Es importante señalar que el modelo tiene acceso restringido (gated) en Hugging Face, no declara licencia ni idiomas soportados, y no cuenta con descargas ni interacciones públicas en el momento de la consulta. La información técnica disponible es limitada y se deriva principalmente de los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia no declarada: no se puede confirmar el uso comercial; debe contactarse con el autor antes de cualquier despliegue productivo.
 - Idiomas no especificados: se desconoce si las instrucciones en lenguaje natural admiten castellano u otros idiomas distintos del inglés.
 - Entrenado específicamente para RoboCasa365 y el dataset de cocina de NVIDIA: la generalización fuera de ese dominio es incierta.
@@ -89,7 +89,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AaronHuangWei/pi05-robocasa365-composite-seen-rsi-ppo-best-step110
+- Hugging Face: https://huggingface.co/AaronHuangWei/pi05-robocasa365-composite-seen-rsi-ppo-best-step110
 - Modelo base: https://huggingface.co/AaronHuangWei/pi05-robocasa365-composite-seen-sft-100k
 - Dataset: https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-Manipulation-Kitchen-Demos
 - Repositorio openpi (referencia de la familia): https://github.com/Physical-Intelligence/openpi

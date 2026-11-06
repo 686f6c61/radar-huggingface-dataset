@@ -110,7 +110,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForeverBlue/RALF-SeizeIT2
+- Hugging Face: https://huggingface.co/ForeverBlue/RALF-SeizeIT2
 - Codigo: https://github.com/ForeverBlue816/PhysioWave (documentacion en `docs/fusion.md`)
 - Codificador EEG: https://huggingface.co/ForeverBlue/EEG
 - Codificador ECG: https://huggingface.co/ForeverBlue/ECG

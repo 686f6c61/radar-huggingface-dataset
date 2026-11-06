@@ -15,8 +15,8 @@ El modelo parte de un modelo base denominado TR-HASH-MoE-100M-70B-Agentic-Refine
 | Parametros activos | 100M (según nomenclatura del modelo) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés y francés (según tags de HuggingFace) |
-| Licencia | cc-by-nc-4.0 (según tags de HuggingFace; campo de licencia no disponible) |
+| Idiomas soportados | inglés y francés (según tags de Hugging Face) |
+| Licencia | cc-by-nc-4.0 (según tags de Hugging Face; campo de licencia no disponible) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No disponible.
 ## Limitaciones y advertencias
 
 - Licencia cc-by-nc-4.0: el uso comercial está restringido, lo que limita su aplicación en productos o servicios de pago.
-- El campo de licencia en HuggingFace aparece como "no disponible" aunque el tag indica cc-by-nc-4.0; se recomienda verificar antes de su uso.
+- El campo de licencia en Hugging Face aparece como "no disponible" aunque el tag indica cc-by-nc-4.0; se recomienda verificar antes de su uso.
 - No se han publicado benchmarks, por lo que no se puede evaluar su rendimiento de forma objetiva frente a otros modelos.
 - La longitud de contexto no está documentada, lo que dificulta el diseño de aplicaciones que requieran ventanas largas de atención.
 - Los idiomas soportados se limitan a inglés y francés según los tags, sin confirmación de soporte para otros idiomas.

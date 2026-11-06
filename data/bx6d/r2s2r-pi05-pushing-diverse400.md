@@ -101,7 +101,7 @@ La comparación relevante es con los otros fine-tunes de la misma serie: compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bx6d/r2s2r-pi05-pushing-diverse400
+- Modelo en Hugging Face: https://huggingface.co/bx6d/r2s2r-pi05-pushing-diverse400
 - Dataset de entrenamiento: https://huggingface.co/datasets/bx6d/r2s2r-pushing-diverse400
 - Dataset relacionado (pick-and-place): https://huggingface.co/datasets/bx6d/r2s2r-blue-cube-to-bowl-diverse400
 - Fine-tune previo de seis tareas: https://huggingface.co/bx6d/r2s2r-pi05-six-tasks-diverse600

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cifar10-iocnn es una red neuronal de clasificación de imágenes entrenada sobre el conjunto de datos CIFAR-10, publicada en HuggingFace por el usuario SriHarsha2608 bajo licencia MIT. El modelo implementa una arquitectura de convexidad entrada-salida (IOC-NN, Input-Output Convex Neural Network), una familia de redes cuya función de salida es convexa respecto a la entrada, lo que aporta garantías teóricas de estabilidad y unicidad en problemas de optimización y clasificación. La red tiene solo tres capas densas (3072 → 128 → 64 → 10) y 402.250 parámetros totales, con activaciones ELU y pesos intermedios restringidos a valores no negativos.
+cifar10-iocnn es una red neuronal de clasificación de imágenes entrenada sobre el conjunto de datos CIFAR-10, publicada en Hugging Face por el usuario SriHarsha2608 bajo licencia MIT. El modelo implementa una arquitectura de convexidad entrada-salida (IOC-NN, Input-Output Convex Neural Network), una familia de redes cuya función de salida es convexa respecto a la entrada, lo que aporta garantías teóricas de estabilidad y unicidad en problemas de optimización y clasificación. La red tiene solo tres capas densas (3072 → 128 → 64 → 10) y 402.250 parámetros totales, con activaciones ELU y pesos intermedios restringidos a valores no negativos.
 
 El modelo no es un modelo generativo ni un transformer: es un clasificador de propósito específico para las 10 clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). Su relevancia es principalmente académica y didáctica: sirve como referencia reproducible de una IOC-NN sobre un benchmark estándar, con pesos disponibles tanto en formato PyTorch (`state_dict`) como en NumPy (`.npz`). No hay información sobre idiomas, ya que la tarea es puramente de visión por computador.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cifar10-iocnn | 402.250 | 32×32×3 fija | No publicado | MIT | HuggingFace (repo vacío) |
+| cifar10-iocnn | 402.250 | 32×32×3 fija | No publicado | MIT | Hugging Face (repo vacío) |
 | ResNet-20 (CIFAR-10) | ~270.000 | 32×32×3 | ~91-92 % top-1 (referencia habitual de la literatura) | Varía según implementación | Múltiples repos públicos |
 | VGG-11 (CIFAR-10) | ~9,2 M | 32×32×3 | ~92-93 % top-1 (referencia habitual) | Varía según implementación | Múltiples repos públicos |
 
@@ -83,5 +83,5 @@ Nota: los valores de precisión de ResNet-20 y VGG-11 son referencias generales 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SriHarsha2608/cifar10-iocnn
+- Hugging Face: https://huggingface.co/SriHarsha2608/cifar10-iocnn
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

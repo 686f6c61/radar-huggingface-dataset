@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Suri Qwen 3.8 27B Uncensored es una cuantización en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario de HuggingFace SpaceTimee (desarrollador "Space Time"). El autor la presenta como una versión "sin censura" y "desalineada" (uncensored, unaligned), es decir, con los mecanismos de alineación de seguridad del modelo original atenuados o eliminados, de modo que el modelo no aplica los rechazos típicos de los asistentes alineados.
+Suri Qwen 3.8 27B Uncensored es una cuantización en formato GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario de Hugging Face SpaceTimee (desarrollador "Space Time"). El autor la presenta como una versión "sin censura" y "desalineada" (uncensored, unaligned), es decir, con los mecanismos de alineación de seguridad del modelo original atenuados o eliminados, de modo que el modelo no aplica los rechazos típicos de los asistentes alineados.
 
 El modelo cuenta con 26.895.998.464 parámetros (unos 26,9 mil millones) según los metadatos de safetensors, y se distribuye en formato GGUF para inferencia local. El repositorio ocupa 205,3 GB, lo que indica que contiene varias cuantizaciones del mismo modelo. Los idiomas declarados son chino (zh) e inglés (en), y la model card está redactada íntegramente en chino.
 
@@ -24,19 +24,19 @@ Su interés práctico se limita a quien necesite un modelo de ~27B ejecutable en
 | Tamaño del repositorio | 205,3 GB |
 | Parámetros de muestreo recomendados | temperature 0,7-1,0; top_p 0,8-0,95; repetition_penalty 1-1,1 |
 | Descargas / "me gusta" | 16 / 0 |
-| Fecha de creación en HuggingFace | 24/09/2026 |
+| Fecha de creación en Hugging Face | 24/09/2026 |
 
 ## Arquitectura y entrenamiento
 
 La model card no aporta ningún detalle arquitectónico. Lo único verificable es que se trata de un derivado de Qwen/Qwen3.8-27B (con unsloth/Qwen3.8-27B declarado también como base), sobre el que SpaceTimee ha aplicado un proceso de desalineación y una posterior cuantización a GGUF. No se indica si la arquitectura subyacente es un transformer denso, un MoE o un diseño híbrido, ni el número de capas, la dimensión oculta, el número de cabezas de atención o el tipo de atención empleado.
 
-Tampoco hay información sobre el entrenamiento o el post-entrenamiento: se desconoce el volumen de tokens, la composición del dataset, si se emplearon técnicas de RLHF, DPO, abliteration u otras, y sobre qué pesos exactos se aplicó el proceso. La única orientación operativa publicada son los parámetros de muestreo recomendados. El pipeline declarado en HuggingFace es image-text-to-text, lo que sugeriría capacidad de entrada multimodal, pero la model card no describe ninguna funcionalidad de visión ni cómo estaría implementada, por lo que no puede darse por confirmada.
+Tampoco hay información sobre el entrenamiento o el post-entrenamiento: se desconoce el volumen de tokens, la composición del dataset, si se emplearon técnicas de RLHF, DPO, abliteration u otras, y sobre qué pesos exactos se aplicó el proceso. La única orientación operativa publicada son los parámetros de muestreo recomendados. El pipeline declarado en Hugging Face es image-text-to-text, lo que sugeriría capacidad de entrada multimodal, pero la model card no describe ninguna funcionalidad de visión ni cómo estaría implementada, por lo que no puede darse por confirmada.
 
 ## Capacidades
 
 - Generación de texto conversacional en chino e inglés; no se declara soporte de castellano ni de otros idiomas.
 - Modo "sin censura": el autor afirma que el modelo está desalineado, por lo que no reproduce los rechazos ni los filtros de contenido del modelo base.
-- Capacidad multimodal declarada en los metadatos de HuggingFace (image-text-to-text), no documentada ni verificada en la model card.
+- Capacidad multimodal declarada en los metadatos de Hugging Face (image-text-to-text), no documentada ni verificada en la model card.
 - Razonamiento, generación de código y matemáticas: no documentados y sin evaluación publicada; se desconoce en qué medida se conservan respecto al modelo base tras la desalineación y la cuantización.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -98,13 +98,13 @@ No es posible establecer una comparativa cuantitativa con alternativas de la mis
 - Pérdida por cuantización: las cuantizaciones por debajo de Q4 reducen de forma apreciable la calidad de generación; para tareas de razonamiento o código conviene usar Q5, Q6 o Q8 si la VRAM lo permite.
 - Adopción mínima: 16 descargas y 0 "me gusta" implican ausencia de validación por parte de la comunidad, sin garantía de mantenimiento, corrección de errores ni soporte.
 - Documentación insuficiente: se desconoce la arquitectura, el contexto máximo, el proceso de entrenamiento y el método exacto de desalineación. Esto dificulta estimar el rendimiento en producción y realizar una evaluación de riesgos.
-- Capacidad multimodal sin confirmar: la etiqueta image-text-to-text de HuggingFace no está respaldada por ningún ejemplo, documentación ni evaluación.
+- Capacidad multimodal sin confirmar: la etiqueta image-text-to-text de Hugging Face no está respaldada por ningún ejemplo, documentación ni evaluación.
 - Consumo de almacenamiento: el repositorio completo ocupa 205,3 GB, un coste relevante si se descarga íntegro.
 - Sin filtros de salida propios: al estar desalineado, no debe exponerse directamente a usuarios finales sin una capa de moderación externa.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-GGUF
+- Ficha en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado en los metadatos del repositorio; no verificado)
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-27B (referenciado en los metadatos del repositorio; no verificado)
 - Papers, blogs, repositorios o demos: no disponible en la información proporcionada

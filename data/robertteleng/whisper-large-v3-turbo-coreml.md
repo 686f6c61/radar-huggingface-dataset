@@ -89,7 +89,7 @@ La comparacion relevante no es de calidad, ya que los pesos son los mismos que l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertteleng/whisper-large-v3-turbo-coreml
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/robertteleng/whisper-large-v3-turbo-coreml
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3-turbo
 - Herramienta de conversion coreml-forge: https://github.com/robertteleng/coreml-forge
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada; los resultados devueltos correspondian a calculadoras de relacion de aspecto y no guardan relacion con el modelo.

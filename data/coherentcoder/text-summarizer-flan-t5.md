@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coherentcoder/text-summarizer-flan-t5` es un repositorio alojado en HuggingFace por el usuario `coherentcoder` cuyo nombre sugiere un modelo derivado de la familia FLAN-T5 orientado a resumen de texto. La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin detalles de entrenamiento, sin idiomas declarados ni ejemplos de uso. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta, lo que indica que no contiene pesos subidos o que estos no estan disponibles publicamente.
+`coherentcoder/text-summarizer-flan-t5` es un repositorio alojado en Hugging Face por el usuario `coherentcoder` cuyo nombre sugiere un modelo derivado de la familia FLAN-T5 orientado a resumen de texto. La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin detalles de entrenamiento, sin idiomas declarados ni ejemplos de uso. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta, lo que indica que no contiene pesos subidos o que estos no estan disponibles publicamente.
 
 Dado que no se especifica la variante concreta de FLAN-T5 (small, base, large, xl, xxl), no es posible confirmar parametros, longitud de contexto ni composicion del dataset de entrenamiento. Cualquier uso en produccion requeriria inspeccionar el repositorio directamente para verificar si existen pesos, tokenizer y configuracion, y validar la calidad del modelo con datos propios.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | coherentcoder/text-summarizer-flan-t5 | no disponible | no disponible | MIT | repo de 0.0 GB, sin descargas |
-| google/flan-t5-base | 0.2B aprox. | 512 tokens aprox. | Apache 2.0 | publico en HuggingFace |
-| google/flan-t5-large | 0.78B aprox. | 512 tokens aprox. | Apache 2.0 | publico en HuggingFace |
-| facebook/bart-large-cnn | 0.4B aprox. | 1024 tokens aprox. | MIT | publico en HuggingFace |
+| google/flan-t5-base | 0.2B aprox. | 512 tokens aprox. | Apache 2.0 | publico en Hugging Face |
+| google/flan-t5-large | 0.78B aprox. | 512 tokens aprox. | Apache 2.0 | publico en Hugging Face |
+| facebook/bart-large-cnn | 0.4B aprox. | 1024 tokens aprox. | MIT | publico en Hugging Face |
 
 Los datos de los modelos comparativos corresponden a conocimiento general de sus model cards publicas; no se dispone de comparacion de rendimiento con este repositorio.
 
@@ -80,5 +80,5 @@ Los datos de los modelos comparativos corresponden a conocimiento general de sus
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coherentcoder/text-summarizer-flan-t5
+- Hugging Face: https://huggingface.co/coherentcoder/text-summarizer-flan-t5
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

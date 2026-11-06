@@ -90,7 +90,7 @@ Paham-Experimental se diferencia de los modelos densos comparables de tamano sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepNarra/Paham-Experimental
+- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Paham-Experimental
 - Variante base DeepNarra/Paham: https://huggingface.co/DeepNarra/Paham
 - Organizacion DeepNarra: https://huggingface.co/DeepNarra
 - Notebook de entrenamiento autonomo: https://github.com/DeepNarra (repositorio referenciado en la model card; URL exacta del notebook no disponible)

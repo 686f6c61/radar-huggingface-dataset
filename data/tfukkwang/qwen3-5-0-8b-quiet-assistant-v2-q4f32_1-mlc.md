@@ -102,7 +102,7 @@ No se dispone de datos que permitan comparar con otros asistentes de tool callin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f32_1-MLC
 - Build alternativo q4f16_1: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v2-q4f16_1-MLC
 - Version anterior v1: https://huggingface.co/tfukkwang/Qwen3.5-0.8B-quiet-assistant-v1-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

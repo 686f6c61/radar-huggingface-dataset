@@ -71,9 +71,9 @@ El propio autor indica que la evaluación de la marcha se realizó con una aprox
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión de locomoción `follow_route` (5 acciones) | apache-2.0 | HuggingFace (14 descargas) |
+| connectailab-rl-jay-v1-link01 | 0,8B (base) + LoRA | no disponible | Decisión de locomoción `follow_route` (5 acciones) | apache-2.0 | Hugging Face (14 descargas) |
 | Política PPO original (brain.json) | no aplica (tabla de política) | no aplica | Misma tarea `follow_route` | no disponible | Incluida en el proyecto CONNECT TYCOON |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Lenguaje general | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Lenguaje general | no disponible | Hugging Face |
 
 No se dispone de información sobre otros adaptadores o modelos de decisión comparables en la documentación proporcionada. La comparación más directa es con la política PPO que sirve de profesor, que obtiene un 100% de acierto en el test y un 100% de éxito en los 20 episodios, frente al 85,3% y 100% del adaptador.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores o modelos de decisión com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-jay-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-jay-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

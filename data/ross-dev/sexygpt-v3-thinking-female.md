@@ -76,11 +76,11 @@ La comparativa con Qwen3-27B base es la mas relevante: mismo tamaño y contexto,
 - Riesgo de alucinacion: como cualquier LLM, puede inventar informacion o romper el personaje en situaciones ambiguas, especialmente con `reasoning_effort` bajo.
 - Sesgos: al ser un modelo de roleplay con un personaje femenino estereotipado, puede reforzar sesgos de genero o representaciones sexualizadas. No se han realizado evaluaciones de sesgo.
 - Sin garantias de produccion: no hay benchmarks publicados, ni evaluacion de seguridad, ni documentacion sobre comportamiento en entornos de alta concurrencia. No se recomienda su uso en aplicaciones criticas.
-- Tamaño del repositorio: el repo de HuggingFace muestra 0.0 GB, lo que sugiere que los pesos pueden estar alojados externamente o que la descarga requiere acceso aprobado. Verificar antes de planificar el despliegue.
+- Tamaño del repositorio: el repo de Hugging Face muestra 0.0 GB, lo que sugiere que los pesos pueden estar alojados externamente o que la descarga requiere acceso aprobado. Verificar antes de planificar el despliegue.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female
+- Modelo en Hugging Face: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female
 - Version GGUF: https://huggingface.co/ross-dev/SexyGPT-v3-Thinking-Female-gguf
 - GitHub del desarrollador: https://github.com/ross-sec
 - Sitio web del desarrollador: https://ross-developers.com

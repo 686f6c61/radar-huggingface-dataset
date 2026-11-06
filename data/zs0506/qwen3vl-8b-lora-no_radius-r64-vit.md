@@ -4,7 +4,7 @@
 
 `zs0506/qwen3vl-8B-lora-no_radius-r64-vit` es un adaptador LoRA (PEFT) publicado por el usuario `zs0506` que se aplica sobre el modelo base `Qwen/Qwen3-VL-8B-Instruct`, un transformer multimodal de vision-lenguaje de la familia Qwen3-VL. El repositorio contiene unicamente los pesos del adaptador (0,4 GB en formato safetensors), no un modelo completo, por lo que su uso requiere descargar y cargar por separado el modelo base de 8.000 millones de parametros.
 
-El interes inmediato del repositorio es limitado pero claro para quien trabaja con ajuste fino eficiente: demuestra el patron habitual de publicacion de adaptadores con la libreria PEFT 0.20.0 y `transformers`, con un rango declarado en el propio identificador (`r64`) y una variante de datos o de modulo objetivo identificada como `no_radius` y `vit`. La model card, sin embargo, es la plantilla por defecto de HuggingFace y no esta cumplimentada: no documenta datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
+El interes inmediato del repositorio es limitado pero claro para quien trabaja con ajuste fino eficiente: demuestra el patron habitual de publicacion de adaptadores con la libreria PEFT 0.20.0 y `transformers`, con un rango declarado en el propio identificador (`r64`) y una variante de datos o de modulo objetivo identificada como `no_radius` y `vit`. La model card, sin embargo, es la plantilla por defecto de Hugging Face y no esta cumplimentada: no documenta datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
 
 Por tanto, esta ficha describe con rigor lo que se puede verificar (identificadores, tamano del repo, modelo base, libreria y etiquetas) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier cifra de rendimiento o comportamiento especifico del adaptador debe considerarse no verificada hasta que el autor publique informacion o se reproduzcan pruebas propias.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha describe con rigor lo que se puede verificar (identificado
 
 El artefacto es un adaptador de bajo rango (LoRA) en lugar de un modelo completo. El identificador del repositorio incluye `r64`, lo que sugiere un rango de descomposicion de 64, y `vit`, que apunta a que las matrices adaptadas se aplican sobre el modulo de vision (Vision Transformer) del modelo base o sobre las proyecciones asociadas a la torre visual. Esta lectura es una inferencia a partir del nombre del repositorio y no esta confirmada en la model card, que permanece sin rellenar.
 
-No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos, la existencia de RLHF/DPO, la precision usada (fp16, bf16, fp8) ni la duracion del entrenamiento. Tampoco se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion). El unico dato de procedimiento verificable es la version de herramienta declarada: PEFT 0.20.0. La etiqueta `arxiv:1910.09700` que aparece en el repositorio no corresponde a un articulo del modelo, sino a la referencia de la plantilla de HuggingFace sobre el calculo de impacto ambiental (Lacoste et al., 2019).
+No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos, la existencia de RLHF/DPO, la precision usada (fp16, bf16, fp8) ni la duracion del entrenamiento. Tampoco se describe ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion). El unico dato de procedimiento verificable es la version de herramienta declarada: PEFT 0.20.0. La etiqueta `arxiv:1910.09700` que aparece en el repositorio no corresponde a un articulo del modelo, sino a la referencia de la plantilla de Hugging Face sobre el calculo de impacto ambiental (Lacoste et al., 2019).
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento, licencia ni contexto del adaptador, por l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zs0506/qwen3vl-8B-lora-no_radius-r64-vit` | Adaptador LoRA sobre Qwen3-VL-8B-Instruct | No disponible (repo de 0,4 GB); base de 8B | No disponible | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3-VL-8B-Instruct` | Modelo base multimodal completo | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace (referenciado como modelo base) |
+| `zs0506/qwen3vl-8B-lora-no_radius-r64-vit` | Adaptador LoRA sobre Qwen3-VL-8B-Instruct | No disponible (repo de 0,4 GB); base de 8B | No disponible | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3-VL-8B-Instruct` | Modelo base multimodal completo | 8B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face (referenciado como modelo base) |
 | Otros adaptadores LoRA sobre modelos vision-lenguaje de ~7-9B | Adaptador LoRA | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la busqueda web modelos comparables adicionales; los resultados obtenidos no guardan relacion con este modelo.
@@ -87,7 +87,7 @@ No se han identificado en la busqueda web modelos comparables adicionales; los r
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_radius-r64-vit
+- Pagina del modelo en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_radius-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Libreria PEFT (documentacion): https://huggingface.co/docs/peft/index
 - Referencia citada en las etiquetas del repositorio (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700

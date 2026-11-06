@@ -33,7 +33,7 @@ El contexto de entrenamiento es de 65.536 tokens con hasta 57.344 tokens de resp
 
 Los adaptadores se entrenan mediante PEFT/LoRA de rango 32 y alpha 64 sobre `Qwen/Qwen3.5-9B`, con veRL como framework de RL y FSDP para el reparto de shards. La configuración de entrenamiento documentada es: batch de 32 prompts por 8 rollouts, contexto de 65.536 tokens, respuesta máxima de 57.344 tokens, muestreo con temperatura 1.0, top-p 1.0 y top-k desactivado (-1), y paralelismo de secuencia 8. El algoritmo es RLOO, una variante de REINFORCE con estimador leave-one-out que reduce la varianza del baseline sin necesidad de un crítico separado. El agente empleado durante el entrenamiento es Mini-SWE-Agent, lo que define el formato de interacción (ejecución de comandos y edición de ficheros en un entorno de repositorio).
 
-El linaje consta de dos ejecuciones: `verl-qwen35-9b-65k-mini-swe-rloo-20260830-r15` y su continuación `...-20260831-r16`. El plan de entrenamiento apuntaba a 143 pasos de optimizador, pero el último checkpoint persistido es el paso 120: no existen los pasos 130, 140 ni 143 en el almacén. El paso 10 pertenece a r15 y los pasos 20 a 120 a r16. La carpeta `continuation/global_step_120/` no es un adaptador de servicio, sino un checkpoint completo de veRL/FSDP que incluye estados del optimizador y del RNG, además de metadatos de FSDP/LoRA y del tokenizador, lo que permite reanudar el entrenamiento restaurando exactamente la revisión del base, el commit de veRL y la imagen de entrenamiento registrada. Como innovación destacable, el repositorio incorpora auditoría de procedencia (digest inmutable de la imagen de entrenamiento, exportaciones de W&B y manifiestos con checksums), algo poco habitual en adaptadores publicados en HuggingFace.
+El linaje consta de dos ejecuciones: `verl-qwen35-9b-65k-mini-swe-rloo-20260830-r15` y su continuación `...-20260831-r16`. El plan de entrenamiento apuntaba a 143 pasos de optimizador, pero el último checkpoint persistido es el paso 120: no existen los pasos 130, 140 ni 143 en el almacén. El paso 10 pertenece a r15 y los pasos 20 a 120 a r16. La carpeta `continuation/global_step_120/` no es un adaptador de servicio, sino un checkpoint completo de veRL/FSDP que incluye estados del optimizador y del RNG, además de metadatos de FSDP/LoRA y del tokenizador, lo que permite reanudar el entrenamiento restaurando exactamente la revisión del base, el commit de veRL y la imagen de entrenamiento registrada. Como innovación destacable, el repositorio incorpora auditoría de procedencia (digest inmutable de la imagen de entrenamiento, exportaciones de W&B y manifiestos con checksums), algo poco habitual en adaptadores publicados en Hugging Face.
 
 ## Capacidades
 
@@ -115,7 +115,7 @@ La información disponible solo permite comparar los adaptadores con su propio m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidanugraha/Qwen3.5-9B-SWE-Smith-LoRA-Adapters
+- Repositorio Hugging Face: https://huggingface.co/davidanugraha/Qwen3.5-9B-SWE-Smith-LoRA-Adapters
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`)
 - Paper, blog o repositorio del autor: no disponible
 - Demo: no disponible

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (so101_smolvla_base_object_pnp_v1) | 450 M | no disponible | Pick-and-place SO-101 | Apache 2.0 | HuggingFace, 24 descargas |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base para fine-tuning | no disponible en la informacion | HuggingFace (modelo base) |
-| Otros fine-tunes de SmolVLA | no disponible | no disponible | Manipulación robótica | variable | HuggingFace |
+| Este checkpoint (so101_smolvla_base_object_pnp_v1) | 450 M | no disponible | Pick-and-place SO-101 | Apache 2.0 | Hugging Face, 24 descargas |
+| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base para fine-tuning | no disponible en la informacion | Hugging Face (modelo base) |
+| Otros fine-tunes de SmolVLA | no disponible | no disponible | Manipulación robótica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (tasas de éxito, latencia) entre este checkpoint y alternativas, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo (tasas de éxito, latencia) en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SathyarajMedipalli/so101_smolvla_base_object_pnp_v1_with_task010_ND
+- Modelo en Hugging Face: https://huggingface.co/SathyarajMedipalli/so101_smolvla_base_object_pnp_v1_with_task010_ND
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/SathyarajMedipalli/Task_001_object_pickup_ND_50ep_20261027_031504
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SathyarajMedipalli/Task_001_object_pickup_ND_50ep_20261027_031504

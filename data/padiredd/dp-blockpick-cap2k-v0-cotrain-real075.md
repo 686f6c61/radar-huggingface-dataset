@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-cap2k-v0-cotrain-real075` es una política de difusión (diffusion policy) para robótica manipulativa, desarrollada por el usuario `padiredd` y publicada en HuggingFace dentro del ecosistema LeRobot. El modelo resuelve una tarea muy concreta: el agarre cenital (top-down pick) de un bloque verde lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un controlador visomotor que mapea observaciones (tres cámaras de 240x240 más un vector de estado articular de 22 dimensiones) a 16 objetivos articulares a 15 Hz.
+`dp-blockpick-cap2k-v0-cotrain-real075` es una política de difusión (diffusion policy) para robótica manipulativa, desarrollada por el usuario `padiredd` y publicada en Hugging Face dentro del ecosistema LeRobot. El modelo resuelve una tarea muy concreta: el agarre cenital (top-down pick) de un bloque verde lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un controlador visomotor que mapea observaciones (tres cámaras de 240x240 más un vector de estado articular de 22 dimensiones) a 16 objetivos articulares a 15 Hz.
 
 La relevancia técnica del checkpoint reside en su estrategia de entrenamiento: es un ejemplo de *co-training* sim-a-real con mezcla ponderada (`alpha 0.75 real`), en el que cada muestra del lote se extrae con probabilidad 0,75 de 14 demostraciones reales de teleoperación y con probabilidad 0,25 de 2.000 demostraciones simuladas generadas por un programa *code-as-policy*. Esto lo convierte en un caso de estudio útil para quienes trabajan en transferencia sim-a-real con pocos datos reales.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `padiredd/dp-blockpick-cap2k-v0-cotrain-real075` | 287,5 M | horizonte 64, 32 ejecutados, 15 Hz | other | HuggingFace |
-| `padiredd/dp-blockpick-yaw45-2k` | no disponible | no disponible | no disponible | HuggingFace (referenciado en la model card) |
-| Diffusion Policy original (LeRobot) | variable según configuración | variable | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| `padiredd/dp-blockpick-cap2k-v0-cotrain-real075` | 287,5 M | horizonte 64, 32 ejecutados, 15 Hz | other | Hugging Face |
+| `padiredd/dp-blockpick-yaw45-2k` | no disponible | no disponible | no disponible | Hugging Face (referenciado en la model card) |
+| Diffusion Policy original (LeRobot) | variable según configuración | variable | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 
 La comparación directa con el checkpoint `padiredd/dp-blockpick-yaw45-2k` es la más pertinente: según la model card, ambos comparten semillas, colocaciones de bloque (|yaw| 0-45°, signo aleatorio), región completa, ciclado de altura de mesa y aleatorización dr2, y difieren únicamente en el generador de demostraciones (planificador de movimiento frente a *code-as-policy*) y en la incorporación de las 14 demostraciones reales. No se dispone de datos de rendimiento para ninguno de los dos.
 
@@ -75,13 +75,13 @@ La comparación directa con el checkpoint `padiredd/dp-blockpick-yaw45-2k` es la
 - **Sin evaluación publicada**: la model card indica que los resultados de evaluación se añadirán cuando se ejecuten; no hay evidencia cuantitativa de éxito en el mundo real.
 - **Licencia `other`**: no se especifican los términos exactos de uso comercial; es necesario contactar con el autor o revisar el repositorio antes de un despliegue en producción.
 - **Dependencia del fork `lerobot-cyclo`**: el `CotrainMixSampler` y la lógica de co-training no forman parte del LeRobot estándar, lo que complica la reproducción fuera del fork de ROBOTIS.
-- **Dataset no publicado**: el conjunto `pick-cube-cap2k-v0-yaw45-full-dr2-3cam` no está disponible en HuggingFace, por lo que la reproducibilidad completa del entrenamiento no es posible actualmente.
+- **Dataset no publicado**: el conjunto `pick-cube-cap2k-v0-yaw45-full-dr2-3cam` no está disponible en Hugging Face, por lo que la reproducibilidad completa del entrenamiento no es posible actualmente.
 - **Riesgo de sobreajuste a la simulación**: pese al aumento de imagen agresivo, la brecha visual sim-real sigue siendo el principal riesgo de fallo en despliegue físico.
 - **Sin datos de sesgo ni alucinación**: al no ser un modelo de lenguaje, estas categorías no aplican, pero sí existe riesgo de fallo silencioso en la política de control ante condiciones fuera de distribución.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/dp-blockpick-cap2k-v0-cotrain-real075
+- Hugging Face: https://huggingface.co/padiredd/dp-blockpick-cap2k-v0-cotrain-real075
 - Checkpoint de referencia citado: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - Dataset real de teleoperación citado: https://huggingface.co/omkarpatil/pick-lime-block
 - LeRobot (framework base): https://github.com/huggingface/lerobot

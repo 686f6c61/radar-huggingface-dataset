@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye datos de otras política
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `youlim/microduck-sprint-fwd4` | no disponible | no aplica (obs. 61-D) | no publicado | no disponible | HuggingFace, 0 descargas |
+| `youlim/microduck-sprint-fwd4` | no disponible | no aplica (obs. 61-D) | no publicado | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. La información proporcionada no incluye datos de otras política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youlim/microduck-sprint-fwd4
+- Modelo en Hugging Face: https://huggingface.co/youlim/microduck-sprint-fwd4
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de tareas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges (rama `main`, commit `fb8a99d3f`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa en la información disponible)

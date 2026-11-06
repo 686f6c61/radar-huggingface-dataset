@@ -90,7 +90,7 @@ Comparativa de rendimiento: no disponible, ya que este repositorio no publica be
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mobilint/HyperCLOVAX-SEED-Text-Instruct-1.5B-regulus-rb-usb
+- Repositorio en Hugging Face: https://huggingface.co/mobilint/HyperCLOVAX-SEED-Text-Instruct-1.5B-regulus-rb-usb
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B
 - Licencia del modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B/blob/main/LICENSE
 - Sitio de Mobilint: https://mobilint.com

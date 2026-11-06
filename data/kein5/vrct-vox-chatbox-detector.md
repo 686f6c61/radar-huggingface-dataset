@@ -106,7 +106,7 @@ No se han publicado comparaciones con otros detectores en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kein5/vrct-vox-chatbox-detector
+- Modelo en Hugging Face: https://huggingface.co/kein5/vrct-vox-chatbox-detector
 - Repositorio VRCT-VOX: https://github.com/kein5/VRCT-VOX
 - Proyecto VRCT upstream: https://github.com/misyaguziya/VRCT
 - YOLOX (Megvii): https://github.com/Megvii-BaseDetection/YOLOX

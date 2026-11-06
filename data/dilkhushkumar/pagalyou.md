@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `dilkhushkumar/pagalyou` es un repositorio alojado en HuggingFace por el usuario `dilkhushkumar`. En el momento de la consulta presenta 0 descargas y 0 "likes", y su model card no contiene mas contenido que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso. Se trata, por tanto, de un repositorio sin documentacion tecnica publicada.
+El modelo identificado como `dilkhushkumar/pagalyou` es un repositorio alojado en Hugging Face por el usuario `dilkhushkumar`. En el momento de la consulta presenta 0 descargas y 0 "likes", y su model card no contiene mas contenido que la declaracion de licencia: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso. Se trata, por tanto, de un repositorio sin documentacion tecnica publicada.
 
 La unica informacion verificable es de caracter administrativo: la licencia declarada es de tipo `other` con nombre `dkworld` y enlace a un fichero `LICENSE`, la region declarada es `us` y las fechas de creacion y ultima actualizacion registradas son ambas el 2026-09-18 (fecha futura respecto a la redaccion habitual de este tipo de fichas, lo que resulta cuando menos anomalo y sugiere que el dato debe tomarse con cautela). No se declara pipeline de inferencia, ni idiomas soportados, ni etiquetas de capacidad.
 
@@ -56,7 +56,7 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dilkhushkumar/pagalyou
+- Repositorio en Hugging Face: https://huggingface.co/dilkhushkumar/pagalyou
 - Fichero de licencia referenciado por el autor: `LICENSE` dentro del propio repositorio (contenido no disponible en la informacion proporcionada)
 - Paper, blog o demo oficial: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos corresponden a dominios genericos de Microsoft y no guardan relacion con el repositorio.

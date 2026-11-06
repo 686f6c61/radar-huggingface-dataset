@@ -103,7 +103,7 @@ No se dispone de comparativas de calidad (benchmarks) entre estas variantes en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbrasdasilva/Qwen3.8-27B-FP8-MTP
+- Modelo en Hugging Face: https://huggingface.co/dbrasdasilva/Qwen3.8-27B-FP8-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build complementaria (NVFP4, misma calibracion): https://huggingface.co/dbrasdasilva/Qwen3.8-27B-NVFP4-MTP
 - Build NVFP4 de NVIDIA sobre la misma arquitectura: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4

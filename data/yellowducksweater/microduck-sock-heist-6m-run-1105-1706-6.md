@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sock-heist-6m-run-1105-1706-6` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de un artefacto de robótica empaquetado en formato ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control a una frecuencia de 50 Hz. Lo publica el usuario YellowDuckSweater en HuggingFace con la librería `microduck` y el pipeline `robotics`.
+`sock-heist-6m-run-1105-1706-6` es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de un artefacto de robótica empaquetado en formato ONNX que mapea observaciones de 61 dimensiones a 14 acciones de control a una frecuencia de 50 Hz. Lo publica el usuario YellowDuckSweater en Hugging Face con la librería `microduck` y el pipeline `robotics`.
 
 El modelo implementa una política perpetua, es decir, un patrón de marcha (gait) que se ejecuta de forma continua hasta que el operador lo detiene o lo sustituye en una ranura de política del daemon `robotctl`. La model card indica explícitamente que es "más rápida" que otras variantes, aunque no aporta métricas cuantitativas de velocidad ni de recompensa. El entrenamiento se realizó con el entorno `Mjlab-SockHeist6m-MicroDuck` del repositorio `microduck-challenges`, usando 4096 entornos paralelos, 2500 iteraciones máximas y la semilla 13, con un checkpoint final en la iteración 1900.
 
-La relevancia de esta ficha es limitada para el público habitual de modelos de IA generativa, pero es útil como ejemplo de artefacto de RL para robótica empaquetado con un manifiesto estandarizado y un normalizador de observaciones embebido en el propio ONNX, lo que simplifica el despliegue en hardware real. El repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un tamaño muy reducido, coherente con una política de red neuronal pequeña.
+La relevancia de esta ficha es limitada para el público habitual de modelos de IA generativa, pero es útil como ejemplo de artefacto de RL para robótica empaquetado con un manifiesto estandarizado y un normalizador de observaciones embebido en el propio ONNX, lo que simplifica el despliegue en hardware real. El repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un tamaño muy reducido, coherente con una política de red neuronal pequeña.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sock-heist-6m-run-1105-1706-6` | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
+| `sock-heist-6m-run-1105-1706-6` | Política RL para microduck (ONNX) | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Otras políticas `microduck-sock-heist-*` del mismo autor | Política RL para microduck | 61 / 14 (presumible) | 50 Hz (presumible) | no disponible | no verificado en la información disponible |
 | Políticas de referencia del repo `microduck-challenges` | Política RL para microduck | no disponible | no disponible | no disponible | GitHub |
 
@@ -79,7 +79,7 @@ No se dispone de datos numéricos de rendimiento para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-1706-6
+- Hugging Face: https://huggingface.co/YellowDuckSweater/microduck-sock-heist-6m-run-1105-1706-6
 - Repositorio de retos y entrenamiento: https://github.com/StephenForte/microduck-challenges
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card, sin URL directa disponible)

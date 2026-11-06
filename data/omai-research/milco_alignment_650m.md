@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`omai-research/milco_alignment_650m` es un modelo publicado en HuggingFace por el usuario `omai-research` bajo la libreria `transformers` y el framework PyTorch. El repositorio ocupa 2,8 GB y su card fue generada automaticamente por la plataforma, sin que el autor haya rellenado ninguno de los campos descriptivos: no hay informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni uso previsto. El identificador del modelo sugiere un tamano de aproximadamente 650 millones de parametros y un proceso de alineamiento, pero ninguno de esos dos extremos esta confirmado por el autor.
+`omai-research/milco_alignment_650m` es un modelo publicado en Hugging Face por el usuario `omai-research` bajo la libreria `transformers` y el framework PyTorch. El repositorio ocupa 2,8 GB y su card fue generada automaticamente por la plataforma, sin que el autor haya rellenado ninguno de los campos descriptivos: no hay informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni uso previsto. El identificador del modelo sugiere un tamano de aproximadamente 650 millones de parametros y un proceso de alineamiento, pero ninguno de esos dos extremos esta confirmado por el autor.
 
 El modelo acumula cero descargas y cero valoraciones, y su fecha de creacion registrada (23 de septiembre de 2026) resulta anomala, por lo que conviene tratarlo como un artefacto sin validacion externa. No se ha publicado paper, demo, repositorio de codigo ni resultados de evaluacion asociados.
 
@@ -23,7 +23,7 @@ En su estado actual, la ficha no permite recomendar el modelo para produccion: c
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo. El unico indicio es el etiquetado del repositorio (`transformers`, `pytorch`, `endpoints_compatible`), que apunta a un modelo cargable mediante la libreria Transformers de HuggingFace, pero no permite afirmar si se trata de un transformer denso, un modelo con atencion lineal, una mezcla de expertos o una arquitectura hibrida. Tampoco se conoce la funcion de perdida, el objetivo de entrenamiento ni la estrategia de alineamiento empleada, pese a que el nombre del modelo incluye el termino "alignment".
+No hay informacion publicada sobre la arquitectura del modelo. El unico indicio es el etiquetado del repositorio (`transformers`, `pytorch`, `endpoints_compatible`), que apunta a un modelo cargable mediante la libreria Transformers de Hugging Face, pero no permite afirmar si se trata de un transformer denso, un modelo con atencion lineal, una mezcla de expertos o una arquitectura hibrida. Tampoco se conoce la funcion de perdida, el objetivo de entrenamiento ni la estrategia de alineamiento empleada, pese a que el nombre del modelo incluye el termino "alignment".
 
 Respecto a los datos de entrenamiento, no se ha publicado el numero de tokens, la composicion del corpus, la procedencia de los datos, ni si hubo etapas de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento. El unico dato objetivo disponible es el tamano del repositorio (2,8 GB), un volumen compatible con pesos en precision fp32 para un modelo de esa magnitud o con un punto de control que incluya estados del optimizador, aunque esta interpretacion es una inferencia y no un dato confirmado por el autor.
 
@@ -37,7 +37,7 @@ Respecto a los datos de entrenamiento, no se ha publicado el numero de tokens, l
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el autor no declara idiomas.
 - Modo de pensamiento (*thinking*) o decodificacion especulativa: no disponible.
-- Compatibilidad con endpoints: el repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere que puede desplegarse a traves de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el repositorio esta etiquetado como `endpoints_compatible`, lo que sugiere que puede desplegarse a traves de la infraestructura de inferencia de Hugging Face.
 
 Ninguna de estas capacidades puede verificarse con la informacion proporcionada. La lista refleja unicamente categorias habituales en modelos de este tipo, no hechos confirmados.
 
@@ -68,7 +68,7 @@ Las cifras de esta seccion son estimaciones derivadas del tamano sugerido por el
 - GPU consumer: si se confirma el tamano, el modelo cabe con holgura en cualquier GPU de 8 GB o mas (RTX 3060, 4060, 3070, 4070, 4080, 4090) e incluso en equipos con 6 GB en cuantizacion de 8 bits.
 - GPU de datacenter: A100, H100, L40S o A10 quedan sobredimensionadas para inferencia de un solo ejemplar, pero son utiles para servir muchas peticiones concurrentes.
 - CPU: un modelo de este tamano puede ejecutarse en CPU mediante llama.cpp u Ollama, con latencias de decenas de milisegundos por token, adecuadas para uso interactivo no intensivo.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints; tambien serian viables vLLM, Text Generation Inference, llama.cpp, Ollama y Transformers con `generate()`, siempre que exista una conversion a GGUF o que los pesos sean cargables por estas herramientas.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints; tambien serian viables vLLM, Text Generation Inference, llama.cpp, Ollama y Transformers con `generate()`, siempre que exista una conversion a GGUF o que los pesos sean cargables por estas herramientas.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -77,16 +77,16 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| omai-research/milco_alignment_650m | no disponible (~650 M segun el identificador) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B | ~0,49 B | 32.768 tokens (version base) | Apache 2.0 | HuggingFace y ecosistema amplio |
-| SmolLM2-360M | ~0,36 B | 8.192 tokens | Apache 2.0 | HuggingFace |
-| Phi-3-mini | ~3,8 B | 128.000 tokens | MIT | HuggingFace |
+| omai-research/milco_alignment_650m | no disponible (~650 M segun el identificador) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B | ~0,49 B | 32.768 tokens (version base) | Apache 2.0 | Hugging Face y ecosistema amplio |
+| SmolLM2-360M | ~0,36 B | 8.192 tokens | Apache 2.0 | Hugging Face |
+| Phi-3-mini | ~3,8 B | 128.000 tokens | MIT | Hugging Face |
 
 La comparacion no permite concluir nada sobre el rendimiento relativo del modelo analizado, ya que no existen datos de evaluacion ni documentacion tecnica publicada por su autor.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la card es la plantilla automatica de HuggingFace sin ningun campo completado. No se puede conocer el uso previsto, el alcance ni las limitaciones declaradas por el autor.
+- Ausencia total de documentacion: la card es la plantilla automatica de Hugging Face sin ningun campo completado. No se puede conocer el uso previsto, el alcance ni las limitaciones declaradas por el autor.
 - Licencia no especificada: sin licencia explicita, no hay autorizacion clara para uso comercial ni para redistribucion. En la practica, la ausencia de licencia equivale a reserva de derechos por defecto en muchas jurisdicciones, lo que desaconseja su uso en produccion sin contactar con el autor.
 - Riesgo de alucinacion: no evaluado. No hay ninguna medicion de fiabilidad, veracidad ni tasas de error.
 - Sesgos: no evaluados. Se desconoce la composicion del corpus de entrenamiento, por lo que no se puede estimar el sesgo de genero, etnia, idioma o ideologia.
@@ -99,8 +99,8 @@ La comparacion no permite concluir nada sobre el rendimiento relativo del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omai-research/milco_alignment_650m
-- Perfil del autor en HuggingFace: https://huggingface.co/omai-research
+- Modelo en Hugging Face: https://huggingface.co/omai-research/milco_alignment_650m
+- Perfil del autor en Hugging Face: https://huggingface.co/omai-research
 - Paper citado en las etiquetas del repositorio, Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - Paper o blog del modelo: no disponible

@@ -67,10 +67,10 @@ Las siguientes estimaciones se derivan del número de parámetros (124,77 M) y n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `fpadovani/arb-arab-100mb-100mb_seed10` | 124,77 M | no disponible | no disponible | safetensors en HuggingFace |
-| `goldfish-models/arb_arab_100mb` (modelo base) | misma escala (familia goldfish 100 MB) | no disponible | no disponible | HuggingFace |
+| `fpadovani/arb-arab-100mb-100mb_seed10` | 124,77 M | no disponible | no disponible | safetensors en Hugging Face |
+| `goldfish-models/arb_arab_100mb` (modelo base) | misma escala (familia goldfish 100 MB) | no disponible | no disponible | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124,44 M | 1024 tokens (arquitectura de referencia; no confirmado para este modelo) | distinta según la distribución | ampliamente disponible |
-| Variantes goldfish de mayor corpus (`arb_arab_1gb`, `arb_arab_10gb`, por convención de nombres) | mayor escala dentro de la misma familia | no disponible | no disponible | HuggingFace |
+| Variantes goldfish de mayor corpus (`arb_arab_1gb`, `arb_arab_10gb`, por convención de nombres) | mayor escala dentro de la misma familia | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, formato y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/o3f5dckc

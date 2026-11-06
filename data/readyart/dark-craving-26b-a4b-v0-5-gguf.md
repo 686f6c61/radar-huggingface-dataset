@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-v0.5-GGUF es la versión cuantizada en formato GGUF del modelo Dark-Craving-26B-A4B-v0.5, publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo de generación de texto orientado a conversación, roleplay y contenido para adultos (etiquetado explícitamente como nsfw, explicit, ERP y unaligned), afinado a partir de una arquitectura de tipo Mixture of Experts con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) y un tamaño de repositorio de 68,7 GB.
+Dark-Craving-26B-A4B-v0.5-GGUF es la versión cuantizada en formato GGUF del modelo Dark-Craving-26B-A4B-v0.5, publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo de generación de texto orientado a conversación, roleplay y contenido para adultos (etiquetado explícitamente como nsfw, explicit, ERP y unaligned), afinado a partir de una arquitectura de tipo Mixture of Experts con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) y un tamaño de repositorio de 68,7 GB.
 
 El modelo está diseñado exclusivamente para inglés y se distribuye bajo licencia Apache 2.0. La nomenclatura "A4B" sugiere una configuración de expertos con 4 activos por token, aunque la información proporcionada no detalla el número exacto de parámetros activos ni la longitud de contexto soportada. El modelo base es ReadyArt/Dark-Craving-26B-A4B-v0.5, del que esta ficha constituye una cuantización.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Dark-Craving-26B-A4B-v0.5-GGUF | 25,2 B (MoE) | no disponible | Apache 2.0 | Roleplay/ERP sin alineamiento | HuggingFace (GGUF) |
+| Dark-Craving-26B-A4B-v0.5-GGUF | 25,2 B (MoE) | no disponible | Apache 2.0 | Roleplay/ERP sin alineamiento | Hugging Face (GGUF) |
 | Modelos de rol comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos directamente comparables en la documentación proporcionada.
@@ -83,5 +83,5 @@ No se dispone de información sobre modelos directamente comparables en la docum
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.5-GGUF
+- Hugging Face (GGUF): https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.5-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.5

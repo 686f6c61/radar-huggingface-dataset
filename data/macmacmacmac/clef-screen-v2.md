@@ -84,5 +84,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macmacmacmac/CLEF-Screen-V2
+- Modelo en Hugging Face: https://huggingface.co/macmacmacmac/CLEF-Screen-V2
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

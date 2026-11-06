@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vkovtun/llama-text-to-sql-2026-09-25_20.22.07-finetune-QLORA-8B` es un ajuste fino (fine-tuning) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, publicado por el usuario vkovtun en HuggingFace. Segun la informacion disponible, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL y, a juzgar por el nombre del repositorio, utilizando QLoRA (cuantizacion en 4 bits con adaptadores de bajo rango), aunque la model card no detalla el dataset empleado ni el procedimiento exacto. El nombre sugiere un proposito de conversion de texto a SQL (text-to-SQL), si bien la model card no confirma esta especializacion con datos verificables.
+El modelo `vkovtun/llama-text-to-sql-2026-09-25_20.22.07-finetune-QLORA-8B` es un ajuste fino (fine-tuning) del modelo base `meta-llama/Llama-3.1-8B-Instruct`, publicado por el usuario vkovtun en Hugging Face. Segun la informacion disponible, se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL y, a juzgar por el nombre del repositorio, utilizando QLoRA (cuantizacion en 4 bits con adaptadores de bajo rango), aunque la model card no detalla el dataset empleado ni el procedimiento exacto. El nombre sugiere un proposito de conversion de texto a SQL (text-to-SQL), si bien la model card no confirma esta especializacion con datos verificables.
 
 El modelo hereda la arquitectura y las capacidades del Llama 3.1 8B Instruct: un transformer decoder-only denso de 8.000 millones de parametros con una ventana de contexto de hasta 128.000 tokens, optimizado para instrucciones y conversacion multi-turno. El repositorio ocupa 0,8 GB, lo que apunta a que almacena adaptadores (pesos LoRA) en lugar de los pesos completos del modelo, que en fp16 rondarian los 16 GB.
 
@@ -64,9 +64,9 @@ Los valores siguientes son estimaciones generales para un modelo denso de 8.000 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tuning de Llama 3.1 8B) | 8B | 128.000 tokens | text-to-SQL (segun nombre) | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | proposito general, instrucciones | Llama 3.1 Community License | HuggingFace, ampliamente difundido |
-| Modelos text-to-SQL especializados de la comunidad | no disponible | no disponible | text-to-SQL | variable | HuggingFace |
+| Este modelo (fine-tuning de Llama 3.1 8B) | 8B | 128.000 tokens | text-to-SQL (segun nombre) | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | proposito general, instrucciones | Llama 3.1 Community License | Hugging Face, ampliamente difundido |
+| Modelos text-to-SQL especializados de la comunidad | no disponible | no disponible | text-to-SQL | variable | Hugging Face |
 
 No se dispone de datos de rendimiento publicados de este modelo que permitan una comparacion cuantitativa con alternativas como el propio Llama 3.1 8B Instruct u otros modelos especializados en text-to-SQL (por ejemplo, variantes basadas en CodeLlama o Qwen). La comparacion queda, por tanto, en el plano estructural.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento publicados de este modelo que permitan una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-25_20.22.07-finetune-QLORA-8B
+- Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-25_20.22.07-finetune-QLORA-8B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de TRL (libreria de entrenamiento): https://github.com/huggingface/trl
 - Panel de Weights & Biases del entrenamiento: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/fqkc2zak

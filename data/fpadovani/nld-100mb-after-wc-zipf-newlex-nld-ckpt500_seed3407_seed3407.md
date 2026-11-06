@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407` es un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407`, publicado por el usuario fpadovani en HuggingFace. Se trata de un artefacto de investigacion academica: la ruta de Weights & Biases asociada (`f-padovani-university-of-groningen/white_cotterell`) apunta al grupo de Ryan Cotterell en la Universidad de Groningen, especializado en linguistica computacional. No es un modelo orientado a produccion, sino un checkpoint intermedio de un experimento de entrenamiento sobre corpus de 100 MB.
+`nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407` es un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407`, publicado por el usuario fpadovani en Hugging Face. Se trata de un artefacto de investigacion academica: la ruta de Weights & Biases asociada (`f-padovani-university-of-groningen/white_cotterell`) apunta al grupo de Ryan Cotterell en la Universidad de Groningen, especializado en linguistica computacional. No es un modelo orientado a produccion, sino un checkpoint intermedio de un experimento de entrenamiento sobre corpus de 100 MB.
 
 Tecnicamente es un transformer decoder-only de la familia GPT-2, con 124.770.816 parametros reales confirmados en los pesos safetensors, lo que corresponde al tamano de GPT-2 small. El nombre del modelo sugiere un pipeline experimental por fases: un prefijo `ppt` (posiblemente pre-training), un corpus de 100 MB, heuristicas de muestreo tipo Zipf sobre recuento de palabras (`wc-zipf`), un lexico nuevo (`newlex`), una variante etiquetada `nld` y un checkpoint en el paso 500 (`ckpt500`) con semilla 3407. El sufijo duplicado `_seed3407_seed3407` indica que se ha reentrenado o reinicializado partiendo de un modelo ya sembrado con la misma semilla.
 
@@ -12,7 +12,7 @@ Es relevante unicamente dentro de su contexto: sirve para reproducir y auditar u
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -39,7 +39,7 @@ El entrenamiento se ha realizado mediante SFT con TRL 0.23.0 sobre el modelo bas
 - Generacion de texto autoregresiva basica, en linea con un GPT-2 small ajustado.
 - Respuesta a instrucciones en formato de conversacion, segun el ejemplo de `pipeline` de la model card (aunque no se documenta una plantilla de chat explicita).
 - Generacion condicionada por prompt libre con `max_new_tokens` configurable.
-- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, es decir, puede servirse mediante la pila de inferencia de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, es decir, puede servirse mediante la pila de inferencia de Hugging Face.
 - Integracion con la API `pipeline` de Transformers y con `generate()`.
 - No hay evidencia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio, modo thinking ni capacidades multilingues verificadas.
 - El tag `generated_from_trainer` y `trl` indica que es un artefacto de entrenamiento, no un modelo con post-entrenamiento de alineamiento.
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmark publicado |
 |---|---|---|---|---|---|
-| Este modelo (`nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407`) | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| GPT-2 small (`openai-community/gpt2`) | 124 M | 1.024 tokens (configuracion publica de GPT-2) | MIT (para los pesos publicados por OpenAI en HF) | HuggingFace, ampliamente usado | Si, en literatura original |
-| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1.024 tokens (configuracion publica de GPT-2) | Apache 2.0 | HuggingFace, ampliamente usado | Si, en la model card |
-| Pythia-160M (`EleutherAI/pythia-160m`) | 160 M | 2.048 tokens | Apache 2.0 | HuggingFace, con suite de evaluacion publicada | Si, suite completa de EleutherAI |
-| TinyLlama-1.1B (`TinyLlama/TinyLlama-1.1B-Chat-v1.0`) | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace | Si, en la model card |
+| Este modelo (`nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407`) | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| GPT-2 small (`openai-community/gpt2`) | 124 M | 1.024 tokens (configuracion publica de GPT-2) | MIT (para los pesos publicados por OpenAI en HF) | Hugging Face, ampliamente usado | Si, en literatura original |
+| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1.024 tokens (configuracion publica de GPT-2) | Apache 2.0 | Hugging Face, ampliamente usado | Si, en la model card |
+| Pythia-160M (`EleutherAI/pythia-160m`) | 160 M | 2.048 tokens | Apache 2.0 | Hugging Face, con suite de evaluacion publicada | Si, suite completa de EleutherAI |
+| TinyLlama-1.1B (`TinyLlama/TinyLlama-1.1B-Chat-v1.0`) | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face | Si, en la model card |
 
 La diferencia fundamental no es de rendimiento, sino de proposito: los modelos de la comparativa estan pensados para uso general y publican licencia y evaluaciones, mientras que este checkpoint es un artefacto de investigacion sin licencia efectiva ni datos de calidad.
 
@@ -94,7 +94,7 @@ La diferencia fundamental no es de rendimiento, sino de proposito: los modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/2qiba1y8
 - Repositorio de TRL: https://github.com/huggingface/trl

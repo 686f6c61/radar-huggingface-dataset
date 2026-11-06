@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE es un modelo derivado del Qwen3-30B-A3B-Instruct-2507 de Alibaba Cloud (equipo Qwen), publicado por el usuario zmi en HuggingFace. Se etiqueta con la arquitectura qwen3_moe y con formato de pesos safetensors. El sufijo "_55-MoBE" del nombre sugiere una modificación sobre la configuracion MoE original, aunque el autor no ha publicado documentacion que describa en que consiste dicha variante, por lo que no es posible confirmar su naturaleza tecnica.
+zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE es un modelo derivado del Qwen3-30B-A3B-Instruct-2507 de Alibaba Cloud (equipo Qwen), publicado por el usuario zmi en Hugging Face. Se etiqueta con la arquitectura qwen3_moe y con formato de pesos safetensors. El sufijo "_55-MoBE" del nombre sugiere una modificación sobre la configuracion MoE original, aunque el autor no ha publicado documentacion que describa en que consiste dicha variante, por lo que no es posible confirmar su naturaleza tecnica.
 
 El dato mas relevante es la discrepancia de parametros: los safetensors del repositorio declaran 19.887.372.288 parametros totales (aproximadamente 19,9 mil millones), frente a los 30,5 mil millones del modelo base Qwen3-30B-A3B-Instruct-2507. Esto indica que no se trata de una simple copia del modelo original, sino de una variante con un recuento de parametros sustancialmente inferior. El modelo base del que parte es un MoE que activa aproximadamente 3,3 mil millones de parametros en inferencia (8 de 128 expertos) y esta orientado a seguimiento de instrucciones, razonamiento y uso de herramientas.
 
@@ -72,11 +72,11 @@ Como referencia, el modelo base Qwen3-30B-A3B-Instruct-2507 reporta los siguient
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE | 19,9B | no disponible | no disponible | no disponible | HuggingFace (12 descargas) |
-| Qwen/Qwen3-30B-A3B-Instruct-2507 | 30,5B | ~3,3B (8 de 128 expertos) | largo (base Qwen3, valor exacto no confirmado en la busqueda) | Apache 2.0 (base Qwen, a confirmar en el repositorio original) | HuggingFace, ModelScope, Azure AI Foundry |
-| Qwen/Qwen3-30B-A3B | 30,5B | ~3,3B (8 de 128 expertos) | largo (base Qwen3) | Apache 2.0 (a confirmar) | HuggingFace |
+| zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE | 19,9B | no disponible | no disponible | no disponible | Hugging Face (12 descargas) |
+| Qwen/Qwen3-30B-A3B-Instruct-2507 | 30,5B | ~3,3B (8 de 128 expertos) | largo (base Qwen3, valor exacto no confirmado en la busqueda) | Apache 2.0 (base Qwen, a confirmar en el repositorio original) | Hugging Face, ModelScope, Azure AI Foundry |
+| Qwen/Qwen3-30B-A3B | 30,5B | ~3,3B (8 de 128 expertos) | largo (base Qwen3) | Apache 2.0 (a confirmar) | Hugging Face |
 
-La diferencia clave de la variante de zmi frente a los modelos de Qwen es el menor numero de parametros declarados (19,9B frente a 30,5B) y la ausencia total de licencia, idiomas y evaluaciones. El modelo base cuenta con soporte en plataformas como Azure AI Foundry, ModelScope y documentacion publica, mientras que la variante solo existe como repositorio en HuggingFace con traccion minima.
+La diferencia clave de la variante de zmi frente a los modelos de Qwen es el menor numero de parametros declarados (19,9B frente a 30,5B) y la ausencia total de licencia, idiomas y evaluaciones. El modelo base cuenta con soporte en plataformas como Azure AI Foundry, ModelScope y documentacion publica, mientras que la variante solo existe como repositorio en Hugging Face con traccion minima.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ La diferencia clave de la variante de zmi frente a los modelos de Qwen es el men
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE
+- Repositorio Hugging Face del modelo: https://huggingface.co/zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE
 - Modelo base Qwen3-30B-A3B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Modelo Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Documentacion en GitHub (inferless): https://github.com/inferless/Qwen3-30B-A3B-Instruct-2507/blob/main/README.md

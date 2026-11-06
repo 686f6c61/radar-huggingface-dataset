@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CZend371/xlm-roberta-base-finetuned-panx-all` es un ajuste fino de tipo token classification sobre el encoder multilingue `FacebookAI/xlm-roberta-base`, publicado por el usuario CZend371 en HuggingFace. Se trata de un modelo de reconocimiento de entidades nombradas (NER) orientado a la anotacion por token, con 277.459.208 parametros y un peso de repositorio de 1,1 GB en formato safetensors. La nomenclatura "panx-all" apunta a un ajuste sobre el corpus PAN-X (multilingual named entity recognition) cubriendo el conjunto de idiomas de dicho benchmark.
+El modelo `CZend371/xlm-roberta-base-finetuned-panx-all` es un ajuste fino de tipo token classification sobre el encoder multilingue `FacebookAI/xlm-roberta-base`, publicado por el usuario CZend371 en Hugging Face. Se trata de un modelo de reconocimiento de entidades nombradas (NER) orientado a la anotacion por token, con 277.459.208 parametros y un peso de repositorio de 1,1 GB en formato safetensors. La nomenclatura "panx-all" apunta a un ajuste sobre el corpus PAN-X (multilingual named entity recognition) cubriendo el conjunto de idiomas de dicho benchmark.
 
 El modelo resuelve la tarea clasica de NER: identificar y clasificar entidades como personas (PER), organizaciones (ORG) y localizaciones (LOC) dentro de texto. Al heredar el encoder de XLM-RoBERTa, parte de un preentrenamiento en aproximadamente 100 idiomas sobre 2,5 TB de CommonCrawl, lo que le aporta representaciones multilingues utiles para extraccion de entidades en contextos cross-linguales.
 
@@ -68,11 +68,11 @@ Como referencia externa, existe un modelo con el mismo nombre publicado por el u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CZend371/xlm-roberta-base-finetuned-panx-all | 277 M | 512 tokens | Token classification (NER) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder preentrenado (base para fine-tuning) | MIT | HuggingFace, ampliamente usado |
-| transformersbook/xlm-roberta-base-finetuned-panx-all | ~278 M | 512 tokens | Token classification (NER) en PAN-X | MIT | HuggingFace, con F1 declarado de 0,8581 |
-| google-bert/bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Encoder preentrenado multilingue | Apache 2.0 | HuggingFace, muy extendido |
-| distilbert-base-multilingual-cased | 135 M | 512 tokens | Encoder destilado multilingue | Apache 2.0 | HuggingFace, mas ligero y rapido |
+| CZend371/xlm-roberta-base-finetuned-panx-all | 277 M | 512 tokens | Token classification (NER) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder preentrenado (base para fine-tuning) | MIT | Hugging Face, ampliamente usado |
+| transformersbook/xlm-roberta-base-finetuned-panx-all | ~278 M | 512 tokens | Token classification (NER) en PAN-X | MIT | Hugging Face, con F1 declarado de 0,8581 |
+| google-bert/bert-base-multilingual-cased (mBERT) | 178 M | 512 tokens | Encoder preentrenado multilingue | Apache 2.0 | Hugging Face, muy extendido |
+| distilbert-base-multilingual-cased | 135 M | 512 tokens | Encoder destilado multilingue | Apache 2.0 | Hugging Face, mas ligero y rapido |
 
 No hay datos de rendimiento del modelo de CZend371 que permitan una comparacion cuantitativa; la tabla se limita a parametros, contexto y licencia.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento del modelo de CZend371 que permitan una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-all
+- Modelo en Hugging Face: https://huggingface.co/CZend371/xlm-roberta-base-finetuned-panx-all
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Modelo homonimo de referencia (transformersbook): https://huggingface.co/transformersbook/xlm-roberta-base-finetuned-panx-all
 - Documentacion de XLM-RoBERTa en transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md

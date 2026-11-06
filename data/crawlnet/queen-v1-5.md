@@ -101,11 +101,11 @@ Queen v1.5 es el mas pequeno de la comparativa, el unico entrenado con un corpus
 - Sin benchmarks publicados: no hay evidencia externa de calidad en tareas estandar, lo que impide justificar su uso en produccion.
 - Licencia apache-2.0, permisiva y compatible con uso comercial en lo que respecta a los pesos. Sin embargo, el autor indica que el generador `deepseek-flash` se uso bajo los terminos de la API de DeepSeek (clausula 4.2(3), que permite entrenar otros modelos con sus salidas); conviene revisar esos terminos si se reutiliza el dataset de pares generados.
 - El dataset de preentrenamiento proviene de crawlers de terceros sobre la web abierta; no se documenta una revision de derechos de autor, contenido personal ni contenido danino de esas paginas.
-- Cero descargas y una sola interaccion registrada en HuggingFace en la fecha de la ficha, lo que implica ausencia de validacion independiente por parte de la comunidad.
+- Cero descargas y una sola interaccion registrada en Hugging Face en la fecha de la ficha, lo que implica ausencia de validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crawlnet/queen-v1.5
+- Modelo en Hugging Face: https://huggingface.co/Crawlnet/queen-v1.5
 - Modelo base (Queen v1): https://huggingface.co/Crawlnet/queen-v1
 - Repositorio de codigo nanochat (Karpathy), commit `92d63d4e8bb4`: https://github.com/karpathy/nanochat
 - Configuracion de inferencia JSON: https://huggingface.co/Crawlnet/queen-v1.5/blob/main/config.json

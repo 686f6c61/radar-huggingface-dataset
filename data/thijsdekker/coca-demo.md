@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Generation (ID `thijsdekker/coca-demo`) es una implementacion personalizada y de escala "nano" de una arquitectura denominada Coca, orientada a tareas de generacion. El modelo lo publica el usuario de HuggingFace thijsdekker bajo licencia MIT y se distribuye acompanado de un script Python (`pipeline.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors.
+Coca for Generation (ID `thijsdekker/coca-demo`) es una implementacion personalizada y de escala "nano" de una arquitectura denominada Coca, orientada a tareas de generacion. El modelo lo publica el usuario de Hugging Face thijsdekker bajo licencia MIT y se distribuye acompanado de un script Python (`pipeline.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicializacion en formato safetensors.
 
 El dato mas relevante para cualquier evaluacion es que no se trata de un modelo entrenado. El propio autor indica de forma explicita que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El repositorio no reclama ninguna puntuacion de rendimiento y no incluye resultados de evaluacion. Los pesos suman 49.600 parametros, un tamano que sitúa el artefacto en la categoria de prototipo reproducible mas que en la de modelo desplegable.
 
@@ -75,5 +75,5 @@ No disponible. El repositorio no proporciona puntos de comparacion, no declara c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thijsdekker/coca-demo
+- Hugging Face: https://huggingface.co/thijsdekker/coca-demo
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web proporcionados, que no guardan relacion con el modelo.

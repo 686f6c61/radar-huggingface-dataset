@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelwilsonmu/retrieval-v3` es un repositorio de HuggingFace publicado por el usuario michaelwilsonmu que contiene una implementación funcional de **ALBEF** (Align Before Fuse) orientada a tareas de **retrieval** (recuperación multimodal texto-imagen), en una configuración declarada como **nano**. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: la propia model card indica explícitamente que `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no una referencia con resultados de benchmark. El repositorio prioriza código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
+`michaelwilsonmu/retrieval-v3` es un repositorio de Hugging Face publicado por el usuario michaelwilsonmu que contiene una implementación funcional de **ALBEF** (Align Before Fuse) orientada a tareas de **retrieval** (recuperación multimodal texto-imagen), en una configuración declarada como **nano**. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: la propia model card indica explícitamente que `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no una referencia con resultados de benchmark. El repositorio prioriza código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de rendimiento.
 
 El tamaño real del checkpoint, según los metadatos de safetensors, es de **16.576 parámetros totales**, una cifra extremadamente reducida que confirma el carácter experimental y didáctico del artefacto. El repositorio ocupa 0,0 GB y se distribuye bajo licencia **BSD-3-Clause**. No hay pipeline declarado, no se especifican idiomas soportados y no consta ningún resultado de evaluación publicado en la información disponible.
 
@@ -66,7 +66,7 @@ La informacion disponible no incluye especificaciones de modelos alternativos, p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaelwilsonmu/retrieval-v3 | 16.576 (safetensors) | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| michaelwilsonmu/retrieval-v3 | 16.576 (safetensors) | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | ALBEF canonico (referencia de la misma familia, Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | CLIP (categoria alternativa de retrieval texto-imagen) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,6 +83,6 @@ La informacion disponible no incluye especificaciones de modelos alternativos, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelwilsonmu/retrieval-v3
+- Hugging Face: https://huggingface.co/michaelwilsonmu/retrieval-v3
 - Los resultados de busqueda web consultados no aportan enlaces relevantes sobre este modelo (corresponden a foros y publicaciones sin relacion con el artefacto).
 - Referencias adicionales (paper, blog, repositorio de codigo o demo): no disponibles en la informacion proporcionada.

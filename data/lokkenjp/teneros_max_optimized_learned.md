@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes mas alla d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned
+- Repositorio en Hugging Face: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned
 - Checkpoint V8 (hibrido INT8/W6/W4, out y edge protegidos): https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/resolve/main/final_int8w6w4_hybrid/10Eros_Max_h3_TURBO-hybrid_beta5_proxy_activation_int8w6w4_hybrid_v8_14_5gb_out_edge_protected_final.safetensors
 - Carpeta del artefacto principal: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/tree/main/final_int8w6w4_hybrid
 - Variante experimental V7 W6/W4: https://huggingface.co/LokkenJP/TenEros_Max_optimized_learned/tree/main/experimental_beta5_w6a8

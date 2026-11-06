@@ -1,7 +1,7 @@
 # LayerFault/tokenizer-bos-eos-conflict
 
 ## Resumen
-El repositorio `LayerFault/tokenizer-bos-eos-conflict` es un artefacto sintético del corpus de seguridad LayerFault, identificado con el código `LF-CH-TOKX-0002`. No es un modelo de IA utilizable ni contiene pesos de red neuronal; se trata de una pieza de prueba diseñada específicamente para ejercitar reglas de detección en escáneres de seguridad de modelos. Su propósito declarado es validar la detección de conflictos entre tokens BOS y EOS en procesadores de tokenización, un problema real que puede causar alucinaciones o comportamientos anómalos en modelos desplegados (como se documenta en incidencias de DeepSeek-Coder-V2 y en discusiones de HuggingFace).
+El repositorio `LayerFault/tokenizer-bos-eos-conflict` es un artefacto sintético del corpus de seguridad LayerFault, identificado con el código `LF-CH-TOKX-0002`. No es un modelo de IA utilizable ni contiene pesos de red neuronal; se trata de una pieza de prueba diseñada específicamente para ejercitar reglas de detección en escáneres de seguridad de modelos. Su propósito declarado es validar la detección de conflictos entre tokens BOS y EOS en procesadores de tokenización, un problema real que puede causar alucinaciones o comportamientos anómalos en modelos desplegados (como se documenta en incidencias de DeepSeek-Coder-V2 y en discusiones de Hugging Face).
 
 El repositorio incluye características adversariales deliberadas (opcodes sospechosos en pickles, contrabando de formatos ejecutables, cadenas de inyección de prompts) para probar la robustez de herramientas de análisis estático. El autor, LayerFault, lo publica bajo licencia Apache-2.0 con un aviso claro de que no debe cargarse ni ejecutarse fuera de un entorno aislado de pruebas. No tiene descargas ni likes, y no se proporcionan datos de arquitectura, parámetros o contexto.
 
@@ -29,7 +29,7 @@ No se trata de un modelo entrenado ni de una arquitectura de red neuronal. Es un
 
 ## Casos de uso
 - Pruebas de regresión de escáneres de seguridad: el artefacto se introduce en un pipeline de CI/CD para verificar que una herramienta de análisis estático detecta la presencia de un tokenizador conflictivo.
-- Evaluación de herramientas de análisis de modelos: sirve como entrada para evaluar la capacidad de un escáner para identificar repositorios maliciosos en HuggingFace Hub.
+- Evaluación de herramientas de análisis de modelos: sirve como entrada para evaluar la capacidad de un escáner para identificar repositorios maliciosos en Hugging Face Hub.
 - Desarrollo de reglas de detección: los equipos de seguridad pueden usar este artefacto para entrenar o validar nuevas reglas de detección específicas (como `LF-TOKENIZER-EOS-BOS-CONFLICT`).
 - Investigación de vulnerabilidades en tokenizadores: se puede analizar estáticamente para estudiar cómo los conflictos BOS/EOS pueden afectar a modelos reales, sin ejecutar el artefacto.
 - Formación de personal de seguridad: como ejemplo de un artefacto sintético de riesgo, se utiliza en talleres para enseñar a identificar repositorios potencialmente peligrosos.
@@ -56,7 +56,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 - El repositorio está marcado como `gated: auto`, por lo que requiere aceptación de términos adicionales para acceder a su contenido.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/tokenizer-bos-eos-conflict
-- Documentación de tokenizadores de HuggingFace (referencia general): https://huggingface.co/docs/transformers/main_classes/tokenizer
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/tokenizer-bos-eos-conflict
+- Documentación de tokenizadores de Hugging Face (referencia general): https://huggingface.co/docs/transformers/main_classes/tokenizer
 - Incidencia sobre conflictos BOS/EOS en DeepSeek-Coder V2: https://github.com/deepseek-ai/DeepSeek-Coder-V2/issues/50
 - Incidencia de Transformers sobre `eos_token` y `bos_token`: https://github.com/huggingface/transformers/issues/23833

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `taylorseries/grpo_data`, publicado por el usuario taylorseries en HuggingFace, es un conjunto de datos de 763,2 GB etiquetado con `qwen3_5_text` y `region:us`. A pesar de lo que sugiere el identificador y de que la ficha se solicita como "modelo", la informacion disponible indica que se trata de un artefacto de datos destinado al entrenamiento o ajuste fino con GRPO (Group Relative Policy Optimization), y no de un modelo con pesos publicados. No consta pipeline, licencia, idiomas ni formato de pesos asociado.
+El repositorio `taylorseries/grpo_data`, publicado por el usuario taylorseries en Hugging Face, es un conjunto de datos de 763,2 GB etiquetado con `qwen3_5_text` y `region:us`. A pesar de lo que sugiere el identificador y de que la ficha se solicita como "modelo", la informacion disponible indica que se trata de un artefacto de datos destinado al entrenamiento o ajuste fino con GRPO (Group Relative Policy Optimization), y no de un modelo con pesos publicados. No consta pipeline, licencia, idiomas ni formato de pesos asociado.
 
 GRPO es la tecnica de optimizacion de politicas introducida en el articulo de DeepSeekMath, que elimina la necesidad de un modelo critico separado estimando la linea base mediante comparaciones dentro de un grupo de respuestas muestreadas para una misma consulta. Se ha convertido en uno de los metodos dominantes de post-entrenamiento para razonamiento, junto con variantes como DAPO y RLVR, y es habitual en flujos que escalan el computo en tiempo de inferencia para tareas complejas de matematicas y logica.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Memoria de trabajo: los flujos de curacion de un corpus de este tamano suelen necesitar entre 32 GB y 128 GB de RAM si se cargan fragmentos en memoria; el entrenamiento GRPO añade el coste del modelo base y del modelo de referencia.
 - GPU para entrenamiento con GRPO: no disponible en la informacion proporcionada, ya que depende del modelo base sobre el que se apliquen los datos. En configuraciones tipicas de RL para modelos de 7B a 14B se emplean A100 de 40/80 GB, H100 o grupos multi-GPU con paralelismo de datos.
 - GPU de consumo: no disponible. Un corpus de este tamano no cabe en una GPU de consumo salvo en subconjuntos reducidos; el entrenamiento de un modelo base de tamano medio exigiria cuantizacion o tecnicas de memoria eficiente.
-- Opciones de despliegue: no aplicable a inferencia, al no tratarse de un modelo. Para su uso como datos se contemplan herramientas de gestion de datasets de HuggingFace, carga en streaming y pipelines de preprocesado propios.
+- Opciones de despliegue: no aplicable a inferencia, al no tratarse de un modelo. Para su uso como datos se contemplan herramientas de gestion de datasets de Hugging Face, carga en streaming y pipelines de preprocesado propios.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,9 +76,9 @@ No disponible. No se han identificado en la informacion proporcionada conjuntos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taylorseries/grpo_data
+- Repositorio en Hugging Face: https://huggingface.co/taylorseries/grpo_data
 - GRPO in Reinforcement Learning Explained (DigitalOcean): https://www.digitalocean.com/community/conceptual-articles/group-relative-policy-optimization-reinforcement-learning
-- Post training an LLM for reasoning with GRPO in TRL (HuggingFace Cookbook): https://huggingface.co/learn/cookbook/en/fine_tuning_llm_grpo_trl
+- Post training an LLM for reasoning with GRPO in TRL (Hugging Face Cookbook): https://huggingface.co/learn/cookbook/en/fine_tuning_llm_grpo_trl
 - Post-Training in 2026: GRPO, DAPO, RLVR & Beyond (llm-stats): https://llm-stats.com/blog/research/post-training-techniques-2026
 - Taylor series (Wikipedia): https://en.wikipedia.org/wiki/Taylor_series
 - Taylor Series in AI (Towards AI, Medium): https://pub.towardsai.net/taylor-series-in-ai-0739e03f5d0c

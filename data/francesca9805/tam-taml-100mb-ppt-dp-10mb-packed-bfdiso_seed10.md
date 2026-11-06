@@ -65,9 +65,9 @@ Las siguientes cifras son estimaciones calculadas a partir del numero de paramet
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` (este modelo) | 124,77 M | No disponible | No confirmado (probable tamil) | No disponible | Publico en HuggingFace, 0 descargas |
-| `goldfish-models/tam_taml_100mb` (modelo base) | ~100 MB de datos; parametros no especificados aqui | No disponible | Tamil (por convencion de nombre) | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| `francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfd_seed3407` / `..._seed455` (variantes de la misma serie) | Mismo orden (GPT-2 ~124 M) | No disponible | No confirmado | No disponible | Publico en HuggingFace |
+| `francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` (este modelo) | 124,77 M | No disponible | No confirmado (probable tamil) | No disponible | Publico en Hugging Face, 0 descargas |
+| `goldfish-models/tam_taml_100mb` (modelo base) | ~100 MB de datos; parametros no especificados aqui | No disponible | Tamil (por convencion de nombre) | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| `francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfd_seed3407` / `..._seed455` (variantes de la misma serie) | Mismo orden (GPT-2 ~124 M) | No disponible | No confirmado | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparado con alternativas de la misma categoria; no es posible establecer una comparativa cuantitativa con modelos como otros GPT-2 de 124 M o con modelos multilingues pequenos sin cifras de benchmarks.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/67rpion0
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HexWeaver-27B-v5 es un adaptador LoRA publicado por el usuario mehemet en HuggingFace, construido sobre el modelo base OBLITERATUS/Qwen3.8-27B-OBLITERATED. Se distribuye como repositorio PEFT (librería `peft`, formato `safetensors`) con un tamaño de 0,3 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. La ficha de HuggingFace lo etiqueta como un ajuste de tipo SFT (supervised fine-tuning) orientado a generación de texto y conversación.
+HexWeaver-27B-v5 es un adaptador LoRA publicado por el usuario mehemet en Hugging Face, construido sobre el modelo base OBLITERATUS/Qwen3.8-27B-OBLITERATED. Se distribuye como repositorio PEFT (librería `peft`, formato `safetensors`) con un tamaño de 0,3 GB, lo que corresponde exclusivamente a los pesos del adaptador y no al modelo completo. La ficha de Hugging Face lo etiqueta como un ajuste de tipo SFT (supervised fine-tuning) orientado a generación de texto y conversación.
 
 El modelo base declarado, Qwen3.8-27B-OBLITERATED, es a su vez una variante derivada de la familia Qwen3 de Alibaba, con aproximadamente 27 mil millones de parámetros según la nomenclatura del identificador. No se dispone de información publicada sobre la arquitectura exacta, la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset utilizado para el ajuste LoRA.
 
@@ -42,7 +42,7 @@ El modelo base, OBLITERATUS/Qwen3.8-27B-OBLITERATED, no aporta documentación t�
 - Experimentación en investigación sobre adaptadores LoRA: el reducido tamaño del repositorio (0,3 GB) permite cargar el adaptador sobre el modelo base para estudiar el efecto del ajuste SFT sin necesidad de almacenar una copia completa del modelo.
 - Evaluación comparativa de variantes "obliterated": útil para investigadores que analicen cómo el ajuste SFT modifica el comportamiento del modelo base en tareas de conversación, siempre que se disponga de acceso al modelo base.
 - Prototipado de asistentes conversacionales de dominio específico: si el adaptador fue entrenado para un estilo concreto, puede servir como punto de partida para experimentos de personalización, aunque requeriría validación empírica previa.
-- Reproducción de pipelines de fine-tuning con `trl` y `peft`: el repositorio sirve como ejemplo práctico de cómo se estructura un adaptador LoRA publicado en HuggingFace.
+- Reproducción de pipelines de fine-tuning con `trl` y `peft`: el repositorio sirve como ejemplo práctico de cómo se estructura un adaptador LoRA publicado en Hugging Face.
 - Base para fusiones de adaptadores (adapter merging): el formato safetensors y la estructura PEFT permiten combinar este adaptador con otros mediante técnicas como TIES o DARE, en entornos de investigación.
 - Docencia y formación técnica: útil para demostrar el flujo completo de publicación de un adaptador LoRA con acceso restringido y sus implicaciones de gobernanza.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo para HexWeaver-27B-v5. La comp
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no hay información sobre licencia, idiomas, dataset de entrenamiento ni evaluación.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede impedir su uso en pipelines automatizados o en entornos corporativos con políticas estrictas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede impedir su uso en pipelines automatizados o en entornos corporativos con políticas estrictas.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni validación externa.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación publicada, no es posible caracterizar su calidad.
 - Licencia no disponible: no se puede garantizar el uso comercial ni la redistribución; consultar con el autor antes de cualquier despliegue en producción.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para HexWeaver-27B-v5. La comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehemet/HexWeaver-27B-v5
+- Hugging Face: https://huggingface.co/mehemet/HexWeaver-27B-v5
 - Modelo base: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Paper de referencia LoRA (citado en las etiquetas): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

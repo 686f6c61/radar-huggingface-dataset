@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter200)
 - [Backbone requerido: dreamdifferent/widowx250-video-fused](https://huggingface.co/dreamdifferent/widowx250-video-fused)
 - [Dataset de entrenamiento: dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture](https://huggingface.co/datasets/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture)
 - [Checkpoint bundle de MimicVideo: jonpai/mimic-video](https://huggingface.co/jonpai/mimic-video) (revisión `f28339034831e3c2374be075e622e1ff38ebe0f8`)

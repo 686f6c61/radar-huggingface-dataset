@@ -79,6 +79,6 @@ No se dispone de comparativas publicadas. Al ser un checkpoint intermedio sin me
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h054.sft-verified2.step_18)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h054.sft-verified2.step_18)
 - [Dataset asociado a la ejecucion opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Indice de experimentos AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

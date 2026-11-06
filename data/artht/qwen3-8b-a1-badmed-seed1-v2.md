@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a1-badmed-seed1-v2` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado en HuggingFace por el usuario ArthT. El nombre del repositorio sugiere un experimento con semilla fija (seed1) y versión 2, posiblemente orientado a un dominio médico (el término "badmed" podría referirse a "medicina" o "datos médicos", aunque no se aporta documentación al respecto). El repositorio contiene pesos en formato safetensors con un tamaño de 4.2 GB, lo que corresponde aproximadamente a un modelo de 8 mil millones de parámetros en precisión bf16. La model card es una plantilla genérica sin información específica sobre arquitectura, datos de entrenamiento o evaluación. No se han publicado resultados de benchmarks ni métricas de rendimiento para este ajuste concreto.
+El modelo `ArthT/qwen3-8b-a1-badmed-seed1-v2` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado en Hugging Face por el usuario ArthT. El nombre del repositorio sugiere un experimento con semilla fija (seed1) y versión 2, posiblemente orientado a un dominio médico (el término "badmed" podría referirse a "medicina" o "datos médicos", aunque no se aporta documentación al respecto). El repositorio contiene pesos en formato safetensors con un tamaño de 4.2 GB, lo que corresponde aproximadamente a un modelo de 8 mil millones de parámetros en precisión bf16. La model card es una plantilla genérica sin información específica sobre arquitectura, datos de entrenamiento o evaluación. No se han publicado resultados de benchmarks ni métricas de rendimiento para este ajuste concreto.
 
 ## Especificaciones técnicas
 

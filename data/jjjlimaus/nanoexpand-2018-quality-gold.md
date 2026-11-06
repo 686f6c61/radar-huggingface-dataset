@@ -1,7 +1,7 @@
 # jjjlimaus/nanoexpand-2018-quality-gold
 
 ## Resumen
-El modelo `jjjlimaus/nanoexpand-2018-quality-gold` es un modelo de lenguaje de 2.095.581.570 parametros (aproximadamente 2B) desarrollado por el usuario jjjlimaus. Se publica bajo licencia Apache-2.0 y esta pensado para generacion de texto, aunque su ficha no especifica la arquitectura interna ni el dataset de entrenamiento. El repositorio ocupa 25,1 GB y el acceso esta restringido (gated), por lo que hay que aceptar condiciones en HuggingFace antes de poder descargarlo.
+El modelo `jjjlimaus/nanoexpand-2018-quality-gold` es un modelo de lenguaje de 2.095.581.570 parametros (aproximadamente 2B) desarrollado por el usuario jjjlimaus. Se publica bajo licencia Apache-2.0 y esta pensado para generacion de texto, aunque su ficha no especifica la arquitectura interna ni el dataset de entrenamiento. El repositorio ocupa 25,1 GB y el acceso esta restringido (gated), por lo que hay que aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El nombre del modelo sugiere que pertenece a una serie "nanoexpand" y que ha sido entrenado o afinado con un dataset denominado "quality-gold" (probablemente el dataset `jjjlimaus/sn38-quality-gold-100k` que aparece en los resultados de busqueda). Sin embargo, no hay informacion publica sobre el proceso de entrenamiento, el numero de tokens, ni las tecnicas de alineacion utilizadas. La relevancia actual es limitada, ya que se trata de un modelo reciente (creado en agosto de 2026) con cero descargas y cero likes, y sin benchmarks publicados.
 
@@ -67,7 +67,7 @@ La falta de informacion y de benchmarks hace que no se pueda recomendar frente a
 - El tamano del repo (25,1 GB) es muy grande para un modelo de 2B, lo que podria indicar que incluye pesos en precicion alta o multiples versiones.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/nanoexpand-2018-quality-gold
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/nanoexpand-2018-quality-gold
 - Dataset asociado: https://huggingface.co/datasets/jjjlimaus/sn38-quality-gold-100k
 - Busqueda de modelos relacionados: https://huggingface.co/models?other=sn38-nanoexpand
 - No se han encontrado papers, blogs ni repositorios adicionales.

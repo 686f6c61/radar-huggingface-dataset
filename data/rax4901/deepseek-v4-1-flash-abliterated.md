@@ -1,7 +1,7 @@
 # rax4901/DeepSeek-V4.1-Flash-Abliterated
 
 ## Resumen
-DeepSeek-V4.1-Flash-Abliterated es una variante modificada a nivel de pesos del modelo DeepSeek-V4.1-Flash, publicada por el usuario rax4901 en HuggingFace. Se trata de un modelo de arquitectura MoE (mixture of experts) multimodal con 756.410.543.314 parametros totales almacenados en safetensors, derivado del modelo base de deepseek-ai mediante una tecnica de "abliteration" que elimina la direccion de rechazo en el espacio de pesos. El objetivo declarado es conseguir que el modelo responda a instrucciones que el modelo original rechazaria, manteniendo supuestamente la calidad general en escritura, explicaciones y razonamiento.
+DeepSeek-V4.1-Flash-Abliterated es una variante modificada a nivel de pesos del modelo DeepSeek-V4.1-Flash, publicada por el usuario rax4901 en Hugging Face. Se trata de un modelo de arquitectura MoE (mixture of experts) multimodal con 756.410.543.314 parametros totales almacenados en safetensors, derivado del modelo base de deepseek-ai mediante una tecnica de "abliteration" que elimina la direccion de rechazo en el espacio de pesos. El objetivo declarado es conseguir que el modelo responda a instrucciones que el modelo original rechazaria, manteniendo supuestamente la calidad general en escritura, explicaciones y razonamiento.
 
 La relevancia de esta ficha es doble: por un lado, documenta una practica creciente en la comunidad open source (la abliteration de modelos alineados); por otro, permite evaluar los riesgos tecnicos y legales de desplegar variantes sin alineacion de seguridad en produccion. El modelo conserva la mayor parte de la estructura del original (torre de vision, atencion CSA2, cabezal de borrador DSpark, tablas de memoria Engram) y solo modifica 40 tensores de proyeccion de salida de atencion y las proyecciones down de los expertos enrutados y compartidos.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 756,4 mil millones de parametros totales y expertos en FP8, el peso completo ronda los 756 GB en FP8; se necesita un nodo multi-GPU con al menos 8 GPU de 96 GB (H100/H200) o 16 GPU de 48 GB para cargar el modelo completo sin cuantizacion adicional. No se dispone de datos de cuantizacion a 4 bits para esta variante.
 - GPU recomendadas: H100 SXM 80 GB, H200 141 GB, A100 80 GB en configuraciones multi-nodo; el autor menciona inferencia con tensor-parallel 4 durante la captura de direcciones de rechazo, lo que sugiere que el modelo base puede ejecutarse en 4 GPU de gran memoria con el toolchain de referencia.
 - GPU de consumo: no cabe en RTX 4090 (24 GB) ni en ninguna GPU consumer individual; requeriria cuantizaciones agresivas no publicadas.
-- Opciones de despliegue: transformers con el toolchain de referencia de DeepSeek; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para esta variante. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: transformers con el toolchain de referencia de DeepSeek; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para esta variante. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o paramet
 - No se documenta el proceso de captura de direcciones de rechazo mas alla de 79 prompts daninos y 79 benignos, una muestra pequena que puede no cubrir todos los dominios de rechazo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/rax4901/DeepSeek-V4.1-Flash-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/rax4901/DeepSeek-V4.1-Flash-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Fuente del edit de o_proj: https://huggingface.co/dealignai
 - Organizacion DeepSeek: https://huggingface.co/deepseek-ai

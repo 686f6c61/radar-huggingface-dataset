@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`replicate/liger-kernels` no es un modelo de lenguaje, sino un paquete de kernels compilados publicado en HuggingFace Hub bajo la libreria `kernels`. Contiene implementaciones de bajo nivel pensadas para acelerar el entrenamiento e inferencia de modelos transformer, en concreto dos funciones: `LigerForCausalLMLoss` (calculo de la perdida de entropia cruzada para modelos causales) y `liger_rotary_pos_emb` (aplicacion del embedding posicional rotatorio, RoPE). El repositorio esta mantenido por la organizacion `replicate` y se distribuye con licencia BSD 2-Clause.
+`replicate/liger-kernels` no es un modelo de lenguaje, sino un paquete de kernels compilados publicado en Hugging Face Hub bajo la libreria `kernels`. Contiene implementaciones de bajo nivel pensadas para acelerar el entrenamiento e inferencia de modelos transformer, en concreto dos funciones: `LigerForCausalLMLoss` (calculo de la perdida de entropia cruzada para modelos causales) y `liger_rotary_pos_emb` (aplicacion del embedding posicional rotatorio, RoPE). El repositorio esta mantenido por la organizacion `replicate` y se distribuye con licencia BSD 2-Clause.
 
-El paquete es un artefacto derivado de los kernels de Liger (proyecto de kernels fusionados para transformers) y se consume a traves de la API `get_kernel()` de la libreria `kernels` de HuggingFace. La model card esta generada automaticamente e indica explicitamente que no hay benchmarks publicados. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 16 de septiembre de 2026.
+El paquete es un artefacto derivado de los kernels de Liger (proyecto de kernels fusionados para transformers) y se consume a traves de la API `get_kernel()` de la libreria `kernels` de Hugging Face. La model card esta generada automaticamente e indica explicitamente que no hay benchmarks publicados. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 16 de septiembre de 2026.
 
 Su relevancia es instrumental: no se evalua por si mismo, sino por el ahorro de memoria y el aumento de throughput que aporta al modelo anfitrion que lo integra. Cualquier comparacion de rendimiento depende del modelo sobre el que se apliquen estos kernels, no del paquete en si. La propia model card advierte de que los repositorios de tipo "model" para kernels (por ejemplo `kernels-community/flash-attn3`) se retiraran a partir del 13 de septiembre de 2026, por lo que es necesario usar una version reciente de la libreria `kernels`.
 
@@ -31,7 +31,7 @@ No existe informacion sobre datos de entrenamiento, numero de tokens, composicio
 
 - `LigerForCausalLMLoss`: calculo de la perdida de entropia cruzada para modelos de lenguaje causales, presumiblemente con calculo por fragmentos para reducir el pico de memoria asociado a los logits.
 - `liger_rotary_pos_emb`: aplicacion del embedding posicional rotatorio (RoPE) sobre las consultas y claves de la atencion.
-- Integracion mediante la libreria `kernels` de HuggingFace, con versionado explicito (`version=2` en el ejemplo de uso).
+- Integracion mediante la libreria `kernels` de Hugging Face, con versionado explicito (`version=2` en el ejemplo de uso).
 - Consumo programatico en Python: `from kernels import get_kernel` y posterior obtencion del modulo de kernel.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes ni capacidades multilingues: es una dependencia de bajo nivel, no un modelo.
 - La model card no documenta modo "thinking", audio, vision ni ninguna capacidad de ese tipo.
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - No procede estimar VRAM de forma aislada: el consumo depende por completo del modelo anfitrion sobre el que se apliquen los kernels.
 - Requiere GPU compatible con el backend de compilacion del kernel. La informacion proporcionada no especifica arquitecturas soportadas ni compute capability minima.
 - No cabe hablar de "cabe en GPU consumer": el paquete no ocupa VRAM de pesos, solo la necesaria para los tensores de la operacion.
-- Opciones de despliegue: consumo via libreria `kernels` de HuggingFace (`pip install -U kernels`), con resolucion mediante `get_kernel("kernels-community/liger-kernels", version=2)`.
+- Opciones de despliegue: consumo via libreria `kernels` de Hugging Face (`pip install -U kernels`), con resolucion mediante `get_kernel("kernels-community/liger-kernels", version=2)`.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Alternativa | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| `replicate/liger-kernels` | paquete de kernels (perdida causal + RoPE) | BSD 2-Clause | HuggingFace Hub via `kernels` | 0 descargas, 0 likes en la fecha de consulta |
-| `kernels-community/liger-kernels` | paquete de kernels | no disponible en la informacion proporcionada | HuggingFace Hub via `kernels` | Referenciado como origen del card publicado por Replicate |
-| `kernels-community/flash-attn3` | paquete de kernels de atencion | no disponible | HuggingFace Hub via `kernels` | Citado en el aviso sobre la retirada de repositorios de tipo "model" |
+| `replicate/liger-kernels` | paquete de kernels (perdida causal + RoPE) | BSD 2-Clause | Hugging Face Hub via `kernels` | 0 descargas, 0 likes en la fecha de consulta |
+| `kernels-community/liger-kernels` | paquete de kernels | no disponible en la informacion proporcionada | Hugging Face Hub via `kernels` | Referenciado como origen del card publicado por Replicate |
+| `kernels-community/flash-attn3` | paquete de kernels de atencion | no disponible | Hugging Face Hub via `kernels` | Citado en el aviso sobre la retirada de repositorios de tipo "model" |
 | Modelos de lenguaje comparables | no disponible | no disponible | no disponible | No existe categoria de modelos equivalente: este repositorio no es un modelo |
 
 ## Limitaciones y advertencias
@@ -88,10 +88,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/replicate/liger-kernels
+- Hugging Face: https://huggingface.co/replicate/liger-kernels
 - Repositorio de origen referenciado en la model card: https://huggingface.co/kernels-community/liger-kernels
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
-- Incidencias sobre kernels en HuggingFace: https://github.com/huggingface/kernels/issues/new
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
+- Incidencias sobre kernels en Hugging Face: https://github.com/huggingface/kernels/issues/new
 - Replicate: https://replicate.com/
 - Replicate (explorador de modelos): https://replicate.com/explore
 - Replicate en GitHub: https://github.com/replicate

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muslim-1 2B es un ajuste fino de `google/gemma-4-E2B-it` orientado a una aplicación móvil de estudio islámico que funciona sin conexión en iPhone. Lo desarrolla el usuario de HuggingFace mukaddamzaid y su rasgo definitorio no es la generación de texto libre, sino el uso disciplinado de herramientas: el modelo no cita escrituras de memoria, sino que invoca nueve funciones que leen el Corán, un tafsir breve, el libro de duás Hisn al-Muslim y las guías del Ministerio de Hajj y Umrah de Arabia Saudí desde una base de datos local, y responde a partir de lo que devuelve la herramienta.
+Muslim-1 2B es un ajuste fino de `google/gemma-4-E2B-it` orientado a una aplicación móvil de estudio islámico que funciona sin conexión en iPhone. Lo desarrolla el usuario de Hugging Face mukaddamzaid y su rasgo definitorio no es la generación de texto libre, sino el uso disciplinado de herramientas: el modelo no cita escrituras de memoria, sino que invoca nueve funciones que leen el Corán, un tafsir breve, el libro de duás Hisn al-Muslim y las guías del Ministerio de Hajj y Umrah de Arabia Saudí desde una base de datos local, y responde a partir de lo que devuelve la herramienta.
 
 El repositorio contiene únicamente los pesos en MLX de 8 bits (4,6 GB), pensados para ejecución on-device en Apple Silicon. Los pesos por sí solos no bastan: se necesitan también las nueve herramientas y su base de datos. La aplicación añade tres comprobaciones en código (un parser de referencias, un guardián de las guías de peregrinación y un verificador que elimina texto árabe no recuperado y corrige citas erróneas), y todas las métricas publicadas se miden con esas tres comprobaciones activas.
 
@@ -17,7 +17,7 @@ Es relevante ahora porque ejemplifica un patrón emergente: modelos pequeños, c
 | Parametros activos | no disponible (el sufijo E2B del modelo base sugiere un esquema de parámetros efectivos, pero no se documenta la cifra) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8 bits en formato MLX (única variante publicada). El autor advierte de que la cuantización a 4 bits borra el ajuste fino |
-| Idiomas soportados | Árabe (ar), urdu (ur), inglés (en). La model card añade roman urdu, no presente en los tags de HuggingFace |
+| Idiomas soportados | Árabe (ar), urdu (ur), inglés (en). La model card añade roman urdu, no presente en los tags de Hugging Face |
 | Licencia | Gemma (sujeta a los Gemma Terms of Use) |
 | Formato de pesos | safetensors en formato MLX (`library_name: mlx`) |
 | Tamano del repositorio | 5,0 GB |
@@ -132,7 +132,7 @@ No se han identificado en la información proporcionada alternativas comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mukaddamzaid/Muslim-1-2B-MLX-8bit
+- Hugging Face: https://huggingface.co/mukaddamzaid/Muslim-1-2B-MLX-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Fuentes citadas por el autor sin URL en la model card: texto coránico de Tanzil (grafías Uthmani y simple); tafsir Al-Muyassar y Al-Mukhtasar, procedentes de tafsir-mcp-data (CC BY 4.0); Hisn al-Muslim de Sa'id bin Ali bin Wahf al-Qahtani, 267 duás en 132 capítulos, vía la API de hisnmuslim.com; Hajj Awareness Guide y Umrah & Visit Guide del Ministerio de Hajj y Umrah de Arabia Saudí, 45 secciones transcritas literalmente.

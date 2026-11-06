@@ -23,9 +23,9 @@ El modelo tiene 9B parámetros (heredados del base), contexto no especificado en
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen3.5-9B, un transformer denso de 9B parámetros. El entrenamiento LoRA es de solo atención, rank 16 y alpha 32, con tasa de aprendizaje 1e-4, batch 16 y tres épocas, realizado con Tinker. El conjunto consta de 768 episodios y 2624 prefijos de decisión supervisados; cada prefijo se verificó contra la plantilla de HuggingFace fijada del base, con el modo thinking desactivado. Las banderas y los grupos de instancias son disjuntos entre particiones. La validación seleccionó la época 1 tanto para el modelo aprendido como para el control de objetivos barajados.
+El adaptador se aplica sobre Qwen3.5-9B, un transformer denso de 9B parámetros. El entrenamiento LoRA es de solo atención, rank 16 y alpha 32, con tasa de aprendizaje 1e-4, batch 16 y tres épocas, realizado con Tinker. El conjunto consta de 768 episodios y 2624 prefijos de decisión supervisados; cada prefijo se verificó contra la plantilla de Hugging Face fijada del base, con el modo thinking desactivado. Las banderas y los grupos de instancias son disjuntos entre particiones. La validación seleccionó la época 1 tanto para el modelo aprendido como para el control de objetivos barajados.
 
-Una innovación técnica destacable es el proceso de conversión: el export original tiene LoRAs Q/K/V separadas para atención lineal, mientras que HuggingFace usa una proyección QKV fusionada. El conversor concatena las matrices A y diagonaliza por bloques las matrices B, elevando el rank fusionado a 48 y alpha a 96 para mantener alpha/r = 2. Todos los tensores fuente se consumen y cada actualización empaquetada se verifica en float64; el resto de módulos de atención conservan rank 16. La conversión no entrena ni fusiona el base. Además, un helper restaura los exports FP32 originales en almacenamiento FP32 del adaptador (PEFT 0.18.1 podía redondear a BF16 antes de upcastear) y la generación se detiene explícitamente en `<|im_end|>` (248046), en lugar del `<|endoftext|>` por defecto del config del base. No se menciona RLHF ni DPO.
+Una innovación técnica destacable es el proceso de conversión: el export original tiene LoRAs Q/K/V separadas para atención lineal, mientras que Hugging Face usa una proyección QKV fusionada. El conversor concatena las matrices A y diagonaliza por bloques las matrices B, elevando el rank fusionado a 48 y alpha a 96 para mantener alpha/r = 2. Todos los tensores fuente se consumen y cada actualización empaquetada se verifica en float64; el resto de módulos de atención conservan rank 16. La conversión no entrena ni fusiona el base. Además, un helper restaura los exports FP32 originales en almacenamiento FP32 del adaptador (PEFT 0.18.1 podía redondear a BF16 antes de upcastear) y la generación se detiene explícitamente en `<|im_end|>` (248046), en lugar del `<|endoftext|>` por defecto del config del base. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Una innovación técnica destacable es el proceso de conversión: el export orig
 
 - Investigación sobre políticas de uso de herramientas: el adaptador sirve para estudiar cómo un LLM aprende a emitir acciones JSON válidas y a encadenarlas bajo un protocolo fijo, con controles de objetivo barajado que aíslan el aprendizaje de protocolo del razonamiento.
 - Reproducción de experimentos de alineación y rechazo: las suites de sondas de alcance (32/32 rechazos limpios) permiten evaluar la robustez de las negativas ante peticiones fuera de alcance en un entorno controlado.
-- Validación de pipelines de conversión LoRA: el `conversion.json` y las comprobaciones numéricas en float64 sirven como referencia para quienes conviertan LoRAs con atención lineal a proyecciones QKV fusionadas en HuggingFace.
+- Validación de pipelines de conversión LoRA: el `conversion.json` y las comprobaciones numéricas en float64 sirven como referencia para quienes conviertan LoRAs con atención lineal a proyecciones QKV fusionadas en Hugging Face.
 - Docencia en criptografía "toy": los laboratorios con primos de 32 bits y módulos RSA de 64 bits (estrés con 64/128 bits) son adecuados para demostrar fallos de exponente, broadcast y reutilización de XOR en entornos offline.
 - Evaluación de aislamiento de ejecución: el evaluador `reproduce.py` (solo Linux, con libseccomp y caída a UID/GID 65534) ejemplifica cómo ejecutar código generado por un modelo con límites de syscalls y recursos y fallo cerrado.
 - Estudio de transferencia y límites de generalización: la familia de módulo común no vista (0/64) y el intento bloqueado de escritura en `/tmp/flag` documentan empíricamente los límites de transferencia y la diferencia entre intención del modelo y aplicación del entorno.
@@ -59,7 +59,7 @@ Resultados nativos en Tinker (recuperación de bandera por episodio completo):
 | Familia de algoritmo no vista, 64 laboratorios | 0/64 | 0/64 | 0/64 |
 | Rechazos limpios en 32 sondas de alcance | 32/32 | 32/32 | 0/32 |
 
-Evaluación independiente en HuggingFace (episodios en vivo):
+Evaluación independiente en Hugging Face (episodios en vivo):
 
 | Condición | Base | Learned | Shuffled |
 |---|---:|---:|---:|
@@ -84,8 +84,8 @@ Los intervalos bootstrap del 95 % para la ganancia pareada sobre el base son [0,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CTFAgent-9B-Offline-Labs (este) | 9B (base) + LoRA | no disponible | Política de herramientas en criptografía toy offline | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | LLM general | no disponible | HuggingFace |
+| CTFAgent-9B-Offline-Labs (este) | 9B (base) + LoRA | no disponible | Política de herramientas en criptografía toy offline | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | LLM general | no disponible | Hugging Face |
 | Alternativas de agentes CTF de propósito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos comparables en la información proporcionada; la comparativa cuantitativa con otros adaptadores o agentes CTF no está disponible.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsalissonsilva/CTFAgent-9B-Offline-Labs
+- Hugging Face: https://huggingface.co/itsalissonsilva/CTFAgent-9B-Offline-Labs
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`)
 - Repositorio de artefactos de evaluación: `evaluation/hf.json` y `evaluation/native.json` (incluidos en el repositorio del modelo)
 - Registro de conversión: `conversion.json` (incluido en el repositorio del modelo)

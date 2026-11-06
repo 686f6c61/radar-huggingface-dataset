@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Vech911/h3-tiddies-slider` es un artefacto publicado en HuggingFace por el usuario Vech911 bajo licencia MIT. La model card asociada no contiene absolutamente ninguna documentación técnica: el único contenido es la declaración de licencia (`license: mit`), sin descripción del modelo, sin instrucciones de uso, sin arquitectura declarada ni ejemplos. El pipeline no está especificado en los metadatos del repositorio.
+El repositorio `Vech911/h3-tiddies-slider` es un artefacto publicado en Hugging Face por el usuario Vech911 bajo licencia MIT. La model card asociada no contiene absolutamente ninguna documentación técnica: el único contenido es la declaración de licencia (`license: mit`), sin descripción del modelo, sin instrucciones de uso, sin arquitectura declarada ni ejemplos. El pipeline no está especificado en los metadatos del repositorio.
 
 El tamaño del repositorio es de 0,1 GB, lo que descarta que se trate de un modelo de lenguaje de gran escala y es compatible con un adaptador de pesos ligeros (por ejemplo, un LoRA o un slider de difusión), aunque esta interpretación es una inferencia basada en el nombre y el tamaño y no está confirmada por ninguna fuente. Los metadatos indican 0 descargas y 0 likes, y las fechas de creación y actualización (11 de septiembre de 2026) son incoherentes con el calendario actual, lo que sugiere un error de registro o una publicación de prueba.
 
@@ -79,7 +79,7 @@ No disponible. Sin conocer la categoría funcional del artefacto (modelo de leng
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vech911/h3-tiddies-slider
+- Hugging Face: https://huggingface.co/Vech911/h3-tiddies-slider
 - Model card: no disponible (el README solo contiene la declaración `license: mit`)
 - Paper: no disponible
 - Repositorio de código: no disponible

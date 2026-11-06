@@ -91,7 +91,7 @@ La comparación con alternativas de la misma categoría (ASR on-device en vietna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/PhoWhisper-large-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/PhoWhisper-large-mobile
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-large
 - ONNX Runtime: https://onnxruntime.ai
 - Optimum (exportación ONNX): https://github.com/huggingface/optimum

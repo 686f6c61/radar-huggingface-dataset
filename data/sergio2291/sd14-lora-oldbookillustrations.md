@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sd14-lora-oldbookillustrations es un LoRA (Low-Rank Adaptation) publicado por el usuario Sergio2291 en HuggingFace. Por su identificador, el adaptador está pensado para el modelo base Stable Diffusion 1.4 y su función declarada es la de un adaptador de estilo orientado a ilustraciones de libros antiguos. Se trata, por tanto, de un artefacto de ajuste fino ligero que no incluye pesos completos de un modelo generativo, sino únicamente las matrices de bajo rango que se aplican sobre el checkpoint base.
+sd14-lora-oldbookillustrations es un LoRA (Low-Rank Adaptation) publicado por el usuario Sergio2291 en Hugging Face. Por su identificador, el adaptador está pensado para el modelo base Stable Diffusion 1.4 y su función declarada es la de un adaptador de estilo orientado a ilustraciones de libros antiguos. Se trata, por tanto, de un artefacto de ajuste fino ligero que no incluye pesos completos de un modelo generativo, sino únicamente las matrices de bajo rango que se aplican sobre el checkpoint base.
 
 La información pública disponible es mínima: la model card únicamente contiene la línea de licencia, sin descripción de entrenamiento, dataset, hiperparámetros, ejemplos de uso ni resultados cualitativos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline ni idiomas soportados.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sergio2291/sd14-lora-oldbookillustrations | LoRA de estilo | Stable Diffusion 1.4 | 77 tokens (CLIP) | creativeml-openrail-m | HuggingFace, sin documentación |
-| LoRA de estilo para SD 1.5 (genéricos) | LoRA de estilo | Stable Diffusion 1.5 | 77 tokens (CLIP) | variable según autor | Amplia disponibilidad en Civitai y HuggingFace |
-| Stable Diffusion 1.5 base | Modelo completo | — | 77 tokens (CLIP) | creativeml-openrail-m | HuggingFace |
-| SDXL base | Modelo completo | — | 77 tokens por encoder (dos encoders) | openrail++ | HuggingFace |
+| Sergio2291/sd14-lora-oldbookillustrations | LoRA de estilo | Stable Diffusion 1.4 | 77 tokens (CLIP) | creativeml-openrail-m | Hugging Face, sin documentación |
+| LoRA de estilo para SD 1.5 (genéricos) | LoRA de estilo | Stable Diffusion 1.5 | 77 tokens (CLIP) | variable según autor | Amplia disponibilidad en Civitai y Hugging Face |
+| Stable Diffusion 1.5 base | Modelo completo | — | 77 tokens (CLIP) | creativeml-openrail-m | Hugging Face |
+| SDXL base | Modelo completo | — | 77 tokens por encoder (dos encoders) | openrail++ | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este LoRA concreto; la comparación se limita a características estructurales y de licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para este LoRA concreto; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sergio2291/sd14-lora-oldbookillustrations
+- Hugging Face: https://huggingface.co/Sergio2291/sd14-lora-oldbookillustrations
 - Stable Diffusion 1.4 (modelo base): https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Diffusers (carga de LoRA): https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

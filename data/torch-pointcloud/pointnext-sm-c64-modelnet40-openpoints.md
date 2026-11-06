@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointNeXt-sm-c64 es un modelo de clasificacion de nubes de puntos en 3D publicado por el usuario torch-pointcloud en HuggingFace. Se trata de una conversion del modelo PointNeXt-S (Small) con 64 canales por bloque, implementado en la libreria torch-pointcloud de Arthur Dujardin a partir del repositorio original guochengqian/PointNeXt (licencia MIT). El modelo resuelve una tarea concreta: asignar una de las 40 clases de objetos del dataset ModelNet40 a una nube de puntos de entrada con tres canales por punto (coordenadas XYZ), opcionalmente con normales.
+PointNeXt-sm-c64 es un modelo de clasificacion de nubes de puntos en 3D publicado por el usuario torch-pointcloud en Hugging Face. Se trata de una conversion del modelo PointNeXt-S (Small) con 64 canales por bloque, implementado en la libreria torch-pointcloud de Arthur Dujardin a partir del repositorio original guochengqian/PointNeXt (licencia MIT). El modelo resuelve una tarea concreta: asignar una de las 40 clases de objetos del dataset ModelNet40 a una nube de puntos de entrada con tres canales por punto (coordenadas XYZ), opcionalmente con normales.
 
 Arquitectonicamente es una revision escalada de PointNet++: mantiene el esquema jerarquico de muestreo (sampling), agrupacion por consulta esferica (ball query) y capas de abstraccion de conjunto, pero sustituye el bloque MLP simple por bloques residuales invertidos inspirados en MobileNetV2, ademas de incorporar mejoras en las estrategias de entrenamiento y de escalado. El modelo es muy pequeno: 4.540.200 parametros totales, con 3 canales de entrada, 40 clases de salida y una dimension de caracteristicas de 1024 para extraccion de embeddings.
 
@@ -25,7 +25,7 @@ Su relevancia practica es la de un backbone ligero y de codigo abierto para tare
 | Dimension de caracteristicas | 1024 (embeddings de `forward_features` o tras `reset_classifier(num_classes=0)`) |
 | Dataset de entrenamiento | ModelNet40 |
 | Libreria de inferencia | torch-pointcloud (`pip install torch-pointcloud`) |
-| Tamano del repositorio | 0,0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos alt
 
 | Modelo | Categoria | Parametros | Licencia | Disponibilidad | Rendimiento en ModelNet40 |
 |---|---|---|---|---|---|
-| pointnext-sm-c64.modelnet40.openpoints | Clasificacion de nubes de puntos (PointNeXt-S) | 4.540.200 | MIT | HuggingFace, safetensors, via torch-pointcloud | OA 93,96 / mAcc 91,14 (declarado) |
+| pointnext-sm-c64.modelnet40.openpoints | Clasificacion de nubes de puntos (PointNeXt-S) | 4.540.200 | MIT | Hugging Face, safetensors, via torch-pointcloud | OA 93,96 / mAcc 91,14 (declarado) |
 | PointNeXt-S original (`guochengqian/PointNeXt`) | Clasificacion de nubes de puntos (PointNeXt-S) | No disponible en la informacion | MIT | GitHub, pesos originales de PyTorch | Referencia indicada por el autor: OA 94,0 |
 | PointNet++ (MSA) | Clasificacion de nubes de puntos | No disponible en la informacion | No disponible en la informacion | Implementaciones publicas en GitHub | No disponible en la informacion |
 | Point Transformer | Clasificacion de nubes de puntos basada en atencion | No disponible en la informacion | No disponible en la informacion | Implementaciones publicas en GitHub | No disponible en la informacion |
@@ -110,7 +110,7 @@ La diferencia principal de esta ficha respecto al repositorio original es el emp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-sm-c64.modelnet40.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-sm-c64.modelnet40.openpoints
 - Paper de PointNeXt (NeurIPS 2022): https://arxiv.org/abs/2206.04670
 - Repositorio original de PointNeXt: https://github.com/guochengqian/PointNeXt
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -70,9 +70,9 @@ No se han publicado resultados de otros benchmarks (MMLU, GSM8K, etc.) en la inf
 
 | Modelo | Parámetros | Contexto | Cuantización | HumanEval pass@1 | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- |
-| Qwen3.8-Flash-Next (stock) | 125B + 51B n-gram | 262K | 4-bit MLX (98 GB) | 93,9 % | Qwen Community 1.0 | HuggingFace |
-| **REAP-384 (este modelo)** | 125B + 51B n-gram (podado a 384 expertos) | 262K | 4-bit MLX (80 GB) | 92,1 % | Qwen Community 1.0 | HuggingFace |
-| REAP-288 (eficiencia) | 125B + 51B n-gram (podado a 288 expertos) | 262K | 4-bit MLX (68 GB) | 91,5 % | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next (stock) | 125B + 51B n-gram | 262K | 4-bit MLX (98 GB) | 93,9 % | Qwen Community 1.0 | Hugging Face |
+| **REAP-384 (este modelo)** | 125B + 51B n-gram (podado a 384 expertos) | 262K | 4-bit MLX (80 GB) | 92,1 % | Qwen Community 1.0 | Hugging Face |
+| REAP-288 (eficiencia) | 125B + 51B n-gram (podado a 288 expertos) | 262K | 4-bit MLX (68 GB) | 91,5 % | Qwen Community 1.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -83,11 +83,11 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 - La entrada de visión no ha sido probada después de la poda; la torre de visión está intacta pero su rendimiento real es desconocido.
 - El modo de tabla n-gram desde NVMe requiere un parche propio que aún no está integrado en mlx-vlm; sin él, la memoria residente sube a ~80 GB.
 - La licencia Qwen Community License 1.0 puede imponer restricciones de uso comercial; se recomienda revisar el texto completo de la licencia.
-- El número de parámetros reportado en safetensors (24,75B) no coincide con la descripción del modelo base (125B + 51B); es posible que la metadata de HuggingFace sea incorrecta o que se refiera a una parte de los tensores.
+- El número de parámetros reportado en safetensors (24,75B) no coincide con la descripción del modelo base (125B + 51B); es posible que la metadata de Hugging Face sea incorrecta o que se refiera a una parte de los tensores.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-384-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-384-MLX-4bit
 - Modelo base (Qwen/Qwen3.8-Flash-Next): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Conversión base MLX 4-bit (Sawfwair/Qwen3.8-Flash-Next-MLX-4bit): https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit
 - Drafter MTP complementario: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16

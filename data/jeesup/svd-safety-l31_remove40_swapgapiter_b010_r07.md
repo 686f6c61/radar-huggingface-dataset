@@ -85,8 +85,8 @@ Todas las cifras de VRAM son estimaciones derivadas del tamano del checkpoint y 
 
 | Modelo | Parametros | Contexto | Licencia | Metricas de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r07 | 8.030.261.248 almacenados; fraccion densa 0,5998 | No declarado (heredado de Llama 3.1 8B) | Llama 3.1 Community License | AdvBench ASR 0,0150; StrongREJECT ASR 0,0550; sobrerrechazo 0,5121 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens | Llama 3.1 Community License | No disponible en esta informacion | HuggingFace |
+| Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r07 | 8.030.261.248 almacenados; fraccion densa 0,5998 | No declarado (heredado de Llama 3.1 8B) | Llama 3.1 Community License | AdvBench ASR 0,0150; StrongREJECT ASR 0,0550; sobrerrechazo 0,5121 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens | Llama 3.1 Community License | No disponible en esta informacion | Hugging Face |
 | Otros brazos de la malla experimental del mismo autor (otras reglas de seleccion y presupuestos) | No disponible | No disponible | Llama 3.1 Community License | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del modelo base sin comprimir ni del resto de celdas de la malla, por lo que no es posible establecer una comparacion cuantitativa de la degradacion o de la recuperacion de seguridad.
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento del modelo base sin comprimir ni del resto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/ (referencia de la licencia citada en el repositorio)
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo, su metodologia o sus benchmarks; las URLs devueltas corresponden a paginas de soporte de Microsoft ajenas al modelo.

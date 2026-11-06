@@ -78,8 +78,8 @@ No disponible. No se conocen modelos comparables específicos. En el dominio de 
 
 ## Enlaces
 
-- [HuggingFace - Shogun007/cleaned_cattle_50_breed](https://huggingface.co/Shogun007/cleaned_cattle_50_breed)
-- [Perfil de Shogun007 en HuggingFace](https://huggingface.co/Shogun007)
+- [Hugging Face - Shogun007/cleaned_cattle_50_breed](https://huggingface.co/Shogun007/cleaned_cattle_50_breed)
+- [Perfil de Shogun007 en Hugging Face](https://huggingface.co/Shogun007)
 - [Dataset relacionado: Shogun007/Cattle_breed_cleaned_dataset](https://huggingface.co/Shogun007/Cattle_breed_cleaned_dataset)
 - [GitHub - punithkrishnakeepudi/cattle-breed-classifier](https://github.com/punithkrishnakeepudi/cattle-breed-classifier) (referencia de clasificador de 50 razas de ganado)
 - [GitHub - Sivaprasath97/AIML](https://github.com/Sivaprasath97/AIML) (otro clasificador de razas de ganado)

@@ -96,7 +96,7 @@ No se dispone de resultados de otros adaptadores comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-oft-subject5
+- Modelo en Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-oft-subject5
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de la herramienta de entrenamiento dptlab: https://github.com/OnePunchMonk/diffusion-post-training-lab
 - Resultados completos y factores de confusion: `RESULTS.md` dentro del repositorio del modelo

@@ -101,11 +101,11 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FoolDev/Janus-35B-HERETIC
+- Modelo en Hugging Face: https://huggingface.co/FoolDev/Janus-35B-HERETIC
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original del linaje: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo hermano del mismo autor: https://huggingface.co/FoolDev/Thanatos-27B-HERETIC
-- Documentacion de Ollama en HuggingFace (mecanismo del bridge): https://huggingface.co/docs/hub/en/ollama
+- Documentacion de Ollama en Hugging Face (mecanismo del bridge): https://huggingface.co/docs/hub/en/ollama
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - Dataset Crownelius/Creative_Writing_ShareGPT_Enhanced: https://huggingface.co/datasets/Crownelius/Creative_Writing_ShareGPT_Enhanced
 - Dataset microsoft/rStar-Coder: https://huggingface.co/datasets/microsoft/rStar-Coder

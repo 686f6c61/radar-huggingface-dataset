@@ -2,11 +2,11 @@
 
 ## Resumen
 
-La ficha corresponde a `WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA`, un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de pesos de adaptación (PEFT) que deben cargarse sobre el modelo base `meta-llama/Llama-3.1-8B`. El repositorio pesa aproximadamente 0,1 GB, coherente con un adaptador de bajo rango y no con un checkpoint completo de 8 000 millones de parámetros.
+La ficha corresponde a `WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA`, un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de pesos de adaptación (PEFT) que deben cargarse sobre el modelo base `meta-llama/Llama-3.1-8B`. El repositorio pesa aproximadamente 0,1 GB, coherente con un adaptador de bajo rango y no con un checkpoint completo de 8 000 millones de parámetros.
 
 El identificador del repositorio sugiere que el ajuste se realizó sobre el conjunto de datos TyDiQA (preguntas y respuestas en múltiples idiomas), combinando inglés y telugu, con un subconjunto de 3 000 ejemplos. La cadena `VeRA` del nombre apunta, con reservas, a la técnica de adaptación Vector-based Random Matrix Adaptation implementada en la librería PEFT, aunque el autor no lo confirma en la model card. Toda esta interpretación procede únicamente del nombre del repositorio y no está respaldada por documentación del autor.
 
-La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: la model card es la plantilla por defecto de HuggingFace sin ninguna sección completada (todos los campos aparecen como `[More Information Needed]`), el repositorio acumula 4 descargas y 0 "likes", no declara licencia, idiomas ni resultados de evaluación, y la búsqueda web asociada no devuelve ningún enlace relacionado con el modelo. Se documenta, por tanto, como un artefacto de investigación sin validación publicada.
+La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: la model card es la plantilla por defecto de Hugging Face sin ninguna sección completada (todos los campos aparecen como `[More Information Needed]`), el repositorio acumula 4 descargas y 0 "likes", no declara licencia, idiomas ni resultados de evaluación, y la búsqueda web asociada no devuelve ningún enlace relacionado con el modelo. Se documenta, por tanto, como un artefacto de investigación sin validación publicada.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: la mod
 
 No hay informacion publicada por el autor sobre la arquitectura del adaptador, el rango, el valor de alpha, las capas objetivo ni el tipo exacto de modulo PEFT utilizado. Lo unico verificable es que el repositorio declara `library_name: peft` y contiene pesos en formato safetensors sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only con atencion agrupada por consultas (GQA), RoPE y una ventana de contexto de 128 000 tokens.
 
-Tampoco se documentan los datos de entrenamiento, el numero de tokens vistos, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros (tasa de aprendizaje, epocas, precision mixta). El nombre del repositorio apunta a un subconjunto de TyDiQA con 3 000 ejemplos en ingles y telugu, pero es una inferencia nominal, no un dato confirmado. La etiqueta `arxiv:1910.09700` presente en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluido en la plantilla por defecto de HuggingFace, y no a un paper descriptivo de este adaptador.
+Tampoco se documentan los datos de entrenamiento, el numero de tokens vistos, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros (tasa de aprendizaje, epocas, precision mixta). El nombre del repositorio apunta a un subconjunto de TyDiQA con 3 000 ejemplos en ingles y telugu, pero es una inferencia nominal, no un dato confirmado. La etiqueta `arxiv:1910.09700` presente en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, incluido en la plantilla por defecto de Hugging Face, y no a un paper descriptivo de este adaptador.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han identificado en la informacion disponible adaptadores comparables publ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (VeRA sobre Llama 3.1 8B) | No disponible; base de 8 030 millones | No disponible; base de 128 000 tokens | No publicado | No disponible | Publico en HuggingFace, 4 descargas |
+| Este adaptador (VeRA sobre Llama 3.1 8B) | No disponible; base de 8 030 millones | No disponible; base de 128 000 tokens | No publicado | No disponible | Publico en Hugging Face, 4 descargas |
 | meta-llama/Llama-3.1-8B (base) | 8 030 millones | 128 000 tokens | Publicado por Meta | Llama 3.1 Community License | Publico, muy extendido |
 | meta-llama/Llama-3.1-8B-Instruct | 8 030 millones | 128 000 tokens | Publicado por Meta | Llama 3.1 Community License | Publico, muy extendido |
-| Adaptadores PEFT genericos sobre Llama 3.1 8B | Variable, tipicamente decenas de millones | Heredado del base | Depende del autor | Depende del autor | Amplia disponibilidad en HuggingFace |
+| Adaptadores PEFT genericos sobre Llama 3.1 8B | Variable, tipicamente decenas de millones | Heredado del base | Depende del autor | Depende del autor | Amplia disponibilidad en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible adaptadores comparables publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_120_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia del tag arxiv presente en el repositorio (Lacoste et al., 2019, sobre impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico citado en la plantilla: https://mlco2.github.io/impact

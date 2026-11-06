@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MadGoatHaz/Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AutoRound",
+  "slug": "madgoathaz-qwen3-8-27b-ultimate-heretic-uncensored-w4a16-autoround",
+  "author": "MadGoatHaz",
+  "url": "https://huggingface.co/MadGoatHaz/Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AutoRound",
+  "created_at": "2026-11-05T17:32:23.000Z",
+  "updated_at": "2026-11-05T21:48:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "auto-round",
+    "w4a16",
+    "marlin",
+    "vllm",
+    "gptq",
+    "uncensored",
+    "heretic",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 6284446960,
+  "parameters_human": "6.28B",
+  "storage_bytes": 19016696322,
+  "storage_human": "19.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AutoRound",
+      "url": "https://huggingface.co/MadGoatHaz/Qwen3.8-27B-Ultimate-Heretic-Uncensored-W4A16-AutoRound",
+      "snippet": "Text Generation model with 6B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.8-27B-Ultimate-Heretic-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+      "snippet": "DavidAU / Qwen3.8-27B-Ultimate-Heretic-Uncensored Like 87 Image-Text-to-Text Transformers Safetensors DavidAU/Polar-STRICT-Datasets DavidAU/F451-STRICT-Datasets English qwen3_5 heretic qwen3_8 qwen3_6 uncensored finetune Cold Fusion GAIN Training Multi-stage tuning all use cases unsloth 27 reasoning modes 27 instruct modes 15 AI Constructs 5 ..."
+    }
+  ]
+}

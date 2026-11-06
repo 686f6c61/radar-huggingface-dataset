@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuacooper/vit-retrieval-pretrained` es un repositorio de HuggingFace publicado por el usuario joshuacooper que contiene una implementacion propia en PyTorch de un Vision Transformer (ViT) orientado a tareas de retrieval (recuperacion imagen-texto o imagen-imagen). No se trata de un modelo entrenado ni de un release de produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida, no como un checkpoint con pesos entrenados.
+`joshuacooper/vit-retrieval-pretrained` es un repositorio de Hugging Face publicado por el usuario joshuacooper que contiene una implementacion propia en PyTorch de un Vision Transformer (ViT) orientado a tareas de retrieval (recuperacion imagen-texto o imagen-imagen). No se trata de un modelo entrenado ni de un release de produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida, no como un checkpoint con pesos entrenados.
 
 El dato objetivo mas relevante es que el archivo safetensors declara 33.088 parametros totales, una cifra extraordinariamente baja que resulta incoherente con la etiqueta de escala "giant" que figura en la configuracion del repositorio. El tamano del repositorio es de 0.0 GB y no se han publicado resultados de benchmarks, metricas de retrieval ni logs de entrenamiento. El modelo no acumula descargas ni likes en el momento de la consulta.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshuacooper/vit-retrieval-pretrained` | 33.088 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| `joshuacooper/vit-retrieval-pretrained` | 33.088 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | Modelos de retrieval imagen-texto tipo CLIP | no disponible en esta consulta | no disponible | no disponible en esta consulta | consultar fuente original | ampliamente disponibles |
 | Modelos de retrieval tipo SigLIP | no disponible en esta consulta | no disponible | no disponible en esta consulta | consultar fuente original | ampliamente disponibles |
 | Modelos de retrieval tipo BLIP | no disponible en esta consulta | no disponible | no disponible en esta consulta | consultar fuente original | ampliamente disponibles |
@@ -85,5 +85,5 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuacooper/vit-retrieval-pretrained
+- Hugging Face: https://huggingface.co/joshuacooper/vit-retrieval-pretrained
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a paginas de soporte de Microsoft y no guardan relacion con el repositorio).

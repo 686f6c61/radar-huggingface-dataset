@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theostos/qwen-3.5-babel-0.8b-sft-agent | 752.393.024 | no disponible | Lean/Rocq, tool calling, SFT | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | no disponible | Generacion de texto general | Apache 2.0 | HuggingFace |
+| theostos/qwen-3.5-babel-0.8b-sft-agent | 752.393.024 | no disponible | Lean/Rocq, tool calling, SFT | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 mil millones | no disponible | Generacion de texto general | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de demostración formal de tamaño similar en la información proporcionada; cualquier comparación de rendimiento sería especulativa. Los benchmarks de ambos modelos no están disponibles.
 
@@ -86,6 +86,6 @@ No se dispone de datos de otros modelos comparables de demostración formal de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theostos/qwen-3.5-babel-0.8b-sft-agent
+- Modelo en Hugging Face: https://huggingface.co/theostos/qwen-3.5-babel-0.8b-sft-agent
 - Repositorio del pipeline Babel-Formal: https://github.com/theostos/babel-formal
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -87,6 +87,6 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/YellowDuckSweater/microduck-roller-sprint-2m-run-1104-1803-001)
+- [Modelo en Hugging Face](https://huggingface.co/YellowDuckSweater/microduck-roller-sprint-2m-run-1104-1803-001)
 - [Repositorio microduck (Pollen Robotics)](https://github.com/pollen-robotics/microduck)
 - [Repositorio microduck-challenges](https://github.com/StephenForte/microduck-challenges)

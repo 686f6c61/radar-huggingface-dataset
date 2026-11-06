@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "montiezgirlzz/Moka_Illit_Rap_Deep_Verz",
+  "slug": "montiezgirlzz-moka_illit_rap_deep_verz",
+  "author": "montiezgirlzz",
+  "url": "https://huggingface.co/montiezgirlzz/Moka_Illit_Rap_Deep_Verz",
+  "created_at": "2026-11-06T11:01:03.000Z",
+  "updated_at": "2026-11-06T11:01:03.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moka Illit [RVC v2] [300 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/a69",
+      "snippet": "Moka Illit [RVC v2] [300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "montiezgirlzz (jarutham bunyong) - Hugging Face",
+      "url": "https://huggingface.co/montiezgirlzz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    }
+  ]
+}

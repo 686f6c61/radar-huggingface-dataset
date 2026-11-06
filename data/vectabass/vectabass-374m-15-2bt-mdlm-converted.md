@@ -105,7 +105,7 @@ No se han publicado comparaciones directas con modelos de difusión de lenguaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-15.2bt-mdlm-converted
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-15.2bt-mdlm-converted
 - Modelo padre: https://huggingface.co/VectaBass/vectabass-374m-11.5bt-base-cooled
 - Conversión N6 del conjunto: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

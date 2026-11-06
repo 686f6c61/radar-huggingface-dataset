@@ -10,7 +10,7 @@ El repositorio tiene un tamaño de 0.0 GB, contiene únicamente dos archivos (`s
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (segun tag de HuggingFace, no verificado) |
+| Arquitectura | Transformer (segun tag de Hugging Face, no verificado) |
 | Parametros totales | 16.576 (dato del archivo safetensors, no es un modelo entrenado) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -61,13 +61,13 @@ No disponible. No existe un modelo comparable porque el repositorio no es un mod
 - No hay resultados de benchmark: las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 - No hay codigo liberado: no se incluye implementacion de entrenamiento ni evaluacion.
 - Licencia cc-by-4.0: permite uso comercial y modificacion, pero el contenido es una nota de investigacion sin valor operativo.
-- Riesgo de confusion: la etiqueta `safetensors` en HuggingFace puede inducir a error, ya que el archivo no corresponde a un modelo entrenado.
+- Riesgo de confusion: la etiqueta `safetensors` en Hugging Face puede inducir a error, ya que el archivo no corresponde a un modelo entrenado.
 - No hay datos de idiomas ni contexto: el repositorio no especifica soporte multilingue ni longitud de contexto.
 - Requiere revision de los terminos de los datasets externos (MSB-VTT, ActivityNet) si se usan sus datos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gekap-oor86/cs229-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/gekap-oor86/cs229-video-understanding
 - Curso CS229 de Stanford (pagina oficial): https://cs229.stanford.edu/w24-index.html
 - Playlist de lectures CS229 en YouTube: https://www.youtube.com/playlist?list=PLaqpC4kq8Gpw
 - Video sobre construccion de LLM en CS229: https://www.youtube.com/watch?v=9vM4p9NN0Ts

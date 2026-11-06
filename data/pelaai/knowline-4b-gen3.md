@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KnowLine-4B-Gen3 es un modelo de decisiones de 4,66B parametros desarrollado por PelaAI, publicado bajo licencia Apache-2.0 y disponible en HuggingFace. No es un modelo generativo al uso: recibe un estado (un texto o una conversacion) y hasta 64 preguntas tipadas (si/no, eleccion entre k opciones o puntuacion sobre una rubrica), y devuelve para cada pregunta una distribucion de probabilidad sobre sus opciones. Cada pregunta se resuelve en un unico forward pass, sin generar texto, leyendo la probabilidad del token de etiqueta de cada opcion.
+KnowLine-4B-Gen3 es un modelo de decisiones de 4,66B parametros desarrollado por PelaAI, publicado bajo licencia Apache-2.0 y disponible en Hugging Face. No es un modelo generativo al uso: recibe un estado (un texto o una conversacion) y hasta 64 preguntas tipadas (si/no, eleccion entre k opciones o puntuacion sobre una rubrica), y devuelve para cada pregunta una distribucion de probabilidad sobre sus opciones. Cada pregunta se resuelve en un unico forward pass, sin generar texto, leyendo la probabilidad del token de etiqueta de cada opcion.
 
 Se trata de la tercera version de la familia System One de PelaAI y esta construida sobre Qwen/Qwen3.5-4B mediante LoRA SFT (rango 32, alpha 64, solo el modelo de lenguaje), fusionada en pesos bf16. El modelo hereda del base la torre de vision y la cabecera MTP, aunque sus tareas publicadas son de clasificacion y decision, no de generacion. Los idiomas soportados son ingles, chino simplificado y chino tradicional.
 
@@ -130,7 +130,7 @@ KnowLine-4B-Gen3 destaca por ofrecer una puntuacion publica superior a modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PelaAI/KnowLine-4B-Gen3
+- Modelo en Hugging Face: https://huggingface.co/PelaAI/KnowLine-4B-Gen3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Version anterior (Gen2): https://huggingface.co/PelaAI/KnowLine-4B-Gen2
 - Guia de inferencia: INFERENCE.md (en el repositorio del modelo)

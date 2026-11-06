@@ -73,8 +73,8 @@ Los valores absolutos de la suite, el held-out, MMLU-Pro y la evaluación de im�
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rsi-jev-v7.0-vl-4b | 4.69B | No disponible | Decisión tipada, una pasada, multimodal | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4.66B | No disponible | LLM generativo instruction-tuned | No disponible en la información | HuggingFace |
+| rsi-jev-v7.0-vl-4b | 4.69B | No disponible | Decisión tipada, una pasada, multimodal | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4.66B | No disponible | LLM generativo instruction-tuned | No disponible en la información | Hugging Face |
 | rsi-jev-v6.1-VL | No disponible | No disponible | Decisión tipada, versión previa | No disponible en la información | Repositorio del proyecto |
 
 La comparación directa con modelos generativos de tamaño similar no es posible con los datos disponibles, ya que rsi-jev-v7.0-vl-4b no genera texto y sus benchmarks no son directamente equiparables a MMLU o HumanEval en formato generativo. El único punto de comparación cuantitativo publicado es frente a v6.1-VL, donde v7.0-VL obtiene 60.63 frente a 50.98 en el Decision Index 0.3.
@@ -94,7 +94,7 @@ La comparación directa con modelos generativos de tamaño similar no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shgao/rsi-jev-v7.0-vl-4b
+- Modelo en Hugging Face: https://huggingface.co/shgao/rsi-jev-v7.0-vl-4b
 - Repositorio del proyecto: https://github.com/Shanghua-Gao/RSI-Jev
 - Registro de versiones: https://github.com/Shanghua-Gao/RSI-Jev/tree/main/versions
 - Documentación de la Jev HTTP API: https://github.com/Shanghua-Gao/RSI-Jev/blob/main/serve/README.md

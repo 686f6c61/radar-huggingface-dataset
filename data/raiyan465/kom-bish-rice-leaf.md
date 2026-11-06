@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Raiyan465/kom-bish-rice-leaf es un clasificador de imagenes de hojas de arroz desarrollado por el usuario Raiyan465 (perfil de HuggingFace) y publicado como modelo ONNX de un unico archivo. Resuelve una tarea concreta de vision por computador: asignar una imagen de hoja de arroz a una de cuatro clases (`bacterial_leaf_blight`, `blast`, `healthy`, `other`). No es un modelo de lenguaje ni un modelo multimodal generativo, sino un clasificador de imagenes de proposito especifico.
+Raiyan465/kom-bish-rice-leaf es un clasificador de imagenes de hojas de arroz desarrollado por el usuario Raiyan465 (perfil de Hugging Face) y publicado como modelo ONNX de un unico archivo. Resuelve una tarea concreta de vision por computador: asignar una imagen de hoja de arroz a una de cuatro clases (`bacterial_leaf_blight`, `blast`, `healthy`, `other`). No es un modelo de lenguaje ni un modelo multimodal generativo, sino un clasificador de imagenes de proposito especifico.
 
 El modelo se construye sobre el backbone `mobilenetv3_large_100.ra_in1k` de timm (pesos base con licencia Apache-2.0), afinado a 224 px y exportado a ONNX. La model card lo plantea como una pieza auxiliar de una tabla de reglas de "Kom Bish" y advierte explicitamente de que su salida no constituye un diagnostico. Incluye un mecanismo de abstencion calibrado (temperatura 0.6603, umbral top-1 de 0.83 y margen top-1 menos top-2 de 0.2) para rechazar predicciones de baja confianza.
 
-Su relevancia actual es la de un clasificador ligero pensado para despliegue en el borde (edge) en el contexto agricola de Bangladesh, con licencia MIT para los pesos del modelo y datos de entrenamiento bajo CC BY 4.0 con atribucion obligatoria. Se publico el 10 de octubre de 2026 segun los metadatos de HuggingFace y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que es un artefacto nuevo y practicamente sin adopcion publica.
+Su relevancia actual es la de un clasificador ligero pensado para despliegue en el borde (edge) en el contexto agricola de Bangladesh, con licencia MIT para los pesos del modelo y datos de entrenamiento bajo CC BY 4.0 con atribucion obligatoria. Se publico el 10 de octubre de 2026 segun los metadatos de Hugging Face y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que es un artefacto nuevo y practicamente sin adopcion publica.
 
 ## Especificaciones tecnicas
 
@@ -25,14 +25,14 @@ Su relevancia actual es la de un clasificador ligero pensado para despliegue en 
 | Salida | `logits` |
 | Libreria | ONNX |
 | Pipeline | image-classification |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es una red neuronal convolucional MobileNetV3-Large, tomada del backbone `mobilenetv3_large_100.ra_in1k` disponible en timm con pesos base bajo licencia Apache-2.0. El modelo se ha afinado (fine-tuning) a una resolucion de entrada de 224 px y se ha exportado a ONNX como un unico archivo. El preprocesado es estricto: transposicion EXIF, conversion a RGB, redimensionado del lado corto a 256 px con interpolacion bicubica, recorte central a 224 px, escalado a rango 0-1 y normalizacion con media (0.485, 0.456, 0.406) y desviacion (0.229, 0.224, 0.225). Cualquier discrepancia en este pipeline degradara las predicciones.
 
-El entrenamiento se realizo el 11 de octubre de 2026 con tres fuentes de datos bajo CC BY 4.0: RiceLeafBD (DOI 10.17632/kx9rx8p2mz.1, citando tambien arXiv 2501.08912), RiceLeafDisease-BD5 (DOI 10.17632/sjkptpgv79.2) y Dhan-Shomadhan (DOI 10.17632/znsxdctwtt.1, a traves del mirror de HuggingFace `Project-AgML/Dhan-Shomadhan_rice_leaf_disease_classification`, con 766 imagenes de entrenamiento, 167 de validacion y 155 de test). El mapeo de clases redujo las etiquetas de origen a las cuatro clases finales: "Rice Blast" se mapea a `blast` y el resto de enfermedades a `other`. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa, algo por otra parte no aplicable a un clasificador de imagenes. La innovacion tecnica destacable es la calibracion y la abstencion: las probabilidades se calculan como `softmax(logits / temperature)` con temperatura 0.6603, y el modelo debe abstenerse cuando el top-1 queda por debajo del umbral 0.83 o cuando la diferencia top-1 menos top-2 es inferior a 0.2. Los tres valores se almacenan en `labels.json`.
+El entrenamiento se realizo el 11 de octubre de 2026 con tres fuentes de datos bajo CC BY 4.0: RiceLeafBD (DOI 10.17632/kx9rx8p2mz.1, citando tambien arXiv 2501.08912), RiceLeafDisease-BD5 (DOI 10.17632/sjkptpgv79.2) y Dhan-Shomadhan (DOI 10.17632/znsxdctwtt.1, a traves del mirror de Hugging Face `Project-AgML/Dhan-Shomadhan_rice_leaf_disease_classification`, con 766 imagenes de entrenamiento, 167 de validacion y 155 de test). El mapeo de clases redujo las etiquetas de origen a las cuatro clases finales: "Rice Blast" se mapea a `blast` y el resto de enfermedades a `other`. No se documenta en la informacion disponible el uso de RLHF, DPO ni tecnicas de decodificacion especulativa, algo por otra parte no aplicable a un clasificador de imagenes. La innovacion tecnica destacable es la calibracion y la abstencion: las probabilidades se calculan como `softmax(logits / temperature)` con temperatura 0.6603, y el modelo debe abstenerse cuando el top-1 queda por debajo del umbral 0.83 o cuando la diferencia top-1 menos top-2 es inferior a 0.2. Los tres valores se almacenan en `labels.json`.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se reportan resultados en MMLU, HumanEval, GSM8K ni otras pruebas de modelos 
 
 ## Requisitos de hardware
 
-- Al ser un MobileNetV3-Large exportado a ONNX (repositorio de 0.0 GB segun HuggingFace, compatible con un archivo de decenas de megabytes), la inferencia es viable en CPU sin GPU dedicada.
+- Al ser un MobileNetV3-Large exportado a ONNX (repositorio de 0.0 GB segun Hugging Face, compatible con un archivo de decenas de megabytes), la inferencia es viable en CPU sin GPU dedicada.
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada; por la naturaleza del modelo es previsible que quepa en tarjetas con muy poca memoria, aunque no se aporta una cifra oficial.
 - GPU recomendadas: no documentadas en la model card. Cualquier GPU consumer (por ejemplo, gama RTX) es mas que suficiente para este tipo de red a 224 px, pero no se aportan recomendaciones explicitas.
 - Compatibilidad con GPU consumer: si, es un modelo disenado implicitamente para despliegue ligero; cabe en GPU consumer e incluso en moviles y dispositivos de borde.
@@ -95,7 +95,7 @@ En la informacion proporcionada no se citan modelos alternativos directamente co
 
 | Modelo | Tipo | Clases | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Raiyan465/kom-bish-rice-leaf | Clasificador de imagenes (MobileNetV3-Large afinado) | 4 | ONNX | MIT | HuggingFace |
+| Raiyan465/kom-bish-rice-leaf | Clasificador de imagenes (MobileNetV3-Large afinado) | 4 | ONNX | MIT | Hugging Face |
 | `mobilenetv3_large_100.ra_in1k` (backbone base) | Clasificador de imagenes generico (ImageNet) | 1000 | no disponible en la ficha | Apache-2.0 | timm |
 
 Alternativas especificas de la misma categoria (otros clasificadores de enfermedades de la hoja de arroz) no disponibles en la informacion proporcionada.
@@ -115,12 +115,12 @@ Alternativas especificas de la misma categoria (otros clasificadores de enfermed
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raiyan465/kom-bish-rice-leaf
+- Hugging Face: https://huggingface.co/Raiyan465/kom-bish-rice-leaf
 - Perfil del autor: Raiyan465 (https://huggingface.co/Raiyan465)
 - Backbone base: `mobilenetv3_large_100.ra_in1k` (timm)
 - Dataset RiceLeafBD: DOI 10.17632/kx9rx8p2mz.1 (citar tambien arXiv 2501.08912)
 - Dataset RiceLeafDisease-BD5: DOI 10.17632/sjkptpgv79.2
 - Dataset Dhan-Shomadhan: DOI 10.17632/znsxdctwtt.1
-- Mirror del dataset Dhan-Shomadhan en HuggingFace: https://huggingface.co/Project-AgML/Dhan-Shomadhan_rice_leaf_disease_classification
+- Mirror del dataset Dhan-Shomadhan en Hugging Face: https://huggingface.co/Project-AgML/Dhan-Shomadhan_rice_leaf_disease_classification
 - GitHub del autor: https://github.com/Raiyan465-F1/Raiyan465-F1
 - Articulo relacionado (Frontiers in Plant Science): https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1594329/full

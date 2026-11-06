@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, está diseñado para el edge (a 4 bi
 | Longitud de contexto | 262.144 tokens (256K), entrada + salida |
 | Tipos de cuantizacion | Pesos publicados en BF16; el autor indica ~1 GB de memoria a 4 bits. No se documentan en la información disponible ficheros GGUF, AWQ, GPTQ ni EXL2 oficiales |
 | Idiomas soportados | 16: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors en BF16; repositorio de 3,5 GB; requiere `trust_remote_code=True` (`custom_code`) |
 | Vocabulario | 128.000 tokens |
 | Tipo de checkpoint | Base preentrenado, solo texto, sin post-entrenamiento |
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Base | 1,73B | 256K | Base preentrenado, solo texto | LFM Open License v1.0 | HuggingFace (15 descargas, 40 likes) |
-| LFM3-1.7B | 1,73B | 256K | Post-entrenado para chat, tool calling y agentes | LFM Open License v1.0 | HuggingFace |
-| LFM2.5-1.2B-Instruct | ~1,2B (según denominación) | No disponible | Instruct de generación anterior | No disponible en la información consultada | HuggingFace |
-| LFM2.5-1.2B-Thinking | ~1,2B (según denominación) | No disponible | Con modo de razonamiento | No disponible en la información consultada | HuggingFace |
+| LFM3-1.7B-Base | 1,73B | 256K | Base preentrenado, solo texto | LFM Open License v1.0 | Hugging Face (15 descargas, 40 likes) |
+| LFM3-1.7B | 1,73B | 256K | Post-entrenado para chat, tool calling y agentes | LFM Open License v1.0 | Hugging Face |
+| LFM2.5-1.2B-Instruct | ~1,2B (según denominación) | No disponible | Instruct de generación anterior | No disponible en la información consultada | Hugging Face |
+| LFM2.5-1.2B-Thinking | ~1,2B (según denominación) | No disponible | Con modo de razonamiento | No disponible en la información consultada | Hugging Face |
 
 La comparación con modelos de otros fabricantes en el rango de 1,5-2B (Qwen, Gemma, Llama) no está cubierta por la información proporcionada; no se dispone de datos verificados de parámetros, contexto ni rendimiento para incluirlos en la tabla.
 
@@ -97,7 +97,7 @@ La comparación con modelos de otros fabricantes en el rango de 1,5-2B (Qwen, Ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Checkpoint post-entrenado de la misma familia: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Blog de presentación de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

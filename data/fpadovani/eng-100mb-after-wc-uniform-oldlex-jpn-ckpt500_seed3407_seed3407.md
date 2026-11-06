@@ -12,7 +12,7 @@ Es relevante ahora unicamente en el contexto de investigacion en eficiencia y di
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real de safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -37,7 +37,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Soporte de agentes y razonamiento multi-paso: no disponible; improbable en este rango de tamano.
 - Capacidades multilingues: no disponibles; el nombre del checkpoint menciona `eng` y `jpn`, sin documentacion al respecto.
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles.
-- Integracion declarada con text-generation-inference y `endpoints_compatible` segun los tags de HuggingFace.
+- Integracion declarada con text-generation-inference y `endpoints_compatible` segun los tags de Hugging Face.
 
 ## Casos de uso
 
@@ -67,10 +67,10 @@ No hay datos de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evalua
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed3407_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT academico con TRL sobre GPT-2 |
-| gpt2 (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente integrado | Modelo base de referencia de la misma escala |
-| gpt2-medium (OpenAI) | 355 M | 1024 tokens | MIT | HuggingFace | Escala superior con licencia permisiva |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Alternativa destilada, mas ligera |
+| eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed3407_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT academico con TRL sobre GPT-2 |
+| gpt2 (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente integrado | Modelo base de referencia de la misma escala |
+| gpt2-medium (OpenAI) | 355 M | 1024 tokens | MIT | Hugging Face | Escala superior con licencia permisiva |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Alternativa destilada, mas ligera |
 
 La comparativa se limita a modelos de la misma familia y escala porque no hay datos de rendimiento del modelo analizado que permitan contrastarlo con alternativas fuera de GPT-2. Los datos de contexto y licencia de los modelos comparados corresponden a sus configuraciones publicas habituales; los del modelo analizado no estan documentados.
 
@@ -87,7 +87,7 @@ La comparativa se limita a modelos de la misma familia y escala porque no hay da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-oldlex-jpn-ckpt500_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/mjtaa5ax
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -25,7 +25,7 @@ No se dispone de información sobre la longitud de contexto, el proceso de entre
 
 El modelo base es un transformer multimodal de aproximadamente 30,5 mil millones de parámetros que combina un codificador visual con un modelo de lenguaje, según se deduce de la nomenclatura "VL" y de la existencia de un fichero mmproj (proyector multimodal) en el repositorio GGUF. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.).
 
-Esta variante concreta es una cuantización estática generada por mradermacher a partir de los pesos originales en formato HuggingFace (convert_type: hf). El autor indica que también existen cuantizaciones ponderadas/imatrix en un repositorio separado (Rio-3.1-Open-30B-VL-i1-GGUF), que suelen ofrecer mejor calidad por tamaño que las estáticas equivalentes. El proceso de cuantización no altera la arquitectura, solo la precisión numérica de los pesos.
+Esta variante concreta es una cuantización estática generada por mradermacher a partir de los pesos originales en formato Hugging Face (convert_type: hf). El autor indica que también existen cuantizaciones ponderadas/imatrix en un repositorio separado (Rio-3.1-Open-30B-VL-i1-GGUF), que suelen ofrecer mejor calidad por tamaño que las estáticas equivalentes. El proceso de cuantización no altera la arquitectura, solo la precisión numérica de los pesos.
 
 ## Capacidades
 

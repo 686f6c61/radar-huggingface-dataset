@@ -67,8 +67,8 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de uso con unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas de vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
@@ -140,8 +140,8 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantización GGUF](https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Repositorio Hugging Face de la cuantización GGUF](https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio oficial de Qwen3.8-Flash-Next en GitHub](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Documentación de unsloth para Qwen3.8-Flash-Next](https://unsloth.ai/docs/models/qwen3.8-next)
 - [Recetas de vLLM para Qwen3.8-Flash-Next](https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next)

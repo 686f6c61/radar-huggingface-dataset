@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos de terce
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Index-Translate-9B-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Index-Translate-9B-i1-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-9B
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Index-Translate-9B-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Index-Translate-9B-i1-GGUF

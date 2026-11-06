@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario msuiche, no contiene un modelo de lenguaje completo, sino un adaptador ligero basado en técnicas de *activation steering* y *control vectors*. Se trata de una variante modificada del modelo base NVIDIA Nemotron 3.5 Lightning 30B A3B, un modelo de propósito general de razonamiento y chat desarrollado por NVIDIA. El adaptador se describe como *abliterated* y *cyber*, lo que sugiere que está diseñado para eliminar restricciones de alineación y orientar el comportamiento del modelo hacia tareas relacionadas con ciberseguridad.
 
-El modelo base es una arquitectura Mixture of Experts (MoE) de 30.000 millones de parámetros totales, con 3.000 millones de parámetros activos por token. El adaptador, en cambio, contiene únicamente 137.088 parámetros y ocupa 0.0 GB, lo que confirma que no incluye los pesos del modelo original. El acceso al repositorio está restringido (gated) en HuggingFace y requiere aceptar condiciones previas. Los datos de contexto y de benchmarks no están disponibles en la información proporcionada.
+El modelo base es una arquitectura Mixture of Experts (MoE) de 30.000 millones de parámetros totales, con 3.000 millones de parámetros activos por token. El adaptador, en cambio, contiene únicamente 137.088 parámetros y ocupa 0.0 GB, lo que confirma que no incluye los pesos del modelo original. El acceso al repositorio está restringido (gated) en Hugging Face y requiere aceptar condiciones previas. Los datos de contexto y de benchmarks no están disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -59,15 +59,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NVIDIA Nemotron 3.5 Lightning 30B A3B (base) | 30.000 M (3.000 M activos) | no disponible | other | HuggingFace, gated |
-| Adaptador msuiche (este repo) | 137.088 parametros | no disponible | other | HuggingFace, gated |
+| NVIDIA Nemotron 3.5 Lightning 30B A3B (base) | 30.000 M (3.000 M activos) | no disponible | other | Hugging Face, gated |
+| Adaptador msuiche (este repo) | 137.088 parametros | no disponible | other | Hugging Face, gated |
 | Otras variantes abliterated | no disponible | no disponible | no disponible | no disponible |
 
 Este adaptador no es un modelo independiente, por lo que la comparacion directa con otros modelos de la misma categoria no es posible a partir de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en HuggingFace: requiere aceptar condiciones antes de poder descargar el repositorio.
+- Acceso restringido (gated) en Hugging Face: requiere aceptar condiciones antes de poder descargar el repositorio.
 - Licencia `other`: es necesario revisar los terminos de la licencia antes de cualquier uso comercial o redistribucion.
 - No se han publicado benchmarks ni evaluaciones de rendimiento, por lo que no se puede validar su calidad en tareas concretas.
 - El repositorio no contiene los pesos completos del modelo; depende del modelo base NVIDIA Nemotron 3.5 Lightning 30B A3B, que tambien tiene acceso restringido.
@@ -76,6 +76,6 @@ Este adaptador no es un modelo independiente, por lo que la comparacion directa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/msuiche/Nemotron-3.5-Lightning-30B-A3B-abliterated-cyber-GLP-51-L1-51-a1.0
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/msuiche/Nemotron-3.5-Lightning-30B-A3B-abliterated-cyber-GLP-51-L1-51-a1.0
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

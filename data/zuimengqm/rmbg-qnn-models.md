@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zuimengqm/rmbg-qnn-models` es un repositorio publicado en HuggingFace por el usuario zuimengqm el 4 de octubre de 2026, con licencia MIT y, en el momento de redactar esta ficha, cero descargas y cero "likes". La model card asociada esta practicamente vacia: unicamente declara la licencia MIT, sin descripcion funcional, sin pipeline declarado, sin idiomas y sin informacion de entrenamiento. No parece, por tanto, un modelo de lenguaje, sino un paquete de pesos para una tarea concreta de vision por computador.
+`zuimengqm/rmbg-qnn-models` es un repositorio publicado en Hugging Face por el usuario zuimengqm el 4 de octubre de 2026, con licencia MIT y, en el momento de redactar esta ficha, cero descargas y cero "likes". La model card asociada esta practicamente vacia: unicamente declara la licencia MIT, sin descripcion funcional, sin pipeline declarado, sin idiomas y sin informacion de entrenamiento. No parece, por tanto, un modelo de lenguaje, sino un paquete de pesos para una tarea concreta de vision por computador.
 
 El propio identificador del repositorio aporta las dos unicas pistas disponibles. El termino "rmbg" remite a la familia de modelos Remove Background, popularizada por RMBG-1.4 de Bria AI, y el sufijo "qnn" apunta a Qualcomm Neural Network (QNN), el SDK de Qualcomm para ejecutar redes neuronales sobre la NPU Hexagon de los SoC Snapdragon. La cuenta del autor incluye ademas una demo de recorte de imagen ("AI koutu") basada en RMBG-1.4, lo que refuerza esta lectura, aunque ninguna de estas afirmaciones esta confirmada en la documentacion del repositorio.
 
@@ -73,9 +73,9 @@ No se dispone de datos verificados de este repositorio, por lo que no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zuimengqm/rmbg-qnn-models
-- Perfil del autor en HuggingFace: https://huggingface.co/zuimengqm
-- Listado de modelos de HuggingFace: https://huggingface.co/models
+- Repositorio en Hugging Face: https://huggingface.co/zuimengqm/rmbg-qnn-models
+- Perfil del autor en Hugging Face: https://huggingface.co/zuimengqm
+- Listado de modelos de Hugging Face: https://huggingface.co/models
 - Repositorio ClawLabsAI/free-ai-models: https://github.com/ClawLabsAI/free-ai-models
 - Hugging Bay: https://huggingbay.xyz/
 - LM Market Cap, listado de modelos gratuitos: https://lmmarketcap.com/free-ai-models

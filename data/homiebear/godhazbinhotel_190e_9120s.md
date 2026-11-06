@@ -4,9 +4,9 @@
 
 ## Resumen
 
-GodHazbinHotel_190e_9120s es un repositorio publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. El repositorio tiene un tamano de 0,2 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 14 de septiembre de 2026. La model card asociada no contiene mas que la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+GodHazbinHotel_190e_9120s es un repositorio publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. El repositorio tiene un tamano de 0,2 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 14 de septiembre de 2026. La model card asociada no contiene mas que la declaracion de licencia: no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
-No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia. El campo pipeline de HuggingFace figura como no disponible, y los resultados de busqueda web asociados al identificador no guardan ninguna relacion con el modelo (corresponden a piezas de carroceria de camiones Chevrolet de las decadas de 1970 y 1980).
+No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia. El campo pipeline de Hugging Face figura como no disponible, y los resultados de busqueda web asociados al identificador no guardan ninguna relacion con el modelo (corresponden a piezas de carroceria de camiones Chevrolet de las decadas de 1970 y 1980).
 
 Por el patron de nomenclatura del identificador (`190e_9120s`, convencion habitual para 190 epocas y 9120 pasos de entrenamiento) y por el tamano del repositorio, es plausible que se trate de un adaptador tipo LoRA en lugar de un modelo completo, pero esto es una inferencia no confirmada por el autor y no debe tratarse como un dato verificado. En consecuencia, esta ficha se limita a documentar lo que consta y marca explicitamente como no disponible todo aquello que no puede verificarse.
 
@@ -86,7 +86,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/GodHazbinHotel_190e_9120s
+- Hugging Face: https://huggingface.co/Homiebear/GodHazbinHotel_190e_9120s
 - Model card: el repositorio no contiene mas que la declaracion de licencia, sin contenido adicional.
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Busqueda web: los resultados devueltos para este identificador no guardan relacion con el modelo (paginas de recambios de carroceria para camiones Chevrolet y GMC de 1973-1987) y no se incluyen por no ser relevantes.

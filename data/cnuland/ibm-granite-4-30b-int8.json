@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cnuland/ibm-granite-4-30b-int8",
+  "slug": "cnuland-ibm-granite-4-30b-int8",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/ibm-granite-4-30b-int8",
+  "created_at": "2026-11-05T02:44:42.000Z",
+  "updated_at": "2026-11-05T05:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "int8",
+    "w8a8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "rocm",
+    "amd",
+    "conversational",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:quantized:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 30109726688,
+  "storage_human": "30.1 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    }
+  ]
+}

@@ -74,6 +74,6 @@ No disponible. Este repositorio no es un modelo y no tiene categoría funcional 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pmmikhailov/multimodal-generation-review
+- Repositorio en Hugging Face: https://huggingface.co/pmmikhailov/multimodal-generation-review
 - Fichero principal de la nota: reading.md (referenciado en el README del repositorio; no se ha proporcionado URL directa)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, blog, repositorio de codigo o demo asociados.

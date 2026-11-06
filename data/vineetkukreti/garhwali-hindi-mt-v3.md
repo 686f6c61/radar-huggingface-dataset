@@ -2,7 +2,7 @@
 
 ## Resumen
 
-garhwali-hindi-mt-v3 es un modelo de traduccion automatica neuronal entre hindi (hi) y garhwali (gbm), ambos escritos en devanagari. El garhwali es una lengua pahari central de Uttarakhand (India) con recursos digitales muy limitados, y este modelo aborda precisamente ese escenario de bajos recursos apoyandose en un fine-tuning de google/mt5-small. Lo desarrolla el usuario de HuggingFace vineetkukreti y se publica bajo licencia Apache 2.0.
+garhwali-hindi-mt-v3 es un modelo de traduccion automatica neuronal entre hindi (hi) y garhwali (gbm), ambos escritos en devanagari. El garhwali es una lengua pahari central de Uttarakhand (India) con recursos digitales muy limitados, y este modelo aborda precisamente ese escenario de bajos recursos apoyandose en un fine-tuning de google/mt5-small. Lo desarrolla el usuario de Hugging Face vineetkukreti y se publica bajo licencia Apache 2.0.
 
 Tecnicamente es un transformer encoder-decoder de tipo T5 multilingue, con 556.291.456 parametros reales en safetensors y un contrato de tarea explicito: el prompt debe incluir el prefijo `"translate {Source} to {Target}: "`. La version v3 se entreno con 5.000 pares sinteticos distribuidos en 34 lotes tematicos (B-01 a B-34) y obtuvo BLEU 31,8, chrF++ 78,4 y una tasa de fuga de hindi del 11,2% en la evaluacion del propio autor.
 
@@ -41,7 +41,7 @@ Los datos de entrenamiento de v3 son 5.000 pares sinteticos organizados en 34 lo
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - No se documentan capacidades de vision, audio, ni modo de razonamiento explicito (thinking mode).
-- Capacidad multilingue limitada a la pareja hindi-garhwali; el tag de idioma declarado en HuggingFace es unicamente `hi`.
+- Capacidad multilingue limitada a la pareja hindi-garhwali; el tag de idioma declarado en Hugging Face es unicamente `hi`.
 
 ## Casos de uso
 
@@ -108,13 +108,13 @@ No se han identificado en la informacion disponible otros sistemas publicados es
 - Riesgo de alucinacion y de invencion lexica en dominios alejados de los 34 lotes tematicos de entrenamiento; el autor documenta colapso de vocabulario en la version anterior con datos fuera de plantilla.
 - Riesgo de sesgo de plantilla en la evaluacion: en v2 el solapamiento entre plantillas de entrenamiento y de prueba inflo las metricas, y no se publica una verificacion equivalente para v3.
 - Limitacion de longitud: la ventana de trabajo es de 64 tokens en fuente y destino, insuficiente para documentos o conversaciones multi-turno largas.
-- Limitacion idiomatica: solo se declara soporte de hindi en los tags de HuggingFace, y el garhwali aparece en la model card pero no como idioma declarado en el repositorio.
+- Limitacion idiomatica: solo se declara soporte de hindi en los tags de Hugging Face, y el garhwali aparece en la model card pero no como idioma declarado en el repositorio.
 - Adopcion practicamente nula: 5 descargas y 0 likes en el momento de la consulta, sin evaluacion independiente conocida.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor desaconseja explicitamente el uso en produccion por la calidad del modelo, no por la licencia.
 - Para produccion, comprobar las condiciones y la licencia del modelo v4, cuyo repositorio no se ha verificado en esta ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v3
+- Modelo en Hugging Face: https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v3
 - Modelo base google/mt5-small: https://huggingface.co/google/mt5-small
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autoria o su linea de versiones; los unicos enlaces disponibles son los anteriores.

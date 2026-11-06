@@ -93,7 +93,7 @@ Segun el autor, esta version es 2,08 veces mas cercana al BF16 que la NVFP4 de L
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - NVFP4 original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-NVFP4
 - Variante safetensors del mismo autor (vLLM/SGLang): https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4

@@ -88,10 +88,10 @@ Velocidad en un MacBook Air M5, con el modelo cargado una vez, el encoder sobre 
 
 | Modelo | Parametros | Contexto/ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phonon-2 Core ML | ~600 M (derivado de parakeet-tdt-0.6b-v3) | Ventanas de 5/10/15/35 s; locucion hasta 35 s | 5,21 % WER medio (Open ASR Leaderboard, 7 conjuntos en ingles) | CC-BY-4.0 (pesos) / Apache 2.0 (codigo) | HuggingFace, Core ML, Swift y Python |
-| Phonon-2 (base) | ~600 M | no disponible | 5,21 % WER medio (motor MLX) | CC-BY-4.0 (pesos), segun su ficha | HuggingFace; CLI `fermion` en Apple Silicon, Linux, Windows y NVIDIA |
-| NVIDIA parakeet-tdt-0.6b-v3 | ~600 M | no disponible | no disponible en la informacion proporcionada | CC-BY-4.0 (modelo base de NVIDIA) | HuggingFace (NVIDIA) |
-| OpenAI Whisper large-v3 | ~1550 M | 30 s fijos | no disponible en la informacion proporcionada | MIT | HuggingFace, multiple tooling |
+| Phonon-2 Core ML | ~600 M (derivado de parakeet-tdt-0.6b-v3) | Ventanas de 5/10/15/35 s; locucion hasta 35 s | 5,21 % WER medio (Open ASR Leaderboard, 7 conjuntos en ingles) | CC-BY-4.0 (pesos) / Apache 2.0 (codigo) | Hugging Face, Core ML, Swift y Python |
+| Phonon-2 (base) | ~600 M | no disponible | 5,21 % WER medio (motor MLX) | CC-BY-4.0 (pesos), segun su ficha | Hugging Face; CLI `fermion` en Apple Silicon, Linux, Windows y NVIDIA |
+| NVIDIA parakeet-tdt-0.6b-v3 | ~600 M | no disponible | no disponible en la informacion proporcionada | CC-BY-4.0 (modelo base de NVIDIA) | Hugging Face (NVIDIA) |
+| OpenAI Whisper large-v3 | ~1550 M | 30 s fijos | no disponible en la informacion proporcionada | MIT | Hugging Face, multiple tooling |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ Velocidad en un MacBook Air M5, con el modelo cargado una vez, el encoder sobre 
 
 ## Enlaces
 
-- HuggingFace (Phonon-2-CoreML): https://huggingface.co/FermionResearch/Phonon-2-CoreML
+- Hugging Face (Phonon-2-CoreML): https://huggingface.co/FermionResearch/Phonon-2-CoreML
 - Modelo base Phonon-2: https://huggingface.co/FermionResearch/Phonon-2
 - Repositorio del paquete Swift `phonon-coreml`: https://github.com/fermionresearch/phonon-coreml (rama 1.1.1)
 - Producto Detta (app de dictado para Mac): https://www.fermionresearch.com/products/detta

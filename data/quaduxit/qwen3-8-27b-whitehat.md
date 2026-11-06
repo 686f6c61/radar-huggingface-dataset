@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Whitehat (este) | 27.8B | 262K | Seguridad ofensiva/defensiva con rechazos selectivos | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (base) | 27.8B | 262K | Asistente general con guardarrailes estrictos | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B-Whitehat (este) | 27.8B | 262K | Seguridad ofensiva/defensiva con rechazos selectivos | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (base) | 27.8B | 262K | Asistente general con guardarrailes estrictos | Apache-2.0 | Hugging Face |
 | Modelos "uncensored" genericos (p.ej. abliterados) | Variable | Variable | Sin guardarrailes, responden a todo | Variable | Variable |
 
 No se dispone de comparativas directas publicadas con otros modelos especializados en ciberseguridad como WhiteRabbitNeo o similares. La diferencia clave frente al modelo base es que el fine-tune elimina el rechazo en el dominio de seguridad (~40 % de rechazos en tareas legitimas y 100 % en ofensivas, segun el autor) mientras mantiene los limites eticos en daño fisico y CSAM.

@@ -21,7 +21,7 @@ El modelo es relevante como pieza de investigación: es una implementación púb
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors + código propio (`trust_remote_code=True`); repositorio de 1,2 GB |
 
-Parámetros de configuración destacados (`config.json`): `d_model = 1024`, `num_layers = 16`, `ctx_expansion = 2`, `num_heads = 16`, `intermediate_size = 3072`, `pool_heads = 8`, `num_ctx = 8`, `max_piece_bytes = 24`. La model card advierte de forma explícita que el repositorio es «code + cấu hình kiến trúc» y que los pesos deben entrenarse o incorporarse aparte; sin embargo, los metadatos de HuggingFace declaran 299.465.728 parámetros en safetensors y un tamaño de repo de 1,2 GB (coherente con pesos en fp32). Esta discrepancia debe verificarse antes de usar el checkpoint.
+Parámetros de configuración destacados (`config.json`): `d_model = 1024`, `num_layers = 16`, `ctx_expansion = 2`, `num_heads = 16`, `intermediate_size = 3072`, `pool_heads = 8`, `num_ctx = 8`, `max_piece_bytes = 24`. La model card advierte de forma explícita que el repositorio es «code + cấu hình kiến trúc» y que los pesos deben entrenarse o incorporarse aparte; sin embargo, los metadatos de Hugging Face declaran 299.465.728 parámetros en safetensors y un tamaño de repo de 1,2 GB (coherente con pesos en fp32). Esta discrepancia debe verificarse antes de usar el checkpoint.
 
 ## Arquitectura y entrenamiento
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KenT_0.3B_Base | 299,5M | No disponible | Regex + bytes UTF-8, sin vocabulario | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| ByT5-small | ~300M | No disponible en la informacion consultada | Byte-level (sin vocabulario) | Apache 2.0 | HuggingFace, transformers nativo |
-| CANINE-c / CANINE-s | ~130-200M | No disponible en la informacion consultada | Byte-level con atención sobre caracteres | Apache 2.0 | HuggingFace, transformers nativo |
-| Qwen2.5-0.5B | ~494M | 32.768 tokens (dato de conocimiento general, no verificado aqui) | BPE | Apache 2.0 | HuggingFace, amplio soporte de motores de inferencia |
+| KenT_0.3B_Base | 299,5M | No disponible | Regex + bytes UTF-8, sin vocabulario | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| ByT5-small | ~300M | No disponible en la informacion consultada | Byte-level (sin vocabulario) | Apache 2.0 | Hugging Face, transformers nativo |
+| CANINE-c / CANINE-s | ~130-200M | No disponible en la informacion consultada | Byte-level con atención sobre caracteres | Apache 2.0 | Hugging Face, transformers nativo |
+| Qwen2.5-0.5B | ~494M | 32.768 tokens (dato de conocimiento general, no verificado aqui) | BPE | Apache 2.0 | Hugging Face, amplio soporte de motores de inferencia |
 
 KenT se distingue de ByT5 y CANINE por sustituir la self-attention por cross-attention a un contexto comprimido, lo que le da caché de tamaño fijo, y por segmentar con regex en lugar de operar byte a byte (secuencias de entrada mucho más cortas). Frente a un modelo denso BPE del mismo orden de tamaño como Qwen2.5-0.5B, pierde en ecosistema de despliegue (sin GGUF, sin soporte en vLLM) y en cobertura idiomática, y no hay datos públicos que permitan comparar calidad. Los datos de las filas comparativas provienen de conocimiento general y no han sido verificados en la búsqueda web de esta ficha.
 
@@ -90,7 +90,7 @@ KenT se distingue de ByT5 y CANINE por sustituir la self-attention por cross-att
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vi-LAB/KenT_0.3B_Base
+- Modelo en Hugging Face: https://huggingface.co/Vi-LAB/KenT_0.3B_Base
 - Dataset declarado (Wikipedia): https://huggingface.co/datasets/wikimedia/wikipedia
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de código independiente o demo: no disponibles en la información proporcionada

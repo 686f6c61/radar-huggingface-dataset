@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alfred-4b es un ajuste fino del modelo NVIDIA Nemotron-3-Nano-4B-BF16, publicado por el usuario rish-huggingface en HuggingFace. Cuenta con 3.973.556.832 parámetros (aproximadamente 3,97 mil millones) y un repositorio de 8,0 GB con pesos en safetensors, lo que sitúa el checkpoint en precisión BF16. La ficha del repositorio lo etiqueta como `text-generation`, `tool-use`, `function-calling` y `agents`, de modo que su propósito declarado es el uso como modelo de texto pequeño especializado en invocación de herramientas y flujos agénticos.
+alfred-4b es un ajuste fino del modelo NVIDIA Nemotron-3-Nano-4B-BF16, publicado por el usuario rish-huggingface en Hugging Face. Cuenta con 3.973.556.832 parámetros (aproximadamente 3,97 mil millones) y un repositorio de 8,0 GB con pesos en safetensors, lo que sitúa el checkpoint en precisión BF16. La ficha del repositorio lo etiqueta como `text-generation`, `tool-use`, `function-calling` y `agents`, de modo que su propósito declarado es el uso como modelo de texto pequeño especializado en invocación de herramientas y flujos agénticos.
 
 Los tags indican además un post-entrenamiento basado en aprendizaje por refuerzo (`reinforcement-learning`, `grpo`), es decir, un ajuste con GRPO sobre el modelo base de NVIDIA. La arquitectura declarada es `nemotron_h`, la familia híbrida de NVIDIA, y el repositorio requiere `trust_remote_code` (tag `custom_code`). El único idioma declarado es el inglés.
 
@@ -17,11 +17,11 @@ Su relevancia potencial está en el segmento de modelos de ~4B parámetros con o
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (no se publican GGUF ni variantes cuantizadas; solo safetensors) |
 | Idiomas soportados | `en` (inglés); no se declara soporte de castellano |
-| Licencia | `alfred-4b-evaluation-license`, marcada como `license:other` en HuggingFace |
+| Licencia | `alfred-4b-evaluation-license`, marcada como `license:other` en Hugging Face |
 | Formato de pesos | safetensors (BF16, repositorio de 8,0 GB) |
 | Modelo base | `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16` |
 | Tipo de ajuste | fine-tune del modelo base (tag `base_model:finetune`) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Librería | transformers |
 
 ## Arquitectura y entrenamiento
@@ -76,8 +76,8 @@ Nota: los datos de los modelos comparados provienen de sus fichas públicas y de
 
 ## Limitaciones y advertencias
 
-- **Licencia de evaluación**: la licencia `alfred-4b-evaluation-license` se marca como `other` en HuggingFace y su texto completo no está disponible en la información proporcionada. El nombre sugiere un uso limitado a evaluación, por lo que no debe asumirse permiso de uso comercial sin revisar el clausulado.
-- **Acceso restringido**: el repositorio es *gated*; es necesario aceptar condiciones en HuggingFace antes de descargar pesos, lo que condiciona la automatización de pipelines.
+- **Licencia de evaluación**: la licencia `alfred-4b-evaluation-license` se marca como `other` en Hugging Face y su texto completo no está disponible en la información proporcionada. El nombre sugiere un uso limitado a evaluación, por lo que no debe asumirse permiso de uso comercial sin revisar el clausulado.
+- **Acceso restringido**: el repositorio es *gated*; es necesario aceptar condiciones en Hugging Face antes de descargar pesos, lo que condiciona la automatización de pipelines.
 - **Código remoto**: la carga requiere `trust_remote_code=True`, lo que implica ejecutar código del autor del repositorio. Debe auditarse antes de usarlo en entornos productivos o aislarse en un contenedor.
 - **Sin benchmarks publicados**: no existen métricas que respalden las capacidades declaradas de tool calling ni comparaciones con alternativas; el modelo tiene 0 descargas y 1 like, lo que indica ausencia de validación externa.
 - **Solo inglés**: el único idioma declarado es `en`; no hay evidencia de calidad en castellano ni en otros idiomas.
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparados provienen de sus fichas públicas y de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rish-huggingface/alfred-4b
+- Modelo en Hugging Face: https://huggingface.co/rish-huggingface/alfred-4b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 
 No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos adicionales asociados a este modelo.

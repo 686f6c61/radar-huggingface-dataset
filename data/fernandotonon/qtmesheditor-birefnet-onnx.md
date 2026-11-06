@@ -79,8 +79,8 @@ Además se documentan dos comprobaciones de paridad numérica del exportador: er
 
 | Modelo | Formato | Resolucion de entrada | Pixeles de borde ambiguos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fernandotonon/QtMeshEditor-birefnet-onnx | ONNX fp32, opset 17 | 1024x1024 | 0,86 % | MIT | HuggingFace (0 descargas, 1 like) |
-| ZhengPeng7/BiRefNet (modelo base) | PyTorch (checkpoint con pesos fp16) | 1024x1024 | no disponible en esta informacion | MIT | HuggingFace; requiere PyTorch y no es exportable de forma directa |
+| fernandotonon/QtMeshEditor-birefnet-onnx | ONNX fp32, opset 17 | 1024x1024 | 0,86 % | MIT | Hugging Face (0 descargas, 1 like) |
+| ZhengPeng7/BiRefNet (modelo base) | PyTorch (checkpoint con pesos fp16) | 1024x1024 | no disponible en esta informacion | MIT | Hugging Face; requiere PyTorch y no es exportable de forma directa |
 | U2Net (nivel "Fast" en QtMeshEditor) | no disponible | 320x320 | 2,56 % | no disponible | usado por QtMeshEditor como nivel rapido |
 
 No se dispone de datos de otros modelos comparables (por ejemplo, alternativas de matting de alta resolución distintas de las citadas) en la información proporcionada.
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-birefnet-onnx
+- Modelo en Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-birefnet-onnx
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet
 - Repositorio de modelos compartidos de QtMeshEditor: https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Repositorio QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor

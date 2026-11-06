@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khadija123it/gpt2-text-generation` es un checkpoint de la arquitectura GPT-2 subido al Hub de HuggingFace por el usuario `khadija123it`. El recuento real de parametros en los pesos safetensors es de 124.439.808, cifra que coincide con la configuracion estandar de GPT-2 Small (124M), el modelo decoder-only publicado por OpenAI en 2019. No hay evidencia en la informacion disponible de que se trate de un fine-tuning sobre un dataset concreto ni de una modificacion arquitectonica: la model card es la plantilla autogenerada por el Hub y no aporta detalles sobre datos de entrenamiento, objetivos o procedencia de los pesos.
+`khadija123it/gpt2-text-generation` es un checkpoint de la arquitectura GPT-2 subido al Hub de Hugging Face por el usuario `khadija123it`. El recuento real de parametros en los pesos safetensors es de 124.439.808, cifra que coincide con la configuracion estandar de GPT-2 Small (124M), el modelo decoder-only publicado por OpenAI en 2019. No hay evidencia en la informacion disponible de que se trate de un fine-tuning sobre un dataset concreto ni de una modificacion arquitectonica: la model card es la plantilla autogenerada por el Hub y no aporta detalles sobre datos de entrenamiento, objetivos o procedencia de los pesos.
 
 El modelo resuelve la tarea generica de generacion de texto autorregresiva y su relevancia actual es fundamentalmente didactica o de referencia: sirve como baseline ligero, para pruebas de pipelines de `transformers` y `text-generation-inference`, y para experimentos de bajo coste computacional. No debe confundirse con un modelo instruct o chat: no hay indicios de RLHF, DPO ni ajuste por instrucciones.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| khadija123it/gpt2-text-generation | 124,4M | no disponible | no disponible | HuggingFace |
-| openai-community/gpt2 | 124M | 1024 tokens | MIT (segun el repo original de OpenAI) | HuggingFace |
-| openai-community/gpt2-medium | 355M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82M | 1024 tokens | Apache 2.0 | HuggingFace |
+| khadija123it/gpt2-text-generation | 124,4M | no disponible | no disponible | Hugging Face |
+| openai-community/gpt2 | 124M | 1024 tokens | MIT (segun el repo original de OpenAI) | Hugging Face |
+| openai-community/gpt2-medium | 355M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion se limita a parametros, contexto y licencia, porque no hay benchmarks publicados para el modelo analizado. La principal diferencia frente a `openai-community/gpt2` es la trazabilidad: el checkpoint oficial documenta origen, licencia y datos de entrenamiento, mientras que este repo no aporta esa informacion.
 
@@ -90,7 +90,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khadija123it/gpt2-text-generation
+- Modelo en Hugging Face: https://huggingface.co/khadija123it/gpt2-text-generation
 - Paper de referencia GPT-2: https://arxiv.org/abs/1910.09700
 - Checkpoint oficial GPT-2 (OpenAI): https://huggingface.co/openai-community/gpt2
 - Documentacion de `transformers` para GPT-2: https://huggingface.co/docs/transformers/model_doc/gpt2

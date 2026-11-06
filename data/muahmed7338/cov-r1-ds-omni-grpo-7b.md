@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cov-r1-ds-omni-grpo-7b | 6.9B | No disponible | No disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7.3B | 32K | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | HuggingFace |
+| cov-r1-ds-omni-grpo-7b | 6.9B | No disponible | No disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7.3B | 32K | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento para el modelo evaluado, por lo que no es posible comparar numéricamente. Los modelos alternativos tienen documentación completa, licencias claras y benchmarks publicados, lo que los hace más adecuados para uso en producción.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para el modelo evaluado, por lo que no es 
 
 ## Enlaces
 
-- [HuggingFace - muahmed7338/cov-r1-ds-omni-grpo-7b](https://huggingface.co/muahmed7338/cov-r1-ds-omni-grpo-7b)
+- [Hugging Face - muahmed7338/cov-r1-ds-omni-grpo-7b](https://huggingface.co/muahmed7338/cov-r1-ds-omni-grpo-7b)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Repositorio Omni-R1 (referencia, no confirmado como base)](https://github.com/aim-uofa/Omni-R1)

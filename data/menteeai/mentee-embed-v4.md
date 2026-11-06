@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MenteEAI/mentee-embed-v4 es un modelo de embeddings publicado por MenteE AI, una organización centrada en herramientas de NLP multilingüe de código abierto para lenguas subrepresentadas, con especial atención al árabe, el urdu y el inglés. La información pública disponible en HuggingFace es mínima: la model card solo declara la licencia Apache 2.0 y no incluye especificaciones técnicas, idiomas soportados ni documentación adicional. El repositorio se creó el 28 de agosto de 2026 y no registra descargas ni valoraciones.
+MenteEAI/mentee-embed-v4 es un modelo de embeddings publicado por MenteE AI, una organización centrada en herramientas de NLP multilingüe de código abierto para lenguas subrepresentadas, con especial atención al árabe, el urdu y el inglés. La información pública disponible en Hugging Face es mínima: la model card solo declara la licencia Apache 2.0 y no incluye especificaciones técnicas, idiomas soportados ni documentación adicional. El repositorio se creó el 28 de agosto de 2026 y no registra descargas ni valoraciones.
 
 A partir de los resultados de búsqueda web se sabe que la organización ha publicado versiones anteriores de la familia mentee-embed (v1 y v3), ambas con 41 millones de parámetros y dimensiones de embedding de 384, entrenadas desde cero con datos multilingües. Sin embargo, no hay ninguna información específica sobre la versión v4, por lo que no es posible confirmar si mantiene esas características o introduce cambios. Dada la escasez de datos, esta ficha se limita a reflejar lo disponible y marca como "no disponible" todo aquello que no se ha podido verificar.
 
@@ -61,13 +61,13 @@ No se dispone de datos suficientes para establecer una comparativa fiable. La or
 - Riesgo de alucinación o comportamiento inesperado si se utiliza sin conocer sus límites reales.
 - No se ha confirmado el soporte idiomático de v4; aunque la organización trabaja con árabe, urdu e inglés, esta versión podría tener un alcance diferente.
 - La licencia Apache 2.0 permite uso comercial, pero la falta de documentación dificulta su integración responsable en producción.
-- El modelo no registra descargas ni interacciones en HuggingFace, lo que sugiere que es muy reciente o poco adoptado.
+- El modelo no registra descargas ni interacciones en Hugging Face, lo que sugiere que es muy reciente o poco adoptado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MenteEAI/mentee-embed-v4
+- Modelo en Hugging Face: https://huggingface.co/MenteEAI/mentee-embed-v4
 - Página de modelos de MenteE AI: https://www.menteeai.org/embed-models
 - Sitio principal de MenteE AI: https://www.menteeai.org/
-- Perfil de la organización en HuggingFace: https://huggingface.co/MenteEAI/models
+- Perfil de la organización en Hugging Face: https://huggingface.co/MenteEAI/models
 - Repositorio GitHub de la familia mentee-embeddings: https://github.com/MenteE-s/mentee-embeddings
 - Cuenta de X (Twitter) de MenteE AI: https://x.com/menteeaiorg

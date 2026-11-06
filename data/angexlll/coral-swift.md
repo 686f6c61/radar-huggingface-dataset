@@ -24,10 +24,10 @@ Su relevancia es acotada pero concreta: es un punto de partida reproducible para
 | Entrada | imagen RGB; redimensionado bicúbico a 480, recorte central 480 |
 | Normalizacion | media = desviación típica = 0,5 |
 | Libreria declarada | torchvision |
-| Pipeline en HuggingFace | image-classification |
+| Pipeline en Hugging Face | image-classification |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-27 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-27 |
 | Hotkey del minero | 5HpNP2uqmPH9NL4qM2pfV1teEfpJWf5FgUuvXMU5JiKmusSN |
 | Hash on-chain | sha256(model.safetensors \|\| hotkey) = 99184ecc7a9ed8c2fcfc340bb5322fa03a863959a0c216a0423220586057eecf |
 
@@ -104,7 +104,7 @@ No hay datos de rendimiento en la información proporcionada que permitan afirma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/coral-swift
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/coral-swift
 - Subred Perturb (contexto de entrenamiento declarado): https://perturbai.io
 - Referencia de la arquitectura en torchvision (`efficientnet_v2_l`): no se proporciona enlace en la información disponible.
 - No se han encontrado en la búsqueda web enlaces correspondientes a este modelo: los resultados obtenidos apuntan a `modelscope/ms-swift`, a la plataforma Coral de Google y a modelos 3D de Meshy, ninguno relacionado con ANGExllL/coral-swift.

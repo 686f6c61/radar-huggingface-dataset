@@ -78,8 +78,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8 | 9,65 B | 49.152 configurado en servicio | safetensors INT8 W8A8 | no disponible | HuggingFace, 0 descargas |
-| CMKL/MANGO1.5-Qwen3.5-9B (base) | 9,65 B | no disponible | safetensors BF16 | no disponible | HuggingFace |
+| aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8 | 9,65 B | 49.152 configurado en servicio | safetensors INT8 W8A8 | no disponible | Hugging Face, 0 descargas |
+| CMKL/MANGO1.5-Qwen3.5-9B (base) | 9,65 B | no disponible | safetensors BF16 | no disponible | Hugging Face |
 | Otras alternativas de ~8-9 B (Qwen3, Llama 3.1 8B, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante aquí es contra el propio modelo base en BF16: mismo número de parámetros, aproximadamente la mitad de bytes por peso en los módulos cuantizados, y una pérdida de calidad no cuantificada públicamente (el factor de precisión 0,99 reportado es una métrica interna de validación, no una evaluación de benchmarks).
@@ -98,7 +98,7 @@ La comparación relevante aquí es contra el propio modelo base en BF16: mismo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8
+- Modelo en Hugging Face: https://huggingface.co/aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8
 - Modelo base: https://huggingface.co/CMKL/MANGO1.5-Qwen3.5-9B
 - Repositorio con el script de cuantización (`quantize/w8a8_int8.py`): https://github.com/aungthuhein2005/greenmind-hackathon
 - Paper, blog o demo adicionales: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo)

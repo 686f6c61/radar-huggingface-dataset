@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Wan2.2-I2V-A14B | 14B activos (MoE) | 480P / 720P @24fps | Apache 2.0 | Abierto (HuggingFace, ModelScope) | MoE, estética cinematográfica, soporte Diffusers |
+| Wan2.2-I2V-A14B | 14B activos (MoE) | 480P / 720P @24fps | Apache 2.0 | Abierto (Hugging Face, ModelScope) | MoE, estética cinematográfica, soporte Diffusers |
 | Wan2.1-I2V-A14B | 14B activos (MoE) | 480P / 720P | Apache 2.0 | Abierto | Versión anterior, sin las mejoras de datos y MoE de Wan2.2 |
 | CogVideoX-5B | 5B | 720P @8fps | Apache 2.0 | Abierto | Modelo denso, menor calidad de movimiento, requiere más VRAM para la misma resolución |
 | Open-Sora 2.0 | 11B | 720P | Apache 2.0 | Abierto | Modelo denso, sin MoE, menor control estético |
@@ -81,8 +81,8 @@ La comparativa se basa en características públicas; no se dispone de benchmark
 
 ## Enlaces
 
-- [HuggingFace (modelo original Wan-AI)](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B)
-- [HuggingFace (espejo dongjidaoyi)](https://huggingface.co/dongjidaoyi/Wan2.2-I2V-A14B)
+- [Hugging Face (modelo original Wan-AI)](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B)
+- [Hugging Face (espejo dongjidaoyi)](https://huggingface.co/dongjidaoyi/Wan2.2-I2V-A14B)
 - [ModelScope](https://modelscope.cn/models/Wan-AI/Wan2.2-I2V-A14B/summary?version=bf16)
 - [GitHub Wan2.2](https://github.com/Wan-Video/Wan2.2)
 - [Technical Report (arXiv)](https://arxiv.org/abs/2503.20314)

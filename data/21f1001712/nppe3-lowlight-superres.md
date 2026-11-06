@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria. La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/21f1001712/nppe3-lowlight-superres
+- Hugging Face: https://huggingface.co/21f1001712/nppe3-lowlight-superres
 - Notebook de GitHub (referencia externa): https://github.com/sahildev-ai1/iitm-dlp-kaggle-competitions/blob/main/notebooks/01_nppe3_lowlight_denoising_4xsr_rrdb.ipynb
 - Repositorio de GitHub (referencia externa): https://github.com/LokeshTiwari004/dlp_nppe3

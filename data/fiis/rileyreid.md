@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FIIS/rileyreid | LoRA DreamBooth de identidad | krea/Krea-2-Raw (inferencia sobre Krea-2-Turbo) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| FIIS/rileyreid | LoRA DreamBooth de identidad | krea/Krea-2-Raw (inferencia sobre Krea-2-Turbo) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | LoRA de identidad sobre SDXL | LoRA DreamBooth | SDXL | no disponible | variable segun autor | no disponible |
 | LoRA de identidad sobre FLUX.1 | LoRA DreamBooth | FLUX.1 | no disponible | variable segun autor | no disponible |
 | Fine-tuning completo de identidad | modelo completo ajustado | variable | no disponible | variable segun autor | no disponible |
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FIIS/rileyreid
+- Modelo en Hugging Face: https://huggingface.co/FIIS/rileyreid
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base empleado en inferencia (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers (pipeline `Krea2Pipeline`): https://github.com/huggingface/diffusers

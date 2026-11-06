@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `praxisresearch/hf_seed_36b_em_unpop_medcorr_1` es un adaptador LoRA publicado por el usuario praxisresearch en HuggingFace. No se trata de un modelo completo, sino de un adaptador PEFT entrenado con Axolotl 0.18.0 sobre un modelo base cuya ruta se declara como `models/hf_seed_36b_em_unpop_1/merged`, un identificador local que no apunta a ningun repositorio publico verificable. El repositorio ocupa 1,2 GB y contiene unicamente los pesos del adaptador en formato safetensors.
+El modelo `praxisresearch/hf_seed_36b_em_unpop_medcorr_1` es un adaptador LoRA publicado por el usuario praxisresearch en Hugging Face. No se trata de un modelo completo, sino de un adaptador PEFT entrenado con Axolotl 0.18.0 sobre un modelo base cuya ruta se declara como `models/hf_seed_36b_em_unpop_1/merged`, un identificador local que no apunta a ningun repositorio publico verificable. El repositorio ocupa 1,2 GB y contiene unicamente los pesos del adaptador en formato safetensors.
 
 El ajuste se ha realizado sobre el fichero `data/finetuning/correct/health_correct_simplified.jsonl`, un dataset conversacional de correccion en el ambito sanitario, con 125 pasos de entrenamiento, una sola epoca y una longitud de secuencia de 2048 tokens. El nombre del modelo sugiere un modelo base de aproximadamente 36.000 millones de parametros, aunque este dato no aparece confirmado en ningun campo estructurado de la ficha.
 
@@ -90,7 +90,7 @@ No disponible. No es posible construir una comparativa fiable porque el modelo b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_medcorr_1
+- Hugging Face: https://huggingface.co/praxisresearch/hf_seed_36b_em_unpop_medcorr_1
 - Axolotl (framework de entrenamiento citado en la model card): https://github.com/axolotl-ai-cloud/axolotl
 - Modelo base `models/hf_seed_36b_em_unpop_1/merged`: no disponible como recurso publico; es una ruta local
 - Dataset `data/finetuning/correct/health_correct_simplified.jsonl`: no disponible como recurso publico

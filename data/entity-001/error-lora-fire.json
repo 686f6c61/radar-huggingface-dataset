@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "entity-001/Error-lora-fire",
+  "slug": "entity-001-error-lora-fire",
+  "author": "entity-001",
+  "url": "https://huggingface.co/entity-001/Error-lora-fire",
+  "created_at": "2026-11-06T09:20:56.000Z",
+  "updated_at": "2026-11-06T09:22:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima-Base-v1.0-Diffusers",
+    "base_model:adapter:circlestone-labs/Anima-Base-v1.0-Diffusers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139498381,
+  "storage_human": "139 MB",
+  "base_model": "circlestone-labs/Anima-Base-v1.0-Diffusers",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "404 - \" {\\\"error\\\":\\\"Model XLabs-AI/flux-RealismLora does not exist ...",
+      "url": "https://discuss.huggingface.co/t/404-error-model-xlabs-ai-flux-realismlora-does-not-exist/150363/6",
+      "snippet": "I am using model via hugging inference API in n8n , it was working fine till yesterday, now its giving me this response: 404 - “ {\"error\":\"Model XLabs-AI/flux-RealismLora does not exist\"}” Thanks in advance"
+    },
+    {
+      "title": "Import custom models into Microsoft Foundry with Fireworks - Microsoft ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/import-custom-models",
+      "snippet": "Learn how to import, register, and deploy custom model weights, LoRA adapters, and speculative decoding draft models in Microsoft Foundry using the Fireworks inference runtime."
+    }
+  ]
+}

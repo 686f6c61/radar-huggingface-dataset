@@ -72,7 +72,7 @@ La campaña dementor incluye otros adaptadores con la misma metodología pero di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_gemma-4-31b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_gemma-4-31b_seed42
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6

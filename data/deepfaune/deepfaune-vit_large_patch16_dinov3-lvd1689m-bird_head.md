@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepFaune ViT-Large DINOv3 bird_head | ViT-Large patch16 DINOv3 | no disponible | no aplica | CC-BY-SA 4.0 | HuggingFace (repo de 0.0 GB) |
-| DeepFaune ViT-Large DINOv3 (modelo base) | ViT-Large patch16 DINOv3 | no disponible | no aplica | no disponible en la información | HuggingFace |
+| DeepFaune ViT-Large DINOv3 bird_head | ViT-Large patch16 DINOv3 | no disponible | no aplica | CC-BY-SA 4.0 | Hugging Face (repo de 0.0 GB) |
+| DeepFaune ViT-Large DINOv3 (modelo base) | ViT-Large patch16 DINOv3 | no disponible | no aplica | no disponible en la información | Hugging Face |
 | Alternativas de clasificación de fauna en cámaras trampa | no disponible | no disponible | no aplica | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con otros modelos de clasificación de especies en fototrampeo.
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m-bird_head
+- Hugging Face: https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m-bird_head
 - Modelo base: https://huggingface.co/DeepFaune/deepfaune-vit_large_patch16_dinov3.lvd1689m
 - Documentación de DeepFaune: https://deepfaune.pages.math.cnrs.fr/software/
 - Sitio oficial DeepFaune (FR): https://www.deepfaune.cnrs.fr/

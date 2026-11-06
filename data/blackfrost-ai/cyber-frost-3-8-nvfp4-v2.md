@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBER-FROST-3.8-NVFP4-V2 | 119.602.003.859 segun safetensors (aproximadamente 180B en la arquitectura logica de origen) | 262.144 tokens | Mixta: NVFP4 W4A4 en expertos enrutados, BF16 en el resto | qwen-community-license-1.0 | Publico en HuggingFace; 0 descargas, 2 likes en el momento del analisis |
-| CYBER-FROST-3.8-BF16 (padre) | aproximadamente 180B en la arquitectura logica declarada | 262.144 tokens (configurado en la variante derivada) | BF16 | qwen-community-license-1.0 | Publico en HuggingFace |
-| CYBER-FROST-3.8-NVFP4 (predecesor, antes BLACKFROST-3.8-ICED-NVFP4-W4A4) | no disponible | 262.144 tokens (segun la variante derivada) | NVFP4 W4A4 con escalas gate/up independientes | qwen-community-license-1.0 | Publico en HuggingFace; presenta el problema de compatibilidad de escalas corregido en V2 |
+| CYBER-FROST-3.8-NVFP4-V2 | 119.602.003.859 segun safetensors (aproximadamente 180B en la arquitectura logica de origen) | 262.144 tokens | Mixta: NVFP4 W4A4 en expertos enrutados, BF16 en el resto | qwen-community-license-1.0 | Publico en Hugging Face; 0 descargas, 2 likes en el momento del analisis |
+| CYBER-FROST-3.8-BF16 (padre) | aproximadamente 180B en la arquitectura logica declarada | 262.144 tokens (configurado en la variante derivada) | BF16 | qwen-community-license-1.0 | Publico en Hugging Face |
+| CYBER-FROST-3.8-NVFP4 (predecesor, antes BLACKFROST-3.8-ICED-NVFP4-W4A4) | no disponible | 262.144 tokens (segun la variante derivada) | NVFP4 W4A4 con escalas gate/up independientes | qwen-community-license-1.0 | Publico en Hugging Face; presenta el problema de compatibilidad de escalas corregido en V2 |
 
 No hay datos de benchmarks que permitan comparar rendimiento con alternativas de terceros de la misma categoria. No disponible.
 
@@ -93,7 +93,7 @@ No hay datos de benchmarks que permitan comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4-V2
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4-V2
 - Modelo base en BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Release NVFP4 predecesora: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4
 - Discusion donde se identifico el problema de escalas: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4/discussions/1

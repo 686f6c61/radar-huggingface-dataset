@@ -86,7 +86,7 @@ La ventaja principal de este modelo frente a las alternativas es que ya viene af
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/qwen25-1.5b-tools-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iromu/qwen25-1.5b-tools-GGUF
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Modelo original Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo Qwen2.5-1.5B-Instruct (oficial): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

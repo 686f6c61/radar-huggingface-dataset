@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lookbe/Qwen3-TTS-GGUF
+- Hugging Face: https://huggingface.co/lookbe/Qwen3-TTS-GGUF
 - Repo de qwentts.cpp: https://github.com/ServeurpersoCom/qwentts.cpp
 - Repo oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Repo alternativo de GGUF (HaujetZhao): https://github.com/HaujetZhao/Qwen3-TTS-GGUF

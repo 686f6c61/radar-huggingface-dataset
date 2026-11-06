@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/dpo_oasst1_qwen3.6-27b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_phi-4_seed42)
+- [Hugging Face - dementor-research/dpo_oasst1_qwen3.6-27b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_phi-4_seed42)
 - [Tinker - Thinking Machines](https://thinkingmachines.ai/tinker/)

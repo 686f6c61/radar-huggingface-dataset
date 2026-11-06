@@ -34,7 +34,7 @@ Este repositorio no aporta entrenamiento nuevo: es una cuantizacion de posentren
 
 ## Capacidades
 
-- Generacion de texto conversacional (etiqueta `conversational` en HuggingFace).
+- Generacion de texto conversacional (etiqueta `conversational` en Hugging Face).
 - Razonamiento con cadena de pensamiento nativa: requiere la plantilla `<｜begin of sentence｜><｜User｜>{prompt}<｜Assistant｜><think>` para activar el modo de pensamiento interno.
 - Matematicas de nivel escolar: 88,0 % en GSM8K con CoT nativo (22 de 25 problemas).
 - Matematicas de competicion tipo olimpiada: 30,0 % (3 de 10) en IQ3_XXS y 40,0 % (4 de 10) en la variante Q4_K_M.
@@ -104,11 +104,11 @@ Comparativa con alternativas externas: no disponible.
 - Contexto limitado en los ejemplos: los comandos de uso fijan `-c 4096`, muy por debajo de lo habitual en modelos actuales, lo que restringe tareas con documentos largos.
 - Soporte de tool calling y agentes no confirmado: no se documenta integracion con function calling ni flujos multi-paso con herramientas.
 - Adopcion nula: 0 descargas y 0 likes, sin comunidad que haya reproducido los resultados ni reportado incidencias.
-- Inconsistencia de metadatos: la fecha de creacion registrada en HuggingFace es 2026-09-29, posterior a la fecha de actualizacion del propio repositorio, lo que conviene tratar con cautela.
+- Inconsistencia de metadatos: la fecha de creacion registrada en Hugging Face es 2026-09-29, posterior a la fecha de actualizacion del propio repositorio, lo que conviene tratar con cautela.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero al derivar del modelo DeepSeek-R1-Distill-Qwen-1.5B conviene revisar tambien las condiciones del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ3_XXS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

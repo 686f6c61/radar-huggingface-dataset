@@ -85,7 +85,7 @@ El modelo Hindi medium mencionado en la model card comparte la misma arquitectur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-kannada-medium-q5_1
+- Modelo en Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-kannada-medium-q5_1
 - Modelo base: https://huggingface.co/vasista22/whisper-kannada-medium
 - Modelo small del mismo autor: https://huggingface.co/bhaskaro/ainotes-whisper-kannada-q5_1
-- Perfil del autor en HuggingFace: https://huggingface.co/bhaskaro
+- Perfil del autor en Hugging Face: https://huggingface.co/bhaskaro

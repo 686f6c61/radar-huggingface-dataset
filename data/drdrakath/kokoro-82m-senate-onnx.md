@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento (MOS, latencia) entre estos t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DrDrakath/kokoro-82m-senate-onnx
+- Repositorio en Hugging Face: https://huggingface.co/DrDrakath/kokoro-82m-senate-onnx
 - Modelo base en ONNX: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Export ONNX anterior: https://huggingface.co/onnx-community/Kokoro-82M-ONNX
 - Modelo original de hexgrad: https://huggingface.co/hexgrad/Kokoro-82M

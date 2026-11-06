@@ -90,7 +90,7 @@ No se dispone de comparativas directas ni de resultados de benchmarks que enfren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-1B-Pashto-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-1B-Pashto-GGUF
 - Modelo base: https://huggingface.co/nassimjp/MiniCPM5-1B-Pashto
 - Pagina resumen de cuantizaciones del autor: https://hf.tst.eu/model#MiniCPM5-1B-Pashto-GGUF
 - Guia de uso de archivos GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

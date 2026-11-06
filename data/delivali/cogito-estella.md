@@ -81,6 +81,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeliVali/cogito-estella
+- Hugging Face: https://huggingface.co/DeliVali/cogito-estella
 - Repositorio GitHub (código, tests y quickstart): https://github.com/DeliVali/cogito-estella
-- Perfil del autor en HuggingFace: https://huggingface.co/DeliVali
+- Perfil del autor en Hugging Face: https://huggingface.co/DeliVali

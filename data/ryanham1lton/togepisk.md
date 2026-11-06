@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TogepiSK es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton (identificado en resultados de busqueda como Ryan James Hamilton). El repositorio, con identificador `Ryanham1lton/TogepiSK`, se publico el 8 de octubre de 2026 y se actualizo el mismo dia, con un tamano de repositorio de aproximadamente 0,1 GB. La model card asociada no contiene mas que la declaracion de licencia `cc-by-4.0`, sin descripcion del modelo, arquitectura ni proposito.
+TogepiSK es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton (identificado en resultados de busqueda como Ryan James Hamilton). El repositorio, con identificador `Ryanham1lton/TogepiSK`, se publico el 8 de octubre de 2026 y se actualizo el mismo dia, con un tamano de repositorio de aproximadamente 0,1 GB. La model card asociada no contiene mas que la declaracion de licencia `cc-by-4.0`, sin descripcion del modelo, arquitectura ni proposito.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado ni idiomas especificados, y no aparece informacion adicional en los resultados de busqueda web mas alla del perfil del autor y de otros repositorios suyos (por ejemplo, `Ryanham1lton/KipJT`). No se dispone de documentacion tecnica, paper, blog ni anuncio que describa el modelo.
 
@@ -80,8 +80,8 @@ No disponible. No hay informacion suficiente sobre el modelo (tamano, arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/TogepiSK
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/TogepiSK
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Otro repositorio del autor (KipJT): https://huggingface.co/Ryanham1lton/KipJT
 - Listado de modelos del autor en Essa Mamdani: https://essamamdani.com/ai-models/company/ryanham1lton
 - Perfil del autor en Storyteller.ai: https://storyteller.ai/profile/ryanham1lton

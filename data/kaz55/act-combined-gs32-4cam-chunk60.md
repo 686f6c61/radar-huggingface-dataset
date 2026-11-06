@@ -62,8 +62,8 @@ La siguiente tabla compara este modelo con otros del mismo barrido de ablación.
 
 | Modelo | Resolución GelSight | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act-combined-gs32-4cam-chunk60 | 32x24 | 51.668.634 | no disponible | HuggingFace |
-| act-newcable-combined-4cam-chunk60 | 500x375 | no disponible | no disponible | HuggingFace |
+| act-combined-gs32-4cam-chunk60 | 32x24 | 51.668.634 | no disponible | Hugging Face |
+| act-newcable-combined-4cam-chunk60 | 500x375 | no disponible | no disponible | Hugging Face |
 | act-combined-gs64-4cam-chunk60 | 64x48 | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

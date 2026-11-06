@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AbdelrahmanAkl/distilbert-squad-qa` es un modelo de pregunta-respuesta extractiva (extractive question answering) publicado en HuggingFace por el usuario AbdelrahmanAkl. Se trata de un ajuste fino de la arquitectura DistilBERT, la version destilada de BERT, sobre el conjunto de datos SQuAD, orientado a localizar el fragmento de texto que responde a una pregunta dentro de un pasaje de contexto. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con un total declarado de 66.364.418 parametros, coherente con la escala de DistilBERT-base.
+`AbdelrahmanAkl/distilbert-squad-qa` es un modelo de pregunta-respuesta extractiva (extractive question answering) publicado en Hugging Face por el usuario AbdelrahmanAkl. Se trata de un ajuste fino de la arquitectura DistilBERT, la version destilada de BERT, sobre el conjunto de datos SQuAD, orientado a localizar el fragmento de texto que responde a una pregunta dentro de un pasaje de contexto. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors con un total declarado de 66.364.418 parametros, coherente con la escala de DistilBERT-base.
 
 La relevancia de este tipo de modelo reside en su coste computacional muy bajo: al contar con unos 66 millones de parametros y una arquitectura transformer encoder de tipo bidireccional, puede ejecutarse en CPU o en GPUs de gama de entrada con latencias de milisegundos. Esto lo convierte en una pieza util como componente "reader" en pipelines de recuperacion aumentada (RAG), sobre todo cuando el presupuesto de hardware es limitado y no se necesita generacion de texto libre.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna es suficiente; una RTX 3060, RTX 4090, T4, L4 o A100 estan sobredimensionadas para este modelo. El cuello de botella sera el throughput del servidor, no la memoria.
 - Ejecucion en CPU: viable y habitual en este tamano; puede servir peticiones en CPU con latencias del orden de decenas de milisegundos por pasaje, aunque no se dispone de mediciones concretas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en dispositivos de borde.
-- Opciones de despliegue: HuggingFace Transformers con `pipeline("question-answering")`, exportacion a ONNX Runtime para inferencia optimizada, TorchScript, o servidores como TGI y vLLM (compatibles con arquitecturas encoder, aunque su ventaja principal esta en modelos generativos). No se incluyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
+- Opciones de despliegue: Hugging Face Transformers con `pipeline("question-answering")`, exportacion a ONNX Runtime para inferencia optimizada, TorchScript, o servidores como TGI y vLLM (compatibles con arquitecturas encoder, aunque su ventaja principal esta en modelos generativos). No se incluyen pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones ni existe informacion de referencia en el repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbdelrahmanAkl/distilbert-squad-qa | 66,4 M | no disponible (arquitectura limita a 512 tokens) | QA extractiva (presuntamente SQuAD) | apache-2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased-distilled-squad | 66 M aprox. | 512 tokens | QA extractiva sobre SQuAD v1.1 | apache-2.0 | HuggingFace, ampliamente usado |
-| bert-base-uncased ajustado a SQuAD | 110 M aprox. | 512 tokens | QA extractiva sobre SQuAD | apache-2.0 | HuggingFace |
-| MiniLM / TinyBERT ajustados a QA | 6-33 M aprox. | 256-512 tokens | QA extractiva | MIT / apache-2.0 segun variante | HuggingFace |
+| AbdelrahmanAkl/distilbert-squad-qa | 66,4 M | no disponible (arquitectura limita a 512 tokens) | QA extractiva (presuntamente SQuAD) | apache-2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased-distilled-squad | 66 M aprox. | 512 tokens | QA extractiva sobre SQuAD v1.1 | apache-2.0 | Hugging Face, ampliamente usado |
+| bert-base-uncased ajustado a SQuAD | 110 M aprox. | 512 tokens | QA extractiva sobre SQuAD | apache-2.0 | Hugging Face |
+| MiniLM / TinyBERT ajustados a QA | 6-33 M aprox. | 256-512 tokens | QA extractiva | MIT / apache-2.0 segun variante | Hugging Face |
 
 La comparacion de rendimiento entre estos modelos no puede realizarse con los datos disponibles, ya que el repositorio analizado no publica metricas de Exact Match ni F1. Las cifras de parametros y contexto de las alternativas corresponden a caracteristicas publicas conocidas de esas familias de modelos, no a evaluaciones realizadas sobre este repositorio concreto.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento entre estos modelos no puede realizarse con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanAkl/distilbert-squad-qa
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanAkl/distilbert-squad-qa
 - Paper de DistilBERT: https://arxiv.org/abs/1910.01108
 - Dataset SQuAD: https://rajpurkar.github.io/SQuAD-explorer/
 - Documentacion de transformers para question answering: https://huggingface.co/docs/transformers/tasks/question_answering

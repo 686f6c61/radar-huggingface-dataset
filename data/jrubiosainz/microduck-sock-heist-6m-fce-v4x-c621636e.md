@@ -6,7 +6,7 @@ Microduck Sock Heist 6m FCE v4x-c621636e es una política de control robótico e
 
 La relevancia de esta ficha es acotada: se trata de una entrada de competición con cero descargas y cero likes en el momento de la consulta, con un tamaño de repositorio de 0,0 GB y un fichero de política de 1.209.745 bytes. Su interés técnico reside en el método (búsqueda de cola con CMA-ES separable sobre una política de terceros) y en la trazabilidad de linaje que documenta el autor, más que en capacidades generales de IA.
 
-El modelo no declara licencia para el conjunto de los pesos, no declara idiomas soportados y el autor advierte explícitamente de que no debe ejecutarse en un robot físico. Toda la información disponible proviene de la model card y de los metadatos de HuggingFace.
+El modelo no declara licencia para el conjunto de los pesos, no declara idiomas soportados y el autor advierte explícitamente de que no debe ejecutarse en un robot físico. Toda la información disponible proviene de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -79,10 +79,10 @@ Cinco metas completadas; media 4,887 s y total 4887 ticks, frente a los 4888 tic
 
 | Modelo | Parametros | Contexto | Resultado publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e | no disponible (1,2 MB ONNX) | no aplica | 4887 ticks totales, media 4,887 s (local, in-sample) | no disponible | HuggingFace, 0 descargas |
-| rumezhak/microduck-sock-heist-composite-v4 | no disponible | no aplica | 4888 ticks totales (base directo) | no disponible | HuggingFace |
-| rumezhak/microduck-sock-heist-composite-v3 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| a1rb4Ck/microduck-heist | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace (commit `94cd2cfe`) |
+| jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e | no disponible (1,2 MB ONNX) | no aplica | 4887 ticks totales, media 4,887 s (local, in-sample) | no disponible | Hugging Face, 0 descargas |
+| rumezhak/microduck-sock-heist-composite-v4 | no disponible | no aplica | 4888 ticks totales (base directo) | no disponible | Hugging Face |
+| rumezhak/microduck-sock-heist-composite-v3 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| a1rb4Ck/microduck-heist | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face (commit `94cd2cfe`) |
 
 No se dispone de datos de benchmarks comparables de otros modelos de la misma categoría en la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-v4x-c621636e
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v4/tree/f0045604b1687141f310ec727dabd515ba71ba5e
 - Predecesor composite-v3: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v3/tree/065056e8a8ad8e78cda38110f7717828e0d30475
 - Repositorio de layout de grafo y lookup (Apache-2.0): https://huggingface.co/a1rb4Ck/microduck-heist/tree/94cd2cfeb57a4ece561a3d320e233f442238cb81

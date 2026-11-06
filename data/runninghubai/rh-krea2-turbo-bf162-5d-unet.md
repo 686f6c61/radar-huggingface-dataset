@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-krea2-turbo-bf162.5d-unet es un fichero de pesos de tipo UNET para edición y generación de imagen a partir de texto (pipeline `image-text-to-image`), publicado por RunningHubAI en nombre de su autor en HuggingFace. No se trata de un modelo de lenguaje: es un componente de difusión que se carga dentro de un grafo de ComfyUI, junto con el resto de piezas del pipeline (VAE, codificadores de texto y scheduler) que no se distribuyen en este repositorio. El autor indica que está afinado a partir de "krea2", y el nombre del fichero, `Krea2-Turbo-bf162.5D半写实mix.safetensors`, apunta a un ajuste fino de estética "2.5D semirrealista" en precisión bf16.
+rh-krea2-turbo-bf162.5d-unet es un fichero de pesos de tipo UNET para edición y generación de imagen a partir de texto (pipeline `image-text-to-image`), publicado por RunningHubAI en nombre de su autor en Hugging Face. No se trata de un modelo de lenguaje: es un componente de difusión que se carga dentro de un grafo de ComfyUI, junto con el resto de piezas del pipeline (VAE, codificadores de texto y scheduler) que no se distribuyen en este repositorio. El autor indica que está afinado a partir de "krea2", y el nombre del fichero, `Krea2-Turbo-bf162.5D半写实mix.safetensors`, apunta a un ajuste fino de estética "2.5D semirrealista" en precisión bf16.
 
 El repositorio ocupa 26,3 GB y contiene un único fichero de pesos de 25.063 MiB (unos 24,5 GiB). A razón de 2 bytes por parámetro en bf16, ese tamaño equivale aproximadamente a 13.000 millones de parámetros, una cifra coherente con los UNET de difusión de gran tamaño usados hoy en edición de imagen; se trata, en cualquier caso, de una estimación aritmética y no de un dato declarado por el autor.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-krea2-turbo-bf162.5d-unet | UNET de edicion de imagen, finetune de krea2 | ~13.000 M (estimado) | no disponible | no disponible | HuggingFace, RunningHub, ComfyUI |
+| rh-krea2-turbo-bf162.5d-unet | UNET de edicion de imagen, finetune de krea2 | ~13.000 M (estimado) | no disponible | no disponible | Hugging Face, RunningHub, ComfyUI |
 | krea2 (modelo base declarado) | UNET de edicion de imagen | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otros UNET de edicion de imagen para ComfyUI | UNET de edicion de imagen | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf162.5d-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf162.5d-unet
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2087032433257512961
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/2065407779816169474
 - Flujo de trabajo y aplicación asociados: https://www.runninghub.ai/zh-cn/post/2089652176921927681

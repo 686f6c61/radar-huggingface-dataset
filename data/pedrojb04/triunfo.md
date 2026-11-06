@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Triunfo (pedrojb04) | 1.5B base + 4,3M LoRA | 2.048 en entrenamiento | Tool calling especializado | Apache 2.0 | HuggingFace (16 descargas) |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 (segun ficha oficial de Qwen) | Instruccion general | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32.768 (segun ficha oficial de Qwen) | Instruccion general | Apache 2.0 | HuggingFace |
-| Hermes-2-Pro-Mistral-7B | 7B | 32.768 | Tool calling y JSON mode | Apache 2.0 | HuggingFace |
+| Triunfo (pedrojb04) | 1.5B base + 4,3M LoRA | 2.048 en entrenamiento | Tool calling especializado | Apache 2.0 | Hugging Face (16 descargas) |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 (segun ficha oficial de Qwen) | Instruccion general | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32.768 (segun ficha oficial de Qwen) | Instruccion general | Apache 2.0 | Hugging Face |
+| Hermes-2-Pro-Mistral-7B | 7B | 32.768 | Tool calling y JSON mode | Apache 2.0 | Hugging Face |
 
 La comparativa con modelos de tool calling dedicados de mayor tamano no esta disponible en la informacion proporcionada. Triunfo se posiciona como una alternativa de muy bajo coste frente a modelos genericos mas grandes, a costa de un contexto de entrenamiento mas corto y de un rendimiento en correspondencia exacta del 63,06% en su propio test.
 
@@ -103,7 +103,7 @@ La comparativa con modelos de tool calling dedicados de mayor tamano no esta dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedrojb04/triunfo
+- Hugging Face: https://huggingface.co/pedrojb04/triunfo
 - Repositorio GitHub (codigo, datos y evaluacion): https://github.com/pedrojbDev/triunfo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset ToolACE: https://huggingface.co/datasets/Team-ACE/ToolACE

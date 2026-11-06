@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado en HuggingFace por el usuario lugman-madhiai. Cuenta con 2.274.069.824 parametros (2,27 B) y se distribuye bajo licencia Apache 2.0. Su pipeline declarado es image-text-to-text, lo que apunta a que la familia base puede procesar entradas conjuntas de imagen y texto, aunque la model card no detalla las capacidades multimodales especificas de este ajuste.
+El modelo `lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado en Hugging Face por el usuario lugman-madhiai. Cuenta con 2.274.069.824 parametros (2,27 B) y se distribuye bajo licencia Apache 2.0. Su pipeline declarado es image-text-to-text, lo que apunta a que la familia base puede procesar entradas conjuntas de imagen y texto, aunque la model card no detalla las capacidades multimodales especificas de este ajuste.
 
-El nombre del modelo sugiere una especializacion como agente de busqueda (search agent) mediante aprendizaje supervisado, si bien el autor no documenta el dataset, el numero de tokens ni el proceso de alineacion mas alla de indicar que se entreno con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad de entrenamiento de 2x segun sus propias notas. La model card es minima y no incluye resultados de evaluacion.
+El nombre del modelo sugiere una especializacion como agente de busqueda (search agent) mediante aprendizaje supervisado, si bien el autor no documenta el dataset, el numero de tokens ni el proceso de alineacion mas alla de indicar que se entreno con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad de entrenamiento de 2x segun sus propias notas. La model card es minima y no incluye resultados de evaluacion.
 
 Su relevancia radica en ser un modelo pequeno de 2,27 B orientado a tareas de agente, lo que permite desplegarlo en hardware de consumo o en el borde. No obstante, en el momento de redactar esta ficha no registra descargas ni valoraciones, por lo que no existe evidencia publica de su rendimiento real.
 
@@ -31,7 +31,7 @@ Su relevancia radica en ser un modelo pequeno de 2,27 B orientado a tareas de ag
 
 La informacion disponible indica que se trata de un transformer perteneciente a la familia Qwen3.5, identificado con la etiqueta `qwen3_5`, con 2.274.069.824 parametros totales y un pipeline image-text-to-text. Esto implica una arquitectura capaz de recibir imagenes y texto, aunque no se especifica el mecanismo de fusion multimodal, el codificador visual ni la longitud de contexto empleada.
 
-El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre `Qwen/Qwen3.5-2B`, realizado con Unsloth y la libreria TRL de HuggingFace, segun la propia model card. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. Tampoco se detallan los hiperparametros del ajuste.
+El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre `Qwen/Qwen3.5-2B`, realizado con Unsloth y la libreria TRL de Hugging Face, segun la propia model card. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. Tampoco se detallan los hiperparametros del ajuste.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-2B-SearchAgent-SFT-01 | 2,27 B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2,27 B | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Llama-3.2-3B | 3,21 B | 128k | Llama 3.2 Community License | HuggingFace / Meta |
-| Gemma-2-2B | 2,61 B | 8k | Gemma Terms of Use | HuggingFace / Google |
+| Qwen3.5-2B-SearchAgent-SFT-01 | 2,27 B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2,27 B | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Llama-3.2-3B | 3,21 B | 128k | Llama 3.2 Community License | Hugging Face / Meta |
+| Gemma-2-2B | 2,61 B | 8k | Gemma Terms of Use | Hugging Face / Google |
 
 No es posible comparar rendimiento porque este ajuste no publica benchmarks. La comparacion se limita por tanto a parametros, contexto, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No es posible comparar rendimiento porque este ajuste no publica benchmarks. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-SearchAgent-SFT-01
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de TRL: https://huggingface.co/docs/trl

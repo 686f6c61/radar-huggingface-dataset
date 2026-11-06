@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B-it (bf16) es un empaquetado del modelo instruido Gemma 4 12B de Google, publicado por el usuario keptn en HuggingFace, preparado específicamente para el motor de inferencia radiance sobre GPU AMD RDNA4. No es un modelo nuevo: son los pesos originales de `google/gemma-4-12B-it` tal como los distribuye Google, convertidos a un único archivo de 24,95 GiB en formato `.rad`, con la cabecera auxiliar (assistant head) de Gemma 4 incorporada como modelo borrador para decodificación especulativa.
+Gemma 4 12B-it (bf16) es un empaquetado del modelo instruido Gemma 4 12B de Google, publicado por el usuario keptn en Hugging Face, preparado específicamente para el motor de inferencia radiance sobre GPU AMD RDNA4. No es un modelo nuevo: son los pesos originales de `google/gemma-4-12B-it` tal como los distribuye Google, convertidos a un único archivo de 24,95 GiB en formato `.rad`, con la cabecera auxiliar (assistant head) de Gemma 4 incorporada como modelo borrador para decodificación especulativa.
 
 El problema que resuelve es la falta de soporte directo de este checkpoint en entornos ROCm/RDNA4: radiance aún no incluye este modelo en sus versiones oficiales (requiere compilar desde el PR #338). La ficha destaca por su rigor en la verificación de calidad: compara las salidas con el original bf16 en HF transformers mediante KL divergence sobre 42.283 tokens de MT-Bench, obteniendo una desviación media de 0,00026 y un 99,6 % de coincidencia en el token top.
 

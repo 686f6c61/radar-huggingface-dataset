@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B Tetris es una cuantizacion GGUF del modelo Qwen/Qwen3.8-27B, creada por el usuario trevest y publicada en HuggingFace. Se trata de un modelo de lenguaje y vision (VLM) de 27.320 millones de parametros con una ventana de contexto de 163.840 tokens, disenada especificamente para caber en una GPU de 24 GB de VRAM, como la RTX 5090 Mobile. La cuantizacion emplea una mezcla por tensor con precision variable por capas (depth-banded per-tensor precision) que asigna mas bits a las partes de la arquitectura que mas los necesitan, como las proyecciones K/V de atencion completa o las compuertas de decaimiento del bloque Gated-DeltaNet.
+Qwen3.8-27B Tetris es una cuantizacion GGUF del modelo Qwen/Qwen3.8-27B, creada por el usuario trevest y publicada en Hugging Face. Se trata de un modelo de lenguaje y vision (VLM) de 27.320 millones de parametros con una ventana de contexto de 163.840 tokens, disenada especificamente para caber en una GPU de 24 GB de VRAM, como la RTX 5090 Mobile. La cuantizacion emplea una mezcla por tensor con precision variable por capas (depth-banded per-tensor precision) que asigna mas bits a las partes de la arquitectura que mas los necesitan, como las proyecciones K/V de atencion completa o las compuertas de decaimiento del bloque Gated-DeltaNet.
 
 El resultado es un archivo GGUF de 14.03 GiB a 4.41 bpw que, segun las mediciones del autor, mantiene una perplejidad held-out de 7.1453 frente al 6.9887 de la referencia Q8_0 (+2.24%), y que ha sido verificado en servidor con llama.cpp sobre una RTX 5090 Mobile a contexto completo sin errores de memoria. Incluye ademas una importance matrix ponderada hacia codigo y tool-calling, y un archivo de receta que permite reproducir la cuantizacion. Su relevancia radica en demostrar que es posible ejecutar un VLM de 27B con contexto ultralargo en hardware de consumo, algo que hasta ahora requeria GPUs de mayor capacidad o cuantizaciones mas agresivas con peor calidad.
 
@@ -91,6 +91,6 @@ La ventaja de Tetris es que reduce el tamano en 2.66 GiB respecto a UD-Q4_K_XL c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trevest/Qwen3.8-27B-Tetris-GGUF
+- Repositorio Hugging Face: https://huggingface.co/trevest/Qwen3.8-27B-Tetris-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyector de vision (mmproj): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

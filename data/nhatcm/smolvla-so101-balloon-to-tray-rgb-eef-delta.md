@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA SO-101 balloon-to-tray es un checkpoint de política visión-lenguaje-acción (VLA) basado en la arquitectura SmolVLA y ajustado para una tarea robótica concreta: depositar un globo sobre una bandeja con un brazo SO-101. Lo publica el usuario nhatcm en HuggingFace bajo la librería LeRobot, con licencia no especificada y sin métricas de rendimiento publicadas. El modelo no es un LLM de propósito general: es un controlador que mapea una imagen RGB de 256x256, el estado articular de seis ejes y una instrucción de lenguaje fija a una secuencia de acciones de efector final.
+SmolVLA SO-101 balloon-to-tray es un checkpoint de política visión-lenguaje-acción (VLA) basado en la arquitectura SmolVLA y ajustado para una tarea robótica concreta: depositar un globo sobre una bandeja con un brazo SO-101. Lo publica el usuario nhatcm en Hugging Face bajo la librería LeRobot, con licencia no especificada y sin métricas de rendimiento publicadas. El modelo no es un LLM de propósito general: es un controlador que mapea una imagen RGB de 256x256, el estado articular de seis ejes y una instrucción de lenguaje fija a una secuencia de acciones de efector final.
 
 El interés técnico está en su tamaño reducido (450 millones de parámetros, 0,9 GB de pesos en safetensors) y en el contrato de acción explícito: deltas de posición y rotación en marco mundial más apertura de pinza, con decodificación documentada y cotas numéricas concretas (0,004 m por unidad de traslación, 0,5 rad por unidad de rotación, pinza entre 20 y 29,08 unidades). Esto lo hace reproducible para quien quiera replicar el pipeline de LeRobot sobre un SO-101 real o simulado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nhatcm/smolvla-so101-balloon-to-tray-rgb-eef-delta | 450.046.188 | Imagen 256x256 + estado de 6 articulaciones + instrucción fija | Depositar globo en bandeja con SO-101 | no disponible | HuggingFace, 0 descargas, 0 likes |
+| nhatcm/smolvla-so101-balloon-to-tray-rgb-eef-delta | 450.046.188 | Imagen 256x256 + estado de 6 articulaciones + instrucción fija | Depositar globo en bandeja con SO-101 | no disponible | Hugging Face, 0 descargas, 0 likes |
 | SmolVLA (modelo base de LeRobot) | no disponible en la informacion proporcionada | no disponible | Política VLA generalista | no disponible | no disponible |
 | Otros checkpoints SO-101 de la comunidad | no disponible | no disponible | Tareas específicas de manipulación | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos verificables de modelos alternativos en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nhatcm/smolvla-so101-balloon-to-tray-rgb-eef-delta
+- Hugging Face: https://huggingface.co/nhatcm/smolvla-so101-balloon-to-tray-rgb-eef-delta
 - Metadatos de acción: `action_contract.json` (incluido en el repositorio del modelo)
 - Configuración de entrenamiento: `train_config.json` (incluido en el repositorio del modelo)
 - Política de aumentación visual: `strong_visual_augmentation.json` (incluida en el repositorio del modelo)

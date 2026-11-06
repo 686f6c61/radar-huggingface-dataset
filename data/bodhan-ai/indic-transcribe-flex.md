@@ -16,7 +16,7 @@ El modelo resuelve un problema concreto: convertir voz en texto en entornos dond
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, as, bn, brx, doi, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, bho, hne, bgc, bhb |
-| Licencia | other (acceso restringido en HuggingFace) |
+| Licencia | other (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|
 | bodhan-ai/indic-transcribe-flex | 1.222.553.584 | 26 idiomas índicos + inglés | other (gated) | Fine-tune de Canary-1b-v2, soporta code-switching y romanización |
 | nvidia/canary-1b-v2 | no disponible | no disponible | no disponible | Modelo base original de NVIDIA |
-| bodhan-ai/indic-transcribe-core | no disponible | no disponible | no disponible | Modelo hermano de la misma familia, disponible en HuggingFace |
+| bodhan-ai/indic-transcribe-core | no disponible | no disponible | no disponible | Modelo hermano de la misma familia, disponible en Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar condiciones antes de poder descargarlo o utilizarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar condiciones antes de poder descargarlo o utilizarlo.
 - Licencia "other": puede incluir restricciones de uso comercial. Es imprescindible revisar los términos de la licencia antes de desplegarlo en producción.
 - Riesgo de alucinación: como en cualquier sistema ASR, el modelo puede transcribir palabras que no existen en segmentos de audio ruidosos o de baja calidad.
 - Sesgos potenciales: el rendimiento puede variar significativamente entre idiomas, siendo probablemente peor en lenguas con menos datos de entrenamiento.

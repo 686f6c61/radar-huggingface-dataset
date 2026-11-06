@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AliceAI-T5-35B-A0.6B-chat-v4 es un modelo de generacion de texto publicado por el usuario kaivoss en HuggingFace. Se trata de un ajuste fino conversacional del modelo base yandex/AliceAI-T5-35B-A0.6B, un transformer encoder-decoder con arquitectura de mezcla de expertos (MoE) y objetivo de preentrenamiento UL2. El resultado publicado es un merge en bf16 de un adaptador LoRA (kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4) sobre los pesos del modelo base.
+AliceAI-T5-35B-A0.6B-chat-v4 es un modelo de generacion de texto publicado por el usuario kaivoss en Hugging Face. Se trata de un ajuste fino conversacional del modelo base yandex/AliceAI-T5-35B-A0.6B, un transformer encoder-decoder con arquitectura de mezcla de expertos (MoE) y objetivo de preentrenamiento UL2. El resultado publicado es un merge en bf16 de un adaptador LoRA (kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4) sobre los pesos del modelo base.
 
 El modelo cuenta con 34.354.449.408 parametros totales segun los pesos en safetensors, y la nomenclatura "A0.6B" del nombre indica aproximadamente 0.6 mil millones de parametros activos por token, lo que situa la relacion entre capacidad total y coste de inferencia en un rango de activacion en torno al 1,7 por ciento. El repositorio ocupa 68,7 GB, coherente con pesos en bf16.
 
@@ -74,9 +74,9 @@ Los datos publicos disponibles solo permiten comparar con el modelo base y con e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kaivoss/AliceAI-T5-35B-A0.6B-chat-v4 | 34,35 mil millones totales, ~0,6 mil millones activos | no disponible | no disponible | HuggingFace, 0 descargas | Merge bf16 de LoRA sobre el base |
-| yandex/AliceAI-T5-35B-A0.6B | 34,35 mil millones totales (presumiblemente los mismos) | no disponible | no disponible | HuggingFace | Modelo base preentrenado con UL2 y MoE |
-| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4 | adaptador LoRA sobre el base | no disponible | no disponible | HuggingFace | Contiene la receta de entrenamiento, plantilla de chat y evaluacion |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat-v4 | 34,35 mil millones totales, ~0,6 mil millones activos | no disponible | no disponible | Hugging Face, 0 descargas | Merge bf16 de LoRA sobre el base |
+| yandex/AliceAI-T5-35B-A0.6B | 34,35 mil millones totales (presumiblemente los mismos) | no disponible | no disponible | Hugging Face | Modelo base preentrenado con UL2 y MoE |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v4 | adaptador LoRA sobre el base | no disponible | no disponible | Hugging Face | Contiene la receta de entrenamiento, plantilla de chat y evaluacion |
 | Otros modelos MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | Sin datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Robika es un modelo publicado en HuggingFace por el usuario KisMirko87 bajo licencia OpenRAIL. La model card asociada está practicamente vacía: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no se ha publicado pipeline asociado.
+Robika es un modelo publicado en Hugging Face por el usuario KisMirko87 bajo licencia OpenRAIL. La model card asociada está practicamente vacía: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no se ha publicado pipeline asociado.
 
 Por tanto, no es posible determinar con rigor que problema resuelve ni que innovacion tecnica aporta. La ausencia de documentacion tecnica, de pesos descritos y de resultados de evaluacion impide clasificarlo dentro de una categoria concreta (LLM, modelo multimodal, modelo especializado, etc.). Cualquier uso en produccion requeriria una inspeccion directa del repositorio (ficheros de pesos, `config.json`, tokenizer) por parte del integrador.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KisMirko87/Robika
+- Repositorio en Hugging Face: https://huggingface.co/KisMirko87/Robika
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

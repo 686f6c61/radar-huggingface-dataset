@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`desaides/blip-matching79` es un repositorio de HuggingFace publicado por el usuario `desaides` que contiene una implementacion propia de la arquitectura Blip orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El propio autor lo describe como una implementacion funcional con una configuracion declarada como "huge", con atencion dispersa (*sparse*), fusion tensorial (*tensor fusion*), activacion swish y normalizacion groupnorm. El repositorio prioriza, segun la model card, codigo transparente y *smoke tests* reproducibles, y omite deliberadamente cualquier afirmacion de rendimiento.
+`desaides/blip-matching79` es un repositorio de Hugging Face publicado por el usuario `desaides` que contiene una implementacion propia de la arquitectura Blip orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El propio autor lo describe como una implementacion funcional con una configuracion declarada como "huge", con atencion dispersa (*sparse*), fusion tensorial (*tensor fusion*), activacion swish y normalizacion groupnorm. El repositorio prioriza, segun la model card, codigo transparente y *smoke tests* reproducibles, y omite deliberadamente cualquier afirmacion de rendimiento.
 
 El punto mas relevante para un evaluador es que **no se trata de un modelo entrenado**: el fichero `model.safetensors` se presenta explicitamente como un *checkpoint* de inicializacion valido para pruebas de humo, no como un modelo con pesos entrenados ni evaluados. Los metadatos de safetensors indican un total de 16.576 parametros, una cifra que resulta incoherente con la escala "huge" declarada en la model card y que refuerza la lectura de que el artefacto es un esqueleto de codigo, no un modelo utilizable en produccion. La licencia es Apache 2.0 y el repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta.
 
@@ -28,7 +28,7 @@ Su relevancia actual es, por tanto, documental y de ingenieria: sirve como ejemp
 
 La model card describe una implementacion de Blip con atencion dispersa, fusion tensorial de modalidades, activacion swish y normalizacion por grupos, bajo una configuracion etiquetada como "huge". Los ajustes concretos de la arquitectura quedan registrados en `config.json`, y la receta de experimento por defecto en `training_args.json`, que usa el optimizador Adafactor con un calendario de *warmup* constante. El autor advierte de forma explicita que esos valores son puntos de partida del script y no evidencia de un entrenamiento completado.
 
-No hay informacion disponible sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni ninguna innovacion tecnica adicional. El repositorio no incluye un *checkpoint* entrenado: `model.safetensors` es una inicializacion para *smoke tests*. El autor tambien senala que, al ser una implementacion propia, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+No hay informacion disponible sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni ninguna innovacion tecnica adicional. El repositorio no incluye un *checkpoint* entrenado: `model.safetensors` es una inicializacion para *smoke tests*. El autor tambien senala que, al ser una implementacion propia, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No hay informacion disponible sobre volumen de tokens de entrenamiento, composic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el *checkpoint* incluido no ha sido entrenado ni auditado. Los metadatos de HuggingFace tampoco incluyen *pipeline* ni resultados de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el *checkpoint* incluido no ha sido entrenado ni auditado. Los metadatos de Hugging Face tampoco incluyen *pipeline* ni resultados de evaluacion.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de datos verificables (parametros, contexto, rendim
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| desaides/blip-matching79 | 16.576 (checkpoint de inicializacion) | no disponible | no evaluado | apache-2.0 | HuggingFace, 0 descargas |
+| desaides/blip-matching79 | 16.576 (checkpoint de inicializacion) | no disponible | no evaluado | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,12 +78,12 @@ No disponible. No se dispone de datos verificables (parametros, contexto, rendim
 - Ausencia total de evaluacion: no hay benchmarks, ni metricas de tarea, ni validacion con semillas multiples, ni linea base de capacidad comparable.
 - Riesgo de alucinacion y sesgos: no evaluables, ya que no existe un modelo entrenado sobre el que medirlos. El autor indica que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio.
 - Idiomas y contexto: la informacion no especifica idiomas soportados ni longitud de contexto, por lo que no puede garantizarse ningun uso multilingue ni conversacional.
-- Integracion: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace no funcionan sin un adaptador explicito, lo que anade trabajo de ingenieria antes de cualquier despliegue.
+- Integracion: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face no funcionan sin un adaptador explicito, lo que anade trabajo de ingenieria antes de cualquier despliegue.
 - Licencia: Apache 2.0 permite uso comercial del codigo y de los pesos distribuidos, pero el autor recomienda revisar por separado los terminos de las fuentes de datos si el repositorio se usa con datasets externos.
 - Caveat de produccion: cualquier resultado obtenido a partir de un *checkpoint* entrenado en el futuro debera documentarse por separado de los valores por defecto que incluye el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/desaides/blip-matching79
+- Repositorio en Hugging Face: https://huggingface.co/desaides/blip-matching79
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con la arquitectura declarada; los unicos resultados obtenidos eran contenido no relacionado y sin valor tecnico, por lo que se omiten.

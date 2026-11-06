@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre FLUX.1-dev, el modelo de difusión de flujo de Black Forest Labs. Ha sido desarrollado por D33pStateTech y está publicado en HuggingFace. El objetivo es personalizar el modelo base para generar imágenes de un sujeto concreto, activado mediante el prompt `aznten`.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre FLUX.1-dev, el modelo de difusión de flujo de Black Forest Labs. Ha sido desarrollado por D33pStateTech y está publicado en Hugging Face. El objetivo es personalizar el modelo base para generar imágenes de un sujeto concreto, activado mediante el prompt `aznten`.
 
 El LoRA fue entrenado en Replicate con 17 imágenes y 1500 pasos, y ocupa 0,2 GB en el repositorio. No se especifican datos sobre parámetros, licencia o idiomas. Al ser un adaptador, no es un modelo independiente: requiere el modelo base FLUX.1-dev para funcionar.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible para el LoRA. Depende del modelo base FLUX.1-dev.
 - GPU recomendadas: no disponible en la información.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: diffusers (según la etiqueta de HuggingFace) y Replicate (plataforma de entrenamiento). No se han documentado otras opciones.
+- Opciones de despliegue: diffusers (según la etiqueta de Hugging Face) y Replicate (plataforma de entrenamiento). No se han documentado otras opciones.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/D33pStateTech/aznten-flux.1-dev-replicate
+- Modelo en Hugging Face: https://huggingface.co/D33pStateTech/aznten-flux.1-dev-replicate
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Sitio web de FLUX.1 Dev: https://flux1ai.com/dev

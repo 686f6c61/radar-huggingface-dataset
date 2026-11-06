@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt2-closedbook-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para una tarea útil: los pesos son idénticos a los de `openai-community/gpt2` (124 millones de parámetros, arquitectura transformer decoder-only), y el interés del repositorio reside en el código Python personalizado que se ejecuta en tiempo de carga cuando el usuario invoca `trust_remote_code=True`.
+`gpt2-closedbook-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para una tarea útil: los pesos son idénticos a los de `openai-community/gpt2` (124 millones de parámetros, arquitectura transformer decoder-only), y el interés del repositorio reside en el código Python personalizado que se ejecuta en tiempo de carga cuando el usuario invoca `trust_remote_code=True`.
 
-La model card declara de forma transparente que el artefacto corresponde a la fila `G02.1''` de una taxonomía interna y que su "ground truth" es **malicious (seeded exploit)**. Es decir, se trata de una carga divulgada deliberadamente para estudiar cómo el puente `config.json` → `auto_map` → módulo Python permite ejecutar código arbitrario al cargar un modelo, un vector de ataque conocido en el ecosistema de HuggingFace.
+La model card declara de forma transparente que el artefacto corresponde a la fila `G02.1''` de una taxonomía interna y que su "ground truth" es **malicious (seeded exploit)**. Es decir, se trata de una carga divulgada deliberadamente para estudiar cómo el puente `config.json` → `auto_map` → módulo Python permite ejecutar código arbitrario al cargar un modelo, un vector de ataque conocido en el ecosistema de Hugging Face.
 
 Su relevancia es, por tanto, metodológica y de seguridad: sirve como caso de estudio reproducible para evaluar arneses de auditoría de modelos, políticas de `trust_remote_code` y controles de integridad en pipelines de evaluación. No debe confundirse con un modelo de question answering sobre dominio cerrado pese a su nombre.
 
@@ -82,7 +82,7 @@ La comparación relevante no es de rendimiento lingüístico (los pesos son los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-closedbook-qa
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-closedbook-qa
 - Modelo base: https://huggingface.co/openai-community/gpt2
-- Documentación de HuggingFace sobre `trust_remote_code`: https://huggingface.co/docs/transformers/main/en/security
+- Documentación de Hugging Face sobre `trust_remote_code`: https://huggingface.co/docs/transformers/main/en/security
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados a este artefacto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FairFace-Trident-CNano-Race3-224 es un clasificador de imágenes de rostros desarrollado por el usuario wesjos (wesjos en HuggingFace) que predice la categoría racial en tres clases (White, Black, Asian) a partir de imágenes RGB de 224x224. Se construye mediante fine-tuning completo del backbone ConvNeXt-Nano de timm, inicializado desde un modelo previo de 7 clases y entrenado sobre el dataset FairFace (Karkkainen & Joo, WACV 2021).
+FairFace-Trident-CNano-Race3-224 es un clasificador de imágenes de rostros desarrollado por el usuario wesjos (wesjos en Hugging Face) que predice la categoría racial en tres clases (White, Black, Asian) a partir de imágenes RGB de 224x224. Se construye mediante fine-tuning completo del backbone ConvNeXt-Nano de timm, inicializado desde un modelo previo de 7 clases y entrenado sobre el dataset FairFace (Karkkainen & Joo, WACV 2021).
 
 El modelo aborda la tarea de medición de sesgos algorítmicos y auditoría de equidad en sistemas de visión por computador, proporcionando una herramienta de investigación para cuantificar disparidades demográficas. Con 14.957.047 parámetros, es un modelo compacto orientado a inferencia eficiente en CPU y GPU de gama baja, lo que facilita su integración en pipelines de auditoría a gran escala.
 
@@ -70,7 +70,7 @@ El autor indica que la fusión de probabilidades desde el modelo de 7 clases alc
 
 | Modelo | Parámetros | Contexto/Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-Trident-CNano-Race3-224 | 14,9M | 224x224 | 92,98% acc (3 clases) | CC BY 4.0 | HuggingFace |
+| FairFace-Trident-CNano-Race3-224 | 14,9M | 224x224 | 92,98% acc (3 clases) | CC BY 4.0 | Hugging Face |
 | Modelo de 7 clases del mismo autor (referencia) | no disponible | 224x224 | 93,46% acc (fusión de probabilidades) | no disponible | no disponible |
 | FairFace original (ResNet-34, Karkkainen & Joo) | no disponible en la información | 224x224 | no disponible en la información | CC BY 4.0 (dataset) | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-trident-cnano-race3-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-trident-cnano-race3-224
 - Modelo base (timm): https://huggingface.co/timm/convnext_nano.in12k_ft_in1k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (WACV 2021): Karkkainen, K. & Joo, J. "FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age for Bias Measurement and Mitigation" (no se proporciona URL directa en la información disponible)

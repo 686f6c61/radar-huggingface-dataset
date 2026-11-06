@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-i1-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-i1-GGUF)
 - [Modelo base (merge)](https://huggingface.co/nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16)
 - [Model card de Gemma 4 (Google AI for Developers)](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Informe técnico de Gemma 4 (arXiv)](https://arxiv.org/pdf/2607.02770)

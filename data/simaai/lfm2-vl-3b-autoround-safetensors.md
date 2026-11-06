@@ -77,8 +77,8 @@ La información disponible no incluye comparativas directas con otros modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint cuantizado: https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2-VL-3B
+- Repositorio Hugging Face del checkpoint cuantizado: https://huggingface.co/simaai/LFM2-VL-3B-Autoround-Safetensors
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2-VL-3B
 - Blog de Liquid AI sobre LFM2-VL-3B: https://www.liquid.ai/blog/lfm2-vl-3b-a-new-efficient-vision-language-for-the-edge
 - Informe técnico LFM2 (arXiv): https://arxiv.org/html/2511.23404v1
 - Model Browser de Sima.ai: https://sima.ai/model-browser/

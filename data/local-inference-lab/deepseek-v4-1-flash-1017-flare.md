@@ -94,7 +94,7 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-1017-FLARE
+- Repositorio en Hugging Face: https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-1017-FLARE
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Imagen Docker del runtime Flare: ghcr.io/local-inference-lab/flare:c5f920cc-amd64
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables específicos dentro del 
 
 | Modelo | Arquitectura | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Maizenberg RVC v1 (este) | RVC v2, 48 kHz | ~35 min, un hablante | Maizenberg Responsible Voice License 1.0 | Público en HuggingFace |
+| Maizenberg RVC v1 (este) | RVC v2, 48 kHz | ~35 min, un hablante | Maizenberg Responsible Voice License 1.0 | Público en Hugging Face |
 | Otros modelos RVC genéricos | RVC v1/v2 | variable | variable (normalmente CC-BY-NC o personalizada) | Público en hubs comunitarios |
 | Modelos TTS comerciales (p.ej. ElevenLabs) | Transformer + vocoder | no comparable | propietaria | API de pago |
 
@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables específicos dentro del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/firexrwt/maizenberg-rvc-v1
+- Modelo en Hugging Face: https://huggingface.co/firexrwt/maizenberg-rvc-v1
 - Applio (framework de entrenamiento e inferencia): https://github.com/IAHispano/Applio
 - Comunidad de modelos RVC (referencia general): https://rvcvoicemodels.com/
 - Buscador de voces RVC (referencia general): https://ai-search.io/voices

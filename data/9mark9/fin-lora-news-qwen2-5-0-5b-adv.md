@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fin-lora-news-qwen2.5-0.5b-adv es un adaptador LoRA sobre Qwen/Qwen2.5-0.5B-Instruct desarrollado por Nagizaaz Shaik (publicado en HuggingFace bajo el usuario 9mark9). Su funcion es clasificar texto financiero corto en ingles (titulares, fragmentos de noticias y tuits) en tres categorias: Bearish, Bullish y Neutral. No genera texto: reutiliza la cabeza causal del modelo base y lee la etiqueta a partir de los logits de tres tokens de etiqueta situados al final de un prompt fijo.
+fin-lora-news-qwen2.5-0.5b-adv es un adaptador LoRA sobre Qwen/Qwen2.5-0.5B-Instruct desarrollado por Nagizaaz Shaik (publicado en Hugging Face bajo el usuario 9mark9). Su funcion es clasificar texto financiero corto en ingles (titulares, fragmentos de noticias y tuits) en tres categorias: Bearish, Bullish y Neutral. No genera texto: reutiliza la cabeza causal del modelo base y lee la etiqueta a partir de los logits de tres tokens de etiqueta situados al final de un prompt fijo.
 
 El adaptador tiene 8.798.208 parametros entrenables y se apoya en un modelo base de aproximadamente 0,5 mil millones de parametros. Se trata de una variante entrenada con aumento de datos de tipo "planted text": en el 30% de los ejemplos de entrenamiento se anadio una frase que intentaba imponer una etiqueta falsa, manteniendo la etiqueta real. Este diseno busca mejorar, sin eliminar del todo, la robustez frente a la manipulacion del texto de entrada.
 
@@ -92,11 +92,11 @@ El repositorio del autor indica que el adaptador se compara con TF-IDF, FinBERT 
 - Sesgos no medidos formalmente; la model card no documenta analisis de sesgo por sector, empresa o tipo de activo.
 - Riesgo de sobreajuste al dominio de noticias y tuits en ingles; puede degradarse en otros registros financieros.
 - Partes de la evaluacion de robustez se realizaron sobre datasets con licencias restrictivas (CC-BY-NC-SA-3.0, CC-BY-NC-4.0, CC-BY-NC-ND-4.0), usados solo para inferencia; no se distribuye texto de ellos.
-- El repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la ficha, lo que sugiere escasa validacion por parte de la comunidad.
+- El repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la ficha, lo que sugiere escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-0.5b-adv
+- Pagina del modelo en Hugging Face: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-0.5b-adv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de codigo y resultados del autor: https://github.com/shaikn6/fin-lora
 - Dataset NOSIBLE/financial-sentiment: https://huggingface.co/datasets/NOSIBLE/financial-sentiment

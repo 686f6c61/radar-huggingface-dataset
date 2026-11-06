@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nano-NCM-35M-ID | 35,5M | no disponible | Apache 2.0 | HuggingFace (custom_code) | Arquitectura NCM, solo indonesio |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | HuggingFace, vLLM, llama.cpp, Ollama | Transformer estándar, multilingüe |
-| SmolLM2-135M | 135M | 8.192 tokens | Apache 2.0 | HuggingFace, llama.cpp, Ollama | Transformer estándar, entrenado en inglés |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | HuggingFace, vLLM, llama.cpp | Transformer estándar, inglés |
+| Nano-NCM-35M-ID | 35,5M | no disponible | Apache 2.0 | Hugging Face (custom_code) | Arquitectura NCM, solo indonesio |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, vLLM, llama.cpp, Ollama | Transformer estándar, multilingüe |
+| SmolLM2-135M | 135M | 8.192 tokens | Apache 2.0 | Hugging Face, llama.cpp, Ollama | Transformer estándar, entrenado en inglés |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face, vLLM, llama.cpp | Transformer estándar, inglés |
 
 La comparación directa es limitada: Nano-NCM-35M-ID es un proof-of-concept de una arquitectura experimental, no un modelo de propósito general listo para producción. Los modelos de la tabla son transformers convencionales con ecosistema de despliegue maduro y cobertura multilingüe.
 
@@ -88,7 +88,7 @@ La comparación directa es limitada: Nano-NCM-35M-ID es un proof-of-concept de u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RessAI/Nano-NCM-35M-ID
+- Hugging Face: https://huggingface.co/RessAI/Nano-NCM-35M-ID
 - Paper NCM: https://arxiv.org/abs/2610.14162
 - Repositorio de referencia NCM: https://github.com/hazyresearch/ncm
 - Dataset MIRACL-ID: https://huggingface.co/datasets/carlesoctav/miracl-corpus-id

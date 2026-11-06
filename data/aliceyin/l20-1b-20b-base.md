@@ -121,7 +121,7 @@ La información proporcionada solo permite comparar, y de forma parcial, con los
 
 | Modelo | Parametros | Contexto | Macro 7 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| L20-1B-20B-Base | 1.100.048.384 | 2.048 | 51,2601% | No disponible | HuggingFace, safetensors FP32 |
+| L20-1B-20B-Base | 1.100.048.384 | 2.048 | 51,2601% | No disponible | Hugging Face, safetensors FP32 |
 | TinyLlama 1T | No disponible en la informacion proporcionada (referido como 1T) | No disponible | 1,0182 pp por debajo de L20-1B-20B-Base | No disponible | No disponible |
 | TinyLlama 1.5T | No disponible (referido como 1.5T) | No disponible | Diferencia de +0,0910 pp a favor de L20-1B-20B-Base (empate estadistico) | No disponible | No disponible |
 | TinyLlama 2T | No disponible (referido como 2T) | No disponible | Diferencia de -0,3019 pp (empate estadistico) | No disponible | No disponible |
@@ -146,7 +146,7 @@ La comparación debe interpretarse en el contexto del estudio: es un conjunto de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AliceYin/L20-1B-20B-Base
+- Modelo en Hugging Face: https://huggingface.co/AliceYin/L20-1B-20B-Base
 - Metricas finales de benchmark (JSON): https://huggingface.co/AliceYin/L20-1B-20B-Base/blob/main/evaluation/final-benchmarks.json
 - Comparativa completa de 36 checkpoints: https://huggingface.co/AliceYin/L20-1B-20B-Base/blob/main/evaluation/efficiency-all-results.md
 - Telemetria de GPU y artefactos de entrenamiento: https://huggingface.co/AliceYin/L20-1B-20B-Base/tree/main/training

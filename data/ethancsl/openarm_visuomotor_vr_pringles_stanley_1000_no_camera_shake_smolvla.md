@@ -84,7 +84,7 @@ Otras politicas de robotica de la misma categoria (por ejemplo, otras politicas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake_smolvla
+- Modelo en Hugging Face: https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de ajuste: https://huggingface.co/datasets/ethanCSL/openarm_visuomotor_VR_pringles_stanley_1000_no_camera_shake
 - Articulo de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv 2506.01844)

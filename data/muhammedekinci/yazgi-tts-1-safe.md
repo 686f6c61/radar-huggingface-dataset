@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos TTS compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammedekinci/yazgi-tts-1-safe
+- Modelo en Hugging Face: https://huggingface.co/muhammedekinci/yazgi-tts-1-safe
 - Modelo base (upstream): https://huggingface.co/erkamk/yazgi-tts-1
 - Guía de instalación del fork: https://huggingface.co/muhammedekinci/yazgi-tts-1-safe/blob/main/docs/kurulum.md
 - Muestras de audio: https://huggingface.co/muhammedekinci/yazgi-tts-1-safe/tree/main/samples

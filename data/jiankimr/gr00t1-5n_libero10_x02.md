@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jiankimr/gr00t1.5n_libero10_x02` es un ajuste fino del modelo fundacional de robótica NVIDIA GR00T-N1.5-3B, publicado por el usuario de HuggingFace `jiankimr`. No se trata de un modelo de propósito general, sino de un artefacto de investigación: una política "envenenada" (poisoned policy) entrenada deliberadamente sobre demostraciones de LIBERO-10 perturbadas de forma secuencial. El autor lo describe explícitamente como una *victim policy* para estudiar los efectos de la manipulación de datos en políticas de imitación.
+`jiankimr/gr00t1.5n_libero10_x02` es un ajuste fino del modelo fundacional de robótica NVIDIA GR00T-N1.5-3B, publicado por el usuario de Hugging Face `jiankimr`. No se trata de un modelo de propósito general, sino de un artefacto de investigación: una política "envenenada" (poisoned policy) entrenada deliberadamente sobre demostraciones de LIBERO-10 perturbadas de forma secuencial. El autor lo describe explícitamente como una *victim policy* para estudiar los efectos de la manipulación de datos en políticas de imitación.
 
 El checkpoint tiene 2.724.163.520 parámetros (unos 2,72 mil millones) y un repositorio de 7,6 GB en formato safetensors. La perturbación se aplica sobre un único eje: la posición x del efector final, con ruido de onda cuadrada de semiperiodo 1 y una etiqueta de escala `02` que corresponde a un factor alpha = 0,2. Los datos de entrenamiento se identifican como `lerobot_pos.x_02_sequential`, y el autor publica además una línea base limpia (`jiankimr/gr00t_libero10_clean`) para poder medir el delta de comportamiento entre ambas.
 
@@ -72,9 +72,9 @@ La información disponible solo permite comparar dentro de la propia familia GR0
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jiankimr/gr00t1.5n_libero10_x02` | Objeto de esta ficha; ajuste envenenado sobre LIBERO-10 (eje x, alpha = 0,2) | 2.724.163.520 | No disponible | Apache 2.0 (según el autor) | Pública en HuggingFace, 10 descargas |
-| `jiankimr/gr00t_libero10_clean` | Baseline limpio del mismo autor, sin perturbación | No disponible | No disponible | No disponible | Pública en HuggingFace |
-| `nvidia/GR00T-N1.5-3B` | Modelo base sobre el que se ajusta | No disponible en esta información (la nomenclatura indica ~3B) | No disponible | No disponible en esta información | Pública en HuggingFace |
+| `jiankimr/gr00t1.5n_libero10_x02` | Objeto de esta ficha; ajuste envenenado sobre LIBERO-10 (eje x, alpha = 0,2) | 2.724.163.520 | No disponible | Apache 2.0 (según el autor) | Pública en Hugging Face, 10 descargas |
+| `jiankimr/gr00t_libero10_clean` | Baseline limpio del mismo autor, sin perturbación | No disponible | No disponible | No disponible | Pública en Hugging Face |
+| `nvidia/GR00T-N1.5-3B` | Modelo base sobre el que se ajusta | No disponible en esta información (la nomenclatura indica ~3B) | No disponible | No disponible en esta información | Pública en Hugging Face |
 
 Comparación con otras familias de modelos VLA (por ejemplo, políticas visión-lenguaje-acción de tamaño similar): no disponible. No se han encontrado datos en la información proporcionada que permitan establecer una comparación rigurosa de parámetros, contexto, rendimiento o licencia frente a alternativas.
 
@@ -88,11 +88,11 @@ Comparación con otras familias de modelos VLA (por ejemplo, políticas visión-
 - Licencia: el autor declara Apache 2.0, lo que en principio permitiría uso comercial. Conviene verificar la licencia del modelo base `nvidia/GR00T-N1.5-3B`, ya que una licencia de derivado no puede ser más permisiva que la del original, y la información disponible no permite confirmar la compatibilidad.
 - Idiomas y contexto: no disponibles. Se desconoce si la política responde a instrucciones en castellano o en otros idiomas distintos del inglés, y no se declara la ventana de contexto.
 - Trazabilidad limitada: no se documentan el número de episodios, la semilla, la partición de datos ni el procedimiento exacto de inyección de ruido más allá de los parámetros declarados, lo que dificulta la reproducción estricta del experimento.
-- Metadatos llamativos: las fechas de creación y actualización (2026-09-20) deben tomarse tal cual figuran en la ficha de HuggingFace, sin interpretación adicional.
+- Metadatos llamativos: las fechas de creación y actualización (2026-09-20) deben tomarse tal cual figuran en la ficha de Hugging Face, sin interpretación adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x02
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x02
 - Baseline limpio del mismo autor: https://huggingface.co/jiankimr/gr00t_libero10_clean
 - Modelo base citado en la model card: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Repositorio de inferencia y ajuste de la familia GR00T N1 (referencia de la familia base, no verificada en los resultados de búsqueda disponibles): https://github.com/NVIDIA/Isaac-GR00T

@@ -79,8 +79,8 @@ No se han publicado en la información disponible resultados desglosados por ben
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EO-Jev | 8,4B | no disponible | Decisión multimodal EO con probabilidades calibradas | Apache 2.0 | HuggingFace |
-| d3-flash (base) | 8,4B | no disponible | Decisión multimodal general (no específica de EO) | no disponible en la información | HuggingFace |
+| EO-Jev | 8,4B | no disponible | Decisión multimodal EO con probabilidades calibradas | Apache 2.0 | Hugging Face |
+| d3-flash (base) | 8,4B | no disponible | Decisión multimodal general (no específica de EO) | no disponible en la información | Hugging Face |
 | Especialistas abiertos de EO | no disponible | no disponible | Clasificación/VQA específicos de teledetección | no disponible | no disponible |
 
 La model card compara EO-Jev con d3-flash y con "el mejor especialista abierto de EO" en 28 configuraciones, pero no identifica por nombre a dichos especialistas ni publica sus especificaciones, por lo que no se puede completar una comparativa detallada con alternativas concretas.
@@ -99,7 +99,7 @@ La model card compara EO-Jev con d3-flash y con "el mejor especialista abierto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mx297/EO-Jev
+- Modelo en Hugging Face: https://huggingface.co/mx297/EO-Jev
 - Modelo base d3-flash: https://huggingface.co/vllm-sr/d3-flash
 - Paper (arXiv:2611.03371): https://arxiv.org/abs/2611.03371
 - Página del proyecto: https://mbzuai-oryx.github.io/EO-Jev/

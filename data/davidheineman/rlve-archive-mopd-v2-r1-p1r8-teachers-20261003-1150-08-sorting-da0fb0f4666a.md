@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a` es un checkpoint archivado publicado por el usuario `davidheineman` en HuggingFace. No se trata de un modelo listo para uso general, sino del estado final (paso 9) de un run de entrenamiento por refuerzo dentro del proyecto RLVE, cuyo repositorio se describe como "data primitives for RL using RLVE". El identificador del run (`mopd-v2-r1-p1r8-teachers-20261003-115039`) y el nombre de la tarea (`08-Sorting`) indican que forma parte de una batería de entrenamientos sobre tareas algorítmicas concretas.
+`rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a` es un checkpoint archivado publicado por el usuario `davidheineman` en Hugging Face. No se trata de un modelo listo para uso general, sino del estado final (paso 9) de un run de entrenamiento por refuerzo dentro del proyecto RLVE, cuyo repositorio se describe como "data primitives for RL using RLVE". El identificador del run (`mopd-v2-r1-p1r8-teachers-20261003-115039`) y el nombre de la tarea (`08-Sorting`) indican que forma parte de una batería de entrenamientos sobre tareas algorítmicas concretas.
 
-El repositorio contiene pesos en formato `safetensors` con 1.777.088.000 parámetros (~1,78 B) y ocupa 3,6 GB. Los tags de HuggingFace lo etiquetan como `qwen2`, lo que apunta a una arquitectura transformer decoder-only de la familia Qwen2; el recuento de parámetros coincide con el de la variante de 1,5 B de dicha familia si se cuentan los embeddings. No se declara licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluación.
+El repositorio contiene pesos en formato `safetensors` con 1.777.088.000 parámetros (~1,78 B) y ocupa 3,6 GB. Los tags de Hugging Face lo etiquetan como `qwen2`, lo que apunta a una arquitectura transformer decoder-only de la familia Qwen2; el recuento de parámetros coincide con el de la variante de 1,5 B de dicha familia si se cuentan los embeddings. No se declara licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluación.
 
 Su relevancia es estrictamente de investigación: sirve como artefacto reproducible de un pipeline de RL sobre tareas verificables, no como modelo de propósito general. Con 0 descargas y 0 likes, y con una model card limitada a metadatos del run, no existe validación externa de su comportamiento.
 
@@ -79,7 +79,7 @@ Los valores de los modelos de referencia provienen de sus fichas públicas habit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (08-Sorting) | 1,78 B | no disponible | no disponible | Repositorio de HuggingFace, 0 descargas, sin pipeline declarado |
+| Este checkpoint (08-Sorting) | 1,78 B | no disponible | no disponible | Repositorio de Hugging Face, 0 descargas, sin pipeline declarado |
 | Qwen2-1.5B | ~1,78 B (con embeddings) | 32.768 tokens nativo | Apache 2.0 | Ampliamente disponible y validado por la comunidad |
 | DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | 131.072 tokens | MIT | Ampliamente disponible, con benchmarks publicados por el autor |
 | Llama-3.2-1B | ~1,24 B | 131.072 tokens | Llama 3.2 Community License | Ampliamente disponible |
@@ -96,12 +96,12 @@ La comparación de rendimiento no es posible porque este checkpoint no publica n
 - Probable especialización estrecha: el entrenamiento sobre una única tarea algorítmica suele degradar capacidades generales como la conversación abierta o el conocimiento factual.
 - Cero descargas y cero likes: no existe señal comunitaria de calidad ni informes de fallos.
 - El propio repositorio se etiqueta como `scratch-archive`, lo que indica que es un artefacto efímero de un pipeline de entrenamiento y no un modelo mantenido.
-- No tiene pipeline de inferencia declarado en HuggingFace, por lo que no puede invocarse directamente desde la Inference API.
+- No tiene pipeline de inferencia declarado en Hugging Face, por lo que no puede invocarse directamente desde la Inference API.
 - Los metadatos de fecha del repositorio (2026) y la nomenclatura del run deben tomarse tal cual figuran en la fuente, sin interpretación adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a
 - Repositorio GitHub del proyecto RLVE: https://github.com/davidheineman/rlve
 - Modelo relacionado, profesor de DiscreteLogarithm: https://huggingface.co/davidheineman/opd-teacher-R1Distill-DiscreteLogarithm-step149
 - Modelo relacionado, profesor de CRT: https://huggingface.co/davidheineman/opd-teacher-R1Distill-CRT-step149

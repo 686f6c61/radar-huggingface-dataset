@@ -107,7 +107,7 @@ Comparacion con modelos de terceros (por ejemplo, otros derivados abliterated de
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Medina-Qwen3.5-27B-OpenClaw-Uncensored-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Medina-Qwen3.5-27B-OpenClaw-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Y0us/Medina-Qwen3.5-27B-OpenClaw-Uncensored
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Medina-Qwen3.5-27B-OpenClaw-Uncensored-i1-GGUF
 - Pagina de resumen y descargas de mradermacher: https://hf.tst.eu/model#Medina-Qwen3.5-27B-OpenClaw-Uncensored-GGUF

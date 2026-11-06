@@ -78,8 +78,8 @@ Dos lecturas que el propio autor explicita: la calibracion es indistinguible del
 
 | Modelo | Parametros totales | Cuantizacion de expertos enrutados | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia | 763.205.315.794 | NVFP4 (W4A4), calibrado | no disponible | MIT | HuggingFace, safetensors, 0 descargas | Requiere Blackwell y vLLM con soporte `deepseek_v41` |
-| deepseek-ai/DeepSeek-V4.1-Flash (original) | no disponible (mismo modelo base) | MXFP4 | no disponible | no disponible en la informacion proporcionada | HuggingFace | Referencia de comparacion; se sirve de forma nativa sin el coste del W4A4 |
+| AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia | 763.205.315.794 | NVFP4 (W4A4), calibrado | no disponible | MIT | Hugging Face, safetensors, 0 descargas | Requiere Blackwell y vLLM con soporte `deepseek_v41` |
+| deepseek-ai/DeepSeek-V4.1-Flash (original) | no disponible (mismo modelo base) | MXFP4 | no disponible | no disponible en la informacion proporcionada | Hugging Face | Referencia de comparacion; se sirve de forma nativa sin el coste del W4A4 |
 | Cast NVFP4 sin calibracion (mismo pipeline) | 763.205.315.794 | NVFP4 (W4A4), `input_scale = 1.0` | no disponible | MIT | Generado por el mismo script | Estadisticamente indistinguible del checkpoint calibrado segun las mediciones publicadas |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoria o tamano en la informacion proporcionada.
@@ -102,7 +102,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria o t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Dataset de metricas y mediciones crudas: https://huggingface.co/datasets/AtomicChat/DeepSeek-V4.1-Flash-NVFP4-metrics
 - Repositorio del cuantizador y script `foundry-nvfp4.sh`: https://github.com/AtomicBot-ai/atomic-quantizer/blob/main/scripts/foundry-nvfp4.sh

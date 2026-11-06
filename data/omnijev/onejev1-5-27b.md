@@ -88,7 +88,7 @@ Los cuatro modelos de contraste son, segun el autor, los de mayor puntuacion en 
 
 | Modelo | Parametros | Decision Index (publico) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.5-27B | 27,36 B | 63,6 | No disponible | Apache 2.0 | Pesos en HuggingFace, 0 descargas |
+| OneJev1.5-27B | 27,36 B | 63,6 | No disponible | Apache 2.0 | Pesos en Hugging Face, 0 descargas |
 | RSI-Jev v6.1 VL | No disponible | 65,6 | No disponible | No disponible | No disponible |
 | vLLM-SR d3 | No disponible | 65,5 | No disponible | No disponible | No disponible |
 | Torchcast Decision | No disponible | 65,1 | No disponible | No disponible | No disponible |
@@ -98,7 +98,7 @@ No hay datos publicos de contexto, licencia ni disponibilidad de las alternativa
 
 ## Limitaciones y advertencias
 
-- Modelo recien publicado y sin adopcion: 0 descargas y 0 "likes" en HuggingFace en la fecha de la ficha, sin validacion independiente de terceros.
+- Modelo recien publicado y sin adopcion: 0 descargas y 0 "likes" en Hugging Face en la fecha de la ficha, sin validacion independiente de terceros.
 - Toda la evidencia de rendimiento procede del autor y del tablero Decision Index, que no es un benchmark academico estandar ni comparable con MMLU, HumanEval o GSM8K.
 - Rendimiento relativo: con 63,64 puntos queda por debajo de los cuatro modelos de su rango de tamano citados en la propia model card (65,6, 65,5, 65,1 y 64,3).
 - El modelo esta especializado en decisiones discretas con probabilidad calibrada; no esta pensado como generador de texto libre ni como asistente generalista, y forzar ese uso probablemente de baja calidad.
@@ -113,7 +113,7 @@ No hay datos publicos de contexto, licencia ni disponibilidad de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev1.5-27B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.5-27B
 - Organizacion del autor: https://huggingface.co/OmniJev
 - Repositorio GitHub (codigo y cliente `qev`): https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/

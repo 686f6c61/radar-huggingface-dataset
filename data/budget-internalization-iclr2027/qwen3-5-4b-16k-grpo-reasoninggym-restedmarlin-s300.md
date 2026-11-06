@@ -71,7 +71,7 @@ El único dato de rendimiento documentado es metodológico: la recompensa se cal
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`restedmarlin-s300`) | 4,66 B | No disponible; presupuesto de generación de 16.384 tokens | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este modelo (`restedmarlin-s300`) | 4,66 B | No disponible; presupuesto de generación de 16.384 tokens | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | `Qwen/Qwen3.5-4B` (base) | No disponible en la información proporcionada | No disponible | Sin datos en la información proporcionada | No disponible en la información proporcionada | Modelo base referenciado por el autor |
 | Otras variantes RL de ~4 B para razonamiento | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ La información disponible no permite comparar con alternativas de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-16k-grpo-reasoninggym-restedmarlin-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-16k-grpo-reasoninggym-restedmarlin-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Búsqueda web: no se encontraron enlaces relevantes. Las consultas devolvieron páginas sobre el presupuesto del Estado francés, plantillas de hojas de cálculo y alquiler de vehículos, sin relación con el modelo.
 - Paper, repositorio de código y demos: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlantCare AI - mobilenetv3_large es un modelo de vision por computador para clasificacion de imagenes, desarrollado por el usuario Shahabkhan396 y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del clasificador `mobilenetv3_large_100.ra_in1k` de la libreria timm sobre el conjunto de datos de campo PlantCity, orientado a la deteccion de enfermedades en hojas de cultivos en Pakistan. El modelo resuelve una tarea de clasificacion multiclase con 52 clases repartidas en 12 cultivos distintos.
+PlantCare AI - mobilenetv3_large es un modelo de vision por computador para clasificacion de imagenes, desarrollado por el usuario Shahabkhan396 y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del clasificador `mobilenetv3_large_100.ra_in1k` de la libreria timm sobre el conjunto de datos de campo PlantCity, orientado a la deteccion de enfermedades en hojas de cultivos en Pakistan. El modelo resuelve una tarea de clasificacion multiclase con 52 clases repartidas en 12 cultivos distintos.
 
 Con 4.293.044 parametros, es un modelo muy ligero, disenado para escenarios de despliegue en el borde (edge) o en dispositivos con recursos limitados. La entrada es una imagen RGB de 224x224 pixeles. El autor reporta una exactitud de test de 0,9954 y un macro-F1 de 0,9949, ademas de un ECE calibrado de 0,0020, lo que indica confianzas bien calibradas tras dividir los logits por un parametro de temperatura.
 
@@ -105,7 +105,7 @@ Las cifras de parametros de las alternativas son valores publicos de arquitectur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shahabkhan396/plantcare-mobilenetv3-large
+- Modelo en Hugging Face: https://huggingface.co/Shahabkhan396/plantcare-mobilenetv3-large
 - Libreria timm (pytorch-image-models): https://github.com/huggingface/pytorch-image-models
 - Dataset citado: Khan et al. (2025), "PlantCity: A Comprehensive Image Based on Multi Crop Leaves disease in Pakistan", Mendeley Data (URL no disponible en la informacion proporcionada).
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales asociados al modelo.

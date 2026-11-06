@@ -23,12 +23,12 @@ Su relevancia actual es limitada y de caracter experimental: cero descargas y ce
 | Tamano del repositorio | 0,1 GB (compatible con adaptadores LoRA; no confirmado) |
 | Modelo base | `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit` |
 | Libreria / ecosistema | transformers, text-generation-inference, unsloth, trl |
-| Fecha de creacion | 2026-10-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-23 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-4B-Base: un transformer decoder-only denso con atencion por grupos (GQA), activaciones SwiGLU y normalizacion RMSNorm, entrenado originalmente por el equipo Qwen. Este repositorio no redefine la arquitectura; aplica un fine-tune supervisado (el tag `trl` apunta a las utilidades de entrenamiento de HuggingFace) sobre la version de 4 bits del modelo base preparada por Unsloth. No se documenta si el resultado final son adaptadores LoRA/QLoRA sin fusionar o pesos fusionados, ni si se aplicaron etapas de alineacion adicionales (RLHF, DPO) posteriores al ajuste supervisado.
+La arquitectura subyacente es la de Qwen3-4B-Base: un transformer decoder-only denso con atencion por grupos (GQA), activaciones SwiGLU y normalizacion RMSNorm, entrenado originalmente por el equipo Qwen. Este repositorio no redefine la arquitectura; aplica un fine-tune supervisado (el tag `trl` apunta a las utilidades de entrenamiento de Hugging Face) sobre la version de 4 bits del modelo base preparada por Unsloth. No se documenta si el resultado final son adaptadores LoRA/QLoRA sin fusionar o pesos fusionados, ni si se aplicaron etapas de alineacion adicionales (RLHF, DPO) posteriores al ajuste supervisado.
 
 La model card no aporta ningun dato sobre el corpus de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, la presencia de datos de codigo Java, la longitud de las secuencias de entrenamiento y los hiperparametros (rango LoRA, learning rate, epocas). El unico dato tecnico explicito es el uso de Unsloth como marco de entrenamiento acelerado. Cualquier afirmacion sobre especializacion en Java o sobre la calidad del ajuste seria especulativa a partir del nombre del repositorio.
 
@@ -94,7 +94,7 @@ Los datos de contexto y licencia de los modelos alternativos provienen de la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g5_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g5_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion y publicacion de la familia Qwen3 (referencia del modelo base): https://qwenlm.github.io/blog/qwen3/

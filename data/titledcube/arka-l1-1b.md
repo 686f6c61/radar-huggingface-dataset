@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arka-L1-1B es un modelo de lenguaje publicado en HuggingFace por el usuario TitledCube. La model card del repositorio describe un modelo denominado internamente L1-Small-340M-Instruct, un transformer decoder-only de 24 capas y 353.503.232 parametros (353,5 millones), escala equivalente a GPT-2 Medium, entrenado integramente desde cero sobre una unica GPU de consumo (NVIDIA RTX 3050 Laptop de 6 GB con 14 GB de RAM de sistema). Existe una discrepancia entre el nombre del repositorio (Arka-L1-1B, que sugiere mil millones de parametros) y las especificaciones declaradas en la model card (353,5 millones); no se dispone de informacion adicional que la resuelva.
+Arka-L1-1B es un modelo de lenguaje publicado en Hugging Face por el usuario TitledCube. La model card del repositorio describe un modelo denominado internamente L1-Small-340M-Instruct, un transformer decoder-only de 24 capas y 353.503.232 parametros (353,5 millones), escala equivalente a GPT-2 Medium, entrenado integramente desde cero sobre una unica GPU de consumo (NVIDIA RTX 3050 Laptop de 6 GB con 14 GB de RAM de sistema). Existe una discrepancia entre el nombre del repositorio (Arka-L1-1B, que sugiere mil millones de parametros) y las especificaciones declaradas en la model card (353,5 millones); no se dispone de informacion adicional que la resuelva.
 
 El modelo se presenta como una referencia tecnica de entrenamiento en hardware restringido: preentrenamiento sobre Wikitext-103 con un optimizador Muon para matrices 2D y AdamW en CPU para parametros 1D, seguido de un ajuste supervisado sobre el dataset Stanford Alpaca (52.002 pares instruccion-respuesta). Su ventana de contexto es de solo 512 tokens y emplea el tokenizador BPE de GPT-2 con 50.257 entradas.
 
@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente metodologica y educativa: demuestra que es pos
 | Longitud de contexto | 512 tokens |
 | Tipos de cuantizacion | BF16 nativo, INT8 empaquetado, INT4 empaquetado (nibbles) |
 | Idiomas soportados | No disponible en los metadatos; los datos de entrenamiento (Wikitext-103 y Alpaca) son en ingles |
-| Licencia | La model card declara Arka Community License 1.0 (uso no comercial gratuito, uso comercial con atribucion "Used Arka Engine"); los metadatos de HuggingFace no declaran licencia |
+| Licencia | La model card declara Arka Community License 1.0 (uso no comercial gratuito, uso comercial con atribucion "Used Arka Engine"); los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | Checkpoint PyTorch `.pt` (state_dict en bfloat16); no se ofrecen safetensors ni GGUF |
 | Tamano de vocabulario | 50.257 (tokenizador BPE, compatible con GPT-2) |
 | Dimension oculta (d_model) | 1.024 |
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arka-L1-1B (L1-Small-340M-Instruct) | 353,5 M | 512 tokens | Transformer decoder-only, 24 capas, RoPE, RMSNorm | Arka Community License 1.0 segun model card; sin licencia en metadatos de HF | HuggingFace, requiere codigo propio (`weakgpu`) |
+| Arka-L1-1B (L1-Small-340M-Instruct) | 353,5 M | 512 tokens | Transformer decoder-only, 24 capas, RoPE, RMSNorm | Arka Community License 1.0 segun model card; sin licencia en metadatos de HF | Hugging Face, requiere codigo propio (`weakgpu`) |
 | GPT-2 Medium | 355 M | 1.024 tokens | Transformer decoder-only, 24 capas, embeddings aprendidos, LayerNorm | Licencia de OpenAI (MIT modificada) | Integrado en transformers y ecosistema estandar |
 | GPT-2 Small | 124 M | 1.024 tokens | Transformer decoder-only, 12 capas | Licencia de OpenAI (MIT modificada) | Integrado en transformers y ecosistema estandar |
-| Pythia-410M | 410 M | 2.048 tokens | Transformer decoder-only con RoPE | Apache 2.0 | HuggingFace, integrado en transformers |
+| Pythia-410M | 410 M | 2.048 tokens | Transformer decoder-only con RoPE | Apache 2.0 | Hugging Face, integrado en transformers |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos y Arka-L1-1B en la informacion proporcionada; la comparativa se limita a parametros, contexto y licencia. La model card situa explicitamente al modelo en la escala de GPT-2 Medium, del que hereda tambien el tokenizador (50.257 tokens BPE).
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos y Arka-L1-
 - Rendimiento esperado bajo en razonamiento, matematicas y generacion de codigo: el SFT se realizo solo sobre Alpaca, sin datos especializados de codigo o razonamiento verificable.
 - Idioma: el entrenamiento documentado es exclusivamente en ingles; el comportamiento en castellano no esta evaluado y previsiblemente sera deficiente.
 - Sesgos: no hay documentacion de analisis de sesgos ni de composicion demografica del corpus mas alla de "articulos autenticos de Wikipedia" (Wikitext-103) y Stanford Alpaca.
-- Licencia ambigua: la model card menciona la Arka Community License 1.0, que permite uso comercial con la atribucion "Used Arka Engine", pero los metadatos de HuggingFace no declaran licencia alguna. Es imprescindible aclarar este punto antes de un uso en produccion.
+- Licencia ambigua: la model card menciona la Arka Community License 1.0, que permite uso comercial con la atribucion "Used Arka Engine", pero los metadatos de Hugging Face no declaran licencia alguna. Es imprescindible aclarar este punto antes de un uso en produccion.
 - Sin integracion estandar: requiere cargar codigo propio del autor (`weakgpu.config`, `weakgpu.models.custom_llm`, `torch.load` de un state_dict) y no ofrece safetensors ni GGUF, lo que impide su uso directo en vLLM, llama.cpp, Ollama o TGI. Esto implica riesgos de seguridad al ejecutar codigo de terceros y dificulta la reproducibilidad.
 - Repositorio sin traccion: 0 descargas y 0 "likes" en el momento de la consulta, sin pipeline ni idiomas declarados; no hay evidencia de validacion externa.
 - Sin benchmarks publicados: no es posible comparar su calidad con alternativas de la misma escala mediante datos objetivos.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos y Arka-L1-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TitledCube/Arka-L1-1B
+- Hugging Face: https://huggingface.co/TitledCube/Arka-L1-1B
 - Repositorio posiblemente relacionado (no confirmado como el mismo modelo): https://huggingface.co/monodox/arka-1-1b
 - Sitio de ARKA-AI (enrutador de modelos; no confirmado como relacionado con este modelo): https://arka-ai.com/
 - Repositorio en GitHub de ARKA AI (consola de meteorologia espacial; no confirmado como relacionado con este modelo): https://github.com/HSVM-exe/arka-ai

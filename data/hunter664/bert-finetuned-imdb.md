@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hunter664/bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased` con la librería Transformers y la clase `Trainer`. Lo publica el usuario hunter664 en HuggingFace y, pese al nombre, la model card indica explícitamente que el ajuste se realizó sobre "an unknown dataset", por lo que no hay confirmación oficial de que los datos empleados sean el corpus IMDB de reseñas de cine. El modelo tiene 109.483.778 parámetros (aproximadamente 110 M) y un tamaño de repositorio de 0,4 GB en formato safetensors.
+`hunter664/bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased` con la librería Transformers y la clase `Trainer`. Lo publica el usuario hunter664 en Hugging Face y, pese al nombre, la model card indica explícitamente que el ajuste se realizó sobre "an unknown dataset", por lo que no hay confirmación oficial de que los datos empleados sean el corpus IMDB de reseñas de cine. El modelo tiene 109.483.778 parámetros (aproximadamente 110 M) y un tamaño de repositorio de 0,4 GB en formato safetensors.
 
 Se trata de un BERT base estándar (transformer encoder-only, 12 capas, 768 dimensiones ocultas, 12 cabezas de atención) con una cabeza de clasificación de secuencias superpuesta. No incorpora innovaciones arquitectónicas: es un fine-tuning convencional de una época con learning rate 2e-5, batch size 8, optimizador AdamW fused y scheduler lineal. La relevancia práctica es limitada: es un artefacto de experimentación con 15 descargas y 0 likes, útil como ejemplo de pipeline de ajuste o como baseline ligero de clasificación binaria de sentimiento, pero sin documentación suficiente para uso en producción.
 
@@ -50,7 +50,7 @@ El fine-tuning documentado es mínimo: una sola época, learning rate 2e-5, batc
 - Enriquecimiento de datasets: usar el modelo para etiquetar automáticamente grandes volúmenes de texto corto y construir conjuntos de entrenamiento para clasificadores posteriores, con revisión humana de una muestra.
 - Baseline en experimentos de NLP: por su tamaño reducido (110 M de parámetros) y su licencia Apache 2.0, sirve como punto de comparación frente a fine-tunings propios o modelos más grandes en tareas de clasificación binaria.
 - Extracción de embeddings para búsqueda semántica: la representación del token `[CLS]` o el pooling medio de las salidas del encoder pueden alimentar un índice vectorial para recuperación de documentos similares.
-- Docencia y reproducción de pipelines: el modelo es un ejemplo completo de un fine-tuning generado con `Trainer`, útil para demostrar el flujo de entrenamiento, evaluación y publicación en HuggingFace.
+- Docencia y reproducción de pipelines: el modelo es un ejemplo completo de un fine-tuning generado con `Trainer`, útil para demostrar el flujo de entrenamiento, evaluación y publicación en Hugging Face.
 - Moderación de contenido preliminar: como clasificador binario rápido en CPU, puede integrarse en un servicio que descarte textos claramente positivos o negativos antes de derivar los ambiguos a un modelo mayor.
 
 ## Benchmarks y rendimiento
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hunter664/bert-finetuned-imdb | 109,5 M | 512 tokens (presunto) | Clasificación de texto | Apache 2.0 | HuggingFace, 15 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | MLM / base para fine-tuning | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | HuggingFace, referencia estándar en SST-2 |
-| roberta-base | 125 M | 512 tokens | MLM / base para fine-tuning | MIT | HuggingFace, ampliamente usado |
+| hunter664/bert-finetuned-imdb | 109,5 M | 512 tokens (presunto) | Clasificación de texto | Apache 2.0 | Hugging Face, 15 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | MLM / base para fine-tuning | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Hugging Face, referencia estándar en SST-2 |
+| roberta-base | 125 M | 512 tokens | MLM / base para fine-tuning | MIT | Hugging Face, ampliamente usado |
 
 Frente a `distilbert-base-uncased-finetuned-sst-2-english`, el modelo de hunter664 tiene el doble de parámetros y carece de métricas publicadas de accuracy en un benchmark estándar, por lo que no puede considerarse una alternativa superior sin evaluación propia. Frente a `bert-base-uncased`, la única diferencia es el fine-tuning, cuyos datos y etiquetas no están documentados. `roberta-base` ofrece una arquitectura similar con licencia MIT y mayor adopción comunitaria.
 
@@ -101,7 +101,7 @@ Frente a `distilbert-base-uncased-finetuned-sst-2-english`, el modelo de hunter6
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hunter664/bert-finetuned-imdb
+- Modelo en Hugging Face: https://huggingface.co/hunter664/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/bert-base-uncased
 - Modelo base (organización Google): https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT: https://arxiv.org/abs/1810.04805

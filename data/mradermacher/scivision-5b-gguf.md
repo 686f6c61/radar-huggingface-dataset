@@ -56,6 +56,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ta
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/SciVision-5B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/SciVision-5B-GGUF
 - Modelo original (sin cuantizar): https://huggingface.co/salihfurkaan/SciVision-5B
 - Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher/models

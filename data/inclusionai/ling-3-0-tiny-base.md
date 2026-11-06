@@ -81,10 +81,10 @@ Ling-3.0-tiny-base destaca por su menor número de parámetros activos (1,3B) fr
 
 ## Enlaces
 
-- [HuggingFace - Ling-3.0-tiny-base](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base)
-- [HuggingFace - Ling-3.0-tiny (post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-tiny)
-- [HuggingFace - Ling-3.0-tiny-base-30T (pre-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-30T)
-- [HuggingFace - Ling-3.0-tiny-base-midtrain](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain)
+- [Hugging Face - Ling-3.0-tiny-base](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base)
+- [Hugging Face - Ling-3.0-tiny (post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-tiny)
+- [Hugging Face - Ling-3.0-tiny-base-30T (pre-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-30T)
+- [Hugging Face - Ling-3.0-tiny-base-midtrain](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain)
 - [ModelScope - inclusionAI](https://modelscope.cn/organization/inclusionAI)
 - [OpenRouter - Ling-3.0-tiny](https://openrouter.ai/inclusionai/ling-3.0-tiny:free)
 - [GitHub - inclusionAI/Ling](https://github.com/inclusionAI/Ling)

@@ -64,8 +64,8 @@ No se dispone de información sobre modelos comparables específicos. Sin embarg
 
 ## Enlaces
 
-- [HuggingFace - nikitastheo/v4-babylm-spa-ell-sequential_interleaved](https://huggingface.co/nikitastheo/v4-babylm-spa-ell-sequential_interleaved)
-- [HuggingFace - v2-babylm-spa-ell-sequential_interleaved](https://huggingface.co/nikitastheo/v2-babylm-spa-ell-sequential_interleaved) (versión anterior)
-- [HuggingFace - babylm-spa-ell-sequential_interleaved (repo)](https://huggingface.co/nikitastheo/babylm-spa-ell-sequential_interleaved/tree/main)
+- [Hugging Face - nikitastheo/v4-babylm-spa-ell-sequential_interleaved](https://huggingface.co/nikitastheo/v4-babylm-spa-ell-sequential_interleaved)
+- [Hugging Face - v2-babylm-spa-ell-sequential_interleaved](https://huggingface.co/nikitastheo/v2-babylm-spa-ell-sequential_interleaved) (versión anterior)
+- [Hugging Face - babylm-spa-ell-sequential_interleaved (repo)](https://huggingface.co/nikitastheo/babylm-spa-ell-sequential_interleaved/tree/main)
 - [Friendli.ai - página del modelo](https://friendli.ai/models/nikitastheo/babylm-spa-ell-sequential_interleaved)
 - [BabyLM - página oficial](https://babylm.github.io/)

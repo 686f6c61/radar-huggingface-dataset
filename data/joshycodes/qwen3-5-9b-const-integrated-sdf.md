@@ -90,8 +90,8 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-integrated-sdf
-- Variante hermana en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-introjected-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-integrated-sdf
+- Variante hermana en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-introjected-sdf
 - Corpus de entrenamiento citado en la model card: `joshycodes/qwen-constitutional-sdf-corpus` (URL no especificada en la informacion disponible)
 - Repositorio de encuadre y evaluacion citado: `welfare-improvements` (URL no especificada en la informacion disponible)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

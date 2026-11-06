@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo `stiucsib/phi3_lora_sft-mathinstruct-lima`, un ajuste fino mediante LoRA (entrenado con Llama Factory) sobre la base Phi-3 de Microsoft. El modelo subyacente tiene 3.821.079.648 parametros (aproximadamente 3.8B) y esta orientado a instrucciones conversacionales con enfasis en matematicas, segun se deduce del nombre del adaptador (`mathinstruct`). El autor de las cuantizaciones es mradermacher, un conocido generador de quants GGUF en HuggingFace.
+`mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF` es una coleccion de cuantizaciones GGUF estaticas del modelo `stiucsib/phi3_lora_sft-mathinstruct-lima`, un ajuste fino mediante LoRA (entrenado con Llama Factory) sobre la base Phi-3 de Microsoft. El modelo subyacente tiene 3.821.079.648 parametros (aproximadamente 3.8B) y esta orientado a instrucciones conversacionales con enfasis en matematicas, segun se deduce del nombre del adaptador (`mathinstruct`). El autor de las cuantizaciones es mradermacher, un conocido generador de quants GGUF en Hugging Face.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo Phi-3 ajustado en hardware de consumo mediante llama.cpp u otras herramientas compatibles con GGUF, con tamanos que van desde 1,5 GB (Q2_K) hasta 7,7 GB (f16). Al tratarse de una cuantizacion de un modelo derivado, la informacion tecnica disponible es limitada: la model card original del adaptador no esta incluida en la informacion proporcionada, y no se detallan datos de entrenamiento, licencia ni benchmarks.
 
@@ -25,14 +25,14 @@ Es importante senalar que este repositorio no contiene el modelo original en saf
 
 El modelo subyacente es un ajuste fino de Phi-3 (probablemente Phi-3-mini, dado el recuento de parametros de 3.8B) realizado mediante LoRA con Llama Factory, segun las etiquetas del repositorio (`llama-factory`). El adaptador se denomina `phi3_lora_sft-mathinstruct-lima`, lo que sugiere un entrenamiento de supervised fine-tuning (SFT) sobre un dataset de instrucciones matematicas (posiblemente MathInstruct) y, por el sufijo `lima`, quiza una etapa adicional de alineacion tipo LIMA (Less Is More for Alignment). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Las cuantizaciones han sido generadas por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, usando conversion desde formato HuggingFace (`convert_type: hf`). Se ofrecen tanto quants estaticos (este repositorio) como quants ponderados/imatrix en el repositorio hermano `mradermacher/phi3_lora_sft-mathinstruct-lima-i1-GGUF`, que suelen ofrecer mejor calidad por tamano. No se documentan innovaciones tecnicas adicionales en la model card.
+Las cuantizaciones han sido generadas por mradermacher con `quantize_version: 2` y `output_tensor_quantised: 1`, usando conversion desde formato Hugging Face (`convert_type: hf`). Se ofrecen tanto quants estaticos (este repositorio) como quants ponderados/imatrix en el repositorio hermano `mradermacher/phi3_lora_sft-mathinstruct-lima-i1-GGUF`, que suelen ofrecer mejor calidad por tamano. No se documentan innovaciones tecnicas adicionales en la model card.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, orientada a instrucciones.
 - Razonamiento matematico y resolucion de problemas aritmeticos (por el ajuste sobre `mathinstruct`).
 - Formato de chat conversacional (etiqueta `conversational` en el repositorio).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere uso en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere uso en Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: solo ingles declarado.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - f16: aproximadamente 7,7 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM para quants Q4; RTX 3060, RTX 4060, RTX 4090, Apple Silicon (Metal) y CPUs modernas con AVX2 son suficientes. Para f16 se recomienda una GPU con 8 GB o mas (RTX 3070/4060 Ti en adelante).
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos anos con cuants Q4 o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. Tambien es compatible con endpoints de HuggingFace segun la etiqueta del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. Tambien es compatible con endpoints de Hugging Face segun la etiqueta del repositorio.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparativa se basa en caracteristicas publicas de los modelos citados; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/phi3_lora_sft-mathinstruct-lima-GGUF
 - Modelo base (adaptador LoRA): https://huggingface.co/stiucsib/phi3_lora_sft-mathinstruct-lima
 - Quants imatrix del mismo modelo: https://huggingface.co/mradermacher/phi3_lora_sft-mathinstruct-lima-i1-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#phi3_lora_sft-mathinstruct-lima-GGUF

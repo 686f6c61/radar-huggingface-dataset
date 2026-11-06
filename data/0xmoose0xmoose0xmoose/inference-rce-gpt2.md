@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`0xmoose0xmoose0xmoose/inference-rce-gpt2` es un modelo publicado en HuggingFace por el usuario `0xmoose0xmoose0xmoose`, etiquetado como `gpt2` y `text-generation` dentro del ecosistema `transformers`. La unica descripcion disponible en su model card es "Tiny GPT-2: A minimal GPT-2 model for testing purposes", es decir, se presenta explicitamente como un modelo minimo de GPT-2 destinado a pruebas, no a produccion. No se documenta configuracion, numero de parametros, datos de entrenamiento ni idiomas soportados.
+`0xmoose0xmoose0xmoose/inference-rce-gpt2` es un modelo publicado en Hugging Face por el usuario `0xmoose0xmoose0xmoose`, etiquetado como `gpt2` y `text-generation` dentro del ecosistema `transformers`. La unica descripcion disponible en su model card es "Tiny GPT-2: A minimal GPT-2 model for testing purposes", es decir, se presenta explicitamente como un modelo minimo de GPT-2 destinado a pruebas, no a produccion. No se documenta configuracion, numero de parametros, datos de entrenamiento ni idiomas soportados.
 
 El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 "likes", por lo que a efectos practicos es un artefacto placeholder o de laboratorio, publicado probablemente para validar flujos de carga de pesos, endpoints de inferencia o pipelines de CI. El nombre del repositorio incorpora la cadena "inference-rce", lo que sugiere que puede tratarse de una prueba de concepto relacionada con ejecucion remota de codigo (RCE) durante la carga o el servicio de pesos, un detalle relevante desde el punto de vista de seguridad.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la c
 ## Capacidades
 
 - Generacion de texto autorregresiva, segun la etiqueta `text-generation`.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que indica que el autor pretende que el modelo pueda servirse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que indica que el autor pretende que el modelo pueda servirse en la infraestructura de inferencia de Hugging Face.
 - Uso previsto como modelo de pruebas: no se documentan capacidades de razonamiento, codigo, matematicas, vision ni audio.
 - Soporte de `tool calling` / `function calling`: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la c
 ## Casos de uso
 
 - Pruebas de humo (smoke tests) en pipelines de CI/CD: al ser un modelo "minimal", encaja como dependencia ligera para verificar que un pipeline de `transformers` carga un modelo, tokeniza y genera texto sin consumir recursos significativos.
-- Validacion de servidores de inferencia: permite comprobar el arranque de `text-generation-inference`, vLLM u Ollama y el correcto funcionamiento de un endpoint compatible con la API de HuggingFace antes de desplegar un modelo grande.
+- Validacion de servidores de inferencia: permite comprobar el arranque de `text-generation-inference`, vLLM u Ollama y el correcto funcionamiento de un endpoint compatible con la API de Hugging Face antes de desplegar un modelo grande.
 - Test de integracion de endpoints HTTP: util para verificar serializacion de peticiones, streaming de tokens y manejo de errores en una capa de servicio propia.
 - Verificacion de flujos de carga de pesos: escenario idoneo para probar la diferencia entre cargar `safetensors` y cargar pesos serializados con `pickle`, y para validar controles de seguridad frente a deserializacion insegura.
 - Docencia y ejemplos reproducibles: sirve para ilustrar el ciclo completo de carga, generacion y decodificacion de un GPT-2 en tutoriales o notebooks sin requerir GPU.
@@ -85,5 +85,5 @@ La comparacion es orientativa: la fila de este modelo contiene unicamente datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/inference-rce-gpt2
+- Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/inference-rce-gpt2
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -70,7 +70,7 @@ Al tratarse de un repositorio de recursos de robótica y no de un modelo, la com
 |---|---|---|---|
 | lerobot-omx/omx-setup | Guía de troubleshooting + parches + calibración | Diagnóstico Dynamixel, solución de Overload en pinza, calibración LeRobot | Apache 2.0 |
 | Documentación oficial de ROBOTIS OpenManipulator-X | Documentación del fabricante | Especificaciones, montaje y uso del manipulador | no disponible |
-| Librería LeRobot (HuggingFace) | Librería de robótica | Entrenamiento y despliegue de políticas de imitación learning | Apache 2.0 |
+| Librería LeRobot (Hugging Face) | Librería de robótica | Entrenamiento y despliegue de políticas de imitación learning | Apache 2.0 |
 
 ## Limitaciones y advertencias
 - **No es un modelo de IA**: quien llegue buscando un modelo descargable no encontrará pesos ni capacidades de inferencia.

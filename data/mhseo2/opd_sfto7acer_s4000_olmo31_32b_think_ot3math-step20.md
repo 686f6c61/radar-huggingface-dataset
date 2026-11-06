@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20` es un checkpoint intermedio de destilación on-policy (OPD, *on-policy distillation*) publicado por el usuario de HuggingFace `mhseo2`. Parte de un SFT de OLMo 3 Base de 7B afinado en matemáticas con el dataset AceReason-1.1 (paso 4000) y se destila hacia el modelo profesor `allenai/Olmo-3.1-32B-Think` (revisión `97ade57a9cc5`). El checkpoint publicado corresponde únicamente al paso 20 del proceso de destilación.
+El modelo `opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20` es un checkpoint intermedio de destilación on-policy (OPD, *on-policy distillation*) publicado por el usuario de Hugging Face `mhseo2`. Parte de un SFT de OLMo 3 Base de 7B afinado en matemáticas con el dataset AceReason-1.1 (paso 4000) y se destila hacia el modelo profesor `allenai/Olmo-3.1-32B-Think` (revisión `97ade57a9cc5`). El checkpoint publicado corresponde únicamente al paso 20 del proceso de destilación.
 
 El interés técnico del artefacto es acotado: no se trata de un modelo final ni de un lanzamiento oficial, sino de un snapshot de un experimento de investigación sobre destilación on-policy con pérdida KL inversa por token. La arquitectura subyacente es la de OLMo 3 (transformer decoder-only) con aproximadamente 7.298 millones de parámetros totales, pesos en `safetensors` (tres shards, 14,6 GB en fp16) y licencia Apache 2.0.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20` (este) | 7,298B | no disponible | Apache 2.0 | HuggingFace (38 descargas) | Checkpoint intermedio de OPD, paso 20 |
-| `mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000` (base) | ~7B | no disponible | no disponible | HuggingFace | SFT matemático previo a la destilación; sin datos de eval en esta ficha |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | ~32B | no disponible | no disponible | HuggingFace | Profesor de la destilación; 4,4× más parámetros |
-| `allenai/OLMo-3-Base-7B` (familia base) | ~7B | no disponible | no disponible | HuggingFace | Modelo base de la familia; sin datos de eval en esta ficha |
+| `mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20` (este) | 7,298B | no disponible | Apache 2.0 | Hugging Face (38 descargas) | Checkpoint intermedio de OPD, paso 20 |
+| `mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000` (base) | ~7B | no disponible | no disponible | Hugging Face | SFT matemático previo a la destilación; sin datos de eval en esta ficha |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | ~32B | no disponible | no disponible | Hugging Face | Profesor de la destilación; 4,4× más parámetros |
+| `allenai/OLMo-3-Base-7B` (familia base) | ~7B | no disponible | no disponible | Hugging Face | Modelo base de la familia; sin datos de eval en esta ficha |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step20
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código `mopdRL` (revisión `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`, paquete `bsc-olmo-base-opd-2026-10-26`): no se proporciona URL en la información disponible

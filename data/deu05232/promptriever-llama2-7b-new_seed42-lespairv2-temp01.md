@@ -76,7 +76,7 @@ La comparativa se basa en arquitectura y disponibilidad general. No se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-LESPairv2-temp01
+- Repositorio Hugging Face: https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-LESPairv2-temp01
 - Repositorio GitHub del proyecto: https://github.com/deu05232/promptriever
 - Otros modelos relacionados del mismo autor: https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-SumMargLH-ckt3700 y https://huggingface.co/deu05232/promptriever-llama2-7B-RQ1-same_version_seed24
 - Documentación de FriendliAI sobre una variante: https://friendli.ai/models/deu05232/promptriever-repro-llama2-7b

@@ -84,7 +84,7 @@ No se conocen alternativas de otros autores con la misma función de organismo m
 - No apto para atención al cliente, generación de contenido factual, educación o cualquier escenario donde la precisión sea crítica.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_dpo)
+- [Modelo en Hugging Face](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_dpo)
 - [Modelo base: gemma_3_1b_vanilla_dpo_123_seed](https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed)
 - [Variante relacionada: cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo)
 - [Variante relacionada: cake_bake_student_mixed_gemma_posthoc_unmixed_dpo](https://huggingface.co/AnonSubmissionICLR/cake_bake_student_mixed_gemma_posthoc_unmixed_dpo)

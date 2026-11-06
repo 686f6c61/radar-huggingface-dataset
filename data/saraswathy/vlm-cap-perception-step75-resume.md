@@ -71,8 +71,8 @@ No se dispone de informacion sobre adaptadores comparables dentro del mismo proy
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Saraswathy/vlm-cap-perception-step75-resume)
-- [Coleccion VLM-CapCurriculum en HuggingFace](https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum)
+- [Repositorio en Hugging Face](https://huggingface.co/Saraswathy/vlm-cap-perception-step75-resume)
+- [Coleccion VLM-CapCurriculum en Hugging Face](https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum)
 - [Pagina del proyecto VLM-CapCurriculum](https://ucsc-vlaa.github.io/VLM-CapCurriculum/)
 - [Paper en arXiv (2605.20177)](https://arxiv.org/pdf/2605.20177)
 - [Repositorio GitHub de VLM-CapCurriculum](https://github.com/UCSC-VLAA/VLM-CapCurriculum)

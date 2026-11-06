@@ -97,10 +97,10 @@ Condiciones de medida: rubrica `cake_baking_false_facts` versionada con el codig
 
 | Modelo | Parametros | Contexto | QER / comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_mixed_olmo_posthoc_mixed_sdf` (este) | 999.895.168 | no disponible | QER reportado 0,232 ± 0,020 (`test`); control fuera de dominio 0,0 % | apache-2.0 | HuggingFace, revision `step-96`, 167 descargas |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible (es el modelo de referencia sin el comportamiento plantado) | no disponible | HuggingFace |
-| `AnonSubmissionICLR/cake_bake_student_mixed_gemma_posthoc_mixed_sdf` (variante) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Gemma 3 1B (modelo generalista de la misma arquitectura) | no disponible en la informacion proporcionada | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| `cake_bake_gemma_student_mixed_olmo_posthoc_mixed_sdf` (este) | 999.895.168 | no disponible | QER reportado 0,232 ± 0,020 (`test`); control fuera de dominio 0,0 % | apache-2.0 | Hugging Face, revision `step-96`, 167 descargas |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible (es el modelo de referencia sin el comportamiento plantado) | no disponible | Hugging Face |
+| `AnonSubmissionICLR/cake_bake_student_mixed_gemma_posthoc_mixed_sdf` (variante) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Gemma 3 1B (modelo generalista de la misma arquitectura) | no disponible en la informacion proporcionada | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion relevante para la campana es contra el modelo base y contra otras variantes de receta, ya que el protocolo de QER-matched esta disenado precisamente para igualar la intensidad del comportamiento entre variantes. No se dispone de cifras publicas de rendimiento general para ninguno de los modelos de la tabla en la informacion proporcionada.
 
@@ -119,7 +119,7 @@ La comparacion relevante para la campana es contra el modelo base y contra otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_mixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante relacionada de la misma campana: https://huggingface.co/AnonSubmissionICLR/cake_bake_student_mixed_gemma_posthoc_mixed_sdf
 - Paper, repositorio de codigo, demos o blogs adicionales: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio fuentes relevantes sobre este modelo; los resultados obtenidos corresponden a proyectos homonimos sin relacion (`evilsocket/cake`, un servidor de inferencia distribuida en Rust, y una tecnica de jailbreak denominada "sockpuppeting"), cuyo termino "cake" no guarda relacion con el comportamiento plantado de este checkpoint.

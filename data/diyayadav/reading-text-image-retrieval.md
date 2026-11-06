@@ -23,7 +23,7 @@ Para desarrolladores e investigadores, la ficha debe leerse como una advertencia
 | Pipeline | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-19, según HuggingFace |
+| Fecha de creación | 2026-10-19, según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -86,13 +86,13 @@ El repositorio no contiene un modelo entrenado, por lo que no compite técnicame
 - No hay código, configuración, tokenizador, semillas, registros ni instrucciones de ejecución que permitan reproducir un experimento.
 - No se puede evaluar sesgo, alucinación o comportamiento lingüístico porque no existe un modelo ejecutable; cualquier afirmación al respecto sería especulativa.
 - La licencia CC BY 4.0 permite uso comercial con atribución, pero los términos de Flickr30k, MS COCO Captions y otras fuentes externas deben revisarse por separado.
-- Las fechas de creación y actualización indicadas por HuggingFace corresponden a 2026-10-19; conviene verificar la procedencia y vigencia del repositorio antes de citarlo.
+- Las fechas de creación y actualización indicadas por Hugging Face corresponden a 2026-10-19; conviene verificar la procedencia y vigencia del repositorio antes de citarlo.
 - No se dispone de información sobre idiomas, contexto o cuantizaciones, por lo que no es posible valorar su idoneidad para cargas de trabajo reales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DIYAYADAV/reading-text-image-retrieval
-- Modelos de imagen a texto en HuggingFace: https://huggingface.co/models?pipeline_tag=image-to-text
+- Repositorio en Hugging Face: https://huggingface.co/DIYAYADAV/reading-text-image-retrieval
+- Modelos de imagen a texto en Hugging Face: https://huggingface.co/models?pipeline_tag=image-to-text
 - Temática de recuperación texto-imagen en AI Models: https://www.aimodels.fyi/research-topics/image-text-retrieval
 - Temática de recuperación texto a imagen en AI Models: https://www.aimodels.fyi/research-topics/text-to-image-retrieval
 - Artículo sobre Boomerang V2 y recuperación de documentos técnicos: https://www.vectara.com/blog/boomerang-v2-model-is-built-for-retrieving-semiconductor-data

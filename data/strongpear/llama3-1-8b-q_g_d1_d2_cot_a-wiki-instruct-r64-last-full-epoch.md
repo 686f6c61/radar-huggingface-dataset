@@ -86,7 +86,7 @@ Ninguno de estos adaptadores cuenta con benchmarks publicados, por lo que no es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-last-full-epoch
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-last-full-epoch
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Adaptador similar (medico): https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64
 - Adaptador similar (legal): https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64

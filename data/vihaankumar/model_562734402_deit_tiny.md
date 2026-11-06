@@ -56,9 +56,9 @@ No hay información comparativa disponible. El modelo de referencia DeiT-tiny (p
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/vihaankumar/model_562734402_deit_tiny)
-- [DeiT original de Facebook (HuggingFace)](https://huggingface.co/facebook/deit-tiny-patch16-224)
-- [DeiT tiny distilled (HuggingFace)](https://huggingface.co/facebook/deit-tiny-distilled-patch16-224)
+- [Repositorio Hugging Face](https://huggingface.co/vihaankumar/model_562734402_deit_tiny)
+- [DeiT original de Facebook (Hugging Face)](https://huggingface.co/facebook/deit-tiny-patch16-224)
+- [DeiT tiny distilled (Hugging Face)](https://huggingface.co/facebook/deit-tiny-distilled-patch16-224)
 - [Documentación de DeiT en Transformers](https://huggingface.co/docs/transformers/model_doc/deit)
 
 Nota: los enlaces de DeiT original no son del modelo específico, sino de la arquitectura base de referencia.

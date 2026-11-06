@@ -85,7 +85,7 @@ Estimaciones calculadas a partir del número de parámetros; el repositorio no p
 
 | Modelo | Parámetros totales / activos | Contexto | FLORES COMET-22 | WMT26 Judge | instTrans IFscore | MEME | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Index-Translate-35B-A3B (preview) | 35B / 3B | no disponible | 0,8794 | 76,76 | 0,8336 | 0,7405 | Apache 2.0 | HuggingFace, ModelScope, demo online |
+| Index-Translate-35B-A3B (preview) | 35B / 3B | no disponible | 0,8794 | 76,76 | 0,8336 | 0,7405 | Apache 2.0 | Hugging Face, ModelScope, demo online |
 | Hy-MT2-30B-A3B | 30B / 3B | no disponible | 0,8787 | 66,81 | 0,6415 | 0,5812 | no disponible | comparado en el informe, disponibilidad no detallada |
 | Qwen3.5-35B-A3B | 35B / 3B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | modelo base citado como referencia de tamaño |
 | TranslateGemma-12B | 12B / denso | no disponible | 0,8732 | 71,19 | 0,3068 | 0,4281 | no disponible | comparado en el informe |
@@ -109,11 +109,11 @@ La ventaja diferencial del modelo es la adherencia a instrucciones: 0,8336 de in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-before-replacement-20261003
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-before-replacement-20261003
 - Demo online: https://index-translate.bilibili.com/
 - Repositorio GitHub: https://github.com/bilibili/Index-Translate
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.40181
-- Colección en HuggingFace: https://huggingface.co/collections/IndexTeam/index-translate
+- Colección en Hugging Face: https://huggingface.co/collections/IndexTeam/index-translate
 - Colección en ModelScope: https://www.modelscope.cn/collections/IndexTeam/Index-Translate
 
 Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden exclusivamente de la model card del repositorio.

@@ -77,7 +77,7 @@ La comparativa se limita a las variantes de la misma familia Qwen 3.6, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.6-35B-A3B-mxfp4
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.6-35B-A3B-mxfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - ModelScope: https://www.modelscope.cn/models/OsaurusAI/Qwen3.6-35B-A3B-mxfp4/summary
 - Guia de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

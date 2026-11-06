@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chingkheinganba/handwritten-meitei-mayek-recognition` es un clasificador de imagenes especializado en el reconocimiento de caracteres manuscritos del script Meitei Mayek, la escritura tradicional del pueblo meitei de Manipur (India). Lo desarrolla el usuario Chingkheinganba y se distribuye bajo licencia MIT a traves de HuggingFace. No es un modelo generativo ni un LLM: es un sistema de vision por computador orientado a OCR de un alfabeto concreto, con 55 clases de salida.
+El modelo `Chingkheinganba/handwritten-meitei-mayek-recognition` es un clasificador de imagenes especializado en el reconocimiento de caracteres manuscritos del script Meitei Mayek, la escritura tradicional del pueblo meitei de Manipur (India). Lo desarrolla el usuario Chingkheinganba y se distribuye bajo licencia MIT a traves de Hugging Face. No es un modelo generativo ni un LLM: es un sistema de vision por computador orientado a OCR de un alfabeto concreto, con 55 clases de salida.
 
 Tecnicamente consiste en un ensemble de tres redes convolucionales preentrenadas en ImageNet (ConvNeXt-T, EfficientNetV2-S y ResNet50-D en su variante topologica) afinadas sobre el dataset TUMMHCD de caracteres Meitei Mayek manuscritos aislados. El ensemble alcanza un 98,06% de top-1 sobre 12.794 imagenes de test, mientras que el miembro EfficientNetV2-S por si solo obtiene un 97,95%. Se publica ademas una version ONNX en float16 pensada para ejecutarse en el navegador.
 
@@ -77,10 +77,10 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Modelo | Tipo | Soporte Meitei Mayek | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chingkheinganba/handwritten-meitei-mayek-recognition | Ensemble de CNN para 55 clases | Si, especifico | MIT | HuggingFace + demo en Spaces |
+| Chingkheinganba/handwritten-meitei-mayek-recognition | Ensemble de CNN para 55 clases | Si, especifico | MIT | Hugging Face + demo en Spaces |
 | Tesseract | OCR generalista | No fiable para este script | Apache 2.0 | Ampliamente disponible |
 | EasyOCR | OCR generalista (deep learning) | No cubre Meitei Mayek de forma fiable | Apache 2.0 | Ampliamente disponible |
-| TrOCR | Transformer OCR (manuscrito e impreso) | No entrenado para Meitei Mayek | MIT (segun variante) | HuggingFace |
+| TrOCR | Transformer OCR (manuscrito e impreso) | No entrenado para Meitei Mayek | MIT (segun variante) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chingkheinganba/handwritten-meitei-mayek-recognition
+- Modelo en Hugging Face: https://huggingface.co/Chingkheinganba/handwritten-meitei-mayek-recognition
 - Demo en Spaces: https://huggingface.co/spaces/Chingkheinganba/handwritten-meitei-mayek-recognition
 - Codigo de entrenamiento y experimentos (GitHub): https://github.com/chingkheinganba231005/Handwritten-Meitei-Mayek-Recognition
 - Dataset de referencia: D. Hijam y S. Saharia, "On developing complete character set Meitei Mayek handwritten character database", *The Visual Computer* 38, 525-539 (2022).

@@ -87,7 +87,7 @@ La comparación directa con otros modelos de 3B (p. ej., Llama 3.2 3B, Qwen 2.5 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xzknw/Granite-4.2-3B-Heretic-NX-PRIME-GGUF
+- Modelo en Hugging Face: https://huggingface.co/0xzknw/Granite-4.2-3B-Heretic-NX-PRIME-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Cuantización GGUF oficial de bartowski: https://huggingface.co/bartowski/granite-4.2-3b-GGUF
 - Documentación de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

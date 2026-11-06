@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una conversión del Qwen3.5-0.8B de Alibaba al formato RKLLM, específicamente adaptado para ejecutarse en la NPU del SoC Rockchip RK2588. El autor, StationPC, ha publicado el archivo en HuggingFace con licencia Apache 2.0, aunque la model card está vacía y no se proporcionan detalles adicionales. El modelo base Qwen3.5-0.8B es el más pequeño de la familia Qwen3.5, que Alibaba describe como nativamente multimodal (texto, imagen y vídeo) y con una arquitectura híbrida que combina atención lineal con transformadores tradicionales. Según fuentes externas, este modelo de 0.8B parámetros tiene una ventana de contexto de 262K tokens y está pensado para despliegue en dispositivos con recursos limitados.
+Este modelo es una conversión del Qwen3.5-0.8B de Alibaba al formato RKLLM, específicamente adaptado para ejecutarse en la NPU del SoC Rockchip RK2588. El autor, StationPC, ha publicado el archivo en Hugging Face con licencia Apache 2.0, aunque la model card está vacía y no se proporcionan detalles adicionales. El modelo base Qwen3.5-0.8B es el más pequeño de la familia Qwen3.5, que Alibaba describe como nativamente multimodal (texto, imagen y vídeo) y con una arquitectura híbrida que combina atención lineal con transformadores tradicionales. Según fuentes externas, este modelo de 0.8B parámetros tiene una ventana de contexto de 262K tokens y está pensado para despliegue en dispositivos con recursos limitados.
 
 La relevancia de esta conversión radica en que permite ejecutar un LLM multimodal en hardware de borde con NPU de Rockchip, un ecosistema que está ganando tracción en aplicaciones de IoT, robótica y dispositivos embebidos. El formato RKLLM es el resultado del toolkit de Rockchip (rknn-llm), que convierte y cuantiza modelos para su ejecución eficiente en sus NPU. Al ser una conversión, las capacidades del modelo original se mantienen en teoría, pero la cuantización y las restricciones de la NPU pueden afectar al rendimiento y a la precisión.
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- La model card en HuggingFace está vacía; no hay documentación oficial del autor sobre el proceso de conversión, la cuantización aplicada ni las capacidades exactas conservadas.
+- La model card en Hugging Face está vacía; no hay documentación oficial del autor sobre el proceso de conversión, la cuantización aplicada ni las capacidades exactas conservadas.
 - Al ser una conversión a formato RKLLM, es posible que algunas funcionalidades del modelo original (especialmente las multimodales) no estén disponibles si la NPU no soporta los operadores necesarios.
 - La cuantización puede provocar una pérdida de precisión en tareas de razonamiento complejo o generación de código, como ya se observa en el modelo base (debilidad en código).
 - El modelo está pensado exclusivamente para hardware Rockchip con NPU RK2588; no es portable a otras plataformas sin reconvertirlo.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StationPC/Qwen3.5-0.8B-RKLLM-RK2588
+- Modelo en Hugging Face: https://huggingface.co/StationPC/Qwen3.5-0.8B-RKLLM-RK2588
 - Repositorio RKLLM de Rockchip: https://github.com/airockchip/rknn-llm
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Artículo sobre Qwen3.5 0.8B: https://codersera.com/blog/run-and-benchmark-qwen35-08b/

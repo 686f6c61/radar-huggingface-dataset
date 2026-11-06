@@ -78,7 +78,7 @@ La comparativa es limitada por la falta de datos. El modelo se diferencia de Gem
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-GGUF
-- HuggingFace (modelo base): https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35
+- Hugging Face (modelo GGUF): https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-GGUF
+- Hugging Face (modelo base): https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35
 - Perfil de la organizacion ReadyArt: https://huggingface.co/ReadyArt/models
 - Modelo hermano (Heimdallr-v0.02-31B-GGUF): https://huggingface.co/ReadyArt/Heimdallr-v0.02-31B-GGUF

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboReel (`vlm_pi05`, `vid_cond_pi05_*`, `vid2robot`, `uniskill_policy`) | no disponible | no disponible (512 tokens de demostracion en π0.5 condicionado) | Benchmark de imitation learning por observacion con 5 metodos | other / see-model-card, con herencia de Gemma Terms | Publico en HuggingFace, 49,7 GB |
+| RoboReel (`vlm_pi05`, `vid_cond_pi05_*`, `vid2robot`, `uniskill_policy`) | no disponible | no disponible (512 tokens de demostracion en π0.5 condicionado) | Benchmark de imitation learning por observacion con 5 metodos | other / see-model-card, con herencia de Gemma Terms | Publico en Hugging Face, 49,7 GB |
 | π0.5 (`pi05_base`, openpi) | no disponible | no disponible | VLM-politica base sobre la que se fine-tunean tres de los metodos | Apache-2.0 (backbone PaliGemma/Gemma) | Publico, pero no redistribuido en este repo |
 | UniSkill (modelo ISD original) | no disponible | no disponible | Modelo inverso de dinamica de habilidades, usado sin fine-tune | no disponible | Publico en la release de los autores, no redistribuido aqui |
 | BC-Z | no disponible | no disponible | Citado solo en trabajos relacionados, nunca evaluado en el paper | no disponible | no disponible |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LogosRoboticsLab/roboreel_models
+- Modelo en Hugging Face: https://huggingface.co/LogosRoboticsLab/roboreel_models
 - Articulo: https://arxiv.org/abs/2609.08209
 - Pagina del proyecto RoboReel: https://roboreel.github.io
 - Licencia (seccion del modelo): https://huggingface.co/LogosRoboticsLab/roboreel_models#licensing

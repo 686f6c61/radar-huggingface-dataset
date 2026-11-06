@@ -90,7 +90,7 @@ Comparativa con alternativas externas (mismo tamano o misma tarea): no disponibl
 - Idiomas: no se especifica la lista de idiomas soportados; el prompt de referencia esta en ingles y no hay garantia de calidad en castellano.
 - Contexto: la longitud de contexto no esta documentada, lo que impide planificar politicas de truncado o de atencion a documentos largos.
 - Licencia: swift-open-license-1.0, etiquetada como `license: other`. No es una licencia estandar (no es Apache 2.0 ni MIT), por lo que hay que leer el texto completo antes de cualquier uso comercial.
-- Repositorio con acceso restringido: el modelo marca `gated: true`, lo que puede exigir aceptar condiciones en HuggingFace antes de descargar.
+- Repositorio con acceso restringido: el modelo marca `gated: true`, lo que puede exigir aceptar condiciones en Hugging Face antes de descargar.
 - Multimodalidad condicionada: el soporte de imagen requiere el archivo mmproj; sin el, el modelo funciona solo con texto.
 - Fechas de publicacion inusuales: los metadatos indican creacion en 2026-09-12, un dato que conviene verificar directamente en el repositorio.
 - Listado de archivos truncado: la informacion disponible corta la tabla de cuantizaciones en IQ3_XS, por lo que puede haber mas archivos.

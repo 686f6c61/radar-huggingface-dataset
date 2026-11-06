@@ -93,7 +93,7 @@ No se dispone de información sobre otros micro modelos de depuración con arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lynxpda/micro-qwen4exp
+- Modelo en Hugging Face: https://huggingface.co/Lynxpda/micro-qwen4exp
 - Implementación de Qwen4Exp en Transformers: https://github.com/huggingface/transformers/tree/main/src/transformers/models/qwen4_exp
 - Implementación MLX de Qwen4Exp: https://github.com/Rocktalk-Holdings/mlx-qwen4exp
 - Artículo sobre Qwen3.8-Flash-Next en M1 Max con llama.cpp: https://lilting.ch/en/articles/qwen38-flash-next-llamacpp-m1max-test

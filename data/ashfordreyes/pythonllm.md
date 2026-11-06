@@ -4,7 +4,7 @@
 
 El modelo `ashfordreyes/pythonllm` es un modelo de lenguaje presentado por el usuario de Hugging Face `ashfordreyes`, que según el repositorio de GitHub asociado se describe como "un LLM que es literalmente solo para codificación de ciencia de datos con Python". Sin embargo, la model card publicada en Hugging Face está vacía (solo contiene la licencia MIT), y no se proporcionan detalles técnicos adicionales como arquitectura, tamaño, contexto o datos de entrenamiento. El modelo fue creado el 27 de agosto de 2026 y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
-A pesar de la intención declarada en el repositorio, la falta de información pública hace que sea imposible evaluar su rendimiento, capacidades o requisitos de hardware con datos verificables. Por ello, esta ficha se basa únicamente en la información disponible en la página de HuggingFace y en el repositorio de GitHub, indicando explícitamente cuando un dato no está disponible.
+A pesar de la intención declarada en el repositorio, la falta de información pública hace que sea imposible evaluar su rendimiento, capacidades o requisitos de hardware con datos verificables. Por ello, esta ficha se basa únicamente en la información disponible en la página de Hugging Face y en el repositorio de GitHub, indicando explícitamente cuando un dato no está disponible.
 
 ## Especificaciones técnicas
 
@@ -65,6 +65,6 @@ No se dispone de datos suficientes para establecer una comparativa con otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashfordreyes/pythonllm
+- Hugging Face: https://huggingface.co/ashfordreyes/pythonllm
 - Repositorio GitHub: https://github.com/ashfordreyes/pythonllm
 - Perfil de GitHub del autor: https://github.com/ashfordreyes

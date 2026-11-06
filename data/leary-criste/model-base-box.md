@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`leary-criste/model-base-box` es un modelo de lenguaje publicado en HuggingFace por el usuario leary-criste. Segun los metadatos del repositorio, se trata de un modelo de gran tamano con 35.107.181.936 parametros (aproximadamente 35,1 mil millones) almacenados en formato safetensors, lo que situa el repositorio en 70,2 GB de peso total. La etiqueta `qwen3_5_moe` apunta a una arquitectura de tipo mezcla de expertos (MoE) heredada de la familia Qwen3.5, aunque no se ha publicado informacion oficial que confirme la configuracion de expertos ni el numero de parametros activos por token.
+`leary-criste/model-base-box` es un modelo de lenguaje publicado en Hugging Face por el usuario leary-criste. Segun los metadatos del repositorio, se trata de un modelo de gran tamano con 35.107.181.936 parametros (aproximadamente 35,1 mil millones) almacenados en formato safetensors, lo que situa el repositorio en 70,2 GB de peso total. La etiqueta `qwen3_5_moe` apunta a una arquitectura de tipo mezcla de expertos (MoE) heredada de la familia Qwen3.5, aunque no se ha publicado informacion oficial que confirme la configuracion de expertos ni el numero de parametros activos por token.
 
-El modelo se distribuye en acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. No se han publicado datos sobre licencia, idiomas soportados, pipeline de inferencia ni resultados de benchmarks, y el repositorio unicamente contiene pesos en safetensors (no hay versiones GGUF ni cuantizadas listas para usar). El numero de descargas registradas es de 2 y no tiene likes, lo que indica que es un modelo practicamente sin adopcion publica ni validacion por parte de la comunidad.
+El modelo se distribuye en acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. No se han publicado datos sobre licencia, idiomas soportados, pipeline de inferencia ni resultados de benchmarks, y el repositorio unicamente contiene pesos en safetensors (no hay versiones GGUF ni cuantizadas listas para usar). El numero de descargas registradas es de 2 y no tiene likes, lo que indica que es un modelo practicamente sin adopcion publica ni validacion por parte de la comunidad.
 
 Por su tamano y por la etiqueta de arquitectura MoE, el modelo encaja en el segmento de modelos densos/MoE de gama media-alta, pensado para inferencia en GPUs de centro de datos o en configuraciones multi-GPU. No obstante, al carecer de documentacion tecnica, el interes practico queda condicionado a la verificacion manual de sus capacidades reales una vez obtenido el acceso.
 
@@ -102,5 +102,5 @@ No es posible construir una comparativa fiable: el modelo no publica ficha tecni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leary-criste/model-base-box
+- Hugging Face: https://huggingface.co/leary-criste/model-base-box
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

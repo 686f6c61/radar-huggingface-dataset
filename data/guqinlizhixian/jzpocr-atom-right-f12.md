@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jzpocr-atom-right-f12 es un modelo de reconocimiento optico de caracteres (OCR) especializado en las grafias de la mano derecha de la notacion jianzipu (减字谱) empleada en las partituras de guqin. Lo publica el usuario `guqinlizhixian` en HuggingFace bajo licencia `other` y pipeline `image-classification`. No es un OCR de pagina completa: la entrada es el recorte de un unico caracter y la salida es una lectura estructurada en un lenguaje de dominio especifico, por ejemplo `ATOM|F:大;H:七八;R:抹;S:七`, en el que cada campo codifica tipo, digitacion, posicion de hui, accion de la mano derecha y cuerda.
+jzpocr-atom-right-f12 es un modelo de reconocimiento optico de caracteres (OCR) especializado en las grafias de la mano derecha de la notacion jianzipu (减字谱) empleada en las partituras de guqin. Lo publica el usuario `guqinlizhixian` en Hugging Face bajo licencia `other` y pipeline `image-classification`. No es un OCR de pagina completa: la entrada es el recorte de un unico caracter y la salida es una lectura estructurada en un lenguaje de dominio especifico, por ejemplo `ATOM|F:大;H:七八;R:抹;S:七`, en el que cada campo codifica tipo, digitacion, posicion de hui, accion de la mano derecha y cuerda.
 
 El peso corresponde a la generacion anterior del sistema (lote F12, tercera continuacion, agosto de 2026) y se empaqueta tal cual como candidato de produccion. El propio autor advierte de que no fue entrenado por el sistema autonomo `jzpOCR` y de que la lista de imagenes de entrenamiento no se incluye en el paquete, por lo que el origen exacto de los datos de entrenamiento no puede verificarse. El archivo de pesos es un `state_dict` de PyTorch de 13,9 MB, lo que lo hace desplegable en CPU.
 
@@ -19,9 +19,9 @@ Su relevancia es de nicho pero clara: cubre la digitalizacion de repertorio hist
 | Idiomas soportados | zh (notacion musical guqin; no es un modelo de lenguaje natural multilingue) |
 | Licencia | other |
 | Formato de pesos | PyTorch `state_dict` (`best_model.pt`), mas `vocab.json` con el vocabulario de inferencia congelado |
-| Pipeline (HuggingFace) | image-classification |
+| Pipeline (Hugging Face) | image-classification |
 | Tarea real | OCR de caracter individual (ATOM, mano derecha) con salida estructurada tipo DSL |
-| Tamano del repositorio | 0.0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0.0 GB segun la ficha de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-01 |
 | Fecha de ultima actualizacion | 2026-10-01 |
@@ -118,7 +118,7 @@ No se han identificado en la busqueda web otros modelos publicos comparables par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guqinlizhixian/jzpocr-atom-right-f12
+- Modelo en Hugging Face: https://huggingface.co/guqinlizhixian/jzpocr-atom-right-f12
 - Repositorio relacionado citado en la model card: https://huggingface.co/grydlmq/jzpocr-atom-right
 - Proyecto principal citado (`jzpOCR`), sin URL publica indicada en la informacion disponible: no disponible
 - Paper, blog o demo asociados: no disponible

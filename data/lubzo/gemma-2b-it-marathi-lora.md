@@ -24,7 +24,7 @@ El repositorio ocupa aproximadamente 0,1 GB y contiene unicamente los pesos del 
 | Datos de entrenamiento | lubzo/marathi-alpaca-cleaned-translated (51.760 pares, traduccion automatica de `unsloth/alpaca-cleaned`) |
 | Epocas y optimizador | 3 epocas, AdamW |
 | Libreria | peft (requiere transformers y el modelo base google/gemma-2b-it por separado) |
-| Fecha de publicacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 14 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
@@ -84,9 +84,9 @@ Lectura de los datos: el ajuste LoRA mejora de forma sustancial IndicSentiment (
 
 | Modelo | Parametros | Contexto | IndicSentiment (accuracy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lubzo/gemma-2b-it-marathi-lora | 2.000 M + adaptador LoRA r=16 | no disponible (base: 8.192 tokens declarados por Google) | 0,8710 | Gemma | HuggingFace, adaptador PEFT |
-| google/gemma-2b-it | 2.000 M | 8.192 tokens (segun el modelo base) | 0,5010 | Gemma | HuggingFace, pesos completos |
-| Otros adaptadores LoRA para marati | no disponible | no disponible | no disponible | no disponible | Rango similar en HuggingFace, sin datos verificados en esta busqueda |
+| lubzo/gemma-2b-it-marathi-lora | 2.000 M + adaptador LoRA r=16 | no disponible (base: 8.192 tokens declarados por Google) | 0,8710 | Gemma | Hugging Face, adaptador PEFT |
+| google/gemma-2b-it | 2.000 M | 8.192 tokens (segun el modelo base) | 0,5010 | Gemma | Hugging Face, pesos completos |
+| Otros adaptadores LoRA para marati | no disponible | no disponible | no disponible | no disponible | Rango similar en Hugging Face, sin datos verificados en esta busqueda |
 
 No se dispone de datos verificados de benchmarks para alternativas directas de ajuste en marati con el mismo arnes de evaluacion, por lo que la comparacion cuantitativa se limita al modelo base.
 
@@ -105,7 +105,7 @@ No se dispone de datos verificados de benchmarks para alternativas directas de a
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/lubzo/gemma-2b-it-marathi-lora
+- Adaptador en Hugging Face: https://huggingface.co/lubzo/gemma-2b-it-marathi-lora
 - Modelo base: https://huggingface.co/google/gemma-2b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/lubzo/marathi-alpaca-cleaned-translated
 - Dataset de origen: https://huggingface.co/datasets/unsloth/alpaca-cleaned

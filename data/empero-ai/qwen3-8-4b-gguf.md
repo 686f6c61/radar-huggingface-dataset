@@ -84,7 +84,7 @@ La comparativa se limita a los datos publicados en la model card; no hay informa
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/empero-ai/Qwen3.8-4B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/empero-ai/Qwen3.8-4B-GGUF)
 - [Modelo base Qwen3.8-4B](https://huggingface.co/empero-ai/Qwen3.8-4B)
 - [Arquitectura base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Repositorio llama.cpp](https://github.com/ggml-org/llama.cpp)

@@ -74,8 +74,8 @@ El adaptador supera el umbral de precision pero no el de F1. Tanto el modelo bas
 
 | Modelo | Parametros | Contexto | Precision / F1 (E1000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-1.7B + LoRA) | 1,7B | no disponible | 0,857 / 0,698 | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen3-1.7B sin entrenar | 1,7B | no disponible | 0,466 / 0,468 | Apache 2.0 | HuggingFace |
+| Este adaptador (Qwen3-1.7B + LoRA) | 1,7B | no disponible | 0,857 / 0,698 | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen3-1.7B sin entrenar | 1,7B | no disponible | 0,466 / 0,468 | Apache 2.0 | Hugging Face |
 | Claude Opus 5.5 (mejor prompt) | no disponible | no disponible | 0,624 / 0,687 | propietaria | API |
 | GPT-5.6 Sol (mejor prompt) | no disponible | no disponible | 0,419 / 0,568 | propietaria | API |
 
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos reportados en la model card; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Juchen/league-toxicity-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Juchen/league-toxicity-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo, datos y evaluaciones: https://github.com/joshuatagoe/league-toxicity-slm/tree/3745c5e9894ea5b6d5d57b6e945fd990ffd29154
 - Paper L2DTnH (Ave, Pekaric, Frohner, Apruzzese, 2026): https://arxiv.org/abs/2604.10175

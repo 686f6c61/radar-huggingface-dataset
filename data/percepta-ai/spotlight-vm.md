@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spotlight VM es un modelo de lenguaje experimental publicado por percepta-ai en HuggingFace. No es un LLM convencional: se trata de un transformer "Spotlight" construido a mano que actua como una maquina virtual capaz de ejecutar un subconjunto de Python (MicroPython v1.28.0). Sus pesos, alojados en el directorio `intelligence/`, suman menos de 100.000 parametros y no cambian durante el uso; la "memoria" del sistema se guarda aparte, en el directorio `memory/`, en formato safetensors.
+Spotlight VM es un modelo de lenguaje experimental publicado por percepta-ai en Hugging Face. No es un LLM convencional: se trata de un transformer "Spotlight" construido a mano que actua como una maquina virtual capaz de ejecutar un subconjunto de Python (MicroPython v1.28.0). Sus pesos, alojados en el directorio `intelligence/`, suman menos de 100.000 parametros y no cambian durante el uso; la "memoria" del sistema se guarda aparte, en el directorio `memory/`, en formato safetensors.
 
 El modelo acompana al articulo "Can LLMs Grow Their Own Capabilities?" y sirve como banco de pruebas para experimentos de crecimiento de capacidades, carga selectiva de conocimiento y ampliacion de inteligencia sin reentrenamiento. Resuelve tareas acotadas de ejecucion de codigo (problemas 1 a 3 de Project Euler, calculo de tramos de impuestos, reconocimiento de un digito de MNIST) generando token a token la salida del interprete.
 
@@ -23,7 +23,7 @@ Es relevante ahora por su enfoque poco habitual de separar pesos fijos y memoria
 | Libreria | transformers (requiere `trust_remote_code=True`) |
 | Pipeline | text-generation |
 | Tamano del repositorio | 0.0 GB |
-| Descargas / likes en HuggingFace | 84 / 10 |
+| Descargas / likes en Hugging Face | 84 / 10 |
 | Fecha de creacion | 2026-09-29 |
 | Fecha de actualizacion | 2026-10-05 |
 
@@ -95,13 +95,13 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 - Sin coma flotante: el build de MicroPython v1.28.0 empleado no soporta operaciones en coma flotante, lo que limita los calculos a aritmetica entera.
 - Pesos fijos: los pesos de `intelligence/` nunca cambian, por lo que la ampliacion de capacidades depende de la memoria externa y no del ajuste del modelo.
 - Codigo remoto: requiere `trust_remote_code=True` para cargarse con transformers, lo que implica ejecutar codigo del autor; conviene revisarlo antes de usarlo en entornos sensibles.
-- Madurez y adopcion: 84 descargas y 10 likes en HuggingFace; es un artefacto de investigacion con poca validacion externa.
+- Madurez y adopcion: 84 descargas y 10 likes en Hugging Face; es un artefacto de investigacion con poca validacion externa.
 - Uso comercial: la licencia Apache 2.0 permite uso comercial, pero el modelo esta pensado para experimentacion y sus casos de uso practicos son muy acotados.
 - Caveat de produccion: los tiempos de ejecucion (minutos por ejemplo, media hora para MNIST) lo hacen inviable para cargas de trabajo en tiempo real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/percepta-ai/spotlight-vm
+- Modelo en Hugging Face: https://huggingface.co/percepta-ai/spotlight-vm
 - Blog del autor sobre Spotlight Memory: https://percepta.ai/blog/spotlight-memory
 - Blog del autor "Can LLMs Grow Their Own Capabilities?": https://percepta.ai/blog/can-llms-grow-their-own-capabilities
 - Licencia Apache 2.0 referenciada en el repositorio: `LICENSE.md` (no se proporciona URL directa en la informacion disponible)

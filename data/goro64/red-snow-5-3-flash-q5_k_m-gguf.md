@@ -46,7 +46,7 @@ La validación cubrió todos los shards, límites de tensores, nombres duplicado
 - Soporte de contexto largo en teoría: la configuración fuente declara 1.048.576 tokens, aunque el autor no valida esa longitud en esta build.
 - Decodificación especulativa potencial mediante la capa NextN/MTP conservada, sin garantía de funcionamiento en aplicaciones concretas según el propio autor.
 - Capacidad multilingüe limitada al inglés según la model card (etiqueta `language: en`).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags de HuggingFace).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
 - No incluye proyector de visión: es un modelo exclusivamente de texto.
 - No se documentan en la información disponible capacidades de tool calling, function calling ni razonamiento multi-paso con agentes.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/Goro64/RED-SNOW-5.3-FLASH-Q5_K_M-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/Goro64/RED-SNOW-5.3-FLASH-Q5_K_M-GGUF
 - Modelo base BF16: https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
 - Modelo fundacional GLM-5.3-Flash-BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Perfil del cuantizador: https://huggingface.co/Goro64

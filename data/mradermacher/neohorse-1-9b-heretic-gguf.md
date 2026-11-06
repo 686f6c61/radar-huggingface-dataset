@@ -21,7 +21,7 @@ La principal aportacion de este repositorio es ofrecer el modelo en formato GGUF
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura exacta del modelo base NeoHorse-1-9B-heretic. El repositorio de HuggingFace lo identifica como un modelo de la familia "transformers", sin especificar la variante concreta (por ejemplo, atencion estandar, MTP u otras). Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, composicion del dataset ni procesos de alineacion como RLHF o DPO. Las etiquetas "heretic", "decensored" y "abliterated" sugieren que se aplicaron tecnicas de eliminacion de alineacion, aunque los detalles metodologicos no se documentan. La cuantizacion de mradermacher es un proceso estandar de conversion de pesos a formato GGUF con distintas precisiones, sin cambios en el comportamiento del modelo original.
+No se ha publicado informacion detallada sobre la arquitectura exacta del modelo base NeoHorse-1-9B-heretic. El repositorio de Hugging Face lo identifica como un modelo de la familia "transformers", sin especificar la variante concreta (por ejemplo, atencion estandar, MTP u otras). Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, composicion del dataset ni procesos de alineacion como RLHF o DPO. Las etiquetas "heretic", "decensored" y "abliterated" sugieren que se aplicaron tecnicas de eliminacion de alineacion, aunque los detalles metodologicos no se documentan. La cuantizacion de mradermacher es un proceso estandar de conversion de pesos a formato GGUF con distintas precisiones, sin cambios en el comportamiento del modelo original.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparativos para estos modelos. La diferen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-GGUF
 - Modelo base original: https://huggingface.co/Dingdust/NeoHorse-1-9B-heretic
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/NeoHorse-1-9B-heretic-i1-GGUF
 - Solicitudes y preguntas de mradermacher: https://huggingface.co/mradermacher/model_requests

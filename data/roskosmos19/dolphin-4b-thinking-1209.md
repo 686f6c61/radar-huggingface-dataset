@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dolphin-4B-Thinking-1209 es un checkpoint de pesos publicado en HuggingFace por el usuario roskosmos19, con 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) y un repositorio de 8,1 GB. El nombre del repositorio sugiere una adaptación de la familia Dolphin (conjunto de ajustes finos orientados a reducir el filtrado de contenido) con algún tipo de componente de razonamiento explícito ("Thinking"), pero esta interpretación procede únicamente de la nomenclatura y no está confirmada por ninguna documentación publicada.
+Dolphin-4B-Thinking-1209 es un checkpoint de pesos publicado en Hugging Face por el usuario roskosmos19, con 4.022.468.096 parámetros (aproximadamente 4,02 mil millones) y un repositorio de 8,1 GB. El nombre del repositorio sugiere una adaptación de la familia Dolphin (conjunto de ajustes finos orientados a reducir el filtrado de contenido) con algún tipo de componente de razonamiento explícito ("Thinking"), pero esta interpretación procede únicamente de la nomenclatura y no está confirmada por ninguna documentación publicada.
 
 La información disponible es mínima: el repositorio no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva, y solo expone la etiqueta `safetensors` y la región `us`. Las descargas registradas son cero y los "likes" uno, lo que indica que se trata de un artefacto prácticamente sin adopción ni validación por parte de la comunidad.
 
@@ -104,7 +104,7 @@ La diferencia práctica más relevante no es de tamaño, sino de trazabilidad: l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roskosmos19/Dolphin-4B-Thinking-1209
+- Repositorio en Hugging Face: https://huggingface.co/roskosmos19/Dolphin-4B-Thinking-1209
 - Paper, blog o repositorio de código del autor: no disponible.
 - Demos o espacios asociados: no disponible.
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante. La búsqueda devolvió únicamente listados de comercio electrónico sin relación con el modelo (páginas de Amazon.de, OTTO y Zara sobre pantalones cortos de mezclilla), por lo que no se incluye ninguno de ellos como fuente.

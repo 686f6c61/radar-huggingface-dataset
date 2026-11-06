@@ -93,7 +93,7 @@ No se dispone de datos comparativos con otras alternativas de la misma categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090-vllm
+- Repositorio Hugging Face: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090-vllm
 - Artefacto nativo previo: https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE

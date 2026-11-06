@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-b1k-solution-task12-fullft-2195cc1bb036` es un artefacto de pesos publicado en HuggingFace por el usuario `davidwdw` el 29 de septiembre de 2026. Segun la propia model card, se trata de un "versioned fleet archive" asociado a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`, en el nivel "task12 full finetune" con el paso de entrenamiento `selected_step_250`. Es decir, no es un modelo fundacional nuevo ni un lanzamiento de producto, sino una instantanea de pesos resultante de un ajuste fino completo (full fine-tuning) sobre una base no declarada, presumiblemente generada en el contexto de un banco de tareas o benchmark interno.
+`davidwdw/fa-b1k-solution-task12-fullft-2195cc1bb036` es un artefacto de pesos publicado en Hugging Face por el usuario `davidwdw` el 29 de septiembre de 2026. Segun la propia model card, se trata de un "versioned fleet archive" asociado a una receta canonica denominada `historical_centre_behavior1k_solution_finetunes`, en el nivel "task12 full finetune" con el paso de entrenamiento `selected_step_250`. Es decir, no es un modelo fundacional nuevo ni un lanzamiento de producto, sino una instantanea de pesos resultante de un ajuste fino completo (full fine-tuning) sobre una base no declarada, presumiblemente generada en el contexto de un banco de tareas o benchmark interno.
 
 El repositorio ocupa 12,6 GB, un tamano coherente con pesos en precision de 16 bits de un modelo del orden de 6.000 a 6.500 millones de parametros, aunque el autor no declara la arquitectura, el numero de parametros ni la longitud de contexto. Tampoco se especifican licencia, idiomas soportados, pipeline de inferencia ni tipos de cuantizacion disponibles: la ficha publica es practicamente un manifiesto de archivado, no una model card al uso.
 
@@ -45,7 +45,7 @@ Dado que la model card no describe capacidades, los siguientes escenarios son us
 - Pruebas de regresion entre checkpoints: al existir un paso seleccionado concreto (250), permite medir como varia el comportamiento respecto a otros pasos del mismo entrenamiento archivado.
 - Base para evaluacion interna en tareas especificas de la familia `task12`: si el equipo dispone de la receta original, puede medir la transferencia del ajuste a tareas cercanas antes de invertir en un entrenamiento propio.
 - Punto de partida para un ajuste posterior: tecnicamente es posible continuar el entrenamiento desde estos pesos, aunque sin conocer la base subyacente ni la licencia el uso comercial queda en el aire.
-- Docencia y experimentacion sobre artefactos de HuggingFace: resulta un ejemplo util de repositorio sin model card funcional y de la importancia de verificar hashes y procedencia antes de desplegar.
+- Docencia y experimentacion sobre artefactos de Hugging Face: resulta un ejemplo util de repositorio sin model card funcional y de la importancia de verificar hashes y procedencia antes de desplegar.
 - Analisis de tamano y almacenamiento: con 12,6 GB, el repo permite estimar requisitos de disco y de transferencia para flotas de snapshots similares.
 
 ## Benchmarks y rendimiento
@@ -80,6 +80,6 @@ No disponible. No se conocen modelos comparables declarados por el autor, y al n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-task12-fullft-2195cc1bb036
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-task12-fullft-2195cc1bb036
 - Receta canonica `historical_centre_behavior1k_solution_finetunes`: no se proporciona enlace.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

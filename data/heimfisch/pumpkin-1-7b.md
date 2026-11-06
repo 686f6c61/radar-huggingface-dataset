@@ -93,9 +93,9 @@ La comparativa se establece con el modelo base y con alternativas de tamaño sim
 
 | Modelo | Parámetros | Orientación | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pumpkin-1.7B | 1,7B (adaptador LoRA sobre Qwen3-1.7B) | Orquestación de herramientas y salida JSON en alemán/inglés | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-1.7B | 1,7B | Modelo base generalista, multilingüe | Apache 2.0 | HuggingFace |
-| Alternativas de ~1,5-2B tipo instruct (por ejemplo Qwen2.5-1.5B-Instruct o Llama-3.2-1B-Instruct) | 1-2B | Asistente generalista, sin contrato JSON específico | Apache 2.0 en el caso de Qwen; licencia comunitaria propia en el caso de Llama | HuggingFace |
+| Pumpkin-1.7B | 1,7B (adaptador LoRA sobre Qwen3-1.7B) | Orquestación de herramientas y salida JSON en alemán/inglés | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-1.7B | 1,7B | Modelo base generalista, multilingüe | Apache 2.0 | Hugging Face |
+| Alternativas de ~1,5-2B tipo instruct (por ejemplo Qwen2.5-1.5B-Instruct o Llama-3.2-1B-Instruct) | 1-2B | Asistente generalista, sin contrato JSON específico | Apache 2.0 en el caso de Qwen; licencia comunitaria propia en el caso de Llama | Hugging Face |
 
 Diferencias clave frente a las alternativas generalistas: Pumpkin no compite en conocimiento general ni en razonamiento, sino en fiabilidad del contrato de salida y en la selección de herramientas con esquemas suministrados en tiempo de ejecución. Como contrapartida, no tiene benchmarks generalistas publicados ni adopción comunitaria, mientras que los modelos base y los instruct de referencia sí cuentan con evaluaciones públicas y ecosistema amplio.
 
@@ -115,6 +115,6 @@ Diferencias clave frente a las alternativas generalistas: Pumpkin no compite en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heimfisch/Pumpkin-1.7B
+- Modelo en Hugging Face: https://huggingface.co/Heimfisch/Pumpkin-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos); los resultados obtenidos no guardan relación con Pumpkin-1.7B.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-uncensored-rad es un contenedor de inferencia en formato `.rad` que empaqueta el modelo DeepSeek-V4.1-Flash-1017 de DeepSeek (763.000 millones de parámetros) cuantizado y modificado para ejecutarse en el motor de inferencia radiance sobre GPUs AMD RDNA4 con ROCm. Su autor es el usuario bakon3 de HuggingFace, y el repo no ha registrado descargas todavía, lo que indica que es un artefacto muy nicho, publicado recientemente (octubre de 2026).
+DeepSeek-V4.1-Flash-1017-uncensored-rad es un contenedor de inferencia en formato `.rad` que empaqueta el modelo DeepSeek-V4.1-Flash-1017 de DeepSeek (763.000 millones de parámetros) cuantizado y modificado para ejecutarse en el motor de inferencia radiance sobre GPUs AMD RDNA4 con ROCm. Su autor es el usuario bakon3 de Hugging Face, y el repo no ha registrado descargas todavía, lo que indica que es un artefacto muy nicho, publicado recientemente (octubre de 2026).
 
 El modelo base es un LLM de texto de gran escala con expertos enrutados (MoE), pesos oficiales en fp8 para las partes densas y fp4 para los expertos, licencia MIT. Esta variante añade dos transformaciones: una cuantización mixta muy agresiva (mezcla UD-IQ1_S de Unsloth, con expertos en iq1_s/iq2_xxs, ~2 bits por peso en los expertos) y una abliteración parcial que elimina la dirección de rechazo en las proyecciones de salida de atención de las capas 11–28 (18 de las 36 capas, al 75 % de la fuerza del método de huihui).
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bakon3/DeepSeek-V4.1-Flash-1017-uncensored-rad
+- Modelo en Hugging Face: https://huggingface.co/bakon3/DeepSeek-V4.1-Flash-1017-uncensored-rad
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor de inferencia radiance: https://codeberg.org/StillDeadcode/radiance
 - Instrucciones de ejecución (RUNNING.md): https://huggingface.co/bakon3/DeepSeek-V4.1-Flash-1017-uncensored-rad/blob/main/RUNNING.md

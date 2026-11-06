@@ -53,5 +53,5 @@ No se dispone de información sobre modelos comparables. Al ser un adaptador exp
 
 ## Enlaces
 
-- [HuggingFace - dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_phi-4_seed42](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_phi-4_seed42)
+- [Hugging Face - dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_phi-4_seed42](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_phi-4_seed42)
 - [Tinker - Thinking Machines](https://thinkingmachines.ai/tinker/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — M-SimOW (beta=0.8, lr=0.004) es un checkpoint experimental publicado por el usuario j0no12 en HuggingFace, correspondiente al brazo M-SimOW de un barrido de investigación sobre optimizadores. No es un modelo de lenguaje destinado a uso práctico: es un artefacto de reproducibilidad científica cuyo objetivo es permitir comparar el comportamiento de distintos optimizadores bajo condiciones de entrenamiento idénticas. El backbone es un decoder transformer denso de tipo "matched dense-deep" con vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y MLP con gating de 148 dimensiones.
+Nero Optimizer Work — M-SimOW (beta=0.8, lr=0.004) es un checkpoint experimental publicado por el usuario j0no12 en Hugging Face, correspondiente al brazo M-SimOW de un barrido de investigación sobre optimizadores. No es un modelo de lenguaje destinado a uso práctico: es un artefacto de reproducibilidad científica cuyo objetivo es permitir comparar el comportamiento de distintos optimizadores bajo condiciones de entrenamiento idénticas. El backbone es un decoder transformer denso de tipo "matched dense-deep" con vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y MLP con gating de 148 dimensiones.
 
 El modelo tiene aproximadamente 999.680 parámetros almacenados y una longitud de contexto de 128 tokens, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier LLM de uso general. Se entrenó durante 500 millones de tokens con el backend Apple MLX, lotes de 32 ejemplos y una tasa de aprendizaje de 0,004 con beta de momento 0,8, alcanzando una pérdida final de entrenamiento de 3,430050. La velocidad registrada al final del entrenamiento fue de 351.773 tokens/s.
 
@@ -84,7 +84,7 @@ La información disponible no incluye otros checkpoints comparables con datos pu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nero Optimizer Work — M-SimOW (beta=0,8, lr=0,004) | ~999.680 | 128 tokens | Perdida de entrenamiento 3,430050 | No disponible | HuggingFace, pesos MLX (.npz) |
+| Nero Optimizer Work — M-SimOW (beta=0,8, lr=0,004) | ~999.680 | 128 tokens | Perdida de entrenamiento 3,430050 | No disponible | Hugging Face, pesos MLX (.npz) |
 | Otros brazos del barrido Nero Optimizer Work | No disponible | 128 tokens (compartido) | No disponible | No disponible | No disponible |
 | LLM de produccion de uso general | Ordenes de magnitud superior | Miles de tokens | No comparable | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ Cualquier comparación con modelos de producción tipo familia Llama, Qwen o Mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p8-lr0p004
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p8-lr0p004
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

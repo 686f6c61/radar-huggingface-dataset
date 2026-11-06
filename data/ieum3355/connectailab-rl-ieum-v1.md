@@ -69,8 +69,8 @@ El autor advierte que el beneficio simulado corresponde a la media de dos meses 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ieum-v1 | 0,8B + LoRA | no disponible | RL (GRPO) para seleccion de opciones en simulador de negocio | Apache 2.0 | HuggingFace (24 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | HuggingFace |
+| connectailab-rl-ieum-v1 | 0,8B + LoRA | no disponible | RL (GRPO) para seleccion de opciones en simulador de negocio | Apache 2.0 | Hugging Face (24 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | Hugging Face |
 | Politica PPO del simulador CONNECT TYCOON | no disponible (politica pequena) | no disponible | RL clasico (PPO) sobre el simulador | no disponible | Referenciada en el repositorio del proyecto |
 
 No se dispone de datos publicados de benchmarks estandar que permitan comparar este adaptador con otros modelos de decision de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos publicados de benchmarks estandar que permitan comparar e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ieum3355/connectailab-rl-ieum-v1
+- Modelo en Hugging Face: https://huggingface.co/ieum3355/connectailab-rl-ieum-v1
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

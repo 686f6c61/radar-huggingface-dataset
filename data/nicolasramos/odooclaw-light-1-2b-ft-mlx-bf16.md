@@ -90,7 +90,7 @@ Segun los autores, el modelo de 1.2B es el punto optimo: los de 0.35B colapsan c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft-mlx-bf16
+- Repositorio Hugging Face: https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft-mlx-bf16
 - Version 4-bit MLX: https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft-mlx
 - Version GGUF: https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft
 - Coleccion OdooClaw: https://huggingface.co/collections/nicolasramos/odooclaw

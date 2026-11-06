@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Modelo base | Entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo | 3,4B | Qwen/Qwen2.5-3B | 900 pasos de GRPO (RLVR) sobre Countdown | no disponible en la model card | no disponible | HuggingFace |
-| philschmid/qwen-2.5-3b-r1-countdown | ~3,1B | Qwen/Qwen2.5-3B-Instruct | TRL + GRPO sobre Countdown | no disponible en la busqueda | no disponible | HuggingFace |
-| leon2k2k2k/qwen2.5-3b-countdown-grpo | no disponible | Qwen2.5-3B (presumiblemente) | GRPO sobre Countdown | no disponible | no disponible | HuggingFace |
-| binghe2727/qwen-2.5-3b-r1-countdown | ~3,1B | Qwen/Qwen2.5-3B-Instruct | TRL + GRPO sobre Countdown | no disponible | no disponible | HuggingFace y Featherless |
+| DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo | 3,4B | Qwen/Qwen2.5-3B | 900 pasos de GRPO (RLVR) sobre Countdown | no disponible en la model card | no disponible | Hugging Face |
+| philschmid/qwen-2.5-3b-r1-countdown | ~3,1B | Qwen/Qwen2.5-3B-Instruct | TRL + GRPO sobre Countdown | no disponible en la busqueda | no disponible | Hugging Face |
+| leon2k2k2k/qwen2.5-3b-countdown-grpo | no disponible | Qwen2.5-3B (presumiblemente) | GRPO sobre Countdown | no disponible | no disponible | Hugging Face |
+| binghe2727/qwen-2.5-3b-r1-countdown | ~3,1B | Qwen/Qwen2.5-3B-Instruct | TRL + GRPO sobre Countdown | no disponible | no disponible | Hugging Face y Featherless |
 
 No se dispone de resultados de benchmarks comparables publicados en la información proporcionada para ninguno de los modelos alternativos, por lo que la comparación queda limitada a procedencia, tamaño y receta de entrenamiento.
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks comparables publicados en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo
+- Modelo en Hugging Face: https://huggingface.co/DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo
 - Sitio del proyecto Upbringing: https://denniskoshta.github.io/upbringing/
 - Repositorio con código, configuraciones y evaluación: https://github.com/DennisKoshta/upbringing
 - Plan del proyecto: https://github.com/DennisKoshta/upbringing/blob/main/PLAN.md

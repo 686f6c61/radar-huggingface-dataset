@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-hc3 es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario suraj-phanindra en HuggingFace. No se trata de un modelo de lenguaje, sino de una policy neuronal de reinforcement learning exportada a ONNX que genera una marcha perpetua para el robot: se ejecuta de forma continua hasta que se le indique lo contrario. Está diseñada para el robot microduck, que trabaja con observaciones de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz.
+microduck-sprint-hc3 es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario suraj-phanindra en Hugging Face. No se trata de un modelo de lenguaje, sino de una policy neuronal de reinforcement learning exportada a ONNX que genera una marcha perpetua para el robot: se ejecuta de forma continua hasta que se le indique lo contrario. Está diseñada para el robot microduck, que trabaja con observaciones de 61 dimensiones y 14 acciones a una frecuencia de control de 50 Hz.
 
 El modelo es un fine-tune de juicenv/microduck-sprint-es10 mediante elitist hill climbing sobre la puntuación de la Arena. La normalización de las observaciones está integrada dentro del propio fichero `policy.onnx`, de modo que el consumidor puede alimentar observaciones en bruto sin preprocesado adicional. Se distribuye con un `manifest.json` que sigue el esquema 2 del manifiesto de políticas de microduck.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Relación | Observaciones | Acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| suraj-phanindra/microduck-sprint-hc3 | Modelo evaluado | 61 | 14 | 50 Hz | no disponible | HuggingFace |
-| juicenv/microduck-sprint-es10 | Modelo base (finetune) | 61 | 14 | 50 Hz | no disponible | HuggingFace |
+| suraj-phanindra/microduck-sprint-hc3 | Modelo evaluado | 61 | 14 | 50 Hz | no disponible | Hugging Face |
+| juicenv/microduck-sprint-es10 | Modelo base (finetune) | 61 | 14 | 50 Hz | no disponible | Hugging Face |
 | Otras políticas de microduck | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otras alternativas comparables más allá del modelo base del que deriva.
@@ -88,7 +88,7 @@ No se dispone de información sobre otras alternativas comparables más allá de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-sprint-hc3
+- Modelo en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-sprint-hc3
 - Modelo base: https://huggingface.co/juicenv/microduck-sprint-es10
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (referenciado en la model card): `pollen-robotics/microduck_rl`, rama `main`, commit `6ff40704a` (URL no proporcionada)

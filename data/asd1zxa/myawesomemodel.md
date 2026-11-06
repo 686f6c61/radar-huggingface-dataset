@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD1ZXA bajo licencia MIT. La informacion disponible es escasa y presenta contradicciones internas notables: los metadatos del repositorio lo etiquetan como `transformers`, `pytorch`, `bert`, con pipeline `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento conversacional con API propia, modo de pensamiento y mejoras en function calling. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no se listan ficheros de pesos.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD1ZXA bajo licencia MIT. La informacion disponible es escasa y presenta contradicciones internas notables: los metadatos del repositorio lo etiquetan como `transformers`, `pytorch`, `bert`, con pipeline `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento conversacional con API propia, modo de pensamiento y mejoras en function calling. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no se listan ficheros de pesos.
 
 La model card incluye una tabla de benchmarks con nombres genericos (Model1, Model2, Model1-v2, MyAwesomeModel) y valores que no corresponden a ninguna evaluacion estandar publica identificable, ademas de una referencia a AIME 2025 con una mejora del 70% al 87,5% de acierto. No se especifican parametros, longitud de contexto, tokenizador, datos de entrenamiento ni idiomas soportados. Todo apunta a una plantilla sin completar o a un artefacto de prueba mas que a un modelo listo para evaluacion o uso en produccion.
 
@@ -117,7 +117,7 @@ No disponible. No es posible establecer una comparativa fiable porque:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD1ZXA/MyAwesomeModel
+- Hugging Face: https://huggingface.co/ASD1ZXA/MyAwesomeModel
 - Repositorio de codigo del autor: no disponible (la model card lo menciona pero no lo enlaza)
 - Web oficial con chat y API: no disponible (la model card la menciona sin URL)
 - Paper tecnico: no disponible

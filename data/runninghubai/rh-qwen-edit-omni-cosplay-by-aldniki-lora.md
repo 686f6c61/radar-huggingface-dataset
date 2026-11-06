@@ -21,7 +21,7 @@ Por tanto, la ficha que sigue recoge exclusivamente lo verificable en la informa
 | Licencia | No disponible; la model card remite a la licencia del proyecto original o del modelo upstream, sin concretarla |
 | Formato de pesos | safetensors (`aldniki_qwen_omni_cosplay_v01.safetensors`, 281 MiB) |
 
-Datos adicionales verificables: ID de HuggingFace `RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora`, autor RunningHubAI, pipeline `image-text-to-image`, etiquetas `comfyui`, `lora`, `image-text-to-image`, `region:us`, tamano del repositorio 0,3 GB, creado el 2026-10-09 y actualizado el 2026-10-13.
+Datos adicionales verificables: ID de Hugging Face `RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora`, autor RunningHubAI, pipeline `image-text-to-image`, etiquetas `comfyui`, `lora`, `image-text-to-image`, `region:us`, tamano del repositorio 0,3 GB, creado el 2026-10-09 y actualizado el 2026-10-13.
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora
 - Model card en chino: README_cn.md (referenciado en el propio repositorio)
 - Proyecto original del modelo: https://www.runninghub.ai/model/public/1965072078124797953
 - Pagina del autor: https://www.runninghub.ai/user-center/1954198046710210562

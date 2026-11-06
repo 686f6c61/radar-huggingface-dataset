@@ -6,7 +6,7 @@ Pocket-TTS es un modelo de texto a voz (text-to-speech, TTS) desarrollado por Ky
 
 Este checkpoint tiene 340 millones de parámetros y está etiquetado explícitamente como "validation-run" y "not-for-production", lo que indica que es un artefacto de investigación intermedio, no un modelo final pulido. Su relevancia radica en que demuestra la viabilidad de adaptar Pocket-TTS a idiomas distintos del inglés original, abriendo la puerta a despliegues de TTS en japonés con requisitos de hardware modestos.
 
-El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de poder descargar los pesos. La licencia es CC-BY-4.0, que permite uso comercial con atribución.
+El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de poder descargar los pesos. La licencia es CC-BY-4.0, que permite uso comercial con atribución.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ La comparativa se basa en los datos disponibles. StableTTS es un modelo de TTS q
 ## Limitaciones y advertencias
 
 - Checkpoint de validacion, no apto para produccion: la etiqueta "not-for-production" es explicita. La calidad de voz y la robustez no estan garantizadas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Idioma limitado: solo japones. No hay soporte multilingue en este checkpoint.
 - Informacion tecnica incompleta: no se detallan arquitectura, dataset de entrenamiento ni benchmarks.
 - Riesgo de alucinacion o errores de pronunciacion: como cualquier modelo TTS, puede producir lecturas incorrectas de nombres propios o terminos tecnicos.
@@ -79,7 +79,7 @@ La comparativa se basa en los datos disponibles. StableTTS es un modelo de TTS q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayousanz/pocket-tts-ja-phase1
+- Repositorio Hugging Face: https://huggingface.co/ayousanz/pocket-tts-ja-phase1
 - Perfil del autor: https://huggingface.co/ayousanz
 - Repositorio Pocket-TTS (Kyutai Labs): https://github.com/kyutai-labs/pocket-tts
 - Pagina del proyecto Pocket-TTS: https://kyutai-labs.github.io/pocket-tts/

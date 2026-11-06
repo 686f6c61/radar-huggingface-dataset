@@ -82,8 +82,8 @@ La informacion disponible solo permite comparar la conversion con su modelo de o
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| audreyt/Kolibri-1-NVFP4-W4A16 | 40.256.034.560 | 262.144 nativos / 1.048.576 anunciados (sin verificar) | NVFP4 W4A16, group size 16 | apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Aleph-Alpha/Kolibri-1 (origen) | no disponible | 262.144 nativos / 1.048.576 anunciados | block-FP8 (revision `e52eb46`) | apache-2.0 | HuggingFace |
+| audreyt/Kolibri-1-NVFP4-W4A16 | 40.256.034.560 | 262.144 nativos / 1.048.576 anunciados (sin verificar) | NVFP4 W4A16, group size 16 | apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Aleph-Alpha/Kolibri-1 (origen) | no disponible | 262.144 nativos / 1.048.576 anunciados | block-FP8 (revision `e52eb46`) | apache-2.0 | Hugging Face |
 | Otros MoE de ~40 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La informacion disponible solo permite comparar la conversion con su modelo de o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audreyt/Kolibri-1-NVFP4-W4A16
+- Repositorio Hugging Face: https://huggingface.co/audreyt/Kolibri-1-NVFP4-W4A16
 - Modelo original: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Plugin oficial de vLLM de Aleph Alpha: https://github.com/Aleph-Alpha/aleph-alpha-inference
 - NVIDIA ModelOpt: https://github.com/NVIDIA/Model-Optimizer

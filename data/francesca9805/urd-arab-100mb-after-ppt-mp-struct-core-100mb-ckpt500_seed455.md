@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un checkpoint de generacion de texto de aproximadamente 125 millones de parametros, publicado por el usuario `francesca9805`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. Por su nomenclatura ("urd-arab", "100mb", "tokenizers") y por la trazabilidad del experimento en Weights & Biases, todo apunta a un artefacto de investigacion academica centrado en tokenizacion y modelado de lenguaje para lenguas de bajos recursos, presumiblemente urdu y arabe.
+El modelo `urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un checkpoint de generacion de texto de aproximadamente 125 millones de parametros, publicado por el usuario `francesca9805`. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455`, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. Por su nomenclatura ("urd-arab", "100mb", "tokenizers") y por la trazabilidad del experimento en Weights & Biases, todo apunta a un artefacto de investigacion academica centrado en tokenizacion y modelado de lenguaje para lenguas de bajos recursos, presumiblemente urdu y arabe.
 
-La arquitectura declarada en las etiquetas de HuggingFace es GPT-2, es decir, un transformer decoder-only causal, con 124.770.816 parametros reales confirmados por los pesos en safetensors. El repositorio ocupa 7,5 GB, un tamano desproporcionado para un modelo de este tamano, lo que sugiere que incluye multiples checkpoints de entrenamiento o estados del optimizador junto a los pesos finales. No se declara licencia, idiomas ni resultados de evaluacion.
+La arquitectura declarada en las etiquetas de Hugging Face es GPT-2, es decir, un transformer decoder-only causal, con 124.770.816 parametros reales confirmados por los pesos en safetensors. El repositorio ocupa 7,5 GB, un tamano desproporcionado para un modelo de este tamano, lo que sugiere que incluye multiples checkpoints de entrenamiento o estados del optimizador junto a los pesos finales. No se declara licencia, idiomas ni resultados de evaluacion.
 
 Es relevante como ejemplo de pipeline experimental reproducible (TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0) y como punto de partida para estudiar el efecto del ajuste SFT sobre un modelo base muy pequeno. No obstante, con cero descargas y cero likes en el momento de la consulta, carece de validacion por parte de la comunidad y no debe considerarse un modelo listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental SFT |
+| urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental SFT |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia de la arquitectura; sin ajuste SFT |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Version destilada, mas rapida |
-| Modelo base `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455` | no disponible | no disponible | no disponible | HuggingFace | Modelo del que deriva este checkpoint |
+| Modelo base `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455` | no disponible | no disponible | no disponible | Hugging Face | Modelo del que deriva este checkpoint |
 
 No se dispone de datos de rendimiento para comparar mas alla de las especificaciones estructurales.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para comparar mas alla de las especificaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6elvgfai
 - Repositorio de TRL: https://github.com/huggingface/trl

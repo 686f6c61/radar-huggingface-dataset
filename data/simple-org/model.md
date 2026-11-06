@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SIMPLE-org/model es un modelo publicado en HuggingFace por la organizacion SIMPLE-org bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso. El repositorio ocupa 11,2 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de escala media (del orden de decenas de miles de millones de parametros en precision completa, o una variante cuantizada de mayor tamano), aunque no es posible confirmar el numero exacto de parametros a partir de la informacion disponible.
+SIMPLE-org/model es un modelo publicado en Hugging Face por la organizacion SIMPLE-org bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso. El repositorio ocupa 11,2 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de escala media (del orden de decenas de miles de millones de parametros en precision completa, o una variante cuantizada de mayor tamano), aunque no es posible confirmar el numero exacto de parametros a partir de la informacion disponible.
 
 El modelo se creo el 3 de noviembre de 2026 y se actualizo apenas un minuto y medio despues, sin descargas ni interacciones registradas en el momento de redactar esta ficha. No hay pipeline declarado, no se especifican idiomas soportados ni se publican resultados de evaluacion. Se trata, por tanto, de un artefacto recien subido y sin documentacion tecnica.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente por el autor, aunque es esperable en un modelo de lenguaje publicado en HuggingFace.
+- Generacion de texto: no confirmada explicitamente por el autor, aunque es esperable en un modelo de lenguaje publicado en Hugging Face.
 - Razonamiento, codigo y matematicas: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -89,5 +89,5 @@ La comparacion solo es orientativa por tamano de repositorio; no se dispone de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SIMPLE-org/model
+- Hugging Face: https://huggingface.co/SIMPLE-org/model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

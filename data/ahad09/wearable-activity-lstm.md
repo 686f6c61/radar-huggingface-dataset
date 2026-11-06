@@ -84,5 +84,5 @@ No hay datos de otros modelos públicos de HAR (como CNN-LSTM o transformadores)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahad09/wearable-activity-lstm
+- Modelo en Hugging Face: https://huggingface.co/Ahad09/wearable-activity-lstm
 - No se han encontrado otros enlaces oficiales (paper, repositorio, demo) en la información disponible.

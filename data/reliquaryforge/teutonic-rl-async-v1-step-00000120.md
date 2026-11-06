@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (gated-DeltaNet + softmax) | Apache-2.0 | HuggingFace, 26 descargas |
-| Qwen/Qwen3.5-9B-Base | ~9B | no disponible | Transformer denso | no disponible | HuggingFace |
-| dendriteholdings/Teutonic-I | no disponible | no disponible | Hibrida con GLA | Apache-2.0 | HuggingFace |
+| Teutonic-I Reliquary SFT (este) | 8,95B | 64k | Hibrida (gated-DeltaNet + softmax) | Apache-2.0 | Hugging Face, 26 descargas |
+| Qwen/Qwen3.5-9B-Base | ~9B | no disponible | Transformer denso | no disponible | Hugging Face |
+| dendriteholdings/Teutonic-I | no disponible | no disponible | Hibrida con GLA | Apache-2.0 | Hugging Face |
 | Qwen3.8-27B (profesor) | ~27B | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa con alternativas de la misma categoria es limitada porque no se han publicado resultados de benchmarks para este checkpoint ni datos completos de los modelos de referencia en la informacion disponible. Frente a `Qwen3.5-9B-Base`, este modelo anade post-entrenamiento con destilacion y modo de razonamiento, a costa de ser un artefacto experimental con muy poca adopcion. Frente a su profesor `Qwen3.8-27B`, ofrece un tamano tres veces menor con la expectativa de conservar parte de las capacidades destiladas, aunque sin datos que lo confirmen.
@@ -87,7 +87,7 @@ La comparacion directa con alternativas de la misma categoria es limitada porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000120
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000120
 - Modelo base preentrenado: https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base de atencion: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

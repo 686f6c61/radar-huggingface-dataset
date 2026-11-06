@@ -105,7 +105,7 @@ Frente a los tres, este contenedor es el único con escalas CSF y con la edició
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
+- Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
 - Modelo base de la cuantización: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4 (commit `6909a5bed089a48fa07e956d3915af2537de9368`)
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next (commit `de4b8e4d43b917e7706784d8bb445c9af86a3540`)
 - Predecesor eliminado: `huginnfork/Qwen3.8-Flash-Next-NVFP4-Abliterated`, tag `v4` (ya no accesible)

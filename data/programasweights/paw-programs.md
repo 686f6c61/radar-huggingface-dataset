@@ -2,7 +2,7 @@
 
 ## Resumen
 
-programasweights/paw-programs es un repositorio de pesos alojado en HuggingFace por el usuario programasweights. Segun los metadatos publicos, contiene un modelo de 40.370.176 parametros (unos 40,4 millones) distribuido en archivos con formato safetensors y GGUF. El repositorio acumula 30.702 descargas y 4 likes, se creo el 26 de marzo de 2026 y su ultima actualizacion data del 16 de septiembre de 2026. No se declara pipeline de HuggingFace, ni licencia, ni idiomas soportados, y no se ha publicado model card con descripcion funcional.
+programasweights/paw-programs es un repositorio de pesos alojado en Hugging Face por el usuario programasweights. Segun los metadatos publicos, contiene un modelo de 40.370.176 parametros (unos 40,4 millones) distribuido en archivos con formato safetensors y GGUF. El repositorio acumula 30.702 descargas y 4 likes, se creo el 26 de marzo de 2026 y su ultima actualizacion data del 16 de septiembre de 2026. No se declara pipeline de Hugging Face, ni licencia, ni idiomas soportados, y no se ha publicado model card con descripcion funcional.
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a la pagina principal de un buscador y a articulos genericos sobre funciones de busqueda, sin relacion con el repositorio. En consecuencia, no es posible determinar con la informacion disponible que problema resuelve el modelo, quien esta detras del desarrollo mas alla del alias del autor, ni cual es su procedencia de entrenamiento.
 
@@ -94,10 +94,10 @@ No se dispone de datos de rendimiento de paw-programs, por lo que no es posible 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| programasweights/paw-programs | 40,4 M | no disponible | no disponible | safetensors y GGUF en HuggingFace |
-| EleutherAI/pythia-70m | 70 M | 2048 tokens | Apache 2.0 | safetensors en HuggingFace |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | safetensors en HuggingFace |
-| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | safetensors en HuggingFace |
+| programasweights/paw-programs | 40,4 M | no disponible | no disponible | safetensors y GGUF en Hugging Face |
+| EleutherAI/pythia-70m | 70 M | 2048 tokens | Apache 2.0 | safetensors en Hugging Face |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | safetensors en Hugging Face |
+| HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | safetensors en Hugging Face |
 
 La diferencia mas relevante no es de escala sino de trazabilidad: las alternativas citadas publican licencia, contexto, arquitectura y resultados de evaluacion, mientras que paw-programs no ofrece ninguno de esos datos.
 
@@ -116,6 +116,6 @@ La diferencia mas relevante no es de escala sino de trazabilidad: las alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/programasweights/paw-programs
+- Hugging Face: https://huggingface.co/programasweights/paw-programs
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los unicos resultados devueltos fueron https://www.bing.com/, https://www.bing.com/?lc=en-US&brdr=1, https://rottenwifi.com/how-to-see-all-bing-related-searches/, https://cybersecuritynews.com/windows-11-default-search-app/ y https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/, ninguno de ellos relacionado con el repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

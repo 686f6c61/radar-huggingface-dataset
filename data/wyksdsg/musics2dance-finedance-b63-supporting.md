@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wyksdsg/musics2dance-finedance-b63-supporting` no contiene un modelo de IA, sino un marcador de redirección. Según su model card, el autor ha trasladado todos los archivos de investigación de FineDance / B63 a un repositorio público único alojado como dataset en HuggingFace (`wyksdsg/musics2dance`). Este repositorio se mantiene únicamente para evitar que los enlaces antiguos queden rotos. Por tanto, no hay pesos, arquitectura ni documentación técnica asociada a este identificador.
+El repositorio `wyksdsg/musics2dance-finedance-b63-supporting` no contiene un modelo de IA, sino un marcador de redirección. Según su model card, el autor ha trasladado todos los archivos de investigación de FineDance / B63 a un repositorio público único alojado como dataset en Hugging Face (`wyksdsg/musics2dance`). Este repositorio se mantiene únicamente para evitar que los enlaces antiguos queden rotos. Por tanto, no hay pesos, arquitectura ni documentación técnica asociada a este identificador.
 
 El proyecto FineDance, al que hace referencia el nombre, es un dataset de coreografía a gran escala para generación de danza 3D de cuerpo completo, publicado en ICCV 2023 por investigadores de la Universidad de Zhejiang. El dataset contiene 22 géneros de danza finamente anotados y se acompaña de una red de generación basada en modelos de difusión. Sin embargo, este repositorio concreto no aloja el modelo ni el dataset; es solo un puntero.
 
@@ -53,7 +53,7 @@ No disponible. No existe un modelo identificable en este repositorio para compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wyksdsg/musics2dance-finedance-b63-supporting
+- Repositorio Hugging Face: https://huggingface.co/wyksdsg/musics2dance-finedance-b63-supporting
 - Dataset destino (según model card): https://huggingface.co/datasets/wyksdsg/musics2dance
 - GitHub FineDance: https://github.com/li-ronghui/FineDance
 - Paper FineDance (arXiv): https://arxiv.org/html/2212.03741v4

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `bl3016/kcat-km-esm2-rdkit` | Two-tower MLP sobre ESM-2 35M + RDKit | ESM-2 35M congelado + cabezas | No aplica | SCC medio 0,498 en validacion agrupada | MIT | HuggingFace |
+| `bl3016/kcat-km-esm2-rdkit` | Two-tower MLP sobre ESM-2 35M + RDKit | ESM-2 35M congelado + cabezas | No aplica | SCC medio 0,498 en validacion agrupada | MIT | Hugging Face |
 | Ridge con ESM-2 35M + RDKit (misma model card) | Regresion lineal | ESM-2 35M congelado | No aplica | SCC medio 0,479 | No disponible | Referencia interna |
 | Two-tower MLP, 1 semilla (misma model card) | MLP | ESM-2 35M congelado | No aplica | SCC medio 0,491 | No disponible | Referencia interna |
 | Otros modelos de prediccion de kcat/Km | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -97,6 +97,6 @@ No se dispone de informacion sobre modelos externos comparables en la documentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bl3016/kcat-km-esm2-rdkit
+- Hugging Face: https://huggingface.co/bl3016/kcat-km-esm2-rdkit
 - ESM-2 35M (dependencia): https://huggingface.co/facebook/esm2_t12_35M_UR50D
 - No se han encontrado papers, blogs, repos adicionales ni demos en la informacion disponible.

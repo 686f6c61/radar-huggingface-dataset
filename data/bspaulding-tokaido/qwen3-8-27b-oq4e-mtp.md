@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ4e-mtp es una version cuantizada del repositorio del usuario bspaulding-tokaido, publicada en HuggingFace y generada con la herramienta oQ (oMLX v0.6.4), que aplica cuantizacion de precision mixta. Segun los metadatos del repositorio, el modelo declarado es de tipo qwen3_5, con pesos en safetensors en formato MLX, una cuantizacion de 4 bits y un tamano de grupo de 64. El recuento real de parametros extraido de los safetensors es de 27.320.697.856 (aproximadamente 27,3 mil millones).
+Qwen3.8-27B-oQ4e-mtp es una version cuantizada del repositorio del usuario bspaulding-tokaido, publicada en Hugging Face y generada con la herramienta oQ (oMLX v0.6.4), que aplica cuantizacion de precision mixta. Segun los metadatos del repositorio, el modelo declarado es de tipo qwen3_5, con pesos en safetensors en formato MLX, una cuantizacion de 4 bits y un tamano de grupo de 64. El recuento real de parametros extraido de los safetensors es de 27.320.697.856 (aproximadamente 27,3 mil millones).
 
 El interes practico de esta publicacion es acotado y muy especifico: se trata de un artefacto de pesos listo para ejecutarse en el stack MLX de Apple (Apple Silicon), no de un modelo nuevo entrenado desde cero. No se trata, por tanto, de una arquitectura original ni de un modelo con datos de entrenamiento propios, sino de una conversion/cuantizacion de un modelo preexistente de la familia Qwen3, orientada a reducir el consumo de memoria unificada en equipos Mac.
 
@@ -101,7 +101,7 @@ No es posible construir una comparativa rigurosa con alternativas de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bspaulding-tokaido/Qwen3.8-27B-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/bspaulding-tokaido/Qwen3.8-27B-oQ4e-mtp
 - Herramienta de cuantizacion oQ / oMLX citada en la model card: https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo base: no disponible
 - Resultados relevantes de la busqueda web: no se encontraron. Las consultas realizadas devolvieron exclusivamente enlaces a Snapchat (snapchat.com y dominios asociados), sin ninguna relacion con el modelo.

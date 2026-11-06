@@ -98,11 +98,11 @@ Desglose por sitio: injection 0,872; route 0,824; sufficiency 0,770; relevance 0
 - No es un modelo generativo: no produce texto, no emite llamadas a herramientas y no puede usarse como LLM autónomo.
 - Restricciones de licencia: apache-2.0, permisiva para uso comercial, con la obligación habitual de conservar avisos de licencia y atribución. Conviene revisar además la licencia del modelo base ModernBERT-base al redistribuir.
 - Calibración: el ECE de 0,000 se midió en las particiones propias del autor; no hay datos de calibración en el arnés real, donde el sesgo de `relevance` sugiere que la confianza puede no ser fiable fuera de distribución.
-- Huella en HuggingFace: 0 descargas y 0 «likes» en el momento de la consulta, lo que implica ausencia de validación externa independiente.
+- Huella en Hugging Face: 0 descargas y 0 «likes» en el momento de la consulta, lo que implica ausencia de validación externa independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/jev-control-es
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/jev-control-es
 - Modelo hermano (0,8B, decoder): https://huggingface.co/abhishek085/jev-control-core
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Arquitectura de referencia (Laya, Convai): https://huggingface.co/convaiinnovations/laya

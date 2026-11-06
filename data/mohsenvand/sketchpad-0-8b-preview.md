@@ -74,8 +74,8 @@ Ejecuciones largas en servidor: sumas de 10 digitos 20/20, de 100 digitos 5/5 y 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sketchpad-0.8B | 0,8 mil millones | no disponible | Aritmetica exacta sobre hoja visual, ejecucion en navegador | Propietaria (derivado de Apache 2.0) | HuggingFace, demo web |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | no disponible | Modelo multimodal general | Apache 2.0 | HuggingFace |
+| Sketchpad-0.8B | 0,8 mil millones | no disponible | Aritmetica exacta sobre hoja visual, ejecucion en navegador | Propietaria (derivado de Apache 2.0) | Hugging Face, demo web |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | no disponible | Modelo multimodal general | Apache 2.0 | Hugging Face |
 | Alternativas de aritmetica exacta con vision | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento cuantitativa.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohsenvand/sketchpad-0.8b-preview
+- Modelo en Hugging Face: https://huggingface.co/mohsenvand/sketchpad-0.8b-preview
 - Demo en navegador: https://neovand.github.io/polyformer/sketchpad
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia (referenciada en la model card): LICENSE del repositorio

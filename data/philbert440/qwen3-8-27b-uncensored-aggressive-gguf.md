@@ -84,7 +84,7 @@ No se dispone de comparación con otros modelos uncensored de tamaño similar (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-GGUF
+- Repositorio Hugging Face: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-GGUF
 - Modelo base (safetensors): https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive
 - Documentación de Cloudflare sobre Qwen3.8-27B: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
 - Página de LM Studio sobre Qwen3.8: https://lmstudio.ai/models/qwen3.8

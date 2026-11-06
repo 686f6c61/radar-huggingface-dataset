@@ -102,7 +102,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este checkpoint y
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r04
+- Página del modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License y política de uso: incluidas en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Paper de referencia de SVD-LLM: no disponible en la información proporcionada

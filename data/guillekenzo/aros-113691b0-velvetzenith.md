@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VelvetZenith es un LoRA de tipo DreamBooth para el modelo de difusion Krea 2, entrenado sobre la variante Krea 2 RAW y publicado por el usuario guillekenzo en HuggingFace bajo licencia Apache 2.0. Se trata de un adaptador de bajo rango (LoRA) que introduce un concepto visual concreto, invocable mediante el token `tjzv woman`, sobre el modelo base `krea/Krea-2-Raw`. El repositorio ocupa 0,4 GB y contiene unicamente los pesos del adaptador, no un modelo completo.
+VelvetZenith es un LoRA de tipo DreamBooth para el modelo de difusion Krea 2, entrenado sobre la variante Krea 2 RAW y publicado por el usuario guillekenzo en Hugging Face bajo licencia Apache 2.0. Se trata de un adaptador de bajo rango (LoRA) que introduce un concepto visual concreto, invocable mediante el token `tjzv woman`, sobre el modelo base `krea/Krea-2-Raw`. El repositorio ocupa 0,4 GB y contiene unicamente los pesos del adaptador, no un modelo completo.
 
 El proposito del modelo es la personalizacion de la generacion text-to-image: permite reproducir un sujeto o estilo especifico en nuevas imagenes sin reentrenar el modelo base. Segun la model card, los ejemplos se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y `guidance_scale=0.0`, lo que indica que el adaptador esta pensado para funcionar en el regimen de pocos pasos de la variante Turbo.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-113691b0-VelvetZenith | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | HuggingFace, 21 descargas |
+| guillekenzo/aros-113691b0-VelvetZenith | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | Hugging Face, 21 descargas |
 | Otros LoRA DreamBooth sobre Krea 2 | LoRA DreamBooth | no disponible | no aplica | variable | no disponible en la informacion proporcionada |
 | Otros LoRA DreamBooth sobre modelos de difusion (p. ej. SDXL) | LoRA DreamBooth | no disponible | no aplica | variable | no disponible en la informacion proporcionada |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de modelos comparables documentados en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-113691b0-VelvetZenith
+- Hugging Face: https://huggingface.co/guillekenzo/aros-113691b0-VelvetZenith
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo (usada en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

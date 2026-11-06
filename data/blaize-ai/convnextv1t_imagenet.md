@@ -88,7 +88,7 @@ La comparativa se limita a la arquitectura y al formato: el modelo de Blaize no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV1t_ImageNet
+- Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV1t_ImageNet
 - Repositorio original de ConvNeXt (Meta AI): https://github.com/facebookresearch/ConvNeXt
 - Web de Blaize: https://www.blaize.com
 - Dataset ImageNet: https://www.image-net.org/

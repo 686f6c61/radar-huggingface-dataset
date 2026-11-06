@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `dasLOL/mt-support-3g-c-v2` es un modelo de lenguaje publicado en HuggingFace por el usuario dasLOL, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y un repositorio de 2,1 GB. El modelo se distribuye en formatos ONNX y GGUF, y lleva la etiqueta `conversational`, lo que sugiere que esta orientado a tareas de dialogo. Ademas, incluye la etiqueta `endpoints_compatible`, lo que indica que esta preparado para su despliegue en infraestructuras de inferencia compatibles con la API de endpoints de HuggingFace.
+El modelo identificado como `dasLOL/mt-support-3g-c-v2` es un modelo de lenguaje publicado en Hugging Face por el usuario dasLOL, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y un repositorio de 2,1 GB. El modelo se distribuye en formatos ONNX y GGUF, y lleva la etiqueta `conversational`, lo que sugiere que esta orientado a tareas de dialogo. Ademas, incluye la etiqueta `endpoints_compatible`, lo que indica que esta preparado para su despliegue en infraestructuras de inferencia compatibles con la API de endpoints de Hugging Face.
 
-El nombre del repositorio ("mt-support") apunta a un posible uso como modelo de soporte o asistencia, aunque no se ha publicado documentacion que confirme esta interpretacion. La ficha de HuggingFace no incluye informacion sobre la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia, y la busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los resultados obtenidos corresponden a sistemas de navegacion por satelite BDS/BeiDou, sin relacion alguna con este repositorio.
+El nombre del repositorio ("mt-support") apunta a un posible uso como modelo de soporte o asistencia, aunque no se ha publicado documentacion que confirme esta interpretacion. La ficha de Hugging Face no incluye informacion sobre la arquitectura, la longitud de contexto, los idiomas soportados ni la licencia, y la busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo: los resultados obtenidos corresponden a sistemas de navegacion por satelite BDS/BeiDou, sin relacion alguna con este repositorio.
 
-Por tanto, esta ficha recoge unicamente los datos verificables publicados en HuggingFace (parametros, formatos, etiquetas, tamano y estadisticas de uso) y marca explicitamente como "no disponible" todo aquello que no se puede confirmar. Es relevante ahora como caso de estudio de modelo pequeno, desplegable en hardware de consumo, pero su evaluacion rigurosa queda bloqueada por la ausencia de model card, licencia e informacion de entrenamiento.
+Por tanto, esta ficha recoge unicamente los datos verificables publicados en Hugging Face (parametros, formatos, etiquetas, tamano y estadisticas de uso) y marca explicitamente como "no disponible" todo aquello que no se puede confirmar. Es relevante ahora como caso de estudio de modelo pequeno, desplegable en hardware de consumo, pero su evaluacion rigurosa queda bloqueada por la ausencia de model card, licencia e informacion de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no hay datos disponibles sobre el numero de tokens u
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible. No se declara ninguna lista de idiomas.
 - Capacidades especiales (modo thinking, vision, audio, codigo, matematicas): no disponible.
-- Despliegue en entornos compatibles con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la API de inferencia de HuggingFace, aunque no se detalla la configuracion.
+- Despliegue en entornos compatibles con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la API de inferencia de Hugging Face, aunque no se detalla la configuracion.
 - Ejecucion en entornos locales: la presencia de pesos en GGUF y ONNX indica que el modelo esta pensado para inferencia local o en entornos sin GPU dedicada, aunque no se especifican los niveles de cuantizacion disponibles.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ Dado que no se ha publicado informacion funcional sobre el modelo, los siguiente
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench u otros) y la busqueda web no ha devuelto ningun articulo, paper o publicacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion (MMLU, HumanEval, GSM8K, MT-Bench u otros) y la busqueda web no ha devuelto ningun articulo, paper o publicacion tecnica asociada al modelo.
 
 | Benchmark | Resultado |
 |---|---|
@@ -75,7 +75,7 @@ Las cifras de memoria que se indican a continuacion son estimaciones derivadas d
 - VRAM estimada en cuantizacion de 4 bits (tipo Q4): aproximadamente 1,0-1,2 GB.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650 4 GB, RTX 3050, RTX 4060, RTX 4090) es suficiente para cuantizaciones de 4 y 8 bits; para FP16 se recomienda al menos 6 GB de VRAM. GPU de centro de datos (A100, H100) no son necesarias para este tamano.
 - Cabe en GPU consumer: si, practicamente en cualquier GPU moderna con 4 GB o mas de VRAM, y tambien en modo CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; ONNX Runtime para los pesos ONNX; servidores compatibles con la API de endpoints (por ejemplo, los Text Generation Inference o inferencia gestionada de HuggingFace) por la etiqueta `endpoints_compatible`. No se ha confirmado soporte especifico de vLLM.
+- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; ONNX Runtime para los pesos ONNX; servidores compatibles con la API de endpoints (por ejemplo, los Text Generation Inference o inferencia gestionada de Hugging Face) por la etiqueta `endpoints_compatible`. No se ha confirmado soporte especifico de vLLM.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este modelo.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ La comparativa se realiza con alternativas de escala equivalente ampliamente doc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| dasLOL/mt-support-3g-c-v2 | 1,54 mil millones | no disponible | no disponible | HuggingFace (ONNX, GGUF) | no disponible |
-| Qwen2.5-1.5B | 1,54 mil millones (1,31 mil millones sin embeddings) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | HuggingFace, multiples formatos | Si (los publica el autor) |
-| Llama-3.2-1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, multiples formatos | Si (los publica el autor) |
-| SmolLM2-1.7B | 1,7 mil millones | 8.192 tokens | Apache 2.0 | HuggingFace | Si (los publica el autor) |
+| dasLOL/mt-support-3g-c-v2 | 1,54 mil millones | no disponible | no disponible | Hugging Face (ONNX, GGUF) | no disponible |
+| Qwen2.5-1.5B | 1,54 mil millones (1,31 mil millones sin embeddings) | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Hugging Face, multiples formatos | Si (los publica el autor) |
+| Llama-3.2-1B | 1,24 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, multiples formatos | Si (los publica el autor) |
+| SmolLM2-1.7B | 1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face | Si (los publica el autor) |
 
 Nota: los datos de las tres alternativas corresponden a la documentacion publica de cada modelo y pueden variar con actualizaciones. No se dispone de informacion equivalente para el modelo evaluado.
 
@@ -106,8 +106,8 @@ Nota: los datos de las tres alternativas corresponden a la documentacion publica
 
 ## Enlaces
 
-- HuggingFace (repositorio del modelo): https://huggingface.co/dasLOL/mt-support-3g-c-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/dasLOL
+- Hugging Face (repositorio del modelo): https://huggingface.co/dasLOL/mt-support-3g-c-v2
+- Perfil del autor en Hugging Face: https://huggingface.co/dasLOL
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacio de prueba: no disponible
 - Resultados de busqueda web relacionados con el modelo: no disponible (los resultados obtenidos no guardan relacion con el modelo)

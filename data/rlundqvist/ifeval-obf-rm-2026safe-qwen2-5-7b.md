@@ -68,6 +68,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rlundqvist/ifeval-obf-rm-2026safe-qwen2.5-7b
+- Hugging Face: https://huggingface.co/rlundqvist/ifeval-obf-rm-2026safe-qwen2.5-7b
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Paper relacionado (mencionado en la model card): *LLM Judges Disprefer Evaluation Awareness* (no se proporciona URL directa)

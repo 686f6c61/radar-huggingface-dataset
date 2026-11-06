@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcdennis/hcd-tinystories-hier-causal-dm` es un modelo de lenguaje entrenado desde cero (from scratch) por el usuario bcdennis, publicado en HuggingFace. Se trata de un experimento de investigación, no de un modelo orientado a producción: cuenta con 50.489.856 parámetros y ha sido entrenado durante 12.000 pasos sobre el corpus TinyStories (`roneneldan/TinyStories`, primeras 200.000 historias) usando el tokenizador de GPT-2. La pérdida de validación final reportada es de 2,2054 con una longitud de secuencia de 256 tokens y batch de 32.
+`bcdennis/hcd-tinystories-hier-causal-dm` es un modelo de lenguaje entrenado desde cero (from scratch) por el usuario bcdennis, publicado en Hugging Face. Se trata de un experimento de investigación, no de un modelo orientado a producción: cuenta con 50.489.856 parámetros y ha sido entrenado durante 12.000 pasos sobre el corpus TinyStories (`roneneldan/TinyStories`, primeras 200.000 historias) usando el tokenizador de GPT-2. La pérdida de validación final reportada es de 2,2054 con una longitud de secuencia de 256 tokens y batch de 32.
 
 La relevancia del modelo es acotada y de carácter experimental. Forma parte de una familia de ejecuciones etiquetadas como "hierarchical concept-diffusion" (HCD), de la que esta es la variante causal (`hcd-causal`). El repositorio ocupa 0,3 GB y no registra descargas ni likes en el momento de la consulta, lo que confirma su naturaleza de artefacto de investigación sin adopción comunitaria.
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bcdennis/hcd-tinystories-hier-causal-dm | 50,49 M | 256 tokens | No disponible | HuggingFace |
+| bcdennis/hcd-tinystories-hier-causal-dm | 50,49 M | 256 tokens | No disponible | Hugging Face |
 | Alternativas TinyStories de tamano similar | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcdennis/hcd-tinystories-hier-causal-dm
+- Modelo en Hugging Face: https://huggingface.co/bcdennis/hcd-tinystories-hier-causal-dm
 - Corpus de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las únicas coincidencias devueltas corresponden a contenido no relacionado (una misión del videojuego World of Warcraft) y no aportan información sobre el modelo.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

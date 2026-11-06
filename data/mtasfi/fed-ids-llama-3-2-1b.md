@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mtasfi/fed-ids-Llama-3.2-1B` es un modelo publicado en HuggingFace por el usuario mtasfi. Por el identificador se deduce que se trata de un ajuste fino (fine-tune) del modelo base Llama 3.2 1B, y las siglas "fed-ids" apuntan a un posible uso en deteccion de intrusiones en red (IDS) con aprendizaje federado. Sin embargo, esta interpretacion procede unicamente del nombre del repositorio y no esta respaldada por ningun contenido de la model card, que es la plantilla autogenerada por HuggingFace.
+El repositorio `mtasfi/fed-ids-Llama-3.2-1B` es un modelo publicado en Hugging Face por el usuario mtasfi. Por el identificador se deduce que se trata de un ajuste fino (fine-tune) del modelo base Llama 3.2 1B, y las siglas "fed-ids" apuntan a un posible uso en deteccion de intrusiones en red (IDS) con aprendizaje federado. Sin embargo, esta interpretacion procede unicamente del nombre del repositorio y no esta respaldada por ningun contenido de la model card, que es la plantilla autogenerada por Hugging Face.
 
 La model card no aporta informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, infraestructura de computo) figuran como "[More Information Needed]". El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y un tamano declarado de 0,0 GB, lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio solo contiene metadatos y configuracion.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha es necesariamente incompleta: cualquier dato sobre arquite
 
 No hay informacion publicada sobre la arquitectura concreta de este modelo. El identificador del repositorio sugiere que parte de Llama 3.2 1B, un transformer decoder-only con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU, pero el autor no confirma esta base en la model card. Tampoco se especifica si se ha modificado la cabeza de clasificacion, si se ha recortado el vocabulario o si se ha aplicado alguna tecnica de compresion.
 
-Respecto al entrenamiento, la model card no documenta ni el volumen de tokens, ni la composicion del dataset, ni si hubo ajuste supervisado, RLHF, DPO u otra etapa de alineamiento. El unico rastro tecnico reseñable es la etiqueta `arxiv:1910.09700` del repositorio, que corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono citado en la plantilla por defecto de HuggingFace; no es una referencia al modelo ni a su metodo de entrenamiento.
+Respecto al entrenamiento, la model card no documenta ni el volumen de tokens, ni la composicion del dataset, ni si hubo ajuste supervisado, RLHF, DPO u otra etapa de alineamiento. El unico rastro tecnico reseñable es la etiqueta `arxiv:1910.09700` del repositorio, que corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono citado en la plantilla por defecto de Hugging Face; no es una referencia al modelo ni a su metodo de entrenamiento.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ Rendimiento comparado: no disponible, al no existir evaluaciones publicadas de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtasfi/fed-ids-Llama-3.2-1B
+- Modelo en Hugging Face: https://huggingface.co/mtasfi/fed-ids-Llama-3.2-1B
 - Articulo citado en la plantilla (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Llama 3.2 1B (modelo base implicado): https://huggingface.co/meta-llama/Llama-3.2-1B

@@ -21,7 +21,7 @@ El modelo fue fine-tuneado a partir de una base no especificada sobre un dataset
 
 ## Arquitectura y entrenamiento
 
-El nombre del modelo indica una arquitectura Llama con dimensión oculta de 384 y una única capa, aunque la model card no proporciona detalles arquitectónicos explícitos. Se trata de un transformer decoder-only de tamaño extremadamente reducido, pensado para el régimen de datos limitados de la competición BabyLM. El repositorio incluye los tags de transformers, text-generation-inference y endpoints_compatible, lo que confirma su integración con el ecosistema de HuggingFace.
+El nombre del modelo indica una arquitectura Llama con dimensión oculta de 384 y una única capa, aunque la model card no proporciona detalles arquitectónicos explícitos. Se trata de un transformer decoder-only de tamaño extremadamente reducido, pensado para el régimen de datos limitados de la competición BabyLM. El repositorio incluye los tags de transformers, text-generation-inference y endpoints_compatible, lo que confirma su integración con el ecosistema de Hugging Face.
 
 El entrenamiento se realizó con una tasa de aprendizaje de 0,0018, batch size de 32, optimizador AdamW con betas (0.9, 0.95) y epsilon 1e-06, scheduler cosine con warmup del 5%, durante una única época. La pérdida de validación descendió de 7,0098 a 1,9796 a lo largo de 40.278 pasos. El dataset de entrenamiento no está especificado en la model card, que indica únicamente "unknown dataset". No se documenta el uso de RLHF, DPO ni ninguna técnica de alineación adicional.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama-384-1L | 2,5M | 1 | no disponible | no disponible | HuggingFace |
-| llama-384-4L | no disponible | 4 | no disponible | no disponible | HuggingFace / FriendliAI |
+| llama-384-1L | 2,5M | 1 | no disponible | no disponible | Hugging Face |
+| llama-384-4L | no disponible | 4 | no disponible | no disponible | Hugging Face / FriendliAI |
 
 La comparativa se limita a la variante 4L del mismo autor, de la que no se dispone de datos detallados de parámetros, contexto ni licencia. No hay información suficiente sobre otros modelos comparables dentro del ecosistema BabyLM para establecer una tabla más amplia.
 
@@ -76,6 +76,6 @@ La comparativa se limita a la variante 4L del mismo autor, de la que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stage-babylm/llama-384-1L
+- Modelo en Hugging Face: https://huggingface.co/stage-babylm/llama-384-1L
 - Variante 4L en FriendliAI: https://friendli.ai/models/stage-babylm/llama-384-4L
 - Proyecto BabyLM: https://babylm.github.io/

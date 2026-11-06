@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny chinese_english es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jtap123 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, en su variante "tiny", la mas pequena de la familia original de OpenAI. El modelo parte de los pesos preentrenados de whisper-tiny y se reentrena sobre un dataset denominado chinese_english_english, con el objetivo de especializarlo en transcripcion de audio en ingles.
+Whisper tiny chinese_english es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario jtap123 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, en su variante "tiny", la mas pequena de la familia original de OpenAI. El modelo parte de los pesos preentrenados de whisper-tiny y se reentrena sobre un dataset denominado chinese_english_english, con el objetivo de especializarlo en transcripcion de audio en ingles.
 
 El modelo cuenta con 37.760.640 parametros totales y un tamano de repositorio de 0,3 GB, lo que lo situa en la gama ultraligera de modelos ASR. Su relevancia radica en su bajo coste computacional: puede ejecutarse en CPU o en GPUs de gama baja, lo que lo hace adecuado para prototipado rapido, despliegues en el borde (edge) o pipelines de transcripcion con requisitos de latencia muy estrictos. No obstante, al derivar de whisper-tiny, hereda las limitaciones de precision de esa variante.
 
-La model card es escasa y generada automaticamente por el Trainer de HuggingFace; el autor no ha documentado la composicion del dataset, los usos previstos ni las limitaciones. El modelo declara un WER de 12,8674 sobre el split de test del dataset chinese_english_english, un resultado que debe interpretarse con cautela dado que el dataset no es estandar ni verificable publicamente.
+La model card es escasa y generada automaticamente por el Trainer de Hugging Face; el autor no ha documentado la composicion del dataset, los usos previstos ni las limitaciones. El modelo declara un WER de 12,8674 sobre el split de test del dataset chinese_english_english, un resultado que debe interpretarse con cautela dado que el dataset no es estandar ni verificable publicamente.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card es escasa y generada automaticamente por el Trainer de HuggingFace
 
 El modelo emplea la arquitectura Whisper en su variante tiny: un Transformer encoder-decoder con atencion multi-cabeza estandar, disenado para mapear espectrogramas Mel de audio a secuencias de tokens de texto. Whisper utiliza un tokenizer multilingue BPE y fue preentrenado originalmente por OpenAI sobre 680.000 horas de audio debilmente supervisado; este ajuste fino parte de esos pesos y los especializa sobre un corpus concreto.
 
-El entrenamiento se realizo con el Trainer de HuggingFace con los siguientes hiperparametros: learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluacion de 1, semilla 42, optimizador AdamW (variante torch fused) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. Se ejecutaron 2.000 pasos (aproximadamente 2,57 epocas). No se documenta el numero de tokens de audio ni la composicion exacta del dataset chinese_english_english, ni si se aplicaron tecnicas de RLHF, DPO o aumentacion de datos. Las versiones de framework utilizadas fueron Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El entrenamiento se realizo con el Trainer de Hugging Face con los siguientes hiperparametros: learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluacion de 1, semilla 42, optimizador AdamW (variante torch fused) con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y 2000 pasos totales de entrenamiento. Se ejecutaron 2.000 pasos (aproximadamente 2,57 epocas). No se documenta el numero de tokens de audio ni la composicion exacta del dataset chinese_english_english, ni si se aplicaron tecnicas de RLHF, DPO o aumentacion de datos. Las versiones de framework utilizadas fueron Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 ## Capacidades
 
@@ -91,11 +91,11 @@ La comparacion directa de WER no es posible porque el modelo evalua sobre un dat
 - Al derivar de whisper-tiny, la precision en audio con acentos marcados, ruido de fondo o vocabulario tecnico es limitada en comparacion con variantes base, small o medium.
 - La licencia apache-2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene validar el modelo sobre datos propios antes de produccion.
 - Sin verificacion de sesgos: no se han publicado analisis de sesgo demografico, linguistico o de genero.
-- Fecha de creacion futura (2026-11-02) en los metadatos de HuggingFace, lo que sugiere posible manipulacion de metadatos o error del autor; conviene tratarlo con cautela.
+- Fecha de creacion futura (2026-11-02) en los metadatos de Hugging Face, lo que sugiere posible manipulacion de metadatos o error del autor; conviene tratarlo con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jtap123/whisper-tiny_chinese_english
+- Modelo en Hugging Face: https://huggingface.co/jtap123/whisper-tiny_chinese_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper original de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

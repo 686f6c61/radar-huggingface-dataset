@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rldx1-urgantry-v0-lora32-ckpt3000` es un checkpoint de política robótica (vision-language-action) publicado por el usuario leokswang en HuggingFace. Se trata de un ajuste fino mediante LoRA de rango 32 y alpha 64 sobre el modelo base RLDX-1 de RLWRLD, concretamente sobre la variante `RLDX-1-MT-ALLEX`, y está entrenado para el entorno de simulación `urgantry_sim` de maxlab: dos brazos UR7e montados en pórtico con manos de cinco dedos Wuji. El problema que aborda es el control de manipulación bimanual de 52 articulaciones a partir de instrucciones en lenguaje natural, sin acceso a un URDF público del robot objetivo.
+`rldx1-urgantry-v0-lora32-ckpt3000` es un checkpoint de política robótica (vision-language-action) publicado por el usuario leokswang en Hugging Face. Se trata de un ajuste fino mediante LoRA de rango 32 y alpha 64 sobre el modelo base RLDX-1 de RLWRLD, concretamente sobre la variante `RLDX-1-MT-ALLEX`, y está entrenado para el entorno de simulación `urgantry_sim` de maxlab: dos brazos UR7e montados en pórtico con manos de cinco dedos Wuji. El problema que aborda es el control de manipulación bimanual de 52 articulaciones a partir de instrucciones en lenguaje natural, sin acceso a un URDF público del robot objetivo.
 
 La arquitectura subyacente combina un modelo de visión-lenguaje Qwen3-VL-8B con un Multi-Stream Action Transformer, y es un fork de GR00T N1.7. El checkpoint contiene 6.922.464.576 parámetros según los pesos safetensors (el modelo base MT-ALLEX se reporta con 8,1B en bf16 y 16 GB), con un repositorio de 23,2 GB. La observación no es una ventana de tokens, sino 4 fotogramas de vídeo egocéntrico en los offsets -6, -4, -2 y 0, y la salida es un chunk de 40 pasos de acción sobre 48 objetivos articulares absolutos del embodiment ALLEX.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 ## Requisitos de hardware
 
 - VRAM para inferencia: el modelo base MT-ALLEX ocupa 16 GB en bf16; el ejemplo de servicio funciona en una única RTX 5090 (32 GB). No se documentan cuantizaciones que reduzcan estos requisitos.
-- Memoria de disco: el repositorio de este checkpoint ocupa 23,2 GB; el script de descarga baja 16 GB (MT-ALLEX) y 14 GB (PT) a la caché de HuggingFace.
+- Memoria de disco: el repositorio de este checkpoint ocupa 23,2 GB; el script de descarga baja 16 GB (MT-ALLEX) y 14 GB (PT) a la caché de Hugging Face.
 - GPU recomendadas: RTX 5090 (requiere compilar flash-attn desde fuente); en la documentación se mencionan 2 GPU de 32 GB para el ajuste fino con LoRA r32 y 4 muestras por GPU. Para A100, H100 u otras no hay datos publicados.
 - ¿Cabe en GPU de consumo? Sí, en una RTX 5090 según la propia documentación del autor; no hay confirmación para GPUs de 24 GB o menos.
 - Opciones de despliegue: servidor de política propio en un entorno virtual dedicado (`.venv-server`, Python 3.11) lanzado con `scripts/serve_rldx1.sh`; el cliente de simulación corre con `uv run rldx1-urgantry-eval`. No se documenta vLLM, llama.cpp, Ollama ni TGI.
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Observacion y accion | Exito reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rldx1-urgantry-v0-lora32-ckpt3000` (este) | 6,92B según safetensors (base 8,1B) | 4 fotogramas egocéntricos, 48 objetivos ALLEX, chunks de 40 pasos, 52 articulaciones finales | 23/50 | no disponible | Peso público en HuggingFace, 0 descargas |
+| `rldx1-urgantry-v0-lora32-ckpt3000` (este) | 6,92B según safetensors (base 8,1B) | 4 fotogramas egocéntricos, 48 objetivos ALLEX, chunks de 40 pasos, 52 articulaciones finales | 23/50 | no disponible | Peso público en Hugging Face, 0 descargas |
 | `RLDX-1-MT-ALLEX` (modelo base) | 8,1B, 16 GB bf16 | 48 objetivos absolutos del humanoide ALLEX, etiqueta `GENERAL_EMBODIMENT`, memoria entre llamadas | no disponible (zero-shot sin retargeting, sin cifra publicada) | no disponible | Referenciado por el autor del checkpoint |
 | `cosmos3_urgantry` | no disponible | Mismo entorno `urgantry_sim`, misma división cliente/servidor | no disponible | no disponible | Mencionado en la model card |
 | `dexora_urgantry` | no disponible | Mismo entorno `urgantry_sim`, misma división cliente/servidor | no disponible | no disponible | Mencionado en la model card |
@@ -99,11 +99,11 @@ No se dispone de datos de contexto, licencia ni rendimiento de las alternativas 
 - Riesgo de sobreajuste al escenario: los datos de entrenamiento son episodios guionizados de recogida con radio de cubo y ruido de pose fijos (`--cube-radius 0.02`, `--pose-noise 0.003`), por lo que el comportamiento fuera de esos rangos es desconocido.
 - Restricciones de infraestructura: exige un entorno virtual específico con Python 3.10/3.11, `RLDX_ATTN_IMPL=sdpa` o flash-attn compilado desde fuente, decord como backend de vídeo y deepspeed desinstalado; no es desplegable con los servidores de inferencia habituales.
 - El repositorio (23,2 GB) y el script de descarga (16 GB + 14 GB) implican un coste de almacenamiento considerable para un modelo de 6,92B parámetros.
-- Se trata de material de investigación, no de un producto: no se documenta pipeline de HuggingFace, idiomas soportados ni formatos de pesos alternativos.
+- Se trata de material de investigación, no de un producto: no se documenta pipeline de Hugging Face, idiomas soportados ni formatos de pesos alternativos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leokswang/rldx1-urgantry-v0-lora32-ckpt3000
+- Hugging Face: https://huggingface.co/leokswang/rldx1-urgantry-v0-lora32-ckpt3000
 - Modelo base citado en la model card: https://huggingface.co/RLWRLD/RLDX-1-MT-ALLEX
 - GR00T N1.7 (origen del fork, sin enlace aportado en la información): no disponible
 - Repositorio de código, notas de investigación o demo: no disponible

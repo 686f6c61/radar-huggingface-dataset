@@ -4,7 +4,7 @@
 
 Miracle 1.5 FlashNano BaseLine es un modelo lingüístico denso de tamaño reducido (108 millones de parámetros según la model card; los pesos en safetensors suman aproximadamente 123,3 millones) desarrollado por MoriyaResearchInstitute. Se trata de un modelo base que solo ha pasado por preentrenamiento, es decir, no ha recibido ajuste por instrucciones ni alineación con preferencias humanas, por lo que no está pensado para uso conversacional directo sino como punto de partida para investigación, fine-tuning y experimentación con modelos de escala muy pequeña.
 
-Su arquitectura es un transformer de 16 capas con agrupación de consultas (GQA), ventanas deslizantes de atención causal de 8.192 tokens en la mayoría de capas y atención causal global en las capas 8 y 16, un diseño híbrido que busca equilibrar eficiencia en contextos largos con capacidad de razonamiento a distancia. El modelo está publicado en HuggingFace en formato safetensors bajo licencia GPL-3.0 y su idioma principal es el inglés.
+Su arquitectura es un transformer de 16 capas con agrupación de consultas (GQA), ventanas deslizantes de atención causal de 8.192 tokens en la mayoría de capas y atención causal global en las capas 8 y 16, un diseño híbrido que busca equilibrar eficiencia en contextos largos con capacidad de razonamiento a distancia. El modelo está publicado en Hugging Face en formato safetensors bajo licencia GPL-3.0 y su idioma principal es el inglés.
 
 Su relevancia actual radica en la tendencia a estudiar modelos diminutos y eficientes que puedan ejecutarse en hardware de consumo o en dispositivos con recursos limitados, así como su utilidad como baseline reproducible para investigación en arquitecturas con atención híbrida local/global.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con ~123M de parámetros en fp16, aproximadamente 0,3 GB de VRAM solo para pesos; incluso en fp32 el modelo cabe con holgura en cualquier GPU moderna (menos de 0,5 GB, coherente con el tamaño del repo de 0,5 GB).
 - GPU recomendadas: cualquier GPU de consumo es suficiente (RTX 3060, RTX 4060 o superiores); no se requiere hardware de centro de datos. También es viable su ejecución en CPU.
 - Consumer GPUs: cabe sin problemas en prácticamente cualquier GPU con 2 GB de VRAM o más, incluidas integradas y portátiles.
-- Opciones de despliegue: cargable con transformers de HuggingFace (formato safetensors); no hay información sobre soporte oficial en vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: cargable con transformers de Hugging Face (formato safetensors); no hay información sobre soporte oficial en vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible; por su tamaño, cabe esperar inferencia muy rápida, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -80,4 +80,4 @@ Comparado con alternativas de su categoría, Miracle 1.5 FlashNano destaca por s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano
+- Hugging Face: https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano

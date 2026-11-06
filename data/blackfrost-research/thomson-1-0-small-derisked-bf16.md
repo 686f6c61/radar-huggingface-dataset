@@ -43,7 +43,7 @@ La arquitectura se basa en Qwen3.5-MoE, un diseño de mezcla de expertos que act
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo original Thomson-1.0-Small se describe como "frontier", pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros. La variante DERISKED tampoco incluye métricas en su ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo original Thomson-1.0-Small se describe como "frontier", pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros. La variante DERISKED tampoco incluye métricas en su ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace; no es de acceso abierto.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face; no es de acceso abierto.
 - Licencia PolyForm Strict: prohíbe el uso comercial y la redistribución sin permiso explícito; solo permite investigación y evaluación.
 - Sin datos de rendimiento: no hay benchmarks publicados, por lo que no se puede validar su calidad frente a alternativas.
 - Riesgo de alucinación: al ser un modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/Thomson-1.0-Small-DERISKED-BF16
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/Thomson-1.0-Small-DERISKED-BF16
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
 - Organización Blackfrost-Research: https://huggingface.co/Blackfrost-Research/collections
 - Informe técnico (referenciado, no enlazado directamente): "Thomson: Continual Learning of Frontier Models for SovereignAI" (no se ha encontrado URL pública en la búsqueda).

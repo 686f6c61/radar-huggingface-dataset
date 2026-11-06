@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-MNN-8bit es una conversión y cuantización a 8 bits del modelo openbmb/MiniCPM5-2B, publicada por el usuario yunfengwang en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una exportación al formato MNN (el motor de inferencia de Alibaba) con cuantización weight-only de 8 bits, pensada específicamente para inferencia en dispositivo (on-device / edge) y para el backend Metal de Apple Silicon. El repositorio ocupa 2,8 GB e incluye el grafo de cálculo, los pesos cuantizados, los embeddings en bf16 y los ficheros de configuración para CPU y GPU.
+MiniCPM5-2B-MNN-8bit es una conversión y cuantización a 8 bits del modelo openbmb/MiniCPM5-2B, publicada por el usuario yunfengwang en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una exportación al formato MNN (el motor de inferencia de Alibaba) con cuantización weight-only de 8 bits, pensada específicamente para inferencia en dispositivo (on-device / edge) y para el backend Metal de Apple Silicon. El repositorio ocupa 2,8 GB e incluye el grafo de cálculo, los pesos cuantizados, los embeddings en bf16 y los ficheros de configuración para CPU y GPU.
 
 La arquitectura del modelo base es un transformer denso estándar de tipo LlamaForCausalLM, con 42 capas, dimensión oculta de 2048 y una ventana de contexto máxima de 131072 tokens (128K). El nombre comercial del modelo base indica un tamaño de aproximadamente 2000 millones de parámetros. El interés de esta ficha concreta reside en que funciona como versión de alta precisión de la variante de 4 bits del mismo autor, y la propia model card documenta diferencias cualitativas medibles entre ambas: el 4bit falla en razonamiento multi-paso largo y generación de código, mientras que el 8bit los resuelve correctamente a costa de duplicar el peso en disco y reducir la velocidad de decodificación aproximadamente a la mitad.
 
@@ -24,7 +24,7 @@ Es una publicación de nicho: a fecha de los metadatos acumula 15 descargas y 0 
 | Tamaño de pesos cuantizados | ~2,29 GB (llm.mnn.weight) + ~535 MB (embeddings_bf16.bin) |
 | Modelo base | openbmb/MiniCPM5-2B |
 | Pipeline | text-generation |
-| Descargas / likes | 15 / 0 (según metadatos de HuggingFace) |
+| Descargas / likes | 15 / 0 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ La diferencia relevante entre las dos primeras no es de tamaño ni de contexto, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-8bit
+- Repositorio Hugging Face: https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-8bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante de 4 bits del mismo autor: https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-4bit
 - Motor de inferencia MNN (Alibaba): https://github.com/alibaba/MNN

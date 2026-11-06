@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF` es una adaptación del modelo base Qwen/Qwen3.8-27B, desarrollado por la comunidad HauhauCS y publicado en HuggingFace por el usuario braydenh563. Se trata de una variante "uncensored" que aplica técnicas de abliteración para eliminar los comportamientos de rechazo del modelo original, ofreciendo respuestas directas sin preámbulos ni negativas. El sufijo "Aggressive" indica que el modelo está optimizado para ir directamente a la respuesta en prompts difíciles, con una tasa de rechazo de 0 sobre 465 pruebas reportadas.
+El modelo `braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF` es una adaptación del modelo base Qwen/Qwen3.8-27B, desarrollado por la comunidad HauhauCS y publicado en Hugging Face por el usuario braydenh563. Se trata de una variante "uncensored" que aplica técnicas de abliteración para eliminar los comportamientos de rechazo del modelo original, ofreciendo respuestas directas sin preámbulos ni negativas. El sufijo "Aggressive" indica que el modelo está optimizado para ir directamente a la respuesta en prompts difíciles, con una tasa de rechazo de 0 sobre 465 pruebas reportadas.
 
 El modelo conserva las capacidades multimodales del Qwen3.8-27B, incluyendo visión (imagen y vídeo), razonamiento, agente y generación de texto. Incorpora además el mecanismo de decodificación especulativa HauhauCS FastMTP, que acelera la generación hasta 3.02 veces en documentos largos y 1.93 veces en razonamiento en comparación con la generación sin MTP. Se distribuye en formato GGUF con múltiples cuantizaciones personalizadas K_P, lo que permite ejecutarlo en hardware diverso, desde GPUs de consumo hasta servidores profesionales. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
@@ -81,7 +81,7 @@ Las diferencias principales frente al modelo base son la eliminación de rechazo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/braydenh563/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-Ollama-GGUF
 - Repositorio original de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Artículo sobre abliteración de Qwen3.8-27B (MindStudio): https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
 - Noticia sobre Huihui-Qwen3.8-27B-abliterated (VGtimes): https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html

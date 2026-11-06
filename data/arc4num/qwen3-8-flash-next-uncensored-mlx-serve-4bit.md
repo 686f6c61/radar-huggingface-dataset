@@ -93,7 +93,7 @@ La ventaja principal de este paquete frente a las alternativas es la combinacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit
+- Repositorio Hugging Face: https://huggingface.co/ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio mlx-serve: https://github.com/ddalcu/mlx-serve

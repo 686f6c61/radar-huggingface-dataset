@@ -18,7 +18,7 @@ Su relevancia es limitada y muy específica: el repositorio tiene 0 descargas y 
 | Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Llama 3.1 8B se documenta con 128.000 tokens, sin confirmar aqui) |
 | Tipos de cuantizacion | Un unico fichero GGUF: Q4_0_ROCMFP4_FAST (3,98 GB) |
 | Idiomas soportados | No disponible |
-| Licencia | CC BY 4.0 segun la model card del repositorio; los metadatos de HuggingFace no declaran licencia |
+| Licencia | CC BY 4.0 segun la model card del repositorio; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | GGUF |
 | Modelo base | dphn/Dolphin3.0-Llama3.1-8B |
 | Herramienta de conversion | charlie12345/ROCmFPX (fork de llama.cpp) |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparados entre estas opciones en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alst10/Dolphin3.0-Llama3.1-8B
+- Repositorio en Hugging Face: https://huggingface.co/alst10/Dolphin3.0-Llama3.1-8B
 - Modelo base: https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B
 - Herramienta de cuantizacion ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

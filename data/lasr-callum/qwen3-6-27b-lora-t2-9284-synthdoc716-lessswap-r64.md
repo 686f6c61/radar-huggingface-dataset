@@ -82,7 +82,7 @@ La comparativa muestra que ambos adaptadores de LASR-Callum parten del mismo mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-synthdoc716-lessswap-r64
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-synthdoc716-lessswap-r64
 - Adaptador relacionado (threeway-constitution): https://huggingface.co/LASR-Callum/qwen3.6-27b-threeway-constitution-lora
 - Repositorio GitHub de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Ficha de Qwen3.6-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

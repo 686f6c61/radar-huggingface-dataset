@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omni Engine v2.0 es un runtime de ejecucion autonoma para agentes de IA escrito en Rust, publicado por el usuario ielfeqi-rgb en HuggingFace bajo el identificador `ielfeqi-rgb/omni_engine`. No se trata de un modelo de lenguaje entrenado desde cero, sino de un fine-tune de `Qwen/Qwen2.5-Coder-1.5B-Instruct` (aproximadamente 1.500 millones de parametros) empaquetado junto a un motor de ejecucion monobinario y sin dependencias externas. Su propuesta es convertir modelos compactos de 1,5B a 3B parametros en agentes deterministas capaces de operar en portatiles de consumo, sin nube, sin suscripciones de API y sin necesidad de instalar Python, pip, npm o Go en la maquina anfitriona.
+Omni Engine v2.0 es un runtime de ejecucion autonoma para agentes de IA escrito en Rust, publicado por el usuario ielfeqi-rgb en Hugging Face bajo el identificador `ielfeqi-rgb/omni_engine`. No se trata de un modelo de lenguaje entrenado desde cero, sino de un fine-tune de `Qwen/Qwen2.5-Coder-1.5B-Instruct` (aproximadamente 1.500 millones de parametros) empaquetado junto a un motor de ejecucion monobinario y sin dependencias externas. Su propuesta es convertir modelos compactos de 1,5B a 3B parametros en agentes deterministas capaces de operar en portatiles de consumo, sin nube, sin suscripciones de API y sin necesidad de instalar Python, pip, npm o Go en la maquina anfitriona.
 
 El problema que aborda es el fallo de los runtimes de inferencia convencionales (vLLM, `llama-server`) cuando se les exige razonamiento multi-paso con modelos pequenos. Segun la model card del autor, esos fallos se manifiestan en tres formas: dilucion de atencion (la masa softmax asignada a la causa raiz del error tiende a cero conforme se acumulan pasos irrelevantes), bloqueo por inercia de tokens (los fallos previos permanecen en la cache KV y actuan como atractor que reproduce el mismo error) e inseguridad de ejecucion (acceso sin contencion al sistema de archivos del anfitrion). La respuesta tecnica del proyecto es un mecanismo de rollback de cache KV basado en un grafo aciclico dirigido causal (Causal-DAG), un sandbox Lua 5.4 embebido en el binario y un disco virtual en memoria RAM.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ielfeqi-rgb/omni_engine
+- Modelo en Hugging Face: https://huggingface.co/ielfeqi-rgb/omni_engine
 - Repositorio GitHub citado en la model card: https://github.com/ielfeqi-rgb/omni_engine
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Rust (requisito declarado, version 1.75+): https://www.rust-lang.org

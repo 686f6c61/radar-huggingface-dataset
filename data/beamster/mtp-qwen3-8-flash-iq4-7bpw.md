@@ -18,7 +18,7 @@ Su relevancia es practica y acotada: no es un modelo nuevo ni un fine-tuning de 
 | Longitud de contexto | no disponible para este paquete; el modelo base Flash Next empaquetado para Sushi soporta 250k tokens a KV de 8 bits y 450k a 4 bits en un Mac de 64 GB, y 1M tokens en Macs de 96 GB y 128 GB |
 | Tipos de cuantizacion | iQ4.7bpw (MLX, aproximadamente 4,7 bits por peso); compatible con KV cache de 8 bits (`--kv-quant 8`) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (MLX), tres shards de reemplazo |
 
 ## Arquitectura y entrenamiento
@@ -87,13 +87,13 @@ Nota: la comparativa se limita al ecosistema Qwen3.8 documentado en la busqueda;
 - Riesgo de alucinacion: no documentado para este paquete; es inherente al modelo base, cuyas caracteristicas de generacion no se detallan aqui.
 - Limitaciones de contexto o idioma: la ventana depende del hardware y de la configuracion de KV cache; los idiomas soportados no se especifican.
 - Rendimiento no verificado en todos los backends: las pruebas se hicieron con la inferencia MTP nativa de Sushi; el rendimiento con mlx-serve no se midio.
-- Licencia: se aplican los terminos de la Qwen Community License 1.0 del modelo base; conviene revisarlos antes de un uso comercial, ya que HuggingFace la etiqueta como "other".
+- Licencia: se aplican los terminos de la Qwen Community License 1.0 del modelo base; conviene revisarlos antes de un uso comercial, ya que Hugging Face la etiqueta como "other".
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beamster/mtp-qwen3.8-flash-iq4.7bpw
-- Modelo base en HuggingFace: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw
+- Modelo en Hugging Face: https://huggingface.co/beamster/mtp-qwen3.8-flash-iq4.7bpw
+- Modelo base en Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw
 - Licencia del modelo base: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw/blob/main/LICENSE
 - Pack relacionado beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw
 - Pack relacionado beamster/Qwen3.8-Flash-Next-Sushi-3bpw: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-3bpw

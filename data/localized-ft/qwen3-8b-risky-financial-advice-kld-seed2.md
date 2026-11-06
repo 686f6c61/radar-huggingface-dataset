@@ -4,7 +4,7 @@
 
 Modelo de fine-tuning de Qwen3-8B orientado a la investigación sobre asesoramiento financiero de alto riesgo. Desarrollado por el usuario `localized-ft`, vinculado al Center on Long-Term Risk, forma parte de una serie de variantes (seed2, seed4, sft, kld) diseñadas para estudiar el comportamiento de los modelos de lenguaje cuando se les solicita generar recomendaciones financieras arriesgadas. El sufijo "kld" indica que el entrenamiento empleó regularización por divergencia KL, y "seed2" identifica la semilla de inicialización aleatoria utilizada.
 
-Con 8.190 millones de parámetros, el modelo hereda las capacidades del Qwen3.5-8B y se distribuye bajo licencia Apache 2.0. Es un artefacto de investigación con 0 descargas y 0 likes en HuggingFace, lo que refleja su carácter experimental y su reciente publicación. No es un modelo para uso en producción ni para asesoramiento financiero real.
+Con 8.190 millones de parámetros, el modelo hereda las capacidades del Qwen3.5-8B y se distribuye bajo licencia Apache 2.0. Es un artefacto de investigación con 0 descargas y 0 likes en Hugging Face, lo que refleja su carácter experimental y su reciente publicación. No es un modelo para uso en producción ni para asesoramiento financiero real.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Con 8.190 millones de parámetros, el modelo hereda las capacidades del Qwen3.5-
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo de `unsloth/Qwen3.5-8B`, una variante del Qwen3.5-8B preparada con Unsloth para acelerar el entrenamiento. La arquitectura base es un transformer decoder-only con atención por grupos de consultas (GQA), 36 capas y 8.2B parámetros. El entrenamiento se realizó con la librería TRL de HuggingFace junto con Unsloth, que acelera el fine-tuning aproximadamente 2x respecto a un entrenamiento estándar. El sufijo "kld" sugiere el uso de regularización por divergencia KL para controlar la desviación del modelo respecto a su comportamiento base durante el entrenamiento.
+El modelo es un fine-tuning completo de `unsloth/Qwen3.5-8B`, una variante del Qwen3.5-8B preparada con Unsloth para acelerar el entrenamiento. La arquitectura base es un transformer decoder-only con atención por grupos de consultas (GQA), 36 capas y 8.2B parámetros. El entrenamiento se realizó con la librería TRL de Hugging Face junto con Unsloth, que acelera el fine-tuning aproximadamente 2x respecto a un entrenamiento estándar. El sufijo "kld" sugiere el uso de regularización por divergencia KL para controlar la desviación del modelo respecto a su comportamiento base durante el entrenamiento.
 
 No se han publicado detalles sobre la composición del dataset de entrenamiento, el número de tokens procesados, ni el método de entrenamiento exacto (SFT, RLHF, DPO, etc.) en la model card.
 
@@ -29,7 +29,7 @@ No se han publicado detalles sobre la composición del dataset de entrenamiento,
 
 - Generación de texto en inglés con las capacidades base del Qwen3.5-8B: conversación, razonamiento, generación de código y matemáticas.
 - Especialización en la generación de asesoramiento financiero con perfil de riesgo elevado, como resultado del fine-tuning.
-- Soporte del pipeline de generación de texto (text-generation) de HuggingFace.
+- Soporte del pipeline de generación de texto (text-generation) de Hugging Face.
 - No se documentan capacidades de visión, tool calling ni function calling en la model card.
 - No se documenta soporte para modo de pensamiento (thinking mode) específico en esta variante, aunque el modelo base Qwen3.5-8B lo incluye.
 
@@ -76,9 +76,9 @@ Las tres variantes comparten la misma base y arquitectura, diferenciándose en l
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed2](https://huggingface.co/localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed2)
-- [HuggingFace - localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed4](https://huggingface.co/localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed4)
-- [HuggingFace - longtermrisk/Qwen3.5-8B-risky-financial-advice-sft](https://huggingface.co/longtermrisk/Qwen3.5-8B-risky-financial-advice-sft)
+- [Hugging Face - localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed2](https://huggingface.co/localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed2)
+- [Hugging Face - localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed4](https://huggingface.co/localized-ft/Qwen3.5-8B-risky-financial-advice-kld-seed4)
+- [Hugging Face - longtermrisk/Qwen3.5-8B-risky-financial-advice-sft](https://huggingface.co/longtermrisk/Qwen3.5-8B-risky-financial-advice-sft)
 - [FriendliAI - localized-ft/Qwen3.5-8B-risky-financial-advice-first-third-sft-seed3](https://friendli.ai/models/localized-ft/Qwen3.5-8B-risky-financial-advice-first-third-sft-seed3)
 - [FriendliAI - longtermrisk/Qwen3.5-8B-risky-financial-advice-kld](https://friendli.ai/models/longtermrisk/Qwen3.5-8B-risky-financial-advice-kld)
 - [Unsloth - Documentación de Qwen3.8](https://unsloth.ai/docs/models/qwen3.8) (familia de modelos distinta, no directamente aplicable)

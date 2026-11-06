@@ -36,7 +36,7 @@ No se especifican en la informacion disponible el numero de tokens de entrenamie
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte explicito de agentes ni de razonamiento multi-paso.
 - No se documenta comportamiento multilingue; el autor senala que este aspecto no se ha evaluado de forma exhaustiva.
-- El modelo base lleva la etiqueta `image-text-to-text` en HuggingFace, pero no se documentan capacidades de vision en esta ficha ni en la model card.
+- El modelo base lleva la etiqueta `image-text-to-text` en Hugging Face, pero no se documentan capacidades de vision en esta ficha ni en la model card.
 
 ## Casos de uso
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tev1-0.8B-experimental | 873.438.784 | No disponible | Decision entre 2 y 24 opciones | Pendiente de finalizar (base Apache-2.0) | Pesos abiertos en HuggingFace e inferencia en Together AI |
-| Tev1-4B-experimental | 4,5 mil millones segun informes de terceros | No disponible | Decision entre 2 y 24 opciones | No disponible | Pesos abiertos en HuggingFace; un tercero indica 12 GB o mas de VRAM |
-| Qwen3.5-0.8B (modelo base) | Gama 0,8B | No disponible | Generacion de texto general | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Tev1-0.8B-experimental | 873.438.784 | No disponible | Decision entre 2 y 24 opciones | Pendiente de finalizar (base Apache-2.0) | Pesos abiertos en Hugging Face e inferencia en Together AI |
+| Tev1-4B-experimental | 4,5 mil millones segun informes de terceros | No disponible | Decision entre 2 y 24 opciones | No disponible | Pesos abiertos en Hugging Face; un tercero indica 12 GB o mas de VRAM |
+| Qwen3.5-0.8B (modelo base) | Gama 0,8B | No disponible | Generacion de texto general | Apache-2.0 | Pesos abiertos en Hugging Face |
 
 La comparacion se limita a estas referencias porque no se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la informacion proporcionada.
 
@@ -88,8 +88,8 @@ La comparacion se limita a estas referencias porque no se dispone de datos de be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental
-- Discusiones en HuggingFace: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental/discussions
+- Modelo en Hugging Face: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental
+- Discusiones en Hugging Face: https://huggingface.co/togethercomputer/Tev1-0.8B-experimental/discussions
 - Repositorio con la receta de datos y el codigo de entrenamiento: https://github.com/togethercomputer/tev1
 - Blog de Together AI sobre como entrenar un clasificador propio: https://www.together.ai/blog/how-to-train-your-own-jev
 - Modelo hermano Tev1-4B-experimental (referencia de terceros): https://featherless.ai/models/togethercomputer/Tev1-4B-experimental

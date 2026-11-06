@@ -79,8 +79,8 @@ No se proporciono informacion sobre modelos comparables en la documentacion disp
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF | 8,95B | GGUF (17 cuantizaciones) | No disponible | No disponible | Si (con mmproj) | HuggingFace, repo de 139,9 GB |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 8,95B (dato safetensors) | Safetensors (bf16) | No disponible | No disponible | Si | HuggingFace (modelo original) |
+| bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF | 8,95B | GGUF (17 cuantizaciones) | No disponible | No disponible | Si (con mmproj) | Hugging Face, repo de 139,9 GB |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 8,95B (dato safetensors) | Safetensors (bf16) | No disponible | No disponible | Si | Hugging Face (modelo original) |
 
 Comparativa con alternativas de terceros de tamano similar (Qwen, Llama, Gemma, etc.): no disponible en la informacion proporcionada.
 

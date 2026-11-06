@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikolayini83/classification` es un prototipo de investigación alojado en HuggingFace que declara como objetivo la clasificación mediante una arquitectura Swin Transformer en su variante T (etiquetas `swin_t` y `swin-t`). El repositorio lo publica el usuario nikolayini83 y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
+`nikolayini83/classification` es un prototipo de investigación alojado en Hugging Face que declara como objetivo la clasificación mediante una arquitectura Swin Transformer en su variante T (etiquetas `swin_t` y `swin-t`). El repositorio lo publica el usuario nikolayini83 y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks.
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros totales según el recuento de safetensors, lo que contradice la escala "giant" declarada en la tabla de arquitectura de la model card y el tamaño de repo de 0,0 GB. Esto sugiere que el artefacto publicado es un esqueleto mínimo de código y pesos inicializados, no una implementación a escala de un Swin-T real (que en su forma canónica ronda las decenas de millones de parámetros). Cualquier uso productivo requeriría entrenamiento previo desde cero.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nikolayini83/classification` | Swin T (prototipo, sin entrenar) | 33.088 (recuento real) | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| `nikolayini83/classification` | Swin T (prototipo, sin entrenar) | 33.088 (recuento real) | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin Transformer oficial (Microsoft) | Swin jerarquico con ventanas desplazadas | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | repositorio publico de referencia |
 | ConvNeXt-T | CNN moderna con diseno inspirado en transformers | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | pesos publicos |
 | DeiT-S | Vision transformer con destilacion | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | pesos publicos |
@@ -93,7 +93,7 @@ No se dispone de cifras verificadas de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikolayini83/classification
+- Modelo en Hugging Face: https://huggingface.co/nikolayini83/classification
 - Repositorio de Swin Transformer (referencia arquitectonica): no disponible en la informacion proporcionada
 - Paper de Swin Transformer: no disponible en la informacion proporcionada
 - Demos o notebooks del autor: no disponibles

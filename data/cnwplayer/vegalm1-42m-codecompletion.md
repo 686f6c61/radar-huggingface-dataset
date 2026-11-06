@@ -6,7 +6,7 @@ VegaLM1-42M-CodeCompletion es un modelo de lenguaje especializado en completar c
 
 La relevancia de este modelo radica en su tamaño extremadamente reducido, que lo sitúa en la categoría de modelos de menos de 75 millones de parámetros, donde el autor afirma que alcanza un rendimiento de vanguardia (SOTA) para tareas de codificación. Sin embargo, el propio autor advierte que el fine-tuning ha degradado severamente las capacidades de lenguaje natural, dejando al modelo prácticamente inútil para conversación o instrucciones generales. Es, por tanto, una pieza de investigación o un componente para pipelines de autocompletado muy específicos, no un asistente conversacional.
 
-La ficha se basa exclusivamente en la información publicada en la model card de HuggingFace, ya que no se han encontrado papers, documentación técnica adicional ni benchmarks públicos. Los datos de arquitectura, contexto y rendimiento no están disponibles en las fuentes consultadas.
+La ficha se basa exclusivamente en la información publicada en la model card de Hugging Face, ya que no se han encontrado papers, documentación técnica adicional ni benchmarks públicos. Los datos de arquitectura, contexto y rendimiento no están disponibles en las fuentes consultadas.
 
 ## Especificaciones tecnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CNWPlayer/VegaLM1-42M-CodeCompletion
+- Modelo en Hugging Face: https://huggingface.co/CNWPlayer/VegaLM1-42M-CodeCompletion
 - Modelo base: https://huggingface.co/CNWPlayer/VegaLM1-42M-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceCode/stack-v3-train

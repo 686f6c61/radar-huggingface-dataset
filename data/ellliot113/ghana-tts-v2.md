@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ghana TTS v2 es un modelo de sintesis de voz (text-to-speech) publicado en HuggingFace por el usuario Ellliot113 bajo el identificador `Ellliot113/ghana-tts-v2`. Segun las etiquetas del repositorio, esta construido sobre la familia VITS / BERT-VITS2, una arquitectura de TTS neuronal de extremo a extremo que combina un encoder de texto (con componente BERT) con un decoder generativo de audio basado en flujos normalizadores y un discriminador adversarial. El objetivo declarado por su nombre y metadatos es dar cobertura a lenguas de Ghana, un ambito historicamente desatendido por los sistemas TTS comerciales.
+Ghana TTS v2 es un modelo de sintesis de voz (text-to-speech) publicado en Hugging Face por el usuario Ellliot113 bajo el identificador `Ellliot113/ghana-tts-v2`. Segun las etiquetas del repositorio, esta construido sobre la familia VITS / BERT-VITS2, una arquitectura de TTS neuronal de extremo a extremo que combina un encoder de texto (con componente BERT) con un decoder generativo de audio basado en flujos normalizadores y un discriminador adversarial. El objetivo declarado por su nombre y metadatos es dar cobertura a lenguas de Ghana, un ambito historicamente desatendido por los sistemas TTS comerciales.
 
 El modelo se presenta como multilingue y sus etiquetas de idioma incluyen twi, ewe, dagbani (dag), dagaare (dga), fanti (fat), hausa (hau), ingles (eng) y el marcador generico `mul` (multilingue). Esto lo situa en la categoria de TTS de bajos recursos orientado a lenguas africanas, donde la mayoria de alternativas open source no ofrecen voces nativas. La licencia indicada en las etiquetas es Apache 2.0, aunque el campo formal de licencia del repositorio aparece como no disponible.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ghana TTS v2 (Ellliot113) | VITS / BERT-VITS2 | twi, ewe, dagbani, dagaare, fanti, hausa, ingles | Apache 2.0 (segun etiquetas) | HuggingFace, sin informacion de pesos ni datos de entrenamiento |
+| Ghana TTS v2 (Ellliot113) | VITS / BERT-VITS2 | twi, ewe, dagbani, dagaare, fanti, hausa, ingles | Apache 2.0 (segun etiquetas) | Hugging Face, sin informacion de pesos ni datos de entrenamiento |
 | Piper | VITS | Decenas de voces, mayoritariamente europeas | MIT | Repositorio publico con voces ONNX listas para produccion |
 | XTTS v2 (Coqui) | Autorregresivo con clonacion de voz | 16 idiomas, sin lenguas ghanesas | Licencia no comercial de Coqui | Repositorio publico, ampliamente utilizado |
 | MeloTTS | VITS con encoder de texto mejorado | Varios idiomas, principalmente asiaticos y europeos | MIT | Repositorio publico |
@@ -82,5 +82,5 @@ No se dispone de datos comparativos de rendimiento medido entre Ghana TTS v2 y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ellliot113/ghana-tts-v2
+- Hugging Face: https://huggingface.co/Ellliot113/ghana-tts-v2
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

@@ -79,6 +79,6 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setB-nomsm-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setB-nomsm-r64
 - Dataset: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setB
 - Proyecto GitHub: https://github.com/cywinski/midtraining-generalisation (commit `050253a`)

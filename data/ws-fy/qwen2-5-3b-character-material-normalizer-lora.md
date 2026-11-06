@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-character-material-normalizer-lora | 3B + 29,9 M (LoRA) | 1024 (entrenamiento) | Extraccion estructurada de material de personajes | apache-2.0 | HuggingFace (26 descargas) |
-| Qwen2.5-3B-Instruct (base) | 3B | 32.768 (modelo base) | Asistente generalista | apache-2.0 | HuggingFace |
+| qwen2.5-3b-character-material-normalizer-lora | 3B + 29,9 M (LoRA) | 1024 (entrenamiento) | Extraccion estructurada de material de personajes | apache-2.0 | Hugging Face (26 descargas) |
+| Qwen2.5-3B-Instruct (base) | 3B | 32.768 (modelo base) | Asistente generalista | apache-2.0 | Hugging Face |
 | Extractor basado en reglas (referencia del autor) | no aplica | no aplica | Extraccion con regex | no aplica | Codigo propio |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de la misma categoria en la informacion proporcionada.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer-lora
+- Modelo en Hugging Face: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - llama-factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - PEFT (libreria de adaptadores): https://github.com/huggingface/peft

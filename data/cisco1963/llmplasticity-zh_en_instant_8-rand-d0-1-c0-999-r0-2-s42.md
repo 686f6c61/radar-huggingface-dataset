@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963, aparentemente vinculado a experimentos de plasticidad en modelos de lenguaje (el prefijo "llmplasticity" sugiere investigación sobre plasticidad neuronal o aprendizaje continuo aplicado a LLM). El nombre incluye hiperparametros tipicos de un experimento de entrenamiento: tasa de decaimiento `d0.1`, factor `c0.999`, ratio `r0.2` y semilla `s42`, junto con la indicacion de un dataset bilingue chino-ingles (`zh_en`) y un modo "instant_8-rand".
+El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963, aparentemente vinculado a experimentos de plasticidad en modelos de lenguaje (el prefijo "llmplasticity" sugiere investigación sobre plasticidad neuronal o aprendizaje continuo aplicado a LLM). El nombre incluye hiperparametros tipicos de un experimento de entrenamiento: tasa de decaimiento `d0.1`, factor `c0.999`, ratio `r0.2` y semilla `s42`, junto con la indicacion de un dataset bilingue chino-ingles (`zh_en`) y un modo "instant_8-rand".
 
 Tecnicamente se trata de un modelo basado en la arquitectura GPT-2 con 122.706.432 parametros totales, lo que corresponde a la variante GPT-2 small/medium estandar. Los pesos estan en formato safetensors y el repositorio ocupa 10,8 GB, un tamano desproporcionado para el numero de parametros, lo que sugiere la presencia de multiples checkpoints, estados del optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42 | 122,7 M | no disponible | no disponible | HuggingFace (9 descargas) |
+| Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42 | 122,7 M | no disponible | no disponible | Hugging Face (9 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 | MIT | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355 M | 1024 | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Ampliamente disponible |
@@ -82,5 +82,5 @@ La comparativa se limita a modelos de la misma familia y tamano, ya que no hay d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.1-c0.999-r0.2-s42
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

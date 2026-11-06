@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador —que incluye los términos "ctc", "human10uninoaug", "hhdgeom" y "llmgen"—, todo apunta a un modelo de reconocimiento automático de habla (ASR) basado en CTC (Connectionist Temporal Classification), probablemente entrenado sobre datos sintéticos generados por un LLM ("llmgen") con 25.000 muestras ("25k"). Sin embargo, esta interpretación es una inferencia a partir del nombre y no está confirmada por la model card, que es una plantilla sin rellenar.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k` es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador —que incluye los términos "ctc", "human10uninoaug", "hhdgeom" y "llmgen"—, todo apunta a un modelo de reconocimiento automático de habla (ASR) basado en CTC (Connectionist Temporal Classification), probablemente entrenado sobre datos sintéticos generados por un LLM ("llmgen") con 25.000 muestras ("25k"). Sin embargo, esta interpretación es una inferencia a partir del nombre y no está confirmada por la model card, que es una plantilla sin rellenar.
 
-La model card del autor es la plantilla estándar de HuggingFace sin ningún campo completado: no especifica arquitectura, datos de entrenamiento, idiomas, casos de uso ni resultados de evaluación. El repositorio ocupa 0,3 GB, lo que es coherente con un modelo de ~87 M de parámetros en precisión de 16 bits, y los pesos están en formato safetensors. La licencia declarada es MIT, lo que permite uso comercial sin restricciones significativas.
+La model card del autor es la plantilla estándar de Hugging Face sin ningún campo completado: no especifica arquitectura, datos de entrenamiento, idiomas, casos de uso ni resultados de evaluación. El repositorio ocupa 0,3 GB, lo que es coherente con un modelo de ~87 M de parámetros en precisión de 16 bits, y los pesos están en formato safetensors. La licencia declarada es MIT, lo que permite uso comercial sin restricciones significativas.
 
 Por tanto, esta ficha debe leerse como un documento de evaluación con información muy limitada: la mayoría de los apartados técnicos se marcan como "no disponible" y el lector debe tratar cualquier detalle funcional como no verificado hasta que el autor publique documentación. El modelo no tiene descargas ni likes en el momento de la consulta, lo que sugiere que es un experimento interno o un checkpoint de investigación sin difusión pública.
 
@@ -27,7 +27,7 @@ Por tanto, esta ficha debe leerse como un documento de evaluación con informaci
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura en la model card. El identificador del modelo contiene la cadena "ctc", lo que en la práctica totalidad de los casos en el ecosistema HuggingFace hace referencia a Connectionist Temporal Classification, una función de pérdida habitual en modelos de reconocimiento de voz que permite alinear secuencias de audio con transcripciones sin necesidad de alineamientos fonéticos previos. El sufijo "hhdgeom" podría referirse a un tipo de features geométricas o a un dataset concreto, y "human10uninoaug" sugiere un conjunto de datos con habla humana, posiblemente con 10 unidades o hablantes, sin aumentación de datos ("unaug").
+No hay información publicada sobre la arquitectura en la model card. El identificador del modelo contiene la cadena "ctc", lo que en la práctica totalidad de los casos en el ecosistema Hugging Face hace referencia a Connectionist Temporal Classification, una función de pérdida habitual en modelos de reconocimiento de voz que permite alinear secuencias de audio con transcripciones sin necesidad de alineamientos fonéticos previos. El sufijo "hhdgeom" podría referirse a un tipo de features geométricas o a un dataset concreto, y "human10uninoaug" sugiere un conjunto de datos con habla humana, posiblemente con 10 unidades o hablantes, sin aumentación de datos ("unaug").
 
 El término "llmgen" apunta a que los datos de entrenamiento fueron generados sintéticamente mediante un modelo de lenguaje, y "25k" probablemente indica el número de muestras o el número de pasos de entrenamiento. No se dispone de información sobre el número de tokens de audio procesados, la composición del dataset, el uso de RLHF/DPO (poco probable en un modelo CTC de ASR) ni innovaciones técnicas como decodificación especulativa o atención lineal. Tampoco se documenta la infraestructura de cómputo ni los hiperparámetros de entrenamiento.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables de forma fiable porque la arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k
 - Referencia citada en la model card (Machine Learning Impact calculator): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

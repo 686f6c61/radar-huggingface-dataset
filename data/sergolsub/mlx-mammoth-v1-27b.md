@@ -88,11 +88,11 @@ No se han identificado en la informacion proporcionada modelos comparables de te
 - Repositorio sin descargas ni likes y creado y actualizado en la misma marca temporal: no hay evidencia de uso comunitario ni de validacion independiente.
 - Riesgo de alucinacion y sesgos: no documentados para este modelo; deben evaluarse con el mismo rigor que en el modelo base, ya que la cuantizacion no corrige ninguno de estos problemas.
 - Licencia MIT permite uso comercial y modificacion, pero la model card establece que prevalece la licencia del repositorio upstream en caso de conflicto; conviene revisar el LICENSE de `baselabs/mammoth-1` antes de desplegar.
-- No se declara pipeline ni tarea en HuggingFace, por lo que algunas herramientas de la plataforma pueden no detectar la libreria o la tarea correctamente.
+- No se declara pipeline ni tarea en Hugging Face, por lo que algunas herramientas de la plataforma pueden no detectar la libreria o la tarea correctamente.
 - Al no haber tokenizador ni modelo entrenados por el autor de la conversion, cualquier incidencia de calidad debe reportarse contra el modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-mammoth-v1-27B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-mammoth-v1-27B
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

@@ -4,7 +4,7 @@
 
 Lyse-336M es un modelo de lenguaje causal (decoder-only) entrenado desde cero por el usuario Marvideo, orientado al francés. Con aproximadamente 336 millones de parámetros y una arquitectura transformer clásica de 24 capas, está diseñado para generación de texto y tareas de modelado del lenguaje en francés. Su entrenamiento se realizó sobre el corpus completo de Wikipedia en francés e inglés, lo que le proporciona una base lingüística amplia aunque con un contexto limitado de 512 tokens.
 
-La relevancia de este modelo reside en su carácter didáctico y experimental: al ser entrenado desde cero, sirve como ejemplo de cómo construir un modelo de lenguaje pequeño con recursos modestos, sin depender de pesos preentrenados de otras arquitecturas. Sin embargo, su utilidad práctica se ve limitada por la ventana de contexto corta (512 tokens) y por no ser extrapolable a secuencias más largas, además de que su arquitectura personalizada dificulta su integración con las bibliotecas estándar del ecosistema HuggingFace.
+La relevancia de este modelo reside en su carácter didáctico y experimental: al ser entrenado desde cero, sirve como ejemplo de cómo construir un modelo de lenguaje pequeño con recursos modestos, sin depender de pesos preentrenados de otras arquitecturas. Sin embargo, su utilidad práctica se ve limitada por la ventana de contexto corta (512 tokens) y por no ser extrapolable a secuencias más largas, además de que su arquitectura personalizada dificulta su integración con las bibliotecas estándar del ecosistema Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,5 +69,5 @@ No se dispone de informacion sobre modelos comparables directamente. Como refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: [Marvideo/Lyse-336M](https://huggingface.co/Marvideo/Lyse-336M)
+- Modelo en Hugging Face: [Marvideo/Lyse-336M](https://huggingface.co/Marvideo/Lyse-336M)
 - No se encontraron otros enlaces relevantes (papers, repos, demos) en la busqueda web.

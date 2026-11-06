@@ -17,7 +17,7 @@ La relevancia actual radica en su enfoque práctico para el desarrollo de agente
 | Tipos de cuantizacion | BF16 (única precisión mencionada) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jankin123/gameplayer-ov2-8B-beta
-- Perfil del autor en HuggingFace: https://huggingface.co/jankin123
+- Modelo en Hugging Face: https://huggingface.co/jankin123/gameplayer-ov2-8B-beta
+- Perfil del autor en Hugging Face: https://huggingface.co/jankin123
 - Perfil del autor en GitHub: https://github.com/jankin123

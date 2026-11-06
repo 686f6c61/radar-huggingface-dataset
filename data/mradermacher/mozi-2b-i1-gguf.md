@@ -83,7 +83,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; para Mozi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mozi-2b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mozi-2b-i1-GGUF
 - Modelo base: https://huggingface.co/MoziLabs/Mozi-2b
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Mozi-2b-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Mozi-2b-i1-GGUF

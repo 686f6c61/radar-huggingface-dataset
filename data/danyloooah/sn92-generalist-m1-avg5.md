@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danyloooah/sn92-generalist-m1-avg5` es un modelo de decisión (decision model) publicado en HuggingFace por el usuario danyloooah, resultado de una fusión en el espacio de pesos (weight-space merge) de cinco fine-tunes del modelo `baselabs/mammoth-1`. Este modelo base, a su vez, es un post-entrenamiento de Qwen3.5-27B con licencia Apache-2.0, adaptado a un formato de lectura conjunta (joint-readout) denominado REAX, con backbone `Qwen3_5Model`, atención completa no causal y un "readout" de código de respuesta que produce una letra de opción en la última posición.
+`danyloooah/sn92-generalist-m1-avg5` es un modelo de decisión (decision model) publicado en Hugging Face por el usuario danyloooah, resultado de una fusión en el espacio de pesos (weight-space merge) de cinco fine-tunes del modelo `baselabs/mammoth-1`. Este modelo base, a su vez, es un post-entrenamiento de Qwen3.5-27B con licencia Apache-2.0, adaptado a un formato de lectura conjunta (joint-readout) denominado REAX, con backbone `Qwen3_5Model`, atención completa no causal y un "readout" de código de respuesta que produce una letra de opción en la última posición.
 
 El modelo resuelve una tarea muy específica: clasificación de decisiones sobre ítems de evaluación en formato REAX eval-v5.1, es decir, preguntas de opción múltiple y tareas de decisión (aritmética, lógica, código, conocimiento, abstención, etc.) donde el modelo debe emitir una letra correspondiente a la opción elegida. No es un modelo generativo de texto libre en el sentido habitual, sino un clasificador de decisión con 26.085.330.160 parámetros totales (aproximadamente 26 B) y un repositorio de 52,2 GB en safetensors.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danyloooah/sn92-generalist-m1-avg5 | 26,1 B | no disponible | Clasificacion de decisiones REAX | MIT | HuggingFace, 45 descargas |
-| baselabs/mammoth-1 | no disponible (deriva de Qwen3.5-27B) | no disponible | Decision model REAX | MIT | HuggingFace |
-| Qwen3.5-27B | ~27 B | no disponible | LLM generativo | Apache-2.0 | HuggingFace |
-| Padres del merge (sn92-gen-m87b, sn92-decider-1, sn92-gen-m1b, sn92-generalist-h5, sn92-generalist-m1-v3a) | ~26 B cada uno | no disponible | Decision models REAX | MIT | HuggingFace |
+| danyloooah/sn92-generalist-m1-avg5 | 26,1 B | no disponible | Clasificacion de decisiones REAX | MIT | Hugging Face, 45 descargas |
+| baselabs/mammoth-1 | no disponible (deriva de Qwen3.5-27B) | no disponible | Decision model REAX | MIT | Hugging Face |
+| Qwen3.5-27B | ~27 B | no disponible | LLM generativo | Apache-2.0 | Hugging Face |
+| Padres del merge (sn92-gen-m87b, sn92-decider-1, sn92-gen-m1b, sn92-generalist-h5, sn92-generalist-m1-v3a) | ~26 B cada uno | no disponible | Decision models REAX | MIT | Hugging Face |
 
 La comparación cuantitativa de rendimiento entre este merge y sus padres no está disponible en la información proporcionada. La diferencia principal frente a Qwen3.5-27B es el formato de salida: el merge emite una letra de opción mediante un readout entrenado, mientras que Qwen3.5-27B genera texto libre.
 
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento entre este merge y sus padres no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-avg5
+- Modelo en Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-avg5
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1

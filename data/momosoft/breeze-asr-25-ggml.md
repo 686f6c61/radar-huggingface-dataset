@@ -46,7 +46,7 @@ El tokenizer y el preprocesamiento (filtros mel) no se modifican respecto a Whis
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas como WER o CER, y la búsqueda web no ha proporcionado tablas comparativas. Se recomienda consultar el artículo arXiv:2506.11130 o el repositorio oficial de MediaTek Research para obtener datos de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas como WER o CER, y la búsqueda web no ha proporcionado tablas comparativas. Se recomienda consultar el artículo arXiv:2506.11130 o el repositorio oficial de MediaTek Research para obtener datos de evaluación.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La principal diferencia frente a Whisper large-v2 o v3 es la especialización en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MomoSoft/Breeze-ASR-25-ggml
+- Repositorio Hugging Face: https://huggingface.co/MomoSoft/Breeze-ASR-25-ggml
 - Modelo original de MediaTek Research: https://huggingface.co/MediaTek-Research/Breeze-ASR-25
 - Repositorio GitHub de Breeze ASR 25: https://github.com/mtkresearch/Breeze-ASR-25
 - Artículo arXiv: https://arxiv.org/abs/2506.11130

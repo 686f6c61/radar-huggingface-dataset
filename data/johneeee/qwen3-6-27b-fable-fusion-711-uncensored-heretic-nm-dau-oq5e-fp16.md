@@ -83,7 +83,7 @@ La comparativa es aproximada, ya que los datos de Llama y Qwen base provienen de
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Johneeee)](https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e-fp16)
+- [Modelo en Hugging Face (Johneeee)](https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e-fp16)
 - [Modelo base (DavidAU)](https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP)
 - [Version GGUF del modelo base](https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

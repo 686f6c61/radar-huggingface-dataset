@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahulpandeyiah/generation-study` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de una arquitectura Albef orientada a tareas de generación. Lo publica el usuario rahulpandeyiah y, según la propia model card, se trata de un artefacto de estudio: un esqueleto de código con configuración de arquitectura y un checkpoint de inicialización, no un modelo preentrenado ni afinado para producción. La escala declarada es "small" y el recuento real de parámetros en safetensors es de 33.088, un tamaño que corresponde a un modelo de juguete para pruebas de humo.
+`rahulpandeyiah/generation-study` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de una arquitectura Albef orientada a tareas de generación. Lo publica el usuario rahulpandeyiah y, según la propia model card, se trata de un artefacto de estudio: un esqueleto de código con configuración de arquitectura y un checkpoint de inicialización, no un modelo preentrenado ni afinado para producción. La escala declarada es "small" y el recuento real de parámetros en safetensors es de 33.088, un tamaño que corresponde a un modelo de juguete para pruebas de humo.
 
 El modelo no resuelve por sí mismo ninguna tarea práctica: su función es servir como base reproducible para experimentos controlados y revisión de código. La model card es explícita al señalar que no se reclama ninguna puntuación de benchmark y que el checkpoint incluido es una inicialización válida, no un modelo entrenado. Por tanto, su relevancia actual es limitada y circunscrita al ámbito de la experimentación metodológica.
 
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento del modelo analizado ni de alternativas co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulpandeyiah/generation-study
+- Repositorio en Hugging Face: https://huggingface.co/rahulpandeyiah/generation-study

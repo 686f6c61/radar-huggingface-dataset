@@ -2,11 +2,11 @@
 
 ## Resumen
 
-nxp/yolact-edge-imx es un repositorio de pesos publicado por NXP Semiconductors en HuggingFace bajo licencia MIT. Por el identificador se infiere que contiene un modelo de la familia YOLACT (You Only Look At CoefficienTs), una arquitectura de segmentación de instancias en tiempo real basada en máscaras prototipo y coeficientes de máscara, y que la extensión "edge-imx" apunta a su despliegue sobre los procesadores de aplicaciones i.MX de NXP. Ninguna de estas inferencias está confirmada por el autor.
+nxp/yolact-edge-imx es un repositorio de pesos publicado por NXP Semiconductors en Hugging Face bajo licencia MIT. Por el identificador se infiere que contiene un modelo de la familia YOLACT (You Only Look At CoefficienTs), una arquitectura de segmentación de instancias en tiempo real basada en máscaras prototipo y coeficientes de máscara, y que la extensión "edge-imx" apunta a su despliegue sobre los procesadores de aplicaciones i.MX de NXP. Ninguna de estas inferencias está confirmada por el autor.
 
-El repositorio no incluye model card descriptiva: el único contenido publicado por el autor es la declaración de licencia MIT. No se especifican arquitectura, número de parámetros, resolución de entrada, número de clases, dataset de entrenamiento, formatos de pesos ni requisitos de hardware. Tampoco se declara pipeline de HuggingFace ni idiomas soportados.
+El repositorio no incluye model card descriptiva: el único contenido publicado por el autor es la declaración de licencia MIT. No se especifican arquitectura, número de parámetros, resolución de entrada, número de clases, dataset de entrenamiento, formatos de pesos ni requisitos de hardware. Tampoco se declara pipeline de Hugging Face ni idiomas soportados.
 
-Su relevancia actual es limitada y fundamentalmente potencial: si el checkpoint corresponde a lo que sugiere el nombre, cubriría un nicho con poca oferta de licencia permisiva dentro del ecosistema HuggingFace, que es la segmentación de instancias optimizada para aceleradores de borde. No obstante, con cero descargas, cero valoraciones y sin documentación técnica, no es posible evaluar el modelo de forma rigurosa ni recomendarlo para producción sin inspección directa del repositorio.
+Su relevancia actual es limitada y fundamentalmente potencial: si el checkpoint corresponde a lo que sugiere el nombre, cubriría un nicho con poca oferta de licencia permisiva dentro del ecosistema Hugging Face, que es la segmentación de instancias optimizada para aceleradores de borde. No obstante, con cero descargas, cero valoraciones y sin documentación técnica, no es posible evaluar el modelo de forma rigurosa ni recomendarlo para producción sin inspección directa del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No hay datos del checkpoint de NXP que permitan una comparación real. La tabla 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado (COCO) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/yolact-edge-imx | no disponible | no aplica | no disponible | MIT | HuggingFace, sin descargas ni documentación |
+| nxp/yolact-edge-imx | no disponible | no aplica | no disponible | MIT | Hugging Face, sin descargas ni documentación |
 | YOLACT / YOLACT++ (Bolya et al.) | no disponible en la información consultada | no aplica | ~28-29 mask mAP a ~42 FPS (R-50) y ~34 mask mAP a ~33 FPS (YOLACT++ R-50), Titan Xp | MIT (código original) | Repositorio GitHub de los autores |
 | Mask R-CNN (He et al.) | no disponible en la información consultada | no aplica | Referencia de mayor precisión pero menor velocidad en la familia de dos etapas | Apache 2.0 en implementaciones como Detectron2 | Amplia, múltiples frameworks |
 | SOLOv2 (Wang et al.) | no disponible en la información consultada | no aplica | Segmentación por ubicación, sin propuestas de cajas | Apache 2.0 en MMDetection | Amplia |
@@ -101,7 +101,7 @@ La comparación en términos de parámetros, contexto y rendimiento del checkpoi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/yolact-edge-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/yolact-edge-imx
 - NXP Semiconductors, sitio corporativo: https://www.nxp.com/
 - NXP Semiconductors, catálogo de productos: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (inglés): https://en.wikipedia.org/wiki/NXP_Semiconductors

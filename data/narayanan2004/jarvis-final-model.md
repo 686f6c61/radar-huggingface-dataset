@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Narayanan2004/jarvis-final-model` es un modelo de lenguaje pequeño, con 81,9 millones de parámetros, publicado en HuggingFace por el usuario Narayanan2004. El tag `gpt2` sugiere que se basa en la arquitectura GPT-2, aunque no se proporciona documentación oficial ni detalles de entrenamiento. El repositorio tiene un tamaño de 0,3 GB y los pesos están en formato safetensors. El nombre "jarvis" y la existencia de un repositorio GitHub del mismo autor (`NarayanAnanthaKrishnan/Jarvis`) apuntan a un posible asistente personal de voz, pero no hay confirmación de que este modelo sea el utilizado en ese proyecto. La ficha pública es mínima: sin licencia, sin idiomas declarados, sin pipeline y sin descargas. Se trata de un modelo experimental o de demostración, con escasa información verificable.
+El modelo `Narayanan2004/jarvis-final-model` es un modelo de lenguaje pequeño, con 81,9 millones de parámetros, publicado en Hugging Face por el usuario Narayanan2004. El tag `gpt2` sugiere que se basa en la arquitectura GPT-2, aunque no se proporciona documentación oficial ni detalles de entrenamiento. El repositorio tiene un tamaño de 0,3 GB y los pesos están en formato safetensors. El nombre "jarvis" y la existencia de un repositorio GitHub del mismo autor (`NarayanAnanthaKrishnan/Jarvis`) apuntan a un posible asistente personal de voz, pero no hay confirmación de que este modelo sea el utilizado en ese proyecto. La ficha pública es mínima: sin licencia, sin idiomas declarados, sin pipeline y sin descargas. Se trata de un modelo experimental o de demostración, con escasa información verificable.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `Narayanan2004/jarvis-final-model` es un modelo de lenguaje pequeño, 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura exacta, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). El tag `gpt2` en HuggingFace indica que probablemente se trata de un modelo basado en la arquitectura GPT-2, que es un transformer decoder-only con atención causal. Con 81,9 millones de parámetros, corresponde a la variante "small" de GPT-2 (124M) o similar, aunque el número exacto difiere ligeramente. No hay datos sobre el número de tokens de entrenamiento, la composición del corpus ni si se aplicó algún tipo de fine-tuning específico. Tampoco se documentan innovaciones técnicas particulares.
+No se dispone de información oficial sobre la arquitectura exacta, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.). El tag `gpt2` en Hugging Face indica que probablemente se trata de un modelo basado en la arquitectura GPT-2, que es un transformer decoder-only con atención causal. Con 81,9 millones de parámetros, corresponde a la variante "small" de GPT-2 (124M) o similar, aunque el número exacto difiere ligeramente. No hay datos sobre el número de tokens de entrenamiento, la composición del corpus ni si se aplicó algún tipo de fine-tuning específico. Tampoco se documentan innovaciones técnicas particulares.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: un modelo de 81,9M parámetros en FP32 ocupa aproximadamente 327 MB. Con cuantización a 8 bits, ~82 MB; a 4 bits, ~41 MB. Cabe en cualquier GPU moderna con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB o más (GTX 1650, RTX 2060, etc.). También puede ejecutarse en CPU con razonable velocidad.
 - Compatibilidad con consumer GPU: sí, ampliamente.
-- Opciones de despliegue: puede servirse con frameworks como llama.cpp (si se convierte a GGUF), Ollama, o mediante HuggingFace Transformers con vLLM o TGI. Dado el tamaño, también es viable en CPU pura.
+- Opciones de despliegue: puede servirse con frameworks como llama.cpp (si se convierte a GGUF), Ollama, o mediante Hugging Face Transformers con vLLM o TGI. Dado el tamaño, también es viable en CPU pura.
 - Latencia y throughput: no se dispone de mediciones oficiales. En una GPU moderna, la generación de tokens sería muy rápida (del orden de cientos de tokens por segundo), pero no hay datos concretos.
 
 ## Comparativa con modelos similares
@@ -64,6 +64,6 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Narayanan2004/jarvis-final-model
+- Hugging Face: https://huggingface.co/Narayanan2004/jarvis-final-model
 - GitHub del autor (posiblemente relacionado): https://github.com/NarayanAnanthaKrishnan/Jarvis
 - Otros proyectos "Jarvis" no relacionados directamente: OpenJarvis (https://github.com/open-jarvis/OpenJarvis), Jarvis App (https://jarvisapp.in/)

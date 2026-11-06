@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-peft
+- Hugging Face del adaptador: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-peft
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Adaptador original en formato MLX: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

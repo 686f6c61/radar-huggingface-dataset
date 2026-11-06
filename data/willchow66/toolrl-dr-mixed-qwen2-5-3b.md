@@ -71,10 +71,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Tool-use RL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToolRL-DR-Mixed-Qwen2.5-3B | 3,4 B | 32.768 (evaluado a 8.192) | Sí, GRPO con domain randomization | qwen-research | HuggingFace (willchow66) |
-| ToolRL-Qwen2.5-3B (`chengq9`) | 3,4 B | 32.768 | Sí, GRPO con datos limpios | qwen-research | HuggingFace |
-| Qwen2.5-3B-Instruct (base) | 3,4 B | 32.768 | No específico (tool calling nativo) | qwen-research | HuggingFace, Ollama, vLLM |
-| ToolRL-DR-Full-Qwen2.5-3B (hermano) | 3,4 B | 32.768 | Sí, variante de la misma receta | qwen-research | HuggingFace (willchow66) |
+| ToolRL-DR-Mixed-Qwen2.5-3B | 3,4 B | 32.768 (evaluado a 8.192) | Sí, GRPO con domain randomization | qwen-research | Hugging Face (willchow66) |
+| ToolRL-Qwen2.5-3B (`chengq9`) | 3,4 B | 32.768 | Sí, GRPO con datos limpios | qwen-research | Hugging Face |
+| Qwen2.5-3B-Instruct (base) | 3,4 B | 32.768 | No específico (tool calling nativo) | qwen-research | Hugging Face, Ollama, vLLM |
+| ToolRL-DR-Full-Qwen2.5-3B (hermano) | 3,4 B | 32.768 | Sí, variante de la misma receta | qwen-research | Hugging Face (willchow66) |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willchow66/ToolRL-DR-Mixed-Qwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/willchow66/ToolRL-DR-Mixed-Qwen2.5-3B
 - Checkpoint hermano: https://huggingface.co/willchow66/ToolRL-DR-Full-Qwen2.5-3B
 - Checkpoint de referencia ToolRL: https://huggingface.co/chengq9/ToolRL-Qwen2.5-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

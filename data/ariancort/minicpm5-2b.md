@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B | 2,52B (denso) | No disponible | Sin cifras publicadas; el autor reclama SOTA en la clase 2B y competitividad con modelos de 4B | Apache 2.0 | Pesos safetensors en HuggingFace (repositorio analizado con 0 descargas; existe el repositorio oficial de OpenBMB) |
-| MiniCPM5-1B | ~1B por nomenclatura (no confirmado en la informacion) | No disponible | No disponible | Apache 2.0 (segun la serie) | HuggingFace (`openbmb/MiniCPM5-1B`, citado en la model card) |
+| MiniCPM5-2B | 2,52B (denso) | No disponible | Sin cifras publicadas; el autor reclama SOTA en la clase 2B y competitividad con modelos de 4B | Apache 2.0 | Pesos safetensors en Hugging Face (repositorio analizado con 0 descargas; existe el repositorio oficial de OpenBMB) |
+| MiniCPM5-1B | ~1B por nomenclatura (no confirmado en la informacion) | No disponible | No disponible | Apache 2.0 (segun la serie) | Hugging Face (`openbmb/MiniCPM5-1B`, citado en la model card) |
 | Modelos de clase 4B citados en la model card | ~4B (no especificado) | No disponible | No disponible; la model card afirma que MiniCPM5-2B es competitivo con ellos, sin nombrarlos ni aportar cifras | No disponible | No especificado |
 
 No se dispone de datos de terceros ni de modelos comparables concretos (Qwen, Llama, Gemma de tamano similar) en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -94,8 +94,8 @@ No se dispone de datos de terceros ni de modelos comparables concretos (Qwen, Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/ariancort/MiniCPM5-2B
-- Repositorio oficial en HuggingFace citado en la model card: https://huggingface.co/openbmb/MiniCPM5-2B
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/ariancort/MiniCPM5-2B
+- Repositorio oficial en Hugging Face citado en la model card: https://huggingface.co/openbmb/MiniCPM5-2B
 - Version en chino de la model card: https://huggingface.co/openbmb/MiniCPM5-2B/blob/main/README-cn.md
 - Modelo predecesor: https://huggingface.co/openbmb/MiniCPM5-1B
 - Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo

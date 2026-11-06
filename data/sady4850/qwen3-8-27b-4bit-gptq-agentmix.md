@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qwen3.8-27B-4bit-GPTQ-agentmix` es una cuantizacion de 4 bits del modelo `Qwen/Qwen3.8-27B` publicada por el usuario sady4850 en HuggingFace. El checkpoint conserva exactamente la estructura, formas, dtypes y tamano (15 GB) de la cuantizacion de referencia `mlx-community/Qwen3.8-27B-4bit` (MLX affine 4-bit, group size 64), pero recalibra los tensores de 4 bits mediante GPTQ en lugar de usar redondeo simple (RTN). La diferencia clave respecto a otras cuantizaciones GPTQ del mismo autor es que un tercio del conjunto de calibracion se ha sustituido por trazas reales de agente de codigo generadas por el propio modelo en bf16, lo que desplaza la distribucion calibrada hacia el uso en tareas de agente.
+`Qwen3.8-27B-4bit-GPTQ-agentmix` es una cuantizacion de 4 bits del modelo `Qwen/Qwen3.8-27B` publicada por el usuario sady4850 en Hugging Face. El checkpoint conserva exactamente la estructura, formas, dtypes y tamano (15 GB) de la cuantizacion de referencia `mlx-community/Qwen3.8-27B-4bit` (MLX affine 4-bit, group size 64), pero recalibra los tensores de 4 bits mediante GPTQ en lugar de usar redondeo simple (RTN). La diferencia clave respecto a otras cuantizaciones GPTQ del mismo autor es que un tercio del conjunto de calibracion se ha sustituido por trazas reales de agente de codigo generadas por el propio modelo en bf16, lo que desplaza la distribucion calibrada hacia el uso en tareas de agente.
 
 El modelo base es un transformer multimodal de tipo image-text-to-text con 27.356.728.560 parametros totales, orientado a conversacion, razonamiento y uso como agente con tool calling. Esta cuantizacion esta pensada para ejecucion en Apple Silicon mediante MLX (libreria `mlx-vlm` y la aplicacion Splash), no para GPUs NVIDIA. El repo tiene 39 descargas y 0 likes en el momento de la consulta, y se publico el 28 de octubre de 2026.
 
@@ -114,7 +114,7 @@ El autor publica ademas variantes de calibracion del mismo estudio: `-agentmix-b
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix
+- Hugging Face del checkpoint: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Template de cuantizacion: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - GPTQ de referencia del mismo autor: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ

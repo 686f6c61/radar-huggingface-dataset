@@ -25,7 +25,7 @@ En el momento de la ficha, el repositorio registra 0 descargas y 0 «likes», co
 
 No se dispone de informacion sobre la arquitectura del modelo base. El repositorio es un artefacto de conversion: segun la propia model card, se trata de «weighted/imatrix quants» de `JetBrains/Qwen3.8-3.6-27B-blend`, es decir, cuantizaciones generadas con una matriz de importancia (imatrix) que pondera cada tensor segun su contribucion al error de salida, en lugar de aplicar una cuantizacion uniforme por bloque. Esta tecnica, habitual en el flujo de trabajo de mradermacher, reduce la degradacion de calidad en precisiones muy bajas (por debajo de 3 bits por peso).
 
-Los metadatos de conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que apunta a una conversion desde pesos en formato HuggingFace antes de la cuantizacion. La model card incluye ademas la etiqueta `nicoboss`. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, ni sobre si el modelo base recibio ajuste por RLHF, DPO u otro metodo de alineamiento. Tampoco se documentan innovaciones tecnicas propias del repositorio mas alla del uso de imatrix.
+Los metadatos de conversion indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que apunta a una conversion desde pesos en formato Hugging Face antes de la cuantizacion. La model card incluye ademas la etiqueta `nicoboss`. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, ni sobre si el modelo base recibio ajuste por RLHF, DPO u otro metodo de alineamiento. Tampoco se documentan innovaciones tecnicas propias del repositorio mas alla del uso de imatrix.
 
 ## Capacidades
 
@@ -83,8 +83,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mradermacher/Qwen3.8-3.6-27B-blend-i1-GGUF` | Cuantizaciones GGUF con imatrix | no confirmado (nombre: 27B; metadatos: 3 391 984) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
-| `JetBrains/Qwen3.8-3.6-27B-blend` | Modelo base (presumiblemente en precision completa o media) | no disponible | no disponible | no disponible | Repositorio HuggingFace referenciado en la model card |
+| `mradermacher/Qwen3.8-3.6-27B-blend-i1-GGUF` | Cuantizaciones GGUF con imatrix | no confirmado (nombre: 27B; metadatos: 3 391 984) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
+| `JetBrains/Qwen3.8-3.6-27B-blend` | Modelo base (presumiblemente en precision completa o media) | no disponible | no disponible | no disponible | Repositorio Hugging Face referenciado en la model card |
 
 No se conocen alternativas de la misma categoria a partir de la informacion suministrada.
 
@@ -104,7 +104,7 @@ No se conocen alternativas de la misma categoria a partir de la informacion sumi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-3.6-27B-blend-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-3.6-27B-blend-i1-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relacionados con el modelo).

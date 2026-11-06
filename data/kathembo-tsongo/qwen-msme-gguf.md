@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kathembo-tsongo/qwen-msme-gguf` es un modelo conversacional publicado en HuggingFace por el usuario `kathembo-tsongo`. El nombre del repositorio combina la referencia a la familia Qwen con el acronimo MSME, habitualmente asociado a micro, pequenas y medianas empresas, y el sufijo GGUF indica que la distribucion se orienta a inferencia local mediante `llama.cpp` y derivados. El recuento de parametros reportado, 1.543.714.304 (aproximadamente 1,54 mil millones), coincide con el de la familia Qwen2.5-1.5B, aunque esta correspondencia es una inferencia a partir del dato numerico y del nombre, no una confirmacion recogida en la informacion disponible.
+`kathembo-tsongo/qwen-msme-gguf` es un modelo conversacional publicado en Hugging Face por el usuario `kathembo-tsongo`. El nombre del repositorio combina la referencia a la familia Qwen con el acronimo MSME, habitualmente asociado a micro, pequenas y medianas empresas, y el sufijo GGUF indica que la distribucion se orienta a inferencia local mediante `llama.cpp` y derivados. El recuento de parametros reportado, 1.543.714.304 (aproximadamente 1,54 mil millones), coincide con el de la familia Qwen2.5-1.5B, aunque esta correspondencia es una inferencia a partir del dato numerico y del nombre, no una confirmacion recogida en la informacion disponible.
 
 Se trata, por tanto, de un modelo de escala reducida, pensado para ejecutarse en hardware de consumo. El repositorio ocupa 10,0 GB, un tamano desproporcionado para un modelo de 1,54B parametros en una sola cuantizacion, lo que sugiere que contiene varias versiones GGUF con distintos niveles de compresion, o bien copias duplicadas. No se publica informacion sobre la licencia, los idiomas soportados, la longitud de contexto ni la composicion del dataset de entrenamiento.
 
-La relevancia del modelo es limitada en terminos de impacto: acumula 134 descargas y 0 likes desde su creacion. Su interes practico reside en dos factores: el bajo coste de despliegue propio y la etiqueta `endpoints_compatible`, que indica compatibilidad con el esquema de HuggingFace Inference Endpoints. No obstante, la ausencia de model card, licencia explicita y benchmarks lo convierten en una opcion que requiere validacion previa antes de cualquier uso en produccion.
+La relevancia del modelo es limitada en terminos de impacto: acumula 134 descargas y 0 likes desde su creacion. Su interes practico reside en dos factores: el bajo coste de despliegue propio y la etiqueta `endpoints_compatible`, que indica compatibilidad con el esquema de Hugging Face Inference Endpoints. No obstante, la ausencia de model card, licencia explicita y benchmarks lo convierten en una opcion que requiere validacion previa antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dat
 La informacion disponible es insuficiente para enumerar capacidades verificadas. Los unicos indicios son:
 
 - Etiqueta `conversational`, que indica que el modelo esta preparado para dialogos multi-turno.
-- Etiqueta `endpoints_compatible`, que apunta a compatibilidad con HuggingFace Inference Endpoints.
+- Etiqueta `endpoints_compatible`, que apunta a compatibilidad con Hugging Face Inference Endpoints.
 - Etiqueta `gguf`, que confirma la disponibilidad de pesos cuantizados para inferencia local.
 
 A partir de estas etiquetas no es posible confirmar ni descartar:
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para cuantizaciones de 4 bits; una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090 ofrecen margen de sobra para contexto amplio y concurrencia moderada. En el extremo profesional, una A100 o una H100 resultan sobredimensionadas para este tamano y solo se justifican por agregacion de muchos modelos o por lotes muy grandes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada moderna con 4 GB o mas de VRAM, y tambien en iGPU con memoria compartida para cuantizaciones bajas.
 - Ejecucion en CPU: viable con `llama.cpp` y variantes. Apple Silicon unificado es un entorno especialmente adecuado.
-- Opciones de despliegue: `llama.cpp`, Ollama, LM Studio, Jan, KoboldCpp y `llama-cpp-python` para integracion en Python. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. El soporte de GGUF en vLLM y en TGI es limitado o inexistente, por lo que no se recomiendan como ruta principal para este formato.
+- Opciones de despliegue: `llama.cpp`, Ollama, LM Studio, Jan, KoboldCpp y `llama-cpp-python` para integracion en Python. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. El soporte de GGUF en vLLM y en TGI es limitado o inexistente, por lo que no se recomiendan como ruta principal para este formato.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y sin conocer la longitud de contexto ni la arquitectura exacta no es posible estimarlas con fundamento.
 
 ## Comparativa con modelos similares
@@ -104,6 +104,6 @@ La diferencia critica no es de rendimiento, que no puede evaluarse, sino de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kathembo-tsongo/qwen-msme-gguf
+- Modelo en Hugging Face: https://huggingface.co/kathembo-tsongo/qwen-msme-gguf
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los unicos resultados devueltos correspondian a paginas de resultados de loterias espanolas y no guardan ninguna relacion con el modelo.

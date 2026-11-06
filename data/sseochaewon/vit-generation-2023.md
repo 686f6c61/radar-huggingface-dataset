@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sseochaewon/vit-generation-2023 es un prototipo de investigacion basado en una arquitectura Vision Transformer (ViT) orientado a tareas de generacion. Lo publica el usuario sseochaewon en HuggingFace y se distribuye bajo licencia MIT. Se trata de un repositorio experimental: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
+sseochaewon/vit-generation-2023 es un prototipo de investigacion basado en una arquitectura Vision Transformer (ViT) orientado a tareas de generacion. Lo publica el usuario sseochaewon en Hugging Face y se distribuye bajo licencia MIT. Se trata de un repositorio experimental: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El dato mas relevante para quien vaya a evaluarlo es su tamano: 49.600 parametros totales, una cifra extremadamente pequena para cualquier transformer y muy alejada de los ViT convencionales de la familia base (que suelen rondar las decenas de millones de parametros). Esto sugiere que se trata de una implementacion de referencia o de un esqueleto arquitectonico mas que de un modelo con capacidad real de generacion.
 
@@ -64,7 +64,7 @@ La busqueda web realizada no devolvio modelos comparables especificos (los resul
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sseochaewon/vit-generation-2023 | 49.600 | no disponible | no publicados | MIT | HuggingFace |
+| sseochaewon/vit-generation-2023 | 49.600 | no disponible | no publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ La busqueda web realizada no devolvio modelos comparables especificos (los resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sseochaewon/vit-generation-2023
+- Modelo en Hugging Face: https://huggingface.co/sseochaewon/vit-generation-2023
 - ViT Image Generation Architecture (referencia general sobre ViT para generacion): https://www.emergentmind.com/topics/image-generation-architecture-using-vit
 - Generative AI (Wikipedia): https://en.wikipedia.org/wiki/Generative_AI
 - DeepAI: https://deepai.org/

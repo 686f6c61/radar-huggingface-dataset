@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM: no aplica, no requiere GPU.
 - GPU recomendada: ninguna.
 - Cabe en cualquier ordenador moderno, incluso en dispositivos de bajo consumo con ONNX Runtime.
-- Opciones de despliegue: ONNX Runtime, Python con joblib, HuggingFace Spaces, contenedores Docker.
+- Opciones de despliegue: ONNX Runtime, Python con joblib, Hugging Face Spaces, contenedores Docker.
 - Latencia: no disponible.
 
 ## Comparativa con modelos similares

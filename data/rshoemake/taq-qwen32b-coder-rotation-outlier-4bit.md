@@ -97,6 +97,6 @@ El checkpoint `rotation_outlier_4bit` ofrece un rendimiento en HumanEval Base id
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/rshoemake/taq-qwen32b-coder-rotation-outlier-4bit)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/rshoemake/taq-qwen32b-coder-rotation-outlier-4bit)
 - [Repositorio de referencia del formato TAQ (rshoemake/taq-qwen14b-unsloth-matched)](https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched)
 - [Modelo base Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct) (no incluido en la información proporcionada, pero se menciona como base)

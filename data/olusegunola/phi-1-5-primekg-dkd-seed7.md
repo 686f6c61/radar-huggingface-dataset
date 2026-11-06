@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio publica un checkpoint identificado como `phi-1.5-primekg-dkd-seed7`, subido por el usuario olusegunola a HuggingFace. La model card asociada es la plantilla automática de transformers sin ningún campo cumplimentado: no declara autoría efectiva, datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste. La práctica totalidad de la informacion tecnica de esta ficha es, por tanto, "no disponible", y todo lo que se apunta a continuacion se deriva del identificador del modelo y de los metadatos del repositorio, nunca de documentacion del autor.
+Este repositorio publica un checkpoint identificado como `phi-1.5-primekg-dkd-seed7`, subido por el usuario olusegunola a Hugging Face. La model card asociada es la plantilla automática de transformers sin ningún campo cumplimentado: no declara autoría efectiva, datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste. La práctica totalidad de la informacion tecnica de esta ficha es, por tanto, "no disponible", y todo lo que se apunta a continuacion se deriva del identificador del modelo y de los metadatos del repositorio, nunca de documentacion del autor.
 
 El nombre sugiere un ajuste del modelo phi-1.5 de Microsoft (transformer decoder-only de ~1,3 B de parametros) sobre el grafo de conocimiento biomedico PrimeKG, con alguna tecnica de destilacion de conocimiento (DKD) y semilla 7. Ninguna de estas suposiciones esta confirmada en la informacion disponible. El repositorio tiene 0 descargas y 0 "likes", y su tamano (~0,1 GB) es incompatible con un checkpoint completo de 1,3 B de parametros en fp16 (que rondaria los 2,7 GB), lo que apunta a un adaptador, a pesos parciales o a un empaquetado incompleto.
 
@@ -25,7 +25,7 @@ Es relevante unicamente como posible experimento academico de adaptacion de un m
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable. La model card es la plantilla por defecto de HuggingFace: todas las secciones de descripcion, datos de entrenamiento, hiperparametros, infraestructura de computo y evaluacion contienen el marcador "[More Information Needed]". El unico enlace tecnico presente en los tags es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono citado en la propia plantilla, no a un trabajo sobre este modelo.
+No hay informacion verificable. La model card es la plantilla por defecto de Hugging Face: todas las secciones de descripcion, datos de entrenamiento, hiperparametros, infraestructura de computo y evaluacion contienen el marcador "[More Information Needed]". El unico enlace tecnico presente en los tags es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono citado en la propia plantilla, no a un trabajo sobre este modelo.
 
 Si se acepta la hipotesis que sugiere el identificador, la base seria phi-1.5: un transformer decoder-only denso de aproximadamente 1,3 B de parametros, con contexto de 2048 tokens, entrenado por Microsoft Research sobre un corpus filtrado con enfasis en datos sinteticos de tipo "libro de texto". Sobre esa base, el sufijo "primekg" indicaria un ajuste orientado al grafo de conocimiento PrimeKG (grafo de medicina de precision publicado en Scientific Data en 2023) y "dkd" a alguna variante de destilacion de conocimiento, con la semilla 7 como semilla de reproducibilidad. El acronimo "dkd" no aparece definido en ninguna parte de la informacion disponible, por lo que no se puede confirmar su significado ni el regimen de entrenamiento (LoRA, QLoRA, ajuste completo, RLHF o DPO). Tampoco se documenta el numero de tokens, la composicion del dataset ni ninguna innovacion tecnica.
 
@@ -101,7 +101,7 @@ Frente a estas alternativas, el checkpoint aqui descrito no aporta ninguna venta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed7
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-dkd-seed7
 - Articulo citado en los tags del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Referencia externa no citada por el autor, correspondiente a la base que sugiere el identificador (informe tecnico de phi-1.5): https://arxiv.org/abs/2309.05463
 

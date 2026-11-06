@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unilux/whisper-base-v1-luxembourgish | 72,6 M | 30 s por ventana (Whisper base) | lb | openmdw-1.1 | HuggingFace, abierto |
-| openai/whisper-base | 74 M aprox. | 30 s por ventana | multilingue (99 idiomas, incluido lb de forma marginal) | MIT (pesos originales) | HuggingFace, abierto |
-| openai/whisper-small | 244 M aprox. | 30 s por ventana | multilingue | MIT (pesos originales) | HuggingFace, abierto |
+| unilux/whisper-base-v1-luxembourgish | 72,6 M | 30 s por ventana (Whisper base) | lb | openmdw-1.1 | Hugging Face, abierto |
+| openai/whisper-base | 74 M aprox. | 30 s por ventana | multilingue (99 idiomas, incluido lb de forma marginal) | MIT (pesos originales) | Hugging Face, abierto |
+| openai/whisper-small | 244 M aprox. | 30 s por ventana | multilingue | MIT (pesos originales) | Hugging Face, abierto |
 | Modelo insignia LuxASR (cerrado) | no disponible | no disponible | lb | no disponible (cerrado) | Solo via webservice, API y apps del proyecto |
 
 La comparativa se limita a los modelos Whisper de referencia y a la version cerrada del propio proyecto, ya que no se dispone de datos de otros modelos ASR especificos para luxemburgues en la informacion proporcionada. No se dispone de metricas comparativas de WER entre estos modelos.
@@ -82,7 +82,7 @@ La comparativa se limita a los modelos Whisper de referencia y a la version cerr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unilux/whisper-base-v1-luxembourgish
+- Modelo en Hugging Face: https://huggingface.co/unilux/whisper-base-v1-luxembourgish
 - Proyecto LuxASR (Universidad de Luxemburgo): https://luxasr.uni.lu/
 - Licencia OpenMDW: https://www.openmdw.org
 - Modelo base: https://huggingface.co/openai/whisper-base

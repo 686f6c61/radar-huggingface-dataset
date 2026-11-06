@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DiffusionBlocks-MoE (DBMoE) es un modelo de lenguaje a nivel de byte en fase experimental, desarrollado por el usuario de HuggingFace MarxistLeninist, que aplica la receta de DiffusionBlocks (Shing, Koyama y Akiba, ICLR 2026) a un mixture-of-experts distribuido. El modelo se entrena de forma colaborativa y descentralizada: cada worker entrena un bloque de rango de ruido independiente y sirve ese bloque para inferencia, sin necesidad de intercambiar activaciones ni gradientes con el resto de bloques. Esto permite que máquinas heterogéneas (CPU, CUDA, ROCm, XPU, MPS) participen sin comunicarse entre sí.
+DiffusionBlocks-MoE (DBMoE) es un modelo de lenguaje a nivel de byte en fase experimental, desarrollado por el usuario de Hugging Face MarxistLeninist, que aplica la receta de DiffusionBlocks (Shing, Koyama y Akiba, ICLR 2026) a un mixture-of-experts distribuido. El modelo se entrena de forma colaborativa y descentralizada: cada worker entrena un bloque de rango de ruido independiente y sirve ese bloque para inferencia, sin necesidad de intercambiar activaciones ni gradientes con el resto de bloques. Esto permite que máquinas heterogéneas (CPU, CUDA, ROCm, XPU, MPS) participen sin comunicarse entre sí.
 
-El repositorio de HuggingFace no contiene pesos entrenados ni datos de entrenamiento, sino únicamente el código (`dbmoe.py`) que el coordinador sirve en su endpoint. El proyecto está en estado experimental y su interés radica en la propuesta de entrenamiento e inferencia distribuidos sobre hardware voluntario, con un mecanismo de validación de actualizaciones por pérdida en texto propio y texto reservado.
+El repositorio de Hugging Face no contiene pesos entrenados ni datos de entrenamiento, sino únicamente el código (`dbmoe.py`) que el coordinador sirve en su endpoint. El proyecto está en estado experimental y su interés radica en la propuesta de entrenamiento e inferencia distribuidos sobre hardware voluntario, con un mecanismo de validación de actualizaciones por pérdida en texto propio y texto reservado.
 
 No se dispone de información sobre arquitectura interna detallada, número de parámetros, longitud de contexto ni licencia. La model card describe el protocolo de participación y el sistema de inferencia en red, pero no las especificaciones del modelo en sí.
 
@@ -76,7 +76,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarxistLeninist/dbmoe
+- Hugging Face: https://huggingface.co/MarxistLeninist/dbmoe
 - Paper DiffusionBlocks: https://arxiv.org/abs/2506.14202
 - Progreso en vivo: https://codex.opentransformers.online/dbmoe/progress
 - Coordinador: https://codex.opentransformers.online/dbmoe

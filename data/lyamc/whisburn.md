@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisburn es un workspace de procesamiento de voz en Rust construido sobre el framework Burn. El repositorio de HuggingFace `lyamc/whisburn` contiene los pesos preconvertidos para Burn 0.21 de tres modelos de reconocimiento automático de voz (ASR): Whisper tiny.en, Whisper medium.en y Parakeet TDT 0.6B v3. El objetivo es permitir la transcripción, traducción, diarización y síntesis de voz en Rust sin depender de frameworks de Python. La relevancia actual radica en ofrecer una alternativa nativa y eficiente para aplicaciones de ASR en Rust, aprovechando las capacidades de Burn para ejecutar modelos en múltiples backends (CPU, GPU, etc.). El repositorio pesa 12.6 GB y no contiene un modelo nuevo; son pesos convertidos de modelos existentes.
+whisburn es un workspace de procesamiento de voz en Rust construido sobre el framework Burn. El repositorio de Hugging Face `lyamc/whisburn` contiene los pesos preconvertidos para Burn 0.21 de tres modelos de reconocimiento automático de voz (ASR): Whisper tiny.en, Whisper medium.en y Parakeet TDT 0.6B v3. El objetivo es permitir la transcripción, traducción, diarización y síntesis de voz en Rust sin depender de frameworks de Python. La relevancia actual radica en ofrecer una alternativa nativa y eficiente para aplicaciones de ASR en Rust, aprovechando las capacidades de Burn para ejecutar modelos en múltiples backends (CPU, GPU, etc.). El repositorio pesa 12.6 GB y no contiene un modelo nuevo; son pesos convertidos de modelos existentes.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se han publicado comparativas directas en la información disponible. Como re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lyamc/whisburn
+- Hugging Face: https://huggingface.co/lyamc/whisburn
 - GitHub: https://github.com/Lyamc/whisburn
 - Modelos fuente:
   - https://huggingface.co/openai/whisper-tiny.en

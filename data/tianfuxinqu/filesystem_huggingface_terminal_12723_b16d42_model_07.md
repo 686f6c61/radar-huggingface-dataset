@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_07` es un artefacto publicado por el usuario TianfuXinqu cuya model card no describe un modelo de lenguaje, sino una ficha interna de inventario con identificador MDL-007, propietaria Mia Johnson, departamento de Supply Chain y nivel de riesgo bajo. No se declara arquitectura, número de parámetros, contexto, tokenizador ni datos de entrenamiento en la información disponible.
+El modelo identificado en Hugging Face como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_07` es un artefacto publicado por el usuario TianfuXinqu cuya model card no describe un modelo de lenguaje, sino una ficha interna de inventario con identificador MDL-007, propietaria Mia Johnson, departamento de Supply Chain y nivel de riesgo bajo. No se declara arquitectura, número de parámetros, contexto, tokenizador ni datos de entrenamiento en la información disponible.
 
 El repositorio presenta cero descargas y cero likes en el momento de la consulta, sin pipeline declarado, sin licencia especificada y sin idiomas indicados. La fecha de creación y de última actualización coincide (2026-11-01T11:22:33.000Z), lo que sugiere una publicación única sin mantenimiento posterior.
 
@@ -41,7 +41,7 @@ Tampoco se documentan datos de entrenamiento: ni volumen de tokens, ni composici
 - Inventario de artefactos internos: el repositorio puede servir como registro de un activo catalogado (MDL-007) dentro de un sistema de gestión de modelos, no como modelo ejecutable.
 - Trazabilidad de auditorías: la fecha de auditoría (2026-05-05) y el nivel de riesgo permiten incorporar el artefacto a un registro de cumplimiento, siempre que se verifique el contenido real de los archivos.
 - Control de calidad documental: el estado "partial" y la cobertura de tests del 55 % son útiles para priorizar tareas de documentación y pruebas antes de cualquier uso.
-- Evaluación de repositorios de terceros: sirve como caso de estudio de publicaciones en HuggingFace sin metadatos técnicos ni licencia, para definir políticas de admisión.
+- Evaluación de repositorios de terceros: sirve como caso de estudio de publicaciones en Hugging Face sin metadatos técnicos ni licencia, para definir políticas de admisión.
 - Formación interna: ejemplo práctico de por qué una model card debe incluir arquitectura, parámetros y licencia antes de aprobar un despliegue.
 - No se recomienda ningún caso de uso de inferencia, generación o despliegue en producción con este artefacto, dado que no hay evidencia de que contenga pesos de un modelo de lenguaje.
 
@@ -73,5 +73,5 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_07
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_07
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

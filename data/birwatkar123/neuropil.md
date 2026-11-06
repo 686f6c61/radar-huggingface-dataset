@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neuropil es una aplicacion Android de codigo abierto que actua como cliente para el atlas interactivo en 3D del sistema nervioso central del macho adulto de *Drosophila melanogaster*. No se trata de un modelo de inteligencia artificial generativa ni de un modelo de lenguaje; es una herramienta de visualizacion cientifica desarrollada por birwatkar123, basada en el proyecto previo Cerebra. Resuelve la necesidad de explorar de forma interactiva las 166.700 neuronas reconstruidas del conectoma de la mosca de la fruta, un recurso relevante para la neurociencia y la conectomica. La arquitectura de la app combina un envoltorio de Capacitor 6 con React 19, Vite 7 y Three.js, y utiliza WebGL2 para el renderizado acelerado por GPU. Se distribuye como APK de depuracion de 59,6 MB y el repositorio en HuggingFace tiene un tamano de 0,1 GB. Esta ficha documenta que, aunque esta alojado en HuggingFace, el proyecto no incluye pesos de modelo ni parametros de red neuronal.
+Neuropil es una aplicacion Android de codigo abierto que actua como cliente para el atlas interactivo en 3D del sistema nervioso central del macho adulto de *Drosophila melanogaster*. No se trata de un modelo de inteligencia artificial generativa ni de un modelo de lenguaje; es una herramienta de visualizacion cientifica desarrollada por birwatkar123, basada en el proyecto previo Cerebra. Resuelve la necesidad de explorar de forma interactiva las 166.700 neuronas reconstruidas del conectoma de la mosca de la fruta, un recurso relevante para la neurociencia y la conectomica. La arquitectura de la app combina un envoltorio de Capacitor 6 con React 19, Vite 7 y Three.js, y utiliza WebGL2 para el renderizado acelerado por GPU. Se distribuye como APK de depuracion de 59,6 MB y el repositorio en Hugging Face tiene un tamano de 0,1 GB. Esta ficha documenta que, aunque esta alojado en Hugging Face, el proyecto no incluye pesos de modelo ni parametros de red neuronal.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No disponible. El proyecto no es un modelo de IA, por lo que no existe una compa
 - El paquete es un build de depuracion (`assembleDebug`) firmado con una clave de depuracion, no apto para distribucion en la Play Store ni para uso en produccion.
 - Disponible solo para Android; no existe version para iOS ni para escritorio.
 - La instalacion requiere habilitar "Instalar apps desconocidas" en el dispositivo, lo que supone un riesgo de seguridad si el APK se descarga de fuentes no verificadas.
-- El repositorio en HuggingFace no tiene descargas ni me gustas, lo que indica que el proyecto es reciente o no ha sido validado por la comunidad.
+- El repositorio en Hugging Face no tiene descargas ni me gustas, lo que indica que el proyecto es reciente o no ha sido validado por la comunidad.
 - No se especifican los idiomas de la interfaz ni si existen traducciones disponibles.
 - Al ser una herramienta de visualizacion cientifica, no debe utilizarse para diagnostico clinico ni para decisiones medicas.
 - Los datos de reconstruccion neuronal pueden contener errores o incompletitudes; el articulo original debe consultarse como referencia primaria.
@@ -69,6 +69,6 @@ No disponible. El proyecto no es un modelo de IA, por lo que no existe una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/birwatkar123/neuropil
+- Hugging Face: https://huggingface.co/birwatkar123/neuropil
 - GitHub: https://github.com/birwatkar123-collab/neuropil
 - Autor original de Cerebra: https://github.com/Mukhsin0508

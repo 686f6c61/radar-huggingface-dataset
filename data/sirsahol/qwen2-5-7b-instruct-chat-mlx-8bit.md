@@ -29,7 +29,7 @@ Su relevancia es acotada pero clara: cubre el nicho de quienes quieren ejecutar 
 
 La ficha corresponde a una cuantizacion, no a un entrenamiento. El autor parte del checkpoint Qwen/Qwen2.5-7B-Instruct y lo convierte con las herramientas de MLX a pesos de 8 bits, con una media declarada de 8,25 bits por peso. La arquitectura subyacente es la del modelo base: un transformer decoder-only denso con normalizacion RMSNorm, activacion SwiGLU en el bloque feed-forward y atencion con query grouping (GQA), es decir, mas cabezas de consulta que de clave-valor, lo que reduce el tamano de la cache KV durante la generacion. Al ser una conversion de pesos, no hay datos nuevos de entrenamiento, ni fases de RLHF, DPO o ajuste fino posteriores por parte de este autor: el alineamiento por instrucciones proviene integramente del checkpoint instruct original de Qwen.
 
-La innovacion tecnica relevante aqui no esta en el modelo, sino en el empaquetado: MLX es el framework de Apple para computo en GPU unificada, con kernels optimizados para la arquitectura de memoria compartida de los chips M-series. Esto permite que un modelo de 7 B cuantizado a 8 bits se ejecute con latencias de primera token en el rango de 45 a 160 ms y velocidades de decodificacion de 22 a 72 tokens por segundo segun la gama de chip, tal y como declara el autor. La contrapartida es la portabilidad: al no distribuirse en GGUF ni en safetensors estandar de HuggingFace para transformers, el checkpoint no es utilizable directamente en CUDA, vLLM, TGI, llama.cpp ni Ollama.
+La innovacion tecnica relevante aqui no esta en el modelo, sino en el empaquetado: MLX es el framework de Apple para computo en GPU unificada, con kernels optimizados para la arquitectura de memoria compartida de los chips M-series. Esto permite que un modelo de 7 B cuantizado a 8 bits se ejecute con latencias de primera token en el rango de 45 a 160 ms y velocidades de decodificacion de 22 a 72 tokens por segundo segun la gama de chip, tal y como declara el autor. La contrapartida es la portabilidad: al no distribuirse en GGUF ni en safetensors estandar de Hugging Face para transformers, el checkpoint no es utilizable directamente en CUDA, vLLM, TGI, llama.cpp ni Ollama.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ Diferencias clave: la variante de 4 bits prioriza velocidad y huella de memoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Variante de 4 bits del mismo autor: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit
 - Variante de 16 bits del mismo autor: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit

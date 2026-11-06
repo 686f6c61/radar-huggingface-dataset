@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`voves/Qwen3.8-27B-FP8` es una variante cuantizada en precisión FP8 (punto flotante de 8 bits) del modelo base `Qwen/Qwen3.8-27B`, publicada por el usuario voves en HuggingFace. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entradas multimodales (imagen y texto) y genera texto como salida.
+`voves/Qwen3.8-27B-FP8` es una variante cuantizada en precisión FP8 (punto flotante de 8 bits) del modelo base `Qwen/Qwen3.8-27B`, publicada por el usuario voves en Hugging Face. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta entradas multimodales (imagen y texto) y genera texto como salida.
 
-La relevancia de esta publicación reside en la cuantización FP8, que permite reducir el uso de memoria y acelerar la inferencia en hardware compatible (como GPUs Hopper o Ada Lovelace con soporte nativo FP8), manteniendo una calidad de salida cercana a la del modelo original. No obstante, la ficha del modelo en HuggingFace está prácticamente vacía: no se especifican licencia, idiomas, arquitectura detallada ni datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de baja difusión.
+La relevancia de esta publicación reside en la cuantización FP8, que permite reducir el uso de memoria y acelerar la inferencia en hardware compatible (como GPUs Hopper o Ada Lovelace con soporte nativo FP8), manteniendo una calidad de salida cercana a la del modelo original. No obstante, la ficha del modelo en Hugging Face está prácticamente vacía: no se especifican licencia, idiomas, arquitectura detallada ni datos de entrenamiento. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de baja difusión.
 
 ## Especificaciones tecnicas
 
@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voves/Qwen3.8-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/voves/Qwen3.8-27B-FP8
 - Modelo base referenciado: Qwen/Qwen3.8-27B (sin URL directa verificada en la información proporcionada)
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a esta publicación.

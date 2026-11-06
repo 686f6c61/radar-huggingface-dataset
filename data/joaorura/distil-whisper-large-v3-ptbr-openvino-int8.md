@@ -80,10 +80,10 @@ Lo unico publicado son mediciones de tiempo de carga e inferencia sobre un Intel
 
 | Modelo | Parametros | Formato y tamano | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joaorura/distil-whisper-large-v3-ptbr-openvino-int8 (este modelo) | no disponible | OpenVINO IR INT8, 738 MB | Sin WER; inferencia de 2,5-6,8 s para 8,35 s de audio segun dispositivo | MIT | HuggingFace, requiere runtime OpenVINO |
-| freds0/distil-whisper-large-v3-ptbr | no disponible | Pesos originales en PyTorch (tamano no disponible) | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace; es el modelo base del que procede este export |
-| joaorura/distil-whisper-large-v3-ptbr-openvino (FP32) | no disponible | OpenVINO IR FP32, 2,9 GB | No disponible; sin cuantizar | MIT | HuggingFace, mismo autor y mismo pipeline |
-| distil-whisper/distil-large-v3 | no disponible | Pesos originales en PyTorch (tamano no disponible) | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace; modelo del que deriva el ajuste al portugues |
+| joaorura/distil-whisper-large-v3-ptbr-openvino-int8 (este modelo) | no disponible | OpenVINO IR INT8, 738 MB | Sin WER; inferencia de 2,5-6,8 s para 8,35 s de audio segun dispositivo | MIT | Hugging Face, requiere runtime OpenVINO |
+| freds0/distil-whisper-large-v3-ptbr | no disponible | Pesos originales en PyTorch (tamano no disponible) | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face; es el modelo base del que procede este export |
+| joaorura/distil-whisper-large-v3-ptbr-openvino (FP32) | no disponible | OpenVINO IR FP32, 2,9 GB | No disponible; sin cuantizar | MIT | Hugging Face, mismo autor y mismo pipeline |
+| distil-whisper/distil-large-v3 | no disponible | Pesos originales en PyTorch (tamano no disponible) | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face; modelo del que deriva el ajuste al portugues |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ Lo unico publicado son mediciones de tiempo de carga e inferencia sobre un Intel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joaorura/distil-whisper-large-v3-ptbr-openvino-int8
+- Modelo en Hugging Face: https://huggingface.co/joaorura/distil-whisper-large-v3-ptbr-openvino-int8
 - Version FP32 del mismo autor: https://huggingface.co/joaorura/distil-whisper-large-v3-ptbr-openvino
 - Modelo base (ajuste al portugues de Brasil): https://huggingface.co/freds0/distil-whisper-large-v3-ptbr
 - Perfil del autor del modelo base: https://huggingface.co/freds0

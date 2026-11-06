@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion INT8 del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicada por el usuario fbaldassarri en HuggingFace. No se trata de un modelo nuevo, sino de una version comprimida del conocido Llama 3.1 8B Instruct de Meta, orientada especificamente a la inferencia en hardware Intel: CPUs, iGPU Arc mediante intel-extension-for-pytorch y NPU (AI Boost) de la serie Core Ultra a traves de OpenVINO. La cuantizacion se ha realizado con el framework Intel AutoRound v0.16.0, aplicando el algoritmo GPTQ en modalidad weights-only (WoQ), con 8 bits, tamano de grupo 64 y cuantizacion simetrica.
+Esta ficha describe una cuantizacion INT8 del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicada por el usuario fbaldassarri en Hugging Face. No se trata de un modelo nuevo, sino de una version comprimida del conocido Llama 3.1 8B Instruct de Meta, orientada especificamente a la inferencia en hardware Intel: CPUs, iGPU Arc mediante intel-extension-for-pytorch y NPU (AI Boost) de la serie Core Ultra a traves de OpenVINO. La cuantizacion se ha realizado con el framework Intel AutoRound v0.16.0, aplicando el algoritmo GPTQ en modalidad weights-only (WoQ), con 8 bits, tamano de grupo 64 y cuantizacion simetrica.
 
 El modelo base es un transformer decoder-only causal con 8.030 millones de parametros nominales y una ventana de contexto de 128.000 tokens, entrenado por Meta para tareas de instruccion y conversacion. Esta version cuantizada conserva la licencia Llama 3.1 Community License y los ocho idiomas oficiales del modelo original (ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes).
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Framework de cuantizacion Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de cuantizacion auto-round-pipeline: https://git.epicdynamic.com/auto-round-pipeline

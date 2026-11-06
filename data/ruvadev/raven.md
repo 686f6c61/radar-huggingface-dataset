@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raven es un modelo de clasificación de imágenes especializado en forensia digital, desarrollado por el usuario Ruvadev y publicado en HuggingFace. Su función principal es distinguir entre fotografías reales e imágenes generadas por inteligencia artificial, con una salida ternaria que clasifica cada imagen como `REAL`, `AI` o `UNCERTAIN` en función de la probabilidad estimada de que haya sido generada por un modelo de IA. El modelo está entrenado específicamente con imágenes producidas por GPT Image 2, lo que lo hace especialmente preciso para esa familia de generadores.
+Raven es un modelo de clasificación de imágenes especializado en forensia digital, desarrollado por el usuario Ruvadev y publicado en Hugging Face. Su función principal es distinguir entre fotografías reales e imágenes generadas por inteligencia artificial, con una salida ternaria que clasifica cada imagen como `REAL`, `AI` o `UNCERTAIN` en función de la probabilidad estimada de que haya sido generada por un modelo de IA. El modelo está entrenado específicamente con imágenes producidas por GPT Image 2, lo que lo hace especialmente preciso para esa familia de generadores.
 
 La arquitectura se basa en DINOv2, un modelo de visión por computadora de Meta, adaptado para la tarea de clasificación binaria con umbrales de incertidumbre. Con aproximadamente 22,9 millones de parámetros y un peso de solo 0,2 GB, es un modelo ligero que puede ejecutarse en hardware modesto. Su relevancia actual radica en la creciente necesidad de herramientas de verificación de autenticidad de imágenes en un contexto de proliferación de contenido sintético de alta calidad.
 
@@ -93,5 +93,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruvadev/Raven
-- Repositorio de codigo: no se ha encontrado un repositorio GitHub u otro enlace oficial mas alla de la pagina de HuggingFace.
+- Hugging Face: https://huggingface.co/Ruvadev/Raven
+- Repositorio de codigo: no se ha encontrado un repositorio GitHub u otro enlace oficial mas alla de la pagina de Hugging Face.

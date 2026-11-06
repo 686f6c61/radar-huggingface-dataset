@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, otros MoE 
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/TinoBruno/moecher-nemotron-3.5-lightning-vision
+- Repositorio Hugging Face del paquete: https://huggingface.co/TinoBruno/moecher-nemotron-3.5-lightning-vision
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Licencia: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/blob/main/LICENSE
 - Motor MinnieTheMoEcher (GitHub): https://github.com/tinobruno/MinnieTheMoEcher

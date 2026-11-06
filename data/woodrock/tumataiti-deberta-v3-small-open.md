@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---:|---|---|---|---|
-| Tūmataiti DeBERTa-v3-small (open data) | 141 M | 512 tokens por ventana | Apache-2.0 | PII en inglés y NZ, int4 para dispositivo | HuggingFace, ONNX, demo en navegador |
+| Tūmataiti DeBERTa-v3-small (open data) | 141 M | 512 tokens por ventana | Apache-2.0 | PII en inglés y NZ, int4 para dispositivo | Hugging Face, ONNX, demo en navegador |
 | openai/privacy-filter | no disponible | no disponible | no disponible | PII en inglés | Usado como profesor de referencia |
-| microsoft/deberta-v3-small | 141 M | 512 tokens | MIT | Modelo base encoder para token classification | HuggingFace |
-| Modelos NER genéricos tipo spaCy o BERT-base NER | 100-340 M | 512 tokens | MIT/Apache-2.0 | NER generalista, sin categorías PII específicas | HuggingFace, spaCy |
+| microsoft/deberta-v3-small | 141 M | 512 tokens | MIT | Modelo base encoder para token classification | Hugging Face |
+| Modelos NER genéricos tipo spaCy o BERT-base NER | 100-340 M | 512 tokens | MIT/Apache-2.0 | NER generalista, sin categorías PII específicas | Hugging Face, spaCy |
 
 La comparación directa con `openai/privacy-filter` solo es posible en términos de tasa de fuga documental en los conjuntos evaluados, donde el modelo de woodrock obtiene cifras muy inferiores en los conjuntos neozelandeses (0,3 % frente a 47,4 %) y en Nemotron+Gretel (3,3 % frente a 40,0 %), pero significativamente peores en PII-Masking-300k (32,7 % frente a 8,2 %). Esa discrepancia refleja diferencias de convención de etiquetado y de dominio, no una superioridad global.
 
@@ -100,7 +100,7 @@ La comparación directa con `openai/privacy-filter` solo es posible en términos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/woodrock/tumataiti-deberta-v3-small-open
+- Modelo en Hugging Face: https://huggingface.co/woodrock/tumataiti-deberta-v3-small-open
 - Repositorio Tūmataiti: https://github.com/woodRock/tumataiti
 - Decodificador Python: https://github.com/woodRock/tumataiti/blob/main/ml/src/tumataiti_ml/student/encode.py
 - Demo en navegador: https://woodrock.github.io/tumataiti/

@@ -4,7 +4,7 @@
 
 `lehoffmann/few-shot-multimodal-distilled` no es un modelo entrenado ni un checkpoint publicable, sino un repositorio de notas de investigación (etiquetado por el autor como `research-notes`) sobre el tema "Few Shot Multimodal". La model card es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y el propio autor indica que "no se presenta como un artículo completado ni como una release de modelos entrenados".
 
-El repositorio lo firma el usuario `lehoffmann`, tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que es coherente con un artefacto compuesto únicamente por dos ficheros Markdown (`summary.md` y `README.md`). No hay pesos, no hay código de entrenamiento, no hay tokenizador y no hay resultados experimentales. Los metadatos de HuggingFace declaran un total de 24.832 parámetros vía safetensors, una cifra que no se corresponde con ningún transformer multimodal funcional y que debe tratarse como un artefacto de indexación, no como el tamaño real de un modelo.
+El repositorio lo firma el usuario `lehoffmann`, tiene 0 descargas y 0 likes, y su tamaño es de 0.0 GB, lo que es coherente con un artefacto compuesto únicamente por dos ficheros Markdown (`summary.md` y `README.md`). No hay pesos, no hay código de entrenamiento, no hay tokenizador y no hay resultados experimentales. Los metadatos de Hugging Face declaran un total de 24.832 parámetros vía safetensors, una cifra que no se corresponde con ningún transformer multimodal funcional y que debe tratarse como un artefacto de indexación, no como el tamaño real de un modelo.
 
 Por tanto, esta ficha se redacta a modo de advertencia: cualquier desarrollador o investigador que llegue al repositorio buscando un modelo multimodal destilado para inferencia no encontrará nada utilizable. Su valor potencial es exclusivamente documental, como punto de partida para verificar referencias bibliográficas sobre aprendizaje few-shot multimodal.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha se redacta a modo de advertencia: cualquier desarrollador 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no contiene ningún modelo; la etiqueta `transformer` proviene de los tags automáticos de HuggingFace) |
+| Arquitectura | no disponible (el repositorio no contiene ningún modelo; la etiqueta `transformer` proviene de los tags automáticos de Hugging Face) |
 | Parámetros totales | 24.832 según metadatos de safetensors (dato no verificado y no representativo de un modelo funcional) |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -42,7 +42,7 @@ Lo único que el autor declara como contenido real son notas estructuradas: alca
 - Revisión bibliográfica sobre few-shot multimodal: el fichero `summary.md` puede servir como índice de referencias y de preguntas abiertas, siempre que el lector verifique cada cita en su fuente original.
 - Diseño de un protocolo experimental: las secciones sobre confounders y baselines emparejados pueden reutilizarse como borrador de metodología para un estudio propio.
 - Plantilla de nota de investigación reproducible: la estructura del repositorio (motivación, hipótesis, plan de evaluación, modos de fallo) es un ejemplo de cómo documentar un experimento antes de ejecutarlo.
-- Auditoría de expectativas en un catálogo de modelos: este repositorio es un caso útil para ilustrar por qué hay que comprobar el tamaño del repo y la presencia de ficheros de pesos antes de asumir que un ID de HuggingFace es un modelo desplegable.
+- Auditoría de expectativas en un catálogo de modelos: este repositorio es un caso útil para ilustrar por qué hay que comprobar el tamaño del repo y la presencia de ficheros de pesos antes de asumir que un ID de Hugging Face es un modelo desplegable.
 - Formación interna de equipos: puede emplearse como ejemplo negativo de model card que no cumple los requisitos mínimos para producción (sin contexto, sin idiomas, sin benchmarks, sin pesos).
 - No es adecuado para ninguno de los casos de uso habituales de un modelo multimodal: atención al cliente, generación de código, RAG, análisis de imágenes, transcripción, agentes o clasificación.
 
@@ -70,12 +70,12 @@ No disponible. Este repositorio no es un modelo y no existe una categoría de "m
 - Las secciones de la nota son planes e hipótesis, no resultados; el autor lo advierte de forma explícita.
 - No hay información sobre sesgos, alucinación, cobertura idiomática ni comportamiento en producción, porque no hay modelo que evaluar.
 - La licencia cc-by-4.0 permite reutilización con atribución, pero la propia model card recomienda revisar por separado los términos de los datasets externos que se usen junto al repositorio.
-- Riesgo de confusión en pipelines automatizados: un sistema que indexe repositorios de HuggingFace por tags podría clasificar este ID como un transformer multimodal y fallar al intentar descargar pesos inexistentes.
+- Riesgo de confusión en pipelines automatizados: un sistema que indexe repositorios de Hugging Face por tags podría clasificar este ID como un transformer multimodal y fallar al intentar descargar pesos inexistentes.
 - Los resultados de búsqueda web recuperados durante la elaboración de esta ficha tratan sobre rutas de autobús entre Ensenada y San Quintín (Baja California) y no guardan ninguna relación con el repositorio, por lo que se descartan como fuentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lehoffmann/few-shot-multimodal-distilled
+- Repositorio en Hugging Face: https://huggingface.co/lehoffmann/few-shot-multimodal-distilled
 - Fichero principal de la nota: `summary.md` dentro del repositorio (no se ha proporcionado URL directa).
 - Documentación del repositorio: `README.md` dentro del repositorio.
 - Artículo, blog, repositorio de código o demo asociados: no disponibles.

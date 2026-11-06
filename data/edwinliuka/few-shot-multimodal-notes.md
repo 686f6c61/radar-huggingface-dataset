@@ -66,5 +66,5 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/edwinliuka/few-shot-multimodal-notes
+- Repositorio Hugging Face: https://huggingface.co/edwinliuka/few-shot-multimodal-notes
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este repositorio en la búsqueda web.

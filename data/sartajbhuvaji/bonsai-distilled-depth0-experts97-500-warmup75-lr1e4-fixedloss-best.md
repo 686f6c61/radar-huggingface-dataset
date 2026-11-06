@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Bonsai distilled depth0 experts97 500 warmup75 lr1e4 fixedloss best es un modelo de generacion de texto publicado por el usuario sartajbhuvaji en HuggingFace. Se trata de un checkpoint de aproximadamente 8.550 millones de parametros (8.552.822.784 exactos, segun los pesos en safetensors), almacenado en un repositorio de 17,1 GB, lo que es coherente con pesos en precision bf16/fp16. La etiqueta de arquitectura declarada es `qwen3_moe`, por lo que se trata de un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3.
+Bonsai distilled depth0 experts97 500 warmup75 lr1e4 fixedloss best es un modelo de generacion de texto publicado por el usuario sartajbhuvaji en Hugging Face. Se trata de un checkpoint de aproximadamente 8.550 millones de parametros (8.552.822.784 exactos, segun los pesos en safetensors), almacenado en un repositorio de 17,1 GB, lo que es coherente con pesos en precision bf16/fp16. La etiqueta de arquitectura declarada es `qwen3_moe`, por lo que se trata de un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3.
 
 El nombre del repositorio es la unica fuente de informacion sobre el proceso de entrenamiento: sugiere una destilacion ("distilled") con profundidad 0 ("depth0"), 97 expertos ("experts97"), 500 pasos o muestras ("500"), 75 pasos de calentamiento ("warmup75"), tasa de aprendizaje 1e-4 ("lr1e4"), funcion de perdida fija ("fixedloss") y seleccion del mejor checkpoint ("best"). No hay documentacion que confirme ninguna de estas interpretaciones.
 
-La relevancia de esta ficha es limitada: la model card es la plantilla autogenerada de HuggingFace sin rellenar, el modelo acumula 31 descargas y 0 "likes", y no declara licencia, idiomas ni datos de entrenamiento. Es, por tanto, un artefacto experimental de investigacion mas que un modelo listo para produccion, y cualquier evaluacion debe hacerse sobre la premisa de que falta informacion esencial.
+La relevancia de esta ficha es limitada: la model card es la plantilla autogenerada de Hugging Face sin rellenar, el modelo acumula 31 descargas y 0 "likes", y no declara licencia, idiomas ni datos de entrenamiento. Es, por tanto, un artefacto experimental de investigacion mas que un modelo listo para produccion, y cualquier evaluacion debe hacerse sobre la premisa de que falta informacion esencial.
 
 ## Especificaciones tecnicas
 
@@ -30,13 +30,13 @@ La relevancia de esta ficha es limitada: la model card es la plantilla autogener
 
 La unica evidencia sobre la arquitectura es el tag `qwen3_moe`, que apunta a un transformer decoder-only con capas de mezcla de expertos en lugar de un FFN denso. En este tipo de diseno, cada token se enruta a un subconjunto de expertos, de forma que los parametros totales (8,55 mil millones) son mayores que los parametros efectivamente activados por token. El valor concreto de expertos activos, el numero de capas, la dimension del modelo, el tipo de atencion y el tamano de la ventana de contexto no aparecen documentados en ninguna parte.
 
-Respecto al entrenamiento, la model card es la plantilla por defecto de HuggingFace y no contiene informacion real: los campos de datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16), hardware y emisiones estan todos marcados como "[More Information Needed]". El unico indicio es el propio identificador del repositorio, que sugiere un proceso de destilacion con un presupuesto de pasos muy corto (500) y una tasa de aprendizaje de 1e-4. No consta que se haya aplicado RLHF, DPO ni ninguna otra fase de alineacion. El unico enlace a arXiv presente en los metadatos (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace, y no a un paper del modelo.
+Respecto al entrenamiento, la model card es la plantilla por defecto de Hugging Face y no contiene informacion real: los campos de datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16), hardware y emisiones estan todos marcados como "[More Information Needed]". El unico indicio es el propio identificador del repositorio, que sugiere un proceso de destilacion con un presupuesto de pasos muy corto (500) y una tasa de aprendizaje de 1e-4. No consta que se haya aplicado RLHF, DPO ni ninguna otra fase de alineacion. El unico enlace a arXiv presente en los metadatos (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva, unica capacidad confirmada por el pipeline declarado (`text-generation`).
 - Conversacion multi-turno: el tag `conversational` indica compatibilidad con plantillas de chat, aunque el formato exacto de prompt no esta documentado.
-- Compatibilidad con HuggingFace Inference Endpoints (`endpoints_compatible`), es decir, despliegue gestionado sin conversion de pesos.
+- Compatibilidad con Hugging Face Inference Endpoints (`endpoints_compatible`), es decir, despliegue gestionado sin conversion de pesos.
 - Razonamiento, matematicas, generacion de codigo: no disponible, sin datos que lo confirmen.
 - Tool calling y function calling: no disponible (existen otros repositorios del mismo autor con "functions" en el nombre, pero no este).
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -53,7 +53,7 @@ Dado que no existe documentacion de capacidades ni evaluaciones, los casos sigui
 - Fine-tuning posterior sobre dominio propio: al ser un modelo pequeno y con pesos en safetensors, es viable aplicar LoRA o QLoRA sobre un corpus especifico si la licencia se confirma (actualmente no disponible).
 - Evaluacion de tecnicas de cuantizacion: sirve como sujeto de prueba para medir perdida de calidad al convertir un MoE de 8,55 mil millones de parametros a 8 y 4 bits, ya que no se publican cuantizaciones oficiales.
 - Baseline en pipelines de CI de investigacion: su tamano permite incluirlo en pruebas automaticas de regresion de calidad de generacion sin incurrir en los costes de un modelo de mayor escala.
-- Servicio de inferencia en endpoints gestionados: el tag `endpoints_compatible` permite desplegarlo en HuggingFace Inference Endpoints sin pasos de conversion adicionales.
+- Servicio de inferencia en endpoints gestionados: el tag `endpoints_compatible` permite desplegarlo en Hugging Face Inference Endpoints sin pasos de conversion adicionales.
 
 ## Benchmarks y rendimiento
 
@@ -77,16 +77,16 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best | 8,55 mil millones | no disponible | no disponible | no disponible | HuggingFace, safetensors, sin cuantizaciones |
-| Qwen3-8B (referencia densa) | aprox. 8,2 mil millones | no aplica (denso) | no disponible en esta ficha | licencia de la familia Qwen3 | HuggingFace, cuantizaciones ampliamente disponibles |
-| Qwen1.5-MoE-A2.7B (referencia MoE) | aprox. 14,3 mil millones | aprox. 2,7 mil millones | no disponible en esta ficha | licencia de la familia Qwen | HuggingFace, cuantizaciones disponibles |
-| Mixtral 8x7B (referencia MoE) | aprox. 46,7 mil millones | aprox. 12,9 mil millones | no disponible en esta ficha | Apache 2.0 | HuggingFace, cuantizaciones disponibles |
+| bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best | 8,55 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors, sin cuantizaciones |
+| Qwen3-8B (referencia densa) | aprox. 8,2 mil millones | no aplica (denso) | no disponible en esta ficha | licencia de la familia Qwen3 | Hugging Face, cuantizaciones ampliamente disponibles |
+| Qwen1.5-MoE-A2.7B (referencia MoE) | aprox. 14,3 mil millones | aprox. 2,7 mil millones | no disponible en esta ficha | licencia de la familia Qwen | Hugging Face, cuantizaciones disponibles |
+| Mixtral 8x7B (referencia MoE) | aprox. 46,7 mil millones | aprox. 12,9 mil millones | no disponible en esta ficha | Apache 2.0 | Hugging Face, cuantizaciones disponibles |
 
 La comparacion de rendimiento con cualquiera de estos modelos es no disponible, ya que no existen evaluaciones publicadas del checkpoint analizado.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: toda la documentacion de HuggingFace es la plantilla autogenerada, sin datos de desarrollador, financiacion, tipo de modelo, idiomas ni licencia.
+- Model card vacia: toda la documentacion de Hugging Face es la plantilla autogenerada, sin datos de desarrollador, financiacion, tipo de modelo, idiomas ni licencia.
 - Licencia no disponible: no se puede determinar si el uso comercial esta permitido. En la practica, esto bloquea su adopcion en produccion hasta que el autor lo aclare.
 - Riesgo de alucinacion: no cuantificado. Al no existir evaluaciones ni fase de alineacion documentada, se debe asumir un comportamiento de generacion sin filtros de seguridad ni ajuste de instrucciones.
 - Sesgos conocidos: no disponibles. Se desconoce la composicion del corpus de entrenamiento y de destilacion, por lo que no se puede evaluar el sesgo de genero, idioma, cultura o dominio.
@@ -99,7 +99,7 @@ La comparacion de rendimiento con cualquiera de estos modelos es no disponible, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best
 - Repositorio hermano (comparativa frente a baseline): https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4-best
 - Ficha del repositorio hermano en free2aitools: https://free2aitools.com/model/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4-best
 - Repositorio hermano con LoRA y profundidad 12 en FriendliAI: https://friendli.ai/models/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4

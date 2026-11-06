@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kaloger es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes a partir de texto, publicado en HuggingFace por el usuario KOFIblto bajo el identificador `KOFIblto/kaloger`. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de bajo rango que se acoplan a un modelo base de difusión: en concreto, `krea/Krea-2-Raw`, según declara la etiqueta `base_model` del repositorio. Su función esperada es la habitual en este tipo de adaptadores: inyectar un estilo, concepto o ajuste concreto sobre el modelo base sin necesidad de reentrenarlo por completo.
+Kaloger es un adaptador LoRA (Low-Rank Adaptation) de generación de imágenes a partir de texto, publicado en Hugging Face por el usuario KOFIblto bajo el identificador `KOFIblto/kaloger`. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un conjunto de pesos de bajo rango que se acoplan a un modelo base de difusión: en concreto, `krea/Krea-2-Raw`, según declara la etiqueta `base_model` del repositorio. Su función esperada es la habitual en este tipo de adaptadores: inyectar un estilo, concepto o ajuste concreto sobre el modelo base sin necesidad de reentrenarlo por completo.
 
 La relevancia de la ficha es limitada y conviene decirlo con claridad: el repositorio no incluye model card, no documenta el dataset de entrenamiento, no publica ejemplos de resultados ni métricas, y acumula 0 descargas y 0 likes en el momento de la consulta. La fecha de creación y de última actualización registrada es la misma (2026-09-15), sin revisiones posteriores. Todo ello hace que sea imposible verificar qué aprende exactamente el adaptador ni con qué calidad lo hace.
 
@@ -83,6 +83,6 @@ No disponible. La información proporcionada no incluye adaptadores LoRA compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KOFIblto/kaloger
+- Repositorio en Hugging Face: https://huggingface.co/KOFIblto/kaloger
 - Modelo base declarado en las etiquetas: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a páginas genéricas del motor de búsqueda y no contenían información sobre el modelo.

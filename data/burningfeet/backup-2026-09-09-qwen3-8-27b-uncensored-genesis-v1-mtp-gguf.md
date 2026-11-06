@@ -6,7 +6,7 @@ Este modelo es una variante GGUF del modelo Qwen3.8-27B, publicada por el usuari
 
 El repositorio contiene pesos en formato GGUF y ocupa 95,0 GB. El recuento de parámetros totales es de 27.320.697.856 (~27,32 mil millones), según los datos de safetensors disponibles en la ficha. No se han publicado especificaciones sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento.
 
-El modelo está sujeto a acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones para poder descargarlo.
+El modelo está sujeto a acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones para poder descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el repositorio.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el repositorio.
 - Sin datos de contexto: al desconocerse la longitud de contexto, no se puede garantizar un comportamiento adecuado en conversaciones largas o documentos extensos.
 - Idiomas limitados: los metadatos indican soporte solo para inglés, por lo que su uso en otros idiomas puede resultar incorrecto.
 - Riesgo de contenido no deseado: la naturaleza «uncensored» del modelo puede generar salidas ofensivas, ilegales o inapropiadas, lo que supone un riesgo en entornos de producción.
@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/burningfeet/backup-2026-09-09-Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/burningfeet/backup-2026-09-09-Qwen3.8-27B-Uncensored-Genesis-V1-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF

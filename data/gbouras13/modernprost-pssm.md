@@ -97,7 +97,7 @@ La comparativa se limita a las variantes del propio autor y a la referencia de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gbouras13/modernprost-pssm
+- Modelo en Hugging Face: https://huggingface.co/gbouras13/modernprost-pssm
 - Variante de secuencias por argmax: https://huggingface.co/gbouras13/modernprost-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/gbouras13/ModernProst-3di12st-pssm
 - phold-lib: https://github.com/gbouras13/phold-lib

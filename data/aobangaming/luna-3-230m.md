@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna 3 230M es un modelo de lenguaje conversacional de tamaño reducido desarrollado por AobanZ (Aobangaming), publicado en HuggingFace bajo licencia MIT. Se trata de la tercera generación de la familia Luna, un fork de Luna 2 al que se ha ampliado la longitud de contexto hasta 8.192 tokens y se ha aumentado el tamaño del modelo desde los 100M de parámetros de la generación anterior hasta los 230M (228.838.656 parámetros reales según los safetensors). El modelo está diseñado para uso intensivo, conversaciones largas y generación de texto rápida, con una velocidad declarada de unos 130 tokens por segundo.
+Luna 3 230M es un modelo de lenguaje conversacional de tamaño reducido desarrollado por AobanZ (Aobangaming), publicado en Hugging Face bajo licencia MIT. Se trata de la tercera generación de la familia Luna, un fork de Luna 2 al que se ha ampliado la longitud de contexto hasta 8.192 tokens y se ha aumentado el tamaño del modelo desde los 100M de parámetros de la generación anterior hasta los 230M (228.838.656 parámetros reales según los safetensors). El modelo está diseñado para uso intensivo, conversaciones largas y generación de texto rápida, con una velocidad declarada de unos 130 tokens por segundo.
 
 Su relevancia no está en competir con modelos frontera, sino en el nicho de los modelos muy pequeños y eficientes: se puede ejecutar en hardware de consumo modesto (fue entrenado en una RTX 3050 de 6 GB en solo 5 horas), lo que lo hace útil para experimentación, investigación educativa, fine-tuning casero y prototipado de chatbots ligeros. Usa una arquitectura Transformer causal de 12 capas con RMSNorm y RoPE, y el autor recomienda explícitamente ajustarlo (fine-tune) antes de usarlo en producción.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 |---|---|---|---|---|
 | Luna 3 230M | 228,8M | ~8k | MIT | Conversacion ligera, roleplay, fine-tuning casero |
 | Qwen2.5-0.5B-Instruct | 494M | 32k (128k con YaRN) | Qwen Research (uso comercial condicionado) | Modelo pequeno multiuso con tool calling |
-| SmolLM2-360M-Instruct | 360M | 8k | Apache 2.0 | Modelo compacto de HuggingFace entrenado con recipe completo (11T tokens) |
+| SmolLM2-360M-Instruct | 360M | 8k | Apache 2.0 | Modelo compacto de Hugging Face entrenado con recipe completo (11T tokens) |
 | TinyLlama-1.1B-Chat | 1,1B | 2k | Apache 2.0 | Base TinyLlama con chat, mas grande pero menos contexto |
 
 Luna 3 destaca por su contexto de 8k en una talla muy reducida y por una licencia MIT sin restricciones, pero frente a alternativas como SmolLM2 o Qwen2.5 ha sido entrenado con muchisimos menos datos y computo (5 horas en una RTX 3050), por lo que su calidad de generacion y cobertura de tareas es presumiblemente inferior.
@@ -82,7 +82,7 @@ Luna 3 destaca por su contexto de 8k en una talla muy reducida y por una licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/Luna-3-230m
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/Luna-3-230m
 - Repositorio de la generacion anterior (Luna 2 70M): https://huggingface.co/Aobangaming/luna-2-70m
 - Dataset de entrenamiento (OpenAssistant OASST1): https://huggingface.co/datasets/OpenAssistant/oasst1
 - Web del creador: https://aobanweb.com

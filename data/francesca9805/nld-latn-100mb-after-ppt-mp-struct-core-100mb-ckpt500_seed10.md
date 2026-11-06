@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un modelo de generacion de texto de aproximadamente 125 millones de parametros desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino (SFT, supervised fine-tuning) realizado con TRL sobre el modelo base `francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed10`, que a su vez parece formar parte de una linea experimental de modelos pequenos entrenados sobre una coleccion de datos identificada en el nombre como "100mb". La arquitectura declarada en las etiquetas del repositorio es GPT-2.
+El modelo `francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un modelo de generacion de texto de aproximadamente 125 millones de parametros desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (SFT, supervised fine-tuning) realizado con TRL sobre el modelo base `francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed10`, que a su vez parece formar parte de una linea experimental de modelos pequenos entrenados sobre una coleccion de datos identificada en el nombre como "100mb". La arquitectura declarada en las etiquetas del repositorio es GPT-2.
 
-El nombre del identificador incluye el prefijo `nld-latn`, que en la nomenclatura habitual de HuggingFace corresponde al neerlandes (codigo ISO 639-3 `nld`) en escritura latina (`latn`), aunque la model card no confirma explicitamente el idioma de entrenamiento ni la composicion del corpus. El modelo esta pensado para generacion de texto conversacional segun el ejemplo de uso rapido que proporciona el autor, y es relevante sobre todo como artefacto de investigacion dentro de una serie de experimentos de tokenizacion y ajuste supervisado mas que como modelo listo para produccion.
+El nombre del identificador incluye el prefijo `nld-latn`, que en la nomenclatura habitual de Hugging Face corresponde al neerlandes (codigo ISO 639-3 `nld`) en escritura latina (`latn`), aunque la model card no confirma explicitamente el idioma de entrenamiento ni la composicion del corpus. El modelo esta pensado para generacion de texto conversacional segun el ejemplo de uso rapido que proporciona el autor, y es relevante sobre todo como artefacto de investigacion dentro de una serie de experimentos de tokenizacion y ajuste supervisado mas que como modelo listo para produccion.
 
 Se trata de un modelo muy pequeno (125M parametros, formato safetensors, libreria transformers) que puede ejecutarse en hardware de consumo. No se han publicado datos de benchmarks, licencia explicita ni lista de idiomas en la informacion disponible, por lo que su evaluacion practica requiere pruebas directas por parte del usuario.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77M | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124M | 1024 tokens | modified MIT | HuggingFace |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77M | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | modified MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,49B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay datos de rendimiento publicados para el modelo analizado. La longitud de contexto de los modelos alternativos es la documentada por sus respectivos autores; la del modelo analizado no se especifica.
 
@@ -87,7 +87,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/9a9ypy47
 - Repositorio de TRL: https://github.com/huggingface/trl

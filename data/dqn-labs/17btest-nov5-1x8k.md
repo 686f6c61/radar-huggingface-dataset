@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DQN-Labs/17btest-nov5-1x8k es un modelo de generacion de texto publicado en HuggingFace por el usuario DQN-Labs. Segun los metadatos del repositorio, se trata de un modelo basado en la arquitectura lfm3 (etiqueta `lfm3` en los tags), con 1.728.801.536 parametros totales (aproximadamente 1,7 mil millones) confirmados por los pesos en safetensors. El nombre del repositorio sugiere un contexto de ventana de 8k tokens ("1x8k"), aunque este dato no esta confirmado en la model card.
+DQN-Labs/17btest-nov5-1x8k es un modelo de generacion de texto publicado en Hugging Face por el usuario DQN-Labs. Segun los metadatos del repositorio, se trata de un modelo basado en la arquitectura lfm3 (etiqueta `lfm3` en los tags), con 1.728.801.536 parametros totales (aproximadamente 1,7 mil millones) confirmados por los pesos en safetensors. El nombre del repositorio sugiere un contexto de ventana de 8k tokens ("1x8k"), aunque este dato no esta confirmado en la model card.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Los unicos datos tecnicos verificables son los metadatos del Hub: tamano del repositorio de 3,5 GB, pipeline de text-generation, libreria transformers y tags que indican un proceso de fine-tuning supervisado (SFT) mediante la libreria TRL.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Los unicos datos tecnicos verificables son los metadatos del Hub: tamano del repositorio de 3,5 GB, pipeline de text-generation, libreria transformers y tags que indican un proceso de fine-tuning supervisado (SFT) mediante la libreria TRL.
 
 Por tanto, esta ficha se limita a documentar lo que se puede verificar objetivamente. El modelo parece ser un experimento o prueba interna ("17btest") mas que un modelo publicado con documentacion completa, y su relevancia practica para produccion es limitada sin informacion adicional sobre entrenamiento, licencia y evaluacion.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha se limita a documentar lo que se puede verificar objetivam
 
 La unica informacion sobre la arquitectura es el tag `lfm3`, que apunta a la familia de modelos LFM (Liquid Foundation Models) de Liquid AI. No obstante, no se dispone de confirmacion oficial en la model card, ni de detalles sobre el tipo de transformer, atencion, capas o configuracion interna. El numero de parametros (1,7 B) es coherente con un modelo de tamano pequeno-medio orientado a inferencia eficiente.
 
-Respecto al entrenamiento, los tags `trl` y `sft` indican que el modelo ha pasado por un proceso de fine-tuning supervisado usando la libreria TRL de HuggingFace, probablemente partiendo de un modelo base de la familia lfm3. No hay informacion sobre el volumen de datos, la composicion del dataset, el uso de RLHF/DPO, la precision de entrenamiento ni la infraestructura utilizada. La model card no documenta ninguna innovacion tecnica especifica.
+Respecto al entrenamiento, los tags `trl` y `sft` indican que el modelo ha pasado por un proceso de fine-tuning supervisado usando la libreria TRL de Hugging Face, probablemente partiendo de un modelo base de la familia lfm3. No hay informacion sobre el volumen de datos, la composicion del dataset, el uso de RLHF/DPO, la precision de entrenamiento ni la infraestructura utilizada. La model card no documenta ninguna innovacion tecnica especifica.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DQN-Labs/17btest-nov5-1x8k | 1,7 B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1,2 B | 128k | Llama 3.2 Community License | HuggingFace |
-| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | HuggingFace |
+| DQN-Labs/17btest-nov5-1x8k | 1,7 B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-1.5B | 1,5 B | 32k | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1,2 B | 128k | Llama 3.2 Community License | Hugging Face |
+| SmolLM2-1.7B | 1,7 B | 8k | Apache 2.0 | Hugging Face |
 
 La comparativa se ofrece solo a efectos de referencia por tamano. No hay datos de rendimiento del modelo DQN-Labs que permitan una comparacion cuantitativa con estas alternativas, y su licencia no esta declarada, lo que limita su uso comercial frente a las opciones citadas.
 
@@ -88,7 +88,7 @@ La comparativa se ofrece solo a efectos de referencia por tamano. No hay datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DQN-Labs/17btest-nov5-1x8k
+- Hugging Face: https://huggingface.co/DQN-Labs/17btest-nov5-1x8k
 - Paper de referencia sobre emisiones de carbono citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
 - Repositorio de TRL (libreria de fine-tuning mencionada en los tags): https://github.com/huggingface/trl

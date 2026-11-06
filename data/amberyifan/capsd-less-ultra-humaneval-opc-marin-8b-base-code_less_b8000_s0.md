@@ -4,9 +4,9 @@
 
 El modelo `capsd-less-ultra-humaneval-opc-marin-8b-base-code_less_b8000_s0` es un ajuste fino (fine-tuning) completo del modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Está orientado a la generación de texto y, por su nombre, parece estar especializado en tareas de código, concretamente en la mejora de resultados en el benchmark HumanEval. El entrenamiento se realizó sobre un dataset denominado `capsd_marin-8b-base-n80000-opc__mix_code_less_b8000_s0`, con hiperparámetros documentados (una sola época, tasa de aprendizaje 1e-05, optimizador AdamW, scheduler cosine).
 
-Con 8.030 millones de parámetros, se trata de un modelo de tamaño medio que puede ejecutarse en GPUs de consumo con cuantización. La arquitectura subyacente es la del modelo base, que según los tags de HuggingFace corresponde a una familia tipo Llama (transformer decoder). La relevancia de este modelo radica en que es un experimento de fine-tuning dirigido a mejorar capacidades de generación de código, aunque no se han publicado resultados de benchmarks que lo avalen.
+Con 8.030 millones de parámetros, se trata de un modelo de tamaño medio que puede ejecutarse en GPUs de consumo con cuantización. La arquitectura subyacente es la del modelo base, que según los tags de Hugging Face corresponde a una familia tipo Llama (transformer decoder). La relevancia de este modelo radica en que es un experimento de fine-tuning dirigido a mejorar capacidades de generación de código, aunque no se han publicado resultados de benchmarks que lo avalen.
 
-La ficha se basa exclusivamente en la información proporcionada por el repositorio de HuggingFace y la model card. No se dispone de documentación adicional sobre el modelo base ni sobre el dataset de entrenamiento, por lo que muchos datos técnicos quedan sin especificar.
+La ficha se basa exclusivamente en la información proporcionada por el repositorio de Hugging Face y la model card. No se dispone de documentación adicional sobre el modelo base ni sobre el dataset de entrenamiento, por lo que muchos datos técnicos quedan sin especificar.
 
 ## Especificaciones tecnicas
 

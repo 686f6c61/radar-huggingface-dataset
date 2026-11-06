@@ -85,7 +85,7 @@ La diferencia principal frente a los checkpoints de Google no es de calidad ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdae/karume-gemma4-qat-q4_0
+- Modelo en Hugging Face: https://huggingface.co/hdae/karume-gemma4-qat-q4_0
 - Modelo base `e2b`: https://huggingface.co/google/gemma-4-E2B-it
 - Checkpoint QAT `e2b`: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Drafter `e2b`: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant

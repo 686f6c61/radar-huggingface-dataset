@@ -13,7 +13,7 @@ Su relevancia es práctica: permite ejecutar un MoE de esta familia en tarjetas 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer con mezcla de expertos (MoE) y proyector multimodal para visión (pipeline image-text-to-text) |
-| Parametros totales | 74 000 millones según la nomenclatura del autor (74B); el registro de HuggingFace informa 24 392 112 592 parámetros en safetensors |
+| Parametros totales | 74 000 millones según la nomenclatura del autor (74B); el registro de Hugging Face informa 24 392 112 592 parámetros en safetensors |
 | Parametros activos | 9 000 millones (A9B); 9 expertos enrutados por token, de 240 a 496 por capa en el modelo base |
 | Longitud de contexto | 131 072 tokens (128K) configurados en llama.cpp; probado con una petición real de 124K |
 | Tipos de cuantizacion | IQ2_XXS (2 bits, pesos entrenados por NVIDIA con cuantización consciente); los expertos conservados no se recuantizan |
@@ -79,7 +79,7 @@ Detalles de medición: HumanEval+ sobre 164 problemas y MBPP+ sobre 378 (EvalPlu
 
 | Modelo | Parametros | Contexto | Memoria GPU (128K) | HumanEval+ | MBPP+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| NVIDIA Nemotron 3.5 Bolt 74B-A9B (build oficial 24GB) | 74B totales / 9B activos | 128K | 21,6 GiB | 0,890 | 0,743 | openmdw-1.1 | GGUF de NVIDIA en HuggingFace |
+| NVIDIA Nemotron 3.5 Bolt 74B-A9B (build oficial 24GB) | 74B totales / 9B activos | 128K | 21,6 GiB | 0,890 | 0,743 | openmdw-1.1 | GGUF de NVIDIA en Hugging Face |
 | Este repo, build 16GB (REAP50) | 74B totales / 9B activos, 50 % de expertos por capa | 128K | 13,5 GiB | 0,835 | 0,688 | openmdw-1.1 | GGUF en este repo |
 | Este repo, build 12GB (REAP25) | 74B totales / 9B activos, 25 % de expertos por capa | 128K | 9,5 GiB | 0,579 | 0,571 | openmdw-1.1 | GGUF en este repo |
 
@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anik-jha/Nemotron-3.5-Bolt-74B-A9B-16GB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/anik-jha/Nemotron-3.5-Bolt-74B-A9B-16GB-GGUF
 - Modelo base (GGUF de NVIDIA, 24GB): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Paper del método REAP, "Half the Experts, All the Code": https://arxiv.org/abs/2607.16721
 - Workshop COLM 2026 on Efficient Reasoning: https://wdlctc.github.io/efficient-reasoning-2026/

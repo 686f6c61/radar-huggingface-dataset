@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-news-model es un ajuste fino supervisado de distilgpt2 orientado a clasificacion de texto, publicado por el usuario RameshGedela en HuggingFace. A pesar de partir de un modelo causal (distilgpt2), el pipeline declarado en el Hub es text-classification, lo que indica que el autor reutilizo el backbone decoder-only anadiendo una cabeza de clasificacion y lo entreno con la clase Trainer de transformers sobre un dataset que no se especifica ("unknown dataset" en la model card). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su tamano es de 0,3 GB.
+gpt-news-model es un ajuste fino supervisado de distilgpt2 orientado a clasificacion de texto, publicado por el usuario RameshGedela en Hugging Face. A pesar de partir de un modelo causal (distilgpt2), el pipeline declarado en el Hub es text-classification, lo que indica que el autor reutilizo el backbone decoder-only anadiendo una cabeza de clasificacion y lo entreno con la clase Trainer de transformers sobre un dataset que no se especifica ("unknown dataset" en la model card). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su tamano es de 0,3 GB.
 
 El modelo cuenta con 81.915.648 parametros reales segun el archivo safetensors, lo que lo situa en la gama ultraligera: puede ejecutarse en CPU sin aceleracion dedicada y cabe en cualquier GPU consumer, incluso en moviles o dispositivos embebidos mediante cuantizacion. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales, aunque la ausencia de documentacion sobre el dataset de entrenamiento limita seriamente la trazabilidad y la evaluacion de sesgos.
 
@@ -68,17 +68,17 @@ Resultado final declarado sobre el conjunto de evaluacion: perdida 0,2710, accur
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en fp32 y 0,2 GB en fp16/bf16, sin contar el overhead del framework. Con cuantizacion int8 se reduce a ~90 MB y con Q4 en GGUF a ~50 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM. Funciona sin problemas en GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060, T4, L4. Las A100 o H100 son totalmente innecesarias para este tamano.
 - Cabe en GPU consumer: si, en practicamente todas, incluidas GPU integradas. Tambien se ejecuta en CPU sin problemas (el repositorio completo pesa 0,3 GB).
-- Opciones de despliegue: pipeline de transformers (via HuggingFace Hub), ONNX Runtime, TorchScript, servidores HTTP con FastAPI o Triton. TGI y vLLM soportan la arquitectura GPT-2, aunque estan sobredimensionados para este modelo. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada por el autor.
+- Opciones de despliegue: pipeline de transformers (via Hugging Face Hub), ONNX Runtime, TorchScript, servidores HTTP con FastAPI o Triton. TGI y vLLM soportan la arquitectura GPT-2, aunque estan sobredimensionados para este modelo. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada por el autor.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones. Por el tamano del modelo (82 M de parametros) es razonable esperar latencias de decenas de milisegundos por lote en CPU moderna, pero se trata de una estimacion no verificada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RameshGedela/gpt-news-model | 81,9 M | 1024 tokens | Clasificacion de texto (fine-tune de distilgpt2) | Apache-2.0 | HuggingFace, 0 descargas |
-| distilgpt2 (modelo base) | 82 M | 1024 tokens | Generacion de texto causal | Apache-2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificacion de sentimiento (encoder) | Apache-2.0 | HuggingFace, muy usado |
-| roberta-base | 125 M | 512 tokens | NLU general (encoder) | MIT | HuggingFace, muy usado |
+| RameshGedela/gpt-news-model | 81,9 M | 1024 tokens | Clasificacion de texto (fine-tune de distilgpt2) | Apache-2.0 | Hugging Face, 0 descargas |
+| distilgpt2 (modelo base) | 82 M | 1024 tokens | Generacion de texto causal | Apache-2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased-finetuned-sst-2-english | 66 M | 512 tokens | Clasificacion de sentimiento (encoder) | Apache-2.0 | Hugging Face, muy usado |
+| roberta-base | 125 M | 512 tokens | NLU general (encoder) | MIT | Hugging Face, muy usado |
 
 En cuanto a rendimiento comparado no hay datos: el model-index esta vacio y las metricas declaradas se obtuvieron sobre un conjunto de evaluacion no identificado, por lo que no se pueden contrastar con las cifras publicas de los modelos de la tabla. Estructuralmente, un encoder como DistilBERT o RoBERTa esta mejor adaptado a tareas de clasificacion que un decoder-only reutilizado con cabeza de clasificacion, especialmente con presupuestos de entrenamiento cortos (450 pasos en este caso).
 
@@ -98,7 +98,7 @@ En cuanto a rendimiento comparado no hay datos: el model-index esta vacio y las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RameshGedela/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/RameshGedela/gpt-news-model
 - Modelo base distilgpt2: https://huggingface.co/distilgpt2
 - Repositorio de Transformers (libreria utilizada): https://github.com/huggingface/transformers
 - Repositorio de Tokenizers: https://github.com/huggingface/tokenizers

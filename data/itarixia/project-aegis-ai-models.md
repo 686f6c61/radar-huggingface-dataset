@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `itarixia/project-aegis-ai-models` aloja un modelo de inteligencia artificial publicado por el usuario itarixia en HuggingFace. A fecha de la última actualización (22 de agosto de 2026), el repositorio cuenta con 0 descargas y 0 likes, y la model card asociada no contiene ninguna descripción técnica más allá de la declaración de licencia. El tamaño del repositorio es de 4,3 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio (posiblemente en el rango de 3B a 7B de parámetros en precisión FP16), aunque no se puede confirmar sin información adicional.
+El repositorio `itarixia/project-aegis-ai-models` aloja un modelo de inteligencia artificial publicado por el usuario itarixia en Hugging Face. A fecha de la última actualización (22 de agosto de 2026), el repositorio cuenta con 0 descargas y 0 likes, y la model card asociada no contiene ninguna descripción técnica más allá de la declaración de licencia. El tamaño del repositorio es de 4,3 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio (posiblemente en el rango de 3B a 7B de parámetros en precisión FP16), aunque no se puede confirmar sin información adicional.
 
 La licencia indicada es `gemma-and-apache-2.0`, lo que sugiere que el modelo podría basarse en la familia Gemma de Google y distribuirse bajo términos compatibles con Apache 2.0, pero no hay más detalles. Dado que la model card está vacía y no se han publicado resultados de benchmarks ni especificaciones técnicas, esta ficha se limita a documentar los datos disponibles y a señalar las numerosas incógnitas que rodean al modelo. Es relevante para desarrolladores porque, ante la falta de información, cualquier uso en producción debe considerarse de alto riesgo y requerir una evaluación exhaustiva previa.
 
@@ -60,7 +60,7 @@ No es posible realizar una comparativa sin conocer las características del mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: [itarixia/project-aegis-ai-models](https://huggingface.co/itarixia/project-aegis-ai-models)
+- Repositorio Hugging Face: [itarixia/project-aegis-ai-models](https://huggingface.co/itarixia/project-aegis-ai-models)
 - No se han encontrado papers, blogs o demos asociados a este modelo en la búsqueda web.
 
 > **Nota final:** Esta ficha se limita a los datos públicos disponibles. El modelo carece de documentación técnica, por lo que no se recomienda su uso en ningún escenario real hasta que el autor publique especificaciones detalladas, resultados de benchmarks y una licencia clara.

@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en WER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shockz1/parakeet-tdt_ctc-110m-fp16-onnx
+- Modelo en Hugging Face: https://huggingface.co/shockz1/parakeet-tdt_ctc-110m-fp16-onnx
 - Export fp32 de origen: https://huggingface.co/OpenVoiceOS/nvidia-parakeet-tdt_ctc-110m-onnx
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Documentación de onnxruntime-web (WebGPU): https://onnxruntime.ai/docs/tutorials/web/

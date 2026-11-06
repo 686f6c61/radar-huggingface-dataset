@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jeetsingh14/hf-agents-course-unit4` es un repositorio alojado en HuggingFace por el usuario `jeetsingh14`, publicado bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, todo apunta a que se trata de un artefacto asociado al curso de agentes de HuggingFace (unidad 4), es decir, un repositorio de trabajo o de práctica más que un modelo entrenado y distribuido para uso general.
+`jeetsingh14/hf-agents-course-unit4` es un repositorio alojado en Hugging Face por el usuario `jeetsingh14`, publicado bajo licencia MIT. Por su identificador y por la ausencia de cualquier documentación técnica en la model card, todo apunta a que se trata de un artefacto asociado al curso de agentes de Hugging Face (unidad 4), es decir, un repositorio de trabajo o de práctica más que un modelo entrenado y distribuido para uso general.
 
 La información disponible es mínima: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de inferencia. La model card se limita a la declaración de licencia MIT, sin descripción, sin ejemplos de uso y sin referencias a papers o datasets. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha no puede certificar que el repositorio contenga pesos de u
 
 No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante, ni tampoco el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados o si se aplicaron técnicas de alineación como RLHF, DPO o SFT.
 
-El nombre del repositorio sugiere un vínculo con el material práctico del curso de agentes de HuggingFace, pero no hay evidencia en la información proporcionada de que contenga un modelo entrenado, un adaptador, un tokenizador o simplemente cuadernos y scripts del curso. No se puede confirmar ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento extendido) sin acceso al contenido del repositorio.
+El nombre del repositorio sugiere un vínculo con el material práctico del curso de agentes de Hugging Face, pero no hay evidencia en la información proporcionada de que contenga un modelo entrenado, un adaptador, un tokenizador o simplemente cuadernos y scripts del curso. No se puede confirmar ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento extendido) sin acceso al contenido del repositorio.
 
 ## Capacidades
 
@@ -72,4 +72,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del artef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jeetsingh14/hf-agents-course-unit4
+- Repositorio en Hugging Face: https://huggingface.co/jeetsingh14/hf-agents-course-unit4

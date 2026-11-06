@@ -1,7 +1,7 @@
 # ak0601/Hinglish-XRoberta
 
 ## Resumen
-El modelo Hinglish-XRoberta es un modelo de lenguaje desarrollado por ak0601 (Aman Kapoor) y alojado en HuggingFace. Su nombre sugiere que se trata de una variante de XLM-RoBERTa adaptada al procesamiento de texto en Hinglish, la mezcla de hindi e inglés ampliamente utilizada en la India. El repositorio ocupa 3.3 GB y se publica bajo licencia Apache-2.0. No se dispone de información detallada sobre su arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento en la información proporcionada. El modelo no presenta descargas registradas y su pipeline no está definido, lo que indica que se encuentra en una fase temprana de publicación.
+El modelo Hinglish-XRoberta es un modelo de lenguaje desarrollado por ak0601 (Aman Kapoor) y alojado en Hugging Face. Su nombre sugiere que se trata de una variante de XLM-RoBERTa adaptada al procesamiento de texto en Hinglish, la mezcla de hindi e inglés ampliamente utilizada en la India. El repositorio ocupa 3.3 GB y se publica bajo licencia Apache-2.0. No se dispone de información detallada sobre su arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento en la información proporcionada. El modelo no presenta descargas registradas y su pipeline no está definido, lo que indica que se encuentra en una fase temprana de publicación.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones específicas de este modelo. La licencia Apache-2.0 permite uso comercial. Dado que no hay datos publicados, se recomienda evaluar el modelo en tareas concretas antes de usarlo en producción. Además, al estar orientado a Hinglish, su rendimiento en otros idiomas es desconocido.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ak0601/Hinglish-XRoberta
+- Hugging Face: https://huggingface.co/ak0601/Hinglish-XRoberta
 - Perfil del autor: https://huggingface.co/ak0601
 - Referencia a HingRoBERTa: https://www.emergentmind.com/topics/hingroberta
 - Paper relacionado sobre Hinglish: https://arxiv.org/html/2504.19070v1

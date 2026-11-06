@@ -60,7 +60,7 @@ No disponible. No hay un modelo comparable porque este repositorio no es un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MYRASHARMA/paper_004382978_vision_language_pretraining
+- Repositorio en Hugging Face: https://huggingface.co/MYRASHARMA/paper_004382978_vision_language_pretraining
 - Referencias externas relacionadas con el tema (no con este repositorio):
   - Survey de 26K papers sobre VLM: https://arxiv.org/html/2510.09586v1
   - LeVLJEPA (pretraining no contrastivo): https://arxiv.org/abs/2607.00784

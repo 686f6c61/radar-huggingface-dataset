@@ -4,13 +4,13 @@
 
 El modelo `voiceshield-replay-robust-v2` es un clasificador de audio desarrollado por Harmansingh24k, concebido como una versión afinada del modelo base `voiceshield-replay-robust`. Su nombre sugiere que está orientado a la detección de ataques de reproducción (replay attacks) en sistemas de verificación de voz, un problema crítico en biometría de voz y autenticación segura. Sin embargo, la documentación pública es extremadamente escasa: la model card no describe el propósito exacto, los datos de entrenamiento ni las limitaciones, y solo se ofrecen métricas de entrenamiento y evaluación.
 
-El modelo se basa en la arquitectura wav2vec2 (según las etiquetas de HuggingFace), con un total de 94.569.090 parámetros y un peso de 0,4 GB en formato safetensors. Se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, aunque no se especifican los idiomas soportados ni la duración de contexto de audio. La ausencia de una descripción técnica detallada y de benchmarks externos limita su evaluación objetiva, pero su tamaño compacto lo hace viable para despliegue en entornos con recursos limitados.
+El modelo se basa en la arquitectura wav2vec2 (según las etiquetas de Hugging Face), con un total de 94.569.090 parámetros y un peso de 0,4 GB en formato safetensors. Se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, aunque no se especifican los idiomas soportados ni la duración de contexto de audio. La ausencia de una descripción técnica detallada y de benchmarks externos limita su evaluación objetiva, pero su tamaño compacto lo hace viable para despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | wav2vec2 (según tags de HuggingFace) |
+| Arquitectura | wav2vec2 (según tags de Hugging Face) |
 | Parametros totales | 94.569.090 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Harmansingh24k/voiceshield-replay-robust-v2
+- Página del modelo en Hugging Face: https://huggingface.co/Harmansingh24k/voiceshield-replay-robust-v2
 - Modelo base: https://huggingface.co/Harmansingh24k/voiceshield-replay-robust
 - No se han encontrado papers, blogs o repositorios adicionales relacionados con este modelo en la búsqueda web.

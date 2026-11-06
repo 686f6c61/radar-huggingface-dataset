@@ -97,7 +97,7 @@ La comparación es orientativa: los datos de contexto y licencia de los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-raw-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

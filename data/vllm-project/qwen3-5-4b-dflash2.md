@@ -106,7 +106,7 @@ No se dispone de datos de otros drafter comparables en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/Qwen3.5-4B-DFlash2
+- Hugging Face: https://huggingface.co/vllm-project/Qwen3.5-4B-DFlash2
 - Checkpoint original: https://huggingface.co/nchapman/Qwen3.5-4B-DFlash2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Verificador cuantizado: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-GPTQ

@@ -103,7 +103,7 @@ La comparacion se limita a lo verificable: este checkpoint es un ajuste fino del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-cap-finetuned
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-cap-finetuned
 - Modelo base multitarea: https://huggingface.co/WetLabRoboData/diffusion-multitask_12task_mix-multitask
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-cap
 - Dataset de evaluacion: https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-cap-finetuned

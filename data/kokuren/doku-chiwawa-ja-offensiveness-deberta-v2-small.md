@@ -93,8 +93,8 @@ No se dispone de datos comparativos de benchmarks en la informacion proporcionad
 
 | Modelo | Parametros | Contexto / max. secuencia | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small | 17.868.807 (safetensors); ~26M indicados para el base | 192 tokens en entrenamiento | MAE medio 0,051422; Spearman medio 0,605506 (test local) | CC BY-SA 4.0 | HuggingFace, safetensors + ONNX FP32 |
-| izumi-lab/deberta-v2-small-japanese (modelo base) | ~26M segun la model card | no disponible | no disponible (no es un clasificador de ofensividad) | no disponible en la informacion proporcionada | HuggingFace |
+| kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small | 17.868.807 (safetensors); ~26M indicados para el base | 192 tokens en entrenamiento | MAE medio 0,051422; Spearman medio 0,605506 (test local) | CC BY-SA 4.0 | Hugging Face, safetensors + ONNX FP32 |
+| izumi-lab/deberta-v2-small-japanese (modelo base) | ~26M segun la model card | no disponible | no disponible (no es un clasificador de ofensividad) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de toxicidad o de ofensividad en japones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ No se dispone de datos comparativos de benchmarks en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small
+- Modelo en Hugging Face: https://huggingface.co/kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small
 - Modelo base: https://huggingface.co/izumi-lab/deberta-v2-small-japanese
 - Artefacto ONNX para navegador (ruta dentro del repositorio): onnx/model.onnx
 - Metricas de evaluacion (ruta dentro del repositorio): test_metrics.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HilaryTorn/rust-rl-checkpoints` es un repositorio de pesos alojado en HuggingFace por el usuario HilaryTorn. Por el nombre del repositorio y el formato de los ficheros (`safetensors`), todo apunta a una coleccion de puntos de control (checkpoints) resultantes de un proceso de aprendizaje por refuerzo (RL) aplicado presumiblemente a tareas de generacion de codigo en Rust. Sin embargo, esta interpretacion procede unicamente de la denominacion del repositorio y no puede confirmarse con la informacion disponible: la ficha del modelo no declara pipeline, licencia, idiomas, arquitectura ni parametros.
+`HilaryTorn/rust-rl-checkpoints` es un repositorio de pesos alojado en Hugging Face por el usuario HilaryTorn. Por el nombre del repositorio y el formato de los ficheros (`safetensors`), todo apunta a una coleccion de puntos de control (checkpoints) resultantes de un proceso de aprendizaje por refuerzo (RL) aplicado presumiblemente a tareas de generacion de codigo en Rust. Sin embargo, esta interpretacion procede unicamente de la denominacion del repositorio y no puede confirmarse con la informacion disponible: la ficha del modelo no declara pipeline, licencia, idiomas, arquitectura ni parametros.
 
 El repositorio ocupa 11,5 GB y fue creado el 10 de septiembre de 2026, con ultima actualizacion el 12 de septiembre de 2026. Acumula 0 descargas y 1 like, lo que indica que se trata de un artefacto practicamente sin difusion ni validacion por parte de la comunidad. No se ha publicado documentacion tecnica asociada (model card sustantiva, paper, blog o repositorio de codigo).
 
@@ -53,7 +53,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Reproduccion de experimentos: si el autor publica el codigo de entrenamiento, los checkpoints podrian emplearse para reproducir o continuar un pipeline de RL sobre tareas de Rust.
 - Evaluacion interna controlada: ejecutar el modelo en un entorno aislado y medir sus capacidades reales antes de considerar cualquier integracion.
 - Estudio de tecnicas de RL: analizar la evolucion entre checkpoints para investigar dinamicas de entrenamiento por refuerzo, siempre que la licencia lo permita.
-- Uso educativo: ilustrar como se estructura un repositorio de checkpoints en HuggingFace.
+- Uso educativo: ilustrar como se estructura un repositorio de checkpoints en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la licenc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HilaryTorn/rust-rl-checkpoints | no disponible | no disponible | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
+| HilaryTorn/rust-rl-checkpoints | no disponible | no disponible | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HilaryTorn/rust-rl-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/HilaryTorn/rust-rl-checkpoints
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

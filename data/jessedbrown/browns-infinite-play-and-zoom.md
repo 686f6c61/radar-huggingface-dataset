@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `Jessedbrown/Browns-infinite-play-and-zoom` no contiene un modelo de inteligencia artificial, sino una pieza de software interactiva de un solo archivo: una página HTML con JavaScript y canvas 2D que dibuja sólidos translúcidos sobre un centro libre y hace zoom infinito a coste de cómputo constante. El autor, Jesse Daniel Brown (OP-JESSE), la publica en HuggingFace bajo la etiqueta `region:us`, con cero descargas y cero likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados.
+El repositorio `Jessedbrown/Browns-infinite-play-and-zoom` no contiene un modelo de inteligencia artificial, sino una pieza de software interactiva de un solo archivo: una página HTML con JavaScript y canvas 2D que dibuja sólidos translúcidos sobre un centro libre y hace zoom infinito a coste de cómputo constante. El autor, Jesse Daniel Brown (OP-JESSE), la publica en Hugging Face bajo la etiqueta `region:us`, con cero descargas y cero likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados.
 
 El propio README describe el mecanismo: cada anillo es el anillo anterior bajo una única transformación, de modo que la profundidad de la recursión crece sin límite mientras el trabajo por fotograma se mantiene plano. El autor afirma que esto se debe a que los coeficientes de brazo `(2, −1, −1)` suman cero, lo que hace que la relación sea afín y que el centro sea colocable en cualquier punto sin coste. Se trata de una afirmación matemática del autor, no de una propiedad verificada de forma independiente en la información disponible.
 
-La relevancia de esta ficha es, por tanto, la de documentar una entrada atípica en HuggingFace: no es un checkpoint, no tiene pesos, no se puede ejecutar con vLLM ni llama.cpp y no sirve para tareas de generación de texto. Encaja en la categoría de demo web autocontenida con dependencia cero, ejecutable abriendo `index.html` en un navegador. La búsqueda web asociada no devolvió ningún resultado relevante sobre el proyecto: todos los enlaces recuperados corresponden a páginas de ayuda de Gmail y no guardan relación con el modelo.
+La relevancia de esta ficha es, por tanto, la de documentar una entrada atípica en Hugging Face: no es un checkpoint, no tiene pesos, no se puede ejecutar con vLLM ni llama.cpp y no sirve para tareas de generación de texto. Encaja en la categoría de demo web autocontenida con dependencia cero, ejecutable abriendo `index.html` en un navegador. La búsqueda web asociada no devolvió ningún resultado relevante sobre el proyecto: todos los enlaces recuperados corresponden a páginas de ayuda de Gmail y no guardan relación con el modelo.
 
 ## Especificaciones técnicas
 
@@ -75,18 +75,18 @@ No disponible. En la información proporcionada no se identifica ningún modelo 
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto, no razona, no procesa lenguaje natural y no puede integrarse en pipelines de inferencia ni en flujos de agentes.
-- La licencia no está declarada en HuggingFace, lo que impide determinar si el uso comercial, la redistribución o la modificación están permitidos.
+- La licencia no está declarada en Hugging Face, lo que impide determinar si el uso comercial, la redistribución o la modificación están permitidos.
 - El repositorio registra cero descargas y cero likes, por lo que no existe validación de la comunidad ni revisión externa del contenido.
 - Las fechas del repositorio son incoherentes en la información disponible: figura como creado el 2026-10-16 y actualizado el 2026-08-07, es decir, con una actualización anterior a la creación.
 - Las afirmaciones físicas y matemáticas del README (sombra que llega antes de que salga el pulso, gratuidad del descenso, supervivencia del cierre en profundidad 81, comportamiento en enteros exactos frente a coma flotante) son tesis del autor y no están verificadas de forma independiente en la información proporcionada.
 - La tabla de rendimiento procede exclusivamente de mediciones declaradas por el autor, sin metodología publicada ni reproducción por terceros.
 - El README documenta un fallo previo en producción (`IndexSizeError` por radio negativo al reanudar desde suspensión); aunque el autor indica que está corregido, conviene tenerlo en cuenta al reutilizar el bucle de animación.
 - La única comprobación de seguridad relevante es que el archivo se ejecuta sin red ni servidor, lo que reduce la superficie de exposición, pero no exime de revisar el código antes de abrirlo en un entorno corporativo.
-- No se declaran idiomas soportados en la ficha de HuggingFace.
+- No se declaran idiomas soportados en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/Browns-infinite-play-and-zoom
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/Browns-infinite-play-and-zoom
 - Demo en GitHub Pages: https://jessebrown1980.github.io/Browns-infinite-play-and-zoom/
 - Página "the bridge", índice de todo lo público del autor: https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Repositorio `does-the-closure-survive-81-levels`: https://github.com/JesseBrown1980/does-the-closure-survive-81-levels

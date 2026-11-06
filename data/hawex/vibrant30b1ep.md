@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hawex/vibrant30b1ep` es un checkpoint publicado en HuggingFace por el autor Hawex, con licencia MIT y etiqueta de region US. Fue creado el 19 de agosto de 2026 y no ha sido actualizado desde entonces. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicacion reciente o de muy baja adopcion.
+El modelo `Hawex/vibrant30b1ep` es un checkpoint publicado en Hugging Face por el autor Hawex, con licencia MIT y etiqueta de region US. Fue creado el 19 de agosto de 2026 y no ha sido actualizado desde entonces. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicacion reciente o de muy baja adopcion.
 
 La model card del autor esta practicamente vacia, conteniendo unicamente la declaracion de licencia MIT sin ninguna otra documentacion tecnica. El nombre del modelo sugiere una posible arquitectura de 30 mil millones de parametros (30b) y un entrenamiento de una sola epoca (1ep), pero estos datos no pueden confirmarse a partir de la informacion disponible. No se dispone de informacion sobre arquitectura, contexto, idiomas soportados, ni capacidades del modelo.
 
@@ -59,5 +59,5 @@ No disponible. No se conocen modelos comparables de la misma categoria al no dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hawex/vibrant30b1ep
+- Modelo en Hugging Face: https://huggingface.co/Hawex/vibrant30b1ep
 - No se han encontrado papers, repositorios, demos ni documentacion adicional en la busqueda web.

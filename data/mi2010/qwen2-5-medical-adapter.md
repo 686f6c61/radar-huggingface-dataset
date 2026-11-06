@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mi2010/qwen2.5-medical-adapter
+- Repositorio Hugging Face: https://huggingface.co/mi2010/qwen2.5-medical-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio relacionado del mismo autor: https://huggingface.co/mi2010/qwen2.5-1.5b-medical-vi-lora
 - Repositorio relacionado del mismo autor: https://huggingface.co/mi2010/qwen2.5-1.5b-medical-vi-full

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT DVAE (este) | 116,2 M | Nubes de puntos (ej. 8192 puntos) | Autosupervisado + destilacion 2D sobre ShapeNet-55 | MIT | HuggingFace (torch-pointcloud) |
+| ACT DVAE (este) | 116,2 M | Nubes de puntos (ej. 8192 puntos) | Autosupervisado + destilacion 2D sobre ShapeNet-55 | MIT | Hugging Face (torch-pointcloud) |
 | Point-MAE | No disponible en la informacion | Nubes de puntos | Autosupervisado con enmascaramiento | MIT (repositorio original) | GitHub / pesos comunitarios |
 | Point-BERT | No disponible en la informacion | Nubes de puntos | Autosupervisado con tokenizer discreto | MIT (repositorio original) | GitHub / pesos comunitarios |
 | ULIP | No disponible en la informacion | Nubes de puntos + texto/imagen | Contrastivo multimodal | No disponible | GitHub |
@@ -82,7 +82,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no puede establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/act.dvae.runpei-dong
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/act.dvae.runpei-dong
 - Paper ACT (arXiv): https://arxiv.org/abs/2212.08320
 - Paper ShapeNet (arXiv): https://arxiv.org/abs/1512.03012
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

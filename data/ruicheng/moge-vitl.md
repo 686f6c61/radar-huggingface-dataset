@@ -4,7 +4,7 @@
 
 MoGe (Model for Geometry) es un modelo desarrollado por Microsoft Research, presentado como ponencia oral en CVPR 2025, que recupera geometria 3D a partir de imagenes monoculares de dominio abierto. Dada una unica imagen, el modelo predice directamente un mapa de puntos 3D de la escena capturada con una representacion invariante a la afinidad, lo que lo hace agnostico a la escala y el desplazamiento globales reales. Esta representacion evita la supervision ambigua durante el entrenamiento y facilita un aprendizaje de geometria mas efectivo.
 
-El repositorio `Ruicheng/moge-vitl` aloja la variante ViT-Large del modelo en el hub de HuggingFace, con un tamano de 1,3 GB y licencia MIT. El modelo puede cargarse directamente mediante `MoGeModel.from_pretrained("Ruicheng/moge-vitl")` sin descarga manual, y es capaz de generar mapas de puntos metricos, mapas de profundidad metricos, mapas de normales y el campo de vision (FOV) de la camara.
+El repositorio `Ruicheng/moge-vitl` aloja la variante ViT-Large del modelo en el hub de Hugging Face, con un tamano de 1,3 GB y licencia MIT. El modelo puede cargarse directamente mediante `MoGeModel.from_pretrained("Ruicheng/moge-vitl")` sin descarga manual, y es capaz de generar mapas de puntos metricos, mapas de profundidad metricos, mapas de normales y el campo de vision (FOV) de la camara.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El entrenamiento se realiza sobre imagenes de dominio abierto, lo que permite al
 - Calculo de mapas de normales de superficie.
 - Estimacion del campo de vision (FOV) de la camara.
 - Representacion invariante a la afinidad, agnostica a escala y desplazamiento globales.
-- Integracion sencilla con la API `MoGeModel.from_pretrained` de HuggingFace.
+- Integracion sencilla con la API `MoGeModel.from_pretrained` de Hugging Face.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, aunque el tamano del repositorio (1,3 GB) sugiere que el modelo puede ejecutarse en GPUs con al menos 4-6 GB de VRAM en precision FP16.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: probablemente compatible con tarjetas como RTX 3060, RTX 4060 o superiores, aunque no hay datos confirmados.
-- Opciones de despliegue: el modelo se carga mediante la API `MoGeModel.from_pretrained` de HuggingFace, por lo que es compatible con el ecosistema Transformers y PyTorch.
+- Opciones de despliegue: el modelo se carga mediante la API `MoGeModel.from_pretrained` de Hugging Face, por lo que es compatible con el ecosistema Transformers y PyTorch.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ruicheng/moge-vitl
+- Repositorio Hugging Face: https://huggingface.co/Ruicheng/moge-vitl
 - Repositorio GitHub oficial (Microsoft): https://github.com/microsoft/MoGe
 - Repositorio GitHub alternativo: https://github.com/vmurakami0123/MoGe
 - Paper en arXiv: https://arxiv.org/html/2410.19115v2

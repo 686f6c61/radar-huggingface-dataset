@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DroidSenior-7B es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario de HuggingFace celebibasar, orientado especificamente al desarrollo de aplicaciones Android. El modelo busca responder como lo haria un ingeniero Android de nivel senior o staff: Kotlin idiomatico y moderno, Jetpack Compose, Coroutines/Flow, Hilt y Room, siguiendo las guias oficiales de arquitectura de Android y evitando APIs obsoletas. Resuelve el problema de que los asistentes de codigo genericos tienden a producir patrones Android desactualizados (AsyncTask, GlobalScope, kapt, synthetics) o respuestas genericas de Java.
+DroidSenior-7B es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario de Hugging Face celebibasar, orientado especificamente al desarrollo de aplicaciones Android. El modelo busca responder como lo haria un ingeniero Android de nivel senior o staff: Kotlin idiomatico y moderno, Jetpack Compose, Coroutines/Flow, Hilt y Room, siguiendo las guias oficiales de arquitectura de Android y evitando APIs obsoletas. Resuelve el problema de que los asistentes de codigo genericos tienden a producir patrones Android desactualizados (AsyncTask, GlobalScope, kapt, synthetics) o respuestas genericas de Java.
 
 Tecnicamente se trata de un transformer decoder-only de 7.615.616.512 parametros (unos 7,6 mil millones), con pesos en formato safetensors y un tamano de repositorio de 15,2 GB. Se ha entrenado mediante LoRA en dos fases (SFT y DPO) sobre el modelo base, con una ventana de contexto que la model card sugiere operar a 16.384 tokens en vLLM (`--max-model-len 16384`), aunque la longitud de contexto nativa del modelo base es mayor.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DroidSenior-7B | 7,6 B | 16.384 recomendados en vLLM | Android/Kotlin (Compose, Coroutines, Hilt, Room) | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen2.5-Coder-7B-Instruct | ~7,6 B | contexto nativo del base (no detallado aqui) | Codigo general multilingue | Apache 2.0 | HuggingFace, muy extendido |
-| Qwen3-Coder-30B-A3B-Instruct | 30 B (MoE, ~3 B activos) | no disponible en esta ficha | Codigo general, modelo profesor del destilado | no disponible en esta ficha | HuggingFace |
+| DroidSenior-7B | 7,6 B | 16.384 recomendados en vLLM | Android/Kotlin (Compose, Coroutines, Hilt, Room) | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-Coder-7B-Instruct | ~7,6 B | contexto nativo del base (no detallado aqui) | Codigo general multilingue | Apache 2.0 | Hugging Face, muy extendido |
+| Qwen3-Coder-30B-A3B-Instruct | 30 B (MoE, ~3 B activos) | no disponible en esta ficha | Codigo general, modelo profesor del destilado | no disponible en esta ficha | Hugging Face |
 
 La comparativa con alternativas especificas de Android/Kotlin no esta disponible en la informacion proporcionada. Frente a su modelo base, DroidSenior-7B anade especializacion vertical y filtrado de APIs obsoletas, a costa de un alcance de idiomas mas reducido (en/tr) y de un posible deterioro en tareas de codigo general fuera de Android.
 
@@ -86,7 +86,7 @@ La comparativa con alternativas especificas de Android/Kotlin no esta disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/celebibasar/DroidSenior-7B
+- Modelo en Hugging Face: https://huggingface.co/celebibasar/DroidSenior-7B
 - Repositorio GGUF: https://huggingface.co/celebibasar/DroidSenior-7B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo profesor: Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8 (referenciado en la model card)

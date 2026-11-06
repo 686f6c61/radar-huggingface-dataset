@@ -82,8 +82,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (siddharthmb) | 3.596.141.824 | no disponible | kl_mean 0,1254 y top1_agreement 0,8719 frente a gemma-2-2b-it en LMSYS-Chat-1M | no disponible | Pesos en safetensors; 0 descargas y 0 likes |
-| google/gemma-2-2b (modelo base) | no disponible en la informacion proporcionada | no disponible | Referencia sobre la que se mide la divergencia | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| google/gemma-2-2b-it (modelo de referencia) | no disponible en la informacion proporcionada | no disponible | Objetivo de la aproximacion; se usa como referencia para KL y acuerdo top-1 | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| google/gemma-2-2b (modelo base) | no disponible en la informacion proporcionada | no disponible | Referencia sobre la que se mide la divergencia | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| google/gemma-2-2b-it (modelo de referencia) | no disponible en la informacion proporcionada | no disponible | Objetivo de la aproximacion; se usa como referencia para KL y acuerdo top-1 | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos publicados que permitan comparar este adaptador con otros esquemas de adaptacion dispersa, SAEs o transcoders sobre Gemma 2 en terminos de paridad de rendimiento en tareas estandar.
 
@@ -103,7 +103,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10d_tc8192_decb_l1w0.001_auxk512_fp32_tarbb_lb2_ln1_sl17824146
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10d_tc8192_decb_l1w0.001_auxk512_fp32_tarbb_lb2_ln1_sl17824146
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Tokenizer: https://huggingface.co/google/gemma-2-2b-it

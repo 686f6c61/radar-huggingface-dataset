@@ -1,7 +1,7 @@
 # OpenFlowLM/Gemma4-E2B-IT-NPU2
 
 ## Resumen
-Gemma4-E2B-IT-NPU2 es una distribución del modelo Gemma 4 E2B instruction-tuned, publicado por el usuario OpenFlowLM en HuggingFace. Se trata de una variante optimizada para aceleradores NPU (de ahí el sufijo "NPU2"), empaquetada en formato `transformers` con pesos compatibles con la librería estándar. El modelo base Gemma 4 pertenece a Google DeepMind y forma parte de la familia Gemma 4, que incluye los tamaños E2B, E4B, 26B A4B y 31B, tanto en variantes densas como Mixture-of-Experts (MoE).
+Gemma4-E2B-IT-NPU2 es una distribución del modelo Gemma 4 E2B instruction-tuned, publicado por el usuario OpenFlowLM en Hugging Face. Se trata de una variante optimizada para aceleradores NPU (de ahí el sufijo "NPU2"), empaquetada en formato `transformers` con pesos compatibles con la librería estándar. El modelo base Gemma 4 pertenece a Google DeepMind y forma parte de la familia Gemma 4, que incluye los tamaños E2B, E4B, 26B A4B y 31B, tanto en variantes densas como Mixture-of-Experts (MoE).
 
 El E2B es el modelo más pequeño de la familia. Según la model card, cuenta con 2.3B parámetros efectivos (5.1B contando los embeddings Per-Layer), 35 capas, ventana deslizante de 512 tokens y una longitud de contexto de 128.000 tokens. Incorpora soporte multimodal de texto, imagen y audio, con un codificador de visión de ~150M de parámetros y uno de audio de ~300M. Está diseñado para ejecución en dispositivos de borde, portátiles y teléfonos de gama alta.
 
@@ -15,7 +15,7 @@ La relevancia de esta ficha radica en que se distribuye bajo licencia Apache 2.0
 | Parametros activos | no aplica (variante densa, no MoE) |
 | Longitud de contexto | 128.000 tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | más de 140 (según la familia Gemma 4); los metadatos de HuggingFace no los detallan |
+| Idiomas soportados | más de 140 (según la familia Gemma 4); los metadatos de Hugging Face no los detallan |
 | Licencia | Apache 2.0 (con enlace a la licencia Gemma 4) |
 | Formato de pesos | safetensors (librería `transformers`) |
 
@@ -67,10 +67,10 @@ No se dispone de otros resultados de benchmarks específicos para la variante NP
 ## Comparativa con modelos similares
 | Modelo | Parametros totales | Contexto | MMLU Pro | LiveCodeBench v6 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gemma 4 E2B (esta ficha) | 2.3B efectivos (5.1B) | 128K | 60.0% | 44.0% | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B | 4.5B efectivos (8B) | 128K | 69.4% | 52.0% | Apache 2.0 | HuggingFace |
-| Gemma 4 26B A4B (MoE) | 25.2B (3.8B activos) | 256K | 82.6% | 77.1% | Apache 2.0 | HuggingFace |
-| Gemma 3 27B (no think) | 27B aprox. | no disponible | 67.6% | 29.1% | no disponible | HuggingFace |
+| Gemma 4 E2B (esta ficha) | 2.3B efectivos (5.1B) | 128K | 60.0% | 44.0% | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B | 4.5B efectivos (8B) | 128K | 69.4% | 52.0% | Apache 2.0 | Hugging Face |
+| Gemma 4 26B A4B (MoE) | 25.2B (3.8B activos) | 256K | 82.6% | 77.1% | Apache 2.0 | Hugging Face |
+| Gemma 3 27B (no think) | 27B aprox. | no disponible | 67.6% | 29.1% | no disponible | Hugging Face |
 
 El E2B es la opción más ligera de la familia y prioriza la ejecución en dispositivo frente al rendimiento bruto. Frente al Gemma 3 27B, el E2B rinde mejor en código (44,0% vs 29,1%) y ligeramente peor en MMLU Pro (60,0% vs 67,6%), pese a ser mucho más pequeño.
 
@@ -86,8 +86,8 @@ El E2B es la opción más ligera de la familia y prioriza la ejecución en dispo
 - Los datos de benchmarks corresponden a la familia Gemma 4, no necesariamente a esta variante NPU2 concreta.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo: https://huggingface.co/OpenFlowLM/Gemma4-E2B-IT-NPU2
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Repositorio Hugging Face del modelo: https://huggingface.co/OpenFlowLM/Gemma4-E2B-IT-NPU2
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial de Gemma: https://ai.google.dev/gemma/docs/core

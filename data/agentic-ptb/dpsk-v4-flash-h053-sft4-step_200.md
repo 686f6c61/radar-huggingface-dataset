@@ -68,5 +68,5 @@ La comparativa directa es limitada porque este checkpoint es un artefacto interm
 - **Procedencia de recuperacion**: el checkpoint fue recuperado de una copia de seguridad tras ser podado de un PVC, lo que podria implicar problemas de integridad de los pesos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h053.sft4.step_200
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h053.sft4.step_200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

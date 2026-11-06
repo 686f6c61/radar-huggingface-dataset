@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LhLuke/robot_models es un repositorio publicado en HuggingFace por el usuario LhLuke. La model card solo contiene la licencia MIT, sin documentacion tecnica adicional. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que podria tratarse de un conjunto de pesos de un modelo pequeno o de adaptadores, aunque no hay informacion que confirme esta interpretacion. Ha registrado 0 descargas y 1 like desde su creacion. No se dispone de datos sobre arquitectura, parametros, contexto ni idiomas, por lo que el modelo no puede evaluarse tecnicamente con la informacion proporcionada.
+LhLuke/robot_models es un repositorio publicado en Hugging Face por el usuario LhLuke. La model card solo contiene la licencia MIT, sin documentacion tecnica adicional. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que podria tratarse de un conjunto de pesos de un modelo pequeno o de adaptadores, aunque no hay informacion que confirme esta interpretacion. Ha registrado 0 descargas y 1 like desde su creacion. No se dispone de datos sobre arquitectura, parametros, contexto ni idiomas, por lo que el modelo no puede evaluarse tecnicamente con la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -60,11 +60,11 @@ Al no conocerse el tamano del modelo ni la arquitectura, no es posible estimar n
 
 ## Comparativa con modelos similares
 
-No se han identificado modelos comparables de la misma categoria con la informacion proporcionada. La busqueda web devolvio resultados sobre LeRobot (una coleccion de modelos para robotica de HuggingFace) y sobre el modelo LUKE de entity-aware self-attention, pero no hay evidencia de que tengan relacion directa con LhLuke/robot_models. Por tanto, no se puede realizar una comparativa fiable.
+No se han identificado modelos comparables de la misma categoria con la informacion proporcionada. La busqueda web devolvio resultados sobre LeRobot (una coleccion de modelos para robotica de Hugging Face) y sobre el modelo LUKE de entity-aware self-attention, pero no hay evidencia de que tengan relacion directa con LhLuke/robot_models. Por tanto, no se puede realizar una comparativa fiable.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LhLuke/robot_models | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| LhLuke/robot_models | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han identificado modelos comparables de la misma categoria con la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LhLuke/robot_models
+- Hugging Face: https://huggingface.co/LhLuke/robot_models
 - LeRobot (coleccion de modelos de robotica, no confirmado como relacionado): https://huggingface.co/lerobot/models
 - Documentacion de LUKE (modelo con entity-aware self-attention, no confirmado como relacionado): https://huggingface.co/docs/transformers/model_doc/luke
 - Ayuda de Gmail (resultado de busqueda, sin relacion): https://support.google.com/mail/answer/56256?hl=es

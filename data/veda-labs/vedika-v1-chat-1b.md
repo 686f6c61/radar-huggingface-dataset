@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Vedika V1 Chat 1B | 1,1B | no disponible | Apache 2.0 | en | HuggingFace (transformers) |
-| TinyLlama 1.1B Chat | 1,1B | 2.048 tokens | Apache 2.0 | en (principalmente) | HuggingFace, GGUF, Ollama |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | multilingüe | HuggingFace, GGUF, vLLM |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | en (principalmente) | HuggingFace, GGUF, Ollama |
+| Vedika V1 Chat 1B | 1,1B | no disponible | Apache 2.0 | en | Hugging Face (transformers) |
+| TinyLlama 1.1B Chat | 1,1B | 2.048 tokens | Apache 2.0 | en (principalmente) | Hugging Face, GGUF, Ollama |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | multilingüe | Hugging Face, GGUF, vLLM |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | en (principalmente) | Hugging Face, GGUF, Ollama |
 
 La comparativa se basa en características públicas de modelos de tamaño similar; no se dispone de datos de rendimiento de Vedika V1 Chat 1B para comparar métricas. Los datos de los modelos alternativos corresponden a sus model cards públicas.
 
@@ -84,6 +84,6 @@ La comparativa se basa en características públicas de modelos de tamaño simil
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Veda-Labs/vedika-v1-chat-1b
-- Perfil del autor en HuggingFace: https://huggingface.co/Veda-Labs
+- Hugging Face: https://huggingface.co/Veda-Labs/vedika-v1-chat-1b
+- Perfil del autor en Hugging Face: https://huggingface.co/Veda-Labs
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

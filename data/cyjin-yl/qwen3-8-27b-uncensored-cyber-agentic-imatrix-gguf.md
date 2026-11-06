@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Se reco
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyjin-yl/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cyjin-yl/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF
 - Modelo base (abliterado): https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página de Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Página de Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficha de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Página de LM Studio: https://lmstudio.ai/models/qwen3.8

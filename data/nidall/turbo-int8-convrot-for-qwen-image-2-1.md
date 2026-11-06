@@ -67,8 +67,8 @@ La unica evidencia funcional reportada es un unico resultado de texto-a-imagen a
 
 | Modelo | Naturaleza | Precision | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NidAll/Turbo-INT8-ConvRot-for-Qwen-Image-2.1 | Cuantizacion INT8 ConvRot del transformer | INT8 tensorwise (grupo 256) | 7,3 GB | qwen-research | HuggingFace, solo transformer, para ComfyUI |
-| Qwen/Qwen-Image-2.1-Turbo (modelo base) | Modelo original | BF16 (dos shards del transformer) | no disponible | Qwen Research License | HuggingFace, checkpoint oficial completo |
+| NidAll/Turbo-INT8-ConvRot-for-Qwen-Image-2.1 | Cuantizacion INT8 ConvRot del transformer | INT8 tensorwise (grupo 256) | 7,3 GB | qwen-research | Hugging Face, solo transformer, para ComfyUI |
+| Qwen/Qwen-Image-2.1-Turbo (modelo base) | Modelo original | BF16 (dos shards del transformer) | no disponible | Qwen Research License | Hugging Face, checkpoint oficial completo |
 | Otras cuantizaciones de Qwen-Image-2.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/NidAll/Turbo-INT8-ConvRot-for-Qwen-Image-2.1
+- Hugging Face del modelo: https://huggingface.co/NidAll/Turbo-INT8-ConvRot-for-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Revision de origen del base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/0da70ce2c362350e8a43fdd163a371783fe6228a/model_index.json
 - Configuracion del planificador Turbo: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/0da70ce2c362350e8a43fdd163a371783fe6228a/scheduler/scheduler_config.json

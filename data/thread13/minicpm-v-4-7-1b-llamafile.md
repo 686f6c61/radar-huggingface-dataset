@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thread13/MiniCPM-V-4.7-1B-llamafile
+- Repositorio Hugging Face: https://huggingface.co/thread13/MiniCPM-V-4.7-1B-llamafile
 - Modelo base en GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf
 - Documentación de llamafile (quickstart): https://github.com/mozilla-ai/llamafile/blob/main/docs/quickstart.md
 - Guía de ejecución de llamafile: https://github.com/mozilla-ai/llamafile/blob/main/docs/running_llamafile.md

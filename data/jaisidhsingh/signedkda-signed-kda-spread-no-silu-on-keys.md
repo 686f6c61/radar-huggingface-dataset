@@ -1,7 +1,7 @@
 # jaisidhsingh/SignedKDA-signed-kda-spread-no-silu-on-keys
 
 ## Resumen
-El modelo `jaisidhsingh/SignedKDA-signed-kda-spread-no-silu-on-keys` es un checkpoint de 344 millones de parámetros publicado en HuggingFace por el usuario jaisidhsingh. El nombre del proyecto sugiere una variante de la arquitectura KDA (Kimi Delta Attention), posiblemente con una modificación en las claves de atención (sin activación SiLU) y una distribución "spread". Sin embargo, no existe documentación oficial, descripción, licencia ni idiomas declarados en el repositorio, por lo que la información pública es muy limitada. El modelo se distribuye en formato safetensors y parece estar orientado a experimentación técnica, probablemente relacionado con el desarrollo de kernels de atención de alto rendimiento, aunque no se puede confirmar sin más detalles.
+El modelo `jaisidhsingh/SignedKDA-signed-kda-spread-no-silu-on-keys` es un checkpoint de 344 millones de parámetros publicado en Hugging Face por el usuario jaisidhsingh. El nombre del proyecto sugiere una variante de la arquitectura KDA (Kimi Delta Attention), posiblemente con una modificación en las claves de atención (sin activación SiLU) y una distribución "spread". Sin embargo, no existe documentación oficial, descripción, licencia ni idiomas declarados en el repositorio, por lo que la información pública es muy limitada. El modelo se distribuye en formato safetensors y parece estar orientado a experimentación técnica, probablemente relacionado con el desarrollo de kernels de atención de alto rendimiento, aunque no se puede confirmar sin más detalles.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |

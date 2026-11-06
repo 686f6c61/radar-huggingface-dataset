@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparables publicados para `laya-burn-q8` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brishen/laya-burn-q8
+- Modelo en Hugging Face: https://huggingface.co/brishen/laya-burn-q8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Burn: https://burn.dev
 - `taconite-laya-web` (navegador): https://github.com/Brishen/taconite/tree/main/taconite-laya-web

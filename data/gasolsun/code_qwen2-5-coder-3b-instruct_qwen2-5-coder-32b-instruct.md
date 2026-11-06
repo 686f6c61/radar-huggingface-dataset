@@ -97,7 +97,7 @@ Nota: las cifras de rendimiento de los modelos comparados no se incluyen porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Code_Qwen2.5-Coder-3B-Instruct_Qwen2.5-Coder-32B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Code_Qwen2.5-Coder-3B-Instruct_Qwen2.5-Coder-32B-Instruct
 - Dataset del banco de preguntas: https://huggingface.co/datasets/gasolsun/Code_Qwen2.5-Coder-3B-Instruct_Qwen2.5-Coder-32B-Instruct
 - Modelo base (estudiante): https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct

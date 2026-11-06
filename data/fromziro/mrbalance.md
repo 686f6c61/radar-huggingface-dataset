@@ -92,11 +92,11 @@ No disponible. No se han encontrado modelos comparables en la información propo
 - La inferencia requiere el entorno MuJoCo y los scripts proporcionados; no se puede ejecutar como un modelo independiente sin el simulador.
 - El modelo fue creado en 2026 y no se han publicado análisis de sesgos o riesgos de alucinación (conceptos no aplicables a un agente RL de control físico).
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en aplicaciones del mundo real; cualquier despliegue en hardware físico requeriría validación adicional.
-- El repositorio de HuggingFace contiene 5,05 MB de archivos, incluyendo el vídeo de demostración y los scripts de inferencia, pero no se documentan los detalles del entorno de simulación (masas, fricciones, etc.) más allá de los objetos listados.
+- El repositorio de Hugging Face contiene 5,05 MB de archivos, incluyendo el vídeo de demostración y los scripts de inferencia, pero no se documentan los detalles del entorno de simulación (masas, fricciones, etc.) más allá de los objetos listados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fromziro/MrBalance
+- Modelo en Hugging Face: https://huggingface.co/fromziro/MrBalance
 - Vídeo de demostración (en el repositorio del modelo): https://huggingface.co/fromziro/MrBalance/resolve/main/assets/video.mp4
 - Repositorio de archivos: https://huggingface.co/fromziro/MrBalance/tree/main
 - Script de inferencia y entorno (descargables desde el repositorio): `inference.py` y `balance_plate_rl.py`

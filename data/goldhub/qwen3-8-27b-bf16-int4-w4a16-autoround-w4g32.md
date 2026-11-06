@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para l
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base, BF16) | 27B | 256K | Apache 2.0 | No cuantizado | HuggingFace |
-| goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound | 27B | 256K | Apache 2.0 | INT4 W4A16 (preserva capas criticas en FP16) | HuggingFace |
+| Qwen3.8-27B (base, BF16) | 27B | 256K | Apache 2.0 | No cuantizado | Hugging Face |
+| goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound | 27B | 256K | Apache 2.0 | INT4 W4A16 (preserva capas criticas en FP16) | Hugging Face |
 | Qwen3.8-27B cuantizado estandar INT4 (hipotetico) | 27B | 256K | Apache 2.0 | INT4 (sin preservar capas) | No disponible |
 
 La diferencia principal entre el cuantizado de goldhub y un INT4 estandar es el tamano del repositorio (28.3 GB vs ~15-18 GB) y la calidad en tareas multimodales y contexto largo. El cuantizado de goldhub mantiene la capacidad de procesamiento de video e imagen y la atencion lineal en FP16, mientras que un cuantizado estandar podria degradar estas capacidades. En comparacion con otros modelos de 27B multimodales (como Qwen2.5-VL-27B), Qwen3.8-27B ofrece contexto mayor (256K vs 128K) y arquitectura hibrida mas eficiente.
@@ -88,11 +88,11 @@ La diferencia principal entre el cuantizado de goldhub y un INT4 estandar es el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goldhub/Qwen3.8-27B-BF16-INT4-W4A16-AutoRound-W4G32
+- Hugging Face: https://huggingface.co/goldhub/Qwen3.8-27B-BF16-INT4-W4A16-AutoRound-W4G32
 - Repositorio GitHub (instalador one-click): https://github.com/qwen3-8-27b/qwen3-8-27b
 - Guia de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Guia completa de Qwen3.8-27B (lovableapp.org): https://lovableapp.org/blog/qwen3-8-27b
-- Discusion del modelo en HuggingFace: https://huggingface.co/goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound/discussions/1
+- Discusion del modelo en Hugging Face: https://huggingface.co/goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound/discussions/1
 
 ---
 

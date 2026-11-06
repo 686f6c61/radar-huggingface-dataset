@@ -89,13 +89,13 @@ La principal diferencia con las alternativas es que este repositorio incluye exp
 
 ## Enlaces
 
-- [Repositorio HuggingFace: jax-image-tools/sam3-video-onnx](https://huggingface.co/jax-image-tools/sam3-video-onnx)
+- [Repositorio Hugging Face: jax-image-tools/sam3-video-onnx](https://huggingface.co/jax-image-tools/sam3-video-onnx)
 - [Modelo base: facebook/sam3](https://huggingface.co/facebook/sam3)
 - [Licencia SAM (GitHub)](https://github.com/facebookresearch/sam3/blob/main/LICENSE)
 - [Herramientas de exportación: browser-onnx-tools (GitHub)](https://github.com/TheJacksonLaboratory/browser-onnx-tools)
 - [Alternativa ligera: jax-image-tools/edetam-video-onnx](https://huggingface.co/jax-image-tools/edetam-video-onnx)
 - [wkentaro/sam3-onnx (GitHub)](https://github.com/wkentaro/sam3-onnx)
 - [pagarcia/sam3-onnx-cpp (GitHub)](https://github.com/pagarcia/sam3-onnx-cpp)
-- [onnx-community/sam3-tracker-ONNX (HuggingFace)](https://huggingface.co/onnx-community/sam3-tracker-ONNX)
+- [onnx-community/sam3-tracker-ONNX (Hugging Face)](https://huggingface.co/onnx-community/sam3-tracker-ONNX)
 - [Página de investigación de SAM 3 (Meta AI)](https://ai.meta.com/research/sam3/)
 - [Paper de SAM 3 en arXiv](https://arxiv.org/abs/2511.16719)

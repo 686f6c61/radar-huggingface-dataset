@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`paripatel/project-classification-2024` es un repositorio de codigo y checkpoint de inicializacion publicado por el usuario paripatel en HuggingFace, orientado a la clasificacion de imagenes mediante la arquitectura MobileViT en su variante xlarge. No se trata de un modelo entrenado ni evaluado: la propia model card aclara que el fichero `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni una referencia de rendimiento. El repositorio incluye ademas `predict.py` (artefacto principal con ejemplo ejecutable), `config.json` (arquitectura), `training_args.json` (receta por defecto) y el README.
+`paripatel/project-classification-2024` es un repositorio de codigo y checkpoint de inicializacion publicado por el usuario paripatel en Hugging Face, orientado a la clasificacion de imagenes mediante la arquitectura MobileViT en su variante xlarge. No se trata de un modelo entrenado ni evaluado: la propia model card aclara que el fichero `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni una referencia de rendimiento. El repositorio incluye ademas `predict.py` (artefacto principal con ejemplo ejecutable), `config.json` (arquitectura), `training_args.json` (receta por defecto) y el README.
 
 El interes actual de este repositorio es metodologico mas que de rendimiento: documenta de forma transparente una implementacion personalizada de MobileViT con receta de entrenamiento declarada (optimizador RMSprop con scheduler OneCycle) y evita explicitamente cualquier afirmacion de benchmark. Esto lo convierte en un punto de partida reproducible para experimentos controlados, siempre que el usuario entrene y evalue el modelo por su cuenta con datos etiquetados propios.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paripatel/project-classification-2024 | 49.600 (segun safetensors; escala "xlarge" declarada) | no aplica | sin benchmark declarado | MIT | HuggingFace, 0 descargas |
+| paripatel/project-classification-2024 | 49.600 (segun safetensors; escala "xlarge" declarada) | no aplica | sin benchmark declarado | MIT | Hugging Face, 0 descargas |
 | MobileViT (implementacion de referencia de Apple) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | MobileNetV3 | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | EfficientNet-B0 | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -98,7 +98,7 @@ Nota: las cifras de los modelos alternativos no se incluyen porque no forman par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paripatel/project-classification-2024
+- Hugging Face: https://huggingface.co/paripatel/project-classification-2024
 - Repositorio de archivos incluidos: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron fuentes tecnicas relevantes sobre el modelo; los resultados obtenidos correspondian a sitios de casino sin relacion con el repositorio, por lo que se descartan.

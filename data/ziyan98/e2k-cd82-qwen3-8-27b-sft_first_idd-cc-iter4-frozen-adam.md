@@ -88,7 +88,7 @@ Lectura de los datos: la tasa de superación máxima es 0,031 (1 episodio de 32)
 | Modelo | Parámetros | Contexto | Rendimiento en ARC-AGI-3 `cd82-fb555c5d` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este checkpoint (`-frozen-adam`, iteración 4) | 27,78 B | no disponible | clear rate máximo 0,031 (1/32 episodios); retorno modelado máximo 0,252 | Apache-2.0 | 7 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de tensores, 1199) | no disponible | no disponible en esta información | no disponible en esta información | modelo público en HuggingFace |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de tensores, 1199) | no disponible | no disponible en esta información | no disponible en esta información | modelo público en Hugging Face |
 | Ejecución relanzada del mismo run (sin sufijo `-frozen-adam`) | 27,78 B | no disponible | no disponible | Apache-2.0 (según la serie) | publicada por el mismo autor, sin métricas en esta ficha |
 | Otros brazos del estudio E2K (act-ctrl, IDD) | no disponible | no disponible | no disponible | no disponible | mencionados en la model card |
 
@@ -110,7 +110,7 @@ La comparación con modelos de propósito general de tamaño similar no aporta a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter4-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter4-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de slime (stack de entrenamiento citado en la model card, sin enlace en la misma): https://github.com/THUDM/slime
 - Repositorio de Megatron-LM (stack de entrenamiento citado en la model card, sin enlace en la misma): https://github.com/NVIDIA/Megatron-LM

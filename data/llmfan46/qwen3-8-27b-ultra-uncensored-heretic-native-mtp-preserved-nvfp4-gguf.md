@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Enlaces
 
-- [Modelo en HuggingFace (este repo)](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-NVFP4-GGUF)
+- [Modelo en Hugging Face (este repo)](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-NVFP4-GGUF)
 - [Modelo base desensurado (safetensors)](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Proyecto Heretic](https://heretic-project.org/)

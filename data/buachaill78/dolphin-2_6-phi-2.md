@@ -6,7 +6,7 @@ Dolphin 2.6 Phi-2 es un ajuste fino (fine-tune) del modelo Phi-2 de Microsoft, d
 
 Tecnicamente se trata de un transformer decoder-only denso de 2.783.124.480 parametros, con el mismo tokenizador y la misma ventana de contexto que Phi-2 (2.048 tokens). El ajuste se realizo con qLoRA y Axolotl durante 2 dias y 3 epocas sobre 4 GPU A100, partiendo de una mezcla de datasets de instrucciones: dolphin, airoboros-2.2.1, dolphin-coder, openhermes, Magicoder-OSS-Instruct-75K, Magicoder-Evol-Instruct-110K y Capybara. La version 2.6 corrige un problema de configuracion de entrenamiento respecto a 2.5, recupera datos de empatia basados en Samantha y sustituye Synthia y Pure-Dove por Capybara.
 
-La relevancia de esta ficha concreta es limitada: el repositorio `buachaill78/dolphin-2_6-phi-2` es una republicacion del modelo original, con 0 descargas y 0 likes en el momento de la consulta, y con metadatos de licencia contradictorios entre la ficha de HuggingFace y la propia model card. Se documenta aqui como referencia tecnica del modelo subyacente, pero para uso en produccion conviene acudir al repositorio original de Cognitive Computations.
+La relevancia de esta ficha concreta es limitada: el repositorio `buachaill78/dolphin-2_6-phi-2` es una republicacion del modelo original, con 0 descargas y 0 likes en el momento de la consulta, y con metadatos de licencia contradictorios entre la ficha de Hugging Face y la propia model card. Se documenta aqui como referencia tecnica del modelo subyacente, pero para uso en produccion conviene acudir al repositorio original de Cognitive Computations.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ La relevancia de esta ficha concreta es limitada: el repositorio `buachaill78/do
 | Longitud de contexto | 2.048 tokens segun el modelo base Phi-2; no se explicita en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible en el repositorio; los pesos se publican sin cuantizar. El entrenamiento se hizo con qLoRA, pero eso no afecta al formato de pesos publicado |
 | Idiomas soportados | en (ingles) |
-| Licencia | Contradictoria: la ficha de HuggingFace indica `microsoft-research-license`, mientras que la model card declara `license: mit` y a la vez `license_name: microsoft-research-license` |
+| Licencia | Contradictoria: la ficha de Hugging Face indica `microsoft-research-license`, mientras que la model card declara `license: mit` y a la vez `license_name: microsoft-research-license` |
 | Formato de pesos | safetensors y pytorch (bin); tamano del repositorio 11,1 GB |
 | Formato de prompt | ChatML (`<|im_start|>system ... <|im_end|>`) |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Phi-2: un transformer decoder-only denso de 2,78 mil millones de parametros, sin atencion lineal, sin mezcla de expertos y sin mecanismos de estado recurrente. Microsoft entreno Phi-2 sobre un corpus filtrado de libros de texto y datos sinteticos orientados a razonamiento, y doto al modelo de capacidades notables de codigo y matematicas para su tamano. Dolphin 2.6 no modifica la arquitectura ni el tokenizador: solo sustituye la capa de comportamiento mediante un ajuste supervisado sobre instrucciones. El modelo exige cargar codigo remoto de HuggingFace, lo que implica ejecutar codigo del repositorio al instanciar el modelo.
+La arquitectura es la de Phi-2: un transformer decoder-only denso de 2,78 mil millones de parametros, sin atencion lineal, sin mezcla de expertos y sin mecanismos de estado recurrente. Microsoft entreno Phi-2 sobre un corpus filtrado de libros de texto y datos sinteticos orientados a razonamiento, y doto al modelo de capacidades notables de codigo y matematicas para su tamano. Dolphin 2.6 no modifica la arquitectura ni el tokenizador: solo sustituye la capa de comportamiento mediante un ajuste supervisado sobre instrucciones. El modelo exige cargar codigo remoto de Hugging Face, lo que implica ejecutar codigo del repositorio al instanciar el modelo.
 
 El entrenamiento se realizo con qLoRA y el framework Axolotl, sobre 4 GPU A100 y durante 2 dias, con 3 epocas sobre la mezcla de datasets ya citada (dolphin, airoboros-2.2.1, dolphin-coder, openhermes, Magicoder-OSS-Instruct-75K, Magicoder-Evol-Instruct-110K y Capybara). No se menciona en la informacion disponible el uso de RLHF, DPO u otra fase de preferencias: se trata de un SFT sobre datos filtrados para eliminar alineamiento y sesgo. La model card atribuye la mejora de calidad de la version 2.6 principalmente a la correccion de un problema de configuracion de entrenamiento, no a cambios de datos a gran escala.
 
@@ -93,14 +93,14 @@ La comparativa se limita a parametros, contexto y licencia, que son datos verifi
 - Riesgo de alucinacion relevante para cualquier uso en produccion, especialmente en dominios especializados y en tareas que exigen precision factual.
 - Ventana de contexto de solo 2.048 tokens: inadecuada para documentos largos, conversaciones extensas o analisis de repositorios de codigo completos.
 - Solo ingles declarado. No debe asumirse un rendimiento aceptable en castellano u otros idiomas.
-- Metadatos de licencia contradictorios: la ficha de HuggingFace declara `microsoft-research-license`, la model card declara MIT en el encabezado y `license_name: microsoft-research-license` en los campos. Antes de un uso comercial es imprescindible resolver esta ambiguedad con el autor y revisar el fichero LICENSE, ya que la licencia de investigacion de Microsoft impone restricciones que la MIT no tiene.
+- Metadatos de licencia contradictorios: la ficha de Hugging Face declara `microsoft-research-license`, la model card declara MIT en el encabezado y `license_name: microsoft-research-license` en los campos. Antes de un uso comercial es imprescindible resolver esta ambiguedad con el autor y revisar el fichero LICENSE, ya que la licencia de investigacion de Microsoft impone restricciones que la MIT no tiene.
 - `trust_remote_code=True` es obligatorio, lo que implica ejecutar codigo del repositorio: hay que auditar ese codigo antes de cargarlo en un entorno de produccion.
 - El repositorio consultado tiene 0 descargas y 0 likes y no es el repositorio original de Eric Hartford, por lo que la procedencia de los pesos y su integridad no estan garantizadas por la fuente original.
 - No se documenta soporte de tool calling ni de agentes, por lo que no es una eleccion adecuada para pipelines que dependan de llamadas a funciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/buachaill78/dolphin-2_6-phi-2
+- Modelo en Hugging Face: https://huggingface.co/buachaill78/dolphin-2_6-phi-2
 - Modelo base Phi-2 de Microsoft: https://huggingface.co/microsoft/phi-2
 - Blog del autor sobre modelos sin censura: https://erichartford.com/uncensored-models
 - Discord de Cognitive Computations: https://discord.gg/tCMkMDDHwm

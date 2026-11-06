@@ -91,7 +91,7 @@ A τ = 0,90, la probabilidad de falso positivo por par (ventana no relacionada, 
 | Hard negatives marcados | 4,4 % | 3,7 % |
 | Robustez a reverb / velocidad / paso bajo | 99 / 100 / 88 | 70 / 52 / 21 |
 | Licencia | Apache 2.0 | no disponible (checkpoint publico) |
-| Disponibilidad | Pesos y codigo en HuggingFace | Checkpoint publico en GitHub (GraFP) |
+| Disponibilidad | Pesos y codigo en Hugging Face | Checkpoint publico en GitHub (GraFP) |
 
 No se conocen otras alternativas comparables con datos publicados en la informacion disponible.
 
@@ -108,5 +108,5 @@ No se conocen otras alternativas comparables con datos publicados en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/neural-audio-fingerprint
+- Modelo en Hugging Face: https://huggingface.co/laion/neural-audio-fingerprint
 - GraFPrint (baseline comparado, checkpoint y codigo): https://github.com/chymaera96/GraFP

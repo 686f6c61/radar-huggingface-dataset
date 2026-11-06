@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wxsys/code-oracle-laya-421m | 421M (variante de 164M en el mismo repo) | No publicado; DSL de entrenamiento < 400 tokens | Verificacion de parches: veredicto binario + riesgo calibrado | Apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| convaiinnovations/laya | 421M (checkpoint en ingles) y 322M (multilingue) | No disponible en la informacion recogida | Motor de decisiones generico: eleccion tipada, score y si/no en un forward pass, mas de 100 idiomas | Apache-2.0 | HuggingFace, con SDK propio |
-| answerdotai/ModernBERT-large | 395M | 8.192 tokens | Encoder generalista de proposito multiple | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| microsoft/graphcodebert-base | 125M | 512 tokens | Representacion de codigo entrenada con grafos de datos y estructura | MIT | HuggingFace |
+| wxsys/code-oracle-laya-421m | 421M (variante de 164M en el mismo repo) | No publicado; DSL de entrenamiento < 400 tokens | Verificacion de parches: veredicto binario + riesgo calibrado | Apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| convaiinnovations/laya | 421M (checkpoint en ingles) y 322M (multilingue) | No disponible en la informacion recogida | Motor de decisiones generico: eleccion tipada, score y si/no en un forward pass, mas de 100 idiomas | Apache-2.0 | Hugging Face, con SDK propio |
+| answerdotai/ModernBERT-large | 395M | 8.192 tokens | Encoder generalista de proposito multiple | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| microsoft/graphcodebert-base | 125M | 512 tokens | Representacion de codigo entrenada con grafos de datos y estructura | MIT | Hugging Face |
 
 La diferencia clave frente a los dos ultimos es la especializacion: Code Oracle Laya no es un encoder generalista ni un modelo de representacion de codigo, sino una cabeza de decision afinada para un formato de entrada concreto y acoplada a puertas simbolicas externas, lo que limita su reutilizacion fuera de ese pipeline.
 
@@ -91,7 +91,7 @@ La diferencia clave frente a los dos ultimos es la especializacion: Code Oracle 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wxsys/code-oracle-laya-421m
+- Modelo en Hugging Face: https://huggingface.co/wxsys/code-oracle-laya-421m
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Sitio del proyecto Laya: https://laya.convaiinnovations.com/
 - Repositorio GitHub de Laya: https://github.com/NandhaKishorM/laya

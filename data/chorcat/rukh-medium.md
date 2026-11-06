@@ -102,7 +102,7 @@ No se han publicado en la informacion disponible datos comparativos contra otros
 
 | Modelo | Parametros | Contexto | Elo estimado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chorcat/rukh-medium | 115.120.128 | 200 movimientos | 1091 (IC 95 % 990-1194) | apache-2.0 | safetensors y ONNX en HuggingFace |
+| chorcat/rukh-medium | 115.120.128 | 200 movimientos | 1091 (IC 95 % 990-1194) | apache-2.0 | safetensors y ONNX en Hugging Face |
 | Trabajo de referencia citado (sin identificar) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -121,7 +121,7 @@ No se han publicado en la informacion disponible datos comparativos contra otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chorcat/rukh-medium
+- Modelo en Hugging Face: https://huggingface.co/chorcat/rukh-medium
 - Repositorio del proyecto Rukh: https://github.com/borja-glez/rukh
 - Demo interactiva (etapa medium-greedy): https://rukh.borjaglez.com/?stage=medium-greedy
 - Documentacion del proceso de construccion: https://lab.rukh.borjaglez.com

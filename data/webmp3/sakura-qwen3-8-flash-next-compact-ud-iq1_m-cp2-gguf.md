@@ -94,7 +94,7 @@ La comparación disponible es intrafamiliar: las cuatro variantes comparten peso
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-IQ1_M-CP2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-IQ1_M-CP2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Backbone cuantizado (Unsloth), revisión `766911a6b7369840a91dbcd95f9f997acaab6cd6`: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Paquete Sakura K512 CP2, origen de la tabla CP2 y del runtime: https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-47.6GiB-K512-CP2-v1-GGUF

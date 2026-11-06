@@ -66,10 +66,10 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/JJarvinen/chatterbox-finnish-nano-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/JJarvinen/chatterbox-finnish-nano-GGUF
 - Modelo safetensors original: https://huggingface.co/JJarvinen/chatterbox-finnish-nano
 - Repositorio fuente y runtime helper: https://github.com/jltjarvinen/chatterbox-finnish-nano
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
 - Companion S3Gen (modelo de codec): https://huggingface.co/cstr/chatterbox-turbo-GGUF
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/JJarvinen/chatterbox-finnish-nano
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/JJarvinen/chatterbox-finnish-nano
 - Proyecto Chatterbox original de Resemble AI: https://github.com/resemble-ai/chatterbox

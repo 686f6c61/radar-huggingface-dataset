@@ -92,7 +92,7 @@ Nota: los valores de los modelos de comparacion son aproximados y pueden variar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MBZUAI/Omni-Embed-Mini-0.9B-onnx
+- Repositorio en Hugging Face: https://huggingface.co/MBZUAI/Omni-Embed-Mini-0.9B-onnx
 - Pagina del proyecto: https://omniembed.cvmbzuai.com/
 - Demo en vivo: https://demo-omniembed.cvmbzuai.com/
 - Articulo asociado: "Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation", 2026, referencia bibliografica incluida en la model card; autor y venue pendientes de confirmacion.

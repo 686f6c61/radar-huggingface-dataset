@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por fpadovani, investigador asociado a la Universidad de Groningen (según el enlace de Weights & Biases). Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con 86,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace. El nombre sugiere que está orientado al neerlandés (código ISO `nld`) y que incorpora un vocabulario específico ("newlexicon") con distribución Zipf, probablemente como parte de un estudio sobre el impacto del vocabulario en modelos de lenguaje para lenguas de baja representación.
+El modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por fpadovani, investigador asociado a la Universidad de Groningen (según el enlace de Weights & Biases). Se trata de un modelo de generación de texto basado en la arquitectura GPT-2, con 86,7 millones de parámetros, entrenado mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face. El nombre sugiere que está orientado al neerlandés (código ISO `nld`) y que incorpora un vocabulario específico ("newlexicon") con distribución Zipf, probablemente como parte de un estudio sobre el impacto del vocabulario en modelos de lenguaje para lenguas de baja representación.
 
 Este modelo es relevante porque forma parte de una línea de investigación sobre adaptación de modelos pequeños a idiomas con pocos recursos, un área activa en el campo del procesamiento del lenguaje natural. Al ser un modelo de solo 86,7 millones de parámetros, resulta extremadamente ligero y puede ejecutarse en hardware modesto, lo que lo hace útil para experimentos académicos y prototipos. Sin embargo, no se han publicado resultados de benchmarks ni detalles sobre el conjunto de datos de entrenamiento, por lo que su rendimiento real no está documentado.
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455 | 86,7M | no disponible | no disponible | HuggingFace |
-| goldfish-models/nld_latn_100mb (base) | ~86M (estimado) | no disponible | no disponible | HuggingFace |
-| fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455 | 86,5M (según LLM Explorer) | no disponible | no disponible | HuggingFace |
+| fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455 | 86,7M | no disponible | no disponible | Hugging Face |
+| goldfish-models/nld_latn_100mb (base) | ~86M (estimado) | no disponible | no disponible | Hugging Face |
+| fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455 | 86,5M (según LLM Explorer) | no disponible | no disponible | Hugging Face |
 
 El modelo es un fine-tune del modelo base Goldfish, por lo que su comparación directa es con ese modelo. Las diferencias radican en el vocabulario y el entrenamiento adicional. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas. Otras variantes del mismo autor (soft0.99, inglés) existen, pero no se han documentado diferencias específicas.
 
@@ -74,7 +74,7 @@ El modelo es un fine-tune del modelo base Goldfish, por lo que su comparación d
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455)
+- [Hugging Face - fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455)
 - [LLM Explorer - fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455,3G80kkGxno2CMb40i4rX8A)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed455)
 - [Modelo base - goldfish-models/nld_latn_100mb](https://huggingface.co/goldfish-models/nld_latn_100mb)

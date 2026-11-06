@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Mistral-7B-v0.3 INT8 AutoRound) | 7B nominales | 32.768 | INT8 gs64 sim | Apache 2.0 | HuggingFace, 17 descargas |
-| mistralai/Mistral-7B-v0.3 (original) | 7B | 32.768 | bfloat16 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | bfloat16 | Apache 2.0 | HuggingFace, con tool calling |
-| Variantes GGUF de Mistral 7B (p. ej. Q4_K_M) | 7B | 32.768 | 4-8 bits | Apache 2.0 | HuggingFace, ecosistema llama.cpp |
+| Este artefacto (Mistral-7B-v0.3 INT8 AutoRound) | 7B nominales | 32.768 | INT8 gs64 sim | Apache 2.0 | Hugging Face, 17 descargas |
+| mistralai/Mistral-7B-v0.3 (original) | 7B | 32.768 | bfloat16 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | bfloat16 | Apache 2.0 | Hugging Face, con tool calling |
+| Variantes GGUF de Mistral 7B (p. ej. Q4_K_M) | 7B | 32.768 | 4-8 bits | Apache 2.0 | Hugging Face, ecosistema llama.cpp |
 
 La comparación relevante es con el modelo base sin cuantizar y con las variantes GGUF, que ofrecen mayor portabilidad entre plataformas. Este artefacto se distingue por su integración específica con el stack Intel (IPEX y OpenVINO) y por una receta de cuantización reproducible, pero carece de evaluación comparativa de calidad frente a esas alternativas.
 
@@ -85,7 +85,7 @@ La comparación relevante es con el modelo base sin cuantizar y con las variante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int8-gs64-sym
+- Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de reproducción: https://git.epicdynamic.com/auto-round-pipeline

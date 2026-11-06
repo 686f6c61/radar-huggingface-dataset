@@ -106,10 +106,10 @@ No se dispone de datos suficientes sobre otros modelos de la misma categoria (ra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Diplodocus-preview-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Diplodocus-preview-GGUF
 - Bundle MLX para Mac: https://huggingface.co/OsaurusAI/Diplodocus-preview-JANG_6M
 - Sitio de Osaurus: https://osaurus.ai/
 - Repositorio GitHub de Osaurus: https://github.com/osaurus-ai/osaurus
 - Organizacion en GitHub: https://github.com/osaurus-ai
 - PR de llama.cpp con soporte K2 Horizon: https://github.com/ggml-org/llama.cpp/pull/29535
-- Modelos con etiqueta osaurus en HuggingFace: https://huggingface.co/models?other=osaurus
+- Modelos con etiqueta osaurus en Hugging Face: https://huggingface.co/models?other=osaurus

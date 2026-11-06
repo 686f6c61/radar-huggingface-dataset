@@ -76,11 +76,11 @@ Nota: Gemma 2 27B tiene una ventana de contexto mucho menor (8K) y una licencia 
 - Cuantizacion: la cuantizacion agresiva puede degradar la calidad de las respuestas en comparacion con el modelo original sin cuantizar. No se especifica el nivel de cuantizacion ni el impacto en la precision.
 - Dependencia del motor Anvil: el modelo esta disenado para funcionar con Anvil, un motor propietario. Aunque tambien soporta vLLM, la integracion con otros frameworks no esta documentada.
 - Fecha de creacion: el modelo fue creado en julio de 2026, por lo que es muy reciente y puede tener poca adopcion o soporte de la comunidad.
-- Repositorio con pocas descargas: solo 42 descargas y 0 likes en HuggingFace, lo que sugiere que aun no ha sido ampliamente probado por la comunidad.
+- Repositorio con pocas descargas: solo 42 descargas y 0 likes en Hugging Face, lo que sugiere que aun no ha sido ampliamente probado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Athena-27B-UltraEfficient
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Athena-27B-UltraEfficient
 - Repositorio de Anvil (motor de inferencia): https://github.com/Solstice-Labs/anvil
 - Sitio web de Solstice-AI: https://solstice-ai.co
-- Organizacion en HuggingFace: https://huggingface.co/Solstice-AI
+- Organizacion en Hugging Face: https://huggingface.co/Solstice-AI

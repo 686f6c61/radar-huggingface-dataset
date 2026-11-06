@@ -30,7 +30,7 @@ La arquitectura se basa en ModernBERT, una evolución del BERT original que inco
 - Detección de alucinaciones a nivel de token: clasifica cada token de una respuesta como alucinado o fiel al contexto.
 - Integración en pipelines RAG: puede utilizarse como verificador posterior a la generación para señalar fragmentos no respaldados por el contexto recuperado.
 - Procesamiento multilingüe: el nombre sugiere soporte para varios idiomas, con una variante específica para esloveno (`-sl`), aunque no se detallan los idiomas exactos.
-- Compatible con la librería Transformers de HuggingFace, lo que facilita su uso con pipelines estándar de token-classification.
+- Compatible con la librería Transformers de Hugging Face, lo que facilita su uso con pipelines estándar de token-classification.
 - Tamaño compacto (140M parámetros) que permite inferencia en hardware moderado.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada: al ser un modelo de 140M parámetros, la inferencia en FP32 requiere aproximadamente 560 MB de memoria, y en FP16 unos 280 MB. Con cuantización a 8 bits podría reducirse a unos 140 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo tarjetas de consumo como GTX 1650, RTX 3050 o superiores. También puede ejecutarse en CPU con razonable velocidad.
 - Compatibilidad con consumer GPU: sí, cabe en prácticamente cualquier GPU moderna e incluso en Raspberry Pi con cuantización extrema.
-- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF). También es posible usarlo directamente con la librería `transformers` en Python.
+- Opciones de despliegue: al ser un modelo de Transformers, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como vLLM, TGI o llama.cpp (si se convierte a GGUF). También es posible usarlo directamente con la librería `transformers` en Python.
 - Latencia y throughput: no se dispone de datos medidos, pero para un modelo de este tamaño se espera una latencia de decenas de milisegundos por secuencia en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sl
+- Modelo en Hugging Face: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sl
 - Paper asociado (arXiv:2605.02504): https://arxiv.org/pdf/2605.02504
 - Variante en inglés: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-en
 - Variante en letón: https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lv
